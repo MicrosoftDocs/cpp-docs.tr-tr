@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - call_in_appdomain function
 ms.assetid: 9a1a5026-b76b-4cae-a3d4-29badeb9db9c
-ms.openlocfilehash: a7ee0ef9c98ee940ab810abd82f6220da95d7346
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da0f2bc1a503226e41198871e6dc48ace7a86854
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351501"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988540"
 ---
-# <a name="callinappdomain-function"></a>call_in_appdomain İşlevi
+# <a name="call_in_appdomain-function"></a>call_in_appdomain İşlevi
 
 Belirtilen uygulama etki alanında bir işlevi yürütür.
 
@@ -41,29 +41,29 @@ RetType call_in_appdomain(
 
 #### <a name="parameters"></a>Parametreler
 
-*appdomainId*<br/>
-Appdomain olan işlevi çağırmak.
+*AppDomainID*<br/>
+İşlevin çağrılacak AppDomain.
 
 *voidFunc*<br/>
-İşaretçi bir `void` N parametrelerini alan işlev (0 < = N < = 15).
+N parametre alan bir `void` işlevi işaretçisi (0 < = N < = 15).
 
 *nonvoidFunc*<br/>
-İşaretçi olmayan bir`void` N parametrelerini alan işlev (0 < = N < = 15).
+N parametresi alan`void` olmayan bir işlev işaretçisi (0 < = N < = 15).
 
-*arg1...argN*<br/>
-Geçirilecek 15 parametreleri için sıfır `voidFunc` veya `nonvoidFunc` bir appdomain içinde.
+*arg1... argN*<br/>
+Diğer AppDomain 'de `voidFunc` veya `nonvoidFunc` geçirilecek sıfır-15 parametre.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yürütmenin sonucu `voidFunc` veya `nonvoidFunc` belirtilen uygulama etki alanında.
+Belirtilen uygulama etki alanında `voidFunc` veya `nonvoidFunc` yürütmenin sonucu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçirilen bağımsız değişkenler'işlevinin `call_in_appdomain` CLR Türleri olmamalıdır.
+`call_in_appdomain` geçirilen işlevin bağımsız değişkenleri CLR türü olmamalıdır.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // msl_call_in_appdomain.cpp
 // compile with: /clr
 
@@ -120,4 +120,4 @@ appDomain1 id = 2
 
 **Üst bilgi dosyası** \<msclr\appdomain.h >
 
-**Namespace** msclr
+**Ad alanı** msclr

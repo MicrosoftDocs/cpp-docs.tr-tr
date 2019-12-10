@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - swap function
 ms.assetid: 2fe8146b-a7f7-445a-9ae9-53b5556be701
-ms.openlocfilehash: 7ed4e3f946f314819e6c562d489050182a975b7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 271ecd26136671737a47b7adbaee273a0997102d
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384549"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988456"
 ---
-# <a name="swap-function-autogcroot"></a>swap İşlevi (auto_gcroot)
+# <a name="swap-function-auto_gcroot"></a>swap İşlevi (auto_gcroot)
 
-Bir arasında nesneleri değiştirir `auto_gcroot` ve başka bir.
+Nesneleri bir `auto_gcroot` ve diğeri arasında değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,7 +39,7 @@ Başka bir `auto_gcroot`.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // msl_swap_auto_gcroot.cpp
 // compile with: /clr
 #include <msclr\auto_gcroot.h>
@@ -66,9 +66,9 @@ s1 = 'string two', s2 = 'string one'
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası** \<msclr\auto_gcroot.h >
+**Üst bilgi dosyası** \<msclr \ auto_gcroot. h >
 
-**Namespace** msclr
+**Ad alanı** msclr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;döndürür > (C++ belgeleri açıklamaları)'
+title: '&lt;> döndürür (C++ belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - returns
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - returns C++ XML tag
 - <returns> C++ XML tag
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
-ms.openlocfilehash: 72a6ad05f3a78919b652f518d11814c3f95c5fd0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1315ec09271c2c97f7bcaf3fb6f9c75f514b5d2d
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318686"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988637"
 ---
-# <a name="ltreturnsgt"></a>&lt;döndürür&gt;
+# <a name="ltreturnsgt"></a>&lt;&gt; döndürür
 
-\<Döndürür > etiketi yöntemi bildirimi için açıklama dönüş değeri tanımlamak için kullanılmalıdır.
+\<, dönüş değerini açıklayacak bir yöntem bildirimine ilişkin açıklamada > etiketini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,16 +27,16 @@ ms.locfileid: "62318686"
 
 #### <a name="parameters"></a>Parametreler
 
-*Açıklaması*<br/>
-Dönüş değeri bir açıklaması.
+*description*<br/>
+Dönüş değerinin açıklaması.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // xml_returns_tag.cpp
 // compile with: /LD /clr /doc
 // post-build command: xdcmake xml_returns_tag.dll

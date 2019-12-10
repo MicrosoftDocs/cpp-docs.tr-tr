@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yönetilmeyen kaynakları Bayt dizisine yükleme'
+title: 'Nasıl yapılır: Yönetilmeyen Kaynakları Bayt Dizisine Yükleme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - unmanaged resources, loading into Byte array
 - native resources
 ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
-ms.openlocfilehash: 641bdf4429bca35800e3fbbbb7622f2651bb3fee
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 425def1cd0557298985148d7bb9f74da489643e8
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344964"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988200"
 ---
-# <a name="how-to-load-unmanaged-resources-into-a-byte-array"></a>Nasıl yapılır: Yönetilmeyen kaynakları Bayt dizisine yükleme
+# <a name="how-to-load-unmanaged-resources-into-a-byte-array"></a>Nasıl yapılır: Yönetilmeyen Kaynakları Bayt Dizisine Yükleme
 
-Yönetilmeyen kaynakları yüklemek için birkaç yol Bu konu açıklar bir <xref:System.Byte> dizi.
+Bu konuda, yönetilmeyen kaynakları bir <xref:System.Byte> dizisine yüklemek için çeşitli yollar ele alınmaktadır.
 
 ## <a name="example"></a>Örnek
 
-Yönetilmeyen kaynaklarınızı saran boyutunu biliyorsanız, CLR dizisi erişinceye ve CLR dizisi dizi bloğu için bir işaretçi kullanarak diziye kaynağı'i yükleyin.
+Yönetilmeyen kaynağınızın boyutunu biliyorsanız, bir CLR dizisini önceden ayırabilir ve ardından CLR dizisinin dizi bloğunun bir işaretçisini kullanarak kaynağı diziye yükleyebilirsiniz.
 
-```
+```cpp
 // load_unmanaged_resources_into_Byte_array.cpp
 // compile with: /clr
 using namespace System;
@@ -56,9 +56,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, verilerin bir yönetilmeyen bellek bloğundan yönetilen bir diziye nasıl kopyalanacağını gösterir.
+Bu örnek, yönetilmeyen bir bellek bloğundan yönetilen bir diziye verilerin nasıl kopyalanacağını gösterir.
 
-```
+```cpp
 // load_unmanaged_resources_into_Byte_array_2.cpp
 // compile with: /clr
 using namespace System;

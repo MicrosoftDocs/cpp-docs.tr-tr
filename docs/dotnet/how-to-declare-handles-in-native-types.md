@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yerel türlerde işleyicileri bildirme'
+title: 'Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,26 +9,26 @@ helpviewer_keywords:
 - gcroot keyword [C++]
 - types [C++], declaring handles in
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-ms.openlocfilehash: f5d6d31be9f3c10e1a56639ccf20663ce59d7941
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 11dbc196a89a224afe02312fbe4dff99d8467f4c
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387415"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988241"
 ---
-# <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel türlerde işleyicileri bildirme
+# <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme
 
-Bir yerel tür içinde tanıtıcı türüne bildiremezsiniz. tür kullanımı uyumlu sarmalayıcı şablon Vcclr.h sağlar `gcroot` C++ yığınından bir CLR nesnesine başvurmak için. Bu şablon, sanal bir tanıtıcı yerel bir tür ekleme ve temel alınan türü değilmiş gibi ele almanız sağlar. Çoğu durumda, kullandığınız `gcroot` herhangi bir atama olmadan katıştırılmış tür olarak nesnesi. Bununla birlikte, [her, içinde](../dotnet/for-each-in.md), kullanmak zorunda `static_cast` temel yönetilen başvuru alınamıyor.
+Bir tanıtıcı türünü yerel bir türde bildiremezsiniz. Vcclr. h, C++ YıĞıNDA bir CLR nesnesine başvurmak için tür açısından güvenli sarmalayıcı şablonu `gcroot` sağlar. Bu şablon, bir sanal tanıtıcıyı yerel bir türe katıştırmanıza ve bunu temel alınan türde gibi değerlendirmenize imkan tanır. Çoğu durumda, `gcroot` nesnesini katıştırılmış tür olarak herhangi bir atama olmadan kullanabilirsiniz. Bununla birlikte, [her biri için](../dotnet/for-each-in.md)ile, temel alınan yönetilen başvuruyu almak için `static_cast` kullanmanız gerekir.
 
-`gcroot` Şablonu, atık olarak toplanmış yığınla "işler" sağlayan System::Runtime değer sınıfının özellikleri kullanılarak gerçekleştirilir. Tanıtıcıları çöp olarak toplanacak olmadığına dikkat edin ve artık kullanımda olmadığında yıkıcı tarafından serbest bırakılan `gcroot` sınıfı (Bu yok edici el ile çağrılamaz). Örneği, bir `gcroot` nesne yerel yığında çağırmanız gerekir, bu kaynağa silin.
+`gcroot` şablonu, atık olarak toplanmış yığına "Handles" sağlayan System:: Runtime:: InteropServices:: GCHandle değer sınıfının işlevleri kullanılarak uygulanır. Tanıtıcıların kendileri atık olarak toplanmadığını ve artık `gcroot` sınıfında yok edicisi tarafından kullanımda olmadığında serbest olduğunu unutmayın (bu yıkıcı el ile çağrılamaz). Yerel yığında bir `gcroot` nesnesi örneği oluşturursanız, bu kaynakta silme çağrısı yapmanız gerekir.
 
-Çalışma zamanı tanıtıcısı başvurduğu CLR nesne arasındaki ilişkiyi barındırır. Tanıtıcı CLR nesnesi atık olarak toplanmış yığınla geçtiğinde, yeni nesnenin adresini döndürür. Bir değişken için atanmadan önce sabitlenmiş gerekmez bir `gcroot` şablonu.
+Çalışma zamanı, tanıtıcı ile başvurduğu CLR nesnesi arasında bir ilişki bakımını koruyacaktır. CLR nesnesi çöp toplanmış yığınla birlikte taşınırsa, tanıtıcı nesnenin yeni adresini döndürür. Bir değişkenin bir `gcroot` şablonuna atanmadan önce sabitlenmiş olması gerekmez.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek nasıl oluşturulacağını gösterir. bir `gcroot` nesne yerel yığında.
+Bu örnek, yerel yığında bir `gcroot` nesnesinin nasıl oluşturulacağını gösterir.
 
-```
+```cpp
 // mcpp_gcroot.cpp
 // compile with: /clr
 #include <vcclr.h>
@@ -53,9 +53,9 @@ hello
 
 ## <a name="example"></a>Örnek
 
-Bu örnek nasıl oluşturulacağını gösterir. bir `gcroot` nesne yerel yığında.
+Bu örnek, yerel yığında bir `gcroot` nesnesinin nasıl oluşturulacağını gösterir.
 
-```
+```cpp
 // mcpp_gcroot_2.cpp
 // compile with: /clr
 // compile with: /clr
@@ -83,9 +83,9 @@ hello
 
 ## <a name="example"></a>Örnek
 
-Bu örnek nasıl kullanılacağını gösterir `gcroot` kullanarak yerel bir tür içinde değer türleri (başvuru türleri değil) başvurular tutacak `gcroot` Kutulu türü.
+Bu örnek, paketlenmiş türde `gcroot` kullanarak yerel bir türdeki değer türlerine (başvuru türleri değil) başvuruları tutmak için `gcroot` nasıl kullanacağınızı gösterir.
 
-```
+```cpp
 // mcpp_gcroot_3.cpp
 // compile with: /clr
 #include < vcclr.h >

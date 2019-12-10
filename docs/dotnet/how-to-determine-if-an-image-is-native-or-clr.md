@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Görüntüyü yerel veya CLR olup olmadığını belirler'
+title: 'Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - /clr compiler option [C++], detecting use in compilation
 - common language runtime, /clr compiler option
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
-ms.openlocfilehash: 541581e0f172c8ce2601e2e476ccd03a49757f80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5149440e172b764278c5ee816827c2d13e2b4c0e
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387350"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988501"
 ---
-# <a name="how-to-determine-if-an-image-is-native-or-clr"></a>Nasıl yapılır: Görüntüyü yerel veya CLR olup olmadığını belirler
+# <a name="how-to-determine-if-an-image-is-native-or-clr"></a>Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme
 
-Ortak dil çalışma zamanı kullanmak için görüntünün yapılıp yapılmadığını belirlemek için tek yönlü **dumpbin**[/CLRHEADER](../build/reference/clrheader.md).
+Ortak dil çalışma zamanı için bir görüntünün oluşturulup oluşturulmayacağını belirlemenin bir yolu **dumpbin**[/CLRHEADER](../build/reference/clrheader.md)kullanmaktır.
 
-Programlama yoluyla da bir görüntü için ortak dil çalışma zamanı yapılıp yapılmadığını denetleyin. Daha fazla bilgi için [nasıl yapılır: / CLR derlemesini algılama](../dotnet/how-to-detect-clr-compilation.md).
+Ayrıca, ortak dil çalışma zamanı için bir görüntünün oluşturulup oluşturulmayacağını programlı bir şekilde denetleyebilirsiniz. Daha fazla bilgi için bkz. [nasıl yapılır:/clr derlemesini algılama](../dotnet/how-to-detect-clr-compilation.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ortak dil çalışma zamanı üzerinde çalıştırılacak bir görüntü yapılıp yapılmadığını belirler.
+Aşağıdaki örnek, bir görüntünün ortak dil çalışma zamanında çalışacak şekilde oluşturulup oluşturulmadığını belirler.
 
-```
+```cpp
 // detect_image_type.cpp
 // compile with: /clr
 using namespace System;

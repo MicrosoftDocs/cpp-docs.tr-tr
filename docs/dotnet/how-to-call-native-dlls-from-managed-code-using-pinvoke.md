@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: Yönetilen koddan PInvoke kullanarak yerel dll 'Leri çağırma"
+title: "Nasıl yapılır: Yönetilen Koddan PInvoke Kullanarak Yerel DLL'leri Çağırma"
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - marshaling [C++], calling native DLLs
 - data marshaling [C++], calling native DLLs
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
-ms.openlocfilehash: b36496690c4d83837a6dff1752f3f0db514869eb
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1eb5d5669c49dd49a411c275f8845dbbab989df3
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501235"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988289"
 ---
-# <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen koddan PInvoke kullanarak yerel dll 'Leri çağırma
+# <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen Koddan PInvoke Kullanarak Yerel DLL'leri Çağırma
 
 Yönetilmeyen DLL 'lerde uygulanan işlevler, platform Invoke (P/Invoke) işlevi kullanılarak yönetilen koddan çağrılabilir. DLL için kaynak kodu kullanılamıyorsa, her çalışma için P/Invoke tek seçenektir. Ancak, diğer .NET dillerinin aksine, Visual C++ P/Invoke için bir alternatif sağlar. Daha fazla bilgi için bkz [. C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
@@ -27,7 +27,7 @@ Bağımsız değişkenler ve dönüş değerleri olarak yalnızca iç türleri k
 
 Gerekli olmasa da, bu örnekte gösterildiği gibi, genel ad alanında yer almayan P/Invoke bildirimleri için bir değer sınıfının statik üyeleri yapmak iyi bir uygulamadır.
 
-```
+```cpp
 // pinvoke_basic.cpp
 // compile with: /clr
 using namespace System;

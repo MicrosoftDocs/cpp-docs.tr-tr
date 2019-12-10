@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama'
+title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - pointers [C++], marshaling
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-ms.openlocfilehash: c6d622060aaf700b6ea1a3bfe797ab3190eee797
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 972d7a9c09100c35cb0bf527efbd0884c909c46d
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345733"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988178"
 ---
-# <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama
+# <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama
 
-Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergeleri uygulamak için yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak bu işlevler ayrı dosyalarında tanımlandıysa aynı şekilde birlikte çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesine gerek yoktur [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
+Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, işaretçileri içeren bir yapıya alan yönetilmeyen bir işlev yönetilen bir işlevden nasıl çağrılabileceğini gösterir. Yönetilen işlev yapısının bir örneğini oluşturur ve yeni anahtar sözcüğü ile katıştırılmış işaretçi başlatır (yerine [yeni başvuru, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) anahtar sözcüğü). Bu yerel yığında bellek ayırır olduğundan, çöp toplama bastırmak için diziyi sabitlemek için gerek yoktur. Ancak, bellek Bellek sızıntısını önlemek için açıkça silinmelidir.
+Aşağıdaki örnek, bir yönetilen işlevden işaretçiler içeren bir yapıyı alan yönetilmeyen bir işlevin nasıl çağrılacağını gösterir. Yönetilen işlev yapının bir örneğini oluşturur ve katıştırılmış işaretçiyi New anahtar sözcüğüyle ( [ref New, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) anahtar sözcüğü yerine) başlatır. Bu, yerel yığında belleği ayırdığından atık toplamayı bastırmak için diziyi Sabitlemeye gerek yoktur. Ancak bellek sızıntısını önlemek için belleğin açıkça silinmesi gerekir.
 
-```
+```cpp
 // marshal_embedded_pointer.cpp
 // compile with: /clr
 #include <iostream>

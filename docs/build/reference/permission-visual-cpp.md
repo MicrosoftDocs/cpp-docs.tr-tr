@@ -1,5 +1,5 @@
 ---
-title: '&lt;izni > (C++ belgeleri açıklamaları)'
+title: '&lt;izin > (C++ belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - permission
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - <permission> C++ XML tag
 - permission C++ XML tag
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-ms.openlocfilehash: 764048f7bc579afa6862bdff40968588955dc307
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7f0a59c85e3fa28d24e44953e207151c3afa0f4
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319947"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988668"
 ---
-# <a name="ltpermissiongt"></a>&lt;İzni&gt;
+# <a name="ltpermissiongt"></a>&lt;izin&gt;
 
-\<İzni > etiketi üyenin erişim belge olanak tanır. <xref:System.Security.PermissionSet> üye erişimi belirtmenize olanak sağlar.
+\<izin > etiketi bir üyenin erişimini belgelemenizi sağlar. <xref:System.Security.PermissionSet> bir üyeye erişim belirlemenizi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,25 +27,25 @@ ms.locfileid: "62319947"
 
 #### <a name="parameters"></a>Parametreler
 
-*Üyesi*<br/>
-Bir üye veya geçerli derleme ortamdan çağrılacak kullanılabilir alan başvuru. Derleyici belirli kod öğesi var. çevirir olup olmadığını denetler ve `member` kurallı öğesi adı ' % s'çıkış XML dosyası.  Ad, tek veya çift tırnak içine alın.
+*üyesidir*<br/>
+Geçerli derleme ortamından çağrılabilen bir üyeye veya alana başvuru. Derleyici verilen kod öğesinin var olduğunu denetler ve çıkış XML dosyasında kurallı öğe adına `member` çevirir.  Adı tek veya çift tırnak içine alın.
 
-Değil bulamazsa, derleyici bir uyarı verir `member`.
+Derleyici `member`bulamazsa bir uyarı verir.
 
-Genel tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bakın >](see-visual-cpp.md).
+Genel bir türe cref başvurusu oluşturma hakkında daha fazla bilgi için bkz. [\<](see-visual-cpp.md).
 
-*Açıklaması*<br/>
-Üye erişimi açıklaması.
+*description*<br/>
+Üyeye erişim açıklaması.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
-MSVC derleyicisi, belge yorumlarını bir geçiş cref başvuruları çözümlemek dener.  Bu nedenle, C++ arama kurallarını kullanarak, bir sembol başvurusu işaretlenir derleyici tarafından bulunamadı olarak çözümlenmemiş. Bkz: [ \<seealso >](seealso-visual-cpp.md) daha fazla bilgi için.
+MSVC derleyicisi, belge açıklamalarındaki cref başvurularını tek bir geçişte çözümlemeye çalışır.  Bu nedenle, C++ arama kuralları kullanılıyorsa, derleyici tarafından bir sembol bulunamamıştır ve başvuru çözümlenmemiş olarak işaretlenir. Daha fazla bilgi için bkz. [\<SeeAlso >](seealso-visual-cpp.md) .
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // xml_permission_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_permission_tag.dll

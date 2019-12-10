@@ -1,27 +1,27 @@
 ---
-title: 'Nasıl yapılır: -Clr derlemesini algılama'
+title: 'Nasıl yapılır: algılama-CLR derlemesi'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - compilation, detecting /clr
 - /clr compiler option [C++], detecting use of
 ms.assetid: a9310045-4810-4637-a64a-0b31a08791c1
-ms.openlocfilehash: 0b02be1bcd0afc9fd857e689ceafdcab5eaf05d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42b2952e3b63023ca26c6b1f7d0ccb8871082499
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387363"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988216"
 ---
-# <a name="how-to-detect-clr-compilation"></a>Nasıl yapılır: / CLR derlemesini algılama
+# <a name="how-to-detect-clr-compilation"></a>Nasıl yapılır: /clr Derlemesini Algılama
 
-Kullanım `_MANAGED` veya `_M_CEE` bir modül ile derlenmiş, görmek için makro **/CLR**. Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
+Bir modülün **/clr**ile derlenmiş olup olmadığını görmek için `_MANAGED` veya `_M_CEE` makrosunu kullanın. Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
 
 Makrolar hakkında daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md).
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // detect_CLR_compilation.cpp
 // compile with: /clr
 #include <stdio.h>

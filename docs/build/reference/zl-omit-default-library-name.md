@@ -11,16 +11,16 @@ helpviewer_keywords:
 - /Zl compiler option [C++]
 - default libraries, omitting names
 ms.assetid: b27d39d0-44d6-498c-84ae-27c1326fee59
-ms.openlocfilehash: cb8083d874abe17add1d27096ebce143d03a04cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1bcb90dbf071253dc0561845e3bd713dc42d5aef
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315553"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988559"
 ---
 # <a name="zl-omit-default-library-name"></a>/Zl (Varsayılan Kitaplık Adını Atla)
 
-Varsayılan C çalışma zamanı kitaplık adını .obj dosyasından atlar. Varsayılan olarak, derleyici doğru kitaplık bağlayıcıya yönlendirmek için .obj dosyasına kitaplığının adı geçirir.
+. Obj dosyasından varsayılan C çalışma zamanı kitaplığı adını atlar. Varsayılan olarak, derleyici, bağlayıcıyı doğru kitaplığa yönlendirmek için kitaplığın adını. obj dosyasına koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,19 +30,19 @@ Varsayılan C çalışma zamanı kitaplık adını .obj dosyasından atlar. Vars
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan kitaplık hakkında daha fazla bilgi için bkz. [çalışma zamanı kitaplığını kullan](md-mt-ld-use-run-time-library.md).
+Varsayılan kitaplık hakkında daha fazla bilgi için bkz. [çalışma zamanı kitaplığı kullanma](md-mt-ld-use-run-time-library.md).
 
-Kullanabileceğiniz **/Zl** planladığınız bir kitaplık içine yerleştirmek için .obj dosyalarını derlemek için. Kaydedilen toplam alan kitaplık adını atlama yalnızca az miktarda alan için bir tek .obj dosyasına kaydeder olsa da, birçok nesne modüller içeren bir kitaplıkta önemlidir.
+Bir kitaplığa koymak üzere planladığınız. obj dosyalarını derlemek için **/zl** kullanabilirsiniz. Kitaplık adının atlanması tek bir. obj dosyası için yalnızca küçük miktarda alan kaydetse de, kaydedilen toplam alan birçok nesne modülünü içeren bir kitaplıkta önemli olur.
 
-Bu seçenek Gelişmiş bir seçenektir. Bu ayar, uygulamanız bu desteği bağlıysa, bağlama sırasında hatalarla sonuçlanır uygulamanız tarafından gerekli kılınabilen bazı C çalışma zamanı kitaplığı desteğiyle kaldırır. Bu seçeneği kullanırsanız, gerekli bileşenleri başka bir şekilde sağlamalısınız.
+Bu seçenek gelişmiş bir seçenektir. Bu seçeneğin ayarlanması, uygulamanız tarafından gerekebilecek bazı C çalışma zamanı kitaplığı desteğini kaldırır ve uygulamanız bu desteğe bağımlıysa bağlantı zamanı hatalarına neden olur. Bu seçeneği kullanırsanız, gerekli bileşenleri başka bir şekilde sağlamanız gerekir.
 
-Kullanım [/nodefaultlıb (kitaplıkları yoksay)](nodefaultlib-ignore-libraries.md). Bağlayıcı kitaplık yok saymak için yönlendirmek için tüm .obj dosyalarında başvuruyor.
+[/Nodefaultlib (kitaplıkları Yoksay)](nodefaultlib-ignore-libraries.md)kullanın. Bağlayıcıyı tüm. obj dosyalarındaki kitaplık başvurularını yoksayacak şekilde yönlendirmek için.
 
-Daha fazla bilgi için [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
+Daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
-İle derlerken **/Zl**, `_VC_NODEFAULTLIB` tanımlanır.  Örneğin:
+**/Zl**ile derlerken `_VC_NODEFAULTLIB` tanımlanmıştır.  Örneğin:
 
-```
+```cpp
 // vc_nodefaultlib.cpp
 // compile with: /Zl
 void Test() {
@@ -56,13 +56,13 @@ void Test() {
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++**  klasörüne tıklayın.
 
-1. Tıklayın **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** Özellik sayfasına tıklayın.
 
-1. Değiştirme **varsayılan kitaplık adlarını atlamak** özelliği.
+1. **Varsayılan kitaplık adlarını atla** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

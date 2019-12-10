@@ -1,34 +1,34 @@
 ---
-title: 'Nasıl yapılır: Bir STL/CLR kapsayıcısından .NET koleksiyonuna dönüştürme'
+title: 'Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, converting to .NET collections
 ms.assetid: 70b2dfd9-869c-4e0f-9a29-b1ee0cb0d107
-ms.openlocfilehash: cf67e362751dd164916cc94cd644d55110d88a5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f7539b10ca6c503aede61d19de3d14fb9dcee8be
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387532"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988518"
 ---
-# <a name="how-to-convert-from-a-stlclr-container-to-a-net-collection"></a>Nasıl yapılır: Bir STL/CLR kapsayıcısından .NET koleksiyonuna dönüştürme
+# <a name="how-to-convert-from-a-stlclr-container-to-a-net-collection"></a>Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme
 
-Bu konuda, STL/CLR kapsayıcıları, eşdeğer bir .NET koleksiyonlarına dönüştürme gösterilmektedir. Örnek olarak, STL/CLR nasıl dönüştürme yapılacağını göstereceğiz [vektör](../dotnet/vector-stl-clr.md) kullanarak bir .NET <xref:System.Collections.Generic.ICollection%601> ve STL/CLR dönüştürme [harita](../dotnet/map-stl-clr.md) kullanarak bir .NET <xref:System.Collections.Generic.IDictionary%602>, ancak tüm koleksiyonlar için benzer bir yordamı ve kapsayıcıları.
+Bu konuda, STL/CLR kapsayıcılarının eşdeğer .NET koleksiyonlarına nasıl dönüştürüleceği gösterilmektedir. Örnek olarak, bir STL/CLR [vektörünü](../dotnet/vector-stl-clr.md) .net <xref:System.Collections.Generic.ICollection%601> nasıl dönüştürebileceğiniz ve STL/CLR [eşlemesinin](../dotnet/map-stl-clr.md) bir .net <xref:System.Collections.Generic.IDictionary%602>nasıl dönüştürüleceği gösterilmektedir, ancak yordam tüm koleksiyonlar ve kapsayıcılar için benzerdir.
 
-### <a name="to-create-a-collection-from-a-container"></a>Bir koleksiyonu bir kapsayıcı oluşturmak için
+### <a name="to-create-a-collection-from-a-container"></a>Bir kapsayıcıdan koleksiyon oluşturmak için
 
 1. Aşağıdaki yöntemlerden birini kullanın:
 
-   - Bir kapsayıcı parçası dönüştürmek için çağrı [make_collection](../dotnet/make-collection-stl-clr.md) işlev ve başlangıç Yineleyici ve STL/CLR kapsayıcısına bitiş yineleyicisi .NET koleksiyonuna kopyalanacak geçirin. Bu şablon işlevi, bir şablon bağımsız değişkeni bir STL/CLR yineleyici alır. Bu yöntem ilk örnek gösterilmektedir.
+   - Bir kapsayıcının parçasını dönüştürmek için, [make_collection](../dotnet/make-collection-stl-clr.md) işlevini ÇAĞıRıN ve STL/CLR kapsayıcısının .net koleksiyonuna kopyalanmak üzere başlangıç yineleyicisini ve bitiş yineleyicisini geçirin. Bu şablon işlevi bir STL/CLR yineleyiciyi şablon bağımsız değişkeni olarak alır. İlk örnek bu yöntemi gösterir.
 
-   - Bir kapsayıcının tamamını dönüştürmek için kapsayıcı bir uygun .NET koleksiyon arabirimi veya arabirim koleksiyonu cast. İkinci örnek, bu yöntem gösterilmektedir.
+   - Kapsayıcının tamamını dönüştürmek için kapsayıcıyı uygun bir .NET koleksiyonu arabirimine veya arabirim koleksiyonuna atayın. İkinci örnek bu yöntemi gösterir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, oluşturduğumuz bir STL/CLR `vector` ve 5 öğeleri ekleyin. Ardından, bir .NET koleksiyonunun çağırarak oluştururuz `make_collection` işlevi. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüler.
+Bu örnekte, bir STL/CLR `vector` oluşturup buna 5 öğe ekleyeceğiz. Daha sonra, `make_collection` işlevini çağırarak bir .NET koleksiyonu oluşturacağız. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüyoruz.
 
-```
+```cpp
 // cliext_convert_vector_to_icollection.cpp
 // compile with: /clr
 
@@ -70,9 +70,9 @@ The contents of the System::Collections::Generic::ICollection are:
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, oluşturduğumuz bir STL/CLR `map` ve 5 öğeleri ekleyin. Ardından, bir .NET oluştururuz <xref:System.Collections.Generic.IDictionary%602> ve atama `map` doğrudan. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüler.
+Bu örnekte, bir STL/CLR `map` oluşturup buna 5 öğe ekleyeceğiz. Daha sonra, bir .NET <xref:System.Collections.Generic.IDictionary%602> oluşturacağız ve `map` doğrudan buna atayacağız. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüyoruz.
 
-```
+```cpp
 // cliext_convert_map_to_idictionary.cpp
 // compile with: /clr
 
@@ -114,5 +114,5 @@ Key: 74.00 Value: 74
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
-[Nasıl yapılır: .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
+[Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
 [range_adapter (STL/CLR)](../dotnet/range-adapter-stl-clr.md)

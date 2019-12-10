@@ -12,12 +12,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 944567ca-16bc-4728-befe-d414a7787f26
-ms.openlocfilehash: c5854fd1255ab509d8778828de25638dd821d74b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d0cf8e5f628f3f5301f54d7c853bfc2ab63cb7e
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272838"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988363"
 ---
 # <a name="c-preserve-comments-during-preprocessing"></a>/C (Önişleme Sırasında Açıklamaları Koru)
 
@@ -31,17 +31,17 @@ ms.locfileid: "62272838"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu derleyici seçeneğini gerektirir **/E**, **/P**, veya **/EP** seçeneği.
+Bu derleyici seçeneği, **/e**, **/P**veya **/EP** seçeneğini gerektirir.
 
-Aşağıdaki kod örneği, kaynak kod açıklaması gösterilir.
+Aşağıdaki kod örneğinde kaynak kodu açıklaması görüntülenir.
 
-```
+```cpp
 // C_compiler_option.cpp
 // compile with: /E /C /c
 int i;   // a variable
 ```
 
-Bu örnek aşağıdaki çıktıyı oluşturur.
+Bu örnek aşağıdaki çıktıyı oluşturacaktır.
 
 ```
 #line 1 "C_compiler_option.cpp"
@@ -50,13 +50,13 @@ int i;   // a variable
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++**  klasörüne tıklayın.
 
-1. Tıklayın **önişlemci** özellik sayfası.
+1. **Önişlemci** Özellik sayfasına tıklayın.
 
-1. Değiştirme **açıklamaları tut** özelliği.
+1. **Yorumları tut** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

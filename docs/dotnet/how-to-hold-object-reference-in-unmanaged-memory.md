@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yönetilmeyen bellekte nesne başvurusunu tutun'
+title: 'Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-ms.openlocfilehash: 0d8dc341d1fe2c61eba098abec9258a2c6dade79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f2471e36d7551cab9edb68d7babeb1419e8e20c
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387298"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988212"
 ---
-# <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen bellekte nesne başvurusunu tutun
+# <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma
 
-Saran gcroot.h kullanabileceğiniz <xref:System.Runtime.InteropServices.GCHandle>, yönetilmeyen bellekte bir CLR nesne başvurusu tutacak. Alternatif olarak, `GCHandle` doğrudan.
+Yönetilmeyen bellekte CLR nesne başvurusunu tutmak için <xref:System.Runtime.InteropServices.GCHandle>sarmalayan gcroot. h ' yi kullanabilirsiniz. Alternatif olarak, `GCHandle` doğrudan de kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // hold_object_reference.cpp
 // compile with: /clr
 #include "gcroot.h"
@@ -57,9 +57,9 @@ StringWrapper::x == ManagedString
 
 ## <a name="example"></a>Örnek
 
-`GCHandle` size bir yönetilen nesne başvurusu yönetilmeyen bellekte tutmak için bir yol sağlar.  Kullandığınız <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> yönetilen bir nesne için donuk bir tanıtıcı yöntemini ve <xref:System.Runtime.InteropServices.GCHandle.Free%2A> bunu serbest bırakmak için. Ayrıca, <xref:System.Runtime.InteropServices.GCHandle.Target%2A> yöntemi yönetilen kodda tanıtıcı nesne başvurusu geri almak sağlar.
+`GCHandle`, yönetilmeyen bellekte yönetilen bir nesne başvurusunu tutmak için bir yol sağlar.  Yönetilen bir nesne için donuk bir tanıtıcı oluşturmak için <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> yöntemini kullanın ve onu serbest bırakmak için <xref:System.Runtime.InteropServices.GCHandle.Free%2A>. Ayrıca <xref:System.Runtime.InteropServices.GCHandle.Target%2A> yöntemi, nesne başvurusunu Yönetilen koddaki tanıtıcıdan geri elde etmenizi sağlar.
 
-```
+```cpp
 // hold_object_reference_2.cpp
 // compile with: /clr
 using namespace System;

@@ -6370,6 +6370,8 @@
                   expanded: false
                   items:
                     - name: Dosyalar ve akışlar
+                      href: c-runtime-library/files-and-streams.md
+                    - name: Metin ve ikili akışlar
                       href: c-runtime-library/text-and-binary-streams.md
                     - name: Bayt ve geniş akışlar
                       href: c-runtime-library/byte-and-wide-streams.md

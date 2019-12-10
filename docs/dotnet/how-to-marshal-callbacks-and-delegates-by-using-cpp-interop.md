@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ birlikte çalışmayı kullanarak geri çağrıları ve temsilcileri sıralama'
+title: 'Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,28 +10,28 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 - callbacks [C++], marshaling
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
-ms.openlocfilehash: f8088bf90162fd2177599c252b0eee6332d61289
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 592eae0ff59baddb79b810d46669b78ecc801155
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344951"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988191"
 ---
-# <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışmayı kullanarak geri çağrıları ve temsilcileri sıralama
+# <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama
 
-Bu konu geri çağırmaları sıralanabileceği gösterilmektedir ve (bir geri çağırma yönetilen sürümü) Visual C++ kullanarak yönetilen ve yönetilmeyen kod arasında atar.
+Bu konu, Visual C++kullanılarak yönetilen ve yönetilmeyen kod arasında geri çağırmaların ve temsilcilerin (bir geri aramanın yönetilen sürümü) sıralanmasını gösterir.
 
-Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergeleri uygulamak için yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak işlevlerini ayrı dosyalarında de tanımlanabilir. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesine gerek yoktur [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
+Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak işlevler ayrı dosyalarda de tanımlanabilir. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yönetilen bir temsilci tetiklemek için yönetilmeyen bir API'nin gösterilmiştir. Yönetilen bir temsilci oluşturulur ve birlikte çalışma yöntemi <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>, temel alınan giriş noktası için temsilci almak için kullanılır. Bu adres, daha sonra yönetilen bir işlev uygulanır olgu olanağıyla ile çağrı yönetilmeyen işleve geçirilir.
+Aşağıdaki örnek, yönetilmeyen bir API 'nin yönetilen bir temsilciyi tetiklemek için nasıl yapılandırılacağını gösterir. Yönetilen bir temsilci oluşturulur ve temsilci için temel alınan giriş noktasını almak için <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>birlikte çalışma yöntemlerinden biri kullanılır. Bu adres daha sonra yönetilmeyen işleve geçirilir ve bu, yönetilen bir işlev olarak uygulanan olguyla ilgili hiçbir bilgi olmadan onu çağırır.
 
-Olası, ancak gerekli PIN kullanarak temsilci dikkat [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) yeniden bulunan veya çöp toplayıcısı tarafından elden önlemek için. Erken çöp toplama korumadan gereklidir, ancak sabitleme koleksiyon engeller ancak aynı zamanda yeniden konumlandırma engeller gerekli olandan daha fazla koruma sağlar.
+[Pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) kullanarak temsilciyi, atık toplayıcı tarafından yeniden konumlandırılmasını veya elden çıkarmasını engellemek için, bu mümkün değildir, ancak gerekli değildir. Zamanından önce çöp toplamadan koruma gerekir, ancak sabitleme, koleksiyonu engelliyor, ancak aynı zamanda yeniden konumlandırma işlemini yaptığı için gerekenden daha fazla koruma sağlar.
 
-Bir temsilci bir çöp toplama tarafından yeniden bulunuyorsa, yerleştirildiyse geri çağırma böylece etkilemez <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> temsilci temsilcinin izin vererek, ancak elden engelleyen bir başvuru eklemek için kullanılır. GCHandle yerine pin_ptr kullanarak yönetilen yığının parçalanma olasılığını azaltır.
+Bir temsilci bir çöp toplama işlemi tarafından yeniden konumlandırıldığında, yönetilen geri çağırma işlemini etkilemez, bu nedenle <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> temsilciye bir başvuru eklemek ve temsilcinin yeniden konumlandırılmasını sağlamak için kullanılır. Pin_ptr yerine GCHandle kullanmak, yönetilen yığının parçalanma potansiyelini azaltır.
 
-```
+```cpp
 // MarshalDelegate1.cpp
 // compile with: /clr
 #include <iostream>
@@ -79,9 +79,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek önceki örneğe benzer, ancak bu durumda, herhangi bir zamanda çöp toplama rastgele bir süre atlanması gerektiren etkinleştirilebilir böylece yönetilmeyen API'si tarafından sağlanan işlev işaretçisi depolanır. Sonuç olarak, aşağıdaki örnek, genel bir örneğini kullanır <xref:System.Runtime.InteropServices.GCHandle> temsilciyi yeniden konumlandırılmasını işlev kapsamından bağımsız olarak önlemek için. İlk örnekte açıklandığı gibi pin_ptr kullanarak bu örnekler için gerekli değildir, ancak bir pin_ptr kapsamı tek bir işleve sınırlı olduğu gibi bu durumda yine de çalışmaz.
+Aşağıdaki örnek, önceki örneğe benzerdir, ancak bu durumda, belirtilen işlev işaretçisi yönetilmeyen API tarafından depolanır, bu nedenle herhangi bir zamanda çağrılabilir ve bu da çöp toplamanın rastgele bir süre boyunca bastırılmasını gerektirir. Sonuç olarak, aşağıdaki örnek bir <xref:System.Runtime.InteropServices.GCHandle> genel örneğini kullanır, bu da temsilcinin işlev kapsamından bağımsız olarak yeniden konumlandırılmasını önler. İlk örnekte açıklandığı gibi, bu örneklerde pin_ptr kullanılması gereksizdir, ancak bu durumda, bir pin_ptr kapsamı tek bir işlevle sınırlı olduğu için yine de çalışmaz.
 
-```
+```cpp
 // MarshalDelegate2.cpp
 // compile with: /clr
 #include <iostream>

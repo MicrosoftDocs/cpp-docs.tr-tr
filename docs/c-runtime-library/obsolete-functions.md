@@ -1,6 +1,7 @@
 ---
-title: Kullanımdan kalkmış Işlevler
-ms.date: 01/22/2019
+title: Kullanılmayan işlevler
+description: Kullanım dışı bırakılan ve Microsoft C çalışma zamanı kitaplığı 'ndan (CRT) kaldırılan eski işlevleri listeler.
+ms.date: 12/09/2019
 api_name:
 - _beep
 - _sleep
@@ -53,16 +54,16 @@ helpviewer_keywords:
 - _sleep function
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-ms.openlocfilehash: da5bd0569e7116bfd45e6112da8231d6fc2c9b44
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c913e44a4f0d06813e877645bd01855baa6fd4dc
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940136"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988779"
 ---
 # <a name="obsolete-functions"></a>Kullanımdan kalkmış Işlevler
 
-Belirli kitaplık işlevleri artık kullanılmıyor ve daha yeni en son eşdeğerleri var. Bunları güncelleştirilmiş sürümlere değiştirmenizi öneririz. Diğer Kullanımdan kaldırılmış işlevler CRT 'den kaldırılmıştır. Bu konu, eski olarak kullanım dışı bırakılan işlevleri ve Visual Studio 'nun belirli bir sürümünde kaldırılan işlevleri listeler.
+Belirli kitaplık işlevleri artık kullanılmıyor ve daha yeni en son eşdeğerleri var. Bu işlevleri güncelleştirilmiş sürümlere değiştirmenizi öneririz. Diğer Kullanımdan kaldırılmış işlevler CRT 'den kaldırılmıştır. Bu makalede kullanımdan kaldırılan işlevler ve Visual Studio 'nun belirli bir sürümünde kaldırılan işlevler listelenmektedir.
 
 ## <a name="deprecated-as-obsolete-in-visual-studio-2015"></a>Visual Studio 2015 ' de kullanımdan kalktı
 
@@ -87,10 +88,8 @@ Belirli kitaplık işlevleri artık kullanılmıyor ve daha yeni en son eşdeğe
 |[_get_output_format](../c-runtime-library/get-output-format.md)|Yok.|
 |[_heapadd](../c-runtime-library/heapadd.md)|Yok.|
 |[_heapset](../c-runtime-library/heapset.md)|Yok.|
-|[inp, inpw](../c-runtime-library/inp-inpw.md)|Yok.|
-|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|Yok.|
-|[outp, outpw](../c-runtime-library/outp-outpw.md)|Yok.|
-|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|Yok.|
+|[INP, ınpw, _inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|Yok.|
+|[outp, outpw, _outp, _outpw _outpd](../c-runtime-library/outp-outpw-outpd.md)|Yok.|
 |[_set_output_format](../c-runtime-library/set-output-format.md)|Yok.|
 
 ## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>Visual Studio 'nun önceki sürümlerindeki CRT 'den kaldırılmıştır

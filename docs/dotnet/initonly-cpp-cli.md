@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - initonly attribute [C++]
 ms.assetid: f745d7fa-dc08-46f1-9b97-0977be58a008
-ms.openlocfilehash: cdfc278225ce4ab418dfaaf41fb413d088ad77df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 970800968733a285929c3bfa42594360203e573a
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188414"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988476"
 ---
 # <a name="initonly-ccli"></a>initonly (C++/CLI)
 
-**initonly** olduğundan bu değişken ataması gösteren bir bağlama duyarlı anahtar sözcüğü, yalnızca bildirimin veya aynı sınıftaki statik bir oluşturucuda bir parçası olarak gerçekleşebilir.
+**initonly** , değişken atamasının yalnızca bildirimin parçası olarak veya aynı sınıftaki bir statik oluşturucuda gerçekleşebileceğini belirten bağlama duyarlı bir anahtar sözcüktür.
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `initionly`:
+Aşağıdaki örnek `initionly`nasıl kullanacağınızı gösterir:
 
-```
+```cpp
 // mcpp_initonly.cpp
 // compile with: /clr /c
 ref struct Y1 {

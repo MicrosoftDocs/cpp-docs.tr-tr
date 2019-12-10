@@ -1,25 +1,25 @@
 ---
-title: 'Nasıl yapılır: Olayları kullanın C++/CLI'
+title: 'Nasıl yapılır: C++/CLI Üzerinde Olayları Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - events [C++], accessing in interfaces
 ms.assetid: fbf452dc-2dd7-4322-adc0-656512d654d1
-ms.openlocfilehash: 6b4ecbba5651341965d2cf4df5b5ad2ead7f9f26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbaffaa42b5cfaf60c41694653651ce0bb0fc199
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387181"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988414"
 ---
-# <a name="how-to-use-events-in-ccli"></a>Nasıl yapılır: Olayları kullanın C++/CLI
+# <a name="how-to-use-events-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Olayları Kullanma
 
-Bu makalede, bir olay ve olay çağırmak için bir işlev bildirir bir arabirim ve arabirimini uygulayan sınıf ve olay işleyici nasıl kullanılacağını gösterir.
+Bu makalede, bir olayı ve bu olayı çağırmak için bir işlevi ve arabirimi uygulayan sınıfı ve olay işleyicisini bildiren bir arabirimin nasıl kullanılacağı gösterilir.
 
 ## <a name="interface-events"></a>Arabirim olayları
 
-Aşağıdaki kod örneği, bir olay işleyicisi ekler, olayı çağırır — adını konsola yazma için olay işleyicisini neden olur — ve ardından olay işleyicisini kaldırır.
+Aşağıdaki kod örneği bir olay işleyicisi ekler ve olay işleyicisinin konsola adını yazmasına neden olur ve olay işleyicisini kaldırır.
 
-```
+```cpp
 // mcppv2_events2.cpp
 // compile with: /clr
 using namespace System;
@@ -71,11 +71,11 @@ int main () {
 EventReceiver::Handler
 ```
 
-## <a name="custom-accessor-methods"></a>Özel erişimci metotlarını
+## <a name="custom-accessor-methods"></a>Özel erişimci yöntemleri
 
-Aşağıdaki örnek, bir olayın davranışı işleyicileri eklendiğinde veya kaldırıldığında ve bir olay oluştuğunda tanımlamak gösterilmektedir.
+Aşağıdaki örnek, işleyiciler eklendiğinde veya kaldırıldığında ve bir olay ortaya çıktığında bir olayın davranışının nasıl tanımlanacağını gösterir.
 
-```
+```cpp
 // mcppv2_events6.cpp
 // compile with: /clr
 using namespace System;
@@ -163,11 +163,11 @@ In event handler H1
 In event handler H2 with args 1 and 2.2
 ```
 
-## <a name="override-default-access-on-add-remove-and-raise-accessors"></a>Varsayılan erişimini geçersiz kılma eklemek, kaldırmak ve erişimcileri Yükselt
+## <a name="override-default-access-on-add-remove-and-raise-accessors"></a>Add, Remove ve raise erişimcileri üzerinde varsayılan erişimi geçersiz kıl
 
-Bu örnek, Ekle, remove ve raise olayları yöntemleri varsayılan erişimini geçersiz kılma işlemi gösterilmektedir:
+Bu örnek ekleme, kaldırma ve oluşturma olay yöntemlerinde varsayılan erişimin nasıl geçersiz kılınacağını göstermektedir:
 
-```
+```cpp
 // mcppv2_events3.cpp
 // compile with: /clr
 public delegate void f(int);
@@ -221,11 +221,11 @@ int main() {
 17
 ```
 
-## <a name="multiple-event-handlers"></a>Birden çok olay işleyicileri
+## <a name="multiple-event-handlers"></a>Birden çok olay işleyicisi
 
-Bir olay alıcısı veya istemci kod, bir veya daha fazla işleyicileri için bir olay ekleyebilirsiniz.
+Bir olay alıcısı veya diğer istemci kodları bir olaya bir veya daha fazla işleyici ekleyebilir.
 
-```
+```cpp
 // mcppv2_events4.cpp
 // compile with: /clr
 using namespace System;
@@ -302,9 +302,9 @@ DblClickAgain(s=System.Char[])
 
 ## <a name="static-events"></a>Statik olaylar
 
-Aşağıdaki örnek, tanımlama ve statik olayları kullanma işlemi gösterilmektedir.
+Aşağıdaki örnek, statik olayların nasıl tanımlanacağını ve kullanılacağını göstermektedir.
 
-```
+```cpp
 // mcppv2_events7.cpp
 // compile with: /clr
 using namespace System;
@@ -390,11 +390,11 @@ In event handler H1
 In event handler H2 with args 22 and 22.22
 ```
 
-## <a name="virtual-events"></a>Sanal olayları
+## <a name="virtual-events"></a>Sanal olaylar
 
-Bu örnek, bir arabirim ve sınıf sanal bir yönetilen olaylar uygular:
+Bu örnek, bir arabirim ve sınıfta sanal, yönetilen olayları uygular:
 
-```
+```cpp
 // mcppv2_events5.cpp
 // compile with: /clr
 using namespace System;
@@ -476,9 +476,9 @@ In handler H1
 In handler H2 with args 1 and 2.2
 ```
 
-Basit olay geçersiz kılmak veya bir temel sınıf olayı gizlemek için belirtilemez.  Tüm olay erişimci işlevleri tanımlayın ve ardından belirtin `new` veya `override` her erişimci işlevi anahtar sözcüğü.
+Temel sınıf olayını geçersiz kılmak veya gizlemek için basit bir olay belirtilemez.  Tüm olay erişimci işlevlerini tanımlamanız ve sonra her erişimci işlevinde `new` veya `override` anahtar sözcüğünü belirtmeniz gerekir.
 
-```
+```cpp
 // mcppv2_events5_a.cpp
 // compile with: /clr /c
 delegate void Del();
@@ -510,9 +510,9 @@ ref struct C : B {
 
 ## <a name="abstract-events"></a>Soyut olaylar
 
-Aşağıdaki örnek, soyut bir olayın nasıl uygulanacağını gösterir.
+Aşağıdaki örnek, bir soyut olayın nasıl uygulanacağını gösterir.
 
-```
+```cpp
 // mcppv2_events10.cpp
 // compile with: /clr /W1
 using namespace System;
@@ -593,11 +593,11 @@ hi
 hello from Event2
 ```
 
-## <a name="raising-events-that-are-defined-in-a-different-assembly"></a>Farklı bir derlemede tanımlanan olaylar oluşturma
+## <a name="raising-events-that-are-defined-in-a-different-assembly"></a>Farklı bir derlemede tanımlanan olayları oluşturma
 
-Bir olayı olay işleyicisi bir derlemede tanımlanan ve başka bir derleme tarafından kullanılan.
+Bir olay ve olay işleyicisi bir derlemede tanımlanabilir ve başka bir derleme tarafından tüketilebilir.
 
-```
+```cpp
 // mcppv2_events8.cpp
 // compile with: /LD /clr
 using namespace System;
@@ -613,9 +613,9 @@ public:
 };
 ```
 
-Bu istemci kodu olay kullanır:
+Bu istemci kodu olayı kullanır:
 
-```
+```cpp
 // mcppv2_events9.cpp
 // compile with: /clr
 #using "mcppv2_events8.dll"

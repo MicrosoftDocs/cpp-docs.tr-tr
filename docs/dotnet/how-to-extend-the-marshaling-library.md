@@ -1,42 +1,42 @@
 ---
-title: 'Nasıl yapılır: Hazırlama kitaplığını genişletme'
+title: 'Nasıl yapılır: Sıralama Kitaplığını Genişletme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-ms.openlocfilehash: f289539807b1e9499cef51427d3f6a494545cc60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ab3b17638e07a54189803c83163db67c5ebf82a5
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387311"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988492"
 ---
-# <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Hazırlama kitaplığını genişletme
+# <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Sıralama Kitaplığını Genişletme
 
-Bu konuda, veri türleri arasında daha fazla dönüştürme sağlamak için hazırlama kitaplığını genişletme açıklanmaktadır. Kullanıcılar şu anda kitaplığı tarafından desteklenen herhangi bir veri dönüştürmesi için sıralama kitaplığı genişletebilirsiniz.
+Bu konuda, veri türleri arasında daha fazla dönüştürme sağlamak için sıralama kitaplığının nasıl genişletileceği açıklanmaktadır. Kullanıcılar, kitaplık tarafından şu anda desteklenmeyen veri dönüştürmelerinden oluşan sıralama kitaplığını genişletebilirler.
 
-Sıralama kitaplığı - içeren veya içermeyen iki yoldan biriyle genişletebileceğiniz bir [; marshal_context Class](../dotnet/marshal-context-class.md). Gözden geçirme [Overview of Marshaling c++](../dotnet/overview-of-marshaling-in-cpp.md) yeni dönüştürme bir bağlamı gerekli olup olmadığını belirlemek için.
+Sıralama kitaplığını, bir [Marshal_context sınıfı](../dotnet/marshal-context-class.md)ile veya olmadan iki şekilde genişletebilirsiniz. Yeni dönüştürmenin bir bağlam gerektirip gerektirmediğini öğrenmek için konu başlığı altında [ C++ sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md) konusunu gözden geçirin.
 
-Her iki durumda da, ilk yeni sıralama dönüştürmeleri için bir dosya oluşturun. Standart kitaplık dosyalarını hazırlama bütünlüğünü korumak için bunu. Bir proje başka bir bilgisayara veya başka bir programcı bağlantı istiyorsanız, projenin geri kalanıyla birlikte yeni hazırlama dosyasını kopyalamanız gerekir. Bu şekilde proje engellenmesiyle kullanıcının yeni dönüştürmeleri almak için garantili ve tüm kitaplık dosyaları değiştirmek zorunda değildir.
+Her iki durumda da, ilk olarak yeni sıralama dönüştürmeleri için bir dosya oluşturursunuz. Standart sıralama kitaplığı dosyalarının bütünlüğünü korumak için bunu yapabilirsiniz. Bir proje için başka bir bilgisayara veya başka bir programcıya bağlantı noktası eklemek istiyorsanız, yeni sıralama dosyasını, projenin geri kalanıyla birlikte kopyalamanız gerekir. Bu şekilde, projeyi alan Kullanıcı yeni dönüştürmeleri alacak şekilde garanti edilir ve herhangi bir kitaplık dosyasını değiştirmek zorunda olmayacaktır.
 
-### <a name="to-extend-the-marshaling-library-with-a-conversion-that-does-not-require-a-context"></a>Bir bağlam gerektirmeyen bir dönüştürme ile hazırlama kitaplığını genişletme
+### <a name="to-extend-the-marshaling-library-with-a-conversion-that-does-not-require-a-context"></a>Sıralama kitaplığını bağlam gerektirmeyen bir dönüşümle genişletmek için
 
-1. Yeni sıralama İşlevler, örneğin, MyMarshal.h depolamak için bir dosya oluşturun.
+1. Yeni sıralama işlevlerini depolamak için bir dosya oluşturun, örneğin, MyMarshal. h.
 
-1. Bir veya daha fazla sıralama kitaplığı dosyaları şunları içerir:
+1. Bir veya daha fazla sıralama kitaplığı dosyası ekleyin:
 
-   - Taban türleri için Marshal.h.
+   - temel türler için Marshal. h.
 
-   - windows veri türleri için marshal_windows.h.
+   - Windows veri türleri için marshal_windows. h.
 
-   - için marshal_cppstd.h C++ standart kitaplık türleri.
+   - Standart Kitaplık veri türleri C++ için marshal_cppstd. h.
 
-   - ATL veri türleri için marshal_atl.h.
+   - ATL veri türleri için marshal_atl. h.
 
-1. Kod, dönüştürme işlevi yazmak için bu adımları sonunda kullanın. Bu kod için dönüştürmek için türdür, FROM, dönüştürmek için türü ve `from` dönüştürülecek parametredir.
+1. Dönüştürme işlevini yazmak için bu adımların sonundaki kodu kullanın. Bu kodda, öğesine dönüştürülecek tür, ÖĞESINDEN dönüştürülecek türdür ve `from` dönüştürülecek parametredir.
 
-1. Dönüştürme mantığı hakkında açıklama dönüştürmek için kod ile değiştirin `from` parametresi için bir nesnenin içine yazın ve dönüştürülen nesne döndürür.
+1. `from` parametresini bir nesnesine dönüştürmek ve dönüştürülen nesneyi döndürmek için, dönüştürme mantığı hakkında yorumu kodla değiştirin.
 
 ```
 namespace msclr {
@@ -49,29 +49,29 @@ namespace msclr {
 }
 ```
 
-### <a name="to-extend-the-marshaling-library-with-a-conversion-that-requires-a-context"></a>Bir bağlam gerektiren bir dönüştürme hazırlama kitaplığını genişletme
+### <a name="to-extend-the-marshaling-library-with-a-conversion-that-requires-a-context"></a>Sıralama kitaplığını bağlam gerektiren bir dönüşümle genişletmek için
 
-1. Yeni sıralama İşlevler, örneğin, MyMarshal.h depolamak için bir dosya oluşturun
+1. Yeni sıralama işlevlerini depolamak için bir dosya oluşturun; örneğin, MyMarshal. h
 
-1. Bir veya daha fazla sıralama kitaplığı dosyaları şunları içerir:
+1. Bir veya daha fazla sıralama kitaplığı dosyası ekleyin:
 
-   - Taban türleri için Marshal.h.
+   - temel türler için Marshal. h.
 
-   - windows veri türleri için marshal_windows.h.
+   - Windows veri türleri için marshal_windows. h.
 
-   - için marshal_cppstd.h C++ standart kitaplık türleri.
+   - Standart Kitaplık veri türleri C++ için marshal_cppstd. h.
 
-   - ATL veri türleri için marshal_atl.h.
+   - ATL veri türleri için marshal_atl. h.
 
-1. Kod, dönüştürme işlevi yazmak için bu adımları sonunda kullanın. Bu kod için dönüştürmek için türdür, FROM, dönüştürmek için türü `toObject` sonucun depolanacağı bir işaretçidir ve `fromObject` dönüştürülecek parametredir.
+1. Dönüştürme işlevini yazmak için bu adımların sonundaki kodu kullanın. Bu kodda, ' ye dönüştürülecek tür, ÖĞESINDEN dönüştürülecek türdür, `toObject`, sonucun kaydedileceği bir işaretçidir ve `fromObject` dönüştürülecek parametredir.
 
-1. Başlatma başlatmak için kod ile ilgili açıklamayı değiştirme `toPtr` uygun boş değere. Bir işaretçi ise, örneğin, ayarlayın `NULL`.
+1. `toPtr` uygun boş değere başlatmak için kodla başlatma hakkındaki açıklamayı değiştirin. Örneğin, bir işaretçisiyse, `NULL`olarak ayarlayın.
 
-1. Dönüştürme mantığı hakkında açıklama dönüştürmek için kod ile değiştirin `from` parametresine bir nesne *Kime* türü. Dönüştürülen bu nesne içinde depolanan `toPtr`.
+1. `from` parametresini bir *nesnesine türüne dönüştürmek için,* kodla birlikte dönüştürme mantığı ile ilgili açıklamayı değiştirin. Dönüştürülen bu nesne `toPtr`depolanır.
 
-1. Ayarlamayla ilgili açıklamayı değiştirme `toObject` ayarlamak üzere kod ile `toObject` , dönüştürülen nesne.
+1. Dönüştürülmüş nesneniz `toObject` ayarlamak için `toObject` kodla ilgili yorumu değiştirin.
 
-1. Tarafından ayrılan belleği serbest bırakacak koda sahip yerel kaynakları temizleme hakkında yorum değiştirin `toPtr`. Varsa `toPtr` kullanarak ayrılan bellek `new`, kullanın `delete` belleği boşaltmak için.
+1. `toPtr`tarafından ayrılan tüm belleği boşaltmak için yerel kaynakları kodla Temizleme hakkındaki açıklamayı değiştirin. `toPtr` `new`kullanarak bellek ayırdıysanız, belleği boşaltmak için `delete` kullanın.
 
 ```
 namespace msclr {
@@ -104,9 +104,9 @@ namespace msclr {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, bir bağlam gerektirmeyen bir dönüştürme ile sıralama kitaplığı genişletir. Bu örnekte, kod çalışanların bilgilerinin yerel veri türünden bir yönetilen veri türüne dönüştürür.
+Aşağıdaki örnek, sıralama kitaplığını bağlam gerektirmeyen bir dönüştürme ile genişletir. Bu örnekte, kod, çalışan bilgilerini yerel bir veri türünden yönetilen bir veri türüne dönüştürür.
 
-```
+```cpp
 // MyMarshalNoContext.cpp
 // compile with: /clr
 #include <msclr/marshal.h>
@@ -156,7 +156,7 @@ int main() {
 }
 ```
 
-Önceki örnekte, `marshal_as` işlevi veriye bir tanıtıcı döndürür. Bu, verileri başka bir kopyası oluşturuluyor engellemek için yapıldı. Değişken doğrudan döndüren bir gereksiz performans maliyeti ilişkili.
+Önceki örnekte `marshal_as` işlevi, dönüştürülmüş verilere bir tanıtıcı döndürür. Bu, verilerin ek bir kopyasının oluşturulmasını engellemek için yapılır. Değişkenin doğrudan döndürülmesi, bununla ilişkili gereksiz bir performans maliyetine sahip olur.
 
 ```Output
 Managed name: Jeff Smith
@@ -166,9 +166,9 @@ Managed zip code: 98111
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çalışanların bilgilerinin yönetilen veri türünden bir yerel veri türüne dönüştürür. Bu dönüştürme hazırlama bağlamı gerektirir.
+Aşağıdaki örnek, çalışan bilgilerini yönetilen bir veri türünden yerel bir veri türüne dönüştürür. Bu dönüştürme bir sıralama bağlamı gerektirir.
 
-```
+```cpp
 // MyMarshalContext.cpp
 // compile with: /clr
 #include <stdlib.h>

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4816
 ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
-ms.openlocfilehash: 719a950f2cc15b51dcbbb7e8f4f476f92fe326c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e96cb81d78b0e49e6978ff6ec78cdbfcfdc89e6d
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349597"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990062"
 ---
 # <a name="compiler-warning-level-4-c4816"></a>Derleyici Uyarısı (düzey 4) C4816
 
-'param': parametre (nesne başvuru ile geçirilmiyorsa) kesilecek bir sıfır boyutlu dizi içeriyor
+' param ': parametrede kesilecek bir sıfır boyutlu dizi bulunuyor (nesne başvuruya göre geçirilmemişse)
 
-Bir sıfır boyutlu dizi olan bir nesne parametresi, başvuruyla geçilemedi. Nesne geçirildiğinde diziye kopyalanır değil.
+Sıfır boyutlu diziye sahip bir nesne parametresi başvuruya göre geçirilmedi. Nesne geçirildiğinde dizi kopyalanmayacak.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4816 oluşturur:
+Aşağıdaki örnek C4816 oluşturur:
 
-```
+```cpp
 // C4816.cpp
 // compile with: /W4
 #include <stdio.h>

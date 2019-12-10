@@ -1,7 +1,10 @@
 ---
-title: _inp, _inpw, _inpd
-ms.date: 11/04/2016
+title: INP, _inp, ınpw, _inpw, _inpd
+description: Microsoft C çalışma zamanı kitaplığı 'nın (CRT) eski ve kaldırılmış INP, _inp, ınpw, _inpw ve _inpd işlevlerini açıklar.
+ms.date: 12/09/2019
 api_name:
+- inp
+- inpw
 - _inp
 - _inpw
 - _inpd
@@ -18,7 +21,8 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- inpd
+- inp
+- inpw
 - _inp
 - _inpw
 - _inpd
@@ -32,26 +36,24 @@ helpviewer_keywords:
 - I/O [CRT], port
 - _inpw function
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
-ms.openlocfilehash: 4668002fdf709e3e425ac379f136e228250896d4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 48e0e58d2886c5a8bb90a86c81cb785d364666e8
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944987"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988718"
 ---
-# <a name="_inp-_inpw-_inpd"></a>_inp, _inpw, _inpd
+# <a name="inp-_inp-inpw-_inpw-_inpd"></a>INP, _inp, ınpw, _inpw, _inpd
 
-Bir bağlantı noktasından, bir bayta (`_inp`), bir sözcüğe (`_inpw`) veya bir çift sözcüğe (`_inpd`) ait girişler.
-
-> [!IMPORTANT]
->  Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak, bu dosyalar CRT içinde kullanılamaz.
+Bir bağlantı noktasından, bir bayt (`inp`, `_inp`), bir sözcük (`inpw`, `_inpw`) veya bir çift sözcükten (`_inpd`) girişler.
 
 > [!IMPORTANT]
->  Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak, bu dosyalar CRT içinde kullanılamaz.  
+> Bu API, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 int _inp(
    unsigned short port
 );
@@ -63,20 +65,22 @@ unsigned long _inpd(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*bağ*<br/>
-G/ç bağlantı noktası numarası.
+*bağlantı noktası*\
+I/O bağlantı noktası numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlevler, öğesinden `port`okunan Byte, Word veya Double sözcüklerini döndürür. Hata döndürme yok.
+İşlevler `port`'tan okunan bayt, kelime veya çift kelime geri döndürür. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_inp`, Veişlevleri`_inpd` , belirtilen giriş bağlantı noktasından sırasıyla bir bayt, bir sözcük ve bir çift sözcük okur. `_inpw` Giriş değeri 0-65.535 aralığında işaretsiz bir kısa tamsayı olabilir.
+`_inp`, `_inpw` ve `_inpd` işlevleri belirtilen giriş bağlantı noktasından sırasıyla bir bayt, bir sözcük ve bir çift sözcük okur. Giriş değeri 0-65.535 aralığında işaretsiz bir kısa tamsayı olabilir.
 
 Bu işlevler doğrudan bir g/ç bağlantı noktasından okunduğu için Kullanıcı kodunda kullanılamaz.
+
+`inp` ve `inpw` adları `_inp` ve `_inpw` işlevleri için eski, kullanım dışı adlardır. Daha fazla bilgi için bkz. [POSIX işlev adları](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -94,5 +98,5 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compati
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)<br/>
-[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)
+[Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)\
+[outp, outpw, _outp, _outpw _outpd](../c-runtime-library/outp-outpw-outpd.md)

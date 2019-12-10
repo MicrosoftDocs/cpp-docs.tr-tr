@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama'
+title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - C++ Interop, strings
 - data marshaling [C++], strings
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
-ms.openlocfilehash: b73d8ed403ab0bbad7703f66f0d8d4ac23bb7766
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 6987b23311354cfe6fd095e0e811d043e9b9692e
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345745"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988470"
 ---
-# <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama
+# <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama
 
-Bu konu, ANSI dizelerini nasıl olabileceğini gösterir C++ birlikte çalışması ancak .NET Framework kullanarak geçirilen <xref:System.String> ANSI dönüştürme fazladan bir adım, bu nedenle Unicode biçiminde dizeleri temsil eder. Diğer dize türlerine ile çalışmak için aşağıdaki konulara bakın:
+Bu konu, ANSI dizelerinin birlikte çalışabilirlik kullanılarak C++ nasıl geçirileceğini gösterir ancak .NET Framework <xref:System.String> dizeleri Unicode biçiminde temsil eder, bu nedenle ANSI 'ye dönüştürme ek bir adımdır. Diğer dize türleriyle birlikte çalışma için aşağıdaki konulara bakın:
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Unicode Dizelerini Hazırlama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Hazırlama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
-Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergeleri uygulamak için yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak bu işlevler ayrı dosyalarında tanımlandıysa aynı şekilde birlikte çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesine gerek yoktur çünkü [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), kendi performans özellikleri korurlar.
+Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekli olmadığından, bunların performans özelliklerini koruyabilir.
 
 ## <a name="example"></a>Örnek
 
-Örnek, bir yönetilmeyen işlevi kullanarak bir ANSI dizesine yönetilen bir işlevden geçirmeyi gösterir <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A>. Bu yöntem, yönetilmeyen yığında bellek ayırır ve dönüştürme işlemini gerçekleştirdikten sonra adresini döndürür. Yani hiçbir sabitleme (bellek GC yığınındaki yönetilmeyen işleve geçirilir değil çünkü) gerekli olduğunu ve IntPtr öğesinden döndürülen <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> açıkça serbest bırakılması gerekir veya bellek sızıntısı.
+Örnek, <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A>kullanılarak yönetilmeyen bir işleve bir ANSI dizesinin geçtiğini gösterir. Bu yöntem, yönetilmeyen yığında bellek ayırır ve dönüştürme gerçekleştirildikten sonra adresi döndürür. Bu, hiçbir sabitleme gerekmediği anlamına gelir (GC yığınındaki bellek, yönetilmeyen işleve geçirilmediğinden) ve <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> tarafından döndürülen IntPtr 'ın açık olarak bırakılması veya bir bellek sızıntısı sonuçları olması gerekir.
 
-```
+```cpp
 // MarshalANSI1.cpp
 // compile with: /clr
 #include <iostream>
@@ -62,9 +62,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yönetilmeyen bir işlev tarafından çağrılan yönetilen bir işlevdeki bir ANSI dizesine erişmek için gerekli veri hazırlamayı gösterir. Yerel dize Yönetilen işlev alırken doğrudan kullanabilir veya onu kullanarak bir yönetilen dize dönüştürme <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> gösterildiği yöntemi.
+Aşağıdaki örnek, yönetilmeyen bir işlev tarafından çağrılan yönetilen bir işlevde bir ANSI dizesine erişmek için gereken veri sıralamasını gösterir. Yerel dizeyi alma sırasında yönetilen işlev doğrudan kullanabilir veya gösterildiği gibi <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> yöntemi kullanılarak yönetilen bir dizeye dönüştürebilir.
 
-```
+```cpp
 // MarshalANSI2.cpp
 // compile with: /clr
 #include <iostream>

@@ -1,5 +1,5 @@
 ---
-title: '&lt;SeeAlso > (C++ belgeleri açıklamaları)'
+title: '&lt;seede > (C++ belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - <seealso>
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - seealso C++ XML tag
 - <seealso> C++ XML tag
 ms.assetid: cb33d100-9c50-4485-8d0c-573429eff155
-ms.openlocfilehash: ea399e98723a265ef3c17f2282b7c81299b4abc5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 698db2df462f561acd897d0d0e56b3106a915466
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318842"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988610"
 ---
-# <a name="ltseealsogt"></a>&lt;SeeAlso&gt;
+# <a name="ltseealsogt"></a>&lt;seede&gt;
 
-\<Seealso > etiketi, bir Ayrıca bkz. bölümünde görüntülenmesini isteyebilirsiniz metin belirtmenize olanak sağlar. Kullanım [ \<bakın >](see-visual-cpp.md) bağlantı metninde belirtmek için.
+\<seede > etiketi, Ayrıca bkz. bölümünde görünmesini isteyebileceğiniz metni belirtmenize olanak tanır. Metin içinden bir bağlantı belirtmek için [\<> bakın](see-visual-cpp.md) .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,26 +27,26 @@ ms.locfileid: "62318842"
 
 #### <a name="parameters"></a>Parametreler
 
-*Üyesi*<br/>
-Bir üye veya geçerli derleme ortamdan çağrılacak kullanılabilir alan başvuru.  Ad, tek veya çift tırnak içine alın.
+*üyesidir*<br/>
+Geçerli derleme ortamından çağrılabilen bir üyeye veya alana başvuru.  Adı tek veya çift tırnak içine alın.
 
-Derleyici belirli kod öğesi var. çözümler olup olmadığını denetler ve `member` çıktı XML öğesi adı.  Değil bulamazsa, derleyici bir uyarı verir `member`.
+Derleyici verilen kod öğesinin var olduğunu denetler ve çıkış XML dosyasında öğe adına `member` çözümler.  Derleyici `member`bulamazsa bir uyarı verir.
 
-Genel tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bakın >](see-visual-cpp.md).
+Genel bir türe cref başvurusu oluşturma hakkında daha fazla bilgi için bkz. [\<](see-visual-cpp.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
-Bkz: [ \<Özet >](summary-visual-cpp.md) kullanma örneği için \<seealso >.
+Bkz. \<SeeAlso > kullanımı örneği için [\<özet >](summary-visual-cpp.md) .
 
-MSVC derleyicisi, belge yorumlarını bir geçiş cref başvuruları çözümlemek dener.  Bu nedenle, C++ arama kurallarını kullanarak, bir sembol başvurusu işaretlenir derleyici tarafından bulunamadı olarak çözümlenmemiş.
+MSVC derleyicisi, belge açıklamalarındaki cref başvurularını tek bir geçişte çözümlemeye çalışır.  Bu nedenle, C++ arama kuralları kullanılıyorsa, derleyici tarafından bir sembol bulunamamıştır ve başvuru çözümlenmemiş olarak işaretlenir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, bir çözümlenmemiş simge bir cref başvuruluyor. XML yorumu cref B::Test için için olacak `<seealso cref="!:B::Test" />`A::Test başvuru biçimlendirildiğini bilgileriyse `<seealso cref="M:A.Test" />`.
+Aşağıdaki örnekte, bir cref 'de çözümlenmemiş bir sembole başvurulur. Cref-B:: test için XML yorumu `<seealso cref="!:B::Test" />`olacaktır, ancak:: test başvurusu doğru biçimlendirilmiş `<seealso cref="M:A.Test" />`.
 
-```
+```cpp
 // xml_seealso_tag.cpp
 // compile with: /LD /clr /doc
 // post-build command: xdcmake xml_seealso_tag.dll

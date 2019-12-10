@@ -1,25 +1,25 @@
 ---
-title: "Nasıl yapılır: System:: String'i standart dizeye dönüştürme"
+title: "Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme"
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ Standard Library, converting System::String to standard string
 - string conversion, System::String
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
-ms.openlocfilehash: 3ea3c56af2fefaf7c65055135e8549fb153c9a8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7dd73b8fed98918135b66af1b6351977426cd26e
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379122"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988510"
 ---
-# <a name="how-to-convert-systemstring-to-standard-string"></a>Nasıl yapılır: System:: String'i standart dizeye dönüştürme
+# <a name="how-to-convert-systemstring-to-standard-string"></a>Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme
 
-Dönüştürebilir bir <xref:System.String> için `std::string` veya `std::wstring`, kullanmadan `PtrToStringChars` Vcclr.h içinde.
+Vcclr. h içinde `PtrToStringChars` kullanmadan bir <xref:System.String> `std::string` veya `std::wstring`dönüştürebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // convert_system_string.cpp
 // compile with: /clr
 #include <string>

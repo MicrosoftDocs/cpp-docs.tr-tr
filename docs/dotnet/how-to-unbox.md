@@ -1,23 +1,23 @@
 ---
-title: 'Nasıl yapılır: unbox'
+title: 'Nasıl yapılır: Açma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - unboxing
 ms.assetid: 75794696-9275-47bf-9a7d-5abe6585ab91
-ms.openlocfilehash: 640d2488d0fa1111262af371d88aea8f61511fa8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b184b0b534e2720af833f34b908ede5b998803ec
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387232"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988146"
 ---
-# <a name="how-to-unbox"></a>Nasıl yapılır: unbox
+# <a name="how-to-unbox"></a>Nasıl yapılır: Açma
 
-Açma ve bir değer değiştirme işlemi gösterilmektedir.
+Bir değerin nasıl kutudan alınacağını ve değiştirileceğini gösterir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // vcmcppv2_unboxing.cpp
 // compile with: /clr
 using namespace System;

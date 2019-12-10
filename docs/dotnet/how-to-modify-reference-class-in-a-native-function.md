@@ -1,27 +1,27 @@
 ---
-title: 'Nasıl yapılır: Yerel İşlevde Başvuru sınıfını değiştirme'
+title: 'Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - platform invoke, reference class
 - reference types, modifying in a C++ native function
 ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
-ms.openlocfilehash: c24bca5269cc924482c727d921fd24310f016824
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3368c8cde3d48be1c72fcc0d7b99f2d0ecb10d7
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404396"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988232"
 ---
-# <a name="how-to-modify-reference-class-in-a-native-function"></a>Nasıl yapılır: Yerel İşlevde Başvuru sınıfını değiştirme
+# <a name="how-to-modify-reference-class-in-a-native-function"></a>Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme
 
-Bir yerel işleve başvuru sınıfı CLR dizisi ile geçirin ve sınıfı, PInvoke hizmetlerini kullanarak değiştirin.
+Bir CLR dizisiyle bir başvuru sınıfını yerel işleve geçirebilir ve PInvoke hizmetlerini kullanarak sınıfı değiştirebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki yerel kitaplığı derleyin.
 
-```
+```cpp
 // modify_ref_class_in_native_function.cpp
 // compile with: /LD
 #include <stdio.h>
@@ -49,9 +49,9 @@ extern "C"  {
 
 ## <a name="example"></a>Örnek
 
-Şu derleme için derleyin.
+Aşağıdaki derlemeyi derleyin.
 
-```
+```cpp
 // modify_ref_class_in_native_function_2.cpp
 // compile with: /clr
 using namespace System;

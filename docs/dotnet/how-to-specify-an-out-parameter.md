@@ -1,29 +1,29 @@
 ---
-title: 'Nasıl yapılır: Belirttiğiniz bir parametre'
+title: 'Nasıl yapılır: Bir out Parametresini Belirleme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function parameters
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
-ms.openlocfilehash: 901257b92aaa5e13e6e79d612ca590b734e15881
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f0b462e672de4408d50bf95d65c749bf1881078
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387233"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988432"
 ---
-# <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Belirttiğiniz bir parametre
+# <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Bir out Parametresini Belirleme
 
-Bu örnek, bir işlev parametresinin bir out parametresi olduğunu belirtmek nasıl ve bir C# programı bu işlevi çağırmak nasıl gösterir.
+Bu örnek, bir işlev parametresinin out parametresi ve bu işlevin bir C# programdan nasıl çağrılacağını belirtir.
 
-Visual C++ ile out parametresi belirtildiğinden <xref:System.Runtime.InteropServices.OutAttribute> .
+Bir out parametresi görselde C++ <xref:System.Runtime.InteropServices.OutAttribute> ile belirtilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte ilk bölümünü out parametresi olan bir işlev içeren bir türe sahip bir Visual C++ DLL'ye ' dir.
+Bu örneğin ilk bölümü, out parametresine sahip bir C++ işlev içeren bir türe sahip bir Visual dll 'dir.
 
-```
+```cpp
 // cpp_out_param.cpp
 // compile with: /LD /clr:safe
 using namespace System;
@@ -36,7 +36,7 @@ public value struct TestStruct {
 
 ## <a name="example"></a>Örnek
 
-Önceki örnekte oluşturulan Visual C++ bileşeni kullanan bir C# istemci budur.
+Bu, önceki C# örnekte oluşturulan görsel C++ bileşeni tüketen bir istemcidir.
 
 ```
 // cpp_out_param_2.cs

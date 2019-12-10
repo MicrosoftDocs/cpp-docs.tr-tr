@@ -1,5 +1,5 @@
 ---
-title: '&lt;Örnek > (C++ belgeleri açıklamaları)'
+title: '&lt;örnek > (C++ belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - <example>
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - <example> C++ XML tag
 - example C++ XML tag
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
-ms.openlocfilehash: 69e4ad8315948c9c77e99f6ebece4debbe3831b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 384e9b9808a49770887eeda69b1d24fdd3f06027
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272539"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988319"
 ---
-# <a name="ltexamplegt"></a>&lt;Örnek&gt;
+# <a name="ltexamplegt"></a>&lt;örnek&gt;
 
-\<Örnek > etiketi bir yöntem veya diğer kitaplık üyesini kullanmaya ilişkin bir örnek belirtmenize olanak sağlar. Yaygın olarak, bu da kullanımını kapsayacaktır [ \<kod >](code-visual-cpp.md) etiketi.
+\<örnek > etiketi, bir yöntemin veya diğer kitaplık üyesinin nasıl kullanılacağına ilişkin bir örnek belirtmenize olanak tanır. Bu, genellikle [\<code >](code-visual-cpp.md) etiketinin kullanımını da içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,16 +27,16 @@ ms.locfileid: "62272539"
 
 #### <a name="parameters"></a>Parametreler
 
-*Açıklaması*<br/>
-Kod örneği açıklaması.
+*description*<br/>
+Kod örneğinin açıklaması.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // xml_example_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_example_tag.dll

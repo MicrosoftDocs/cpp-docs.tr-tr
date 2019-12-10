@@ -4,26 +4,26 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-ms.openlocfilehash: 8f168582e56e77f1ec848928b7ffd36879ba341a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb7a30382bc586f4d324d47ef6e6757fac83f5ae
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384536"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988382"
 ---
 # <a name="user-defined-conversions-ccli"></a>Kullanıcı Tanımlı Dönüşümler (C++/CLI)
 
-Bu bölümde, türlerinden dönüştürme bir başvuru veya değer türü veya başvuru türü örneği olduğunda kullanıcı tanımlı Dönüşümler (UDC) açıklanmaktadır.
+Bu bölümde, dönüşümdeki türlerden biri bir değer türünün veya başvuru türünün bir başvurusu veya örneği olduğunda, Kullanıcı tanımlı dönüştürmeler (UDC) açıklanmaktadır.
 
 ## <a name="implicit-and-explicit-conversions"></a>Örtük ve açık dönüştürmeler
 
-Bir kullanıcı tanımlı dönüştürme örtük veya açık olarak ya da olabilir.  Bir UDC dönüşüm bilgi kaybına sağlamazsa örtülü olmalıdır. Aksi takdirde bir açık UDC tanımlanmalıdır.
+Kullanıcı tanımlı dönüştürme örtük ya da açık olabilir.  Dönüştürme bilgi kaybına yol içermiyorsa, bir UDC örtük olması gerekir. Aksi halde açık bir UDC tanımlanmalıdır.
 
-Yerel bir sınıfın oluşturucusu, yerel bir sınıfa bir başvuru veya değer türü dönüştürmek için kullanılabilir.
+Yerel bir sınıfın Oluşturucusu, bir başvuruyu veya değer türünü yerel bir sınıfa dönüştürmek için kullanılabilir.
 
-Dönüştürmeler hakkında daha fazla bilgi için bkz. [kutulama](../extensions/boxing-cpp-component-extensions.md) ve [standart dönüştürmeler](../cpp/standard-conversions.md).
+Dönüştürmeler hakkında daha fazla bilgi için bkz. [paketleme](../extensions/boxing-cpp-component-extensions.md) ve [Standart dönüşümler](../cpp/standard-conversions.md).
 
-```
+```cpp
 // mcpp_User_Defined_Conversions.cpp
 // compile with: /clr
 #include "stdio.h"
@@ -78,25 +78,25 @@ in N::N
 
 ## <a name="convert-from-operators"></a>Dönüştürme Kaynağı İşleçleri
 
-Dönüştürme kaynağı işleçleri işleci tanımlandığı sınıfın bir nesnesi, bir nesnenin başka bir sınıf oluşturun.
+Convert-from işleçleri, başka bir sınıfın bir nesnesinden tanımlandığı sınıfın bir nesnesini oluşturur.
 
-Standart C++ dönüştürme kaynağı işleçleri desteklemez; Standart C++ oluşturucular bu amaç için kullanır. Ancak, CLR Türleri kullanırken, Visual C++ söz dizimi desteğini sağlar dönüştürme kaynağı işleçleri çağırmak için.
+Standart C++ , Convert-from işleçlerini desteklemez; Standart C++ bu amaçla oluşturucular kullanır. Ancak, CLR türleri kullanılırken, Visual C++ , Convert-from işleçlerini çağırmak için sözdizimsel destek sağlar.
 
-De CLS uyumlu diğer dillerle birlikte çalışmak için belirli bir sınıfın her tekil kullanıcı tanımlı oluşturucusu bir karşılık gelen dönüştürme kaynağı işleci ile sarmalamak isteyebilirsiniz.
+Diğer CLS uyumlu dillerle birlikte çalışmak için, belirli bir sınıf için her kullanıcı tanımlı birli oluşturucuyu karşılık gelen bir Convert-from işleci ile kaydırmak isteyebilirsiniz.
 
-Dönüştürme kaynağı işleçleri:
+Convert-from işleçleri:
 
-- Statik işlevler olarak tanımlanmalıdır.
+- Statik işlev olarak tanımlanacak.
 
-- Bir duyarlık kaybı olabilir, ya da (short int gibi duyarlık kaybı dönüştürme için) örtük veya açık, olabilir.
+- Örtük olabilir (short-int gibi duyarlık kaybı olmayan dönüştürmeler için) ya da bir duyarlık kaybı olduğunda açık olabilir.
 
-- İçerilen sınıfının bir nesnesi döndürür.
+- , Kapsayan sınıfın bir nesnesini döndürür.
 
-- Sahip olamaz "Kimden" türü tek bir parametre türü olarak.
+- Tek parametre türü olarak "Kimden" türüne sahip olacaktır.
 
-Aşağıdaki örnek, bir örtük ve açık "convert-", kullanıcı tanımlı dönüştürmeden (UDC) işlecini gösterir.
+Aşağıdaki örnekte örtük ve açık bir "Convert-from", Kullanıcı tanımlı dönüştürme (UDC) işleci gösterilmektedir.
 
-```
+```cpp
 // clr_udc_convert_from.cpp
 // compile with: /clr
 value struct MyDouble {
@@ -142,11 +142,11 @@ in constructor
 1
 ```
 
-## <a name="convert-to-operators"></a>Dönüştürme için işleçleri
+## <a name="convert-to-operators"></a>Dönüştür işleçleri
 
-İşleci için başka bir nesne tanımlandığı sınıfın bir nesnesi için dönüştürme işleçleri dönüştürün. Aşağıdaki örnek, bir örtülü dönüştürme için kullanıcı tanımlı dönüştürme işleci gösterir:
+Convert-to işleçleri, bir sınıfın bir nesneyi başka bir nesne için tanımlandığı bir nesne dönüştürür. Aşağıdaki örnek örtük, dönüştürmeli, Kullanıcı tanımlı bir dönüştürme işlecini gösterir:
 
-```
+```cpp
 // clr_udc_convert_to.cpp
 // compile with: /clr
 using namespace System;
@@ -174,9 +174,9 @@ int main() {
 10
 ```
 
-Bir açık kullanıcı tanımlı dönüştürme dönüştürme operatörü olabilecek şekilde veri kaybı dönüştürmeler için uygundur. Açık convert-işlecini çağırmak için bir yayın kullanılmalıdır.
+Açık bir Kullanıcı tanımlı dönüştürme dönüşümü işleci, verileri bir şekilde kaybedebilecek dönüştürmeler için uygundur. Açık bir Convert-to işlecini çağırmak için, bir cast kullanılması gerekir.
 
-```
+```cpp
 // clr_udc_convert_to_2.cpp
 // compile with: /clr
 value struct MyDouble {
@@ -204,11 +204,11 @@ int main() {
 10
 ```
 
-## <a name="to-convert-generic-classes"></a>Genel sınıflar dönüştürmek için
+## <a name="to-convert-generic-classes"></a>Genel sınıfları dönüştürmek için
 
-Genel sınıf T'ye Dönüştür
+Genel bir sınıfı T 'e dönüştürebilirsiniz.
 
-```
+```cpp
 // clr_udc_generics.cpp
 // compile with: /clr
 generic<class T>
@@ -238,9 +238,9 @@ int main() {
 True
 ```
 
-Dönüştürme bir oluşturucu, bir türü alır ve bir nesne oluşturmak için kullanır.  Bir dönüştürme Oluşturucu yalnızca doğrudan başlatma ile çağrılır; yayınları dönüştürme oluşturucuları çağırma kullanılamaz. Varsayılan olarak, dönüştürme oluşturucuları CLR türleri için açık.
+Bir dönüştürme Oluşturucu bir tür alır ve bunu bir nesne oluşturmak için kullanır.  Bir dönüştürme Oluşturucusu yalnızca doğrudan başlatma ile çağrılır; yayınlar dönüştürme oluşturucularını çağırmaz. Varsayılan olarak, dönüştürme oluşturucuları CLR türleri için açıktır.
 
-```
+```cpp
 // clr_udc_converting_constructors.cpp
 // compile with: /clr
 public ref struct R {
@@ -274,7 +274,7 @@ int main() {
 R
 ```
 
-Bu kod örneğinde, bir örtük statik dönüştürme işlevi açık bir dönüştürme Oluşturucu olarak aynı şeyi yapar.
+Bu kod örneğinde, örtük bir statik dönüştürme işlevi, açık bir dönüştürme Oluşturucusu ile aynı şeyi yapar.
 
 ```
 public value struct V {

@@ -93,12 +93,12 @@ helpviewer_keywords:
 - $(PlatformShortName) macro
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-ms.openlocfilehash: 0de96306e645ec85562e414a96283923e93a00ad
-ms.sourcegitcommit: af4ab63866ed09b5988ed53f1bb6996a54f02484
+ms.openlocfilehash: e2c7fe6f2ea63f2cbd259e4114843fcfc28fcd84
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787093"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988333"
 ---
 # <a name="common-macros-for-msbuild-commands-and-properties"></a>MSBuild komutları ve özellikleri için genel makrolar
 
@@ -117,7 +117,7 @@ Bu tabloda, kullanılabilir makroların yaygın olarak kullanılan bir alt küme
 |Makrosu|Açıklama|
 |-----------|-----------------|
 |**$ (Yapılandırma)**|Geçerli proje yapılandırmasının adı, örneğin "Debug".|
-|**$ (DevEnvDir)**|Visual Studio yükleme dizini (sürücü + yol olarak tanımlanır); '\\' sonunda ters eğik çizgi içerir.|
+|**$ (DevEnvDir)**|Visual Studio yükleme dizini (sürücü + yol olarak tanımlanır); Sondaki ters eğik çizgi '\\' içerir.|
 |**$ (FrameworkDir)**|.NET Framework yüklendiği dizin.|
 |**$ (FrameworkSDKDir)**|.NET Framework yüklediğiniz dizin. .NET Framework, Visual Studio 'nun bir parçası olarak veya ayrı olarak yüklenmiş olabilir.|
 |**$ (FrameworkVersion)**|Visual Studio tarafından kullanılan .NET Framework sürümü. **$ (FrameworkDir)** ile birlikte kullanıldığında, Visual Studio tarafından kullanılan .NET Framework sürümünün tam yoludur.|
@@ -126,28 +126,28 @@ Bu tabloda, kullanılabilir makroların yaygın olarak kullanılan bir alt küme
 |**$ (OutDir)**|Çıkış dosyası dizininin yolu. Göreli bir yol ise, çıkış dosyaları proje dizinine eklenen bu yola gider. Bu yolun sonunda eğik çizgi olmalıdır. **Çıkış dizini** özelliğinin değerine çözümlenmektedir. Bu özelliği tanımlamak için **$ (IntDir)** kullanmayın.|
 |**$ (Platform)**|Geçerli proje platformunun adı, örneğin "Win32".|
 |**$ (PlatformShortName)**|Geçerli mimarinin kısa adı (örneğin, "x86" veya "x64").|
-|**$ (ProjectDir)**|Projenin dizini (sürücü + yol olarak tanımlanır); '\\' sonunda ters eğik çizgi içerir.|
+|**$ (ProjectDir)**|Projenin dizini (sürücü + yol olarak tanımlanır); Sondaki ters eğik çizgi '\\' içerir.|
 |**$ (ProjectExt)**|Projenin dosya uzantısı. Dosya uzantısından önce '. ' içerir.|
 |**$ (ProjectFileName)**|Projenin dosya adı (taban adı + dosya uzantısı olarak tanımlanır).|
 |**$ (ProjectName)**|Projenin temel adı.|
 |**$ (ProjectPath)**|Projenin mutlak yol adı (sürücü + yol + taban adı + dosya uzantısı olarak tanımlanır).|
-|**$ (PublishDir)**|Yayımla hedefi için çıkış konumu; '\\' sonunda ters eğik çizgi içerir. **$ (OutDir) App\\ . Publish** klasörünü varsayılan olarak belirler.|
+|**$ (PublishDir)**|Yayımla hedefi için çıkış konumu; Sondaki ters eğik çizgi '\\' içerir. Varsayılan olarak **$ (OutDir) App. publish\\** klasörüdür.|
 |**$ (RemoteMachine)**|Hata ayıklama özelliği sayfasında, **uzak makine** özelliğinin değerine ayarlanır. Daha fazla bilgi için bkz. [C/C++ Debug yapılandırması Için proje ayarlarını değiştirme](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) .|
 |**$ (RootNameSpace)**|Varsa, uygulamayı içeren ad alanı.|
-|**$ (SolutionDir)**|Çözümün dizini (sürücü + yol olarak tanımlanır); '\\' sonunda ters eğik çizgi içerir. Yalnızca IDE 'de bir çözüm oluşturulurken tanımlanır.|
+|**$ (SolutionDir)**|Çözümün dizini (sürücü + yol olarak tanımlanır); Sondaki ters eğik çizgi '\\' içerir. Yalnızca IDE 'de bir çözüm oluşturulurken tanımlanır.|
 |**$ (SolutionExt)**|Çözümün dosya uzantısı. Dosya uzantısından önce '. ' içerir. Yalnızca IDE 'de bir çözüm oluşturulurken tanımlanır.|
 |**$ (SolutionFileName)**|Çözümün dosya adı (temel ad + dosya uzantısı olarak tanımlanır). Yalnızca IDE 'de bir çözüm oluşturulurken tanımlanır.|
 |**$ (SolutionName)**|Çözümün temel adı. Yalnızca IDE 'de bir çözüm oluşturulurken tanımlanır.|
 |**$ (SolutionPath)**|Çözümün mutlak yol adı (sürücü + yol + taban adı + dosya uzantısı olarak tanımlanır). Yalnızca IDE 'de bir çözüm oluşturulurken tanımlanır.|
-|**$ (TARGETDIR)**|Derleme için birincil çıkış dosyasının dizini (sürücü + yol olarak tanımlanır); '\\' sonunda ters eğik çizgi içerir.|
+|**$ (TARGETDIR)**|Derleme için birincil çıkış dosyasının dizini (sürücü + yol olarak tanımlanır); Sondaki ters eğik çizgi '\\' içerir.|
 |**$ (TargetExt)**|Derleme için birincil çıkış dosyasının dosya uzantısı. Dosya uzantısından önce '. ' içerir.|
 |**$ (TargetFileName)**|Derleme için birincil çıkış dosyasının dosya adı (temel ad + dosya uzantısı olarak tanımlanır).|
 |**$ (TargetName)**|Derleme için birincil çıkış dosyasının temel adı.|
 |**$ (TargetPath)**|Derleme için birincil çıkış dosyasının mutlak yol adı (sürücü + yol + taban adı + dosya uzantısı olarak tanımlanır).|
-|**$ (VCInstallDir)**|Visual Studio yüklemenizin C++ içeriğini içeren dizin. Bu özellik hedeflenen Microsoft C++ (MSVC) araç takımının, Visual Studio 'nun barındırıcı farklı olabilen sürümünü içerir. Örneğin, ile `$(PlatformToolset) = v140`derleme yaparken, **$ (VCInstallDir)** , Visual Studio 2015 yüklemesinin yolunu içerir.|
-|**$ (VSInstallDir)**|Visual Studio 'Yu yüklediğiniz dizin. Bu özellik hedeflenen Visual Studio araç takımının sürümünü içerir ve bu, Visual Studio 'nun barındırıcı farklı olabilir. Örneğin, ile `$(PlatformToolset) = v110`derleme yaparken, **$ (VSInstallDir)** , Visual Studio 2012 yüklemesinin yolunu içerir.|
-|**$ (WebDeployPath)**|Web Dağıtım kökünden proje çıkışların ait olduğu yere göreli yol. İle <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>aynı değeri döndürür.|
-|**$ (WebDeployRoot)**|**\<Localhost >** konumunun mutlak yolu. Örneğin, c:\inetpub\wwwroot.|
+|**$ (VCInstallDir)**|Visual Studio yüklemenizin C++ içeriğini içeren dizin. Bu özellik hedeflenen Microsoft C++ (MSVC) araç takımının, Visual Studio 'nun barındırıcı farklı olabilen sürümünü içerir. Örneğin, `$(PlatformToolset) = v140`ile derlerken, **$ (VCInstallDir)** , Visual Studio 2015 yüklemesinin yolunu içerir.|
+|**$ (VSInstallDir)**|Visual Studio 'Yu yüklediğiniz dizin. Bu özellik hedeflenen Visual Studio araç takımının sürümünü içerir ve bu, Visual Studio 'nun barındırıcı farklı olabilir. Örneğin, `$(PlatformToolset) = v110`ile derlerken, **$ (VSInstallDir)** , Visual Studio 2012 yüklemesinin yolunu içerir.|
+|**$ (WebDeployPath)**|Web Dağıtım kökünden proje çıkışların ait olduğu yere göreli yol.|
+|**$ (WebDeployRoot)**|**\<localhost >** konumunun mutlak yolu. Örneğin, c:\inetpub\wwwroot.|
 
 ## <a name="obsolete-macros"></a>Kullanılmayan makrolar
 
@@ -155,7 +155,7 @@ Bu tabloda, kullanılabilir makroların yaygın olarak kullanılan bir alt küme
 
 |Makrosu|Açıklama|
 |-----------|-----------------|
-|**$ (InputDir)**|(Geçirilmiş.) Giriş dosyasının dizini (sürücü + yol olarak tanımlanır); '\\' sonunda ters eğik çizgi içerir. Eğer proje giriş ise, bu makro **$ (ProjectDir)** ile eşdeğerdir.|
+|**$ (InputDir)**|(Geçirilmiş.) Giriş dosyasının dizini (sürücü + yol olarak tanımlanır); Sondaki ters eğik çizgi '\\' içerir. Eğer proje giriş ise, bu makro **$ (ProjectDir)** ile eşdeğerdir.|
 |**$ (InputExt)**|(Geçirilmiş.) Giriş dosyasının dosya uzantısı. Dosya uzantısından önce '. ' içerir. Eğer proje giriş ise, bu makro **$ (ProjectExt)** ile eşdeğerdir. Kaynak dosyaları için **% (uzantı)** .|
 |**$ (Inputfilename)**|(Geçirilmiş.) Giriş dosyasının dosya adı (taban adı + dosya uzantısı olarak tanımlanır). Proje giriş ise, bu makro **$ (ProjectFileName)** ile eşdeğerdir. Kaynak dosyaları için bu değer **% (kimlik)** .|
 |**$ (Inputname)**|(Geçirilmiş.) Giriş dosyasının temel adı. Eğer proje giriş ise, bu makro **$ (ProjectName)** ile eşdeğerdir. Kaynak dosyaları için **% (filename)** .|
@@ -167,6 +167,6 @@ Bu tabloda, kullanılabilir makroların yaygın olarak kullanılan bir alt küme
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio projeleri-C++](../creating-and-managing-visual-cpp-projects.md)\
+[Visual Studio projeleri- C++ ](../creating-and-managing-visual-cpp-projects.md)\
 [Görsel C++ taşıma ve Yükseltme Kılavuzu](../../porting/visual-cpp-porting-and-upgrading-guide.md)\
 [Olası yükseltme sorunlarına genel bakış](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

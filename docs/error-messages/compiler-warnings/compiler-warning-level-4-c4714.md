@@ -6,38 +6,38 @@ f1_keywords:
 helpviewer_keywords:
 - C4714
 ms.assetid: 22c7fd0c-899d-4e9b-95f3-725b2c49fb46
-ms.openlocfilehash: ed94e5b716a697ec96d7fecac75433823c9a67e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ea4212eaddf14546827728b31299063021a959f
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395189"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74989641"
 ---
 # <a name="compiler-warning-level-4-c4714"></a>Derleyici Uyarısı (düzey 4) C4714
 
-'function' __forceinline olarak satır içine alınmış işaretlenen işlevi
+' function ' işlevi satır içine alınmadı __forceinline olarak işaretlendi
 
-Verilen işlevin satır içi genişletme için seçildi, ancak derleyicinin kullanılmayacak satır içi kullanım.
+Verilen işlev satır içi genişletme için seçildi, ancak derleyici satır içinde gerçekleştirmedi.
 
-Ancak `__forceinline` derleyici daha güçlü bir göstergesidir `__inline`, satır içi kullanım derleyicinin kararımıza hala gerçekleştirilir ancak hiçbir buluşsal yöntemler avantajlarından belirlemek için kullanılan inlining'i bu işlev.
+`__forceinline` derleyiciye `__inline`kıyasla daha güçlü bir işaret olsa da, iç hat, derleyicinin kararına göre gerçekleştirilmeye devam eder, ancak bu işlevden gelen avantajları belirlemede buluşsal yöntemler kullanılmaz.
 
-Bazı durumlarda, derleyicinin olur satır belirli bir işlev mekanik nedenleri. Örneğin, derleyici, satır olur:
+Bazı durumlarda, derleyici, mekanik nedenlerle belirli bir işlevi satır içi olarak içermez. Örneğin, derleyici satır içi olmayacaktır:
 
-- SEH hem de C++ EH karıştırma neden olacaksa bir işlev.
+- Hem SEH hem de Eh karıştırma ile C++ sonuçlanacaksa bir işlev.
 
-- -GX/EHs/EHa açık olduğunda, değer olarak geçilemez nesneleri bazı işlevler kopyalama ile oluşturulmuş.
+- -GX/EHs/EHa açık olduğunda, Copy tarafından oluşturulmuş nesneleri Kopyala ile bazı işlevler.
 
-- -GX/EHs/EHa açık olduğunda izlenemeyen bir nesneyi değere göre döndürmenin işlevleri.
+- -GX/EHs/EHa açık olduğunda, değere göre koşulsuz bir nesne döndüren işlevler.
 
-- Og/Ox/O1/O2 - olmadan derleme yaparken, satır içi derlemeyle işlevler.
+- -Og/Ox/O1/O2 olmadan derlerken satır içi bütünleştirilmiş kod içeren işlevler.
 
-- Bir bağımsız değişken listesi ile işlevler.
+- Değişken bağımsız değişken listesi olan işlevler.
 
-- Bir işlev ile bir **deneyin** deyimi (C++ özel durum işleme).
+- **TRY** (C++ özel durum işleme) ifadesiyle bir işlev.
 
-Aşağıdaki örnek, C4714 oluşturur:
+Aşağıdaki örnek C4714 oluşturur:
 
-```
+```cpp
 // C4714.cpp
 // compile with: /Ob1 /GX /W4
 __forceinline void func1()

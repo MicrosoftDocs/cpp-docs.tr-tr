@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ Çalışabilirliği kullanarak dizileri sıralama'
+title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - C++ Interop, arrays
 - data marshaling [C++], arrays
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
-ms.openlocfilehash: 91fd86a547a0241f0cfcca7cfc36c204429d80ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fddb8b4fa645d6fee3597d098fc67a3006603b9f
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324928"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988194"
 ---
-# <a name="how-to-marshal-arrays-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği kullanarak dizileri sıralama
+# <a name="how-to-marshal-arrays-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama
 
-Bu konuda, Visual C++ birlikte çalışabilirliği bir modeli gösterilmektedir. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Bu konuda, Visual C++ birlikte çalışabilirlik 'nin bir modeli gösterilmektedir. Daha fazla bilgi için bkz [. C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
-Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergeleri uygulamak için yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak bu işlevler ayrı dosyalarında tanımlandıysa aynı şekilde birlikte çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesine gerek yoktur [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
+Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl yönetilen bir diziyi yönetilmeyen bir işleve nasıl geçirileceğini gösterir. Yönetilen işlevini kullanan [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) yönetilmeyen işlevi çağırmadan önce çöp toplama dizi bastırmak için. GC yığınında sabitlenmiş bir işaretçi ile yönetilmeyen işlev sağlayarak, dizinin bir kopyasını oluşturma ek yükü önlenebilir. Yönetilmeyen işlev GC yığın bellek eriştiği, dizinin içeriğini değiştirir ve değişiklikler göstermek için zaman Yönetilen işlev denetimi devam ettirir yansıtılır.
+Aşağıdaki örnek, yönetilen bir dizinin yönetilmeyen bir işleve nasıl geçirileceğini gösterir. Yönetilen işlev, yönetilmeyen işlevi çağırmadan önce dizi için çöp toplamayı bastırmak üzere [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) kullanır. GC yığınına sabitlenmiş bir işaretçi ile yönetilmeyen işlev sağlayarak dizinin bir kopyasını oluşturma yükü kaçınılabilir. Yönetilmeyen işlevin GC yığın belleğine eriştiğini göstermek için, dizinin içeriğini değiştirir ve yönetilen işlev denetimi sürdürüyorsa değişiklikler yansıtılır.
 
-```
+```cpp
 // PassArray1.cpp
 // compile with: /clr
 #ifndef _CRT_RAND_S
@@ -83,9 +83,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yönetilmeyen bir dizi'ı yönetilen bir işleve nasıl geçirileceğini gösterir. Yönetilen işlevi yönetilmeyen bir işlevde olduğunda denetimi kazandıktan yansıtılması yönetilen işlevi tarafından yapılan değişiklikleri veren (değil doğrudan yönetilen bir dizi oluşturma ve dizinin içeriğini kopyalama), dizi bellek erişir.
+Aşağıdaki örnek, yönetilmeyen bir dizinin yönetilen bir işleve geçirilmesini gösterir. Yönetilen işlev, dizi belleğine doğrudan erişir (yönetilen bir diziyi oluşturma ve dizi içeriğini kopyalama aksine), yönetilen işlev tarafından yapılan değişikliklerin, bir denetim sırasında yönetilmeyen işlevde yansıtılmasına olanak tanır.
 
-```
+```cpp
 // PassArray2.cpp
 // compile with: /clr
 #include <iostream>

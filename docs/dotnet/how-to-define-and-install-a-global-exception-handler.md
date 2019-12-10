@@ -1,25 +1,25 @@
 ---
-title: 'Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme'
+title: 'Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - handlers, global
 ms.assetid: dd88a812-3bc7-4ce8-8283-4b674c246534
-ms.openlocfilehash: d1b8452d19172bf16817c36032189accfd855539
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27666702a548c0c71b7e25597a1927520968b124
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387402"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988307"
 ---
-# <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme
+# <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme
 
-Aşağıdaki kod örneğinde nasıl işlenmeyen özel durumları gösterir yakalanabilir. Bir düğme içeren örnek formunu, bir özel durum oluşturulmasına neden olan bir null başvuru basıldığında gerçekleştirir. Bu işlev, tipik bir kod hatası temsil eder. Main işlevi tarafından yüklenen birçok farklı uygulama özel durum işleyicisi tarafından oluşturulan özel durum yakalandı.
+Aşağıdaki kod örneği, işlenmemiş özel durumların nasıl yakalanabileceğini gösterir. Örnek form, basıldığında bir özel durum oluşturulması için bir null başvurusu gerçekleştirdiğinde bir düğme içerir. Bu işlev tipik bir kod hatasını temsil eder. Elde edilen özel durum, ana işlev tarafından yüklenen uygulama genelinde özel durum işleyicisi tarafından yakalanır.
 
-Bu bir temsilciye bağlayarak gerçekleştirilir <xref:System.Windows.Forms.Application.ThreadException> olay. Bu durumda, sonraki özel durumları sonra gönderilen `App::OnUnhandled` yöntemi.
+Bu, <xref:System.Windows.Forms.Application.ThreadException> olayına bir temsilci bağlayarak yapılır. Bu durumda, sonraki özel durumlar daha sonra `App::OnUnhandled` yöntemine gönderilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // global_exception_handler.cpp
 // compile with: /clr
 #using <system.dll>

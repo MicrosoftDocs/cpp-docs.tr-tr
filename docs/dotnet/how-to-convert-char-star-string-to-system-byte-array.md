@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Dönüştürme char * dizesini System::Byte dizisine'
+title: 'Nasıl yapılır: char * Dizesini System::Byte Dizisine Dönüştürme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - character arrays, converting to System::Byte arrays
 - examples [C++], arrays
 ms.assetid: de9bc4eb-773c-4796-a496-9b90ca986503
-ms.openlocfilehash: 9ef84e31ee3db703857e3b28ef70dda8d5d01229
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b53fc329dad1421c7c30f673d0360703773ea65
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387669"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988526"
 ---
-# <a name="how-to-convert-char--string-to-systembyte-array"></a>Nasıl yapılır: Karakter dönüştürme \* dizesini System::Byte dizisine
+# <a name="how-to-convert-char--string-to-systembyte-array"></a>Nasıl yapılır: char \* dizesini System:: Byte dizisine dönüştürme
 
-En verimli şekilde dönüştürmek için bir `char *` dizesinden bir <xref:System.Byte> dizi kullanmaktır <xref:System.Runtime.InteropServices.Marshal> sınıfı.
+Bir `char *` dizeyi <xref:System.Byte> dizisine dönüştürmenin en verimli yolu <xref:System.Runtime.InteropServices.Marshal> sınıfını kullanmaktır.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // convert_native_string_to_Byte_array.cpp
 // compile with: /clr
 #include <string.h>

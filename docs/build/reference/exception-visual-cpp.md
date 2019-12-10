@@ -1,5 +1,5 @@
 ---
-title: '&lt;Özel Durum > (C++ belgeleri açıklamaları)'
+title: '&lt;özel durum >C++ (belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - exception
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - <exception> C++ XML tag
 - exception C++ XML tag
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
-ms.openlocfilehash: 327c1bc27f4ae71aa214e09f375f963dad5b33d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ddfe647fa2db55b3ca606265011896a66398a8a2
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292971"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988298"
 ---
 # <a name="ltexceptiongt"></a>&lt;özel durum&gt;
 
-\<Özel durum > etiketi hangi özel durumlar atılabilir belirtmenize olanak sağlar. Bu etiket, bir yöntem tanımına uygulanır.
+\<özel durum > etiketi hangi özel durumların atılamayacağını belirlemenizi sağlar. Bu etiket bir yöntem tanımına uygulanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,25 +27,25 @@ ms.locfileid: "62292971"
 
 #### <a name="parameters"></a>Parametreler
 
-*Üyesi*<br/>
-Geçerli derleme ortamdan kullanılabilir bir özel durum başvuru. Ad arama kurallarını kullanarak, derleyici belirtilen özel var ve çevirir denetler `member` kurallı öğesi adı ' % s'çıkış XML dosyası.  Değil bulamazsa, derleyici bir uyarı verir `member`.
+*üyesidir*<br/>
+Geçerli derleme ortamında kullanılabilir bir özel duruma başvuru. Ad arama kurallarını kullanarak, derleyici verilen özel durumun var olduğunu denetler ve `member` çıktı XML dosyasında kurallı öğe adına çevirir.  Derleyici `member`bulamazsa bir uyarı verir.
 
-Ad, tek veya çift tırnak içine alın.
+Adı tek veya çift tırnak içine alın.
 
-Genel tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bakın >](see-visual-cpp.md).
+Genel bir türe cref başvurusu oluşturma hakkında daha fazla bilgi için bkz. [\<](see-visual-cpp.md).
 
-*Açıklaması*<br/>
+*description*<br/>
 Bir açıklama.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
-MSVC derleyicisi, belge yorumlarını bir geçiş cref başvuruları çözümlemek dener.  Bu nedenle, C++ arama kurallarını kullanarak, bir sembol başvurusu işaretlenir derleyici tarafından bulunamadı olarak çözümlenmemiş. Bkz: [ \<seealso >](seealso-visual-cpp.md) daha fazla bilgi için.
+MSVC derleyicisi, belge açıklamalarındaki cref başvurularını tek bir geçişte çözümlemeye çalışır.  Bu nedenle, C++ arama kuralları kullanılıyorsa, derleyici tarafından bir sembol bulunamamıştır ve başvuru çözümlenmemiş olarak işaretlenir. Daha fazla bilgi için bkz. [\<SeeAlso >](seealso-visual-cpp.md) .
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // xml_exception_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_exception_tag.dll

@@ -9,30 +9,30 @@ helpviewer_keywords:
 - .NET Framework [C++], serialization
 - serialization [C++], about serialization
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
-ms.openlocfilehash: 794a71ae9a146b691ba6a4377a7fdf2c3ddd3501
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2dfdcaf1a1f33e89d106d4529ffc9af2d08376b
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384679"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988409"
 ---
 # <a name="serialization-ccli"></a>Seri Hale Getirme (C++/CLI)
 
-Seri hale getirme (bir nesne veya üye kalıcı bir ortamda durumunu depolama işlemi) tarafından yönetilen sınıflar (bireysel alanlar ve özellikler dahil) desteklenen <xref:System.SerializableAttribute> ve <xref:System.NonSerializedAttribute> sınıfları.
+Yönetilen sınıfların (bireysel alanlar veya özellikler dahil) yönetilen sınıfların serileştirme (bir nesnenin veya üyenin durumunu kalıcı bir ortama depolama işlemi) <xref:System.SerializableAttribute> ve <xref:System.NonSerializedAttribute> sınıfları tarafından desteklenir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulama **SerializableAttribute** sınıfın tamamı seri hale getirmek ya da yalnızca belirli alanlar veya yönetilen sınıf bölümlerini serileştirmek için özellikleri uygulamak için bir yönetilen sınıf özel öznitelik. Kullanım **NonSerializedAttribute** muaf alanlara veya yönetilen bir sınıf özelliklerini serileştirilen öğesinden özel öznitelik.
+Tüm sınıfı seri hale getirmek için bir yönetilen sınıfa **SerializableAttribute** özel özniteliğini uygulayın veya yönetilen sınıfın parçalarını seri hale getirmek için yalnızca belirli alanlara veya özelliklere uygulayın. Yönetilen bir sınıfın alanlarını veya özelliklerini seri hale getirmeden muaf tutmak için **NonSerializedAttribute** özel özniteliğini kullanın.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnekte, sınıf `MyClass` (ve özellik `m_nCount`) seri hale getirilebilir olarak işaretlenir. Ancak, `m_nData` özelliği tarafından belirtildiği şekilde sıralanmış değildir **getirilmemiş** özel öznitelik:
+Aşağıdaki örnekte, sınıfı `MyClass` (ve özelliği `m_nCount`) seri hale getirilebilir olarak işaretlenir. Ancak, `m_nData` özelliği **seri olmayan** özel öznitelik tarafından belirtildiği gibi serileştirilmez:
 
 ### <a name="code"></a>Kod
 
-```
+```cpp
 // serialization_and_mcpp.cpp
 // compile with: /LD /clr
 using namespace System;
@@ -49,7 +49,7 @@ private:
 
 ### <a name="comments"></a>Açıklamalar
 
-Her iki öznitelik, "kısa" adıyla başvurulabilir unutmayın (**Serializable** ve **getirilmemiş**). Bu daha ayrıntılı olarak açıklanmıştır [öznitelikleri uygulama](/dotnet/standard/attributes/applying-attributes).
+Her iki özniteliğe de "kısa ad" (**serileştirilebilir** ve **serileştirilmemiş**) kullanılarak başvurulduğunu unutmayın. Bu, [öznitelikleri uygulama](/dotnet/standard/attributes/applying-attributes)bölümünde daha ayrıntılı olarak açıklanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
