@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4623
 ms.assetid: e630d8d0-f6ea-469c-a74f-07b027587225
-ms.openlocfilehash: d1b659a6aed593a2e3f01ac1b82e60878cb09c80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d0dd9aec19fb21870a1233cd3b713337fa15aaa
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220474"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990635"
 ---
 # <a name="compiler-warning-level-4-c4623"></a>Derleyici Uyarısı (düzey 4) C4623
 
-'`derived class`': varsayılan oluşturucu örtük bir şekilde bir taban sınıf varsayılan oluşturucusuna erişilemez veya silinmiş olduğundan silindi olarak tanımlandı
+'`derived class`': Varsayılan Oluşturucu örtük bir şekilde silindi olarak tanımlandı çünkü temel sınıf varsayılan Oluşturucusu erişilemez veya silinmiş
 
-Bir oluşturucu, bir temel sınıfta erişilebilir durumda değildi ve türetilen sınıf için oluşturulmadı. Yığında bu türde bir nesne oluşturmak için her türlü girişim, bir derleyici hatasına neden olur.
+Bir temel sınıfta oluşturucuya erişilemiyor ve türetilmiş sınıf için üretilmedi. Yığında bu türde bir nesne oluşturma girişimi bir derleyici hatasına neden olur.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4623 oluşturur.
+Aşağıdaki örnek C4623 oluşturur.
 
-```
+```cpp
 // C4623.cpp
 // compile with: /W4
 #pragma warning(default : 4623)

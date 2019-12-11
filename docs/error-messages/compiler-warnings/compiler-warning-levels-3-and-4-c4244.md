@@ -1,29 +1,29 @@
 ---
-title: Derleyici Uyarısı (Düzey 3 ve 4) C4244
+title: Derleyici Uyarısı (düzey 3 ve 4) C4244
 ms.date: 11/04/2016
 ms.assetid: f116bb09-c479-4b4e-a647-fe629a1383f6
-ms.openlocfilehash: af06dbf5bb4a1dd133c277d63c40da2a8a54770b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a12bee4591df8a7a952dc741c4b26c637bb5256c
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359936"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991079"
 ---
-# <a name="compiler-warning-levels-3-and-4-c4244"></a>Derleyici Uyarısı (Düzey 3 ve 4) C4244
+# <a name="compiler-warning-levels-3-and-4-c4244"></a>Derleyici Uyarısı (düzey 3 ve 4) C4244
 
-'type1' öğesinden 'type2', olası veri kaybı 'conversion' dönüştürme
+' type1 ' öğesinden ' type2 ' öğesine dönüştürme, olası veri kaybı
 
-Bir tamsayı türü daha küçük bir tamsayı türüne dönüştürülür. Bu düzey 4 uyarısı ise *type1* olduğu `int` ve *type2* küçük olduğuna `int`. Aksi takdirde, bir düzey 3 olur (türünde bir değer atanmış [__int64](../../cpp/int8-int16-int32-int64.md) türünde bir değişkene `unsigned int`). Olası bir veri kaybı meydana gelebilir.
+Bir tamsayı türü, daha küçük bir tamsayı türüne dönüştürülür. Bu, *Type1* ' in `int` ve *type2* `int`daha küçükse bir düzey 4 uyarıdır. Aksi takdirde, bir düzey 3 (`unsigned int`türünde bir değişkene [__int64](../../cpp/int8-int16-int32-int64.md) türünde bir değer atanır). Olası bir veri kaybı oluşmuş olabilir.
 
-C4244 alırsanız, uyumlu türler kullanmak için programınızı değiştirmenize veya mantığa olası değerler aralığı her zaman kullanmakta olduğunuz türleri ile uyumlu olmasını sağlamak için kodunuzu ekleyin.
+C4244 alırsanız, programınızı uyumlu türler kullanacak şekilde değiştirmeniz veya kodunuzda bir mantık eklemeniz gerekir, bu da olası değerlerin aralığının her zaman kullandığınız türlerle uyumlu olmasını sağlar.
 
-Ayrıca C4244 2 düzeyinde özelliği kullanabilirsiniz; bkz: [Derleyici Uyarısı (Düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md) daha fazla bilgi için.
+C4244 2. düzeyde de tetikde olabilir; daha fazla bilgi için bkz. [Derleyici Uyarısı (düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md) .
 
-Dönüştürmenin örtük dönüştürmelerin nedeniyle bir sorun olabilir.
+Örtük dönüştürmeler nedeniyle dönüştürmeye bir sorun olabilir.
 
-Aşağıdaki örnek, C4244 oluşturur:
+Aşağıdaki örnek C4244 oluşturur:
 
-```
+```cpp
 // C4244_level4.cpp
 // compile with: /W4
 int aa;
@@ -39,9 +39,9 @@ int main() {
 }
 ```
 
-Daha fazla bilgi için [olağan aritmetik dönüştürmeler](../../c-language/usual-arithmetic-conversions.md).
+Daha fazla bilgi için bkz. [normal aritmetik dönüştürmeler](../../c-language/usual-arithmetic-conversions.md).
 
-```
+```cpp
 // C4244_level3.cpp
 // compile with: /W3
 int main() {
@@ -50,11 +50,11 @@ int main() {
 }
 ```
 
-64-bit hedefler için kod oluşturma uyarısı 32-bit hedefler için derleme yaparken oluşturmaz C4244 uyarı oluşabilir. Örneğin, işaretçiler arasında bir fark, 32-bit platformlarda 32-bit miktarı, ancak bir 64-bit miktarı 64-bit platformlarda olur.
+32-bit hedefler için derleme yaparken uyarı oluşturmamayan 64-bit hedefler için kod oluştururken uyarı C4244 meydana gelebilir. Örneğin, işaretçiler arasındaki fark, 32-bit platformlarda 32 bitlik bir miktardır, ancak 64-bit platformlarda 64 bitlik bir miktardır.
 
-Aşağıdaki örnek, 64-bit hedefleri için derlendiğinde C4244 oluşturur:
+Aşağıdaki örnek 64-bit hedefler için derlendiğinde C4244 oluşturur:
 
-```
+```cpp
 // C4244_level3_b.cpp
 // compile with: /W3
 int main() {

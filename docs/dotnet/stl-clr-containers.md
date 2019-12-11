@@ -6,44 +6,44 @@ helpviewer_keywords:
 - STL/CLR, containers
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-ms.openlocfilehash: dc2e5ce3263c61839a1ba434ab0d2a39e6a9078f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfdbbeb735f98f77046790e21c19dd2d21b9d5c6
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384601"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988111"
 ---
 # <a name="stlclr-containers"></a>STL/CLR Kapsayıcıları
 
-STL/CLR kitaplığı, C++ Standart Kitaplığı'nda benzer bulunur, ancak .NET Framework yönetilen ortamında çalışan kapsayıcılar oluşur. Gerçek C++ Standart kitaplığı ile güncel tutulmasını değil ve eski desteği korunur.
+STL/CLR kitaplığı, C++ standart kitaplıkta bulunanlara benzer kapsayıcılardan oluşur, ancak .NET Framework yönetilen ortamında çalışır. Gerçek C++ standart kitaplıkla güncel tutulmaz ve eski destek için korunur.
 
-Bu belge kapsayıcılarda STL/CLR kapsayıcı öğeleri, kapsayıcılara ekleyebilirsiniz ve kapsayıcılarında öğeleri sahiplik sorunlarını öğe türleri için gereksinimler gibi genel bir bakış sağlar. Yerel C++ Standart Kitaplığı ve STL/CLR arasındaki farklılıklar uygun yerlerde belirtilmiştir.
+Bu belge, STL/CLR 'de kapsayıcı öğelerine yönelik gereksinimler, kapsayıcılara ekleyebileceğiniz öğe türleri ve kapsayıcılardaki öğelerle birlikte sahiplik sorunları gibi kapsayıcılara genel bir bakış sağlar. Uygun olduğunda, yerel C++ standart KITAPLıK ve STL/CLR arasındaki farklılıklar bahsedilir.
 
-## <a name="requirements-for-container-elements"></a>Kapsayıcı öğeleri için gereksinimler
+## <a name="requirements-for-container-elements"></a>Kapsayıcı Öğeleri için Gereksinimler
 
-STL/CLR kapsayıcılarına eklenen tüm öğeleri belirli yönergeleri uyulmadığı gerekir. Daha fazla bilgi için [STL/CLR kapsayıcı öğeleri için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).
+STL/CLR kapsayıcılarına yerleştirilen tüm öğelerin belirli kurallara uyması gerekir. Daha fazla bilgi için bkz. [STL/CLR kapsayıcı öğeleri Için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).
 
-## <a name="valid-container-elements"></a>Geçerli kapsayıcı öğeler
+## <a name="valid-container-elements"></a>Geçerli kapsayıcı öğeleri
 
-STL/CLR kapsayıcı öğeleri iki türlerinden birini içerebilir:
+STL/CLR kapsayıcıları, iki tür öğeden birini tutabilir:
 
-- Başvuru türleri için işler.
+- Başvuru türlerine yönelik tutamaçlar.
 
 - Başvuru türleri.
 
 - Kutulanmamış değer türleri.
 
-Paketlenmiş değer türleri herhangi bir STL/CLR kapsayıcıları INSERT yapılamıyor.
+STL/CLR kapsayıcılarından herhangi birine paketlenmiş değer türleri ekleyemezsiniz.
 
-### <a name="handles-to-reference-types"></a>Başvuru türleri tanıtıcıları
+### <a name="handles-to-reference-types"></a>Başvuru türlerine yönelik işleyiciler
 
-Bir STL/CLR kapsayıcısına bir başvuru türü için bir tanıtıcı ekleyebilirsiniz. Yerel C++'ta bir işaretçi için bir tanıtıcı CLR'yi hedefleyen c++ benzerdir. Daha fazla bilgi için [işlemek nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
+Bir STL/CLR kapsayıcısına başvuru türüne bir tanıtıcı ekleyebilirsiniz. CLR 'yi hedefleyen C++ bir tanıtıcı, yerel C++içindeki bir işaretçiye benzer. Daha fazla bilgi için, bkz. [nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
 
 #### <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir çalışan nesnesine yönelik bir tanıtıcı nasıl ekleneceğini gösterir. bir [cliext::set](../dotnet/set-stl-clr.md).
+Aşağıdaki örnek, bir çalışan nesnesine bir [clienext:: set](../dotnet/set-stl-clr.md)içine nasıl bir tanıtıcı ekleneceğini gösterir.
 
-```
+```cpp
 // cliext_container_valid_reference_handle.cpp
 // compile with: /clr
 
@@ -132,13 +132,13 @@ int main()
 
 ### <a name="reference-types"></a>Başvuru Türleri
 
-STL/CLR kapsayıcısına bir başvuru türü (bir başvuru türü için bir tanıtıcı yerine) eklemek mümkündür. Burada ana fark başvuru türlerinin bir kapsayıcı silindiğinde, yok edici bu kapsayıcı içindeki tüm öğeler için çağrı yapılmasıdır. Başvuru türleri tanıtıcıları kapsayıcıda bu öğeler için Yıkıcılar çağırılan değil.
+Bir STL/CLR kapsayıcısına bir başvuru türü (başvuru türüne yönelik bir tanıtıcı yerine) eklemek de mümkündür. Buradaki ana fark, bir başvuru türü kapsayıcısı silindiğinde, bu kapsayıcıdaki tüm öğeler için yok edicinin çağırılır. Başvuru türlerine yönelik tanıtıcıların kapsayıcısında, bu öğelerin yıkıcıları çağrılmaz.
 
 #### <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir çalışan nesnesine nasıl ekleneceğini gösterir. bir `cliext::set`.
+Aşağıdaki örnek, bir `cliext::set`bir çalışan nesnesinin nasıl ekleneceğini gösterir.
 
-```
+```cpp
 // cliext_container_valid_reference.cpp
 // compile with: /clr
 
@@ -227,15 +227,15 @@ int main()
 
 ### <a name="unboxed-value-types"></a>Kutulanmamış değer türleri
 
-Kutulanmamış değer türü bir STL/CLR kapsayıcısına da ekleyebilirsiniz. Kutulanmamış değer türü değişmediğinden bir değer türüdür *Kutulu* içine bir başvuru türü.
+Bir STL/CLR kapsayıcısına Kutulanmamış değer türü de ekleyebilirsiniz. Kutulanmamış değer türü, başvuru türünde *kutulanmamış* bir değer türüdür.
 
-Bir değer türü öğesi standart türlerin biri gibi olabilir bir `int`, veya bir kullanıcı tanımlı değer türü gibi olabilir bir `value class`. Daha fazla bilgi için [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
+Bir değer türü öğesi, `int`gibi standart değer türlerinden biri olabilir veya `value class`gibi Kullanıcı tanımlı bir değer türü olabilir. Daha fazla bilgi için bkz. [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 #### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir değer türü sınıf çalışan yaparak ilk örnek değiştirir. Bu değer türü ardından eklendiği bir `cliext::set` ilk örnekte olduğu gibi.
+Aşağıdaki örnek, çalışan sınıfını bir değer türü yaparak ilk örneği değiştirir. Bu değer türü daha sonra ilk örnekte olduğu gibi bir `cliext::set` eklenir.
 
-```
+```cpp
 // cliext_container_valid_valuetype.cpp
 // compile with: /clr
 
@@ -296,19 +296,19 @@ int main()
 }
 ```
 
-Bir kapsayıcının içine bir değer türü için bir tanıtıcı eklemeyi denerseniz [derleyici hatası C3225](../error-messages/compiler-errors-2/compiler-error-c3225.md) oluşturulur.
+Bir kapsayıcıya değer türüne bir tanıtıcı eklemeye çalışırsanız, [derleyici hatası C3225](../error-messages/compiler-errors-2/compiler-error-c3225.md) oluşturulur.
 
 ### <a name="performance-and-memory-implications"></a>Performans ve bellek etkileri
 
-Tanıtıcıları türleri veya değer türleri kapsayıcı öğesi olarak başvurmak için kullanılıp kullanılmayacağını belirleme konusunda birkaç faktör dikkate almanız gerekir. Değer türleri kullanmaya karar verirseniz, her zaman bir öğeyi bir kapsayıcıya eklenir, öğenin kopyasını yapılan unutmayın. Küçük nesneleri için bu bir sorun olmamalıdır, ancak eklenmiş nesneler büyükse, performans düşebilir. Ayrıca, değer türleri kullanıyorsanız, her kapsayıcı öğenin kendi kopyasını yeterli olacağından bir öğe aynı anda birden çok kapsayıcıda depolamak mümkün değildir.
+Türlerin veya değer türlerine kapsayıcı öğesi olarak başvurmak için tanıtıcıların kullanılıp kullanılmayacağını belirlerken çeşitli faktörleri göz önünde bulundurmanız gerekir. Değer türlerini kullanmaya karar verirseniz, kapsayıcının bir öğesi her eklendiğinde öğenin bir kopyasının yapıldığını unutmayın. Küçük nesneler için bu bir sorun olmamalıdır, ancak eklenmekte olan nesneler büyükse, performans düşebilir. Ayrıca, değer türlerini kullanıyorsanız, her kapsayıcının kendine ait bir kopyası olduğundan, aynı anda birden fazla kapsayıcıda bir öğe depolamak olanaksızdır.
 
-Bunun yerine, başvuru türleri için tutamaçları kullanmaya karar verirseniz, kapsayıcıda eklendiğinde, öğenin bir kopyasını oluşturmak için gerekli olmadığından performansı artırabilir. Ayrıca, farklı değer türleri ile birden çok kapsayıcıda aynı öğesi var olabilir. Ancak, tanıtıcıları kullanmaya karar verirseniz, tanıtıcı geçerli olduğunu ve başvurduğu nesneyi başka bir programda silinmediğinden emin olmak için ilgileniriz gerekir.
+Bunun yerine, türlere başvuru için işleyiciler kullanmaya karar verirseniz, kapsayıcıya eklendiğinde öğenin bir kopyasını oluşturmak gerekli olmadığından, performans artabilir. Ayrıca, değer türleriyle farklı olarak, birden fazla kapsayıcıda aynı öğe bulunabilir. Ancak, tutamaçları kullanmaya karar verirseniz, tanıtıcının geçerli olduğundan ve başvurduğu nesnenin programın başka bir yerinde silinmediğinden emin olmak için dikkatli olmanız gerekir.
 
-## <a name="ownership-issues-with-containers"></a>Kapsayıcıları sahipliği sorunları
+## <a name="ownership-issues-with-containers"></a>Kapsayıcılarla sahiplik sorunları
 
-STL/CLR kapsayıcıları değeri semantiği çalışır. Her seferinde bir kapsayıcının içine bir öğe eklemek, o öğenin bir kopyasını eklenir. Başvuru benzeri semantiği almak istiyorsanız, bir tanıtıcı nesnesi yerine bir nesne ekleyebilirsiniz.
+STL/CLR içindeki kapsayıcılar değer semantiğinin üzerinde çalışır. Bir kapsayıcıya her öğe eklediğinizde, bu öğenin bir kopyası eklenir. Başvuruya benzer anlambilim sağlamak istiyorsanız, nesnenin kendisi yerine bir tanıtıcı ekleyebilirsiniz.
 
-Açık bir çağrı ya da yöntemi tanıtıcı nesnelerin bir kapsayıcısını silme tanıtıcıları başvuran nesnelerin bellekten serbest bırakılmaz. Açıkça nesneyi silmek, veya gerekir, çünkü bu nesneler yönetilen yığında bulunurlar atık toplayıcı nesne artık kullanılmakta olduğunu belirledikten sonra belleği boşaltmak izin verin.
+Bir tutamaç nesneleri kapsayıcısının Temizleme veya silme yöntemini çağırdığınızda, tanıtıcıların başvurduğu nesneler bellekten serbest bırakılmaz. Nesneyi açıkça silmeniz gerekir ya da bu nesneler yönetilen yığında bulunduğundan, nesnenin artık kullanılmadığını belirledikten sonra çöp toplayıcısının belleği serbest bırakmaya izin verin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

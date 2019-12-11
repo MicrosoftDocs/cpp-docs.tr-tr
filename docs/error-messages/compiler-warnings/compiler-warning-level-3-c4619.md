@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4619
 ms.assetid: 701fea21-01aa-4bea-93d4-1cb8824170b0
-ms.openlocfilehash: 982e7da5523f76a3ff205778318a75076a8c04d1
-ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
+ms.openlocfilehash: 658e52a2349f070def1efb80ca8a1cd93abca0cd
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74189172"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991956"
 ---
 # <a name="compiler-warning-level-3-c4619"></a>Derleyici Uyarısı (düzey 3) C4619
 

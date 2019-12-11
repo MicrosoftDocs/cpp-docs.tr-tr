@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4564
 ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
-ms.openlocfilehash: f5db6bf366c86a716be33539feb0085ac03a9647
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: 042eab1c125f2b98fd36257dfd8971262015ab92
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683158"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990669"
 ---
 # <a name="compiler-warning-level-4-c4564"></a>Derleyici Uyarısı (düzey 4) C4564
 

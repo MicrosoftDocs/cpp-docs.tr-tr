@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4078
 ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
-ms.openlocfilehash: d20eb0523ffebe9229d05b6316772259661f6020
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ce72f476aa85434acd5277d0307ffc61e0a0214
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399947"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990995"
 ---
 # <a name="linker-tools-warning-lnk4078"></a>Bağlayıcı Araçları Uyarısı LNK4078
 
-birden çok 'bölüm adı' bölümü farklı özniteliklerle bulunamadı
+farklı özniteliklere sahip birden çok ' bölüm adı ' bölümü bulundu
 
-İki bağlantı bulunamadı veya ancak farklı öznitelikleri aynı daha fazla bölüm adı.
+BAĞLANTı, aynı ada ancak farklı özniteliklere sahip iki veya daha fazla bölüm buldu.
 
-Bu uyarı bir bağlantı veya LIB önceki sürüm tarafından oluşturulmuş bir içeri aktarma kitaplığı veya dışarı aktarma dosyası neden olabilir.
+Bu uyarı, bir içeri aktarma kitaplığı veya bağlantı ya da LıB 'in önceki bir sürümü tarafından oluşturulan dışarı aktarma dosyası nedeniyle oluşabilir.
 
-Dosya ve yeniden bağlama yeniden oluşturun.
+Dosyayı yeniden oluşturun ve yeniden bağlayın.
 
 ## <a name="example"></a>Örnek
 
-LNK4078 bir değişiklik tarafından da kaynaklanabilir: tarafından adlandırılmış bölüm [init_seg](../../preprocessor/init-seg.md) x86 üzerinde okuma/yazma, artık salt okunur.
+Ayrıca LNK4078, bir kırılmaya neden olabilir: x86 üzerinde [init_seg](../../preprocessor/init-seg.md) tarafından adlandırılan bölüm okuma/yazma, artık salt okunurdur.
 
-Aşağıdaki örnek, LNK4078 oluşturur.
+Aşağıdaki örnek LNK4078 oluşturur.
 
-```
+```cpp
 // LNK4078.cpp
 // compile with: /W1
 // LNK4078 expected

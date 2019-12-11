@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - marshal_as template [C++]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
-ms.openlocfilehash: 6ab4962f18368f0d896f8b7343baf54e8f59ac52
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: 2b2cacb0acf04aa40b3e299bffd7357e04916b16
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861094"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988132"
 ---
-# <a name="marshalas"></a>marshal_as
+# <a name="marshal_as"></a>marshal_as
 
-Bu yöntem, yerel ve yönetilen ortamlar arasında verileri dönüştürür.
+Bu yöntem, verileri yerel ve yönetilen ortamlar arasında dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,28 +30,28 @@ To_Type marshal_as<To_Type>(
 
 #### <a name="parameters"></a>Parametreler
 
-*Giriş*<br/>
-[in] İçin hazırlamak istediğiniz değeri bir `To_Type` değişkeni.
+*girişinin*<br/>
+'ndaki `To_Type` değişkenine sıralamak istediğiniz değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir değişken `To_Type` dönüştürülmüş değeri diğer bir deyişle `input`.
+`input`dönüştürülmüş değeri olan `To_Type` türünde bir değişken.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, yerel ve yönetilen türleri arasında verileri dönüştürmek için basitleştirilmiş bir yoludur. Hangi veri türlerinin desteklendiğini belirlemek için bkz: [Overview of Marshaling c++](../dotnet/overview-of-marshaling-in-cpp.md). Bazı veri dönüştürme bir bağlamda gerektirir. Bu veri türlerini kullanarak dönüştürebilirsiniz [; marshal_context Class](../dotnet/marshal-context-class.md).
+Bu yöntem, yerel ve yönetilen türler arasında veri dönüştürmenin basitleştirilmiş bir yoludur. Hangi veri türlerinin desteklendiğini belirlemek için, bkz. [sıralamaya C++genel bakış ](../dotnet/overview-of-marshaling-in-cpp.md). Bazı veri dönüştürmeleri bir bağlam gerektirir. Bu veri türlerini [Marshal_context sınıfını](../dotnet/marshal-context-class.md)kullanarak dönüştürebilirsiniz.
 
-Bir çift desteklenmeyen veri türleri sıralamanız çalışırsanız `marshal_as` bir hata oluşturur [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) derleme zamanında. Daha fazla bilgi için bu hata ile sağlanmış bir iletiyi okuyun. `C4996` Hata birden fazla yalnızca kullanım dışı işlevler için oluşturulabilir. Desteklenmeyen veri türleri bir çift hazırlamak bunun bir örneği çalışıyor.
+Desteklenmeyen bir çift veri türü oluşturmayı denerseniz `marshal_as`, derleme zamanında bir hata [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) oluşturur. Daha fazla bilgi için bu hatayla sağlanan iletiyi okuyun. `C4996` hatası, yalnızca kullanım dışı bırakılmış işlevlerden daha fazla şekilde oluşturulabilir. Bunun bir örneği, desteklenmeyen bir veri türleri çiftini sıralamakta çalışıyor.
 
-Sıralama Kitaplığı çeşitli üstbilgi dosyalarından oluşur. Herhangi bir dönüştürmeyi yalnızca bir dosya gerektirir, ancak diğer dönüştürmeleri için gerekiyorsa, ek dosyalar içerebilir. Tablodaki hangi dönüştürmeler hangi dosyalarıyla ilişkili olduğunu görmek için Ara `Marshaling Overview`. Yapmak istediğiniz hangi dönüştürülmesi bakılmaksızın, ad alanı her zaman etkin gereksinimidir.
+Sıralama kitaplığı, çeşitli üst bilgi dosyalarından oluşur. Herhangi bir dönüştürme yalnızca bir dosya gerektirir, ancak başka dönüştürmeler için gerekiyorsa ek dosyalar ekleyebilirsiniz. Hangi dosyaların hangi dosyalarla ilişkilendirildiğini görmek için `Marshaling Overview`' deki tabloya bakın. Yapmak istediğiniz dönüştürme ne olursa olsun, ad alanı gereksinimi her zaman etkindir.
 
-Oluşturur `System::ArgumentNullException(_EXCEPTION_NULLPTR)` giriş parametresi null ise.
+Giriş parametresi null ise `System::ArgumentNullException(_EXCEPTION_NULLPTR)` oluşturur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek alanından sürekliliğe devreder bir `const char*` için bir `System::String` değişken türü.
+Bu örnek, bir `const char*` `System::String` değişken türüne göre sıralar.
 
-```
+```cpp
 // marshal_as_test.cpp
 // compile with: /clr
 #include <stdlib.h>
@@ -71,9 +71,9 @@ int main() {
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, veya \<msclr\marshal_atl.h >
+**Üst bilgi dosyası:** \<msclr\marshal.h >, \<msclr \ marshal_windows. h >, \<msclr \ marshal_cppstd. h > veya \<msclr \ marshal_atl. h >
 
-**Namespace:** msclr::interop
+**Ad alanı:** msclr:: Interop
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

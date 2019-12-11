@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4625
 ms.assetid: 4cc99e50-846c-4784-97da-48b977067851
-ms.openlocfilehash: edcb43bf11c073e6ce721ba999fd99d28a8df15d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d98e295a9a48da16b58202bc172e112b5c0287d9
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220500"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990718"
 ---
 # <a name="compiler-warning-level-4-c4625"></a>Derleyici Uyarısı (düzey 4) C4625
 
-'derived class': kopya Oluşturucusu örtük bir şekilde bir taban sınıf kopya oluşturucusuna erişilemez veya silinmiş olduğundan silindi olarak tanımlandı
+' derived class ': bir taban sınıf kopya oluşturucusuna erişilemediğinden veya silindiğinden kopya Oluşturucu örtük olarak silindi olarak tanımlandı
 
-Bir kopya Oluşturucusu silinmişse veya taban sınıfında ve türetilmiş bir sınıf için oluşturulmadı. Bu türdeki bir nesneyi kopyalamak için her türlü girişim, bir derleyici hatasına neden olur.
+Bir kopya Oluşturucu bir temel sınıfta silindi veya erişilebilir değil ve bu nedenle türetilmiş bir sınıf için üretilmedi. Bu türdeki bir nesneyi kopyalama girişimi, bir derleyici hatasına neden olur.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4625 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C4625 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C4625.cpp
 // compile with: /W4 /c
 #pragma warning(default : 4625)

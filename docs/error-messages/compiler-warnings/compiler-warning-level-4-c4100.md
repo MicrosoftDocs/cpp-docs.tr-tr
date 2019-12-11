@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4100
 ms.assetid: 478ed97d-e502-49e4-9afb-ac2a6c61194b
-ms.openlocfilehash: 80794d270b40a8f40d44630da70455c015158423
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: bcd51c66359d0553b7657d85f5b45ee22d4648ff
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541237"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991653"
 ---
 # <a name="compiler-warning-level-4-c4100"></a>Derleyici Uyarısı (düzey 4) C4100
 
-' tanımlayıcı ': başvurulmayan biçimsel parametre
+"tanımlayıcı" : başvurulmayan biçimsel parametre
 
-Biçimsel parametreye işlevin gövdesinde başvurulmuyor. Başvurulmayan parametre yoksayıldı.
+Biçimsel parametreye işlev gövdesinde başvurulmuyor. Başvurulmayan parametre yok sayıldı.
 
-Kod, diğer bir deyişle, diğer bir deyişle, bir temel türün başvurulmayan parametresi üzerinde bir yıkıcıya çağırdığında da verilebilir.  Bu, Microsoft C++ derleyicisi kısıtlamasıdır.
+Teme öğe türünün başka bir başvurulmayan parametresinde kod, bir yok edici çağırdığında C4100 de görünebilir.  Bu, Microsoft C++ derleyicisi kısıtlamasıdır.
 
-Aşağıdaki örnek C4100 oluşturur:
+Şu örnek C4100 oluşturur:
 
 ```cpp
 // C4100.cpp

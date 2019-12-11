@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4668
 ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
-ms.openlocfilehash: 11d96941a1efddde87068af8829e24259f2fa312
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84834ce0f980502e16a8398d35da85d1a005c9cb
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408166"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990555"
 ---
 # <a name="compiler-warning-level-4-c4668"></a>Derleyici Uyarısı (düzey 4) C4668
 
 'symbol' önişlemci makrosu olarak tanımlanmamış, 'directives' için '0' ile değiştiriliyor
 
-Bir sembol tanımlı değil, bir önişlemci yönergesi ile kullanıldı. Simgenin false olarak değerlendirir. Simge tanımlamak için kullanabilirsiniz [#define yönergesi](../../preprocessor/hash-define-directive-c-cpp.md) veya [/D](../../build/reference/d-preprocessor-definitions.md) derleyici seçeneği.
+Tanımlanmamış bir sembol, Önişlemci yönergesiyle kullanıldı. Sembol yanlış olarak değerlendirilir. Bir sembol tanımlamak için [#define Directive](../../preprocessor/hash-define-directive-c-cpp.md) ya da [/d](../../build/reference/d-preprocessor-definitions.md) derleyici seçeneğini kullanabilirsiniz.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4668 oluşturur:
+Aşağıdaki örnek C4668 oluşturur:
 
-```
+```cpp
 // C4668.cpp
 // compile with: /W4
 #include <stdio.h>

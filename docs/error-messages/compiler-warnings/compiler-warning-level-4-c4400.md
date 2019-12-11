@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4400
 ms.assetid: f135fe98-4f92-4e07-9d71-2621b36ee755
-ms.openlocfilehash: dc5127f8d7ef868903f8a26624f2d1dc54057a4c
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: 3f04bd30c4d390cecfa7e4e636f1a3771f26cfff
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683258"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990853"
 ---
 # <a name="compiler-warning-level-4-c4400"></a>Derleyici Uyarısı (düzey 4) C4400
 

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4680
 ms.assetid: 6e043f4c-c601-4b77-8130-920cff1d912e
-ms.openlocfilehash: 9130fa2665452b85c5ec83eef0b3d1d618c995a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21ea9bf54a493a72dc24c607812eaed69f9ef71b
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226875"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990462"
 ---
 # <a name="compiler-warning-level-4-c4680"></a>Derleyici Uyarısı (düzey 4) C4680
 
-'class': coclass varsayılan bir arabirim belirtmiyor
+' class ': coclass varsayılan bir arabirim belirtmiyor
 
-A [varsayılan](../../windows/default-cpp.md) arabirimi ile işaretlenmiş bir sınıf için belirtilmemiş [coclass'ı](../../windows/coclass.md) özniteliği. Sırayla kullanışlı olması bir nesne için bir arabirim uygulaması gerekir.
+[Coclass](../../windows/coclass.md) özniteliğiyle işaretlenmiş bir sınıf için [varsayılan](../../windows/default-cpp.md) bir arabirim belirtilmedi. Bir nesnenin faydalı olması için bir arabirim uygulaması gerekir.
 
-Aşağıdaki örnek, C4680 oluşturur:
+Aşağıdaki örnek C4680 oluşturur:
 
-```
+```cpp
 // C4680.cpp
 // compile with: /W4
 #include <windows.h>

@@ -1,6 +1,7 @@
 ---
 title: '&lt;atomic&gt;'
-ms.date: 11/04/2016
+description: Standart C++ kitaplığın atomik üst bilgisinde bulunan türleri ve işlevleri açıklar.
+ms.date: 12/06/2019
 f1_keywords:
 - <atomic>
 - atomic/std::atomic_int_least32_t
@@ -48,12 +49,12 @@ f1_keywords:
 - atomic/std::atomic_int64_t
 - atomic/std::atomic_uint_least64_t
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
-ms.openlocfilehash: b33ec1e7fdc7f93062248a9ad42c78c3b30801fe
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: d11e8bf2067c1c8525725ae74e713ac834d89ec4
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688458"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991174"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 
@@ -68,13 +69,13 @@ Atomik işlemleri destekleyen türler oluşturmak için kullanılacak sınıflar
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
+> [/Clr: Pure](../build/reference/clr-common-language-runtime-compilation.md)kullanılarak derlenen kodda bu üstbilgi engellenir. **/Clr: Pure** ve **/clr: Safe** , Visual Studio 2017 ve sonraki sürümlerde kullanımdan kaldırılmıştır.
 
 Atomik bir işlemin, bir nesneyi, karşılıklı dışlama kilitleri kullanmadan doğru şekilde işlemek için birden çok iş parçacığı kullanmanıza yardımcı olan iki temel özelliği vardır.
 
-- Atomik bir işlem, farklı bir iş parçacığından aynı nesne üzerinde bulunan ikinci atomik bir işlem, nesnenin durumunu yalnızca ilk atomik işlemden önce veya sonra alabilir.
+- Atomik bir işlem, farklı bir iş parçacığından aynı nesne üzerindeki ikinci atomik bir işlem, nesnenin durumunu yalnızca ilk atomik işlemden önce veya sonra alabilir.
 
-- Atomik bir işlem, [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenine göre, aynı iş parçacığında diğer atomik işlemlerin etkilerinin görünürlüğü için sıralama gereksinimlerini belirler. Sonuç olarak, sıralama gereksinimlerini ihlal eden derleyici iyileştirmelerini engeller.
+- Atomik bir işlem, [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenine göre, aynı iş parçacığında diğer atomik işlemlerin etkilerinin görünebilirliği için sıralama gereksinimlerini belirler. Sonuç olarak, sıralama gereksinimlerini ihlal eden derleyici iyileştirmelerini engeller.
 
 Bazı platformlarda, `mutex` kilitleri kullanmadan bazı türler için atomik işlemleri verimli bir şekilde uygulamak mümkün olmayabilir. Bir atomik tür, bu tür üzerinde hiçbir Atomik işlem kilit kullanıyorsa *kilit ücretsizdir* .
 
@@ -88,15 +89,15 @@ Sınıf şablonu `atomic<T>` bağımsız değişken türü `T` bir nesneyi depol
 
 ## <a name="pointer-specializations"></a>İşaretçi özelleştirilmiş oluşturmaları
 
-@No__t_0 kısmi uzmanlık tüm işaretçi türleri için geçerlidir. İşaretçi aritmetik için yöntemler sağlar.
+`atomic<T *>` kısmi uzmanlık tüm işaretçi türleri için geçerlidir. İşaretçi aritmetik için yöntemler sağlar.
 
 ## <a name="integral-specializations"></a>Integral Specialmeler
 
-@No__t_0 uzmanlık tüm integral türleri için geçerlidir. Bunlar, birincil şablon aracılığıyla kullanılamayan ek işlemler sağlar.
+`atomic<integral>` uzmanlık tüm integral türleri için geçerlidir. Bunlar, birincil şablon aracılığıyla kullanılamayan ek işlemler sağlar.
 
-Her `atomic<integral>` türü, bu türdeki işlemlerin kilitleme dışı olup olmadığını derleme zamanında belirleyebilmek için bir `if directive` kullanabileceğiniz bir makroya sahiptir. Makronun değeri sıfırsa, türdeki işlemler kilitleme ücretsizdir. Değer 1 ise, işlemler kilit boş olabilir ve bir çalışma zamanı denetimi gereklidir. Değer 2 ise, işlemler kilitleme ücretsizdir. ' @No__t_0 işlevini kullanarak, türdeki işlemlerin kilitleme dışı olup olmadığı çalışma zamanını belirleyebilirsiniz.
+Her `atomic<integral>` türü, bu türdeki işlemlerin kilitleme dışı olup olmadığını derleme zamanında belirleyebilmek için bir `if directive` kullanabileceğiniz bir makroya sahiptir. Makronun değeri sıfırsa, türdeki işlemler kilit ücretsizdir. Değer 1 ise, işlemler kilit boş olabilir ve bir çalışma zamanı denetimi gereklidir. Değer 2 ise, işlemler kilitleme ücretsizdir. ' `atomic_is_lock_free` işlevini kullanarak, türdeki işlemlerin kilitleme dışı olup olmadığı çalışma zamanını belirleyebilirsiniz.
 
-İntegral türlerinin her biri için, söz konusu integral türünün bir nesnesini yöneten karşılık gelen bir adlandırılmış atomik tür vardır. Her `atomic_integral` türü, karşılık gelen `atomic<T>` örneklemeyle aynı üye işlevleri kümesine sahiptir ve üye olmayan atomik işlevlerden herhangi birine geçirilebilir.
+İntegral türlerinin her biri için, söz konusu integral türünün bir nesnesini yöneten, karşılık gelen bir adlandırılmış atomik tür vardır. Her `atomic_integral` türü, karşılık gelen `atomic<T>` örneklemeyle aynı üye işlevleri kümesine sahiptir ve üye olmayan atomik işlevlerden herhangi birine geçirilebilir.
 
 |`atomic_integral` türü|Integral türü|`atomic_is_lock_free` makro|
 |----------------------------|-------------------|---------------------------------|
@@ -115,7 +116,7 @@ Her `atomic<integral>` türü, bu türdeki işlemlerin kilitleme dışı olup ol
 |`atomic_llong`|**uzun uzun**|ATOMIC_LLONG_LOCK_FREE|
 |`atomic_ullong`|**imzasız uzun uzun**|ATOMIC_LLONG_LOCK_FREE|
 
-@No__t_0inttypes. h > üst bilgisinde tanımlanan bazı türlerin atomik şablonunun uzmanlıkları için typedef adları mevcuttur.
+\<inttypes. h > üst bilgisinde tanımlanan bazı türlerin atomik şablonunun uzmanlıkları için typedef adları mevcuttur.
 
 |Atomik tür|TypeDef adı|
 |-----------------|------------------|
@@ -161,11 +162,11 @@ Her `atomic<integral>` türü, bu türdeki işlemlerin kilitleme dışı olup ol
 
 |Name|Açıklama|
 |----------|-----------------|
-|[memory_order numaralandırması](../standard-library/atomic-enums.md#memory_order_enum)|Bellek konumlarında eşitleme işlemleri için simgesel adlar sağlar. Bu işlemler, bir iş parçacığındaki atamaların diğerinden nasıl görünür hale geldiğini etkiler.|
+|[memory_order numaralandırması](../standard-library/atomic-enums.md#memory_order_enum)|Bellek konumlarında yapılan eşitleme işlemleri için simgesel adlar sağlar. Bu işlemler, bir iş parçacığındaki atamaların, nasıl başka bir atamada görülür hale geldiğini etkiler.|
 
 ## <a name="functions"></a>İşlevler
 
-Aşağıdaki listede `_explicit` olmayan işlevler, `memory_order_seq_cst` örtük [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenlerine sahip olmaları dışında, karşılık gelen `_explicit` semantiklerine sahiptir.
+Aşağıdaki listede, `_explicit` bitolmayan işlevler, `memory_order_seq_cst`örtük [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenlerine sahip olmaları dışında, karşılık gelen `_explicit`semantiklerine sahiptir.
 
 |Name|Açıklama|
 |----------|-----------------|
@@ -189,7 +190,7 @@ Aşağıdaki listede `_explicit` olmayan işlevler, `memory_order_seq_cst` ört�
 |[atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit)|Bir `atomic_flag` nesnesindeki bayrağı **false**olarak ayarlar.|
 |[atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)|Bir `atomic_flag` nesnesindeki bayrağı **true**olarak ayarlar.|
 |[atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)|Bir `atomic_flag` nesnesindeki bayrağı **true**olarak ayarlar.|
-|[atomic_init](../standard-library/atomic-functions.md#atomic_init)|@No__t_0 nesnesindeki depolanan değeri ayarlar.|
+|[atomic_init](../standard-library/atomic-functions.md#atomic_init)|`atomic` nesnesindeki depolanan değeri ayarlar.|
 |[atomic_is_lock_free](../standard-library/atomic-functions.md#atomic_is_lock_free)|Belirtilen bir nesne üzerindeki atomik işlemlerin kilitli olup olmadığını belirtir.|
 |[atomic_load](../standard-library/atomic-functions.md#atomic_load)|Sıradan olarak bir değer alır.|
 |[atomic_load_explicit](../standard-library/atomic-functions.md#atomic_load_explicit)|Sıradan olarak bir değer alır.|
@@ -201,5 +202,5 @@ Aşağıdaki listede `_explicit` olmayan işlevler, `memory_order_seq_cst` ört�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

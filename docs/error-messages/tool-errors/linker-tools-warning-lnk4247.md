@@ -6,36 +6,36 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4247
 ms.assetid: 085d7fdf-9eaf-4641-8473-6eaadd073c7b
-ms.openlocfilehash: cd4108f8bd06ec7a0b2d2eb9fab13917174b797b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 344c219fa1f3daa1e5f9c31431e608f5e7036400
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346966"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991159"
 ---
 # <a name="linker-tools-warning-lnk4247"></a>Bağlayıcı Araçları Uyarısı LNK4247
 
-Giriş Noktası 'decorated_function_name', zaten bir iş parçacığı özniteliğine sahip; 'attribute' yoksayıldı
+' decorated_function_name ' giriş noktasında zaten bir thread özniteliği var; ' Attribute ' yoksayıldı
 
-Belirtilen bir giriş noktası [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md), bir iş parçacığı oluşturma özniteliği var ancak [/CLRTHREADATTRIBUTE (CLR iş parçacığı özniteliğini Ayarla)](../../build/reference/clrthreadattribute-set-clr-thread-attribute.md) Ayrıca, farklı bir iş parçacığı modeliyle belirtildi.
+[/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md)ile belirtilen bir giriş noktasının bir Threading özniteliği vardı, ancak farklı bir iş parçacığı modeliyle [/CLRTHREADATTRıBUTE (Set CLR thread özniteliği)](../../build/reference/clrthreadattribute-set-clr-thread-attribute.md) de belirtildi.
 
-Bağlayıcı /CLRTHREADATTRIBUTE ile belirtilen değer geçersiz kılınır.
+Bağlayıcı,/CLRTHREADATTRIBUTEILE belirtilen değeri yoksaydı.
 
 Bu uyarıyı çözmek için:
 
-- /CLRTHREADATTRIBUTE, derlemeden kaldırın.
+- /CLRTHREADATTRıBUTE 'yi derlemeden kaldırın.
 
-- Öznitelik, kaynak kodu dosyanızdan kaldırın.
+- Kaynak kod dosyanızdaki özniteliği kaldırın.
 
-- Kaynak ve /CLRTHREADATTRIBUTE her iki öznitelik, bir derlemeden kaldırın ve varsayılan CLR iş parçacığı modeli kabul edin.
+- Derlemeden hem kaynak hem de/CLRTHREADATTRıBUTE özniteliğini kaldırın ve varsayılan CLR iş parçacığı modelini kabul edin.
 
-- /CLRTHREADATTRIBUTE için geçirilen değer, kaynak özniteliğiyle kabul olacağı şekilde değiştirin.
+- /CLRTHREADATTRıBUTE 'e geçirilen değeri değiştirin, örneğin, kaynak içindeki özniteliğiyle kabul eder.
 
-- Özniteliği, kaynakta /CLRTHREADATTRIBUTE için geçirilen değer ile kabul olacağı şekilde değiştirin.
+- Kaynaktaki özniteliği değiştirin, yani/CLRTHREADATTRIBUTETO öğesine geçirilen değeri kabul eder.
 
 Aşağıdaki örnek LNK4247 oluşturur
 
-```
+```cpp
 // LNK4247.cpp
 // compile with: /clr /c
 // post-build command: link /CLRTHREADATTRIBUTE:STA LNK4247.obj /entry:functionTitle /SUBSYSTEM:Console

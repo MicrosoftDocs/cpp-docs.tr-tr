@@ -6,36 +6,36 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4248
 ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
-ms.openlocfilehash: db9432c505b7348c9bef5ed34aac1cb4edecb17b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ba05ef067c539dc9c0aca6dc2a395748fd217a2
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352533"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988105"
 ---
 # <a name="linker-tools-warning-lnk4248"></a>Bağlayıcı Araçları Uyarısı LNK4248
 
-çözümlenemeyen typeref belirteci (belirteç) için 'type'; Görüntü çalışmayabilir
+çözümlenmemiş TypeRef belirteci (belirteç), ' Type ' için görüntü çalışmayabilir
 
-Bir tür tanımı MSIL meta verilerde yok.
+Bir türün MSIL meta verilerinde bir tanımı yok.
 
-LNK4248 İleri dönük bildiriminin bir MSIL modülü türü için yalnızca olduğunda meydana gelebilir (ile derlenmiş **/CLR**), MSIL modülü içinde başvurulan türü olduğunda ve bir MSIL modülü için bir tanıma sahip yerel bir modül ile bağlantılı olduğunda türü.
+LNK4248, bir MSIL modülünde ( **/clr**ile derlenen) bir tür için yalnızca bir iletme bildirimi olduğunda ve türü MSIL modülünde başvurulduğu ve MSIL modülünün tür tanımına sahip bir yerel modülle bağlantılı olduğu durumlarda gerçekleşebilir.
 
-Bu durumda, MSIL meta veriler yerel tür tanımında bağlayıcı veririz ve bu doğru davranışı sağlayabilir.
+Bu durumda bağlayıcı, MSIL meta verilerinde yerel tür tanımı sağlar ve bu durum doğru davranış sağlayabilir.
 
-İleriye doğru tür bildirimi bir CLR türü ise, ancak ardından bağlayıcı'nın yerel bir tür tanımı doğru olmayabilir
+Ancak, bir iletme türü bildirimi bir CLR türü ise, bağlayıcının yerel tür tanımı doğru olmayabilir
 
-Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Bir MSIL modülü tür tanımında sağlar.
+1. MSIL modülünde tür tanımını belirtin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, LNK4248 oluşturur. Çözümlenecek bir yapı tanımlar.
+Aşağıdaki örnek LNK4248 oluşturur. Çözümlemek için A yapısını tanımlayın.
 
-```
+```cpp
 // LNK4248.cpp
 // compile with: /clr /W1
 // LNK4248 expected
@@ -49,9 +49,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir tür ileriye doğru bir tanımı içeriyor.
+Aşağıdaki örnek bir türün ileri tanımına sahiptir.
 
-```
+```cpp
 // LNK4248_2.cpp
 // compile with: /clr /c
 class A;   // provide a definition for A here to resolve
@@ -66,9 +66,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, LNK4248 oluşturur.
+Aşağıdaki örnek LNK4248 oluşturur.
 
-```
+```cpp
 // LNK4248_3.cpp
 // compile with: /c
 // post-build command: link LNK4248_2.obj LNK4248_3.obj

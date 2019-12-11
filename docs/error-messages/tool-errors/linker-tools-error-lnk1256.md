@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1256
 ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
-ms.openlocfilehash: 47c20f24a2fe26cc96d5efcf359652a40af508ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bedf96262944d59737a39a942021cdec9445f3b8
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160581"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990948"
 ---
 # <a name="linker-tools-error-lnk1256"></a>Bağlayıcı Araçları Hatası LNK1256
 
-ALINK işlemi başarısız oldu: nedeni
+ALıNK işlemi başarısız oldu: neden
 
-LNK1256 yaygın bir nedeni bir derleme için yanlış sürüm numarasıdır. Herhangi bir bölümü için derleme sürüm numarası 65535 değerine izin verilmiyor. Derleme sürümleri için geçerli aralık 0 - ise 65534.
+LNK1256 için genel bir neden, derleme için yanlış sürüm numarasıdır. Derleme sürüm numarasının herhangi bir bölümü için 65535 değerine izin verilmez. Derleme sürümleri için geçerli Aralık 0-65534 ' dir.
 
-ALINK adlandırılmış bir anahtar kapsayıcısı bulunamadı, LNK1256 de neden olabilir. Anahtar kapsayıcısını silme ve kullanarak yeniden tanımlayıcı ad CSP eklemek [Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+LNK1256, Ayrıca, ALINK adlandırılmış anahtar kapsayıcısını bulamamışsa de oluşabilir. Anahtar kapsayıcısını silin ve [sn. exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool)kullanarak tanımlayıcı ad CSP 'ye yeniden ekleyin.
 
-LNK1256 başka bir nedeni bağlayıcı ve Alink.dll arasında sürüm uyuşmazlığı olmasıdır. Bu, bozuk bir Visual Studio yüklemesinin neden olabilir. Kullanım **programlar ve Özellikler** Visual Studio'yu yeniden yükleyin veya onarmak için Windows Denetim Masası'nda.
+LNK1256 için başka bir nedenden dolayı bağlayıcı ve ALink. dll arasında sürüm uyuşmazlığı olur. Bunun nedeni, bozuk bir Visual Studio yüklemesi olabilir. Visual Studio 'Yu onarmak veya yeniden yüklemek için Windows Denetim Masası 'ndaki **Programlar ve Özellikler ' i** kullanın.
 
-Aşağıdaki örnek, LNK1256 oluşturur:
+Aşağıdaki örnek LNK1256 oluşturur:
 
-```
+```cpp
 // LNK1256.cpp
 // compile with: /clr /LD
 // LNK1256 expected

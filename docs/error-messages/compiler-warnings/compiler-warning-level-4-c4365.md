@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4365
 ms.assetid: af4b4191-bdfd-4dbb-8229-3ba4405df257
-ms.openlocfilehash: 554ead2d26a090eb1ffc86e532841143483b365a
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: a9be67c8148b85167d10cd53318f5ef3b41b1340
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683033"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990923"
 ---
 # <a name="compiler-warning-level-4-c4365"></a>Derleyici Uyarısı (düzey 4) C4365
 

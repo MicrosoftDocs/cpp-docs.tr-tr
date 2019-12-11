@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4634
 ms.assetid: 3e3496ce-2ac7-43d0-a48a-f514c950e81d
-ms.openlocfilehash: 7d0e2af13128a201d96aa905d85621e14441a673
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a84773f80e15b4e6d3851de768751d1d6dc4b4e
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408218"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990610"
 ---
 # <a name="compiler-warning-level-4-c4634"></a>Derleyici Uyarısı (düzey 4) C4634
 
-XML belgesi açıklaması: uygulanamaz: nedeni
+XML belgesi açıklaması: uygulanamıyor: neden
 
-XML belge etiketleri için tüm C++ değil uygulanabilir oluşturur.  Örneğin, bir ad alanı veya şablon belge açıklaması eklenemiyor.
+XML belge etiketleri tüm C++ yapılara uygulanamaz.  Örneğin, bir ad alanına veya şablona belge açıklaması ekleyemezsiniz.
 
-Daha fazla bilgi için [XML belgeleri](../../build/reference/xml-documentation-visual-cpp.md).
+Daha fazla bilgi için bkz. [XML belgeleri](../../build/reference/xml-documentation-visual-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4634 oluşturur.
+Aşağıdaki örnek C4634 oluşturur.
 
-```
+```cpp
 // C4634.cpp
 // compile with: /W4 /doc /c
 /// This is a namespace.   // C4634
@@ -36,9 +36,9 @@ namespace hello {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4634 oluşturur.
+Aşağıdaki örnek C4634 oluşturur.
 
-```
+```cpp
 // C4634_b.cpp
 // compile with: /W4 /doc /c
 /// This is a template.   // C4634

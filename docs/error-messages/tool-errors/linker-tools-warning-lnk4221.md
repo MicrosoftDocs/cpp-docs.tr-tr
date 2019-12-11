@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4221
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
-ms.openlocfilehash: 299c3ef76006b347d6770d45ca317ff0eb941ffa
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: fb355b6d004d9488abac89ef44c9ec38c791ffda
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630798"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988033"
 ---
 # <a name="linker-tools-warning-lnk4221"></a>Bağlayıcı Araçları Uyarısı LNK4221
 
@@ -19,12 +19,12 @@ Bu nesne dosyası önceden tanımlanmamış ortak sembolleri tanımlamaz, bu ned
 
 Aşağıdaki iki kod parçacıklarını göz önünde bulundurun.
 
-```
+```cpp
 // a.cpp
 #include <atlbase.h>
 ```
 
-```
+```cpp
 // b.cpp
 #include <atlbase.h>
 int function()

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4336
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
-ms.openlocfilehash: 33c4a25618c1afcf93704b161483bc4c0a6e16a0
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: e83bac9028980bdf3ef7449fbef065a8c9316d2d
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683314"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991339"
 ---
 # <a name="compiler-warning-level-4-c4336"></a>Derleyici Uyarısı (düzey 4) C4336
 

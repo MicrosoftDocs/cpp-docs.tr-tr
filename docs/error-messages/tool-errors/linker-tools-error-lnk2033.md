@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2033
 ms.assetid: d61db467-9328-4788-bf54-e2a20537f13f
-ms.openlocfilehash: 7e95823e23215848ff3e5d201171523c9009eb2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 407f5eaf94a0e2da43425c3bbdd1955a88c95f14
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298912"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991181"
 ---
 # <a name="linker-tools-error-lnk2033"></a>Bağlayıcı Araçları Hatası LNK2033
 
-'type' için typeref belirteci (belirteç)
+çözümlenmemiş TypeRef belirteci (belirteç) ' Type ' için
 
-Bir tür tanımı MSIL meta verilerde yok.
+Bir türün MSIL meta verilerinde bir tanımı yok.
 
-İle derlerken LNK2033 oluşabilir **/CLR: safe** ve burada yalnızca ileri dönük bildiriminin bir türü burada türü başvuruluyor MSIL modülünde bir MSIL modülü için.
+**/Clr: Safe** Ile derlerken LNK2033 ve bir MSIL modülünde tür için yalnızca bir iletme bildirimi olduğunda, bu tür MSIL modülünde başvuruluyorsa meydana gelebilir.
 
-Türü altında tanımlanmış olması gereken **/CLR: safe**.
+Türün **/clr: Safe**altında tanımlanması gerekir.
 
-Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, LNK2033 oluşturur.
+Aşağıdaki örnek LNK2033 oluşturur.
 
-```
+```cpp
 // LNK2033.cpp
 // compile with: /clr:safe
 // LNK2033 expected

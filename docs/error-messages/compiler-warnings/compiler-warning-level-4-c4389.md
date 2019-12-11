@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4389
 ms.assetid: fc0e3a8e-f766-437c-b7f1-e61abb2a8765
-ms.openlocfilehash: 2cfb33e8a79259d0ff02dfd832a1b5943cbc0da9
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: 94c9e6a49296ac048437501b1e61ddbd3e0ccbad
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74682959"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990863"
 ---
 # <a name="compiler-warning-level-4-c4389"></a>Derleyici Uyarısı (düzey 4) C4389
 

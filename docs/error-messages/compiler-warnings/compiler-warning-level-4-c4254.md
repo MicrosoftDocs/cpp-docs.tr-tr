@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4254
 ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
-ms.openlocfilehash: 33b3ba795acb8c72c7d1630071aa2884b6137464
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: a100591d4a59664dd06bd2386942e4c92ffebac5
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541936"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991373"
 ---
 # <a name="compiler-warning-level-4-c4254"></a>Derleyici Uyarısı (düzey 4) C4254
 

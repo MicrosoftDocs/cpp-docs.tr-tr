@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4121
 ms.assetid: 8c5b85c9-2543-426b-88bc-319c50158c7e
-ms.openlocfilehash: bafa16cbad2cb0a2475cae5a98c608096e296442
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: 5bfe2ce5742c250f5f69c59d03888acb155e37a3
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541616"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991596"
 ---
 # <a name="compiler-warning-level-4-c4121"></a>Derleyici Uyarısı (düzey 4) C4121
 

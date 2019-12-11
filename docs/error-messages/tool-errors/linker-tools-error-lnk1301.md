@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1301
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
-ms.openlocfilehash: 6a82d7756f1460c56d87a3d7b1360c140de19827
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe64eecfbc9fed57c3748afd5804b76d6e4284a4
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160613"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990930"
 ---
 # <a name="linker-tools-error-lnk1301"></a>Bağlayıcı Araçları Hatası LNK1301
 
-LTCG clr modülleri bulundu, /LTCG:parameter ile uyumsuz
+LTCG clr modülleri bulundu,/LTCG ile uyumsuz: parametre
 
-/ CLR ve /GL ile derlenmiş bir modül için profil temelli en iyileştirmeler biriyle birlikte Bağlayıcısı/LTCG (PGO) parametrelerinin geçirildi.
+/Clr ve/GL ile derlenen bir modül,/LTCG'NIN profil temelli iyileştirme (PGO) parametrelerinden biri ile birlikte bağlayıcıya geçildi.
 
-Profil temelli en iyileştirmeler, / CLR modülleri için desteklenmez.
+Profil temelli iyileştirmeler/clr modülleri için desteklenmez.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
 - [/GL (Bütün Program İyileştirmesi)](../../build/reference/gl-whole-program-optimization.md)
 
@@ -33,13 +33,13 @@ Daha fazla bilgi için bkz.:
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. / CLR ile derlenmiyor veya PGO parametrelerden biri için/LTCG ile bağlamayın.
+1. /Clr ile derlememeyin veya PGO parametrelerinden biriyle/LTCG'E bağlamayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, LNK1301 oluşturur:
+Aşağıdaki örnek LNK1301 oluşturur:
 
-```
+```cpp
 // LNK1301.cpp
 // compile with: /clr /GL /link /LTCG:PGI LNK1301.obj
 // LNK1301 expected

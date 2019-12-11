@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4512
 ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
-ms.openlocfilehash: d3b8f11b55cf6ef2df601c125a1b6629aa0554da
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: c09832a4f27bff51cbb5bd847a3123e62c9ee8d5
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683193"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991005"
 ---
 # <a name="compiler-warning-level-4-c4512"></a>Derleyici Uyarısı (düzey 4) C4512
 

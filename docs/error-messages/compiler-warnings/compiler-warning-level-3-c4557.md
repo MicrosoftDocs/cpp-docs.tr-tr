@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4557
 ms.assetid: 7d9db716-03b2-4ee5-9b09-ba8aa5aa7e4c
-ms.openlocfilehash: 22ee456c5f79434c5e3b8a79b4c174aa3cdb3c7a
-ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
+ms.openlocfilehash: 864bc94017475f1ed0d11249856e8dc920774201
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188947"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991952"
 ---
 # <a name="compiler-warning-level-3-c4557"></a>Derleyici Uyarısı (düzey 3) C4557
 

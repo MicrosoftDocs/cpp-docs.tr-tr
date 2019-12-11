@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4460
 ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
-ms.openlocfilehash: 7f394af9dc0362035b9361981fdca077a3a915d5
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: 1b4ec02211dc346c1672b403bf8af16dc6fca461
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74682926"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990803"
 ---
 # <a name="compiler-warning-level-4-c4460"></a>Derleyici Uyarısı (düzey 4) C4460
 

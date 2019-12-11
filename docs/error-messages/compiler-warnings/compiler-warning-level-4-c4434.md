@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4434
 ms.assetid: 24b8785e-353a-4c37-8bed-ed61001a871d
-ms.openlocfilehash: 97a010bef151e97914d131b3a1fe2437a244e9c4
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: fccc37ec531768adbe332ddf9fd91ceb708c7185
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683211"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990820"
 ---
 # <a name="compiler-warning-level-4-c4434"></a>Derleyici Uyarısı (düzey 4) C4434
 

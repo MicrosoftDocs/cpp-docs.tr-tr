@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4673
 ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
-ms.openlocfilehash: ceaa5cd647dfb527713613b9ce3b5cd81a780fd7
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: cd53aeb7f767b06c017c64caa55c916aa1e2b9c9
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741385"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990571"
 ---
 # <a name="compiler-warning-level-4-c4673"></a>Derleyici Uyarısı (düzey 4) C4673
 
@@ -21,7 +21,7 @@ Bir throw nesnesi **catch** bloğunda işlenemiyor. İşlenmeyen her tür, bu uy
 
 Aşağıdaki örnek C4673 oluşturur:
 
-```
+```cpp
 // C4673.cpp
 // compile with: /EHsc /W4
 class Base {

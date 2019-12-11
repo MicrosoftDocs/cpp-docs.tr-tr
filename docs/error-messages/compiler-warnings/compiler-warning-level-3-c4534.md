@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4534
 ms.assetid: ec2adf3b-d7a1-4005-bb0c-5d219df78dc8
-ms.openlocfilehash: 2e617b18f2c7ed3b51d25eb44101629bbadcef9d
-ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
+ms.openlocfilehash: 7d8ff442e84aa7563b1787e5a030297c034e1871
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74189098"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992059"
 ---
 # <a name="compiler-warning-level-3-c4534"></a>Derleyici Uyarısı (düzey 3) C4534
 

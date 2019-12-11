@@ -1,17 +1,17 @@
 ---
 title: PROTO
-ms.date: 10/22/2018
+ms.date: 12/06/2019
 f1_keywords:
 - PROTO
 helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
-ms.openlocfilehash: 24ec2a9abc6c8b76fc81f6d412019296c53160f4
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 9df66b6c89498a2cc1a1864a668b7addfbaf593c
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394751"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74987863"
 ---
 # <a name="proto"></a>PROTO
 
@@ -26,10 +26,10 @@ Prototiplerde bir işlev veya yordam. [Invoke](invoke.md) YÖNERGESINI kullanara
 *etiket*\
 Prototipte belirlenmiş işlevin adı.
 
-*uzaklık*\
+*uzaklık* (yalnızca 32-BIT masa.) \
 Seçim Varsayılan değer geçersiz kılmak ve **yakın** veya **uzak** çağrıların göstermek için 16 bit bellek modellerinde kullanılır.
 
-*dil türü*\
+*dil türü* (yalnızca 32-BIT masa.) \
 Seçim Yordamlar ve genel semboller için çağrı ve adlandırma kuralını ayarlar. Desteklenen kurallar şunlardır:
 
 - 32-bit **düz** model: **C**, **stdcall**

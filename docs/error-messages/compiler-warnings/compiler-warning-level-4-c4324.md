@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4324
 ms.assetid: 420fa929-d9c0-40b4-8808-2d8ad3ca8090
-ms.openlocfilehash: 02803e165255b563df5a8b6136198f1f49e9f65d
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: e4ae270af2a88630f33e677638a5a94b77add601
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541081"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991364"
 ---
 # <a name="compiler-warning-level-4-c4324"></a>Derleyici Uyarısı (düzey 4) C4324
 

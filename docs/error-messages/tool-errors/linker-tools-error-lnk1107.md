@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1107
 ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
-ms.openlocfilehash: 68048d9f824283d002a4ea8b64d88f37bbeefc48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c75966d9c6c22f1bd2123fb30282bb2bed467130
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255398"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991035"
 ---
 # <a name="linker-tools-error-lnk1107"></a>Bağlayıcı Araçları Hatası LNK1107
 
-dosya geçersiz veya bozuk: konumda okunamıyor
+dosya geçersiz veya bozuk: konum okunamıyor
 
-Araç dosyası okunamadı. Dosyayı yeniden oluşturun.
+Araç dosyayı okuyamadı. Dosyayı yeniden oluşturun.
 
-LNK1107 bir modül geçirmeye çalışırsanız da olabilir (.dll veya .netmodule uzantısı ile oluşturulan [/clr:noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) veya [noassembly](../../build/reference/noassembly-create-a-msil-module.md)) bağlayıcıya; bunun yerine .obj dosyasına geçirin.
+LNK1107 Ayrıca, bağlayıcıya ( [/clr: noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) veya [/noAssembly](../../build/reference/noassembly-create-a-msil-module.md)ile oluşturulmuş bir modül) (. dll veya. netmodule uzantısı) bağlayıcıya geçirmeye çalıştığınızda da gerçekleşebilir; Bunun yerine. obj dosyasını geçirin.
 
-Aşağıdaki örnek derlerseniz:
+Aşağıdaki örneği derlerseniz:
 
-```
+```cpp
 // LNK1107.cpp
 // compile with: /clr /LD
 public ref class MyClass {
@@ -32,4 +32,4 @@ public:
 };
 ```
 
-ve ardından belirtin **LNK1107.dll bağlantı** komut satırında LNK1107 alırsınız.  Hatayı gidermek için belirtin **LNK1107.obj bağlantı** yerine.
+ardından, komut satırında **LINK LNK1107. dll** ' yi BELIRTIN, LNK1107 alacaksınız.  Hatayı gidermek için bunun yerine **LINK LNK1107. obj** ' i belirtin.

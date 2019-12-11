@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4702
 ms.assetid: d8198c1e-8762-42a6-9e6b-cb568b7a1686
-ms.openlocfilehash: 96ae3a0742db5e3a5006f031ce62beb281c38ccd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e46bfef925f999ed7f04b5bbe7c88800209ed14
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395254"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990650"
 ---
 # <a name="compiler-warning-level-4-c4702"></a>Derleyici Uyarısı (düzey 4) C4702
 
-erişilemeyen kodları
+erişilemeyen kod
 
-Bu bir uyarıdır için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu: erişilemeyen kod. Erişilemeyen kod derleyici (arka uç) algıladığında, C4702, oluşturur bir düzey 4 uyarısı.
+Bu uyarı, Visual Studio .NET 2003: ulaşılamaz kod için yapılan derleyici uygunluk işinin sonucudur. Derleyici (arka uç) erişilemeyen kodu algıladığında, 4. düzey bir uyarı C4702 oluşturur.
 
-Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümlerinde geçerli olan kod, erişilemeyen kodları kaldırma veya tüm kaynak kodu yürütme bazı flow tarafından erişilebilir olduğunu güvence altına alır.
+Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde geçerli olan kod için C++, erişilemeyen kodu kaldırın veya tüm kaynak koduna bazı yürütme akışı tarafından erişilebildiğinden emin olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4702 oluşturur.
+Aşağıdaki örnek C4702 oluşturur.
 
-```
+```cpp
 // C4702.cpp
 // compile with: /W4
 #include <stdio.h>
@@ -38,13 +38,13 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-İle derlerken **/GX**, **/ehc**, **/ehsc**, veya **/EHac** ve extern C işlevleri'ni kullanarak kod ulaşılamaz hale gelebilir çünkü extern C İşlevler oluşturma için kabul edilir, böylece catch bloğu erişilebilir değil.  Bir işlev oluşturabilecek çünkü bu uyarının geçerli olmadığını düşünüyorsanız, derleme **/eha** veya **EHS**bağlı olarak özel durum oluştu.
+**/GX**, **/EHC**, **/EHsc**veya **/EHac** ile derlerken ve extern c işlevlerini kullanırken, extern c işlevlerinin oluşturmadığı kabul edildiği için kod ulaşılamaz hale gelebilir, bu nedenle catch bloğunun ulaşılamaz olması gerekir.  Bu uyarının geçerli olmadığını düşünüyorsanız, bir işlev oluşturabileceğinden, oluşturulan özel duruma bağlı olarak **/EHa** veya **/EHS**ile derleyin.
 
-Daha fazla bilgi için [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](../../build/reference/eh-exception-handling-model.md) .
 
-Aşağıdaki örnek, C4702 oluşturur.
+Aşağıdaki örnek C4702 oluşturur.
 
-```
+```cpp
 // C4702b.cpp
 // compile with: /W4 /EHsc
 #include <iostream>

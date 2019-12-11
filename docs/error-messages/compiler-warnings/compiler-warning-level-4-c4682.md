@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4682
 ms.assetid: 858ea157-1244-4a61-85df-97b3de43d418
-ms.openlocfilehash: 6566c27999f218b7a214e32dde96bd1cf96fbb12
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6af1bf2d27c04efb58e7f1af0439ed3d16b7491a
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395280"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990120"
 ---
 # <a name="compiler-warning-level-4-c4682"></a>Derleyici Uyarısı (düzey 4) C4682
 
-'parameter': [in] varsayarak, hiçbir parametre özniteliği belirtilmedi
+' Parameter ': açıklamalı parametre özniteliği belirtilmedi, [in] varsayılan olarak ayarlanıyor
 
-Bir parametre öznitelikli arabirimdeki bir yöntem bir yönlü öznitelikler yok: [içinde](../../windows/in-cpp.md) veya [kullanıma](../../windows/out-cpp.md). Parametre için varsayılan olarak.
+Öznitelikli bir arabirimdeki parametre üzerindeki bir yöntem, yönlü özniteliklerden birine sahip değil: [ın](../../windows/in-cpp.md) veya [Out](../../windows/out-cpp.md). Parametresi ' de varsayılan olarak olur.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4682 oluşturur:
+Aşağıdaki örnek C4682 oluşturur:
 
-```
+```cpp
 // C4682.cpp
 // compile with: /W4
 #pragma warning(default : 4682)

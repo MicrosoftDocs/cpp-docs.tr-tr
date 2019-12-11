@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4253
 ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
-ms.openlocfilehash: d2fd7238a3f57b11b91813bd40b66cb3e9f47202
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3f45880571e5c06f76d5f063ff993e2f6b2be9b
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352534"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988089"
 ---
 # <a name="linker-tools-warning-lnk4253"></a>Bağlayıcı Araçları Uyarısı LNK4253
 
-Bölüm 'Bölümü1 birleştirilmeyen 'section2 ';' zaten 'section3' birleştirilmiş
+' Section1 ' bölümü ' section2 ' ile birleştirilmedi; zaten ' section3 ' ile birleştirildi
 
-Bağlayıcı birden çok, algılanan çakışan birleştirme ister. Bağlayıcı isteklerden birini göz ardı eder.
+Bağlayıcı birden çok, çakışan birleştirme isteği algıladı. Bağlayıcı isteklerden birini yok sayacaktır.
 
-A **/MERGE** seçeneği veya yönergesi ile karşılaştı ve `from` bölümü zaten birleştirilmiştir önceki nedeniyle farklı bir bölüme **/MERGE** seçeneği veya yönergesi (veya bir örtük birleştirmeden nedeniyle Bağlayıcı).
+Bir **/merge** seçeneği veya yönergesine rastlandı ve daha önce bir **/merge** seçeneği veya yönergesi (ya da bağlayıcıdan dolaylı bir birleştirme nedeniyle) nedeniyle `from` bölümü zaten farklı bir bölümle birleştirildi.
 
-LNK4253 çözmek için birleştirme isteklerden birini kaldırın.
+LNK4253 çözümlemek için, birleştirme isteklerinden birini kaldırın.
 
-X86 hedeflenirken makineler ve Visual C++ ile Windows CE hedefleri (ARM, MIPS, SH4 ve Flash). CRT bölümü artık salt okunur. Kodunuzu önceki davranışa bağlıysa (. CRT bölümleridir okuma/yazma), beklenmeyen davranışı görebilir.
+X86 makinelerini ve Windows CE hedeflerini hedeflerken (ARM, MIPS, SH4 ve Thumb), Visual C++ile. CRT bölümü artık salt okunurdur. Kodunuz önceki davranışa bağımlıysa (. CRT bölümleri okuma/yazma), beklenmeyen bir davranış görebilirsiniz.
 
-Daha fazla bilgi için bkz:
+Daha fazla bilgi için bkz.,
 
 - [/MERGE (Bölümleri Birleştir)](../../build/reference/merge-combine-sections.md)
 
@@ -33,9 +33,9 @@ Daha fazla bilgi için bkz:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, merge bağlayıcı bildirilmiştir `.rdata` iki kez ancak farklı bölümlere bölümü. Aşağıdaki örnek, LNK4253 oluşturur.
+Aşağıdaki örnekte, bağlayıcının `.rdata` bölümünü iki kez birleştirmek, ancak farklı bölümlerde olması talimatı vardır. Aşağıdaki örnek LNK4253 oluşturur.
 
-```
+```cpp
 // LNK4253.cpp
 // compile with: /W1 /link /merge:.rdata=text2
 // LNK4253 expected

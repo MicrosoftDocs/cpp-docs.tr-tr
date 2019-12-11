@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - lock_when enum
 ms.assetid: 6b87bbe9-63cd-450d-a02e-bb91ffd0dcea
-ms.openlocfilehash: be75ec497dff79d75c22bda3b7d24389db2c9c59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af4e4472a33ef3d083f54da74e306562af1867a1
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153248"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988122"
 ---
-# <a name="lockwhen-enum"></a>lock_when Numaralandırması
+# <a name="lock_when-enum"></a>lock_when Numaralandırması
 
-Ertelenmiş kilitleme belirtir.
+Ertelenmiş kilitlemeyi belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,13 +30,13 @@ enum lock_when {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçirilen zaman [lock::lock](../dotnet/lock-lock.md), `lock_later` kilit artık değil gerçekleştirilecek olduğunu belirtir.
+[Lock:: Lock](../dotnet/lock-lock.md)öğesine geçirildiğinde, kilidin şimdi alınmadığından `lock_later` belirtir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.
+Bu örnek, birden çok iş parçacığında bir sınıfın tek bir örneğini kullanır.  Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır.  Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için bir kilit kullanır ve tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış ' ı bekler.
 
-```
+```cpp
 // msl_lock_lock_when.cpp
 // compile with: /clr
 #include <msclr/lock.h>
@@ -124,9 +124,9 @@ All threads completed.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası** \<msclr\lock.h >
+**Üstbilgi dosyası** \<msclr\lock.h >
 
-**Namespace** msclr
+**Ad alanı** msclr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

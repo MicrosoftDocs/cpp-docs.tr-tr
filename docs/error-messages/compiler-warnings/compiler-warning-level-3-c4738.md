@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4738
 ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
-ms.openlocfilehash: 5162a03b213b35913ed1fc7f39360796ccf2c4a0
-ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
+ms.openlocfilehash: c1989518c3965f8faa54a05b2925d0e37455625e
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74189403"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991697"
 ---
 # <a name="compiler-warning-level-3-c4738"></a>Derleyici Uyarısı (düzey 3) C4738
 

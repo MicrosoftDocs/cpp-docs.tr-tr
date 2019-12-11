@@ -1,17 +1,17 @@
 ---
 title: COMM
-ms.date: 08/30/2018
+ms.date: 12/06/2019
 f1_keywords:
 - COMM
 helpviewer_keywords:
 - COMM directive
 ms.assetid: a23548c4-ad04-41fa-91da-945f228de742
-ms.openlocfilehash: d36161ba54ca80fc0f576c6f0a7c2a9410bf8075
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: 93e7c891b1c964eca5b3ff7fd15956ef25ea05e6
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541030"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74987947"
 ---
 # <a name="comm"></a>COMM
 
@@ -28,6 +28,8 @@ Communal değişkenleri bağlayıcı tarafından ayrılır ve başlatılamıyor.
 Her *tanım* aşağıdaki biçimdedir:
 
 ⟦*Language-Type*⟧ ⟦**yakınındaki** | **Far**⟧ _etiketi_ **:** _Type_⟦ **:** _Count_⟧
+
+*Dil türü*, **yakın**ve **uzak** bağımsız değişkenler yalnızca 32 bitlik ması 'de geçerlidir.
 
 İsteğe bağlı *dil türü* , aşağıdaki ad için adlandırma kurallarını ayarlar. Tarafından belirtilen tüm dilleri geçersiz kılar **. MODEL** yönergesi. İsteğe bağlı **yakın** veya **uzak** geçerli bellek modelini geçersiz kılar. *Etiket* değişkenin adıdır. *Tür* herhangi bir tür belirticisi ([byte](../../assembler/masm/byte-masm.md), [Word](../../assembler/masm/word.md), vb.) veya bayt sayısını belirten bir tamsayı olabilir. İsteğe bağlı *sayı* , belirtilen veri nesnesindeki öğelerin sayısını belirtir. Varsayılan *sayı* bir.
 

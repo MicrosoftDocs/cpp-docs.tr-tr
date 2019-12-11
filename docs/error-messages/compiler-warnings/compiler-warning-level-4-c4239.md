@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4239
 ms.assetid: a23dc16a-649e-4870-9a24-275de1584fcd
-ms.openlocfilehash: fcb66fca7e5b8708171849f885518c15b8355ac4
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: a882fa7f78f68cb2400e4924a9ba2f17e6ee7003
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541728"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991452"
 ---
 # <a name="compiler-warning-level-4-c4239"></a>Derleyici Uyarısı (düzey 4) C4239
 

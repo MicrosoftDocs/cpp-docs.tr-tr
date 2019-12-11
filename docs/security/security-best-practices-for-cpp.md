@@ -8,57 +8,57 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: b43658eda749e68c17659fcb41248b88fd843792
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 914498a79d3d3ddae08ae672aac35c6e913ef238
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448507"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988079"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
-Bu makale, güvenlik araçları ve uygulamaları hakkında bilgi içerir. Bunları kullanarak uygulamaları saldırılarından yapmaz, ancak bu saldırıların düşürür.
+Bu makale, güvenlik araçları ve uygulamalar hakkında bilgiler içerir. Bunların kullanılması, uygulamaların saldırıya maruz olmamasına neden olmaz, ancak olası saldırıları daha az olabilir.
 
-## <a name="visual-c-security-features"></a>Visual C++ güvenlik özellikleri
+## <a name="visual-c-security-features"></a>Görsel C++ güvenlik özellikleri
 
-Microsoft bu güvenlik özellikleri yerleşiktir C++ derleyici ve bağlayıcı:
+Bu güvenlik özellikleri, Microsoft C++ derleyicisi ve bağlayıcı içinde yerleşik olarak bulunur:
 
 [/guard (Denetim Akışı Korumasını Etkinleştirme)](../build/reference/guard-enable-control-flow-guard.md)<br/>
-Denetim akışı dolaylı çağrı hedefler için derleme zamanında çözümlemek derleyicinin ve çalışma zamanında hedefleri doğrulamak için kod eklenemedi.
+Derleyicinin derleme zamanında dolaylı çağrı hedefleri için denetim akışını çözümlemesine ve sonra çalışma zamanında hedefleri doğrulamak üzere kod eklemesini sağlar.
 
 [/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)<br/>
-Derleyicinin yararlanılmasını bir risk altında olan işlevler halinde taşması algılama kod eklemesini söyler. Bir taşma algılandığında, yürütme durduruldu. Varsayılan olarak, bu seçenek açıktır.
+Derleyicinin kullanım riski altında olan işlevlere taşma algılama kodu eklemesini sağlar. Bir taşma algılandığında yürütme durdurulur. Varsayılan olarak, bu seçenek açık olur.
 
 [/SAFESEH (Görüntüde Güvenli Özel Durum İşleyicileri Var)](../build/reference/safeseh-image-has-safe-exception-handlers.md)<br/>
-Her özel durum işleyicisi adresini içeren bir tablo çıktı görüntüsüne dahil etme konusunda bilgilendirir. Çalışma zamanında, işletim sisteminin yalnızca yasal bir özel durum işleyicileri yürütüldüğünden emin olmak için bu tabloyu kullanır. Bu, çalışma zamanında bir kötü amaçlı saldırı tarafından sunulan özel durum işleyicileri yürütülmesini önlemeye yardımcı olur. Varsayılan olarak, bu değer kapalıdır.
+Bağlayıcının, her bir özel durum işleyicisinin adresini içeren bir tabloya Çıkış görüntüsüne dahil olmasını sağlar. Çalışma zamanında, işletim sistemi yalnızca meşru özel durum işleyicilerinin yürütüldüğünden emin olmak için bu tabloyu kullanır. Bu, çalışma zamanında kötü amaçlı bir saldırıya getirilen özel durum işleyicilerinin yürütülmesini önlemeye yardımcı olur. Varsayılan olarak, bu değer kapalıdır.
 
-[/ NXCOMPAT](../build/reference/nxcompat.md), [/NXCOMPAT (veri yürütme önlemesi ile uyumlu)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md) Veri Yürütme Engellemesi (DEP) uyumluluk Bu derleyici ve bağlayıcı seçenekleri etkinleştirin. DEP CPU olmayan kod sayfaları yürütülmesini karşı korur.
+[/NXCOMPAT](../build/reference/nxcompat.md), [/NXCOMPAT (Veri Yürütme Engellemesi ile uyumlu)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md) Bu derleyici ve bağlayıcı seçenekleri VERI Yürütme Engellemesi (DEP) uyumluluğunu etkinleştirir. DEP, CPU 'YU kod olmayan sayfaların yürütülmesine karşı korur.
 
 [/analyze (Kod Çözümleme)](../build/reference/analyze-code-analysis.md)<br/>
-Bu derleyici seçeneğini arabellek taşması, başlatılmamış bellek, null işaretçisinin başvurusunun kaldırılması ve bellek sızıntıları gibi olası güvenlik sorunlarını raporları kod analizini etkinleştirir. Varsayılan olarak, bu değer kapalıdır. Daha fazla bilgi için [C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+Bu derleyici seçeneği, arabellek taşması, Başlatılmamış bellek, null işaretçi başvurusu ve bellek sızıntıları gibi olası güvenlik sorunlarını raporlayan Kod analizini etkinleştirir. Varsayılan olarak, bu değer kapalıdır. Daha fazla bilgi için bkz. [C/C++ Overview için kod analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
 
 [/DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)<br/>
-Bu bağlayıcı seçeneğini farklı konumlarda yürütme başına belleğe yüklenebilen bir yürütülebilir görüntü oluşturmayı etkinleştirir. Bu seçenek de yığın konumunu bellekte çok daha az tahmin edilebilir olmasını sağlar.
+Bu bağlayıcı seçeneği, yürütmenin başlangıcında bellekte farklı konumlara yüklenebilen yürütülebilir bir görüntünün oluşturulmasına olanak tanıyor. Bu seçenek ayrıca, bellekte yığın konumunun çok daha az öngörülebilir hale gelmesini sağlar.
 
-## <a name="security-enhanced-crt"></a>Gelişmiş Güvenlik CRT
+## <a name="security-enhanced-crt"></a>Güvenliği artırılmış CRT
 
-C çalışma zamanı kitaplığı (CRT) güvenlik riskleri konusunda sizi uyarmayı işlevlerin güvenli sürümleri içerecek şekilde genişletilmiş — Örneğin, denetlenmemiş `strcpy` dize kopyalama işlevi. Bu işlevlerin daha eski, güvenli olmayan sürümler kullanım dışı olduğundan, derleme zamanı uyarılarına neden olur. Derleme uyarılarını bastırmak yerine bu CRT işlevlerin güvenli sürümleri kullanmanızı öneririz. Daha fazla bilgi için [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md).
+C çalışma zamanı kitaplığı (CRT), güvenlik riskleri ortaya çıkaran işlevlerin güvenli sürümlerini (örneğin, denetlenmeyen `strcpy` dize kopyalama işlevi) içerecek şekilde geliştirilmiştir. Bu işlevlerin daha eski ve güvenli olmayan sürümleri kullanım dışı olduğundan, derleme zamanı uyarılarına neden olur. Derleme uyarılarını bastırmak yerine bu CRT işlevlerinin güvenli sürümlerini kullanmanızı öneririz. Daha fazla bilgi için bkz. [CRT Içindeki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="safeint-library"></a>SafeInt Kitaplığı
 
-[SafeInt Kitaplığı](../safeint/safeint-library.md) tamsayı taşıyor ve uygulama matematiksel işlemler gerçekleştirdiğinde oluşabilecek açıklardan diğer hataları önlemeye yardımcı olur. `SafeInt` Kitaplığı içerir [SafeInt sınıfı](../safeint/safeint-class.md), [Safeıntexception sınıfı](../safeint/safeintexception-class.md)ve birkaç [SafeInt işlevleri](../safeint/safeint-functions.md).
+[SafeInt Kitaplığı](../safeint/safeint-library.md) , uygulamanın matematik işlemlerini gerçekleştirdiğinde ortaya çıkabilecek tamsayı taşlarının ve diğer açıktan etkilenme hatalarının önlenmesine yardımcı olur. `SafeInt` Kitaplığı [SafeInt sınıfını](../safeint/safeint-class.md), [Safeintexception sınıfını](../safeint/safeintexception-class.md)ve birkaç [SafeInt işlevini](../safeint/safeint-functions.md)içerir.
 
-`SafeInt` Sıfırla bölme yararlanan ve sınıfı tamsayı taşması karşı korur. Farklı türlerde değerler arasında karşılaştırma işlemek için bunu kullanabilirsiniz. Bu iki hata işleme ilkeleri sağlar. İçin varsayılan ilkedir `SafeInt` sınıfının bir `SafeIntException` sınıfı özel durumu raporuna neden bir matematiksel işlem tamamlanamıyor. İkinci ilkeyi içindir `SafeInt` sınıfı programın yürütülmesini durdurur. Ayrıca, özel bir ilke de tanımlayabilirsiniz.
+`SafeInt` sınıfı, tamsayı taşmasına karşı koruma ve sıfıra bölme açıklarını korur. Farklı türlerin değerleri arasındaki karşılaştırmaları işlemek için kullanabilirsiniz. İki hata işleme ilkesi sağlar. Varsayılan ilke, bir matematik işleminin neden tamamlanamadığına ilişkin bir `SafeIntException` sınıfı özel durumu oluşturması için `SafeInt` sınıfına yöneliktir. İkinci ilke, program yürütmeyi durdurmak için `SafeInt` sınıfına yöneliktir. Ayrıca, özel bir ilke tanımlayabilirsiniz.
 
-Her `SafeInt` işlevi, bir hatadan bir matematiksel işlem korur. İki farklı tür parametreleri aynı türe dönüştürme olmadan kullanabilirsiniz. Birden çok matematik işlemi korumak için `SafeInt` sınıfı.
+Her `SafeInt` işlevi, bir matematik işlemini, açıktan etkilenme hatasından korur. Aynı türe dönüştürmeden iki farklı parametre türü kullanabilirsiniz. Birden çok matematik işlemini korumak için `SafeInt` sınıfını kullanın.
 
 ## <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 
-Denetlenen bir yineleyiciye kapsayıcı sınırlarının zorlar. Varsayılan olarak, denetlenen bir yineleyiciye sınırların dışında olduğunda, bir özel durum oluşturur ve program yürütme sona erer. Denetlenen bir yineleyiciye önişlemci için atanan değerleri bağımlı diğer yanıt düzeyleri tanımlar gibi sağlar  **\_güvenli\_SCL\_OLUŞTURUR** ve  **\_YİNELEYİCİ\_hata ayıklama\_düzeyi**. Örneğin,  **\_YİNELEYİCİ\_hata ayıklama\_düzeyi = 2**, denetlenen bir yineleyiciye kapsamlı bir doğruluk hangi kullanarak eserleridir hata ayıklama modunda denetimi sağlar onaylar. Daha fazla bilgi için [Checked Iterators](../standard-library/checked-iterators.md) ve [ \_YİNELEYİCİ\_hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md).
+Denetlenen bir yineleyici kapsayıcı sınırlarını zorlar. Varsayılan olarak, denetlenen bir yineleyici sınırların dışında olduğunda bir özel durum oluşturur ve program yürütmesini sonlandırır. Denetlenen bir yineleyici, **\_güvenli\_SCL\_oluşturur** ve **\_Yineleyici\_hata ayıklama\_düzeyi**gibi, Önişlemci 'ye atanan değerlere bağlı diğer yanıt düzeylerini sağlar. Örneğin, **\_yineleyici\_hata ayıklama\_düzeyi = 2**ise, denetlenen bir yineleyici hata ayıklama modunda, onay kullanılarak kullanıma sunulan kapsamlı doğruluk denetimleri sağlar. Daha fazla bilgi için bkz. [onay yineleyiciler](../standard-library/checked-iterators.md) ve [\_Yineleyici\_hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md).
 
 ## <a name="code-analysis-for-managed-code"></a>Yönetilen Kod için Kod Analizi
 
-FxCop olarak da bilinir, yönetilen kod için Kod Analizi derlemeler.NET Framework tasarım yönergeleri uyumluluk için denetler. FxCop kod ve aşağıdaki alanlarda hataları denetlemek için her bir derleme içindeki meta verileri analiz eder:
+FxCop olarak da bilinen yönetilen kod için kod analizi, the.NET Framework Tasarım yönergelerine uygunluk için derlemeleri denetler. FxCop, her derlemedeki kodu ve meta verileri çözümleyerek aşağıdaki alanlarda kusurları denetler:
 
 - Kitaplık tasarımı
 
@@ -72,29 +72,28 @@ FxCop olarak da bilinir, yönetilen kod için Kod Analizi derlemeler.NET Framewo
 
 ## <a name="windows-application-verifier"></a>Windows Uygulama Doğrulayıcısı
 
-[Uygulama Doğrulayıcısı (AppVerifier)](/windows-hardware/drivers/debugger/application-verifier
-) olası uygulama uyumluluğu, kararlılık ve güvenlik sorunlarını belirlemenize yardımcı olabilir.
+[Uygulama doğrulayıcısı (AppVerifier)](/windows-hardware/drivers/debugger/enable-application-verifier) , olası uygulama uyumluluk, kararlılık ve güvenlik sorunlarını belirlemenize yardımcı olabilir.
 
-AppVerifier, uygulama işletim sisteminin nasıl kullandığı izler. Dosya sistemi, kayıt defteri, bellek izler ve uygulama çalıştıran ve kaynak kodu önerir API'leri ortaya çıkardığı için sorunları giderir.
+AppVerifier, bir uygulamanın işletim sistemini nasıl kullandığını izler. Uygulama çalışırken dosya sistemi, kayıt defteri, bellek ve API 'Leri izler ve kapsamamakta olan sorunlara yönelik kaynak kodu düzeltmeleri önerir.
 
-AppVerifier için kullanabilirsiniz:
+AppVerifier ' i kullanarak şunları yapabilirsiniz:
 
-- Ortak programlama hatalarına neden olası uygulama uyumluluğu hataları için test edin.
+- Yaygın programlama hatalarından kaynaklanan olası uygulama uyumluluğu hatalarını test edin.
 
-- Bir uygulama için bellekle ilgili sorunları inceleyin.
+- Bellekle ilgili sorunlar için bir uygulamayı inceleyin.
 
-- Bir uygulamada olası güvenlik sorunlarını belirleyin.
+- Bir uygulamadaki olası güvenlik sorunlarını belirler.
 
-## <a name="windows-user-accounts"></a>Windows kullanıcı hesapları
+## <a name="windows-user-accounts"></a>Windows Kullanıcı hesapları
 
-Yöneticiler grubu kullanıma sunan geliştiricilere ve--uzantısı--ait Windows kullanıcı hesapları müşterilerin güvenlik risklerine kullanma. Daha fazla bilgi için [kullanıcılar grubunun bir üyesi olarak çalıştırma](running-as-a-member-of-the-users-group.md) ve [nasıl kullanıcı hesabı denetimi (UAC) etkiler uygulamanız](how-user-account-control-uac-affects-your-application.md).
+Yöneticiler grubuna ait olan Windows Kullanıcı hesaplarının kullanılması geliştiricileri ve------arasındaki müşterileri güvenlik risklerine sunar. Daha fazla bilgi için, bkz. [Kullanıcılar grubunun üyesi olarak çalışan](running-as-a-member-of-the-users-group.md) ve [Kullanıcı HESABı denetimi (UAC) uygulamanızı nasıl etkiler](how-user-account-control-uac-affects-your-application.md).
 
-## <a name="guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanal için yönergeler
+## <a name="guidance-for-speculative-execution-side-channels"></a>Spectıcı yürütme tarafı kanalları Kılavuzu
 
-Tanımayı ve C++ yazılım kurgusal yürütme yan kanal donanım güvenlik açıklarına karşı azaltmak hakkında daha fazla bilgi için bkz. [C++ Geliştirici Kılavuzu için kurgusal yürütme yan kanal](developer-guidance-speculative-execution.md).
+C++ Yazılımdaki öngörülebilir yürütme tarafı kanalı güvenlik açıklarına karşı nasıl karşılaştırılma ve hafiflebileceğine ilişkin bilgiler için, bkz [ C++ . kurgusal yürütme tarafı kanalları için Geliştirici Kılavuzu](developer-guidance-speculative-execution.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 <xref:System.Security> <br/>
-[Güvenlik](/dotnet/standard/security/index)<br/>
+[Security](/dotnet/standard/security/index)<br/>
 [Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler](how-user-account-control-uac-affects-your-application.md)

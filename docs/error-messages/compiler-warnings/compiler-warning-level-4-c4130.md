@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4130
 ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
-ms.openlocfilehash: b55594608eccc5d1e5e764bffb73ecb3787af1e4
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: 3bc632bf641fa3944cfd21dc405590c803498d80
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541592"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991573"
 ---
 # <a name="compiler-warning-level-4-c4130"></a>Derleyici Uyarısı (düzey 4) C4130
 
