@@ -15,16 +15,16 @@ ms.locfileid: "74397700"
 ---
 # <a name="else-masm"></a>ELSE (MASM)
 
-Marks the beginning of an alternate block within a conditional block.
+Bir koşullu blok içindeki alternatif bir bloğun başlangıcını işaretler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ELSE**
+> **DEĞILSE**
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [IF](../../assembler/masm/if-masm.md).
+Bkz [.](../../assembler/masm/if-masm.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)
