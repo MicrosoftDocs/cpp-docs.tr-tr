@@ -10,24 +10,24 @@ helpviewer_keywords:
 - square brackets [ ], arrays
 - subscript expressions
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
-ms.openlocfilehash: bd3b495483a460f01fe1951ee4c8b5ac3b447701
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ac57a65d575ba6a9134f3c4474103735411847d
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232352"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299110"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 
-Köşeli ayraçlar içinde bir ifade arkasından bir sonek ifadesi (**[]**) bir öğenin bir dizi nesnesinin simgeli gösterimidir. Alt simge ifadesi adresi değeri temsil eden *ifade* ötesinde konumlandırır *sonek ifadesi* olarak ifade edilen zaman
+Köşeli ayraçlar ( **[]** ) içindeki bir sonek ifadesi, bir dizi nesnesinin bir öğesinin alt simge olarak düzenlenmiş bir gösterimidir. Bir alt simge ifadesi, şöyle ifade edildiğinde *sonek ifadesinin* ötesinde *ifade* konumları olan adresteki değeri temsil eder
 
 ```
 postfix-expression [ expression ]
 ```
 
-Genellikle, tarafından temsil edilen değeri *sonek ifadesi* bir işaretçi değeri, bir dizi tanımlayıcısına gibi ve *ifade* bir integral değeridir. Ancak, tüm sözdizimsel olarak olan bir ifadenin bir işaretçi türünde olması ve diğeri Tamsayı türünde olması gereklidir. Tamsayı değeri bu nedenle olabilir *sonek ifadesi* konumu ve işaretçi değeri parantez içinde olabilir *ifade*, veya "alt simge," konum. Örneğin, bu yasal kodudur:
+Genellikle, *sonek ifadesi* tarafından temsil edilen değer, dizi tanımlayıcısı gibi bir işaretçi değeridir ve *ifade* ise tamsayı değeridir. Ancak, tüm sözdizimi, ifadelerden birinin işaretçi türü ve diğeri de İntegral türünde olması olabilir. Bu nedenle, tamsayı değeri *sonek ifadesi* konumunda olabilir ve işaretçi değeri, *ifadedeki*parantez veya "alt simge" konumunda olabilir. Örneğin, bu kod geçerlidir:
 
-```
+```c
 // one_dimensional_arrays.c
 int sum, *ptr, a[10];
 int main() {
@@ -36,9 +36,9 @@ int main() {
 }
 ```
 
-Alt simge ifadeleri genellikle dizi öğelerine başvurmak için kullanılan, ancak herhangi bir işaretçiye bir alt simge uygulayabilirsiniz. Hangi değerleri sırasını *ifade* ayraçlar içine alınmalıdır (**[]**).
+Alt simge ifadeleri genellikle dizi öğelerine başvurmak için kullanılır, ancak herhangi bir işaretçiye bir alt simge uygulayabilirsiniz. Değerlerin sırası ne olursa olsun, *ifade* köşeli ayraç ( **[]** ) içine alınmalıdır.
 
-Alt simge ifadesi tam sayı değeri işaretçi değerine ekleyerek ve ardından yöneltme işlecini değerlendirilir (<strong>\*</strong>) sonucu. (Bkz [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md) yöneltme işlecinin bir tartışma.) Aslında, tek boyutlu bir dizi için aşağıdaki dört eşdeğer olduğunu varsayarak ifadelerdir `a` gösteren bir işaretçidir ve `b` bir tamsayıdır:
+Alt simge ifadesi, tam sayı değeri işaretçi değerine eklenerek değerlendirilir ve ardından yöneltme işleci (<strong>\*</strong>) sonuca uygulanıyor. (Yöneltme işlecinin bir tartışması için bkz. [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md) .) Aslında, tek boyutlu bir dizi için aşağıdaki dört ifade eşdeğerdir, `a` bir işaretçi ve `b` bir tamsayı olduğunu varsayar:
 
 ```
 a[b]
@@ -47,17 +47,17 @@ a[b]
 b[a]
 ```
 
-Toplama işleci dönüştürme kurallarına göre (içinde verilen [toplama işleçleri](../c-language/c-additive-operators.md)), tamsayı değeri, işaretçi tarafından ele alınan uzunluğunu çarpılmasıyla adresi uzaklık dönüştürülür.
+Toplama işleci (eklenen [Işleçlere](../c-language/c-additive-operators.md)göre) için dönüştürme kurallarına göre, integral değeri, işaretçi tarafından ele alınan türün uzunluğuna göre çarpılarak bir adres denkleine dönüştürülür.
 
-Örneğin, tanımlayıcı varsayalım `line` dizilerine başvuruyor `int` değerleri. Alt simge ifadesi değerlendirmek için aşağıdaki yordamı kullanılan `line[ i ]`:
+Örneğin, tanımlayıcı `line` bir `int` değerleri dizisine başvurduğunu varsayalım. Aşağıdaki yordam, `line[ i ]`alt simge ifadesini değerlendirmek için kullanılır:
 
-1. Tamsayı değeri `i` uzunluğu tanımlanan bayt sayısı çarpılır bir `int` öğesi. Dönüştürülmüş değeri `i` temsil `i` `int` konumları.
+1. `i` tamsayı değeri, bir `int` öğesinin uzunluğu olarak tanımlanan bayt sayısıyla çarpılır. `i` dönüştürülen değeri, `i` `int` konumlarını temsil eder.
 
-1. Dönüştürülen bu değer, orijinal işaretçi değerine eklenir (`line`) uzaklığını adresin elde etmek üzere `i` `int` gelen konumlandırır `line`.
+1. Bu dönüştürülmüş değer, `line``int` konumlar `i` bir adres sağlamak için özgün işaretçi değerine (`line`) eklenir.
 
-1. Yöneltme işleci yeni adresine uygulanır. Bu konumda dizi öğesinin değeri sonucudur (sezgisel, `line [ i ]`).
+1. Yöneltme işleci yeni adrese uygulanır. Sonuç, bu konumdaki dizi öğesinin değeridir (ıntuicanlı, `line [ i ]`).
 
-Alt simge ifadesi `line[0]` satırının ilk öğenin değeri tarafından temsil edilen adrese uzaklığı beri temsil eden `line` 0'dır. Benzer şekilde, bir ifade gibi `line[5]` satır öğesi uzaklığı beş konumdan veya dizinin altıncı öğesinin anlamına gelir.
+Alt simge ifadesi `line[0]`, `line` tarafından temsil edilen adresten gelen konum 0 olduğundan, satırın ilk öğesinin değerini temsil eder. Benzer şekilde, `line[5]` gibi bir ifade, satırdaki beş konum veya dizinin altıncı öğesi olan öğe sapmasını ifade eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
