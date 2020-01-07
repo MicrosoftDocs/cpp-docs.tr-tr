@@ -16,16 +16,16 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-ms.openlocfilehash: d5bbd361dc2dedc24c2a59050ffa680517186494
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f87ead486d635c933ad356f9868c22344601eda
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263093"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298629"
 ---
-# <a name="concurrentqueue-class"></a>concurrent_queue Sınıfı
+# <a name="concurrent_queue-class"></a>concurrent_queue Sınıfı
 
-`concurrent_queue` Sınıfı, bir ilk sağlayan dizisi kapsayıcı sınıfı, ilk çıkar erişim öğeleri. Eşzamanlılık açısından güvenli işlemler, sınırlı sayıda gibi sağlayan `push` ve `try_pop`.
+`concurrent_queue` sınıfı, öğeleri için ilk ın, ilk çıkar erişimine izin veren bir dizi kapsayıcı sınıfıdır. `push` ve `try_pop`gibi sınırlı sayıda eşzamanlılık güvenli işlem kümesi sunar. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,49 +37,49 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Kuyrukta depolanacak öğe veri türü.
+Kuyrukta depolanacak öğelerin veri türü.
 
 *_Ax*<br/>
-Ayırma ve eş zamanlı bu sıra için bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<T>`.
+Bu eşzamanlı sıra için bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<T>`.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|`allocator_type`|Eşzamanlı kuyruk için ayırıcı sınıf temsil eden tür.|
-|`const_iterator`|Bir iş parçacığı güvenli olmayan temsil eden bir tür `const` eşzamanlı Kuyruk öğeleri üzerinde yineleyici.|
-|`const_reference`|Bir başvuru sağlayan bir tür bir `const` okumak ve gerçekleştirmek için eş zamanlı bir sıra içinde depolanan öğenin `const` operations.|
-|`difference_type`|Eş zamanlı sıradaki iki öğe arasındaki imzalı uzaklığı sağlayan bir tür.|
-|`iterator`|Eş zamanlı kuyruktaki öğeleri üzerinde bir iş parçacığı güvenli olmayan yineleyicisini temsil eden bir tür.|
-|`reference`|Eş zamanlı kuyrukta depolanan öğeye başvuru sağlayan bir tür.|
-|`size_type`|Eş zamanlı kuyruğundaki öğe sayısını sayar türü.|
-|`value_type`|Eş zamanlı kuyrukta depolanan veri türünü temsil eden tür.|
+|`allocator_type`|Eşzamanlı sıranın ayırıcı sınıfını temsil eden bir tür.|
+|`const_iterator`|Eşzamanlı bir kuyruktaki öğeler üzerinde iş parçacığı güvenli olmayan `const` yineleyicisini temsil eden bir tür.|
+|`const_reference`|`const` işlemlerini okumak ve gerçekleştirmek için eşzamanlı bir kuyrukta depolanan `const` bir öğeye başvuru sağlayan bir tür.|
+|`difference_type`|Eşzamanlı bir kuyruktaki iki öğe arasındaki işaretli mesafeyi sağlayan bir tür.|
+|`iterator`|Eşzamanlı bir kuyruktaki öğeler üzerinde iş parçacığı olmayan güvenli bir yineleyiciyi temsil eden bir tür.|
+|`reference`|Eşzamanlı sırada depolanan bir öğeye başvuru sağlayan bir tür.|
+|`size_type`|Eşzamanlı bir kuyruktaki öğelerin sayısını sayan bir tür.|
+|`value_type`|Eşzamanlı sırada depolanan veri türünü temsil eden bir tür.|
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[concurrent_queue](#ctor)|Fazla Yüklendi. Eş zamanlı bir kuyruk oluşturur.|
-|[~concurrent_queue Destructor](#dtor)|Eşzamanlı kuyruk yok eder.|
+|[concurrent_queue](#ctor)|Aşırı yüklendi. Eşzamanlı bir kuyruk oluşturur.|
+|[~concurrent_queue Destructor](#dtor)|Eşzamanlı kuyruğu yok eder.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[Temizle](#clear)|Tüm yok etme eşzamanlı kuyruk temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlı güvenli değil.|
-|[boş](#empty)|Şu anda eş zamanlı sıranın boş olup olmadığını sınar, bu yöntem çağrılır. Bu yöntem eşzamanlı güvenlidir.|
-|[get_allocator](#get_allocator)|Eşzamanlı kuyruk oluşturmak için kullanılan ayırıcı bir kopyasını döndürür. Bu yöntem eşzamanlı güvenlidir.|
-|[push](#push)|Fazla Yüklendi. Kaybolmamasının tail uçta eşzamanlı Kuyruk öğesi. Bu yöntem eşzamanlı güvenlidir.|
-|[try_pop](#try_pop)|Sıradan bir öğe varsa dequeues. Bu yöntem eşzamanlı güvenlidir.|
-|[unsafe_begin](#unsafe_begin)|Fazla Yüklendi. Türü bir yineleyici döndüren `iterator` veya `const_iterator` eşzamanlı kuyruk başlangıcına. Bu yöntem eşzamanlı güvenli değil.|
-|[unsafe_end](#unsafe_end)|Fazla Yüklendi. Türü bir yineleyici döndüren `iterator` veya `const_iterator` sonuna kadar eşzamanlı kuyruk. Bu yöntem eşzamanlı güvenli değil.|
-|[unsafe_size](#unsafe_size)|Kuyrukta öğe sayısını döndürür. Bu yöntem eşzamanlı güvenli değil.|
+|[lediğiniz](#clear)|Şu anda sıraya alınmış öğelerin yok edilirken, eşzamanlı kuyruğu temizler. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[empty](#empty)|Bu yöntemin çağrıldığı anda eşzamanlı sıranın boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[get_allocator](#get_allocator)|Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[push](#push)|Aşırı yüklendi. Bir öğeyi, eşzamanlı sıranın kuyruklu sonuna kadar sıraya alın. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[try_pop](#try_pop)|Varsa, bir öğeyi kuyruktan kaldırır. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[unsafe_begin](#unsafe_begin)|Aşırı yüklendi. `iterator` veya `const_iterator`, eş zamanlı kuyruğun başına olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[unsafe_end](#unsafe_end)|Aşırı yüklendi. `iterator` veya `const_iterator` eş zamanlı sıranın sonuna kadar olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[unsafe_size](#unsafe_size)|Kuyruktaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
+Daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -87,21 +87,21 @@ Daha fazla bilgi için [paralel kapsayıcılar ve nesneler](../../../parallel/co
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concurrent_queue.h
+**Üst bilgi:** concurrent_queue. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="clear"></a> Temizle
+##  <a name="clear"></a>lediğiniz
 
-Tüm yok etme eşzamanlı kuyruk temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlı güvenli değil.
+Şu anda sıraya alınmış öğelerin yok edilirken, eşzamanlı kuyruğu temizler. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 void clear();
 ```
 
-##  <a name="ctor"></a> concurrent_queue
+##  <a name="ctor"></a>concurrent_queue
 
-Eş zamanlı bir kuyruk oluşturur.
+Eşzamanlı bir kuyruk oluşturur.
 
 ```
 explicit concurrent_queue(
@@ -123,43 +123,43 @@ concurrent_queue(_InputIterator _Begin,
 ### <a name="parameters"></a>Parametreler
 
 *_InputIterator*<br/>
-Bir aralıktaki değerleri belirten bir giriş yineleyici türü.
+Değer aralığını belirten giriş yineleyicisinin türü.
 
 *_Al*<br/>
 Bu nesneyle kullanılacak kaynak ayırıcı sınıfı.
 
 *_OtherQ*<br/>
-Kaynak `concurrent_queue` nesneyi kopyalama veya öğeleri buradan taşımak için.
+Öğeleri kopyalamak veya taşımak için kaynak `concurrent_queue` nesnesi.
 
 *_Begin*<br/>
 Kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*_Bitiş*<br/>
-Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+*_End*<br/>
+Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular ayırıcı nesnesini depolar `_Al` ve sırası başlatılamıyor.
+Tüm oluşturucular bir ayırıcı nesne `_Al` depolar ve sırayı başlatır.
 
-İlk Oluşturucu boş bir başlangıç kuyruk ve kullanılacak ayırıcı türünü açıkça belirtir.
+İlk Oluşturucu boş bir başlangıç kuyruğu belirtir ve açıkça kullanılacak ayırıcı türünü belirtir.
 
-İkinci oluşturucu eşzamanlı sırasının bir kopyasını belirtir `_OtherQ`.
+İkinci Oluşturucu `_OtherQ`eşzamanlı sıranın bir kopyasını belirtir.
 
-Üçüncü Oluşturucu, taşıma eşzamanlı kuyruğun belirtir `_OtherQ`.
+Üçüncü Oluşturucu, eşzamanlı sıranın `_OtherQ`bir hareketini belirtir.
 
-Dördüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirler [ `_Begin`, `_End`).
+Dördüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirtir [`_Begin`, `_End`).
 
-##  <a name="dtor"></a> ~ concurrent_queue
+##  <a name="dtor"></a>~ concurrent_queue
 
-Eşzamanlı kuyruk yok eder.
+Eşzamanlı kuyruğu yok eder.
 
 ```
 ~concurrent_queue();
 ```
 
-##  <a name="empty"></a> boş
+##  <a name="empty"></a>olmamalıdır
 
-Şu anda eş zamanlı sıranın boş olup olmadığını sınar, bu yöntem çağrılır. Bu yöntem eşzamanlı güvenlidir.
+Bu yöntemin çağrıldığı anda eşzamanlı sıranın boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 bool empty() const;
@@ -167,15 +167,15 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** eşzamanlı kuyruk incelemiştik, şu anda boşsa **false** Aksi takdirde.
+baktığımız anda eşzamanlı sıra boşsa **doğru** , aksi takdirde **yanlış** olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem eşzamanlı güvenli olsa da bu yöntemlere yapılan çağrılar göre `push`, `try_pop`, ve `empty`, onu çağıran iş parçacığı tarafından denetlenmekte zaman tarafından döndürülen değer yanlış olabilir.
+Bu yöntem, `push`, `try_pop`ve `empty`yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvende olsa da döndürülen değer, çağıran iş parçacığı tarafından incelenen zaman hatalı olabilir.
 
-##  <a name="get_allocator"></a> get_allocator
+##  <a name="get_allocator"></a>get_allocator
 
-Eşzamanlı kuyruk oluşturmak için kullanılan ayırıcı bir kopyasını döndürür. Bu yöntem eşzamanlı güvenlidir.
+Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 allocator_type get_allocator() const;
@@ -183,11 +183,11 @@ allocator_type get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşzamanlı kuyruk oluşturmak için kullanılan ayırıcı bir kopyası.
+Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcıın bir kopyası.
 
-##  <a name="push"></a> anında iletme
+##  <a name="push"></a>hareketle
 
-Kaybolmamasının tail uçta eşzamanlı Kuyruk öğesi. Bu yöntem eşzamanlı güvenlidir.
+Bir öğeyi, eşzamanlı sıranın kuyruklu sonuna kadar sıraya alın. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 void push(const T& _Src);
@@ -198,15 +198,15 @@ void push(T&& _Src);
 ### <a name="parameters"></a>Parametreler
 
 *_Src*<br/>
-Kuyruğa eklenecek öğe.
+Sıraya eklenecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`push` eşzamanlı güvenlidir yöntemlere yapılan çağrılar göre `push`, `try_pop`, ve `empty`.
+`push`, `push`, `try_pop`ve `empty`yöntemlere yönelik çağrılara göre eşzamanlılık açısından güvenlidir.
 
-##  <a name="try_pop"></a> try_pop
+##  <a name="try_pop"></a>try_pop
 
-Sıradan bir öğe varsa dequeues. Bu yöntem eşzamanlı güvenlidir.
+Varsa, bir öğeyi kuyruktan kaldırır. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 bool try_pop(T& _Dest);
@@ -215,21 +215,21 @@ bool try_pop(T& _Dest);
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Dequeued öğe depolamak için bir konum bir başvuru.
+Kuyruğa atılmış öğeyi depolamak için bir konuma başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** öğeyi başarıyla dequeued olduysa **false** Aksi takdirde.
+bir öğe başarıyla kuyruğa alınmışsa **true** , aksi takdirde **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe başarıyla dequeued olduysa parametresi `_Dest` dequeued değerini alır kuyrukta tutulan özgün değeri yok ve bu işlevi döndürür **true**. Olup olmadığını sıradan bir öğe yok, bu işlevi döndürür `false` engelleme ve içeriğini olmadan `_Dest` parametre tanımlanmamış.
+Bir öğe başarıyla kuyruğa alınmışsa, parametre `_Dest` sıraya alınmış değeri alır, kuyrukta tutulan özgün değer yok edilir ve bu işlev **true**değerini döndürür. Sıradan çıkarma için bir öğe yoksa, bu işlev engellenmeden `false` döndürür ve `_Dest` parametresinin içeriği tanımsızdır.
 
-`try_pop` eşzamanlı güvenlidir yöntemlere yapılan çağrılar göre `push`, `try_pop`, ve `empty`.
+`try_pop`, `push`, `try_pop`ve `empty`yöntemlere yönelik çağrılara göre eşzamanlılık açısından güvenlidir.
 
-##  <a name="unsafe_begin"></a> unsafe_begin
+##  <a name="unsafe_begin"></a>unsafe_begin
 
-Türü bir yineleyici döndüren `iterator` veya `const_iterator` eşzamanlı kuyruk başlangıcına. Bu yöntem eşzamanlı güvenli değil.
+`iterator` veya `const_iterator`, eş zamanlı kuyruğun başına olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 iterator unsafe_begin();
@@ -239,15 +239,15 @@ const_iterator unsafe_begin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir yineleyici türünün `iterator` veya `const_iterator` başına eşzamanlı sıra nesnesi.
+`iterator` veya `const_iterator` eş zamanlı sıra nesnesinin başlangıcına kadar bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyiciler için `concurrent_queue` sınıfı öncelikle yöneliktir, hata ayıklama için bunlar yavaş ve yineleme diğer kuyruk işlemleri gerçekleştireceğini eşzamanlı güvenli değil.
+`concurrent_queue` sınıfı için yineleyiciler öncelikle hata ayıklama için tasarlanmıştır, yavaş olur ve yineleme diğer kuyruk işlemlerine göre eşzamanlılık açısından güvenli değildir.
 
-##  <a name="unsafe_end"></a> unsafe_end
+##  <a name="unsafe_end"></a>unsafe_end
 
-Türü bir yineleyici döndüren `iterator` veya `const_iterator` sonuna kadar eşzamanlı kuyruk. Bu yöntem eşzamanlı güvenli değil.
+`iterator` veya `const_iterator` eş zamanlı sıranın sonuna kadar olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 iterator unsafe_end();
@@ -257,15 +257,15 @@ const_iterator unsafe_end() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir yineleyici türünün `iterator` veya `const_iterator` sonuna kadar eşzamanlı kuyruk.
+Eşzamanlı sıranın sonuna `iterator` veya `const_iterator` türünde bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyiciler için `concurrent_queue` sınıfı öncelikle yöneliktir, hata ayıklama için bunlar yavaş ve yineleme diğer kuyruk işlemleri gerçekleştireceğini eşzamanlı güvenli değil.
+`concurrent_queue` sınıfı için yineleyiciler öncelikle hata ayıklama için tasarlanmıştır, yavaş olur ve yineleme diğer kuyruk işlemlerine göre eşzamanlılık açısından güvenli değildir.
 
-##  <a name="unsafe_size"></a> unsafe_size
+##  <a name="unsafe_size"></a>unsafe_size
 
-Kuyrukta öğe sayısını döndürür. Bu yöntem eşzamanlı güvenli değil.
+Kuyruktaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 size_type unsafe_size() const;
@@ -273,11 +273,11 @@ size_type unsafe_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşzamanlı kuyruk boyutu.
+Eşzamanlı sıranın boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`unsafe_size` Eşzamanlılık açısından güvenli değildir ve yöntemlere yapılan çağrılar eşzamanlı çağrılırsa hatalı sonuçlar üretebilir `push`, `try_pop`, ve `empty`.
+`unsafe_size` eşzamanlılık açısından güvenli değildir ve yöntemlere `push`, `try_pop`ve `empty`çağrılarıyla aynı anda çağrılırsa hatalı sonuçlar üretebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

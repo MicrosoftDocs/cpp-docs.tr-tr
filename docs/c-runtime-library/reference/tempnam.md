@@ -1,6 +1,6 @@
 ---
 title: tempnam
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - tempnam
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - tempnam function
 ms.assetid: 42446733-f131-470f-b4d0-96918becab11
-ms.openlocfilehash: c27ca2b55b9dbeff67ddba31b9b0ffc0384472e2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d4c7945b68a0cd8dd99fcf15e7484aad877c401d
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946217"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300332"
 ---
 # <a name="tempnam"></a>tempnam
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) kullanın.
+Microsoft tarafından uygulanan POSIX işlev adı `tempnam`, [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

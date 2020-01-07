@@ -1,6 +1,6 @@
 ---
-title: close
-ms.date: 11/04/2016
+title: kapat
+ms.date: 12/16/2019
 api_name:
 - close
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - close function
 ms.assetid: c79689f4-9c86-4a4a-a256-d22e3498f55d
-ms.openlocfilehash: 46fdacc3e97818ce9a1befd903a7da32ab42702a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1d3c02e3e2e015d0560b9ca70243f35c9f4a0888
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950927"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301229"
 ---
-# <a name="close"></a>close
+# <a name="close"></a>kapat
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_kapat](close.md) kullanın.
+Microsoft tarafından uygulanan POSIX işlev adı `close`, [_close](close.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_close](close.md) kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

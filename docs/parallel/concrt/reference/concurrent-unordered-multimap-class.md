@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_multimap class
 ms.assetid: 4dada5d7-15df-4382-b9c9-348e75b2f3c1
-ms.openlocfilehash: 446060656a79380f85d3faac560bd48910bfb2db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db4939d39c06a764ca73186e0be08ab4f8ecbcc1
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262768"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298603"
 ---
-# <a name="concurrentunorderedmultimap-class"></a>concurrent_unordered_multimap Sınıfı
+# <a name="concurrent_unordered_multimap-class"></a>concurrent_unordered_multimap Sınıfı
 
-`concurrent_unordered_multimap` Sınıfı, bir türdeki öğelerin değişen uzunluktaki dizisini denetleyen eşzamanlılığı güvenli bir kapsayıcıdır `std::pair<const K, _Element_type>`. Sıra, eşzamanlılık açısından güvenli sağlayan bir şekilde temsil edilir sona ekleme, öğe erişimi, yineleyici erişimi ve yineleyici çapraz geçiş işlemleri.
+`concurrent_unordered_multimap` sınıfı, `std::pair<const K, _Element_type>`türündeki çeşitli uzunluktaki öğeleri denetleyen eşzamanlılık açısından güvenli bir kapsayıcıdır. Dizi eşzamanlılık açısından güvenli ekleme, öğe erişimi, yineleyici erişimi ve yineleyici çapraz geçiş işlemlerine olanak sağlayan bir şekilde temsil edilir. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,13 +60,13 @@ Karma işlev nesne türü. Bu bağımsız değişken isteğe bağlıdır ve vars
 Eşitlik karşılaştırma işlevi nesne türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::equal_to<K>`.
 
 *_Allocator_type*<br/>
-Ayırma ve eşzamanlı vektör için bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::allocator<std::pair<K`, `_Element_type>>`.
+Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::allocator<std::pair<K`, `_Element_type>>`.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`allocator_type`|Depolamayı yönetmek için bir ayırıcı türü.|
 |`const_iterator`|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -85,31 +85,31 @@ Ayırma ve eşzamanlı vektör için bellek ayırmayı kaldırma hakkındaki ayr
 |`size_type`|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |`value_type`|Öğenin türü.|
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[concurrent_unordered_multimap](#ctor)|Fazla Yüklendi. Bir eş zamanlı sıralanmamış birden çok eşleme oluşturur.|
+|[concurrent_unordered_multimap](#ctor)|Aşırı yüklendi. Eşzamanlı bir sıralanmamış multimap oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[hash_function](#hash_function)|Depolanan karma işlevi nesnesini döndürür.|
-|[insert](#insert)|Fazla Yüklendi. Öğeler ekler `concurrent_unordered_multimap` nesne.|
+|[ekleyin](#insert)|Aşırı yüklendi. `concurrent_unordered_multimap` nesnesine öğe ekler.|
 |[key_eq](#key_eq)|Depolanan eşitlik karşılaştırma işlevi nesnesini döndürür.|
-|[değiştirme](#swap)|İki içeriğini değiştirir `concurrent_unordered_multimap` nesneleri. Bu yöntem eşzamanlı güvenli değil.|
-|[unsafe_erase](#unsafe_erase)|Fazla Yüklendi. Öğeleri kaldırır `concurrent_unordered_multimap` belirtilen konumlarda. Bu yöntem eşzamanlı güvenli değil.|
+|[Kur](#swap)|İki `concurrent_unordered_multimap` nesnesinin içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[unsafe_erase](#unsafe_erase)|Aşırı yüklendi. Belirtilen konumlarda `concurrent_unordered_multimap` öğeleri kaldırır. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[operator=](#operator_eq)|Fazla Yüklendi. Başka bir deponun içeriğini atar `concurrent_unordered_multimap` buna nesne. Bu yöntem eşzamanlı güvenli değil.|
+|[operator=](#operator_eq)|Aşırı yüklendi. Başka bir `concurrent_unordered_multimap` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hakkında ayrıntılı bilgi için `concurrent_unordered_multimap` sınıfı [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
+`concurrent_unordered_multimap` sınıfı hakkında ayrıntılı bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -121,13 +121,13 @@ Hakkında ayrıntılı bilgi için `concurrent_unordered_multimap` sınıfı [pa
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concurrent_unordered_map.h
+**Üst bilgi:** concurrent_unordered_map. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="begin"></a> başlayın
+##  <a name="begin"></a>başladı
 
-Eş zamanlı kapsayıcıdaki ilk öğeyi gösteren bir yineleyici döndürür. Eşzamanlılık güvenli yöntemdir.
+Eşzamanlı kapsayıcıdaki ilk öğeyi gösteren bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 iterator begin();
@@ -137,11 +137,11 @@ const_iterator begin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eş zamanlı kapsayıcıdaki ilk öğeye bir yineleyici.
+Eşzamanlı kapsayıcıdaki ilk öğe için bir yineleyici.
 
-##  <a name="cbegin"></a> cbegin
+##  <a name="cbegin"></a>cbegin
 
-Eş zamanlı kapsayıcıdaki ilk öğeyi gösteren sabit bir yineleyici döndürür. Eşzamanlılık güvenli yöntemdir.
+Eşzamanlı kapsayıcıdaki ilk öğeyi gösteren bir const yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 const_iterator cbegin() const;
@@ -149,11 +149,11 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eş zamanlı kapsayıcıdaki ilk öğe için sabit bir yineleyici.
+Eşzamanlı kapsayıcıdaki ilk öğe için bir const yineleyici.
 
-##  <a name="cend"></a> cend
+##  <a name="cend"></a>cend
 
-Eş zamanlı kapsayıcıdaki son öğeyi takip eden konumu gösteren sabit bir yineleyici döndürür. Eşzamanlılık güvenli yöntemdir.
+Eşzamanlı kapsayıcıda son öğeden sonraki konuma işaret eden bir const yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 const_iterator cend() const;
@@ -161,19 +161,19 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Konumu eşzamanlı kapsayıcıdaki son öğeyi adresleyen bir const yineleyici.
+Eşzamanlı kapsayıcıda son öğeden sonraki konuma bir const yineleyici.
 
-##  <a name="clear"></a> Temizle
+##  <a name="clear"></a>lediğiniz
 
-Eş zamanlı kapsayıcıdaki tüm öğelerini siler. Bu işlev, eşzamanlılık güvenli değil.
+Eş zamanlı kapsayıcıdaki tüm öğeleri siler. Bu işlev eşzamanlılık açısından güvenli değildir.
 
 ```
 void clear();
 ```
 
-##  <a name="ctor"></a> concurrent_unordered_multimap
+##  <a name="ctor"></a>concurrent_unordered_multimap
 
-Bir eş zamanlı sıralanmamış birden çok eşleme oluşturur.
+Eşzamanlı bir sıralanmamış multimap oluşturur.
 
 ```
 explicit concurrent_unordered_multimap(
@@ -210,43 +210,43 @@ concurrent_unordered_multimap(
 Giriş yineleyicisinin türü.
 
 *_Number_of_buckets*<br/>
-Sıralanmamış birden çok Bu eşleme için demet ilk sayısı.
+Bu sıralanmamış multimap için ilk Demet sayısı.
 
 *_Hasher*<br/>
-Sıralanmamış birden çok Bu eşleme için karma işlevi.
+Bu sıralanmamış multimap için karma işlevi.
 
 *key_equality*<br/>
-Sıralanmamış birden çok Bu eşleme için eşitlik karşılaştırma işlevi.
+Bu sıralanmamış multimap için eşitlik karşılaştırma işlevi.
 
 *_Allocator*<br/>
-Sıralanmamış birden çok Bu eşleme için ayırıcı.
+Bu sıralanmamış multimap için ayırıcı.
 
 *_Begin*<br/>
 Kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*_Bitiş*<br/>
-Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+*_End*<br/>
+Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
 
 *_Umap*<br/>
-Kaynak `concurrent_unordered_multimap` öğelerden kopyalanacak nesne.
+Öğelerin kopyalanacağı kaynak `concurrent_unordered_multimap` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular ayırıcı nesnesini depolar `_Allocator` ve sırasız multimap başlatır.
+Tüm oluşturucular bir ayırıcı nesne `_Allocator` depolar ve sıralanmamış multimap 'i başlatır.
 
-İlk Oluşturucu boş bir başlangıç multimap ve açıkça demet sayısını karma işlevi, eşitlik işlevi ve ayırıcı türü kullanılmak üzere belirtir.
+İlk Oluşturucu boş bir ilk multimap belirtir ve kullanılacak demet sayısını, karma işlevi, eşitlik işlevini ve ayırıcı türünü belirtir.
 
-İkinci oluşturucu bir ayırıcı sıralanmamış birden çok eşleme için belirtir.
+İkinci Oluşturucu, sıralanmamış multimap için bir ayırıcı belirtir.
 
-Üçüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirler [ `_Begin`, `_End`).
+Üçüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirtir [`_Begin`, `_End`).
 
-Dördüncü ve beşinci oluşturucular bir kopyasını eş zamanlı sıralanmamış birden çok eşleme belirtin `_Umap`.
+Dördüncü ve beşinci oluşturucular, eşzamanlı sıralanmamış multimap `_Umap`bir kopyasını belirtir.
 
-Son Oluşturucu eş zamanlı sıralanmamış birden çok eşleme taşıma belirtir `_Umap`.
+Son Oluşturucu, eşzamanlı sıralanmamış multimap `_Umap`taşımayı belirtir.
 
-##  <a name="count"></a> Sayısı
+##  <a name="count"></a>biriktirme
 
-Belirtilen bir anahtarla eşleşen öğeleri sayar. Bu işlev, eşzamanlılık güvenli kullanılır.
+Belirtilen bir anahtarla eşleşen öğelerin sayısını sayar. Bu işlev eşzamanlılık açısından güvenlidir.
 
 ```
 size_type count(const key_type& KVal) const;
@@ -259,11 +259,11 @@ Aranacak anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar kapsayıcısında görünür sayısı çarpı.
+Anahtarın kapsayıcıda kaç kez göründüğüne ilişkin sayı.
 
-##  <a name="empty"></a> boş
+##  <a name="empty"></a>olmamalıdır
 
-Bir öğe olup olmadığını sınar. Eşzamanlılık güvenli yöntemdir.
+Bir öğe olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 bool empty() const;
@@ -271,15 +271,15 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** eşzamanlı kapsayıcı boşsa, **false** Aksi takdirde.
+eşzamanlı kapsayıcı boş ise **true** , aksi takdirde **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eş zamanlı ekler saklanacaktır olup olmadığını eşzamanlı kapsayıcı boşsa, dönüş değeri bile okumadan önce hemen bu işlev çağrıldıktan sonra değişebilir.
+Eşzamanlı bir ekleme olması durumunda, eşzamanlı kapsayıcının boş olup olmadığı, dönüş değeri eşit bir şekilde okunmadan önce bu işlev çağrıldıktan hemen sonra değişebilir.
 
-##  <a name="end"></a> Son
+##  <a name="end"></a>erer
 
-Eş zamanlı kapsayıcıdaki son öğeyi takip eden konumu gösteren bir yineleyici döndürür. Eşzamanlılık güvenli yöntemdir.
+Eşzamanlı kapsayıcıda son öğeden sonraki konumu gösteren bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 iterator end();
@@ -289,11 +289,11 @@ const_iterator end() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Konumu eşzamanlı kapsayıcıdaki son öğeyi adresleyen bir yineleyici.
+Eşzamanlı kapsayıcıda son öğeden sonraki konuma bir yineleyici.
 
-##  <a name="equal_range"></a> equal_range
+##  <a name="equal_range"></a>equal_range
 
-Belirtilen anahtarla eşleşen aralığı bulur. Bu işlev, eşzamanlılık güvenli kullanılır.
+Belirtilen anahtarla eşleşen bir Aralık bulur. Bu işlev eşzamanlılık açısından güvenlidir.
 
 ```
 std::pair<iterator,
@@ -312,15 +312,15 @@ Aranacak anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [çifti](../../../standard-library/pair-structure.md) burada bir yineleyici başına ilk öğesidir ve aralığın sonuna bir yineleyici ikinci öğedir.
+İlk öğenin bir yineleyici olduğu bir [çift](../../../standard-library/pair-structure.md) ve ikinci öğe aralığın sonundaki bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eş zamanlı ekler başlangıç yineleyici sonra ve end yineleyici önce eklenecek ek anahtarlar neden mümkündür.
+Başlangıç yineleyicisinin ve bitiş yineleyicisinin öncesinde ek anahtarların eklenmesine neden olacak şekilde, eşzamanlı ekleme yapılabilir.
 
-##  <a name="find"></a> Bul
+##  <a name="find"></a>bilgi
 
-Belirtilen bir anahtarla eşleşen bir öğeyi bulur. Bu işlev, eşzamanlılık güvenli kullanılır.
+Belirtilen bir anahtarla eşleşen bir öğeyi bulur. Bu işlev eşzamanlılık açısından güvenlidir.
 
 ```
 iterator find(const key_type& KVal);
@@ -335,11 +335,11 @@ Aranacak anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sağlanan anahtar eşleşen ilk öğenin konumu gösteren bir yineleyici veya yineleyici `end()` böyle bir öğe varsa.
+Belirtilen anahtarla eşleşen ilk öğenin konumunu gösteren bir yineleyici veya böyle bir öğe yoksa Yineleyici `end()`.
 
-##  <a name="get_allocator"></a> get_allocator
+##  <a name="get_allocator"></a>get_allocator
 
-Bu eşzamanlı kapsayıcısı için saklı ayırıcı nesnesini döndürür. Eşzamanlılık güvenli yöntemdir.
+Bu eşzamanlı kapsayıcı için depolanan ayırıcı nesnesini döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 allocator_type get_allocator() const;
@@ -347,9 +347,9 @@ allocator_type get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu eşzamanlı kapsayıcısı için saklı ayırıcı nesnesini.
+Bu eşzamanlı kapsayıcı için depolanan ayırıcı nesne.
 
-##  <a name="hash_function"></a> hash_function
+##  <a name="hash_function"></a>hash_function
 
 Depolanan karma işlevi nesnesini döndürür.
 
@@ -361,9 +361,9 @@ hasher hash_function() const;
 
 Depolanan karma işlev nesnesi.
 
-##  <a name="insert"></a> Ekle
+##  <a name="insert"></a>ekleyin
 
-Öğeler ekler `concurrent_unordered_multimap` nesne.
+`concurrent_unordered_multimap` nesnesine öğe ekler.
 
 ```
 iterator insert(
@@ -392,10 +392,10 @@ typename std::enable_if<!std::is_same<const_iterator,
 ### <a name="parameters"></a>Parametreler
 
 *_Iterator*<br/>
-Ekleme için kullanılan yineleyici türü.
+Ekleme için kullanılan Yineleyici türü.
 
 *V*<br/>
-Eşlemeye eklenen değerin türü.
+Haritaya yerleştirilen değerin türü.
 
 *value*<br/>
 Eklenecek değer.
@@ -403,27 +403,27 @@ Eklenecek değer.
 *_Where*<br/>
 Bir ekleme noktasını aramak için başlangıç konumu.
 
-*ilk*<br/>
-Eklenecek Aralık başlangıcı.
+*first*<br/>
+Eklenecek aralığın başlangıcı.
 
-*Son*<br/>
-Eklenecek aralık sonu.
+*last*<br/>
+Eklenecek aralığın sonu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ekleme konumu gösteren bir yineleyici.
+Ekleme konumunu gösteren bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesi ilk üye işlevi ekler `value` denetlenen dizide daha sonra eklenen öğeyi gösteren bir yineleyici döndürür.
+İlk üye işlevi, öğe `value` denetimli sırayla ekler ve eklenen öğeyi atayan yineleyiciyi döndürür.
 
-İkinci üye işlevi ekleme döndürür ( `value`) kullanarak `_Where` ekleme noktasını aramak için denetlenen bir dizi içinde bir başlangıç noktası olarak.
+İkinci üye işlevi, ekleme noktasını aramak için denetimli dizi içinde bir başlangıç yeri olarak `_Where` kullanarak Insert (`value`) döndürür.
 
-Üçüncü üye işlevi aralıktan öğe değerleri dizisi ekler [ `first`, `last`).
+Üçüncü üye işlevi öğe değerlerinin dizisini [`first`, `last`) aralığından ekler.
 
-Son iki üye işlevleri ilk ikisi, tek fark olarak aynı şekilde davranır `value` eklenen değer oluşturmak için kullanılır.
+Son iki üye işlevi, eklenen değeri oluşturmak için `value` kullanılması dışında, ilk ikisi ile aynı şekilde davranır.
 
-##  <a name="key_eq"></a> key_eq
+##  <a name="key_eq"></a>key_eq
 
 Depolanan eşitlik karşılaştırma işlevi nesnesini döndürür.
 
@@ -435,9 +435,9 @@ key_equal key_eq() const;
 
 Depolanan eşitlik karşılaştırma işlevi nesnesi.
 
-##  <a name="load_factor"></a> load_factor
+##  <a name="load_factor"></a>load_factor
 
-Hesaplar ve kapsayıcının geçerli yük faktörünü döndürür. Yük, demet sayısına göre bölünmüş kapsayıcı içindeki öğelerin sayısını faktördür.
+Kapsayıcının geçerli yük faktörünü hesaplar ve döndürür. Yük faktörü, kapsayıcıda demet sayısına bölünen öğe sayısıdır.
 
 ```
 float load_factor() const;
@@ -445,11 +445,11 @@ float load_factor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcının yükü faktörü.
+Kapsayıcının yük faktörü.
 
 ##  <a name="max_load_factor"></a> max_load_factor
 
-Alır veya kapsayıcının en yüksek yük faktörünün ayarlar. En yüksek yük faktörünün en büyük öğeleri herhangi bir kovada kapsayıcı kendi iç tablo büyüdükçe önce fazla sayısıdır.
+Kapsayıcının maksimum yük faktörünü alır veya ayarlar. En fazla yük faktörü, kapsayıcının iç tablosunu büyütmadan önce herhangi bir demet içinde olabilecek en fazla öğe sayısıdır.
 
 ```
 float max_load_factor() const;
@@ -463,11 +463,11 @@ void max_load_factor(float _Newmax);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlevi, depolanan en yüksek yük faktörünün döndürür. İkinci üye işlevi bir değer döndürmez ama oluşturur bir [out_of_range](../../../standard-library/out-of-range-class.md) sağlanan yük faktörünü geçersiz olduğunda özel durum...
+İlk üye işlevi, depolanan en fazla yük faktörünü döndürür. İkinci üye işlevi bir değer döndürmüyor, ancak sağlanan yük faktörü geçersiz ise [out_of_range](../../../standard-library/out-of-range-class.md) bir özel durum atar.
 
-##  <a name="max_size"></a> max_size
+##  <a name="max_size"></a>max_size
 
-Ayırıcı tarafından belirlenen eş zamanlı kapsayıcısı en büyük boyutunu döndürür. Eşzamanlılık güvenli yöntemdir.
+Ayırıcı tarafından belirlenen eşzamanlı kapsayıcının maksimum boyutunu döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 size_type max_size() const;
@@ -475,15 +475,15 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En fazla eş zamanlı bu kapsayıcıya eklenen öğe sayısı.
+Bu eşzamanlı kapsayıcıya eklenebilecek en fazla öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üst sınır değeri gerçekten ne kapsayıcı gerçekten tutabilir daha yüksek olabilir.
+Bu üst sınır değeri, kapsayıcının gerçekten tutabileceğinden daha yüksek olabilir.
 
-##  <a name="operator_eq"></a> işleç =
+##  <a name="operator_eq"></a>işleç =
 
-Başka bir deponun içeriğini atar `concurrent_unordered_multimap` buna nesne. Bu yöntem eşzamanlı güvenli değil.
+Başka bir `concurrent_unordered_multimap` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 concurrent_unordered_multimap& operator= (const concurrent_unordered_multimap& _Umap);
@@ -494,17 +494,17 @@ concurrent_unordered_multimap& operator= (concurrent_unordered_multimap&& _Umap)
 ### <a name="parameters"></a>Parametreler
 
 *_Umap*<br/>
-Kaynak `concurrent_unordered_multimap` nesne.
+Kaynak `concurrent_unordered_multimap` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu başvuru `concurrent_unordered_multimap` nesne.
+Bu `concurrent_unordered_multimap` nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eş zamanlı sıralanmamış birden çok eşleme var olan öğeleri silme sonra `operator=` kopyalar veya içeriğini hareket `_Umap` içine eş zamanlı sıralanmamış birden çok eşleme.
+Eşzamanlı bir sıralanmamış multimap içindeki var olan öğeleri sildikten sonra, `_Umap` içeriğini kopyalar veya aynı anda sıralanmamış multimap içine taşılardır `operator=`.
 
-##  <a name="rehash"></a> rehash
+##  <a name="rehash"></a>rehash
 
 Karma tabloyu yeniden oluşturur.
 
@@ -519,13 +519,13 @@ void rehash(size_type _Buckets);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi en az olacak şekilde demet sayısını değiştirir `_Buckets` ve gerektiğinde karma tabloyu yeniden oluşturur. Demet sayısı 2'in üssü olmalıdır. 2'in kuvveti değil ise 2 sonraki en büyük gücünü yuvarlanır.
+Üye işlevi, demetlerin sayısını en az `_Buckets` olarak değiştirir ve gerekirse karma tabloyu yeniden oluşturur. Demetlerin sayısı 2 ' nin üssü olmalıdır. 2 ' nin üssü yoksa, 2 ' nin bir sonraki en büyük kuvvetinin yuvarlanmasını sağlar.
 
-Atar bir [out_of_range](../../../standard-library/out-of-range-class.md) demet sayısı geçersiz özel durum (0 veya en yüksek demet sayısını büyüktür).
+Demet sayısı geçersizse (0 veya maksimum demet sayısından büyükse) [out_of_range](../../../standard-library/out-of-range-class.md) bir özel durum oluşturur.
 
-##  <a name="size"></a> Boyutu
+##  <a name="size"></a>boyutla
 
-Bu eşzamanlı bir kapsayıcı içinde öğelerin sayısını döndürür. Eşzamanlılık güvenli yöntemdir.
+Bu eşzamanlı kapsayıcıdaki öğelerin sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
 ```
 size_type size() const;
@@ -537,11 +537,11 @@ Kapsayıcıdaki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eş zamanlı eklemeleri varsa, dönüş değeri bile okumadan önce hemen bu işlev çağrıldıktan sonra eş zamanlı kapsayıcıdaki öğelerin sayısı değişebilir.
+Eşzamanlı bir ekleme durumunda, dönüş değeri eşit bir şekilde okunmadan önce, eşzamanlı kapsayıcıdaki öğelerin sayısı bu işlev çağrıldıktan hemen sonra değiştirilebilir.
 
-##  <a name="swap"></a> değiştirme
+##  <a name="swap"></a>Kur
 
-İki içeriğini değiştirir `concurrent_unordered_multimap` nesneleri. Bu yöntem eşzamanlı güvenli değil.
+İki `concurrent_unordered_multimap` nesnesinin içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 void swap(concurrent_unordered_multimap& _Umap);
@@ -550,9 +550,9 @@ void swap(concurrent_unordered_multimap& _Umap);
 ### <a name="parameters"></a>Parametreler
 
 *_Umap*<br/>
-`concurrent_unordered_multimap` İle değiştirilecek nesne.
+İle takas edilecek `concurrent_unordered_multimap` nesnesi.
 
-##  <a name="unsafe_begin"></a> unsafe_begin
+##  <a name="unsafe_begin"></a>unsafe_begin
 
 Belirli bir demet için bu kapsayıcıdaki ilk öğeye bir yineleyici döndürür.
 
@@ -569,11 +569,11 @@ Demet dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Demet başlangıcına işaret eden bir yineleyici.
+Demet başlangıcını işaret eden bir yineleyici.
 
-##  <a name="unsafe_bucket"></a> unsafe_bucket
+##  <a name="unsafe_bucket"></a>unsafe_bucket
 
-Bu kapsayıcı içinde belirli bir anahtarın eşlendiği demet dizinini döndürür.
+Bu kapsayıcıda, belirli bir anahtarın eşlendiği demet dizinini döndürür.
 
 ```
 size_type unsafe_bucket(const key_type& KVal) const;
@@ -586,11 +586,11 @@ Aranan öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu kapsayıcıda anahtarı için demet dizini.
+Bu kapsayıcıdaki anahtar için demet dizini.
 
-##  <a name="unsafe_bucket_count"></a> unsafe_bucket_count
+##  <a name="unsafe_bucket_count"></a>unsafe_bucket_count
 
-Bu kapsayıcıda geçerli demet sayısını döndürür.
+Bu kapsayıcıdaki geçerli demet sayısını döndürür.
 
 ```
 size_type unsafe_bucket_count() const;
@@ -598,11 +598,11 @@ size_type unsafe_bucket_count() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu kapsayıcı demet sayısı.
+Bu kapsayıcıdaki geçerli demet sayısı.
 
-##  <a name="unsafe_bucket_size"></a> unsafe_bucket_size
+##  <a name="unsafe_bucket_size"></a>unsafe_bucket_size
 
-Bu kapsayıcının belirli bir kovada öğe sayısını döndürür.
+Bu kapsayıcının belirli bir demetini içindeki öğelerin sayısını döndürür.
 
 ```
 size_type unsafe_bucket_size(size_type _Bucket);
@@ -611,13 +611,13 @@ size_type unsafe_bucket_size(size_type _Bucket);
 ### <a name="parameters"></a>Parametreler
 
 *_Bucket*<br/>
-Aramak için demet.
+Aranacak demet.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu kapsayıcı demet sayısı.
+Bu kapsayıcıdaki geçerli demet sayısı.
 
-##  <a name="unsafe_cbegin"></a> unsafe_cbegin
+##  <a name="unsafe_cbegin"></a>unsafe_cbegin
 
 Belirli bir demet için bu kapsayıcıdaki ilk öğeye bir yineleyici döndürür.
 
@@ -632,11 +632,11 @@ Demet dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Demet başlangıcına işaret eden bir yineleyici.
+Demet başlangıcını işaret eden bir yineleyici.
 
-##  <a name="unsafe_cend"></a> unsafe_cend
+##  <a name="unsafe_cend"></a>unsafe_cend
 
-Konumu belirli bir demet içindeki son öğeyi adresleyen bir yineleyici döndürür.
+Belirli bir demet içindeki son öğeden sonraki konuma bir yineleyici döndürür.
 
 ```
 const_local_iterator unsafe_cend(size_type _Bucket) const;
@@ -649,9 +649,9 @@ Demet dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Demet başlangıcına işaret eden bir yineleyici.
+Demet başlangıcını işaret eden bir yineleyici.
 
-##  <a name="unsafe_end"></a> unsafe_end
+##  <a name="unsafe_end"></a>unsafe_end
 
 Belirli bir demet için bu kapsayıcıdaki son öğeye bir yineleyici döndürür.
 
@@ -670,9 +670,9 @@ Demet dizini.
 
 Demet sonuna işaret eden bir yineleyici.
 
-##  <a name="unsafe_erase"></a> unsafe_erase
+##  <a name="unsafe_erase"></a>unsafe_erase
 
-Öğeleri kaldırır `concurrent_unordered_multimap` belirtilen konumlarda. Bu yöntem eşzamanlı güvenli değil.
+Belirtilen konumlarda `concurrent_unordered_multimap` öğeleri kaldırır. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
 ```
 iterator unsafe_erase(
@@ -689,28 +689,28 @@ iterator unsafe_erase(
 ### <a name="parameters"></a>Parametreler
 
 *_Where*<br/>
-Silmeye başlanacak yineleme konumu.
+Silinecek Yineleyici konumu.
 
 *KVal*<br/>
 Silinecek anahtar değer.
 
-*ilk*<br/>
-*Son*<br/>
+*first*<br/>
+*last*<br/>
 Yineleyiciler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlev kaldırılan tüm öğelerin ötesindeki ilk öğeyi belirleyen bir yineleyici döndürür veya `concurrent_unordered_multimap::end`böyle bir öğe mevcut değil ise. Üçüncü üye işlevi, kaldırdığı öğelerin sayısını döndürür.
+İlk iki üye işlevi, kaldırılan öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa `concurrent_unordered_multimap::end`(). Üçüncü üye işlevi, kaldıran öğe sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi tarafından denetlenen dizinin öğeyi kaldırır `_Where`. İkinci üye işlevi bir aralıktaki öğeleri kaldırır. [ `_Begin`, `_End`).
+İlk üye işlevi, `_Where`tarafından işaret edilen denetimli sıranın öğesini kaldırır. İkinci üye işlevi [`_Begin`, `_End`) aralığındaki öğeleri kaldırır.
 
-Üçüncü üye işlevi tarafından ayrılmış aralıktaki öğeleri kaldırır. `concurrent_unordered_multimap::equal_range`(KVal).
+Üçüncü üye işlevi, `concurrent_unordered_multimap::equal_range`(KVal) ile ayrılmış aralıktaki öğeleri kaldırır.
 
-##  <a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count
+##  <a name="unsafe_max_bucket_count"></a>unsafe_max_bucket_count
 
-Bu kapsayıcıda en yüksek demet sayısını döndürür.
+Bu kapsayıcıdaki en fazla demet sayısını döndürür.
 
 ```
 size_type unsafe_max_bucket_count() const;
@@ -718,7 +718,7 @@ size_type unsafe_max_bucket_count() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu kapsayıcı demet sayısı.
+Bu kapsayıcıdaki demet sayısı üst sınırı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

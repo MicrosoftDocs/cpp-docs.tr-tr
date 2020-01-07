@@ -6,30 +6,30 @@ helpviewer_keywords:
 - FLT_EPSILON constant
 - floating-point numbers, precision
 ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
-ms.openlocfilehash: 387b2f4a7156e42e59bd70c5a6f747943fb54ca7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 373ce9fa2c2c96fac349940076873a4a637a9dbe
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313590"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298720"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği
 
-Ondalık kayan nokta değerlerine tam bir ikili gösterim genellikle gerekmez. Bir yan etkisi, CPU kayan nokta verisi nasıl temsil ettiğini budur. Bu nedenle, karşılaşabileceğiniz bazı kesinlik kaybı ve bazı kayan nokta işlemleri beklenmeyen sonuçlara neden olabilir.
+Kayan nokta ondalık değerleri genellikle tam bir ikili gösterimine sahip değildir. Bu, CPU 'nun kayan nokta verilerini nasıl temsil ettiğini gösteren bir yan etkiye sahiptir. Bu nedenle, bazı duyarlık kaybı yaşayabilirsiniz ve bazı kayan nokta işlemleri beklenmedik sonuçlar verebilir.
 
-Bu davranış aşağıdakilerden birini sonucudur:
+Bu davranış, aşağıdakilerden birinin sonucudur:
 
-- Ondalık sayı ikili gösterimini tam olmayabilir.
+- Ondalık sayının ikili temsili tam değer olmayabilir.
 
-- Kullanılan sayılar arasında (örneğin, karıştırma float ve çift) tür uyuşmazlığı var.
+- Kullanılan sayılar arasında tür uyuşmazlığı var (örneğin, float ve Double karıştırma).
 
-Davranışını çözümlemek için çoğu programcılar ya da değer büyükse veya daha düşük gerekli olduğundan emin olun veya alın ve duyarlık tutacaktır bir ikili kodlanmış ondalık (BCD) kitaplığını kullanın.
+Bu davranışı çözümlemek için, çoğu programcı değerin gerekenden daha büyük veya daha az olduğundan emin olun ya da duyarlık sağlayacak Ikili kodlanmış bir ondalık (BCD) kitaplığı alır ve kullanır.
 
-Kayan nokta değerleri ikili gösterimini duyarlılık ve kayan nokta hesaplamalarının doğruluğunu etkiler. Microsoft Visual C++ kullanan [IEEE kayan nokta biçimi](ieee-floating-point-representation.md).
+Kayan nokta değerlerinin ikili temsili, kayan nokta hesaplamalarının duyarlığını ve doğruluğunu etkiler. Microsoft Visual C++ , [IEEE kayan nokta biçimini](ieee-floating-point-representation.md)kullanır.
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // Floating-point_number_precision.c
 // Compile options needed: none. Value of c is printed with a decimal
 // point precision of 10 and 6 (printf rounded value by default) to
@@ -60,7 +60,7 @@ They are not equal! The value of c is  2.4679999352 or 2.468000
 
 ## <a name="comments"></a>Açıklamalar
 
-EPSILON için kayan 1.192092896e olarak tanımlanan flt_epsılon sabitleri kullanın-07F, ya da çift 2.2204460492503131e olarak için tanımlanan dbl_epsılon-016. Bu sabitleri için float.h eklemeniz gerekir. Bu sabitler tanımlanan en küçük pozitif x sayı, söz konusu x + 1.0 1.0 eşit değil. Bu çok az sayıda olduğundan çok büyük sayılar içeren hesaplamalar için kullanıcı tanımlı dayanıklılık içermelidir.
+EPSILON için, 1.192092896 e-07F olarak float için tanımlanan FLT_EPSILON sabitleri veya Double olarak 2.2204460492503131 e-olarak tanımlanan DBL_EPSILON kullanabilirsiniz. Bu sabitler için float. h dahil etmeniz gerekir. Bu sabitler en küçük pozitif sayı olan x olarak tanımlanır, örneğin x + 1.0, 1,0 değerine eşit değildir. Bu çok küçük bir sayı olduğundan, çok büyük sayılar içeren hesaplamalar için Kullanıcı tanımlı tolerans yapmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

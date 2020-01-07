@@ -1,18 +1,18 @@
 ---
 title: ML Önemli Hatası A1007
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A1007
 helpviewer_keywords:
 - A1007
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf
-ms.openlocfilehash: 01633b4fa084b7d5e14af5a5c6e51e3dca684d2a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: c9527769e0d9397de90f49cbce98b2cca42bed50
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856923"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317129"
 ---
 # <a name="ml-fatal-error-a1007"></a>ML Önemli Hatası A1007
 
@@ -22,7 +22,7 @@ Derleyici, iç içe geçmiş sınırına ulaştı. Sınır, aksi belirtilmedikç
 
 Aşağıdakilerden biri çok derin iç içe geçmiş:
 
-- Gibi üst düzey bir yönerge [. Ise](../../assembler/masm/dot-if.md), [. Veya TEKRARLAYıN](../../assembler/masm/dot-repeat.md) [. WHILE](../../assembler/masm/dot-while.md).
+- Gibi üst düzey bir yönerge [. Ise](dot-if.md), [. Veya TEKRARLAYıN](dot-repeat.md) [. WHILE](dot-while.md).
 
 - Bir yapı tanımı.
 
@@ -30,7 +30,7 @@ Aşağıdakilerden biri çok derin iç içe geçmiş:
 
 - Bir yordam tanımı.
 
-- Bir [PushContext](../../assembler/masm/pushcontext.md) yönergesi (sınır 10 ' dur).
+- Bir [PushContext](pushcontext.md) yönergesi (sınır 10 ' dur).
 
 - Bir segment tanımı.
 
@@ -40,4 +40,4 @@ Aşağıdakilerden biri çok derin iç içe geçmiş:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Hata İletileri](ml-error-messages.md)

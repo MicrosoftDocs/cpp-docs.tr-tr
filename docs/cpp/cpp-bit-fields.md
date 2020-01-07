@@ -6,27 +6,27 @@ helpviewer_keywords:
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-ms.openlocfilehash: 747920378472cc091928a080e303a0543e287aaa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bba57d495553e9622fcece9d036fc4f6eff3fa04
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154730"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301606"
 ---
 # <a name="c-bit-fields"></a>C++ Bit Alanları
 
-Sınıflar ve yapılar, tamsayı türünden daha az depolama alanı kaplayan üyeler içerebilir. Bu üyeler bit alanları olarak belirtilir. Bit alanı sözdizimi *üye-Bildiricisi* belirtimi aşağıdadır:
+Sınıflar ve yapılar, tamsayı türünden daha az depolama alanı kaplayan üyeler içerebilir. Bu üyeler bit alanları olarak belirtilir. Bit alanı *üyesi-declarator* belirtiminin sözdizimi şöyledir:
 
 ## <a name="syntax"></a>Sözdizimi
 
-*bildirimci* **:** *sabit-ifade*
+*bildirimci* **:** *sabit ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-(İsteğe bağlı) *bildirimci* tarafından erişilen üyenin programda adıdır. Bu (numaralandırılmış türler dahil) bir tamsayı türü olmalıdır. *Sabit-ifade* yapı üyesi kapladığı yerin bit sayısını belirtir. Doldurmak için, adsız bit alanları (diğer bir deyişle, hiçbir tanımlayıcısı olmayan bit alanları) kullanılabilir.
+(İsteğe bağlı) *bildirimci* , üyenin programda erişildiği addır. Bu (numaralandırılmış türler dahil) bir tamsayı türü olmalıdır. *Sabit ifade* , üyenin yapıda kapladığı bit sayısını belirtir. Doldurmak için, adsız bit alanları (diğer bir deyişle, hiçbir tanımlayıcısı olmayan bit alanları) kullanılabilir.
 
 > [!NOTE]
-> Adlandırılmamış bir bit alanı genişliği 0'ın sonraki sıradaki bit alanını hizalamasını zorlar **türü** sınır, burada **türü** üyenin türüdür.
+> Bir genişlik 0 ' ın adlandırılmamış bir bit alanı, bir sonraki bit alanının bir sonraki **tür** sınırına hizalanmaya zorlar; burada **tür** üyenin türüdür.
 
 Aşağıdaki örnek bit alanlarını içeren bir yapıyı bildirir:
 
@@ -43,16 +43,16 @@ struct Date {
 
 `Date` türünde bir nesnenin kavramsal bellek düzeni aşağıdaki çizimde gösterilmiştir.
 
-![Bir tarih nesnesinin bellek düzeni](../cpp/media/vc38uq1.png "tarih nesnesinin bellek düzeni") <br/>
+![Tarih nesnesinin bellek düzeni](../cpp/media/vc38uq1.png "Tarih nesnesinin bellek düzeni") <br/>
 Tarih Nesnesinin Bellek Düzeni
 
-Unutmayın `nYear` 8 bit uzunluğunda olduğunu ve sözcük sınırının türü bildirilen taşma oluşturursunuz **işaretsiz** **kısa**. Bu nedenle, yeni bir başında başlamış **işaretsiz** **kısa**. Tüm bit alanlarının temel türün bir nesnesine sığmasına gerek yoktur; yeni depolama birimleri bildirimde istenen bit sayısına göre ayrılır.
+`nYear` 8 bit uzunluğunda olduğunu ve belirtilen tür, **işaretsiz** **Short**sözcük sınırını taşıyacağını unutmayın. Bu nedenle, yeni bir **işaretsiz** **Short**başlangıcında başlamış olur. Tüm bit alanlarının temel türün bir nesnesine sığmasına gerek yoktur; yeni depolama birimleri bildirimde istenen bit sayısına göre ayrılır.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
 Yukarıdaki şekilde gösterildiği gibi, bildirilen verilerin bit alanları olarak sıralanması düşük bitten yüksek bite doğrudur.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 Böyle bir yapının bildirimi, aşağıdaki örnekte gösterildiği gibi uzunluğu 0 olan adlandırılmamış bir alanı içeriyorsa,
 
@@ -68,22 +68,22 @@ struct Date {
 };
 ```
 
-bellek düzeni aşağıdaki şekilde gösterildiği gibi ise:
+ardından, bellek düzeni aşağıdaki şekilde gösterilmiştir:
 
-![Sıfır ile tarih nesnesinin düzeni&#45;uzunluklu bit alanı](../cpp/media/vc38uq2.png "tarihi Düzen nesnesi sıfır&#45;uzunluklu bit alanı") <br/>
+![Sıfır&#45;uzunlukta bit alanı olan tarih nesnesi düzeni](../cpp/media/vc38uq2.png "Sıfır&#45;uzunlukta bit alanı olan tarih nesnesi düzeni") <br/>
 Sıfır Uzunluklu Bit Alanı Olan Tarih Nesnesinin Düzeni
 
-Bir bit alanının temel türü bölümünde anlatıldığı gibi bir tamsayı türü olmalıdır [temel türler](../cpp/fundamental-types-cpp.md).
+Bir bit alanının temel alınan türü, [Yerleşik türler](../cpp/fundamental-types-cpp.md)bölümünde açıklandığı gibi bir integral türü olmalıdır.
 
-Varsa bir başvuru türü için Başlatıcı `const T&` türünün bir bit alanına başvuran bir lvalue değeridir `T`, başvuruyu bit alanı için doğrudan bağlı değil. Bunun yerine, başvuru bit alanının değerini tutmak için başlatılan bir geçici bağlıdır.
+`const T&` türündeki bir başvurunun başlatıcısı `T`türünde bir bit alanına başvuran bir lvalue ise, başvuru doğrudan bit alanına bağlanmaz. Bunun yerine, başvuru, bit alanının değerini tutmak için geçici olarak başlatılmış bir öğesine bağlanır.
 
-## <a name="restrictions-on-bit-fields"></a>Bit alanları kısıtlamaları
+## <a name="restrictions-on-bit-fields"></a>Bit alanları için kısıtlamalar
 
 Bit alanlarındaki hatalı işlemler aşağıdaki listede görülmektedir:
 
 - Bir bit alanı adresini alma.
 
-- Olmayan bir başlatma**const** bit alanı ile başvuru.
+- Bir bit alanıyla**const** olmayan bir başvuru başlatılıyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

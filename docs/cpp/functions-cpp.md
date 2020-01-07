@@ -8,16 +8,16 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-ms.openlocfilehash: aafd3be3b27fbe134b380a29083b4ca36177e702
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da30d647947e98146cd89f255c2e05991c1be562
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154140"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301515"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
-Başka bir işlem gerçekleştiren bir kod bloğunu bir işlevdir. Bir işlev bağımsız değişkenleri işleve geçirilecek çağıranlar sağlayan giriş parametreleri isteğe bağlı olarak tanımlayabilirsiniz. Bir işlev, isteğe bağlı olarak çıkış olarak bir değer döndürebilir. İşlevler, ideal olarak işlevin ne yaptığını açıkça tanımlayan bir ad ile tek bir yeniden kullanılabilir blok ortak işlemlerinde kapsüllemek için yararlıdır. Aşağıdaki işlev çağıran gelen iki tamsayı kabul eder ve toplamları döndürür; *bir* ve *b* olan *parametreleri* türü **int**.
+İşlev, bazı işlemleri gerçekleştiren bir kod bloğudur. Bir işlev isteğe bağlı olarak, çağrı yapanların işleve bağımsız değişkenleri geçmesini sağlayan giriş parametrelerini tanımlayabilir. Bir işlev, isteğe bağlı olarak bir değeri çıkış olarak döndürebilir. İşlevler, tek bir yeniden kullanılabilir blok içinde yaygın işlemleri kapsüllemek için faydalıdır ve bu, işlevin ne yaptığını açıkça açıklayan bir ad ile idealdir. Aşağıdaki işlev, bir çağıranın iki tamsayı kabul eder ve toplamlarını döndürür; *a* ve *b* , **int**türünde *parametrelerdir* .
 
 ```cpp
 int sum(int a, int b)
@@ -26,7 +26,7 @@ int sum(int a, int b)
 }
 ```
 
-İşlev çağrılabilir, veya *adlı*, program içinde herhangi bir dizi. İşleve geçirilen değerler *bağımsız değişkenleri*, eşleşen türleri işlev tanımında parametre türleri ile uyumlu olmalıdır.
+İşlev, programdaki herhangi bir sayıda konumdan çağrılabilir veya *çağrılabilir*. İşleve geçirilen değerler, türleri işlev tanımındaki parametre türleriyle uyumlu olması gereken *bağımsız değişkenlerdir*.
 
 ```cpp
 int main()
@@ -37,21 +37,21 @@ int main()
 }
 ```
 
-İşlev uzunluğu için pratik bir sınır yoktur ancak tek iyi tanımlanmış bir görevi gerçekleştirmek için işlevleri iyi tasarım amaçlar. Karmaşık algoritmalar anlaşılması kolay daha basit işlevlere mümkün olduğunca bölünmesi.
+İşlev uzunluğuna yönelik pratik bir sınır yoktur, ancak iyi tanımlanmış tek bir görev gerçekleştiren işlevler için iyi bir tasarım sağlar. Karmaşık algoritmalar mümkün olduğunda kolayca anlaşılması kolay bir işlevlere bölünmüştür.
 
-Sınıf kapsamında tanımlanan işlevleri, üye işlevleri olarak adlandırılır. C++'da, diğer dillerden farklı olarak, bir işlev de (örtük genel ad alanı dahil) ad alanı kapsamında tanımlanabilir. Bu işlevlerin çağrılma biçimini *işlevleri ücretsiz* veya *üye olmayan işlevleri*; standart kitaplıkta yaygın olarak kullanılır.
+Sınıf kapsamında tanımlı işlevlere üye işlevleri denir. ' C++De, diğer dillerin aksine, bir işlev ad alanı kapsamında da tanımlanabilir (örtük genel ad alanı dahil). Bu işlevler, *ücretsiz işlevler* veya *üye olmayan işlevler*olarak adlandırılır; Bunlar, standart kitaplıkta yaygın olarak kullanılırlar.
 
-İşlevler olabilir *aşırı*, numarası ve/veya biçimsel parametre türüne göre farklılık gösteriyorsa, bir işlevi farklı sürümlerini başka bir deyişle, aynı adı paylaşan. Daha fazla bilgi için [işlev aşırı yüklemesi](../cpp/function-overloading.md).
+İşlevler *aşırı yüklenmiş*olabilir, bu da bir işlevin farklı sürümlerinin, biçimsel parametrelerin sayısı ve/veya türü farklı olduğunda aynı adı paylaşabileceği anlamına gelir. Daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](../cpp/function-overloading.md).
 
-## <a name="parts-of-a-function-declaration"></a>Bir işlev bildirimi bölümleri
+## <a name="parts-of-a-function-declaration"></a>İşlev bildiriminin kısımları
 
-En az bir işlev *bildirimi* dönüş türü, işlev adı ve (boş olabilir) parametre listesi derleyici ek yönergeler sağlayan isteğe bağlı anahtar sözcük birlikte oluşur. Aşağıdaki örnek bir işlev bildirimi şu şekildedir:
+En az bir işlev *bildirimi* dönüş türü, işlev adı ve parametre listesinden oluşur (boş olabilir) ve derleyiciye ek yönergeler sağlayan isteğe bağlı anahtar sözcüklerle birlikte. Aşağıdaki örnek bir işlev bildirimidir:
 
 ```cpp
 int sum(int a, int b);
 ```
 
-Bildirimi, bir işlev tanımı oluşur artı *gövdesi*, kaşlı ayraçlar arasındaki tüm kodu verilmiştir:
+Bir işlev tanımı, bir bildirimden ve gövde ayraçları arasındaki tüm kod olan *gövdeden*oluşur:
 
 ```cpp
 int sum(int a, int b)
@@ -60,19 +60,19 @@ int sum(int a, int b)
 }
 ```
 
-Noktalı virgül tarafından izlenen bir işlev bildirimi, bir program birden çok yerde görünebilir. Her bir çeviri birimindeki bu işleve yapılan tüm çağrılar önce yer almalıdır. İşlev tanımı, tek Tanım Kuralı (ODR) göre programda, yalnızca bir kez görünmelidir.
+Bir işlev bildirimi, sonra noktalı virgül gelen bir programda birden çok yerde görünebilir. Her bir çeviri biriminde bu işleve yapılan çağrılardan önce gelmelidir. İşlev tanımı, tek bir tanım kuralına (ODR) göre yalnızca programda bir kez görünmelidir.
 
-Bir işlev bildirimi gerekli bölümleri şunlardır:
+İşlev bildiriminin gerekli bölümleri şunlardır:
 
-1. İşlevinin döndürdüğü değerin türünü belirtir, dönüş türü veya **void** , hiçbir değer döndürülmez. C ++ 11, **otomatik** derleyiciye dönüş deyiminden türünün çıkarsanması için geçerli bir dönüş türü. C ++ 14'te, decltype(auto) da izin verilir. Daha fazla bilgi için aşağıdaki türlerde dönüş türü çıkarma bakın.
+1. İşlevin döndürdüğü değerin türünü belirten dönüş türü veya hiçbir değer döndürülmezse **void** . C++ 11 ' de **Otomatik** , derleyicinin türü Return ifadesinden çıkarması için geçerli bir dönüş türüdür. C++ 14 ' te, decltype (Auto) öğesine de izin verilir. Daha fazla bilgi için bkz. aşağıdaki dönüş türlerinde tür kesintisi.
 
-1. Bir harf veya alt çizgi ile başlamalı ve boşluk içeremez işlev adı. Genel olarak, özel üye işlevleri önde gelen altçizgilere standart kitaplığı işlev adlarını belirtin veya kodunuz tarafından için hedeflenmemiş üye olmayan işlevleri kullanın.
+1. Bir harf veya alt çizgi ile başlaması gereken işlev adı ve boşluk içermemelidir. Genel olarak, standart kitaplık işlev adlarında önde gelen alt çizgiler özel üye işlevlerini veya kodunuz tarafından kullanılmak üzere tasarlanmamış üye olmayan işlevleri gösterir.
 
-1. Parametre listesi, ayrılmış bir küme ayracı, virgülle ayrılmış bir dizi sıfır veya daha çok parametrenin türü ve isteğe bağlı olarak işlev gövdesi değerleri erişilebilecek yerel bir ad belirtin.
+1. Parametre listesi, küme ayracı ile ayrılmış, virgülle ayrılmış sıfır veya daha fazla parametre kümesi ve isteğe bağlı olarak, değerleri işlev gövdesi içinde erişilebilen yerel bir ad.
 
-İsteğe bağlı bir işlev bildirimi bölümleri şunlardır:
+İşlev bildiriminin isteğe bağlı kısımları şunlardır:
 
-1. `constexpr`, işlev dönüş değeri bir sabit değer olduğunu belirten, derleme zamanında hesaplanabilir.
+1. `constexpr`, işlevin dönüş değerinin sabit bir değer olduğunu ve derleme zamanında hesaplanamayacağını gösterir.
 
     ```cpp
     constexpr float exp(float x, int n)
@@ -83,7 +83,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
     };
     ```
 
-1. Kendi bağlama belirtimi **extern** veya **statik**.
+1. Bağlantı belirtimi, **extern** veya **static**.
 
     ```cpp
     //Declare printf with C linkage.
@@ -91,9 +91,9 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
 
     ```
 
-   Daha fazla bilgi için [Program ve bağlantı](../cpp/program-and-linkage-cpp.md).
+   Daha fazla bilgi için bkz. [çeviri birimleri ve bağlantısı](../cpp/program-and-linkage-cpp.md).
 
-1. **Satır içi**, derleyiciye işlev yapılan her çağrı, işlev kodunu değiştirin bildirir. Satır içi kullanım can burada bir işlev hızlı bir şekilde yürütür ve performans açısından kritik bir kod bölümünde tekrarlanarak çağrılır senaryolarda performansı yardımcı olur.
+1. **iç satır içinde**, derleyiciye işlev kodunun kendisi ile her çağrısını değiştirmesini söyler. satır içi bir işlevin hızlı bir şekilde çalıştırıldığı ve kodun performans açısından kritik bölümünde tekrar tekrar çağrıldığı senaryolarda performans sağlanmasına yardımcı olabilir.
 
     ```cpp
     inline double Account::GetBalance()
@@ -102,9 +102,9 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
     }
     ```
 
-   Daha fazla bilgi için [satır içi işlevleri](../cpp/inline-functions-cpp.md).
+   Daha fazla bilgi için bkz. [satır Içi işlevler](../cpp/inline-functions-cpp.md).
 
-1. A `noexcept` işlev bir özel durum olup olmadığını belirten bir ifade. Aşağıdaki örnekte, bir özel durum işlevi, oluşturmaz `is_pod` ifadeyi hesaplar için **true**.
+1. İşlevin bir özel durum yapıp oluşturmadığını belirten `noexcept` ifadesi. Aşağıdaki örnekte, `is_pod` ifadesi **true**olarak değerlendirilirse işlev bir özel durum oluşturmaz.
 
     ```cpp
     #include <type_traits>
@@ -113,24 +113,24 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
     T copy_object(T& obj) noexcept(std::is_pod<T>) {...}
     ```
 
-   Daha fazla bilgi için [noexcept](../cpp/noexcept-cpp.md).
+   Daha fazla bilgi için bkz. [noexcept](../cpp/noexcept-cpp.md).
 
-1. (Yalnızca üye işlevleri) Cv işlevi olup olmadığını belirten niteleyicileri, **const** veya **geçici**.
+1. (Yalnızca üye işlevleri) İşlevin **const** veya **volatile**olduğunu belirten CV niteleyicileri.
 
-1. (Yalnızca üye işlevleri) **sanal**, `override`, veya `final`. **Sanal** bir işlev türetilen bir sınıfta geçersiz kılınabilir belirtir. `override` türetilen bir sınıfta bir işlev bir sanal işlevi geçersiz kılma anlamına gelir. `final` türetilmiş sınıf bir işlev, tüm daha fazla geçersiz kılınamaz anlamına gelir. Daha fazla bilgi için [sanal işlevler](../cpp/virtual-functions.md).
+1. (Yalnızca üye işlevleri) **sanal**, `override`veya `final`. **sanal** bir işlevin türetilmiş bir sınıfta geçersiz kılınabileceğini belirtir. `override`, türetilmiş sınıftaki bir işlevin sanal işlevi geçersiz kıldığı anlamına gelir. `final`, bir işlevin daha fazla türetilmiş sınıfta geçersiz kılınamayan anlamına gelir. Daha fazla bilgi için bkz. [sanal işlevler](../cpp/virtual-functions.md).
 
-1. (yalnızca üye işlevleri) **statik** uygulanan üye işlevi işlev sınıfı herhangi bir nesne örnekleri ile ilişkili olmadığı anlamına gelir.
+1. (yalnızca üye işlevleri) bir üye işlevine uygulanan **statik** , işlevin sınıfın herhangi bir nesne örneğiyle ilişkili olmadığı anlamına gelir.
 
-1. (Yalnızca statik olmayan üye işlevleri) Ref derleyiciye bir işlev seçin ait hangi aşırı yüklemenin belirten niteleyicisi, örtük nesne parametresi (\*bu) bir lvalue başvurusu ve rvalue başvurudur. Daha fazla bilgi için [işlev aşırı yüklemesi](function-overloading.md#ref-qualifiers).
+1. (Yalnızca statik olmayan üye işlevleri) Örtük nesne parametresi (\*this), bir rvalue başvurusu ve bir lvalue başvurusu olduğunda, bir işlevin ne zaman seçim olduğunu derleyiciye belirten ref niteleyicisi. Daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](function-overloading.md#ref-qualifiers).
 
-Aşağıdaki şekil, bir işlev tanımının bölümlerini gösterir. Gölgeli alan işlev gövdesidir.
+Aşağıdaki şekilde bir işlev tanımının bölümleri gösterilmektedir. Gölgeli alan, işlev gövdesidir.
 
-![Bir işlev tanımının bölümlerini](../cpp/media/vc38ru1.gif "bir işlev tanımının bölümleri") <br/>
+![Bir işlev tanımının bölümleri](../cpp/media/vc38ru1.gif "Bir işlev tanımının bölümleri") <br/>
 Bir işlev tanımının bölümleri
 
 ## <a name="function-definitions"></a>İşlev tanımları
 
-A *işlev tanımı* bildirimi ve değişken bildirimleri, ifadeler ve deyimler içeren küme ayraçları içine alınmış işlev gövdesindeki oluşur. Aşağıdaki örnek, bir tam işlev tanımı gösterilmektedir:
+Bir *işlev tanımı* , değişken bildirimleri, deyimleri ve ifadeleri içeren küme ayraçları ve işlev gövdesinden oluşur. Aşağıdaki örnekte, bir bütün işlev tanımı gösterilmektedir:
 
 ```cpp
     int foo(int i, std::string s)
@@ -145,7 +145,7 @@ A *işlev tanımı* bildirimi ve değişken bildirimleri, ifadeler ve deyimler i
     }
 ```
 
-Gövde içinde bildirilen değişkenler, yerel değişkenler veya yerel öğelerin adı verilir. İşlev, kapsam dışına çıkmadan; Bu nedenle, bir işlev yerel başvuru hiçbir zaman döndürmesi gerekir!
+Gövde içinde belirtilen değişkenlere yerel değişkenler veya Yereller denir. İşlev çıktığında kapsam dışına çıkırlar; Bu nedenle, bir işlev asla yerel bir başvuru döndürmemelidir!
 
 ```cpp
     MyClass& boom(int i, std::string s)
@@ -159,13 +159,13 @@ Gövde içinde bildirilen değişkenler, yerel değişkenler veya yerel öğeler
 
 ## <a name="const-and-constexpr-functions"></a>const ve constexpr işlevleri
 
-Bir üye işlev olarak bildirebilirsiniz **const** işlevi sınıfındaki tüm veri üyelerinin değerlerini değiştirmek için izin verilmiyor belirtmek için. Bir üye işlev olarak bildirmek **const**, zorlamak için derleyici yardımcı *const doğruluğu*. Birisi yanlışlıkla olarak bildirilen bir işlevi kullanarak bir nesneyi değiştirmeye çalışırsa **const**, bir derleyici hatası oluşturulur. Daha fazla bilgi için [const](const-cpp.md).
+İşlevin sınıftaki herhangi bir veri üyesinin değerlerini değiştirmesine izin verilmeyeceğini belirtmek için bir üye işlevini **const** olarak bildirebilirsiniz. Bir üye işlevini **const**olarak bildirerek derleyiciye *const doğruluğu*zorlaması için yardımcı olursunuz. Birisi yanlışlıkla **const**olarak belirtilen bir işlevi kullanarak nesneyi değiştirmeye çalışırsa, bir derleyici hatası tetiklenir. Daha fazla bilgi için bkz. [const](const-cpp.md).
 
-Bir işlev olarak bildirmek `constexpr` olduğunda ürettiği değer muhtemelen belirlenebilir derleme zamanında. Constexpr işlevi genellikle normal işlevinden daha hızlı yürütür. Daha fazla bilgi için [constexpr](constexpr-cpp.md).
+İşlevin ürettiği değer derleme zamanında belirlenebileceği zaman `constexpr` olarak bir işlev bildirin. Constexpr işlevi genellikle normal işlevden daha hızlı yürütülür. Daha fazla bilgi için bkz. [constexpr](constexpr-cpp.md).
 
 ## <a name="function-templates"></a>İşlev Şablonları
 
-Bir işlev şablonu için bir sınıf şablonunun benzer. Bu, şablon bağımsız değişkenlerine göre somut işlevleri oluşturur. Çoğu durumda, şablon türü bağımsız değişkenleri belirleyebilir ve bu nedenle açıkça belirtmek gerekli değildir.
+Bir işlev şablonu, sınıf şablonuna benzer; şablon bağımsız değişkenlerine göre somut işlevler oluşturur. Çoğu durumda, şablon tür bağımsız değişkenlerini çıkarsayabilir ve bu nedenle bunları açıkça belirtmek gerekli değildir.
 
 ```cpp
 template<typename Lhs, typename Rhs>
@@ -178,31 +178,31 @@ auto a = Add2(3.13, 2.895); // a is a double
 auto b = Add2(string{ "Hello" }, string{ " World" }); // b is a std::string
 ```
 
-Daha fazla bilgi için [işlev şablonları](../cpp/function-templates.md)
+Daha fazla bilgi için bkz. [Işlev şablonları](../cpp/function-templates.md)
 
 ## <a name="function-parameters-and-arguments"></a>İşlev parametreleri ve bağımsız değişkenler
 
-Sıfır veya daha fazla türlerinin parametre virgülle ayrılmış listesi her biri tarafından işlev gövdesi içinde erişilebilen bir ada sahip bir işleve sahiptir. Bir işlev şablonu, tür veya değer ek parametreler belirtebilir. Çağıran parametre listesiyle eşleşen türleri uyumlu somut değerler bağımsız değişken geçirir.
+Bir işlevde, her birinin işlev gövdesi içinde erişilebilen bir adı olan sıfır veya daha fazla türden oluşan, virgülle ayrılmış bir parametre listesi bulunur. Bir işlev şablonu, ek tür veya değer parametreleri belirtebilir. Çağıran, türleri parametre listesiyle uyumlu somut değerler olan bağımsız değişkenleri geçirir.
 
-Varsayılan olarak, bağımsız değişkenleri işleve geçirilen nesnesinin bir kopyasını alır. yani değere göre işleve geçirilir. Büyük nesneler için kopyalayarak pahalı olabilir ve her zaman gerekli değildir. Başvuruya göre (özellikle lvalue başvuru) geçirilecek bağımsız değişkenleri neden olmak için bir başvuru niceleyici parametre ekleyin:
+Varsayılan olarak, bağımsız değişkenler değere göre işleve geçirilir, bu da işlevin geçirilmiş nesnenin bir kopyasını aldığı anlamına gelir. Büyük nesneler için, bir kopyanın pahalıdır ve her zaman gerekli değildir. Bağımsız değişkenlerin başvuruya göre geçirilmesini sağlamak için (özel lvalue başvurusu), parametresine bir başvuru nicelik değeri ekleyin:
 
 ```cpp
 void DoSomething(std::string& input){...}
 ```
 
-Bir işlevin başvuruya göre geçirilen bağımsız değişken değiştirdiğinde, orijinal nesnenin, yerel bir kopyasını değiştirir. Bir işlev, bu tür bir bağımsız değişken değiştirmesini önlemek için parametre olarak const uygun &:
+Bir işlev başvuruya göre geçirilen bir bağımsız değişkeni değiştirdiğinde, yerel bir kopya değil, özgün nesneyi değiştirir. Bir işlevin böyle bir bağımsız değişkeni değiştirmesini engellemek için parametreyi const & olarak niteleyin:
 
 ```cpp
 void DoSomething(const std::string& input){...}
 ```
 
-**C++11:**  Rvalue başvuru veya lvalue başvuru tarafından geçirilen bağımsız değişkenleri açıkça işlemek için bir evrensel başvuru göstermek için parametresinde bir ve işareti çift kullanın:
+**C++ 11:**  Rvalue başvurusu veya lvalue ile geçirilen bağımsız değişkenleri açıkça işlemek için, bir evrensel başvuruyu göstermek için parametresinde çift ve işareti kullanın:
 
 ```cpp
 void DoSomething(const std::string&& input){...}
 ```
 
-Tek anahtar sözcüğüyle bildirilen bir işlev **void** parametre bildiriminde listesi hiçbir bağımsız değişken anahtar sözcüğü uzun sürer **void** ilk ve tek bağımsız değişken bildirimi listesinin bir üyesi. Türünde bağımsız değişkenler **void** başka bir yerde listesinde hata üretir. Örneğin:
+**Void** anahtar sözcüğü bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesinde **void** tek anahtar sözcüğüyle belirtilen bir işlev bağımsız değişken almaz. Listede başka bir yerde **void** türündeki bağımsız değişkenler hata üretir. Örneğin:
 
 ```cpp
 
@@ -210,11 +210,11 @@ Tek anahtar sözcüğüyle bildirilen bir işlev **void** parametre bildiriminde
 long GetTickCount( void );
 ```
 
-Belirtmek geçersiz olsa Not bir **void** dışındaki bağımsız değişken özetlenen burada türünden türetilmiş türlerin **void** (işaretçileri gibi **void** ve dizileri**void**) herhangi bir bağımsız değişken bildirim listesi görüntülenir.
+Burada özetlenen bir bağımsız değişken belirtmek geçersiz olsa da, **void** türünden türetilmiş türler ( **void ve diziler** için işaretçiler **gibi)** **bağımsız değişken bildirim** listesinin herhangi bir yerinde görünebilir.
 
 ### <a name="default-arguments"></a>Varsayılan Bağımsız Değişkenler
 
-Son parametresi veya bir işlev imzası parametrelere arayan bağımsız değişkeni başka bir değer belirtmek istemiyorsanız işlev çağrılırken bırakabilir anlamına gelir. bir varsayılan bağımsız değişken atanabilir.
+Bir işlev imzasında son parametreye veya parametrelere varsayılan bir bağımsız değişken atanabilir. Bu, çağıranın, başka bir değer belirtmek istemedikçe işlevi çağırırken bağımsız değişkeni bırakabileceği anlamına gelir.
 
 ```cpp
 int DoSomething(int num,
@@ -235,15 +235,15 @@ int DoMore(int num = 5, // Not a trailing parameter!
 {...}
 ```
 
-Daha fazla bilgi için [varsayılan bağımsız değişkenler](../cpp/default-arguments.md).
+Daha fazla bilgi için bkz. [Varsayılan bağımsız değişkenler](../cpp/default-arguments.md).
 
 ## <a name="function-return-types"></a>İşlev dönüş türleri
 
-Bir işlev, başka bir işlev veya yerleşik bir dizi döndürmeyebilir; Ancak, bu türleri için işaretçiler döndürebilir veya *lambda*, bir işlev nesnesi oluşturur. Bu durumlarda, bir işlev kapsamındaki herhangi bir türde bir değer döndürebilir veya herhangi bir değer döndürebilir dışında bu durumda dönüş türü olan **void**.
+Bir işlev, başka bir işlevi veya yerleşik bir diziyi döndüremeyebilir; Ancak, bu türlere işaretçiler veya bir işlev nesnesi üreten bir *lambda*döndürebilir. Bu durumlar dışında, bir işlev kapsamda olan herhangi bir türde bir değer döndürebilir veya değer döndürmez; bu durumda, dönüş türü **void**olur.
 
-### <a name="trailing-return-types"></a>Dönüş türlerini takip etme
+### <a name="trailing-return-types"></a>Sondaki dönüş türleri
 
-"Normal" bir dönüş türü işlev imzası sol tarafında bulunur. A *bitiş dönüş türüne* imza çoğu sağ tarafında bulunur ve öncesinde -> işleci. Sondaki dönüş türleri, dönüş değerinin türü, şablon parametrelerine bağlıysa işlev şablonlarında özellikle yararlı olur.
+"Sıradan" dönüş türü, işlev imzasının sol tarafında bulunur. *Sondaki dönüş türü* , imzanın en sağ tarafında bulunur ve önünde-> işleçtir. Döndürülen değerin türü şablon parametrelerine bağlı olduğunda, sondaki dönüş türleri özellikle işlev şablonlarında yararlıdır.
 
 ```cpp
 template<typename Lhs, typename Rhs>
@@ -253,19 +253,19 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 }
 ```
 
-Zaman **otomatik** kullanılan bitiş dönüş türü ile birlikte, yalnızca bir yer tutucu olarak hangi decltype ifade üretir için kullanılır ve kendisi türü çıkarma gerçekleştirir.
+**Otomatik** olarak bir bitiş dönüş türü ile birlikte kullanıldığında, yalnızca decltype ifadesinin ürettiği her şey için bir yer tutucu görevi görür ve kendisi tür kesintisi gerçekleştirmez.
 
-## <a name="function-local-variables"></a>İşlevi yerel değişkenler
+## <a name="function-local-variables"></a>İşlev yerel değişkenleri
 
-Bir işlev gövdesinin içinde bildirilen bir değişken olarak adlandırılan bir *yerel değişken* veya yalnızca bir *yerel*. Statik olmayan yerel öğeler, yalnızca işlev gövdesi içinde görünür olduğundan ve yığında bildirilmemişse işlev kapsam dışına çıkmaz. Yerel bir değişken oluşturun ve değeri döndürür, derleyici genellikle gereksiz kopyalama işlemleri önlemek için dönüş değeri iyileştirme gerçekleştirebilirsiniz. Yerel bir değişken başvuru ile döndürülen, yerel edildikten sonra referans kullanmak üzere her türlü girişim çağıran tarafından oluşacaktır, derleyici bir uyarı verir.
+Bir işlev gövdesi içinde belirtilen bir değişken *yerel bir değişken* veya yalnızca *Yerel*olarak adlandırılır. Statik olmayan Yereller yalnızca işlev gövdesi içinde görünür ve yığında bildirilirse, işlev çıktığında kapsam dışına çıkar. Yerel bir değişken oluşturup değeri değere göre döndürdüğünüzde, derleyici, gereksiz kopyalama işlemlerini önlemek için *adlandırılmış dönüş değeri iyileştirmesini* genellikle gerçekleştirebilir. Başvuruya göre yerel bir değişken döndürürler, bu başvuruyu kullanan çağıran tarafından herhangi bir girişim yerel olarak yok edildikten sonra, derleyici bir uyarı verir.
 
-C++'da yerel bir değişken statik olarak bildirilmelidir. Değişken yalnızca işlev gövdesi içinde görünür olur, ancak işlevin tüm örnekleri için değişkenin tek bir kopyası bulunmaktadır. Yerel statik nesneler `atexit` tarafından belirtilen sonlandırma sırasında yok edilir. Programın denetim akışı bildirimi atlamasından dolayı statik nesne oluşturulmazsa, söz konusu nesneyi yok etmek için girişimde bulunulmaz.
+Yerel C++ bir değişkende statik olarak tanımlanmış olabilir. Değişken yalnızca işlev gövdesinin içinde görünür, ancak işlevin tüm örnekleri için değişkenin tek bir kopyası vardır. Yerel statik nesneler `atexit` tarafından belirtilen sonlandırma sırasında yok edilir. Programın denetim akışı bildirimi atlamasından dolayı statik nesne oluşturulmazsa, söz konusu nesneyi yok etmek için girişimde bulunulmaz.
 
-##  <a name="type_deduction"></a> Çıkarım dönüş türleri (C ++ 14) yazın.
+##  <a name="type_deduction"></a>Dönüş türlerinde tür kesintisi (C++ 14)
 
-C ++ 14'te, kullandığınız **otomatik** sondaki dönüş türünü sağlamak zorunda kalmamanız işlev gövdesi dönüş türünden çıkarsanacak derleyicisinin. Unutmayın **otomatik** her zaman bir dönüş değere göre için çıkarır. Kullanım `auto&&` derleyicinin başvuru için.
+C++ 14 ' te, derleyicinin dönüş türünü, bir sondaki dönüş türü sağlamak zorunda kalmadan işlev gövdesinden çıkarması için **Otomatik** ' i kullanabilirsiniz. **Otomatik** olarak her zaman bir değer döndürür. Derleyiciye bir başvuru almasını söylemek için `auto&&` kullanın.
 
-Bu örnekte, **otomatik** lhs ve sol toplamı sabit olmayan değer kopya olarak deyimli.
+Bu örnekte **Otomatik** olarak, lhs ve rhs toplamının const olmayan bir değer kopyası olarak çıkarılır.
 
 ```cpp
 template<typename Lhs, typename Rhs>
@@ -275,9 +275,9 @@ auto Add2(const Lhs& lhs, const Rhs& rhs)
 }
 ```
 
-Unutmayın **otomatik** çıkarır, türü değişkenlerinin sabitliğine korumaz. Kullanabileceğiniz işlevler dönüş değeri gerekiyor const-ness veya bağımsız değişkenlerinin ref durumunu korumak için iletmek için **decltype(auto)** kullanan anahtar sözcüğü **decltype** çıkarım kuralları yazın ve Tüm tür bilgilerini korur. **decltype(Auto)** sol tarafındaki sıradan bir dönüş değeri olarak veya sondaki dönüş değeri olarak kullanılabilir.
+**Otomatik** olarak, kesintiler olan türün sabit durumunu korumadığını unutmayın. Dönüş değeri, bağımsız değişkenlerinin const durumunu veya başvurusunu korumak zorunda olan bir işlev iletmek için, **decltype** tür çıkarımı kurallarını kullanan ve tüm tür bilgilerini koruyan **decltype (Auto)** anahtar sözcüğünü kullanabilirsiniz. **decltype (Auto)** , sol tarafta sıradan bir dönüş değeri veya sondaki dönüş değeri olarak kullanılabilir.
 
-Aşağıdaki örnek (koddan göre [N3493](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3493.html)), gösterir **decltype(auto)** şablon kadar bilinen değil bir dönüş türü işlev bağımsız değişkenleri kusursuz iletme etkinleştirmek için kullanılan örneği.
+Aşağıdaki örnek ( [N3493](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3493.html)' dan koda bağlı olarak), işlev bağımsız değişkenlerinin, şablon örneklenene kadar bilinmeyen bir dönüş türünde tam olarak iletilmesini sağlamak için kullanılan **decltype (Auto)** öğesini gösterir.
 
 ```cpp
 template<typename F, typename Tuple = tuple<T...>, int... I>
@@ -293,14 +293,13 @@ template<typename F, typename Tuple = tuple<T...>,
 {
     return apply_(std::forward<F>(f), std::forward<Tuple>(args), Indices());
 }
-}
 ```
 
-## <a name="multi_val"></a> Bir işlevden birden çok değer döndürüyor
+## <a name="multi_val"></a>Bir işlevden birden çok değer döndürme
 
 Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
 
-1. Adlandırılmış bir class veya struct nesne değerleri kapsüller. Sınıf veya yapı tanımına çağırana görünür olmasını gerektirir:
+1. Adlandırılmış bir sınıf veya yapı nesnesindeki değerleri kapsülle. Sınıf veya yapı tanımının arayan tarafından görünür olmasını gerektirir:
 
     ```cpp
     #include <string>
@@ -329,7 +328,7 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
     }
     ```
 
-1. Bir std::tuple veya std::pair nesnesi döndürür:
+1. Std:: Tuple veya std::p AIR nesnesi döndürür:
 
     ```cpp
     #include <tuple>
@@ -363,7 +362,7 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
     }
     ```
 
-1. **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Yapılandırılmış bağlamalar kullanın. Yapılandırılmış bağlamalar avantajı, bazı durumlarda önemli ölçüde daha verimli olabilir dönüş değerlerini depolayan değişkenleri bildirildikleri, aynı anda başlatılır ' dir. Bu bildirimde--`auto[x, y, z] = f();`--köşeli ayraçlar tanıtır ve tüm işlev bloğu için kapsamda olan adlar Başlat.
+1. **Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): yapılandırılmış bağlamaları kullanın. Yapılandırılmış bağlamaların avantajı, dönüş değerlerini depolayan değişkenlerin, bildirildiği anda başlatıldığını, bazı durumlarda de önemli ölçüde daha verimli bir şekilde çalışmasını sağlar. Bu bildirimde--`auto[x, y, z] = f();`--ayraçlar, tüm işlev bloğunun kapsamındaki adları tanıtın ve başlatır.
 
     ```cpp
     #include <tuple>
@@ -403,13 +402,13 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
     }
     ```
 
-1. Dönüş değeri kullanmanın yanı sıra, "değerleri herhangi bir sayıda başvuru ile geçişi işlevi değiştirebilir veya çağıranın sağlayan nesneleri değerlerini başlatmak için kullanmak üzere parametreleri tanımlayarak dönebilirsiniz". Daha fazla bilgi için [başvuru türü işlev bağımsız değişkenleri](reference-type-function-arguments.md).
+1. Dönüş değerinin kendisini kullanmanın yanı sıra, işlevin çağıranın sağladığı nesnelerin değerlerini değiştirebilmeleri veya başlatabilmesi için, başvuruya göre geçiş yapmak için herhangi bir sayıda parametre tanımlayarak "döndürebilirsiniz". Daha fazla bilgi için bkz. [başvuru türü Işlev bağımsız değişkenleri](reference-type-function-arguments.md).
 
 ## <a name="function-pointers"></a>İşlev işaretçileri
 
-C++, C dili olarak aynı şekilde işlev işaretçilerine destekler. Ancak daha fazla tür kullanımı uyumlu bir alternatif genellikle bir işlev nesnesi kullanmaktır.
+C++işlev işaretçilerini C diliyle aynı şekilde destekler. Ancak, daha fazla tür açısından güvenli bir alternatif, genellikle bir işlev nesnesi kullanmaktır.
 
-Önerilir **typedef** bir işlev işaretçisi türü döndüren bir işlev bildiriliyorsa, işlev işaretçisi türü için bir diğer ad bildirmek için kullanılır.  Örneğin:
+İşlev işaretçisi türü döndüren bir işlev bildirirken, işlev işaretçisi türü için bir diğer ad bildirmek üzere **typedef** kullanılması önerilir.  Örneğin:
 
 ```cpp
 typedef int (*fp)(int);

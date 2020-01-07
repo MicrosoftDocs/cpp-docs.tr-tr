@@ -1,30 +1,35 @@
 ---
 title: ELSEIF (MASM)
-ms.date: 08/30/2018
+ms.date: 12/16/2019
 f1_keywords:
 - ElseIf
 helpviewer_keywords:
 - ELSEIF directive
 ms.assetid: 20a685d6-836e-4e64-902e-4f3daf2e51c2
-ms.openlocfilehash: 75fa24f10129827b0159a5975e28851713316d8b
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 26b5c5415c1d0b065e2d21c3e3cac86155788b0d
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398429"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317415"
 ---
-# <a name="elseif-masm"></a>ELSEIF (MASM)
+# <a name="elseif"></a>ELSEIF
 
-[Diğer](../../assembler/masm/else-masm.md) ve [varsa](../../assembler/masm/if-masm.md) tek bir bildirimde birleştirir.
+[Diğer](else-masm.md) ve [varsa](if-masm.md) tek bir bildirimde birleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ELSEIF**
+> *ConstantExpression* **ise ElseIf**\
+> *deyimler*\
+> ⟦**ELSE**\
+> *Else-deyimler*⟧ \
+> **ENDIF**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz [.](../../assembler/masm/if-masm.md).
+Daha fazla [bilgi için bkz](if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: lsearch
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - lsearch
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - lsearch function
 ms.assetid: 130da3fc-904a-4375-b0ab-79bfea8a455f
-ms.openlocfilehash: 2b765ef23c61116ecc57aeea3cebe288b07bd84a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a068b6500de8a1a795f5494ac12afa0e5ca08544
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950511"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300891"
 ---
 # <a name="lsearch"></a>lsearch
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_lsearch](lsearch.md) veya Security-Enhanced [_lsearch_s](lsearch-s.md) kullanın.
+Microsoft tarafından uygulanan POSIX işlev adı `lsearch`, [_lsearch](lsearch.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_lsearch](lsearch.md) veya güvenlik ile gelişmiş [_lsearch_s](lsearch-s.md) işlevi kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

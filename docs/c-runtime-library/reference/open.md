@@ -1,6 +1,6 @@
 ---
-title: open
-ms.date: 11/04/2016
+title: aç
+ms.date: 12/16/2019
 api_name:
 - open
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - open function
 ms.assetid: e3139118-4da2-434b-a551-fcf3fccf49b5
-ms.openlocfilehash: ebed6030b0736ade47b4bc4f6b4cb2456cca666e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 648f55511983264f127976b83a73dd5623717c14
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951168"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301268"
 ---
-# <a name="open"></a>open
+# <a name="open"></a>aç
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_Aç](open-wopen.md) kullanın.
+Microsoft tarafından uygulanan POSIX işlev adı `open`, [_open](open-wopen.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_open](open-wopen.md) kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

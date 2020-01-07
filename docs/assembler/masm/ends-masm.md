@@ -1,21 +1,21 @@
 ---
 title: ENDS (MASM)
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - ENDS
 helpviewer_keywords:
 - ENDS directive
 ms.assetid: 30f68c58-de1f-4bdd-ac83-4658bdbaad65
-ms.openlocfilehash: 95ade586e1a2a422e7cfbc00fa9d92471d0f8bdf
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 2ad3db8a6b271dec5b6cc590a6cf9268bb0fbe30
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397625"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317376"
 ---
-# <a name="ends-masm"></a>ENDS (MASM)
+# <a name="ends"></a>ENDS
 
-Segment, yapı veya birleşim *adının* sonunu daha önce [segment](../../assembler/masm/segment.md), [Yapı](../../assembler/masm/struct-masm.md), [birleşim](../../assembler/masm/union.md)veya Basitleştirilmiş bir segment yönergesi ile başlamış olarak işaretler.
+Segment, yapı veya birleşim *adının* sonunu daha önce [segment](segment.md), [Yapı](struct-masm.md), [birleşim](union.md)veya Basitleştirilmiş bir segment yönergesi ile başlamış olarak işaretler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,5 @@ Segment, yapı veya birleşim *adının* sonunu daha önce [segment](../../assem
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: fcvt
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - fcvt
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - fcvt function
 ms.assetid: 1f748ad0-e186-400e-af8e-80d4431523d7
-ms.openlocfilehash: 58c15d545054615bc7da498c7be49cb0cf468ed4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2e4358cbaecca29f282c32070e41771222d54067
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950794"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301190"
 ---
 # <a name="fcvt"></a>fcvt
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_fcvt](fcvt.md) veya Security-Enhanced [_fcvt_s](fcvt-s.md) kullanın.
+`fcvt` Microsoft 'a özgü işlev adı, [_fcvt](fcvt.md) işlevi için kullanım dışı bırakılmış bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_fcvt](fcvt.md) veya güvenlik ile gelişmiş [_fcvt_s](fcvt-s.md) işlevini kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

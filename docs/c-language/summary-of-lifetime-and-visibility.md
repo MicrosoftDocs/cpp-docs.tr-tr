@@ -5,38 +5,38 @@ helpviewer_keywords:
 - lifetime, and visibility
 - visibility, identifiers
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
-ms.openlocfilehash: 438dd855fbbfec01a31a8d4a1a53078e3c44658c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f364c3c0b558c00e3d411ab5b697ed01ec395cbd
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345285"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299084"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 
-Aşağıdaki tabloda, çoğu tanımlayıcıların ömür ve görünürlük özelliklerinin bir özetidir. Ömür ve görünürlük tanımlayan öznitelikleri ilk üç sütun verin. Ömür ve görünürlük dördüncü ve beşinci sütunların gösterilen ilk üç sütun tarafından verilen öznitelikleri olan bir tanımlayıcı vardır. Ancak, tablo, tüm olası durumların kapsamaz. Başvurmak [depolama sınıfları](../c-language/c-storage-classes.md) daha fazla bilgi için.
+Aşağıdaki tabloda çoğu tanımlayıcı için ömür ve görünürlük özelliklerinin bir özeti verilmiştir. İlk üç sütun, yaşam süresini ve görünürlüğünü tanımlayan özniteliklere sahiptir. İlk üç sütun tarafından verilen özniteliklere sahip bir tanımlayıcı, dördüncü ve beşinci sütunlarda gösterilen ömür ve görünürlüğe sahiptir. Ancak, tablo olası tüm durumları kapsamaz. Daha fazla bilgi için [depolama sınıflarına](../c-language/c-storage-classes.md) bakın.
 
 ### <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 
-|Öznitelikleri:<br /><br /> Düzey|Öğe|Depolama sınıfı<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görünürlük|
+|Öznitelikler:<br /><br /> Düzey|Öğe|Depolama sınıfı<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görünürlük|
 |---------------------------|----------|----------------------------------|--------------------------|----------------|
-|Dosya kapsamı|Değişken tanımı|**static**|Global|İçinde oluştuğu kaynak dosyasının kalanı|
-||Değişken bildirimi|**extern**|Global|İçinde oluştuğu kaynak dosyasının kalanı|
-||İşlev prototipi veya tanımı|**static**|Global|Tek bir kaynak dosyası|
-||İşlev prototipi|**extern**|Global|Kaynak dosyasının kalanı|
+|Dosya kapsamı|Değişken tanımı|**static**|Global|Kaynak dosyanın gerçekleştiği geri kalanı|
+||Değişken bildirimi|**extern**|Global|Kaynak dosyanın gerçekleştiği geri kalanı|
+||İşlev prototipi veya tanımı|**static**|Global|Tek kaynak dosyası|
+||İşlev prototipi|**extern**|Global|Kaynak dosyanın kalanı|
 |Blok kapsamı|Değişken bildirimi|**extern**|Global|Blok|
 ||Değişken tanımı|**static**|Global|Blok|
-||Değişken tanımı|**Otomatik** veya **kaydetme**|Yerel|Blok|
+||Değişken tanımı|**Otomatik** veya **kaydolun**|Yerel|Blok|
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, blokları, iç içe geçirme ve değişkenleri görünürlüğünü gösterir:
+Aşağıdaki örnek, değişkenlerin blok, iç içe geçme ve görünürlüğünü göstermektedir:
 
 ### <a name="code"></a>Kod
 
-```
+```c
 // Lifetime_and_Visibility.c
 
 #include <stdio.h>
@@ -64,7 +64,7 @@ int main()  // main function defined at external level
 
 ### <a name="comments"></a>Açıklamalar
 
-Bu örnekte, dört görünürlük düzeyi vardır: dış düzeyi ve üç blok düzeyleri. Değerlerin her deyimi takip eden açıklamalarda belirtilmektedir ekranına yazdırılır.
+Bu örnekte, dört görünürlük düzeyi vardır: dış düzey ve üç blok düzeyi. Değerler her deyimin sonraki açıklamalarda gösterildiği gibi ekrana yazdırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

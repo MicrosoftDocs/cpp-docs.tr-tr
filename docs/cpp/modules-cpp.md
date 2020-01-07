@@ -1,16 +1,16 @@
 ---
 title: C++ içindeki modüllere genel bakış
-ms.date: 07/23/2019
+ms.date: 12/13/2019
 helpviewer_keywords:
 - modules [C++]
 - modules [C++], overview
 description: C++ 20 ' deki modüller üst bilgi dosyalarına modern bir alternatif sağlar.
-ms.openlocfilehash: 17495aa3e295b26fcfa5c489ff6793bb75d13d68
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: 28e1824250ad4fb404c528aa9511745abb001f31
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273680"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301385"
 ---
 # <a name="overview-of-modules-in-c"></a>C++ içindeki modüllere genel bakış
 
@@ -20,7 +20,7 @@ Modüller, üst bilgi dosyaları ile yan yana kullanılabilir. C++ Kaynak dosya,
 
 ## <a name="enable-modules-in-the-microsoft-c-compiler"></a>Microsoft C++ derleyicisinde modülleri etkinleştirme
 
-Visual Studio 2019 sürüm 16,2 itibariyle, modüller Microsoft C++ derleyicisinde tam olarak uygulanmamıştır. Modüller özelliğini kullanarak tek bölümlü modüller oluşturabilir ve Microsoft tarafından sunulan standart kitaplık modüllerini içeri aktarabilirsiniz. Modüller desteğini etkinleştirmek için [/deneysel: Module](../build/reference/experimental-module.md) ve [/std: c + + en son](../build/reference/std-specify-language-standard-version.md)ile derleyin. Visual Studio projesinde **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma** açılan öğesini **tüm yapılandırmalar**olarak ayarlayın, ardından **yapılandırma özellikleri** >  > **C/C++** **dil** > **Etkinleştir C++ modüller ' i seçin ( deneysel)** .
+Visual Studio 2019 sürüm 16,2 itibariyle, modüller Microsoft C++ derleyicisinde tam olarak uygulanmamıştır. Modüller özelliğini kullanarak tek bölümlü modüller oluşturabilir ve Microsoft tarafından sunulan standart kitaplık modüllerini içeri aktarabilirsiniz. Modüller desteğini etkinleştirmek için [/deneysel: Module](../build/reference/experimental-module.md) ve [/std: c + + en son](../build/reference/std-specify-language-standard-version.md)ile derleyin. Visual Studio projesinde **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma** açılan öğesini **tüm yapılandırmalar**olarak ayarlayın ve ardından **yapılandırma özellikleri** > **C++ C/**  > **dil** >  **C++ modülleri etkinleştir (deneysel)** seçeneğini belirleyin.
 
 Bir modül ve onu tüketen kod aynı derleyici seçenekleriyle derlenmelidir.
 
@@ -29,23 +29,23 @@ Bir modül ve onu tüketen kod aynı derleyici seçenekleriyle derlenmelidir.
 C++ 20 standardı tarafından belirtilmediği halde Microsoft, C++ standart kitaplık uygulamasının, modül olarak içeri aktarılmalarını sağlar. Standart Kitaplığı, C++ üst bilgi dosyaları aracılığıyla #including yerine modüller olarak içeri aktararak, projenizin boyutuna bağlı olarak derleme sürelerini hızlandırabilirsiniz. Kitaplık aşağıdaki modüllere bileşen haline sahiptir:
 
 - STD. Regex üst bilgi \<Regex içeriğini sağlar >
-- STD. FileSystem, üst bilgi \<FileSystem 'ın içeriğini sağlar >
+- STD. FileSystem, üstbilgi \<FileSystem içeriğini sağlar >
 - STD. bellek, üst bilgi \<bellek > içeriğini sağlar
-- STD. Threading, \<üst bilgi atomik >, \<condition_variable >, \<gelecekteki >, \<mutex >, \<shared_mutex > ve \<iş parçacığının içeriğini sağlar >
+- STD. Threading \<atomik >, \<condition_variable >, gelecekteki \<>, \<mutex >, \<shared_mutex > ve \<iş parçacığı için üst bilgilerin içeriğini sağlar >
 - STD. Core, C++ standart kitaplıkta diğer her şeyi sağlar
 
-Bu modülleri kullanmak için, kaynak kodu dosyasının en üstüne bir içeri aktarma ekstresi eklemeniz yeterlidir. Örneğin:
+Bu modülleri kullanmak için, kaynak kodu dosyasının en üstüne bir içeri aktarma bildirimi eklemeniz yeterlidir. Örneğin:
 
 ```cpp
 import std.core;
 import std.regex;
 ```
 
-Microsoft standart kitaplık modülünü kullanmak için, programınızı [/EHsc](../build/reference/eh-exception-handling-model.md) ve [/md](../build/reference/md-mt-ld-use-run-time-library.md) seçenekleriyle derlemeniz gerekir.
+Microsoft standart kitaplık modülünü kullanmak için, programınızı [/EHsc](../build/reference/eh-exception-handling-model.md) ve [/md](../build/reference/md-mt-ld-use-run-time-library.md) seçenekleriyle derleyin.
 
 ## <a name="basic-example"></a>Temel örnek
 
-Aşağıdaki örnek, bir kaynak dosyasında **foo. IXX**adlı basit bir modül tanımını gösterir. Visual Studio 'da modül arabirimi dosyaları için **. IXX** uzantısı gereklidir. Bu örnekte, arabirim dosyası, bir işlev tanımını ve bildirimi içerir. Ancak, tanımlar aynı zamanda bir veya daha fazla ayrı dosyaya yerleştirilebilir (sonraki örnekte gösterildiği gibi). **Export Module foo** ifadesini, bu dosyanın adlı `Foo`bir modülün birincil arabirimi olduğunu gösterir. ' De `f()` **dışarı aktarma** değiştiricisi, başka bir program veya modül tarafından `Foo` içeri aktarıldığında bu işlevin görünür olacağını gösterir. Modülün bir ad alanına `Bar`başvurmadığını unutmayın.
+Aşağıdaki örnek, bir kaynak dosyasında **foo. IXX**adlı basit bir modül tanımını gösterir. Visual Studio 'da modül arabirimi dosyaları için **. IXX** uzantısı gereklidir. Bu örnekte, arabirim dosyası, bir işlev tanımını ve bildirimi içerir. Ancak, tanımlar aynı zamanda bir veya daha fazla ayrı dosyaya yerleştirilebilir (sonraki örnekte gösterildiği gibi). **Export Module foo** ifadesini, bu dosyanın `Foo`adlı bir modülün birincil arabirimi olduğunu gösterir. `f()` ' deki **dışarı aktarma** değiştiricisi, `Foo` başka bir program veya modül tarafından içeri aktarıldığında bu işlevin görünür olacağını gösterir. Modülün `Bar`bir ad alanına başvurmadığını unutmayın.
 
 ```cpp
 export module Foo;
@@ -64,7 +64,7 @@ namespace Bar
 }
 ```
 
-**MyProgram. cpp** dosyası tarafından `Foo`dışarı aktarılan ada erişmek için **import** ifadesini kullanır. Adın `Bar` , burada görünür olduğunu, ancak tüm üyelerini Not etmez. Ayrıca makronun `ANSWER` görünür olmadığına de unutmayın.
+**MyProgram. cpp** dosyası, `Foo`tarafından dışarı aktarılan ada erişmek için **içeri aktarma** bildirimini kullanır. Ad `Bar` burada görünür olduğunu, ancak tüm üyelerini Not etmez. Ayrıca makro `ANSWER` görünür olmadığına de unutmayın.
 
 ```cpp
 

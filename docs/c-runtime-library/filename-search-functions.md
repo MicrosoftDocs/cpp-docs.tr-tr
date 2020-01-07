@@ -20,18 +20,18 @@ helpviewer_keywords:
 - find function
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-ms.openlocfilehash: ecc01362bdc14af32df5093ad1ac1ee606026d8f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 331d43f3e3a88786f8dac0a6f609f988beea9dbb
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940374"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300319"
 ---
 # <a name="filename-search-functions"></a>Dosya adı arama Işlevleri
 
 Bu işlevler, belirtilen dosya adları için aramaları arar ve kapatır:
 
-- [_sonrakinibul, _wsonra](../c-runtime-library/reference/findnext-functions.md)
+- [_findnext, _wfindnext](../c-runtime-library/reference/findnext-functions.md)
 
 - [_findfirst, _wfindfirst](../c-runtime-library/reference/findfirst-functions.md)
 
@@ -39,9 +39,9 @@ Bu işlevler, belirtilen dosya adları için aramaları arar ve kapatır:
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevi, `filespec` bağımsız değişkeninde belirtilen dosyayla eşleşen bir dosya adının ilk örneğiyle ilgili bilgiler sağlar. `_findfirst` Ana bilgisayar işletim sistemi `filespec` tarafından desteklenen herhangi bir joker karakter birleşimini kullanabilirsiniz.
+`_findfirst` işlevi, `filespec` bağımsız değişkeninde belirtilen dosyayla eşleşen bir dosya adının ilk örneğiyle ilgili bilgiler sağlar. ' De, ana bilgisayar işletim sistemi tarafından desteklenen herhangi bir joker karakter bileşimini `filespec` kullanabilirsiniz.
 
-İşlevler, GÇ. h içinde tanımlanan `_finddata_t` bir yapıda dosya bilgileri döndürür. Ailedeki çeşitli işlevler, `_finddata_t` yapı üzerinde birçok çeşitlemeyi kullanır. Temel `_finddata_t` yapı aşağıdaki öğeleri içerir:
+İşlevler, GÇ. h içinde tanımlanan `_finddata_t` yapıda dosya bilgileri döndürür. Ailedeki çeşitli işlevler `_finddata_t` yapısında birçok çeşitlemeyi kullanır. Temel `_finddata_t` yapısı aşağıdaki öğeleri içerir:
 
 `unsigned attrib`<br/>
 Dosya özniteliği.
@@ -50,51 +50,51 @@ Dosya özniteliği.
 Dosya oluşturma zamanı (FAT dosya sistemleri için-1L). Bu süre UTC biçiminde depolanır. Yerel saate dönüştürmek için [localtime_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)kullanın.
 
 `time_t time_access`<br/>
-Son dosya erişiminin saati (FAT dosya sistemleri için-1L). Bu süre UTC biçiminde depolanır. Yerel saate dönüştürmek için kullanın `localtime_s`.
+Son dosya erişiminin saati (FAT dosya sistemleri için-1L). Bu süre UTC biçiminde depolanır. Yerel saate dönüştürmek için `localtime_s`kullanın.
 
 `time_t time_write`<br/>
-Dosyanın son yazma zamanı. Bu süre UTC biçiminde depolanır. Yerel saate dönüştürmek için kullanın `localtime_s`.
+Dosyanın son yazma zamanı. Bu süre UTC biçiminde depolanır. Yerel saate dönüştürmek için `localtime_s`kullanın.
 
 `_fsize_t size`<br/>
 Dosyanın bayt cinsinden uzunluğu.
 
-`char name`[ `_MAX_PATH`] Yol olmadan eşleşen dosya veya dizinin null ile sonlandırılmış adı.
+`char name`[`_MAX_PATH`] eşleşen dosya veya dizinin null ile sonlandırılmış adı, yol olmadan.
 
 FAT sistemi gibi bir dosyanın oluşturma ve son erişim zamanlarını desteklemeyen dosya sistemlerinde, `time_create` ve `time_access` alanları her zaman-1L ' dir.
 
 `_MAX_PATH`, Stdlib. h 'de 260 bayt olarak tanımlanmıştır.
 
-Bulma işlemini sınırlandırmak için hedef öznitelikleri ( `_A_RDONLY`gibi) belirtemezsiniz. Bu öznitelikler, `attrib` `_finddata_t` yapının alanında döndürülür ve aşağıdaki değerlere sahip olabilir (GÇ. h içinde tanımlanmıştır). Kullanıcılar, `attrib` alan için mümkün olan tek değerleri değil, bunlara güvenmemelidir.
+Bulma işlemini sınırlandırmak için hedef öznitelikleri (örneğin, `_A_RDONLY`) belirtemezsiniz. Bu öznitelikler, `_finddata_t` yapısının `attrib` alanında döndürülür ve aşağıdaki değerlere sahip olabilir (GÇ. h içinde tanımlanmıştır). Kullanıcılar, `attrib` alanı için mümkün olan tek değerler olmamalıdır.
 
 `_A_ARCH`<br/>
-Arşivliyorsanız. Dosya her değiştirildiğinde ve **yedekleme** komutu tarafından temizlendiğinde ayarlanır. Deeri 0x20.
+Arşivliyorsanız. Dosya her değiştirildiğinde ve **yedekleme** komutu tarafından temizlendiğinde ayarlanır. Değer: 0x20.
 
 `_A_HIDDEN`<br/>
-Gizli dosya. **/Ah** seçeneğini kullanmadığınız müddetçe, genellikle dır komutuyla birlikte görünmez. Bu özniteliğe sahip normal dosyalar ve dosyalar hakkında bilgi döndürür. Deeri 0x02 şeklindedir.
+Gizli dosya. **/Ah** seçeneğini kullanmadığınız müddetçe, genellikle dır komutuyla birlikte görünmez. Bu özniteliğe sahip normal dosyalar ve dosyalar hakkında bilgi döndürür. Değer: 0x02.
 
 `_A_NORMAL`<br/>
-Olağan. Dosya başka bir özniteliğe ayarlı değil ve kısıtlama olmadan okunabilir veya yazılabilir. Deeri -.
+Olağan. Dosya başka bir özniteliğe ayarlı değil ve kısıtlama olmadan okunabilir veya yazılabilir. Değer: 0x00.
 
 `_A_RDONLY`<br/>
-Salt okunur. Dosya yazma için açılamıyor ve aynı ada sahip bir dosya oluşturulamıyor. Deeri 0x01.
+Salt okunur. Dosya yazma için açılamıyor ve aynı ada sahip bir dosya oluşturulamıyor. Değer: 0x01.
 
 `_A_SUBDIR`<br/>
-Dizin. Deeri 0x10.
+Dizin. Değer: 0x10.
 
 `_A_SYSTEM`<br/>
-Sistem dosyası. **/A** veya **/a: S** seçeneği kullanılmamışsa normalde **dır** komutuyla görünmez. Deeri 0x04.
+Sistem dosyası. **/A** veya **/a: S** seçeneği kullanılmamışsa normalde **dır** komutuyla görünmez. Değer: 0x04.
 
-`_findnext`daha önceki bir `filespec` `_findfirst`çağrısında belirtilen bağımsız değişkenle eşleşen bir sonraki adı bulur. Bağımsız değişkeni, önceki `_findfirst`çağrısıyla başlatılan bir yapıya işaret etmelidir. `fileinfo` Bir eşleşme bulunursa, `fileinfo` yapı içerikleri daha önce açıklandığı gibi değiştirilir. Aksi takdirde, değiştirilmez. `_findclose`Belirtilen arama tutamacını kapatır ve hem hem de `_findfirst` `_findnext`tüm ilişkili kaynakları serbest bırakır. Ya da `_findfirst` `_findnext` önce tarafındandöndürülentanıtıcı,silmegibideğişiklikişlemleri,bunlarageçirilenyollarıoluşturandizinlerdegerçekleştirilebilir.`_findclose`
+`_findnext`, varsa, daha önceki `_findfirst`çağrısında belirtilen `filespec` bağımsız değişkeniyle eşleşen bir sonraki adı bulur. `fileinfo` bağımsız değişkeni, önceki `_findfirst`çağrısıyla başlatılan bir yapıya işaret etmelidir. Bir eşleşme bulunursa `fileinfo` yapısı içerikleri daha önce açıklandığı gibi değiştirilir. Aksi takdirde, değiştirilmez. `_findclose`, belirtilen arama tutamacını kapatır ve hem `_findfirst` hem de `_findnext`ilişkili tüm kaynakları yayınlar. `_findfirst` ya da `_findnext` tarafından döndürülen tanıtıcı,, silme gibi değişiklik işlemleri, bunlara geçirilen yolları oluşturan dizinlerde gerçekleştirilebilecek şekilde önce `_findclose`geçirilmelidir.
 
-`_find` İşlevleri iç içe geçirebilirsiniz. Örneğin, bir alt dizin olan dosyasına `_findfirst` bir `_findnext` çağrı veya dosya bulunursa yeni bir arama, veya `_findnext`için `_findfirst` başka bir çağrısıyla başlatılabilir.
+`_find` işlevlerini iç içe geçirebilirsiniz. Örneğin, `_findfirst` veya `_findnext` çağrısı bir alt dizin olan dosyayı bulursa, başka bir `_findfirst` veya `_findnext`çağrısıyla yeni bir arama başlatılabilir.
 
-`_wfindfirst`ve, `_findfirst` ve`_findnext`öğesinin geniş karakterli sürümleridir. `_wfindnext` Geniş karakterli sürümlerin yapı bağımsız değişkeni, GÇ. h içinde `_wfinddata_t` ve wchar. h içinde tanımlanan veri türüne sahiptir. Bu veri `_finddata_t` türü alanları, veri türüyle aynıdır, ancak `_wfinddata_t` ad alanı tür `char`yerine tür `wchar_t` olur. Aksi takdirde `_wfindfirst` ve `_findfirst` ile aynışekildedavranır.`_findnext` `_wfindnext`
+`_wfindfirst` ve `_wfindnext`, `_findfirst` ve `_findnext`'ın geniş karakterli sürümleridir. Geniş karakterli sürümlerin yapı bağımsız değişkeni, GÇ. h içinde ve wchar. h içinde tanımlanan `_wfinddata_t` veri türüne sahiptir. Bu veri türü alanları, `_wfinddata_t` ad alanı `char`türü yerine `wchar_t` türünde olması dışında `_finddata_t` veri türüyle aynıdır. Aksi takdirde `_wfindfirst` ve `_wfindnext` `_findfirst` ve `_findnext`aynı şekilde davranır.
 
-`_findfirst`ve `_findnext` 64 bitlik saat türünü kullanın. Eski 32 bit zaman türünü kullanmanız gerekiyorsa tanımlayabilir `_USE_32BIT_TIME_T`. Adlarında `32` sonekine sahip bu işlevlerin sürümleri 32 bitlik saat türünü kullanır ve `64` sonekine sahip olanlar 64 bit zaman türünü kullanır.
+`_findfirst` ve `_findnext` 64 bit zaman türünü kullanır. Eski 32 bit zaman türünü kullanmanız gerekiyorsa `_USE_32BIT_TIME_T`tanımlayabilirsiniz. Adlarında `32` sonekine sahip bu işlevlerin sürümleri 32 bitlik saat türünü kullanır ve `64` sonekine sahip olanlar 64 bit zaman türünü kullanır.
 
-, `_findfirst32i64`, `_findnext32i64`Ve işlevleri`_wfindnext32i64` , kullandıkları ve 64 bit dosya uzunluklarının döndürdüğü durumlar hariç, bu işlevlerin 32 bitlik zaman türü sürümleriyle aynı şekilde davranır. `_wfindfirst32i64` , `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`Ve işlevleri`_wfindnext64i32` 64 bitlik saat türünü kullanır, ancak 32 bit dosya uzunluklarını kullanır. Bu işlevler, zaman ve dosya boyutu `_finddata_t` için alanların farklı türlerine sahip olduğu türün uygun çeşitlemelerini kullanır.
+`_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`ve `_wfindnext32i64` işlevleri, kullandıkları ve 64 bit dosya uzunluklarının döndürdüğü durumlar hariç, bu işlevlerin 32 bitlik zaman türü sürümleriyle aynı şekilde davranır. İşlevler `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`ve `_wfindnext64i32` 64 bit zaman türünü kullanır, ancak 32 bit dosya uzunluklarını kullanır. Bu işlevler, zaman ve dosya boyutu için alanların farklı türlerine sahip olduğu `_finddata_t` türünün uygun çeşitlemelerini kullanır.
 
-`_finddata_t`Aslında `_finddata64i32_t` `_finddata32_t` (`_USE_32BIT_TIME_T` veya tanımlanmışsa) sonucunu veren bir makrodur. Aşağıdaki tabloda üzerinde `_finddata_t`Çeşitlemeler özetlenmektedir:
+`_finddata_t`, aslında `_finddata64i32_t` değerlendirilen bir makrodur (veya `_USE_32BIT_TIME_T` tanımlanmışsa `_finddata32_t`). Aşağıdaki tabloda `_finddata_t`çeşitlemeleri özetlenmektedir:
 
 |Yapı|Zaman türü|Dosya boyutu türü|
 |---------------|---------------|--------------------|
@@ -104,11 +104,11 @@ Sistem dosyası. **/A** veya **/a: S** seçeneği kullanılmamışsa normalde **
 |`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|`__int64`|
 |`_finddata64i32_t`, `_wfinddata64i32_t`|`__time64_t`|`_fsize_t`|
 
-`_fsize_t`, için `typedef` `unsigned long` bir (32 bit).
+`_fsize_t`, `unsigned long` için bir `typedef` (32 bit).
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // crt_find.c
 // This program uses the 32-bit _find functions to print
 // a list of all files (and their attributes) with a .C extension

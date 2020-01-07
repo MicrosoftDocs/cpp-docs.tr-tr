@@ -1,6 +1,6 @@
 ---
 title: lfind
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - lfind
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - lfind function
 ms.assetid: 2528e787-94b6-4740-8a8d-6efc276d1f42
-ms.openlocfilehash: 7e2b79b67e14421e03fe8761a412de9ad4a5e1cc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7a1ac69bbebfea45345c7dae17b18f02b84228cd
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950536"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300920"
 ---
 # <a name="lfind"></a>lfind
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_lfind](lfind.md) veya Security-Enhanced [_lfind_s](lfind-s.md) kullanın.
+Microsoft tarafından uygulanan POSIX işlev adı `lfind`, [_lfind](lfind.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_lfind](lfind.md) veya güvenlik ile gelişmiş [_lfind_s](lfind-s.md) işlevi kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

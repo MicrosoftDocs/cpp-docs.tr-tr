@@ -8,32 +8,32 @@ helpviewer_keywords:
 - parsing, command-line arguments
 - startup code, parsing command-line arguments
 ms.assetid: ffce8037-2811-45c4-8db4-1ed787859c80
-ms.openlocfilehash: da8a21ac9ff7ce4fd6bde4d2d1e50d8f30806b78
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: ace6d1b8295d0901ef22f3c354b32ad17e296e87
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343170"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299097"
 ---
 # <a name="parsing-c-command-line-arguments"></a>C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Microsoft C başlatma kodunu, işletim sistemi komut satırında belirtilen bağımsız değişkenler yorumlarken aşağıdaki kuralları kullanır:
+Microsoft C başlangıç kodu, işletim sistemi komut satırında verilen bağımsız değişkenleri yorumlarken aşağıdaki kuralları kullanır:
 
-- Bağımsız değişkenler bir boşluk veya sekme olduğu boşluk tarafından ayrılmış.
+- Bağımsız değişkenler boşluk veya sekme olan boşluk ile sınırlandırılmıştır.
 
-- Çift tırnak işareti içine alınmış bir dize içindeki boşluk bağımsız olarak tek bir bağımsız değişken olarak yorumlanır. Tırnak işaretli dize bağımsız değişkeni eklenebilir. Unutmayın giriş işaretini (**^**) bir kaçış karakteri veya sınırlayıcı olarak tanınmıyor.
+- Çift tırnak işareti içine alınmış bir dize, içinde yer alan boşluk ne olursa olsun tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınmış bir dize bir bağımsız değişkene gömülebilir. Giriş işaretinin ( **^** ) bir kaçış karakteri veya sınırlayıcı olarak tanınmadığını unutmayın.
 
-- Çift tırnak işareti bir ters eğik çizgi  **\\"**, değişmez değer çift tırnak işareti yorumlanır (**"**).
+- Önünde ters eğik çizgi, **\\"** olan çift tırnak işareti, değişmez değer çift tırnak işareti ( **"** ) olarak yorumlanır.
 
-- Ters eğik çizgi, başka bir deyişle, bunlar hemen çift tırnak işareti koyun sürece yorumlanır.
+- Ters eğik çizgiler, bir çift tırnak işaretinden hemen önce gelmedikleri takdirde tam olarak yorumlanır.
 
-- Ters eğik çizgi sayıda çift tırnak işareti ve sonra bir ters eğik çizgi izlediyseniz (**\\**) yerleştirildiğinden `argv` dizisi için her çift ters eğik çizgi (**\\ \\**) ve çift tırnak işareti (**"**) dize ayırıcı olarak yorumlanır.
+- Çift sayıda ters eğik çizgiden sonra çift tırnak işareti varsa, bir ters eğik çizgi ( **\\** ) her ters eğik çizgi ( **\\\\** ) için `argv` dizisine yerleştirilir ve çift tırnak işareti ( **"** ) bir dize sınırlayıcısı olarak yorumlanır.
 
-- Ters eğik çizgi tek sayıda çift tırnak işareti ve sonra bir ters eğik çizgi izlediyseniz (**\\**) yerleştirildiğinden `argv` dizisi için her çift ters eğik çizgi (**\\ \\**) ve çift tırnak işareti sabit değeri çift tırnak işareti neden kalan eğik bir kaçış dizisi yorumlanır (**"**) yerleştirileceği `argv`.
+- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, bir ters eğik çizgi ( **\\** ) her ters eğik çizgi ( **\\\\** ) için `argv` dizisine yerleştirilir ve çift tırnak işareti kalan ters eğik çizgi tarafından bir kaçış sırası olarak yorumlanır ve bu değer bir çift tırnak işaretine ( **"** ) `argv`yerleştirilir.
 
-Bu liste geçirilen yorumlanan sonucu göstererek kurallarına yukarıda gösterilmiştir `argv` çeşitli örneklerini komut satırı bağımsız değişkenleri için. Üçüncü olarak, çıkış saniye içinde listelenen ve dördüncü sütun ise ARGS. C programında listesini izler.
+Bu liste, komut satırı bağımsız değişkenlerinin birkaç örneği için `argv` geçirilen yorumlanan sonucu göstererek yukarıdaki kuralları gösterir. İkinci, üçüncü ve dördüncü sütunlarda listelenen çıktı, bağımsız değişkenleri. Listeyi izleyen C programı.
 
 |Komut satırı girişi|argv [1]|argv [2]|argv [3]|
 |-------------------------|---------------|---------------|---------------|
@@ -47,7 +47,7 @@ Bu liste geçirilen yorumlanan sonucu göstererek kurallarına yukarıda göster
 
 ### <a name="code"></a>Kod
 
-```
+```c
 // Parsing_C_Commandline_args.c
 // ARGS.C illustrates the following variables used for accessing
 // command-line arguments and environment variables:
@@ -78,7 +78,7 @@ char **envp )      // Array of environment variable strings
 
 ## <a name="comments"></a>Açıklamalar
 
-Bu programdan çıktının bir örneği verilmiştir:
+Bu programdan alınan bir çıkış örneği şunlardır:
 
 ```
 Command-line arguments:
@@ -95,7 +95,7 @@ Environment variables:
   WINDIR=c:\nt
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

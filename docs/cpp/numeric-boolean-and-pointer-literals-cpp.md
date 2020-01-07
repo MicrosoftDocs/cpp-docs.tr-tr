@@ -1,23 +1,23 @@
 ---
-title: Sayısal, Boole ve işaretçi değişmez değerleri (C++)
+title: Sayısal, Boole ve işaretçi değişmez değerleriC++()
 ms.date: 11/04/2016
 helpviewer_keywords:
 - literals, C++
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-ms.openlocfilehash: f263e9a2ed357cdc80ec29fc5d1b6d58c9e093e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 467300501ffbbf8063e203d4c7395af34a954ed0
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245108"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301372"
 ---
-# <a name="numeric-boolean-and-pointer-literals--c"></a>Sayısal, Boole ve işaretçi değişmez değerleri (C++)
+# <a name="numeric-boolean-and-pointer-literals"></a>Sayısal, Boole ve işaretçi değişmez değerleri
 
-Bir sabit değer doğrudan bir değeri temsil eden bir program öğesidir. Bu makale türü tamsayı sabit değerleri kapsar kayan nokta, Boole ve işaretçi. Dize ve karakter değişmez değerleri hakkında daha fazla bilgi için bkz. [dize ve karakter değişmez değerleri (C++)](../cpp/string-and-character-literals-cpp.md). Ayrıca, herhangi kategorilerine göre kendi değişmez değerleri tanımlayabilirsiniz; Daha fazla bilgi için [kullanıcı tanımlı değişmez değerler (C++)](../cpp/user-defined-literals-cpp.md)
+Değişmez değer, doğrudan bir değeri temsil eden bir program öğesidir. Bu makale Integer, kayan nokta, Boolean ve işaretçi türündeki sabit değerleri içerir. Dize ve karakter değişmez değerleri hakkında daha fazla bilgi için bkz. [dize veC++karakter değişmez değerleri ()](../cpp/string-and-character-literals-cpp.md). Ayrıca, bu kategorilerden herhangi birine göre kendi sabit değerlerini de tanımlayabilirsiniz; daha fazla bilgi için bkz. [Kullanıcı tanımlı değişmezC++değerler ()](../cpp/user-defined-literals-cpp.md)
 
-biçimindeki telefon numarasıdır. Adlandırılmış değişkenlerini başlatmak ve İşlevler bağımsız değişkenleri geçirmek için yaygın olarak birçok bağlamları, ancak çoğu değişmez değerleri kullanabilirsiniz:
+. Birden çok bağlamdaki sabit değerleri kullanabilirsiniz, ancak çoğunlukla adlandırılmış değişkenleri başlatabilir ve bağımsız değişkenleri işlevlere geçirebilirsiniz:
 
 ```cpp
 const int answer = 42; // integer literal
@@ -26,17 +26,15 @@ bool b = true;              // boolean literal
 MyClass* mc = nullptr;      // pointer literal
 ```
 
-Bazen derleyicinin bir sabit değer yorumlama ya da ona vermek için belirli ne tür bildirmek önemlidir. Ön eklerin veya soneklerin değişmez değer ekleyerek bunu yapabilirsiniz. Örneğin, önek 0 x bir onaltılık değer, örneğin 0x35 takip eden sayısı olarak yorumlamak üzere söyler. TAM soneki değeri değerlendirilecek derleyiciye bir **işaretsiz long long** 5894345ULL olduğu gibi bir tür. Ön ekleri tam listesi için aşağıdaki bölümlere ve her değişmez değer türü soneklerini bakın.
-
-## <a name="syntax"></a>Sözdizimi
+Bazen derleyiciye bir hazır değeri nasıl yorumlayacağını ya da kendisine verilecek belirli türü söylemeniz önemlidir. Bunu, değişmez değere ön ekler veya sonekler ekleyerek yapabilirsiniz. Örneğin, 0x öneki derleyiciye bunu izleyen sayıyı onaltılık bir değer olarak yorumlamasını söyler, örneğin, 0x35. ULL soneki, derleyicinin değeri 5894345ULL gibi **işaretsiz uzun bir Long** türü olarak görmesini söyler. Her sabit değer türü için ön eklerin ve son eklerin listesi için aşağıdaki bölümlere bakın.
 
 ## <a name="integer-literals"></a>Tamsayı sabit değerleri
 
-Tamsayı sabit değerlerinde, bir rakam ile başlamalı ve hiç kesirli bölümleri veya üsleri olmayan. Tamsayı sabit değerlerinde ondalık, sekizlik veya onaltılık biçiminde belirtebilirsiniz. İşaretli veya işaretsiz türleri ve uzun veya kısa türleri belirtebilirler.
+Tamsayı sabit değerleri bir basamakla başlar ve kesirli parçaları ya da üsleri içermez. Tamsayı sabit değerlerini ondalık, sekizli veya onaltılı biçimde belirtebilirsiniz. İşaretli veya işaretsiz türleri ve uzun veya kısa türleri belirtebilirler.
 
-Hiçbir ön ek veya sonek varsa, derleyici bir tamsayı değişmez değer türü sunacak **int** (32 bit) değeri alabileceğinden, aksi takdirde, verir, türü **uzun uzun** (64 bit).
+Ön ek veya son ek olmadığında, derleyici **tamsayı (32** bit) türünde bir tamsayı değeri verir, aksi takdirde bu değer, bu tür **uzun uzun** (64 bit) olur.
 
-Bir ondalık tamsayı sabit değeri belirtmek için belirtimi sıfır olmayan basamakla başlayın. Örneğin:
+Ondalık integral sabit değerini belirtmek için, belirtimi sıfır dışında bir basamakla başlatın. Örneğin:
 
 ```cpp
 int i = 157;   // Decimal literal
@@ -46,21 +44,21 @@ int m = 36'000'000  // digit separators make large values more readable
 int
 ```
 
-Sekizlik bir tamsayı sabit değeri belirtmek için belirtime 0, 0 ila 7 basamaktan oluşan bir diziyle ardından başlayın. 8 ve 9 basamakları, sekizlik bir sabit değer belirtilirken hatalardır. Örneğin:
+Sekizlik bir integral sabit değer belirtmek için, belirtimi 0 ile, ardından 0 ile 7 aralığındaki bir dizi basamakla başlatın. 8 ve 9 rakamları, sekizlik bir sabit değer belirtirken hatalar. Örneğin:
 
 ```cpp
 int i = 0377;   // Octal literal
 int j = 0397;        // Error: 9 is not an octal digit
 ```
 
-Onaltılık bir tamsayı sabit değeri belirtmek için belirtime başlamak `0x` veya `0X` ("x" durumunda, aralığındaki basamaklardan oluşan bir diziyle ardından önemli değildir) `0` aracılığıyla `9` ve `a` (veya `A`) aracılığıyla `f` (veya `F`). `a` (veya `A`) ile `f` (veya `F`) arasındaki onaltılık basamaklar, 10 ile 15 aralığındaki değerleri temsil eder. Örneğin:
+Onaltılı bir integral sabit değeri belirtmek için, `0x` veya `0X` ("x" büyük/küçük harf) ' i ile, `a` (veya `A`) `f` aracılığıyla `9` ve `F`(veya) arasında bir `0` basamak dizisi. `a` (veya `A`) ile `f` (veya `F`) arasındaki onaltılık basamaklar, 10 ile 15 aralığındaki değerleri temsil eder. Örneğin:
 
 ```cpp
 int i = 0x3fff;   // Hexadecimal literal
 int j = 0X3FFF;        // Equal to i
 ```
 
-İşaretsiz bir türü belirtmek için kullanın `u` veya `U` soneki. Uzun bir tür belirtmek için kullanın `l` veya `L` soneki. Bir 64-bit tamsayı türünü belirtmek için LL veya tümünü sonekini kullanın. İ64 sonekini hala desteklenmektedir, ancak Microsoft'a özgüdür ve taşınabilir değildir çünkü kaçınılmalıdır. Örneğin:
+İşaretsiz bir tür belirtmek için `u` ya da `U` sonekini kullanın. Uzun bir tür belirtmek için `l` ya da `L` sonekini kullanın. 64 bitlik bir integral türü belirtmek için LL veya ll sonekini kullanın. İ64 soneki hala desteklenmektedir, ancak Microsoft 'a özgü olduğundan ve taşınabilir olmadığından kaçınılmalıdır. Örneğin:
 
 ```cpp
 unsigned val_1 = 328u;             // Unsigned value
@@ -71,35 +69,35 @@ auto val_4 = 108LL;                           // signed long long
 auto val_4 = 0x8000000000000000ULL << 16;     // unsigned long long
 ```
 
-**Rakam ayırıcıları**: Okunacak insanlar daha kolay hale getirmek için daha büyük sayılar değerlerde yer ayırmak için tek tırnak işareti karakteri (kesme işareti) kullanabilirsiniz. Ayırıcılar derleme üzerinde etkisi yoktur.
+**Basamak ayırıcıları**: tek tırnak karakterini (kesme işareti) kullanarak, insanların okunmasını kolaylaştırmak için değerleri daha büyük sayılara ayırabilirsiniz. Ayırıcıların derleme üzerinde hiçbir etkisi yoktur.
 
 ```cpp
 long long i = 24'847'458'121
 ```
 
-## <a name="floating-point-literals"></a>Kayan nokta değişmez değerleri
+## <a name="floating-point-literals"></a>Kayan nokta sabit değerleri
 
-Kayan noktalı sabit değerleri kesirli bir kısmı gereken değerleri belirtin. Bu değerler ondalık noktası içerir (**.**) ve Üstel sayı içerebilir.
+Kayan nokta değişmez değerleri, kesirli bir bölümü olması gereken değerleri belirtir. Bu değerler, ondalık noktaları ( **.** ) içerir ve üsleri içerebilir.
 
-Kayan noktalı sabit değerleri "sayısı,"sayı büyüklüğünü belirten bir üs"ve değişmez değerin alacağı türünü belirten isteğe bağlı bir sonek değeri belirten bir Mantis," vardır. Mantis bir nokta, isteğe bağlı bir sayının kesirli kısmını temsil eden bir basamak dizisi tarafından izlediği bir basamak dizisi olarak belirtilir. Örneğin:
+Kayan nokta değişmez değerleri, sayının değerini belirten bir "Mantis", sayının boyutunu belirten bir "üs" ve değişmez değerin türünü belirten isteğe bağlı bir sonek. Mantis bir rakam ve ardından bir nokta ve sonra sayının kesirli kısmını temsil eden isteğe bağlı bir basamak sırası olarak belirtilir. Örneğin:
 
 ```cpp
 18.46
 38.
 ```
 
-Üs varsa, büyüklük sayının 10 üssü aşağıdaki örnekte gösterildiği gibi belirtir:
+Varsa üs değeri, aşağıdaki örnekte gösterildiği gibi, sayının 10 ' un bir kuvvetinin büyüklüğünü belirtir:
 
 ```cpp
 18.46e0      // 18.46
 18.46e1           // 184.6
 ```
 
-Üs kullanırken belirtilebilir `e` veya `E`, bir isteğe bağlı işaretiyle birlikte aynı anlama sahiptir (+ veya -) ve bir basamak dizisi.  Sondaki ondalık gibi bir üs varsa, tam sayı olarak gerekli değildir. `18E0`.
+Üs değeri, aynı anlamı olan `e` veya `E`kullanılarak belirtilebilir, sonra isteğe bağlı bir işaret (+ veya-) ve bir basamak dizisi gelir.  Bir üs varsa, sondaki ondalık basamak, `18E0`gibi bütün sayılarda gereksizdir.
 
-Kayan noktalı sabit değerleri türü varsayılan **çift**. Sonekleri kullanarak `f` veya `l` (veya `F` veya `L` — soneki büyük küçük harfe duyarlı değil), değişmez değer olarak belirtilen **float** veya **uzun çift**, sırasıyla.
+Kayan nokta değişmez değerleri **Double**türüne varsayılan değer. Son ek `f` veya `l` (veya `F` ya da `L` — sonek büyük/küçük harfe duyarlı değildir) kullanarak, sabit değer sırasıyla **float** veya **Long Double**olarak belirtilebilir.
 
-Ancak **uzun çift** ve **çift** aynı gösterimi vardır, bunlar aynı türde değil. Örneğin, sizin gibi işlevleri aşırı yüklenmiş
+**Long Double** ve **Double** aynı gösterimine sahip olsa da, aynı türde değildir. Örneğin, şu gibi aşırı yüklenmiş işlevlere sahip olabilirsiniz
 
 ```cpp
 void func( double );
@@ -113,34 +111,34 @@ void func( long double );
 
 ## <a name="boolean-literals"></a>Boole sabit değerleri
 
-Boole sabit değerler **true** ve **false**.
+Boolean sabit değerleri **true** ve **false**şeklindedir.
 
-## <a name="pointer-literal-c11"></a>İşaretçi sabit değeri (C ++ 11)
+## <a name="pointer-literal-c11"></a>İşaretçi sabit değeri (C++ 11)
 
-C++'ı tanıtır [nullptr](../cpp/nullptr.md) literal sıfır başlatılmayan bir işaretçi belirtin. Taşınabilir kodda **nullptr** integral türünden sıfır ya da NULL gibi makrolar yerine kullanılmalıdır.
+C++sıfır ile başlatılmış bir işaretçi belirtmek için [nullptr](../cpp/nullptr.md) değişmez değerini tanıtır. Taşınabilir kodda, tam sayı türü sıfır veya NULL gibi makrolar yerine **nullptr** kullanılmalıdır.
 
-## <a name="binary-literals-c14"></a>İkili sabit dizeler (C ++ 14)
+## <a name="binary-literals-c14"></a>İkili sabit değerler (C++ 14)
 
-Bir ikili sabit değerinin kullanımı tarafından belirtilebilir `0B` veya `0b` 1 ve 0'ın bir dizi tarafından izlenen öneki:
+Bir ikili değişmez değer, `0B` veya `0b` öneki ile, ardından 1 ve 0 ' ın bir dizisi tarafından belirtilebilir:
 
 ```cpp
 auto x = 0B001101 ; // int
 auto y = 0b000001 ; // int
 ```
 
-## <a name="avoid-using-literals-as-magic-constants"></a>Sabit değerleri "Sihirli sabitler" kullanmaktan kaçının
+## <a name="avoid-using-literals-as-magic-constants"></a>Değişmez değerler "sihirli sabitler" olarak kullanmaktan kaçının
 
-Her zaman iyi bir programlama olmamasına karşın, doğrudan ifadeleri ve deyimlerini'deki değişmez değerleri kullanabilirsiniz:
+Her zaman iyi programlama uygulaması olmasa da, değişmez değerleri doğrudan ifadelerde ve deyimlerde kullanabilirsiniz:
 
 ```cpp
 if (num < 100)
     return "Success";
 ```
 
-Önceki örnekte, düz bir anlamı, örneğin "MAXIMUM_ERROR_THRESHOLD" ileten bir adlandırılmış sabiti kullanmak daha iyi olabilir. Ve "Başarılı", son kullanıcılar, ardından tarafından görülür. döndürülen değer, burada diğer dile yerelleştirilebilen bir dosyadan tek bir konumda depolanan bir adlandırılmış dize sabit kullanılması daha iyidir. Adlandırılmış sabitler kullanmak, diğerlerinin yanı sıra kodun amacı anlamak için kendinize yardımcı olur.
+Önceki örnekte, "MAXIMUM_ERROR_THRESHOLD" gibi açık bir anlamı veren adlandırılmış bir sabiti kullanmak daha iyi olabilir. "Başarı" dönüş değeri son kullanıcılar tarafından görüeyse, diğer dillere yerelleştirilebilecek bir dosyada tek bir konumda depolanabilecek adlandırılmış bir dize sabiti kullanmak daha iyi olabilir. Adlandırılmış sabitlerin kullanılması, kodun amacını anlamak için başkalarının yanı sıra kendinize de yardımcı olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)<br/>
-[C++ dize değişmez değerleri](../cpp/string-and-character-literals-cpp.md)<br/>
-[C++ kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md)
+[C++Dize sabit değerleri](../cpp/string-and-character-literals-cpp.md)<br/>
+[C++Kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md)

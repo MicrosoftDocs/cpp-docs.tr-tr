@@ -1,19 +1,19 @@
 ---
 title: GOTO (MASM)
-ms.date: 08/30/2018
+ms.date: 12/16/2019
 f1_keywords:
 - goto
 helpviewer_keywords:
 - GOTO directive
 ms.assetid: 6a5f73e7-6784-4eae-ac52-4fc77a7f369f
-ms.openlocfilehash: 424ff295fe37e7c5ff02897a01b99a7c75876f85
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: f198658f9a4b85e0b5ec9b7a0c122241e57286f6
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397490"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317285"
 ---
-# <a name="goto-masm"></a>GOTO (MASM)
+# <a name="goto"></a>GOTO
 
 Derlemeyi işaretlenen satıra aktarır **:** _makro etiketi_.
 
@@ -27,4 +27,5 @@ Derlemeyi işaretlenen satıra aktarır **:** _makro etiketi_.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

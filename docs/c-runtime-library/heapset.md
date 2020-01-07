@@ -25,12 +25,12 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 65b74798c4b3b513acea0b51ecc0cb7df98391c1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c47ab59b1d8b9e73add640f7a7cf5fb146dc7c53
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944315"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300267"
 ---
 # <a name="_heapset"></a>_heapset
 
@@ -54,7 +54,7 @@ Karakteri doldur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_heapset`Malloc. h içinde tanımlanan aşağıdaki tamsayı bildirimi sabitlerinden birini döndürür.
+`_heapset`, malloc. h içinde tanımlanan aşağıdaki tamsayı bildirimi sabitlerinden birini döndürür.
 
 |||
 |-|-|
@@ -63,13 +63,13 @@ Karakteri doldur.
 | `_HEAPEMPTY`  | Yığın başlatılmadı.  |
 | `_HEAPOK`  | Yığın tutarlı görünüyor.  |
 
-Ayrıca, bir hata oluşursa, `_heapset` olarak `ENOSYS`ayarlanır `errno` .
+Ayrıca, bir hata oluşursa `_heapset` `errno` `ENOSYS`olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevi `_heapset` , yanlışlıkla üzerine yazılmış boş bellek konumlarını veya düğümlerini gösterir.
+`_heapset` işlevi, yanlışlıkla üzerine yazılan boş bellek konumlarını veya düğümlerini gösterir.
 
-`_heapset`yığında en az tutarlılığı denetler ve sonra yığının boş girişlerinin `fill` her baytını değere ayarlar. Bu bilinen değer, yığında serbest düğüm ve yanlışlıkla serbest bırakılmış belleğe yazılan verileri içeren hangi bellek konumlarının olduğunu gösterir. İşletim sistemi desteklemiyorsa `_heapset`(örneğin, Windows 98), işlev öğesini döndürür `_HEAPOK` ve öğesini olarak `ENOSYS`ayarlar `errno` .
+`_heapset` yığın üzerinde en az tutarlılığı denetler ve sonra yığının boş girişlerinin her baytını `fill` değerine ayarlar. Bu bilinen değer, yığında serbest düğüm ve yanlışlıkla serbest bırakılmış belleğe yazılan verileri içeren hangi bellek konumlarının olduğunu gösterir. İşletim sistemi `_heapset`(örneğin, Windows 98) desteklemiyorsa, işlev `_HEAPOK` döndürür ve `errno` `ENOSYS`olarak ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -81,7 +81,7 @@ Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // crt_heapset.c
 // This program checks the heap and
 // fills in free entries with the character 'Z'.

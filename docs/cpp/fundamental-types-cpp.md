@@ -1,6 +1,6 @@
 ---
-title: Temel Türler (C++)
-ms.date: 11/04/2016
+title: Yerleşik türler (C++)
+ms.date: 12/11/2019
 f1_keywords:
 - __int128_cpp
 - __wchar_t_cpp
@@ -43,32 +43,32 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: daa2ad2680a9d7d0239a70ed37ec1d90a3d96d97
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: f6bfc72bf279d09e89423866d9cb46ad3496b49c
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857547"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301502"
 ---
-# <a name="fundamental-types--c"></a>Temel Türler (C++)
+# <a name="built-in-types-c"></a>Yerleşik türler (C++)
 
-İçindeki C++ temel türler üç kategoriye ayrılmıştır: integral, kayan nokta ve void. Tam sayı türleri tam sayıları işleme yeteneğine sahiptir. Kayan nokta türleri kesirli parçaları olabilecek değerleri belirtmektir.
+Yerleşik türler ( *temel türler*de denir) C++ dil standardı tarafından belirtilir ve derleyicide yerleşik olarak bulunur. Yerleşik türler herhangi bir başlık dosyasında tanımlı değil. Yerleşik türler üç kategoriye ayrılmıştır: integral, kayan nokta ve void. Integral türleri tam sayıları işleyebilir. Kayan nokta türleri kesirli parçaları olabilecek değerleri belirtmektir.
 
-[Void](../cpp/void-cpp.md) türü boş bir değer kümesi tanımlar. **Void** türünde bir değişken belirtilemez — birincil olarak değer döndürmeyen işlevleri bildirmek veya türsüz ya da rasgele yazılmış verilere genel işaretçiler bildirmek için kullanılır. Herhangi bir ifade açıkça dönüştürülebilirler veya **void**türüne dönüştürülebilir. Ancak söz konusu ifadelerin aşağıdaki kullanımları kısıtlanmıştır:
+[Void](void-cpp.md) türü boş bir değer kümesi tanımlar. **Void** türünde bir değişken belirtilemez — birincil olarak değer döndürmeyen işlevleri bildirmek veya türsüz ya da rasgele yazılmış verilere genel işaretçiler bildirmek için kullanılır. Herhangi bir ifade açıkça dönüştürülebilirler veya **void**türüne dönüştürülebilir. Ancak, bu tür ifadeler aşağıdaki kullanımlar ile kısıtlıdır:
 
-- Bir ifade deyimi. (Daha fazla bilgi için bkz. [ifadeler](../cpp/expressions-cpp.md).)
+- Bir ifade deyimi. (Daha fazla bilgi için bkz. [ifadeler](expressions-cpp.md).)
 
-- Virgül işlecinin sol işleneni. (Daha fazla bilgi için bkz. [virgül işleci](../cpp/comma-operator.md) .)
+- Virgül işlecinin sol işleneni. (Daha fazla bilgi için bkz. [virgül işleci](comma-operator.md).)
 
-- Koşullu işlecin ikinci veya üçüncü işleneni (`? :`). (Daha fazla bilgi için bkz. [koşullu işlece sahip ifadeler](../cpp/conditional-operator-q.md) .)
+- Koşullu işlecin ikinci veya üçüncü işleneni (`? :`). (Daha fazla bilgi için bkz. [koşullu işlece sahip ifadeler](conditional-operator-q.md).)
 
-Aşağıdaki tabloda tür boyutlarına ilişkin kısıtlamalar açıklanır. Bu sınırlamalar, Microsoft uygulamasından bağımsızdır.
+Aşağıdaki tabloda, bir birbirleriyle bağlantılı olarak tür boyutlarıyla ilgili kısıtlamalar açıklanmaktadır. Bu kısıtlamalar C++ standart tarafından uygulanan ve Microsoft uygulamasından bağımsızdır. Belirli yerleşik türlerin mutlak boyutu standart olarak belirtilmez.
 
-### <a name="fundamental-types-of-the-c-language"></a>C++ Dilinin Temel Türleri
+### <a name="built-in-type-size-restrictions"></a>Yerleşik tür boyutu kısıtlamaları
 
 |Kategori|Tür|İçindekiler|
 |--------------|----------|--------------|
-|Integral|**char**|**Karakter** türü, genellikle temel yürütme karakter kümesinin üyelerini içeren bir integral türüdür; varsayılan olarak bu, MICROSOFT C++içinde ASCII 'dir.<br /><br /> C++ Derleyici **char**, **signed char**ve **işaretsiz char** türündeki değişkenleri farklı türlere sahip olacak şekilde değerlendirir. **Karakter** türündeki değişkenler,/j derleme seçeneği kullanılmadığı sürece varsayılan olarak **imzalanmış char** olarak yazılır gibi **int** 'e yükseltilir. Bu durumda, **imzasız char** türü olarak kabul edilir ve imza uzantısı olmadan **int** 'e yükseltilir.|
+|Tam|**char**|**Karakter** türü, genellikle temel yürütme karakter kümesinin üyelerini içeren bir integral türüdür; varsayılan olarak bu, MICROSOFT C++içinde ASCII 'dir.<br /><br /> C++ Derleyici **char**, **signed char**ve **işaretsiz char** türündeki değişkenleri farklı türlere sahip olacak şekilde değerlendirir. **Karakter** türündeki değişkenler,/j derleme seçeneği kullanılmadığı sürece varsayılan olarak **imzalanmış char** olarak yazılır gibi **int** 'e yükseltilir. Bu durumda, **imzasız karakter** türü olarak değerlendirilir ve imza uzantısı olmadan **int** 'e yükseltilir.|
 ||**bool**|**Bool** türü iki değerden biri **true** veya **false**olan bir integral türüdür. Boyutu belirtilmemiş.|
 ||**short**|**Short tamsayı** (veya kısaca **Short**) türü, **char**türünden büyük veya ona eşit olan bir tamsayı türüdür ve **int**türünden daha kısa veya ona eşittir.<br /><br /> **Short** türündeki nesneler, **imzalanmış Short** veya **işaretsiz kısa**olarak bildirilemez. **İmzalanan kısa** , **kısa**bir eşanlamlıdır.|
 ||**int**|**İnt** türü, **kısa tamsayı**türünden daha büyük veya ona eşit olan bir tamsayı türüdür ve **Long**türünden daha kısa veya ona eşittir.<br /><br /> **İnt** türündeki nesneler, **imzalanan int** veya **işaretsiz int**olarak bildirilemez. **İmzalanan int** , **int**için bir eş anladır.|
@@ -82,9 +82,9 @@ Aşağıdaki tabloda tür boyutlarına ilişkin kısıtlamalar açıklanır. Bu 
 
 **Microsoft 'a özgü**
 
-Aşağıdaki tablo Microsoft C++'da temel türler için gerekli depolama miktarını listeler.
+Aşağıdaki tabloda, Microsoft C++'taki yerleşik türler için gereken depolama alanı miktarı listelenmektedir. Özellikle, 64 bitlik işletim sistemlerinde bile 4 **bayt olduğunu unutmayın** .
 
-### <a name="sizes-of-fundamental-types"></a>Temel Türlerin Boyutları
+### <a name="sizes-of-built-in-types"></a>Yerleşik türlerin boyutları
 
 |Tür|Boyut|
 |----------|----------|
@@ -95,10 +95,10 @@ Aşağıdaki tablo Microsoft C++'da temel türler için gerekli depolama miktar�
 
 **SON Microsoft 'a özgü**
 
-Her türün değer aralığının bir özeti için bkz. [veri türü aralıkları](../cpp/data-type-ranges.md) .
+Her türün değer aralığının bir özeti için bkz. [veri türü aralıkları](data-type-ranges.md) .
 
-Tür dönüştürmesi hakkında daha fazla bilgi için bkz. [Standart dönüştürmeler](../cpp/standard-conversions.md).
+Tür dönüştürmesi hakkında daha fazla bilgi için bkz. [Standart dönüştürmeler](standard-conversions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Türü Aralıkları](../cpp/data-type-ranges.md)
+[Veri Türü Aralıkları](data-type-ranges.md)

@@ -1,6 +1,6 @@
 ---
 title: stricmp, wcsicmp
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - stricmp
 - wcsicmp
@@ -26,13 +26,15 @@ helpviewer_keywords:
 - stricmp function
 - wcsicmp function
 ms.assetid: 2e3c6703-2635-4961-a253-e2c4c5029ed8
-ms.openlocfilehash: 8288aa8c9b631b9c4d5317fb13fdbbfcd9cad40a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d47249a3b41c76bf87ece8ed2e8a0fbbfc05ff09
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958123"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300514"
 ---
 # <a name="stricmp-wcsicmp"></a>stricmp, wcsicmp
 
-Bu POSIX işlevleri kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_stricmp, _wcsıcmp, _mbsıcmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md) kullanın.
+`stricmp` ve `wcsicmp` Microsoft 'a özgü işlev adları [_stricmp ve _wcsicmp](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md) işlevlerinin kullanım dışı diğer adlarıdır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) oluşturur C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Adlar, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlevleri hala desteklenmektedir.
+
+Bunun yerine [_stricmp veya _wcsicmp](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md) kullanmanızı öneririz. Ya da bu işlev adlarını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

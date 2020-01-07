@@ -1,61 +1,64 @@
 ---
-title: Programlar ve bağlantı (C++)
-ms.date: 04/09/2018
+title: Çeviri birimleri ve bağlantı (C++)
+ms.date: 12/11/2019
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-ms.openlocfilehash: 4f509979a293f194333e610fbdae7be9d32ec121
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dcd66b454da3758996fe827581fe4a73a641407f
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301519"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301359"
 ---
-# <a name="program-and-linkage-c"></a>Program ve Bağlantı (C++)
+# <a name="translation-units-and-linkage"></a>Çeviri birimleri ve bağlantı
 
-C++ programında bir *sembol*, örneğin bir değişken veya işlev adı bildirilebilir kez kendi kapsamı içinde herhangi bir sayıda, ancak yalnızca de çok kez tanımlanmış. Tek Tanım Kuralı'nı (ODR) budur. A *bildirimi* programa bir ad tanıtır (veya yeniden sunar). A *tanımı* bir ad tanıtır ve bir değişken olması durumunda onu açıkça başlatır. A *işlev tanımı* imza ve işlev gövdesi karakterlerinden oluşur.
+Bir C++ programda bir *sembol*, örneğin bir değişken veya işlev adı, kapsamı içinde herhangi bir sayıda olarak bildirilemez, ancak yalnızca bir kez tanımlanabilir. Bu kural "bir tanım kuralıdır" (ODR). Bir *bildirim* programa bir adı tanıtır (veya yeniden tanıtır). *Tanım* bir ad sağlar. Ad bir değişkeni temsil ediyorsa, tanımı açıkça başlatır. Bir *işlev tanımı* , imzadan ve işlev gövdesinden oluşur. Sınıf tanımı, sınıf adından ve ardından tüm sınıf üyelerini listeleyen bir blok ile oluşur. (Üye işlevlerinin gövdeleri, isteğe bağlı olarak başka bir dosyada ayrı olarak tanımlanabilir.)
 
-Bildirimleri şunlardır:
+Aşağıdaki örnekte bazı bildirimler gösterilmektedir:
 
 ```cpp
 int i;
 int f(int x);
+class C;
 ```
 
-Tanımları şunlardır:
+Aşağıdaki örnekte bazı tanımlar gösterilmektedir:
 
 ```cpp
 int i{42};
 int f(int x){ return x * i; }
+class C {
+public:
+   void DoSomething();
+};
 ```
 
-Bir veya daha fazla program içerir *çeviri birimleri*. Bir çeviri birimi, bir uygulama dosyasını (.cpp, .cxx vb.) ve doğrudan veya dolaylı olarak içeren tüm üstbilgi (.h, .hpp vb.) oluşur. Her çeviri birimini bağımsız olarak sonra bağlayıcı birleştirir derlenmiş bir çeviri birimleri tek bir derleyici tarafından derlenen *program*. Aynı adlı iki farklı tanımları çeviri birimleri bakımından farklı olduğunda ODR kural ihlalleri genellikle bağlayıcı hata olarak gösterilir.
+Bir program bir veya daha fazla *çeviri biriminden*oluşur. Bir çeviri birimi, bir uygulama dosyasından ve doğrudan veya dolaylı olarak içerdiği tüm üst bilgilerden oluşur. Uygulama dosyaları, genellikle *cpp* veya *cxx*dosya uzantısına sahiptir. Üst bilgi dosyaları genellikle *h* veya *HPP*uzantısına sahiptir. Her çeviri birimi derleyici tarafından bağımsız olarak derlenir. Derleme tamamlandıktan sonra bağlayıcı, derlenmiş çeviri birimlerini tek bir *programda*birleştirir. ODR kuralının ihlalleri genellikle bağlayıcı hataları olarak gösterilir. Aynı adda farklı çeviri birimlerinde iki farklı tanım olduğunda bağlayıcı hataları oluşur.
 
-Genel olarak, bir üstbilgi dosyasına yerleştirilebilir ve eklemek için bir değişken birden çok dosyaya görünür hale getirmek için en iyi yolu olan bir #include yönergesi her .cpp dosyası bildirimi gerektirir. Ekleyerek *cf dahil* üst bilgi içeriği geçici olarak bildirir, adları yalnızca bir kez tanımlandığından emin olun.
+Genel olarak, bir değişkeni birden çok dosya genelinde görünür yapmanın en iyi yolu, bir üst bilgi dosyasına koyulamıyor. Ardından, bildirimi gerektiren her *cpp* dosyasına bir #include yönergesi ekleyin. Üst bilgi içerikleri etrafında ekleme *koruyucuları* ekleyerek, bildirdiği adların yalnızca bir kez tanımlandığından emin olursunuz.
 
-Ancak, bazı durumlarda bir genel değişken ya da bir .cpp dosyası sınıfında bildirmek gerekli olabilir. Bu gibi durumlarda, derleyici ve bağlayıcı nesnesinin adını yalnızca bir dosyayı veya tüm dosyalar için mi geçerli olduğunu bildirmek için bir yol gerekir.
+C++ 20 ' de, [modüller](modules-cpp.md) üstbilgi dosyalarına geliştirilmiş bir alternatif olarak sunulmuştur.
 
-## <a name="linkage-vs-scope"></a>Bağlantı kapsamı karşılaştırması
-
-Kavramını *bağlantı* çeviri birimlerindeki program içinde genel simgeleri (örneğin, değişkenler, tür adları ve işlev adları) görünürlüğünü bir bütün olarak başvuruyor. Kavramını *kapsam* gibi bir ad alanı, sınıf veya işlev gövdesinin bir blok içinde bildirilen sembolleri ifade eder. Tür simgeleri, yalnızca içinde tanımlandıkları kapsamı içinde görülebilir; kavram bağlantı için geçerli değildir.
+Bazı durumlarda, bir *cpp* dosyasında genel bir değişken veya sınıf bildirmek gerekebilir. Bu durumlarda, derleyiciye ve bağlayıcıya, adın ne tür bir *bağlantı* türüyle ilgili bilgi almak için bir yol gerekir. Bağlantı türü, nesne adının yalnızca bir dosyaya mi yoksa tüm dosyalara mı uygulanacağını belirtir. Bağlantı kavramı yalnızca genel adlar için geçerlidir. Bağlantı kavramı, bir kapsam içinde belirtilen adlara uygulanmaz. Bir kapsam, işlev veya sınıf tanımları gibi bir dizi kapsayan küme ile belirtilir.
 
 ## <a name="external-vs-internal-linkage"></a>Dış ve iç bağlantı
 
-A *boş işlev* genel kapsamda tanımlanan bir işlev veya ad alanı kapsamında. Non-const genel değişkenler ve varsayılan olarak ücretsiz işlevleri *dış bağlantısı*; bunlar programın herhangi bir çeviri birimindeki görülebilir. Bu nedenle, diğer genel nesnesi yok (değişken, sınıf tanımı, vb.), bu ada sahip olabilir. Bir simgeyle *iç bağlantı* veya *bağlantısı olmayan adlar* yalnızca bu bildirilen çeviri birimi içinde görülebilir. Bir ad iç bağlantıya sahip olduğunda, aynı adı başka bir çeviri biriminde bulunabilir. Sınıf tanımları ile değişkenler veya işlev gövdeleri hiçbir bağlantısı yoktur.
+*Ücretsiz bir işlev* , genel veya ad alanı kapsamında tanımlanan bir işlevdir. Const olmayan genel değişkenler ve ücretsiz işlevler varsayılan olarak *dış bağlantıya*sahiptir; Bunlar, programdaki herhangi bir çeviri biriminden görülebilir. Bu nedenle, başka bir genel nesne bu ada sahip olamaz. *İç bağlantıya* sahip bir simge veya *hiçbir bağlantı* , yalnızca bildirildiği çeviri birimi içinde görünür. Bir adın iç bağlantısı olduğunda, aynı ad başka bir çeviri biriminde bulunabilir. Sınıf tanımlarına veya işlev gövdeleriyle belirtilen değişkenlerin bağlantısı yok.
 
-Bir genel bir ad olarak açıkça bildirerek iç bağlantıya sahip olmasını zorunlu kılabilirsiniz **statik**. Bu, katmanın aynı çeviri birimi içinde bildirildiği için sınırlar. Bu bağlamda unutmayın **statik** yerel değişkenlere uygulandığında değerinden farklı bir şey anlamına gelir.
+Genel bir adı, açıkça **statik**olarak bildirerek iç bağlantıya sahip olacak şekilde zorlayabilirsiniz. Bu, görünürlüğünü, bildirildiği aynı çeviri birimiyle sınırlandırır. Bu bağlamda **statik** , yerel değişkenlere uygulandığında farklı bir şey anlamına gelir.
 
-Aşağıdaki nesneler varsayılan olarak iç bağlantısı vardır:
-- const nesnelerine
+Aşağıdaki nesneler varsayılan olarak iç bağlantıya sahiptir:
+- const nesneler
 - constexpr nesneleri
 - tür tanımları
-- ad alanı kapsamında statik nesneler
+- ad alanı kapsamındaki statik nesneler
 
-Const nesne dış bağlantı vermek için olarak bildirin **extern** ve bir değer atayın:
+Bir const nesnesine dış bağlantı vermek için bunu **extern** olarak bildirin ve bir değer atayın:
 
 ```cpp
 extern const int value = 42;
 ```
 
-Bkz: [extern](extern-cpp.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [extern](extern-cpp.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

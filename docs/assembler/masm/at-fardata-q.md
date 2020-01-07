@@ -1,21 +1,21 @@
 ---
 title: '@fardata?'
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - '@fardata?'
 helpviewer_keywords:
 - '@fardata? symbol'
 ms.assetid: 5184ac8d-c433-4136-81b2-3e7f6082415d
-ms.openlocfilehash: 2b3df142a7cd45948c934cae04bdb36c00b5ba76
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: bb09688ea5848ab04031539d3b3feaa79c5ad40a
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74399092"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75315894"
 ---
 # <a name="fardata"></a>farverileri \@misiniz?
 
-Tarafından tanımlanan segmentin adı [. FARVERI?](../../assembler/masm/dot-fardata-q.md) yönergesi (Metin makrosu).
+Tarafından tanımlanan segmentin adı [. FARVERI?](dot-fardata-q.md) yönergesi (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,5 @@ Tarafından tanımlanan segmentin adı [. FARVERI?](../../assembler/masm/dot-far
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller başvurusu](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

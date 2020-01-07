@@ -1,24 +1,22 @@
 ---
-title: using Bildirimi
+title: using bildirimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - using declaration
-- declaring namespaces, unqualified names in namespaces
 - declarations [C++], using-declaration
 - namespaces [C++], unqualified names in
 - using keyword [C++]
-- declarations [C++], namespaces
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-ms.openlocfilehash: 46d8b1e13b55988efd40643482ffd6123034ccb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a158094141307acb507d5f3e873c600e89135ad7
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403353"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301281"
 ---
-# <a name="using-declaration"></a>using Bildirimi
+# <a name="using-declaration"></a>using bildirimi
 
-Using bildirimi tanıtır bir ad bildirim temelli bölgede içine using bildirimi görünür.
+**Using** bildirimi, using bildiriminin göründüğü bildirime dayalı bölgeye bir ad getirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,19 +27,19 @@ using declarator-list ;
 
 ### <a name="parameters"></a>Parametreler
 
-*iç içe-adı-specifier* sonlandırılmış bir kapsam çözümleme işleci bir dizi ad alanı, sınıf veya numaralandırma adlarını ve kapsam çözümleme işleçleri (:). Tek bir kapsam çözümleme işleci, bir adı genel ad alanından tanıtmak için kullanılabilir. Anahtar sözcüğü **typename** isteğe bağlıdır ve bir taban sınıftan bir sınıf şablonunun içinde sunulan, bağımlı adları çözümlemek için kullanılabilir.
+*iç içe ad belirleyicisi* Bir kapsam çözümleme işleci tarafından sonlandırılan bir ad alanı, sınıf veya sabit listesi adı ve kapsam çözümleme işleçleri (::) dizisi. Genel ad alanından bir ad tanıtmak için tek bir kapsam çözümleme işleci kullanılabilir. Anahtar sözcüğü **TypeName** isteğe bağlıdır ve temel sınıftan bir sınıf şablonuna getirilen bağımlı adları çözümlemek için kullanılabilir.
 
-*Kimliği nitelenmemiş* bir nitelenmemiş kimliği-bir tanımlayıcı, aşırı yüklenmiş işleç adı, bir kullanıcı tanımlı sabit değer operatörü veya dönüştürme işlev adı, bir sınıf yok edici adı veya bir şablon adı ve bağımsız değişken listesi olabilen ifade.
+*nitelenmemiş kimlik* Tanımlayıcı, aşırı yüklenmiş bir operatör adı, Kullanıcı tanımlı sabit değer operatörü veya dönüştürme işlevi adı, sınıf yıkıcısı adı veya şablon adı ve bağımsız değişken listesi olabilecek nitelenmemiş bir kimlik ifadesi.
 
-*bildirimci listesi* virgülle ayrılmış bir listesi [**typename**] *iç içe-adı-specifier* *kimliği nitelenmemiş* Bildirimciler, isteğe bağlı olarak bunun ardından bir üç nokta.
+*bildirimci-liste* [**TypeName**] *iç içe-ad belirleyicisi* *nitelenmemiş kimlik* bildiriciler için virgülle ayrılmış bir liste ve isteğe bağlı olarak üç nokta.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir using bildirimi tanıtır nitelenmemiş bir ad bir varlık için bir eşanlamlı olarak başka bir yerde bildirilmiş. Açık nitelik göründüğü bildirimi bölgede olmadan kullanılacak belirli bir ad alanındaki tek bir ad sağlar. Tersine budur [using yönergesi](../cpp/namespaces-cpp.md#using_directives), veren *tüm* adların niteleme olmadan kullanılmasını için bir ad alanı. **Kullanarak** için de anahtar sözcüğü kullanılır [tür diğer adları](../cpp/aliases-and-typedefs-cpp.md).
+Using bildirimi, başka bir yerde bildirildiği bir varlığın eşanlamlısı olarak nitelenmemiş bir ad sağlar. Belirli bir ad alanındaki tek bir adın, göründüğü bildirim bölgesinde Açık nitelendirme olmadan kullanılmasına izin verir. Bu, bir ad alanındaki *Tüm* adların nitelik olmadan kullanılmasına izin veren [using yönergesine](../cpp/namespaces-cpp.md#using_directives)karşılık gelir. **Using** anahtar sözcüğü, [tür diğer adları](../cpp/aliases-and-typedefs-cpp.md)için de kullanılır.
 
 ## <a name="example"></a>Örnek
 
-Bir using bildirimi bir sınıf tanımı içinde kullanılabilir.
+Using bildirimi, sınıf tanımında kullanılabilir.
 
 ```cpp
 // using_declaration1.cpp
@@ -87,7 +85,7 @@ In B::g()
 
 ## <a name="example"></a>Örnek
 
-Kullanarak bir bir üye bildirmek için kullanıldığında bildiriminin bir temel sınıf üyesine başvurmalıdır.
+Bir üyeyi bildirmek için kullanıldığında, bir using bildirimi, bir temel sınıfın üyesine başvurmalıdır.
 
 ```cpp
 // using_declaration2.cpp
@@ -127,7 +125,7 @@ In B::f()
 
 ## <a name="example"></a>Örnek
 
-Üyeleri bildirilen kullanarak bir kullanarak bildirim açık nitelik kullanılarak başvurulabilir. `::` Ön ek, genel ad alanına başvuruyor.
+Using bildirimi kullanılarak belirtilen üyelere, açık nitelik kullanılarak başvurulabilir. `::` ön eki genel ad alanına başvurur.
 
 ```cpp
 // using_declaration3.cpp
@@ -167,9 +165,9 @@ In A::g
 
 ## <a name="example"></a>Örnek
 
-Bir kullanırken, bildirim tarafından oluşturulan eş anlamlı kullanarak noktasında geçerli olan tanımlara başvurur, bildirimi yapılan bildirimi. Kullandıktan sonra bir ad alanına eklenen tanımları bildirimi geçerli eş anlamlı sözcükler değildir.
+Bir using bildirimi yapıldığında, bildirim tarafından oluşturulan eş anlamlı yalnızca using bildiriminin noktasında geçerli olan tanımlara başvurur. Using bildiriminden sonra bir ad alanına eklenen tanımlar geçerli eş anlamlı değildir.
 
-Bir ad tarafından tanımlanan bir **kullanarak** özgün adı için bir diğer ad bildirimi şu şekildedir. Türü, bağlantı veya diğer özgün bildiriminin öznitelikleri etkilemez.
+**Using** bildirimiyle tanımlanan bir ad, özgün adı için bir diğer addır. Özgün bildirimin türünü, bağlantı veya diğer özniteliklerini etkilemez.
 
 ```cpp
 // post_declaration_namespace_additions.cpp
@@ -196,7 +194,7 @@ void b() {
 
 ## <a name="example"></a>Örnek
 
-Ad alanlarında, bir dizi yerel bildirimleri işlevleri göre ve bildirimlerini kullanarak herhangi bir tek bir ad, bildirim temelli bir bölgede yer verilmiştir, bunların tümü aynı varlığa başvurmalıdır ya da tüm işlevlere başvurması gerekir.
+Ad alanındaki işlevlere göre, bir dizi yerel bildirim ve tek bir ad için bildirimleri kullanmak bildirim temelli bir bölgede verilirse, bunların tümü aynı varlığa başvurmalıdır veya tümü işlevlere başvurmalıdır.
 
 ```cpp
 // functions_in_namespaces1.cpp
@@ -215,11 +213,11 @@ void g() {
 }
 ```
 
-Yukarıdaki örnekte `using B::i` deyimi neden olan ikinci bir `int i` içinde bildirilmelerini `g()` işlevi. `using B::f` Deyimi ile çakışan değil `f(char)` işlev adlarını tarafından tanıtılan olduğundan işlev `B::f` farklı parametre türleri vardır.
+Yukarıdaki örnekte, `using B::i` deyimin `g()` işlevinde ikinci bir `int i` bildirilmesine neden olur. `B::f` tarafından tanıtılan işlev adları farklı parametre türlerine sahip olduğundan `using B::f` ifade `f(char)` işlevi ile çakışmaz.
 
 ## <a name="example"></a>Örnek
 
-Yerel işlev bildirimi bildirim kullanarak sunulan işlevi olarak aynı ada ve türe sahip olamaz. Örneğin:
+Yerel işlev bildirimi, bildirimi kullanılarak tanıtılan bir işlevle aynı ada ve türe sahip olamaz. Örneğin:
 
 ```cpp
 // functions_in_namespaces2.cpp
@@ -246,7 +244,7 @@ void h() {
 
 ## <a name="example"></a>Örnek
 
-Devralma göre bir kullanırken, bildirimi bir ad bir temel sınıftan türetilmiş sınıf geçersiz kılma sanal üye işlevleri, üye işlevleri temel sınıfında aynı adı ve bağımsız değişken türlerine sahip bir türetilmiş sınıf kapsamı içinde sunar.
+Devralmayla ilgili olarak, bir using bildirimi temel sınıftan türetilmiş bir sınıf kapsamına bir ad oluşturduğunda, türetilmiş sınıftaki üye işlevleri, temel sınıftaki aynı ad ve bağımsız değişken türleriyle sanal üye işlevlerini geçersiz kılar.
 
 ```cpp
 // using_declaration_inheritance1.cpp
@@ -304,9 +302,9 @@ In D::g(char)
 
 ## <a name="example"></a>Örnek
 
-Using deyiminde belirtilen adın tüm örneklerini bildirimi erişilebilir olmalıdır. Kullanarak bir türetilmiş bir sınıf kullanıyorsa, belirli bir taban sınıfın üye adı bir üyesine erişmek için bildirim erişilebilir olmalıdır. Adlı tüm işlevlere erişilebilir olmalıdır. ad, aşırı yüklü üye işlevini ise.
+Using bildiriminde bahsedilen bir adın tüm örneklerinin erişilebilir olması gerekir. Özellikle, türetilmiş bir sınıf bir temel sınıfın üyesine erişmek için using bildirimi kullanıyorsa, üye adı erişilebilir olmalıdır. Ad, aşırı yüklenmiş bir üye işlevinin ise, adlı tüm işlevlere erişilebilir olması gerekir.
 
-Üyeleri erişilebilirlik hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md).
+Üyelerin erişilebilirliği hakkında daha fazla bilgi için bkz. [member-Access Control](../cpp/member-access-control-cpp.md).
 
 ```cpp
 // using_declaration_inheritance2.cpp

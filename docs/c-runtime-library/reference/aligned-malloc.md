@@ -1,6 +1,6 @@
 ---
 title: _aligned_malloc
-ms.date: 11/04/2016
+ms.date: 12/11/2019
 api_name:
 - _aligned_malloc
 api_location:
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - aligned_malloc function
 - _aligned_malloc function
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0
-ms.openlocfilehash: b4a2b35e5344757a1269ccb781a0524383a4f792
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c06c822ae4e7584a172c260a5c06e25019a1ce5e
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943867"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300137"
 ---
 # <a name="_aligned_malloc"></a>_aligned_malloc
 
@@ -60,11 +60,13 @@ void * _aligned_malloc(
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_malloc** , [malloc](malloc.md)'yi temel alır.
+**_aligned_malloc** [malloc](malloc.md)'yi temel alır.
 
-**_aligned_malloc** işaretlenir `__declspec(noalias)` ve `__declspec(restrict)`işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer adı olmadığı anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
+**_aligned_malloc** `__declspec(noalias)` ve `__declspec(restrict)`olarak işaretlenir, yani işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer ad olmadığından garanti edilir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
-Bu işlev, `errno` bellek `ENOMEM` ayırma başarısız olursa veya istenen boyut şundan `_HEAP_MAXREQ`büyükse olarak ayarlanır. Hakkında `errno`daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü veya *boyutu* sıfır değilse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev null döndürür ve öğesini olarak `errno` `EINVAL`ayarlar.
+Bu işlev, bellek ayırma başarısız olursa veya istenen boyut `_HEAP_MAXREQ`büyükse `ENOMEM` `errno` ayarlar. `errno`hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü veya *boyutu* sıfır değilse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev NULL değerini döndürür ve `errno` `EINVAL`olarak ayarlar.
+
+Hem **_aligned_malloc** hem de `_aligned_offset_malloc`tarafından alınan belleği serbest bırakmak için [_aligned_free](aligned-free.md) kullanın. `free`kullanmayın, bu, hizalanmış belleği doğru bir şekilde geri almamıştır ve tanılayan hatalara yol açabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

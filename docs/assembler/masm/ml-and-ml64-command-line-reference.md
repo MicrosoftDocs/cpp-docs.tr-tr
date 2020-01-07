@@ -1,6 +1,6 @@
 ---
 title: ML ve ML64 Komut Satırı Başvurusu
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - ML
 helpviewer_keywords:
@@ -54,18 +54,18 @@ helpviewer_keywords:
 - command line, reference [ML]
 - /Ta MASM compiler option
 ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
-ms.openlocfilehash: 470cad1be6fe314fde89ee144a8935664ead5953
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 77385317ab7f90a646b7f552e471d0f434e72bfb
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397202"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317168"
 ---
 # <a name="ml-and-ml64-command-line-reference"></a>ML ve ML64 Komut Satırı Başvurusu
 
 Bir veya daha fazla derleme dili kaynak dosyasını ayrıştırır ve bağlar. Komut satırı seçenekleri büyük/küçük harfe duyarlıdır.
 
-Ml64. exe hakkında daha fazla bilgi için bkz. [x64 Için ması (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Ml64. exe hakkında daha fazla bilgi için bkz. [x64 Için ması (ml64. exe)](masm-for-x64-ml64-exe.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,13 +80,13 @@ Aşağıdaki tabloda listelenen seçenekler.
 
 |Seçenek|Eylem|
 |------------|------------|
-|**/AT**|Çok küçük bellek modeli desteğini sunar. . Com biçim dosyaları için gereksinimleri ihlal eden kod yapıları için hata iletileri sunar. Bunun eşdeğer olmadığına unutmayın [. MODEL](../../assembler/masm/dot-model.md) **küçük** yönergesi.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/AT**|Çok küçük bellek modeli desteğini sunar. . Com biçim dosyaları için gereksinimleri ihlal eden kod yapıları için hata iletileri sunar. Bunun eşdeğer olmadığına unutmayın [. MODEL](dot-model.md) **küçük** yönergesi.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/BL** *dosya adı*|Alternatif bir bağlayıcı seçer.|
 |**/c**|Yalnızca birleştirir. Bağlantı yapmaz.|
 |**/COFF**|Nesne modülünün ortak nesne dosyası biçimi (COFF) türünü oluşturur. Win32 derleme dili geliştirmesi için genellikle gereklidir.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/CP**|Tüm kullanıcı tanımlayıcıları durumunu korur.|
 |**/Cu**|Tüm tanımlayıcıları büyük harflere eşler (varsayılan).<br /><br /> Ml64. exe ' de kullanılamaz.|
-|**/CX**|Ortak ve extern sembollerinde büyük/küçük harf durumunu korur.|
+|**/Cx**|Ortak ve extern sembollerinde büyük/küçük harf durumunu korur.|
 |**/D** *symbol*⟦ =*değer*⟧|Verilen ada sahip bir metin makrosunu tanımlar. *Değer* eksikse, boştur. Boşluklarla ayrılmış birden çok belirteç tırnak işaretleri içine alınmalıdır.|
 |**/EP**|Önceden işlenmiş bir kaynak listesini üretir (STDOUT 'a gönderilir). Bkz. **/SF**.|
 |**/errorreport** [ **yok** &#124; **Prompt** &#124; **kuyruğu** &#124; **gönderme** ]|Ml. exe veya ml64. exe çalışma zamanında başarısız olursa, bu iç hatalar hakkında Microsoft 'a bilgi göndermek için **/errorreport** ' u kullanabilirsiniz.<br /><br /> **/Errorreport**hakkında daha fazla bilgi için bkz. [/errorreport (Iç derleyici hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
@@ -102,28 +102,28 @@ Aşağıdaki tabloda listelenen seçenekler.
 |**/GD**|C stili işlev çağırma ve adlandırma kuralları kullanımını belirtir. **Seçenek diliyle aynı: C**.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/GZ**|__Stdcall işlev çağırma ve adlandırma kuralları kullanımını belirtir.  **Seçenek diliyle aynı: STCALL**.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/H** *numarası*|Dış adları önemli karakter sayısı olarak kısıtlar. Varsayılan değer 31 karakterdir.<br /><br /> Ml64. exe ' de kullanılamaz.|
-|**/Help**|ML yardımı için QuickHelp 'i çağırır.|
+|**/ Help**|ML yardımı için QuickHelp 'i çağırır.|
 |**/İ** *yol adı*|İçerme dosyası için yolu ayarlar. En fazla 10 **/ı** seçeneğe izin verilir.|
 |**/nologo**|Başarılı derleme için iletileri bastırır.|
 |**/OMF**|Nesne modülünün nesne modülü dosya biçimi (OMF) türünü oluşturur.  **/OMF** **/c**gerektirir; ML. exe, OMF nesnelerinin bağlanmasını desteklemez.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/Sa yazın**|Tüm kullanılabilir bilgilerin listesini etkinleştirir.|
-|**/SAFESEH**|Nesneyi herhangi bir özel durum işleyicisi veya ile birlikte gelen özel durum işleyicilerini içeren olarak işaretler [. SAFESEH](../../assembler/masm/dot-safeseh.md).<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/SAFESEH**|Nesneyi herhangi bir özel durum işleyicisi veya ile birlikte gelen özel durum işleyicilerini içeren olarak işaretler [. SAFESEH](dot-safeseh.md).<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/SF**|Listeleme dosyasına ilk geçiş listesi ekler.|
-|**/SL** *genişliği*|Kaynak listesinin satır genişliğini satır başına karakter cinsinden ayarlar. Aralık 60, 255 veya 0 ' dır. Varsayılan değer 0 ' dır. [Sayfa](../../assembler/masm/page.md) genişliğiyle aynı.|
+|**/SL** *genişliği*|Kaynak listesinin satır genişliğini satır başına karakter cinsinden ayarlar. Aralık 60, 255 veya 0 ' dır. Varsayılan değer 0 ' dır. [Sayfa](page.md) genişliğiyle aynı.|
 |**/Sn**|Bir liste üretilirken sembol tablosunu kapatır.|
-|**/SP** *uzunluğu*|Sayfa başına satırlardaki kaynak listesinin sayfa uzunluğunu ayarlar. Aralık 10 ila 255 veya 0 ' dır. Varsayılan değer 0 ' dır. [Sayfa](../../assembler/masm/page.md) uzunluğu ile aynı.|
-|**/SS** *metni*|Kaynak listesi için metni belirtir. Alt [başlık](../../assembler/masm/subtitle.md) metniyle aynı.|
-|**/St** *metni*|Kaynak listesinin başlığını belirtir. [Başlık](../../assembler/masm/title.md) metniyle aynı.|
+|**/SP** *uzunluğu*|Sayfa başına satırlardaki kaynak listesinin sayfa uzunluğunu ayarlar. Aralık 10 ila 255 veya 0 ' dır. Varsayılan değer 0 ' dır. [Sayfa](page.md) uzunluğu ile aynı.|
+|**/SS** *metni*|Kaynak listesi için metni belirtir. Alt [başlık](subtitle.md) metniyle aynı.|
+|**/St** *metni*|Kaynak listesinin başlığını belirtir. [Başlık](title.md) metniyle aynı.|
 |**/SX**|Listede yanlış koşulları etkinleştirir.|
 |**/Ta** *dosya adı*|Adı. asm uzantısıyla bitmez kaynak dosyayı ayrıştırır.|
 |**aralıkları**|**/W0/WX**ile aynı.|
 |**/W** *düzeyi*|*Düzey* = 0, 1, 2 veya 3 olan uyarı düzeyini ayarlar.|
 |**/WX**|Uyarılar oluşturulduysa bir hata kodu döndürür.|
 |**/X**|Ortam yolunu EKLEMEYI yoksay.|
-|**/ZD**|Nesne dosyasında satır numarası bilgileri oluşturur.|
+|**/Zd**|Nesne dosyasında satır numarası bilgileri oluşturur.|
 |**/ZF**|Tüm sembolleri herkese açık hale getirir.|
 |**/Zi**|Nesne dosyasında CodeView bilgileri oluşturur.|
-|**/ZM**|Masd 5,1 ile maksimum uyumluluk için**M510** seçeneğini sunar.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/Zm**|Masd 5,1 ile maksimum uyumluluk için**M510** seçeneğini sunar.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/ZP**⟦*hizalaması*⟧|Belirtilen bayt sınırında yapıları paketler. *Hizalama* 1, 2 veya 4 olabilir.|
 |**/ZS**|Yalnızca bir sözdizimi denetimi gerçekleştirir.|
 |**/?**|ML komut satırı sözdiziminin özetini görüntüler.|
@@ -150,5 +150,5 @@ ML ve ML64 için bazı komut satırı seçenekleri yerleştirme duyarlıdır. Ö
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ml hata iletileri](../../assembler/masm/ml-error-messages.md)\
-[Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Ml hata iletileri](ml-error-messages.md)\
+[Microsoft Macro Assembler Başvurusu](microsoft-macro-assembler-reference.md)

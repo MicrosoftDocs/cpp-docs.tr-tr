@@ -1,28 +1,28 @@
 ---
 title: C++ Dil Başvurusu
 ms.custom: index-page
-ms.date: 05/06/2019
+ms.date: 12/10/2019
 helpviewer_keywords:
 - C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 1790f5d7ecf834c97a9242e8f42d1fb402604ac6
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 8d828c1b151e37380c123003c245f6b83243f84a
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222485"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301593"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 
-Bu başvuru açıklar C++ programlama dilini Microsoft uygulandığı şekilde C++ derleyici. Kuruluş [ *Annotated C++ Reference Manual* ](http://www.stroustrup.com/arm.html) Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
+Bu başvuru, Microsoft C++ C++ derleyicisinde uygulanan şekilde programlama dilini açıklar. Kuruluş, Margaret Ellis ve Bjarne Stroustrup ile ANSI/ISO C++ uluslararası standart (ISO/ıEC fd, 14882) [*ek açıklamalı C++ başvuru kılavuzuna*](http://www.stroustrup.com/arm.html) dayanır. Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
 
-Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz geri c++](welcome-back-to-cpp-modern-cpp.md).
+Modern C++ programlama uygulamalarına genel bakış için bkz. uygulamasına [ C++geri hoş geldiniz ](welcome-back-to-cpp-modern-cpp.md).
 
 Hızlıca bir anahtar sözcük veya işleç bulmak için aşağıdaki tablolara bakın:
 
-- [C++ anahtar sözcükleri](../cpp/keywords-cpp.md)
+- [C++Lerimi](../cpp/keywords-cpp.md)
 
-- [C++ işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [C++İşletmenlerinin](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -32,10 +32,14 @@ Bir C++ programının sözcük temelli öğeleri: belirteçler, açıklamalar, i
 [Temel Kavramlar](../cpp/basic-concepts-cpp.md)<br/>
 Kapsam, bağlantı, program başlatma ve sonlandırma, depolama sınıfları ve türleri.
 
-[Standart Dönüştürmeler](../cpp/standard-conversions.md)<br/>
-Yerleşik veya "temel" türler arasında tür dönüştürmeleri. Ayrıca, aritmetik dönüştürmeler ve işaretçi, başvuru ve işaretçiden üyeye türleri arasında dönüştürmeler.
+[Yerleşik türler](fundamental-types-cpp.md) C++ Derleyicide yerleşik olan temel türler ve bunların değer aralıkları.
 
-[İşleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Standart Dönüştürmeler](../cpp/standard-conversions.md)<br/>
+Yerleşik türler arasında tür dönüştürmeleri. Ayrıca, aritmetik dönüştürmeler ve işaretçi, başvuru ve işaretçiden üyeye türleri arasında dönüştürmeler.
+
+[Bildirimler ve tanımlar](declarations-and-definitions-cpp.md) Değişkenleri, türleri ve işlevleri bildirme ve tanımlama.
+
+[İşleçler, öncelik ve Ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 C++'daki işleçler.
 
 [İfadeler](../cpp/expressions-cpp.md)<br/>
@@ -47,55 +51,55 @@ Bir işlev nesnesi sınıfını örtük olarak tanımlayan ve bu sınıf türün
 [Deyimler](../cpp/statements-cpp.md)<br/>
 İfade, null, bileşik, seçim, yineleme, atlama ve bildirim deyimleri.
 
-[Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)<br/>
-Depolama sınıfı tanımlayıcıları, işlev tanımları, başlatmalar, numaralandırmalar, **sınıfı**, **yapı**, ve **birleşim** bildirimleri, ve **tür tanımı**  bildirimleri. Ayrıca, **satır içi** İşlevler, **const** anahtar sözcüğü, ad alanları.
+[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)<br/>
+Sınıflara, yapılara ve birleşimlere giriş. Ayrıca, üye işlevleri, özel üye işlevleri, veri üyeleri, bit alanları, **Bu** işaretçi, iç içe geçmiş sınıflar.
 
-[Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)<br/>
-Sınıflara, yapılara ve birleşimlere giriş. Ayrıca, üye işlevleri, özel üye işlevleri, veri üyeleri, bit alanları, **bu** işaretçi, iç içe geçmiş sınıflar.
+[Birleşimler](unions.md)<br/>
+Tüm üyelerin aynı bellek konumunu paylaştığı Kullanıcı tanımlı türler.
 
-[Türetilen sınıflar](../cpp/inheritance-cpp.md)<br/>
-Tek ve birden çok devralma **sanal** İşlevler, birden çok taban sınıfı **soyut** sınıflar, kapsam kuralları. Ayrıca, **__super** ve **__interface** anahtar sözcükleri.
+[Türetilmiş sınıflar](../cpp/inheritance-cpp.md)<br/>
+Tek ve birden çok devralma, **sanal** işlevler, birden fazla temel sınıf, **soyut** sınıflar, kapsam kuralları. Ayrıca, **__super** ve **__interface** anahtar sözcükleri.
 
-[Üye erişim denetimi](../cpp/member-access-control-cpp.md)<br/>
-Sınıf üyelerine erişimi denetleme: **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Arkadaş işlevleri ve sınıfları.
+[Üye-Access Control](../cpp/member-access-control-cpp.md)<br/>
+Sınıf üyelerine erişimi denetleme: **genel**, **özel**ve **korumalı** anahtar sözcükler. Arkadaş işlevleri ve sınıfları.
 
 [Aşırı yükleme](operator-overloading.md)<br/>
-Aşırı yüklenmiş işleçler, İşleç aşırı yüklemesi kuralları.
+Aşırı yüklenmiş işleçler, işleç aşırı yüklemesi için kurallar.
 
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
 C++ özel durum işleme, yapılandırılmış özel durum işleme (SEH), özel durum işleme deyimleri yazılırken kullanılan anahtar sözcükler.
 
 [Onaylama işlemi ve Kullanıcı Tarafından Sağlanan İletiler](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-`#error` yönergesi, **static_assert** anahtar sözcüğü, `assert` makrosu.
+`#error` yönergesi, **static_assert** anahtar sözcüğü `assert` makrosu.
 
 [Şablonlar](../cpp/templates-cpp.md)<br/>
-Şablon belirtimleri, işlev şablonları, sınıf şablonları **typename** anahtar sözcüğü, şablonlara karşı makrolar, şablonlar ve akıllı işaretçiler.
+Şablon belirtimleri, işlev şablonları, sınıf şablonları, **TypeName** anahtar sözcüğü, şablonlar ve akıllı işaretçiler.
 
 [Olay İşleme](../cpp/event-handling.md)<br/>
 Olayları ve olay işleyicileri bildirme.
 
 [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)<br/>
-Microsoft C++'ya özgü değiştiriciler. Bellek adresleme, çağırma kuralları, **naked** işlevleri, genişletilmiş depolama sınıfı öznitelikleri (**__declspec**), **__w64**.
+Microsoft C++'ya özgü değiştiriciler. Bellek adresleme, çağırma kuralları, **Naked** işlevleri, genişletilmiş depolama sınıfı öznitelikleri ( **__declspec**) **__w64**.
 
 [Satır İçi Assembler](../assembler/inline/inline-assembler.md)<br/>
-Derleme dili kullanma ve C++ içinde **__asm** engeller.
+Bütünleştirilmiş kod dili ve C++ **__asm** blokları kullanma.
 
 [Derleyici COM Desteği](../cpp/compiler-com-support.md)<br/>
 COM türlerini destekleyen Microsoft'a özgü sınıflar ve genel işlevler için bir başvuru.
 
 [Microsoft Uzantıları](../cpp/microsoft-extensions.md)<br/>
-C++ için Microsoft uzantıları.
+İçin C++Microsoft uzantıları.
 
 [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)<br/>
-Microsoft Standart dışı davranış hakkında bilgi C++ derleyici.
+Microsoft C++ derleyicisinin standart olmayan davranışı hakkında bilgi.
 
-[C++ tekrar Hoş Geldiniz](welcome-back-to-cpp-modern-cpp.md)<br/>
-Modern C++ programlama hakkında genel bakış, güvenli, doğru ve verimli programları yazmak için yöntemleri.
+[Uygulamasına geri hoş geldinizC++](welcome-back-to-cpp-modern-cpp.md)<br/>
+Güvenli, doğru ve C++ verimli programlar yazmak için modern programlama uygulamalarına genel bakış.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)<br/>
-Başvuru Microsoft kullanarak şirket malzeme C++ hedeflenecek .NET derleyici.
+.NET hedeflemek için Microsoft C++ derleyicisini kullanma hakkındaki başvuru malzemeleri.
 
 [C/C++ Derleme Başvurusu](../build/reference/c-cpp-building-reference.md)<br/>
 Derleyici seçenekleri, bağlayıcı seçenekleri ve diğer yapı araçları.
@@ -103,8 +107,8 @@ Derleyici seçenekleri, bağlayıcı seçenekleri ve diğer yapı araçları.
 [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 Pragmalarla, önişlemci yönergeleriyle, önceden tanımlanmış makrolarla ve önişlemcilerle ilgili başvuru malzemeleridir.
 
-[Visual C++ kitaplıkları](../standard-library/cpp-standard-library-reference.md)<br/>
-Çeşitli Microsoft başlangıç sayfaları başvurusuna bağlantıların listesini C++ kitaplıkları.
+[Görsel C++ kitaplıklar](../standard-library/cpp-standard-library-reference.md)<br/>
+Çeşitli Microsoft C++ kitaplıkları için başvuru başlangıç sayfalarına bağlantıların listesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IF2 directive
 - IF2 directive
 ms.assetid: a0f75564-b51b-4e39-ad3b-f7421e7ecad6
-ms.openlocfilehash: f1b5126d9294c229d773acd29af463164bb46536
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 60f8b0dcedb61ac06de929aff300845e342d7cfc
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397440"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317324"
 ---
 # <a name="if1-and-if2"></a>IF1 ve IF2
 
@@ -29,7 +29,7 @@ ms.locfileid: "74397440"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
+Sözdiziminin [tamamı için bkz](if-masm.md) .
 
 Sürüm 5,1 ' den farklı olarak, MASU 6,1 ve üzeri, onun ilk geçişinde işini en iyi şekilde gerçekleştirir, daha sonra gerektiğinde daha fazla geçiş yapar. Buna karşılık, MASı 5,1 her zaman iki kaynak geçişte her zaman ayrıştırır. Sonuç olarak, Masd 6,1 ve üzeri sürümlerde bazı geçiş bağımlı yapıları düzeltmeniz veya silmeniz gerekebilir.
 
@@ -45,4 +45,5 @@ MASM6,1 ve üzeri, ilk geçiş yapılarını farklı şekilde işler. Öğesine 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

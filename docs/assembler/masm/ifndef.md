@@ -1,17 +1,17 @@
 ---
 title: IFNDEF
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - IFNDEF
 helpviewer_keywords:
 - IFNDEF directive
 ms.assetid: 8c93efc4-9375-45b6-8583-95f0c92f2a3a
-ms.openlocfilehash: 94a1e364cb9af6e4b1a35ef52bc24a2888acac1e
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: fb8479d9df1eb238960d8f8a794c904847660e6b
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397351"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317220"
 ---
 # <a name="ifndef"></a>IFNDEF
 
@@ -23,8 +23,9 @@ ms.locfileid: "74397351"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
+Sözdiziminin [tamamı için bkz](if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

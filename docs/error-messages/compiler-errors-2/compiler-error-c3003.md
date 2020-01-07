@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3003
+title: Derleyici hatası C3003
 ms.date: 11/04/2016
 f1_keywords:
 - C3003
 helpviewer_keywords:
 - C3003
 ms.assetid: 22e74f99-bb7f-4518-ab0d-934d5d49bcc7
-ms.openlocfilehash: 6d15d8bde8855b8dcc4857492acdeb950731b503
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f7b645f0b76f500502faea86a9fe20bb8eb5a62
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152507"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298902"
 ---
-# <a name="compiler-error-c3003"></a>Derleyici Hatası C3003
+# <a name="compiler-error-c3003"></a>Derleyici hatası C3003
 
-'yönergesi': OpenMP yönergesi adına yönerge yan tümcelerinden sonra izin verilmiyor
+' Directive ': yönerge yan tümcelerinden sonra OpenMP yönergesi adına izin verilmiyor
 
-Bir OpenMP yönergesi adı OpenMP yönergesi yan tümcesini izleyemez.
+Bir OpenMP yönergesi adı bir OpenMP yönergesi yan tümcesini izleyemez.
 
-Aşağıdaki örnek, C3003 oluşturur:
+Aşağıdaki örnek C3003 oluşturur:
 
-```
+```c
 // C3003.c
 // compile with: /openmp
 int main()

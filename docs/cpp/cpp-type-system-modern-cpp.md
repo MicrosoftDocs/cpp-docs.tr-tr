@@ -3,12 +3,12 @@ title: C++ tür sistemi
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 1f12f7505438dc995aaf8a045fd903488e9ff092
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 5755c7818182c5e26c5b3df6407fbe259bfdbcf3
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246596"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301580"
 ---
 # <a name="c-type-system"></a>C++ tür sistemi
 
@@ -24,9 +24,7 @@ ms.locfileid: "74246596"
 
 ## <a name="specifying-variable-and-function-types"></a>Değişken ve işlev türlerini belirtme
 
-C++*türü kesin belirlenmiş* bir dildir ve ayrıca statik olarak *türdedir*; her nesne bir türe sahiptir ve bu tür hiçbir değişiklik değiştirmez (statik veri nesneleriyle karıştırılmamalıdır).
-Kodunuzda **bir değişken bildirdiğinizde** türünü açıkça belirtmeli ya da derleyiciye türü başlatıcıdan almasını istemek için **Auto** anahtar sözcüğünü kullanmanız gerekir.
-Kodunuzda **bir işlev bildirdiğinizde** , her bağımsız değişkenin ve dönüş değerinin türünü belirtmeniz gerekir ya da işlev tarafından hiçbir değer döndürülmezse **void** . Rasgele türden bağımsız değişkenlere izin veren işlev şablonları kullandığınızda bu bir özel durumdur.
+C++*türü kesin belirlenmiş* bir dildir ve ayrıca statik olarak *türdedir*; her nesne bir türe sahiptir ve bu tür hiçbir değişiklik değiştirmez (statik veri nesneleriyle karıştırılmamalıdır). Kodunuzda bir değişken bildirdiğinizde türünü açıkça belirtmeli ya da derleyiciye türü başlatıcıdan almasını istemek için **Auto** anahtar sözcüğünü kullanmanız gerekir. Kodunuzda bir işlev bildirdiğinizde, her bağımsız değişkenin ve dönüş değerinin türünü belirtmeniz gerekir ya da işlev tarafından hiçbir değer döndürülmezse **void** . Rasgele türden bağımsız değişkenlere izin veren işlev şablonları kullandığınızda bu bir özel durumdur.
 
 İlk kez bir değişken bildirdikten sonra belirli bir süre geçtikten sonra türünü değiştiremezsiniz. Ancak değişkenin değerini veya bir işlevin dönüş değerini başka türdeki farklı bir değişkene kopyalayabilirsiniz. Bu gibi işlemler, bazen gerekli olan ancak aynı zamanda olası veri kaybı veya yanlışlık kaynakları olan *tür dönüştürmeleri*olarak adlandırılır.
 
@@ -55,7 +53,7 @@ int maxValue;                // Not recommended! maxValue contains
 
 Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Dil, *Yerleşik türler*olarak da bilinen birçok *temel tür*içerir. Buna sırasıyla, **int**, **Double**, **Long**, **bool**gibi sayısal türler, ascıı ve UNICODE karakterleri için de **char** ve **wchar_t** türleri dahildir. En temel türlerin ( **bool**, **Double**, **wchar_t** ve ilgili türler hariç) tümünün, değişkenin depolayabileceği değer aralığını değiştiren işaretsiz sürümleri vardır. Örneğin, 32 bitlik işaretli bir tamsayıyı depolayan bir **int**,-2.147.483.648 ile 2.147.483.647 arasında bir değer temsil edebilir. 32 bit olarak da depolanan **işaretsiz bir int**, 0 ile 4.294.967.295 arasında bir değer depolayabilirler. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.
 
-Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların diğer temel türlere nasıl dönüştürülebileceğini yöneten yerleşik kurallara sahip derleyici tarafından tanınır. Yerleşik türlerin tam listesi ve bunların boyut ve sayısal sınırları için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
+Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların diğer temel türlere nasıl dönüştürülebileceğini yöneten yerleşik kurallara sahip derleyici tarafından tanınır. Yerleşik türlerin tam listesi ve bunların boyut ve sayısal sınırları için bkz. [Yerleşik türler](../cpp/fundamental-types-cpp.md).
 
 Aşağıdaki çizim, yerleşik türlerin göreli boyutlarını gösterir:
 
@@ -63,16 +61,16 @@ Aşağıdaki çizim, yerleşik türlerin göreli boyutlarını gösterir:
 
 Aşağıdaki tablo en sık kullanılan temel türleri listeler:
 
-|Type|Boyut|Yorum|
+|Tür|Boyut|Yorum|
 |----------|----------|-------------|
 |int|4 bayt|Tamsayı değerler için varsayılan seçim.|
-|double|8 bayt|Kayan nokta değerleri için varsayılan seçim.|
+|çift|8 bayt|Kayan nokta değerleri için varsayılan seçim.|
 |bool|1 bayt|True veya false olabilen değerleri temsil eder.|
 |char|1 bayt|Daha eski C stili dizelerde veya std::string nesnelerde UNICODE'a dönüştürülmesi hiçbir zaman gerekmeyecek ASCII karakterler için kullanın.|
 |wchar_t|2 bayt|UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu, `std::wstring`türünde dizelerde kullanılan karakter türüdür.|
 |işaretsiz&nbsp;karakteri|1 bayt|C++yerleşik `byte` türüne sahip değildir.  Bayt değerini göstermek için unsigned char kullanın.|
 |unsigned int|4 bayt|Bit bayrakları için varsayılan seçimdir.|
-|long long|8 bayt|Çok büyük tamsayı değerlerini temsil eder.|
+|{1&gt;{2&gt;long long&lt;2}&lt;1}|8 bayt|Çok büyük tamsayı değerlerini temsil eder.|
 
 ## <a name="the-void-type"></a>Void türü
 
@@ -157,7 +155,7 @@ Genel içindeki işaretçiler hakkında daha fazla bilgi için bkz. [işaretçil
 
 C ve C++Için Klasik Win32 programlamada çoğu işlev, parametre türlerini ve dönüş değerlerini belirtmek için Windows 'a özgü tür tanımlarını ve #define makrolarını (`windef.h`tanımlanmıştır) kullanır. Bu Windows veri türleri genellikle C/C++ yerleşik türlere verilen özel adlardır (diğer adlar). Bu tür tanımları ve önişlemci tanımlarının tüm listesi için bkz. [Windows veri türleri](/windows/win32/WinProg/windows-data-types). HRESULT ve LCID gibi bu tür tanımlarından bazıları kullanışlı ve açıklayıcıdır. INT gibi diğerlerinin özel bir anlamı yoktur ve bunlar yalnızca temel C++ türlerinin diğer adlarıdır. Diğer Windows veri türleri C programlama ve 16-bit işlemci günlerinden kalma adlara sahiptir ve bu adların modern donanım veya işletim sistemlerinde herhangi bir amacı ya da anlamı yoktur. Ayrıca, [Windows çalışma zamanı temel veri türleri](/windows/win32/WinRT/base-data-types)olarak listelenen Windows çalışma zamanı kitaplığıyla ilişkili özel veri türleri de vardır. Modern C++ programlamada, Windows türü değerin nasıl yorumlanacağına ilişkin ek anlamlar iletmedikçe C++ temel türlerinin tercih edilmesi genel bir yönergedir.
 
-## <a name="more-information"></a>Daha Fazla Bilgi
+## <a name="more-information"></a>Daha fazla bilgi
 
 C++ tür sistemi hakkında daha fazla bilgi için aşağıdaki konulara bakın.
 

@@ -1,17 +1,17 @@
 ---
 title: '@Cpu'
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - '@Cpu'
 helpviewer_keywords:
 - '@Cpu symbol'
 ms.assetid: 04f9fdf6-9772-407e-9c09-c12bed29087b
-ms.openlocfilehash: 528db8ce2a23cefaeef0b1e52f4a373b49d1cbeb
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 46bfcc8e8ba3e109ce998b779c4e80ec1bdb0de5
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74399179"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75316440"
 ---
 # <a name="cpu"></a>\@CPU
 
@@ -23,4 +23,5 @@ ms.locfileid: "74399179"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller başvurusu](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

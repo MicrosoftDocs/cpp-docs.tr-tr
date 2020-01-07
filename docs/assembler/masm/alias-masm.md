@@ -1,19 +1,19 @@
 ---
 title: ALIAS (MASM)
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - Alias
 helpviewer_keywords:
 - ALIAS directive
 ms.assetid: d9725c49-58de-41da-ab01-b06a56cf5cf2
-ms.openlocfilehash: 274ac451005015b2693d8674673af574ec781bdc
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 5aef169c5632e74722438c63718ce5b783a8da09
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74399285"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75316609"
 ---
-# <a name="alias-masm"></a>ALIAS (MASM)
+# <a name="alias"></a>ALIAS
 
 **ALIAS** yönergesi, bir işlev için alternatif bir ad oluşturur.  Bu, bir işlev için birden çok ad oluşturmanızı veya bağlayıcı (LINK. exe) ' nin eski bir işlevi yeni bir işlevle eşlemesine izin veren kitaplıklar oluşturmanızı sağlar.
 
@@ -31,4 +31,5 @@ Alternatif veya diğer ad.  Açılı ayraç gereklidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)
