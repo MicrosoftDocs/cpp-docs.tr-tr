@@ -1,5 +1,5 @@
 ---
-title: C++ Build Insights 'ı kullanmaya başlama
+title: C++ Derleme İçgörüleri ile çalışmaya başlama
 description: C++ Derleme öngörülerinin parçası olan derleme zamanı performans analizi araçlarının nasıl kullanılacağına ilişkin üst düzey bir genel bakış.
 ms.date: 11/03/2019
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 9c31d317cd7b9c6465362e3e532db2128303f602
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 862bfae3bdb27812306dcd356aecab812ea5181c
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73633107"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298746"
 ---
-# <a name="get-started-with-c-build-insights"></a>C++ Build Insights 'ı kullanmaya başlama
+# <a name="get-started-with-c-build-insights"></a>C++ Derleme İçgörüleri ile çalışmaya başlama
 
 ::: moniker range="<=vs-2017"
 
@@ -39,7 +39,9 @@ Derleme öngörülerini destekleyen C++ bir WPA sürümü şu anda yalnızca Win
 
 ### <a name="to-download-and-install-wpa"></a>WPA 'Yı indirmek ve yüklemek için
 
-1. Windows ADK Insider Önizleme [indirme sayfasına](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)gidin.
+NOTE: Windows Performans Çözümleyicisi 'ni yüklemek için Windows 8 veya üzeri gereklidir.
+
+1. Windows ADK Insider Önizleme [indirme sayfasına](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewADK)gidin.
 
 1. Windows ADK Insider Preview ' i indirin. Bu bir disk görüntüsüdür.
 
@@ -101,7 +103,7 @@ Tipik bir *vcperf. exe* komut sırası, geliştirici komut istemi penceresinde �
 
 WPA 'Yı başlatın ve yeni topladığınız izlemeyi açın. WPA bunu bir C++ Build Insights izlemesi olarak tanıması gerekir ve sol taraftaki grafik Gezgini panelinde aşağıdaki görünümler görünmelidir:
 
-- Yapı Gezgini
+- Derleme Gezgini
 - Dosyalar
 - İşlev
 
