@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - INVOKE directive
 ms.assetid: 12d9bb40-33b9-411e-b801-45a1d675967e
-ms.openlocfilehash: a5175252364918ca218e81536b29f084f7fd19cc
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 7a005e5e70a2696ca89fb0ad1a3ff02aab8ffe5a
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397305"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317194"
 ---
-# <a name="invoke-32-bit-masm"></a>Invoke (32-bit masa)
+# <a name="invoke"></a>INVOKE
 
-*İfade*tarafından verilen adresteki yordamı çağırır, bu bağımsız değişkenleri yığın üzerinde veya kayıt içinde dil türünün Standart çağırma kurallarına göre geçirerek. (yalnızca 32-bit masa.)
+(yalnızca 32-bit masa.) *İfade*tarafından verilen adresteki yordamı çağırır, bu bağımsız değişkenleri yığın üzerinde veya kayıt içinde dil türünün Standart çağırma kurallarına göre geçirerek.     
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,4 +27,5 @@ Yordama geçirilen her bağımsız değişken bir ifade, bir kayıt çifti veya 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)
