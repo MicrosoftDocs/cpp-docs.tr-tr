@@ -1,18 +1,18 @@
 ---
 title: ML Önemli Olmayan Hatası A2006
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A2006
 helpviewer_keywords:
 - A2006
 ms.assetid: b8a8f096-95df-42b5-85ed-d2530560a84c
-ms.openlocfilehash: 6c55cb66d6eaeaf620aeedc1dd924f6618cbf817
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 058100984acbd42ac2993732ab619c0a27c0edd2
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856789"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317090"
 ---
 # <a name="ml-nonfatal-error-a2006"></a>ML Önemli Olmayan Hatası A2006
 
@@ -28,7 +28,7 @@ Aşağıdakilerden biri oluşmuş olabilir:
 
 - Dahil olmayan bir içerme dosyasında bir sembol tanımlandı.
 
-- Dış sembol [extern](../../assembler/masm/extern-masm.md) veya [externdef](../../assembler/masm/externdef.md) yönergesi olmadan kullanıldı.
+- Dış sembol [extern](extern-masm.md) veya [externdef](externdef.md) yönergesi olmadan kullanıldı.
 
 - Bir sembol adı yanlış yazıldı.
 
@@ -36,4 +36,4 @@ Aşağıdakilerden biri oluşmuş olabilir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Hata İletileri](ml-error-messages.md)

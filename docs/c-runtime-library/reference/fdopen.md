@@ -1,6 +1,6 @@
 ---
 title: fdopen
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - fdopen
 api_location:
@@ -23,13 +23,15 @@ f1_keywords:
 helpviewer_keywords:
 - fdopen function
 ms.assetid: 3243c1d2-2826-4d2d-bfa2-a2da45f9cc7a
-ms.openlocfilehash: c38a23d42b60567ae320054cf952bf17e42d6234
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8abbea2efde0fe5724f995c9791029c2fc26ff46
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941286"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299500"
 ---
 # <a name="fdopen"></a>fdopen
 
-Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_fdopen](fdopen-wfdopen.md) kullanın.
+Microsoft tarafından uygulanan POSIX işlev adı `fdopen`, [_fdopen](fdopen-wfdopen.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+
+Bunun yerine [_fdopen](fdopen-wfdopen.md) kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

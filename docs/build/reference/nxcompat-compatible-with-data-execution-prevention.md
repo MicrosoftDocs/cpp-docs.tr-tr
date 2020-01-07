@@ -1,18 +1,19 @@
 ---
 title: /NXCOMPAT (Veri Yürütme Önlemesi ile Uyumlu)
-ms.date: 12/29/2017
+description: Bir yürütülebilir dosyayı veri yürütmeC++ ENGELLEMESI (DEP) ile uyumlu olarak Işaretleyen Microsoft C/(MSVC)/NXCOMPAT bağlayıcı seçeneğini açıklar.
+ms.date: 12/17/2019
 f1_keywords:
 - /NXCOMPAT
 helpviewer_keywords:
 - /NXCOMPAT linker option
 - -NXCOMPAT linker option
 - NXCOMPAT linker option
-ms.openlocfilehash: 7c788f5ec499f0edf0c44f1ff269af9767af6c08
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f3a0906a49e3524fff3e1ef1643d1eceee28f169
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492671"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298993"
 ---
 # <a name="nxcompat-compatible-with-data-execution-prevention"></a>/NXCOMPAT (Veri Yürütme Önlemesi ile Uyumlu)
 
@@ -20,7 +21,7 @@ Yürütülebilir bir dosyanın Windows Veri Yürütme Engellemesi özelliği ile
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/NXCOMPAT** [ **: NO**]
+> **/NXCOMPAT**[ **: No**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -30,8 +31,6 @@ Varsayılan olarak **/NXCOMPAT** açık olur.
 
 Veri Yürütme Engellemesi hakkında daha fazla bilgi için şu makalelere bakın:
 
-- [Veri Yürütme Engellemesi (DEP) özelliğinin ayrıntılı açıklaması](https://support.microsoft.com/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
-
 - [Veri Yürütme Engellemesi](/windows/win32/Memory/data-execution-prevention)
 
 - [Veri Yürütme Engellemesi (Windows Embedded)](/previous-versions/windows/embedded/ms913190\(v=winembedded.5\))
@@ -40,7 +39,7 @@ Veri Yürütme Engellemesi hakkında daha fazla bilgi için şu makalelere bakı
 
 1. Proje **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > bağlayıcıkomut > **satırı** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** Özellik sayfası ' nı seçin.
 
 1. **Ek seçenekler** kutusuna seçeneği girin. Değişikliği uygulamak için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
@@ -50,5 +49,5 @@ Veri Yürütme Engellemesi hakkında daha fazla bilgi için şu makalelere bakı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)\
 [MSVC Bağlayıcı Seçenekleri](linker-options.md)

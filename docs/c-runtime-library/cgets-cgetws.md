@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-ms.openlocfilehash: aa258eaba34feec8ea25d780ea6392f195e37508
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 97a8de0a7fd0f278e6b0e3730a52ca3d0be6e07a
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944686"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299006"
 ---
 # <a name="_cgets-_cgetws"></a>_cgets, _cgetws
 
@@ -73,11 +73,11 @@ Veriler için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_cgets``_cgetws` ve`buffer[2]`' de dizenin başlangıcına bir işaretçi döndürür. NULL ise, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. `buffer` Yürütmenin devam etmesine izin veriliyorsa, **null** döndürür ve olarak `errno` `EINVAL`ayarlanır.
+`_cgets` ve `_cgetws`, `buffer[2]`bir dizenin başlangıcına bir işaretçi döndürür. `buffer` **null**ise, bu Işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **null** döndürür ve `EINVAL``errno` ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, konsolundan bir karakter dizesini okur ve dizeyi ve uzunluğu tarafından `buffer`işaret edilen konuma depolar. Parametre `buffer` , bir karakter dizisine yönelik bir işaretçi olmalıdır. Dizinin `buffer[0]`ilk öğesi, okunacak dizenin uzunluk üst sınırını (karakter cinsinden) içermelidir. Dizi, dizeyi tutmak için yeterli öğe, bir Sonlandırıcı null karakteri (' \ 0 ') ve 2 ek bayt içermelidir. İşlev, satır başı satır besleme (CR-LF) birleşimi veya belirtilen karakter sayısı okunana kadar karakterleri okur. Dize, tarihinde `buffer[2]`başlayarak depolanır. İşlev bir CR-LF okurlarsa, null karakteri (' \ 0 ') depolar. Daha sonra işlevi, dizenin gerçek uzunluğunu ikinci dizi öğesinde `buffer[1]`depolar.
+Bu işlevler, konsolundan bir karakter dizesini okur ve dizeyi ve uzunluğu `buffer`tarafından işaret edilen konuma depolar. `buffer` parametresi bir karakter dizisine yönelik bir işaretçi olmalıdır. `buffer[0]`dizisinin ilk öğesi, okunacak dizenin uzunluk üst sınırını (karakter) içermelidir. Dizi, dizeyi tutmak için yeterli öğe, bir Sonlandırıcı null karakteri (' \ 0 ') ve 2 ek bayt içermelidir. İşlev, satır başı satır besleme (CR-LF) birleşimi veya belirtilen karakter sayısı okunana kadar karakterleri okur. Dize, `buffer[2]`başlayarak saklanır. İşlev bir CR-LF okurlarsa, null karakteri (' \ 0 ') depolar. Daha sonra işlevi, `buffer[1]`ikinci dizi öğesinde dizenin gerçek uzunluğunu depolar.
 
 Bir konsol penceresinde `_cgets` veya `_cgetws` çağrıldığında tüm düzenleyen anahtarlar etkin olduğundan, F3 tuşuna basıldığında son girilen giriş yinelenir.
 
@@ -100,7 +100,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compati
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // crt_cgets.c
 // compile with: /c /W3
 // This program creates a buffer and initializes
