@@ -1,45 +1,43 @@
 ---
 title: Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- WM_EX_TRANSPARENT
 helpviewer_keywords:
 - WS_EX_TRANSPARENT style
 - rebar controls [MFC], dialog bars
 - dialog bars [MFC], using with rebar bands
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
-ms.openlocfilehash: 33ca3d0a7bf2e60511ea0048ad91b1f0930a2894
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4e786d3670ec74b734739e29aa7e3e33b5af384
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180524"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302373"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 
-Belirtildiği gibi [Rebar denetimleri ve bantları](../mfc/rebar-controls-and-bands.md), her bant yalnızca bir alt pencere (veya Denetim) içerebilir. Bant başına birden fazla alt penceresi istiyorsanız bu bir kısıtlama olabilir. Uygun bir geçici çözüm, birden çok denetimleri ile bir iletişim çubuğu kaynağı oluşturma ve ardından çubuk barınağı denetimi (iletişim çubuğu içeren) bir çubuk barınağı bant eklemektir.
+[Rebar denetimlerinde ve bantlarında](../mfc/rebar-controls-and-bands.md)belirtildiği gibi, her bant yalnızca bir alt pencere (veya denetim) içerebilir. Bant başına birden fazla alt pencere olmasını istiyorsanız bu bir sınırlama olabilir. Kullanışlı bir geçici çözüm, birden fazla denetim içeren bir iletişim çubuğu kaynağı oluşturmak ve ardından yeniden çubuk şeridi (iletişim çubuğunu içeren) yeniden çubuk denetimine eklemektir.
 
-Normalde, saydam görünmesine iletişim çubuğu bant istediyseniz, iletişim çubuğu nesnesi için genişletilmiş WS_EX_TRANSPARENT ayarlayın. Ancak, düzgün bir iletişim çubuğu arka plan boyama bazı sorunlar WS_EX_TRANSPARENT sahip olduğundan, istenilen etkiyi elde etmek için küçük bir ek iş yapması gerekir.
+Normal olarak, iletişim çubuğu bandın saydam görünmesini istiyorsanız, iletişim çubuğu nesnesi için WS_EX_TRANSPARENT genişletilmiş stilini ayarlarsınız. Ancak, WS_EX_TRANSPARENT bir iletişim çubuğunun arka planını doğru şekilde boyamaya yönelik bazı sorunlar olduğundan, istenen etkiyi elde etmek için biraz daha fazla iş yapmanız gerekir.
 
-Aşağıdaki yordam ayrıntıları WS_EX_TRANSPARENT kullanmadan saydamlık sağlamak için gerekli adımları genişletilmiş stili.
+Aşağıdaki yordamda WS_EX_TRANSPARENT genişletilmiş stilini kullanmadan saydamlık elde etmek için gereken adımlar ayrıntılı olarak verilmiştir.
 
-### <a name="to-implement-a-transparent-dialog-bar-in-a-rebar-band"></a>Bir rebar bant saydam iletişim çubuğu uygulamak için
+### <a name="to-implement-a-transparent-dialog-bar-in-a-rebar-band"></a>Bir yeniden çubuk bandında saydam bir iletişim çubuğu uygulamak için
 
-1. Kullanarak [Sınıf Ekle iletişim kutusu](../mfc/reference/adding-an-mfc-class.md), yeni bir sınıf ekleyin (örneğin, `CMyDlgBar`), iletişim çubuğu nesnenizin uygular.
+1. [Sınıf Ekle iletişim kutusunu](../mfc/reference/adding-an-mfc-class.md)kullanarak iletişim çubuğu nesnesini uygulayan yeni bir sınıf (örneğin, `CMyDlgBar`) ekleyin.
 
-1. WM_ERASEBKGND ileti işleyicisi ekleyin.
+1. WM_ERASEBKGND ileti için bir işleyici ekleyin.
 
-1. Yeni işleyicisinde varolan kodu aşağıdaki örnekle eşleşecek şekilde değiştirin:
+1. Yeni İşleyicide, mevcut kodu aşağıdaki örnekle eşleşecek şekilde değiştirin:
 
    [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]
 
-1. WM_MOVE ileti işleyicisi ekleyin.
+1. WM_MOVE ileti için bir işleyici ekleyin.
 
-1. Yeni işleyicisinde varolan kodu aşağıdaki örnekle eşleşecek şekilde değiştirin:
+1. Yeni İşleyicide, mevcut kodu aşağıdaki örnekle eşleşecek şekilde değiştirin:
 
    [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]
 
-Yeni işleyicileri, ana pencereyi WM_ERASEBKGND iletiyi iletme ve iletişim çubuğu nesne taşındı her zaman yeniden çizmeyi zorlama iletişim çubuğu saydamlığını benzetimini yapın.
+Yeni işleyiciler, WM_ERASEBKGND iletisini ana pencereye ileterek iletişim çubuğu saydamlığının benzetimini yapar ve iletişim çubuğu nesnesi taşındığında her seferinde yeniden çizmeyi zorluyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

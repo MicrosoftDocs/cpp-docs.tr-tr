@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3007
+title: Derleyici hatası C3007
 ms.date: 11/04/2016
 f1_keywords:
 - C3007
 helpviewer_keywords:
 - C3007
 ms.assetid: e415ef42-bdc9-4f32-8198-5e25b289a089
-ms.openlocfilehash: 551fb458ee02e29ae54aeb3382b2016da731808a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 9b80cc556887bf04efa3d98a31ccfd7ed1a2e4d7
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345586"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302282"
 ---
-# <a name="compiler-error-c3007"></a>Derleyici Hatası C3007
+# <a name="compiler-error-c3007"></a>Derleyici hatası C3007
 
-'değişken': OpenMP 'yönergesi' yönergesindeki yan tümce bağımsız değişken almaz
+' arg ': OpenMP ' Directive ' yönergesindeki yan tümce bağımsız değişken almıyor
 
-Bağımsız değişken bir OpenMP yönergesinde gerekiyordu, ancak yönergesi bir bağımsız değişken almaz.
+Bir OpenMP yönergesinin bağımsız değişkeni vardı, ancak yönerge bir bağımsız değişken almaz.
 
-Aşağıdaki örnek, C3007 oluşturur:
+Aşağıdaki örnek C3007 oluşturur:
 
-```
+```c
 // C3007.c
 // compile with: /openmp
 int main()

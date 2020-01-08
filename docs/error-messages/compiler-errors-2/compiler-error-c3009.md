@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3009
+title: Derleyici hatası C3009
 ms.date: 11/04/2016
 f1_keywords:
 - C3009
 helpviewer_keywords:
 - C3009
 ms.assetid: aded5985-f5fd-4c3e-a157-16be55ec1313
-ms.openlocfilehash: a1f4a20396e97c6b868a5678958970813b638499
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d68a1c7568aefcd101ef48082c1c66f5b8627da
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350328"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302269"
 ---
-# <a name="compiler-error-c3009"></a>Derleyici Hatası C3009
+# <a name="compiler-error-c3009"></a>Derleyici hatası C3009
 
-'etiketi': OpenMP yapısal bloğunun izin içine atlamaya
+' Label ': OpenMP yapısal bloğunun içine geç izin verilmiyor
 
-Kod içine veya bir OpenMP bloğunun dışına atlama olamaz.
+Kod bir OpenMP bloğunun içine veya dışına atlanamaz.
 
-Aşağıdaki örnek, C3009 oluşturur:
+Aşağıdaki örnek C3009 oluşturur:
 
-```
+```c
 // C3009.c
 // compile with: /openmp
 int main() {

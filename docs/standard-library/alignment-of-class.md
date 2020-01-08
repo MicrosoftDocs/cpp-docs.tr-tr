@@ -1,22 +1,22 @@
 ---
 title: alignment_of Sınıfı
-ms.date: 11/04/2016
+ms.date: 12/11/2019
 f1_keywords:
 - type_traits/std::alignment_of
 helpviewer_keywords:
 - alignment_of class
 - alignment_of
 ms.assetid: 4141c59a-f94e-41c4-93fd-9ea578b27387
-ms.openlocfilehash: 5222e70965db69d33ec62039bf9013a52d145705
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d241848edf57fe4876c35e22f1762abf5d6888fa
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456445"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302321"
 ---
-# <a name="alignmentof-class"></a>alignment_of Sınıfı
+# <a name="alignment_of-class"></a>alignment_of Sınıfı
 
-Belirtilen türün hizalamasını alır. Bu yapı, [Hizalama](../cpp/alignof-and-alignas-cpp.md)bakımından uygulanır. Yalnızca `alignof` bir hizalama değerini sorgulamak için ihtiyacınız olduğunda doğrudan ' i kullanın. Bir integral sabitine ihtiyacınız olduğunda, örneğin etiket gönderimi yaparken alignment_of kullanın.
+Belirtilen türün hizalamasını alır. Bu yapı, [Hizalama](../cpp/alignment-cpp-declarations.md)bakımından uygulanır. Yalnızca bir hizalama değerini sorgulamak **istediğinizde doğrudan hizalamasını** kullanın. Bir integral sabitine ihtiyaç duyduğunuzda alignment_of kullanın, örneğin, etiket gönderme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,7 +27,7 @@ struct alignment_of;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar

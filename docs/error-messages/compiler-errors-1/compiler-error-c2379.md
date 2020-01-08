@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2379
+title: Derleyici hatası C2379
 ms.date: 11/04/2016
 f1_keywords:
 - C2379
 helpviewer_keywords:
 - C2379
 ms.assetid: 37dc3015-a4af-4341-bbf3-da6150df7e51
-ms.openlocfilehash: 1b3256efb6c0ff8236ba80a9ac681780f34fa8dd
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: f096791a6120023e079b93452a4b35c669db2139
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345644"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302113"
 ---
-# <a name="compiler-error-c2379"></a>Derleyici Hatası C2379
+# <a name="compiler-error-c2379"></a>Derleyici hatası C2379
 
 biçimsel parametre numarası yükseltildiğinde farklı türe sahip
 
-Belirtilen parametre türü aracılığıyla varsayılan promosyonlar, bir önceki bildirimde türüyle uyumlu değil. Bu bir hatadır, ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) ve Microsoft uzantılı bir uyarı (**/Ze**).
+Belirtilen parametrenin türü, önceki bir bildirimde bulunan türü olan varsayılan yükseltmeler aracılığıyla uyumlu değil. Bu, ANSI C 'de ([/za](../../build/reference/za-ze-disable-language-extensions.md)) bir hata ve Microsoft uzantıları ( **/ze**) ile ilgili bir uyarıdır.
 
-Aşağıdaki örnek, C2379 oluşturur:
+Aşağıdaki örnek C2379 oluşturur:
 
-```
+```c
 // C2379.c
 // compile with: /Za
 void func();

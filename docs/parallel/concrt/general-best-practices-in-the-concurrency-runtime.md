@@ -4,46 +4,46 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, general best practices
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-ms.openlocfilehash: e25011e2466d76c946cc55421ed228c8ea174161
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb00c3ddb9a50a159174deccf8954f1e3bf1689d
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413924"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302230"
 ---
 # <a name="general-best-practices-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler
 
-Bu belgede, birden fazla eşzamanlılık çalışma zamanı alanlarına uygulanan en iyi uygulamalar açıklanmaktadır.
+Bu belgede Eşzamanlılık Çalışma Zamanı birden çok alanına uygulanan en iyi uygulamalar açıklanmaktadır.
 
-##  <a name="top"></a> Bölümleri
+##  <a name="top"></a>Başlıklı
 
 Bu belgede aşağıdaki bölümler yer alır:
 
-- [Mümkün olduğunda işbirliği halinde eşitleme yapılarını kullanma](#synchronization)
+- [Mümkün olduğunda birlikte bulunan eşitleme yapılarını kullanın](#synchronization)
 
-- [Yield değil verimsiz uzun görevlerden kaçınma](#yield)
+- [Sonuç veren uzun görevlerden kaçının](#yield)
 
-- [Gecikmeyi engelleyen veya gecikmesi fazla olan işlemleri için aşırı aboneliği kullanma](#oversubscription)
+- [Yüksek gecikme süresini engelleyen veya olmayan Işlemler için fazla abonelik kullan](#oversubscription)
 
-- [Mümkün olduğunda eşzamanlı bellek yönetimi işlevlerini kullanma](#memory)
+- [Mümkün olduğunda eşzamanlı bellek yönetimi Işlevlerini kullanma](#memory)
 
-- [Eşzamanlılık nesnelerinin kullanım süresini yönetmek için RAII kullanma](#raii)
+- [Eşzamanlılık nesnelerinin ömrünü yönetmek için, RAYıı kullanma](#raii)
 
 - [Genel kapsamda eşzamanlılık nesneleri oluşturma](#global-scope)
 
 - [Paylaşılan veri kesimlerinde eşzamanlılık nesneleri kullanma](#shared-data)
 
-##  <a name="synchronization"></a> Mümkün olduğunda işbirliği halinde eşitleme yapılarını kullanma
+##  <a name="synchronization"></a>Mümkün olduğunda birlikte bulunan eşitleme yapılarını kullanın
 
-Eşzamanlılık Çalışma zamanı bir dış eşitleme nesnesi gerektirmeyen çok sayıda eşzamanlı güvenli yapıları sağlar. Örneğin, [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) sağlar sınıfını eşzamanlılık açısından güvenli sona Ekle ve işlem erişim öğesi. Ancak, bir kaynağa özel erişim gerektiren burada durumlarda, çalışma zamanı sağlar [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md), ve [eşzamanlılık :: olay](../../parallel/concrt/reference/event-class.md) sınıfları. Bu tür işbirliği içerisinde devamlılığı davranır; Bu nedenle, veriler için ilk görev bekler gibi Görev Zamanlayıcısı'nı işlem kaynakları için başka bir bağlamı yeniden tahsis edebilirsiniz. Mümkün olduğunda, bu eşitleme türleri, işbirliği içerisinde devamlılığı davranmayabilir diğer eşitleme mekanizmaları yerine, Windows API tarafından sağlanan gibi kullanın. Bu eşitleme türleri ve bir kod örneği hakkında daha fazla bilgi için bkz. [eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md) ve [eşitleme veri yapılarını Windows API ile karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).
+Eşzamanlılık Çalışma Zamanı, dış eşitleme nesnesi gerektirmeyen çok sayıda eşzamanlılık güvenli yapı sağlar. Örneğin, [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) sınıfı eşzamanlılık açısından güvenli ekleme ve öğe erişim işlemleri sağlar. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir. Ancak, bir kaynağa özel erişim gerektiren durumlarda, çalışma zamanı [eşzamanlılık:: critical_section](../../parallel/concrt/reference/critical-section-class.md), [eşzamanlılık:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md)ve [concurrency:: Event](../../parallel/concrt/reference/event-class.md) sınıflarını sağlar. Bu türler birlikte çalışır; Bu nedenle, Görev Zamanlayıcı, ilk görevin verileri beklediği şekilde işleme kaynaklarını başka bir bağlam ile yeniden tahsis edebilir. Mümkün olduğunda, bu eşitleme türlerini, Windows API 'si tarafından sağlananlar gibi, birlikte çalışmayan diğer eşitleme mekanizmaları yerine kullanın. Bu eşitleme türleri ve bir kod örneği hakkında daha fazla bilgi için bkz. [eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md) ve [eşitleme VERI yapılarını Windows API ile karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).
 
 [[Üst](#top)]
 
-##  <a name="yield"></a> Yield değil verimsiz uzun görevlerden kaçınma
+##  <a name="yield"></a>Sonuç veren uzun görevlerden kaçının
 
-Görev Zamanlayıcısı'nı işbirliği içerisinde devamlılığı olarak davranır çünkü görevler eşitliği sağlamaz. Bu nedenle, bir görev, diğer görevler başlamasını engelleyebilir. Bazı durumlarda kabul edilebilir olsa da diğer durumlarda bu kilitlenme veya yetersizliğine neden olabilir.
+Görev Zamanlayıcı birlikte davrandığı için, görevler arasında eşitliği sağlamaz. Bu nedenle, bir görev diğer görevlerin başlamasını önleyebilir. Bazı durumlarda bu kabul edilebilir olsa da, diğer durumlarda bu, kilitlenme veya başlangıçları oluşmasına neden olabilir.
 
-Aşağıdaki örnek, ayrılmış işleme kaynakları sayısından daha fazla görevleri gerçekleştirir. İlk görev için Görev Zamanlayıcısı'nı vermez ve ilk görev bitene kadar ikinci görev bu nedenle başlamaz.
+Aşağıdaki örnek, ayrılan işlem kaynakları sayısından daha fazla görev gerçekleştirir. İlk görev Görev Zamanlayıcısına gelmez ve bu nedenle ikinci görev ilk görev bitene kadar başlamaz.
 
 [!code-cpp[concrt-cooperative-tasks#1](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_1.cpp)]
 
@@ -51,7 +51,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 
 1: 250000000 1: 500000000 1: 750000000 1: 1000000000 2: 250000000 2: 500000000 2: 750000000 2: 1000000000
 
-İki görevler arasında işbirliği sağlamanın birkaç yolu vardır. Görev Zamanlayıcı'da uzun süre çalışan bir görev için bazen yield bir yoludur. Aşağıdaki örnek `task` işlevi çağırmak için [concurrency::Context::Yield](reference/context-class.md#yield) başka bir görev çalıştırabilmeniz için yürütme için Görev Zamanlayıcısı'nı elde etmek üzere yöntemi.
+İki görev arasında birlikte işlem etkinleştirmenin birkaç yolu vardır. Tek yönlü, uzun süre çalışan bir görevde görev zamanlayıcısını zaman zaman elde etmenin bir yoludur. Aşağıdaki örnek, başka bir görevin çalıştırılabilmesi için Görev Zamanlayıcısına yürütülmesi için [concurrency:: Context:: yield](reference/context-class.md#yield) metodunu çağırmak üzere `task` işlevini değiştirir.
 
 [!code-cpp[concrt-cooperative-tasks#2](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_2.cpp)]
 
@@ -68,51 +68,51 @@ Bu örnek aşağıdaki çıktıyı üretir:
 2: 1000000000
 ```
 
-`Context::Yield` Yöntemi yalnızca başka bir etkin iş parçacığı üzerinde geçerli iş parçacığı ait olduğu, basit bir görev veya başka bir işletim sistemi iş parçacığı Zamanlayıcısı verir. Bu yöntem çalışmaya çalıştırmak için zamanlanan vermez bir [concurrency::task_group](reference/task-group-class.md) veya [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesi ancak henüz başlatılmadı.
+`Context::Yield` yöntemi, geçerli iş parçacığının ait olduğu Zamanlayıcı üzerinde yalnızca başka bir etkin iş parçacığı, hafif bir görev veya başka bir işletim sistemi iş parçacığı oluşturur. Bu yöntem, [concurrency:: task_group](reference/task-group-class.md) veya [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesinde çalışmak üzere zamanlanmış ancak henüz başlatılmamış bir işe vermez.
 
-Uzun süre çalışan görevler arasında işbirliği etkinleştirmek için farklı yöntemleri vardır. Büyük bir görevi daha küçük alt görevlere bölünebilir. Aşırı abonelik uzun bir görev sırasında da etkinleştirebilirsiniz. Aşırı abonelik, kullanılabilir donanım iş parçacığı sayısından daha fazla iş parçacığı oluşturmanızı sağlar. Verileri diskten veya bir ağ bağlantısı okuma gecikme süresi, örneğin, yüksek miktarda uzun bir görev içerdiğinde, gecikmeyi özellikle yararlıdır. Basit görevler ve gecikmeyi hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+Uzun süre çalışan görevler arasında ortak işlemi etkinleştirmenin başka yolları vardır. Büyük bir görevi daha küçük alt görevlere kesebilirsiniz. Ayrıca, uzun bir görev sırasında fazla aboneliği etkinleştirebilirsiniz. Fazla abonelik, kullanılabilir donanım iş parçacığı sayısından daha fazla iş parçacığı oluşturmanızı sağlar. Aşırı abonelik özellikle uzun bir görev yüksek miktarda gecikme içerdiğinde (örneğin, diskten veya bir ağ bağlantısından veri okurken) yararlıdır. Hafif görevler ve fazla abonelik hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 [[Üst](#top)]
 
-##  <a name="oversubscription"></a> Gecikmeyi engelleyen veya gecikmesi fazla olan işlemleri için aşırı aboneliği kullanma
+##  <a name="oversubscription"></a>Yüksek gecikme süresini engelleyen veya olmayan Işlemler için fazla abonelik kullan
 
-Eşzamanlılık Çalışma Zamanı Eşitleme temellerine gibi sağlar [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), işbirliği içerisinde devamlılığı engelleyin ve birbirlerine yield görevleri etkinleştirin. Bir görev işbirliği içerisinde devamlılığı engeller veya verir, veriler için ilk görev bekleyeceği gibi Görev Zamanlayıcısı'nı işlem kaynakları için başka bir bağlamı yeniden tahsis edebilirsiniz.
+Eşzamanlılık Çalışma Zamanı, [eşzamanlılık:: critical_section](../../parallel/concrt/reference/critical-section-class.md)gibi görevlerin birbirlerine engel ve bir şekilde dönüşme olanağı sağlayan eşitleme temelleri sağlar. Bir görev birlikte çalışırken ya da olduğunda, Görev Zamanlayıcı, ilk görevin verileri beklediği şekilde işleme kaynaklarını başka bir bağlam ile yeniden tahsis edebilir.
 
-Eşzamanlılık Çalışma zamanı tarafından sağlanan birlikte engelleme mekanizmasını kullanamazsınız durumlar vardır. Örneğin, kullandığınız dış kitaplık farklı eşitleme mekanizması kullanabilirsiniz. Windows API kullandığınızda, örneğin, gecikme süresi, yüksek miktarda sahip bir işlem gerçekleştirdiğinizde başka bir örnektir `ReadFile` işlevini bir ağ bağlantısından veriler okunamıyor. Bu gibi durumlarda, başka bir görev boşta olduğunda çalıştırılacak diğer görevler gecikmeyi etkinleştirebilirsiniz. Aşırı abonelik, kullanılabilir donanım iş parçacığı sayısından daha fazla iş parçacığı oluşturmanızı sağlar.
+Eşzamanlılık Çalışma Zamanı tarafından sunulan birlikte çalışmayan engelleme mekanizmasını kullanamadığı durumlar vardır. Örneğin, kullandığınız bir dış kitaplık farklı bir eşitleme mekanizması kullanabilir. Diğer bir örnek, örneğin, bir ağ bağlantısından verileri okumak için Windows API `ReadFile` işlevini kullandığınızda, yüksek gecikme süresine sahip olabilecek bir işlem gerçekleştirmeniz. Bu durumlarda, fazla abonelik başka bir görev boştayken diğer görevlerin çalışmasını sağlayabilir. Fazla abonelik, kullanılabilir donanım iş parçacığı sayısından daha fazla iş parçacığı oluşturmanızı sağlar.
 
-Aşağıdaki işlev göz önünde bulundurun `download`, verilen URL'den dosyasını indirir. Bu örnekte [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) geçici olarak etkin iş parçacığı sayısını artırmak için yöntemi.
+Belirtilen URL 'de dosyayı indiren `download`aşağıdaki işlevi göz önünde bulundurun. Bu örnek, etkin iş parçacıklarının sayısını geçici olarak artırmak için [concurrency:: Context:: Oversubscribe](reference/context-class.md#oversubscribe) metodunu kullanır.
 
 [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_3.cpp)]
 
-Çünkü `GetHttpFile` işlevi potansiyel olarak görünmeyen bir işlemi gerçekleştirir, gecikmeyi geçerli görev için veri bekler çalışması diğer görevleri etkinleştirebilirsiniz. Bu örneğin tam sürümü için bkz: [nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+`GetHttpFile` işlevi potansiyel olarak görünmeyen bir işlem gerçekleştirdiğinden, çok sayıda abonelik geçerli görev için veri beklediği için diğer görevlerin çalışmasını sağlayabilir. Bu örneğin tüm sürümü için bkz. [nasıl yapılır: gecikme gecikmesini anlamak Için fazla abonelik kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
 [[Üst](#top)]
 
-##  <a name="memory"></a> Mümkün olduğunda eşzamanlı bellek yönetimi işlevlerini kullanma
+##  <a name="memory"></a>Mümkün olduğunda eşzamanlı bellek yönetimi Işlevlerini kullanma
 
-Bellek Yönetimi işlevleri kullanmak [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) ve [concurrency::Free](reference/concurrency-namespace-functions.md#free), sık görece kısa ömürlü küçük nesneleri ayırmak hassas görevler vardır. Eşzamanlılık Çalışma zamanı, her bir çalışan iş parçacığı için ayrı bir önbellek tutar. `Alloc` Ve `Free` işlevleri bellek ayırıp bu önbellekler kilitler veya belleği engelleri kullanmadan öğesinden.
+Görece kısa bir yaşam süresine sahip küçük nesneler genellikle ayıran ayrıntılı görevleriniz olduğunda, [concurrency::](reference/concurrency-namespace-functions.md#alloc) allocate ve [concurrency:: Free](reference/concurrency-namespace-functions.md#free)bellek yönetimi işlevlerini kullanın. Eşzamanlılık Çalışma Zamanı çalışan her iş parçacığı için ayrı bir bellek önbelleği barındırır. `Alloc` ve `Free` işlevleri, kilitler veya bellek engelleri kullanımı olmadan bu önbelleklerden bellek ayırır ve serbest bırakırsanız.
 
-Bu bellek yönetimi işlevleri hakkında daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Bu işlevler kullanan bir örnek için bkz: [nasıl yapılır: Ayırma kullanın ve bellek performansını artırmak ücretsiz](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
+Bu bellek yönetimi işlevleri hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Bu işlevleri kullanan bir örnek için bkz. [nasıl yapılır: bellek performansını artırmak Için ayırma ve serbest kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
 
 [[Üst](#top)]
 
-##  <a name="raii"></a> Eşzamanlılık nesnelerinin kullanım süresini yönetmek için RAII kullanma
+##  <a name="raii"></a>Eşzamanlılık nesnelerinin ömrünü yönetmek için, RAYıı kullanma
 
-Eşzamanlılık Çalışma zamanı özel durum işleme iptal gibi özellikleri uygulamak için kullanır. Çağırdığınızda, çalışma zamanına veya çalışma zamanına çağıran başka bir kitaplık çağırmak bu nedenle, özel durum-güvenli kod yazın.
+Eşzamanlılık Çalışma Zamanı, iptal gibi özellikleri uygulamak için özel durum işlemeyi kullanır. Bu nedenle, çalışma zamanına çağrı yaptığınızda veya çalışma zamanına çağıran başka bir kitaplığı çağırdığınızda özel durum güvenli kodu yazın.
 
-*Olduğu kaynak alımı başlatma* (RAII) deseni, güvenli bir şekilde belirtilen kapsam altında bir eşzamanlılık nesnenin ömrünü yönetmek için bir yoludur. RAII deseni altında bir veri yapısı yığında ayrılır. Bu veri yapısını başlatır veya bir kaynak oluşturulur ve yok eder veya veri yapısı kaldırıldığında bu kaynağı yayınlar zaman alır. RAII deseni kapsayan kapsam çıkar önce yok Edicisi çağrılır garanti eder. Bir işlev birden çok içerdiğinde bu desen yararlıdır `return` deyimleri. Bu düzen ayrıca özel durum-güvenli kod yazmanıza yardımcı olur. Olduğunda bir `throw` deyimi için yığın geriye doğru izleme, yok edici RAII nesne çağrılır neden olur; bu nedenle, kaynağın her zaman doğru bir şekilde serbest veya silinmiş.
+*Kaynak alımı başlatma* (rampa) deseninin belirli bir kapsamdaki eşzamanlılık nesnesinin ömrünü güvenli bir şekilde yönetmenin bir yolu vardır. OYıı deseninin altında, yığın üzerinde bir veri yapısı ayrılır. Bu veri yapısı oluşturulduğunda bir kaynağı başlatır veya alır ve veri yapısı yok edildiğinde bu kaynağı yok eder veya serbest bırakır. RAMPALAMA kapsamı, yok edicinin kapsayan kapsam gelmeden önce çağrıldığından emin olur. Bu model, bir işlev birden çok `return` deyimi içerdiğinde yararlıdır. Bu model ayrıca özel durum güvenli kod yazmanıza yardımcı olur. `throw` bir ifade yığının geriye doğru neden olduğunda, bu nesne için yıkıcı çağrılır; Bu nedenle, kaynak her zaman doğru şekilde silinir veya serbest bırakılır.
 
-Çalışma zamanı gibi RAII deseni kullanan birden çok sınıf tanımlar [concurrency::critical_section::scoped_lock](../../parallel/concrt/reference/critical-section-class.md#critical_section__scoped_lock_class) ve [concurrency::reader_writer_lock::scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class). Bu yardımcı sınıfları olarak bilinen *kilit kapsamı*. İle çalışırken, bu sınıflar çeşitli avantajlar sunar [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) veya [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) nesneleri. Bu sınıfların Oluşturucusu erişim sağlanan edinme `critical_section` veya `reader_writer_lock` nesne; o nesnenin yok Edicisi yayınlar erişim. Bunu kaldırıldığında kapsamlı bir kilit, karşılıklı dışlama nesnesine erişim otomatik olarak yayımlar için el ile temel alınan nesnede kilidini değil.
+Çalışma zamanı, KORII deseninin kullanıldığı birkaç sınıfı tanımlar, örneğin, [concurrency:: critical_section:: scoped_lock](../../parallel/concrt/reference/critical-section-class.md#critical_section__scoped_lock_class) ve [concurrency:: reader_writer_lock:: scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class). Bu yardımcı sınıflar, *kapsamlı kilitler*olarak bilinir. Bu sınıflar [eşzamanlılık:: critical_section](../../parallel/concrt/reference/critical-section-class.md) veya [eşzamanlılık:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) nesneleriyle çalışırken çeşitli avantajlar sağlar. Bu sınıfların Oluşturucusu, belirtilen `critical_section` veya `reader_writer_lock` nesnesine erişim sağlar; yıkıcı bu nesneye erişimi serbest bırakır. Kapsamlı bir kilit, yok edildiğinde otomatik olarak karşılıklı dışlama nesnesine erişim yayınlamadığından, temeldeki nesnenin kilidini el ile açamazsınız.
 
-Aşağıdaki sınıf göz önünde bulundurun `account`, harici bir kitaplığı tarafından tanımlanan ve bu nedenle değiştirilemez.
+Bir dış kitaplık tarafından tanımlanan ve bu nedenle değiştirilemeyen `account`aşağıdaki sınıfı göz önünde bulundurun.
 
 [!code-cpp[concrt-account-transactions#1](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_4.h)]
 
-Aşağıdaki örnek birden çok işlem gerçekleştiren bir `account` paralel nesne. Örnekte bir `critical_section` nesnesi erişimi eşitlemek için `account` çünkü nesne `account` sınıf eşzamanlı güvenli değil. Her paralel işlemi kullanan bir `critical_section::scoped_lock` bunu garanti etmenin nesne `critical_section` işlemi başarılı veya başarısız olduğunda nesne kilidi. Hesap bakiyeniz negatif olduğunda `withdraw` işlemi, bir özel durum ile başarısız olur.
+Aşağıdaki örnek, `account` nesnesi üzerinde paralel olarak birden çok işlem gerçekleştirir. Bu örnek, `account` sınıfı eşzamanlılık açısından güvenli olmadığından `account` nesnesine erişimi senkronize etmek için bir `critical_section` nesnesi kullanır. Her paralel işlem, işlem başarılı veya başarısız olduğunda `critical_section` nesnesinin kilidinin açık olmasını sağlamak için bir `critical_section::scoped_lock` nesnesi kullanır. Hesap bakiyesi negatifse `withdraw` işlem bir özel durum oluşturarak başarısız olur.
 
 [!code-cpp[concrt-account-transactions#2](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_5.cpp)]
 
-Bu örnek, örnek aşağıdaki çıktıyı üretir:
+Bu örnek aşağıdaki örnek çıktıyı üretir:
 
 ```Output
 Balance before deposit: 1924
@@ -124,27 +124,27 @@ Error details:
     negative balance: -76
 ```
 
-Eşzamanlılık nesnelerinin kullanım süresini yönetmek için RAII deseni kullanan diğer örnekler için [izlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [nasıl yapılır: Bağlam sınıfını işbirlikçi semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md), ve [nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+Eşzamanlılık nesnelerinin ömrünü yönetmek için kıI modelini kullanan ek örnekler için, bkz [. Izlenecek yol: Kullanıcı arabirimi Iş parçacığından Işi kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [nasıl yapılır: bağlam sınıfını kullanarak bir örnek semaforu uygulama](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)ve [nasıl yapılır: gecikme süresini kaydırmak için aşırı abonelik kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
 [[Üst](#top)]
 
-##  <a name="global-scope"></a> Genel kapsamda eşzamanlılık nesneleri oluşturma
+##  <a name="global-scope"></a>Genel kapsamda eşzamanlılık nesneleri oluşturma
 
-Genel kapsamda eşzamanlılık nesne oluşturduğunuzda, uygulamanızda gerçekleşecek şekilde, erişim ihlallerine kilitlenme veya bellek gibi sorunlara neden olabilir.
+Genel kapsamda bir eşzamanlılık nesnesi oluşturduğunuzda, uygulamanızda kilitlenme veya bellek erişimi ihlalleri gibi sorunların oluşmasına neden olabilirsiniz.
 
-Örneğin, bir eşzamanlılık çalışma zamanı nesnesi oluşturduğunuzda, bir henüz oluşturulmadı, çalışma zamanı bir varsayılan Zamanlayıcı sizin için oluşturur. Genel nesne oluşturma sırasında oluşturulan bir çalışma zamanı nesnesi buna uygun olarak bu varsayılan Zamanlayıcı oluşturmak çalışma zamanı neden olur. Ancak, bu işlem eşzamanlılık çalışma zamanı altyapısını destekleyen diğer nesnelerin ile başlatmayı engelleyebilir bir iç kilidi alır. Bu iç kilit henüz başlatılmadı ve bu nedenle, gerçekleşmesi kilitlenme uygulamanızda neden olabilir, başka bir altyapı nesnesi tarafından gerekli olabilir.
+Örneğin, bir Eşzamanlılık Çalışma Zamanı nesnesi oluşturduğunuzda, çalışma zamanı henüz oluşturulmadıysa sizin için varsayılan bir zamanlayıcı oluşturur. Genel nesne oluşturma sırasında oluşturulan bir çalışma zamanı nesnesi, çalışma zamanının bu varsayılan zamanlayıcıyı oluşturmasına neden olur. Ancak, bu işlem dahili bir kilit alır ve bu, Eşzamanlılık Çalışma Zamanı altyapısını destekleyen diğer nesnelerin başlatılmasına engel olabilir. Bu iç kilit, henüz başlatılmamış başka bir altyapı nesnesi tarafından gerekli olabilir ve bu nedenle uygulamanızda kilitlenmenin oluşmasına neden olabilir.
 
-Aşağıdaki örnek, genel bir oluşturulmasını gösterir. [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesne. Bu düzen için değil yalnızca geçerli `Scheduler` sınıf ancak eşzamanlılık çalışma zamanı tarafından sağlanan diğer tüm türleri. Uygulamada beklenmeyen davranışlara neden çünkü bu düzen izlemeyin öneririz.
+Aşağıdaki örnek, genel bir [eşzamanlılık:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesnesinin oluşturulmasını gösterir. Bu model yalnızca `Scheduler` sınıfı için değil, Eşzamanlılık Çalışma Zamanı tarafından sağlanmış diğer tüm türler için de geçerlidir. Uygulamanızda beklenmeyen davranışlara neden olabileceğinden, bu kalıbı takip etmemenizi öneririz.
 
 [!code-cpp[concrt-global-scheduler#1](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_6.cpp)]
 
-Doğru bir şekilde oluşturmak için örnekleri için `Scheduler` nesneleri görmek [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+`Scheduler` nesneleri oluşturmanın doğru yolu örnekleri için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 [[Üst](#top)]
 
-##  <a name="shared-data"></a> Paylaşılan veri kesimlerinde eşzamanlılık nesneleri kullanma
+##  <a name="shared-data"></a>Paylaşılan veri kesimlerinde eşzamanlılık nesneleri kullanma
 
-Eşzamanlılık Çalışma zamanı tarafından oluşturulan veri bölümü gibi bir paylaşılan veri bölümünde eşzamanlılık nesnelerinin kullanımını desteklemiyor [data_seg](../../preprocessor/data-seg.md) `#pragma` yönergesi. İşlem sınırları arasında paylaşılan bir eşzamanlılık nesnesi tutarsız ya da geçersiz bir durumda çalışma zamanının yerleştirebilirsiniz.
+Eşzamanlılık Çalışma Zamanı, paylaşılan bir veri bölümünde eşzamanlılık nesnelerinin kullanımını desteklemez, örneğin, [data_seg](../../preprocessor/data-seg.md)`#pragma` yönergesi tarafından oluşturulan bir veri bölümü. İşlem sınırları genelinde paylaşılan bir eşzamanlılık nesnesi, çalışma zamanını tutarsız veya geçersiz bir duruma geçirebilir.
 
 [[Üst](#top)]
 
@@ -153,12 +153,12 @@ Eşzamanlılık Çalışma zamanı tarafından oluşturulan veri bölümü gibi 
 [Eşzamanlılık Çalışma Zamanı En İyi Yöntemleri](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)<br/>
 [Eşitleme Veri Yapılarını Windows API ile Karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)<br/>
 [Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)<br/>
 [Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)<br/>
-[Nasıl yapılır: Bağlam Sınıfını İşbirliğine Dayalı Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
-[İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
+[Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
+[İzlenecek Yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
 [Paralel Desen Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)
