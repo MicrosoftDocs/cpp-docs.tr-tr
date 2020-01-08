@@ -5,12 +5,12 @@ description: Visual C++ Studio 'da Microsoft, c++ 20 dil standardı ile tam uygu
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 06fa060b674e51a3352a9a928bccdbfa6c63aae4
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: de31c2e61f0a10c785d610d3227a659c59b56d38
+ms.sourcegitcommit: 00f50ff242031d6069aa63c81bc013e432cae0cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74858041"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546438"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -1241,13 +1241,11 @@ Daha fazla bilgi için bkz. [oluşturucular](../cpp/constructors-cpp.md#inheriti
 
 [P0017R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0017r1.html)
 
-Bir temel sınıfın Oluşturucusu genel olmayan, ancak türetilmiş bir sınıf tarafından erişilebilir değilse, **/std: c++ 17** modu altında, Visual Studio sürüm 15,7 ' de, türetilmiş türdeki bir nesneyi başlatmak için artık boş küme ayraçları kullanamazsınız.
-
+Bir temel sınıfın Oluşturucusu genel olmayan, ancak türetilmiş bir sınıf tarafından erişilebilir değilse, **/std: c++ 17** modu altında Visual Studio 2017 sürüm 15,7 ' de, türetilmiş türdeki bir nesneyi başlatmak için artık boş küme ayraçları kullanamazsınız.
 Aşağıdaki örnek C++ 14 uyumlu davranışını gösterir:
 
 ```cpp
 struct Derived;
-
 struct Base {
     friend struct Derived;
 private:
@@ -1255,32 +1253,26 @@ private:
 };
 
 struct Derived : Base {};
-
 Derived d1; // OK. No aggregate init involved.
 Derived d2 {}; // OK in C++14: Calls Derived::Derived()
                // which can call Base ctor.
 ```
 
 C++ 17 ' de `Derived` artık toplam bir tür olarak kabul edilir. Bu, özel varsayılan oluşturucu aracılığıyla `Base` başlatmanın doğrudan genişletilmiş toplama başlatma kuralının bir parçası olarak meydana geldiğini gösterir. Daha önce, `Base` özel Oluşturucu `Derived` Oluşturucu aracılığıyla çağırılır ve arkadaş bildirimi nedeniyle başarılı oldu.
-
 Aşağıdaki örnekte, **/std: c++ 17** modundaki Visual Studio sürüm 15,7 ' de c++ 17 davranışı gösterilmektedir:
 
 ```cpp
 struct Derived;
-
 struct Base {
     friend struct Derived;
 private:
     Base() {}
 };
-
 struct Derived : Base {
     Derived() {} // add user-defined constructor
                  // to call with {} initialization
 };
-
 Derived d1; // OK. No aggregate init involved.
-
 Derived d2 {}; // error C2248: 'Base::Base': cannot access
                // private member declared in class 'Base'
 ```

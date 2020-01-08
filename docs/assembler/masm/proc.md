@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-ms.openlocfilehash: e68a7fc9814ba1ca07095e036e88fb5917220086
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 85d9a1e82eebcd83cb0f12f5ca751ec9415af18d
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74987938"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318676"
 ---
 # <a name="proc"></a>PROC
 
-*Etiket*adlı bir yordam bloğunun başlangıcını ve sonunu işaretler. Bloktaki deyimler **Call** yönergesi veya [Invoke](../../assembler/masm/invoke.md) yönergesi ile çağrılabilir.
+*Etiket*adlı bir yordam bloğunun başlangıcını ve sonunu işaretler. Bloktaki deyimler **Call** yönergesi veya [Invoke](invoke.md) yönergesi ile çağrılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *etiket* **proc** ⟦*Distance*⟧ ⟦*Language-Type*⟧ ⟦*görünürlük*⟧ ⟦ __\<__ *prologuearg* __>__ ⟧ ⟦, *reglist*⟧ ⟦ __,__ *parametre* ⟦ __:__ *Tag*⟧**kullanır** ... ⟧\
+> *etiket* **proc** ⟦*Distance*⟧ ⟦*Language-Type*⟧ ⟦ **PUBLIC** | **PRIVATE** | **Export** ⟧ ⟦ __\<__ *prologuearg* __>__ ⟧ ⟦, *reglist*⟧ ⟦ __,__ *parametre* ⟦ __:__ *Tag*⟧**kullanır** ... ⟧\
 > ⟦**Frame** ⟦ __:__ *ehandler-Address*⟧ ⟧ \
 > *deyimler*\
 > *etiket* **endp**
@@ -30,9 +30,9 @@ ms.locfileid: "74987938"
 
 ⟦**Frame** ⟦ __:__ *ehandler-Address*⟧ ⟧ yalnızca ml64. exe ile geçerlidir ve bir işlevin yapılandırılmış özel durum işleme geriye doğru izleme davranışı için. xdata içinde. pdata ve bırakma bilgilerinde bir işlev tablosu girişi oluşturulmasına neden olur.
 
-**Çerçeve** özniteliği kullanıldığında, arkasından bir gelmelidir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi.
+**Çerçeve** özniteliği kullanıldığında, arkasından bir gelmelidir [. ENDPROLOG](dot-endprolog.md) yönergesi.
 
-Ml64. exe kullanma hakkında daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) .
+Ml64. exe kullanma hakkında daha fazla bilgi için bkz. [for x64 (ml64. exe)](masm-for-x64-ml64-exe.md) .
 
 ## <a name="example"></a>Örnek
 
@@ -81,4 +81,5 @@ Dumping Unwind Information for file ex2.exe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

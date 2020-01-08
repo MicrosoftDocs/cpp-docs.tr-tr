@@ -1,17 +1,17 @@
 ---
 title: Oluşturucular (C++)
-ms.date: 11/19/2019
+ms.date: 12/27/2019
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 6cdf6241542c3f93484097c65015181a91647d49
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 985c63c5c937f9e85b6898cdbcc61f347688b96d
+ms.sourcegitcommit: 00f50ff242031d6069aa63c81bc013e432cae0cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246613"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546399"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -477,6 +477,52 @@ Bir oluşturucu özel bir durum oluşturursa, yok etme sırası oluşturma sıra
 1. Temel sınıf ve üye nesneleri bildirimin tersi sırada yok edilir.
 
 1. Oluşturucu temsil eden değilse, tam oluşturulmuş tüm taban sınıfı nesneleri ve üyeleri yok edilir. Ancak nesnenin kendisi tam oluşturulmadığından yok edici çalışmaz.
+
+## <a name="extended_aggregate"></a>Türetilmiş oluşturucular ve genişletilmiş toplu başlatma
+
+Bir temel sınıfın Oluşturucusu genel olmayan, ancak türetilmiş bir sınıf tarafından erişilebilir değilse, **/std: c++ 17** modu altında Visual Studio 2017 ve sonraki sürümlerde, türetilmiş türdeki bir nesneyi başlatmak için boş küme ayraçları kullanamazsınız.
+
+Aşağıdaki örnek C++ 14 uyumlu davranışını gösterir:
+
+```cpp
+struct Derived;
+
+struct Base {
+    friend struct Derived;
+private:
+    Base() {}
+};
+
+struct Derived : Base {};
+
+Derived d1; // OK. No aggregate init involved.
+Derived d2 {}; // OK in C++14: Calls Derived::Derived()
+               // which can call Base ctor.
+```
+
+C++ 17 ' de `Derived` artık toplam bir tür olarak kabul edilir. Bu, özel varsayılan oluşturucu aracılığıyla `Base` başlatmanın doğrudan genişletilmiş toplama başlatma kuralının bir parçası olarak meydana geldiğini gösterir. Daha önce, `Base` özel Oluşturucu `Derived` Oluşturucu aracılığıyla çağırılır ve arkadaş bildirimi nedeniyle başarılı oldu.
+
+Aşağıdaki örnekte, **/std: c++ 17** modunda Visual Studio 2017 ve sonraki sürümlerde c++ 17 davranışı gösterilmektedir:
+
+```cpp
+struct Derived;
+
+struct Base {
+    friend struct Derived;
+private:
+    Base() {}
+};
+
+struct Derived : Base {
+    Derived() {} // add user-defined constructor
+                 // to call with {} initialization
+};
+
+Derived d1; // OK. No aggregate init involved.
+
+Derived d2 {}; // error C2248: 'Base::Base': cannot access
+               // private member declared in class 'Base'
+```
 
 ### <a name="constructors-for-classes-that-have-multiple-inheritance"></a>Birden çok devralma sınıfına sahip sınıflar için oluşturucular
 

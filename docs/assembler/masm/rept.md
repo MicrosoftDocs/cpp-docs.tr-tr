@@ -1,21 +1,21 @@
 ---
 title: REPT
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - REPT
 helpviewer_keywords:
 - REPT directive
 ms.assetid: 1952f6be-d2a2-4fc1-87a7-b773d07c7399
-ms.openlocfilehash: 6bd6f261eff0d0b3ad9485c9e3ea0eedc1a46995
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: ead4a8aafd1d6e3c37105aeaad19350af93ab710
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394204"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318507"
 ---
 # <a name="rept"></a>REPT
 
-Bkz. [Yinele](../../assembler/masm/repeat.md).
+Bkz. [Yinele](repeat.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,5 @@ Bkz. [Yinele](../../assembler/masm/repeat.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .386P directive
 ms.assetid: 15199091-3bb7-4270-bb9b-878c1c2f2146
-ms.openlocfilehash: 33ec3ddb52305b29afbacd3fd858018e6e0d9aed
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: cac968911ed851472e63241abd82cdb11b97b96d
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398717"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75314633"
 ---
 # <a name="386p-32-bit-masm"></a>.386P (32-bit MASM)
 
@@ -27,4 +27,5 @@ Ayrıca 80387 yönergeleri de etkinleştirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -1,13 +1,13 @@
 ---
 title: İşlemci üreticisi programlama kılavuzları
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
-ms.openlocfilehash: bd1cba8378a8b173d36e9cc8975b171cd58d388c
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 3e1f1d32c50d86ac1df271add10936f572a59c20
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394831"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318663"
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>İşlemci üreticisi programlama kılavuzları
 
@@ -27,4 +27,5 @@ Visual Studio ne de Microsoft Macro Assembler tüm işlemcileri desteklemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Macro Assembler başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler başvurusu](microsoft-macro-assembler-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -1,32 +1,36 @@
 ---
 title: .CODE
-ms.date: 12/06/2019
+ms.date: 12/17/2019
 f1_keywords:
 - .CODE
 helpviewer_keywords:
 - .CODE directive
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
-ms.openlocfilehash: 36d9c01d2a24b446ddc91fe73f3cb677067b3e4c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0975e96e670400b7fa221ae2d1b9982b5cee613b
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74987924"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75314152"
 ---
-# <a name="code-32-bit-masm"></a>. KOD (32-bit masa)
+# <a name="code"></a>.CODE
 
-İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), bir kod kesiminin başlangıcını gösterir.
+(yalnızca 32-bit masa.) İle kullanıldığında [. MODEL](dot-model.md), bir kod kesiminin başlangıcını gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **. KOD** ⟦*adı*⟧
+> **. CODE** ⟦*Name*⟧ \
+> ⟦ *segmentItem* ⟧... \
+> ⟦ *codesegmentnameId* **bitiyor**;; ⟧\
 
 ### <a name="parameters"></a>Parametreler
 
 *ad*\
-Kod kesiminin adını belirten isteğe bağlı parametre. Küçük, küçük, kompakt ve düz [modeller](../../assembler/masm/dot-model.md)için varsayılan ad **_TEXT** . Varsayılan ad, diğer modeller için *modulename*_TEXT.
+Kod kesiminin adını belirten isteğe bağlı parametre. Küçük, küçük, kompakt ve düz [modeller](dot-model.md)için varsayılan ad **_TEXT** . Varsayılan ad, diğer modeller için *modulename*_TEXT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
-[.DATA](../../assembler/masm/dot-data.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[. VERI](dot-data.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)
+

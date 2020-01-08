@@ -1,19 +1,19 @@
 ---
 title: SBYTE (MASM)
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - sbyte
 helpviewer_keywords:
 - SBYTE directive
 ms.assetid: ae9323cc-4ed5-45fa-9cd6-c241868e4cfd
-ms.openlocfilehash: 3a06f35d3a3c32ab9229b7a399552301b2219412
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: e80a695364ccbaa6d0bea99a3a219b7a97067ae7
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394165"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318494"
 ---
-# <a name="sbyte-masm"></a>SBYTE (MASM)
+# <a name="sbyte"></a>SBYTE
 
 Her *Başlatıcı*için imzalı bir depolama bayt ayırır ve isteğe bağlı olarak başlatır. , Türün geçerli olduğu her yerde tür belirleyici olarak da kullanılabilir.
 
@@ -23,6 +23,7 @@ Her *Başlatıcı*için imzalı bir depolama bayt ayırır ve isteğe bağlı ol
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
-[Bayt](../../assembler/masm/byte-masm.md)\
-[DB](../../assembler/masm/db.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[Bayt](byte-masm.md)\
+[DB](db.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -1,16 +1,16 @@
 ---
 title: Masz Işleçleri başvurusu
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), operators reference
 - operators [MASM]
 ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
-ms.openlocfilehash: 5295307ad668b76e5ff39882ce2613f2042f914a
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: c0059ab1b0204b79e040d18bd5aa88145775ebcd
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74395209"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318767"
 ---
 # <a name="masm-operators-reference"></a>Masz Işleçleri başvurusu
 
@@ -68,7 +68,7 @@ ms.locfileid: "74395209"
 |[EQ (eşittir)](operator-eq.md)|[GE (büyük veya eşittir)](operator-ge.md)|[GT (büyüktür)](operator-gt.md)|
 |[LE (daha az veya eşit)](operator-le.md)|[LT (küçüktür)](operator-lt.md)|[NE (eşit değildir)](operator-ne.md)|
 
-## <a name="segment"></a>Deki
+## <a name="segment"></a>Kesim
 
 |||
 |-|-|
@@ -77,7 +77,7 @@ ms.locfileid: "74395209"
 |[FARK (kesim göreli boşluğu)](operator-offset.md)|[SECTIONREL (Bölüm göreli boşluğu)](operator-sectionrel.md)|
 |[SEG (segmenti al)](operator-seg.md)||
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tür
 
 ||||
 |-|-|-|
@@ -90,4 +90,5 @@ ms.locfileid: "74395209"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Macro Assembler Başvurusu](microsoft-macro-assembler-reference.md)<br/>
+[Microsoft Macro Assembler başvurusu](microsoft-macro-assembler-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

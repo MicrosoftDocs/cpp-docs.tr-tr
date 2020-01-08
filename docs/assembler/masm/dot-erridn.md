@@ -8,12 +8,12 @@ helpviewer_keywords:
 - .ERRIDN directive
 - .ERRIDNI directive
 ms.assetid: 89507db3-7d40-4a5e-a378-24d30feda9d1
-ms.openlocfilehash: a83015e8cd1354732bd8427bcb865ac241a6caed
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 036431d3b40fae8a7f9cbd0502dd46ba1fb4dcbe
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398338"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75313476"
 ---
 # <a name="perioderridn-perioderridni"></a>&period;ERRIDN, &period;ERRNı dili
 
@@ -30,4 +30,5 @@ Metin öğeleri aynıysa bir hata oluşturur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

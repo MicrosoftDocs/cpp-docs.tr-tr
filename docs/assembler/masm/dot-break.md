@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - .BREAK directive
 ms.assetid: 4f55dfce-ff41-4a68-9423-b0077dfc9206
-ms.openlocfilehash: e4692e38cbbdda4ad09bdfa248c9bc386c27dd3d
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 3096aaf827eecb4e297e5a1d04f5e982294053de
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398591"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75314139"
 ---
 # <a name="break-32-bit-masm"></a>. Kes (32-bit masa)
 
-Sonlandırmak için kod üretir [. ](../../assembler/masm/dot-while.md)Veya sırasında [. ](../../assembler/masm/dot-repeat.md) *Koşul* doğru ise bloğu tekrarlayın. (yalnızca 32-bit masa.)
+Sonlandırmak için kod üretir [. ](dot-while.md)Veya sırasında [. ](dot-repeat.md) *Koşul* doğru ise bloğu tekrarlayın. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,5 @@ Sonlandırmak için kod üretir [. ](../../assembler/masm/dot-while.md)Veya sır
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)
