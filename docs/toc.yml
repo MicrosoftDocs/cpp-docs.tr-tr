@@ -3089,7 +3089,7 @@
                 - name: Bildirimler ve değişken bildirimleri
                   expanded: false
                   items:
-                    - name: Bildirimler ve değişken bildirimleri
+                    - name: Bildirimciler ve değişken bildirimleri
                       href: c-language/declarators-and-variable-declarations.md
                     - name: Basit değişken bildirimler
                       href: c-language/simple-variable-declarations.md
@@ -3145,7 +3145,7 @@
                 - name: Temel türleri depolama
                   expanded: false
                   items:
-                    - name: Temel türleri depolama
+                    - name: Temel türlerin depolanması
                       href: c-language/storage-of-basic-types.md
                     - name: Tür char
                       href: c-language/type-char.md
@@ -3654,23 +3654,14 @@
               items:
                 - name: Sözcük kuralları
                   href: cpp/lexical-conventions.md
-                - name: Dosya çevirisine genel bakış
-                  href: cpp/overview-of-file-translation.md
-                - name: Karakter kümeleri
+                - name: Belirteçler ve karakter kümeleri
                   href: cpp/character-sets.md
-                - name: Belirteçler
-                  href: cpp/tokens-cpp.md
                 - name: Açıklamalar
                   href: cpp/comments-cpp.md
                 - name: Tanımlayıcılar
                   href: cpp/identifiers-cpp.md
-                - name: Anahtar sözcükler
-                  expanded: false
-                  items:
-                    - name: Anahtar sözcükler
-                      href: cpp/keywords-cpp.md
-                    - name: auto anahtar sözcüğü
-                      href: cpp/auto-keyword.md
+                - name: Anahtar Sözcükler
+                  href: cpp/keywords-cpp.md
                 - name: Noktalama İşaretleri
                   href: cpp/punctuators-cpp.md
                 - name: 'Sayısal, boole ve işaretçi değişmez değerleri'
@@ -3684,165 +3675,99 @@
               items:
                 - name: Temel kavramlar
                   href: cpp/basic-concepts-cpp.md
-                - name: Bildirimler ve tanımlar
-                  expanded: false
-                  items:
-                    - name: C++ tür sistemi
-                      href: cpp/cpp-type-system-modern-cpp.md
-                    - name: Bildirimler ve tanımlar
-                      href: cpp/declarations-and-definitions-cpp.md
-                    - name: Bildiricilere genel bakış
-                      href: cpp/overview-of-declarators.md
-                    - name: Tanımlayıcılar
-                      href: cpp/specifiers.md
-                    - name: extern
-                      href: cpp/extern-cpp.md
-                    - name: Üstbilgi dosyaları
-                      href: cpp/header-files-cpp.md
-                    - name: C++ bildirim noktası
-                      href: cpp/point-of-declaration-in-cpp.md
-                    - name: Başlatıcılar
-                      href: cpp/initializers.md
-                    - name: Diğer adlar ve tür tanımları
-                      href: cpp/aliases-and-typedefs-cpp.md
-                    - name: using bildirimi
-                      href: cpp/using-declaration.md
-                    - name: Belirsiz bildirimleri çözümleme
-                      href: cpp/resolving-ambiguous-declarations-cpp.md
-                    - name: Depolama sınıfları
-                      href: cpp/storage-classes-cpp.md
-                    - name: const
-                      href: cpp/const-cpp.md
-                    - name: constexpr
-                      href: cpp/constexpr-cpp.md
-                    - name: volatile
-                      href: cpp/volatile-cpp.md
-                    - name: otomatik
-                      href: cpp/auto-cpp.md
-                    - name: decltype
-                      href: cpp/decltype-cpp.md
-                    - name: Öznitelikler
-                      href: cpp/attributes.md
+                - name: C++ tür sistemi
+                  href: cpp/cpp-type-system-modern-cpp.md
                 - name: Kapsam
                   href: cpp/scope-visual-cpp.md
                 - name: Üstbilgi dosyaları
                   href: cpp/header-files-cpp.md
-                - name: Program ve bağlantı
-                  expanded: false
-                  items:
-                    - name: Program ve bağlantı
-                      href: cpp/program-and-linkage-cpp.md
-                    - name: extern
-                      href: cpp/using-extern-to-specify-linkage.md
-                - name: Başlatma ve sonlandırma
-                  expanded: false
-                  items:
-                    - name: Başlatma ve sonlandırma
-                      href: cpp/startup-and-termination-cpp.md
-                    - name: 'main: program başlatma'
-                      expanded: false
-                      items:
-                        - name: 'main: program başlatma'
-                          href: cpp/main-program-startup.md
-                        - name: main yerine wmain kullanma
-                          href: cpp/using-wmain-instead-of-main.md
-                        - name: Bağımsız değişken tanımları
-                          href: cpp/argument-definitions.md
-                        - name: Joker karakter genişletmesi
-                          href: cpp/wildcard-expansion.md
-                        - name: C++ komut satırı bağımsız değişkenlerini ayrıştırma
-                          href: cpp/parsing-cpp-command-line-arguments.md
-                        - name: C++ komut satırı işlemini özelleştirme
-                          href: cpp/customizing-cpp-command-line-processing.md
-                        - name: main işlevi kısıtlamaları
-                          href: cpp/main-function-restrictions.md
-                    - name: Program sonlandırma
-                      expanded: false
-                      items:
-                        - name: Program sonlandırma
-                          href: cpp/program-termination.md
-                        - name: exit işlevi
-                          href: cpp/exit-function.md
-                        - name: abort işlevi
-                          href: cpp/abort-function.md
-                        - name: Program sonlandırmada return deyimi
-                          href: cpp/return-statement-in-program-termination-cpp.md
-                    - name: Ek başlatma konuları
-                      href: cpp/additional-startup-considerations.md
-                    - name: Ek sonlandırma konuları
-                      expanded: false
-                      items:
-                        - name: Ek sonlandırma konuları
-                          href: cpp/additional-termination-considerations.md
-                        - name: exit veya return Kullanma
-                          href: cpp/using-exit-or-return.md
-                        - name: atexit Kullanma
-                          href: cpp/using-atexit.md
-                        - name: abort Kullanma
-                          href: cpp/using-abort.md
+                - name: Çeviri birimleri ve bağlantı
+                  href: cpp/program-and-linkage-cpp.md
+                - name: main işlevi ve komut satırı bağımsız değişkenleri
+                  href: cpp/main-function-command-line-args.md
+                - name: Program sonlandırma
+                  href: cpp/program-termination.md
                 - name: Lvalue ve rvalue’lar
                   href: cpp/lvalues-and-rvalues-visual-cpp.md
                 - name: Geçici nesneler
                   href: cpp/temporary-objects.md
-                - name: Hizalama (C++ bildirimleri)
+                - name: Hizalama
                   href: cpp/alignment-cpp-declarations.md
-                - name: alignof ve alignas
-                  href: cpp/alignof-and-alignas-cpp.md
                 - name: 'Önemsiz, standart düzen ve POD türleri'
                   href: cpp/trivial-standard-layout-and-pod-types.md
-                - name: Tür sistemi
-                  expanded: false
-                  items:
-                    - name: Tür sistemi
-                      href: cpp/cpp-type-system-modern-cpp.md
-                    - name: Değer türleri
-                      href: cpp/value-types-modern-cpp.md
-                    - name: Tür dönüştürmeleri ve tür güvenliği
-                      href: cpp/type-conversions-and-type-safety-modern-cpp.md
-                    - name: Temel türler
-                      expanded: false
-                      items:
-                        - name: Temel türler
-                          href: cpp/fundamental-types-cpp.md
-                        - name: Veri türü aralıkları
-                          href: cpp/data-type-ranges.md
-                        - name: nullptr
-                          href: cpp/nullptr.md
-                        - name: void
-                          href: cpp/void-cpp.md
-                        - name: bool
-                          href: cpp/bool-cpp.md
-                        - name: false
-                          href: cpp/false-cpp.md
-                        - name: true
-                          href: cpp/true-cpp.md
-                        - name: 'char, wchar_t, char16_t, char32_t'
-                          href: cpp/char-wchar-t-char16-t-char32-t.md
-                        - name: '__int8, __int16, __int32, __int64'
-                          href: cpp/int8-int16-int32-int64.md
-                        - name: __m64
-                          href: cpp/m64.md
-                        - name: __m128
-                          href: cpp/m128.md
-                        - name: __m128d
-                          href: cpp/m128d.md
-                        - name: __m128i
-                          href: cpp/m128i.md
-                        - name: '__ptr32, __ptr64'
-                          href: cpp/ptr32-ptr64.md
-                        - name: Sayısal sınırlar
-                          expanded: false
-                          items:
-                            - name: Sayısal sınırlar
-                              href: cpp/numerical-limits-cpp.md
-                            - name: Tamsayı sınırları
-                              href: cpp/integer-limits.md
-                            - name: Kayan sınırları
-                              href: cpp/floating-limits.md
-                - name: Standart dönüşümler
-                  href: cpp/standard-conversions.md
+                - name: Değer türleri
+                  href: cpp/value-types-modern-cpp.md
                 - name: Tür dönüştürmeleri ve tür güvenliği
                   href: cpp/type-conversions-and-type-safety-modern-cpp.md
+                - name: Standart dönüşümler
+                  href: cpp/standard-conversions.md
+            - name: Yerleşik türler
+              expanded: false
+              items:
+                - name: Yerleşik türler
+                  href: cpp/fundamental-types-cpp.md
+                - name: Veri türü aralıkları
+                  href: cpp/data-type-ranges.md
+                - name: nullptr
+                  href: cpp/nullptr.md
+                - name: void
+                  href: cpp/void-cpp.md
+                - name: bool
+                  href: cpp/bool-cpp.md
+                - name: false
+                  href: cpp/false-cpp.md
+                - name: true
+                  href: cpp/true-cpp.md
+                - name: 'char, wchar_t, char16_t, char32_t'
+                  href: cpp/char-wchar-t-char16-t-char32-t.md
+                - name: '__int8, __int16, __int32, __int64'
+                  href: cpp/int8-int16-int32-int64.md
+                - name: __m64
+                  href: cpp/m64.md
+                - name: __m128
+                  href: cpp/m128.md
+                - name: __m128d
+                  href: cpp/m128d.md
+                - name: __m128i
+                  href: cpp/m128i.md
+                - name: '__ptr32, __ptr64'
+                  href: cpp/ptr32-ptr64.md
+                - name: Sayısal sınırlar
+                  expanded: false
+                  items:
+                    - name: Sayısal sınırlar
+                      href: cpp/numerical-limits-cpp.md
+                    - name: Tamsayı sınırları
+                      href: cpp/integer-limits.md
+                    - name: Kayan sınırları
+                      href: cpp/floating-limits.md
+            - name: Bildirimler ve tanımlar
+              expanded: false
+              items:
+                - name: Bildirimler ve tanımlar
+                  href: cpp/declarations-and-definitions-cpp.md
+                - name: Depolama sınıfları
+                  href: cpp/storage-classes-cpp.md
+                - name: auto
+                  href: cpp/auto-cpp.md
+                - name: const
+                  href: cpp/const-cpp.md
+                - name: constexpr
+                  href: cpp/constexpr-cpp.md
+                - name: extern
+                  href: cpp/extern-cpp.md
+                - name: Başlatıcılar
+                  href: cpp/initializers.md
+                - name: Diğer adlar ve tür tanımları
+                  href: cpp/aliases-and-typedefs-cpp.md
+                - name: using bildirimi
+                  href: cpp/using-declaration.md
+                - name: volatile
+                  href: cpp/volatile-cpp.md
+                - name: decltype
+                  href: cpp/decltype-cpp.md
+                - name: Öznitelikler
+                  href: cpp/attributes.md
             - name: 'Yerleşik işleçler, öncelik ve ilişkisellik'
               expanded: false
               items:
@@ -4797,17 +4722,8 @@
                       href: preprocessor/variadic-macros.md
                     - name: Önceden tanımlanmış önişlemci makroları
                       href: preprocessor/predefined-macros.md
-            - name: Dilbilgisi özeti (C/C++)
-              expanded: false
-              items:
-                - name: Dilbilgisi özeti (C/C++)
-                  href: preprocessor/grammar-summary-c-cpp.md
-                - name: Dil bilgisi özeti tanımları
-                  href: preprocessor/definitions-for-the-grammar-summary.md
-                - name: Dilbilgisi kuralları
-                  href: preprocessor/conventions.md
-                - name: Ön işlemci dil bilgisi
-                  href: preprocessor/preprocessor-grammar.md
+            - name: Ön işlemci dil bilgisi özeti (C/C++)
+              href: preprocessor/grammar-summary-c-cpp.md
             - name: Pragma yönergeleri ve __pragma anahtar sözcüğü
               expanded: false
               items:
@@ -5264,10 +5180,10 @@
               href: assembler/masm/masm-for-x64-ml64-exe.md
             - name: ML ve ML64 komut satırı başvurusu
               href: assembler/masm/ml-and-ml64-command-line-reference.md
-            - name: Yönergeler başvurusu
+            - name: Yönergeler başvurusu (MASM)
               expanded: false
               items:
-                - name: Yönergeler başvurusu
+                - name: Yönergeler başvurusu (MASM)
                   href: assembler/masm/directives-reference.md
                 - name: =
                   href: assembler/masm/equal.md
@@ -5289,9 +5205,9 @@
                   href: assembler/masm/dot-686.md
                 - name: .686P
                   href: assembler/masm/dot-686p.md
-                - name: ALIAS (MASM)
+                - name: ALIAS
                   href: assembler/masm/alias-masm.md
-                - name: ALIGN (MASM)
+                - name: ALIGN
                   href: assembler/masm/align-masm.md
                 - name: .ALLOCSTACK
                   href: assembler/masm/dot-allocstack.md
@@ -5301,7 +5217,7 @@
                   href: assembler/masm/assume.md
                 - name: .BREAK
                   href: assembler/masm/dot-break.md
-                - name: BYTE (MASM)
+                - name: BYTE
                   href: assembler/masm/byte-masm.md
                 - name: CATSTR
                   href: assembler/masm/catstr.md
@@ -5309,7 +5225,7 @@
                   href: assembler/masm/dot-code.md
                 - name: COMM
                   href: assembler/masm/comm.md
-                - name: COMMENT (MASM)
+                - name: COMMENT
                   href: assembler/masm/comment-masm.md
                 - name: .CONST
                   href: assembler/masm/dot-const.md
@@ -5343,13 +5259,13 @@
                   href: assembler/masm/echo.md
                 - name: .ELSE
                   href: assembler/masm/dot-else.md
-                - name: ELSE (MASM)
+                - name: ELSE
                   href: assembler/masm/else-masm.md
-                - name: ELSEIF (MASM)
+                - name: ELSEIF
                   href: assembler/masm/elseif-masm.md
                 - name: ELSEIF2
                   href: assembler/masm/elseif2.md
-                - name: END (MASM)
+                - name: END
                   href: assembler/masm/end-masm.md
                 - name: .ENDIF
                   href: assembler/masm/dot-endif.md
@@ -5359,7 +5275,7 @@
                   href: assembler/masm/endp.md
                 - name: .ENDPROLOG
                   href: assembler/masm/dot-endprolog.md
-                - name: ENDS (MASM)
+                - name: ENDS
                   href: assembler/masm/ends-masm.md
                 - name: .ENDW
                   href: assembler/masm/dot-endw.md
@@ -5391,7 +5307,7 @@
                   href: assembler/masm/dot-exit.md
                 - name: EXITM
                   href: assembler/masm/exitm.md
-                - name: EXTERN (MASM)
+                - name: EXTERN
                   href: assembler/masm/extern-masm.md
                 - name: EXTERNDEF
                   href: assembler/masm/externdef.md
@@ -5401,7 +5317,7 @@
                   href: assembler/masm/dot-fardata.md
                 - name: .FARDATA?
                   href: assembler/masm/dot-fardata-q.md
-                - name: FOR (MASM)
+                - name: FOR
                   href: assembler/masm/for-masm.md
                 - name: FORC
                   href: assembler/masm/forc.md
@@ -5409,13 +5325,13 @@
                   href: assembler/masm/dot-fpo.md
                 - name: FWORD
                   href: assembler/masm/fword.md
-                - name: GOTO (MASM)
+                - name: GOTO
                   href: assembler/masm/goto-masm.md
                 - name: GROUP
                   href: assembler/masm/group.md
                 - name: .IF
                   href: assembler/masm/dot-if.md
-                - name: IF (MASM)
+                - name: IF
                   href: assembler/masm/if-masm.md
                 - name: IF2
                   href: assembler/masm/if2.md
@@ -5433,9 +5349,9 @@
                   href: assembler/masm/ifnb.md
                 - name: IFNDEF
                   href: assembler/masm/ifndef.md
-                - name: INCLUDE (MASM)
+                - name: INCLUDE
                   href: assembler/masm/include-masm.md
-                - name: INCLUDELIB (MASM)
+                - name: INCLUDELIB
                   href: assembler/masm/includelib-masm.md
                 - name: INSTR
                   href: assembler/masm/instr.md
@@ -5447,7 +5363,7 @@
                   href: assembler/masm/irpc.md
                 - name: .K3D
                   href: assembler/masm/dot-k3d.md
-                - name: LABEL (MASM)
+                - name: LABEL
                   href: assembler/masm/label-masm.md
                 - name: .LALL
                   href: assembler/masm/dot-lall.md
@@ -5463,7 +5379,7 @@
                   href: assembler/masm/dot-listmacro.md
                 - name: .LISTMACROALL
                   href: assembler/masm/dot-listmacroall.md
-                - name: LOCAL (MASM)
+                - name: LOCAL
                   href: assembler/masm/local-masm.md
                 - name: MACRO
                   href: assembler/masm/macro.md
@@ -5473,7 +5389,7 @@
                   href: assembler/masm/dot-mmx.md
                 - name: .MODEL
                   href: assembler/masm/dot-model.md
-                - name: NAME (MASM)
+                - name: NAME
                   href: assembler/masm/name-masm.md
                 - name: .NOCREF
                   href: assembler/masm/dot-nocref.md
@@ -5483,7 +5399,7 @@
                   href: assembler/masm/dot-nolistif.md
                 - name: .NOLISTMACRO
                   href: assembler/masm/dot-nolistmacro.md
-                - name: OPTION (MASM)
+                - name: OPTION
                   href: assembler/masm/option-masm.md
                 - name: ORG
                   href: assembler/masm/org.md
@@ -5499,7 +5415,7 @@
                   href: assembler/masm/proc.md
                 - name: PROTO
                   href: assembler/masm/proto.md
-                - name: PUBLIC (MASM)
+                - name: PUBLIC
                   href: assembler/masm/public-masm.md
                 - name: PURGE
                   href: assembler/masm/purge.md
@@ -5519,7 +5435,7 @@
                   href: assembler/masm/real4.md
                 - name: REAL8
                   href: assembler/masm/real8.md
-                - name: RECORD (MASM)
+                - name: RECORD
                   href: assembler/masm/record-masm.md
                 - name: .REPEAT
                   href: assembler/masm/dot-repeat.md
@@ -5535,7 +5451,7 @@
                   href: assembler/masm/dot-savereg.md
                 - name: .SAVEXMM128
                   href: assembler/masm/dot-savexmm128.md
-                - name: SBYTE (MASM)
+                - name: SBYTE
                   href: assembler/masm/sbyte-masm.md
                 - name: SDWORD
                   href: assembler/masm/sdword.md
@@ -5557,7 +5473,7 @@
                   href: assembler/masm/dot-startup.md
                 - name: STRUC
                   href: assembler/masm/struc.md
-                - name: STRUCT (MASM)
+                - name: STRUCT
                   href: assembler/masm/struct-masm.md
                 - name: SUBSTR
                   href: assembler/masm/substr.md
@@ -5575,7 +5491,7 @@
                   href: assembler/masm/dot-tfcond.md
                 - name: TITLE
                   href: assembler/masm/title.md
-                - name: TYPEDEF (MASM)
+                - name: TYPEDEF
                   href: assembler/masm/typedef-masm.md
                 - name: UNION
                   href: assembler/masm/union.md
@@ -5585,7 +5501,7 @@
                   href: assembler/masm/dot-untilcxz.md
                 - name: .WHILE
                   href: assembler/masm/dot-while.md
-                - name: WHILE (MASM)
+                - name: WHILE
                   href: assembler/masm/while-masm.md
                 - name: WORD
                   href: assembler/masm/word.md
@@ -5944,6 +5860,8 @@
                       href: assembler/masm/ml-warning-a4012.md
                     - name: ML uyarısı A4014
                       href: assembler/masm/ml-warning-a4014.md
+            - name: MASM BNF dil bilgisi
+              href: assembler/masm/masm-bnf-grammar.md
         - name: .NET ve UWP için bileşen uzantıları
           expanded: false
           items:
