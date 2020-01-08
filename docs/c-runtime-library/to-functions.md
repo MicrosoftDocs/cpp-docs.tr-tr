@@ -23,12 +23,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: f7a898d70e506ed4707ea718faa0ed618682c2c7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: df8f59088cd402503fe31f768557e3ed936b31ec
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944817"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301697"
 ---
 # <a name="to-functions"></a>to İşlevleri
 
@@ -36,8 +36,8 @@ Her biri ve ilişkili makrosu **varsa, tek** bir karakteri başka bir karaktere 
 
 |||
 |-|-|
-|[__toascıı](../c-runtime-library/reference/toascii-toascii.md)|[ToUpper, _toupper, kasaüstü](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
-|[ToLower, _tolower, kasada küçük](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
+|[__toascii](../c-runtime-library/reference/toascii-toascii.md)|[ToUpper, _toupper, kasaüstü](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
+|[ToLower, _tolower, kasada daha düşük](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -45,41 +45,41 @@ Her biri ve ilişkili makrosu **varsa, tek** bir karakteri başka bir karaktere 
 
 |Yordam|Makrosu|Açıklama|
 |-------------|-----------|-----------------|
-|`__toascii`|`__toascii`|ASCII `c` karakterine dönüştürür|
+|`__toascii`|`__toascii`|`c` ASCII karakterine dönüştürür|
 |`tolower`|`tolower`|Uygunsa `c` küçük harfe dönüştürür|
-|`_tolower`|`_tolower`|Küçük `c` harfe dönüştürür|
-|`towlower`|Yok.|Karşılık `c` gelen geniş karakterli küçük harfe dönüştürür|
+|`_tolower`|`_tolower`|`c` küçük harfe dönüştürür|
+|`towlower`|Yok.|`c`, karşılık gelen geniş karakterli küçük harfe dönüştürür|
 |`toupper`|`toupper`|Uygunsa `c` büyük harfe dönüştürür|
-|`_toupper`|`_toupper`|Büyük `c` harfe dönüştürür|
+|`_toupper`|`_toupper`|`c` büyük harfe dönüştürür|
 |`towupper`|Yok.|C 'yi karşılık gelen geniş karakterli büyük harfe dönüştürür|
 
-Aynı zamanda makrolar olarak tanımlanan, ve ' nin işlev sürümlerini kullanmak **için, makro** tanımlarını `#undef` yönergelerle kaldırın ya da CType dahil edin. Olsun. /Za derleyici seçeneğini kullanırsanız, derleyici veya `toupper` `tolower`' nin işlev sürümünü kullanır. `toupper` Ve`tolower` işlevlerinin bildirimleri Stdlib ' dir. Olsun.
+Aynı zamanda makrolar olarak da tanımlanan, **ve '** nin işlev sürümlerini kullanmak için, makro tanımlarını `#undef` yönergeleriyle kaldırın ya da CType eklemeyin. Olsun. /Za derleyici seçeneğini kullanırsanız, derleyici `toupper` veya `tolower`işlev sürümünü kullanır. `toupper` ve `tolower` işlevlerinin bildirimleri STDLIB ' dir. Olsun.
 
-Bu yordam, dönüştürülmüş değer ASCII karakter kümesindeki bir karakteri temsil ettiğinden `c` , 0 ' ın düşük sıra 7 biti hariç tümünü ayarlar. `__toascii` Zaten `c` bir ASCII karakterini temsil ediyorsa, `c` değiştirilmez.
+`__toascii` yordamı,, dönüştürülen değerin ASCII karakter kümesindeki bir karakteri temsil edebilmesi için, düşük sıralı 7 bit `c` hariç tümünü 0 olarak ayarlar. `c` zaten bir ASCII karakterini temsil ediyorsa, `c` değiştirilmez.
 
-`tolower` Ve`toupper` yordamları:
+`tolower` ve `toupper` yordamları:
 
-- `LC_CTYPE` Geçerli yerel ayarın kategorisine bağımlıdır ( `isupper` `tolower` çağrılar ve `toupper` çağrılar `islower`).
+- Geçerli yerel ayarın `LC_CTYPE` kategorisine bağımlıdır (`tolower` çağrılar `isupper` ve `toupper` çağrıları `islower`).
 
-- Dönüştür `c`geçerli yerel ayarda uygun durumun dönüştürülebilir bir harfini temsilediyorsavebuyerelayariçintersdurumvarsa.`c` Aksi takdirde `c` , değiştirilmez.
+- `c` geçerli yerel ayarda uygun durumun dönüştürülebilir bir harfini temsil ediyorsa ve bu yerel ayar için ters durum varsa `c` Dönüştür. Aksi takdirde, `c` değiştirilmez.
 
-`_tolower` Ve`_toupper` yordamları:
+`_tolower` ve `_toupper` yordamları:
 
-- Yerel ayar bağımsız, çok daha hızlı `tolower` ve **ToUpper sürümleridir.**
+- , `tolower` ve **ToUpper** 'nin yerel ayara bağımsız, çok daha hızlı sürümleridir.
 
-- Yalnızca **ısascıı (** `c` **)** ve **ıupper**`c` **() ya da** **ılower (** `c` **)** , sırasıyla sıfır olmadığında kullanılabilir.
+- Yalnızca **ısascıı (** `c` **)** ve **ıupper** (`c` **)** ya da **ılower (** `c` **)** sıfır dışında olduğunda kullanılabilir.
 
-- Dönüştürme için uygun durumun `c` ASCII harfi değilse tanımsız sonuçlara sahip olur.
+- `c`, dönüştürme için uygun durumun ASCII harfi değilse tanımsız sonuçlara sahip olur.
 
-`c` Ve `towlower` işlevleri,yalnızcaaşağıdakikoşullardanherikisidesıfırdeğilse,dönüştürülmüşbirkopyasınıdöndürür.`towupper` Aksi takdirde `c` , değiştirilmez.
+`towlower` ve `towupper` işlevleri, yalnızca aşağıdaki koşulların her ikisi de sıfır değilse `c` dönüştürülmüş bir kopyasını döndürür. Aksi takdirde, `c` değiştirilmez.
 
-- `c`, uygun durumda olan geniş bir karakterdir ( `iswupper` Yani, sırasıyla, ve ' nin sıfır dışında).
+- `c`, uygun durumun geniş bir karakteridir (yani, sırasıyla, `iswupper` veya **ıswlower** , sıfır dışında).
 
-- Hedef durumunun karşılık gelen geniş bir karakteri vardır (yani `iswlower` , sırasıyla, veya **ıswupper** , sıfır dışında).
+- Hedef durumunun karşılık gelen geniş bir karakteri vardır (yani, sırasıyla `iswlower` veya **ıswupper** , sıfır dışında).
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // crt_toupper.c
 /* This program uses toupper and tolower to
  * analyze all characters between 0x0 and 0x7F. It also
