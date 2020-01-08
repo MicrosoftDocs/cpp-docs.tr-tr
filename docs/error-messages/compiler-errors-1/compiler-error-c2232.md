@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2232
+title: Derleyici hatası C2232
 ms.date: 11/04/2016
 f1_keywords:
 - C2232
 helpviewer_keywords:
 - C2232
 ms.assetid: 76f302b7-30a7-4a81-9a39-b4edde33b54c
-ms.openlocfilehash: f1478c2d06ab535a532b1be45c2db69050afe7b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78ed8970b29126bceb06ff89d12c83cb98c4b5fd
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376646"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301814"
 ---
-# <a name="compiler-error-c2232"></a>Derleyici Hatası C2232
+# <a name="compiler-error-c2232"></a>Derleyici hatası C2232
 
-'->': sol işlenen '' kullanan sınıf anahtarı türüne sahip, '.'
+'-> ': Sol işlenen ' sınıf-anahtar ' türüne sahip, '. ' kullanın
 
-İşlenen solundaki `->` işleci bir işaretçi değil. Bir sınıf, yapı veya birleşim nokta (.) işlecini kullanın.
+`->` işlecinin solundaki işlenen bir işaretçi değil. Bir sınıf, yapı veya birleşim için Period (.) işlecini kullanın.
 
-Aşağıdaki örnek, C2232 oluşturur:
+Aşağıdaki örnek C2232 oluşturur:
 
-```
+```c
 // C2232.c
 struct X {
     int member;

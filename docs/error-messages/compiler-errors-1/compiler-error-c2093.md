@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2093
 ms.assetid: 17529a70-9169-46b5-9fc6-57a5ce224e6a
-ms.openlocfilehash: d57b452e63f7bf76051ef6a23c5f8f6ba81aed1e
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 52fcd69e631f1ca24664cde06478ae33ca2a37f2
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741149"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301957"
 ---
 # <a name="compiler-error-c2093"></a>Derleyici hatası C2093
 
@@ -21,7 +21,7 @@ ms.locfileid: "70741149"
 
 Aşağıdaki örnek C2093 oluşturur:
 
-```
+```c
 // C2093.c
 // compile with: /Za /c
 void func() {

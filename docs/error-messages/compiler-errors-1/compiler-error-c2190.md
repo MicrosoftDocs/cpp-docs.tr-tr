@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2190
+title: Derleyici hatası C2190
 ms.date: 11/04/2016
 f1_keywords:
 - C2190
 helpviewer_keywords:
 - C2190
 ms.assetid: 34e15f85-d979-4948-80fc-46c414508a70
-ms.openlocfilehash: b52797b945b1a652506b4a85171e60a91544bbf0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 027c7f49b361ef3aa06a4d74e10f0ff27331b4a9
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282835"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301892"
 ---
-# <a name="compiler-error-c2190"></a>Derleyici Hatası C2190
+# <a name="compiler-error-c2190"></a>Derleyici hatası C2190
 
-İlk parametre listesi ikinciden uzun
+ilk parametre listesi ikinciden uzun
 
-C işlevi, ikinci bir kez daha kısa bir parametre listesiyle bildirildi. C, aşırı yüklenmiş işlevler desteklemez.
+Bir C işlevi, daha kısa bir parametre listesiyle ikinci kez bildirildi. C, aşırı yüklenmiş işlevleri desteklemez.
 
-Aşağıdaki örnek, C2190 oluşturur:
+Aşağıdaki örnek C2190 oluşturur:
 
-```
+```c
 // C2190.c
 // compile with: /Za /c
 void func( int, float );

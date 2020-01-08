@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3006
+title: Derleyici hatası C3006
 ms.date: 11/04/2016
 f1_keywords:
 - C3006
 helpviewer_keywords:
 - C3006
 ms.assetid: 449082ec-fd45-4c47-8ab3-ba6a719e4dc4
-ms.openlocfilehash: 7200d0ab3b14a1f9faa310f466963d74f7c98985
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a851c9b84a858cd4ac5cee11f0da90f99200c789
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350379"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301775"
 ---
-# <a name="compiler-error-c3006"></a>Derleyici Hatası C3006
+# <a name="compiler-error-c3006"></a>Derleyici hatası C3006
 
-'yan tümcesi': OpenMP yönergesi, beklenen bağımsız değişken eksik'yönergesi ' yan tümcesi
+' Clause ': OpenMP ' Directive ' yönergesinde yan tümce beklenen bir bağımsız değişken eksik
 
-Bir OpenMP yönergesinde beklenen bağımsız değişken yok.
+Bir OpenMP yönergesinde beklenen bir bağımsız değişken yoktu.
 
-Aşağıdaki örnek, C3006 oluşturur:
+Aşağıdaki örnek C3006 oluşturur:
 
-```
+```c
 // C3006.c
 // compile with: /openmp
 int main()

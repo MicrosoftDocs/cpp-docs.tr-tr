@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2036
 ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
-ms.openlocfilehash: c0d6c06a72e6ffbd2090577eeee9739394ee2791
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: df36dc5d6e399a0fc35b71e6d3a82ea77aeb5105
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755102"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302087"
 ---
 # <a name="compiler-error-c2036"></a>Derleyici hatası C2036
 
@@ -23,7 +23,7 @@ ms.locfileid: "74755102"
 
 Aşağıdaki örnek C2036 oluşturur.
 
-```
+```c
 // C2036.c
 // a C program
 struct A* pA;

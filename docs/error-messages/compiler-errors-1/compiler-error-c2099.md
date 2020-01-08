@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2099
+title: Derleyici hatası C2099
 ms.date: 11/04/2016
 f1_keywords:
 - C2099
 helpviewer_keywords:
 - C2099
 ms.assetid: 30e151ee-d458-4901-b0c0-d45054a913f5
-ms.openlocfilehash: 9c83b4a50cb9cf5c5b1992f0f64e2eeb013b48e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e9fb7739111d13a585579455ed97cecaca3266e4
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376948"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301944"
 ---
-# <a name="compiler-error-c2099"></a>Derleyici Hatası C2099
+# <a name="compiler-error-c2099"></a>Derleyici hatası C2099
 
 Başlatıcı bir sabit değil
 
-Bu hata yalnızca C derleyicisi tarafından verilir ve yalnızca otomatik olmayan değişkenleri için gerçekleşir.  Derleyici program başlangıcında otomatik olmayan değişkenleri başlatır ve ile başlatılmış değerlerin sabit olması gerekir.
+Bu hata yalnızca C derleyicisi tarafından verilir ve yalnızca otomatik olmayan değişkenler için gerçekleşir.  Derleyici, programın başlangıcında otomatik olmayan değişkenleri başlatır ve birlikte başlatıldığı değerler sabit olmalıdır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2099 oluşturur.
+Aşağıdaki örnek C2099 oluşturur.
 
-```
+```c
 // C2099.c
 int j;
 int *p;
@@ -32,17 +32,17 @@ j = *p;   // C2099 *p is not a constant
 
 ## <a name="example"></a>Örnek
 
-C2099 arasındaki derleyici sabit bir ifade altında katlamalarını gerçekleştirmek mümkün olmadığından da gerçekleşebilir **/FP: strict** kayan nokta çünkü duyarlık ortam ayarları (bkz [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md) için Daha fazla bilgi), çalışma zamanı için derleme farklı olabilir.
+C2099, kayan nokta duyarlık ortam ayarları (daha fazla bilgi için [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md) bakın), çalışma zamanına göre derlemeden farklı olabileceğinden, derleyici **/FP: Strict** altındaki bir ifadede sabit katlama gerçekleştiremediği için de oluşabilir.
 
-Sabit zaman başarısız Katlama, derleyici, C'de izin verilmeyen dinamik başlatma çağırır.
+Sabit katlama başarısız olduğunda, derleyici, C 'de izin verilmeyen dinamik başlatmayı çağırır.
 
-Bu hatayı gidermek için modül bir .cpp dosyası olarak derleyin veya ifadeyi basitleştirin.
+Bu hatayı çözmek için, modülü bir. cpp dosyası olarak derleyin veya ifadeyi kolaylaştırın.
 
-Daha fazla bilgi için [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md).
+Daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../../build/reference/fp-specify-floating-point-behavior.md).
 
-Aşağıdaki örnek, C2099 oluşturur.
+Aşağıdaki örnek C2099 oluşturur.
 
-```
+```c
 // C2099_2.c
 // compile with: /fp:strict /c
 float X = 2.0 - 1.0;   // C2099

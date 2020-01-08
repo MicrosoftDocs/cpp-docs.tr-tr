@@ -1,6 +1,6 @@
 ---
 title: y0, y1, yn
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - y1
 - yn
@@ -29,13 +29,15 @@ helpviewer_keywords:
 - y1 function
 - yn function
 ms.assetid: e14215f3-53d4-4ae8-816e-4c1ec2019316
-ms.openlocfilehash: 3a5aef282d6ec774b7d20135b759f5d98733cd69
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ade2978d9a052b481c8250933257cfa33493860f
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957769"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301723"
 ---
 # <a name="y0-y1-yn"></a>y0, y1, yn
 
-Bu POSIX işlevleri kullanım dışıdır. ISO C++ uyumlu [Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _Yn](bessel-functions-j0-j1-jn-y0-y1-yn.md) kullanın.
+`y0`, `y1`ve `yn` Microsoft tarafından uygulanan POSIX işlev adları [_y0, _y1 ve _Yn](bessel-functions-j0-j1-jn-y0-y1-yn.md) işlevleri için kullanım dışı diğer adlardır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) oluşturur C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Adlar, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlevleri hala desteklenmektedir.
+
+Bunun yerine [_y0, _y1 ve _Yn](bessel-functions-j0-j1-jn-y0-y1-yn.md) kullanmanızı öneririz. Ya da bu işlev adlarını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

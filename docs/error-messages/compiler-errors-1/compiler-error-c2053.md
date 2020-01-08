@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2053
+title: Derleyici hatası C2053
 ms.date: 11/04/2016
 f1_keywords:
 - C2053
 helpviewer_keywords:
 - C2053
 ms.assetid: 13324c85-13a8-4996-bd42-a31bfe7ff80f
-ms.openlocfilehash: be5517ce77872fe395a52c5b1e0070612e205a3d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a74e8104ec55e465875846b48186b9abdcb0f2f0
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408803"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302074"
 ---
-# <a name="compiler-error-c2053"></a>Derleyici Hatası C2053
+# <a name="compiler-error-c2053"></a>Derleyici hatası C2053
 
-'identifier': geniş dize uyuşmazlığı
+' tanımlayıcı ': geniş dize uyuşmazlığı
 
-Geniş dize uyumsuz bir türe atanır.
+Geniş dize uyumsuz bir türe atandı.
 
-Aşağıdaki örnek, C2053 oluşturur:
+Aşağıdaki örnek C2053 oluşturur:
 
-```
+```c
 // C2053.c
 int main() {
    char array[] = L"Rika";   // C2053

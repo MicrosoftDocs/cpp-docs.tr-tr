@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2231
+title: Derleyici hatası C2231
 ms.date: 11/04/2016
 f1_keywords:
 - C2231
 helpviewer_keywords:
 - C2231
 ms.assetid: 677c5c66-d30f-4c3b-bbb9-760858d56477
-ms.openlocfilehash: 0d6519bd12cdb5ee5a86fa4a6915b51b0dc59fc5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50230b3a9b609d281cddf996783287c270f844d5
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383314"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301827"
 ---
-# <a name="compiler-error-c2231"></a>Derleyici Hatası C2231
+# <a name="compiler-error-c2231"></a>Derleyici hatası C2231
 
-'.': 'sınıf anahtarı için' işlenen noktaları sol, '->' kullanın
+'. ': Sol işlenen ' sınıf-anahtar ' öğesine işaret ediyor, '-> ' kullanın
 
-(.) Üye seçme işleminin sol işleneni, bir sınıf, yapı veya birleşim yerine bir işaretçisidir.
+Üye seçim işleminin solundaki işlenen (.), bir sınıf, yapı veya birleşim yerine bir işaretçidir.
 
-Aşağıdaki örnek, C2231 oluşturur:
+Aşağıdaki örnek C2231 oluşturur:
 
-```
+```c
 // C2231.c
 struct S {
    int member;
