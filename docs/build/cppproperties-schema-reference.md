@@ -1,18 +1,18 @@
 ---
-title: CppProperties.json şema başvurusu
+title: CppProperties. JSON başvurusu
 ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
-ms.openlocfilehash: 06029157b4b3826bc9c34a4434ab390f3eaa5a44
-ms.sourcegitcommit: ace42fa67e704d56d03c03745b0b17d2a5afeba4
+ms.openlocfilehash: d59fca412a26d08f88ccbda20a2c0444cf33b1cb
+ms.sourcegitcommit: 6c1960089b92d007fc28c32af1e4bef0f85fdf0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69975937"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556675"
 ---
-# <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json şema başvurusu
+# <a name="cpppropertiesjson-reference"></a>CppProperties. JSON başvurusu
 
-CMake kullanmayan açık klasör projeleri, bir *Cppproperties. JSON* dosyasında IntelliSense için proje yapılandırma ayarlarını saklayabilir. (CMake projeleri bir [Cmakesettings. JSON](customize-cmake-settings.md) dosyası kullanır.) Bir yapılandırma ad/değer çiftlerinden oluşur ve #include yollar, derleyici anahtarları ve diğer parametreleri tanımlar. Açık bir klasör projesinde yapılandırmaların nasıl ekleneceği hakkında daha fazla bilgi için bkz. [klasör projelerini C++ açma](open-folder-projects-cpp.md) .
+CMake kullanmayan açık klasör projeleri, bir *Cppproperties. JSON* dosyasında IntelliSense için proje yapılandırma ayarlarını saklayabilir. (CMake projeleri bir [Cmakesettings. JSON](customize-cmake-settings.md) dosyası kullanır.) Bir yapılandırma ad/değer çiftlerinden oluşur ve #include yollar, derleyici anahtarları ve diğer parametreleri tanımlar. Açık bir klasör projesinde yapılandırmaların nasıl ekleneceği hakkında daha fazla bilgi için bkz. [klasör projelerini C++ açma](open-folder-projects-cpp.md) . Aşağıdaki bölümler çeşitli ayarları özetler. Şemanın tam bir açıklaması için, *Cppproperties. JSON* açık olduğunda, kod düzenleyicisinin en üstünde tam yol verilen *CppProperties_schema. JSON*' a gidin.
 
 ## <a name="configuration-properties"></a>Yapılandırma özellikleri
 
@@ -28,7 +28,7 @@ Bir yapılandırma aşağıdaki özelliklerden herhangi birine sahip olabilir:
 |`forcedInclude`|Her derleme birimine otomatik olarak dahil edilecek üst bilgi (MSVC veya Clang için-include için/FI 'e eşlenir)|
 |`undefines`|Tanımsız olacak makroların listesi (MSVC için/U ile eşlenir)|
 |`intelliSenseMode`|Kullanılacak IntelliSense altyapısı. MSVC, GCC veya Clang için önceden tanımlanmış mimariye özgü çeşitlerden birini belirtebilirsiniz.|
-|`environments`|Bir komut isteminde ortam değişkenleri gibi davranan ve $ {env.} ile erişilen değişkenlerin Kullanıcı tanımlı kümesi.<VARIABLE> makroya.|
+|`environments`|Bir komut isteminde ortam değişkenleri gibi davranan ve $ {env.<VARIABLE>} ile erişilen değişkenlerin Kullanıcı tanımlı kümesi makroya.|
 
 ### <a name="intellisensemode-values"></a>ıntellisensemode değerleri
 
@@ -58,13 +58,13 @@ Desteklenen değerler şunlardır:
 - Linux-GCC-x64
 - Linux-GCC-ARM
 
-Not: Değerler `msvc-x86` ve`msvc-x64` yalnızca eski nedenlerden dolayı desteklenir. Bunun yerine `windows-msvc-*` türevlerini kullanın.
+Note: `msvc-x86` ve `msvc-x64` değerleri yalnızca eski nedenlerden dolayı desteklenir. Bunun yerine `windows-msvc-*` türevlerini kullanın.
 
 ## <a name="pre-defined-environments"></a>Önceden tanımlı ortamlar
 
-Visual Studio, Microsoft C++ 'a karşılık gelen geliştirici komut istemi eşleyen aşağıdaki önceden tanımlanmış ortamları sağlar. Bu ortamlarından birini dağıttığınızda, şu makro söz dizimine sahip genel özelliği `env` kullanarak ortam değişkenlerinden herhangi birine başvurabilirsiniz: $ {env.\< >} DEĞIŞKENI.
+Visual Studio, Microsoft C++ 'a karşılık gelen geliştirici komut istemi eşleyen aşağıdaki önceden tanımlanmış ortamları sağlar. Bu ortamlarından birini dağıttığınızda, şu makro söz dizimine sahip `env` genel özelliğini kullanarak ortam değişkenlerine başvurabilirsiniz: $ {env.\<DEĞIŞKEN >}.
 
-|Değişken adı|Açıklama|
+|Değişken Adı|Açıklama|
 |-----------|-----------------|
 |vsdev|Varsayılan Visual Studio ortamı|
 |msvc_x86|X86 araçlarını kullanarak x86 için derleme|
@@ -77,7 +77,7 @@ Visual Studio, Microsoft C++ 'a karşılık gelen geliştirici komut istemi eşl
 
 Linux iş yükü yüklendiğinde, Linux ve WSL 'yi uzaktan hedeflemek için aşağıdaki ortamlar mevcuttur:
 
-|Değişken adı|Açıklama|
+|Değişken Adı|Açıklama|
 |-----------|-----------------|
 |linux_x86|X86 Linux 'u uzaktan hedefleyin|
 |linux_x64|X64 Linux 'u uzaktan hedefleyin|
@@ -85,9 +85,11 @@ Linux iş yükü yüklendiğinde, Linux ve WSL 'yi uzaktan hedeflemek için aşa
 
 ## <a name="user_defined_environments"></a>Kullanıcı tanımlı ortamlar
 
-İsteğe bağlı olarak, `environments` *cppproperties. JSON* içindeki değişken kümelerini tanımlamak için ya da genel olarak veya yapılandırma başına özelliğini kullanabilirsiniz. Bu değişkenler, açık bir klasör projesi bağlamında ortam değişkenleri gibi davranır ve $ {env. ile erişilebilir.\< *Tasks. vs. JSON* ve *Launch. vs. JSON* 'dan sonra, burada tanımlandıklarında değişken >} sözdizimi. Ancak, Visual Studio 'Nun dahili olarak kullandığı herhangi bir komut isteminde gerçek ortam değişkenleri olarak ayarlanmaları gerekmez.
+İsteğe bağlı olarak, *Cppproperties. JSON* dosyasında genel veya yapılandırma başına değişken kümelerini tanımlamak için `environments` özelliğini kullanabilirsiniz. Bu değişkenler, açık bir klasör projesi bağlamında ortam değişkenleri gibi davranır ve *Tasks. vs. JSON* ve *Launch. vs. JSON* 'dan sonra, burada tanımlandıklarında $ {env.\<değişkeni >} sözdizimi ile erişilebilir. Ancak, Visual Studio 'Nun dahili olarak kullandığı herhangi bir komut isteminde gerçek ortam değişkenleri olarak ayarlanmaları gerekmez.
 
-Bir ortamı tükettiğinizde, ortam aynı yapılandırmanın bir parçası olarak tanımlansa bile `inheritsEnvironments` özelliği özelliğinde belirtmeniz gerekir `environment` ; özelliği ortamın adını belirtir. Aşağıdaki örnekte, MSYS2 yüklemesinde GCC için IntelliSense 'i etkinleştirmek üzere örnek bir yapılandırma gösterilmektedir. Yapılandırmanın `mingw_64` ortamı nasıl tanımlayıp devraldığını ve `includePath` özelliğin `INCLUDE` değişkene nasıl erişebileceğini aklınızda bulabilirsiniz.
+**Visual Studio 2019 sürüm 16,4 ve üzeri:** *Cppproperties. JSON* içinde tanımlanan yapılandırmaya özgü değişkenler, `inheritEnvironments`ayarlanması gerekmeden hata ayıklama hedefleri ve görevleri tarafından otomatik olarak alınır. Hata ayıklama hedefleri, *Cppproperties. JSON*içinde belirttiğiniz ortam ile otomatik olarak başlatılır.
+
+**Visual Studio 2019 sürüm 16,3 ve öncesi:** Bir ortamı tükettiğinizde, ortam aynı yapılandırmanın bir parçası olarak tanımlansa bile `inheritsEnvironments` özelliğinde belirtmeniz gerekir; `environment` özelliği, ortamın adını belirtir. Aşağıdaki örnekte, MSYS2 yüklemesinde GCC için IntelliSense 'i etkinleştirmek üzere örnek bir yapılandırma gösterilmektedir. Yapılandırmanın `mingw_64` ortamını nasıl tanımlayıp devraldığını ve `includePath` özelliğinin `INCLUDE` değişkenine nasıl erişebileceğini aklınızda bulabilirsiniz.
 
 ```json
 "configurations": [
@@ -154,14 +156,14 @@ Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve di
 ```
 
 > [!Note]
-> `%WindowsSdkDir%`ve `%VCToolsInstallDir%` genel ortam değişkenleri olarak ayarlanmamış, bu nedenle devenv. exe ' yi bu değişkenleri tanımlayan bir geliştirici komut istemi başlattığınızdan emin olun. (Windows Başlat menüsünde "Geliştirici" yazın.)
+> `%WindowsSdkDir%` ve `%VCToolsInstallDir%` genel ortam değişkenleri olarak ayarlanmamış, bu nedenle devenv. exe ' yi bu değişkenleri tanımlayan bir Geliştirici Komut İstemi başlattığınızdan emin olun. (Windows Başlat menüsünde "Geliştirici" yazın.)
 
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense hatalarında sorun giderme
 
-İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **Gelişmiş** ' e giderek sorun gidermeye devam edebilirsiniz ve **günlük kaydını** **doğru**olarak etkinleştir ayarı. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
+İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++ C/**  > **Gelişmiş** ' e giderek ve **günlük kaydını** **true**olarak ayarlayarak sorun gidermeye devam edebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
 
 ![Tanılama günlükleri](media/diagnostic-logging.png)
 
-Çıkış **Çıkış penceresi** gönderilir ve çıktıyı göster ' i seçtiğinizde **görünür: Görsel C++ günlüğü**. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
+Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster C++ : görsel günlük**' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 
 Eksik içerme yollarının neden olduğu IntelliSense hatalarını gidermek için **hata listesi** açın ve çıktısını "yalnızca IntelliSense" olarak filtreleyin ve hata kodu E1696 "kaynak dosyası açılamıyor...".

@@ -1,15 +1,15 @@
 ---
 title: CMakeSettings. JSON şema başvurusu
-ms.date: 10/31/2019
+ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2233c0767fb7fac2fe496e744750f380e1c3b698
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 08ecb5bc55ead207d6e4a0029a21e737d447143b
+ms.sourcegitcommit: 6c1960089b92d007fc28c32af1e4bef0f85fdf0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303244"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556740"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings. JSON şema başvurusu
 
@@ -25,7 +25,7 @@ CMake projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir.
 
 IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğrudan JSON dosyasında düzenleyebilir veya **CMake ayarları düzenleyicisini** (Visual Studio 2019 ve üzeri) kullanabilirsiniz. Çeşitli proje dosyalarını oluşturmak için IDE 'de kolayca yapılandırma arasında geçiş yapabilirsiniz. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md) .
 
-## <a name="configurations"></a>Yapılandırmaları
+## <a name="configurations"></a>Yapılandırmalar
 
 `configurations` dizisi bir CMake projesi için tüm konfigürasyonları içerir. Önceden tanımlanmış yapılandırmalar hakkında daha fazla bilgi için bkz: [CMake önceden tanımlı yapılandırma başvurusu](cmake-predefined-configuration-reference.md) . Dosyaya önceden tanımlanmış veya özel yapılandırmaların sayısını ekleyebilirsiniz. 
 
@@ -34,11 +34,11 @@ Bir `configuration` şu özelliklere sahiptir:
 - `addressSDanitizerEnabled`: `true`, programı adres Temizleme (Windows üzerinde deneysel) ile derler. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
 - `addressSanitizerRuntimeFlags`: ASAN_OPTIONS ortam değişkeni aracılığıyla adres Temizleme işlevine geçilen çalışma zamanı bayrakları. Biçim: FLAG1 = değer: flag2 = değer2.
 - `buildCommandArgs`: CMake sonrasında--Build--. geçirilen yerel derleme anahtarlarını belirtir. Örneğin, Dokja Oluşturucu kullanıldığında-v ' d e geçiş, komut satırlarını çıktı olarak zorlar. Dokja komutları hakkında daha fazla bilgi için bkz. [dokja komut satırı bağımsız değişkenleri](#ninja) .
-- `buildRoot`: CMake 'in seçili Oluşturucu için derleme betikleri oluşturduğu dizini belirtir.  **-DCMAKE_BINARY_DIR** anahtarına eşlenir ve CMake önbelleğinin nerede oluşturulacağını belirtir. Klasör yoksa, oluşturulur. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`ve `${env.VARIABLE}`içerir.
-- `cacheGenerationCommand`: önbellek oluşturmak için bir komut satırı aracı ve bağımsız değişkenler (örneğin *gencache. bat hata ayıklama* ) belirtir. Kullanıcı, yeniden oluşturma istekleri veya CMakeLists. txt veya CMakeSettings. JSON dosyası değiştirildiğinde, bu yapılandırma için belirtilen ortamdaki kabuktan çalıştırılır.
-- `cacheRoot`: CMake önbelleğinin yolunu belirtir. Bu dizin, var olan bir CMakeCache. txt dosyası içermelidir.
-- `clangTidyChecks`: Clang-Tidy 'a geçirilecek olan warnigns 'nin virgülle ayrılmış listesi; Joker karakterlere izin verilir ve '-' öneki denetimleri kaldırır.
-- `cmakeCommandArgs`: önbelleği oluşturmak için çağrıldığında CMake 'e geçirilen ek komut satırı seçeneklerini belirtir.
+- `buildRoot`: CMake 'in seçili Oluşturucu için derleme betikleri oluşturduğu dizini belirtir.  **-DCMAKE_BINARY_DIR** anahtarına eşlenir ve *cmakecache. txt* ' in nerede oluşturulacağını belirtir. Klasör yoksa, oluşturulur. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`içerir.
+- `cacheGenerationCommand`: önbellek oluşturmak için bir komut satırı aracı ve bağımsız değişkenler (örneğin *gencache. bat hata ayıklama* ) belirtir. Kullanıcı açıkça yeniden oluşturma isteğinde bulunduğunda veya bir CMakeLists. txt veya CMakeSettings. JSON dosyası değiştirilirse, bu yapılandırma için belirtilen ortamdaki kabuktan çalıştırılır.
+- `cacheRoot`: CMake önbelleğinin yolunu belirtir. Bu dizin, var olan bir *Cmakecache. txt* dosyası içermelidir.
+- `clangTidyChecks`: Clang-Tidy 'a geçirilecek uyarıların virgülle ayrılmış listesi; Joker karakterlere izin verilir ve '-' öneki denetimleri kaldırır.
+- `cmakeCommandArgs`: proje dosyalarını oluşturmak için çağrıldığında CMake 'e geçirilen ek komut satırı seçeneklerini belirtir.
 - `cmakeToolchain`: araç zinciri dosyasını belirtir. Bu, CMake kullanılarak-DCMAKE_TOOLCHAIN_FILE geçirilir. "
 - `codeAnalysisRuleset`: Kod analizini çalıştırırken kullanılacak RuleSet 'i belirtir. Bu, Visual Studio tarafından yüklenen bir RuleSet dosyasının tam yolu veya dosya adı olabilir.
 - `configurationType`: seçili Oluşturucu için derleme türü yapılandırmasını belirtir. Aşağıdakilerden biri olabilir:
@@ -81,22 +81,8 @@ Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan
    "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
    ```
 
-- `configurationType`: seçili Oluşturucu için derleme türü yapılandırmasını belirtir. Aşağıdakilerden biri olabilir:
-
-  - Hata ayıklama
-  - Sürüm
-  - MinSizeRel
-  - Relwithdeınfo
- 
-- `buildRoot`: CMake 'in seçili Oluşturucu için derleme betikleri oluşturduğu dizini belirtir.  **-DCMAKE_BINARY_DIR** anahtarına eşlenir ve *cmakecache. txt* ' in nerede oluşturulacağını belirtir. Klasör yoksa, oluşturulur. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`içerir.
 - `installRoot`: CMake 'in seçili Oluşturucu için Install hedeflerini oluşturduğu dizini belirtir. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`içerir.
-- `cmakeCommandArgs`: proje dosyalarını oluşturmak için çağrıldığında CMake 'e geçirilen ek komut satırı seçeneklerini belirtir.
-- `cmakeToolchain`: araç zinciri dosyasını belirtir. Bu, CMake kullanılarak-DCMAKE_TOOLCHAIN_FILE geçirilir. "
-- `buildCommandArgs`: CMake sonrasında--Build--. geçirilen yerel derleme anahtarlarını belirtir. Örneğin, Dokja Oluşturucu kullanıldığında-v ' d e geçiş, komut satırlarını çıktı olarak zorlar. Dokja komutları hakkında daha fazla bilgi için bkz. [dokja komut satırı bağımsız değişkenleri](#ninja) .
-- `ctestCommandArgs`: testler çalıştırılırken CTest 'e geçirilen ek komut satırı seçeneklerini belirtir. "
-- `codeAnalysisRuleset`: Kod analizini çalıştırırken kullanılacak RuleSet 'i belirtir. Bu, Visual Studio tarafından yüklenen bir RuleSet dosyasının tam yolu veya dosya adı olabilir.
 - `inheritEnvironments`: Bu yapılandırmanın bağımlı olduğu bir veya daha fazla derleyici ortamını belirtir. Özel bir ortam veya önceden tanımlanmış ortamların biri olabilir. Daha fazla bilgi için bkz. [ortamlar](#environments).
-- `installRoot`: CMake 'in seçili Oluşturucu için Install hedeflerini oluşturduğu dizini belirtir. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`içerir.
 - `intelliSenseMode`: IntelliSense bilgilerini bilgi işlem için kullanılan modu belirtir ". Aşağıdakilerden biri olabilir:
 
   - Windows-MSVC-x86
@@ -119,11 +105,10 @@ Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan
   - Linux-GCC-x64
   - Linux-GCC-ARM "
 
-- `cacheRoot`: CMake önbelleğinin yolunu belirtir. Bu dizin, var olan bir *Cmakecache. txt* dosyası içermelidir.
 - `name`: yapılandırmayı adlandırır.  Önceden tanımlanmış yapılandırmalar hakkında daha fazla bilgi için bkz: [CMake önceden tanımlı yapılandırma başvurusu](cmake-predefined-configuration-reference.md) .
 - `wslPath`: Linux için Windows alt sistemi örneğinin Başlatıcı yolu.
 
-### <a name="additional-settings-for-cmake-linux-projects"></a>CMake Linux projeleri için ek ayarlar. 
+### <a name="additional-settings-for-cmake-linux-projects"></a>CMake Linux projeleri için ek ayarlar
 
 - `remoteMachineName`: CMake, derlemeler ve hata ayıklayıcıyı barındıran uzak Linux makinenin adını belirtir. Yeni Linux makineleri eklemek için bağlantı yöneticisini kullanın. Desteklenen makrolar `${defaultRemoteMachineName}`içerir.
 - `remoteCopySourcesOutputVerbosity`: uzak makineye kaynak kopyalama işleminin ayrıntı düzeyini belirtir. "" Normal "," verbose "veya" Diagnostic "değerinden biri olabilir.
@@ -134,6 +119,9 @@ Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan
 - `remoteInstallRoot`: uzak makinedeki, CMake 'in seçili Oluşturucu için Install hedeflerini oluşturduğu dizini belirtir. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`ve `${env.VARIABLE}`; burada `VARIABLE`, sistem, Kullanıcı veya oturum düzeyinde tanımlanmış bir ortam değişkenidir.
 - `remoteCopySources`: Visual Studio 'Nun kaynak dosyaları uzak makineye kopyalamasını gerekip gerekmediğini belirten bir `boolean`. Varsayılan değer true 'dur. Dosya eşitlemesini kendiniz yönetiyorsanız, false olarak ayarlayın.
 - `remoteCopyBuildOutput`: uzak sistemden derleme çıktılarının kopyalanıp kopyalanmayacağını belirten bir `boolean`.
+- `remoteCopyAdditionalIncludeDirectories`: IntelliSense 'i desteklemek için uzak makineden kopyalanacak ek dizinler ekleyin. "/Path1;/path2,.exe" olarak biçimlendirin.
+- `remoteCopyExcludeDirectories`: uzak makineden kopyalayamayan dizinleri dahil et. "/Path1;/path2,.exe" olarak biçimlendirin.
+- `remoteCopyUseCompilerDefaults`: derleyicinin varsayılan tanımlar ve IntelliSense için yolların dahil edilip edilmeyeceğini belirtir. Yalnızca, ' deki derleyiciler GCC stili bağımsız değişkenlerini desteklemediğinden yanlış olmalıdır.
 - `rsyncCommandArgs`: rsync 'e geçirilen ek komut satırı seçenekleri kümesini belirtir.
 - `remoteCopySourcesExclusionList`: kaynak dosyalarını kopyalarken dışlanacak yolların listesini belirten bir `array`: bir yol bir dosyanın/dizinin adı ya da kopyanın köküne göre bir yol olabilir. \\\"*\\\" ve \\\".\\\", glob deseninin eşleşmesi için kullanılabilir.
 - `cmakeExecutable`: dosya adı ve uzantısıyla birlikte CMake program yürütülebilirinin tam yolunu belirtir.
@@ -186,7 +174,9 @@ Bir CMakeLists. txt dosyasından, tüm ortam değişkenlerine `$ENV{variable_nam
 - `namespace`: ortamı, değişkenlerini form `namespace.variable`bir yapılandırmadan başvurulabilmeleri için adlandırır. Varsayılan ortam nesnesi `env` olarak adlandırılır ve `%USERPROFILE%`dahil olmak üzere belirli sistem ortam değişkenleriyle doldurulur.
 - `environment`: Bu değişken grubunu benzersiz bir şekilde tanımlar. Grubun daha sonra bir `inheritEnvironments` girdisinde devralınmasını sağlar.
 - `groupPriority`: Bu değişkenlerin değerlendirmesi sırasında önceliğini belirten bir tamsayı. Daha yüksek sayıda öğe önce değerlendirilir.
-- `inheritEnvironments`: Bu grup tarafından devralınan ortamlar kümesini belirten bir değerler dizisi. Bu özellik varsayılan ortamları devralmasını ve çalışırken CMake. exe ' ye geçirilen özel ortam değişkenleri oluşturmanızı sağlar.
+- `inheritEnvironments`: Bu grup tarafından devralınan ortamlar kümesini belirten bir değerler dizisi. Bu özellik varsayılan ortamları devralmasını ve çalışırken CMake. exe ' ye geçirilen özel ortam değişkenleri oluşturmanızı sağlar. 
+
+**Visual Studio 2019 sürüm 16,4 ve üzeri:** Hata ayıklama hedefleri, *Cmakesettings. JSON*içinde belirttiğiniz ortam ile otomatik olarak başlatılır. [Başlat. vs. JSON](launch-vs-schema-reference-cpp.md) ve [Tasks. vs. JSON](tasks-vs-json-schema-reference-cpp.md)' da, ortam değişkenlerini hedef başına veya görev başına temelinde geçersiz kılabilir veya ekleyebilirsiniz.
 
 Aşağıdaki örnek, hem x86-hata ayıklama hem de x64-hata ayıklama yapılandırmalarında devralınan bir genel değişkeni ( **BuildDir**) tanımlar. Her yapılandırma, bu yapılandırma için **buildroot** özelliğinin değerini belirtmek için değişkenini kullanır. Ayrıca, her yapılandırmanın yalnızca bu yapılandırma için geçerli olan bir değişken belirtmek üzere **ınherenler** özelliğini nasıl kullandığını unutmayın.
 
