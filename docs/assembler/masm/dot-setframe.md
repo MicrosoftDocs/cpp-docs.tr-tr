@@ -1,17 +1,17 @@
 ---
 title: .SETFRAME
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - .SETFRAME
 helpviewer_keywords:
 - .SETFRAME directive
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
-ms.openlocfilehash: a21dda496d32abcfeb4692d0228afdbcfd4e5ebb
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 8c491a811634995398a37aa001cc1c93f8434114
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397926"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318247"
 ---
 # <a name="setframe"></a>.SETFRAME
 
@@ -23,9 +23,9 @@ Belirtilen yazmaç (*reg*) ve sapmayı (*konum*) kullanarak, çerçeve kaydı al
 
 ## <a name="remarks"></a>Açıklamalar
 
-**. SETFRAME** , ml64. exe kullanıcılarına bir karenin nasıl bir kare işlevi olduğunu ve [işlem çerçevesi bildiriminden](../../assembler/masm/proc.md) öğesine genişleten yalnızca prolog dahilinde izin verileceğini belirlemesine izin verir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. SETFRAME** önünde olmayan eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
+**. SETFRAME** , ml64. exe kullanıcılarına bir karenin nasıl bir kare işlevi olduğunu ve [işlem çerçevesi bildiriminden](proc.md) öğesine genişleten yalnızca prolog dahilinde izin verileceğini belirlemesine izin verir [. ENDPROLOG](dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. SETFRAME** önünde olmayan eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-Daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [for x64 (ml64. exe)](masm-for-x64-ml64-exe.md).
 
 ## <a name="sample"></a>Örnek
 
@@ -64,4 +64,5 @@ END
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

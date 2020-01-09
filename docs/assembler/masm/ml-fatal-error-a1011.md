@@ -1,18 +1,18 @@
 ---
 title: ML Önemli Hatası A1011
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A1011
 helpviewer_keywords:
 - A1011
 ms.assetid: 7fbf092d-4189-4330-a884-dfa2268fc3dd
-ms.openlocfilehash: 0d8d3896f7788aa3f51605651ee1b728b0e1d60a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 5607d6d56e0b3889332dcf2624d519529819b1c9
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856858"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318090"
 ---
 # <a name="ml-fatal-error-a1011"></a>ML Önemli Hatası A1011
 
@@ -20,20 +20,20 @@ ms.locfileid: "74856858"
 
 Derleyici, beklenmediği bir üst düzey yönerge buldu. Aşağıdaki yönergelerden biri bulundu:
 
-- [. Aksi takdirde](../../assembler/masm/dot-else.md) [. Şunu IÇERIYORSA](../../assembler/masm/dot-if.md)
+- [. Aksi takdirde](dot-else.md) [. Şunu IÇERIYORSA](dot-if.md)
 
-- [. ENDIF](../../assembler/masm/dot-endif.md) olmadan [. Şunu IÇERIYORSA](../../assembler/masm/dot-if.md)
+- [. ENDIF](dot-endif.md) olmadan [. Şunu IÇERIYORSA](dot-if.md)
 
-- [. ENDW](../../assembler/masm/dot-endw.md) olmadan [. SıRASıNDA](../../assembler/masm/dot-while.md)
+- [. ENDW](dot-endw.md) olmadan [. SıRASıNDA](dot-while.md)
 
-- [. Olmadan UNTILCXZ](../../assembler/masm/dot-untilcxz.md) [. YINELE](../../assembler/masm/dot-repeat.md)
+- [. Olmadan UNTILCXZ](dot-untilcxz.md) [. YINELE](dot-repeat.md)
 
-- [. Olmadan devam edın](../../assembler/masm/dot-continue.md) [. ](../../assembler/masm/dot-while.md)Veya sırasında [. YINELE](../../assembler/masm/dot-repeat.md)
+- [. Olmadan devam edın](dot-continue.md) [. ](dot-while.md)Veya sırasında [. YINELE](dot-repeat.md)
 
-- [. ](../../assembler/masm/dot-break.md)Olmadan kes [. ](../../assembler/masm/dot-while.md)Veya sırasında [. YINELE](../../assembler/masm/dot-repeat.md)
+- [. ](dot-break.md)Olmadan kes [. ](dot-while.md)Veya sırasında [. YINELE](dot-repeat.md)
 
-- [. Aşağıdakilerden bırısı](../../assembler/masm/dot-else.md) `.ELSE`
+- [. Aşağıdakilerden bırısı](dot-else.md) `.ELSE`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Hata İletileri](ml-error-messages.md)

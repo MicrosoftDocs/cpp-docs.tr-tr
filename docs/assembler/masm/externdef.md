@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - EXTERNDEF directive
 ms.assetid: 95a10de6-c345-4428-a2f2-90f7d411dc86
-ms.openlocfilehash: e757781151bd1bb57940e5c54f7333a5daa93c74
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 2cc5884a7473da9175a6b6af4b4251314deffeb4
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74987889"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75313398"
 ---
 # <a name="externdef"></a>EXTERNDEF
 
@@ -25,8 +25,9 @@ Türü *tür*olan bir veya daha fazla dış değişken, etiket veya *ad adı* ad
 
 *Dil türü* bağımsız değişkeni yalnızca 32-BIT Masd 'de geçerlidir.
 
-Modül içinde *ad* tanımlıysa, [genel](../../assembler/masm/public-masm.md)olarak kabul edilir. Modülde *ada* başvuruluyorsa, [extern](../../assembler/masm/extern-masm.md)olarak kabul edilir. *Ada* başvurulmuyorsa, yok sayılır. *Tür* , *adı* bir sabit olarak içeri aktaran [ABS](../../assembler/masm/operator-abs.md)olabilir. Genellikle içerme dosyalarında kullanılır.
+Modül içinde *ad* tanımlıysa, [genel](public-masm.md)olarak kabul edilir. Modülde *ada* başvuruluyorsa, [extern](extern-masm.md)olarak kabul edilir. *Ada* başvurulmuyorsa, yok sayılır. *Tür* , *adı* bir sabit olarak içeri aktaran [ABS](operator-abs.md)olabilir. Genellikle içerme dosyalarında kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

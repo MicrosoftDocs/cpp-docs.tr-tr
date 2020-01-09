@@ -1,6 +1,6 @@
 ---
 title: PTR işleci
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - PTR
 - operator PTR
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - PTR operator
 - operator PTR
 ms.assetid: df280f36-ca06-4578-b99d-0aa139b2b969
-ms.openlocfilehash: 7b1f59985d4a11dd4ffd65c8ef1086826ade6ea3
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 32e7673445e1c9007ec980da901330261213f554
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396501"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75319014"
 ---
 # <a name="operator-ptr"></a>PTR işleci
 
@@ -27,4 +27,5 @@ ms.locfileid: "74396501"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler başvurusu](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

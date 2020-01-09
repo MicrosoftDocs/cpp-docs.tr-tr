@@ -1,17 +1,17 @@
 ---
 title: .ERRNDEF
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - .ERRNDEF
 helpviewer_keywords:
 - .ERRNDEF directive
 ms.assetid: 9fab57bb-02ad-486f-b46d-bcd23980f00d
-ms.openlocfilehash: f299b6d5966a9fae2002488c3a0f4e83d491e879
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 60682c052abbba566e0632405fc204a4170e0dca
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398312"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317805"
 ---
 # <a name="errndef"></a>.ERRNDEF
 
@@ -23,4 +23,5 @@ ms.locfileid: "74398312"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

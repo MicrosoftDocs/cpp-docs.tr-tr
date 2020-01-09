@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .XMM directive
 ms.assetid: db3062b6-8b2f-469b-aa02-df6571eab3ba
-ms.openlocfilehash: 58207ba2f119969f00614cd2dba70e2dc2da718c
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 6588c6ebe0e95b9e98c6d8f072c3dddd8eb2dd2d
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397781"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318195"
 ---
 # <a name="xmm-32-bit-masm"></a>. XMM (32-bit MASM)
 
@@ -23,4 +23,5 @@ Internet akışı SıMD uzantısı yönergelerinin derlemesini sunar. (yalnızca
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

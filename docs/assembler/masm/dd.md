@@ -1,21 +1,21 @@
 ---
 title: DD
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - dd
 helpviewer_keywords:
 - DD directive
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-ms.openlocfilehash: e87098d2536cce5d818a0759f50b42fa50cb887a
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: fea3c052ba2c98b7dabe9649884391689209d202
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398793"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75314984"
 ---
 # <a name="dd"></a>DD
 
-Her *Başlatıcı*için bir çift sözcük (4 bayt) depolama alanı ayırır ve isteğe bağlı olarak başlatır. **Gg** , [DWORD](../../assembler/masm/dword.md)'ün bir eşanlamlısıdır.
+Her *Başlatıcı*için bir çift sözcük (4 bayt) depolama alanı ayırır ve isteğe bağlı olarak başlatır. **Gg** , [DWORD](dword.md)'ün bir eşanlamlısıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,4 +27,5 @@ Her *Başlatıcı*için bir çift sözcük (4 bayt) depolama alanı ayırır ve 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

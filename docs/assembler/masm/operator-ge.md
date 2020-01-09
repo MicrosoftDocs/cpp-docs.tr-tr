@@ -1,6 +1,6 @@
 ---
 title: GE işleci
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - GE
 - operator GE
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - GE operator
 - operator GE
 ms.assetid: 28804311-174d-42d0-9ce1-2187b81bc844
-ms.openlocfilehash: 45bd137ab5833d11691261eaaa370daccdc08ed4
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: ed4c2c8268902c51a8a3d8e467d3ecaa0c137db7
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396962"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75311591"
 ---
 # <a name="operator-ge"></a>GE işleci
 
@@ -25,4 +25,5 @@ ms.locfileid: "74396962"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler başvurusu](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

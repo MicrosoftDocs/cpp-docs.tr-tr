@@ -1,6 +1,6 @@
 ---
 title: MOD işleci
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - Mod
 - operator MOD
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Mod operator
 - operator MOD
 ms.assetid: 8e05e8c2-3f07-44f9-8216-5436dcb97cc7
-ms.openlocfilehash: 9008f85c7b93abf7fb7534cf74c4b3d338d80cdb
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 9891fc50a22936fbf850b56ea8f2d65441489b97
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396652"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75311227"
 ---
 # <a name="operator-mod"></a>MOD işleci
 
@@ -25,4 +25,5 @@ ms.locfileid: "74396652"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler başvurusu](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

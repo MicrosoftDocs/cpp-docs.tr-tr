@@ -1,6 +1,6 @@
 ---
 title: PARITY? işleci
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - PARITY?
 - operator PARITY?
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - PARITY? operator
 - operator PARITY?
 ms.assetid: f8c52def-c4b7-4b81-af96-2b0c2d943f6c
-ms.openlocfilehash: b5abfcf12a22240f5ffe7ef01c0156c0f48845e5
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: bf52b83c116d5bf71cf556bd042a6057e890ec55
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396520"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75319027"
 ---
 # <a name="operator-parity"></a>PARITY? işleci
 
-Eşlik bayrağının durumu. Yalnızca içinde kullanılır [. Ise](../../assembler/masm/dot-if.md), [. Veya SıRASıNDA](../../assembler/masm/dot-while.md) [. Blokları YINELEYIN](../../assembler/masm/dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
+Eşlik bayrağının durumu. Yalnızca içinde kullanılır [. Ise](dot-if.md), [. Veya SıRASıNDA](dot-while.md) [. Blokları YINELEYIN](dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,4 +25,5 @@ Eşlik bayrağının durumu. Yalnızca içinde kullanılır [. Ise](../../assemb
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler başvurusu](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

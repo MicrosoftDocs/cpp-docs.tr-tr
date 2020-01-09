@@ -1,6 +1,6 @@
 ---
 title: işleç &amp;
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - '&'
 - operator &
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - AND operator
 - '& operator'
 ms.assetid: f3c51a54-48ba-4b99-afed-5c45177bf694
-ms.openlocfilehash: e42279961d2ac1fe7a67f5fc7039461c2c41e472
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: ca16534000706340441ad0cac0ec77e23d67d843
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397094"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75311851"
 ---
 # <a name="operator-amp"></a>işleç &amp;
 
-Bit düzeyinde **and**. Yalnızca içinde kullanılır [. Ise](../../assembler/masm/dot-if.md), [. Veya SıRASıNDA](../../assembler/masm/dot-while.md) [. Blokları YINELEYIN](../../assembler/masm/dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
+Bit düzeyinde **and**. Yalnızca içinde kullanılır [. Ise](dot-if.md), [. Veya SıRASıNDA](dot-while.md) [. Blokları YINELEYIN](dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,4 +26,5 @@ Bit düzeyinde **and**. Yalnızca içinde kullanılır [. Ise](../../assembler/m
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+[Işleçler başvurusu](operators-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

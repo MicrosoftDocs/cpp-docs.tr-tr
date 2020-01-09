@@ -48,16 +48,16 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: c4a8b33c2233dc0c680ddbe5063ab6fe25a729b0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 81f4bf6c60a0c0e4011536e8d3bc104bbc33e04f
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957271"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301710"
 ---
 # <a name="_spawn-_wspawn-functions"></a>_spawn, _wspawn İşlevleri
 
-`_spawn` İşlevlerin her biri yeni bir işlem oluşturur ve yürütür:
+`_spawn` işlevlerin her biri yeni bir işlem oluşturur ve yürütür:
 
 |||
 |-|-|
@@ -68,16 +68,16 @@ ms.locfileid: "70957271"
 
 İşlev adının sonundaki harfler çeşitlemesi tespit edin.
 
-|Harfi|Varyantı|
+|Harfi|Değişken|
 |-|-|
 | `e`  | `envp`, ortam ayarlarına işaretçiler dizisi yeni işleme geçirilir.  |
-| `l`  | Komut satırı bağımsız değişkenleri `_spawn` işleve tek tek geçirilir. Bu sonek genellikle yeni bir işleme yönelik bir dizi parametre önceden bilindiğinde kullanılır.  |
-| `p`  | `PATH`yürütülecek dosyayı bulmak için ortam değişkeni kullanılır.  |
-| `v`  | `argv`, komut satırı bağımsız değişkenlerine işaretçiler dizisi `_spawn` işlevine geçirilir. Bu sonek genellikle yeni bir işleme yönelik bir dizi parametrenin değişken olduğu durumlarda kullanılır.  |
+| `l`  | Komut satırı bağımsız değişkenleri tek tek `_spawn` işleve geçirilir. Bu sonek genellikle yeni bir işleme yönelik bir dizi parametre önceden bilindiğinde kullanılır.  |
+| `p`  | `PATH` ortam değişkeni, yürütülecek dosyayı bulmak için kullanılır.  |
+| `v`  | `argv`, komut satırı bağımsız değişkenlerine işaretçiler dizisi `_spawn` işleve geçirilir. Bu sonek genellikle yeni bir işleme yönelik bir dizi parametrenin değişken olduğu durumlarda kullanılır.  |
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_spawn` İşlevlerin her biri yeni bir işlem oluşturur ve yürütür. Çok baytlı karakter dizisi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor. `_wspawn` İşlevleri `_spawn` işlevlerinin geniş karakterli sürümleridir; çok baytlı karakter dizelerini işlemez. Aksi takdirde, `_wspawn` işlevler karşılıklarıyla `_spawn` aynı şekilde davranır.
+`_spawn` işlevlerin her biri yeni bir işlem oluşturur ve yürütür. Çok baytlı karakter dizisi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor. `_wspawn` işlevleri, `_spawn` işlevlerinin geniş karakterli sürümleridir; çok baytlı karakter dizelerini işlemez. Aksi takdirde, `_wspawn` işlevleri `_spawn` karşılıklarıyla aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -92,63 +92,63 @@ ms.locfileid: "70957271"
 |`_tspawnvp`|`_spawnvp`|`_spawnvp`|`_wspawnvp`|
 |`_tspawnvpe`|`_spawnvpe`|`_spawnvpe`|`_wspawnvpe`|
 
-Yeni işlemi yüklemek ve yürütmek için yeterli bellek kullanılabilir olmalıdır. Bağımsız değişkeni, çağıran işlem tarafından ve sırasında `_spawn`gerçekleştirilecek eylemi belirler. `mode` İçin `mode` aşağıdaki değerler, Process. h içinde tanımlanmıştır:
+Yeni işlemi yüklemek ve yürütmek için yeterli bellek kullanılabilir olmalıdır. `mode` bağımsız değişkeni, `_spawn`önce ve sırasında çağıran işlem tarafından gerçekleştirilen eylemi belirler. `mode` için aşağıdaki değerler, Process. h içinde tanımlanmıştır:
 
 |||
 |-|-|
-| `_P_OVERLAY`  | Çağıran işlemi yok etme, çağırma işlemini yok etme ( `_exec` çağrılarla aynı etkiyi).  |
+| `_P_OVERLAY`  | Çağıran işlemi yok etme, çağırma işlemini yok etme (`_exec` çağrılarıyla aynı etkiyi).  |
 | `_P_WAIT`  | Yeni işlemin yürütülmesi tamamlanana kadar çağıran bir iş parçacığını askıya alır (zaman uyumlu `_spawn`).  |
-| `_P_NOWAIT` veya `_P_NOWAITO`  | Yeni işlemle (zaman uyumsuz `_spawn`) bir arama işlemini eşzamanlı olarak yürütmeye devam eder.  |
-| `_P_DETACH`  | Çağıran işlemi yürütmeye devam eder; Yeni işlem, konsola veya klavyeye erişim olmadan arka planda çalıştırılır. Yeni işlem `_cwait` için yapılan çağrılar başarısız olur (zaman `_spawn`uyumsuz).  |
+| `_P_NOWAIT` veya `_P_NOWAITO`  | Yeni işlemle aynı anda bir arama işlemini yürütmeye devam eder (zaman uyumsuz `_spawn`).  |
+| `_P_DETACH`  | Çağıran işlemi yürütmeye devam eder; Yeni işlem, konsola veya klavyeye erişim olmadan arka planda çalıştırılır. Yeni işleme karşı `_cwait` çağrılar başarısız olur (zaman uyumsuz `_spawn`).  |
 
-`cmdname` Bağımsız değişkeni, yeni işlem olarak yürütülen dosyayı belirtir ve tam yolu (kökten), kısmi yolu (geçerli çalışma dizininden) veya yalnızca bir dosya adını belirtebilir. Dosya adı uzantısına sahip değilse veya nokta (.) ile bitmezse `_spawn` , işlev önce. com dosya adı uzantısını ve ardından. exe dosya adı uzantısını,. bat dosya adı uzantısını ve son olarak. cmd dosya adı uzantısını dener. `cmdname`
+`cmdname` bağımsız değişkeni, yeni işlem olarak yürütülen dosyayı belirtir ve tam yolu (kökten), kısmi yolu (geçerli çalışma dizininden) veya yalnızca bir dosya adını belirtebilir. `cmdname` dosya adı uzantısına sahip değilse veya nokta (.) ile bitmezse, `_spawn` işlevi önce. com dosya adı uzantısını, sonra. exe dosya adı uzantısını,. bat dosya adı uzantısını ve son olarak. cmd dosya adı uzantısını dener.
 
-Bir dosya adı uzantısına sahipse,yalnızcaouzantıkullanılır.`cmdname` Bir noktayla `_spawn` biterdiğinde, çağrı dosya adı uzantısı `cmdname` olmadan arar. `cmdname` `cmdname` `_spawnlpe` ,,Ve`_spawnvpe` işlevleri, ortam`PATH` değişkeni tarafından belirtilen dizinlerde (aynı yordamları kullanarak) arama yapın. `_spawnvp` `_spawnlp`
+`cmdname` bir dosya adı uzantısına sahipse, yalnızca o uzantı kullanılır. `cmdname` bir noktayla sona ererse `_spawn` çağrı, dosya adı uzantısı olmayan `cmdname` arar. `_spawnlp`, `_spawnlpe`, `_spawnvp`ve `_spawnvpe` işlevleri, `cmdname` ortam değişkeni tarafından belirtilen dizinlerde `PATH` (aynı yordamları kullanarak) arar.
 
-Bir sürücü belirticisi veya eğik çizgi `_spawn` içeriyorsa(yani,görelibiryolise),çağrıyalnızcabelirtilendosyaiçinaramayapar;yolaramayapılmaz.`cmdname`
+`cmdname` bir sürücü belirticisi veya eğik çizgi içeriyorsa (yani, göreli bir yollarsa), `_spawn` çağrı yalnızca belirtilen dosya için arama yapar; yol arama yapılmaz.
 
-Geçmişte, bu işlevlerden bazıları başarılı ' de sıfır `errno` olarak ayarlanmıştır; geçerli davranış C standardı tarafından belirtildiği gibi, `errno` başarılı olarak dokunulmadan bırakılmamalıdır. Eski davranışa benzemeniz gerekiyorsa, bu işlevleri çağırmadan hemen `errno` önce sıfır olarak ayarlayın.
+Geçmişte, bu işlevlerden bazıları başarılı ' de sıfıra `errno`; geçerli davranış, C standardı tarafından belirtilen şekilde `errno` dokunulmadan çıkmıyor. Eski davranışa benzemeniz gerekiyorsa, bu işlevleri çağırmadan hemen önce `errno` sıfır olarak ayarlayın.
 
 > [!NOTE]
->  Doğru kaplama başlatma ve sonlandırmayı sağlamak için, `setjmp` veya `longjmp` işlevini kullanarak bir kaplama yordamı girmeyin veya bırakmayın.
+>  Doğru kaplama başlatma ve sonlandırmayı sağlamak için `setjmp` veya `longjmp` işlevini, bir kaplama yordamı girmek veya bırakmak için kullanmayın.
 
 ## <a name="arguments-for-the-spawned-process"></a>Oluşturulan Işlem için bağımsız değişkenler
 
-Bağımsız değişkenleri yeni işleme geçirmek için, `_spawn` çağrıdan bağımsız değişken olarak karakter dizelerine bir veya daha fazla işaretçi verin. Bu karakter dizeleri oluşturulan işlemin bağımsız değişken listesini oluşturur. Yeni işlem için bağımsız değişken listesini oluşturan dizelerin Birleşik uzunluğu 1024 baytı aşmamalıdır. Her bir dizenin Sonlandırıcı null karakteri (' \ 0 ') sayıma dahil değildir, ancak boşluk karakterleri (ayrı bağımsız değişkenlere otomatik olarak eklenir) dahil edilir.
+Bağımsız değişkenleri yeni işleme geçirmek için, `_spawn` çağrısında bağımsız değişken olarak karakter dizelerine bir veya daha fazla işaretçi verin. Bu karakter dizeleri oluşturulan işlemin bağımsız değişken listesini oluşturur. Yeni işlem için bağımsız değişken listesini oluşturan dizelerin Birleşik uzunluğu 1024 baytı aşmamalıdır. Her bir dizenin Sonlandırıcı null karakteri (' \ 0 ') sayıma dahil değildir, ancak boşluk karakterleri (ayrı bağımsız değişkenlere otomatik olarak eklenir) dahil edilir.
 
 > [!NOTE]
->  Dizelerde eklenen boşluklar beklenmeyen davranışlara neden olabilir; Örneğin, dizenin `"hi there"` geçirilmesi `_spawn` yeni `"hi"` işlemin iki bağımsız değişken `"there"`elde edilmesine neden olur. Amaç yeni işlemin "Merhaba." adlı bir dosyayı açma süreciydi, işlem başarısız olur. Bunu, dizeyi tırnak içine alarak önleyebilirsiniz: `"\"hi there\""`.
+>  Dizelerde eklenen boşluklar beklenmeyen davranışlara neden olabilir; Örneğin, `"hi there"` dize `_spawn` geçirmek yeni işleme, `"hi"` ve `"there"`iki bağımsız değişken getirmeye neden olur. Amaç yeni işlemin "Merhaba." adlı bir dosyayı açma süreciydi, işlem başarısız olur. Bunu, dizeyi tırnak içine alarak önleyebilirsiniz: `"\"hi there\""`.
 
 > [!IMPORTANT]
->  Kullanıcı girişini, içeriği açıkça denetlenmeden öğesine `_spawn` geçirmeyin. `_spawn`, bir [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) çağrısının oluşmasına neden olacak şekilde, nitelenmemiş yol adlarının olası güvenlik açıklarına yol açabileceğini aklınızda bulundurun.
+>  Kullanıcı girişini, içeriği açıkça denetlenmeden `_spawn` iletmeyin. `_spawn`, [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) çağrısının oluşmasına neden olacak. bu nedenle, nitelenmemiş yol adlarının olası güvenlik açıklarına neden olabileceğini aklınızda bulundurun.
 
-Bağımsız `_spawnl`değişken işaretçilerini ayrı bağımsız değişkenler olarak ( `_spawnle` `_spawnlp`,, ve `_spawnlpe`içinde `_spawnvpe` `_spawnv` `_spawnve`) veya işaretçiler dizisi olarak geçirebilirsiniz ( ,,ve).`_spawnvp` Oluşturulan işleme en az bir bağımsız değişken `arg0` veya `argv`[0] geçirmeniz gerekir. Kurala göre, bu bağımsız değişken programın komut satırına yazdığınız addır. Farklı bir değer hata oluşturmaz.
+Bağımsız değişken işaretçilerini ayrı bağımsız değişkenler olarak (`_spawnl`, `_spawnle`, `_spawnlp`ve `_spawnlpe`) veya bir işaretçi dizisi olarak (`_spawnv`, `_spawnve`, `_spawnvp`ve `_spawnvpe`) geçirebilirsiniz. Oluşturulan işleme en az bir bağımsız değişken, `arg0` veya `argv`[0] geçirmeniz gerekir. Kurala göre, bu bağımsız değişken programın komut satırına yazdığınız addır. Farklı bir değer hata oluşturmaz.
 
-,, Ve çağrıları`_spawnlpe` genellikle bağımsız değişken sayısının önceden bilinen olduğu durumlarda kullanılır. `_spawnle` `_spawnl` `_spawnlp` Bağımsız değişkeni genellikle bir `cmdname`işaretçisidir. `arg0` `arg1` İle`argn` bağımsız değişkenler, yeni bağımsız değişken listesini oluşturan karakter dizelerinin işaretçileridir. Aşağıda `argn`, bağımsız değişken listesinin sonunu işaretlemek için bir **null** işaretçi olması gerekir.
+`_spawnl`, `_spawnle`, `_spawnlp`ve `_spawnlpe` çağrıları genellikle bağımsız değişken sayısının önceden bilinen olduğu durumlarda kullanılır. `arg0` bağımsız değişkeni genellikle `cmdname`işaretçisidir. `arg1` ile `argn` arasındaki bağımsız değişkenler, yeni bağımsız değişken listesini oluşturan karakter dizelerinin işaretçileridir. `argn`, bağımsız değişken listesinin sonunu işaretlemek için **null** bir işaretçi olmalıdır.
 
-,, `_spawnve`, Ve çağrıları,yeniişlemdedeğişkensayıdabağımsızdeğişkenolduğundafaydalıdır.`_spawnvpe` `_spawnvp` `_spawnv` Bağımsız değişkenlerin işaretçileri dizi `argv`olarak geçirilir *.* [0 `argv`] bağımsız değişkeni, genellikle gerçek moddaki bir yol işaretçisi veya korunan moddaki program adı ile [1] ile [`n`] arasında `argv` `argv`, yeni bağımsız değişken listesini oluşturan karakter dizelerine yönelik işaretçilerdir. [ `argv`+`n` 1] bağımsız değişkeni, bağımsız değişken listesinin sonunu işaretlemek için bir **null** işaretçi olmalıdır.
+`_spawnv`, `_spawnve`, `_spawnvp`ve `_spawnvpe` çağrıları, yeni işlemde değişken sayıda bağımsız değişken olduğunda yararlıdır. Bağımsız değişkenlerin işaretçileri bir dizi olarak geçirilir, `argv` *.* `argv`[0] bağımsız değişkeni, genellikle gerçek moddaki yolun veya korunan moddaki program adının bir işaretçisidir ve `argv`[`n`] aracılığıyla `argv`[1], yeni bağımsız değişken listesini oluşturan karakter dizelerinin işaretçileridir. Bağımsız değişken listesinin sonunu işaretlemek için `argv`[`n` + 1] bağımsız değişkeni **null** bir işaretçi olmalıdır.
 
 ## <a name="environment-of-the-spawned-process"></a>Oluşturulan Işlemin ortamı
 
-Bir `_spawn` çağrı yapıldığında açık olan dosyalar yeni işlemde açık kalır. ,, Ve`_spawnvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_spawnl` `_spawnlp` `_spawnv` Bir ortam ayarları listesini `_spawnle` `_spawnve` `_spawnvpe` `_spawnlpe` bağımsız`envp` değişken aracılığıyla geçirerek yeni işlem için ortamı değiştirmek üzere,, ve çağrılarını kullanabilirsiniz. Bağımsız değişkeni `envp` , bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eden, her öğe (Final öğesi hariç) bir karakter işaretçileri dizisidir. Bu tür bir dize genellikle bir ortam `NAME` değişkeninin `NAME` adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değerinin bulunduğu biçimdedir =. `value` (Çift tırnak `value` işareti içine alınmadığını unutmayın.) `envp` Dizinin son öğesi **null**olmalıdır. Kendisi null olduğunda, oluşturulan işlem üst işlemin ortam ayarlarını devralır. `envp`
+Bir `_spawn` çağrısı yapıldığında açık olan dosyalar yeni işlemde açık kalır. `_spawnl`, `_spawnlp`, `_spawnv`ve `_spawnvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_spawnle`, `_spawnlpe`, `_spawnve`ve `_spawnvpe` çağrılarını, bir ortam ayarları listesini `envp` bağımsız değişkeniyle geçirerek yeni işlem için bir ortam değiştirmek üzere kullanabilirsiniz. `envp` bağımsız değişkeni, bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eden, her öğe (Final öğesi hariç) bir karakter işaretçileri dizisidir. Bu tür bir dize genellikle `NAME` bir ortam değişkeninin adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değeri olan `NAME`=`value`. (`value` çift tırnak işareti içine alınmadığını unutmayın.) `envp` dizisinin son öğesi **null**olmalıdır. `envp` kendisi **null**olduğunda, oluşturulan işlem üst işlemin ortam ayarlarını devralır.
 
-`_spawn` İşlevler, çeviri modu dahil olmak üzere açık dosyalarla ilgili tüm bilgileri yeni işleme geçirebilir. Bu bilgiler, ortamdaki `C_FILE_INFO` giriş aracılığıyla gerçek modda geçirilir. Başlangıç kodu normalde bu girişi işler ve sonra ortamdan siler. Ancak, bir `_spawn` işlev C olmayan bir işleme giriş içeriyorsa, bu girdi ortamda kalır. Ortam bilgileri, gerçek modda ikili biçimde geçirildiğinden, ortamın yazdırılması Bu girdinin tanım dizesinde grafik karakterlerini gösterir. Normal işlemler üzerinde başka bir etkiye sahip olmamalıdır. Korumalı modda, ortam bilgileri metin biçiminde geçirilir ve bu nedenle grafik karakteri içermez.
+`_spawn` işlevleri, çeviri modu da dahil olmak üzere açık dosyalarla ilgili tüm bilgileri yeni işleme geçirebilir. Bu bilgiler, ortamdaki `C_FILE_INFO` girişi aracılığıyla gerçek modda geçirilir. Başlangıç kodu normalde bu girişi işler ve sonra ortamdan siler. Ancak, bir `_spawn` işlevi C olmayan bir işlem içeriyorsa, bu giriş ortamda kalır. Ortam bilgileri, gerçek modda ikili biçimde geçirildiğinden, ortamın yazdırılması Bu girdinin tanım dizesinde grafik karakterlerini gösterir. Normal işlemler üzerinde başka bir etkiye sahip olmamalıdır. Korumalı modda, ortam bilgileri metin biçiminde geçirilir ve bu nedenle grafik karakteri içermez.
 
-Bir işlevi çağırmadan önce herhangi bir `fflush` akışı `_flushall`açık bir `_spawn` şekilde boşaltıp (veya kullanarak) veya kapatmanız gerekir.
+`_spawn` işlevini çağırmadan önce, `fflush` veya `_flushall`kullanarak) veya herhangi bir akışı kapatmanız gerekir.
 
-`_spawn` Yordamlara yapılan çağrılar tarafından oluşturulan yeni süreçler, sinyal ayarlarını korumaz. Bunun yerine, oluşturulan işlem sinyal ayarlarını varsayılana sıfırlar.
+`_spawn` yordamlarına yapılan çağrılar tarafından oluşturulan yeni süreçler, sinyal ayarlarını korumaz. Bunun yerine, oluşturulan işlem sinyal ayarlarını varsayılana sıfırlar.
 
 ## <a name="redirecting-output"></a>Çıktıyı yeniden yönlendirme
 
-Bir dll veya GUI `_spawn` uygulamasından arama yapıyorsanız ve çıktıyı bir kanala yönlendirmek istiyorsanız iki seçeneğiniz vardır:
+Bir DLL veya GUI uygulamasından `_spawn` arıyorsanız ve çıktıyı bir kanala yönlendirmek istiyorsanız iki seçeneğiniz vardır:
 
 - Win32 API kullanarak bir kanal oluşturun, ardından [AllocConsole](/windows/console/allocconsole)'u çağırın, başlangıç yapısındaki tanıtıcı değerlerini ayarlayın ve [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)çağırın.
 
-- Bir kanal oluşturacak ve **cmd. exe/c** (ya da **Command. exe/c**) kullanarak uygulamayı çağıracağı [_popen, _wpopen öğesini](../c-runtime-library/reference/popen-wpopen.md) çağırın.
+- [_Popen çağırın, bu,](../c-runtime-library/reference/popen-wpopen.md) bir kanal oluşturur ve **cmd. exe/c** (veya **Command. exe/c**) kullanarak uygulamayı çağırır _wpopen.
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // crt_spawn.c
 // This program accepts a number in the range
 // 1-8 from the command line. Based on the number it receives,

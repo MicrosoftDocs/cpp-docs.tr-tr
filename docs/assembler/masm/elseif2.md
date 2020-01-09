@@ -1,21 +1,21 @@
 ---
 title: ELSEIF2
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - ELSEIF2
 helpviewer_keywords:
 - ELSEIF2 directive
 ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
-ms.openlocfilehash: 7ba3708cf06d3511fc34bac2b6c3e235b08770f2
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 65bb02bd65531ab0d4f591ca9435c3f3aa6d6bae
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397674"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318143"
 ---
 # <a name="elseif2"></a>ELSEIF2
 
-Eğer **seçenek: SETIF2** **true**ise, her derleme geçişinde [ElseIf](../../assembler/masm/elseif-masm.md) bloğu değerlendirildi.
+Eğer **seçenek: SETIF2** **true**ise, her derleme geçişinde [ElseIf](elseif-masm.md) bloğu değerlendirildi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,4 +27,5 @@ Masd 5,1 vs MAS5 6,1 ' de 2-pass davranışı hakkında daha fazla bilgi için b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

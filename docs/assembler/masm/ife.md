@@ -1,17 +1,17 @@
 ---
 title: IFE
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - IFE
 helpviewer_keywords:
 - IFE directive
 ms.assetid: bac5659d-9d2e-406d-89b7-e05b335ab0fd
-ms.openlocfilehash: ca934671ed38abde1f188cf79f5e9074115de1d8
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 2fc9f55ae65579ba6f600bad48c2439c93556d96
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397392"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75313047"
 ---
 # <a name="ife"></a>IFE
 
@@ -23,8 +23,9 @@ ms.locfileid: "74397392"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
+Sözdiziminin [tamamı için bkz](if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

@@ -1,18 +1,18 @@
 ---
 title: Üst bilgi dosyalarıC++()
-ms.date: 04/20/2018
+ms.date: 12/11/2019
 helpviewer_keywords:
 - header files [C++]
-ms.openlocfilehash: 98d37944f8c037f3ba25d80c7d35b3560ad11d40
-ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
+ms.openlocfilehash: ca5036ee53372f44e53b5a6452d4ab220fc3977d
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980480"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301489"
 ---
 # <a name="header-files-c"></a>Üst bilgi dosyalarıC++()
 
-Değişkenler, işlevler, sınıflar vb. gibi program öğelerinin adları kullanılmadan önce bildirilmelidir. Örneğin, önce ' x ' bildirimini `x = 42` yapmadan yazmanız yeterlidir.
+Değişkenler, işlevler, sınıflar vb. gibi program öğelerinin adları kullanılmadan önce bildirilmelidir. Örneğin, önce ' x ' bildirimini yapmadan `x = 42` yazmanız yeterlidir.
 
 ```cpp
 int x; // declaration
@@ -23,9 +23,12 @@ Bildirim, derleyiciye öğenin bir **int**, **Double**, bir **işlev**, bir **s�
 
 Hata olasılığını en aza indirmek için, C++ *üst bilgi dosyalarını* kullanım kuralını bildirimleri içerecek şekilde benimseyin. Bildirimleri bir başlık dosyasında yapın, ardından her. cpp dosyasında veya bu bildirimi gerektiren diğer üstbilgi dosyasında #include yönergesini kullanın. #İnclude yönergesi, derleme öncesinde doğrudan. cpp dosyasına üstbilgi dosyasının bir kopyasını ekler.
 
+> [!NOTE]
+> Visual Studio 2019 ' de C++ 20 *modüller* özelliği, üst bilgi dosyaları için bir geliştirme ve son değişiklik olarak sunulmuştur. Daha fazla bilgi için bkz. [içindeki C++modüllere genel bakış ](modules-cpp.md).
+
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir sınıfı bildirmek ve sonra farklı bir kaynak dosyasında kullanmak için ortak bir yol gösterir. Üst bilgi dosyası `my_class.h`ile başlayacağız. Sınıf tanımı içerir, ancak tanımın tamamlanmamış olduğunu unutmayın. üye işlevi `do_something` tanımlı değil:
+Aşağıdaki örnek, bir sınıfı bildirmek ve sonra farklı bir kaynak dosyasında kullanmak için ortak bir yol gösterir. `my_class.h`üstbilgi dosyası ile başlayacağız. Sınıf tanımı içerir, ancak tanımın tamamlanmamış olduğunu unutmayın. üye işlevi `do_something` tanımlı değil:
 
 ```cpp
 // my_class.h
@@ -40,9 +43,9 @@ namespace N
 }
 ```
 
-Ardından, bir uygulama dosyası (genellikle bir. cpp veya benzer uzantı ile) oluşturun. My_class. cpp dosyasını çağıracak ve üye bildirimi için bir tanım sunacağız. My_class bildiriminin. `#include` cpp dosyasında bu noktada eklenmesini sağlamak için, "my_class. h" dosyası için bir yönerge ekledik ve bildirimini `std::cout`almak için dahil `<iostream>` ediyoruz. Tekliflerin, kaynak dosyayla aynı dizindeki üst bilgi dosyaları için kullanıldığını ve standart kitaplık üstbilgileri için açılı ayraçlar kullanıldığını unutmayın. Ayrıca, birçok standart kitaplık üstbilgisinde. h veya başka bir dosya uzantısı yoktur.
+Ardından, bir uygulama dosyası (genellikle bir. cpp veya benzer uzantı ile) oluşturun. My_class. cpp dosyasını çağıracak ve üye bildirimi için bir tanım sunacağız. My_class bildiriminin. cpp dosyasında bu noktada eklenmesini sağlamak için, "my_class. h" dosyası için bir `#include` yönergesi ekler ve `std::cout`bildirimine çekmek için `<iostream>` dahil ediyoruz. Tekliflerin, kaynak dosyayla aynı dizindeki üst bilgi dosyaları için kullanıldığını ve standart kitaplık üstbilgileri için açılı ayraçlar kullanıldığını unutmayın. Ayrıca, birçok standart kitaplık üstbilgisinde. h veya başka bir dosya uzantısı yoktur.
 
-Uygulama dosyasında, "my_class" veya "cout" ifadesinin her birini "N::" ya da "std::" ile nitelendirmeyi önlemek için isteğe bağlı olarak bir **using** ifadesini kullanabiliriz.  Üst bilgi dosyalarınızda **using** deyimleri yerleştirmeyin!
+Uygulama dosyasında, "N::" ya da "std::" ile "my_class" veya "cout" ifadesinin her birini nitelemek zorunda kalmamak için isteğe bağlı olarak bir **using** ifadesini kullanabilirsiniz.  Üst bilgi dosyalarınızda **using** deyimleri yerleştirmeyin!
 
 ```cpp
 // my_class.cpp
@@ -58,7 +61,7 @@ void my_class::do_something()
 }
 ```
 
-Artık başka bir. `my_class` cpp dosyasında kullanabiliriz. Üst bilgi dosyasını derleyicinin bildirime çekmeleri için #include. Tüm derleyicisinin bilmelidir, my_class ortak üye işlevine `do_something()`sahip bir sınıftır.
+Artık `my_class` başka bir. cpp dosyasında kullanabiliriz. Üst bilgi dosyasını derleyicinin bildirime çekmeleri için #include. Tüm derleyicisinin, my_class `do_something()`adlı ortak üye işlevine sahip bir sınıf olması gerekir.
 
 ```cpp
 // my_program.cpp
@@ -74,11 +77,11 @@ int main()
 }
 ```
 
-Derleyici her. cpp dosyasını. obj dosyalarında derlemeyi tamamladıktan sonra,. obj dosyalarını bağlayıcıya geçirir. Bağlayıcı nesne dosyalarını birleşdiğinde, my_class için tam olarak bir tanım bulur; Bu, my_class. cpp için üretilen. obj dosyasında bulunur ve derleme başarılı olur.
+Derleyici her. cpp dosyasını. obj dosyalarında derlemeyi tamamladıktan sonra,. obj dosyalarını bağlayıcıya geçirir. Bağlayıcı nesne dosyalarını birleşdiğinde, my_class için tam olarak bir tanım bulur; my_class. cpp için üretilen. obj dosyasında bulunur ve derleme başarılı olur.
 
 ## <a name="include-guards"></a>Koruyucuları dahil et
 
-Genellikle, üst bilgi dosyalarında tek bir. cpp dosyasına `#pragma once` birden çok kez eklenmemesini sağlamak için bir *içerme koruyucusu* veya yönergesi bulunur.
+Genellikle, üst bilgi dosyalarında tek bir. cpp dosyasına birden çok kez eklenmemesini sağlamak için bir *içerme koruyucusu* veya `#pragma once` yönergesi bulunur.
 
 ```cpp
 // my_class.h

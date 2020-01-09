@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .FPO directive
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
-ms.openlocfilehash: 650c69be17c9271c343360edbb90f093841a1047
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: ec08be4941f81abed55420884b34dc817caf3f13
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398252"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317740"
 ---
 # <a name="fpo-32-bit-masm"></a>. D (32-bit masa)
 
@@ -43,4 +43,5 @@ EBP kaydının ayrılıp ayrılmadığını belirtir. 0 ya da 1.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler başvurusu](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[MASMG BNF dilbilgisi](masm-bnf-grammar.md)

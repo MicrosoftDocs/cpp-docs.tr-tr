@@ -1,17 +1,17 @@
 ---
 title: x64 (ml64.exe) için (MASM)
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 helpviewer_keywords:
 - ml64
 - ml64.exe
 - masm for x64
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
-ms.openlocfilehash: 68f5a14b092109a647e7a81ed6c3fef148a5571b
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 5e324414a0d4d7e74bb28d54c1d858ef6fb9793c
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397221"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75312748"
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64 (ml64.exe) için (MASM)
 
@@ -19,7 +19,7 @@ Visual Studio, x64 kodunu hedeflemek için hem 32-bit hem de 64 Bit barındırı
 
 Komut satırında x64 hedefleri için kod oluşturmak üzere Masd 'yi kullanmak için, gerekli yolu ve diğer ortam değişkenlerini ayarlayan x64 hedefleri için bir geliştirici komut istemi kullanmanız gerekir. Geliştirici komut istemi başlatma hakkında daha fazla bilgi için bkz. [komut satırında C/C++ kod oluşturma](../../build/building-on-the-command-line.md).
 
-Ml64. exe komut satırı seçenekleri hakkında bilgi için bkz. [ml ve ML64 komut satırı başvurusu](../../assembler/masm/ml-and-ml64-command-line-reference.md).
+Ml64. exe komut satırı seçenekleri hakkında bilgi için bkz. [ml ve ML64 komut satırı başvurusu](ml-and-ml64-command-line-reference.md).
 
 Satır içi assembler veya ASM anahtar sözcüğünün kullanımı x64 veya ARM hedefleri için desteklenmez. X64 veya ARM için satır içi assembler kullanan x86 kodunuzun bağlantı noktası oluşturmak için, kodunuzu ' e C++dönüştürebilir, derleyici iç bilgileri kullanabilir veya assembler dili kaynak dosyaları oluşturabilirsiniz. Microsoft C++ derleyicisi, özel işlev yönergelerini (örneğin, ayrıcalıklı, bit tarama/test, birbirine kilitli vb.) kullanmanıza olanak tanımak için iç işlemleri destekler. Kullanılabilir iç bilgiler hakkında bilgi için bkz. [derleyici iç](../../intrinsics/compiler-intrinsics.md)bilgileri.
 
@@ -29,7 +29,7 @@ Visual Studio proje sistemi, C++ projelerinizde Masd kullanılarak oluşturulan 
 
 ### <a name="to-add-an-assembler-language-file-to-an-existing-visual-studio-c-project"></a>Varolan bir Visual Studio C++ projesine bir assembler dili dosyası eklemek için
 
-1. **Çözüm Gezgini**içinde projeyi seçin. Menü çubuğunda **Proje**, **Özelleştirmeleri oluştur**' u seçin.
+1. Projede seçin **Çözüm Gezgini**. Menü çubuğunda **Proje**, **Özelleştirmeleri oluştur**' u seçin.
 
 1. **Görsel C++ yapı özelleştirme dosyaları** iletişim kutusunda **ması (. targets,. props)** yanındaki onay kutusunu işaretleyin. Seçiminizi kaydetmek ve iletişim kutusunu kapatmak için **Tamam** ' ı seçin.
 
@@ -43,21 +43,21 @@ Eklediğiniz. asm dosyasında assembler dili kodunuzu oluşturun. Çözümünüz
 
 Aşağıdaki ML64 özgü yönergeleri, 64 ' i hedefleyen assembler dili kaynak kodunuzda kullanabilirsiniz:
 
-- [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)
+- [.ALLOCSTACK](dot-allocstack.md)
 
-- [.ENDPROLOG](../../assembler/masm/dot-endprolog.md)
+- [.ENDPROLOG](dot-endprolog.md)
 
-- [.PUSHFRAME](../../assembler/masm/dot-pushframe.md)
+- [.PUSHFRAME](dot-pushframe.md)
 
-- [.PUSHREG](../../assembler/masm/dot-pushreg.md)
+- [.PUSHREG](dot-pushreg.md)
 
-- [.SAVEREG](../../assembler/masm/dot-savereg.md)
+- [.SAVEREG](dot-savereg.md)
 
-- [.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)
+- [.SAVEXMM128](dot-savexmm128.md)
 
-- [.SETFRAME](../../assembler/masm/dot-setframe.md)
+- [.SETFRAME](dot-setframe.md)
 
-Ayrıca, [proc](../../assembler/masm/proc.md) yönergesi ml64. exe ile kullanım için güncelleştirilmiştir.
+Ayrıca, [proc](proc.md) yönergesi ml64. exe ile kullanım için güncelleştirilmiştir.
 
 ## <a name="32-bit-address-mode-address-size-override"></a>32-bit adres modu (adres boyutu geçersiz kılma)
 
@@ -82,4 +82,4 @@ mov eax, DWORD PTR [ecx*2+r10+0100h]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler Başvurusu](microsoft-macro-assembler-reference.md)

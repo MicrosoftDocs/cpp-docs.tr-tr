@@ -1,18 +1,18 @@
 ---
 title: ML Önemli Hatası A1010
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A1010
 helpviewer_keywords:
 - A1010
 ms.assetid: 9e0b5241-67f4-4740-8701-3b2d2d1ad9e4
-ms.openlocfilehash: 6ec82f7f6d559d977a9aa039ed91689a0ef4d49a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: b3141f8819a33281c70e34bd7772d4475886e557
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856884"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75312592"
 ---
 # <a name="ml-fatal-error-a1010"></a>ML Önemli Hatası A1010
 
@@ -20,9 +20,9 @@ ms.locfileid: "74856884"
 
 Bir blok başlangıcı eşleşen bir uca sahip değil veya bir blok ucunun eşleşen bir başlangıcı yok. Aşağıdakilerden biri olabilir:
 
-- Gibi üst düzey bir yönerge [. Ise](../../assembler/masm/dot-if.md), [. Veya TEKRARLAYıN](../../assembler/masm/dot-repeat.md) [. WHILE](../../assembler/masm/dot-while.md).
+- Gibi üst düzey bir yönerge [. Ise](dot-if.md), [. Veya TEKRARLAYıN](dot-repeat.md) [. WHILE](dot-while.md).
 
-- [IF](../../assembler/masm/if-masm.md), [Repeat](../../assembler/masm/repeat.md)veya **WHILE**gibi koşullu derleme yönergesi.
+- [IF](if-masm.md), [Repeat](repeat.md)veya **WHILE**gibi koşullu derleme yönergesi.
 
 - Bir yapı veya birleşim tanımı.
 
@@ -30,10 +30,10 @@ Bir blok başlangıcı eşleşen bir uca sahip değil veya bir blok ucunun eşle
 
 - Bir segment tanımı.
 
-- Bir [PopContext](../../assembler/masm/popcontext.md) yönergesi.
+- Bir [PopContext](popcontext.md) yönergesi.
 
-- [Eşleşmeyen](../../assembler/masm/if-masm.md)bir, [ElseIf](../../assembler/masm/elseif-masm.md)veya **ENDIF** [gibi bir koşullu](../../assembler/masm/else-masm.md)derleme yönergesi.
+- [Eşleşmeyen](if-masm.md)bir, [ElseIf](elseif-masm.md)veya **ENDIF** [gibi bir koşullu](else-masm.md)derleme yönergesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Hata İletileri](ml-error-messages.md)
