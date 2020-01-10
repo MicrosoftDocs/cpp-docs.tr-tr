@@ -2,15 +2,13 @@
 layout: HubPage
 title: Görsel C++ belgeler
 description: Platformlarınız ve cihazlarınız C++ için uygulamalar, hizmetler ve araçlar geliştirmek üzere kullanmayı öğrenin.
-author: mikeblome
-ms.author: mblome
 ms.topic: hub-page
-ms.openlocfilehash: 204571952b7da922ddaac29949568cac3e69d616
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: 2a54776149bef58656380f6f03351083189ea6c1
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177495"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793806"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -75,10 +73,10 @@ ms.locfileid: "70177495"
         <h1>Görsel C++ belgeler</h1>
         <ul class="pivots">
             <li>
-                <a href="#workloads">Lerine</a>
+                <a href="#workloads">İş yükleri</a>
                 <ul id="workloads">
                     <li>
-                        <a href="#workloads1">Lerine</a>
+                        <a href="#workloads1">İş yükleri</a>
                         <ul id="workloads1" class="cardsC">
                             <li>
                                 <a href="/cpp/cppcx/universal-windows-apps-cpp">
@@ -199,10 +197,10 @@ ms.locfileid: "70177495"
                 </ul>
             </li>
             <li>
-                <a href="#features">Özelliklerinde</a>
+                <a href="#features">Özellikler</a>
                 <ul id="features">
                     <li>
-                        <a href="#features1">Özelliklerinde</a>
+                        <a href="#features1">Özellikler</a>
                         <ul id="features1" class="cardsC">
                             <li>
                                 <a href="/cpp/ide/writing-and-refactoring-code-cpp">
@@ -234,7 +232,7 @@ ms.locfileid: "70177495"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Yapı</h3>
+                                                    <h3>{1&gt;Yapı (Build)&lt;1}</h3>
                                                     <p>Kodunuzu derleyin ve bağlayın ve en yüksek aktarım hızı için iyileştirin.</p>
                                                 </div>
                                             </div>
@@ -272,7 +270,7 @@ ms.locfileid: "70177495"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Test</h3>
+                                                    <h3>{1&gt;Sınama&lt;1}</h3>
                                                     <p>C++ Kodunuz için birim testleri oluşturun.</p>
                                                 </div>
                                             </div>
@@ -291,7 +289,7 @@ ms.locfileid: "70177495"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Dağıt</h3>
+                                                    <h3>dağıtımı</h3>
                                                     <p>Bitmiş programınızı son kullanıcılara dağıtın.</p>
                                                 </div>
                                             </div>
@@ -378,7 +376,7 @@ ms.locfileid: "70177495"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Bileşen uzantıları</h3>
-                                                    <p>Bileşen Uzantıları C++: C++UWP programlamasında .NET programlama C++ve/CX için/CLI.</p>
+                                                    <p>Bileşen Uzantıları C++: C++UWP programlama için .NET programlama ve C++/CX için/CLI.</p>
                                                 </div>
                                             </div>
                                         </div>

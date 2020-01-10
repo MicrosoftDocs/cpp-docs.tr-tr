@@ -3,45 +3,43 @@ title: Visual C++ Yardım ve Topluluk
 ms.date: 11/30/2017
 ms.technology: cpp-ide
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: a897f3b6154368c7381f1cac8e51ed5acfac5d32
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: eb266354b818e95583c0d236c19209963a34f1f5
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708176"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791699"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ Yardım ve Topluluk
 
-İşte nasıl C++ yazma hakkında bilgi almak için kod ve Visual Studio geliştirme araçlarını kullanın.
+Kod yazma C++ ve Visual Studio geliştirme araçlarını kullanma hakkında bilgi almak için şu adımları uygulayın.
 
 ## <a name="samples"></a>Örnekler
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Geliştirici kodu örnekleri](https://code.msdn.microsoft.com/)|Microsoft ve topluluktan katkıda bulunanlar'nden indirilebilir örnek kodu içerir.|
+|[Geliştirici kodu örnekleri](https://code.msdn.microsoft.com/)|Microsoft ve Topluluk katılımcıları ' nden indirilebilir örnek kod içerir.|
 
 ## <a name="product-documentation"></a>Ürün Belgeleri
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Visual Studio’da C++](visual-cpp-in-visual-studio.md)|Başvuru ve Visual C++ hakkında kavramsal belgeler içeriyor. MSDN Kitaplığı'nın bir parçası.|
-|[Windows Geliştirici Merkezi](https://developer.microsoft.com/windows/)|Windows 10 için uygulamalar geliştirmek için C++ ve diğer dilleri kullanma hakkında bilgiler içerir. Windows Geliştirici Merkezi parçası; Docs altında C++ içeriktir > dil başvurusu düğümü.|
+|[Visual Studio’da C++](visual-cpp-in-visual-studio.md)|Visual C++hakkında başvuru ve kavramsal belgeler içerir. MSDN Kitaplığı 'nın bir parçası.|
+|[Windows Geliştirici Merkezi](https://developer.microsoft.com/windows/)|Windows 10 için uygulama geliştirmek üzere C++ ve diğer dillerin kullanımı hakkındaki bilgileri içerir. Windows Geliştirici Merkezi 'nin bir parçası; C++ Içerik, docs > dil başvurusu düğümünün altındadır.|
 
-### <a name="online-and-offline-documentation"></a>Çevrimiçi ve çevrimdışı belgeleri
+### <a name="online-and-offline-documentation"></a>Çevrimiçi ve çevrimdışı belgeler
 
-Microsoft Geliştirici içeriği çevrimiçi görüntüleyebilirsiniz. Bu içeriği düzenli olarak güncelleştirilir.
+Microsoft Developer içeriğini çevrimiçi görüntüleyebilirsiniz. Bu içerik düzenli olarak güncelleştirilir.
 
-Ayrıca, indirme ve içeriği çevrimdışı Yardım Görüntüleyici'de yerel olarak görüntüleyebilirsiniz. Çevrimdışı belgeleri de düzenli olarak güncelleştirilen books ilgili içerik tarafından düzenlenir. Kullanılabilir oldukça, ilgilendiğiniz books indirebilirsiniz. Daha fazla bilgi için [Microsoft Yardım Görüntüleyici](/visualstudio/ide/microsoft-help-viewer).
+Ayrıca, çevrimdışı yardım görüntüleyicisinde içeriği yerel olarak indirebilir ve görüntüleyebilirsiniz. Çevrimdışı belgeler, düzenli olarak da güncellenen ilgili içerik kitapları tarafından düzenlenmiştir. İlgilendiğiniz kitapları, kullanılabilir olduklarında indirebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Yardım Görüntüleyicisi](/visualstudio/ide/microsoft-help-viewer).
 
-Birçok bölümler belgelerinin PDF biçiminde de mevcuttur. Bu bölümleri olan bir **indirme PDF** docs.microsoft.com'da dahil edilen sayfalardaki bağlantı.
+Belgelerin pek çok bölümü PDF biçiminde de kullanılabilir. Bu bölümlerde, docs.microsoft.com 'deki dahil edilen sayfalarda **PDF 'Yi indir** bağlantısı bulunur.
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)|Visual C++ ürün ekibinde uzmanları tarafından çeşitli konular gönderiler içerir.|
-|[Channel 9](https://channel9.msdn.com/)|Video röportajları ve dersler içerir. C++ içeriği bulmak için Channel 9 giriş sayfasında arama kutusunu kullanın.|
-|[Visual Studio](https://visualstudio.microsoft.com/)|Makaleleri ve Visual Studio ve ilişkili geliştirme araçları ile ilgili Haberler içerir.|
-|[MSDN Forumları](https://social.msdn.microsoft.com/Forums/home?category=visualc) ve [Geliştirici topluluğu](https://developercommunity.visualstudio.com)|Burada C++ hakkında sorularınızı ve Microsoft ve topluluk içinde uzmanlarından yanıtlar alın, resmi Microsoft forumları.|
+|[Görsel C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)|Görsel C++ ürün ekibinizdeki uzmanlar tarafından çeşitli konularla ilgili gönderiler içerir.|
+|[Channel 9](https://channel9.msdn.com/)|Video görüşmeleri ve derslerinizi içerir. İçerik bulmak C++ için Channel 9 giriş sayfasındaki arama kutusunu kullanın.|
+|[Visual Studio](https://visualstudio.microsoft.com/)|Visual Studio ve ilgili geliştirme araçlarıyla ilgili makaleleri ve haberleri içerir.|
+|[MSDN forumları](https://social.msdn.microsoft.com/Forums/home?category=visualc) ve [Geliştirici topluluğu](https://developercommunity.visualstudio.com)|Microsoft 'tan ve topluluktaki uzmanlardan sorularınızı oluşturabileceğiniz C++ ve yanıt alabileceğiniz resmi Microsoft forumları.|

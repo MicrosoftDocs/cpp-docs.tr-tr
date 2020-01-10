@@ -1,48 +1,46 @@
 ---
-title: vcpkg--bir C++ için Paket Yöneticisi Windows, Linux ve MacOS
-description: vcpkg edinme ve yükleme, açık kaynaklı C++ kitaplıklarının Windows üzerinde büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir.
-author: mikeblome
-ms.author: mblome
+title: vcpkg--Windows C++ , Linux ve MacOS için bir paket yöneticisi
+description: vcpkg, Windows 'da açık kaynaklı C++ kitaplıkların alımı ve yüklemesini büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir.
 ms.date: 05/16/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 58f8a9b8223dc54bf083ebbac97528f88890777c
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: a116c33d7bb0b1d1396e68681d34995168a0bdc5
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837016"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791629"
 ---
-# <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi
+# <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows C++ , Linux ve MacOS için Paket Yöneticisi
 
-vcpkg edinme ve yükleme Windows, Linux ve Macos'ta üçüncü taraf kitaplıkların büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir. Projeniz üçüncü taraf kitaplıklarını kullanıyorsa, bunları yüklemek için vcpkg kullanmanızı öneririz. vcpkg hem açık kaynak hem de özel kütüphanelerini destekler. Vcpkg Windows katalogdaki tüm kitaplıkları Visual Studio 2015, Visual Studio 2017 ve Visual Studio 2019 ile uyumluluk için test edilmiştir. Mayıs 2018'den itibaren Windows kataloğunda ve Linux/MacOS kataloğunda 350 üzerinden 900 kitaplıkları vardır. C++ topluluğu, her iki kataloglarında düzenli olarak daha fazla kitaplıkları eklemektir.
+vcpkg, Windows, Linux ve MacOS 'ta üçüncü taraf kitaplıkların alımı ve yüklemesini büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir. Projeniz üçüncü taraf kitaplıklar kullanıyorsa, bunları yüklemek için vcpkg kullanmanızı öneririz. vcpkg hem açık kaynaklı hem de özel kitaplıkları destekler. Vcpkg Windows kataloğundaki tüm kitaplıklar, Visual Studio 2015, Visual Studio 2017 ve Visual Studio 2019 uyumluluğu için test edilmiştir. 2018 itibariyle, Windows kataloğunda 900 kitaplığı üzerinde ve Linux/MacOS kataloğunda 350. C++ Topluluk, her iki katalogda de sürekli olarak daha fazla kitaplık ekliyor.
 
 ## <a name="simple-yet-flexible"></a>Basit ancak esnek
 
-Tek bir komutla kaynakları indirmek ve bir kitaplık oluşturun. vcpkg kendisini Github'da bulunan bir açık kaynak projesi olan. Kendi özel clone(s) istediğiniz herhangi bir şekilde özelleştirebilirsiniz. Örneğin, farklı kitaplıkları veya genel kataloğunda bulduğu daha kitaplıkların farklı sürümleri belirtebilirsiniz. Tek bir makinede birden fazla klonlarını vcpkg olabilir, kitaplıkları ve/veya derleme anahtarları, vb. her biri özel üretme ayarlar. Her kopya yalnızca kendi hiyerarşisini çalışır vcpkg.exe kendi kopyalama ile kendi içinde bir ortam büyüktür. vcpkg herhangi bir ortam değişkenini eklenmez ve Windows kayıt defteri veya Visual Studio bağımlılığı yoktur.
+Tek bir komutla kaynakları indirebilir ve bir kitaplık oluşturabilirsiniz. vcpkg, GitHub 'da bulunan açık kaynaklı bir projem. Özel klonlarınızı dilediğiniz gibi özelleştirebilirsiniz. Örneğin, genel katalogda bulunan farklı kitaplıkları veya kitaplıkların farklı sürümlerini belirtebilirsiniz. Tek bir makinede vcpkg 'nin birden çok kopyasını oluşturabilirsiniz, her biri özel kitaplık ve/veya derleme anahtarı kümeleri üretir, vb. Her kopya, kendi kendi hiyerarşisinde çalışan vcpkg. exe kopyasının bulunduğu kendi kendine dahil olan bir ortamdır. vcpkg herhangi bir ortam değişkenine eklenmez ve Windows kayıt defteri veya Visual Studio 'ya bağımlılığı yoktur.
 
-## <a name="sources-not-binaries"></a>Kaynakları değil ikili dosyaları
+## <a name="sources-not-binaries"></a>İkili dosyaları değil kaynakları
 
-Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. Bu, bu kaynakları bulmak Visual Studio'nun en son sürümünü kullanarak derler. Uygulama kodu olarak bağlanan, C++'da, kullandığınız tüm kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en az önemli ölçüde azaltabilir. Bir derleyici belirli bir sürümü üzerinde standartlaştırılmıştır teams'de, bir takım üyesinin kaynakları indirmek ve bir dizi ikili dosyaları derlemek ve ardından export komutu ikili dosyaları ve üstbilgi diğer ekip üyeleri ZIP vcpkg kullanabilirsiniz. Daha fazla bilgi için [dışarı aktarma derlenmiş ikili dosyaları ve üstbilgi](#export_binaries_per_project) aşağıda.
+Windows kataloğundaki kitaplıklar için vcpkg, ikili dosyalar yerine kaynakları indirir [1]. Bu kaynakları, bulduğu Visual Studio 'nun en son sürümünü kullanarak derler. ' C++De, kullandığınız tüm kitaplıkların aynı derleyici ve derleyici sürümü ile, buna bağlanan uygulama kodu ile karmaşık olması çok önemlidir. Vcpkg kullanarak, eşleşmeyen ikili dosyalar ve neden olabilecek sorunlar için potansiyelini ortadan kaldırır veya en azından büyük ölçüde azaltabilirsiniz. Bir derleyicinin belirli bir sürümünde standartlaştırılmış olan ekiplerde, bir takım üyesi, kaynakları indirmek ve bir ikili dosya kümesi derlemek için vcpkg kullanabilir ve ardından Dışa Aktar komutunu kullanarak diğer takım üyeleri için ikili dosyaları ve üst bilgileri düzenleyebilir. Daha fazla bilgi için bkz. [derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma](#export_binaries_per_project) .
 
-Özel bağlantı noktaları koleksiyonu kitaplıkları ile vcpkg kopya oluşturma, önceden oluşturulmuş ikili dosyalar ve üstbilgi indiren bir bağlantı noktasını ekleyin ve yalnızca bu dosyaları istenilen konuma kopyalar. bir portfile.cmake dosyasına yazılamıyor.
+Bağlantı noktaları koleksiyonunda özel kitaplıklarla bir vcpkg kopyası oluşturursanız, önceden oluşturulmuş ikili dosyaları ve üstbilgileri yükleyen ve bu dosyaları istenen konuma kopyalayan bir portfile. CMake dosyası yazan bir bağlantı noktası ekleyebilirsiniz.
 
-[1] *Not: bazı özel kitaplıkları için kaynakları kullanılabilir değil. Vcpkg bu gibi durumlarda önceden oluşturulmuş uyumlu ikili dosyaları indirir.*
+[1] *Not: bazı özel kitaplıklar için kaynaklar kullanılamaz. Vcpkg, bu durumlarda, uyumlu önceden oluşturulmuş ikili dosyaları indirir.*
 
 ## <a name="installation"></a>Yükleme
 
-Github'dan vcpkg deposunu kopyalayın: [ https://github.com/Microsoft/vcpkg ](https://github.com/Microsoft/vcpkg). Tercih ettiğiniz herhangi bir klasör konumuna indirebilirsiniz.
+GitHub 'dan vcpkg deposunun kopyasını kopyalayın: [https://github.com/Microsoft/vcpkg](https://github.com/Microsoft/vcpkg). İstediğiniz herhangi bir klasör konumuna indirebilirsiniz.
 
-Önyükleyici kök klasöründe çalıştırın:
+Önyükleyici kök klasörde çalıştırın:
 
-- **önyükleme vcpkg.bat** (Windows)
+- **bootstrap-vcpkg. bat** (Windows)
 - **./Bootstrap-vcpkg.sh** (Linux, MacOS)
 
-## <a name="search-the-list-of-available-libraries"></a>Kullanılabilir kitaplıkları listesinde arama yapın
+## <a name="search-the-list-of-available-libraries"></a>Kullanılabilir Kitaplıklar listesinde arama yapın
 
-Komut isteminde, hangi paketleri kullanılabildiğini görmek için: **vcpkg arama**
+Hangi paketlerin kullanılabilir olduğunu görmek için, komut isteminde şunu yazın: **vcpkg arama**
 
-Bu komutu vcpkg/bağlantı noktası alt denetim dosyaları listeler. Böyle bir listesini görürsünüz:
+Bu komut, vcpkg/Ports alt klasörlerindeki denetim dosyalarını numaralandırır. Şöyle bir liste görürsünüz:
 
 ```cmd
 ace       6.4.3   The ADAPTIVE Communication Environment
@@ -55,7 +53,7 @@ atk       2.24.0  GNOME Accessibility Toolkit
 ...
 ```
 
-Örneğin, bir model üzerinde filtre **vcpkg arama eri**:
+Bir modele filtre uygulayabilirsiniz; Örneğin, **vcpkg arama ta**:
 
 ```cmd
 botan       2.0.1      A cryptography library written in C++11
@@ -63,13 +61,13 @@ portaudio   19.0.6.00  PortAudio Portable Cross-platform Audio I/O API P...
 taglib      1.11.1-2   TagLib Audio Meta-Data Library
 ```
 
-### <a name="install-a-library-on-your-local-machine"></a>Bir kitaplık yerel makinenize yükleyin.
+### <a name="install-a-library-on-your-local-machine"></a>Yerel makinenize kitaplık yükler
 
-Kullanarak bir kitaplık adını aldıktan sonra **vcpkg arama**, kullandığınız **vcpkg yükleme** için Kitaplığı'nı indirin ve derleyin. vcpkg kitaplığın portfile bağlantı noktaları dizinde kullanır. Hiçbir Üçlü belirtilmişse vcpkg yüklemek ve derlemek için hedef platform için varsayılan Üçlü: x86 windows, x64 linux.cmake veya x64 osx.cmake.
+**Vcpkg aramasını**kullanarak bir kitaplığın adını aldıktan sonra, kitaplığı indirmek ve derlemek için **vcpkg yüklemesini** kullanırsınız. vcpkg, bağlantı noktaları dizininde kitaplığın portfile dosyasını kullanır. Hiçbir Üçlü izin belirtilmemişse, vcpkg hedef platform için varsayılan Üçlü değer için yüklenir ve derler: x86-Windows, x64-Linux. CMake veya x64-OSX. CMake.
 
-Linux kitaplıkları için yerel makinede yüklenen gcc vcpkg bağlıdır. MacOS üzerinde vcpkg Clang kullanır.
+Linux kitaplıkları için vcpkg, yerel makinede GCC 'nin yüklü olmasına bağlıdır. MacOS 'ta vcpkg, Clang kullanır.
 
-Portfile bağımlılıkları belirtiyorsa, vcpkg indirir ve bu da yükler. İndirdikten sonra her yapı sistemi kitaplığı kullanan kullanarak vcpkg kitaplığı oluşturur. CMake ve (Windows) MSBuild projeleri, tercih edilen, ancak yapma, herhangi bir yapı sistemiyle birlikte desteklenir. Vcpkg yerel makinede belirtilen derleme sistemi bulamazsanız indirir ve yükler.
+Portfile bağımlılıkları belirtirse, vcpkg bunları da indirir ve yükler. İndirmeden sonra, vcpkg, kitaplığın kullandığı yapı sistemini kullanarak kitaplığı oluşturur. CMake ve (Windows üzerinde) MSBuild projeleri tercih edilir, ancak başka bir derleme sistemiyle birlikte desteklenir. Vcpkg, belirtilen yapı sistemini yerel makinede bulamazsa, indirir ve yükler.
 
 ```cmd
 > vcpkg install boost:x86-windows
@@ -81,16 +79,16 @@ The following packages will be built and installed:
 Additional packages (*) will be installed to complete this operation.
 ```
 
-CMAKE projeleri için CMAKE_TOOLCHAIN_FILE kitaplıkları ile kullanılabilir hale getirmek için kullanın. `find_package()`. Örneğin:
+CMAKE projeleri için, kitaplıkları `find_package()`kullanılabilir hale getirmek için CMAKE_TOOLCHAIN_FILE kullanın. Örneğin:
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg\scripts\buildsystems\vcpkg.cmake (Windows)
 ```
 
-## <a name="list-the-libraries-already-installed"></a>Zaten yüklü kitaplıkları Listele
+## <a name="list-the-libraries-already-installed"></a>Zaten yüklü olan kitaplıkları listeleyin
 
-Bazı kitaplıklar yükledikten sonra kullanabileceğiniz **vcpkg listesi** ne olduğunu görmek için:
+Bazı kitaplıkları yükledikten sonra, ne olduğunu görmek için **vcpkg listesini** kullanabilirsiniz:
 
 ```cmd
 > vcpkg list
@@ -103,42 +101,42 @@ websocketpp:x86-windows 0.7.0    Library that implements RFC6455 The WebSocket P
 zlib:x86-windows        1.2.11   A compression library
 ```
 
-## <a name="integrate-with-visual-studio-windows"></a>Visual Studio (Windows) ile tümleştirin
+## <a name="integrate-with-visual-studio-windows"></a>Visual Studio ile tümleştirme (Windows)
 
 ### <a name="per-user"></a>Kullanıcı başına
 
-Çalıştırma **vcpkg tümleştirme yükleme** VC ++ dizinleri yollarını el ile düzenlemek için gerek kalmadan kullanıcı başına temelinde tüm vcpkg başlık dosyaları ve ikili dosyaları bulmak için Visual Studio yapılandırmak için. Birden çok kopyada varsa, bu komutu çalıştırmanız kopya varsayılan konuma haline gelir.
+VC + + Dizin yollarının el ile düzenlenmesine gerek kalmadan, Visual Studio 'Yu her bir kullanıcı için tüm vcpkg üst bilgi dosyalarını ve ikililerini bulacak şekilde yapılandırmak için **vcpkg tümleştirin Install** komutunu çalıştırın. Birden çok klonunuz varsa, bu komutu çalıştırdığınız kopya yeni varsayılan konum olur.
 
-Artık # klasör/üst bilgi yazarak üst bilgileri include ve otomatik tamamlama, yardımcı olur. Kitaplıklar için bağlama veya proje başvurularının eklenmesi için ek adımlar gereklidir. Visual Studio azure depolama cpp üstbilgileri nasıl bulacağını aşağıda gösterilmiştir. vcpkg yerleştirir, üst bilgilerinde **/ yüklü** alt, hedef platforma göre bölümlenir. Dahil etme dosyalarında listesi aşağıdaki diyagramda gösterilmiştir **/ was'da** alt kitaplığı:
+Artık, klasörü/üstbilgiyi yazarak üst bilgileri #include yapabilirsiniz ve otomatik tamamlamayı size yardımcı olur. Kitaplıklar 'e bağlamak veya proje başvuruları eklemek için başka bir adım gerekmez. Aşağıdaki çizimde, Visual Studio 'Nun Azure-Storage-cpp üst bilgilerini nasıl bulduğu gösterilmektedir. vcpkg, üst bilgilerini hedef platforma göre bölümlenmiş **/yüklü** alt klasöre koyar. Aşağıdaki diyagramda, kitaplık için **/was** alt klasöründeki ekleme dosyalarının listesi gösterilmektedir:
 
-![vcpkg IntelliSense tümleştirme](media/vcpkg-intellisense.png "vcpkg ve IntelliSense")
+![vcpkg IntelliSense tümleştirmesi](media/vcpkg-intellisense.png "vcpkg ve IntelliSense")
 
-### <a name="per-project"></a>Proje
+### <a name="per-project"></a>Proje başına
 
-Etkin vcpkg Örneğinizdeki sürümünden farklı bir kitaplık belirli bir sürümünü kullanmanız gerekiyorsa, aşağıdaki adımları izleyin:
+Bir kitaplığın, etkin vcpkg örneğindeki sürümden farklı olan belirli bir sürümünü kullanmanız gerekiyorsa, şu adımları izleyin:
 
-1. Vcpkg yeni bir kopyasını olun
-1. İhtiyacınız olan sürümü almak kitaplığı portfile değiştirme
-1. Çalıştırma **vcpkg yükleme \<kitaplığı >**.
-1. Kullanım **vcpkg tümleştirme proje** bu kitaplığı proje başına temelinde başvuran bir NuGet paketi oluşturmak için.
+1. Vcpkg 'nin yeni bir kopyasını oluşturun
+1. Kitaplığın bağlantı noktası dosyasını, ihtiyacınız olan sürümü alacak şekilde değiştirin
+1. **Vcpkg install \<kitaplığı >** çalıştırın.
+1. Her proje için bu kitaplığa başvuran bir NuGet paketi oluşturmak için **vcpkg tümleştir projesi** kullanın.
 
-## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio kodu (Linux/MacOS) ile tümleştirme
+## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio Code ile tümleştirin (Linux/MacOS)
 
-Çalıştırma **vcpkg tümleştirme yükleme** Visual Studio Code, Linux/Macos'ta vcpkg liste konumu ile yapılandırın ve kaynak dosyaları üzerinde IntelliSense etkinleştirmek için.
+Linux/MacOS üzerinde Visual Studio Code yapılandırmak için **vcpkg tümleştir yüklemesini** çalıştırın ve kaynak dosyalarında IntelliSense 'i etkinleştirin.
 
-## <a name="target-linux-from-windows-via-wsl"></a>Hedef Linux'taki WSL aracılığıyla Windows
+## <a name="target-linux-from-windows-via-wsl"></a>WSL aracılığıyla Windows 'dan Linux 'u hedefleyin
 
-Linux (WSL) için Windows alt sistemi kullanarak bir Windows makineden Linux ikili dosyaları oluşturabilir. Yönergelerini izleyin [Windows 10 WSL ayarlama](/windows/wsl/install-win10)ve onunla yapılandırma [Linux için Visual Studio Uzantısı](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). Tüm yerleşik kitaplıkları hem Windows hem de Linux için aynı klasöre yerleştirin ve hem Windows hem de WSL erişin.
+Linux için Windows alt sistemini (WSL) kullanarak bir Windows makinesinden Linux ikilileri oluşturabilirsiniz. Windows 10 ' da [WSL 'Yi ayarlama](/windows/wsl/install-win10)ve [Linux için Visual Studio uzantısı](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/)ile yapılandırma yönergelerini izleyin. Hem Windows hem de Linux için tüm derleme kitaplıklarınızı aynı klasöre yerleştirebilir ve hem Windows hem de WSL 'den erişebilirsiniz.
 
-## <a name="export_binaries_per_project"></a> Derlenmiş ikili dosyalar ve üst bilgileri verme
+## <a name="export_binaries_per_project"></a>Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
 
-İndirin ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesi, iş yapın ve ardından **vcpkg dışarı aktarma** diğer ekip üyeleriyle kolaylıkla paylaşılabilen bir zip dosyası ikili dosyaları ve üstbilgi ya da (çeşitli biçimlendirme kullanılabilir), bir NuGet paketi oluşturmak için.
+Bir ekibin kitaplıklarını indirmek ve derlemek için gerekli olan herkes verimsiz olabilir. Tek bir takım üyesi bu işi yapabilir ve ardından, diğer ekip üyeleriyle kolayca paylaşılabilen ikili ve üst bilgilerin veya bir NuGet paketinin (kullanılabilir farklı biçimdeki) bir ZIP dosyasını oluşturmak için **vcpkg dışa aktarma** kullanabilirsiniz.
 
-## <a name="updateupgrade-installed-libraries"></a>Yüklü güncelleştirileceğine/yükseltileceğine kitaplıkları
+## <a name="updateupgrade-installed-libraries"></a>Yüklü kitaplıkları güncelleştirme/yükseltme
 
-Genel katalog kitaplıklarının en son sürümlerini ile güncel tutulur. Yerel kitaplıklarınızın güncel olan belirlemek için **vcpkg güncelleştirme**. Bağlantı noktaları koleksiyonunuz Genel Kataloğu'nun en son sürüme güncelleştirmek hazır olduğunuzda, çalıştırma **vcpkg yükseltme** otomatik olarak indirmek ve güncel Kitaplıklarınızı yüklü bir bölümünü veya tamamını yeniden derlemek için komutu.
+Genel Katalog, kitaplıkların en son sürümleriyle güncel tutulur. Yerel kitaplıklarınızdan hangilerinin güncel kalmadığını öğrenmek için **vcpkg güncelleştirmesi**kullanın. Bağlantı noktası koleksiyonunuzu ortak kataloğun en son sürümüne güncelleştirmeye hazır olduğunuzda, güncel olmayan yüklü kitaplıklarınızın tümünü veya tümünü otomatik olarak indirmek ve yeniden derlemek için **vcpkg Upgrade** komutunu çalıştırın.
 
-Varsayılan olarak, **yükseltme** komutu, yalnızca güncel kitaplıkları listeler; bunları yükseltmez. Yükseltmeyi gerçekleştirmek için kullanın **--no-prova** seçeneği.
+Varsayılan olarak, **Upgrade** komutu yalnızca güncel olmayan kitaplıkları listeler; Onları yükseltmez. Yükseltmeyi gerçekleştirmek için **--kuru-Çalıştır** seçeneğini kullanın.
 
 ```cmd
   vcpkg upgrade --no-dry-run
@@ -146,14 +144,14 @@ Varsayılan olarak, **yükseltme** komutu, yalnızca güncel kitaplıkları list
 
 ### <a name="upgrade-options"></a>Yükseltme seçenekleri
 
-- **--no-prova** yükseltin; belirtilmediğinde komutu yalnızca güncel olmayan paketleri listeler.
-- **--Canlı devam eden** biri başarısız olsa bile paketler yüklemeye devam et.
-- **--Üçlü \<t >** nitelenmemiş paketleri için varsayılan Üçlü ayarlayın.
-- **--vcpkg kök \<yolu >** geçerli dizini veya aracı dizin yerine kullanılacak vcpkg dizini belirtin.
+- **--kuru çalıştırma**  Yükseltmeyi gerçekleştirin; belirtilmediğinde, komut yalnızca güncel olmayan paketleri listeler.
+- **--sakla**  Başarısız olsa bile paketleri yüklemeye devam edin.
+- **--üçlü \<t >**  Nitelenmemiş paketler için varsayılan Üçlü değer ayarla ' yı ayarlayın.
+- **--vcpkg-kök \<yolu >**  Geçerli dizin veya araç dizini yerine kullanılacak vcpkg dizinini belirtin.
 
 ### <a name="upgrade-example"></a>Yükseltme örneği
 
-Aşağıdaki örnek, yalnızca belirtilen kitaplıkları sürümüne yükseltme yapmayı gösterir. Bu vcpgk bağımlılıkları gerektiği şekilde otomatik olarak çeker. unutmayın.
+Aşağıdaki örnek, yalnızca belirtilen kitaplıkların nasıl yükseltileceğini gösterir. Vcpgk gerektiği şekilde bağımlılıkları otomatik olarak çekdiğini unutmayın.
 
 ```cmd
 c:\users\satyan\vcpkg> vcpkg upgrade tiny-dnn:x86-windows zlib
@@ -168,67 +166,67 @@ Additional packages (*) will be modified to complete this operation.
 If you are sure you want to rebuild the above packages, run this command with the --no-dry-run option.
 ```
 
-## <a name="contribute-new-libraries"></a>Yeni kitaplıkları katkıda bulunun
+## <a name="contribute-new-libraries"></a>Yeni kitaplıklara katkıda bulunma
 
-Özel bağlantı noktaları koleksiyonunuzda istediğiniz tüm kitaplıkları dahil edebilirsiniz. Genel Katalog için yeni bir kitaplık önermek için bir sorun açın [GitHub vcpkg sorunu sayfa](https://github.com/Microsoft/vcpkg/issues).
+Özel bağlantı noktaları koleksiyonunuzda istediğiniz kitaplıkları dahil edebilirsiniz. Ortak kataloğa yönelik yeni bir kitaplık önermek için [GitHub vcpkg sorun sayfasında](https://github.com/Microsoft/vcpkg/issues)bir sorun açın.
 
-## <a name="remove-a-library"></a>Bir kitaplık Kaldır
+## <a name="remove-a-library"></a>Kitaplığı kaldırma
 
-Tür **vcpkg Kaldır** yüklü bir kitaplığını kaldırmak için. Diğer bir kitaplıklarına bağımlı, komutu yeniden istenir **--recurse**, tüm aşağı akış kitaplıklarının kaldırılması neden olur.
+Yüklü bir kitaplığı kaldırmak için **vcpkg Remove** yazın. Başka herhangi bir kitaplık buna bağımlıysa, tüm aşağı akış kitaplıklarının kaldırılmasına neden olan **--Recurse**komutunu kullanarak komutu yeniden çalıştırmanız istenir.
 
-## <a name="customize-vcpkg"></a>Vcpkg özelleştirme
+## <a name="customize-vcpkg"></a>Vcpkg 'yi özelleştirme
 
-Vcpkg istediğiniz herhangi bir şekilde, bir kopyasını değiştirebilirsiniz. Birden çok vcpkg kopyaları oluşturabilir ve portfiles kitaplıkları belirli sürümlerini edinmek veya komut satırı parametreleri belirtmek için her biri olarak değiştirin. Örneğin, kuruluş, geliştiricilerin bir grup kümesi bağımlılıkları olan yazılımı çalışıyor olabilirsiniz ve başka bir grup farklı olabilir. Vcpkg iki klonlarını ayarlayabilir ve her biri, kitaplıklar ve derleme anahtarlar ve benzeri sürümlerini indirmek için ihtiyaçlarınıza göre değiştirin.
+Vcpkg klonınızı dilediğiniz şekilde değiştirebilirsiniz. Kitaplıkların belirli sürümlerini almak veya komut satırı parametrelerini belirtmek için birden çok vcpkg klonları oluşturabilir ve her birindeki portfiles 'ı değiştirebilirsiniz. Örneğin, bir kuruluşta, bir grup geliştirici, tek bir bağımlılıklar kümesi olan yazılımlar üzerinde çalışıyor olabilir ve başka bir grubun farklı bir kümesi olabilir. İki vcpkg kopyası ayarlayabilir ve bunların her birini, kitaplıkların ve derleme anahtarlarının sürümlerini ve bu şekilde, gereksinimlerinize göre indirmek üzere değiştirebilirsiniz.
 
-## <a name="uninstall-vcpkg"></a>Vcpkg kaldırma
+## <a name="uninstall-vcpkg"></a>Vcpkg 'yi kaldır
 
-Dizin silmeniz yeterlidir.
+Vcpkg dizinini silmeniz yeterlidir. Bu dizinin silinmesi vcpkg dağıtımını kaldırır ve vcpkg 'nin yüklü olduğu tüm kitaplıkları kaldırır.
 
 ## <a name="send-feedback-about-vcpkg"></a>Vcpkg hakkında geri bildirim gönderin
 
-Kullanım **vcpkg kişi--anket** komutu vcpkg hata raporlarını ve özellikler için öneriler de dahil olmak üzere hakkında Microsoft'a geri bildirim göndermek için.
+Hata raporları ve özellikler için öneriler de dahil olmak üzere vcpkg hakkında Microsoft 'a geri bildirim göndermek için **vcpkg iletişim--anket** komutunu kullanın.
 
 ## <a name="the-vcpkg-folder-hierarchy"></a>Vcpkg klasör hiyerarşisi
 
-Tüm vcpkg işlevleri ve verileri "örnek" olarak adlandırılan tek bir dizin hiyerarşisinde müstakil. Kayıt defteri ayarları veya ortam değişkenlerini yoktur. Vcpkg örneklerini herhangi bir sayıda bir makineye sahip olabilir ve birbiriyle karışmaz.
+Tüm vcpkg işlevleri ve verileri, "örnek" olarak adlandırılan tek bir Dizin hiyerarşisinde kendiliğinden bulunur. Kayıt defteri ayarları veya ortam değişkeni yok. Bir makine üzerinde herhangi bir sayıda vcpkg örneğine sahip olabilirsiniz ve birbirini engellemez.
 
-Vcpkg örneği içeriğini şunlardır:
+Vcpkg örneğinin içeriği şunlardır:
 
-- buildtrees--içeren alt her kitaplık içinden yerleşik kaynaklar
+- buildtrees--her kitaplığın oluşturulduğu kaynak alt klasörlerini içerir
 - docs--belgeler ve örnekler
-- indirmeler--indirilen araçları ya da kaynakları ön belleğe alınmış kopyalarını. yükleme komutunu çalıştırdığınızda vcpkg burada ilk arar.
-- yüklü--üst bilgiler ve ikili dosyaları yüklü her kitaplığı içerir. Visual Studio ile tümleştirdiğinizde, aslında bu söylüyoruz bu klasör, arama yollarını ekleyin.
-- paketleri--iç arasında Hazırlama klasörü yükler.
-- bağlantı noktaları--her kitaplık Kataloğu, sürümü ve indirmek üzere nerede açıklayan dosyaları. Gerekirse kendi bağlantı noktaları ekleyebilirsiniz.
-- betikleri--vcpkg tarafından kullanılan betikler (cmake, powershell).
-- toolsrc--vcpkg ve ilgili bileşenler için C++ kaynak kodu
-- triplets--her desteklenen hedef Platformu (örneğin, windows x86 veya x64 uwp) için ayarları içerir.
+- İndirmeler--indirilen araçların veya kaynakların önbelleğe alınmış kopyaları. vcpkg, Install komutunu çalıştırdığınızda önce burada arama yapar.
+- yüklü--yüklü olan her kitaplığın üst bilgilerini ve ikili dosyalarını Içerir. Visual Studio ile tümleştirdiğinizde, temelde bu klasörü arama yollarına eklemesini söylemiş olursunuz.
+- paketler--yüklemeler arasında hazırlama için Iç klasör.
+- bağlantı noktaları--katalogdaki her kitaplığı, sürümünü ve nereden indirileceği dosyaları. Gerekirse, kendi bağlantı noktalarınızı ekleyebilirsiniz.
+- betikler--vcpkg tarafından kullanılan betikler (CMake, PowerShell).
+- toolsrc-- C++ vcpkg ve ilgili bileşenler için kaynak kodu
+- Üçlü izin--desteklenen her bir hedef platformun (örneğin, x86-Windows veya x64-UWP) ayarlarını Içerir.
 
 ## <a name="command-line-reference"></a>Komut satırı başvurusu
 
 |Komut|Açıklama|
 |---------|---------|
-|**vcpkg arama [yol]**|Paketleri yüklemek kullanılabilir Ara|
-|**vcpkg yükleme \<pkg >...**|Paket yükleme|
-|**vcpkg kaldırmak \<pkg >...**|Bir paketi Kaldır|
-|**vcpkg Kaldır--güncel değil**|Güncel olmayan tüm paketleri kaldırın|
-|**vcpkg listesi**|Kurulu paketleri listelemek|
-|**vcpkg güncelleştirme**|Güncelleştirme paketleri listesini görüntüle|
-|**vcpkg yükseltme**|Güncel olmayan tüm paketleri yeniden oluşturun|
-|**vcpkg karma \<Dosya > [algoritma]**|Belirli bir algoritma tarafından dosya karma, SHA512 varsayılan|
-|**vcpkg yükleme tümleştirin**|Yüklü olduğundan kullanıcı genelinde kullanılabilir paketler. İlk kullanımda yönetici ayrıcalıkları gerektirmez|
-|**vcpkg tümleştirme Kaldır**|Kullanıcı genelinde tümleştirmeyi Kaldır|
-|**vcpkg proje tümleştirin**|VS proje kullanımları için başvuruda bulunan bir NuGet paketi oluştur|
-|**vcpkg dışarı aktarma \<pkg >... [iyileştirilmiş]...**|Bir paketi Dışarı Aktar|
-|**vcpkg düzenleme \<pkg >**|(Kullanımlar % Düzenleyicisi %, varsayılan 'code') düzenlemek için bir bağlantı noktası açık|
-|**vcpkg oluşturma \<pkg > \<URL'si > [archivename]**|Yeni bir paket oluşturun|
-|**vcpkg önbellek**|Paketleri listesi önbelleğe alınan derlenmiş|
+|**vcpkg araması [Pat]**|Yüklemek için kullanılabilir paketleri ara|
+|**vcpkg \<pkg > yüklemesi...**|Paket yükler|
+|**vcpkg \<pkg > Kaldır...**|Bir paketi kaldırma|
+|**vcpkg kaldır--güncel değil**|Tüm güncel paketleri kaldır|
+|**vcpkg listesi**|Yüklü paketleri Listele|
+|**vcpkg güncelleştirmesi**|Güncelleştirme için paketlerin listesini görüntüle|
+|**vcpkg yükseltmesi**|Tüm eski paketleri yeniden derle|
+|**vcpkg karma \<dosyası > [alg]**|Belirli bir algoritmayla bir dosyayı karma, varsayılan SHA512 olur|
+|**vcpkg tümleştir yüklemesi**|Yüklü paketleri Kullanıcı genelinde kullanılabilir hale getirin. İlk kullanımda yönetici ayrıcalıkları gerektirir|
+|**vcpkg tümleştir kaldır**|Kullanıcı genelinde tümleştirmeyi kaldırma|
+|**vcpkg tümleştir projesi**|Tek tek VS projesi kullanımı için başvuran bir NuGet paketi oluşturma|
+|**vcpkg \<pkg > dışarı aktar... [opt]...**|Paketi dışarı aktarma|
+|**vcpkg düzenleme \<paket >**|Düzenleme için bir bağlantı noktası açın (% EDITOR%, varsayılan ' Code ' kullanır)|
+|**vcpkg Create \<pkg > \<URL > [archivename]**|Yeni bir paket oluştur|
+|**vcpkg önbelleği**|Önbelleğe alınmış derlenmiş paketleri Listele|
 |**vcpkg sürümü**|Sürüm bilgilerini görüntüle|
-|**vcpkg kişi--anketi**|Geri bildirim göndermek için iletişim bilgilerini görüntüleme.|
+|**vcpkg ilgili kişisi--anket**|Geri bildirim göndermek için kişi bilgilerini görüntüleyin.|
 
 ### <a name="options"></a>Seçenekler
 
 |Seçenek|Açıklama|
 |---------|---------|
-|**--Üçlü \<t >**|Hedef mimari Üçlü belirtin. (varsayılan: `%VCPKG_DEFAULT_TRIPLET%`, ayrıca bkz: **vcpkg Yardım Üçlü**)|
-|**--vcpkg kök \<yolu >**|Vcpkg kök dizini belirtin (varsayılan: `%VCPKG_ROOT%`)|
+|**--Üçlü \<t >**|Hedef mimari, Üçlü mimari belirtin. (varsayılan: `%VCPKG_DEFAULT_TRIPLET%`, Ayrıca bkz. **vcpkg yardım Üçlü izin**)|
+|**--vcpkg-kök \<yolu >**|Vcpkg kök dizinini belirtin (varsayılan: `%VCPKG_ROOT%`)|

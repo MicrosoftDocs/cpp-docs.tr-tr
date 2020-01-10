@@ -3,14 +3,12 @@ title: Visual C++ Örnekleri
 ms.date: 11/30/2017
 ms.technology: cpp-language
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: 10e5ca4648f88cc41e0f928272224a21d9c66a0f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6db6c21d6bc6772eb05642db1eca95bfe36eba28
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512988"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793862"
 ---
 # <a name="visual-c-samples"></a>Visual C++ Örnekleri
 

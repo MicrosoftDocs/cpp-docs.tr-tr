@@ -1,21 +1,20 @@
 ---
 title: Visual Studio’da platformlar arası C++ projeleri oluşturma
 description: Hem Linux hem de Windows 'u hedefleyen Visual Studio 'da C++ açık kaynaklı bir CMake projesini ayarlama, derleme ve hata ayıklama.
-author: mikeblome
 ms.topic: tutorial
-ms.date: 11/08/2019
-ms.openlocfilehash: 269c9e88133a492f66df7c7f81ab35424aff125d
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.date: 01/08/2020
+ms.openlocfilehash: 83d71d3078e892a51aef159b225fecec2b581f20
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303247"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791769"
 ---
 # <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>Öğretici: Visual C++ Studio 'da platformlar arası projeler oluşturma
 
 Visual Studio C ve C++ geliştirme artık yalnızca Windows için değildir. Bu öğreticide, Windows ve Linux 'ta platformlar C++ arası geliştirme Için Visual Studio 'nun nasıl kullanılacağı gösterilmektedir. CMake tabanlıdır, bu nedenle Visual Studio projeleri oluşturmanız veya oluşturmanız gerekmez. CMakeLists. txt dosyasını içeren bir klasörü açtığınızda, Visual Studio IntelliSense ve derleme ayarlarını otomatik olarak yapılandırır. Kodunuzu Windows 'da yerel olarak düzenleyebilir, oluşturabilir ve hata ayıklamaya başlayabilirsiniz. Ardından, yapılandırmanızı Linux üzerinde aynı olacak şekilde değiştirin, hepsi Visual Studio içinden.
 
-Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 
 > [!div class="checklist"]
 > * GitHub 'dan açık kaynaklı bir CMake projesini kopyalama
@@ -24,7 +23,7 @@ Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 > * Linux makinesine bağlantı ekleme
 > * Linux 'ta aynı hedefte derleme ve hata ayıklama
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 * Platformlar arası C++ geliştirme Için Visual Studio 'yu ayarlama
   * İlk olarak, [Visual Studio 'yu yükledikten](https://visualstudio.microsoft.com/vs/) sonra ve **iş C++ yükleriyle Linux ile geliştirme** **ile C++ masaüstü geliştirmeyi** seçin. Bu minimum yüklemesi yalnızca 3 GB 'dir. Yükleme hızınıza bağlı olarak, yükleme 10 dakikadan uzun sürmemelidir.
@@ -44,14 +43,14 @@ Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
     chmod +x cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh
     ```
 
-  * Betiği `-–help`ile çalıştırmaya yönelik seçenekleri görebilirsiniz. Visual Studio 'nun CMake 'e baktığı varsayılan konum olduğundan, **/usr/local** yoluna yüklemeyi belirtmek için `–prefix` seçeneğini kullanmanızı öneririz. Aşağıdaki örnekte, Linux-x86_64 betiği gösterilmektedir. Farklı bir hedef platform kullanıyorsanız bunu gerektiği gibi değiştirin.
+  * Betiği `-–help`ile çalıştırmaya yönelik seçenekleri görebilirsiniz. **/Usr/bin** , Visual Studio 'Nun CMake 'e baktığı varsayılan konum olduğundan, **/usr** yolunda yüklemeyi belirtmek için `–prefix` seçeneğini kullanmanızı öneririz. Aşağıdaki örnekte, Linux-x86_64 betiği gösterilmektedir. Farklı bir hedef platform kullanıyorsanız bunu gerektiği gibi değiştirin.
 
     ```cmd
-    sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr/local
+    sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr
     ```
 
 * Windows makinenizde yüklü olan Windows için git.
-* Bir GitHub hesabı.
+* GitHub hesabı.
 
 ## <a name="clone-an-open-source-cmake-project-from-github"></a>GitHub 'dan açık kaynaklı bir CMake projesini kopyalama
 
@@ -117,7 +116,7 @@ Bu adımda, madde Işareti fizik kitaplığını gösteren örnek bir programda 
   
 1. **Çözüm Gezgini**' de AppBasicExampleGui ' ı seçin ve genişletin.
 
-1. `BasicExample.cpp`dosyasını açın.
+1. `BasicExample.cpp` dosyasını açın.
 
 1. Çalışan uygulamaya tıkladığınızda isabet alan bir kesme noktası ayarlayın. Click olayı bir yardımcı sınıf içindeki bir yöntemde işlenir. Hızlıca almak için:
 

@@ -5,14 +5,12 @@ ms.date: 07/02/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: ea047aca90b03179c0a39cb653e0b9bc08306c64
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 74e1b34549a8e8d0f1e22e6f40aacbd4429b272f
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626210"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793802"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -21,7 +19,7 @@ ms.locfileid: "73626210"
 >
 > Bir programı çalıştırabilmeniz için bir Visual C++ yeniden dağıtılabilir paket arıyorsanız, [Microsoft İndirme Merkezi](https://www.microsoft.com/download/) ' ne gidin ve arama kutusuna  **C++ görsel** girin.
 
-Genellikle Visual C++ C++ veya MSVC olarak kısaltan Microsoft Visual Studio, Windows üzerinde Visual Studio C++'nun bir parçası olarak sunulan, C ve derleme dili geliştirme araçları ve kitaplıklarının adıdır. Bu araçlar ve kitaplıklar, Windows, Linux, Android ve iOS üzerinde çalışan platformlar arası kitaplıkları ve uygulamaları, ayrıca .NET kullanan yönetilen uygulamaları ve kitaplıkları oluşturmanızı sağlayan Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve uygulamalar oluşturmanıza olanak tanır. Çerçevenin. Basit konsol uygulamalarından herhangi C++ bir şeyi, cihaz sürücülerinden ve işletim sistemi bileşenlerinden mobil cihazlar için platformlar arası oyunlara ve en düşük IoT cihazlarından Windows Masaüstü için en karmaşık ve karmaşık uygulamalara yazmak üzere Visual ' i kullanabilirsiniz. Azure bulutunda çok sunuculu yüksek performanslı bilgi işlem.
+Genellikle Visual C++ C++ veya MSVC olarak kısaltan Microsoft Visual Studio, Windows üzerinde Visual Studio C++'nun bir parçası olarak sunulan, C ve derleme dili geliştirme araçları ve kitaplıklarının adıdır. Bu araçlar ve kitaplıklar, Windows, Linux, Android ve iOS üzerinde çalışan platformlar arası kitaplıkları ve uygulamaları, ayrıca .NET kullanan yönetilen uygulamaları ve kitaplıkları oluşturmanızı sağlayan Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve uygulamalar oluşturmanıza olanak tanır. Çerçevenin. Basit konsol uygulamalarından herhangi C++ bir şeyi, cihaz sürücülerinden ve işletim sistemi bileşenlerinden mobil cihazlara yönelik platformlar arası oyunlara ve en düşük IoT cihazlarından Azure bulutundaki çok sunuculu yüksek performanslı bilgi işlem cihazlarına yazmak için görsel ' i kullanabilirsiniz.
 
 Visual Studio 2015, 2017 ve 2019 yan yana yüklenebilir. Visual Studio 2015 (v140) ve Visual Studio 2017 (v141) araç takımını kullanarak programları düzenlemek ve derlemek için Visual Studio 2019 (derleyici araç takımı v142) kullanabilirsiniz.
 
@@ -87,7 +85,7 @@ Projeler ile C++ Visual Studio hata ayıklayıcısını kullanın.
 [C/C++ Overview için kod analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
 Statik analiz yapmak için SAL C++ ek açıklamalarını veya temel kılavuz denetleyicilerini kullanın.
 
-[Visual Studio 'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
+[Visual Studio'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
 , Google Test, Boost. test veya CTest için C++Microsoft birim testi çerçevesini kullanarak birim testleri oluşturun.
 
 ## <a name="write-applications-in-c"></a>Uygulamaları yazmaC++

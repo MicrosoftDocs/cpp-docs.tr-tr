@@ -6,14 +6,12 @@ helpviewer_keywords:
 - Visual C++, platforms supported
 - platforms [C++]
 ms.assetid: 0d893056-4008-411a-b3d1-5f57fd7da95c
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: eb2a258a73e69ef032576f5b42e8071fd27439a1
-ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
+ms.openlocfilehash: 049b28d23c7f5f5f023f3b2964577b75992c2998
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810606"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793836"
 ---
 # <a name="supported-platforms-visual-c"></a>Desteklenen Platformlar (Visual C++)
 
