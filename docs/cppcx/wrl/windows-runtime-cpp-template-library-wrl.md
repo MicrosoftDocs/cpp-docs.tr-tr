@@ -3,12 +3,12 @@ title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 7a7b37a32ebaa0bb6ad71c8f710300256589388d
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: 41b8b45f89e94b8de2ddcb9c87bfd72122db8e1a
+ms.sourcegitcommit: 27d9db019f6d84c94de9e6aff0170d918cee6738
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541197"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75676944"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -147,5 +147,5 @@ Windows Çalışma Zamanı C++ şablon kitaplığı, birkaç temel kavramı tems
 |-|-|
 |[Kategoriye göre anahtar API 'Leri](key-wrl-apis-by-category.md)|Birincil Windows Çalışma Zamanı C++ şablon kitaplık türlerini, işlevleri ve makroları vurgular.|
 |[Başvuru](wrl-reference.md)|Windows Çalışma Zamanı C++ şablon kitaplığı için başvuru bilgilerini içerir.|
-|[Hızlı başvuru C++/CX)](../../cppcx/quick-reference-c-cx.md)|Windows Çalışma Zamanı destekleyen C++/CX özelliklerini kısaca açıklar.|
+|[Hızlı Başvuru (C++/CX)](../../cppcx/quick-reference-c-cx.md)|Windows Çalışma Zamanı destekleyen C++/CX özelliklerini kısaca açıklar.|
 |[Windows Çalışma Zamanı bileşenlerini görsel olarak kullanmaC++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Temel bir Windows Çalışma Zamanı bileşeni C++oluşturmak için/CX 'in nasıl kullanılacağını gösterir.|

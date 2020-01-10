@@ -20,46 +20,46 @@ helpviewer_keywords:
 - C++ COM Interop
 - .NET [C++], porting C++ native to
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
-ms.openlocfilehash: aaa07373b7dd22807290ceefa9197b4013c61fe5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d26fbefd87b3ba6d6ca7e183be78608777f383b5
+ms.sourcegitcommit: 27d9db019f6d84c94de9e6aff0170d918cee6738
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384523"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75676931"
 ---
 # <a name="using-c-interop-implicit-pinvoke"></a>C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)
 
-Diğer .NET dilleri farklı olarak, Visual C++ yönetilen ve yönetilmeyen kod aynı uygulama ve hatta aynı dosyaya verir birlikte çalışabilirlik desteği vardır (ile [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmalar). Bu uygulamanın kalan bozmadan uygulamalara Visual C++ .NET işlevselliğini tümleştirmek Visual C++ geliştiricileri sağlar.
+Diğer .NET dillerinin aksine, Visual C++ , yönetilen ve yönetilmeyen kodun aynı uygulamada ve hatta aynı dosyada ( [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmalar ile) var olmasına olanak tanıyan birlikte çalışabilirlik desteğine sahiptir. Bu, Visual C++ geliştiricilerin, uygulamanın geri kalanını etkilemeden mevcut görsel C++ uygulamalarla .net işlevselliğini tümleştirmelerine olanak sağlar.
 
-Yönetilmeyen işlevleri kullanarak bir yönetilen derlenecek de çağırabilirsiniz [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+Ayrıca [, dllexport, dllimport](../cpp/dllexport-dllimport.md)kullanarak yönetilen bir compiland öğesinden yönetilmeyen işlevleri çağırabilirsiniz.
 
-İşlev parametreleri nasıl sıralanacağını ve DllImportAttribute açıkça çağrıldığında belirtilen bir ayrıntıları hiçbirini belirtmek gerekmez, örtük PInvoke yararlı olur.
+Örtük PInvoke, işlev parametrelerinin nasıl sıralanacaktır veya DllImportAttribute açıkça çağrılırken belirtime diğer ayrıntıların herhangi birini belirtmeniz gerekmiyorsa yararlıdır.
 
-Visual C++ yönetilen ve yönetilmeyen işlevleri çalışmak iki yol sunar:
+Visual C++ , yönetilen ve yönetilmeyen işlevlerin birlikte çalışabilme için iki yol sunar:
 
 - [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
 
-Açık PInvoke, .NET Framework tarafından desteklenir ve çoğu .NET dillerinde kullanılabilir. Ancak adından da anlaşılacağı gibi C++ birlikte çalışması için Visual C++ özgüdür.
+Açık PInvoke .NET Framework tarafından desteklenir ve çoğu .NET dilinde kullanılabilir. Ancak, adından da anlaşılacağı gibi C++ , birlikte çalışma, görsele C++özgüdür.
 
 ## <a name="c-interop"></a>C++ Birlikte Çalışma
 
-C++ birlikte çalışması üzerinde açık PInvoke önerilir, bu, daha iyi tür güvenliği sağlar, uygulamak genellikle daha az sıkıcı, yönetilmeyen API değiştirilir ve ile mümkün olmayan performans geliştirmeleri olası açık hale getirir, daha forgiving olur çünkü PInvoke. Bununla birlikte, C++ birlikte çalışması yönetilmeyen kaynak kodu yoksa mümkün değildir.
+C++Birlikte çalışma daha iyi tür güvenliği sağlar ve genellikle uygulamak daha az sıkıcı olur. Ancak, C++ yönetilmeyen kaynak kodu yoksa ve platformlar arası projeler için birlikte çalışabilirlik bir seçenek değildir.
 
 ## <a name="c-com-interop"></a>C++ COM Birlikte Çalışma
 
-COM bileşenleri ile birlikte çalışma için söz konusu olduğunda, Visual C++ tarafından desteklenen birlikte çalışabilirlik özellikleri diğer .NET dilleri belirli bir avantajı sunar. .NET Framework'ün kısıtlamaları sınırlı kalmak yerine [Tlbimp.exe (tür kitaplığı içeri Aktarıcı)](/dotnet/framework/tools/tlbimp-exe-type-library-importer), veri türleri ve her COM arayüzünün her üyesine zorunlu açığa için sınırlı destek gibi C++ birlikte çalışması COM sağlar. adresindeki erişilecek bileşenleri olur ve ayrı birlikte çalışma derlemelerini gerektirmez. Visual Basic aksine ve C#, Visual C++, normal COM mekanizmalarını kullanarak doğrudan COM nesneleri kullanabilirsiniz (gibi **CoCreateInstance** ve **QueryInterface**). Bu, derleyicinin otomatik olarak yönetilen, yönetilmeyen işlevleri taşıma ve yeniden için geçiş kodu eklemek neden C++ birlikte çalışabilirlik özellikleri nedeniyle mümkündür.
+Visual C++ tarafından desteklenen birlikte çalışabilirlik ÖZELLIKLERI, com bileşenleriyle birlikte çalışmaya yönelik olarak daha fazla .net dili üzerinden özel bir avantaj sunar. Veri türleri için sınırlı destek ve her COM arabiriminin her üyesinin zorunlu pozlaması gibi .NET Framework [Tlbimp. exe (tür kitaplığı alma)](/dotnet/framework/tools/tlbimp-exe-type-library-importer)kısıtlamalarına sınırlı olmak yerine, C++ birlikte çalışabilirlik com bileşenlerine çalışır ve ayrı birlikte çalışma derlemeleri gerektirmez. Visual Basic ve C#farklı olarak, C++ VISUAL com nesnelerini normal com mekanizmalarını (örneğin, **Cocreateınstance** ve **QueryInterface**) kullanarak doğrudan kullanabilir. Bu, derleyicinin yönetilen ve C++ yönetilmeyen işlevlere geçiş kodunu otomatik olarak eklemesini ve yeniden geri dönmesi için geçiş kodunu otomatik olarak eklemesine neden olan birlikte çalışma özellikleri nedeniyle mümkündür.
 
-C++ birlikte çalışması kullanarak COM bileşenlerini normalde kullanılan veya C++ sınıfları içinde sarmalanmış olarak kullanılabilir. Bu sarmalayıcı sınıflar olarak adlandırılan özel çalışma zamanı aranabilir sarmalayıcılarını veya CRCWs ve COM doğrudan uygulama kodu kullanarak iki avantajları vardır:
+Birlikte C++ çalışma kullanarak com bileşenleri, normalde kullanıldığı veya sınıfların içine C++ sarmalanabileceği için kullanılabilir. Bu sarmalayıcı sınıflar, özel çalışma zamanı çağrılabilir sarmalayıcılar veya CRCWs olarak adlandırılır ve COM 'u doğrudan uygulama kodunda kullanmanın iki avantajı vardır:
 
-- Oluşturulan sınıf, Visual C++ dışındaki dillerde kullanılabilir.
+- Elde edilen sınıf, görsel C++dışındaki dillerden kullanılabilir.
 
-- COM arabirimi ayrıntılarını yönetilen istemci kodundan gizlenebilir. Yerel türler yerine .NET veri türleri kullanılabilir ve verileri hazırlama ayrıntılarını içinde CRCW şeffaf bir şekilde gerçekleştirilebilir.
+- COM arabiriminin ayrıntıları yönetilen istemci kodundan gizlenebilir. .NET veri türleri yerel türlerin yerine kullanılabilir ve veri hazırlama ayrıntıları CRCW içinde saydam bir şekilde gerçekleştirilebilir.
 
-COM doğrudan veya bir CRCW aracılığıyla kullanılıp kullanılmamasına bakılmaksızın, basit bir blok halinde kopyalanabilir türler dışındaki bağımsız değişken türleri sıralanması gerekir.
+COM 'un doğrudan mi yoksa bir CRCW aracılığıyla mı kullanıldığı bağımsız değişken türleri, blittable türlerin sıralanması gerekir.
 
-## <a name="blittable-types"></a>Blok halinde kopyalanabilir türler
+## <a name="blittable-types"></a>Blittable türleri
 
-Basit, iç türleri kullanan yönetilmeyen API için (bkz [blok halinde kopyalanabilir ve örnekteki](/dotnet/framework/interop/blittable-and-non-blittable-types)), özel kodlama bu veri türlerini bellekte aynı gösterimi vardır, ancak daha karmaşık veri türleri gerektirir gereklidir. açık veri hazırlama. Bir örnek için bkz [nasıl yapılır: Yönetilen Koddan PInvoke kullanarak yerel DLL'leri Çağırma](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).
+Basit, iç türler (bkz. [blittable ve blittable olmayan türler](/dotnet/framework/interop/blittable-and-non-blittable-types)) kullanan yönetilmeyen API 'ler için, bu veri türleri bellekte aynı gösterimine sahip olduğu halde daha karmaşık veri türleri açık veri hazırlama gerektirdiğinden özel bir kodlama gerekmez. Bir örnek için bkz. [nasıl yapılır: yönetilen koddan PInvoke kullanarak yerel dll 'Leri çağırma](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).
 
 ## <a name="example"></a>Örnek
 
@@ -93,25 +93,25 @@ Done
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Hazırlama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Unicode Dizelerini Hazırlama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Hazırlama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Hazırlama](../dotnet/how-to-marshal-structures-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Sıralama](../dotnet/how-to-marshal-structures-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Hazırlama](../dotnet/how-to-marshal-arrays-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama](../dotnet/how-to-marshal-arrays-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Hazırlama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Eklenmiş İşaretçileri Hazırlama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)
 
 - [Nasıl yapılır: Bir System::String'deki Karakterlere Erişme](../dotnet/how-to-access-characters-in-a-system-string.md)
 
 - [Nasıl yapılır: char * Dizesini System::Byte Dizisine Dönüştürme](../dotnet/how-to-convert-char-star-string-to-system-byte-array.md)
 
-- [Nasıl yapılır: System:: String'i wchar_t * veya char olarak dönüştürme\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)
+- [Nasıl yapılır: System:: String 'i wchar_t * veya char\* dönüştürme](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)
 
 - [Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme](../dotnet/how-to-convert-system-string-to-standard-string.md)
 
@@ -123,27 +123,27 @@ Done
 
 - [Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme](../dotnet/how-to-modify-reference-class-in-a-native-function.md)
 
-- [Nasıl yapılır: Resmin Yerel mi yoksa CLR mi Olduğunu Belirleme](../dotnet/how-to-determine-if-an-image-is-native-or-clr.md)
+- [Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme](../dotnet/how-to-determine-if-an-image-is-native-or-clr.md)
 
-- [Nasıl yapılır: Yerel DLL'yi Genel Derleme Önbelleğine Ekleme](../dotnet/how-to-add-native-dll-to-global-assembly-cache.md)
+- [Nasıl yapılır: Yerel DLL'i Genel Derleme Önbelleğine Ekleme](../dotnet/how-to-add-native-dll-to-global-assembly-cache.md)
 
 - [Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma](../dotnet/how-to-hold-reference-to-value-type-in-native-type.md)
 
 - [Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma](../dotnet/how-to-hold-object-reference-in-unmanaged-memory.md)
 
-- [Nasıl yapılır: / CLR derlemesini algılama](../dotnet/how-to-detect-clr-compilation.md)
+- [Nasıl yapılır:/clr derlemesini algılama](../dotnet/how-to-detect-clr-compilation.md)
 
 - [Nasıl yapılır: System::Guid ve GUID Arasında Dönüştürme](../dotnet/how-to-convert-between-system-guid-and-guid.md)
 
-- [Nasıl yapılır: Bir out Parametresi Belirtme](../dotnet/how-to-specify-an-out-parameter.md)
+- [Nasıl yapılır: Bir out Parametresini Belirleme](../dotnet/how-to-specify-an-out-parameter.md)
 
-- [Nasıl yapılır: Bir/CLR derlemesinde yerel tür kullanma](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)
+- [Nasıl yapılır:/clr derlemesinde yerel tür kullanma](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)
 
 - [Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme](../dotnet/how-to-declare-handles-in-native-types.md)
 
 - [Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
-Birlikte çalışma bir senaryoda kullanma hakkında daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../extensions/delegate-cpp-component-extensions.md).
+Birlikte çalışabilirlik senaryosunda temsilciler kullanma hakkında bilgi için bkz. [Temsilci (C++ bileşen uzantıları)](../extensions/delegate-cpp-component-extensions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

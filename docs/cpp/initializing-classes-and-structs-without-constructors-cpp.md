@@ -3,12 +3,12 @@ title: Sınıflar, yapılar ve birleşimler için küme ayracı başlatma
 description: Herhangi bir C++ sınıf, yapı veya birleşim ile ayraç başlatma kullanın
 ms.date: 11/19/2019
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-ms.openlocfilehash: c746c6e4c17e5a55475d70f6dc3d927088af579f
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: a2c9db4572b0dde94c42ec6768a0f3bed7766a96
+ms.sourcegitcommit: 15677b0e4d2518847ce59b158990b25c4077e565
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683002"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75652630"
 ---
 # <a name="brace-initialization"></a>Küme ayracı başlatma
 
@@ -136,6 +136,8 @@ kr->add_d({ 4.5 });
 return { 4.5 };
 ```
 
+**/Std: c++ 17** modunda, boş küme ayracı başlatması kuralları biraz daha kısıtlayıcıdır. Bkz. [türetilmiş oluşturucular ve genişletilmiş toplu başlatma](constructors-cpp.md#extended_aggregate).
+
 ## <a name="initializer_list-constructors"></a>initializer_list oluşturucular
 
 [Initializer_list sınıfı](../standard-library/initializer-list-class.md) , bir oluşturucuda ve diğer bağlamlarda kullanılabilen, belirtilen bir türün nesne listesini temsil eder. Küme ayracı başlatma kullanarak bir initializer_list oluşturabilirsiniz:
@@ -162,7 +164,7 @@ Standart Kitaplık kapsayıcı sınıfları ve ayrıca `string`, `wstring`ve `re
 vector<int> v1{ 9, 10, 11 };
 map<int, string> m1{ {1, "a"}, {2, "b"} };
 string s{ 'a', 'b', 'c' };
-regex rgx{'x', 'y', 'z'};
+regex rgx{ 'x', 'y', 'z' };
 ```
 
 
