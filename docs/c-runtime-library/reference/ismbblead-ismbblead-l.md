@@ -1,6 +1,7 @@
 ---
 title: _ismbblead, _ismbblead_l
-ms.date: 11/04/2016
+description: Microsoft C çalışma zamanı kitaplığı (CRT) _ismbblead ve _ismbblead_l işlevlerini açıklar.
+ms.date: 01/08/2020
 api_name:
 - _ismbblead_l
 - _ismbblead
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - ismbblead_l function
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
-ms.openlocfilehash: c0f9ec748a86d5d1413cf4f881234d786c2a2d78
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 6a7bb992eeeb9c66a7cbdea0ed34cf797d374617
+ms.sourcegitcommit: 7bd3567fc6a0e7124aab51cad63bbdb44a99a848
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954060"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755044"
 ---
 # <a name="_ismbblead-_ismbblead_l"></a>_ismbblead, _ismbblead_l
 
@@ -60,13 +61,13 @@ int _ismbblead_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
+*c*\
 Sınanacak tamsayı.
 
-*ayarlar*<br/>
+*yerel ayar*\
 Kullanılacak yerel ayar.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Tamsayı *c* , çok baytlı bir karakterin ilk baytı ise sıfır dışında bir değer döndürür.
 
@@ -74,26 +75,31 @@ Tamsayı *c* , çok baytlı bir karakterin ilk baytı ise sıfır dışında bir
 
 Çok baytlı karakterler bir ön bayt ve sonrasında sondaki bir bayt oluşur. Ön baytlar, belirli bir karakter kümesi için belirli bir aralıkta olacak şekilde ayırt edilir. Örneğin, yalnızca kod sayfası 932 ' de, 1.0x9F ve 0xE0-0xFC içindeki ön baytlar arasındadır.
 
-**_ismbblider** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbblead_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_ismbblead** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbblead_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+Yerel ayar UTF-8 olduğunda **_ismbblead** ve **_ismbblead_l** her zaman, *c* 'nin bir ön bayt olup olmadığı her zaman 0 (yanlış) döndürür.
+
+**_ismbblead** ve **_Ismbblead_l** , standart C kitaplığının bir parçası değil, Microsoft 'a özgüdür. Bunları, taşınabilir kod istediğiniz yerde kullanmanız önerilmez. Standart C uyumluluğu için bunun yerine **mbrlen** kullanın.
+
+### <a name="generic-text-routine-mappings"></a>Genel metin rutin eşlemeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istlider**|Her zaman yanlış döndürür|**_ismbblider**|Her zaman yanlış döndürür|
+|**_istlead**|Her zaman yanlış döndürür|**_ismbblead**|Her zaman yanlış döndürür|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_ismbblider**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
-|**_ismbblead_l**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
+|**_ismbblead**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limitleri. h >, \<Stdlib. h >|
+|**_ismbblead_l**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limitleri. h >, \<Stdlib. h >|
 
-\*Test koşullarına yönelik bildirim sabitleri için.
+test koşulları için bildirim sabitleri Için \*.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)\
+[_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)\
+[mbrlen](mbrlen.md)

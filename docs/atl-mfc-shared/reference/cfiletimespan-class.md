@@ -1,6 +1,6 @@
 ---
 title: CFileTimeSpan sınıfı
-ms.date: 10/18/2018
+ms.date: 01/06/2020
 f1_keywords:
 - CFileTimeSpan
 - ATLTIME/ATL::CFileTimeSpan
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - shared classes, CFileTimeSpan
 - CFileTimeSpan class
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-ms.openlocfilehash: f9bb42ba4c142f671a83dcfa7e99cff940fff047
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9220ed8373e78db727b43ecb59880dcfbcc98f96
+ms.sourcegitcommit: 7bd3567fc6a0e7124aab51cad63bbdb44a99a848
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491286"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755057"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan sınıfı
 
@@ -24,44 +24,44 @@ Bu sınıf, bir dosyayla ilişkili göreli tarih ve saat değerlerini yönetmek 
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class CFileTimeSpan
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CFileTimeSpan:: CFileTimeSpan](#cfiletimespan)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CFileTimeSpan:: GetTimeSpan](#gettimespan)|`CFileTimeSpan` Nesneden zaman aralığını almak için bu yöntemi çağırın.|
-|[CFileTimeSpan:: SetTimeSpan](#settimespan)|`CFileTimeSpan` Nesnenin zaman aralığını ayarlamak için bu yöntemi çağırın.|
+|[CFileTimeSpan:: GetTimeSpan](#gettimespan)|`CFileTimeSpan` nesnesinden zaman aralığını almak için bu yöntemi çağırın.|
+|[CFileTimeSpan:: SetTimeSpan](#settimespan)|`CFileTimeSpan` nesnesinin zaman aralığını ayarlamak için bu yöntemi çağırın.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Ortak işleçler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CFileTimeSpan:: operator-](#operator_-)|Bir `CFileTimeSpan` nesne üzerinde çıkarma gerçekleştirir.|
-|[CFileTimeSpan:: operator! =](#operator_neq)|Eşitsizlik için `CFileTimeSpan` iki nesneyi karşılaştırır.|
-|[CFileTimeSpan:: operator +](#operator_add)|Bir `CFileTimeSpan` nesnesine ekleme gerçekleştirir.|
-|[CFileTimeSpan:: operator + =](#operator_add_eq)|Bir `CFileTimeSpan` nesnesine ekleme gerçekleştirir ve sonucu geçerli nesneye atar.|
-|[CFileTimeSpan:: işleci&lt;](#operator_lt)|, Daha `CFileTimeSpan` az anlamak için iki nesneyi karşılaştırır.|
-|[CFileTimeSpan:: işleci&lt;=](#operator_lt_eq)|, Eşitlik `CFileTimeSpan` veya daha küçük bir şekilde belirlenmesi için iki nesneyi karşılaştırır.|
+|[CFileTimeSpan:: operator-](#operator_-)|`CFileTimeSpan` nesnesi üzerinde çıkarma gerçekleştirir.|
+|[CFileTimeSpan:: operator! =](#operator_neq)|Eşitsizlik için iki `CFileTimeSpan` nesnesini karşılaştırır.|
+|[CFileTimeSpan:: operator +](#operator_add)|`CFileTimeSpan` nesnesine ekleme gerçekleştirir.|
+|[CFileTimeSpan:: operator + =](#operator_add_eq)|`CFileTimeSpan` nesnesine ekleme gerçekleştirir ve sonucu geçerli nesneye atar.|
+|[CFileTimeSpan:: operator &lt;](#operator_lt)|, Daha az anlamak için iki `CFileTimeSpan` nesnesini karşılaştırır.|
+|[CFileTimeSpan:: operator &lt;=](#operator_lt_eq)|, Eşitlik veya daha küçük bir şekilde belirlenmesi için iki `CFileTimeSpan` nesnesini karşılaştırır.|
 |[CFileTimeSpan:: operator =](#operator_eq)|Atama işleci.|
-|[CFileTimeSpan:: operator-=](#operator_-_eq)|Bir `CFileTimeSpan` nesne üzerinde çıkarma gerçekleştirir ve sonucu geçerli nesneye atar.|
-|[CFileTimeSpan:: operator = =](#operator_eq_eq)|, Eşitlik `CFileTimeSpan` için iki nesneyi karşılaştırır.|
-|[CFileTimeSpan:: işleci&gt;](#operator_gt)|Daha büyük `CFileTimeSpan` olduğunu anlamak için iki nesneyi karşılaştırır.|
-|[CFileTimeSpan:: işleci&gt;=](#operator_gt_eq)|, Eşitlik `CFileTimeSpan` veya daha büyük bir şekilde belirlenmesi için iki nesneyi karşılaştırır.|
+|[CFileTimeSpan:: operator-=](#operator_-_eq)|`CFileTimeSpan` nesnesi üzerinde çıkarma gerçekleştirir ve sonucu geçerli nesneye atar.|
+|[CFileTimeSpan:: operator = =](#operator_eq_eq)|, Eşitlik için iki `CFileTimeSpan` nesnesini karşılaştırır.|
+|[CFileTimeSpan:: operator &gt;](#operator_gt)|Daha büyük olduğunu anlamak için iki `CFileTimeSpan` nesnesini karşılaştırır.|
+|[CFileTimeSpan:: operator &gt;=](#operator_gt_eq)|, Eşitlik veya daha büyük olan iki `CFileTimeSpan` nesnesini karşılaştırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, bir dosyanın oluşturulduğu, son erişildiği veya en son değiştirildiği zaman ile ilgili işlemler gerçekleştirirken sıklıkla karşılaşılan zaman, göreli süreleri yönetmek için yöntemler sağlar. Bu sınıfın yöntemleri, genellikle [CFileTime sınıf](../../atl-mfc-shared/reference/cfiletime-class.md) nesneleriyle birlikte kullanılır.
+Bu sınıf, dosya sisteminin kullandığı birimlerde ilgili zaman aralıklarını işlemek için yöntemler sağlar. Bu birimler genellikle bir dosyanın oluşturulduğu, son erişildiği veya son değiştirilme tarihi ile ilgili işlemlerde kullanılır. Bu sınıfın yöntemleri, genellikle [CFileTime sınıf](../../atl-mfc-shared/reference/cfiletime-class.md) nesneleriyle birlikte kullanılır.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +71,11 @@ Bu sınıf, bir dosyanın oluşturulduğu, son erişildiği veya en son değişt
 
 **Üstbilgi:** atltime. h
 
-##  <a name="cfiletimespan"></a>CFileTimeSpan:: CFileTimeSpan
+## <a name="cfiletimespan"></a>CFileTimeSpan:: CFileTimeSpan
 
 Oluşturucu.
 
-```
+```cpp
 CFileTimeSpan() throw();
 CFileTimeSpan(const CFileTimeSpan& span) throw();
 CFileTimeSpan(LONGLONG nSpan) throw();
@@ -83,231 +83,231 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
+*yayılma*\
 Varolan bir `CFileTimeSpan` nesnesi.
 
-*nSpan*<br/>
+*Nspan*\
 Milisaniye cinsinden bir süre.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnesi, varolan `CFileTimeSpan` bir nesne kullanılarak veya 64 bitlik bir değer olarak ifade edilebilir. `CFileTimeSpan` Varsayılan Oluşturucu, zaman aralığını 0 olarak ayarlar.
+`CFileTimeSpan` nesnesi, var olan bir `CFileTimeSpan` nesnesi kullanılarak veya 64 bitlik bir değer olarak ifade edilebilir. Varsayılan Oluşturucu, zaman aralığını 0 olarak ayarlar.
 
-##  <a name="gettimespan"></a>CFileTimeSpan:: GetTimeSpan
+## <a name="gettimespan"></a>CFileTimeSpan:: GetTimeSpan
 
-`CFileTimeSpan` Nesneden zaman aralığını almak için bu yöntemi çağırın.
+`CFileTimeSpan` nesnesinden zaman aralığını almak için bu yöntemi çağırın.
 
-```
+```cpp
 LONGLONG GetTimeSpan() const throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 Milisaniye cinsinden zaman aralığını döndürür.
 
-##  <a name="operator_-"></a>CFileTimeSpan:: operator-
+## <a name="operator_-"></a>CFileTimeSpan:: operator-
 
-Bir `CFileTimeSpan` nesne üzerinde çıkarma gerçekleştirir.
+`CFileTimeSpan` nesnesi üzerinde çıkarma gerçekleştirir.
 
-```
+```cpp
 CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
+*yayılma*\
 A `CFileTimeSpan` nesne.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki zaman `CFileTimeSpan` yayılmış arasındaki farkın sonucunu temsil eden bir nesne döndürür.
+İki zaman yayılmaları arasındaki farkın sonucunu temsil eden bir `CFileTimeSpan` nesnesi döndürür.
 
-##  <a name="operator_neq"></a>CFileTimeSpan:: operator! =
+## <a name="operator_neq"></a>CFileTimeSpan:: operator! =
 
-Eşitsizlik için `CFileTimeSpan` iki nesneyi karşılaştırır.
+Eşitsizlik için iki `CFileTimeSpan` nesnesini karşılaştırır.
 
-```
+```cpp
 bool operator!=(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
-Karşılaştırılacak `CFileTimeSpan` nesne.
+*yayılma*\
+Karşılaştırılacak `CFileTimeSpan` nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Karşılaştırılan öğe `CFileTimeSpan` nesneye eşitse true, değilse false döndürür.
+Karşılaştırılan öğe `CFileTimeSpan` nesnesine eşitse TRUE değerini döndürür; Aksi halde yanlış.
 
-##  <a name="operator_add"></a>CFileTimeSpan:: operator +
+## <a name="operator_add"></a>CFileTimeSpan:: operator +
 
-Bir `CFileTimeSpan` nesnesine ekleme gerçekleştirir.
+`CFileTimeSpan` nesnesine ekleme gerçekleştirir.
 
-```
+```cpp
 CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
+*yayılma*\
 A `CFileTimeSpan` nesne.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki zaman `CFileTimeSpan` yayıldığı toplamı içeren bir nesne döndürür.
+İki zaman yayıldığı toplamı içeren `CFileTimeSpan` nesnesini döndürür.
 
-##  <a name="operator_add_eq"></a>CFileTimeSpan:: operator + =
+## <a name="operator_add_eq"></a>CFileTimeSpan:: operator + =
 
-Bir `CFileTimeSpan` nesnesine ekleme gerçekleştirir ve sonucu geçerli nesneye atar.
+`CFileTimeSpan` nesnesine ekleme gerçekleştirir ve sonucu geçerli nesneye atar.
 
-```
+```cpp
 CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
+*yayılma*\
 A `CFileTimeSpan` nesne.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki zaman yayılma `CFileTimeSpan` alanının toplamını içeren güncelleştirilmiş nesneyi döndürür.
+İki zaman yayılma alanının toplamını içeren güncelleştirilmiş `CFileTimeSpan` nesnesini döndürür.
 
-##  <a name="operator_lt"></a>CFileTimeSpan:: işleci&lt;
+## <a name="operator_lt"></a>CFileTimeSpan:: operator &lt;
 
-, Daha `CFileTimeSpan` az anlamak için iki nesneyi karşılaştırır.
+, Daha az anlamak için iki `CFileTimeSpan` nesnesini karşılaştırır.
 
-```
+```cpp
 bool operator<(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
-Karşılaştırılacak `CFileTimeSpan` nesne.
+*yayılma*\
+Karşılaştırılacak `CFileTimeSpan` nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 İlk nesne daha az (yani, daha kısa bir zaman aralığı temsil ediyorsa) ikinciden küçükse TRUE, aksi takdirde FALSE döndürür.
 
-##  <a name="operator_lt_eq"></a>CFileTimeSpan:: işleci&lt;=
+## <a name="operator_lt_eq"></a>CFileTimeSpan:: operator &lt;=
 
-, Eşitlik `CFileTimeSpan` veya daha küçük bir şekilde belirlenmesi için iki nesneyi karşılaştırır.
+, Eşitlik veya daha küçük bir şekilde belirlenmesi için iki `CFileTimeSpan` nesnesini karşılaştırır.
 
-```
+```cpp
 bool operator<=(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
-Karşılaştırılacak `CFileTimeSpan` nesne.
+*yayılma*\
+Karşılaştırılacak `CFileTimeSpan` nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 İlk nesne küçüktür (yani, daha kısa bir zaman aralığını temsil eder) veya ikinciye eşitse TRUE, değilse FALSE döndürür.
 
-##  <a name="operator_eq"></a>CFileTimeSpan:: operator =
+## <a name="operator_eq"></a>CFileTimeSpan:: operator =
 
 Atama işleci.
 
-```
+```cpp
 CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
+*yayılma*\
 A `CFileTimeSpan` nesne.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Güncelleştirilmiş `CFileTimeSpan` nesneyi döndürür.
+Güncelleştirilmiş `CFileTimeSpan` nesnesini döndürür.
 
-##  <a name="operator_-_eq"></a>CFileTimeSpan:: operator-=
+## <a name="operator_-_eq"></a>CFileTimeSpan:: operator-=
 
-Bir `CFileTimeSpan` nesne üzerinde çıkarma gerçekleştirir ve sonucu geçerli nesneye atar.
+`CFileTimeSpan` nesnesi üzerinde çıkarma gerçekleştirir ve sonucu geçerli nesneye atar.
 
-```
+```cpp
 CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
+*yayılma*\
 A `CFileTimeSpan` nesne.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Güncelleştirilmiş `CFileTimeSpan` nesneyi döndürür.
+Güncelleştirilmiş `CFileTimeSpan` nesnesini döndürür.
 
-##  <a name="operator_eq_eq"></a>CFileTimeSpan:: operator = =
+## <a name="operator_eq_eq"></a>CFileTimeSpan:: operator = =
 
-, Eşitlik `CFileTimeSpan` için iki nesneyi karşılaştırır.
+, Eşitlik için iki `CFileTimeSpan` nesnesini karşılaştırır.
 
-```
+```cpp
 bool operator==(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
-Karşılaştırılacak `CFileTimeSpan` nesne.
+*yayılma*\
+Karşılaştırılacak `CFileTimeSpan` nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 Nesneler eşitse TRUE, değilse FALSE döndürür.
 
-##  <a name="operator_gt"></a>CFileTimeSpan:: işleci&gt;
+## <a name="operator_gt"></a>CFileTimeSpan:: operator &gt;
 
-Daha büyük `CFileTimeSpan` olduğunu anlamak için iki nesneyi karşılaştırır.
+Daha büyük olduğunu anlamak için iki `CFileTimeSpan` nesnesini karşılaştırır.
 
-```
+```cpp
 bool operator>(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
-Karşılaştırılacak `CFileTimeSpan` nesne.
+*yayılma*\
+Karşılaştırılacak `CFileTimeSpan` nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 İlk nesne, ikinciden büyükse TRUE, aksi durumda FALSE değerini döndürür.
 
-##  <a name="operator_gt_eq"></a>CFileTimeSpan:: işleci&gt;=
+## <a name="operator_gt_eq"></a>CFileTimeSpan:: operator &gt;=
 
-, Eşitlik `CFileTimeSpan` veya daha büyük bir şekilde belirlenmesi için iki nesneyi karşılaştırır.
+, Eşitlik veya daha büyük olan iki `CFileTimeSpan` nesnesini karşılaştırır.
 
-```
+```cpp
 bool operator>=(CFileTimeSpan span) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kapsamı*<br/>
-Karşılaştırılacak `CFileTimeSpan` nesne.
+*yayılma*\
+Karşılaştırılacak `CFileTimeSpan` nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 İlk nesne büyüktür (yani, daha uzun bir zaman aralığını temsil eder) veya ikinciye eşitse TRUE, değilse FALSE döndürür.
 
-##  <a name="settimespan"></a>CFileTimeSpan:: SetTimeSpan
+## <a name="settimespan"></a>CFileTimeSpan:: SetTimeSpan
 
-`CFileTimeSpan` Nesnenin zaman aralığını ayarlamak için bu yöntemi çağırın.
+`CFileTimeSpan` nesnesinin zaman aralığını ayarlamak için bu yöntemi çağırın.
 
-```
+```cpp
 void SetTimeSpan(LONGLONG nSpan) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nSpan*<br/>
-Milisaniye cinsinden zaman aralığı için yeni değer.
+*Nspan*\
+100-nanosaniyelik birimlerindeki zaman aralığı için yeni değer. Daha fazla bilgi için bkz. [CFileTime](cfiletime-class.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime)<br/>
-[CFileTime Sınıfı](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime)\
+[CFileTime sınıfı](cfiletime-class.md)\
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)\
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

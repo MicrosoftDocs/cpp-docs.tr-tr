@@ -1,6 +1,7 @@
 ---
 title: strerror, _strerror, _wcserror, __wcserror
-ms.date: 11/04/2016
+description: Microsoft C çalışma zamanı kitaplığı (CRT) işlevleri strerror, _strerror, _wcserror ve __wcserror açıklanır.
+ms.date: 01/07/2020
 api_name:
 - strerror
 - _strerror
@@ -46,68 +47,67 @@ helpviewer_keywords:
 - __wcserror function
 - error messages, getting
 ms.assetid: 27b72255-f627-43c0-8836-bcda8b003e14
-ms.openlocfilehash: 0b4d70687bc2f428162d035c80d6bc8525a8fb9e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8c9c6850d6620407897b2a3a1dbf32e61f6719c0
+ms.sourcegitcommit: 7bd3567fc6a0e7124aab51cad63bbdb44a99a848
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958142"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755028"
 ---
 # <a name="strerror-_strerror-_wcserror-__wcserror"></a>strerror, _strerror, _wcserror, __wcserror
 
-Bir sistem hata iletisi dizesi (**strerror**, **_wcserror**) veya Kullanıcı tarafından sağlanan hata iletisi dizesinin ( **_strerror**, **__wcserror**) biçimlerini alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strerror_s, _strerror_s, _wcserror_s \_, _wcserror_s](strerror-s-strerror-s-wcserror-s-wcserror-s.md).
+Bir sistem hata iletisi dizesi (**strerror**, **_wcserror**) veya Kullanıcı tarafından sağlanan hata iletisi dizesinin ( **_strerror**, **__wcserror**) biçimlerini alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](strerror-s-strerror-s-wcserror-s-wcserror-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-char *strerror(
-   int errnum
-);
-char *_strerror(
-   const char *strErrMsg
-);
+char * strerror(
+   int errnum );
+
+char * _strerror(
+   const char *strErrMsg );
+
 wchar_t * _wcserror(
-   int errnum
-);
+   int errnum );
+
 wchar_t * __wcserror(
-   const wchar_t *strErrMsg
-);
+   const wchar_t *strErrMsg );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*errnum*<br/>
+*errnum*\
 Hata numarası.
 
-*strErrMsg*<br/>
+*strErrMsg*\
 Kullanıcı tarafından sağlanan ileti.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Bu işlevlerin hepsi hata iletisi dizesine bir işaretçi döndürür. Sonraki çağrılar dizenin üzerine yazabilir.
+Bu işlevlerin hepsi, çalışma zamanına ait bir iş parçacığı yerel depolama arabelleğinde bir hata iletisi dizesine bir işaretçi döndürür. Aynı iş parçacığında daha sonra yapılan çağrılar bu dizenin üzerine yazabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strerror** işlevi *errnum* 'ı bir hata iletisi dizesine eşler ve dizeye bir işaretçi döndürür. Hiçbir **strerror** ve **_strerror** gerçekten iletiyi yazdırır: Bunun için [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)gibi bir çıkış işlevi çağırmanız gerekir:
+**Strerror** işlevi *errnum* 'ı bir hata iletisi dizesine eşler ve dizeye bir işaretçi döndürür. **Strerror** ve **_strerror** işlevleri aslında iletiyi yazdırmaz. Yazdırmak için [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)gibi bir çıkış işlevi çağırın:
 
 ```C
-if (( _access( "datafile",2 )) == -1 )
+if (( _access( "datafile", 2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-*StrErrMsg* **null**olarak geçirildiyse, **_strerror** bir hata üreten son kitaplık çağrısının sistem hata iletisini içeren bir dizeye bir işaretçi döndürür. Hata iletisi dizesi yeni satır karakteri (' \n ') tarafından sona erdirildi. *StrErrMsg* **null**değerine eşit değilse **_strerror** , dize iletinizi, bir iki nokta üst üste, bir boşluğu, bir hata üreten son kitaplık çağrısının sistem hata iletisini ve yeni bir satır içeren bir dizeye işaretçi döndürür inde. Dize iletiniz en fazla 94 karakter uzunluğunda olabilir.
+*StrErrMsg* **NULL**olarak geçirilirse **_strerror** bir dizeye bir işaretçi döndürür. Bir hata üreten son kitaplık çağrısının sistem hata iletisini içerir. Hata iletisi dizesi yeni satır karakteri (' \n ') tarafından sona erdirildi. *StrErrMsg* **null**olmadığında dize: *strErrMsg* dizeniz, iki nokta üst üste, bir boşluk, sistem hata iletisi ve yeni satır karakteri içerir. Dize iletiniz, en çok 94 karakter uzunluğunda olabilir ve her iki dar ( **_strerror**) veya geniş ( **__wcserror**) karakterden oluşabilir.
 
-**_Strerror** için gerçek hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeninde depolanır. Doğru sonuçlar oluşturmak için, bir kitaplık yordamı hata vererek hemen sonra **_strerror** çağrısı yapın. Aksi halde, sonraki **strerror** veya **_strerror** çağrıları, **errno** değerinin üzerine yazabilir.
+**_Strerror** için gerçek hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeninde depolanır. Doğru sonuçlar oluşturmak için, bir kitaplık yordamının hata döndürmesine hemen sonra **_strerror** çağırın. Aksi halde, daha sonra kitaplık yordamlarına yapılan çağrılar **errno** değerinin üzerine yazabilir.
 
-**_wcserror** ve **__wcserror** , **strerror** ve **_strerror**'un sırasıyla geniş karakterli sürümleridir.
+**_wcserror** ve **__wcserror** , sırasıyla **strerror** ve **_strerror**'in geniş karakterli sürümleridir.
 
-**_strerror**, **_wcserror**ve **__wcserror** , ANSI tanımının bir parçası değildir; Bunlar Microsoft uzantılardır ve bunları taşınabilir koda istediğiniz yerde kullanmanızı öneririz. ANSI uyumluluğu için bunun yerine **strerror** kullanın.
+**_strerror**, **_Wcserror**ve **__wcserror** standart C kitaplığının bir parçası değil, Microsoft 'a özgüdür. Bunları, taşınabilir kod istediğiniz yerde kullanmanız önerilmez. Standart C uyumluluğu için, bunun yerine **strerror** kullanın.
 
-Hata dizelerini almak için, kullanım dışı bırakılan makrolar [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ve [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ve kullanım dışı bırakılan iç işlevler **__sys_errlist** ve **__sys_nerr**yerine **strerror** veya **_wcserror** önerilir.
+Hata dizelerini almak için, kullanım dışı bırakılmış makrolar yerine **strerror** veya **_wcserror** önerilir [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ve [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ve kullanım dışı iç işlevler **__sys_errlist** ve **__sys_nerr**.
 
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+### <a name="generic-text-routine-mappings"></a>Genel metin rutin eşlemeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcserror**|**strerror**|**strerror**|**_wcserror**|
 
@@ -127,7 +127,7 @@ Bkz. [pError](perror-wperror.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[Dize işleme](../../c-runtime-library/string-manipulation-crt.md)\
+[clearerr](clearerr.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)
