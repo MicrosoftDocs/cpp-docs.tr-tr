@@ -1,6 +1,7 @@
 ---
 title: CFileTimeSpan sınıfı
-ms.date: 01/06/2020
+description: Etkin Şablon kitaplığı (ATL) ve Microsoft Foundation Sınıfları (MFC) CFileTimeSpan sınıfı, FILETIME birimlerindeki zaman aralıklarını yönetir.
+ms.date: 01/10/2020
 f1_keywords:
 - CFileTimeSpan
 - ATLTIME/ATL::CFileTimeSpan
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - shared classes, CFileTimeSpan
 - CFileTimeSpan class
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-ms.openlocfilehash: 9220ed8373e78db727b43ecb59880dcfbcc98f96
-ms.sourcegitcommit: 7bd3567fc6a0e7124aab51cad63bbdb44a99a848
+ms.openlocfilehash: 89d95759b11ff7e52c2a8fa75cf94f7b7b81fa36
+ms.sourcegitcommit: c3283062ce4e382aec7f11626d358a37caf8cdbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755057"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75914389"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan sınıfı
 
@@ -61,7 +62,7 @@ class CFileTimeSpan
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, dosya sisteminin kullandığı birimlerde ilgili zaman aralıklarını işlemek için yöntemler sağlar. Bu birimler genellikle bir dosyanın oluşturulduğu, son erişildiği veya son değiştirilme tarihi ile ilgili işlemlerde kullanılır. Bu sınıfın yöntemleri, genellikle [CFileTime sınıf](../../atl-mfc-shared/reference/cfiletime-class.md) nesneleriyle birlikte kullanılır.
+`CFileTimeSpan` sınıfı, dosya sisteminin kullandığı birimlerde ilgili zaman aralıklarını işlemek için yöntemler sağlar. Bu birimler genellikle dosya işlemlerinde, örneğin bir dosyanın oluşturulduğu, son erişildiği veya son değiştirilme tarihi gibi kullanılır. Bu sınıfın yöntemleri, genellikle [CFileTime sınıf](../../atl-mfc-shared/reference/cfiletime-class.md) nesneleriyle birlikte kullanılır.
 
 ## <a name="example"></a>Örnek
 
@@ -87,11 +88,11 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 Varolan bir `CFileTimeSpan` nesnesi.
 
 *Nspan*\
-Milisaniye cinsinden bir süre.
+FILETIME birimlerindeki bir süre.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CFileTimeSpan` nesnesi, var olan bir `CFileTimeSpan` nesnesi kullanılarak veya 64 bitlik bir değer olarak ifade edilebilir. Varsayılan Oluşturucu, zaman aralığını 0 olarak ayarlar.
+`CFileTimeSpan` nesnesi, var olan bir `CFileTimeSpan` nesnesi kullanılarak oluşturulabilir veya 100-nanosaniyelik FILETIME birimlerinde 64 bitlik bir değer olarak ifade edilebilir. Daha fazla bilgi için bkz. [CFileTime](cfiletime-class.md). Varsayılan Oluşturucu, zaman aralığını 0 olarak ayarlar.
 
 ## <a name="gettimespan"></a>CFileTimeSpan:: GetTimeSpan
 
@@ -103,7 +104,7 @@ LONGLONG GetTimeSpan() const throw();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-Milisaniye cinsinden zaman aralığını döndürür.
+100-nanosaniyelik FILETIME birimlerindeki zaman aralığını döndürür. Daha fazla bilgi için bkz. [CFileTime](cfiletime-class.md).
 
 ## <a name="operator_-"></a>CFileTimeSpan:: operator-
 
@@ -303,7 +304,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Nspan*\
-100-nanosaniyelik birimlerindeki zaman aralığı için yeni değer. Daha fazla bilgi için bkz. [CFileTime](cfiletime-class.md).
+100-nanosaniyelik FILETIME birimlerindeki zaman aralığı için yeni değer. Daha fazla bilgi için bkz. [CFileTime](cfiletime-class.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
