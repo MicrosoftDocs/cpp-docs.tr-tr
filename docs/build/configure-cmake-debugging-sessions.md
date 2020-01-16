@@ -4,12 +4,12 @@ description: CMake hata ayıklayıcı ayarlarını yapılandırmak için Visual 
 ms.date: 01/13/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: ff1de8241c2489e675f82f469f1cf697a72f5034
-ms.sourcegitcommit: 275b71219d2a8bd5d78f87e21dd909e9968c2f44
+ms.openlocfilehash: 5e627f02b5245baede6e92268cedfc43957f3abc
+ms.sourcegitcommit: 49e4fb3e0300fe86c814130661f1bf68b16e72e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75946806"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76031332"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake hata ayıklama oturumlarını yapılandırma
 
@@ -73,7 +73,7 @@ Tüm hata ayıklama senaryolarınızı desteklemek için birçok *Launch. vs. JS
 
 ## <a name="launchvsjson-reference-for-remote-linux-projects"></a>Uzak Linux projeleri için Launch. vs. JSON başvurusu
 
-Aşağıdaki özellikler, **Uzaktan hata ayıklama yapılandırmalarına**özeldir. Ayrıca, [komutları doğrudan gdb 'ye gönderebilir](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands) ve [mıengine günlük kaydını etkinleştirebilirsiniz](https://github.com/microsoft/MIEngine/wiki/Logging). Bu özellikler, gdb 'ye hangi komutların gönderileceğini, gdb 'nin döndürdüğü çıktıyı ve her komutun ne kadar sürdüğünü görmenizi sağlar.
+Aşağıdaki özellikler, **Uzaktan hata ayıklama yapılandırmalarına**özeldir. Ayrıca, komutları doğrudan temeldeki hata ayıklayıcıya göndermek için [özel gdb komutlarını yürütebilir](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands) ve gdb 'ye hangi komutların gönderileceğini, gdb 'nin döndürdüğü çıktıyı ve her komutun ne kadar sürdüğünü görmek Için [mıengine günlük kaydını etkinleştirebilirsiniz](https://github.com/microsoft/MIEngine/wiki/Logging) .
 
 - `cwd`: uzak makinedeki bağımlılıkları ve diğer dosyaları bulmak için geçerli çalışma dizini. Makro `${debugInfo.defaultWorkingDirectory}` kullanılabilir. Varsayılan değer, *Cmakelists. txt*dosyasında geçersiz kılınmadıkça uzak çalışma alanı köküdür. Bu özellik yalnızca uzak yapılandırmalarda kullanılır; `currentDir`, yerel bir proje için Başlatan uygulamanın geçerli dizinini ayarlamak üzere kullanılır.
 

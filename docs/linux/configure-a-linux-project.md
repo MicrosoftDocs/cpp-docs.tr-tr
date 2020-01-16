@@ -2,12 +2,12 @@
 title: Visual Studio C++ 'da Linux projesi yapılandırma
 ms.date: 06/11/2019
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 1cfaeb6611a27af498325739271d4dba38581dd6
-ms.sourcegitcommit: c53a3efcc5d51fc55fa57ac83cca796b33ae888f
+ms.openlocfilehash: 5d42ca587946d3b5adcbd3b6fe35a6c1e1bb9ae8
+ms.sourcegitcommit: 49e4fb3e0300fe86c814130661f1bf68b16e72e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71960703"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76031374"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -51,7 +51,7 @@ Uzak Linux bilgisayarıyla ilgili ayarları değiştirmek için, [genel](prop-pa
 
    ::: moniker range="vs-2019"
 
-   **Visual Studio 2019 sürüm 16,1**: Linux Için Windows alt sistemi hedeflemek Için **platform araç** seti aşağı okuna tıklayın ve **WSL_1_0**' yi seçin. Diğer uzak Seçenekler kaybolur ve varsayılan WSL kabuğu yolu kendi yerine görünür:
+   **Visual Studio 2019 sürüm 16,1**: Linux Için Windows alt sistemi hedeflemek üzere **platform araç takımı** için aşağı oka tıklayın ve **WSL_1_0**' yi seçin. Diğer uzak Seçenekler kaybolur ve varsayılan WSL kabuğu yolu kendi yerine görünür:
 
    ![WSL derleme makinesi](media/wsl-remote-vs2019.png)
 
@@ -78,7 +78,7 @@ Bu bölüm, WSL hedeflenirken uygulanmaz.
 
 Uzak sistemlerde derlerken, geliştirme BILGISAYARıNıZDAKI kaynak dosyaları Linux bilgisayara kopyalanır ve burada derlenir. Varsayılan olarak, Visual Studio projesindeki tüm kaynaklar yukarıdaki ayarlarda ayarlanan konumlara kopyalanır. Ancak, ek kaynaklar da listeye eklenebilir veya kaynakları kopyalama işlemi, derleme görevleri dosyası projesi için varsayılan olan tamamen kapatılabilir.
 
-- **Kopyalanacak kaynaklar** , uzak bilgisayara hangi kaynakların kopyalanacağını belirler. Varsayılan olarak, **\@ (Sourcestocopyuzaktan)** , projedeki tüm kaynak kod dosyalarını varsayılan olarak alır, ancak resimler gibi herhangi bir varlık/kaynak dosyası içermez.
+- **Kopyalanacak kaynaklar** , uzak bilgisayara hangi kaynakların kopyalanacağını belirler. Varsayılan olarak, **\@(Sourcestocopyuzaktan)** projedeki tüm kaynak kod dosyalarını varsayılan olarak alır, ancak resimler gibi herhangi bir varlık/kaynak dosyası içermez.
 
 - Kaynak dosyaların uzak bilgisayara kopyalanmasını etkinleştirmek ve devre dışı bırakmak için **kaynakları Kopyala** özelliği açık ve kapalı olabilir.
 
@@ -95,6 +95,9 @@ Tüm derleme uzak bir bilgisayarda (veya WSL) bulunduğundan, proje özellikleri
 ## <a name="remote_intellisense"></a>Uzak sistemlerde üst bilgiler için IntelliSense
 
 **Bağlantı Yöneticisi**'nde yeni bir bağlantı eklediğinizde, Visual Studio, uzak sistemdeki derleyicinin ekleme dizinlerini otomatik olarak algılar. Daha sonra Visual Studio, bu dosyaları yerel Windows makinenizde bir dizine kopyalar. Bundan sonra, bu bağlantıyı bir Visual Studio veya CMake projesinde kullandığınızda, bu dizinteki üstbilgiler IntelliSense sağlamak için kullanılır.
+
+> [!NOTE]
+> Visual Studio 2019 sürüm 16,5 ve sonrasında, uzak üst bilgi kopyası iyileştirilmiştir. Artık üstbilgiler bir Linux projesi açılırken veya bir Linux hedefi için CMake yapılandırılırken isteğe bağlı olarak kopyalanır. Kopya, projenin belirtilen derleyicileri temelinde proje başına temelinde arka planda gerçekleşir. Daha fazla bilgi için bkz. [Linux IntelliSense 'In doğruluğu ve performansına yönelik iyileştirmeler](https://devblogs.microsoft.com/cppblog/improvements-to-accuracy-and-performance-of-linux-intellisense/).
 
 Bu işlevsellik, zip 'in yüklü olduğu Linux makinesine bağlıdır. Bu apt-get komutunu kullanarak zip 'i yükleyebilirsiniz:
 
