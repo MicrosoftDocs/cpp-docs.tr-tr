@@ -1,18 +1,39 @@
 ---
 title: Bağlayıcı Araçları Hatası LNK2019
-ms.date: 10/22/2019
+description: Microsoft Visual Studio bağlayıcı hatası LNK2019 ve C ve C++ Code 'da tanılama ve düzeltme.
+ms.date: 01/15/2020
 f1_keywords:
 - LNK2019
 helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-ms.openlocfilehash: 948a27e2d80c81afcf41efadd83e56709c98a304
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+no-loc:
+- main
+- WinMain
+- wmain
+- wWinMain
+- __cdecl
+- __stdcall
+- __fastcall
+- __vectorcall
+- extern
+- static
+- const
+- ARCH
+- AVX2
+- wchar_t
+- VERBOSE
+- EXPORTS
+- SYMBOLS
+- DUMPBIN
+- UNDNAME
+ms.openlocfilehash: 0e741c1442f9762c4cf5f9b891c4cd7c38103dfe
+ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811104"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123922"
 ---
 # <a name="linker-tools-error-lnk2019"></a>Bağlayıcı Araçları Hatası LNK2019
 
@@ -46,23 +67,23 @@ Hem bildirimde hem de tanımda doğru yazımı ve büyük harfleri kullandığı
 
 ### <a name="a-function-or-variable-is-declared-but-not-defined"></a>Bir işlev veya değişken tanımlanmış ancak tanımlanmamış
 
-Başlık dosyasında bir bildirim varsa ancak eşleşen bir tanım uygulanmadığında LNK2019 oluşabilir. Üye işlevleri veya statik veri üyeleri için, uygulama sınıf kapsamı seçiciyi içermelidir. Bir örnek için bkz. [eksik Işlev gövdesi veya değişken](../../error-messages/tool-errors/missing-function-body-or-variable.md).
+Başlık dosyasında bir bildirim varsa ancak eşleşen bir tanım uygulanmadığında LNK2019 oluşabilir. Üye işlevleri veya static veri üyeleri için, uygulama sınıf kapsamı seçiciyi içermelidir. Bir örnek için bkz. [eksik Işlev gövdesi veya değişken](../../error-messages/tool-errors/missing-function-body-or-variable.md).
 
 ### <a name="the-calling-convention-is-different-between-the-function-declaration-and-the-function-definition"></a>Çağırma kuralı, işlev bildirimi ve işlev tanımı arasında farklıdır
 
 Çağırma kuralları ([__cdecl](../../cpp/cdecl.md), [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md)veya [__vectorcall](../../cpp/vectorcall.md)), düzenlenmiş adın bir parçası olarak kodlanır. Çağırma kuralının aynı olduğundan emin olun.
 
-### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>Bir sembol C dosyasında tanımlanır, ancak bir C++ dosyada extern "C" kullanılmadan bildirilmiştir
+### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-opno-locextern-c-in-a-c-file"></a>Bir sembol C dosyasında tanımlanır, ancak bir C++ dosyada extern "c" kullanılmadan bildirilmiştir
 
-C olarak derlenen bir dosyada tanımlanan semboller, [extern bir "C"](../../cpp/using-extern-to-specify-linkage.md) değiştiricisi kullanmadığınız sürece C++ dosyada belirtilen sembollere göre farklı düzenlenmiş adlara sahiptir. Bildirimin her bir simgenin derleme bağlantısıyla eşleştiğinden emin olun. Benzer şekilde, bir C++ dosyada C programı tarafından kullanılacak bir sembol tanımlarsanız, tanımda `extern "C"` ' i kullanın.
+C olarak derlenen bir dosyada tanımlanan semboller, bir C++ [extern "C"](../../cpp/using-extern-to-specify-linkage.md) değiştiricisi kullanmadığınız sürece, dosyada belirtilen sembollere göre farklı düzenlenmiş adlara sahiptir. Bildirimin her bir simgenin derleme bağlantısıyla eşleştiğinden emin olun. Benzer şekilde, bir C++ dosyada C programı tarafından kullanılacak bir sembol tanımlarsanız, tanımda `extern "C"` kullanın.
 
-### <a name="a-symbol-is-defined-as-static-and-then-later-referenced-outside-the-file"></a>Bir sembol statik olarak tanımlanır ve daha sonra dosyanın dışında başvurulur
+### <a name="a-symbol-is-defined-as-opno-locstatic-and-then-later-referenced-outside-the-file"></a>Bir sembol static olarak tanımlanır ve daha sonra dosyanın dışında başvurulur
 
-' C++De, C 'nin aksine, [Global sabitlerin](../../error-messages/tool-errors/global-constants-in-cpp.md) `static` bağlantısı vardır. Bu kısıtlamayı aşmak için, `const` başlatmaları bir üst bilgi dosyasına dahil edebilir ve bu üstbilgiyi. cpp dosyalarınıza ekleyebilir ya da değişkeni sabit olmayan hale getirebilirsiniz ve buna erişmek için sabit bir başvuru kullanabilirsiniz.
+' C++De, C 'nin aksine, [genel sabitlerin](../../error-messages/tool-errors/global-constants-in-cpp.md) `static` bağlantısı vardır. Bu kısıtlamayı aşmak için, `const` başlatmaları bir başlık dosyasına dahil edebilir ve bu üst bilgiyi. cpp dosyalarınıza ekleyebilir ya da değişkeni sabit değil ve ona erişmek için sabit bir başvuru kullanabilirsiniz.
 
-### <a name="a-static-member-of-a-class-isnt-defined"></a>Bir sınıfın statik üyesi tanımlı değil
+### <a name="a-opno-locstatic-member-of-a-class-isnt-defined"></a>Bir sınıfın static üyesi tanımlı değil
 
-Statik sınıf üyesinin benzersiz bir tanımı olmalıdır veya tek tanım kuralını ihlal eder. Satır içi tanımlanmayan bir statik sınıf üyesinin, tam adı kullanılarak bir kaynak dosyasında tanımlanması gerekir. Hiç tanımlanmamışsa, bağlayıcı LNK2019 oluşturur.
+static sınıf üyesinin benzersiz bir tanımı olmalıdır veya tek tanım kuralını ihlal eder. Satır içi tanımlanamaz static sınıf üyesinin, tam adı kullanılarak bir kaynak dosyasında tanımlanması gerekir. Hiç tanımlanmamışsa, bağlayıcı LNK2019 oluşturur.
 
 ### <a name="a-build-dependency-is-only-defined-as-a-project-dependency-in-the-solution"></a>Derleme bağımlılığı yalnızca çözümde bir proje bağımlılığı olarak tanımlanır
 
@@ -70,11 +91,11 @@ Visual Studio 'nun önceki sürümlerinde bu bağımlılık düzeyi yeterlidir. 
 
 ### <a name="an-entry-point-isnt-defined"></a>Bir giriş noktası tanımlı değil
 
-Uygulama kodu uygun bir giriş noktası tanımlamalıdır: konsol uygulamaları için `main` veya `wmain` ve Windows uygulamaları için `WinMain` veya `wWinMain`. Daha fazla bilgi için bkz. [Main: program başlatması](../../cpp/main-program-startup.md) veya [WinMain işlevi](/windows/win32/api/winbase/nf-winbase-winmain). Özel bir giriş noktası kullanmak için [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) bağlayıcı seçeneğini belirtin.
+Uygulama kodu uygun bir giriş noktası tanımlamalıdır: konsol uygulamaları için `main` veya `wmain` ve Windows uygulamaları için `WinMain` veya `wWinMain`. Daha fazla bilgi için bkz. [main işlev ve komut satırı bağımsız değişkenleri](../../cpp/main-function-command-line-args.md) veya [WinMain işlevi](/windows/win32/api/winbase/nf-winbase-winmain). Özel bir giriş noktası kullanmak için [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) bağlayıcı seçeneğini belirtin.
 
 ### <a name="you-build-a-console-application-by-using-settings-for-a-windows-application"></a>Bir Windows uygulaması için ayarları kullanarak bir konsol uygulaması oluşturursunuz
 
-Hata iletisi **çözümlenmemiş dış sembol function_name ' de başvuruluyorsa**,/Subsystem: **WINDOWS**yerine **/Subsystem: Console** komutunu kullanarak bağlayın. Bu ayar hakkında daha fazla bilgi ve Visual Studio 'da bu özelliğin nasıl ayarlanacağı hakkında yönergeler için bkz. [/Subsystem (alt sistemi belirt)](../../build/reference/subsystem-specify-subsystem.md).
+Hata iletisi **çözümlenmemiş dış sembol** *function_name*WinMain benzerdir ve bu,/Subsystem: **WINDOWS**yerine **/Subsystem: Console** kullanılarak bağlanır. Bu ayar hakkında daha fazla bilgi ve Visual Studio 'da bu özelliğin nasıl ayarlanacağı hakkında yönergeler için bkz. [/Subsystem (alt sistemi belirt)](../../build/reference/subsystem-specify-subsystem.md).
 
 ### <a name="you-attempt-to-link-64-bit-libraries-to-32-bit-code-or-32-bit-libraries-to-64-bit-code"></a>64 bitlik kitaplıkları 32 bit koda veya 32-bit kitaplıklarına 64-bit koda bağlamayı denediğinizde
 
@@ -86,15 +107,15 @@ Kodunuza bağlı kitaplıklar ve nesne dosyaları, kodunuzla aynı mimari için 
 
 ### <a name="you-use-automatic-variables-outside-their-scope"></a>Otomatik değişkenleri kapsam dışında kullanırsınız
 
-Otomatik (işlev kapsamı) değişkenleri yalnızca söz konusu işlevin kapsamında kullanılabilir. Bu değişkenler, `extern` olarak bildirilemez ve diğer kaynak dosyalarında kullanılabilir. Bir örnek için bkz. [Otomatik (Işlev kapsamı) değişkenleri](../../error-messages/tool-errors/automatic-function-scope-variables.md).
+Otomatik (işlev kapsamı) değişkenleri yalnızca söz konusu işlevin kapsamında kullanılabilir. Bu değişkenler `extern` bildirilemez ve diğer kaynak dosyalarında kullanılamaz. Bir örnek için bkz. [Otomatik (Işlev kapsamı) değişkenleri](../../error-messages/tool-errors/automatic-function-scope-variables.md).
 
 ### <a name="you-call-intrinsic-functions-or-pass-argument-types-to-intrinsic-functions-that-arent-supported-on-your-target-architecture"></a>Hedef mimariniz üzerinde desteklenmeyen iç işlevlere iç işlevleri çağırır veya bağımsız değişken türleri geçirmiş olursunuz
 
-Örneğin, bir AVX2 iç kullanır, ancak [/Arch: AVX2](../../build/reference/arch-x86.md) derleyici seçeneğini belirtmezseniz, derleyici, iç öğenin bir dış işlev olduğunu varsayar. Bir satır içi yönerge oluşturmak yerine, derleyici, iç ile aynı ada sahip bir dış simgeye çağrı oluşturur. Bağlayıcı bu eksik işlevin tanımını bulmaya çalıştığında, LNK2019 oluşturur. Yalnızca hedef mimariniz tarafından desteklenen iç bilgileri ve türleri kullandığınızdan emin olun.
+Örneğin, bir AVX2 iç kullanır, ancak [/ARCH:AVX2](../../build/reference/arch-x86.md) derleyici seçeneğini belirtmezseniz, derleyici, iç öğenin bir dış işlev olduğunu varsayar. Bir satır içi yönerge oluşturmak yerine, derleyici, iç ile aynı ada sahip bir dış simgeye çağrı oluşturur. Bağlayıcı bu eksik işlevin tanımını bulmaya çalıştığında, LNK2019 oluşturur. Yalnızca hedef mimariniz tarafından desteklenen iç bilgileri ve türleri kullandığınızdan emin olun.
 
-### <a name="you-mix-code-that-uses-native-wchar_t-with-code-that-doesnt"></a>Yerel wchar_t 'yi kullanan kodu,
+### <a name="you-mix-code-that-uses-native-opno-locwchar_t-with-code-that-doesnt"></a>Yerel wchar_t kullanan kodu,
 
-C++Visual Studio 2005 ' de yapılan dil uyumluluğu çalışmaları varsayılan olarak **wchar_t** yerel bir tür yaptı. Tüm dosyalar aynı **/Zc: wchar_t** ayarları kullanılarak derlenmezse, tür başvuruları uyumlu türlere çözümlenmeyebilir. Tüm kitaplık ve nesne dosyalarındaki **wchar_t** türlerinin uyumlu olduğundan emin olun. Bir **wchar_t** typedef 'ten güncelleştirin ya da derlerken tutarlı **/Zc: wchar_t** ayarlarını kullanın.
+C++Visual Studio 2005 ' de yapılan dil uyumluluğu, varsayılan olarak yerel bir tür **wchar_t** yapılır. Tüm dosyalar aynı **/Zc:wchar_t** ayarları kullanılarak derlenmezse, tür başvuruları uyumlu türlere çözümlenmeyebilir. Tüm kitaplık ve nesne dosyalarındaki **wchar_t** türlerinin uyumlu olduğundan emin olun. **wchar_t** bir typedef 'ten güncelleştirin ya da derlerken tutarlı **/zc:wchar_t** ayarlarını kullanın.
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve Vcpkg
 
@@ -104,11 +125,11 @@ Derlemeniz kapsamında bir üçüncü taraf kitaplığı yapılandırmaya çalı
 
 Bazen bağlayıcının belirli bir sembol tanımını bulamamasını söylemek zordur. Genellikle bu sorun, derlemenize tanımı içeren kodu eklemediniz. Ya da, yapı seçenekleri dış semboller için farklı düzenlenmiş adlar oluşturdu. LNK2019 hatalarını tanılamanıza yardımcı olabilecek çeşitli araçlar ve seçenekler vardır.
 
-- [/Verbose](../../build/reference/verbose-print-progress-messages.md) bağlayıcı seçeneği, bağlayıcının başvurduğu dosyaları belirlemenize yardımcı olabilir. Bu seçenek, simgenin tanımını içeren dosyanın derlemenize dahil olup olmadığını doğrulamanıza yardımcı olabilir.
+- [/VERBOSE](../../build/reference/verbose-print-progress-messages.md) bağlayıcı seçeneği, bağlayıcının başvurduğu dosyaları belirlemenize yardımcı olabilir. Bu seçenek, simgenin tanımını içeren dosyanın derlemenize dahil olup olmadığını doğrulamanıza yardımcı olabilir.
 
-- **Dumpbin** yardımcı programının [/dışarı aktarmalar](../../build/reference/dash-exports.md) ve [/Symbols](../../build/reference/symbols.md) seçenekleri,. dll ve nesne veya kitaplık dosyalarınızda hangi simgelerin tanımlandığını keşfetmenize yardımcı olabilir. Verdiğiniz düzenlenmiş adların bağlayıcının aradığı düzenlenmiş adlarla eşleştiğinden emin olun.
+- **DUMPBIN** yardımcı programının [/EXPORTS](../../build/reference/dash-exports.md) ve [/SYMBOLS](../../build/reference/symbols.md) seçenekleri,. dll 'niz ve nesne veya kitaplık dosyalarınızda hangi simgelerin tanımlandığını keşfetmenize yardımcı olabilir. Verdiğiniz düzenlenmiş adların bağlayıcının aradığı düzenlenmiş adlarla eşleştiğinden emin olun.
 
-- **Undname** yardımcı programı, düzenlenmiş bir ad için, fark edilmemiş dış sembolü gösterebilir.
+- **UNDNAME** yardımcı programı, düzenlenmiş bir ad için, benzer bir şekilde düzenlenmiş dış sembol gösterebilir.
 
 ## <a name="examples"></a>Örnekler
 
@@ -128,7 +149,7 @@ int main() {
 }
 ```
 
-Bir değişken ve işlevin `extern` olarak bildirildiği, ancak hiçbir tanım sağlanmadığından başka bir örnek aşağıda verilmiştir:
+Bir değişken ve işlevin `extern` olarak bildirildiği ancak tanım sağlanmadığından başka bir örnek aşağıda verilmiştir:
 
 ```cpp
 // LNK2019c.cpp
@@ -145,9 +166,9 @@ int main() {}
 
 `i` ve `g`, derlemede bulunan dosyalardan birinde tanımlanmadıysa, bağlayıcı LNK2019 oluşturur. Derlemenin bir parçası olarak tanımları içeren kaynak kodu dosyasını ekleyerek hataları giderebilirsiniz. Alternatif olarak, bağlayıcıya tanımları içeren. obj dosyalarını veya. lib dosyalarını geçirebilirsiniz.
 
-### <a name="a-static-data-member-is-declared-but-not-defined"></a>Statik bir veri üyesi tanımlanmış ancak tanımlanmamış
+### <a name="a-opno-locstatic-data-member-is-declared-but-not-defined"></a>static veri üyesi tanımlanmış ancak tanımlanmamış
 
-LNK2019, statik bir veri üyesi bildirildiğinde ancak tanımlanmadığında da gerçekleşebilir. Aşağıdaki örnek LNK2019 oluşturur ve nasıl düzeltileceğini gösterir.
+Ayrıca, bir static veri üyesi bildirildiğinde ancak tanımlanmadığında da LNK2019. Aşağıdaki örnek LNK2019 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
 // LNK2019b.cpp
@@ -196,7 +217,7 @@ int main() {
 }
 ```
 
-### <a name="inconsistent-wchar_t-type-definitions"></a>Tutarsız wchar_t tür tanımları
+### <a name="inconsistent-opno-locwchar_t-type-definitions"></a>Tutarsız wchar_t türü tanımları
 
 Bu örnek, `wchar_t`olarak çözümlenen `WCHAR`kullanan dışarı aktarmaya sahip bir DLL oluşturur.
 
@@ -208,7 +229,7 @@ Bu örnek, `wchar_t`olarak çözümlenen `WCHAR`kullanan dışarı aktarmaya sah
 __declspec(dllexport) void func(WCHAR*) {}
 ```
 
-Sonraki örnek, önceki örnekteki DLL 'yi kullanır ve imzasız Short * ve WCHAR\* türleri aynı olmadığından LNK2019 oluşturur.
+Sonraki örnek, önceki örnekteki DLL 'yi kullanır ve `unsigned short*` ve `WCHAR*` türleri aynı olmadığından LNK2019 oluşturur.
 
 ```cpp
 // LNK2019h.cpp
@@ -221,7 +242,7 @@ int main() {
 }
 ```
 
-Bu hatayı onarmak için `unsigned short` `wchar_t` veya `WCHAR`olarak değiştirin ya da **/Zc: wchar_t-** kullanarak LNK2019g. cpp öğesini derleyin.
+Bu hatayı onarmak için `unsigned short` `wchar_t` veya `WCHAR`olarak değiştirin ya da **/Zc:wchar_t-** kullanarak LNK2019g. cpp öğesini derleyin.
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 

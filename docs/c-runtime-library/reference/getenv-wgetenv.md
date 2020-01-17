@@ -1,6 +1,7 @@
 ---
 title: getenv, _wgetenv
-ms.date: 11/04/2016
+description: Microsoft C çalışma zamanı kitaplığı getenv ve _wgetenv işlevlerini açıklar.
+ms.date: 01/15/2020
 api_name:
 - getenv
 - _wgetenv
@@ -33,14 +34,33 @@ helpviewer_keywords:
 - _tgetenv function
 - _wgetenv function
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
-ms.openlocfilehash: 7cacd8588bcc74c6d064da370ce6254aada56c12
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+no-loc:
+- getenv
+- _wgetenv
+- getenv_s
+- _wgetenv_s
+- _putenv_s
+- main
+- wmain
+- errno
+- EINVAL
+- ERANGE
+- _environ
+- _wenviron
+- _putenv
+- _wputenv
+- _tgetenv_s
+- _tzset
+- _dupenv_s
+- _wdupenv_s
+ms.openlocfilehash: 5e06e0c66d1ee60a067c2e27fedb5ca1dca7109a
+ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955056"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124000"
 ---
-# <a name="getenv-_wgetenv"></a>getenv, _wgetenv
+# <a name="opno-locgetenv-opno-loc_wgetenv"></a>getenv, _wgetenv
 
 Geçerli ortamdan bir değer alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
 
@@ -63,37 +83,37 @@ wchar_t *_wgetenv(
 *varname*<br/>
 Ortam değişkeni adı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 *Varname*içeren ortam tablosu girişi için bir işaretçi döndürür. Döndürülen işaretçiyi kullanarak ortam değişkeninin değerini değiştirmek güvenli değildir. Bir ortam değişkeninin değerini değiştirmek için [_putenv](putenv-wputenv.md) işlevini kullanın. *Değişken adı* ortam tablosunda bulunmazsa dönüş değeri **null** olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Getenv** işlevi, *varname*için ortam değişkenlerinin listesini arar. **getenv** , Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **getenv** ve **_putenv** ortama erişmek için **_environ** genel değişkeni tarafından işaret edilen ortamın kopyasını kullanır. **getenv** yalnızca çalışma zamanı kitaplığı için erişilebilir olan ve işletim sistemi tarafından işlem için oluşturulan "segment" ortamında olmayan veri yapılarında çalışır. Bu nedenle, [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) için *envp* bağımsız değişkenini kullanan programlar geçersiz bilgiler alabilir.
+**getenv** işlevi, *varname*için ortam değişkenlerinin listesini arar. **getenv** Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **getenv** ve **_putenv** , ortama erişmek için genel değişken **_environ** tarafından işaret edilen ortamın kopyasını kullanın. **getenv** , işletim sistemi tarafından işlem için oluşturulan "segment" ortamında değil, yalnızca çalışma zamanı kitaplığı için erişilebilir olan veri yapılarında çalışır. Bu nedenle, [main](../../cpp/main-function-command-line-args.md) veya [wmain](../../cpp/main-function-command-line-args.md) için *envp* bağımsız değişkenini kullanan programlar geçersiz bilgileri alabilir.
 
-*Varname* **null**Ise, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
+*Varname* **null**Ise, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **EINVAL** **errno** ayarlar ve **null**değerini döndürür.
 
-**_wgetenv** , **getenv**; öğesinin geniş karakterli bir sürümüdür **_wgetenv** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, **_environ**'in geniş karakterli bir sürümüdür.
+**_wgetenv** , **getenv** geniş karakterli bir sürümüdür; **_wgetenv** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wenviron** genel değişkeni, **_environ** geniş karakterli bir sürümüdür.
 
-Bir MBCS programında (örneğin, bir SBCS ASCII programında), ortam çok baytlı karakter dizelerinden oluştuğu için **_wenviron** başlangıçta **null** olur. Ardından, [_wputenv](putenv-wputenv.md) **öğesine yapılan** ilk ÇAĞRıDA veya bir (MBCS) ortamı zaten mevcutsa, buna karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve **_wenviron**tarafından gösterilir.
+Bir MBCS programında (örneğin, bir SBCS ASCII programında), ortam çok baytlı karakter dizelerinden oluştuğu için başlangıçta **NULL** **_wenviron** . Ardından, [_wputenv](putenv-wputenv.md)için ilk çağrıda **_wgetenv** veya bir (MBCS) ortamı zaten varsa, buna karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve ardından **_wenviron** tarafından gösterilir.
 
-Benzer şekilde, bir Unicode ( **_wmain**) programında, ortam geniş karakter dizelerinden oluştuğu için **_environ** başlangıçta **null** olur. Ardından, **_putenv**için ilk çağrıda veya **getenv** için Ilk çağrıda bir (Unicode) ortam zaten varsa, buna karşılık gelen bir MBCS ortamı oluşturulur ve ardından **_environ**tarafından gösterilir.
+Benzer şekilde, bir Unicode ( **_wmain**) programında, ortam geniş karakter dizelerinden oluştuğu için **_environ** başlangıçta **null** olur. Ardından, **_putenv** ilk çağrısında veya bir (Unicode) ortamı zaten varsa **getenv** ilk çağrıda, karşılık gelen bir MBCS ortamı oluşturulur ve ardından **_environ** tarafından gösterilir.
 
-Ortamın iki kopyası (MBCS ve Unicode) bir programda aynı anda mevcut olduğunda, çalışma zamanı sisteminin her iki kopyayı da koruması gerekir, bu da daha yavaş yürütme süresine neden olur. Örneğin, **_putenv**'yi her çağırdığınızda, iki ortam dizesinin karşılık gelmesi için bir **_wputenv** çağrısı de otomatik olarak yürütülür.
+Ortamın iki kopyası (MBCS ve Unicode) bir programda aynı anda mevcut olduğunda, çalışma zamanı sisteminin her iki kopyayı da koruması gerekir, bu da daha yavaş yürütme süresine neden olur. Örneğin, **_putenv** her çağırdığınızda, iki ortam dizesinin karşılık gelmesi için **_wputenv** çağrısı de otomatik olarak yürütülür.
 
 > [!CAUTION]
 > Nadir örneklerde, çalışma zamanı sistemi hem Unicode sürümü hem de bir çok baytlı sürümü korunurken, bu iki ortam sürümü tam olarak karşılamayabilir. Bunun nedeni, benzersiz bir çok baytlı karakter dizesinin benzersiz bir Unicode dizesine eşlenmesine karşın, benzersiz bir Unicode dizesinden çok baytlı karakter dizesine eşlemenin benzersiz olması gerekir. Daha fazla bilgi için bkz. [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
 
 > [!NOTE]
-> **_Putenv** ve **_getenv** işlevleri iş parçacığı açısından güvenli değildir. **_putenv** dizeyi değiştirirken **_getenv** bir dize işaretçisi döndürebilir, rastgele hatalara neden olur. Bu işlevlere yapılan çağrıların eşitlendiğinden emin olun.
+> İşlevlerin **_putenv** ve **_getenv** aileleri iş parçacığı açısından güvenli değildir. **_getenv** , **_putenv** dizeyi değiştirirken rastgele hatalara neden olan bir dize işaretçisi döndürebilir. Bu işlevlere yapılan çağrıların eşitlendiğinden emin olun.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tgetenv**|**getenv**|**getenv**|**_wgetenv**|
 
-**TZ** ortam değişkeninin değerini denetlemek veya değiştirmek için, gereken şekilde **getenv**, **_putenv** ve **_tzset** kullanın. **TZ**hakkında daha fazla bilgi için bkz. [_tzset](tzset.md) ve [_günışığı, TimeZone ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+**TZ** ortam değişkeninin değerini denetlemek veya değiştirmek için, **getenv** , **_putenv** ve **_tzset** gereken şekilde kullanın. **TZ**hakkında daha fazla bilgi için bkz. [_tzset](tzset.md) ve [_daylight, saat dilimi ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -148,6 +168,6 @@ New LIB variable is: c:\mylib;c:\yourlib
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_putenv, _wputenv](putenv-wputenv.md)<br/>
-[Ortam Sabitleri](../../c-runtime-library/environmental-constants.md)<br/>
+[Çevresel sabitler](../../c-runtime-library/environmental-constants.md)<br/>

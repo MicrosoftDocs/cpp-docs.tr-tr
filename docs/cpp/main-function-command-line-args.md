@@ -1,26 +1,42 @@
 ---
-title: Main işlevi ve komut satırı bağımsız değişkenleri (C++)
-description: Main işlevi, bir C++ program için giriş noktasıdır.
-ms.date: 12/10/2019
+title: main işlevi ve komut satırı bağımsız değişkenleri (C++)
+description: main işlevi, bir C++ programın giriş noktasıdır.
+ms.date: 01/15/2019
 ms.assetid: c6568ee6-40ab-4ae8-aa44-c99e232f64ac
-ms.openlocfilehash: 95e774700c63dc815f6d814bfda84a38a38d4e6e
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+no-loc:
+- main
+- wmain
+- inline
+- static
+- _tmain
+- void
+- exit
+- argc
+- argv
+- envp
+- CreateProcess
+- GetModuleFileName
+- char
+- wchar_t
+- extern
+ms.openlocfilehash: 33753e30304a9bb63c135979d3f20098e6b6401a
+ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302400"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123909"
 ---
-# <a name="main-function-and-command-line-arguments"></a>Main işlevi ve komut satırı bağımsız değişkenleri
+# <a name="opno-locmain-function-and-command-line-arguments"></a>main işlevi ve komut satırı bağımsız değişkenleri
 
-Tüm C++ programlar `main` işleve sahip olmalıdır. Ana işlev olmadan bir C++ *. exe* projesi derlemeye çalışırsanız, derleyici bir hata oluşturacak. (Dinamik bağlantı kitaplıkları ve statik kitaplıkların `main` işlevi yoktur.) `main` işlevi, kaynak kodunuzun yürütmeyi başladığı yerdir, ancak bir program `main` işlevine girmeden önce, açık başlatıcılar olmadan tüm statik sınıf üyeleri sıfır olarak ayarlanır. Microsoft C++'ta, genel statik nesneler `main`girişinden önce de başlatılır. Çeşitli kısıtlamalar, diğer C++ işlevler için uygulanan `main` işlevi için geçerlidir. `main` işlevi:
+Tüm C++ programlar `main` işleve sahip olmalıdır. Bir C++ *. exe* projesini main işlevi olmadan derlemeye çalışırsanız, derleyici bir hata oluşturacak. (Dinamik bağlantı kitaplıkları ve static kitaplıklarında `main` işlevi yoktur.) `main` işlevi, kaynak kodunuzun yürütmeyi başladığı yerdir, ancak bir program `main` işlevine girmeden önce, açık başlatıcıları olmayan tüm static sınıf üyeleri sıfır olarak ayarlanır. Microsoft C++'ta, genel static nesneleri `main`girişinden önce de başlatılır. Çeşitli kısıtlamalar, diğer C++ işlevler için uygulanan `main` işlevi için geçerlidir. `main` işlevi:
 
 - Aşırı yüklenemez (bkz. [Işlev aşırı yüklemesi](function-overloading.md)).
-- **Satır içi**olarak bildirilemez.
-- **Statik**olarak bildirilemez.
+- **inline** olarak bildirilemez.
+- **static** olarak bildirilemez.
 - Alınan adresi olamaz.
 - Çağrılamaz.
 
-`main` için bildirim sözdizimi şöyledir:
+main işlevi, dile yerleştirilmiş olduğundan bir bildirime sahip değildir. Olsaydı, `main` için bildirim söz dizimi şöyle görünür:
 
 ```cpp
 int main();
@@ -38,7 +54,7 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 
 Ayrıca, Tchar. h içinde tanımlanan `_tmain`de kullanabilirsiniz. _UNICODE tanımlanmadığı müddetçe `_tmain` `main` çözümlenir. Bu durumda, `_tmain` `wmain`çözümlenmektedir.
 
-Dönüş değeri belirtilmemişse, derleyici bir dönüş değeri olarak sıfır sağlar. Alternatif olarak, `main` ve `wmain` işlevleri, **void** döndürüyor (dönüş değeri yok) olarak da bildirilemez. **Void**döndüren `main` veya `wmain` bildirirseniz, bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) bildirimi kullanarak üst işleme veya işletim sistemine çıkış kodu geri dönemezsiniz. `main` veya `wmain` **void**olarak bildirildiği zaman çıkış kodu döndürmek için, [Exit](../cpp/exit-function.md) işlevini kullanmanız gerekir.
+Dönüş değeri belirtilmemişse, derleyici bir dönüş değeri olarak sıfır sağlar. Alternatif olarak, `main` ve `wmain` işlevleri döndürülen **void** (dönüş değeri yok) olarak da bildirilemez. **void** döndüren `main` veya `wmain` bildirirseniz, bir [Return](../cpp/return-statement-in-program-termination-cpp.md) ifadesini kullanarak üst işleme veya işletim sistemine bir exit kodu geri dönemezsiniz. `main` veya `wmain` **void** olarak bildirildiği zaman bir exit kodu döndürmek için [exit](../cpp/exit-function.md) işlevini kullanmanız gerekir.
 
 **SON Microsoft 'a özgü**
 
@@ -54,7 +70,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 Bağımsız değişken tanımları aşağıdaki gibidir:
 
 *argc*<br/>
-*Argv*içinde izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı. *Argc* parametresi her zaman 1 ' den büyük veya eşittir.
+*argv* ' de izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı. *argc* parametresi her zaman 1 ' den büyük veya eşittir.
 
 *argv*<br/>
 Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural gereği, `argv[0]` programın çağrıldığı komuttur, `argv[1]` ilk komut satırı bağımsız değişkenidir ve bu nedenle, her zaman NULL olan `argv[argc]`kadar olur. Komut satırı işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) .
@@ -62,18 +78,18 @@ Programın kullanıcısı tarafından girilen komut satırı bağımsız değiş
 İlk komut satırı bağımsız değişkeni her zaman `argv[1]` ve en son bir `argv[argc - 1]`.
 
 > [!NOTE]
-> Kural gereği, `argv[0]` programın çağrıldığı komuttur. Ancak, [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanarak bir işlem oluşturulabilir ve hem birinci hem de ikinci bağımsız değişkenleri (*lpApplicationName* ve *lpcommandline*) kullanıyorsanız, `argv[0]` çalıştırılabilir ad olmayabilir; yürütülebilir adı ve tam yolunu almak için [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanın.
+> Kural gereği, `argv[0]` programın çağrıldığı komuttur. Ancak, [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanarak bir işlem oluşturulabilir ve hem birinci hem de ikinci bağımsız değişkenleri (*lpApplicationName* ve *lpcommandline*) kullanıyorsanız, `argv[0]` yürütülebilir bir ad olmayabilir; yürütülebilir adı ve tam yolunu almak için [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanın.
 
 **Microsoft 'a özgü**
 
 *envp*<br/>
-Birçok UNIX sisteminde ortak bir uzantı olan *envp* dizisi, Microsoft C++'ta kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi bir NULL girdisiyle sonlandırılır. **Char** (`char *envp[]`) işaretçilerinden oluşan bir dizi veya **char** işaretçilerine (`char **envp`) yönelik bir işaretçi olarak bildirilebilecek. Programınız `main`yerine `wmain` kullanıyorsa, **char**yerine **wchar_t** veri türünü kullanın. `main` ve `wmain` geçirilen ortam bloğu, geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı `putenv` veya `_wputenv`çağrısıyla değiştirirseniz, geçerli ortam (`getenv` veya `_wgetenv` tarafından döndürülen) ve `_environ` veya `_wenviron` değişkeni) değişir, ancak envp tarafından işaret edilen blok değişmeyecektir. Ortam işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) . Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.
+Birçok UNIX sisteminde ortak bir uzantı olan *envp* dizisi Microsoft C++'ta kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi bir NULL girdisiyle sonlandırılır. **char** (`char *envp[]`) işaretçilerin bir dizisi olarak veya **char** işaretçilerine işaretçi olarak (`char **envp`) belirtilebilir. Programınız `main`yerine `wmain` kullanıyorsa, **char** yerine **wchar_t** veri türünü kullanın. `main` ve `wmain` geçirilen ortam bloğu, geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı `putenv` veya `_wputenv`çağrısıyla değiştirirseniz, geçerli ortam (`getenv` veya `_wgetenv` tarafından döndürülen) ve `_environ` veya `_wenviron` değişkeni) değişir, ancak envp tarafından işaret edilen blok değişmeyecektir. Ortam işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) . Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.
 
 **SON Microsoft 'a özgü**
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `main`için *argc*, *argv*ve *envp* bağımsız değişkenlerinin nasıl kullanılacağını gösterir:
+Aşağıdaki örnek, `main`için *argc* , *argv* ve *envp* bağımsız değişkenlerinin nasıl kullanılacağını gösterir:
 
 ```cpp
 // argument_definitions.cpp
@@ -147,7 +163,7 @@ Aşağıdaki tabloda, önceki listede bulunan kuralları gösteren örnek giriş
 
 ### <a name="results-of-parsing-command-lines"></a>Komut satırlarını ayrıştırma sonuçları
 
-|Komut satırı girişi|argv [1]|argv [2]|argv [3]|
+|Komut satırı girişi|argv[1]|argv[2]|argv[3]|
 |-------------------------|---------------|---------------|---------------|
 |`"abc" d e`|`abc`|`d`|`e`|
 |`a\\b d"e f"g h`|`a\\b`|`de fg`|`h`|
@@ -172,9 +188,9 @@ Komut satırı bağımsız değişkenleri, `_setargv` (veya geniş karakter orta
 
 Programınız komut satırı bağımsız değişkenleri içermiyorsa, komut satırı işlemeyi gerçekleştiren kitaplık yordamının kullanımını kaldırarak az miktarda alan kaydedebilirsiniz. Bu yordam `_setargv` olarak adlandırılır ve [joker karakter genişletmesi](../cpp/wildcard-expansion.md)bölümünde açıklanmıştır. Kullanımını bastırmak için `main` işlevini içeren dosyada hiçbir şey yapmaz ve `_setargv`adlandırın. `_setargv` çağrısı daha sonra `_setargv`tanımınız tarafından karşılanır ve kitaplık sürümü yüklenmez.
 
-Benzer şekilde, ortam tablosuna hiçbir daha `envp` bağımsız değişkeni aracılığıyla erişemiyorsanız, ortam işleme yordamının `_setenvp`yerine, kendi boş bir yordamını sağlayabilirsiniz. `_setargv` işlevinde olduğu gibi, `_setenvp` **extern "C"** olarak bildirilmelidir.
+Benzer şekilde, ortam tablosuna hiçbir daha `envp` bağımsız değişkeni aracılığıyla erişemiyorsanız, ortam işleme yordamının `_setenvp`yerine, kendi boş bir yordamını sağlayabilirsiniz. `_setargv` işlevinde olduğu gibi, `_setenvp` **"C"extern** olarak bildirilmelidir.
 
-Programınız, C çalışma zamanı kitaplığındaki `spawn` veya `exec` ailesinden bir yordam çağrısı yapabilir. Bu durumda, ortam işleme yordamını gizmemelisiniz, çünkü bu yordam bir ortamı üst işlemden alt işleme geçirmek için kullanılır.
+Programınız, C çalışma zamanı kitaplığındaki `spawn` veya `exec` ailesinden bir yordam çağrısı yapabilir. Bu yordam, bir ortamı üst işlemden alt işleme geçirmek için kullanıldığından, ortam işleme yordamını gizlemez.
 
 **SON Microsoft 'a özgü**
 

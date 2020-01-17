@@ -9,16 +9,16 @@ helpviewer_keywords:
 - main function
 - programs [C++], terminating
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
-ms.openlocfilehash: d16f8a5b7b6b23ad90aad886bbb9654e706549cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28b0d826dc02376f952d3522f2f037eacd298b8e
+ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325825"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123948"
 ---
 # <a name="main-function-and-program-execution"></a>main İşlevi ve Program Yürütme
 
-Her C programında adlandırılması gereken birincil (ana) bir işlev olan **ana**. Kodunuz Unicode programlama modelini kullanıyorsa, geniş karakter sürümünü kullanabilirsiniz **ana**, **wmain**. **Ana** program yürütme için başlangıç noktası işlevi görür. Genellikle çağrıları programdaki diğer işlevlere yönlendirerek program yürütmesini denetler. Bir program, genellikle sonunda yürütme durdurur **ana**, ancak çeşitli nedenlerle programın diğer noktalarında sonlandırabilirsiniz. Bazen belirli bir hata algılandığında, programı sonlandırılmaya zorlamak isteyebilirsiniz. Bunu yapmak için **çıkmak** işlevi. Bkz: *çalışma zamanı kitaplığı başvurusu* ilişkin bilgiler ve bir örnek kullanarak [çıkmak](../c-runtime-library/reference/exit-exit-exit.md) işlevi.
+Her C programının **Main**olarak adlandırılması gereken birincil (ana) işlevi vardır. Kodunuz Unicode programlama modeline uygunsa **ana**, **wmain**'in geniş karakterli sürümünü kullanabilirsiniz. **Main** işlevi program yürütmesi için başlangıç noktası işlevi görür. Genellikle çağrıları programdaki diğer işlevlere yönlendirerek program yürütmesini denetler. Program genellikle **Main**'in sonunda yürütmeyi durduruyor, ancak çeşitli nedenlerle programın diğer noktalarında sonlandırılabilir. Bazen belirli bir hata algılandığında, programı sonlandırılmaya zorlamak isteyebilirsiniz. Bunu yapmak için **Exit** işlevini kullanın. Bilgi için *çalışma zamanı kitaplığı başvurusuna* ve [Çıkış](../c-runtime-library/reference/exit-exit-exit.md) işlevini kullanarak bir örneğe bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,15 +28,15 @@ main( int argc, char *argv[ ], char *envp[ ] )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görevi gerçekleştirir. **Ana** işlevi, ilgili görevlerini gerçekleştirmek için bu işlevleri çağırabilir. Zaman **ana** başka bir işlev çağırır yürütme işlevdeki ilk deyimde başlayabilmesi için yürütme denetimini işleve geçirir. Denetim için bir işlev döndürür **ana** olduğunda bir `return` deyimi yürütüldüğünde veya işlevin sonuna ulaşıldığında.
+Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görevi gerçekleştirir. **Main** işlevi ilgili görevlerini gerçekleştirmek için bu işlevleri çağırabilir. **Main** başka bir işlevi çağırdığında yürütme denetimini işleve geçirir, böylece yürütme işlevdeki ilk deyimden başlar. Bir işlev, `return` bir ifade yürütüldüğünde veya işlevin sonuna ulaşıldığında denetimi **Main** öğesine döndürür.
 
-Herhangi bir işlevi bildirebilir dahil olmak üzere **ana**parametrelere sahip olacak şekilde. "Parametre" veya "biçimsel parametre" terimi, işleve geçirilen bir değeri alan tanımlayıcı anlamına gelir. Bkz: [parametreleri](../c-language/parameters.md) bağımsız değişkenleri parametrelere geçirme hakkında bilgi. Bir işlev diğerini çağırdığında, çağrılan işlev çağıran işlevden parametrelerine yönelik değerleri alır. Bu değerlere "bağımsız değişkenler" adı verilir. Biçimsel parametreler bildirebilirsiniz **ana** bağımsız değişkenleri komut satırından şu biçimi kullanarak alabilmesi:
+Parametrelere sahip olmak için **Main**dahil herhangi bir işlevi bildirebilirsiniz. "Parametre" veya "biçimsel parametre" terimi, işleve geçirilen bir değeri alan tanımlayıcı anlamına gelir. Bağımsız değişkenleri parametrelere geçirme hakkında bilgi için bkz. [Parametreler](../c-language/parameters.md) . Bir işlev diğerini çağırdığında, çağrılan işlev çağıran işlevden parametrelerine yönelik değerleri alır. Bu değerlere "bağımsız değişkenler" adı verilir. Aşağıdaki biçimi kullanarak komut satırından bağımsız değişkenleri alabilmesi için, biçimsel parametreleri **Main** 'e bildirebilirsiniz:
 
-Bilgi aktarmak istediğinizde **ana** gibi parametreleri işlevi, geleneksel olarak adlandırılan `argc` ve `argv`, C derleyicisi bu adlar gerekli olmasa da. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü parametresi geçirilir **ana**, bu parametrenin adlı `envp`. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
+**Ana** işleve bilgi geçirmek istediğinizde, parametreler geleneksel olarak `argc` ve `argv`olarak adlandırılır, ancak C derleyicisi bu adları gerektirmez. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü bir parametre **Main**'e geçirilirse, bu parametre `envp`olarak adlandırılır. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
 
-Bkz: [wmain kullanma](../c-language/using-wmain.md) geniş karakter sürümünü açıklamasını **ana**.
+**Ana**öğesinin geniş karakterli sürümünün açıklaması için bkz. [wmain kullanma](../c-language/using-wmain.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[main: Program Başlatma](../cpp/main-program-startup.md)<br/>
+[ana işlev ve komut satırı bağımsız değişkenleri (C++)](../cpp/main-function-command-line-args.md)\
 [C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma](../c-language/parsing-c-command-line-arguments.md)

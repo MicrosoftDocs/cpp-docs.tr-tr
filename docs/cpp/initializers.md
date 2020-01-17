@@ -6,12 +6,12 @@ helpviewer_keywords:
 - arrays [C++], array-element initializers
 - aggregate initializers [C++]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-ms.openlocfilehash: fd926177dd7540d8dc1e8512e9f17e20a0b8238c
-ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
+ms.openlocfilehash: 2cc68f2384402ce1eb3ac06b414f597a6b3951f0
+ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661610"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123974"
 ---
 # <a name="initializers"></a>Başlatıcılar
 
@@ -81,7 +81,7 @@ Sıfır başlatma, sıfır değerindeki bir değişken ayarının örtülü olar
 
 - Sayısal değişkenler 0 olarak başlatılır (ya da 0.0 ya da 0.0000000000 vb.).
 
-- Char değişkenleri olarak `'\0'`başlatılır.
+- Char değişkenleri `'\0'`için başlatılır.
 
 - İşaretçiler **nullptr**olarak başlatılır.
 
@@ -173,7 +173,7 @@ int main() {
 }
 ```
 
-Genel statik nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [ek başlatma konuları](../cpp/additional-startup-considerations.md).
+Genel statik nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [ana işlev ve komut satırı bağımsız değişkenleri](main-function-command-line-args.md).
 
 ### <a name="value-initialization"></a>Değer başlatma
 
@@ -417,7 +417,7 @@ int main() {
 }
 ```
 
-Aşağıdaki çıktıyı görmeniz gerekir:
+Aşağıdaki çıkışı görmeniz gerekir:
 
 ```Output
 agg1: c: 1
@@ -427,7 +427,7 @@ myArr3: 8 9 10 0 0
 ```
 
 > [!IMPORTANT]
-> Toplanan, ancak toplama başlatma sırasında açıkça başlatılmamış dizi üyeleri, `myArr3` yukarıdaki gibi sıfır olarak başlatılır.
+> Yukarıda `myArr3` olduğu gibi, toplanan ancak toplu başlatma sırasında açıkça başlatılmamış dizi üyeleri sıfır olarak başlatılır.
 
 #### <a name="initializing-unions-and-structs"></a>Birleşimler ve yapıları başlatma
 
@@ -499,7 +499,7 @@ int main()
 
 Geçici bir nesne ile başvuru başlatmanın tek yolu, sabit bir geçici nesneyi başlatmaktır. Başlatıldıktan sonra, bir başvuru türü değişkeni her zaman aynı nesneye işaret eder; başka bir nesneyi işaret etmek için değiştirilemez.
 
-Söz dizimi aynı olsa da, başvuru türü değişkenlerinin başlatılması ve başvuru türü değişkenlerine atanması anlam olarak farklılık görebilir. Önceki örnekte, değişen `iVar` ve `lVar` başlatmaları gibi görünen atamalar, ancak farklı etkileri vardır. Başlatma, başvuru türü değişkenin işaret ettiği nesneyi belirtir; atama, başvuru aracılığıyla başvurulan nesnesine atar.
+Söz dizimi aynı olsa da, başvuru türü değişkenlerinin başlatılması ve başvuru türü değişkenlerine atanması anlam olarak farklılık görebilir. Yukarıdaki örnekte, `iVar` ve `lVar` değişen atamalar, başlatma işlemine benzer ancak farklı etkilere sahiptir. Başlatma, başvuru türü değişkenin işaret ettiği nesneyi belirtir; atama, başvuru aracılığıyla başvurulan nesnesine atar.
 
 Hem başvuru türünün bir bağımsız değişkenini bir işleve geçirme hem de bir işlevden başvuru türü değeri döndürme nedeniyle, döndürülen başvurular gibi bir işleve biçimsel bağımsız değişkenler doğru şekilde başlatılır.
 
@@ -531,10 +531,10 @@ Başvuru türü değişkenleri yalnızca, başlatıcılar olmadan bildirilemez:
 
 Bir başvuru türü değişkeni başlatırken, derleyici bir nesneye başvuru oluşturma veya başvurunun işaret ettiği geçici bir nesne oluşturma arasında seçim yapmak için aşağıdaki şekilde gösterilen karar grafiğini kullanır.
 
-![Başvuru türlerinin başlatılması Için karar grafiği](../cpp/media/vc38s71.gif "Başvuru türlerinin başlatılması Için karar grafiği") <br/>
+![Başvuru türlerinin başlatılması için karar grafiği](../cpp/media/vc38s71.gif "Başvuru türlerinin başlatılması için karar grafiği") <br/>
 Başvuru türlerinin başlatılması için karar grafiği
 
-**Geçici** türlere ( **geçici** *TypeName* <strong>&</strong> *tanımlayıcısı*olarak belirtilen) yapılan başvurular, aynı türdeki **geçici** nesnelerle veya **geçici** olarak bildirilmemiş nesnelerle başlatılabilir . Ancak, bu tür **const** nesneleriyle başlatılamaz. Benzer şekilde, **const** türlerine yapılan başvurular ( **const** *TypeName* <strong>&</strong> *tanımlayıcısı*olarak bildirilmiştir) aynı türdeki **const** nesneleriyle (veya bu türe ya da nesnelerle dönüştürmeye sahip olan herhangi bir şekilde) başlatılabilir **const**olarak bildirilmemiş). Ancak, bu türdeki **geçici** nesnelerle başlatılamaz.
+**Geçici türlere yapılan** başvurular ( **geçici** *TypeName* <strong>&</strong> *tanımlayıcısı*olarak bildirilmiştir) aynı türdeki veya **geçici**olarak bildirilmeyen nesneler ile **geçici** nesneler ile başlatılabilir. Ancak, bu tür **const** nesneleriyle başlatılamaz. Benzer şekilde, **const** türlerine yapılan başvurular ( **const** *TypeName* <strong>&</strong> *tanımlayıcısı*olarak da belirtilir) aynı türdeki **const** nesneleriyle (veya bu türe dönüştürmeye veya **const**olarak bildirilmemiş nesnelerle) başlatılabilir. Ancak, bu türdeki **geçici** nesnelerle başlatılamaz.
 
 **Const** veya **volatile** anahtar sözcüğü ile nitelenen başvurular yalnızca **const** veya **volatile**olarak belirtilen nesneler ile başlatılabilir.
 
