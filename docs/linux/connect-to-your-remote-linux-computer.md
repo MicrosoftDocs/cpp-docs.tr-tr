@@ -1,14 +1,13 @@
 ---
 title: Visual Studio 'da hedef Linux sisteminize bağlanma
 description: Visual Studio C++ projesinin içinden bir uzak Linux makinesine veya Linux Için Windows alt sistemine bağlanma.
-ms.date: 11/09/2019
-ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 4069979100c3b71a32e90ad72fb334d21a226e64
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.date: 01/17/2020
+ms.openlocfilehash: d0065b63d7a81d3ae3d68b26184c88aca77f601c
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755284"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518224"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio 'da hedef Linux sisteminize bağlanma
 
@@ -18,17 +17,58 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
+::: moniker range="vs-2017"
+
+Bir Linux projesini, uzak bir makineyi veya Linux için Windows alt sistemini (WSL) hedefleyecek şekilde yapılandırabilirsiniz. Hem uzak makinelerde hem de WSL için, Visual Studio 2017 ' de uzak bağlantı ayarlamanız gerekir.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Bir Linux projesini, uzak bir makineyi veya Linux için Windows alt sistemini (WSL) hedefleyecek şekilde yapılandırabilirsiniz. Uzak makine için, Visual Studio 'da uzak bağlantı ayarlamanız gerekir. WSL 'ye bağlanmak için, [WSL 'ye Bağlan](#connect-to-wsl) bölümüne atlayın.
+
+::: moniker-end
+
 ::: moniker range=">=vs-2017"
 
-Bir Linux projesini, uzak bir makineyi veya Linux için Windows alt sistemini (WSL) hedefleyecek şekilde yapılandırabilirsiniz. Uzak makineler için ve Visual Studio 2017 üzerinde WSL için, uzak bir bağlantı ayarlamanız gerekir.
+Uzak bir bağlantı kullanırken, Visual Studio uzak makinede C++ Linux projelerini oluşturur. Fiziksel bir makine, buluttaki bir VM veya WSL olması buna karşı değildir.
+Projeyi derlemek için, Visual Studio kaynak kodu uzak Linux bilgisayarınıza kopyalar. Daha sonra kod, Visual Studio ayarlarına bağlı olarak derlenir.
 
-## <a name="connect-to-a-remote-linux-computer"></a>Uzak bir Linux bilgisayara bağlanma
+::: moniker-end
 
-Bir uzak Linux C++ SISTEMI (VM veya fiziksel makine) için bir Linux projesi oluştururken, Linux kaynak kodu uzak Linux bilgisayarınıza kopyalanır. Ardından, Visual Studio ayarları temel alınarak derlenir.
+::: moniker range="vs-2019"
 
-Bu uzak bağlantıyı kurmak için:
+> [!NOTE]
+> Visual Studio 2019 sürüm 16,5 ve üzeri sürümleri, Uzaktan geliştirme için Linux sistemlerine yönelik güvenli, Federal bilgi Işleme standardı (FIPS) 140-2 ile uyumlu şifreleme bağlantılarını da destekler. FIPS uyumlu bir bağlantı kullanmak için bunun yerine [FIPS uyumlu güvenli uzak Linux geliştirme ayarlama](set-up-fips-compliant-secure-remote-linux-development.md) bölümündeki adımları izleyin.
 
-1. Projeyi ilk kez oluşturun. İsterseniz, el ile yeni bir giriş de oluşturabilirsiniz. **Araçlar > seçenekler**' i seçin, **platformlar arası > Bağlantı Yöneticisi** düğümünü açın ve sonra **Ekle** düğmesini seçin.
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
+## <a name="set-up-the-ssh-server-on-the-remote-system"></a>Uzak sistemde SSH sunucusunu ayarlama
+
+SSH zaten Linux sisteminizde ayarlanmamışsa ve çalışmıyorsa, yüklemek için aşağıdaki adımları izleyin. Bu makaledeki örneklerde, OpenSSH Server sürüm 7,6 ile Ubuntu 18,04 LTS kullanılır. Ancak, yönergeler, OpenSSH 'nin son zamanlarda oluşan sürümü kullanılarak herhangi bir deden dolayı aynı olmalıdır.
+
+1. Linux sisteminde, OpenSSH sunucusunu yükleyip başlatın:
+
+   ```bash
+   sudo apt install openssh-server
+   sudo service ssh start
+   ```
+
+1. SSH sunucusunun sistem önyüklendiğinde otomatik olarak başlamasını isterseniz, systemctl kullanarak etkinleştirin:
+
+   ```bash
+   sudo systemctl enable ssh
+   ```
+
+## <a name="set-up-the-remote-connection"></a>Uzak bağlantıyı ayarlama
+
+1. Visual Studio 'da, **Seçenekler** iletişim kutusunu açmak için menü çubuğunda **Araçlar > Seçenekler** ' i seçin. Sonra, bağlantı Yöneticisi iletişim kutusunu açmak için **platformlar arası > bağlantı Yöneticisi** ' ni seçin.
+
+   Daha önce Visual Studio 'da bir bağlantı ayarlamadıysanız, projenizi ilk kez yapılandırdığınızda, Visual Studio sizin için bağlantı Yöneticisi iletişim kutusunu açar.
+
+1. Bağlantı Yöneticisi iletişim kutusunda yeni bir bağlantı eklemek için **Ekle** düğmesini seçin.
 
    ![Bağlantı Yöneticisi](media/settings_connectionmanager.png)
 
@@ -41,26 +81,18 @@ Bu uzak bağlantıyı kurmak için:
    | Giriş | Açıklama
    | ----- | ---
    | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
-   | **Bağ**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
+   | **Bağlantı noktası**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
    | **Kullanıcı adı**           | Kimlik doğrulaması yapılacak Kullanıcı
    | **Kimlik doğrulama türü** | Parola ve özel anahtar her ikisi de desteklenir
-   | **Parolayı**            | Girilen Kullanıcı adı için parola
+   | **Parola**            | Girilen Kullanıcı adı için parola
    | **Özel anahtar dosyası**    | SSH bağlantısı için özel anahtar dosyası oluşturuldu
    | **Deyimi**          | Yukarıda seçilen özel anahtarla kullanılan parola
 
-   Kimlik doğrulaması için bir parola ya da anahtar dosyası ve parola kullanabilirsiniz. Birçok geliştirme senaryosunda parola kimlik doğrulaması yeterlidir. Ortak/özel anahtar dosyası kullanmayı tercih ediyorsanız, yeni bir tane oluşturabilir veya [var olan](https://security.stackexchange.com/questions/10203/reusing-private-public-keys)bir dosyayı yeniden kullanabilirsiniz. Şu anda yalnızca RSA ve DSA anahtarları desteklenir.
-
-   Aşağıdaki adımları izleyerek özel bir RSA anahtar dosyası oluşturabilirsiniz:
-
-   1. Windows makinesinde, `ssh-keygen -t rsa`ile SSH anahtar çiftini oluşturun. Komut bir ortak anahtar ve özel anahtar oluşturur. Varsayılan olarak, `id_rsa.pub` ve `id_rsa`adlarını kullanarak anahtarları `C:\Users\%USERNAME%\.ssh`altına koyar.
-
-   1. Windows 'tan ortak anahtarı Linux makinesine kopyalayın: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`.
-
-   1. Linux sisteminde, anahtarı yetkili anahtarlar listesine ekleyin (ve dosyanın doğru izinlere sahip olduğundan emin olun): `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
+   Kimlik doğrulaması için bir parola ya da anahtar dosyası ve parola kullanabilirsiniz. Birçok geliştirme senaryosunda parola kimlik doğrulaması yeterlidir, ancak anahtar dosyaları daha güvenlidir. Zaten bir anahtar çiftiniz varsa, yeniden kullanmak mümkündür. Şu anda Visual Studio, uzak bağlantılar için yalnızca RSA ve DSA anahtarlarını destekliyor.
 
 1. Uzak bilgisayarla bağlantı kurmayı denemek için **Bağlan** düğmesini seçin.
 
-   Bağlantı başarılı olursa, Visual Studio IntelliSense 'i uzak üstbilgileri kullanacak şekilde yapılandırmaya başlayacaktır. Daha fazla bilgi için bkz. [uzak sistemlerdeki üst bilgiler Için IntelliSense](configure-a-linux-project.md#remote_intellisense).
+   Bağlantı başarılı olursa, Visual Studio IntelliSense 'i uzak üstbilgileri kullanacak şekilde yapılandırır. Daha fazla bilgi için bkz. [uzak sistemlerdeki üst bilgiler Için IntelliSense](configure-a-linux-project.md#remote_intellisense).
 
    Bağlantı başarısız olursa, değiştirilmesi gereken giriş kutuları kırmızı renkle gösterilir.
 
@@ -72,31 +104,41 @@ Bu uzak bağlantıyı kurmak için:
 
    ::: moniker range="vs-2019"
 
-   Bağlantı sorunlarını gidermeye yardımcı olmak üzere günlüğe yazmayı etkinleştirmek için, **platformlar arası > günlüğe kaydetme > araçlar > seçeneklere** gidin:
+## <a name="logging-for-remote-connections"></a>Uzak bağlantılar için günlüğe kaydetme
+
+   Bağlantı sorunlarını gidermeye yardımcı olmak için günlük kaydını etkinleştirebilirsiniz. Menü çubuğunda **araçlar > seçenekler**' i seçin. **Seçenekler** iletişim kutusunda, **platformlar arası > günlük kaydını**seçin:
 
    ![Uzaktan günlüğe kaydetme](media/remote-logging-vs2019.png)
 
    Günlükler arasında bağlantılar, uzak makineye gönderilen tüm komutlar (bunların metin, çıkış kodu ve yürütme süresi) ve Visual Studio 'dan kabuğa giden tüm çıktılar bulunur. Günlüğe kaydetme, Visual Studio 'daki platformlar arası CMake projesi veya MSBuild tabanlı Linux projesi için geçerlidir.
 
-   Çıktıyı bir dosyaya veya Çıkış Penceresi **çapraz platform günlüğü** bölmesine gidecek şekilde yapılandırabilirsiniz. MSBuild tabanlı Linux projeleri için, uzak makineye gönderilen MSBuild komutları, işlem dışı yayıldıklarından **Çıkış penceresi** yönlendirmez. Bunun yerine, "msbuild_" önekiyle birlikte bir dosyaya kaydedilir.
+   Çıktıyı bir dosyaya veya çıkış penceresindeki **platformlar arası günlüğe kaydetme** bölmesine gidecek şekilde yapılandırabilirsiniz. MSBuild tabanlı Linux projeleri için, uzak makineye gönderilen MSBuild komutları, işlem dışı yayıldıklarından **Çıkış penceresi** yönlendirmez. Bunun yerine, "msbuild_" önekiyle birlikte bir dosyaya kaydedilir.
+
+## <a name="command-line-utility-for-the-connection-manager"></a>Bağlantı Yöneticisi için komut satırı yardımcı programı  
+
+**Visual studio 2019 sürüm 16,5 veya üzeri**: ConnectionManager. exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Ayrıca, bu uygulamayı kullanarak sürekli tümleştirme için Visual Studio 'Yu ayarlayabilirsiniz. Örnek olarak, ConnectionManager komutuna yönelik bir başvuru ve bkz. [ConnectionManager başvurusu](connectionmanager-reference.md).  
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 ## <a name="tcp-port-forwarding"></a>TCP bağlantı noktası Iletme
 
-Visual Studio 'nun Linux desteğinin TCP bağlantı noktası iletme bağımlılığı vardır. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, **rsync** ve **gdbserver** etkilenecek. Bu bağımlılık etkilenirse, geliştirici topluluğu 'nda bu [öneri biletini](https://developercommunity.visualstudio.com/idea/840265/dont-rely-on-ssh-tcp-port-forwarding-for-c-remote.html) kullanabilirsiniz.
+Visual Studio 'nun Linux desteğinin TCP bağlantı noktası iletme bağımlılığı vardır. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, **rsync** ve **gdbserver** etkilenir. Bu bağımlılık etkilenirse, geliştirici topluluğu 'nda bu [öneri biletini](https://developercommunity.visualstudio.com/idea/840265/dont-rely-on-ssh-tcp-port-forwarding-for-c-remote.html) kullanabilirsiniz.
 
 rsync, hem MSBuild tabanlı Linux projeleri hem de CMake projeleri tarafından, [uzak sisteminizdeki üst bilgileri IntelliSense tarafından kullanılmak üzere Windows 'a kopyalamak](configure-a-linux-project.md#remote_intellisense)için kullanılır. TCP bağlantı noktası iletmeyi etkinleştirmezseniz, uzak üst bilgilerin otomatik indirilmesini devre dışı bırakın. Devre dışı bırakmak için **araçlar > seçenekler > platformlar arası > bağlantı yöneticisi > uzak üstbilgiler IntelliSense Yöneticisi**' ni kullanın. Uzak sistemde TCP bağlantı noktası iletme etkin değilse, IntelliSense için uzak üst bilgilerin indirilmesi başladığında bu hatayı görürsünüz:
 
 ![Üst bilgiler hatası](media/port-forwarding-headers-error.png)
 
-Rsync, kaynak dosyaları uzak sisteme kopyalamak için Visual Studio 'nun CMake desteği tarafından da kullanılır. TCP bağlantı noktası iletmeyi etkinleştirebiliyorsanız, uzak kopya kaynakları yönteminiz olarak SFTP kullanabilirsiniz. SFTP genellikle rsync 'ten daha yavaştır, ancak TCP bağlantı noktası iletme bağımlılığı yoktur. Uzak kopya kaynakları yönteminizi [CMake ayarları düzenleyicisinde](../build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects) **remotecopysourcesmethod** özelliği ile yönetebilirsiniz. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, Csync çıkış penceresinde ilk kez rsync 'i çalıştırdığında bir hata görürsünüz.
+rsync, kaynak dosyaları uzak sisteme kopyalamak için Visual Studio 'nun CMake desteği tarafından da kullanılır. TCP bağlantı noktası iletmeyi etkinleştirebiliyorsanız, uzak kopya kaynakları yönteminiz olarak SFTP kullanabilirsiniz. SFTP genellikle rsync 'ten daha yavaştır, ancak TCP bağlantı noktası iletme bağımlılığı yoktur. Uzak kopya kaynakları yönteminizi [CMake ayarları düzenleyicisinde](../build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects) **remotecopysourcesmethod** özelliği ile yönetebilirsiniz. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, Csync çıkış penceresinde ilk kez rsync 'i çalıştırdığında bir hata görürsünüz.
 
 ![Rsync hatası](media/port-forwarding-copy-error.png)
 
-Gdbserver, katıştırılmış cihazlarda hata ayıklama için kullanılabilir. TCP bağlantı noktası iletmeyi etkinleştirebiliyorsanız, tüm uzaktan hata ayıklama senaryolarında gdb kullanmanız gerekir. Uzak sistemdeki projelerde hata ayıklanırken, gdb varsayılan olarak kullanılır.
-
-::: moniker-end
+gdbserver, katıştırılmış cihazlarda hata ayıklama için kullanılabilir. TCP bağlantı noktası iletmeyi etkinleştirebiliyorsanız, tüm uzaktan hata ayıklama senaryolarında gdb kullanmanız gerekir. uzak sistemdeki projelerde hata ayıklanırken, gdb varsayılan olarak kullanılır.
 
 ## <a name="connect-to-wsl"></a>WSL 'ye Bağlan
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 

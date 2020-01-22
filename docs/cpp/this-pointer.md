@@ -1,6 +1,7 @@
 ---
-title: this İşaretçisi
-ms.date: 11/04/2016
+title: this işaretçisi
+description: this işaretçi, statik olmayan üye işlevlerinde geçerli nesneye yönelik derleyici tarafından oluşturulan bir işaretçidir.
+ms.date: 01/22/2020
 f1_keywords:
 - this_cpp
 helpviewer_keywords:
@@ -8,16 +9,24 @@ helpviewer_keywords:
 - pointers, to class instance
 - this pointer
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
-ms.openlocfilehash: c90a843ba978a98c1c61d9e096d62b85256ab0c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+no-loc:
+- this
+- class
+- struct
+- union
+- sizeof
+- const
+- volatile
+ms.openlocfilehash: 58bba2edd7a457c624b747b5a65d209995852848
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330485"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518341"
 ---
-# <a name="this-pointer"></a>this İşaretçisi
+# <a name="opno-locthis-pointer"></a>this işaretçisi
 
-**Bu** işaretçisine, yalnızca statik olmayan üye işlevlerinin içinden erişilebilir bir **sınıfı**, **yapı**, veya **birleşim** türü. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri yoktur bir **bu** işaretçi.
+**this** işaretçi, yalnızca bir **class** , **struct** veya **union** türünün statik olmayan üye işlevlerinde erişilebilen bir işaretçisidir. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri **this** işaretçisine sahip değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,19 +37,19 @@ this->member-identifier
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir nesnenin **bu** işaretçisi nesnenin kendisini; bir parçası değil sonucuna yansıtılmaz bir **sizeof** deyimi nesne üzerinde. Bunun yerine, bir nesne için statik olmayan bir üye işlevi çağrıldığında, derleyici tarafından nesnenin adresi gizli bir bağımsız değişken olarak işleve geçirilir. Örneğin, aşağıdaki işlev çağrısı:
+Nesnenin **this** işaretçisi nesnenin kendisinin bir parçası değildir. Nesne üzerindeki bir **sizeof** deyimin sonucuna yansıtılmaz. Statik olmayan bir üye işlevi bir nesne için çağrıldığında, derleyici nesnenin adresini bir gizli bağımsız değişken olarak işleve geçirir. Örneğin, aşağıdaki işlev çağrısı:
 
 ```cpp
 myDate.setMonth( 3 );
 ```
 
-şu şekilde yorumlanabilir:
+şöyle yorumlanabilecek:
 
 ```cpp
 setMonth( &myDate, 3 );
 ```
 
-Nesnenin adresi olarak üye işlev içinden kullanılabilir **bu** işaretçi. Çoğu kullanım **bu** örtüktür. Gereksiz olsa da, açıkça kullanılacak hukuk olduğu **bu** sınıf üyelerine başvuru yaparken. Örneğin:
+Nesnenin adresi, **this** işaretçisi olarak üye işlevin içinden kullanılabilir. Çoğu **this** işaretçisi kullanımları örtük. classüyelerine başvuru yaparken açık bir **this** kullanmak da gereksizdir. Örneğin:
 
 ```cpp
 void Date::setMonth( int mn )
@@ -57,7 +66,7 @@ void Date::setMonth( int mn )
 return *this;
 ```
 
-**Bu** işaretçi kendi kendine başvuru yapmaya karşı koruma sağlamak için de kullanılır:
+**this** işaretçi kendi kendine başvuruya karşı koruma için de kullanılır:
 
 ```cpp
 if (&Object != this) {
@@ -65,9 +74,9 @@ if (&Object != this) {
 ```
 
 > [!NOTE]
->  Çünkü **bu** this işaretçisi atamaları **bu** izin verilmez. C++'ın önceki uygulamaları atama yapmaya izin **bu**.
+> **this** işaretçi değiştirilemeyecek olduğundan, **this** işaretçisine yönelik atamalara izin verilmez. C++ **this** için izin verilen atama öncesi uygulamalar.
 
-Bazen, **bu** işaretçisi doğrudan kullanılır — Örneğin, kendine başvuru yapan veri yapılarını işlemek için geçerli nesnenin adresinin gerekli olduğu.
+Bazen **this** işaretçi doğrudan kullanılır — Örneğin, geçerli nesnenin adresinin gerekli olduğu kendi kendine başvuran veri yapılarını değiştirmek için.
 
 ## <a name="example"></a>Örnek
 
@@ -139,11 +148,11 @@ my buffer
 your buffer
 ```
 
-## <a name="type-of-the-this-pointer"></a>Bu öğenin türü işaretçi
+## <a name="type-of-the-opno-locthis-pointer"></a>this işaretçisinin türü
 
-**Bu** işaretçinin türü, işlev bildiriminde tarafından değiştirilebilir **const** ve **geçici** anahtar sözcükleri. Bir işlevi bu anahtar sözcüklerden birinin veya daha fazlasının özniteliklerini alacak şekilde bildirmek için anahtar sözcükleri işlev bağımsız değişken listesinden sonra ekleyin.
+**this** işaretçisinin türü, işlev bildiriminde **const** ve **volatile** anahtar sözcükleriyle değiştirilebilir. Bu özniteliklerin birine sahip bir işlevi bildirmek için, işlev bağımsız değişkeni listesinden sonra anahtar sözcükleri ekleyin.
 
-Bu örneği göz önünde bulundurun:
+Bir örnek düşünün:
 
 ```cpp
 // type_of_this_pointer1.cpp
@@ -156,7 +165,7 @@ int main()
 }
 ```
 
-Yukarıdaki kod, bir üye işlev bildirir `X`, hangi **bu** işaretçisi olarak kabul edildiği bir **const** işaretçi bir **const** nesne. Birleşimlerini *cv mod listesi* seçenekleri kullanılabilir ancak bunlar her zaman işaret ettiği nesneyi değiştirmek **bu**değil **bu** işaretçinin kendisinde. Bu nedenle, aşağıdaki bildirimi işlev bildirir `X`; **bu** işaretçi bir **const** işaretçi bir **const** nesnesi:
+Yukarıdaki kod, **this** işaretçisinin **const** nesnesine **const** işaretçi olarak kabul edildiği `X`bir üye işlevi bildirir. *CV-mod-liste* seçeneklerinin birleşimleri kullanılabilir, ancak işaretçi kendisini değil **this** işaretçisi tarafından işaret edilen nesneyi her zaman değiştirir. Aşağıdaki bildirim, **this** işaretçisinin bir **const** nesnesine **const** işaretçisi olduğu işlev `X`bildirir:
 
 ```cpp
 // type_of_this_pointer2.cpp
@@ -169,27 +178,29 @@ int main()
 }
 ```
 
-Türünü **bu** üye işlevi aşağıdaki sözdizimi tarafından açıklanan burada *cv niteleyici listesi* olabilir ve üye işlevleri bildirimcisinden belirlendiği **const**veya **geçici** (veya her ikisi de) ve *sınıf türü* sınıf adıdır:
+Bir üye işlevindeki **this** türü aşağıdaki sözdizimi tarafından açıklanmıştır. *CV niteleyicisi listesi* , üye işlevin bildirimci öğesinden belirlenir. **const** veya **volatile** (ya da her ikisi) olabilir. *classtürü* classadıdır:
 
-*[cv niteleyici listesi] sınıf türü* **&#42; const bu**
+[*CV-niteleyici-listesi*] *classtürü* **\* const this**
 
-Diğer bir deyişle, **bu** her zaman bir const işaretçisidir; olduğundan yeniden atanamaz.  **Const** veya **geçici** işaret ettiği sınıf örneği uygulanacağı üye işlevi bildiriminde kullanılan niteleyicileri **bu** bu işlevin kapsamında.
+Diğer bir deyişle **this** işaretçisi her zaman bir const işaretçidir. Yeniden atanamaz.  Üye işlevi bildiriminde kullanılan **const** veya **volatile** niteleyicileri, bu işlevin kapsamındaki **this** işaretçi noktaları class örneğine uygulanır.
 
 Aşağıdaki tabloda, bu değiştiricilerin nasıl çalıştığı hakkında daha fazla bilgi verilmektedir.
 
-### <a name="semantics-of-this-modifiers"></a>Değiştiricilerin Semantiği
+### <a name="semantics-of-opno-locthis-modifiers"></a>this değiştiricilerin semantiği
 
 |Değiştirici|Açıklama|
 |--------------|-------------|
-|**const**|Üye verilerini değiştiremez; olmayan üye işlevleri çağrılamaz **const**.|
-|**volatile**|Üye verileri her erişildiğinde bellekten yüklenir; bazı iyileştirmeler devre dışı bırakılır.|
+|**const**|Üye verileri değiştirilemiyor; **const** olmayan üye işlevleri çağrılamaz.|
+|**volatile**|Üye verileri her erişildiğinde bellekten yüklenir; belirli iyileştirmeleri devre dışı bırakır.|
 
-Geçirilecek bir hata olduğunu bir **const** olmayan bir üye işlev nesnesine **const**. Benzer şekilde, bu geçirmek bir hatadır bir **geçici** olmayan bir üye işlev nesnesine **geçici**.
+**const** nesnesini **const** olmayan bir üye işlevine geçirmek hatadır.
 
-Olarak bildirilen üye işlevleri **const** üye verilerini değiştiremez; böyle işlevlerde, **bu** işaretçisidir bir işaretçi bir **const** nesne.
+Benzer şekilde, bir **volatile** nesnesini **volatile** olmayan bir üye işlevine geçirmek da hatadır.
+
+**const** olarak belirtilen üye işlevleri üye verilerini değiştirememelidir — bu tür işlevlerde **this** işaretçisi **const** nesnesine yönelik bir işaretçidir.
 
 > [!NOTE]
->  Olarak oluşturucular ve Yıkıcılar bildirilemez **const** veya **geçici**. Ancak, olabilirler çağrılabilirler **const** veya **geçici** nesneleri.
+> Oluşturucular ve Yıkıcılar **const** veya **volatile** olarak bildirilemez. Ancak, **const** veya **volatile** nesnelerinde çağrılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

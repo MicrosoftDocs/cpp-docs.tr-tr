@@ -1,5 +1,5 @@
 ---
-title: '/ ZC: referencebinding (başvuru bağlama kurallarını zorla)'
+title: /Zc:referenceBinding (Başvuru bağlama kurallarını zorla)
 ms.date: 03/06/2018
 f1_keywords:
 - referenceBinding
@@ -11,30 +11,30 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
-ms.openlocfilehash: 9dfe8f5b4713d9567f6e98af6685c552fb51160e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b7e297d6fd913ddda4d44a42298a361e314af0b5
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316112"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518484"
 ---
-# <a name="zcreferencebinding-enforce-reference-binding-rules"></a>/ ZC: referencebinding (başvuru bağlama kurallarını zorla)
+# <a name="zcreferencebinding-enforce-reference-binding-rules"></a>/Zc:referenceBinding (Başvuru bağlama kurallarını zorla)
 
-Zaman **/ZC: referencebinding** seçeneği belirtildiğinde, derleyici geçici bir bağlama bir sabit olmayan lvalue başvuru izin vermiyor.
+**/Zc: referenceBinding** seçeneği belirtildiğinde, derleyici const olmayan bir lvalue başvurusunun geçici bağlama yapmasına izin vermez.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:referenceBinding**[**-**]
+> **/Zc:referenceBinding**[ **-** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **/ZC: referencebinding** belirtilirse, derleyici C ++ 11 standart 8.5.3 bölümünü izler ve geçici bir kullanıcı tanımlı tür sabit olmayan lvalue başvuru bağlama ifadeleri izin vermez. Varsayılan olarak veya **/Zc:referenceBinding-** belirtilirse, derleyici bu tür ifadeleri bir Microsoft uzantısı olarak sağlar, ancak düzey 4 uyarısı verilir. Kod güvenliği, taşınabilirlik ve uyumluluğu için kullanmanızı öneririz **/ZC: referencebinding**.
+**/Zc: referenceBinding** belirtilirse, derleyici c++ 11 standardının 8.5.3 bölümünü izler: Kullanıcı tanımlı bir türü geçici olarak const olmayan bir dizi başvurusuna bağlayan ifadelere izin vermez. Varsayılan olarak veya **/Zc: referenceBinding-** belirtilmişse, derleyici Microsoft uzantısı olarak böyle ifadelere izin verir, ancak 4. düzey bir uyarı verilir. Kod güvenliği, taşınabilirlik ve uyumluluk için **/Zc: referenceBinding**' i kullanmanızı öneririz.
 
-**/ZC: referencebinding** seçeneği varsayılan olarak kapalıdır. [/ Permissive-](permissive-standards-conformance.md) derleyici seçeneği, bu seçenek örtük olarak ayarlar, ancak kullanarak kılınabilir **/Zc:referenceBinding-**.
+**/Zc: referenceBinding** seçeneği varsayılan olarak kapalıdır. [/Permissive-](permissive-standards-conformance.md) derleyici seçeneği bu seçeneği örtülü olarak ayarlar, ancak **/Zc: referencebinding-** kullanılarak geçersiz kılınabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, sabit olmayan lvalue başvuru bağlı kullanıcı tanımlı bir tür geçici sağlayan Microsoft uzantısı gösterir.
+Bu örnek, Kullanıcı tanımlı bir türün geçici bir şekilde const olmayan bir başvuruya bağlanmasını sağlayan Microsoft uzantısını gösterir.
 
 ```cpp
 // zcreferencebinding.cpp
@@ -48,22 +48,22 @@ S g() {
     return S{};
 }
 
-void main() {
+int main() {
     S& s = g();         // warning C4239 at /W4
     const S& cs = g();  // okay, bound to const ref
     f(g());             // Extension: error C2664 only if /Zc:referenceBinding
 }
 ```
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'teki uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri** > **CC++ /**  > **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: referencebinding** seçip **Tamam**.
+1. **Ek seçenekler** özelliğini **/Zc: referencebinding** ' i içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,7 @@
 ---
 title: CListBox sınıfı
-ms.date: 11/04/2016
+description: MFC Clienstbox sınıfının ve onun üye işlevlerinin açıklaması.
+ms.date: 01/22/2020
 f1_keywords:
 - CListBox
 - AFXWIN/CListBox
@@ -102,12 +103,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: e47a580e786572b0741700721a9d1ba4ac925fcd
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5c3337641dcfc720a5f9fbccf5bb0614e97c3b54
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505688"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518432"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 
@@ -121,20 +122,20 @@ class CListBox : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[Clienstbox:: Clienstbox](#clistbox)|Bir `CListBox` nesnesi oluşturur.|
+|[Clienstbox:: Clienstbox](#clistbox)|`CListBox` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Clienstbox:: AddString](#addstring)|Liste kutusuna bir dize ekler.|
 |[Clienstbox:: Chartoıtem](#chartoitem)|Dizeleri olmayan, sahip çizimi liste kutuları için özel WM_CHAR işleme sağlamak üzere geçersiz kılın.|
 |[Clienstbox:: CompareItem](#compareitem)|Sıralanmış bir sahip çiz liste kutusunda yeni bir öğenin konumunu öğrenmek için Framework tarafından çağırılır.|
-|[Clienstbox:: Create](#create)|Windows liste kutusunu oluşturur ve `CListBox` nesneye ekler.|
+|[Clienstbox:: Create](#create)|Windows liste kutusunu oluşturur ve `CListBox` nesnesine iliştirir.|
 |[Clienstbox::D Eleteıtem](#deleteitem)|Kullanıcı bir sahip çizimi liste kutusundan bir öğe sildiğinde Framework tarafından çağırılır.|
 |[Clienstbox::D eleteString](#deletestring)|Bir liste kutusundan bir dize siler.|
 |[Clienstbox::D IR](#dir)|Geçerli dizinden dosya adlarını, sürücüleri veya her ikisini de bir liste kutusuna ekler.|
@@ -185,9 +186,9 @@ Bir liste kutusu, kullanıcının görüntüleyebileceği ve seçebileceğiniz d
 
 Tek seçimli liste kutusunda Kullanıcı yalnızca bir öğe seçebilir. Çoklu seçim listesi kutusunda bir dizi öğe seçilebilir. Kullanıcı bir öğe seçtiğinde, vurgulanır ve liste kutusu üst pencereye bir bildirim iletisi gönderir.
 
-Bir iletişim kutusu şablonundan ya da doğrudan kodunuzda bir liste kutusu oluşturabilirsiniz. Doğrudan `CListBox` oluşturmak için, nesneyi oluşturun, sonra Windows liste kutusu denetimini [](#create) oluşturmak ve `CListBox` nesneye iliştirmek için Create member işlevini çağırın. İletişim kutusu şablonunda bir liste kutusu kullanmak için, iletişim kutusu sınıfınızda bir liste kutusu değişkeni bildirin, sonra üye değişkenini denetime bağlamak için `DDX_Control` iletişim kutusu `DoDataExchange` sınıfınızın işlevinde kullanın. (iletişim kutusu sınıfınıza bir denetim değişkeni eklediğinizde bu sizin için otomatik olarak yapılır.)
+Bir iletişim kutusu şablonundan ya da doğrudan kodunuzda bir liste kutusu oluşturabilirsiniz. Doğrudan oluşturmak için, `CListBox` nesnesini oluşturun ve sonra Windows liste kutusu denetimini oluşturmak ve `CListBox` nesnesine eklemek için üye [Oluştur](#create) işlevini çağırın. İletişim kutusu şablonunda bir liste kutusu kullanmak için, iletişim kutusu sınıfınızda bir liste kutusu değişkeni bildirin, sonra üye değişkenini denetime bağlamak için iletişim kutusu sınıfınızın `DoDataExchange` işlevindeki `DDX_Control` kullanın. (iletişim kutusu sınıfınıza bir denetim değişkeni eklediğinizde bu sizin için otomatik olarak yapılır.)
 
-Oluşturma, öğesinden `CListBox`türetilmiş bir sınıfta tek adımlı bir işlem olabilir. Türetilmiş sınıf için bir Oluşturucu yazın ve oluşturucuyu içinden `Create` çağırın.
+Oluşturma, `CListBox`türetilmiş bir sınıfta tek adımlı bir işlem olabilir. Türetilmiş sınıf için bir Oluşturucu yazın ve Oluşturucu içinden `Create` çağırın.
 
 Bir liste kutusu tarafından üst öğeye (genellikle [CDialog](../../mfc/reference/cdialog-class.md)'dan türetilmiş bir sınıf) gönderilen Windows bildirim iletilerini işlemek istiyorsanız, her ileti için üst sınıfa bir ileti eşleme girişi ve ileti işleyici üye işlevi ekleyin.
 
@@ -195,7 +196,7 @@ Her ileti eşleme girişi aşağıdaki biçimi alır:
 
 `ON_Notification( id, memberFxn )`
 
-Burada `id` , bildirimi gönderen liste kutusu denetiminin alt pencere kimliğini belirtir ve `memberFxn` bildirimi işlemek için yazdığınız ana üye işlevinin adıdır.
+Burada `id` bildirimi gönderen liste kutusu denetiminin alt pencere KIMLIĞINI belirtir ve `memberFxn`, bildirimi işlemek için yazdığınız ana üye işlevinin adıdır.
 
 Üst öğenin işlev prototipi aşağıdaki gibidir:
 
@@ -203,27 +204,27 @@ Burada `id` , bildirimi gönderen liste kutusu denetiminin alt pencere kimliğin
 
 Aşağıda olası ileti eşleme girişlerinin listesi ve bunların üst öğeye gönderileceği durumların açıklaması verilmiştir:
 
-- ON_LBN_DBLCLK Kullanıcı, liste kutusunda bir dizeyi çift tıklatır. Yalnızca [LBS_NOTIFY](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiline sahip bir liste kutusu bu bildirim iletisini gönderir.
+- Kullanıcı ON_LBN_DBLCLK liste kutusunda bir dizeye çift tıklar. Yalnızca [LBS_NOTIFY](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili olan bir liste kutusu, bu bildirim iletisini gönderir.
 
-- ON_LBN_ERRSPACE liste kutusu isteği karşılamak için yeterli bellek ayıramıyor.
+- ON_LBN_ERRSPACE liste kutusu, isteği karşılamak için yeterli bellek ayıramıyor.
 
 - ON_LBN_KILLFOCUS liste kutusu giriş odağını kaybetmekte.
 
-- ON_LBN_SELCANCEL geçerli liste kutusu seçimi iptal edildi. Bu ileti yalnızca bir liste kutusu LBS_NOTIFY stiline sahip olduğunda gönderilir.
+- Geçerli liste kutusu seçiminin ON_LBN_SELCANCEL iptal edildi. Bu ileti yalnızca bir liste kutusu LBS_NOTIFY stiline sahip olduğunda gönderilir.
 
-- ON_LBN_SELCHANGE liste kutusunda seçimi değişmiştir. Seçim [Clienstbox:: SetCurSel](#setcursel) member işlevi tarafından değiştirilirse bu bildirim gönderilmez. Bu bildirim yalnızca LBS_NOTIFY stiline sahip bir liste kutusu için geçerlidir. Seçim değişmese de, Kullanıcı bir ok tuşuna bastığında, LBN_SELCHANGE bildirim iletisi bir çoklu seçim liste kutusu için gönderilir.
+- Liste kutusunda seçimi ON_LBN_SELCHANGE değişmiştir. Seçim [Clienstbox:: SetCurSel](#setcursel) member işlevi tarafından değiştirilirse bu bildirim gönderilmez. Bu bildirim yalnızca LBS_NOTIFY stili olan bir liste kutusu için geçerlidir. LBN_SELCHANGE bildirim iletisi, seçim değişmese de, Kullanıcı bir ok tuşuna bastığında bir çoklu seçim liste kutusu için gönderilir.
 
 - ON_LBN_SETFOCUS liste kutusu giriş odağını alıyor.
 
-- ON_WM_CHARTOITEM bir WM_CHAR iletisi alan bir sahip çiz liste kutusu.
+- Bir WM_CHAR iletisi alan bir sahip çizimi liste kutusu ON_WM_CHARTOITEM.
 
-- LBS_WANTKEYBOARDINPUT stiline sahip bir liste kutusu ON_WM_VKEYTOITEM bir WM_KEYDOWN iletisi alır.
+- LBS_WANTKEYBOARDINPUT stili WM_KEYDOWN bir ileti alan liste kutusu ON_WM_VKEYTOITEM.
 
-İletişim kutusu içinde ( `CListBox` bir iletişim kaynağı aracılığıyla) bir nesne oluşturursanız `CListBox` , Kullanıcı iletişim kutusunu kapattığında nesne otomatik olarak yok edilir.
+İletişim kutusu içinde bir `CListBox` nesnesi oluşturursanız (bir iletişim kutusu kaynağı aracılığıyla), Kullanıcı iletişim kutusunu kapattığında `CListBox` nesnesi otomatik olarak yok edilir.
 
-Bir pencere içinde bir `CListBox` nesne oluşturursanız, `CListBox` nesneyi yok etmeniz gerekebilir. `CListBox` Nesneyi yığında oluşturursanız, otomatik olarak yok edilir. `CListBox` Nesneyi **Yeni** işlevi kullanarak yığında oluşturursanız, Kullanıcı üst pencereyi kapattığında nesneyi yok etmek için **Delete** öğesini çağırmanız gerekir.
+Bir pencere içinde `CListBox` nesnesi oluşturursanız, `CListBox` nesnesini yok etmeniz gerekebilir. `CListBox` nesnesini yığında oluşturursanız, otomatik olarak yok edilir. **Yeni** işlevi kullanarak yığında `CListBox` nesnesi oluşturursanız, Kullanıcı üst pencereyi kapattığında, nesneyi yok etmek için **Delete** öğesini çağırmanız gerekir.
 
-`CListBox` Nesnede herhangi bir bellek ayırırsanız ayırmayı atmak için `CListBox` yıkıcıyı geçersiz kılın.
+`CListBox` nesnesinde herhangi bir bellek ayırırsanız ayırmayı atmak için `CListBox` yok ediciyi geçersiz kılın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -254,11 +255,11 @@ Eklenecek null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste kutusundaki dizenin sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri LB_ERR olur; Yeni dizeyi depolamak için yeterli alan yoksa, dönüş değeri LB_ERRSPACE olur.
+Liste kutusundaki dizenin sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri LB_ERR; Yeni dizeyi depolamak için yeterli kullanılabilir alan yoksa, dönüş değeri LB_ERRSPACE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste kutusu [lbs_sort](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulmadıysa, dize listenin sonuna eklenir. Aksi takdirde, dize listeye eklenir ve liste sıralanır. Liste kutusu lbs_sort stiliyle oluşturulduysa ancak [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulduysa çerçeve, listeyi `CompareItem` üye işlevine bir veya daha fazla çağrıya göre sıralar.
+Liste kutusu [lbs_sort](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stille oluşturulmadıysa, dize listenin sonuna eklenir. Aksi takdirde, dize listeye eklenir ve liste sıralanır. Liste kutusu LBS_SORT stille oluşturulduysa ancak [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili ile oluşturulduysa, çerçeve listeyi `CompareItem` üye işlevine bir veya daha fazla çağrıya göre sıralar.
 
 Liste kutusu içindeki belirli bir konuma bir dize eklemek için [InsertString](#insertstring) kullanın.
 
@@ -268,7 +269,7 @@ Liste kutusu içindeki belirli bir konuma bir dize eklemek için [InsertString](
 
 ##  <a name="chartoitem"></a>Clienstbox:: Chartoıtem
 
-Liste kutusunun ana penceresi liste kutusundan bir WM_CHARTOITEM iletisi aldığında Framework tarafından çağırılır.
+Liste kutusunun ana penceresi liste kutusundan bir WM_CHARTOITEM ileti aldığında Framework tarafından çağırılır.
 
 ```
 virtual int CharToItem(
@@ -290,11 +291,11 @@ Daha fazla eylem olmaması için-1 veya-2, tuş vuruşu için varsayılan eylemi
 
 ### <a name="remarks"></a>Açıklamalar
 
-WM_CHARTOITEM iletisi, bir WM_CHAR iletisi aldığında liste kutusu tarafından gönderilir, ancak yalnızca liste kutusu bu ölçütlerin tümünü karşılıyorsa:
+WM_CHARTOITEM ileti, WM_CHAR bir ileti aldığında liste kutusu tarafından gönderilir, ancak yalnızca liste kutusu bu ölçütlerin tümünü karşılıyorsa:
 
 - , Bir sahip çizimi liste kutusudur.
 
-- [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stil kümesine sahip değildir.
+- [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stil kümesine sahip değil.
 
 - En az bir öğesi vardır.
 
@@ -310,7 +311,7 @@ Geçersiz kılmada, çerçeveye hangi eylemi gerçekleştirdiklerinizi anlatmak 
 
 ##  <a name="clistbox"></a>Clienstbox:: Clienstbox
 
-Bir `CListBox` nesnesi oluşturur.
+`CListBox` nesnesi oluşturur.
 
 ```
 CListBox();
@@ -318,7 +319,7 @@ CListBox();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda bir `CListBox` nesne oluşturursunuz. İlk olarak, oluşturucuyu `ClistBox` çağırın ve ardından Windows liste kutusunu başlatan `CListBox`ve öğesine ekleyen çağırın `Create`.
+`CListBox` nesnesini iki adımda oluşturursunuz. İlk olarak, oluşturucuyu `ClistBox` çağırın ve ardından Windows liste kutusunu başlatan ve `CListBox`ekleyen `Create`çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -335,7 +336,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpCompareItemStruct*<br/>
-`COMPAREITEMSTRUCT` Yapıya uzun bir işaretçi.
+`COMPAREITEMSTRUCT` yapısına yönelik uzun bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -347,11 +348,11 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 |0|Öğe 1 ve öğe 2 aynı şekilde sıralayın.|
 |1\.|Öğe 1 öğe 2 ' den sonra sıralar.|
 
-`COMPAREITEMSTRUCT` Yapının açıklaması için bkz. [CWnd:: OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem) .
+`COMPAREITEMSTRUCT` yapısının açıklaması için bkz. [CWnd:: OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. LBS_SORT stilinde sahip çizimi olan bir liste kutusu oluşturursanız, çerçeveye, liste kutusuna eklenen yeni öğeleri sıralama konusunda yardımcı olması için bu üye işlevi geçersiz kılmalısınız.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. LBS_SORT stiliyle sahip çizimi olan bir liste kutusu oluşturursanız, çerçeveye, liste kutusuna eklenen yeni öğeleri sıralama konusunda yardımcı olması için bu üye işlevini geçersiz kılmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -359,7 +360,7 @@ Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. LBS_SORT stilinde sahip
 
 ##  <a name="create"></a>Clienstbox:: Create
 
-Windows liste kutusunu oluşturur ve `CListBox` nesneye ekler.
+Windows liste kutusunu oluşturur ve `CListBox` nesnesine iliştirir.
 
 ```
 virtual BOOL Create(
@@ -375,10 +376,10 @@ virtual BOOL Create(
 Liste kutusunun stilini belirtir. Kutuya [liste kutusu stillerinin](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-Liste kutusu boyutunu ve konumunu belirtir. Bir `CRect` nesne`RECT` ya da yapı olabilir.
+Liste kutusu boyutunu ve konumunu belirtir. `CRect` nesne veya `RECT` yapısı olabilir.
 
 *pParentWnd*<br/>
-Liste kutusunun üst penceresini (genellikle bir `CDialog` nesne) belirtir. NULL olmaması gerekir.
+Liste kutusunun üst penceresini belirtir (genellikle bir `CDialog` nesnesi). NULL olmaması gerekir.
 
 *NID*<br/>
 Liste kutusunun Denetim KIMLIĞINI belirtir.
@@ -389,27 +390,27 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda bir `CListBox` nesne oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra Windows `Create`liste kutusunu başlatan ve bunu `CListBox` nesnesine ekleyen çağırın.
+`CListBox` nesnesini iki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve ardından Windows liste kutusunu başlatan `Create`çağırın ve `CListBox` nesnesine iliştirir.
 
-[](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) [](../../mfc/reference/cwnd-class.md#oncreate) [](../../mfc/reference/cwnd-class.md#onnccalcsize) [](../../mfc/reference/cwnd-class.md#onnccreate)Yürütüldüğünde, Windows WM_NCCREATE, WM_CREATE, WM_NCCALCSIZE ve WM_GETMINMAXINFO iletilerini liste kutusu denetimine gönderir. `Create`
+`Create` yürütüldüğünde Windows, liste kutusu denetimine [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) iletileri gönderir.
 
-Bu iletiler, `CWnd` temel sınıftaki [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member işlevleri tarafından varsayılan olarak işlenir. Varsayılan ileti işlemeyi genişletmek için, öğesinden `CListBox`bir sınıf türetebilir, yeni sınıfa bir ileti haritası ekleyin ve önceki ileti işleyici üye işlevlerini geçersiz kılın. Yeni `OnCreate`bir sınıf için gerekli başlatmayı gerçekleştirmek üzere, örneğin, öğesini geçersiz kılın.
+Bu iletiler, `CWnd` temel sınıfındaki [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member işlevleri tarafından varsayılan olarak işlenir. Varsayılan ileti işlemeyi genişletmek için, `CListBox`bir sınıf türetebilir, yeni sınıfa bir ileti haritası ekleyin ve önceki ileti işleyici üye işlevlerini geçersiz kılın. Yeni bir sınıf için gerekli başlatmayı gerçekleştirmek üzere, örneğin `OnCreate`geçersiz kılın.
 
 Aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) liste kutusu denetimine uygulayın.
 
 - WS_CHILD her zaman
 
-- WS_VISIBLE genellikle
+- Genellikle WS_VISIBLE
 
 - WS_DISABLED nadiren
 
-- Dikey kaydırma çubuğunu eklemek Için WS_VSCROLL
+- Dikey kaydırma çubuğu eklemek Için WS_VSCROLL
 
 - Yatay kaydırma çubuğu eklemek Için WS_HSCROLL
 
-- WS_GROUP denetimleri
+- Denetimleri gruplamak Için WS_GROUP
 
-- WS_TABSTOP bu denetime sekmeye izin vermek Için
+- Bu denetimde sekmeye izin vermek Için WS_TABSTOP
 
 ### <a name="example"></a>Örnek
 
@@ -417,7 +418,7 @@ Aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#wind
 
 ##  <a name="deleteitem"></a>Clienstbox::D Eleteıtem
 
-Kullanıcı, sahip çizim `CListBox` nesnesinden bir öğe sildiğinde veya liste kutusunu yok eder, Framework tarafından çağırılır.
+Kullanıcı, sahip-çizim `CListBox` nesnesinden bir öğe sildiğinde veya liste kutusunu yok eder, Framework tarafından çağırılır.
 
 ```
 virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
@@ -432,7 +433,7 @@ Silinen öğe hakkında bilgi içeren bir Windows [DELETEITEMSTRUCT](/windows/wi
 
 Bu işlevin varsayılan uygulanması hiçbir şey yapmaz. Gerektiğinde bir sahip çizimi liste kutusunu yeniden çizmek için bu işlevi geçersiz kılın.
 
-`DELETEITEMSTRUCT` Yapının açıklaması için bkz. [CWnd:: OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) .
+`DELETEITEMSTRUCT` yapısının açıklaması için bkz. [CWnd:: OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) .
 
 ### <a name="example"></a>Örnek
 
@@ -453,7 +454,7 @@ Silinecek dizenin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listede kalan dizelerin sayısı. *NIndex* , listedeki öğe sayısından daha büyük bir dizin belirtiyorsa, dönüş değeri lb_err olur.
+Listede kalan dizelerin sayısı. *NIndex* , listedeki öğe sayısından daha büyük bir dizin belirtiyorsa, dönüş değeri lb_err.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -476,7 +477,7 @@ int Dir(
 ### <a name="parameters"></a>Parametreler
 
 *özniteliği*<br/>
-, ' De `CFile::GetStatu`tanımlanan **enum** değerlerinin herhangi bir birleşimi ya da aşağıdaki değerlerin herhangi bir birleşimi olabilir: [](../../mfc/reference/cfile-class.md#getstatus)
+`CFile::GetStatu`[s](../../mfc/reference/cfile-class.md#getstatus)' de açıklanan **enum** değerlerinin herhangi bir birleşimi veya aşağıdaki değerlerin herhangi bir birleşimi olabilir:
 
 |Değer|Açıklama|
 |-----------|-------------|
@@ -494,7 +495,7 @@ Dosya belirtimi dizesini işaret eder. Dize joker karakterler içerebilir (örne
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listeye eklenen son dosya adının sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri LB_ERR olur; Yeni dizeleri depolamak için yeterli alan yoksa, dönüş değeri LB_ERRSPACE olur.
+Listeye eklenen son dosya adının sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri LB_ERR; Yeni dizeleri depolamak için yeterli alan yoksa, dönüş değeri LB_ERRSPACE.
 
 ### <a name="example"></a>Örnek
 
@@ -515,11 +516,11 @@ Gerekli çizim türü hakkında bilgi içeren [Drawitemstruct](/windows/win32/ap
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapının ve `itemState` üyeleri gerçekleştirilecek çizim eylemini tanımlar. `itemAction` `DRAWITEMSTRUCT`
+`DRAWITEMSTRUCT` yapısının `itemAction` ve `itemState` üyeleri gerçekleştirilecek çizim eylemini tanımlar.
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bir sahip çizim `CListBox` nesnesi için çizimi uygulamak üzere bu üye işlevini geçersiz kılın. Uygulamanın, bu üye işlevi sonlandırılmadan önce *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Sahip çizim `CListBox` nesnesi için çizim uygulamak üzere bu üye işlevini geçersiz kılın. Uygulamanın, bu üye işlevi sonlandırılmadan önce *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
 
-`DRAWITEMSTRUCT` Yapının açıklaması için bkz. [CWnd:: OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) .
+`DRAWITEMSTRUCT` yapısının açıklaması için bkz. [CWnd:: OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) .
 
 ### <a name="example"></a>Örnek
 
@@ -545,7 +546,7 @@ Arama yapılacak öneki içeren null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleşen öğenin sıfır tabanlı dizini veya arama başarısız ise LB_ERR.
+Eşleşen öğenin sıfır tabanlı dizini veya arama başarısız olduysa LB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -579,7 +580,7 @@ Eşleşen öğenin dizini veya arama başarısız olduysa LB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste kutusu bir sahip çizimi stiliyle oluşturulduysa ancak [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili olmadan oluşturulmuşsa, `FindStringExact` üye işlevi doubleword değerini *lpszFind*değeriyle eşleştirmeye çalışır.
+Liste kutusu bir sahip çizimi stiliyle oluşturulduysa, ancak [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili olmadan oluşturulmuşsa, `FindStringExact` member işlevi doubleword değerini *lpszFind*değerine göre eşleştirmeye çalışır.
 
 ### <a name="example"></a>Örnek
 
@@ -595,7 +596,7 @@ int GetAnchorIndex() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa geçerli bağlayıcı öğesinin dizini; Aksi halde LB_ERR.
+Başarılı olursa geçerli bağlayıcı öğesinin dizini; Aksi takdirde LB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -655,13 +656,13 @@ int GetCurSel() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek seçimli liste kutusun seçili olan öğenin sıfır tabanlı dizini. Şu anda seçili bir öğe yoksa, LB_ERR.
+Tek seçimli liste kutusun seçili olan öğenin sıfır tabanlı dizini. Şu anda seçili öğe yoksa LB_ERR.
 
 Birden çok seçimli liste kutusunda, odağa sahip olan öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok seçimli `GetCurSel` liste kutusu için çağrı kullanmayın. Bunun yerine [Clienstbox:: GetSelItems](#getselitems) kullanın.
+Birden çok seçimli liste kutusu için `GetCurSel` çağırmayın. Bunun yerine [Clienstbox:: GetSelItems](#getselitems) kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -702,7 +703,7 @@ Liste kutusunda öğenin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa, öğesiyle ilişkili değer veya LB_ERR.
+Öğe ile ilişkili değer veya hata oluşursa LB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -714,7 +715,7 @@ Doubleword değeri, bir [SetItemData](#setitemdata) çağrısının *dwitemdata*
 
 ##  <a name="getitemdataptr"></a>Clienstbox:: GetItemDataPtr
 
-Belirtilen liste kutusu öğesiyle ilişkili uygulama tarafından sağlanan 32 bitlik değeri işaretçi (**void** <strong>\*</strong>) olarak alır.
+Belirtilen liste kutusu öğesiyle ilişkili uygulama tarafından sağlanan 32 bitlik değeri işaretçi olarak alır (**void** <strong>\*</strong>).
 
 ```
 void* GetItemDataPtr(int nIndex) const;
@@ -748,7 +749,7 @@ Liste kutusunda öğenin sıfır tabanlı dizinini belirtir. Bu parametre yalnı
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste kutusundaki öğelerin piksel cinsinden yüksekliği. Liste kutusunda [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili varsa, dönüş değeri *nIndex*tarafından belirtilen öğenin yüksekliğidir. Bir hata oluşursa, dönüş değeri LB_ERR ' dir.
+Liste kutusundaki öğelerin piksel cinsinden yüksekliği. Liste kutusunda [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili varsa, dönüş değeri *nIndex*tarafından belirtilen öğenin yüksekliğidir. Bir hata oluşursa, dönüş değeri LB_ERR.
 
 ### <a name="example"></a>Örnek
 
@@ -790,7 +791,7 @@ DWORD GetListBoxInfo() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CListBox` Nesnenin sütun başına öğe sayısı.
+`CListBox` nesnesinin sütun başına öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -831,7 +832,7 @@ int GetSel(int nIndex) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğe seçilmişse pozitif bir sayı; Aksi takdirde, 0 ' dır. Bir hata oluşursa dönüş değeri LB_ERR olur.
+Belirtilen öğe seçilmişse pozitif bir sayı; Aksi takdirde, 0 ' dır. Bir hata oluşursa, dönüş değeri LB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -853,7 +854,7 @@ int GetSelCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste kutusundaki seçili öğelerin sayısı. Liste kutusu tek seçimli bir liste kutusu ise, dönüş değeri LB_ERR ' dir.
+Liste kutusundaki seçili öğelerin sayısı. Liste kutusu tek seçimli bir liste kutusu ise, dönüş değeri LB_ERR.
 
 ### <a name="example"></a>Örnek
 
@@ -879,7 +880,7 @@ int GetSelItems(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arabelleğe yerleştirilmiş olan öğelerin gerçek sayısı. Liste kutusu tek seçimli bir liste kutusu ise, dönüş değeri olur `LB_ERR`.
+Arabelleğe yerleştirilmiş olan öğelerin gerçek sayısı. Liste kutusu tek seçimli bir liste kutusu ise, dönüş değeri `LB_ERR`.
 
 ### <a name="example"></a>Örnek
 
@@ -905,18 +906,18 @@ void GetText(
 Alınacak dizenin sıfır tabanlı dizinini belirtir.
 
 *lpszBuffer*<br/>
-Dizeyi alan arabelleğe işaret eder. Arabellekte dize ve Sonlandırıcı null karakteri için yeterli alan olması gerekir. Dize boyutu, `GetTextLen` üye işlevi çağırarak zaman önünde belirlenebilir.
+Dizeyi alan arabelleğe işaret eder. Arabellekte dize ve Sonlandırıcı null karakteri için yeterli alan olması gerekir. Dizenin boyutu, `GetTextLen` member işlevi çağırarak zaman önünde belirlenebilir.
 
 *rString*<br/>
-Bir `CString` nesneye başvuru.
+`CString` nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin sonlandırılıyor null karakteri hariç uzunluğu (bayt cinsinden). *NIndex* geçerli bir dizin belirtmezse, dönüş değeri lb_err olur.
+Dizenin sonlandırılıyor null karakteri hariç uzunluğu (bayt cinsinden). *NIndex* geçerli bir dizin belirtmezse, dönüş değeri lb_err.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevin ikinci formu, bir `CString` nesneyi dize metniyle doldurur.
+Bu üye işlevin ikinci formu, bir `CString` nesnesini dize metniyle doldurur.
 
 ### <a name="example"></a>Örnek
 
@@ -937,7 +938,7 @@ Dizenin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin, Sonlandırıcı null karakteri hariç karakter cinsinden uzunluğu. *NIndex* geçerli bir dizin belirtmezse, dönüş değeri lb_err olur.
+Dizenin, Sonlandırıcı null karakteri hariç karakter cinsinden uzunluğu. *NIndex* geçerli bir dizin belirtmezse, dönüş değeri lb_err.
 
 ### <a name="example"></a>Örnek
 
@@ -953,7 +954,7 @@ int GetTopIndex() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, LB_ERR Aksi halde, bir liste kutusundaki ilk görünür öğenin sıfır tabanlı dizini.
+Başarılı olursa bir liste kutusundaki ilk görünür öğenin sıfır tabanlı dizini, LB_ERR Aksi halde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -983,15 +984,15 @@ Eklenecek öğelerin sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bir bellek yeniden tahsisatı gerekmeden önce liste kutusunun depolayabileceği en fazla öğe sayısı, aksi takdirde LB_ERRSPACE, ancak yeterli bellek yok.
+Başarılı olursa, bir bellek yeniden ayırma gerekmeden önce liste kutusunun depolayabileceği en fazla öğe sayısı LB_ERRSPACE, aksi takdirde, yeterli bellek yok demektir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-' A `CListBox`çok sayıda öğe eklemeden önce bu işlevi çağırın.
+`CListBox`çok sayıda öğe eklemeden önce bu işlevi çağırın.
 
 Bu işlev, çok sayıda öğe (100 ' den fazla) olan liste kutularının başlatılmasını hızlandırmaya yardımcı olur. Sonraki [AddString](#addstring), [InsertString](#insertstring)ve [dir](#dir) işlevlerinin olası en kısa süreyi alması için belirtilen bellek miktarını önceden ayırır. Parametreler için tahminleri kullanabilirsiniz. Fazla tahmin ediyorsanız, bazı ek bellek ayrılır; tahmin ediyorsanız, önceden ayrılan miktarı aşan öğeler için normal ayırma kullanılır.
 
-Yalnızca Windows 95/98: *NItems* parametresi 16 bit değerlerle sınırlıdır. Bu, liste kutularının 32.767 taneden fazla öğe içeremeyeceği anlamına gelir. Öğe sayısı kısıtlanmış olsa da, bir liste kutusundaki öğelerin toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
+Yalnızca Windows 95/98: *nItems* parametresi 16 bit değerlerle sınırlıdır. Bu, liste kutularının 32.767 taneden fazla öğe içeremeyeceği anlamına gelir. Öğe sayısı kısıtlanmış olsa da, bir liste kutusundaki öğelerin toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1017,11 +1018,11 @@ Eklenecek null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin eklendiği konumun sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri LB_ERR olur; Yeni dizeyi depolamak için yeterli alan yoksa, dönüş değeri LB_ERRSPACE olur.
+Dizenin eklendiği konumun sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri LB_ERR; Yeni dizeyi depolamak için yeterli kullanılabilir alan yoksa, dönüş değeri LB_ERRSPACE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[AddString](#addstring) üye işlevinin aksine, `InsertString` [lbs_sort](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili sıralanarak bir listeye neden olmaz.
+[AddString](#addstring) üye işlevinin aksine, `InsertString` [lbs_sort](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stilin sıralanmasına sahip bir listeye neden olmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1043,7 +1044,7 @@ UINT ItemFromPoint(
 Liste kutusunun istemci alanının sol üst köşesine göre belirtilen en yakın öğenin bulunacağı nokta.
 
 *i tarafı*<br/>
-*PT* en yakın liste kutusu öğesinin istemci ALANıNıN dışındaysa true olarak AYARLANACAK bir bool değişkenine başvuru, PT ise en yakın liste kutusu öğesinin istemci ALANıNıN içindeyse false olur.
+*PT* liste kutusunun istemci ALANıNıN dışındaysa true olarak AYARLANACAK bir bool değişkenine başvuru, Eğer *PT* liste kutusunun istemci alanının içindeyse false olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1072,11 +1073,11 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bu üye işlevini geçersiz kılın ve liste kutusu `MEASUREITEMSTRUCT` boyutlarının pencerelerini bilgilendirmek için yapıyı girin. Liste kutusu [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulduysa, çerçeve liste kutusundaki her öğe için bu üye işlevini çağırır. Aksi takdirde, bu üye yalnızca bir kez çağrılır.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bu üye işlevini geçersiz kılın ve liste kutusu boyutlarının pencerelerini bilgilendirmek için `MEASUREITEMSTRUCT` yapısını girin. Liste kutusu [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stille oluşturulduysa, çerçeve liste kutusundaki her öğe için bu üye işlevini çağırır. Aksi takdirde, bu üye yalnızca bir kez çağrılır.
 
-`SubclassDlgItem` Üye işleviyle`CWnd`oluşturulan bir sahip çizimi liste kutusunda [LBS_OWNERDRAWFIXED](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stilini kullanma hakkında daha fazla bilgi için, [Teknik not14](../../mfc/tn014-custom-controls.md)' te tartışmaya bakın.
+`CWnd``SubclassDlgItem` üye işleviyle oluşturulan bir sahip çizimi liste kutusunda [LBS_OWNERDRAWFIXED](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stilini kullanma hakkında daha fazla bilgi için bkz. [Teknik notdaki](../../mfc/tn014-custom-controls.md)tartışma açıklaması.
 
-`MEASUREITEMSTRUCT` Yapının açıklaması için bkz. [CWnd:: OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) .
+`MEASUREITEMSTRUCT` yapısının açıklaması için bkz. [CWnd:: OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) .
 
 ### <a name="example"></a>Örnek
 
@@ -1114,17 +1115,17 @@ Arama yapılacak öneki içeren null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arama başarılı olursa seçili öğenin dizini. Arama başarısız olduysa, dönüş değeri LB_ERR olur ve geçerli seçim değiştirilmez.
+Arama başarılı olursa seçili öğenin dizini. Arama başarısız olduysa, dönüş değeri LB_ERR ve geçerli seçim değiştirilmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Seçili öğeyi görünüme getirmek için gerekiyorsa liste kutusu kaydırıldı.
 
-Bu üye işlevi, [LBS_MULTIPLESEL](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiline sahip bir liste kutusuyla birlikte kullanılamaz.
+Bu üye işlevi [LBS_MULTIPLESEL](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili olan bir liste kutusuyla kullanılamaz.
 
 Yalnızca ilk karakterleri (başlangıç noktasından) *lpszItem*tarafından belirtilen dizedeki karakterlerle eşleşiyorsa bir öğe seçilir.
 
-Öğeyi seçmeden bir dize bulmak için üyeişlevinikullanın.`FindString`
+Öğeyi seçmeden bir dize bulmak için `FindString` member işlevini kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -1217,7 +1218,7 @@ Bir hata oluşursa LB_ERR.
 
 ##  <a name="setcolumnwidth"></a>Clienstbox:: SetColumnWidth
 
-Birden çok sütunlu liste kutusu içindeki tüm sütunların piksel cinsinden genişliğini ayarlar ( [LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulur).
+Birden çok sütunlu liste kutusundaki tüm sütunların piksel cinsinden genişliğini ayarlar ( [LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulur).
 
 ```
 void SetColumnWidth(int cxWidth);
@@ -1278,7 +1279,7 @@ Liste kutusunun yatay olarak kaydırılabileceği piksel sayısını belirtir.
 
 Liste kutusunun boyutu bu değerden küçükse, yatay kaydırma çubuğu liste kutusunda öğeleri yatay olarak kaydıracaktır. Liste kutusu bu değerden büyükse veya daha büyükse, yatay kaydırma çubuğu gizlenir.
 
-Bir çağrısına `SetHorizontalExtent`yanıt vermek için liste kutusu [ws_hscroll](../../mfc/reference/styles-used-by-mfc.md#window-styles) stiliyle tanımlanmış olmalıdır.
+`SetHorizontalExtent`çağrısına yanıt vermek için liste kutusu [ws_hscroll](../../mfc/reference/styles-used-by-mfc.md#window-styles) stille tanımlanmış olmalıdır.
 
 Bu üye işlevi çok sütunlu liste kutuları için yararlı değildir. Birden çok sütunlu liste kutuları için `SetColumnWidth` üye işlevini çağırın.
 
@@ -1391,7 +1392,7 @@ Bu liste kutusu için önceki yerel ayar tanıtıcısı (LCıD) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrılmaması durumunda `SetLocale` , varsayılan yerel ayar sistemden alınır. Bu sistem varsayılan yerel ayarı, Denetim Masası 'nın bölgesel (veya uluslararası) uygulaması kullanılarak değiştirilebilir.
+`SetLocale` çağrılmadığından, varsayılan yerel ayar sistemden alınır. Bu sistem varsayılan yerel ayarı, Denetim Masası 'nın bölgesel (veya uluslararası) uygulaması kullanılarak değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1451,7 +1452,7 @@ Sekme duraklarının her *cxEachStop* diyalog birimlerinde ayarlandığı. Bir i
 Liste kutusunda sahip olacak sekme duraklarının sayısını belirtir.
 
 *Rgtabstop*<br/>
-Diyalog birimlerindeki sekme durağı konumlarını içeren bir tamsayılar dizisinin ilk üyesini işaret eder. İletişim kutusu birimi yatay veya dikey bir uzaklığına sahiptir. Bir yatay iletişim kutusu birimi, geçerli iletişim kutusu taban genişliği biriminin dörtte birine eşittir ve bir dikey iletişim birimi geçerli iletişim kutusu Taban yükseklik biriminin sekizde birine eşittir. İletişim kutusu temel birimleri geçerli sistem yazı tipinin yüksekliği ve genişliğine göre hesaplanır. Windows `GetDialogBaseUnits` işlevi, geçerli iletişim kutusu taban birimlerini piksel cinsinden döndürür. Sekme duraklarının artan sırada sıralanması gerekir; geri sekmelere izin verilmez.
+Diyalog birimlerindeki sekme durağı konumlarını içeren bir tamsayılar dizisinin ilk üyesini işaret eder. İletişim kutusu birimi yatay veya dikey bir uzaklığına sahiptir. Bir yatay iletişim kutusu birimi, geçerli iletişim kutusu taban genişliği biriminin dörtte birine eşittir ve bir dikey iletişim birimi geçerli iletişim kutusu Taban yükseklik biriminin sekizde birine eşittir. İletişim kutusu temel birimleri geçerli sistem yazı tipinin yüksekliği ve genişliğine göre hesaplanır. `GetDialogBaseUnits` Windows işlevi, geçerli iletişim kutusu taban birimlerini piksel cinsinden döndürür. Sekme duraklarının artan sırada sıralanması gerekir; geri sekmelere izin verilmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1463,7 +1464,7 @@ Sekme duraklarını varsayılan 2 iletişim kutusu birimi olarak ayarlamak için
 
 Sekme duraklarını bir boyut dizisine göre ayarlamak için, bu sürümü *rgtabstop* ve *ntabstop* bağımsız değişkenleriyle kullanın. *Rgtabstop*'taki her bir değer Için, *ntabstop*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
 
-`SetTabStops` Üye işlevine yapılan çağrıya yanıt vermek için, liste kutusu [lbs_usetabstops](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulmuş olmalıdır.
+`SetTabStops` üye işlevine yapılan bir çağrıya yanıt vermek için, liste kutusu [lbs_usetabstops](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulmuş olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1484,7 +1485,7 @@ Liste kutusu öğesinin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır veya bir hata oluşursa LB_ERR.
+Başarılıysa sıfır veya bir hata oluşursa LB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1496,7 +1497,7 @@ Sistem liste kutusunu, *nIndex* tarafından belirtilen öğe liste kutusunun en 
 
 ##  <a name="vkeytoitem"></a>Clienstbox:: Vkeytoıtem
 
-Liste kutusunun ana penceresi liste kutusundan bir WM_VKEYTOITEM iletisi aldığında Framework tarafından çağırılır.
+Liste kutusunun ana penceresi liste kutusundan bir WM_VKEYTOITEM ileti aldığında Framework tarafından çağırılır.
 
 ```
 virtual int VKeyToItem(
@@ -1518,9 +1519,9 @@ Daha fazla işlem olmaması için-2, varsayılan eylem için 1, veya tuş vuruş
 
 ### <a name="remarks"></a>Açıklamalar
 
-WM_VKEYTOITEM iletisi, WM_KEYDOWN iletisi aldığında liste kutusu tarafından gönderilir, ancak yalnızca liste kutusu aşağıdakilerin her ikisini de karşılıyorsa:
+WM_VKEYTOITEM ileti, WM_KEYDOWN bir ileti aldığında liste kutusu tarafından gönderilir, ancak yalnızca liste kutusu aşağıdakilerin her ikisini de karşılıyorsa:
 
-- [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stil kümesine sahiptir.
+- [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili ayarlanmış.
 
 - En az bir öğesi vardır.
 

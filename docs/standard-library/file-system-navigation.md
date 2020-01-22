@@ -2,38 +2,38 @@
 title: Dosya Sistemi Gezintisi
 ms.date: 11/04/2016
 ms.assetid: f7cc5f5e-a541-4e00-87c7-a3769ef6096d
-ms.openlocfilehash: cfdc789daab5b476566f2072109d23fb9310094f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea9bf44a11087180d3bd02c5dcd5d1acfa4b9e57
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405202"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518510"
 ---
 # <a name="file-system-navigation"></a>Dosya Sistemi Gezintisi
 
-\<Filesystem > Üstbilgi uygular C++ dosya sistemi teknik belirtimi ISO/IEC TS 18822:2015 (son taslak: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) ve türleri ve dosya sisteminde gezinmek için platformdan bağımsız kod yazmanıza olanak sağlayan işlevler içerir. Platformlar arası olduğundan, Windows sistemleri için ilgili olmayan API'leri içerir. Örneğin, yani `is_fifo(const path&)` her zaman döndürür **false** Windows üzerinde.
+\<FileSystem > üstbilgisi, C++ dosya sistemi teknık belirtimi ISO/ıec TS 18822:2015 (son taslak: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) öğesini uygular ve dosya sistemine gezinmek için platforma bağımsız kod yazmanıza olanak tanıyan tür ve işlevlere sahiptir. Platformlar arası olduğundan, Windows sistemlerine uygun olmayan API 'Leri içerir. Örneğin bu, `is_fifo(const path&)` her zaman Windows üzerinde **false** olarak döndürdüğü anlamına gelir.
 
-## <a name="overview"></a>Genel Bakış
+## <a name="overview"></a>Genel bakış
 
-Kullanım \<filesystem > API'leri aşağıdaki görevler için:
+Aşağıdaki görevler için \<FileSystem > API 'Leri kullanın:
 
-- dosyalar ve dizinler belirtilen yolun altındaki üzerinden yineleme yapma
+- Belirtilen bir yol altındaki dosya ve dizinleri yineleme
 
-- Dosya oluşturulma saati de dahil olmak üzere, boyutu, uzantı ve kök dizini hakkında bilgi edinin
+- oluşturulan saat, boyut, uzantı ve kök dizin gibi dosyalar hakkında bilgi alın
 
-- Oluştur, parçalayın ve yolları karşılaştırın
+- yolları oluşturma, kaldırma ve karşılaştırma
 
-- oluşturma, kopyalama ve dizinleri silme
+- Dizin oluşturma, kopyalama ve silme
 
-- dosyaları kopyalar ve siler
+- dosyaları kopyala ve Sil
 
-Dosya GÇ standart kitaplığı kullanma hakkında daha fazla bilgi için bkz. [iostream programlama](../standard-library/iostream-programming.md).
+Standart kitaplığı kullanarak dosya GÇ hakkında daha fazla bilgi için bkz. [ıostream programlama](../standard-library/iostream-programming.md).
 
-## <a name="paths"></a>Yolları
+## <a name="paths"></a>Yollar
 
-### <a name="constructing-and-composing-paths"></a>Yollar oluşturma ve oluşturma
+### <a name="constructing-and-composing-paths"></a>Yolları oluşturma ve oluşturma
 
-Windows (XP itibaren) yollarında Unicode yerel olarak depolanır. [Yolu](../standard-library/path-class.md) sınıfı, tüm gerekli dize dönüştürmeleri otomatik olarak gerçekleştirir. Bağımsız değişkenleri iki geniş ve dar karakter dizileri kabul yanı `std::string` ve `std::wstring` türleri, UTF8 veya UTF16 olarak biçimlendirilmiş. `path` Sınıfı da otomatik olarak, yol ayırıcıları normalleştirir. Oluşturucu bağımsız dizin ayırıcı olarak eğik çizgi tek kullanabilirsiniz. Bu, hem Windows hem de UNIX ortamlarında yolları depolamak için aynı dizeler kullanmanıza olanak sağlar:
+Windows 'daki (XP 'den beri) yollar yerel olarak Unicode 'da depolanır. [Path](../standard-library/path-class.md) sınıfı tüm gerekli dize dönüştürmelerini otomatik olarak gerçekleştirir. Hem geniş hem de dar karakter dizilerinin bağımsız değişkenlerini, hem `std::string` hem de UTF8 veya UTF16 olarak biçimlendirilmiş `std::wstring` türlerini kabul eder. `path` sınıfı ayrıca yol ayırıcıları otomatik olarak normalleştirir. Oluşturucu bağımsız değişkenlerinde dizin ayırıcı olarak tek eğik çizgi kullanabilirsiniz. Bu, yolları hem Windows hem de UNIX ortamlarında depolamak için aynı dizeleri kullanmanıza olanak sağlar:
 
 ```cpp
 path pathToDisplay(L"/FileSystemTest/SubDir3");     // OK!
@@ -41,16 +41,16 @@ path pathToDisplay2(L"\\FileSystemTest\\SubDir3");  // Still OK as always
 path pathToDisplay3(LR"(\FileSystemTest\SubDir3)"); // Raw string literals are OK, too.
 ```
 
-İki yolu birleştirmek için aşırı yüklenmiş kullanabileceğiniz `/` ve `/=` alınmak üzere işleçleri `+` ve `+=` işleçlerini `std::string` ve `std::wstring`. `path` Nesne rahatça tedarik ayırıcılar Aksi takdirde.
+İki yolu birleştirmek için, `std::string` ve `std::wstring``+` ve `+=` işleçlerine benzer olan aşırı yüklenmiş `/` ve `/=` işleçlerini kullanabilirsiniz. `path` nesnesi, aksi takdirde ayırıcıları kolayca sağlar.
 
 ```cpp
 path myRoot("C:/FileSystemTest");  // no trailing separator, no problem!
 myRoot /= path("SubDirRoot");      // C:/FileSystemTest/SubDirRoot
 ```
 
-### <a name="examining-paths"></a>Yolları inceleme
+### <a name="examining-paths"></a>Yolları İnceleme
 
-Yol sınıfı için başvurabilir dosya sistemi varlık as distinct from yolun kendisindeki, çeşitli bölümlerini ilgili bilgi döndüren çeşitli yöntemler vardır. Kök, göreli yol, dosya adı, dosya uzantısı ve daha fazla bilgi alabilirsiniz. Hiyerarşideki tüm klasörleri incelemek için bir yol nesnesi üzerinde yinelenir. Aşağıdaki örnek, bir yol (başvurduğu dizin değil) üzerinden yineleme yapma ve bölümleri hakkında bilgi almak için nasıl gösterir.
+Yol sınıfında, başvurabileceği dosya sistemi varlığından ayrı olarak yolun kendisi hakkında bilgi döndüren çeşitli yöntemler vardır. Kökünü, göreli yolu, dosya adını, dosya uzantısını ve daha fazlasını alabilirsiniz. Hiyerarşideki tüm klasörleri incelemek için bir yol nesnesi üzerinde yineleme yapabilirsiniz. Aşağıdaki örnek, bir yol üzerinde (başvurduğu dizin değil) nasıl yineleş, ve bölümleri hakkında bilgi almanızı gösterir.
 
 ```cpp
 // filesystem_path_example.cpp
@@ -88,7 +88,7 @@ wstring DisplayPathInfo()
     return wos.str();
 }
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     wcout << DisplayPathInfo() << endl;
     // wcout << ComparePaths() << endl; // see following example
@@ -98,7 +98,7 @@ void main(int argc, char* argv[])
 }
 ```
 
-Kod, bu çıktıyı üretir:
+Kod bu çıktıyı oluşturur:
 
 ```Output
 Displaying path info for: C:\FileSystemTest\SubDir3\SubDirLevel2\File2.txt
@@ -119,7 +119,7 @@ extension() = .txt
 
 ### <a name="comparing-paths"></a>Yolları karşılaştırma
 
-`path` Sınıf olarak aynı Karşılaştırma işleçleri aşırı `std::string` ve `std::wstring`. İki yolu karşılaştırırken ayırıcılar normalleştirilmiş sonra bir dize karşılaştırmasının yapıyorsunuz. Sondaki eğik çizgi (veya ters eğik çizgi) yoksa eklenmez ve karşılaştırma etkiler. Aşağıdaki örnek nasıl yol değerlerini karşılaştırmak gösterir:
+`path` sınıfı, `std::string` ve `std::wstring`aynı karşılaştırma işleçlerini aşırı yükler. İki yolu karşılaştırdığınızda, ayırıcılar normalleştirildikten sonra bir dize karşılaştırması gerçekleştirmekten olursunuz. Sondaki eğik çizgi (veya ters eğik çizgi) eksikse, eklenmez ve karşılaştırmayı etkiler. Aşağıdaki örnek, yol değerlerinin nasıl karşılaştırılacağını göstermektedir:
 
 ```cpp
 wstring ComparePaths()
@@ -150,11 +150,11 @@ C:\Documents\2013\Reports\ < C:\Documents\2014\: true
 C:\Documents\2014\ < D:\Documents\2013\Reports\: true
 ```
 
-Bu kodu çalıştırmak için önce yukarıdaki tam örnek yapıştırın `main` ve çağrı yaptığı ana satırı açıklamadan çıkarın.
+Bu kodu çalıştırmak için `main` önce yukarıdaki tam örneğe yapıştırın ve Main içinde onu çağıran satırın açıklamasını kaldırın.
 
 ### <a name="converting-between-path-and-string-types"></a>Yol ve dize türleri arasında dönüştürme
 
-A `path` nesnedir örtük olarak dönüştürülebilir `std::wstring` veya `std::string`. Yani, geçirebilirsiniz yol işlevler gibi [wofstream::open](../standard-library/basic-ofstream-class.md#open), bu örnekte gösterildiği gibi:
+`path` nesne `std::wstring` veya `std::string`örtük olarak dönüştürülebilir. Bu, aşağıdaki örnekte gösterildiği gibi, [wofstream:: Open](../standard-library/basic-ofstream-class.md#open)gibi işlevlere bir yol geçirebilmeniz anlamına gelir:
 
 ```cpp
 // filesystem_path_conversion.cpp
@@ -167,7 +167,7 @@ A `path` nesnedir örtük olarak dönüştürülebilir `std::wstring` veya `std:
 using namespace std;
 using namespace std::experimental::filesystem;
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     wchar_t* p = L"C:/Users/Public/Documents";
     path filePath(p);
@@ -205,8 +205,8 @@ Dolor sit amet
 Press Enter to exit
 ```
 
-## <a name="iterating-directories-and-files"></a>Yineleme dizinler ve dosyalar
+## <a name="iterating-directories-and-files"></a>Dizinleri ve dosyaları yineleme
 
-\<Filesystem > Üstbilgi sağlar [directory_iterator](../standard-library/directory-iterator-class.md) tek dizinleri yineleme türü ve [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) yinelemeli olarak gezinilen sınıfı bir Dizin ve alt dizinleri. Bir yineleyicinin çağırıp oluşturduktan sonra bir `path` nesne, yineleyici yolunda ilk directory_entry işaret eder. Varsayılan Oluşturucu çağırarak end yineleyici oluşturun.
+\<dosya sistemi > üst bilgisi, tek dizinleri yinelemek için [Directory_iterator](../standard-library/directory-iterator-class.md) türünü ve bir dizin ve alt dizinleri üzerinde yinelemeli olarak yinelemek için [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) sınıfını sağlar. Bir `path` nesnesi geçirerek Yineleyici oluşturduktan sonra, yineleyici yoldaki ilk directory_entry işaret eder. Varsayılan oluşturucuyu çağırarak son yineleyiciyi oluşturun.
 
-Bir dizin yineleme olduğunda çeşitli türlerde öğeler, ancak bunlarla sınırlı olmamak dizinleri, dosyaları, simgesel bağlantılar ve yuva dosyaları dahil olmak üzere, karşılaşabilirsiniz. `directory_iterator` Alt öğeleri olarak döndürür [directory_entry](../standard-library/directory-entry-class.md) nesneleri.
+Bir dizin üzerinden yineleme yaparken dizinler, dosyalar, Simgesel bağlantılar ve yuva dosyalarıyla sınırlı olmamak üzere, karşılaşabileceğiniz birçok öğe türü vardır. `directory_iterator` öğelerini [directory_entry](../standard-library/directory-entry-class.md) nesneleri olarak döndürür.

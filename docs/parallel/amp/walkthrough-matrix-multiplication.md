@@ -1,85 +1,85 @@
 ---
-title: 'İzlenecek yol: Matris çarpım'
+title: 'İzlenecek yol: Matris Çarpım'
 ms.date: 04/23/2019
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: afa9dba8938f9d701b8f21ca3575eb06eb688ac0
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 341800e258f89db340d206ebe04bc20d4763ad1a
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877476"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518497"
 ---
-# <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris çarpım
+# <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 
-Bu adım adım izlenecek yol, C++ AMP matris çarpım yürütülmesini hızlandırmak için nasıl kullanılacağını gösterir. İki algoritması sunulur, döşeme olmayan ve döşeme ile.
+Bu adım adım izlenecek yol, matris çarpma 'nın yürütülmesini hızlandırmak C++ için amp 'ın nasıl kullanılacağını gösterir. İki algoritma sunulur, biri döşeme ve döşeme olmadan bir tane.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 Başlamadan önce:
 
-- Okuma [C++ AMP'ye genel bakış](../../parallel/amp/cpp-amp-overview.md).
+- [ C++ Amp genel bakışını](../../parallel/amp/cpp-amp-overview.md)okuyun.
 
-- Okuma [döşemeleri kullanma](../../parallel/amp/using-tiles.md).
+- [Kutucukları kullanarak](../../parallel/amp/using-tiles.md)okuyun.
 
-- Size en az çalıştırdığından emin olun Windows 7 veya Windows Server 2008 R2.
+- En az Windows 7 veya Windows Server 2008 R2 çalıştırdığınızdan emin olun.
 
 ### <a name="to-create-the-project"></a>Proje oluşturmak için
 
-Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio'nun hangi sürümünün bağlı olarak değişir. Sola doğru sürüme ayarlayın üst sürüm Seçici olduğundan emin olun.
+Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sürümüne bağlı olarak farklılık gösterir. Sol üstteki sürüm seçicisine doğru sürüme sahip olduğunuzdan emin olun.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-the-project-in-visual-studio-2019"></a>Visual Studio 2019 projeyi oluşturmak için
+### <a name="to-create-the-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de proje oluşturmak için
 
-1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim kutusu.
+1. **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda **dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın. 
 
-1. Filtrelenmiş proje türleri listesinden seçim **boş proje** ardından **sonraki**. Sonraki sayfaya girin *MatrixMultiply* içinde **adı** kutusuna proje için bir ad belirtmek için ve istenen proje konumu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **boş proje** ' yi seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna *matrixçarp* girin ve isterseniz proje konumunu belirtin.
 
-   ![Yeni konsol uygulaması](../../build/media/mathclient-project-name-2019.png "yeni konsol uygulaması")
+   ![Yeni konsol uygulaması](../../build/media/mathclient-project-name-2019.png "Yeni konsol uygulaması")
 
-1. Seçin **Oluştur** istemci projesi oluşturmak için.
+1. İstemci projesini oluşturmak için **Oluştur** düğmesini seçin.
 
-1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **kaynak dosyaları**ve ardından **Ekle** > **yeni öğe**.
+1. **Çözüm Gezgini**' de, **kaynak dosyaları**için kısayol menüsünü açın ve ardından > **Yeni öğe** **Ekle** ' yi seçin.
 
-1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**, girin *MatrixMultiply.cpp* içinde **adı** kutusuna ve ardından  **Ekleme** düğmesi.
+1. **Yeni öğe Ekle** iletişim kutusunda  **C++ dosya (. cpp)** öğesini seçin, **ad** kutusuna *matrixçarp. cpp* girin ve sonra **Ekle** düğmesini seçin.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-### <a name="to-create-a-project-in-visual-studio-2017-or-2015"></a>Visual Studio 2017 veya 2015'te bir proje oluşturmak için
+### <a name="to-create-a-project-in-visual-studio-2017-or-2015"></a>Visual Studio 2017 veya 2015 ' de bir proje oluşturmak için
 
-1. Visual Studio menü çubuğunda seçin **dosya** > **yeni** > **proje**.
+1. Visual Studio 'daki menü çubuğunda **dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. Altında **yüklü** Şablonlar bölmesinde seçin **Visual C++**.
+1. Şablonlar bölmesinde **yüklü** altında **görsel C++** ' i seçin.
 
-1. Seçin **boş proje**, girin *MatrixMultiply* içinde **adı** kutusuna ve ardından **Tamam** düğmesi.
+1. **Boş proje**' yi seçin, **ad** kutusuna *matrixçarp* girin ve **Tamam** düğmesini seçin.
 
 1. Seçin **sonraki** düğmesi.
 
-1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **kaynak dosyaları**ve ardından **Ekle** > **yeni öğe**.
+1. **Çözüm Gezgini**' de, **kaynak dosyaları**için kısayol menüsünü açın ve ardından > **Yeni öğe** **Ekle** ' yi seçin.
 
-1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**, girin *MatrixMultiply.cpp* içinde **adı** kutusuna ve ardından  **Ekleme** düğmesi.
+1. **Yeni öğe Ekle** iletişim kutusunda  **C++ dosya (. cpp)** öğesini seçin, **ad** kutusuna *matrixçarp. cpp* girin ve sonra **Ekle** düğmesini seçin.
 
 ::: moniker-end
 
-## <a name="multiplication-without-tiling"></a>Çarpma döşeme olmadan
+## <a name="multiplication-without-tiling"></a>Döşeme olmadan çarpma
 
-Bu bölümde, şu şekilde tanımlanır A ve B olmak üzere iki matrislerde çarpımı göz önünde bulundurun:
+Bu bölümde, A ve B olmak üzere aşağıdaki şekilde tanımlanan iki matrisin çarpma sayısını göz önünde bulundurun:
 
-![3&#45;tarafından&#45;2 matris A](../../parallel/amp/media/campmatrixanontiled.png "3&#45;tarafından&#45;2 matris A")
+![3&#45;x&#45;2 matris A](../../parallel/amp/media/campmatrixanontiled.png "3&#45;x&#45;2 matris A")
 
-![2&#45;tarafından&#45;3 matris B](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;tarafından&#45;3 matris B")
+![2&#45;x&#45;3 matris B](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;x&#45;3 matris B")
 
-Bir 3-tarafından-2 matris ve B ise 2 x 3 matris. 3-x-3 matris çarpılması A B ürünüdür. Ürün A satırlarını sütun b öğeye göre çarpılarak hesaplanır.
+, 3-2 matrisi ve B, 2-3 matrisine sahiptir. B ile çarpılın çarpımı, aşağıdaki 3-3 matrisine sahiptir. Ürün, bir A öğesinin satırları ile B öğesi arasındaki sütunları çarpılarak hesaplanır.
 
-![3&#45;tarafından&#45;3 ürün matris](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;tarafından&#45;3 ürün Matrisi")
+![3&#45;ile&#45;3 ürün matrisi](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;ile&#45;3 ürün matrisi")
 
-### <a name="to-multiply-without-using-c-amp"></a>C++ AMP kullanmadan çarpmak için
+### <a name="to-multiply-without-using-c-amp"></a>AMP kullanmadan C++ çarpmak için
 
-1. MatrixMultiply.cpp açın ve varolan kodu değiştirmek için aşağıdaki kodu kullanın.
+1. Matrixçarp. cpp ' i açın ve mevcut kodu değiştirmek için aşağıdaki kodu kullanın.
 
    ```cpp
    #include <iostream>
@@ -101,23 +101,23 @@ Bir 3-tarafından-2 matris ve B ise 2 x 3 matris. 3-x-3 matris çarpılması A B
        }
    }
 
-   void main() {
+   int main() {
        MultiplyWithOutAMP();
        getchar();
    }
    ```
 
-   Algoritma, matris çarpım tanımını basit bir uygulamadır. Bunu tüm paralel veya iş parçacıklı algoritmaları hesaplama süreyi azaltmak üzere kullanmaz.
+   Algoritma, matris çarpma tanımının kolay bir uygulamasıdır. Hesaplama süresini azaltmak için herhangi bir paralel veya iş parçacıklı algoritma kullanmaz.
 
-1. Menü çubuğunda, **dosya** > **Tümünü Kaydet**.
+1. Menü çubuğunda **dosya** > **Tümünü Kaydet**' i seçin.
 
-1. Seçin **F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
+1. Hata ayıklamayı başlatmak için **F5** klavye kısayolunu seçin ve çıktının doğru olduğunu doğrulayın.
 
-1. Seçin **Enter** uygulamadan çıkmak için.
+1. Uygulamadan çıkmak için **ENTER** ' ı seçin.
 
-### <a name="to-multiply-by-using-c-amp"></a>C++ AMP kullanarak çarpmak için
+### <a name="to-multiply-by-using-c-amp"></a>AMP kullanarak C++ çarpmak için
 
-1. MatrixMultiply.cpp önce aşağıdaki kodu ekleyin `main` yöntemi.
+1. Matrixçarp. cpp içinde, `main` yönteminden önce aşağıdaki kodu ekleyin.
 
    ```cpp
    void MultiplyWithAMP() {
@@ -152,72 +152,72 @@ Bir 3-tarafından-2 matris ve B ise 2 x 3 matris. 3-x-3 matris çarpılması A B
    }
    ```
 
-   AMP kodu, AMP olmayan koda benzer. Çağrı `parallel_for_each` her öğe için bir iş parçacığı başlattığını `product.extent`ve değiştirir `for` satır ve sütun for döngüleri. Hücre, satır ve sütun değeri kullanılabilir `idx`. Öğelerine erişebilirsiniz bir `array_view` kullanın ya da nesne `[]` işleci ve bir dizin değişkeni veya `()` işleci ve satır ve sütun değişkenleri. Örnek, her iki yöntem de gösterir. `array_view::synchronize` Yöntemi kopyalar değerlerini `product` geri değişken `productMatrix` değişkeni.
+   AMP kodu AMP olmayan koda benzer. `parallel_for_each` çağrısı, `product.extent`her öğe için bir iş parçacığı başlatır ve satır ve sütun için `for` döngülerinin yerini alır. Satırdaki ve sütundaki hücrenin değeri `idx`kullanılabilir. Bir `array_view` nesnesinin öğelerine `[]` işlecini ve bir dizin değişkenini ya da `()` işlecini, satır ve sütun değişkenlerini kullanarak erişebilirsiniz. Örnek her iki yöntemi gösterir. `array_view::synchronize` yöntemi `product` değişkeninin değerlerini `productMatrix` değişkenine kopyalar.
 
-1. Aşağıdaki `include` ve `using` MatrixMultiply.cpp üst kısmındaki deyimleri.
+1. Aşağıdaki `include` ve `using` deyimlerini Matrixçarp. cpp üst kısmına ekleyin.
 
    ```cpp
    #include <amp.h>
    using namespace concurrency;
    ```
 
-1. Değiştirme `main` çağrılacak yöntem `MultiplyWithAMP` yöntemi.
+1. `MultiplyWithAMP` yöntemini çağırmak için `main` yöntemini değiştirin.
 
    ```cpp
-   void main() {
+   int main() {
        MultiplyWithOutAMP();
        MultiplyWithAMP();
        getchar();
    }
    ```
 
-1. Tuşuna **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
+1. Hata ayıklamayı başlatmak için **Ctrl**+**F5** klavye kısayoluna basın ve çıktının doğru olduğunu doğrulayın.
 
-1. Tuşuna **boşluk** uygulamadan çıkmak için.
+1. Uygulamadan çıkmak için **Ara çubuğuna** basın.
 
-## <a name="multiplication-with-tiling"></a>Çarpma ile döşeme
+## <a name="multiplication-with-tiling"></a>Döşeme ile çarpma
 
-Döşeme içinde halinde kutucuk olarak bilinen eşit boyutlu alt kümeler, veri bölümleme bir tekniktir. Döşeme kullandığınızda üç şeyi değiştirin.
+Döşeme, verileri, kutucuk olarak bilinen eşit ölçekli alt kümeler halinde bölümleyerek bir tekniktir. Döşeme kullandığınızda üç şey değişir.
 
-- Oluşturabileceğiniz `tile_static` değişkenleri. Veri erişimi `tile_static` alanı erişim genel alandaki verilere kıyasla çok sayıda kat daha hızlı olabilir. Örneği bir `tile_static` değişken her döşeme için oluşturulur ve döşemedeki tüm iş parçacıkları değişkene erişimi vardır. Birincil döşeme nedeniyle performans kazancı avantajdır `tile_static` erişim.
+- `tile_static` değişkenler oluşturabilirsiniz. `tile_static` alanındaki verilere erişim, genel alandaki verilere erişimden çok daha hızlı olabilir. Her kutucuk için bir `tile_static` değişkeni örneği oluşturulur ve kutucuktaki tüm iş parçacıkları değişkene erişebilir. `tile_static` erişim nedeniyle, döşeme 'nin birincil avantajı, performans kazandır.
 
-- Çağırabilirsiniz [tile_barrier::wait](reference/tile-barrier-class.md#wait) belirtilen kod satırında bir döşeme içindeki iş parçacıklarının tümünü durdurmak için yöntemi. İş parçacıklarının, yalnızca çalışacağı sırayı belirleyemezsiniz. tüm iş parçacıklarının bir kutucuk için çağrıda durdurur `tile_barrier::wait` , yürütme devam etmeden önce.
+- Belirli bir kod satırında tek bir kutucukta tüm iş parçacıklarını durdurmak için [tile_barrier:: wait](reference/tile-barrier-class.md#wait) yöntemini çağırabilirsiniz. İş parçacıklarının çalışacağı sırayı garanti edemezsiniz, ancak tek bir kutucuktaki tüm iş parçacıklarının yürütmeye devam etmeden önce `tile_barrier::wait` çağrısında duracaktır.
 
-- Dizini iş parçacığının tüm göre erişimi `array_view` nesne ve döşemeye göreceli dizinine. Yerel dizinini kullanarak, kodunuzu ve hata ayıklaması kolaylaştırabilir.
+- Tüm `array_view` nesnesine ve kutucuğa göre dizine göre iş parçacığının dizinine erişebilirsiniz. Yerel dizini kullanarak, kodunuzun okunmasını ve hata ayıklamasını daha kolay hale getirebilirsiniz.
 
-Matris çarpım içinde döşemeden yararlanmak için algoritma gerekir matris döşemesine bölümlemek ve ardından döşeme verilerini kopyalayın `tile_static` değişkenleri daha hızlı erişim için. Bu örnekte, matris eşit boyutta submatrices bölümlenir. Ürün submatrices çarpılarak bulunur. İki matrislerde ve bu örnekte, ürün şunlardır:
+Matris çarpma aşamasında döşeme avantajlarından yararlanmak için, algoritmanın matrisi kutucuklara bölümlemek ve sonra kutucuk verilerini daha hızlı erişim için `tile_static` değişkenlere kopyalaması gerekir. Bu örnekte, matris eşittir boyutunun alt matrislerine bölümlenir. Ürün, alt matrisleri çarpılarak bulunur. Bu örnekteki iki matrisler ve çarpımı şunlardır:
 
-![4&#45;tarafından&#45;4 matris A](../../parallel/amp/media/campmatrixatiled.png "4&#45;tarafından&#45;4 matris A")
+![4&#45;x&#45;4 matris A](../../parallel/amp/media/campmatrixatiled.png "4&#45;x&#45;4 matris A")
 
-![4&#45;tarafından&#45;4 matris B](../../parallel/amp/media/campmatrixbtiled.png "4&#45;tarafından&#45;4 matris B")
+![4&#45;x&#45;4 matris B](../../parallel/amp/media/campmatrixbtiled.png "4&#45;x&#45;4 matris B")
 
-![4&#45;tarafından&#45;4 ürün matris](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;tarafından&#45;4 ürün Matrisi")
+![4&#45;x&#45;4 ürün matrisi](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;x&#45;4 ürün matrisi")
 
-Matrisler şu şekilde tanımlanır dört 2 x 2 matrislerde bölümlenir:
+Matrisler, aşağıdaki gibi tanımlanan dört 2x2 matriste bölümlenir:
 
-![4&#45;tarafından&#45;4 matris 2 bölümlenmiş bir&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;tarafından&#45;4 matris 2 bölümlenmiş bir&#45;tarafından&#45;2 alt&#45;Matrisi")
+![4&#45;x&#45;4 matris 2 ' ye&#45;kadar&#45;alt&#45;matrislerle bölümlenmiş](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;x&#45;4 matris 2 ' ye&#45;kadar&#45;alt&#45;matrislerle bölümlenmiş")
 
-![4&#45;tarafından&#45;4 matris B bölümlenmiş 2&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;tarafından&#45;4 matris B bölümlenmiş 2&#45;tarafından&#45;2 alt&#45;Matrisi")
+![4&#45;x&#45;4 matris B 2 ' ye&#45;kadar&#45;alt&#45;matrislerle bölümlenir](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;x&#45;4 matris B 2 ' ye&#45;kadar&#45;alt&#45;matrislerle bölümlenir")
 
-Ürün a ve B artık yazılmış ve şu şekilde hesaplanır:
+A ve B ürünleri artık aşağıdaki gibi yazılabilir ve hesaplanabilir:
 
-![4&#45;tarafından&#45;4 matris A B 2 bölümlenmiş&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;tarafından&#45;4 matris A B 2 bölümlenmiş&#45;tarafından&#45;2 alt&#45;Matrisi")
+![4&#45;x&#45;4 matris A B, 2 alt&#45;&#45;&#45;matrislerle bölümlenmiş](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;x&#45;4 matris A B, 2 alt&#45;&#45;&#45;matrislerle bölümlenmiş")
 
-Çünkü matrislerde `a` aracılığıyla `h` 2 x 2 matrisler, tüm ürünlerin ve bunların toplamı de 2 x 2 matrislerde. Ayrıca, takip eden ürün a ve B 4 x 4 matrisi, beklendiği gibi. Algoritma hemen kontrol etmek için ürün ilk sütunda, ilk satırındaki öğenin değerini hesaplayın. Bu örnekte, olacaktır öğenin değeri ilk satır ve ilk sütununu `ae + bg`. Yalnızca ilk sütun, ilk satırında hesaplanacak olan `ae` ve `bg` her dönem. Bu değer için `ae` olduğu `(1 * 1) + (2 * 5) = 11`. Değeri `bg` olduğu `(3 * 1) + (4 * 5) = 23`. Son değer `11 + 23 = 34`, doğru olduğu.
+`h` üzerinden `a` arasındaki matrisler 2x2 matrisdir, bu ürünlerin tüm ürünleri ve toplamları da 2x2 matrislerdir. Ayrıca, A ve B ürününün beklenen şekilde bir 4x4 matrisi olması gerekir. Algoritmayı hızlıca denetlemek için, ilk satırdaki, ürünün ilk sütununda öğenin değerini hesaplayın. Örnekte, bu, ilk satırdaki ve `ae + bg`ilk sütunundaki öğesinin değeri olacaktır. Yalnızca ilk sütunu, `ae` ilk satırını ve her bir dönem için `bg` hesaplamanız gerekir. `ae` için bu değer `(1 * 1) + (2 * 5) = 11`. `bg` için değer `(3 * 1) + (4 * 5) = 23`. Son değer, doğru olan `11 + 23 = 34`.
 
-Bu algoritma, kodu uygulamak için:
+Bu algoritmayı uygulamak için kod:
 
-- Kullanan bir `tiled_extent` yerine Nesne bir `extent` nesnesine `parallel_for_each` çağırın.
+- `parallel_for_each` çağrısındaki bir `extent` nesnesi yerine `tiled_extent` nesnesi kullanır.
 
-- Kullanan bir `tiled_index` yerine Nesne bir `index` nesnesine `parallel_for_each` çağırın.
+- `parallel_for_each` çağrısındaki bir `index` nesnesi yerine `tiled_index` nesnesi kullanır.
 
-- Oluşturur `tile_static` submatrices tutması için değişkenleri.
+- Alt matrisleri tutmak için `tile_static` değişkenleri oluşturur.
 
-- Kullanan `tile_barrier::wait` submatrices ürünlerin hesaplaması için iş parçacıklarının durdurmak için yöntemi.
+- , Alt Matrislerin ürünlerinin hesaplanması için iş parçacıklarını durdurmak üzere `tile_barrier::wait` yöntemini kullanır.
 
-### <a name="to-multiply-by-using-amp-and-tiling"></a>AMP kullanarak ve döşeme ile çarpılacak
+### <a name="to-multiply-by-using-amp-and-tiling"></a>AMP ve döşeme kullanarak çarpmak için
 
-1. MatrixMultiply.cpp önce aşağıdaki kodu ekleyin `main` yöntemi.
+1. Matrixçarp. cpp içinde, `main` yönteminden önce aşağıdaki kodu ekleyin.
 
    ```cpp
    void MultiplyWithTiling() {
@@ -288,27 +288,27 @@ Bu algoritma, kodu uygulamak için:
    }
    ```
 
-   Bu örnekte, örnek döşeme olmadan önemli ölçüde farklıdır. Kod kavramsal adımları kullanır:
-   1. [0,0] parçasına öğeleri Kopyala `a` içine `locA`. [0,0] parçasına öğeleri Kopyala `b` içine `locB`. Dikkat `product` döşenmiş değil `a` ve `b`. Bu nedenle, genel dizinlerini erişmek için kullandığınız `a, b`, ve `product`. Çağrı `tile_barrier::wait` gereklidir. Erene kadar tüm döşemedeki iş parçacıkları durmadan `locA` ve `locB` doldurulur.
+   Bu örnek, döşeme olmadan örnekteki önemli ölçüde farklıdır. Kod şu kavramsal adımları kullanır:
+   1. [0, 0] kutucuğunun öğelerini `locA``a` kopyalayın. [0, 0] kutucuğunun öğelerini `locB``b` kopyalayın. `product` `a` ve `b`değil döşeli olduğuna dikkat edin. Bu nedenle, `a, b`erişmek ve `product`için genel dizinleri kullanırsınız. `tile_barrier::wait` çağrısı önemlidir. `locA` ve `locB` dolduruluncaya kadar kutucuktaki tüm iş parçacıklarını sonlandırır.
 
-   1. Çarp `locA` ve `locB` ve sonuçları koymak `product`.
+   1. `locA` ve `locB` çarpın ve sonuçları `product`koyun.
 
-   1. [0,1] parçasına öğeleri Kopyala `a` içine `locA`. [1,0] parçasına öğeleri Kopyala `b` içine `locB`.
+   1. [0, 1] kutucuğunun öğelerini `locA``a` kopyalayın. [1, 0] kutucuğunun öğelerini `locB``b` kopyalayın.
 
-   1. Çarp `locA` ve `locB` ve önceden yer sonuçları eklemesini `product`.
+   1. `locA` ve `locB` çarpın ve bunları `product`daha önce olan sonuçlara ekleyin.
 
-   1. Kutucuğun [0,0] çarpma işlemi tamamlanmış olur.
+   1. [0, 0] kutucuğunun çarpma işlemi tamamlanmıştır.
 
-   1. Diğer dört kutucuklar için yineleyin. Dizin oluşturma için özel kutucuklar yoktur ve iş parçacığı herhangi bir sırayla çalıştırabilirsiniz. Her iş parçacığı yürütme sırasında `tile_static` değişkenleri oluşturulan her bölme için uygun şekilde ve çağrısı `tile_barrier::wait` program akışını denetler.
+   1. Diğer dört kutucuk için tekrarlayın. Özellikle kutucuklar için dizin oluşturma yoktur ve iş parçacıkları herhangi bir sırada çalıştırılabilir. Her bir iş parçacığı yürütüldüğünde `tile_static` değişkenleri her kutucuk için uygun şekilde oluşturulur ve `tile_barrier::wait` çağrısı program akışını denetler.
 
-   1. Algoritma yakından incelemek gibi her submatrix yüklendiği fark bir `tile_static` iki kez bellek. Bu veri aktarımı uzun mu sürer. Ancak, veriler sonra `tile_static` bellek, verilere erişim çok daha hızlı. Ürünleri hesaplama submatrices değerleri yinelenen erişim gerektirdiğinden, genel bir performans kazancı yoktur. Her bir algoritmanın deneme en iyi algoritmayı bulup döşeme boyutu gereklidir.
+   1. Algoritmayı yakından inceleyerek, her bir alt matrisin `tile_static` belleğe iki kez yüklendiğine dikkat edin. Bu veri aktarımı zaman alır. Ancak, veriler `tile_static` belleğe alındıktan sonra verilere erişim çok daha hızlıdır. Ürünlerin hesaplanması alt matrislerdeki değerlere yinelenen erişim gerektirdiğinden, genel bir performans kazancı vardır. Her algoritma için, en uygun algoritmayı ve döşeme boyutunu bulmak için deneme gerekir.
 
-   AMP olmayan ve döşeme olmayan örneklerde, her öğe a ve B ürün hesaplamak için genel bellekten dört kez erişilebilir. Kutucuk örnekte, her öğe genel bellekten iki kez ve dört kez erişilen `tile_static` bellek. Bu önemli bir performans kazancı değil. Ancak, A ve B 1024 x 1024, matrislerde ve döşeme boyutu 16 olan, önemli bir performans kazancı olacaktır. Bu durumda, her öğe içine kopyalanacak `tile_static` bellek yalnızca 16 erişilen ve kat `tile_static` bellek 1024 kez.
+   AMP olmayan ve kutucuk olmayan örneklerde, A ve B öğelerinin her öğesine, ürünü hesaplamak için genel bellekten dört kez erişilir. Kutucuk örneğinde, her öğeye genel bellekten iki kez erişilir ve `tile_static` bellekten dört kez erişilir. Bu önemli bir performans kazancı değildir. Ancak, A ve B 'nin 1024x1024 matrisi ve döşeme boyutu 16 ise, önemli bir performans kazancı elde edersiniz. Bu durumda, her öğe yalnızca 16 kez `tile_static` belleğe kopyalanıp `tile_static` bellek 1024 katından erişilir.
 
-1. Main yöntemini çağırmak için değiştirme `MultiplyWithTiling` gösterildiği yöntemi.
+1. Ana yöntemi, gösterildiği gibi `MultiplyWithTiling` yöntemini çağıracak şekilde değiştirin.
 
    ```cpp
-   void main() {
+   int main() {
        MultiplyWithOutAMP();
        MultiplyWithAMP();
        MultiplyWithTiling();
@@ -316,9 +316,9 @@ Bu algoritma, kodu uygulamak için:
    }
    ```
 
-1. Tuşuna **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
+1. Hata ayıklamayı başlatmak için **Ctrl**+**F5** klavye kısayoluna basın ve çıktının doğru olduğunu doğrulayın.
 
-1. Tuşuna **alanı** çubuğundaki uygulamadan çıkın.
+1. Uygulamadan çıkmak için **boşluk** çubuğuna basın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

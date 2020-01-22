@@ -1,15 +1,15 @@
 ---
 title: Kategorilere Göre Listelenen Derleyici Seçenekleri
-ms.date: 08/08/2019
+ms.date: 01/08/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 8c99b2dd60e6c2266d5095a477ee4a5b2e0c8bd0
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: 0734cdc6fb7d8b543c6415bfd6b4f98469703586
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685195"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518419"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -64,6 +64,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Hızlı bir şekilde daha fazla işlem oluşturur.|
 |[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Bir kayan nokta türünden integral türüne dönüştürme gerekli olduğunda, yardımcı işlevin çağrısını bastırır `_ftol`. (yalnızca x86)|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|`try` bloklarının içindeki `fwait` komutlarını kaldırır.|
+|[/Qıntel-JCC-errat](qintel-jcc-erratum.md)|Intel JCC ermıtum mikro kod güncelleştirmesinin performans etkisini azaltır.|
 |[/Qpar](qpar-auto-parallelizer.md)|Döngülerin otomatik paralelleştirilmesini mümkün hale getirme.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Otomatik paralelleştirme için raporlama düzeylerini mümkün hale getirme.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Kayan nokta değerleri için tamsayı taşıma yönergelerini kullanır ve belirli kayan nokta yükleme iyileştirmelerini devre dışı bırakır.|
@@ -219,7 +220,7 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 |[/OG](og-global-optimizations.md)|Kullanım dışı. Genel iyileştirmeleri kullanır.|
 |[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Bir kayan nokta türünden integral türüne nasıl dönüştüreceğiniz belirlemek için kullanılır.|
 |[Çıktıda](v-version-number.md)|Kullanım dışı. . Obj dosya sürümü dizesini ayarlar.|
-|[/Wp64](wp64-detect-64-bit-portability-issues.md)|Kullanımdan kalktı. 64-bit taşınabilirlik sorunlarını algılar.|
+|[/Wp64](wp64-detect-64-bit-portability-issues.md)|{1&gt;Artık kullanılmıyor.&lt;1} 64-bit taşınabilirlik sorunlarını algılar.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Tüm nesne dosyalarındaki hata ayıklama bilgilerini tamamlar. Bunun yerine [/Zi](z7-zi-zi-debug-information-format.md) kullanın.|
 |[/Zc: forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Kullanım dışı. For döngüsü kapsamında uygunluğu devre dışı bırakır.|
 |[/Ze](za-ze-disable-language-extensions.md)|Kullanım dışı. Dil uzantılarını izin vermez.|

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2346
 ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
-ms.openlocfilehash: fc2aeac02ecc3f29406c2288051ca6cd9d3a4923
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 91f2bac38166a8972193a7aaa7e84913b941c799
+ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760016"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518328"
 ---
 # <a name="compiler-error-c2346"></a>Derleyici hatası C2346
 
@@ -45,7 +45,7 @@ struct S
    virtual __clrcall ~S() { }
 };
 
-void main()
+int main()
 {
    S s;
 }
