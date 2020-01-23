@@ -3,7 +3,14 @@
 - name: 'Linux Geliştirme iş yükünü indirme, yükleme ve ayarlama'
   href: download-install-and-setup-the-linux-development-workload.md
 - name: Uzak Linux bilgisayarınıza bağlanma
-  href: connect-to-your-remote-linux-computer.md
+  expanded: true
+  items:
+    - name: Uzak Linux bilgisayarınıza bağlanma
+      href: connect-to-your-remote-linux-computer.md
+    - name: FIPS uyumlu güvenli uzak Linux geliştirmeyi ayarla
+      href: set-up-fips-compliant-secure-remote-linux-development.md
+    - name: ConnectionManager başvurusu
+      href: connectionmanager-reference.md
 - name: Yeni Linux projesi oluşturma
   href: create-a-new-linux-project.md
 - name: Linux projesi yapılandırma

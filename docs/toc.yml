@@ -692,6 +692,8 @@
                           href: build/reference/qifist-suppress-ftol.md
                         - name: /Qimprecise_fwaits (Try blokları içindeki fwaits'i kaldır)
                           href: build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md
+                        - name: /QIntel-jcc-erratum
+                          href: build/reference/qintel-jcc-erratum.md
                         - name: /Qpar (Otomatik paralel hale getirici)
                           href: build/reference/qpar-auto-parallelizer.md
                         - name: /Qpar-rapor (Otomatik paralel hale getirici raporlama düzeyi)
