@@ -1,7 +1,7 @@
 ---
 title: /DEPENDENTLOADFLAG (Varsayılan bağımlı yük bayraklarını ayarla)
-description: /DEPENDENTLOADFLAG seçeneği, LoadLibrary kullanılarak yüklenen dll 'Ler için varsayılan bayrakları ayarlar
-ms.date: 12/22/2018
+description: /DEPENDENTLOADFLAG seçeneği, bu modül tarafından yüklenen dll 'Ler için varsayılan bağımlı yükleme bayraklarını ayarlar.
+ms.date: 01/22/2020
 f1_keywords:
 - dependentloadflag
 helpviewer_keywords:
@@ -10,16 +10,24 @@ helpviewer_keywords:
 - linker [C++], DEPENDENTLOADFLAG
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
-ms.openlocfilehash: 3a403f22c88ccd3e25ba95c183656ad2ffafd05a
-ms.sourcegitcommit: ef34a11cb04511221bf5c7b9f4f55ad91a7a603f
+ms.openlocfilehash: 5e31a0d747e7186814cba3ae1c4cf243569d87a8
+ms.sourcegitcommit: b67b08472b6f1ee8f1c5684bba7056d3e0fc745f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75330004"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76725714"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/DEPENDENTLOADFLAG (Varsayılan bağımlı yük bayraklarını ayarla)
 
-Dll 'Leri yüklemek için `LoadLibrary` kullanıldığında kullanılan varsayılan yükleme bayraklarını ayarlar.
+::: moniker range="vs-2015"
+
+**/Dependentloadflag** seçeneği, Visual Studio 2017 veya üstünü gerektirir.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
+İşletim sistemi bir modülün statik olarak bağlı içeri aktarmalarını çözdüğünde kullanılan varsayılan yükleme bayraklarını ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,17 +36,23 @@ Dll 'Leri yüklemek için `LoadLibrary` kullanıldığında kullanılan varsayı
 ### <a name="arguments"></a>Arguments
 
 *load_flags*<br/>
-İsteğe bağlı bir "C" stili 16 bit tamsayı değeri ondalık, önünde sıfır ile sekizlik, tüm [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) çağrılarına uygulanacak bağımlı yükleme bayraklarını belirten önde gelen bir `0x`. Varsayılan değer 0'dır.
+Modülün statik olarak bağlı içeri aktarma bağımlılıklarını çözümlerken uygulanacak yükleme bayraklarını belirten isteğe bağlı bir tamsayı değeri. Varsayılan değer 0'dır. Desteklenen bayrak değerlerinin listesi için bkz. [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)içindeki `LOAD_LIBRARY_SEARCH_*` girdileri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, Visual Studio 2017 ' de yenidir. Yalnızca Windows 10 RS1 ve üzeri sürümlerde çalışan uygulamalar için geçerlidir. Bu seçenek, uygulamayı çalıştıran diğer işletim sistemleri tarafından yok sayılır.
+İşletim sistemi bir modülün statik olarak bağlı içeri aktarmalarını çözdüğünde, [varsayılan arama sırasını](/windows/win32/dlls/dynamic-link-library-search-order)kullanır. Bu içeri aktarmaları çözümlemek için kullanılan arama yolunu değiştiren *load_flags* bir değer belirtmek için **/Dependentloadflag** seçeneğini kullanın. Desteklenen işletim sistemlerinde, `LOAD_LIBRARY_SEARCH` parametreleri kullanılırken [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) öğesine benzer şekilde statik içeri aktarma çözümleme arama sırasını değiştirir. *Load_flags*tarafından ayarlanan arama sırası hakkında daha fazla bilgi için, bkz. [LOAD_LIBRARY_SEARCH bayraklarını kullanarak arama sırası](/windows/win32/dlls/dynamic-link-library-search-order#search-order-using-load_library_search-flags).
 
-Desteklenen işletim sistemlerinde, bu seçenek `LoadLibrary("dependent.dll")` çağrılarının `LoadLibraryEx("dependent.dll", 0, load_flags)`eşdeğerine değiştirilmesine etkisi vardır. [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) çağrıları etkilenmez. Bu seçenek, uygulamanız tarafından yüklenen dll 'lere yinelemeli olarak uygulanmaz.
+Bu bayrak, bir [DLL planlatma saldırı](/windows/win32/dlls/dynamic-link-library-security) vektörünü daha zor hale getirmek için kullanılabilir. Örneğin, bir DLL 'ye statik olarak bağlanan bir uygulama düşünün:
 
-Bu bayrak, [DLL planlamaları](/windows/win32/dlls/dynamic-link-library-security) daha zor hale getirmek için kullanılabilir. Örneğin, bir uygulama bağımlı DLL yüklemek için `LoadLibrary` kullanıyorsa, bir saldırgan, güvenli DLL arama modu devre dışı bırakılmışsa sistem dizinlerinden önce denetlenebilen geçerli dizin gibi `LoadLibrary`tarafından kullanılan arama yolunda aynı ada sahip bir DLL oluşturabilir. Güvenli DLL arama modu, kullanıcının geçerli dizinini daha sonra arama sırasına koyar ve Windows XP SP2 ve sonraki sürümlerinde varsayılan olarak etkindir. Daha fazla bilgi için bkz. [dinamik bağlantı kitaplığı arama sırası](/windows/win32/Dlls/dynamic-link-library-search-order).
+- Saldırgan, uygulama dizini gibi içeri aktarma çözümleme arama yolunda aynı ada sahip bir DLL 'i daha önce de verebilir. Korunan dizinler daha zordur, ancak bir saldırganın değiştirmesine izin vermez.
 
-`/DEPENDENTLOADFLAG:0xA00` bağlantı seçeneğini belirtirseniz (Birleşik bayrakların `LOAD_LIBRARY_SEARCH_APPLICATION_DIR | LOAD_LIBRARY_SEARCH_SYSTEM32`), ancak kullanıcının bilgisayarında güvenli DLL arama modu devre dışı bırakılmış olsa bile, DLL arama yolu uygulama diziniyle sınırlandırılmıştır ve sonrasında%Windows%\System32 dizinidir. `/DEPENDENTLOADFLAG:0x800` bir seçeneği daha kısıtlayıcı olduğundan, aramayı%Windows%\System32 diziniyle sınırlandırırsınız. Korunan dizinler daha zordur, ancak bir saldırganın değiştirmesine izin vermez. Kullanılabilir bayraklar ve bunların sembolik ve sayısal değerleri hakkında daha fazla bilgi için bkz. [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)Içindeki *dwFlags* parametre açıklaması. Çeşitli bağımlı yük bayrakları kullanıldığında kullanılan arama sırası hakkında daha fazla bilgi için, bkz. [LOAD_LIBRARY_SEARCH bayraklarını kullanarak arama sırası](/windows/win32/dlls/dynamic-link-library-search-order#search-order-using-load_library_search-flags).
+- DLL uygulamada,%Windows%\System32 ve% Windows% dizinlerinde yoksa, içeri aktarma çözünürlüğü geçerli dizine düşer. Bir saldırgan, bir DLL 'yi orada bir de verebilir.
+
+Her iki durumda da bağlantı seçeneğini belirtirseniz `/DEPENDENTLOADFLAG:0x800` (`LOAD_LIBRARY_SEARCH_SYSTEM32`bayrağının değeri), modül arama yolu%Windows%\System32 diziniyle sınırlandırılmıştır. Diğer dizinlerde planlayarak saldırılara karşı koruma sağlar. Daha fazla bilgi için bkz. [dinamik bağlantı kitaplığı güvenliği](/windows/win32/dlls/dynamic-link-library-security).
+
+Herhangi bir DLL 'de **/Dependentloadflag** seçeneği tarafından ayarlanan değeri görmek için, [/loadConfig](loadconfig.md) seçeneğiyle [dumpbin](dumpbin-reference.md) komutunu kullanın.
+
+**/Dependentloadflag** seçeneği, Visual Studio 2017 ' de yenidir. Yalnızca Windows 10 RS1 ve üzeri sürümlerde çalışan uygulamalar için geçerlidir. Bu seçenek, uygulamayı çalıştıran diğer işletim sistemleri tarafından yok sayılır.
 
 ### <a name="to-set-the-dependentloadflag-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında DEPENDENTLOADFLAG bağlayıcı seçeneğini ayarlamak için
 
@@ -55,8 +69,11 @@ Bu bayrak, [DLL planlamaları](/windows/win32/dlls/dynamic-link-library-security
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
-- [Bir yürütülebilir dosyayı DLL’ye bağlama](../linking-an-executable-to-a-dll.md#linking-implicitly)
-- [Bir yürütülebilir dosyayı DLL’ye bağlama](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)
+- [Yürütülebilir dosyayı DLL 'ye örtük olarak bağlama](../linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Hangi bağlama yönteminin kullanılacağını belirleme](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 - [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)
 - [Dinamik bağlantı kitaplığı arama sırası](/windows/win32/Dlls/dynamic-link-library-search-order)
+- [Dinamik bağlantı kitaplığı güvenliği](/windows/win32/dlls/dynamic-link-library-security)
+
+::: moniker-end
