@@ -119,16 +119,16 @@ helpviewer_keywords:
 - std::basic_string_view, substr
 - std::basic_string_view, swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: e5d89eeb9f663c8699ddad469a8189008671ed3b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 7bd6d02304e86b50d33bdaa3e07c95b08da31f7a
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447861"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821902"
 ---
-# <a name="basicstringview-class"></a>basic_string_view sınıfı
+# <a name="basic_string_view-class"></a>basic_string_view sınıfı
 
-Sınıf şablonu `basic_string_view<charT>` , işlevin bu türlerde şablonlanmasına gerek kalmadan, çeşitli ilişkisiz dize türlerini kabul etmesi için güvenli ve etkili bir yol olarak kullanılacak şekilde c++ 17 ' ye eklenmiştir. Sınıfı, bir dizi karakter verisi dizisine sahip olmayan bir işaretçi ve dizideki karakter sayısını belirten bir uzunluk içerir. Dizinin null sonlandırılmış olup olmadığı ile ilgili bir varsayım yapılmaz.
+`basic_string_view<charT>` sınıf şablonu, işlevin bu türlerde şablonlanmasına gerek kalmadan, çeşitli ilişkisiz dize türlerini kabul etmesi için güvenli ve etkili bir yol olarak kullanılacak şekilde C++ 17 ' ye eklenmiştir. Sınıfı, bir dizi karakter verisi dizisine sahip olmayan bir işaretçi ve dizideki karakter sayısını belirten bir uzunluk içerir. Dizinin null sonlandırılmış olup olmadığı ile ilgili bir varsayım yapılmaz.
 
 Standart Kitaplık, öğelerin türüne göre çeşitli uzmanlık tanımlar:
 
@@ -139,11 +139,11 @@ Standart Kitaplık, öğelerin türüne göre çeşitli uzmanlık tanımlar:
 
 Bu belgede, "string_view" terimi genellikle bu tür türtanımlarının herhangi birine başvurur.
 
-Bir string_view dize verilerini okumak için gereken en düşük ortak arabirimi açıklar. Temel alınan verilere const erişimi sağlar; hiçbir kopya yapmaz ( `copy` işlev hariç). Veriler herhangi bir konumda null değer (' \ 0 ') içerebilir veya içermeyebilir. Bir string_view, nesnenin ömrü boyunca denetim sahibi değildir. Bu, temeldeki dize verilerinin geçerli olduğundan emin olmak için çağıranın sorumluluğundadır.
+String_view dize verilerini okumak için gereken en düşük ortak arabirimi açıklar. Temel alınan verilere const erişimi sağlar; hiçbir kopya yapmaz (`copy` işlevi dışında). Veriler herhangi bir konumda null değer (' \ 0 ') içerebilir veya içermeyebilir. String_view nesnenin ömrü boyunca denetim yoktur. Bu, temeldeki dize verilerinin geçerli olduğundan emin olmak için çağıranın sorumluluğundadır.
 
-String_view türünde bir parametreyi kabul eden bir işlev, herhangi bir dize benzeri tür ile çalışabilir, işlev bir şablona yapılamaz veya işlevi dize türlerinin belirli bir alt kümesiyle tümlenebilir. Tek gereksinim, dize türünden string_view 'e örtük bir dönüştürme vardeğildir. Tüm standart dize türleri, aynı öğe türünü içeren bir string_view örtük olarak dönüştürülebilir. Diğer bir deyişle, `std::string` a dönüştürülebilir `string_view` ancak öğesine `wstring_view`dönüştürülemez.
+String_view türünde bir parametreyi kabul eden bir işlev, herhangi bir dize benzeri tür ile çalışabilir, bu işlevi bir şablona veya bir dizi dize türünün belirli bir alt kümesine sınırlama. Tek gereksinim, dize türünden string_view örtük bir dönüştürmenin mevcut olması. Tüm standart dize türleri, aynı öğe türünü içeren bir string_view örtük olarak dönüştürülebilir. Diğer bir deyişle, bir `std::string`, bir `string_view` dönüştürülebilir ancak bir `wstring_view`.
 
-Aşağıdaki örnek, türünde `f` `wstring_view`bir parametre alan şablon olmayan bir işlevi gösterir. , `std::wstring` `wchar_t*`Ve türündekibağımsızdeğişkenlerleçağrılabilir.`winrt::hstring`
+Aşağıdaki örnekte, `wstring_view`türünde bir parametre alan şablon olmayan bir işlev `f` gösterilmektedir. `std::wstring`, `wchar_t*`ve `winrt::hstring`türündeki bağımsız değişkenlerle çağrılabilir.
 
 ```cpp
 // compile with: /std:c++17
@@ -178,20 +178,20 @@ class basic_string_view;
 ### <a name="parameters"></a>Parametreler
 
 *CharType*\
-String_view içinde depolanan karakterlerin türü. C++ Standart kitaplık, bu şablonun özelleştirilmiş oluşturmaları için aşağıdaki tür tanımlarını sağlar.
+String_view depolanan karakterlerin türü. C++ Standart kitaplık, bu şablonun özelleştirilmiş oluşturmaları için aşağıdaki tür tanımlarını sağlar.
 - **char** türü öğeler için [string_view](../standard-library/string-view-typedefs.md#string_view)
-- **wchar_t** için [wstring_view](../standard-library/string-view-typedefs.md#wstring_view)
+- [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), **wchar_t** için
 - **char16_t** için [u16string_view](../standard-library/string-view-typedefs.md#u16string_view)
 - **char32_t**için [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) .
 
-*Lerdir*\
-Varsayılan olarak [char_traits](char-traits-struct.md)<*CharType*>.
+*Nitelikler*\
+[Char_traits](char-traits-struct.md)<*CharType*> Varsayılan olarak belirlenmiştir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_string_view](#basic_string_view)|Boş veya başka bir dize nesnesinin verilerinin tamamını ya da bir kısmını işaret eden bir string_view oluşturur ya da C stili bir karakter dizisi.|
+|[basic_string_view](#basic_string_view)|Boş veya başka bir dize nesnesinin verilerinin tümünü veya bir kısmını ya da C stili karakter dizisine işaret eden bir string_view oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -216,45 +216,45 @@ Varsayılan olarak [char_traits](char-traits-struct.md)<*CharType*>.
 |İşleç|Açıklama|
 |-|-|
 |[operator=](#op_eq)|Başka bir string_view string_view veya dönüştürülebilir dize nesnesi atar.|
-|[işlecinde\[\]](#op_at)|Belirtilen dizindeki öğeyi döndürür.|
+|[işleç\[\]](#op_at)|Belirtilen dizindeki öğeyi döndürür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[hızı](#at)|Belirtilen konumdaki öğesine bir const_reference döndürür.|
+|[hızı](#at)|Belirtilen konumdaki öğesine const_reference döndürür.|
 |[Geri](#back)|Son öğeye bir const_reference döndürür.|
 |[başladı](#begin)|İlk öğeyi adresleyen bir const yineleyici döndürür. (string_views sabittir.)|
 |[cbegin](#cbegin)|[Begin](#begin)ile aynı.|
 |[cend](#cend)|Son öğeyi aşan bir sabitten oluşan const yineleyici döndürür.|
 |[kopya](#copy)|Kaynak string_view dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakteri kopyalar. (Önerilmez. Bunun yerine _Copy_s kullanın.)|
 |[_Copy_s](#_copy_s)|Güvenli CRT kopyalama işlevi.|
-|[Karşılaştır](#compare)|Eşit olup olmadığını veya birinin sözcüıgrafik değerinden daha küçük olduğunu anlamak için bir string_view ile belirtilen bir string_view karşılaştırır.|
+|[Karşılaştır](#compare)|Eşit olup olmadığını veya birinin sözcüıgrafik değerinden daha küçük olduğunu anlamak için string_view belirtilen string_view karşılaştırır.|
 |[crbegin](#crbegin)|[Rbegin](#rbegin)ile aynı.|
 |[crend](#crend)|[Rend](#rend)ile aynı.|
 |[verileri](#data)|Karakter dizisine ait ham sahip olmayan bir işaretçi döndürür.|
-|[empty](#empty)|String_view karakter içerip içermediğini test eder.|
+|[empty](#empty)|String_view karakter içerip içermediğini sınar.|
 |[erer](#end)|[Cend](#cend)ile aynı.|
 |[bilgi](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için ileriye doğru yönde arar.|
-|[find_first_not_of](#find_first_not_of)|Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesi olmayan ilk karakteri arar.|
-|[find_first_of](#find_first_of)|Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesiyle eşleşen ilk karakteri arar.|
+|[find_first_not_of](#find_first_not_of)|Belirtilen string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesi olmayan ilk karakteri arar.|
+|[find_first_of](#find_first_of)|Belirtilen string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesiyle eşleşen ilk karakteri arar.|
 |[find_last_not_of](#find_last_not_of)|Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesi olmayan son karakteri arar.|
 |[find_last_of](#find_last_of)|Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin bir öğesi olan son karakteri arar.|
 |[yapılan](#front)|İlk öğeye bir const_reference döndürür.|
-|[length](#length)|Geçerli öğe sayısını döndürür.|
-|[max_size](#max_size)|Bir string_view içerebileceği en fazla karakter sayısını döndürür.|
-|[rbegin](#rbegin)|Ters çevrilen bir string_view ilk öğeyi ele alan bir sabit yineleyici döndürür.|
+|[Uzunluğu](#length)|Geçerli öğe sayısını döndürür.|
+|[max_size](#max_size)|String_view içerebileceği en fazla karakter sayısını döndürür.|
+|[rbegin](#rbegin)|Ters çevrilen string_view ilk öğeyi ele alan bir const yineleyici döndürür.|
 |[remove_prefix](#remove_prefix)|İşaretçiyi belirtilen sayıda öğe kadar ileri kaydırır.|
 |[remove_suffix](#remove_suffix)|Görünümün boyutunu, kayıttan başlayarak belirtilen sayıda öğe kadar azaltır.|
-|[rend](#rend)|Ters çevrilen bir string_view son öğeyi gösteren bir const yineleyici döndürür.|
-|[rfind](#rfind)|Belirli bir karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir string_view ile ters arama yapar.|
+|[rend](#rend)|Ters çevrilen string_view en son öğeden birini işaret eden bir const yineleyici döndürür.|
+|[rfind](#rfind)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için string_view ters arar.|
 |[boyutla](#size)|Geçerli öğe sayısını döndürür.|
 |[substr](#substr)|Belirtilen dizinden başlayarak belirtilen uzunluktaki alt dizeyi döndürür.|
-|[Kur](#swap)|İki string_views içeriğini değiş tokuş edin.|
+|[Kur](#swap)|İki string_views içeriğini Exchange.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir işlevin [max_size](#max_size) öğelerinden daha uzun bir sıra oluşturması istenirse, işlev [length_error](../standard-library/length-error-class.md)türünde bir nesne oluşturarak bir uzunluk hatası bildirir.
+Bir işleve [max_size](#max_size) öğelerinden daha uzun bir sıra oluşturması istenirse, işlev [length_error](../standard-library/length-error-class.md)türünde bir nesne oluşturarak bir uzunluk hatası bildiriyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -274,20 +274,20 @@ constexpr const_reference at(size_type offset) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*konumu*\
+\ *boşluğu*
 Başvurulacak öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre dizini tarafından belirtilen konumdaki karaktere bir const_reference.
+Parametre dizini tarafından belirtilen konumdaki karaktere const_reference.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk öğe bir sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluğu string_view, n *-* 1 sayısı tarafından dizine alınmış bir *n*. öğesi vardır. , [işlecinin\[aksinegeçersizdizinler için bir özel durum oluşturur.\]](#op_at) 
+İlk öğe sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluğu bir string_view n *-* 1 sayısı tarafından dizine alınmış bir *n*. öğesi vardır. **öğesinde** , [işleç\[\]](#op_at)farklı olarak geçersiz dizinler için bir özel durum oluşturur. 
 
-Genel olarak, `std::vector` ve string_view gibi  diziler asla kullanılmamalıdır. Bir diziye geçirilen geçersiz dizin, geliştirme sırasında bulunması ve düzeltilmesi gereken bir mantık hatasıdır. Bir program, dizinlerinin geçerli olduğundan kesinlikle emin olmazsa, () çağrısı değil, onları test etmelidir ve daha az programlamaya karşı savunması için özel durumlara güvenmelidir.
+Genel olarak, `std::vector` ve string_view gibi diziler asla kullanılmamalıdır. Bir diziye geçirilen geçersiz dizin, geliştirme sırasında bulunması ve düzeltilmesi gereken bir mantık hatasıdır. Bir program, dizinlerinin geçerli olduğundan kesinlikle emin olmazsa, () çağrısı değil, onları test etmelidir ve daha az programlamaya karşı savunması için özel durumlara güvenmelidir.
 
-Daha fazla bilgi için bkz. [basic_string_view:: operator\[ \] ](#op_at) .
+Daha fazla bilgi için bkz. [basic_string_view:: operator\[\]](#op_at) .
 
 ### <a name="example"></a>Örnek
 
@@ -316,17 +316,17 @@ constexpr const_reference back() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-String_view içindeki son öğeye bir const_reference.
+String_view son öğeye const_reference.
 
 ### <a name="remarks"></a>Açıklamalar
 
 String_view boşsa bir özel durum oluşturur.
 
-Bir string_view değiştirildikten sonra, örneğin çağırarak `remove_suffix`, bu işlev tarafından döndürülen öğe artık temeldeki verilerdeki son öğe değil.
+String_view değiştirildikten sonra, örneğin `remove_suffix`çağırarak, bu işlev tarafından döndürülen öğe artık temeldeki verilerdeki son öğe değil.
 
 ### <a name="example"></a>Örnek
 
-C dize değişmez değeri ile oluşturulan bir string_view, Sonlandırıcı null değerini içermez ve bu nedenle aşağıdaki örnekte `back` ' p ' ve ' \ 0 ' değil ' p ' döndürülür.
+C dize değişmez değeri ile oluşturulan string_view, Sonlandırıcı null değerini içermez ve bu nedenle aşağıdaki örnekte ' p ' döndürür ve ' \ 0 ' değil `back`.
 
 ```cpp
 char c[] = "Help"; // char[5]
@@ -342,7 +342,7 @@ string_view e = "embedded\0nulls"sv;
 cout << boolalpha << (e.back() == 's'); // true
 ```
 
-## <a name="basic_string_view"></a>basic_string_view::basic_string_view
+## <a name="basic_string_view"></a>basic_string_view:: basic_string_view
 
 Bir string_view oluşturur.
 
@@ -355,17 +355,17 @@ constexpr basic_string_view(const charT* str, size_type len);
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*\
+*str*\
 Karakter değerlerine yönelik işaretçi.
 
-*tepe*\
+*len*\
 Görünüme eklenecek karakter sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Grafik * parametresi olan oluşturucular, girişin null sonlandırılmış olduğunu varsayar, ancak Sonlandırıcı null değeri string_view ' ye dahil değildir.
+Grafik * parametresi olan oluşturucular, girişin null sonlandırılmış olduğunu varsayar, ancak sonlandırma null değeri string_view dahil değildir.
 
-Ayrıca, değişmez değer içeren bir string_view oluşturabilirsiniz. ["" ZF işlecine](string-view-operators.md#op_sv)bakın.
+Ayrıca, sabit değerli bir string_view oluşturabilirsiniz. ["" ZF işlecine](string-view-operators.md#op_sv)bakın.
 
 ## <a name="begin"></a>basic_string_view:: Begin
 
@@ -388,7 +388,7 @@ constexpr const_iterator cbegin() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aralığın  ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık `cbegin() == cend()`için) işaret eden const bir rastgele erişim Yineleyici.
+Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık için `cbegin() == cend()`) işaret eden **const** bir rastgele erişim Yineleyici.
 
 ## <a name="cend"></a>basic_string_view:: cend
 
@@ -404,11 +404,11 @@ Yalnızca aralığın sonunu işaret eden **const** bir rastgele erişim Yineley
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından `cend` döndürülen değer başvurulmamalıdır.
+`cend` tarafından döndürülen değer başvurulmamalıdır.
 
 ## <a name="compare"></a>basic_string_view:: Compare
 
-İki nesnenin eşit olup olmadığını veya birinin lexıgrafik değerinden daha küçük olduğunu anlamak için belirtilen bir string_view (veya dönüştürülebilir dize türü) ile büyük/küçük harfe duyarlı bir karşılaştırma gerçekleştirir. [ \<String_view > işleçleri](string-view-operators.md) , karşılaştırmaları gerçekleştirmek için bu üye işlevini kullanır.
+İki nesnenin eşit olup olmadığını veya birinin lexıgrafik değerinden daha küçük olduğunu anlamak için belirtilen string_view (veya dönüştürülebilir dize türü) ile büyük/küçük harfe duyarlı bir karşılaştırma gerçekleştirir. [\<string_view > işleçleri](string-view-operators.md) , karşılaştırmaları gerçekleştirmek için bu üye işlevini kullanır.
 
 ```cpp
 constexpr int compare(basic_string_view strv) const noexcept;
@@ -422,30 +422,30 @@ constexpr int compare(size_type pos, size_type num, const charT* ptr, size_type 
 ### <a name="parameters"></a>Parametreler
 
 *Strv*\
-Bu string_view ile karşılaştırılacak olan string_view.
+Bu string_view Karşılaştırılacak string_view.
 
-*'un*\
-Karşılaştırma işleminin başladığı bu string_view dizini.
+*pos*\
+Bu string_view karşılaştırmanın başladığı dizin.
 
-*numaraları*\
+\ *num*
 Bu string_view Karşılaştırılacak en fazla karakter sayısı.
 
 *num2*\
 *Strv* 'nin karşılaştırılacağı maksimum karakter sayısı.
 
-*konumu*\
+\ *boşluğu*
 Karşılaştırma işleminin başladığı *Strv* dizini.
 
-*kaydetmeye*\
-Bu string_view karşılaştırılacak olan C dizesi.
+*ptr*\
+Bu string_view Karşılaştırılacak C dizesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu string_view, *Strv* veya *PTR*'den küçükse negatif bir değer; iki karakter dizisi eşitse sıfır; ya da bu string_view, *Strv* veya *PTR*'den büyükse pozitif bir değer.
+Bu string_view *Strv* veya *PTR*'den küçükse negatif bir değer; iki karakter dizisi eşitse sıfır; ya da bu string_view *Strv* veya *PTR*'den büyükse pozitif bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye `compare` işlevleri, her bir karakter dizisinin tümü veya bir kısmı için büyük/küçük harfe duyarlı bir karşılaştırma gerçekleştirir. 
+`compare` üye işlevleri, her bir karakter dizisinin tümü veya bir kısmı için büyük/küçük harfe duyarlı bir karşılaştırma gerçekleştirir. 
 
 ### <a name="example"></a>Örnek
 
@@ -565,14 +565,14 @@ size_type copy(charT* ptr, size_type count, size_type offset = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*kaydetmeye*\
+*ptr*\
 Öğelerin kopyalanacağı hedef karakter dizisi.
 
-*biriktirme*\
-Kaynak string_view, en fazla kopyalanacak karakter sayısı.
+*sayı*\
+Kaynak string_view en fazla kopyalanacak karakter sayısı.
 
-*konumu*\
-Kopya yapılacak kaynak string_view başlangıç konumu.
+\ *boşluğu*
+Kaynak string_view kopyaların oluşturulacağı başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -582,7 +582,7 @@ Gerçekte kopyalanmış karakterlerin sayısı.
 
 Kopyanın sonuna bir null karakter eklenmez.
 
-## <a name="_copy_s"></a>basic_string_view::_Copy_s
+## <a name="_copy_s"></a>basic_string_view:: _Copy_s
 
 [Kopyalama](#copy)yerine kullanılacak güvenli CRT kopyalama işlevi.
 
@@ -596,7 +596,7 @@ size_type _Copy_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*HD*\
+*hedef*\
 Öğelerin kopyalanacağı hedef karakter dizisi.
 
 *dest_size*\
@@ -604,7 +604,7 @@ size_type _Copy_s(
 
 _ Kaynak dizeden, en fazla kopyalanacak karakter sayısını *say* .
 
-*_Kapatma*\
+*_Off*\
 Kopya yapılacak Kaynak dizedeki başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -619,7 +619,7 @@ Kopyanın sonuna bir null karakter eklenmez.
 
 ## <a name="crbegin"></a>basic_string_view:: crbegin
 
-Ters çevrilen string_view içindeki ilk öğeyi ele alan bir const_reverse_iterator döndürür.
+Ters çevrilen bir string_view ilk öğeyi ele alan bir const_reverse_iterator döndürür.
 
 ```cpp
 constexpr const_reverse_iterator crbegin() const noexcept;
@@ -627,7 +627,7 @@ constexpr const_reverse_iterator crbegin() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilmiş string_view içindeki ilk öğeyi ele alan bir const_reverse_iterator. 
+Ters çevrilen bir string_view ilk öğeyi ele alan bir const_reverse_iterator. 
 
 ## <a name="crend"></a>basic_string_view:: crend
 
@@ -639,7 +639,7 @@ constexpr const_reverse_iterator crend() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen string_view sonundan bir geçen bir const_reverse_iterator döndürür.
+Ters çevrilen bir string_view sonunun sonundaki bir const_reverse_iterator döndürür.
 
 ## <a name="data"></a>basic_string_view::d ata
 
@@ -657,11 +657,11 @@ Karakter dizisinin ilk öğesine-const işaretçisi.
 
 İşaretçi karakterleri değiştiremiyor.
 
-Bir dizi string_view karakter null ile Sonlandırılmamış olması gerekmez. Hiçbir null karakter eklenmediğinden `data` , için dönüş türü geçerli bir C dizesi değil. ' \ 0 ' null karakterinin string_view türünde bir nesne içinde özel bir anlamı yoktur ve string_view nesnesinin başka bir karakter gibi bir parçası olabilir.
+String_view karakterlerin bir dizisi null ile Sonlandırılmamış olması gerekmez. Hiçbir null karakter eklenmediğinden, `data` için dönüş türü geçerli bir C dizesi değil. ' \ 0 ' null karakterinin string_view türünde bir nesne için özel bir anlamı yoktur ve başka bir karakter gibi string_view nesnesinin bir parçası olabilir.
 
-## <a name="empty"></a>basic_string_view:: Empty
+## <a name="empty"></a>basic_string_view:: boş
 
-String_view karakter içerip içermediğini test eder.
+String_view karakter içerip içermediğini sınar.
 
 ```cpp
 constexpr bool empty() const noexcept;
@@ -669,7 +669,7 @@ constexpr bool empty() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-string_view nesnesi hiçbir karakter içermiyorsa **true** ; en az bir karakter varsa **false** .
+string_view nesnesi karakter içermiyorsa **true** ; en az bir karakter varsa **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -689,11 +689,11 @@ En son öğeyi aşan bir rastgele erişim const_iterator döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`end`, bir const_iterator 'in string_view sonuna ulaşmadığını test etmek için kullanılır. Tarafından `end` döndürülen değer başvurulmamalıdır.
+`end`, bir const_iterator string_view sonuna ulaşmadığını test etmek için kullanılır. `end` tarafından döndürülen değer başvurulmamalıdır.
 
 ## <a name="find"></a>basic_string_view:: Find
 
-Belirli karakter (ler) dizisiyle eşleşen bir karakter veya alt dizenin ilk oluşumu için bir string_view ileri yönde arar.
+Belirtilen karakter dizisiyle eşleşen bir karakter veya alt dizenin ilk oluşumu için bir string_view ileri yönde arar.
 
 ```cpp
 constexpr size_type find(basic_string_view str, size_type offset = 0) const noexcept;
@@ -704,28 +704,28 @@ constexpr size_type find(const charT* ptr, size_type offset = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*\
+*str*\
 Üye işlevin aranacağı string_view.
 
-*chVal*\
+*Chval*\
 Üye işlevin aranacağı karakter değeri.
 
-*konumu*\
+\ *boşluğu*
 Aramanın başlayacağı dizin.
 
-*kaydetmeye*\
+*ptr*\
 Üye işlevin aranacağı C dizesi.
 
-*biriktirme*\
+*sayı*\
 İlk karakterden itibaren sayarak, *PTR*içindeki karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi `npos`takdirde.
+Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos`.
 
-## <a name="find_first_not_of"></a>basic_string_view::find_first_not_of
+## <a name="find_first_not_of"></a>basic_string_view:: find_first_not_of
 
-Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin öğesi olmayan ilk karakteri arar.
+Belirtilen string_view veya dönüştürülebilir dize nesnesinin bir öğesi olmayan ilk karakteri arar.
 
 ```cpp
 constexpr size_type find_first_not_of(basic_string_view str, size_type offset = 0) const noexcept;
@@ -736,28 +736,28 @@ constexpr size_type find_first_not_of(const charT* ptr, size_type offset = 0) co
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*\
+*str*\
 Üye işlevin aranacağı string_view.
 
-*chVal*\
+*Chval*\
 Üye işlevin aranacağı karakter değeri.
 
-*konumu*\
+\ *boşluğu*
 Aramanın başlayacağı dizin.
 
-*kaydetmeye*\
+*ptr*\
 Üye işlevin aranacağı C dizesi.
 
-*biriktirme*\
+*sayı*\
 Üye işlevin aranacağı C dizesindeki ilk karakterden ileri sayım karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi `npos`takdirde.
+Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos`.
 
-## <a name="find_first_of"></a>basic_string_view::find_first_of
+## <a name="find_first_of"></a>basic_string_view:: find_first_of
 
-Belirtilen bir string_view öğesinin herhangi bir öğesiyle eşleşen ilk karakteri arar.
+Belirtilen string_view herhangi bir öğesiyle eşleşen ilk karakteri arar.
 
 ```cpp
 constexpr size_type find_first_of(basic_string_view str, size_type offset = 0) const noexcept;
@@ -768,28 +768,28 @@ constexpr size_type find_first_of(const charT* str, size_type offset = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*chVal*\
+*Chval*\
 Üye işlevin aranacağı karakter değeri.
 
-*konumu*\
+\ *boşluğu*
 Aramanın başlayacağı dizin.
 
-*kaydetmeye*\
+*ptr*\
 Üye işlevin aranacağı C dizesi.
 
-*biriktirme*\
+*sayı*\
 Üye işlevin aranacağı C dizesindeki ilk karakterden ileri sayım karakter sayısı.
 
-*üstbilgisine*\
+*str*\
 Üye işlevin aranacağı string_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi `npos`takdirde.
+Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos`.
 
-## <a name="find_last_not_of"></a>basic_string_view::find_last_not_of
+## <a name="find_last_not_of"></a>basic_string_view:: find_last_not_of
 
-Belirtilen bir string_view öğesinin herhangi bir öğesi olmayan son karakteri arar.
+Belirtilen string_view hiçbir öğe olmayan son karakteri arar.
 
 ```cpp
 constexpr size_type find_last_not_of(basic_string_view str, size_type offset = npos) const noexcept;
@@ -800,28 +800,28 @@ constexpr size_type find_last_not_of(const charT* ptr, size_type offset = npos) 
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*\
+*str*\
 Üye işlevin aranacağı string_view.
 
-*chVal*\
+*Chval*\
 Üye işlevin aranacağı karakter değeri.
 
-*konumu*\
+\ *boşluğu*
 Aramanın tamamlanalınacağı dizin.
 
-*kaydetmeye*\
+*ptr*\
 Üye işlevin aranacağı C dizesi.
 
-*biriktirme*\
+*sayı*\
 *PTR*içindeki ilk karakterden sonra gelen karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi `string_view::npos`takdirde.
+Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `string_view::npos`.
 
-## <a name="find_last_of"></a>basic_string_view::find_last_of
+## <a name="find_last_of"></a>basic_string_view:: find_last_of
 
-Belirtilen bir string_view öğesinin herhangi bir öğesiyle eşleşen son karakteri arar.
+Belirtilen string_view herhangi bir öğesiyle eşleşen son karakteri arar.
 
 ```cpp
 constexpr size_type find_last_of(basic_string_view str, size_type offset = npos) const noexcept;
@@ -832,24 +832,24 @@ constexpr size_type find_last_of(const charT* ptr, size_type offset = npos) cons
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*\
+*str*\
 Üye işlevin aranacağı string_view.
 
-*chVal*\
+*Chval*\
 Üye işlevin aranacağı karakter değeri.
 
-*konumu*\
+\ *boşluğu*
 Aramanın tamamlanalınacağı dizin.
 
-*kaydetmeye*\
+*ptr*\
 Üye işlevin aranacağı C dizesi.
 
-*biriktirme*\
+*sayı*\
 Üye işlevin aranacağı C dizesindeki ilk karakterden ileri sayım karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda Aranan alt dizenin son karakterinin dizini; Aksi `npos`takdirde.
+Başarılı olduğunda Aranan alt dizenin son karakterinin dizini; Aksi takdirde `npos`.
 
 ## <a name="front"></a>basic_string_view:: Front
 
@@ -879,9 +879,9 @@ constexpr size_type length() const noexcept;
 
 Üye işlevi, [boyutla](#size)aynıdır.
 
-## <a name="max_size"></a>basic_string_view::max_size
+## <a name="max_size"></a>basic_string_view:: max_size
 
-Bir string_view 'in içerebileceği en fazla karakter sayısını döndürür.
+String_view içerebileceği en fazla karakter sayısını döndürür.
 
 ```cpp
 constexpr size_type max_size() const noexcept;
@@ -889,11 +889,11 @@ constexpr size_type max_size() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir string_view içerebileceği en fazla karakter sayısı.
+String_view içerebileceği en fazla karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işlem, uzunluğu [](../standard-library/length-error-class.md) daha büyük `max_size()`olan bir string_view oluştururken length_error türünde bir özel durum oluşturulur.
+Bir işlem `max_size()`daha büyük bir string_view üretirse [length_error](../standard-library/length-error-class.md) türünde bir özel durum oluşturulur.
 
 ## <a name="op_eq"></a>basic_string_view:: operator =
 
@@ -918,28 +918,28 @@ constexpr const_reference operator[](size_type offset) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*konumu*\
+\ *boşluğu*
 Başvurulacak öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre dizini tarafından belirtilen konumdaki karaktere bir const_reference.
+Parametre dizini tarafından belirtilen konumdaki karaktere const_reference.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk öğe sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n uzunluğu n* , *n-1* sayısı tarafından dizine alınmış bir *n*. öğesi vardır.
+İlk öğe sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluğu bir string_view *n-1* sayısı tarafından dizine alınmış bir *n*. öğesi vardır.
 
-`operator[]`, bir string_view öğelerine okuma erişimi sağlamak için [konumundaki](#at) member işlevinden daha hızlıdır.
+`operator[]`, string_view öğelerine okuma erişimi sağlamak için [konumundaki](#at) member işlevinden daha hızlıdır.
 
-`operator[]`bağımsız değişken olarak geçirilen dizinin geçerli olup olmadığını denetlemez. Tanımsız davranışa `operator[]` neden olan geçersiz bir dizin geçirildi.
+`operator[]`, bir bağımsız değişken olarak geçirilen dizinin geçerli olup olmadığını denetlemez. `operator[]`, tanımsız davranışa neden olan geçersiz bir dizin geçirildi.
 
 Temeldeki dize verileri, sahip olan nesne tarafından değiştirilirse veya silinirse, döndürülen başvuru geçersiz kılınabilir.
 
-[Yineleyici hataAyıklama\_düzeyi 1 veya 2 olarak ayarlandığında, string_view sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.\_ \_](../standard-library/iterator-debug-level.md) Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+[Hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md) 1 veya 2 ' ye ayarlı\_\_Yineleyici ile derlerken, string_view sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur. Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
 ## <a name="rbegin"></a>basic_string_view:: rbegin
 
-Ters çevrilen bir string_view ilk öğesine bir const yineleyici döndürür.
+Ters çevrilen string_view ilk öğesine bir const yineleyici döndürür.
 
 ```cpp
 constexpr const_reverse_iterator rbegin() const noexcept;
@@ -947,13 +947,13 @@ constexpr const_reverse_iterator rbegin() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir string_view içindeki ilk öğeye Rastgele erişimli bir yineleyici döndürür ve buna karşılık gelen geri çevrilme string_view ' deki son öğe ne olacağını adresler.
+Ters çevrilen bir string_view ilk öğesine bir rastgele erişim yineleyicisi döndürür ve buna karşılık gelen geri alınamaz string_view son öğe ne olacağını adreslemesini sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin`[Begin](#begin) , bir string_view ile birlikte kullanıldığında, ters çevrilmiş bir string_view ile birlikte kullanılır. `rbegin`, bir yinelemeyi geriye doğru başlatmak için kullanılabilir.
+`rbegin`, [Başlangıç](#begin) olarak bir string_view kullanıldığı gibi tersine çevrilmiş bir string_view ile kullanılır. `rbegin`, bir yinelemeyi geriye doğru başlatmak için kullanılabilir.
 
-## <a name="remove_prefix"></a>basic_string_view::remove_prefix
+## <a name="remove_prefix"></a>basic_string_view:: remove_prefix
 
 İşaretçiyi belirtilen sayıda öğe kadar ileri kaydırır.
 
@@ -963,9 +963,9 @@ constexpr void remove_prefix(size_type n);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel alınan verileri değiştirmeden bırakır. N öğelerinin string_view işaretçisini ileri kaydırır ve özel `size` veri üyesini-n olarak ayarlar.
+Temel alınan verileri değiştirmeden bırakır. String_view işaretçisini n öğesi tarafından ileri kaydırır ve özel `size` veri üyesini-n olarak ayarlar.
 
-## <a name="remove_suffix"></a>basic_string_view::remove_suffix
+## <a name="remove_suffix"></a>basic_string_view:: remove_suffix
 
 Görünümün boyutunu, kayıttan başlayarak belirtilen sayıda öğe kadar azaltır.
 
@@ -979,7 +979,7 @@ Temel alınan verileri ve işaretçi değişmeden bırakır. Özel `size` veri �
 
 ## <a name="rend"></a>basic_string_view:: rend
 
-Ters çevrilen bir string_view son öğeyi gösteren bir const yineleyici döndürür.
+Ters çevrilen string_view en son öğeden birini işaret eden bir const yineleyici döndürür.
 
 ```cpp
 constexpr reverse_iterator rend() const noexcept;
@@ -987,11 +987,11 @@ constexpr reverse_iterator rend() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir string_view son öğesini işaret eden bir const ters rastgele erişim Yineleyici.
+Ters çevrilen bir string_view en son öğeden birini işaret eden bir const ters rastgele erişim Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend`[End](#end) , bir string_view ile birlikte kullanıldığında, ters çevrilmiş bir string_view ile birlikte kullanılır. `rend`, bir ters yineleyicinin string_view sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir. Tarafından `rend` döndürülen değer başvurulmamalıdır.
+`rend`, [son](#end) olarak bir string_view ile kullanıldığı gibi ters bir string_view ile kullanılır. `rend`, geriye doğru bir yineleyicinin string_view sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir. `rend` tarafından döndürülen değer başvurulmamalıdır.
 
 ## <a name="rfind"></a>basic_string_view:: rfind
 
@@ -1006,28 +1006,28 @@ constexpr size_type rfind(const charT* ptr, size_type offset = npos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*chVal*\
+*Chval*\
 Üye işlevin aranacağı karakter değeri.
 
-*konumu*\
+\ *boşluğu*
 Aramanın başlayacağı dizin.
 
-*kaydetmeye*\
+*ptr*\
 Üye işlevin aranacağı C dizesi.
 
-*biriktirme*\
+*sayı*\
 Üye işlevin aranacağı C dizesindeki ilk karakterden ileri sayım karakter sayısı.
 
-*üstbilgisine*\
+*str*\
 Üye işlevin aranacağı string_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda alt dizenin ilk karakterinin dizini; Aksi `npos`takdirde.
+Başarılı olduğunda alt dizenin ilk karakterinin dizini; Aksi takdirde `npos`.
 
 ## <a name="size"></a>basic_string_view:: size
 
-String_view içindeki öğelerin sayısını döndürür.
+String_view öğe sayısını döndürür.
 
 ```cpp
 constexpr size_type size() const noexcept;
@@ -1039,7 +1039,7 @@ String_view uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir string_view, örneğin ve `remove_prefix` `remove_suffix`ile uzunluğunu değiştirebilir. Bu, temel alınan dize verilerini değiştirmediği için, string_view boyutu temeldeki verilerin boyutu değildir.
+String_view, `remove_prefix` ve `remove_suffix`gibi uzunluğunu değiştirebilir. Bu, temel alınan dize verilerini değiştirmediğinden, string_view boyutu temeldeki verilerin boyutu değildir.
 
 ## <a name="substr"></a>basic_string_view:: substr
 
@@ -1051,10 +1051,10 @@ constexpr basic_string_view substr(size_type offset = 0, size_type count = npos)
 
 ### <a name="parameters"></a>Parametreler
 
-*konumu*\
+\ *boşluğu*
 Varsayılan değeri 0 olan, kopyanın oluşturulduğu konumdaki öğeyi bulmak için bir dizin.
 
-*biriktirme*\
+*sayı*\
 Varsa, alt dizeye eklenecek karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1063,7 +1063,7 @@ Varsa, alt dizeye eklenecek karakter sayısı.
 
 ## <a name="swap"></a>basic_string_view:: swap
 
-İki string_views, diğer bir deyişle, temel alınan dize verilerine yönelik işaretçileri ve boyut değerlerini değiş tokuş eder.
+Diğer bir deyişle, temel alınan dize verilerine yönelik işaretçileri ve boyut değerlerini iki string_views değiş tokuş eder.
 
 ```cpp
 constexpr void swap(basic_string_view& sv) noexcept;
@@ -1071,7 +1071,7 @@ constexpr void swap(basic_string_view& sv) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*v*\
+*zf*\
 İşaretçi ve boyut değerlerini hedef string_view ile değiş tokuş edilecek kaynak string_view.
 
 ## <a name="see-also"></a>Ayrıca bkz.

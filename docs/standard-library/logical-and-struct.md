@@ -7,16 +7,16 @@ helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-ms.openlocfilehash: 86b780c71a0b0265cbd0c8829fb5aea70f0fa42e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: cc75c93d5173ceb7fa12b9722a797499b4225a53
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243281"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821622"
 ---
-# <a name="logicaland-struct"></a>logical_and Yapısı
+# <a name="logical_and-struct"></a>logical_and Yapısı
 
-Mantıksal ve işlecini işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (`operator&&`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde mantıksal birlikte işlem (`operator&&`) gerçekleştiren önceden tanımlanmış bir işlev nesnesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +40,21 @@ struct logical_and<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator&&` , belirtilen veya çıkarsanan tür işlenen alır.
+Belirtilen veya çıkartılan türlerin işlenenlerini alan `operator&&` destekleyen herhangi bir tür.
 
 *Sol*\
-Mantıksal ve işlecini işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+Mantıksal birlikte işlemin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Mantıksal ve işlecini işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Sağ*\
+Mantıksal birlikte işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U*için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left && Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator&&`.
+`Left && Right`sonucu. Özel şablon, `operator&&`tarafından döndürülen türe sahip olan sonucun kusursuz bir şekilde iletilmesini ister.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcı tanımlı türler için var. hiçbir işlenen değerlendirmesini kısa devre Her iki bağımsız değişkenleri tarafından değerlendirilir `operator&&`.
+Kullanıcı tanımlı türler için, işlenen değerlendirmesinin kısa devre dışı olması gerekmez. Her iki bağımsız değişken de `operator&&`değerlendirilir.
 
 ## <a name="example"></a>Örnek
 
@@ -112,7 +112,7 @@ int main( )
    // of d1 & d2, use the logical_and function object
    transform( d1.begin( ), d1.end( ), d2.begin( ),
       d3.begin( ), logical_and<bool>( ) );
-   cout << "The deque which is the conjuction of d1 & d2 is:\n d3 = ( " ;
+   cout << "The deque which is the conjunction of d1 & d2 is:\n d3 = ( " ;
    for ( iter3 = d3.begin( ) ; iter3 != d3.end( ) ; iter3++ )
       cout << *iter3 << " ";
    cout << ")" << endl;
@@ -124,6 +124,6 @@ Original deque:
 d1 = ( true true true true true false false )
 Original deque:
 d2 = ( true false true true false true false )
-The deque which is the conjuction of d1 & d2 is:
+The deque which is the conjunction of d1 & d2 is:
 d3 = ( true false true true false false false )
 ```

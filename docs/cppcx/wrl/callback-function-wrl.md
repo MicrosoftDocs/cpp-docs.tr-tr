@@ -1,20 +1,20 @@
 ---
-title: Geri çağırma işlevi (WRL)
+title: Callback Işlevi (WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Callback
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
-ms.openlocfilehash: d37e6fdd2521f07728305bfbf5441cebb363030a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10fb053ed97aaca0f4a31e3843d96aa194d8949d
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398907"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821694"
 ---
-# <a name="callback-function-wrl"></a>Geri çağırma işlevi (WRL)
+# <a name="callback-function-wrl"></a>Callback Işlevi (WRL)
 
-Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.
+Üye işlevi bir geri çağırma yöntemi olan bir nesne oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -191,64 +191,64 @@ ComPtr<TDelegateInterface> Callback(
 
 ### <a name="parameters"></a>Parametreler
 
-*TDelegateInterface*<br/>
-Şablon parametresi bir olay oluştuğunda çağrılacak temsilci arabirimini belirtir.
+*Tdelegateınterface*<br/>
+Bir olay gerçekleştiğinde çağrılacak temsilcinin arabirimini belirten bir şablon parametresi.
 
 *TCallback*<br/>
-Şablon parametresi bir nesne ve onun üye geri çağırma işlevini temsil eden bir nesne türünü belirtir.
+Bir nesneyi ve geri çağırma üye işlevini temsil eden nesnenin türünü belirten bir şablon parametresi.
 
 *TCallbackObject*<br/>
-Şablon parametresi, üye işlevi olay oluştuğunda çağrılacak yöntem olan nesneyi belirtir.
+Bir olay gerçekleştiğinde, üye işlevi çağırma yöntemi olan nesneyi belirten bir şablon parametresi.
 
 *TArg1*<br/>
-Şablon parametresi ilk geri çağırma yöntemi bağımsız değişken türünü belirtir.
+İlk geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg2*<br/>
-Şablon parametresi ikinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+İkinci geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg3*<br/>
-Şablon parametresi üçüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Üçüncü geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg4*<br/>
-Şablon parametresi dördüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Dördüncü geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg5*<br/>
-Şablon parametresi beşinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Beşinci geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg6*<br/>
-Şablon parametresi altıncı geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Altıncı geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg7*<br/>
-Şablon parametresi yedinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Yedinci geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg8*<br/>
-Şablon parametresi sekizinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Sekizinci geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
 *TArg9*<br/>
-Şablon parametresi dokuzuncu geri çağırma yöntemi bağımsız değişken türünü belirtir.
+Dokuzuncu geri çağırma yöntemi bağımsız değişkeninin türünü belirten bir şablon parametresi.
 
-*geri çağırma*<br/>
-Geri çağırma nesnesi ve onun üye işlevini temsil eden bir nesne.
+*callback*<br/>
+Geri çağırma nesnesini ve onun üye işlevini temsil eden nesne.
 
 *object*<br/>
-Bir olay oluştuğunda üye işlevi çağrılan nesne.
+Bir olay gerçekleştiğinde üye işlevi çağrılan nesne.
 
-*Yöntemi*<br/>
-Bir olay oluştuğunda çağrılacak üye işlevi.
+*method*<br/>
+Bir olay gerçekleştiğinde çağrılacak üye işlevi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi, belirtilen geri çağırma yöntemi olan nesne.
+Üye işlevi belirtilen geri çağırma yöntemi olan nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir temsilci nesnesinin temeli olmalıdır `IUnknown`değil `IInspectable`.
+Temsilci nesnesinin temeli, `IInspectable`değil `IUnknown`olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** Event. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

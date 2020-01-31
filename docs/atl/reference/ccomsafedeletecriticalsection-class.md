@@ -1,5 +1,5 @@
 ---
-title: CComSafeDeleteCriticalSection Class
+title: Ccomsafedeletekritiksection sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComSafeDeleteCriticalSection
@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeDeleteCriticalSection class
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-ms.openlocfilehash: 0269079db97e2ff91767c9c0c74a9336fce81ade
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da83bc5d0c2ebb79aee07f30069144368169fc26
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258890"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821655"
 ---
-# <a name="ccomsafedeletecriticalsection-class"></a>CComSafeDeleteCriticalSection Class
+# <a name="ccomsafedeletecriticalsection-class"></a>Ccomsafedeletekritiksection sınıfı
 
-Bu sınıf, alma ve kritik bölüm nesnenin sahipliğini serbest için yöntemler sağlar.
+Bu sınıf, kritik bir bölüm nesnesinin sahipliğini almak ve serbest bırakmak için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,34 +31,34 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection](#ccomsafedeletecriticalsection)|Oluşturucu.|
-|[CComSafeDeleteCriticalSection:: ~ CComSafeDeleteCriticalSection](#dtor)|Yıkıcı.|
+|[Ccomsafedeletekritiksection:: Ccomsafedeletecriticalhandle bölümü](#ccomsafedeletecriticalsection)|Oluşturucu.|
+|[Ccomsafedeletecriticalhandle bölümü:: ~ Ccomsafedeletekritiksection](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CComSafeDeleteCriticalSection::Init](#init)|Oluşturur ve kritik bölüm nesnesi başlatır.|
-|[CComSafeDeleteCriticalSection::Lock](#lock)|Kritik bölüm nesne sahipliğini alır.|
-|[CComSafeDeleteCriticalSection::Term](#term)|Kritik bölüm nesne tarafından kullanılan sistem kaynaklarını serbest bırakır.|
+|[Ccomsafedeletecriticalhandle bölümü:: Init](#init)|Kritik bir bölüm nesnesi oluşturur ve başlatır.|
+|[Ccomsafedeletekritiksection:: Lock](#lock)|Kritik bölüm nesnesinin sahipliğini edinir.|
+|[Ccomsafedeletecriticalhandle bölümü:: Term](#term)|Kritik bölüm nesnesi tarafından kullanılan sistem kaynaklarını serbest bırakır.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |||
 |-|-|
-|[m_bInitialized](#m_binitialized)|Bayrakları olmadığını iç `CRITICAL_SECTION` nesne başlatıldı.|
+|[m_bInitialized](#m_binitialized)|İç `CRITICAL_SECTION` nesnesinin başlatılmış olup olmadığını işaretler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComSafeDeleteCriticalSection` sınıfından türetilen [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md). Ancak, `CComSafeDeleteCriticalSection` üzerinden ek güvenlik mekanizmaları sağlar [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md).
+`CComSafeDeleteCriticalSection`, [Ccomkritiksection](../../atl/reference/ccomcriticalsection-class.md)sınıfından türetilir. Ancak, `CComSafeDeleteCriticalSection` [Ccomcriticalhandle bölümü](../../atl/reference/ccomcriticalsection-class.md)üzerinde ek güvenlik mekanizmaları sağlar.
 
-Örneği `CComSafeDeleteCriticalSection` kapsamın dışına çıkıncaya veya açıkça hala geçerliyse bellekten silinir, kritik bölüm nesnesini otomatik olarak temizlenir. Ayrıca, [CComSafeDeleteCriticalSection::Term](#term) yöntemi kritik bölüm nesnesini henüz atanmamış veya bellekten piyasaya Sürüldü düzgün bir şekilde çıkılacak.
+`CComSafeDeleteCriticalSection` bir örneği kapsam dışına geçtiğinde veya bellekten açıkça siliniyorsa, temel alınan kritik bölüm nesnesi hala geçerliyse otomatik olarak temizlenir. Ayrıca, temel alınan kritik bölüm nesnesi henüz ayrılmadıysa veya bellekten zaten serbest bırakılmışsa [Ccomsafedeletecriticalhandle bölümü:: Term](#term) yöntemi sorunsuz bir şekilde çıkış olur.
 
-Bkz: [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) kritik bölüm yardımcı sınıfları hakkında daha fazla bilgi için.
+Kritik bölüm yardımcı sınıfları hakkında daha fazla bilgi için bkz. [Ccomcriticalhandle bölümü](../../atl/reference/ccomcriticalsection-class.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -68,9 +68,9 @@ Bkz: [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) kri
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcore.h
+**Üstbilgi:** atlcore. h
 
-##  <a name="ccomsafedeletecriticalsection"></a>  CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection
+##  <a name="ccomsafedeletecriticalsection"></a>Ccomsafedeletekritiksection:: Ccomsafedeletecriticalhandle bölümü
 
 Oluşturucu.
 
@@ -80,11 +80,11 @@ CComSafeDeleteCriticalSection();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kümeleri [m_bInitialized](#m_binitialized) veri üyesi false.
+[M_bInitialized](#m_binitialized) VERI üyesini false olarak ayarlar.
 
-##  <a name="dtor"></a>  CComSafeDeleteCriticalSection:: ~ CComSafeDeleteCriticalSection
+##  <a name="dtor"></a>Ccomsafedeletecriticalhandle bölümü:: ~ Ccomsafedeletekritiksection
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComSafeDeleteCriticalSection() throw();
@@ -92,11 +92,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç sürümleri `CRITICAL_SECTION` bellekten nesne [m_bInitialized](#m_binitialized) veri üyesi, TRUE olarak ayarlanır.
+[M_bInitialized](#m_binitialized) VERI üyesi true olarak ayarlandıysa, iç `CRITICAL_SECTION` nesnesini bellekten serbest bırakır.
 
-##  <a name="init"></a>  CComSafeDeleteCriticalSection::Init
+##  <a name="init"></a>Ccomsafedeletecriticalhandle bölümü:: Init
 
-Temel sınıf uygulamasına çağırır [Init](/visualstudio/debugger/init) ve ayarlar [m_bInitialized](#m_binitialized) başarılı olursa TRUE.
+[Init](/visualstudio/debugger/init) 'in temel sınıf uygulamasını çağırır ve başarılı olursa true olarak ayarlar [m_bInitialized](#m_binitialized) .
 
 ```
 HRESULT Init() throw();
@@ -104,11 +104,11 @@ HRESULT Init() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucunu döndürür [CComCriticalSection::Init](../../atl/reference/ccomcriticalsection-class.md#init).
+[Ccomcriticalhandle Section:: Init](../../atl/reference/ccomcriticalsection-class.md#init)sonucunu döndürür.
 
-##  <a name="lock"></a>  CComSafeDeleteCriticalSection::Lock
+##  <a name="lock"></a>Ccomsafedeletekritiksection:: Lock
 
-Temel sınıf uygulamasına çağırır [kilit](ccomcriticalsection-class.md#lock).
+[Kilidin](ccomcriticalsection-class.md#lock)temel sınıf uygulamasını çağırır.
 
 ```
 HRESULT Lock();
@@ -116,17 +116,17 @@ HRESULT Lock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucunu döndürür [CComCriticalSection::Lock](../../atl/reference/ccomcriticalsection-class.md#lock).
+[Ccomcriticalhandle Section:: Lock](../../atl/reference/ccomcriticalsection-class.md#lock)sonucunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem varsayar [m_bInitialized](#m_binitialized) veri üyesi üzerinde giriş TRUE olarak ayarlanır. Bu condidtion karşılanmadığında onaylama, hata ayıklama yapılarında oluşturulur.
+Bu yöntem, girişte [m_bInitialized](#m_binitialized) VERI üyesinin true olarak ayarlandığını varsayar. Bu koşul karşılanmazsa hata ayıklama yapılarında bir onaylama oluşturulur.
 
-İşlev davranışını daha fazla bilgi için [CComCriticalSection::Lock](../../atl/reference/ccomcriticalsection-class.md#lock).
+İşlevin davranışı hakkında daha fazla bilgi için [Ccomcriticalhandle Section:: Lock](../../atl/reference/ccomcriticalsection-class.md#lock)öğesine bakın.
 
-##  <a name="m_binitialized"></a>  CComSafeDeleteCriticalSection::m_bInitialized
+##  <a name="m_binitialized"></a>Ccomsafedeletecriticalhandle bölümü:: m_bInitialized
 
-Bayrakları olmadığını iç `CRITICAL_SECTION` nesne başlatıldı.
+İç `CRITICAL_SECTION` nesnesinin başlatılmış olup olmadığını işaretler.
 
 ```
 bool m_bInitialized;
@@ -134,11 +134,11 @@ bool m_bInitialized;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_bInitialized` Arka plandaki geçerlilik izlemek için kullanılan veri üyesi `CRITICAL_SECTION` ilişkili nesne [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) sınıfı. Arka plandaki `CRITICAL_SECTION` nesne değil deneneceğini bu bayrağı TRUE olarak ayarlanmazsa bellekten yayımlanacak.
+`m_bInitialized` veri üyesi, [Ccomsafedeletecriticalhandle bölüm](../../atl/reference/ccomsafedeletecriticalsection-class.md) sınıfıyla ilişkili temel `CRITICAL_SECTION` nesnesinin geçerliliğini izlemek için kullanılır. Bu bayrak TRUE olarak ayarlanmamışsa temeldeki `CRITICAL_SECTION` nesnenin bellekten serbest bırakılması denenmez.
 
-##  <a name="term"></a>  CComSafeDeleteCriticalSection::Term
+##  <a name="term"></a>Ccomsafedeletecriticalhandle bölümü:: Term
 
-Temel sınıf uygulamasına çağırır [CComCriticalSection::Term](../../atl/reference/ccomcriticalsection-class.md#term) , iç `CRITICAL_SECTION` nesne geçerlidir.
+İç `CRITICAL_SECTION` nesnesi geçerliyse [Ccomcriticalhandle Section:: Term](../../atl/reference/ccomcriticalsection-class.md#term) öğesinin temel sınıf uygulamasını çağırır.
 
 ```
 HRESULT Term() throw();
@@ -146,13 +146,13 @@ HRESULT Term() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucunu döndürür [CComCriticalSection::Term](../../atl/reference/ccomcriticalsection-class.md#term), veya S_OK varsa [m_bInitialized](#m_binitialized) giriş üzerinde FALSE olarak ayarlanmış.
+Girişten sonra [M_BINITIALIZED](#m_binitialized) false olarak ayarlandıysa, [Ccomcriticalhandle Section:: Term](../../atl/reference/ccomcriticalsection-class.md#term)sonucunu döndürür veya S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem olsa bile iç çağrılması güvenlidir `CRITICAL_SECTION` nesnesi geçerli değil. Bu sınıfın yok Edicisi varsa bu yöntemi çağırır [m_bInitialized](#m_binitialized) veri üyesi, TRUE olarak ayarlanır.
+İç `CRITICAL_SECTION` nesnesi geçerli olmasa bile bu yöntemi çağırmak güvenlidir. [M_bInitialized](#m_binitialized) Data member değeri true olarak ayarlandıysa, bu sınıfın yıkıcısı bu yöntemi çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

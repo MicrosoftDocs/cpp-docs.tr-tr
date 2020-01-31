@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ArgTraits structure
 - Microsoft::WRL::Details::ArgTraits::args constant
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
-ms.openlocfilehash: 17109508cf99888ccde79be39a41c5361da24c6e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c13e7fec3289b66b40e44f91404a50cba7a473b1
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398816"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821720"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 
@@ -130,47 +130,47 @@ struct ArgTraits<
 ### <a name="parameters"></a>Parametreler
 
 *TMemberFunction*<br/>
-TypeName parametresi herhangi eşleşemez bir ArgTraits yapısı için `Invoke` metodu imzası.
+Herhangi bir `Invoke` yöntemi imzasıyla eşleşmeyen bir Argnitelikler yapısı için typeName parametresi.
 
-*TDelegateInterface*<br/>
-Bir temsilci arabirimi.
+*Tdelegateınterface*<br/>
+Temsilci arabirimi.
 
 *TArg1*<br/>
-İlk bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin ilk bağımsız değişkeninin türü.
 
 *TArg2*<br/>
-İkinci bağımsız değişkeni türünü `Invoke` yöntemi.
+`Invoke` yönteminin ikinci bağımsız değişkeninin türü.
 
 *TArg3*<br/>
-Üçüncü bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin üçüncü bağımsız değişkeninin türü.
 
 *TArg4*<br/>
-Dördüncü bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin dördüncü bağımsız değişkeninin türü.
 
 *TArg5*<br/>
-Beşinci bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin beşinci bağımsız değişkeninin türü.
 
 *TArg6*<br/>
-Altıncı bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin altıncı bağımsız değişkeninin türü.
 
 *TArg7*<br/>
-Yedinci bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin yedinci bağımsız değişkeninin türü.
 
 *TArg8*<br/>
-Sekizinci bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin Sekizinci bağımsız değişkeninin türü.
 
 *TArg9*<br/>
-Dokuzuncu bağımsız değişkeninin türü `Invoke` yöntemi.
+`Invoke` yönteminin dokuzuncu bağımsız değişkeninin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`ArgTraits` Yapıyı, arabirimi ve belirtilen bir dizi parametre içeren bir anonim üye işlevi belirtilen temsilci bildirir.
+`ArgTraits` yapısı belirtilen bir temsilci arabirimini ve belirtilen sayıda parametreye sahip anonim bir üye işlevini bildirir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Ad       | Açıklama
+Name       | Açıklama
 ---------- | ----------------------
 `Arg1Type` | TArg1 için typedef.
 `Arg2Type` | TArg2 için typedef.
@@ -184,9 +184,9 @@ Ad       | Açıklama
 
 ### <a name="public-constants"></a>Genel sabitler
 
-Ad                     | Açıklama
+Name                     | Açıklama
 ------------------------ | ---------------------------------------------------------------------------------------
-[ArgTraits::args](#args) | Parametre sayısını tutar `Invoke` yöntemi temsilci arabirimi.
+[Argnitelikler:: args](#args) | Bir temsilci arabiriminin `Invoke` yönteminde parametre sayısı sayısını tutar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -194,11 +194,11 @@ Ad                     | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** Event. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="args"></a>ArgTraits::args
+## <a name="args"></a>Argnitelikler:: args
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -208,4 +208,4 @@ static const int args = -1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre sayısını tutar `Invoke` yöntemi temsilci arabirimi. Zaman `args` -1'e eşittir, eşleşme olabilir `Invoke` metodu imzası.
+Bir temsilci arabiriminin `Invoke` yönteminde parametre sayısı sayısını tutar. `args`-1 ' e eşitse, `Invoke` yöntemi imzasında eşleşme olamaz.

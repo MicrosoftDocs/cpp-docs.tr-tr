@@ -7,16 +7,16 @@ f1_keywords:
 - event/Microsoft::WRL::InvokeModeOptions
 helpviewer_keywords:
 - AgileEventSource class
-ms.openlocfilehash: 095c61dcef208028bf1c0f4b3443ba10110da8ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fa1e0a72d865b2993e149f6e4d2b57fe13463a61
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223046"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821746"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource sınıfı
 
-Herhangi bir iş parçacığından erişilebilir bir bileşen olan Çevik bir bileşen tarafından gerçekleştirilen bir olayı temsil eder. Devralınan [EventSource](eventsource-class.md) ve geçersiz kılmaları `Add` Çevik olayı çağırmak nasıl seçeneklerini belirtmek için bir ek tür parametresi ile üye işlevi.
+Herhangi bir iş parçacığından erişilebilen bir bileşen olan çevik bir bileşen tarafından oluşturulan bir olayı temsil eder. , [EventSource](eventsource-class.md) 'tan devralır ve çevik olayını çağırma seçeneklerini belirtmek için `Add` üye işlevini ek bir tür parametresiyle geçersiz kılar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,15 +32,15 @@ class AgileEventSource :
 
 ## <a name="parameters"></a>Parametreler
 
-*TDelegateInterface*<br/>
-Bir olay işleyicisi temsil eden bir temsilci için arabirim.
+*Tdelegateınterface*<br/>
+Bir olay işleyicisini temsil eden bir temsilci için arabirim.
 
 *TEventSourceOptions*<br/>
-Bir [Invokemodeoptions](invokemodeoptions-structure.md) olan invokeMode alanı yapıda `InvokeMode::StopOnFirstError` veya `InvokeMode::FireAll`.
+Invokemode alanı `InvokeMode::StopOnFirstError` veya `InvokeMode::FireAll`olarak ayarlanan [ınvokemodeoptions](invokemodeoptions-structure.md) yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Windows çalışma zamanı bileşenlerinde büyük çoğunluğu, Çevik bileşenleridir. Daha fazla bilgi için [iş parçacığı oluşturma ve hazırlama (C++/CX)](../../cppcx/threading-and-marshaling-c-cx.md).
+Windows Çalışma Zamanı bileşenlerin büyük çoğunluğu çevik bileşenlerdir. Daha fazla bilgi için bkz. [Threading and MarshalC++(/CX)](../../cppcx/threading-and-marshaling-c-cx.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,21 +50,21 @@ Windows çalışma zamanı bileşenlerinde büyük çoğunluğu, Çevik bileşen
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** Event. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[AgileEventSource::Add yöntemi](#add)|Ekler için geçerli olay işleyicileri kümesini belirtilen temsilci arabirimi tarafından temsil edilen Çevik olay işleyicisi **AgileEventSource** nesne.|
+|[AgileEventSource:: Add yöntemi](#add)|Belirtilen temsilci arabirimiyle temsil edilen çevik olay işleyicisini geçerli **Agileeventsource** nesnesinin olay işleyicileri kümesine ekler.|
 
-## <a name="add"></a> AgileEventSource::Add yöntemi
+## <a name="add"></a>AgileEventSource:: Add yöntemi
 
-Ekler için geçerli olay işleyicileri kümesini belirtilen temsilci arabirimi tarafından temsil edilen olay işleyicisi [EventSource](eventsource-class.md) nesne.
+Belirtilen temsilci arabirimiyle temsil edilen olay işleyicisini geçerli [EventSource](eventsource-class.md) nesnesinin olay işleyicileri kümesine ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -78,14 +78,14 @@ HRESULT Add(
 ### <a name="parameters"></a>Parametreler
 
 *delegateInterface*<br/>
-Bir olay işleyicisi temsil eden bir temsilci nesnesi için arabirim.
+Bir olay işleyicisini temsil eden bir temsilci nesnesine arabirim.
 
-*Belirteç*<br/>
-Bu işlem tamamlandığında, olayı temsil eden bir işleyici. Parametre olarak bu belirteci kullanmasına `Remove()` olay işleyicisi atmak için yöntemi.
+*simgesinde*<br/>
+Bu işlem tamamlandığında, olayı temsil eden bir tanıtıcı. Olay işleyicisini atmak için `Remove()` metoduna parametre olarak bu belirteci kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

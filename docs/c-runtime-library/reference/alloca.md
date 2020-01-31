@@ -26,12 +26,12 @@ helpviewer_keywords:
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-ms.openlocfilehash: 2212f9e40c78932b63eebfc221ad2f07fa3d3f9d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 77ce6e0cdb5e1ad3f5317989c7804abc5aed4e69
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943706"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821440"
 ---
 # <a name="_alloca"></a>_alloca
 
@@ -52,28 +52,28 @@ Yığından ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Alloca** yordamı, ayrılan alana **geçersiz** bir işaretçi döndürür. Bu, herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_alloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
+**_Alloca** yordamı, ayrılan alana **void** bir işaretçi döndürür ve bu, herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_alloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
 Boşluk ayrılabileceği takdirde bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. Özel durum işlemenin C++ kullanılması yerine, [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_alloca** , program yığınından *Boyut* baytlarını ayırır. Ayrılan alan, çağırma işlevi çıktığında (ayırma yalnızca kapsam dışına çıktığında değil) otomatik olarak serbest bırakılır. Bu nedenle, **_alloca** tarafından döndürülen işaretçi değerini [boş](free.md)bir bağımsız değişken olarak geçirmeyin.
+**_alloca** , program yığınından *Boyut* baytları ayırır. Ayrılan alan, çağırma işlevi çıktığında (ayırma yalnızca kapsam dışına çıktığında değil) otomatik olarak serbest bırakılır. Bu nedenle, **_alloca** tarafından döndürülen işaretçi değerini [serbest](free.md)bir bağımsız değişken olarak iletmeyin.
 
-Özel durum işleyicisinde (EH) **_alloca 'yı** açıkça çağırmaya yönelik kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: Görevleri kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirir. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde açıkça **_alloca 'yı** çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
+Özel durum işleyicisinde (EH) **_alloca** açıkça çağırmak için kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: kendi görevlerini, kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirirler. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde **_alloca** açıkça çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
 
-- Windows NT SEH özel durum filtresi ifadesi:`__except ( _alloca() )`
+- Windows NT SEH özel durum filtresi ifadesi: `__except ( _alloca() )`
 
-- Windows NT SEH son özel durum işleyicisi:`__finally { _alloca() }`
+- Windows NT SEH son özel durum işleyicisi: `__finally { _alloca() }`
 
 - C++EH catch yan tümcesi ifadesi
 
 Ancak, **_alloca** doğrudan bir Eh yordamının içinden veya daha önce listelenen eh senaryolarından biri tarafından çağrılan uygulama tarafından sağlanan geri aramadan çağrılabilir.
 
 > [!IMPORTANT]
-> Windows XP 'de, **_alloca** bir try/catch bloğu içinde çağrılırsa, catch bloğunda [_resetstkoflw](resetstkoflw.md) çağrısı yapmanız gerekir.
+> Windows XP 'de, bir try/catch bloğu içinde **_alloca** çağrılırsa, catch bloğunda [_resetstkoflw](resetstkoflw.md) çağırmanız gerekir.
 
-Yukarıdaki kısıtlamalara ek olarak,[/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken, **_alloca** **__except** blokları içinde kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
+Yukarıdaki kısıtlamalara ek olarak,[/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken **_alloca** **__except** bloklarda kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -119,7 +119,7 @@ int main()
         }
     }
 
-    // If an exception occured with the _alloca function
+    // If an exception occurred with the _alloca function
     __except( GetExceptionCode() == STATUS_STACK_OVERFLOW )
     {
         printf_s("_alloca failed!\n");

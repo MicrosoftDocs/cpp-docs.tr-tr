@@ -8,132 +8,132 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: 1d03333dee12989af5897c34ba96484930a39673
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0ee21378a6feb7ada39dc00f0e181672470e231
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343985"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821518"
 ---
 # <a name="math-and-floating-point-support"></a>Matematik ve kayan nokta desteği
 
-Evrensel C çalışma zamanı kitaplığı (UCRT), tüm ISO C99 tarafından gerekli olanlar da dahil olmak üzere çoğu integral ve kayan nokta matematik kitaplığı işlevi sağlar. Kayan nokta işlevleri, doğruluk açısından performans dengelemek için uygulanır. Doğru yuvarlatılmış sonuç oluşturmayı fazla vakit pahalı olabileceği için bu işlevleri verimli bir şekilde doğru yuvarlatılmış sonuca Kapat bir yaklaştırma üretmek için tasarlanmıştır. Olabilir durumlarda çoğu durumda, sonucu içinde +/-1 ulp doğru yuvarlatılmış sonucun, ancak daha büyük bir yanlışlığı olduğu.
+Evrensel C çalışma zamanı kitaplığı (UCRT), ISO C99 tarafından gerekenlerden bazıları dahil olmak üzere çok sayıda integral ve kayan nokta matematik kitaplığı işlevi sağlar. Kayan nokta işlevleri, performansı doğruluk altına alacak şekilde uygulanır. Doğru şekilde yuvarlanmış sonucun üretilmesi, canlı olarak elde edilebilir hale gelebilir, ancak bu işlevler doğru bir şekilde yuvarlanmış sonuca yakın bir şekilde bir kapatma sağlamak üzere tasarlanmıştır. Çoğu durumda, üretilen sonuç doğru bir şekilde yuvarlanmış sonucu +/-1 ULP içinde, ancak daha fazla doğruluk olduğu durumlar olabilir.
 
-Birçok kayan nokta matematik kitaplığı işlevi farklı CPU mimarileri için farklı uygulamaları vardır. Örneğin, 32-bit x86 CRT 64-bit x64 değerinden farklı bir uygulama olabilir CRT. Ayrıca, bazı işlevler belirli bir CPU mimarisi için birden çok uygulamaları olabilir. En verimli uygulama CPU tarafından desteklenen komut kümelerini bağlı olarak çalışma zamanında dinamik olarak seçilir. Örneğin, 32-bit x86, CRT, bazı işlevler, hem x x87 sahip uygulama ve SSE2 uygulaması. SSE2 destekleyen bir CPU üzerinde çalışırken, daha hızlı SSE2 uygulaması kullanılır. SSE2, uygulama kullanılan daha yavaş x87 desteklemeyen bir CPU üzerinde çalışırken. Matematik kitaplığı işlevi, farklı uygulamalar farklı CPU yönergeleri ve farklı algoritmalar sonuçları üretmek için kullanılıyor olabileceğinden, İşlevler, CPU'lar arasında farklı sonuçlar üretebilir. Çoğu durumda, sonuçlar içinde +/-1 ulp yuvarlatılmış doğru sonucu olan, ancak gerçek sonuçların CPU'lar arasında değişebilir.
+Kayan nokta matematik kitaplığı işlevlerinin birçoğu, farklı CPU mimarileri için farklı uygulamalara sahiptir. Örneğin, 32 bit x86 CRT, 64 bit x64 CRT 'den farklı bir uygulamaya sahip olabilir. Ayrıca, bazı işlevlerden belirli bir CPU mimarisi için birden çok uygulama olabilir. En verimli uygulama, CPU tarafından desteklenen yönerge kümelerine bağlı olarak çalışma zamanında dinamik olarak seçilir. Örneğin, 32 bit x86 CRT 'de, bazı işlevlerde hem x87 uygulama hem de bir SSE2 uygulama vardır. SSE2 destekleyen bir CPU üzerinde çalışırken, daha hızlı SSE2 uygulama kullanılır. SSE2 desteklemeyen bir CPU üzerinde çalışırken, daha yavaş x87 uygulama kullanılır. Matematik kitaplığı işlevlerinin farklı uygulamaları, sonuçlarını oluşturmak için farklı CPU yönergeleri ve farklı algoritmalar kullanabileceğinden, işlevler CPU 'larda farklı sonuçlar üretebilir. Çoğu durumda, sonuçlar doğru bir şekilde yuvarlanmış sonucu +/-1 ULP içinde, ancak gerçek sonuçlar CPU 'larda farklılık gösterebilir.
 
-Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16-bit sürümleri **uzun çift** 80 bit duyarlık kayan nokta veri türü olarak yazın. Visual C++'ın sonraki sürümlerinde **uzun çift** veri türü olan bir 64-bit duyarlığa kayan nokta veri türü için aynı **çift** türü. Derleyici işler **uzun çift** ve **çift** olarak farklı türler, ancak **uzun çift** işlevleri aynı kendi **çift** ortaklarınıza. CRT sağlar **uzun çift** matematik işlevleri için ISO C99 sürümleri, kaynak kodu uyumluluğuyla, ancak diğer derleyiciler ikili gösterim değişebileceğini unutmayın.
+Microsoft C/C++ ve Microsoft Visual C++ 'ın önceki 16 bit sürümleri, 80 bitlik bir duyarlık kayan nokta veri türü olarak **uzun çift** türü destekliyordu. Visual C++'ın sonraki sürümlerinde **Long Double** veri türü, **double** türü ile özdeş olan 64 bitlik bir duyarlık kayan nokta veri türüdür. Derleyici **Long Double** ve **Double** değerlerini ayrı türler olarak değerlendirir, ancak **Long Double** işlevleri **çift** karşılıklarıyla aynıdır. CRT, ISO C99 kaynak kodu uyumluluğu için matematik işlevlerinin **uzun çift** sürümlerini sağlar, ancak ikili temsilinin diğer derleyicilerden farklı olabileceğini unutmayın.
 
-## <a name="supported-math-and-floating-point-routines"></a>Desteklenen matematik ve kayan nokta rutinleri
+## <a name="supported-math-and-floating-point-routines"></a>Desteklenen matematik ve kayan nokta yordamları
 
 |Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |-|-|
-[abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Bir tamsayı türü mutlak değerini hesaplar.
-[acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|Ark kosinüsünü hesaplar.
-[acosh, acoshf, acoshl](../c-runtime-library/reference/acosh-acoshf-acoshl.md)|Yay hiperbolik kosinüsünü hesaplar.
-[asin, asinf, asinl](../c-runtime-library/reference/asin-asinf-asinl.md)|Ark sinüsünü hesaplar.
-[asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)|Yay hiperbolik sinüsünü hesaplar.
-[atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Ark tanjantını hesaplar.
-[atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)|Ark hiperbolik tanjantı hesaplar.
-[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü bir dizeye dönüştürür bir **çift**
-[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Bir dizeye dönüştürür bir **çift**
-[_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü bir dizeye dönüştürür bir **float** veya **uzun çift**
-[cbrt, cbrtf, cbrtl](../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md)|Küp kökünü hesaplar.
-[ceil, ceilf, ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Tavanını hesaplar.
-[_chgsign, _chgsignf, _chgsignl](../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)|Eklenebilir tersini hesaplar
-[_clear87, _clearfp](../c-runtime-library/reference/clear87-clearfp.md)|Alır ve kayan nokta durum kaydı siler
-[_control87, \__control87_2, _controlfp](../c-runtime-library/reference/control87-controlfp-control87-2.md)|Kayan nokta denetim sözcüğünü alır ve ayarlar
-[_controlfp_s](../c-runtime-library/reference/controlfp-s.md)|Güvenli sürümünü **_controlfp**
-[copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)|Bir bağımsız değişkenin büyüklüğüne ve başka bir oturum sahip bir değer döndürür
-[cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|Sinüsünü hesaplar.
-[cosh, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Hiperbolik sinüsünü hesaplar.
-[div ldiv, lldiv](../c-runtime-library/reference/div.md)|Bölümü ve iki tamsayı değerinin kalanını hesaplar
-[_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Dönüştürür bir **çift** bir dizeye
-[_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|Güvenli sürümünü **_ecvt**
-[erf, erff, erfl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Hata işlevini hesaplar.
-[erfc, erfcf, erfcl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Tümleyici hata işlevini hesaplar.
-[exp, expf, expl](../c-runtime-library/reference/exp-expf.md)|Üssünü hesaplar *e*<sup>x</sup>
-[exp2, exp2f, exp2l](../c-runtime-library/reference/exp2-exp2f-exp2l.md)|Üstel 2 hesaplar<sup>x</sup>
-[expm1, expm1f, expm1l](../c-runtime-library/reference/expm1-expm1f-expm1l.md)|Hesaplar *e*<sup>x</sup>-1
-[fabs, fabsf, fabsl](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|Kayan nokta türü mutlak değerini hesaplar.
-[_fcvt](../c-runtime-library/reference/fcvt.md), [fcvt](../c-runtime-library/reference/posix-fcvt.md)|Bir kayan noktalı sayı bir dizeye dönüştürür.
-[_fcvt_s](../c-runtime-library/reference/fcvt-s.md)|Güvenli sürümünü **_fcvt**
+[abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Bir tamsayı türünün mutlak değerini hesaplar
+[acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|Yay kosinüs değerini hesaplar
+[acosh, acoshf, acoshl](../c-runtime-library/reference/acosh-acoshf-acoshl.md)|Hiperbolik yay kosinüs değerini hesaplar
+[asin, asinf, asinl](../c-runtime-library/reference/asin-asinf-asinl.md)|Yay sinüsünü hesaplar
+[asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)|Hiperbolik yay sinüsünü hesaplar
+[atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Yay tanjantını hesaplar
+[atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)|Hiperbolik yay tanjantını hesaplar
+[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü dizeyi bir **Double** 'a dönüştürür
+[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Bir dizeyi **Double** 'a dönüştürür
+[_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü dizeyi **float** veya **Long Double** 'a dönüştürür
+[cbrt, cbrtf, cbrtl](../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md)|Küp kökünü hesaplar
+[ceil, ceilf, ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Tavan hesaplar
+[_chgsign, _chgsignf, _chgsignl](../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)|Toplamsal tersini hesaplar
+[_clear87, _clearfp](../c-runtime-library/reference/clear87-clearfp.md)|Kayan nokta durum kaydını alır ve temizler
+[_control87, \__control87_2 _controlfp](../c-runtime-library/reference/control87-controlfp-control87-2.md)|Kayan nokta denetim sözcüğünü alır ve ayarlar
+[_controlfp_s](../c-runtime-library/reference/controlfp-s.md)|**_Controlfp** güvenli sürümü
+[copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)|Bir bağımsız değişkenin büyüklüğüne ve diğerinin işaretine sahip bir değer döndürür
+[cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|Sinüsü hesaplar
+[cosh, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Hiperbolik sinüsü hesaplar
+[div, ldiv, lldiv](../c-runtime-library/reference/div.md)|Bölümü ve iki tamsayı değerinin kalanını hesaplar
+[_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Bir **Double** öğesini dizeye dönüştürür
+[_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|**_Ecvt** güvenli sürümü
+[HATAİŞLEV, erff, ERFL](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Hata işlevini hesaplar
+[erfc, erfcf, erfcl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Tamamlayıcı hata işlevini hesaplar
+[exp, expf, expl](../c-runtime-library/reference/exp-expf.md)|Üstel *e*<sup>x</sup> 'i hesaplar
+[exp2, exp2f, exp2l](../c-runtime-library/reference/exp2-exp2f-exp2l.md)|Üstel 2<sup>x</sup> 'i hesaplar
+[expm1, expm1f, expm1l](../c-runtime-library/reference/expm1-expm1f-expm1l.md)|*E*<sup>x</sup>-1 hesaplar
+[fabs, fabsf, fabsl](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|Kayan nokta türünün mutlak değerini hesaplar
+[_fcvt](../c-runtime-library/reference/fcvt.md), [fcvt](../c-runtime-library/reference/posix-fcvt.md)|Kayan noktalı sayıyı dizeye dönüştürür
+[_fcvt_s](../c-runtime-library/reference/fcvt-s.md)|**_Fcvt** güvenli sürümü
 [fdim, fdimf, fdiml](../c-runtime-library/reference/fdim-fdimf-fdiml.md)|İki değer arasındaki pozitif farkı belirler
-[feclearexcept](../c-runtime-library/reference/feclearexcept1.md)|Kayan nokta özel durumlarını temizler belirtilen
-[fegetenv](../c-runtime-library/reference/fegetenv1.md)|Geçerli bir kayan nokta ortamı depolar
-[fegetexceptflag](../c-runtime-library/reference/fegetexceptflag2.md)|Belirtilen bir kayan nokta özel durumlarını alır
-[fegetround](../c-runtime-library/reference/fegetround-fesetround2.md)|Kayan nokta yuvarlama modu alır
-[feholdexcept](../c-runtime-library/reference/feholdexcept2.md)|Stop kayan nokta özel durum modu ayarlar
-[feraiseexcept](../c-runtime-library/reference/feraiseexcept.md)|Belirtilen kayan nokta özel durumlarını oluşturur
-[fesetenv](../c-runtime-library/reference/fesetenv1.md)|Geçerli bir kayan nokta ortamını ayarlar
-[fesetexceptflag](../c-runtime-library/reference/fesetexceptflag2.md)|Belirtilen bir kayan nokta durumu bayraklarını ayarlar
-[fesetround](../c-runtime-library/reference/fegetround-fesetround2.md)|Belirtilen kayan nokta yuvarlama modu ayarlar
-[fetestexcept](../c-runtime-library/reference/fetestexcept1.md)|Hangi kayan nokta özel durum durumu bayrakları ayarlanmış belirler
-[feupdateenv](../c-runtime-library/reference/feupdateenv.md)|Bir kayan nokta ortamı geri yükler, sonra önceki özel durum başlatır
-[floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|Tabanını hesaplar.
-[fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)|Fused Çarp hesaplar
-[fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)|Bağımsız değişkenlerin sayısı üst sınırını hesaplar.
-[fmin, fminf, fminl](../c-runtime-library/reference/fmin-fminf-fminl.md)|Minimum bağımsız hesaplar
-[fmodf, fmodl fmod](../c-runtime-library/reference/fmod-fmodf.md)|Kayan nokta kalanını hesaplar.
-[_fpclass, _fpclassf](../c-runtime-library/reference/fpclass-fpclassf.md)|Sınıflandırma kayan nokta değeri döndürür
-[fpclassify](../c-runtime-library/reference/fpclassify.md)|Sınıflandırma kayan nokta değeri döndürür
+[feclearexcept](../c-runtime-library/reference/feclearexcept1.md)|Belirtilen kayan nokta özel durumlarını temizler
+[fegetenv](../c-runtime-library/reference/fegetenv1.md)|Geçerli kayan nokta ortamını depolar
+[fegetexceptflag](../c-runtime-library/reference/fegetexceptflag2.md)|Belirtilen kayan nokta özel durum durumunu alır
+[fegetround](../c-runtime-library/reference/fegetround-fesetround2.md)|Kayan nokta yuvarlama modunu alır
+[feholdexcept](../c-runtime-library/reference/feholdexcept2.md)|Durdurma olmayan kayan nokta özel durum modunu ayarlar
+[feraiseexcept](../c-runtime-library/reference/feraiseexcept.md)|Belirtilen kayan nokta özel durumlarını başlatır
+[fesetenv](../c-runtime-library/reference/fesetenv1.md)|Geçerli kayan nokta ortamını ayarlar
+[fesetexceptflag](../c-runtime-library/reference/fesetexceptflag2.md)|Belirtilen kayan nokta durum bayraklarını ayarlar
+[fesetround](../c-runtime-library/reference/fegetround-fesetround2.md)|Belirtilen kayan nokta yuvarlama modunu ayarlar
+[fetestexcept](../c-runtime-library/reference/fetestexcept1.md)|Hangi kayan nokta özel durum bayraklarının ayarlandığını belirler
+[feupdateenv](../c-runtime-library/reference/feupdateenv.md)|Kayan nokta ortamını geri yükler ve önceki özel durumları başlatır
+[floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|Tabanı hesaplar
+[fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)|Bir fkullanılan çarpmayı hesaplar-Ekle
+[fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)|Bağımsız değişkenlerin en büyük sayısını hesaplar
+[fmin, fminf, fminl](../c-runtime-library/reference/fmin-fminf-fminl.md)|Bağımsız değişkenlerin minimum sayısını hesaplar
+[FMOD, fmodf, fmodl](../c-runtime-library/reference/fmod-fmodf.md)|Kayan nokta kalanını hesaplar
+[_fpclass, _fpclassf](../c-runtime-library/reference/fpclass-fpclassf.md)|Kayan nokta değerinin sınıflandırmasını döndürür
+[fpclassify](../c-runtime-library/reference/fpclassify.md)|Kayan nokta değerinin sınıflandırmasını döndürür
 [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)|Kayan nokta özel durumları için bir işleyici ayarlar
-[_fpreset](../c-runtime-library/reference/fpreset.md)|Kayan nokta ortamı sıfırlar
-[frexp, frexpf, frexpl](../c-runtime-library/reference/frexp.md)|Mantis ve kayan noktalı bir sayı alır.
-[_gcvt](../c-runtime-library/reference/gcvt.md), [gcvt](../c-runtime-library/reference/posix-gcvt.md)|Bir kayan noktalı sayı bir dizeye dönüştürür.
-[_gcvt_s](../c-runtime-library/reference/gcvt-s.md)|Güvenli sürümünü **_gcvt**
-[_get_FMA3_enable, _set_FMA3_enable](../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)|Alır veya üzerinde x64 FMA3 yönergelerinin kullanımını etkinleştir için bir bayrak ayarlar
-[hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl](../c-runtime-library/reference/hypot-hypotf-hypotl-hypot-hypotf-hypotl.md)|Hipotenüsü hesaplar.
-[ilogb, ilogbf, ilogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|Tamsayı 2 tabanında üssünü hesaplar.
-[imaxabs](../c-runtime-library/reference/imaxabs.md)|Bir tamsayı türü mutlak değerini hesaplar.
+[_fpreset](../c-runtime-library/reference/fpreset.md)|Kayan nokta ortamını sıfırlar
+[frexp, frexpf, frexpl](../c-runtime-library/reference/frexp.md)|Kayan noktalı bir sayının Mantis ve üssünü alır
+[_gcvt](../c-runtime-library/reference/gcvt.md), [gcvt](../c-runtime-library/reference/posix-gcvt.md)|Kayan noktalı sayıyı dizeye dönüştürür
+[_gcvt_s](../c-runtime-library/reference/gcvt-s.md)|**_Gcvt** güvenli sürümü
+[_get_FMA3_enable, _set_FMA3_enable](../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)|X64 üzerinde FMA3 yönergelerinin kullanımı için bir bayrak alır veya ayarlar
+[hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl](../c-runtime-library/reference/hypot-hypotf-hypotl-hypot-hypotf-hypotl.md)|Hipotenüsü hesaplar
+[ıalınan GB, ılogbf, ılogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|Taban-2 üssün oluşan tamsayıyı hesaplar
+[imaxabs](../c-runtime-library/reference/imaxabs.md)|Bir tamsayı türünün mutlak değerini hesaplar
 [imaxdiv](../c-runtime-library/reference/imaxdiv.md)|Bölümü ve iki tamsayı değerinin kalanını hesaplar
-[isfinite, _finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Bir değer sınırlı olup olmadığını belirler
-[isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered](../c-runtime-library/reference/floating-point-ordering.md)|İki sırasını karşılaştırma kayan nokta değerleri
-[isinf](../c-runtime-library/reference/isinf.md)|Sonsuz kayan nokta değeri olup olmadığını belirler
-[isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)|Bir kayan nokta değeri NaN için test eder
-[isnormal](../c-runtime-library/reference/isnormal.md)|Bir kayan nokta değeri sınırlı olan ve olmayan subnormal olup olmadığını test eder
-[_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevi hesaplar
+[isfinite, _finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Değerin sonlu olup olmadığını belirler
+[isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered](../c-runtime-library/reference/floating-point-ordering.md)|İki kayan nokta değerinin sırasını karşılaştırın
+[isinf](../c-runtime-library/reference/isinf.md)|Kayan nokta değerinin sonsuz olup olmadığını belirler
+[isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)|NaN için kayan noktalı bir değer sınar
+[isnormal](../c-runtime-library/reference/isnormal.md)|Kayan nokta değerinin hem sonlu hem de alt normal olmadığını sınar
+[_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevini hesaplar
 [ldexp, ldexpf, ldexpl](../c-runtime-library/reference/ldexp.md)|Hesaplar x * 2<sup>n</sup>
-[lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|Gama fonksiyonu mutlak değerini doğal logaritmasını hesaplar.
-[llrint, llrintf, llrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan nokta değerine yuvarlanır en yakın **uzun uzun** değeri
-[llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan nokta değerine yuvarlanır en yakın **uzun uzun** değeri
-[Günlük, logf, logl, log10, log10f, log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|Doğal ya da 10 tabanında logaritmasını hesaplar.
-[log1p, log1pf, log1pl](../c-runtime-library/reference/log1p-log1pf-log1pl2.md)|1 + x doğal logaritmasını hesaplar.
-[log2, log2f, log2l](../c-runtime-library/reference/log2-log2f-log2l.md)|2 tabanlı logaritmasını hesaplar.
-[logb, logbf, logbl, _logb, _logbf](../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)|Üssü bir kayan nokta değeri döndürür
-[lrint, lrintf, lrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan nokta değerine yuvarlanır en yakın **uzun** değeri
-[_lrotl, _lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|Sola veya sağa bir Integer değeri döndürür
-[lround, lroundf, lroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan nokta değerine yuvarlanır en yakın **uzun** değeri
+[lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|Gama işlevinin mutlak logaritmasına ilişkin doğal logaritmayı hesaplar
+[llrint, llrintf, llrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
+[llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
+[log, logf, logl, log10, log10f, log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|Doğal veya 10 tabanında logaritmayı hesaplar
+[log1p, log1pf, log1pl](../c-runtime-library/reference/log1p-log1pf-log1pl2.md)|1 + x 'in doğal logaritmasını hesaplar
+[log2, log2f, log2l](../c-runtime-library/reference/log2-log2f-log2l.md)|2 tabanında logaritmayı hesaplar
+[logb, logbf, logbl, _logb, _logbf](../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)|Kayan nokta değerinin üssünü döndürür
+[lrint, lrintf, lrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
+[_lrotl, _lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|Bir tamsayı değerini sola veya sağa döndürür
+[lround, lroundf, lroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
 [_matherr](../c-runtime-library/reference/matherr.md)|Varsayılan matematik hata işleyicisi
-[__max](../c-runtime-library/reference/max.md)|İki değeri büyük döndüren makrosu
-[__min](../c-runtime-library/reference/min.md)|İki değerin daha küçük döndüren makrosu
-[modf, modff, modfl](../c-runtime-library/reference/modf-modff-modfl.md)|Bir kayan nokta değeri kesirli ve tamsayı bölümlere böler
-[nan, nanf, nanl](../c-runtime-library/reference/nan-nanf-nanl.md)|Sessiz bir NaN değerini döndürür
-[nearbyint, nearbyintf, nearbyintl](../c-runtime-library/reference/nearbyint-nearbyintf-nearbyintl1.md)|Yuvarlatılmış değerini döndürür
-[nextafter nextafterf, nextafterl _nextafter, _nextafterf](../c-runtime-library/reference/nextafter-functions.md)|Gösterilebilir sıradaki kayan nokta değeri döndürür
-[nexttoward, nexttowardf, nexttowardl](../c-runtime-library/reference/nextafter-functions.md)|Gösterilebilir sıradaki kayan nokta değeri döndürür
-[pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)|Değerini döndürür *x*<sup>*y*</sup>
-[remainder, remainderf, remainderl](../c-runtime-library/reference/remainder-remainderf-remainderl.md)|Kayan nokta değerlerinin iki sayının geri kalanı hesaplar.
-[remquo, remquof, remquol](../c-runtime-library/reference/remquo-remquof-remquol.md)|İki tamsayı değerinin kalanını hesaplar.
-[rint, rintf, rintl](../c-runtime-library/reference/rint-rintf-rintl.md)|Bir kayan noktalı değere yuvarlar
-[_rotl, _rotl64, _rotr, _rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|Tamsayı türlerinde BITS döndürür
-[round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md)|Bir kayan noktalı değere yuvarlar
-[_scalb, _scalbf](../c-runtime-library/reference/scalb.md)|2'in kuvveti olarak ölçek bağımsız değişkeni
-[scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Bir kayan noktalı sayı bir tam sayı gücünü tarafından çarpar **flt_radıx**
+[__max](../c-runtime-library/reference/max.md)|İki değerden daha büyük bir değer döndüren makro
+[__min](../c-runtime-library/reference/min.md)|İki değerden daha küçük bir değer döndüren makro
+[modf, modff, modfl](../c-runtime-library/reference/modf-modff-modfl.md)|Kayan nokta değerini kesirli ve tamsayı bölümlerine böler
+[nan, nanf, nanl](../c-runtime-library/reference/nan-nanf-nanl.md)|Sessiz bir NaN değeri döndürür
+[nearbyint, nearbyintf, nearbyintl](../c-runtime-library/reference/nearbyint-nearbyintf-nearbyintl1.md)|Yuvarlatılmış değeri döndürür
+[nextafter, nextafterf, nextafterl, _nextafter _nextafterf](../c-runtime-library/reference/nextafter-functions.md)|Sonraki gösterilemeyen kayan nokta değerini döndürür
+[Next, nexttowardf, nexttowardl](../c-runtime-library/reference/nextafter-functions.md)|Sonraki gösterilemeyen kayan nokta değerini döndürür
+[pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)|*X*<sup>*y*</sup> değerini döndürür
+[remainder, remainderf, remainderl](../c-runtime-library/reference/remainder-remainderf-remainderl.md)|İki kayan nokta değerinin kalan bölümünü hesaplar
+[remquo, remquof, remquol](../c-runtime-library/reference/remquo-remquof-remquol.md)|İki tamsayı değerinin kalanını hesaplar
+[rint, rintf, rintl](../c-runtime-library/reference/rint-rintf-rintl.md)|Kayan nokta değerini yuvarlar
+[_rotl, _rotl64, _rotr, _rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|Tamsayı türlerinde bitleri döndürür
+[round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md)|Kayan nokta değerini yuvarlar
+[_scalb, _scalbf](../c-runtime-library/reference/scalb.md)|Bağımsız değişkeni 2 kuvvetle ölçeklendirir
+[scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Kayan noktalı sayıyı **FLT_RADIX** integral bir gücüyle çarpar
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Kayan nokta denetim sözcüğünü ayarlar
-[_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Etkinleştirir veya SSE2 yönergelerini devre dışı bırakır
-[signbit](../c-runtime-library/reference/signbit.md)|Bir kayan nokta değerinin imza biti testleri
-[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Sinüsünü hesaplar.
-[sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsünü hesaplar.
-[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Kare kökünü hesaplar.
-[_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Kayan nokta durumu sözcüğünü alır
-[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Bir dizeye dönüştürür bir **float**
-[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeye dönüştürür bir **uzun** **çift**
-[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Tanjantını hesaplar.
-[tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Hiperbolik tanjantı hesaplar.
-[tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Gama fonksiyonu hesaplar
-[trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Kesirli bölümü keser
-[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeye dönüştürür bir **çift**
-[_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevi hesaplar
+[_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|SSE2 talimatlarını etkinleştirilir veya devre dışı bırakır
+[signbit](../c-runtime-library/reference/signbit.md)|Kayan nokta değerinin işaret bitini sınar
+[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Sinüsü hesaplar
+[sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsü hesaplar
+[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Kare kökünü hesaplar
+[_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Kayan nokta durum sözcüğünü alır
+[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Dizeyi **float** öğesine dönüştürür
+[strsöyle, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeyi **Long** **Double** 'a dönüştürür
+[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Tanjantı hesaplar
+[tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Hiperbolik tanjantı hesaplar
+[tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Gama işlevini hesaplar
+[trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Kesirli kısmını keser
+[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeyi **Double** 'a dönüştürür
+[_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevini hesaplar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

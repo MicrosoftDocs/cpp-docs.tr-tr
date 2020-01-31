@@ -27,16 +27,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleT::operator= operator
 - Microsoft::WRL::Wrappers::HandleT::~HandleT, destructor
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
-ms.openlocfilehash: 6e5824da03fb85e52f413f5678ea6e0fd6c77ddd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f66fbe23c305be15e09928242175dfa7ce8c141b
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398413"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821824"
 ---
 # <a name="handlet-class"></a>HandleT Sınıfı
 
-Bir tutamacı nesneyi temsil eder.
+Bir nesneye olan tanıtıcıyı temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,50 +48,50 @@ class HandleT;
 ### <a name="parameters"></a>Parametreler
 
 *HandleTraits*<br/>
-Örneği [HandleTraits](handletraits-structure.md) ortak bir tanıtıcı özelliklerini tanımlayan bir yapıda.
+Bir tanıtıcının ortak özelliklerini tanımlayan [Handlenitelikleri](handletraits-structure.md) yapısının bir örneği.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Ad     | Açıklama
+Name     | Açıklama
 -------- | -----------------------------
-`Traits` | İçin bir eşanlamlı `HandleTraits`.
+`Traits` | `HandleTraits`için eş anlamlı.
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-Ad                                | Açıklama
+Name                                | Açıklama
 ----------------------------------- | --------------------------------------------------
-[HandleT::HandleT](#handlet)        | Yeni bir örneğini başlatır `HandleT` sınıfı.
-[HandleT::~HandleT](#tilde-handlet) | Örneği başlatılmasını geri alır `HandleT` sınıfı.
+[HandleT:: HandleT](#handlet)        | Yeni bir örneğini başlatır `HandleT` sınıfı.
+[HandleT:: ~ HandleT](#tilde-handlet) | `HandleT` sınıfının bir örneğini kaldırır.
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-Ad                         | Açıklama
+Name                         | Açıklama
 ---------------------------- | ----------------------------------------------------------------------
-[HandleT::Attach](#attach)   | Belirtilen tanıtıcı geçerli ilişkilendirir `HandleT` nesne.
-[HandleT::Close](#close)     | Geçerli kapatır `HandleT` nesne.
-[HandleT::Detach](#detach)   | Geçerli ayırır `HandleT` , temel alınan tanıtıcısını nesne.
-[HandleT::Get](#get)         | Temel alınan tanıtıcısının değerini alır.
-[Handlet::IsValid](#isvalid) | Belirtir olup olmadığını geçerli `HandleT` nesnesi bir işleyici temsil eder.
+[HandleT:: Attach](#attach)   | Belirtilen tanıtıcıyı geçerli `HandleT` nesnesi ile ilişkilendirir.
+[HandleT:: Close](#close)     | Geçerli `HandleT` nesnesini kapatır.
+[HandleT::D etach](#detach)   | Geçerli `HandleT` nesnesini temeldeki tanıtıcıdan ayırır.
+[HandleT:: Get](#get)         | Temel alınan tanıtıcının değerini alır.
+[HandleT:: IsValid](#isvalid) | Geçerli `HandleT` nesnesinin bir tanıtıcıyı temsil edip etmediğini gösterir.
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Ad                                     | Açıklama
+Name                                     | Açıklama
 ---------------------------------------- | ------------------------------------
-[Handlet::ınternalclose](#internalclose) | Geçerli kapatır `HandleT` nesne.
+[HandleT:: InternalClose](#internalclose) | Geçerli `HandleT` nesnesini kapatır.
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
-Ad                                   | Açıklama
+Name                                   | Açıklama
 -------------------------------------- | ----------------------------------------------------------------------------------
-[HandleT::operator =](#operator-assign) | Belirtilen değer taşır `HandleT` geçerli nesneye `HandleT` nesne.
+[HandleT:: operator =](#operator-assign) | Belirtilen `HandleT` nesnesinin değerini geçerli `HandleT` nesnesine kaydırır.
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-Ad                        | Açıklama
+Name                        | Açıklama
 --------------------------- | ----------------------------------------------------------------
-[HandleT::handle_](#handle) | Tarafından temsil edilen tanıtıcı içeren `HandleT` nesne.
+[HandleT:: handle_](#handle) | `HandleT` nesnesi tarafından temsil edilen tanıtıcıyı içerir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -99,21 +99,21 @@ Ad                        | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="tilde-handlet"></a>HandleT::~HandleT
+## <a name="tilde-handlet"></a>HandleT:: ~ HandleT
 
-Örneği başlatılmasını geri alır `HandleT` sınıfı.
+`HandleT` sınıfının bir örneğini kaldırır.
 
 ```cpp
 ~HandleT();
 ```
 
-## <a name="attach"></a>HandleT::Attach
+## <a name="attach"></a>HandleT:: Attach
 
-Belirtilen tanıtıcı geçerli ilişkilendirir `HandleT` nesne.
+Belirtilen tanıtıcıyı geçerli `HandleT` nesnesi ile ilişkilendirir.
 
 ```cpp
 void Attach(
@@ -124,11 +124,11 @@ void Attach(
 ### <a name="parameters"></a>Parametreler
 
 *h*<br/>
-Tanıtıcı.
+Bir tanıtıcı.
 
-## <a name="close"></a>HandleT::Close
+## <a name="close"></a>HandleT:: Close
 
-Geçerli kapatır `HandleT` nesne.
+Geçerli `HandleT` nesnesini kapatır.
 
 ```cpp
 void Close();
@@ -136,13 +136,13 @@ void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli altını tanıtıcı `HandleT` kapatılır ve `HandleT` geçersiz duruma ayarlanır.
+Geçerli `HandleT` bulunan tanıtıcı kapalıdır ve `HandleT` geçersiz duruma ayarlanır.
 
-Tanıtıcı düzgün kapatmadığına, çağıran iş parçacığında bir özel durum oluşturulur.
+Tanıtıcı doğru şekilde kapanmazsa, çağıran iş parçacığında bir özel durum oluşturulur.
 
-## <a name="detach"></a>HandleT::Detach
+## <a name="detach"></a>HandleT::D etach
 
-Geçerli ayırır `HandleT` , temel alınan tanıtıcısını nesne.
+Geçerli `HandleT` nesnesini temeldeki tanıtıcıdan ayırır.
 
 ```cpp
 typename HandleTraits::Type Detach();
@@ -150,15 +150,15 @@ typename HandleTraits::Type Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel alınan tanıtıcısı.
+Temel alınan tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem tamamlandığında, geçerli `HandleT` geçersiz duruma ayarlanır.
+Bu işlem tamamlandığında geçerli `HandleT` geçersiz duruma ayarlanır.
 
-## <a name="get"></a>HandleT::Get
+## <a name="get"></a>HandleT:: Get
 
-Temel alınan tanıtıcısının değerini alır.
+Temel alınan tanıtıcının değerini alır.
 
 ```cpp
 typename HandleTraits::Type Get() const;
@@ -166,17 +166,17 @@ typename HandleTraits::Type Get() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcı.
+Bir tanıtıcı.
 
-## <a name="handle"></a>HandleT::handle_
+## <a name="handle"></a>HandleT:: handle_
 
-Tarafından temsil edilen tanıtıcı içeren `HandleT` nesne.
+`HandleT` nesnesi tarafından temsil edilen tanıtıcıyı içerir.
 
 ```cpp
 typename HandleTraits::Type handle_;
 ```
 
-## <a name="handlet"></a>HandleT::HandleT
+## <a name="handlet"></a>HandleT:: HandleT
 
 Yeni bir örneğini başlatır `HandleT` sınıfı.
 
@@ -194,15 +194,15 @@ HandleT(
 ### <a name="parameters"></a>Parametreler
 
 *h*<br/>
-Tanıtıcı.
+Bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu başlatan bir `HandleT` değil bir nesne için geçerli bir tanıtıcı nesnesi. İkinci oluşturucu yeni bir oluşturur `HandleT` parametre nesneden *h*.
+İlk Oluşturucu bir nesne için geçerli bir tanıtıcı olmayan bir `HandleT` nesnesini başlatır. İkinci Oluşturucu *h*parametresinden yeni bir `HandleT` nesnesi oluşturur.
 
-## <a name="internalclose"></a>Handlet::ınternalclose
+## <a name="internalclose"></a>HandleT:: InternalClose
 
-Geçerli kapatır `HandleT` nesne.
+Geçerli `HandleT` nesnesini kapatır.
 
 ```cpp
 virtual bool InternalClose();
@@ -210,15 +210,15 @@ virtual bool InternalClose();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa geçerli `HandleT` kapalı başarıyla; Aksi takdirde **false**.
+geçerli `HandleT` başarıyla kapatılırsa **doğru** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InternalClose()` olan `protected`.
+`InternalClose()` `protected`.
 
-## <a name="isvalid"></a>Handlet::IsValid
+## <a name="isvalid"></a>HandleT:: IsValid
 
-Belirtir olup olmadığını geçerli `HandleT` nesnesi bir işleyici temsil eder.
+Geçerli `HandleT` nesnesinin bir tanıtıcıyı temsil edip etmediğini gösterir.
 
 ```cpp
 bool IsValid() const;
@@ -226,11 +226,11 @@ bool IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `HandleT` temsil eden bir işleyici; Aksi takdirde **false**.
+`HandleT` bir tanıtıcıyı temsil ediyorsa **true** ; Aksi takdirde, **false**.
 
-## <a name="operator-assign"></a>HandleT::operator =
+## <a name="operator-assign"></a>HandleT:: operator =
 
-Belirtilen değer taşır `HandleT` geçerli nesneye `HandleT` nesne.
+Belirtilen `HandleT` nesnesinin değerini geçerli `HandleT` nesnesine kaydırır.
 
 ```cpp
 HandleT& operator=(
@@ -241,12 +241,12 @@ HandleT& operator=(
 ### <a name="parameters"></a>Parametreler
 
 *h*<br/>
-Bir rvalue başvuru için bir tanıtıcı.
+Bir tanıtıcıya bir rvalue başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir başvuru `HandleT` nesne.
+Geçerli `HandleT` nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem geçersiz kılar `HandleT` parametresi tarafından belirtilen nesne *h*.
+Bu işlem *h*parametresi tarafından belirtilen `HandleT` nesnesini geçersiz kılar.

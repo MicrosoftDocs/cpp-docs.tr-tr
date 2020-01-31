@@ -1,6 +1,7 @@
 ---
 title: extern (C++)
-ms.date: 04/12/2018
+description: C++ Language extern anahtar sözcüğüne kılavuzluk edin.
+ms.date: 01/28/2020
 f1_keywords:
 - extern
 - extern_CPP
@@ -9,27 +10,35 @@ helpviewer_keywords:
 - declarations, external
 - external linkage, extern modifier
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
-ms.openlocfilehash: d42a32202f7fa67751ea36757c13b2c6af4953b2
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+no-loc:
+- extern
+- const
+- constexpr
+- permissive
+ms.openlocfilehash: 422b6960802c59f1c45e0c22a4a85988c808a5b3
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301541"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821772"
 ---
-# <a name="extern-c"></a>extern (C++)
+# <a name="opno-locextern-c"></a>extern (C++)
 
-**Extern** anahtar sözcüğü, bir genel değişkene, işleve veya şablon bildirimine uygulanır, bu da adın *dış bağlantısına*sahip olduğunu belirtir. Bağlantı hakkında arka plan bilgileri ve genel değişkenlerin kullanılmasına neden önerilmez, bkz. [çeviri birimleri ve bağlantı](program-and-linkage-cpp.md).
+**extern** anahtar sözcüğü, genel bir değişkene, işleve veya şablon bildirimine uygulanabilir. Simgenin *dış bağlantıya*sahip olduğunu belirtir. Bağlantı hakkında arka plan bilgileri ve genel değişkenlerin kullanılmasına neden önerilmez, bkz. [çeviri birimleri ve bağlantı](program-and-linkage-cpp.md).
 
-**Extern** anahtar sözcüğünün, bağlama göre dört anlamı vardır:
+**extern** anahtar sözcüğünün, içeriğe bağlı olarak dört anlamı vardır:
 
-1. const olmayan genel değişken bildiriminde **extern** , değişkenin veya işlevin başka bir çeviri biriminde tanımlandığını belirtir. **Extern** , değişkenin tanımlandığı yer hariç tüm dosyalara uygulanmalıdır.
-1. bir const değişken bildiriminde, değişkenin dış bağlantı olduğunu belirtir. **Extern** , tüm dosyalardaki tüm bildirimlere uygulanmalıdır. (Global const değişkenlerinin varsayılan olarak iç bağlantısı vardır.)
-1. **extern "c"** işlevin başka bir yerde tanımlandığını belirtir ve C dili çağırma kuralını kullanır. Extern "C" değiştiricisi, bir bloktaki birden çok işlev bildiriminde de uygulanabilir.
-1. Şablon bildiriminde, şablonun zaten başka bir yerde örneği bulunduğunu belirtir. Bu, derleyiciye geçerli konumda yeni bir tane oluşturmak yerine diğer örnek oluşturmayı yeniden kullanacağınızı söyleyen bir iyileştirmedir. Bu **extern**kullanımı hakkında daha fazla bilgi için bkz. [Şablonlar](templates-cpp.md).
+- **const** genel olmayan bir değişken bildiriminde, **extern** değişkenin veya işlevin başka bir çeviri biriminde tanımlandığını belirtir. **extern** , değişkenin tanımlandığı yer hariç tüm dosyalarda uygulanmalıdır.
 
-## <a name="extern-linkage-for-non-const-globals"></a>const olmayan genel öğeler için extern bağlantı
+- **const** değişken bildiriminde, değişkenin dış bağlantı olduğunu belirtir. **extern** tüm dosyalardaki tüm bildirimlere uygulanmalıdır. (Genel **const** değişkenlerinin varsayılan olarak iç bağlantısı vardır.)
 
-Bağlayıcı genel bir değişken bildiriminden önce **extern** olarak gördüğünde, tanımı başka bir çeviri biriminde arar. Genel kapsamdaki const olmayan değişkenlerin bildirimleri varsayılan olarak dış ' dir; yalnızca tanımı sağlamayan bildirimlere **extern** uygulayın.
+- **"c"extern** , işlevin başka bir yerde tanımlandığını belirtir ve C dili çağırma kuralını kullanır. extern "C" değiştiricisi, bir bloktaki birden çok işlev bildiriminde de uygulanabilir.
+
+- Şablon bildiriminde, **extern** şablonun başka bir yerde zaten başlatılmış olduğunu belirtir. **extern** , derleyicisine, geçerli konumda yeni bir tane oluşturmak yerine, diğer örnek oluşturmayı yeniden kullanabilmeyeceğini söyler. Bu **extern** kullanımı hakkında daha fazla bilgi için bkz. [açık örnek oluşturma](explicit-instantiation.md).
+
+## <a name="opno-locextern-linkage-for-non-opno-locconst-globals"></a>const olmayan genel öğeler için extern bağlantısı
+
+Bağlayıcı genel bir değişken bildiriminden önce **extern** gördüğünde, tanımı başka bir çeviri biriminde arar. Genel kapsamda **const** olmayan değişkenlerin bildirimleri varsayılan olarak dış ' dır. Yalnızca tanımı sağlamayan bildirimlere **extern** uygulayın.
 
 ```cpp
 //fileA.cpp
@@ -46,9 +55,9 @@ int i = 43; // LNK2005! 'i' already has a definition.
 extern int i = 43; // same error (extern is ignored on definitions)
 ```
 
-## <a name="extern-linkage-for-const-globals"></a>const genel için extern bağlantı
+## <a name="opno-locextern-linkage-for-opno-locconst-globals"></a>const genel için extern bağlantısı
 
-Bir **const** genel değişkeninin varsayılan olarak iç bağlantısı vardır. Değişkenin dış bağlantıya sahip olmasını istiyorsanız, **extern** anahtar sözcüğünü diğer dosyalardaki diğer tüm bildirimlere ve tanımına uygulayın:
+**const** genel değişkeninin varsayılan olarak iç bağlantısı vardır. Değişkenin dış bağlantıya sahip olmasını istiyorsanız, **extern** anahtar sözcüğünü tanımına ve diğer dosyalardaki diğer tüm bildirimlere uygulayın:
 
 ```cpp
 //fileA.cpp
@@ -58,25 +67,25 @@ extern const int i = 42; // extern const definition
 extern const int i;  // declaration only. same as i in FileA
 ```
 
-## <a name="extern-constexpr-linkage"></a>extern constexpr bağlantısı
+## <a name="opno-locextern-opno-locconstexpr-linkage"></a>extern constexpr bağlantısı
 
-Visual Studio 2017 sürüm 15,3 ve önceki sürümlerde, derleyici her zaman, değişken extern olarak işaretlenmiş olsa bile bir constexpr değişkeni iç bağlantısı vermiştir. Visual Studio 2017 sürüm 15,5 ' de, yeni bir derleyici anahtarı ([/Zc: externConstexpr](../build/reference/zc-externconstexpr.md)) standartlara uygun doğru davranışı mümkün bir şekilde sunar. Sonuç olarak bu varsayılan değer olacaktır. /Permissive-seçeneği/Zc: externConstexpr 'yi etkinleştirmez.
+Visual Studio 2017 sürüm 15,3 ve önceki sürümlerde, derleyici her zaman bir **constexpr** değişken iç bağlantı vermiştir ve değişken **extern** olarak işaretlenmiş olsa bile. Visual Studio 2017 sürüm 15,5 ve sonraki sürümlerde, [/Zc: externConstexpr](../build/reference/zc-externconstexpr.md) derleyici anahtarı doğru standartlara uygun davranışı sunar. Sonuç olarak seçenek varsayılan olarak olur. [/permissive-](../build/reference/permissive-standards-conformance.md) seçeneği **/Zc: externConstexpr**'ı etkinleştirmez.
 
 ```cpp
 extern constexpr int x = 10; //error LNK2005: "int const x" already defined
 ```
 
-Üst bilgi dosyası extern constexpr olarak tanımlanmış bir değişken içeriyorsa, yinelenen bildirimlerinin birleştirilmek için **__declspec (selectany)** olarak işaretlenmesi gerekir:
+Bir üst bilgi dosyası **extern** **constexpr** olarak belirtilen bir değişken içeriyorsa, yinelenen bildirimlerinin birleştirilmek için `__declspec(selectany)` olarak işaretlenmelidir:
 
 ```cpp
 extern constexpr __declspec(selectany) int x = 10;
 ```
 
-## <a name="extern-c-and-extern-c-function-declarations"></a>extern "C" ve extern "C++" işlev bildirimleri
+## <a name="opno-locextern-c-and-opno-locextern-c-function-declarations"></a>extern "C" ve extern "C++" işlev bildirimleri
 
-' C++De, bir dize ile kullanıldığında **extern** , başka bir dilin bağlantı kurallarının bildirimcler için kullanıldığını belirtir. C işlevlerine ve verilerine, yalnızca daha önce C bağlantısına sahip oldukları bildirilmişse erişilebilir. Ancak, ayrı olarak derlenmiş bir çeviri biriminde tanımlanmalıdır.
+' C++De, bir dize ile birlikte kullanıldığında **extern** , başka bir dilin bağlantı kurallarının, bildirimcler için kullanıldığını belirtir. C işlevlerine ve verilerine, yalnızca daha önce C bağlantısı varmış gibi bildirilirse erişilebilir. Ancak, ayrı olarak derlenmiş bir çeviri biriminde tanımlanmalıdır.
 
-Microsoft C++ , *dize sabit değeri* alanında **"C"** ve **C++""** dizelerini destekler. Tüm standart içerme dosyaları, çalışma zamanı kitaplık işlevlerinin C++ programlarda kullanılmasına izin vermek için extern "C" sözdizimini kullanır.
+Microsoft C++ , *dize sabit değeri* alanında **"C"** ve **C++""** dizelerini destekler. Tüm standart içerme dosyaları, C++ programlarda çalışma zamanı kitaplık işlevlerinin kullanılmasına izin vermek için **extern "C"** sözdizimini kullanır.
 
 ## <a name="example"></a>Örnek
 
@@ -117,7 +126,7 @@ extern "C" char GetChar(void) {
 extern "C" int errno;
 ```
 
-Bir işlevde birden fazla bağlantı belirtimi varsa, bunu kabul etmelidir; işlevleri hem C hem C++ de bağlantısına sahip olarak bildirmek bir hatadır. Ayrıca, bir programda bir işlev için iki bildirim varsa — bir bağlantı belirtimi ve diğeri olmadan — bağlantı belirtimine sahip bildirim öncelikle olmalıdır. Zaten bağlantı belirtimine sahip olan işlevlerin tüm gereksiz bildirimlerine ilk bildirimde belirtilen bağlantı verilir. Örneğin:
+Bir işlevde birden fazla bağlantı belirtimi varsa, bunları kabul etmelidir. İşlevleri hem C hem C++ de bağlantısına sahip olarak bildirmek bir hatadır. Ayrıca, bir programda bir işlev için iki bildirim varsa — bir bağlantı belirtimi ve diğeri olmadan — bağlantı belirtimine sahip bildirim öncelikle olmalıdır. Zaten bağlantı belirtimine sahip olan işlevlerin tüm gereksiz bildirimlerine ilk bildirimde belirtilen bağlantı verilir. Örneğin:
 
 ```cpp
 extern "C" int CFunc1();
@@ -134,8 +143,8 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Çeviri birimleri ve bağlantı](program-and-linkage-cpp.md)<br/>
-[C 'de extern depolama sınıfı tanımlayıcısı](../c-language/extern-storage-class-specifier.md)<br/>
-[C 'deki tanımlayıcıların davranışı](../c-language/behavior-of-identifiers.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)\
+[Çeviri birimleri ve bağlantı](program-and-linkage-cpp.md)\
+[C\extern depolama sınıfı Belirleyicisi](../c-language/extern-storage-class-specifier.md)
+[C\ tanımlayıcıları davranışı](../c-language/behavior-of-identifiers.md)
 [C 'de bağlantı](../c-language/linkage.md)

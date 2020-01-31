@@ -26,12 +26,12 @@ helpviewer_keywords:
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-ms.openlocfilehash: 2c483df8e07b9496a0a22c1a1ebccf2b40d129cb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5eaee64c1bf6ad4b4d59c3a7b1a1434741e74454
+ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944852"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821798"
 ---
 # <a name="_write"></a>_write
 
@@ -60,25 +60,25 @@ Bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_write** yazılan bayt sayısını döndürür. Diskte kalan gerçek alan, işlevin diske yazmaya çalıştığı arabelleğin boyutundan daha azsa, **_yazma** başarısız olur ve arabelleğin içeriğini diske temizlemez. -1 ' in dönüş değeri bir hatayı gösterir. Geçersiz parametreler geçirilmemişse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** üç değerden birine ayarlanır: **EBADF**, dosya tanımlayıcısının geçersiz olması veya dosyanın yazma için açılmadığı anlamına gelir; **Enospc**, bu, cihazda işlem için yeterli alan olmadığı anlamına gelir; ya da **EINVAL**, bu, *arabelleğin* boş bir işaretçi olduğu veya Unicode modundaki bir dosyaya yazılması için tek bayt *sayısının* geçirildiği anlamına gelir.
+Başarılı olursa **_write** yazılan bayt sayısını döndürür. Diskte kalan gerçek alan, işlevin diske yazmaya çalıştığı arabelleğin boyutundan küçükse, **_write** başarısız olur ve arabelleğin herhangi bir içeriğini diske temizlemez. -1 ' in dönüş değeri bir hatayı gösterir. Geçersiz parametreler geçirilmemişse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** üç değerden birine ayarlanır: **EBADF**, bu, dosya tanımlayıcısının geçersiz olduğu veya dosyanın yazmak için açılmadığı anlamına gelir; **Enospc**, bu, cihazda işlem için yeterli alan olmadığı anlamına gelir; ya da **EINVAL**, bu, *arabelleğin* boş bir işaretçi olduğu veya Unicode modundaki bir dosyaya yazılması için tek bayt *sayısının* geçirildiği anlamına gelir.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 Dosya metin modunda açılırsa, her satır besleme karakteri çıkışdaki bir satır başı satır besleme çiftiyle değiştirilmiştir. Değişiklik, dönüş değerini etkilemez.
 
-Dosya Unicode çeviri modunda açıldığında — Örneğin, *FD* **_open** veya **_Sopen** kullanılarak açıldıysa ve **_O_WTEXT**, **_O_u16text**veya **_O_U8TEXT**içeren bir mode parametresi veya kullanılarak açılırsa **CCS = UNICODE**, **CCS = UTF-16LE**, veya **CCS = UTF-8**içeren bir mod parametresi veya mod, **_setmode**kullanarak bir UNICODE çeviri moduna değiştirildiyse,*arabellek* bir işaretçi olarak yorumlanır **UTF-16** verileri içeren **wchar_t** dizisi. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açıldığında — Örneğin, *fd* **_open** veya **_sopen** kullanılarak açılırsa ve **_O_WTEXT**içeren bir mod parametresi, **_O_U16TEXT**veya **_O_U8TEXT**ya da **FOPEN** kullanılarak açıldıysa, **CCS = UNICODE**, **CCS = utf-16LE**veya **CCS = UTF-8**içeren bir mod parametresi veya mod, **_setmode**kullanılarak bir Unicode çeviri moduna değiştiyse,*arabellek* bir işaretçi olarak yorumlanır **UTF-16** verileri içeren **wchar_t** dizisi. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **_Write** işlevi *arabellekteki* *sayı* baytlarını *FD*ile ilişkili dosyaya yazar. Yazma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin (varsa) geçerli konumunda başlar. Dosya ekleme için açıksa, işlem dosyanın geçerli ucunda başlar. Yazma işleminden sonra, dosya işaretçisi yazılan bayt sayısıyla artar.
 
-Metin modunda açılan dosyalara yazarken, **_write** , dosyanın mantıksal sonu olarak bir CTRL + Z karakteri uygular. Bir cihaza yazarken, **_write** ARABELLEĞE bir CTRL + Z karakteri ile çıkış Sonlandırıcı olarak davranır.
+Metin modunda açılan dosyalara yazarken **_write** , bir CTRL + Z karakterini dosyanın mantıksal sonu olarak değerlendirir. Bir cihaza yazarken **_write** , ARABELLEKTEKI bir CTRL + Z karakterini çıkış Sonlandırıcı olarak değerlendirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_write**|\<GÇ. h >|
+|**_write**|\<IO. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -124,7 +124,7 @@ int main( void )
             perror("Invalid parameter: buffer was NULL!");
             break;
          default:
-            // An unrelated error occured
+            // An unrelated error occurred
             perror("Unexpected error!");
       }
    }
