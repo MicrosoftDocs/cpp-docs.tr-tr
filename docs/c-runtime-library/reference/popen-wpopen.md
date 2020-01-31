@@ -1,6 +1,7 @@
 ---
 title: _popen, _wpopen
-ms.date: 11/04/2016
+description: Microsoft C Runtime (CRT) kitaplık işlevlerine yönelik bir başvuru _popen ve _wpopen.
+ms.date: 01/28/2020
 api_name:
 - _popen
 - _wpopen
@@ -36,12 +37,21 @@ helpviewer_keywords:
 - wpopen function
 - _wpopen function
 ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
-ms.openlocfilehash: 0e58ffd523c6919d70c68454f3547736afdef565
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+no-loc:
+- _popen
+- _wpopen
+- _tpopen
+- _doserrno
+- errno
+- _sys_errlist
+- _sys_nerr
+- EINVAL
+ms.openlocfilehash: 68531256fd688b50b659c885635ffa17d17773a5
+ms.sourcegitcommit: 684181561490e0d1955cf601d222f67f09af6d00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950992"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894326"
 ---
 # <a name="_popen-_wpopen"></a>_popen, _wpopen
 
@@ -65,21 +75,21 @@ FILE *_wpopen(
 
 ### <a name="parameters"></a>Parametreler
 
-*komutundaki*<br/>
+*komut*\
 Yürütülecek komut.
 
-*modundaysa*<br/>
+*mod*\
 Döndürülen akışın modu.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Oluşturulan kanalın bir sonuyla ilişkili bir akış döndürür. Kanalın diğer ucu, oluşturulan komutun standart girişi veya standart çıkışıyla ilişkilendirilir. İşlevler bir hata üzerinde **null değeri** döndürür. Hata geçersiz bir parametredir (örneğin, *komut* veya *mod* null işaretçisiyse veya *mod* geçerli bir mod değilse, **errno** , **EINVAL**olarak ayarlanır. Geçerli modlar için açıklamalar bölümüne bakın.
+Oluşturulan kanalın bir sonuyla ilişkili bir akış döndürür. Kanalın diğer ucu, oluşturulan komutun standart girişi veya standart çıkışıyla ilişkilendirilir. İşlevler bir hata üzerinde **null değeri** döndürür. Hata geçersiz bir parametre nedeniyle kaynaklanıyorsa, **errno** , **EINVAL**olarak ayarlanır. Geçerli modlar için açıklamalar bölümüne bakın.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Popen** işlevi bir kanal oluşturur ve belirtilen dize *komutuyla*komut işlemcisinin oluşturulan bir kopyasını zaman uyumsuz olarak yürütür. Karakter dizesi *modu* , istenen erişim türünü aşağıdaki gibi belirtir.
+**_Popen** işlevi bir kanal oluşturur. Ardından komut işlemcisinin üretilmiş bir kopyasını zaman uyumsuz olarak yürütür ve komut satırı olarak *komutunu* kullanır. Karakter dizesi *modu* , istenen erişim türünü aşağıdaki gibi belirtir.
 
 |Erişim modu|Açıklama|
 |-|-|
@@ -89,9 +99,9 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, err
 |**şı**|Metin modunda açın.|
 
 > [!NOTE]
-> Bir Windows programında kullanılırsa, **_popen** işlevi, programın süresiz olarak yanıt vermemesine neden olan geçersiz bir dosya işaretçisi döndürür. **_popen** , konsol uygulamasında düzgün şekilde çalışmaktadır. Girişi ve çıktıyı yeniden yönlendiren bir Windows uygulaması oluşturmak için, bkz. Windows SDK [yeniden yönlendirilen giriş ve çıkışlarla bir alt Işlem oluşturma](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) .
+> Bir Windows programında kullanılırsa, **_popen** işlevi programın süresiz olarak yanıt vermemesine neden olan geçersiz bir dosya işaretçisi döndürür. **_popen** bir konsol uygulamasında düzgün şekilde çalışmaktadır. Girişi ve çıktıyı yeniden yönlendiren bir Windows uygulaması oluşturmak için, bkz. Windows SDK [yeniden yönlendirilen giriş ve çıkışlarla bir alt Işlem oluşturma](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) .
 
-**_wpopen** , **_popen**; öğesinin geniş karakterli bir sürümüdür. **_wpopen** için *yol* bağımsız değişkeni geniş karakterli bir dizedir. **_wpopen** ve **_popen** aynı şekilde davranır.
+**_wpopen** , **_popen**geniş karakterli bir sürümüdür; _wpopen *yol* bağımsız değişkeni , geniş karakterli bir dizedir. **_wpopen** ve **_popen** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -141,7 +151,7 @@ int main( void )
 
    while(fgets(psBuffer, 128, pPipe))
    {
-      printf(psBuffer);
+      puts(psBuffer);
    }
 
    /* Close pipe and print return value of pPipe. */
@@ -156,9 +166,7 @@ int main( void )
 }
 ```
 
-### <a name="sample-output"></a>Örnek Çıktı
-
-Bu çıktı, geçerli dizinde. c dosya adı uzantısına sahip yalnızca bir dosya olduğunu varsayar.
+Bu çıktı, geçerli dizinde `.c` dosya adı uzantısına sahip yalnızca bir dosya olduğunu varsayar.
 
 ```Output
 Volume in drive C is CDRIVE
@@ -175,6 +183,6 @@ Process returned 0
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pclose](pclose.md)<br/>
-[_pipe](pipe.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)\
+[_pclose](pclose.md)\
+[_pipe](pipe.md)
