@@ -1,5 +1,5 @@
 ---
-title: değişmez değer (C++/CLI ve C++/CX)
+title: değişmez değerC++(/CLI C++ve/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,28 +8,28 @@ f1_keywords:
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-ms.openlocfilehash: c0de82d0d1d102f02ea79a4245f2e393439f2e0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d567f8270dcb8965ed2f882c9a0c005f295fc619
+ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254489"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912833"
 ---
-# <a name="literal-ccli-and-ccx"></a>değişmez değer (C++/CLI ve C++/CX)
+# <a name="literal-ccli-and-ccx"></a>değişmez değerC++(/CLI C++ve/CX)
 
-Bir değişken (veri üyesi) olarak işaretlenmiş **değişmez değer** içinde bir **/CLR** derleme yerel denk olan bir **statik const** değişkeni.
+**/Clr** derlemesinde **sabit değer** olarak işaretlenen bir değişken (veri üyesi), **statik bir const** değişkeninin yerel eşdeğeridir.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için tüm çalışma zamanları için uygulanan bir açıklama yoktur.)
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için yalnızca Windows Çalışma Zamanı uygulanan bir açıklama yoktur.)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -39,19 +39,19 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir veri üyesi olarak işaretlenmiş **değişmez değer** bildirildiğinde başlatılmalıdır ve değeri bir sabit integral, enum veya dize türü olmalıdır. Statik const veri üye türü başlatma ifadesinin türünden dönüştürme, bir kullanıcı tanımlı dönüştürme gerektirmemelidir.
+**Değişmez** değer olarak işaretlenen bir veri üyesi, bildirildiği zaman başlatılmalıdır ve değerin sabit bir integral, sabit listesi veya dize türü olması gerekir. Başlatma ifadesinin türünden statik const veri üyesinin türüne dönüştürme, Kullanıcı tanımlı bir dönüştürme gerektirmemelidir.
 
-Bellek yok, çalışma zamanında sabit değerli alan için ayrılır; Derleyici, değeri yalnızca meta sınıf ekler.
+Çalışma zamanında sabit değer alanı için bellek ayrılmamış; Derleyici, değerini yalnızca sınıfının meta verilerine ekler.
 
-Bir değişken olarak işaretlenmiş **statik const** diğer derleyicileri için meta verilerinde kullanılamaz.
+**Statik const** olarak işaretlenmiş bir değişken, diğer derleyicilere meta verilerde kullanılamaz.
 
-Daha fazla bilgi için [statik](../cpp/storage-classes-cpp.md) ve [const](../cpp/const-cpp.md).
+Daha fazla bilgi için bkz. [static](../cpp/storage-classes-cpp.md) ve [const](../cpp/const-cpp.md).
 
-**değişmez değer** bağlama duyarlı bir anahtar sözcüktür. Bkz: [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.
+**değişmez değer** , bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md) .
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, gösterir bir **değişmez değer** değişkeni gelir **statik**.
+Bu örnek, **sabit** bir değişkenin **statik**olduğunu gösterir.
 
 ```cpp
 // mcppv2_literal.cpp
@@ -67,7 +67,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, değişmez değer meta verilerinde etkisini gösterir:
+Aşağıdaki örnek meta verilerde sabit değerin etkisini gösterir:
 
 ```cpp
 // mcppv2_literal2.cpp
@@ -78,7 +78,7 @@ public ref struct A {
 };
 ```
 
-Fark için meta verilerindeki `sc` ve `lit`: `modopt` yönergesi uygulanan `sc`, yani yoksayılan diğer derleyiciler tarafından.
+`sc` ve `lit`meta verilerindeki farka dikkat edin: `modopt` yönergesi `sc`uygulanır, yani diğer derleyiciler tarafından yoksayılabilir.
 
 ```
 .field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x0000000A)
@@ -90,9 +90,9 @@ Fark için meta verilerindeki `sc` ve `lit`: `modopt` yönergesi uygulanan `sc`,
 
 ## <a name="example"></a>Örnek
 
-C# dilinde yazılmış aşağıdaki örnek, önceki örnekte oluşturulan meta veri başvuruları ve etkisini gösterir **değişmez değer** ve **statik const** değişkenleri:
+İçinde C#yazılan aşağıdaki örnek, önceki örnekte oluşturulan meta verilere başvurur ve **değişmez değer** ve **statik const** değişkenlerinin etkisini gösterir:
 
-```cs
+```csharp
 // mcppv2_literal3.cs
 // compile with: /reference:mcppv2_literal2.dll
 // A C# program

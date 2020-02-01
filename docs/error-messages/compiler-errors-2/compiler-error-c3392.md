@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3392
+title: Derleyici hatası C3392
 ms.date: 11/04/2016
 f1_keywords:
 - C3392
 helpviewer_keywords:
 - C3392
 ms.assetid: e4757596-e2aa-4314-b01e-5c4bfd2110e9
-ms.openlocfilehash: 72bdef1b3344b3d69ba0d014f92a85e9381de4b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4109a59f093740c9e0865cef6a31f3b09127c747
+ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62243030"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912815"
 ---
-# <a name="compiler-error-c3392"></a>Derleyici Hatası C3392
+# <a name="compiler-error-c3392"></a>Derleyici hatası C3392
 
-'type_arg': 'generic_type' genel ' param' genel parametresi için geçersiz tür bağımsız değişkeni, genel bir parametresiz oluşturucusu olmalıdır
+' type_arg ': genel ' generic_type ' öğesinin ' param ' genel parametresi için geçersiz tür bağımsız değişkeni, genel parametresiz bir oluşturucuya sahip olmalıdır
 
-Genel tür yanlış örneği. Tür tanımını denetleyin. Daha fazla bilgi için [genel türler](../../extensions/generics-cpp-component-extensions.md).
+Genel bir tür yanlış bir şekilde başlatıldı. Tür tanımını denetleyin. Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C# kullanan C + genel türleri yazılırken desteklenmeyen bazı kısıtlamalar içeren bir genel tür içeren bir bileşen oluşturmak için +/ CLI. Daha fazla bilgi için [tür parametrelerindeki kısıtlamalar](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
+Aşağıdaki örnek, C# C++/Clia genel türler yazarken desteklenmeyen belirli kısıtlamalara sahip genel bir tür içeren bir bileşen oluşturmak için kullanır. Daha fazla bilgi için bkz. [tür parametrelerindeki kısıtlamalar](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
 
-```cs
+```csharp
 // C3392.cs
 // Compile by using: csc /target:library C3392.cs
 // a C# program
@@ -33,7 +33,7 @@ where V : struct
 where N : new() {}
 ```
 
-Aşağıdaki örnek, C3392.dll bileşen kullanılabilir duruma geldiğinde C3392 oluşturur.
+C3392. dll bileşeni kullanılabilir olduğunda, aşağıdaki örnek C3392 oluşturur.
 
 ```cpp
 // C3392_b.cpp

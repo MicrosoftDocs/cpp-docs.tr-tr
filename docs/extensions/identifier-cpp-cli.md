@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - __identifier keyword [C++]
 ms.assetid: 348428af-afa7-4ff3-b571-acf874301cf2
-ms.openlocfilehash: 80aade53bf1d1c9aa30c4b8c8fe59c2247fe3cfb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 395f1443f4eef16d9eea44c23a6e3288daf03d14
+ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254559"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912836"
 ---
-# <a name="identifier-ccli"></a>__tanımlayıcı (C++/CLI)
+# <a name="__identifier-ccli"></a>__tanımlayıcı (C++/CLI)
 
-Tanımlayıcı olarak C++ anahtar sözcükleri kullanımını etkinleştirir.
+C++ Anahtar sözcüklerin tanımlayıcı olarak kullanılmasına izin vermez.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
@@ -29,7 +29,7 @@ __identifier(C++_keyword)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım **__tanımlayıcı** anahtar sözcüğü olmayan anahtar sözcükler tanımlayıcılar için izin verilen ancak stil sağlasa da kesinlikle önerilmez.
+Anahtar sözcük olmayan tanımlayıcılara izin verilen **__identifier** anahtar sözcüğünün kullanımı, ancak stil açısından kesinlikle önerilmez.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -41,9 +41,9 @@ Derleyici seçeneği: `/ZW`
 
 **Örnek**
 
-Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. İçinde C++kullanan /CLI programı **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standardıdır C++ anahtar sözcüğü.
+Aşağıdaki örnekte, **şablon** adlı bir sınıf içinde C# oluşturulur ve DLL olarak dağıtılır. **Şablon** sınıfını C++kullanan/CLI programında, **__identifier** anahtar sözcüğü, **şablonun** standart C++ bir anahtar sözcük olduğunu bir şekilde gizleme.
 
-```cs
+```csharp
 // identifier_template.cs
 // compile with: /target:library
 public class template {
@@ -65,7 +65,7 @@ int main() {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**__Tanımlayıcı** anahtar sözcüğü ile geçerli `/clr` derleyici seçeneği.
+**__İdentifier** anahtar sözcüğü `/clr` derleyici seçeneği ile geçerlidir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -73,9 +73,9 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. İçinde C++kullanan /CLI programı **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standardıdır C++ anahtar sözcüğü.
+Aşağıdaki örnekte, **şablon** adlı bir sınıf içinde C# oluşturulur ve DLL olarak dağıtılır. **Şablon** sınıfını C++kullanan/CLI programında, **__identifier** anahtar sözcüğü, **şablonun** standart C++ bir anahtar sözcük olduğunu bir şekilde gizleme.
 
-```cs
+```csharp
 // identifier_template.cs
 // compile with: /target:library
 public class template {

@@ -5,26 +5,26 @@ ms.topic: reference
 helpviewer_keywords:
 - generics [C++], consuming from .NET languages
 ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
-ms.openlocfilehash: 116d12b301af2769c4d4571a07ce604f18f67152
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4307213341ff7c20be273e52aa4d44dee926e84
+ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345954"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912798"
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)
 
-Genel türler bir .NET (veya UWP) dilde yazılmış diğer dillerde kullanılabilir. Şablonları, derlenmiş derlemede genel hala genel kalır. Bu nedenle, bir genel tür farklı bir derleme ve hatta genel tür içinde tanımlanan derleme farklı bir dilde örneği.
+Bir .NET (veya UWP) dilinde yazılan genel türler, diğer dillerde kullanılabilir. Şablonların aksine, derlenmiş bir derlemede genel hala genel kalır. Bu nedenle, bir diğeri genel türü farklı bir derlemede, hatta genel türün tanımlandığı derlemeden farklı bir dilde örnekleyebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, C# ' de tanımlanan genel bir sınıf göstermektedir.
+Bu örnek, içinde C#tanımlı bir genel sınıf gösterir.
 
 ### <a name="code"></a>Kod
 
-```cs
+```csharp
 // consuming_generics_from_other_NET_languages.cs
 // compile with: /target:library
 // a C# program
@@ -84,7 +84,7 @@ public class CircularList<ItemType> {
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, C# dilinde yazılan derleme tüketir.
+Bu örnek, içinde C#yazılan derlemeyi kullanır.
 
 ### <a name="code"></a>Kod
 

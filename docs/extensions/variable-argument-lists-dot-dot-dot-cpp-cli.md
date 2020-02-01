@@ -6,21 +6,21 @@ helpviewer_keywords:
 - variable argument lists
 - parameter arrays
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
-ms.openlocfilehash: ec1e2cefa33bc9d749d0f05e170c2f2db9b25f02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4db75653251a558d6f43f5be63098fbb26e1e6ff
+ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264851"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912847"
 ---
 # <a name="variable-argument-lists--ccli"></a>Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)
 
-Bu örnek nasıl kullanılacağını göstermektedir `...` sözdiziminde C++/CLI değişken sayıda bağımsız değişkenlere sahip işlevler uygulamak için.
+Bu örnek, değişken sayıda bağımsız değişken içeren işlevleri uygulamak için C++/clı içinde `...` sözdizimini nasıl kullanabileceğinizi gösterir.
 
 > [!NOTE]
-> Bu konu ilgili C++/CLI. Kullanma hakkında bilgi için `...` ISO Standard C++ içinde bkz [üç nokta ve Variadic şablonları](../cpp/ellipses-and-variadic-templates.md) ve üç nokta ve varsayılan bağımsız değişkenler [sonek ifadeleri](../cpp/postfix-expressions.md).
+> Bu konu,/Cliile C++ilgilidir. ISO standardında C++`...` kullanma hakkında daha fazla bilgi için, bkz. [üç nokta ve değişen bağımsız şablonlar](../cpp/ellipses-and-variadic-templates.md) ve üç nokta ve [sonek ifadelerinde](../cpp/postfix-expressions.md)varsayılan bağımsız değişkenler.
 
-Kullanan bir parametre `...` parametre listesindeki son parametre olmalıdır.
+`...` kullanan parametre, parametre listesindeki son parametre olmalıdır.
 
 ## <a name="example"></a>Örnek
 
@@ -51,7 +51,7 @@ int main() {
 
 ## <a name="code-example"></a>Kod Örneği
 
-Aşağıdaki örnek, C# ' den, değişken sayıda bağımsız değişken alan bir Visual C++ işlevinin nasıl çağrıldığını gösterir.
+Aşağıdaki örnek, değişken sayıda bağımsız değişken alan C# bir görsel C++ işlevden nasıl çağrılacağını gösterir.
 
 ```cpp
 // mcppv2_paramarray2.cpp
@@ -64,11 +64,11 @@ public:
 };
 ```
 
-İşlev `f` işlevmiş gibi bir değişken sayıda bağımsız değişken alan bir işlev C# veya Visual Basic gibi çağrılabilir.
+İşlev `f`, örneğin, değişken sayıda C# bağımsız değişken alan bir işlev gibi, veya Visual Basic çağrılabilir.
 
-C#, geçirilen bir bağımsız değişken bir `ParamArray` parametre bağımsız değişkenin değişken numarası tarafından çağrılabilir. Aşağıdaki kod örneği C# ' dir.
+' C#De, bir `ParamArray` parametresine geçirilen bir bağımsız değişken, değişken sayıda bağımsız değişken tarafından çağrılabilir. Aşağıdaki kod örneği içinde C#bulunur.
 
-```cs
+```csharp
 // mcppv2_paramarray3.cs
 // compile with: /r:mcppv2_paramarray2.dll
 // a C# program
@@ -83,7 +83,7 @@ public class X {
 }
 ```
 
-Bir çağrı `f` Visual c++'ta başlatılan diziyi veya değişken uzunluklu diziyi geçirebilir.
+Visual C++ 'teki `f` çağrısı, başlatılmış bir diziyi veya değişken uzunluklu bir diziyi geçirebilir.
 
 ```cpp
 // mcpp_paramarray4.cpp
