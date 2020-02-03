@@ -1,21 +1,22 @@
 ---
 title: dynamic_cast İşleci
-ms.date: 11/19/2018
+description: C++ Dil dynamic_cast işlecine genel bakış.
+ms.date: 02/03/2020
 f1_keywords:
 - dynamic_cast_cpp
 helpviewer_keywords:
 - dynamic_cast keyword [C++]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
-ms.openlocfilehash: 3b359885eb72f9272fb1efe14afe9a6cbe6ddb30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0073aaa886bba33a0ec6c07fb89d6eee032765c8
+ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399059"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76972228"
 ---
-# <a name="dynamiccast-operator"></a>dynamic_cast İşleci
+# <a name="dynamic_cast-operator"></a>dynamic_cast İşleci
 
-İşlenen dönüştürür `expression` türünde bir nesne için `type-id`.
+İşleneni `expression` `type-id`türündeki bir nesneye dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,17 +26,17 @@ dynamic_cast < type-id > ( expression )
 
 ## <a name="remarks"></a>Açıklamalar
 
-`type-id` Bir işaretçi veya önceden tanımlanmış sınıf türüne yapılan başvuru ya da "işaretçisi void" olmalıdır. Türünü `expression` bir işaretçi olmalıdır `type-id` bir işaretçi ya da bir l-değeri ise `type-id` bir başvurudur.
+`type-id`, bir işaretçi veya önceden tanımlanmış bir sınıf türüne veya "void işaretçisine" bir başvuru olmalıdır. `expression` türü, `type-id` bir işaretçisiyse veya `type-id` bir başvuru ise bir l değeri olduğunda bir işaretçi olmalıdır.
 
-Bkz: [static_cast](../cpp/static-cast-operator.md) ve statik ve dinamik atama dönüştürmelerinin arasındaki her kullanmak, uygun olduğunda fark açıklaması için.
+Statik ve dinamik atama dönüştürmeleri arasındaki farkın bir açıklaması için ve her birini kullanmak için uygun olduğunda bkz. [static_cast](../cpp/static-cast-operator.md) .
 
-Davranış iki önemli değişiklikler vardır **dynamic_cast** yönetilen kodda:
+Yönetilen koddaki **dynamic_cast** davranışında iki Son değişiklik vardır:
 
-- **dynamic_cast** paketlenmiş bir sabit listesinin temel alınan türü bir işaretçi döndüren işaretçiyi dönüştürülmüş yerine 0 zamanında başarısız olur.
+- paketlenmiş bir numaralandırma için temeldeki türdeki bir işaretçiye **dynamic_cast** , dönüştürülmüş işaretçi yerine 0 döndüren çalışma zamanında başarısız olur.
 
-- **dynamic_cast** artık bir özel durum oluşturur, `type-id` çalışma zamanında başarısız atama ile bir değer türü iç işaretçidir.  Cast artık atma yerine 0 İşaretçi değeri döndürür.
+- **dynamic_cast** , bir değer türüne yönelik iç işaretçisiyse çalışma zamanında başarısız olacak şekilde `type-id` bir özel durum oluşturmaz.  Cast şimdi, oluşturmak yerine 0 işaretçi değerini döndürür.
 
-Varsa `type-id` bir benzersiz erişilebilir doğrudan veya dolaylı taban sınıfının işaretçisidir `expression`, benzersiz bir alt nesne türünün işaretçisi `type-id` sonucudur. Örneğin:
+`type-id`, belirsiz şekilde erişilebilen doğrudan veya dolaylı temel sınıf `expression`işaretçisiyse, `type-id` türünde benzersiz alt nesnenin bir işaretçisi oluşur. Örneğin:
 
 ```cpp
 // dynamic_cast_1.cpp
@@ -52,9 +53,9 @@ void f(D* pd) {
 }
 ```
 
-Öğesinden türetilen bir sınıf için türetilmiş bir sınıftan bir işaretçiyi bir sınıf hiyerarşisi yukarı taşır çünkü bu tür bir dönüştürme "yukarı"çevrim çağrılır. Yukarı çevrim örtük bir dönüştürmedir.
+Bir işaretçiyi türetilmiş bir sınıftan türetilmiş bir sınıfa bir sınıf hiyerarşisi yukarı taşıdığından, bu tür dönüştürme "upcast" olarak adlandırılır. Bir upcast örtük bir dönüştürmedir.
 
-Varsa `type-id` olan void * gerçek türünü belirlemek için bir çalışma zamanı denetimi yapılmaz `expression`. İşaret ettiği tam nesne işaretçisi sonucudur `expression`. Örneğin:
+`type-id` void ise, `expression`gerçek türünü belirlemekte bir çalışma zamanı denetimi yapılır. Sonuç, `expression`tarafından işaret edilen tüm nesne işaretçisidir. Örneğin:
 
 ```cpp
 // dynamic_cast_2.cpp
@@ -73,9 +74,9 @@ void f() {
 }
 ```
 
-Varsa `type-id` void * değil nesneyi işaret ettiği olmadığını görmek için bir çalışma zamanı denetimi yapılmaz `expression` işaret ettiği türüne dönüştürülebilir `type-id`.
+`type-id` void * değilse, `expression` tarafından işaret edilen nesnenin `type-id`tarafından işaret edilen türe dönüştürülebileceğini görmek için bir çalışma zamanı denetimi yapılır.
 
-Varsa türünü `expression` bir temel sınıf türünün `type-id`, olmadığını görmek için bir çalışma zamanı denetimi yapılmaz `expression` aslında, türünün tam bir nesneyi işaret `type-id`. True ise, tam bir nesne türünün işaretçisi sonucudur `type-id`. Örneğin:
+`expression` türü `type-id`türünün temel sınıfını ise, `expression` gerçekten `type-id`türünün tam bir nesnesine işaret ettiğini görmek için bir çalışma zamanı denetimi yapılır. Bu true ise sonuç, `type-id`türünün bir bütün nesnesinin bir işaretçisidir. Örneğin:
 
 ```cpp
 // dynamic_cast_3.cpp
@@ -92,13 +93,13 @@ void f() {
 }
 ```
 
-Bu tür bir dönüştürme adlı bir "alt türe çevirme" bir işaretçiyi bir sınıf için belirli bir sınıftaki bir sınıf hiyerarşisi aşağı taşır çünkü bu türden türetilmiş.
+Bu tür dönüştürmeye "alta dönüştürme" denir çünkü bir işaretçiyi bir sınıf hiyerarşisine, belirli bir sınıftan türetilmiş bir sınıfa ait bir sınıfa kaydırır.
 
-Birden çok devralma durumlarda belirsizlik olasılıklarını kullanıma sunulmuştur. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini inceleyin.
+Birden çok devralma durumunda belirsizlik için olanaklar ortaya çıkartılır. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini göz önünde bulundurun.
 
-CLR türleri için **dynamic_cast** sonuçları bir dönüştürme örtük olarak gerçekleştirilemiyorsa İşlemsiz bir MSIL şirket içinde veya `isinst` dinamik bir denetimi gerçekleştirir ve döndürür, yönerge **nullptr** varsa dönüştürme başarısız olur.
+CLR türleri için, dönüştürme örtük olarak gerçekleştirilebileceği veya bir MSIL `isinst` yönergesinin, dinamik bir denetim gerçekleştiren ve dönüştürme başarısız olursa **nullptr** döndüren **dynamic_cast** bir işlem olmadan sonuçlanır.
 
-Aşağıdaki örnek kullanımları **dynamic_cast** bir sınıfın belirli bir türün bir örneğini olup olmadığını belirlemek için:
+Aşağıdaki örnek, bir sınıfın belirli türde bir örnek olup olmadığını anlamak için **dynamic_cast** kullanır:
 
 ```cpp
 // dynamic_cast_clr.cpp
@@ -121,38 +122,40 @@ int main() {
 }
 ```
 
-![Sınıf gösteren birden çok devralma hiyerarşisi](../cpp/media/vc39011.gif "sınıfı gösteren birden çok devralma hiyerarşisi") <br/>
-Birden çok devralma gösteren sınıf hiyerarşisi
+![Birden çok devralmayı gösteren sınıf hiyerarşisi](../cpp/media/vc39011.gif "Birden çok devralmayı gösteren sınıf hiyerarşisi") <br/>
+Birden çok devralmayı gösteren sınıf hiyerarşisi
 
-Türü bir nesneye bir işaretçi `D` için güvenli bir şekilde dönüştürülebilen `B` veya `C`. Ancak, varsa `D` işaret edecek şekilde cast bir `A` nesnesi, hangi örneğinin `A` neden olur? Bu, bir belirsiz atama hataya neden olur. Bu sorunla karşılaşmamak için iki anlaşılır yayınları gerçekleştirebilirsiniz. Örneğin:
+`D` türünde bir nesne işaretçisi, `B` veya `C`güvenli bir şekilde dönüşebilir. Ancak `D`, bir `A` nesnesine işaret etmek için ayarlanırsa, bu `A` örneği neden olur? Bu, belirsiz bir atama hatasına neden olur. Bu sorunu çözmek için iki benzersiz yayını gerçekleştirebilirsiniz. Örneğin:
 
 ```cpp
 // dynamic_cast_4.cpp
 // compile with: /c /GR
 class A {virtual void f();};
-class B {virtual void f();};
-class D : public B {virtual void f();};
+class B : public A {virtual void f();};
+class C : public A {virtual void f();};
+class D : public B, public C {virtual void f();};
 
 void f() {
    D* pd = new D;
+   A* pa = dynamic_cast<A*>(pd);   // C4540, ambiguous cast fails at runtime
    B* pb = dynamic_cast<B*>(pd);   // first cast to B
    A* pa2 = dynamic_cast<A*>(pb);   // ok: unambiguous
 }
 ```
 
-Sanal temel sınıflar kullandığınızda, daha fazla belirsizlikleri tanıtılabilir. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini inceleyin.
+Sanal temel sınıflar kullandığınızda daha fazla belirsizlikleri eklenebilir. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini göz önünde bulundurun.
 
-![Sınıf sanal temel sınıflar gösteren hiyerarşi](../cpp/media/vc39012.gif "sınıf sanal temel sınıflar gösteren hiyerarşisi") <br/>
-Sanal temel sınıflar gösteren sınıf hiyerarşisi
+![Sanal temel sınıfları gösteren sınıf hiyerarşisi](../cpp/media/vc39012.gif "Sanal temel sınıfları gösteren sınıf hiyerarşisi") <br/>
+Sanal temel sınıfları gösteren sınıf hiyerarşisi
 
-Bu hiyerarşide `A` sanal bir temel sınıf. Sınıfının bir örneğini belirtilen `E` ve işaretçi `A` alt nesneye, bir **dynamic_cast** işaretçisi `B` belirsizlik nedeniyle başarısız olur. İlk olarak geri tam dönüştürmelisiniz `E` nesnesi ve ardından doğru ulaşmak için anlaşılır biçimde, hiyerarşi yedeklemek istediğiniz şekilde iş `B` nesne.
+Bu hiyerarşide, `A` bir sanal taban sınıftır. Sınıf `E` örneği ve `A` alt nesnesi işaretçisi verildiğinde, belirsizlik nedeniyle `B` işaretçisine bir **dynamic_cast** başarısız olur. Önce tüm `E` nesnesine dönüştürmeniz gerekir, sonra doğru `B` nesnesine ulaşmak için, hiyerarşiyi tamamen bir şekilde yedeklemeniz gerekir.
 
-Aşağıdaki şekilde gösterilen sınıf hiyerarşisini inceleyin.
+Aşağıdaki şekilde gösterilen sınıf hiyerarşisini göz önünde bulundurun.
 
-![Yinelenen temel sınıflar gösteren hiyerarşi sınıfı](../cpp/media/vc39013.gif "sınıfı gösteren yinelenen temel sınıf hiyerarşisi") <br/>
-Yinelenen temel sınıflar gösteren sınıf hiyerarşisi
+![Yinelenen temel sınıfları gösteren sınıf hiyerarşisi](../cpp/media/vc39013.gif "Yinelenen temel sınıfları gösteren sınıf hiyerarşisi") <br/>
+Yinelenen temel sınıfları gösteren sınıf hiyerarşisi
 
-Belirtilen türde bir nesne `E` ve işaretçi `D` gitmek alt nesneye `D` en soldaki alt nesneye `A` alt nesneye, üç dönüştürme yapılabilir. Gerçekleştirebileceğiniz bir **dynamic_cast** dönüştürme `D` işaretçi bir `E` işaretçi ve dönüştürme (ya da **dynamic_cast** ya da örtük bir dönüştürme) gelen`E`için `B`ve son olarak örtük bir dönüştürme `B` için `A`. Örneğin:
+`E` türünde bir nesne ve `D` alt nesnesine bir işaretçi verildiğinde, `D` alt nesnesinden en sol `A` alt nesne arasında gezinmek için üç dönüştürme yapılabilir. `D` işaretçisinden bir `E` işaretçisine **dynamic_cast** dönüştürmeyi, `E` 'den `B`'ye dönüştürme ( **dynamic_cast** veya örtük dönüştürme) ve son olarak `B` 'den `A`'e örtük bir dönüştürme yapabilirsiniz. Örneğin:
 
 ```cpp
 // dynamic_cast_5.cpp
@@ -170,9 +173,9 @@ void f(D* pd) {
 }
 ```
 
-**Dynamic_cast** işleci ayrıca bir "çapraz yayın" gerçekleştirmek için kullanılabilir Aynı sınıf hiyerarşisi kullanarak gelen örnek için bir işaretçi dönüştürme yapmak mümkündür `B` için alt nesneye `D` tam nesne türü olduğu sürece, alt nesneye `E`.
+**Dynamic_cast** işleci, "çapraz dönüştürme" işlemi gerçekleştirmek için de kullanılabilir. Aynı sınıf hiyerarşisini kullanarak, örneğin, tam nesne `E`türünde olduğu sürece, örneğin, `B` alt nesnesinden `D` alt nesnesine bir işaretçi dönüştürmek mümkündür.
 
-Platformlar arası yayınları göz önüne alındığında, bir işaretçiye dönüştürme yapmak gerçekten mümkündür `D` en soldaki işaretçisi `A` yalnızca iki adımda alt nesne. Öğesinden dönüştürme çapraz gerçekleştirebileceğiniz `D` için `B`, ardından örtük bir dönüştürme `B` için `A`. Örneğin:
+Çapraz yayınları göz önünde bulundurarak, yalnızca iki adımda, en çok `A` alt nesnesine bir işaretçiye `D` işaretçiden dönüştürme yapmak gerçekten mümkündür. `D` bir çapraz dönüştürme işlemini `B`, sonra da `B` 'den `A`'e örtülü bir dönüştürme yapabilirsiniz. Örneğin:
 
 ```cpp
 // dynamic_cast_6.cpp
@@ -189,9 +192,9 @@ void f(D* pd) {
 }
 ```
 
-Bir null işaretçi değeri tarafından hedef türünün boş işaretçi değerini dönüştürülür **dynamic_cast**.
+Null işaretçi değeri, **dynamic_cast**tarafından hedef türün null işaretçi değerine dönüştürülür.
 
-Kullanırken `dynamic_cast < type-id > ( expression )`, `expression` güvenli bir şekilde türüne dönüştürülemez `type-id`, çalışma zamanı denetimi dönüştürme başarısız olmasına neden olur. Örneğin:
+`dynamic_cast < type-id > ( expression )`kullandığınızda, `expression` güvenli bir şekilde `type-id`türüne dönüştürülemiyorsa, çalışma zamanı denetimi dönüştürmenin başarısız olmasına neden olur. Örneğin:
 
 ```cpp
 // dynamic_cast_7.cpp
@@ -206,15 +209,15 @@ void f() {
 }
 ```
 
-İşaretçi türüne yapılan başarısız atamanın null işaretçi değeridir. Türü atar başvurmak için başarısız atamanın bir [bad_cast özel durumu](../cpp/bad-cast-exception.md).   Varsa `expression` etmez üzerine gelin veya geçerli bir nesne başvurusu bir `__non_rtti_object` özel durumu oluşturulur.
+Başarısız bir işaretçi türüne dönüştürme değeri null işaretçisidir. Başvuru türüne yapılan başarısız atama [bad_cast bir özel durum](../cpp/bad-cast-exception.md)oluşturur.   `expression` geçerli bir nesneye işaret veya başvuru yapmaz, bir `__non_rtti_object` özel durumu oluşturulur.
 
-Bkz: [TypeID](../cpp/typeid-operator.md) açıklaması için `__non_rtti_object` özel durum.
+`__non_rtti_object` özel durumunun açıklaması için bkz. [TypeId](../cpp/typeid-operator.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, temel sınıf (yapı A), bir nesneye yönelik işaretçi (struct C) oluşturur.  Bu ayrıca olgu var. sanal işlevler, çalışma zamanı çok biçimlilik sağlar.
+Aşağıdaki örnek, temel sınıf (struct A) işaretçisini bir nesnesine (struct C) oluşturur.  Bunun yanı sıra sanal işlevlerin olması, çalışma zamanının çok biçimlilik kullanmasına izin verebilir.
 
-Örnek, sanal olmayan bir işlev hiyerarşide de çağırır.
+Örnek ayrıca hiyerarşide sanal olmayan bir işlev çağırır.
 
 ```cpp
 // dynamic_cast_8.cpp

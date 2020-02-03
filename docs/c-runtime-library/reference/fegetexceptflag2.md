@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-ms.openlocfilehash: 3d3bf59b28a464dc163dc027b867e890c3c8797b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b840408ce704ad5519fbf233de41c8d5422006ad
+ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941225"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76972184"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
@@ -59,7 +59,7 @@ Başarılı olduğunda 0 döndürür. Aksi takdirde, sıfır olmayan bir değer 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fegetexceptflag** işlevi, *pStatus*tarafından işaret edilen **fexcept_t** nesnesindeki *exceptler* tarafından belirtilen kayan nokta özel durum bayraklarının geçerli durumunu depolar.  *pStatus* geçerli bir **fexcept_t** nesnesine işaret etmelidir, ya da sonraki davranış tanımsızdır. **Fegetexceptflag** işlevi, \<fenv. h > tanımlı bu özel durum makrolarını destekler:
+**Fegetexceptflag** işlevi, *pStatus*tarafından işaret edilen **fexcept_t** nesnesindeki *exceptler* tarafından belirtilen kayan nokta özel durum bayraklarının geçerli durumunu depolar.  *pStatus* geçerli bir **fexcept_t** nesnesine işaret etmelidir ya da sonraki davranış tanımsızdır. **Fegetexceptflag** işlevi, \<fenv. h > içinde tanımlanan bu özel durum makrolarını destekler:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
@@ -68,7 +68,7 @@ Başarılı olduğunda 0 döndürür. Aksi takdirde, sıfır olmayan bir değer 
 |FE_INVALID|Önceki kayan nokta işleminde bir etki alanı hatası oluştu.|
 |FE_OVERFLOW|Bir Aralık hatası oluştu; daha önceki bir kayan nokta işlem sonucu gösterilemeyecek kadar büyüktü.|
 |FE_UNDERFLOW|Daha önceki bir kayan nokta işlem sonucu tam duyarlıkta gösterilemeyecek kadar küçük; bir denormal değeri oluşturuldu.|
-|FE_ALLEXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
+|FE_ALL_EXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
 
 *Hariç tutulan* bağımsız değişken sıfır, desteklenen kayan nokta özel durumu makrolarından biri veya iki ya da daha fazla makronun BIT düzeyinde ya da daha fazlası olabilir. Diğer bağımsız değişken değerinin etkisi tanımsızdır.
 

@@ -1,13 +1,14 @@
 ---
 title: Olaylar (C++/CX)
-ms.date: 07/15/2019
+description: Windows Çalışma Zamanı için/CX C++kullanarak olay işleyicileri oluşturma ve kullanma.
+ms.date: 02/03/2020
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: aab37353b1ea8d9f81a8e9a9ae489a4dd3542cc0
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 45f9a7bc17d9a695613ce551dae796b2cd2e0e6f
+ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740521"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76972194"
 ---
 # <a name="events-ccx"></a>Olaylar (C++/CX)
 
@@ -21,7 +22,7 @@ Windows Çalışma Zamanı birçok bileşeni olayları kullanıma sunar. Örneğ
 
 ### <a name="declaration"></a>Bildirim
 
-Bir başvuru sınıfında veya arabirimde bir olay bildirebilirsiniz ve ortak, iç (ortak/özel), genel korumalı, korunan, özel korumalı veya özel erişilebilirlik olabilir. Bir olayı bildirdiğinizde, derleyici dahili olarak iki erişimci yöntemi sunan bir nesne oluşturur: Ekle ve Kaldır. Abone nesneleri olay işleyicilerini kaydederken, olay nesnesi bunları bir koleksiyonda depolar. Bir olay harekete geçirildiğinde, olay nesnesi kendi listesindeki tüm işleyicileri sırayla çağırır. Aşağıdaki örnekte olduğu gibi önemsiz bir olay da örtük bir yedekleme deposuna ve örtük `add` ve `remove` erişimci yöntemlerine sahiptir. Ayrıca, bir özellik üzerinde özel `get` ve `set` erişimciler belirtebileceğiniz şekilde kendi erişimcinizi de belirtebilirsiniz.  Uygulama sınıfı, önemsiz bir olayda olay abone listesinde el ile geçiş yapılamaz.
+Bir başvuru sınıfında veya arabirimde bir olay bildirebilirsiniz ve ortak, iç (ortak/özel), genel korumalı, korunan, özel korumalı veya özel erişilebilirlik olabilir. Bir olayı bildirdiğinizde, derleyici dahili olarak iki erişimci yöntemi sunan bir nesne oluşturur: Ekle ve Kaldır. Abone nesneleri olay işleyicilerini kaydederken, olay nesnesi bunları bir koleksiyonda depolar. Bir olay harekete geçirildiğinde, olay nesnesi kendi listesindeki tüm işleyicileri sırayla çağırır. Aşağıdaki örnekte olduğu gibi önemsiz bir olay da örtük bir yedekleme deposuna ve örtük `add` ve `remove` erişimci yöntemlerine sahiptir. Ayrıca, bir özellik üzerinde özel `get` ve `set` erişimcileri belirtebileceğiniz şekilde kendi erişimclerinizi de belirtebilirsiniz.  Uygulama sınıfı, önemsiz bir olayda olay abone listesinde el ile geçiş yapılamaz.
 
 Aşağıdaki örnek, bir olayın nasıl bildirilemeyeceğini ve tetikleneceği gösterilmektedir. Olayın bir temsilci türü olduğuna ve "^" simgesi kullanılarak bildirildiğine dikkat edin.
 
@@ -29,7 +30,7 @@ Aşağıdaki örnek, bir olayın nasıl bildirilemeyeceğini ve tetikleneceği g
 
 ### <a name="usage"></a>Kullanım
 
-Aşağıdaki örnek, bir abone sınıfının olaya abone olmak için `+=` işlecini nasıl kullandığını gösterir ve olay tetiklendiğinde çağrılacak olay işleyicisini sağlar. Belirtilen işlevin, `EventTest` ad alanındaki Yayımcı tarafında tanımlanan temsilcinin imzasıyla eşleştiğinden emin olun.
+Aşağıdaki örnek, abone olan bir sınıfın olaya abone olmak için `+=` işlecini nasıl kullandığını gösterir ve olay tetiklendiğinde çağrılacak olay işleyicisini sağlar. Belirtilen işlevin, `EventTest` ad alanındaki Yayımcı tarafında tanımlanan temsilcinin imzasıyla eşleştiğinden emin olun.
 
 [!code-cpp[cx_events#02](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#02)]
 
@@ -48,7 +49,7 @@ Sonraki örnek, bir olaya özel ekleme, kaldırma ve oluşturma yöntemlerinin n
 
 ## <a name="removing-an-event-handler-from-the-subscriber-side"></a>Abone tarafında bir olay işleyicisini kaldırma
 
-Nadir durumlarda, daha önce abone olduğunuz bir olay için bir olay işleyicisini kaldırmak isteyebilirsiniz. Örneğin, başka bir olay işleyicisiyle değiştirmek isteyebilirsiniz veya onu tarafından tutulan bazı kaynakları silmek isteyebilirsiniz. Bir işleyiciyi kaldırmak için, `+=` işlemden döndürülen EventRegistrationToken 'ı depolamanız gerekir. Daha sonra bir olay işleyicisini `-=` kaldırmak için belirteçte işlecini kullanabilirsiniz.  Ancak, özgün işleyici kaldırıldıktan sonra bile hala çağrılabilir. Bu nedenle, bir olay işleyicisini kaldırmak istiyorsanız, bir üye bayrağı oluşturun ve olay kaldırılırsa onu ayarlayın ve ardından olay işleyicisinde bayrağı denetleyin ve ayarlandıysa hemen geri döndürün. Sonraki örnekte temel desenler gösterilmektedir.
+Nadir durumlarda, daha önce abone olduğunuz bir olay için bir olay işleyicisini kaldırmak isteyebilirsiniz. Örneğin, başka bir olay işleyicisiyle değiştirmek isteyebilirsiniz veya onu tarafından tutulan bazı kaynakları silmek isteyebilirsiniz. Bir işleyiciyi kaldırmak için `+=` işlemden döndürülen EventRegistrationToken 'ı depolamanız gerekir. Daha sonra bir olay işleyicisini kaldırmak için belirteçteki `-=` işlecini kullanabilirsiniz.  Ancak, özgün işleyici kaldırıldıktan sonra bile hala çağrılabilir. Örneğin, olay kaynağı işleyicilerin listesini aldığında ve bunları çağırmaya başladığında bir yarış durumu oluşabilir. Bu durumda bir olay işleyicisi kaldırılırsa, listenin tarihi eski olur. Bu nedenle, bir olay işleyicisini kaldırmak istiyorsanız üye bayrağı oluşturun. Olay kaldırılırsa bu ayarı ayarlayın ve ardından olay işleyicisinde bayrağı işaretleyin ve ayarlandıysa hemen geri dönün. Sonraki örnekte temel desenler gösterilmektedir.
 
 [!code-cpp[cx_events#04](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#04)]
 

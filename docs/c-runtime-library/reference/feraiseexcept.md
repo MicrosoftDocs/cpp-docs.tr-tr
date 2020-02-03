@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-ms.openlocfilehash: 07c8a79e0a9569db80607e1ec1e16cd4b502783c
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: e98c402169ed0f35ab1bdf0b8221a2248f252f21
+ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857833"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76972204"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -61,7 +61,7 @@ Belirtilen tüm özel durumlar başarıyla harekete geçirilir, 0 döndürür.
 |FE_INVALID|Önceki kayan nokta işleminde bir etki alanı hatası oluştu.|
 |FE_OVERFLOW|Bir Aralık hatası oluştu; daha önceki bir kayan nokta işlem sonucu gösterilemeyecek kadar büyüktü.|
 |FE_UNDERFLOW|Daha önceki bir kayan nokta işlem sonucu tam duyarlıkta gösterilemeyecek kadar küçük; bir denormal değeri oluşturuldu.|
-|FE_ALLEXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
+|FE_ALL_EXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
 
 *Hariç tutulan* bağımsız değişken sıfır, özel durum makrosu değerlerinden biri ya da desteklenen özel durum makrolarının BIT seviyesinde veya iki ya da daha fazlası olabilir. Belirtilen özel durum makrolarından biri FE_OVERFLOW veya FE_UNDERFLOW, FE_INEXACT özel durumu bir yan etkisi olarak ortaya çıkabilir.
 
