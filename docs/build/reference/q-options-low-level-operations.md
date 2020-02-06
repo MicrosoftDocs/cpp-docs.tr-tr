@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Q compiler option [C++]
 - -Q compiler option [C++]
 - /Q compiler option [C++]
-ms.openlocfilehash: 9dd3675f200be4f0ec66620bcf3cf05706991b66
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 722a63a43e5e08fe80b26f908c7ae92df2fdb29c
+ms.sourcegitcommit: 0f4ee9056d65043fa5a715f0ad1031c0ed30e2b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518185"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034525"
 ---
 # <a name="q-options-low-level-operations"></a>/Q Seçenekler (Düşük Düzey İşlemler)
 
@@ -33,6 +33,10 @@ Aşağıdaki alt düzey derleyici işlemlerini gerçekleştirmek için **/q** de
 - [/Qsafe_fp_loads](qsafe-fp-loads.md): kayan nokta kayıt yükleri ve bellek ile MMX kayıtları arasında taşınan iyileştirmeleri gizler.
 
 - [/Qspectre](qspectre.md): belirli Spectre güvenlik açıklarını azaltmak için yönergeler oluşturur.
+
+- [/Qspectre-Load](qspectre-load.md): yüklere göre Spectre güvenlik açıklarını azaltmak için yönergeler oluşturur.
+
+- [/Qspectre-Load-CF](qspectre-load-cf.md): Spectre güvenlik açıklarını, yükü olan denetim akışı yönergelerine göre azaltmak için yönergeler oluşturur.
 
 - [/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)](qvec-report-auto-vectorizer-reporting-level.md): otomatik vektörleştirme için raporlama düzeylerine izin vermez.
 

@@ -3,12 +3,12 @@ title: Alfabetik Listelenmiş Derleyici Seçenekleri
 ms.date: 01/08/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 72441692869dbed806474a7054fedff53b923d42
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: d64a41802c18627cf8e07f0d83b53fa5a4555f5b
+ms.sourcegitcommit: 0f4ee9056d65043fa5a715f0ad1031c0ed30e2b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518380"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034603"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
 
@@ -62,13 +62,13 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/GH](gh-enable-pexit-hook-function.md)|Kanca işlevi `_pexit`çağırır.|
 |[/Gh](gh-enable-penter-hook-function.md)|Kanca işlevi `_penter`çağırır.|
 |[/GL](gl-whole-program-optimization.md)|Tüm program iyileştirmesini mümkün hale getirme.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Kullanım dışı. En az yeniden derlemeyi mümkün.|
+|[/GM](gm-enable-minimal-rebuild.md)|Kullanım dışı. En az yeniden derlemeyi mümkün.|
 |[/GR](gr-enable-run-time-type-information.md)|Çalışma zamanı tür bilgilerini (RTTı) etkinleştir.|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` çağırma kuralını kullanır (yalnızca x86).|
 |[/GS](gs-buffer-security-check.md)|Güvenlik denetimini arabelleğe alır.|
 |[/GS](gs-control-stack-checking-calls.md)|Yığın araştırmalarını denetler.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|Statik iş parçacığı yerel depolama kullanılarak ayrılan veri için fiber güvenliğini destekler.|
-|[/guard:cf](guard-enable-control-flow-guard.md)|Denetim akışı koruyucusu güvenlik denetimleri ekler.|
+|[/Guard: CF](guard-enable-control-flow-guard.md)|Denetim akışı koruyucusu güvenlik denetimleri ekler.|
 |[/GV](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` çağırma kuralını kullanır. (yalnızca x86 ve x64)|
 |[/GW](gw-optimize-global-data.md)|Tam program genel veri iyileştirmesini mümkün hale getirme.|
 |[/GX](gx-enable-exception-handling.md)|Kullanım dışı. Zaman uyumlu özel durum işlemeyi mümkün. Bunun yerine [/Eh](eh-exception-handling-model.md) kullanın.|
@@ -113,6 +113,8 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/Qpar (Otomatik Paralel Hale Getirici)](qpar-auto-parallelizer.md)|[#Pragma loop ()](../../preprocessor/loop.md) yönergesiyle işaretlenen döngülerin otomatik paralelleştirilmesini mümkün hale getirme.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Kayan nokta değerleri için tamsayı taşıma yönergelerini kullanır ve belirli kayan nokta yükleme iyileştirmelerini devre dışı bırakır.|
 |[/Qspectre](qspectre.md)|Belirli Spectre varyant 1 güvenlik açıklarına karşı hafifletmek için derleyici oluşturma yönergelerinin belirtir.|
+|[/Qspectre-Load](qspectre-load.md)|Yük yönergelerine göre Spectre güvenlik açıklarını hafifletmek için, serileştirme yönergelerinin derleme üretilmesini belirtir.|
+|[/Qspectre-Load-CF](qspectre-load-cf.md)|Belleği yükleyen denetim akışı yönergelerine göre Spectre güvenlik açıklarını azaltmak için derleyici oluşturma talimatlarını belirtir.|
 |[/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](qvec-report-auto-vectorizer-reporting-level.md)|Otomatik vektörleştirme için raporlama düzeylerine izin vermez.|
 |[/RTC](rtc-run-time-error-checks.md)|Çalışma zamanı hata denetimini etkinleştirilir.|
 |[/SDL](sdl-enable-additional-security-checks.md)|Ek güvenlik özellikleri ve uyarılar sunar.|
@@ -124,16 +126,16 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/TP](tc-tp-tc-tp-specify-source-file-type.md)|Bir C++ kaynak dosyasını belirtir.|
 |[/TP](tc-tp-tc-tp-specify-source-file-type.md)|Tüm kaynak dosyaları belirtir C++.|
 |[P](u-u-undefine-symbols.md)|Önceden tanımlanmış bir makroyu kaldırır.|
-|[/u](u-u-undefine-symbols.md)|Önceden tanımlanmış tüm makroları kaldırır.|
+|[p](u-u-undefine-symbols.md)|Önceden tanımlanmış tüm makroları kaldırır.|
 |[/UTF-8 belirtildiğinde](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|Kaynak ve yürütme karakter kümelerini UTF-8 olarak ayarlayın.|
 |[Çıktıda](v-version-number.md)|Kullanım dışı. . Obj dosya sürümü dizesini ayarlar.|
 |[/Validate-charset](validate-charset-validate-for-compatible-characters.md)|UTF-8 dosyalarını yalnızca uyumlu karakterler için doğrulayın.|
 |[/vd](vd-disable-construction-displacements.md)|Gizli vtordisp sınıf üyelerini bastırır veya etkinleştirirler.|
-|[/vmb](vmb-vmg-representation-method.md)|Üye işaretçileri için en iyi temeli kullanır.|
-|[/vmg](vmb-vmg-representation-method.md)|Üye işaretçileri için tam olarak kullanım sağlar.|
-|[/vmm](vmm-vms-vmv-general-purpose-representation.md)|Birden çok devralma bildirir.|
+|[/VMB](vmb-vmg-representation-method.md)|Üye işaretçileri için en iyi temeli kullanır.|
+|[/VMG](vmb-vmg-representation-method.md)|Üye işaretçileri için tam olarak kullanım sağlar.|
+|[/VMM](vmm-vms-vmv-general-purpose-representation.md)|Birden çok devralma bildirir.|
 |[/VMs](vmm-vms-vmv-general-purpose-representation.md)|Tek devralma bildirir.|
-|[/vmv](vmm-vms-vmv-general-purpose-representation.md)|Sanal devralmayı bildirir.|
+|[/VMV](vmm-vms-vmv-general-purpose-representation.md)|Sanal devralmayı bildirir.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Volatile anahtar sözcüğünün nasıl yorumlandığını seçer.|
 |[aralıkları](compiler-option-warning-level.md)|Tüm uyarıları devre dışı bırakır.|
 |[/W0,/W1,/W2,/W3,/W4](compiler-option-warning-level.md)|Hangi uyarı düzeyini çıkış için ayarlar.|
@@ -143,12 +145,12 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/we](compiler-option-warning-level.md)|Belirtilen uyarıyı hata olarak değerlendirir.|
 |[/WL](wl-enable-one-line-diagnostics.md)|Komut satırından kaynak kodu derlenirken C++ hata ve uyarı iletileri için tek satırlık tanılamayı mümkün bir şekilde sunar.|
 |[/Wo](compiler-option-warning-level.md)|Belirtilen uyarıyı yalnızca bir kez görüntüler.|
-|[/Wp64](wp64-detect-64-bit-portability-issues.md)|{1&gt;Artık kullanılmıyor.&lt;1} 64-bit taşınabilirlik sorunlarını algılar.|
+|[/Wp64](wp64-detect-64-bit-portability-issues.md)|Kullanımdan kalktı. 64-bit taşınabilirlik sorunlarını algılar.|
 |[/WV](compiler-option-warning-level.md)|Derleyicinin belirtilen sürümünden sonra gelen uyarıları görüntüler.|
 |[/WX](compiler-option-warning-level.md)|Tüm uyarıları hata olarak değerlendirir.|
 |[/X](x-ignore-standard-include-paths.md)|Standart içerme dizinini yoksayar.|
-|[/Y-](y-ignore-precompiled-header-options.md)|Geçerli derlemede tüm önceden derlenmiş üst bilgi derleyici seçeneklerini yoksayar.|
-|[/Yc](yc-create-precompiled-header-file.md)|Önceden derlenmiş bir üstbilgi dosyası oluşturur.|
+|[/Y](y-ignore-precompiled-header-options.md)|Geçerli derlemede tüm önceden derlenmiş üst bilgi derleyici seçeneklerini yoksayar.|
+|[/YC](yc-create-precompiled-header-file.md)|Önceden derlenmiş bir üstbilgi dosyası oluşturur.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Tüm nesne dosyalarındaki hata ayıklama bilgilerini tamamlar. Bunun yerine [/Zi](z7-zi-zi-debug-information-format.md) kullanın.|
 |[/Yl](yl-inject-pch-reference-for-debug-library.md)|Hata ayıklama kitaplığı oluştururken bir PCH başvurusunu çıkartır|
 |[/Yu](yu-use-precompiled-header-file.md)|Derleme sırasında önceden derlenmiş bir üstbilgi dosyası kullanır.|
@@ -162,7 +164,7 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/ZI](z7-zi-zi-debug-information-format.md)|Düzenle ve devam et ile uyumlu bir program veritabanındaki hata ayıklama bilgilerini içerir.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Tüm hata ayıklama bilgileri üretir.|
 |[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını. obj dosyasından kaldırır (yalnızca x86).|
-|[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|Önceden derlenmiş üst bilgi bellek ayırma sınırını belirtir.|
+|[/ZM](zm-specify-precompiled-header-memory-allocation-limit.md)|Önceden derlenmiş üst bilgi bellek ayırma sınırını belirtir.|
 |[/Zo](zo-enhance-optimized-debugging.md)|İyileştirilmiş kod için gelişmiş hata ayıklama bilgileri oluşturur.|
 |[/ZP](zp-struct-member-alignment.md)|Paketler yapısı üyeleri.|
 |[/ZS](zs-syntax-check-only.md)|Yalnızca söz dizimini denetler.|
