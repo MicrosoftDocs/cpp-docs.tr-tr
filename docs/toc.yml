@@ -702,6 +702,10 @@
                           href: build/reference/qsafe-fp-loads.md
                         - name: /Qspectre
                           href: build/reference/qspectre.md
+                        - name: /Qspectre-load
+                          href: build/reference/qspectre-load.md
+                        - name: /Qspectre-load-cf
+                          href: build/reference/qspectre-load-cf.md
                         - name: /Qvec-report (Otomatik vektör hale getirici raporlama düzeyi)
                           href: build/reference/qvec-report-auto-vectorizer-reporting-level.md
                     - name: /RTC (Çalışma zamanı hata denetimleri)
@@ -5891,7 +5895,7 @@
               href: extensions/delegate-cpp-component-extensions.md
             - name: sabit listesi sınıfı
               href: extensions/enum-class-cpp-component-extensions.md
-            - name: olay
+            - name: event
               href: extensions/event-cpp-component-extensions.md
             - name: Özel durum işleme
               href: extensions/exception-handling-cpp-component-extensions.md
@@ -5944,7 +5948,7 @@
               href: extensions/safe-cast-cpp-component-extensions.md
             - name: Dize
               href: extensions/string-cpp-component-extensions.md
-            - name: korumalı
+            - name: sealed
               href: extensions/sealed-cpp-component-extensions.md
             - name: typeid
               href: extensions/typeid-cpp-component-extensions.md
@@ -6140,7 +6144,7 @@
                   href: windows/attributes/importidl.md
                 - name: importlib
                   href: windows/attributes/importlib.md
-                - name: içinde
+                - name: in
                   href: windows/attributes/in-cpp.md
                 - name: include
                   href: windows/attributes/include-cpp.md
