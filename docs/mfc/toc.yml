@@ -428,17 +428,8 @@
               href: data-objects-and-data-sources-creation-and-destruction.md
             - name: 'Veri nesneleri ve veri kaynakları: Düzenleme'
               href: data-objects-and-data-sources-manipulation.md
-        - name: Sürükleme ve bırakma (OLE)
-          expanded: false
-          items:
-            - name: Sürükleme ve bırakma (OLE)
-              href: drag-and-drop-ole.md
-            - name: 'Sürükleme ve Bırakma: Bırakma kaynağı uygulama'
-              href: drag-and-drop-implementing-a-drop-source.md
-            - name: 'Sürükleme ve Bırakma: Bırakma hedefi uygulama'
-              href: drag-and-drop-implementing-a-drop-target.md
-            - name: 'Sürükleme ve Bırakma: Özelleştirme'
-              href: drag-and-drop-customizing.md
+        - name: OLE sürükle ve bırak
+          href: drag-and-drop-ole.md
         - name: Menüler ve kaynaklar (OLE)
           expanded: false
           items:
