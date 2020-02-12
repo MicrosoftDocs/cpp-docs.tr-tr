@@ -1,34 +1,34 @@
 ---
-title: 'Nasıl yapılır: Belirli Zamanlayıcı ilkeleri belirtme'
+title: 'Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-ms.openlocfilehash: 3c03ef6661ebefe0bfe9fab62938ce9987a4bca1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd5edfbdf6b0fda9c7e327dab9538bbf6b5e4b12
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410038"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142444"
 ---
-# <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı ilkeleri belirtme
+# <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme
 
-Zamanlayıcı ilkeleri görevleri yönettiğinde, Zamanlayıcı kullanan stratejisi denetlemenize olanak tanır. Bu konuda, bir zamanlayıcı İlkesi bir İlerleme göstergesi konsola yazdırır. bir görevin iş parçacığı öncelik sırasını artırmak için nasıl kullanılacağını gösterir.
+Zamanlayıcı ilkeleri, Scheduler 'ın görevleri yönetirken kullandığı stratejiyi denetlemenize olanak tanır. Bu konuda, bir Zamanlayıcı ilkesinin, konsola ilerleme göstergesini yazdıran bir görevin iş parçacığı önceliğini artırmak için nasıl kullanılacağı gösterilmektedir.
 
-Zaman uyumsuz aracılar ile birlikte özel Zamanlayıcı ilkelerini kullanan bir örnek için bkz: [nasıl yapılır: Belirli Zamanlayıcı ilkelerini kullanan aracılar oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).
+Özel Zamanlayıcı ilkelerini zaman uyumsuz aracılarla birlikte kullanan bir örnek için bkz. [nasıl yapılır: belirli Zamanlayıcı Ilkelerini kullanan aracılar oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iki görevi paralel olarak gerçekleştirir. İlk görev n hesaplar<sup>th</sup> Fibonacci sayı. İkinci görev bir İlerleme göstergesi konsola yazdırır.
+Aşağıdaki örnek paralel olarak iki görevi gerçekleştirir. İlk<sup>görev n.</sup> fibonaccı numarasını hesaplar. İkinci görev konsola bir ilerleme göstergesi yazdırır.
 
-İlk görev özyinelemeli ayrıştırma Fibonacci sayısını hesaplamak için kullanır. Diğer bir deyişle, her görev yinelemeli olarak alt görevlerin işlem genel sonuç oluşturur. Özyinelemeli ayrıştırma kullanan bir görev tüm kullanılabilir kaynakları kullanabilir ve böylece diğer görevleri yeterli kaynak kalmamasına neden. Bu örnekte, bilgi işlem kaynakları zamanında erişimi İlerleme göstergesi yazdırır görev almayabilir.
+İlk görev, Fibonaccı numarasını hesaplamak için özyinelemeli ayrıştırma kullanır. Diğer bir deyişle, her bir görev, genel sonucu hesaplamak için yinelemeli olarak alt görevler oluşturur. Özyinelemeli ayrıştırma kullanan bir görev, kullanılabilir tüm kaynakları kullanabilir ve bu nedenle diğer görevleri de daha sonra harekete çıkabilir. Bu örnekte, ilerleme göstergesini yazdıran görev, bilgi işlem kaynaklarına zamanında erişim alamayabilir.
 
-Bilgi işlem kaynakları için bir ilerleme iletisi adil erişim yazdırır görev sağlamak için bu örnekte açıklanan adımları kullanır [nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md) özel bir ilke bir zamanlayıcı örneği oluşturulamadı. Özel ilke, iş parçacığı önceliği en yüksek öncelikli sınıf olduğunu belirtir.
+İşlem kaynaklarına yönelik bir ilerleme durumu iletisi erişimi yazdıran görevi sağlamak için bu örnek, özel ilkeye sahip bir zamanlayıcı örneği oluşturmak için [bir zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md) bölümünde açıklanan adımları kullanır. Özel ilke, en yüksek öncelik sınıfı olacak iş parçacığı önceliğini belirtir.
 
-Bu örnekte [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::timer](../../parallel/concrt/reference/timer-class.md) İlerleme göstergesi yazdırmak için sınıflar. Bu sınıfların oluşturucuları bir başvuru alan bir sürümü bir [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) bunları zamanlar nesne. Örnek Fibonacci sayısı ve İlerleme göstergesi yazdırır görevi zamanlamak için Zamanlayıcı örneğini hesaplar görevi zamanlamak için varsayılan Zamanlayıcı kullanır.
+Bu örnek, ilerleme göstergesini yazdırmak için [concurrency:: Call](../../parallel/concrt/reference/call-class.md) ve [concurrency:: Timer](../../parallel/concrt/reference/timer-class.md) sınıflarını kullanır. Bu sınıfların, kendilerini zamanlayan [eşzamanlılık:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesnesine başvuru alan oluşturucularının sürümleri vardır. Örnek, ilerleme göstergesini yazdıran görevi zamanlamak için Fibonaccı numarasını ve zamanlayıcı örneğini hesaplayan görevi zamanlamak için varsayılan zamanlayıcıyı kullanır.
 
-Bu örnek özel bir ilke bir Zamanlayıcı kullanmanın avantajları göstermek için iki kez genel görev gerçekleştirir. Örnek, ilk iki görevleri zamanlamak için varsayılan Zamanlayıcı kullanır. Örnek daha sonra ilk görevi zamanlamak için varsayılan Zamanlayıcı ve ikinci görevi zamanlamak için özel bir ilke bir zamanlayıcı kullanır.
+Özel ilkeye sahip bir Scheduler kullanmanın avantajlarını göstermek için bu örnek genel görevi iki kez gerçekleştirir. Örnek öncelikle her iki görevi zamanlamak için varsayılan zamanlayıcıyı kullanır. Örnek daha sonra ilk görevi zamanlamak için varsayılan zamanlayıcıyı ve ikinci görevi zamanlamak için özel bir ilkeye sahip bir zamanlayıcıyı kullanır.
 
 [!code-cpp[concrt-scheduler-policy#1](../../parallel/concrt/codesnippet/cpp/how-to-specify-specific-scheduler-policies_1.cpp)]
 
@@ -41,13 +41,13 @@ Scheduler that has a custom policy:
 ...........................................................................done
 ```
 
-İki görev aynı sonucu üretir, özel bir ilke kullanan bir sürümü daha duyarlı bir şekilde davranması yükseltilmiş bir öncelikli olarak çalıştırmak için İlerleme göstergesi yazdırır görev etkinleştirir.
+Her iki görev kümesi de aynı sonucu oluşturuyor olsa da, özel bir ilke kullanan sürüm, ilerleme göstergesini yazdıran görevin, daha fazla boyutlandırılabilir davranması için yükseltilmiş bir önceliğe göre çalıştırılmasını sağlar.
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `scheduler-policy.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `scheduler-policy.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc Zamanlayıcı-policy.cpp**
+> **CL. exe/EHsc Scheduler-Policy. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

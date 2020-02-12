@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
-ms.openlocfilehash: 8b971a12ff83753546cfea7b90288d1bc43400c0
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e17d530569d16ba0084a58bf0be00d4a8423b7f6
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341033"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140875"
 ---
-# <a name="invalidoperation-class"></a>invalid_operation Sınıfı
+# <a name="invalid_operation-class"></a>invalid_operation Sınıfı
 
-Bu sınıf, daha doğru bir şekilde eşzamanlılık çalışma zamanı tarafından oluşturulan başka bir özel durum türü tarafından açıklanmayan geçersiz bir işlem gerçekleştirildiğinde verilen bir özel durumu anlatmaktadır.
+Bu sınıf, Eşzamanlılık Çalışma Zamanı tarafından oluşturulan başka bir özel durum türü tarafından daha doğru bir şekilde açıklanmayan geçersiz bir işlem gerçekleştirildiğinde oluşturulan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class invalid_operation : public std::exception;
 ```
 
@@ -31,11 +31,11 @@ class invalid_operation : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_operation](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_operation` nesne.|
+|[invalid_operation](#ctor)|Fazla Yüklendi. `invalid_operation` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu özel durumun oluşturulacağı çeşitli yöntemler genellikle hangi durumlarda bunlar, altında oluşturulacağını belgeler.
+Bu özel durumu oluşturan çeşitli yöntemler genellikle hangi koşullarda oluşturdukları konusunda belge oluşturur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,15 +45,15 @@ Bu özel durumun oluşturulacağı çeşitli yöntemler genellikle hangi durumla
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> invalid_operation
+## <a name="ctor"></a>invalid_operation
 
-Oluşturur bir `invalid_operation` nesne.
+`invalid_operation` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP invalid_operation(_In_z_ const char* _Message) throw();
 
 invalid_operation() throw();
@@ -61,7 +61,7 @@ invalid_operation() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

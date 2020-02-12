@@ -12,20 +12,20 @@ f1_keywords:
 helpviewer_keywords:
 - ITopologyNode structure
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
-ms.openlocfilehash: 867e0543d1b9f2810a3fe761f038947c4d88da4d
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 1b4cb6a856d6da7b8eee7f9cba1ad51e375c024d
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346217"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140054"
 ---
 # <a name="itopologynode-structure"></a>ITopologyNode Yapısı
 
-Kaynak Yöneticisi tarafından tanımlandığı gibi bir topoloji düğüm için bir arabirim. Bir düğüm, bir veya daha fazla yürütme kaynakları içerir.
+Kaynak Yöneticisi tarafından tanımlanan bir topoloji düğümüne yönelik arabirim. Bir düğüm bir veya daha fazla yürütme kaynağı içeriyor.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 struct ITopologyNode;
 ```
 
@@ -35,15 +35,15 @@ struct ITopologyNode;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Itopologynode::getexecutionresourcecount](#getexecutionresourcecount)|Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.|
-|[Itopologynode::getfirstexecutionresource](#getfirstexecutionresource)|Numaralandırma sırasında bu düğüm altında gruplandırılmış ilk yürütme kaynak döndürür.|
-|[Itopologynode::GetID](#getid)|Resource Manager'ın bu düğüm için benzersiz tanımlayıcı döndürür.|
-|[Itopologynode::GetNext](#getnext)|Numaralandırma sırasında sonraki topolojisi düğümü için bir arabirim döndürür.|
-|[Itopologynode::getnumanode](#getnumanode)|Windows döndürür, bu kaynak yöneticisi düğümünün ait olduğu NUMA düğüm numarasını atadı.|
+|[ITopologyNode:: GetExecutionResourceCount](#getexecutionresourcecount)|Bu düğüm altında birlikte gruplanmış yürütme kaynakları sayısını döndürür.|
+|[ITopologyNode:: GetFirstExecutionResource](#getfirstexecutionresource)|Numaralandırma düzeninde bu düğüm altında gruplandırılan ilk yürütme kaynağını döndürür.|
+|[ITopologyNode:: GetId](#getid)|Bu düğüm için Kaynak Yöneticisi benzersiz tanımlayıcısını döndürür.|
+|[ITopologyNode:: GetNext](#getnext)|Numaralandırma düzeninde bir sonraki topoloji düğümüne bir arabirim döndürür.|
+|[ITopologyNode:: GetNumaNode](#getnumanode)|Bu kaynak maanger düğümünün ait olduğu Windows atanan NUMA düğüm numarasını döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin topolojisi yürütmek için kullanılır.
+Bu arabirim genellikle sistemin topolojisini Kaynak Yöneticisi gözlemlediği şekilde rehberlik etmek için kullanılır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -51,79 +51,79 @@ Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin top
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="getexecutionresourcecount"></a>  Itopologynode::getexecutionresourcecount metodu
+## <a name="getexecutionresourcecount"></a>ITopologyNode:: GetExecutionResourceCount yöntemi
 
-Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.
+Bu düğüm altında birlikte gruplanmış yürütme kaynakları sayısını döndürür.
 
-```
+```cpp
 virtual unsigned int GetExecutionResourceCount() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yürütme kaynak sayısı, bu düğüm altında gruplanmış.
+Bu düğüm altında birlikte gruplanmış yürütme kaynakları sayısı.
 
-##  <a name="getfirstexecutionresource"></a>  Itopologynode::getfirstexecutionresource metodu
+## <a name="getfirstexecutionresource"></a>ITopologyNode:: GetFirstExecutionResource yöntemi
 
-Numaralandırma sırasında bu düğüm altında gruplandırılmış ilk yürütme kaynak döndürür.
+Numaralandırma düzeninde bu düğüm altında gruplandırılan ilk yürütme kaynağını döndürür.
 
-```
+```cpp
 virtual ITopologyExecutionResource *GetFirstExecutionResource() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Numaralandırma sırasında bu düğüm altında ilk yürütme kaynak gruplandırılır.
+Bu düğüm altında numaralandırma düzeninde gruplandırılan ilk yürütme kaynağı.
 
-##  <a name="getid"></a>  Itopologynode::GetID metodu
+## <a name="getid"></a>ITopologyNode:: GetID Yöntemi
 
-Resource Manager'ın bu düğüm için benzersiz tanımlayıcı döndürür.
+Bu düğüm için Kaynak Yöneticisi benzersiz tanımlayıcısını döndürür.
 
-```
+```cpp
 virtual unsigned int GetId() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Resource Manager'ın bu düğüm için benzersiz tanımlayıcı.
+Kaynak Yöneticisi bu düğüm için benzersiz tanımlayıcısıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşzamanlılık Çalışma zamanı işlemci düğümleri gruplar halinde sistemdeki donanım iş parçacıklarının temsil eder. Düğümleri genellikle sistem donanım topolojisinden türetilir. Örneğin, belirli bir yuva veya belirli bir NUMA düğümünde tüm işlemcilerin aynı işlemci düğüme ait olabilir. Resource Manager sürümünden itibaren bu düğümler benzersiz tanımlayıcı atar `0` dahil `nodeCount - 1`burada `nodeCount` işlemci düğüm sistemdeki toplam sayısını temsil eder.
+Eşzamanlılık Çalışma Zamanı, işlemci düğümleri gruplarındaki sistemdeki donanım iş parçacıklarını temsil eder. Düğümler genellikle sistemin donanım topolojisinden türetilir. Örneğin, belirli bir yuvada veya belirli bir NUMA düğümündeki tüm işlemciler aynı işlemci düğümüne ait olabilir. Kaynak Yöneticisi, bu düğümlere `0` başlayarak `nodeCount - 1`dahil olmak üzere benzersiz tanımlayıcılar atar; burada `nodeCount`, sistemdeki toplam işlemci düğümü sayısını temsil eder.
 
-Düğüm sayısı işlevden elde edilebilir [GetProcessorNodeCount](concurrency-namespace-functions.md).
+Düğüm sayısı [GetProcessorNodeCount](concurrency-namespace-functions.md)işlevinden elde edilebilir.
 
-##  <a name="getnext"></a>  Itopologynode::GetNext metodu
+## <a name="getnext"></a>ITopologyNode:: GetNext Yöntemi
 
-Numaralandırma sırasında sonraki topolojisi düğümü için bir arabirim döndürür.
+Numaralandırma düzeninde bir sonraki topoloji düğümüne bir arabirim döndürür.
 
-```
+```cpp
 virtual ITopologyNode *GetNext() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Numaralandırma sırasında sonraki düğümü bir arabirim. Sistemin topolojisi sabit listesi sırasına göre daha fazla düğüm varsa, bu yöntem değeri döndüreceği `NULL`.
+Numaralandırma düzeninde bir sonraki düğüme yönelik arabirim. Sistem topolojisinin numaralandırma düzeninde daha fazla düğüm yoksa, bu yöntem `NULL`değer döndürür.
 
-##  <a name="getnumanode"></a>  Itopologynode::getnumanode metodu
+## <a name="getnumanode"></a>ITopologyNode:: GetNumaNode Yöntemi
 
-Windows döndürür, bu kaynak yöneticisi düğümünün ait olduğu NUMA düğüm numarasını atadı.
+Bu kaynak maanger düğümünün ait olduğu Windows atanan NUMA düğüm numarasını döndürür.
 
-```
+```cpp
 virtual unsigned long GetNumaNode() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Windows, bu kaynak yöneticisi düğümünün ait olduğu NUMA düğüm numarasını atadı.
+Bu Kaynak Yöneticisi düğümünün ait olduğu Windows atanan NUMA düğüm numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu düğüme ait bir sanal işlemci kökünde çalışan iş parçacığı proxy en az benzeşimi olacaktır NUMA nodu düzeyinde bu yöntem tarafından döndürülen NUMA düğümü için.
+Bu düğüme ait sanal bir işlemci kökünde çalışan bir iş parçacığı proxy 'si, bu yöntemin döndürdüğü NUMA düğümü için en az NUMA düğüm düzeyiyle benzeşimine sahip olacaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

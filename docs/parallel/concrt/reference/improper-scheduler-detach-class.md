@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - improper_scheduler_detach class
 ms.assetid: 30132102-c900-4951-a470-b63b4e3aa2d2
-ms.openlocfilehash: 7e85ff8ea7ffb817c141094649cd39b8becccf53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f5ad16893a898d4258762b25fea3d557607a3f8
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262352"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141149"
 ---
-# <a name="improperschedulerdetach-class"></a>improper_scheduler_detach Sınıfı
+# <a name="improper_scheduler_detach-class"></a>improper_scheduler_detach Sınıfı
 
-Bu sınıf oluşan bir özel durumu anlatmaktadır `CurrentScheduler::Detach` yöntemi kullanarak herhangi bir zamanlayıcı için bağlı olmayan bir bağlamı çağrıldığında `Attach` yöntemi bir `Scheduler` nesne.
+Bu sınıf, bir `Scheduler` nesnesinin `Attach` yöntemi kullanılarak herhangi bir Scheduler 'a eklenmemiş bir bağlamda `CurrentScheduler::Detach` yöntemi çağrıldığında oluşturulan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class improper_scheduler_detach : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class improper_scheduler_detach : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[improper_scheduler_detach](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_scheduler_detach` nesne.|
+|[improper_scheduler_detach](#ctor)|Fazla Yüklendi. `improper_scheduler_detach` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class improper_scheduler_detach : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> improper_scheduler_detach
+## <a name="ctor"></a>improper_scheduler_detach
 
-Oluşturur bir `improper_scheduler_detach` nesne.
+`improper_scheduler_detach` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP improper_scheduler_detach(_In_z_ const char* _Message) throw();
 
 improper_scheduler_detach() throw();
@@ -57,7 +57,7 @@ improper_scheduler_detach() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

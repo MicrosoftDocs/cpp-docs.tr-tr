@@ -28,26 +28,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_2::operator++
 - amp_short_vectors/Concurrency::graphics::uint_2::rg
 ms.assetid: 9fcc9129-72b1-4da7-9012-4d3be15f1c52
-ms.openlocfilehash: 42c4f238e7277174a5f6b04a9e692f541b32a3e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f01e4d50dc3fab8d7cb909d1ea2f3d1801f0db0
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405540"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126216"
 ---
-# <a name="uint2-class"></a>uint_2 Sınıfı
+# <a name="uint_2-class"></a>uint_2 Sınıfı
 
-İki işaretsiz tam sayı oluşan bir kısa vektörü temsil eder.
+İki işaretsiz tamsayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class uint_2;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -57,7 +57,7 @@ class uint_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[uint_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[uint_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -67,12 +67,12 @@ class uint_2;
 |uint_2::get_xy||
 |uint_2::get_y||
 |uint_2::get_yx||
-|uint_2::ref_g_Method||
-|uint_2::ref_r_Method||
-|uint_2::ref_x_Method||
-|uint_2::ref_y_Method||
+|uint_2:: ref_g_Method||
+|uint_2:: ref_r_Method||
+|uint_2:: ref_x_Method||
+|uint_2:: ref_y_Method||
 |uint_2::set_x||
-|uint_2::set_xy||
+|uint_2:: set_xy||
 |uint_2::set_y||
 |uint_2::set_yx||
 
@@ -82,36 +82,36 @@ class uint_2;
 |----------|-----------------|
 |uint_2::operator--||
 |uint_2::operator%=||
-|uint_2::operator & =||
-|uint_2::operator * =||
-|uint_2::operator / =||
+|uint_2:: operator & =||
+|uint_2:: operator * =||
+|uint_2:: operator/=||
 |uint_2::operator^=||
-|uint_2::operator&#124;=||
-|uint_2::operator ~||
-|uint_2::operator ++||
+|uint_2:: operator&#124;=||
+|uint_2:: operator ~||
+|uint_2:: operator + +||
 |uint_2::operator+=||
-|uint_2::operator <\<=||
+|uint_2:: operator <\<=||
 |uint_2::operator=||
 |uint_2::operator-=||
-|uint_2::operator >> =||
+|uint_2:: operator > > =||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#uint_2__size)||
+|[Boyut sabiti](#uint_2__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|uint_2::g||
-|uint_2::Gr||
-|uint_2::r||
+|uint_2:: g||
+|uint_2:: gr||
+|uint_2:: r||
 |uint_2::rg||
-|uint_2::x||
-|uint_2::xy||
-|uint_2::y||
+|uint_2:: x||
+|uint_2:: XY||
+|uint_2:: y||
 |uint_2::yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -120,15 +120,15 @@ class uint_2;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> uint_2
+## <a name="ctor"></a>uint_2
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 uint_2() restrict(amp,
     cpu);
 
@@ -169,20 +169,20 @@ explicit inline uint_2(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="uint_2__size"></a> Boyutu
+## <a name="uint_2__size"></a>boyutla
 
-```
+```cpp
 static const int size = 2;
 ```
 

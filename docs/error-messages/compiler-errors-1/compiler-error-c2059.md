@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2059
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-ms.openlocfilehash: 1d51d4c7873d43a655dc11fa8e0fa297b8a69bff
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f91eb428fcb49c81187788730128545916955790
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74735950"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127666"
 ---
 # <a name="compiler-error-c2059"></a>Derleyici hatası C2059
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-ms.openlocfilehash: 451318bfbcfb9c5e002677556944e3499c0ed5fb
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 561f0a258943f6d7e1c0f1b5cae716592c931fbc
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525410"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127718"
 ---
-# <a name="unsupportedfeature-class"></a>unsupported_feature Sınıfı
+# <a name="unsupported_feature-class"></a>unsupported_feature Sınıfı
 
 Desteklenmeyen bir özellik kullanıldığında oluşturulan özel durum.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class unsupported_feature : public runtime_exception;
 ```
 
@@ -31,7 +31,7 @@ class unsupported_feature : public runtime_exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unsupported_feature Oluşturucusu](#unsupported_feature)|Yeni bir örneğini oluşturur `unsupported_feature` özel durum.|
+|[unsupported_feature Oluşturucusu](#unsupported_feature)|`unsupported_feature` özel durumunun yeni bir örneğini oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,13 +41,13 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## <a name="unsupported_feature"></a> unsupported_feature
+## <a name="unsupported_feature"></a>unsupported_feature
 
-  Yeni bir örneğini oluşturur `unsupported_feature` özel durum.
+  `unsupported_feature` özel durumunun yeni bir örneğini oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 explicit unsupported_feature(
     const char * _Message ) throw();
 
@@ -56,18 +56,18 @@ unsupported_feature() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklaması.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`unsupported_feature` Nesne.
+`unsupported_feature` nesnesi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amprt.h
+**Üstbilgi:** amprt. h
 
-**Namespace:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

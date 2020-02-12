@@ -15,20 +15,20 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_priority_queue class
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
-ms.openlocfilehash: 5804675ffdaf6de2e73327103398316566b41627
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d8651d1391ded2970a00a7429c36f341a438659
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160045"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143210"
 ---
-# <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
+# <a name="concurrent_priority_queue-class"></a>concurrent_priority_queue Sınıfı
 
-`concurrent_priority_queue` Sınıfı, birden çok iş parçacığı aynı anda anında iletme ve açılır öğelere izin veren bir kapsayıcıdır. Öğeleri, öncelik sırasına göre öncelik bir şablon bağımsız değişken olarak sağlanan bir functor tarafından belirlendiği POP.
+`concurrent_priority_queue` sınıfı, birden çok iş parçacığının aynı anda gönderim ve pop öğelerine izin veren bir kapsayıcıdır. Öğelerin, bir şablon bağımsız değişkeni olarak sağlanan bir functor tarafından belirlendiği öncelik sırasına göre belirlenir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <typename T,
     typename _Compare= std::less<T>,
     typename _Ax = std::allocator<T>
@@ -36,56 +36,56 @@ template <typename T,
     typename _Ax = std::allocator<T>> class concurrent_priority_queue;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Öncelikli kuyruk içinde depolanacak öğe veri türü.
+*Şı*<br/>
+Öncelik kuyruğunda depolanacak öğelerin veri türü.
 
-*_Karşılaştır*<br/>
-İki öğenin değerlerini öncelikli kuyruk kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi türü. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<T>` varsayılan değerdir.
+*_Compare*<br/>
+İki öğe değerini, öncelik kuyruğunda göreli sıralarını belirleyebilmek için sıralama anahtarları olarak karşılaştırabilen işlev nesnesinin türü. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<T>` varsayılan değerdir.
 
 *_Ax*<br/>
-Ayırma ve eş zamanlı öncelikli kuyruk için bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<T>`.
+Eşzamanlı öncelik kuyruğu için bellek ayırma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<T>`.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`allocator_type`|Eş zamanlı öncelikli kuyruk için ayırıcı sınıf temsil eden tür.|
-|`const_reference`|Bir eş zamanlı öncelik sırasına depolanan türünde bir öğe için bir const temsil başvuru türü.|
-|`reference`|Bir eş zamanlı öncelik sırasına depolanan türünde bir öğe için bir başvuru temsil eden tür.|
-|`size_type`|Eş zamanlı öncelikli bir kuyruk öğeleri sayar türü.|
-|`value_type`|Eş zamanlı öncelikli bir kuyruk içinde depolanan veri türünü temsil eden tür.|
+|`allocator_type`|Eşzamanlı öncelik sırasının ayırıcı sınıfını temsil eden bir tür.|
+|`const_reference`|Eşzamanlı bir öncelik kuyruğunda depolanan türdeki bir öğeye const başvurusunu temsil eden bir tür.|
+|`reference`|Eşzamanlı bir öncelik kuyruğunda depolanan türdeki bir öğeye başvuruyu temsil eden bir tür.|
+|`size_type`|Eşzamanlı bir öncelik kuyruğundaki öğelerin sayısını sayan bir tür.|
+|`value_type`|Eşzamanlı bir öncelik kuyruğunda depolanan veri türünü temsil eden bir tür.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[concurrent_priority_queue](#ctor)|Fazla Yüklendi. Eş zamanlı öncelikli bir kuyruk oluşturur.|
+|[concurrent_priority_queue](#ctor)|Fazla Yüklendi. Eşzamanlı bir öncelik kuyruğu oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Temizle](#clear)|Eş zamanlı öncelik tüm öğelerini siler. Bu yöntem eşzamanlı güvenli değil.|
-|[boş](#empty)|Eş zamanlı öncelikli kuyruk zamanında boş olup olmadığını sınar, bu yöntem çağrılır. Bu yöntem eşzamanlı güvenlidir.|
-|[get_allocator](#get_allocator)|Eş zamanlı öncelikli kuyruk oluşturmak için kullanılan ayırıcı bir kopyasını döndürür. Bu yöntem eşzamanlı güvenlidir.|
-|[push](#push)|Fazla Yüklendi. Bir öğeyi eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlı güvenlidir.|
-|[Boyutu](#size)|Eş zamanlı öncelik sırasındaki öğelerin sayısını döndürür. Bu yöntem eşzamanlı güvenlidir.|
-|[değiştirme](#swap)|İki eşzamanlı öncelikli kuyruk içeriğini değiştirir. Bu yöntem eşzamanlı güvenli değil.|
-|[try_pop](#try_pop)|Kaldırır ve sıranın boş ise sıradan en yüksek öncelikli öğeyi döndürür. Bu yöntem eşzamanlı güvenlidir.|
+|[lediğiniz](#clear)|Eş zamanlı öncelikteki tüm öğeleri siler. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[olmamalıdır](#empty)|Bu yöntemin çağrılışında eşzamanlı öncelik sırasının boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[get_allocator](#get_allocator)|Eşzamanlı öncelik sırasını oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[push](#push)|Fazla Yüklendi. Eşzamanlı öncelik kuyruğuna bir öğe ekler. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[boyutla](#size)|Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[Kur](#swap)|İki eşzamanlı öncelik kuyruğu içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[try_pop](#try_pop)|Sıra boş değilse kuyruktaki en yüksek öncelik öğesini kaldırır ve döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator=](#operator_eq)|Fazla Yüklendi. Başka bir deponun içeriğini atar `concurrent_priority_queue` buna nesne. Bu yöntem eşzamanlı güvenli değil.|
+|[işleç =](#operator_eq)|Fazla Yüklendi. Başka bir `concurrent_priority_queue` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hakkında ayrıntılı bilgi için `concurrent_priority_queue` sınıfı [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
+`concurrent_priority_queue` sınıfı hakkında ayrıntılı bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -93,27 +93,27 @@ Hakkında ayrıntılı bilgi için `concurrent_priority_queue` sınıfı [parale
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Header:** concurrent_priority_queue.h
+**Üst bilgi:** concurrent_priority_queue. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="clear"></a> Temizle
+## <a name="clear"></a>lediğiniz
 
-Eş zamanlı öncelik tüm öğelerini siler. Bu yöntem eşzamanlı güvenli değil.
+Eş zamanlı öncelikteki tüm öğeleri siler. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 void clear();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-`clear` Eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda başka bir iş parçacıklarının eş zamanlı öncelikli kuyruk yöntemleri çağırma emin olmanız gerekir. `clear` belleği boşaltmak değil.
+`clear` eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda eşzamanlı öncelik sırasında başka bir iş parçacığının metot çağırkullanılmadığından emin olmanız gerekir. `clear` belleği serbest vermez.
 
-##  <a name="ctor"></a> concurrent_priority_queue
+## <a name="ctor"></a>concurrent_priority_queue
 
-Eş zamanlı öncelikli bir kuyruk oluşturur.
+Eşzamanlı bir öncelik kuyruğu oluşturur.
 
-```
+```cpp
 explicit concurrent_priority_queue(
     const allocator_type& _Al = allocator_type());
 
@@ -150,60 +150,60 @@ Giriş yineleyicisinin türü.
 Bu nesneyle kullanılacak kaynak ayırıcı sınıfı.
 
 *_Init_capacity*<br/>
-İlk kapasitesi `concurrent_priority_queue` nesne.
+`concurrent_priority_queue` nesnesinin ilk kapasitesi.
 
 *_Begin*<br/>
 Kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*_Bitiş*<br/>
-Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+*_End*<br/>
+Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
 
 *_Src*<br/>
-Kaynak `concurrent_priority_queue` nesneyi kopyalama veya öğeleri buradan taşımak için.
+Öğeleri kopyalamak veya taşımak için kaynak `concurrent_priority_queue` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular ayırıcı nesnesini depolar `_Al` ve öncelik sırası başlatılamıyor.
+Tüm oluşturucular bir ayırıcı nesne `_Al` depolar ve öncelik sırasını başlatır.
 
-İlk Oluşturucu bir boş ilk öncelikli kuyruk ve isteğe bağlı olarak bir ayırıcı belirtir.
+İlk Oluşturucu boş bir başlangıç önceliği sırası belirtir ve isteğe bağlı olarak bir ayırıcı belirtir.
 
-İkinci Oluşturucu, öncelikli bir kuyruk bir başlangıç kapasitesi ile belirtir. `_Init_capacity` ve isteğe bağlı olarak bir ayırıcı belirtir.
+İkinci Oluşturucu, bir ilk kapasite `_Init_capacity` bir öncelik sırası belirtir ve isteğe bağlı olarak bir ayırıcı belirtir.
 
-Üçüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirler [ `_Begin`, `_End`) ve isteğe bağlı olarak bir ayırıcı belirtir.
+Üçüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirtir [`_Begin`, `_End`) ve isteğe bağlı olarak bir ayırıcı belirtir.
 
-Dördüncü ve beşinci oluşturucular bir kopyasını bir öncelik sırası belirtin `_Src`.
+Dördüncü ve beşinci oluşturucular `_Src`öncelik sırasının bir kopyasını belirtir.
 
-Altıncı ve yedinci oluşturucular bir taşıma öncelik sırası belirtin `_Src`.
+Altıncı ve yedinci oluşturucular `_Src`öncelik sırasının bir taşımasını belirtir.
 
-##  <a name="empty"></a> boş
+## <a name="empty"></a>olmamalıdır
 
-Eş zamanlı öncelikli kuyruk zamanında boş olup olmadığını sınar, bu yöntem çağrılır. Bu yöntem eşzamanlı güvenlidir.
+Bu yöntemin çağrılışında eşzamanlı öncelik sırasının boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 bool empty() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** öncelikli kuyruk boşsa, işlev çağrıldı, şu anda **false** Aksi takdirde.
+öncelik sırası işlevin çağrıldığı sırada boşsa **true** , aksi durumda **false** .
 
-##  <a name="get_allocator"></a> get_allocator
+## <a name="get_allocator"></a>get_allocator
 
-Eş zamanlı öncelikli kuyruk oluşturmak için kullanılan ayırıcı bir kopyasını döndürür. Bu yöntem eşzamanlı güvenlidir.
+Eşzamanlı öncelik sırasını oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 allocator_type get_allocator() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kopyasını oluşturmak için kullanılan ayırıcı `concurrent_priority_queue` nesne.
+`concurrent_priority_queue` nesnesini oluşturmak için kullanılan ayırıcıın bir kopyası.
 
-##  <a name="operator_eq"></a> işleç =
+## <a name="operator_eq"></a>işleç =
 
-Başka bir deponun içeriğini atar `concurrent_priority_queue` buna nesne. Bu yöntem eşzamanlı güvenli değil.
+Başka bir `concurrent_priority_queue` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 concurrent_priority_queue& operator= (const concurrent_priority_queue& _Src);
 
 concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
@@ -212,17 +212,17 @@ concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
 ### <a name="parameters"></a>Parametreler
 
 *_Src*<br/>
-Kaynak `concurrent_priority_queue` nesne.
+Kaynak `concurrent_priority_queue` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu başvuru `concurrent_priority_queue` nesne.
+Bu `concurrent_priority_queue` nesnesine bir başvuru.
 
-##  <a name="push"></a> anında iletme
+## <a name="push"></a>hareketle
 
-Bir öğeyi eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlı güvenlidir.
+Eşzamanlı öncelik kuyruğuna bir öğe ekler. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 void push(const value_type& _Elem);
 
 void push(value_type&& _Elem);
@@ -231,53 +231,53 @@ void push(value_type&& _Elem);
 ### <a name="parameters"></a>Parametreler
 
 *_Elem*<br/>
-Eş zamanlı öncelikli kuyruğa eklenecek öğe.
+Eşzamanlı öncelik kuyruğuna eklenecek öğe.
 
-##  <a name="size"></a> Boyutu
+## <a name="size"></a>boyutla
 
-Eş zamanlı öncelik sırasındaki öğelerin sayısını döndürür. Bu yöntem eşzamanlı güvenlidir.
+Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 size_type size() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu öğe sayısını `concurrent_priority_queue` nesne.
+Bu `concurrent_priority_queue` nesnesindeki öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev çağrıları tarafından eklenen tüm öğeleri dahil etmek için döndürülen boyutu garanti `push`. Ancak, sonuçları bekleyen işlemler eşzamanlı yansıtmayabilir.
+Döndürülen boyut, `push`işleve yapılan çağrılar tarafından eklenen tüm öğeleri dahil etmek için garanti edilir. Ancak, bekleyen eşzamanlı işlemlerin sonuçlarını yansıtmayabilir.
 
-##  <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
-İki eşzamanlı öncelikli kuyruk içeriğini değiştirir. Bu yöntem eşzamanlı güvenli değil.
+İki eşzamanlı öncelik kuyruğu içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 void swap(concurrent_priority_queue& _Queue);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sıraya alın*<br/>
-`concurrent_priority_queue` İçeriğiyle değiştirilecek nesne.
+*_Queue*<br/>
+İçeriğini değiştirmek için `concurrent_priority_queue` nesnesi.
 
-##  <a name="try_pop"></a> try_pop
+## <a name="try_pop"></a>try_pop
 
-Kaldırır ve sıranın boş ise sıradan en yüksek öncelikli öğeyi döndürür. Bu yöntem eşzamanlı güvenlidir.
+Sıra boş değilse kuyruktaki en yüksek öncelik öğesini kaldırır ve döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 bool try_pop(reference _Elem);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Elem*<br/>
-Sıranın boş olması durumunda yüksek öncelikli öğeyle doldurulur bir değişken başvuru.
+Sıra boş değilse, en yüksek öncelik öğesiyle doldurulacak bir değişkene başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** bir değer POP, **false** Aksi takdirde.
+değer posolandıysa **true** , aksi takdirde **false** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

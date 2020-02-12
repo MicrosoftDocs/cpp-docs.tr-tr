@@ -14,153 +14,153 @@ helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-ms.openlocfilehash: 73fb11db14df22e5df95fdec556ccdfc16a935e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 838427320fcb68cedb97b36156fc18002ed962d8
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362640"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143287"
 ---
 # <a name="openmp-environment-variables"></a>OpenMP Ortam Değişkenleri
 
-OpenMP API çağrısında kullanılan ortam değişkenlerini bağlantılar sağlar.
+OpenMP API 'sinde kullanılan ortam değişkenlerine bağlantılar sağlar.
 
-Standart OpenMP Visual C++ uygulaması, aşağıdaki ortam değişkenlerini içerir. Bu ortam değişkenleri, program başlangıcında okunduğu ve değerlerine yapılan değişiklikler çalışma zamanında yok sayıldı (örnek olarak, [_putenv, _wputenv](../../../c-runtime-library/reference/putenv-wputenv.md)).
+OpenMP standardının C++ görsel uygulanması aşağıdaki ortam değişkenlerini içerir. Bu ortam değişkenleri program başlangıcında okunurdur ve değerlerinde yapılan değişiklikler çalışma zamanında yok sayılır (örneğin, [_putenv, _wputenv](../../../c-runtime-library/reference/putenv-wputenv.md)).
 
 |Ortam değişkeni|Açıklama|
 |--------------------|-----------|
-|[OMP_SCHEDULE](#omp-schedule)|Davranışını değiştiren [zamanlama](openmp-clauses.md#schedule) yan tümcesi olduğunda `schedule(runtime)` belirtilen bir `for` veya `parallel for` yönergesi.|
-|[OMP_NUM_THREADS](#omp-num-threads)|İş parçacığı sayısı tarafından geçersiz kılınmadığı sürece paralel bölgenin içinde ayarlar [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) veya [num_threads](openmp-clauses.md#num-threads).|
-|[OMP_DYNAMIC](#omp-dynamic)|Çalışma zamanı OpenMP bir paralel bölgenin içinde iş parçacığı sayısını ayarlayıp ayarlayamayacağını belirler.|
-|[OMP_NESTED](#omp-nested)|İç içe geçmiş paralellik etkin veya ile devre dışı sürece iç içe geçmiş paralellik, etkin olup olmadığını belirten `omp_set_nested`.|
+|[OMP_SCHEDULE](#omp-schedule)|`for` veya `parallel for` yönergesinde `schedule(runtime)` belirtildiğinde [Schedule](openmp-clauses.md#schedule) yan tümcesinin davranışını değiştirir.|
+|[OMP_NUM_THREADS](#omp-num-threads)|[Omp_set_num_threads](openmp-functions.md#omp-set-num-threads) veya [num_threads](openmp-clauses.md#num-threads)tarafından geçersiz kılınmadıkça, paralel bölgedeki en fazla iş parçacığı sayısını ayarlar.|
+|[OMP_DYNAMIC](#omp-dynamic)|OpenMP çalışma zamanının bir paralel bölgedeki iş parçacığı sayısını ayarlayıp ayarlayamayacağını belirtir.|
+|[OMP_NESTED](#omp-nested)|İç içe paralellik etkinleştirilmemiş veya `omp_set_nested`ile devre dışı bırakılmamışsa, iç içe paralel paralellik etkinleştirilip etkinleştirilmeyeceğini belirtir.|
 
 ## <a name="omp-dynamic"></a>OMP_DYNAMIC
 
-Çalışma zamanı OpenMP bir paralel bölgenin içinde iş parçacığı sayısını ayarlayıp ayarlayamayacağını belirler.
+OpenMP çalışma zamanının bir paralel bölgedeki iş parçacığı sayısını ayarlayıp ayarlayamayacağını belirtir.
 
-```
+```cmd
 set OMP_DYNAMIC[=TRUE | =FALSE]
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OMP_DYNAMIC` Ortam değişkeni tarafından kılınabilir [omp_set_dynamic](openmp-functions.md#omp-set-dynamic) işlevi.
+`OMP_DYNAMIC` ortam değişkeni [omp_set_dynamic](openmp-functions.md#omp-set-dynamic) işlevi tarafından geçersiz kılınabilir.
 
-Varsayılan değer OpenMP standart Visual C++ uygulamasında `OMP_DYNAMIC=FALSE`.
+OpenMP standardının görsel C++ uygulamasındaki varsayılan değer `OMP_DYNAMIC=FALSE`.
 
-Daha fazla bilgi için [4.3 omp_dynamıc](../../../parallel/openmp/4-3-omp-dynamic.md).
+Daha fazla bilgi için bkz. [4,3 OMP_DYNAMIC](../../../parallel/openmp/4-3-omp-dynamic.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki komut kümelerini `OMP_DYNAMIC` ortam değişkenini TRUE:
+Aşağıdaki komut `OMP_DYNAMIC` ortam değişkenini TRUE olarak ayarlar:
 
-```
+```cmd
 set OMP_DYNAMIC=TRUE
 ```
 
-Aşağıdaki komut, geçerli ayarı görüntüler `OMP_DYNAMIC` ortam değişkeni:
+Aşağıdaki komut `OMP_DYNAMIC` ortam değişkeninin geçerli ayarını görüntüler:
 
-```
+```cmd
 set OMP_DYNAMIC
 ```
 
 ## <a name="omp-nested"></a>OMP_NESTED
 
-İç içe geçmiş paralellik etkin veya ile devre dışı sürece iç içe geçmiş paralellik, etkin olup olmadığını belirten `omp_set_nested`.
+İç içe paralellik etkinleştirilmemiş veya `omp_set_nested`ile devre dışı bırakılmamışsa, iç içe paralel paralellik etkinleştirilip etkinleştirilmeyeceğini belirtir.
 
-```
+```cmd
 set OMP_NESTED[=TRUE | =FALSE]
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OMP_NESTED` Ortam değişkeni tarafından kılınabilir [omp_set_nested](openmp-functions.md#omp-set-nested) işlevi.
+`OMP_NESTED` ortam değişkeni [omp_set_nested](openmp-functions.md#omp-set-nested) işlevi tarafından geçersiz kılınabilir.
 
-Varsayılan değer OpenMP standart Visual C++ uygulamasında `OMP_DYNAMIC=FALSE`.
+OpenMP standardının görsel C++ uygulamasındaki varsayılan değer `OMP_DYNAMIC=FALSE`.
 
-Daha fazla bilgi için [4.4 OMP_NESTED](../../../parallel/openmp/4-4-omp-nested.md).
+Daha fazla bilgi için bkz. [4,4 OMP_NESTED](../../../parallel/openmp/4-4-omp-nested.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki komut kümelerini `OMP_NESTED` ortam değişkenini TRUE:
+Aşağıdaki komut `OMP_NESTED` ortam değişkenini TRUE olarak ayarlar:
 
-```
+```cmd
 set OMP_NESTED=TRUE
 ```
 
-Aşağıdaki komut, geçerli ayarı görüntüler `OMP_NESTED` ortam değişkeni:
+Aşağıdaki komut `OMP_NESTED` ortam değişkeninin geçerli ayarını görüntüler:
 
-```
+```cmd
 set OMP_NESTED
 ```
 
 ## <a name="omp-num-threads"></a>OMP_NUM_THREADS
 
-İş parçacığı sayısı tarafından geçersiz kılınmadığı sürece paralel bölgenin içinde ayarlar [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) veya [num_threads](openmp-clauses.md#num-threads).
+[Omp_set_num_threads](openmp-functions.md#omp-set-num-threads) veya [num_threads](openmp-clauses.md#num-threads)tarafından geçersiz kılınmadıkça, paralel bölgedeki en fazla iş parçacığı sayısını ayarlar.
 
-```
+```cmd
 set OMP_NUM_THREADS[=num]
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Visual C++ uygulamasında 64 adede kadar bir paralel bölgenin içinde istediğiniz iş parçacığı sayısı.
+*numaraları*<br/>
+Görsel C++ uygulamada 64 'e kadar, paralel bölgede istediğiniz en fazla iş parçacığı sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OMP_NUM_THREADS` Ortam değişkeni tarafından kılınabilir [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) işlevi ya da [num_threads](openmp-clauses.md#num-threads).
+`OMP_NUM_THREADS` ortam değişkeni [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) işlevi veya [num_threads](openmp-clauses.md#num-threads)tarafından geçersiz kılınabilir.
 
-Varsayılan değer olan `num` Visual C++'da OpenMP standart hiper iş parçacıklı CPU dahil olmak üzere, sanal işlemcilerin sayısını uygulamasıdır.
+OpenMP standardının görsel C++ uygulamasındaki `num` varsayılan değeri, hiper iş parçacığı oluşturma CPU 'ları dahil sanal işlemcilerin sayısıdır.
 
-Daha fazla bilgi için [4.2 OMP_NUM_THREADS](../../../parallel/openmp/4-2-omp-num-threads.md).
+Daha fazla bilgi için bkz. [4,2 omp_num_threads](../../../parallel/openmp/4-2-omp-num-threads.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki komut kümelerini `OMP_NUM_THREADS` ortam değişkenine `16`:
+Aşağıdaki komut `OMP_NUM_THREADS` ortam değişkenini `16`olarak ayarlar:
 
-```
+```cmd
 set OMP_NUM_THREADS=16
 ```
 
-Aşağıdaki komut, geçerli ayarı görüntüler `OMP_NUM_THREADS` ortam değişkeni:
+Aşağıdaki komut `OMP_NUM_THREADS` ortam değişkeninin geçerli ayarını görüntüler:
 
-```
+```cmd
 set OMP_NUM_THREADS
 ```
 
 ## <a name="omp-schedule"></a>OMP_SCHEDULE
 
-Davranışını değiştiren [zamanlama](openmp-clauses.md#schedule) yan tümcesi olduğunda `schedule(runtime)` belirtilen bir `for` veya `parallel for` yönergesi.
+`for` veya `parallel for` yönergesinde `schedule(runtime)` belirtildiğinde [Schedule](openmp-clauses.md#schedule) yan tümcesinin davranışını değiştirir.
 
-```
+```cmd
 set OMP_SCHEDULE[=type[,size]]
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-(İsteğe bağlı) Yinelemeler boyutunu belirtir. *boyutu* pozitif bir tamsayı olmalıdır. Varsayılan değer `1`, ne zaman hariç *türü* statiktir. Geçersiz zaman *türü* olduğu `runtime`.
+*boyutla*<br/>
+Seçim Yinelemelerin boyutunu belirtir. *Boyut* pozitif bir tamsayı olmalıdır. *Türün* statik olması dışında varsayılan değer `1`. *Tür* `runtime`olduğunda geçerli değildir.
 
 *type*<br/>
-Zamanlama, ya da tür `dynamic`, `guided`, `runtime`, veya `static`.
+`dynamic`, `guided`, `runtime`ya da `static`zamanlama türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan değer OpenMP standart Visual C++ uygulamasında `OMP_SCHEDULE=static,0`.
+OpenMP standardının görsel C++ uygulamasındaki varsayılan değer `OMP_SCHEDULE=static,0`.
 
-Daha fazla bilgi için [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-schedule.md).
+Daha fazla bilgi için bkz. [4,1 omp_schedule](../../../parallel/openmp/4-1-omp-schedule.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki komut kümelerini `OMP_SCHEDULE` ortam değişkeni:
+Aşağıdaki komut `OMP_SCHEDULE` ortam değişkenini ayarlar:
 
-```
+```cmd
 set OMP_SCHEDULE="guided,2"
 ```
 
-Aşağıdaki komut, geçerli ayarı görüntüler `OMP_SCHEDULE` ortam değişkeni:
+Aşağıdaki komut `OMP_SCHEDULE` ortam değişkeninin geçerli ayarını görüntüler:
 
-```
+```cmd
 set OMP_SCHEDULE
 ```

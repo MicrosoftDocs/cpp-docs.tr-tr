@@ -1,42 +1,42 @@
 ---
-title: 'Nasıl yapılır: Parallel_for döngüsü yazma'
+title: 'Nasıl yapılır: parallel_for Döngüsü Yazma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - writing a parallel_for loop [Concurrency Runtime]
 - parallel_for function, example
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-ms.openlocfilehash: d6ac30a5de0ff45adad1064aeab708e6a84f5e9f
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 5903114a12de46dc06929c83e9995b39d0136810
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346366"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141867"
 ---
-# <a name="how-to-write-a-parallelfor-loop"></a>Nasıl yapılır: Parallel_for döngüsü yazma
+# <a name="how-to-write-a-parallel_for-loop"></a>Nasıl yapılır: parallel_for Döngüsü Yazma
 
-Bu örnek nasıl kullanılacağını gösterir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) iki matrislerde çarpımını için.
+Bu örnek, iki matrisinin çarpımını hesaplamak için [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) nasıl kullanacağınızı gösterir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği `matrix_multiply` işlevin iki kare matrisler çarpımını hesaplar.
+Aşağıdaki örnekte, iki kare matrisinin çarpımını hesaplayan `matrix_multiply` işlevi gösterilmektedir.
 
 [!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_1.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği `parallel_matrix_multiply` kullanan işlevi `parallel_for` dış döngü paralel olarak gerçekleştirmenin algoritması.
+Aşağıdaki örnekte, dış döngüyü paralel olarak gerçekleştirmek için `parallel_for` algoritmasını kullanan `parallel_matrix_multiply` işlevi gösterilmektedir.
 
 [!code-cpp[concrt-parallel-matrix-multiply#2](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_2.cpp)]
 
-Bu örnekte, yalnızca yeterli iş yükü paralel işleme için yararlanmasını gerçekleştirdiğinden dış döngü parallelizes. İç döngü paralel hale getirmek, iç döngü gerçekleştiren iş az miktarda ek yükü paralel işleme için üstesinden değildir çünkü, kazanç performansını almazsınız. Bu nedenle, dış döngü paralelleştirmek yalnızca çoğu sistemde yararlarını en üst düzeye çıkarmak için en iyi yoludur.
+Bu örnek, yalnızca paralel işleme yükünden faydalanmak için yeterli iş gerçekleştirdiğinden, dış döngüyü paralelleştirme. İç döngüyü paralel hale getirmek düşünüyorsanız, iç döngünün gerçekleştirdiği küçük iş miktarı paralel işleme yükünü aşmadığı için performans artışı elde edersiniz. Bu nedenle, dış döngüyü paralelleştirme, çoğu sistemde eşzamanlılık avantajlarından en iyi şekilde yararlanmanın en iyi yoludur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki daha eksiksiz bir örnek performansını karşılaştırır `matrix_multiply` karşı işlev `parallel_matrix_multiply` işlevi.
+Aşağıdaki daha kapsamlı örnek, `matrix_multiply` işlevinin performansını `parallel_matrix_multiply` işlevi ile karşılaştırır.
 
 [!code-cpp[concrt-parallel-matrix-multiply#3](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_3.cpp)]
 
-Aşağıdaki örnek çıktıda dört işlemciye sahip bir bilgisayar içindir.
+Aşağıdaki örnek çıktı, dört işlemcili bir bilgisayar içindir.
 
 ```Output
 serial: 3853
@@ -45,11 +45,11 @@ parallel: 1311
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `parallel-matrix-multiply.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya `parallel-matrix-multiply.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc paralel-matris-multiply.cpp**
+> **CL. exe/EHsc Parallel-Matrix-Multiply. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
-[parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)
+[parallel_for Işlevi](reference/concurrency-namespace-functions.md#parallel_for)

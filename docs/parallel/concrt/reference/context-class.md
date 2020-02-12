@@ -20,20 +20,20 @@ f1_keywords:
 helpviewer_keywords:
 - Context class
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-ms.openlocfilehash: 9074dad572a3a74a5b456e9790dc359ddf8b7c60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c47d9db64b0af7d5413abed3f85e9d41a591fa2
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262755"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143125"
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 
-Bir yürütme bağlamı için bir soyutlamayı temsil eder.
+Yürütme bağlamı için bir soyutlama temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class Context;
 ```
 
@@ -43,33 +43,33 @@ class Context;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[~Context Destructor](#dtor)||
+|[~ Bağlam yok edici](#dtor)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[Block](#block)|Geçerli bağlamı engeller.|
-|[CurrentContext](#currentcontext)|Geçerli bağlama bir işaretçi döndürür.|
-|[GetId](#getid)|Bağlamın ait olduğu zamanlayıcıda benzersiz olan bağlam için bir tanımlayıcı döndürür.|
-|[GetScheduleGroupId](#getschedulegroupid)|Bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayıcı döndürür.|
-|[GetVirtualProcessorId](#getvirtualprocessorid)|Bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.|
-|[Kimlik](#id)|Geçerli bağlamın ait olduğu zamanlayıcıda benzersiz olan geçerli bağlam için bir tanımlayıcı döndürür.|
-|[Iscurrenttaskcollectioncanceling](#iscurrenttaskcollectioncanceling)|Döndürür bir işaret olup geçerli bağlamda satır içi şu anda yürütülmekte olan görev koleksiyonunun etkin bir iptalin ortasında (veya kısa süre içinde olacaktır).|
-|[Issynchronouslyblocked](#issynchronouslyblocked)|Bağlamın eş zamanlı olarak engellenip olup olmadığını belirler. Bir bağlam açıkça engellemeyle eylem gerçekleştirilen, zaman uyumlu olarak engellendiği kabul edilir.|
-|[Oversubscribe](#oversubscribe)|Bağlam, Zamanlayıcı içindeki sanal işlemcilerin birinde yürütülürken çağrıldığında kod bloğunun süresi için bir zamanlayıcıya ek bir sanal işlemci ekler.|
-|[ScheduleGroupId](#schedulegroupid)|Geçerli bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayıcı döndürür.|
-|[Engellemeyi Kaldır](#unblock)|Engellemesini kaldırır ve çalıştırılabilir duruma gelmesine neden olur.|
-|[VirtualProcessorId](#virtualprocessorid)|Geçerli bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.|
-|[yield](#yield)|Başka bir bağlamın çalıştırılabilmesi için yürütmeyi verir. Zamanlayıcı, başka bir bağlam için yield kullanılabilir haldeyse, başka bir işletim sistemi iş parçacığı verebilir.|
+|[LicenseManager 'ın CurrentContext](#currentcontext)|Geçerli bağlam için bir işaretçi döndürür.|
+|[GetId](#getid)|Bağlamın ait olduğu Scheduler 'da benzersiz olan bağlam için bir tanımlayıcı döndürür.|
+|[Getschedulegroupıd](#getschedulegroupid)|Bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayıcı döndürür.|
+|[Getvirtualprocessorıd](#getvirtualprocessorid)|Bağlamın Şu anda yürütüldüğü sanal işlemci için bir tanımlayıcı döndürür.|
+|[Kimlik](#id)|Geçerli bağlamın ait olduğu Zamanlayıcı içinde benzersiz olan geçerli bağlam için bir tanımlayıcı döndürür.|
+|[Iscurrenttaskcollectioncanceling](#iscurrenttaskcollectioncanceling)|Geçerli bağlamda şu anda yürütülmekte olan görev koleksiyonunun etkin bir iptal etme ortamın (veya kısa bir süre) üzerinde olup olmadığına ilişkin bir gösterge döndürür.|
+|[Issynchronouslyblocked](#issynchronouslyblocked)|Bağlamın zaman uyumlu olarak engellenip engellenmeyeceğini belirler. Bir bağlam, açıkça engellemeye işaret eden bir eylemi gerçekleştirirse zaman uyumlu olarak engellenmiştir.|
+|[Oversubscribe](#oversubscribe)|Bu Scheduler 'daki sanal işlemcilerin birinde çalıştırılan bir bağlamda çağrıldığında, bir kod bloğunun süresi boyunca ek bir sanal işlemciyi zamanlayıcıya çıkartır.|
+|[Schedulegroupıd](#schedulegroupid)|Geçerli bağlamın üzerinde çalıştığı zamanlama grubu için bir tanımlayıcı döndürür.|
+|[Kaldırabilir](#unblock)|Bağlamını kaldırır ve çalıştırılabilir duruma gelmesine neden olur.|
+|[Virtualprocessorıd](#virtualprocessorid)|Geçerli bağlamın üzerinde yürütüldüğü sanal işlemci için bir tanımlayıcı döndürür.|
+|[Yield](#yield)|Başka bir bağlamın yürütebilmesi için yürütmeyi verir. Üzerinde işlem yapmak için başka bir bağlam yoksa, Zamanlayıcı başka bir işletim sistemi iş parçacığı için ödeme yapabilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Eşzamanlılık Çalışma zamanı Zamanlayıcısı (bkz [Zamanlayıcı](scheduler-class.md)) işi yürütmek için yürütme bağlamlarını kullanır için uygulamanız tarafından sıraya. Win32 iş parçacığı, Windows işletim sisteminde bir yürütme bağlamı örneğidir.
+Eşzamanlılık Çalışma Zamanı Zamanlayıcı (bkz. [Scheduler](scheduler-class.md)), uygulamanız tarafından kuyruğa alınan işleri yürütmek için yürütme bağlamlarını kullanır. Win32 iş parçacığı, bir Windows işletim sisteminde yürütme bağlamına bir örnektir.
 
-Herhangi bir zamanda bir Zamanlayıcının eşzamanlılık düzeyi kaynak yöneticisi tarafından kendisine verilen sanal işlemcilerin sayısına eşittir. Bir sanal işlemci için bir işlem kaynağı ve Haritalar ve alttaki sistemde bir donanım iş parçacığına bir soyutlamadır. Yalnızca tek bir zamanlayıcı bağlamı bir sanal işlemci üzerinde belirli bir zamanda çalıştırabilirsiniz.
+Her zaman, bir Scheduler 'ın eşzamanlılık düzeyi, Kaynak Yöneticisi tarafından verilen sanal işlemci sayısına eşittir. Sanal işlemci bir işleme kaynağı için soyutlamadır ve temel alınan sistemdeki bir donanım iş parçacığına eşlenir. Belirli bir zamanda sanal işlemcide yalnızca tek bir Zamanlayıcı bağlamı çalıştırılabilir.
 
-Zamanlayıcı doğası gereği işbirliği yapan ile bir bekleme durumuna girmeyi isterse bir yürütme bağlamı herhangi bir zamanda sanal işlemcisini farklı bir bağlama sağlayabilir. Beklemesi karşılandığında, Zamanlayıcı kullanılabilir bir sanal işlemci onu yürütmeye başlayıncaya kadar devam edilemiyor.
+Zamanlayıcı, doğası halinde birlikte çalışır ve bir yürütme bağlamı, bir bekleme durumu girmek isterse, sanal işlemciyi herhangi bir zamanda farklı bir içeriğe getirebilir. Bunun yerine geldiğinde, Scheduler 'ın kullanılabilir bir sanal işlemci tarafından yürütülmeye başlaması bitinceye kadar sürdürülemez.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -77,67 +77,67 @@ Zamanlayıcı doğası gereği işbirliği yapan ile bir bekleme durumuna girmey
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="block"></a> Blok
+## <a name="block"></a>Engelleyin
 
 Geçerli bağlamı engeller.
 
-```
+```cpp
 static void __cdecl Block();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.
+Bu yöntem, şu anda çağıran bağlamla ilişkili bir Zamanlayıcı yoksa, işlemin varsayılan Zamanlayıcı oluşturulması ve/veya çağırma bağlamına iliştirilmesi ile sonuçlanır.
 
-Sanal işlemci çağıran bağlamını bir sanal işlemci üzerinde yürütülüyorsa, yürütme veya potansiyel olarak için başka bir çalıştırılabilir bağlam bulabilirsiniz yeni bir tane oluşturun.
+Çağıran bağlam sanal bir işlemcide çalışıyorsa, sanal işlemci yürütmek için başka bir çalıştırılabilir bağlam bulur veya yeni bir tane oluşturabilir.
 
-Sonra `Block` yöntemi çağrıldıktan veya çağrılır, bunu bir çağrı ile eşleştirin gerekir [Engellemeyi Kaldır](#unblock) yöntemi sırayla yeniden çalıştırmak için başka bir yürütme bağlamı. Kodunuzu arayabilmesi için başka bir iş parçacığının kendi bağlamının yayımladığı noktası arasında bir kritik süre farkında olması `Unblock` yöntemi ve burada gerçek yöntemi çağrısında noktası `Block` yapılır. Bu süre boyunca hangi sırayla engelleyebilir veya engellemesini kendi nedeniyle (örneğin, bir kilit alınırken) herhangi bir yöntemi çağırmamalıdır. Çağrılar `Block` ve `Unblock` yöntemi yaptığını izlemek engelleme ve kaldırma nedeni. Yalnızca bir nesne sahipliğini olmalıdır bir `Block` -  `Unblock` çifti.
+`Block` yöntemi çağrıldıktan veya çağrdıktan sonra, yeniden çalışması için başka bir yürütme bağlamından [engellemeyi kaldırma](#unblock) yönteminin bir çağrısıyla eşleştirmelidir. Kodunuzun, `Unblock` yöntemini çağırabilmesi için başka bir iş parçacığının bağlamını yayımlayıp `Block` gerçek yöntem çağrısının yapıldığı nokta arasında kritik bir süre olduğunu unutmayın. Bu süre boyunca, kendi nedenleri (örneğin, bir kilit almak) için sırasıyla blok ve engellemeyi kaldırma işleminde olabilecek herhangi bir yöntemi çağırmamalıdır. `Block` ve `Unblock` yöntemine yapılan çağrılar, engelleme ve engellemeyi kaldırma nedenini izlemez. Yalnızca bir nesne `Block`- `Unblock` çiftinin sahipliğini içermelidir.
 
-Bu yöntem, özel durumlar dahil olmak üzere, çeşitli oluşturabilecek [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md).
+Bu yöntem [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md)dahil olmak üzere çeşitli özel durumlar oluşturabilir.
 
-##  <a name="dtor"></a> ~ Bağlamı
+## <a name="dtor"></a>~ Bağlam
 
-```
+```cpp
 virtual ~Context();
 ```
 
-##  <a name="currentcontext"></a> CurrentContext
+## <a name="currentcontext"></a>LicenseManager 'ın CurrentContext
 
-Geçerli bağlama bir işaretçi döndürür.
+Geçerli bağlam için bir işaretçi döndürür.
 
-```
+```cpp
 static Context* __cdecl CurrentContext();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bağlam için bir işaretçi.
+Geçerli bağlam işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.
+Bu yöntem, şu anda çağıran bağlamla ilişkili bir Zamanlayıcı yoksa, işlemin varsayılan Zamanlayıcı oluşturulması ve/veya çağırma bağlamına iliştirilmesi ile sonuçlanır.
 
-##  <a name="getid"></a> GetId
+## <a name="getid"></a>GetId
 
-Bağlamın ait olduğu zamanlayıcıda benzersiz olan bağlam için bir tanımlayıcı döndürür.
+Bağlamın ait olduğu Scheduler 'da benzersiz olan bağlam için bir tanımlayıcı döndürür.
 
-```
+```cpp
 virtual unsigned int GetId() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlamın ait olduğu zamanlayıcıda benzersiz olan bağlam için bir tanımlayıcı.
+Bağlamın ait olduğu zamanlayıcıda benzersiz olan bağlamı için bir tanımlayıcı.
 
-##  <a name="getschedulegroupid"></a> GetScheduleGroupId
+## <a name="getschedulegroupid"></a>Getschedulegroupıd
 
 Bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayıcı döndürür.
 
-```
+```cpp
 virtual unsigned int GetScheduleGroupId() const = 0;
 ```
 
@@ -147,164 +147,164 @@ Bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin dönüş değeri bir anlık örnekleme bağlamın üzerinde yürütülmekte olduğu zamanlama grubu var. Bu yöntem, geçerli bağlamı dışındaki başka bir bağlamda çağrılırsa, değeri döndürülür ve bağlı yararlandı olamaz şu eski olabilir. Genellikle, bu yöntem, hata ayıklama veya yalnızca izleme için kullanılır.
+Bu yöntemin dönüş değeri, bağlamın üzerinde yürütüldüğü Zamanlama grubunun anlık örneklemesi olur. Bu yöntem, geçerli bağlam dışında bir bağlamda çağrılırsa, değer döndürüldüğünden ve bundan dolayı güvenlenemez. Genellikle, bu yöntem yalnızca hata ayıklama veya izleme amacıyla kullanılır.
 
-##  <a name="getvirtualprocessorid"></a> GetVirtualProcessorId
+## <a name="getvirtualprocessorid"></a>Getvirtualprocessorıd
 
-Bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.
+Bağlamın Şu anda yürütüldüğü sanal işlemci için bir tanımlayıcı döndürür.
 
-```
+```cpp
 virtual unsigned int GetVirtualProcessorId() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlamı geçerli bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı sanal bir işlemci üzerinde yürütülüyorsa; Aksi takdirde, değeri `-1`.
+Bağlam Şu anda sanal bir işlemcide yürütüleçalışıyorsa, sanal işlemci için bağlamın Şu anda yürütüldüğü bir tanımlayıcı; Aksi takdirde değer `-1`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin dönüş değeri anlık bir bağlamın üzerinde yürütülmekte olduğu sanal işlemci örnekleme ' dir. Bu değer döndürülür ve bağlı yararlandı olamaz şu eski olabilir. Genellikle, bu yöntem, hata ayıklama veya yalnızca izleme için kullanılır.
+Bu yöntemden döndürülen değer, içeriğin üzerinde yürütüldüğü Sanal işlemcinin anlık örneklemesi olur. Bu değer, daha eski bir süre sonra geri alınamaz ve bundan dolayı güvenlenemez. Genellikle, bu yöntem yalnızca hata ayıklama veya izleme amacıyla kullanılır.
 
-##  <a name="id"></a> Kimliği
+## <a name="id"></a>Numarasını
 
-Geçerli bağlamın ait olduğu zamanlayıcıda benzersiz olan geçerli bağlam için bir tanımlayıcı döndürür.
+Geçerli bağlamın ait olduğu Zamanlayıcı içinde benzersiz olan geçerli bağlam için bir tanımlayıcı döndürür.
 
-```
+```cpp
 static unsigned int __cdecl Id();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bağlam için bir Zamanlayıcı, geçerli bağlamın ait olduğu zamanlayıcıda benzersiz olan geçerli bağlam için bir tanımlayıcı bağlıysa, Aksi takdirde, değeri `-1`.
+Geçerli bağlam bir Scheduler 'a iliştirilmişse geçerli bağlam için geçerli bağlamın ait olduğu Zamanlayıcı dahilinde benzersiz olan bir tanımlayıcı; Aksi takdirde değer `-1`.
 
-##  <a name="iscurrenttaskcollectioncanceling"></a> Iscurrenttaskcollectioncanceling
+## <a name="iscurrenttaskcollectioncanceling"></a>Iscurrenttaskcollectioncanceling
 
-Döndürür bir işaret olup geçerli bağlamda satır içi şu anda yürütülmekte olan görev koleksiyonunun etkin bir iptalin ortasında (veya kısa süre içinde olacaktır).
+Geçerli bağlamda şu anda yürütülmekte olan görev koleksiyonunun etkin bir iptal etme ortamın (veya kısa bir süre) üzerinde olup olmadığına ilişkin bir gösterge döndürür.
 
-```
+```cpp
 static bool __cdecl IsCurrentTaskCollectionCanceling();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir zamanlayıcı çağrı bağlamına bağlı olduğu ve bir görev grubu bu bağlamda bir görev satıriçi yürütüyor, bir gösterge olup bu görev grubu etkin bir iptalin ortasında (veya kısa süre içinde olacaktır); Aksi takdirde, değeri `false`.
+Bir Zamanlayıcı çağıran içeriğe bağlıysa ve bir görev grubu bu bağlamda satır içi bir görevi yürütülerek, görev grubunun etkin bir iptal etme ortasitesinde olup olmadığı (veya kısa süre içinde) bir göstergesi. Aksi takdirde değer `false`.
 
-##  <a name="issynchronouslyblocked"></a> Issynchronouslyblocked
+## <a name="issynchronouslyblocked"></a>Issynchronouslyblocked
 
-Bağlamın eş zamanlı olarak engellenip olup olmadığını belirler. Bir bağlam açıkça engellemeyle eylem gerçekleştirilen, zaman uyumlu olarak engellendiği kabul edilir.
+Bağlamın zaman uyumlu olarak engellenip engellenmeyeceğini belirler. Bir bağlam, açıkça engellemeye işaret eden bir eylemi gerçekleştirirse zaman uyumlu olarak engellenmiştir.
 
-```
+```cpp
 virtual bool IsSynchronouslyBlocked() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçerik olup olmadığını zaman uyumlu olarak engellenir.
+Bağlamın zaman uyumlu olarak engellenip engellenmeyeceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bağlam açıkça engellemeyle eylem gerçekleştirilen, zaman uyumlu olarak engellendiği kabul edilir. İş parçacığı Zamanlayıcısı, bu doğrudan çağrı gösterir `Context::Block` yöntemi veya kullanılarak oluşturulmuş bir eşitleme nesnesi `Context::Block` yöntemi.
+Bir bağlam, açıkça engellemeye işaret eden bir eylemi gerçekleştirirse zaman uyumlu olarak engellenmiştir. İş parçacığı zamanlayıcıda bu, `Context::Block` yöntemine doğrudan çağrı veya `Context::Block` yöntemi kullanılarak oluşturulan bir eşitleme nesnesi olduğunu gösterir.
 
-Bu yöntemin dönüş değeri bağlamın eş zamanlı olarak engellenip anlık bir örnektir. Bu değer döndürülür ve yalnızca belirli koşullarda kullanılabilir şu eski olabilir.
+Bu yöntemin dönüş değeri, bağlamın zaman uyumlu olarak engellenip engellenmeyeceğini anlık bir örnektir. Bu değer, eski ve yalnızca çok özel koşullarda kullanılabilecek bir süre içinde olabilir.
 
-##  <a name="operator_delete"></a> delete işleci
+## <a name="operator_delete"></a>delete işleci
 
-A `Context` nesne çalışma zamanı tarafından dahili olarak bozulur. Açıkça silinemez.
+`Context` bir nesne, çalışma zamanı tarafından dahili olarak yok edilir. Bu, açıkça silinemez.
 
-```
+```cpp
 void operator delete(void* _PObject);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PObject*<br/>
-Silinecek nesnenin bir işaretçi.
+Silinecek nesneye yönelik bir işaretçi.
 
-##  <a name="oversubscribe"></a> Oversubscribe
+## <a name="oversubscribe"></a>Oversubscribe
 
-Bağlam, Zamanlayıcı içindeki sanal işlemcilerin birinde yürütülürken çağrıldığında kod bloğunun süresi için bir zamanlayıcıya ek bir sanal işlemci ekler.
+Bu Scheduler 'daki sanal işlemcilerin birinde çalıştırılan bir bağlamda çağrıldığında, bir kod bloğunun süresi boyunca ek bir sanal işlemciyi zamanlayıcıya çıkartır.
 
-```
+```cpp
 static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_BeginOversubscription*<br/>
-Varsa **true**, aşırı abonelik süresi boyunca bir ek sanal işlemci eklenmelidir göstergesidir. Varsa **false**, gecikmeyi bitmelidir ve önceden eklenmiş sanal işlemci kaldırılmalıdır göstergesidir.
+**True**ise, fazla abonelik süresi boyunca fazladan bir sanal işlemcinin eklenmesi gerektiğini belirten bir gösterge. **Yanlış**ise, fazla aboneliğin bitmesi ve önceden eklenmiş Sanal işlemcinin kaldırılması gerektiğini belirten bir gösterge kaldırılmalıdır.
 
-##  <a name="schedulegroupid"></a> ScheduleGroupId
+## <a name="schedulegroupid"></a>Schedulegroupıd
 
-Geçerli bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayıcı döndürür.
+Geçerli bağlamın üzerinde çalıştığı zamanlama grubu için bir tanımlayıcı döndürür.
 
-```
+```cpp
 static unsigned int __cdecl ScheduleGroupId();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bağlam için bir zamanlayıcı bağlı olduğu ve bir zamanlama grubu üzerinde çalışırken, Zamanlayıcı için bir tanımlayıcı grubu, geçerli bağlamın üzerinde çalışmakta olduğu; Aksi takdirde, değeri `-1`.
+Geçerli bağlam bir Scheduler 'a iliştirilmişse ve bir zamanlama grubu üzerinde çalışıyorsa, geçerli bağlamın üzerinde çalıştığı Zamanlayıcı grubu için bir tanımlayıcı; Aksi takdirde değer `-1`.
 
-##  <a name="unblock"></a> Engellemeyi Kaldır
+## <a name="unblock"></a>Kaldırabilir
 
-Engellemesini kaldırır ve çalıştırılabilir duruma gelmesine neden olur.
+Bağlamını kaldırır ve çalıştırılabilir duruma gelmesine neden olur.
 
-```
+```cpp
 virtual void Unblock() = 0;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrı için mükemmel bir şekilde yasal `Unblock` yöntemine yapılan çağrı ile önce gelmesi [blok](#block) yöntemi. Çağrıları sürece `Block` ve `Unblock` yöntemleri düzgün bir şekilde eşleştirilmiş, çalışma zamanı ya da sıralama, doğal yarışı düzgün bir şekilde işler. Bir `Unblock` çağrı önce gelen bir `Block` çağrı yalnızca etkisini `Block` çağırın.
+`Unblock` yöntemine yapılan bir çağrı, [blok](#block) yöntemine karşılık gelen bir çağrıdan önce gelmesi için mükemmel bir şekilde geçerlidir. `Block` ve `Unblock` yöntemlerine yapılan çağrılar doğru şekilde eşleştirildiği sürece, çalışma zamanı her iki sıralamayı da doğal olarak işler. Bir `Block` çağrısından önce gelen `Unblock` çağrısı, `Block` çağrısının etkisini geçersiz kılar.
 
-Bu yöntemden atılan çeşitli özel durumlar vardır. Bir bağlam çağırmaya kalktığında `Unblock` yöntemi kendi üzerinde bir [context_self_unblock](context-self-unblock-class.md) özel durumu oluşturulur. Varsa çağrılar `Block` ve `Unblock` değil düzgün bir şekilde eşleştirilmiş (örneğin, iki için çağırdığı `Unblock` çalışmakta olan bir bağlamı için yapılan), [context_unblock_unbalanced](context-unblock-unbalanced-class.md) özel durumu oluşturulur.
+Bu yöntemden oluşturulabilecek birkaç özel durum vardır. Bir bağlam kendi başına `Unblock` yöntemini çağırmayı denerse, bir [context_self_unblock](context-self-unblock-class.md) özel durumu oluşturulur. `Block` ve `Unblock` çağrıları düzgün şekilde eşlenmiyorsa (örneğin, şu anda çalışan bir bağlam için `Unblock` için iki çağrı yapılırsa), bir [context_unblock_unbalanced](context-unblock-unbalanced-class.md) özel durumu oluşturulur.
 
-Kodunuzu arayabilmesi için başka bir iş parçacığının kendi bağlamının yayımladığı noktası arasında bir kritik süre farkında olması `Unblock` yöntemi ve burada gerçek yöntemi çağrısında noktası `Block` yapılır. Bu süre boyunca hangi sırayla engelleyebilir veya engellemesini kendi nedeniyle (örneğin, bir kilit alınırken) herhangi bir yöntemi çağırmamalıdır. Çağrılar `Block` ve `Unblock` yöntemi yaptığını izlemek engelleme ve kaldırma nedeni. Yalnızca bir nesne sahipliğini olmalıdır bir `Block` ve `Unblock` çifti.
+Kodunuzun, `Unblock` yöntemini çağırabilmesi için başka bir iş parçacığının bağlamını yayımlayıp `Block` gerçek yöntem çağrısının yapıldığı nokta arasında kritik bir süre olduğunu unutmayın. Bu süre boyunca, kendi nedenleri (örneğin, bir kilit almak) için sırasıyla blok ve engellemeyi kaldırma işleminde olabilecek herhangi bir yöntemi çağırmamalıdır. `Block` ve `Unblock` yöntemine yapılan çağrılar, engelleme ve engellemeyi kaldırma nedenini izlemez. Yalnızca bir nesne `Block` ve `Unblock` çiftinin sahipliğini içermelidir.
 
-##  <a name="virtualprocessorid"></a> Virtualprocessorıd
+## <a name="virtualprocessorid"></a>Virtualprocessorıd
 
-Geçerli bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.
+Geçerli bağlamın üzerinde yürütüldüğü sanal işlemci için bir tanımlayıcı döndürür.
 
-```
+```cpp
 static unsigned int __cdecl VirtualProcessorId();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bağlam için bir Zamanlayıcı, geçerli bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı bağlıysa, Aksi takdirde, değeri `-1`.
+Geçerli bağlam bir Scheduler 'a iliştirilmişse, geçerli bağlamın üzerinde yürütüldüğü sanal işlemci için bir tanımlayıcı; Aksi takdirde değer `-1`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin dönüş değeri, geçerli bağlamın üzerinde yürütülmekte olduğu sanal işlemci anlık bir örnekleme ' dir. Bu değer döndürülür ve bağlı yararlandı olamaz şu eski olabilir. Genellikle, bu yöntem, hata ayıklama veya yalnızca izleme için kullanılır.
+Bu yöntemden döndürülen değer, geçerli bağlamın üzerinde yürütüldüğü Sanal işlemcinin anlık örneklemesi olur. Bu değer, daha eski bir süre sonra geri alınamaz ve bundan dolayı güvenlenemez. Genellikle, bu yöntem yalnızca hata ayıklama veya izleme amacıyla kullanılır.
 
-##  <a name="yield"></a> yield
+## <a name="yield"></a>Yield
 
-Başka bir bağlamın çalıştırılabilmesi için yürütmeyi verir. Zamanlayıcı, başka bir bağlam için yield kullanılabilir haldeyse, başka bir işletim sistemi iş parçacığı verebilir.
+Başka bir bağlamın yürütebilmesi için yürütmeyi verir. Üzerinde işlem yapmak için başka bir bağlam yoksa, Zamanlayıcı başka bir işletim sistemi iş parçacığı için ödeme yapabilir.
 
-```
+```cpp
 static void __cdecl Yield();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.
+Bu yöntem, şu anda çağıran bağlamla ilişkili bir Zamanlayıcı yoksa, işlemin varsayılan Zamanlayıcı oluşturulması ve/veya çağırma bağlamına iliştirilmesi ile sonuçlanır.
 
-##  <a name="yieldexecution"></a> YieldExecution
+## <a name="yieldexecution"></a>Ödemedexecution
 
-Başka bir bağlamın çalıştırılabilmesi için yürütmeyi verir. Zamanlayıcı, başka bir bağlam için yield kullanılabilir haldeyse, başka bir işletim sistemi iş parçacığı verebilir.
+Başka bir bağlamın yürütebilmesi için yürütmeyi verir. Üzerinde işlem yapmak için başka bir bağlam yoksa, Zamanlayıcı başka bir işletim sistemi iş parçacığı için ödeme yapabilir.
 
-```
+```cpp
 static void __cdecl YieldExecution();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.
+Bu yöntem, şu anda çağıran bağlamla ilişkili bir Zamanlayıcı yoksa, işlemin varsayılan Zamanlayıcı oluşturulması ve/veya çağırma bağlamına iliştirilmesi ile sonuçlanır.
 
-Bu işlev, Visual Studio 2015'te yenidir ve aynıdır [Yield](#yield) çalışır ancak Windows.h Yield makroda ile çakışmaz.
+Bu işlev, Visual Studio 2015 ' de yenidir ve [yield](#yield) işleviyle aynıdır, ancak Windows. h 'deki yield makrosu ile çakışmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
-[Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
+[Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

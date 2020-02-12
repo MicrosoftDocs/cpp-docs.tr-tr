@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - scheduler_resource_allocation_error class
 ms.assetid: 8b40449a-7abb-4d0a-bb85-c0e9a495ae97
-ms.openlocfilehash: 7f7254306253aabc33f46694f3da16734e6efccf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2955320b443fb61f26d9f07ca336a45c620e2aa9
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160058"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143332"
 ---
-# <a name="schedulerresourceallocationerror-class"></a>scheduler_resource_allocation_error Sınıfı
+# <a name="scheduler_resource_allocation_error-class"></a>scheduler_resource_allocation_error Sınıfı
 
-Bu sınıf, eşzamanlılık çalışma zamanı içinde kritik bir kaynak almak için bir hata nedeniyle verilen bir özel durumu anlatmaktadır.
+Bu sınıf, Eşzamanlılık Çalışma Zamanı kritik bir kaynak alma hatası nedeniyle oluşan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class scheduler_resource_allocation_error : public std::exception;
 ```
 
@@ -32,17 +32,17 @@ class scheduler_resource_allocation_error : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[scheduler_resource_allocation_error](#ctor)|Fazla Yüklendi. Oluşturur bir `scheduler_resource_allocation_error` nesne.|
+|[scheduler_resource_allocation_error](#ctor)|Fazla Yüklendi. `scheduler_resource_allocation_error` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_error_code](#get_error_code)|Özel duruma neden oldu hata kodu döndürür.|
+|[get_error_code](#get_error_code)|Özel duruma neden olan hata kodunu döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Eşzamanlılık Çalışma zamanı içinde işletim sistemi çağrısı başarısız olduğunda bu durum genellikle oluşturulur. Normalde Win32 yöntemin çağrısından döndürülen hata kodu `GetLastError` türü bir değere dönüştürülür `HRESULT` ve kullanılarak alınabilir `get_error_code` yöntemi.
+Bu özel durum genellikle Eşzamanlılık Çalışma Zamanı içinden işletim sistemine yapılan bir çağrı başarısız olduğunda oluşturulur. Normalde Win32 yöntemine yapılan bir çağrıdan döndürülen hata kodu `GetLastError` `HRESULT` türünde bir değere dönüştürülür ve `get_error_code` yöntemi kullanılarak alınabilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -52,27 +52,27 @@ Eşzamanlılık Çalışma zamanı içinde işletim sistemi çağrısı başarı
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="get_error_code"></a> get_error_code
+## <a name="get_error_code"></a>get_error_code
 
-Özel duruma neden oldu hata kodu döndürür.
+Özel duruma neden olan hata kodunu döndürür.
 
-```
+```cpp
 HRESULT get_error_code() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`HRESULT` Özel duruma neden olan hata değeri.
+Özel duruma neden olan hatanın `HRESULT` değeri.
 
-##  <a name="ctor"></a> scheduler_resource_allocation_error
+## <a name="ctor"></a>scheduler_resource_allocation_error
 
-Oluşturur bir `scheduler_resource_allocation_error` nesne.
+`scheduler_resource_allocation_error` nesnesi oluşturur.
 
-```
+```cpp
 scheduler_resource_allocation_error(
     _In_z_ const char* _Message,
     HRESULT _Hresult) throw();
@@ -83,11 +83,11 @@ explicit _CRTIMP scheduler_resource_allocation_error(
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 *_Hresult*<br/>
-`HRESULT` Özel duruma neden olan hata değeri.
+Özel duruma neden olan hatanın `HRESULT` değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

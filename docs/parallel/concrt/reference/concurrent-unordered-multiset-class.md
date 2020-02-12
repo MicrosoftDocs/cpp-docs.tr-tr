@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_multiset class
 ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
-ms.openlocfilehash: c3b9b4e528a310d5a7e55dc6ce608076ad3e03bf
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 92158d675b9526d1eb82a9b3f67c1c7263557d8e
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75297524"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143186"
 ---
 # <a name="concurrent_unordered_multiset-class"></a>concurrent_unordered_multiset Sınıfı
 
@@ -26,7 +26,7 @@ ms.locfileid: "75297524"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
@@ -41,9 +41,9 @@ _Allocator_type,
     true>>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*K*<br/>
+*Ek*<br/>
 Anahtar türü.
 
 *_Hasher*<br/>
@@ -59,7 +59,7 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |`allocator_type`|Depolamayı yönetmek için bir ayırıcı türü.|
 |`const_iterator`|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -77,27 +77,27 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 |`size_type`|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |`value_type`|Öğenin türü.|
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[concurrent_unordered_multiset](#ctor)|Aşırı yüklendi. Eşzamanlı olarak sıralı bir çoklu küme oluşturur.|
+|[concurrent_unordered_multiset](#ctor)|Fazla Yüklendi. Eşzamanlı olarak sıralı bir çoklu küme oluşturur.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[hash_function](#hash_function)|Depolanan karma işlevi nesnesini döndürür.|
-|[ekleyin](#insert)|Aşırı yüklendi. `concurrent_unordered_multiset` nesnesine öğe ekler.|
+|[ekleyin](#insert)|Fazla Yüklendi. `concurrent_unordered_multiset` nesnesine öğe ekler.|
 |[key_eq](#key_eq)|Depolanan eşitlik karşılaştırma işlevi nesnesi.|
 |[Kur](#swap)|İki `concurrent_unordered_multiset` nesnesinin içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.|
-|[unsafe_erase](#unsafe_erase)|Aşırı yüklendi. Belirtilen konumlarda `concurrent_unordered_multiset` öğeleri kaldırır. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[unsafe_erase](#unsafe_erase)|Fazla Yüklendi. Belirtilen konumlarda `concurrent_unordered_multiset` öğeleri kaldırır. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
-### <a name="public-operators"></a>Genel İşleçler
+### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[operator=](#operator_eq)|Aşırı yüklendi. Başka bir `concurrent_unordered_multiset` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[işleç =](#operator_eq)|Fazla Yüklendi. Başka bir `concurrent_unordered_multiset` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -117,11 +117,11 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 
 **Ad alanı:** eşzamanlılık
 
-##  <a name="begin"></a>başladı
+## <a name="begin"></a>başladı
 
 Eşzamanlı kapsayıcıdaki ilk öğeyi gösteren bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 iterator begin();
 
 const_iterator begin() const;
@@ -131,11 +131,11 @@ const_iterator begin() const;
 
 Eşzamanlı kapsayıcıdaki ilk öğe için bir yineleyici.
 
-##  <a name="cbegin"></a>cbegin
+## <a name="cbegin"></a>cbegin
 
 Eşzamanlı kapsayıcıdaki ilk öğeyi gösteren bir const yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 const_iterator cbegin() const;
 ```
 
@@ -143,11 +143,11 @@ const_iterator cbegin() const;
 
 Eşzamanlı kapsayıcıdaki ilk öğe için bir const yineleyici.
 
-##  <a name="cend"></a>cend
+## <a name="cend"></a>cend
 
 Eşzamanlı kapsayıcıda son öğeden sonraki konuma işaret eden bir const yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 const_iterator cend() const;
 ```
 
@@ -155,19 +155,19 @@ const_iterator cend() const;
 
 Eşzamanlı kapsayıcıda son öğeden sonraki konuma bir const yineleyici.
 
-##  <a name="clear"></a>lediğiniz
+## <a name="clear"></a>lediğiniz
 
 Eş zamanlı kapsayıcıdaki tüm öğeleri siler. Bu işlev eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 void clear();
 ```
 
-##  <a name="ctor"></a>concurrent_unordered_multiset
+## <a name="ctor"></a>concurrent_unordered_multiset
 
 Eşzamanlı olarak sıralı bir çoklu küme oluşturur.
 
-```
+```cpp
 explicit concurrent_unordered_multiset(
     size_type _Number_of_buckets = 8,
     const hasher& _Hasher = hasher(),
@@ -213,8 +213,8 @@ Bu sırasız çoklu küme için eşitlik karşılaştırma işlevi.
 *_Allocator*<br/>
 Bu sırasız çoklu küme için ayırıcı.
 
-*first*<br/>
-*last*<br/>
+*adı*<br/>
+*soyadına*<br/>
 *_Uset*<br/>
 Öğelerin taşınacağı kaynak `concurrent_unordered_multiset` nesnesi.
 
@@ -232,11 +232,11 @@ Dördüncü ve beşinci oluşturucular, eşzamanlı sıralanmamış çoklu küme
 
 Son Oluşturucu, eşzamanlı sıralanmamış çoklu küme `_Uset`taşımayı belirtir.
 
-##  <a name="count"></a>biriktirme
+## <a name="count"></a>biriktirme
 
 Belirtilen bir anahtarla eşleşen öğelerin sayısını sayar. Bu işlev eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 size_type count(const key_type& KVal) const;
 ```
 
@@ -249,11 +249,11 @@ Aranacak anahtar.
 
 Anahtarın kapsayıcıda kaç kez göründüğüne ilişkin sayı.
 
-##  <a name="empty"></a>olmamalıdır
+## <a name="empty"></a>olmamalıdır
 
 Bir öğe olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 bool empty() const;
 ```
 
@@ -265,11 +265,11 @@ eşzamanlı kapsayıcı boş ise **true** , aksi takdirde **false** .
 
 Eşzamanlı bir ekleme olması durumunda, eşzamanlı kapsayıcının boş olup olmadığı, dönüş değeri eşit bir şekilde okunmadan önce bu işlev çağrıldıktan hemen sonra değişebilir.
 
-##  <a name="end"></a>erer
+## <a name="end"></a>erer
 
 Eşzamanlı kapsayıcıda son öğeden sonraki konumu gösteren bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 iterator end();
 
 const_iterator end() const;
@@ -279,11 +279,11 @@ const_iterator end() const;
 
 Eşzamanlı kapsayıcıda son öğeden sonraki konuma bir yineleyici.
 
-##  <a name="equal_range"></a>equal_range
+## <a name="equal_range"></a>equal_range
 
 Belirtilen anahtarla eşleşen bir Aralık bulur. Bu işlev eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 std::pair<iterator,
     iterator> equal_range(
     const key_type& KVal);
@@ -306,11 +306,11 @@ Aranacak anahtar değeri.
 
 Başlangıç yineleyicisinin ve bitiş yineleyicisinin öncesinde ek anahtarların eklenmesine neden olacak şekilde, eşzamanlı ekleme yapılabilir.
 
-##  <a name="find"></a>bilgi
+## <a name="find"></a>bilgi
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur. Bu işlev eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 iterator find(const key_type& KVal);
 
 const_iterator find(const key_type& KVal) const;
@@ -325,11 +325,11 @@ Aranacak anahtar değeri.
 
 Belirtilen anahtarla eşleşen ilk öğenin konumunu gösteren bir yineleyici veya böyle bir öğe yoksa Yineleyici `end()`.
 
-##  <a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a>get_allocator
 
 Bu eşzamanlı kapsayıcı için depolanan ayırıcı nesnesini döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 allocator_type get_allocator() const;
 ```
 
@@ -337,11 +337,11 @@ allocator_type get_allocator() const;
 
 Bu eşzamanlı kapsayıcı için depolanan ayırıcı nesne.
 
-##  <a name="hash_function"></a>hash_function
+## <a name="hash_function"></a>hash_function
 
 Depolanan karma işlevi nesnesini döndürür.
 
-```
+```cpp
 hasher hash_function() const;
 ```
 
@@ -349,11 +349,11 @@ hasher hash_function() const;
 
 Depolanan karma işlev nesnesi.
 
-##  <a name="insert"></a>ekleyin
+## <a name="insert"></a>ekleyin
 
 `concurrent_unordered_multiset` nesnesine öğe ekler.
 
-```
+```cpp
 iterator insert(
     const value_type& value);
 
@@ -382,7 +382,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 *_Iterator*<br/>
 Ekleme için kullanılan Yineleyici türü.
 
-*V*<br/>
+*Yönetim*<br/>
 Girilen değerin türü.
 
 *value*<br/>
@@ -391,10 +391,10 @@ Eklenecek değer.
 *_Where*<br/>
 Bir ekleme noktasını aramak için başlangıç konumu.
 
-*first*<br/>
+*adı*<br/>
 Eklenecek aralığın başlangıcı.
 
-*last*<br/>
+*soyadına*<br/>
 Eklenecek aralığın sonu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -411,11 +411,11 @@ Ekleme konumunu gösteren bir yineleyici.
 
 Son iki üye işlevi, eklenen değeri oluşturmak için `value` kullanılması dışında, ilk ikisi ile aynı şekilde davranır.
 
-##  <a name="key_eq"></a>key_eq
+## <a name="key_eq"></a>key_eq
 
 Depolanan eşitlik karşılaştırma işlevi nesnesi.
 
-```
+```cpp
 key_equal key_eq() const;
 ```
 
@@ -423,11 +423,11 @@ key_equal key_eq() const;
 
 Depolanan eşitlik karşılaştırma işlevi nesnesi.
 
-##  <a name="load_factor"></a>load_factor
+## <a name="load_factor"></a>load_factor
 
 Kapsayıcının geçerli yük faktörünü hesaplar ve döndürür. Yük faktörü, kapsayıcıda demet sayısına bölünen öğe sayısıdır.
 
-```
+```cpp
 float load_factor() const;
 ```
 
@@ -435,11 +435,11 @@ float load_factor() const;
 
 Kapsayıcının yük faktörü.
 
-##  <a name="max_load_factor"></a> max_load_factor
+## <a name="max_load_factor"></a>max_load_factor
 
 Kapsayıcının maksimum yük faktörünü alır veya ayarlar. En fazla yük faktörü, kapsayıcının iç tablosunu büyütmadan önce herhangi bir demet içinde olabilecek en fazla öğe sayısıdır.
 
-```
+```cpp
 float max_load_factor() const;
 
 void max_load_factor(float _Newmax);
@@ -453,11 +453,11 @@ void max_load_factor(float _Newmax);
 
 İlk üye işlevi, depolanan en fazla yük faktörünü döndürür. İkinci üye işlevi bir değer döndürmüyor, ancak sağlanan yük faktörü geçersiz ise [out_of_range](../../../standard-library/out-of-range-class.md) bir özel durum atar.
 
-##  <a name="max_size"></a>max_size
+## <a name="max_size"></a>max_size
 
 Ayırıcı tarafından belirlenen eşzamanlı kapsayıcının maksimum boyutunu döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 size_type max_size() const;
 ```
 
@@ -469,11 +469,11 @@ Bu eşzamanlı kapsayıcıya eklenebilecek en fazla öğe sayısı.
 
 Bu üst sınır değeri, kapsayıcının gerçekten tutabileceğinden daha yüksek olabilir.
 
-##  <a name="operator_eq"></a>işleç =
+## <a name="operator_eq"></a>işleç =
 
 Başka bir `concurrent_unordered_multiset` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 concurrent_unordered_multiset& operator= (const concurrent_unordered_multiset& _Uset);
 
 concurrent_unordered_multiset& operator= (concurrent_unordered_multiset&& _Uset);
@@ -492,11 +492,11 @@ Bu `concurrent_unordered_multiset` nesnesine bir başvuru.
 
 Eş zamanlı sıralanmamış bir çoklu kümeli var olan öğeleri sildikten sonra, `operator=` `_Uset` içeriğini eşzamanlı sıralanmamış çoklu kümeli olarak kopyalar ya da taşısın.
 
-##  <a name="rehash"></a>rehash
+## <a name="rehash"></a>rehash
 
 Karma tabloyu yeniden oluşturur.
 
-```
+```cpp
 void rehash(size_type _Buckets);
 ```
 
@@ -511,11 +511,11 @@ void rehash(size_type _Buckets);
 
 Demet sayısı geçersizse (0 veya maksimum demet sayısından büyükse) [out_of_range](../../../standard-library/out-of-range-class.md) bir özel durum oluşturur.
 
-##  <a name="size"></a>boyutla
+## <a name="size"></a>boyutla
 
 Bu eşzamanlı kapsayıcıdaki öğelerin sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 size_type size() const;
 ```
 
@@ -527,11 +527,11 @@ Kapsayıcıdaki öğelerin sayısı.
 
 Eşzamanlı bir ekleme durumunda, dönüş değeri eşit bir şekilde okunmadan önce, eşzamanlı kapsayıcıdaki öğelerin sayısı bu işlev çağrıldıktan hemen sonra değiştirilebilir.
 
-##  <a name="swap"></a>Kur
+## <a name="swap"></a>Kur
 
 İki `concurrent_unordered_multiset` nesnesinin içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 void swap(concurrent_unordered_multiset& _Uset);
 ```
 
@@ -540,11 +540,11 @@ void swap(concurrent_unordered_multiset& _Uset);
 *_Uset*<br/>
 İle takas edilecek `concurrent_unordered_multiset` nesnesi.
 
-##  <a name="unsafe_begin"></a>unsafe_begin
+## <a name="unsafe_begin"></a>unsafe_begin
 
 Belirli bir demet için bu kapsayıcıdaki ilk öğeye bir yineleyici döndürür.
 
-```
+```cpp
 local_iterator unsafe_begin(size_type _Bucket);
 
 const_local_iterator unsafe_begin(size_type _Bucket) const;
@@ -559,11 +559,11 @@ Demet dizini.
 
 Demet başlangıcını işaret eden bir yineleyici.
 
-##  <a name="unsafe_bucket"></a>unsafe_bucket
+## <a name="unsafe_bucket"></a>unsafe_bucket
 
 Bu kapsayıcıda, belirli bir anahtarın eşlendiği demet dizinini döndürür.
 
-```
+```cpp
 size_type unsafe_bucket(const key_type& KVal) const;
 ```
 
@@ -576,11 +576,11 @@ Aranan öğe anahtarı.
 
 Bu kapsayıcıdaki anahtar için demet dizini.
 
-##  <a name="unsafe_bucket_count"></a>unsafe_bucket_count
+## <a name="unsafe_bucket_count"></a>unsafe_bucket_count
 
 Bu kapsayıcıdaki geçerli demet sayısını döndürür.
 
-```
+```cpp
 size_type unsafe_bucket_count() const;
 ```
 
@@ -588,11 +588,11 @@ size_type unsafe_bucket_count() const;
 
 Bu kapsayıcıdaki geçerli demet sayısı.
 
-##  <a name="unsafe_bucket_size"></a>unsafe_bucket_size
+## <a name="unsafe_bucket_size"></a>unsafe_bucket_size
 
 Bu kapsayıcının belirli bir demetini içindeki öğelerin sayısını döndürür.
 
-```
+```cpp
 size_type unsafe_bucket_size(size_type _Bucket);
 ```
 
@@ -605,11 +605,11 @@ Aranacak demet.
 
 Bu kapsayıcıdaki geçerli demet sayısı.
 
-##  <a name="unsafe_cbegin"></a>unsafe_cbegin
+## <a name="unsafe_cbegin"></a>unsafe_cbegin
 
 Belirli bir demet için bu kapsayıcıdaki ilk öğeye bir yineleyici döndürür.
 
-```
+```cpp
 const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ```
 
@@ -622,11 +622,11 @@ Demet dizini.
 
 Demet başlangıcını işaret eden bir yineleyici.
 
-##  <a name="unsafe_cend"></a>unsafe_cend
+## <a name="unsafe_cend"></a>unsafe_cend
 
 Belirli bir demet içindeki son öğeden sonraki konuma bir yineleyici döndürür.
 
-```
+```cpp
 const_local_iterator unsafe_cend(size_type _Bucket) const;
 ```
 
@@ -639,11 +639,11 @@ Demet dizini.
 
 Demet başlangıcını işaret eden bir yineleyici.
 
-##  <a name="unsafe_end"></a>unsafe_end
+## <a name="unsafe_end"></a>unsafe_end
 
 Belirli bir demet için bu kapsayıcıdaki son öğeye bir yineleyici döndürür.
 
-```
+```cpp
 local_iterator unsafe_end(size_type _Bucket);
 
 const_local_iterator unsafe_end(size_type _Bucket) const;
@@ -658,11 +658,11 @@ Demet dizini.
 
 Demet sonuna işaret eden bir yineleyici.
 
-##  <a name="unsafe_erase"></a>unsafe_erase
+## <a name="unsafe_erase"></a>unsafe_erase
 
 Belirtilen konumlarda `concurrent_unordered_multiset` öğeleri kaldırır. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 iterator unsafe_erase(
     const_iterator _Where);
 
@@ -679,8 +679,8 @@ size_type unsafe_erase(
 *_Where*<br/>
 Silinecek Yineleyici konumu.
 
-*first*<br/>
-*last*<br/>
+*adı*<br/>
+*soyadına*<br/>
 *KVal*<br/>
 Silinecek anahtar değer.
 
@@ -694,11 +694,11 @@ Silinecek anahtar değer.
 
 Üçüncü üye işlevi, [equal_range](#equal_range)(kval) ile ayrılmış aralıktaki öğeleri kaldırır.
 
-##  <a name="unsafe_max_bucket_count"></a>unsafe_max_bucket_count
+## <a name="unsafe_max_bucket_count"></a>unsafe_max_bucket_count
 
 Bu kapsayıcıdaki en fazla demet sayısını döndürür.
 
-```
+```cpp
 size_type unsafe_max_bucket_count() const;
 ```
 

@@ -7,20 +7,20 @@ f1_keywords:
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
-ms.openlocfilehash: c407c42e5c6a7035e911218ecb41c2da62967787
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7531a57dddcc85392380029afc6edd577bbc5cf3
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351150"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126388"
 ---
-# <a name="shortvectortraits-structure"></a>short_vector_traits Yapısı
+# <a name="short_vector_traits-structure"></a>short_vector_traits Yapısı
 
-temel alınan vektör uzunluğu ve skaler türde bir kısa vektör türü ya da bir skalar türü alma short_vector_traits sağlar
+short_vector_traits, bir kısa vektör türünün veya skaler türün temel vektör uzunluğunun ve skaler türünün alınmasına izin verir
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<
     typename T
 >
@@ -75,13 +75,13 @@ template<>
 struct short_vector_traits<double_4>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 `T`
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -91,13 +91,13 @@ struct short_vector_traits<double_4>;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[short_vector_traits::short_vector_traits Oluşturucusu](#ctor)||
+|[short_vector_traits:: short_vector_traits Oluşturucusu](#ctor)||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[short_vector_traits::size sabiti](#size)||
+|[short_vector_traits:: size sabiti](#size)||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -105,19 +105,19 @@ struct short_vector_traits<double_4>;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a>  short_vector_traits::short_vector_traits Oluşturucusu
+## <a name="ctor"></a>short_vector_traits:: short_vector_traits Oluşturucusu
 
-```
+```cpp
 short_vector_traits();
 ```
 
-##  <a name="size"></a>  short_vector_traits::size sabiti
+## <a name="size"></a>short_vector_traits:: size sabiti
 
-```
+```cpp
 static int const size = 1;
 ```
 

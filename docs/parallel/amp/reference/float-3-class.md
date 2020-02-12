@@ -74,26 +74,26 @@ f1_keywords:
 helpviewer_keywords:
 - amp_short_vectors/Concurrency::graphics::float_3
 ms.assetid: 209df7a5-08d7-48b4-8ba5-77603642cdd8
-ms.openlocfilehash: ff9d9391efaeef5051424675dacf1f14c35b30df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 259d008c9819eed631026fd106c01644bb1179cc
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180316"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126688"
 ---
-# <a name="float3-class"></a>float_3 Sınıfı
+# <a name="float_3-class"></a>float_3 Sınıfı
 
-Üç kayanın kısa vektörünü temsil eder.
+Üç float öğesinin kısa bir vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class float_3;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -103,7 +103,7 @@ class float_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[float_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[float_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -130,8 +130,8 @@ class float_3;
 |float_3::ref_x||
 |float_3::ref_y||
 |float_3::ref_z||
-|float_3::set_x||
-|float_3::set_xy||
+|float_3:: set_x||
+|float_3:: set_xy||
 |float_3::set_xyz||
 |float_3::set_xz||
 |float_3::set_xzy||
@@ -153,7 +153,7 @@ class float_3;
 |float_3::operator-||
 |float_3::operator--||
 |float_3::operator*=||
-|float_3::operator / =||
+|float_3:: operator/=||
 |float_3::operator++||
 |float_3::operator+=||
 |float_3::operator=||
@@ -163,34 +163,34 @@ class float_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#float_3__size)||
+|[Boyut sabiti](#float_3__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|float_3::b||
+|float_3:: b||
 |float_3::bg||
-|float_3::BGR||
+|float_3:: bgr||
 |float_3::br||
 |float_3::brg||
-|float_3::g||
-|float_3::GB||
+|float_3:: g||
+|float_3:: GB||
 |float_3::gbr||
-|float_3::Gr||
+|float_3:: gr||
 |float_3::grb||
-|float_3::r||
+|float_3:: r||
 |float_3::rb||
 |float_3::rbg||
 |float_3::rg||
 |float_3::rgb||
-|float_3::x||
-|float_3::xy||
-|float_3::xyz||
+|float_3:: x||
+|float_3:: XY||
+|float_3:: xyz||
 |float_3::xz||
 |float_3::xzy||
-|float_3::y||
-|float_3::yx||
+|float_3:: y||
+|float_3:: yx||
 |float_3::yxz||
 |float_3::yz||
 |float_3::yzx||
@@ -206,15 +206,15 @@ class float_3;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> float_3
+## <a name="ctor"></a>float_3
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 float_3() restrict(amp,
     cpu);
 
@@ -256,23 +256,23 @@ explicit inline float_3(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="float_3__size"></a> Boyutu
+## <a name="float_3__size"></a>boyutla
 
-```
+```cpp
 static const int size = 3;
 ```
 

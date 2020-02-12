@@ -28,26 +28,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unnorm_2::g
 - amp_short_vectors/Concurrency::graphics::unnorm_2::operator++
 ms.assetid: 62e88ea7-e29f-4f62-95ce-61a1f39f5e34
-ms.openlocfilehash: 33411511809fc9798f6fdf65f5331e2e587990ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 325a1532a079c8eff9c8dcdc5410dcbfe58fb914
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405501"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126220"
 ---
-# <a name="unorm2-class"></a>unorm_2 Sınıfı
+# <a name="unorm_2-class"></a>unorm_2 Sınıfı
 
-İki işaretsiz normal sayıdan oluşan bir kısa vektörü temsil eder.
+İki işaretsiz normal sayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class unorm_2;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -57,7 +57,7 @@ class unorm_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unorm_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[unorm_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -67,12 +67,12 @@ class unorm_2;
 |unorm_2::get_xy||
 |unorm_2::get_y||
 |unorm_2::get_yx||
-|unorm_2::ref_g||
+|unorm_2:: ref_g||
 |unorm_2::ref_r||
 |unorm_2::ref_x||
 |unorm_2::ref_y||
-|unorm_2::set_x||
-|unorm_2::set_xy||
+|unorm_2:: set_x||
+|unorm_2:: set_xy||
 |unorm_2::set_y||
 |unorm_2::set_yx||
 
@@ -82,7 +82,7 @@ class unorm_2;
 |----------|-----------------|
 |unorm_2::operator--||
 |unorm_2::operator*=||
-|unorm_2::operator / =||
+|unorm_2:: operator/=||
 |unorm_2::operator++||
 |unorm_2::operator+=||
 |unorm_2::operator=||
@@ -98,13 +98,13 @@ class unorm_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm_2::g||
-|unorm_2::Gr||
-|unorm_2::r||
+|unorm_2:: g||
+|unorm_2:: gr||
+|unorm_2:: r||
 |unorm_2::rg||
-|unorm_2::x||
-|unorm_2::xy||
-|unorm_2::y||
+|unorm_2:: x||
+|unorm_2:: XY||
+|unorm_2:: y||
 |unorm_2::yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -113,15 +113,15 @@ class unorm_2;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> unorm_2
+## <a name="ctor"></a>unorm_2
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 unorm_2() restrict(amp,
     cpu);
 
@@ -171,20 +171,20 @@ explicit inline unorm_2(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="unorm_2__size"></a> Boyutu
+## <a name="unorm_2__size"></a>boyutla
 
-```
+```cpp
 static const int size = 2;
 ```
 

@@ -11,20 +11,20 @@ f1_keywords:
 helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-ms.openlocfilehash: 2eff40b11e4e9a5981ad85c37c8345abefb13fed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fed33c198502b75e824bcaf698227d283f4b85f9
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337335"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142748"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy Sınıfı
 
-`SchedulerPolicy` Sınıfı içeren bir zamanlayıcı örneğini davranışını denetleyen anahtar/değer çiftleri, her ilke öğesi için bir dizi.
+`SchedulerPolicy` sınıfı, bir Zamanlayıcı örneğinin davranışını denetleyen her ilke öğesi için bir olan anahtar/değer çiftleri kümesi içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class SchedulerPolicy;
 ```
 
@@ -34,26 +34,26 @@ class SchedulerPolicy;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[SchedulerPolicy](#ctor)|Fazla Yüklendi. Yeni bir zamanlayıcı ilkesi oluşturur ve ile doldurur [ilke anahtarları](concurrency-namespace-enums.md) eşzamanlılık çalışma zamanı planlayıcıları ve kaynak yöneticisi tarafından desteklenir.|
-|[~ SchedulerPolicy yok Edicisi](#dtor)|Bir zamanlayıcı ilkesini yok eder.|
+|[SchedulerPolicy](#ctor)|Fazla Yüklendi. Yeni bir Zamanlayıcı İlkesi oluşturur ve Eşzamanlılık Çalışma Zamanı zamanlayıcılar ve Kaynak Yöneticisi tarafından desteklenen [ilke anahtarlarının](concurrency-namespace-enums.md) değerleriyle doldurur.|
+|[~ SchedulerPolicy yıkıcısı](#dtor)|Zamanlayıcı ilkesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[GetPolicyValue](#getpolicyvalue)|Olarak sağlanan ilke anahtarının değerini alır `key` parametresi.|
-|[SetConcurrencyLimits](#setconcurrencylimits)|Aynı anda ayarlar `MinConcurrency` ve `MaxConcurrency` ilkeleri `SchedulerPolicy` nesne.|
-|[SetPolicyValue](#setpolicyvalue)|Olarak sağlanan ilke anahtarının değerini ayarlar `key` parametresi ve eski değeri döndürür.|
+|[GetPolicyValue](#getpolicyvalue)|`key` parametresi olarak sağlanan ilke anahtarının değerini alır.|
+|[SetConcurrencyLimits](#setconcurrencylimits)|`SchedulerPolicy` nesnesindeki `MinConcurrency` ve `MaxConcurrency` ilkelerini eşzamanlı olarak ayarlar.|
+|[SetPolicyValue](#setpolicyvalue)|`key` parametresi olarak sağlanan ilke anahtarının değerini ayarlar ve eski değeri döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator=](#operator_eq)|Zamanlayıcı ilkesini başka bir zamanlayıcı ilkesini atar.|
+|[işleç =](#operator_eq)|Zamanlayıcı ilkesini başka bir Zamanlayıcı ilkesinden atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanılarak denetlenebilir ilkeleri hakkında daha fazla bilgi için `SchedulerPolicy` sınıfı [PolicyElementKey](concurrency-namespace-enums.md).
+`SchedulerPolicy` sınıfı kullanılarak denetlenebilecek ilkeler hakkında daha fazla bilgi için, bkz. [PolicyElementKey](concurrency-namespace-enums.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -61,57 +61,57 @@ Kullanılarak denetlenebilir ilkeleri hakkında daha fazla bilgi için `Schedule
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h, concrtrm.h
+**Üstbilgi:** concrt. h, concrtrm. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="getpolicyvalue"></a> GetPolicyValue
+## <a name="getpolicyvalue"></a>GetPolicyValue
 
-Olarak sağlanan ilke anahtarının değerini alır `key` parametresi.
+`key` parametresi olarak sağlanan ilke anahtarının değerini alır.
 
-```
+```cpp
 unsigned int GetPolicyValue(PolicyElementKey key) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-İçin bir değer almak için ilke anahtarı.
+İçin bir değer alınacak ilke anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen anahtar `key` parametresi desteklenen, anahtar ilke değeri dönüştürüldü bir `unsigned int`.
+`key` parametresi tarafından belirtilen anahtar destekleniyorsa, anahtarın bir `unsigned int`ataması için ilke değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) geçersiz ilke anahtarı.
+Yöntem geçersiz bir ilke anahtarı için [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) oluşturacak.
 
-##  <a name="operator_eq"></a> işleç =
+## <a name="operator_eq"></a>işleç =
 
-Zamanlayıcı ilkesini başka bir zamanlayıcı ilkesini atar.
+Zamanlayıcı ilkesini başka bir Zamanlayıcı ilkesinden atar.
 
-```
+```cpp
 SchedulerPolicy& operator= (const SchedulerPolicy& _RhsPolicy);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_RhsPolicy*<br/>
-Bu ilkenin atanacağı ilke.
+Bu ilkeye atanacak ilke.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Zamanlayıcı ilkesini bir başvuru.
+Zamanlayıcı ilkesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, varolan bir ilkeyi kopyalamak ve kullanarak değiştirmek için yeni bir zamanlayıcı ilkesini tanımlamanın en kolay yolu olan `SetPolicyValue` veya `SetConcurrencyLimits` yöntemleri.
+Genellikle, yeni bir Zamanlayıcı İlkesi tanımlamanın en kolay yolu, mevcut bir ilkeyi kopyalamak ve `SetPolicyValue` veya `SetConcurrencyLimits` yöntemlerini kullanarak değiştirmektir.
 
-##  <a name="ctor"></a> SchedulerPolicy
+## <a name="ctor"></a>SchedulerPolicy
 
-Yeni bir zamanlayıcı ilkesi oluşturur ve ile doldurur [ilke anahtarları](concurrency-namespace-enums.md) eşzamanlılık çalışma zamanı planlayıcıları ve kaynak yöneticisi tarafından desteklenir.
+Yeni bir Zamanlayıcı İlkesi oluşturur ve Eşzamanlılık Çalışma Zamanı zamanlayıcılar ve Kaynak Yöneticisi tarafından desteklenen [ilke anahtarlarının](concurrency-namespace-enums.md) değerleriyle doldurur.
 
-```
+```cpp
 SchedulerPolicy();
 
 SchedulerPolicy(
@@ -125,32 +125,32 @@ SchedulerPolicy(
 ### <a name="parameters"></a>Parametreler
 
 *_PolicyKeyCount*<br/>
-Sayısı, anahtar/değer çiftlerini izleyen `_PolicyKeyCount` parametresi.
+`_PolicyKeyCount` parametresini izleyen anahtar/değer çiftleri sayısı.
 
 *_SrcPolicy*<br/>
 Kopyalanacak kaynak ilkesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, tüm ilkelerin varsayılan değerlerine burada başlatılacağı yeni bir zamanlayıcı ilkesi oluşturur.
+İlk Oluşturucu, tüm ilkelerin varsayılan değerlerine başlatıldığı yeni bir Zamanlayıcı İlkesi oluşturur.
 
-İkinci oluşturucu isimli parametre stili başlatma kullanan yeni bir zamanlayıcı ilkesi oluşturur. Sonraki değerler `_PolicyKeyCount` parametresi, anahtar/değer çiftleri sağlanır. Bu oluşturucu içinde belirtilmemiş ilke anahtarları kendi varsayılan değerine sahip olacaktır. Bu oluşturucu özel durumlarını oluşturabilir [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md), [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) veya [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md).
+İkinci Oluşturucu, başlatma adlandırılmış parametre stilini kullanan yeni bir Zamanlayıcı İlkesi oluşturur. `_PolicyKeyCount` parametresinden sonraki değerler anahtar/değer çiftleri olarak sağlanır. Bu oluşturucuda belirtilmeyen herhangi bir ilke anahtarı varsayılan değerine sahip olacaktır. Bu Oluşturucu [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md), [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) veya [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md)özel durumları oluşturabilir.
 
-Üçüncü Oluşturucu bir kopya oluşturucudur. Genellikle, varolan bir ilkeyi kopyalamak ve kullanarak değiştirmek için yeni bir zamanlayıcı ilkesini tanımlamanın en kolay yolu olan `SetPolicyValue` veya `SetConcurrencyLimits` yöntemleri.
+Üçüncü Oluşturucu bir kopya oluşturucudur. Genellikle, yeni bir Zamanlayıcı İlkesi tanımlamanın en kolay yolu, mevcut bir ilkeyi kopyalamak ve `SetPolicyValue` veya `SetConcurrencyLimits` yöntemlerini kullanarak değiştirmektir.
 
-##  <a name="dtor"></a> ~ SchedulerPolicy
+## <a name="dtor"></a>~ SchedulerPolicy
 
-Bir zamanlayıcı ilkesini yok eder.
+Zamanlayıcı ilkesini yok eder.
 
-```
+```cpp
 ~SchedulerPolicy();
 ```
 
-##  <a name="setconcurrencylimits"></a> SetConcurrencyLimits
+## <a name="setconcurrencylimits"></a>SetConcurrencyLimits
 
-Aynı anda ayarlar `MinConcurrency` ve `MaxConcurrency` ilkeleri `SchedulerPolicy` nesne.
+`SchedulerPolicy` nesnesindeki `MinConcurrency` ve `MaxConcurrency` ilkelerini eşzamanlı olarak ayarlar.
 
-```
+```cpp
 void SetConcurrencyLimits(
     unsigned int _MinConcurrency,
     unsigned int _MaxConcurrency = MaxExecutionResources);
@@ -159,22 +159,22 @@ void SetConcurrencyLimits(
 ### <a name="parameters"></a>Parametreler
 
 *_MinConcurrency*<br/>
-Değeri `MinConcurrency` ilke anahtarı.
+`MinConcurrency` ilkesi anahtarının değeri.
 
 *_MaxConcurrency*<br/>
-Değeri `MaxConcurrency` ilke anahtarı.
+`MaxConcurrency` ilkesi anahtarının değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md) için belirtilen değer, `MinConcurrency` ilkesi için belirtilen'den büyük `MaxConcurrency` ilkesi.
+`MinConcurrency` ilkesi için belirtilen değer `MaxConcurrency` ilkesi için belirtilenden daha büyükse Yöntem [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md) oluşturur.
 
-Yöntemi de oluşturabilecek [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) diğer geçersiz değerler için.
+Yöntemi, diğer geçersiz değerler için [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) de oluşturabilir.
 
-##  <a name="setpolicyvalue"></a> SetPolicyValue
+## <a name="setpolicyvalue"></a>SetPolicyValue
 
-Olarak sağlanan ilke anahtarının değerini ayarlar `key` parametresi ve eski değeri döndürür.
+`key` parametresi olarak sağlanan ilke anahtarının değerini ayarlar ve eski değeri döndürür.
 
-```
+```cpp
 unsigned int SetPolicyValue(
     PolicyElementKey key,
     unsigned int value);
@@ -183,22 +183,22 @@ unsigned int SetPolicyValue(
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-İçin bir değer ayarlamak için ilke anahtarı.
+İçin bir değer ayarlanacak ilke anahtarı.
 
 *value*<br/>
-İlke anahtarı ayarlanacak değer.
+İlke anahtarının ayarlanacağı değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen anahtar `key` parametresi desteklenen, anahtar eski ilke değeri dönüştürüldü bir `unsigned int`.
+`key` parametresi tarafından belirtilen anahtar destekleniyorsa, anahtar için eski ilke değeri bir `unsigned int`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) geçersiz ilke anahtarı veya değeri tarafından ayarlanamaz ilke anahtarları `SetPolicyValue` yöntemi.
+Yöntemi, geçersiz bir ilke anahtarı ya da değeri `SetPolicyValue` yöntemi tarafından ayarlanmayacak olan herhangi bir ilke anahtarı için [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) oluşturur.
 
-Yöntemi [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) tarafından belirtilen anahtar için desteklenmeyen bir değer için `key` parametresi.
+Yöntem, `key` parametresi tarafından belirtilen anahtar için desteklenmeyen bir değer için [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) oluşturur.
 
-Bu yöntem ayarlamak için izin verilmiyor Not `MinConcurrency` veya `MaxConcurrency` ilkeleri. Bu değerleri ayarlamak için kullanın [SetConcurrencyLimits](#setconcurrencylimits) yöntemi.
+Bu yöntemin `MinConcurrency` veya `MaxConcurrency` ilkelerini ayarlamaya izin verilmediğini unutmayın. Bu değerleri ayarlamak için [SetConcurrencyLimits](#setconcurrencylimits) yöntemini kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -206,4 +206,4 @@ Bu yöntem ayarlamak için izin verilmiyor Not `MinConcurrency` veya `MaxConcurr
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [CurrentScheduler Sınıfı](currentscheduler-class.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
-[Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
+[Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

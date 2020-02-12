@@ -2,12 +2,12 @@
 title: Döşemeleri Kullanma
 ms.date: 11/19/2018
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-ms.openlocfilehash: 6c935134e033d12fc140c8d377ef59d0b47265fc
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: e5cedde255846f61ed0aaadacbd9966c00a03c9d
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518263"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126272"
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 
@@ -15,7 +15,7 @@ Döşeme kullanarak uygulamanızın hızlandırmasını en üst düzeye çıkara
 
 - `tile_static` değişkenleri. Döşeme 'nin birincil avantajı `tile_static` erişimine ait performans kazanımı olur. `tile_static` bellekteki verilere erişim, genel alanda (`array` veya `array_view` nesneleri) verilere erişimden önemli ölçüde daha hızlı olabilir. Her kutucuk için bir `tile_static` değişkeni örneği oluşturulur ve kutucuktaki tüm iş parçacıkları değişkene erişebilir. Tipik bir döşeli algoritmada, veriler genel bellekten bir kez `tile_static` belleğe kopyalanır ve sonra `tile_static` bellekten birçok kez erişilir.
 
-- [tile_barrier:: wait yöntemi](reference/tile-barrier-class.md#wait). `tile_barrier::wait` çağrısı, aynı kutucuktaki tüm iş parçacıkları `tile_barrier::wait`çağrısına ulaşana kadar geçerli iş parçacığının yürütülmesini askıya alır. İş parçacıklarının içinde çalışacağı sırayı garanti edemezsiniz; yalnızca kutucukta iş parçacıklarının, tüm iş parçacıkları çağrıya ulaşana kadar `tile_barrier::wait` çağrısı süresi üzerinden yürütülecektir. Bu, `tile_barrier::wait` yöntemi kullanılarak, iş parçacığı temelinde bir kutucuk temelinde görevler gerçekleştirebileceğiniz anlamına gelir. Tipik bir döşeme algoritması, tüm kutucuk için `tile_static` belleği başlatmak ve ardından `tile_barrer::wait`çağrısı olan kodu içerir. `tile_barrier::wait` aşağıdaki kod, tüm `tile_static` değerlerine erişim gerektiren hesaplamalar içerir.
+- [tile_barrier:: wait yöntemi](reference/tile-barrier-class.md#wait). `tile_barrier::wait` çağrısı, aynı kutucuktaki tüm iş parçacıkları `tile_barrier::wait`çağrısına ulaşana kadar geçerli iş parçacığının yürütülmesini askıya alır. İş parçacıklarının içinde çalışacağı sırayı garanti edemezsiniz; yalnızca kutucukta iş parçacıklarının, tüm iş parçacıkları çağrıya ulaşana kadar `tile_barrier::wait` çağrısı süresi üzerinden yürütülecektir. Bu, `tile_barrier::wait` yöntemi kullanılarak, iş parçacığı temelinde bir kutucuk temelinde görevler gerçekleştirebileceğiniz anlamına gelir. Tipik bir döşeme algoritması, tüm kutucuk için `tile_static` belleği başlatmak ve ardından `tile_barrier::wait`çağrısı olan kodu içerir. `tile_barrier::wait` aşağıdaki kod, tüm `tile_static` değerlerine erişim gerektiren hesaplamalar içerir.
 
 - Yerel ve Genel dizin oluşturma. Tüm `array_view` veya `array` nesnesi ile ilişkili iş parçacığının dizinine ve kutucuğa göre dizine erişiminiz vardır. Yerel dizini kullanmak, kodunuzun okunmasını ve hata ayıklamasına daha kolay bir hale getirir. Genellikle, `tile_static` değişkenlerine erişmek için yerel dizin oluşturma ve `array` ve `array_view` değişkenlerine erişmek için genel dizin oluşturma kullanırsınız.
 
@@ -234,7 +234,7 @@ void SamplingExample() {
         }
         std::cout << "\n";
     }
-    // Output for SAMPLESSIZE = 2 is:
+    // Output for SAMPLESIZE = 2 is:
     //  4.5  6.5  8.5 10.5
     // 20.5 22.5 24.5 26.5
     // 36.5 38.5 40.5 42.5

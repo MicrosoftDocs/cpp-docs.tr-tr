@@ -6,20 +6,20 @@ f1_keywords:
 - AMP_SHORT_VECTORS/short_vector
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
-ms.openlocfilehash: 012a70ae628a896c8202e46a5624f37f58b0781b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 531b8d53eac8d997b7e8ca4d29aad7d34ef90e22
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351553"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126441"
 ---
-# <a name="shortvector-structure"></a>short_vector Yapısı
+# <a name="short_vector-structure"></a>short_vector Yapısı
 
-short_vector kısa vektörleri genel programlama için yararlı olan azaltılarak tanımları sağlar.
+short_vector, kısa vektörlerini genelden programlamak için yararlı olan metaprogramlama tanımları sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<
     typename _Scalar_type,
     int _Size
@@ -75,15 +75,15 @@ template<>
 struct short_vector<double, 4>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_Scalar_type*<br/>
 
-*_Boyut*<br/>
+*_Size*<br/>
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -93,7 +93,7 @@ struct short_vector<double, 4>;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[short_vector::short_vector Oluşturucusu](#ctor)||
+|[short_vector:: short_vector Oluşturucusu](#ctor)||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -101,13 +101,13 @@ struct short_vector<double, 4>;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a>  short_vector::short_vector Oluşturucusu
+## <a name="ctor"></a>short_vector:: short_vector Oluşturucusu
 
-```
+```cpp
 short_vector();
 ```
 

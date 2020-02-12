@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Clipboard, programming
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-ms.openlocfilehash: d405a7bbe15d2658380e19c1c908e57f2e40a574
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1db089110904ab88eb9c0c111d9da4e4e6869c82
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508936"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127913"
 ---
 # <a name="clipboard"></a>Pano
 
@@ -21,7 +21,7 @@ Bu makale ailesinde MFC uygulamalarında Windows panosuna yönelik desteğin nas
 
 - Kes, Kopyala ve Yapıştır gibi standart düzenleme menü komutlarını uygulama.
 
-- Sürükleme ve bırakma (OLE) ile Tekdüzen veri aktarımını uygulama.
+- OLE sürükle ve bırak ile Tekdüzen veri aktarımı uygulama.
 
 Pano, verileri bir kaynak ve hedef arasında aktarmaya yönelik standart Windows yöntemidir. OLE işlemlerinde de çok yararlı olabilir. OLE 'nin KAG 'i ile Windows 'da iki Pano mekanizması vardır. Standart Windows Pano API 'SI yine de kullanılabilir, ancak OLE veri aktarım mekanizmasıyla takıma sunuldu. OLE Tekdüzen veri aktarımı (UDT) Pano ile kesme, kopyalama ve yapıştırmayı destekler ve sürükleyip bırakın.
 
@@ -41,7 +41,7 @@ Pano, tüm Windows oturumu tarafından paylaşılan bir sistem hizmetidir, bu ne
 
 - [Windows Panosu](/windows/win32/dataxchg/clipboard)
 
-- [Sürükleme ve bırakma uygulama (OLE)](../mfc/drag-and-drop-ole.md)
+- [OLE sürükle ve bırak](../mfc/drag-and-drop-ole.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,20 +7,20 @@ f1_keywords:
 - PPL/concurrency::task_group::task_group
 helpviewer_keywords:
 - task_group class
-ms.openlocfilehash: 545b368b3042da74a42db5a6ea30e97054d5fd03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60c147f38ddc3936f47aea0cfd1ab1548b382441
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180186"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142560"
 ---
-# <a name="taskgroup-class"></a>task_group Sınıfı
+# <a name="task_group-class"></a>task_group Sınıfı
 
-`task_group` Sınıf beklenen veya iptal edilen paralel iş koleksiyonunu temsil eder.
+`task_group` sınıfı, beklemiş veya iptal edilebilir bir paralel çalışma koleksiyonunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class task_group;
 ```
 
@@ -30,24 +30,24 @@ class task_group;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[task_group](#ctor)|Fazla Yüklendi. Yeni bir oluşturur `task_group` nesne.|
-|[~ task_group yok Edicisi](#dtor)|Yok eder bir `task_group` nesne. Çağırın ya da beklenir `wait` veya `run_and_wait` yok Edicisi sonucunda, bir özel durum nedeniyle geriye doğru izleme yığın Yürütülüyor sürece yok Edicisi, yürütmeden önce nesnesi üzerinde yöntemi.|
+|[task_group](#ctor)|Fazla Yüklendi. Yeni bir `task_group` nesnesi oluşturur.|
+|[~ task_group yok edici](#dtor)|`task_group` nesnesini yok eder. Bir özel durum nedeniyle yığın geri sarma sonucu olarak yürütülemediği sürece, yıkıcı yürütmeden önce nesnedeki `wait` veya `run_and_wait` yöntemini çağırmanız beklenmektedir.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[İptal](#cancel)|Alt ağaç bu görev grubu kökü çalışmanın iptal edilmesi girişimi bir en iyi hale getirir. Her görev, görev grubuna zamanlanmış geçişli mümkünse iptal.|
-|[is_canceling](#is_canceling)|Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da `true`). Bu durum olabilir, `task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `task_group` nesnesi `true` da döndürülür.|
-|[run](#run)|Fazla Yüklendi. Üzerinde bir görevi zamanlar `task_group` nesne. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne. Yığın ayırma olabilen çalışma zamanı içinde bir parametre içerir yönteminin bir işlev nesnesine bir başvuru alan sürümünü gerçekleştirmek için bir başvuru alan sürümü kullanmaktan daha az iyi bir `task_handle` nesne. Parametre alan sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
-|[run_and_wait](#run_and_wait)|Fazla Yüklendi. Satır içi arama bağlamda Yardımı ile çalışması için bir görevi zamanlar `task_group` tam iptal desteği için nesne. İşlevi, ardından tüm çalıştığı bekler `task_group` nesne tamamlandı veya iptal edildi. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run_and_wait`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne.|
-|[bekleme](#wait)|Tüm çalıştığı bekler `task_group` nesne tamamlandı veya iptal edildi.|
+|[İptal](#cancel)|Bu görev grubunda kök olarak çalışan çalışmanın alt ağacını iptal etmeye yönelik en iyi çabayı sağlar. Görev grubunda zamanlanan her görev, mümkünse geçişli olarak iptal edilir.|
+|[is_canceling](#is_canceling)|Görev grubunun şu anda bir iptal etme ortatına bağlı olup olmadığına bakılmaksızın çağrıyı bilgilendirir. Bu, `cancel` yönteminin `task_group` nesnesi üzerinde çağrıldığı anlamına gelmez (Bu nedenle, bu yöntem `true`döndürmek için bu yöntemi nitelendirir). `task_group` nesnenin satır içi yürütülmesi ve iş ağacında daha fazla görev grubunun iptal edilmesi durumunda olabilir. Çalışma zamanının, İptalin bu `task_group` nesne üzerinden akacağı zamandan önce belirleyebildiği durumlar gibi durumlarda, `true` de döndürülür.|
+|[çalışmaz](#run)|Fazla Yüklendi. `task_group` nesnesinde bir görevi zamanlar. Bir `task_handle` nesnesi `run`bir parametre olarak geçirilirse, çağıran `task_handle` nesnesinin kullanım ömrünü yönetmekten sorumludur. Bir parametre olarak bir işlev nesnesine başvuru alan yöntemin sürümü, bir `task_handle` nesnesine başvuru alan sürümü kullanmaktan daha az iyi bir şekilde gerçekleştirilebilen çalışma zamanının içindeki yığın ayırmayı içerir. `_Placement` parametresini alan sürüm, görevin, bu parametre tarafından belirtilen konumda yürütülmeye yaklaşmasına neden olur.|
+|[run_and_wait](#run_and_wait)|Fazla Yüklendi. Tam iptal desteği için `task_group` nesnenin yardımı ile, çağıran bağlamda satır içi çalışacak şekilde bir görev zamanlar. İşlev daha sonra, `task_group` nesnesi üzerindeki tüm işler tamamlanana ya da iptal edilene kadar bekler. Bir `task_handle` nesnesi `run_and_wait`bir parametre olarak geçirilirse, çağıran `task_handle` nesnesinin kullanım ömrünü yönetmekten sorumludur.|
+|[bekleneceğini](#wait)|`task_group` nesnesi üzerindeki tüm işler tamamlanana ya da iptal edilene kadar bekler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yoğun kısıtlı aksine `structured_task_group` sınıfı `task_group` daha genel yapısı bir sınıftır. Herhangi bir kısıtlama tarafından açıklanan yok [structured_task_group](structured-task-group-class.md). `task_group` nesneleri güvenli bir şekilde iş parçacıkları arasında kullanılabilir ve serbest biçimli yollarla kullanılan. Dezavantajı `task_group` yapıdır değil gerçekleştirebilir ve `structured_task_group` küçük miktarda iş gerçekleştirmek için Görevler oluşturun.
+Yoğun olarak kısıtlanmış `structured_task_group` sınıftan farklı olarak, `task_group` sınıfı çok daha genel bir yapıdır. [Structured_task_group](structured-task-group-class.md)tarafından tanımlanan herhangi bir kısıtlama yoktur. `task_group` nesneler, iş parçacıkları genelinde güvenli bir şekilde kullanılabilir ve serbest biçimli yollarla kullanılır. `task_group` yapısının dezavantajı, küçük miktarlarda iş gerçekleştiren görevler için `structured_task_group` yapısını da gerçekleştiremeyebilir.
 
-Daha fazla bilgi için [görev Paralelliği](../task-parallelism-concurrency-runtime.md).
+Daha fazla bilgi için bkz. [Görev Paralelliği](../task-parallelism-concurrency-runtime.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,43 +55,43 @@ Daha fazla bilgi için [görev Paralelliği](../task-parallelism-concurrency-run
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ppl.h
+**Üstbilgi:** PPL. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="cancel"></a> İptal
+## <a name="cancel"></a>İptal
 
-Alt ağaç bu görev grubu kökü çalışmanın iptal edilmesi girişimi bir en iyi hale getirir. Her görev, görev grubuna zamanlanmış geçişli mümkünse iptal.
+Bu görev grubunda kök olarak çalışan çalışmanın alt ağacını iptal etmeye yönelik en iyi çabayı sağlar. Görev grubunda zamanlanan her görev, mümkünse geçişli olarak iptal edilir.
 
-```
+```cpp
 void cancel();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [iptal](../cancellation-in-the-ppl.md).
+Daha fazla bilgi için bkz. [iptal](../cancellation-in-the-ppl.md).
 
-##  <a name="is_canceling"></a> is_canceling
+## <a name="is_canceling"></a>is_canceling
 
-Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da `true`). Bu durum olabilir, `task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `task_group` nesnesi `true` da döndürülür.
+Görev grubunun şu anda bir iptal etme ortatına bağlı olup olmadığına bakılmaksızın çağrıyı bilgilendirir. Bu, `cancel` yönteminin `task_group` nesnesi üzerinde çağrıldığı anlamına gelmez (Bu nedenle, bu yöntem `true`döndürmek için bu yöntemi nitelendirir). `task_group` nesnenin satır içi yürütülmesi ve iş ağacında daha fazla görev grubunun iptal edilmesi durumunda olabilir. Çalışma zamanının, İptalin bu `task_group` nesne üzerinden akacağı zamandan önce belirleyebildiği durumlar gibi durumlarda, `true` de döndürülür.
 
-```
+```cpp
 bool is_canceling();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir gösterge olup `task_group` nesne ortasında iptal (veya kısa süre içinde olması sağlanır).
+`task_group` nesnesinin bir iptal etme ortalığının (veya kısa bir süre içinde olup olmadığı) bir göstergesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [iptal](../cancellation-in-the-ppl.md).
+Daha fazla bilgi için bkz. [iptal](../cancellation-in-the-ppl.md).
 
-##  <a name="run"></a> Çalıştırma
+## <a name="run"></a>çalışmaz
 
-Üzerinde bir görevi zamanlar `task_group` nesne. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne. Yığın ayırma olabilen çalışma zamanı içinde bir parametre içerir yönteminin bir işlev nesnesine bir başvuru alan sürümünü gerçekleştirmek için bir başvuru alan sürümü kullanmaktan daha az iyi bir `task_handle` nesne. Parametre alan sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.
+`task_group` nesnesinde bir görevi zamanlar. Bir `task_handle` nesnesi `run`bir parametre olarak geçirilirse, çağıran `task_handle` nesnesinin kullanım ömrünü yönetmekten sorumludur. Bir parametre olarak bir işlev nesnesine başvuru alan yöntemin sürümü, bir `task_handle` nesnesine başvuru alan sürümü kullanmaktan daha az iyi bir şekilde gerçekleştirilebilen çalışma zamanının içindeki yığın ayırmayı içerir. `_Placement` parametresini alan sürüm, görevin, bu parametre tarafından belirtilen konumda yürütülmeye yaklaşmasına neden olur.
 
-```
+```cpp
 template<
    typename _Function
 >
@@ -126,30 +126,30 @@ void run(
 ### <a name="parameters"></a>Parametreler
 
 *_Function*<br/>
-Görev tanıtıcısını gövdesi yürütme için çağrılacak işlev nesnesinin türü.
+Görev tanıtıcısının gövdesini yürütmek için çağrılacak işlev nesnesinin türü.
 
 *_Func*<br/>
-Görevin çağırmak için çağrılacak işlev. Bu bir lambda ifadesi veya işlev çağrısı işleci imzalı sürümünü destekleyen başka bir nesneyi olabilir `void operator()()`.
+Görevin gövdesini çağırmak için çağrılacak bir işlev. Bu bir lambda ifadesi veya imza `void operator()()`işlev çağrısı işlecinin bir sürümünü destekleyen başka bir nesne olabilir.
 
-*Y_erleştirme*<br/>
-Görevi nerede temsil ettiği konumuna yönelik bir başvuru `_Func` parametre yürütün.
+*_Placement*<br/>
+`_Func` parametresi tarafından temsil edilen görevin yürütüleceği konuma bir başvuru.
 
 *_Task_handle*<br/>
-Zamanlanmış iş için bir tanıtıcı. Çağıranın bu nesnenin ömrünü sorumluluğunu olduğuna dikkat edin. Çalışma zamanı kadar Canlı beklediğiniz devam edecek `wait` veya `run_and_wait` bu yöntemi çağrıldıktan `task_group` nesne.
+Zamanlanmakta olan iş için bir tanıtıcı. Çağıranın bu nesnenin kullanım ömrü için sorumluluğa sahip olduğunu unutmayın. Çalışma zamanı, bu `task_group` nesnesinde `wait` veya `run_and_wait` yöntemi çağrılana kadar canlı olmaya devam edecektir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı, sonra çağıran işlevin verir olabilen daha sonraki bir zamanda, çalıştırmak için sağlanan çalışma işlevi zamanlar. Bu yöntemde bir [task_handle](task-handle-class.md) sağlanan çalışma işlevi bir kopyasını tutacak nesne. Bu nedenle, bu yönteme geçirin bir işlev nesnesi içinde gerçekleşen durumu değişiklikleri, bu işlev nesnesi kopyanızda görünmez. Ayrıca, iş işlev dönene kadar işaretçi veya başvuruya iş işleve göre geçirdiğiniz tüm nesnelerin ömrünü geçerli kalır emin olun.
+Çalışma zamanı, belirtilen çalışma işlevini daha sonraki bir zamanda çalışacak şekilde zamanlar ve bu, çağırma işlevi geri döndüğünde olabilir. Bu yöntem, belirtilen çalışma işlevinin bir kopyasını tutmak için bir [task_handle](task-handle-class.md) nesnesi kullanır. Bu nedenle, bu yönteme geçirdiğiniz bir işlev nesnesinde oluşan tüm durum değişiklikleri, bu işlev nesnesinin kopyasında görünmez. Ayrıca, işaretçi veya iş işlevine başvuru ile geçirdiğiniz nesnelerin kullanım ömrünün, iş işlevi görünene kadar geçerli kalmasını sağlayın.
 
-Varsa `task_group` destructs yığını bir özel durumdan geriye doğru izleme sonucu olarak, gerekmez çağrı olarak yapıldığını garanti `wait` veya `run_and_wait` yöntemi. Bu durumda, yok edici uygun şekilde iptal edip tarafından temsil edilen bir görevi beklerken `_Task_handle` tamamlamak için parametre.
+Yığın bir özel durumdan geri sarma sonucu olarak `task_group`, `wait` veya `run_and_wait` yöntemine bir çağrının yapıldığını garanti etmeniz gerekmez. Bu durumda, yıkıcı uygun şekilde iptal eder ve `_Task_handle` parametresi tarafından temsil edilen görevin tamamlanmasını bekler.
 
-Çağırılıyorsa yöntem bir [invalid_multiple_scheduling](invalid-multiple-scheduling-class.md) görev işleme özel durum tarafından verilen `_Task_handle` parametresi zaten zamanlandı bir görev grubu nesnesi üzerine `run` yöntemi ve olmuştur yok bölen çağrı tersini belirtmediği için ya da `wait` veya `run_and_wait` bu görev grubunda yöntemi.
+`_Task_handle` parametresi tarafından verilen görev tanıtıcısı, `run` yöntemi aracılığıyla bir görev grubu nesnesi üzerinde zaten zamanlanmışsa ve bu görev grubunda `wait` veya `run_and_wait` yöntemine aradaki bir çağrı yoksa, yöntemi [invalid_multiple_scheduling](invalid-multiple-scheduling-class.md) bir özel durum oluşturur.
 
-##  <a name="run_and_wait"></a> run_and_wait
+## <a name="run_and_wait"></a>run_and_wait
 
-Satır içi arama bağlamda Yardımı ile çalışması için bir görevi zamanlar `task_group` tam iptal desteği için nesne. İşlevi, ardından tüm çalıştığı bekler `task_group` nesne tamamlandı veya iptal edildi. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run_and_wait`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne.
+Tam iptal desteği için `task_group` nesnenin yardımı ile, çağıran bağlamda satır içi çalışacak şekilde bir görev zamanlar. İşlev daha sonra, `task_group` nesnesi üzerindeki tüm işler tamamlanana ya da iptal edilene kadar bekler. Bir `task_handle` nesnesi `run_and_wait`bir parametre olarak geçirilirse, çağıran `task_handle` nesnesinin kullanım ömrünü yönetmekten sorumludur.
 
-```
+```cpp
 template<
    class _Function
 >
@@ -168,33 +168,33 @@ task_group_status run_and_wait(
 ### <a name="parameters"></a>Parametreler
 
 *_Function*<br/>
-Görevin yürütmek için çağrılacak işlev nesnesinin türü.
+Görevin gövdesini yürütmek için çağrılacak işlev nesnesinin türü.
 
 *_Task_handle*<br/>
-Satır içi arama bağlamda çalıştırılacak görev için bir tanıtıcı. Çağıranın bu nesnenin ömrünü sorumluluğunu olduğuna dikkat edin. Çalışma zamanı kadar Canlı beklediğiniz devam edecek `run_and_wait` yöntemi yürütme biter.
+Bir görev için, çağıran bağlamda satır içi çalıştırılacak bir tanıtıcı. Çağıranın bu nesnenin kullanım ömrü için sorumluluğa sahip olduğunu unutmayın. Çalışma zamanı `run_and_wait` yöntemi yürütmeyi bitirene kadar canlı olmaya devam edecektir.
 
 *_Func*<br/>
-İş gövdesi çağırmak için çağrılacak işlev. Bu bir lambda ifadesi veya işlev çağrısı işleci imzalı sürümünü destekleyen başka bir nesneyi olabilir `void operator()()`.
+İşin gövdesini çağırmak için çağrılacak bir işlev. Bu bir lambda ifadesi veya imza `void operator()()`işlev çağrısı işlecinin bir sürümünü destekleyen başka bir nesne olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir gösterge olup bekleme memnun ettiyse veya görev grubu, bir açık İptal işlemi veya görevleri birinden oluşturulan bir özel durum nedeniyle iptal edildi. Daha fazla bilgi için [task_group_status](concurrency-namespace-enums.md#task_group_status).
+Açık bir iptal işlemi veya görevlerinin birinden bir özel durum oluştuğundan, bekleme işleminin karşılanıp karşılanmadığını veya görev grubunun iptal edildiğini belirten bir gösterge. Daha fazla bilgi için bkz. [task_group_status](concurrency-namespace-enums.md#task_group_status).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazlası için zamanlanmış görevleri Not `task_group` nesne satır içi arama bağlamda yürütme.
+Bu `task_group` nesnesine zamanlanan görevlerden bir veya daha fazlası, çağıran bağlamda satır içi yürütebileceğini unutmayın.
 
-Bir veya daha fazlası için zamanlanmış görevlerin `task_group` nesnesi, bir özel durum oluşturursa, çalışma zamanı kendi seçtiğiniz bir tür özel durumu seçin ve çağrı dışına yayan `run_and_wait` yöntemi.
+Bu `task_group` nesnesine zamanlanan görevlerden bir veya daha fazlası bir özel durum oluşturursa, çalışma zamanı bu tür bir özel durum seçer ve `run_and_wait` yöntemine yapılan çağrıdan yayılır.
 
-Geri döndürme işlevi üzerine `run_and_wait` metodunda bir `task_group` nesnesi, çalışma zamanı nesne Burada, yeniden kullanılabilir bir temiz durumuna sıfırlar. Bu durum içerir burada `task_group` nesnesi iptal edildi.
+Bir `task_group` nesnesindeki `run_and_wait` yönteminden geri dönene sonra, çalışma zamanı nesneyi yeniden kullanılabilen temiz bir duruma sıfırlar. Bu, `task_group` nesnesinin iptal edildiği durumu içerir.
 
-Yürütme özel durumlu olmayan yolunda ya da bu yöntemi çağırmak için olan uyumluluğunu doğrulamıştır olması veya `wait` yöntemi yok edicisinde önce `task_group` yürütür.
+Yürütmenin özel olmayan yolunda, bu yöntemi çağırmak için bir mantarih veya `task_group` yıkıcıdan önce `wait` yöntemi gerekir.
 
-##  <a name="ctor"></a> task_group
+## <a name="ctor"></a>task_group
 
-Yeni bir oluşturur `task_group` nesne.
+Yeni bir `task_group` nesnesi oluşturur.
 
-```
+```cpp
 task_group();
 
 task_group(
@@ -205,45 +205,45 @@ task_group(
 ### <a name="parameters"></a>Parametreler
 
 *_CancellationToken*<br/>
-Bu görev grubu ile ilişkilendirilecek iptal belirteci. Belirteç iptal edildiğinde görev grubunu iptal edilir.
+Bu görev grubuyla ilişkilendirilecek iptal belirteci. Belirteç iptal edildiğinde görev grubu iptal edilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İptali belirteci alan oluşturucu bir `task_group` , iptal edilemez belirteçle ilişkili kaynak iptal edildiğinde. Bir açık bir iptal belirteci sağlayan örtük bir iptal belirteci yok ya da farklı bir belirteç ile bir üst gruptan katılan bu görev grubunun yalıtır.
+İptal belirteci alan Oluşturucu, belirteç ile ilişkili kaynak iptal edildiğinde iptal edilecek bir `task_group` oluşturur. Açık bir iptal belirteci sağlamak, bu görev grubunu bir üst gruptan farklı bir belirteç veya belirteç olmadan örtük bir iptal etme işleminden de yalıtır.
 
-##  <a name="dtor"></a> ~ task_group
+## <a name="dtor"></a>~ task_group
 
-Yok eder bir `task_group` nesne. Çağırın ya da beklenir `wait` veya `run_and_wait` yok Edicisi sonucunda, bir özel durum nedeniyle geriye doğru izleme yığın Yürütülüyor sürece yok Edicisi, yürütmeden önce nesnesi üzerinde yöntemi.
+`task_group` nesnesini yok eder. Bir özel durum nedeniyle yığın geri sarma sonucu olarak yürütülemediği sürece, yıkıcı yürütmeden önce nesnedeki `wait` veya `run_and_wait` yöntemini çağırmanız beklenmektedir.
 
-```
+```cpp
 ~task_group();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok edici normal yürütmenin (bir özel durum nedeniyle yığını geriye doğru izleme gibi değil) ve birinin diğerinden sonucu olarak çalışıyorsa `wait` ya da `run_and_wait` yöntemi çağrılır, yok edici oluşturabilecek bir [missing_wait](missing-wait-class.md) özel durum.
+Yıkıcı normal yürütmenin sonucu olarak çalışırsa (örneğin, bir özel durum nedeniyle yığın geri sarma değil) ve `wait` ya da `run_and_wait` yöntemleri çağrılmadıysa, yıkıcı bir [missing_wait](missing-wait-class.md) özel durumu oluşturabilir.
 
-##  <a name="wait"></a> bekleme
+## <a name="wait"></a>bekleneceğini
 
-Tüm çalıştığı bekler `task_group` nesne tamamlandı veya iptal edildi.
+`task_group` nesnesi üzerindeki tüm işler tamamlanana ya da iptal edilene kadar bekler.
 
-```
+```cpp
 task_group_status wait();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir gösterge olup bekleme memnun ettiyse veya görev grubu, bir açık İptal işlemi veya görevleri birinden oluşturulan bir özel durum nedeniyle iptal edildi. Daha fazla bilgi için [task_group_status](concurrency-namespace-enums.md#task_group_status).
+Açık bir iptal işlemi veya görevlerinin birinden bir özel durum oluştuğundan, bekleme işleminin karşılanıp karşılanmadığını veya görev grubunun iptal edildiğini belirten bir gösterge. Daha fazla bilgi için bkz. [task_group_status](concurrency-namespace-enums.md#task_group_status).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazlası için zamanlanmış görevleri Not `task_group` nesne satır içi arama bağlamda yürütme.
+Bu `task_group` nesnesine zamanlanan görevlerden bir veya daha fazlası, çağıran bağlamda satır içi yürütebileceğini unutmayın.
 
-Bir veya daha fazlası için zamanlanmış görevlerin `task_group` nesnesi, bir özel durum oluşturursa, çalışma zamanı kendi seçtiğiniz bir tür özel durumu seçin ve çağrı dışına yayan `wait` yöntemi.
+Bu `task_group` nesnesine zamanlanan görevlerden bir veya daha fazlası bir özel durum oluşturursa, çalışma zamanı bu tür bir özel durum seçer ve `wait` yöntemine yapılan çağrıdan yayılır.
 
-Çağırma `wait` üzerinde bir `task_group` nesne Burada, yeniden kullanılabilir bir temiz durumuna sıfırlar. Bu durum içerir burada `task_group` nesnesi iptal edildi.
+Bir `task_group` nesnesi üzerinde `wait` çağırmak, onu yeniden kullanılabilen temiz bir duruma sıfırlar. Bu, `task_group` nesnesinin iptal edildiği durumu içerir.
 
-Yürütme özel durumlu olmayan yolunda ya da bu yöntemi çağırmak için olan uyumluluğunu doğrulamıştır olması veya `run_and_wait` yöntemi yok edicisinde önce `task_group` yürütür.
+Yürütmenin özel olmayan yolunda, bu yöntemi çağırmak için bir mantarih veya `task_group` yıkıcıdan önce `run_and_wait` yöntemi gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

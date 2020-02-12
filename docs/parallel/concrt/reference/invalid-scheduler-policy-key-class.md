@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_scheduler_policy_key class
 ms.assetid: 6a7c42fe-9bc4-4a02-bebb-99fe9ef9817d
-ms.openlocfilehash: 1bc2f1cffdeba5f81bd96932ecef23a563fac351
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 60d5a57ff9cb33a3d522c14514f5107844216852
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341105"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143020"
 ---
-# <a name="invalidschedulerpolicykey-class"></a>invalid_scheduler_policy_key Sınıfı
+# <a name="invalid_scheduler_policy_key-class"></a>invalid_scheduler_policy_key Sınıfı
 
-Bu sınıf geçersiz olduğunda oluşturulan bir özel durumu açıklayan veya bilinmeyen anahtarı geçirildiğinde bir `SchedulerPolicy` nesne Oluşturucu, veya `SetPolicyValue` yöntemi bir `SchedulerPolicy` nesnesi gibi diğer araçları kullanarak değiştirmesi gereken bir anahtarı geçirildi `SetConcurrencyLimits` yöntemi.
+Bu sınıf, `SchedulerPolicy` nesne oluşturucusuna geçersiz veya bilinmeyen bir anahtar geçirildiğinde oluşturulan bir özel durumu açıklar veya bir `SchedulerPolicy` nesnesinin `SetPolicyValue` yöntemine `SetConcurrencyLimits` yöntemi gibi diğer yollarla değiştirilmesi gereken bir anahtar geçirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class invalid_scheduler_policy_key : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class invalid_scheduler_policy_key : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_scheduler_policy_key](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_scheduler_policy_key` nesne.|
+|[invalid_scheduler_policy_key](#ctor)|Fazla Yüklendi. `invalid_scheduler_policy_key` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class invalid_scheduler_policy_key : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> invalid_scheduler_policy_key
+## <a name="ctor"></a>invalid_scheduler_policy_key
 
-Oluşturur bir `invalid_scheduler_policy_key` nesne.
+`invalid_scheduler_policy_key` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP invalid_scheduler_policy_key(_In_z_ const char* _Message) throw();
 
 invalid_scheduler_policy_key() throw();
@@ -57,7 +57,7 @@ invalid_scheduler_policy_key() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

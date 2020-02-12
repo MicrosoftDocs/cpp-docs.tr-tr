@@ -7,109 +7,109 @@ helpviewer_keywords:
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-ms.openlocfilehash: 810d77abd37ff2c6f29e980b84645d16526744d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b50c943bb83c587ab4001556b1143f9d5f868a0b
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412697"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142927"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanına Genel Bakış
 
-Bu belge, eşzamanlılık çalışma zamanına genel bakış sağlar. Eşzamanlılık Çalışma zamanı avantajlarını açıklar ne zaman kullanılmalı ve bileşenlerinin birbirleriyle ve işletim sistemi ve uygulamalar ile nasıl etkileşim.
+Bu belgede Eşzamanlılık Çalışma Zamanı bir genel bakış sunulmaktadır. Eşzamanlılık Çalışma Zamanı avantajları, ne zaman kullanılacağı ve bileşenlerinin birbirleriyle ve işletim sistemi ile uygulamalarla nasıl etkileşime gireceğini açıklar.
 
-##  <a name="top"></a> Bölümleri
+## <a name="top"></a>Başlıklı
 
 Bu belgede aşağıdaki bölümler yer alır:
 
-- [Eşzamanlılık Çalışma zamanı uygulama geçmişi](#dlls)
+- [Eşzamanlılık Çalışma Zamanı uygulama geçmişi](#dlls)
 
-- [Eşzamanlılık Çalışma Zamanı Modülü önemli neden?](#runtime)
+- [Eşzamanlılık için çalışma zamanının neden önemli olduğunu](#runtime)
 
 - [Mimari](#architecture)
 
-- [C++ Lambda Expressions](#lambda)
+- [C++Lambda Ifadeleri](#lambda)
 
-- [Gereksinimler](#requirements)
+- [Requirements](#requirements)
 
-## <a name="dlls"></a> Eşzamanlılık Çalışma zamanı uygulama geçmişi
+## <a name="dlls"></a>Eşzamanlılık Çalışma Zamanı uygulama geçmişi
 
-Eşzamanlılık Çalışma zamanı, 2013 aracılığıyla Visual Studio 2010'da msvcr100.dll msvcr120.dll aracılığıyla içinde dahil edilmiştir.  Bu DLL, yeniden düzenleme UCRT Visual Studio 2015'te oluştuğunda, üç bölüme yeniden düzenlenmeden:
+Visual Studio 2010 ile 2013 arasında, Eşzamanlılık Çalışma Zamanı Msvcr120. dll aracılığıyla Msvcr100. dll içinde eklenmiştir.  Visual Studio 2015 ' de UıCRT yeniden düzenlemesi gerçekleştiği zaman, bu DLL üç parçaya yeniden düzenlenmiş.
 
-- alt düzey aracılığıyla Windows Update - hizmet ve Windows 10'da sevk ucrtbase.dll – C API
+- uıcrtbase. dll – C API, Windows 10 ' da ve Windows Update ile alt düzey olarak sevk edilen
 
-- tetiklenen, vcruntime140.dll – derleyici işlevleri ve Visual Studio ile birlikte gelen EH çalışma zamanı desteği
+- vcruntime140. dll – Visual Studio ile gönderilen derleyici desteği işlevleri ve EH çalışma zamanı
 
-- concrt140.dll – eşzamanlılık çalışma zamanı, Visual Studio ile birlikte gelir. Paralel kapsayıcılar ve algoritmalar için gibi gerekli `concurrency::parallel_for`. Ayrıca, Windows XP koşul değişkenleri olmadığından STL power eşitleme temellerine için bu DLL Windows XP gerektirir.
+- concrt140. dll – Eşzamanlılık Çalışma Zamanı, Visual Studio aracılığıyla gönderilir. `concurrency::parallel_for`gibi paralel kapsayıcılar ve algoritmalar için gereklidir. Ayrıca, Windows XP 'nin koşul değişkenleri olmadığından STL, Windows XP 'de bu DLL 'yi Power Synchronization temel elemanlarına gerektirir.
 
-Visual Studio 2015 ve sonraki sürümlerinde, eşzamanlılık çalışma zamanı Görev Zamanlayıcısı'nı artık Zamanlayıcı görevi sınıfı ve ppltasks.h ilgili türü değil. Bu tür artık Windows işten daha iyi performans ve birlikte çalışabilirlik için Windows ile eşitleme temellerine kullanın.
+Visual Studio 2015 ve sonraki sürümlerde, Eşzamanlılık Çalışma Zamanı Görev Zamanlayıcı artık görev sınıfı için Zamanlayıcı ve ppltasks. h içindeki ilgili türler değildir. Bu türler artık Windows iş parçacığı kullanımını daha iyi performans ve Windows eşitleme temelleri ile birlikte çalışabilirlik için kullanır.
 
-##  <a name="runtime"></a> Eşzamanlılık Çalışma Zamanı Modülü önemli neden?
+## <a name="runtime"></a>Eşzamanlılık için çalışma zamanının neden önemli olduğunu
 
-Eşzamanlılık için çalışma zamanı gerekmemesi ve uygulamaları ve aynı anda çalışan uygulama bileşenleri için öngörülebilirlik sağlar. Eşzamanlılık Çalışma zamanı avantajlarını iki örnek *işbirlikçi görev zamanlama* ve *birlikte engelleme*.
+Eşzamanlılık için bir çalışma zamanı, aynı anda çalışan uygulamalar ve uygulama bileşenlerine ilişkin bir tutarlılık ve öngörülebilirlik sağlar. Eşzamanlılık Çalışma Zamanı avantajlarına yönelik iki örnek *birlikte çalışırken görev zamanlama* ve *işbirliği engelleme*.
 
-Eşzamanlılık Çalışma Zamanı İş bilgi işlem kaynakları arasında verimli bir şekilde dağıtmak için işi kaplayan bir algoritma uygulayan bir işbirlikçi Görev Zamanlayıcı kullanır. Örneğin, her ikisi de aynı çalışma zamanı tarafından yönetilen iki iş parçacığı olan bir uygulama düşünün. Bir iş parçacığı, zamanlanmış bir görev tamamlanırsa, diğer iş parçacığından iş boşaltabilirsiniz. Bu mekanizma, uygulamanın genel iş yükü dengeler.
+Eşzamanlılık çalışma zamanı, işlem kaynakları arasında çalışmayı verimli bir şekilde dağıtmak için bir iş hırsızlığı algoritması uygulayan bir işbirlikçi görev zamanlayıcısını kullanır. Örneğin, her ikisi de aynı çalışma zamanı tarafından yönetilen iki iş parçacığına sahip olan bir uygulamayı düşünün. Bir iş parçacığı zamanlanan görevini tamamlarsa, diğer iş parçacığından iş yükünü devreedebilir. Bu mekanizma, uygulamanın genel iş yükünü dengeler.
 
-Eşzamanlılık Çalışma zamanı kullanan birlikte engelleme kaynaklarına erişimi eşitlemek için eşitleme temellerine de sağlar. Örneğin, paylaşılan bir kaynağa özel erişim gereken görev göz önünde bulundurun. İşbirliği ile engelleyerek, çalışma zamanı, kaynak için ilk görev bekler gibi başka bir görevi gerçekleştirmek için kalan kuantum bant kitaplığını kullanabilirsiniz. Bu mekanizma, bilgi işlem kaynaklarının en fazla kullanım yükseltir.
+Eşzamanlılık Çalışma Zamanı Ayrıca, kaynaklara erişimi eşitlemek için birlikte çalışırken engellemeyi kullanan eşitleme temelleri de sağlar. Örneğin, paylaşılan bir kaynağa özel erişimi olması gereken bir görevi göz önünde bulundurun. Çalışma zamanı, birlikte çalışırken, diğer bir görevi kaynak için beklediği sürece diğer bir görevi gerçekleştirmek için geri kalan hisse kullanımını kullanabilir. Bu mekanizma, bilgi işlem kaynaklarının en yüksek kullanımını yükseltir.
 
 [[Üst](#top)]
 
-##  <a name="architecture"></a> Mimarisi
+## <a name="architecture"></a>Mimarisini
 
-Eşzamanlılık Çalışma zamanı dört bileşene bölünür: paralel desenler kitaplığı (PPL), zaman uyumsuz aracılar kitaplığı, Görev Zamanlayıcısı'nı ve Resource Manager. Bu bileşenler işletim sistemi ve uygulamalar arasında yer alır. Aşağıdaki çizim, eşzamanlılık çalışma zamanı bileşenlerini işletim sistemi ve uygulamalar arasında nasıl etkileşim kurduğu gösterilmektedir:
+Eşzamanlılık Çalışma Zamanı dört bileşene bölünür: paralel Desenler kitaplığı (PPL), zaman uyumsuz aracılar Kitaplığı, Görev Zamanlayıcı ve Kaynak Yöneticisi. Bu bileşenler, işletim sistemi ve uygulamalar arasında bulunur. Aşağıdaki çizim Eşzamanlılık Çalışma Zamanı bileşenlerinin işletim sistemi ve uygulamalar arasında nasıl etkileşime gireceğini göstermektedir:
 
-**Eşzamanlılık Çalışma zamanı mimarisi**
+**Eşzamanlılık Çalışma Zamanı mimarisi**
 
-![Eşzamanlılık Çalışma zamanı mimarisi](../../parallel/concrt/media/concurrencyrun.png "eşzamanlılık çalışma zamanı mimarisi")
+![Eşzamanlılık Çalışma Zamanı mimarisi](../../parallel/concrt/media/concurrencyrun.png "Eşzamanlılık Çalışma Zamanı mimarisi")
 
 > [!IMPORTANT]
-> Görev Zamanlayıcısı'nı ve Resource Manager bileşenleri, bir evrensel Windows Platformu (UWP) uygulamasına veya görev sınıfı ya da diğer türleri içinde ppltasks.h kullandığınızda kullanılamaz.
+> Görev Zamanlayıcı ve Kaynak Yöneticisi bileşenleri, bir Evrensel Windows Platformu (UWP) uygulamasından veya ppltasks. h içinde görev sınıfını ya da başka türler kullandığınızda kullanılamaz.
 
-Eşzamanlılık Çalışma zamanı yüksek olduğu *birleştirilebilir*, diğer bir deyişle, daha fazlasını yapmak için var olan işlevselliği birleştirebilirsiniz. Eşzamanlılık Çalışma zamanı, alt düzey bileşenlerden paralel algoritmalar gibi birçok özellik oluşturur.
+Eşzamanlılık Çalışma Zamanı yüksek düzeyde *birleştirilebilir*, diğer bir deyişle, var olan işlevleri birleştirerek daha fazla bilgi alabilirsiniz. Eşzamanlılık Çalışma Zamanı, alt düzey bileşenlerden paralel algoritmalar gibi birçok özelliğe sahiptir.
 
-Eşzamanlılık Çalışma zamanı kullanan birlikte engelleme kaynaklarına erişimi eşitlemek için eşitleme temellerine de sağlar. Bu eşitleme temellerine hakkında daha fazla bilgi için bkz: [eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md).
+Eşzamanlılık Çalışma Zamanı Ayrıca, kaynaklara erişimi eşitlemek için birlikte çalışırken engellemeyi kullanan eşitleme temelleri de sağlar. Bu eşitleme temelleri hakkında daha fazla bilgi için bkz. [eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md).
 
-Aşağıdaki bölümler, her bileşenin ne sağlar ve ne zaman kullanacağınız kısa bir genel bakış sağlar.
+Aşağıdaki bölümler, her bir bileşenin sağladığı ve ne zaman kullanılacağı hakkında kısa bir genel bakış sağlar.
 
 ### <a name="parallel-patterns-library"></a>Paralel Desen Kitaplığı
 
-Paralel Desen kitaplığı (PPL), hassas paralellik gerçekleştirmek için genel amaçlı kapsayıcılar ve algoritmalar sağlar. PPL sağlayan *kesinlik temelli veri paralelliği* sağlayarak bulut bilgi işlem kaynakları arasında veri kümelerini veya koleksiyonlar üzerinde hesaplamalar dağıtmak, paralel algoritmalar. Ayrıca *görev paralelliği* bilgi işlem kaynakları genelinde birden çok bağımsız işlem dağıttığınız görev nesnelerinin sağlayarak.
+Paralel Desenler kitaplığı (PPL), hassas paralellik gerçekleştirmeye yönelik genel amaçlı kapsayıcılar ve algoritmalar sağlar. PPL, koleksiyonlara veya bilgi işlem kaynakları genelinde veri kümelerine hesaplamalar dağıtan paralel algoritmalar sunarak, zorunlu *veri paralelliğini* sağlar. Ayrıca, bilgi işlem kaynakları arasında birden çok bağımsız işlem dağıtan görev nesneleri sağlayarak *görev paralelliğini* sağlar.
 
-Paralel desenler kitaplığı, paralel yürütmeyi avantaj elde edebileceği bir yerel hesaplama sahip olduğunuzda kullanın. Örneğin, kullanabileceğiniz [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) varolan dönüştürmek için algoritma `for` döngü paralel olarak görev yapacak.
+Paralel yürütmeden faydalanabilir bir yerel hesapladığınızda, paralel Desenler kitaplığını kullanın. Örneğin, mevcut bir `for` döngüsünü paralel olarak çalışacak şekilde dönüştürmek için [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasını kullanabilirsiniz.
 
-Paralel desen Kitaplığı hakkında daha fazla bilgi için bkz: [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).
+Paralel Desenler Kitaplığı hakkında daha fazla bilgi için bkz. [paralel Desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).
 
 ### <a name="asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı
 
-Zaman uyumsuz aracılar kitaplığı (veya yalnızca *Aracılar Kitaplığı*) bir aktör tabanlı programlama modeli ve ileti geçirme arabirimler için parçalı veri akışı ve ardışık düzen oluşturma görevleri sağlar. Zaman uyumsuz aracılar üretken gecikme süresi için verileri diğer bileşenleri tamamlanmasını bekleyen iş gerçekleştirerek kullanabilmesine olanak tanır.
+Zaman uyumsuz aracılar Kitaplığı (veya yalnızca *aracılar Kitaplığı*), hem aktör tabanlı bir programlama modeli hem de bir ileti geçirerek kaba veri akışı ve ardışık düzen oluşturma görevleri için arabirimler sağlar. Zaman uyumsuz aracılar, diğer bileşenler veri beklerken iş gerçekleştirerek gecikme süresini üretken hale getirmenize olanak tanır.
 
-Agents kitaplığı, birbirleriyle zaman uyumsuz olarak iletişim birden fazla varlık olduğunda kullanın. Örneğin, bir dosya veya ağ bağlantısından veri okuyan ve ardından bu verileri başka bir aracıya göndermek için ileti arabirimleri geçirme kullanan bir aracı oluşturabilirsiniz.
+Birbiriyle zaman uyumsuz olarak iletişim kuran birden fazla varlık varsa aracılar kitaplığını kullanın. Örneğin, bir dosya veya ağ bağlantısından verileri okuyan bir aracı oluşturabilir ve ardından bu verileri başka bir aracıya göndermek için arabirimleri geçirme iletisini kullanabilirsiniz.
 
-Agents Kitaplığı hakkında daha fazla bilgi için bkz: [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md).
+Aracılar Kitaplığı hakkında daha fazla bilgi için bkz. [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md).
 
 ### <a name="task-scheduler"></a>Görev Zamanlayıcısı
 
-Görev Zamanlayıcısı'nı zamanlar ve çalışma zamanında görevleri koordine eder. Görev Zamanlayıcısı'nı işbirliği yapan ve işlem kaynaklarının en yüksek kullanımı elde etmek için işi kaplayan bir algoritma kullanır.
+Görev Zamanlayıcı çalışma zamanında görevleri zamanlar ve düzenler. Görev Zamanlayıcı işbirliği yapılır ve en yüksek işlem kaynakları kullanımını sağlamak için bir iş hırsızlığı algoritması kullanır.
 
-Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağladığından altyapı ayrıntılarını yönetmek zorunda değilsiniz. Ancak, uygulamanızın kalitesini ihtiyaçlarını karşılamak için belirli görevler zamanlama kendi ilke veya ilişkilendirme özel planlayıcılar sağlayabilirsiniz.
+Eşzamanlılık Çalışma Zamanı, altyapı ayrıntılarını yönetmek zorunda kalmaması için varsayılan bir Zamanlayıcı sağlar. Ancak, uygulamanızın kalite ihtiyaçlarını karşılamak için kendi zamanlama ilkenizi da sağlayabilir veya belirli Zamanlayıcılar belirli görevlerle ilişkilendirebilirsiniz.
 
 Görev Zamanlayıcı hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 ### <a name="resource-manager"></a>Kaynak Yöneticisi
 
-Resource Manager'ın işlemci ve bellek gibi bilgi işlem kaynaklarını yönetmek üzere rolüdür. Çalışma zamanında burada en etkili olabilirler için kaynakları atayarak değiştiklerinde Resource Manager iş yükleri için yanıt verir.
+Kaynak Yöneticisi rolü, işlemciler ve bellek gibi bilgi işlem kaynaklarını yönetmez. Kaynak Yöneticisi, iş yüklerine, kaynakları en etkili olabilecekleri yere atayarak çalışma zamanında değiştikleri zaman yanıt verir.
 
-Resource Manager bilgi işlem kaynakları bir Özet görev yapar ve öncelikli olarak Görev Zamanlayıcısı ile etkileşime geçer. Kitaplıkları ve uygulamaları performans üzerinde ince ayar için Kaynak Yöneticisi'ni kullanabilirsiniz, ancak genellikle paralel desenler kitaplığı, aracılar kitaplığı ve Görev Zamanlayıcı tarafından sağlanan işlevselliği kullandığı. Bu kitaplıklar, iş yüklerini değiştirme gibi kaynakları dinamik olarak yeniden dengelemek için Resource Manager kullanın.
+Kaynak Yöneticisi, bilgi işlem kaynakları üzerinde bir soyutlama görevi görür ve öncelikle Görev Zamanlayıcı ile etkileşime girer. Kitaplıkları ve uygulamalarınızın performansını ince ayar yapmak için Kaynak Yöneticisi kullanabilseniz de, genellikle paralel Desenler kitaplığı, aracılar Kitaplığı ve Görev Zamanlayıcı tarafından sunulan işlevleri kullanırsınız. Bu kitaplıklar iş yükleri değiştiğinde kaynakları dinamik olarak yeniden dengelemek için Kaynak Yöneticisi kullanır.
 
 [[Üst](#top)]
 
-##  <a name="lambda"></a> C++ Lambda ifadeleri
+## <a name="lambda"></a>C++ Lambda ifadeleri
 
-Birçok türleri ve Eşzamanlılık Çalışma zamanı tarafından tanımlanan algoritmaları C++ şablonları uygulanır. Bu türleri ve algoritmaları bazıları işini gerçekleştiren bir yordam parametre olarak yararlanın. Bu parametre, bir lambda işlevi, bir işlev nesnesi veya bir işlev işaretçisi olabilir. Bu varlıklar, ayrıca olarak adlandırılır *iş işlevlerini* veya *çalışma yordamları*.
+Eşzamanlılık Çalışma Zamanı tarafından tanımlanan türlerin ve algoritmaların birçoğu, şablonlar olarak C++ uygulanır. Bu türlerden ve algoritmalardan bazıları, iş gerçekleştiren bir yordamın parametre olarak ele alır. Bu parametre bir Lambda işlevi, bir işlev nesnesi veya bir işlev işaretçisi olabilir. Bu varlıklar, *çalışma işlevleri* veya *çalışma yordamları*olarak da adlandırılır.
 
-Bunlar paralel işleme iş işlevlerini birleştiren yolu sağladığından lambda ifadeleri bir önemli yeni Visual C++ dil özelliğidir. İşlev işaretçileri ve işlev nesneleri ile mevcut kodunuzu eşzamanlılık çalışma zamanı kullanmanıza olanak verir. Ancak, sağladıkları güvenlik ve üretkenlik avantajları nedeniyle yeni kod yazdığınızda, lambda ifadeleri kullanmanızı öneririz.
+Lambda ifadeleri, paralel işleme için çalışma C++ işlevlerini tanımlamaya yönelik bir kısa yolu sağladığından önemli bir yeni görsel dil özelliğidir. İşlev nesneleri ve işlev işaretçileri, Eşzamanlılık Çalışma Zamanı mevcut kodunuzla birlikte kullanmanıza olanak sağlar. Ancak, sağladıkları güvenlik ve üretkenlik avantajları nedeniyle yeni kod yazdığınızda lambda ifadeleri kullanmanızı öneririz.
 
-Aşağıdaki örnek, lambda işlevi, işlev nesneleri ve birden çok çağrı içindeki işlev işaretçileriyle söz dizimi karşılaştırır [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması. Her çağrı `parallel_for_each` her öğe karesini işlem için farklı bir teknik kullanır bir [std::array](../../standard-library/array-class-stl.md) nesne.
+Aşağıdaki örnek, [concurrency::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasına birden çok çağrıda lambda işlevlerinin, işlev nesnelerinin ve işlev işaretçilerinin sözdizimini karşılaştırır. Her bir `parallel_for_each` çağrısı, [std:: Array](../../standard-library/array-class-stl.md) nesnesindeki her öğenin karesini hesaplamak için farklı bir teknik kullanır.
 
 [!code-cpp[concrt-comparing-work-functions#1](../../parallel/concrt/codesnippet/cpp/overview-of-the-concurrency-runtime_1.cpp)]
 
@@ -123,23 +123,23 @@ Aşağıdaki örnek, lambda işlevi, işlev nesneleri ve birden çok çağrı i�
 390625
 ```
 
-C++ lambda işlevleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
+İçindeki C++Lambda işlevleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
 
 [[Üst](#top)]
 
-##  <a name="requirements"></a> Gereksinimleri
+## <a name="requirements"></a>Gereklilik
 
-Eşzamanlılık Çalışma Zamanı'nın her bileşeninin ile ilişkili olan üstbilgi dosyaları aşağıdaki tabloda gösterilmiştir:
+Aşağıdaki tabloda Eşzamanlılık Çalışma Zamanı her bir bileşeniyle ilişkili üst bilgi dosyaları gösterilmektedir:
 
 |Bileşen|Üstbilgi Dosyaları|
 |---------------|------------------|
-|Paralel Desen Kitaplığı (PPL)|ppl.h<br /><br /> concurrent_queue.h<br /><br /> concurrent_vector.h|
-|Zaman Uyumsuz Aracılar Kitaplığı|Agents.h|
-|Görev Zamanlayıcısı|concrt.h|
-|Kaynak Yöneticisi|concrtrm.h|
+|Paralel Desen Kitaplığı (PPL)|PPL. h<br /><br /> concurrent_queue. h<br /><br /> concurrent_vector.h|
+|Zaman Uyumsuz Aracılar Kitaplığı|Agents. h|
+|Görev Zamanlayıcısı|concrt. h|
+|Kaynak Yöneticisi|concrtrm. h|
 
-Eşzamanlılık Çalışma zamanı içinde bildirildiği [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md) ad alanı. (Ayrıca [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md), bu ad alanı için bir diğer ad olduğu.) `concurrency::details` Ad alanı eşzamanlılık çalışma zamanı çerçevesi destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+Eşzamanlılık Çalışma Zamanı [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md) ad alanında bildirilmiştir. (Bu ad alanı için bir diğer ad olan [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md)de kullanabilirsiniz.) `concurrency::details` ad alanı Eşzamanlılık Çalışma Zamanı çerçevesini destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-Eşzamanlılık Çalışma zamanı, C çalışma zamanı kitaplığı (CRT) bir parçası olarak sağlanır. CRT kullanan bir uygulama oluşturma hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
+Eşzamanlılık Çalışma Zamanı, C çalışma zamanı kitaplığı 'nın (CRT) bir parçası olarak sağlanır. CRT kullanan bir uygulama oluşturma hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
 [[Üst](#top)]

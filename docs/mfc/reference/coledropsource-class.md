@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-ms.openlocfilehash: 3a1e27ca6c1019eb8716194b3b7711238d015d6d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d93eb3de87b50f337f0d3edad65f5dc3013e8327
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503997"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127463"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 
@@ -37,7 +37,7 @@ class COleDropSource : public CCmdTarget
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDropSource:: COleDropSource](#coledropsource)|Bir `COleDropSource` nesnesi oluşturur.|
+|[COleDropSource:: COleDropSource](#coledropsource)|`COleDropSource` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -49,11 +49,11 @@ class COleDropSource : public CCmdTarget
 
 ## <a name="remarks"></a>Açıklamalar
 
-[COleDropTarget](../../mfc/reference/coledroptarget-class.md) sınıfı, sürükle ve bırak işleminin alan kısmını işler. `COleDropSource` Nesne bir sürükleme işleminin ne zaman başladığını, sürükleme işlemi sırasında geri bildirim sağlamayı ve sürükleme işleminin ne zaman sona ereceğini belirlemeyi sağlamaktan sorumludur.
+[COleDropTarget](../../mfc/reference/coledroptarget-class.md) sınıfı, sürükle ve bırak işleminin alan kısmını işler. `COleDropSource` nesnesi, bir sürükleme işleminin ne zaman başladığını, sürükleme işlemi sırasında geri bildirim sağlamayı ve sürükleme işleminin ne zaman sona ereceğini belirlemeyi sağlamaktan sorumludur.
 
-Bir `COleDropSource` nesnesi kullanmak için, oluşturucuyu çağırmanız yeterlidir. Bu, fare tıklaması gibi olayları belirleme sürecini basitleştirir; [Cotadatasource::D oDragDrop](../../mfc/reference/coledatasource-class.md#dodragdrop), [cotaclienentidıtem::D odragdrop](../../mfc/reference/coleclientitem-class.md#dodragdrop)veya [copaserverıtem::D odragdrop](../../mfc/reference/coleserveritem-class.md#dodragdrop) işlevini kullanarak bir sürükleme işlemine başlar. Bu işlevler, sizin için `COleDropSource` bir nesnesi oluşturur. `COleDropSource` Geçersiz kılınabilir işlevlerin varsayılan davranışını değiştirmek isteyebilirsiniz. Bu üye işlevleri, Framework tarafından uygun zamanlarda çağrılacaktır.
+`COleDropSource` nesnesini kullanmak için, oluşturucuyu çağırmanız yeterlidir. Bu, fare tıklaması gibi olayları belirleme sürecini basitleştirir; [Cotadatasource::D oDragDrop](../../mfc/reference/coledatasource-class.md#dodragdrop), [cotaclienentidıtem::D odragdrop](../../mfc/reference/coleclientitem-class.md#dodragdrop)veya [copaserverıtem::D odragdrop](../../mfc/reference/coleserveritem-class.md#dodragdrop) işlevini kullanarak bir sürükleme işlemine başlar. Bu işlevler, sizin için bir `COleDropSource` nesnesi oluşturur. `COleDropSource` geçersiz kılınabilir işlevlerinin varsayılan davranışını değiştirmek isteyebilirsiniz. Bu üye işlevleri, Framework tarafından uygun zamanlarda çağrılacaktır.
 
-OLE kullanarak sürükle ve bırak işlemleri hakkında daha fazla bilgi için bkz. [sürükleme ve bırakma (OLE)](../../mfc/drag-and-drop-ole.md)makalesi.
+OLE kullanarak sürükle ve bırak işlemleri hakkında daha fazla bilgi için [OLE sürükle ve bırak](../../mfc/drag-and-drop-ole.md)makalesine bakın.
 
 Daha fazla bilgi için Windows SDK içindeki [IDropSource](/windows/win32/api/oleidl/nn-oleidl-idropsource) bölümüne bakın.
 
@@ -71,7 +71,7 @@ Daha fazla bilgi için Windows SDK içindeki [IDropSource](/windows/win32/api/ol
 
 ##  <a name="coledropsource"></a>COleDropSource:: COleDropSource
 
-Bir `COleDropSource` nesnesi oluşturur.
+`COleDropSource` nesnesi oluşturur.
 
 ```
 COleDropSource();
@@ -90,23 +90,23 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 *dropEffect*<br/>
 Bu noktada seçili verileri içeren bir bırakma gerçekleştiyse ne olacağını belirten kullanıcıya göstermek istediğiniz etki. Genellikle bu, [CView:: OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) veya [CView:: OnDragOver](../../mfc/reference/cview-class.md#ondragover)için en son çağrı tarafından döndürülen değerdir. Aşağıdakilerden biri veya birkaçı olabilir:
 
-- DROPEFFECT_NONE bir bırakmaya izin verilmez.
+- DROPEFFECT_NONE bırakmaya izin verilmez.
 
-- DROPEFFECT_COPY bir kopyalama işlemi gerçekleştirilecek.
+- Kopyalama işlemi DROPEFFECT_COPY gerçekleştirilir.
 
 - DROPEFFECT_MOVE bir taşıma işlemi gerçekleştirilecek.
 
-- DROPEFFECT_LINK, bırakılan verilerden özgün verilere bağlantı kurulacaktır.
+- Bırakılan verilerden özgün verilere bir bağlantı DROPEFFECT_LINK oluşturulur.
 
-- DROPEFFECT_SCROLL bir sürükleme kaydırma işlemi gerçekleşmekte veya hedefte gerçekleşmekte.
+- Bir sürükleme kaydırma işlemi DROPEFFECT_SCROLL gerçekleşmekte veya hedefte gerçekleşmekte.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sürükleme devam ediyorsa, DRAGDROP_S_USEDEFAULTCURSORS döndürür.
+Sürükleme işlemi devam ediyorsa, NOERROR DRAGDROP_S_USEDEFAULTCURSORS döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu noktada bir bırakma gerçekleştiyse ne olacağı hakkında kullanıcıya geri bildirim sağlamak için bu işlevi geçersiz kılın. Varsayılan uygulama, OLE varsayılan imleçler kullanır. OLE kullanarak sürükle ve bırak işlemleri hakkında daha fazla bilgi için bkz. [sürükleme ve bırakma (OLE)](../../mfc/drag-and-drop-ole.md)makalesi.
+Bu noktada bir bırakma gerçekleştiyse ne olacağı hakkında kullanıcıya geri bildirim sağlamak için bu işlevi geçersiz kılın. Varsayılan uygulama, OLE varsayılan imleçler kullanır. OLE kullanarak sürükle ve bırak işlemleri hakkında daha fazla bilgi için [OLE sürükle ve bırak](../../mfc/drag-and-drop-ole.md)makalesine bakın.
 
 Daha fazla bilgi için, Windows SDK içindeki [IDropSource:: GiveFeedback](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback), [ıdroptarget::D Ragover](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover)ve [IDropTarget::D segenter](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) ' a bakın.
 
@@ -144,14 +144,14 @@ virtual SCODE QueryContinueDrag(
 ### <a name="parameters"></a>Parametreler
 
 *Bescapebasıldı*<br/>
-Son çağrısından `COleDropSource::QueryContinueDrag`sonra ESC tuşuna basıldığını belirtir.
+`COleDropSource::QueryContinueDrag`için son çağrıdan sonra ESC tuşuna basıldığında basılmadığını belirtir.
 
 *dwKeyState*<br/>
-Klavyedeki değiştirici tuşlarının durumunu içerir. Bu, aşağıdakilerden herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Klavyedeki değiştirici tuşlarının durumunu içerir. Bu, aşağıdakilerden herhangi bir sayıda bir birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ESC tuşu veya sağ düğmesine basıldığında ya da sürükleme işlemi başlamadan önce sol düğme ortaya DRAGDROP_S_CANCEL. DRAGDROP_S_DROP bir bırakma işlemi gerçekleşmelidir. Aksi takdirde S_OK.
+ESC tuşu veya sağ düğmesine basıldığında veya sürüklemeye başlamadan önce sol düğme tetiklenir DRAGDROP_S_CANCEL. Bir bırakma işlemi gerçekleşmemelidir DRAGDROP_S_DROP. Aksi takdirde S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 

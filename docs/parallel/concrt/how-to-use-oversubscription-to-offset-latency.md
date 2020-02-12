@@ -1,34 +1,34 @@
 ---
-title: 'Nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma'
+title: 'Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - oversubscription, using [Concurrency Runtime]
 - using oversubscription [Concurrency Runtime]
 ms.assetid: a1011329-2f0a-4afb-b599-dd4043009a10
-ms.openlocfilehash: d74a081f71f044cab90a8e6fdc64530eaaf87ed8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02c72e7b7f0e3ec9727504d62341d945dcd0d957
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159944"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141945"
 ---
-# <a name="how-to-use-oversubscription-to-offset-latency"></a>Nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma
+# <a name="how-to-use-oversubscription-to-offset-latency"></a>Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma
 
-Aşırı abonelik gecikme süresi yüksek miktarda sahip görevleri içeren bazı uygulamaları genel verimliliğini artırabilir. Bu konuda, bir ağ bağlantısından veri okuyarak neden dengelemek için aşırı abonelik kullanma gösterilmektedir.
+Fazla abonelik, yüksek miktarda gecikme süresi olan görevleri içeren bazı uygulamaların genel verimliliğini iyileştirebilir. Bu konuda, bir ağ bağlantısından veri okunmasından kaynaklanan gecikmeyi kaydırmak için fazla abonelik kullanımı gösterilmektedir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) HTTP sunuculardan dosyaları indirilemedi. `http_reader` Sınıf türetilir [concurrency::agent](../../parallel/concrt/reference/agent-class.md) ve ileti geçirme indirmek için hangi URL adlarını zaman uyumsuz olarak okumak için kullanır.
+Bu örnek, HTTP sunucularından dosya indirmek için [zaman uyumsuz aracılar kitaplığını](../../parallel/concrt/asynchronous-agents-library.md) kullanır. `http_reader` sınıfı [concurrency:: Agent](../../parallel/concrt/reference/agent-class.md) ' den türetilir ve indirilecek URL adlarını zaman uyumsuz olarak okumak için ileti geçişini kullanır.
 
-`http_reader` Sınıfının kullandığı [concurrency::task_group](reference/task-group-class.md) eşzamanlı olarak her dosyayı okumak için sınıf. Her görev çağırır [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) yöntemiyle `_BeginOversubscription` parametresini **true** geçerli bağlamda gecikmeyi etkinleştirmek için. Her görev, ardından Microsoft Foundation Classes (MFC) kullanan [Cınternetsession](../../mfc/reference/cinternetsession-class.md) ve [CHttpFile](../../mfc/reference/chttpfile-class.md) dosyasını indirmek için sınıflar. Son olarak, her görev çağırır `Context::Oversubscribe` ile `_BeginOversubscription` parametresini **false** aşırı abonelik devre dışı bırakmak için.
+`http_reader` sınıfı, her dosyayı eşzamanlı olarak okumak için [concurrency:: task_group](reference/task-group-class.md) sınıfını kullanır. Her görev, geçerli bağlamda fazla aboneliği etkinleştirmek için `_BeginOversubscription` parametresi **true** olarak ayarlanan [concurrency:: Context:: Oversubscribe](reference/context-class.md#oversubscribe) yöntemini çağırır. Sonra her bir görev, dosyayı indirmek için Microsoft Foundation Sınıfları (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) ve [CHttpFile](../../mfc/reference/chttpfile-class.md) sınıflarını kullanır. Son olarak, her görev, aşırı aboneliği devre dışı bırakmak için `_BeginOversubscription` parametresi **false** olarak ayarlanmış `Context::Oversubscribe` çağırır.
 
-Aşırı abonelik etkin olduğunda, çalışma zamanı, görevleri çalıştırmak için ek bir iş parçacığı oluşturur. Her bu iş parçacığı sayısı ayrıca geçerli bağlam oversubscribe ve böylece ek iş parçacığı oluşturma. `http_reader` Sınıfını kullanan bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) uygulamanın kullandığı iş parçacıklarının sayısını sınırlamak için nesne. Aracıyı arabellek belirteci değerleri sabit sayıda ile başlatır. İşlemi başlatır ve işlem tamamlandıktan sonra sonra bu değeri geri arabelleğe Yazar önce her bir yükleme işlemi için aracı arabellekteki belirteç değeri okur. Arabellek boş olduğunda, bir değer geri arabelleğe yazmak için indirme işlemlerinin biri için aracının bekler.
+Fazla abonelik etkin olduğunda, çalışma zamanı görevlerin çalıştırılacağı bir ek iş parçacığı oluşturur. Bu iş parçacıklarının her biri, geçerli bağlamın üzerine de abone olabilir ve bu nedenle ek iş parçacıkları oluşturabilir. `http_reader` sınıfı, uygulamanın kullandığı iş parçacıklarının sayısını sınırlandırmak için bir [eşzamanlılık:: unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi kullanır. Aracı, arabelleği sabit sayıda belirteç değeri ile başlatır. Her bir indirme işlemi için, aracı, işlem başlamadan önce arabellekteki bir belirteç değeri okur ve sonra işlem bittikten sonra bu değeri arabelleğe geri yazar. Arabellek boş olduğunda, aracı indirme işlemlerinden birinin bir değeri arabelleğe geri yazmasını bekler.
 
-Aşağıdaki örnek, kullanılabilir donanım iş parçacıklarının sayısını iki kez eşzamanlı görevlere sayısını sınırlar. Aşırı abonelik ile denemeler yapılırken kullanılacak iyi bir başlangıç noktası değerdir. Bu değer gerçek iş yüküne yanıt vermek için dinamik olarak değiştirmenize ya da belirli bir işlem ortamı uygun bir değer kullanın.
+Aşağıdaki örnek, eşzamanlı görevlerin sayısını, kullanılabilir donanım iş parçacıklarının sayısı iki katına kısıtlar. Bu değer, aşırı abonelik ile denemeler yaparken kullanmak için iyi bir başlangıç noktasıdır. Belirli bir işleme ortamına uygun bir değer kullanabilir veya gerçek iş yüküne yanıt vermek için dinamik olarak bu değeri değiştirebilirsiniz.
 
 [!code-cpp[concrt-download-oversubscription#1](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_1.cpp)]
 
-Bu örnekte, dört işlemciye sahip bir bilgisayarda aşağıdaki çıktıyı üretir:
+Bu örnek, dört işlemcili bir bilgisayarda aşağıdaki çıktıyı üretir:
 
 ```Output
 Downloading http://www.adatum.com/...
@@ -54,31 +54,32 @@ Downloading http://www.tailspintoys.com/...
 Downloaded 1801040 bytes in 3276 ms.
 ```
 
-Örnek, diğer görevler görünmeyen bir işlemin tamamlanmasını beklerken ek görevleri çalıştırmak için aşırı abonelik etkin olduğunda daha hızlı bir şekilde çalıştırabilirsiniz.
+Diğer görevler, bir görünmeyen işlemin tamamlanmasını beklerken ek görevler çalıştığından, bu örnek daha hızlı çalışabilir.
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `download-oversubscription.cpp` ve çalışma birini, ardından komutlarını bir **Visual Studio komut istemi** penceresi.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `download-oversubscription.cpp` adlı bir dosyaya yapıştırın ve sonra bir **Visual Studio komut istemi** penceresinde aşağıdaki komutlardan birini çalıştırın.
 
-**cl.exe/ehsc/MD /D "_AFXDLL" indirme-oversubscription.cpp**
-
-**cl.exe/ehsc/MT indirme-oversubscription.cpp**
+```cmd
+cl.exe /EHsc /MD /D "_AFXDLL" download-oversubscription.cpp
+cl.exe /EHsc /MT download-oversubscription.cpp
+```
 
 ## <a name="robust-programming"></a>Güçlü Programlama
 
-Artık gerekli sonra her zaman aşırı abonelik devre dışı bırakın. Başka bir işlev tarafından oluşturulan bir özel durum işlemez bir işlev göz önünde bulundurun. İşlev döndürmeden önce aşırı abonelik devre dışı bırakmayın, herhangi bir ek paralel çalışma da geçerli bağlam oversubscribe.
+Artık gerek kalmadığında fazla aboneliği devre dışı bırakın. Başka bir işlev tarafından oluşturulan bir özel durumu işlemeyen bir işlev düşünün. İşlev döndürülmadan önce fazla abonelik devre dışı bırakıldıysanız, diğer paralel işler de geçerli bağlamın üzerine abone olur.
 
-Kullanabileceğiniz *olduğu kaynak alımı başlatma* (RAII) düzeni, belirli bir kapsama gecikmeyi sınırlamak için. RAII deseni altında bir veri yapısı yığında ayrılır. Bu veri yapısını başlatır veya bir kaynak oluşturulur ve yok eder veya veri yapısı kaldırıldığında bu kaynağı yayınlar zaman alır. RAII deseni kapsayan kapsam çıkar önce yok Edicisi çağrılır garanti eder. Bu nedenle, kaynağın doğru bir özel durum oluştuğunda ya da birden çok işlev içerdiğinde, yönetilen `return` deyimleri.
+Fazla aboneliği verilen bir kapsama sınırlamak için *kaynak alımı başlatma* (rampa) modelini kullanabilirsiniz. OYıı deseninin altında, yığın üzerinde bir veri yapısı ayrılır. Bu veri yapısı oluşturulduğunda bir kaynağı başlatır veya alır ve veri yapısı yok edildiğinde bu kaynağı yok eder veya serbest bırakır. RAMPALAMA kapsamı, yok edicinin kapsayan kapsam gelmeden önce çağrıldığından emin olur. Bu nedenle, bir özel durum oluştuğunda veya bir işlev birden çok `return` deyimi içerdiğinde kaynak doğru bir şekilde yönetilir.
 
-Aşağıdaki örnekte adlı bir yapı tanımlar `scoped_blocking_signal`. Oluşturucusuna `scoped_blocking_signal` yapısı gecikmeyi sağlar ve yok edici aşırı abonelik devre dışı bırakır.
+Aşağıdaki örnek, `scoped_blocking_signal`adlı bir yapıyı tanımlar. `scoped_blocking_signal` yapısının Oluşturucusu fazla aboneliği ve yok edici fazla aboneliği devre dışı bırakır.
 
 [!code-cpp[concrt-download-oversubscription#2](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_2.cpp)]
 
-Aşağıdaki örnek gövdesinin değiştirir `download` işlevi döndürmeden önce bu gecikmeyi emin olmak için RAII kullanılacak yöntemi devre dışıdır. Bu teknik sağlar `download` özel durum açısından güvenli bir yöntemdir.
+Aşağıdaki örnek, işlev döndürülmadan önce aşırı aboneliğin devre dışı olduğundan emin olmak için `download` yönteminin gövdesini değiştirerek SII 'yi kullanır. Bu teknik, `download` yönteminin özel durum açısından güvenli olmasını sağlar.
 
 [!code-cpp[concrt-download-oversubscription#3](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_3.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlamlar](../../parallel/concrt/contexts.md)<br/>
-[Context::Oversubscribe yöntemi](reference/context-class.md#oversubscribe)
+[Context:: Oversubscribe yöntemi](reference/context-class.md#oversubscribe)

@@ -10,18 +10,18 @@ helpviewer_keywords:
 - Win32 [C++], multithreading
 - threading [C]
 ms.assetid: 67cdc99e-1ad9-452b-a042-ed246b70040e
-ms.openlocfilehash: 20f405cfee4d4fc18ce33bc511310e3bd3ee1bf6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1764561e0b2b43b8a89d8a1eb2e85d84ce33c4fc
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511835"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141964"
 ---
 # <a name="multithreading-with-c-and-win32"></a>C ve Win32 ile Çoklu İş Parçacığı Kullanımı
 
 Microsoft C/C++ DERLEYICISI (MSVC), çoklu iş parçacıklı uygulamalar oluşturmaya yönelik destek sağlar. Uygulamanızın, Kullanıcı arabiriminin yanıt vermemeye başlamasına neden olacak pahalı işlemler gerçekleştirmesi gerekiyorsa, birden fazla iş parçacığı kullanmayı düşünün.
 
-MSVC ile birden çok iş parçacığı ile programlama için birkaç yol vardır: /Wınrt ve C++Windows çalışma zamanı kitaplığı, Microsoft Foundation Class (MFC) kitaplığı, C++/CLI, .NET çalışma zamanı veya C çalışma zamanı kitaplığını ve Win32 API kullanabilirsiniz. Bu makale, C 'de çoklu iş parçacığı oluşturma ile ilgilidir. Örnek kod için bkz. [C 'de örnek çoklu iş parçacığı programı](sample-multithread-c-program.md).
+MSVC ile birden çok iş parçacığı ile programlama için birkaç yol vardır:/Wınrt ve C++Windows çalışma zamanı kitaplığı, Microsoft Foundation Class (MFC) kitaplığı, C++/CLI ve .NET çalışma zamanını ya da C çalışma zamanı kitaplığını ve Win32 API kullanabilirsiniz. Bu makale, C 'de çoklu iş parçacığı oluşturma ile ilgilidir. Örnek kod için bkz. [C 'de örnek çoklu iş parçacığı programı](sample-multithread-c-program.md).
 
 ## <a name="multithread-programs"></a>Çoklu iş parçacığı kullanan programlar
 
@@ -45,26 +45,26 @@ Tüm Win32 programlarında en az bir iş parçacığı vardır. Herhangi bir iş
 
 CRT kitaplıkları, iş parçacığı oluşturma ve sonlandırma için aşağıdaki işlevleri sağlar: [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md), [_endthread ve _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md).
 
-`_beginthread` Ve`_beginthreadex` işlevleri yeni bir iş parçacığı oluşturur ve işlem başarılı olursa bir iş parçacığı tanımlayıcı döndürür. Yürütme tamamlandığında iş parçacığı otomatik olarak sonlandırılır. Ya da, veya öğesine `_endthread` `_endthreadex`yapılan çağrısıyla kendisini sonlandırabilir.
+`_beginthread` ve `_beginthreadex` işlevleri yeni bir iş parçacığı oluşturur ve işlem başarılı olursa bir iş parçacığı tanımlayıcı döndürür. Yürütme tamamlandığında iş parçacığı otomatik olarak sonlandırılır. Ya da bir `_endthread` veya `_endthreadex`çağrısıyla kendisini sonlandırabilir.
 
 > [!NOTE]
-> Libcmt. lib ile oluşturulmuş bir programdan C çalışma zamanı yordamlarını çağırırsanız, iş parçacıklarını `_beginthread` or `_beginthreadex` işleviyle başlatmanız gerekir. Win32 işlevlerini `ExitThread` ve `CreateThread`kullanın. Kullanımı `SuspendThread` , askıya alınan iş parçacığının C çalışma zamanı veri yapısına erişimini tamamlaması beklenirken birden fazla iş parçacığı engellendiğinde kilitlenmeyle sonuçlanabilir.
+> Libcmt. lib ile oluşturulmuş bir programdan C çalışma zamanı yordamlarını çağırırsanız, iş parçacıklarını `_beginthread` veya `_beginthreadex` işleviyle başlatmanız gerekir. `ExitThread` ve `CreateThread`Win32 işlevlerini kullanmayın. `SuspendThread` kullanmak, askıya alınan iş parçacığının C çalışma zamanı veri yapısına erişimini tamamlaması beklenirken birden fazla iş parçacığı engellendiğinde kilitlenmeyle sonuçlanabilir.
 
-###  <a name="_core_the__beginthread_function"></a>_Beginthread ve _beginthreadex işlevleri
+### <a name="_core_the__beginthread_function"></a>_Beginthread ve _beginthreadex işlevleri
 
-`_beginthread` Ve`_beginthreadex` işlevleri yeni bir iş parçacığı oluşturur. Bir iş parçacığı, bir işlemin kod ve veri segmentlerini işlemdeki diğer iş parçacıklarıyla paylaşır, ancak kendi benzersiz yazmaç değerleri, yığın alanı ve geçerli yönerge adresine sahiptir. Sistem her iş parçacığına CPU süresi verir, böylece bir işlemdeki tüm iş parçacıkları eşzamanlı olarak çalıştırılabilir.
+`_beginthread` ve `_beginthreadex` işlevleri yeni bir iş parçacığı oluşturur. Bir iş parçacığı, bir işlemin kod ve veri segmentlerini işlemdeki diğer iş parçacıklarıyla paylaşır, ancak kendi benzersiz yazmaç değerleri, yığın alanı ve geçerli yönerge adresine sahiptir. Sistem her iş parçacığına CPU süresi verir, böylece bir işlemdeki tüm iş parçacıkları eşzamanlı olarak çalıştırılabilir.
 
-`_beginthread`ve `_beginthreadex` Win32 API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işlevine benzerdir, ancak bu farklılıklara sahiptir:
+`_beginthread` ve `_beginthreadex`, Win32 API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işlevine benzerdir ancak bu farklılıklara sahiptir:
 
 - Belirli C çalışma zamanı kitaplık değişkenlerini başlatır. Bu, yalnızca iş parçacıklarında C çalışma zamanı kitaplığını kullanıyorsanız önemlidir.
 
-- `CreateThread`Güvenlik öznitelikleri üzerinde denetim sağlanmasına yardımcı olur. Bu işlevi, askıya alınmış durumda bir iş parçacığı başlatmak için kullanabilirsiniz.
+- `CreateThread`, güvenlik öznitelikleri üzerinde denetim sağlanmasına yardımcı olur. Bu işlevi, askıya alınmış durumda bir iş parçacığı başlatmak için kullanabilirsiniz.
 
-`_beginthread`ve `_beginthreadex` başarılı olursa yeni iş parçacığına bir tanıtıcı veya hata varsa hata kodu döndürür.
+`_beginthread` ve `_beginthreadex`, başarılı olursa yeni iş parçacığına bir tanıtıcı döndürür ya da bir hata oluşursa hata kodu.
 
-###  <a name="_core_the__endthread_function"></a>_Endthread ve _endthreadex işlevleri
+### <a name="_core_the__endthread_function"></a>_Endthread ve _endthreadex işlevleri
 
-[_Endthread](../c-runtime-library/reference/endthread-endthreadex.md) işlevi tarafından `_beginthread` oluşturulan bir iş parçacığını sonlandırır (ve benzer şekilde `_endthreadex` , tarafından `_beginthreadex`oluşturulan bir iş parçacığını sonlandırır). İş parçacıkları tamamlandığında otomatik olarak sonlandırılır. `_endthread`ve `_endthreadex` bir iş parçacığı içinden koşullu sonlandırma için faydalıdır. İletişim bağlantı noktasının denetimini alamazsanız, örneğin, iletişim işlemeye adanmış bir iş parçacığı çıkabilir.
+[_Endthread](../c-runtime-library/reference/endthread-endthreadex.md) işlevi, `_beginthread` tarafından oluşturulan bir iş parçacığını sonlandırır (benzer şekilde `_endthreadex` `_beginthreadex`tarafından oluşturulan bir iş parçacığını sonlandırır). İş parçacıkları tamamlandığında otomatik olarak sonlandırılır. `_endthread` ve `_endthreadex` bir iş parçacığı içinden koşullu sonlandırmada faydalıdır. İletişim bağlantı noktasının denetimini alamazsanız, örneğin, iletişim işlemeye adanmış bir iş parçacığı çıkabilir.
 
 ## <a name="writing-a-multithreaded-win32-program"></a>Çoklu iş parçacığı kullanan Win32 programı yazma
 
@@ -73,17 +73,17 @@ Birden çok iş parçacığı içeren bir program yazdığınızda, bunların da
 ### <a name="_core_sharing_common_resources_between_threads"></a>İş parçacıkları arasında ortak kaynakları paylaşma
 
 > [!NOTE]
-> MFC bakış noktasından benzer bir tartışma için bkz [. çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md) ve [çoklu iş parçacığı: Eşitleme sınıfları](multithreading-when-to-use-the-synchronization-classes.md)ne zaman kullanılır?
+> MFC bakış noktasından benzer bir tartışma için bkz. [Çoklu Iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md) ve [Çoklu iş parçacığı oluşturma: eşitleme sınıfları ne zaman kullanılır](multithreading-when-to-use-the-synchronization-classes.md)?.
 
 Her iş parçacığının kendi yığını ve kendi CPU yazmaçlarının kopyası vardır. Dosyalar, statik veriler ve yığın bellek gibi diğer kaynaklar, işlemdeki tüm iş parçacıkları tarafından paylaşılır. Bu ortak kaynakları kullanan iş parçacıkları eşitlenmelidir. Win32, Semaforlar, kritik bölümler, olaylar ve zaman uyumu sağlayıcılar dahil olmak üzere kaynakları eşitlemeye yönelik çeşitli yollar sağlar.
 
 Birden çok iş parçacığı statik verilere erişirken, programınızın olası kaynak çakışmalarını sağlaması gerekir. Bir iş parçacığının başka bir iş parçacığı tarafından görüntülenmek üzere *x*,*y* koordinatları içeren bir statik veri yapısını güncelleştirdiği bir programı düşünün. Güncelleştirme iş parçacığı *x* koordinatını değiştirirse ve *y* koordinatını değiştirebilmek için önce önayarlanırsa, *y* koordinatı güncellenmek için görüntü iş parçacığı zamanlanabilir. Öğe yanlış konumda görüntülenir. Yapıya erişimi denetlemek için semaforları kullanarak bu sorundan kaçınabilirsiniz.
 
-Bir mutex (örneğin,stand içinkısa bir süre), bir diğerinden zaman uyumsuz olarak yürütülen iş parçacıkları veya süreçler arasında iletişim kurma yöntemidir. Bu iletişim, genellikle kaynağı kilitleyerek ve kilidini açarak, paylaşılan bir kaynağa erişimi denetleyerek birden çok iş parçacığının veya işlemin etkinliklerini koordine etmek için kullanılabilir. Bu *x*,*y* koordinatı güncelleştirme sorununu çözmek için, güncelleştirme iş parçacığı, güncelleştirme gerçekleştirilmeden önce veri yapısının kullanımda olduğunu gösteren bir mutex ayarlar. Her iki koordinat işlendikten sonra mutex 'i temizler. Görüntüleme iş parçacığı, görüntüyü güncelleştirmeden önce mutex 'in temiz olmasını beklemelidir. Bu işlem için bekleyen bu işleme, işlem engellendiği ve mutex temizlenene kadar devam edemediği için bir mutex üzerinde *engelleme* olarak adlandırılır.
+Bir mutex *(örneğin,* stand içinkısa bir süre), bir diğerinden zaman uyumsuz olarak yürütülen iş parçacıkları veya süreçler arasında iletişim kurma yöntemidir. Bu iletişim, genellikle kaynağı kilitleyerek ve kilidini açarak, paylaşılan bir kaynağa erişimi denetleyerek birden çok iş parçacığının veya işlemin etkinliklerini koordine etmek için kullanılabilir. Bu *x*,*y* koordinatı güncelleştirme sorununu çözmek için, güncelleştirme iş parçacığı, güncelleştirme gerçekleştirilmeden önce veri yapısının kullanımda olduğunu gösteren bir mutex ayarlar. Her iki koordinat işlendikten sonra mutex 'i temizler. Görüntüleme iş parçacığı, görüntüyü güncelleştirmeden önce mutex 'in temiz olmasını beklemelidir. Bu işlem için bekleyen bu işleme, işlem engellendiği ve mutex temizlenene kadar devam edemediği için bir mutex üzerinde *engelleme* olarak adlandırılır.
 
-[Örnek çoklu iş parçacığı c programında](sample-multithread-c-program.md) gösterilen sıçrama. c programı, ekran güncelleştirmelerini koordine `ScreenMutex` etmek için adlı bir mutex kullanır. Görüntüleme iş parçacıklarından birinin ekrana yazmaya hazır olduğu her seferinde, `WaitForSingleObject` `WaitForSingleObject` çağrının mutex üzerinde engellenmesi ve zaman aşımına uğrar olması `ScreenMutex` gerektiğini göstermek için tanıtıcı ve sabit sonsuz ile çağrı yapılır. `ScreenMutex` Açık ise, bekleme işlevi mutex 'i diğer iş parçacıklarının görüntülemeyi kesintiye uğramaması için ayarlar ve iş parçacığını yürütmeye devam eder. Aksi takdirde, iş parçacığı mutex temizlenene kadar engeller. İş parçacığı görüntü güncelleştirmesini tamamladığında, öğesini çağırarak `ReleaseMutex`mutex 'i serbest bırakır.
+[Örnek çoklu Iş parçacıklı c programında](sample-multithread-c-program.md) gösterilen sıçrama. c programı, ekran güncelleştirmelerini koordine etmek için `ScreenMutex` adlı bir mutex kullanır. Görüntüleme iş parçacıklarından biri ekrana yazmaya hazır olduğunda, `WaitForSingleObject` çağrısının mutex üzerinde engellenmesi ve zaman aşımına gerekmediğini belirtmek için, `ScreenMutex` ve sabit sonsuz ile `WaitForSingleObject` çağırır. `ScreenMutex` açık ise, bekleme işlevi mutex 'i diğer iş parçacıklarının görüntülemeyi kesintiye uğramaması için ayarlar ve iş parçacığını yürütmeye devam eder. Aksi takdirde, iş parçacığı mutex temizlenene kadar engeller. İş parçacığı görüntü güncelleştirmesini tamamladığında, `ReleaseMutex`çağırarak mutex 'i serbest bırakır.
 
-Ekran görüntüleri ve statik veriler dikkatli yönetim gerektiren kaynaklardan yalnızca ikanıdır. Örneğin, programınız aynı dosyaya erişen birden fazla iş parçacığına sahip olabilir. Başka bir iş parçacığı dosya işaretçisini taşıabileceğinden, her iş parçacığının okumadan veya yazmadan önce dosya işaretçisini sıfırlaması gerekir. Ayrıca, her iş parçacığının, işaretçiyi konum ve dosyaya eriştiği zaman arasında yok olduğundan emin olması gerekir. Bu iş parçacıkları, ve `WaitForSingleObject` `ReleaseMutex` çağrılarıyla her bir dosya erişimini birleştirerek dosyaya erişimi koordine etmek için bir semafor kullanmalıdır. Aşağıdaki kod örneği bu tekniği göstermektedir:
+Ekran görüntüleri ve statik veriler dikkatli yönetim gerektiren kaynaklardan yalnızca ikanıdır. Örneğin, programınız aynı dosyaya erişen birden fazla iş parçacığına sahip olabilir. Başka bir iş parçacığı dosya işaretçisini taşıabileceğinden, her iş parçacığının okumadan veya yazmadan önce dosya işaretçisini sıfırlaması gerekir. Ayrıca, her iş parçacığının, işaretçiyi konum ve dosyaya eriştiği zaman arasında yok olduğundan emin olması gerekir. Bu iş parçacıkları, `WaitForSingleObject` ve `ReleaseMutex` çağrılarında her bir dosya erişimini birleştirerek dosyaya erişimi koordine etmek için bir semafor kullanmalıdır. Aşağıdaki kod örneği bu tekniği göstermektedir:
 
 ```C
 HANDLE    hIOMutex = CreateMutex (NULL, FALSE, NULL);
@@ -98,9 +98,9 @@ ReleaseMutex( hIOMutex);
 
 Bir uygulamanın varsayılan yığın alanı, iş parçacığı 1 olarak bilinen yürütmenin ilk iş parçacığına ayrılır. Sonuç olarak, programınızın ihtiyaç duyacağı her ek iş parçacığı için ayrı bir yığın için ne kadar bellek ayrılacağını belirtmeniz gerekir. İşletim sistemi, gerekirse iş parçacığı için ek yığın alanı ayırır, ancak varsayılan bir değer belirtmeniz gerekir.
 
-`_beginthread` Çağrıdaki ilk bağımsız değişken, iş parçacıklarını yürüten `BounceProc` işlevin bir işaretçisidir. İkinci bağımsız değişken, iş parçacığı için varsayılan yığın boyutunu belirtir. Son bağımsız değişken, öğesine `BounceProc`geçirilen bir kimlik numarasıdır. `BounceProc`Rastgele sayı oluşturucuyu temel almak ve iş parçacığının color özniteliğini ve görüntüleme karakterini belirlemek için KIMLIK numarasını kullanır.
+`_beginthread` çağrısındaki ilk bağımsız değişken, iş parçacıklarını yürüten `BounceProc` işlevine yönelik bir işaretçidir. İkinci bağımsız değişken, iş parçacığı için varsayılan yığın boyutunu belirtir. Son bağımsız değişken `BounceProc`geçirilen bir KIMLIK numarasıdır. `BounceProc` rastgele sayı oluşturucuyu temel almak ve iş parçacığının color özniteliğini ve görüntüleme karakterini belirlemek için KIMLIK numarasını kullanır.
 
-C çalışma zamanı kitaplığı veya Win32 API çağrısı yapan iş parçacıkları, çağırdığı kitaplık ve API işlevleri için yeterli yığın alanına izin vermelidir. C `printf` işlevi, 500 bayttan daha fazla yığın alanı gerektirir ve Win32 API yordamlar çağrılırken, ek bir yığın alanı olan 2k bayt kullanılabilir olmalıdır.
+C çalışma zamanı kitaplığı veya Win32 API çağrısı yapan iş parçacıkları, çağırdığı kitaplık ve API işlevleri için yeterli yığın alanına izin vermelidir. C `printf` işlevi, yığın alanının 500 bayttan fazlasını gerektirir ve Win32 API yordamlarını çağırırken, ek olarak bir dizi boş alan olan 2K bayt kullanılabilir.
 
 Her iş parçacığının kendi yığınına sahip olduğu için, mümkün olduğunca az statik veri kullanarak veri öğeleri üzerinde potansiyel çakışmaları önleyebilirsiniz. Programınızı, bir iş parçacığına özel olabilecek tüm veriler için otomatik yığın değişkenlerini kullanacak şekilde tasarlayın. Sıçrama. c programındaki tek genel değişkenler, her zaman zaman uyumu veya başlatıldıktan sonra hiç değişmeme değişkenlerdir.
 
@@ -108,9 +108,9 @@ Win32 ayrıca iş parçacığı verilerini depolamak için Iş parçacığı yer
 
 ## <a name="avoiding-problem-areas-with-multithread-programs"></a>Çoklu iş parçacığı kullanan programlarda sorun alanlarından kaçınma
 
-Çoklu iş parçacıklı C programını oluştururken, bağlarken veya çalıştırırken karşılaşabileceğiniz birkaç sorun vardır. Daha yaygın sorunlardan bazıları aşağıdaki tabloda açıklanmıştır. (MFC görünüm noktasından benzer bir tartışma için bkz [. çoklu iş parçacığı kullanımı: Programlama Ipuçları](multithreading-programming-tips.md).)
+Çoklu iş parçacıklı C programını oluştururken, bağlarken veya çalıştırırken karşılaşabileceğiniz birkaç sorun vardır. Daha yaygın sorunlardan bazıları aşağıdaki tabloda açıklanmıştır. (MFC görünüm noktasından benzer bir tartışma için bkz. [Çoklu Iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md).)
 
-|Gidermek|Olası neden|
+|Sorun|Olası neden|
 |-------------|--------------------|
 |Programınızın bir koruma ihlaline neden olduğunu gösteren bir ileti kutusu alırsınız.|Birçok Win32 programlama hatası koruma ihlallerine neden olur. Koruma ihlallerinin yaygın bir nedeni, verilerin null işaretçilere dolaylı olarak atanmasından oluşur. Programınızın kendisine ait olmayan belleğe erişmeye çalıştığı için bir koruma ihlali verilir.<br /><br /> Bir koruma ihlalinin nedenini saptamanın kolay bir yolu, hata ayıklama bilgileri ile programınızı derleyip Visual Studio ortamındaki hata ayıklayıcı aracılığıyla çalıştırmayı kullanmaktır. Koruma hatası oluştuğunda, Windows denetimi hata ayıklayıcıya aktarır ve imleç soruna neden olan satıra yerleştirilir.|
 |Programınız çok sayıda derleme ve bağlantı hatası oluşturuyor.|Derleyicinin uyarı düzeyini en yüksek değerlerden birine ayarlayarak ve uyarı iletilerini inceleyerek olası birçok sorunu ortadan kaldırabilirsiniz. Düzey 3 veya düzey 4 uyarı düzeyi seçeneklerini kullanarak, istemeyerek veri dönüştürmelerini, eksik işlev prototiplerini ve ANSI olmayan özelliklerin kullanımını tespit edebilirsiniz.|
@@ -118,7 +118,7 @@ Win32 ayrıca iş parçacığı verilerini depolamak için Iş parçacığı yer
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Eski kod için çoklu iş parçacığı desteği C++(görsel)](multithreading-support-for-older-code-visual-cpp.md)\
-[C 'de örnek çoklu iş parçacığı programı](sample-multithread-c-program.md)\
-[İş parçacığı yerel depolaması (TLS)](thread-local-storage-tls.md)\
-[/Wınrt ile C++eşzamanlılık ve zaman uyumsuz işlemler](/windows/uwp/cpp-and-winrt-apis/concurrency)\
+[C\ 'de örnek çoklu iş parçacığı programı](sample-multithread-c-program.md)
+[Iş parçacığı yerel depolaması (TLS)](thread-local-storage-tls.md)\
+[/Wınrt\ Ile C++eşzamanlılık ve zaman uyumsuz işlemler](/windows/uwp/cpp-and-winrt-apis/concurrency)
 [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)

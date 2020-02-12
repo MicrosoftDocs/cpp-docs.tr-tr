@@ -2,12 +2,12 @@
 title: 3. Çalışma zamanı kitaplık işlevleri
 ms.date: 05/13/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-ms.openlocfilehash: 553c9ff2ceff02dc7b72e9f11899dac9d1f0f612
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 6155eb87bd7a1a0533caf99afb3db8417854df30
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857963"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142952"
 ---
 # <a name="3-run-time-library-functions"></a>3. çalışma zamanı kitaplık işlevleri
 
@@ -42,7 +42,7 @@ Bu bölümde açıklanan işlevler iş parçacıklarını, işlemcileri ve paral
 
 ### <a name="311-omp_set_num_threads-function"></a>3.1.1 omp_set_num_threads işlevi
 
-`omp_set_num_threads` işlevi, bir `num_threads` yan tümcesi belirtmeyen daha sonra paralel bölgeler için kullanılacak varsayılan iş parçacığı sayısını ayarlar. Bunun biçimi aşağıdaki gibidir:
+`omp_set_num_threads` işlevi, bir `num_threads` yan tümcesi belirtmeyen daha sonra paralel bölgeler için kullanılacak varsayılan iş parçacığı sayısını ayarlar. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -66,7 +66,7 @@ Daha fazla bilgi için bkz. [omp_set_dynamic](#317-omp_set_dynamic-function).
 
 ### <a name="312-omp_get_num_threads-function"></a>3.1.2 omp_get_num_threads işlevi
 
-`omp_get_num_threads` işlevi, şu anda takımda çağrıldığı paralel bölgeyi yürüten iş parçacığı sayısını döndürür. Bunun biçimi aşağıdaki gibidir:
+`omp_get_num_threads` işlevi, şu anda takımda çağrıldığı paralel bölgeyi yürüten iş parçacığı sayısını döndürür. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -87,7 +87,7 @@ Daha fazla bilgi için bkz. [omp_set_dynamic](#317-omp_set_dynamic-function).
 
 ### <a name="313-omp_get_max_threads-function"></a>3.1.3 omp_get_max_threads işlevi
 
-`omp_get_max_threads` işlevi, bir takım oluşturmak için kullanılan iş parçacıklarının sayısı en az olan, bir `num_threads` yan tümcesi içermeyen bir paralel bölge, koddaki bu noktada görülenmeyen bir tamsayıyı döndürür. Bunun biçimi aşağıdaki gibidir:
+`omp_get_max_threads` işlevi, bir takım oluşturmak için kullanılan iş parçacıklarının sayısı en az olan, bir `num_threads` yan tümcesi içermeyen bir paralel bölge, koddaki bu noktada görülenmeyen bir tamsayıyı döndürür. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -96,13 +96,9 @@ int omp_get_max_threads(void);
 
 Aşağıda, `omp_get_max_threads`değerindeki bir alt sınır ifade verilmiştir:
 
-```
+> *iş parçacıkları-for-Next-team* <= `omp_get_max_threads`
 
-threads-used-for-next-team
-<= omp_get_max_threads
-```
-
-Başka bir paralel bölge, belirli bir sayıda iş parçacığı istemek için `num_threads` yan tümcesini kullanıyorsa, `omp_get_max_threads` uzun sürmeden elde edilen sonucun en düşük sınırının garantisi olduğunu unutmayın.
+Başka bir paralel bölge, belirli sayıda iş parçacığı istemek için `num_threads` yan tümcesini kullanıyorsa, `omp_get_max_threads` sonucunun daha alt sınırının olmadığı garantisini daha fazla bulundurmadığını unutmayın.
 
 `omp_get_max_threads` işlevin dönüş değeri, bir sonraki paralel bölgede oluşturulan ekipteki tüm iş parçacıkları için yeterli depolama alanını dinamik olarak ayırmak için kullanılabilir.
 
@@ -117,7 +113,7 @@ Başka bir paralel bölge, belirli bir sayıda iş parçacığı istemek için `
 
 `omp_get_thread_num` işlevi, işlevini yürüten iş parçacığının ekibi içinde iş parçacığı numarasını döndürür. İş parçacığı sayısı 0 ile `omp_get_num_threads()`-1 (dahil) arasındadır. Ekibin ana iş parçacığı iş parçacığı 0 ' dır.
 
-Bunun biçimi aşağıdaki gibidir:
+Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -132,7 +128,7 @@ Seri bölgesinden çağrılırsa `omp_get_thread_num` 0 döndürür. Seri hale g
 
 ### <a name="315-omp_get_num_procs-function"></a>3.1.5 omp_get_num_procs işlevi
 
-`omp_get_num_procs` işlevi, işlevin çağrılışında programın kullanabileceği işlemcilerin sayısını döndürür. Bunun biçimi aşağıdaki gibidir:
+`omp_get_num_procs` işlevi, işlevin çağrılışında programın kullanabileceği işlemcilerin sayısını döndürür. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -141,7 +137,7 @@ int omp_get_num_procs(void);
 
 ### <a name="316-omp_in_parallel-function"></a>3.1.6 omp_in_parallel işlevi
 
-`omp_in_parallel` işlevi, paralel bir paralel bölgenin dinamik kapsamı içinde çağrılırsa, paralel olarak çağrıldığında sıfır dışında bir değer döndürür; Aksi takdirde, 0 döndürür. Bunun biçimi aşağıdaki gibidir:
+`omp_in_parallel` işlevi, paralel bir paralel bölgenin dinamik kapsamı içinde çağrılırsa, paralel olarak çağrıldığında sıfır dışında bir değer döndürür; Aksi takdirde, 0 döndürür. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -152,7 +148,7 @@ Bu işlev, seri hale getirilen iç içe geçmiş bölgeler de dahil olmak üzere
 
 ### <a name="317-omp_set_dynamic-function"></a>3.1.7 omp_set_dynamic işlevi
 
-`omp_set_dynamic` işlevi, paralel bölgelerin yürütülmesi için kullanılabilen iş parçacığı sayısının dinamik olarak ayarlanmasını mümkün veya devre dışı bırakır. Bunun biçimi aşağıdaki gibidir:
+`omp_set_dynamic` işlevi, paralel bölgelerin yürütülmesi için kullanılabilen iş parçacığı sayısının dinamik olarak ayarlanmasını mümkün veya devre dışı bırakır. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -171,7 +167,7 @@ Bu işlev, `omp_in_parallel` işlevinin sıfıra döndüğü programın bir kıs
 
 #### <a name="microsoft-specific"></a>Microsoft'a özgü
 
-`omp_get_dynamic` ve `omp_set_dynamic` geçerli desteği aşağıdaki gibidir: 
+`omp_get_dynamic` ve `omp_set_dynamic` geçerli desteği aşağıdaki gibidir:
 
 `omp_set_dynamic` giriş parametresi, iş parçacığı ilkesini etkilemez ve iş parçacığı sayısını değiştirmez. `omp_get_num_threads` her zaman Kullanıcı tanımlı sayı veya ayarlandıysa, varsayılan iş parçacığı numarasını döndürür. Geçerli Microsoft uygulamasında `omp_set_dynamic(0)`, mevcut iş parçacığı kümesinin aşağıdaki paralel bölgede yeniden kullanılabilmesi için dinamik iş parçacığını devre dışı bırakır. `omp_set_dynamic(1)`, var olan iş parçacığı kümesini atarak ve yaklaşan paralel bölge için yeni bir küme oluşturarak dinamik iş parçacığını etkinleştirir. Yeni küme içindeki iş parçacıklarının sayısı eski kümesiyle aynıdır ve `omp_get_num_threads`dönüş değerine göre belirlenir. Bu nedenle, en iyi performans için, mevcut iş parçacıklarını yeniden kullanmak için `omp_set_dynamic(0)` kullanın.
 
@@ -183,7 +179,7 @@ Bu işlev, `omp_in_parallel` işlevinin sıfıra döndüğü programın bir kıs
 
 ### <a name="318-omp_get_dynamic-function"></a>3.1.8 omp_get_dynamic işlevi
 
-`omp_get_dynamic` işlevi, iş parçacıklarının dinamik ayarlaması etkinse sıfır dışında bir değer döndürür ve aksi takdirde 0 değerini döndürür. Bunun biçimi aşağıdaki gibidir:
+`omp_get_dynamic` işlevi, iş parçacıklarının dinamik ayarlaması etkinse sıfır dışında bir değer döndürür ve aksi takdirde 0 değerini döndürür. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -198,7 +194,7 @@ Uygulama iş parçacığı sayısı için dinamik ayarlama gerçekleştirmezse, 
 
 ### <a name="319-omp_set_nested-function"></a>3.1.9 omp_set_nested işlevi
 
-`omp_set_nested` işlevi iç içe paralelliği mümkün hale getirmenizi veya devre dışı bırakır. Bunun biçimi aşağıdaki gibidir:
+`omp_set_nested` işlevi iç içe paralelliği mümkün hale getirmenizi veya devre dışı bırakır. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -220,7 +216,7 @@ Bu çağrının `OMP_NESTED` ortam değişkenine göre önceliği vardır.
 
 ### <a name="3110-omp_get_nested-function"></a>3.1.10 omp_get_nested işlevi
 
-`omp_get_nested` işlevi, iç içe paralellik etkinse ve devre dışıysa 0 olarak sıfır olmayan bir değer döndürür. İç içe paralellik hakkında daha fazla bilgi için bkz. [omp_set_nested](#319-omp_set_nested-function). Bunun biçimi aşağıdaki gibidir:
+`omp_get_nested` işlevi, iç içe paralellik etkinse ve devre dışıysa 0 olarak sıfır olmayan bir değer döndürür. İç içe paralellik hakkında daha fazla bilgi için bkz. [omp_set_nested](#319-omp_set_nested-function). Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -253,7 +249,7 @@ OpenMP Lock işlevleri kilit değişkenine her zaman bir kilit değişkeninin en
 
 ### <a name="321-omp_init_lock-and-omp_init_nest_lock-functions"></a>3.2.1 omp_init_lock ve omp_init_nest_lock işlevleri
 
-Bu işlevler, bir kilit başlatma yöntemi sağlar. Her işlev, yaklaşan çağrılarında kullanılmak üzere parametre *kilidi* ile ilişkili kilidi başlatır. Bunun biçimi aşağıdaki gibidir:
+Bu işlevler, bir kilit başlatma yöntemi sağlar. Her işlev, yaklaşan çağrılarında kullanılmak üzere parametre *kilidi* ile ilişkili kilidi başlatır. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -265,7 +261,7 @@ Başlangıç durumunun kilidi açıldı (diğer bir deyişle, kilidin sahibi ola
 
 ### <a name="322-omp_destroy_lock-and-omp_destroy_nest_lock-functions"></a>3.2.2 omp_destroy_lock ve omp_destroy_nest_lock işlevleri
 
-Bu işlevler, kilit değişkeni *kilidinin* işaret edilen başlatılmamış olduğundan emin olur. Bunun biçimi aşağıdaki gibidir:
+Bu işlevler, kilit değişkeni *kilidinin* işaret edilen başlatılmamış olduğundan emin olur. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -277,7 +273,7 @@ Başlatılmamış veya kilidi açılmış bir kilit değişkeniyle bu yordamlar�
 
 ### <a name="323-omp_set_lock-and-omp_set_nest_lock-functions"></a>3.2.3 omp_set_lock ve omp_set_nest_lock işlevleri
 
-Bu işlevlerin her biri, belirtilen kilit kullanılabilir olana kadar işlevi yürüten iş parçacığını engeller ve sonra kilidi ayarlar. Kilidi açıldığında basit bir kilit vardır. Bir iç içe konulabilir kilidi, kilidi açıksa veya işlevi yürüten iş parçacığına zaten aitse kullanılabilir. Bunun biçimi aşağıdaki gibidir:
+Bu işlevlerin her biri, belirtilen kilit kullanılabilir olana kadar işlevi yürüten iş parçacığını engeller ve sonra kilidi ayarlar. Kilidi açıldığında basit bir kilit vardır. Bir iç içe konulabilir kilidi, kilidi açıksa veya işlevi yürüten iş parçacığına zaten aitse kullanılabilir. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -291,7 +287,7 @@ Basit bir kilit için `omp_set_lock` işlevinin bağımsız değişkeni başlat�
 
 ### <a name="324-omp_unset_lock-and-omp_unset_nest_lock-functions"></a>3.2.4 omp_unset_lock ve omp_unset_nest_lock işlevleri
 
-Bu işlevler, bir kilidin sahipliğini serbest bırakma araçlarını sağlar. Bunun biçimi aşağıdaki gibidir:
+Bu işlevler, bir kilidin sahipliğini serbest bırakma araçlarını sağlar. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -307,7 +303,7 @@ Basit bir kilit için `omp_unset_lock` işlevi, kilit sahipünden işlevi yürü
 
 ### <a name="325-omp_test_lock-and-omp_test_nest_lock-functions"></a>3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri
 
-Bu işlevler, bir kilit ayarlamaya çalışır ancak iş parçacığının yürütülmesini engellemez. Bunun biçimi aşağıdaki gibidir:
+Bu işlevler, bir kilit ayarlamaya çalışır ancak iş parçacığının yürütülmesini engellemez. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -330,7 +326,7 @@ Bu bölümde açıklanan işlevler, taşınabilir bir duvar saati zamanlayıcıs
 
 ### <a name="331-omp_get_wtime-function"></a>3.3.1 omp_get_wtime işlevi
 
-`omp_get_wtime` işlevi, "geçmişteki" bir süre sonra geçen duvar saati zamanına eşit bir çift duyarlıklı kayan nokta değeri döndürür.  Gerçek "geçmişteki süre" değeri rastgele, ancak uygulama programının yürütülmesi sırasında değişmemelidir. Bunun biçimi aşağıdaki gibidir:
+`omp_get_wtime` işlevi, "geçmişteki" bir süre sonra geçen duvar saati zamanına eşit bir çift duyarlıklı kayan nokta değeri döndürür.  Gerçek "geçmişteki süre" değeri rastgele, ancak uygulama programının yürütülmesi sırasında değişmemelidir. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>
@@ -352,7 +348,7 @@ Döndürülen süreler, bir uygulamaya katılan tüm iş parçacıkları genelin
 
 ### <a name="332-omp_get_wtick-function"></a>3.3.2 omp_get_wtick işlevi
 
-`omp_get_wtick` işlevi, ardışık saat işaretleri arasındaki saniye sayısına eşit bir çift duyarlıklı kayan nokta değeri döndürür. Bunun biçimi aşağıdaki gibidir:
+`omp_get_wtick` işlevi, ardışık saat işaretleri arasındaki saniye sayısına eşit bir çift duyarlıklı kayan nokta değeri döndürür. Biçim aşağıdaki gibidir:
 
 ```cpp
 #include <omp.h>

@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSUnblockNotification structure
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
-ms.openlocfilehash: bdf083e2ad418269e49e53dc164f2a60f693d5d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4fd95b1f11ed6edac26cb03e41e8b650acfafa3
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180225"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77139978"
 ---
 # <a name="iumsunblocknotification-structure"></a>IUMSUnblockNotification Yapısı
 
-Bir bildirim kaynak engellenir ve zamanlama bağlam belirlenen Zamanlayıcının dön tetiklenen iş parçacığı proxy'sini engeli kaldırılmış ve zamanlanması hazır Yöneticisi'nden temsil eder. Sağlayıcıdan döndürülen iş parçacığı proxy'sinin ilişkili yürütme bağlamı, sonra bu arabirim geçersiz `GetContext` yöntemi, işlemi yeniden zamanlanacak.
+, Bir iş parçacığı proxy 'sinin, Scheduler 'ın belirlenen zamanlama bağlamına geri dönme ve tetiklediği Kaynak Yöneticisi bir bildirimi temsil eder ve zamanlanmaya hazırlanın. Bu arabirim, iş parçacığı proxy 'sinin ilişkili yürütme bağlamı `GetContext` yönteminden döndürülen bir kez yeniden zamanlanırsa geçersizdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 struct IUMSUnblockNotification;
 ```
 
@@ -32,8 +32,8 @@ struct IUMSUnblockNotification;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Iumsunblocknotification::getcontext](#getcontext)|Döndürür `IExecutionContext` hangi engeli kaldırılmış iş parçacığı proxy ile ilişkili yürütme bağlamı için arabirim. Bu yöntem döndürür ve temel alınan yürütme bağlamı için bir çağrı aracılığıyla yeniden sonra `IThreadProxy::SwitchTo` yöntemi, bu arabirim artık geçerli değil.|
-|[Iumsunblocknotification::getnextunblocknotification](#getnextunblocknotification)|Sonraki döndürür `IUMSUnblockNotification` arabirimi yönteminden döndürülen zincirindeki `IUMSCompletionList::GetUnblockNotifications`.|
+|[IUMSUnblockNotification:: GetContext](#getcontext)|Engeli kaldırılmış olan iş parçacığı proxy 'si ile ilişkili yürütme bağlamı için `IExecutionContext` arabirimini döndürür. Bu yöntem geri döndüğünde ve temel alınan yürütme bağlamı `IThreadProxy::SwitchTo` yöntemine yapılan bir çağrı aracılığıyla yeniden zamanlanırsa, bu arabirim artık geçerli değildir.|
+|[IUMSUnblockNotification:: GetNextUnblockNotification](#getnextunblocknotification)|`IUMSCompletionList::GetUnblockNotifications`yönteminden döndürülen zincirde bir sonraki `IUMSUnblockNotification` arabirimini döndürür.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,33 +41,33 @@ struct IUMSUnblockNotification;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="getcontext"></a>  Iumsunblocknotification::getcontext metodu
+## <a name="getcontext"></a>IUMSUnblockNotification:: GetContext yöntemi
 
-Döndürür `IExecutionContext` hangi engeli kaldırılmış iş parçacığı proxy ile ilişkili yürütme bağlamı için arabirim. Bu yöntem döndürür ve temel alınan yürütme bağlamı için bir çağrı aracılığıyla yeniden sonra `IThreadProxy::SwitchTo` yöntemi, bu arabirim artık geçerli değil.
+Engeli kaldırılmış olan iş parçacığı proxy 'si ile ilişkili yürütme bağlamı için `IExecutionContext` arabirimini döndürür. Bu yöntem geri döndüğünde ve temel alınan yürütme bağlamı `IThreadProxy::SwitchTo` yöntemine yapılan bir çağrı aracılığıyla yeniden zamanlanırsa, bu arabirim artık geçerli değildir.
 
-```
+```cpp
 virtual IExecutionContext* GetContext() = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `IExecutionContext` engeli kaldırılmış bir iş parçacığı proxy için yürütme bağlamı için arabirim.
+Engeli kaldırılmış olan bir iş parçacığı proxy 'sine yürütme bağlamı için `IExecutionContext` arabirimi.
 
-##  <a name="getnextunblocknotification"></a>  Iumsunblocknotification::getnextunblocknotification metodu
+## <a name="getnextunblocknotification"></a>IUMSUnblockNotification:: GetNextUnblockNotification yöntemi
 
-Sonraki döndürür `IUMSUnblockNotification` arabirimi yönteminden döndürülen zincirindeki `IUMSCompletionList::GetUnblockNotifications`.
+`IUMSCompletionList::GetUnblockNotifications`yönteminden döndürülen zincirde bir sonraki `IUMSUnblockNotification` arabirimini döndürür.
 
-```
+```cpp
 virtual IUMSUnblockNotification* GetNextUnblockNotification() = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonraki `IUMSUnblockNotification` arabirimi yönteminden döndürülen zincirindeki `IUMSCompletionList::GetUnblockNotifications`.
+`IUMSCompletionList::GetUnblockNotifications`yönteminden döndürülen zincirdeki sonraki `IUMSUnblockNotification` arabirimi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

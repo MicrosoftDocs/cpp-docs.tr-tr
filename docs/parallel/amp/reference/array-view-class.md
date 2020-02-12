@@ -26,20 +26,20 @@ f1_keywords:
 helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-ms.openlocfilehash: e73639ffd11e08edb2fdb03471f2c6c88730f02d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2aef75eedcde2a2064fe12815d9afd21fee2c293
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405566"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127143"
 ---
-# <a name="arrayview-class"></a>array_view Sınıfı
+# <a name="array_view-class"></a>array_view Sınıfı
 
-Bir N boyutlu görünüm üzerinden başka bir kapsayıcı içinde tutulan veriyi temsil eder.
+Başka bir kapsayıcıda tutulan verilerin üzerinde N boyutlu bir görünümü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <
     typename value_type,
     int _Rank = 1
@@ -53,13 +53,13 @@ template <
 class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeof(value_type)/sizeof(int)>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *value_type*<br/>
-Öğelerin veri türü `array_view` nesne.
+`array_view` nesnesindeki öğelerin veri türü.
 
-*_Dizin*<br/>
-Boyut sayısı `array_view` nesne.
+*_Rank*<br/>
+`array_view` nesnesinin sıralaması.
 
 ## <a name="members"></a>Üyeler
 
@@ -67,77 +67,77 @@ Boyut sayısı `array_view` nesne.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[array_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `array_view` sınıfı. Hiçbir varsayılan oluşturucu yok `array<T,N>`. Bütün oluşturucular yalnızca CPU üzerinde çalışacak şekilde kısıtlanır ve bir Direct3D hedef üzerinde çalıştırılamaz.|
-|[~ array_view yok Edicisi](#ctor)|Yok eder `array_view` nesne.|
+|[array_view Oluşturucusu](#ctor)|`array_view` sınıfının yeni bir örneğini başlatır. `array<T,N>`için varsayılan oluşturucu yok. Tüm oluşturucular yalnızca CPU üzerinde çalışacak şekilde kısıtlanır ve bir Direct3D hedefi üzerinde yürütülemez.|
+|[~ array_view yok edici](#ctor)|`array_view` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[copy_to](#copy_to)|İçeriğini kopyalar `array_view` çağırarak belirtilen hedef nesneye `copy(*this, dest)`.|
-|[Veri](#data)|Öğesinin ham verisine bir işaretçi döndürür `array_view`.|
-|[discard_data](#discard_data)|Bu görünümün temelindeki geçerli veriyi atar.|
+|[copy_to](#copy_to)|`array_view` nesnesinin içeriğini `copy(*this, dest)`çağırarak belirtilen hedefe kopyalar.|
+|[verileri](#data)|`array_view`ham verisine bir işaretçi döndürür.|
+|[discard_data](#discard_data)|Bu görünümü temel alan geçerli verileri atar.|
 |[get_extent](#get_extent)|Array_view nesnesinin kapsam nesnesini döndürür.|
-|[get_ref](#get_ref)|Dizinlenmiş öğeye bir başvuru döndürür.|
-|[get_source_accelerator_view](#get_source_accelerator_view)|Döndürür [accelerator_view](accelerator-view-class.md) burada veri kaynağını `array_view` bulunur.|
-|[Yenileme](#refresh)|Bildirir `array_view` ilişkili belleği dışında değiştirilmiş nesne `array_view` arabirimi. Bu yönteme bir çağrı, eski tüm önbelleğe alınan bilgileri işler.|
-|[reinterpret_as](#reinterpret_as)|Tüm öğeleri içeren tek boyutlu bir dizi döndürür `array_view` nesne.|
-|[section](#section)|Uzantıda alt bölümlerini döndürür `array_view` nesnesinin Belirtilen kaynak ve, isteğe bağlı olarak belirtilen kapsama sahip.|
-|[synchronize](#synchronize)|İçin yapılan bütün değişiklikleri eşitler `array_view` nesnesine kaynak verisine.|
-|[synchronize_async](#synchronize_async)|Zaman uyumsuz olarak yapılan tüm değişiklikleri eşitler `array_view` nesnesine kaynak verisine.|
-|[synchronize_to](#synchronize_to)|İçin yapılan bütün değişiklikleri eşitler `array_view` belirtilen nesneye [accelerator_view](accelerator-view-class.md).|
-|[synchronize_to_async](#synchronize_to_async)|Zaman uyumsuz olarak yapılan tüm değişiklikleri eşitler `array_view` belirtilen nesneye [accelerator_view](accelerator-view-class.md).|
-|[view_as](#view_as)|Üreten bir `array_view` bu kullanarak farklı boyut sayısına nesnesinin `array_view` nesnenin veri.|
+|[get_ref](#get_ref)|Dizinli öğeye bir başvuru döndürür.|
+|[get_source_accelerator_view](#get_source_accelerator_view)|`array_view` veri kaynağının bulunduğu [accelerator_view](accelerator-view-class.md) döndürür.|
+|[yenileyebilir](#refresh)|`array_view` nesnesine, ilişkili belleğinin `array_view` arabirimi dışında değiştirildiğini bildirir. Bu yönteme yapılan bir çağrı, tüm önbelleğe alınan bilgileri eski işler.|
+|[reinterpret_as](#reinterpret_as)|`array_view` nesnesindeki tüm öğeleri içeren tek boyutlu bir dizi döndürür.|
+|[section](#section)|Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu `array_view` nesnesinin bir alt bölümünü döndürür.|
+|[synchronize](#synchronize)|`array_view` nesnesinde yapılan tüm değişiklikleri kaynak verilerine geri eşitler.|
+|[synchronize_async](#synchronize_async)|`array_view` nesnesi üzerinde yapılan değişiklikleri zaman uyumsuz olarak kaynak verilere geri eşitler.|
+|[synchronize_to](#synchronize_to)|`array_view` nesnesinde yapılan tüm değişiklikleri belirtilen [accelerator_view](accelerator-view-class.md)eşitler.|
+|[synchronize_to_async](#synchronize_to_async)|`array_view` nesnesinde yapılan tüm değişiklikleri zaman uyumsuz olarak belirtilen [accelerator_view](accelerator-view-class.md)eşitler.|
+|[view_as](#view_as)|Bu `array_view` nesnesinin verilerini kullanarak farklı bir derecenin `array_view` nesnesini oluşturur.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator()](#operator_call)|Parametre veya parametreler tarafından belirtilen öğenin değerini döndürür.|
-|[İşleci\[\]](#operator_at)|Parametreler ile belirtilen öğeyi döndürür.|
-|[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `array_view` bu nesne içine.|
+|[operator ()](#operator_call)|Parametresi veya parametreleri tarafından belirtilen öğenin değerini döndürür.|
+|[işleç\[\]](#operator_at)|Parametreler tarafından belirtilen öğeyi döndürür.|
+|[işleç =](#operator_eq)|Belirtilen `array_view` nesnesinin içeriğini buna kopyalar.|
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[sıra sabiti](#rank)|Boyut sayısını tutar `array_view` nesne.|
+|[sıralama sabiti](#rank)|`array_view` nesnesinin derecesini depolar.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Kapsam](#extent)|Alır `extent` şeklini tanımlayan nesnesi `array_view` nesne.|
-|[source_accelerator_view](#source_accelerator_view)|Alır [accelerator_view](accelerator-view-class.md) burada veri kaynağını `array_view` bulunur|
-|[value_type](#value_type)|Değer türü `array_view` ve bağlı dizinin.|
+|[genişliğini](#extent)|`array_view` nesnesinin şeklini tanımlayan `extent` nesnesini alır.|
+|[source_accelerator_view](#source_accelerator_view)|`array_view` veri kaynağının bulunduğu [accelerator_view](accelerator-view-class.md) alır|
+|[value_type](#value_type)|`array_view` ve bağlantılı dizinin değer türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`array_view` Sınıfı temsil eder bir görünüm, bulunan verileri bir [dizi](array-class.md) nesne veya alt bir `array` nesne.
+`array_view` sınıfı, bir [dizi](array-class.md) nesnesinde veya bir `array` nesnesinin alt bölümünde bulunan verilere ilişkin bir görünümü temsil eder.
 
-Erişebildiğiniz `array_view` kaynak veriler (yerel) bulunduğu veya farklı bir Hızlandırıcı üzerinden veya modellenmiş etki alanından bir nesne (uzaktan). Nesneye uzaktan eriştiğinizde, görünümler kopyalanır ve gerektiği şekilde önbelleğe alınır. Otomatik olarak önbelleğe alma etkileri dışında `array_view` nesneleri, benzer bir performans profiline sahiptir `array` nesneleri. Görünümlerini verilere erişirken küçük bir performans cezası yoktur.
+Kaynak verilerin bulunduğu `array_view` nesnesine (yerel olarak) veya farklı bir Hızlandırıcı ya da bir tutarlı etki alanına (uzaktan) erişebilirsiniz. Nesneye uzaktan eriştiğinizde, görünümler, gerektiği şekilde kopyalanır ve önbelleğe alınır. Otomatik önbelleğe almanın etkileri hariç `array_view` nesneleri, `array` nesnelerle benzer bir performans profiline sahiptir. Verilerle görünümler aracılığıyla eriştiğinizde küçük bir performans cezası vardır.
 
-Uzaktan kullanımda üç senaryo vardır:
+Üç uzaktan kullanım senaryosu vardır:
 
-- Sistem bellek işaretçisine görünüme yoluyla geçirilen bir [parallel_for_each](../../../parallel/concrt/reference/concurrency-namespace-functions.md#parallel_for_each) çağırmak için bir Hızlandırıcı ve Hızlandırıcı üzerinden erişilir.
+- Bir Hızlandırıcı 'ya [parallel_for_each](../../../parallel/concrt/reference/concurrency-namespace-functions.md#parallel_for_each) çağrısı ve hızlandırıcıda erişilen bir araç tarafından bir sistem belleği işaretçisine bir görünüm geçirilir.
 
-- Bir Hızlandırıcı üzerinde bulunan bir dizi için bir görünüm aracılığıyla geçirilen bir `parallel_for_each` çağırmak için başka bir Hızlandırıcı ve erişilir.
+- Hızlandırıcı üzerinde bulunan bir dizi için bir görünüm, başka bir hızlandırıcının `parallel_for_each` çağrısı aracılığıyla geçirilir ve bunlara erişilir.
 
-- Bir Hızlandırıcı üzerinde bulunan bir dizi görünümüne CPU üzerinden erişilir.
+- Bir hızlandırıcıda bulunan bir diziye yönelik bir görünüme CPU üzerinden erişilir.
 
-Bu senaryolardan herhangi birinde, başvurulan görünümler çalışma zamanı tarafından uzak bir konuma kopyalanır ve yapılan çağrılar tarafından değiştirilirse `array_view` nesne, yerel konumuna geri kopyalanır. Çalışma zamanı değişiklikleri geri kopyalama işlemini iyileştirebilir, yalnızca değişen öğeleri kopyalayabilir veya değişmeyen bölümleri de kopyalayabilir. Çakışan `array_view` nesneler bir veri kaynağı üzerinde uzak bir konumdan bilgi tutarlılığını korumak için garanti edilmez.
+Bu senaryolardan herhangi birinde, başvurulan görünümler çalışma zamanı tarafından uzak konuma kopyalanır ve `array_view` nesnesine yapılan çağrılar tarafından değiştirilirse, yerel konuma geri kopyalanır. Çalışma zamanı değişiklikleri geri kopyalama sürecini iyileştirebilirler, yalnızca değiştirilen öğeleri kopyalayabilir ya da değişmeyen bölümleri kopyalayabilir. Bir veri kaynağındaki çakışan `array_view` nesneleri, uzak bir konumda bilgi tutarlılığını sürdürmek için garanti edilmez.
 
-Aynı veri kaynağı için herhangi bir çok iş parçacıklı erişimi eşitlemeniz gerekir.
+Aynı veri kaynağına herhangi bir çok iş parçacıklı erişimi eşitlemeniz gerekir.
 
-Çalışma zamanı verileri önbelleğe alma ile ilgili olarak aşağıdakileri garantiler `array_view` nesneler:
+Çalışma zamanı, `array_view` nesnelerinde verilerin önbelleğe alınmasına ilişkin aşağıdaki garantisi verir:
 
-- Tüm iyi senkronize erişimin bir `array` nesnesi ve bir `array_view` nesnesi üzerinden program sırasına erişimler olur-ilişki önce.
+- Bir `array` nesnesine ve bu nesne sırasındaki bir `array_view` nesnesine tüm iyi eşitlenmiş erişimler, ilişki öncesinde bir seri hale gelir.
 
-- Çakışan tüm iyi senkronize erişimlerinin `array_view` aynı Hızlandırıcı üzerinde nesnelerde `array` nesnesi aracılığıyla başka isim verilir olan `array` nesne. Bunlar toplam anlamına oluşur-önce program sırasına ilişkiden ilişkidir. Önbelleksizlik yoktur. Varsa `array_view` nesneleri farklı Hızlandırıcılar üzerinde yürütülürken, erişim sırası, bir yarış durumu oluşturma, tanımsız olur.
+- Tek bir `array` nesnesi üzerinde aynı hızlandırıcıda bulunan örtüşen `array_view` nesnelerine yönelik tüm iyi eşitlenmiş erişimler `array` nesnesi aracılığıyla başka bir ad alanına eklenir. Bu kişiler, bir toplam meydana gelir ve program sırasına udan önce ilişkiye göre yapılır. Önbelleğe alma yok. `array_view` nesneler farklı Hızlandırıcılar üzerinde yürütüle, erişim sırası tanımsızdır ve bir yarış durumu oluşturur.
 
-Oluştururken bir `array_view` Sistem belleğinde bir işaretçi kullanarak nesne değiştirmeniz gerekir `array_view` nesnesi yalnızca `array_view` işaretçi. Alternatif olarak, çağırmalıdır `refresh()` birinde `array_view` alttaki doğal bellek doğrudan yerine aracılığıyla değiştirilirse, sistem işaretçisine bağlı olan nesneleri `array_view` nesne.
+Sistem belleğindeki bir işaretçi kullanarak bir `array_view` nesnesi oluşturduğunuzda, görünüm `array_view` nesnesini yalnızca `array_view` işaretçisi aracılığıyla değiştirmeniz gerekir. Alternatif olarak, temel alınan yerel bellek `array_view` nesnesi yerine doğrudan değiştirilmişse, sistem işaretçisine bağlı `array_view` nesnelerinden birinde `refresh()` çağırmanız gerekir.
 
-İki eylem sonucunda `array_view` alttaki doğal bellek değiştirilir ve Hızlandırıcı üzerinde bulunan herhangi bir kopyanın tarihi geçmiş nesnesi. Aşağıdaki yönergeleri izlerseniz, işaretçi temelli görünümler paralel veri dizileri görünümlerine sağlanan aynıdır.
+Her iki eylem de `array_view` nesnesine temeldeki yerel belleğin değiştirildiğini ve hızlandırıcıda bulunan tüm kopyaların güncel olduğunu bildirir. Bu yönergeleri izlerseniz, işaretçi tabanlı görünümler, veri paralel dizilerinin görünümlerine göre belirtilenlerle aynıdır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -149,23 +149,23 @@ Oluştururken bir `array_view` Sistem belleğinde bir işaretçi kullanarak nesn
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp.h
+**Üst bilgi:** amp. h
 
-**Namespace:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
-##  <a name="dtor"></a> ~ array_view
+## <a name="dtor"></a>~ array_view
 
-Yok eder `array_view` nesne.
+`array_view` nesnesini yok eder.
 
-```
+```cpp
 ~array_view()restrict(amp,cpu);
 ```
 
-##  <a name="ctor"></a> array_view
+## <a name="ctor"></a>array_view
 
-Yeni bir örneğini başlatır `array_view` sınıfı.
+`array_view` sınıfının yeni bir örneğini başlatır.
 
-```
+```cpp
 array_view(
     array<value_type, _Rank>& _Src)restrict(amp,cpu);
 
@@ -328,37 +328,37 @@ array_view(
 ### <a name="parameters"></a>Parametreler
 
 *_Arr_type*<br/>
-İçinden verilerin sağlandığı bir C tarzı dizinin öğe türü.
+Verilerin sağlandığı bir C stili dizinin öğe türü.
 
 *_Container*<br/>
-Destekleyen doğrusal kapsayıcıyı belirtmelisiniz bir şablon bağımsız değişkeni `data()` ve `size()` üyeleri.
+`data()` ve `size()` üyelerini destekleyen doğrusal bir kapsayıcı belirtmesi gereken bir şablon bağımsız değişkeni.
 
 *_E0*<br/>
-Bu bölümün kapsamının ikinci en önemli bileşeni.
+Bu bölümün kapsamının en önemli bileşeni.
 
 *_E1*<br/>
-Bu bölümün kapsamının sonraki-en-önemli bileşeni.
+Bu bölümün kapsamının en çok önemli bir bileşeni.
 
 *_E2*<br/>
 Bu bölümün kapsamının en az önemli bileşeni.
 
 *_Extent*<br/>
-Bu her boyutundaki kapsam `array_view`.
+Bu `array_view`her boyuttaki kapsam.
 
-*_Diğer*<br/>
-Bir nesne türü `array_view<T,N>` yeni başlatmak üzere `array_view`.
+*_Other*<br/>
+Yeni `array_view`başlatılacak `array_view<T,N>` türünde bir nesne.
 
-*_Boyut*<br/>
-İçinden verilerin sağlandığı bir C tarzı dizinin boyutu.
+*_Size*<br/>
+Verilerin sağlandığı C stili dizinin boyutu.
 
 *_Src*<br/>
-Yeni bir diziye Kopyalanacak kaynak verileri için bir işaretçi.
+Yeni diziye Kopyalanacak kaynak verilere yönelik bir işaretçi.
 
-##  <a name="copy_to"></a> copy_to
+## <a name="copy_to"></a>copy_to
 
-İçeriğini kopyalar `array_view` nesnesini çağırarak belirtilen hedef nesneye `copy(*this, dest)`.
+`array_view` nesnesinin içeriğini, `copy(*this, dest)`çağırarak belirtilen hedef nesneye kopyalar.
 
-```
+```cpp
 void copy_to(
     array<value_type, _Rank>& _Dest) const;
 
@@ -369,13 +369,13 @@ void copy_to(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Üstüne kopyalanacak nesne.
+Kopyalanacak nesne.
 
-##  <a name="data"></a> Veri
+## <a name="data"></a>verileri
 
-Öğesinin ham verisine bir işaretçi döndürür `array_view`.
+`array_view`ham verisine bir işaretçi döndürür.
 
-```
+```cpp
 value_type* data() const restrict(amp,
     cpu);
 
@@ -385,41 +385,41 @@ const value_type* data() const restrict(amp,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğesinin ham verisine bir işaretçi `array_view`.
+`array_view`ham verilerine yönelik bir işaretçi.
 
-##  <a name="discard_data"></a> discard_data
+## <a name="discard_data"></a>discard_data
 
-Bu görünümün temelindeki geçerli veriyi atar. Bu görünüm geçerli içeriğini bir hedefe kopyalanmasını engellemek için çalışma zamanı bir iyileştirme ipucudur, `accelerator_view` üzerinden erişilen ve varolan içeriği gerek duyulmuyorsa kullanımı tavsiye edilir. Bu yöntemi bir restrict(amp) bağlamında kullanıldığında İşlemsiz.
+Bu görünümü temel alan geçerli verileri atar. Bu, görünümün geçerli içeriğini üzerinde erişildiği bir hedef `accelerator_view` kopyalamayı önlemek için kullanılan çalışma zamanına yönelik bir iyileştirme ipucdur ve var olan içerik gerekmiyorsa kullanımı önerilir. Bu yöntem bir restrict (amp) bağlamında kullanıldığında op değildir
 
-```
+```cpp
 void discard_data() const restrict(cpu);
 ```
 
-##  <a name="extent"></a> Kapsam
+## <a name="extent"></a>genişliğini
 
-Alır `extent` şeklini tanımlayan nesnesi `array_view` nesne.
+`array_view` nesnesinin şeklini tanımlayan `extent` nesnesini alır.
 
-```
+```cpp
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
 ```
 
-##  <a name="get_extent"></a> get_extent
+## <a name="get_extent"></a>get_extent
 
-Döndürür [uzantı](extent-class.md) nesnesinin `array_view` nesne.
+`array_view` nesnesinin [kapsam](extent-class.md) nesnesini döndürür.
 
-```
+```cpp
 Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`extent` Nesnesinin `array_view` nesnesi
+`array_view` nesnesinin `extent` nesnesi
 
-##  <a name="get_ref"></a> get_ref
+## <a name="get_ref"></a>get_ref
 
-_Index tarafından dizinlenen öğeye bir başvuru alın. CPU üzerindeki array_view öğesine erişmek için diğer dizin işleçlerinden farklı olarak, bu yöntem bu array_view öğesinin içeriğine CPU'yu örtülü olarak eşitlemez. Uzak konumdaki array_view erişme veya bu array_view içeren kopyalama işlemini gerçekleştirdikten sonra kullanıcılar bu yöntemi çağırmadan önce array_view öğesini CPU açıkça eşitlemeye sorumludur. Bunun yapılmaması, tanımsız davranışa neden olur.
+_Index tarafından dizinlenen öğeye bir başvuru alın. CPU üzerindeki array_view erişmek için diğer dizin oluşturma işleçlerinin aksine, bu yöntem bu array_view içeriğini CPU 'ya örtük olarak eşitlemez. Uzak bir konumdaki array_view erişildikten veya bu array_view ilişkili bir kopyalama işlemi gerçekleştirdikten sonra, bu yöntemi çağırmadan önce array_view CPU 'ya açıkça eşitlemeden sorumludur. Bunun yapılmaması, tanımsız davranışa neden olur.
 
-```
+```cpp
 value_type& get_ref(
     const index<_Rank>& _Index) const restrict(amp, cpu);
 ```
@@ -427,27 +427,27 @@ value_type& get_ref(
 ### <a name="parameters"></a>Parametreler
 
 *_Index*<br/>
-Dizini.
+Dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 _Index tarafından dizinlenen öğeye başvuru
 
-##  <a name="get_source_accelerator_view"></a> get_source_accelerator_view
+## <a name="get_source_accelerator_view"></a>get_source_accelerator_view
 
-Array_view veri kaynağının bulunduğu accelerator_view döndürür. Array_view bir veri kaynağına sahip değilse, bu API bir runtime_exception atar.
+Array_view veri kaynağının bulunduğu accelerator_view döndürür. Array_view bir veri kaynağına sahip değilse, bu API bir runtime_exception oluşturur
 
-```
+```cpp
 accelerator_view get_source_accelerator_view() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-##  <a name="operator_call"></a> operator()
+## <a name="operator_call"></a>operator ()
 
-Parametre veya parametreler tarafından belirtilen öğenin değerini döndürür.
+Parametresi veya parametreleri tarafından belirtilen öğenin değerini döndürür.
 
-```
+```cpp
 value_type& operator() (
     const index<_Rank>& _Index) const restrict(amp,cpu);
 
@@ -486,13 +486,13 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre veya parametreler tarafından belirtilen öğe değeri.
+Parametresi veya parametreleri tarafından belirtilen öğenin değeri.
 
-##  <a name="operator_at"></a> operator]
+## <a name="operator_at"></a>operator []
 
-Parametreler ile belirtilen öğeyi döndürür.
+Parametreler tarafından belirtilen öğeyi döndürür.
 
-```
+```cpp
 typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator[] (
     int _I) const restrict(amp,cpu);
 
@@ -503,20 +503,20 @@ value_type& operator[] (
 ### <a name="parameters"></a>Parametreler
 
 *_Index*<br/>
-Dizini.
+Dizin.
 
 *_I*<br/>
-Dizini.
+Dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizindeki öğenin değerini veya bir `array_view` en önemli boyutta öngörülmüş.
+Dizindeki öğenin değeri veya en önemli boyutta bir `array_view` yansıtılmıştır.
 
-##  <a name="operator_eq"></a> işleç =
+## <a name="operator_eq"></a>işleç =
 
-Belirtilen içeriğini kopyalar `array_view` buna nesne.
+Belirtilen `array_view` nesnesinin içeriğini buna kopyalar.
 
-```
+```cpp
 array_view& operator= (
     const array_view& _Other) restrict(amp,cpu);
 
@@ -526,36 +526,36 @@ array_view& operator= (
 
 ### <a name="parameters"></a>Parametreler
 
-*_Diğer*<br/>
-`array_view` Kopyalanacak nesne.
+*_Other*<br/>
+Kopyalamanın `array_view` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu başvuru `array_view` nesne.
+Bu `array_view` nesnesine bir başvuru.
 
-##  <a name="rank"></a> boyut sayısı
+## <a name="rank"></a>sırası
 
-Boyut sayısını tutar `array_view` nesne.
+`array_view` nesnesinin derecesini depolar.
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
-##  <a name="refresh"></a> Yenileme
+## <a name="refresh"></a>yenileyebilir
 
-Bildirir `array_view` ilişkili belleği dışında değiştirilmiş nesne `array_view` arabirimi. Bu yönteme bir çağrı, eski tüm önbelleğe alınan bilgileri işler.
+`array_view` nesnesine, ilişkili belleğinin `array_view` arabirimi dışında değiştirildiğini bildirir. Bu yönteme yapılan bir çağrı, tüm önbelleğe alınan bilgileri eski işler.
 
-```
+```cpp
 void refresh() const restrict(cpu);
 ```
 
-## <a name="reinterpret_as"></a> reinterpret_as
+## <a name="reinterpret_as"></a>reinterpret_as
 
-Array_view, olabilen bir seçenek olarak kaynak array_view'dan bir farklı bir değer türü olan tek boyutlu bir array_view aracılığıyla yeniden yorumlar.
+Array_view, bir seçenek olarak kaynak array_view farklı bir değer türüne sahip olabilen tek boyutlu bir array_view üzerinden yeniden yorumlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <
     typename _Value_type2
 >
@@ -570,17 +570,17 @@ array_view<const _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);
 ### <a name="parameters"></a>Parametreler
 
 *_Value_type2*<br/>
-Yeni veri türünü `array_view` nesne.
+Yeni `array_view` nesnesinin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `array_view` nesne veya const `array_view` bunu temel alarak nesne `array_view`, öğesinden öğe türü ile `T` için `_Value_type2`, ve düşürülen *N* 1.
+`array_view` nesne veya bu `array_view`temel alan bir const `array_view` nesnesi, öğe türü `T` ' den `_Value_type2`' a dönüştürülür ve sıra *N* ' den 1 ' e indirilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazen çok boyutlu bir kaynak diziden farklı değer türüne sahip olabilecek bir doğrusal, tek boyutlu dizi olarak görüntülemek kullanışlıdır. Bu şirket elde edebileceğiniz bir `array_view` bu yöntemi kullanarak.
+Bazen çok boyutlu bir diziyi, kaynak diziden farklı bir değer türüne sahip olabilecek doğrusal, tek boyutlu bir dizi olarak görüntülemek yararlıdır. Bu yöntemi kullanarak bunu bir `array_view` elde edebilirsiniz.
 
-**Uyarı** bir array_view nesnesini farklı bir değer türü kullanarak yeniden yorumlamak güvenli olmayabilecek bir işlem olduğu. Bu işlev dikkatli kullanılmalıdır.
+**Uyarı** Array_view nesnesini farklı bir değer türü kullanarak yeniden yorumlamak güvenli olmayabilecek bir işlemdir. Bu işlev dikkatli kullanılmalıdır.
 
 Örnek buradadır:
 
@@ -593,11 +593,11 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);
 ```
 
-##  <a name="section"></a> Bölüm
+## <a name="section"></a>kısmı
 
-Uzantıda alt bölümlerini döndürür `array_view` nesnesinin Belirtilen kaynak ve, isteğe bağlı olarak belirtilen kapsama sahip.
+Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu `array_view` nesnesinin bir alt bölümünü döndürür.
 
-```
+```cpp
 array_view section(
     const Concurrency::index<_Rank>& _Section_origin,
     const Concurrency::extent<_Rank>& _Section_extent) const restrict(amp,cpu);
@@ -630,55 +630,55 @@ array_view section(
 ### <a name="parameters"></a>Parametreler
 
 *_E0*<br/>
-Bu bölümün kapsamının ikinci en önemli bileşeni.
+Bu bölümün kapsamının en önemli bileşeni.
 
 *_E1*<br/>
-Bu bölümün kapsamının sonraki-en-önemli bileşeni.
+Bu bölümün kapsamının en çok önemli bir bileşeni.
 
 *_E2*<br/>
 Bu bölümün kapsamının en az önemli bileşeni.
 
 *_Ext*<br/>
-[Uzantı](extent-class.md) nesnesi bölümün kapsamını belirtir. Kaynak 0'dır.
+Bölüm kapsamını belirten [uzantı](extent-class.md) nesnesi. Kaynak 0 ' dır.
 
 *_Idx*<br/>
-[Dizin](index-class.md) başlangıç konumunu belirten bir nesne. Altbölüm kapsamın geri kalan ' dir.
+Kaynak konumunu belirten [Dizin](index-class.md) nesnesi. Alt bölüm, kapsamın geri kalanı olur.
 
 *_I0*<br/>
-Bu bölümün kaynağının ikinci en önemli bileşeni.
+Bu bölümün kaynağının en önemli bileşeni.
 
 *_I1*<br/>
-Bu bölümün kaynağının ikinci sonraki-en-önemli bileşeni.
+Bu bölümün kaynağının en çok önemli bileşeni.
 
 *_I2*<br/>
-Bu bölümün kaynağının ikinci en az önemli bileşeni.
+Bu bölümün kaynağının en az önemli bileşeni.
 
-*_Dizin*<br/>
-Bölümün boyut sayısı.
+*_Rank*<br/>
+Bölümün derecesi.
 
 *_Section_extent*<br/>
-[Uzantı](extent-class.md) nesnesi bölümün kapsamını belirtir.
+Bölüm kapsamını belirten [uzantı](extent-class.md) nesnesi.
 
 *_Section_origin*<br/>
-[Dizin](index-class.md) başlangıç konumunu belirten bir nesne.
+Kaynak konumunu belirten [Dizin](index-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzantıda alt bölümlerini `array_view` nesnesinin Belirtilen kaynak ve, isteğe bağlı olarak belirtilen kapsama sahip. Yalnızca `index` nesnesi belirtildiğinde, Altbölüm ilgili kapsam öğeleri dizinleri daha büyük dizinlere sahip tüm öğeleri içeren `index` nesne.
+Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu `array_view` nesnesinin bir alt bölümü. Yalnızca `index` nesnesi belirtildiğinde alt bölüm, ilişkili kapsamın, `index` nesnesindeki öğelerin dizinlerinden daha büyük dizinlere sahip olan tüm öğeleri içerir.
 
-##  <a name="source_accelerator_view"></a> source_accelerator_view
+## <a name="source_accelerator_view"></a>source_accelerator_view
 
-Bu array_view ile ilişkili kaynak accelerator_view alır.
+Bu array_view ilişkilendirildiği kaynak accelerator_view alır.
 
-```
+```cpp
 __declspec(property(get= get_source_accelerator_view)) accelerator_view source_accelerator_view;
 ```
 
-##  <a name="synchronize"></a> Eşitleme
+## <a name="synchronize"></a>yapacak
 
-İçin yapılan bütün değişiklikleri eşitler `array_view` nesnesine kaynak verisine.
+`array_view` nesnesinde yapılan tüm değişiklikleri kaynak verilerine geri eşitler.
 
-```
+```cpp
 void synchronize(access_type _Access_type = access_type_read) const restrict(cpu);
 
 void synchronize() const restrict(cpu);
@@ -687,13 +687,13 @@ void synchronize() const restrict(cpu);
 ### <a name="parameters"></a>Parametreler
 
 *_Access_type*<br/>
-Hedeflenen [access_type](concurrency-namespace-enums-amp.md#access_type) hedef [accelerator_view](accelerator-view-class.md). Bu parametrenin varsayılan değeri `access_type_read`.
+Hedef [accelerator_view](accelerator-view-class.md)amaçlanan [access_type](concurrency-namespace-enums-amp.md#access_type) . Bu parametrenin varsayılan değeri `access_type_read`vardır.
 
-##  <a name="synchronize_async"></a> synchronize_async
+## <a name="synchronize_async"></a>synchronize_async
 
-Zaman uyumsuz olarak yapılan tüm değişiklikleri eşitler `array_view` nesnesine kaynak verisine.
+`array_view` nesnesi üzerinde yapılan değişiklikleri zaman uyumsuz olarak kaynak verilere geri eşitler.
 
-```
+```cpp
 concurrency::completion_future synchronize_async(access_type _Access_type = access_type_read) const restrict(cpu);
 
 concurrency::completion_future synchronize_async() const restrict(cpu);
@@ -702,17 +702,17 @@ concurrency::completion_future synchronize_async() const restrict(cpu);
 ### <a name="parameters"></a>Parametreler
 
 *_Access_type*<br/>
-Hedeflenen [access_type](concurrency-namespace-enums-amp.md#access_type) hedef [accelerator_view](accelerator-view-class.md). Bu parametrenin varsayılan değeri `access_type_read`.
+Hedef [accelerator_view](accelerator-view-class.md)amaçlanan [access_type](concurrency-namespace-enums-amp.md#access_type) . Bu parametrenin varsayılan değeri `access_type_read`vardır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gelecek alacağı işlemin tamamlanmasını bekleyin.
+İşlemin tamamlanmasını beklemek için bir sonraki.
 
-##  <a name="synchronize_to"></a> synchronize_to
+## <a name="synchronize_to"></a>synchronize_to
 
-Belirtilen Hızlandırıcı görünümü bu array_view yapılan bütün değişiklikleri eşitler.
+Bu array_view yapılan tüm değişiklikleri belirtilen accelerator_view eşitler.
 
-```
+```cpp
 void synchronize_to(
     const accelerator_view& _Accl_view,
     access_type _Access_type = access_type_read) const restrict(cpu);
@@ -724,16 +724,16 @@ void synchronize_to(
 ### <a name="parameters"></a>Parametreler
 
 *_Accl_view*<br/>
-Eşitlenecek hedef accelerator_view.
+Hedef accelerator_view eşitlenecek.
 
 *_Access_type*<br/>
-Hedef accelerator_view üzerindeki istenen access_type. Bu parametre bir varsayılan değeri: access_type_read sahiptir.
+Hedef accelerator_view istenen access_type. Bu parametrenin varsayılan değeri access_type_read vardır.
 
-##  <a name="synchronize_to_async"></a> synchronize_to_async
+## <a name="synchronize_to_async"></a>synchronize_to_async
 
-Zaman uyumsuz olarak belirtilen Hızlandırıcı görünümü bu array_view yapılan bütün değişiklikleri eşitler.
+Bu array_view yapılan değişiklikleri zaman uyumsuz olarak belirtilen accelerator_view eşitler.
 
-```
+```cpp
 concurrency::completion_future synchronize_to_async(
     const accelerator_view& _Accl_view,
     access_type _Access_type = access_type_read) const restrict(cpu);
@@ -745,28 +745,28 @@ concurrency::completion_future synchronize_to_async(
 ### <a name="parameters"></a>Parametreler
 
 *_Accl_view*<br/>
-Eşitlenecek hedef accelerator_view.
+Hedef accelerator_view eşitlenecek.
 
 *_Access_type*<br/>
-Hedef accelerator_view üzerindeki istenen access_type. Bu parametre bir varsayılan değeri: access_type_read sahiptir.
+Hedef accelerator_view istenen access_type. Bu parametrenin varsayılan değeri access_type_read vardır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gelecek alacağı işlemin tamamlanmasını bekleyin.
+İşlemin tamamlanmasını beklemek için bir sonraki.
 
-##  <a name="value_type"></a> value_type
+## <a name="value_type"></a>value_type
 
-Array_view ve bağlı dizinin değer türü.
+Array_view ve bağlantılı dizinin değer türü.
 
-```
+```cpp
 typedef typenamevalue_type value_type;
 ```
 
-##  <a name="view_as"></a> view_as
+## <a name="view_as"></a>view_as
 
-Bu derecenin `array_view` olarak bir `array_view` bir.
+Bu `array_view` farklı bir derece `array_view` olarak yeniden yorumlar.
 
-```
+```cpp
 template <
     int _New_rank
 >
@@ -783,17 +783,17 @@ array_view<const value_type,_New_rank> view_as(
 ### <a name="parameters"></a>Parametreler
 
 *_New_rank*<br/>
-Yeni Boyut `array_view` nesne.
+Yeni `array_view` nesnesinin sıralaması.
 
 *_View_extent*<br/>
-Yeniden şekillendiren `extent`.
+Yeniden şekillendirme `extent`.
 
 *value_type*<br/>
-Hem özgün öğelerin veri türü [dizi](array-class.md) nesne ve döndürülen `array_view` nesne.
+Hem özgün [dizi](array-class.md) nesnesi hem de döndürülen `array_view` nesnesi içindeki öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`array_view` Oluşturulan nesne.
+Oluşturulan `array_view` nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

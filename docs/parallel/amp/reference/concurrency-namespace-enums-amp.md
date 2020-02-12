@@ -5,12 +5,12 @@ f1_keywords:
 - amp/Concurrency::access_type
 - amp/Concurrency::queuing_mode
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-ms.openlocfilehash: adfc1743d887f2a670111eff31cf4653d2df1bee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4feb2f98fc288fa79c0f9d81e4ed882027eddf8
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180459"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126961"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 
@@ -18,11 +18,11 @@ ms.locfileid: "62180459"
 |-|-|
 |[access_type numaralandırması](#access_type)|[queuing_mode numaralandırması](#queuing_mode)|
 
-##  <a name="access_type"></a>  access_type numaralandırması
+## <a name="access_type"></a>access_type numaralandırması
 
-Çeşitli veri erişimi belirtmek için kullanılan numaralandırma türü.
+Verilerin çeşitli erişim türlerini belirtmek için kullanılan numaralandırma türü.
 
-```
+```cpp
 enum access_type;
 ```
 
@@ -30,17 +30,17 @@ enum access_type;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`access_type_auto`|Otomatik olarak en iyi seçin `access_type` Hızlandırıcı için.|
-|`access_type_none`|Ayrılmış. Ayırma, yalnızca Hızlandırıcı ve CPU üzerinde erişilebilir.|
-|`access_type_read`|Paylaşılan. Tahsisat, hızlandırıcıda erişilebilirdir ve CPU üzerinde okunabilir.|
-|`access_type_read_write`|Paylaşılan. Tahsisat, hızlandırıcıda erişilebilirdir ve CPU üzerinde yazılabilir.|
-|`access_type_write`|Paylaşılan. Tahsisat, hızlandırıcıda erişilebilirdir ve hem okunabilir, hem de CPU üzerinde yazılabilir.|
+|`access_type_auto`|Hızlandırıcı için en iyi `access_type` otomatik olarak seçin.|
+|`access_type_none`|Ayrılan. Ayırmaya yalnızca hızlandırıcıda erişilebilirdir ve CPU üzerinde değil.|
+|`access_type_read`|Paylaşılan. Ayırmaya hızlandırıcıda erişilebilirdir ve CPU üzerinde okunabilir.|
+|`access_type_read_write`|Paylaşılan. Ayırmaya hızlandırıcıda erişilebilirdir ve CPU üzerinde yazılabilir.|
+|`access_type_write`|Paylaşılan. Ayırmaya hızlandırıcıda erişilebilirdir ve CPU üzerinde hem okunabilir hem de yazılabilir.|
 
-##  <a name="queuing_mode"></a>  queuing_mode numaralandırması
+## <a name="queuing_mode"></a>queuing_mode numaralandırması
 
-Hızlandırıcı üzerinde desteklenen sıralama modlarını belirtir.
+Hızlandırıcıda desteklenen sıraya alma modlarını belirtir.
 
-```
+```cpp
 enum queuing_mode;
 ```
 
@@ -48,8 +48,8 @@ enum queuing_mode;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`queuing_mode_immediate`|Örneğin, herhangi bir belirten bir sıralama modu komutları [parallel_for_each işlevi (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each), bunlar çağırana dönmez ilgili Hızlandırıcı cihaza gönderilir.|
-|`queuing_mode_automatic`|Komutları için karşılık gelen bir komut sırası üzerinde sırada olduğunu belirten bir sıralama modu [accelerator_view](accelerator-view-class.md) nesne. Komutları cihaza gönderilen zaman [accelerator_view::flush](accelerator-view-class.md#flush) çağrılır.|
+|`queuing_mode_immediate`|Her komutun (örneğin, [parallel_for_each işlevi (C++ amp)](concurrency-namespace-functions-amp.md#parallel_for_each), çağırana geri döndükten sonra karşılık gelen Hızlandırıcı cihazına gönderileceğini belirten bir sıraya alma modu.|
+|`queuing_mode_automatic`|Bu komutların [accelerator_view](accelerator-view-class.md) nesnesine karşılık gelen bir komut kuyruğu üzerinde sıralanmış olduğunu belirten bir sıraya alma modu. [Accelerator_view:: Flush](accelerator-view-class.md#flush) çağrıldığında, komutlar cihaza gönderilir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

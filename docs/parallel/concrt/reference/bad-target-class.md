@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - bad_target class
 ms.assetid: e6dcddbf-9217-4fac-ac7f-7b8b4781d2f5
-ms.openlocfilehash: 04489151cedf1a47aeebd883e76b8d26b51031ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 023607ff142b7fa39165cc9b5280a8e9345a3645
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337771"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142850"
 ---
-# <a name="badtarget-class"></a>bad_target Sınıfı
+# <a name="bad_target-class"></a>bad_target Sınıfı
 
-Bu sınıf, bir özel durum gerçekleştirilmekte olan işlem için geçersiz bir hedefe bir ileti bloğu bir işaretçi verildiğinde, durum açıklar.
+Bu sınıf, bir ileti bloğuna gerçekleştirilen işlem için geçersiz olan bir hedefe işaretçi verildiğinde oluşan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class bad_target : public std::exception;
 ```
 
@@ -31,11 +31,11 @@ class bad_target : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[bad_target](#ctor)|Fazla Yüklendi. Oluşturur bir `bad_target` nesne.|
+|[bad_target](#ctor)|Fazla Yüklendi. `bad_target` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu özel durum, genellikle bir hedef için farklı bir hedef ayrılmış olan bir iletiyi kullanmak çalışan veya değil tutan bir ayırma serbest gibi nedenlerle oluşturulur.
+Bu özel durum tipik olarak, bir hedef gibi farklı bir hedef için ayrılmış bir iletiyi kullanmaya çalışan veya tutamayan bir ayırmayı serbest bırakan bir iletiyi kullanmaya çalışan nedenlerle oluşturulur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,15 +45,15 @@ Bu özel durum, genellikle bir hedef için farklı bir hedef ayrılmış olan bi
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> bad_target
+## <a name="ctor"></a>bad_target
 
-Oluşturur bir `bad_target` nesne.
+`bad_target` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP bad_target(_In_z_ const char* _Message) throw();
 
 bad_target() throw();
@@ -61,7 +61,7 @@ bad_target() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

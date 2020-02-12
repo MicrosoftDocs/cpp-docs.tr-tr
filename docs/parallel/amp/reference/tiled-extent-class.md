@@ -13,20 +13,20 @@ f1_keywords:
 - AMP/Concurrency::tiled_extent::tile_dim2
 - AMP/Concurrency::tiled_extent::tile_extent
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-ms.openlocfilehash: 51e7696b8103e81d42beec0987a49f26fe041643
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2248c770c7eedde59d1cb592f7d5d7c1bfbde9a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352287"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126428"
 ---
-# <a name="tiledextent-class"></a>tiled_extent Sınıfı
+# <a name="tiled_extent-class"></a>tiled_extent Sınıfı
 
-A `tiled_extent` nesnesi bir `extent` halidir bir, iki veya üç boyutlu kesen ve onun bir veya üç boyutta nesnesi.
+`tiled_extent` nesnesi, bir ile üç boyutun bir `extent` nesnesidir ve bu da kapsamı alt alanı bir, iki veya üç boyutlu kutucuklara ayırır.
 
-### <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <
     int _Dim0,
     int _Dim1,
@@ -52,7 +52,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 En önemli boyutun uzunluğu.
 
 *_Dim1*<br/>
-Sonraki en-önemli boyutun uzunluğu.
+Sonraki-en önemli boyutun uzunluğu.
 
 *_Dim2*<br/>
 En az önemli boyutun uzunluğu.
@@ -63,35 +63,35 @@ En az önemli boyutun uzunluğu.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[tiled_extent Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `tiled_extent` sınıfı.|
+|[tiled_extent Oluşturucusu](#ctor)|`tiled_extent` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_tile_extent](#get_tile_extent)|Döndürür bir `extent` değerlerini yakalayan bir nesne `tiled_extent` şablon bağımsız değişkenleri `_Dim0`, `_Dim1`, ve `_Dim2`.|
-|[pad](#pad)|Yeni bir `tiled_extent` döşeme boyutları ile kalansız olacak şekilde yukarı nesne kapsamları ile ayarlandı.|
-|[Kes](#truncate)|Yeni bir `tiled_extent` döşeme boyutları ile kalansız olacak şekilde aşağı kapsamları nesne ayarlanır.|
+|[get_tile_extent](#get_tile_extent)|`_Dim0`, `_Dim1`ve `_Dim2``tiled_extent` şablon bağımsız değişkenlerinin değerlerini yakalayan bir `extent` nesnesi döndürür.|
+|[lığında](#pad)|Ölçeği, kutucuk boyutlarına eşit olarak bölünebilen şekilde ayarlanmış yeni bir `tiled_extent` nesnesi döndürür.|
+|[kesilemedi](#truncate)|Yeni bir `tiled_extent` nesnesini, kutucuk boyutları tarafından eşit olarak bölünebilen şekilde ayarlanmış şekilde döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `tiled_index` bu nesne içine.|
+|[işleç =](#operator_eq)|Belirtilen `tiled_index` nesnesinin içeriğini buna kopyalar.|
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[tile_dim0 sabiti](#tile_dim0)|En önemli boyutun uzunluğunu saklar.|
-|[tile_dim1 sabiti](#tile_dim1)|Sonraki en-önemli boyutun uzunluğunu saklar.|
-|[tile_dim2 sabiti](#tile_dim2)|En az önemli boyutun uzunluğunu saklar.|
+|[tile_dim0 sabiti](#tile_dim0)|En önemli boyutun uzunluğunu depolar.|
+|[tile_dim1 sabiti](#tile_dim1)|Sonraki-en önemli boyutun uzunluğunu depolar.|
+|[tile_dim2 sabiti](#tile_dim2)|En az önemli boyutun uzunluğunu depolar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[tile_extent](#tile_extent)|Alır bir `extent` değerlerini yakalayan bir nesne `tiled_extent` şablon bağımsız değişkenleri `_Dim0`, `_Dim1`, ve `_Dim2`.|
+|[tile_extent](#tile_extent)|`_Dim0`, `_Dim1`ve `_Dim2``tiled_extent` şablon bağımsız değişkenlerinin değerlerini yakalayan bir `extent` nesnesi alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -101,17 +101,17 @@ En az önemli boyutun uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp.h
+**Üst bilgi:** amp. h
 
-**Namespace:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
-## <a name="ctor"> </a>  tiled_extent Oluşturucusu
+## <a name="ctor"></a> tiled_extent Oluşturucusu
 
-Yeni bir örneğini başlatır `tiled_extent` sınıfı.
+`tiled_extent` sınıfının yeni bir örneğini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 tiled_extent();
 
 tiled_extent(
@@ -123,106 +123,106 @@ tiled_extent(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Diğer*<br/>
-`extent` Veya `tiled_extent` kopyalanacak nesne.
+*_Other*<br/>
+Kopyalanacak `extent` veya `tiled_extent` nesnesi.
 
-## <a name="get_tile_extent"> </a>  get_tile_extent
+## <a name="get_tile_extent"></a> get_tile_extent
 
-Döndürür bir `extent` değerlerini yakalayan bir nesne `tiled_extent` şablon bağımsız değişkenleri `_Dim0`, `_Dim1`, ve `_Dim2`.
+`_Dim0`, `_Dim1`ve `_Dim2``tiled_extent` şablon bağımsız değişkenlerinin değerlerini yakalayan bir `extent` nesnesi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 Concurrency::extent<rank> get_tile_extent() const restrict(amp,cpu);
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `extent` bu boyutlarını yakalayan nesne `tiled_extent` örneği.
+Bu `tiled_extent` örneğinin boyutlarını yakalayan bir `extent` nesnesi.
 
-## <a name="pad"> </a>  paneli
+## <a name="pad"></a> paneli
 
-Yeni bir `tiled_extent` döşeme boyutları ile kalansız olacak şekilde yukarı nesne kapsamları ile ayarlandı.
+Ölçeği, kutucuk boyutlarına eşit olarak bölünebilen şekilde ayarlanmış yeni bir `tiled_extent` nesnesi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 tiled_extent pad() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni `tiled_extent` değere göre bir nesne.
-## <a name="truncate"> </a>  Kes
+Yeni `tiled_extent` nesnesi değere göre.
+## <a name="truncate"></a> kes
 
-Yeni bir `tiled_extent` döşeme boyutları ile kalansız olacak şekilde aşağı kapsamları nesne ayarlanır.
+Yeni bir `tiled_extent` nesnesini, kutucuk boyutları tarafından eşit olarak bölünebilen şekilde ayarlanmış şekilde döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 tiled_extent truncate() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir `tiled_extent` döşeme boyutları ile kalansız olacak şekilde aşağı kapsamları nesne ayarlanır.
+Yeni bir `tiled_extent` nesnesini, kutucuk boyutları tarafından eşit olarak bölünebilen şekilde ayarlanmış şekilde döndürür.
 
-## <a name="operator_eq"> </a>  işleç =
+## <a name="operator_eq"></a> işleç =
 
-Belirtilen içeriğini kopyalar `tiled_index` bu nesne içine.
+Belirtilen `tiled_index` nesnesinin içeriğini buna kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 tiled_extent&  operator= (
     const tiled_extent& _Other ) restrict (amp, cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Diğer*<br/>
-`tiled_index` Kopyalanacak nesne.
+*_Other*<br/>
+Kopyalamanın `tiled_index` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu başvuru `tiled_index` örneği.
+Bu `tiled_index` örneğine bir başvuru.
 
-## <a name="tile_dim0"> </a>  tile_dim0
+## <a name="tile_dim0"></a> tile_dim0
 
-En önemli boyutun uzunluğunu saklar.
+En önemli boyutun uzunluğunu depolar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int tile_dim0 = _Dim0;
 ```
 
-## <a name="tile_dim1"> </a>  tile_dim1
+## <a name="tile_dim1"></a> tile_dim1
 
-Sonraki en-önemli boyutun uzunluğunu saklar.
+Sonraki-en önemli boyutun uzunluğunu depolar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int tile_dim1 = _Dim1;
 ```
 
-## <a name="tile_dim2"> </a>  tile_dim2
+## <a name="tile_dim2"></a> tile_dim2
 
-En az önemli boyutun uzunluğunu saklar.
+En az önemli boyutun uzunluğunu depolar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int tile_dim2 = _Dim2;
 ```
 
-## <a name="tile_extent"> </a>  tile_extent
-  Alır bir `extent` değerlerini yakalayan bir nesne `tiled_extent` şablon bağımsız değişkenleri `_Dim0`, `_Dim1`, ve `_Dim2`.
+## <a name="tile_extent"></a> tile_extent
+  `_Dim0`, `_Dim1`ve `_Dim2``tiled_extent` şablon bağımsız değişkenlerinin değerlerini yakalayan bir `extent` nesnesi alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 __declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent;
 ```
 

@@ -1,194 +1,194 @@
 ---
-title: 'İzlenecek yol: Özel ileti bloğu oluşturma'
+title: 'İzlenecek Yol: Özel bir İleti Bloğu Oluşturma'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - creating custom message blocks Concurrency Runtime]
 - custom message blocks, creating [Concurrency Runtime]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-ms.openlocfilehash: e7dfc5d78d2281d77b9ce882b302c4d7db776d3b
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: a29ed382d67b91443bd13e029af2a37c42ee834d
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856992"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142823"
 ---
-# <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek yol: Özel ileti bloğu oluşturma
+# <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek Yol: Özel bir İleti Bloğu Oluşturma
 
-Bu belge, gelen iletileri öncelik sırasına göre sıralayan bir özel ileti bloğu türünün nasıl oluşturulacağını açıklar.
+Bu belgede, gelen iletileri önceliğe göre sipariş eden bir özel ileti bloğu türünün nasıl oluşturulacağı açıklanmaktadır.
 
-Yerleşik ileti bloğu türleri geniş aralık işlevsellik sağlasa da, kendi ileti bloğu türünüzü oluşturabilir ve uygulamanızın gereksinimlerini karşılayacak şekilde özelleştirin. Zaman uyumsuz aracılar kitaplığı tarafından sağlanan yerleşik ileti bloğu türleri ile ilgili açıklama için bkz: [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
+Yerleşik ileti bloğu türleri çok çeşitli işlevler sağlamasına karşın, kendi ileti bloğu türünü oluşturabilir ve uygulamanızın gereksinimlerini karşılayacak şekilde özelleştirebilirsiniz. Zaman uyumsuz aracılar Kitaplığı tarafından sunulan yerleşik ileti bloğu türlerinin bir açıklaması için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
-Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:
+Bu yönergeyi başlamadan önce aşağıdaki belgeleri okuyun:
 
 - [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
 - [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)
 
-##  <a name="top"></a> Bölümleri
+## <a name="top"></a>Başlıklı
 
 Bu izlenecek yol aşağıdaki bölümleri içerir:
 
-- [Özel bir ileti bloğu tasarlama](#design)
+- [Özel bir Ileti bloğu tasarlama](#design)
 
 - [Priority_buffer sınıfını tanımlama](#class)
 
-- [Tam örnek](#complete)
+- [Tüm örnek](#complete)
 
-##  <a name="design"></a> Özel bir ileti bloğu tasarlama
+## <a name="design"></a>Özel bir Ileti bloğu tasarlama
 
-İleti blokları ileti gönderme ve alma, işlemine katılır. İletiler gönderen bir ileti bloğu olarak bilinen bir *kaynak blok*. Olarak bilinen, iletileri alan bir ileti bloğu bir *hedef blok*. Olarak bilinen, iletileri alan ve gönderen bir ileti bloğu bir *Yayıcı blok*. Agents kitaplığı soyut sınıfını kullanır [CONCURRENCY::ısource](../../parallel/concrt/reference/isource-class.md) kaynak bloklar ve soyut sınıfını temsil eden [CONCURRENCY::ıtarget](../../parallel/concrt/reference/itarget-class.md) hedef bloklarını temsil etmek için. Kaynakları türetilmesi gibi davranan ileti bloğu türleri `ISource`; hedefleri türetilmesi gibi davranan ileti bloğu türleri `ITarget`.
+İleti blokları ileti gönderme ve alma Yasası 'na katılır. İleti gönderen bir ileti bloğu, *kaynak bloğu*olarak bilinir. İletileri alan bir ileti bloğu *hedef blok*olarak bilinir. Her ikisinin de ileti gönderdiği ve aldığı bir ileti bloğu, bir *yayıcı bloğu*olarak bilinir. Aracılar Kitaplığı, kaynak bloklarını temsil etmek için [concurrency:: ISource](../../parallel/concrt/reference/isource-class.md) soyut sınıfını ve hedef blokları temsil etmek için [concurrency:: itarget](../../parallel/concrt/reference/itarget-class.md) soyut sınıfını kullanır. Kaynak olarak davranan ileti bloğu türleri `ISource`türetilir; hedef olarak davranan ileti bloğu türleri `ITarget`türetilir.
 
-İleti bloğu türünüzü doğrudan türetebilseniz `ISource` ve `ITarget`, Agents kitaplığı, hataları işleme gibi tüm ileti bloğu türleri için ortak olan işlevselliğinin gerçekleştirmeniz üç temel sınıf tanımlar ve ileti blokları, eşzamanlılık açısından güvenli bir şekilde birbirine bağlama. [Concurrency::source_block](../../parallel/concrt/reference/source-block-class.md) sınıf türetilir `ISource` ve diğer bloklara ileti gönderir. [Concurrency::target_block](../../parallel/concrt/reference/target-block-class.md) sınıf türetilir `ITarget` ve diğer bloklardan ileti alır. [Concurrency::propagator_block](../../parallel/concrt/reference/propagator-block-class.md) sınıf türetilir `ISource` ve `ITarget` ve ileti gönderip diğer bloklardan ve diğer bloklardan ileti alır. İleti bloğunuzun davranışı odaklanabilmeniz için altyapı ayrıntılarını işlemek için bu üç temel sınıfı kullanmanızı öneririz.
+İleti bloğu türünü doğrudan `ISource` ve `ITarget`türetilebilseniz de, aracılar Kitaplığı, tüm ileti bloğu türleri için ortak olan işlevlerin çoğunu gerçekleştiren üç temel sınıfı tanımlar, örneğin, hataları işleme ve ileti bloklarını eşzamanlılık açısından güvenli bir şekilde birbirine bağlama. [Concurrency:: source_block](../../parallel/concrt/reference/source-block-class.md) sınıfı `ISource` türetilir ve diğer bloklara iletiler gönderir. [Concurrency:: target_block](../../parallel/concrt/reference/target-block-class.md) sınıfı `ITarget` türetilir ve diğer bloklardan ileti alır. [Eşzamanlılık::p ropagator_block](../../parallel/concrt/reference/propagator-block-class.md) sınıfı `ISource` ve `ITarget` türetilir ve diğer bloklara ileti gönderir ve diğer bloklardan ileti alır. İleti bloizin davranışına odaklanabilmeniz için altyapı ayrıntılarını işlemek üzere bu üç temel sınıfı kullanmanızı öneririz.
 
-`source_block`, `target_block`, Ve `propagator_block` sınıfları, ilişkileri veya bağlantıları bir tür, kaynak ve hedef bloklar arasındaki ve mesajların nasıl işlendiğini yöneten bir türde Parametreleştirilen şablonlardır. Agents kitaplığı, bağlantı yönetimi gerçekleştiren iki tür tanımlar [concurrency::single_link_registry](../../parallel/concrt/reference/single-link-registry-class.md) ve [concurrency::multi_link_registry](../../parallel/concrt/reference/multi-link-registry-class.md). `single_link_registry` Sınıfı bir kaynak veya bir hedefe bağlanacak bir ileti bloğu sağlar. `multi_link_registry` Sınıfı, birden çok kaynak veya birden çok hedef için bağlantı kurulacak bir ileti bloğu sağlar. Agents kitaplığı, ileti Yönetimi gerçekleştiren bir sınıf tanımlar [concurrency::ordered_message_processor](../../parallel/concrt/reference/ordered-message-processor-class.md). `ordered_message_processor` Sınıfı aldığı bunları sırayla iletileri işlemek ileti blokları sağlar.
+`source_block`, `target_block`ve `propagator_block` sınıfları, kaynak ve hedef blokları ile iletilerin nasıl işlendiğini yöneten bir tür üzerinde bağlantıları veya bağlantıları yöneten bir tür üzerinde parametreli şablonlardır. Aracılar Kitaplığı, bağlantı yönetimi gerçekleştiren iki türü tanımlar, [concurrency:: single_link_registry](../../parallel/concrt/reference/single-link-registry-class.md) ve [concurrency:: multi_link_registry](../../parallel/concrt/reference/multi-link-registry-class.md). `single_link_registry` sınıfı, bir ileti bloğunun bir kaynağa veya bir hedefe bağlanmasını sağlar. `multi_link_registry` sınıfı, bir ileti bloğunun birden fazla kaynağa veya birden çok hedefe bağlanmasını sağlar. Aracılar Kitaplığı ileti yönetimi gerçekleştiren bir sınıfı tanımlar, [concurrency:: ordered_message_processor](../../parallel/concrt/reference/ordered-message-processor-class.md). `ordered_message_processor` sınıfı ileti bloklarının iletileri aldığı sırada işlemesini sağlar.
 
-İleti bloklarının, kaynakları ve hedefleriyle nasıl ilişkili olduğunu daha iyi anlamak için aşağıdaki örneği göz önünde bulundurun. Bu örnekte bildirimi gösterir [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfı.
+İleti bloklarının kaynak ve hedefleriyle nasıl ilişkili olduğunu daha iyi anlamak için aşağıdaki örneği göz önünde bulundurun. Bu örnek, [concurrency:: Transformer](../../parallel/concrt/reference/transformer-class.md) sınıfının bildirimini gösterir.
 
 [!code-cpp[concrt-priority-buffer#20](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_1.cpp)]
 
-`transformer` Sınıf türetilir `propagator_block`ve bu nedenle hem kaynak bloğu ve bir hedef blok olarak görev yapar. Türü iletileri kabul `_Input` ve türden iletileri gönderen `_Output`. `transformer` Sınıfını belirtir `single_link_registry` herhangi bir hedef bloğu için Bağlantı Yöneticisi olarak ve `multi_link_registry` herhangi bir kaynak bloğu için Bağlantı Yöneticisi olarak. Bu nedenle, bir `transformer` nesne sahip bir hedef ve sınırsız sayıda kaynağa.
+`transformer` sınıfı `propagator_block`türetilir ve bu nedenle hem kaynak blok hem de hedef blok olarak davranır. `_Input` türündeki iletileri kabul eder ve `_Output`türünde iletiler gönderir. `transformer` sınıfı herhangi bir hedef blok için bağlantı Yöneticisi olarak `single_link_registry` ve herhangi bir kaynak bloğu için bağlantı Yöneticisi olarak `multi_link_registry` belirtir. Bu nedenle, bir `transformer` nesnesi en fazla bir hedefe ve sınırsız sayıda kaynağa sahip olabilir.
 
-Türetilen bir sınıf `source_block` altı yöntem uygulaması gerekir: [propagate_to_any_targets](reference/source-block-class.md#propagate_to_any_targets), [accept_message](reference/source-block-class.md#accept_message), [reserve_message](reference/source-block-class.md#reserve_message), [ consume_message](reference/source-block-class.md#consume_message), [release_message](reference/source-block-class.md#release_message), ve [resume_propagation](reference/source-block-class.md#resume_propagation). Türetilen bir sınıf `target_block` uygulamalıdır [propagate_message](reference/propagator-block-class.md#propagate_message) yöntemi ve isteğe bağlı olarak uygulayabilirsiniz [send_message](reference/propagator-block-class.md#send_message) yöntemi. Öğesinden türetme `propagator_block` hem de türetme işlevsel olarak eşdeğerdir `source_block` ve `target_block`.
+`source_block` türetilen bir sınıf altı Yöntem gerçekleştirmelidir: [propagate_to_any_targets](reference/source-block-class.md#propagate_to_any_targets), [accept_message](reference/source-block-class.md#accept_message), [reserve_message](reference/source-block-class.md#reserve_message), [consume_message](reference/source-block-class.md#consume_message), [release_message](reference/source-block-class.md#release_message)ve [resume_propagation](reference/source-block-class.md#resume_propagation). `target_block` türetilen bir sınıf [propagate_message](reference/propagator-block-class.md#propagate_message) yöntemini uygulamalıdır ve isteğe bağlı olarak [send_message](reference/propagator-block-class.md#send_message) metodunu uygulayabilir. `propagator_block` türetmek, hem `source_block` hem de `target_block`türetmede işlevsel olarak eşdeğerdir.
 
-`propagate_to_any_targets` Yöntemi zaman uyumlu veya zaman uyumsuz olarak tüm gelen iletileri işlemek ve tüm mesajları yaymak için çalışma zamanı tarafından çağrılır. `accept_message` Yöntemi, ileti kabul etmek için hedef blokları tarafından çağrılır. Çoğu gibi bloğu türü, ileti `unbounded_buffer`, iletileri alan yalnızca ilk hedefe gönderir. Bu nedenle, mesajların sahipliğini hedefe aktarır. Diğer ileti blok türleri, aşağıdaki gibi [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md), her biri kendi hedef bloklarından iletileri sunar. Bu nedenle, `overwrite_buffer` hedeflerinin her biri için mesajın bir kopyasını oluşturur.
+`propagate_to_any_targets` yöntemi, tüm gelen iletileri zaman uyumsuz olarak veya zaman uyumlu olarak işlemek ve giden iletileri yaymak için çalışma zamanı tarafından çağırılır. `accept_message` yöntemi, iletileri kabul etmek için hedef bloklar tarafından çağırılır. `unbounded_buffer`gibi birçok ileti bloğu türü, yalnızca iletiyi alacak olan ilk hedefe gönderir. Bu nedenle, iletinin sahipliğini hedefe aktarır. [Eşzamanlılık:: overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md)gibi diğer ileti bloğu türleri, hedef bloklarından her birine iletiler sunar. Bu nedenle `overwrite_buffer`, her bir hedefi için iletinin bir kopyasını oluşturur.
 
-`reserve_message`, `consume_message`, `release_message`, Ve `resume_propagation` yöntemlerini etkinleştirmek ileti blokları ileti rezervasyonlarına katılmalarını sağlar. Hedef blokları çağrı `reserve_message` bir ileti sunulduğunda ve daha sonra kullanmak için bir ileti ayırmak zorunda yöntemi. Bir hedef blok bir iletiyi ayırdıktan sonra çağırabilirsiniz `consume_message` iletiyi kullanmak için yöntemi veya `release_message` ayırmayı iptal etmek için yöntemi. Olduğu gibi `accept_message` yöntemi, uygulanması `consume_message` iletinin sahipliğini veya iletinin bir kopyasını döndürür. Çalışma zamanının bir hedef blok kullandıktan veya ayrılmış bir iletiyi bırakır sonra çağırır `resume_propagation` yöntemi. Genellikle, bu yöntem, sıradaki sonraki iletiye başlayarak ileti yaymaya devam eder.
+`reserve_message`, `consume_message`, `release_message`ve `resume_propagation` yöntemleri ileti bloklarının ileti rezervasyonuna katılmasını sağlar. Hedef blokları bir ileti sunulduklarında ve daha sonra kullanmak üzere iletiyi ayırmak zorunda olduğunda `reserve_message` yöntemini çağırır. Hedef blok bir iletiyi ayırdıktan sonra, bu iletiyi kullanmak için `consume_message` yöntemi veya ayırmayı iptal etmek için `release_message` metodunu çağırabilir. `accept_message` yönteminde olduğu gibi, `consume_message` uygulanması iletinin sahipliğini aktarabilir ya da iletinin bir kopyasını döndürebilir. Bir hedef blok, ayrılmış bir iletiyi kullandıktan veya serbest bırakdıktan sonra, çalışma zamanı `resume_propagation` yöntemini çağırır. Genellikle, bu yöntem kuyruktaki bir sonraki iletiden başlayarak ileti yaymayı devam ettirir.
 
-Çalışma zamanı çağrıları `propagate_message` zaman uyumsuz olarak bir ileti başka bir engelden mevcut olana aktarmak için yöntemi. `send_message` Yöntemi benzer `propagate_message`dışında bu zaman uyumlu olarak, zaman uyumsuz olarak yerine, ileti hedef bloklara gönderir. Varsayılan uygulaması `send_message` gelen tüm iletileri reddeder. Çalışma zamanı, ileti hedef blok ile ilgili isteğe bağlı filtreleme işlevini geçmezse bu yöntemlerden hiç birini çağırmaz. İleti filtreleri hakkında daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
+Çalışma zamanı, bir iletiyi başka bir bloktan geçerli bir bloğa zaman uyumsuz olarak aktarmak için `propagate_message` yöntemini çağırır. `send_message` yöntemi, zaman uyumsuz olarak değil, iletiyi hedef bloklara göndermesi dışında `propagate_message`benzer. `send_message` varsayılan uygulama tüm gelen iletileri reddeder. İleti, hedef bloğuyla ilişkili isteğe bağlı filtre işlevini geçemezse, çalışma zamanı bu yöntemlerden birini çağırmaz. İleti filtreleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
 [[Üst](#top)]
 
-##  <a name="class"></a> Priority_buffer sınıfını tanımlama
+## <a name="class"></a>Priority_buffer sınıfını tanımlama
 
-`priority_buffer` Gelen iletileri ilk olarak öncelik, ardından iletilerin alındığı sıraya göre sıralayan bir özel ileti bloğu türünün bir sınıftır. `priority_buffer` Sınıfına benzer [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) çünkü bir ileti kuyruğu tutar ve ayrıca hem kaynak hem de bir hedef mesaj engeli olarak görev yapar ve birden çok kaynaktan hem birden çok olabilir çünkü hedefler. Ancak, `unbounded_buffer` ileti yayılımını yalnızca aldığı iletileri kaynaktan sipariş.
+`priority_buffer` sınıfı, gelen iletileri önce önceliğe, ardından iletilerin alındığı sıraya göre sipariş eden özel bir ileti bloğu türüdür. `priority_buffer` sınıfı, bir ileti kuyruğu tutan ve hem kaynak hem de hedef ileti bloğu olarak davrandığı ve hem birden fazla kaynağa hem de birden çok hedefe sahip olabileceğinden [eşzamanlılık:: unbounded_buffer](reference/unbounded-buffer-class.md) sınıfına benzer. Ancak, `unbounded_buffer` ileti yaymayı yalnızca kaynaklarından iletileri aldığı sıraya göre dayandırır.
 
-`priority_buffer` Sınıf türündeki mesajları alır std::[demet](../../standard-library/tuple-class.md) içeren `PriorityType` ve `Type` öğeleri. `PriorityType` her iletinin önceliğini barındıran türü gösterir; `Type` iletinin veri bölümünü gösterir. `priority_buffer` Sınıfı türden iletileri gönderen `Type`. `priority_buffer` Sınıfı ayrıca iki ileti kuyruğu yönetir: bir [std::priority_queue](../../standard-library/priority-queue-class.md) gelen iletiler için nesne ve bir std::[kuyruk](../../standard-library/queue-class.md) giden iletiler için nesne. İletileri önceliğe göre düzenlemek yararlı bir `priority_buffer` aldığında birden çok ileti tüketiciler tarafından hiçbir ileti okunmadan önce ya da nesne birden çok ileti aynı anda alır.
+`priority_buffer` sınıfı, `PriorityType` ve `Type` öğeleri içeren std::[Tuple](../../standard-library/tuple-class.md) türündeki iletileri alır. `PriorityType`, her iletinin önceliğini tutan tür anlamına gelir; `Type`, iletinin veri bölümüne başvurur. `priority_buffer` sınıfı, `Type`türünde iletiler gönderir. `priority_buffer` sınıfı iki ileti sırasını da yönetir: gelen iletiler için [std::p riority_queue](../../standard-library/priority-queue-class.md) nesnesi ve giden iletiler için std::[Queue](../../standard-library/queue-class.md) nesnesi. İletileri önceliğe göre sıralamak, bir `priority_buffer` nesnesi aynı anda birden çok ileti aldığında veya müşteriler tarafından herhangi bir ileti okunmadan birden çok ileti aldığında yararlıdır.
 
-Yedi yöntemin yanı sıra bir sınıf öğesinden türetilen `propagator_block` uygulamalıdır, `priority_buffer` sınıfı da geçersiz kılmalar `link_target_notification` ve `send_message` yöntemleri. `priority_buffer` Sınıfı ayrıca iki genel yardımcı yöntemi tanımlar `enqueue` ve `dequeue`ve özel bir yardımcı yöntemi, `propagate_priority_order`.
+`propagator_block` ' den türetilen bir sınıfın uygulanması gereken yedi yönteme ek olarak, `priority_buffer` sınıfı da `link_target_notification` ve `send_message` yöntemlerini geçersiz kılar. `priority_buffer` sınıfı ayrıca iki genel yardımcı yöntem, `enqueue` ve `dequeue`ve bir özel yardımcı yöntemi olan `propagate_priority_order`tanımlar.
 
-Aşağıdaki yordam nasıl uygulanacağını açıklar `priority_buffer` sınıfı.
+Aşağıdaki yordamda `priority_buffer` sınıfının nasıl uygulanacağı açıklanmaktadır.
 
-#### <a name="to-define-the-prioritybuffer-class"></a>Priority_buffer sınıfını tanımlamak için
+#### <a name="to-define-the-priority_buffer-class"></a>Priority_buffer sınıfını tanımlamak için
 
-1. Bir C++ üstbilgi dosyası oluşturun ve adlandırın `priority_buffer.h`. Alternatif olarak, projenizin bir parçası olan var olan bir üstbilgi dosyasını kullanabilirsiniz.
+1. Bir C++ üst bilgi dosyası oluşturun ve `priority_buffer.h`adlandırın. Alternatif olarak, projenizin bir parçası olan mevcut bir üst bilgi dosyasını kullanabilirsiniz.
 
-1. İçinde `priority_buffer.h`, aşağıdaki kodu ekleyin.
+1. `priority_buffer.h`, aşağıdaki kodu ekleyin.
 
 [!code-cpp[concrt-priority-buffer#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_2.h)]
 
-1. İçinde `std` ad alanı, uzmanlıklarını tanımlayın [std::less](../../standard-library/less-struct.md) ve [Std::less](../../standard-library/greater-struct.md) eşzamanlılık üzerinde hareket::[ileti](../../parallel/concrt/reference/message-class.md) nesneleri.
+1. `std` ad alanında, concurrency::[Message](../../parallel/concrt/reference/message-class.md) nesnelerinde işlem gören [std:: less](../../standard-library/less-struct.md) ve [std:: daha](../../standard-library/greater-struct.md) fazlasını tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_3.h)]
 
-   `priority_buffer` Sınıfı depoları `message` nesneler bir `priority_queue` nesne. Bu tür uzmanlıklar, iletileri önceliklerine göre sıralamak öncelik sırası etkinleştirir. Öncelik ilk öğesidir `tuple` nesne.
+   `priority_buffer` sınıfı, `message` nesneleri bir `priority_queue` nesnesinde depolar. Bu tür Uzmanlıklar, öncelik sırasının iletileri önceliklerine göre sıralamalarını sağlar. Öncelik `tuple` nesnesinin ilk öğesidir.
 
-1. İçinde `concurrencyex` ad alanı bildirimini `priority_buffer` sınıfı.
+1. `concurrencyex` ad alanında `priority_buffer` sınıfını bildirin.
 
 [!code-cpp[concrt-priority-buffer#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_4.h)]
 
-   `priority_buffer` Sınıf türetilir `propagator_block`. Bu nedenle, hem gönderdikleri hem de ileti alma. `priority_buffer` Sınıf türü iletiler alan birden çok hedefe sahip `Type`. Türden iletileri gönderen birden çok kaynağı olabilir `tuple<PriorityType, Type>`.
+   `priority_buffer` sınıfı `propagator_block`türetilir. Bu nedenle, hem ileti gönderebilir hem de alabilir. `priority_buffer` sınıfı, `Type`türünde ileti alan birden çok hedefe sahip olabilir. Ayrıca, `tuple<PriorityType, Type>`türünde iletiler gönderen birden fazla kaynağa da sahip olabilir.
 
-1. İçinde `private` bölümünü `priority_buffer` sınıfında, aşağıdaki üye değişkenlerini ekleyin.
+1. `priority_buffer` sınıfının `private` bölümünde aşağıdaki üye değişkenlerini ekleyin.
 
 [!code-cpp[concrt-priority-buffer#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_5.h)]
 
-   `priority_queue` Nesnesi gelen iletileri tutar; `queue` nesnesi giden iletileri tutar. A `priority_buffer` nesne birden çok ileti alabilir aynı anda; `critical_section` nesnesi giriş ileti kuyruğuna erişimi eşitler.
+   `priority_queue` nesnesi gelen iletileri barındırır; `queue` nesnesi giden iletileri barındırır. Bir `priority_buffer` nesnesi aynı anda birden fazla ileti alabilir; `critical_section` nesnesi, giriş iletilerinin kuyruğuna erişimi eşitler.
 
-1. İçinde `private` bölümünde, kopya oluşturucu ve atama işlecini tanımlayın. Bu engeller `priority_queue` nesnelerinin atanabilir olmasını.
+1. `private` bölümünde, kopya oluşturucusunu ve atama işlecini tanımlayın. Bu, `priority_queue` nesnelerinin atanabilir olmasını engeller.
 
 [!code-cpp[concrt-priority-buffer#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_6.h)]
 
-1. İçinde `public` bölümünde, çoğu ileti bloğu türlerinde ortak olan yapıcıları tanımlayın. Ayrıca yok ediciyi tanımlayın.
+1. `public` bölümünde, birçok ileti bloğu türü için ortak olan oluşturucuları tanımlayın. Yıkıcıyı da tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_7.h)]
 
-1. İçinde `public` bölümünde, definovat metody `enqueue` ve `dequeue`. İleti göndermek ve ileti almak için alternatif bir yolu bu yardımcı yöntemler sağlayan bir `priority_buffer` nesne.
+1. `public` bölümünde, `enqueue` ve `dequeue`yöntemlerini tanımlayın. Bu yardımcı yöntemler, `priority_buffer` nesnesinden ileti göndermek ve almak için alternatif bir yol sağlar.
 
 [!code-cpp[concrt-priority-buffer#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_8.h)]
 
-9. İçinde `protected` bölümünde, tanımlama `propagate_to_any_targets` yöntemi.
+9. `protected` bölümünde `propagate_to_any_targets` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_9.h)]
 
-   `propagate_to_any_targets` Yöntemi çıkış kuyruğundaki tüm iletileri yayar ve çıkış kuyruğuna giriş kuyruğunun önünde olan iletiyi aktarır.
+   `propagate_to_any_targets` yöntemi, giriş sırasının önündeki iletiyi çıkış kuyruğuna aktarır ve çıkış kuyruğundaki tüm iletileri yayar.
 
-10. İçinde `protected` bölümünde, tanımlama `accept_message` yöntemi.
+10. `protected` bölümünde `accept_message` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_10.h)]
 
-   Bir hedef blok çağırdığında `accept_message` yöntemi `priority_buffer` sınıfı, iletinin sahipliğini, onu kabul eden ilk hedef bloğa aktarır. (Bu davranışına benzer `unbounded_buffer`.)
+   Bir hedef blok `accept_message` yöntemini çağırdığında, `priority_buffer` sınıfı iletinin sahipliğini onu kabul eden ilk hedef bloğa aktarır. (`unbounded_buffer`davranışına benzer.)
 
-11. İçinde `protected` bölümünde, tanımlama `reserve_message` yöntemi.
+11. `protected` bölümünde `reserve_message` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_11.h)]
 
-   `priority_buffer` Sınıfı, ileti tanımlayıcısının kuyruğun önündeki iletinin tanımlayıcısı eşleştiğinde bir ileti ayırmak için bir hedef blok izin verir. Diğer bir deyişle, bir hedef iletiyi ayırabilir `priority_buffer` nesnesi henüz ek bir iletiyi almadıysa ve henüz geçerli birini yaymadıysa.
+   `priority_buffer` sınıfı, bir hedef bloğunun, belirtilen ileti tanımlayıcısı kuyruğun önünde olan iletinin tanımlayıcısıyla eşleştiğinde bir ileti ayırmasını sağlar. Diğer bir deyişle, `priority_buffer` nesnesi henüz ek bir ileti almamışsa ve henüz geçerli olanı yaymadıysa, bir hedef iletiyi ayırabilir.
 
-12. İçinde `protected` bölümünde, tanımlama `consume_message` yöntemi.
+12. `protected` bölümünde `consume_message` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_12.h)]
 
-   Bir hedef blok çağırır `consume_message` ayrılmış olan iletinin sahipliğini aktarmak için.
+   Bir hedef blok, ayrılan iletinin sahipliğini aktarmak için `consume_message` çağırır.
 
-13. İçinde `protected` bölümünde, tanımlama `release_message` yöntemi.
+13. `protected` bölümünde `release_message` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_13.h)]
 
-   Bir hedef blok çağırır `release_message` ileti rezervasyonu iptal etmek için.
+   Bir hedef blok, bir iletiye ayırmasını iptal etmek için `release_message` çağırır.
 
-14. İçinde `protected` bölümünde, tanımlama `resume_propagation` yöntemi.
+14. `protected` bölümünde `resume_propagation` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_14.h)]
 
-   Çalışma zamanı çağrıları `resume_propagation` sonra bir hedef blok kullandıktan veya ayrılmış bir ileti yayımlar. Bu yöntem, çıktı sırasındaki herhangi bir iletiyi yayar.
+   Çalışma zamanı, bir hedef bloğundan sonra `resume_propagation` çağırır ve ayrılmış bir iletiyi serbest bırakır. Bu yöntem, çıkış sırasındaki tüm iletileri yayar.
 
-15. İçinde `protected` bölümünde, tanımlama `link_target_notification` yöntemi.
+15. `protected` bölümünde `link_target_notification` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_15.h)]
 
-   `_M_pReservedFor` Üye değişkeni taban sınıfı tarafından tanımlanan `source_block`. Bu üye değişkeni, varsa çıkış sırası önündeki iletiye bir ayırmaya bulunduran hedef bloğuna işaret eder. Çalışma zamanı çağrıları `link_target_notification` ne zaman yeni bir hedef bağlantılı `priority_buffer` nesne. Bu yöntem, hiçbir hedef bir rezervasyon tutmuyorsa, çıktı sırasındaki herhangi bir iletiyi yayar.
+   `_M_pReservedFor` üye değişkeni, `source_block`temel sınıf tarafından tanımlanır. Bu üye değişkeni, varsa, çıkış sırasının önündeki iletiye bir rezervasyon tutan hedef bloğuna işaret eder. Çalışma zamanı, `priority_buffer` nesnesine yeni bir hedef bağlandığında `link_target_notification` çağırır. Bu yöntem, bir hedef rezervasyon tutmsa çıkış kuyruğundaki tüm iletileri yayar.
 
-16. İçinde `private` bölümünde, tanımlama `propagate_priority_order` yöntemi.
+16. `private` bölümünde `propagate_priority_order` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_16.h)]
 
-   Bu yöntem, çıktı sırasındaki tüm iletileri yayar. Hedef bloklardan biri iletiyi kabul edene kadar sıradaki her ileti her hedef bloğa sunulur. `priority_buffer` Sınıfı giden iletilerin sırasını korur. Bu nedenle, bu yöntem hedef bloklarına başka bir ileti sunmadan önce çıkış sırasındaki ilk iletinin bir hedef bloğu tarafından kabul gerekir.
+   Bu yöntem, çıkış sırasından tüm iletileri yayar. Kuyruktaki her ileti, hedef bloklarından biri iletiyi kabul edene kadar her hedef bloğa sunulur. `priority_buffer` sınıfı giden iletilerin sırasını korur. Bu nedenle, bu yöntem hedef bloklara başka bir ileti girmeden önce, çıkış sırasındaki ilk ileti bir hedef blok tarafından kabul alınmalıdır.
 
-17. İçinde `protected` bölümünde, tanımlama `propagate_message` yöntemi.
+17. `protected` bölümünde `propagate_message` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#16](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_17.h)]
 
-   `propagate_message` Yöntemi etkinleştirir `priority_buffer` ileti alıcısı görev yapacak sınıfı veya hedefleyin. Bu yöntem, bu iletiyi öncelik sırasına ekler ve sağlanan kaynak blokla sunulan iletiyi alır. `propagate_message` Yöntemi ardından zaman uyumsuz olarak gönderir tüm çıktı iletilerini hedef engellerine.
+   `propagate_message` yöntemi, `priority_buffer` sınıfının bir ileti alıcısı veya hedef olarak çalışmasını sağlar. Bu yöntem, sağlanan kaynak bloğunun sunduğu iletiyi alır ve bu iletiyi öncelik kuyruğuna ekler. `propagate_message` yöntemi, tüm çıkış iletilerini zaman uyumsuz olarak hedef bloklara gönderir.
 
-   Çağırdığınızda çalışma zamanı bu yöntemi çağırır [concurrency::asend](reference/concurrency-namespace-functions.md#asend) işlevi veya ileti bloğu diğer ileti bloklarına bağlandığında.
+   [Concurrency:: asend](reference/concurrency-namespace-functions.md#asend) işlevini çağırdığınızda veya ileti bloğu diğer ileti bloklarına bağlandığında, çalışma zamanı bu yöntemi çağırır.
 
-18. İçinde `protected` bölümünde, tanımlama `send_message` yöntemi.
+18. `protected` bölümünde `send_message` yöntemini tanımlayın.
 
 [!code-cpp[concrt-priority-buffer#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_18.h)]
 
-   `send_message` Yöntemi benzer `propagate_message`. Ancak zaman uyumlu olarak yerine zaman uyumsuz olarak çıktı iletilerini gönderir.
+   `send_message` yöntemi `propagate_message`benzerdir. Bununla birlikte, çıkış iletilerini zaman uyumsuz yerine eşzamanlı olarak gönderir.
 
-   Çalışma zamanı bu yöntemi çağırdığınızda gibi bir eş zamanlı gönderme işlemi sırasında çağırır. [concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi.
+   Çalışma zamanı, zaman uyumlu gönderme işlemi sırasında [concurrency:: Send](reference/concurrency-namespace-functions.md#send) işlevini çağırdığınızda olduğu gibi bu yöntemi çağırır.
 
-`priority_buffer` Sınıfı, çok sayıda ileti engelleme türü için tipik olan oluşturucu aşırı yüklemeleri içerir. Bazı yapıcı yeniden yüklemeleri [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) veya [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) ileti bloğunun belirli bir Görev Zamanlayıcı tarafından yönetilecek nesneleri. Diğer Oluşturucu tekrar yüklemeleri bir filtre işlevi alır. Filtre işlevleri ileti bloklarının kabul etme veya reddetme yük boyutuna göre bir ileti etkinleştirin. İleti filtreleri hakkında daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md). Görev planlayıcılar hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+`priority_buffer` sınıfı, çoğu ileti bloğu türünde tipik olan Oluşturucu aşırı yüklerini içerir. Bazı Oluşturucu aşırı yüklemeleri [eşzamanlılık:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) veya [eşzamanlılık:: ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) nesneleri alır, bu da ileti bloğunun belirli bir görev zamanlayıcısı tarafından yönetilmesini sağlar. Diğer Oluşturucu aşırı yüklemeleri bir filtre işlevi alır. Filtre işlevleri, ileti bloklarının yük temelinde bir iletiyi kabul etmesini veya reddetmesini sağlar. İleti filtreleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md). Task zamanlayıcılar hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
-Çünkü `priority_buffer` sınıfı iletileri önceliğe göre sıralar ve çağırdığınızda iletileri zaman uyumsuz olarak, örneğin, aldığında ardından iletilerin alındığı sıraya göre bu sınıf en kullanışlı sınıftır [concurrency::asend](reference/concurrency-namespace-functions.md#asend)işlevi veya ileti bloğu diğer ileti bloklarına bağlandığında.
+`priority_buffer` sınıfı iletileri önceliğe göre ve ardından iletilerin alındığı sıraya göre sipariş ettiğinden, bu sınıf zaman uyumsuz olarak ileti aldığında yararlı olur, örneğin, [concurrency:: asend](reference/concurrency-namespace-functions.md#asend) işlevini çağırdığınızda veya ileti bloğu diğer ileti bloklarına bağlandığında.
 
 [[Üst](#top)]
 
-##  <a name="complete"></a> Tam örnek
+## <a name="complete"></a>Tüm örnek
 
-Aşağıdaki örnek eksiksiz tanımını gösterir `priority_buffer` sınıfı.
+Aşağıdaki örnek `priority_buffer` sınıfının tamamının tanımını gösterir.
 
 [!code-cpp[concrt-priority-buffer#18](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_19.h)]
 
-Aşağıdaki örnek aynı anda birçok gerçekleştirir `asend` ve [concurrency::receive](reference/concurrency-namespace-functions.md#receive) işlemleri bir `priority_buffer` nesne.
+Aşağıdaki örnek eşzamanlı olarak bir dizi `asend` ve [concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) işlemi `priority_buffer` nesnesi üzerinde gerçekleştirir.
 
 [!code-cpp[concrt-priority-buffer#19](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_20.cpp)]
 
-Bu örnek, aşağıdaki örnek çıktısı üretir.
+Bu örnek, aşağıdaki örnek çıktıyı üretir.
 
 ```Output
 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36
@@ -196,15 +196,15 @@ Bu örnek, aşağıdaki örnek çıktısı üretir.
 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12
 ```
 
-`priority_buffer` Önceliğe göre ve ardından aldığı iletileri sıraya göre sınıfı iletileri ilk sıralar. Bu örnekte, büyük sayısal önceliğe sahip iletiler sıranın önüne doğru eklenir.
+`priority_buffer` sınıfı, iletileri önce önceliğe, sonra iletileri aldığı sıraya göre sıralar. Bu örnekte, sıranın önüne doğru daha fazla sayısal önceliğe sahip iletiler eklenir.
 
 [[Üst](#top)]
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya tanımını yapıştırın `priority_buffer` sınıf adında bir dosya içinde `priority_buffer.h` ve adlı dosyadaki test programına `priority_buffer.cpp` ve ardından Visual Studio'da aşağıdaki komutu çalıştırın Komut İstemi penceresi.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `priority_buffer` sınıfının tanımını `priority_buffer.cpp` adlı bir dosyadaki `priority_buffer.h` ve test programı olarak yapıştırın ve sonra Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc priority_buffer.cpp**
+**CL. exe/EHsc priority_buffer. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

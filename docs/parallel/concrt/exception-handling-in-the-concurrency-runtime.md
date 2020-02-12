@@ -8,38 +8,38 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-ms.openlocfilehash: 8239913c369605503134a9ea4c99789528911868
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c7fee363da023b9252471a35aaecd262a55f17c
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413937"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141782"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 
-Eşzamanlılık Çalışma zamanı C++ özel durum işleme pek çok hata iletişim kurmak için kullanır. Bu hatalar, görevler ve görev grupları için sağladığınız iş işlevleri çalışma zamanı, çalışma zamanı hataları gibi bir kaynak alma hatası ve oluşan hataları geçersiz kullanımı dahil. Bir görevi veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durum tutar ve görev veya görev grubu tamamlanması için bekleyeceği bağlam sürekliliğe devreder. Basit görevler ve aracılar gibi bileşenler için çalışma zamanı özel durumları, yönetmez. Bu durumlarda, kendi özel durum işleme mekanizması uygulamanız gerekir. Bu konuda, çalışma zamanının görevler, görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işlediğini ve nasıl uygulamalarınızda özel durumları yanıt açıklanmaktadır.
+Eşzamanlılık Çalışma Zamanı birçok hata C++ türüyle iletişim kurmak için özel durum işlemeyi kullanır. Bu hatalar, çalışma zamanının geçersiz kullanımını, kaynak alma hatası gibi çalışma zamanı hatalarını ve görevlere ve görev gruplarına sağladığınız çalışma işlevlerinde oluşan hataları içerir. Bir görev veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durumu barındırır ve görevin veya görev grubunun bitmesini bekleyen bağlamına göre sıralar. Hafif görevler ve aracılar gibi bileşenler için çalışma zamanı sizin için özel durumları yönetmez. Bu durumlarda, kendi özel durum işleme mekanizmanızı uygulamanız gerekir. Bu konu, çalışma zamanının görevler, görev grupları, hafif görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işlediğini ve uygulamalarınızda özel durumlara nasıl yanıt verileceğini açıklar.
 
 ## <a name="key-points"></a>Önemli Noktalar
 
-- Bir görevi veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durum tutar ve görev veya görev grubu tamamlanması için bekleyeceği bağlam sürekliliğe devreder.
+- Bir görev veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durumu barındırır ve görevin veya görev grubunun bitmesini bekleyen bağlamına göre sıralar.
 
-- Mümkün olduğunda, yapılan her çağrı çevreleyen [CONCURRENCY::Task:: get](reference/task-class.md#get) ve [CONCURRENCY::Task:: wait](reference/task-class.md#wait) ile bir `try` / `catch` kurtarabileceğiniz hataları işlemek için Kaynak. Bir görev bir özel durum oluşturur ve görev kendi devamlılıklarının veya ana uygulama özel durum yakalandı, uygulama çalışma zamanı sonlandırır.
+- Mümkün olduğunda, her [concurrency:: task:: Get](reference/task-class.md#get) ve [concurrency:: task:](reference/task-class.md#wait) : ' a yönelik her çağrıyı, kurtarabileceğiniz hataları işlemek için bir `try`/`catch` bloğu ile bekleyin. Bir görev bir özel durum oluşturursa ve bu özel durum görev, devamlılık veya ana uygulama tarafından yakalanmadığında çalışma zamanı uygulamayı sonlandırır.
 
-- Bir görev tabanlı devamlılık her zaman çalışır; Öncül görev başarıyla tamamlandı, özel durum oluşturdu veya iptal edildi önemli değildir. Değer tabanlı devamlılık, öncül görevin oluşturur ya da iptal eder çalıştırmaz.
+- Görev tabanlı devamlılık her zaman çalışır; öncül görevin başarıyla tamamlanıp tamamlanmadığını, bir özel durum mi oluşturulduğunu veya iptal edildiğini değil. Öncül görevi oluşturursa veya iptal ederse, değer tabanlı devamlılık çalışmaz.
 
-- Görev tabanlı devamlılık her zaman çalıştığından, bir görev tabanlı devamlılık, devamlılık zincirini sonunda eklenip eklenmeyeceğini göz önünde bulundurun. Bu, kodunuzun tüm özel durumları gözlemlemesini garanti yardımcı olabilir.
+- Görev tabanlı devamlılıklar her zaman çalıştığı için, devamlılık zincirinizin sonuna görev tabanlı devamlılık eklenip eklenmeyeceğini göz önünde bulundurun. Bu, kodunuzun tüm özel durumları görme garantisi sağlanmasına yardımcı olabilir.
 
-- Çalışma zamanı [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) çağırdığınızda [CONCURRENCY::Task:: get](reference/task-class.md#get) ve görev iptal edildi.
+- [Concurrency:: task:: Get](reference/task-class.md#get) ' i çağırdığınızda ve bu görev iptal edildiğinde, çalışma zamanı [eşzamanlılık:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) oluşturur.
 
-- Çalışma zamanı özel durumlarını Basit görevler ve aracılar için yönetmez.
+- Çalışma zamanı, hafif görevler ve aracılar için özel durumları yönetmez.
 
-##  <a name="top"></a> Bu belgede
+## <a name="top"></a>Bu belgede
 
 - [Görevler ve devamlılıklar](#tasks)
 
 - [Görev grupları ve paralel algoritmalar](#task_groups)
 
-- [Çalışma zamanı tarafından oluşturulan özel durumları](#runtime)
+- [Çalışma zamanı tarafından oluşturulan özel durumlar](#runtime)
 
 - [Birden çok özel durum](#multiple)
 
@@ -49,50 +49,50 @@ Eşzamanlılık Çalışma zamanı C++ özel durum işleme pek çok hata iletiş
 
 - [Zaman Uyumsuz Aracılar](#agents)
 
-##  <a name="tasks"></a> Görevler ve devamlılıklar
+## <a name="tasks"></a>Görevler ve devamlılıklar
 
-Bu bölümde, çalışma zamanı tarafından oluşturulan özel durumları nasıl işlediğini açıklar [concurrency::task](../../parallel/concrt/reference/task-class.md) nesneleri ve bunların devamlılığını. Görev ve devamı modeli hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+Bu bölüm, çalışma zamanının [concurrency:: Task](../../parallel/concrt/reference/task-class.md) nesneleri ve devamlılıkları tarafından oluşturulan özel durumları nasıl işlediğini açıklar. Görev ve devamlılık modeli hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-Geçirdiğiniz iş işlevin gövdesinde bir özel durum throw ne zaman bir `task` nesnesi, çalışma zamanı bu özel durum depolar ve çağıran bağlamına sıralar [CONCURRENCY::Task:: get](reference/task-class.md#get) veya [eşzamanlılık:: Task::wait](reference/task-class.md#wait). Belge [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md) açıklar özetlemek şekilde ancak değer tabanlı devamlılık karşı görev tabanlı bir değer tabanlı devamlılık türünde bir parametre alan `T` ve görev tabanlı devamlılık türünde bir parametre alır `task<T>`. Bir veya daha fazla değer tabanlı devamlılık oluşturan bir görev varsa bu devamlılıklar olarak çalıştırılması zamanlanan değil. Aşağıdaki örnekte, bu davranışı gösterilmektedir:
+Bir `task` nesnesine geçirdiğiniz bir çalışma işlevinin gövdesinde bir özel durum oluşturduğunuzda, çalışma zamanı bu özel durumu depolar ve bunu [concurrency:: task:: Get](reference/task-class.md#get) veya [concurrency:: Task](reference/task-class.md#wait):: wait öğesine çağıran bağlamına göre oluşturur. [Paralellik belge görevi](../../parallel/concrt/task-parallelism-concurrency-runtime.md) , görev tabanlı ve değer tabanlı devamlılıkları açıklar, ancak özetlemek gerekirse, değer tabanlı devamlılık, `T` türünde bir parametre alır ve görev tabanlı devamlılık, `task<T>`türünde bir parametre alır. Oluşturan bir görevde bir veya daha fazla değer tabanlı devamlılık varsa, bu devamlılıklar çalıştırılmak üzere zamanlanmamış. Aşağıdaki örnek bu davranışı göstermektedir:
 
 [!code-cpp[concrt-eh-task#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_1.cpp)]
 
-Bir görev tabanlı devamlılık, öncül görev tarafından oluşturulan herhangi bir özel durumu işlemek sağlar. Bir görev tabanlı devamlılık her zaman çalışır; görev başarıyla tamamlandı, özel durum oluşturdu veya iptal edildi önemli değildir. Bir görev bir özel durum oluşturduğunda, görev tabanlı devamlılık çalışmak üzere zamanlanır. Aşağıdaki örnek, her zaman oluşturur bir görevi gösterir. Görev devamlılıkları iki; yine de sahip istiyor musunuz? değer tabanlı biridir ve diğer görev-tabanlı. Görev tabanlı özel durumu her zaman çalışır ve bu nedenle, öncül görev tarafından oluşturulan özel durum yakalamak mümkündür. Her iki devamlar için örnek bekler, görev her zaman zaman özel durum nedeniyle yeniden özel durum `task::get` veya `task::wait` çağrılır.
+Görev tabanlı devamlılık, öncül görev tarafından oluşturulan tüm özel durumları işlemenizi sağlar. Görev tabanlı devamlılık her zaman çalışır; görevin başarıyla tamamlanıp tamamlanmadığını, bir özel durum mi oluşturulduğunu veya iptal edildiğini değil. Bir görev bir özel durum oluşturduğunda, görev tabanlı devamlılıkları çalıştırılmak üzere zamanlanır. Aşağıdaki örnek her zaman oluşturan bir görevi gösterir. Görev iki devamlılığa sahiptir; biri değer tabanlıdır ve diğeri görev tabanlıdır. Görev tabanlı özel durum her zaman çalışır ve bu nedenle, öncül görev tarafından oluşturulan özel durumu yakalayabilir. Örnek her iki devamlılık için de bekleyeceğinden, `task::get` veya `task::wait` çağrıldığında görev özel durumu her zaman oluşturulduğu için özel durum yeniden oluşturulur.
 
 [!code-cpp[concrt-eh-continuations#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_2.cpp)]
 
-İşleyebilen özel durumları yakalamak için görev tabanlı devamlılık kullanmanızı öneririz. Görev tabanlı devamlılık her zaman çalıştığından, bir görev tabanlı devamlılık, devamlılık zincirini sonunda eklenip eklenmeyeceğini göz önünde bulundurun. Bu, kodunuzun tüm özel durumları gözlemlemesini garanti yardımcı olabilir. Aşağıdaki örnek, bir temel değer tabanlı devamlılık zincirini göstermektedir. Üçüncü görev zinciri oluşturur ve bu nedenle onu izleyen değer tabanlı devamlılık çalıştırılamaz. Ancak, son devam görevi dayalıdır ve bu nedenle her zaman çalışır. Bu son devam üçüncü görev tarafından oluşturulan özel durum işleme.
+İşleyebileceksiniz özel durumları yakalamak için görev tabanlı devamlılıkları kullanmanızı öneririz. Görev tabanlı devamlılıklar her zaman çalıştığı için, devamlılık zincirinizin sonuna görev tabanlı devamlılık eklenip eklenmeyeceğini göz önünde bulundurun. Bu, kodunuzun tüm özel durumları görme garantisi sağlanmasına yardımcı olabilir. Aşağıdaki örnekte, temel değer tabanlı devamlılık zinciri gösterilmektedir. Zincirdeki üçüncü görev atar ve bu nedenle, bunu izleyen değer tabanlı devamlılıklar çalıştırılmaz. Ancak, son devamlılık görev tabanlıdır ve bu nedenle her zaman çalışır. Bu son devamlılık, üçüncü görev tarafından oluşturulan özel durumu işler.
 
-Yapabilecekleriniz en belirli özel durumları yakalamak öneririz. Belirli özel durumları yakalamak için yoksa, bu son görev tabanlı devamlılık atlayabilirsiniz. Herhangi bir özel durum işlenmemiş olarak kalır ve uygulamayı sonlandırabilirsiniz.
+Kullanabileceğiniz en özel durumları yakalanmasını öneririz. Yakalayabilmeniz için özel özel durumlar yoksa, bu son görev tabanlı devamlılığın atlayabilirsiniz. Herhangi bir özel durum işlenmemiş olarak kalır ve uygulamayı sonlandırabilirler.
 
 [!code-cpp[concrt-eh-task-chain#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_3.cpp)]
 
 > [!TIP]
->  Kullanabileceğiniz [concurrency::task_completion_event::set_exception](../../parallel/concrt/reference/task-completion-event-class.md) yöntemi bir özel görev tamamlama olayı ile ilişkilendirilecek. Belge [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md) açıklar [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) daha ayrıntılı sınıfı.
+> Bir özel durumu görev tamamlama olayı ile ilişkilendirmek için [concurrency:: task_completion_event:: set_exception](../../parallel/concrt/reference/task-completion-event-class.md) yöntemini kullanabilirsiniz. [Paralellik belge görevi](../../parallel/concrt/task-parallelism-concurrency-runtime.md) , [concurrency:: task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) sınıfını daha ayrıntılı olarak açıklar.
 
-[CONCURRENCY::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) ilişkili bir önemli bir çalışma zamanı özel durum türü `task`. Çalışma zamanı `task_canceled` çağırdığınızda `task::get` ve görev iptal edildi. (Buna karşılık, `task::wait` döndürür [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status) ve oluşturmaz.) Catch ve görev tabanlı devamlılık veya çağırdığınızda bu özel durumu işle `task::get`. Görev iptali hakkında daha fazla bilgi için bkz: [ppl'de iptal](cancellation-in-the-ppl.md).
+[concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) `task`ilişkili önemli bir çalışma zamanı özel durum türüdür. Çalışma zamanı, `task::get` çağırdığınızda ve bu görev iptal edildiğinde `task_canceled` oluşturur. (Buna karşılık, `task::wait` [task_status döndürür:: iptal edildi](reference/concurrency-namespace-enums.md#task_group_status) ve throw.) Bu özel durumu, görev tabanlı devamlılık veya `task::get`çağırdığınızda yakalayabilir ve işleyebilirsiniz. Görev iptali hakkında daha fazla bilgi için bkz. [PPL 'de iptal](cancellation-in-the-ppl.md).
 
 > [!CAUTION]
->  Hiçbir zaman throw `task_canceled` kodunuzdan. Çağrı [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) yerine.
+> Kodınızdan hiçbir `task_canceled` oluşturun. Bunun yerine [concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) çağrısı yapın.
 
-Bir görev bir özel durum oluşturur ve görev kendi devamlılıklarının veya ana uygulama özel durum yakalandı, uygulama çalışma zamanı sonlandırır. Uygulamanızı bir çökme gerçekleşirse, Visual Studio C++ özel durumlarını oluşturulduğunda Kes yapılandırabilirsiniz. İşlenmeyen özel durumun konumu tanılamanızdan sonra görev tabanlı devamlılık işlenmesi için kullanın.
+Bir görev bir özel durum oluşturursa ve bu özel durum görev, devamlılık veya ana uygulama tarafından yakalanmadığında çalışma zamanı uygulamayı sonlandırır. Uygulamanız kilitlenirse, Visual Studio 'Yu C++ özel durumlar oluştuğunda kesilecek şekilde yapılandırabilirsiniz. İşlenmeyen özel durumun konumunu tanıladıktan sonra, işlemek için görev tabanlı devamlılık kullanın.
 
-Bölüm [özel durumlar çalışma zamanı tarafından](#runtime) bu belgede daha ayrıntılı çalışma zamanı özel durumları ile nasıl çalışılacağını açıklar.
+Bu belgedeki [çalışma zamanı tarafından oluşturulan bölüm özel durumları](#runtime) , çalışma zamanı özel durumlarıyla daha ayrıntılı olarak nasıl çalışılacağını açıklar.
 
 [[Üst](#top)]
 
-##  <a name="task_groups"></a> Görev grupları ve paralel algoritmalar
+## <a name="task_groups"></a>Görev grupları ve paralel algoritmalar
 
-Bu bölümde, çalışma zamanının görev grupları tarafından oluşturulan özel durumları nasıl işlediğini açıklar. Bu bölüm ayrıca için paralel algoritmalar gibi geçerlidir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), bu algoritmalar Görev gruplarına oluşturun.
+Bu bölüm, çalışma zamanının görev grupları tarafından oluşturulan özel durumları nasıl işlediğini açıklar. Bu bölüm aynı zamanda [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for)gibi paralel algoritmalar için de geçerlidir çünkü bu algoritmalar görev grupları üzerinde oluşturur.
 
 > [!CAUTION]
->  Özel durumlar bağımlı görevlere sahip etkilerini anladığınızdan emin olun. Özel durum işleme görevleri veya paralel algoritmalar ile kullanmaya ilişkin önerilen yöntemler için bkz: [anlayın nasıl iptal ve özel durum işleme etkileyen nesne yok etme](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) bölümünde paralel en iyi uygulamalar Desenler kitaplığı konusu.
+> Özel durumların bağımlı görevlerle ilgili etkileri anladığınızdan emin olun. Görevler veya paralel algoritmalarda özel durum işlemenin nasıl kullanılacağına ilişkin önerilen uygulamalar için, paralel Desenler kitaplığı konusundaki En Iyi Yöntemler konusunun [iptal ve özel durum Işlemenin nesne yok etme işlemini nasıl etkilediğini anlama](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) bölümüne bakın.
 
-Görev grupları hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+Görev grupları hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-Geçirdiğiniz iş işlevin gövdesinde bir özel durum throw ne zaman bir [concurrency::task_group](reference/task-group-class.md) veya [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesi, çalışma zamanı bu özel durum depolar ve onu sürekliliğe devreder çağıran bağlamını [CONCURRENCY::task_group:: wait](reference/task-group-class.md#wait), [CONCURRENCY::structured_task_group](reference/structured-task-group-class.md#wait), [run_and_wait](reference/task-group-class.md#run_and_wait), veya [CONCURRENCY::structured_task_group:: run_and_wait](reference/structured-task-group-class.md#run_and_wait). Ayrıca çalışma zamanı (alt görev grupları de dahil) görev grubu olan tüm etkin görevleri durdurur ve henüz başlamamış herhangi bir görevi atar.
+[Concurrency:: task_group](reference/task-group-class.md) veya [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesine geçirdiğiniz bir çalışma işlevinin gövdesinde bir özel durum oluşturduğunuzda, çalışma zamanı bu özel durumu depolar ve bunu [eşzamanlılık:: task_group:](reference/task-group-class.md#wait): wait, eşzamanlılık:: [structured_task_group:: wait](reference/structured-task-group-class.md#wait) [, concurrency:](reference/task-group-class.md#run_and_wait): task_group:: run_and_wait veya [concurrency](reference/structured-task-group-class.md#run_and_wait):: structured_task_group:: run_and_wait öğesini çağıran içeriğe göre oluşturur. Çalışma zamanı, görev grubundaki (alt görev grupları dahil) tüm etkin görevleri de durduruyor ve henüz başlatılmamış tüm görevleri atar.
 
-Aşağıdaki örnek bir özel durum oluşturan iş işlevi temel yapısını gösterir. Örnekte bir `task_group` iki değerini yazdırmak için nesne `point` paralel nesneler. `print_point` İş işlevi değerlerini yazdırır bir `point` konsola nesne. Giriş değeri ise iş işlevi bir özel durum oluşturur. `NULL`. Çalışma zamanı bu özel durumun depolar ve çağıran bağlamına sıralar `task_group::wait`.
+Aşağıdaki örnek, bir özel durum oluşturan bir çalışma işlevinin temel yapısını gösterir. Örnek, iki `point` nesnesinin değerlerini paralel olarak yazdırmak için bir `task_group` nesnesi kullanır. `print_point` Work işlevi, bir `point` nesnesinin değerlerini konsola yazdırır. Giriş değeri `NULL`, çalışma işlevi bir özel durum oluşturur. Çalışma zamanı bu özel durumu depolar ve `task_group::wait`çağıran bağlamına göre sıralar.
 
 [!code-cpp[concrt-eh-task-group#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_4.cpp)]
 
@@ -102,17 +102,17 @@ Bu örnek aşağıdaki çıktıyı üretir.
 X = 15, Y = 30Caught exception: point is NULL.
 ```
 
-Özel durum işleme bir görev grubunda kullanan tam bir örnek için bkz. [nasıl yapılır: Özel durum paralel bir döngüden kurtulmak için işlemeyi kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
+Bir görev grubunda özel durum işlemeyi kullanan tüm bir örnek için bkz. [nasıl yapılır: paralel bir döngüden ayırmak Için özel durum Işlemeyi kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
 
 [[Üst](#top)]
 
-##  <a name="runtime"></a> Çalışma zamanı tarafından oluşturulan özel durumları
+## <a name="runtime"></a>Çalışma zamanı tarafından oluşturulan özel durumlar
 
-Bir özel durum, çalışma zamanı çağrısından neden olabilir. Çoğu özel durum türlerini hariç [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) ve [concurrency::operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), bir programlama hatasından kaynaklanıyor olabilir. Bu hatalar genellikle kurtarılamaz olarak kabul edilir ve bu nedenle yakalandı veya uygulama kodu tarafından işlenir. Yalnızca catch veya programlama hatalarını tanılamak gerektiğinde kurtarılamaz hatalar, uygulama kodunda işlemeye öneririz. Ancak, çalışma zamanı tarafından tanımlanan özel durum türleri, programlama hatalarını tanılamanıza yardımcı olabileceğini anlama.
+Bir özel durum, çalışma zamanına yapılan çağrıdan kaynaklanabilir. [Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) ve [concurrency:: operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md)dışında çok sayıda özel durum türü, bir programlama hatası gösterir. Bu hatalar genellikle kurtarılamaz olur ve bu nedenle uygulama kodu tarafından yakalanmamalıdır veya işlenmemelidir. Programlama hatalarını tanılamanıza gerek duyduğunuzda yalnızca uygulama kodunuzda kurtarılamaz hataları yakalamanızı veya işlemenizi öneririz. Ancak, çalışma zamanı tarafından tanımlanan özel durum türlerini anlamak programlama hatalarını tanılamanıza yardımcı olabilir.
 
-Özel durum işleme mekanizmasını iş işlevleri tarafından oluşturulan özel durumlar olarak çalışma zamanı tarafından oluşturulan özel durumlar için aynıdır. Örneğin, [concurrency::receive](reference/concurrency-namespace-functions.md#receive) işlevi atar `operation_timed_out` zaman bunu almaz bir ileti belirtilen süre içinde. Varsa `receive` iş işlevinde bir özel durum oluşturur, bir görev grubuna geçirirsiniz, çalışma zamanı bu özel durum depolar ve çağıran bağlamına sıralar `task_group::wait`, `structured_task_group::wait`, `task_group::run_and_wait`, veya `structured_task_group::run_and_wait`.
+Özel durum işleme mekanizması, çalışma zamanı tarafından iş işlevleri tarafından oluşturulan özel durumlar olarak oluşturulan özel durumlar için aynıdır. Örneğin, [concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) işlevi, belirtilen dönemde bir ileti almadığınızda `operation_timed_out` oluşturur. `receive`, bir görev grubuna geçirdiğiniz bir iş işlevinde bir özel durum oluşturursa, çalışma zamanı bu özel durumu depolar ve `task_group::wait`, `structured_task_group::wait`, `task_group::run_and_wait`veya `structured_task_group::run_and_wait`çağıran bağlamına göre sıralar.
 
-Aşağıdaki örnekte [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) iki görevi paralel olarak çalıştırmak için kullanılan algoritma. İlk görev beş saniye bekler ve ardından bir ileti arabelleği için bir ileti gönderir. İkinci görev kullanan `receive` işlevini aynı ileti arabellekteki ileti almak için üç saniye bekleyin. `receive` İşlevi atar `operation_timed_out` süre içinde bir ileti almazsa.
+Aşağıdaki örnek, paralel olarak iki görevi çalıştırmak için [eşzamanlılık::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritmasını kullanır. İlk görev beş saniye bekler ve ileti arabelleğine bir ileti gönderir. İkinci görev, aynı ileti arabelleğinden bir ileti almak için üç saniye beklemek üzere `receive` işlevini kullanır. `receive` işlevi, zaman diliminde iletiyi almadıysanız `operation_timed_out` oluşturur.
 
 [!code-cpp[concrt-eh-time-out#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_5.cpp)]
 
@@ -122,19 +122,19 @@ Bu örnek aşağıdaki çıktıyı üretir.
 The operation timed out.
 ```
 
-Olağan dışı sonlandırma uygulamanızın önlemek için kodunuzun çalışma zamanına çağırdığında, özel durumları işler emin olun. Örneğin, eşzamanlılık çalışma zamanı kullanan dış koda bir üçüncü taraf kitaplığı çağırdığınızda ayrıca özel durumları işleme.
+Uygulamanızı olağan dışı sonlandırmasını engellemek için, kodunuzun çalışma zamanına çağrı yaparken özel durumları işlediğinden emin olun. Ayrıca, örneğin bir üçüncü taraf kitaplığı olan Eşzamanlılık Çalışma Zamanı kullanan dış koda çağrı yaparken özel durumları işleyin.
 
 [[Üst](#top)]
 
-##  <a name="multiple"></a> Birden çok özel durum
+## <a name="multiple"></a>Birden çok özel durum
 
-Bir görev veya paralel algoritma birden çok özel durum alırsa, çalışma zamanı bu özel durumlar çağıran bağlamını yalnızca biri sürekliliğe devreder. Çalışma zamanı, sürekliliğe devreder hangi özel durumun garanti etmez.
+Bir görev veya paralel algoritma birden çok özel durum alırsa, çalışma zamanı bu özel durumların yalnızca birini çağıran bağlama göre sıralarar. Çalışma zamanı, hangi özel durumun sıraladığında garanti etmez.
 
-Aşağıdaki örnekte `parallel_for` numaraları konsola yazdırmak için algoritma. Giriş değeri bazı en düşük değerden küçük veya bazı maksimum değerden daha büyük ise bir özel durum oluşturur. Bu örnekte, birden çok iş işlevlerini bir durum oluşturabilir.
+Aşağıdaki örnek, sayıları konsola yazdırmak için `parallel_for` algoritmasını kullanır. Giriş değeri, bazı minimum değerden küçük veya en büyük değerden fazlaysa bir özel durum oluşturur. Bu örnekte, birden çok çalışma işlevi bir özel durum oluşturabilir.
 
 [!code-cpp[concrt-eh-multiple#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_6.cpp)]
 
-Bu örnek için örnek çıktı aşağıda gösterilmiştir.
+Aşağıda bu örnek için örnek çıktı gösterilmektedir.
 
 ```Output
 8293104567Caught exception: -5: the value is less than the minimum.
@@ -142,25 +142,25 @@ Bu örnek için örnek çıktı aşağıda gösterilmiştir.
 
 [[Üst](#top)]
 
-##  <a name="cancellation"></a> İptal etme
+## <a name="cancellation"></a>Kin
 
-Tüm özel durumlar, bir hata gösterir. Örneğin, bir arama algoritması, özel durum işleme, ilişkili görev sonucu bulduğunda durdurmak için kullanabilirsiniz. Kodunuzda iptal mekanizmaları kullanma hakkında daha fazla bilgi için bkz. [ppl'de iptal](../../parallel/concrt/cancellation-in-the-ppl.md).
-
-[[Üst](#top)]
-
-##  <a name="lwts"></a> Basit görevler
-
-Basit bir görev doğrudan zamanlama görevdir bir [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesne. Basit görevler daha az yüke sıradan görevleri gerçekleştirirsiniz. Ancak, çalışma zamanı, hafif görevler tarafından oluşturulan özel durumları yakalamaz. Bunun yerine, özel durum işlemi sonlandırır ve varsayılan işlenmeyen özel durum işleyicisi tarafından yakalanır. Bu nedenle, uygun bir hata işleme mekanizması, uygulamanızı kullanın. Basit görevler hakkında daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+Tüm özel durumlar bir hata göstermiyor. Örneğin, bir arama algoritması, sonucu bulduğunda ilişkili görevini durdurmak için özel durum işlemeyi kullanabilir. Kodunuzda iptal mekanizmalarının nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [PPL 'de iptal](../../parallel/concrt/cancellation-in-the-ppl.md).
 
 [[Üst](#top)]
 
-##  <a name="agents"></a> Zaman uyumsuz aracılar
+## <a name="lwts"></a>Hafif görevler
 
-Basit görevler gibi çalışma zamanı zaman uyumsuz aracılar tarafından oluşturulan özel durumları yönetmez.
+Hafif görev, doğrudan bir [eşzamanlılık:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesnesinden zamanladığınız bir görevdir. Hafif görevler sıradan görevlerden daha az yük taşır. Ancak çalışma zamanı, hafif görevler tarafından oluşturulan özel durumları yakalamaz. Bunun yerine, özel durum işlenmemiş özel durum işleyicisi tarafından yakalanır, varsayılan olarak işlemi sonlandırır. Bu nedenle, uygulamanızda uygun bir hata işleme mekanizması kullanın. Hafif görevler hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
-Aşağıdaki örnek, türetilen sınıftaki özel durumları işlemek için bir yol gösterir [concurrency::agent](../../parallel/concrt/reference/agent-class.md). Bu örnek tanımlar `points_agent` sınıfı. `points_agent::run` Yöntemi okuma `point` ileti arabellek nesneleri ve bunları konsola yazdırır. `run` Yöntemi bir özel durum oluşturursa, alırsa bir `NULL` işaretçi.
+[[Üst](#top)]
 
-`run` Yöntemi çevreleyen tüm iş bir `try` - `catch` blok. `catch` Blok özel durum iletisi arabelleğinde depolar. Uygulama, aracı bittikten sonra aracıyı bu buffer'dan alınan okuyarak hatayla olup olmadığını denetler.
+## <a name="agents"></a>Zaman uyumsuz aracılar
+
+Hafif görevler gibi, çalışma zamanı, zaman uyumsuz aracılar tarafından oluşturulan özel durumları yönetmez.
+
+Aşağıdaki örnek, [concurrency:: Agent](../../parallel/concrt/reference/agent-class.md)' den türetilen bir sınıftaki özel durumları işlemenin bir yolunu gösterir. Bu örnek `points_agent` sınıfını tanımlar. `points_agent::run` yöntemi, ileti arabelleğindeki `point` nesneleri okur ve bunları konsola yazdırır. `run` yöntemi bir `NULL` işaretçisi alırsa bir özel durum oluşturur.
+
+`run` yöntemi, tüm işleri bir `try`-`catch` bloğunda çevreler. `catch` bloğu özel durumu bir ileti arabelleğine depolar. Uygulama, aracı bittikten sonra, aracının bu arabellekten okurken bir hatayla karşılaşıp karşılaşmadığını denetler.
 
 [!code-cpp[concrt-eh-agents#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_7.cpp)]
 
@@ -173,15 +173,15 @@ error occurred in agent: point must not be NULL
 the status of the agent is: done
 ```
 
-Çünkü `try` - `catch` blok var. dışında `while` aracı döngü sona ilk hata ile karşılaştığında işleme. Varsa `try` - `catch` blok olan içinde `while` döngü, aracıyı devam bir hata gerçekleştikten sonra.
+`try`-`catch` bloğu `while` döngüsünün dışında olduğundan, aracı ilk hatayla karşılaştığında işlemi sonlandırır. `try`-`catch` bloğu `while` döngüsünün içindeyse, bir hata oluştuktan sonra aracı devam eder.
 
-Çalışırken hataları için aracı başka bir bileşen takip edebilmeniz Bu örnek özel durumları ileti arabelleğinde depolar. Bu örnekte bir [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) hata depolamak için nesne. Burada bir aracı birden çok özel durum işleme durumda `single_assignment` sınıfı geçirilen yalnızca ilk iletiyi kendisine depolar. Yalnızca son özel durum depolamak için kullanmak [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) sınıfı. Tüm özel durumları depolamak için kullanmak [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) sınıfı. Bu ileti blokları hakkında daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
+Bu örnek özel durumları bir ileti arabelleğinde depolar, böylece başka bir bileşen, çalıştığı şekilde aracıyı hatalara karşı izleyebilir. Bu örnek, hatayı depolamak için bir [concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) nesnesi kullanır. Bir aracının birden çok özel durumu işlediği durumda, `single_assignment` sınıfı yalnızca kendisine geçirilen ilk iletiyi depolar. Yalnızca son özel durumu depolamak için [concurrency:: overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) sınıfını kullanın. Tüm özel durumları depolamak için [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) sınıfını kullanın. Bu ileti blokları hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-Zaman uyumsuz aracılar hakkında daha fazla bilgi için bkz: [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md).
+Zaman uyumsuz aracılar hakkında daha fazla bilgi için bkz. [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md).
 
 [[Üst](#top)]
 
-##  <a name="summary"></a> Özeti
+## <a name="summary"></a>Özetleme
 
 [[Üst](#top)]
 
@@ -191,5 +191,5 @@ Zaman uyumsuz aracılar hakkında daha fazla bilgi için bkz: [zaman uyumsuz ara
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
-[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)

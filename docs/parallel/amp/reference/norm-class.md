@@ -6,20 +6,20 @@ f1_keywords:
 - AMP_SHORT_VECTORS/norm
 - AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
-ms.openlocfilehash: 56f879ef2fc0d3010ab4f64fedaf2570dac565d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 272ac3685539eb03f773c8bc60d5938ed6c53876
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351569"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126519"
 ---
 # <a name="norm-class"></a>norm Sınıfı
 
-Bir norm numarasını temsil eder. Her bir kayan bir öğedir aralığında nokta sayısı [-1.0f, 1.0f &].
+Norm bir sayıyı temsil eder. Her öğe [-1.0 f, 1.0 f] aralığındaki bir kayan noktalı sayıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class norm;
 ```
 
@@ -29,21 +29,21 @@ class norm;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. İçin 0.0f başlatın.|
+|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. 0\.0 f 'ye başlatın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|Norm::operator-||
-|Norm::operator--||
-|Norm::operator float|Dönüştürme işleci. Kayan norm sayıya dönüştürme noktası değeri.|
-|Norm::operator * =||
-|Norm::operator / =||
-|Norm::operator ++||
-|Norm::operator +=||
+|norm:: operator-||
+|norm:: operator--||
+|norm:: operator float|Dönüştürme işleci. Norm sayıyı bir kayan nokta değerine dönüştürür.|
+|norm:: operator * =||
+|norm:: operator/=||
+|norm:: operator + +||
+|norm:: operator + =||
 |norm::operator=||
-|Norm::operator-=||
+|norm:: operator-=||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -51,15 +51,15 @@ class norm;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> Norm
+## <a name="ctor"></a>eklenmeli
 
-Varsayılan Oluşturucu. İçin 0.0f başlatın.
+Varsayılan Oluşturucu. 0\.0 f 'ye başlatın.
 
-```
+```cpp
 norm(
     void) restrict(amp,
     cpu);
@@ -94,7 +94,7 @@ norm(
 *_V*<br/>
 Başlatmak için kullanılan değer.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - improper_lock class
 ms.assetid: 8f494942-7748-4a2a-8de2-23414bfe6346
-ms.openlocfilehash: c10a7f302b63c33869425c4e5bddb36a15373ea8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 886444f3e856234be010715a8ee0c707cf919bb4
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262599"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142393"
 ---
-# <a name="improperlock-class"></a>improper_lock Sınıfı
+# <a name="improper_lock-class"></a>improper_lock Sınıfı
 
-Bu sınıf, bir kilit alınmadığı yanlış olduğunda oluşturulan bir özel durum açıklar.
+Bu sınıf, bir kilit yanlış edinildiği zaman oluşturulan bir özel durum tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class improper_lock : public std::exception;
 ```
 
@@ -31,11 +31,11 @@ class improper_lock : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[improper_lock](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_lock exception`.|
+|[improper_lock](#ctor)|Fazla Yüklendi. Bir `improper_lock exception`oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Genellikle, bir reentrant olmayan kilit yinelemeli olarak aynı içerik üzerinde almaya denemesi yapıldığında bu özel durum oluşturulur.
+Genellikle, bu özel durum, yinelemeli olmayan bir kilidi aynı bağlamda yinelemeli olarak almak için bir girişim yapıldığında oluşturulur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,15 +45,15 @@ Genellikle, bir reentrant olmayan kilit yinelemeli olarak aynı içerik üzerind
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> improper_lock
+## <a name="ctor"></a>improper_lock
 
-Oluşturur bir `improper_lock exception`.
+Bir `improper_lock exception`oluşturur.
 
-```
+```cpp
 explicit _CRTIMP improper_lock(_In_z_ const char* _Message) throw();
 
 improper_lock() throw();
@@ -61,7 +61,7 @@ improper_lock() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -1,5 +1,5 @@
 ---
-title: Eşzamanlılık ad alanı sabit listeleri
+title: eşzamanlılık ad alanı sabit listeleri
 ms.date: 11/04/2016
 f1_keywords:
 - CONCRT/concurrency::Agents_EventType
@@ -12,28 +12,28 @@ f1_keywords:
 - CONCRT/concurrency::join_type
 - CONCRT/concurrency::message_status Enumeration
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-ms.openlocfilehash: d3eb49cd1555f23cc83efb0d8d912998295b3c55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 716c2d03e6d1ff67566bd28e5931996ea2d400af
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337615"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141314"
 ---
-# <a name="concurrency-namespace-enums"></a>Eşzamanlılık ad alanı sabit listeleri
+# <a name="concurrency-namespace-enums"></a>eşzamanlılık ad alanı sabit listeleri
 
 ||||
 |-|-|-|
 |[Agents_EventType](#agents_eventtype)|[ConcRT_EventType](#concrt_eventtype)|[Concrt_TraceFlags](#concrt_traceflags)|
 |[CriticalRegionType](#criticalregiontype)|[DynamicProgressFeedbackType](#dynamicprogressfeedbacktype)|[PolicyElementKey](#policyelementkey)|
 |[SchedulerType](#schedulertype)|[SchedulingProtocolType](#schedulingprotocoltype)|[SwitchingProxyState](#switchingproxystate)|
-|[Winrtınitializationtype](#winrtinitializationtype)|[agent_status](#agent_status)|[join_type](#join_type)|
+|[WinRTInitializationType](#winrtinitializationtype)|[agent_status](#agent_status)|[join_type](#join_type)|
 |[message_status](#message_status)|[task_group_status](#task_group_status)|
 
-##  <a name="agent_status"></a>  agent_status numaralandırması
+## <a name="agent_status"></a>agent_status numaralandırması
 
-Geçerli durumları bir `agent`.
+`agent`için geçerli durumlar.
 
-```
+```cpp
 enum agent_status;
 ```
 
@@ -41,25 +41,25 @@ enum agent_status;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`agent_canceled`|`agent` İptal edildi.|
-|`agent_created`|`agent` Oluşturuldu, ancak başlatılmadı.|
-|`agent_done`|`agent` İptal olmadan bitti.|
-|`agent_runnable`|`agent` Başlatıldı, ancak girilmedi kendi `run` yöntemi.|
-|`agent_started`|`agent` Başlatıldı.|
+|`agent_canceled`|`agent` iptal edildi.|
+|`agent_created`|`agent` oluşturuldu ancak başlatılmadı.|
+|`agent_done`|`agent` iptal edilmeden tamamlandı.|
+|`agent_runnable`|`agent` başlatıldı, ancak `run` yöntemi girilmedi.|
+|`agent_started`|`agent` başlatıldı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [zaman uyumsuz aracılar](../../../parallel/concrt/asynchronous-agents.md).
+Daha fazla bilgi için bkz. [zaman uyumsuz aracılar](../../../parallel/concrt/asynchronous-agents.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-##  <a name="agents_eventtype"></a>  Agents_EventType numaralandırması
+## <a name="agents_eventtype"></a>Agents_EventType numaralandırması
 
-Aracılar Kitaplığı tarafından sunulan izleme işlevselliği kullanılarak izlenebilir olay türleri
+Aracılar Kitaplığı tarafından sunulan izleme işlevi kullanılarak izlenebilir olay türleri
 
-```
+```cpp
 enum Agents_EventType;
 ```
 
@@ -67,24 +67,24 @@ enum Agents_EventType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`AGENTS_EVENT_CREATE`|Bir nesne oluşturmayı gösteren bir olay türü|
-|`AGENTS_EVENT_DESTROY`|Nesne silme işlemini temsil eden bir olay türü|
-|`AGENTS_EVENT_END`|İşleme sonuç bazı temsil eden bir olay türü|
-|`AGENTS_EVENT_LINK`|İleti blokları bağlama temsil eden bir olay türü|
+|`AGENTS_EVENT_CREATE`|Bir nesnenin oluşturulmasını temsil eden bir olay türü|
+|`AGENTS_EVENT_DESTROY`|Bir nesnenin silinmesini temsil eden bir olay türü|
+|`AGENTS_EVENT_END`|Bir işlemin sonucunun temsil eden bir olay türü|
+|`AGENTS_EVENT_LINK`|İleti bloklarının bağlamasını temsil eden bir olay türü|
 |`AGENTS_EVENT_NAME`|Bir nesnenin adını temsil eden bir olay türü|
-|`AGENTS_EVENT_SCHEDULE`|Zamanlama bir işlemi temsil eden bir olay türü|
-|`AGENTS_EVENT_START`|İşleme başlatma bazı temsil eden bir olay türü|
-|`AGENTS_EVENT_UNLINK`|İleti blokları bağlantısını temsil eden bir olay türü|
+|`AGENTS_EVENT_SCHEDULE`|Bir işlemin zamanlamasını temsil eden bir olay türü|
+|`AGENTS_EVENT_START`|Bazı işlemleri başlatma işlemini temsil eden bir olay türü|
+|`AGENTS_EVENT_UNLINK`|İleti bloklarının bağını kaldırmayı temsil eden bir olay türü|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-##  <a name="concrt_eventtype"></a>  ConcRT_EventType numaralandırması
+## <a name="concrt_eventtype"></a>ConcRT_EventType numaralandırması
 
-Eşzamanlılık Çalışma zamanı tarafından sunulan izleme işlevselliği kullanılarak izlenebilir olay türleri.
+Eşzamanlılık Çalışma Zamanı tarafından sunulan izleme işlevi kullanılarak izlenebilir olay türleri.
 
-```
+```cpp
 enum ConcRT_EventType;
 ```
 
@@ -92,25 +92,25 @@ enum ConcRT_EventType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`CONCRT_EVENT_ATTACH`|Ekleme için bir zamanlayıcı eylemi temsil eden bir olay türü.|
-|`CONCRT_EVENT_BLOCK`|Bir bağlam engelleme eylemi temsil eden bir olay türü.|
-|`CONCRT_EVENT_DETACH`|Ayırma bir Zamanlayıcıdan eylemi temsil eden bir olay türü.|
-|`CONCRT_EVENT_END`|Başlangıç/Bitiş olay çifti başlangıcını işaretleyen bir olay türü.|
+|`CONCRT_EVENT_ATTACH`|Bir Scheduler 'a ekleme Yasası temsil eden bir olay türü.|
+|`CONCRT_EVENT_BLOCK`|Bağlam engelleme Yasası temsil eden bir olay türü.|
+|`CONCRT_EVENT_DETACH`|Bir Scheduler 'dan ayırma Yasası temsil eden bir olay türü.|
+|`CONCRT_EVENT_END`|Başlangıç/bitiş olay çiftinin başlangıcını işaretleyen bir olay türü.|
 |`CONCRT_EVENT_GENERIC`|Çeşitli olaylar için kullanılan bir olay türü.|
-|`CONCRT_EVENT_IDLE`|Bir bağlamı olmak boşta işlemi temsil eden bir olay türü.|
-|`CONCRT_EVENT_START`|Başlangıç/Bitiş olay çifti başlangıcını işaretleyen bir olay türü.|
-|`CONCRT_EVENT_UNBLOCK`|Bir bağlamı kaldırma işlemi temsil eden bir olay türü.|
-|`CONCRT_EVENT_YIELD`|Bir bağlam sonuçlanmıyor eylemi temsil eden bir olay türü.|
+|`CONCRT_EVENT_IDLE`|Bir bağlamın çalışmasını temsil eden bir olay türü.|
+|`CONCRT_EVENT_START`|Başlangıç/bitiş olay çiftinin başlangıcını işaretleyen bir olay türü.|
+|`CONCRT_EVENT_UNBLOCK`|Bir bağlamın engellemesini kaldırma Yasası temsil eden bir olay türü.|
+|`CONCRT_EVENT_YIELD`|Bir içeriğin davranma durumunu temsil eden bir olay türü.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h **Namespace:** eşzamanlılık
+**Üstbilgi:** concrt. h **ad alanı:** eşzamanlılık
 
-##  <a name="concrt_traceflags"></a>  Concrt_TraceFlags numaralandırması
+## <a name="concrt_traceflags"></a>Concrt_TraceFlags numaralandırması
 
 Olay türleri için izleme bayrakları
 
-```
+```cpp
 enum Concrt_TraceFlags;
 ```
 
@@ -128,13 +128,13 @@ enum Concrt_TraceFlags;
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-##  <a name="criticalregiontype"></a>  CriticalRegionType numaralandırması
+## <a name="criticalregiontype"></a>Kritikregiontype numaralandırması
 
-Kritik bölgesinin bir bağlam içinde türüdür.
+Bağlam içindeki kritik bölge türü.
 
-```
+```cpp
 enum CriticalRegionType;
 ```
 
@@ -142,19 +142,19 @@ enum CriticalRegionType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`InsideCriticalRegion`|Bağlam içinde kritik bir bölgesi olduğunu gösterir. Bir kritik bölgesindeki olduğunda zaman uyumsuz askıya alma, Zamanlayıcıdan gizlidir. Böyle bir askıya alma gerçekleştirileceği, Resource Manager çalıştırılabilir duruma ve Zamanlayıcı tekrar çağırmak yerine yalnızca sürdürmek iş parçacığı için bekler. Böyle bir bölge içinde gerçekleştirilen kilitleri ile aşırı dikkatli olunması gerekir.|
-|`InsideHyperCriticalRegion`|Bağlam içinde hyper-kritik bir bölge olduğunu gösterir. Bir hyper-kritik bölgesindeki zaman zaman uyumlu ve zaman uyumsuz askıya alma, Zamanlayıcıdan gizlidir. Engelleme gerçekleşir, çalıştırılabilir duruma ve Zamanlayıcı tekrar çağırmak yerine yalnızca sürdürmek iş parçacığı Kaynak Yöneticisi'ni bekleyecektir ya da böyle bir askıya alma gerekir. Böyle bir bölge dışında çalışan kodla hiçbir zaman bu tür bir bölge içinde gerçekleştirilen kilitleri paylaşılması gerekir. Bunun yapılması, öngörülemeyen kilitlenmeye neden olur.|
-|`OutsideCriticalRegion`|Bağlam dışında herhangi bir kritik bölgesine olduğunu gösterir.|
+|`InsideCriticalRegion`|İçeriğin kritik bir bölgenin içinde olduğunu gösterir. Kritik bir bölgenin içindeyken zaman uyumsuz getirilmesi, Scheduler 'dan gizlenir. Bu tür bir askıya alma işleminin gerçekleşmesi durumunda Kaynak Yöneticisi, iş parçacığının çalıştırılabilir hale gelmesini bekler ve Zamanlayıcı 'yı yeniden çağırmak yerine yalnızca bu uygulamayı sürdürür. Bu tür bir bölgenin içinde alınan kilitlerin çok fazla dikkatli olması gerekir.|
+|`InsideHyperCriticalRegion`|Bağlamın bir Hyper-kritik bölgesi içinde olduğunu gösterir. Hiper kritik bir bölgenin içindeyken hem zaman uyumlu hem de zaman uyumsuz getirilmesi Zamanlayıcı 'dan gizlenir. Böyle bir askıya alma veya engelleme olması durumunda, Resource Manager iş parçacığının çalıştırılabilir hale gelmesini bekler ve Zamanlayıcı 'yı yeniden çağırmak yerine yalnızca bu uygulamayı sürdürür. Böyle bir bölge içinde alınan kilitler hiçbir şekilde bu bölge dışında çalışan kodla paylaşılmalıdır. Bunun yapılması öngörülemeyen kilitlenmeye neden olur.|
+|`OutsideCriticalRegion`|İçeriğin herhangi bir kritik bölgenin dışında olduğunu gösterir.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
-##  <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType numaralandırması
+## <a name="dynamicprogressfeedbacktype"></a>DynamicProgressFeedbackType numaralandırması
 
-Tarafından kullanılan `DynamicProgressFeedback` yapılançağrılararacılığıylaboştadurumunaiçinevedışınagidereksanalişlemcitemelistatistikselbilgilerigöreZamanlayıcı'dantoplananyadayalnızcaZamanlayıcıiçinkaynaklarıDengelenecekolmadığınıtanımlamakiçinilke`Activate` ve `Deactivate` yöntemlerde `IVirtualProcessorRoot` arabirimi. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
+Zamanlayıcı kaynaklarının, Scheduler 'dan toplanan istatistiksel bilgilere göre yeniden dengelenmesi veya yalnızca `IVirtualProcessorRoot` arabirimindeki `Activate` ve `Deactivate` yöntemlerine yapılan çağrılar aracılığıyla boşta durumuna geçme ve çıkış dışı olan sanal işlemcilere bağlı olup olmayacağını öğrenmek için `DynamicProgressFeedback` ilkesi tarafından kullanılır. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
 
-```
+```cpp
 enum DynamicProgressFeedbackType;
 ```
 
@@ -162,14 +162,14 @@ enum DynamicProgressFeedbackType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`ProgressFeedbackDisabled`|Zamanlayıcı, ilerleme durumu bilgileri toplamak değil. Yeniden Dengeleme tabanlı yalnızca abonelik düzeyinde temel alınan donanım iş parçacığı üzerinde gerçekleştirilir. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [Iexecutionresource::currentsubscriptionlevel](IExecutionResource-structure.md).<br /><br /> Bu değer, çalışma zamanı tarafından kullanım için ayrılmıştır.|
-|`ProgressFeedbackEnabled`|Zamanlayıcı ilerleme bilgilerini toplar ve resource Manager'a iletir. Kaynak Yöneticisi, temel alınan donanım iş parçacığı abonelik düzeyini yanı sıra Zamanlayıcı adına kaynakları yeniden dengelemek için bu istatistik bilgileri yararlanacaktır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [Iexecutionresource::currentsubscriptionlevel](IExecutionResource-structure.md).|
+|`ProgressFeedbackDisabled`|Zamanlayıcı, ilerleme bilgilerini toplamaz. Yeniden dengeleme, yalnızca temel alınan donanım iş parçacığının abonelik düzeyine göre yapılır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](IExecutionResource-structure.md).<br /><br /> Bu değer, çalışma zamanı tarafından kullanılmak üzere ayrılmıştır.|
+|`ProgressFeedbackEnabled`|Zamanlayıcı ilerleme bilgilerini toplar ve Resource Manager 'a geçirir. Resource Manager, temel alınan donanım iş parçacığının abonelik düzeyine ek olarak Zamanlayıcı adına kaynakları yeniden dengelemek için bu istatistiksel bilgileri kullanır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](IExecutionResource-structure.md).|
 
-##  <a name="join_type"></a>  join_type numaralandırması
+## <a name="join_type"></a>join_type numaralandırması
 
-Türü bir `join` ileti bloğu.
+`join` mesajlaşma bloğunun türü.
 
-```
+```cpp
 enum join_type;
 ```
 
@@ -177,18 +177,18 @@ enum join_type;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`greedy`|Doyumsuz `join` ileti blokları hemen kabul yayma bağlı bir ileti. Bu daha verimlidir, ancak Canlı-LOCK, ağ yapılandırmasına bağlı olarak olasılığı vardır.|
-|`non_greedy`|Doyumsuz olmayan `join` ileti blokları ileti erteleme deneyin ve tüm gelen sonra bunları tüketme. Bunlar, ancak daha yavaş çalışacak şekilde garanti edilir.|
+|`greedy`|Greedy `join` mesajlaşma blokları, yayma sonrasında bir iletiyi hemen kabul eder. Bu daha verimlidir, ancak ağ yapılandırmasına bağlı olarak dinamik kilitleme olasılığa sahiptir.|
+|`non_greedy`|Doyumsuz olmayan `join` mesajlaşma blokları iletileri erteleyip tüm iletişim olduktan sonra bunları dener ve tüketir. Bunlar, çalışma garantisi, ancak daha yavaştır.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-##  <a name="message_status"></a>  message_status numaralandırması
+## <a name="message_status"></a>message_status numaralandırması
 
-Bir teklif için geçerli yanıtlar bir `message` bloğu için nesne.
+Bir blok için `message` nesnesi teklifine yönelik geçerli yanıtlar.
 
-```
+```cpp
 enum message_status;
 ```
 
@@ -196,20 +196,20 @@ enum message_status;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`accepted`|Hedef iletiyi kabul edildi.|
+|`accepted`|Hedef iletiyi kabul etti.|
 |`declined`|Hedef iletiyi kabul etmedi.|
-|`missed`|Hedef iletiyi kabul denedi, ancak artık kullanılabilir.|
-|`postponed`|Hedef iletiyi ertelendi.|
+|`missed`|Hedef iletiyi kabul edilmeye çalıştı, ancak artık kullanılamıyor.|
+|`postponed`|Hedef iletiyi erteleyen.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-##  <a name="policyelementkey"></a>  PolicyElementKey numaralandırması
+## <a name="policyelementkey"></a>PolicyElementKey numaralandırması
 
-Zamanlayıcı davranış yönlerini açıklayan ilke anahtarları. Her ilke öğesi bir anahtar-değer çifti tarafından tanımlanır. Zamanlayıcılar hakkında Zamanlayıcı ilkeleri ve etkileri hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+Zamanlayıcı davranışının yönlerini açıklayan ilke anahtarları. Her ilke öğesi bir anahtar-değer çifti tarafından açıklanmıştır. Zamanlayıcı ilkeleri ve zamanlayıcılar üzerindeki etkileri hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
-```
+```cpp
 enum PolicyElementKey;
 ```
 
@@ -217,27 +217,27 @@ enum PolicyElementKey;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`ContextPriority`|Her bir bağlamda Zamanlayıcı işletim sistemi iş parçacığı önceliği. Bu anahtarı değerine ayarlanırsa `INHERIT_THREAD_PRIORITY` Zamanlayıcı bağlamlarda Zamanlayıcı oluşturulan iş parçacığı önceliği devralır.<br /><br /> Geçerli değerler: Windows için geçerli değerlerin herhangi birini `SetThreadPriority` işlevi ve özel değeri `INHERIT_THREAD_PRIORITY`<br /><br /> Varsayılan değer: `THREAD_PRIORITY_NORMAL`|
-|`ContextStackSize`|Zamanlayıcı kilobayt cinsinden her bağlamda ayrılmış yığın boyutu.<br /><br /> Geçerli değerler: Pozitif tam sayılar<br /><br /> Varsayılan değer: `0`, işlem varsayılan değer yığın boyutu için kullanılmasını gösteren.|
-|`DynamicProgressFeedback`|Kaynaklar için Zamanlayıcı Zamanlayıcıdan toplanan ya da yalnızca temel alınan donanım iş parçacıklarının abonelik düzeyine göre istatistiksel bilgi göre Dengelenecek olup olmadığını belirler. Daha fazla bilgi için [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype).<br /><br /> Geçerli değerler: Üye `DynamicProgressFeedbackType` numaralandırma, ya da `ProgressFeedbackEnabled` veya `ProgressFeedbackDisabled`<br /><br /> Varsayılan değer: `ProgressFeedbackEnabled`|
-|`LocalContextCacheSize`|Zaman `SchedulingProtocol` ilke anahtarı değerine ayarlanmış `EnhanceScheduleGroupLocality`, bu çalıştırılabilir bağlamları içinde sanal işlemci başına yerel kuyruğu önbelleğe alınmasına izin verilen en yüksek sayısını belirtir. Böyle bağlamları genellikle bunları çalıştırılabilir duruma gelmesine neden olduğu sanal işlemci üzerinde son-giren ilk çıkar (LIFO) sırayla çalıştırın. Bu ilke anahtarı ne zaman hiçbir anlamı olan Not `SchedulingProtocol` anahtar değerine ayarlanmış `EnhanceForwardProgress`.<br /><br /> Geçerli değerler: Negatif olmayan tamsayılar<br /><br /> Varsayılan değer: `8`|
-|`MaxConcurrency`|En fazla eşzamanlılık düzeyi Zamanlayıcı tarafından istenen. Kaynak Yöneticisi, başlangıçta bu kadar sanal işlemci ayrılacak çalışacaktır. Özel değeri [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) istenen eşzamanlılık düzeyi aynı makineye donanım iş parçacığı sayısını gösterir. İçin belirtilen değer, `MinConcurrency` makinede donanım iş parçacıklarının sayısını büyüktür ve `MaxConcurrency` olarak belirtilen `MaxExecutionResources`, değeri `MaxConcurrency` için ayarlanmış eşleştirmek için yükseltilmiş `MinConcurrency`.<br /><br /> Geçerli değerler: Pozitif tam sayılar ve özel değeri `MaxExecutionResources`<br /><br /> Varsayılan değer: `MaxExecutionResources`|
-|`MaxPolicyElementKey`|En fazla ilke öğe anahtarı. Geçerli öğe anahtarı değil.|
-|`MinConcurrency`|Zamanlayıcı kaynak yöneticisi tarafından sağlanmalıdır en düşük eşzamanlılık düzeyi. Bir zamanlayıcı için atanan sanal işlemcilerin sayısı alt sınırın altında hiçbir zaman geçer. Özel değeri [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) en düşük eşzamanlılık düzeyi aynı makineye donanım iş parçacığı sayısını gösterir. İçin belirtilen değer, `MaxConcurrency` makinede donanım iş parçacıklarının sayısını küçüktür ve `MinConcurrency` olarak belirtilen `MaxExecutionResources`, değeri `MinConcurrency` için ayarlanmış eşleştirmek için azaltıldığı `MaxConcurrency`.<br /><br /> Geçerli değerler: Negatif olmayan tamsayılar ve özel değeri `MaxExecutionResources`. Eşzamanlılık Çalışma zamanı planlayıcıları değeri oluşumu için kullanılan Zamanlayıcı ilkeleri için unutmayın `0` geçersiz.<br /><br /> Varsayılan değer: `1`|
-|`SchedulerKind`|Zamanlayıcı için temel yürütme bağlamları yararlanacaktır iş parçacığı türü. Daha fazla bilgi için [SchedulerType](#schedulertype).<br /><br /> Geçerli değerler: Üye `SchedulerType` numaralandırma, örneğin, `ThreadScheduler`<br /><br /> Varsayılan değer: `ThreadScheduler`. Bu, tüm işletim sistemlerinde Win32 iş parçacığı dönüşür.|
-|`SchedulingProtocol`|Zamanlama algoritmayı Zamanlayıcı tarafından kullanılacak açıklar. Daha fazla bilgi için [SchedulingProtocolType](#schedulingprotocoltype).<br /><br /> Geçerli değerler: Üye `SchedulingProtocolType` numaralandırma, ya da `EnhanceScheduleGroupLocality` veya `EnhanceForwardProgress`<br /><br /> Varsayılan değer: `EnhanceScheduleGroupLocality`|
-|`TargetOversubscriptionFactor`|Geçici donanım iş parçacığı başına sanal işlemcilerin sayısı. Hedef gecikmeyi faktör kaynak yöneticisi tarafından gerekirse karşılamak artırılabilir `MaxConcurrency` makinede donanım iş parçacıklarının ile.<br /><br /> Geçerli değerler: Pozitif tam sayılar<br /><br /> Varsayılan değer: `1`|
+|`ContextPriority`|Zamanlayıcıdaki her bir bağlamın işletim sistemi iş parçacığı önceliği. Bu anahtar değere ayarlanmışsa `INHERIT_THREAD_PRIORITY` Scheduler 'daki bağlamlar, Scheduler 'ı oluşturan iş parçacığının önceliğini alır.<br /><br /> Geçerli değerler: Windows `SetThreadPriority` işlevi ve özel değer için geçerli değerlerden herhangi biri `INHERIT_THREAD_PRIORITY`<br /><br /> Varsayılan değer: `THREAD_PRIORITY_NORMAL`|
+|`ContextStackSize`|Zamanlayıcıdaki her bir bağlamın kilobayt cinsinden ayrılmış yığın boyutu.<br /><br /> Geçerli değerler: pozitif tamsayılar<br /><br /> Varsayılan değer: `0`, yığın boyutu için işlemin varsayılan değerinin kullanıldığını belirtir.|
+|`DynamicProgressFeedback`|Zamanlayıcı kaynaklarının, Scheduler 'dan toplanan istatistiksel bilgilere göre veya yalnızca temel alınan donanım iş parçacıklarının abonelik düzeyine göre yeniden dengelendirilip dengeedilmeyeceğini belirler. Daha fazla bilgi için bkz. [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype).<br /><br /> Geçerli değerler: `DynamicProgressFeedbackType` numaralandırmanın bir üyesi, `ProgressFeedbackEnabled` veya `ProgressFeedbackDisabled`<br /><br /> Varsayılan değer: `ProgressFeedbackEnabled`|
+|`LocalContextCacheSize`|`SchedulingProtocol` ilke anahtarı `EnhanceScheduleGroupLocality`değere ayarlandığında, sanal işlemci yerel sıraları başına önbellekte izin verilen en fazla çalıştırılabilir bağlam sayısını belirtir. Bu tür bağlamlar, genellikle sanal işlemcide çalıştırılabilir duruma gelmesine neden olan en son ilk çıkar (LıFO) sırasıyla çalıştırılır. Bu ilke anahtarının, `SchedulingProtocol` anahtarı değer `EnhanceForwardProgress`ayarlandığında hiçbir anlamı olmadığını unutmayın.<br /><br /> Geçerli değerler: negatif olmayan tamsayılar<br /><br /> Varsayılan değer: `8`|
+|`MaxConcurrency`|Zamanlayıcı tarafından istenen en fazla eşzamanlılık düzeyi. Resource Manager, başlangıçta bu çok sayıda sanal işlemciyi ayırmaya çalışacaktır. [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) özel değeri, istenen eşzamanlılık düzeyinin makinedeki donanım iş parçacığı sayısıyla aynı olduğunu gösterir. `MinConcurrency` için belirtilen değer, makinedeki donanım iş parçacıklarının sayısından büyükse ve `MaxConcurrency` `MaxExecutionResources`olarak belirtilmişse, `MaxConcurrency` değeri `MinConcurrency`için ayarlanmış şekilde eşleşecek şekilde tetiklenir.<br /><br /> Geçerli değerler: pozitif tamsayılar ve özel değer `MaxExecutionResources`<br /><br /> Varsayılan değer: `MaxExecutionResources`|
+|`MaxPolicyElementKey`|En yüksek ilke öğesi anahtarı. Geçerli bir öğe anahtarı değil.|
+|`MinConcurrency`|Kaynak Yöneticisi tarafından Scheduler 'a sağlanması gereken en düşük eşzamanlılık düzeyi. Bir Scheduler 'a atanan sanal işlemcilerin sayısı, hiçbir şekilde en düşük değerin altına gitmeyecektir. [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) özel değeri, en düşük eşzamanlılık düzeyinin makinedeki donanım iş parçacığı sayısıyla aynı olduğunu gösterir. `MaxConcurrency` için belirtilen değer makinedeki donanım iş parçacıklarının sayısından küçükse ve `MinConcurrency` `MaxExecutionResources`olarak belirtilmişse, `MinConcurrency` değeri `MaxConcurrency`için ayarlanan değere indirgentirecektir.<br /><br /> Geçerli değerler: negatif olmayan tamsayılar ve `MaxExecutionResources`özel değeri. Eşzamanlılık Çalışma Zamanı zamanlayıcılar yapımı için kullanılan Zamanlayıcı ilkeleri için `0` değer geçersiz.<br /><br /> Varsayılan değer: `1`|
+|`SchedulerKind`|Scheduler 'ın temel yürütme bağlamlarında kullanacağı iş parçacıklarının türü. Daha fazla bilgi için bkz. [SchedulerType](#schedulertype).<br /><br /> Geçerli değerler: `SchedulerType` numaralandırmanın bir üyesi, örneğin, `ThreadScheduler`<br /><br /> Varsayılan değer: `ThreadScheduler`. Bu, tüm işletim sistemlerindeki Win32 iş parçacıklarını çevirir.|
+|`SchedulingProtocol`|Zamanlayıcı tarafından hangi zamanlama algoritmasının kullanılacağını açıklar. Daha fazla bilgi için bkz. [SchedulingProtocolType](#schedulingprotocoltype).<br /><br /> Geçerli değerler: `SchedulingProtocolType` numaralandırmanın bir üyesi, `EnhanceScheduleGroupLocality` veya `EnhanceForwardProgress`<br /><br /> Varsayılan değer: `EnhanceScheduleGroupLocality`|
+|`TargetOversubscriptionFactor`|Donanım iş parçacığı başına belirsiz sanal işlemci sayısı. Hedef aşırı abonelik faktörü, gerekirse makinedeki donanım iş parçacıklarıyla `MaxConcurrency` karşılamak için Kaynak Yöneticisi tarafından artırılabilir.<br /><br /> Geçerli değerler: pozitif tamsayılar<br /><br /> Varsayılan değer: `1`|
 |`WinRTInitialization`||
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-##  <a name="schedulertype"></a>  SchedulerType numaralandırması
+## <a name="schedulertype"></a>SchedulerType numaralandırması
 
-Tarafından kullanılan `SchedulerKind` Zamanlayıcı için temel yürütme bağlamları kullanmalıdır iş parçacıkları türünü tanımlamak için ilke. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
+`SchedulerKind` ilkesi tarafından, Scheduler 'ın temel yürütme bağlamlarında kullanmasını gereken iş parçacıklarının türünü betimleyen tarafından kullanılır. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
 
-```
+```cpp
 enum SchedulerType;
 ```
 
@@ -245,18 +245,18 @@ enum SchedulerType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`ThreadScheduler`|Normal Win32 iş parçacığı açık bir istek gösterir.|
-|`UmsThreadDefault`|Kullanıcı modunda zamanlanabilen (UMS) iş parçacığı eşzamanlılık çalışma zamanı Visual Studio 2013'te desteklenmez. Kullanarak `UmsThreadDefault` için bir değer olarak `SchedulerType` ilke içinde bir hata değil neden olur. Ancak, bu ilke ile oluşturulan bir zamanlayıcı Win32 iş parçacığı kullanımını varsayılan.|
+|`ThreadScheduler`|Normal Win32 iş parçacıklarının açık bir isteğini gösterir.|
+|`UmsThreadDefault`|Kullanıcı modu zamanlanabilen (UMS) iş parçacıkları Visual Studio 2013 Eşzamanlılık Çalışma Zamanı desteklenmez. `SchedulerType` ilkesi için değer olarak `UmsThreadDefault` kullanmak bir hatayla sonuçlanmaz. Ancak, bu ilkeyle oluşturulan bir zamanlayıcı, varsayılan olarak Win32 iş parçacıklarını kullanmaktır.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-##  <a name="schedulingprotocoltype"></a>  SchedulingProtocolType numaralandırması
+## <a name="schedulingprotocoltype"></a>SchedulingProtocolType numaralandırması
 
-Tarafından kullanılan `SchedulingProtocol` Zamanlayıcı için zamanlama algoritmayı kullanılır tanımlamak için ilke. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
+Zamanlayıcı için hangi zamanlama algoritmasının kullanılacağını açıklayan `SchedulingProtocol` ilkesi tarafından kullanılır. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
 
-```
+```cpp
 enum SchedulingProtocolType;
 ```
 
@@ -264,18 +264,18 @@ enum SchedulingProtocolType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`EnhanceForwardProgress`|Zamanlama grupları aracılığıyla hepsini her görev yürütüldükten sonra Zamanlayıcı tercih. Engeli bağlamları genellikle bir ilk-giren ilk çıkar (FIFO) şekilde zamanlanır. Sanal işlemci engeli bağlamları önbelleğe alma işlemi.|
-|`EnhanceScheduleGroupLocality`|Zamanlayıcı, başka bir zamanlama grubu için devam etmeden önce geçerli zamanlama grubu içinde görevler üzerinde çalışmaya devam etmeyi tercih eder. Engeli bağlamları sanal-işlemci önbelleğe alınır ve son olarak ilk çıkar (LIFO) biçiminde bunları engeli kaldırılmış olduğu sanal işlemci genellikle planlanır.|
+|`EnhanceForwardProgress`|Zamanlayıcı, her bir görevi yürütmeden sonra zamanlama grupları aracılığıyla hepsini bir kez kullanmayı tercih eder. Engellenmemiş bağlamlar genellikle ilk kez ilk çıkar (FıFO) biçimde zamanlanır. Sanal işlemciler engellenmemiş bağlamlara önbelleğe vermez.|
+|`EnhanceScheduleGroupLocality`|Zamanlayıcı, başka bir zamanlama grubuna geçmeden önce geçerli zamanlama grubundaki görevler üzerinde çalışmaya devam etmeyi tercih eder. Engellenmemiş bağlamlar, sanal işlemci başına önbelleğe alınır ve tipik olarak, engellenmemiş sanal işlemci tarafından ilk kez son çıkar (LıFO) ile zamanlanır.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-##  <a name="switchingproxystate"></a>  SwitchingProxyState numaralandırması
+## <a name="switchingproxystate"></a>SwitchingProxyState numaralandırması
 
-Bir iş parçacığı proxy'sini bulunduğu durumu belirtmek için kullanılan, ne zaman, bir ortak bağlam anahtara farklı iş parçacığı proxy yürütüyor.
+Bir iş parçacığı proxy 'sinin içinde olduğu durumu belirtmek için kullanılır ve farklı bir iş parçacığı proxy 'sine bir işbirlikçi bağlamı anahtarı yürüttüyordur.
 
-```
+```cpp
 enum SwitchingProxyState;
 ```
 
@@ -283,21 +283,21 @@ enum SwitchingProxyState;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`Blocking`|Çağıran iş parçacığını işbirliği içerisinde devamlılığı engelliyor ve özel olarak çağıran tarafından daha sonra yeniden çalıştırmayı ve başka bir eylem gerçekleştirmek kadar ait gösterir.|
-|`Idle`|Çağıran iş parçacığını Zamanlayıcı tarafından artık gerekli değildir ve Resource Manager'a döndürülen gösterir. Postasıdan bağlamı artık kaynak yöneticisi tarafından kullanılmasına mümkün değildir.|
-|`Nesting`|Çağıran iş parçacığını alt Zamanlayıcı iç içe geçirme ve için farklı bir zamanlayıcı iliştirmek için arayan tarafından gerekli olduğunu gösterir.|
+|`Blocking`|Çağıran iş parçacığının, daha sonra yeniden çalışmaya ve başka eylem gerçekleştirmeye kadar çağırılmasının yanı sıra, çağıran iş parçacığının özel olarak engellendiğini belirtir.|
+|`Idle`|Çağıran iş parçacığının Zamanlayıcı tarafından artık gerekli olmadığını ve Kaynak Yöneticisi döndürülmekte olduğunu gösterir. Dağıtılan bağlam artık Kaynak Yöneticisi tarafından kullanılamıyor.|
+|`Nesting`|Çağıran iş parçacığının bir alt zamanlayıcıyı iç içe aldığını ve farklı bir Scheduler 'a iliştirmek için çağıranın gerekli olduğunu gösterir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türünde bir parametre `SwitchingProxyState` yönteme geçirilen `IThreadProxy::SwitchTo` kaynak yöneticisi nasıl çağrıyı yapan iş parçacığı proxy'sini işlemesi gerektiğini bildirin.
+Çağrıyı yapan iş parçacığı proxy 'sini nasıl değerlendirdiğini Kaynak Yöneticisi bildirmek için `IThreadProxy::SwitchTo` yöntemine `SwitchingProxyState` türünde bir parametre geçirilir.
 
-Bu tür nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [Ithreadproxy::switchto](ithreadproxy-structure.md#switchto).
+Bu türün nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [IThreadProxy:: SwitchTo](ithreadproxy-structure.md#switchto).
 
-##  <a name="task_group_status"></a>  task_group_status numaralandırması
+## <a name="task_group_status"></a>task_group_status numaralandırması
 
-Yürütme durumunu açıklar bir `task_group` veya `structured_task_group` nesne. Bu türde bir değer tamamlamak için bir görev grubuna Zamanlanmış görevlerde bekleyen çok sayıda yöntem tarafından döndürülür.
+Bir `task_group` veya `structured_task_group` nesnesinin yürütme durumunu açıklar. Bu türden bir değer, bir görev grubuna zamanlanan görevlerin tamamlanmasını bekleyen çok sayıda yöntem tarafından döndürülür.
 
-```
+```cpp
 enum task_group_status;
 ```
 
@@ -305,19 +305,19 @@ enum task_group_status;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`canceled`|`task_group` Veya `structured_task_group` nesnesi iptal edildi. Bir veya daha fazla görev yürütülmemiş olabilir.|
-|`completed`|Sıraya alınan görevler `task_group` veya `structured_task_group` nesne başarıyla tamamlandı.|
-|`not_complete`|Sıraya alınan görevler `task_group` nesne tamamlanmadı. Bu değer şu anda eşzamanlılık çalışma zamanı tarafından döndürülmez unutmayın.|
+|`canceled`|`task_group` veya `structured_task_group` nesnesi iptal edildi. Bir veya daha fazla görev yürütülmeyebilir.|
+|`completed`|`task_group` veya `structured_task_group` nesnesine sıraya alınan görevler başarıyla tamamlandı.|
+|`not_complete`|`task_group` nesnesine sıraya alınan görevler tamamlanmadı. Bu değerin Şu anda Eşzamanlılık Çalışma Zamanı tarafından döndürülmediğini unutmayın.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** pplinterface.h
+**Üstbilgi:** pplınterface. h
 
-##  <a name="winrtinitializationtype"></a>  Winrtınitializationtype numaralandırması
+## <a name="winrtinitializationtype"></a>WinRTInitializationType numaralandırması
 
-Tarafından kullanılan `WinRTInitialization` görüntülenip görüntülenmeyeceğini ve nasıl Windows çalışma zamanı sürümü Windows 8 işletim sistemlerinde çalışan bir uygulama için Zamanlayıcı iş parçacıklarında başlatılmış veya üzeri başlatılacağını açıklamak için ilke. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
+`WinRTInitialization` ilkesi tarafından, Windows 8 veya üzeri sürümü olan işletim sistemlerinde çalışan bir uygulama için zamanlayıcı iş parçacıklarında ve Windows Çalışma Zamanı nasıl başlatılabileceğini açıklayan bir ilke tarafından kullanılır. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
 
-```
+```cpp
 enum WinRTInitializationType;
 ```
 
@@ -325,12 +325,12 @@ enum WinRTInitializationType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`DoNotInitializeWinRT`|Windows çalışma zamanı zaman uygulama sürümü Windows 8 işletim sistemlerinde çalıştırılan veya üzeri Zamanlayıcı içindeki iş parçacıkları başlatmaz.|
-|`InitializeWinRTAsMTA`|Uygulama sürümü Windows 8 işletim sistemlerinde çalıştırılan veya Zamanlayıcı içindeki her bir iş parçacığı sonraki ve Windows çalışma zamanı başlatma olduğunu bildirir, çok iş parçacıklı grubun bir parçası olur.|
+|`DoNotInitializeWinRT`|Uygulama, Windows 8 veya üzeri sürümü olan işletim sistemlerinde çalıştırıldığında, Zamanlayıcı içindeki iş parçacıkları Windows Çalışma Zamanı başlatmaz.|
+|`InitializeWinRTAsMTA`|Uygulama, Windows 8 veya üzeri sürümü olan işletim sistemlerinde çalıştırıldığında, Zamanlayıcı içindeki her bir iş parçacığı Windows Çalışma Zamanı başlatır ve çok iş parçacıklı grubun bir parçası olduğunu bildirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

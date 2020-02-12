@@ -7,26 +7,26 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: 196bb4441430c19aa165024e0fc4e42beec6d724
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 4df83e944552fd6c0d2482efa72883d87cd45f8c
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857469"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140649"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 
-Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını örneklendiren kullanmasını [concurrency::join](../../parallel/concrt/reference/join-class.md) uygulamanızdaki kilitlenmeyi önlemek için sınıf. Bir yazılım uygulamasındaki *kilitlenme* iki veya daha fazla işlem her bir kaynak basılı tutun ve karşılıklı olarak başka bir kaynağı serbest bırakmak başka bir işlemin tamamlanmasını beklemek oluşur.
+Bu konuda, uygulamanızda kilitlenmeyi engellemek için [concurrency:: JOIN](../../parallel/concrt/reference/join-class.md) sınıfının nasıl kullanılacağını göstermek üzere ınmpalama filozoflar sorunu kullanılmaktadır. Bir yazılım uygulamasında, iki veya daha fazla işlem bir kaynağı her tutar ve başka bir işlemin başka bir kaynağı serbest bırakma işlemini karşılıklı olarak beklemek durumunda *kilitlenme* oluşur.
 
-Yemek Yiyen Filozoflar sorunu, genel bir kaynak kümesini birden çok eşzamanlı işlemler arasında paylaşıldığında ortaya çıkabilecek sorunları kümesinin belirli bir örnektir.
+Yemek filozoflar sorunu, bir kaynak kümesi birden çok eş zamanlı işlem arasında paylaşıldığında oluşabilecek genel sorun kümesine özgü bir örnektir.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
-Bu kılavuza başlamadan önce aşağıdaki konuları okuyun:
+Bu yönergeyi başlamadan önce aşağıdaki konuları okuyun:
 
 - [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
 
-- [İzlenecek yol: Aracı Tabanlı Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
+- [İzlenecek Yol: Aracı Temelli Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
 
 - [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -34,105 +34,97 @@ Bu kılavuza başlamadan önce aşağıdaki konuları okuyun:
 
 - [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)
 
-##  <a name="top"></a> Bölümleri
+## <a name="top"></a>Başlıklı
 
 Bu izlenecek yol aşağıdaki bölümleri içerir:
 
-- [Yemek Yiyen Filozoflar sorunu](#problem)
+- [Dining filozoflar sorunu](#problem)
 
-- [Naïve uygulama](#deadlock)
+- [Bir Naïve uygulama](#deadlock)
 
-- [Kilitlenmeyi önlemek için birleştirme kullanma](#solution)
+- [Kilitlenmeyi engellemek için birleştirmeyi kullanma](#solution)
 
-##  <a name="problem"></a> Yemek Yiyen Filozoflar sorunu
+## <a name="problem"></a>Dining filozoflar sorunu
 
-Yemek Yiyen Filozoflar sorunu kilitlenme bir uygulamada nasıl gerçekleştirildiğini gösterir. Bu sorunda bir gidiş tablosunu beş Yiyen Filozoflar yaslanın. Her filozof düşünmek ve yemek arasında geçiş yapıyor. Her filozof ile komşu sola ve başka bir chopstick paylaşmalıdır chopstick sağa komşu ile. Bu düzeni aşağıdaki çizimde gösterilmektedir.
+Yemek filozoflar sorunu, bir uygulamada kilitlenmenin nasıl oluştuğunu gösterir. Bu sorun, yuvarlak bir tabloda beş filozoflar sıya. Her philosopher, düşünce ve Eating arasında alternatifler. Her philosopher, komşuyla komşu ile bir Chopstick paylaşmalıdır ve sağ komşu ile başka bir Chopstick. Aşağıdaki çizimde bu düzen gösterilmektedir.
 
-![Yemek Yiyen Filozoflar sorunu](../../parallel/concrt/media/dining_philosophersproblem.png "yemek Yiyen Filozoflar sorunu")
+![Dining filozoflar sorunu](../../parallel/concrt/media/dining_philosophersproblem.png "Yemek Yiyen Filozoflar Sorunu")
 
-Yemek için bir filozof iki chopsticks tutmanız gerekir. Her filozof tek chopstick tutar ve için başka bir bekleyen, ardından hiçbir filozof yemek ve tüm yeterli kaynak kalmamasına neden.
+Çıkarmak için bir philosopher iki chopsticks olmalıdır. Her philosopher yalnızca bir Chopstick barındırır ve başka bir tane bekliyorsa, hiçbir philosopher ve tüm starve.
 
 [[Üst](#top)]
 
-##  <a name="deadlock"></a> Naïve uygulama
+## <a name="deadlock"></a>Bir Naïve uygulama
 
-Aşağıdaki örnek, Yemek Yiyen Filozoflar sorunu naïve uygulanışı gösterilmektedir. `philosopher` Türetilen sınıf [concurrency::agent](../../parallel/concrt/reference/agent-class.md), bağımsız olarak işlem her filozof sağlar. Paylaşılan bir dizi örnekte [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) her vermek için nesneleri `philosopher` nesne chopsticks çiftinin özel erişim.
+Aşağıdaki örnek, Naïve filozoflar sorununun bir uygulamasını gösterir. [Concurrency:: Agent](../../parallel/concrt/reference/agent-class.md)' den türetilen `philosopher` sınıfı, her philosopher bağımsız olarak hareket etmesini sağlar. Örnek, her bir `philosopher` nesnesine bir Chopsticks çiftine özel erişim sağlamak için bir [eşzamanlılık:: critical_section](../../parallel/concrt/reference/critical-section-class.md) nesneleri paylaşılan dizisini kullanır.
 
-Uygulamaya gösterim ilişkilendirilecek `philosopher` sınıfı bir filozof temsil eder. Bir `int` değişken her chopstick temsil eder. `critical_section` Nesneleri üzerinde chopsticks rest sahipleri hizmet eder. `run` Yöntemi filozof ömrünü benzetimini yapar. `think` Yöntemi düşünce Yasası benzetimini yapar ve `eat` yöntemi yemek eylemi benzetimini yapar.
+Uygulamanın çizim ile ilişkilendirilmesi için `philosopher` sınıfı bir philosopher temsil eder. `int` değişken her bir Chopstick temsil eder. `critical_section` nesneler, Chopsticks Rest 'in bulunduğu sahiplerini sunar. `run` yöntemi philosopher ömrünü taklit eder. `think` yöntemi, düşünce Yasası taklit eder ve `eat` yöntemi, ekip uygulamasının benzetimini yapar.
 
-A `philosopher` nesne hem de kilitler `critical_section` sahiplerini kendisinden önce gelen chopsticks kaldırılmasını benzetimini yapmak için çağırdığı nesneleri `eat` yöntemi. Çağrısından sonra `eat`, `philosopher` nesnesi döndüren chopsticks üstlenenlere ayarlayarak `critical_section` nesneleri geri kilidi durumu.
+`philosopher` nesne, `eat` yöntemini çağırmadan önce Chopsticks 'in sahiplerini kaldırma benzetimi yapmak için hem `critical_section` nesnelerini kilitler. `eat`çağrısından sonra, `philosopher` nesnesi `critical_section` nesnelerini kilitlenmemiş duruma geri ayarlayarak Chopsticks ' ı döndürür.
 
-`pickup_chopsticks` Yöntemi gösterir burada Kilitlenme ortaya çıkabilir. Her varsa `philosopher` nesne kilitler birini ve ardından Hayır erişim kazanır `philosopher` diğer kilit bir başkası tarafından denetlenir çünkü nesne devam edebilir `philosopher` nesne.
+`pickup_chopsticks` yöntemi, kilitlenmenin nerede gerçekleşebileceğini gösterir. Her `philosopher` nesne kilitlenmesiz birine erişirse, diğer kilit başka bir `philosopher` nesnesi tarafından denetlendiği için hiçbir `philosopher` nesne devam edebilir.
 
-## <a name="example"></a>Örnek
-
-### <a name="description"></a>Açıklama
-
-### <a name="code"></a>Kod
+### <a name="example"></a>Örnek
 
 [!code-cpp[concrt-philosophers-deadlock#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_1.cpp)]
 
-## <a name="compiling-the-code"></a>Kod Derleniyor
+### <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `philosophers-deadlock.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `philosophers-deadlock.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc Yiyen Filozoflar deadlock.cpp**
+> **CL. exe/EHsc Philosophers-Deadlock. cpp**
 
 [[Üst](#top)]
 
-##  <a name="solution"></a> Kilitlenmeyi önlemek için birleştirme kullanma
+## <a name="solution"></a>Kilitlenmeyi engellemek için birleştirmeyi kullanma
 
-Bu bölümde, kilitlenme olasılığını ortadan kaldırmak için mesaj arabellekleri ve ileti geçirme işlevleri kullanma gösterilir.
+Bu bölümde, kilitlenme olasılığını ortadan kaldırmak için ileti arabelleklerinin ve ileti geçirme işlevlerinin nasıl kullanılacağı gösterilmektedir.
 
-Bu örnek önceki bir ilişkilendirmek için `philosopher` sınıfı her değiştirir `critical_section` kullanarak nesneyi bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi ve bir `join` nesne. `join` Nesne için filozof chopsticks sağlayan bir arbiter görür.
+Bu örneği daha önceki bir ile ilişkilendirmek için `philosopher` sınıfı her `critical_section` nesnesinin her bir [eşzamanlılık:: unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi ve bir `join` nesnesi kullanarak yerini alır. `join` nesnesi, philosopher 'e Chopsticks sağlayan bir Arbiter işlevi görür.
 
-Bu örnekte `unbounded_buffer` bir hedefe bir ileti aldığında çünkü bir `unbounded_buffer` nesnesi, iletiyi, ileti sırasından kaldırılır. Böylece bir `unbounded_buffer` chopstick olduğunu belirten bir ileti tutan nesne kullanılabilir. Bir `unbounded_buffer` ileti tutan nesne chopstick kullanılmakta olduğunu gösterir.
+Bu örnek, bir hedef bir `unbounded_buffer` nesnesinden ileti aldığında ileti sırasından kaldırıldığı için `unbounded_buffer` sınıfını kullanır. Bu, Chopstick kullanılabilir olduğunu göstermek için ileti tutan bir `unbounded_buffer` nesnesinin kullanılmasını sağlar. İleti içermeyen bir `unbounded_buffer` nesnesi, Chopstick kullanıldığını gösterir.
 
-Bu örnekte bir doyumsuz olmayan `join` doyumsuz olmayan birleştirme her sağladığından nesne `philosopher` nesne iki chopsticks erişimi yalnızca her ikisi de `unbounded_buffer` nesneleri içeren bir ileti. Kullanılabilir olduklarında hemen sonra doyumsuz birleştirme iletileri kabul ettiğinden, doyumsuz birleştirme kilitlenme engellemez. Kilitlenme tüm doyumsuz değilse oluşabilir `join` nesneler iletilerinden birini alabilirsiniz, ancak sonsuza kadar diğer kullanılabilir olana kadar bekleyin.
+Bu örnek, her iki `unbounded_buffer` nesnesi de bir ileti içerdiğinde her `philosopher` nesnesine her iki chopsticks nesnesine erişim verdiğinden, Greedy `join` olmayan bir nesne kullanır. Bir doyumsuz JOIN, iletileri kullanılabilir duruma geldiğinde kabul eden bir doyumsuz JOIN olduğundan kilitlenmeyi engellemez. Tüm doyumsuz `join` nesneleri iletilerden birini alıyorsa ve diğerinin kullanılabilir hale gelmesini bekleyene kadar kilitlenme meydana gelebilir.
 
-Doyumsuz ve doyumsuz olmayan birleştirmeler ve çeşitli ileti arabelleği türleri arasındaki farklar hakkında daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
+Doyumsuz ve doyumsuz olmayan birleşimler ve çeşitli ileti arabelleği türleri arasındaki farklar hakkında daha fazla bilgi için bkz. [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-#### <a name="to-prevent-deadlock-in-this-example"></a>Bu örnekte kilitlenmeyi önlemek için
+### <a name="to-prevent-deadlock-in-this-example"></a>Bu örnekte kilitlenmeyi önlemek için
 
-1. Aşağıdaki kod örneğinden kaldırın.
+1. Örnekteki aşağıdaki kodu kaldırın.
 
 [!code-cpp[concrt-philosophers-deadlock#2](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_2.cpp)]
 
-1. Türünü değiştirme `_left` ve `_right` veri üyeleri `philosopher` sınıfının `unbounded_buffer`.
+1. `philosopher` sınıfının `_left` ve `_right` veri üyelerinin türünü `unbounded_buffer`olarak değiştirin.
 
 [!code-cpp[concrt-philosophers-join#2](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_3.cpp)]
 
-1. Değiştirme `philosopher` gerçekleştirilecek Oluşturucusu `unbounded_buffer` , parametre olarak nesne.
+1. `philosopher` oluşturucusunu, parametreleri olarak `unbounded_buffer` nesneleri alacak şekilde değiştirin.
 
 [!code-cpp[concrt-philosophers-join#3](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_4.cpp)]
 
-1. Değiştirme `pickup_chopsticks` yöntemi bir doyumsuz olmayan `join` ileti arabellekleri için her iki chopsticks iletileri alacak şekilde nesne.
+1. `pickup_chopsticks` yöntemini, her iki chopsticks için ileti arabelleklerinden ileti almak üzere Greedy `join` nesnesini kullanacak şekilde değiştirin.
 
 [!code-cpp[concrt-philosophers-join#4](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_5.cpp)]
 
-1. Değiştirme `putdown_chopsticks` ileti arabellekleri için her iki chopsticks bir ileti göndererek chopsticks erişimi serbest bırakmak için yöntemi.
+1. `putdown_chopsticks` yöntemini, her ikisi için de ileti arabelleklerine bir ileti göndererek Chopsticks 'e erişimi serbest bırakmak için değiştirin.
 
 [!code-cpp[concrt-philosophers-join#5](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_6.cpp)]
 
-1. Değiştirme `run` sonuçlarını tutmak için yöntemi `pickup_chopsticks` yöntemi ve bu sonuçları geçirilecek `putdown_chopsticks` yöntemi.
+1. `run` yöntemini `pickup_chopsticks` yönteminin sonuçlarını tutacak şekilde değiştirin ve bu sonuçları `putdown_chopsticks` metoduna geçirin.
 
 [!code-cpp[concrt-philosophers-join#6](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_7.cpp)]
 
-1. Değiştirin `chopsticks` değişkeninde `wmain` işlevi bir dizi `unbounded_buffer` nesneleri her bir ileti tutun.
+1. `wmain` işlevindeki `chopsticks` değişkeninin bildirimini her biri bir ileti tutan `unbounded_buffer` nesnelerinin bir dizisi olacak şekilde değiştirin.
 
 [!code-cpp[concrt-philosophers-join#7](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_8.cpp)]
 
-## <a name="example"></a>Örnek
-
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki kullanan tamamlanan örnek doyumsuz olmayan gösterir `join` kilitlenmesi riskini ortadan kaldırmak için nesne.
+Aşağıda, kilitlenme riskini ortadan kaldırmak için doyumsuz olmayan `join` nesneleri kullanan tamamlanmış örnek gösterilmektedir.
 
-### <a name="code"></a>Kod
+### <a name="example"></a>Örnek
 
 [!code-cpp[concrt-philosophers-join#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_9.cpp)]
-
-### <a name="comments"></a>Açıklamalar
 
 Bu örnek aşağıdaki çıktıyı üretir.
 
@@ -144,11 +136,11 @@ socrates ate 50 times.
 plato ate 50 times.
 ```
 
-## <a name="compiling-the-code"></a>Kod Derleniyor
+### <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `philosophers-join.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `philosophers-join.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc Yiyen Filozoflar join.cpp**
+> **CL. exe/EHsc Philosophers-Join. cpp**
 
 [[Üst](#top)]
 

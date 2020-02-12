@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - scheduler_worker_creation_error class
 ms.assetid: 4aec1c3e-c32a-41b2-899d-2d898f23b3c7
-ms.openlocfilehash: 66e7485787606c22aba2970dbe481a7d29e66621
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7f2763d7244be9e5e5b006b31b97c08e213a4f2
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337368"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142761"
 ---
-# <a name="schedulerworkercreationerror-class"></a>scheduler_worker_creation_error Sınıfı
+# <a name="scheduler_worker_creation_error-class"></a>scheduler_worker_creation_error Sınıfı
 
-Bu sınıf, eşzamanlılık çalışma zamanı içinde çalışan yürütme bağlamı oluşturmak için bir hata nedeniyle verilen bir özel durumu anlatmaktadır.
+Bu sınıf, Eşzamanlılık Çalışma Zamanı bir çalışan yürütme bağlamı oluşturma hatası nedeniyle oluşan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class scheduler_worker_creation_error : public scheduler_resource_allocation_error;
 ```
 
@@ -31,11 +31,11 @@ class scheduler_worker_creation_error : public scheduler_resource_allocation_err
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[scheduler_worker_creation_error](#ctor)|Fazla Yüklendi. Oluşturur bir `scheduler_worker_creation_error` nesne.|
+|[scheduler_worker_creation_error](#ctor)|Fazla Yüklendi. `scheduler_worker_creation_error` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşletim sistemi eşzamanlılık çalışma zamanı içinde gelen yürütme bağlamları oluşturmak için bir çağrı başarısız olduğunda bu durum genellikle oluşturulur. Yürütme bağlamları görevleri eşzamanlılık çalışma zamanı'nda yürütülen akışlardır. Normalde Win32 yöntemin çağrısından döndürülen hata kodu `GetLastError` türü bir değere dönüştürülür `HRESULT` ve taban sınıf yöntemi kullanılarak alınıp `get_error_code`.
+Bu özel durum genellikle Eşzamanlılık Çalışma Zamanı içinden Yürütme bağlamları oluşturmak üzere işletim sistemine yapılan bir çağrı başarısız olduğunda oluşturulur. Yürütme bağlamları Eşzamanlılık Çalışma Zamanı görevleri çalıştıran iş parçacılardır. Normalde Win32 yöntemine yapılan bir çağrıdan döndürülen hata kodu `GetLastError` `HRESULT` türünde bir değere dönüştürülür ve `get_error_code`temel sınıf yöntemi kullanılarak alınabilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -47,15 +47,15 @@ class scheduler_worker_creation_error : public scheduler_resource_allocation_err
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> scheduler_worker_creation_error
+## <a name="ctor"></a>scheduler_worker_creation_error
 
-Oluşturur bir `scheduler_worker_creation_error` nesne.
+`scheduler_worker_creation_error` nesnesi oluşturur.
 
-```
+```cpp
 scheduler_worker_creation_error(
     _In_z_ const char* _Message,
     HRESULT _Hresult) throw();
@@ -66,11 +66,11 @@ explicit _CRTIMP scheduler_worker_creation_error(
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 *_Hresult*<br/>
-`HRESULT` Özel duruma neden olan hata değeri.
+Özel duruma neden olan hatanın `HRESULT` değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -4,127 +4,127 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler instances
 ms.assetid: 4819365f-ef99-49cc-963e-50a2a35a8d6b
-ms.openlocfilehash: 19bd871857dcef6aaef153798388c0272239fa1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e9e9b8124254084ac30191d37d49f2ef72bd677e
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180173"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142287"
 ---
 # <a name="scheduler-instances"></a>Zamanlayıcı Örnekleri
 
-Bu belge Zamanlayıcı örneğini eşzamanlılık çalışma zamanı ve nasıl kullanılacağını açıklar [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) ve [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) oluşturmak ve yönetmek için sınıflar Zamanlayıcı örnekleri. Zamanlayıcı örnekleri açık zamanlama ilkeleri belirli türlerdeki iş yükleri ile ilişkilendirmek istediğiniz durumlarda kullanışlıdır. Örneğin, bir yükseltilmiş iş parçacığı önceliği bazı görevleri çalıştırmak ve diğer görevleri sırasında normal iş parçacığı önceliği çalıştırmak için varsayılan Zamanlayıcı kullanmak için bir zamanlayıcı örneğini oluşturabilirsiniz.
+Bu belge, Eşzamanlılık Çalışma Zamanı Zamanlayıcı örneklerinin rolünü ve Zamanlayıcı örnekleri oluşturmak ve yönetmek için [concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) ve [concurrency:: CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) sınıflarının nasıl kullanılacağını açıklar. Zamanlayıcı örnekleri, açık zamanlama ilkelerini belirli iş yükleri türleriyle ilişkilendirmek istediğinizde faydalıdır. Örneğin, bazı görevleri yükseltilmiş bir iş parçacığı önceliğinde çalıştırmak için bir zamanlayıcı örneği oluşturabilir ve varsayılan Zamanlayıcı 'yı kullanarak normal iş parçacığı önceliğinde diğer görevleri çalıştırabilirsiniz.
 
 > [!TIP]
->  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, bir uygulama oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ayarlamanıza yardımcı olduğundan, ile başlamanızı öneririz [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Yeni eşzamanlılık çalışma zamanı.
+> Eşzamanlılık Çalışma Zamanı varsayılan bir Zamanlayıcı sağlar ve bu nedenle uygulamanızda bir tane oluşturmanız gerekmez. Görev Zamanlayıcı uygulamalarınızın performansını hassas bir şekilde ayarlamanıza yardımcı olduğundan, Eşzamanlılık Çalışma Zamanı yeni başladıysanız [paralel Desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) ile başlamanız önerilir.
 
-##  <a name="top"></a> Bölümleri
+## <a name="top"></a>Başlıklı
 
-- [CurrentScheduler sınıfları ve Zamanlayıcı](#classes)
+- [Zamanlayıcı ve CurrentScheduler sınıfları](#classes)
 
-- [Zamanlayıcı örneğini oluşturma](#creating)
+- [Zamanlayıcı örneği oluşturma](#creating)
 
-- [Yaşam süresi Zamanlayıcı örneğini yönetme](#managing)
+- [Zamanlayıcı örneğinin ömrünü yönetme](#managing)
 
-- [Yöntemleri ve özellikleri](#features)
+- [Yöntemler ve Özellikler](#features)
 
 - [Örnek](#example)
 
-##  <a name="classes"></a> CurrentScheduler sınıfları ve Zamanlayıcı
+## <a name="classes"></a>Zamanlayıcı ve CurrentScheduler sınıfları
 
-Görev Zamanlayıcısı'nı bir veya daha fazla kullanmak uygulamaları etkinleştiren *Zamanlayıcı örnekleri* iş zamanlamak için. [Concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) sınıfı bir zamanlayıcı örneğini temsil eder ve görevleri zamanlamayla ilgili işlevselliğini kapsüller.
+Görev Zamanlayıcı, uygulamaların işi zamanlamak için bir veya daha fazla *zamanlayıcı örneği* kullanmasına olanak sağlar. [Concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) sınıfı bir zamanlayıcı örneğini temsil eder ve Zamanlama görevleriyle ilgili işlevselliği kapsüller.
 
-Bir zamanlayıcı için bağlı bir iş parçacığı olarak da bilinen bir *yürütme bağlamı*, veya yalnızca *bağlam*. Bir zamanlayıcı herhangi bir zamanda geçerli bağlam üzerinde etkin olabilir. Etkin olarak da bilinen zamanlayıcısının *geçerli Zamanlayıcı*. Eşzamanlılık Çalışma zamanı kullanan [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) sınıfı için geçerli Zamanlayıcı erişim sağlamak için. Tek bağlam için geçerli Zamanlayıcı başka bir bağlamı için geçerli Zamanlayıcı farklı olabilir. Çalışma zamanı, geçerli Zamanlayıcı işlem düzeyinde gösterimini sağlamaz.
+Bir Scheduler 'a bağlı olan iş parçacığı, *yürütme bağlamı*veya yalnızca *bağlam*olarak bilinir. Bir zamanlayıcı, geçerli bağlamda dilediğiniz zaman etkin olabilir. Etkin Zamanlayıcı, *geçerli Zamanlayıcı*olarak da bilinir. Eşzamanlılık Çalışma Zamanı, geçerli Scheduler 'a erişim sağlamak için [concurrency:: CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) sınıfını kullanır. Bir bağlam için geçerli Zamanlayıcı, başka bir bağlam için geçerli Scheduler 'dan farklı olabilir. Çalışma zamanı, geçerli Scheduler 'ın işlem düzeyi gösterimini sağlamıyor.
 
-Genellikle, `CurrentScheduler` sınıfı, geçerli Zamanlayıcı erişmek için kullanılır. `Scheduler` Sınıfı, geçerli olmayan bir Zamanlayıcı'yı yönetmek ihtiyacınız olduğunda yararlıdır.
+Genellikle, `CurrentScheduler` sınıfı geçerli Scheduler 'a erişmek için kullanılır. `Scheduler` sınıfı, geçerli olmayan bir zamanlayıcıyı yönetmeniz gerektiğinde faydalıdır.
 
-Aşağıdaki bölümlerde, oluşturma ve Zamanlayıcı örneğini yönetme işlemleri açıklanmaktadır. Bu görevleri gösteren tam bir örnek için bkz. [nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
-
-[[Üst](#top)]
-
-##  <a name="creating"></a> Zamanlayıcı örneğini oluşturma
-
-Oluşturmak için bu üç yolla bir `Scheduler` nesnesi:
-
-- Hiçbir Zamanlayıcı varsa, çalışma zamanı işlerini yapmak için çalışma zamanı işlevselliği, örneğin, bir paralel algoritma kullandığınızda bir varsayılan Zamanlayıcı sizin için oluşturur. Paralel işi başlatan bağlamı için geçerli Zamanlayıcı varsayılan Zamanlayıcı olur.
-
-- [Concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#create) yöntemi oluşturur bir `Scheduler` nesnesini belirli bir ilke kullanır ve bu Zamanlayıcı geçerli bağlam ile ilişkilendirir.
-
-- [Concurrency::Scheduler::Create](reference/scheduler-class.md#create) yöntemi oluşturur bir `Scheduler` nesnesini belirli bir ilke kullanır, ancak geçerli bağlam ile ilişkilendirmez.
-
-Aynı Zamanlayıcı paylaşmak tüm eş zamanlı görevleri bir varsayılan Zamanlayıcı oluşturmak çalışma zamanı sağlayabiliyor. Genellikle, tarafından sağlanan işlevselliği [paralel desenler Kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) paralel işi gerçekleştirmek için kullanılır. Bu nedenle, ilke veya ömrünü denetlemek için doğrudan Zamanlayıcı ile çalışmak zorunda değildir. PPL veya Aracılar Kitaplığı kullandığınızda, çalışma zamanı mevcut değil ve her bağlam için geçerli Zamanlayıcı kolaylaştırır varsayılan Zamanlayıcı oluşturur. Zamanlayıcı oluşturma ve geçerli bir zamanlayıcı ayarlayın, çalışma zamanı görevleri zamanlamak için bu Zamanlayıcı kullanır. Yalnızca belirli bir zamanlama ilkesi gerektirdiğinde ek Zamanlayıcı örnekleri oluşturun. Zamanlayıcı ile ilişkili olan ilkeleri hakkında daha fazla bilgi için bkz. [Zamanlayıcı ilkeleri](../../parallel/concrt/scheduler-policies.md).
+Aşağıdaki bölümlerde bir Zamanlayıcı örneğinin nasıl oluşturulacağı ve yönetileceği anlatılmaktadır. Bu görevleri gösteren bir örnek için bkz. [nasıl yapılır: zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
 
 [[Üst](#top)]
 
-##  <a name="managing"></a> Yaşam süresi Zamanlayıcı örneğini yönetme
+## <a name="creating"></a>Zamanlayıcı örneği oluşturma
 
-Çalışma zamanı ömrünü denetlemek için bir başvuru sayım mekanizması kullanır. `Scheduler` nesneleri.
+`Scheduler` nesne oluşturmanın üç yolu vardır:
 
-Kullanırken `CurrentScheduler::Create` yöntemi veya `Scheduler::Create` yöntemi oluşturmak için bir `Scheduler` nesnesi, çalışma zamanı için bu Zamanlayıcı ilk başvuru sayısını ayarlar. Çağırdığınızda çalışma zamanı başvuru sayısını artırır [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) yöntemi. `Scheduler::Attach` Yöntemi ilişkilendirir `Scheduler` nesnesiyle birlikte geçerli bağlam. Bu, geçerli Zamanlayıcı kolaylaştırır. Çağırdığınızda `CurrentScheduler::Create` çalışma zamanı her iki yöntem, oluşturur bir `Scheduler` nesne ve bunu geçerli bağlam için ekler (ve ayarlar başvuru sayısı için). Ayrıca [concurrency::Scheduler::Reference](reference/scheduler-class.md#reference) başvuru sayısını artırmak için yöntemi bir `Scheduler` nesne.
+- Zamanlayıcı yoksa çalışma zamanı, iş için bir paralel algoritma gibi çalışma zamanı işlevselliği kullandığınızda sizin için varsayılan bir zamanlayıcı oluşturur. Varsayılan Zamanlayıcı, paralel çalışmayı başlatan bağlam için geçerli Zamanlayıcı olur.
 
-Başvuru sayma çağırdığınızda çalışma zamanı azaltır [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#detach) geçerli Zamanlayıcı ayırmak için yöntemi veya çağrı [concurrency::Scheduler::Release](reference/scheduler-class.md#release) yöntemi. Başvuru sayısı sıfır ulaştığında, çalışma zamanı yok eder `Scheduler` tüm zamanlanmış görevleri son nesne. Çalışan bir görev geçerli Zamanlayıcı başvuru sayısını artırmak için kullanılabilir. Bu nedenle, bir görev başvuru sayısını artırır ve başvuru sayısı sıfır oluncaya, çalışma zamanı yok `Scheduler` tüm görevleri tamamlamak ve başvuru sayısı sıfır yeniden oluncaya kadar nesne.
+- [Concurrency:: CurrentScheduler:: Create](reference/currentscheduler-class.md#create) yöntemi, belirli bir ilkeyi kullanan ve bu Scheduler 'ı geçerli bağlamla ilişkilendiren bir `Scheduler` nesnesi oluşturur.
 
-Çalışma zamanı iç bir yığını korur `Scheduler` her bağlam için nesneleri. Çağırdığınızda `Scheduler::Attach` veya `CurrentScheduler::Create` metodu, çalışma zamanı gönderim `Scheduler` geçerli bağlam için yığına nesne. Bu, geçerli Zamanlayıcı kolaylaştırır. Çağırdığınızda `CurrentScheduler::Detach`, çalışma zamanı yığını geçerli bağlam için geçerli Zamanlayıcıdan POP ve öncekinin geçerli Zamanlayıcı olarak ayarlar.
+- [Concurrency:: Scheduler:: Create](reference/scheduler-class.md#create) yöntemi, belirli bir ilkeyi kullanan bir `Scheduler` nesnesi oluşturur, ancak onu geçerli içerikle ilişkilendirmez.
 
-Çalışma zamanı bir zamanlayıcı örneği ömrünü yönetmek için birçok yol sağlar. Aşağıdaki tablo sürümleri ya da Zamanlayıcı oluşturan veya geçerli bağlam için bir zamanlayıcı bağlayan her bir yöntemin geçerli bağlamdan çıkarır uygun yöntemi gösterir.
+Çalışma zamanının varsayılan Zamanlayıcı oluşturmasına izin verilmesi, tüm eşzamanlı görevlerin aynı Zamanlayıcı 'yı paylaşmasını sağlar. Genellikle, paralel [desenler kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (ppl) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) tarafından belirtilen işlevsellik paralel çalışma gerçekleştirmek için kullanılır. Bu nedenle, ilke veya yaşam süresini denetlemek için Zamanlayıcı ile doğrudan çalışmanız gerekmez. PPL veya Agents kitaplığını kullandığınızda, çalışma zamanı yoksa varsayılan zamanlayıcıyı oluşturur ve her bağlam için geçerli Zamanlayıcı yapar. Bir Zamanlayıcı oluşturup geçerli Zamanlayıcı olarak ayarlarsanız, çalışma zamanı, görevleri zamanlamak için bu zamanlayıcıyı kullanır. Yalnızca belirli bir zamanlama ilkesine ihtiyacınız olduğunda ek Zamanlayıcı örnekleri oluşturun. Zamanlayıcı ile ilişkili ilkeler hakkında daha fazla bilgi için bkz. [Zamanlayıcı ilkeleri](../../parallel/concrt/scheduler-policies.md).
 
-|Oluşturma veya attach yöntemi|Sürüm veya detach yöntemi|
+[[Üst](#top)]
+
+## <a name="managing"></a>Zamanlayıcı örneğinin ömrünü yönetme
+
+Çalışma zamanı `Scheduler` nesnelerinin ömrünü denetlemek için bir başvuru sayma mekanizması kullanır.
+
+Bir `Scheduler` nesnesi oluşturmak için `CurrentScheduler::Create` yöntemini veya `Scheduler::Create` yöntemini kullandığınızda, çalışma zamanı bu zamanlayıcının ilk başvuru sayısını bir olarak ayarlar. [Concurrency:: Scheduler:: Attach](reference/scheduler-class.md#attach) metodunu çağırdığınızda çalışma zamanı başvuru sayısını artırır. `Scheduler::Attach` yöntemi, `Scheduler` nesnesini geçerli bağlamla birlikte ilişkilendirir. Bu, geçerli Zamanlayıcı yapar. `CurrentScheduler::Create` yöntemini çağırdığınızda, çalışma zamanının her ikisi de bir `Scheduler` nesnesi oluşturur ve geçerli içeriğe iliştirir (ve başvuru sayısını bir olarak ayarlar). Ayrıca, bir `Scheduler` nesnesinin başvuru sayısını artırmak için [concurrency:: Scheduler:: Reference](reference/scheduler-class.md#reference) yöntemini de kullanabilirsiniz.
+
+Geçerli zamanlayıcıyı ayırmak için [concurrency:: CurrentScheduler::D etach](reference/currentscheduler-class.md#detach) metodunu çağırdığınızda çalışma zamanı, başvuru sayısını azaltır veya [concurrency:: Scheduler:: Release](reference/scheduler-class.md#release) yöntemini çağırır. Başvuru sayısı sıfıra ulaştığında, çalışma zamanı tüm zamanlanmış görevler bittikten sonra `Scheduler` nesnesini yok eder. Çalışan bir görevin, geçerli Scheduler 'ın başvuru sayısını arttırmasına izin verilir. Bu nedenle, başvuru sayısı sıfıra ulaşırsa ve bir görev başvuru sayısını artırıyorsa, çalışma zamanı, başvuru sayısı tekrar sıfır olana ve tüm görevler tamamlanıncaya kadar `Scheduler` nesnesini yok etmez.
+
+Çalışma zamanı her bağlam için `Scheduler` nesnelerinin iç yığınını tutar. `Scheduler::Attach` veya `CurrentScheduler::Create` yöntemini çağırdığınızda, çalışma zamanı ilgili `Scheduler` nesnesini geçerli bağlam için yığına iter. Bu, geçerli Zamanlayıcı yapar. `CurrentScheduler::Detach`çağırdığınızda, çalışma zamanı geçerli bağlam için yığından geçerli zamanlayıcıyı ve önceki bir zamanlayıcıyı geçerli Zamanlayıcı olarak ayarlar.
+
+Çalışma zamanı, bir Zamanlayıcı örneğinin ömrünü yönetmek için çeşitli yollar sağlar. Aşağıdaki tabloda, geçerli bağlamı bir Zamanlayıcı oluşturan veya bağlayan her yöntemin geçerli bağlamından Zamanlayıcı 'yı serbest bırakır veya ayırır.
+
+|Oluşturma veya iliştirme yöntemi|Serbest bırakma veya ayırma yöntemi|
 |-----------------------------|------------------------------|
 |`CurrentScheduler::Create`|`CurrentScheduler::Detach`|
 |`Scheduler::Create`|`Scheduler::Release`|
 |`Scheduler::Attach`|`CurrentScheduler::Detach`|
 |`Scheduler::Reference`|`Scheduler::Release`|
 
-Uygunsuz çağırma bırakın veya yöntem üretir belirtilmeyen davranışını çalışma zamanında ayırma.
+Uygunsuz yayın veya ayırma yönteminin çağrılması, çalışma zamanında belirtilmeyen bir davranış üretir.
 
-Örneğin, sizin için varsayılan Zamanlayıcı oluşturmak çalışma zamanı neden PPL, işlevselliği kullandığınızda değil sürüm veya bu Zamanlayıcı ayırma. Çalışma zamanının oluşturduğu herhangi bir zamanlayıcı ömrünü yönetir.
+Çalışma zamanının sizin için varsayılan zamanlayıcıyı oluşturmasına neden olan PPL gibi işlevleri kullandığınızda, bu zamanlayıcıyı serbest bırakma veya ayırma. Çalışma zamanı, oluşturduğu tüm zamanlayıcının ömrünü yönetir.
 
-Çalışma zamanı yok çünkü bir `Scheduler` kullanabileceğiniz tüm görevleri tamamladıktan önce nesne [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent) yöntemi veya [concurrency::CurrentScheduler:: RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent) yöntemi bir bildirim almak için bir `Scheduler` nesnesi yok edildiğinde. Tarafından zamanlanan her görev için beklemelisiniz gerektiğinde bu faydalıdır bir `Scheduler` tamamlamak için nesne.
-
-[[Üst](#top)]
-
-##  <a name="features"></a> Yöntemleri ve özellikleri
-
-Bu bölümde önemli yöntemlerini özetler `CurrentScheduler` ve `Scheduler` sınıfları.
-
-Düşünün `CurrentScheduler` olarak kullanmak için bir zamanlayıcı geçerli bağlamda oluşturmaya yönelik bir yardımcı sınıfı. `Scheduler` Sınıfı için başka bir bağlamın ait bir zamanlayıcı denetlemenize olanak tanır.
-
-Aşağıdaki tabloda tanımlanır önemli yöntemler gösterilmektedir `CurrentScheduler` sınıfı.
-
-|Yöntem|Açıklama|
-|------------|-----------------|
-|[Oluşturma](reference/currentscheduler-class.md#create)|Oluşturur bir `Scheduler` nesnesini belirtilen ilke kullanır ve bunu geçerli bağlam ile ilişkilendirir.|
-|[Al](reference/currentscheduler-class.md#get)|Bir işaretçi alır `Scheduler` geçerli bağlam ile ilişkili olan nesne. Bu yöntem, başvuru sayısını artırmaz `Scheduler` nesne.|
-|[Detach](reference/currentscheduler-class.md#detach)|Geçerli Zamanlayıcı geçerli bağlamdan çıkarır ve öncekinin geçerli Zamanlayıcı olarak ayarlar.|
-|[RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent)|Geçerli Zamanlayıcı kaldırıldığında çalışma zamanı ayarlar bir olay kaydeder.|
-|[CreateScheduleGroup](reference/currentscheduler-class.md#createschedulegroup)|Oluşturur bir [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) geçerli Zamanlayıcı nesnesi.|
-|[ScheduleTask](reference/currentscheduler-class.md#scheduletask)|Basit bir görev geçerli Zamanlayıcı zamanlama kuyruğa ekler.|
-|[GetPolicy](reference/currentscheduler-class.md#getpolicy)|Geçerli Zamanlayıcı ile ilişkili ilkeyi bir kopyasını alır.|
-
-Aşağıdaki tabloda tanımlanır önemli yöntemler gösterilmektedir `Scheduler` sınıfı.
-
-|Yöntem|Açıklama|
-|------------|-----------------|
-|[Oluşturma](reference/scheduler-class.md#create)|Oluşturur bir `Scheduler` belirtilen ilke kullanan bir nesne.|
-|[Attach](reference/scheduler-class.md#attach)|İlişkilendirir `Scheduler` nesnesiyle birlikte geçerli bağlam.|
-|[Başvuru](reference/scheduler-class.md#reference)|Başvuru sayaç artırılır `Scheduler` nesne.|
-|[Sürüm](reference/scheduler-class.md#release)|Azaltır, başvuru sayaç `Scheduler` nesne.|
-|[RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent)|Çalışma zamanı zaman ayarlayan bir olay kaydeder `Scheduler` nesnesi yok edildiğinde.|
-|[CreateScheduleGroup](reference/scheduler-class.md#createschedulegroup)|Oluşturur bir [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) nesnesine `Scheduler` nesne.|
-|[ScheduleTask](reference/scheduler-class.md#scheduletask)|Hafif bir görevi zamanlar `Scheduler` nesne.|
-|[GetPolicy](reference/scheduler-class.md#getpolicy)|İlke ile ilişkili bir kopyasını alır `Scheduler` nesne.|
-|[SetDefaultSchedulerPolicy](reference/scheduler-class.md#setdefaultschedulerpolicy)|Varsayılan Zamanlayıcı oluşturduğunda, kullanılacak çalışma zamanı ilkesini ayarlar.|
-|[ResetDefaultSchedulerPolicy](reference/scheduler-class.md#resetdefaultschedulerpolicy)|Çağırmadan önce etkin olduğu bir varsayılan ilkeyi yükler `SetDefaultSchedulerPolicy`. Varsayılan Zamanlayıcı Bu çağrıdan sonra oluşturduysanız, çalışma zamanı Zamanlayıcı oluşturmak için varsayılan ilke ayarlarını kullanır.|
+Çalışma zamanı tüm görevler tamamlanmadan önce bir `Scheduler` nesnesini yok etmez, bir `Scheduler` nesnesi yok edildiğinde bildirim almak için [concurrency:: Scheduler:: RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent) metodunu veya [concurrency:: CurrentScheduler:: RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent) metodunu kullanabilirsiniz. Bu, `Scheduler` nesnesi tarafından zamanlanan her görevin bitmesini beklemeniz gerektiğinde faydalıdır.
 
 [[Üst](#top)]
 
-##  <a name="example"></a> Örnek
+## <a name="features"></a>Yöntemler ve Özellikler
 
-Oluşturma ve Zamanlayıcı örneğini yönetme temel örnekler için bkz [nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
+Bu bölüm `CurrentScheduler` ve `Scheduler` sınıflarının önemli yöntemlerini özetler.
+
+`CurrentScheduler` sınıfını, geçerli bağlamda kullanılmak üzere bir zamanlayıcı oluşturmak için yardımcı olarak düşünün. `Scheduler` sınıfı, başka bir bağlama ait olan bir zamanlayıcıyı denetlemenize olanak tanır.
+
+Aşağıdaki tabloda `CurrentScheduler` sınıfı tarafından tanımlanan önemli Yöntemler gösterilmektedir.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[Oluşturma](reference/currentscheduler-class.md#create)|Belirtilen ilkeyi kullanan bir `Scheduler` nesnesi oluşturur ve onu geçerli içerikle ilişkilendirir.|
+|[Get](reference/currentscheduler-class.md#get)|Geçerli bağlamla ilişkili `Scheduler` nesnesine bir işaretçi alır. Bu yöntem `Scheduler` nesnesinin başvuru sayısını artırmaz.|
+|[Detach](reference/currentscheduler-class.md#detach)|Geçerli bir zamanlayıcıyı geçerli bağlamdan ayırır ve önceki bir zamanlayıcıyı geçerli Zamanlayıcı olarak ayarlar.|
+|[RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent)|Geçerli Zamanlayıcı yok edildiğinde çalışma zamanı kümelerinin bir olayını kaydeder.|
+|[CreateScheduleGroup](reference/currentscheduler-class.md#createschedulegroup)|Geçerli zamanlayıcıda bir [concurrency:: ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) nesnesi oluşturur.|
+|[ScheduleTask](reference/currentscheduler-class.md#scheduletask)|Geçerli Scheduler 'ın zamanlama kuyruğuna hafif bir görev ekler.|
+|[GetPolicy](reference/currentscheduler-class.md#getpolicy)|Geçerli Scheduler ile ilişkili ilkenin bir kopyasını alır.|
+
+Aşağıdaki tabloda `Scheduler` sınıfı tarafından tanımlanan önemli Yöntemler gösterilmektedir.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[Oluşturma](reference/scheduler-class.md#create)|Belirtilen ilkeyi kullanan bir `Scheduler` nesnesi oluşturur.|
+|[Attach](reference/scheduler-class.md#attach)|`Scheduler` nesnesini geçerli bağlamla birlikte ilişkilendirir.|
+|[Başvuru](reference/scheduler-class.md#reference)|`Scheduler` nesnesinin başvuru sayacını artırır.|
+|[Sürüm](reference/scheduler-class.md#release)|`Scheduler` nesnesinin başvuru sayacını azaltır.|
+|[RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent)|`Scheduler` nesnesi yok edildiğinde çalışma zamanı kümelerinin bir olayını kaydeder.|
+|[CreateScheduleGroup](reference/scheduler-class.md#createschedulegroup)|`Scheduler` nesnesinde bir [concurrency:: ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) nesnesi oluşturur.|
+|[ScheduleTask](reference/scheduler-class.md#scheduletask)|`Scheduler` nesnesinden hafif bir görev zamanlar.|
+|[GetPolicy](reference/scheduler-class.md#getpolicy)|`Scheduler` nesnesiyle ilişkili ilkenin bir kopyasını alır.|
+|[SetDefaultSchedulerPolicy](reference/scheduler-class.md#setdefaultschedulerpolicy)|Çalışma zamanının varsayılan zamanlayıcıyı oluşturduğunda kullanacağı ilkeyi ayarlar.|
+|[ResetDefaultSchedulerPolicy](reference/scheduler-class.md#resetdefaultschedulerpolicy)|`SetDefaultSchedulerPolicy`çağrısından önce varsayılan ilkeyi etkin olan birine geri yükler. Bu çağrıdan sonra varsayılan Zamanlayıcı oluşturulduysa, çalışma zamanı Scheduler 'ı oluşturmak için varsayılan ilke ayarlarını kullanır.|
+
+[[Üst](#top)]
+
+## <a name="example"></a>Örneğinde
+
+Zamanlayıcı örneği oluşturma ve yönetme hakkında temel örnekler için bkz. [nasıl yapılır: zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Nasıl yapılır: Zamanlayıcı Örneğini Yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [Scheduler İlkeleri](../../parallel/concrt/scheduler-policies.md)<br/>
 [Zamanlama Grupları](../../parallel/concrt/schedule-groups.md)

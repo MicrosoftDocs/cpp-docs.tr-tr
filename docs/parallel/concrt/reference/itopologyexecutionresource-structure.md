@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - ITopologyExecutionResource structure
 ms.assetid: e36756f7-4cd9-4fa6-ba60-23fea58ef2bf
-ms.openlocfilehash: 4bfb614d5ffd6a399fae33d38a50cee62f17c208
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 82193a9b592cded96f3726cbabd6cf646eaa27c8
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339504"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140076"
 ---
 # <a name="itopologyexecutionresource-structure"></a>ITopologyExecutionResource Yapısı
 
-Kaynak Yöneticisi tarafından tanımlanan bir yürütme kaynağı arabirim.
+Kaynak Yöneticisi tarafından tanımlanan yürütme kaynağına yönelik arabirim.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 struct ITopologyExecutionResource;
 ```
 
@@ -32,12 +32,12 @@ struct ITopologyExecutionResource;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Itopologyexecutionresource::GetID](#getid)|Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|
-|[Itopologyexecutionresource::GetNext](#getnext)|Sonraki yürütme kaynak numaralandırma sırasında arasında bir arabirim döndürür.|
+|[ITopologyExecutionResource:: GetId](#getid)|Bu yürütme kaynağı için Kaynak Yöneticisi benzersiz tanımlayıcısını döndürür.|
+|[ITopologyExecutionResource:: GetNext](#getnext)|Numaralandırma düzeninde bir sonraki yürütme kaynağına bir arabirim döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin topolojisi yürütmek için kullanılır.
+Bu arabirim genellikle sistemin topolojisini Kaynak Yöneticisi gözlemlediği şekilde rehberlik etmek için kullanılır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,33 +45,33 @@ Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin top
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="getid"></a>  Itopologyexecutionresource::GetID metodu
+## <a name="getid"></a>ITopologyExecutionResource:: GetID Yöntemi
 
-Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.
+Bu yürütme kaynağı için Kaynak Yöneticisi benzersiz tanımlayıcısını döndürür.
 
-```
+```cpp
 virtual unsigned int GetId() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Resource Manager'ın bu yürütme kaynağın benzersiz tanımlayıcısı.
+Kaynak Yöneticisi bu yürütme kaynağı için benzersiz tanımlayıcısıdır.
 
-##  <a name="getnext"></a>  Itopologyexecutionresource::GetNext metodu
+## <a name="getnext"></a>ITopologyExecutionResource:: GetNext Yöntemi
 
-Sonraki yürütme kaynak numaralandırma sırasında arasında bir arabirim döndürür.
+Numaralandırma düzeninde bir sonraki yürütme kaynağına bir arabirim döndürür.
 
-```
+```cpp
 virtual ITopologyExecutionResource *GetNext() const = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonraki yürütme kaynak numaralandırma sırasında bir arabirim. Bu yürütme kaynağın ait olduğu düğüm sabit listesi sırasına göre daha fazla düğüm varsa, bu yöntem değeri döndüreceği `NULL`.
+Numaralandırma düzeninde bir sonraki yürütme kaynağına yönelik arabirim. Bu yürütme kaynağının ait olduğu düğümün numaralandırma düzeninde daha fazla düğüm yoksa, bu yöntem `NULL`değer döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

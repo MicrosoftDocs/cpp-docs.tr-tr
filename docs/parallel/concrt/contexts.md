@@ -4,73 +4,73 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-ms.openlocfilehash: d511f8fa751d61c3c490a184dae660096dd9f76f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9eaf21a3d65ae891a48657de9d3e7aff78ce12b9
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148347"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142183"
 ---
 # <a name="contexts"></a>Bağlamlar
 
-Bu belge, eşzamanlılık çalışma zamanı bağlamları rolünü açıklar. Bir zamanlayıcı için bağlı bir iş parçacığı olarak da bilinen bir *yürütme bağlamı*, veya yalnızca *bağlam*. [Concurrency::wait](reference/concurrency-namespace-functions.md#wait) işlevi ve eşzamanlılık::[bağlamı sınıfının](../../parallel/concrt/reference/context-class.md) bağlamları davranışını denetlemesine olanak sağlar. Kullanım `wait` geçerli bağlam belirli bir süre boyunca askıya almak için işlev. Kullanım `Context` sınıfı, ne zaman bağlamları blok, engellemesini kaldırmak ve yield ya da geçerli bağlam oversubscribe istediğinizde hakkında daha fazla denetime ihtiyacınız olduğunda.
+Bu belgede Eşzamanlılık Çalışma Zamanı bağlamların rolü açıklanmaktadır. Bir Scheduler 'a bağlı olan iş parçacığı, *yürütme bağlamı*veya yalnızca *bağlam*olarak bilinir. [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) işlevi ve concurrency::[Context sınıfı](../../parallel/concrt/reference/context-class.md) , bağlamların davranışını denetlemenize olanak tanır. Geçerli bağlamı belirli bir süre askıya almak için `wait` işlevini kullanın. Bağlamlar engellenme, engellemeyi kaldırma, ve yield işlemleri sırasında daha fazla denetime ihtiyacınız olduğunda veya geçerli bağlamın üzerine fazla abone olmak istediğinizde `Context` sınıfını kullanın.
 
 > [!TIP]
->  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, bir uygulama oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ayarlamanıza yardımcı olduğundan, ile başlamanızı öneririz [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Yeni eşzamanlılık çalışma zamanı.
+> Eşzamanlılık Çalışma Zamanı varsayılan bir Zamanlayıcı sağlar ve bu nedenle uygulamanızda bir tane oluşturmanız gerekmez. Görev Zamanlayıcı uygulamalarınızın performansını hassas bir şekilde ayarlamanıza yardımcı olduğundan, Eşzamanlılık Çalışma Zamanı yeni başladıysanız [paralel Desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) ile başlamanız önerilir.
 
-## <a name="the-wait-function"></a>Wait işlevi
+## <a name="the-wait-function"></a>Wait Işlevi
 
-[Concurrency::wait](reference/concurrency-namespace-functions.md#wait) işlevi işbirliği içerisinde devamlılığı yürütme geçerli bağlam için belirtilen sayıda milisaniye verir. Çalışma zamanı yield diğer görevleri gerçekleştirmek için kullanır. Belirtilen süre geçtikten sonra çalışma zamanı yürütme bağlamı tarih değiştirdiğinde. Bu nedenle, `wait` işlevi için sağlanan değer'den uzun geçerli bağlam askıya `milliseconds` parametresi.
+[Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) işlevi birlikte çalışır, belirtilen milisaniye sayısı için geçerli bağlamın yürütülmesini verir. Çalışma zamanı, diğer görevleri gerçekleştirmek için yield süresini kullanır. Belirtilen süre geçtikten sonra, çalışma zamanı yürütme bağlamını müşteri sizinle randevusunu. Bu nedenle `wait` işlevi, `milliseconds` parametresi için belirtilen değerden daha uzun geçerli bağlamı askıya alabilir.
 
-0 (sıfır) geçirmek için `milliseconds` parametresi, geçerli bağlam tüm etkin bağlamları çalışma gerçekleştirme fırsatı verilir kadar askıya almak çalışma zamanı neden olur. Bu, tüm etkin görevleri için bir görev yield sağlar.
+`milliseconds` parametresi için 0 (sıfır) geçirme işlemi, diğer tüm etkin bağlamlara iş gerçekleştirme fırsatı verilene kadar çalışma zamanının geçerli bağlamı askıya almasına neden olur. Bu, görevi diğer tüm etkin görevlere vermenizi sağlar.
 
 ### <a name="example"></a>Örnek
 
-Kullanan bir örnek için `wait` geçerli bağlam elde etmek üzere işlev ve diğer bağlamlarda çalıştırmak bkz. Bu nedenle izin [nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
+Geçerli bağlamı yürütmek için `wait` işlevini kullanan bir örnek için, diğer bağlamların çalışmasına izin vermek için bkz. [nasıl yapılır: zamanlama gruplarını kullanarak yürütme sırasını etkileme](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
 
 ## <a name="the-context-class"></a>Bağlam sınıfı
 
-Eşzamanlılık::[bağlamı sınıfının](../../parallel/concrt/reference/context-class.md) yürütme içeriği için programlama bir Özet sağlar ve iki önemli özellikleri sunar: işbirliği içerisinde devamlılığı blok, engellemesini kaldırmak ve geçerli bağlam yield olanağı ve yeteneği Geçerli bağlam oversubscribe.
+Concurrency::[Context sınıfı](../../parallel/concrt/reference/context-class.md) , bir yürütme bağlamı için programlama soyutlaması sağlar ve iki önemli özellik sunar: geçerli bağlamı birlikte engellemeye, engellemeyi kaldırmaya ve ortaya almanıza ve geçerli bağlamın üzerine fazla abone olma imkanına sahiptir.
 
-### <a name="cooperative-blocking"></a>Birlikte engelleme
+### <a name="cooperative-blocking"></a>Birlikte çalışmayan engelleme
 
-`Context` Sınıfı, engelleme ya da geçerli yürütme bağlamı yield olanak tanır. Bir kaynak kullanılabilir olmadığından geçerli bağlam devam edemiyor engelleme ya da sonuçlanmıyor yararlı olur.
+`Context` sınıfı, geçerli yürütme bağlamını engellemenize veya yapmanızı sağlar. Bir kaynak kullanılamadığından, geçerli bağlam devam edemediği için engelleme veya işleme yararlı olur.
 
-[Concurrency::Context::Block](reference/context-class.md#block) yöntemi geçerli bağlamı engeller. Çalışma zamanı diğer görevleri gerçekleştirebilmeleri için engellenen bir bağlam işlem kaynaklarını verir. [Concurrency::Context::Unblock](reference/context-class.md#unblock) yöntemi engellenen bağlam engellemesini kaldırır. `Context::Unblock` Yöntemi çağrıldığında, çağrılan olandan farklı bir bağlamdan `Context::Block`. Çalışma zamanı [concurrency::context_self_unblock](../../parallel/concrt/reference/context-self-unblock-class.md) kendisini engelini kaldırmak bir bağlam çalışırsa.
+[Concurrency:: Context:: Block](reference/context-class.md#block) yöntemi geçerli bağlamı engeller. Engellenen bir bağlam, çalışma zamanının diğer görevleri gerçekleştirebilmesi için işlem kaynaklarını verir. [Concurrency:: Context::](reference/context-class.md#unblock) ununununlıı metodu engellenen bağlamı engeller. `Context::Unblock` yöntemi, `Context::Block`çağırılabilecek olandan farklı bir bağlamdan çağrılmalıdır. Çalışma zamanı, bir bağlam kendi engellemesini engellemeyi denediğinde [eşzamanlılık:: context_self_unblock](../../parallel/concrt/reference/context-self-unblock-class.md) oluşturur.
 
-İşbirliği içerisinde devamlılığı engellemek ve bir bağlam engelini kaldırmak için genellikle çağırmanızı [concurrency::Context::CurrentContext](reference/context-class.md#currentcontext) işaretçisi alınacak `Context` sonucu Kaydet geçerli iş parçacığı ile ilişkili olan nesne. Ardından çağırın `Context::Block` geçerli bağlam engellemek için yöntemi. Daha sonra çağrı `Context::Unblock` engellenen bağlam engelini kaldırmak için ayrı bir bağlamı.
+Bir bağlamı birlikte engellemek ve engelini kaldırmak için genellikle [concurrency:: Context:: CurrentContext](reference/context-class.md#currentcontext) ' i çağırıp geçerli iş parçacığıyla ilişkili `Context` nesnesine bir işaretçi alır ve sonucu kaydeder. Ardından, geçerli bağlamı engellemek için `Context::Block` yöntemini çağırın. Daha sonra, engellenen bağlamın engelini kaldırmak için ayrı bir bağlamdan `Context::Unblock` çağırın.
 
-Her bir çifti yapılan çağrıların eşleşmelidir `Context::Block` ve `Context::Unblock`. Çalışma zamanı [concurrency::context_unblock_unbalanced](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) olduğunda `Context::Block` veya `Context::Unblock` yöntemi çağrıldığında art arda olmadan eşleşen başka bir yöntem çağrısı. Ancak, çağrı gerekmez `Context::Block` çağırmadan önce `Context::Unblock`. Örneğin, bir bağlam çağırırsa `Context::Unblock` başka bir bağlam çağrıları önce `Context::Block` aynı içerik için bu bağlamı engeli kalır.
+`Context::Block` ve `Context::Unblock`her bir çağrı çiftini eşleştirmelidir. Çalışma zamanı, `Context::Block` veya `Context::Unblock` yöntemi diğer yönteme eşleşen bir çağrı olmadan arka arkaya çağrıldığında [eşzamanlılık:: context_unblock_unbalanced](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) oluşturur. Ancak, `Context::Unblock`çağırmadan önce `Context::Block` çağırmanız gerekmez. Örneğin, bir bağlam, aynı bağlam için başka bir bağlam `Context::Block` çağırmadan önce `Context::Unblock` çağırırsa, bu bağlam engellenmeye devam eder.
 
-[Concurrency::Context::Yield](reference/context-class.md#yield) yöntemi yürütme çalışma zamanı, diğer görevleri gerçekleştirmek ve yürütme bağlamı randevularını yeniden zamanlayabilir verir. Çağırdığınızda `Context::Block` metodu, çalışma zamanı bağlamı yeniden değil.
+[Concurrency:: Context:: yield](reference/context-class.md#yield) yöntemi, çalışma zamanının diğer görevleri gerçekleştirebilmesi ve sonra yürütme bağlamını yeniden zamanlayabilmesi için yürütmeyi verir. `Context::Block` yöntemini çağırdığınızda, çalışma zamanı bağlamı yeniden zamanlamaz.
 
 #### <a name="example"></a>Örnek
 
-Kullanan bir örnek için `Context::Block`, `Context::Unblock`, ve `Context::Yield` işbirlikçi semafor sınıfını uygulamak için bkz [nasıl yapılır: Bağlam sınıfını işbirlikçi semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).
+Bir işbirlikçi semafor sınıfı uygulamak için `Context::Block`, `Context::Unblock`ve `Context::Yield` yöntemlerini kullanan bir örnek için bkz. [nasıl yapılır: bağlam sınıfını kullanarak bir işbirlikçi semaforu uygulama](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).
 
 ##### <a name="oversubscription"></a>Aşırı abonelik
 
-Kullanılabilir donanım iş parçacıklarının olduğundan varsayılan Zamanlayıcı aynı sayıda iş parçacığı oluşturur. Kullanabileceğiniz *gecikmeyi* belirli donanım iş parçacığı için ek iş parçacığı oluşturmak için.
+Varsayılan Zamanlayıcı, kullanılabilir donanım iş parçacıklarında aynı sayıda iş parçacığı oluşturur. *Fazla aboneliği* , belirli bir donanım iş parçacığı için ek iş parçacıkları oluşturmak üzere kullanabilirsiniz.
 
-İşlem bakımından yoğun işlemleri için ek yük getirir çünkü gecikmeyi genellikle ölçeklenmez. Ancak, gecikme süresi yüksek miktarda olan görevler için örneğin, disk veya ağ bağlantısı kurulurken, verileri okuma gecikmeyi bazı uygulamaları genel verimliliğini artırabilir.
-
-> [!NOTE]
->  Eşzamanlılık Çalışma zamanı tarafından oluşturulan bir iş parçacığından gecikmeyi etkinleştirin. (Ana iş parçacığı dahil) çalışma zamanı tarafından oluşturulmamış bir iş parçacığından çağrıldığında gecikmeyi bir etkisi yoktur.
-
-Geçerli bağlamda gecikmeyi etkinleştirmek için çağrı [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) yöntemiyle `_BeginOversubscription` parametresini **true**. Eşzamanlılık Çalışma zamanı tarafından oluşturulan bir iş parçacığında gecikmeyi etkinleştirdiğinizde, ek bir iş parçacığı oluşturmak çalışma zamanı neden olur. Aşırı abonelik bitiş gerektiren tüm görevleri sonra çağırma `Context::Oversubscribe` ile `_BeginOversubscription` parametresini **false**.
-
-Aşırı abonelik birden çok kez geçerli bağlamdan etkinleştirebilirsiniz, ancak, onu etkinleştirmeniz aynı sayıda devre dışı bırakmanız gerekir. Aşırı abonelik da yuvalanabilir; diğer bir deyişle, aşırı talep kullanan başka bir görev tarafından oluşturulan bir görev Ayrıca kendi bağlam fazladan abone atayabilir. Ancak, aynı içeriği, yalnızca en dıştaki çağrısı bir iç içe geçmiş görev ve üst aitse `Context::Oversubscribe` ek bir iş parçacığı oluşturulmasına neden olur.
+Yoğun şekilde yoğun işlemler için fazla abonelik genellikle ölçeklendirmez ve ek yük getirir. Ancak, büyük miktarda gecikme süresi olan görevler için, örneğin diskten veya bir ağ bağlantısından veri okurken, aşırı abonelik bazı uygulamaların genel verimliliğini artırır.
 
 > [!NOTE]
->  Çalışma zamanı [concurrency::invalid_oversubscribe_operation](../../parallel/concrt/reference/invalid-oversubscribe-operation-class.md) ise, etkinleştirmeden önce aşırı abonelik devre dışı.
+> Fazla aboneliği yalnızca Eşzamanlılık Çalışma Zamanı tarafından oluşturulan bir iş parçacığından etkinleştirin. Fazla abonelik, çalışma zamanı tarafından oluşturulmamış bir iş parçacığından çağrıldığında etkisizdir (ana iş parçacığı dahil).
+
+Geçerli bağlamda fazla aboneliği etkinleştirmek için, `_BeginOversubscription` parametresi **true**olarak ayarlanan [concurrency:: Context:: Oversubscribe](reference/context-class.md#oversubscribe) metodunu çağırın. Eşzamanlılık Çalışma Zamanı tarafından oluşturulan bir iş parçacığında fazla aboneliği etkinleştirdiğinizde, çalışma zamanının bir ek iş parçacığı oluşturmasına neden olur. Fazla abonelik gerektiren tüm görevler tamamlandıktan sonra, `_BeginOversubscription` parametresi **false**olarak ayarlanmış `Context::Oversubscribe` çağırın.
+
+Mevcut bağlamdan fazla aboneliği birden çok kez etkinleştirebilirsiniz, ancak bunu etkinleştirdiğiniz sayıda devre dışı bırakmanız gerekir. Fazla abonelik de iç içe olabilir; diğer bir deyişle, aşırı abonelik kullanan başka bir görev tarafından oluşturulan bir görev, bağlamını de fazla abone olabilir. Ancak, iç içe geçmiş bir görev ve onun üst öğesi aynı içeriğe aitse, yalnızca `Context::Oversubscribe` en dıştaki çağrı ek bir iş parçacığı oluşturulmasına neden olur.
+
+> [!NOTE]
+> Çalışma zamanı, aşırı abonelik etkinleştirilmeden önce devre dışı bırakılmışsa [eşzamanlılık:: invalid_oversubscribe_operation](../../parallel/concrt/reference/invalid-oversubscribe-operation-class.md) oluşturur.
 
 ###### <a name="example"></a>Örnek
 
-Bir ağ bağlantısından veri okuyarak neden dengelemek için aşırı talep kullanan bir örnek için bkz: [nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+Bir ağ bağlantısından veri okurken oluşan gecikme süresini kaydırmak için aşırı abonelik kullanan bir örnek için bkz. [nasıl yapılır: gecikme gecikmesini anlamak Için aşırı abonelik kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)<br/>
-[Nasıl yapılır: Bağlam Sınıfını İşbirliğine Dayalı Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
+[Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
 [Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)

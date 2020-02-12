@@ -1,36 +1,36 @@
 ---
-title: Eşzamanlılık ad alanı Sabitleri (AMP)
+title: Eşzamanlılık ad alanı sabitleri (AMP)
 ms.date: 11/04/2016
 f1_keywords:
 - amp/Concurrency::HLSL_MAX_NUM_BUFFERS
 - amp/Concurrency::MODULENAME_MAX_LENGTH
 ms.assetid: 13a8e8cd-2eec-4e60-a91d-5d271072747b
-ms.openlocfilehash: c6cdaa36f481bd4a703981bfa1bc0617860b0917
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d304728f5bdca8f4bfb39cdb26baad984e63097
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348555"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126935"
 ---
-# <a name="concurrency-namespace-constants-amp"></a>Eşzamanlılık ad alanı Sabitleri (AMP)
+# <a name="concurrency-namespace-constants-amp"></a>Eşzamanlılık ad alanı sabitleri (AMP)
 
 |||
 |-|-|
 |[HLSL_MAX_NUM_BUFFERS](#hlsl_max_num_buffers)|[MODULENAME_MAX_LENGTH](#modulename_max_length)|
 
-##  <a name="hlsl_max_num_buffers"></a>  HLSL_MAX_NUM_BUFFERS sabiti
+## <a name="hlsl_max_num_buffers"></a>HLSL_MAX_NUM_BUFFERS sabiti
 
-Arabellek DirectX tarafından izin verilen maksimum sayısı.
+DirectX tarafından izin verilen en fazla arabellek sayısı.
 
-```
+```cpp
 static const UINT HLSL_MAX_NUM_BUFFERS = 64 + 128;
 ```
 
-##  <a name="modulename_max_length"></a>  MODULENAME_MAX_LENGTH sabiti
+## <a name="modulename_max_length"></a>MODULENAME_MAX_LENGTH sabiti
 
-Modül adının en büyük uzunluğunu saklar. Bu değer, derleyici ve çalışma zamanı aynı olmalıdır.
+Modül adının maksimum uzunluğunu depolar. Bu değer, derleyici ve çalışma zamanında aynı olmalıdır.
 
-```
+```cpp
 static const UINT MODULENAME_MAX_LENGTH = 1024;
 ```
 

@@ -13,51 +13,51 @@ f1_keywords:
 - amp/Concurrency::global_memory_fence
 - amp/Concurrency::tile_static_memory_fence
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
-ms.openlocfilehash: 7baae51480c273ca023856253af7963ac83d7c92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90a23ce111f7307610de3f0ad4bcec05d8de27df
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180394"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126909"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 
 ||||
 |-|-|-|
 |[all_memory_fence](#all_memory_fence)|[amp_uninitialize](#amp_uninitialize)|[atomic_compare_exchange](#atomic_compare_exchange)|
-|[atomic_exchange işlevi (C++ AMP)](#atomic_exchange)|[atomic_fetch_add işlevi (C++ AMP)](#atomic_fetch_add)|[atomic_fetch_and işlevi (C++ AMP)](#atomic_fetch_and)|
+|[atomic_exchange Işlevi (C++ amp)](#atomic_exchange)|[atomic_fetch_add Işlevi (C++ amp)](#atomic_fetch_add)|[atomic_fetch_and Işlevi (C++ amp)](#atomic_fetch_and)|
 |[atomic_fetch_dec](#atomic_fetch_dec)|[atomic_fetch_inc](#atomic_fetch_inc)|[atomic_fetch_max](#atomic_fetch_max)|
-|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or Function (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub işlevi (C++ AMP)](#atomic_fetch_sub)|
-|[atomic_fetch_xor işlevi (C++ AMP)](#atomic_fetch_xor)|[kopyalama](#copy)|[copy_async](#copy_async)|
+|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or Işlevi (C++ amp)](#atomic_fetch_or)|[atomic_fetch_sub Işlevi (C++ amp)](#atomic_fetch_sub)|
+|[atomic_fetch_xor Işlevi (C++ amp)](#atomic_fetch_xor)|[kopya](#copy)|[copy_async](#copy_async)|
 |[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|
-|[global_memory_fence](#global_memory_fence)|[parallel_for_each işlevi (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
+|[global_memory_fence](#global_memory_fence)|[parallel_for_each Işlevi (C++ amp)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
 
-##  <a name="all_memory_fence"></a>  all_memory_fence
+## <a name="all_memory_fence"></a>all_memory_fence
 
-Tüm bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen sağlar.
+Tüm bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını sağlar ve Program sırasıyla yürütülür.
 
-```
+```cpp
 inline void all_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Barrier*<br/>
-A `tile_barrier` nesne.
+Bir `tile_barrier` nesnesi.
 
-##  <a name="amp_uninitialize"></a>  amp_uninitialize
+## <a name="amp_uninitialize"></a>amp_uninitialize
 
-C++ AMP çalışma zamanının başlamasını iptal eder. Birden çok kez uygulama ömrü boyunca bu işlevi çağırmak için uygundur. Bu fonksiyonu çağıran tüm C++ AMP API çağrıldığında C++ AMP çalışma zamanı yeniden başlatılır. Bu işleve çağrılar üzerinden C++ AMP nesneleri kullanmanın geçersiz ve bunun yapılması, bu nedenle tanımsız davranışlara neden unutmayın. Ayrıca, bu işleve ve diğer tüm AMP API'lerinin aynı anda çağırmak geçersizdir ve tanımsız davranışla sonuçlanır.
+C++ Amp çalışma zamanının işaretini kaldır. Bu işlevi bir uygulama ömrü boyunca birden çok kez çağırmak geçerlidir. Bu işlevi C++ çağırdıktan sonra herhangi bır amp API çağrısı, C++ amp çalışma zamanını yeniden başlatılır. Bu işleve yapılan çağrılar arasında amp nesnelerinin C++ kullanılması geçersiz olduğunu ve bunu yapmak tanımsız davranışa neden olacağını unutmayın. Ayrıca, bu işlevi ve diğer tüm AMP API 'Leri aynı anda çağırmak geçersizdir ve tanımsız davranışa neden olur.
 
-```
+```cpp
 void __cdecl amp_uninitialize();
 ```
 
-##  <a name="atomic_compare_exchange"></a>  atomic_compare_exchange
+## <a name="atomic_compare_exchange"></a>atomic_compare_exchange
 
-Atomik olarak bellek konumunda depolanan değeri eşitlik bakımından ikinci belirtilen bağımsız değişkenin değeri ilk bağımsız değişkende belirtilen karşılaştırır ve değerler aynıysa bellek konumundaki değer üçüncü belirtilen bağımsız değiştirilir.
+, İlk bağımsız değişkende belirtilen bellek konumunda depolanan değeri ikinci belirtilen bağımsız değişkenin değeriyle eşit olarak karşılaştırır ve değerler aynıysa, bellek konumundaki değer üçüncü belirtilen bağımsız değişkenin değeriyle değiştirilir.
 
-```
+```cpp
 inline bool atomic_compare_exchange(
     _Inout_ int* _Dest,
     _Inout_ int* _Expected_value,
@@ -74,23 +74,23 @@ inline bool atomic_compare_exchange(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Konum Karşılaştırılacak değerlerden birinin okunduğu ve yeni bir değer varsa depolanacak olduğu.
+Karşılaştırılacak değerlerden birinin okunduğu ve yeni değerin (varsa) depolanacağı konum, burada.
 
 *_Expected_value*<br/>
-Karşılaştırılacak ikinci değer okuması konumu.
+İkinci değerin karşılaştırılacağı konum okundu.
 
 *value*<br/>
-Tarafından belirtilen bellek konumuna depolanacak değer `_Dest` varsa `_Dest` eşittir `_Expected_value`.
+`_Dest` `_Expected_value`eşitse `_Dest` tarafından belirtilen bellek konumunda depolanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlemi başarılı olursa Aksi takdirde **false**.
+işlem başarılı olursa **doğru** ; Aksi takdirde, **false**.
 
-##  <a name="atomic_exchange"></a>  atomic_exchange işlevi (C++ AMP)
+## <a name="atomic_exchange"></a>atomic_exchange Işlevi (C++ amp)
 
-Hedef konum değeri atomik işlem ayarlar.
+Hedef konumun değerini atomik bir işlem olarak ayarlar.
 
-```
+```cpp
 inline int atomic_exchange(
     _Inout_ int* _Dest,
     int value
@@ -113,17 +113,17 @@ inline float atomic_exchange(
 Hedef konuma yönelik işaretçi.
 
 *value*<br/>
-Yeni değeri.
+Yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hedef konumu özgün değeri.
+Hedef konumun özgün değeri.
 
-##  <a name="atomic_fetch_add"></a>  atomic_fetch_add işlevi (C++ AMP)
+## <a name="atomic_fetch_add"></a>atomic_fetch_add Işlevi (C++ amp)
 
-Atomik olarak bir bellek konumuna değeri için bir değer ekleyin.
+Bir bellek konumunun değerine bir değer ekler.
 
-```
+```cpp
 inline int atomic_fetch_add(
     _Inout_ int* _Dest,
     int value
@@ -138,20 +138,20 @@ inline unsigned int atomic_fetch_add(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Bellek konumuna yönelik işaretçi.
+Bellek konumu işaretçisi.
 
 *value*<br/>
 Eklenecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek konumu özgün değeri.
+Bellek konumunun özgün değeri.
 
-##  <a name="atomic_fetch_and"></a>  atomic_fetch_and işlevi (C++ AMP)
+## <a name="atomic_fetch_and"></a>atomic_fetch_and Işlevi (C++ amp)
 
-Bit düzeyinde bir AND işlemi bir değer ve bir bellek konumuna değeri atomik olarak gerçekleştirir.
+, Bir değer ve bir bellek konumunun değeri için bir bit düzeyinde ve çalışır.
 
-```
+```cpp
 inline int atomic_fetch_and(
     _Inout_ int* _Dest,
     int value
@@ -166,20 +166,20 @@ inline unsigned int atomic_fetch_and(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Bellek konumuna yönelik işaretçi.
+Bellek konumu işaretçisi.
 
 *value*<br/>
-Bit düzeyinde AND hesaplanmasında kullanılacak değer.
+Bit düzeyinde AND hesaplamasında kullanılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek konumu özgün değeri.
+Bellek konumunun özgün değeri.
 
-##  <a name="atomic_fetch_dec"></a>  atomic_fetch_dec
+## <a name="atomic_fetch_dec"></a>atomic_fetch_dec
 
-Atomik olarak azaltır değeri belirtilen bellek konumunda depolanır.
+, Belirtilen bellek konumunda depolanan değeri bir ölçüde azaltır.
 
-```
+```cpp
 inline int atomic_fetch_dec(_Inout_ int* _Dest
     ) restrict(amp)
 
@@ -189,17 +189,17 @@ inline unsigned int atomic_fetch_dec(_Inout_ unsigned int* _Dest) restrict(amp);
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Azaltılacak değerin bellekteki konumu.
+Azaltılangirecek değerin bellekteki konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bellek konumunda depolanan özgün değer.
 
-##  <a name="atomic_fetch_inc"></a>  atomic_fetch_inc
+## <a name="atomic_fetch_inc"></a>atomic_fetch_inc
 
-Belirtilen bellek konumunda depolanan değeri atomik olarak artırır.
+Belirtilen bellek konumunda depolanan değeri otomatik olarak artırır.
 
-```
+```cpp
 inline int atomic_fetch_inc(_Inout_ int* _Dest) restrict(amp);
 
 inline unsigned int atomic_fetch_inc(_Inout_ unsigned int* _Dest) restrict(amp);
@@ -208,17 +208,17 @@ inline unsigned int atomic_fetch_inc(_Inout_ unsigned int* _Dest) restrict(amp);
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Arttırılacak değerin bellekteki konumu.
+Artılacak değerin bellekteki konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bellek konumunda depolanan özgün değer.
 
-##  <a name="atomic_fetch_max"></a>  atomic_fetch_max
+## <a name="atomic_fetch_max"></a>atomic_fetch_max
 
-Atomik olarak ilk bağımsız değişken ikinci bağımsız değişkende belirtilen değerden belirtilen bellek konumunda depolanan değer maksimum değeri hesaplar ve aynı bellek konumunda depolar.
+, İlk bağımsız değişkende belirtilen bellek konumunda depolanan değer ve ikinci bağımsız değişkende belirtilen değer arasındaki maksimum değeri otomatik olarak hesaplar ve aynı bellek konumunda depolar.
 
-```
+```cpp
 inline int atomic_fetch_max(
     _Inout_ int* _Dest,
     int value
@@ -233,20 +233,20 @@ inline unsigned int atomic_fetch_max(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Konum Karşılaştırılacak değerlerden birinin okunduğu ve iki değerden en fazla depolanacak olduğu.
+Karşılaştırılacağı değerlerden birinin okunduğu ve iki değerin en fazla depolanacağı konum, bu değerin saklanacağı konumdur.
 
 *value*<br/>
 Belirtilen konumdaki değerle karşılaştırılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen konum yerinde depolanan özgün değer.
+Belirtilen konum konumunda depolanan özgün değer.
 
-##  <a name="atomic_fetch_min"></a>  atomic_fetch_min
+## <a name="atomic_fetch_min"></a>atomic_fetch_min
 
-Atomik olarak ilk bağımsız değişken ikinci bağımsız değişkende belirtilen değerden belirtilen bellek konumunda depolanan değer minimum değeri hesaplar ve aynı bellek konumunda depolar.
+, İlk bağımsız değişkende belirtilen bellek konumunda depolanan değer ve ikinci bağımsız değişkende belirtilen değer arasındaki minimum değeri otomatik olarak hesaplar ve aynı bellek konumunda depolar.
 
-```
+```cpp
 inline int atomic_fetch_min(
     _Inout_ int* _Dest,
     int value
@@ -261,20 +261,20 @@ inline unsigned int atomic_fetch_min(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Konum Karşılaştırılacak değerlerden birinin okunduğu ve iki değerden en düşük depolanacak olduğu.
+Karşılaştırılacak değerlerden birinin okunduğu ve iki değerin en az bir şekilde depolanacağı konum burada.
 
 *value*<br/>
 Belirtilen konumdaki değerle karşılaştırılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen konum yerinde depolanan özgün değer.
+Belirtilen konum konumunda depolanan özgün değer.
 
-##  <a name="atomic_fetch_or"></a>  atomic_fetch_or işlevi (C++ AMP)
+## <a name="atomic_fetch_or"></a>atomic_fetch_or Işlevi (C++ amp)
 
-Atomik olarak bir değer ve bir bellek konumuna değeri ile bit tabanlı veya işlemi gerçekleştirir.
+, Bir değer ve bir bellek konumunun değeri ile bir bit düzeyinde veya işlem gerçekleştirir.
 
-```
+```cpp
 inline int atomic_fetch_or(
     _Inout_ int* _Dest,
     int value
@@ -289,20 +289,20 @@ inline unsigned int atomic_fetch_or(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Bellek konumuna yönelik işaretçi.
+Bellek konumu işaretçisi.
 
 *value*<br/>
-Bit düzeyinde OR hesaplanmasında kullanılacak değer.
+Bit düzeyinde veya hesaplamada kullanılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek konumu özgün değeri.
+Bellek konumunun özgün değeri.
 
-##  <a name="atomic_fetch_sub"></a>  atomic_fetch_sub işlevi (C++ AMP)
+## <a name="atomic_fetch_sub"></a>atomic_fetch_sub Işlevi (C++ amp)
 
-Atomik bir bellek konumuna bir değeri çıkarır.
+Bir bellek konumundan bir değeri atomicbir şekilde çıkarır.
 
-```
+```cpp
 inline int atomic_fetch_sub(
     _Inout_ int* _Dest,
     int value
@@ -320,17 +320,17 @@ inline unsigned int atomic_fetch_sub(
 Hedef konuma yönelik işaretçi.
 
 *value*<br/>
-Çıkarılan için değer.
+Çıkarılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek konumu özgün değeri.
+Bellek konumunun özgün değeri.
 
-##  <a name="atomic_fetch_xor"></a>  atomic_fetch_xor işlevi (C++ AMP)
+## <a name="atomic_fetch_xor"></a>atomic_fetch_xor Işlevi (C++ amp)
 
-Atomik olarak peforms bir değer ve bir bellek konumuna bir bit düzeyinde XOR işlem.
+, Bir değerin ve bir bellek konumunun bit düzeyinde XOR işlemi uygular.
 
-```
+```cpp
 inline int atomic_fetch_xor(
     _Inout_ int* _Dest,
     int value
@@ -345,20 +345,20 @@ inline unsigned int atomic_fetch_xor(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Bellek konumuna yönelik işaretçi.
+Bellek konumu işaretçisi.
 
 *value*<br/>
-XOR hesaplanmasında kullanılacak değer.
+XOR hesaplamasında kullanılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek konumu özgün değeri.
+Bellek konumunun özgün değeri.
 
-##  <a name="copy"></a>  kopyalama
+## <a name="copy"></a>kopya
 
-C++ AMP nesnesi kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılanır. Kod hızlandırıcıda çalışıyor olduğunda veri kopyalanamıyor. Bu işlevin genel formu `copy(src, dest)`.
+Bir C++ amp nesnesini kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılandı. Hızlandırıcı üzerinde kod çalıştırırken veri kopyalayamazsınız. Bu işlevin genel formu `copy(src, dest)`.
 
-```
+```cpp
 template <typename value_type, int _Rank>
 void copy(
     const array<value_type, _Rank>& _Src,
@@ -425,37 +425,37 @@ void copy(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Üstüne kopyalanacak nesne.
+Kopyalanacak nesne.
 
 *_DestIter*<br/>
-Hedef başlangıç konumuna bir çıktı yineleyici.
+Hedefteki başlangıç konumuna bir çıkış yineleyicisi.
 
-*Inputıterator*<br/>
+*InputIterator*<br/>
 Giriş yineleyicisinin türü.
 
-*Outputıterator*<br/>
-Çıkış yineleyici türü.
+*OutputIterator*<br/>
+Çıkış yineleyicisinin türü.
 
-*_Dizin*<br/>
-Kopyalanacak nesnenin ya da üstüne Kopyalanacak nesnenin boyut.
+*_Rank*<br/>
+Kopyalanacak nesnenin veya Kopyalanacak nesnenin derecesi.
 
 *_Src*<br/>
-Kopyalanacak nesneye için.
+Kopyalanacak nesneye.
 
 *_SrcFirst*<br/>
-Kaynak kapsayıcı içine bir başlangıç yineleyicisi.
+Kaynak kapsayıcıya bir başlangıç yineleyicisi.
 
 *_SrcLast*<br/>
-Kaynak kapsayıcı içine bir bitiş yineleyicisi.
+Kaynak kapsayıcıya bir bitiş yineleyicisi.
 
 *value_type*<br/>
-Kopyalanan öğelerin veri türü.
+Kopyalanmış öğelerin veri türü.
 
-##  <a name="copy_async"></a>  copy_async
+## <a name="copy_async"></a>copy_async
 
-Kopya bir C++ AMP nesnesi ve döndürür bir [completion_future](completion-future-class.md) üzerinde beklenen nesne. Kod hızlandırıcıda çalışıyor olduğunda veri kopyalanamıyor.  Bu işlevin genel formu `copy(src, dest)`.
+Bir C++ amp nesnesini kopyalar ve beklemiş olabilecek bir [completion_future](completion-future-class.md) nesnesi döndürür. Hızlandırıcı üzerinde kod çalıştırırken veri kopyalayamazsınız.  Bu işlevin genel formu `copy(src, dest)`.
 
-```
+```cpp
 template <typename value_type, int _Rank>
 concurrency::completion_future copy_async(
     const array<value_type, _Rank>& _Src,
@@ -514,82 +514,82 @@ concurrency::completion_future copy_async(
 ### <a name="parameters"></a>Parametreler
 
 *_Dest*<br/>
-Üstüne kopyalanacak nesne.
+Kopyalanacak nesne.
 
 *_DestIter*<br/>
-Hedef başlangıç konumuna bir çıktı yineleyici.
+Hedefteki başlangıç konumuna bir çıkış yineleyicisi.
 
-*Inputıterator*<br/>
+*InputIterator*<br/>
 Giriş yineleyicisinin türü.
 
-*Outputıterator*<br/>
-Çıkış yineleyici türü.
+*OutputIterator*<br/>
+Çıkış yineleyicisinin türü.
 
-*_Dizin*<br/>
-Kopyalanacak nesnenin ya da üstüne Kopyalanacak nesnenin boyut.
+*_Rank*<br/>
+Kopyalanacak nesnenin veya Kopyalanacak nesnenin derecesi.
 
 *_Src*<br/>
-Kopyalanacak nesneye için.
+Kopyalanacak nesneye.
 
 *_SrcFirst*<br/>
-Kaynak kapsayıcı içine bir başlangıç yineleyicisi.
+Kaynak kapsayıcıya bir başlangıç yineleyicisi.
 
 *_SrcLast*<br/>
-Kaynak kapsayıcı içine bir bitiş yineleyicisi.
+Kaynak kapsayıcıya bir bitiş yineleyicisi.
 
 *value_type*<br/>
-Kopyalanan öğelerin veri türü.
+Kopyalanmış öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `future<void>` , beklenen.
+Beklemiş olabilecek bir `future<void>`.
 
-##  <a name="direct3d_abort"></a>  direct3d_abort
+## <a name="direct3d_abort"></a>direct3d_abort
 
-İle bir işlevin yürütülmesini durdurur `restrict(amp)` kısıtlama yan tümcesi. AMP çalışma zamanı çağrıyı algıladığında bilmemektedir bir [runtime_exception](runtime-exception-class.md) özel durum hata iletisiyle "görüntüleyiciye: Gölgelendirici iptal yönergesi isabet".
+`restrict(amp)` kısıtlama yan tümcesiyle bir işlevin yürütülmesini iptal eder. AMP çalışma zamanı çağrıyı algıladığında, "Başvuru tarayıcısı: gölgelendirici iptal yönergesi isabet" hata iletisiyle [runtime_exception](runtime-exception-class.md) bir özel durum oluşturur.
 
-```
+```cpp
 void direct3d_abort() restrict(amp);
 ```
 
-##  <a name="direct3d_errorf"></a>  direct3d_errorf
+## <a name="direct3d_errorf"></a>direct3d_errorf
 
-Visual Studio çıktı penceresine biçimlendirilmiş bir dize yazdırır. İle bir işlevden çağırılır `restrict(amp)` kısıtlama yan tümcesi. AMP çalışma zamanı çağrıyı algıladığında bilmemektedir bir [runtime_exception](runtime-exception-class.md) özel durumla aynı biçimlendirme dizesi.
+Visual Studio çıktı penceresine biçimli bir dize yazdırır. `restrict(amp)` kısıtlama yan tümcesine sahip bir işlevden çağrılır. AMP çalışma zamanı çağrıyı algıladığında, aynı biçimlendirme dizesiyle [runtime_exception](runtime-exception-class.md) bir özel durum başlatır.
 
-```
+```cpp
 void direct3d_errorf(
     const char *,
 ...) restrict(amp);
 ```
 
-##  <a name="direct3d_printf"></a>  direct3d_printf
+## <a name="direct3d_printf"></a>direct3d_printf
 
-Visual Studio çıktı penceresine biçimlendirilmiş bir dize yazdırır. İle bir işlevden çağırılır `restrict(amp)` kısıtlama yan tümcesi.
+Visual Studio çıktı penceresine biçimli bir dize yazdırır. `restrict(amp)` kısıtlama yan tümcesine sahip bir işlevden çağrılır.
 
-```
+```cpp
 void direct3d_printf(
     const char *,
 ...) restrict(amp);
 ```
 
-##  <a name="global_memory_fence"></a>  global_memory_fence
+## <a name="global_memory_fence"></a>global_memory_fence
 
-Tüm genel bellek kullanımları tamamlanıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller tamamlanmıştır. Bu genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen sağlar.
+Tüm genel bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını sağlar ve Program sırasıyla yürütülür.
 
-```
+```cpp
 inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Barrier*<br/>
-Bir tile_barrier nesnesi
+Tile_barrier nesnesi
 
-##  <a name="parallel_for_each"></a>  parallel_for_each işlevi (C++ AMP)
+## <a name="parallel_for_each"></a>parallel_for_each Işlevi (C++ amp)
 
-Hesaplama alanı genelinde bir işlev çalıştırır. Daha fazla bilgi için [C++ AMP'ye genel bakış](../../../parallel/amp/cpp-amp-overview.md).
+İşlem etki alanı genelinde bir işlev çalıştırır. Daha fazla bilgi için bkz [ C++ . amp genel bakış](../../../parallel/amp/cpp-amp-overview.md).
 
-```
+```cpp
 template <int _Rank, typename _Kernel_type>
 void parallel_for_each(
     const extent<_Rank>& _Compute_domain,
@@ -638,41 +638,41 @@ void parallel_for_each(
 ### <a name="parameters"></a>Parametreler
 
 *_Accl_view*<br/>
-`accelerator_view` Paralel hesaplama yapabilmek için nesne.
+Paralel hesaplamayı çalıştırmak için `accelerator_view` nesnesi.
 
 *_Compute_domain*<br/>
-Bir `extent` hesaplama için veri içeren nesne.
+Hesaplama için verileri içeren `extent` nesnesi.
 
 *_Dim0*<br/>
-Boyutu `tiled_extent` nesne.
+`tiled_extent` nesnesinin boyutu.
 
 *_Dim1*<br/>
-Boyutu `tiled_extent` nesne.
+`tiled_extent` nesnesinin boyutu.
 
 *_Dim2*<br/>
-Boyutu `tiled_extent` nesne.
+`tiled_extent` nesnesinin boyutu.
 
 *_Kernel*<br/>
-Türünde bir bağımsız değişken bir lambda veya işlev nesnesi "dizin\<_dizin >" ve Paralel hesaplama gerçekleştirir.
+"İndex\<_Rank >" türünde bir bağımsız değişken alan ve paralel hesaplamayı gerçekleştiren bir lambda veya işlev nesnesi.
 
 *_Kernel_type*<br/>
-Bir lambda veya izleç.
+Lambda veya functor.
 
-*_Dizin*<br/>
-Kapsamın boyut sayısı.
+*_Rank*<br/>
+Kapsamın derecesi.
 
-##  <a name="tile_static_memory_fence"></a>  tile_static_memory_fence
+## <a name="tile_static_memory_fence"></a>tile_static_memory_fence
 
-Tüm kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller bekleyen `tile_static` bellek erişimleri tamamlanana. Bu, sağlar `tile_static` bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen erişir.
+Tüm bekleyen `tile_static` belleği erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Böylece, `tile_static` bellek erişimleri iş parçacığı kutucuğunda diğer iş parçacıkları tarafından görülebilir ve bu erişimler Program sırasıyla yürütülür.
 
-```
+```cpp
 inline void tile_static_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Barrier*<br/>
-Bir tile_barrier nesnesi.
+Tile_barrier nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

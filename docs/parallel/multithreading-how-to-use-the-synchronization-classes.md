@@ -13,12 +13,12 @@ helpviewer_keywords:
 - multithreading [C++], synchronization classes
 - threading [C++], thread-safe class design
 ms.assetid: f266d4c6-0454-4bda-9758-26157ef74cc5
-ms.openlocfilehash: 26a059e378edb92f5ff7f4e788ded90678e0c129
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ef76199813de417d2aa57eb7f3f15ae4d2fefc56
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511874"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140497"
 ---
 # <a name="multithreading-how-to-use-the-mfc-synchronization-classes"></a>Çoklu iş parçacığı kullanımı: MFC eşitleme sınıflarını kullanma
 
@@ -28,19 +28,19 @@ Tipik bir çok iş parçacıklı uygulamanın, iş parçacıkları arasında pay
 
 Örnek olarak, bağlı firmaların listesini tutan bir uygulama alın. Bu uygulama, ayrı Windows 'da en fazla üç hesap incelenmesine izin verir, ancak yalnızca bir tane belirli bir zamanda güncelleştirilebilen olabilir. Bir hesap güncelleştirildiği zaman, güncelleştirilmiş veriler ağ üzerinden bir veri arşivine gönderilir.
 
-Bu örnek uygulama, üç tür eşitleme sınıfını kullanır. Tek seferde en fazla üç hesap incelendiğinden, üç görünüm nesnesine erişimi sınırlandırmak için [Csemafor](../mfc/reference/csemaphore-class.md) kullanır. Dördüncü bir hesabı görüntüleme denemesi gerçekleştiğinde, uygulama ilk üç Windows 'un kapanmasından veya başarısız olana kadar bekler. Bir hesap güncelleştirildiği zaman, uygulama, aynı anda yalnızca bir hesabın güncelleştirildiğinden emin olmak için [Ccriticalhandle bölümünü](../mfc/reference/ccriticalsection-class.md) kullanır. Güncelleştirme başarılı olduktan sonra, etkinlik için [](../mfc/reference/cevent-class.md)bekleyen bir iş parçacığını serbest bırakır. Bu iş parçacığı veri arşivine yeni verileri gönderir.
+Bu örnek uygulama, üç tür eşitleme sınıfını kullanır. Tek seferde en fazla üç hesap incelendiğinden, üç görünüm nesnesine erişimi sınırlandırmak için [Csemafor](../mfc/reference/csemaphore-class.md) kullanır. Dördüncü bir hesabı görüntüleme denemesi gerçekleştiğinde, uygulama ilk üç Windows 'un kapanmasından veya başarısız olana kadar bekler. Bir hesap güncelleştirildiği zaman, uygulama, aynı anda yalnızca bir hesabın güncelleştirildiğinden emin olmak için [Ccriticalhandle bölümünü](../mfc/reference/ccriticalsection-class.md) kullanır. Güncelleştirme başarılı olduktan [sonra, etkinlik](../mfc/reference/cevent-class.md)için bekleyen bir iş parçacığını serbest bırakır. Bu iş parçacığı veri arşivine yeni verileri gönderir.
 
-##  <a name="_mfc_designing_a_thread.2d.safe_class"></a>Iş parçacığı güvenli sınıfı tasarlama
+## <a name="_mfc_designing_a_thread.2d.safe_class"></a>Iş parçacığı güvenli sınıfı tasarlama
 
-Bir sınıfı tamamen iş parçacığı açısından güvenli hale getirmek için, önce uygun eşitleme sınıfını paylaşılan sınıflara bir veri üyesi olarak ekleyin. Önceki hesap yönetimi örneğinde, bir `CSemaphore` veri üyesi görünüm sınıfına eklenerek `CCriticalSection` , bağlantılı liste sınıfına bir veri üyesi eklenir ve veri depolama sınıfına bir `CEvent` veri üyesi eklenecektir.
+Bir sınıfı tamamen iş parçacığı açısından güvenli hale getirmek için, önce uygun eşitleme sınıfını paylaşılan sınıflara bir veri üyesi olarak ekleyin. Önceki hesap yönetimi örneğinde, görünüm sınıfına bir `CSemaphore` veri üyesi eklenecağından, bağlantılı liste sınıfına bir `CCriticalSection` veri üyesi eklenir ve veri depolama sınıfına bir `CEvent` veri üyesi eklenecektir.
 
-Sonra, sınıftaki verileri değiştiren veya denetlenen kaynağa erişen tüm üye işlevlerine eşitleme çağrıları ekleyin. Her işlevde, bir [CSingleLock](../mfc/reference/csinglelock-class.md) veya [CMultiLock](../mfc/reference/cmultilock-class.md) nesnesi oluşturmalı ve `Lock` bu nesnenin işlevini çağırmanız gerekir. Kilit nesnesi kapsam dışına geçtiğinde ve yok edildiğinde, nesnenin yıkıcısı sizin için çağırır `Unlock` , kaynağı serbest bırakır. Kuşkusuz, isterseniz doğrudan çağırabilirsiniz `Unlock` .
+Sonra, sınıftaki verileri değiştiren veya denetlenen kaynağa erişen tüm üye işlevlerine eşitleme çağrıları ekleyin. Her işlevde, bir [CSingleLock](../mfc/reference/csinglelock-class.md) veya [CMultiLock](../mfc/reference/cmultilock-class.md) nesnesi oluşturmalı ve bu nesnenin `Lock` işlevini çağırmanız gerekir. Kilit nesnesi kapsam dışına geçtiğinde ve yok edildiğinde, nesnenin yıkıcısı sizin için `Unlock` çağırır, kaynağı serbest bırakır. Kuşkusuz, isterseniz `Unlock` doğrudan çağırabilirsiniz.
 
 İş parçacığı açısından güvenli sınıfınızı bu şekilde tasarlamak, iş parçacıklı bir uygulamada iş parçacığı güvenli olmayan bir sınıf olarak kolayca kullanılabilir, ancak daha yüksek bir güvenlik düzeyi sağlar. Eşitleme nesnesi ve eşitleme erişimi nesnesinin, kaynağın sınıfına kapsüllenmesi, eşitleme kodunu korumanın dezavantajı olmadan tamamen iş parçacığı açısından güvenli programlama avantajlarından yararlanır.
 
-Aşağıdaki kod örneği, paylaşılan kaynak sınıfında ve bir `m_CritSection` `CSingleLock` nesnesinde belirtilen bir veri üyesini (türü `CCriticalSection`) kullanarak bu yöntemi gösterir. Paylaşılan kaynağın (türeten `CWinThread`türetilmiş) eşitlenmesi, `m_CritSection` nesnesinin adresi kullanılarak bir `CSingleLock` nesne oluşturularak denenir. Kaynağı kilitlemek için bir girişimde bulunuldu ve elde edildiğinde, paylaşılan nesne üzerinde iş yapılır. Çalışma bittiğinde, kaynak, öğesine `Unlock`yapılan çağrısıyla birlikte açılır.
+Aşağıdaki kod örneği, paylaşılan kaynak sınıfında ve bir `CSingleLock` nesnesinde belirtilen bir veri üyesi, `m_CritSection` (`CCriticalSection`türü) kullanılarak bu yöntemi gösterir. Paylaşılan kaynağın eşitlenmesi (`CWinThread`türetilir), `m_CritSection` nesnesinin adresini kullanarak bir `CSingleLock` nesnesi oluşturularak denenir. Kaynağı kilitlemek için bir girişimde bulunuldu ve elde edildiğinde, paylaşılan nesne üzerinde iş yapılır. İş bittiğinde, kaynağın kilidi bir `Unlock`çağrısıyla açılır.
 
-```
+```cpp
 CSingleLock singleLock(&m_CritSection);
 singleLock.Lock();
 // resource locked
@@ -54,7 +54,7 @@ singleLock.Unlock();
 
 Bu yaklaşımın dezavantajları, sınıfın, eşitleme nesnelerinin eklenmeksizin aynı sınıftan biraz daha yavaş olabilmesidir. Ayrıca, birden fazla iş parçacığının nesneyi silebileceğinden, birleştirilmiş yaklaşımın her zaman çalışmama olasılığı vardır. Bu durumda, ayrı eşitleme nesnelerinin bakımını yapmak daha iyidir.
 
-Farklı durumlarda hangi eşitleme sınıfının kullanılacağını belirleme hakkında daha fazla bilgi için bkz [. çoklu iş parçacığı: Eşitleme sınıfları](multithreading-when-to-use-the-synchronization-classes.md)ne zaman kullanılır? Eşitleme hakkında daha fazla bilgi için Windows SDK [eşitleme](/windows/win32/Sync/synchronization) bölümüne bakın. MFC 'de çoklu iş parçacıklı destek hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı C++ ve MFC](multithreading-with-cpp-and-mfc.md).
+Farklı durumlarda kullanılacak eşitleme sınıfını belirleme hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı kullanımı: eşitleme sınıfları ne zaman kullanılır](multithreading-when-to-use-the-synchronization-classes.md)?. Eşitleme hakkında daha fazla bilgi için Windows SDK [eşitleme](/windows/win32/Sync/synchronization) bölümüne bakın. MFC 'de çoklu iş parçacıklı destek hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı C++ ve MFC](multithreading-with-cpp-and-mfc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

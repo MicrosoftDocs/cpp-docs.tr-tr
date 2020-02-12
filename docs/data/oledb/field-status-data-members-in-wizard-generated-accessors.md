@@ -5,26 +5,26 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: a6623cb02f14650d92e4adabed749b0b37725d45
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 41be62627d79c7207816818f09956a60e8b3facc
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707555"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127653"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 
 ::: moniker range="vs-2019"
 
-ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
+ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** bir tüketici oluşturmak için sütun eşlemesinde belirttiğiniz her bir alan için kullanıcı kayıt sınıftaki veri üyesi sihirbaz oluşturur. Her veri üyesi türünde `DWORD` ve kendi ilgili alana karşılık gelen bir durum değeri içerir.
+Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı** 'nı kullandığınızda, sihirbaz, sütun haritanızda belirttiğiniz her alan için Kullanıcı kayıt sınıfında bir veri üyesi oluşturur. Her veri üyesi `DWORD` türüdür ve ilgili alanına karşılık gelen bir durum değeri içerir.
 
-Örneğin, bir veri üyesi için *m_OwnerID*, alan durumu için bir ek veri üyesi sihirbaz oluşturur (*dwOwnerIDStatus*) ve başka bir alan uzunluğu için (*dwOwnerIDLength*). Ayrıca, bir sütun eşlemesi COLUMN_ENTRY_LENGTH_STATUS girişi oluşturur.
+Örneğin, bir veri üyesi *m_OwnerID*için, sihirbaz alan durumu (*dwOwnerIDStatus*) için ek bir veri üyesi ve alan uzunluğu (*dwOwnerIDLength*) için başka bir tane oluşturur. Ayrıca, COLUMN_ENTRY_LENGTH_STATUS girdileri olan bir sütun haritası da oluşturur.
 
 Bu, aşağıdaki kodda gösterilmiştir:
 
@@ -44,39 +44,39 @@ public:
    DBLENGTH m_dwAuthorLength;
    DBLENGTH m_dwYearBornLength;
 
-    DEFINE_COMMAND_EX(CAuthorsAccessor, L" \
-    SELECT \
-        AuID, \
-        Author, \
-        YearBorn \
-        FROM dbo.Authors")
+   DEFINE_COMMAND_EX(CAuthorsAccessor, L" \
+   SELECT \
+      AuID, \
+      Author, \
+      YearBorn \
+      FROM dbo.Authors")
 
-    BEGIN_COLUMN_MAP(CAuthorsAccessor)
-       COLUMN_ENTRY_LENGTH_STATUS(1, m_AuID, dwAuIDLength, dwAuIDStatus)
-       COLUMN_ENTRY_LENGTH_STATUS(2, m_Author, dwAuthorLength, dwAuthorStatus)
-       COLUMN_ENTRY_LENGTH_STATUS(3, m_YearBorn, dwYearBornLength, dwYearBornStatus)
-    END_COLUMN_MAP()
+   BEGIN_COLUMN_MAP(CAuthorsAccessor)
+      COLUMN_ENTRY_LENGTH_STATUS(1, m_AuID, dwAuIDLength, dwAuIDStatus)
+      COLUMN_ENTRY_LENGTH_STATUS(2, m_Author, dwAuthorLength, dwAuthorStatus)
+      COLUMN_ENTRY_LENGTH_STATUS(3, m_YearBorn, dwYearBornLength, dwYearBornStatus)
+   END_COLUMN_MAP()
 ...
 ```
 
 > [!NOTE]
-> Kullanıcı kayıt sınıfı değiştirin ya da kendi tüketici yazma, verileri değişkenleri durum ve uzunluğu değişkenlerinden önce gelmelidir.
+> Kullanıcı kayıt sınıfını değiştirir veya kendi tüketicinizi yazarsanız, veri değişkenlerinin durum ve uzunluk değişkenlerinden önce gelmesi gerekir.
 
-Hata ayıklama amacıyla durum değerleri kullanabilirsiniz. Kod tarafından oluşturulan, **ATL OLE DB Tüketicisi Sihirbazı** derleme hatası veriyorsa DB_S_ERRORSOCCURRED veya DB_E_ERRORSOCCURRED gibi alan durumu veri üyeleri, geçerli değerlere önce görünmelidir. Sıfır olmayan değerler sahip olanlar sorunlu sütunlara karşılık gelir.
+Hata ayıklama amacıyla durum değerlerini kullanabilirsiniz. **ATL OLE DB Tüketici Sihirbazı** tarafından oluşturulan kod DB_S_ERRORSOCCURRED veya db_e_errorsoccurred gibi derleme hataları oluşturursa, önce alan durumu veri üyelerinin geçerli değerlerine bakmanız gerekir. Sıfır olmayan değerlere sahip olanlar, sorunlu sütunlara karşılık gelir.
 
-Durum değerleri, belirli bir alan için bir NULL değer ayarlamak için de kullanabilirsiniz. Bunun yapılması, bir alan değeri sıfır yerine NULL olarak ayırmak istediğiniz durumlarda yardımcı olur. Bu NULL geçerli bir değer veya özel bir değeri olup olmadığına karar vermenize ve uygulamanızı bunu nasıl işleyeceğini karar size bağlıdır. OLE DB DBSTATUS_S_ISNULL genel bir NULL değer belirtme doğru şekilde tanımlar. Tüketici verileri okur ve değer null ise, Durum alanını DBSTATUS_S_ISNULL ayarlanır. Bir NULL değer ayarlamak tüketici isterse, tüketici sağlayıcı çağırmadan önce DBSTATUS_S_ISNULL durum değeri ayarlar.
+Ayrıca, belirli bir alan için NULL değer ayarlamak üzere durum değerlerini de kullanabilirsiniz. Bunun yapılması, alan değerini sıfır yerine NULL olarak ayırmak istediğiniz durumlarda size yardımcı olur. NULL değerinin geçerli bir değer mi yoksa özel bir değer mi olduğunu ve uygulamanızın onu nasıl işleyeceğine karar vermek sizin için. OLE DB, genel bir NULL değeri belirtmenin doğru yolu olarak DBSTATUS_S_ISNULL tanımlar. Tüketici verileri okur ve değer null ise, durum alanı DBSTATUS_S_ISNULL olarak ayarlanır. Tüketici NULL değer ayarlamak istiyorsa, sağlayıcı çağrılmadan önce, tüketici durum değerini DBSTATUS_S_ISNULL olarak ayarlar.
 
-Ardından, biçim ve DBSTATUSENUM araması açın. Ardından, sıfır olmayan durum DBSTATUSENUM numaralandırma değerlerinden karşı sayısal değerini eşleşebilir. Sabit listesi adı bakın, neyin yanlış olduğunu söylemek için yeterli değilse **durumu** konudaki **bağlama veri değerleri** bölümünü [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). Bu konu, veri alma veya ayarlarken kullanılan durum değerleri tabloları içerir. Uzunluk değerleri hakkında daha fazla bilgi için bkz: **uzunluğu** aynı bölüme konu.
+Sonra, OLEDB. h ' yi açın ve DBSTATUSENUM araması yapın. Bundan sonra, sıfır dışında durumunun sayısal değerini DBSTATUSENUM numaralandırma değerleriyle eşleştirebilirsiniz. Numaralandırma adı neyin yanlış olduğunu söylemek için yeterli değilse, [OLE DB Programcı kılavuzunun](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) **veri değerleri bağlama** bölümünde **durum** konusuna bakın. Bu konu, verileri alırken veya ayarlarken kullanılan durum değerlerinin tablolarını içerir. Uzunluk değerleri hakkında daha fazla bilgi için aynı bölümdeki **uzunluk** konusuna bakın.
 
-## <a name="retrieving-the-length-or-status-of-a-column"></a>Uzunluk veya bir sütun durumunu alma
+## <a name="retrieving-the-length-or-status-of-a-column"></a>Bir sütunun uzunluğunu veya durumunu alma
 
-Bir değişken uzunluklu sütun uzunluğu ya da bir sütun (DBSTATUS_S_ISNULL için örneğin denetlemek için) durumunu alabilirsiniz:
+Değişken uzunluklu bir sütunun uzunluğunu veya bir sütunun durumunu alabilirsiniz (örneğin, DBSTATUS_S_ISNULL denetlemek için):
 
-- Uzunluğu almak için COLUMN_ENTRY_LENGTH makrosu kullanın.
+- Uzunluğu almak için COLUMN_ENTRY_LENGTH makrosunu kullanın.
 
-- Durumu almak için COLUMN_ENTRY_STATUS makrosu kullanın.
+- Durumu almak için COLUMN_ENTRY_STATUS makrosunu kullanın.
 
-- Her ikisini de almak için COLUMN_ENTRY_LENGTH_STATUS, gösterildiği gibi kullanın:
+- Her ikisini de almak için, gösterildiği gibi COLUMN_ENTRY_LENGTH_STATUS kullanın:
 
     ```cpp
     class CProducts
@@ -94,7 +94,7 @@ Bir değişken uzunluklu sütun uzunluğu ya da bir sütun (DBSTATUS_S_ISNULL i�
     };
     ```
 
-- Ardından, uzunluğu ve/veya durum gösterildiği gibi erişebilirsiniz:
+- Ardından, belirtilen uzunluğa ve/veya duruma şu şekilde erişin:
 
     ```cpp
     CTable<CAccessor<CProducts >> product;
@@ -110,7 +110,7 @@ Bir değişken uzunluklu sütun uzunluğu ya da bir sütun (DBSTATUS_S_ISNULL i�
     }
     ```
 
-Kullanırken `CDynamicAccessor`, uzunluğu ve durum sizin için otomatik olarak bağlanır. Uzunluğu ve durum değerleri almak için kullanın `GetLength` ve `GetStatus` üye işlevleri.
+`CDynamicAccessor`kullandığınızda, uzunluk ve durum sizin için otomatik olarak bağlanır. Uzunluk ve durum değerlerini almak için `GetLength` ve `GetStatus` üye işlevlerini kullanın.
 
 ::: moniker-end
 

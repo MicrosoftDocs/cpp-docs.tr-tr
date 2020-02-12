@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-ms.openlocfilehash: 7f87ead486d635c933ad356f9868c22344601eda
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 4e913af40b2218da5699da2659ec2e9189e32994
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75298629"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143198"
 ---
 # <a name="concurrent_queue-class"></a>concurrent_queue Sınıfı
 
@@ -29,14 +29,14 @@ ms.locfileid: "75298629"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<typename T, class _Ax>
 class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Kuyrukta depolanacak öğelerin veri türü.
 
 *_Ax*<br/>
@@ -46,7 +46,7 @@ Bu eşzamanlı sıra için bellek ayırmayı ve ayırmayı kaldırma hakkındaki
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |`allocator_type`|Eşzamanlı sıranın ayırıcı sınıfını temsil eden bir tür.|
 |`const_iterator`|Eşzamanlı bir kuyruktaki öğeler üzerinde iş parçacığı güvenli olmayan `const` yineleyicisini temsil eden bir tür.|
@@ -57,24 +57,24 @@ Bu eşzamanlı sıra için bellek ayırmayı ve ayırmayı kaldırma hakkındaki
 |`size_type`|Eşzamanlı bir kuyruktaki öğelerin sayısını sayan bir tür.|
 |`value_type`|Eşzamanlı sırada depolanan veri türünü temsil eden bir tür.|
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[concurrent_queue](#ctor)|Aşırı yüklendi. Eşzamanlı bir kuyruk oluşturur.|
-|[~concurrent_queue Destructor](#dtor)|Eşzamanlı kuyruğu yok eder.|
+|[concurrent_queue](#ctor)|Fazla Yüklendi. Eşzamanlı bir kuyruk oluşturur.|
+|[~ concurrent_queue yok edici](#dtor)|Eşzamanlı kuyruğu yok eder.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[lediğiniz](#clear)|Şu anda sıraya alınmış öğelerin yok edilirken, eşzamanlı kuyruğu temizler. Bu yöntem eşzamanlılık açısından güvenli değildir.|
-|[empty](#empty)|Bu yöntemin çağrıldığı anda eşzamanlı sıranın boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[olmamalıdır](#empty)|Bu yöntemin çağrıldığı anda eşzamanlı sıranın boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.|
 |[get_allocator](#get_allocator)|Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.|
-|[push](#push)|Aşırı yüklendi. Bir öğeyi, eşzamanlı sıranın kuyruklu sonuna kadar sıraya alın. Bu yöntem eşzamanlılık açısından güvenlidir.|
+|[push](#push)|Fazla Yüklendi. Bir öğeyi, eşzamanlı sıranın kuyruklu sonuna kadar sıraya alın. Bu yöntem eşzamanlılık açısından güvenlidir.|
 |[try_pop](#try_pop)|Varsa, bir öğeyi kuyruktan kaldırır. Bu yöntem eşzamanlılık açısından güvenlidir.|
-|[unsafe_begin](#unsafe_begin)|Aşırı yüklendi. `iterator` veya `const_iterator`, eş zamanlı kuyruğun başına olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
-|[unsafe_end](#unsafe_end)|Aşırı yüklendi. `iterator` veya `const_iterator` eş zamanlı sıranın sonuna kadar olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[unsafe_begin](#unsafe_begin)|Fazla Yüklendi. `iterator` veya `const_iterator`, eş zamanlı kuyruğun başına olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
+|[unsafe_end](#unsafe_end)|Fazla Yüklendi. `iterator` veya `const_iterator` eş zamanlı sıranın sonuna kadar olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 |[unsafe_size](#unsafe_size)|Kuyruktaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -91,19 +91,19 @@ Daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parall
 
 **Ad alanı:** eşzamanlılık
 
-##  <a name="clear"></a>lediğiniz
+## <a name="clear"></a>lediğiniz
 
 Şu anda sıraya alınmış öğelerin yok edilirken, eşzamanlı kuyruğu temizler. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 void clear();
 ```
 
-##  <a name="ctor"></a>concurrent_queue
+## <a name="ctor"></a>concurrent_queue
 
 Eşzamanlı bir kuyruk oluşturur.
 
-```
+```cpp
 explicit concurrent_queue(
     const allocator_type& _Al = allocator_type());
 
@@ -149,19 +149,19 @@ Tüm oluşturucular bir ayırıcı nesne `_Al` depolar ve sırayı başlatır.
 
 Dördüncü Oluşturucu yineleyici aralığı tarafından sağlanan değerleri belirtir [`_Begin`, `_End`).
 
-##  <a name="dtor"></a>~ concurrent_queue
+## <a name="dtor"></a>~ concurrent_queue
 
 Eşzamanlı kuyruğu yok eder.
 
-```
+```cpp
 ~concurrent_queue();
 ```
 
-##  <a name="empty"></a>olmamalıdır
+## <a name="empty"></a>olmamalıdır
 
 Bu yöntemin çağrıldığı anda eşzamanlı sıranın boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 bool empty() const;
 ```
 
@@ -173,11 +173,11 @@ baktığımız anda eşzamanlı sıra boşsa **doğru** , aksi takdirde **yanlı
 
 Bu yöntem, `push`, `try_pop`ve `empty`yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvende olsa da döndürülen değer, çağıran iş parçacığı tarafından incelenen zaman hatalı olabilir.
 
-##  <a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a>get_allocator
 
 Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 allocator_type get_allocator() const;
 ```
 
@@ -185,11 +185,11 @@ allocator_type get_allocator() const;
 
 Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcıın bir kopyası.
 
-##  <a name="push"></a>hareketle
+## <a name="push"></a>hareketle
 
 Bir öğeyi, eşzamanlı sıranın kuyruklu sonuna kadar sıraya alın. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 void push(const T& _Src);
 
 void push(T&& _Src);
@@ -204,11 +204,11 @@ Sıraya eklenecek öğe.
 
 `push`, `push`, `try_pop`ve `empty`yöntemlere yönelik çağrılara göre eşzamanlılık açısından güvenlidir.
 
-##  <a name="try_pop"></a>try_pop
+## <a name="try_pop"></a>try_pop
 
 Varsa, bir öğeyi kuyruktan kaldırır. Bu yöntem eşzamanlılık açısından güvenlidir.
 
-```
+```cpp
 bool try_pop(T& _Dest);
 ```
 
@@ -227,11 +227,11 @@ Bir öğe başarıyla kuyruğa alınmışsa, parametre `_Dest` sıraya alınmı�
 
 `try_pop`, `push`, `try_pop`ve `empty`yöntemlere yönelik çağrılara göre eşzamanlılık açısından güvenlidir.
 
-##  <a name="unsafe_begin"></a>unsafe_begin
+## <a name="unsafe_begin"></a>unsafe_begin
 
 `iterator` veya `const_iterator`, eş zamanlı kuyruğun başına olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 iterator unsafe_begin();
 
 const_iterator unsafe_begin() const;
@@ -245,11 +245,11 @@ const_iterator unsafe_begin() const;
 
 `concurrent_queue` sınıfı için yineleyiciler öncelikle hata ayıklama için tasarlanmıştır, yavaş olur ve yineleme diğer kuyruk işlemlerine göre eşzamanlılık açısından güvenli değildir.
 
-##  <a name="unsafe_end"></a>unsafe_end
+## <a name="unsafe_end"></a>unsafe_end
 
 `iterator` veya `const_iterator` eş zamanlı sıranın sonuna kadar olan bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 iterator unsafe_end();
 
 const_iterator unsafe_end() const;
@@ -263,11 +263,11 @@ Eşzamanlı sıranın sonuna `iterator` veya `const_iterator` türünde bir yine
 
 `concurrent_queue` sınıfı için yineleyiciler öncelikle hata ayıklama için tasarlanmıştır, yavaş olur ve yineleme diğer kuyruk işlemlerine göre eşzamanlılık açısından güvenli değildir.
 
-##  <a name="unsafe_size"></a>unsafe_size
+## <a name="unsafe_size"></a>unsafe_size
 
 Kuyruktaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
-```
+```cpp
 size_type unsafe_size() const;
 ```
 

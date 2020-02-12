@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-ms.openlocfilehash: a977957fcb28a7f4c6c849c954026e2bda4e728c
-ms.sourcegitcommit: a61d17cffdd50f1c3c6e082a01bbcbc85b6cc5a7
+ms.openlocfilehash: ef7ded0bf925d3430b70064c4979b75e08f9cf45
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975152"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127705"
 ---
-# <a name="uninitializedobject-class"></a>uninitialized_object Sınıfı
+# <a name="uninitialized_object-class"></a>uninitialized_object Sınıfı
 
 Başlatılmamış bir nesne kullanıldığında oluşturulan özel durum.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class uninitialized_object : public runtime_exception;
 ```
 
@@ -31,7 +31,7 @@ class uninitialized_object : public runtime_exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[uninitialized_object Oluşturucusu](#uninitialized_object)|Yeni bir örneğini başlatır `uninitialized_object` sınıfı.|
+|[uninitialized_object Oluşturucusu](#uninitialized_object)|`uninitialized_object` sınıfının yeni bir örneğini başlatır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -43,17 +43,17 @@ class uninitialized_object : public runtime_exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amprt.h
+**Üstbilgi:** amprt. h
 
-**Namespace:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
-## <a name="uninitialized_object"></a> uninitialized_object
+## <a name="uninitialized_object"></a>uninitialized_object
 
-Yeni bir örneğini oluşturur `uninitialized_object` özel durum.
+`uninitialized_object` özel durumunun yeni bir örneğini oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 explicit uninitialized_object(
     const char * _Message ) throw();
 
@@ -62,12 +62,12 @@ uninitialized_object() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklaması.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`uninitialized_object` Özel durum nesnesi.
+`uninitialized_object` özel durum nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

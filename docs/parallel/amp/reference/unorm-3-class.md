@@ -72,26 +72,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unorm_3::get_yz
 - amp_short_vectors/Concurrency::graphics::unorm_3::rbg
 ms.assetid: ea4e7a17-5256-464c-af28-8b01962564c0
-ms.openlocfilehash: befbf350bbd591d168f19e87c81370220d29ef9f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: efca9b51f44a9eb64e6e9d89cc156ab0b2df5ae5
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405527"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126194"
 ---
-# <a name="unorm3-class"></a>unorm_3 Sınıfı
+# <a name="unorm_3-class"></a>unorm_3 Sınıfı
 
-Üç işaretsiz normal sayıdan oluşan bir kısa vektörü temsil eder.
+Üç işaretsiz normal sayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class unorm_3;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -101,14 +101,14 @@ class unorm_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unorm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[unorm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |unorm_3::get_x||
-|unorm_3::get_x||
+|unorm_3:: get_xy||
 |unorm_3::get_xyz||
 |unorm_3::get_xz||
 |unorm_3::get_xzy||
@@ -122,18 +122,18 @@ class unorm_3;
 |unorm_3::get_zxy||
 |unorm_3::get_zy||
 |unorm_3::get_zyx||
-|Unorm_3::ref_b||
-|Unorm_3::ref_g||
-|Unorm_3::ref_r||
-|Unorm_3::ref_x||
-|Unorm_3::ref_y||
+|Unorm_3:: ref_b||
+|Unorm_3:: ref_g||
+|Unorm_3:: ref_r||
+|Unorm_3:: ref_x||
+|Unorm_3:: ref_y||
 |Unorm_3::ref_z||
-|unorm_3::set_x||
-|unorm_3::set_xy||
+|unorm_3:: set_x||
+|unorm_3:: set_xy||
 |unorm_3::set_xyz||
 |unorm_3::set_xz||
 |unorm_3::set_xzy||
-|unorm_3::set_y||
+|unorm_3:: set_y||
 |unorm_3::set_yx||
 |unorm_3::set_yxz||
 |unorm_3::set_yz||
@@ -148,50 +148,50 @@ class unorm_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm_3::operator--||
-|unorm_3::operator * =||
-|unorm_3::operator / =||
-|unorm_3::operator ++||
-|unorm_3::operator +=||
+|unorm_3:: operator--||
+|unorm_3:: operator * =||
+|unorm_3:: operator/=||
+|unorm_3:: operator + +||
+|unorm_3:: operator + =||
 |unorm_3::operator=||
-|unorm_3::operator-=||
+|unorm_3:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#unorm_3__size)||
+|[Boyut sabiti](#unorm_3__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm_3::b||
-|unorm_3::BG||
-|unorm_3::BGR||
-|unorm_3::br||
-|unorm_3::brg||
-|unorm_3::g||
-|unorm_3::GB||
-|unorm_3::GBR||
-|unorm_3::Gr||
-|unorm_3::Grb||
-|unorm_3::r||
-|unorm_3::RB||
-|unorm_3::rbg||
+|unorm_3:: b||
+|unorm_3:: bg||
+|unorm_3:: bgr||
+|unorm_3:: br||
+|unorm_3:: brg||
+|unorm_3:: g||
+|unorm_3:: GB||
+|unorm_3:: GbR||
+|unorm_3:: gr||
+|unorm_3:: GRB||
+|unorm_3:: r||
+|unorm_3:: RB||
+|unorm_3:: RBG||
 |unorm_3::rg||
-|unorm_3::rgb||
-|unorm_3::x||
-|unorm_3::xy||
-|unorm_3::xyz||
-|unorm_3::xz||
-|unorm_3::xzy||
-|unorm_3::y||
-|unorm_3::yx||
+|unorm_3:: RGB||
+|unorm_3:: x||
+|unorm_3:: XY||
+|unorm_3:: xyz||
+|unorm_3:: xz||
+|unorm_3:: xzy||
+|unorm_3:: y||
+|unorm_3:: yx||
 |unorm_3::yxz||
-|unorm_3::YZ||
-|unorm_3::yzx||
-|unorm_3::z||
+|unorm_3::,||
+|unorm_3:: yzx||
+|unorm_3:: z||
 |unorm_3::zx||
 |unorm_3::zxy||
 |unorm_3::zy||
@@ -203,15 +203,15 @@ class unorm_3;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> unorm_3
+## <a name="ctor"></a>unorm_3
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 unorm_3() restrict(amp,
     cpu);
 
@@ -263,23 +263,23 @@ explicit inline unorm_3(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="unorm_3__size"></a> Boyutu
+## <a name="unorm_3__size"></a>boyutla
 
-```
+```cpp
 static const int size = 3;
 ```
 

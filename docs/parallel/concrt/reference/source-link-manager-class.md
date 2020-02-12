@@ -17,64 +17,64 @@ f1_keywords:
 helpviewer_keywords:
 - source_link_manager class
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
-ms.openlocfilehash: d4979eaf9065183be646be72cfdd5a94500edf55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35c7cc72520cdb0675abf9c15574a49e33741d0b
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337589"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142691"
 ---
-# <a name="sourcelinkmanager-class"></a>source_link_manager Sınıfı
+# <a name="source_link_manager-class"></a>source_link_manager Sınıfı
 
-`source_link_manager` Nesnesi ileti bloğu ağ bağlantıları yönetir `ISource` engeller.
+`source_link_manager` nesnesi, `ISource` bloklara yönelik ileti bloğu ağ bağlantılarını yönetir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<class _LinkRegistry>
 class source_link_manager;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_LinkRegistry*<br/>
 Ağ bağlantısı kayıt defteri.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`const_pointer`|Bir işaretçi sağlayan bir tür bir `const` öğesinde bir `source_link_manager` nesne.|
-|`const_reference`|Bir başvuru sağlayan bir tür bir `const` öğesi içinde depolanan bir `source_link_manager` okumak ve const işlemleri gerçekleştirmek için nesne.|
-|`iterator`|Bir yineleyici sağlayan bir tür okuyabilen veya değiştirebilen herhangi bir öğenin `source_link_manager` nesne.|
-|`type`|Tarafından yönetilen bağlantı kayıt defteri türü `source_link_manager` nesne.|
+|`const_pointer`|Bir `source_link_manager` nesnesindeki `const` öğeye işaretçi sağlayan bir tür.|
+|`const_reference`|Const işlemlerini okumak ve gerçekleştirmek için bir `source_link_manager` nesnesinde depolanan `const` bir öğeye başvuru sağlayan bir tür.|
+|`iterator`|`source_link_manager` nesnesindeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir yineleyici sağlayan bir tür.|
+|`type`|`source_link_manager` nesnesi tarafından yönetilmekte olan bağlantı kayıt defterinin türü.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[source_link_manager](#ctor)|Oluşturur bir `source_link_manager` nesne.|
-|[~ source_link_manager yok Edicisi](#dtor)|Yok eder `source_link_manager` nesne.|
+|[source_link_manager](#ctor)|`source_link_manager` nesnesi oluşturur.|
+|[~ source_link_manager yok edici](#dtor)|`source_link_manager` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[add](#add)|Kaynak bağlantısını ekler `source_link_manager` nesne.|
-|[başlayın](#begin)|İçindeki ilk öğeye bir yineleyici döndüren `source_link_manager` nesne.|
-|[içerir](#contains)|Aramalar `network_link_registry` bu `source_link_manager` belirtilen bloğu için nesne.|
-|[Sayısı](#count)|Bağlantılı bloklarında sayar `source_link_manager` nesne.|
-|[Başvuru](#reference)|Bir başvuru alır `source_link_manager` nesne.|
-|[register_target_block](#register_target_block)|Bu tutan hedef blok kaydeder `source_link_manager` nesne.|
-|[Yayın](#release)|Başvuru üzerinde sürümleri `source_link_manager` nesne.|
-|[remove](#remove)|Bir bağlantıdan kaldırır `source_link_manager` nesne.|
-|[set_bound](#set_bound)|İçin eklenen kaynak bağlantı sayısının üst sınırını ayarlar `source_link_manager` nesne.|
+|[add](#add)|`source_link_manager` nesnesine bir kaynak bağlantısı ekler.|
+|[başladı](#begin)|`source_link_manager` nesnesindeki ilk öğeye bir yineleyici döndürür.|
+|[vardır](#contains)|Belirtilen bir blok için bu `source_link_manager` nesnesi içindeki `network_link_registry` arar.|
+|[count](#count)|`source_link_manager` nesnesindeki bağlantılı blokların sayısını sayar.|
+|[başvurunun](#reference)|`source_link_manager` nesnesinde bir başvuru alır.|
+|[register_target_block](#register_target_block)|Bu `source_link_manager` nesnesini tutan hedef bloğu kaydeder.|
+|[Yayın](#release)|`source_link_manager` nesnesindeki başvuruyu yayınlar.|
+|[remove](#remove)|`source_link_manager` nesnesinden bir bağlantıyı kaldırır.|
+|[set_bound](#set_bound)|Bu `source_link_manager` nesnesine eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şu anda kaynak başvuru sayılan taşlarıdır. Bu bir sarmalayıcı olan bir `network_link_registry` nesnesini eş zamanlı erişim bağlantılara ve başvuru bağlantıları geri çağırmalarla olanağı sağlar. İleti blokları ( `target_block`s veya `propagator_block`s) Bu sınıf için bunların kaynak bağlantılarını kullanmalıdır.
+Şu anda, kaynak bloklarında başvuru sayılır. Bu, bağlantılara eşzamanlı erişime izin veren `network_link_registry` nesnesi üzerinde bir sarmalayıcıdır ve geri çağırmalar aracılığıyla bağlantılara başvuru yapabilme olanağı sağlar. İleti blokları (`target_block`s veya `propagator_block`s), kaynak bağlantıları için bu sınıfı kullanmalıdır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -82,140 +82,140 @@ Ağ bağlantısı kayıt defteri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="add"></a> Ekleme
+## <a name="add"></a>ekleyemiyorum
 
-Kaynak bağlantısını ekler `source_link_manager` nesne.
+`source_link_manager` nesnesine bir kaynak bağlantısı ekler.
 
-```
+```cpp
 void add(_EType _Link);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Bağla*<br/>
-Eklenecek bir blok için işaretçi.
+*_Link*<br/>
+Eklenecek bloğa yönelik bir işaretçi.
 
-##  <a name="begin"></a> başlayın
+## <a name="begin"></a>başladı
 
-İçindeki ilk öğeye bir yineleyici döndüren `source_link_manager` nesne.
+`source_link_manager` nesnesindeki ilk öğeye bir yineleyici döndürür.
 
-```
+```cpp
 iterator begin();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçindeki ilk öğeyi ele alan bir yineleyici `source_link_manager` nesne.
+`source_link_manager` nesnesindeki ilk öğeyi adresleyen bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bitiş durumuna yineleyici tarafından belirtilen bir `NULL` bağlantı.
+Yineleyicinin bitiş durumu bir `NULL` bağlantısıyla belirtilir.
 
-##  <a name="contains"></a> içerir
+## <a name="contains"></a>vardır
 
-Aramalar `network_link_registry` bu `source_link_manager` belirtilen bloğu için nesne.
+Belirtilen bir blok için bu `source_link_manager` nesnesi içindeki `network_link_registry` arar.
 
-```
+```cpp
 bool contains(_EType _Link);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Bağla*<br/>
-İçinde arama yapılacak olan bloğu için bir işaretçi `source_link_manager` nesne.
+*_Link*<br/>
+`source_link_manager` nesnesinde aranacak bir blok işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** belirtilen bloğu bulunduysa **false** Aksi takdirde.
+Belirtilen blok bulunursa **true** , aksi durumda **false** .
 
-##  <a name="count"></a> Sayısı
+## <a name="count"></a>biriktirme
 
-Bağlantılı bloklarında sayar `source_link_manager` nesne.
+`source_link_manager` nesnesindeki bağlantılı blokların sayısını sayar.
 
-```
+```cpp
 size_t count();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlantılı blok sayısını `source_link_manager` nesne.
+`source_link_manager` nesnesindeki bağlantılı blokların sayısı.
 
-##  <a name="reference"></a> Başvuru
+## <a name="reference"></a>başvurunun
 
-Bir başvuru alır `source_link_manager` nesne.
+`source_link_manager` nesnesinde bir başvuru alır.
 
-```
+```cpp
 void reference();
 ```
 
-##  <a name="register_target_block"></a> register_target_block
+## <a name="register_target_block"></a>register_target_block
 
-Bu tutan hedef blok kaydeder `source_link_manager` nesne.
+Bu `source_link_manager` nesnesini tutan hedef bloğu kaydeder.
 
-```
+```cpp
 void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu bulunduran hedef blok `source_link_manager` nesne.
+Bu `source_link_manager` nesnesini tutan hedef blok.
 
-##  <a name="release"></a> Yayın
+## <a name="release"></a>Yayın
 
-Başvuru üzerinde sürümleri `source_link_manager` nesne.
+`source_link_manager` nesnesindeki başvuruyu yayınlar.
 
-```
+```cpp
 void release();
 ```
 
-##  <a name="remove"></a> Kaldır
+## <a name="remove"></a>temizlenmesine
 
-Bir bağlantıdan kaldırır `source_link_manager` nesne.
+`source_link_manager` nesnesinden bir bağlantıyı kaldırır.
 
-```
+```cpp
 bool remove(_EType _Link);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Bağla*<br/>
-Bir blok, kaldırılacak işaretçisi bulunamadı.
+*_Link*<br/>
+Bulunursa, kaldırılacak bloğa yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** bağlantısı bulunan ve kaldırılmış **false** Aksi takdirde.
+bağlantı bulunursa ve kaldırılırsa **doğru** , aksi takdirde **yanlış** olur.
 
-##  <a name="set_bound"></a> set_bound
+## <a name="set_bound"></a>set_bound
 
-İçin eklenen kaynak bağlantı sayısının üst sınırını ayarlar `source_link_manager` nesne.
+Bu `source_link_manager` nesnesine eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar.
 
-```
+```cpp
 void set_bound(size_t _MaxLinks);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MaxLinks*<br/>
-Bağlantıların maksimum sayısı.
+En fazla bağlantı sayısı.
 
-##  <a name="ctor"></a> source_link_manager
+## <a name="ctor"></a>source_link_manager
 
-Oluşturur bir `source_link_manager` nesne.
+`source_link_manager` nesnesi oluşturur.
 
-```
+```cpp
 source_link_manager();
 ```
 
-##  <a name="dtor"></a> ~ source_link_manager
+## <a name="dtor"></a>~ source_link_manager
 
-Yok eder `source_link_manager` nesne.
+`source_link_manager` nesnesini yok eder.
 
-```
+```cpp
 ~source_link_manager();
 ```
 

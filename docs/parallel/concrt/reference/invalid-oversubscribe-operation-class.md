@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_oversubscribe_operation class
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
-ms.openlocfilehash: 200743d41c1c45f2a957dba0716dd7aa07e3de76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a879fc2da2f963cd4b5ea5fcd7e9506f86ce051
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405319"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140840"
 ---
-# <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation Sınıfı
+# <a name="invalid_oversubscribe_operation-class"></a>invalid_oversubscribe_operation Sınıfı
 
-Bu sınıf oluşan bir özel durumu anlatmaktadır `Context::Oversubscribe` yöntemi çağrıldığında `_BeginOversubscription` parametresini **false** çağrıda olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametre kümesi için **true**.
+Bu sınıf, `Context::Oversubscribe` yöntemi, `_BeginOversubscription` parametresi **true**olarak ayarlanmış `Context::Oversubscribe` yöntemine önceki bir çağrı olmadan, `_BeginOversubscription` parametresi **false** olarak çağrıldığında oluşturulan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class invalid_oversubscribe_operation : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class invalid_oversubscribe_operation : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_oversubscribe_operation` nesne.|
+|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. `invalid_oversubscribe_operation` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class invalid_oversubscribe_operation : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> invalid_oversubscribe_operation
+## <a name="ctor"></a>invalid_oversubscribe_operation
 
-Oluşturur bir `invalid_oversubscribe_operation` nesne.
+`invalid_oversubscribe_operation` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
 
 invalid_oversubscribe_operation() throw();
@@ -57,7 +57,7 @@ invalid_oversubscribe_operation() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

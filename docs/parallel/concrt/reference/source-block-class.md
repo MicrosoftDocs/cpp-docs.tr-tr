@@ -33,25 +33,25 @@ f1_keywords:
 helpviewer_keywords:
 - source_block class
 ms.assetid: fbdd4146-e8d0-42e8-b714-fe633f69ffbf
-ms.openlocfilehash: 5ddfd5e139171c7097a793f12ac82767b8773107
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3a0d69bc2e2904b1dcf37a7e9891d95bd869a610
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160097"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142714"
 ---
-# <a name="sourceblock-class"></a>source_block Sınıfı
+# <a name="source_block-class"></a>source_block Sınıfı
 
-`source_block` Sınıfı, yalnızca kaynak bloklar için Özet temel sınıf. Sınıfı, düzgün olarak sık karşılaşılan hata denetimleri temel bağlantı yönetimi işlevselliği sağlar.
+`source_block` sınıfı, yalnızca kaynak blokları için soyut bir temel sınıftır. Sınıfı, temel bağlantı yönetimi işlevlerinin yanı sıra ortak hata denetimleri sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<class _TargetLinkRegistry, class _MessageProcessorType = ordered_message_processor<typename _TargetLinkRegistry::type::type>>
 class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_TargetLinkRegistry*<br/>
 Hedef bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.
@@ -61,75 +61,75 @@ Hedef bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`target_iterator`|Bağlı hedefleri yürütmek için bir yineleyici.|
+|`target_iterator`|Bağlı hedeflere kılavuzluk eden Yineleyici.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[source_block](#ctor)|Oluşturur bir `source_block` nesne.|
-|[~ source_block yok Edicisi](#dtor)|Yok eder `source_block` nesne.|
+|[source_block](#ctor)|`source_block` nesnesi oluşturur.|
+|[~ source_block yok edici](#dtor)|`source_block` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `source_block` çağırana sahipliğini aktarma nesnesi.|
-|[acquire_ref](#acquire_ref)|Bu başvuru sayısını alması `source_block` silinmesini engellemek için nesne.|
-|[kullanma](#consume)|Daha önce bu tarafından sunulan iletiyi tüketir `source_block` nesne ve çağırana sahipliğini aktarma hedefi, başarılı bir şekilde ayrılmıştır.|
-|[link_target](#link_target)|Bir hedef bloğu için bağlantı `source_block` nesne.|
-|[Yayın](#release)|Önceki bir başarılı iletisi ayırma serbest bırakır.|
-|[release_ref](#release_ref)|Bir başvuru sayısı bu sürümleri `source_block` nesne.|
-|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `source_block` nesne.|
-|[unlink_target](#unlink_target)|Bu hedef bloğun olan bağlantısını kesen `source_block` nesne.|
-|[unlink_targets](#unlink_targets)|Bu, tüm hedef bloklara olan bağlantısını kesen `source_block` nesne. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|
+|[ettiğinizde](#accept)|Bu `source_block` nesnesi tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.|
+|[acquire_ref](#acquire_ref)|Silmeyi engellemek için bu `source_block` nesnesi üzerinde bir başvuru sayısı alır.|
+|[kullanan](#consume)|Bu `source_block` nesne tarafından daha önce sunulan ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.|
+|[link_target](#link_target)|Hedef bloğu bu `source_block` nesnesine bağlar.|
+|[Yayın](#release)|Önceki başarılı bir ileti ayırmasını serbest bırakır.|
+|[release_ref](#release_ref)|Bu `source_block` nesnesinde bir başvuru sayısı yayınlar.|
+|[ayırmaya](#reserve)|Bu `source_block` nesnesi tarafından daha önce sunulan bir iletiyi ayırır.|
+|[unlink_target](#unlink_target)|Hedef bloğunun bu `source_block` nesnesinden bağlantısını kaldırır.|
+|[unlink_targets](#unlink_targets)|Tüm hedef blokların bu `source_block` nesnesinden bağlantısını kaldırır. ( [ISource:: unlink_targets](isource-class.md#unlink_targets)geçersiz kılar)|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[accept_message](#accept_message)|Türetilen bir sınıfta geçersiz kılındığında, kaynağı tarafından sunulan bir iletiye kabul eder. İleti blokları doğrulamak için bu yöntemi geçersiz kılmalıdır `_MsgId` ve bir ileti döndürür.|
-|[async_send](#async_send)|Zaman uyumsuz olarak iletileri kuyruğa alır ve bu zaten yapılmadıysa bir yayma görevi başlar|
-|[consume_message](#consume_message)|Türetilen bir sınıfta geçersiz kılındığında, daha önce ayrılmış bir iletiyi tüketir.|
-|[enable_batched_processing](#enable_batched_processing)|Bu blok için işleme toplu olanak tanır.|
-|[initialize_source](#initialize_source)|Başlatır `message_propagator` bu `source_block`.|
-|[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `source_block` nesne.|
-|[process_input_messages](#process_input_messages)|İşlem giriş iletileri. Yalnızca source_block türetilen Yayıcı bloklar için kullanışlıdır|
-|[propagate_output_messages](#propagate_output_messages)|Hedeflere iletileri yayar.|
-|[propagate_to_any_targets](#propagate_to_any_targets)|Türetilen bir sınıfta geçersiz kılındığında, tüm bağlı hedeflerin belirli bir ileti yayar. İleti blokları için ana yayma yordamı budur.|
-|[release_message](#release_message)|Türetilen bir sınıfta geçersiz kılındığında, bir önceki ileti ayırma serbest bırakır.|
-|[remove_targets](#remove_targets)|Bu kaynak bloğu tüm hedef bağlantıları kaldırır. Bu yıkıcıdan çağrılmalıdır.|
-|[reserve_message](#reserve_message)|Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir iletiyi ayırdıktan `source_block` nesne.|
-|[resume_propagation](#resume_propagation)|Türetilen bir sınıfta geçersiz kılındığında, bir ayırma piyasaya sürüldükten sonra yayma devam ettirir.|
-|[sync_send](#sync_send)|Zaman uyumlu iletileri kuyruğa alır ve bu zaten yapılmadıysa bir yayma görevi başlar.|
-|[unlink_target_notification](#unlink_target_notification)|Bir hedef bu bağlantısız olduğunu bildiren bir geri çağırma `source_block` nesne.|
-|[wait_for_outstanding_async_sends](#wait_for_outstanding_async_sends)|Tamamlamak tüm zaman uyumsuz yayılmaları bekler. Bu Yayıcı özgü dönmesini bekleyin ileti blokları yıkıcılarda tüm zaman uyumsuz yayılmaları blok yok etme öncesinde tamamlanması zaman sahip olduğunuzdan emin olmak için kullanılır.|
+|[accept_message](#accept_message)|Türetilmiş bir sınıfta geçersiz kılınırsa, kaynak tarafından önerilen bir iletiyi kabul eder. İleti blokları, `_MsgId` doğrulamak ve bir ileti döndürmek için bu yöntemi geçersiz kılmalıdır.|
+|[async_send](#async_send)|Zaman uyumsuz olarak iletileri kuyruğa alır ve henüz yapmadıysanız bir yayma görevi başlatır|
+|[consume_message](#consume_message)|Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce ayrılmış bir ileti kullanır.|
+|[enable_batched_processing](#enable_batched_processing)|Bu blok için toplu işleme etkinleştirilir.|
+|[initialize_source](#initialize_source)|Bu `source_block`içinde `message_propagator` başlatır.|
+|[link_target_notification](#link_target_notification)|Yeni bir hedefin bu `source_block` nesnesine bağlandığını bildiren bir geri çağırma.|
+|[process_input_messages](#process_input_messages)|İşlem girişi iletileri. Bu yalnızca source_block türetilen yayıcı blokları için yararlıdır|
+|[propagate_output_messages](#propagate_output_messages)|İletileri hedeflere yayma.|
+|[propagate_to_any_targets](#propagate_to_any_targets)|Türetilmiş bir sınıfta geçersiz kılınırsa, belirtilen iletiyi bağlı hedeflerin herhangi birine veya tümüne yayar. Bu, ileti blokları için ana yayma yordamlarıdır.|
+|[release_message](#release_message)|Türetilmiş bir sınıfta geçersiz kılınırsa, önceki bir ileti ayırmasını yayınlar.|
+|[remove_targets](#remove_targets)|Bu kaynak bloğunun tüm hedef bağlantılarını kaldırır. Bu, yıkıcıdan çağrılmalıdır.|
+|[reserve_message](#reserve_message)|Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce bu `source_block` nesnesi tarafından sunulan bir iletiyi ayırır.|
+|[resume_propagation](#resume_propagation)|Türetilmiş bir sınıfta geçersiz kılınırsa, bir ayırma yayımlandıktan sonra yayılmaya devam eder.|
+|[sync_send](#sync_send)|Zaman uyumlu olarak iletileri kuyruğa alır ve henüz yapmadıysanız bir yayma görevi başlatır.|
+|[unlink_target_notification](#unlink_target_notification)|Bir hedefin bu `source_block` nesnesinden bağlantısının kesildiğinizi bildiren bir geri çağırma.|
+|[wait_for_outstanding_async_sends](#wait_for_outstanding_async_sends)|Tüm zaman uyumsuz yayılmaları tamamlanmasını bekler. Bu yayıcı belirli bir döndürme bekleme süresi, tüm zaman uyumsuz yayılmaları blok yok etmeden önce tamamlanmasını sağlamak için ileti bloklarının yıkıcıklarında kullanılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İleti blokları bağlantı yönetimi ve bu sınıfı tarafından sağlanan eşitleme yararlanmak için bu blok türetilmesi.
+İleti blokları, bu sınıf tarafından sağlanmış olan bağlantı yönetimi ve eşitlemeden faydalanmak için bu bloğundan türetilmelidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Isource](isource-class.md)
+[ISource](isource-class.md)
 
 `source_block`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="accept"></a> Kabul et
+## <a name="accept"></a>ettiğinizde
 
-Bu tarafından sunulan bir iletiyi kabul `source_block` çağırana sahipliğini aktarma nesnesi.
+Bu `source_block` nesnesi tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.
 
-```
+```cpp
 virtual message<_Target_type>* accept(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Target_type>* _PTarget);
@@ -138,72 +138,72 @@ virtual message<_Target_type>* accept(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Sunulan, `message` nesne.
+Sunulan `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `accept` yöntemi.
+`accept` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
+Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum, parametre `_PTarget` olduğu `NULL`.
+Parametre `_PTarget` `NULL`ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur.
 
-`accept` Yöntemi, bir hedef tarafından çağrıldığında, bir ileti bu edilmeksizin sunulacaktır ancak `ISource` blok. İleti işaretçi döndürülen yöntemlere geçirilen olandan farklı olabilir `propagate` yöntemi `ITarget` iletinin bir kopyasını oluşturmak bu kaynak karar verirse, engelleyin.
+Bu `ISource` bloğu tarafından bir ileti sunulduğunda `accept` yöntemi bir hedef tarafından çağırılır. Döndürülen ileti işaretçisi, bu kaynak iletinin bir kopyasını oluşturmak için karar verirse, `ITarget` bloğunun `propagate` metoduna geçirilen yöntemden farklı olabilir.
 
-##  <a name="accept_message"></a> accept_message
+## <a name="accept_message"></a>accept_message
 
-Türetilen bir sınıfta geçersiz kılındığında, kaynağı tarafından sunulan bir iletiye kabul eder. İleti blokları doğrulamak için bu yöntemi geçersiz kılmalıdır `_MsgId` ve bir ileti döndürür.
+Türetilmiş bir sınıfta geçersiz kılınırsa, kaynak tarafından önerilen bir iletiyi kabul eder. İleti blokları, `_MsgId` doğrulamak ve bir ileti döndürmek için bu yöntemi geçersiz kılmalıdır.
 
-```
+```cpp
 virtual message<_Target_type>* accept_message(runtime_object_identity _MsgId) = 0;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Çalışma zamanı nesne kimliğini `message` nesne.
+`message` nesnesinin çalışma zamanı nesnesi kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arayanın artık sahipliğini olan iletisi için bir işaretçi.
+Çağıranın artık sahipliği olan iletinin bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahipliğini devretmek için özgün ileti işaretçi döndürülmelidir. Sahipliği korumak için bir kopyasını ileti yükü yapılan ve döndürülen olması gerekir.
+Sahipliği aktarmak için özgün ileti işaretçisinin döndürülmesi gerekir. Sahipliği sürdürmek için ileti yükünün bir kopyasının yapılması ve döndürülmesi gerekir.
 
-##  <a name="acquire_ref"></a> acquire_ref
+## <a name="acquire_ref"></a>acquire_ref
 
-Bu başvuru sayısını alması `source_block` silinmesini engellemek için nesne.
+Silmeyi engellemek için bu `source_block` nesnesi üzerinde bir başvuru sayısı alır.
 
-```
+```cpp
 virtual void acquire_ref(_Inout_ ITarget<_Target_type> *);
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağıran bir `ITarget` sırasında bu kaynağa bağlı nesnesi `link_target` yöntemi.
+Bu yöntem, `link_target` yöntemi sırasında bu kaynağa bağlanmakta olan bir `ITarget` nesnesi tarafından çağırılır.
 
-##  <a name="async_send"></a> async_send
+## <a name="async_send"></a>async_send
 
-Zaman uyumsuz olarak iletileri kuyruğa alır ve bu zaten yapılmadıysa bir yayma görevi başlar
+Zaman uyumsuz olarak iletileri kuyruğa alır ve henüz yapmadıysanız bir yayma görevi başlatır
 
-```
+```cpp
 virtual void async_send(_Inout_opt_ message<_Target_type>* _Msg);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Msg*<br/>
-Bir işaretçi bir `message` zaman uyumsuz olarak göndermek için nesne.
+Zaman uyumsuz olarak gönderilen `message` nesnesine yönelik bir işaretçi.
 
-##  <a name="consume"></a> kullanma
+## <a name="consume"></a>kullanan
 
-Daha önce bu tarafından sunulan iletiyi tüketir `source_block` nesne ve çağırana sahipliğini aktarma hedefi, başarılı bir şekilde ayrılmıştır.
+Bu `source_block` nesne tarafından daha önce sunulan ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.
 
-```
+```cpp
 virtual message<_Target_type>* consume(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Target_type>* _PTarget);
@@ -212,57 +212,57 @@ virtual message<_Target_type>* consume(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Ayrılmış, `message` nesne.
+Ayrılmış `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `consume` yöntemi.
+`consume` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
+Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum, parametre `_PTarget` olduğu `NULL`.
+Parametre `_PTarget` `NULL`ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur.
 
-Çağırılıyorsa yöntem bir [bad_target](bad-target-class.md) özel durum, parametre `_PTarget` adlı hedef göstermiyor `reserve`.
+`_PTarget` parametresi `reserve`çağrılan hedefi temsil etmediği takdirde Yöntem [bad_target](bad-target-class.md) bir özel durum atar.
 
-`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen **true**.
+`consume` yöntemi `accept`benzerdir, ancak her zaman **true**döndüren `reserve` çağrısı gelmelidir.
 
-##  <a name="consume_message"></a> consume_message
+## <a name="consume_message"></a>consume_message
 
-Türetilen bir sınıfta geçersiz kılındığında, daha önce ayrılmış bir iletiyi tüketir.
+Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce ayrılmış bir ileti kullanır.
 
-```
+```cpp
 virtual message<_Target_type>* consume_message(runtime_object_identity _MsgId) = 0;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Kullanılan nesne.
+Tüketilmekte olan `message` nesnesinin `runtime_object_identity`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arayanın artık sahipliğini olan iletisi için bir işaretçi.
+Çağıranın artık sahipliği olan iletinin bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Benzer şekilde `accept`, ancak her zaman bir çağrı tarafından öncesinde `reserve`.
+`accept`benzerdir, ancak her zaman bir `reserve`çağrısıyla yapılır.
 
-##  <a name="enable_batched_processing"></a> enable_batched_processing
+## <a name="enable_batched_processing"></a>enable_batched_processing
 
-Bu blok için işleme toplu olanak tanır.
+Bu blok için toplu işleme etkinleştirilir.
 
-```
+```cpp
 void enable_batched_processing();
 ```
 
-##  <a name="initialize_source"></a> initialize_source
+## <a name="initialize_source"></a>initialize_source
 
-Başlatır `message_propagator` bu `source_block`.
+Bu `source_block`içinde `message_propagator` başlatır.
 
-```
+```cpp
 void initialize_source(
     _Inout_opt_ Scheduler* _PScheduler = NULL,
     _Inout_opt_ ScheduleGroup* _PScheduleGroup = NULL);
@@ -276,70 +276,70 @@ Görevleri zamanlamak için kullanılacak Zamanlayıcı.
 *_PScheduleGroup*<br/>
 Görevleri zamanlamak için kullanılacak zamanlama grubu.
 
-##  <a name="link_target"></a> link_target
+## <a name="link_target"></a>link_target
 
-Bir hedef bloğu için bağlantı `source_block` nesne.
+Hedef bloğu bu `source_block` nesnesine bağlar.
 
-```
+```cpp
 virtual void link_target(_Inout_ ITarget<_Target_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bir işaretçi bir `ITarget` bloğu için bağlantı `source_block` nesne.
+Bu `source_block` nesnesine bağlamak için `ITarget` bloğuna yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum, parametre `_PTarget` olduğu `NULL`.
+Parametre `_PTarget` `NULL`ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur.
 
-##  <a name="link_target_notification"></a> link_target_notification
+## <a name="link_target_notification"></a>link_target_notification
 
-Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `source_block` nesne.
+Yeni bir hedefin bu `source_block` nesnesine bağlandığını bildiren bir geri çağırma.
 
-```
+```cpp
 virtual void link_target_notification(_Inout_ ITarget<_Target_type> *);
 ```
 
-##  <a name="process_input_messages"></a> process_input_messages
+## <a name="process_input_messages"></a>process_input_messages
 
-İşlem giriş iletileri. Yalnızca source_block türetilen Yayıcı bloklar için kullanışlıdır
+İşlem girişi iletileri. Bu yalnızca source_block türetilen yayıcı blokları için yararlıdır
 
-```
+```cpp
 virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-İşlenecek iletisi için bir işaretçi.
+İşlenecek ileti için bir işaretçi.
 
-##  <a name="propagate_output_messages"></a> propagate_output_messages
+## <a name="propagate_output_messages"></a>propagate_output_messages
 
-Hedeflere iletileri yayar.
+İletileri hedeflere yayma.
 
-```
+```cpp
 virtual void propagate_output_messages();
 ```
 
-##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a>propagate_to_any_targets
 
-Türetilen bir sınıfta geçersiz kılındığında, tüm bağlı hedeflerin belirli bir ileti yayar. İleti blokları için ana yayma yordamı budur.
+Türetilmiş bir sınıfta geçersiz kılınırsa, belirtilen iletiyi bağlı hedeflerin herhangi birine veya tümüne yayar. Bu, ileti blokları için ana yayma yordamlarıdır.
 
-```
+```cpp
 virtual void propagate_to_any_targets(_Inout_opt_ message<_Target_type>* _PMessage);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-İletisini yayılması için bir işaretçi.
+Yayılacağı ileti için bir işaretçi.
 
-##  <a name="release"></a> Yayın
+## <a name="release"></a>Yayın
 
-Önceki bir başarılı iletisi ayırma serbest bırakır.
+Önceki başarılı bir ileti ayırmasını serbest bırakır.
 
-```
+```cpp
 virtual void release(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Target_type>* _PTarget);
@@ -348,60 +348,60 @@ virtual void release(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Ayrılmış, `message` nesne.
+Ayrılmış `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `release` yöntemi.
+`release` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum, parametre `_PTarget` olduğu `NULL`.
+Parametre `_PTarget` `NULL`ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur.
 
-Çağırılıyorsa yöntem bir [bad_target](bad-target-class.md) özel durum, parametre `_PTarget` adlı hedef göstermiyor `reserve`.
+`_PTarget` parametresi `reserve`çağrılan hedefi temsil etmediği takdirde Yöntem [bad_target](bad-target-class.md) bir özel durum atar.
 
-##  <a name="release_message"></a> release_message
+## <a name="release_message"></a>release_message
 
-Türetilen bir sınıfta geçersiz kılındığında, bir önceki ileti ayırma serbest bırakır.
+Türetilmiş bir sınıfta geçersiz kılınırsa, önceki bir ileti ayırmasını yayınlar.
 
-```
+```cpp
 virtual void release_message(runtime_object_identity _MsgId) = 0;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Yayımlanan nesne.
+Yayımlanmakta olan `message` nesnesinin `runtime_object_identity`.
 
-##  <a name="release_ref"></a> release_ref
+## <a name="release_ref"></a>release_ref
 
-Bir başvuru sayısı bu sürümleri `source_block` nesne.
+Bu `source_block` nesnesinde bir başvuru sayısı yayınlar.
 
-```
+```cpp
 virtual void release_ref(_Inout_ ITarget<_Target_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu yöntemi çağıran bir hedef blok için işaretçi.
+Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağıran bir `ITarget` bu kaynaktan bağlantısız bir nesne. Kaynak blok için hedef blok ayrılmış tüm kaynakları serbest bırakmak için kullanılabilir.
+Bu yöntem, bu kaynaktan bağlantısı kesilmekte olan bir `ITarget` nesnesi tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
 
-##  <a name="remove_targets"></a> remove_targets
+## <a name="remove_targets"></a>remove_targets
 
-Bu kaynak bloğu tüm hedef bağlantıları kaldırır. Bu yıkıcıdan çağrılmalıdır.
+Bu kaynak bloğunun tüm hedef bağlantılarını kaldırır. Bu, yıkıcıdan çağrılmalıdır.
 
-```
+```cpp
 void remove_targets();
 ```
 
-##  <a name="reserve"></a> ayırma
+## <a name="reserve"></a>ayırmaya
 
-Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `source_block` nesne.
+Bu `source_block` nesnesi tarafından daha önce sunulan bir iletiyi ayırır.
 
-```
+```cpp
 virtual bool reserve(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Target_type>* _PTarget);
@@ -410,122 +410,122 @@ virtual bool reserve(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Sunulan, `message` nesne.
+Sunulan `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `reserve` yöntemi.
+`reserve` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
+ileti başarıyla ayrıldıysa **true** , aksi takdirde **false** . Ayırmalar, aşağıdakiler dahil olmak üzere birçok nedenden dolayı başarısız olabilir: ileti zaten ayrılmış veya başka bir hedef tarafından kabul edildi, kaynak rezervasyonları reddedebilir ve bu şekilde devam eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum, parametre `_PTarget` olduğu `NULL`.
+Parametre `_PTarget` `NULL`ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur.
 
-Çağırdıktan sonra `reserve`, başarılı olursa ya da çağırmalıdır `consume` veya `release` alabilir veya ileti, bir elinde sırasıyla vermek için.
+`reserve`çağırdıktan sonra, başarılı olduysa, iletinin sahipliğini almak ya da sağlamak için `consume` veya `release` çağırmanız gerekir.
 
-##  <a name="reserve_message"></a> reserve_message
+## <a name="reserve_message"></a>reserve_message
 
-Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir iletiyi ayırdıktan `source_block` nesne.
+Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce bu `source_block` nesnesi tarafından sunulan bir iletiyi ayırır.
 
-```
+```cpp
 virtual bool reserve_message(runtime_object_identity _MsgId) = 0;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Ayrılan nesne.
+Ayrılan `message` nesnesinin `runtime_object_identity`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
+ileti başarıyla ayrıldıysa **true** , aksi takdirde **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+`reserve` çağrıldıktan sonra, **doğru**döndürürse, iletinin sahipliğini almak ya da serbest bırakmak için `consume` veya `release` çağrılmalıdır.
 
-##  <a name="resume_propagation"></a> resume_propagation
+## <a name="resume_propagation"></a>resume_propagation
 
-Türetilen bir sınıfta geçersiz kılındığında, bir ayırma piyasaya sürüldükten sonra yayma devam ettirir.
+Türetilmiş bir sınıfta geçersiz kılınırsa, bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
-```
+```cpp
 virtual void resume_propagation() = 0;
 ```
 
-##  <a name="ctor"></a> source_block
+## <a name="ctor"></a>source_block
 
-Oluşturur bir `source_block` nesne.
+`source_block` nesnesi oluşturur.
 
-```
+```cpp
 source_block();
 ```
 
-##  <a name="dtor"></a> ~ source_block
+## <a name="dtor"></a>~ source_block
 
-Yok eder `source_block` nesne.
+`source_block` nesnesini yok eder.
 
-```
+```cpp
 virtual ~source_block();
 ```
 
-##  <a name="sync_send"></a> sync_send
+## <a name="sync_send"></a>sync_send
 
-Zaman uyumlu iletileri kuyruğa alır ve bu zaten yapılmadıysa bir yayma görevi başlar.
+Zaman uyumlu olarak iletileri kuyruğa alır ve henüz yapmadıysanız bir yayma görevi başlatır.
 
-```
+```cpp
 virtual void sync_send(_Inout_opt_ message<_Target_type>* _Msg);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Msg*<br/>
-Bir işaretçi bir `message` zaman uyumlu olarak göndermek için nesne.
+Zaman uyumlu olarak göndermek için `message` nesnesine yönelik bir işaretçi.
 
-##  <a name="unlink_target"></a> unlink_target
+## <a name="unlink_target"></a>unlink_target
 
-Bu hedef bloğun olan bağlantısını kesen `source_block` nesne.
+Hedef bloğunun bu `source_block` nesnesinden bağlantısını kaldırır.
 
-```
+```cpp
 virtual void unlink_target(_Inout_ ITarget<_Target_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bir işaretçi bir `ITarget` buradan bağlantısını kaldırmak için bloğu `source_block` nesne.
+Bu `source_block` nesnesinden bağlantısını kaldırmak için `ITarget` bloğuna yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum, parametre `_PTarget` olduğu `NULL`.
+Parametre `_PTarget` `NULL`ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur.
 
-##  <a name="unlink_target_notification"></a> unlink_target_notification
+## <a name="unlink_target_notification"></a>unlink_target_notification
 
-Bir hedef bu bağlantısız olduğunu bildiren bir geri çağırma `source_block` nesne.
+Bir hedefin bu `source_block` nesnesinden bağlantısının kesildiğinizi bildiren bir geri çağırma.
 
-```
+```cpp
 virtual void unlink_target_notification(_Inout_ ITarget<_Target_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-`ITarget` Kaldırıldı blok.
+Bağlantısının oluşturulduğu `ITarget` bloğu.
 
-##  <a name="unlink_targets"></a> unlink_targets
+## <a name="unlink_targets"></a>unlink_targets
 
-Bu, tüm hedef bloklara olan bağlantısını kesen `source_block` nesne.
+Tüm hedef blokların bu `source_block` nesnesinden bağlantısını kaldırır.
 
-```
+```cpp
 virtual void unlink_targets();
 ```
 
-##  <a name="wait_for_outstanding_async_sends"></a> wait_for_outstanding_async_sends
+## <a name="wait_for_outstanding_async_sends"></a>wait_for_outstanding_async_sends
 
-Tamamlamak tüm zaman uyumsuz yayılmaları bekler. Bu Yayıcı özgü dönmesini bekleyin ileti blokları yıkıcılarda tüm zaman uyumsuz yayılmaları blok yok etme öncesinde tamamlanması zaman sahip olduğunuzdan emin olmak için kullanılır.
+Tüm zaman uyumsuz yayılmaları tamamlanmasını bekler. Bu yayıcı belirli bir döndürme bekleme süresi, tüm zaman uyumsuz yayılmaları blok yok etmeden önce tamamlanmasını sağlamak için ileti bloklarının yıkıcıklarında kullanılır.
 
-```
+```cpp
 void wait_for_outstanding_async_sends();
 ```
 

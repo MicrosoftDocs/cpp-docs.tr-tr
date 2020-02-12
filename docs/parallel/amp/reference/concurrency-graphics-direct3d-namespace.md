@@ -5,20 +5,20 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d
 - amp_short_vectors/Concurrency::graphics::direct3d
 ms.assetid: be283331-07cf-46e4-91a1-e8aa85d4ec8e
-ms.openlocfilehash: 8fb03edd63c612fd070e50e2f5d229cd8e207812
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4911787fd17877769eb723cf1e61e29fe626a783
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405696"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77139432"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace"></a>Concurrency::graphics::direct3d Ad Alanı
 
-Sağlar [get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture) ve [make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemleri.
+[Get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture) ve [make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemlerini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 namespace direct3d;
 ```
 
@@ -28,17 +28,17 @@ namespace direct3d;
 
 |Ad<br /><br /> Açıklama|
 |--------------------------|
-|[get_sampler](concurrency-graphics-direct3d-namespace-functions.md#get_sampler)<br /><br /> Belirtilen örnekleyici nesnesini temsil eden belirli hızlandırıcıda Direct3D örnekleyici durumu arabirimini alın görüntüleyin.|
-|[get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture)<br /><br /> Belirtilen temel Direct3D Doku arabirimini alır [doku](texture-class.md) nesne.|
-|[make_sampler](concurrency-graphics-direct3d-namespace-functions.md#make_sampler)<br /><br /> Bir Direct3D örnekleyici durumu arabirim işaretçisinden bir örnekleyici oluşturun.|
-|[make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture)<br /><br /> Oluşturur bir [doku](texture-class.md) belirtilen parametreleri kullanarak nesne.|
-|[msad4](concurrency-graphics-direct3d-namespace-functions.md#msad4)<br /><br /> 4 bayt başvuru değerini ve 8 bayt kaynak değerini karşılaştırır ve 4 toplamlarının vektörünü biriktirir.|
+|[get_sampler](concurrency-graphics-direct3d-namespace-functions.md#get_sampler)<br /><br /> Belirtilen örnekleyici nesnesini temsil eden verilen Hızlandırıcı görünümünde Direct3D örnekleyici durumu arabirimini alın.|
+|[get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture)<br /><br /> Belirtilen [doku](texture-class.md) nesnesini temel alan Direct3D doku arabirimini alır.|
+|[make_sampler](concurrency-graphics-direct3d-namespace-functions.md#make_sampler)<br /><br /> Direct3D örnekleyici durumu arabirim işaretçisinden bir örnekleyici oluşturun.|
+|[make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture)<br /><br /> Belirtilen parametreleri kullanarak bir [doku](texture-class.md) nesnesi oluşturur.|
+|[msad4](concurrency-graphics-direct3d-namespace-functions.md#msad4)<br /><br /> 4 baytlık bir başvuru değerini ve 8 baytlık bir kaynak değeri karşılaştırır ve 4 toplamların bir vektörünü toplar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_graphics.h
+**Üst bilgi:** amp_graphics. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

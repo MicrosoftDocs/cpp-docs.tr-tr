@@ -18,32 +18,32 @@ f1_keywords:
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-ms.openlocfilehash: c07017539bc0125e9e8c27e208480a50ccc7a719
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75c7697087b8b3ad8ff15ae4d08f2b4701aaa36a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408075"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142363"
 ---
 # <a name="transformer-class"></a>dönüştürücü Sınıfı
 
-A `transformer` ileti bloğu tek-hedef birden çok kaynak, sıralı `propagator_block` bir türden iletileri kabul edebilir ve sınırsız sayıda farklı türden iletileri depolayabilen özelliğine sahiptir.
+`transformer` mesajlaşma bloğu, tek bir türde iletileri kabul edebilecek ve farklı bir türden sınırsız sayıda ileti saklayabilen tek hedefli, çok kaynaklı ve sıralı `propagator_block`.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<class _Input, class _Output>
 class transformer : public propagator_block<single_link_registry<ITarget<_Output>>,
     multi_link_registry<ISource<_Input>>>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*_Giriş*<br/>
-Arabellek kabul iletileri yük türü.
+*_Input*<br/>
+Arabellek tarafından kabul edilen iletilerin yük türü.
 
-*Çı_kış*<br/>
-İletileri depolanır ve çıkış arabelleği tarafından yayılan yük türü.
+*_Output*<br/>
+Arabellek tarafından saklanan ve yayılan iletilerin yük türü.
 
 ## <a name="members"></a>Üyeler
 
@@ -51,33 +51,33 @@ Arabellek kabul iletileri yük türü.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Transformer](#ctor)|Fazla Yüklendi. Oluşturur bir `transformer` ileti bloğu.|
-|[~ transformer yok Edicisi](#dtor)|Yok eder `transformer` ileti bloğu.|
+|[dönüştürücü](#ctor)|Fazla Yüklendi. `transformer` mesajlaşma bloğu oluşturur.|
+|[~ Transformatör yıkıcısı](#dtor)|`transformer` mesajlaşma bloğunu yok eder.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[accept_message](#accept_message)|Bu tarafından sunulan bir iletiyi kabul `transformer` çağırana sahipliğini aktarma ileti bloğu.|
-|[consume_message](#consume_message)|Daha önce tarafından sunulan iletiyi tüketir `transformer` ve çağırana sahipliğini aktarma hedefi tarafından ayrılmış.|
-|[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `transformer` ileti bloğu.|
-|[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir ileti geçirir bir `ISource` bu blok `transformer` ileti bloğu. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.|
-|[propagate_to_any_targets](#propagate_to_any_targets)|Transformer işlevi, giriş iletileri yürütür.|
-|[release_message](#release_message)|Bir önceki ileti ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `transformer` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|
-|[resume_propagation](#resume_propagation)|Rezervasyon piyasaya sürüldükten sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|
-|[send_message](#send_message)|Eş zamanlı olarak gelen bir ileti geçirir bir `ISource` bu blok `transformer` ileti bloğu. Tarafından çağrılan `send` bir kaynak bloğu tarafından çağrıldığında yöntemi.|
-|[supports_anonymous_source](#supports_anonymous_source)|Geçersiz kılmalar `supports_anonymous_source` bu blok için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntemi. (Geçersiz kılmaları [Itarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
+|[accept_message](#accept_message)|Bu `transformer` mesajlaşma bloğu tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.|
+|[consume_message](#consume_message)|, `transformer` tarafından daha önce sunulan ve hedef tarafından ayrılmış bir ileti tüketir ve sahipliği çağırana aktarmıştır.|
+|[link_target_notification](#link_target_notification)|Yeni bir hedefin bu `transformer` mesajlaşma bloğuna bağlandığını bildiren bir geri çağırma.|
+|[propagate_message](#propagate_message)|Zaman uyumsuz bir iletiyi `ISource` bloğundan bu `transformer` mesajlaşma bloğuna aktarır. Kaynak bloğu tarafından çağrıldığında `propagate` yöntemi tarafından çağrılır.|
+|[propagate_to_any_targets](#propagate_to_any_targets)|Giriş iletilerinde transformatör işlevini yürütür.|
+|[release_message](#release_message)|Önceki bir ileti ayırmasını yayınlar. (Geçersiz kılmalar [source_block:: release_message](source-block-class.md#release_message).)|
+|[reserve_message](#reserve_message)|Daha önce bu `transformer` mesajlaşma bloğunun sunduğu bir iletiyi ayırır. (Geçersiz kılmalar [source_block:: reserve_message](source-block-class.md#reserve_message).)|
+|[resume_propagation](#resume_propagation)|Bir ayırma yayımlandıktan sonra yayılmaya devam eder. (Geçersiz kılmalar [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
+|[send_message](#send_message)|Zaman uyumlu olarak bir `ISource` bloğundan bu `transformer` mesajlaşma bloğuna bir ileti geçirir. Kaynak bloğu tarafından çağrıldığında `send` yöntemi tarafından çağrılır.|
+|[supports_anonymous_source](#supports_anonymous_source)|Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için `supports_anonymous_source` yöntemini geçersiz kılar. ( [IComparer:: supports_anonymous_source](itarget-class.md#supports_anonymous_source)geçersiz kılar.)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).
+Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Isource](isource-class.md)
+[ISource](isource-class.md)
 
-[Itarget](itarget-class.md)
+[ITarget](itarget-class.md)
 
 [source_block](source-block-class.md)
 
@@ -87,61 +87,61 @@ Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="accept_message"></a> accept_message
+## <a name="accept_message"></a>accept_message
 
-Bu tarafından sunulan bir iletiyi kabul `transformer` çağırana sahipliğini aktarma ileti bloğu.
+Bu `transformer` mesajlaşma bloğu tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.
 
-```
+```cpp
 virtual message<_Output>* accept_message(runtime_object_identity _MsgId);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Sunulan, `message` nesne.
+Sunulan `message` nesnesinin `runtime_object_identity`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
+Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
 
-##  <a name="consume_message"></a> consume_message
+## <a name="consume_message"></a>consume_message
 
-Daha önce tarafından sunulan iletiyi tüketir `transformer` ve çağırana sahipliğini aktarma hedefi tarafından ayrılmış.
+, `transformer` tarafından daha önce sunulan ve hedef tarafından ayrılmış bir ileti tüketir ve sahipliği çağırana aktarmıştır.
 
-```
+```cpp
 virtual message<_Output>* consume_message(runtime_object_identity _MsgId);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Kullanılan nesne.
+Tüketilmekte olan `message` nesnesinin `runtime_object_identity`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
+Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Benzer şekilde `accept`, ancak her zaman bir çağrı tarafından öncesinde `reserve`.
+`accept`benzerdir, ancak her zaman bir `reserve`çağrısıyla yapılır.
 
-##  <a name="link_target_notification"></a> link_target_notification
+## <a name="link_target_notification"></a>link_target_notification
 
-Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `transformer` ileti bloğu.
+Yeni bir hedefin bu `transformer` mesajlaşma bloğuna bağlandığını bildiren bir geri çağırma.
 
-```
+```cpp
 virtual void link_target_notification(_Inout_ ITarget<_Output> *);
 ```
 
-##  <a name="propagate_message"></a> propagate_message
+## <a name="propagate_message"></a>propagate_message
 
-Zaman uyumsuz olarak bir ileti geçirir bir `ISource` bu blok `transformer` ileti bloğu. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.
+Zaman uyumsuz bir iletiyi `ISource` bloğundan bu `transformer` mesajlaşma bloğuna aktarır. Kaynak bloğu tarafından çağrıldığında `propagate` yöntemi tarafından çağrılır.
 
-```
+```cpp
 virtual message_status propagate_message(
     _Inout_ message<_Input>* _PMessage,
     _Inout_ ISource<_Input>* _PSource);
@@ -150,70 +150,70 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-Bir işaretçi `message` nesne.
+`message` nesnesine yönelik bir işaretçi.
 
 *_PSource*<br/>
-İletiyi sunmayı kaynak blok için işaretçi.
+İletiyi sunan kaynak bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.
+Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a>propagate_to_any_targets
 
-Transformer işlevi, giriş iletileri yürütür.
+Giriş iletilerinde transformatör işlevini yürütür.
 
-```
+```cpp
 virtual void propagate_to_any_targets(_Inout_opt_ message<_Output> *);
 ```
 
-##  <a name="release_message"></a> release_message
+## <a name="release_message"></a>release_message
 
-Bir önceki ileti ayırma serbest bırakır.
+Önceki bir ileti ayırmasını yayınlar.
 
-```
+```cpp
 virtual void release_message(runtime_object_identity _MsgId);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Yayımlanan nesne.
+Yayımlanmakta olan `message` nesnesinin `runtime_object_identity`.
 
-##  <a name="reserve_message"></a> reserve_message
+## <a name="reserve_message"></a>reserve_message
 
-Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `transformer` ileti bloğu.
+Daha önce bu `transformer` mesajlaşma bloğunun sunduğu bir iletiyi ayırır.
 
-```
+```cpp
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Ayrılan nesne.
+Ayrılan `message` nesnesinin `runtime_object_identity`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
+ileti başarıyla ayrıldıysa **true** , aksi takdirde **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+`reserve` çağrıldıktan sonra, **doğru**döndürürse, iletinin sahipliğini almak ya da serbest bırakmak için `consume` veya `release` çağrılmalıdır.
 
-##  <a name="resume_propagation"></a> resume_propagation
+## <a name="resume_propagation"></a>resume_propagation
 
-Rezervasyon piyasaya sürüldükten sonra yayma sürdürür.
+Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
-```
+```cpp
 virtual void resume_propagation();
 ```
 
-##  <a name="send_message"></a> send_message
+## <a name="send_message"></a>send_message
 
-Eş zamanlı olarak gelen bir ileti geçirir bir `ISource` bu blok `transformer` ileti bloğu. Tarafından çağrılan `send` bir kaynak bloğu tarafından çağrıldığında yöntemi.
+Zaman uyumlu olarak bir `ISource` bloğundan bu `transformer` mesajlaşma bloğuna bir ileti geçirir. Kaynak bloğu tarafından çağrıldığında `send` yöntemi tarafından çağrılır.
 
-```
+```cpp
 virtual message_status send_message(
     _Inout_ message<_Input>* _PMessage,
     _Inout_ ISource<_Input>* _PSource);
@@ -222,32 +222,32 @@ virtual message_status send_message(
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-Bir işaretçi `message` nesne.
+`message` nesnesine yönelik bir işaretçi.
 
 *_PSource*<br/>
-İletiyi sunmayı kaynak blok için işaretçi.
+İletiyi sunan kaynak bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.
+Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-##  <a name="supports_anonymous_source"></a> supports_anonymous_source
+## <a name="supports_anonymous_source"></a>supports_anonymous_source
 
-Geçersiz kılmalar `supports_anonymous_source` bu blok için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntemi.
+Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için `supports_anonymous_source` yöntemini geçersiz kılar.
 
-```
+```cpp
 virtual bool supports_anonymous_source();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** iletileri blok değil ertelemek için sunulan.
+**çünkü blok** sunulan iletileri ertelemez.
 
-##  <a name="ctor"></a> Transformer
+## <a name="ctor"></a>dönüştürücü
 
-Oluşturur bir `transformer` ileti bloğu.
+`transformer` mesajlaşma bloğu oluşturur.
 
-```
+```cpp
 transformer(
     _Transform_method const& _Func,
     _Inout_opt_ ITarget<_Output>* _PTarget = NULL);
@@ -283,33 +283,33 @@ transformer(
 ### <a name="parameters"></a>Parametreler
 
 *_Func*<br/>
-Kabul edilen her ileti için çağrılacak işlev.
+Kabul edilen her ileti için çağrılacak bir işlev.
 
 *_PTarget*<br/>
-Transformer ile bağlamak için bir hedef blok için işaretçi.
+Transformatör ile bağlantı için hedef blok işaretçisi.
 
-*_Filtreyi*<br/>
-Sunulan iletileri kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.
+*_Filter*<br/>
+Sunulan iletilerin kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.
 
 *_PScheduler*<br/>
-`Scheduler` İçinde Yayma görevi için nesne `transformer` ileti bloğu zamanlandı.
+`transformer` mesajlaşma bloğunun yayma görevinin içinde `Scheduler` nesnesi zamanlandı.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` İçinde Yayma görevi için nesne `transformer` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.
+`transformer` mesajlaşma bloğunun yayma görevinin içinde `ScheduleGroup` nesnesi zamanlandı. Kullanılan `Scheduler` nesnesi, zamanlama grubu tarafından kapsanıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.
+`_PScheduler` veya `_PScheduleGroup` parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır.
 
-Türü `_Transform_method` bir functor imzaya sahip olduğu `_Output (_Input const &)` , çağrıldığında bu `transformer` bir iletiyi, ileti bloğu.
+Tür `_Transform_method`, bu `transformer` mesajlaşma bloğu tarafından bir iletiyi işlemek için çağrılan imza `_Output (_Input const &)` olan bir functor.
 
-Türü `filter_method` bir functor imzaya sahip olduğu `bool (_Input const &)` , çağrıldığında bu `transformer` sunulan bir iletiye kabul etmelidir olup olmadığını belirlemek için ileti bloğu.
+Tür `filter_method`, bu `transformer` mesajlaşma bloğu tarafından sunulan ve önerilen bir iletiyi kabul edip etmediğini belirlemede çağrılan, imza `bool (_Input const &)` olan bir functor.
 
-##  <a name="dtor"></a> ~ transformer
+## <a name="dtor"></a>~ Transformatör
 
-Yok eder `transformer` ileti bloğu.
+`transformer` mesajlaşma bloğunu yok eder.
 
-```
+```cpp
 ~transformer();
 ```
 

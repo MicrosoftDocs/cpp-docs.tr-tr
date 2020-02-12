@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - task_canceled class
 ms.assetid: c3f0b234-2cc1-435f-a48e-995f45b190be
-ms.openlocfilehash: caef1c62ff09ffb76f74d4a1453e9d59dcb7d45b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1436f921343843ee2b50888f00b6d470e513329
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385251"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142601"
 ---
-# <a name="taskcanceled-class"></a>task_canceled Sınıfı
+# <a name="task_canceled-class"></a>task_canceled Sınıfı
 
-Bu sınıf, geçerli görevi iptal etmek için zorlamak için PPL görev katmanı tarafından verilen bir özel durumu anlatmaktadır. Ayrıca tarafından oluşturulur `get()` metodunda [görev](/visualstudio/extensibility/debugger/task-class-internal-members), iptal edilen bir görev için.
+Bu sınıf, geçerli görevin iptal edilmeye zorlamak için PPL görev katmanı tarafından oluşturulan bir özel durumu açıklar. Ayrıca, iptal edilen bir görev için [görev](/visualstudio/extensibility/debugger/task-class-internal-members)üzerinde `get()` yöntemi tarafından da oluşturulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class task_canceled : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class task_canceled : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[task_canceled](#ctor)|Fazla Yüklendi. Oluşturur bir `task_canceled` nesne.|
+|[task_canceled](#ctor)|Fazla Yüklendi. `task_canceled` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class task_canceled : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> task_canceled
+## <a name="ctor"></a>task_canceled
 
-Oluşturur bir `task_canceled` nesne.
+`task_canceled` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP task_canceled(_In_z_ const char* _Message) throw();
 
 task_canceled() throw();
@@ -57,7 +57,7 @@ task_canceled() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

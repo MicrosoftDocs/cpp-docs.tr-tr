@@ -72,26 +72,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_3::xz
 - amp_short_vectors/Concurrency::graphics::int_3::set_yz
 ms.assetid: d4af182f-30f1-455c-b16d-aa99cd314038
-ms.openlocfilehash: c7cef5c8d6750ba6e971be14aafce65020d05c10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc35562466ee33585be03739695d24da043415c2
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180251"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127822"
 ---
-# <a name="int3-class"></a>int_3 Sınıfı
+# <a name="int_3-class"></a>int_3 Sınıfı
 
-Üç tamsayıdan oluşan bir kısa vektörü temsil eder.
+Üç tamsayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class int_3;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -101,7 +101,7 @@ class int_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[int_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[int_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -128,8 +128,8 @@ class int_3;
 |int_3::ref_x||
 |int_3::ref_y||
 |int_3::ref_z||
-|int_3::set_x||
-|int_3::set_xy||
+|int_3:: set_x||
+|int_3:: set_xy||
 |int_3::set_xyz||
 |int_3::set_xz||
 |int_3::set_xzy||
@@ -148,53 +148,53 @@ class int_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_3::operator-||
-|int_3::operator--||
+|int_3:: operator-||
+|int_3:: operator--||
 |int_3::operator%=||
-|int_3::operator & =||
-|int_3::operator * =||
-|int_3::operator / =||
+|int_3:: operator & =||
+|int_3:: operator * =||
+|int_3:: operator/=||
 |int_3::operator^=||
-|int_3::operator&#124;=||
-|int_3::operator ~||
-|int_3::operator ++||
-|int_3::operator +=||
-|int_3::operator <\<=||
+|int_3:: operator&#124;=||
+|int_3:: operator ~||
+|int_3:: operator + +||
+|int_3:: operator + =||
+|int_3:: operator <\<=||
 |int_3::operator=||
-|int_3::operator-=||
-|int_3::operator >> =||
+|int_3:: operator-=||
+|int_3:: operator > > =||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#size)||
+|[Boyut sabiti](#size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_3::b||
+|int_3:: b||
 |int_3::bg||
 |int_3::bgr||
 |int_3::br||
 |int_3::brg||
-|int_3::g||
+|int_3:: g||
 |int_3::gb||
 |int_3::gbr||
-|int_3::Gr||
+|int_3:: gr||
 |int_3::grb||
-|int_3::r||
+|int_3:: r||
 |int_3::rb||
 |int_3::rbg||
 |int_3::rg||
 |int_3::rgb||
-|int_3::x||
-|int_3::xy||
-|int_3::xyz||
+|int_3:: x||
+|int_3:: XY||
+|int_3:: xyz||
 |int_3::xz||
-|int_3::xzy||
-|int_3::y||
+|int_3:: xzy||
+|int_3:: y||
 |int_3::yx||
 |int_3::yxz||
 |int_3::yz||
@@ -211,17 +211,17 @@ class int_3;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a> int_3
+## <a name="ctor"></a>int_3
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 int_3() restrict(amp,cpu);
 int_3(
    int _V0,
@@ -254,25 +254,25 @@ explicit inline int_3(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="size"></a> Boyutu
+## <a name="size"></a>boyutla
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int size = 3;
 ```
 

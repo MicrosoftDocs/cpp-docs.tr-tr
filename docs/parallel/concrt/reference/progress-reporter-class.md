@@ -9,28 +9,28 @@ f1_keywords:
 helpviewer_keywords:
 - progress_reporter class
 ms.assetid: b836efab-2d05-4649-b6fa-d15236f1f813
-ms.openlocfilehash: dac74085278418153ddec502f6257ce13885704d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd8f50a8c9829ff9de3e2412b89aa4de88d90db6
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394383"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77138767"
 ---
-# <a name="progressreporter-class"></a>progress_reporter Sınıfı
+# <a name="progress_reporter-class"></a>progress_reporter Sınıfı
 
-İlerleme Raporlayıcısı belirli bir türdeki ilerleme bildirimlerinin raporlama sağlar. Her progress_reporter nesnesi, bir belirli bir zaman uyumsuz eyleme veya işleme bağlıdır.
+Progress Reporter sınıfı, belirli bir türdeki ilerleme bildirimlerinin raporlanmasını sağlar. Her progress_reporter nesnesi belirli bir zaman uyumsuz eyleme veya işleme bağlanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<typename _ProgressType>
 class progress_reporter;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_ProgressType*<br/>
-İlerleme Raporlayıcısı ile bildirilen her bir ilerleme bildiriminin yük türü.
+İlerleme durumu Raporlayıcı aracılığıyla bildirilen her ilerleme bildiriminin yük türü.
 
 ## <a name="members"></a>Üyeler
 
@@ -44,11 +44,11 @@ class progress_reporter;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Rapor](#report)|Zaman uyumsuz eylem ya da bu işlem raporcusunun bağlı olduğu işleme bir İlerleme raporu gönderir.|
+|[raporlamak](#report)|Bu Progress Reporter 'ın bağlandığı zaman uyumsuz eyleme veya işleme bir ilerleme raporu gönderir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu tür, yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.
+Bu tür yalnızca Windows Çalışma Zamanı uygulamalar tarafından kullanılabilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -56,28 +56,28 @@ Bu tür, yalnızca Windows çalışma zamanı uygulamaları için kullanılabili
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ppltasks.h
+**Üstbilgi:** ppltasks. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> progress_reporter
+## <a name="ctor"></a>progress_reporter
 
-```
+```cpp
 progress_reporter();
 ```
 
-##  <a name="report"></a> Rapor
+## <a name="report"></a>raporlamak
 
-Zaman uyumsuz eylem ya da bu işlem raporcusunun bağlı olduğu işleme bir İlerleme raporu gönderir.
+Bu Progress Reporter 'ın bağlandığı zaman uyumsuz eyleme veya işleme bir ilerleme raporu gönderir.
 
-```
+```cpp
 void report(const _ProgressType& val) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
-Devam eden bildirim yoluyla bildirilecek yük.
+*Acil*<br/>
+İlerleme bildirimiyle raporlamak için yük.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

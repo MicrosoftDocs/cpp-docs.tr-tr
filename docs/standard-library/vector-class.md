@@ -1,6 +1,7 @@
 ---
 title: vector sınıfı
-ms.date: 01/04/2020
+description: Sınıf vektörünün C++ Microsoft standart kitaplık uygulamasına yönelik başvuru.
+ms.date: 02/07/2020
 f1_keywords:
 - vector/std::vector::allocator_type
 - vector/std::vector::const_iterator
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - std::vector [C++], size
 - std::vector [C++], swap
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
-ms.openlocfilehash: 8c4284fecf09044ceab326d858d6ffccccdeaf45
-ms.sourcegitcommit: 27d9db019f6d84c94de9e6aff0170d918cee6738
+ms.openlocfilehash: ed987409dc99ea9b1dade632a5fa5deeb322347a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75676970"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126233"
 ---
 # <a name="vector-class"></a>vector sınıfı
 
@@ -142,7 +143,7 @@ Vektör yeniden ayırma, bir üye işlevi, vektör nesnesinde bulunan sırayı g
 |[difference_type](#difference_type)|Vektördeki iki öğenin adresleri arasındaki farkı sağlayan bir tür.|
 |[iden](#iterator)|Vektördeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir rasgele erişim yineleyicisi sağlayan bir tür.|
 |[çağrısı](#pointer)|Vektörde bir öğeye işaretçi sağlayan bir tür.|
-|[Başvuru](#reference)|Vektörde depolanan bir öğeye başvuru sağlayan bir tür.|
+|[başvurunun](#reference)|Vektörde depolanan bir öğeye başvuru sağlayan bir tür.|
 |[reverse_iterator](#reverse_iterator)|Tersine çevrilmiş Vektördeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir rasgele erişim yineleyicisi sağlayan bir tür.|
 |[size_type](#size_type)|Vektördeki öğelerin sayısını sayan bir tür.|
 |[value_type](#value_type)|Vektörde depolanan veri türünü temsil eden bir tür.|
@@ -161,10 +162,10 @@ Vektör yeniden ayırma, bir üye işlevi, vektör nesnesinde bulunan sırayı g
 |[crbegin](#crbegin)|Ters çevrilen Vektördeki ilk öğeye bir const yineleyici döndürür.|
 |[crend](#crend)|Ters çevrilen vector öğesinin sonuna bir const yineleyici döndürür.|
 |[lediğiniz](#clear)|Vektör öğelerini siler.|
-|[data](#data)|Vektördeki ilk öğeye bir işaretçi döndürür.|
+|[verileri](#data)|Vektördeki ilk öğeye bir işaretçi döndürür.|
 |[Emplace](#emplace)|Belirli bir konumdaki vector öğesine yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_back](#emplace_back)|Vector öğesinin sonuna yerinde oluşturulmuş bir öğe ekler.|
-|[empty](#empty)|Vektör kapsayıcısının boş olup olmadığını sınar.|
+|[olmamalıdır](#empty)|Vektör kapsayıcısının boş olup olmadığını sınar.|
 |[erer](#end)|Vektörün sonuna işaret eden bir rastgele erişim yineleyicisi döndürür.|
 |[silme](#erase)|Belirtilen konumlardan bir vektör içindeki öğe veya öğe aralığını kaldırır.|
 |[yapılan](#front)|Vektördeki ilk öğeye bir başvuru döndürür.|
@@ -186,7 +187,7 @@ Vektör yeniden ayırma, bir üye işlevi, vektör nesnesinde bulunan sırayı g
 |||
 |-|-|
 |[işlecinde&#91;&#93;](#op_at)|Vektör öğesine belirtilen konumda bir başvuru döndürür.|
-|[operator=](#op_eq)|Vektör öğelerini başka bir Vector kopyasıyla değiştirir.|
+|[işleç =](#op_eq)|Vektör öğelerini başka bir Vector kopyasıyla değiştirir.|
 
 ## <a name="allocator_type"></a>allocator_type
 
@@ -790,7 +791,7 @@ int main()
 {
     using namespace std;
     vector<int> c1;
-    vector<int>::pointer c1 ptr;
+    vector<int>::pointer c1_ptr;
     vector<int>::const_pointer c1_cPtr;
 
     c1.push_back(1);
@@ -805,11 +806,11 @@ int main()
     cout << endl;
 
     cout << "The vector c1 now contains elements:";
-    c1 ptr = c1.data();
-    *c1 ptr = 20;
-    for (size_t n = c1.size(); 0 < n; --n, c1 ptr++)
+    c1_ptr = c1.data();
+    *c1_ptr = 20;
+    for (size_t n = c1.size(); 0 < n; --n, c1_ptr++)
     {
-        cout << " " << *c1 ptr;
+        cout << " " << *c1_ptr;
     }
     cout << endl;
 }

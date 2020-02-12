@@ -4,50 +4,50 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - message passing functions
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
-ms.openlocfilehash: 1a1790a08403bcc1d016a39e27c7a121c288af4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e1052a59f355c4ad5a7c6b57724268c24a209b4
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186005"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143291"
 ---
 # <a name="message-passing-functions"></a>İleti Geçirme İşlevleri
 
-Zaman uyumsuz aracılar Kitaplığı bileşenleri arasında iletileri geçirmenize olanak tanıyan çeşitli işlevler sağlar.
+Zaman uyumsuz aracılar Kitaplığı, bileşenler arasında ileti iletmenizi sağlayan çeşitli işlevler sağlar.
 
-Bu ileti geçirme işlevleri, çeşitli ileti bloğu türleri ile kullanılır. Eşzamanlılık Çalışma zamanı tarafından tanımlanan ileti bloğu türleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
+Bu ileti geçirme işlevleri çeşitli ileti bloğu türleriyle kullanılır. Eşzamanlılık Çalışma Zamanı tarafından tanımlanan ileti bloğu türleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-##  <a name="top"></a> Bölümleri
+## <a name="top"></a>Başlıklı
 
-Bu konuda, aşağıdaki ileti geçirme işlevleri açıklanmaktadır:
+Bu konuda aşağıdaki ileti geçirme işlevleri açıklanmaktadır:
 
-- [Gönder ve asend](#send)
+- [gönderme ve asend](#send)
 
-- [Alma ve try_receive](#receive)
+- [alma ve try_receive](#receive)
 
 - [Örnekler](#examples)
 
-##  <a name="send"></a> Gönder ve asend
+## <a name="send"></a>gönderme ve asend
 
-[Concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi bir ileti zaman uyumlu olarak belirtilen hedefe gönderir ve [concurrency::asend](reference/concurrency-namespace-functions.md#asend) işlevi bir ileti zaman uyumsuz olarak belirtilen hedefe gönderir. Hem `send` ve `asend` işlevleri, hedef, sonunda kabul edin veya iletiyi reddedebilir gösterir kadar bekleyin.
+[Concurrency:: Send](reference/concurrency-namespace-functions.md#send) işlevi belirtilen hedefe zaman uyumlu bir ileti gönderir ve [concurrency:: asend](reference/concurrency-namespace-functions.md#asend) işlevi belirtilen hedefe zaman uyumsuz bir ileti gönderir. `send` ve `asend` işlevleri, hedef son olarak iletiyi kabul edeceğini veya reddetmesi gerektiğini belirtir.
 
-`send` İşlevi hedef kabul eder ya da döndürülmeden önce iletiyi reddettiğinde kadar bekler. `send` İşlevinin döndürdükleriyle **true** ileti teslim varsa ve **false** Aksi takdirde. Çünkü `send` işlev çalışır eş `send` işlevi hedef döndürülmeden önce ileti almak bekler.
+`send` işlevi, hedefin döndürülünceye kadar iletiyi kabul etmesini veya reddetmesini bekler. `send` işlevi, ileti teslim edildiğinde **true** , aksi durumda **false** değerini döndürür. `send` işlevi zaman uyumlu olarak çalıştığından, `send` işlevi hedefin döndürülmadan önce iletiyi almasını bekler.
 
-Buna karşılık, `asend` işlevi kabul etmesini ya da döndürülmeden önce iletiyi reddedebilir hedefi için bekleyin değil. Bunun yerine, `asend` işlevinin döndürdükleriyle **true** hedef iletiyi kabul eder ve sonunda sürer. Aksi takdirde, `asend` döndürür **false** hedef iletiyi reddetti veya iletisi olup olmadığı hakkında karar Ertelenen belirtmek için.
-
-[[Üst](#top)]
-
-##  <a name="receive"></a> Alma ve try_receive
-
-[Concurrency::receive](reference/concurrency-namespace-functions.md#receive) ve [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive) işlevleri, belirli bir kaynaktan verileri okur. `receive` İşlevi için verileri kullanıma hazır olmasını bekler ancak `try_receive` işlevi hemen döndürür.
-
-Kullanım `receive` çalışmaya devam etmek için veri sahip olmalıdır. Kullanım `try_receive` işlevinin geçerli bağlam engellemelisiniz değil ya da devam etmek için veri yok.
+Buna karşılık `asend` işlevi, hedefin döndürülmeden önce iletiyi kabul etmesini veya reddetmesi için beklemez. Bunun yerine, hedef iletiyi kabul ettiğinde `asend` işlevi **true** değerini döndürür ve sonuç olarak alır. Aksi takdirde `asend`, hedefin iletiyi reddettiğini veya iletiyi alıp almayacağı kararı ertelemesini belirtmek için **false** döndürür.
 
 [[Üst](#top)]
 
-##  <a name="examples"></a> Örnekleri
+## <a name="receive"></a>alma ve try_receive
 
-Kullanan örnekler `send` ve `asend`, ve `receive` işlevleri, aşağıdaki konulara bakın:
+[Concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) ve [concurrency:: try_receive](reference/concurrency-namespace-functions.md#try_receive) işlevleri belirli bir kaynaktaki verileri okur. `receive` işlevi, verilerin kullanılabilir hale gelmesini bekler, ancak `try_receive` işlevi hemen döndürülür.
+
+Devam etmek için verilerin olması gereken `receive` işlevini kullanın. Geçerli bağlam engellenmemelidir veya devam etmek için verilere sahip olmanız gerekmez `try_receive` işlevini kullanın.
+
+[[Üst](#top)]
+
+## <a name="examples"></a>Örnekler
+
+`send` ve `asend`ve `receive` işlevleri kullanan örnekler için aşağıdaki konulara bakın:
 
 - [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -69,7 +69,7 @@ Kullanan örnekler `send` ve `asend`, ve `receive` işlevleri, aşağıdaki konu
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[send işlevi](reference/concurrency-namespace-functions.md#send)<br/>
-[asend işlevi](reference/concurrency-namespace-functions.md#asend)<br/>
-[receive işlevi](reference/concurrency-namespace-functions.md#receive)<br/>
-[try_receive işlevi](reference/concurrency-namespace-functions.md#try_receive)
+[Send Işlevi](reference/concurrency-namespace-functions.md#send)<br/>
+[asend Işlevi](reference/concurrency-namespace-functions.md#asend)<br/>
+[Receive Işlevi](reference/concurrency-namespace-functions.md#receive)<br/>
+[try_receive Işlevi](reference/concurrency-namespace-functions.md#try_receive)

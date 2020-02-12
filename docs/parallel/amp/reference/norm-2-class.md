@@ -28,26 +28,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_2
 - amp_short_vectors/Concurrency::graphics::norm_2::operator--
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
-ms.openlocfilehash: c48e6dd573e3303307cc8a0247a955aba62d809e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09bd33b5a8d9148c7959f69fcab4a260fe05c332
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353059"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126506"
 ---
-# <a name="norm2-class"></a>norm_2 Sınıfı
+# <a name="norm_2-class"></a>norm_2 Sınıfı
 
-Normal iki sayıdan oluşan bir kısa vektörü temsil eder.
+İki normal sayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class norm_2;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -57,7 +57,7 @@ class norm_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[norm_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[norm_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -67,11 +67,11 @@ class norm_2;
 |norm_2::get_xy||
 |norm_2::get_y||
 |norm_2::get_yx||
-|norm_2::ref_g||
+|norm_2:: ref_g||
 |norm_2::ref_r||
 |norm_2::ref_x||
 |norm_2::ref_y||
-|norm_2::set_x||
+|norm_2:: set_x||
 |norm_2::set_xy||
 |norm_2::set_y||
 |norm_2::set_yx||
@@ -83,7 +83,7 @@ class norm_2;
 |norm_2::operator-||
 |norm_2::operator--||
 |norm_2::operator*=||
-|norm_2::operator / =||
+|norm_2:: operator/=||
 |norm_2::operator++||
 |norm_2::operator+=||
 |norm_2::operator=||
@@ -93,19 +93,19 @@ class norm_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#norm_2__size)||
+|[Boyut sabiti](#norm_2__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_2::g||
+|norm_2:: g||
 |norm_2::gr||
-|norm_2::r||
+|norm_2:: r||
 |norm_2::rg||
-|norm_2::x||
-|norm_2::xy||
-|norm_2::y||
+|norm_2:: x||
+|norm_2:: XY||
+|norm_2:: y||
 |norm_2::yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -114,15 +114,15 @@ class norm_2;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> norm_2
+## <a name="ctor"></a>norm_2
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 norm_2() restrict(amp,
     cpu);
 
@@ -177,20 +177,20 @@ explicit inline norm_2(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="norm_2__size"></a> Boyutu
+## <a name="norm_2__size"></a>boyutla
 
-```
+```cpp
 static const int size = 2;
 ```
 

@@ -17,20 +17,20 @@ f1_keywords:
 helpviewer_keywords:
 - multitype_join class
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
-ms.openlocfilehash: 7a0c68c2c017eedfa23548bee1d17177e8eaaa1e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4214c43fa0d0ab8fdd29ed54738c19f72a07267a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409953"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77138948"
 ---
-# <a name="multitypejoin-class"></a>multitype_join Sınıfı
+# <a name="multitype_join-class"></a>multitype_join Sınıfı
 
-A `multitype_join` ileti bloğu her kaynaklarının farklı türdeki iletileri birleştirir ve hedeflerine birleşik iletileri tanımlama grubu sunar bir çok kaynak, hedef tek ileti bloğu.
+`multitype_join` mesajlaşma bloğu, kaynaklarından her birinin farklı türlerindeki iletileri birleştiren ve hedeflerine Birleşik iletilerin bir listesini sunan çok kaynaklı, tek hedef mesajlaşma bloğudur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<
     typename T,
     join_type _Jtype = non_greedy
@@ -38,64 +38,64 @@ template<
 class multitype_join: public ISource<typename _Unwrap<T>::type>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-`tuple` Yük türü iletileri birleştirilmiş ve blok tarafından yayılır.
+*Şı*<br/>
+Blok tarafından birleştirilen ve yayılan iletilerin `tuple` yük türü.
 
 *_Jtype*<br/>
-Tür, `join` ya da bu, blok `greedy` veya `non_greedy`
+`join` bloğunun türü, `greedy` ya da `non_greedy`
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`type`|Bir tür diğer adı için `T`.|
+|`type`|`T`için bir tür diğer adı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[multitype_join](#ctor)|Fazla Yüklendi. Oluşturur bir `multitype_join` ileti bloğu.|
-|[~ multitype_join yok Edicisi](#dtor)|Yok eder `multitype_join` ileti bloğu.|
+|[multitype_join](#ctor)|Fazla Yüklendi. `multitype_join` mesajlaşma bloğu oluşturur.|
+|[~ multitype_join yok edici](#dtor)|`multitype_join` mesajlaşma bloğunu yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `multitype_join` engelleme, arayana sahipliğini aktarma.|
-|[acquire_ref](#acquire_ref)|Bu başvuru sayısını alması `multitype_join` silinmesini engellemek için ileti bloğu.|
-|[kullanma](#consume)|Daha önce tarafından sunulan iletiyi tüketir `multitype_join` blok Mesajlaşma ve çağırana sahipliğini aktarma hedefi, başarılı bir şekilde ayrılmıştır.|
-|[link_target](#link_target)|Bir hedef bloğu için bağlantı `multitype_join` ileti bloğu.|
-|[Yayın](#release)|Önceki bir başarılı iletisi ayırma serbest bırakır.|
-|[release_ref](#release_ref)|Bir başvuru sayısı bu sürümleri `multiple_join` ileti bloğu.|
-|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `multitype_join` ileti bloğu.|
-|[unlink_target](#unlink_target)|Bu hedef bloğun olan bağlantısını kesen `multitype_join` ileti bloğu.|
-|[unlink_targets](#unlink_targets)|Bu tüm hedefleri olan bağlantısını kesen `multitype_join` ileti bloğu. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|
+|[ettiğinizde](#accept)|Bu `multitype_join` bloğu tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.|
+|[acquire_ref](#acquire_ref)|Silmeyi engellemek için bu `multitype_join` mesajlaşma bloğunda bir başvuru sayısı alır.|
+|[kullanan](#consume)|Daha önce `multitype_join` mesajlaşma bloğu tarafından sunulan ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.|
+|[link_target](#link_target)|Hedef bloğu bu `multitype_join` mesajlaşma bloğuna bağlar.|
+|[Yayın](#release)|Önceki başarılı bir ileti ayırmasını serbest bırakır.|
+|[release_ref](#release_ref)|Bu `multiple_join` mesajlaşma bloğunda bir başvuru sayısı yayınlar.|
+|[ayırmaya](#reserve)|Daha önce bu `multitype_join` mesajlaşma bloğunun sunduğu bir iletiyi ayırır.|
+|[unlink_target](#unlink_target)|Hedef bloğunun bu `multitype_join` mesajlaşma bloğundan bağlantısını kaldırır.|
+|[unlink_targets](#unlink_targets)|Bu `multitype_join` mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır. ( [ISource:: unlink_targets](isource-class.md#unlink_targets)geçersiz kılar)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).
+Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Isource](isource-class.md)
+[ISource](isource-class.md)
 
 `multitype_join`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="accept"></a> Kabul et
+## <a name="accept"></a>ettiğinizde
 
-Bu tarafından sunulan bir iletiyi kabul `multitype_join` engelleme, arayana sahipliğini aktarma.
+Bu `multitype_join` bloğu tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.
 
-```
+```cpp
 virtual message<_Destination_type>* accept(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -104,37 +104,37 @@ virtual message<_Destination_type>* accept(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Sunulan, `message` nesne.
+Sunulan `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `accept` yöntemi.
+`accept` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arayanın artık sahipliğini olan iletisi için bir işaretçi.
+Çağıranın artık sahipliği olan iletinin bir işaretçisi.
 
-##  <a name="acquire_ref"></a> acquire_ref
+## <a name="acquire_ref"></a>acquire_ref
 
-Bu başvuru sayısını alması `multitype_join` silinmesini engellemek için ileti bloğu.
+Silmeyi engellemek için bu `multitype_join` mesajlaşma bloğunda bir başvuru sayısı alır.
 
-```
+```cpp
 virtual void acquire_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu yöntemi çağıran bir hedef blok için işaretçi.
+Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağıran bir `ITarget` sırasında bu kaynağa bağlı nesnesi `link_target` yöntemi.
+Bu yöntem, `link_target` yöntemi sırasında bu kaynağa bağlanmakta olan bir `ITarget` nesnesi tarafından çağırılır.
 
-##  <a name="consume"></a> kullanma
+## <a name="consume"></a>kullanan
 
-Daha önce tarafından sunulan iletiyi tüketir `multitype_join` blok Mesajlaşma ve çağırana sahipliğini aktarma hedefi, başarılı bir şekilde ayrılmıştır.
+Daha önce `multitype_join` mesajlaşma bloğu tarafından sunulan ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.
 
-```
+```cpp
 virtual message<_Destination_type>* consume(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -143,37 +143,37 @@ virtual message<_Destination_type>* consume(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` Ayrılmış, `message` nesne.
+Ayrılmış `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `consume` yöntemi.
+`consume` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
+Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen **true**.
+`consume` yöntemi `accept`benzerdir, ancak her zaman **true**döndüren `reserve` çağrısı gelmelidir.
 
-##  <a name="link_target"></a> link_target
+## <a name="link_target"></a>link_target
 
-Bir hedef bloğu için bağlantı `multitype_join` ileti bloğu.
+Hedef bloğu bu `multitype_join` mesajlaşma bloğuna bağlar.
 
-```
+```cpp
 virtual void link_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bir işaretçi bir `ITarget` bloğu için bağlantı `multitype_join` ileti bloğu.
+Bu `multitype_join` mesajlaşma bloğuna bağlantı için `ITarget` bloğuna yönelik bir işaretçi.
 
-##  <a name="ctor"></a> multitype_join
+## <a name="ctor"></a>multitype_join
 
-Oluşturur bir `multitype_join` ileti bloğu.
+`multitype_join` mesajlaşma bloğu oluşturur.
 
-```
+```cpp
 explicit multitype_join(
     T _Tuple);
 
@@ -192,36 +192,36 @@ multitype_join(
 ### <a name="parameters"></a>Parametreler
 
 *_Tuple*<br/>
-A `tuple` bu kaynakları `multitype_join` ileti bloğu.
+Bu `multitype_join` mesajlaşma bloğuna yönelik kaynakların `tuple`.
 
 *_PScheduler*<br/>
-`Scheduler` İçinde Yayma görevi için nesne `multitype_join` ileti bloğu zamanlandı.
+`multitype_join` mesajlaşma bloğunun yayma görevinin içinde `Scheduler` nesnesi zamanlandı.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` İçinde Yayma görevi için nesne `multitype_join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.
+`multitype_join` mesajlaşma bloğunun yayma görevinin içinde `ScheduleGroup` nesnesi zamanlandı. Kullanılan `Scheduler` nesnesi, zamanlama grubu tarafından kapsanıyor.
 
 *_Join*<br/>
-A `multitype_join` kopyalamak için ileti bloğu. Orijinal nesneyi, bu bir taşıma Oluşturucusu yapma yalnız bırakılmış olduğunu unutmayın.
+Kopyalamanın `multitype_join` bir mesajlaşma bloğu. Özgün nesnenin yalnız bırakılmış olduğunu ve bunu bir taşıma Oluşturucusu yapmayı unutmayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.
+`_PScheduler` veya `_PScheduleGroup` parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır.
 
-Basit görev uçuşta taşıma sırasında emin olmak için kullanıcı en fazla olduğunu gösterir bir kilidi altında taşıma oluşturma yapılmaz. Aksi takdirde, özel durumlar veya tutarsız için önde gelen çok sayıda yarışa hazır oluşabilir.
+Taşıma işlemi bir kilit altında gerçekleştirilmez, bu, taşıma sırasında uçuş kapsamında hiçbir hafif görev olmadığından emin olmak için kullanıcıya ait olduğu anlamına gelir. Aksi takdirde, çok sayıda özel durum ortaya çıkabilir, bu durum istisnalara veya tutarsız duruma gelebilir.
 
-##  <a name="dtor"></a> ~ multitype_join
+## <a name="dtor"></a>~ multitype_join
 
-Yok eder `multitype_join` ileti bloğu.
+`multitype_join` mesajlaşma bloğunu yok eder.
 
-```
+```cpp
 ~multitype_join();
 ```
 
-##  <a name="release"></a> Yayın
+## <a name="release"></a>Yayın
 
-Önceki bir başarılı iletisi ayırma serbest bırakır.
+Önceki başarılı bir ileti ayırmasını serbest bırakır.
 
-```
+```cpp
 virtual void release(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -230,33 +230,33 @@ virtual void release(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Yayımlanan nesne.
+Yayımlanmakta olan `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `release` yöntemi.
+`release` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
-##  <a name="release_ref"></a> release_ref
+## <a name="release_ref"></a>release_ref
 
-Bir başvuru sayısı bu sürümleri `multiple_join` ileti bloğu.
+Bu `multiple_join` mesajlaşma bloğunda bir başvuru sayısı yayınlar.
 
-```
+```cpp
 virtual void release_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu yöntemi çağıran bir hedef blok için işaretçi.
+Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağıran bir `ITarget` bu kaynaktan bağlantısız bir nesne. Kaynak blok için hedef blok ayrılmış tüm kaynakları serbest bırakmak için kullanılabilir.
+Bu yöntem, bu kaynaktan bağlantısı kesilmekte olan bir `ITarget` nesnesi tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
 
-##  <a name="reserve"></a> ayırma
+## <a name="reserve"></a>ayırmaya
 
-Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `multitype_join` ileti bloğu.
+Daha önce bu `multitype_join` mesajlaşma bloğunun sunduğu bir iletiyi ayırır.
 
-```
+```cpp
 virtual bool reserve(
     runtime_object_identity _MsgId,
     _Inout_ ITarget<_Destination_type>* _PTarget);
@@ -265,37 +265,37 @@ virtual bool reserve(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-`runtime_object_identity` , `message` Ayrılan nesne.
+Ayrılan `message` nesnesinin `runtime_object_identity`.
 
 *_PTarget*<br/>
-Çağıran bir hedef blok için işaretçi `reserve` yöntemi.
+`reserve` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
+ileti başarıyla ayrıldıysa `true`, aksi takdirde `false`. Ayırmalar, aşağıdakiler dahil olmak üzere birçok nedenden dolayı başarısız olabilir: ileti zaten ayrılmış veya başka bir hedef tarafından kabul edildi, kaynak rezervasyonları reddedebilir ve bu şekilde devam eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırdıktan sonra `reserve`, başarılı olursa ya da çağırmalıdır `consume` veya `release` alabilir veya ileti, bir elinde sırasıyla vermek için.
+`reserve`çağırdıktan sonra, başarılı olduysa, iletinin sahipliğini almak ya da sağlamak için `consume` veya `release` çağırmanız gerekir.
 
-##  <a name="unlink_target"></a> unlink_target
+## <a name="unlink_target"></a>unlink_target
 
-Bu hedef bloğun olan bağlantısını kesen `multitype_join` ileti bloğu.
+Hedef bloğunun bu `multitype_join` mesajlaşma bloğundan bağlantısını kaldırır.
 
-```
+```cpp
 virtual void unlink_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bir işaretçi bir `ITarget` buradan bağlantısını kaldırmak için bloğu `multitype_join` ileti bloğu.
+Bu `multitype_join` mesajlaşma bloğundan bağlantısını kaldırmak için `ITarget` bloğuna yönelik bir işaretçi.
 
-##  <a name="unlink_targets"></a> unlink_targets
+## <a name="unlink_targets"></a>unlink_targets
 
-Bu tüm hedefleri olan bağlantısını kesen `multitype_join` ileti bloğu.
+Bu `multitype_join` mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır.
 
-```
+```cpp
 virtual void unlink_targets();
 ```
 

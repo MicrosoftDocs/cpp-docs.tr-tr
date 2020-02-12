@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed Class
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
-ms.openlocfilehash: eddcf44966d197068113c5e7817dad37841261a3
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 9a3f6f349fc3103893639fe209dcf23a07ffec56
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524841"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127130"
 ---
-# <a name="acceleratorviewremoved-class"></a>accelerator_view_removed Sınıfı
+# <a name="accelerator_view_removed-class"></a>accelerator_view_removed Sınıfı
 
-Windows zaman aşımı algılama ve kurtarma mekanizmasına bağlı temel DirectX çağrısı başarısız olduğunda oluşturulan özel durum.
+Windows zaman aşımı algılama ve kurtarma mekanizması nedeniyle temeldeki bir DirectX çağrısı başarısız olduğunda oluşturulan özel durum.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class accelerator_view_removed : public runtime_exception;
 ```
 
@@ -32,13 +32,13 @@ class accelerator_view_removed : public runtime_exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[accelerator_view_removed Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `accelerator_view_removed` sınıfı.|
+|[accelerator_view_removed Oluşturucusu](#ctor)|`accelerator_view_removed` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_view_removed_reason](#get_view_removed_reason)|Nedenini belirten bir HRESULT hata kodu döndürür `accelerator_view` nesnenin kaldırma.|
+|[get_view_removed_reason](#get_view_removed_reason)|`accelerator_view` nesnenin kaldırma işleminin nedenini gösteren bir HRESULT hata kodu döndürür.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,17 +50,17 @@ class accelerator_view_removed : public runtime_exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amprt.h
+**Üstbilgi:** amprt. h
 
-**Namespace:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
-## <a name="ctor"></a> accelerator_view_removed
+## <a name="ctor"></a>accelerator_view_removed
 
-Yeni bir örneğini başlatır [accelerator_view_removed](accelerator-view-removed-class.md) sınıfı.
+[Accelerator_view_removed](accelerator-view-removed-class.md) sınıfının yeni bir örneğini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 explicit accelerator_view_removed(
     const char * message,
     HRESULT view_removed_reason ) throw();
@@ -75,19 +75,19 @@ explicit accelerator_view_removed(
 Hatanın açıklaması.
 
 *view_removed_reason*<br/>
-Kaldırma nedenini belirten bir HRESULT hata kodu `accelerator_view` nesne.
+`accelerator_view` nesnesinin kaldırılma nedenini belirten bir HRESULT hata kodu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir örneğini `accelerator_view_removed` sınıfı.
+`accelerator_view_removed` sınıfının yeni bir örneği.
 
-## <a name="get_view_removed_reason"></a> get_view_removed_reason
+## <a name="get_view_removed_reason"></a>get_view_removed_reason
 
-Nedenini belirten bir HRESULT hata kodu döndürür `accelerator_view` nesnenin kaldırma.
+`accelerator_view` nesnenin kaldırma işleminin nedenini gösteren bir HRESULT hata kodu döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 HRESULT get_view_removed_reason() const throw();
 ```
 

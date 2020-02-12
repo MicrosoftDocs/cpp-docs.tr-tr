@@ -6,20 +6,20 @@ f1_keywords:
 - AMP_SHORT_VECTORS/unorm
 - AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
-ms.openlocfilehash: 059cd3a388d67e540a91146f2a287c375fb02bd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c9ec967be8be618e5f8ab3bad1bfd940bfeaef4
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405436"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126311"
 ---
 # <a name="unorm-class"></a>unorm Sınıfı
 
-Unorm numarasını temsil eder. Her bir kayan bir öğedir [0.0f, 1.0f] aralığında nokta sayısı.
+Bir unorm numarasını temsil eder. Her öğe [0.0 f, 1.0 f] aralığındaki bir kayan noktalı sayıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class unorm;
 ```
 
@@ -29,20 +29,20 @@ class unorm;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unorm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. İçin 0.0f başlatın.|
+|[unorm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. 0\.0 f 'ye başlatın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm::operator--||
-|unorm::operator float|Dönüştürme işleci. Kayan unorm sayıya dönüştürme noktası değeri.|
-|unorm::operator * =||
-|unorm::operator / =||
-|unorm::operator ++||
-|unorm::operator +=||
+|unorm:: operator--||
+|unorm:: operator float|Dönüştürme işleci. Unorm numarasını bir kayan nokta değerine dönüştürün.|
+|unorm:: operator * =||
+|unorm:: operator/=||
+|unorm:: operator + +||
+|unorm:: operator + =||
 |unorm::operator=||
-|unorm::operator-=||
+|unorm:: operator-=||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,15 +50,15 @@ class unorm;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> unorm
+## <a name="ctor"></a>unorm
 
-Varsayılan Oluşturucu. İçin 0.0f başlatın.
+Varsayılan Oluşturucu. 0\.0 f 'ye başlatın.
 
-```
+```cpp
 unorm(
     void) restrict(amp,
     cpu);
@@ -93,8 +93,8 @@ inline explicit unorm(
 *_V*<br/>
 Başlatmak için kullanılan değer.
 
-*_Diğer*<br/>
-Norm başlatmak için kullanılan nesne.
+*_Other*<br/>
+Başlatmak için kullanılan norm nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_scheduler_policy_thread_specification class
 ms.assetid: 2d0fafb2-18f8-4284-8040-3db640d33303
-ms.openlocfilehash: 26d09610c6bb9e0c87852c9804e094617b021273
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: b6c2fd853ae19c48ae04d6601eb47e5afcb71944
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341077"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143029"
 ---
-# <a name="invalidschedulerpolicythreadspecification-class"></a>invalid_scheduler_policy_thread_specification Sınıfı
+# <a name="invalid_scheduler_policy_thread_specification-class"></a>invalid_scheduler_policy_thread_specification Sınıfı
 
-Bu sınıf, eşzamanlılık sınırlarını ayarlamak için bir girişimde olduğunda oluşturulan bir özel durum açıklar bir `SchedulerPolicy` nesne gibi değerini `MinConcurrency` anahtar değerini azdır `MaxConcurrency` anahtarı.
+Bu sınıf, bir `SchedulerPolicy` nesnesinin eşzamanlılık sınırlarını ayarlamak için bir girişimde bulunulduğunda bir özel durum tanımlar ve `MinConcurrency` anahtarı değeri `MaxConcurrency` anahtarının değerinden daha az olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class invalid_scheduler_policy_thread_specification : public std::exception;
 ```
 
@@ -29,7 +29,7 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_scheduler_policy_thread_specification] (geçersiz-Zamanlayıcı-ilkeyi-değeri-class.md #ctor|Fazla Yüklendi. Oluşturur bir `invalid_scheduler_policy_value` nesne.|
+|[invalid_scheduler_policy_thread_specification] (geçersiz-Scheduler-Policy-value-class. MD # ctor|Fazla Yüklendi. `invalid_scheduler_policy_value` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -39,14 +39,15 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
-##  <a name="ctor"></a> invalid_scheduler_policy_thread_specification
+**Ad alanı:** eşzamanlılık
 
-Oluşturur bir `invalid_scheduler_policy_value` nesne.
+## <a name="ctor"></a>invalid_scheduler_policy_thread_specification
 
-```
+`invalid_scheduler_policy_value` nesnesi oluşturur.
+
+```cpp
 explicit _CRTIMP invalid_scheduler_policy_thread_specification(_In_z_ const char* _Message) throw();
 
 invalid_scheduler_policy_thread_specification() throw();
@@ -54,7 +55,7 @@ invalid_scheduler_policy_thread_specification() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

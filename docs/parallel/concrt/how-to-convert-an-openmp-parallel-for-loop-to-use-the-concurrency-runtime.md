@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme'
+title: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, parallel for loops
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - parallel for loops, converting from OpenMP to the Concurrency Runtime
 - parallel loops, converting from OpenMP to the Concurrency Runtime
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
-ms.openlocfilehash: bc408465f34f0558e9f426ae35b83d4610898414
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d96ba23582368fe72e61003823826a6f3ab807a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413898"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141760"
 ---
-# <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme
+# <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme
 
-Bu örnekte OpenMP kullanan temel bir döngü dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) ve [için](../../parallel/openmp/reference/for-openmp.md) eşzamanlılık çalışma zamanı kullanmak için yönergeleri [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritma.
+Bu örnek, Eşzamanlılık Çalışma Zamanı [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasını kullanmak için OpenMP [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) [ve yönergeleri kullanan](../../parallel/openmp/reference/for-openmp.md) temel bir döngünün nasıl dönüştürüleceğini gösterir.
 
-## <a name="example"></a>Örnek
+## <a name="example---prime-count"></a>Örnek-asal sayı
 
-Bu örnek sayısı rastgele değerler dizisi olarak asal sayıları hesaplamak için hem OpenMP hem de eşzamanlılık çalışma zamanı'nı kullanır.
+Bu örnek, bir rastgele değerler dizisindeki asal sayıların sayısını hesaplamak için hem OpenMP hem de Eşzamanlılık Çalışma Zamanı kullanır.
 
 [!code-cpp[concrt-openmp#1](../../parallel/concrt/codesnippet/cpp/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime_1.cpp)]
 
@@ -33,23 +33,23 @@ Using the Concurrency Runtime...
 found 107254 prime numbers.
 ```
 
-`parallel_for` Algoritması ve OpenMP 3.0 izin dizin türünü işaretli bir integral türe veya bir işaretsiz tamsayı türü olmalıdır. `parallel_for` Algoritması da sağlar belirtilen aralık işaretli bir türe overflow değil. OpenMP sürümleri 2.0 ve 2.5 yalnızca imzalı tamsayı dizini türü için izin verir. OpenMP dizin aralığına da doğrulamaz.
+`parallel_for` algoritması ve OpenMP 3,0, Dizin türünün imzalı bir integral türü veya işaretsiz integral türü olmasını sağlar. `parallel_for` algoritması, belirtilen aralığın imzalı bir tür üzerinde taşma olmadığından da emin olur. OpenMP sürümleri 2,0 ve 2,5 yalnızca imzalı integral Dizin türlerine izin verir. OpenMP, Dizin aralığını da doğrulamaz.
 
-Eşzamanlılık Çalışma zamanı kullanan bu örnek sürümünü de kullanan bir [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) yerine nesne [atomik](../../parallel/openmp/reference/atomic.md) gerek kalmadan, sayaç değeri artırmak için yönergesi Eşitleme.
+Eşzamanlılık Çalışma Zamanı kullanan Bu örnek, sayaç değerini eşitlemeye gerek kalmadan artırmak için [atomik](../../parallel/openmp/reference/atomic.md) yönergesinin yerine bir [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) nesnesi de kullanır.
 
-Hakkında daha fazla bilgi için `parallel_for` ve diğer paralel algoritmalar için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md). Hakkında daha fazla bilgi için `combinable` sınıfı [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).
+`parallel_for` ve diğer paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md). `combinable` sınıfı hakkında daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).
 
-## <a name="example"></a>Örnek
+## <a name="example---use-stdarray"></a>Örnek-std:: Array kullanın
 
-Bu örnek Öncekine gerçekleştirileceği değiştirir bir [std::array](../../standard-library/array-class-stl.md) yerel bir dizi nesnesi yerine. Tamsayı dizini türleri yalnızca imzalı OpenMP sürümleri 2.0 ve 2.5 olanak tanımak için bir `parallel_for` yapısı, paralel bir C++ Standart Kitaplığı kapsayıcının öğelerine erişmek için yineleyiciler kullanamazsınız. Paralel Desen kitaplığı (PPL) sağlayan [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) yinelemeli bir kapsayıcı tarafından sağlananlar gibi üzerinde paralel görevler gerçekleştiren algoritması C++ standart kitaplığı. Bölümleme aynı mantığı kullanır, `parallel_for` algoritması kullanır. `parallel_for_each` Algoritması benzer C++ standart Kitaplığı [std::for_each](../../standard-library/algorithm-functions.md#for_each) hariç algoritmasını `parallel_for_each` algoritması görevleri aynı anda yürütür.
+Bu örnek, bir öncekini yerel dizi yerine [std:: Array](../../standard-library/array-class-stl.md) nesnesine göre hareket etmek için bir önceki öğenin konumunu değiştirir. OpenMP sürümleri 2,0 ve 2,5, yalnızca bir `parallel_for` yapısında işaretli integral Dizin türlerine izin vereceğinden, bir C++ standart kitaplık kapsayıcısının öğelerine paralel olarak erişmek için yineleyiciler kullanamazsınız. Paralel Desenler kitaplığı (PPL), görevleri C++ standart kitaplık tarafından sağlananlar gibi yinelemeli bir kapsayıcıda paralel olarak gerçekleştiren [eşzamanlılık::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasını sağlar. `parallel_for` algoritmasının kullandığı bölümleme mantığını kullanır. `parallel_for_each` algoritması C++ standart kitaplık [std:: for_each](../../standard-library/algorithm-functions.md#for_each) algoritmasına benzer, ancak `parallel_for_each` algoritması görevleri eşzamanlı olarak yürütür.
 
 [!code-cpp[concrt-openmp#10](../../parallel/concrt/codesnippet/cpp/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime_2.cpp)]
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `concrt-omp-count-primes.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `concrt-omp-count-primes.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc/OpenMP concrt-omp-count-primes.cpp**
+> **CL. exe/EHsc/OpenMP concrt-omp-Count-Primes. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

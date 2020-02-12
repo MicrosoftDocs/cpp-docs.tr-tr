@@ -12,34 +12,34 @@ f1_keywords:
 helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-ms.openlocfilehash: 46af59708ef3f0d91883c52502bce4d09676ca77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e8dae7b76ea2efc852486a19f5d298cda477012
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181950"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126727"
 ---
 # <a name="extent-class-c-amp"></a>extent Sınıfı (C++ AMP)
 
-Oluşan bir vektörü temsil eder *N* uzayın sınırlarını belirten bir tamsayı değerleri bir *N*-kaynağı 0 olan boyutlu boşluk. Vektördeki değerler en önemliden en az önemliye doğru sıralanır.
+0 ' ın kaynağına sahip *n*boyutlu bir alanın sınırlarını belirten *n* tamsayı değerlerinin bir vektörünü temsil eder. Vektördeki değerler en önemli değerden en az önemli olarak sıralanır.
 
-### <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <int _Rank>
 class extent;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Dizin*<br/>
-Boyut sayısı `extent` nesne.
+*_Rank*<br/>
+`extent` nesnesinin sıralaması.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp.h
+**Üst bilgi:** amp. h
 
-**Namespace:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
 ## <a name="members"></a>Üyeler
 
@@ -47,68 +47,68 @@ Boyut sayısı `extent` nesne.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Uzantı Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `extent` sınıfı.|
+|[Uzantı Oluşturucusu](#ctor)|`extent` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[içerir](#contains)|Doğrular belirtilen `extent` nesnesinin belirtilen boyut sayısına sahip.|
-|[Boyutu](#size)|(Birimlerindeki öğelerin) kapsamın toplam doğrusal boyutu döndürür.|
-|[kutucuğu](#tile)|Üreten bir `tiled_extent` belirtilen boyutlar tarafından verilen döşeme kapsamları ile bir nesne.|
+|[vardır](#contains)|Belirtilen `extent` nesnesinin belirtilen dereceye sahip olduğunu doğrular.|
+|[boyutla](#size)|Kapsamın toplam doğrusal boyutunu döndürür (öğe birimleri cinsinden).|
+|[Kaldır](#tile)|Belirtilen boyutlar tarafından verilen kutucuk uzantılarına sahip bir `tiled_extent` nesnesi oluşturur.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator-](#operator_min)|Yeni bir `extent` çıkararak oluşturulan nesne `index` öğelerinden karşılık gelen öğeleri `extent` öğeleri.|
-|[--işleci](#operator_min_min)|Azaltır her öğeye `extent` nesne.|
-|[operator%=](#operator_mod_eq)|Her bir öğenin modunu (kalanını) hesaplar `extent` o öğe bir sayıya bölündüğünde nesne.|
-|[operator*=](#operator_star_eq)|Her öğeyi çarpar `extent` nesne bir sayı.|
-|[/ = işleci](#operator_min_eq)|Her öğeye böler `extent` nesne bir sayı.|
-|[Extent::operator\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
-|[operator +](#operator_add)|Yeni bir `extent` karşılık gelen toplayarak oluşturulan nesne `index` ve `extent` öğeleri.|
-|[operator ++](#operator_add_add)|Her öğeyi artırır `extent` nesne.|
-|[operator+=](#operator_add_eq)|Her öğeye belirtilen sayıyı ekler `extent` nesne.|
-|[operator=](#operator_eq)|Başka bir deponun içeriğini kopyalar `extent` bu nesne içine.|
-|[-= işleci](#operator_min_eq)|Her öğeden belirtilen sayıyı çıkartır `extent` nesne.|
+|[işlecinde](#operator_min)|Karşılık gelen `extent` öğelerinden `index` öğelerini çıkararak oluşturulan yeni bir `extent` nesnesi döndürür.|
+|[işleç--](#operator_min_min)|`extent` nesnesinin her öğesini azaltır.|
+|[işleç% =](#operator_mod_eq)|Bu öğe bir sayıyla bölündüğünde `extent` nesnesindeki her öğenin mod (kalanı) sayısını hesaplar.|
+|[işleç * =](#operator_star_eq)|`extent` nesnesinin her öğesini bir sayı ile çarpar.|
+|[işleç/=](#operator_min_eq)|`extent` nesnesinin her öğesini bir sayıya böler.|
+|[kapsam:: operator\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
+|[işleç +](#operator_add)|Karşılık gelen `index` ve `extent` öğeleri eklenerek oluşturulan yeni bir `extent` nesnesi döndürür.|
+|[işleç + +](#operator_add_add)|`extent` nesnesinin her bir öğesini arttırır.|
+|[işleç + =](#operator_add_eq)|`extent` nesnesinin her öğesine belirtilen sayıyı ekler.|
+|[işleç =](#operator_eq)|Başka bir `extent` nesnesinin içeriğini buna kopyalar.|
+|[işleç-=](#operator_min_eq)|`extent` nesnesinin her öğesinden belirtilen sayıyı çıkartır.|
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[sıra sabiti](#rank_constant)|Boyut sayısını alır `extent` nesne.|
+|[sıralama sabiti](#rank_constant)|`extent` nesnesinin derecesini alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 `extent`
 
-## <a name="contains"></a> içerir
+## <a name="contains"></a>vardır
 
-Belirtir olup olmadığını belirtilen [dizin](index-class.md) değeri 'kapsam' nesnesinde yer alan.
+Belirtilen [Dizin](index-class.md) değerinin ' uzantı ' nesnesi içinde içerilip içerilmeyeceğini gösterir.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 bool contains(const index<rank>& _Index) const restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Index*<br/>
-`index` Test etmek için değer.
+Sınanacak `index` değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** , belirtilen *dizin* değer kapsanıyorsa `extent` nesne; Aksi takdirde, **false**.
+Belirtilen *Dizin* değeri `extent` nesnesinde içeriyorsa **true** . Aksi takdirde, **false**.
 
-##  <a name="ctor"></a> Kapsam
+## <a name="ctor"></a>genişliğini
 
-'Kapsam' sınıfının yeni bir örneğini başlatır.
+' Uzantı ' sınıfının yeni bir örneğini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent() restrict(amp,cpu);
 extent(const extent<_Rank>& _Other) restrict(amp,cpu);
 explicit extent(int _I) restrict(amp,cpu);
@@ -119,8 +119,8 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Dizisi*<br/>
-Bir dizi `_Rank` yeni oluşturmak için kullanılan tamsayılar `extent` nesne.
+*_Array*<br/>
+Yeni `extent` nesnesini oluşturmak için kullanılan `_Rank` tamsayılar dizisi.
 
 *_I*<br/>
 Kapsamın uzunluğu.
@@ -129,99 +129,99 @@ Kapsamın uzunluğu.
 En önemli boyutun uzunluğu.
 
 *_I1*<br/>
-Sonraki-en-önemli boyutun uzunluğu.
+Bir sonraki en-önemli boyutun uzunluğu.
 
 *_I2*<br/>
 En az önemli boyutun uzunluğu.
 
-*_Diğer*<br/>
-Bir `extent` nesne yeni `extent` nesne dayanır.
+*_Other*<br/>
+Yeni `extent` nesnesinin temel aldığı `extent` nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Parametresiz oluşturucusu başlatan bir `extent` üç dereceli bir nesne.
+Varsayılan Oluşturucu, üç dereceye sahip bir `extent` nesnesini başlatır.
 
-Bir dizi oluşturmak için kullanılıyorsa bir `extent` nesne, dizi uzunluğu, boyut sayısı eşleşmelidir `extent` nesne.
+Bir dizi `extent` nesnesi oluşturmak için kullanılırsa, dizi uzunluğu `extent` nesnesinin sırasıyla eşleşmelidir.
 
-##  <a name="operator_mod_eq"></a> operator % =
+## <a name="operator_mod_eq"></a>işleç% =
 
-Bu öğe bir sayıya bölündüğünde 'kapsam' içindeki her öğenin modunu (kalanını) hesaplar.
+Bu öğe bir sayıyla bölündüğünde, ' uzantı ' içindeki her öğenin mod (geri kalanı) sayısını hesaplar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Modüllerini bulunacak sayı.
+Mod ' un bulunacağı sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`extent` Nesne.
+`extent` nesnesi.
 
-##  <a name="operator_star_eq"></a> operator * =
+## <a name="operator_star_eq"></a>işleç * =
 
-Her bir öğesinde 'kapsam' nesnesini belirtilen sayı ile çarpar.
+' Uzantı ' nesnesindeki her öğeyi belirtilen sayı ile çarpar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Çarpılacağı sayı.
+Çarpılacak sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`extent` Nesne.
+`extent` nesnesi.
 
-## <a name="operator_add"></a> operator +
+## <a name="operator_add"></a>işleç +
 
-Yeni bir `extent` karşılık gelen ekleyerek oluşturulan nesne `index` ve `extent` öğeleri.
+Karşılık gelen `index` ve `extent` öğeleri eklenerek oluşturulan yeni bir `extent` nesnesi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-`index` Eklenecek öğeleri içeren nesne.
+Eklenecek öğeleri içeren `index` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni `extent` nesne.
+Yeni `extent` nesnesi.
 
-##  <a name="operator_add_add"></a> operator ++
+## <a name="operator_add_add"></a>işleç + +
 
-'Kapsam' nesnesini her öğeyi artırır.
+' Uzantı ' nesnesinin her bir öğesini arttırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator++() restrict(amp,cpu);
 extent<_Rank> operator++(int)restrict(amp,cpu);
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önek işleci için `extent` nesne (`*this`). Sonek operatörü için yeni bir `extent` nesne.
+Önek işleci için, `extent` nesnesi (`*this`). Son ek işleci için yeni bir `extent` nesnesi.
 
-##  <a name="operator_add_eq"></a> += işleci
+## <a name="operator_add_eq"></a>işleç + =
 
-'Kapsam' nesnesini her öğeye belirtilen sayıyı ekler.
+' Uzantı ' nesnesinin her öğesine belirtilen sayıyı ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator+=(const extent<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator+=(const index<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
@@ -230,72 +230,72 @@ extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Sayı, dizin veya kapsam eklemek için.
+Eklenecek sayı, dizin veya kapsam.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ortaya çıkan `extent` nesne.
+Elde edilen `extent` nesnesi.
 
-##  <a name="operator_min"></a> operator-
+## <a name="operator_min"></a>işlecinde
 
-Yeni bir oluşturur `extent` belirtilen içindeki her öğeyi çıkararak nesneyi `index` karşılık gelen öğe bu nesneden `extent` nesne.
+Bu `extent` nesnesindeki karşılık gelen öğeden belirtilen `index` nesnesindeki her öğeyi çıkararak yeni bir `extent` nesnesi oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-`index` Çıkarılacak öğeleri içeren nesne.
+Çıkarılacak öğeleri içeren `index` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni `extent` nesne.
+Yeni `extent` nesnesi.
 
-##  <a name="operator_min_min"></a> --işleci
+## <a name="operator_min_min"></a>işleç--
 
-Azaltır 'kapsam' nesnesindeki her öğe.
+' Uzantı ' nesnesindeki her öğeyi azaltır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator--() restrict(amp,cpu);
 extent<_Rank> operator--(int)restrict(amp,cpu);
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önek işleci için `extent` nesne (`*this`). Sonek operatörü için yeni bir `extent` nesne.
+Önek işleci için, `extent` nesnesi (`*this`). Son ek işleci için yeni bir `extent` nesnesi.
 
-##  <a name="operator_div_eq"></a> / = işleci
+## <a name="operator_div_eq"></a>işleç/=
 
-'Kapsam' nesnesindeki her öğe tarafından belirtilen sayıda böler.
+' Uzantı ' nesnesindeki her öğeyi belirtilen sayıda böler.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Bölecek sayı.
+Bölünecek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`extent` Nesne.
+`extent` nesnesi.
 
-##  <a name="operator_min_eq"></a> -= işleci
+## <a name="operator_min_eq"></a>işleç-=
 
-'Kapsam' nesnesini her öğeden belirtilen sayıyı çıkartır.
+' Uzantı ' nesnesinin her öğesinden belirtilen sayıyı çıkartır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator-=(const extent<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator-=(const index<_Rank>& _Rhs) restrict(amp,cpu);
 extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
@@ -308,34 +308,34 @@ extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ortaya çıkan `extent` nesne.
+Elde edilen `extent` nesnesi.
 
-##  <a name="operator_eq"></a> işleç =
+## <a name="operator_eq"></a>işleç =
 
-Başka bir 'kapsam' nesnenin içeriğini, bunu kopyalar.
+Başka bir ' uzantı ' nesnesinin içeriğini buna kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Diğer*<br/>
-`extent` Kopyalanacak nesne.
+*_Other*<br/>
+Kopyalamanın `extent` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu başvuru `extent` nesne.
+Bu `extent` nesnesine bir başvuru.
 
-##  <a name="operator_at"></a> Extent::operator \[\]
+## <a name="operator_at"></a>kapsam:: operator \[\]
 
 Belirtilen dizindeki öğeyi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 int operator[](unsigned int _Index) const restrict(amp,cpu);
 int& operator[](unsigned int _Index) restrict(amp,cpu);
 ```
@@ -343,37 +343,37 @@ int& operator[](unsigned int _Index) restrict(amp,cpu);
 ### <a name="parameters"></a>Parametreler
 
 *_Index*<br/>
-0 ile boyut sayısı eksi 1 arasında bir tamsayı.
+0 ile sıra eksi 1 arasında bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizindeki öğe.
+Belirtilen dizinde olan öğe.
 
-##  <a name="rank_constant"></a> boyut sayısı
+## <a name="rank_constant"></a>sırası
 
-Boyut sayısı 'kapsam' nesnesini depolar.
+' Uzantı ' nesnesinin derecesini depolar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
-##  <a name="size"></a> Boyutu
+## <a name="size"></a>boyutla
 
-Toplam doğrusal boyutunu döndürür `extent` nesne (birimlerindeki öğeleri).
+`extent` nesnesinin toplam doğrusal boyutunu döndürür (öğe birimleri cinsinden).
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 unsigned int size() const restrict(amp,cpu);
 ```
 
-## <a name="tile"></a> kutucuğu
+## <a name="tile"></a>Kaldır
 
-Belirtilen döşeme boyutları ile bir tiled_extent nesnesi oluşturur.
+Belirtilen döşeme boyutlarına sahip bir tiled_extent nesnesi oluşturur.
 
-```
+```cpp
 template <int _Dim0>
 tiled_extent<_Dim0> tile() const ;
 
@@ -387,11 +387,11 @@ tiled_extent<_Dim0, _Dim1, _Dim2> tile() const ;
 ### <a name="parameters"></a>Parametreler
 
 *_Dim0*<br/>
-Döşenmiş kapsamın en önemli bileşeni.
+Döşeli uzantının en önemli bileşeni.
 *_Dim1*<br/>
-Döşenmiş kapsamın sonraki-en-önemli bileşeni.
+Döşeli uzantının en çok önemli bir bileşeni.
 *_Dim2*<br/>
-Döşenmiş kapsamın en az önemli bileşeni.
+Döşeli uzantının en az önemli bileşeni.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

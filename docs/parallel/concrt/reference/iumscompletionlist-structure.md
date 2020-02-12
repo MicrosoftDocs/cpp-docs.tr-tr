@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSCompletionList structure
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-ms.openlocfilehash: 567b8668934d81c49757660d1a60ca74eb033e68
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 02382ef4606a6e73804fcbd5ce7735ecf2f0dcc7
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339515"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140045"
 ---
 # <a name="iumscompletionlist-structure"></a>IUMSCompletionList Yapısı
 
-UMS tamamlanma listesini temsil eder. UMS iş parçacığı blokları, scheduler'ın zamanlama atanan olduğunda bağlamı ne özgün iş parçacığı engellenir sırada temel alınan sanal işlemci kökünde zamanlamak bir karar vermek için gönderilir. Özgün iş parçacığı engellemesinin kaldırıldığı, işletim sistemi, bu arabirimle erişilebilen, tamamlanma listesini sıralar. Zamanlayıcı belirtilen zamanlama bağlamı veya iş için arar herhangi bir yerde tamamlanma listesi sorgulayabilirsiniz.
+UMS tamamlama listesini temsil eder. Bir UMS iş parçacığı engellediğinde, başlangıçtaki iş parçacığı engellenirken temeldeki sanal işlemci kökünde zamanlanmak üzere bir karar vermek üzere Scheduler 'ın belirlenen zamanlama bağlamı gönderilir. Orijinal iş parçacığı kaldırılıyorsa, işletim sistemi bu arabirim aracılığıyla erişilebilen tamamlanma listesine sıraya alır. Zamanlayıcı, belirlenen zamanlama bağlamındaki veya iş için arama yaptığı başka bir yerde tamamlama listesini sorgulayabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 struct IUMSCompletionList;
 ```
 
@@ -31,11 +31,11 @@ struct IUMSCompletionList;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Iumscompletionlist::getunblocknotifications](#getunblocknotifications)|Zinciri alır `IUMSUnblockNotification` , ilişkili iş parçacığı proxy Engellemesi en son çalıştırılışından itibaren bu yöntem çağrıldığı yürütme bağlamları temsil eden arabirim.|
+|[IUMSCompletionList:: GetUnblockNotifications](#getunblocknotifications)|Bu yöntemin en son çağrılmasından bu yana ilişkili iş parçacığı proxy 'lerinin engellemesi kaldırılmış olan yürütme bağlamlarını temsil eden bir `IUMSUnblockNotification` arabirimleri zinciri alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir zamanlayıcı hangi eylemleri tamamlanma listesi öğelerinden sıradan çıkarma için bu arabirimi kullanan sonra gerçekleştirilen hakkında çok dikkatli olmanız gerekir. Öğeler, scheduler'ın çalıştırılabilir bağlamları listesinde yerleştirilmelidir ve olabildiğince çabuk genel olarak erişilebilir. Dequeued öğeleri bir rastgele kilidi sahipliğini verildi tamamen mümkündür. Zamanlayıcı öğeleri kuyruktan çağrı ve genel olarak Zamanlayıcı içindeki erişilebilir bir listedeki öğelerin yerleşimini arasında engelleyebilir hiçbir rastgele işlev çağrıları yapabilir.
+Bir zamanlayıcı, tamamlanma listesinden öğeleri yeniden ayıklamanız için bu arabirimden kullandıktan sonra hangi eylemlerin gerçekleştirildiği konusunda dikkatli bir şekilde dikkat etmeniz gerekir. Öğeler Scheduler 'ın çalıştırılabilir içerik listesine yerleştirilmelidir ve genellikle mümkün olan en kısa sürede erişilebilir olmalıdır. Sıradan çıkarılan öğelerden birinin rastgele bir kilidin sahipliği verilmesinden tamamen mümkün değildir. Zamanlayıcı, öğeleri sıradan çıkarma ve bu öğelerin genellikle Zamanlayıcı içinden erişilebilen bir liste üzerinde yerleşimi arasında engelleyebilen rastgele bir işlev çağrısı yapabilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -43,25 +43,25 @@ Bir zamanlayıcı hangi eylemleri tamamlanma listesi öğelerinden sıradan çı
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="getunblocknotifications"></a>  Iumscompletionlist::getunblocknotifications metodu
+## <a name="getunblocknotifications"></a>IUMSCompletionList:: GetUnblockNotifications yöntemi
 
-Zinciri alır `IUMSUnblockNotification` , ilişkili iş parçacığı proxy Engellemesi en son çalıştırılışından itibaren bu yöntem çağrıldığı yürütme bağlamları temsil eden arabirim.
+Bu yöntemin en son çağrılmasından bu yana ilişkili iş parçacığı proxy 'lerinin engellemesi kaldırılmış olan yürütme bağlamlarını temsil eden bir `IUMSUnblockNotification` arabirimleri zinciri alır.
 
-```
+```cpp
 virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Zinciri `IUMSUnblockNotification` arabirimleri.
+`IUMSUnblockNotification` arabirimleri zinciri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen bildirimleri yürütme bağlamları filtrelerden geçersiz olur.
+Yürütme bağlamları yeniden zamanlandıktan sonra döndürülen bildirimler geçersizdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

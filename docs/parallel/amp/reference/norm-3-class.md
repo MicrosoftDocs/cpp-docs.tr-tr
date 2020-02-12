@@ -72,26 +72,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_3::set_zx
 - amp_short_vectors/Concurrency::graphics::norm_3::bgr
 ms.assetid: 17081060-14ce-477e-a71a-9801b0f1d9e4
-ms.openlocfilehash: cec778e6cdc53871b7987ef5a2faf529eea6d4f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f7123f047a92c377dedefbc5be11e30f5d77db46
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351660"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142163"
 ---
-# <a name="norm3-class"></a>norm_3 Sınıfı
+# <a name="norm_3-class"></a>norm_3 Sınıfı
 
-Üç normal sayıdan oluşan bir kısa vektörü temsil eder.
+Üç normal sayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class norm_3;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -101,7 +101,7 @@ class norm_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[norm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[norm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -123,13 +123,13 @@ class norm_3;
 |norm_3::get_zy||
 |norm_3::get_zyx||
 |norm_3::ref_b||
-|norm_3::ref_g||
+|norm_3:: ref_g||
 |norm_3::ref_r||
 |norm_3::ref_x||
 |norm_3::ref_y||
 |norm_3::ref_z||
-|norm_3::set_x||
-|norm_3::set_xy||
+|norm_3:: set_x||
+|norm_3:: set_xy||
 |norm_3::set_xyz||
 |norm_3::set_xz||
 |norm_3::set_xzy||
@@ -148,46 +148,46 @@ class norm_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_3::operator-||
-|norm_3::operator--||
-|norm_3::operator * =||
-|norm_3::operator / =||
+|norm_3:: operator-||
+|norm_3:: operator--||
+|norm_3:: operator * =||
+|norm_3:: operator/=||
 |norm_3::operator++||
-|norm_3::operator +=||
+|norm_3:: operator + =||
 |norm_3::operator=||
-|norm_3::operator-=||
+|norm_3:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#size)||
+|[Boyut sabiti](#size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_3::b||
+|norm_3:: b||
 |norm_3::bg||
 |norm_3::bgr||
-|norm_3::br||
-|norm_3::brg||
-|norm_3::g||
-|norm_3::GB||
-|norm_3::GBR||
-|norm_3::Gr||
-|norm_3::Grb||
-|norm_3::r||
-|norm_3::RB||
-|norm_3::rbg||
+|norm_3:: br||
+|norm_3:: brg||
+|norm_3:: g||
+|norm_3:: GB||
+|norm_3:: GbR||
+|norm_3:: gr||
+|norm_3:: GRB||
+|norm_3:: r||
+|norm_3:: RB||
+|norm_3:: RBG||
 |norm_3::rg||
 |norm_3::rgb||
-|norm_3::x||
-|norm_3::xy||
-|norm_3::xyz||
-|norm_3::xz||
-|norm_3::xzy||
-|norm_3::y||
+|norm_3:: x||
+|norm_3:: XY||
+|norm_3:: xyz||
+|norm_3:: xz||
+|norm_3:: xzy||
+|norm_3:: y||
 |norm_3::yx||
 |norm_3::yxz||
 |norm_3::yz||
@@ -204,17 +204,17 @@ class norm_3;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a> norm_3 Oluşturucusu
+## <a name="ctor"></a>norm_3 Oluşturucusu
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 norm_3() restrict(amp,cpu);
 norm_3(
    norm _V0,
@@ -257,28 +257,28 @@ explicit inline norm_3(
 ) restrict(amp,cpu);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
 ## <a name="a-namesize-size-constant"></a><a name="size"> boyutu sabiti
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int size = 3;
 ```
 

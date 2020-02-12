@@ -8,20 +8,20 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::rank Constant
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
-ms.openlocfilehash: 5244ae5df99b06c77f4eb27317e5829b21fabf24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8978a548ed246c59d7e7f007f1180685c7343a14
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405423"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126246"
 ---
-# <a name="writeonlytextureview-class"></a>writeonly_texture_view Sınıfı
+# <a name="writeonly_texture_view-class"></a>writeonly_texture_view Sınıfı
 
-Bir dokuya salt yazılır erişim sağlar.
+Bir dokuya WriteOnly erişimi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <
     typename value_type,
     int _Rank
@@ -35,17 +35,17 @@ template <
 class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<value_type, _Rank>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *value_type*<br/>
 Dokudaki öğelerin türü.
 
-*_Dizin*<br/>
-Dokunun boyut sayısı.
+*_Rank*<br/>
+Dokunun derecesi.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -56,8 +56,8 @@ Dokunun boyut sayısı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[writeonly_texture_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `writeonly_texture_view` sınıfı.|
-|[~ writeonly_texture_view yok Edicisi](#ctor)|Yok eder `writeonly_texture_view` nesne.|
+|[writeonly_texture_view Oluşturucusu](#ctor)|`writeonly_texture_view` sınıfının yeni bir örneğini başlatır.|
+|[~ writeonly_texture_view yok edici](#ctor)|`writeonly_texture_view` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -69,13 +69,13 @@ Dokunun boyut sayısı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator=](#operator_eq)|Belirtilen kopyalar `writeonly_texture_view` buna nesne.|
+|[işleç =](#operator_eq)|Belirtilen `writeonly_texture_view` nesnesini buna kopyalar.|
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[sıra sabiti](#rank)|Boyut sayısını alır `writeonly_texture_view` nesne.|
+|[sıralama sabiti](#rank)|`writeonly_texture_view` nesnesinin derecesini alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -85,49 +85,49 @@ Dokunun boyut sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_graphics.h
+**Üst bilgi:** amp_graphics. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="dtor"></a> ~ writeonly_texture_view
+## <a name="dtor"></a>~ writeonly_texture_view
 
-Yok eder `writeonly_texture_view` nesne.
+`writeonly_texture_view` nesnesini yok eder.
 
-```
+```cpp
 ~writeonly_texture_view() restrict(amp,cpu);
 ```
 
-##  <a name="operator_eq"></a> işleç =
+## <a name="operator_eq"></a>işleç =
 
-Belirtilen kopyalar `writeonly_texture_view` buna nesne.
+Belirtilen `writeonly_texture_view` nesnesini buna kopyalar.
 
-```
+```cpp
 writeonly_texture_view<value_type, _Rank>& operator= (
     const writeonly_texture_view<value_type, _Rank>& _Other) restrict(amp,cpu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Diğer*<br/>
-`writeonly_texture_view` Kopyalanacak nesne.
+*_Other*<br/>
+kopyalamanın `writeonly_texture_view` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu başvuru `writeonly_texture_view` nesne.
+Bu `writeonly_texture_view` nesnesine bir başvuru.
 
-##  <a name="rank"></a> boyut sayısı
+## <a name="rank"></a>sırası
 
-Boyut sayısını alır `writeonly_texture_view` nesne.
+`writeonly_texture_view` nesnesinin derecesini alır.
 
-```
+```cpp
 static const int rank = _Rank;
 ```
 
-##  <a name="set"></a> Ayarlayın
+## <a name="set"></a>kurmak
 
 Belirtilen dizindeki öğenin değerini ayarlar.
 
-```
+```cpp
 void set(
     const index<_Rank>& _Index,
     const value_type& value) const restrict(amp);
@@ -139,13 +139,13 @@ void set(
 Öğenin dizini.
 
 *value*<br/>
-Öğenin yeni değeri.
+Öğesinin yeni değeri.
 
-##  <a name="ctor"></a> writeonly_texture_view
+## <a name="ctor"></a>writeonly_texture_view
 
-Yeni bir örneğini başlatır `writeonly_texture_view` sınıfı.
+`writeonly_texture_view` sınıfının yeni bir örneğini başlatır.
 
-```
+```cpp
 writeonly_texture_view(
     texture<value_type,
     _Rank>& _Src) restrict(amp);
@@ -157,14 +157,14 @@ writeonly_texture_view(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Dizin*<br/>
-Dokunun boyut sayısı.
+*_Rank*<br/>
+Dokunun derecesi.
 
 *value_type*<br/>
 Dokudaki öğelerin türü.
 
 *_Src*<br/>
-Oluşturmak için kullanılan doku `writeonly_texture_view`.
+`writeonly_texture_view`oluşturmak için kullanılan doku.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

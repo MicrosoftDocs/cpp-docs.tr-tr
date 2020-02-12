@@ -1,61 +1,61 @@
 ---
-title: 'Nasıl yapılır: Etkinliği arttırmak için paralel kapsayıcılar kullanma'
+title: 'Nasıl yapılır: Etkinliği Arttırmak için Paralel Kapsayıcılar Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - increasing efficiency with parallel containers [Concurrency Runtime]
 - concurrent_queue class, examples
 - concurrent_vector class, examples
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-ms.openlocfilehash: 2479915b167ee3dbc2ce43d9c2733efc74818bbe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd120d1fbe0f73ed0974efda5a1aa643a1afde9d
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394448"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143005"
 ---
-# <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>Nasıl yapılır: Etkinliği arttırmak için paralel kapsayıcılar kullanma
+# <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>Nasıl yapılır: Etkinliği Arttırmak için Paralel Kapsayıcılar Kullanma
 
-Bu konuda, verimli bir şekilde depolamak ve paralel verilere erişmek için paralel kapsayıcılar kullanma gösterilmektedir.
+Bu konu, paralel kapsayıcıları kullanarak paralel olarak verileri nasıl depolamak ve verilere erişmek için nasıl kullanılacağını gösterir.
 
-Örnek kod asal ve paralel Carmichael sayı kümesini hesaplar. Ardından, her Carmichael numarası için kod ana Etkenler bu sayının hesaplar.
+Örnek kod, ana ve Carmichael numaralarının kümesini paralel olarak hesaplar. Ardından, her Carmichael numarası için, kod bu sayının asal etmenlerini hesaplar.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği `is_prime` giriş değeri asal sayı olup olmadığını belirleyen işlev ve `is_carmichael` işlevin giriş değeri bir Carmichael sayı olup olmadığını belirler.
+Aşağıdaki örnek, bir giriş değerinin asal sayı olup olmadığını belirleyen `is_prime` işlevini ve giriş değerinin bir Carmichael numarası olup olmadığını belirleyen `is_carmichael` işlevini gösterir.
 
 [!code-cpp[concrt-carmichael-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_1.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte `is_prime` ve `is_carmichael` asal ve Carmichael sayıları hesaplamak için işlevleri. Örnekte [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) ve [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmaları her işlem için paralel olarak ayarlayın. Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+Aşağıdaki örnek, `is_prime` ve `is_carmichael` işlevlerini kullanarak asal ve Carmichael numaralarının kümelerini hesaplar. Örnek, her kümeyi paralel olarak hesaplamak için [eşzamanlılık::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) ve [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmalarını kullanır. Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-Bu örnekte bir [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) numaraları daha sonra iş sırası olarak o nesne kullanacağınız Carmichael kümesini tutacak nesne. Bunu kullanan bir [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) bunu daha sonra bu ana Etkenler bulmak için yineleme çünkü asal sayıları kümesini tutacak nesne.
+Bu örnek, daha sonra bir iş kuyruğu olarak bu nesneyi kullanacağı için bir [concurrency:: concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) nesnesi kullanır. Daha sonra Asal faktörleri bulmak için bu küme içinde yinelendirilebileceğinden, bir [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) nesnesini, asal sayılar kümesini tutmak için kullanır.
 
 [!code-cpp[concrt-carmichael-primes#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_2.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği `prime_factors_of` deneme bölme verilen değerin tüm ana Etkenler bulmak için kullandığı işlevi.
+Aşağıdaki örnek, verilen değerin tüm asal faktörlerini bulmak için deneme bölümünü kullanan `prime_factors_of` işlevini gösterir.
 
-Bu işlev kullanır [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) asal sayıları toplulukta tekrarlama için algoritma. `concurrent_vector` Nesnesi eşzamanlı olarak ana Etkenler sonucu eklemek paralel bir döngüden sağlar.
+Bu işlev, asal sayıların toplanması yoluyla yinelemek için [eşzamanlılık::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasını kullanır. `concurrent_vector` nesnesi, paralel döngünün sonuca aynı anda ana faktörleri eklemesini sağlar.
 
 [!code-cpp[concrt-carmichael-primes#3](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_3.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte çağırarak Carmichael sayı sıradaki her bir öğe işler `prime_factors_of` kendi ana Etkenler hesaplamak için işlevi. Görev grubu bu işi paralel olarak gerçekleştirmek için kullanır. Görev grupları hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+Bu örnek, ana etmenlerini hesaplamak için `prime_factors_of` işlevini çağırarak Carmichael sayıları kuyruğundaki her öğeyi işler. Bu işi paralel olarak gerçekleştirmek için bir görev grubu kullanır. Görev grupları hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-Bu örnek, bu sayıyı dörtten fazla ana Etkenler varsa her Carmichael numarası için ana Etkenler yazdırır.
+Bu örnekte, bu sayının dörtten fazla asal faktörü varsa, her bir Carmichael numarası için asal faktörleri yazdırılır.
 
 [!code-cpp[concrt-carmichael-primes#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_4.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodu ana Etkenler Carmichael sayıların hesaplamak için paralel kapsayıcılar kullanan tam bir örnek gösterilmektedir.
+Aşağıdaki kod, Carmichael sayılarının asal çarpanlarını hesaplamak için paralel kapsayıcılar kullanan tüm örneği gösterir.
 
 [!code-cpp[concrt-carmichael-primes#5](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_5.cpp)]
 
-Bu örnek, aşağıdaki örnek çıktısı üretir.
+Bu örnek, aşağıdaki örnek çıktıyı üretir.
 
 ```Output
 Prime factors of 9890881 are: 7 11 13 41 241.
@@ -65,9 +65,9 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `carmichael-primes.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `carmichael-primes.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc carmichael primes.cpp**
+> **CL. exe/EHsc Carmichael-Primes. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -75,6 +75,6 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [concurrent_vector Sınıfı](../../parallel/concrt/reference/concurrent-vector-class.md)<br/>
 [concurrent_queue Sınıfı](../../parallel/concrt/reference/concurrent-queue-class.md)<br/>
-[parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)<br/>
-[parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)<br/>
+[parallel_invoke Işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)<br/>
+[parallel_for Işlevi](reference/concurrency-namespace-functions.md#parallel_for)<br/>
 [task_group Sınıfı](reference/task-group-class.md)

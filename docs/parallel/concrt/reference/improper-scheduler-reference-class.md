@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - improper_scheduler_reference class
 ms.assetid: 434a7512-7796-4255-92a7-f3bf71c6a7a7
-ms.openlocfilehash: 121e61447775cdcb5d7f5f1187c5d4cc6b7d68b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18536043b0d46a6f27f1e5c60778a22af82ad2d3
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262911"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141106"
 ---
-# <a name="improperschedulerreference-class"></a>improper_scheduler_reference Sınıfı
+# <a name="improper_scheduler_reference-class"></a>improper_scheduler_reference Sınıfı
 
-Bu sınıf oluşan bir özel durumu anlatmaktadır `Reference` yöntemi çağrıldığında bir `Scheduler` aşağı, bu Zamanlayıcı bir parçası olmayan bir bağlamdan kapatılıyor nesne.
+Bu sınıf, `Reference` yöntemi, bu Scheduler 'ın parçası olmayan bir bağlamdan kapatılmakta olan bir `Scheduler` nesnesi üzerinde çağrıldığında oluşturulan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class improper_scheduler_reference : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class improper_scheduler_reference : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[improper_scheduler_reference](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_scheduler_reference` nesne.|
+|[improper_scheduler_reference](#ctor)|Fazla Yüklendi. `improper_scheduler_reference` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class improper_scheduler_reference : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> improper_scheduler_reference
+## <a name="ctor"></a>improper_scheduler_reference
 
-Oluşturur bir `improper_scheduler_reference` nesne.
+`improper_scheduler_reference` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP improper_scheduler_reference(_In_z_ const char* _Message) throw();
 
 improper_scheduler_reference() throw();
@@ -57,7 +57,7 @@ improper_scheduler_reference() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

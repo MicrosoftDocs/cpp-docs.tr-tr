@@ -268,26 +268,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::rba
 - amp_short_vectors/Concurrency::graphics::uint_4::set_yzx
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-ms.openlocfilehash: 413edb5c83dba465aff804658afc6931c7181e73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a795ed3c04f114b6e15d5d9161605988bab2778a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405449"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142409"
 ---
-# <a name="uint4-class"></a>uint_4 Sınıfı
+# <a name="uint_4-class"></a>uint_4 Sınıfı
 
-Dört işaretsiz tam sayının kısa vektörünü temsil eder.
+Dört işaretsiz tamsayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class uint_4;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -297,7 +297,7 @@ class uint_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[uint_4 Oluşturucusu](#uint_4__ctor) |Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[uint_4 Oluşturucusu](#uint_4__ctor) |Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -309,7 +309,7 @@ class uint_4;
 |uint_4::get_wxyz||
 |uint_4::get_wxz||
 |uint_4::get_wxzy||
-|uint_4::get_wy||
+|uint_4:: get_wy||
 |uint_4::get_wyx||
 |uint_4::get_wyxz||
 |uint_4::get_wyz||
@@ -321,7 +321,7 @@ class uint_4;
 |uint_4::get_wzyx||
 |uint_4::get_x||
 |uint_4::get_xw||
-|uint_4::get_xwy||
+|uint_4:: get_xwy||
 |uint_4::get_xwyz||
 |uint_4::get_xwz||
 |uint_4::get_xwzy||
@@ -336,7 +336,7 @@ class uint_4;
 |uint_4::get_xzy||
 |uint_4::get_xzyw||
 |uint_4::get_y||
-|uint_4::get_yw||
+|uint_4:: get_yw||
 |uint_4::get_ywx||
 |uint_4::get_ywxz||
 |uint_4::get_ywz||
@@ -381,7 +381,7 @@ class uint_4;
 |uint_4::set_wxyz||
 |uint_4::set_wxz||
 |uint_4::set_wxzy||
-|uint_4::set_wy||
+|uint_4:: set_wy||
 |uint_4::set_wyx||
 |uint_4::set_wyxz||
 |uint_4::set_wyz||
@@ -444,12 +444,12 @@ class uint_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|uint_4::operator-||
-|uint_4::operator--||
-|uint_4::operator * =||
-|uint_4::operator / =||
-|uint_4::operator ++||
-|uint_4::operator +=||
+|uint_4:: operator-||
+|uint_4:: operator--||
+|uint_4:: operator * =||
+|uint_4:: operator/=||
+|uint_4:: operator + +||
+|uint_4:: operator + =||
 |uint_4::operator=||
 |uint_4::operator-=||
 
@@ -457,69 +457,69 @@ class uint_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#size)||
+|[Boyut sabiti](#size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|uint_4::a||
-|uint_4::ab||
-|uint_4::abg||
-|uint_4::abgr||
-|uint_4::abr||
+|uint_4:: a||
+|uint_4:: AB||
+|uint_4:: ABG||
+|uint_4:: abgr||
+|uint_4:: ABR||
 |uint_4::abrg||
-|uint_4::AG||
-|uint_4::agb||
+|uint_4:: AG||
+|uint_4:: AGB||
 |uint_4::agbr||
-|uint_4::agr||
-|uint_4::agrb||
-|uint_4::ar||
-|uint_4::arb||
-|uint_4::arbg||
-|uint_4::arg||
-|uint_4::argb||
-|uint_4::b||
+|uint_4:: AGR||
+|uint_4:: agrb||
+|uint_4:: ar||
+|uint_4:: ARB||
+|uint_4:: arbg||
+|uint_4:: arg||
+|uint_4:: ARGB||
+|uint_4:: b||
 |uint_4::ba||
-|uint_4::BAG||
-|uint_4::bagr||
-|uint_4::bar||
-|uint_4::barg||
+|uint_4:: bag||
+|uint_4:: bagr||
+|uint_4:: Bar||
+|uint_4:: barg||
 |uint_4::bg||
-|uint_4::bga||
-|uint_4::bgar||
-|uint_4::BGR||
-|uint_4::bgra||
-|uint_4::br||
-|uint_4::BRA||
-|uint_4::brag||
+|uint_4:: BGA||
+|uint_4:: bgar||
+|uint_4:: bgr||
+|uint_4:: bgra||
+|uint_4:: br||
+|uint_4:: köşeli||
+|uint_4:: Brag||
 |uint_4::brg||
 |uint_4::brga||
-|uint_4::g||
-|uint_4::ga||
+|uint_4:: g||
+|uint_4:: GA||
 |uint_4::gab||
-|uint_4::gabr||
-|uint_4::gar||
-|uint_4::garb||
-|uint_4::GB||
-|uint_4::Gba||
-|uint_4::gbar||
+|uint_4:: gabr||
+|uint_4:: Gar||
+|uint_4:: garb||
+|uint_4:: GB||
+|uint_4:: GBA||
+|uint_4:: GBar||
 |uint_4::gbr||
-|uint_4::gbra||
-|uint_4::Gr||
-|uint_4::Gra||
-|uint_4::Grab||
-|uint_4::Grb||
-|uint_4::grba||
-|uint_4::r||
+|uint_4:: GBRA||
+|uint_4:: gr||
+|uint_4:: GRA||
+|uint_4::||
+|uint_4:: GRB||
+|uint_4:: Grba||
+|uint_4:: r||
 |uint_4::ra||
-|uint_4::rab||
-|uint_4::rabg||
-|uint_4::rag||
-|uint_4::ragb||
-|uint_4::rb||
+|uint_4:: rampa||
+|uint_4:: rampa||
+|uint_4:: Rag||
+|uint_4:: çgb||
+|uint_4:: RB||
 |uint_4::rba||
-|uint_4::rbag||
+|uint_4:: rbag||
 |uint_4::rbg||
 |uint_4::rbga||
 |uint_4::rg||
@@ -527,52 +527,52 @@ class uint_4;
 |uint_4::rgab||
 |uint_4::rgb||
 |uint_4::rgba||
-|uint_4::w||
-|uint_4::wx||
-|uint_4::WXY||
+|uint_4:: w||
+|uint_4:: WX||
+|uint_4:: wxy||
 |uint_4::wxyz||
 |uint_4::wxz||
 |uint_4::wxzy||
-|uint_4::wy||
-|uint_4::wyx||
-|uint_4::wyxz||
+|uint_4:: WY||
+|uint_4:: wyx||
+|uint_4:: wyxz||
 |uint_4::wyz||
 |uint_4::wyzx||
-|uint_4::wZ||
+|uint_4:: WZ||
 |uint_4::wzx||
 |uint_4::wzxy||
-|uint_4::wzy||
+|uint_4:: wzy||
 |uint_4::wzyx||
-|uint_4::x||
-|uint_4::xw||
-|uint_4::xwy||
-|uint_4::xwyz||
-|uint_4::xwz||
-|uint_4::xwzy||
-|uint_4::xy||
-|uint_4::xyw||
-|uint_4::xywz||
-|uint_4::xyz||
-|uint_4::xyzw||
+|uint_4:: x||
+|uint_4:: XW||
+|uint_4:: xwy||
+|uint_4:: xwyz||
+|uint_4:: XWZ||
+|uint_4:: xwzy||
+|uint_4:: XY||
+|uint_4:: XYW||
+|uint_4:: xywz||
+|uint_4:: xyz||
+|uint_4:: Xyzw||
 |uint_4::xz||
-|uint_4::xzw||
-|uint_4::xzwy||
+|uint_4:: xzw||
+|uint_4:: xzwy||
 |uint_4::xzy||
-|uint_4::xzyw||
-|uint_4::y||
-|uint_4::yw||
-|uint_4::ywx||
+|uint_4:: xzyw||
+|uint_4:: y||
+|uint_4:: YW||
+|uint_4:: ywx||
 |uint_4::ywxz||
-|uint_4::ywz||
-|uint_4::ywzx||
+|uint_4:: ywz||
+|uint_4:: ywzx||
 |uint_4::yx||
-|uint_4::yxw||
-|uint_4::yxwz||
+|uint_4:: YXW||
+|uint_4:: yxwz||
 |uint_4::yxz||
-|uint_4::yxzw||
-|uint_4::YZ||
-|uint_4::yzw||
-|uint_4::yzwx||
+|uint_4:: yxzw||
+|uint_4::,||
+|uint_4:: yzw||
+|uint_4:: yzwx||
 |uint_4::yzx||
 |uint_4::yzxw||
 |uint_4::z||
@@ -598,17 +598,17 @@ class uint_4;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="uint_4__ctor"></a> uint_4
+## <a name="uint_4__ctor"></a>uint_4
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 uint_4() restrict(amp,cpu);
 uint_4(
    unsigned int _V0,
@@ -639,31 +639,31 @@ explicit inline uint_4(
 ) restrict(amp,cpu);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V3*<br/>
-Öğeyi 3 başlatmak için değer.
+Öğe 3 ' ü başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
 ## <a name="size"></a>size
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 static const int size = 4;
 ```
 

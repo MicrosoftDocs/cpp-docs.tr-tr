@@ -12,20 +12,20 @@ f1_keywords:
 helpviewer_keywords:
 - event class
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-ms.openlocfilehash: aa9d46b868c1a31729a9590db3b3f67179903881
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c72b4b086e932f4fe404259c25f8d2c8be2be31
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262397"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77138852"
 ---
 # <a name="event-class"></a>event Sınıfı
 
-Eşzamanlılık çalışma zamanının açıkça farkında olan el ile sıfırlama olayı.
+Eşzamanlılık Çalışma Zamanı açıkça farkında olan el ile sıfırlama olayı.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class event;
 ```
 
@@ -35,26 +35,26 @@ class event;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[~ event yok Edicisi](#dtor)|Bir olayı yok eder.|
+|[~ olay yıkıcısı](#dtor)|Bir olayı yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Sıfırlama](#reset)|Olay verilmemiş bir duruma sıfırlar.|
-|[set](#set)|Olay sinyalini verir.|
-|[bekleme](#wait)|Olayın sinyal haline bekler.|
-|[wait_for_multiple](#wait_for_multiple)|Birden fazla olayın sinyal haline bekler.|
+|[döndürmek](#reset)|Olayı, sinyal olmayan bir duruma sıfırlar.|
+|[set](#set)|Olayı bildirir.|
+|[bekleneceğini](#wait)|Olayın sinyal gelmesini bekler.|
+|[wait_for_multiple](#wait_for_multiple)|Birden çok olayın sinyal gelmesini bekler.|
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[timeout_infinite](#timeout_infinite)|Beklemenin asla zaman aşımına uğramayacağını belirten değer.|
+|[timeout_infinite](#timeout_infinite)|Bir bekleme süresinin asla zaman aşımına uğramayacağını gösteren değer.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [eşitleme veri yapıları](../../../parallel/concrt/synchronization-data-structures.md).
+Daha fazla bilgi için bkz. [eşitleme veri yapıları](../../../parallel/concrt/synchronization-data-structures.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,85 +62,85 @@ Daha fazla bilgi için [eşitleme veri yapıları](../../../parallel/concrt/sync
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> Olay
+## <a name="ctor"></a>olay
 
 Yeni bir olay oluşturur.
 
-```
+```cpp
 _CRTIMP event();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dtor"></a> ~ Olay
+## <a name="dtor"></a>~ olay
 
 Bir olayı yok eder.
 
-```
+```cpp
 ~event();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olan yıkıcı çalıştığında olayda bekleyen iş parçacığı olmaması beklenir. Hala bekliyor tanımlanmayan davranışla sonuçlanır iş parçacıklarıyla yok etmek üzere olaya izin verme.
+Yıkıcı çalıştırıldığında olayda bekleyen iş parçacığı olmaması beklenir. Etkinliğin iş parçacıklarıyla sınıfların 'a izin verilmesi, tanımsız davranışa neden olur.
 
-##  <a name="reset"></a> Sıfırlama
+## <a name="reset"></a>döndürmek
 
-Olay verilmemiş bir duruma sıfırlar.
+Olayı, sinyal olmayan bir duruma sıfırlar.
 
-```
+```cpp
 void reset();
 ```
 
-##  <a name="set"></a> Ayarlayın
+## <a name="set"></a>kurmak
 
-Olay sinyalini verir.
+Olayı bildirir.
 
-```
+```cpp
 void set();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olayın sinyal çalıştırılabilir duruma gelmesine olayda bekleyen bağlamları rastgele bir sayıdan neden olabilir.
+Olayı işaret etmek, olayı bekleyen rastgele sayıda bağlamın çalıştırılabilir hale gelmesine neden olabilir.
 
-##  <a name="timeout_infinite"></a> timeout_infinite
+## <a name="timeout_infinite"></a>timeout_infinite
 
-Beklemenin asla zaman aşımına uğramayacağını belirten değer.
+Bir bekleme süresinin asla zaman aşımına uğramayacağını gösteren değer.
 
-```
+```cpp
 static const unsigned int timeout_infinite = COOPERATIVE_TIMEOUT_INFINITE;
 ```
 
-##  <a name="wait"></a> bekleme
+## <a name="wait"></a>bekleneceğini
 
-Olayın sinyal haline bekler.
+Olayın sinyal gelmesini bekler.
 
-```
+```cpp
 size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Zaman aşımı*<br/>
-Zaman aşımını beklemeden önce milisaniye sayısını gösterir. Değer `COOPERATIVE_TIMEOUT_INFINITE` hiçbir zaman aşımı olmadığını gösterir.
+*_Timeout*<br/>
+Bekleme süresi geçmeden önce geçen milisaniye sayısını belirtir. Değer `COOPERATIVE_TIMEOUT_INFINITE` zaman aşımı olmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bekleme memnun ettiyse, değer `0` döndürülmüştür; Aksi takdirde değeri `COOPERATIVE_WAIT_TIMEOUT` bekleme olayın sinyalliye dönüşmesi zaman aşımına uğradığını belirtmek için.
+Bekleme karşılandıysa `0` değeri döndürülür; Aksi takdirde, olayın sinyal verilmeksizin zaman aşımına uğradığını belirtmek için değeri `COOPERATIVE_WAIT_TIMEOUT`.
 
 > [!IMPORTANT]
->  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait` üzerinde ASTA iş parçacığı çünkü bu çağrı geçerli iş parçacığını engelleyebildiğinden ve uygulamanın yanıt veremez duruma gelmesine neden olabilir.
+> Evrensel Windows Platformu (UWP) uygulamasında, bu çağrı geçerli iş parçacığını engelleyebileceğinden ve uygulamanın yanıt vermemeye başlamasına neden olabileceği için ASTA iş parçacığında `wait` çağırmayın.
 
-##  <a name="wait_for_multiple"></a> wait_for_multiple
+## <a name="wait_for_multiple"></a>wait_for_multiple
 
-Birden fazla olayın sinyal haline bekler.
+Birden çok olayın sinyal gelmesini bekler.
 
-```
+```cpp
 static size_t __cdecl wait_for_multiple(
     _In_reads_(count) event** _PPEvents,
     size_t count,
@@ -151,27 +151,27 @@ static size_t __cdecl wait_for_multiple(
 ### <a name="parameters"></a>Parametreler
 
 *_PPEvents*<br/>
-Üzerinde beklenilen olaylar dizisi. Dizi içerisindeki olay sayısı tarafından belirtilen `count` parametresi.
+Beklenecek olay dizisi. Dizi içindeki olay sayısı `count` parametresi tarafından belirtilir.
 
-*Sayısı*<br/>
-Sağlanan dizi içindeki olayların sayısı `_PPEvents` parametresi.
+*count*<br/>
+`_PPEvents` parametresinde sağlanan dizi içindeki olay sayısı.
 
 *_FWaitAll*<br/>
-Varsa değerine ayarlanırsa **true**, parametre olarak sağlanan dizi içindeki tüm olayların belirtir `_PPEvents` parametre sinyalliye dönüşmesi beklemeyi karşılamak için. Varsa değerine ayarlanırsa **false**, dizi içinde herhangi bir olayın sağlanan belirtir `_PPEvents` sinyalliye dönüşmesi parametresi, beklemeyi karşılamak.
+**True**değerine ayarlanırsa parametresi, `_PPEvents` parametresinde sağlanan dizide bulunan tüm olayların, beklemeyi karşılamak için sinyal getirmeli olduğunu belirtir. **False**değerine ayarlanırsa, `_PPEvents` parametresinde sağlanan dizideki herhangi bir olayın, beklenmesini karşıladığından emin olur.
 
-*_Zaman aşımı*<br/>
-Zaman aşımını beklemeden önce milisaniye sayısını gösterir. Değer `COOPERATIVE_TIMEOUT_INFINITE` hiçbir zaman aşımı olmadığını gösterir.
+*_Timeout*<br/>
+Bekleme süresi geçmeden önce geçen milisaniye sayısını belirtir. Değer `COOPERATIVE_TIMEOUT_INFINITE` zaman aşımı olmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bekleme memnun ettiyse, dizin sağlanan `_PPEvents` bekleme koşulunu; memnun parametresini Aksi takdirde, değeri `COOPERATIVE_WAIT_TIMEOUT` bekleme memnun koşul olmadan zaman aşımına uğradığını belirtmek için.
+Bekleme karşılandıysa, `_PPEvents` parametresinde sağlanan dizinin içindeki dizin, bekleme koşulunu karşıladı; Aksi takdirde, değer, tatmin edilen koşul olmadan zaman aşımına uğradığını belirtmek için `COOPERATIVE_WAIT_TIMEOUT`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre `_FWaitAll` değere ayarlanmış `true` tüm olaylar beklemeyi karşılamak amacıyla sinyalli hale dönüşmesi gereken belirtmek için işlevin döndürdüğü dizin, değer olmadığını olgu başka özel anlamlı değer taşır `COOPERATIVE_WAIT_TIMEOUT`.
+`_FWaitAll` parametresi, beklemeyi karşılamak için tüm olayların işaret edilmesi gerektiğini belirtmek için `true` değer olarak ayarlandıysa, işlev tarafından döndürülen dizin, `COOPERATIVE_WAIT_TIMEOUT`değer olmaması dışında özel bir anlam taşımaz.
 
 > [!IMPORTANT]
-> Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait_for_multiple` üzerinde ASTA iş parçacığı çünkü bu çağrı geçerli iş parçacığını engelleyebildiğinden ve uygulamanın yanıt veremez duruma gelmesine neden olabilir.
+> Evrensel Windows Platformu (UWP) uygulamasında, bu çağrı geçerli iş parçacığını engelleyebileceğinden ve uygulamanın yanıt vermemeye başlamasına neden olabileceği için ASTA iş parçacığında `wait_for_multiple` çağırmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

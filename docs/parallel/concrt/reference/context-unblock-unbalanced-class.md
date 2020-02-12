@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - context_unblock_unbalanced class
 ms.assetid: a76066c8-19dd-44fa-959a-6941ec1b0d2d
-ms.openlocfilehash: f4f385cde2a27665afa5eb9869eb52bc42c70111
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 261ec96c1a83fbec423e6dbbfe403c4db53a2962
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296222"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143104"
 ---
-# <a name="contextunblockunbalanced-class"></a>context_unblock_unbalanced Sınıfı
+# <a name="context_unblock_unbalanced-class"></a>context_unblock_unbalanced Sınıfı
 
-Bu sınıf oluşan bir özel durumu anlatmaktadır çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne değil düzgün halindedir.
+Bu sınıf, bir `Context` nesnesinin `Block` ve `Unblock` yöntemlerine yapılan çağrılar düzgün şekilde eşleştirilmediğinde oluşan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class context_unblock_unbalanced : public std::exception;
 ```
 
@@ -31,11 +31,11 @@ class context_unblock_unbalanced : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[context_unblock_unbalanced](#ctor)|Fazla Yüklendi. Oluşturur bir `context_unblock_unbalanced` nesne.|
+|[context_unblock_unbalanced](#ctor)|Fazla Yüklendi. `context_unblock_unbalanced` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne her zaman doğru eşleştirilmelidir. Eşzamanlılık Çalışma zamanı içinde herhangi bir sırada yapılması işlemlere izin verir. Örneğin, bir çağrı `Block` bir çağrı tarafından izlenebilir `Unblock`, veya tam tersi. Örneğin, iki çağrılar, bu özel durum `Unblock` üzerinde bir satır, metodu yapıldı bir `Context` değil engellendi nesnesidir.
+Bir `Context` nesnesinin `Block` ve `Unblock` yöntemlerine yapılan çağrılar her zaman uygun şekilde eşleştirilmelidir. Eşzamanlılık Çalışma Zamanı işlemlerin her iki sırayla da gerçekleşmesini sağlar. Örneğin, bir `Block` çağrısının ardından `Unblock`veya tam tersi bir çağrı gelebilir. Bu özel durum, örneğin, bir satırda `Unblock` yöntemine yapılan iki çağrı, engellenmeyen bir `Context` nesnesi üzerinde yapılırsa oluşturulur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,15 +45,15 @@ class context_unblock_unbalanced : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> context_unblock_unbalanced
+## <a name="ctor"></a>context_unblock_unbalanced
 
-Oluşturur bir `context_unblock_unbalanced` nesne.
+`context_unblock_unbalanced` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP context_unblock_unbalanced(_In_z_ const char* _Message) throw();
 
 context_unblock_unbalanced() throw();
@@ -61,7 +61,7 @@ context_unblock_unbalanced() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -14,57 +14,57 @@ f1_keywords:
 helpviewer_keywords:
 - critical_section class
 ms.assetid: fa3c89d6-be5d-4d1b-bddb-8232814e6cf6
-ms.openlocfilehash: f334b159ae39f48006a135c6e36d413b737a7344
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aef3ae6100133374cb89098f118c447effafd840
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296169"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77143081"
 ---
-# <a name="criticalsection-class"></a>critical_section Sınıfı
+# <a name="critical_section-class"></a>critical_section Sınıfı
 
-Eşzamanlılık çalışma zamanının açıkça farkında olan reentrant olmayan mutex.
+Eşzamanlılık Çalışma Zamanı açıkça farkında olan, yer olmayan bir mutex.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class critical_section;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`native_handle_type`|Bir başvuru bir `critical_section` nesne.|
+|`native_handle_type`|`critical_section` nesnesine bir başvuru.|
 
-### <a name="public-classes"></a>Genel sınıflar
+### <a name="public-classes"></a>Ortak sınıflar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[critical_section::scoped_lock sınıfı](#critical_section__scoped_lock_class)|Bir özel durum güvenli için RAII sarmalayıcı bir `critical_section` nesne.|
+|[critical_section:: scoped_lock sınıfı](#critical_section__scoped_lock_class)|Bir `critical_section` nesnesi için özel durum güvenli bir OYıı sarmalayıcısı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[critical_section](#ctor)|Yeni kritik bir bölüm oluşturur.|
-|[~ critical_section yok Edicisi](#dtor)|Kritik Bölümü yok eder.|
+|[critical_section](#ctor)|Yeni bir kritik bölüm oluşturur.|
+|[~ critical_section yok edici](#dtor)|Kritik bir bölümü yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[lock](#lock)|Bu kritik bölüm devralır.|
-|[native_handle](#native_handle)|Varsa bir platforma özel yerel tanıtıcı döndürür.|
-|[try_lock](#try_lock)|Engellemeden kilit almaya çalışır.|
-|[try_lock_for](#try_lock_for)|Belirli bir milisaniye sayısı için engellemeden kilit almaya çalışır.|
-|[Kilit açma](#unlock)|Kritik bölüm kilidini açar.|
+|[lock](#lock)|Bu kritik bölümü elde edin.|
+|[native_handle](#native_handle)|Varsa, platforma özgü yerel bir tanıtıcı döndürür.|
+|[try_lock](#try_lock)|Kilidi engellenmeden almaya çalışır.|
+|[try_lock_for](#try_lock_for)|Kilidi, belirli bir süre boyunca engellenmeksizin almaya çalışır.|
+|[kaldırın](#unlock)|Kritik bölümün kilidini açar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [eşitleme veri yapıları](../../../parallel/concrt/synchronization-data-structures.md).
+Daha fazla bilgi için bkz. [eşitleme veri yapıları](../../../parallel/concrt/synchronization-data-structures.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -72,123 +72,123 @@ Daha fazla bilgi için [eşitleme veri yapıları](../../../parallel/concrt/sync
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> critical_section
+## <a name="ctor"></a>critical_section
 
-Yeni kritik bir bölüm oluşturur.
+Yeni bir kritik bölüm oluşturur.
 
-```
+```cpp
 critical_section();
 ```
 
-##  <a name="dtor"></a> ~ critical_section
+## <a name="dtor"></a>~ critical_section
 
-Kritik Bölümü yok eder.
+Kritik bir bölümü yok eder.
 
-```
+```cpp
 ~critical_section();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çalıştığında kilit artık tutulan beklenmektedir. Kilit ile yok etmek üzere kritik bölüm izin verme hala sonuçlarını tanımsız davranışlara tutulan.
+Yok edicinin çalıştırıldığı zaman kilidin artık tutulmuyor olması beklenmektedir. Kritik bölümün kilit ile sınıfların 'a izin verilmesi, yine de tanımsız davranışa neden olur.
 
-##  <a name="lock"></a> Kilit
+## <a name="lock"></a>ine
 
-Bu kritik bölüm devralır.
+Bu kritik bölümü elde edin.
 
-```
+```cpp
 void lock();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazılımınız genellikle güvenlidir [scoped_lock](#critical_section__scoped_lock_class) almak ve yayın yapısı bir `critical_section` bir özel durum nesnesi güvenli bir yoludur.
+Bir `critical_section` nesnesini özel durum güvenli bir şekilde almak ve serbest bırakmak için [scoped_lock](#critical_section__scoped_lock_class) yapısını kullanmak genellikle daha güvenlidir.
 
-Arayan girintileme kilidi zaten tutarsa bir [improper_lock](improper-lock-class.md) özel durumu oluşturulur.
+Kilit çağıran bağlam tarafından zaten tutuluyorsa, bir [improper_lock](improper-lock-class.md) özel durumu oluşturulur.
 
-##  <a name="native_handle"></a> native_handle
+## <a name="native_handle"></a>native_handle
 
-Varsa bir platforma özel yerel tanıtıcı döndürür.
+Varsa, platforma özgü yerel bir tanıtıcı döndürür.
 
-```
+```cpp
 native_handle_type native_handle();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kritik bölüm başvuru.
+Kritik bölüme bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-A `critical_section` nesne platforma özel yerel işleyici Windows işletim sistemi için ile ilişkili değil. Yöntemi yalnızca nesnesine bir başvuru döndürür.
+Bir `critical_section` nesnesi, Windows işletim sistemi için platforma özgü yerel tanıtıcı ile ilişkili değildir. Yöntemi yalnızca nesnenin kendisi için bir başvuru döndürür.
 
-##  <a name="critical_section__scoped_lock_class"></a>  critical_section::scoped_lock sınıfı
+## <a name="critical_section__scoped_lock_class"></a>critical_section:: scoped_lock sınıfı
 
-Bir özel durum güvenli için RAII sarmalayıcı bir `critical_section` nesne.
+Bir `critical_section` nesnesi için özel durum güvenli bir OYıı sarmalayıcısı.
 
-```
+```cpp
 class scoped_lock;
 ```
 
-##  <a name="critical_section__scoped_lock_ctor"></a> scoped_lock::scoped_lock
+## <a name="critical_section__scoped_lock_ctor"></a>scoped_lock:: scoped_lock
 
-Oluşturur bir `scoped_lock` alır ve nesne `critical_section` geçirilen nesne `_Critical_section` parametresi. Bu çağrı, kritik bölüm başka bir iş parçacığı tarafından yapılmazsa engeller.
+`scoped_lock` nesnesi oluşturur ve `_Critical_section` parametresinde geçirilen `critical_section` nesneyi alır. Kritik bölüm başka bir iş parçacığı tarafından tutuluyorsa bu çağrı engellenir.
 
-```
+```cpp
 explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *_Critical_section*<br/>
-Kilitlemek için kritik bölüm.
+Kilitlenecek kritik bölüm.
 
-##  <a name="critical_section__scoped_lock_dtor"></a> scoped_lock:: ~ scoped_lock
+## <a name="critical_section__scoped_lock_dtor"></a>scoped_lock:: ~ scoped_lock
 
-Yok eder bir `scoped_lock` nesne ve onun oluşturucuda sağlanan kritik bölüm serbest bırakır.
+`scoped_lock` nesnesini yok eder ve oluşturucusunda sağlanan kritik bölümü yayınlar.
 
-```
+```cpp
 ~scoped_lock();
 ```
 
-##  <a name="try_lock"></a> try_lock
+## <a name="try_lock"></a>try_lock
 
-Engellemeden kilit almaya çalışır.
+Kilidi engellenmeden almaya çalışır.
 
-```
+```cpp
 bool try_lock();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilit alındıysa değeri **true**; Aksi takdirde, değeri **false**.
+Kilit alınırsa, **true**değeri; Aksi takdirde, değeri **false**olur.
 
-##  <a name="try_lock_for"></a> try_lock_for
+## <a name="try_lock_for"></a>try_lock_for
 
-Belirli bir milisaniye sayısı için engellemeden kilit almaya çalışır.
+Kilidi, belirli bir süre boyunca engellenmeksizin almaya çalışır.
 
-```
+```cpp
 bool try_lock_for(unsigned int _Timeout);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Zaman aşımı*<br/>
+*_Timeout*<br/>
 Zaman aşımından önce beklenecek milisaniye sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilit alındıysa değeri **true**; Aksi takdirde, değeri **false**.
+Kilit alınırsa, **true**değeri; Aksi takdirde, değeri **false**olur.
 
-##  <a name="unlock"></a> Kilit açma
+## <a name="unlock"></a>kaldırın
 
-Kritik bölüm kilidini açar.
+Kritik bölümün kilidini açar.
 
-```
+```cpp
 void unlock();
 ```
 

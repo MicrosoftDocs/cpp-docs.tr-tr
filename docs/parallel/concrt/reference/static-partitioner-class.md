@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - static_partitioner class
 ms.assetid: 2b3dbdf0-6eb9-49f6-8639-03df1d974143
-ms.openlocfilehash: 5120e3c53dc00ba9d5c3a4218efe1dcfb8f92e28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a58daa27bc7a2f51f78a3068a2f152979ffdd72
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337394"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142687"
 ---
-# <a name="staticpartitioner-class"></a>static_partitioner Sınıfı
+# <a name="static_partitioner-class"></a>static_partitioner Sınıfı
 
-`static_partitioner` Sınıfı temsil eder bir statik tarafından üzerinden yinelenir aralık bölümleme `parallel_for`. Bölümleyici aralığı çalışanları underyling Zamanlayıcı kullanılabilir olduğu kadar çok öbeklere böler.
+`static_partitioner` sınıfı, `parallel_for`tarafından yineleyen aralığın statik bir bölümlemesini temsil eder. Bölümleyici, temel alınan Scheduler 'da bulunan çalışanlar olduğundan, aralığı çok sayıda parçalara ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class static_partitioner;
 ```
 
@@ -31,8 +31,8 @@ class static_partitioner;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[static_partitioner](#ctor)|Oluşturur bir `static_partitioner` nesne.|
-|[~static_partitioner Destructor](#dtor)|Yok eder bir `static_partitioner` nesne.|
+|[static_partitioner](#ctor)|`static_partitioner` nesnesi oluşturur.|
+|[~ static_partitioner yok edici](#dtor)|`static_partitioner` nesnesini yok eder.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -40,23 +40,23 @@ class static_partitioner;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ppl.h
+**Üstbilgi:** PPL. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="dtor"></a> ~static_partitioner
+## <a name="dtor"></a>~ static_partitioner
 
-Yok eder bir `static_partitioner` nesne.
+`static_partitioner` nesnesini yok eder.
 
-```
+```cpp
 ~static_partitioner();
 ```
 
-##  <a name="ctor"></a> static_partitioner
+## <a name="ctor"></a>static_partitioner
 
-Oluşturur bir `static_partitioner` nesne.
+`static_partitioner` nesnesi oluşturur.
 
-```
+```cpp
 static_partitioner();
 ```
 

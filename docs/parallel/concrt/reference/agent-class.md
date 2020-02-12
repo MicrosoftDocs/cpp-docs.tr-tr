@@ -17,20 +17,20 @@ f1_keywords:
 helpviewer_keywords:
 - agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-ms.openlocfilehash: 98ad5f817361d8410e5a60648fb23baec06c42d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0092f5f90bbdf253c09dbdc80849c3db472212f
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337758"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142891"
 ---
 # <a name="agent-class"></a>agent Sınıfı
 
-Tüm bağımsız aracıları için temel sınıf olarak kullanılacak bir sınıf yöneliktir. Bu durum diğer aracılardan Gizle ve ileti geçirme kullanarak etkileşim kurmak için kullanılır.
+Tüm bağımsız aracılar için temel sınıf olarak kullanılması amaçlanan bir sınıf. Diğer aracılardan durumu gizlemek ve ileti geçirme kullanılarak etkileşim kurmak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class agent;
 ```
 
@@ -40,31 +40,31 @@ class agent;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Aracı](#ctor)|Fazla Yüklendi. Bir aracı oluşturur.|
-|[~ agent yok Edicisi](#dtor)|Aracı yok eder.|
+|[Aracısı](#ctor)|Fazla Yüklendi. Bir aracı oluşturur.|
+|[~ Aracı yıkıcısı](#dtor)|Aracıyı yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[İptal](#cancel)|Bir aracı herhangi birinden taşır `agent_created` veya `agent_runnable` için durumları `agent_canceled` durumu.|
-|[start](#start)|Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlanır.|
-|[Durumu](#status)|Aracı durumu bilgileri, zaman uyumlu bir kaynağı.|
-|[status_port](#status_port)|Zaman uyumsuz bir Aracıdan durum bilgileri kaynağı.|
-|[bekleme](#wait)|Bir aracı, görevini tamamlamak üzere bekler.|
-|[wait_for_all](#wait_for_all)|Tüm görevlerini tamamlamak için belirtilen aracılar için bekler.|
-|[wait_for_one](#wait_for_one)|Görevi tamamlamak için belirtilen aracılar herhangi biri için bekler.|
+|[İptal](#cancel)|Bir aracıyı `agent_created` veya `agent_runnable` durumlarından `agent_canceled` duruma kaydırır.|
+|[start](#start)|Bir aracıyı `agent_created` durumundan `agent_runnable` durumuna taşıdıkça yürütme için zamanlar.|
+|[durumlarına](#status)|Aracıdan alınan durum bilgilerinin zaman uyumlu kaynağı.|
+|[status_port](#status_port)|Aracıdan gelen durum bilgisi zaman uyumsuz kaynağı.|
+|[bekleneceğini](#wait)|Aracının görevini tamamlamasını bekler.|
+|[wait_for_all](#wait_for_all)|Belirtilen aracıların tümünün görevlerini tamamlamasını bekler.|
+|[wait_for_one](#wait_for_one)|Belirtilen aracıların herhangi birinin görevini tamamlamasını bekler.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Bitti](#done)|Bir aracı içine taşır `agent_done` durumu, aracının tamamlandığı gösterilir.|
-|[run](#run)|Ana görevi bir aracının temsil eder. `run` türetilen bir sınıfta geçersiz kılınmalıdır ve aracının ne yapması gerektiğini belirtir, başlatıldıktan sonra.|
+|[yapıldığını](#done)|Aracının tamamlandığını belirten bir aracıyı `agent_done` durumuna taşımıştır.|
+|[çalışmaz](#run)|Bir aracının ana görevini temsil eder. `run` türetilmiş bir sınıfta geçersiz kılınmalı ve aracının başlatıldıktan sonra ne yapması gerektiğini belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [zaman uyumsuz aracılar](../../../parallel/concrt/asynchronous-agents.md).
+Daha fazla bilgi için bkz. [zaman uyumsuz aracılar](../../../parallel/concrt/asynchronous-agents.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -72,15 +72,15 @@ Daha fazla bilgi için [zaman uyumsuz aracılar](../../../parallel/concrt/asynch
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** agents.h
+**Üstbilgi:** Agents. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> Aracı
+## <a name="ctor"></a>Aracısı
 
 Bir aracı oluşturur.
 
-```
+```cpp
 agent();
 
 agent(Scheduler& _PScheduler);
@@ -91,108 +91,108 @@ agent(ScheduleGroup& _PGroup);
 ### <a name="parameters"></a>Parametreler
 
 *_PScheduler*<br/>
-`Scheduler` Nesne aracı yürütme görevini zamanlanmış içinde.
+Aracının yürütme görevinin zamanlandığı `Scheduler` nesnesi.
 
 *_PGroup*<br/>
-`ScheduleGroup` Nesne aracı yürütme görevini zamanlanmış içinde. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.
+Aracının yürütme görevinin zamanlandığı `ScheduleGroup` nesnesi. Kullanılan `Scheduler` nesnesi, zamanlama grubu tarafından kapsanıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_PScheduler` veya `_PGroup` parametreleri.
+`_PScheduler` veya `_PGroup` parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır.
 
-##  <a name="dtor"></a> ~ Aracı
+## <a name="dtor"></a>~ Aracı
 
-Aracı yok eder.
+Aracıyı yok eder.
 
-```
+```cpp
 virtual ~agent();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir terminal durumunda bir aracı yok etmek için bir hata olduğunu (ya da `agent_done` veya `agent_canceled`). Bu aracının devralan bir sınıfın yok edici bir terminal durumuna ulaşmasını bekleyerek önlenebilir `agent` sınıfı.
+Terminal durumunda olmayan bir aracıyı yok etme hatası (`agent_done` ya da `agent_canceled`). Bu durum, aracının `agent` sınıfından devralan bir sınıfın yıkıcısında bir Terminal durumuna ulaşmasını bekleyerek önlenebilir.
 
-##  <a name="cancel"></a> İptal
+## <a name="cancel"></a>İptal
 
-Bir aracı herhangi birinden taşır `agent_created` veya `agent_runnable` için durumları `agent_canceled` durumu.
+Bir aracıyı `agent_created` veya `agent_runnable` durumlarından `agent_canceled` duruma kaydırır.
 
-```
+```cpp
 bool cancel();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** aracı iptal edildiyse **false** Aksi takdirde. Bir aracı çalıştırma zaten başlatıldı veya zaten tamamlandı, iptal edilemez.
+Aracı iptal edildiyse **true** , aksi takdirde **false** . Zaten çalışmaya başlamış veya zaten tamamlanmış bir aracı iptal edilemez.
 
-##  <a name="done"></a> Bitti
+## <a name="done"></a>yapıldığını
 
-Bir aracı içine taşır `agent_done` durumu, aracının tamamlandığı gösterilir.
+Aracının tamamlandığını belirten bir aracıyı `agent_done` durumuna taşımıştır.
 
-```
+```cpp
 bool done();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** aracı taşınırsa `agent_done` durumu **false** Aksi takdirde. İptal edilmiş bir aracı taşınamaz `agent_done` durumu.
+Aracı `agent_done` duruma taşınırsa **true** , aksi durumda **false** . İptal edilen bir aracı `agent_done` durumuna taşınamaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonunda bu yöntem çağrılmalıdır `run` aracınızı yürütülmesini bildiğinizde yöntemi tamamlandı.
+Bu yöntem, aracının yürütüldüğünü bildiğiniz durumlarda `run` yönteminin sonunda çağrılmalıdır.
 
-##  <a name="run"></a> Çalıştırma
+## <a name="run"></a>çalışmaz
 
-Ana görevi bir aracının temsil eder. `run` türetilen bir sınıfta geçersiz kılınmalıdır ve aracının ne yapması gerektiğini belirtir, başlatıldıktan sonra.
+Bir aracının ana görevini temsil eder. `run` türetilmiş bir sınıfta geçersiz kılınmalı ve aracının başlatıldıktan sonra ne yapması gerektiğini belirtir.
 
-```
+```cpp
 virtual void run() = 0;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aracı durumu değiştirilecek `agent_started` bu yöntem çağrılmadan önce sağ. Yöntem çağırması gereken `done` döndürmek önce uygun bir durum aracıdaki ve herhangi bir özel durum oluşturması beklenmiyor.
+Aracı durumu, bu yöntem çağrılmadan önce `agent_started` doğru olarak değiştirilir. Yöntemi döndürmeden önce uygun bir duruma sahip `done` aracıda çağırmalıdır ve özel durum oluşturmayabilir.
 
-##  <a name="start"></a> Başlangıç
+## <a name="start"></a>başından
 
-Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlanır.
+Bir aracıyı `agent_created` durumundan `agent_runnable` durumuna taşıdıkça yürütme için zamanlar.
 
-```
+```cpp
 bool start();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** aracıyı doğru başlattıysanız **false** Aksi takdirde. İptal edilmiş bir aracı başlatılamıyor.
+Aracı doğru şekilde başlatıldıysa **doğru** , aksi takdirde **yanlış** olur. İptal edilen bir aracı başlatılamıyor.
 
-##  <a name="status"></a> Durumu
+## <a name="status"></a>durumlarına
 
-Aracı durumu bilgileri, zaman uyumlu bir kaynağı.
+Aracıdan alınan durum bilgilerinin zaman uyumlu kaynağı.
 
-```
+```cpp
 agent_status status();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aracı geçerli durumunu döndürür. Döndürülen bu durumu hemen döndürülen sonra değişebilir unutmayın.
+Aracının geçerli durumunu döndürür. Döndürülen bu durum döndürülmeden hemen sonra değişebileceğini unutmayın.
 
-##  <a name="status_port"></a> status_port
+## <a name="status_port"></a>status_port
 
-Zaman uyumsuz bir Aracıdan durum bilgileri kaynağı.
+Aracıdan gelen durum bilgisi zaman uyumsuz kaynağı.
 
-```
+```cpp
 ISource<agent_status>* status_port();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti Aracısı'nın geçerli durumu hakkında bir ileti kaynağı döndürür.
+Aracının geçerli durumu hakkında ileti gönderebilen bir ileti kaynağı döndürür.
 
-##  <a name="wait"></a> bekleme
+## <a name="wait"></a>bekleneceğini
 
-Bir aracı, görevini tamamlamak üzere bekler.
+Aracının görevini tamamlamasını bekler.
 
-```
+```cpp
 static agent_status __cdecl wait(
     _Inout_ agent* _PAgent,
     unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
@@ -201,26 +201,26 @@ static agent_status __cdecl wait(
 ### <a name="parameters"></a>Parametreler
 
 *_PAgent*<br/>
-Aracı için beklenecek bir işaretçi.
+Beklemek için aracıya yönelik bir işaretçi.
 
-*_Zaman aşımı*<br/>
-Hangi beklenecek milisaniye cinsinden en uzun süre.
+*_Timeout*<br/>
+Beklenmesi gereken en uzun süre (milisaniye cinsinden).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`agent_status` Bekleme tamamlandığında Aracısı. Bu da olabilir `agent_canceled` veya `agent_done`.
+Bekleme tamamlandığında aracının `agent_status`. Bu `agent_canceled` ya da `agent_done`olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aracıyı girdiğinde bir aracı görevi tamamlandıktan `agent_canceled` veya `agent_done` durumları.
+Aracı `agent_canceled` veya `agent_done` durumları girdiğinde bir aracı görevi tamamlanır.
 
-Parametre `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) aracı görevi tamamlanmadan önce belirtilen sürede sona ererse oluşturulur.
+`_Timeout` parametresi sabit `COOPERATIVE_TIMEOUT_INFINITE`dışında bir değere sahipse, aracı görevini tamamlanmadan önce belirtilen süre dolarsa, özel durum [operation_timed_out](operation-timed-out-class.md) oluşturulur.
 
-##  <a name="wait_for_all"></a> wait_for_all
+## <a name="wait_for_all"></a>wait_for_all
 
-Tüm görevlerini tamamlamak için belirtilen aracılar için bekler.
+Belirtilen aracıların tümünün görevlerini tamamlamasını bekler.
 
-```
+```cpp
 static void __cdecl wait_for_all(
     size_t count,
     _In_reads_(count) agent** _PAgents,
@@ -230,29 +230,29 @@ static void __cdecl wait_for_all(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
-Aracı işaretçilerin dizisinde `_PAgents`.
+*count*<br/>
+Dizide bulunan aracı işaretçilerinin sayısı `_PAgents`.
 
 *_PAgents*<br/>
-Aracılara beklemek için işaretçiler dizisi.
+Bekleyecek aracılara yönelik işaretçilerin bir dizisi.
 
 *_PStatus*<br/>
-Bir dizi Aracısı durumları için bir işaretçi. Yöntem döndürüldüğünde, her durum değeri karşılık gelen aracı durumunu temsil eder.
+Aracı durumlarının dizisine yönelik bir işaretçi. Her durum değeri, yöntemi döndüğünde ilgili aracının durumunu temsil eder.
 
-*_Zaman aşımı*<br/>
-Hangi beklenecek milisaniye cinsinden en uzun süre.
+*_Timeout*<br/>
+Beklenmesi gereken en uzun süre (milisaniye cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aracıyı girdiğinde bir aracı görevi tamamlandıktan `agent_canceled` veya `agent_done` durumları.
+Aracı `agent_canceled` veya `agent_done` durumları girdiğinde bir aracı görevi tamamlanır.
 
-Parametre `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) aracı görevi tamamlanmadan önce belirtilen sürede sona ererse oluşturulur.
+`_Timeout` parametresi sabit `COOPERATIVE_TIMEOUT_INFINITE`dışında bir değere sahipse, aracı görevini tamamlanmadan önce belirtilen süre dolarsa, özel durum [operation_timed_out](operation-timed-out-class.md) oluşturulur.
 
-##  <a name="wait_for_one"></a> wait_for_one
+## <a name="wait_for_one"></a>wait_for_one
 
-Görevi tamamlamak için belirtilen aracılar herhangi biri için bekler.
+Belirtilen aracıların herhangi birinin görevini tamamlamasını bekler.
 
-```
+```cpp
 static void __cdecl wait_for_one(
     size_t count,
     _In_reads_(count) agent** _PAgents,
@@ -263,26 +263,26 @@ static void __cdecl wait_for_one(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
-Aracı işaretçilerin dizisinde `_PAgents`.
+*count*<br/>
+Dizide bulunan aracı işaretçilerinin sayısı `_PAgents`.
 
 *_PAgents*<br/>
-Aracılara beklemek için işaretçiler dizisi.
+Bekleyecek aracılara yönelik işaretçilerin bir dizisi.
 
 *_Status*<br/>
-Aracı durumu yerleştirileceği bir değişken başvuru.
+Aracı durumunun yerleştirileceği bir değişkene başvuru.
 
 *_Index*<br/>
-Aracı dizini yerleştirileceği bir değişken başvuru.
+Aracı dizininin yerleştirileceği bir değişkene başvuru.
 
-*_Zaman aşımı*<br/>
-Hangi beklenecek milisaniye cinsinden en uzun süre.
+*_Timeout*<br/>
+Beklenmesi gereken en uzun süre (milisaniye cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aracıyı girdiğinde bir aracı görevi tamamlandıktan `agent_canceled` veya `agent_done` durumları.
+Aracı `agent_canceled` veya `agent_done` durumları girdiğinde bir aracı görevi tamamlanır.
 
-Parametre `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) aracı görevi tamamlanmadan önce belirtilen sürede sona ererse oluşturulur.
+`_Timeout` parametresi sabit `COOPERATIVE_TIMEOUT_INFINITE`dışında bir değere sahipse, aracı görevini tamamlanmadan önce belirtilen süre dolarsa, özel durum [operation_timed_out](operation-timed-out-class.md) oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

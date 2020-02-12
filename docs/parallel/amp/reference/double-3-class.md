@@ -72,26 +72,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_3::rbg
 - amp_short_vectors/Concurrency::graphics::double_3::get_yxz
 ms.assetid: baeb3ff0-2862-4c81-857e-b1a4c085be25
-ms.openlocfilehash: 6423220d8203b0d0fba73a4888f967e159db26de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 981b3026e1efb6c3b4e06457a0eb1f986cdcaafa
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180368"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126701"
 ---
-# <a name="double3-class"></a>double_3 Sınıfı
+# <a name="double_3-class"></a>double_3 Sınıfı
 
-Üç çiftten oluşan bir kısa vektörü temsil eder.
+Üç Double 'ın kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class double_3;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -101,102 +101,102 @@ class double_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[double_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[double_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|double_3::get_x||
-|double_3::get_xy||
-|double_3::get_xyz||
-|double_3::get_xz||
-|double_3::get_xzy||
-|double_3::get_y||
+|double_3:: get_x||
+|double_3:: get_xy||
+|double_3:: get_xyz||
+|double_3:: get_xz||
+|double_3:: get_xzy||
+|double_3:: get_y||
 |double_3::get_yx||
 |double_3::get_yxz||
-|double_3::get_yz||
+|double_3:: get_yz||
 |double_3::get_yzx||
 |double_3::get_z||
 |double_3::get_zx||
 |double_3::get_zxy||
-|double_3::get_zy||
-|double_3::get_zyx||
+|double_3:: get_zy||
+|double_3:: get_zyx||
 |double_3::ref_b||
-|double_3::ref_g||
+|double_3:: ref_g||
 |double_3::ref_r||
 |double_3::ref_x||
-|double_3::ref_y||
+|double_3:: ref_y||
 |double_3::ref_z||
-|double_3::set_x||
-|double_3::set_xy||
-|double_3::set_xyz||
-|double_3::set_xz||
-|double_3::set_xzy||
-|double_3::set_y||
-|double_3::set_yx||
+|double_3:: set_x||
+|double_3:: set_xy||
+|double_3:: set_xyz||
+|double_3:: set_xz||
+|double_3:: set_xzy||
+|double_3:: set_y||
+|double_3:: set_yx||
 |double_3::set_yxz||
-|double_3::set_yz||
+|double_3:: set_yz||
 |double_3::set_yzx||
 |double_3::set_z||
 |double_3::set_zx||
 |double_3::set_zxy||
-|double_3::set_zy||
-|double_3::set_zyx||
+|double_3:: set_zy||
+|double_3:: set_zyx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|double_3::operator-||
-|double_3::operator--||
-|double_3::operator * =||
-|double_3::operator / =||
-|double_3::operator ++||
-|double_3::operator +=||
-|double_3::operator =||
-|double_3::operator-=||
+|double_3:: operator-||
+|double_3:: operator--||
+|double_3:: operator * =||
+|double_3:: operator/=||
+|double_3:: operator + +||
+|double_3:: operator + =||
+|double_3:: operator =||
+|double_3:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#double_3__size)||
+|[Boyut sabiti](#double_3__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|double_3::b||
-|double_3::BG||
-|double_3::BGR||
-|double_3::br||
-|double_3::brg||
-|double_3::g||
-|double_3::GB||
-|double_3::GBR||
-|double_3::Gr||
-|double_3::Grb||
-|double_3::r||
-|double_3::RB||
-|double_3::rbg||
-|double_3::rg||
-|double_3::rgb||
-|double_3::x||
-|double_3::xy||
-|double_3::xyz||
-|double_3::xz||
-|double_3::xzy||
-|double_3::y||
-|double_3::yx||
-|double_3::yxz||
-|double_3::YZ||
-|double_3::yzx||
-|double_3::z||
-|double_3::ZX||
-|double_3::zxy||
-|double_3::ZY||
-|double_3::zyx||
+|double_3:: b||
+|double_3:: bg||
+|double_3:: bgr||
+|double_3:: br||
+|double_3:: brg||
+|double_3:: g||
+|double_3:: GB||
+|double_3:: GbR||
+|double_3:: gr||
+|double_3:: GRB||
+|double_3:: r||
+|double_3:: RB||
+|double_3:: RBG||
+|double_3:: RG||
+|double_3:: RGB||
+|double_3:: x||
+|double_3:: XY||
+|double_3:: xyz||
+|double_3:: xz||
+|double_3:: xzy||
+|double_3:: y||
+|double_3:: yx||
+|double_3:: yxz||
+|double_3::,||
+|double_3:: yzx||
+|double_3:: z||
+|double_3:: ZX||
+|double_3:: zxy||
+|double_3:: zy||
+|double_3:: ZYX||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -204,15 +204,15 @@ class double_3;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> double_3
+## <a name="ctor"></a>double_3
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 double_3() restrict(amp,
     cpu);
 
@@ -254,23 +254,23 @@ explicit inline double_3(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="double_3__size"></a> Boyutu
+## <a name="double_3__size"></a>boyutla
 
-```
+```cpp
 static const int size = 3;
 ```
 

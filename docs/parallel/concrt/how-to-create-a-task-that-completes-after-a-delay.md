@@ -1,51 +1,51 @@
 ---
-title: 'Nasıl yapılır: Bir gecikmeden sonra tamamlanan bir görev oluşturun'
+title: 'Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - task_completion_event class, example
 - create a task that completes after a delay, example [C++]
 ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
-ms.openlocfilehash: 3292043d7900d5dc2bfba0afa5fdc237853a5be0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76189f45eb486e06b040155f6697bf003659b474
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413911"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141753"
 ---
-# <a name="how-to-create-a-task-that-completes-after-a-delay"></a>Nasıl yapılır: Bir gecikmeden sonra tamamlanan bir görev oluşturun
+# <a name="how-to-create-a-task-that-completes-after-a-delay"></a>Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma
 
-Bu örnek nasıl kullanılacağını gösterir [concurrency::task](../../parallel/concrt/reference/task-class.md), [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [ CONCURRENCY::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), [concurrency::timer](../../parallel/concrt/reference/timer-class.md), ve [concurrency::call](../../parallel/concrt/reference/call-class.md) bir gecikmeden sonra tamamlanan bir görev oluşturmak için sınıf. Bazen verileri yoklayan, zaman aşımlarını tanıtan, kullanıcı girişini işleme bir süre için erteleme ve benzeri döngüler oluşturmak için bu yöntemi kullanabilirsiniz.
+Bu örnek, bir gecikmeden sonra tamamlanan bir görev oluşturmak için [concurrency:: Task](../../parallel/concrt/reference/task-class.md), [concurrency:: cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), concurrency:: [cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [concurrency](../../parallel/concrt/reference/task-completion-event-class.md):: task_completion_event, [concurrency:: Timer](../../parallel/concrt/reference/timer-class.md)ve [concurrency:: Call](../../parallel/concrt/reference/call-class.md) sınıflarının nasıl kullanılacağını gösterir. Bu yöntemi, zaman zaman veri yoklamaya, zaman aşımlarını ortaya çıkaracak, önceden belirlenmiş bir süre için Kullanıcı girişinin geciktirilebilmesi ve bu şekilde devam eden döngüler oluşturmak için kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği `complete_after` ve `cancel_after_timeout` işlevleri. `complete_after` İşlevi oluşturur bir `task` belirtilen gecikmeden sonra tamamlanan bir nesne. Kullandığı bir `timer` nesnesi ve bir `call` nesne ayarlayın bir `task_completion_event` belirtilen gecikmenin ardından nesne. Kullanarak `task_completion_event` sınıfı, bir iş parçacığı sonra tamamlanan bir görev tanımlayabilir veya başka bir görev bir değer kullanılabilir olduğunu bildirir. Olay ayarlandığında, dinleyici görevleri tamamlayacak ve bunların devamlılığını çalışmak üzere zamanlanır.
+Aşağıdaki örnekte `complete_after` ve `cancel_after_timeout` işlevleri gösterilmektedir. `complete_after` işlevi, belirtilen gecikmeden sonra tamamlanmış bir `task` nesnesi oluşturur. Belirtilen gecikmeden sonra bir `task_completion_event` nesnesi ayarlamak için bir `timer` nesnesi ve `call` nesnesi kullanır. `task_completion_event` sınıfını kullanarak, bir iş parçacığı veya başka bir görev bir değerin kullanılabilir olduğunu sinyalden sonra tamamlanmış bir görevi tanımlayabilirsiniz. Olay ayarlandığında, dinleyici görevleri tamamlanır ve devamlılıkları çalıştırılmak üzere zamanlanır.
 
 > [!TIP]
->  Hakkında daha fazla bilgi için `timer` ve `call` zaman uyumsuz aracılar Kitaplığı'nın parçası olan sınıfları için bkz [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
+> Zaman uyumsuz aracılar kitaplığının parçası olan `timer` ve `call` sınıfları hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-`cancel_after_timeout` İşlevi yapılar `complete_after` bu görevi, belirli bir zaman aşımından önce tamamlanmazsa, bir görev iptal etmek için işlevi. `cancel_after_timeout` İşlev iki görevi oluşturur. İlk görev başarılı olduğunu gösterir ve sağlanan görevi tamamlandıktan sonra tamamlar; İkinci görev başarısız olduğunu gösterir ve tamamlandıktan sonra belirtilen zaman aşımı. `cancel_after_timeout` İşlevi, başarı veya başarısızlık görev tamamlandığında, çalışan bir devamlılık görevi oluşturur. İlk hata görev tamamlandığında devamlılık genel görev iptal etmek için belirteç kaynağı iptal eder.
+`cancel_after_timeout` işlevi, bu görev belirli bir zaman aşımından önce tamamlanmazsa bir görevi iptal etmek için `complete_after` işlevi üzerinde oluşturulur. `cancel_after_timeout` işlevi iki görevi oluşturur. İlk görev, belirtilen görev tamamlandıktan sonra başarıyı ve tamamlandığını gösterir; İkinci görev, belirtilen zaman aşımından sonra başarısız olduğunu ve tamamlandığını gösterir. `cancel_after_timeout` işlevi, başarı veya başarısızlık görevi tamamlandığında çalışan bir devamlılık görevi oluşturur. Önce hata görevi tamamlanırsa, devamlılık, genel görevi iptal etmek için belirteç kaynağını iptal eder.
 
 [!code-cpp[concrt-task-delay#1](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_1.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek sayısı [0, 100000] aralığında asal sayıları hesaplar birden çok kez. Belirli bir süre sınırı içinde tamamlanmazsa işlemi başarısız olur. `count_primes` İşlevi nasıl kullanılacağını gösterir `cancel_after_timeout` işlevi. Verili aralıktaki primes sayar ve görev belirtilen süre içinde tamamlanmazsa başarısız olur. `wmain` İşlev çağrılarında `count_primes` birden çok kez işlev. Her zaman sınırı halves. İşlemi geçerli bir zaman sınırı içinde tamamlanmazsa sonra program tamamlanır.
+Aşağıdaki örnek [0, 100000] aralığındaki asal sayıların sayısını birden çok kez hesaplar. İşlem belirli bir zaman sınırı içinde tamamlanmazsa başarısız olur. `count_primes` işlevi, `cancel_after_timeout` işlevinin nasıl kullanılacağını gösterir. Verilen aralıktaki primin sayısını sayar ve görev sağlanan sürede tamamlanmazsa başarısız olur. `wmain` işlevi `count_primes` işlevini birden çok kez çağırır. Her seferinde zaman sınırı yarıya iner. Program, işlem geçerli zaman sınırında tamamlanmadıktan sonra tamamlanır.
 
 [!code-cpp[concrt-task-delay#2](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_2.cpp)]
 
-Bir gecikmeden sonra görevleri iptal etmek için bu yöntemi kullandığınızda, genel görev iptal edildikten sonra tüm başlamamış görevleri başlatılmaz. Ancak, herhangi bir uzun süre çalışan görevi iptal için zamanında yanıt vermek önemlidir. Görev iptali hakkında daha fazla bilgi için bkz: [ppl'de iptal](cancellation-in-the-ppl.md).
+Bir gecikmeden sonra görevleri iptal etmek için bu tekniği kullandığınızda, genel görev iptal edildikten sonra, herhangi bir başlamamış görev başlatılmaz. Ancak, uzun süre çalışan görevlerin iptal etmek için zamanında yanıt vermesi önemlidir. Görev iptali hakkında daha fazla bilgi için bkz. [PPL 'de iptal](cancellation-in-the-ppl.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek için tam kod aşağıdaki gibidir:
+Bu örnek için kodun tamamı aşağıda verilmiştir:
 
 [!code-cpp[concrt-task-delay#3](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_3.cpp)]
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `task-delay.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya `task-delay.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc görev delay.cpp**
+**CL. exe/EHsc Task-Delay. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - scheduler_not_attached class
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a
-ms.openlocfilehash: be8a04c7cf6ef5aa4d6070e92df14e643395ef00
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a3b1c113e5c6c5feb5b2fa1940ee9b984233e4af
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160126"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142203"
 ---
-# <a name="schedulernotattached-class"></a>scheduler_not_attached Sınıfı
+# <a name="scheduler_not_attached-class"></a>scheduler_not_attached Sınıfı
 
-Bu sınıf, bir işlem için geçerli bağlam eklenmesi bir zamanlayıcı gerektiren gerçekleştirilir ve bulunmaması olduğunda oluşturulan bir özel durum açıklar.
+Bu sınıf, bir Scheduler 'ın geçerli içeriğe eklenmesini gerektiren bir işlem gerçekleştirildiğinde oluşan bir özel durum tanımlar ve biri değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class scheduler_not_attached : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class scheduler_not_attached : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[scheduler_not_attached](#ctor)|Fazla Yüklendi. Oluşturur bir `scheduler_not_attached` nesne.|
+|[scheduler_not_attached](#ctor)|Fazla Yüklendi. `scheduler_not_attached` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class scheduler_not_attached : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> scheduler_not_attached
+## <a name="ctor"></a>scheduler_not_attached
 
-Oluşturur bir `scheduler_not_attached` nesne.
+`scheduler_not_attached` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP scheduler_not_attached(_In_z_ const char* _Message) throw();
 
 scheduler_not_attached() throw();
@@ -57,7 +57,7 @@ scheduler_not_attached() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -10,20 +10,20 @@ f1_keywords:
 helpviewer_keywords:
 - task_completion_event class
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-ms.openlocfilehash: 9d0ab271b20eb02c1dc4cb8e54cf2632eead4325
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3e3093cb76df507f8c707e497c9aec75a065057
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212891"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142588"
 ---
-# <a name="taskcompletionevent-class"></a>task_completion_event Sınıfı
+# <a name="task_completion_event-class"></a>task_completion_event Sınıfı
 
-`task_completion_event` Sınıfı bir koşul sağlanana kadar bir görevin yürütülmesini geciktirmek veya dış bir olaya yanıt olarak bir görevi başlatma olanak tanır.
+`task_completion_event` sınıfı, bir koşul karşılanana kadar bir görevin yürütülmesini ertelemenize veya dış bir olaya yanıt olarak bir görev başlatmanıza olanak sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<typename _ResultType>
 class task_completion_event;
 
@@ -31,10 +31,10 @@ template<>
 class task_completion_event<void>;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *_ResultType*<br/>
-Bu sonuç türü `task_completion_event` sınıfı.
+Bu `task_completion_event` sınıfının sonuç türü.
 
 ## <a name="members"></a>Üyeler
 
@@ -42,22 +42,22 @@ Bu sonuç türü `task_completion_event` sınıfı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[task_completion_event](#ctor)|Oluşturur bir `task_completion_event` nesne.|
+|[task_completion_event](#ctor)|`task_completion_event` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[set](#set)|Fazla Yüklendi. Görev tamamlama olayını ayarlar.|
-|[set_exception](#set_exception)|Fazla Yüklendi. Bu olay ile ilişkilendirilmiş tüm görevler için bir özel durum yayar.|
+|[set_exception](#set_exception)|Fazla Yüklendi. Bu olayla ilişkili tüm görevlere özel bir durum yayar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Senaryonuz tamamlanacak bir görev oluşturmanızı gerektirir ve böylece devamlılıkları gelecekte bir noktada, yürütme için zamanlanır sahip olduğunda bir görev tamamlama olayından oluşturulan bir görev kullanın. `task_completion_event` , Oluşturun ve bu türdeki bir değerle görev tamamlama olayı küme yöntemini çağırma ilişkili görevin neden ve bu değeri sonuç olarak kendi devamlılıklarının sağlamak görev aynı türde olmalıdır.
+Senaryolarınız tamamlanacak bir görev oluşturmanızı gerektirdiğinde ve bu nedenle gelecekteki bir noktada yürütmeye zamanlanan devamlılıklar varsa, görev tamamlama olayından oluşturulan bir görevi kullanın. `task_completion_event`, oluşturduğunuz görevle aynı türde olmalıdır ve bu tür bir değere sahip görev tamamlama olayında set yöntemini çağırmak ilişkili görevin tamamlanmasına neden olur ve bu değeri devamlılıkları sonucu olarak sağlar.
 
-Görev tamamlanma olayı hiç sinyal vermediyse, ondan oluşturulan tüm görevler imha edildiğinde iptal edilir.
+Görev tamamlama olayı hiçbir zaman sinyal alınmadıysa, bundan sonra oluşturulan tüm görevler, yinelenenleri kaldırma sırasında iptal edilir.
 
-`task_completion_event` Akıllı bir işaretçi gibi davranır ve değerine göre geçirilmelidir.
+`task_completion_event` akıllı bir işaretçi gibi davranır ve değere göre geçirilmelidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,15 +65,15 @@ Görev tamamlanma olayı hiç sinyal vermediyse, ondan oluşturulan tüm görevl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ppltasks.h
+**Üstbilgi:** ppltasks. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="set"></a> Ayarlayın
+## <a name="set"></a>kurmak
 
 Görev tamamlama olayını ayarlar.
 
-```
+```cpp
 bool set(_ResultType _Result) const ;
 
 bool set() const ;
@@ -82,21 +82,21 @@ bool set() const ;
 ### <a name="parameters"></a>Parametreler
 
 *_Result*<br/>
-Bu olayın ayarlanacağı sonuç.
+Bu olayı ayarlama sonucu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem döndürür **true** olayı ayarlamada başarılı olursa. Döndürür **false** olay zaten ayarlanmışsa.
+Yöntemi, olay ayarlanırken başarılı olursa **true** değerini döndürür. Olay zaten ayarlandıysa **yanlış** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden fazla varsa veya eş zamanlı çağrı `set`, sadece ilk çağrı başarılı olur ve sonucu (varsa) görev tamamlama olayı depolanır. Geri kalan kümeler yoksayılır ve yöntem false döndürür. Bir görev tamamlama olayı ayarladığınızda, tüm görevleri olay hemen tamamlanır ve varsa devamları zamanlanır oluşturulan. Görev tamamlama nesneleri bir `_ResultType` dışında **void** değeri için bunların devamlılıklarına geçirir.
+`set`için birden çok veya eşzamanlı çağrı olması durumunda, yalnızca ilk çağrı başarılı olur ve sonucu (varsa) görev tamamlanma olayında depolanır. Kalan kümeler yok sayılır ve yöntem false döndürür. Bir görev tamamlama olayı ayarladığınızda, bu olaydan oluşturulan tüm görevler hemen tamamlanır ve varsa devamlılıkları planlanacaktır. **Void** dışında bir `_ResultType` olan görev tamamlama nesneleri, değeri devamlılıklarına geçirir.
 
-##  <a name="set_exception"></a> set_exception
+## <a name="set_exception"></a>set_exception
 
-Bu olay ile ilişkilendirilmiş tüm görevler için bir özel durum yayar.
+Bu olayla ilişkili tüm görevlere özel bir durum yayar.
 
-```
+```cpp
 template<typename _E>
 __declspec(noinline) bool set_exception(_E _Except) const;
 
@@ -109,18 +109,18 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
 Özel durum türü.
 
 *_Except*<br/>
-Ayarlanacak durum.
+Ayarlanacak özel durum.
 
 *_ExceptionPtr*<br/>
-Ayarlamak için özel durum işaretçisi.
+Ayarlanacak özel durum işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-##  <a name="ctor"></a> task_completion_event
+## <a name="ctor"></a>task_completion_event
 
-Oluşturur bir `task_completion_event` nesne.
+`task_completion_event` nesnesi oluşturur.
 
-```
+```cpp
 task_completion_event();
 ```
 

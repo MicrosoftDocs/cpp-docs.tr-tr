@@ -1,28 +1,28 @@
 ---
-title: 'Nasıl yapılır: Düzenli aralıkla ileti gönderme'
+title: 'Nasıl yapılır: Düzenli Aralıkla İleti Gönderme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - timer class, example
 - sending messages at regular intervals [Concurrency Runtime]
 ms.assetid: 4b60ea6c-97c8-4d69-9f7b-ad79f3548026
-ms.openlocfilehash: 0bf5f93e2a570761874232a88a23289e59e58d94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c51a5cab6fcae5eb45b9d9b54c0dad8e8ec393b2
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321968"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142456"
 ---
-# <a name="how-to-send-a-message-at-a-regular-interval"></a>Nasıl yapılır: Düzenli aralıkla ileti gönderme
+# <a name="how-to-send-a-message-at-a-regular-interval"></a>Nasıl yapılır: Düzenli Aralıkla İleti Gönderme
 
-Bu örnek, eşzamanlılık kullanmayı gösterir.::[timer sınıfı](../../parallel/concrt/reference/timer-class.md) düzenli aralıkla ileti göndermek için.
+Bu örnek, düzenli aralıklarla bir ileti göndermek için concurrency::[Timer sınıfının](../../parallel/concrt/reference/timer-class.md) nasıl kullanılacağını gösterir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte bir `timer` uzun bir işlem sırasında ilerleme durumunu raporlamak nesne. Bu örnek bağlantıları `timer` nesnesini bir [concurrency::call](../../parallel/concrt/reference/call-class.md) nesne. `call` Nesne düzenli aralıklarla bir İlerleme göstergesi konsola yazdırır. [Concurrency::timer::start](reference/timer-class.md#start) yöntemi Zamanlayıcı ayrı bir bağlamda çalışır. `perform_lengthy_operation` İşlev çağrılarında [concurrency::wait](reference/concurrency-namespace-functions.md#wait) uzun süren bir işlem benzetimini yapmak için ana içerik işlevi.
+Aşağıdaki örnek, uzun bir işlem sırasında ilerlemeyi raporlamak için bir `timer` nesnesi kullanır. Bu örnek `timer` nesnesini bir [concurrency:: Call](../../parallel/concrt/reference/call-class.md) nesnesine bağlar. `call` nesnesi, düzenli aralıklarla konsola ilerleme göstergesini yazdırır. [Concurrency:: Timer:: Start](reference/timer-class.md#start) yöntemi, zamanlayıcıyı ayrı bir bağlam üzerinde çalıştırır. `perform_lengthy_operation` işlevi, zaman alan bir işlemin benzetimini yapmak için ana bağlamdaki [concurrency:: wait](reference/concurrency-namespace-functions.md#wait) işlevini çağırır.
 
 [!code-cpp[concrt-report-progress#1](../../parallel/concrt/codesnippet/cpp/how-to-send-a-message-at-a-regular-interval_1.cpp)]
 
-Bu örnek, örnek aşağıdaki çıktıyı üretir:
+Bu örnek aşağıdaki örnek çıktıyı üretir:
 
 ```Output
 Performing a lengthy operation..........done.
@@ -30,9 +30,9 @@ Performing a lengthy operation..........done.
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `report-progress.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `report-progress.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc rapor progress.cpp**
+> **CL. exe/EHsc Report-Progress. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

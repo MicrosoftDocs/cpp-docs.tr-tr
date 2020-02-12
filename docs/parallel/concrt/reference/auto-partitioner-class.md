@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - auto_partitioner class
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
-ms.openlocfilehash: 2d8bbb8e8af17dd19953487c47e5fd40343fe349
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d1d8f19069412240de8e9d69cdcfb34618f2796
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391094"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142861"
 ---
-# <a name="autopartitioner-class"></a>auto_partitioner Sınıfı
+# <a name="auto_partitioner-class"></a>auto_partitioner Sınıfı
 
-`auto_partitioner` Sınıfı temsil eder, varsayılan yöntemi `parallel_for`, `parallel_for_each` ve `parallel_transform` yinelenir üzerinden aralık bölümleme için kullanın. Employes bölümleme bu yöntemi Yük Dengeleme için çalma aralığı yanı sıra başına-iptal yineleyin.
+`auto_partitioner` sınıfı varsayılan yöntemi temsil eder `parallel_for`, `parallel_for_each` ve `parallel_transform` üzerinde yineleme aralığını bölümlemek için kullanılır. Bu bölümleme yöntemi, yük dengeleme için Aralık çalmasını ve yineleme başına iptali kullanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class auto_partitioner;
 ```
 
@@ -31,8 +31,8 @@ class auto_partitioner;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[auto_partitioner](#ctor)|Oluşturur bir `auto_partitioner` nesne.|
-|[~auto_partitioner Destructor](#dtor)|Yok eder bir `auto_partitioner` nesne.|
+|[auto_partitioner](#ctor)|`auto_partitioner` nesnesi oluşturur.|
+|[~ auto_partitioner yok edici](#dtor)|`auto_partitioner` nesnesini yok eder.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -40,23 +40,23 @@ class auto_partitioner;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ppl.h
+**Üstbilgi:** PPL. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="dtor"></a> ~ auto_partitioner
+## <a name="dtor"></a>~ auto_partitioner
 
-Yok eder bir `auto_partitioner` nesne.
+`auto_partitioner` nesnesini yok eder.
 
-```
+```cpp
 ~auto_partitioner();
 ```
 
-##  <a name="ctor"></a> auto_partitioner
+## <a name="ctor"></a>auto_partitioner
 
-Oluşturur bir `auto_partitioner` nesne.
+`auto_partitioner` nesnesi oluşturur.
 
-```
+```cpp
 auto_partitioner();
 ```
 

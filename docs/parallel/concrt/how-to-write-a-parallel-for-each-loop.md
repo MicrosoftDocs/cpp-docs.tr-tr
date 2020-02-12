@@ -1,28 +1,28 @@
 ---
-title: 'Nasıl yapılır: Parallel_for_each döngüsü yazma'
+title: 'Nasıl yapılır: parallel_for_each Döngüsü Yazma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - writing a parallel_for_each loop [Concurrency Runtime]
 - parallel_for_each function, example
 ms.assetid: fa9c0ba6-ace0-4f88-8681-c7c1f52aff20
-ms.openlocfilehash: 19af9be8ef6d9c38a0942e7c85caa0a8bc4e6813
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10c281b7db92e2706b20a1c7377fcdb9d924152d
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375567"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141881"
 ---
-# <a name="how-to-write-a-parallelforeach-loop"></a>Nasıl yapılır: Parallel_for_each döngüsü yazma
+# <a name="how-to-write-a-parallel_for_each-loop"></a>Nasıl yapılır: parallel_for_each Döngüsü Yazma
 
-Bu örnek nasıl kullanılacağını gösterir [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) sayısı içinde asal sayıları hesaplamak için algoritması bir [std::array](../../standard-library/array-class-stl.md) paralel nesne.
+Bu örnek, bir [std:: Array](../../standard-library/array-class-stl.md) nesnesindeki asal sayıların sayısını paralel olarak hesaplamak için [eşzamanlılık::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasının nasıl kullanılacağını gösterir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iki kez bir dizideki asal sayıları sayısını hesaplar. İlk örnekte [std::for_each](../../standard-library/algorithm-functions.md#for_each) algoritmasını seri olarak işlem sayısı. Ardından örnekte `parallel_for_each` paralel olarak aynı görevi gerçekleştirmek için kullanılan algoritma. Örnek ayrıca, her iki hesaplamalar gerçekleştirmek için gerekli olduğu süre konsola yazdırır.
+Aşağıdaki örnek, bir dizideki iki kez asal sayı sayısını hesaplar. Örnek öncelikle sayıyı seri olarak hesaplamak için [std:: for_each](../../standard-library/algorithm-functions.md#for_each) algoritmasını kullanır. Örnek daha sonra aynı görevi paralel olarak gerçekleştirmek için `parallel_for_each` algoritmasını kullanır. Örnek ayrıca konsola her iki hesaplama da için gereken zamanı da yazdırır.
 
 [!code-cpp[concrt-parallel-count-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-each-loop_1.cpp)]
 
-Aşağıdaki örnek çıktıda dört işlemciye sahip bir bilgisayar içindir.
+Aşağıdaki örnek çıktı, dört işlemcili bir bilgisayar içindir.
 
 ```Output
 serial version:
@@ -36,15 +36,15 @@ took 1653 ms
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `parallel-count-primes.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya `parallel-count-primes.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc paralel-count-primes.cpp**
+> **CL. exe/EHsc Parallel-Count-Primes. cpp**
 
 ## <a name="robust-programming"></a>Güçlü Programlama
 
-Örnek geçirir lambda ifadesi `parallel_for_each` algoritmasını `InterlockedIncrement` döngü sayacı aynı anda artırmak için paralel yineleme etkinleştirmek için işlevi. İşlevleri gibi kullanırsanız `InterlockedIncrement` paylaşılan kaynaklara erişimi eşitlemek için kodunuzda performans sorunları sunabilir. Örneğin bir kilidi serbest eşitleme mekanizması kullanabilirsiniz, [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sınıfı, paylaşılan kaynaklar için eş zamanlı erişim ortadan kaldırmak için. Kullanan bir örnek için `combinable` sınıfı bu şekilde [nasıl yapılır: Performansı arttırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md).
+Örneğin `parallel_for_each` algoritmasına geçirdiği lambda ifadesi, sayacı aynı anda artırmak için döngünün paralel yinelemelerini etkinleştirmek üzere `InterlockedIncrement` işlevini kullanır. Paylaşılan kaynaklara erişimi eşzamanlı hale getirmek için `InterlockedIncrement` gibi işlevler kullanıyorsanız, kodunuzda performans sorunları sunabilir. Paylaşılan kaynaklara eşzamanlı erişimi ortadan kaldırmak için, örneğin [eşzamanlılık:: combinable](../../parallel/concrt/reference/combinable-class.md) sınıfı gibi bir kilit ücretsiz eşitleme mekanizması kullanabilirsiniz. `combinable` sınıfını bu şekilde kullanan bir örnek için bkz. [nasıl yapılır: performansı artırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
-[parallel_for_each işlevi](reference/concurrency-namespace-functions.md#parallel_for_each)
+[parallel_for_each Işlevi](reference/concurrency-namespace-functions.md#parallel_for_each)

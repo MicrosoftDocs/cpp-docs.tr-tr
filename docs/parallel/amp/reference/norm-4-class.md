@@ -268,26 +268,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_4::set_zyx
 - amp_short_vectors/Concurrency::graphics::norm_4::wy
 ms.assetid: d628b2bf-2cdb-4dbb-95c6-cd778f5e991f
-ms.openlocfilehash: 06e08c24a92259e34be59a9f021ae13f38e974a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 08d19d25c3f9309553972e752daee75c9896a071
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351582"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126480"
 ---
-# <a name="norm4-class"></a>norm_4 Sınıfı
+# <a name="norm_4-class"></a>norm_4 Sınıfı
 
-Dört normal sayıdan oluşan bir kısa vektörü temsil eder.
+Dört normal sayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class norm_4;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -297,19 +297,19 @@ class norm_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[norm_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[norm_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_4::get_w||
+|norm_4:: get_w||
 |norm_4::get_wx||
 |norm_4::get_wxy||
 |norm_4::get_wxyz||
 |norm_4::get_wxz||
 |norm_4::get_wxzy||
-|norm_4::get_wy||
+|norm_4:: get_wy||
 |norm_4::get_wyx||
 |norm_4::get_wyxz||
 |norm_4::get_wyz||
@@ -320,14 +320,14 @@ class norm_4;
 |norm_4::get_wzy||
 |norm_4::get_wzyx||
 |norm_4::get_x||
-|norm_4::get_xw||
-|norm_4::get_xwy||
+|norm_4:: get_xw||
+|norm_4:: get_xwy||
 |norm_4::get_xwyz||
-|norm_4::get_xwz||
-|norm_4::get_xwzy||
+|norm_4:: get_xwz||
+|norm_4:: get_xwzy||
 |norm_4::get_xy||
-|norm_4::get_xyw||
-|norm_4::get_xywz||
+|norm_4:: get_xyw||
+|norm_4:: get_xywz||
 |norm_4::get_xyz||
 |norm_4::get_xyzw||
 |norm_4::get_xz||
@@ -336,7 +336,7 @@ class norm_4;
 |norm_4::get_xzy||
 |norm_4::get_xzyw||
 |norm_4::get_y||
-|norm_4::get_yw||
+|norm_4:: get_yw||
 |norm_4::get_ywx||
 |norm_4::get_ywxz||
 |norm_4::get_ywz||
@@ -367,21 +367,21 @@ class norm_4;
 |norm_4::get_zywx||
 |norm_4::get_zyx||
 |norm_4::get_zyxw||
-|norm_4::ref_a||
-|norm_4::ref_b||
-|norm_4::ref_g||
+|norm_4:: ref_a||
+|norm_4:: ref_b||
+|norm_4:: ref_g||
 |norm_4::ref_r||
-|norm_4::ref_w||
+|norm_4:: ref_w||
 |norm_4::ref_x||
-|norm_4::ref_y||
+|norm_4:: ref_y||
 |norm_4::ref_z||
-|norm_4::set_w||
-|norm_4::set_wx||
+|norm_4:: set_w||
+|norm_4:: set_wx||
 |norm_4::set_wxy||
 |norm_4::set_wxyz||
 |norm_4::set_wxz||
 |norm_4::set_wxzy||
-|norm_4::set_wy||
+|norm_4:: set_wy||
 |norm_4::set_wyx||
 |norm_4::set_wyxz||
 |norm_4::set_wyz||
@@ -391,23 +391,23 @@ class norm_4;
 |norm_4::set_wzxy||
 |norm_4::set_wzy||
 |norm_4::set_wzyx||
-|norm_4::set_x||
-|norm_4::set_xw||
-|norm_4::set_xwy||
-|norm_4::set_xwyz||
-|norm_4::set_xwz||
-|norm_4::set_xwzy||
-|norm_4::set_xy||
-|norm_4::set_xyw||
-|norm_4::set_xywz||
-|norm_4::set_xyz||
+|norm_4:: set_x||
+|norm_4:: set_xw||
+|norm_4:: set_xwy||
+|norm_4:: set_xwyz||
+|norm_4:: set_xwz||
+|norm_4:: set_xwzy||
+|norm_4:: set_xy||
+|norm_4:: set_xyw||
+|norm_4:: set_xywz||
+|norm_4:: set_xyz||
 |norm_4::set_xyzw||
-|norm_4::set_xz||
+|norm_4:: set_xz||
 |norm_4::set_xzw||
-|norm_4::set_xzwy||
+|norm_4:: set_xzwy||
 |norm_4::set_xzy||
 |norm_4::set_xzyw||
-|norm_4::set_y||
+|norm_4:: set_y||
 |norm_4::set_yw||
 |norm_4::set_ywx||
 |norm_4::set_ywxz||
@@ -424,8 +424,8 @@ class norm_4;
 |norm_4::set_yzx||
 |norm_4::set_yzxw||
 |norm_4::set_z||
-|norm_4::set_zw||
-|norm_4::set_zwx||
+|norm_4:: set_zw||
+|norm_4:: set_zwx||
 |norm_4::set_zwxy||
 |norm_4::set_zwy||
 |norm_4::set_zwyx||
@@ -436,7 +436,7 @@ class norm_4;
 |norm_4::set_zxyw||
 |norm_4::set_zy||
 |norm_4::set_zyw||
-|norm_4::set_zywx||
+|norm_4:: set_zywx||
 |norm_4::set_zyx||
 |norm_4::set_zyxw||
 
@@ -444,151 +444,151 @@ class norm_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_4::operator-||
-|norm_4::operator--||
-|norm_4::operator * =||
-|norm_4::operator / =||
-|norm_4::operator ++||
-|norm_4::operator +=||
-|norm_4::operator =||
-|norm_4::operator-=||
+|norm_4:: operator-||
+|norm_4:: operator--||
+|norm_4:: operator * =||
+|norm_4:: operator/=||
+|norm_4:: operator + +||
+|norm_4:: operator + =||
+|norm_4:: operator =||
+|norm_4:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#norm_4__size)||
+|[Boyut sabiti](#norm_4__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_4::a||
-|norm_4::AB||
-|norm_4::abg||
-|norm_4::abgr||
-|norm_4::ABR||
-|norm_4::abrg||
-|norm_4::AG||
-|norm_4::agb||
-|norm_4::agbr||
-|norm_4::agr||
-|norm_4::agrb||
-|norm_4::ar||
-|norm_4::arb||
-|norm_4::arbg||
-|norm_4::arg||
-|norm_4::ARGB||
-|norm_4::b||
+|norm_4:: a||
+|norm_4:: AB||
+|norm_4:: ABG||
+|norm_4:: abgr||
+|norm_4:: ABR||
+|norm_4:: abrg||
+|norm_4:: AG||
+|norm_4:: AGB||
+|norm_4:: agbr||
+|norm_4:: AGR||
+|norm_4:: agrb||
+|norm_4:: ar||
+|norm_4:: ARB||
+|norm_4:: arbg||
+|norm_4:: arg||
+|norm_4:: ARGB||
+|norm_4:: b||
 |norm_4::ba||
-|norm_4::BAG||
-|norm_4::bagr||
-|norm_4::bar||
-|norm_4::barg||
+|norm_4:: bag||
+|norm_4:: bagr||
+|norm_4:: Bar||
+|norm_4:: barg||
 |norm_4::bg||
-|norm_4::BGA||
-|norm_4::bgar||
-|norm_4::BGR||
-|norm_4::bgra||
-|norm_4::br||
-|norm_4::BRA||
-|norm_4::brag||
-|norm_4::brg||
+|norm_4:: BGA||
+|norm_4:: bgar||
+|norm_4:: bgr||
+|norm_4:: bgra||
+|norm_4:: br||
+|norm_4:: köşeli||
+|norm_4:: Brag||
+|norm_4:: brg||
 |norm_4::brga||
-|norm_4::g||
+|norm_4:: g||
 |norm_4::ga||
 |norm_4::gab||
-|norm_4::gabr||
-|norm_4::gar||
-|norm_4::garb||
-|norm_4::GB||
-|norm_4::Gba||
-|norm_4::gbar||
-|norm_4::GBR||
-|norm_4::gbra||
-|norm_4::Gr||
-|norm_4::Gra||
-|norm_4::Grab||
-|norm_4::Grb||
-|norm_4::grba||
-|norm_4::r||
-|norm_4::ra||
-|norm_4::rab||
-|norm_4::rabg||
-|norm_4::rag||
-|norm_4::ragb||
-|norm_4::RB||
-|norm_4::rba||
-|norm_4::rbag||
-|norm_4::rbg||
-|norm_4::rbga||
+|norm_4:: gabr||
+|norm_4:: Gar||
+|norm_4:: garb||
+|norm_4:: GB||
+|norm_4:: GBA||
+|norm_4:: GBar||
+|norm_4:: GbR||
+|norm_4:: GBRA||
+|norm_4:: gr||
+|norm_4:: GRA||
+|norm_4::||
+|norm_4:: GRB||
+|norm_4:: Grba||
+|norm_4:: r||
+|norm_4:: Ra||
+|norm_4:: rampa||
+|norm_4:: rampa||
+|norm_4:: Rag||
+|norm_4:: çgb||
+|norm_4:: RB||
+|norm_4:: RBA||
+|norm_4:: rbag||
+|norm_4:: RBG||
+|norm_4:: rbga||
 |norm_4::rg||
 |norm_4::rga||
 |norm_4::rgab||
 |norm_4::rgb||
-|norm_4::rgba||
-|norm_4::w||
-|norm_4::wx||
-|norm_4::WXY||
-|norm_4::wxyz||
+|norm_4:: RGBA||
+|norm_4:: w||
+|norm_4:: WX||
+|norm_4:: wxy||
+|norm_4:: WXYZ||
 |norm_4::wxz||
 |norm_4::wxzy||
-|norm_4::wy||
-|norm_4::wyx||
-|norm_4::wyxz||
-|norm_4::wyz||
-|norm_4::wyzx||
-|norm_4::wZ||
-|norm_4::wzx||
-|norm_4::wzxy||
-|norm_4::wzy||
-|norm_4::wzyx||
-|norm_4::x||
-|norm_4::xw||
-|norm_4::xwy||
-|norm_4::xwyz||
-|norm_4::xwz||
-|norm_4::xwzy||
-|norm_4::xy||
-|norm_4::xyw||
-|norm_4::xywz||
-|norm_4::xyz||
-|norm_4::xyzw||
-|norm_4::xz||
-|norm_4::xzw||
-|norm_4::xzwy||
-|norm_4::xzy||
-|norm_4::xzyw||
-|norm_4::y||
-|norm_4::yw||
-|norm_4::ywx||
-|norm_4::ywxz||
-|norm_4::ywz||
-|norm_4::ywzx||
-|norm_4::yx||
-|norm_4::yxw||
-|norm_4::yxwz||
+|norm_4:: WY||
+|norm_4:: wyx||
+|norm_4:: wyxz||
+|norm_4:: wyz||
+|norm_4:: wyzx||
+|norm_4:: WZ||
+|norm_4:: wzx||
+|norm_4:: wzxy||
+|norm_4:: wzy||
+|norm_4:: wzyx||
+|norm_4:: x||
+|norm_4:: XW||
+|norm_4:: xwy||
+|norm_4:: xwyz||
+|norm_4:: XWZ||
+|norm_4:: xwzy||
+|norm_4:: XY||
+|norm_4:: XYW||
+|norm_4:: xywz||
+|norm_4:: xyz||
+|norm_4:: Xyzw||
+|norm_4:: xz||
+|norm_4:: xzw||
+|norm_4:: xzwy||
+|norm_4:: xzy||
+|norm_4:: xzyw||
+|norm_4:: y||
+|norm_4:: YW||
+|norm_4:: ywx||
+|norm_4:: ywxz||
+|norm_4:: ywz||
+|norm_4:: ywzx||
+|norm_4:: yx||
+|norm_4:: YXW||
+|norm_4:: yxwz||
 |norm_4::yxz||
-|norm_4::yxzw||
-|norm_4::YZ||
-|norm_4::yzw||
-|norm_4::yzwx||
-|norm_4::yzx||
-|norm_4::yzxw||
-|norm_4::z||
+|norm_4:: yxzw||
+|norm_4::,||
+|norm_4:: yzw||
+|norm_4:: yzwx||
+|norm_4:: yzx||
+|norm_4:: yzxw||
+|norm_4:: z||
 |norm_4::zw||
-|norm_4::zwx||
+|norm_4:: ZwX||
 |norm_4::zwxy||
-|norm_4::zwy||
+|norm_4:: zwy||
 |norm_4::zwyx||
 |norm_4::zx||
 |norm_4::zxw||
-|norm_4::zxwy||
+|norm_4:: zxwy||
 |norm_4::zxy||
 |norm_4::zxyw||
 |norm_4::zy||
-|norm_4::zyw||
-|norm_4::zywx||
+|norm_4:: zyw||
+|norm_4:: zywx||
 |norm_4::zyx||
 |norm_4::zyxw||
 
@@ -598,15 +598,15 @@ class norm_4;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> norm_4
+## <a name="ctor"></a>norm_4
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 norm_4() restrict(amp,
     cpu);
 
@@ -667,26 +667,26 @@ explicit inline norm_4(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V3*<br/>
-Öğeyi 3 başlatmak için değer.
+Öğe 3 ' ü başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="norm_4__size"></a> Boyutu
+## <a name="norm_4__size"></a>boyutla
 
-```
+```cpp
 static const int size = 4;
 ```
 

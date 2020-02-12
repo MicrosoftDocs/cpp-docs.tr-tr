@@ -4,16 +4,16 @@ ms.date: 10/19/2018
 helpviewer_keywords:
 - parameter queries, running using CCommand class
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
-ms.openlocfilehash: 1ac029d954fc6cefaae6349e01af7728ca0886fd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4964d63846e14c0eaf4ff7c7fc80e14237673f69
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390665"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127639"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
 
-Aşağıdaki örnek, bir Microsoft Access veritabanındaki bir tablodan (30'dan büyük olan) bir geçerlilik süresi alan kayıtlarla alır basit, parametreli bir sorgu verir. Parametre desteklemek için kullanıcı kaydı, ek bir harita olmalıdır. Aşağıdaki kod, kullanan bir ATL projesinde `CCommand` sınıfı yerine `CTable` önceki örnekte kullanılan sınıf [basit bir satır kümesinde geçiş yapma](../../data/oledb/traversing-a-simple-rowset.md).
+Aşağıdaki örnek, bir Microsoft Access veritabanındaki bir tablodan yaş alanı (30 ' dan büyük olan) kayıtları alan basit parametreli bir sorgu yayınlar. Parametresini desteklemek için, Kullanıcı kaydının ek bir eşlemesi olmalıdır. Aşağıdaki kod, bir ATL projesinde, önceki örnekte kullanılan `CTable` sınıfı yerine `CCommand` sınıfını kullanır ve [basit bir satır kümesinden geçiş](../../data/oledb/traversing-a-simple-rowset.md)yapılır.
 
 ```cpp
 #include <atldbcli.h>
@@ -51,7 +51,7 @@ int main()
 }
 ```
 
-Kullanıcı kaydı, `CArtists`, bu örnek gibi görünür:
+Kullanıcı kaydı, `CArtists`Şu örneğe benzer şekilde görünür:
 
 ```cpp
 class CArtists

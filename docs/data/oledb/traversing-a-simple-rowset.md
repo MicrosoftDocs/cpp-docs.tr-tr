@@ -8,16 +8,16 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - accessors [C++], rowsets
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
-ms.openlocfilehash: 88a027a24f8ab817f793f101f9f128e1fc0c61c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 874c8372074838cd614d1fe17727871ca6e5f21a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389157"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127646"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
 
-Aşağıdaki örnek komutlar içermeyen hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu adlı tablosundan kayıtları alır *Sanatçılar* bir Microsoft Access veritabanına ODBC için Microsoft OLE DB sağlayıcısı kullanılarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi ile erişimci tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum açar.
+Aşağıdaki örnek, komutları içermeyen hızlı ve kolay veritabanı erişimini gösterir. Aşağıdaki tüketici kodu, bir ATL projesinde, ODBC için Microsoft OLE DB sağlayıcısı 'nı kullanarak Microsoft Access veritabanında bulunan *sanatçılar* adlı tablodaki kayıtları alır. Kod, Kullanıcı kayıt sınıfı `CArtists`temel alan bir erişimciye sahip bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi oluşturur. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum üzerinde açar.
 
 ```cpp
 #include <atldbcli.h>
@@ -54,7 +54,7 @@ int main()
 }
 ```
 
-Kullanıcı kaydı, `CArtists`, bu örnek gibi görünür:
+Kullanıcı kaydı, `CArtists`Şu örneğe benzer şekilde görünür:
 
 ```cpp
 class CArtists

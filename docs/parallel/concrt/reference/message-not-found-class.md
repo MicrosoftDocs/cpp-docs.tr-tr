@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - message_not_found class
 ms.assetid: a96b9995-5ad7-4600-83c8-c15e329ff10e
-ms.openlocfilehash: da0a44b90346959756c1ef7c685bef234fe6e46a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 63b921e47b01e3be7dfc060cbb41e5fd9016d04f
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394422"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77139581"
 ---
-# <a name="messagenotfound-class"></a>message_not_found Sınıfı
+# <a name="message_not_found-class"></a>message_not_found Sınıfı
 
-Bu sınıf, bir ileti bloğu bulamıyor istenen bir ileti olduğunda oluşturulan bir özel açıklar.
+Bu sınıf, bir ileti bloğu istenen iletiyi bulamadığında oluşan bir özel durum tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class message_not_found : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class message_not_found : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[message_not_found](#ctor)|Fazla Yüklendi. Oluşturur bir `message_not_found` nesne.|
+|[message_not_found](#ctor)|Fazla Yüklendi. `message_not_found` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class message_not_found : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> message_not_found
+## <a name="ctor"></a>message_not_found
 
-Oluşturur bir `message_not_found` nesne.
+`message_not_found` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP message_not_found(_In_z_ const char* _Message) throw();
 
 message_not_found() throw();
@@ -57,7 +57,7 @@ message_not_found() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.

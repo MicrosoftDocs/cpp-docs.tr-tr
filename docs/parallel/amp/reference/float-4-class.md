@@ -268,26 +268,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_4::get_z
 - amp_short_vectors/Concurrency::graphics::float_4::set_xyzw
 ms.assetid: 10f92170-e58c-4afc-8198-fc5778d56038
-ms.openlocfilehash: 63dbc38fd4c5c6d668dda525416ec4ff2f05b50f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: efff4e2263704dab35e5c212f6ef5d906e3f7c72
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180290"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77142174"
 ---
-# <a name="float4-class"></a>float_4 Sınıfı
+# <a name="float_4-class"></a>float_4 Sınıfı
 
-Dört kaymanın kısa vektörünü temsil eder.
+Dört float öğesinin kısa bir vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class float_4;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -297,7 +297,7 @@ class float_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[float_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[float_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -326,12 +326,12 @@ class float_4;
 |float_4::get_xwz||
 |float_4::get_xwzy||
 |float_4::get_xy||
-|float_4::get_xyw||
+|float_4:: get_xyw||
 |float_4::get_xywz||
 |float_4::get_xyz||
 |float_4::get_xyzw||
 |float_4::get_xz||
-|float_4::get_xzw||
+|float_4:: get_xzw||
 |float_4::get_xzwy||
 |float_4::get_xzy||
 |float_4::get_xzyw||
@@ -348,7 +348,7 @@ class float_4;
 |float_4::get_yxzw||
 |float_4::get_yz||
 |float_4::get_yzw||
-|float_4::get_yzwx||
+|float_4:: get_yzwx||
 |float_4::get_yzx||
 |float_4::get_yzxw||
 |float_4::get_z||
@@ -403,7 +403,7 @@ class float_4;
 |float_4::set_xyz||
 |float_4::set_xyzw||
 |float_4::set_xz||
-|float_4::set_xzw||
+|float_4:: set_xzw||
 |float_4::set_xzwy||
 |float_4::set_xzy||
 |float_4::set_xzyw||
@@ -444,10 +444,10 @@ class float_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|float_4::operator-||
+|float_4:: operator-||
 |float_4::operator--||
 |float_4::operator*=||
-|float_4::operator / =||
+|float_4:: operator/=||
 |float_4::operator++||
 |float_4::operator+=||
 |float_4::operator=||
@@ -457,7 +457,7 @@ class float_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#float_4__size)||
+|[Boyut sabiti](#float_4__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
@@ -466,60 +466,60 @@ class float_4;
 |float_4::a||
 |float_4::ab||
 |float_4::abg||
-|float_4::abgr||
+|float_4:: abgr||
 |float_4::abr||
 |float_4::abrg||
 |float_4::ag||
 |float_4::agb||
 |float_4::agbr||
-|float_4::agr||
+|float_4:: AGR||
 |float_4::agrb||
 |float_4::ar||
 |float_4::arb||
 |float_4::arbg||
 |float_4::arg||
 |float_4::argb||
-|float_4::b||
+|float_4:: b||
 |float_4::ba||
 |float_4::bag||
-|float_4::bagr||
+|float_4:: bagr||
 |float_4::bar||
-|float_4::barg||
+|float_4:: barg||
 |float_4::bg||
 |float_4::bga||
-|float_4::bgar||
-|float_4::BGR||
-|float_4::bgra||
+|float_4:: bgar||
+|float_4:: bgr||
+|float_4:: bgra||
 |float_4::br||
-|float_4::BRA||
-|float_4::brag||
+|float_4:: köşeli||
+|float_4:: Brag||
 |float_4::brg||
 |float_4::brga||
-|float_4::g||
+|float_4:: g||
 |float_4::ga||
 |float_4::gab||
 |float_4::gabr||
 |float_4::gar||
-|float_4::garb||
+|float_4:: garb||
 |float_4::gb||
 |float_4::gba||
-|float_4::gbar||
+|float_4:: GBar||
 |float_4::gbr||
-|float_4::gbra||
-|float_4::Gr||
-|float_4::Gra||
-|float_4::Grab||
+|float_4:: GBRA||
+|float_4:: gr||
+|float_4:: GRA||
+|float_4::||
 |float_4::grb||
 |float_4::grba||
 |float_4::r||
 |float_4::ra||
 |float_4::rab||
-|float_4::rabg||
+|float_4:: rampa||
 |float_4::rag||
 |float_4::ragb||
 |float_4::rb||
 |float_4::rba||
-|float_4::rbag||
+|float_4:: rbag||
 |float_4::rbg||
 |float_4::rbga||
 |float_4::rg||
@@ -527,52 +527,52 @@ class float_4;
 |float_4::rgab||
 |float_4::rgb||
 |float_4::rgba||
-|float_4::w||
-|float_4::wx||
-|float_4::WXY||
+|float_4:: w||
+|float_4:: WX||
+|float_4:: wxy||
 |float_4::wxyz||
 |float_4::wxz||
 |float_4::wxzy||
-|float_4::wy||
-|float_4::wyx||
-|float_4::wyxz||
+|float_4:: WY||
+|float_4:: wyx||
+|float_4:: wyxz||
 |float_4::wyz||
 |float_4::wyzx||
 |float_4::wz||
 |float_4::wzx||
 |float_4::wzxy||
-|float_4::wzy||
+|float_4:: wzy||
 |float_4::wzyx||
-|float_4::x||
-|float_4::xw||
-|float_4::xwy||
-|float_4::xwyz||
-|float_4::xwz||
-|float_4::xwzy||
-|float_4::xy||
-|float_4::xyw||
-|float_4::xywz||
-|float_4::xyz||
-|float_4::xyzw||
+|float_4:: x||
+|float_4:: XW||
+|float_4:: xwy||
+|float_4:: xwyz||
+|float_4:: XWZ||
+|float_4:: xwzy||
+|float_4:: XY||
+|float_4:: XYW||
+|float_4:: xywz||
+|float_4:: xyz||
+|float_4:: Xyzw||
 |float_4::xz||
-|float_4::xzw||
+|float_4:: xzw||
 |float_4::xzwy||
 |float_4::xzy||
 |float_4::xzyw||
-|float_4::y||
-|float_4::yw||
-|float_4::ywx||
+|float_4:: y||
+|float_4:: YW||
+|float_4:: ywx||
 |float_4::ywxz||
-|float_4::ywz||
-|float_4::ywzx||
-|float_4::yx||
+|float_4:: ywz||
+|float_4:: ywzx||
+|float_4:: yx||
 |float_4::yxw||
 |float_4::yxwz||
 |float_4::yxz||
 |float_4::yxzw||
 |float_4::yz||
 |float_4::yzw||
-|float_4::yzwx||
+|float_4:: yzwx||
 |float_4::yzx||
 |float_4::yzxw||
 |float_4::z||
@@ -598,15 +598,15 @@ class float_4;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> float_4
+## <a name="ctor"></a>float_4
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 float_4() restrict(amp,
     cpu);
 
@@ -649,26 +649,26 @@ explicit inline float_4(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V2*<br/>
-Öğe 2 başlatmak için değer.
+Öğe 2 ' nin başlatıldığı değer.
 
 *_V3*<br/>
-Öğeyi 3 başlatmak için değer.
+Öğe 3 ' ü başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="float_4__size"></a> Boyutu
+## <a name="float_4__size"></a>boyutla
 
-```
+```cpp
 static const int size = 4;
 ```
 

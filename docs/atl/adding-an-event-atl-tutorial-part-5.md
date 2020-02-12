@@ -3,69 +3,69 @@ title: Olay Ekleme (ATL Eğitmeni, Bölüm 5)
 ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: 2de12022-3148-4ce3-8606-8a9d4274f0e9
-ms.openlocfilehash: 57fc2adaadcca52cfc25736b5f9010fcb65a2ff0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9a7c6f38a2f47ec808081e440a200737ad1928a
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252569"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77127580"
 ---
 # <a name="adding-an-event-atl-tutorial-part-5"></a>Olay Ekleme (ATL Eğitmeni, Bölüm 5)
 
-Bu adımda, ekleyeceksiniz bir `ClickIn` ve `ClickOut` ATL Denetim Olayı. Ateşlenir `ClickIn` kullanıcı Çokgen ve yangın içinde tıklarsa olay `ClickOut` dışında tıklarsa. Görevleri bir olay eklemek için aşağıdaki gibidir:
+Bu adımda, ATL denetimine bir `ClickIn` ve `ClickOut` olayı ekleyeceksiniz. Kullanıcı çokgen içinde tıkladıysa ve Kullanıcı dışarıdan tıklarsa `ClickOut` harekete `ClickIn` olayını harekete geçirsiniz. Olay ekleme görevleri aşağıdaki gibidir:
 
-- Ekleme `ClickIn` ve `ClickOut` yöntemleri
+- `ClickIn` ve `ClickOut` yöntemleri ekleme
 
-- Tür kitaplığı oluşturma
+- Tür kitaplığı oluşturuluyor
 
-- Bağlantı noktası arabirimleri uygulama
+- Bağlantı noktası arabirimlerini uygulama
 
-## <a name="adding-the-clickin-and-clickout-methods"></a>Clickın ve ClickOut yöntemler ekleme
+## <a name="adding-the-clickin-and-clickout-methods"></a>Click ve Click yöntemlerini ekleme
 
-ATL denetimi 2. adımda oluşturduğunuz zaman seçtiğiniz **bağlantı noktaları** onay kutusu. Bu oluşturulan `_IPolyCtlEvents` Polygon.idl dosyasındaki arabirimi. Arabirim adı alt çizgi ile başlatır. Bu bir iç arabiriminde arabirimi olduğunu belirtmek için bir kuraldır. Bu nedenle, COM nesneleri göz atmanıza izin programlar arabirimi kullanıcıya göstermek seçebilirsiniz. Ayrıca bu seçerek unutmayın **bağlantı noktaları** göstermek için Polygon.idl dosyasında aşağıdaki satırı eklenen `_IPolyCtlEvents` varsayılan kaynak arabirimi:
+2\. adımda ATL denetimini oluştururken **bağlantı noktaları** onay kutusunu seçmiş olursunuz. Bu, Çokgen. IDL dosyasında `_IPolyCtlEvents` arabirimini oluşturdu. Arabirim adının bir alt çizgiyle başlayacağını unutmayın. Bu, arabirimin bir iç arabirim olduğunu gösteren bir kuraldır. Bu nedenle, COM nesnelerine gözatmanıza izin veren programlar kullanıcı arabirimini görüntülememe seçeneğini belirleyebilir. Ayrıca, `_IPolyCtlEvents` varsayılan kaynak arabirim olduğunu göstermek için, **bağlantı noktalarını** seçme, Çokgen. IDL dosyasına aşağıdaki satırı eklediğini unutmayın:
 
 `[default, source] dispinterface _IPolyCtlEvents;`
 
-Kaynak özniteliği, bu arabirim kapsayıcıdaki çağıracak şekilde denetim bildirimleri kaynağını olduğunu gösterir.
+Kaynak öznitelik, denetimin bildirimlerin kaynağı olduğunu, bu nedenle kapsayıcıda bu arabirimi çağıracağını belirtir.
 
-Şimdi ekleyin `ClickIn` ve `ClickOut` yöntemlere `_IPolyCtlEvents` arabirimi.
+Artık `ClickIn` ve `ClickOut` yöntemlerini `_IPolyCtlEvents` arabirimine ekleyin.
 
-### <a name="to-add-the-clickin-and-clickout-methods"></a>Clickın ve ClickOut yöntemi eklemek için
+### <a name="to-add-the-clickin-and-clickout-methods"></a>Click ve Click yöntemlerini eklemek için
 
-1. İçinde **Çözüm Gezgini**Polygon.idl açın ve aşağıdaki kodu ekleyin `methods:` içinde `dispInterface_IPolyCtlEvents` bildirimi PolygonLib kitaplığı:
+1. **Çözüm Gezgini**, Çokgen. IDL açın ve PolygonLib kitaplığının `dispInterface_IPolyCtlEvents` bildiriminde `methods:` altına aşağıdaki kodu ekleyin:
 
     ```cpp
    [id(1), helpstring("method ClickIn")] void ClickIn([in] LONG x,[in] LONG y);
    [id(2), helpstring("method ClickOut")] void ClickOut([in] LONG x,[in] LONG y);
     ```
 
-`ClickIn` Ve `ClickOut` yöntemleri Al x ve y koordinatları tıklatılan noktadan parametre olarak.
+`ClickIn` ve `ClickOut` yöntemleri, tıklanan noktanın x ve y koordinatlarını parametre olarak alır.
 
-## <a name="generating-the-type-library"></a>Tür kitaplığı oluşturma
+## <a name="generating-the-type-library"></a>Tür kitaplığı oluşturuluyor
 
-Tür kitaplığı, proje, bir bağlantı noktası arabirimi ve denetim için bir bağlantı noktası kapsayıcı arabirimi oluşturmak gereken bilgileri elde etmek için kullanacağınız için bu noktada, oluşturur.
+Bu noktada tür kitaplığını oluşturun, çünkü proje onu bir bağlantı noktası arabirimi oluşturmak için gereken bilgileri ve denetiminiz için bir bağlantı noktası kapsayıcı arabirimini kullanacak şekilde kullanacaktır.
 
-### <a name="to-generate-the-type-library"></a>Tür kitaplığı oluşturmak için
+### <a name="to-generate-the-type-library"></a>Tür kitaplığını oluşturmak için
 
 1. Projenizi yeniden derleyin.
 
-     -veya-
+     veya
 
-1. Polygon.idl dosyaya sağ **Çözüm Gezgini** tıklatıp **derleme** kısayol menüsünde.
+1. **Çözüm Gezgini** içindeki Çokgen. IDL dosyasına sağ tıklayın ve kısayol menüsünde **Derle** ' ye tıklayın.
 
-Bu, tür kitaplığı Polygon.tlb dosyasını oluşturur. Polygon.tlb dosyanın görülemediğinden, **Çözüm Gezgini**, çünkü bu bir ikili dosyadır ve görüntülenemez veya doğrudan düzenlenemez.
+Bu işlem, tür kitaplığınız olan Çokgen. tlb dosyasını oluşturur. Çokgen. tlb dosyası, bir ikili dosya olduğundan ve doğrudan görüntülenemediğinden veya düzenlenemediği için **Çözüm Gezgini**görünmüyor.
 
-## <a name="implementing-the-connection-point-interfaces"></a>Bağlantı noktası arabirimleri uygulama
+## <a name="implementing-the-connection-point-interfaces"></a>Bağlantı noktası arabirimlerini uygulama
 
-Bir bağlantı noktası arabirimi ve denetim için bir bağlantı noktası kapsayıcı arabirimi uygular. COM olayları bağlantı noktaları bir mekanizma aracılığıyla uygulanır. Bir COM nesneden olayları almak için bir kapsayıcı COM nesnesi uygulayan bağlantı noktasına danışmanlık bir bağlantı kurar. Bir COM nesnesi birden çok bağlantı noktaları olduğundan COM nesnesi bir bağlantı noktası kapsayıcı arabirimini de uygular. Bu arabirimi aracılığıyla, hangi bağlantı noktalarının desteklenen kapsayıcı belirleyebilirsiniz.
+Denetiminiz için bir bağlantı noktası arabirimi ve bağlantı noktası kapsayıcı arabirimi uygulayın. COM ' da olaylar bağlantı noktaları mekanizmasıyla uygulanır. Bir COM nesnesinden olayları almak için kapsayıcı, COM nesnesinin uyguladığı bağlantı noktasına bir danışmanlık bağlantısı kurar. Bir COM nesnesi birden fazla bağlantı noktasına sahip olabileceğinden, COM nesnesi bir bağlantı noktası kapsayıcı arabirimi de uygular. Bu arabirim aracılığıyla kapsayıcı hangi bağlantı noktalarının desteklendiğini belirleyebilir.
 
-Arabirimi uygulayan bir bağlantı noktası olarak adlandırılan `IConnectionPoint`, ve bir bağlantı noktası kapsayıcı uygulayan arabirimi çağrılır `IConnectionPointContainer`.
+Bir bağlantı noktası uygulayan arabirimine `IConnectionPoint`denir ve bir bağlantı noktası kapsayıcısı uygulayan arabirim `IConnectionPointContainer`olarak adlandırılır.
 
-Uygulamak için `IConnectionPoint`, bağlantı noktası Uygulama Sihirbazı'nı kullanın. Bu sihirbaz oluşturur `IConnectionPoint` , tür kitaplığı okuma ve harekete her bir olay için bir işlevi uygulayarak arabirimi.
+`IConnectionPoint`uygulamasına yardımcı olmak için bağlantı noktası uygulama Sihirbazı 'Nı kullanacaksınız. Bu sihirbaz, tür kitaplığınızı okuyarak ve tetiklenebilir her olay için bir işlev uygulayarak `IConnectionPoint` arabirimini oluşturur.
 
 ### <a name="to-implement-the-connection-points"></a>Bağlantı noktalarını uygulamak için
 
-1. İçinde **Çözüm Gezgini**_IPolyCtlEvents_CP.h açın ve aşağıdaki kodu ekleyin `public:` deyiminde `CProxy_IPolyCtlEvents` sınıfı:
+1. **Çözüm Gezgini**' de, _IPolyCtlEvents_CP. h ' yi açın ve `CProxy_IPolyCtlEvents` sınıfında `public:` deyimin altına aşağıdaki kodu ekleyin:
 
     ```cpp
     VOID Fire_ClickIn(LONG x, LONG y)
@@ -122,39 +122,39 @@ Uygulamak için `IConnectionPoint`, bağlantı noktası Uygulama Sihirbazı'nı 
     }
     ```
 
-Bu dosya adında bir sınıf olduğunu görürsünüz `CProxy_IPolyCtlEvents` türetilen `IConnectionPointImpl`. _IPolyCtlEvents_CP.h artık iki yöntemi tanımlar `Fire_ClickIn` ve `Fire_ClickOut`, iki koordinat parametre yararlanın. Denetim bir olay harekete istediğinizde bu yöntemi çağırın.
+Bu dosyanın `IConnectionPointImpl`türetilen `CProxy_IPolyCtlEvents` adlı bir sınıfa sahip olduğunu görürsünüz. _IPolyCtlEvents_CP. h artık iki yöntemi `Fire_ClickIn` ve `Fire_ClickOut`iki koordinat parametresini alacak olan tanımlıyor. Denetiinizden bir olay tetiklemesi istediğinizde bu yöntemleri çağırın.
 
-Denetimle oluşturarak **bağlantı noktaları** seçeneği _IPolyCtlEvents_CP.h dosyanın, oluşturulduğu. Ayrıca eklenen BT `CProxy_PolyEvents` ve `IConnectionPointContainerImpl` denetiminizin birden çok devralma listesine ve kullanıma `IConnectionPointContainer` COM eşlemesine uygun girdileri ekleniyor aktarılarak sizin için.
+Denetim **bağlantı noktalarıyla** seçildiğinde, _IPolyCtlEvents_CP. h dosyası sizin için oluşturulmuştur. Ayrıca, denetimin birden fazla devralma listesine `CProxy_PolyEvents` ve `IConnectionPointContainerImpl` ekler ve COM eşlemesine uygun girdileri ekleyerek `IConnectionPointContainer` açık olarak sunulur.
 
-Olayları desteklemek için kod uygulama tamamlanmış demektir. Şimdi, uygun şu anda olaylarını başlatmak için kod ekleyin. Unutmayın, ateşlenmesine seçeceğiz bir `ClickIn` veya `ClickOut` kullanıcının sol fare düğmesine denetimde tıkladığında bir olay. Kullanıcı düğmeye tıkladığında öğrenmek için bir işleyici eklemek `WM_LBUTTONDOWN` ileti.
+Olayları desteklemek için kodu uygulamayı tamamladınız. Şimdi, uygun zamanda olayları tetiklemesi için bazı kodlar ekleyin. Kullanıcı denetimdeki sol fare düğmesine tıkladığında bir `ClickIn` veya `ClickOut` olayı tetikleyeceğini unutmayın. Kullanıcının düğmeyi ne zaman tıkladığı hakkında bilgi edinmek için `WM_LBUTTONDOWN` ileti için bir işleyici ekleyin.
 
-### <a name="to-add-a-handler-for-the-wmlbuttondown-message"></a>WM_LBUTTONDOWN iletisi için bir işleyici eklemek için
+### <a name="to-add-a-handler-for-the-wm_lbuttondown-message"></a>WM_LBUTTONDOWN ileti için bir işleyici eklemek için
 
-1. İçinde **sınıf görünümü**, sağ `CPolyCtl` sınıfı ve tıklayın **özellikleri** kısayol menüsünde.
+1. **Sınıf görünümü**' de, `CPolyCtl` sınıfına sağ tıklayıp kısayol menüsünde **Özellikler** ' e tıklayın.
 
-1. İçinde **özellikleri** penceresinde tıklayın **iletileri** simgesine ve ardından `WM_LBUTTONDOWN` sol taraftaki listeden.
+1. **Özellikler** penceresinde **iletiler** simgesine tıklayın ve ardından sol taraftaki listeden `WM_LBUTTONDOWN` ' ye tıklayın.
 
-1. Görünen açılan listeden tıklayın  **\<Ekle > OnLButtonDown**. `OnLButtonDown` İşleyici bildirimi için PolyCtl.h eklenir ve işleyici uygulama için PolyCtl.cpp eklenir.
+1. Görüntülenen aşağı açılan listeden, **\<> Onlbuttonaşağı Ekle**' ye tıklayın. `OnLButtonDown` Handler bildirimi PolyCtl. h öğesine eklenecektir ve işleyici uygulama PolyCtl. cpp öğesine eklenecektir.
 
-Ardından, işleyici değiştirin.
+Sonra, işleyiciyi değiştirin.
 
-### <a name="to-modify-the-onlbuttondown-method"></a>OnLButtonDown yöntemi değiştirmek için
+### <a name="to-modify-the-onlbuttondown-method"></a>Onlbuttonazaltma yöntemini değiştirmek için
 
-1. Oluşur kodunu değiştirmek `OnLButtonDown` (Sihirbaz tarafından yerleştirilen herhangi bir kod silme) PolyCtl.cpp yönteminde böylece şöyle görünür:
+1. PolyCtl. cpp içinde `OnLButtonDown` yöntemi içeren kodu değiştirin (sihirbaz tarafından verilen tüm kodları silme), böylece şöyle görünür:
 
     [!code-cpp[NVC_ATL_Windowing#57](../atl/codesnippet/cpp/adding-an-event-atl-tutorial-part-5_2.cpp)]
 
-Bu kod yapar noktalarının kullanımını hesaplanır `OnDraw` Kullanıcı fareye tıklayana çağrısıyla algılayan bir bölge oluşturmak için işlevi `PtInRegion`.
+Bu kod, `PtInRegion`çağrısıyla kullanıcının fare tıklamasını algılayan bir bölge oluşturmak için `OnDraw` işlevinde hesaplanan noktaların kullanımını sağlar.
 
-*UMsg* parametredir işlenen Windows iletinin kimliği. Bu, bir dizi iletileri işleyen bir işlev olmasını sağlar. *WParam* ve *lParam* parametreleri işlenmekte olan ileti için standart değerlerdir. Parametre *bHandled* işlevi veya iletiyi işleyip işlemediğini belirtmenizi sağlar. Varsayılan olarak, değer, iletinin işlevi işlenmiş, ancak FALSE olarak ayarlayabilirsiniz olduğunu belirtmek için TRUE olarak ayarlanır. Bu, ATL ileti göndermek başka bir ileti işleyici işlevi mi arıyorsunuz devam etmesine neden olur.
+*UMsg* parametresi, Işlenmekte olan WINDOWS iletisinin kimliğidir. Bu, bir dizi iletiyi işleyen bir işlevinizin olmasını sağlar. *WParam* ve *lParam* parametreleri, işlenen ileti için standart değerlerdir. *Bişlenmiş* parametresi, işlevin iletiyi işlemediğini belirtmenize izin verir. Varsayılan olarak, işlevin iletiyi işlendiğini göstermek için değeri TRUE olarak ayarlanır, ancak FALSE olarak ayarlayabilirsiniz. Bu, ATL 'nin iletiyi göndermek için başka bir ileti işleyici işlevi aramaya devam etmesine neden olur.
 
-## <a name="building-and-testing-the-control"></a>Derleme ve denetimini test etme
+## <a name="building-and-testing-the-control"></a>Denetim oluşturma ve test etme
 
-Olaylarınızı ' ı şimdi deneyin. Denetimi oluşturun ve ActiveX denetimi Test kapsayıcısını yeniden başlatın. Bu kez, Olay Günlüğü penceresini görüntüleyin. Çıkış penceresinde olaylarını yönlendirme için tıklayın **günlüğü** gelen **seçenekleri** menü ve select **çıkış penceresinde günlük**. Denetim ekleme ve penceresinde tıklamayı deneyin. Unutmayın `ClickIn` dolu bir Çokgen içinde tıklarsanız tetiklenir ve `ClickOut` dışında tıklattığınızda tetiklenir.
+Şimdi olaylarınızı deneyin. Denetimi derleyin ve ActiveX denetimi test kapsayıcısını yeniden başlatın. Bu kez, olay günlüğü penceresini görüntüleyin. Olayları çıkış penceresine yönlendirmek için, **Seçenekler** menüsünde **günlüğe** Kaydet ' e tıklayın ve **Çıkış penceresinde günlüğe kaydet**' i seçin. Denetimi ekleyin ve pencereyi tıklatmayı deneyin. Doldurulmuş çokgen içinde tıkladıysanız `ClickIn` harekete geçirilir ve dışına tıkladığınızda `ClickOut` tetiklenir.
 
-Ardından, bir özellik sayfası ekleyeceksiniz.
+Sonra bir özellik sayfası ekleyeceksiniz.
 
-[4. adım dön](../atl/changing-the-drawing-code-atl-tutorial-part-4.md) &#124; [6. adım açın](../atl/adding-a-property-page-atl-tutorial-part-6.md)
+Adım &#124; [6 ' da](../atl/adding-a-property-page-atl-tutorial-part-6.md) [Adım 4 ' e dön](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

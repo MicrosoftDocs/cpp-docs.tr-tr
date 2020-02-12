@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_multiple_scheduling class
 ms.assetid: e9a47cb7-a778-4df7-92b0-3752119fd4c7
-ms.openlocfilehash: 7c8ce0aefc12097a71e79933d34a116997c8105f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8b2a045ce94562dcba0019bc03aaa90c4d384a9
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252776"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77140899"
 ---
-# <a name="invalidmultiplescheduling-class"></a>invalid_multiple_scheduling Sınıfı
+# <a name="invalid_multiple_scheduling-class"></a>invalid_multiple_scheduling Sınıfı
 
-Bu sınıf oluşan bir özel durumu anlatmaktadır bir `task_handle` nesnedir kullanarak süreleri zamanlanmış birden çok `run` yöntemi bir `task_group` veya `structured_task_group` nesnesi olmadan bir çağrı göndermelisiniz `wait` veya `run_and_wait` yöntemleri.
+Bu sınıf, `wait` veya `run_and_wait` yöntemlerine aradaki bir çağrı olmadan bir `task_group` veya `structured_task_group` nesnesinin `run` yöntemi kullanılarak birden çok kez zamanlan`task_handle` dığında oluşturulan bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class invalid_multiple_scheduling : public std::exception;
 ```
 
@@ -31,7 +31,7 @@ class invalid_multiple_scheduling : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_multiple_scheduling](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_multiple_scheduling` nesne.|
+|[invalid_multiple_scheduling](#ctor)|Fazla Yüklendi. `invalid_multiple_scheduling` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,15 +41,15 @@ class invalid_multiple_scheduling : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concrt.h
+**Üstbilgi:** concrt. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="ctor"></a> invalid_multiple_scheduling
+## <a name="ctor"></a>invalid_multiple_scheduling
 
-Oluşturur bir `invalid_multiple_scheduling` nesne.
+`invalid_multiple_scheduling` nesnesi oluşturur.
 
-```
+```cpp
 explicit _CRTIMP invalid_multiple_scheduling(_In_z_ const char* _Message) throw();
 
 invalid_multiple_scheduling() throw();
@@ -57,7 +57,7 @@ invalid_multiple_scheduling() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*_Message*<br/>
 Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
@@ -65,7 +65,7 @@ Hatanın açıklayıcı bir iletisi.
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [task_handle Sınıfı](task-handle-class.md)<br/>
 [task_group Sınıfı](task-group-class.md)<br/>
-[run](task-group-class.md)<br/>
-[bekleme](task-group-class.md)<br/>
+[çalışmaz](task-group-class.md)<br/>
+[bekleneceğini](task-group-class.md)<br/>
 [run_and_wait](task-group-class.md)<br/>
 [structured_task_group Sınıfı](structured-task-group-class.md)

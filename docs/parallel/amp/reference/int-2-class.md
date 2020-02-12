@@ -28,26 +28,26 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_2::operator+=
 - amp_short_vectors/Concurrency::graphics::int_2::operator--
 ms.assetid: 258b02e9-f1ee-46c2-8edd-dc9f69184846
-ms.openlocfilehash: 3c5aefbfd1a4b06274fac0f56c1e1e45ef9dc5bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 000bda3a6ecc5b1ebf9be4e07ce8d703b6cd9194
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180264"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77126649"
 ---
-# <a name="int2-class"></a>int_2 Sınıfı
+# <a name="int_2-class"></a>int_2 Sınıfı
 
-İki tamsayının oluşan bir kısa vektörü temsil eder.
+İki tamsayının kısa vektörünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class int_2;
 ```
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -57,7 +57,7 @@ class int_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[int_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+|[int_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -71,8 +71,8 @@ class int_2;
 |int_2::ref_r||
 |int_2::ref_x||
 |int_2::ref_y||
-|int_2::set_x||
-|int_2::set_xy||
+|int_2:: set_x||
+|int_2:: set_xy||
 |int_2::set_y||
 |int_2::set_yx||
 
@@ -80,39 +80,39 @@ class int_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_2::operator-||
+|int_2:: operator-||
 |int_2::operator--||
 |int_2::operator%=||
-|int_2::operator & =||
-|int_2::operator * =||
-|int_2::operator / =||
+|int_2:: operator & =||
+|int_2:: operator * =||
+|int_2:: operator/=||
 |int_2::operator^=||
-|int_2::operator&#124;=||
-|int_2::operator ~||
+|int_2:: operator&#124;=||
+|int_2:: operator ~||
 |int_2::operator++||
 |int_2::operator+=||
-|int_2::operator <\<=||
+|int_2:: operator <\<=||
 |int_2::operator=||
 |int_2::operator-=||
-|int_2::operator >> =||
+|int_2:: operator > > =||
 
 ### <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[boyutu sabiti](#int_2__size)||
+|[Boyut sabiti](#int_2__size)||
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_2::g||
-|int_2::Gr||
-|int_2::r||
+|int_2:: g||
+|int_2:: gr||
+|int_2:: r||
 |int_2::rg||
-|int_2::x||
-|int_2::xy||
-|int_2::y||
+|int_2:: x||
+|int_2:: XY||
+|int_2:: y||
 |int_2::yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -121,15 +121,15 @@ class int_2;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Namespace:** CONCURRENCY::Graphics
+**Ad alanı:** Eşzamanlılık:: grafik
 
-##  <a name="ctor"></a> int_2
+## <a name="ctor"></a>int_2
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
-```
+```cpp
 int_2() restrict(amp,
     cpu);
 
@@ -170,20 +170,20 @@ explicit inline int_2(
 ### <a name="parameters"></a>Parametreler
 
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.
+0 öğesini başlatacak değer.
 
 *_V1*<br/>
-1 öğe başlatmak için değer.
+1 öğesini başlatacak değer.
 
 *_V*<br/>
-Başlatma için değer.
+Başlatma değeri.
 
-*_Diğer*<br/>
+*_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-##  <a name="int_2__size"></a> Boyutu
+## <a name="int_2__size"></a>boyutla
 
-```
+```cpp
 static const int size = 2;
 ```
 

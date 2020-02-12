@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-ms.openlocfilehash: 9cc48687eb083ea4fab53380f62856b747c9d86a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5bc6691f6d0b166bb3084091ee6af70474937568
+ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512819"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77141325"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>Eşzamanlılık Çalışma Zamanını Diğer Eşzamanlılık Modelleriyle Karşılaştırma
 
@@ -19,7 +19,7 @@ Bu belgede Eşzamanlılık Çalışma Zamanı ve diğer teknolojilerin Özellikl
 
 Başka bir eşzamanlılık modeli kullanan mevcut uygulamanızı tamamlamak için Eşzamanlılık Çalışma Zamanı özellikleri ve verimlilik avantajlarından yararlanabilirsiniz. Eşzamanlılık Çalışma Zamanı, birden çok görev zamanlayıcılar aynı bilgi işlem kaynakları için rekabet edildiğinde yük dengelemeyi garanti edemez. Ancak, iş yükleri çakışmazsa, bu efekt en düşük düzeydedir.
 
-##  <a name="top"></a>Başlıklı
+## <a name="top"></a>Başlıklı
 
 - [Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma](#models)
 
@@ -27,7 +27,7 @@ Başka bir eşzamanlılık modeli kullanan mevcut uygulamanızı tamamlamak içi
 
 - [Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma](#openmp)
 
-##  <a name="models"></a>Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma
+## <a name="models"></a>Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma
 
 Preemptive modeli ve birlikte çalışırken zamanlama modelleri, işlem kaynaklarını paylaşmak için birden çok görevi etkinleştirmenin iki yaygın yollarıdır. Örneğin, işlemciler veya donanım iş parçacıkları.
 
@@ -51,7 +51,7 @@ Ortak zamanlama, tüm zamanlama sorunlarını çözmez. Örneğin, diğer görev
 
 [[Üst](#top)]
 
-##  <a name="winapi"></a>Eşzamanlılık Çalışma Zamanı Windows API 'siyle karşılaştırma
+## <a name="winapi"></a>Eşzamanlılık Çalışma Zamanı Windows API 'siyle karşılaştırma
 
 Genellikle Windows API (ve daha önce Win32 olarak bilinirdi) olarak adlandırılan Microsoft Windows uygulama programlama arabirimi, uygulamalarınızda eşzamanlılık sağlayan bir programlama modeli sağlar. Eşzamanlılık Çalışma Zamanı, temel işletim sisteminden kullanılamayan ek programlama modelleri sağlamak için Windows API üzerinde oluşturulur.
 
@@ -77,11 +77,11 @@ Windows XP ve Windows Vista 'da, Windows Vista 'da yığın performansı iyileş
 
 Windows 7 ve Windows Server 2008 R2 'de, işletim sistemi Eşzamanlılık ve ölçeklenebilirliği daha da destekler. Örneğin, bu işletim sistemleri 64 ' den fazla donanım iş parçacığına sahip bilgisayarları destekler. Bu yeni özelliklerden faydalanmak için Windows API kullanan mevcut bir uygulamanın değiştirilmesi gerekir. Ancak, Eşzamanlılık Çalışma Zamanı kullanan bir uygulama otomatik olarak bu özellikleri kullanır ve değişiklik gerektirmez.
 
-[Base. User-mode_scheduling](/windows/win32/procthread/user-mode-scheduling)
+[temel. Kullanıcı-mode_scheduling](/windows/win32/procthread/user-mode-scheduling)
 
 [[Üst](#top)]
 
-##  <a name="openmp"></a>Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma
+## <a name="openmp"></a>Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma
 
 Eşzamanlılık Çalışma Zamanı çeşitli programlama modellerine izin vermez. Bu modeller diğer kitaplıkların modellerini örtüşebilir veya tamamlayabilir. Bu bölüm Eşzamanlılık Çalışma Zamanı [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)ile karşılaştırır.
 
