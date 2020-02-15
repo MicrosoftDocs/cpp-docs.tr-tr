@@ -15,20 +15,20 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: a8f8b623ad53b84b8e614a1831d1a060df890931
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e9ea296ab1b3440782871e3d4c7555ff2075e445
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244701"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257968"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;karmaşık&gt; işleçleri
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-İki karmaşık sayılar, biri veya ikisi de arasındaki eşitsizliği sınar reel ve sanal parça türünün bir alt kümesine ait olabilir.
+İki karmaşık sayı arasında eşitsizlik için, biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.
 
-```
+```cpp
 template <class Type>
 bool operator!=(
     const complex<Type>& left,
@@ -47,21 +47,21 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+*sol*\
+Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
 *sağ*\
-Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sayıları eşit; değilse, **false** sayılar eşitse.
+sayılar eşit değilse **doğru** ; sayılar eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki karmaşık sayılar, gerçek bölümleri eşit ve bunların sanal parçaları eşit olan ve yalnızca, eşit olur. Aksi takdirde, eşit oldukları.
+İki karmaşık sayı eşit ve yalnızca gerçek parçaları eşitse ve sanal parçaları eşitse eşittir. Aksi takdirde, bunlar eşit değildir.
 
-Böylece karşılaştırma testleri belirli bir biçimde veri dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+İşlem, verilerin belirli bir biçime dönüştürülmesi olmadan, karşılaştırma testlerinin yürütülebilmesi için aşırı yüklendi.
 
 ### <a name="example"></a>Örnek
 
@@ -163,12 +163,11 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a> İşleci\*
+## <a name="op_star"></a>işleç\*
 
-İki çarpar karmaşık sayılar, biri veya ikisi de ait alt reel ve sanal parçaları için türü.
+, Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çarpar.
 
-```
-
+```cpp
 template <class Type>
 complex<Type> operator*(
     const complex<Type>& left,
@@ -187,19 +186,19 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
+*sol*\
+İki karmaşık sayının ilki veya \* işlem ile çarpılacak karmaşık bir sayı için parametre türünde bir sayı.
 
 *sağ*\
-İkinci iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
+İki karmaşık sayının ikinci sayısı veya \* işlemi ile çarpılacak karmaşık bir sayının parametre türünde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki sayı bir çarpma değeri ve türü sonuçları karmaşık sayı parametresi girişleri tarafından belirtilir.
+Değer ve türü parametre girişleri tarafından belirtilen iki sayının çarpmasına neden olan karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -261,12 +260,11 @@ int main( )
 }
 ```
 
-## <a name="op_add"></a> operator +
+## <a name="op_add"></a>işleç +
 
-Alt tür reel ve sanal parçaları için iki karmaşık sayılar, biri veya ikisi de ait ekler.
+, Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayı ekler.
 
-```
-
+```cpp
 template <class Type>
 complex<Type> operator+(
     const complex<Type>& left,
@@ -288,19 +286,19 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
+*sol*\
+İki karmaşık sayının ilki veya + işlemi tarafından eklenecek karmaşık bir sayının parametre türünde bir sayı.
 
 *sağ*\
-İkinci iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
+İki karmaşık sayının ikinci sayısı veya + işlemi tarafından eklenecek karmaşık bir sayının parametre türünde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki sayı eklenmesi değeri ve türü sonuçları karmaşık sayı parametresi girişleri tarafından belirtilir.
+Değer ve türü parametre girişleri tarafından belirtilen iki sayının eklenmesiyle sonuçlanan karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi. Birli işleç döndürür *sol*.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir. Birli işleç *sola*döndürüyor.
 
 ### <a name="example"></a>Örnek
 
@@ -402,9 +400,9 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a> operator-
+## <a name="operator-"></a>işlecinde
 
-İki çıkarır karmaşık sayılar, biri veya ikisi de ait alt reel ve sanal parçaları için türü.
+, Bir veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çıkartır.
 
 ```cpp
 template <class Type>
@@ -428,21 +426,21 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
+*sol*\
+İki karmaşık sayının ilki veya-işlem tarafından çıkarılacak karmaşık bir sayının parametre türünde bir sayı.
 
 *sağ*\
-İkinci iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
+İki karmaşık sayının ikinci sayısı veya-işlem tarafından çıkarılacak karmaşık bir sayının parametre türünde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıkarılmasının sonucu karmaşık sayıyı *doğru* gelen *sol*, iki sayı değerleri, parametre girişleri tarafından belirtilir.
+*Sağdan* *soldan*çıkarma işleminden kaynaklanan karmaşık sayı, değerleri parametre girişleri tarafından belirtilen iki sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
-Birli işleç, karmaşık bir sayıyı işaretini değiştirir ve, gerçek bölüm negatif sayı girdisi gerçek kısmının ve sanal olan bölüm negatif sayı girdisi sanal bölümünün bir değer döndürür.
+Birli işleç, karmaşık bir sayının işaretini değiştirir ve gerçek bölümü, sayı girişinin gerçek bölümünün negatifi olan ve sanal bölümü, sayı girişinin sanal kısmının negatif değeri olan bir değer döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -544,9 +542,9 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="op_div"></a> operator /
+## <a name="op_div"></a>işlecinde
 
-Böler iki karmaşık sayılar, biri veya ikisi de reel ve sanal parça türünün bir alt kümesine ait olabilir.
+İki karmaşık sayıyı, birini veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.
 
 ```cpp
 template <class Type>
@@ -567,19 +565,19 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Karmaşık bir sayıyı veya pay ile paydası bölünüp olan karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
+*sol*\
+/İşlemi ile paydaya bölünecek pay olan karmaşık bir sayının parametre türünde karmaşık bir sayı veya sayı.
 
 *sağ*\
-Karmaşık bir sayıyı veya pay ile ayırmak için kullanılacak ise karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
+Payı/işlem ile bölmek için kullanılan payda olan karmaşık bir sayının parametre türünde karmaşık bir sayı veya sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre girişleri tarafından belirtilen değerler biri paydası tarafından pay bölmeden sonuçları karmaşık sayı.
+Paydanın, parametre girişleri tarafından belirtilen değerlerini paydadan elde eden karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -664,9 +662,9 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="op_lt_lt"></a> İşleci&lt;&lt;
+## <a name="op_lt_lt"></a>işleç&lt;&lt;
 
-Karmaşık çıkış akışına belirtilen bir sayıyı ekler.
+Çıkış akışına belirtilen karmaşık bir sayı ekler.
 
 ```cpp
 template <class Type, class Elem, class Traits>
@@ -677,19 +675,19 @@ basic_ostream<Elem, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ostr*\
-Karmaşık sayıyı girilmiş olan çıkış akışı.
+*OSTR*\
+Karmaşık sayının girildiği çıkış akışı.
 
 *sağ*\
-Çıkış akımına girilmesi gereken karmaşık numara
+Çıkış akışına girilecek karmaşık sayı
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen karmaşık sayıyı değerini Yazar *Ostr* Kartezyen biçimde: ( *gerçek bölümü, sanal parçası* ).
+Belirtilen karmaşık sayının değerini bir Kartezyen biçiminde ( *gerçek bölüm, sanal bölüm* ) yazar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkış akışı, karmaşık bir sayıyı herhangi bir biçimde kabul eder ve Kartezyen biçimi, varsayılan çıkış biçimi; böylece aşırı yüklendi.
+Çıkış akışı, karmaşık bir sayının herhangi bir biçimini kabul edecek şekilde aşırı yüklenir ve varsayılan çıkış biçimi Kartezyen biçimidir.
 
 ### <a name="example"></a>Örnek
 
@@ -726,12 +724,11 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-İki karmaşık sayılar, biri veya ikisi de arasındaki eşitliği sınar reel ve sanal parça türünün bir alt kümesine ait olabilir.
+İki karmaşık sayı arasındaki eşitlik için bir veya her ikisinin de gerçek ve sanal parçalar için türün alt kümesine ait olabileceğini sınar.
 
-```
-
+```cpp
 template <class Type>
 bool operator==(
     const complex<Type>& left,
@@ -750,21 +747,21 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+*sol*\
+Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
 *sağ*\
-Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sayıları eşitse; **false** sayıları eşit değilse.
+sayılar eşitse **true** ; sayılar eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki karmaşık sayılar, gerçek bölümleri eşit ve bunların sanal parçaları eşit olan ve yalnızca, eşit olur. Aksi takdirde, eşit oldukları.
+İki karmaşık sayı eşit ve yalnızca gerçek parçaları eşitse ve sanal parçaları eşitse eşittir. Aksi takdirde, bunlar eşit değildir.
 
-Böylece karşılaştırma testleri belirli bir biçimde veri dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+İşlem, verilerin belirli bir biçime dönüştürülmesi olmadan, karşılaştırma testlerinin yürütülebilmesi için aşırı yüklendi.
 
 ### <a name="example"></a>Örnek
 
@@ -866,12 +863,11 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_gt_gt"></a> İşleci&gt;&gt;
+## <a name="op_gt_gt"></a>işleç&gt;&gt;
 
-Karmaşık bir değer, giriş akışından ayıklar.
+Giriş akışından karmaşık bir değer ayıklar.
 
-```
-
+```cpp
 template <class Type, class Elem, class Traits>
 basic_istream<Elem, Traits>& operator>>(
    basic_istream<Elem, Traits>& Istr,
@@ -880,25 +876,25 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Istr*\
-Karmaşık sayıyı ayıklandığı Giriş akışı.
+*ISTR*\
+Karmaşık sayının ayıklandığı giriş akışı.
 
 *sağ*\
-Girdi akışından ayıklanan karmaşık sayı.
+Giriş akışından ayıklanan karmaşık sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen karmaşık sayıyı değerini okur *Istr* ve içine döndürür *doğru*.
+*ISTR* 'tan belirtilen karmaşık sayının değerini okur ve *sağa*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli giriş biçimleri
+Geçerli giriş biçimleri şunlardır
 
-- *(gerçek bölüm, sanal bir parçası)*
+- *(gerçek bölüm, sanal bölüm)*
 
-- *(gerçek. bölüm)*
+- *(gerçek bölüm)*
 
-- *gerçek bir parçası*
+- *Gerçek bölüm*
 
 ### <a name="example"></a>Örnek
 

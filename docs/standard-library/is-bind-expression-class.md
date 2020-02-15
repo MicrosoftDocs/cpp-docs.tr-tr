@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - is_bind_expression class
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47
-ms.openlocfilehash: 6cd6d45788ec36f6827d1403ce3f7e5057004433
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 9d83ff978ccbaec5e66509ac94f22cf29bc20866
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245206"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258088"
 ---
-# <a name="isbindexpression-class"></a>is_bind_expression Sınıfı
+# <a name="is_bind_expression-class"></a>is_bind_expression Sınıfı
 
-Tür çağrılarak oluşturulan olmadığını test eder `bind`.
+`bind`çağırarak bir tür oluşturulup oluşturulmamaları sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<class Ty>
 struct is_bind_expression {
    static const bool value;
@@ -28,7 +28,7 @@ struct is_bind_expression {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sabit üye `value` true ise tür `Ty` bir çağrı tarafından döndürülen bir türü `bind`, aksi durumda false.
+Tür `Ty` `bind`çağrısı tarafından döndürülen bir tür ise sabit üye `value` true, aksi durumda false.
 
 ## <a name="example"></a>Örnek
 

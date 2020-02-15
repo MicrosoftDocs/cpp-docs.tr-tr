@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - erase method
 ms.assetid: abc091c5-5a80-4bd8-93a8-a2d9bde2efec
-ms.openlocfilehash: 1463a854c314884f0b3b6bffa5d37dfb7fec4a6f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 1fa3fe7dee10f3033b84a671fdc35c193cd6ec3c
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454508"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257903"
 ---
 # <a name="container-classerase"></a>Kapsayıcı Sınıfı::erase
 
@@ -20,9 +20,8 @@ Bir öğeyi siler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-
-    iterator erase(
+```cpp
+iterator erase(
     iterator _Where);
 
 iterator erase(
@@ -32,7 +31,7 @@ iterator erase(
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, işaret edilen kontrollü sıranın öğesini *_Where*öğesine kaldırır. İkinci üye işlevi, [`first`, `last`) aralığındaki denetlenen sıranın öğelerini kaldırır. Her ikisi de kaldırılan öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [End](../standard-library/container-class-end.md) .
+İlk üye işlevi, *_Where*tarafından işaret edilen denetimli sıranın öğesini kaldırır. İkinci üye işlevi [`first`, `last`) aralığındaki denetlenen sıranın öğelerini kaldırır. Her ikisi de kaldırılan öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [End](../standard-library/container-class-end.md) .
 
 Üye işlevleri yalnızca bir kopyalama işlemi özel durum oluşturursa bir özel durum oluşturur.
 

@@ -1,18 +1,21 @@
 ---
-title: Alfabetik Listelenmiş Derleyici Seçenekleri
-ms.date: 01/08/2020
+title: Alfabetik listelenmiş derleyici seçenekleri
+description: Microsoft C/C++ derleyici komut satırı seçeneklerinin alfabetik düzeninde başvuru listesi.
+ms.date: 02/09/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: d64a41802c18627cf8e07f0d83b53fa5a4555f5b
-ms.sourcegitcommit: 0f4ee9056d65043fa5a715f0ad1031c0ed30e2b6
+ms.openlocfilehash: 6b3412378aa4bb36ea861a81758d2227df3432c6
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034603"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257747"
 ---
-# <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
+# <a name="compiler-options-listed-alphabetically"></a>Alfabetik listelenmiş derleyici seçenekleri
 
-Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmiştir. Kategorik bir liste için, [kategoriye göre listelenen derleyici seçeneklerine](compiler-options-listed-by-category.md)bakın.
+Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye göre derleyici seçeneklerinin bir listesi için, [kategoriye göre listelenen derleyici seçenekleri](compiler-options-listed-by-category.md) bölümüne bakın.
+
+## <a name="compiler-options"></a>Derleyici seçenekleri
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -27,19 +30,19 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/c](c-compile-without-linking.md)|Bağlama olmadan derler.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|İyileştirme ve kod oluşturma için kullanılacak CL. exe iş parçacıklarının sayısını belirtir.|
 |[clr](clr-common-language-runtime-compilation.md)|Ortak dil çalışma zamanında çalışacak bir çıktı dosyası üretir.|
-|[/constexpr](constexpr-control-constexpr-evaluation.md)|Derleme zamanında constexpr değerlendirmesini denetleyin.|
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|Derleme zamanında **constexpr** değerlendirmesini denetleyin.|
 |[Belirtilmediyse](d-preprocessor-definitions.md)|Sabitleri ve makroları tanımlar.|
 |[/Diagnostics](diagnostics-compiler-diagnostic-options.md)|Tanılama iletilerinin biçimini denetler.|
 |[/doc](doc-process-documentation-comments-c-cpp.md)|Belge açıklamalarını bir XML dosyası ile işleyin.|
 |[/E](e-preprocess-to-stdout.md)|Önişlemci çıkışını standart çıktıya kopyalar.|
 |[/EH](eh-exception-handling-model.md)|Özel durum işleme modelini belirtir.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıkışını standart çıktıya kopyalar.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|İç derleyici hatası (ıCE) bilgilerini doğrudan Microsoft C++ ekibine sağlamanıza olanak tanır.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
 |[/Execution-charset](execution-charset-set-execution-character-set.md)|Yürütme karakter kümesini ayarlayın.|
 |[/Deneysel: modül](experimental-module.md)|Deneysel modül desteğini izin vermez.|
 |[/Deneysel: Önişlemci](experimental-preprocessor.md)|Deneysel uyumsuz Önişlemci desteğini sunar.|
 |[/F](f-set-stack-size.md)|Yığın boyutunu ayarlar.|
-|[/Favor](favor-optimize-for-architecture-specifics.md)|Yalnızca AMD64 ve genişletilmiş bellek 64 Technology (EM64T) mimarilerinde mikro mimarilerin özellikleri için veya belirli bir x64 mimarisi için optimize edilmiş kodu üretir.|
+|[/Favor](favor-optimize-for-architecture-specifics.md)|Belirli bir x64 mimarisi için en iyi duruma getirilmiş kodu üretir. Ya da AMD64 ve EM64T mimarilerinde belirli mikro mimariler için.|
 |[/FA](fa-fa-listing-file.md)|Bir listeleme dosyası oluşturur.|
 |[/FA](fa-fa-listing-file.md)|Listeleme dosyası adını ayarlar.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Tanılama metninde CL. exe ' ye geçirilen kaynak kodu dosyalarının tam yolunu görüntüler.|
@@ -52,7 +55,7 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 |[/FP](fp-specify-floating-point-behavior.md)|Kayan nokta davranışını belirtin.|
 |[/FP](fp-name-dot-pch-file.md)|Önceden derlenmiş üst bilgi dosyası adını belirtir.|
 |[/FR](fr-fr-create-dot-sbr-file.md)<br /><br /> [/Fr](fr-fr-create-dot-sbr-file.md)|Tarayıcı dosyaları oluşturur. **/Fr** kullanım dışıdır.|
-|[/FS](fs-force-synchronous-pdb-writes.md)|, MSPDBSRV aracılığıyla serileştirilmesi için program veritabanı (PDB) dosyasına yazmaları zorlar. EXE.|
+|[/FS](fs-force-synchronous-pdb-writes.md)|Tüm yazma işlemlerini MSPDBSRV aracılığıyla program veritabanı (PDB) dosyasına Serileştirmeye zorlar. EXE.|
 |[/FU](fu-name-forced-hash-using-file.md)|Dosya adının [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesine geçirilmiş gibi kullanılmasını zorlar.|
 |[/FX](fx-merge-injected-code.md)|Eklenen kodu kaynak dosyayla birleştirir.|
 |[/GA](ga-optimize-for-windows-application.md)|Windows uygulaması için kodu iyileştirir.|
@@ -172,5 +175,5 @@ Derleyici seçeneklerinin kapsamlı alfabetik bir listesi aşağıda verilmişti
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)\
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

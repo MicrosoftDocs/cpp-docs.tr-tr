@@ -1,6 +1,7 @@
 ---
 title: NMAKE Çalıştırma
-ms.date: 10/29/2019
+description: Microsoft NMAKE komut satırı seçeneklerine yönelik başvuru kılavuzu.
+ms.date: 02/09/2020
 helpviewer_keywords:
 - targets, building
 - response files, NMAKE
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - NMAKE program, running
 - command files, NMAKE
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
-ms.openlocfilehash: ed56b7cd69b683caa84f184d9d72e70aac12add3
-ms.sourcegitcommit: 6ed1bc5b26dc60a780c1fc5f2f19d57ba1dc47d8
+ms.openlocfilehash: bfada33a89c04d25bf7444cbf3b1e7ef3ed44385
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144546"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257604"
 ---
 # <a name="running-nmake"></a>NMAKE Çalıştırma
 
@@ -40,7 +41,7 @@ NMAKE seçenekleri aşağıdaki tabloda açıklanmıştır. Seçenekler önünde
 | **/C** | Önemli olmayan NMAKE hataları veya uyarıları, zaman damgaları ve NMAKE telif hakkı iletisi dahil olmak üzere varsayılan çıktıyı bastırır. **/K**tarafından verilen uyarıları göstermez. |
 | **Belirtilmediyse** | Her değerlendirilen hedefin ve bağımlı olduğu zaman damgasını ve bir hedef yoksa bir iletiyi görüntüler. Derleme görevleri dosyası hataları ayıklamak için **/p** ile kullanışlıdır. Makefile 'ın bir parçası olarak **/d** ayarlamak veya temizlemek için `!CMDSWITCHES` kullanın. |
 | **/E** | Ortam değişkenlerinin makefile Makro tanımlarını geçersiz kılmasına neden olur. |
-| **/errorreport** [ **yok** &#124; **Prompt** &#124; **kuyruğu** &#124; **gönderme** ] | Çalışma zamanında nmake. exe başarısız olursa, bu iç hatalar hakkında Microsoft 'a bilgi göndermek için **/errorreport** ' u kullanabilirsiniz.<br /><br /> Daha fazla bilgi için bkz. [/errorreport (Iç derleyici hatalarını raporla)](errorreport-report-internal-compiler-errors.md). |
+| **/errorreport** [ **yok** &#124; **Prompt** &#124; **kuyruğu** &#124; **gönderme** ] | Kullanım dışı. [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları denetim raporlaması. |
 | **/F** *dosya adı* | *Dosya adını* derleme görevleri dosyası olarak belirtir. Boşluk veya sekmeler *Dosya adının*önüne alabilir. Her derleme görevleri için **/f** bir kez belirtin. Standart girişten bir Makefile sağlamak için, *filename*için bir tire (`-`) ve **F6** ya da **CTRL + Z**ile son klavye girişini belirtin. |
 | **/G** | `!INCLUDE` yönergesine dahil olan derleme görevleri dosyalarını öğesini görüntüler. Daha fazla bilgi için bkz. [makefile ön Işleme yönergeleri](makefile-preprocessing-directives.md). |
 | **/Help**, **/?** | NMAKE komut satırı sözdiziminin kısa bir özetini görüntüler. |
@@ -49,7 +50,7 @@ NMAKE seçenekleri aşağıdaki tabloda açıklanmıştır. Seçenekler önünde
 | **/N** | Komutları görüntüler ancak yürütmez; ön işleme komutları yürütülür. Özyinelemeli NMAKE çağrılarında komutları görüntülemez. Derleme görevleri dosyalarını hata ayıklamada ve zaman damgalarının denetlenmesi için faydalıdır. Makefile 'ın bir parçası için **/n** ayarlamak veya temizlemek için `!CMDSWITCHES`kullanın. |
 | **/NOLOGO** | NMAKE telif hakkı iletisini bastırır. |
 | **/P** | Bilgileri (makro tanımları, çıkarım kuralları, hedefler, [`.SUFFIXES`](dot-directives.md) listesi) standart çıktıya görüntüler ve sonra derlemeyi çalıştırır. Derleme görevleri dosyası veya komut satırı hedefi yoksa yalnızca bilgileri görüntüler. Derleme görevleri dosyasında hata ayıklamak için **/d** ile kullanın. |
-| **Anahtarın** | Hedeflerin zaman damgalarını denetler; derlemeyi çalıştırmaz. Tüm hedeflerin güncel olması ve herhangi bir hedefin güncel olup olmadığı sıfır dışı çıkış kodu varsa sıfır çıkış kodu döndürür. Ön işleme komutları yürütülür. Bir toplu iş dosyasından NMAKE çalıştırılırken yararlı olur. |
+| **Anahtarın** | Hedeflerin zaman damgalarını denetler; derlemeyi çalıştırmaz. Tüm hedefler güncel ise sıfır çıkış kodu ve herhangi bir hedefin güncel olup olmadığını sıfır dışında bir çıkış kodu döndürür. Ön işleme komutları yürütülür. Bir toplu iş dosyasından NMAKE çalıştırılırken yararlı olur. |
 | **/R** | `.SUFFIXES` listesini temizler ve Tools. ini dosyasında tanımlanan veya önceden tanımlanmış olan çıkarım kurallarını ve makroları yoksayar. |
 | **Sn** | Yürütülen komutların görüntülenmesini önler. Makefile 'ın bir parçası olarak görüntülenmesini engellemek için **\@** komut değiştiricisini veya [`.SILENT`](dot-directives.md)kullanın. Bir Makefile 'ın bir parçası olarak **/s** ayarlamak veya temizlemek için `!CMDSWITCHES`kullanın. |
 | **/T** | Komut satırı hedeflerinin (veya ilk derleme görevleri dosyası hedefi) zaman damgalarını güncelleştirir ve ön işleme komutlarını yürütür ancak derlemeyi çalıştırmaz. |
@@ -65,10 +66,10 @@ NMAKE, **/r** kullanılmadığı takdirde makefiles 'ı okumadan önce Tools. in
 
 NMAKE şu çıkış kodlarını döndürür:
 
-| Kod | Açıklama |
+| Kod | Anlamı |
 | ---------- | ------------- |
 | 0 | Hata yok (muhtemelen bir uyarı) |
-| 1\. | Tamamlanmamış derleme (yalnızca **/k** kullanıldığında verilir) |
+| 1 | Tamamlanmamış derleme (yalnızca **/k** kullanıldığında verilir) |
 | 2 | Program hatası, muhtemelen şu sorunlardan biri neden oldu:<br /> -Derleme görevleri dosyasında sözdizimi hatası<br /> -Bir komuttan bir hata veya çıkış kodu<br /> -Kullanıcı tarafından bir kesinti |
 | 4 | Sistem hatası — bellek yetersiz |
 | 255 | Hedef güncel değil (yalnızca **/q** kullanıldığında verilir) |

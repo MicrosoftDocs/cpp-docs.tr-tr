@@ -1,6 +1,7 @@
 ---
-title: ML ve ML64 Komut Satırı Başvurusu
-ms.date: 12/17/2019
+title: ML ve ML64 komut satırı başvurusu
+description: Microsoft Masz ML ve ML64 assembler komut satırı seçeneklerine yönelik başvuru kılavuzu.
+ms.date: 02/09/2020
 f1_keywords:
 - ML
 helpviewer_keywords:
@@ -54,14 +55,14 @@ helpviewer_keywords:
 - command line, reference [ML]
 - /Ta MASM compiler option
 ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
-ms.openlocfilehash: 77385317ab7f90a646b7f552e471d0f434e72bfb
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b5c5a79417cb141da3d5cfe1c08aa39e02a9c7c2
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317168"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257370"
 ---
-# <a name="ml-and-ml64-command-line-reference"></a>ML ve ML64 Komut Satırı Başvurusu
+# <a name="ml-and-ml64-command-line-reference"></a>ML ve ML64 komut satırı başvurusu
 
 Bir veya daha fazla derleme dili kaynak dosyasını ayrıştırır ve bağlar. Komut satırı seçenekleri büyük/küçük harfe duyarlıdır.
 
@@ -71,7 +72,7 @@ Ml64. exe hakkında daha fazla bilgi için bkz. [x64 Için ması (ml64. exe)](ma
 
 > ML \[*seçenekleri*] *dosya adı* \[ \[*Seçenekler*] *filename*]
 >
-> ML64 \[*Options*] *filename* \[ \[*Seçenekler*] *filename*]... \[/Link *linkOptions*]
+> ML64 \[*Options*] *filename* \[ \[*Seçenekler*] *filename*]... \[/Link *link_options*]
 
 ### <a name="parameters"></a>Parametreler
 
@@ -80,21 +81,21 @@ Aşağıdaki tabloda listelenen seçenekler.
 
 |Seçenek|Eylem|
 |------------|------------|
-|**/AT**|Çok küçük bellek modeli desteğini sunar. . Com biçim dosyaları için gereksinimleri ihlal eden kod yapıları için hata iletileri sunar. Bunun eşdeğer olmadığına unutmayın [. MODEL](dot-model.md) **küçük** yönergesi.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/AT**|Çok küçük bellek modeli desteğini sunar. . Com biçim dosyaları için gereksinimleri ihlal eden kod yapıları için hata iletileri sunar. Bu seçenek ile eşdeğer değildir [. MODEL](dot-model.md) **küçük** yönergesi.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/BL** *dosya adı*|Alternatif bir bağlayıcı seçer.|
-|**/c**|Yalnızca birleştirir. Bağlantı yapmaz.|
-|**/COFF**|Nesne modülünün ortak nesne dosyası biçimi (COFF) türünü oluşturur. Win32 derleme dili geliştirmesi için genellikle gereklidir.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/c**|Yalnızca birleştirir. Bağlama yapmaz.|
+|**/COFF**|Nesne modülünün ortak nesne dosyası biçimi (COFF) türünü oluşturur. Win32 derleme dili geliştirmesi için gereklidir.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/CP**|Tüm kullanıcı tanımlayıcıları durumunu korur.|
 |**/Cu**|Tüm tanımlayıcıları büyük harflere eşler (varsayılan).<br /><br /> Ml64. exe ' de kullanılamaz.|
-|**/Cx**|Ortak ve extern sembollerinde büyük/küçük harf durumunu korur.|
+|**/CX**|Ortak ve extern sembollerinde büyük/küçük harf durumunu korur.|
 |**/D** *symbol*⟦ =*değer*⟧|Verilen ada sahip bir metin makrosunu tanımlar. *Değer* eksikse, boştur. Boşluklarla ayrılmış birden çok belirteç tırnak işaretleri içine alınmalıdır.|
 |**/EP**|Önceden işlenmiş bir kaynak listesini üretir (STDOUT 'a gönderilir). Bkz. **/SF**.|
-|**/errorreport** [ **yok** &#124; **Prompt** &#124; **kuyruğu** &#124; **gönderme** ]|Ml. exe veya ml64. exe çalışma zamanında başarısız olursa, bu iç hatalar hakkında Microsoft 'a bilgi göndermek için **/errorreport** ' u kullanabilirsiniz.<br /><br /> **/Errorreport**hakkında daha fazla bilgi için bkz. [/errorreport (Iç derleyici hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
-|**/F** *onaltınum*|Yığın boyutunu *onaltısay* bayta ayarlar (Bu, **/Link/Stack**:*Number*ile aynıdır). Değerin onaltılık gösterimde ifade edilmesi gerekir. **/F** ile *onaltısayı*arasında bir boşluk olması gerekir.|
+|**/errorreport** [ **yok** &#124; **Prompt** &#124; **kuyruğu** &#124; **gönderme** ]| Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
+|**/F** *onaltınum*|Yığın boyutunu *onaltısay* bayta ayarlar ( **/Link/Stack**:*Number*ile aynıdır). Değerin onaltılık gösterimde ifade edilmesi gerekir. **/F** ile *onaltısayı*arasında bir boşluk olması gerekir.|
 |**/Fe** *dosya adı*|Yürütülebilir dosyayı adlandırır.|
 |**/Fl**⟦*filename*⟧|Birleştirilmiş bir kod listesi oluşturur. Bkz. **/SF**.|
 |**/FM**⟦*filename*⟧|Bağlayıcı eşleme dosyası oluşturur.|
-|**/Fo** *dosya adı*|Bir nesne dosyası adlandırır. Daha fazla bilgi için bkz. açıklamalar bölümü.|
+|**/Fo** *dosya adı*|Bir nesne dosyası adlandırır. Daha fazla bilgi için bkz. [açıklamalar](#remarks).|
 |**/FPi**|Kayan nokta aritmetiği (yalnızca karma dil) için öykünücü düzeltmelanları üretir.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/Fr**⟦*filename*⟧|Bir kaynak Browser. sbr dosyası üretir.|
 |**/Fr**⟦*filename*⟧|Kaynak Browser. sbr dosyasının genişletilmiş bir biçimini oluşturur.|
@@ -102,7 +103,7 @@ Aşağıdaki tabloda listelenen seçenekler.
 |**/GD**|C stili işlev çağırma ve adlandırma kuralları kullanımını belirtir. **Seçenek diliyle aynı: C**.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/GZ**|__Stdcall işlev çağırma ve adlandırma kuralları kullanımını belirtir.  **Seçenek diliyle aynı: STCALL**.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/H** *numarası*|Dış adları önemli karakter sayısı olarak kısıtlar. Varsayılan değer 31 karakterdir.<br /><br /> Ml64. exe ' de kullanılamaz.|
-|**/ Help**|ML yardımı için QuickHelp 'i çağırır.|
+|**/Help**|ML yardımı için QuickHelp 'i çağırır.|
 |**/İ** *yol adı*|İçerme dosyası için yolu ayarlar. En fazla 10 **/ı** seçeneğe izin verilir.|
 |**/nologo**|Başarılı derleme için iletileri bastırır.|
 |**/OMF**|Nesne modülünün nesne modülü dosya biçimi (OMF) türünü oluşturur.  **/OMF** **/c**gerektirir; ML. exe, OMF nesnelerinin bağlanmasını desteklemez.<br /><br /> Ml64. exe ' de kullanılamaz.|
@@ -115,15 +116,15 @@ Aşağıdaki tabloda listelenen seçenekler.
 |**/SS** *metni*|Kaynak listesi için metni belirtir. Alt [başlık](subtitle.md) metniyle aynı.|
 |**/St** *metni*|Kaynak listesinin başlığını belirtir. [Başlık](title.md) metniyle aynı.|
 |**/SX**|Listede yanlış koşulları etkinleştirir.|
-|**/Ta** *dosya adı*|Adı. asm uzantısıyla bitmez kaynak dosyayı ayrıştırır.|
+|**/Ta** *dosya adı*|Adı. asm uzantısıyla bitmeyen kaynak dosyayı ayrıştırır.|
 |**aralıkları**|**/W0/WX**ile aynı.|
 |**/W** *düzeyi*|*Düzey* = 0, 1, 2 veya 3 olan uyarı düzeyini ayarlar.|
 |**/WX**|Uyarılar oluşturulduysa bir hata kodu döndürür.|
 |**/X**|Ortam yolunu EKLEMEYI yoksay.|
-|**/Zd**|Nesne dosyasında satır numarası bilgileri oluşturur.|
+|**/ZD**|Nesne dosyasında satır numarası bilgileri oluşturur.|
 |**/ZF**|Tüm sembolleri herkese açık hale getirir.|
 |**/Zi**|Nesne dosyasında CodeView bilgileri oluşturur.|
-|**/Zm**|Masd 5,1 ile maksimum uyumluluk için**M510** seçeneğini sunar.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/ZM**|Masd 5,1 ile maksimum uyumluluk için**M510** seçeneğini sunar.<br /><br /> Ml64. exe ' de kullanılamaz.|
 |**/ZP**⟦*hizalaması*⟧|Belirtilen bayt sınırında yapıları paketler. *Hizalama* 1, 2 veya 4 olabilir.|
 |**/ZS**|Yalnızca bir sözdizimi denetimi gerçekleştirir.|
 |**/?**|ML komut satırı sözdiziminin özetini görüntüler.|
@@ -131,14 +132,16 @@ Aşağıdaki tabloda listelenen seçenekler.
 *dosya adı*\
 Dosyanın adı.
 
-*linkOptions*\
-Bağlantı seçenekleri.  Daha fazla bilgi için bkz. [bağlayıcı seçenekleri](../../build/reference/linker-options.md) .
+*link_options*\
+Bağlantı seçenekleri. Daha fazla bilgi için bkz. [bağlayıcı seçenekleri](../../build/reference/linker-options.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
 ML ve ML64 için bazı komut satırı seçenekleri yerleştirme duyarlıdır. Örneğin, ML ve ML64 çeşitli **/c** seçeneklerini kabul edebildiğinden, tüm karşılık gelen **/fo** seçeneklerinin **/c**öncesinde belirtilmesi gerekir. Aşağıdaki komut satırı örneği, her derleme dosyası belirtimi için bir nesne dosya belirtimi gösterir:
 
-**ml. exe/fo a1. obj/c a. asm/fo B1. obj/c b. asm**
+```cmd
+ml.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm
+```
 
 ## <a name="environment-variables"></a>Ortam Değişkenleri
 

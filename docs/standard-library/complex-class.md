@@ -10,16 +10,16 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: 687665d2ad8bf80f4f2db07ce11c4866ff1ee903
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 0c72726bfb92965a2152830d7ce77ae13f763d35
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688256"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257981"
 ---
 # <a name="complex-class"></a>complex Sınıfı
 
-Sınıf şablonu, bir karmaşık sayının gerçek bölümünü temsil eden biri olan `Type` türünde iki nesneyi depolayan bir nesne ve sanal parçayı temsil eden bir nesnesi tanımlar.
+Sınıf şablonu, bir karmaşık sayının gerçek bölümünü temsil eden biri olan `Type`türünde iki nesneyi depolayan bir nesne ve sanal parçayı temsil eden bir nesnesi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,7 +30,7 @@ class complex
 
 ## <a name="remarks"></a>Açıklamalar
 
-@No__t_0 sınıfının bir nesnesi:
+`Type`sınıfının bir nesnesi:
 
 - Geleneksel davranışa sahip ortak bir varsayılan Oluşturucu, yıkıcı, kopya Oluşturucusu ve atama işleci vardır.
 
@@ -38,9 +38,9 @@ class complex
 
 - Geleneksel davranışa sahip kayan nokta türleri için tanımlanan aritmetik işleçleri ve matematik işlevlerini, gerektiğinde tanımlar.
 
-Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. @No__t_0 sınıfının nesnelerinde hiçbir işlem özel durum oluşturabilir.
+Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. `Type` sınıfının nesnelerinde hiçbir işlem özel durum oluşturabilir.
 
-Üç kayan nokta türü için karmaşık sınıf şablonu açık özelleştirilmesi vardır. Bu uygulamada, `Type` diğer tür bir değer gerçek hesaplamalar için **Double** olarak, `Type` türünde depolanan nesneye yeniden atanmış olan **Double** sonucuyla birlikte typecast ' dır.
+Üç kayan nokta türü için karmaşık sınıf şablonu açık özelleştirilmesi vardır. Bu uygulamada, `Type` diğer tür bir değer gerçek hesaplamalar için **Double** olarak, `Type`türünde depolanan nesneye yeniden atanmış olan **Double** sonucuyla birlikte typecast ' dır.
 
 ## <a name="members"></a>Üyeler
 
@@ -73,8 +73,6 @@ class complex
 |[işleç/=](#op_div_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan ve karmaşık olabilecek bir hedef karmaşık sayıyı bölen tarafından böler.|
 |[işleç =](#op_eq)|Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.|
 
-
-
 ## <a name="complex"></a>ş
 
 Belirtilen gerçek ve sanal parçalar ile karmaşık bir sayı ya da başka bir karmaşık sayının kopyası olarak oluşturur.
@@ -91,18 +89,18 @@ constexpr complex(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Realval* \
+*_RealVal*\
 Oluşturulan karmaşık sayıyı başlatmak için kullanılan gerçek parçanın değeri.
 
-*_Imagval* \
+*_ImagVal*\
 Oluşturulan karmaşık sayıyı başlatmak için kullanılan sanal parçanın değeri.
 
-*Karmaşıksayı* \
+*Karmaşıksayı*\
 Oluşturulan karmaşık sayıyı başlatmak için gerçek ve sanal parçalarını kullanılan karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, depolanan gerçek parçayı *\_RealVal* ve depolanan sanal bölümü *\_Imagval*olarak başlatır. İkinci Oluşturucu, depolanan gerçek parçayı `complexNum.real()` ve depolanan sanal bölümü `complexNum.imag()` olarak başlatır.
+İlk Oluşturucu, depolanan gerçek parçayı, *realval\_* ve depolanan sanal bölümü *\_imagval*' a başlatır. İkinci Oluşturucu, depolanan gerçek parçayı `complexNum.real()` ve depolanan sanal bölümü `complexNum.imag()`olarak başlatır.
 
 Bu uygulamada, bir çevirmen üye şablon işlevlerini desteklemiyorsa, şablon:
 
@@ -113,7 +111,7 @@ complex(const complex<Other>& right);
 
 ile değiştirilmiştir:
 
-```
+```cpp
 complex(const complex& right);
 ```
 
@@ -171,7 +169,7 @@ T imag(const T& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Sanal değeri ayıklanmak üzere olan karmaşık bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -228,7 +226,7 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -313,7 +311,7 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -416,10 +414,10 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*Karmaşıksayı* \
+*Karmaşıksayı*\
 Hedef karmaşık sayıdan çıkarılan karmaşık bir sayı.
 
-*_Realpart* \
+*_RealPart*\
 Hedef karmaşık sayıdan çıkarılan gerçek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -524,10 +522,10 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*Karmaşıksayı* \
+*Karmaşıksayı*\
 Hedef karmaşık sayıdan çıkarılan karmaşık bir sayı.
 
-*_Realpart* \
+*_RealPart*\
 Hedef karmaşık sayıdan çıkarılan gerçek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -626,7 +624,7 @@ complex<Type>& operator=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -703,7 +701,7 @@ T real(const T& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Gerçek değeri ayıklanmak üzere olan karmaşık bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -749,7 +747,7 @@ The imaginary part of c1 is c1.imag() = 3.
 
 Karmaşık bir sayının gerçek ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden bir tür.
 
-```
+```cpp
 typedef Type value_type;
 ```
 

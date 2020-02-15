@@ -1,18 +1,19 @@
 ---
 title: C/C++ proje özellikleri (Visual Studio)
-ms.date: 07/18/2019
+description: Visual Studio Microsoft C/C++ Project Özellik sayfaları özelliklerine yönelik başvuru kılavuzu.
+ms.date: 02/09/2020
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-ms.openlocfilehash: 2f7fe025eb69fc1977713c638eef0742074bd9fb
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: fdfcaaebe8394fedd160c6c02e8c938543f845e2
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927742"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257760"
 ---
 # <a name="cc-property-pages"></a>C/C++ Özellik sayfaları
 
-Aşağıdaki özellik sayfaları **Proje** > **özellikleri** > **yapılandırma özellikleri** > **C/C++** altında bulunur:
+Aşağıdaki özellik sayfaları **proje** > **Özellikler** > **yapılandırma özellikleri** > **C/C++** : altında bulunur.
 
 ## <a name="cc-general-properties"></a>C/C++ Genel Özellikler
 
@@ -26,13 +27,13 @@ Bir #using yönergesine geçirilen adları çözümlemek için aranacak bir veya
 
 ### <a name="debug-information-format"></a>Hata ayıklama bilgi biçimi
 
-Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir.  Bu, uyumlu bağlayıcı ayarları gerektirir. [/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md)ayarlar.
+Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir.  Bu özellik uyumlu bağlayıcı ayarları gerektirir. [/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Hiçbiri** -hata ayıklama bilgisi üretmez, bu nedenle derleme daha hızlı olabilir.
 - **C7 uyumlu** -programınız için oluşturulan hata ayıklama bilgileri türünü ve bu bilgilerin nesne (. obj) dosyalarında mi yoksa bir program VERITABANı (pdb) içinde tutulup tutulmadığını seçin.
-- **Program veritabanı** -hata ayıklayıcı ile kullanılmak üzere tür bilgilerini ve simgesel hata ayıklama bilgilerini içeren bir program VERITABANı (pdb) oluşturur. Simgesel hata ayıklama bilgileri, işlevlerin ve satır numaralarının adlarının yanı sıra değişkenlerini ve türlerini içerir.
+- **Program veritabanı** -hata ayıklayıcı ile kullanılmak üzere tür bilgilerini ve simgesel hata ayıklama bilgilerini içeren bir program VERITABANı (pdb) oluşturur. Simgesel hata ayıklama bilgileri, değişkenlerin ve işlevlerin adlarını ve türlerini ve satır numaralarını içerir.
 - **Düzenle ve devam et Için program veritabanı** -yukarıda açıklanan şekilde, [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue) özelliğini destekleyen bir biçimde bir program veritabanı oluşturur.
 
 ### <a name="support-just-my-code-debugging"></a>Yalnızca kendi kodum hata ayıklama desteği
@@ -43,10 +44,10 @@ Bu derleme biriminde [yalnızca kendi kodum](/visualstudio/debugger/just-my-code
 
 .NET çalışma zamanı hizmetini kullanın.  Bu anahtar, başka bazı anahtarlarla uyumsuzdur; Ayrıntılar için anahtarlar ailesinin [/clr](clr-common-language-runtime-compilation.md) ailesi belgelerine bakın.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Ortak dil çalışma zamanı desteği yok** -ortak dil çalışma zamanı desteği yok
-- **Ortak dil çalışma zamanı desteği** -uygulamanız IÇIN diğer CLR uygulamaları tarafından tüketilen meta verileri oluşturur ve UYGULAMANıZıN diğer CLR bileşenlerinin Meta verilerdeki türleri ve verileri kullanmasına izin verir.
+- **Ortak dil çalışma zamanı desteği** -uygulamanız IÇIN diğer CLR uygulamaları tarafından tüketilen meta verileri oluşturur. Ayrıca, uygulamanızın diğer CLR bileşenlerinin meta verilerinde türleri ve verileri kullanmasına izin verir.
 - **Saf MSIL ortak dil çalışma zamanı desteği** -MSIL 'e derlenmiş yerel türler içerse de, yerel yürütülebilir kodu olmayan bir [MSIL](/dotnet/standard/managed-code)çıkış dosyası oluşturur.
 - **GÜVENLI MSIL ortak dil çalışma zamanı desteği** -salt MSIL (yerel yürütülebilir kod içermeyen) ve doğrulanabilir çıkış dosyası oluşturur.
 
@@ -62,32 +63,32 @@ Derleyici başlatıldığında ve derleme sırasında bilgilendirici iletileri g
 
 Derleyicinin kod hataları hakkında ne kadar sıkı olmasını istediğinizi seçin. [/W0-/W4](compiler-option-warning-level.md)' ü ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Tüm uyarıları** kapat-düzey 0 tüm uyarıları devre dışı bırakır.
 - **Level1** -Level 1 ciddi uyarıları görüntüler. Düzey 1, komut satırındaki varsayılan uyarı düzeyidir.
 - **Level2** -Level 2, 1. düzey tüm uyarıları ve uyarıları düzey 1 ' den daha az önem gösterir.
 - **Level3** -Level 3, tüm düzey 2 uyarılarını ve üretim amaçları için önerilen tüm diğer uyarıları görüntüler.
 - **Level4** -Level 4, tüm düzey 3 uyarılarını ve bilgilendirici uyarıları görüntüler, bu durum çoğu durumda güvenle yoksayılabilir.
-- **Enablealluyarılar** -varsayılan olarak devre dışı bırakılan tüm uyarıları etkin şekilde sunar.
+- **Enablealluyarılar** -varsayılan olarak devre dışı bırakılmış olanlar da dahil olmak üzere tüm uyarıları etkinleştirilir.
 
 ### <a name="treat-warnings-as-errors"></a>Uyarıları hata olarak değerlendir
 
-Tüm derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için tüm derlemelerde [/WX](wx-treat-linker-warnings-as-errors.md) kullanılması en iyi yöntem olabilir; Tüm uyarıların çözümlenmesi, en az olası bulma kod kusurlarını güvence altına alacak.
+Derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için her derlemede [/WX](wx-treat-linker-warnings-as-errors.md) kullanılması en iyi yöntem olabilir. Sabit-bulma kod hatalarını en aza indirmek için tüm uyarıları çözün.
 
 ### <a name="warning-version"></a>Uyarı sürümü
 
-Derleyicinin belirli bir sürümünden sonra tanıtılan uyarıları gizleyin. [/WV: xx\[.\]yy\[\]. zzzzz](wx-treat-linker-warnings-as-errors.md)ayarlar.
+Derleyicinin belirli bir sürümünden sonra tanıtılan uyarıları gizleyin. [/WV: xx\[. yy\[. zzzzz\]\]](wx-treat-linker-warnings-as-errors.md)ayarlar.
 
 ### <a name="diagnostics-format"></a>Tanılama biçimi
 
 Tanılama iletilerinde sütun bilgisi ve kaynak bağlamı ile zengin tanılamayı mümkün bir şekilde sunar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
-- Giriş **işareti** -tanılama iletisinde sütun bilgileri sağlar ve ilgili kaynak kodu satırını, sorunlu sütunu gösteren bir giriş işaretine göre verir.
+- **Şapka** -tanılama iletisinde sütun bilgilerini sağlar. Ve, ilgili kaynak kodu satırını, sorunlu sütunu gösteren bir giriş işaretine göre çıkarır.
 - **Sütun bilgisi** -ek olarak, varsa, Tanılamanın verildiği satırdaki sütun numarasını da sağlar.
-- **Klasik** -önceki ve kısa tanılama iletilerini satır numarasıyla korur.
+- **Klasik** -satır numarası ile yalnızca önceki, kısa tanılama iletilerini çıkarır.
 
 ### <a name="sdl-checks"></a>SDL denetimleri
 
@@ -103,7 +104,7 @@ Ek güvenlik geliştirme yaşam döngüsü (SDL) önerilen denetimler; ek güven
 
 Kod iyileştirmesi için seçenek belirleyin; belirli iyileştirme seçeneklerini kullanmak için özel ' i seçin. [/Od](od-disable-debug.md), [/O1,/O2](o-options-optimize-code.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Özel** -özel iyileştirme.
 - **Devre dışı** -iyileştirmeyi devre dışı bırak.
@@ -115,12 +116,12 @@ Kod iyileştirmesi için seçenek belirleyin; belirli iyileştirme seçeneklerin
 
 Yapı için [satır içi işlev](../../cpp/inline-functions-cpp.md) genişletmesinin düzeyini seçin. [/OB1,/Ob2](ob-inline-function-expansion.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
-- **Default**
+- **Varsayılan**
 - **Devre dışı** -varsayılan olarak açık olan satır içi genişletmeyi devre dışı bırakır.
-- **Yalnızca __inline** -yalnızca satır içi, __inline, __forceinline veya __inline olarak işaretlenen işlevleri genişletir veya bir sınıf C++ bildiriminde tanımlanan bir üye işlevinde.
-- **Herhangi bir uygun** -satır içi veya __inline olarak işaretlenen işlevleri ve derleyicinin seçtiği diğer işlevleri genişletir (genişletme derleyicinin kararına (genellikle otomatik olarak ifade edilir) olur).
+- **Yalnızca __inline** -yalnızca **satır içi**, `__inline`, `__forceinline`veya `__inline`olarak işaretlenen işlevleri genişletir. Ya da bir sınıf C++ bildiriminde tanımlanan bir Member işlevinde.
+- **Herhangi bir uygun** - **satır içi** veya `__inline` olarak işaretlenen işlevleri ve derleyicinin seçtiği diğer işlevleri genişletir. (Genişletme derleyicinin kararına (genellikle *Otomatik*olarak ifade edilir) oluşur.)
 
 ### <a name="enable-intrinsic-functions"></a>Iç Işlevleri etkinleştir
 
@@ -130,11 +131,11 @@ Yapı için [satır içi işlev](../../cpp/inline-functions-cpp.md) genişletmes
 
 Kod boyutu veya kod hızının tercih edilip edilmeyeceğini belirtir; ' Genel Iyileştirme ' açık olmalıdır. [/Ot,/OS](os-ot-favor-small-code-favor-fast-code.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Küçük kod** kullanımı küçük kodu tercih edin. Derleyicinin boyut hızını tercih etmek üzere karşılaştırarak, EXEs ve DLL 'lerin boyutunu en aza indirir.
-- **Hızlı kod** kullanımı hızlı kodu tercih edin. , Derleyicisini boyut hızını artırmak üzere karşılaştırarak, EXEs ve DLL 'Lerin hızını en üst düzeye çıkarır. (Bu varsayılandır.)
-- **Ne** -boyut yok ne de hız iyileştirmesi.
+- **Hızlı kod** kullanımı hızlı kodu tercih edin. , Derleyicisini boyut hızını artırmak üzere karşılaştırarak, EXEs ve DLL 'Lerin hızını en üst düzeye çıkarır. (Bu değer varsayılandır.)
+- **Hiçbiri** -boyut ve hız iyileştirmesi yoktur.
 
 ### <a name="omit-frame-pointers"></a>Çerçeve Işaretçilerini atla
 
@@ -146,13 +147,13 @@ Lifleri görmeyin ve iş parçacığı yerel depolama erişimi kullanılırken b
 
 ### <a name="whole-program-optimization"></a>Tüm program Iyileştirmesi
 
-Kod oluşturmayı bağlantı zamanına erteleyerek modüller arası iyileştirmeleri sağlar; ' bağlama zamanı kodu oluşturma ' bağlayıcı seçeneğinin açık olmasını gerektirir. [/GL](gl-whole-program-optimization.md)'yi ayarlar.
+Kod oluşturmayı bağlantı zamanına erteleyerek modüller arası iyileştirmeleri sağlar. ' Bağlama zamanı kodu oluşturma ' bağlayıcı seçeneğini gerektirir. [/GL](gl-whole-program-optimization.md)'yi ayarlar.
 
 ## <a name="cc-preprocessor-properties"></a>C/C++ Önişlemci özellikleri
 
 ### <a name="preprocessor-definitions"></a>Önişlemci tanımları
 
-Kaynak dosyanız için bir ön işleme sembolleri tanımlar.
+Kaynak dosyanız için ön işleme sembollerini tanımlar.
 
 ### <a name="undefine-preprocessor-definitions"></a>Önişlemci tanımlarının tanımı kaldırılıyor
 
@@ -168,7 +169,7 @@ Derleyicinin INCLUDE ortam değişkenlerinde belirtilen dizinlerde içerme dosya
 
 ### <a name="preprocess-to-a-file"></a>Bir dosyaya ön işlem
 
-C ve C++ kaynak dosyalarını ön işler ve önceden işlenmiş çıktıyı bir dosyaya yazar. Bu seçenek derlemeyi bastırır, bu nedenle bir. obj dosyası oluşturmaz.
+C ve C++ kaynak dosyalarını önceden işler ve önceden işlenmiş çıktıyı bir dosyaya yazar. Bu seçenek derlemeyi bastırır ve bir *`.obj`* dosyası oluşturmaz.
 
 ### <a name="preprocess-suppress-line-numbers"></a>Satır numaralarını gösterme öncesi işlem
 
@@ -182,17 +183,17 @@ Kaynak koddan açıklama şeridinin görüntülenmesini önler; ' ön Işleme ' 
 
 ### <a name="enable-string-pooling"></a>Dize havuzunu etkinleştir
 
-Derleyicinin program görüntüsünde ve yürütme sırasında bellekte özdeş dizelerin tek bir salt okunurdur kopyasını oluşturmasını sağlar, böylece daha küçük programlar, dize havuzu oluşturma adlı bir iyileştirme olur. [/O1,/O2](o-options-optimize-code.md)ve [/Zi](z7-zi-zi-debug-information-format.md) , [/GF](gf-eliminate-duplicate-strings.md) seçeneğini otomatik olarak ayarlar.
+Derleyici, program görüntüsünde özdeş dizelerin yalnızca bir salt okunurdur kopyasını oluşturur. En iyi duruma getirme *dize havuzu*olarak adlandırılan küçük programlarla sonuçlanır. [/O1,/O2](o-options-optimize-code.md)ve [/Zi](z7-zi-zi-debug-information-format.md) , [/GF](gf-eliminate-duplicate-strings.md) seçeneğini otomatik olarak ayarlar.
 
 ### <a name="enable-minimal-rebuild"></a>En az yeniden derlemeyi etkinleştir
 
-Değiştirilen C++ sınıf tanımlarının (üst bilgi ( C++ . h) dosyalarında depolanan) yeniden derlenmesi gerekip gerekmediğini belirleyen en az yeniden oluşturmayı sağlar.
+, Üst bilgi *`.h`* dosyalarında saklanan değiştirilmiş C++ sınıf tanımlarını C++ içeren kaynak dosyalarının yeniden derlenip derlenmeyeceğini belirleyen en az yeniden oluşturmayı sağlar.
 
 ### <a name="enable-c-exceptions"></a>Özel C++ durumları etkinleştir
 
 Derleyici tarafından kullanılacak özel durum işleme modelini belirtir.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **SEH özel durumlarıyla Evet** -zaman uyumsuz (yapılandırılmış) ve zaman uyumlu (C++) özel durumları yakalayan özel durum işleme modeli. [/EHa](eh-exception-handling-model.md)ayarlar.
 - **Evet** -özel durumları yakalayan C++ özel durum işleme modeli ve derleyiciye extern ' ın hiçbir C++ özel durum oluşturmadığını varsaymasını söyler. [/EHsc](eh-exception-handling-model.md)'yi ayarlar.
@@ -205,56 +206,56 @@ Daha küçük türlere dönüştürme için, hata ayıklama dışında herhangi 
 
 ### <a name="basic-runtime-checks"></a>Temel çalışma zamanı denetimleri
 
-Hata ayıklama dışında herhangi bir iyileştirme türüyle uyumlu olmayan temel çalışma zamanı hata denetimleri gerçekleştirin. [/RTCs,/RTCu,/RTC1](rtc-run-time-error-checks.md)ayarlar.
+Hata ayıklama dışında herhangi bir iyileştirme türüyle uyumlu olmayan temel çalışma zamanı hata denetimlerini etkinleştirin. [/RTCs,/RTCu,/RTC1](rtc-run-time-error-checks.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Yığın çerçeveleri** -yığın çerçevesi çalışma zamanı hata denetimini mümkün.
 - **Başlatılmamış değişkenler** -bir değişken başlatılmadan kullanıldığında raporlar.
 - **Her ikisi (/RTC1, EQUIV. to/RTCsu)** -/RTCsu. 'ın eşdeğeri
-- Varsayılan **-varsayılan** çalışma zamanı denetimleri.
+- **Varsayılan-varsayılan** çalışma zamanı denetimleri.
 
 ### <a name="runtime-library"></a>Çalışma zamanı kitaplığı
 
 Bağlama için çalışma zamanı kitaplığını belirtin. [/MT,/MTd,/MD,/MDd](md-mt-ld-use-run-time-library.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Çoklu iş parçacıklı** -uygulamanızın iş parçacığı, çalışma zamanı kitaplığının statik sürümünü kullanmasına neden olur.
-- **Çok iş parçacıklı hata ayıklama** -_DEBUG ve _MT tanımlar. Bu seçenek, aynı zamanda, derleyicinin LIBCMTD.lib kitaplık adını .obj dosyasına koyarak bağlayıcının dış simgeleri çözme sırasında LIBCMTD.lib kullanmasını sağlar.
-- **Çok iş PARÇACıKLı dll** -uygulamanızın çalışma zamanı kitaplığının çoklu iş PARÇACıKLı ve DLL 'ye özgü sürümünü kullanmasına neden olur. _MT ve _DLL tanımlar ve derleyicinin MSVCRT. lib kitaplık adını. obj dosyasına yerleştirmesini sağlar.
-- **Çok iş parçacıklı hata ayıklama DLL 'si** -_DEBUG, _MT ve _DLL öğelerini tanımlar ve uygulamanızın çalışma zamanı kitaplığı 'nın çoklu iş parçacığı ve DLL 'ye özgü sürümünü kullanmasına neden olur. Ayrıca, derleyicinin MSVCRTD.lib kitaplık adını .obj dosyasına yerleştirmesini sağlar.
+- **Çok iş parçacıklı hata ayıklama** -_DEBUG ve _MT tanımlar. Bu seçenek ayrıca derleyicinin *libcmtd. lib* kitaplık adını *`.obj`* dosyasına yerleştirip bağlayıcının dış sembolleri çözümlemek için *libcmtd. lib* kullanmasını sağlar.
+- **Çok iş PARÇACıKLı dll** -uygulamanızın çalışma zamanı kitaplığının çoklu iş PARÇACıKLı ve DLL 'ye özgü sürümünü kullanmasına neden olur. _MT ve _DLL tanımlar ve derleyicinin *Msvcrt. lib* kitaplık adını *`.obj`* dosyasına yerleştirmesini sağlar.
+- **Çok iş parçacıklı hata ayıklama dll** -_DEBUG, _MT ve _DLL tanımlar ve uygulamanızın çalışma zamanı kitaplığı 'nın çoklu iş parçacığı ve DLL 'ye özgü sürümünü kullanmasına neden olur. Ayrıca derleyicinin *msvcrtd. lib* kitaplık adını *`.obj`* dosyasına yerleştirmesini sağlar.
 
 ### <a name="struct-member-alignment"></a>Struct üye hizalaması
 
 Struct üye hizalaması için 1, 2, 4 veya 8 baytlık sınırları belirtir. [/ZP](zp-struct-member-alignment.md)'yi ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
-- 1 baytlık sınırlardaki **1 baytlık** paketler yapıları. /ZP. ile aynı
+- 1 baytlık sınırlardaki **1 baytlık** paketler yapıları. **`/Zp`** ile aynı.
 - **2 bayt** -2 baytlık sınırlardaki yapıları paketler.
-- 4 baytlık sınırlardaki **4 baytlık** paketler yapıları.
+- **4 bayt** -4 baytlık sınırlardaki yapıları paketler.
 - 8 **bayt** -8 baytlık sınırlar üzerinde (varsayılan) yapı paketleri.
-- 16 baytlık, 16 baytlık sınırlardaki yapı paketleri.
+- **16 baytlık** , 16 baytlık sınırlardaki yapı paketleri.
 - **Varsayılan** hizalama ayarları.
 
 ### <a name="security-check"></a>Güvenlik denetimi
 
-Güvenlik denetimi, bir programın güvenliği üzerinde yaygın olarak gerçekleştirilen bir saldırıya karşı yığın arabelleğinin çalıştırılmaların algılanmasına yardımcı olur. 
+Güvenlik denetimi, bir programın güvenliği üzerinde yaygın olarak gerçekleştirilen bir saldırıya karşı yığın arabelleğinin çalıştırılmaların algılanmasına yardımcı olur.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Güvenlik denetimini devre** dışı bırak-güvenlik denetimini devre dışı bırak. [/GS-](gs-buffer-security-check.md)ayarlar.
 - **Güvenlik denetimini etkinleştirin** -güvenlik denetimini etkinleştirin. [/GS](gs-buffer-security-check.md)ayarlar.
 
 ### <a name="control-flow-guard"></a>Denetim akışı koruyucusu
 
-Guard güvenlik denetimi, geçersiz kod bloğuna gönderim girişimlerini algılamaya yardımcı olur. 
+Guard güvenlik denetimi, geçersiz kod bloğuna gönderim girişimlerini algılamaya yardımcı olur.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Evet** -koruma kümeleri [/Guard: CF](guard-enable-control-flow-guard.md)ile güvenlik denetimini etkinleştirin.
-- **Eşleşen**
+- **Hayır**
 
 ### <a name="enable-function-level-linking"></a>Işlev düzeyinde bağlamayı etkinleştir
 
@@ -262,44 +263,44 @@ Derleyicinin paketlenmiş işlevler (Compts) biçiminde tek tek işlevleri paket
 
 ### <a name="enable-parallel-code-generation"></a>Paralel kod oluşturmayı etkinleştir
 
-Derleyicinin, iyileştirme etkinleştirildiğinde #pragma loop (hint_parallel\[(n)]) kullanılarak tanımlanan döngüler için paralel kod oluşturmasını sağlar.
+Derleyicinin, iyileştirme etkinleştirildiğinde `#pragma loop(hint_parallel[(n)])` kullanılarak tanımlanan döngüler için paralel kod oluşturmasını sağlar.
 
 ### <a name="enable-enhanced-instruction-set"></a>Gelişmiş yönerge kümesini etkinleştir
 
-Gelişmiş yönerge kümelerini destekleyen işlemcilerde bulunan yönergelerin kullanımını etkinleştirin; Örneğin, SSE, SSE2, AVX ve AVX2 geliştirmeleri IA-32; AVX ve AVX2 to x64. Şu anda **/Arch: SSE** ve **/Arch: SSE2** yalnızca x86 mimarisi oluşturulurken kullanılabilir. Hiçbir seçenek belirtilmemişse, derleyici SSE2 destekleyen işlemcilerde bulunan yönergeleri kullanır. Gelişmiş yönergelerin kullanımı,/Arch: ıA32 ile devre dışı bırakılabilir. Daha fazla bilgi için bkz. [/Arch (x86)](arch-x86.md), [/Arch (x64)](arch-x64.md) ve [/Arch (ARM)](arch-arm.md) .
+Gelişmiş yönerge kümelerini destekleyen işlemcilerde bulunan yönergelerin kullanımını etkinleştirin. Örneğin, SSE, SSE2, AVX ve AVX2 geliştirmeleri IA-32 ' a yöneliktir. Ve, AVX ve AVX2 geliştirmeleri x64 ile yapılır. Şu anda **`/arch:SSE`** ve **`/arch:SSE2`** yalnızca x86 mimarisi için oluşturulurken kullanılabilir. Hiçbir seçenek belirtilmemişse, derleyici SSE2 destekleyen işlemcilerde bulunan yönergeleri kullanır. Gelişmiş yönergelerin kullanımı, **`/arch:IA32`** ile devre dışı bırakılabilir. Daha fazla bilgi için bkz. [/Arch (x86)](arch-x86.md), [/Arch (x64)](arch-x64.md) ve [/Arch (ARM)](arch-arm.md).
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
-- **Streaming SIMD Extensions** Streaming SIMD Extensions. Ayarlar **/Arch: SSE**
-- **Streaming SIMD Extensions 2** -Streaming SIMD Extensions 2. Ayarlar **/Arch: SSE2**
-- **Gelişmiş vektör Uzantıları** -gelişmiş vektör uzantıları. Ayarlar **/Arch: AVX**
-- **Gelişmiş vektör uzantıları 2** -gelişmiş vektör uzantıları 2. Ayarlar **/Arch: AVX2**
-- **Gelişmiş yönerge yok** -gelişmiş yönerge yok. Ayarlar **/Arch: IA32**
+- **Streaming SIMD Extensions** Streaming SIMD Extensions. **`/arch:SSE`** ayarlar
+- **Streaming SIMD Extensions 2** -Streaming SIMD Extensions 2. **`/arch:SSE2`** ayarlar
+- **Gelişmiş vektör Uzantıları** -gelişmiş vektör uzantıları. **`/arch:AVX`** ayarlar
+- **Gelişmiş vektör uzantıları 2** -gelişmiş vektör uzantıları 2. **`/arch:AVX2`** ayarlar
+- **Gelişmiş yönerge yok** -gelişmiş yönerge yok. **`/arch:IA32`** ayarlar
 - **Ayarlanmadı** -ayarlanmadı.
 
 ### <a name="floating-point-model"></a>Kayan nokta modeli
 
 Kayan nokta modelini ayarlar. [/FP: kesin,/fp: Strict,/fp: Fast](fp-specify-floating-point-behavior.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Kesin** -varsayılan. Eşitlik ve eşitsizlik için kayan nokta testlerinin tutarlılığını geliştirir.
-- **Strict** -en katı kayan nokta modeli. /FP: Strict, fp_contract 'in kapalı ve fenv_access olmasını sağlar. /FP: except kapsanıyor ve açıkça/FP: except-belirtilerek devre dışı bırakılabilir. /FP: except-,/fp: Strict ile kullanıldığında, kesin kayan nokta semantiğini uygular, ancak olağanüstü olaylar için uygun değildir.
+- **Strict** -en katı kayan nokta modeli. **`/fp:strict`** **`fp_contract`** ve açık olmasına **`fenv_access`** neden olur. **`/fp:except`** zımni ve açıkça **`/fp:except-`** belirtilerek devre dışı bırakılabilir. **`/fp:except-`** ile kullanıldığında, **`/fp:strict`** kesin kayan nokta semantiğini zorlar, ancak olağanüstü olaylar için uygun değildir.
 - **Hızlı** -çoğu durumda en hızlı kodu oluşturur.
 
 ### <a name="enable-floating-point-exceptions"></a>Kayan nokta özel durumlarını etkinleştir
 
-Güvenilir kayan nokta özel durumu modeli. Özel durumlar, tetiklendikten hemen sonra oluşturulur.  [/FP: except](fp-specify-floating-point-behavior.md)olarak ayarlar.
+Güvenilir kayan nokta özel durumu modeli. Özel durumlar, tetiklendikten hemen sonra oluşturulur. [/FP: except](fp-specify-floating-point-behavior.md)olarak ayarlar.
 
 ### <a name="create-hotpatchable-image"></a>Düzeltme eki eklenebilir görüntü oluşturma
 
-Düzeltme Eki açık olduğunda, derleyici, her işlevin ilk yönergesinin, sık yama için gerekli olan iki bayt olmasını sağlar.  [/Hotpatch](hotpatch-create-hotpatchable-image.md)ayarlar.
+Anında Düzeltme açık olduğunda, derleyici, her işlevin ilk yönergesinin, sık yama için gereken iki bayt olmasını sağlar. [/Hotpatch](hotpatch-create-hotpatchable-image.md)ayarlar.
 
 ### <a name="spectre-mitigation"></a>Spectre azaltma
 
 CVE 2017-5753 için Spectre azaltmaları. [/Qspectre](qspectre.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Etkin** -CVE 2017-5753 için Spectre azaltma özelliğini etkinleştir
 - **Devre dışı** -ayarlı değil.
@@ -314,9 +315,9 @@ Dil uzantılarını bastırır veya izin vermez. [/Za](za-ze-disable-language-ex
 
 Uygunluk modunu etkinleştirilir veya gizler. [/Permissive-](permissive-standards-conformance.md)ayarlar.
 
-### <a name="treat-wchar_t-as-built-in-type"></a>WChar_t 'yi yerleşik tür olarak değerlendir
+### <a name="treat-wchar_t-as-built-in-type"></a>WChar_t yerleşik tür olarak değerlendir
 
-Belirtildiğinde, wchar_t türü __wchar_t ile eşlenen yerel bir tür olur ve bu, __int16 ile aynı şekilde eşlenir. [/Zc: wchar_t](zc-wchar-t-wchar-t-is-native-type.md) varsayılan olarak açık.
+Belirtildiğinde tür **wchar_t** , **kısa** `__int16`ile aynı şekilde `__wchar_t` eşlenen yerel bir tür haline gelir. [/Zc: wchar_t](zc-wchar-t-wchar-t-is-native-type.md) varsayılan olarak açık.
 
 ### <a name="force-conformance-in-for-loop-scope"></a>Döngü kapsamında uygunluğu zorla
 
@@ -328,7 +329,7 @@ Belirtildiğinde, derleyici artık başvurulmayan kod ve veriler için sembol bi
 
 ### <a name="enforce-type-conversion-rules"></a>Tür dönüştürme kurallarını zorlama
 
-Bir rvalue başvuru türünü C++ 11 standardına uygun bir dönüştürme işleminin sonucu olarak belirlemek için kullanılır.
+Bir rvalue başvuru türünü C++ 11 standardına göre bir dönüştürme işleminin sonucu olarak belirlemek için kullanılır.
 
 ### <a name="enable-run-time-type-information"></a>Çalışma zamanı türü bilgilerini etkinleştir
 
@@ -336,15 +337,15 @@ Bir rvalue başvuru türünü C++ 11 standardına uygun bir dönüştürme işle
 
 ### <a name="open-mp-support"></a>MP desteğini açın
 
-OpenMP 2,0 dil uzantılarını etkinleştirin. [/OpenMP](openmp-enable-openmp-2-0-support.md)ayarlar.
+OpenMP 2,0 dil uzantılarını etkinleştirilir. [/OpenMP](openmp-enable-openmp-2-0-support.md)ayarlar.
 
 ### <a name="c-language-standard"></a>C++Dil standardı
 
-Derleyicinin zorlayacağı C++ dil standardını belirler. Mümkün olduğunda en son sürümü kullanmanız önerilir. Ayarlar [/std: c++ 14,/std: c++ 17,/std: c + + latest](std-specify-language-standard-version.md).
+Derleyicinin izin C++ aldığı dil standardını belirler. Mümkün olduğunda en son sürümü kullanın. Ayarlar [/std: c++ 14,/std: c++ 17,/std: c + + latest](std-specify-language-standard-version.md).
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
-- **Default**
+- **Varsayılan**
 - **ISO C++ 14 standart**
 - **ISO C++ 17 Standart**
 - **Önizleme-son C++ çalışma taslağındaki Özellikler**
@@ -355,15 +356,15 @@ C++ Modüller ve standart kitaplık modülleri için deneysel destek.
 
 ## <a name="cc-precompiled-headers-properties"></a>C/C++ ön derlenmiş üstbilgiler özellikleri
 
-### <a name="precompiled-header"></a>Ön derlenmiş üstbilgi
+### <a name="createuse-precompiled-header"></a>Önceden derlenmiş üst bilgi oluştur/kullan
 
-Önceden derlenmiş üst bilgi oluştur/kullan: Derleme sırasında önceden derlenmiş üst bilgi oluşturmayı veya kullanmayı mümkün. [/Yıc](yc-create-precompiled-header-file.md), [/yu](yu-use-precompiled-header-file.md)ayarlar.
+Derleme sırasında önceden derlenmiş üst bilgi oluşturmayı veya kullanmayı mümkün. [/Yıc](yc-create-precompiled-header-file.md), [/yu](yu-use-precompiled-header-file.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Oluşturma** -derleyicinin belirli bir noktada derlemenin durumunu temsil eden ön derlenmiş üst bilgi (. pch) dosyası oluşturmasını söyler.
 - **Use** -derleyicinin geçerli derlemede var olan bir ön derlenmiş üstbilgi (. pch) dosyasını kullanmasını söyler.
-- Önceden derlenmiş üst bilgiler **kullanılmıyor-önceden** derlenmiş üst bilgiler kullanmıyor.
+- Önceden derlenmiş **üst bilgiler kullanılmıyor-önceden** derlenmiş üst bilgiler kullanmıyor.
 
 ### <a name="precompiled-header-file"></a>Önceden derlenmiş üst bilgi dosyası
 
@@ -371,7 +372,7 @@ C++ Modüller ve standart kitaplık modülleri için deneysel destek.
 
 ### <a name="precompiled-header-output-file"></a>Ön derlenmiş üst bilgi çıkış dosyası
 
-Oluşturulan ön derlenmiş üstbilgi dosyasının yolunu ve/veya adını belirtir. [/FP](fp-name-dot-pch-file.md)'yi ayarlar.
+Oluşturulan ön derlenmiş üstbilgi dosyasının yolunu veya adını belirtir. [/FP](fp-name-dot-pch-file.md)'yi ayarlar.
 
 ## <a name="cc-output-files-properties"></a>C/C++ çıkış dosyaları özellikleri
 
@@ -383,13 +384,13 @@ Kaynak dosyasına eklenen genişletilmiş özniteliklere sahip listeleme dosyas�
 
 Derleme dili çıkış dosyasının içeriğini belirtir. [/FA,/fac,/FAs,/FAcs](fa-fa-listing-file.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Listeleme yok** -liste yok.
-- **Yalnızca bütünleştirilmiş kod Listeleme** -derleme kodu;. asm
-- **Makine kodlu bütünleştirilmiş** kod-makine ve derleme kodu;. cod
-- **Kaynak kodlu bütünleştirilmiş** kod-kaynak ve derleme kodu;. asm
-- **Bütünleştirilmiş kod, makine kodu ve kaynak** derleme, makine kodu ve kaynak kodu;. cod
+- **Yalnızca bütünleştirilmiş kod Listeleme** -derleme kodu; *`.asm`*
+- **Makine kodlu bütünleştirilmiş** kod-makine ve derleme kodu; *`.cod`*
+- **Kaynak kodlu bütünleştirilmiş** kod-kaynak ve derleme kodu; *`.asm`*
+- **Bütünleştirilmiş kod, makine kodu ve kaynak** derleme, makine kodu ve kaynak kodu; *`.cod`*
 
 ### <a name="use-unicode-for-assembler-listing"></a>Assembler listesi Için Unicode kullan
 
@@ -397,7 +398,7 @@ Derleme dili çıkış dosyasının içeriğini belirtir. [/FA,/fac,/FAs,/FAcs](
 
 ### <a name="asm-list-location"></a>ASM liste konumu
 
-ASM listeleme dosyasının göreli yolunu ve/veya adını belirtir; dosya veya dizin adı olabilir. [/FA](fa-fa-listing-file.md)'yi ayarlar.
+ASM listeleme dosyası için göreli yolu veya adı belirtir; dosya veya dizin adı olabilir. [/FA](fa-fa-listing-file.md)'yi ayarlar.
 
 ### <a name="object-file-name"></a>Nesne dosyası adı
 
@@ -413,17 +414,17 @@ Derleyicinin XML belgesi Açıklama dosyaları (. XDC). [/Doc](doc-process-docum
 
 ### <a name="xml-documentation-file-name"></a>XML belgesi dosya adı
 
-Oluşturulan XML belgesi dosyalarının adını belirtir; dosya veya dizin adı olabilir. [/Doc:\<name >](doc-process-documentation-comments-c-cpp.md)ayarlar.
+Oluşturulan XML belgesi dosyalarının adını belirtir; dosya veya dizin adı olabilir. [/Doc:\<ad >](doc-process-documentation-comments-c-cpp.md)ayarlar.
 
 ## <a name="cc-browse-information-properties"></a>C/C++ zat bilgi özellikleri
 
 ### <a name="enable-browse-information"></a>Tarama bilgilerini etkinleştir
 
-Tarama bilgilerini etkinleştir: . Bsc dosyasındaki tarama bilgilerinin düzeyini belirtir. [/Fr](fr-fr-create-dot-sbr-file.md)'yi ayarlar.
+*`.bsc`* dosyadaki tarama bilgilerinin düzeyini belirtir. [/Fr](fr-fr-create-dot-sbr-file.md)'yi ayarlar.
 
 ### <a name="browse-information-file"></a>Bilgi dosyasına gözatamıyorum
 
-Dosyaya gözatılamıyor: Tarayıcı bilgisi dosyası için isteğe bağlı ad belirtir. [/Fr\<name >](fr-fr-create-dot-sbr-file.md)ayarlar.
+Tarayıcı bilgisi dosyası için isteğe bağlı ad belirtir. [/Fr\<ad >](fr-fr-create-dot-sbr-file.md)ayarlar.
 
 ## <a name="cc-advanced-properties"></a>C/C++ gelişmiş özellikler
 
@@ -431,34 +432,34 @@ Dosyaya gözatılamıyor: Tarayıcı bilgisi dosyası için isteğe bağlı ad b
 
 Uygulamanız için varsayılan çağırma kuralını seçin (işlev tarafından geçersiz kılınabilir). [/GD,/gr,/GZ,/GV](gd-gr-gv-gz-calling-convention.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
-- **__cdecl** -üye işlevleri ve __stdcall veya __fastcall olarak işaretlenmiş C++ işlevler dışındaki tüm işlevler için __cdecl çağırma kuralını belirtir.
-- **__fastcall** -__cdecl veya __stdcall olarak işaretlenmiş üye işlevleri ve C++ işlevler hariç tüm işlevler için __fastcall çağırma kuralını belirtir. Tüm __fastcall işlevleri prototiptürlerine sahip olmalıdır.
-- **__stdcall** -üye işlevleri ve __cdecl veya __fastcall C++ olarak işaretlenmiş işlevler dışındaki tüm işlevler için __stdcall çağırma kuralını belirtir. Tüm __stdcall işlevleri prototiptürlerine sahip olmalıdır.
-- **__vectorcall** -üye işlevleri ve __cdecl, __fastcall veya __stdcall olarak işaretlenmiş işlevler dışındaki C++ tüm işlevler için __vectorcall çağırma kuralını belirtir. Tüm __vectorcall işlevlerinin Prototiplerde olması gerekir.
+- **__cdecl** -__stdcall veya __fastcall işaretlenmiş üye işlevleri ve işlevler hariç C++ tüm işlevler için __cdecl çağırma kuralını belirtir.
+- **__fastcall** -__cdecl veya __stdcall işaretlenmiş üye işlevleri ve işlevler hariç C++ tüm işlevler için __fastcall çağırma kuralını belirtir. Tüm __fastcall işlevleri prototiptürlerine sahip olmalıdır.
+- **__stdcall** -__cdecl veya __fastcall işaretlenmiş üye işlevleri ve işlevler hariç C++ tüm işlevler için __stdcall çağırma kuralını belirtir. Tüm __stdcall işlevleri prototiptürlerine sahip olmalıdır.
+- **__vectorcall** -__cdecl, __fastcall veya __stdcall işaretlenmiş üye işlevleri ve C++ işlevler hariç tüm işlevler için __vectorcall çağırma kuralını belirtir. Tüm __vectorcall işlevleri prototiptürlerine sahip olmalıdır.
 
 ### <a name="compile-as"></a>Farklı derle
 
-. C ve. cpp dosyaları için derleme dil seçeneğini belirleyin. [/TC,/TP](tc-tp-tc-tp-specify-source-file-type.md)ayarlar.
+*`.c`* ve *`.cpp`* dosyaları için derleme dil seçeneğini belirleyin. [/TC,/TP](tc-tp-tc-tp-specify-source-file-type.md)ayarlar.
 
-**Yapabileceği**
+#### <a name="choices"></a>Yapabileceği
 
 - **Varsayılan** -varsayılan.
 - **C** kodu olarak derle-c kodu olarak derleyin.
-- **C++**  Kod olarak C++ derle-kod olarak derle.
+- **Kod C++ olarak** C++ derle-kod olarak derle.
 
 ### <a name="disable-specific-warnings"></a>Belirli uyarıları devre dışı bırak
 
-İstenen uyarı numaralarını devre dışı bırakın; sayıları noktalı virgülle ayrılmış bir listeye koyun. [/WD\<NUM >](compiler-option-warning-level.md)ayarlar.
+Belirtilen uyarı numaralarını devre dışı bırakın. Uyarı numaralarını noktalı virgülle ayrılmış bir listeye koyun. [/WD\<num >](compiler-option-warning-level.md)ayarlar.
 
 ### <a name="forced-include-file"></a>Zorunlu Içerme dosyası
 
-bir veya daha fazla zorunlu ekleme dosyası. [/FI\<ad >](fi-name-forced-include-file.md)ayarlar.
+bir veya daha fazla zorunlu ekleme dosyası. [/FI\<adı >](fi-name-forced-include-file.md)ayarlar.
 
 ### <a name="forced-using-file"></a>Zorunlu #using dosyası
 
-Bir veya daha fazla zorlamalı #using dosyası belirtir. [/Fu\<name >](fu-name-forced-hash-using-file.md)ayarlar.
+Bir veya daha fazla zorlamalı #using dosyası belirtir. [/Fu\<adı >](fu-name-forced-hash-using-file.md)ayarlar.
 
 ### <a name="show-includes"></a>Eklemeleri göster
 
@@ -470,23 +471,17 @@ Tanılama iletilerinde tam yolları kullanın. [/FC](fc-full-path-of-source-code
 
 ### <a name="omit-default-library-name"></a>Varsayılan kitaplık adını atla
 
-Varsayılan kitaplık adlarını. obj dosyalarına eklemeyin. [/Zl](zl-omit-default-library-name.md)ayarlar.
+*`.obj`* dosyalarında varsayılan kitaplık adlarını içermez. [/Zl](zl-omit-default-library-name.md)ayarlar.
 
 ### <a name="internal-compiler-error-reporting"></a>İç derleyici hata bildirimi
 
-İç araç hatalarının Microsoft 'a nasıl geri bildirilmesi gerektiğini belirtir.  IDE 'de varsayılan değer Prompt ' dir.  Komut satırı Derlemeleriyle varsayılan değer Queue ' dir. Ayarlar [/errorreport:\[Yöntem]] (errorreport-Report-Internal-Compiler-Errors.MD).
-
-**Yapabileceği**
-
-- **Rapor gönderme** -iç derleyici hataları hakkında raporlar toplanmayacak veya Microsoft 'a gönderilmez.
-- **Istem hemen** , iç derleyici hatası aldığınızda rapor göndermenizi ister.
-- **Sonraki oturum açma sırası** -hata raporunu sıralar. Yönetici ayrıcalıklarıyla oturum açtığınızda, bir açılır pencere görüntülenir ve en son oturum açışınızda oluşan tüm sorunları raporlayabilmeniz gerekir (her üç günde birden çok kez rapor göndermeniz istenmez). kuyruk, komut satırında bir uygulama derlenirken varsayılandır.
-- **Otomatik olarak gönder** -iç derleyici hatalarının raporlarını otomatik olarak Microsoft 'a gönderir. Bu seçeneği etkinleştirmek için öncelikle Microsoft% 27s veri toplama ilkesini kabul etmelisiniz. /ErrorReport: bir bilgisayara Gönder ' i ilk kez belirttiğinizde, bir derleyici iletisi sizi Microsoft% 27s veri toplama ilkesini içeren bir Web sitesine başvuracaktır.
+> [!NOTE]
+> Bu seçenek kullanım dışıdır. Windows Vista 'Dan başlayarak hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir.
 
 ### <a name="treat-specific-warnings-as-errors"></a>Belirli uyarıları hata olarak değerlendir
 
 Belirli bir derleyici uyarısını n bir derleyici uyarısında hata olarak değerlendirir.
 
-### <a name="additional-options"></a>Ek seçenekler
+### <a name="additional-options"></a>Ek Seçenekler
 
 Ek seçenekler.

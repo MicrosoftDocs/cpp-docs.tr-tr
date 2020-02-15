@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 1727d3a12b7186d3cc868ef6bb78711774057407
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 9890a6a9dea1671f14b66897a80f4b49861dff2b
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688873"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257110"
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 
@@ -20,7 +20,7 @@ Sabit uzunluklu bir öğe dizisini sarmalanmış.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class tuple {
    tuple();
    explicit tuple(P1, P2, ..., PN); // 0 < N
@@ -41,12 +41,12 @@ class tuple {
 
 ### <a name="parameters"></a>Parametreler
 
-*TN* \
+*TN*\
 Nth demet öğesinin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, `T1`, `T2`,... `TN`, sırasıyla `0 <= N <= Nmax`. @No__t_0 demet örneğinin kapsamı, şablon bağımsız değişkenlerinin `N` sayıdır. @No__t_0 şablon bağımsız değişkeninin dizini ve bu türün karşılık gelen depolanmış değeri `i - 1`. Bu nedenle, bu belgede 1 ile N arasında bir sayı olarak değer olarak, karşılık gelen dizin değerleri 0 ' dan N-1 ' e kadar değişir.
+Sınıf şablonu, `T1`, `T2`,... `TN`, sırasıyla `0 <= N <= Nmax`. `tuple<T1, T2, ..., TN>` demet örneğinin kapsamı, şablon bağımsız değişkenlerinin `N` sayıdır. `Ti` şablon bağımsız değişkeninin dizini ve bu türün karşılık gelen depolanmış değeri `i - 1`. Bu nedenle, bu belgede 1 ile N arasında bir sayı olarak değer olarak, karşılık gelen dizin değerleri 0 ' dan N-1 ' e kadar değişir.
 
 ## <a name="example"></a>Örnek
 
@@ -137,15 +137,15 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-@No__t_1 *Al*
+\ *Al*
 N. kopya demet öğesinin türü.
 
-*sağ* \
+*sağ*\
 Kopyalamanın bulunduğu kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işleci, *sağdaki* öğeleri `*this` karşılık gelen öğelerine atar. Üçüncü üye işleci, `*this` 0 ' ın dizinindeki öğeye `right.first` atar ve Dizin 1 ' deki öğeye `right.second`. Üç üye işleci `*this` döndürür.
+İlk iki üye işleci, *sağdaki* öğeleri `*this`karşılık gelen öğelerine atar. Üçüncü üye işleci, `*this` 0 ' ın dizinindeki öğeye `right.first` atar ve Dizin 1 ' deki öğeye `right.second`. Üç üye işleci `*this`döndürür.
 
 Kalan üye işleçleri analoglarından, ancak [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
@@ -209,19 +209,19 @@ template <class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
+*sol*\
 Öğeleri demet ile değiş tokuş edilecek şekilde değiştirilecek olan bir kayıt *düzeni.*
 
-*sağ* \
+*sağ*\
 Öğeleri *sol*kayıt düzeni ile değiş tokuş edilecek bir kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `left.swap(right)` yürütür.
+İşlev `left.swap(right)`yürütür.
 
 ## <a name="tuple"></a>Le
 
-@No__t_0 nesnesi oluşturur.
+`tuple` nesnesi oluşturur.
 
 ```cpp
 constexpr tuple();
@@ -246,21 +246,21 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-@No__t_1 *Al*
+\ *Al*
 N. kopya demet öğesinin türü.
 
-*sağ* \
+*sağ*\
 Kopyalamanın bulunduğu kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk Oluşturucu, öğeleri varsayılan olarak oluşturulan bir nesne oluşturur.
 
-İkinci Oluşturucu, öğeleri dizin `i - 1` `P1`, `P2`,... `PN` her `Pi` bağımsız değişkenlerden oluşturulan bir nesne oluşturur.
+İkinci Oluşturucu, öğeleri dizin `i - 1``P1`, `P2`,... `PN` her `Pi` bağımsız değişkenlerden oluşturulan bir nesne oluşturur.
 
 Üçüncü ve dördüncü oluşturucular, öğeleri ilişkili *sağ*öğeden oluşturulmuş olan bir nesne oluşturur.
 
-Beşinci Oluşturucu, dizin 0 ' daki öğesi `right.first` oluşturulduğu ve Dizin 1 ' deki öğesi `right.second` oluşturulan kopya olan bir nesne oluşturur.
+Beşinci Oluşturucu, dizin 0 ' daki öğesi `right.first` oluşturulduğu ve Dizin 1 ' deki öğesi `right.second`oluşturulan kopya olan bir nesne oluşturur.
 
 Kalan oluşturucular analoglarından daha önceki bir deyişle, [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 

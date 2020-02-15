@@ -1,37 +1,43 @@
 ---
-title: / WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
-ms.date: 11/04/2016
+title: /WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
+ms.date: 02/12/2020
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-ms.openlocfilehash: db99816b18110b424647603196040997044e7fbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95685c9c0dfde45c42449bbcad67228a0e21b36a
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316437"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257539"
 ---
-# <a name="wholearchive-include-all-library-object-files"></a>/ WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
+# <a name="wholearchive-include-all-library-object-files"></a>/WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
 
-Bağlantılı yürütülebilir dosya içindeki statik kitaplıkta tüm nesnesi dosyalarını dahil için zorla.
+Bağlayıcıyı, bağlı çalıştırılabilirteki statik kitaplığa tüm nesne dosyalarını dahil etmek için zorlayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> / WHOLEARCHIVE [:*Kitaplığı*]
+> **/WHOLEARCHIVE**\
+> **/WHOLEARCHIVE:** _kitaplık_
+
+### <a name="arguments"></a>Bağımsız Değişkenler
+
+*kitaplık*\
+Statik kitaplık için isteğe bağlı bir yol adı. Bağlayıcı, bu kitaplıktan her nesne dosyasını içerir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Wholearchıve seçeneği bağlayıcıya her nesne dosyasından ya da belirtilen bir statik kitaplık içeren veya bağlantı için belirtilen tüm statik kitaplıklarından kitaplık belirtilmezse, komut zorlar. Birden çok kitaplık wholearchıve seçeneğini belirtmek için birden fazla wholearchıve geçiş bağlayıcı komut satırına kullanabilirsiniz. Yalnızca diğer nesne dosyaları yürütülebilir dosya tarafından başvurulan sembolleri veriyorsanız varsayılan olarak, bağlı çıktısında nesne dosyalarının bağlayıcı içerir. Tüm nesne dosyaları tek tek bağlayıcı komut satırına belirtikleri gibi statik kitaplıkta bırakılıyorsa kabul bağlayıcı wholearchıve seçenektir.
+/WHOLEARCHIVE seçeneği, bağlayıcıyı belirtilen bir statik kitaplıktan her nesne dosyasını içerecek şekilde veya hiçbir kitaplık belirtilmemişse, belirtilen tüm statik kitaplıklardan bağlantı komutuna dahil etmek üzere zorlar. Birden çok kitaplık için/WHOLEARCHIVE seçeneğini belirtmek için bağlayıcı komut satırında birden fazla/WHOLEARCHIVE anahtarı kullanabilirsiniz. Varsayılan olarak, bağlayıcı yalnızca çalıştırılabilirteki diğer nesne dosyaları tarafından başvurulan sembolleri dışa aktardıklarında, bağlantılı çıktıda nesne dosyalarını içerir. /WHOLEARCHIVE seçeneği, bağlayıcının bir statik kitaplıkta arşivlenmiş tüm nesne dosyalarını bağlayıcı komut satırında tek tek belirtildikleri gibi işleme almasını sağlar.
 
-Wholearchıve seçeneği, statik bir kitaplıktan tüm sembolleri yeniden dışarı aktarmak için kullanılabilir. Bu, birden fazla statik Kitaplığı'ndan bir bileşen oluşturduğunuzda tüm kitaplık kodu, kaynakları ve meta verileri bulunduğundan emin olmanızı sağlar. Windows çalışma zamanı bileşenleri için dışarı aktarma uyarısı statik kitaplık oluşturduğunuzda LNK4264 içeren görürseniz, bu kitaplığın başka bir bileşen ya da uygulama bağlama wholearchıve seçeneği kullanın.
+/WHOLEARCHIVE seçeneği, bir statik kitaplıktan tüm sembolleri yeniden dışarı aktarmak için kullanılabilir. Bu, birden çok statik kitaplıktan bir bileşen oluşturduğunuzda tüm kitaplık kodunuzun, kaynaklarınızın ve meta verilerinizin eklendiğinden emin olmanızı sağlar. Dışarı aktarma için Windows Çalışma Zamanı bileşenleri içeren bir statik kitaplık oluştururken uyarı LNK4264 görürseniz, bu kitaplığı başka bir bileşen veya uygulamaya bağlarken/WHOLEARCHIVE seçeneğini kullanın.
 
-Wholearchıve seçeneği, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.
+/WHOLEARCHIVE seçeneği Visual Studio 2015 güncelleştirme 2 ' de eklenmiştir.
 
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio 'da bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **komut satırı** altında özellik sayfası **yapılandırma özellikleri**, **bağlayıcı**.
+1. **Yapılandırma özellikleri**, **bağlayıcı**altında **komut satırı** özellik sayfasını seçin.
 
-1. Wholearchıve seçeneği ekleyin **ek seçenekler** metin kutusu.
+1. **Ek seçenekler** metin kutusuna/WHOLEARCHIVE seçeneğini ekleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

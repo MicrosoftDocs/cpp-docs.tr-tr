@@ -4,12 +4,12 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - begin method
 ms.assetid: 633708cb-17fe-488b-9fb1-1b5f2da0f46c
-ms.openlocfilehash: d5cb494a7d2471f7b18d80685dd8eafe7f2f1a44
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 5ef8371e34f6ba74f03b7699c5ac9180e50952d2
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457369"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257955"
 ---
 # <a name="container-classbegin"></a>Kapsayıcı Sınıfı::begin
 
@@ -20,9 +20,8 @@ Dizinin ilk öğesini işaret eden bir yineleyici döndürür (veya bir boş diz
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-
-    const_iterator begin() const;
+```cpp
+const_iterator begin() const;
 
 iterator begin();
 ```

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.openlocfilehash: cd1dfc035fde06c4be0f90e1bd11b231d64ab811
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: 23c6abffe7e433a0550c45502a12e9adaf652a33
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890138"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257994"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 
@@ -35,10 +35,10 @@ operator&(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
+*sol*\
 İlgili öğeleri bit düzeyinde `AND`birleştirilecek olan iki bitsetin ilki.
 
-*sağ* \
+*sağ*\
 İlgili öğeleri bit düzeyinde `AND`birleştirilecek olan iki valarışın ikinci değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -77,7 +77,7 @@ bitset 3: 0001
 
 Çıkış akışına bit dizisinin metin gösterimini ekler.
 
-```
+```cpp
 template <class CharType, class Traits, size_t N>
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,
@@ -86,7 +86,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Çıkış akışına dize olarak eklenecek **bitset\<N >** türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -134,7 +134,7 @@ int main( )
 
 Bit kümesindeki bir bit karakter dizesini okur.
 
-```
+```cpp
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
     basic_istream<CharType, Traits>& i_str,
@@ -146,18 +146,18 @@ basic_istream<CharType, Traits>& operator>> (
 *i_str*\
 Bit kümesine eklenecek giriş akışına girilen dize.
 
-*sağ* \
+*sağ*\
 Giriş akışından bitleri alan bit kümesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon işlevi *i_str*dizesini döndürür.
+Şablon işlevi *i_str*dize döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, `operator>>` `bitset(str)`*bit kümesinde depolamak* üzere aşırı yükler; burada `str`, *i_str*'den ayıklanan [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` türünde bir nesnedir.
+Şablon işlevi, `operator>>` `bitset(str)`*bit kümesinde depolamak* üzere aşırı yükler; burada `str`, *`< CharType, Traits, allocator< CharType > >&`* ayıklanan [basic_string](basic-string-class.md) i_str bir nesnedir.
 
-Şablon işlevi *i_str* öğesinden öğeleri ayıklar ve şu kadar bit kümesine ekler:
+Şablon işlevi, öğeleri *i_str* ayıklar ve şu kadar bitset 'e ekler:
 
 - Tüm bit öğeleri giriş akışından ayıklandı ve bitset içinde depolanır.
 
@@ -228,10 +228,10 @@ operator^(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
+*sol*\
 İlgili öğeleri bit düzeyinde `EXCLUSIVE-OR`birleştirilecek olan iki bitsetin ilki.
 
-*sağ* \
+*sağ*\
 İlgili öğeleri bit düzeyinde `EXCLUSIVE-OR`birleştirilecek olan iki valarışın ikinci değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -280,10 +280,10 @@ operator|(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
+*sol*\
 İlgili öğeleri bit düzeyinde `OR`birleştirilecek olan iki bitsetin ilki.
 
-*sağ* \
+*sağ*\
 İlgili öğeleri bit düzeyinde `OR`birleştirilecek olan iki valarışın ikinci değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri

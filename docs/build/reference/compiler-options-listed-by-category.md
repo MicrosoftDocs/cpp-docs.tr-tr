@@ -1,15 +1,16 @@
 ---
 title: Kategorilere Göre Listelenen Derleyici Seçenekleri
-ms.date: 01/08/2020
+description: Microsoft C/C++ derleyici komut satırı seçeneklerinin kategorisine göre başvuru listesi.
+ms.date: 02/09/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 191ea3d5d6f4647f7130757a4657820483d212b5
-ms.sourcegitcommit: 0f4ee9056d65043fa5a715f0ad1031c0ed30e2b6
+ms.openlocfilehash: d29076e6eae4bcbd15a4bc50bb48477e3f93152d
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034590"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257721"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -88,7 +89,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/FM](fm-name-mapfile.md)|Bir mapfile oluşturur.|
 |[/Fo](fo-object-file-name.md)|Bir nesne dosyası oluşturur.|
 |[/FP](fp-name-dot-pch-file.md)|Önceden derlenmiş üst bilgi dosyası adını belirtir.|
-|[/FR,/fr](fr-fr-create-dot-sbr-file.md)|Name. sbr tarayıcı dosyaları oluşturuldu.|
+|[/FR,/fr](fr-fr-create-dot-sbr-file.md)|Ad *`.sbr`* tarayıcı dosyaları oluşturdu.|
 
 ## <a name="preprocessor"></a>Ön işlemci
 
@@ -112,7 +113,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 
 |Seçenek|Amaç|
 |------------|-------------|
-|[/constexpr](constexpr-control-constexpr-evaluation.md)|Derleme zamanında constexpr değerlendirmesini denetleyin.|
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|Derleme zamanında **constexpr** değerlendirmesini denetleyin.|
 |[/OpenMP](openmp-enable-openmp-2-0-support.md)|Kaynak kodda [#pragma omp](../../preprocessor/omp.md) 'yi sunar.|
 |[/vd](vd-disable-construction-displacements.md)|Gizli `vtordisp` sınıf üyelerini bastırır veya izin vermez.|
 |[/VMB](vmb-vmg-representation-method.md)|Üye işaretçileri için en iyi temeli kullanır.|
@@ -128,7 +129,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/ZH](zh.md)|Hata ayıklama bilgilerinde sağlama toplamı için MD5, SHA-1 veya SHA-256 belirtir.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Düzenle ve devam et ile uyumlu bir program veritabanındaki hata ayıklama bilgilerini içerir. (yalnızca x86)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Tüm hata ayıklama bilgileri üretir.|
-|[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını. obj dosyasından kaldırır.|
+|[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını *`.obj`* dosyasından kaldırır.|
 |[/ZP](zp-struct-member-alignment.md) *n*|Paketler yapısı üyeleri.|
 |[/ZS](zs-syntax-check-only.md)|Yalnızca söz dizimini denetler.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows Çalışma Zamanı çalıştırmak için bir çıkış dosyası üretir.|
@@ -142,10 +143,10 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/LDd](md-mt-ld-use-run-time-library.md)|Bir hata ayıklama dinamik bağlantı kitaplığı oluşturur.|
 |[/link](link-pass-options-to-linker.md)|BAĞLAMA için belirtilen seçeneği geçirir.|
 |[/LN](ln-create-msil-module.md)|MSIL Modülü oluşturur.|
-|[/MD](md-mt-ld-use-run-time-library.md)|MSVCRT. lib kullanarak çok iş parçacıklı bir DLL oluşturmak için derler.|
-|[/MDd](md-mt-ld-use-run-time-library.md)|MSVCRTD. lib kullanarak bir hata ayıklama çok iş parçacıklı DLL oluşturmak için derler.|
-|[/MT](md-mt-ld-use-run-time-library.md)|LıBCMT. lib kullanarak çok iş parçacıklı yürütülebilir dosya oluşturmak için derler.|
-|[/MTd](md-mt-ld-use-run-time-library.md)|LıBCMTD. lib kullanarak bir hata ayıklama çok iş parçacıklı yürütülebilir dosyası oluşturmak için derler.|
+|[/MD](md-mt-ld-use-run-time-library.md)|*Msvcrt. lib*kullanarak çok iş PARÇACıKLı bir dll oluşturmak için derler.|
+|[/MDd](md-mt-ld-use-run-time-library.md)|*Msvcrtd. lib*kullanarak bir hata ayıklama çok Iş parçacıklı DLL oluşturmak için derler.|
+|[/MT](md-mt-ld-use-run-time-library.md)|*LIBCMT. lib*kullanarak çok iş parçacıklı yürütülebilir dosya oluşturmak için derler.|
+|[/MTd](md-mt-ld-use-run-time-library.md)|*LIBCMTD. lib*kullanarak bir hata ayıklama çok iş parçacıklı yürütülebilir dosyası oluşturmak için derler.|
 
 ## <a name="miscellaneous"></a>Çeşitli
 
@@ -156,10 +157,10 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/Analyze](analyze-code-analysis.md)|Kod analizini sunar.|
 |[/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md)|Bir. obj dosyasındaki adreslenebilir bölüm sayısını artırır.|
 |[/c](c-compile-without-linking.md)|Bağlama olmadan derler.|
-|[/cgthreads](cgthreads-code-generation-threads.md)|İyileştirme ve kod oluşturma için kullanılacak CL. exe iş parçacıklarının sayısını belirtir.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|İç derleyici hatası (ıCE) bilgilerini doğrudan Microsoft C++ ekibine sağlamanıza olanak sağlar.|
-|[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Tanılama metninde CL. exe ' ye geçirilen kaynak kodu dosyalarının tam yolunu görüntüler.|
-|[/FS](fs-force-synchronous-pdb-writes.md)|, MSPDBSRV aracılığıyla serileştirilmesi için program veritabanı (PDB) dosyasına yazmaları zorlar. EXE.|
+|[/cgthreads](cgthreads-code-generation-threads.md)|İyileştirme ve kod oluşturma için kullanılacak *CL. exe* iş parçacıklarının sayısını belirtir.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
+|[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Tanılama metninde *CL. exe* ' ye geçirilen kaynak kodu dosyalarının tam yolunu görüntüler.|
+|[/FS](fs-force-synchronous-pdb-writes.md)|Mspdbsrv aracılığıyla serileştirilmesi için PDB dosyasına yazmaları zorlar *. EXE*.|
 |[/H](h-restrict-length-of-external-names.md)|Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar.|
 |[/HELP](help-compiler-command-line-help.md)|Derleyici seçeneklerini listeler.|
 |[/J](j-default-char-type-is-unsigned.md)|Varsayılan `char` türünü değiştirir.|
@@ -184,7 +185,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/Wo](compiler-option-warning-level.md)|Belirtilen uyarıyı yalnızca bir kez görüntüler.|
 |[/WV](compiler-option-warning-level.md)|Derleyicinin sonraki sürümlerinde tanıtılan uyarıları devre dışı bırakır.|
 |[/WX](compiler-option-warning-level.md)|Uyarıları hata olarak değerlendirir.|
-|[/YC](yc-create-precompiled-header-file.md)|Oluşturma. PCH dosyası.|
+|[/YC](yc-create-precompiled-header-file.md)|*`.PCH`* dosya oluşturun.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Tüm nesne dosyalarındaki hata ayıklama bilgilerini tamamlar. Bunun yerine [/Zi](z7-zi-zi-debug-information-format.md) kullanın.|
 |[/Yl](yl-inject-pch-reference-for-debug-library.md)|Bir hata ayıklama kitaplığı oluştururken PCH başvurusunu çıkartır.|
 |[/Yu](yu-use-precompiled-header-file.md)|Derleme sırasında önceden derlenmiş bir üstbilgi dosyası kullanır.|
@@ -201,7 +202,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 
 ## <a name="experimental-options"></a>Deneysel seçenekler
 
-Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından desteklenir ve farklı derleyici sürümlerinde farklı davranabilir. Genellikle, deneysel seçeneklere yönelik belgeler yalnızca en iyi veya yalnızca [Microsoft C++ ekip bloguna](https://devblogs.microsoft.com/cppblog/)yöneliktir.
+Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından desteklenir. Ayrıca farklı derleyici sürümlerinde farklı davranabilir. Genellikle, deneysel seçeneklere yönelik belgeler yalnızca en iyi veya yalnızca [Microsoft C++ ekip bloguna](https://devblogs.microsoft.com/cppblog/)yöneliktir.
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -213,6 +214,7 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 |Seçenek|Amaç|
 |------------|-------------|
 |[/clr: noAssembly](clr-common-language-runtime-compilation.md)|Kullanım dışı. Bunun yerine [/ln (MSIL Modülü Oluştur)](ln-create-msil-module.md) kullanın.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)| Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
 |[/Fr](fr-fr-create-dot-sbr-file.md)|Kullanım dışı. Yerel değişkenler olmadan bir tarama bilgisi dosyası oluşturur.|
 |[/GE](ge-enable-stack-probes.md)|Kullanım dışı. Yığın araştırmalarını etkinleştirir. Varsayılan olarak açık.|
 |[/GM](gm-enable-minimal-rebuild.md)|Kullanım dışı. En az yeniden derlemeyi mümkün.|
@@ -221,7 +223,7 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 |[/H](h-restrict-length-of-external-names.md)|Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar.|
 |[/OG](og-global-optimizations.md)|Kullanım dışı. Genel iyileştirmeleri kullanır.|
 |[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Bir kayan nokta türünden integral türüne nasıl dönüştüreceğiniz belirlemek için kullanılır.|
-|[Çıktıda](v-version-number.md)|Kullanım dışı. . Obj dosya sürümü dizesini ayarlar.|
+|[Çıktıda](v-version-number.md)|Kullanım dışı. *`.obj`* dosya sürümü dizesini ayarlar.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|Kullanımdan kalktı. 64-bit taşınabilirlik sorunlarını algılar.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Tüm nesne dosyalarındaki hata ayıklama bilgilerini tamamlar. Bunun yerine [/Zi](z7-zi-zi-debug-information-format.md) kullanın.|
 |[/Zc: forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Kullanım dışı. For döngüsü kapsamında uygunluğu devre dışı bırakır.|
@@ -230,6 +232,6 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](c-cpp-building-reference.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[C/C++ oluşturma başvurusu](c-cpp-building-reference.md)\
+[MSVC derleyici seçenekleri](compiler-options.md)\
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

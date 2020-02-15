@@ -1,20 +1,20 @@
 ---
-title: LıB 'e genel bakış
+title: LIB'e Genel Bakış
 description: Lib. exe kitaplık aracının kullanımına ve seçeneklerine genel bakış.
-ms.date: 09/25/2019
+ms.date: 02/09/2020
 f1_keywords:
 - Lib
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-ms.openlocfilehash: 7223ef0a624cf15c43bd067db8a7919efd27df17
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: 5829a65ab0dc4ef193236c9ae480856a17c5874c
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685490"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257618"
 ---
-# <a name="overview-of-lib"></a>LıB 'e genel bakış
+# <a name="overview-of-lib"></a>LIB'e Genel Bakış
 
 LıB (lib. exe), bir program oluştururken [bağlantı](linker-options.md) ile kullanabileceğiniz standart kitaplıklar, içeri aktarma kitaplıkları ve dışarı aktarma dosyaları oluşturur. LıB bir komut isteminden çalışır.
 
@@ -35,7 +35,7 @@ Aşağıdaki tabloda, daha fazla bilgi bağlantısı ile lib. exe seçenekleri l
 |Seçenek|Açıklama|
 |-|-|
 |**/DEF**|İçeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturun.<br/><br/>Daha fazla bilgi için bkz. [Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma](building-an-import-library-and-export-file.md).|
-|**/ERRORREPORT**|   LIB. exe ile iç hatalar hakkında Microsoft 'a bilgi gönderin.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/ERRORREPORT**| Kullanım dışı. Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
 |**/EXPORT**|   Programından bir işlevi dışarı aktarır.<br/><br/>Daha fazla bilgi için bkz. [Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma](building-an-import-library-and-export-file.md).|
 |**/EXTRACT**|   Var olan bir kitaplığın bir üyesinin kopyasını içeren bir nesne (. obj) dosyası oluşturun.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplık üyesini ayıklama](extracting-a-library-member.md).|
 |**/INCLUDE**|   Sembol tablosuna bir sembol ekler.<br/><br/>Daha fazla bilgi için bkz. [Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma](building-an-import-library-and-export-file.md).|
@@ -56,8 +56,8 @@ Aşağıdaki tabloda, daha fazla bilgi bağlantısı ile lib. exe seçenekleri l
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LıB başvurusu](lib-reference.md)<br/>
-[LıB giriş dosyaları](lib-input-files.md)<br/>
-[LıB çıktı dosyaları](lib-output-files.md)<br/>
-[Diğer LıB çıktısı](other-lib-output.md)<br/>
-[Kitaplığın yapısı](structure-of-a-library.md)
+[LIB başvurusu](lib-reference.md)\
+[LIB giriş dosyaları](lib-input-files.md)\
+[LIB çıktı dosyaları](lib-output-files.md)\
+[DIĞER LIB çıktısı](other-lib-output.md)\
+[Kitaplık Yapısı](structure-of-a-library.md)

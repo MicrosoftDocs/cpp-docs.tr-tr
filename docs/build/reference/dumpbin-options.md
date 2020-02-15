@@ -1,17 +1,18 @@
 ---
 title: DUMPBIN seçenekleri
-ms.date: 10/24/2019
+description: Microsoft DUMPBIN yardımcı program komut satırı seçeneklerine yönelik başvuru kılavuzu.
+ms.date: 02/09/2020
 f1_keywords:
 - dumpbin
 helpviewer_keywords:
 - DUMPBIN program, options
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-ms.openlocfilehash: 81c66f1971294531a2904a0b681819476bcc1eb2
-ms.sourcegitcommit: 6ed1bc5b26dc60a780c1fc5f2f19d57ba1dc47d8
+ms.openlocfilehash: 98a4fd221d66b93f945667deadaba3180f8d3e66
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144550"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257734"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN seçenekleri
 
@@ -33,7 +34,7 @@ DUMPBIN aşağıdaki seçeneklere sahiptir:
 
 - [/DISASM\[: {BYTES\|NOBYTES}\]](disasm.md)
 
-- [/ERRORREPORT: {NONE | KOMUT ISTEMI | KUYRUK | Gönder](errorreport-dumpbin-exe.md)
+- [/errorreport: {None | KOMUT ISTEMI | KUYRUK | Gönder}](errorreport-dumpbin-exe.md) (kullanım dışı)
 
 - [/EXPORTS](dash-exports.md)
 

@@ -5,21 +5,20 @@ f1_keywords:
 - unordered_set/std::swap (set)
 - unordered_set/std::swap (unordered_multiset)
 ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
-ms.openlocfilehash: f34d818c1829baba1740bf2776b2d47a8808bf68
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6b6e764acc9fa3410a44a4a11760933328365852
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243429"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257773"
 ---
-# <a name="ltunorderedsetgt-functions"></a>&lt;unordered_set&gt; işlevleri
+# <a name="ltunordered_setgt-functions"></a>&lt;unordered_set&gt; işlevleri
 
-## <a name="swap"></a> Swap (unordered_set)
+## <a name="swap"></a>takas (unordered_set)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-```
-
+```cpp
 template <class Key, class Hash, class Pred, class Alloc>
 void swap(
    unordered_set <Key, Hash, Pred, Alloc>& left,
@@ -28,7 +27,7 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*\
+*Anahtar*\
 Anahtar türü.
 
 *Karma*\
@@ -40,15 +39,15 @@ Eşitlik karşılaştırma işlevi nesne türü.
 *Ayırma*\
 Ayırıcı sınıf.
 
-*Sol*\
-Takas etmek için ilk kapsayıcı.
+*sol*\
+Takas edilecek ilk kapsayıcı.
 
 *sağ*\
-Takas etmek için ikinci kapsayıcı.
+Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütür `left.` [unordered_set::swap](../standard-library/unordered-set-class.md#swap)`(right)`.
+Şablon işlevi `left.`[unordered_set:: swap](../standard-library/unordered-set-class.md#swap)`(right)`yürütür.
 
 ### <a name="example"></a>Örnek
 
@@ -103,11 +102,11 @@ return (0);
 [c] [b] [a]
 ```
 
-## <a name="swap_unordered_multiset"></a> Swap (unordered_multiset)
+## <a name="swap_unordered_multiset"></a>takas (unordered_multiset)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-```
+```cpp
 template <class Key, class Hash, class Pred, class Alloc>
 void swap(
    unordered_multiset <Key, Hash, Pred, Alloc>& left,
@@ -116,7 +115,7 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*\
+*Anahtar*\
 Anahtar türü.
 
 *Karma*\
@@ -128,15 +127,15 @@ Eşitlik karşılaştırma işlevi nesne türü.
 *Ayırma*\
 Ayırıcı sınıf.
 
-*Sol*\
-Takas etmek için ilk kapsayıcı.
+*sol*\
+Takas edilecek ilk kapsayıcı.
 
 *sağ*\
-Takas etmek için ikinci kapsayıcı.
+Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütür `left.` [unordered_multiset::swap](../standard-library/unordered-multiset-class.md#swap)`(right)`.
+Şablon işlevi `left.`[unordered_multiset:: swap](../standard-library/unordered-multiset-class.md#swap)`(right)`yürütür.
 
 ### <a name="example"></a>Örnek
 

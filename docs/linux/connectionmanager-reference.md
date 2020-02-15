@@ -5,12 +5,12 @@ f1_keywords:
 - ConnectionManager
 helpviewer_keywords:
 - ConnectionManager program
-ms.openlocfilehash: 2b01bfbcd81984e7ddf32cd5ab0485fff17b3d2b
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 1c6236cedba88714e9918dd2c096b5e78d2f08ce
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520902"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258039"
 ---
 # <a name="connectionmanager-reference"></a>ConnectionManager başvurusu
 
@@ -22,7 +22,7 @@ ConnectionManager. exe, Visual Studio 2019 sürüm 16,5 ve sonraki sürümlerind
 
 ::: moniker range="vs-2019"
 
-ConnectionManager. exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Veya, sürekli tümleştirme için Visual Studio 'Yu ayarlamak üzere kullanın. Bunu, bir Geliştirici Komut İstemi penceresinde kullanabilirsiniz. Geliştirici Komut İstemi hakkında daha fazla bilgi için bkz. [komut satırından Microsoft C++ araç takımını kullanma](..\build\building-on-the-command-line.md).
+ConnectionManager. exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Veya, sürekli tümleştirme için Visual Studio 'Yu ayarlamak üzere kullanın. Bunu, bir Geliştirici Komut İstemi penceresinde kullanabilirsiniz. Geliştirici Komut İstemi hakkında daha fazla bilgi için bkz. [komut satırından Microsoft C++ araç takımını kullanma](../build/building-on-the-command-line.md).
 
 ConnectionManager. exe, Visual Studio 2019 sürüm 16,5 ve sonraki sürümlerinde kullanılabilir. Visual Studio yükleyicisi iş yüküyle **Linux geliştirmenin C++**  bir parçasıdır. Ayrıca, yükleyicide **Bağlantı Yöneticisi** bileşenini seçtiğinizde de otomatik olarak yüklenir. *% Vcıdeınstalldir%\\Linux\\bin\\ConnectionManagerExe\\ConnectionManager. exe*dosyasına yüklendi.
 
@@ -88,7 +88,7 @@ ConnectionManager. exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE
 
   **--Password**.
 
-- **-i**
+- **-ı**
 
   **--PrivateKey**ile aynı.
 

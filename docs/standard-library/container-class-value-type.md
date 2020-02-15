@@ -4,14 +4,14 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - value_type typedef
 ms.assetid: e89d5a71-b48c-47fa-aa78-682243e6e97f
-ms.openlocfilehash: 5a1dc2ade6daaa79e0dc56f4c1a5be85abeda99a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 06fbb013c66cd7cd37b6eb2ba7166a30a1545841
+ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450716"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77257851"
 ---
-# <a name="container-classvaluetype"></a>Kapsayıcı Sınıfı::value_type
+# <a name="container-classvalue_type"></a>Kapsayıcı Sınıfı::value_type
 
 > [!NOTE]
 > Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
@@ -20,14 +20,13 @@ ms.locfileid: "68450716"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-
+```cpp
 typedef T4 value_type;
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Burada belirtilmeyen tür `T4` için bir eş anlamlı olarak açıklanmaktadır (genellikle `Alloc::value_type`).
+Belirtilmemiş tür `T4` (genellikle `Alloc::value_type`) için bir eş anlamlı olarak açıklanmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
