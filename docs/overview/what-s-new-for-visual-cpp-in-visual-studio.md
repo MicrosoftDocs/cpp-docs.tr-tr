@@ -3,12 +3,12 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 07/02/2019
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: 04cf4ecf447120302125c797bd70c00c62b5def9
-ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
+ms.openlocfilehash: df7cf44831781086f1b36d32ea9ed773a5dff9a4
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75793977"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415723"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -182,7 +182,7 @@ Intellicode artık iş yüküyle **Masaüstü geliştirmede C++**  isteğe bağl
 
 IncrediBuild, bir isteğe bağlı bileşen olarak iş yüküne **sahip C++ masaüstü geliştirmeye** dahildir. IncrediBuild derleme Izleyicisi, Visual Studio IDE 'de tamamen tümleşiktir. Daha fazla bilgi için bkz. [IncrediBuild 'In derleme İzleyicisi ve Visual Studio 2019 ile derlemenizi görselleştirme](https://devblogs.microsoft.com/cppblog/visualize-your-build-with-incredibuilds-build-monitor-and-visual-studio-2019/).
 
-## <a name="debugging"></a>Hata Ayıklama
+## <a name="debugging"></a>Hata ayıklama
 
 - Windows C++ üzerinde çalışan uygulamalar için pdb dosyaları artık ayrı bir 64 bit işlemde yüklenir. Bu değişiklik, çok sayıda modül ve PDB dosyası içeren uygulamalarda hata ayıklarken hata ayıklayıcı tarafından oluşan bir kilitlenme aralığını giderir.
 
@@ -516,7 +516,7 @@ Yeniden C++ düzenleme ve kod gezintisi için IntelliSense altyapısını kullan
 |||
 |-|-|
 |Özellik|Performans Iyileştirmesi|
-|Yeniden adlandır|5.3 x|
+|Yeniden Adlandır|5.3 x|
 |Imzayı Değiştir |4.5 x|
 |Tüm Başvuruları Bul|4.7 x|
 
@@ -647,7 +647,7 @@ Visual Studio 2017 ile birlikte gelen Clang/C2 araç takımı artık büyük pro
 
 ## <a name="c-code-analysis"></a>C++Kod Analizi
 
-[C++ Temel Yönergeleri](https://github.com/isocpp/CppCoreGuidelines)’nin uygulanmasını sağlayan C++ Temel Denetleyicileri artık Visual Studio ile dağıtılmaktadır. Projenin özellik sayfalarındaki **Kod Analizi uzantıları** sayfasında bulunan denetleyicileri etkinleştirmek yeterlidir ve Kod analizini çalıştırdığınızda uzantılar dahil edilir. Daha fazla bilgi için bkz. [ C++ temel yönergeler denetleyicilerini kullanma](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
+[C++ Temel Yönergeleri](https://github.com/isocpp/CppCoreGuidelines)’nin uygulanmasını sağlayan C++ Temel Denetleyicileri artık Visual Studio ile dağıtılmaktadır. Projenin özellik sayfalarındaki **Kod Analizi uzantıları** sayfasında bulunan denetleyicileri etkinleştirmek yeterlidir ve Kod analizini çalıştırdığınızda uzantılar dahil edilir. Daha fazla bilgi için bkz. [ C++ temel yönergeler denetleyicilerini kullanma](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck özellikleri sayfası")
 
@@ -668,13 +668,13 @@ Visual Studio 2017 ile birlikte gelen Clang/C2 araç takımı artık büyük pro
 ##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
 
 - Çalıştırılacak kod analizi kurallarını belirtmenize imkan tanıyan [/Analyze: RuleSet](../build/reference/analyze-code-analysis.md)için destek eklendi.
-- Ek C++ temel kılavuz kuralları için destek eklendi.  Daha fazla bilgi için bkz. [ C++ temel yönergeler denetleyicilerini kullanma](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
+- Ek C++ temel kılavuz kuralları için destek eklendi.  Daha fazla bilgi için bkz. [ C++ temel yönergeler denetleyicilerini kullanma](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## <a name="unit-testing"></a>Birim testi
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Google test bağdaştırıcı ve Boost. test bağdaştırıcısı artık iş yüküyle **Masaüstü geliştirmenin C++**  bileşenleri olarak kullanılabilir ve **Test Gezgini**ile tümleşiktir. **Test Gezgini** ile tam tümleştirme henüz mevcut olmasa da CMake projeleri Için ctest desteği eklendi (açık klasör kullanılarak). Daha fazla bilgi için [C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp).
+Google test bağdaştırıcı ve Boost. test bağdaştırıcısı artık iş yüküyle **Masaüstü geliştirmenin C++**  bileşenleri olarak kullanılabilir ve **Test Gezgini**ile tümleşiktir. **Test Gezgini** ile tam tümleştirme henüz mevcut olmasa da CMake projeleri Için ctest desteği eklendi (açık klasör kullanılarak). Daha fazla bilgi için bkz. [C/C++Için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp).
 
 ##### <a name="visual-studio-2017-version-156"></a>Visual Studio 2017 sürüm 15.6
 
@@ -697,7 +697,7 @@ Visual Studio Grafik Tanılama, Direct3D uygulamalarında işleme ve performans 
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
-  ![Ara](media/search.png)
+  ![Arama](media/search.png)
 
 - **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklamanız yeterlidir.
 

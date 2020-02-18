@@ -6,18 +6,18 @@ helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: a18d2dbabdeec0f283fb4eca7ed52e616f9d224a
-ms.sourcegitcommit: b67b08472b6f1ee8f1c5684bba7056d3e0fc745f
+ms.openlocfilehash: bc9fb5628c1a628b91f306c346f2bbb1dea13de8
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725727"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416117"
 ---
 # <a name="upgrade-c-projects-from-earlier-versions-of-visual-studio"></a>Projeleri C++ Visual Studio 'nun önceki sürümlerinden yükseltme
 
 Visual Studio 'nun önceki bir sürümünde oluşturulan bir projeyi yükseltmek için, projeyi Visual Studio 'nun en son sürümünde açmanız yeterlidir. Visual Studio, projeyi geçerli şemaya yükseltmek için teklifler sunar.
 
-**Hayır**' ı seçerseniz, proje yükseltilmez. Visual Studio 2010 ve üzeri sürümlerde oluşturulan projeler için, projeyi Visual Studio 'nun daha yeni bir sürümünde kullanmaya devam edebilirsiniz. Daha eski araç takımını hedefleyecek şekilde, proje özelliklerinizi ayarlamanız yeterlidir. Visual Studio 'nun eski sürümünü bilgisayarınızda bırakırsanız, araç takımı daha sonraki sürümlerde kullanılabilir. Örneğin, projenizin Windows XP 'de çalışmaya devam etmesi gerekiyorsa, Visual Studio 2019 ' e yükseltebilirsiniz. Ardından, proje özelliklerinde araç takımını v141_xp veya daha önceki bir sürümü olarak belirtirsiniz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](use-native-multi-targeting.md).
+**Hayır**' ı seçerseniz, proje yükseltilmez. Visual Studio 2010 ve üzeri sürümlerde oluşturulan projeler için, projeyi Visual Studio 'nun daha yeni bir sürümünde kullanmaya devam edebilirsiniz. Daha eski araç takımını hedefleyecek şekilde, proje özelliklerinizi ayarlamanız yeterlidir. Visual Studio 'nun eski sürümünü bilgisayarınızda bırakırsanız, araç takımı daha sonraki sürümlerde kullanılabilir. Örneğin, projenizin Windows XP 'de çalışmaya devam etmesi gerekiyorsa, Visual Studio 2019 ' e yükseltebilirsiniz. Ardından, proje özelliklerinde araç takımını v141_xp veya daha önceki bir sürümü olarak belirtirsiniz. Daha fazla bilgi için bkz. [Eski projeler oluşturmak Için Visual Studio 'da yerel çoklu sürüm kullanımını kullanma](use-native-multi-targeting.md).
 
 **Evet**' i seçerseniz, proje yerinde yükseltilir. Önceki sürüme geri dönüştürülemez. Yükseltme senaryolarında, mevcut proje ve çözüm dosyalarının yedek bir kopyasını oluşturmak iyi bir uygulamadır.
 
@@ -47,7 +47,7 @@ Bazı Yükseltilen projeler ve çözümler değişiklik yapılmadan başarıyla 
 
 1. Platform araç takımı, C++ dil standardı ve Windows SDK sürümü (varsa) tercih edilen sürümlere ayarlayın. (**Proje** > **özellikleri** > **yapılandırma özellikleri** > **genel**)
 
-1. Birçok hata varsa, bunları düzelttikten sonra bazı seçenekleri geçici olarak kapatabilirsiniz. [/Permissive-](../build/reference/permissive-standards-conformance.md) seçeneğini devre dışı bırakmak için, **Proje** > **özellikleri** > **yapılandırma özellikleri** > **C/C++**  > **dil**' i kullanın. [Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) seçeneğini kapatmak Için, **proje** > **özellikleri** > **yapılandırma özellikleri** > **Kod Analizi**' ni kullanın.
+1. Birçok hata varsa, bunları düzelttikten sonra bazı seçenekleri geçici olarak kapatabilirsiniz. [/Permissive-](../build/reference/permissive-standards-conformance.md) seçeneğini devre dışı bırakmak için, **Proje** > **özellikleri** > **yapılandırma özellikleri** > **C/C++**  > **dil**' i kullanın. [Kod Analizi](/cpp/code-quality/code-analysis-for-c-cpp-overview) seçeneğini kapatmak Için, **proje** > **özellikleri** > **yapılandırma özellikleri** > **Kod Analizi**' ni kullanın.
 
 1. Tüm bağımlılıkların mevcut olduğundan ve içerme yollarının veya kitaplık konumlarının doğru olduğundan emin olun. (**Proje** > **özellikleri** > **yapılandırma özellikleri** > **VC + + dizinleri**)
 

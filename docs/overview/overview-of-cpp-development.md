@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: d72ea2ab4fa83259152101b357c6b2b69e74c723
-ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
+ms.openlocfilehash: 4e04e189b44fe61759a9422139d856ab8a09f201
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810629"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415706"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 
@@ -47,7 +47,7 @@ Visual Studio, IntelliSense, gözatma ve hata ayıklama için tam destekle birli
 
 ## <a name="add-to-source-control"></a>Kaynak denetimine Ekle
 
-Kaynak denetimi, birden çok geliştirici arasında çalışmayı koordine etmenize, sürmekte olan işleri üretim kodundan yalıtmanıza ve kaynak kodunuzu yedeklemenize olanak sağlar. Visual Studio, **Takım Gezgini** penceresi aracılığıyla Git ve [Team Foundation sürüm denetimi \(TFVC\)](/azure/devops/repos/tfvc/) destekler. 
+Kaynak denetimi, birden çok geliştirici arasında çalışmayı koordine etmenize, sürmekte olan işleri üretim kodundan yalıtmanıza ve kaynak kodunuzu yedeklemenize olanak sağlar. Visual Studio, **Takım Gezgini** penceresi aracılığıyla Git ve [Team Foundation sürüm denetimi \(TFVC\)](/azure/devops/repos/tfvc/) destekler.
 
 ::: moniker range="vs-2019"
 
@@ -105,9 +105,9 @@ Ayrıca, derleyicisini (CL. exe) ve NMAKE ve LIB gibi diğer derleme ile ilgili 
 
 ![Hata ayıklama oturumu](media/vs2017-debug-watch.png "Visual Studio 2017 hata ayıklama oturumu")
 
-Daha fazla bilgi için [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio).
+Daha fazla bilgi için bkz. [Visual Studio 'Da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio).
 
-## <a name="test"></a>{1&gt;Sınama&lt;1}
+## <a name="test"></a>Test etme
 
 Visual Studio için C++Microsoft birim testi çerçevesini, ayrıca Boost. test, Google test ve ctest desteğini içerir. **Test Gezgini** penceresinden testlerinizi çalıştırın:
 
@@ -115,9 +115,9 @@ Visual Studio için C++Microsoft birim testi çerçevesini, ayrıca Boost. test,
 
 Daha fazla bilgi için bkz. [birim testlerini kullanarak kodu doğrulama](/visualstudio/test/unit-test-your-code) ve [Visual Studio 'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp).
 
-## <a name="analyze"></a>Çözümle
+## <a name="analyze"></a>Çözümleme
 
-Visual Studio, kaynak kodunuzda olası sorunları tespit eden statik kod çözümleme araçları içerir. Bu araçlar, [ C++ temel kılavuz](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) kuralları denetleyicilerinin bir uygulamasını içerir. Daha fazla bilgi için bkz. [C/C++ Overview için kod analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+Visual Studio, kaynak kodunuzda olası sorunları tespit eden statik kod çözümleme araçları içerir. Bu araçlar, [ C++ temel kılavuz](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) kuralları denetleyicilerinin bir uygulamasını içerir. Daha fazla bilgi için bkz. [C/C++ Overview için kod analizi](/cpp/code-quality/code-analysis-for-c-cpp-overview).
 
 ## <a name="deploy-completed-applications"></a>Tamamlanmış uygulamaları dağıtma
 

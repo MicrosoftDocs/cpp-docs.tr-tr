@@ -11,12 +11,12 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-ms.openlocfilehash: 3ccb618c9a3c6b21d6ffe3fbbce7b6c1140e0564
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f43367fd58d8ab2a62fb2312efcd9fc9ec0cfc42
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450583"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416198"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 
@@ -26,7 +26,7 @@ Standart C++ , üye işlevlerinin kapsayıcı için yineleyicilerin geçersiz ha
 
 - Bir kapsayıcıdan öğe silme, öğe için yineleyiciler geçersiz hale gelmesine neden olur.
 
-- İtme veya ekleme kullanarak bir [vektör](../standard-library/vector.md) boyutunu artırmak, `vector` ' ın ' a yinelenmesine neden olur.
+- İtme veya ekleme kullanarak bir [Vector](../standard-library/vector.md) boyutunu artırmak `vector` yineleyiciler geçersiz hale gelir.
 
 ## <a name="invalid-iterators"></a>Geçersiz Yineleyiciler
 
@@ -54,9 +54,9 @@ int main() {
 }
 ```
 
-## <a name="using-iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL kullanma
+## <a name="using-_iterator_debug_level"></a>_ITERATOR_DEBUG_LEVEL kullanma
 
-Bir hata ayıklama derlemesinde Yineleyici hata ayıklama özelliğini kapatmak için, [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) ön işlemci makrosunu kullanabilirsiniz. Bu program onaylama işlemi yapmaz, ancak yine de tanımsız davranışı tetikler.
+Bir hata ayıklama derlemesinde Yineleyici hata ayıklama özelliğini kapatmak için önişlemci makrosunu [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanabilirsiniz. Bu program onaylama işlemi yapmaz, ancak yine de tanımsız davranışı tetikler.
 
 ```cpp
 // iterator_debugging_1.cpp
@@ -106,7 +106,7 @@ int main() {
 
 ## <a name="incompatible-iterators"></a>Uyumsuz yineleyiciler
 
-Aşağıdaki kod örneği, [for_each](../standard-library/algorithm-functions.md#for_each) algoritmasına yönelik iki yineleyiciler uyumsuz olduğundan bir onaylama işlemi oluşmasına neden olur. Algoritmalar, kendisine sağlanan yineleyicilerin aynı kapsayıcıya başvurmalarını sağlamak için kontrol edilir.
+Aşağıdaki kod örneği bir onaylama işlemi oluşmasına neden olur çünkü [for_each](../standard-library/algorithm-functions.md#for_each) algoritmasındaki iki yineleyiciler uyumsuz. Algoritmalar, kendisine sağlanan yineleyicilerin aynı kapsayıcıya başvurmalarını sağlamak için kontrol edilir.
 
 ```cpp
 // iterator_debugging_3.cpp
@@ -126,7 +126,7 @@ int main()
 }
 ```
 
-Bu örneğin, bir functor yerine Lambda `[] (int& elem) { elem *= 2; }` ifadesini kullandığına dikkat edin. Bu seçeneğin onaylama hatası üzerinde hiçbir ilgisi yoktur, ancak benzer bir komik ctor aynı hataya neden olur — Lambdalar, Compact Function nesne görevlerini gerçekleştirmek için çok faydalı bir yoldur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
+Bu örnekte, bir functor yerine `[] (int& elem) { elem *= 2; }` lambda ifadesini kullandığına dikkat edin. Bu seçeneğin onaylama hatası üzerinde hiçbir ilgisi yoktur, ancak benzer bir komik ctor aynı hataya neden olur — Lambdalar, Compact Function nesne görevlerini gerçekleştirmek için çok faydalı bir yoldur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
 
 ## <a name="iterators-going-out-of-scope"></a>Kapsam dışına çıkan yineleyiciler
 
@@ -165,7 +165,7 @@ struct derived : base {
    ~derived() {}
 };
 
- int main() {
+int main() {
    std::vector<int> vect( 10 );
    base * pb = new derived( vect.begin() );
    delete pb;  // doesn't call ~derived()

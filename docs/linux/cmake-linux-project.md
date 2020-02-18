@@ -3,12 +3,12 @@ title: Visual Studio 'da Linux CMake projesi oluşturma ve yapılandırma
 description: Visual Studio 'da bir Linux CMake projesi oluşturma, yapılandırma, düzenleme ve derleme
 ms.date: 10/04/2019
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 128b8dac297398ffbfadfaade5b36c843d55e163
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 9c6a60162c2dbbab8e348b27d1987d7f1001bee0
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73625960"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416081"
 ---
 # <a name="create-and-configure-a-linux-cmake-project"></a>Linux CMake projesi oluşturma ve yapılandırma
 
@@ -175,7 +175,7 @@ Aşağıdaki örnek, önceki kod örneğine göre Visual Studio 2017 (ve Visual 
 
 ::: moniker range="vs-2019"
 
- Visual Studio 2019 sürüm 16,1 ve sonraki sürümlerde varsayılan Linux-Debug yapılandırması burada gösterilmektedir:
+Visual Studio 2019 sürüm 16,1 ve sonraki sürümlerde varsayılan Linux-Debug yapılandırması burada gösterilmektedir:
 
 ```json
 {
@@ -207,7 +207,7 @@ Aşağıdaki örnek, önceki kod örneğine göre Visual Studio 2017 (ve Visual 
 Bu ayarlar hakkında daha fazla bilgi için bkz. [Cmakesettings. JSON başvurusu](../build/cmakesettings-reference.md).
 
 
-## <a name="optional-settings"></a>İsteğe bağlı ayarlar
+## <a name="optional-settings"></a>İsteğe Bağlı Ayarlar
 
 Daha fazla denetim için aşağıdaki isteğe bağlı ayarları kullanabilirsiniz:
 

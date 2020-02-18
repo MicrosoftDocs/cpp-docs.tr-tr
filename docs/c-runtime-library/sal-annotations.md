@@ -47,18 +47,18 @@ helpviewer_keywords:
 - ecount annotation
 - bcount annotation
 ms.assetid: 81893638-010c-41a0-9cb3-666fe360f3e0
-ms.openlocfilehash: a50e37b41c6e90428bed5ae113d2d9f064e042d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77b934010b7f76b556a4c7ba9826fbedfc36b95e
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390873"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415836"
 ---
 # <a name="sal-annotations"></a>SAL Ek Açıklamaları
 
-Örneğin, kitaplık üstbilgi dosyaları incelemek, olağan dışı bazı ek açıklamaları, karşılaşabilirsiniz `_In_z` ve `_Out_z_cap_(_Size)`. Bunlar, bir dizi nasıl bir işlev parametrelerini, örneğin, kullandığı açıklamak için bunları ve sonlandırma üzerinde kolaylaştırır garantiler hakkında kolaylaştırır varsayımların ek açıklamalar sağlayan Microsoft kaynak kodu ek açıklama dili (SAL) örneğidir. Üst bilgi dosyası \<sal.h > ek açıklamalar tanımlar.
+Kitaplık üst bilgi dosyalarını incelerseniz, `_In_z` ve `_Out_z_cap_(_Size)`gibi olağan dışı ek açıklamaların fark edebilirsiniz. Bunlar, bir işlevin parametrelerini nasıl kullandığını açıklayan bir dizi ek açıklama sunan Microsoft kaynak kodu ek açıklama diline (SAL) örnektir. Örneğin, bunlar hakkında sağladığı varsayımlar ve tamamlanmakta olan garanti. \<Sal. h > üstbilgi dosyası ek açıklamaları tanımlıyor.
 
-Visual Studio'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanarak](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+Visual Studio 'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi için bkz. [sal ek açıklamalarını kullanarak CC++ /Code kusurlarını azaltma](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

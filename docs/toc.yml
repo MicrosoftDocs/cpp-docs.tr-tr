@@ -375,6 +375,8 @@
           href: build/arm64-exception-handling.md
     - name: Programları Windows XP için yapılandırma
       href: build/configuring-programs-for-windows-xp.md
+    - name: C/C++ için kod analizi
+      href: code-quality/
     - name: Derleyici ve derleme araçları başvurusu
       expanded: false
       items:

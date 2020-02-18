@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 6f219a0c199971b563b1c0ff291f2f5d12803023
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: cebc748f207cb1283add4b494b422a13bdc17f8c
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627472"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416138"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması (C++) oluşturma
 
@@ -23,7 +23,7 @@ Windows API (Win32 API, Windows Masaüstü API 'SI ve Windows Classic API olarak
 > [!IMPORTANT]
 > Kısaltma açısından, bazı kod deyimleri metinde atlanır. Bu belgenin sonundaki [kod oluştur](#build-the-code) bölümünde kodun tamamı gösterilmektedir.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 - Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir.
 
@@ -71,9 +71,9 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
 1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, sol bölmede,**Visual C++**  >  **yüklü** ' i genişletin ve ardından **Windows Masaüstü**' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin.
+1. **Yeni proje** iletişim kutusunda, sol bölmede, **Visual C++**  > **yüklü** ' i genişletin ve ardından **Windows Masaüstü**' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin.
 
-   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
+   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam**’ı seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
@@ -97,9 +97,9 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
 1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusundaki sol bölmede,**Visual C++**  >   > **Şablonlar** **' ı genişletin** ve ardından **Win32**' yi seçin. Orta bölmede **Win32 projesi**' ni seçin.
+1. **Yeni proje** iletişim kutusundaki sol bölmede, **Visual C++**  >  > **Şablonlar** **' ı genişletin** ve ardından **Win32**' yi seçin. Orta bölmede **Win32 projesi**' ni seçin.
 
-   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
+   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam**’ı seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-150.png "DesktopApp projesini adlandırın")
 
@@ -141,16 +141,16 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    Bu işlevin parametreleri ve dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > `CALLBACK`veya `HINSTANCE`veya `_In_`gibi tüm ek sözcükler nelerdir? Geleneksel Windows API 'si, türlerin ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makroları kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya **seçin, sonra** da tanımı içeren küçük bir açılır pencere **Için ctrl +** **i** +**K**tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > `CALLBACK`veya `HINSTANCE`veya `_In_`gibi tüm ek sözcükler nelerdir? Geleneksel Windows API 'si, tür ayrıntılarının ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi ayrıntıların bazılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makrolarını kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya **seçin, sonra** da tanımı içeren küçük bir açılır pencere **Için ctrl+** **i**+**K**tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
-1. Windows masaüstü programları &lt;windows. h > gerektirir. &lt;Tchar. h > `TCHAR` makrosunu tanımlar ve bu, UNICODE sembolü projenizde tanımlandıysa, aksi takdirde **char**olarak çözümlenirse, sonunda **wchar_t** ile çözümlenir.  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** 'yi doğrudan kullanabilirsiniz.
+1. Windows masaüstü programları Windows. h > &lt;gerektirir. &lt;Tchar. h > `TCHAR` makrosunu tanımlar ve bu, sonunda UNICODE simgesi projenizde tanımlandıysa, aksi halde **char**olarak çözümlenirse **wchar_t** .  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** doğrudan kullanabilirsiniz.
 
    ```cpp
    #include <windows.h>
    #include <tchar.h>
    ```
 
-1. `WinMain` işleviyle birlikte, her Windows masaüstü uygulamasının de bir pencere yordamı işlevi olması gerekir. Bu işlev genellikle `WndProc` olarak adlandırılır, ancak istediğiniz gibi adlandırabilirsiniz. `WndProc` aşağıdaki söz dizimine sahiptir.
+1. `WinMain` işleviyle birlikte, her Windows masaüstü uygulamasının de bir pencere yordamı işlevi olması gerekir. Bu işlev genellikle `WndProc`olarak adlandırılır, ancak istediğiniz gibi adlandırabilirsiniz. `WndProc` aşağıdaki söz dizimine sahiptir.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -240,7 +240,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    }
    ```
 
-   Bu işlev, bir pencerenin tanıtıcısı olan bir `HWND` döndürür. Bir tanıtıcı, Windows 'un açık pencereleri izlemek için kullandığı bir işaretçiye benzer. Daha fazla bilgi için bkz. [Windows veri türleri](/windows/win32/WinProg/windows-data-types).
+   Bu işlev, bir pencerenin tanıtıcısı olan bir `HWND`döndürür. Bir tanıtıcı, Windows 'un açık pencereleri izlemek için kullandığı bir işaretçiye benzer. Daha fazla bilgi için bkz. [Windows veri türleri](/windows/win32/WinProg/windows-data-types).
 
 1. Bu noktada pencere oluşturulmuştur, ancak yine de Windows 'un görünür hale getirmek için söylememiz gerekir. Bu kod şu şekilde yapılır:
 
@@ -588,7 +588,7 @@ Taahhüt edilen şekilde, çalışma uygulaması için kodun tamamı aşağıda 
 
    ![DesktopApp projesini çalıştırma](../build/media/desktop-app-project-run-157.PNG "DesktopApp projesini çalıştırma")
 
-Mühendisi! Bu yönergeyi tamamladınız ve geleneksel bir Windows masaüstü uygulaması oluşturdunuz.
+Tebrikler! Bu yönergeyi tamamladınız ve geleneksel bir Windows masaüstü uygulaması oluşturdunuz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

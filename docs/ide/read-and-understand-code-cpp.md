@@ -2,12 +2,12 @@
 title: Visual Studio 'da C++ kodu okuyun ve anlayın
 description: Kodunuzu biçimlendirmek C++ ve anlamak Için Visual Studio 'da kod düzenleyicisini kullanın.
 ms.date: 05/28/2019
-ms.openlocfilehash: d4af4c9bc747540bada49de305c45cffc5c44374
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 2ddeabd9d70ebb344fe6d14abe520ee51a42eebb
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303116"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416125"
 ---
 # <a name="read-and-understand-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodu okuyun ve anlayın
 
@@ -19,9 +19,9 @@ Visual Studio, dil anahtar kelimeleri, tür adları, değişken adları, işlev 
 
 ![Kod renklendirme](../ide/media/code-outline-colorization.png "C++renklendirme")
 
- Kullanılmayan kod (bir #if 0 ' ın altında kod gibi) renkli olarak daha fafdır.
+Kullanılmayan kod (bir #if 0 ' ın altında kod gibi) renkli olarak daha fafdır.
 
- ![Etkin olmayan kod](../ide/media/inactive-code-cpp.png "C++etkin olmayan kod")
+![Etkin olmayan kod](../ide/media/inactive-code-cpp.png "C++etkin olmayan kod")
 
 **Hızlı Başlat**' da "yazı tipleri" yazarak ve ardından **yazı tipleri ve renkler**' i seçerek renkleri özelleştirebilirsiniz. **Yazı tipleri ve renkler** Iletişim kutusunda C/C++ seçeneklere gidin ve özel bir yazı tipi ve/veya renk seçin.
 

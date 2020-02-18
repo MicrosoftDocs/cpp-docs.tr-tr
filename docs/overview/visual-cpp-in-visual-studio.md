@@ -5,12 +5,12 @@ ms.date: 07/02/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
-ms.openlocfilehash: 74e1b34549a8e8d0f1e22e6f40aacbd4429b272f
-ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
+ms.openlocfilehash: 0a4093860c7d06e8240e03b1487546f80da24b88
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75793802"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416097"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -82,10 +82,10 @@ C++ Düzenleyicide üretkenlik özelliklerini kullanarak kodu yeniden düzenleme
 [Yerel Kodda Hata Ayıklama](/visualstudio/debugger/debugging-native-code)<br/>
 Projeler ile C++ Visual Studio hata ayıklayıcısını kullanın.
 
-[C/C++ Overview için kod analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+[C/C++ Overview için kod analizi](/cpp/code-quality/code-analysis-for-c-cpp-overview)<br/>
 Statik analiz yapmak için SAL C++ ek açıklamalarını veya temel kılavuz denetleyicilerini kullanın.
 
-[Visual Studio'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
+[Visual Studio 'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
 , Google Test, Boost. test veya CTest için C++Microsoft birim testi çerçevesini kullanarak birim testleri oluşturun.
 
 ## <a name="write-applications-in-c"></a>Uygulamaları yazmaC++

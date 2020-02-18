@@ -119,12 +119,12 @@ helpviewer_keywords:
 - std::basic_string_view, substr
 - std::basic_string_view, swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: 7bd6d02304e86b50d33bdaa3e07c95b08da31f7a
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: 7a53a27e11088ab02f873613794d6799851ca373
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821902"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416178"
 ---
 # <a name="basic_string_view-class"></a>basic_string_view sınıfı
 
@@ -205,7 +205,7 @@ String_view depolanan karakterlerin türü. C++ Standart kitaplık, bu şablonun
 |**iden**|`using iterator = const_iterator;`|
 |**nPos**|`static constexpr size_type npos = size_type(-1);`|
 |**çağrısı**|`using pointer = value_type*;`|
-|**Başvuru**|`using reference = value_type&;`|
+|**başvurunun**|`using reference = value_type&;`|
 |**reverse_iterator**|`using reverse_iterator = const_reverse_iterator;`|
 |**size_type**|`using size_type = size_t;`|
 |**traits_type**|`using traits_type = Traits;`|
@@ -215,7 +215,7 @@ String_view depolanan karakterlerin türü. C++ Standart kitaplık, bu şablonun
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Başka bir string_view string_view veya dönüştürülebilir dize nesnesi atar.|
+|[işleç =](#op_eq)|Başka bir string_view string_view veya dönüştürülebilir dize nesnesi atar.|
 |[işleç\[\]](#op_at)|Belirtilen dizindeki öğeyi döndürür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
@@ -233,15 +233,15 @@ String_view depolanan karakterlerin türü. C++ Standart kitaplık, bu şablonun
 |[crbegin](#crbegin)|[Rbegin](#rbegin)ile aynı.|
 |[crend](#crend)|[Rend](#rend)ile aynı.|
 |[verileri](#data)|Karakter dizisine ait ham sahip olmayan bir işaretçi döndürür.|
-|[empty](#empty)|String_view karakter içerip içermediğini sınar.|
+|[olmamalıdır](#empty)|String_view karakter içerip içermediğini sınar.|
 |[erer](#end)|[Cend](#cend)ile aynı.|
-|[bilgi](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için ileriye doğru yönde arar.|
+|[find](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için ileriye doğru yönde arar.|
 |[find_first_not_of](#find_first_not_of)|Belirtilen string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesi olmayan ilk karakteri arar.|
 |[find_first_of](#find_first_of)|Belirtilen string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesiyle eşleşen ilk karakteri arar.|
 |[find_last_not_of](#find_last_not_of)|Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin herhangi bir öğesi olmayan son karakteri arar.|
 |[find_last_of](#find_last_of)|Belirtilen bir string_view veya dönüştürülebilir dize nesnesinin bir öğesi olan son karakteri arar.|
 |[yapılan](#front)|İlk öğeye bir const_reference döndürür.|
-|[Uzunluğu](#length)|Geçerli öğe sayısını döndürür.|
+|[uzunluklu](#length)|Geçerli öğe sayısını döndürür.|
 |[max_size](#max_size)|String_view içerebileceği en fazla karakter sayısını döndürür.|
 |[rbegin](#rbegin)|Ters çevrilen string_view ilk öğeyi ele alan bir const yineleyici döndürür.|
 |[remove_prefix](#remove_prefix)|İşaretçiyi belirtilen sayıda öğe kadar ileri kaydırır.|
@@ -615,7 +615,7 @@ Gerçekte kopyalanmış karakterlerin sayısı.
 
 Kopyanın sonuna bir null karakter eklenmez.
 
- Daha fazla bilgi için bkz. [c-Runtime-Library/Security---CRT](../c-runtime-library/security-features-in-the-crt.md).
+Daha fazla bilgi için bkz. [c-Runtime-Library/Security---CRT](../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="crbegin"></a>basic_string_view:: crbegin
 

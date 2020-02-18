@@ -3,12 +3,12 @@ title: Kod yükseltmek C++ Için VISUAL Studio IDE araçları
 description: Visual C++ Studio 'daki kod Düzenleyicisi ve kod çözümleme araçları, kod tabanınızı C++ modernleştirin etmenize yardımcı olur.
 ms.date: 11/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: 3f85b955b688489bfc04c4bfc0605201e883e3d4
-ms.sourcegitcommit: 4dde7914608508e47c21cae03ac58fe953a0c29b
+ms.openlocfilehash: 409fc0a2fa6cd39c7751dc34b20b231ffbea3956
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74119535"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416147"
 ---
 # <a name="visual-studio-ide-tools-for-upgrading-c-code"></a>Kod yükseltmek C++ Için VISUAL Studio IDE araçları
 
@@ -24,7 +24,7 @@ Visual Studio, eski C++ kodu derleyici seçenekleri, kod analizi uyarıları ve 
 
 - Standart tüm sürümlerine uyan, ancak artık modern C++olarak en iyi uygulama olarak kabul edilen kod.
 
-   Değişikliklerin önerildiği kodu belirlemek için [Kod analizini](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)çalıştırın.
+   Değişikliklerin önerildiği kodu belirlemek için [Kod analizini](/cpp/code-quality/code-analysis-for-c-cpp-overview)çalıştırın.
 
 ## <a name="open-and-convert-a-legacy-project"></a>Eski bir projeyi açma ve dönüştürme
 
@@ -74,7 +74,7 @@ Kod Analizi hataları ve uyarıları, tıpkı derleyici hataları gibi **hata li
 
 ![Hata Listesi 'de kod analizi uyarıları](media/code-analysis-error-list.png "Hata Listesi 'de kod analizi uyarıları")
 
-Hangi kuralların etkin olduğunu değiştirebilir ve özel RuleSets 'ler oluşturabilirsiniz. Kod analizini kullanma hakkında daha fazla bilgi için bkz. [C/C++ Overview için kod analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+Hangi kuralların etkin olduğunu değiştirebilir ve özel RuleSets 'ler oluşturabilirsiniz. Kod analizini kullanma hakkında daha fazla bilgi için bkz. [C/C++ Overview için kod analizi](/cpp/code-quality/code-analysis-for-c-cpp-overview).
 
 ## <a name="use-quick-actions-to-modernize-code"></a>Kodu modernleştirin için hızlı eylemler kullanın
 
@@ -101,7 +101,7 @@ Makro aşağıda gösterildiği gibi dönüştürülür:
 
 ![constexpr işlev çağrısı](media/constexpr-function-call.png "constexpr işlev çağrısı")
 
-### <a name="initialize-variables"></a>Değişkenleri Başlat
+### <a name="initialize-variables"></a>Değişkenleri başlatma
 
 Başlatılmamış değişkenler, önemli hatalara yol açabilecek rastgele değerler tutabilir. Kod analizi bu örnekleri işaretler ve düzenleyici bir hızlı eylem sağlar:
 

@@ -2,18 +2,18 @@
 title: İçindeki özniteliklerC++
 ms.date: 05/06/2019
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: 5967974d419299778e4aadaa235ee21c62e16d34
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: b3ed21b033c0e606d02d3aa845f09f72118a3c5e
+ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518302"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416070"
 ---
 # <a name="attributes-in-c"></a>İçindeki özniteliklerC++
 
 C++ Standart bir öznitelik kümesi tanımlar ve ayrıca derleyici satıcılarının kendi özniteliklerini (satıcıya özgü bir ad alanı içinde) tanımlamasına olanak tanır, ancak derleyicilerin yalnızca standart olarak tanımlanmış öznitelikleri tanıması gerekir.
 
-Bazı durumlarda, standart öznitelikler derleyiciye özgü declspec parametreleriyle örtüşüyor. Görselde C++, `declspec(deprecated)` kullanmak yerine `[[deprecated]]` özniteliğini kullanabilirsiniz ve özniteliği uyumlu herhangi bir derleyici tarafından tanınacaktır. Dllimport ve dllexport gibi diğer tüm declspec parametreleri için, declspec sözdizimini kullanmaya devam etmeniz gereken hiçbir öznitelik eşdeğeri yoktur. Öznitelikler tür sistemini etkilemez ve bir programın anlamını değiştirmez. Derleyiciler tanımadığı öznitelik değerlerini yoksayar.
+Bazı durumlarda, standart öznitelikler derleyiciye özgü declspec parametreleriyle örtüşüyor. Görselde C++, `declspec(deprecated)` kullanmak yerine `[[deprecated]]` özniteliğini kullanabilirsiniz ve öznitelik herhangi bir uygun derleyici tarafından tanınacaktır. Dllimport ve dllexport gibi diğer tüm declspec parametreleri için, declspec sözdizimini kullanmaya devam etmeniz gereken hiçbir öznitelik eşdeğeri yoktur. Öznitelikler tür sistemini etkilemez ve bir programın anlamını değiştirmez. Derleyiciler tanımadığı öznitelik değerlerini yoksayar.
 
 **Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): bir öznitelik listesi kapsamında, tek bir **using** tanıtıcı adına sahip tüm adlar için ad alanını belirtebilirsiniz:
 
@@ -65,12 +65,12 @@ void Foo(int);
     ```cpp
     int main()
     {
-        int arr[10]; // GSL warning 26494 will be fired
-        int* p = arr; // GSL warning 26485 will be fired
+        int arr[10]; // GSL warning C26494 will be fired
+        int* p = arr; // GSL warning C26485 will be fired
         [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
         {
-            int* q = p + 1; // GSL warning 26481 suppressed
-            p = q--; // GSL warning 26481 suppressed
+            int* q = p + 1; // GSL warning C26481 suppressed
+            p = q--; // GSL warning C26481 suppressed
         }
     }
     ```
