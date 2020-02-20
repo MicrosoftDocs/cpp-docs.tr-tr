@@ -37,12 +37,12 @@ ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
 no-loc:
 - setlocale
 - _wsetlocale
-ms.openlocfilehash: 08684e17a801e660ae2771c9e717dfa28621d600
-ms.sourcegitcommit: 684181561490e0d1955cf601d222f67f09af6d00
+ms.openlocfilehash: b1c7b739e671caebc51022945a369a632ecebb9e
+ms.sourcegitcommit: f38f770bfda1c174d2b81fabda7c893b15bd83a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894352"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473856"
 ---
 # <a name="setlocale-_wsetlocale"></a>setlocale, _wsetlocale
 
@@ -118,7 +118,7 @@ Program açılışında, aşağıdaki ifadenin eşdeğeri çalıştırılır:
 
 `setlocale( LC_ALL, "C" );`
 
-*Yerel ayar* bağımsız değişkeni bir yerel ayar adı, bir dil dizesi, bir dil dizesi ve ülke/bölge kodu, kod sayfası veya dil dizesi, ülke/bölge kodu ve kod sayfası alabilir. Kullanılabilen yerel veri adları, diller, ülke/bölge kodları ve kod sayfaları paketleri UTF-7 ve UTF-8 gibi karakter başına iki bayttan fazlasını gerektiren kod sayfaları dışında Windows NLS API tarafından desteklenenlerin tamamını içermektedir. UTF-7 veya UTF-8 için bir kod sayfası değeri sağlarsanız, **setlocale** başarısız olur ve **null**döndürür. **Setlocale** tarafından desteklenen yerel ayar adları kümesi, [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)bölümünde açıklanmıştır. **Setlocale** tarafından desteklenen dil ve ülke/bölge dizeleri kümesi, [dil dizeleri](../../c-runtime-library/language-strings.md) ve [ülke/bölge dizeleri](../../c-runtime-library/country-region-strings.md)bölümünde listelenmiştir. Kod içinde gömülü veya depolama için seri hale getirilmiş yerel ayar dizelerinin devamlılığı ve performansı için yerel ayar adı biçimi öneririz. Yerel ayar adı dizelerinin bir işletim sistemi güncelleştirmesi tarafından değiştirilmesi olasılığı dil ve ülke/bölge adı biçiminin değiştirilmesi olasılığından daha düşüktür.
+*Yerel ayar* bağımsız değişkeni bir yerel ayar adı, bir dil dizesi, bir dil dizesi ve ülke/bölge kodu, kod sayfası veya dil dizesi, ülke/bölge kodu ve kod sayfası alabilir. Kullanılabilir yerel ayar adları, diller, ülke/bölge kodları ve kod sayfaları kümesi, Windows NLS API 'SI tarafından desteklenen tüm bunları içerir. **Setlocale** tarafından desteklenen yerel ayar adları kümesi, [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)bölümünde açıklanmıştır. **Setlocale** tarafından desteklenen dil ve ülke/bölge dizeleri kümesi, [dil dizeleri](../../c-runtime-library/language-strings.md) ve [ülke/bölge dizeleri](../../c-runtime-library/country-region-strings.md)bölümünde listelenmiştir. Kod içinde gömülü veya depolama için seri hale getirilmiş yerel ayar dizelerinin devamlılığı ve performansı için yerel ayar adı biçimi öneririz. Yerel ayar adı dizelerinin bir işletim sistemi güncelleştirmesi tarafından değiştirilmesi olasılığı dil ve ülke/bölge adı biçiminin değiştirilmesi olasılığından daha düşüktür.
 
 *Yerel ayar* bağımsız değişkeni olarak geçirilmiş bir null işaretçi, **setlocale** 'in Uluslararası ortamı ayarlamak için yerine sorgulamasına söyler. *Yerel ayar* bağımsız değişkeni null işaretçisiyse, programın geçerli yerel ayarı değiştirilmez. Bunun yerine, **setlocale** , iş parçacığının geçerli yerel ayarı *kategorisiyle* ilişkili dizeye bir işaretçi döndürür. *Kategori* bağımsız değişkeni **LC_ALL**ise, işlev her kategorinin geçerli ayarını noktalı virgülle ayırarak belirten bir dize döndürür. Örneğin, çağrı
 

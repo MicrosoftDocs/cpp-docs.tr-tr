@@ -226,12 +226,12 @@ no-loc:
 - _WIN64
 - _WINRT_DLL
 - __func__
-ms.openlocfilehash: 7d019b527abea89ab8337270fbd22abc9dbecc4e
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: ff3945fa9476e090f26ce029c63b1813401082e0
+ms.sourcegitcommit: f38f770bfda1c174d2b81fabda7c893b15bd83a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74305476"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473846"
 ---
 # <a name="predefined-macros"></a>Önceden tanımlanmış makrolar
 
@@ -455,7 +455,7 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
 
 - Derleyicinin sürüm numarasının büyük ve küçük sayı öğelerini kodlayan bir tamsayı sabit değeri olarak tanımlanmış `_MSC_VER`. Ana sayı, dönem ile ayrılmış sürüm numarasının ilk öğesidir ve ikincil sayı ikinci öğedir. Örneğin, Microsoft C/C++ derleyicisinin sürüm numarası 17.00.51106.1 ise `_MSC_VER` makrosu 1700 olarak değerlendirilir. Derleyicinin sürüm numarasını görüntülemek için komut satırına `cl /?` yazın. Bu makro her zaman tanımlanmıştır.
 
-   |Visual Studio sürümü|`_MSC_VER`|
+   |Visual Studio sürüm|`_MSC_VER`|
    |-|-|
    |Visual Studio 6.0|1200|
    |Visual Studio .NET 2002 (7,0)|1300|
@@ -477,6 +477,9 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
    |Visual Studio 2019 sürüm 16,1|1921|
    |Visual Studio 2019 sürüm 16,2|1922|
    |Visual Studio 2019 sürüm 16,3|1923|
+   |Visual Studio 2019 sürüm 16,4|1924|
+   |Visual Studio 2019 sürüm 16,5|1925|
+   |Visual Studio 2019 sürüm 16,6|1926|
 
    Visual Studio 'nun belirli bir sürümünde veya sonrasında derleyici sürümlerini veya güncelleştirmelerini test etmek için `>=` işlecini kullanın. `_MSC_VER`, bu bilinen sürüme karşı karşılaştırmak için koşullu bir yönergede kullanabilirsiniz. Karşılaştırmak için birbirini dışlayan birkaç sürümleriniz varsa, karşılaştırmaları sürüm numarası azalan sırada sıralayın. Örneğin, bu kod Visual Studio 2017 ve üzeri sürümlerde yayınlanan derleyicileri denetler. Ardından, Visual Studio 2015 ' de veya sonrasında yayınlanan derleyicileri denetler. Ardından, Visual Studio 2015 'den önce yayınlanan tüm derleyicileri denetler:
 

@@ -1,6 +1,6 @@
 ---
 title: /Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)
-ms.date: 03/06/2018
+ms.date: 02/18/2020
 f1_keywords:
 - rvaluecast
 - /Zc:rvalueCast
@@ -12,28 +12,29 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
-ms.openlocfilehash: e5a6abd3b85136b05ae58ebc8750aa9120cabc33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac74192cad8a62e4c82b480038e727b114362cdd
+ms.sourcegitcommit: b9aaaebe6e7dc5a18fe26f73cc7cf5fce09262c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315787"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77504566"
 ---
 # <a name="zcrvaluecast-enforce-type-conversion-rules"></a>/Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)
 
-Zaman **/ZC: rvaluecast** seçeneği belirtildiğinde, derleyici C ++ 11 standardına uygun olarak bir dönüştürme işleminin sonucu olarak bir rvalue başvuru türünü doğru tanımlar. Bu seçenek belirtilmediğinde derleyici davranışı Visual Studio 2012 olduğu gibi aynıdır.
+**`/Zc:rvalueCast`** seçeneği belirtildiğinde, derleyici bir rvalue başvuru türünü bir atama işleminin sonucu olarak doğru şekilde tanımlar. Davranışı C++ 11 standardına uyar. Seçenek belirtilmediğinde, derleyici davranışı Visual Studio 2012 ile aynıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:rvalueCast**[**-**]
+> **`/Zc:rvalueCast`**\
+> **`/Zc:rvalueCast-`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **/ZC: rvaluecast** belirtilirse, derleyici C ++ 11 standardının 5.4 bölümünü izler ve yalnızca yayın neden başvuru olmayan türleri ve işlev olmayan türlerin rvalue başvuruları neden ifadeleri cast ifadeleri rvalue türü. Varsayılan olarak veya **/Zc:rvalueCast-** belirtilirse, derleyici uyumsuzdur ve rvalues olarak rvalue başvuruları sonuçlanan tüm cast ifadeleri gibi davranır. Uyumluluk ve cast kullanımında hatalarını ortadan kaldırmak için kullanmanızı öneririz **/ZC: rvaluecast**.
+**`/Zc:rvalueCast`** belirtilirse, derleyici c++ 11 standardına ait 5,4 bölümünü izler ve yalnızca başvuru olmayan türler ve atama ifadeleri ile işlev olmayan türlerin rvalue türleri olarak Rvalue başvuruları ile sonuçlanır. Varsayılan olarak, veya **`/Zc:rvalueCast-`** belirtilirse, derleyici uyumlu değildir ve Rvalue başvuruları rvalues olarak başvuru ile sonuçlanan tüm atama ifadelerini değerlendirir. Uyumluluk için ve yapılan yayınları kullanarak hataları ortadan kaldırmak için **`/Zc:rvalueCast`** kullanmanızı öneririz.
 
-Varsayılan olarak, **/ZC: rvaluecast** kapalı (**/Zc:rvalueCast-**). [/ Permissive-](permissive-standards-conformance.md) derleyici seçeneği, bu seçenek örtük olarak ayarlar, ancak kullanarak kılınabilir **/Zc:rvalueCast-**.
+Varsayılan olarak, **`/Zc:rvalueCast`** kapalıdır ( **`/Zc:rvalueCast-`** ). [/Permissive-](permissive-standards-conformance.md) derleyici seçeneği bu seçeneği örtülü olarak ayarlar, ancak **`/Zc:rvalueCast-`** kullanılarak geçersiz kılınabilir.
 
-Kullanım **/ZC: rvaluecast** atama ifadesini bağımsız değişken olarak bir rvalue başvuru türü alan bir işlev için geçirirseniz. Varsayılan çalışma biçimi derleyici hatasına [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) zaman derleyici yanlış belirler atama ifadesi türü. Bu örnek, bir derleyici hatası doğru gösterir ne zaman kod **/ZC: rvaluecast** belirtilmemiş:
+Bir atama ifadesini, bir rvalue başvuru türü alan bir işleve bağımsız değişken olarak geçirirseniz **`/Zc:rvalueCast`** kullanın. Derleyici, atama ifadesinin türünü yanlış belirlediğinde, varsayılan davranış derleyici hatası [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) neden olur. Bu örnek **`/Zc:rvalueCast`** belirtilmediğinde doğru kodda bir derleyici hatası gösterir:
 
 ```cpp
 // Test of /Zc:rvalueCast
@@ -71,7 +72,7 @@ struct Test1 {
 };
 ```
 
-Varsayılan derleyici çalışma biçimi uygun olduğunda C2102 hata bildirmeyebilir. Ne zaman cast bir kimlik tarafından oluşturulan bir rvalue adresi alınmışsa Bu örnekte, derleyici bir hata bildirmez **/ZC: rvaluecast** belirtilmemiş:
+Varsayılan derleyici davranışı uygun olduğunda hata C2102 raporlamayabilir. Bu örnekte, **`/Zc:rvalueCast`** belirtilmediğinde derleyici bir kimlik yayını tarafından oluşturulan bir rvalue adresi alınmadıysa hata bildirmez:
 
 ```cpp
 int main() {
@@ -82,16 +83,16 @@ int main() {
 }
 ```
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'teki uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri** > **C/C++**  > **dil** Özellik sayfası ' nı seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: rvaluecast** seçip **Tamam**.
+1. **Tür dönüştürme kurallarını zorla** özelliğini **`/Zc:rvalueCast`** veya **`/Zc:rvalueCast-`** olarak ayarlayın. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)

@@ -2,12 +2,12 @@
 title: ARM64 özel durum işleme
 description: ARM64 üzerinde Windows tarafından kullanılan özel durum işleme kurallarını ve verileri açıklar.
 ms.date: 11/19/2018
-ms.openlocfilehash: 1ed147a27cfeb545e2a5fe265df8113a5befac73
-ms.sourcegitcommit: 170f5de63b0fec8e38c252b6afdc08343f4243a6
+ms.openlocfilehash: 2304c04c5e9be31299e30bb48771f7c9777d1cd5
+ms.sourcegitcommit: b9aaaebe6e7dc5a18fe26f73cc7cf5fce09262c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72276838"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77504488"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -23,7 +23,7 @@ Windows ARM64 on, zaman uyumsuz donanım tarafından oluşturulan özel durumlar
 
    - Kodun çözümlenmesi karmaşıktır; Derleyici yalnızca unwinder 'in çözebildiği yönergeler oluşturmak için dikkatli olmalıdır.
 
-   - Geriye doğru izleme geri sarma kodlarının kullanımı ile tam olarak açıklanmıyorsa, bazı durumlarda yönerge kod çözmede geri dönemelidir. Bu, genel karmaşıklığı artırır ve ideal olarak kaçınılmaz.
+   - Geriye doğru izleme geri sarma kodlarının kullanımı ile tam olarak açıklanmıyorsa, bazı durumlarda yönerge kod çözmede geri dönemelidir. Bu, genel karmaşıklığı artırır ve ideal olarak kaçınılmalıdır.
 
 1. Orta-giriş ve orta/bitiş sürümünde geriye doğru izlemeyi destekler.
 
@@ -39,7 +39,7 @@ Windows ARM64 on, zaman uyumsuz donanım tarafından oluşturulan özel durumlar
 
 Bu varsayımlar özel durum işleme açıklamasında yapılır:
 
-1. Prologs ve epııd 'ler diğerini yansıtmaya eğilimlidir. Bu ortak nitelik avantajlarından yararlanarak, geriye doğru izlemeyi anlatmak için gereken meta verilerin boyutu büyük ölçüde azaltılabilir. İşlevin gövdesinde, giriş işlemlerinin geri alınmadığına veya bitiş işlemlerinin ileri bir şekilde yapıldığından bağımsız değildir. Her ikisi de özdeş sonuçlar üretmelidir.
+1. Prologs ve epıte 'ler birbirini yansıtmaya eğilimlidir. Bu ortak nitelik avantajlarından yararlanarak, geriye doğru izlemeyi anlatmak için gereken meta verilerin boyutu büyük ölçüde azaltılabilir. İşlevin gövdesinde, giriş işlemlerinin geri alınmadığına veya bitiş işlemlerinin ileri bir şekilde yapıldığından bağımsız değildir. Her ikisi de özdeş sonuçlar üretmelidir.
 
 1. İşlevler görece küçük olacak şekilde tamamen eğilimlidir. Alan için birkaç iyileştirme, verilerin en verimli şekilde paketlenmesi için bu olguyu kullanır.
 
@@ -53,7 +53,7 @@ Bu varsayımlar özel durum işleme açıklamasında yapılır:
 
 ## <a name="arm64-stack-frame-layout"></a>ARM64 Stack çerçeve düzeni
 
-![yığın çerçeve düzeni](media/arm64-exception-handling-stack-frame.png "yığın çerçeve düzeni")
+![yığın çerçevesi düzeni](media/arm64-exception-handling-stack-frame.png "yığın çerçevesi düzeni")
 
 Çerçeve zincirleme işlevleri için, fp ve LR çifti, iyileştirme konularına bağlı olarak yerel değişken alanındaki herhangi bir konuma kaydedilebilir. Amaç, çerçeve işaretçisi (x29) veya yığın işaretçisi (SP) temelinde tek bir yönerge tarafından erişilebilecek yerellerin sayısını en üst düzeye çıkarmaktır. Ancak, `alloca` işlevleri için zincirleme olması gerekir ve x29 yığının alt kısmına işaret etmelidir. Daha iyi yazmaç-çift adresleme modu kapsamına izin vermek için, kalıcı kayıt kaydetme alanlarına yerel alan yığınının en üstünde konumlandırılmış. Aşağıda, en verimli giriş dizilerinin birkaçını gösteren örnekler verilmiştir. Netlik ve daha iyi önbellek konumu için, tüm kurallı progünlüklerde çağrılan kayıtlı yazmaçların depolanması sırası "büyümekte" sırada. Aşağıdaki `#framesz` tüm yığının boyutunu temsil eder (alloca alanı hariç). `#localsz` ve `#outsz`, sırasıyla yerel alan boyutunu (\<x29, LR > çiftinin kaydetme alanı dahil) ve giden parametre boyutunu gösterir.
 
@@ -336,7 +336,7 @@ Prologs ve epıtalar işlevleri aşağıda açıklanan kurallı formu izleyen i�
 
 Paketlenmiş geriye doğru izleme verileriyle bir. pdata kaydının biçimi şöyle görünür:
 
-paketlenmiş geriye doğru izleme verileri(media/arm64-exception-handling-packed-unwind-data.png "içeren") ![.]pData kaydı.
+![paketlenmiş geriye doğru izleme verileriyle. pdata kaydı](media/arm64-exception-handling-packed-unwind-data.png "paketlenmiş geriye doğru izleme verileriyle. pdata kaydı")
 
 Alanlar aşağıdaki gibidir:
 
