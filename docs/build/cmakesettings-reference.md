@@ -4,12 +4,12 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: fb7dc81648ae301962b952b0440d8a24b397c0d8
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 542a469393d3655418f69e5d51d59adfa824ad15
+ms.sourcegitcommit: 9a63e9b36d5e7fb13eab15c2c35bedad4fb03ade
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518211"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77600040"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings. JSON şema başvurusu
 
@@ -31,7 +31,7 @@ IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğ
 
 Bir `configuration` şu özelliklere sahiptir:
 
-- `addressSDanitizerEnabled`: `true`, programı adres Temizleme (Windows üzerinde deneysel) ile derler. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
+- `addressSanitizerEnabled`: `true`, programı adres Temizleme (Windows üzerinde deneysel) ile derler. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
 - `addressSanitizerRuntimeFlags`: ASAN_OPTIONS ortam değişkeni aracılığıyla adres Temizleme işlevine geçilen çalışma zamanı bayrakları. Biçim: FLAG1 = değer: flag2 = değer2.
 - `buildCommandArgs`: CMake sonrasında--Build--. geçirilen yerel derleme anahtarlarını belirtir. Örneğin, Dokja Oluşturucu kullanıldığında-v ' d e geçiş, komut satırlarını çıktı olarak zorlar. Dokja komutları hakkında daha fazla bilgi için bkz. [dokja komut satırı bağımsız değişkenleri](#ninja) .
 - `buildRoot`: CMake 'in seçili Oluşturucu için derleme betikleri oluşturduğu dizini belirtir.  **-DCMAKE_BINARY_DIR** anahtarına eşlenir ve *cmakecache. txt* ' in nerede oluşturulacağını belirtir. Klasör yoksa, oluşturulur. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`içerir.
@@ -44,7 +44,7 @@ Bir `configuration` şu özelliklere sahiptir:
 - `configurationType`: seçili Oluşturucu için derleme türü yapılandırmasını belirtir. Aşağıdakilerden biri olabilir:
 
   - Hata ayıklama
-  - Sürüm
+  - Yayınla
   - MinSizeRel
   - Relwithdeınfo
   
