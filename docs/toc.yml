@@ -2455,7 +2455,7 @@
 - name: Linux geliştirme
   href: linux/
 - name: Platformlar arası mobil geliştirme
-  href: /visualstudio/cross-platform/visual-cpp-for-cross-platform-mobile-development
+  href: cross-platform/
 - name: C++/CLI ile .NET geliştirme
   expanded: false
   items:

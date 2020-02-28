@@ -1,0 +1,36 @@
+- name: C++ ile platformlar arası mobil geliştirme
+  items:
+    - name: C++ ile platformlar arası mobil geliştirme
+      href: visual-cpp-for-cross-platform-mobile-development.md
+    - name: C++ ile platformlar arası mobil geliştirmeyi yükleme
+      items:
+        - name: C++ ile platformlar arası mobil geliştirmeyi yükleme
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
+        - name: iOS kullanarak derlemeye yönelik araçları yükleme ve yapılandırma
+          href: install-and-configure-tools-to-build-using-ios.md
+    - name: Android Yerel Etkinlik Uygulaması oluşturma
+      href: create-an-android-native-activity-app.md
+    - name: Android ve iOS Üzerinde OpenGL ES uygulaması oluşturma
+      href: build-an-opengl-es-application-on-android-and-ios.md
+    - name: Xcode projesini içeri aktarma
+      href: import-an-xcode-project.md
+    - name: Xcode ve Visual Studio arasındaki eşitleme değişiklikleri
+      href: sync-changes-between-xcode-and-visual-studio.md
+    - name: Platformlar arası mobil geliştirme örnekleri
+      href: cross-platform-mobile-development-examples.md
+    - name: C++ platformlar arası özellik sayfası başvurusu
+      items:
+        - name: C++ platformlar arası özellik sayfası başvurusu
+          href: cross-platform-prop-pages.md
+        - name: Genel Proje Özellikleri (Android C++)
+          href: general-android-prop-page.md
+        - name: Android Hata Ayıklayıcıyı Özellikleri
+          href: android-debugger-prop-page.md
+        - name: Clang Projesi Özellikleri (Android C++)
+          href: clang-android-prop-page.md
+        - name: Genel Proje Özellikleri (Android C++ Derleme Görevleri Dosyası)
+          href: general-makefile-android-prop-page.md
+        - name: Clang Bağlayıcısı Özellikleri (Android C++)
+          href: clanglink-prop-page.md
+        - name: NMake Özellikleri (Android C++)
+          href: nmake-android-prop-page.md
