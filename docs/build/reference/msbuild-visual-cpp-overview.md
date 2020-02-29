@@ -1,104 +1,143 @@
 ---
-title: Visual Studio'da MSBuild iç c++ projeleri
-ms.date: 05/16/2019
+title: Visual Studio 'da C++ projeler için MSBuild iç işlevleri
+ms.date: 02/26/2020
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-ms.openlocfilehash: b3348320a1468fea03f39e43cc847f1085f3d319
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 010fa244ed77ea782fa76be959c58ff1e1b254a9
+ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837225"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78166725"
 ---
 # <a name="msbuild-internals-for-c-projects"></a>C++ projeleri için MSBuild iç işlevleri
 
-IDE'de proje özelliklerini ayarlayın ve projeyi kaydettiğinizde, Visual Studio Proje ayarlarını proje dosyanıza yazar. Proje dosyası projenize özgü ayarları içerir, ancak projenizi oluşturmak için gereken tüm ayarları içermiyor. Proje dosyasını içeren `Import` içeren ek bir ağ öğelerini *destek dosyaları.* Destek dosyaları geri kalan özellikleri, hedefleri ve projeyi oluşturmak için gerekli ayarları içerir.
+IDE 'deki proje özelliklerini ayarlayıp projeyi kaydettiğinizde, Visual Studio proje ayarlarını proje dosyanıza yazar. Proje dosyası, projenize özgü olan ayarları içerir. Ancak, projenizi derlemek için gereken tüm ayarları içermez. Proje dosyası, ek *destek dosyalarının* ağını içeren `Import` öğeleri içerir. Destek dosyaları, projeyi derlemek için gereken kalan özellikleri, hedefleri ve ayarları içerir.
 
-Çoğu hedef ve Destek dosyalarını özellikler yalnızca yapı sistemini uygulamak için mevcut. Aşağıdaki bölümde, bazı yararlı hedefler ve MSBuild komut satırında belirtebileceğiniz özellikler açıklanmaktadır. Daha fazla hedef ve özellik keşfetmek için destek dosyası dizinlerindeki dosyaları inceleyin.
+Destek dosyalarındaki birçok hedef ve özellik yalnızca derleme sistemini uygulamak için mevcuttur. Bu makalede, MSBuild komut satırında belirtebileceğiniz yararlı hedefler ve özellikler açıklanmaktadır. Daha fazla hedef ve özellik bulmayı sağlamak için destek dosya dizinlerindeki dosyaları keşfetme.
 
-## <a name="support-file-directories"></a>Destek dosyası dizinleri
+## <a name="support-file-directories"></a>Dosya dizinlerini destekleme
 
-Varsayılan olarak birincil Visual Studio destek dosyaları aşağıdaki dizinlerde bulunur. Microsoft Visual Studio dizinlerde MSBuild altındaki dizinleri Visual Studio 2015 ve önceki sürümleri tarafından kullanılan Visual Studio 2017 ve sonraki sürümler tarafından kullanılabilir.
+Varsayılan olarak, birincil Visual Studio destek dosyaları aşağıdaki dizinlerde bulunur. Bu bilgiler sürüme özgüdür.
 
-|Dizin|Açıklama|
-|---------------|-----------------|
-|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp (x86)\v4.0\\*version*\ |Birincil hedef dosyalarını (.targets) içerir ve hedefler tarafından kullanılan özellik dosyalarını (.props). Varsayılan olarak $(VCTargetsPath) makro bu dizine başvurur.|
-|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\ |Hedefleri ve özellikleri üst dizinindeki geçersiz kılma platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, içindeki hedefler tarafından kullanılan görevleri tanımlayan bir DLL de içerir.<br /><br /> *Platform* yer tutucusu, ARM, Win32 veya x64 gösterir alt.|
-|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*Sürücü*: \Program dosyaları *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ PlatformToolsets\\*araç takımı*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |Belirtilen kullanarak C++ uygulamalarını oluşturmasını sağlayan dizinleri içerir *araç takımı*.<br /><br /> *Yıl* ve *edition* yer tutucuları, Visual Studio 2017 ve sonraki sürümleri tarafından kullanılır. *Sürüm* V110 Visual Studio 2012, Visual Studio 2013 için V120 V140 Visual Studio 2015, Visual Studio 2017 v141 ve Visual Studio 2019 için v142 için yer tutucudur. *Platform* yer tutucusu, ARM, Win32 veya x64 gösterir alt. *Araç takımı* yer tutucusu v120_xp Visual Studio 2013 Araç Takımı'nı kullanarak Windows XP için oluşturmak için Visual Studio 2015 Araç Takımı'nı kullanarak Windows uygulamaları oluşturmaya yönelik örnek v140 araç kümesi alt dizinini temsil eder.<br /><br />Visual Studio 2008 veya Visual Studio 2010 uygulamaları oluşturmasını sağlayan dizinleri içeren yolu içermez *sürüm*ve *platform* yer tutucu Itanium, Win32 veya x64 temsil eden alt. *Araç takımı* yer tutucusu v90 veya v100 araç kümesi alt dizinini temsil eder.|
+### <a name="visual-studio-2019"></a>Visual Studio 2019
+
+- % VSıNSTALLDIR% MSBuild\\Microsoft\\VC\\*sürüm*\\vctargets\\
+
+  Hedefler tarafından kullanılan birincil hedef dosyaları (. targets) ve özellik dosyalarını (. props) içerir. Varsayılan olarak, $ (VCTargetsPath) makrosu bu dizine başvurur. *Sürüm* yer tutucusu Visual Studio Sürüm: V160 for visual Studio 2019, V150 for visual Studio 2017 için geçerlidir.
+
+- % VSıNSTALLDIR% MSBuild\\Microsoft\\VC\\*sürüm*\\Vctargets\\platformları\\*Platform*\\
+
+  Üst dizinindeki hedefleri ve özellikleri geçersiz kılan platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, bu dizindeki hedefler tarafından kullanılan görevleri tanımlayan bir DLL de içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder.
+
+- % VSıNSTALLDIR% MSBuild\\Microsoft\\VC\\*sürüm*\\Vctargets\\platformları\\*Platform*\\platformtoolsets\\*araç takımı*\\
+
+  Derlemeyi belirtilen C++ *araç takımını*kullanarak uygulama oluşturmak için etkinleştiren dizinleri içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder. *Araç kümesi* yer tutucusu araç kümesi alt dizinini temsil eder.
+
+### <a name="visual-studio-2017"></a>Visual Studio 2017
+
+- % VSıNSTALLDIR% Common7\\IDE\\VC\\VCTargets\\
+
+  Hedefler tarafından kullanılan birincil hedef dosyaları (. targets) ve özellik dosyalarını (. props) içerir. Varsayılan olarak, $ (VCTargetsPath) makrosu bu dizine başvurur.
+
+- % VSıNSTALLDIR% Common7\\IDE\\VC\\VCTargets\\platformları\\*platform*\\
+
+  Üst dizinindeki hedefleri ve özellikleri geçersiz kılan platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, bu dizindeki hedefler tarafından kullanılan görevleri tanımlayan bir DLL de içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder.
+
+- % VSıNSTALLDIR% Common7\\IDE\\VC\\VCTargets\\platformları\\*platform*\\PlatformToolsets\\*araç takımı*\\
+
+  Derlemeyi belirtilen C++ *araç takımını*kullanarak uygulama oluşturmak için etkinleştiren dizinleri içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder. *Araç kümesi* yer tutucusu araç kümesi alt dizinini temsil eder.
+
+### <a name="visual-studio-2015-and-earlier"></a>Visual Studio 2015 ve öncesi
+
+- *sürücü*:\\Program Files *(x86)* \\MSBuild\\Microsoft. Cpp (x86)\\v 4.0\\*Sürüm*\\
+
+  Hedefler tarafından kullanılan birincil hedef dosyaları (. targets) ve özellik dosyalarını (. props) içerir. Varsayılan olarak, $ (VCTargetsPath) makrosu bu dizine başvurur.
+
+- *sürücü*:\\Program Files *(x86)* \\MSBuild\\Microsoft. Cpp\\v 4.0\\*Sürüm*\\platformları\\*Platform*\\
+
+  Üst dizinindeki hedefleri ve özellikleri geçersiz kılan platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, bu dizindeki hedefler tarafından kullanılan görevleri tanımlayan bir DLL de içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder.
+
+- *sürücü*:\\Program Files *(x86)* \\MSBuild\\Microsoft. Cpp\\v 4.0\\*sürüm*\\platformları\\*Platform*\\platformtoolsets\\*araç takımı*\\
+
+  Derlemeyi belirtilen C++ *araç takımını*kullanarak uygulama oluşturmak için etkinleştiren dizinleri içerir. *Sürüm* yer tutucusu, visual Studio 2012 için V110, Visual Studio 2013 için v120 ve visual Studio 2015 için v140. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder. *Araç kümesi* yer tutucusu araç kümesi alt dizinini temsil eder. Örneğin, Visual Studio 2015 araç takımını kullanarak Windows uygulamaları oluşturmak için v140. Veya, Visual Studio 2013 araç takımını kullanarak Windows XP için derleme v120_xp.
+
+- *sürücü*:\\Program Files *(x86)* \\MSBuild\\Microsoft. Cpp\\v 4.0\\platformları\\*platform*\\platformtoolsets\\*araç takımı*\\
+
+  Derlemeyi, Visual Studio 2008 ya da Visual Studio 2010 uygulamaları oluşturmak için etkinleştiren yollar *sürümü*içermez. Bu sürümlerde, *Platform* yer tutucusu Itanium, Win32 veya x64 alt dizinini temsil eder. *Araç kümesi* yer tutucusu V90 veya V100 araç kümesi alt dizinini temsil eder.
 
 ## <a name="support-files"></a>Destek dosyaları
 
-Dizinlere ilişkin destek Aşağıdaki uzantılara sahip dosyaları içerir:
+Destek dosya dizinleri, bu uzantılara sahip dosyaları içerir:
 
-|Dahili numara|Açıklama|
-|---------------|-----------------|
-|.targets|İçeren `Target` hedefe göre yürütülen görevleri belirleyen XML öğeleri. Ayrıca içerebilir `PropertyGroup`, `ItemGroup`, `ItemDefinitionGroup`ve kullanıcı tanımlı `Item` görev parametrelerine dosyalar ve komut satırı seçenekleri atamak için kullanılan öğeleri.<br /><br /> Daha fazla bilgi için [hedef öğe (MSBuild)](/visualstudio/msbuild/target-element-msbuild).|
-|.props|İçeren `Property Group` ve kullanıcı tanımlı `Property` bir yapı sırasında kullanılan dosya ve parametre ayarlarını belirleyen XML öğeleri.<br /><br /> Ayrıca içerebilir `ItemDefinitionGroup` ve kullanıcı tanımlı `Item` ek ayarları belirtmek XML öğeleri. Bir öğe tanım grubu içinde tanımlanan öğeler özelliklere benzer ancak komut satırından erişilemez. Visual Studio proje dosyaları yerine özellikleri öğeleri ayarları göstermek için sık kullanın.<br /><br /> Daha fazla bilgi için [ItemGroup öğesi (MSBuild)](/visualstudio/msbuild/itemgroup-element-msbuild), 
-[Itemdefinitiongroup öğesi (MSBuild)](/visualstudio/msbuild/itemdefinitiongroup-element-msbuild), ve [öğesi öğesi (MSBuild)](/visualstudio/msbuild/item-element-msbuild).|
-|.XML|Özellik bölümleri ve özellik sayfaları ve metin kutusu ve liste kutusu denetimleri gibi IDE kullanıcı arabirimi öğelerini bildirilip XML öğelerini içerir.<br /><br /> .Xml dosyaları doğrudan IDE'yi destekler, Msbuild'i değil. Ancak IDE özelliklerinin değerleri yapı özelliklerine ve öğelerine atanır.<br /><br /> Çoğu .xml dosyası bir yerel ayara özgü alt dizinde bulunur. Örneğin, ABD İngilizce bölgesinin dosyaları $(VCTargetsPath) \1033 içinde olan\\.|
+| Dahili numara | Açıklama |
+| --------- | ----------- |
+| . targets | Hedef tarafından yürütülen görevleri belirten `Target` XML öğeleri içerir. Ayrıca, görev parametrelerine dosya ve komut satırı seçenekleri atamak için kullanılan `PropertyGroup`, `ItemGroup`, `ItemDefinitionGroup`ve Kullanıcı tanımlı `Item` öğeleri içerebilir.<br /><br /> Daha fazla bilgi için bkz. [target öğesi (MSBuild)](/visualstudio/msbuild/target-element-msbuild). |
+| . props | Bir derleme sırasında kullanılan dosya ve parametre ayarlarını belirten `Property Group` ve Kullanıcı tanımlı `Property` XML öğelerini içerir.<br /><br /> Ayrıca, ek ayarları belirten `ItemDefinitionGroup` ve Kullanıcı tanımlı `Item` XML öğeleri içerebilir. Öğe tanımı grubunda tanımlanan öğeler özelliklere benzer ancak komut satırından erişilemez. Visual Studio proje dosyaları, ayarları temsil etmek için genellikle özellikler yerine öğeleri kullanır.<br /><br /> Daha fazla bilgi için bkz. [ItemGroup öğesi (MSBuild)](/visualstudio/msbuild/itemgroup-element-msbuild), [ItemDefinitionGroup öğesi (MSBuild)](/visualstudio/msbuild/itemdefinitiongroup-element-msbuild)ve [öğe öğesi (MSBuild)](/visualstudio/msbuild/item-element-msbuild). |
+| .xml | IDE Kullanıcı arabirimi öğelerini bildiren ve başlatacak XML öğeleri içerir. Örneğin, özellik sayfaları, özellik sayfaları, TextBox denetimleri ve ListBox denetimleri.<br /><br /> . Xml dosyaları MSBuild değil doğrudan IDE 'yi destekler. Ancak IDE özelliklerinin değerleri yapı özelliklerine ve öğelerine atanır.<br /><br /> Çoğu. xml dosyası yerel ayara özgü bir alt dizinde bulunur. Örneğin, Ingilizce-US bölgesi dosyaları $ (VCTargetsPath)\\1033\\. |
 
 ## <a name="user-targets-and-properties"></a>Kullanıcı hedefleri ve özellikleri
 
-MSBuild komut satırında en etkili bir şekilde kullanmak için hangi özelliklerin ve hedeflerin kullanışlı ve uygun olduğunu öğrenmenize yardımcı olur. Çoğu özellikleri ve hedefler Visual Studio yapı sistemini uygulamaya yardımcı olur ve sonuç olarak kullanıcıyla ilgili değildir. Bu bölümde, bazı faydalı kullanıcı-özellikler ve hedefler açıklanmaktadır.
+MSBuild 'i etkin bir şekilde kullanmak için hangi özelliklerin ve hedeflerin yararlı ve alakalı olduğunu öğrenmenize yardımcı olur. Çoğu özellik ve hedef, Visual Studio derleme sisteminin uygulamaya yardımcı olur ve sonuç olarak kullanıcıyla ilgili değildir. Bu bölümde, konusunda bilinmesi gereken kullanıcı odaklı özellikler ve hedefler açıklanmaktadır.
 
-### <a name="platformtoolset-property"></a>PlatformToolset özelliği
+### <a name="platformtoolset-property"></a>Platformaraç takımı özelliği
 
-`PlatformToolset` Özelliği, yapıda kullanılan hangi MSVC araç takımı belirler. Varsayılan olarak, geçerli araç kümesi kullanılır. Bu özelliği ayarlandığında, özelliğin değerini belirli bir platform için bir proje oluşturmak için gereken özellik ve hedef dosyalarını içeren bir dizinin yolunu oluşturmak için hazır bilgi dizeleri ile birleştirilir. Bu platform araç kümesi sürümünü kullanarak oluşturmak için platform araç takımını yüklenmesi gerekir.
+`PlatformToolset` özelliği, derlemede hangi MSVC araç takımının kullanıldığını belirler. Varsayılan olarak, geçerli araç kümesi kullanılır. Bu özellik ayarlandığında, yolu oluşturmak için değeri değişmez dizeler ile birleştirilir. Bu, belirli bir platform için bir proje oluşturmak için gereken özelliği ve hedef dosyaları içeren dizindir. Platform araç takımı, bu platform araç kümesi sürümünü kullanarak derlemek için yüklenmelidir.
 
-Örneğin, `PlatformToolset` özelliğini `v140` uygulamanızı oluşturmak için Visual Studio 2015 araçları ve kitaplıklarını kullanmak için:
+Örneğin, uygulamanızı derlemek için `PlatformToolset` özelliğini `v140`, Visual Studio 2015 araçlarını ve kitaplıklarını kullanacak şekilde ayarlayın:
 
 `msbuild myProject.vcxproj /p:PlatformToolset=v140`
 
 ### <a name="preferredtoolarchitecture-property"></a>PreferredToolArchitecture özelliği
 
-`PreferredToolArchitecture` Özelliği, yapıda 32-bit veya 64 bit derleyici ve araçların kullanılıp kullanılmayacağını belirler. Bu özellik, çıkış platformu mimarisi veya yapılandırmasını etkilemez. Varsayılan olarak MSBuild x86 kullanır. Bu özellik ayarlanmamışsa araçları ve derleyici sürümü.
+`PreferredToolArchitecture` özelliği, derlemede 32-bit veya 64 bit derleyicisinin ve araçların kullanılıp kullanılmadığını belirler. Bu özellik, çıkış platformu mimarisini veya yapılandırmasını etkilemez. Varsayılan olarak, MSBuild, bu özellik ayarlanmamışsa derleyicinin x86 sürümünü ve araçlarını kullanır.
 
-Örneğin, `PreferredToolArchitecture` özelliğini `x64` uygulamanızı oluşturmak üzere 64 bit derleyici ve Araçları'nı kullanmak için:
+Örneğin, uygulamanızı derlemek için 64 bitlik derleyici ve araçları kullanmak üzere `PreferredToolArchitecture` özelliğini `x64` olarak ayarlayın:
 
 `msbuild myProject.vcxproj /p:PreferredToolArchitecture=x64`
 
 ### <a name="useenv-property"></a>UseEnv özelliği
 
-Varsayılan olarak, geçerli proje için platforma özgü ayarlar PATH, INCLUDE, LIB, LIBPATH, yapılandırma ve PLATFORM ortam değişkenlerini geçersiz kılar. Ayarlama `UseEnv` özelliğini **true** ortam değişkenlerinin geçersiz kılınmadığını güvence altına almak için.
+Varsayılan olarak, geçerli proje için platforma özgü ayarlar yolu, ıNCLUDE, LIB, LıBPATH, yapılandırma ve PLATFORM ortam değişkenlerini geçersiz kılar. Ortam değişkenlerinin geçersiz kılınmamasının güvence altına almak için `UseEnv` özelliğini **true** olarak ayarlayın.
 
 `msbuild myProject.vcxproj /p:UseEnv=true`
 
 ### <a name="targets"></a>Hedefler
 
-Hedefler Visual Studio destek dosyalarında yüzlerce vardır. Ancak, çoğu kullanıcının yok sayabileceği sistem odaklı hedefleri ' dir. Çoğu Sistem hedefleri, bir alt çizgi (_) öneki veya "" Hesapla", Hazırla ile", "Önce", "Ön" veya "Post" "Sonra" başlayan bir ada sahip.
+Visual Studio destek dosyalarında yüzlerce hedef vardır. Ancak, çoğu kullanıcının yoksayması için sistem odaklı hedeflerdir. Çoğu sistem hedefi bir alt çizgi (`_`) tarafından ön yüklenir veya "PrepareFor", "COMPUTE", "Before", "After", "Pre" veya "Post" ile başlayan bir ada sahiptir.
 
-Aşağıdaki tabloda, kullanıcıya yönelik bazı yararlı hedefler listeler.
+Aşağıdaki tabloda, çok sayıda kullanışlı Kullanıcı yönelimli hedef listelenmiştir.
 
-|Hedef|Açıklama|
-|------------|-----------------|
-|BscMake|Yürütür Microsoft gözatma bilgisi bakım Yardımcısı aracı bscmake.exe'yi.|
-|Yapı|Projeyi oluşturur.<br /><br /> Bu proje için varsayılan hedeftir.|
-|ClCompile|MSVC derleyici araç yürütür cl.exe.|
-|Temizleme|Yapı dosyalarını siler geçici ve Ara.|
-|lib|Microsoft 32-Bit Kitaplık Yöneticisi Aracı yürütür lib.exe.|
-|Bağlantı|MSVC bağlayıcı aracı yürütür link.exe.|
-|ManifestResourceCompile|Bir bildirimden kaynakların listesini ayıklar ve ardından Microsoft Windows Kaynak Derleyicisi aracı yürütür rc.exe.|
-|MIDL|Yürütür Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi.|
-|Yeniden oluşturma|Temizler ve ardından, projeyi oluşturur.|
-|ResourceCompile|Yürütür Microsoft Windows Kaynak Derleyicisi aracı RC.exe'yi.|
-|XdcMake|Yürütür XML belgelendirme aracı xdcmake.exe'yi.|
-|Xsd|XML şema tanımı aracı yürütür XSD.exe'nin. *Aşağıdaki nota bakın.*|
+| Hedef | Açıklama |
+| ------ | ----------- |
+| BscMake | , Bscmake. exe Microsoft tarayıcı bilgi Bakımı yardımcı programı aracını yürütür. |
+| Oluşturma | Projeyi oluşturur.<br /><br /> Bu hedef, bir proje için varsayılandır. |
+| ClCompile | , CL. exe MSVC derleyici aracını yürütür. |
+| Temizlenemedi | Geçici ve ara derleme dosyalarını siler. |
+| LIB | Microsoft 32-bit kitaplığı yönetici aracı LIB. exe ' yi yürütür. |
+| Bağlantı | , LINK. exe MSVC bağlayıcı aracını yürütür. |
+| ManifestResourceCompile | Bir bildirimden kaynak listesini ayıklar ve sonra Microsoft Windows Kaynak derleyicisi aracı RC. exe ' yi yürütür. |
+| MIDL | Microsoft Arabirim Tanımlama Dili (MıDL) derleyici aracını, MIDL. exe ' yi yürütür. |
+| Derlemesine | Projenizi temizler ve sonra oluşturur. |
+| ResourceCompile | Microsoft Windows Kaynak derleyicisi aracı RC. exe ' yi yürütür. |
+| XdcMake | XML belge aracı xdcmake. exe ' yi yürütür. |
+| Yapamadı | XML şema tanımı aracını, xsd. exe ' yi yürütür. *Aşağıdaki nota bakın.* |
 
 > [!NOTE]
-> Visual Studio 2017 ve sonraki sürümlerinde, C++ proje desteği **xsd** dosyaları kullanım dışı bırakılmıştır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** ekleyerek **CppCodeProvider.dll** GAC için el ile.
+> Visual Studio 2017 ve üzeri sürümlerde, C++ **XSD** dosyaları için proje desteği kullanım dışıdır. GAC 'ye el ile **Cppcodeprovider. dll dosyasını** ekleyerek **Microsoft. VisualC. cppcodeprovider** 'ı kullanmaya devam edebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild Görev Başvurusu](/visualstudio/msbuild/msbuild-task-reference)<br/>
-[BscMake Görevi](/visualstudio/msbuild/bscmake-task)<br/>
-[CL Görevi](/visualstudio/msbuild/cl-task)<br/>
-[CPPClean Görevi](/visualstudio/msbuild/cppclean-task)<br/>
-[LIB Görevi](/visualstudio/msbuild/lib-task)<br/>
-[Link Görevi](/visualstudio/msbuild/link-task)<br/>
-[MIDL Görevi](/visualstudio/msbuild/midl-task)<br/>
-[MT Görevi](/visualstudio/msbuild/mt-task)<br/>
-[RC Görevi](/visualstudio/msbuild/rc-task)<br/>
-[SetEnv Görevi](/visualstudio/msbuild/setenv-task)<br/>
-[VCMessage Görevi](/visualstudio/msbuild/vcmessage-task)<br/>
-[XDCMake Görevi](/visualstudio/msbuild/xdcmake-task)<br/>
+[MSBuild görev başvurusu](/visualstudio/msbuild/msbuild-task-reference)\
+[BSCMAKE görevi](/visualstudio/msbuild/bscmake-task)\
+[CL görevi](/visualstudio/msbuild/cl-task)\
+[CPPClean görevi](/visualstudio/msbuild/cppclean-task)\
+[LIB görevi](/visualstudio/msbuild/lib-task)\
+[Bağlantı görevi](/visualstudio/msbuild/link-task)\
+[MIDL görev](/visualstudio/msbuild/midl-task)\
+[MT görevi](/visualstudio/msbuild/mt-task)\
+[RC görevi](/visualstudio/msbuild/rc-task)\
+[SetEnv görevi](/visualstudio/msbuild/setenv-task)\
+[VCMessage görevi](/visualstudio/msbuild/vcmessage-task)\
+[XDCMake Görevi](/visualstudio/msbuild/xdcmake-task)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - float_control pragma
 - pragmas, float_control
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-ms.openlocfilehash: 0c9caea5ba35a55a53f7b9340cf9bfd2cce80561
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 5f907bfeb3f92f788fe951854ddc32accc83ae03
+ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74305506"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78166790"
 ---
 # <a name="float_control-pragma"></a>float_control pragması
 
@@ -30,10 +30,10 @@ Bir işlev için kayan nokta davranışını belirtir.
 ## <a name="options"></a>Seçenekler
 
 **kesin**, ** | ** **kapalı**, **Gönder**\
-Kesin kayan nokta semantiğinin etkinleştirilip etkinleştirilmeyeceğini (**Açık**) veya devre dışı bırakmayı (**kapalı**) belirtir. Bu seçeneğin benzer şekilde adlandırılmış **/FP: kesin** derleyici seçeneğinden farklı olduğu hakkında bilgi Için, açıklamalar bölümüne bakın. İsteğe bağlı **gönderme** belirteci, derleyiciye, iç derleyici yığınında **float_control** için geçerli ayarı itmasını söyler.
+Kesin kayan nokta semantiğinin etkinleştirilip etkinleştirilmeyeceğini (**Açık**) veya devre dışı bırakmayı (**kapalı**) belirtir. **/FP: kesin** derleyici seçeneğiyle ilgili farklılıklar hakkında daha fazla bilgi Için, açıklamalar bölümüne bakın. İsteğe bağlı **gönderme** belirteci, iç derleyici yığınında **float_control** için geçerli ayarı gönderir.
 
 **dışında**, ** | ** **off**,\ **Gönder**
-Kayan nokta özel durum semantiğini etkinleştirip etkinleştirmeyeceğinizi (**Açık**) veya devre dışı bırakmayı (**kapalı**) belirtir. Bu seçeneğin benzer şekilde adlandırılmış **/FP: except** derleyici seçeneğinden farklı olduğu hakkında bilgi Için, açıklamalar bölümüne bakın. İsteğe bağlı **gönderme** belirteci, derleyiciye, iç derleyici yığınında **float_control** için geçerli ayarı itmasını söyler.
+Kayan nokta özel durum semantiğini etkinleştirip etkinleştirmeyeceğinizi (**Açık**) veya devre dışı bırakmayı (**kapalı**) belirtir. İsteğe bağlı **gönderme** belirteci, iç derleyici yığınında **float_control** için geçerli ayarı gönderir.
 
 **except** yalnızca, **kesin** olarak **Açık**olarak ayarlandığı zaman **Açık** olarak ayarlanabilir.
 
@@ -45,17 +45,15 @@ Geçerli **float_control** ayarını iç derleyici yığınına iter.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kesin** ve **hariç** seçenekler aynı ada sahip [/FP](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçenekleriyle tam olarak aynı davranışa sahip değildir. **Float_control** pragma yalnızca kayan nokta davranışının bir parçasını yönetir. **/FP** derleyici seçeneklerini yeniden oluşturmak için [fp_contract](../preprocessor/fp-contract.md) ve pragmalar [fenv_access](../preprocessor/fenv-access.md) ile birleştirilmelidir. Aşağıdaki tabloda her derleyici seçeneği için eşdeğer pragma ayarları gösterilmektedir:
+**Float_control** pragma, [/FP](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ile aynı davranışa sahip değil. **Float_control** pragma yalnızca kayan nokta davranışının bir parçasını yönetir. **/FP** derleyici seçeneklerini yeniden oluşturmak için [fp_contract](../preprocessor/fp-contract.md) ve pragmalar [fenv_access](../preprocessor/fenv-access.md) ile birleştirilmelidir. Aşağıdaki tabloda her derleyici seçeneği için eşdeğer pragma ayarları gösterilmektedir:
 
 | | float_control (kesin, \*) | float_control (\*hariç) | fp_contract (\*) | fenv_access (\*) |
 |-|-|-|-|-|
-| /FP: Strict             | açık  | açık  | kapalı | açık  |
-| /FP: Strict/FP: except- | açık  | kapalı | kapalı | açık  |
-| /FP: kesin            | açık  | kapalı | açık  | kapalı |
-| /FP: kesin/FP: except | açık  | açık  | açık  | kapalı |
-| /FP: Fast               | kapalı | kapalı | açık  | kapalı |
+| /FP: Strict             | on  | on  | kapalı | on  |
+| /FP: kesin            | on  | kapalı | on  | kapalı |
+| /FP: Fast               | kapalı | kapalı | on  | kapalı |
 
-Diğer bir deyişle, **/FP: Fast**, **/FP: kesinlikli**, **/FP: Strict**ve **/FP:** komut satırı seçenekleri hariç olmak üzere çeşitli pragmaların birlikte kullanılması gerekir.
+Diğer bir deyişle, **/FP: Fast**, **/FP: kesinlikli**ve **/FP: Strict** komut satırı seçeneklerine benzemek için çeşitli pragmalar kullanmanız gerekebilir.
 
 **Float_control** ve kayan nokta pragmalarını **fenv_access** birlikte kullanma gibi kısıtlamalar vardır:
 
@@ -67,7 +65,7 @@ Diğer bir deyişle, **/FP: Fast**, **/FP: kesinlikli**, **/FP: Strict**ve **/FP
 
 - **Fenv_access** etkinleştirildiğinde **kesin** devre dışı bırakmak için **float_control** kullanamazsınız.
 
-Bu kısıtlamalar, bazı kayan nokta pragmaların sırasının önemli olduğu anlamına gelir. **Float_control** ve ilgili pragmaları kullanarak hızlı bir modelden katı bir modele gitmek için aşağıdaki kodu kullanın:
+Bu kısıtlamalar, bazı kayan nokta pragmaların sırasının önemli olduğu anlamına gelir. Pragmaları kullanarak hızlı bir modelden katı bir modele gitmek için aşağıdaki kodu kullanın:
 
 ```cpp
 #pragma float_control(precise, on)  // enable precise semantics
@@ -82,7 +80,7 @@ Bu kısıtlamalar, bazı kayan nokta pragmaların sırasının önemli olduğu a
 #pragma float_control(except, off)  // disable exception semantics
 #pragma fenv_access(off)            // disable environment sensitivity
 #pragma float_control(precise, off) // disable precise semantics
-#pragma fp_contract(on)             // ensable contractions
+#pragma fp_contract(on)             // enable contractions
 ```
 
 Hiçbir seçenek belirtilmediyse **float_control** hiçbir etkisi olmaz.
