@@ -1,15 +1,15 @@
 ---
 title: x86 iç bilgi listesi
-ms.date: 04/18/2019
+ms.date: 02/28/2020
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, x86
-ms.openlocfilehash: 8e4c01bed2267c5de34eb49e1731888d033f7684
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+ms.openlocfilehash: 00d10668b791303d7f5f27cacdb1ab8021470ae3
+ms.sourcegitcommit: ab8d7b47b63b62892a1256a09b1324a9a136eccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163502"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215483"
 ---
 # <a name="x86-intrinsics-list"></a>x86 iç bilgi listesi
 
@@ -33,7 +33,7 @@ Tek tek yapı içleri hakkında daha fazla bilgi için, hedeflediğiniz işlemci
 
 Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmektedir. Technology sütununda gerekli yönerge kümesi desteği listelenmektedir. Çalışma zamanında yönerge kümesi desteğini belirleme [__cpuid](cpuid-cpuidex.md) iç öğesini kullanın. İki giriş bir satırdaysa, aynı iç öğe için farklı giriş noktalarını temsil ederler. [1], iç, yalnızca AMD işlemcilerde kullanılabilir olduğunu gösterir. [2], iç, yalnızca Intel işlemcilerde kullanılabilir olduğunu gösterir. [3] prototipi bir makro olduğunu gösterir. İşlev prototipi için gereken üst bilgi, üstbilgi sütununda listelenir. Intrin. h üst bilgisi, basitlik için hem ımmintrin. h hem de ammintrin. h içerir.
 
-|Yapı içi adı|Teknoloji|Üstbilgi|İşlev prototipi|
+|Yapı içi adı|Teknoloji|Üst bilgi|İşlev prototipi|
 |--------------------|----------------|------------|------------------------|
 |_addcarry_u16||Intrin. h|işaretsiz char _addcarry_u16 (işaretsiz char, işaretsiz kısa, işaretsiz kısa, işaretsiz kısa \*)|
 |[_addcarry_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_addcarry_u32)||Intrin. h|işaretsiz char _addcarry_u32 (işaretsiz char, işaretsiz int, işaretsiz int, işaretsiz int \*)|
@@ -43,26 +43,26 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[__addfsdword](addfsbyte-addfsword-addfsdword.md)||Intrin. h|void __addfsdword (işaretsiz Long, unsigned long)|
 |[__addfsword](addfsbyte-addfsword-addfsdword.md)||Intrin. h|void __addfsword (işaretsiz Long, işaretsiz Short)|
 |[_AddressOfReturnAddress](addressofreturnaddress.md)||Intrin. h|void \* _AddressOfReturnAddress (void)|
-|[_andn_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_andn_u32)|BMı [1]|ammintrin. h|işaretsiz int _andn_u32 (işaretsiz int, işaretsiz int)|
+|[_andn_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_andn_u32)|BMI [1]|ammintrin. h|işaretsiz int _andn_u32 (işaretsiz int, işaretsiz int)|
 |[_bextr_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_bextr_u32)|BMI|ammintrin. h, immintrin. h|işaretsiz int _bextr_u32 (işaretsiz int, işaretsiz int, işaretsiz int)|
-|_bextri_u32|ABA [1]|ammintrin. h|işaretsiz int _bextri_u32 (işaretsiz int, işaretsiz int)|
+|_bextri_u32|ABM [1]|ammintrin. h|işaretsiz int _bextri_u32 (işaretsiz int, işaretsiz int)|
 |[_BitScanForward](bitscanforward-bitscanforward64.md)||Intrin. h|işaretsiz karakter _BitScanForward (işaretsiz Long\*, işaretsiz Long)|
 |[_BitScanReverse](bitscanreverse-bitscanreverse64.md)||Intrin. h|işaretsiz karakter _BitScanReverse (işaretsiz Long\*, işaretsiz Long)|
 |[_bittest](bittest-bittest64.md)||Intrin. h|işaretsiz char _bittest (uzun const \*, Long)|
 |[_bittestandcomplement](bittestandcomplement-bittestandcomplement64.md)||Intrin. h|işaretsiz karakter _bittestandcomplement (uzun \*, uzun)|
 |[_bittestandreset](bittestandreset-bittestandreset64.md)||Intrin. h|işaretsiz karakter _bittestandreset (uzun \*, uzun)|
 |[_bittestandset](bittestandset-bittestandset64.md)||Intrin. h|işaretsiz karakter _bittestandset (uzun \*, uzun)|
-|_blcfill_u32|ABA [1]|ammintrin. h|işaretsiz int _blcfill_u32 (işaretsiz int)|
-|_blci_u32|ABA [1]|ammintrin. h|işaretsiz int _blci_u32 (işaretsiz int)|
-|_blcic_u32|ABA [1]|ammintrin. h|işaretsiz int _blcic_u32 (işaretsiz int)|
-|_blcmsk_u32|ABA [1]|ammintrin. h|işaretsiz int _blcmsk_u32 (işaretsiz int)|
-|_blcs_u32|ABA [1]|ammintrin. h|işaretsiz int _blcs_u32 (işaretsiz int)|
-|_blsfill_u32|ABA [1]|ammintrin. h|işaretsiz int _blsfill_u32 (işaretsiz int)|
+|_blcfill_u32|ABM [1]|ammintrin. h|işaretsiz int _blcfill_u32 (işaretsiz int)|
+|_blci_u32|ABM [1]|ammintrin. h|işaretsiz int _blci_u32 (işaretsiz int)|
+|_blcic_u32|ABM [1]|ammintrin. h|işaretsiz int _blcic_u32 (işaretsiz int)|
+|_blcmsk_u32|ABM [1]|ammintrin. h|işaretsiz int _blcmsk_u32 (işaretsiz int)|
+|_blcs_u32|ABM [1]|ammintrin. h|işaretsiz int _blcs_u32 (işaretsiz int)|
+|_blsfill_u32|ABM [1]|ammintrin. h|işaretsiz int _blsfill_u32 (işaretsiz int)|
 |[_blsi_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_blsi_u32)|BMI|ammintrin. h, immintrin. h|işaretsiz int _blsi_u32 (işaretsiz int)|
-|_blsic_u32|ABA [1]|ammintrin. h|işaretsiz int _blsic_u32 (işaretsiz int)|
+|_blsic_u32|ABM [1]|ammintrin. h|işaretsiz int _blsic_u32 (işaretsiz int)|
 |[_blsmsk_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_blsmsk_u32)|BMI|ammintrin. h, immintrin. h|işaretsiz int _blsmsk_u32 (işaretsiz int)|
 |[_blsr_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_blsr_u32)|BMI|ammintrin. h, immintrin. h|işaretsiz int _blsr_u32 (işaretsiz int)|
-|[_bzhi_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_bzhi_u32)|BMı [2]|ımintrin. h|işaretsiz int _bzhi_u32 (işaretsiz int, işaretsiz int)|
+|[_bzhi_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_bzhi_u32)|BMI [2]|ımintrin. h|işaretsiz int _bzhi_u32 (işaretsiz int, işaretsiz int)|
 |_clac|SMAP|Intrin. h|void _clac (void)|
 |[__cpuid](cpuid-cpuidex.md)||Intrin. h|void __cpuid (int \*, int)|
 |[__cpuidex](cpuid-cpuidex.md)||Intrin. h|void __cpuidex (int \*, int, int)|
@@ -148,9 +148,9 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |__llwpcb|LWP [1]|ammintrin. h|void __llwpcb (void \*)|
 |__lwpins32|LWP [1]|ammintrin. h|işaretsiz char __lwpins32 (işaretsiz int, işaretsiz int, işaretsiz int)|
 |__lwpval32|LWP [1]|ammintrin. h|void __lwpval32 (işaretsiz int, işaretsiz int, işaretsiz int)|
-|[__lzcnt](lzcnt16-lzcnt-lzcnt64.md)|LZSAYISI|Intrin. h|işaretsiz int __lzcnt (işaretsiz int)|
+|[__lzcnt](lzcnt16-lzcnt-lzcnt64.md)|LZCNT|Intrin. h|işaretsiz int __lzcnt (işaretsiz int)|
 |[_lzcnt_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_lzcnt_u32)|BMI|ammintrin. h, immintrin. h|işaretsiz int _lzcnt_u32 (işaretsiz int)|
-|[__lzcnt16](lzcnt16-lzcnt-lzcnt64.md)|LZSAYISI|Intrin. h|işaretsiz kısa __lzcnt16 (işaretsiz kısa)|
+|[__lzcnt16](lzcnt16-lzcnt-lzcnt64.md)|LZCNT|Intrin. h|işaretsiz kısa __lzcnt16 (işaretsiz kısa)|
 |[_m_empty](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_m_empty)|MMX|Intrin. h|void _m_empty (void)|
 |_m_femms|Şimdi 3D|Intrin. h|void _m_femms (void)|
 |_m_from_float|Şimdi 3D|Intrin. h|__m64 _m_from_float (float)|
@@ -259,6 +259,9 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_add_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_epi64)|SSE2|Intrin. h|__m128i _mm_add_epi64 (\__m128i, \__m128i)|
 |[_mm_add_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_epi8)|SSE2|Intrin. h|__m128i _mm_add_epi8 (\__m128i, \__m128i)|
 |[_mm_add_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_pd)|SSE2|Intrin. h|__m128d _mm_add_pd (\__m128d, \__m128d)|
+|[_mm_add_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_pi8)|MMX|mmintrin. h|__m64 _mm_add_pi8 (\__m64, \__m64) [3]|
+|[_mm_add_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_pi16)|MMX|mmintrin. h|__m64 _mm_add_pi16 (\__m64, \__m64) [3]|
+|[_mm_add_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_pi32)|MMX|mmintrin. h|__m64 _mm_add_pi32 (\__m64, \__m64) [3]|
 |[_mm_add_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_ps)|SSE|Intrin. h|__m128 _mm_add_ps (\__m128, \__m128)|
 |[_mm_add_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_sd)|SSE2|Intrin. h|__m128d _mm_add_sd (\__m128d, \__m128d)|
 |[_mm_add_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_add_si64)|SSE2|Intrin. h|__m64 _mm_add_si64 (\__m64, \__m64)|
@@ -267,21 +270,27 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_adds_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_epi8)|SSE2|Intrin. h|__m128i _mm_adds_epi8 (\__m128i, \__m128i)|
 |[_mm_adds_epu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_epu16)|SSE2|Intrin. h|__m128i _mm_adds_epu16 (\__m128i, \__m128i)|
 |[_mm_adds_epu8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_epu8)|SSE2|Intrin. h|__m128i _mm_adds_epu8 (\__m128i, \__m128i)|
+|[_mm_adds_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_pi8)|MMX|mmintrin. h|__m64 _mm_adds_pi8 (\__m64, \__m64) [3]|
+|[_mm_adds_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_pi16)|MMX|mmintrin. h|__m64 _mm_adds_pi16 (\__m64, \__m64) [3]|
+|[_mm_adds_pu8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_pu8)|MMX|mmintrin. h|__m64 _mm_adds_pu8 (\__m64, \__m64) [3]|
+|[_mm_adds_pu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_adds_pu16)|MMX|mmintrin. h|__m64 _mm_adds_pu16 (\__m64, \__m64) [3]|
 |[_mm_addsub_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_addsub_pd)|SSE3|Intrin. h|__m128d _mm_addsub_pd (\__m128d, \__m128d)|
 |[_mm_addsub_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_addsub_ps)|SSE3|Intrin. h|__m128 _mm_addsub_ps (\__m128, \__m128)|
-|[_mm_aesdec_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesdec_si128)|AESNı [2]|ımintrin. h|__m128i _mm_aesdec_si128 (\__m128i, \__m128i)|
-|[_mm_aesdeclast_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesdeclast_si128)|AESNı [2]|ımintrin. h|__m128i _mm_aesdeclast_si128 (\__m128i, \__m128i)|
-|[_mm_aesenc_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesenc_si128)|AESNı [2]|ımintrin. h|__m128i _mm_aesenc_si128 (\__m128i, \__m128i)|
-|[_mm_aesenclast_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesenclast_si128)|AESNı [2]|ımintrin. h|__m128i _mm_aesenclast_si128 (\__m128i, \__m128i)|
-|[_mm_aesimc_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesimc_si128)|AESNı [2]|ımintrin. h|__m128i _mm_aesimc_si128 (\__m128i)|
-|[_mm_aeskeygenassist_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aeskeygenassist_si128)|AESNı [2]|ımintrin. h|__m128i _mm_aeskeygenassist_si128 (\__m128i, const int)|
+|[_mm_aesdec_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesdec_si128)|AESNI [2]|ımintrin. h|__m128i _mm_aesdec_si128 (\__m128i, \__m128i)|
+|[_mm_aesdeclast_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesdeclast_si128)|AESNI [2]|ımintrin. h|__m128i _mm_aesdeclast_si128 (\__m128i, \__m128i)|
+|[_mm_aesenc_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesenc_si128)|AESNI [2]|ımintrin. h|__m128i _mm_aesenc_si128 (\__m128i, \__m128i)|
+|[_mm_aesenclast_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesenclast_si128)|AESNI [2]|ımintrin. h|__m128i _mm_aesenclast_si128 (\__m128i, \__m128i)|
+|[_mm_aesimc_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aesimc_si128)|AESNI [2]|ımintrin. h|__m128i _mm_aesimc_si128 (\__m128i)|
+|[_mm_aeskeygenassist_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_aeskeygenassist_si128)|AESNI [2]|ımintrin. h|__m128i _mm_aeskeygenassist_si128 (\__m128i, const int)|
 |[_mm_alignr_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_alignr_epi8)|SSSE3|Intrin. h|__m128i _mm_alignr_epi8 (\__m128i, \__m128i, int)|
 |[_mm_alignr_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_alignr_pi8)|SSSE3|Intrin. h|__m64 _mm_alignr_pi8 (\__m64, \__m64, int)|
 |[_mm_and_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_and_pd)|SSE2|Intrin. h|__m128d _mm_and_pd (\__m128d, \__m128d)|
 |[_mm_and_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_and_ps)|SSE|Intrin. h|__m128 _mm_and_ps (\__m128, \__m128)|
+|[_mm_and_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_and_si64)|MMX|mmintrin. h|__m64 _mm_and_si64 (\__m64, \__m64) [3]|
 |[_mm_and_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_and_si128)|SSE2|Intrin. h|__m128i _mm_and_si128 (\__m128i, \__m128i)|
 |[_mm_andnot_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_andnot_pd)|SSE2|Intrin. h|__m128d _mm_andnot_pd (\__m128d, \__m128d)|
 |[_mm_andnot_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_andnot_ps)|SSE|Intrin. h|__m128 _mm_andnot_ps (\__m128, \__m128)|
+|[_mm_andnot_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_andnot_si64)|MMX|mmintrin. h|__m64 _mm_andnot_si64 (\__m64, \__m64) [3]|
 |[_mm_andnot_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_andnot_si128)|SSE2|Intrin. h|__m128i _mm_andnot_si128 (\__m128i, \__m128i)|
 |[_mm_avg_epu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_avg_epu16)|SSE2|Intrin. h|__m128i _mm_avg_epu16 (\__m128i, \__m128i)|
 |[_mm_avg_epu8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_avg_epu8)|SSE2|Intrin. h|__m128i _mm_avg_epu8 (\__m128i, \__m128i)|
@@ -317,6 +326,9 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_cmpeq_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_epi64)|SSE41|Intrin. h|__m128i _mm_cmpeq_epi64 (\__m128i, \__m128i)|
 |[_mm_cmpeq_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_epi8)|SSE2|Intrin. h|__m128i _mm_cmpeq_epi8 (\__m128i, \__m128i)|
 |[_mm_cmpeq_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_pd)|SSE2|Intrin. h|__m128d _mm_cmpeq_pd (\__m128d, \__m128d)|
+|[_mm_cmpeq_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_pi8)|MMX|mmintrin. h|__m64 _mm_cmpeq_pi8 (\__m64, \__m64) [3]|
+|[_mm_cmpeq_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_pi16)|MMX|mmintrin. h|__m64 _mm_cmpeq_pi16 (\__m64, \__m64) [3]|
+|[_mm_cmpeq_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_pi32)|MMX|mmintrin. h|__m64 _mm_cmpeq_pi32 (\__m64, \__m64) [3]|
 |[_mm_cmpeq_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_ps)|SSE|Intrin. h|__m128 _mm_cmpeq_ps (\__m128, \__m128)|
 |[_mm_cmpeq_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_sd)|SSE2|Intrin. h|__m128d _mm_cmpeq_sd (\__m128d, \__m128d)|
 |[_mm_cmpeq_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpeq_ss)|SSE|Intrin. h|__m128 _mm_cmpeq_ss (\__m128, \__m128)|
@@ -335,6 +347,9 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_cmpgt_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_epi32)|SSE2|Intrin. h|__m128i _mm_cmpgt_epi32 (\__m128i, \__m128i)|
 |[_mm_cmpgt_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_epi64)|SSE42|Intrin. h|__m128i _mm_cmpgt_epi64 (\__m128i, \__m128i)|
 |[_mm_cmpgt_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_epi8)|SSE2|Intrin. h|__m128i _mm_cmpgt_epi8 (\__m128i, \__m128i)|
+|[_mm_cmpgt_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_pi8)|MMX|mmintrin. h|__m64 _mm_cmpgt_pi8 (\__m64, \__m64) [3]|
+|[_mm_cmpgt_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_pi16)|MMX|mmintrin. h|__m64 _mm_cmpgt_pi16 (\__m64, \__m64) [3]|
+|[_mm_cmpgt_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_pi32)|MMX|mmintrin. h|__m64 _mm_cmpgt_pi32 (\__m64, \__m64) [3]|
 |[_mm_cmpgt_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_pd)|SSE2|Intrin. h|__m128d _mm_cmpgt_pd (\__m128d, \__m128d)|
 |[_mm_cmpgt_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_ps)|SSE|Intrin. h|__m128 _mm_cmpgt_ps (\__m128, \__m128)|
 |[_mm_cmpgt_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cmpgt_sd)|SSE2|Intrin. h|__m128d _mm_cmpgt_sd (\__m128d, \__m128d)|
@@ -440,6 +455,8 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_cvtsi128_si32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtsi128_si32)|SSE2|Intrin. h|int _mm_cvtsi128_si32 (\__m128i)|
 |[_mm_cvtsi32_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtsi32_sd)|SSE2|Intrin. h|__m128d _mm_cvtsi32_sd (\__m128d, int)|
 |[_mm_cvtsi32_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtsi32_si128)|SSE2|Intrin. h|__m128i _mm_cvtsi32_si128 (int)|
+|[_mm_cvtsi32_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtsi32_si64)|MMX|mmintrin. h|__m64 _mm_cvtsi32_si64 (int) [3]|
+|[_mm_cvtsi64_si32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtsi64_si32)|MMX|mmintrin. h|int _mm_cvtsi64_si32 (__m64) [3]|
 |[_mm_cvtss_f32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtss_f32)|SSSE3|Intrin. h|kayan _mm_cvtss_f32 (\__m128)|
 |[_mm_cvtss_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtss_sd)|SSE2|Intrin. h|__m128d _mm_cvtss_sd (\__m128d, \__m128)|
 |[_mm_cvtt_ps2pi](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_cvtt_ps2pi)|SSE|Intrin. h|__m64 _mm_cvtt_ps2pi (\__m128)|
@@ -454,6 +471,7 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_div_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_div_ss)|SSE|Intrin. h|__m128 _mm_div_ss (\__m128, \__m128)|
 |[_mm_dp_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_dp_pd)|SSE41|Intrin. h|__m128d _mm_dp_pd (\__m128d, \__m128d, const int)|
 |[_mm_dp_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_dp_ps)|SSE41|Intrin. h|__m128 _mm_dp_ps (\__m128, \__m128, const int)|
+|[_mm_empty](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_empty)|MMX|mmintrin. h|void _mm_empty (void) [3]|
 |[_mm_extract_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_extract_epi16)|SSE2|Intrin. h|int _mm_extract_epi16 (\__m128i, int)|
 |[_mm_extract_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_extract_epi32)|SSE41|Intrin. h|int _mm_extract_epi32 (\__m128i, const int)|
 |[_mm_extract_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_extract_epi8)|SSE41|Intrin. h|int _mm_extract_epi8 (\__m128i, const int)|
@@ -565,6 +583,7 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |_mm_maccshi_epi32|XOP [1]|ammintrin. h|__m128i _mm_maccshi_epi32 (\__m128i, \__m128i, \__m128i)|
 |_mm_maccslo_epi32|XOP [1]|ammintrin. h|__m128i _mm_maccslo_epi32 (\__m128i, \__m128i, \__m128i)|
 |[_mm_madd_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_madd_epi16)|SSE2|Intrin. h|__m128i _mm_madd_epi16 (\__m128i, \__m128i)|
+|[_mm_madd_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_madd_pi16)|MMX|mmintrin. h|__m64 _mm_madd_pi16 (\__m64, \__m64) [3]|
 |_mm_maddd_epi16|XOP [1]|ammintrin. h|__m128i _mm_maddd_epi16 (\__m128i, \__m128i, \__m128i)|
 |_mm_maddsd_epi16|XOP [1]|ammintrin. h|__m128i _mm_maddsd_epi16 (\__m128i, \__m128i, \__m128i)|
 |_mm_maddsub_pd|FMA4 [1]|ammintrin. h|__m128d _mm_maddsub_pd (\__m128d, \__m128d, \__m128d)|
@@ -640,10 +659,12 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_mul_su32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mul_su32)|SSE2|Intrin. h|__m64 _mm_mul_su32 (\__m64, \__m64)|
 |[_mm_mulhi_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mulhi_epi16)|SSE2|Intrin. h|__m128i _mm_mulhi_epi16 (\__m128i, \__m128i)|
 |[_mm_mulhi_epu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mulhi_epu16)|SSE2|Intrin. h|__m128i _mm_mulhi_epu16 (\__m128i, \__m128i)|
+|[_mm_mulhi_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mulhi_pi16)|MMX|mmintrin. h|__m64 _mm_mulhi_pi16 (\__m64, \__m64) [3]|
 |[_mm_mulhrs_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mulhrs_epi16)|SSSE3|Intrin. h|__m128i _mm_mulhrs_epi16 (\__m128i, \__m128i)|
 |[_mm_mulhrs_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mulhrs_pi16)|SSSE3|Intrin. h|__m64 _mm_mulhrs_pi16 (\__m64, \__m64)|
 |[_mm_mullo_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mullo_epi16)|SSE2|Intrin. h|__m128i _mm_mullo_epi16 (\__m128i, \__m128i)|
 |[_mm_mullo_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mullo_epi32)|SSE41|Intrin. h|__m128i _mm_mullo_epi32 (\__m128i, \__m128i)|
+|[_mm_mullo_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mullo_pi16)|MMX|mmintrin. h|__m64 _mm_mullo_pi16 (\__m64, \__m64) [3]|
 |[_mm_mwait](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_mwait)|SSE3|Intrin. h|void _mm_mwait (işaretsiz int, işaretsiz int)|
 |_mm_nmacc_pd|FMA4 [1]|ammintrin. h|__m128d _mm_nmacc_pd (\__m128d, \__m128d, \__m128d)|
 |_mm_nmacc_ps|FMA4 [1]|ammintrin. h|__m128 _mm_nmacc_ps (\__m128, \__m128, \__m128)|
@@ -655,9 +676,13 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |_mm_nmsub_ss|FMA4 [1]|ammintrin. h|__m128 _mm_nmsub_ss (\__m128, \__m128, \__m128)|
 |[_mm_or_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_or_pd)|SSE2|Intrin. h|__m128d _mm_or_pd (\__m128d, \__m128d)|
 |[_mm_or_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_or_ps)|SSE|Intrin. h|__m128 _mm_or_ps (\__m128, \__m128)|
+|[_mm_or_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_or_si64)|MMX|mmintrin. h|__m64 _mm_or_si64 (\__m64, \__m64) [3]|
 |[_mm_or_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_or_si128)|SSE2|Intrin. h|__m128i _mm_or_si128 (\__m128i, \__m128i)|
 |[_mm_packs_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packs_epi16)|SSE2|Intrin. h|__m128i _mm_packs_epi16 (\__m128i, \__m128i)|
 |[_mm_packs_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packs_epi32)|SSE2|Intrin. h|__m128i _mm_packs_epi32 (\__m128i, \__m128i)|
+|[_mm_packs_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packs_pi16)|MMX|mmintrin. h|__m64 _mm_packs_pi16 (__m64, __m64) [3]|
+|[_mm_packs_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packs_pi32)|MMX|mmintrin. h|__m64 _mm_packs_pi32 (__m64, __m64) [3]|
+|[_mm_packs_pu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packs_pu16)|MMX|mmintrin. h|__m64 _mm_packs_pu16 (__m64, __m64) [3]|
 |[_mm_packus_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packus_epi16)|SSE2|Intrin. h|__m128i _mm_packus_epi16 (\__m128i, \__m128i)|
 |[_mm_packus_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_packus_epi32)|SSE41|Intrin. h|__m128i _mm_packus_epi32 (\__m128i, \__m128i)|
 |[_mm_pause](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_pause)|SSE2|Intrin. h|void _mm_pause (void)|
@@ -668,7 +693,7 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |_mm_permute2_ps|XOP [1]|ammintrin. h|__m128 _mm_permute2_ps (\__m128, \__m128, \__m128i, int)|
 |[_mm_permutevar_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_permutevar_pd)|AVX [2]|ımintrin. h|__m128d _mm_permutevar_pd (\__m128d, \__m128i)|
 |[_mm_permutevar_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_permutevar_ps)|AVX [2]|ımintrin. h|__m128 _mm_permutevar_ps (\__m128, \__m128i)|
-|[_mm_popcnt_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_popcnt_u32)|POPSAYISI|Intrin. h|int _mm_popcnt_u32 (işaretsiz int)|
+|[_mm_popcnt_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_popcnt_u32)|POPCNT|Intrin. h|int _mm_popcnt_u32 (işaretsiz int)|
 |[_mm_prefetch](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_prefetch)|SSE|Intrin. h|void _mm_prefetch (Char *, int)|
 |[_mm_rcp_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_rcp_ps)|SSE|Intrin. h|__m128 _mm_rcp_ps (\__m128)|
 |[_mm_rcp_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_rcp_ss)|SSE|Intrin. h|__m128 _mm_rcp_ss (\__m128)|
@@ -747,9 +772,15 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_sll_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sll_epi16)|SSE2|Intrin. h|__m128i _mm_sll_epi16 (\__m128i, \__m128i)|
 |[_mm_sll_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sll_epi32)|SSE2|Intrin. h|__m128i _mm_sll_epi32 (\__m128i, \__m128i)|
 |[_mm_sll_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sll_epi64)|SSE2|Intrin. h|__m128i _mm_sll_epi64 (\__m128i, \__m128i)|
+|[_mm_sll_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sll_pi16)|MMX|mmintrin. h|__m64 _mm_sll_pi16 (\__m64, \__m64) [3]|
+|[_mm_sll_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sll_pi32)|MMX|mmintrin. h|__m64 _mm_sll_pi32 (\__m64, \__m64) [3]|
+|[_mm_sll_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sll_si64)|MMX|mmintrin. h|__m64 _mm_sll_si64 (\__m64, \__m64) [3]|
 |[_mm_slli_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_epi16)|SSE2|Intrin. h|__m128i _mm_slli_epi16 (\__m128i, int)|
 |[_mm_slli_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_epi32)|SSE2|Intrin. h|__m128i _mm_slli_epi32 (\__m128i, int)|
 |[_mm_slli_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_epi64)|SSE2|Intrin. h|__m128i _mm_slli_epi64 (\__m128i, int)|
+|[_mm_slli_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_pi16)|MMX|mmintrin. h|__m64 _mm_slli_pi16 (\__m64, int) [3]|
+|[_mm_slli_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_pi32)|MMX|mmintrin. h|__m64 _mm_slli_pi32 (\__m64, int) [3]|
+|[_mm_slli_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_si64)|MMX|mmintrin. h|__m64 _mm_slli_si64 (\__m64, int) [3]|
 |[_mm_slli_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_slli_si128)|SSE2|Intrin. h|__m128i _mm_slli_si128 (\__m128i, int)|
 |[_mm_sllv_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sllv_epi32)|AVX2 [2]|ımintrin. h|__m128i _mm_sllv_epi32 (\__m128i, \__m128i)|
 |[_mm_sllv_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sllv_epi64)|AVX2 [2]|ımintrin. h|__m128i _mm_sllv_epi64 (\__m128i, \__m128i)|
@@ -759,15 +790,25 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_sqrt_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sqrt_ss)|SSE|Intrin. h|__m128 _mm_sqrt_ss (\__m128)|
 |[_mm_sra_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sra_epi16)|SSE2|Intrin. h|__m128i _mm_sra_epi16 (\__m128i, \__m128i)|
 |[_mm_sra_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sra_epi32)|SSE2|Intrin. h|__m128i _mm_sra_epi32 (\__m128i, \__m128i)|
+|[_mm_sra_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sra_pi16)|MMX|mmintrin. h|__m64 _mm_sra_pi16 (\__m64, \__m64) [3]|
+|[_mm_sra_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sra_pi32)|MMX|mmintrin. h|__m64 _mm_sra_pi32 (\__m64, \__m64) [3]|
 |[_mm_srai_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srai_epi16)|SSE2|Intrin. h|__m128i _mm_srai_epi16 (\__m128i, int)|
 |[_mm_srai_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srai_epi32)|SSE2|Intrin. h|__m128i _mm_srai_epi32 (\__m128i, int)|
+|[_mm_srai_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srai_pi16)|MMX|mmintrin. h|__m64 _mm_srai_pi16 (\__m64, int) [3]|
+|[_mm_srai_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srai_pi32)|MMX|mmintrin. h|__m64 _mm_srai_pi32 (\__m64, int) [3]|
 |[_mm_srav_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srav_epi32)|AVX2 [2]|ımintrin. h|__m128i _mm_srav_epi32 (\__m128i, \__m128i)|
 |[_mm_srl_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srl_epi16)|SSE2|Intrin. h|__m128i _mm_srl_epi16 (\__m128i, \__m128i)|
 |[_mm_srl_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srl_epi32)|SSE2|Intrin. h|__m128i _mm_srl_epi32 (\__m128i, \__m128i)|
 |[_mm_srl_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srl_epi64)|SSE2|Intrin. h|__m128i _mm_srl_epi64 (\__m128i, \__m128i)|
+|[_mm_srl_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srl_pi16)|MMX|mmintrin. h|__m64 _mm_srl_pi16 (\__m64, \__m64) [3]|
+|[_mm_srl_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srl_pi32)|MMX|mmintrin. h|__m64 _mm_srl_pi32 (\__m64, \__m64) [3]|
+|[_mm_srl_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srl_si64)|MMX|mmintrin. h|__m64 _mm_srl_si64 (\__m64, \__m64) [3]|
 |[_mm_srli_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_epi16)|SSE2|Intrin. h|__m128i _mm_srli_epi16 (\__m128i, int)|
 |[_mm_srli_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_epi32)|SSE2|Intrin. h|__m128i _mm_srli_epi32 (\__m128i, int)|
 |[_mm_srli_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_epi64)|SSE2|Intrin. h|__m128i _mm_srli_epi64 (\__m128i, int)|
+|[_mm_srli_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_pi16)|MMX|mmintrin. h|__m64 _mm_srli_pi16 (\__m64, int) [3]|
+|[_mm_srli_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_pi32)|MMX|mmintrin. h|__m64 _mm_srli_pi32 (\__m64, int) [3]|
+|[_mm_srli_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_si64)|MMX|mmintrin. h|__m64 _mm_srli_si64 (\__m64, int) [3]|
 |[_mm_srli_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srli_si128)|SSE2|Intrin. h|__m128i _mm_srli_si128 (\__m128i, int)|
 |[_mm_srlv_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srlv_epi32)|AVX2 [2]|ımintrin. h|__m128i _mm_srlv_epi32 (\__m128i, \__m128i)|
 |[_mm_srlv_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_srlv_epi64)|AVX2 [2]|ımintrin. h|__m128i _mm_srlv_epi64 (\__m128i, \__m128i)|
@@ -801,6 +842,9 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_sub_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_epi64)|SSE2|Intrin. h|__m128i _mm_sub_epi64 (\__m128i, \__m128i)|
 |[_mm_sub_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_epi8)|SSE2|Intrin. h|__m128i _mm_sub_epi8 (\__m128i, \__m128i)|
 |[_mm_sub_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_pd)|SSE2|Intrin. h|__m128d _mm_sub_pd (\__m128d, \__m128d)|
+|[_mm_sub_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_pi8)|MMX|mmintrin. h|__m64 _mm_sub_pi8 (\__m64, \__m64) [3]|
+|[_mm_sub_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_pi16)|MMX|mmintrin. h|__m64 _mm_sub_pi16 (\__m64, \__m64) [3]|
+|[_mm_sub_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_pi32)|MMX|mmintrin. h|__m64 _mm_sub_pi32 (\__m64, \__m64) [3]|
 |[_mm_sub_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_ps)|SSE|Intrin. h|__m128 _mm_sub_ps (\__m128, \__m128)|
 |[_mm_sub_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_sd)|SSE2|Intrin. h|__m128d _mm_sub_sd (\__m128d, \__m128d)|
 |[_mm_sub_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sub_si64)|SSE2|Intrin. h|__m64 _mm_sub_si64 (\__m64, \__m64)|
@@ -809,6 +853,10 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_subs_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_epi8)|SSE2|Intrin. h|__m128i _mm_subs_epi8 (\__m128i, \__m128i)|
 |[_mm_subs_epu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_epu16)|SSE2|Intrin. h|__m128i _mm_subs_epu16 (\__m128i, \__m128i)|
 |[_mm_subs_epu8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_epu8)|SSE2|Intrin. h|__m128i _mm_subs_epu8 (\__m128i, \__m128i)|
+|[_mm_subs_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_pi8)|MMX|mmintrin. h|__m64 _mm_subs_pi8 (\__m64, \__m64) [3]|
+|[_mm_subs_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_pi16)|MMX|mmintrin. h|__m64 _mm_subs_pi16 (\__m64, \__m64) [3]|
+|[_mm_subs_pu8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_pu8)|MMX|mmintrin. h|__m64 _mm_subs_pu8 (\__m64, \__m64) [3]|
+|[_mm_subs_pu16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_subs_pu16)|MMX|mmintrin. h|__m64 _mm_subs_pu16 (\__m64, \__m64) [3]|
 |[_mm_testc_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_testc_pd)|AVX [2]|ımintrin. h|int _mm_testc_pd (\__m128d, \__m128d)|
 |[_mm_testc_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_testc_ps)|AVX [2]|ımintrin. h|int _mm_testc_ps (\__m128, \__m128)|
 |[_mm_testc_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_testc_si128)|SSE41|Intrin. h|int _mm_testc_si128 (\__m128i, \__m128i)|
@@ -835,15 +883,22 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[_mm_unpackhi_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_epi64)|SSE2|Intrin. h|__m128i _mm_unpackhi_epi64 (\__m128i, \__m128i)|
 |[_mm_unpackhi_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_epi8)|SSE2|Intrin. h|__m128i _mm_unpackhi_epi8 (\__m128i, \__m128i)|
 |[_mm_unpackhi_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_pd)|SSE2|Intrin. h|__m128d _mm_unpackhi_pd (\__m128d, \__m128d)|
+|[_mm_unpackhi_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_pi8)|MMX|mmintrin. h|__m64 _mm_unpackhi_pi8 (__m64, __m64) [3]|
+|[_mm_unpackhi_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_pi16)|MMX|mmintrin. h|__m64 _mm_unpackhi_pi16 (__m64, __m64) [3]|
+|[_mm_unpackhi_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_pi32)|MMX|mmintrin. h|__m64 _mm_unpackhi_pi32 (__m64, __m64) [3]|
 |[_mm_unpackhi_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpackhi_ps)|SSE|Intrin. h|__m128 _mm_unpackhi_ps (\__m128, \__m128)|
 |[_mm_unpacklo_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_epi16)|SSE2|Intrin. h|__m128i _mm_unpacklo_epi16 (\__m128i, \__m128i)|
 |[_mm_unpacklo_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_epi32)|SSE2|Intrin. h|__m128i _mm_unpacklo_epi32 (\__m128i, \__m128i)|
 |[_mm_unpacklo_epi64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_epi64)|SSE2|Intrin. h|__m128i _mm_unpacklo_epi64 (\__m128i, \__m128i)|
 |[_mm_unpacklo_epi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_epi8)|SSE2|Intrin. h|__m128i _mm_unpacklo_epi8 (\__m128i, \__m128i)|
 |[_mm_unpacklo_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_pd)|SSE2|Intrin. h|__m128d _mm_unpacklo_pd (\__m128d, \__m128d)|
+|[_mm_unpacklo_pi8](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_pi8)|MMX|mmintrin. h|__m64 _mm_unpacklo_pi8 (__m64, __m64) [3]|
+|[_mm_unpacklo_pi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_pi16)|MMX|mmintrin. h|__m64 _mm_unpacklo_pi16 (__m64, __m64) [3]|
+|[_mm_unpacklo_pi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_pi32)|MMX|mmintrin. h|__m64 _mm_unpacklo_pi32 (__m64, __m64) [3]|
 |[_mm_unpacklo_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_unpacklo_ps)|SSE|Intrin. h|__m128 _mm_unpacklo_ps (\__m128, \__m128)|
 |[_mm_xor_pd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_xor_pd)|SSE2|Intrin. h|__m128d _mm_xor_pd (\__m128d, \__m128d)|
 |[_mm_xor_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_xor_ps)|SSE|Intrin. h|__m128 _mm_xor_ps (\__m128, \__m128)|
+|[_mm_xor_si64](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_xor_si64)|MMX|mmintrin. h|__m64 _mm_xor_si64 (\__m64, \__m64) [3]|
 |[_mm_xor_si128](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_xor_si128)|SSE2|Intrin. h|__m128i _mm_xor_si128 (\__m128i, \__m128i)|
 |[_mm256_abs_epi16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_abs_epi16)|AVX2 [2]|ımintrin. h|__m256i _mm256_abs_epi16 (\__m256i)|
 |[_mm256_abs_epi32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_abs_epi32)|AVX2 [2]|ımintrin. h|__m256i _mm256_abs_epi32 (\__m256i)|
@@ -1171,7 +1226,7 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[__movsb](movsb.md)||Intrin. h|void __movsb (işaretsiz char \*, işaretsiz char const \*, size_t)|
 |[__movsd](movsd.md)||Intrin. h|void __movsd (işaretsiz Long \*, imzasız Long const \*, size_t)|
 |[__movsw](movsw.md)||Intrin. h|void __movsw (işaretsiz kısa \*, işaretsiz kısa const \*, size_t)|
-|_mulx_u32|BMı [2]|ımintrin. h|işaretsiz int _mulx_u32 (işaretsiz int, işaretsiz int, işaretsiz int\*)|
+|_mulx_u32|BMI [2]|ımintrin. h|işaretsiz int _mulx_u32 (işaretsiz int, işaretsiz int, işaretsiz int\*)|
 |[__nop](nop.md)||Intrin. h|void __nop (void)|
 |__nvreg_restore_fence||Intrin. h|void __nvreg_restore_fence (void)|
 |__nvreg_save_fence||Intrin. h|void __nvreg_save_fence (void)|
@@ -1181,10 +1236,10 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[__outdwordstring](outdwordstring.md)||Intrin. h|void __outdwordstring (işaretsiz kısa, işaretsiz uzun \*, işaretsiz uzun)|
 |[__outword](outword.md)||Intrin. h|void __outword (işaretsiz kısa, işaretsiz kısa)|
 |[__outwordstring](outwordstring.md)||Intrin. h|void __outwordstring (işaretsiz kısa, işaretsiz kısa \*, işaretsiz uzun)|
-|[_pdep_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_pdep_u32)|BMı [2]|ımintrin. h|işaretsiz int _pdep_u32 (işaretsiz int, işaretsiz int)|
-|[_pext_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_pext_u32)|BMı [2]|ımintrin. h|işaretsiz int _pext_u32 (işaretsiz int, işaretsiz int)|
-|[__popcnt](popcnt16-popcnt-popcnt64.md)|POPSAYISI|Intrin. h|işaretsiz int __popcnt (işaretsiz int)|
-|[__popcnt16](popcnt16-popcnt-popcnt64.md)|POPSAYISI|Intrin. h|işaretsiz kısa __popcnt16 (işaretsiz kısa)|
+|[_pdep_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_pdep_u32)|BMI [2]|ımintrin. h|işaretsiz int _pdep_u32 (işaretsiz int, işaretsiz int)|
+|[_pext_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_pext_u32)|BMI [2]|ımintrin. h|işaretsiz int _pext_u32 (işaretsiz int, işaretsiz int)|
+|[__popcnt](popcnt16-popcnt-popcnt64.md)|POPCNT|Intrin. h|işaretsiz int __popcnt (işaretsiz int)|
+|[__popcnt16](popcnt16-popcnt-popcnt64.md)|POPCNT|Intrin. h|işaretsiz kısa __popcnt16 (işaretsiz kısa)|
 |[_rdrand16_step](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_rdrand16_step)|RDRAND [2]|ımintrin. h|int _rdrand16_step (işaretsiz kısa \*)|
 |[_rdrand32_step](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_rdrand32_step)|RDRAND [2]|ımintrin. h|int _rdrand32_step (işaretsiz int \*)|
 |[_rdseed16_step](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_rdseed16_step)|RDSEED [2]|ımintrin. h|int _rdseed16_step (işaretsiz kısa \*)|
@@ -1206,17 +1261,17 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[__readpmc](readpmc.md)||Intrin. h|imzasız __int64 \__readpmc (işaretsiz Long)|
 |[_ReadWriteBarrier](readwritebarrier.md)||Intrin. h|void _ReadWriteBarrier (void)|
 |[_ReturnAddress](returnaddress.md)||Intrin. h|void \* _ReturnAddress (void)|
-|_rorx_u32|BMı [2]|ımintrin. h|işaretsiz int _rorx_u32 (işaretsiz int, const işaretsiz int)|
+|_rorx_u32|BMI [2]|ımintrin. h|işaretsiz int _rorx_u32 (işaretsiz int, const işaretsiz int)|
 |[_rotl16](rotl8-rotl16.md)||Intrin. h|işaretsiz kısa _rotl16 (işaretsiz kısa, işaretsiz karakter)|
 |[_rotl8](rotl8-rotl16.md)||Intrin. h|işaretsiz karakter _rotl8 (işaretsiz char, işaretsiz karakter)|
 |[_rotr16](rotr8-rotr16.md)||Intrin. h|işaretsiz kısa _rotr16 (işaretsiz kısa, işaretsiz karakter)|
 |[_rotr8](rotr8-rotr16.md)||Intrin. h|işaretsiz karakter _rotr8 (işaretsiz char, işaretsiz karakter)|
 |_rsm||Intrin. h|void _rsm (void)|
-|_sarx_i32|BMı [2]|ımintrin. h|int _sarx_i32 (int, işaretsiz int)|
+|_sarx_i32|BMI [2]|ımintrin. h|int _sarx_i32 (int, işaretsiz int)|
 |[__segmentlimit](segmentlimit.md)||Intrin. h|işaretsiz Long __segmentlimit (imzasız Long)|
 |_sgdt||Intrin. h|void _sgdt (void\*)|
-|_shlx_u32|BMı [2]|ımintrin. h|işaretsiz int _shlx_u32 (işaretsiz int, işaretsiz int)|
-|_shrx_u32|BMı [2]|ımintrin. h|işaretsiz int _shrx_u32 (işaretsiz int, işaretsiz int)|
+|_shlx_u32|BMI [2]|ımintrin. h|işaretsiz int _shlx_u32 (işaretsiz int, işaretsiz int)|
+|_shrx_u32|BMI [2]|ımintrin. h|işaretsiz int _shrx_u32 (işaretsiz int, işaretsiz int)|
 |[__sidt](sidt.md)||Intrin. h|void __sidt (void\*)|
 |__slwpcb|LWP [1]|ammintrin. h|void \*__slwpcb (void)|
 |_stac|SMAP|Intrin. h|void _stac (void)|
@@ -1234,12 +1289,12 @@ Aşağıdaki tabloda, x86 işlemcilerde kullanılabilen iç bilgiler listelenmek
 |[__svm_invlpga](svm-invlpga.md)||Intrin. h|void __svm_invlpga (void\*, int)|
 |[__svm_skinit](svm-skinit.md)||Intrin. h|void __svm_skinit (int)|
 |[__svm_stgi](svm-stgi.md)||Intrin. h|void __svm_stgi (void)|
-|[__svm_vmload](svm-vmload.md)||Intrin. h|void __svm_vmload (size_t)|
-|[__svm_vmrun](svm-vmrun.md)||Intrin. h|void __svm_vmrun (size_t)|
+|[__svm_vmload](svm-vmload.md)||Intrin. h|void __svm_vmload(size_t)|
+|[__svm_vmrun](svm-vmrun.md)||Intrin. h|void __svm_vmrun(size_t)|
 |[__svm_vmsave](svm-vmsave.md)||Intrin. h|void __svm_vmsave (size_t)|
-|_t1mskc_u32|ABA [1]|ammintrin. h|işaretsiz int _t1mskc_u32 (işaretsiz int)|
+|_t1mskc_u32|ABM [1]|ammintrin. h|işaretsiz int _t1mskc_u32 (işaretsiz int)|
 |[_tzcnt_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_tzcnt_u32)|BMI|ammintrin. h, immintrin. h|işaretsiz int _tzcnt_u32 (işaretsiz int)|
-|_tzmsk_u32|ABA [1]|ammintrin. h|işaretsiz int _tzmsk_u32 (işaretsiz int)|
+|_tzmsk_u32|ABM [1]|ammintrin. h|işaretsiz int _tzmsk_u32 (işaretsiz int)|
 |[__ud2](ud2.md)||Intrin. h|void __ud2 (void)|
 |[_udiv64](udiv64.md)||Intrin. h|işaretsiz int \_udiv64 (imzasız \__int64, işaretsiz int, işaretsiz int \*)|
 |[__ull_rshift](ull-rshift.md)||Intrin. h|işaretsiz __int64 [Pascal/cdecl] \__ull_rshift (imzasız \__int64, int)|
