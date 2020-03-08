@@ -179,11 +179,11 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
 ms.openlocfilehash: 1565a2eef681cbf36a0e166f59cde0320843e8aa
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506383"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78869909"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 
@@ -199,7 +199,7 @@ class CFrameWndEx : public CFrameWnd
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CFrameWndEx:: ActiveItemRecalcLayout](#activeitemrecalclayout)|OLE istemci öğesinin ve çerçevenin istemci alanının yerleşimini ayarlar.|
 |`CFrameWndEx::AddDockSite`|Bu yöntem kullanılmaz.|
@@ -235,20 +235,20 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx:: OnClose](#onclose)|Çerçeve, çerçeveyi kapatmak için bu yöntemi çağırır.|
 |[CFrameWndEx:: OnCloseDockingPane](#onclosedockingpane)|Kullanıcı takma bölmesindeki **Kapat** düğmesine tıkladığında Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnCloseMiniFrame](#oncloseminiframe)|Kullanıcı kayan mini çerçeve penceresinde **Kapat** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CFrameWndEx:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü bir WM_DESTROY iletisini işlediğinde Framework tarafından çağırılır.|
+|[CFrameWndEx:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnCmdMsg](#oncmdmsg)|Komut iletileri gönderir.|
 |[CFrameWndEx:: OnContextHelp](#oncontexthelp)|Bağlama ilişkin yardım 'ı göstermek için Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnCreate](#oncreate)|Çerçeve oluşturulduktan sonra Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnDestroy](#ondestroy)|Çerçeve yok edildiğinde Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnDrawMenuImage](#ondrawmenuimage)|Uygulama bir menü öğesiyle ilişkili görüntüyü çizdiğinde framework tarafından çağırılır.|
-|[CFrameWndEx:: OnDrawMenuLogo](#ondrawmenulogo)|Bir `CMFCPopupMenu` nesne bir [WM_PAINT](/windows/win32/gdi/wm-paint) iletisini işlediğinde Framework tarafından çağırılır.|
+|[CFrameWndEx:: OnDrawMenuLogo](#ondrawmenulogo)|Bir `CMFCPopupMenu` nesnesi [WM_PAINT](/windows/win32/gdi/wm-paint) iletisini işlediğinde Framework tarafından çağırılır.|
 |[CFrameWndEx:: Ondalıklar Wmkompozisyontionchanged](#ondwmcompositionchanged)|Masaüstü Pencere Yöneticisi (DWM) bileşimi etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnExitSizeMove](#onexitsizemove)|Çerçeve taşımayı veya yeniden boyutlandırmayı durdurulduğunda Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnGetMinMaxInfo](#ongetminmaxinfo)|Çerçeve, pencere boyut sınırlarını ayarlamak için yeniden boyutlandırılırken Framework tarafından çağırılır.|
 |[CFrameWndEx:: Onıdcnupdatecmduı](#onidleupdatecmdui)|Komut işleme boşta olduğunda çerçeve görüntüsünü güncelleştirmek için Framework tarafından çağırılır.|
 |[CFrameWndEx:: Onlbuttonaşağı](#onlbuttondown)|Çerçeve, Kullanıcı farenin sol düğmesine bastığında bu yöntemi çağırır.|
 |[CFrameWndEx:: OnLButtonUp](#onlbuttonup)|Kullanıcı sol fare düğmesini bıraktığında, çerçeve bu yöntemi çağırır.|
-|[CFrameWndEx:: OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Bir `CMFCToolBarButton` nesne bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.|
+|[CFrameWndEx:: OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Bir `CMFCToolBarButton` nesnesi WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.|
 |[CFrameWndEx:: Onmenuşar](#onmenuchar)|Bir menü görüntülenirken ve Kullanıcı komuta karşılık gelen bir anahtara bastığında Framework tarafından çağırılır.|
 |[CFrameWndEx:: OnMouseMove](#onmousemove)|Çerçeve, işaretçi taşırken bu yöntemi çağırır.|
 |[CFrameWndEx:: OnMoveMiniFrame](#onmoveminiframe)|Bir bölme penceresi taşırken Framework tarafından çağırılır.|
@@ -287,11 +287,11 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx:: ShowFullScreen](#showfullscreen)|Ana çerçeveyi tam ekran ve normal modlar arasında geçirir.|
 |[CFrameWndEx:: ShowPane](#showpane)|Belirtilen bölmeyi gösterir veya gizler.|
 |[CFrameWndEx:: UpdateCaption](#updatecaption)|Pencere çerçevesi başlığını güncelleştirmek için Framework tarafından çağırılır.|
-|[CFrameWndEx:: WinHelp](#winhelp)|`WinHelp` Uygulamayı ya da bağlamla ilgili yardımı çağırır.|
+|[CFrameWndEx:: WinHelp](#winhelp)|`WinHelp` uygulamasını veya bağlama ile ilgili yardım 'ı çağırır.|
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte `CFrameWndEx` sınıfından bir sınıfın nasıl devraldığı gösterilmektedir. Örnek, alt sınıfta Yöntem imzalarını ve `OnShowPopupMenu` yöntemin nasıl geçersiz kılınacağını göstermektedir. Bu kod parçacığı, [sözcük paneli örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnekte, `CFrameWndEx` sınıfından bir sınıfın nasıl devraldığı gösterilmektedir. Örnek, alt sınıfta Yöntem imzalarını ve `OnShowPopupMenu` yönteminin nasıl geçersiz kılınacağını göstermektedir. Bu kod parçacığı, [sözcük paneli örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#4](../../mfc/reference/codesnippet/cpp/cframewndex-class_2.cpp)]
@@ -355,7 +355,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *hdwp*<br/>
-Birden çok pencere konumunu içeren bir yapıya yönelik bir tanıtıcı. biçimindeki telefon numarasıdır.
+Birden çok pencere konumunu içeren bir yapıya yönelik bir tanıtıcı. arasında yetersiz alanla karşılaştı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -524,7 +524,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 
 Tam ekran modunda, tüm yerleştirme denetim çubukları, araç çubukları ve menü gizlenir ve etkin görünüm tam ekran kaplayacak şekilde yeniden boyutlandırılır.
 
-Tam ekran modunu etkinleştirdiğinizde, tam ekran modunu etkinleştiren veya devre dışı bırakan bir komutun KIMLIĞINI belirtmeniz gerekir. `EnableFullScreenMode` Ana`OnCreate` çerçevenin işlevinden çağırabilirsiniz. Çerçeve penceresi tam ekran moduna geçiş yaparken, çerçeve belirtilen komut KIMLIĞINE sahip bir düğmeyle bir kayan araç çubuğu oluşturur.
+Tam ekran modunu etkinleştirdiğinizde, tam ekran modunu etkinleştiren veya devre dışı bırakan bir komutun KIMLIĞINI belirtmeniz gerekir. Ana çerçevenin `OnCreate` işlevinden `EnableFullScreenMode` çağırabilirsiniz. Çerçeve penceresi tam ekran moduna geçiş yaparken, çerçeve belirtilen komut KIMLIĞINE sahip bir düğmeyle bir kayan araç çubuğu oluşturur.
 
 Ana menüyü ekranda tutmak istiyorsanız [CFrameWndEx:: EnableFullScreenMainMenu](#enablefullscreenmainmenu)komutunu çağırın.
 
@@ -668,7 +668,7 @@ const CObList& GetTearOffBars() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ayırma durumunda `CObList` olan bölme nesnelerine işaretçiler koleksiyonu içeren nesnesine bir başvuru.
+Bir ayırma durumunda olan bölme nesnelerine işaretçiler koleksiyonu içeren `CObList` nesnesine başvuru.
 
 ##  <a name="gettoolbarbuttontooltiptext"></a>CFrameWndEx:: GetToolbarButtonToolTipText
 
@@ -919,7 +919,7 @@ afx_msg void OnActivateApp(
 *bActive*<br/>
 'ndaki Uygulama seçildiyse doğru; Uygulama seçilmezse FALSE.
 
-*dwThreadID*<br/>
+*dwThreadId*<br/>
 'ndaki Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -944,7 +944,7 @@ afx_msg LRESULT OnChangeVisualManager(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 döndürür.
+Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -994,7 +994,7 @@ Varsayılan uygulama hiçbir şey yapmaz. Kayan mini çerçeve penceresinin gizl
 
 ##  <a name="onclosepopupmenu"></a>CFrameWndEx:: OnClosePopupMenu
 
-Etkin bir açılır menü bir WM_DESTROY iletisini işlediğinde Framework tarafından çağırılır.
+Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
@@ -1007,7 +1007,7 @@ Açılır menüye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, pencereyi kapatmak üzere olduğunda bir WM_DESTROY iletisi gönderir. `CMFCPopupMenu` Bir`CMFCPopupMenu` nesne, pencere kapatıldığında çerçeve tarafından gönderilen bir wm_destroy iletisini işlerken çerçeve penceresine ait nesnelerden gelen bildirimleri işlemek istiyorsanız bu yöntemi geçersiz kılın.
+Framework, pencereyi kapatmak üzere olduğunda bir WM_DESTROY iletisi gönderir. Bir `CMFCPopupMenu` nesnesi, pencere kapatıldığında çerçeve tarafından gönderilen bir WM_DESTROY iletisi işlerken, çerçeve penceresine ait `CMFCPopupMenu` nesnelerinden gelen bildirimleri işlemek istiyorsanız bu yöntemi geçersiz kılın.
 
 ##  <a name="oncmdmsg"></a>CFrameWndEx:: OnCmdMsg
 
@@ -1102,7 +1102,7 @@ virtual BOOL OnDrawMenuImage(
 'ndaki Görüntü işlenen menü düğmesine yönelik bir işaretçi.
 
 *rectImage*<br/>
-'ndaki Görüntünün ekran konumunu ve `Rect` boyutunu belirten bir yapı işaretçisi.
+'ndaki Görüntünün ekran konumunu ve boyutunu belirten `Rect` yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1110,11 +1110,11 @@ virtual BOOL OnDrawMenuImage(
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CFrameWndEx` Türetilmiş nesnenin sahip olduğu menü çubuğuna ait olan menü öğeleri için görüntü işlemeyi özelleştirmek istiyorsanız bu yöntemi geçersiz kılın.
+`CFrameWndEx` türetilmiş nesnenin sahip olduğu menü çubuğuna ait olan menü öğeleri için görüntü işlemeyi özelleştirmek istiyorsanız bu yöntemi geçersiz kılın.
 
 ##  <a name="ondrawmenulogo"></a>CFrameWndEx:: OnDrawMenuLogo
 
-Bir `CMFCPopupMenu` nesne bir WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.
+Bir `CMFCPopupMenu` nesnesi WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnDrawMenuLogo(
@@ -1132,11 +1132,11 @@ virtual void OnDrawMenuLogo(
 'ndaki Menü öğesine yönelik bir işaretçi.
 
 *rectLogo*<br/>
-'ndaki Menü logosunun ekran konumunu ve `CRect` boyutunu belirten sabit bir yapıya başvuru.
+'ndaki Menü logosunun ekran konumunu ve boyutunu belirten bir sabit `CRect` yapısına başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CFrameWndEx` Türetilmiş nesnenin sahip olduğu menü çubuğuna ait olan açılır menüde bir logo göstermek istiyorsanız bu işlevi geçersiz kılın.
+`CFrameWndEx` türetilmiş nesnenin sahip olduğu menü çubuğuna ait olan açılır menüde bir logo göstermek istiyorsanız bu işlevi geçersiz kılın.
 
 ##  <a name="ondwmcompositionchanged"></a>CFrameWndEx:: Ondalıklar Wmkompozisyontionchanged
 
@@ -1158,7 +1158,7 @@ afx_msg LRESULT OnDWMCompositionChanged(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 döndürür.
+Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1182,7 +1182,7 @@ LRESULT OnExitSizeMove(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 döndürür.
+Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1196,7 +1196,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpMMI*<br/>
+*Lpmmı*<br/>
 'ndaki [MINMAXINFO](/windows/win32/api/winuser/ns-winuser-minmaxinfo) yapısına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1221,7 +1221,7 @@ afx_msg LRESULT OnIdleUpdateCmdUI(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 döndürür.
+Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1238,7 +1238,7 @@ afx_msg void OnLButtonDown(
 ### <a name="parameters"></a>Parametreler
 
 *nFlags*<br/>
-'ndaki Kullanıcının değiştirici tuşlarına basmış olup olmadığını gösterir. Olası değerler için bkz. [WM_LBUTTONDOWN bildiriminde](/windows/win32/inputdev/wm-lbuttondown) *wParam* parametresi.
+'ndaki Kullanıcının değiştirici tuşlarına basmış olup olmadığını gösterir. Olası değerler için [WM_LBUTTONDOWN bildiriminde](/windows/win32/inputdev/wm-lbuttondown) *wParam* parametresine bakın.
 
 *seçeneğinin*<br/>
 'ndaki Pencerenin sol üst köşesine göre işaretçinin x ve y koordinatlarını belirtir.
@@ -1258,7 +1258,7 @@ afx_msg void OnLButtonUp(
 ### <a name="parameters"></a>Parametreler
 
 *nFlags*<br/>
-'ndaki Kullanıcının değiştirici tuşlarına basmış olup olmadığını gösterir. Olası değerler için bkz. [WM_LBUTTONUP bildiriminde](/windows/win32/inputdev/wm-lbuttonup) *wParam* parametresi.
+'ndaki Kullanıcının değiştirici tuşlarına basmış olup olmadığını gösterir. Olası değerler için [WM_LBUTTONUP bildiriminde](/windows/win32/inputdev/wm-lbuttonup) *wParam* parametresine bakın.
 
 *seçeneğinin*<br/>
 'ndaki Pencerenin sol üst köşesine göre işaretçinin x ve y koordinatlarını belirtir.
@@ -1267,7 +1267,7 @@ afx_msg void OnLButtonUp(
 
 ##  <a name="onmenubuttontoolhittest"></a>CFrameWndEx:: OnMenuButtonToolHitTest
 
-Bir `CMFCToolBarButton` nesne bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.
+Bir `CMFCToolBarButton` nesnesi WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnMenuButtonToolHitTest(
@@ -1308,7 +1308,7 @@ afx_msg LRESULT OnMenuChar(
 'ndaki Basılan anahtarın karakter kodu.
 
 *nFlags*<br/>
-'ndaki Görünen menü bir alt menü ise, MF_POPUP bayrağını içerir; görünen menü bir denetim menüsü ise, MF_SYSMENU bayrağını içerir.
+'ndaki Görünen menü bir alt menü ise MF_POPUP bayrağını içerir; görünen menü bir denetim menüsü ise, MF_SYSMENU bayrağını içerir.
 
 *pMenu*<br/>
 'ndaki Menü işaretçisi.
@@ -1336,7 +1336,7 @@ afx_msg void OnMouseMove(
 ### <a name="parameters"></a>Parametreler
 
 *nFlags*<br/>
-'ndaki Kullanıcının değiştirici tuşlarına bastığı anlamına gelir. Olası değerler için bkz. [WM_MOUSEMOVE bildiriminde](/windows/win32/inputdev/wm-mousemove) *wParam* parametresi.
+'ndaki Kullanıcının değiştirici tuşlarına bastığı anlamına gelir. Olası değerler için [WM_MOUSEMOVE bildiriminde](/windows/win32/inputdev/wm-mousemove) *wParam* parametresine bakın.
 
 *seçeneğinin*<br/>
 'ndaki Pencerenin sol üst köşesine göre işaretçinin x ve y koordinatlarını belirtir.
@@ -1397,7 +1397,7 @@ afx_msg void OnNcCalcSize(
 'ndaki Uygulamanın geçerli bir istemci alanı belirtmesi gerektiğinde TRUE; Aksi takdirde, FALSE.
 
 *lpncsp*<br/>
-'ndaki Çerçeve boyutu değişikliklerini `NCCALCSIZE_PARAMS` içeren bir yapıya yönelik işaretçi.
+'ndaki Çerçeve boyutu değişikliklerini içeren `NCCALCSIZE_PARAMS` yapısına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1416,7 +1416,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi Numaralandırılmış değer ile karşılaştı. Olası değerler listesi için bkz. [WM_NCHITTEST Notification](/windows/win32/inputdev/wm-nchittest).
+Bir işaretçi Numaralandırılmış değer ile karşılaştı. Olası değerler listesi için bkz. [WM_NCHITTEST bildirimi](/windows/win32/inputdev/wm-nchittest).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1433,7 +1433,7 @@ afx_msg void OnNcMouseMove(
 ### <a name="parameters"></a>Parametreler
 
 *nHitTest*<br/>
-'ndaki Bir işaretçi Numaralandırılmış değer ile karşılaştı. Olası değerler listesi için bkz. [WM_NCHITTEST Notification](/windows/win32/inputdev/wm-nchittest).
+'ndaki Bir işaretçi Numaralandırılmış değer ile karşılaştı. Olası değerler listesi için bkz. [WM_NCHITTEST bildirimi](/windows/win32/inputdev/wm-nchittest).
 
 *seçeneğinin*<br/>
 'ndaki Ekran koordinatlarındaki işaretçinin konumu.
@@ -1489,7 +1489,7 @@ afx_msg LRESULT OnPostPreviewFrame(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 döndürür.
+Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1506,7 +1506,7 @@ afx_msg LRESULT OnPowerBroadcast(
 ### <a name="parameters"></a>Parametreler
 
 *WB*<br/>
-'ndaki Güç yönetimi olayı. Olası değerler listesi için bkz. [WM_POWERBROADCAST Message](/windows/win32/Power/wm-powerbroadcast).
+'ndaki Güç yönetimi olayı. Olası değerler listesi için bkz. [WM_POWERBROADCAST iletisi](/windows/win32/Power/wm-powerbroadcast).
 
 *'nin*<br/>
 'ndaki Bu parametre kullanılmaz.
@@ -1564,7 +1564,7 @@ virtual void OnSetPreviewMode(
 'ndaki Baskı önizlemeyi etkinleştirmek için TRUE; Baskı önizlemeyi devre dışı bırakmak için FALSE.
 
 *pState*<br/>
-'ndaki `CPrintPreviewState` Çerçeve durumu yapısına yönelik işaretçi.
+'ndaki `CPrintPreviewState` çerçeve durumu yapısına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1594,7 +1594,7 @@ afx_msg LRESULT OnSetText(
 
 ##  <a name="onshowcustomizepane"></a>CFrameWndEx:: OnShowCustomizePane
 
-Bir `QuickCustomizePane`gösterdiği zaman Framework tarafından çağırılır.
+`QuickCustomizePane`görüntülediğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnShowCustomizePane(
@@ -1678,7 +1678,7 @@ afx_msg void OnSize(
 ### <a name="parameters"></a>Parametreler
 
 *nTür*<br/>
-'ndaki Yeniden boyutlandırma türü. Olası değerler için bkz. [WM_SIZE bildiriminde](/windows/win32/winmsg/wm-size) *wParam* parametresi.
+'ndaki Yeniden boyutlandırma türü. Olası değerler için [WM_SIZE bildiriminde](/windows/win32/winmsg/wm-size) *wParam* parametresine bakın.
 
 *yazmaç*<br/>
 'ndaki Çerçevenin piksel cinsinden yeni genişliği.
@@ -2037,7 +2037,7 @@ void SetupToolbarMenu(
 ### <a name="parameters"></a>Parametreler
 
 *Menü*<br/>
-'ndaki Değiştirilecek `CMenu` bir nesne.
+'ndaki Değiştirilecek `CMenu` nesne.
 
 *Uıviewusertoolbarcmdfirst*<br/>
 'ndaki Kullanıcı tanımlı ilk komut.

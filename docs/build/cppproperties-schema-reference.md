@@ -4,11 +4,11 @@ ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
 ms.openlocfilehash: d59fca412a26d08f88ccbda20a2c0444cf33b1cb
-ms.sourcegitcommit: 6c1960089b92d007fc28c32af1e4bef0f85fdf0c
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556675"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856819"
 ---
 # <a name="cpppropertiesjson-reference"></a>CppProperties. JSON başvurusu
 
@@ -64,7 +64,7 @@ Note: `msvc-x86` ve `msvc-x64` değerleri yalnızca eski nedenlerden dolayı des
 
 Visual Studio, Microsoft C++ 'a karşılık gelen geliştirici komut istemi eşleyen aşağıdaki önceden tanımlanmış ortamları sağlar. Bu ortamlarından birini dağıttığınızda, şu makro söz dizimine sahip `env` genel özelliğini kullanarak ortam değişkenlerine başvurabilirsiniz: $ {env.\<DEĞIŞKEN >}.
 
-|Değişken Adı|Açıklama|
+|Değişken adı|Açıklama|
 |-----------|-----------------|
 |vsdev|Varsayılan Visual Studio ortamı|
 |msvc_x86|X86 araçlarını kullanarak x86 için derleme|
@@ -77,7 +77,7 @@ Visual Studio, Microsoft C++ 'a karşılık gelen geliştirici komut istemi eşl
 
 Linux iş yükü yüklendiğinde, Linux ve WSL 'yi uzaktan hedeflemek için aşağıdaki ortamlar mevcuttur:
 
-|Değişken Adı|Açıklama|
+|Değişken adı|Açıklama|
 |-----------|-----------------|
 |linux_x86|X86 Linux 'u uzaktan hedefleyin|
 |linux_x64|X64 Linux 'u uzaktan hedefleyin|
@@ -162,7 +162,7 @@ Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve di
 
 İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++ C/**  > **Gelişmiş** ' e giderek ve **günlük kaydını** **true**olarak ayarlayarak sorun gidermeye devam edebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
 
-![Tanılama günlükleri](media/diagnostic-logging.png)
+![Tanılama günlüğüne kaydetme](media/diagnostic-logging.png)
 
 Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster C++ : görsel günlük**' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 
