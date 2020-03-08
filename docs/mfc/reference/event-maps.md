@@ -5,11 +5,11 @@ helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ms.openlocfilehash: 34741dc05efe77c0932343739540370f54db6008
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907903"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855627"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -19,7 +19,7 @@ Microsoft Foundation Class Kitaplığı, olayları tetikiçin iyileştirilmiş b
 
 [!code-cpp[NVC_MFCAxCtl#16](../../mfc/reference/codesnippet/cpp/event-maps_1.cpp)]
 
-`EVENT_STOCK_CLICK` Makro, denetimin fare tıklaması her algıladığında bir stok tıklama olayını tetikleyeceği anlamına gelir. Diğer stok olaylarının daha ayrıntılı bir listesi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek için de kullanılabilir.
+`EVENT_STOCK_CLICK` makrosu, denetimin fare tıklaması her algıladığında bir stok tıklama olayını tetikleyeceği anlamına gelir. Diğer stok olaylarının daha ayrıntılı bir listesi için bkz. [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek için de kullanılabilir.
 
 Olay eşleme makroları önemli olsa da, genellikle bunları doğrudan eklemeyin. Bunun nedeni, **Özellikler** penceresinin ( **sınıf görünümü**) olay tetikleme işlevlerini olaylar ile ilişkilendirmek için kullandığınızda kaynak dosyalarınızda otomatik olarak olay eşleme girişleri oluşturmasıdır. Herhangi bir olay eşleme girişi düzenlemek veya eklemek istediğiniz zaman, **Özellikler** penceresini kullanabilirsiniz.
 
@@ -51,7 +51,7 @@ MFC, olay eşlemelerini desteklemek için aşağıdaki makroları sağlar:
 
 ##  <a name="declare_event_map"></a>DECLARE_EVENT_MAP
 
-Programınızdaki `COleControl`her türetilmiş sınıf, denetiminizin tetikleneceği olayları belirtmek için bir olay eşlemesi sağlayabilir.
+Programınızdaki her bir `COleControl`türetilmiş sınıf, denetiminizin tetikleneceği olayları belirtmek için bir olay eşlemesi sağlayabilir.
 
 ```cpp
 DECLARE_EVENT_MAP()
@@ -59,9 +59,9 @@ DECLARE_EVENT_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf bildirimindeki sonundaki DECLARE_EVENT_MAP makrosunu kullanın. Ardından, sınıfının üye işlevlerini tanımlayan. cpp dosyasında, denetim olaylarının her biri için BEGIN_EVENT_MAP makrosunu, makro girişlerini ve olay listesinin sonunu bildirmek için END_EVENT_MAP makrosunu kullanın.
+Sınıf bildirimindeki sonundaki DECLARE_EVENT_MAP makrosunu kullanın. Ardından, sınıfının üye işlevlerini tanımlayan. cpp dosyasında, denetim olaylarının her biri için makro girişlerini ve olay listesinin sonunu bildirmek için END_EVENT_MAP makrosunu BEGIN_EVENT_MAP kullanın.
 
-Olay haritaları hakkında daha fazla bilgi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md).
+Olay haritaları hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -85,9 +85,9 @@ Sınıfın temel sınıfının adını *belirtir.*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, BEGIN_EVENT_MAP makrosu ile olay haritasını başlatın, sonra olaylarınızın her biri için makro girdilerini ekleyin ve olay haritasını END_EVENT_MAP makrosu ile doldurun.
+Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, olay haritasını BEGIN_EVENT_MAP makroyla başlatın, sonra olaylarınızın her biri için makro girişlerini ekleyin ve olay haritasını END_EVENT_MAP makroyla doldurun.
 
-Olay haritaları ve BEGIN_EVENT_MAP makrosu hakkında daha fazla bilgi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md).
+Olay haritaları ve BEGIN_EVENT_MAP makrosu hakkında daha fazla bilgi için, [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md)makalesine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -126,13 +126,13 @@ Olay tetikleme işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* parametresi, `VTS_` sabitlerin değerlerinin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
+*VtsParams* parametresi, `VTS_` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
-bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından OLE yazı tipi nesnesinin `IFontDisp` arabirimine yönelik bir işaretçi içeren bir liste belirtir.
+bir RGB renk değerini temsil eden 32 bitlik bir tamsayı içeren bir liste ve ardından OLE yazı tipi nesnesinin `IFontDisp` arabirimine bir işaretçi gelir.
 
-`VTS_` Sabitler ve anlamları aşağıdaki gibidir:
+`VTS_` sabitleri ve anlamları aşağıdaki gibidir:
 
 |Sembol|Parametre türü|
 |------------|--------------------|
@@ -165,7 +165,7 @@ bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından OLE yazı
 |VTS_YSIZE_HIMETRIC|OLE_YSIZE_HIMETRIC|
 
 > [!NOTE]
-> Değişken veri sabitine bir işaretçi sağlayan, VTS_FONT ve VTS_PICTURE hariç olmak üzere tüm değişken türleri için ek VARIANT sabitleri tanımlanmıştır. Bu sabitler, `VTS_Pconstantname` kuralı kullanılarak adlandırılmaktadır. Örneğin, VTS_PCOLOR, VTS_COLOR sabiti için bir işaretçidir.
+> Değişken veri sabitine bir işaretçi sağlayan VTS_FONT ve VTS_PICTURE dışında tüm değişken türleri için ek değişken sabitleri tanımlanmıştır. Bu sabitler `VTS_Pconstantname` kuralı kullanılarak adlandırılmaktadır. Örneğin, VTS_PCOLOR VTS_COLOR sabiti için bir işaretçidir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -199,13 +199,13 @@ Olay harekete geçirildiğinde denetim kapsayıcısına geçirilen parametreleri
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişkeni, `VTS_` sabitlerin değerlerinin boşlukla ayrılmış bir listesidir. Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örneğin:
+*VtsParams* bağımsız değişkeni, `VTS_` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örnek:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
-bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından OLE yazı tipi nesnesinin `IFontDisp` arabirimine yönelik bir işaretçi içeren bir liste belirtir.
+bir RGB renk değerini temsil eden 32 bitlik bir tamsayı içeren bir liste ve ardından OLE yazı tipi nesnesinin `IFontDisp` arabirimine bir işaretçi gelir.
 
-`VTS_` Sabitlerin listesi için bkz. [event_custom](#event_custom).
+`VTS_` sabitlerin listesi için bkz. [event_custom](#event_custom).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -240,7 +240,7 @@ BOOL memberFxn(
    LPCRECT  lpRect);
 ```
 
-*LpMsg*, *hwndParent*ve *lpRect* parametrelerinin değerleri, `IOleObject::DoVerb` üye işlevinin karşılık gelen parametrelerinden alınır.
+*LpMsg*, *HWndParent*ve *lprect* parametrelerinin değerleri `IOleObject::DoVerb` member işlevinin karşılık gelen parametrelerinden alınır.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -264,9 +264,9 @@ Fiil çağrıldığında Framework tarafından çağrılan işlev.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart fiil dizini `OLEIVERB_`, bir eylem tarafından izlenir. OLEIVERB_SHOW, OLEIVERB_HIDE ve OLEIVERB_UIACTIVATE Standart fiillerin bazı örnekleridir.
+Standart fiil dizini `OLEIVERB_`ve ardından bir eylem gelir. OLEIVERB_SHOW, OLEIVERB_HIDE ve OLEIVERB_UIACTIVATE Standart fiillerin bazı örnekleridir.
 
-*MemberFxn* parametresi olarak kullanılacak işlev prototipinin açıklaması için bkz. [ON_OLEVERB](#on_oleverb) .
+*MemberFxn* parametresi olarak kullanılacak işlev prototipini açıklaması için [ON_OLEVERB](#on_oleverb) bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 

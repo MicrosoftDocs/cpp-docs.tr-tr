@@ -131,11 +131,11 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
 ms.openlocfilehash: 1ebdb18254171d28b5d5e02367596b79142df284
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626183"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854032"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 
@@ -151,13 +151,13 @@ class CRecordset : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRecordset:: CRecordset](#crecordset)|`CRecordset` nesnesi oluşturur. Türetilmiş sınıfınız bunu çağıran bir Oluşturucu sağlamalıdır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRecordset:: AddNew](#addnew)|Yeni bir kayıt eklemeye hazırlar. Ekleme işleminin tamamlanabilmesi için `Update` çağırın.|
 |[CRecordset:: CanAppend](#canappend)|`AddNew` üye işlevi aracılığıyla kayıt kümesine yeni kayıtlar eklenebileceği sıfır dışında bir değer döndürür.|
@@ -217,7 +217,7 @@ class CRecordset : public CObject
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRecordset:: m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC ifade tanıtıcısını içerir. `HSTMT` yazın.|
 |[CRecordset:: m_nFields](#m_nfields)|Kayıt kümesindeki alan veri üyelerinin sayısını içerir. `UINT` yazın.|
@@ -627,7 +627,7 @@ Yalnızca geçerli sonuç kümesinde imleç ile tamamen işiniz bittiğinde `Flu
 
 Önceden tanımlanmış bir sorgu çıkış parametresi veya giriş/çıkış parametreleri kullanıyorsa, bu parametre değerlerini almak için `FALSE` (0 değeri) görünene kadar `FlushResultSet` çağırmanız gerekir.
 
-`FlushResultSet` ODBC API işlevini `SQLMoreResults`çağırır. `SQLMoreResults` SQL_ERROR veya SQL_INVALID_HANDLE döndürürse `FlushResultSet` bir özel durum oluşturur. `SQLMoreResults`hakkında daha fazla bilgi için bkz. Windows SDK.
+`FlushResultSet` ODBC API işlevini `SQLMoreResults`çağırır. `SQLMoreResults` SQL_ERROR veya SQL_INVALID_HANDLE döndürürse `FlushResultSet` bir özel durum oluşturulur. `SQLMoreResults`hakkında daha fazla bilgi için bkz. Windows SDK.
 
 `FlushResultSet`çağırmak istiyorsanız, saklı yordamınız bağlantılı alanlara sahip olmalıdır.
 
@@ -739,7 +739,7 @@ Bir alanın adı.
 alan değerini depolayacak bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) nesnesine başvuru.
 
 *N,*<br/>
-Alanın ODBC C veri türü. Varsayılan DEFAULT_FIELD_TYPE değerini kullanarak, aşağıdaki tabloya bağlı olarak SQL veri türünden C veri türünü belirleme `GetFieldValue` zorlar. Aksi takdirde, veri türünü doğrudan belirtebilir veya uyumlu bir veri türü seçebilirsiniz; Örneğin, herhangi bir veri türünü SQL_C_CHAR ' ye kaydedebilirsiniz.
+Alanın ODBC C veri türü. DEFAULT_FIELD_TYPE varsayılan değerini kullanarak, aşağıdaki tabloya bağlı olarak, SQL veri türü ' nden C veri türünü belirleme `GetFieldValue` zorlar. Aksi takdirde, veri türünü doğrudan belirtebilir veya uyumlu bir veri türü seçebilirsiniz; Örneğin, SQL_C_CHAR herhangi bir veri türünü saklayabilirsiniz.
 
 |C veri türü|SQL veri türü|
 |-----------------|-------------------|
@@ -772,7 +772,7 @@ Toplu satır getirme uyguladıysanız geçerli kayıt, her zaman bir satır küm
 > [!NOTE]
 >  `CRecordset`türetmeden bir kayıt kümesi nesnesi bildirirseniz ODBC Imleç kitaplığı yüklü değildir. İmleç kitaplığı, kayıt kümesinin en az bir tane bağlantılı sütunu olmasını gerektirir; Ancak `CRecordset` doğrudan kullandığınızda, sütunlardan hiçbiri bağlanmadı. İmleç kitaplığının yüklenip yüklenmeyeceğini, [CDatabase:: OpenEx](../../mfc/reference/cdatabase-class.md#openex) ve [CDatabase:: Open](../../mfc/reference/cdatabase-class.md#open) işlevlerini üye olarak denetleyin.
 
-`GetFieldValue` ODBC API işlevini `SQLGetData`çağırır. Sürücünüz alan değerinin gerçek uzunluğu için SQL_NO_TOTAL değerini çıktıysa `GetFieldValue` bir özel durum oluşturur. `SQLGetData`hakkında daha fazla bilgi için bkz. Windows SDK.
+`GetFieldValue` ODBC API işlevini `SQLGetData`çağırır. Sürücünüz alan değerinin gerçek uzunluğu için SQL_NO_TOTAL değerini çıktıysa, `GetFieldValue` bir özel durum oluşturur. `SQLGetData`hakkında daha fazla bilgi için bkz. Windows SDK.
 
 ### <a name="example"></a>Örnek
 
@@ -1040,7 +1040,7 @@ Kayıt kümesi silinmiş bir kayıtta konumlandırılmışsa sıfır dışı; Ak
 
 Bir kayda kayırsanız ve `IsDeleted` TRUE (sıfır dışında) döndürürse, başka bir kayıt kümesi işlemini gerçekleştirebilmek için önce başka bir kayda kaydırmanız gerekir.
 
-`IsDeleted` sonucu, kayıt kümeniz, kayıt kümenizin güncelleştirilebilir olup olmadığını, kayıt kümeniz açıldığında `CRecordset::skipDeletedRecords` seçeneğini belirtdiğinize bakılmaksızın, Sürücü paketlerinizin kayıtları sildiği ve birden çok olup olmadığı gibi birçok etkene bağlıdır. kullanıcılarına.
+`IsDeleted` sonucu, kayıt kümeniz, kayıt kümenizin güncelleştirilebilir olup olmadığı, kayıt kümesini açarken `CRecordset::skipDeletedRecords` seçeneğini belirtdiğinize bakılmaksızın, Sürücü paketlerinizin kayıtları sildiği ve birden çok kullanıcı olup olmadığı gibi birçok etkene bağlıdır.
 
 `CRecordset::skipDeletedRecords` ve sürücü paketleme hakkında daha fazla bilgi için, [Açık](#open) üye işlevine bakın.
 
@@ -1213,7 +1213,7 @@ Kayıt kümesi sınıfındaki parametre veri üyelerinin sayısını içerir; di
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi sınıfınızın herhangi bir parametre veri üyesi varsa, sınıfın oluşturucusunun doğru sayıyla `m_nParams` başlatması gerekir. `m_nParams` değeri varsayılan olarak 0 ' dır. Parametre veri üyelerini (el ile yapmanız gereken) eklerseniz, parametre sayısını yansıtmak için sınıf oluşturucusunda bir başlatma da eklemeniz gerekir (en azından, `m_strFilter` veya `m_strSort` ' ' yer tutucuları sayısı kadar büyük olması gerekir) dize).
+Kayıt kümesi sınıfınızın herhangi bir parametre veri üyesi varsa, sınıfın oluşturucusunun doğru sayıyla `m_nParams` başlatması gerekir. `m_nParams` değeri varsayılan olarak 0 ' dır. Parametre veri üyelerini (el ile yapmanız gereken) eklerseniz, parametre sayısını yansıtmak için sınıf oluşturucusunda bir başlatma da eklemeniz gerekir (en azından, `m_strFilter` veya `m_strSort` dizesindeki ' ' yer tutucuları sayısı kadar büyük olması gerekir).
 
 Çerçeve, kayıt kümesinin sorgusunu parametrelendirtiğinde bu numarayı kullanır.
 
@@ -1316,7 +1316,7 @@ Aşağıdaki *tabloda wFetchType için olası*değerler, `Move` *wFetchType* ve 
 |SQL_FETCH_BOOKMARK|Yer işareti değeri *nrows*'a karşılık gelen satırda başlayan satır kümesi.|[SetBookmark](#setbookmark)|
 
 > [!NOTE]
->  Salt iletme kayıt kümeleri için `Move` yalnızca *wFetchType*için SQL_FETCH_NEXT değeriyle geçerlidir.
+>  Yalnızca ileri kayıt kümeleri için `Move` yalnızca *wFetchType*için SQL_FETCH_NEXT değeriyle geçerlidir.
 
 > [!CAUTION]
 >  `Move` çağrısı, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Kayıt kümesinde herhangi bir kayıt olup olmadığını belirleme, [IsBOF](#isbof) ve [IOF](#iseof)'yi çağırın.
@@ -1703,7 +1703,7 @@ ODBC kayıt kümeleri için, mutlak konum ayarı, kayıt kümesindeki ilk kayda 
 Ayrıca, `SetAbsolutePosition`negatif değerler geçirebilirsiniz. Bu durumda, kayıt kümesinin konumu kayıt kümesinin sonundan değerlendirilir. Örneğin, `SetAbsolutePosition( -1 )` geçerli kayıt işaretçisini kayıt kümesindeki son kayda taşıır.
 
 > [!NOTE]
->  Mutlak konum, vekil kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Önceki kayıtlar silindiğinde bir kaydın konumu değiştiği için, yer işaretleri hâlâ belirli bir konuma geri dönmek ve döndürmek için önerilen yoldur. Ayrıca, bir kayıt kümesi içindeki bireysel kayıtların sırası, sıralama kullanılarak bir SQL ifadesiyle oluşturulmadığı müddetçe, belirli bir kaydın aynı mutlak konuma sahip olduğundan emin olamaz.yan tümce.
+>  Mutlak konum, vekil kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Önceki kayıtlar silindiğinde bir kaydın konumu değiştiği için, yer işaretleri hâlâ belirli bir konuma geri dönmek ve döndürmek için önerilen yoldur. Ayrıca, bir kayıt kümesi içindeki bireysel kayıtların sırası, **order by** yan tümcesi KULLANıLARAK bir SQL ifadesiyle oluşturulmadığı müddetçe, belirli bir kaydın aynı mutlak konuma sahip olduğundan emin olamaz.
 
 Kayıt kümesi gezintisi ve yer işaretleri hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
@@ -1757,7 +1757,7 @@ Alanları değiştirilmemiş olarak işaretlemek, alanın güncelleştirilmediğ
 > [!NOTE]
 >  Bu üye işlevi, toplu satır getirme kullanan kayıt kümelerinde uygulanabilir değildir. Toplu satır getirmeyi uyguladıysanız `SetFieldDirty`, başarısız bir onaylama işlemine neden olur. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Çerçeve, veri kaynağındaki kayda kayıt alanı değişimi (RFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, nadiren `SetFieldDirty` çağırmanız gerekecektir, ancak bazen, alan verilerinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz üyesidir.
+Çerçeve, veri kaynağındaki kayda kayıt alanı değişimi (RFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, nadiren `SetFieldDirty` çağırmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz.
 
 > [!CAUTION]
 >  Yalnızca [Edit](#edit) veya [AddNew](#addnew)çağrıldıktan sonra bu üye işlevini çağırın.
@@ -1919,7 +1919,7 @@ Bu sanal üye işlevi, toplu satır getirme kullanılırken tek bir getirme sır
 Kayıt kümesinin satır kümesi boyutunu başlangıçta ayarlamak için `Open` çağrılmadan önce `SetRowsetSize` çağırın. Toplu satır getirmeyi uygularken varsayılan satır kümesi boyutu 25 ' tir.
 
 > [!NOTE]
->  `SetRowsetSize`çağrılırken dikkatli olun. Veriler için el ile depolama alanı ayırdıysanız (`Open`dwOptions parametresinin `CRecordset::userAllocMultiRowBuffers` seçeneği tarafından belirtildiği gibi), `SetRowsetSize`çağırdıktan sonra, ancak herhangi bir imleç gerçekleştirmeden önce bu depolama arabelleğini yeniden ayırmanız gerekip gerekmediğini denetlemeniz gerekir Gezinti işlemi.
+>  `SetRowsetSize`çağrılırken dikkatli olun. Veriler için el ile depolama alanı ayırdıysanız (`Open`dwOptions parametresinin `CRecordset::userAllocMultiRowBuffers` seçeneği tarafından belirtildiği gibi), `SetRowsetSize`çağırdıktan sonra, imleç gezinme işlemini gerçekleştirmeden önce bu depolama arabelleklerini yeniden ayırmanız gerekip gerekmediğini denetlemeniz gerekir.
 
 Satır kümesi boyutu için geçerli ayarı almak üzere [GetRowsetSize](#getrowsetsize)çağırın.
 

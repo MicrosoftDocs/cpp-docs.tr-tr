@@ -75,11 +75,11 @@ helpviewer_keywords:
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
 ms.openlocfilehash: 1555209ce0f1c2caacbfb4b01107775db948d230
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505948"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78890713"
 ---
 # <a name="cimagelist-class"></a>CImageList sınıfı
 
@@ -95,22 +95,22 @@ class CImageList : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CImageList:: CImageList](#cimagelist)|Bir `CImageList` nesnesi oluşturur.|
+|[CImageList:: CImageList](#cimagelist)|`CImageList` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CImageList:: Add](#add)|Görüntü listesine bir resim veya resim ekler.|
-|[CImageList:: Attach](#attach)|Bir `CImageList` nesne için bir görüntü listesi ekler.|
+|[CImageList:: Attach](#attach)|`CImageList` nesnesine bir görüntü listesi ekler.|
 |[CImageList:: BeginDrag](#begindrag)|Bir görüntüyü sürüklemeye başlar.|
-|[CImageList:: Copy](#copy)|Bir `CImageList` nesne içindeki bir görüntüyü kopyalar.|
-|[CImageList:: Create](#create)|Bir görüntü listesini başlatır ve bir `CImageList` nesneye ekler.|
+|[CImageList:: Copy](#copy)|`CImageList` nesne içindeki bir görüntüyü kopyalar.|
+|[CImageList:: Create](#create)|Bir görüntü listesini başlatır ve bir `CImageList` nesnesine ekler.|
 |[CImageList::D Eleteımagelist](#deleteimagelist)|Bir görüntü listesini siler.|
-|[CImageList::D eleteTempMap](#deletetempmap)|Tarafından `CImageList` [](../../mfc/reference/cwinapp-class.md) oluşturulangeçicinesnelerisilmekiçinCWinAppboştakalmasüresiişleyicisitarafından`FromHandle`çağırılır.|
-|[CImageList::D etach](#detach)|Bir görüntü listesi nesnesini bir `CImageList` nesneden ayırır ve bir görüntü listesine bir tanıtıcı döndürür.|
+|[CImageList::D eleteTempMap](#deletetempmap)|`FromHandle`tarafından oluşturulan herhangi bir geçici `CImageList` nesnesini silmek için [CWinApp](../../mfc/reference/cwinapp-class.md) boşta kalma süresi işleyicisi tarafından çağırılır.|
+|[CImageList::D etach](#detach)|`CImageList` nesnesinden bir görüntü listesi nesnesini ayırır ve bir görüntü listesine bir tanıtıcı döndürür.|
 |[CImageList::D Oygenter](#dragenter)|Sürükleme işlemi sırasında güncelleştirmeleri kilitler ve sürükle görüntüsünü belirtilen konumda görüntüler.|
 |[CImageList::D ragLeave](#dragleave)|Pencerenin kilidini açar ve pencere güncelleştirileyebilmesi için sürükle resmini gizler.|
 |[CImageList::D ragMove](#dragmove)|Sürükle ve bırak işlemi sırasında sürüklediğiniz resmi taşıdır.|
@@ -120,13 +120,13 @@ class CImageList : public CObject
 |[CImageList::D Rampadıwindirect](#drawindirect)|Görüntü listesinden bir resim çizer.|
 |[CImageList:: EndDrag](#enddrag)|Bir sürükleme işlemini sonlandırır.|
 |[CImageList:: ExtractIcon](#extracticon)|Görüntü listesindeki bir görüntüye ve maskeye dayalı bir simge oluşturur.|
-|[CImageList:: FromHandle](#fromhandle)|Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnenin işaretçisini döndürür. Bir `CImageList` nesne tutamaya iliştirilmişse, geçici `CImageList` bir nesne oluşturulur ve eklenir.|
-|[CImageList:: Fromhandlekalıcı](#fromhandlepermanent)|Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnenin işaretçisini döndürür. Bir `CImageList` nesne tutamaya iliştirilmezse null döndürülür.|
+|[CImageList:: FromHandle](#fromhandle)|Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnesine yönelik bir işaretçi döndürür. Bir `CImageList` nesnesi tutamaya iliştirilmişse, geçici bir `CImageList` nesnesi oluşturulur ve eklenir.|
+|[CImageList:: Fromhandlekalıcı](#fromhandlepermanent)|Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnesine yönelik bir işaretçi döndürür. Bir `CImageList` nesnesi tutamaya iliştirilmezse NULL döndürülür.|
 |[CImageList:: GetBkColor](#getbkcolor)|Bir görüntü listesi için geçerli arka plan rengini alır.|
 |[CImageList:: GetDragImage](#getdragimage)|Sürükleme için kullanılan geçici görüntü listesini alır.|
 |[CImageList:: GetImageCount](#getimagecount)|Bir görüntü listesindeki görüntü sayısını alır.|
 |[CImageList:: GetImageInfo](#getimageinfo)|Bir görüntüyle ilgili bilgileri alır.|
-|[CImageList:: GetSafeHandle](#getsafehandle)|Alır `m_hImageList`.|
+|[CImageList:: GetSafeHandle](#getsafehandle)|`m_hImageList` öğesini alır.|
 |[CImageList:: Read](#read)|Bir arşivden görüntü listesini okur.|
 |[CImageList:: Remove](#remove)|Görüntü listesinden bir görüntüyü kaldırır.|
 |[CImageList:: Replace](#replace)|Görüntü listesindeki bir görüntüyü yeni bir görüntüyle değiştirir.|
@@ -138,13 +138,13 @@ class CImageList : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CImageList:: operator HıMAGELIST](#operator_himagelist)|Öğesine eklenen HıMAGELIST 'i `CImageList`döndürür.|
+|[CImageList:: operator HıMAGELIST](#operator_himagelist)|`CImageList`eklenmiş HıMAGELIST 'i döndürür.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CImageList:: m_hImageList](#m_himagelist)|Bu nesneye eklenen görüntü listesini içeren bir tanıtıcı.|
 
@@ -154,7 +154,7 @@ class CImageList : public CObject
 
 Bu denetim (ve bu nedenle `CImageList` sınıfı) yalnızca Windows 95/98 ve Windows NT sürüm 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Kullanma `CImageList`hakkında daha fazla bilgi için bkz. [denetimler](../../mfc/controls-mfc.md) ve [CImageList kullanma](../../mfc/using-cimagelist.md).
+`CImageList`kullanma hakkında daha fazla bilgi için bkz. [denetimler](../../mfc/controls-mfc.md) ve [CImageList kullanma](../../mfc/using-cimagelist.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -210,7 +210,7 @@ Başarılı olursa ilk yeni görüntünün sıfır tabanlı dizini; Aksi takdird
 
 ##  <a name="attach"></a>CImageList:: Attach
 
-Bir `CImageList` nesneye görüntü listesi eklemek için bu işlevi çağırın.
+`CImageList` nesnesine bir görüntü listesi eklemek için bu işlevi çağırın.
 
 ```
 BOOL Attach(HIMAGELIST hImageList);
@@ -253,7 +253,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, sürüklemek için kullanılan geçici bir görüntü listesi oluşturur. Görüntü, belirtilen görüntüyü ve maskesini geçerli imleç ile birleştirir. Sonraki WM_MOUSEMOVE iletilerine yanıt olarak, `DragMove` üye işlevini kullanarak sürükleme görüntüsünü taşıyabilirsiniz. Sürükleme işlemini sonlandırmak için `EndDrag` üye işlevini kullanabilirsiniz.
+Bu işlev, sürüklemek için kullanılan geçici bir görüntü listesi oluşturur. Görüntü, belirtilen görüntüyü ve maskesini geçerli imleç ile birleştirir. Sonraki WM_MOUSEMOVE iletilerine yanıt olarak, sürükleme görüntüsünü `DragMove` member işlevini kullanarak taşıyabilirsiniz. Sürükleme işlemini sonlandırmak için `EndDrag` üye işlevini kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -261,7 +261,7 @@ Bu işlev, sürüklemek için kullanılan geçici bir görüntü listesi oluştu
 
 ##  <a name="cimagelist"></a>CImageList:: CImageList
 
-Bir `CImageList` nesnesi oluşturur.
+`CImageList` nesnesi oluşturur.
 
 ```
 CImageList();
@@ -269,7 +269,7 @@ CImageList();
 
 ##  <a name="copy"></a>CImageList:: Copy
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi Win32 işlevi [ImageList_Copy](/windows/win32/api/commctrl/nf-commctrl-imagelist_copy)davranışını uygular.
+Bu üye işlevi, Windows SDK açıklanan [ImageList_Copy](/windows/win32/api/commctrl/nf-commctrl-imagelist_copy)Win32 işlevinin davranışını uygular.
 
 ```
 BOOL Copy(
@@ -295,13 +295,13 @@ Kopyalama işleminin kaynağı olarak kullanılacak görüntünün sıfır taban
 *uFlags*<br/>
 Yapılacak kopyalama işleminin türünü belirten bit bayrak değeri. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
 |ILCF_MOVE|Kaynak görüntü, hedef görüntünün dizinine kopyalanır. Bu işlem belirli bir görüntünün birden fazla örneğine neden olur. ILCF_MOVE varsayılandır.|
 |ILCF_SWAP|Kaynak ve hedef görüntüleri Exchange görüntü listesi içinde konumlandırır.|
 
 *pSrc*<br/>
-Kopyalama işleminin hedefi olan `CImageList` nesneye yönelik bir işaretçi.
+Kopyalama işleminin hedefi olan `CImageList` nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -355,11 +355,11 @@ Her resmin piksel cinsinden boyutları.
 Her resmin piksel cinsinden boyutları.
 
 *nFlags*<br/>
-Oluşturulacak görüntü listesinin türünü belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir, ancak `ILC_COLOR` değerlerden yalnızca birini içerebilir.
+Oluşturulacak görüntü listesinin türünü belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir, ancak `ILC_COLOR` değerlerinden yalnızca birini içerebilir.
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
-|ILC_COLOR|Diğer ILC_COLOR * bayraklarının Hiçbiri belirtilmediyse, varsayılan davranışı kullanın. Genellikle varsayılan değer ILC_COLOR4 ' dir; Ancak, eski görüntü sürücüleri için varsayılan değer ILC_COLORDDB ' dir.|
+|ILC_COLOR|Diğer ILC_COLOR * bayraklarının Hiçbiri belirtilmediyse, varsayılan davranışı kullanın. Genellikle, varsayılan ILC_COLOR4; Ancak, daha eski görüntü sürücüleri için varsayılan değer ILC_COLORDDB.|
 |ILC_COLOR4|Görüntü listesi için bit eşlem olarak 4 bit (16 renk) cihazdan bağımsız bit eşlem (DIB) bölümü kullanın.|
 |ILC_COLOR8|8 bit DIB bölümü kullanın. Renk tablosu için kullanılan renkler, yarı ton paletle aynı renklerdir.|
 |ILC_COLOR16|16 bit (32/64K renk) DIB bölümü kullanın.|
@@ -384,13 +384,13 @@ Maske oluşturmak için kullanılan renk. Belirtilen bit eşlemdeki bu rengin he
 Görüntülerin kaynak kimliklerini içeren bir dize.
 
 *imagelist1*<br/>
-Bir `CImageList` nesneye başvuru.
+`CImageList` nesnesine bir başvuru.
 
 *nImage1*<br/>
 İlk var olan görüntünün dizini.
 
 *imagelist2*<br/>
-Bir `CImageList` nesneye başvuru.
+`CImageList` nesnesine bir başvuru.
 
 *nImage2*<br/>
 İkinci var olan görüntünün dizini.
@@ -402,7 +402,7 @@ Bir `CImageList` nesneye başvuru.
 İlk görüntüyle ilişkili ikinci görüntünün y ekseninin piksel cinsinden boşluğu.
 
 *pImageList*<br/>
-Bir `CImageList` nesne işaretçisi.
+`CImageList` nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -410,7 +410,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda oluşturursunuz `CImageList` . İlk olarak, oluşturucuyu çağırın ve sonra, `Create`görüntü listesini oluşturan ve bunu `CImageList` nesnesine ekleyen çağırın.
+`CImageList` iki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra görüntü listesini oluşturan ve bunu `CImageList` nesnesine ekleyen `Create`çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -434,7 +434,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ##  <a name="deletetempmap"></a>CImageList::D eleteTempMap
 
-`CWinApp` Boş zamanlı işleyici tarafından otomatik olarak çağrıldığında, `DeleteTempMap` `CImageList` `hImageList` [FromHandle](#fromhandle)tarafından oluşturulan geçici nesneleri siler, ancak `ImageList` nesneyi.
+`CWinApp` boşta kalma süresi işleyicisi tarafından otomatik olarak çağrıldığında, `DeleteTempMap` [FromHandle](#fromhandle)tarafından oluşturulan geçici `CImageList` nesnelerini siler, ancak `ImageList` nesneleriyle geçici olarak ilişkili herhangi bir tanıtıcıyı (`hImageList`) yok etmez.
 
 ```
 static void PASCAL DeleteTempMap();
@@ -446,7 +446,7 @@ static void PASCAL DeleteTempMap();
 
 ##  <a name="detach"></a>CImageList::D etach
 
-Bir görüntü listesi nesnesini bir `CImageList` nesneden ayırmak için bu işlevi çağırın.
+Bir resim listesi nesnesini `CImageList` nesnesinden ayırmak için bu işlevi çağırın.
 
 ```
 HIMAGELIST Detach();
@@ -538,7 +538,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev genellikle bir WM_MOUSEMOVE iletisine yanıt olarak çağırılır. Bir sürükleme işlemine başlamak için `BeginDrag` üye işlevini kullanın.
+Bu işlev genellikle WM_MOUSEMOVE iletisine yanıt olarak çağırılır. Bir sürükleme işlemine başlamak için `BeginDrag` member işlevini kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -591,12 +591,12 @@ Belirtilen cihaz bağlamı içinde çizilecek konum.
 *nStyle*<br/>
 Çizim stilini belirten bayrak. Bu değerlerden biri veya daha fazlası olabilir:
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
 |ILD_BLEND25, ILD_FOCUS|Görüntüyü, sistem vurgu rengiyle yüzde 25 ' i karıştırarak çizer. Görüntü listesi bir maske içermiyorsa, bu değerin etkisi yoktur.|
 |ILD_BLEND50, ILD_SELECTED, ILD_BLEND|Görüntüyü, sistem vurgu rengi ile yüzde 50 karıştırma halinde çizer. Görüntü listesi bir maske içermiyorsa, bu değerin etkisi yoktur.|
 |ILD_MASK|Maskeyi çizer.|
-|ILD_NORMAL|Görüntü listesi için arka plan rengini kullanarak görüntüyü çizer. Arka plan rengi CLR_NONE değeri ise, görüntü maske kullanılarak saydam olarak çizilir.|
+|ILD_NORMAL|Görüntü listesi için arka plan rengini kullanarak görüntüyü çizer. Arka plan rengi CLR_NONE değer ise, görüntü maske kullanılarak saydam olarak çizilir.|
 |ILD_TRANSPARENT|Arka plan renginden bağımsız olarak maskeyi kullanarak görüntüyü saydam şekilde çizer.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -634,16 +634,16 @@ Hedef cihaz bağlamına yönelik işaretçi.
 Belirtilen cihaz bağlamı içinde çizilecek konum.
 
 *SZ*<br/>
-Görüntünün görüntünün sol üst köşesine göre çizilecek bölümünün boyutu. Windows SDK için bkz. [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) içinde *DX* ve *DY* .
+Görüntünün görüntünün sol üst köşesine göre çizilecek bölümünün boyutu. Windows SDK [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) *DX* ve *DY* ' i inceleyin.
 
 *clrBk*<br/>
-Görüntünün arka plan rengi. Windows SDK [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) 'de *rgbbk* bölümüne bakın.
+Görüntünün arka plan rengi. Windows SDK [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) *rgbbk* bölümüne bakın.
 
 *clrFg*<br/>
-Görüntünün ön plan rengi. Windows SDK *Rgbfg* içindeki [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) bakın.
+Görüntünün ön plan rengi. Windows SDK [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) *rgbfg* bölümüne bakın.
 
 *nStyle*<br/>
-Çizim stilini belirten bayrak. Windows SDK [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) Içinde *fStyle* bölümüne bakın.
+Çizim stilini belirten bayrak. Windows SDK [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) *fStyle* bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -700,7 +700,7 @@ Görüntünün çizildiği x ve y koordinatlarını içeren bir [nokta](/previou
 Görüntünün kendisiyle ilgili olarak çizim işleminin sol üst köşesini belirten x ve y koordinatlarını içeren bir [nokta](/previous-versions/dd162805\(v=vs.85\)) yapısı. X koordinatının solunda ve y koordinatı üzerinde bulunan görüntünün pikselleri çizilmez.
 
 *fStyle*<br/>
-Çizim stilini ve isteğe bağlı olarak, kaplama görüntüsünü belirten bayrak. Kaplama görüntüsü hakkında bilgi için açıklamalar bölümüne bakın. MFC varsayılan uygulamasının ILD_NORMAL, görüntü listesi için arka plan rengini kullanarak görüntüyü çizer. Arka plan rengi CLR_NONE değeri ise, görüntü bir maske kullanılarak saydam olarak çizilir.
+Çizim stilini ve isteğe bağlı olarak, kaplama görüntüsünü belirten bayrak. Kaplama görüntüsü hakkında bilgi için açıklamalar bölümüne bakın. MFC varsayılan uygulamasının ILD_NORMAL, görüntü listesi için arka plan rengini kullanarak görüntüyü çizer. Arka plan rengi CLR_NONE değer ise, görüntü bir maske kullanılarak saydam olarak çizilir.
 
 Diğer olası stiller [IMAGELISTDRAWPARAMS](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) yapısının *fStyle* üyesi altında açıklanmıştır.
 
@@ -710,17 +710,17 @@ Raster işlem kodunu belirten değer. Bu kodlar, kaynak dikdörtgenin renk veril
 Diğer olası değerler [IMAGELISTDRAWPARAMS](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) yapısının *dwRop* üyesi altında açıklanmıştır.
 
 *rgbBack*<br/>
-Görüntünün arka plan rengi, varsayılan olarak CLR_DEFAULT. Bu parametre, uygulama tanımlı bir RGB değeri veya aşağıdaki değerlerden biri olabilir:
+Görüntünün arka plan rengi, varsayılan CLR_DEFAULT. Bu parametre, uygulama tanımlı bir RGB değeri veya aşağıdaki değerlerden biri olabilir:
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
 |CLR_DEFAULT|Varsayılan arka plan rengi. Görüntü, görüntü listesi arka plan rengi kullanılarak çizilir.|
 |CLR_NONE|Arka plan rengi yok. Görüntü saydam olarak çizilir.|
 
 *Rgbön*<br/>
-Görüntü ön plan rengi, varsayılan olarak CLR_DEFAULT. Bu parametre, uygulama tanımlı bir RGB değeri veya aşağıdaki değerlerden biri olabilir:
+Varsayılan CLR_DEFAULT görüntü ön plan rengi. Bu parametre, uygulama tanımlı bir RGB değeri veya aşağıdaki değerlerden biri olabilir:
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
 |CLR_DEFAULT|Varsayılan ön plan rengi. Görüntü, ön plan rengi olarak sistem vurgu rengi kullanılarak çizilir.|
 |CLR_NONE|Blend rengi yok. Görüntü, hedef cihaz bağlamının rengi ile karıştırkaydedilir.|
@@ -764,7 +764,7 @@ static void PASCAL EndDrag();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sürükleme işlemine başlamak için `BeginDrag` üye işlevini kullanın.
+Bir sürükleme işlemine başlamak için `BeginDrag` member işlevini kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -789,7 +789,7 @@ Başarılı olursa simgenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, simgeyi oluşturmak için [ImageList_ExtractIcon](/windows/win32/api/commctrl/nf-commctrl-imagelist_extracticon) makrosunun davranışını kullanır. Simge oluşturma ve temizleme hakkında daha fazla bilgi için [ImageList_ExtractIcon](/windows/win32/api/commctrl/nf-commctrl-imagelist_extracticon) makrosunu inceleyin.
+Bu yöntem, simgeyi oluşturmak için [ImageList_ExtractIcon](/windows/win32/api/commctrl/nf-commctrl-imagelist_extracticon) makrosunun davranışını kullanır. Simge oluşturma ve temizleme hakkında daha fazla bilgi için [ImageList_ExtractIcon](/windows/win32/api/commctrl/nf-commctrl-imagelist_extracticon) makroya bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -797,7 +797,7 @@ Bu yöntem, simgeyi oluşturmak için [ImageList_ExtractIcon](/windows/win32/api
 
 ##  <a name="fromhandle"></a>CImageList:: FromHandle
 
-Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnenin işaretçisini döndürür.
+Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnesine yönelik bir işaretçi döndürür.
 
 ```
 static CImageList* PASCAL FromHandle(HIMAGELIST hImageList);
@@ -810,11 +810,11 @@ Görüntü listesini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CImageList` nesne için bir işaretçi; Aksi takdirde null.
+Başarılı olursa `CImageList` nesnesine yönelik bir işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaten bir `CImageList` tanıtıcıya ekli değilse, geçici `CImageList` bir nesne oluşturulur ve eklenir. Bu geçici `CImageList` nesne yalnızca, uygulamanın olay döngüsünde süresi bir sonraki sefer, tüm geçici nesneler silindiği zaman geçerli olur.
+Bir `CImageList` tanıtıcıya zaten iliştirilmişse, geçici bir `CImageList` nesnesi oluşturulur ve eklenir. Bu geçici `CImageList` nesnesi yalnızca uygulamanın olay döngüsünde bir sonraki kez boşta kaldığı zamana kadar geçerlidir. Bu durumda tüm geçici nesneler silinir.
 
 ### <a name="example"></a>Örnek
 
@@ -822,7 +822,7 @@ Zaten bir `CImageList` tanıtıcıya ekli değilse, geçici `CImageList` bir nes
 
 ##  <a name="fromhandlepermanent"></a>CImageList:: Fromhandlekalıcı
 
-Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnenin işaretçisini döndürür.
+Görüntü listesine bir tanıtıcı verildiğinde `CImageList` nesnesine yönelik bir işaretçi döndürür.
 
 ```
 static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
@@ -835,11 +835,11 @@ Görüntü listesini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CImageList` nesne için bir işaretçi; Aksi takdirde null.
+Başarılı olursa `CImageList` nesnesine yönelik bir işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CImageList` nesne tutamaya iliştirilmezse null döndürülür.
+Bir `CImageList` nesnesi tutamaya iliştirilmezse NULL döndürülür.
 
 ### <a name="example"></a>Örnek
 
@@ -855,7 +855,7 @@ COLORREF GetBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CImageList` Nesne arka plan renginin RGB renk değeri.
+`CImageList` nesnesi arka plan renginin RGB renk değeri.
 
 ### <a name="example"></a>Örnek
 
@@ -877,7 +877,7 @@ static CImageList* PASCAL GetDragImage(
 Geçerli sürükleme konumunu alan bir [nokta](/previous-versions/dd162805\(v=vs.85\)) yapısının adresi.
 
 *Lppointhotleke*<br/>
-Sürükleme konumuna göre `POINT` sürükleme resminin sapmasını alan bir yapının adresi.
+Sürükleme konumuna göre sürükleme resminin sapmasını alan `POINT` yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -923,11 +923,11 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapı `IMAGEINFO` , bir görüntü listesindeki bir görüntüyle ilgili bilgiler içerir.
+`IMAGEINFO` yapısı, görüntü listesindeki bir görüntüyle ilgili bilgiler içerir.
 
 ##  <a name="getsafehandle"></a>CImageList:: GetSafeHandle
 
-`m_hImageList` Veri üyesini almak için bu işlevi çağırın.
+`m_hImageList` veri üyesini almak için bu işlevi çağırın.
 
 ```
 HIMAGELIST GetSafeHandle() const;
@@ -949,7 +949,7 @@ Bu nesneye eklenen görüntü listesinin bir tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_hImageList` Veri üyesi hImageList türünde ortak bir değişkendir.
+`m_hImageList` veri üyesi HıMAGELIST türünde ortak bir değişkendir.
 
 ### <a name="example"></a>Örnek
 
@@ -957,7 +957,7 @@ Bu nesneye eklenen görüntü listesinin bir tutamacı.
 
 ##  <a name="operator_himagelist"></a>CImageList:: operator HıMAGELIST
 
-`CImageList` Nesnenin ekli tanıtıcısını almak için bu işleci kullanın.
+`CImageList` nesnesinin ekli tanıtıcısını almak için bu işleci kullanın.
 
 ```
 operator HIMAGELIST() const;
@@ -965,7 +965,7 @@ operator HIMAGELIST() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `CImageList` nesne tarafından temsil edilen görüntü listesine yönelik bir tanıtıcı; Aksi takdirde null.
+Başarılı olursa, `CImageList` nesnesi tarafından temsil edilen görüntü listesi için bir işleyici; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -986,7 +986,7 @@ BOOL Read(CArchive* pArchive);
 ### <a name="parameters"></a>Parametreler
 
 *pArchive*<br/>
-Görüntü listesinin okunacağı `CArchive` nesne için bir işaretçi.
+Görüntü listesinin okunacağı `CArchive` nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1079,7 +1079,7 @@ Ayarlanacak arka plan rengi. CLR_NONE olabilir. Bu durumda, görüntüler maske 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa önceki arka plan rengi; Aksi halde CLR_NONE.
+Başarılı olursa önceki arka plan rengi; Aksi takdirde CLR_NONE.
 
 ### <a name="example"></a>Örnek
 
@@ -1109,11 +1109,11 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sürükleme işlevleri bir sürükleme işlemi sırasında yeni görüntüyü kullandığından, çağrıldıktan sonra `CImageList::SetDragCursorImage`asıl fare Imlecini gizlemek Için Windows [ShowCursor](/windows/win32/api/winuser/nf-winuser-showcursor) işlevini kullanmanız gerekir. Aksi takdirde, sistem sürükleme işleminin süresi boyunca iki fare imleç gibi görünebilir.
+Sürükleme işlevleri bir sürükleme işlemi sırasında yeni görüntüyü kullandığından, `CImageList::SetDragCursorImage`çağırdıktan sonra asıl fare imlecini gizlemek için Windows [ShowCursor](/windows/win32/api/winuser/nf-winuser-showcursor) işlevini kullanmanız gerekir. Aksi takdirde, sistem sürükleme işleminin süresi boyunca iki fare imleç gibi görünebilir.
 
 ##  <a name="setimagecount"></a>CImageList:: SetImageCount
 
-Bir `CImageList` nesnedeki görüntü sayısını sıfırlamak için bu üye işlevini çağırın.
+`CImageList` nesnesindeki görüntü sayısını sıfırlamak için bu üye işlevini çağırın.
 
 ```
 BOOL SetImageCount(UINT uNewCount);
@@ -1181,7 +1181,7 @@ BOOL Write(CArchive* pArchive);
 ### <a name="parameters"></a>Parametreler
 
 *pArchive*<br/>
-Görüntü listesinin depolanacağı `CArchive` nesneye yönelik bir işaretçi.
+Görüntü listesinin depolanacağı `CArchive` nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

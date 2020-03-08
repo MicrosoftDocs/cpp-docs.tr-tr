@@ -32,11 +32,11 @@ helpviewer_keywords:
 - std::transform_inclusive_scan [C++]
 - std::transform_reduce [C++]
 ms.openlocfilehash: 88a97a3d110c684090b78570077927e32541eed7
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627456"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854103"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;sayısal&gt; işlevleri
 
@@ -61,10 +61,10 @@ Type accumulate(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *init*\
@@ -75,11 +75,11 @@ Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uyg
 
 ### <a name="return-value"></a>Dönüş değeri
 
-İlk şablon işlevi için belirtilen aralıktaki *init* ve tüm öğelerin toplamı veya ikinci şablon işlevi için, Sum işlemi yerine *Binary_Op* ikili işlemi uygulama sonucu, (* PartialResult, *in_ iter*), *PartialResult* işlemin önceki uygulamalarının sonucudur ve *in_iter* aralıktaki bir sonraki öğeyi işaret eden bir yineleyici.
+İlk şablon işlevi için belirtilen aralıktaki *init* ve tüm öğelerin toplamı, ya da ikinci şablon işlevi için *Binary_Op* , (* PartialResult, *In_iter*), yani *PartialResult* işlemin önceki uygulamaların sonucu olduğu ve *in_iter* aralıktaki bir sonraki öğeyi işaret eden bir yineleyici olur).
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk değer, Aralık boş olduğunda iyi tanımlanmış bir sonuç olmasını sağlar ve bu durumda *init* döndürülür. İkili işlemin ilişkilendirilebilir veya iletişim olması gerekmez. Sonuç başlangıç değeri *init* olarak başlatılır ve *sonuç* = *Binary_Op*(*Result*, *in_iter*), Aralık aracılığıyla yinelemeli olarak hesaplanır; burada *in_iter* her birine işaret eden bir yineleyici olur. aralıktaki birbirini izleyen öğe. Aralık geçerli olmalıdır ve karmaşıklık, aralığın boyutuyla doğrusal olmalıdır. Yineleme sırasında kapanış sağlamak için ikili işlecin dönüş türü **türüne** dönüştürülebilir olmalıdır.
+İlk değer, Aralık boş olduğunda iyi tanımlanmış bir sonuç olmasını sağlar ve bu durumda *init* döndürülür. İkili işlemin ilişkilendirilebilir veya iletişim olması gerekmez. Sonuç başlangıç değeri *init* olarak başlatılır ve *sonuç* = *Binary_Op*(*sonuç*, *in_iter*) Aralık aracılığıyla tekrarlayarak hesaplanır; burada *in_iter* , aralıktaki birbirini izleyen her öğeyi işaret eden bir yineleyici olur. Aralık geçerli olmalıdır ve karmaşıklık, aralığın boyutuyla doğrusal olmalıdır. Yineleme sırasında kapanış sağlamak için ikili işlecin dönüş türü **türüne** dönüştürülebilir olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -220,10 +220,10 @@ ForwardIterator2 adjacent_difference(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
+*ilk*\
 Öğeleri karşılık gelen öncelleriyle fark kaydı yapılacak olan giriş aralığındaki ilk öğeyi ele alan veya değer çiftinin başka bir belirtilen ikili işlemde çalıştırılacağı bir giriş yineleyici.
 
-*son* \
+*son*\
 Öğeleri karşılık gelen öncelleriyle fark kaydı yapılacak olan giriş aralığındaki son öğeyi ele alan veya değer çiftinin başka bir belirtilen ikili işlemde çalıştırılacağı bir giriş yineleyici.
 
 *sonuç*\
@@ -242,9 +242,9 @@ Hedef aralığın sonunu adresleyen çıkış yineleyicisi: `result` + (`last` -
 
 1, 2, 3 *, bir giriş aralığında bir değer dizisi*için, ilk şablon işlevi ardışık `adjacent_difference` değerlerini *bir*1 *, 2-* *a*1, a3- *a* *2,* hedef aralığında depolar.
 
-*Bir değer dizisi*için 1, 2, *3, bir giriş* *aralığında, ikinci*şablon işlevi art arda *`adjacent_difference` değerlerini bir* *1, 2* *Binary_Op* *a*1, *3* *Binary_Op* *a*2 hedef Aralık.
+1 *, 2,* 3 *, bir giriş aralığında bir değer dizisi*için, ikinci şablon *işlevi 1*, 2 *Binary_Op* 1, 1 *, 3* *Binary_Op* hedef aralığında Artarda *`adjacent_difference` değerlerini depolar*.
 
-Uygulanan işlem sırası belirtildiğinden, *Binary_Op* ikili işleminin ilişkilendirilebilir veya iletişim olması gerekmez.
+Uygulanan işlem sırası belirtildiğinden, ikili işlem *Binary_Op* ilişkilendirilebilir veya iletişim olması gerekmez.
 
 ### <a name="example"></a>Örnek
 
@@ -350,10 +350,10 @@ ForwardIterator2 exclusive_scan(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *sonuç*\
@@ -445,10 +445,10 @@ ForwardIterator2 inclusive_scan(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *sonuç*\
@@ -488,13 +488,13 @@ Type inner_product(
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* \
+*first1*\
 İlk aralıktaki ilk öğeyi, ikinci aralıktaki iç ürünü veya Genelleştirilmiş iç ürünü ele almak için bir giriş Yineleyici.
 
-*last1* \
+*last1*\
 İkinci aralıktaki iç ürün veya Genelleştirilmiş iç ürün olan ilk aralıktaki son öğeyi ele alarak bir giriş yineleyicisi hesaplanmalıdır.
 
-*first2* \
+*first2*\
 İkinci aralıktaki ilk öğeyi, ilk aralıktaki iç ürünü veya Genelleştirilmiş iç ürünü ele almak için bir giriş Yineleyici.
 
 *init*\
@@ -516,9 +516,9 @@ init + *init + (* *a*ı \* *b*i *) ile değiştirerek* .
 
 İkinci üye işlevi şunu döndürür:
 
-*init* *binary_op1* (*1* *binary_op2* *b*1) *binary_op1* (*bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*a*n *binary_op2* *b*n)
+*init* *binary_op1* (*bir*1 *binary_op2* *b*1) *binary_op1* (*bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*n* *binary_op2* *b*n)
 
-Init ile init *binary_op1* (*a*ı *binary_op2* *b*i) arasında yinelemeli *olarak değiştiriliyor.*
+*ınıt* *binary_op1* (*a*ı *binary_op2* *b*i) ile *Init* 'i yinelemeli olarak değiştirerek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -625,18 +625,18 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Doldurulacak aralıktaki ilk öğeyi ele alan bir giriş Yineleyici.
 
-*son* \
+*son*\
 Doldurulacak aralıktaki son öğeyi ele alan bir giriş Yineleyici.
 
-*değer* \
+*değer*\
 İlk öğede depolanacak başlangıç değeri ve sonraki öğeler için yoğun olarak artış.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir tamsayılar [listesini](../standard-library/list.md) doldurarak ve sonra [random_shuffle](../standard-library/algorithm-functions.md#random_shuffle) işlevinin kullanılabilmesi için bir `list` [vektör](../standard-library/vector.md) doldurarak `iota` işlevi için bazı kullanımları gösterir.
+Aşağıdaki örnek, [random_shuffle](../standard-library/algorithm-functions.md#random_shuffle) işlevinin kullanılabilmesi için bir tamsayılar [listesini](../standard-library/list.md) doldurarak ve sonra bir [vektörü](../standard-library/vector.md) `list` doldurarak `iota` işlevi için bazı kullanımları gösterir.
 
 ```cpp
 // compile by using: cl /EHsc /nologo /W4 /MTd
@@ -704,10 +704,10 @@ OutputIterator partial_sum(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Belirtilen bir ikili işleme göre kısmen toplanan veya birleştirilen aralıktaki ilk öğeyi ele alan giriş yineleyici.
 
-*son* \
+*son*\
 Yineleyen birikime dahil son öğenin ötesinde konumlanmış belirtilen bir ikili işleme göre kısmen toplanan veya birleştirilen aralıktaki son öğeyi ele alan giriş yineleyici.
 
 *sonuç*\
@@ -726,9 +726,9 @@ Hedef aralığın sonunu adresleyen bir çıkış yineleyicisi: *Result* + (önc
 
 *Bir değer dizisi*için 1 *, 2,* ... *x, bir giriş*aralığında, ilk şablon işlevi, hedef aralıktaki birbirini izleyen kısmi toplamları depolar. *N*. öğe tarafından*verilen (bir*1 + *bir*2 *+ 3 +* ... *+ n)* .
 
-1, *2, 3, bir*giriş *aralığında bir*değerdizisi için ikinci şablon işlevi, hedef aralıktaki art arda kısmi sonuçları depolar. *N*. öğesi tarafından veriliyor ((... *((1* *Binary_Op* *a*2) *Binary_Op* *a*3) *Binary_Op* ...) *Binary_Op* *a*n).
+1, *2, 3, bir*giriş *aralığında bir*değerdizisi için ikinci şablon işlevi, hedef aralıktaki art arda kısmi sonuçları depolar. *N*. öğesi tarafından veriliyor ((... *((1* *Binary_Op* *a*2) *Binary_Op* *3)* *Binary_Op* ...) *Binary_Op* *bir*n).
 
-Uygulanan işlem sırası belirtildiğinden, *Binary_Op* ikili işleminin ilişkilendirilebilir veya iletişim olması gerekmez.
+Uygulanan işlem sırası belirtildiğinden, ikili işlem *Binary_Op* ilişkilendirilebilir veya iletişim olması gerekmez.
 
 ### <a name="example"></a>Örnek
 
@@ -840,10 +840,10 @@ Type reduce(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *sonuç*\
@@ -857,11 +857,11 @@ Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uyg
 
 ### <a name="return-value"></a>Dönüş değeri
 
-*Binary_Op* veya `std::plus<>()` 'in *Init* 'e ve belirtilen aralıktaki tüm öğelere (* PartialResult, *in_iter*) uygulanması sonucu, yani *PartialResult* , işlemin önceki uygulamalarının sonucudur ve *in_iter* aralıktaki bir öğeyi işaret eden bir yineleyici. *İnit*belirtmeyen aşırı yüklerde kullanılan *init* değeri `typename iterator_traits<InputIterator>::value_type{}`eşdeğerdir.
+*Binary_Op* veya `std::plus<>()`, belirtilen aralıktaki tüm öğelere (* partialresult, *in_iter*) uygulamanın sonucu, yani *PartialResult* işlemin önceki uygulamalarının *sonucudur ve* *in_iter* aralıktaki bir öğeyi işaret eden bir yineleyici. *İnit*belirtmeyen aşırı yüklerde kullanılan *init* değeri `typename iterator_traits<InputIterator>::value_type{}`eşdeğerdir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Binary_Op* ilişkilendirilebilir ve iletişim olmadığı takdirde `reduce` davranışı belirleyici değildir. *Binary_Op* herhangi bir öğeyi değiştirirse veya \[Aralık içinde *ilk*, *son*] ve dahil olmak üzere herhangi bir yineleyiciyi geçersiz kılan davranış tanımsızdır.
+*Binary_Op* ilişkilendirilebilir ve iletişim olmadığı takdirde `reduce` davranış belirleyici değildir. *Binary_Op* herhangi bir öğeyi değiştirirse veya *ilk*, *son*] ve dahil olmak üzere \[aralıktaki yineleyicileri geçersiz kılan davranış tanımsızdır.
 
 ## <a name="transform_exclusive_scan"></a>transform_exclusive_scan
 
@@ -893,10 +893,10 @@ ForwardIterator2 transform_exclusive_scan(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *sonuç*\
@@ -958,10 +958,10 @@ ForwardIterator2 transform_inclusive_scan(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *sonuç*\
@@ -1038,16 +1038,16 @@ Type transform_reduce(
 *exec*\
 Bir yürütme ilkesi.
 
-*ilk* \
-*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*ilk*\
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*first1* \
-*Binary_op1*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+*first1*\
+*Binary_op1*kullanarak toplama veya birleştirme için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
-*son* \
+*son*\
 *Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
-*last1* \
+*last1*\
 *Binary_op1*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
 *sonuç*\

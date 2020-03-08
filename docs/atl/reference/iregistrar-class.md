@@ -16,11 +16,11 @@ helpviewer_keywords:
 - Iregistrar Interface
 ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
 ms.openlocfilehash: e347bdba1656a53cd705123a26650dad50d3892f
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927764"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78857162"
 ---
 # <a name="iregistrar-interface"></a>Ikaydedici arabirimi
 
@@ -40,7 +40,7 @@ Daha fazla ayrıntı için [değiştirilebilen parametreleri (kayıt sahibinin �
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Ikaydedici:: ResourceRegisterSz](#resourceregistersz)|Kaynağı kaydeder. |
 |[Ikaydedici:: ResourceUnregisterSz](#resourceunregistersz)| Kaynağın kaydını siler.|

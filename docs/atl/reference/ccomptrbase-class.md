@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
 ms.openlocfilehash: 740920225fc513a869b4a92344f87004831e4768
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75298624"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78864976"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
 
@@ -37,20 +37,20 @@ class CComPtrBase
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Akıllı işaretçinin başvurduğu nesne türü.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CComPtrBase:: ~ CComPtrBase](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CComPtrBase:: Advise](#advise)|`CComPtrBase`bağlantı noktası ve istemcinin havuzu arasında bir bağlantı oluşturmak için bu yöntemi çağırın.|
 |[CComPtrBase:: Attach](#attach)|Varolan bir işaretçinin sahipliğini almak için bu yöntemi çağırın.|
@@ -62,9 +62,9 @@ Akıllı işaretçinin başvurduğu nesne türü.
 |[CComPtrBase:: Release](#release)|Arabirimi yayınlamak için bu yöntemi çağırın.|
 |[CComPtrBase:: SetSite](#setsite)|`CComPtrBase` nesnesinin sitesini üst nesnenin `IUnknown` ayarlamak için bu yöntemi çağırın.|
 
-### <a name="public-operators"></a>Genel İşleçler
+### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CComPtrBase:: operator T *](#operator_t_star)|Atama işleci.|
 |[CComPtrBase:: işleci!](#operator_not)|NOT işleci.|
@@ -76,7 +76,7 @@ Akıllı işaretçinin başvurduğu nesne türü.
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CComPtrBase::p](#p)|İşaretçi verisi üye değişkeni.|
 
@@ -366,7 +366,7 @@ template <class Q> HRESULT QueryInterface(Q
 
 ### <a name="parameters"></a>Parametreler
 
-*Q*<br/>
+*Ç*<br/>
 Arabirim işaretçisi gerekli olan nesne türü.
 
 *Sy*<br/>

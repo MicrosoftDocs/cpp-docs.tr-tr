@@ -1,5 +1,5 @@
 ---
-title: '&lt;Atomik&gt; numaralandırmalar'
+title: '&lt;atomik&gt; numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - atomic/std::memory_order
@@ -7,13 +7,13 @@ ms.assetid: cd3a81c5-a19e-448f-952a-c34c717f21a9
 helpviewer_keywords:
 - std::memory_order
 ms.openlocfilehash: 14b816177593a9f6dade60e36676a37f724fc209
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457590"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867094"
 ---
-# <a name="ltatomicgt-enums"></a>&lt;Atomik&gt; numaralandırmalar
+# <a name="ltatomicgt-enums"></a>&lt;atomik&gt; numaralandırmalar
 
 ## <a name="memory_order_enum"></a>memory_order numaralandırması
 
@@ -38,9 +38,9 @@ typedef enum memory_order {
 |`memory_order_consume`|Yükleme işlemi bellek konumunda kullanım işlemi işlevi görür.|
 |`memory_order_acquire`|Yükleme işlemi bellek konumunda bir alma işlemi işlevi görür.|
 |`memory_order_release`|Bir depolama işlemi bellek konumunda bir yayın işlemi görevi görür.|
-|`memory_order_acq_rel`|`memory_order_acquire` Ve`memory_order_release`birleştirir.|
-|`memory_order_seq_cst`|`memory_order_acquire` Ve`memory_order_release`birleştirir. Olarak işaretlenen bellek erişimleri sıralı olarak `memory_order_seq_cst` tutarlı olmalıdır.|
+|`memory_order_acq_rel`|`memory_order_acquire` ve `memory_order_release`birleştirir.|
+|`memory_order_seq_cst`|`memory_order_acquire` ve `memory_order_release`birleştirir. `memory_order_seq_cst` olarak işaretlenen bellek erişimleri sırayla tutarlı olmalıdır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Atomik >](../standard-library/atomic.md)
+[\<atomik >](../standard-library/atomic.md)

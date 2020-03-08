@@ -1,5 +1,5 @@
 ---
-title: OLE sürükleme ve bırakma
+title: OLE sürükle ve bırak
 description: Microsoft Foundation Sınıfları (MFC) OLE sürükle ve bırak, bırakma kaynağı uygulama, bırakma hedefi ve sürükleme ve bırakmayı özelleştirme hakkında genel bakış.
 ms.date: 02/09/2020
 helpviewer_keywords:
@@ -11,13 +11,13 @@ helpviewer_keywords:
 - OLE drag and drop [MFC]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
 ms.openlocfilehash: c601e8f0324510346513dc8da48dd1a83c95bceb
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127874"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855515"
 ---
-# <a name="ole-drag-and-drop"></a>OLE sürükleme ve bırakma
+# <a name="ole-drag-and-drop"></a>OLE sürükle ve bırak
 
 OLE 'nin sürükle ve bırak özelliği öncelikle veri kopyalama ve yapıştırma için bir kısayoldur. Verileri kopyalamak veya yapıştırmak için panoyu kullandığınızda bir dizi adım gerekir. Verileri seçin ve Düzenle veya **Kopyala** ' yı seçerek **düzenleme** menüsünden **Kes** ' i seçin. Sonra hedef uygulamaya veya pencereye taşınır ve imleci hedef konuma yerleştirebilirsiniz. Son olarak, menüden **düzenle** > **Yapıştır** ' ı seçersiniz.
 

@@ -43,15 +43,15 @@ helpviewer_keywords:
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
 ms.openlocfilehash: f82dbf7dce2e14bf760bb76d23d23f667797ee0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391354"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874517"
 ---
 # <a name="carray-class"></a>CArray sınıfı
 
-C dizilerine olan ancak dinamik olarak azaltmak ve gerektikçe büyütün dizilerini destekler.
+C dizileri gibi dizileri destekler, ancak gerektiğinde dinamik olarak azalabilir ve büyüyebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,67 +62,67 @@ class CArray : public CObject
 
 #### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Şablon parametresi dizide depolanan nesnelerin türünü belirtir. *TÜR* tarafından döndürülen bir parametredir `CArray`.
+*TÜRÜYLE*<br/>
+Dizide depolanan nesne türünü belirten şablon parametresi. *Tür* , `CArray`tarafından döndürülen bir parametredir.
 
 *ARG_TYPE*<br/>
-Şablon parametresi dizisinde depolanan nesnelere erişmek için kullanılan bağımsız değişken türü belirtir. Genellikle bir başvuru *türü*. *ARG_TYPE* geçirilen bir parametre `CArray`.
+Dizide depolanan nesnelere erişmek için kullanılan bağımsız değişken türünü belirten şablon parametresi. Genellikle *türe*bir başvuru. *ARG_TYPE* , `CArray`geçirilen bir parametredir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CArray::CArray](#carray)|Boş bir dizi oluşturur.|
+|[CArray:: CArray](#carray)|Boş bir dizi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CArray::Add](#add)|Dizinin sonuna bir öğe ekler; dizi gerekirse büyür.|
-|[CArray::Append](#append)|Diziyi başka diziye ekler; Gerekirse, dizi büyüyor|
-|[CArray::Copy](#copy)|Diziyi başka diziye kopyalar; dizi gerekirse büyür.|
-|[CArray::ElementAt](#elementat)|Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.|
-|[CArray::FreeExtra](#freeextra)|Geçerli üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|
-|[CArray::GetAt](#getat)|Belirtilen dizindeki değeri döndürür.|
-|[CArray::GetCount](#getcount)|Bu dizinin içinde öğe sayısını alır.|
-|[CArray::GetData](#getdata)|Dizide öğelere erişim sağlar. NULL olabilir.|
-|[CArray::GetSize](#getsize)|Bu dizinin içinde öğe sayısını alır.|
-|[CArray::GetUpperBound](#getupperbound)|En büyük geçerli dizinini döndürür.|
-|[CArray::InsertAt](#insertat)|Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.|
-|[CArray::IsEmpty](#isempty)|Dizi boş olup olmadığını belirler.|
-|[CArray::RemoveAll](#removeall)|Bu dizisinden tüm öğeleri kaldırır.|
-|[CArray::RemoveAt](#removeat)|Belirli bir dizindeki öğeyi kaldırır.|
-|[CArray::SetAt](#setat)|Belirtilen dizin için değeri ayarlar; dizi büyümesine izin verilmiyor.|
-|[CArray::SetAtGrow](#setatgrow)|Belirtilen dizin için değeri ayarlar; dizi gerekirse büyür.|
-|[CArray::SetSize](#setsize)|Bu dizinin içinde yer alması için öğe sayısını ayarlar.|
+|[CArray:: Add](#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
+|[CArray:: Append](#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür|
+|[CArray:: Copy](#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
+|[CArray:: ElementAt](#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru döndürür.|
+|[CArray:: FreeExtra](#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
+|[CArray:: GetAt](#getat)|Verilen dizindeki değeri döndürür.|
+|[CArray:: GetCount](#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CArray:: GetData](#getdata)|Dizideki öğelere erişime izin verir. NULL olabilir.|
+|[CArray:: GetSize](#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CArray:: Getüstebağı](#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CArray:: InsertAt](#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
+|[CArray:: IsEmpty](#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CArray:: RemoveAll](#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CArray:: RemoveAt](#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CArray:: SetAt](#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
+|[CArray:: SetAtGrow](#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
+|[CArray:: SetSize](#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[işleci&#91;&#93;](#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
+|[işlecinde&#91;&#93;](#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dizi dizinleri her zaman 0 konumunda başlar. Üst sınır düzeltin veya bağlı geçerli geçmiş öğeler eklediğinizde, genişletmek bir dizi etkinleştirmek karar verebilirsiniz. Bazı öğeler null olsa bile, bellek için üst sınır, bitişik ayrılır.
+Dizi dizinleri her zaman 0 konumunda başlar. Üst sınırı düzeltireceğinize karar verebilir veya geçerli sınırı aşan öğeleri eklediğinizde bu dizinin genişlemesine izin verebilirsiniz. Bitişik olarak, bazı öğeler null olsa bile üst sınır için ayrılır.
 
 > [!NOTE]
->  Yeniden boyutlandırma çoğu yöntemleri bir `CArray` nesne veya ona öğelerini kullanma ekleme [memcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md) öğeleri taşımak için. Bunun nedeni bir sorun, `memcpy_s` çağrılacak oluşturucunun gerektiren herhangi bir nesne ile uyumlu değil. Varsa öğeleri `CArray` ile uyumlu `memcpy_s`, yeni bir oluşturmalısınız `CArray` uygun boyutta. Ardından kullanmalısınız [CArray::Copy](#copy) ve [CArray::SetAt](#setat) bu yöntemleri yerine bir atama işleci kullandığından, yeni bir dizi doldurmak için `memcpy_s`.
+>  `CArray` nesnesini yeniden boyutlandırma veya öğe ekleme yöntemleri, öğeleri taşımak için [memcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md) kullanır. Bu bir sorundur çünkü `memcpy_s` oluşturucunun çağrılması gereken nesnelerle uyumlu değildir. `CArray` öğeler `memcpy_s`uyumlu değilse, uygun boyutun yeni bir `CArray` oluşturmanız gerekir. Ardından, bu yöntemler `memcpy_s`yerine bir atama işleci kullandığından yeni diziyi doldurmak için [CArray:: Copy](#copy) ve [CArray:: SetAt](#setat) ' i kullanmanız gerekir.
 
-Bir C dizi için erişim zamanı olduğu gibi bir `CArray` dizinlenmiş öğeye sabittir ve dizi boyutu bağımsızdır.
+C dizisinde olduğu gibi, `CArray` dizinli bir öğe için erişim süresi sabittir ve dizi boyutundan bağımsızdır.
 
 > [!TIP]
->  Bir dizi kullanmadan önce kullanmayı [SetSize](#setsize) boyutuna kurmak ve kendisi için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, diziniz için öğeleri ekleme, oluyor, sık sık yeniden ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçası.
+>  Bir Array kullanmadan önce, boyutunu belirlemek ve için bellek ayırmak üzere [SetSize](#setsize) kullanın. `SetSize`kullanmıyorsanız, dizine öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
 
-Bir dizideki tek tek öğelerin dökümü gerekiyorsa derinliğini ayarlamalısınız [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 1 veya daha büyük bir nesne.
+Bir dizideki tek tek öğelerin dökümünden birine ihtiyacınız varsa, [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesinin derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-Bu sınıf, genel yardımcı işlevleri çağrının belirli üye işlevleri, çoğu kullanım için özelleştirilmelidir `CArray` sınıfı. Konusuna [koleksiyon sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) MFC makroları ve genel öğeleri bölümünde.
+Bu sınıfın bazı üye işlevleri, `CArray` sınıfının çoğu kullanımları için özelleştirilmek zorunda olan genel yardımcı işlevleri çağırır. MFC makroları ve Genel bölümünde [koleksiyon sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) konusuna bakın.
 
-Array sınıfı türetme gibi liste türetme ' dir.
+Dizi sınıfı türetme, liste türetmeye benzer.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CArray`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+`CArray`kullanma hakkında daha fazla bilgi için, bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -132,11 +132,11 @@ Nasıl kullanılacağı hakkında daha fazla bilgi için `CArray`, makaleye göz
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtempl.h
+**Üstbilgi:** afxtempl. h
 
-##  <a name="add"></a>  CArray::Add
+##  <a name="add"></a>CArray:: Add
 
-1 ile dizi büyüyen bir dizinin sonuna yeni bir öğe ekler.
+Dizinin sonuna yeni bir öğe ekler ve diziyi 1 artırır.
 
 ```
 INT_PTR Add(ARG_TYPE newElement);
@@ -145,7 +145,7 @@ INT_PTR Add(ARG_TYPE newElement);
 ### <a name="parameters"></a>Parametreler
 
 *ARG_TYPE*<br/>
-Şablon parametresi bu dizideki öğelerin başvuran bir bağımsız değişken türünü belirleme.
+Bu dizideki öğelere başvuran bağımsız değişkenlerin türünü belirten şablon parametresi.
 
 *newElement*<br/>
 Bu diziye eklenecek öğe.
@@ -156,15 +156,15 @@ Eklenen öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa [SetSize](#setsize) ile kullanılan bir `nGrowBy` değeri 1 ve ardından ek bellek büyük ayrılan. Bununla birlikte, üst sınırı yalnızca 1 artar.
+[SetSize](#setsize) değeri 1 ' den büyük bir `nGrowBy` değerle kullanılmışsa, ek bellek ayrılabilir. Ancak, üst sınır yalnızca 1 ' i arttırır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/cpp/carray-class_1.cpp)]
 
-##  <a name="append"></a>  CArray::Append
+##  <a name="append"></a>CArray:: Append
 
-Bir dizinin içeriğini başka bir sonuna eklemek için bu üye işlevini çağırın.
+Bir dizinin içeriğini diğerinin sonuna eklemek için bu üye işlevini çağırın.
 
 ```
 INT_PTR Append(const CArray& src);
@@ -172,24 +172,24 @@ INT_PTR Append(const CArray& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*src*<br/>
-Kaynak bir diziye eklenecek öğe.
+*YN*<br/>
+Bir diziye eklenecek öğelerin kaynağı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenen ilk öğenin dizini.
+İlk eklenen öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diziler, aynı türde olmalıdır.
+Diziler aynı türde olmalıdır.
 
-Gerekirse, `Append` diziye eklenen öğeleri uyum sağlamak için ek bellek ayırabilirsiniz.
+Gerekirse, `Append` diziye eklenen öğeleri karşılamak için ek bellek ayırabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/cpp/carray-class_2.cpp)]
 
-##  <a name="carray"></a>  CArray::CArray
+##  <a name="carray"></a>CArray:: CArray
 
 Boş bir dizi oluşturur.
 
@@ -199,15 +199,15 @@ CArray();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diziye bir öğe aynı anda büyür.
+Dizi tek seferde bir öğeyi büyürken.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#24](../../mfc/codesnippet/cpp/carray-class_3.cpp)]
 
-##  <a name="copy"></a>  CArray::Copy
+##  <a name="copy"></a>CArray:: Copy
 
-Bu üye işlevi, bir dizinin öğeleri diğerine kopyalamak için kullanın.
+Bir dizinin öğelerini diğerine kopyalamak için bu üye işlevini kullanın.
 
 ```
 void Copy(const CArray& src);
@@ -215,20 +215,20 @@ void Copy(const CArray& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*src*<br/>
-Bir diziye kopyalanacak öğe kaynağı.
+*YN*<br/>
+Bir diziye kopyalanacak öğelerin kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dizinin öğeleri başka bir dizinin öğeleri ile üzerine yazmak için bu üye işlevini çağırın.
+Başka bir dizinin öğeleriyle bir dizinin öğelerinin üzerine yazmak için bu üye işlevi çağırın.
 
-`Copy` belleği boşaltmak değil; Ancak, gerekirse `Copy` diziye kopyalanan öğelerin uyum sağlamak için ek bellek ayırabilirsiniz.
+`Copy` belleği serbest vermez; Ancak, gerekirse diziye kopyalanmış öğeleri karşılamak için `Copy` ek bellek ayırabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]
 
-##  <a name="elementat"></a>  CArray::ElementAt
+##  <a name="elementat"></a>CArray:: ElementAt
 
 Dizi içinde belirtilen öğeye geçici bir başvuru döndürür.
 
@@ -239,24 +239,24 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir [GetUpperBound](#getupperbound).
+*nDizin*<br/>
+0 ' dan büyük veya buna eşit ve [Getüstsınırı](#getupperbound)tarafından döndürülen değerden küçük ya da buna eşit bir tamsayı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir dizi öğesine bir başvuru.
+Bir dizi öğesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diziler için sol taraftaki atama işleci uygulamak için kullanılır.
+Diziler için sol taraftaki atama işlecini uygulamak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [GetSize](#getsize).
+  [GetSize](#getsize)örneğine bakın.
 
-##  <a name="freeextra"></a>  CArray::FreeExtra
+##  <a name="freeextra"></a>CArray:: FreeExtra
 
-Dizi büyütmüş sırada ayrılmış ek bellek kazandırır.
+Dizi büyüirken ayrılan ek belleği serbest bırakır.
 
 ```
 void FreeExtra();
@@ -264,15 +264,15 @@ void FreeExtra();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev boyutu veya dizi üst sınırı üzerinde etkisi yoktur.
+Bu işlevin, dizinin boyutu veya üst sınırı üzerinde hiçbir etkisi yoktur.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [GetData](#getdata).
+  [GetData](#getdata)örneğine bakın.
 
-##  <a name="getat"></a>  CArray::GetAt
+##  <a name="getat"></a>CArray:: GetAt
 
-Dizi belirtilen dizindeki öğeyi döndürür.
+Belirtilen dizindeki dizi öğesini döndürür.
 
 ```
 TYPE& GetAt(INT_PTR nIndex);
@@ -281,25 +281,25 @@ const TYPE& GetAt(INT_PTR nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Şablon parametresi dizi öğelerinin türünü belirterek.
+*TÜRÜYLE*<br/>
+Dizi öğelerinin türünü belirten şablon parametresi.
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir [GetUpperBound](#getupperbound).
+*nDizin*<br/>
+0 ' dan büyük veya buna eşit ve [Getüstsınırı](#getupperbound)tarafından döndürülen değerden küçük ya da buna eşit bir tamsayı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda bu dizinde dizi öğesi.
+Şu anda bu dizinde bulunan Array öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Negatif bir değer veya bir değer döndürdüğü değerden geçirme `GetUpperBound` başarısız bir onaylama işlemi neden olur.
+Negatif bir değer veya `GetUpperBound` tarafından döndürülen değerden daha büyük bir değer geçirilmesi, başarısız bir onaylama işlemi oluşmasına neden olur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#26](../../mfc/codesnippet/cpp/carray-class_5.cpp)]
 
-##  <a name="getcount"></a>  CArray::GetCount
+##  <a name="getcount"></a>CArray:: GetCount
 
 Dizi öğelerinin sayısını döndürür.
 
@@ -313,15 +313,15 @@ Dizideki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizideki öğelerin sayısını almak için bu yöntemi çağırın. Dizinler sıfır tabanlı olduğundan, boyutu en büyük dizinden daha büyük olan 1 ' dir. Bu yöntemin çağrılması aynı sonucu üretir [CArray::GetSize](#getsize) yöntemi.
+Dizideki öğe sayısını almak için bu yöntemi çağırın. Dizinler sıfır tabanlı olduğundan, boyut en büyük dizinden 1 büyük olur. Bu yöntemin çağrılması, [CArray:: GetSize](#getsize) yöntemiyle aynı sonucu oluşturacaktır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#27](../../mfc/codesnippet/cpp/carray-class_6.cpp)]
 
-##  <a name="getdata"></a>  CArray::GetData
+##  <a name="getdata"></a>CArray:: GetData
 
-Bu üye işlevi bir dizideki öğelerin doğrudan erişim elde etmek için kullanın.
+Bir dizideki öğelere doğrudan erişim kazanmak için bu üye işlevini kullanın.
 
 ```
 const TYPE* GetData() const;
@@ -330,24 +330,24 @@ TYPE* GetData();
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Şablon parametresi dizi öğelerinin türünü belirterek.
+*TÜRÜYLE*<br/>
+Dizi öğelerinin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir dizi öğesinin işaretçisi.
+Dizi öğesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir öğe varsa `GetData` bir null değer döndürür.
+Kullanılabilir öğe yoksa `GetData` null değer döndürür.
 
-Bir dizinin öğeleri doğrudan erişim daha hızlı çalışmanıza yardımcı olabilir, ancak çağırırken dikkatli `GetData`; doğrudan yaptığınız herhangi bir hata, dizinin öğeleri etkiler.
+Bir dizinin öğelerine doğrudan erişim daha hızlı çalışmanıza yardımcı olmakla birlikte `GetData`çağırırken dikkatli bir şekilde yararlanabilirsiniz; yaptığınız tüm hatalar dizinizdeki öğeleri doğrudan etkiler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#28](../../mfc/codesnippet/cpp/carray-class_7.cpp)]
 
-##  <a name="getsize"></a>  CArray::GetSize
+##  <a name="getsize"></a>CArray:: GetSize
 
 Dizinin boyutunu döndürür.
 
@@ -357,13 +357,13 @@ INT_PTR GetSize() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizinler sıfır tabanlı olduğundan, boyutu en büyük dizinden daha büyük olan 1 ' dir. Bu yöntemin çağrılması aynı sonucu üretir [CArray::GetCount](#getcount) yöntemi.
+Dizinler sıfır tabanlı olduğundan, boyut en büyük dizinden 1 büyük olur. Bu yöntemin çağrılması, [CArray:: GetCount](#getcount) yöntemiyle aynı sonucu oluşturacaktır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#29](../../mfc/codesnippet/cpp/carray-class_8.cpp)]
 
-##  <a name="getupperbound"></a>  CArray::GetUpperBound
+##  <a name="getupperbound"></a>CArray:: Getüstebağı
 
 Bu dizinin geçerli üst sınırını döndürür.
 
@@ -373,17 +373,17 @@ INT_PTR GetUpperBound() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi dizinleri sıfır tabanlı olduğundan, bu işlev, 1 değerini döndürür. kısa `GetSize`.
+Dizi dizinleri sıfır tabanlı olduğundan, bu işlev `GetSize`1 ' den küçük bir değer döndürür.
 
-Koşul `GetUpperBound( )` = -1, dizi hiç öğe içerdiğini gösterir.
+`GetUpperBound( )` =-1 koşulu, dizinin hiçbir öğe içermediğini belirtir.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CArray::GetAt](#getat).
+  [CArray:: GetAt](#getat)örneğine bakın.
 
-##  <a name="insertat"></a>  CArray::InsertAt
+##  <a name="insertat"></a>CArray:: InsertAt
 
-Ürününün ilk sürümünü `InsertAt` belirli bir dizinden bir dizideki bir öğe (veya birden çok kopyasını bir öğe) ekler.
+`InsertAt` ilk sürümü bir dizide belirtilen bir dizine bir öğe (veya bir öğenin birden çok kopyasını) ekler.
 
 ```
 void InsertAt(
@@ -398,39 +398,39 @@ void InsertAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `GetUpperBound`.
+*nDizin*<br/>
+`GetUpperBound`tarafından döndürülen değerden daha büyük olabilecek bir tamsayı dizini.
 
 *ARG_TYPE*<br/>
-Şablon parametresi bu dizideki öğelerin türünü belirtme.
+Bu dizideki öğelerin türünü belirten şablon parametresi.
 
 *newElement*<br/>
-Bu dizinin içinde yer öğesi.
+Bu diziye yerleştirilecek öğe.
 
 *nCount*<br/>
-Bu öğe olmalıdır sayısı (varsayılan 1) eklenir.
+Bu öğenin Eklenme sayısı (varsayılan 1 ' dir).
 
 *nStartIndex*<br/>
-Tarafından döndürülen değeri,'den büyük bir tamsayı dizini [GetUpperBound](#getupperbound).
+[Getüstsınırı](#getupperbound)tarafından döndürülen değerden daha büyük olabilecek bir tamsayı dizini.
 
 *pNewArray*<br/>
 Bu diziye eklenecek öğeleri içeren başka bir dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlem sırasında yukarı kaydırır (dizin artırılarak) ve bu dizin mevcut öğe üzerindeki tüm öğeleri yukarı kaydırır.
+İşlemde, (dizini arttırarak) Bu dizindeki mevcut öğeyi yukarı kaydırır ve yukarıdaki tüm öğeleri kaydırır.
 
-Dosyanın ikinci sürümü tüm öğeleri bir diğerinden ekler `CArray` başlayarak koleksiyon *nStartIndex* konumu.
+İkinci sürüm, *nStartIndex* konumundan başlayarak başka bir `CArray` koleksiyonundan tüm öğeleri ekler.
 
-`SetAt` İşlevi, buna karşılık, bir belirtilen dizi öğesi değiştirir ve tüm öğeleri kaydırmak değil.
+Buna karşılık `SetAt` işlevi, belirtilen bir dizi öğesinin yerini alır ve herhangi bir öğeyi kaydıramaz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#30](../../mfc/codesnippet/cpp/carray-class_9.cpp)]
 
-##  <a name="isempty"></a>  CArray::IsEmpty
+##  <a name="isempty"></a>CArray:: IsEmpty
 
-Dizi boş olup olmadığını belirler.
+Dizinin boş olup olmadığını belirler.
 
 ```
 BOOL IsEmpty() const;
@@ -438,11 +438,11 @@ BOOL IsEmpty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi hiçbir öğe içeren olursa sıfır dışı; Aksi durumda 0.
+Dizi hiçbir öğe içermiyorsa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="operator_at"></a>  CArray::operator \[\]
+##  <a name="operator_at"></a>CArray:: operator \[\]
 
-Bu alt simge işleçlerini için kullanışlı bir alternatif olan [SetAt](#setat) ve [GetAt](#getat) işlevleri.
+Bu alt simge işleçleri, [SetAt](#setat) ve [GetAt](#getat) işlevlerinin kullanışlı bir yerleridir.
 
 ```
 TYPE& operator[](int_ptr nindex);
@@ -451,25 +451,25 @@ const TYPE& operator[](int_ptr nindex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Şablon parametresi bu dizideki öğelerin türünü belirtme.
+*TÜRÜYLE*<br/>
+Bu dizideki öğelerin türünü belirten şablon parametresi.
 
-*nIndex*<br/>
+*nDizin*<br/>
 Erişilecek öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işleç değil diziler için çağrılır **const**, sağ (r) veya Atama ifadesinin solunda (lvalue) üzerinde kullanılabilir. İkinci adında için **const** diziler, yalnızca sağ tarafta kullanılır.
+**Const**olmayan diziler için çağrılan ilk operatör, atama ifadesinin sağ (r-value) veya Left (l-value) üzerinde kullanılabilir. **Const** dizileri için çağrılan ikinci, yalnızca sağda kullanılabilir.
 
-Kitaplığı hata ayıklama sürümünü (veya sol veya sağ tarafında bir atama ifadesi) alt simge sınırların dışında olup olmadığını onaylar.
+Kitaplığın hata ayıklama sürümü, alt simge (atama ifadesinin solunda ya da sağ tarafında) sınırların dışında olup olmadığını onaylar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#34](../../mfc/codesnippet/cpp/carray-class_10.cpp)]
 
-##  <a name="relocateelements"></a>  CArray::RelocateElements
+##  <a name="relocateelements"></a>CArray:: Relocateöğeleri
 
-Dizi büyüyebilen veya küçülebilen, veri için yeni bir arabellek yeniden yerleştirir.
+Dizinin büyümesi veya küçültülmesi gerektiğinde verileri yeni bir arabelleğe yeniden konumlandırır.
 
 ```
 template<class TYPE, class ARG_TYPE>
@@ -482,25 +482,25 @@ AFX_INLINE void CArray<TYPE, ARG_TYPE>::RelocateElements(
 ### <a name="parameters"></a>Parametreler
 
 *pNewData*<br/>
-Yeni bir arabellek için öğeleri dizisi.
+Öğe dizisi için yeni bir arabellek.
 
 *pData*<br/>
-Eski öğeleri dizisi.
+Eski öğe dizisi.
 
 *nCount*<br/>
 Eski dizideki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pNewData* her zaman tüm tutabilecek kadar büyük olduğundan *pData* öğeleri.
+*Pnewdata* her zaman tüm *pData* öğelerini tutabilecek kadar büyük.
 
-[CArray](../../mfc/reference/carray-class.md) uygulaması, dizi büyüyebilen veya küçülebilen, eski verileri için yeni bir arabellek kopyalamak için bu yöntemi kullanır (zaman [SetSize](#setsize) veya [FreeExtra](#freeextra) olarak adlandırılır). Varsayılan uygulama, yalnızca veri kopyalar.
+[CArray](../../mfc/reference/carray-class.md) uygulamasının, dizinin büyümesi veya küçültülmesi gerektiğinde ( [SetSize](#setsize) veya [FreeExtra](#freeextra) çağrıldığında) eski verileri yeni bir arabelleğe kopyalamak için bu yöntemi kullanır. Varsayılan uygulama yalnızca verileri kopyalar.
 
-Kendi üyelerinden biri için bir işaretçi bir öğe içeriyorsa veya başka bir yapı bir dizi öğeleri için bir işaretçi içeren diziler için işaretçiler düz kopya güncelleştirilir. Bu durumda, bir alt uzmanlaşması uygulayarak işaretçileri düzeltebilirsiniz `RelocateElements` ilgili türleri ile. Ayrıca veri kopyalamak için sizin sorumluluğunuzdadır.
+Bir öğenin kendi üyelerinden birine yönelik bir işaretçi içerdiği diziler veya başka bir yapı dizi öğelerinden birine yönelik bir işaretçi içeriyorsa, işaretçiler düz kopyada güncellenmez. Bu durumda, ilgili türler ile `RelocateElements` özelleştirmesi uygulayarak işaretçileri düzeltebilirsiniz. Verilerin kopyalanmasından de sorumlu olursunuz.
 
-##  <a name="removeall"></a>  CArray::RemoveAll
+##  <a name="removeall"></a>CArray:: RemoveAll
 
-Bu dizisinden tüm öğeleri kaldırır.
+Bu dizideki tüm öğeleri kaldırır.
 
 ```
 void RemoveAll();
@@ -514,9 +514,9 @@ Dizi zaten boşsa, işlev hala çalışır.
 
 [!code-cpp[NVC_MFCCollections#31](../../mfc/codesnippet/cpp/carray-class_11.cpp)]
 
-##  <a name="removeat"></a>  CArray::RemoveAt
+##  <a name="removeat"></a>CArray:: RemoveAt
 
-Bir dizideki belirli bir dizinden başlayarak bir veya daha fazla öğeleri kaldırır.
+Bir dizide belirtilen dizinden başlayarak bir veya daha fazla öğeyi kaldırır.
 
 ```
 void RemoveAt(
@@ -526,25 +526,25 @@ void RemoveAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir [GetUpperBound](#getupperbound).
+*nDizin*<br/>
+0 ' dan büyük veya buna eşit ve [Getüstsınırı](#getupperbound)tarafından döndürülen değerden küçük ya da buna eşit bir tamsayı dizini.
 
 *nCount*<br/>
 Kaldırılacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlem sırasında kaldırılan öğeyi/öğeleri yukarıdaki tüm öğeleri aşağı kaydırır. Bu üst dizisi bağlı, ancak bellek serbest değil azaltır.
+İşlemde, kaldırılan öğelerin üzerindeki tüm öğeleri aşağı kaydırır. Dizinin üst sınırını azaltır, ancak belleği serbest vermez.
 
-Dizideki kaldırma noktası yukarıda yer alan çok daha fazla öğe ekleyip denerseniz, ardından kitaplığı hata ayıklama sürümünü onaylar.
+Kaldırma noktasının üzerindeki dizide yer alan daha fazla öğeyi kaldırmaya çalışırsanız, kitaplığın hata ayıklama sürümü onaylar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#32](../../mfc/codesnippet/cpp/carray-class_12.cpp)]
 
-##  <a name="setat"></a>  CArray::SetAt
+##  <a name="setat"></a>CArray:: SetAt
 
-Belirtilen dizindeki dizi öğesini ayarlar.
+Belirtilen dizinde dizi öğesini ayarlar.
 
 ```
 void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
@@ -552,28 +552,28 @@ void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir [GetUpperBound](#getupperbound).
+*nDizin*<br/>
+0 ' dan büyük veya buna eşit ve [Getüstsınırı](#getupperbound)tarafından döndürülen değerden küçük ya da buna eşit bir tamsayı dizini.
 
 *ARG_TYPE*<br/>
-Dizi öğelerine başvurmak için kullanılan bağımsız değişkenleri türünü belirten bir şablon parametre.
+Dizi öğelerine başvurmak için kullanılan bağımsız değişkenlerin türünü belirten şablon parametresi.
 
 *newElement*<br/>
-Belirtilen konumda depolanan yeni öğe değeri.
+Belirtilen konumda depolanacak yeni öğe değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetAt` dizi büyümesine neden. Kullanım [SetAtGrow](#setatgrow) otomatik olarak büyütmeyi dizi istiyorsanız.
+`SetAt`, dizinin büyümesine neden olmaz. Dizinin otomatik olarak büyümesini istiyorsanız [SetAtGrow](#setatgrow) kullanın.
 
-Dizin değerinizi dizisindeki geçerli bir konum temsil eder emin olmanız gerekir. Sınırların dışında ise, ardından kitaplığı hata ayıklama sürümünü onaylar.
+Dizin değerinin dizideki geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Sınırların dışında ise, kitaplığın hata ayıklama sürümü onaylar.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [GetAt](#getat).
+  [GetAt](#getat)için örneğe bakın.
 
-##  <a name="setatgrow"></a>  CArray::SetAtGrow
+##  <a name="setatgrow"></a>CArray:: SetAtGrow
 
-Belirtilen dizindeki dizi öğesini ayarlar.
+Belirtilen dizinde dizi öğesini ayarlar.
 
 ```
 void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
@@ -581,26 +581,26 @@ void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini.
+*nDizin*<br/>
+0 ' dan büyük veya buna eşit bir tamsayı dizini.
 
 *ARG_TYPE*<br/>
-Şablon parametresi dizideki öğelerin türünü belirtme.
+Dizideki öğelerin türünü belirten şablon parametresi.
 
 *newElement*<br/>
-Bu diziye eklenecek öğe. NULL değerine izin verilir.
+Bu diziye eklenecek öğe. NULL değere izin verilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerekirse, dizi otomatik olarak artar (diğer bir deyişle, üst sınırı yeni öğeye uyum sağlamak için ayarlanır).
+Dizi gerektiğinde otomatik olarak büyür (yani, üst sınır yeni öğeye uyum sağlayacak şekilde ayarlanır).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#33](../../mfc/codesnippet/cpp/carray-class_13.cpp)]
 
-##  <a name="setsize"></a>  CArray::SetSize
+##  <a name="setsize"></a>CArray:: SetSize
 
-Boş veya varolan bir dizinin boyutunu belirler; Gerekirse, bellek ayırır.
+Boş veya mevcut bir dizinin boyutunu oluşturur; gerekirse belleği ayırır.
 
 ```
 void SetSize(
@@ -611,26 +611,26 @@ void SetSize(
 ### <a name="parameters"></a>Parametreler
 
 *nNewSize*<br/>
-Yeni dizi boyutu (öğe sayısı). Büyük veya 0'a eşit olmalıdır.
+Yeni dizi boyutu (öğe sayısı). 0 ' dan büyük veya buna eşit olmalıdır.
 
 *nGrowBy*<br/>
-Öğe yuvaları boyutu artışı gerekliyse ayrılacak en küçük sayısı.
+Boyut artışı gerekliyse ayrılacak en az öğe yuvası sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni boyut eski boyuttan daha küçükse, dizi kesilmiş ve tüm kullanılmayan belleği serbest kalır.
+Yeni boyut eski boyuttan küçükse, dizi kesilir ve kullanılmayan tüm bellek serbest bırakılır.
 
-Dizi kullanmaya başlamadan önce dizinin boyutunu ayarlamak için bu işlevi kullanın. Kullanmıyorsanız, `SetSize`, diziniz için öğeleri ekleme, oluyor, sık sık yeniden ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçası.
+Diziyi kullanmaya başlamadan önce dizinizin boyutunu ayarlamak için bu işlevi kullanın. `SetSize`kullanmıyorsanız, dizine öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
 
-*NGrowBy* parametre dizi artan sırada iç bellek ayırma etkiler. Kullanımı hiçbir zaman tarafından raporlandığı şekilde dizi boyutu etkiler [GetSize](#getsize) ve [GetUpperBound](#getupperbound). Varsayılan değer kullandıysanız, MFC Bellek parçalanması önlemek ve verimliliği çoğu durum için en iyi duruma getirmek için hesaplanan bir şekilde bellek ayırır.
+*NGrowBy* parametresi, dizi büyüirken iç bellek ayırmayı etkiler. Kullanımı, [GetSize](#getsize) ve [getüstsınırı](#getupperbound)tarafından bildirilen dizi boyutunu hiçbir şekilde etkilemez. Varsayılan değer kullanılırsa, MFC bellek parçalanmasını önlemek ve çoğu durumda verimliliği iyileştirmek için bir şekilde bellek ayırır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [GetData](#getdata).
+  [GetData](#getdata)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek toplama](../../overview/visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CObArray Sınıfı](../../mfc/reference/cobarray-class.md)<br/>

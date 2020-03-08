@@ -1,5 +1,5 @@
 ---
-title: '&lt;harita&gt; işleçleri'
+title: '&lt;Map&gt; işleçleri'
 ms.date: 03/27/2019
 f1_keywords:
 - map/std::operator!=
@@ -17,13 +17,13 @@ helpviewer_keywords:
 - std::operator&lt;= (map)
 - std::operator== (map)
 ms.openlocfilehash: deb442d0ba1fbd180fdb41b66de73df92bee7fc9
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956952"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78883973"
 ---
-# <a name="ltmapgt-operators"></a>&lt;harita&gt; işleçleri
+# <a name="ltmapgt-operators"></a>&lt;Map&gt; işleçleri
 
 ## <a name="op_neq"></a>işleç! =
 
@@ -37,11 +37,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `map`bir nesne.
+*sol*\
+`map` türünün bir nesnesi.
 
-*Right*\
-Türünde `map`bir nesne.
+*sağ*\
+`map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -90,7 +90,7 @@ The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
 ```
 
-## <a name="op_lt"></a>işlecinde&lt;
+## <a name="op_lt"></a>işleç&lt;
 
 İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesinden küçük olup olmadığını sınar.
 
@@ -102,11 +102,11 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `map`bir nesne.
+*sol*\
+`map` türünün bir nesnesi.
 
-*Right*\
-Türünde `map`bir nesne.
+*sağ*\
+`map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -155,7 +155,7 @@ The map m1 is less than the map m2.
 The map m1 is not less than the map m3.
 ```
 
-## <a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="op_lt_eq"></a>işleç&lt;=
 
 İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit veya ondan küçük olup olmadığını test eder.
 
@@ -167,11 +167,11 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `map`bir nesne.
+*sol*\
+`map` türünün bir nesnesi.
 
-*Right*\
-Türünde `map`bir nesne.
+*sağ*\
+`map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -235,11 +235,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `map`bir nesne.
+*sol*\
+`map` türünün bir nesnesi.
 
-*Right*\
-Türünde `map`bir nesne.
+*sağ*\
+`map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -288,7 +288,7 @@ The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
 ```
 
-## <a name="op_gt"></a>işlecinde&gt;
+## <a name="op_gt"></a>işleç&gt;
 
 İşlecin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük olup olmadığını sınar.
 
@@ -300,11 +300,11 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `map`bir nesne.
+*sol*\
+`map` türünün bir nesnesi.
 
-*Right*\
-Türünde `map`bir nesne.
+*sağ*\
+`map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -352,7 +352,7 @@ The map m1 is greater than the map m3.
 */
 ```
 
-## <a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="op_gt_eq"></a>işleç&gt;=
 
 İşlecin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -364,11 +364,11 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `map`bir nesne.
+*sol*\
+`map` türünün bir nesnesi.
 
-*Right*\
-Türünde `map`bir nesne.
+*sağ*\
+`map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -432,11 +432,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `multimap`bir nesne.
+*sol*\
+`multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `multimap`bir nesne.
+*sağ*\
+`multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -485,7 +485,7 @@ The multimaps m1 and m2 are not equal.
 The multimaps m1 and m3 are equal.
 ```
 
-## <a name="op_lt_multimap"></a>işlecinde&lt;
+## <a name="op_lt_multimap"></a>işleç&lt;
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesinden küçük olup olmadığını sınar.
 
@@ -497,11 +497,11 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `multimap`bir nesne.
+*sol*\
+`multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `multimap`bir nesne.
+*sağ*\
+`multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -550,7 +550,7 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
-## <a name="op_lt_eq_multimap"></a>işlecinde&lt;=
+## <a name="op_lt_eq_multimap"></a>işleç&lt;=
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesine eşit veya ondan küçük olup olmadığını test eder.
 
@@ -562,11 +562,11 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `multimap`bir nesne.
+*sol*\
+`multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `multimap`bir nesne.
+*sağ*\
+`multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -630,11 +630,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `multimap`bir nesne.
+*sol*\
+`multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `multimap`bir nesne.
+*sağ*\
+`multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -683,7 +683,7 @@ m1 and m2 are not equal
 m1 and m3 are equal
 ```
 
-## <a name="op_gt_multimap"></a>işlecinde&gt;
+## <a name="op_gt_multimap"></a>işleç&gt;
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesinden büyük olup olmadığını sınar.
 
@@ -695,11 +695,11 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `multimap`bir nesne.
+*sol*\
+`multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `multimap`bir nesne.
+*sağ*\
+`multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -748,7 +748,7 @@ Multimap m1 is not greater than multimap m2.
 The multimap m1 is greater than the multimap m3.
 ```
 
-## <a name="op_gt_eq_multimap"></a>işlecinde&gt;=
+## <a name="op_gt_eq_multimap"></a>işleç&gt;=
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesine eşit veya ondan büyük olup olmadığını sınar.
 
@@ -760,11 +760,11 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `multimap`bir nesne.
+*sol*\
+`multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `multimap`bir nesne.
+*sağ*\
+`multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

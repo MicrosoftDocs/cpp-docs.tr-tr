@@ -19,11 +19,11 @@ helpviewer_keywords:
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 ms.openlocfilehash: 4cf3f53d1e238218b4eb892dc92e3c823dcc1296
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630511"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855361"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -35,7 +35,7 @@ Microsoft Foundation Class Kitaplığı, programlarınızda hata ayıklamanın d
 
 - Nesne Tanılama işlevleri
 
-Bu makrolar ve işlevler, MFC 'nin hata ayıklama ve yayın `CObject` sürümlerindeki sınıfından türetilmiş tüm sınıflar için kullanılabilir. Ancak, DEBUG_NEW ve VERIFY hariç hepsi yayın sürümünde hiçbir şey yapmaz.
+Bu makrolar ve işlevler, MFC 'nin hata ayıklama ve yayın sürümlerindeki `CObject` türetilmiş tüm sınıflar için kullanılabilir. Ancak, DEBUG_NEW ve doğrulama hariç hepsi yayın sürümünde hiçbir şey yapmaz.
 
 Hata ayıklama kitaplığında, ayrılan tüm bellek blokları "Guard bayt" serisiyle birlikte eklenir. Bu baytlar bir errant belleği yazma tarafından rahatsız edici ise, tanılama yordamları bir sorunu bildirebilir. Satırı eklerseniz:
 
@@ -51,12 +51,12 @@ Ayrıca, C çalışma zamanı kitaplığı, uygulamalarınızda hata ayıklamak 
 |-|-|
 |[VERMEDIĞINI](#assert)|Kitaplığın hata ayıklama sürümünde belirtilen ifade FALSE olarak değerlendirilirse, bir ileti yazdırır ve sonra programı iptal eder.|
 |[ASSERT_KINDOF](#assert_kindof)|Bir nesnenin belirtilen sınıftan türetilmiş bir nesne veya belirtilen sınıftan türetilmiş bir sınıf olduğunu sınar.|
-|[ASSERT_VALID](#assert_valid)|Bir nesnenin kendi `AssertValid` üye işlevini çağırarak iç geçerliliğini sınar; genellikle öğesinden `CObject`geçersiz kılınır.|
+|[ASSERT_VALID](#assert_valid)|Bir nesnenin `AssertValid` üye işlevini çağırarak iç geçerliliğini sınar; genellikle `CObject`geçersiz kılınır.|
 |[DEBUG_NEW](#debug_new)|Bellek sızıntılarını bulmaya yardımcı olması için hata ayıklama modundaki tüm nesne ayırmaları için bir dosya adı ve satır numarası sağlar.|
 |[DEBUG_ONLY](#debug_only)|ONAYLAMA işlemine benzer ancak ifadenin değerini test etmez; yalnızca hata ayıklama modunda yürütülmesi gereken kod için faydalıdır.|
 |[EMIN olun ve ENSURE_VALID](#ensure)|Verilerin doğruluğunu doğrulamak için kullanın.|
 |[THIS_FILE](#this_file)|Derlenmekte olan dosyanın adına genişletir.|
-|[IZLEMESININ](#trace)|Kitaplığın `printf`hata ayıklama sürümünde benzeri yetenek sağlar.|
+|[IZLEMESININ](#trace)|Kitaplığın hata ayıklama sürümünde `printf`benzeri bir yetenek sağlar.|
 |[DOĞRU](#verify)|ONAYLAMA işlemine benzer ancak, hata ayıklama sürümünde ve, kitaplığın yayın sürümünde de ifadeyi değerlendirir.|
 
 ### <a name="mfc-general-diagnostic-variables-and-functions"></a>MFC genel tanılama değişkenleri ve Işlevleri
@@ -74,7 +74,7 @@ Ayrıca, C çalışma zamanı kitaplığı, uygulamalarınızda hata ayıklamak 
 |[AfxEnableMemoryLeakDump](#afxenablememoryleakdump)|Bellek sızıntısı dökümünü sunar.|
 |[Afxenablememoryıtracking](#afxenablememorytracking)|Bellek izlemeyi açar ve kapatır.|
 |[Afxısmemoryblock](#afxismemoryblock)|Bir bellek bloğunun düzgün şekilde ayrıldığını doğrular.|
-|[AfxIsValidAddress](#afxisvalidaddress)|Bir bellek adres aralığının programın sınırları içinde olduğunu doğrular.|
+|[Afxısvalidaddress](#afxisvalidaddress)|Bir bellek adres aralığının programın sınırları içinde olduğunu doğrular.|
 |[Afxısvalidstring](#afxisvalidstring)|Bir dizeye yönelik işaretçinin geçerli olup olmadığını belirler.|
 |[AfxSetAllocHook](#afxsetallochook)|Her bellek ayırmada bir işlevin çağrılmasını mümkün.|
 
@@ -82,8 +82,8 @@ Ayrıca, C çalışma zamanı kitaplığı, uygulamalarınızda hata ayıklamak 
 
 |||
 |-|-|
-|[AfxDoForAllClasses](#afxdoforallclasses)|Çalışma zamanı tür denetimini destekleyen, `CObject`tüm türetilmiş sınıflarda belirtilen bir işlevi gerçekleştirir.|
-|[Afxdoforallobeler](#afxdoforallobjects)|`CObject` **Yeni**ile ayrılmış tüm türetilmiş nesnelerde belirtilen bir işlevi gerçekleştirir.|
+|[AfxDoForAllClasses](#afxdoforallclasses)|Çalışma zamanı tür denetimini destekleyen tüm `CObject`türetilmiş sınıflarda belirtilen bir işlevi gerçekleştirir.|
+|[Afxdoforallobeler](#afxdoforallobjects)|**Yeni**ile ayrılmış tüm `CObject`türetilmiş nesneler üzerinde belirtilen bir işlevi gerçekleştirir.|
 
 ### <a name="mfc-compilation-macros"></a>MFC derleme makroları
 
@@ -91,7 +91,7 @@ Ayrıca, C çalışma zamanı kitaplığı, uygulamalarınızda hata ayıklamak 
 |-|-|
 |[_AFX_SECURE_NO_WARNINGS](#afx_secure_no_warnings)|Kullanım dışı bırakılan MFC işlevlerinin kullanılması için derleyici uyarılarını gizler.|
 
-## <a name="afx_secure_no_warnings"></a>_AFX_SECURE_NO_UYARILAR
+## <a name="afx_secure_no_warnings"></a>_AFX_SECURE_NO_WARNINGS
 
 Kullanım dışı bırakılan MFC işlevlerinin kullanılması için derleyici uyarılarını gizler.
 
@@ -103,7 +103,7 @@ _AFX_SECURE_NO_WARNINGS
 
 ### <a name="example"></a>Örnek
 
-Bu kod örneği, _AFX_SECURE_NO_UYARıLAR tanımlanmadığında derleyici uyarısına neden olur.
+_AFX_SECURE_NO_WARNINGS tanımlanmamışsa, bu kod örneği bir derleyici uyarısına neden olur.
 
 ```cpp
 // define this before including any afx files in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier)
@@ -119,7 +119,7 @@ pRichEdit->GetSelText(sz);
 
 ## <a name="afxdebugbreak"></a>AfxDebugBreak
 
-MFC uygulamanızın hata ayıklama sürümünün yürütülmesi sırasında bir kesme (çağrının `AfxDebugBreak`konumunda) sağlamak için bu işlevi çağırın.
+MFC uygulamanızın hata ayıklama sürümünün yürütülmesi sırasında bir kesmenin (`AfxDebugBreak`çağrısının bulunduğu konumda) oluşmasına neden olmak için bu işlevi çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -129,11 +129,11 @@ void AfxDebugBreak( );
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AfxDebugBreak`MFC uygulamasının yayın sürümlerinde hiçbir etkiye sahip değildir ve kaldırılmalıdır. Bu işlev yalnızca MFC uygulamalarında kullanılmalıdır. MFC olmayan uygulamalarda kesme sağlamak `DebugBreak`için Win32 API sürümünü kullanın.
+`AfxDebugBreak`, MFC uygulamasının yayın sürümlerinde hiçbir etkiye sahip değildir ve kaldırılmalıdır. Bu işlev yalnızca MFC uygulamalarında kullanılmalıdır. MFC olmayan uygulamalarda kesme sağlamak için `DebugBreak`Win32 API sürümünü kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxver_. h
+**Üst bilgi:** afxver_. h
 
 ##  <a name="assert"></a>VERMEDIĞINI
 
@@ -182,22 +182,22 @@ ASSERT_KINDOF(classname, pobject)
 ### <a name="parameters"></a>Parametreler
 
 *sınıf*<br/>
-Türetilmiş sınıfın adı `CObject`.
+`CObject`türetilmiş bir sınıfın adı.
 
 *nesnesini*<br/>
 Sınıf nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Nesnesini* parametresi bir nesnenin işaretçisi olmalıdır ve **const**olabilir. İşaret edilen nesne ve sınıf, çalışma zamanı sınıf `CObject` bilgilerini desteklemelidir. Örnek olarak, `CMyDoc` sınıfın bir nesnesinin bir `pDocument` işaretçisi veya türevlerinden herhangi birinin bir işaretçisi olduğundan emin olmak için şu kodu kullanabilirsiniz:
+*Nesnesini* parametresi bir nesnenin işaretçisi olmalıdır ve **const**olabilir. İşaret edilen nesnenin ve sınıfın `CObject` çalışma zamanı sınıf bilgilerini desteklemesi gerekir. Örnek olarak, `pDocument` `CMyDoc` sınıfının bir nesnesinin bir işaretçisi olduğundan emin olmak için, ya da onun türetylarından herhangi biri, şu kodu kullanabilirsiniz:
 
 [!code-cpp[NVC_MFCDocView#194](../../mfc/codesnippet/cpp/diagnostic-services_3.cpp)]
 
-`ASSERT_KINDOF` Makro kullanımı, kodlama ile tamamen aynıdır:
+`ASSERT_KINDOF` makrosunu kullanmak, kodlama ile tamamen aynıdır:
 
 [!code-cpp[NVC_MFCDocView#195](../../mfc/codesnippet/cpp/diagnostic-services_4.cpp)]
 
-Bu işlev yalnızca [DECLARE_DYNAMIC] (Run-Time-Object-Model-Services. MD # DECLARE_DYNAMIC veya [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makrosu ile belirtilen sınıflar için çalışır.
+Bu işlev yalnızca [DECLARE_DYNAMIC] (Run-Time-Object-Model-Services. MD # declare_dynamic veya [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makrosu ile belirtilen sınıflar için çalışır.
 
 > [!NOTE]
 >  Bu işlev yalnızca MFC 'nin hata ayıklama sürümünde kullanılabilir.
@@ -217,13 +217,13 @@ ASSERT_VALID(pObject)
 ### <a name="parameters"></a>Parametreler
 
 *Nesnesini*<br/>
-Öğesinden `CObject` türetilmiş, `AssertValid` üye işlevin geçersiz kılan bir sürümüne sahip bir sınıfının nesnesini belirtir.
+`AssertValid` member işlevinin geçersiz kılan bir sürümüne sahip `CObject` türetilen bir sınıfın nesnesini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ASSERT_VALID bağımsız değişkeni `AssertValid` olarak geçirilen nesnenin üye işlevini çağırır.
+ASSERT_VALID, bağımsız değişkeni olarak geçirilen nesnenin `AssertValid` üye işlevini çağırır.
 
-MFC 'nin yayın sürümünde ASSERT_VALID hiçbir şey yapmaz. Hata ayıklama sürümünde, işaretçiyi doğrular, null olarak denetler ve nesnenin kendi `AssertValid` üye işlevlerini çağırır. Bu testlerin herhangi biri başarısız olursa, [onaylama](#assert)ile aynı şekilde bir uyarı iletisi görüntülenir.
+MFC 'nin yayın sürümünde ASSERT_VALID hiçbir şey yapmaz. Hata ayıklama sürümünde, işaretçiyi doğrular, NULL olarak denetler ve nesnenin kendi `AssertValid` üye işlevlerini çağırır. Bu testlerin herhangi biri başarısız olursa, [onaylama](#assert)ile aynı şekilde bir uyarı iletisi görüntülenir.
 
 > [!NOTE]
 >  Bu işlev yalnızca MFC 'nin hata ayıklama sürümünde kullanılabilir.
@@ -248,18 +248,18 @@ Bellek sızıntılarını bulmaya yardımcı olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Programınızdaki her yerde, yığın depolama alanı ayırmak için normalde **New** işlecini KULLANMANıZ için DEBUG_NEW kullanabilirsiniz.
+Programınızdaki her yerde DEBUG_NEW kullanarak, genellikle **Yeni** işleci yığın depolama alanı ayırmak için kullanabilirsiniz.
 
-Hata ayıklama modunda ( **_DEBUG** simgesi tanımlandığında), DEBUG_NEW, ayırdığı her nesne için dosya adını ve satır numarasını izler. Ardından, [CMemoryState::D umpallobjectssince](cmemorystate-structure.md#dumpallobjectssince) üye işlevini KULLANDıĞıNıZDA, DEBUG_NEW ile ayrılmış her nesne, ayrıldığı dosya adı ve satır numarası ile gösterilir.
+Hata ayıklama modunda ( **_DEBUG** sembol tanımlandığında) DEBUG_NEW, ayrılan her nesne için dosya adını ve satır numarasını izler. Ardından, [CMemoryState::D umpallobjectssince](cmemorystate-structure.md#dumpallobjectssince) üye işlevini kullandığınızda, DEBUG_NEW ile ayrılan her nesne, ayrıldığı dosya adı ve satır numarası ile gösterilir.
 
 DEBUG_NEW kullanmak için aşağıdaki yönergeyi kaynak dosyalarınıza ekleyin:
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]
 
-Bu yönergeyi ekledikten sonra, ön işlemci **Yeni**kullandığınızda DEBUG_NEW ekler ve MFC Rest 'i yapar. Programınızın bir yayın sürümünü derlerken, DEBUG_NEW basit bir **Yeni** işlemle çözümlenir ve dosya adı ve satır numarası bilgileri oluşturulmaz.
+Bu yönergeyi ekledikten sonra, Önişlemci **Yeni**kullandığınızda DEBUG_NEW ekler ve MFC Rest 'i yapar. Programınızın bir yayın sürümünü derlerken DEBUG_NEW basit bir **Yeni** işleme çözümlenir ve dosya adı ve satır numarası bilgileri oluşturulmaz.
 
 > [!NOTE]
->  Önceki MFC sürümlerinde (4,1 ve önceki sürümlerde), `#define` deyimi IMPLEMENT_DYNCREATE veya IMPLEMENT_SERIAL makrolarını çağıran tüm deyimlerden sonra yerleştirmeniz gerekir. Bu artık gerekli değildir.
+>  MFC 'nin önceki sürümlerinde (4,1 ve önceki sürümlerde), IMPLEMENT_DYNCREATE veya IMPLEMENT_SERIAL makrolarını çağıran tüm deyimlerden sonra `#define` deyimini yerleştirmeniz gerekir. Bu artık gerekli değildir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -267,7 +267,7 @@ Bu yönergeyi ekledikten sonra, ön işlemci **Yeni**kullandığınızda DEBUG_N
 
 ##  <a name="debug_only"></a>DEBUG_ONLY
 
-Hata ayıklama modunda ( **_DEBUG** simgesi tanımlandığında), debug_only bağımsız değişkenini değerlendirir.
+Hata ayıklama modunda ( **_DEBUG** sembol tanımlandığında), debug_only bağımsız değişkenini değerlendirir.
 
 ```
 DEBUG_ONLY(expression)
@@ -277,7 +277,7 @@ DEBUG_ONLY(expression)
 
 Bir yayın derlemesinde, DEBUG_ONLY bağımsız değişkenini değerlendirmez. Bu, yalnızca hata ayıklama yapılarında yürütülmesi gereken bir kodunuz olduğunda yararlıdır.
 
-DEBUG_ONLY makrosu, ve `#endif`ile `#ifdef _DEBUG` çevreleyen *ifadeye* eşdeğerdir.
+DEBUG_ONLY makrosu, `#ifdef _DEBUG` ve `#endif`çevreleyen *ifadeye* eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -307,11 +307,11 @@ Sınanacak Boole ifadesini belirtir.
 
 Bu makroların amacı parametrelerin doğrulanmasını geliştirmaktır. Makrolar, kodunuzda yanlış parametrelerin daha fazla işlenmesini önler. ONAYLAMA makrolarının aksine, makroların bir onaylama oluşturmaya ek olarak bir özel durum oluşturması gerekir.
 
-Makrolar, proje yapılandırmasına göre iki şekilde davranır. Makrolar ONAYı çağırır ve onaylama başarısız olursa bir özel durum oluşturur. Bu nedenle, hata ayıklama yapılandırmalarında (yani, _hata ayıklama tanımlanmıştır), makrolar yayın yapılandırmalarında bir onaylama ve özel durum üretir, makrolar yalnızca özel durumu oluşturur (onaylama, sürüm yapılandırmalarında ifadeyi değerlendirmez).
+Makrolar, proje yapılandırmasına göre iki şekilde davranır. Makrolar ONAYı çağırır ve onaylama başarısız olursa bir özel durum oluşturur. Bu nedenle, hata ayıklama yapılandırmalarında (yani _DEBUG tanımlanmıştır) makrolar yayın yapılandırmalarında bir onaylama ve özel durum üretir, makrolar yalnızca özel durumu oluşturur (onay, ifadeyi sürüm yapılandırmalarında değerlendirmez).
 
-Makro ENSURE_ARG, bir makro gibi davranır.
+Makro ENSURE_ARG, makrosuz gibi davranır.
 
-ENSURE_VALID, ASSERT_VALID makrosunu çağırır (yalnızca hata ayıklama yapılarında bir etkiye sahiptir). Ayrıca, ENSURE_VALID işaretçi NULL ise bir özel durum oluşturur. NULL test her iki hata ayıklama ve yayın yapılandırmasında gerçekleştirilir.
+ENSURE_VALID, ASSERT_VALID makrosunu çağırır (yalnızca hata ayıklama yapılarında bir etkiye sahiptir). Ayrıca, işaretçi NULL ise ENSURE_VALID bir özel durum oluşturur. NULL test her iki hata ayıklama ve yayın yapılandırmasında gerçekleştirilir.
 
 Bu testlerin herhangi biri başarısız olursa, onaylama ile aynı şekilde bir uyarı iletisi görüntülenir. Makro gerekirse geçersiz bir bağımsız değişken özel durumu oluşturur.
 ### <a name="requirements"></a>Gereksinimler
@@ -412,11 +412,11 @@ CDumpContext  afxDump;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`afxDump`, hata ayıklayıcı çıkış penceresine veya hata ayıklama terminaline bilgi göndermenizi `CDumpContext` sağlayan önceden tanımlanmış bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesidir. Genellikle, için `CObject::Dump`bir `afxDump` parametre olarak sağlarsınız.
+`afxDump`, hata ayıklayıcı çıktı penceresine veya hata ayıklama terminaline `CDumpContext` bilgilerini göndermenizi sağlayan önceden tanımlanmış bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesidir. Genellikle, `CObject::Dump`bir parametre olarak `afxDump` sağlarsınız.
 
-Windows NT ve tüm Windows sürümleri için çıkış, `afxDump` uygulamanızda hata ayıkladığınızda, Visual C++ bir çıkış hata ayıklama penceresine gönderilir.
+Windows NT ve tüm Windows sürümleri için `afxDump` çıktı, uygulamanızda hata ayıkladığınızda, Visual C++ bir çıkış hata ayıklama penceresine gönderilir.
 
-Bu değişken yalnızca MFC 'nin hata ayıklama sürümünde tanımlanmıştır. Hakkında `afxDump`daha fazla bilgi için bkz. [MFC uygulamalarında hata ayıklama](/visualstudio/debugger/mfc-debugging-techniques).
+Bu değişken yalnızca MFC 'nin hata ayıklama sürümünde tanımlanmıştır. `afxDump`hakkında daha fazla bilgi için bkz. [MFC uygulamalarında hata ayıklama](/visualstudio/debugger/mfc-debugging-techniques).
 
 ### <a name="example"></a>Örnek
 
@@ -439,13 +439,13 @@ void AfxDump(const CObject* pOb);
 ### <a name="parameters"></a>Parametreler
 
 *pOb*<br/>
-Sınıfından türetilmiş `CObject`bir sınıfın nesnesine yönelik bir işaretçi.
+`CObject`türetilen bir sınıfın nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AfxDump`bir nesnenin `Dump` üye işlevini çağırır ve bilgileri `afxDump` değişken tarafından belirtilen konuma gönderir. `AfxDump`yalnızca MFC 'nin hata ayıklama sürümünde kullanılabilir.
+`AfxDump` bir nesnenin `Dump` üye işlevini çağırır ve bilgileri `afxDump` değişkeni tarafından belirtilen konuma gönderir. `AfxDump` yalnızca MFC 'nin hata ayıklama sürümünde kullanılabilir.
 
-Program kodunuz çağırmamalıdır `AfxDump`, ancak bunun yerine uygun nesnenin `Dump` üye işlevini çağırmalıdır.
+Program kodunuz `AfxDump`çağırmamalıdır, ancak bunun yerine uygun nesnenin `Dump` üye işlevini çağırmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -461,13 +461,13 @@ int  afxMemDF;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`afxMemDF`, sabit listesi `afxMemDF`tarafından belirtilen aşağıdaki değerlere sahip olabilir:
+`afxMemDF`, numaralandırma `afxMemDF`belirtilen şekilde aşağıdaki değerlere sahip olabilir:
 
-- `allocMemDF`Hata ayıklama ayırıcısını etkinleştirir (hata ayıklama kitaplığındaki varsayılan ayar).
+- `allocMemDF` hata ayıklama ayırıcısı 'nı etkinleştirir (varsayılan ayar, hata ayıklama kitaplığı).
 
-- `delayFreeMemDF`Belleği boşaltma gecikmeleri. Programınız bir bellek bloğunu serbest bırakırken, ayırıcı bu belleği temel işletim sistemine döndürmez. Bu işlem, programınıza maksimum bellek stres yerleştirir.
+- bellek boşaltma `delayFreeMemDF` gecikmelerin. Programınız bir bellek bloğunu serbest bırakırken, ayırıcı bu belleği temel işletim sistemine döndürmez. Bu işlem, programınıza maksimum bellek stres yerleştirir.
 
-- `checkAlwaysMemDF`Bellek `AfxCheckMemory` her ayrıldığında veya serbest bırakılmış her seferinde çağırır. Bu, bellek ayırmalarını ve ayırmayı önemli ölçüde yavaşlatır.
+- `checkAlwaysMemDF`, bellek her ayrıldığı veya serbest bırakılmış her seferinde `AfxCheckMemory` çağırır. Bu, bellek ayırmalarını ve ayırmayı önemli ölçüde yavaşlatır.
 
 ### <a name="example"></a>Örnek
 
@@ -489,7 +489,7 @@ throw COleException*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hata ise, işlev bir özel durum oluşturur. Geçirilen SCODE E_OUTOFMEMORY ise, işlev [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception)çağırarak bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) oluşturur. Aksi takdirde, işlev [AfxThrowOleException](exception-processing.md#afxthrowoleexception)çağırarak bir [copaexception](../../mfc/reference/coleexception-class.md) oluşturur.
+Bir hata ise, işlev bir özel durum oluşturur. Geçirilen SCODE E_OUTOFMEMORY, işlev [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception)çağırarak bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) oluşturur. Aksi takdirde, işlev [AfxThrowOleException](exception-processing.md#afxthrowoleexception)çağırarak bir [copaexception](../../mfc/reference/coleexception-class.md) oluşturur.
 
 Bu işlev, uygulamanızdaki OLE işlevlerine yapılan çağrıların dönüş değerlerini denetlemek için kullanılabilir. Dönüş değerini uygulamanızdaki Bu işlevle test ederek, en az miktarda kodla hata koşullarına doğru şekilde tepki verebilirsiniz.
 
@@ -520,16 +520,16 @@ Bellek hatası yoksa sıfır dışı; Aksi takdirde 0.
 
 İşlev bir bellek bozulması algılarsa, hiçbir şey yazdıramayabilir.
 
-Yığında ayrılmış olan tüm bellek blokları, **Yeni** tarafından ayrılan, ancak **malloc** `GlobalAlloc` işlevi veya Windows işlevi gibi temeldeki bellek ayırıcılarına doğrudan çağrılar tarafından ayrılanlar dahil olmak üzere denetlenir. Herhangi bir bloğun bozulmuş olduğu bulunursa, hata ayıklayıcı çıktısına bir ileti yazdırılır.
+Yığında ayrılmış olan tüm bellek blokları, **Yeni** tarafından ayrılan, ancak **malloc** işlevi veya `GlobalAlloc` Windows işlevi gibi temeldeki bellek ayırıcılarına doğrudan çağrılar tarafından ayrılanlar dahil olmak üzere denetlenir. Herhangi bir bloğun bozulmuş olduğu bulunursa, hata ayıklayıcı çıktısına bir ileti yazdırılır.
 
 Satırı eklerseniz
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]
 
-bir program modülünde, daha sonra belleğin ayrıldığı dosya `AfxCheckMemory` adını ve satır numarasını göstermek için çağırır.
+Program modülünde, `AfxCheckMemory` sonraki çağrılar, belleğin ayrıldığı dosya adını ve satır numarasını gösterir.
 
 > [!NOTE]
->  Modülünüzün bir veya daha fazla serileştirilebilir sınıf uygulaması varsa, `#define` satırı son IMPLEMENT_SERIAL makro çağrısından sonra koymanız gerekir.
+>  Modülünüzün bir veya daha fazla serileştirilebilir sınıf uygulaması varsa, `#define` satırını son IMPLEMENT_SERIAL makro çağrısından sonra koymanız gerekir.
 
 Bu işlev yalnızca MFC 'nin hata ayıklama sürümünde çalışır.
 
@@ -552,13 +552,13 @@ void AfxDump(const CObject* pOb);
 ### <a name="parameters"></a>Parametreler
 
 *pOb*<br/>
-Sınıfından türetilmiş `CObject`bir sınıfın nesnesine yönelik bir işaretçi.
+`CObject`türetilen bir sınıfın nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AfxDump`bir nesnenin `Dump` üye işlevini çağırır ve bilgileri `afxDump` değişken tarafından belirtilen konuma gönderir. `AfxDump`yalnızca MFC 'nin hata ayıklama sürümünde kullanılabilir.
+`AfxDump` bir nesnenin `Dump` üye işlevini çağırır ve bilgileri `afxDump` değişkeni tarafından belirtilen konuma gönderir. `AfxDump` yalnızca MFC 'nin hata ayıklama sürümünde kullanılabilir.
 
-Program kodunuz çağırmamalıdır `AfxDump`, ancak bunun yerine uygun nesnenin `Dump` üye işlevini çağırmalıdır.
+Program kodunuz `AfxDump`çağırmamalıdır, ancak bunun yerine uygun nesnenin `Dump` üye işlevini çağırmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -579,17 +579,17 @@ Döküm çıkışının hedefini gösterir. Bit düzeyinde OR ( **&#124;** ) ope
 
 - AFX_STACK_DUMP_TARGET_TRACE, [Trace](#trace) makrosu yoluyla çıkış gönderir. TRACE makrosu yalnızca hata ayıklama yapılarında çıktı oluşturur; Yayın yapılarında çıkış oluşturmaz. Ayrıca, Izleme hata ayıklayıcının yanı sıra diğer hedeflere yönlendirilebilir.
 
-- AFX_STACK_DUMP_TARGET_DEFAULT, döküm çıkışını varsayılan hedefe gönderir. Hata ayıklama derlemesi için, çıkış Izleme makrosuna gider. Yayın derlemesinde çıkış panoya gider.
+- AFX_STACK_DUMP_TARGET_DEFAULT, varsayılan hedefe döküm çıkışı gönderir. Hata ayıklama derlemesi için, çıkış Izleme makrosuna gider. Yayın derlemesinde çıkış panoya gider.
 
-- AFX_STACK_DUMP_TARGET_CLIPBOARD çıktıyı yalnızca panoya gönderir. Veriler, pano 'ya CF_TEXT Pano biçimi kullanılarak düz metin olarak yerleştirilir.
+- AFX_STACK_DUMP_TARGET_CLIPBOARD çıktı yalnızca panoya gönderilir. Veriler panoya CF_TEXT Pano biçimi kullanılarak düz metin olarak yerleştirilir.
 
 - AFX_STACK_DUMP_TARGET_BOTH, çıktıyı Pano 'ya ve Izleme makrosunu aynı anda gönderir.
 
-- AFX_STACK_DUMP_TARGET_ODS, Win32 işlevi `OutputDebugString()`aracılığıyla hata ayıklayıcıya doğrudan çıktı gönderir. Bu seçenek, işleme bir hata ayıklayıcı eklendiğinde hata ayıklama ve sürüm yapılarında hata ayıklayıcı çıkışı oluşturur. AFX_STACK_DUMP_TARGET_ODS her zaman hata ayıklayıcıya ulaşır (iliştirilmişse) ve yeniden yönlendirilemez.
+- AFX_STACK_DUMP_TARGET_ODS Win32 işlevi `OutputDebugString()`aracılığıyla hata ayıklayıcıya doğrudan çıktı gönderir. Bu seçenek, işleme bir hata ayıklayıcı eklendiğinde hata ayıklama ve sürüm yapılarında hata ayıklayıcı çıkışı oluşturur. AFX_STACK_DUMP_TARGET_ODS her zaman hata ayıklayıcıya ulaşır (iliştirilmişse) ve yeniden yönlendirilemez.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki örnek, bir MFC iletişim uygulamasındaki düğme işleyicisinden çağrılmadan `AfxDumpStack` oluşturulan çıkışın tek bir satırını yansıtır:
+Aşağıdaki örnek, bir MFC iletişim uygulamasındaki düğme işleyicisinden `AfxDumpStack` çağrılmadan oluşturulan çıkışın tek bir satırını yansıtır:
 
 ```Output
 === begin AfxDumpStack output ===
@@ -621,14 +621,14 @@ Yukarıdaki çıktıda bulunan her satır, son işlev çağrısının adresini, 
 
 Örneğin, aşağıdaki tabloda yukarıdaki çıktının ilk satırı açıklanmaktadır:
 
-|Çıkış|Açıklama|
+|Çıktı|Açıklama|
 |------------|-----------------|
 |`00427D55:`|Son işlev çağrısının dönüş adresi.|
 |`DUMP2\DEBUG\DUMP2.EXE!`|İşlev çağrısını içeren modülün tam yol adı.|
 |`void AfxDumpStack(unsigned long)`|İşlev prototipi çağrıldı.|
-|`+ 181 bytes`|İşlev prototipinin adresinden (Bu durumda, `void AfxDumpStack(unsigned long)`) dönüş adresine (Bu `00427D55`durumda) bayt cinsinden bir konum.|
+|`+ 181 bytes`|İşlev prototipine (Bu örnekte, `void AfxDumpStack(unsigned long)`), dönüş adresine (Bu örnekte, `00427D55`) bayt cinsinden bir konum.|
 
-`AfxDumpStack`MFC kitaplıklarının hata ayıklama ve hata ayıklama sürümlerinde kullanılabilir; Ancak, çalıştırılabilir dosyanız MFC 'yi paylaşılan bir DLL 'de kullandığında bile işlev her zaman statik olarak bağlanır. Paylaşılan kitaplık uygulamalarında, işlevi MFCS42 içinde bulunur. LIB kitaplığı (ve türevleri).
+`AfxDumpStack`, MFC kitaplıklarının hata ayıklama ve hata ayıklama sürümlerinde kullanılabilir; Ancak, çalıştırılabilir dosyanız MFC 'yi paylaşılan bir DLL 'de kullandığında bile işlev her zaman statik olarak bağlanır. Paylaşılan kitaplık uygulamalarında, işlevi MFCS42 içinde bulunur. LIB kitaplığı (ve türevleri).
 
 Bu işlevi başarıyla kullanmak için:
 
@@ -660,7 +660,7 @@ Bu bayrak için önceki değer.
 
 Bir uygulama MFC kitaplığını kaldırdığında, MFC kitaplığı bellek sızıntılarını denetler. Bu noktada, Visual Studio 'nun **hata ayıklama** penceresi aracılığıyla kullanıcıya herhangi bir bellek sızıntıları bildirilir.
 
-Uygulamanız MFC kitaplığından önce başka bir kitaplık yüklerse, bu kitaplıktaki bazı bellek ayırmaları hatalı olarak bellek sızıntısı olarak bildirilir. Hatalı bellek sızıntıları, MFC kitaplığı tarafından rapor olduğundan, uygulamanızın yavaş kapanmasına neden olabilir. Bu durumda, bellek sızıntısı `AfxEnableMemoryLeakDump` dökümünü devre dışı bırakmak için kullanın.
+Uygulamanız MFC kitaplığından önce başka bir kitaplık yüklerse, bu kitaplıktaki bazı bellek ayırmaları hatalı olarak bellek sızıntısı olarak bildirilir. Hatalı bellek sızıntıları, MFC kitaplığı tarafından rapor olduğundan, uygulamanızın yavaş kapanmasına neden olabilir. Bu durumda, bellek sızıntısı dökümünü devre dışı bırakmak için `AfxEnableMemoryLeakDump` kullanın.
 
 > [!NOTE]
 >  Bellek sızıntısı dökümünü devre dışı bırakmak için bu yöntemi kullanırsanız, uygulamanızda geçerli bellek sızıntılarını rapor almazsınız. Bu yöntemi yalnızca bellek sızıntısı raporunun yanlış bellek sızıntılarını içerdiğinden emin olmanız durumunda kullanmanız gerekir.
@@ -690,7 +690,7 @@ Bu değerin TRUE olarak ayarlanması bellek izlemeyi açar; FALSE, devre dışı
 
 Hangi bloklarında doğru şekilde ayırdığınıza bildiğiniz kodunuzun bölümlerinde izlemeyi devre dışı bırakmak için bu işlevi kullanın.
 
-Hakkında `AfxEnableMemoryTracking`daha fazla bilgi için bkz. [MFC uygulamalarında hata ayıklama](/visualstudio/debugger/mfc-debugging-techniques).
+`AfxEnableMemoryTracking`hakkında daha fazla bilgi için bkz. [MFC uygulamalarında hata ayıklama](/visualstudio/debugger/mfc-debugging-techniques).
 
 > [!NOTE]
 >  Bu işlev yalnızca MFC 'nin hata ayıklama sürümünde çalışır.
@@ -716,7 +716,7 @@ BOOL AfxIsMemoryBlock(
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
+*Lama*<br/>
 Sınanacak bellek bloğunu işaret eder.
 
 *nBytes*<br/>
@@ -834,13 +834,13 @@ Ayırmaya izin vermek istiyorsanız sıfır dışında; Aksi takdirde 0.
 
 Microsoft Foundation Class Kitaplığı hata ayıklama-bellek ayırıcısı, kullanıcının bir bellek ayırmayı izlemesine ve ayırmaya izin verilip verilmeyeceğini denetlemesine izin vermek için Kullanıcı tanımlı bir kanca işlevi çağırabilir. Ayırma kanca işlevleri prototipsiz aşağıdaki gibidir:
 
-**Bool AFXAPI allocHook (size_t** `nSize` **, bool** `bObject` **, Long** `lRequestNumber` **);**
+**Bool AFXAPı AllocHook (size_t** `nSize` **, bool** `bObject` **, uzun** `lRequestNumber` **);**
 
 *nSize*<br/>
 Önerilen bellek ayırmasının boyutu.
 
 *bObject*<br/>
-Ayırma, türetilmiş bir `CObject`nesne içinse true; Aksi takdirde false.
+Ayırma `CObject`türetilmiş bir nesne için ise TRUE; Aksi halde yanlış.
 
 *lRequestNumber*<br/>
 Bellek ayırmasının sıra numarası.
@@ -865,14 +865,14 @@ AFXAPI AfxDoForAllClasses(
 ### <a name="parameters"></a>Parametreler
 
 *PFN*<br/>
-Her sınıf için çağrılacak yineleme işlevine işaret eder. İşlev bağımsız değişkenleri, çağıran işlevin işlevine sağladığı `CRuntimeClass` ek verilere yönelik bir işaretçi ve void işaretçisi.
+Her sınıf için çağrılacak yineleme işlevine işaret eder. İşlev bağımsız değişkenleri, bir `CRuntimeClass` nesnesine ve çağıranın işleve sağladığı ek verilere yönelik void işaretçisidir.
 
 *pContext*<br/>
 Çağıran tarafından yineleme işlevine sağlayabileceğinizden isteğe bağlı verileri gösterir. Bu işaretçi NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seri `CObject`hale getirilebilir türetilmiş sınıflar, DECLARE_SERIAL makrosu kullanılarak türetilmiş sınıflardır. `AfxDoForAllClasses` *PContext* içinde öğesine geçirilen işaretçi, her çağrıldığında belirtilen yineleme işlevine geçirilir.
+Seri hale getirilebilir `CObject`türetilmiş sınıflar DECLARE_SERIAL makrosu kullanılarak türetilmiş sınıflardır. *PContext* içinde `AfxDoForAllClasses` geçirilen işaretçi, her çağrıldığında belirtilen yineleme işlevine geçirilir.
 
 > [!NOTE]
 >  Bu işlev yalnızca MFC 'nin hata ayıklama sürümünde çalışır.
@@ -889,7 +889,7 @@ Seri `CObject`hale getirilebilir türetilmiş sınıflar, DECLARE_SERIAL makrosu
 
 ##  <a name="afxdoforallobjects"></a>Afxdoforallobeler
 
-`CObject` **Yeni**ile ayrılmış olan öğesinden türetilmiş tüm nesneler için belirtilen yineleme işlevini yürütür.
+**Yeni**ile ayrılmış `CObject` türetilmiş tüm nesneler için belirtilen yineleme işlevini yürütür.
 
 ```
 void AfxDoForAllObjects(
@@ -900,14 +900,14 @@ void AfxDoForAllObjects(
 ### <a name="parameters"></a>Parametreler
 
 *PFN*<br/>
-Her nesne için yürütülecek yineleme işlevine işaret eder. İşlev bağımsız değişkenleri, çağıranın işlevine sağladığı ek `CObject` verilere ve void işaretçisine bir işaretçisidir.
+Her nesne için yürütülecek yineleme işlevine işaret eder. İşlev bağımsız değişkenleri, çağıranın işlevine sağladığı ek verilere yönelik bir `CObject` ve void işaretçisidir.
 
 *pContext*<br/>
 Çağıran tarafından yineleme işlevine sağlayabileceğinizden isteğe bağlı verileri gösterir. Bu işaretçi NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığın, genel veya katıştırılmış nesneler numaralandırılmadı. *PContext* içinde öğesine `AfxDoForAllObjects` geçirilen işaretçi, her çağrıldığında belirtilen yineleme işlevine geçirilir.
+Yığın, genel veya katıştırılmış nesneler numaralandırılmadı. *PContext* 'e `AfxDoForAllObjects` geçirilen işaretçi, her çağrıldığında belirtilen yineleme işlevine geçirilir.
 
 > [!NOTE]
 >  Bu işlev yalnızca MFC 'nin hata ayıklama sürümünde çalışır.

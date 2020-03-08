@@ -6,11 +6,11 @@ helpviewer_keywords:
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
 ms.openlocfilehash: 9fcbc002913cc6cce86276796a371231ef0f32e1
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502001"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856384"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 
@@ -28,7 +28,7 @@ Aşağıdaki işlevler, Windows kayıt veritabanına denetimin sınıfını, öz
 |[AfxOleUnregisterClass](#afxoleunregisterclass)|Kayıt veritabanından bir denetim sınıfını veya özellik sayfası sınıfını kaldırır.|
 |[AfxOleUnregisterTypeLib](#afxoleunregistertypelib)|Kayıt veritabanından denetimin tür kitaplığını kaldırır.|
 
-`AfxOleRegisterTypeLib`genellikle bir denetim DLL 'inin uygulamasında `DllRegisterServer`çağırılır. Benzer şekilde `AfxOleUnregisterTypeLib` , tarafından `DllUnregisterServer`çağrılır. `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass` `UpdateRegistry` ve `AfxOleUnregisterClass` genellikle bir denetimin sınıf fabrikası veya özellik sayfasının üye işlevi tarafından çağırılır.
+`AfxOleRegisterTypeLib` tipik olarak bir denetim DLL 'inin `DllRegisterServer`uygulamasında çağırılır. Benzer şekilde, `AfxOleUnregisterTypeLib` `DllUnregisterServer`tarafından çağrılır. `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass`ve `AfxOleUnregisterClass` genellikle denetimin sınıf fabrikası veya özellik sayfasının `UpdateRegistry` member işlevi tarafından çağırılır.
 
 ##  <a name="afxoleregistercontrolclass"></a>AfxOleRegisterControlClass
 
@@ -68,13 +68,13 @@ Bir araç çubuğunda veya paletteki OLE denetimini temsil etmek için kullanıl
 *nRegFlags*<br/>
 Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
-- `afxRegInsertable`OLE nesneleri için nesne Ekle iletişim kutusunda denetimin görünmesine izin verir.
+- `afxRegInsertable`, denetimin OLE nesneleri için nesne Ekle iletişim kutusunda görünmesine Izin verir.
 
-- `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
-- `afxRegFreeThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
+- `afxRegFreeThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
 
-   İki bayrağı `afxRegApartmentThreading` birleştirebilir ve `afxRegFreeThreading` ThreadingModel = both olarak ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
+   `afxRegApartmentThreading` iki bayrağı birleştirebilir ve `afxRegFreeThreading`, ThreadingModel = her Ikisi de ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
 
 > [!NOTE]
 >  MFC 4,2 ' den önceki MFC sürümlerinde, **int** *nregflags* parametresi, denetimin nesne Ekle iletişim kutusundan eklenmesine izin verilen veya izin verilmeyen bir bool parametresidir ( *binsertable*).
@@ -135,13 +135,13 @@ Denetim sınıfı kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, denetimin OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterControlClass`kayıt defterini sistemdeki denetim adı ve konumuyla güncelleştirir ve ayrıca, denetimin desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
+Bu, denetimin OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterControlClass`, kayıt defterini sistemde denetim adı ve konumuyla güncelleştirir ve ayrıca denetimin desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/cpp/registering-ole-controls_1.cpp)]
 
-Yukarıdaki örnek, Insertable `AfxOleRegisterControlClass` için bayrağıyla nasıl çağrılacağını ve altıncı parametre oluşturmak için Apartment model ORed bayrağını birlikte gösterir:
+Yukarıdaki örnek, `AfxOleRegisterControlClass` eklenebilir bayrağıyla nasıl çağrılacağını ve altıncı parametre oluşturmak için Apartment model ORed bayrağını birlikte gösterir:
 
 [!code-cpp[NVC_MFCAxCtl#12](../../mfc/reference/codesnippet/cpp/registering-ole-controls_2.cpp)]
 
@@ -177,10 +177,10 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
 *nRegFlags*<br/>
 Şu bayrağı içerebilir:
 
-- `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
 > [!NOTE]
->  MFC 4,2 ' den önceki MFC sürümlerinde, **int** *nregflags* parametresi kullanılabilir değildi. Ayrıca, bayrağın özellik `afxRegInsertable` sayfaları için geçerli bir seçenek olmadığını ve ayarlandıysa MFC 'de bir onaylama yapılmasına neden olacağını unutmayın.
+>  MFC 4,2 ' den önceki MFC sürümlerinde, **int** *nregflags* parametresi kullanılabilir değildi. Ayrıca, `afxRegInsertable` bayrağının Özellik sayfaları için geçerli bir seçenek olmadığını ve ayarlandıysa MFC 'de bir onaylama yapılmasına neden olacağını unutmayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -188,7 +188,7 @@ Denetim sınıfı kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik sayfasının OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterPropertyPageClass`kayıt defterini, özellik sayfası adı ve sistemdeki konumu ile güncelleştirir ve ayrıca denetim kayıt defterinde denetim tarafından desteklenen iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
+Bu özellik sayfasının OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterPropertyPageClass`, kayıt defterini Özellik sayfası adı ve sistem üzerindeki konumuyla güncelleştirir ve ayrıca denetim kayıt defterinde desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
 
 ### <a name="requirements"></a>Gereksinimler
 

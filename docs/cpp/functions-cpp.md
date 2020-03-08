@@ -9,11 +9,11 @@ helpviewer_keywords:
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
 ms.openlocfilehash: da30d647947e98146cd89f255c2e05991c1be562
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301515"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884176"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -202,7 +202,7 @@ void DoSomething(const std::string& input){...}
 void DoSomething(const std::string&& input){...}
 ```
 
-**Void** anahtar sözcüğü bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesinde **void** tek anahtar sözcüğüyle belirtilen bir işlev bağımsız değişken almaz. Listede başka bir yerde **void** türündeki bağımsız değişkenler hata üretir. Örneğin:
+**Void** anahtar sözcüğü bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesinde **void** tek anahtar sözcüğüyle belirtilen bir işlev bağımsız değişken almaz. Listede başka bir yerde **void** türündeki bağımsız değişkenler hata üretir. Örnek:
 
 ```cpp
 
