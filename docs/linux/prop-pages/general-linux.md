@@ -3,12 +3,12 @@ title: Genel Özellikler (Linux C++ Projesi)
 description: Visual Studio 'da, Genel Özellikler sayfasında ayarlayabileceğiniz Linux proje özelliklerini açıklar.
 ms.date: 01/14/2020
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
-ms.openlocfilehash: 6d598e9d52037d709cba87d98ad375455d8c00b0
-ms.sourcegitcommit: 49e4fb3e0300fe86c814130661f1bf68b16e72e2
+ms.openlocfilehash: d6a69d9fd3091c885ebd708cbc4598533d2922b4
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76031338"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78883986"
 ---
 # <a name="general-properties-linux-c"></a>Genel Özellikler (Linux C++)
 
@@ -20,7 +20,7 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker range=">=vs-2017"
 
-Özellik | Açıklama | Choices
+Özellik | Açıklama | Yapabileceği
 --- | ---| ---
 Çıkış dizini | Çıkış dosyası dizinine göreli bir yol belirtir. Ortam değişkenlerini içerebilir.
 Ara Dizin | Ara dosya dizinine göreli bir yol belirtir. Ortam değişkenlerini içerebilir.
@@ -29,7 +29,7 @@ Hedef uzantısı | Bu projenin oluşturduğu dosya uzantısını belirtir (örne
 Temizlemede Silinecek Uzantılar | Ara dizindeki, temizleme veya yeniden oluşturma sırasında Silinecek dosyalar için noktalı virgülle ayrılmış joker karakter belirtimi.
 Derleme günlüğü dosyası | Derleme günlüğü etkinken yazılacak olan derleme günlüğü dosyasını belirtir.
 Platform araç takımı | Geçerli yapılandırmayı oluşturmak için kullanılan araç takımını belirtir. Ayarlanmamışsa, varsayılan araç kümesi kullanılır.
-Uzak derleme makinesi | Uzaktan derleme, dağıtma ve hata ayıklama için kullanılacak hedef makine veya cihaz. **Visual Studio 2019 sürüm 16,1** [Hata ayıklama sayfasında hata](debugging-linux.md) ayıklama için farklı bir makine belirtebilirsiniz.
+Uzak derleme makinesi | Uzaktan derleme, dağıtma ve hata ayıklama için kullanılacak hedef makineyi veya cihazı görüntüler. **Platformlar arası** > **bağlantı yöneticisi** > **Araçlar** > **seçeneklerini** kullanarak bir hedef makine bağlantısı ekleyebilir veya düzenleyebilirsiniz. **Visual Studio 2019 sürüm 16,1** [Hata ayıklama sayfasında hata](debugging-linux.md) ayıklama için farklı bir makine belirtebilirsiniz.
 Uzak derleme kök dizini | Uzak makine veya cihazdaki bir dizinin yolunu belirtir.
 Uzak derleme proje dizini | Proje için uzak makine veya cihazdaki bir dizinin yolunu belirtir.
 Uzak dağıtım dizini | **Visual Studio 2019 sürüm 16,1** Projeyi dağıtmak için uzak makinedeki veya cihazdaki dizin yolunu belirtir.
