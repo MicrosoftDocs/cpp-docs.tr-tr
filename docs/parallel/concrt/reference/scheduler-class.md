@@ -22,11 +22,11 @@ helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
 ms.openlocfilehash: 77ad876b8352ab1ae86fde622b05712ec5f2cea9
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142005"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867150"
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 
@@ -42,14 +42,14 @@ class Scheduler;
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Scheduler](#ctor)|`Scheduler` sınıfının bir nesnesi yalnızca Fabrika yöntemleri kullanılarak veya örtük olarak oluşturulabilir.|
 |[~ Scheduler yıkıcısı](#dtor)|`Scheduler` sınıfının bir nesnesi, kendisine yapılan tüm dış başvurular mevcut olduğunda örtük olarak yok edilir.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Attach](#attach)|Zamanlayıcıyı çağıran bağlama iliştirir. Bu yöntem çağrıldıktan sonra, çağıran bağlam Zamanlayıcı tarafından yönetilir ve Zamanlayıcı geçerli Zamanlayıcı olur.|
 |[Oluşturma](#create)|Davranışı `_Policy` parametresi tarafından tanımlanan yeni bir zamanlayıcı oluşturur, Scheduler 'a bir başlangıç başvurusu koyar ve ona bir işaretçi döndürür.|

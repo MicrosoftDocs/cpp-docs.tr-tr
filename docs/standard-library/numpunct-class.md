@@ -31,11 +31,11 @@ helpviewer_keywords:
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
 ms.openlocfilehash: 07285f5c014db1ddf419c372913cac0364538a55
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689216"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856630"
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 
@@ -50,7 +50,7 @@ class numpunct : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* \
+*CharType*\
 Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -61,14 +61,14 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[numpunct](#numpunct)|@No__t_0 türündeki nesneler için Oluşturucu.|
+|[numpunct](#numpunct)|`numpunct`türündeki nesneler için Oluşturucu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|
-|[string_type](#string_type)|@No__t_0 türünde karakterler içeren bir dizeyi tanımlayan tür.|
+|[string_type](#string_type)|`CharType`türünde karakterler içeren bir dizeyi tanımlayan tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -87,11 +87,11 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>tuş takımı unct:: char_type
+## <a name="char_type"></a>sayısal tuş takımı:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -160,7 +160,7 @@ Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğe.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `decimal_point` tarafından çağrıldığı [decimal_point](#decimal_point)için örneğe bakın.
+Sanal üye işlevinin `decimal_point`tarafından çağrıldığı [decimal_point](#decimal_point)için örneğe bakın.
 
 ## <a name="do_falsename"></a>tuş takımı unct::d o_falsename
 
@@ -180,7 +180,7 @@ virtual string_type do_falsename() const;
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `falsename` tarafından çağrıldığı [falsename](#falsename)için örneğe bakın.
+Sanal üye işlevinin `falsename`tarafından çağrıldığı [falsename](#falsename)için örneğe bakın.
 
 ## <a name="do_grouping"></a>tuş takımı unct::d o_grouping
 
@@ -200,7 +200,7 @@ Korumalı sanal üye işlevi herhangi bir ondalık noktasının solunda gruplana
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `grouping` tarafından çağrıldığı [Gruplandırma](#grouping)için örneğe bakın.
+Sanal üye işlevinin `grouping`tarafından çağrıldığı [Gruplandırma](#grouping)için örneğe bakın.
 
 ## <a name="do_thousands_sep"></a>tuş takımı unct::d o_thousands_sep
 
@@ -220,7 +220,7 @@ Korumalı sanal üye işlevi herhangi bir ondalık noktanın solunda bir grup ay
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `thousands_sep` tarafından çağrıldığı [thousands_sep](#thousands_sep)için örneğe bakın.
+Sanal üye işlevinin `thousands_sep`tarafından çağrıldığı [thousands_sep](#thousands_sep)için örneğe bakın.
 
 ## <a name="do_truename"></a>tuş takımı unct::d o_truename
 
@@ -238,7 +238,7 @@ Tüm yerel ayarlar, **doğru**değeri göstermek için "true" dizesini döndür�
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `truename` tarafından çağrıldığı [truename](#truename)örneğine bakın.
+Sanal üye işlevinin `truename`tarafından çağrıldığı [truename](#truename)örneğine bakın.
 
 ## <a name="falsename"></a>tuş takımı unct:: falsename
 
@@ -337,7 +337,7 @@ the 0th group to the left of the radix character is of size 3
 
 ## <a name="numpunct"></a>tuş takımı unct:: tuş takımı unct
 
-@No__t_0 türündeki nesneler için Oluşturucu.
+`numpunct`türündeki nesneler için Oluşturucu.
 
 ```cpp
 explicit numpunct(size_t _Refs = 0);
@@ -345,7 +345,7 @@ explicit numpunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*_Refs*\
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -362,7 +362,7 @@ Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
 Oluşturucu kendi temel nesnesini **locale::** [model](../standard-library/locale-class.md#facet_class)(`_Refs`) ile başlatır.
 
-## <a name="string_type"></a>tuş takımı unct:: string_type
+## <a name="string_type"></a>sayısal tuş takımı:: string_type
 
 **CharType**türünde karakterler içeren bir dizeyi tanımlayan tür.
 
@@ -374,7 +374,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 Türü, nesne noktalama sıralarının kopyalarını depolayabilen [basic_string](../standard-library/basic-string-class.md) sınıf şablonu özelleştirmesi tanımlar.
 
-## <a name="thousands_sep"></a>tuş takımı unct:: thousands_sep
+## <a name="thousands_sep"></a>sayısal tuş takımı:: thousands_sep
 
 Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.
 
@@ -468,6 +468,6 @@ French_France.1252 falsename false
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
-[model sınıfı](../standard-library/locale-class.md#facet_class) \
+[\<yerel ayar >](../standard-library/locale.md)\
+[model sınıfı](../standard-library/locale-class.md#facet_class)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

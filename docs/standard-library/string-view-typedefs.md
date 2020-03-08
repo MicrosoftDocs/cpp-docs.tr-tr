@@ -7,13 +7,13 @@ f1_keywords:
 - xstring/std::u32string_view
 - xstring/std::wstring_view
 ms.openlocfilehash: c3367afe1353ac70abb74a59658a255614ac8470
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459176"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865853"
 ---
-# <a name="ltstringviewgt-typedefs"></a>&lt;string_view&gt; tür tanımları
+# <a name="ltstring_viewgt-typedefs"></a>&lt;string_view&gt; tür tanımları
 
 ||||
 |-|-|-|
@@ -22,7 +22,7 @@ ms.locfileid: "68459176"
 
 ## <a name="string_view"></a>string_view
 
-**Char**türünde öğeler içeren [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan tür.
+Sınıf şablonunun bir özelleştirmesi tanımlayan tür **char**türü öğeleriyle [basic_string_view](../standard-library/basic-string-view-class.md) .
 
 ```cpp
 typedef basic_string_view<char, char_traits<char>> string_view;
@@ -42,7 +42,7 @@ Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](.
 
 ## <a name="u16string_view"></a>u16string_view
 
-Türü`char16_t`öğeleri olan [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan tür.
+`char16_t`türündeki öğelerle [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan bir tür.
 
 ```cpp
 typedef basic_string_view<char16_t, char_traits<char16_t>> u16string_view;
@@ -54,7 +54,7 @@ Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](.
 
 ## <a name="u32string_view"></a>u32string_view
 
-Türü`char32_t`öğeleri olan [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan tür.
+`char32_t`türündeki öğelerle [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan bir tür.
 
 ```cpp
 typedef basic_string_view<char32_t, char_traits<char32_t>> u32string_view;
@@ -66,7 +66,7 @@ Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](.
 
 ## <a name="wstring_view"></a>wstring_view
 
-**Wchar_t**türü öğeleriyle [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan tür.
+**Wchar_t**türündeki öğelerle [basic_string_view](../standard-library/basic-string-view-class.md) sınıf şablonunun bir özelleştirmesi tanımlayan bir tür.
 
 ```cpp
 typedef basic_string_view<wchar_t, char_traits<wchar_t>> wstring_view;
@@ -85,7 +85,7 @@ basic_string_view<wchar_t> wstr(L"Hello");
 Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
 > [!NOTE]
-> **Wchar_t** 'Nin boyutu Windows üzerinde iki bayttır, ancak bu durum tüm platformlar için bu durum değildir. Tüm platformlarda aynı olmaya devam eden bir genişlik ile string_view geniş bir karakter türüne ihtiyacınız varsa, [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) veya [u32string_view](../standard-library/string-view-typedefs.md#u32string_view)kullanın.
+> **Wchar_t** boyutu Windows üzerinde iki bayttır, ancak bu durum tüm platformlar için bu durum değildir. Tüm platformlarda aynı olmaya devam eden bir genişliği olan string_view geniş bir karakter türüne ihtiyacınız varsa [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) veya [u32string_view](../standard-library/string-view-typedefs.md#u32string_view)kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

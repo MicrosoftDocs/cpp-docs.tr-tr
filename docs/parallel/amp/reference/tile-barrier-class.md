@@ -13,11 +13,11 @@ helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
 ms.openlocfilehash: 757309a10da3e6d1c9c053430cce2cf603380b1f
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127770"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855929"
 ---
 # <a name="tile_barrier-class"></a>tile_barrier Sınıfı
 
@@ -33,13 +33,13 @@ class tile_barrier;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[tile_barrier Oluşturucusu](#ctor)|`tile_barrier` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[bekleneceğini](#wait)|Kutucuktaki tüm iş parçacıklarının beklemeyi bitirene kadar iş parçacığı grubundaki (kutucuktaki) tüm iş parçacıklarının yürütmeyi durdurmasını söyler.|
 |[wait_with_all_memory_fence](#wait_with_all_memory_fence)|Tüm bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller.|

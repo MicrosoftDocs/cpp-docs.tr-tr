@@ -15,11 +15,11 @@ helpviewer_keywords:
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
 ms.openlocfilehash: 838427320fcb68cedb97b36156fc18002ed962d8
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143287"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78882928"
 ---
 # <a name="openmp-environment-variables"></a>OpenMP Ortam Değişkenleri
 

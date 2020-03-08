@@ -5,11 +5,11 @@ helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ms.openlocfilehash: 335db55f3b181021f4deb391358df5bbfb607815
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415693"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865515"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003 - 2015
 

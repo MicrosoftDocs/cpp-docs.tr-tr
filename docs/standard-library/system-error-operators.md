@@ -6,17 +6,17 @@ f1_keywords:
 - system_error/std::operator==
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
 ms.openlocfilehash: 5cf6a455beb5654ef65f7411db4783a32c71d625
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246218"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876293"
 ---
-# <a name="ltsystemerrorgt-operators"></a>&lt;system_error&gt; işleçleri
+# <a name="ltsystem_errorgt-operators"></a>&lt;system_error&gt; işleçleri
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const error_code& left,
@@ -31,23 +31,23 @@ bool operator==(const error_condition& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Eşitlik için test edilecek nesne.
+*sol*\
+Eşitlik için sınanacak nesne.
 
 *sağ*\
-Eşitlik için test edilecek nesne.
+Eşitlik için sınanacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler eşitse; **false** nesneler eşit değilse.
+nesneler eşitse **true** ; nesneler eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev döndürür `left.category() == right.category() && left.value() == right.value()`.
+Bu işlev `left.category() == right.category() && left.value() == right.value()`döndürür.
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const error_code& left, const error_condition& right);
@@ -58,7 +58,7 @@ bool operator!=(const error_condition& left, const error_condition& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
+*sol*\
 Eşitsizlik için test edilecek nesne.
 
 *sağ*\
@@ -66,13 +66,13 @@ Eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesne iletilmezse *sol* geçirilen nesne eşit değil *doğru*; Aksi takdirde **false**.
+*solda* geçirilen nesne, *sağa*geçirilen nesneye eşit değilse **doğru** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev döndürür `!(left == right)`.
+Bu işlev `!(left == right)`döndürür.
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işleç&lt;
 
 Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.
 
@@ -102,7 +102,7 @@ inline bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
+*sol*\
 Karşılaştırılacak nesne.
 
 *sağ*\
@@ -110,13 +110,13 @@ Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesne iletilmezse *sol* nesneden değerinden *doğru*; Aksi takdirde, **false**.
+*solda* geçirilen nesne *sağdaki*nesneden küçükse **true** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlev hata sıralamasını sınar.
 
-## <a name="op_ostream"></a> İşleci&lt;&lt;
+## <a name="op_ostream"></a>işleç&lt;&lt;
 
 ```cpp
 template <class charT, class traits> 

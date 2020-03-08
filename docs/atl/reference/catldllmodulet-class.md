@@ -1,5 +1,5 @@
 ---
-title: CAtlDllModuleT sınıfı
+title: Catldllmodület sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlDllModuleT
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
 ms.openlocfilehash: be42915c6c2e941bc5fc1de78c5c7ac26ccca6e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247106"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78863244"
 ---
-# <a name="catldllmodulet-class"></a>CAtlDllModuleT sınıfı
+# <a name="catldllmodulet-class"></a>Catldllmodület sınıfı
 
-Bu sınıf, bir DLL için modül temsil eder.
+Bu sınıf, bir DLL 'in modülünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,34 +34,34 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınıza türetilen `CAtlDllModuleT`.
+*Şı*<br/>
+Sınıfınız `CAtlDllModuleT`türetilir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlDllModuleT::CAtlDllModuleT](#catldllmodulet)|Oluşturucu.|
-|[CAtlDllModuleT:: ~ CAtlDllModuleT](#dtor)|Yıkıcı.|
+|[Catldllmodület:: Catldllmodület](#catldllmodulet)|Oluşturucu.|
+|[Catldllmodület:: ~ Catldllmodület](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlDllModuleT::DllCanUnloadNow](#dllcanunloadnow)|DLL kaldırılabilip kaldırılamayacağını olmadığını sınar.|
-|[CAtlDllModuleT::DllGetClassObject](#dllgetclassobject)|Bir sınıf üreteci döndürür.|
-|[CAtlDllModuleT::DllMain](#dllmain)|Bir dinamik bağlantı kitaplığı (DLL) halinde isteğe bağlı bir giriş noktası.|
-|[CAtlDllModuleT::DllRegisterServer](#dllregisterserver)|DLL içindeki nesneler için sistem kayıt defteri girdileri ekler.|
-|[CAtlDllModuleT::DllUnregisterServer](#dllunregisterserver)|DLL içindeki nesneler için sistem kayıt defteri girdileri kaldırır.|
-|[CAtlDllModuleT::GetClassObject](#getclassobject)|Bir sınıf üreteci döndürür. Tarafından çağrılan [DllGetClassObject](#dllgetclassobject).|
+|[Catldllmodület::D llCanUnloadNow](#dllcanunloadnow)|DLL 'in kaldırılacaksa test eder.|
+|[Catldllmodület::D llGetClassObject](#dllgetclassobject)|Bir sınıf üreteci döndürür.|
+|[Catldllmodület::D llMain](#dllmain)|İsteğe bağlı giriş, bir dinamik bağlantı kitaplığı (DLL) içine işaret.|
+|[Catldllmodület::D llRegisterServer](#dllregisterserver)|DLL içindeki nesneler için sistem kayıt defterine giriş ekler.|
+|[Catldllmodület::D llUnregisterServer](#dllunregisterserver)|DLL içindeki nesneler için sistem kayıt defterindeki girişleri kaldırır.|
+|[Catldllmodület:: GetClassObject](#getclassobject)|Bir sınıf üreteci döndürür. [DllGetClassObject](#dllgetclassobject)tarafından çağrılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlDllModuleT` Modülü dinamik bağlantı kitaplığı (DLL) temsil eder ve tüm DLL projesi tarafından kullanılan işlevler sağlar. Bu alt uzmanlaşması [CAtlModuleT](../../atl/reference/catlmodulet-class.md) sınıfı kayıt için destek içerir.
+`CAtlDllModuleT`, bir dinamik bağlantı kitaplığı (DLL) modülünü temsil eder ve tüm DLL projeleri tarafından kullanılan işlevleri sağlar. [Catlmodület](../../atl/reference/catlmodulet-class.md) sınıfının bu özelleştirmesi kayıt desteğini içerir.
 
-ATL modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md).
+ATL 'deki modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -69,15 +69,15 @@ ATL modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](..
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
-[CAtlModuleT](../../atl/reference/catlmodulet-class.md)
+[Catlmodület](../../atl/reference/catlmodulet-class.md)
 
 `CAtlDllModuleT`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="catldllmodulet"></a>  CAtlDllModuleT::CAtlDllModuleT
+##  <a name="catldllmodulet"></a>Catldllmodület:: Catldllmodület
 
 Oluşturucu.
 
@@ -85,17 +85,17 @@ Oluşturucu.
 CAtlDllModuleT() throw();
 ```
 
-##  <a name="dtor"></a>  CAtlDllModuleT:: ~ CAtlDllModuleT
+##  <a name="dtor"></a>Catldllmodület:: ~ Catldllmodület
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CAtlDllModuleT() throw();
 ```
 
-##  <a name="dllcanunloadnow"></a>  CAtlDllModuleT::DllCanUnloadNow
+##  <a name="dllcanunloadnow"></a>Catldllmodület::D llCanUnloadNow
 
-DLL kaldırılabilip kaldırılamayacağını olmadığını sınar.
+DLL 'in kaldırılacaksa test eder.
 
 ```
 HRESULT DllCanUnloadNow() throw();
@@ -103,9 +103,9 @@ HRESULT DllCanUnloadNow() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Erişilemiyorsa, DLL kaldırılabilip kaldırılamayacağını S_OK veya S_FALSE döndürür.
+DLL bellekten kaldırılacaksa S_OK döndürür veya S_FALSE.
 
-##  <a name="dllgetclassobject"></a>  CAtlDllModuleT::DllGetClassObject
+##  <a name="dllgetclassobject"></a>Catldllmodület::D llGetClassObject
 
 Sınıf üreteci döndürür.
 
@@ -118,22 +118,22 @@ HRESULT DllGetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*rclsid*<br/>
-Oluşturulacak nesnenin CLSID.
+*rclsıd*<br/>
+Oluşturulacak nesnenin CLSID değeri.
 
-*riid*<br/>
-İstenen arabirim Laboratuvardaki.
+*riıd*<br/>
+İstenen arabirimin IID 'si.
 
-*ppv*<br/>
-Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
+*PPV*<br/>
+*Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="dllmain"></a>  CAtlDllModuleT::DllMain
+##  <a name="dllmain"></a>Catldllmodület::D llMain
 
-Bir dinamik bağlantı kitaplığı (DLL) halinde isteğe bağlı bir giriş noktası.
+İsteğe bağlı giriş, bir dinamik bağlantı kitaplığı (DLL) içine işaret.
 
 ```
 BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
@@ -142,22 +142,22 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwReason*<br/>
-DLL_PROCESS_ATTACH DllMain ve DLL_THREAD_ATTACH bildirim çağrıları kümesine devre dışı ise.
+DLL_PROCESS_ATTACH olarak ayarlanırsa, DLL_THREAD_ATTACH ve DLL_THREAD_DETACH bildirim çağrıları devre dışı bırakılır.
 
 *lpReserved*<br/>
-Ayrılmış.
+Ayrılamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman TRUE değerini döndürür.
+Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DllMain devre dışı bırakma ve DLL_THREAD_ATTACH bildirim çağrıları birçok DLL'leri sahip birden çok iş parçacıklı uygulamalar için kullanışlı bir iyileştirme olabilir, sık oluşturun ve iş parçacıkları silin ve, dll, bu iş parçacığı düzeyinde bildirimleri gerekmez Ek/ayrılmayı.
+DLL_THREAD_ATTACH ve DLL_THREAD_DETACH bildirim çağrılarını devre dışı bırakmak, çok sayıda dll içeren çok iş parçacıklı uygulamalar için faydalı bir iyileştirme olabilir. Bu, iş parçacığı oluşturma ve silme, dll 'Lerin ek/çıkarılabilir bu iş parçacığı düzeyi bildirimlerine ihtiyacı yoktur.
 
-##  <a name="dllregisterserver"></a>  CAtlDllModuleT::DllRegisterServer
+##  <a name="dllregisterserver"></a>Catldllmodület::D llRegisterServer
 
-DLL içindeki nesneler için sistem kayıt defteri girdileri ekler.
+DLL içindeki nesneler için sistem kayıt defterine giriş ekler.
 
 ```
 HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
@@ -166,15 +166,15 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *bRegTypeLib*<br/>
-Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer True'dur.
+Tür kitaplığının kaydı varsa TRUE. Varsayılan değer TRUE 'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="dllunregisterserver"></a>  CAtlDllModuleT::DllUnregisterServer
+##  <a name="dllunregisterserver"></a>Catldllmodület::D llUnregisterServer
 
-DLL içindeki nesneler için sistem kayıt defteri girdileri kaldırır.
+DLL içindeki nesneler için sistem kayıt defterindeki girişleri kaldırır.
 
 ```
 HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
@@ -183,15 +183,15 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *bUnRegTypeLib*<br/>
-Tür kitaplığı defterinden kaldırılacak ise TRUE. Varsayılan değer True'dur.
+Tür kitaplığının kayıt defterinden kaldırılması durumunda TRUE. Varsayılan değer TRUE 'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="getclassobject"></a>  CAtlDllModuleT::GetClassObject
+##  <a name="getclassobject"></a>Catldllmodület:: GetClassObject
 
-Belirtilen CLSID'yi bir nesne oluşturur.
+Belirtilen CLSID 'nin bir nesnesini oluşturur.
 
 ```
 HRESULT GetClassObject(
@@ -202,26 +202,26 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*rclsid*<br/>
-Oluşturulacak nesnenin CLSID.
+*rclsıd*<br/>
+Oluşturulacak nesnenin CLSID değeri.
 
-*riid*<br/>
-İstenen arabirim Laboratuvardaki.
+*riıd*<br/>
+İstenen arabirimin IID 'si.
 
-*ppv*<br/>
-Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
+*PPV*<br/>
+*Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağıran [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject) ve geriye dönük uyumluluk için dahildir.
+Bu yöntem, [Catldllmodület::D llgetclassobject](#dllgetclassobject) tarafından çağrılır ve geriye dönük uyumluluk için eklenmiştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlModuleT Sınıfı](../../atl/reference/catlmodulet-class.md)<br/>
 [CAtlExeModuleT Sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

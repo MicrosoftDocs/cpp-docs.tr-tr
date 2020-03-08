@@ -9,11 +9,11 @@ f1_keywords:
 - atlbase/ATL::AtlComModuleGetClassObject
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
 ms.openlocfilehash: f9c3697259e1cee2b1107ded785ca583d730b55e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495457"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78863250"
 ---
 # <a name="server-registration-global-functions"></a>Sunucu kaydı genel Işlevleri
 
@@ -58,11 +58,11 @@ Kaydedilecek nesnenin CLSID değerini gösterir. NULL ise, nesne haritadaki tüm
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AtlComModuleRegisterServer`ATL tarafından otomatik olarak oluşturulan nesne eşlemesini açıklar ve haritadaki her bir nesneyi kaydeder. *PCLSıD* null değilse, yalnızca *pCLSID* tarafından başvurulan nesne kaydedilir; Aksi takdirde tüm nesneler kaydedilir.
+`AtlComModuleRegisterServer` ATL tarafından otomatik olarak oluşturulan nesne eşlemesini açıklar ve haritadaki her nesneyi kaydeder. *PCLSıD* null değilse, yalnızca *pCLSID* tarafından başvurulan nesne kaydedilir; Aksi takdirde tüm nesneler kaydedilir.
 
 Bu işlev, [CAtlComModule:: RegisterServer](catlcommodule-class.md#registerserver)tarafından çağrılır.
 
@@ -90,11 +90,11 @@ Kaydı kaldırılacak nesnenin CLSID değerini gösterir. NULL ise nesne haritad
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AtlComModuleUnregisterServer`ATL nesne haritasını açıklar ve haritadaki her nesnenin kaydını siler. *PCLSıD* null değilse, yalnızca *pCLSID* tarafından başvurulan nesnenin kaydı silindi. Aksi takdirde tüm nesneler kaydı silinir.
+`AtlComModuleUnregisterServer` ATL nesne eşlemesini açıklar ve haritadaki her nesnenin kaydını siler. *PCLSıD* null değilse, yalnızca *pCLSID* tarafından başvurulan nesnenin kaydı silindi. Aksi takdirde tüm nesneler kaydı silinir.
 
 Bu işlev, [CAtlComModule:: UnregisterServer](catlcommodule-class.md#unregisterserver)tarafından çağrılır.
 
@@ -115,14 +115,14 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 COM modülünün işaretçisi.
 
 *dwClsContext*<br/>
-Sınıf nesnesinin çalıştırılacağı bağlamı belirtir. Olası değerler şunlardır CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Daha fazla ayrıntı için bkz. [clsctx](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx) .
+Sınıf nesnesinin çalıştırılacağı bağlamı belirtir. Olası değerler CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Daha fazla ayrıntı için bkz. [clsctx](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx) .
 
 *dwFlags*<br/>
-Sınıf nesnesine bağlantı türlerini belirler. Olası değerler şunlardır REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Daha fazla ayrıntı için bkz. [regcls](/windows/win32/api/combaseapi/ne-combaseapi-regcls) .
+Sınıf nesnesine bağlantı türlerini belirler. Olası değerler REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Daha fazla ayrıntı için bkz. [regcls](/windows/win32/api/combaseapi/ne-combaseapi-regcls) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -143,7 +143,7 @@ COM modülünün işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -177,7 +177,7 @@ Oluşturulacak nesnenin CLSID değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 

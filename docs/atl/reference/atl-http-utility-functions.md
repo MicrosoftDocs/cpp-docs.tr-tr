@@ -3,11 +3,11 @@ title: ATL HTTP yardımcı program Işlevleri
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
 ms.openlocfilehash: ca6dfdfb02f5ef629c6eb523744260f177a3309b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497968"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865048"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı program Işlevleri
 
@@ -52,17 +52,17 @@ Kurallı URL 'sini almak için arayan tarafından ayrılmış arabellek.
 *SzCanonicalized*karakter cinsinden uzunluğu içeren bir değişken işaretçisi. İşlev başarılı olursa, değişken, Sonlandırıcı null karakteri dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır.
 
 *dwFlags*<br/>
-Bu işlevin davranışını denetleyen ATL_URL bayrakları.
+Bu işlevin davranışını denetleyen bayraklar ATL_URL.
 
-- ATL_URL_BROWSER_MODE, "#" veya "?" karakterinden sonra karakterleri kodlayıp çözmez ve "?" karakterinden sonra sondaki boşluğu kaldırmaz. Bu değer belirtilmezse, tüm URL kodlanır ve sondaki boşluk kaldırılır.
+- ATL_URL_BROWSER_MODE "#" veya "?" karakterinden sonra karakterleri kodlayıp çözmez ve "?" karakterinden sonra sondaki boşluğu kaldırmaz. Bu değer belirtilmezse, tüm URL kodlanır ve sondaki boşluk kaldırılır.
 
 - ATL_URL_DECODE, URL ayrıştırmadan önce kaçış dizileri dahil olmak üzere tüm% XX dizilerini karakterlere dönüştürür.
 
-- ATL_URL_ENCODE_PERCENT tüm yüzde işaretlerine rastlandı. Varsayılan olarak, yüzde işaretleri kodlanmaz.
+- ATL_URL_ENCODE_PERCENT, tüm yüzde işaretlerine kodlandı. Varsayılan olarak, yüzde işaretleri kodlanmaz.
 
-- ATL_URL_ENCODE_SPACES_ONLY yalnızca boşlukları kodlar.
+- ATL_URL_ENCODE_SPACES_ONLY yalnızca boşlukları kodluyor.
 
-- ATL_URL_ESCAPE tüm kaçış dizilerini (% XX) karşılık gelen karakterlere dönüştürür.
+- ATL_URL_ESCAPE, tüm kaçış dizilerini (% XX) karşılık gelen karakterlere dönüştürür.
 
 - ATL_URL_NO_ENCODE, güvenli olmayan karakterleri kaçış sıralarına dönüştürmez.
 
@@ -76,7 +76,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 Geçerli [InternetCanonicalizeUrl](/windows/win32/api/wininet/nf-wininet-internetcanonicalizeurlw) sürümü gibi davranır ancak WinInet veya Internet Explorer 'ın yüklenmesini gerektirmez.
 
-## <a name="atlcombineurl"></a> AtlCombineUrl
+## <a name="atlcombineurl"></a>AtlCombineUrl
 
 Temel URL ile göreli bir URL'yi, kurallı tek bir URL'de birleştirmek için bu işlevi çağırın.
 
@@ -92,9 +92,9 @@ inline BOOL AtlCombineUrl(
 ### <a name="parameters"></a>Parametreler
 
 *szBaseUrl*<br/>
-Temel URL.
+Taban URL.
 
-*szRelativeUrl*<br/>
+*szRelativeUrl 'Si*<br/>
 Temel URL 'ye göre URL.
 
 *szBuffer*<br/>
@@ -149,7 +149,7 @@ DWORD değişkenine yönelik işaretçi. İşlev başarılı olursa, *pdwStrLen*
 Buffer *lpszStringOut*boyutu.
 
 *dwFlags*<br/>
-Bu işlevin davranışını denetleyen ATL_URL bayrakları. Olası değerler için bkz. [ATLCanonicalizeUrl](#atlcanonicalizeurl) .
+Bu işlevin davranışını denetleyen bayraklar ATL_URL. Olası değerler için bkz. [ATLCanonicalizeUrl](#atlcanonicalizeurl) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -170,7 +170,7 @@ Bağlantı noktası numarasını almak istediğiniz düzeni tanımlayan [ATL_URL
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düzen tanınmazsa, belirtilen düzen veya ATL_URL_INVALID_PORT_NUMBER ile ilişkili [ATL_URL_PORT](atl-typedefs.md#atl_url_port) .
+Düzen tanınmazsa, belirtilen düzen veya ATL_URL_INVALID_PORT_NUMBER ilişkili [ATL_URL_PORT](atl-typedefs.md#atl_url_port) .
 
 ## <a name="atlisunsafeurlchar"></a>AtlIsUnsafeUrlChar
 
@@ -279,10 +279,10 @@ inline void SystemTimeToHttpDate(
 HTTP biçim dizesi olarak elde edilecek sistem süresi.
 
 *strTime*<br/>
-RFC 2616 ([https://www.ietf.org/rfc/rfc2616.txt](https://www.ietf.org/rfc/rfc2616.txt)) ve RFC 1123 ([https://www.ietf.org/rfc/rfc1123.txt](https://www.ietf.org/rfc/rfc1123.txt)) ' de tanımlanan http Tarih saatini almak için bir dize değişkenine başvuru.
+RFC 2616 ' de ([https://www.ietf.org/rfc/rfc2616.txt](https://www.ietf.org/rfc/rfc2616.txt)) ve RFC 1123 ' de ([https://www.ietf.org/rfc/rfc1123.txt](https://www.ietf.org/rfc/rfc1123.txt)) tanımlanan http Tarih saatini almak için bir dize değişkenine başvuru.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tiren](../active-template-library-atl-concepts.md)<br/>
+[Kavramlar ](../active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../atl-com-desktop-components.md)<br/>
 [InternetCanonicalizeUrl](/windows/win32/api/wininet/nf-wininet-internetcanonicalizeurlw)

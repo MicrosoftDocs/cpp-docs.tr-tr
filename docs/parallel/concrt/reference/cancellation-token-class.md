@@ -14,11 +14,11 @@ helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
 ms.openlocfilehash: 34743ce48510eec9d8f7862e5ed951a722932962
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142253"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876080"
 ---
 # <a name="cancellation_token-class"></a>cancellation_token Sınıfı
 
@@ -34,14 +34,14 @@ class cancellation_token;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[cancellation_token](#ctor)||
 |[~ cancellation_token yok edici](#dtor)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[deregister_callback](#deregister_callback)|Kayıt sırasında döndürülen `cancellation_token_registration` nesnesine göre `register` yöntemi aracılığıyla önceden kaydedilmiş bir geri aramayı kaldırır.|
 |[is_cancelable](#is_cancelable)|Bu belirtecin iptal edilip edilmeyeceğini belirten bir gösterge döndürür.|
@@ -51,7 +51,7 @@ class cancellation_token;
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[operator!=](#operator_neq)||
 |[işleç =](#operator_eq)||

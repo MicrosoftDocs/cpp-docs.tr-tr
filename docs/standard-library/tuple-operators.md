@@ -1,5 +1,5 @@
 ---
-title: '&lt;Tanımlama grubu&gt; işleçleri'
+title: '&lt;tanımlama grubu&gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - tuple/std::operator!=
@@ -10,17 +10,17 @@ f1_keywords:
 - tuple/std::operator==
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 ms.openlocfilehash: 5554f08f32048bafde5bdb2c316e12e1e01c6ffb
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241655"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866205"
 ---
-# <a name="lttuplegt-operators"></a>&lt;Tanımlama grubu&gt; işleçleri
+# <a name="lttuplegt-operators"></a>&lt;tanımlama grubu&gt; işleçleri
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Karşılaştırma `tuple` nesneleri için eşitsizlik.
+Eşitsizlik için `tuple` nesneleri karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -32,11 +32,11 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi türü.
+Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev false döndürdüğü `N` Aksi durumda 0 ' dır `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
+İşlev, `N` 0 olduğunda false döndürür, aksi durumda `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
 ### <a name="example"></a>Örnek
 
@@ -83,9 +83,9 @@ false
 true
 ```
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işleç&lt;
 
-Karşılaştırma `tuple` daha az nesne.
+`tuple` nesnelerini daha az karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -97,11 +97,11 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi türü.
+Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev true döndürdüğü `N` 0 ve ilk farklı değer Şundan Büyük: `tpl1` karşılık gelen değerden karşılaştırır `tpl2`, aksi takdirde false döndürür.
+`N` 0 ' dan büyükse ve `tpl1` ilk farklı değer `tpl2`karşılık gelen değerden daha az karşılaştırıldığı zaman true döndürür, aksi takdirde false döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -148,9 +148,9 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a> İşleci&lt;=
+## <a name="op_lt_eq"></a>işleç&lt;=
 
-Karşılaştırma `tuple` nesneleri daha az veya eşit.
+`tuple` nesnelerini daha az veya eşit olacak şekilde karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -162,11 +162,11 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi türü.
+Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev döndürür `!(tpl2 < tpl1)`.
+İşlev `!(tpl2 < tpl1)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -213,9 +213,9 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-Karşılaştırma `tuple` eşitlik için nesneleri.
+`tuple` nesneleri eşitlik için karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -227,11 +227,11 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi türü.
+Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev true döndürdüğü `N` Aksi durumda 0 ' dır `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
+İşlev, `N` 0 olduğunda true, aksi durumda `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -278,9 +278,9 @@ true
 false
 ```
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işleç&gt;
 
-Karşılaştırma `tuple` için nesneleri büyük.
+`tuple` nesnelerini daha fazla karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -292,11 +292,11 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi türü.
+Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev döndürür `tpl2 < tpl1`.
+İşlev `tpl2 < tpl1`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -343,9 +343,9 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a> İşleci&gt;=
+## <a name="op_gt_eq"></a>işleç&gt;=
 
-Karşılaştırma `tuple` nesneleri büyük veya eşit.
+`tuple` nesnelerini daha büyük veya eşit olacak şekilde karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -357,11 +357,11 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi türü.
+Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev döndürür `!(tpl1 < tpl2)`.
+İşlev `!(tpl1 < tpl2)`döndürür.
 
 ### <a name="example"></a>Örnek
 

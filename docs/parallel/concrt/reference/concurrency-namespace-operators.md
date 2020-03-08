@@ -6,11 +6,11 @@ f1_keywords:
 - concrt/concurrency:[operator&amp;&amp
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 ms.openlocfilehash: 676e1936af317a6ab19959f8fd09b1de06dfaf69
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143240"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78883778"
 ---
 # <a name="concurrency-namespace-operators"></a>eşzamanlılık ad alanı İşleçleri
 

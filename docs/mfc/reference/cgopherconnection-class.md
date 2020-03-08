@@ -15,18 +15,18 @@ helpviewer_keywords:
 - CGopherConnection [MFC], OpenFile
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
 ms.openlocfilehash: f5d655aa7fd2eb9e41c15c60a71492c24ba43c43
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506188"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78883908"
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection sınıfı
 
 Bir gopher Internet sunucusuyla bağlantınızı yönetir.
 
 > [!NOTE]
->  Sınıflar `CGopherConnection`, `CGopherFile`, veüyeleriWindows`CGopherLocator` XP platformunda çalışmadıklarından kullanım dışı bırakılmıştır, ancak önceki platformlarda çalışmaya devam ederler. `CGopherFileFind`
+>  `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` ve üyeleri Windows XP platformunda çalışmadıklarından, ancak önceki platformlarda çalışmaya devam edebileceğinden, bu sınıflar kullanım dışı bırakılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,13 +38,13 @@ class CGopherConnection : public CInternetConnection
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CGopherConnection:: CGopherConnection](#cgopherconnection)|Bir `CGopherConnection` nesnesi oluşturur.|
+|[CGopherConnection:: CGopherConnection](#cgopherconnection)|`CGopherConnection` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CGopherConnection:: CreateLocator](#createlocator)|Bir gopher sunucusunda dosyaları bulmak için bir [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesi oluşturur.|
 |[CGopherConnection:: GetAttribute](#getattribute)|Gopher nesnesiyle ilgili öznitelik bilgilerini alır.|
@@ -54,11 +54,11 @@ class CGopherConnection : public CInternetConnection
 
 Gopher hizmeti, MFC WinInet sınıfları tarafından tanınan üç Internet hizmetlerinden biridir.
 
-Sınıfı `CGopherConnection` , bir Oluşturucu ve gopher hizmetini yöneten üç ek üye işlev içerir: [OpenFile](#openfile), [CreateLocator](#createlocator)ve [GetAttribute](#getattribute).
+Sınıf `CGopherConnection`, bir Oluşturucu ve gopher hizmetini yöneten üç ek üye işlev içerir: [OpenFile](#openfile), [CreateLocator](#createlocator)ve [GetAttribute](#getattribute).
 
-Gopher Internet sunucusuyla iletişim kurmak için, önce bir [CInternetSession](../../mfc/reference/cinternetsession-class.md)örneği oluşturmanız ve ardından `CGopherConnection` nesneyi oluşturan ve ona bir işaretçi döndüren [CInternetSession:: GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)öğesini çağırmanız gerekir. Hiçbir şekilde doğrudan bir `CGopherConnection` nesne oluşturmamanız gerekir.
+Gopher Internet sunucusuyla iletişim kurmak için, önce bir [CInternetSession](../../mfc/reference/cinternetsession-class.md)örneği oluşturmanız ve ardından `CGopherConnection` nesnesini oluşturan ve buna bir Işaretçi döndüren [CInternetSession:: GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)öğesini çağırmanız gerekir. Hiçbir daha `CGopherConnection` nesnesini doğrudan oluşturmamanız gerekir.
 
-Diğer MFC Internet sınıflarıyla nasıl `CGopherConnection` çalıştığı hakkında daha fazla bilgi edinmek için bkz. [WinINet ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi. Desteklenen diğer iki Internet hizmetini kullanma hakkında daha fazla bilgi için FTP ve HTTP, [CHttpConnection](../../mfc/reference/chttpconnection-class.md) ve [CFtpConnection](../../mfc/reference/cftpconnection-class.md)sınıflarını inceleyin.
+`CGopherConnection` diğer MFC Internet sınıflarıyla nasıl çalıştığı hakkında daha fazla bilgi edinmek için bkz. [Winınet Ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi. Desteklenen diğer iki Internet hizmetini kullanma hakkında daha fazla bilgi için FTP ve HTTP, [CHttpConnection](../../mfc/reference/chttpconnection-class.md) ve [CFtpConnection](../../mfc/reference/cftpconnection-class.md)sınıflarını inceleyin.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -74,7 +74,7 @@ Diğer MFC Internet sınıflarıyla nasıl `CGopherConnection` çalıştığı h
 
 ##  <a name="cgopherconnection"></a>CGopherConnection:: CGopherConnection
 
-Bu üye işlevi bir `CGopherConnection` nesne oluşturmak için çağırılır.
+Bu üye işlevi bir `CGopherConnection` nesnesi oluşturmak için çağırılır.
 
 ```
 CGopherConnection(
@@ -124,7 +124,7 @@ Sunucuda kullanılacak TCP/IP bağlantı noktasını belirleyen bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir şekilde `CGopherConnection` doğrudan oluşturmayın. Bunun yerine, bir `CGopherConnection` nesnesi oluşturan ve ona bir işaretçi döndüren [CInternetSession:: GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)öğesini çağırın.
+Hiçbir `CGopherConnection` doğrudan bir oluşturmayın. Bunun yerine, `CGopherConnection` nesnesi oluşturan ve ona bir işaretçi döndüren [CInternetSession:: GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)öğesini çağırın.
 
 ##  <a name="createlocator"></a>CGopherConnection:: CreateLocator
 
@@ -155,7 +155,7 @@ Alınacak Gopher belgesi veya dizininin adını içeren bir dize işaretçisi. *
 Bir öğeyi almak için Gopher sunucusuna gönderilecek seçici dizesine yönelik bir işaretçi. *pstrSelectorString* null olabilir.
 
 *dwGopherType*<br/>
-Bu, *pstrSelectorString* 'in bir dizin veya belgeye başvurduğunu ve isteğin Gopher veya Gopher + olup olmadığını belirtir. Windows SDK yapı [GOPHER_FIND_DATA](/windows/win32/api/wininet/ns-wininet-gopher_find_dataw) özniteliklerini inceleyin.
+Bu, *pstrSelectorString* 'in bir dizin veya belgeye başvurduğunu ve isteğin Gopher veya Gopher + olup olmadığını belirtir. Windows SDK yapı [GOPHER_FIND_DATA](/windows/win32/api/wininet/ns-wininet-gopher_find_dataw) yönelik özniteliklere bakın.
 
 *pstrLocator*<br/>
 Açılacak dosyayı tanımlayan dizeye yönelik bir işaretçi. Genellikle bu dize, [CGopherFileFind:: GetLocator](../../mfc/reference/cgopherfilefind-class.md#getlocator)çağrısından döndürülür.
@@ -199,7 +199,7 @@ Konumlandırıcı türünü alan bir [CString](../../atl-mfc-shared/reference/cs
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için WIN32 [Win32 işlevi çağrılabilir](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
 
 ##  <a name="openfile"></a>CGopherConnection:: OpenFile
 
@@ -219,7 +219,7 @@ CGopherFile* OpenFile(
 [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesine bir başvuru.
 
 *dwFlags*<br/>
-Herhangi bir INTERNET_FLAG_ * bayrağı birleşimi. INTERNET_FLAG_\* bayrakları hakkında daha fazla bilgi için bkz. [CInternetSession:: OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) .
+INTERNET_FLAG_ * bayraklarının herhangi bir birleşimi. INTERNET_FLAG_\* bayrakları hakkında daha fazla bilgi için bkz. [CInternetSession:: OpenUrl](../../mfc/reference/cinternetsession-class.md#openurl) .
 
 *pstrView*<br/>
 Dosya görüntüleme dizesine yönelik bir işaretçi. Sunucuda birden çok görüntü varsa, bu parametre açılacak dosya görünümünü belirtir. *PstrView* null ise, varsayılan dosya görünümü kullanılır.
@@ -233,7 +233,7 @@ Açılacak [CGopherFile](../../mfc/reference/cgopherfile-class.md) nesnesine yö
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlam tanımlayıcısını seçtiğiniz bir değere ayarlamak için *dwContext* varsayılanını geçersiz kılın. Bağlam tanımlayıcısı, `CGopherConnection` [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi tarafından oluşturulan nesnenin bu özel işlemiyle ilişkilidir. Değer, tanımlandıkları işlemde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) değerine döndürülür. Bkz. [Internet ilk adımlar: Bağlam](../../mfc/wininet-basics.md) tanımlayıcısı hakkında daha fazla bilgi için WinINet.
+Bağlam tanımlayıcısını seçtiğiniz bir değere ayarlamak için *dwContext* varsayılanını geçersiz kılın. Bağlam tanımlayıcısı, [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi tarafından oluşturulan `CGopherConnection` nesnesinin bu özel işlemiyle ilişkili. Değer, tanımlandıkları işlemde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) değerine döndürülür. Bağlam tanımlayıcısı hakkında daha fazla bilgi için [Internet Ilk adımlar: WinINet](../../mfc/wininet-basics.md) makalesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

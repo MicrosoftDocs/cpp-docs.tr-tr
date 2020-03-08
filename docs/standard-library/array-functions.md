@@ -11,15 +11,15 @@ helpviewer_keywords:
 - std::get [C++]
 - std::swap [C++]
 ms.openlocfilehash: 61b5404d0f22cd902e35f6bee680df3c719804f2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456780"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78875903"
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
 
-Dizi > üst bilgisi, dizi nesnelerinde çalışan iki üye olmayan `get` iki `swap`işlev içerir.  \<
+\<dizi > üst bilgisi, **dizi** nesnelerinde çalışan, `get` ve `swap`üye olmayan iki işlev içerir.
 
 |||
 |-|-|
@@ -42,13 +42,13 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*İndeks*\
+*Dizin*\
 Öğe boşluğu.
 
-*ŞI*\
+*T*\
 Öğenin türü.
 
-*NO*\
+*N*\
 Dizideki öğelerin sayısı
 
 *ARR*\
@@ -88,7 +88,7 @@ int main()
 
 ## <a name="swap"></a>Kur
 
-Öğesinin `std::swap` üye olmayan şablon özelleştirmesi iki **dizi** nesnesini değiştirir.
+İki **dizi** nesnesini değiştiren `std::swap` üye olmayan şablon özelleştirmesi.
 
 ```cpp
 template <class Ty, std::size_t N>
@@ -97,21 +97,21 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Öğenin türü.
 
-*NO*\
+*N*\
 Dizinin boyutu.
 
-*tarafta*\
+*sol*\
 Takas edilecek ilk dizi.
 
-*Right*\
+*sağ*\
 Takas edilecek ikinci dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütülür `left.swap(right)`.
+Şablon işlevi `left.swap(right)`yürütür.
 
 ### <a name="example"></a>Örnek
 

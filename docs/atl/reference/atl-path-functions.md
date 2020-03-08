@@ -42,11 +42,11 @@ f1_keywords:
 - ATLPATH/ATL::ATLPath::UnquoteSpaces
 ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
 ms.openlocfilehash: 76efbb0bd43b800f186eac1afa168fc2a0c939f6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497979"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865047"
 ---
 # <a name="atl-path-functions"></a>ATL yol işlevleri
 
@@ -62,9 +62,9 @@ ATL, [CPathT](cpatht-class.md)biçimindeki yolları Işlemek Için ATLPath sın�
 
 |||
 |-|-|
-|`CPath`|Kullanarak`CString` [CPathT](cpatht-class.md) özelleştirmesi.|
-|`CPathA`|Kullanarak`CStringA` [CPathT](cpatht-class.md) özelleştirmesi.|
-|`CPathW`|Kullanarak`CStringW` [CPathT](cpatht-class.md) özelleştirmesi.|
+|`CPath`|`CString`kullanarak [CPathT](cpatht-class.md) özelleştirmesi.|
+|`CPathA`|`CStringA`kullanarak [CPathT](cpatht-class.md) özelleştirmesi.|
+|`CPathW`|`CStringW`kullanarak [CPathT](cpatht-class.md) özelleştirmesi.|
 
 ### <a name="functions"></a>İşlevler
 
