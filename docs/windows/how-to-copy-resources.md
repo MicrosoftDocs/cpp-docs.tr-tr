@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Kaynakları yönetme (C++)'
+title: 'Nasıl yapılır: kaynakları yönetme (C++)'
 ms.date: 02/14/2019
 f1_keywords:
 - vc.resvw.resource.copying
@@ -31,13 +31,13 @@ helpviewer_keywords:
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 ms.openlocfilehash: 718de310bc4fb0cb0072065bc4e7b7adadb182aa
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740658"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78890934"
 ---
-# <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynakları yönetme (C++)
+# <a name="how-to-manage-resources-c"></a>Nasıl yapılır: kaynakları yönetme (C++)
 
 ## <a name="copy-and-edit-resources"></a>Kaynakları kopyalama ve düzenleme
 
@@ -46,7 +46,7 @@ Kaynakları değiştirmeden bir dosyadan diğerine kopyalayabilir veya bir kayna
 Kaynakları var olan bir kaynaktan veya yürütülebilir dosyadan geçerli kaynak dosyanıza kolayca kopyalayabilirsiniz. Kaynakları kopyalamak için, her iki dosyayı aynı anda açar ve öğeleri bir dosyadan diğerine sürükleyin veya iki Dosya arasında kopyalayıp yapıştırın. Bu yöntem, kaynak betiği (. RC) dosyaları ve kaynak şablonu (. rct) dosyaları ve yürütülebilir (. exe) dosyaları için geçerlidir.
 
 > [!NOTE]
-> Görsel C++ , kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz [. CLIPART: Ortak kaynaklar](https://github.com/Microsoft/VCSamples).
+> Görsel C++ , kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz. [CLIPART: Common Resources](https://github.com/Microsoft/VCSamples).
 
 Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyaları arasında sürükleyip bırakamazsınız, kopyalayamaz, kesebilir veya yapıştıramazsınız. Bunu ürünün önceki sürümlerinde yapabilirsiniz. Yalnızca proje dışında açık olan. RC dosyaları arasında sürükle ve bırak yöntemini kullanın.
 
@@ -58,9 +58,9 @@ Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyal
 
    - Sürükle ve bırak yöntemini kullanma
 
-      1. Kopyalamak istediğiniz kaynağı seçin. Örneğin, *Source1. RC*dosyasında **IDD_DIALOG1**' yi seçin.
+      1. Kopyalamak istediğiniz kaynağı seçin. Örneğin, *Source1. RC*' de **IDD_DIALOG1**' yi seçin.
 
-      1. **CTRL** tuşunu basılı tutun ve kaynağı ikinci. rc dosyasına sürükleyin. Örneğin, **IDD_DIALOG1** from *Source1. RC* ' den *source2. RC*' ye sürükleyin.
+      1. **CTRL** tuşunu basılı tutun ve kaynağı ikinci. rc dosyasına sürükleyin. Örneğin, *Source1. RC* öğesinden *source2. RC*'ye **IDD_DIALOG1** sürükleyin.
 
          > [!TIP]
          > Kaynağı **CTRL** tuşunu basılı tutmaya gerek kalmadan sürüklemek, kaynağı kopyalamak yerine bir konuma taşımakta.
@@ -80,7 +80,7 @@ Bir kaynağa kopyalarken, kendi dil özelliğini veya koşul özelliğini ya da 
 
 - Bir kaynağın koşulu, kaynağın bu kopyasının kullanılacağı koşulu tanımlayan tanımlı bir simgedir.
 
-Bir kaynağın dili ve koşulu, **çalışma alanı** penceresinde kaynağın adından sonra parantez içinde gösterilir. Burada adlı `IDD_AboutBox` `XX33`kaynak, dili olarak kullanılıyor ve durumu şu şekildedir: `Finnish`
+Bir kaynağın dili ve koşulu, **çalışma alanı** penceresinde kaynağın adından sonra parantez içinde gösterilir. Burada `IDD_AboutBox` adlı kaynak kendi dili olarak `Finnish` kullanıyor ve koşulu `XX33`:
 
 ```cpp
 IDD_AboutBox (Finnish - XX33)
@@ -129,5 +129,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
-[Nasıl yapılır: Kaynak oluştur](../windows/how-to-create-a-resource-script-file.md)<br/>
+[Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource-script-file.md)<br/>
 [Nasıl yapılır: Derleme Sırasında Kaynak Ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>

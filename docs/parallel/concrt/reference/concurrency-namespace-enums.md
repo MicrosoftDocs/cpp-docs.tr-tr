@@ -13,11 +13,11 @@ f1_keywords:
 - CONCRT/concurrency::message_status Enumeration
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 ms.openlocfilehash: 716c2d03e6d1ff67566bd28e5931996ea2d400af
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141314"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854215"
 ---
 # <a name="concurrency-namespace-enums"></a>eşzamanlılık ad alanı sabit listeleri
 
@@ -39,7 +39,7 @@ enum agent_status;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`agent_canceled`|`agent` iptal edildi.|
 |`agent_created`|`agent` oluşturuldu ancak başlatılmadı.|
@@ -65,7 +65,7 @@ enum Agents_EventType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`AGENTS_EVENT_CREATE`|Bir nesnenin oluşturulmasını temsil eden bir olay türü|
 |`AGENTS_EVENT_DESTROY`|Bir nesnenin silinmesini temsil eden bir olay türü|
@@ -90,7 +90,7 @@ enum ConcRT_EventType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`CONCRT_EVENT_ATTACH`|Bir Scheduler 'a ekleme Yasası temsil eden bir olay türü.|
 |`CONCRT_EVENT_BLOCK`|Bağlam engelleme Yasası temsil eden bir olay türü.|
@@ -116,7 +116,7 @@ enum Concrt_TraceFlags;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`AgentEventFlag`||
 |`AllEventsFlag`||
@@ -140,7 +140,7 @@ enum CriticalRegionType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`InsideCriticalRegion`|İçeriğin kritik bir bölgenin içinde olduğunu gösterir. Kritik bir bölgenin içindeyken zaman uyumsuz getirilmesi, Scheduler 'dan gizlenir. Bu tür bir askıya alma işleminin gerçekleşmesi durumunda Kaynak Yöneticisi, iş parçacığının çalıştırılabilir hale gelmesini bekler ve Zamanlayıcı 'yı yeniden çağırmak yerine yalnızca bu uygulamayı sürdürür. Bu tür bir bölgenin içinde alınan kilitlerin çok fazla dikkatli olması gerekir.|
 |`InsideHyperCriticalRegion`|Bağlamın bir Hyper-kritik bölgesi içinde olduğunu gösterir. Hiper kritik bir bölgenin içindeyken hem zaman uyumlu hem de zaman uyumsuz getirilmesi Zamanlayıcı 'dan gizlenir. Böyle bir askıya alma veya engelleme olması durumunda, Resource Manager iş parçacığının çalıştırılabilir hale gelmesini bekler ve Zamanlayıcı 'yı yeniden çağırmak yerine yalnızca bu uygulamayı sürdürür. Böyle bir bölge içinde alınan kilitler hiçbir şekilde bu bölge dışında çalışan kodla paylaşılmalıdır. Bunun yapılması öngörülemeyen kilitlenmeye neden olur.|
@@ -160,7 +160,7 @@ enum DynamicProgressFeedbackType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`ProgressFeedbackDisabled`|Zamanlayıcı, ilerleme bilgilerini toplamaz. Yeniden dengeleme, yalnızca temel alınan donanım iş parçacığının abonelik düzeyine göre yapılır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](IExecutionResource-structure.md).<br /><br /> Bu değer, çalışma zamanı tarafından kullanılmak üzere ayrılmıştır.|
 |`ProgressFeedbackEnabled`|Zamanlayıcı ilerleme bilgilerini toplar ve Resource Manager 'a geçirir. Resource Manager, temel alınan donanım iş parçacığının abonelik düzeyine ek olarak Zamanlayıcı adına kaynakları yeniden dengelemek için bu istatistiksel bilgileri kullanır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](IExecutionResource-structure.md).|
@@ -175,7 +175,7 @@ enum join_type;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`greedy`|Greedy `join` mesajlaşma blokları, yayma sonrasında bir iletiyi hemen kabul eder. Bu daha verimlidir, ancak ağ yapılandırmasına bağlı olarak dinamik kilitleme olasılığa sahiptir.|
 |`non_greedy`|Doyumsuz olmayan `join` mesajlaşma blokları iletileri erteleyip tüm iletişim olduktan sonra bunları dener ve tüketir. Bunlar, çalışma garantisi, ancak daha yavaştır.|
@@ -194,7 +194,7 @@ enum message_status;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`accepted`|Hedef iletiyi kabul etti.|
 |`declined`|Hedef iletiyi kabul etmedi.|
@@ -215,7 +215,7 @@ enum PolicyElementKey;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`ContextPriority`|Zamanlayıcıdaki her bir bağlamın işletim sistemi iş parçacığı önceliği. Bu anahtar değere ayarlanmışsa `INHERIT_THREAD_PRIORITY` Scheduler 'daki bağlamlar, Scheduler 'ı oluşturan iş parçacığının önceliğini alır.<br /><br /> Geçerli değerler: Windows `SetThreadPriority` işlevi ve özel değer için geçerli değerlerden herhangi biri `INHERIT_THREAD_PRIORITY`<br /><br /> Varsayılan değer: `THREAD_PRIORITY_NORMAL`|
 |`ContextStackSize`|Zamanlayıcıdaki her bir bağlamın kilobayt cinsinden ayrılmış yığın boyutu.<br /><br /> Geçerli değerler: pozitif tamsayılar<br /><br /> Varsayılan değer: `0`, yığın boyutu için işlemin varsayılan değerinin kullanıldığını belirtir.|
@@ -243,7 +243,7 @@ enum SchedulerType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`ThreadScheduler`|Normal Win32 iş parçacıklarının açık bir isteğini gösterir.|
 |`UmsThreadDefault`|Kullanıcı modu zamanlanabilen (UMS) iş parçacıkları Visual Studio 2013 Eşzamanlılık Çalışma Zamanı desteklenmez. `SchedulerType` ilkesi için değer olarak `UmsThreadDefault` kullanmak bir hatayla sonuçlanmaz. Ancak, bu ilkeyle oluşturulan bir zamanlayıcı, varsayılan olarak Win32 iş parçacıklarını kullanmaktır.|
@@ -262,7 +262,7 @@ enum SchedulingProtocolType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`EnhanceForwardProgress`|Zamanlayıcı, her bir görevi yürütmeden sonra zamanlama grupları aracılığıyla hepsini bir kez kullanmayı tercih eder. Engellenmemiş bağlamlar genellikle ilk kez ilk çıkar (FıFO) biçimde zamanlanır. Sanal işlemciler engellenmemiş bağlamlara önbelleğe vermez.|
 |`EnhanceScheduleGroupLocality`|Zamanlayıcı, başka bir zamanlama grubuna geçmeden önce geçerli zamanlama grubundaki görevler üzerinde çalışmaya devam etmeyi tercih eder. Engellenmemiş bağlamlar, sanal işlemci başına önbelleğe alınır ve tipik olarak, engellenmemiş sanal işlemci tarafından ilk kez son çıkar (LıFO) ile zamanlanır.|
@@ -281,7 +281,7 @@ enum SwitchingProxyState;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`Blocking`|Çağıran iş parçacığının, daha sonra yeniden çalışmaya ve başka eylem gerçekleştirmeye kadar çağırılmasının yanı sıra, çağıran iş parçacığının özel olarak engellendiğini belirtir.|
 |`Idle`|Çağıran iş parçacığının Zamanlayıcı tarafından artık gerekli olmadığını ve Kaynak Yöneticisi döndürülmekte olduğunu gösterir. Dağıtılan bağlam artık Kaynak Yöneticisi tarafından kullanılamıyor.|
@@ -303,7 +303,7 @@ enum task_group_status;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`canceled`|`task_group` veya `structured_task_group` nesnesi iptal edildi. Bir veya daha fazla görev yürütülmeyebilir.|
 |`completed`|`task_group` veya `structured_task_group` nesnesine sıraya alınan görevler başarıyla tamamlandı.|
@@ -323,7 +323,7 @@ enum WinRTInitializationType;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`DoNotInitializeWinRT`|Uygulama, Windows 8 veya üzeri sürümü olan işletim sistemlerinde çalıştırıldığında, Zamanlayıcı içindeki iş parçacıkları Windows Çalışma Zamanı başlatmaz.|
 |`InitializeWinRTAsMTA`|Uygulama, Windows 8 veya üzeri sürümü olan işletim sistemlerinde çalıştırıldığında, Zamanlayıcı içindeki her bir iş parçacığı Windows Çalışma Zamanı başlatır ve çok iş parçacıklı grubun bir parçası olduğunu bildirir.|

@@ -11,18 +11,18 @@ helpviewer_keywords:
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
 ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398946"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884175"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 
-Bir numaralandırma, numaralandırıcılar olarak bilinen adlandırılmış integral sabitleri kümesinden oluşan kullanıcı tanımlı bir tür ' dir.
+Sabit listesi, Numaralandırıcılar olarak bilinen bir dizi adlandırılmış integral sabitinden oluşan Kullanıcı tanımlı türdür.
 
 > [!NOTE]
->  Bu makale ISO standardı C++ dili kapsamaktadır **enum** türü ve kapsamlı (veya türü kesin belirlenmiş) **sabit listesi sınıfı** C ++ 11'de kullanıma sunulan türü. Hakkında bilgi için **genel sabit listesi sınıfı** veya **özel enum sınıfı** türlerini C++/CLI ve C++/CX, bkz: [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
+>  Bu makalede, C++ 11 ' C++ de tanıtılan ISO standart dili **sabit listesi** türü ve kapsamlı (veya türü belirtilmiş) **sabit listesi sınıfı** türü ele alınmaktadır. /CLI C++ve C++/CX içindeki **genel enum sınıfı** veya **özel numaralandırma sınıfı** türleri hakkında bilgi için bkz. [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,21 +46,21 @@ enum class C : short;  // ... may have any integral underlying type
 
 ## <a name="parameters"></a>Parametreler
 
-*tanımlayıcı*<br/>
+*Tanımlayıcısını*<br/>
 Numaralandırmaya verilen tür adı.
 
 *type*<br/>
-Numaralandırmaların temel türü; tüm sabit listelerinin arkasındaki tür aynıdır. Herhangi bir tamsayı türü olabilir.
+Numaralandırıcıların temel alınan türü; Tüm Numaralandırıcılar, temel alınan türe sahiptir. Herhangi bir tamsayı türü olabilir.
 
-*Numaralandırma listesi*<br/>
-Sabit listesindeki numaralandırıcıların virgülle ayrılmış listesi. Her Numaralayıcı ya da değişken adı kapsamında benzersiz olmalıdır. Ancak, değerler çoğaltılabilir. Kapsamsız bir enum'da kapsam çevreleyen kapsamdır; kapsamlı bir enum'da kapsam olan *numaralandırma listesi* kendisi.  Kapsamlı bir enum'da listenin geçerli yeni bir integral türü tanımlayan boş olabilir.
+*Enum-Listele*<br/>
+Numaralandırmadaki numaralandırıcıların virgülle ayrılmış listesi. Kapsamdaki her Numaralandırıcı veya değişken adı benzersiz olmalıdır. Ancak, değerler yinelenebilir. Kapsamlı olmayan bir numaralandırıcıda kapsam, çevreleyen kapsamdadır; kapsamlı bir numaralandırıcıda kapsam, *enum listesinin* kendisidir.  Kapsamlı bir sabit listesinde, liste boş olabilir ve yeni bir integral türünü tanımlar.
 
 *class*<br/>
-Bu anahtar sözcüğü bildirimde kullanarak kapsamlı numaralandırma, belirttiğiniz ve *tanımlayıcı* sağlanmalıdır. Ayrıca **yapı** anahtar sözcüğü yerine **sınıfı**, bu bağlamda anlamsal olarak eşdeğer olarak.
+Bildirimde bu anahtar sözcüğü kullanarak, numaralandırmanın kapsama sahip olduğunu ve bir *tanımlayıcının* sağlanması gerektiğini belirtirsiniz. Bu bağlamda anlamsal olarak eşdeğer olduklarından, **sınıfının**yerine **struct** anahtar sözcüğünü de kullanabilirsiniz.
 
 ## <a name="enumerator-scope"></a>Numaralandırıcı kapsamı
 
-Bir numaralandırma sabitler gösterilir ve ayrıca numaralandırıcılar adıyla değer aralığını tanımlamak için bağlam sağlar. Özgün C ve C++ enum türlerinde, miktarı belirtilmemiş numaralandırıcılar enum bildirildiği kapsam boyunca görünürdür. Kapsamlı enum'larda, numaralandırıcı adı enum tür adı ile nitelenmelidir. Aşağıdaki örnek iki enum türü arasındaki bu temel farkı göstermektedir:
+Bir numaralandırma, adlandırılmış sabitler olarak temsil edilen ve ayrıca Numaralandırıcılar olarak adlandırılan bir değer aralığını açıklayan bağlamı sağlar. Özgün C ve C++ enum türlerinde, nitelenmemiş Numaralandırıcılar, numaralandırmanın bildirildiği kapsam boyunca görünür olur. Kapsamlı numaralandırmalar ' da, Numaralandırıcı adı sabit listesi türü adı ile nitelenmelidir. Aşağıdaki örnek, iki tür numaralandırmalar arasındaki bu temel farkı göstermektedir:
 
 ```cpp
 namespace CardGame_Scoped
@@ -87,25 +87,25 @@ namespace CardGame_NonScoped
 }
 ```
 
-Numaralandırma içindeki her ada Numaralandırmadaki değerler sıralamasındaki konumuna karşılık gelen bir tamsayı değeri atanır. Varsayılan olarak, ilk değere 0 atanır, bir sonrakine 1 ve benzeri atanmış, ancak Numaralandırıcı değerini aşağıda gösterildiği gibi açıkça ayarlayabilirsiniz:
+Bir Numaralandırmadaki her ada, Numaralandırmadaki değerler sırasına karşılık gelen bir integral değer atanır. Varsayılan olarak, ilk değer 0 atanır, bir sonraki bir 1 atanır ve bu şekilde devam eder, ancak burada gösterildiği gibi, bir Numaralandırıcı değerini açıkça ayarlayabilirsiniz:
 
 ```cpp
 enum Suit { Diamonds = 1, Hearts, Clubs, Spades };
 ```
 
-Numaralandırıcı `Diamonds` değeri atanır `1`. Sonraki numaralandırıcılar, açıkça bir değer verilmemişse yanı sıra bir önceki numaralandırıcıların değeri alır. Önceki örnekte, `Hearts` 2 değerine sahip `Clubs` 3 sahip ve benzeri.
+Numaralandırıcı `Diamonds` `1`değer atanır. Sonraki Numaralandırıcılar, açık bir değer verilmemişse, önceki Numaralandırıcı değerini ve bir değeri alın. Önceki örnekte, `Hearts` 2 değerini alır, `Clubs` 3 olur ve bu şekilde devam eder.
 
-Her Numaralayıcı sabit kabul edilir ve kapsam içinde benzersiz bir ad olmalıdır nerede **enum** (kapsamsız Enum'lar için) tanımlanır veya içinde **enum** kendisi (için kapsamlı numaralandırmalar). Adlara verilen değerlerin benzersiz olması gerekmez. Örneğin, kapsamsız bir enum bildirimi `Suit` budur:
+Her Numaralandırıcı bir sabit olarak değerlendirilir ve **enum** 'un tanımlandığı kapsamda (kapsamlı Numaralandırmalar için) veya **enum** 'un kendisi içinde benzersiz bir ada sahip olmalıdır (kapsamlı Numaralandırmalar için). Adlara verilen değerlerin benzersiz olması gerekmez. Örneğin, kapsamlı olmayan bir numaralandırma `Suit` bildirimi Bu ise:
 
 ```cpp
 enum Suit { Diamonds = 5, Hearts, Clubs = 4, Spades };
 ```
 
-Ardından değerlerini `Diamonds`, `Hearts`, `Clubs`, ve `Spades` 5, 6, 4 ve 5, sırasıyla. 5 kereden fazla kullanılmamasını dikkat edin. hazırlanmamış olsa bile bu izin verilir. Bu kurallar, kapsamı olan Enum'lar için aynıdır.
+Daha sonra `Diamonds`, `Hearts`, `Clubs`ve `Spades` değerleri sırasıyla 5, 6, 4 ve 5 ' tir. 5 ' in birden çok kez kullanıldığını unutmayın; Bu, amaçlanmasa bile izin verilir. Bu kurallar, kapsamlı Numaralandırmalar için aynıdır.
 
-## <a name="casting-rules"></a>Dönüştürme kuralları
+## <a name="casting-rules"></a>Atama kuralları
 
-Kapsamı olmayan enum sabitleri örtük olarak dönüştürülebilir **int**, ancak bir **int** hiçbir zaman örtük olarak bir enum değerine dönüştürülebilir değildir. Aşağıdaki örnekte gösterildiği atamaya çalıştığınızda ne `hand` olmayan bir değer bir `Suit`:
+Kapsamlı olmayan Numaralandırma sabitleri örtük olarak **int**'e dönüştürülebilir, ancak bir **int** hiçbir şekilde bir sabit listesi değerine dönüştürülemez. Aşağıdaki örnek, `Suit`olmayan bir değer `hand` atamaya çalışırsanız ne olacağını gösterir:
 
 ```cpp
 int account_num = 135692;
@@ -113,13 +113,13 @@ Suit hand;
 hand = account_num; // error C2440: '=' : cannot convert from 'int' to 'Suit'
 ```
 
-Bir numaralandırmaya dönüştürmek için gerekli bir **int** için kapsamlı ya da kapsamsız bir numaralandırıcı. Ancak, kapsamsız bir numaralandırıcı bir yayın olmadan bir tamsayı değerine yükseltebilirsiniz.
+Bir **int** 'i kapsamlı veya kapsamlı olmayan bir Numaralandırıcı dönüştürmek için bir atama gerekir. Ancak, kapsamlı olmayan bir Numaralandırıcı 'yı bir dönüştürme olmadan bir tamsayı değerine yükseltebilirsiniz.
 
 ```cpp
 int account_num = Hearts; //OK if Hearts is in a unscoped enum
 ```
 
-Örtük dönüştürmeleri bu şekilde kullanmak, istenmeyen yan etkilere neden neden olabilir. Kapsamı belirlenmemiş Enum'lar ile ilişkili programlama hatalarını gidermeye yardımcı olmak için kapsamı belirli enum değerleri kesin türlü yapılır. Kapsamlı numaralandırıcılar enum tür adı (tanımlayıcı) tarafından nitelendirilmelidir ve örtük olarak, aşağıdaki örnekte gösterildiği gibi dönüştürülemez:
+Örtülü dönüştürmeleri bu şekilde kullanmak, istenmeyen yan etkilere neden olabilir. Kapsamlı olmayan numaralandırmalar ile ilişkili programlama hatalarının ortadan kaldırmaya yardımcı olmak için kapsamlı numaralandırma değerleri kesin olarak türdedir. Kapsamlı Numaralandırıcılar, enum türü adı (tanımlayıcı) ile nitelenmelidir ve aşağıdaki örnekte gösterildiği gibi örtük olarak dönüştürülemez:
 
 ```cpp
 namespace ScopedEnumConversions
@@ -141,17 +141,17 @@ namespace ScopedEnumConversions
 }
 ```
 
-Dikkat satır `hand = account_num;` hala daha önce gösterildiği gibi kapsamsız numaralandırmalar ile oluşan hataya neden. Bu, açık bir yayın ile izin verilir. Bununla birlikte, kapsamlı numaralandırmalar, denenen bir dönüştürme sonraki deyimi içinde `account_num = Suit::Hearts;`, artık açık bir yayın olmadan izin verilmez.
+Satır `hand = account_num;`, daha önce gösterildiği gibi kapsamlı numaralandırmalar ile oluşan hataya hala neden olduğuna dikkat edin. Açık bir tür dönüştürme ile buna izin verilir. Ancak, kapsamlı numaralandırmalar ile, `account_num = Suit::Hearts;`sonraki deyimdeki dönüştürmeye izin verilmez.
 
-## <a name="no_enumerators"></a> Numaralandırmalar ile hiçbir numaralandırıcıları
+## <a name="no_enumerators"></a>Numaralandırıcılar olmayan numaralandırmalar
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Açık bir temel alınan türü ile hiçbir numaralandırıcılar enum (normal veya kapsamlı) tanımlayarak, geçerli herhangi bir tür için örtük dönüştürme olan yeni bir integral türü ortaya çıkarabilir. Yerleşik temel alınan türü yerine bu türü kullanarak, ince hatalar nedeniyle yanlışlıkla örtük dönüştürmeler tarafından olasılığını ortadan kaldırabilir.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): açık bir temel alınan türe ve numaralandırıcılara sahip bir sabit listesi (normal veya kapsamlı) tanımlayarak, başka bir türe örtük dönüştürme olmayan yeni bir integral türü ortaya çıkarabilir. Yerleşik temel alınan türü yerine bu türü kullanarak, yanlışlıkla örtük dönüşümlerden kaynaklanan hafif hatalara karşı olası sorunları ortadan kaldırabilirsiniz.
 
 ```cpp
 enum class byte : unsigned char { };
 ```
 
-Yeni türü temel tür tam bir kopyası ve bu nedenle herhangi bir performans cezası desteklenecek Abı'lerin kullanılabileceği anlamına gelir aynı çağrı kuralına sahiptir. Atama türü değişkenler doğrudan liste başlatma kullanılarak başlatılır gereklidir. Aşağıdaki örnek, sabit listeleri ile hiçbir numaralandırıcılar çeşitli bağlamlarda başlatmak gösterilmektedir:
+Yeni tür, temel alınan türün tam bir kopyasıdır ve dolayısıyla aynı çağırma kuralına sahiptir ve bu nedenle, herhangi bir performans cezası olmadan, ABR genelinde kullanılabileceği anlamına gelir. Tür değişkenleri doğrudan liste başlatma kullanılarak başlatıldığında atama gerekmez. Aşağıdaki örnek, çeşitli bağlamlarda Numaralandırıcılar olmadan Numaralandırmaların nasıl başlatılacağını göstermektedir:
 
 ```cpp
 enum class byte : unsigned char { };

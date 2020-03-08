@@ -6,11 +6,11 @@ helpviewer_keywords:
 - containers, C++ Standard Library
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
 ms.openlocfilehash: 1119947534c030afaad64e4905e58365ffffd05e
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72686099"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856751"
 ---
 # <a name="c-standard-library-containers"></a>C++Standart Kitaplık kapsayıcıları
 
@@ -26,29 +26,29 @@ Sıra kapsayıcıları, belirttiğiniz eklenen öğelerin sıralamasını korur.
 
 Bir `vector` kapsayıcısı bir dizi gibi davranır, ancak gerektiğinde otomatik olarak büyüyebilir. Rastgele erişime ve bitişik olarak depolanır ve uzunluk oldukça esnektir. Bu nedenlerden ve daha fazlası için `vector` çoğu uygulama için tercih edilen dizi kapsayıcısıdır. Ne tür bir dizi kapsayıcısının kullanılacağı konusunda şüpheli olduğunda, bir vektör kullanarak başlayın! Daha fazla bilgi için bkz. [vektör sınıfı](../standard-library/vector-class.md).
 
-Bir `array` kapsayıcısı `vector` güçlerinden bazılarına sahiptir ancak uzunluk esnek değildir. Daha fazla bilgi için bkz. [dizi sınıfı](../standard-library/array-class-stl.md).
+Bir `array` kapsayıcısı `vector`güçlerinden bazılarına sahiptir ancak uzunluk esnek değildir. Daha fazla bilgi için bkz. [dizi sınıfı](../standard-library/array-class-stl.md).
 
-@No__t_0 (çift uçlu kuyruk) kapsayıcısı, kapsayıcının başındaki ve sonundaki hızlı ekleme ve silme işlemlerine izin verir. @No__t_0 rastgele erişim ve esnek uzunlukta avantajları paylaşır, ancak bitişik değildir. Daha fazla bilgi için bkz. [deque Sınıfı](../standard-library/deque-class.md).
+`deque` (çift uçlu kuyruk) kapsayıcısı, kapsayıcının başındaki ve sonundaki hızlı ekleme ve silme işlemlerine izin verir. `vector`rastgele erişim ve esnek uzunlukta avantajları paylaşır, ancak bitişik değildir. Daha fazla bilgi için bkz. [deque Sınıfı](../standard-library/deque-class.md).
 
-@No__t_0 kapsayıcı, kapsayıcıda her yerde çift yönlü erişim, hızlı eklemeler ve hızlı silme işlemlerini sağlayan, ancak kapsayıcıdaki bir öğeye rastgele erişim sağlayan, birbirine bağlı bir listesidir. Daha fazla bilgi için bkz. [list Class](../standard-library/list-class.md).
+`list` kapsayıcı, kapsayıcıda her yerde çift yönlü erişim, hızlı eklemeler ve hızlı silme işlemlerini sağlayan, ancak kapsayıcıdaki bir öğeye rastgele erişim sağlayan, birbirine bağlı bir listesidir. Daha fazla bilgi için bkz. [list Class](../standard-library/list-class.md).
 
-@No__t_0 kapsayıcı, `list` bir listedir bağlantılı listesidir. Bu, ileri erişim sürümüdür. Daha fazla bilgi için bkz. [forward_list Class](../standard-library/forward-list-class.md).
+`forward_list` kapsayıcı, `list`bir listedir bağlantılı listesidir. Bu, ileri erişim sürümüdür. Daha fazla bilgi için bkz. [forward_list sınıfı](../standard-library/forward-list-class.md).
 
 ## <a name="associative-containers"></a>İlişkilendirilebilir kapsayıcılar
 
 İlişkilendirilebilir kapsayıcılar içinde, öğeler önceden tanımlanmış bir sıraya eklenir — Örneğin, artan düzende sıralanır. Sıralanmamış ilişkilendirilebilir kapsayıcılar da kullanılabilir. İlişkilendirilebilir kapsayıcılar iki alt küme halinde gruplandırılabilir: haritalar ve kümeler.
 
-Bazen sözlük olarak adlandırılan `map`, anahtar/değer çiftinden oluşur. Anahtar, diziyi sıralamak için kullanılır ve değer bu anahtarla ilişkilendirilir. Örneğin, bir `map` metindeki her benzersiz sözcüğü temsil eden anahtarlar ve her sözcüğün metinde görünme sayısını temsil eden karşılık gelen değerleri içerebilir. @No__t_0 sıralanmamış sürümü `unordered_map`. Daha fazla bilgi için bkz. [Map Class](../standard-library/map-class.md) and [unordered_map Class](../standard-library/unordered-map-class.md).
+Bazen sözlük olarak adlandırılan `map`, anahtar/değer çiftinden oluşur. Anahtar, diziyi sıralamak için kullanılır ve değer bu anahtarla ilişkilendirilir. Örneğin, bir `map` metindeki her benzersiz sözcüğü temsil eden anahtarlar ve her sözcüğün metinde görünme sayısını temsil eden karşılık gelen değerleri içerebilir. `map` sıralanmamış sürümü `unordered_map`. Daha fazla bilgi için bkz. [Map Class](../standard-library/map-class.md) and [unordered_map Class](../standard-library/unordered-map-class.md).
 
-@No__t_0, benzersiz öğelerin yalnızca artan bir kapsayıcısıdır — değer de anahtardır. @No__t_0 sıralanmamış sürümü `unordered_set`. Daha fazla bilgi için bkz. [set Class](../standard-library/set-class.md) and [unordered_set Class](../standard-library/unordered-set-class.md).
+`set`, benzersiz öğelerin yalnızca artan bir kapsayıcısıdır — değer de anahtardır. `set` sıralanmamış sürümü `unordered_set`. Daha fazla bilgi için bkz. [set Class](../standard-library/set-class.md) and [unordered_set Class](../standard-library/unordered-set-class.md).
 
-Hem `map` hem de `set` yalnızca bir anahtarın veya öğenin bir örneğinin kapsayıcıya eklenmesine izin verir. Birden çok öğe örneği gerekliyse `multimap` veya `multiset` kullanın. Sıralanmamış sürümler `unordered_multimap` ve `unordered_multiset`. Daha fazla bilgi için bkz. [multimap Class](../standard-library/multimap-class.md), [unordered_multimap Class](../standard-library/unordered-multimap-class.md), [multıset Class](../standard-library/multiset-class.md)ve [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
+Hem `map` hem de `set` yalnızca bir anahtarın veya öğenin bir örneğinin kapsayıcıya eklenmesine izin verir. Birden çok öğe örneği gerekliyse `multimap` veya `multiset`kullanın. Sıralanmamış sürümler `unordered_multimap` ve `unordered_multiset`. Daha fazla bilgi için bkz. [multimap sınıfı](../standard-library/multimap-class.md), [unordered_multimap Sınıfı](../standard-library/unordered-multimap-class.md), [Çoklu küme sınıfı](../standard-library/multiset-class.md)ve [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
 Sıralı haritalar ve kümeler çift yönlü yineleyiciler destekler ve sıralanmamış karşılıkları ileri yineleyiciler destekler. Daha fazla bilgi için bkz. [yineleyiciler](../standard-library/iterators.md).
 
 ### <a name="heterogeneous-lookup-in-associative-containers-c14"></a>Ilişkilendirilebilir kapsayıcılarda heterojen arama (C++ 14)
 
-Sıralı ilişkilendirilebilir kapsayıcılar (eşleme, multimap, küme ve çoklu küme) artık heterojen aramayı destekler, bu da artık `find()` ve `lower_bound()` gibi üye işlevlerdeki anahtar veya öğe ile tam aynı nesne türünü geçirmek için gerekli değildir. Bunun yerine, anahtar türüyle karşılaştırmayı sağlayan aşırı yüklenmiş `operator<` tanımlanmış herhangi bir türü geçirebilirsiniz.
+Sıralı ilişkilendirilebilir kapsayıcılar (eşleme, multimap, küme ve çoklu küme) artık heterojen aramayı destekler, bu da artık `find()` ve `lower_bound()`gibi üye işlevlerdeki anahtar veya öğe ile tam aynı nesne türünü geçirmek için gerekli değildir. Bunun yerine, anahtar türüyle karşılaştırmayı sağlayan aşırı yüklenmiş `operator<` tanımlanmış herhangi bir türü geçirebilirsiniz.
 
 Heterojen arama, burada gösterildiği gibi, kapsayıcı değişkenini bildirirken `std::less<>` veya `std::greater<>` "elmas functor" karşılaştırıcısı ' nı belirttiğinizde, kabul etme temelinde etkinleştirilir:
 
@@ -137,7 +137,7 @@ Kapsayıcı bağdaştırıcı, arabirimi basitlik ve açıklık için kısıtlay
 
 Bir `queue` kapsayıcısı FıFO (ilk, ilk çıkar) semantiğini izler. *Gönderilen*ilk öğe — sıraya eklenen (yani, kuyruğa *eklenen) ilk*çıkarılım, yani kuyruktan kaldırılır. Daha fazla bilgi için bkz. [Queue Class](../standard-library/queue-class.md).
 
-Bir `priority_queue` kapsayıcısı, en yüksek değere sahip olan öğe sırada her zaman ilk başta olacak şekilde düzenlenir. Daha fazla bilgi için bkz. [priority_queue Class](../standard-library/priority-queue-class.md).
+Bir `priority_queue` kapsayıcısı, en yüksek değere sahip olan öğe sırada her zaman ilk başta olacak şekilde düzenlenir. Daha fazla bilgi için bkz. [priority_queue sınıfı](../standard-library/priority-queue-class.md).
 
 Bir `stack` kapsayıcısı, LıFO (son, ilk çıkar) semantiğini izler. Yığına gönderilen son öğe, ilk öğe olarak belirlenir. Daha fazla bilgi için bkz. [Stack sınıfı](../standard-library/stack-class.md).
 
@@ -162,15 +162,15 @@ Kapsayıcıların öğelerine yineleyiciler kullanılarak erişilir. Daha fazla 
 
 ## <a name="comparing-containers"></a>Kapsayıcıları karşılaştırma
 
-Tüm kapsayıcılar aynı öğe türüne sahip aynı türde iki kapsayıcıyı karşılaştırmak için = = işlecini aşırı yükler. Bir Vector \<string > başka bir vektör \<string > karşılaştırmak için = = kullanabilirsiniz, ancak bir vektör \<string > bir liste \<string > veya vektör \<string bir vektör > \<char > karşılaştırmak için kullanamazsınız.  C++ 98/03 ' de, benzer olmayan kapsayıcı türlerini ve/veya öğe türlerini karşılaştırmak için [std:: eşittir](algorithm-functions.md#equal) veya [std:: uyuşmazlığını](algorithm-functions.md#mismatch) kullanabilirsiniz. C++ 11 ' de [std:: is_permutation](algorithm-functions.md#is_permutation)' i de kullanabilirsiniz. Ancak tüm bu durumlarda, işlevler kapsayıcıların aynı uzunlukta olduğunu varsaymaktadır. İkinci Aralık birinciden kısaysa, tanımsız davranış sonuçları olur. İkinci Aralık daha uzunsa, karşılaştırma hiçbir şekilde ilk aralığın sonundan önce devam ettiğinden sonuçlar yine de hatalı olabilir.
+Tüm kapsayıcılar aynı öğe türüne sahip aynı türde iki kapsayıcıyı karşılaştırmak için = = işlecini aşırı yükler. Bir Vector\<dize > başka bir vektör\<dize > karşılaştırmak için = = kullanabilirsiniz, ancak bir vektör\<dize > bir liste\<dize > veya bir vektör\<char >\<bir vektör > dize karşılaştırmak için kullanamazsınız.  C++ 98/03 ' de, benzer olmayan kapsayıcı türlerini ve/veya öğe türlerini karşılaştırmak için [std:: eşittir](algorithm-functions.md#equal) veya [std:: uyuşmazlığını](algorithm-functions.md#mismatch) kullanabilirsiniz. C++ 11 ' de [std:: is_permutation](algorithm-functions.md#is_permutation)de kullanabilirsiniz. Ancak tüm bu durumlarda, işlevler kapsayıcıların aynı uzunlukta olduğunu varsaymaktadır. İkinci Aralık birinciden kısaysa, tanımsız davranış sonuçları olur. İkinci Aralık daha uzunsa, karşılaştırma hiçbir şekilde ilk aralığın sonundan önce devam ettiğinden sonuçlar yine de hatalı olabilir.
 
 ### <a name="comparing-dissimilar-containers-c14"></a>Benzemez kapsayıcıları karşılaştırma (C++ 14)
 
-C++ 14 ve sonraki sürümlerinde, iki adet tamamen Aralık alan `std::equal`, `std::mismatch` veya `std::is_permutation` işlev aşırı yüklerini kullanarak, benzer olmayan kapsayıcıları ve/veya benzer öğe türlerini karşılaştırabilirsiniz. Bu aşırı yüklemeler, kapsayıcıları farklı uzunluklara göre karşılaştırmanızı sağlar. Bu aşırı yüklemeler Kullanıcı hatasına çok daha az açıktır ve Farklı uzunluklardaki kapsayıcılar karşılaştırıldığı zaman sabit zamanlı olarak false döndürecek şekilde iyileştirilir. Bu nedenle, (1) çok açık bir nedeniniz yoksa veya (2) çift aralıklı iyileştirmelerin avantajına sahip olmayan bir [std:: List](../standard-library/list-class.md) kapsayıcısı kullandığınız müddetçe bu aşırı yüklemeleri kullanmanızı öneririz.
+C++ 14 ve sonraki sürümlerinde, iki adet tamamen Aralık alan `std::equal`, `std::mismatch`veya `std::is_permutation` işlev aşırı yüklerini kullanarak, benzer olmayan kapsayıcıları ve/veya benzer öğe türlerini karşılaştırabilirsiniz. Bu aşırı yüklemeler, kapsayıcıları farklı uzunluklara göre karşılaştırmanızı sağlar. Bu aşırı yüklemeler Kullanıcı hatasına çok daha az açıktır ve Farklı uzunluklardaki kapsayıcılar karşılaştırıldığı zaman sabit zamanlı olarak false döndürecek şekilde iyileştirilir. Bu nedenle, (1) çok açık bir nedeniniz yoksa veya (2) çift aralıklı iyileştirmelerin avantajına sahip olmayan bir [std:: List](../standard-library/list-class.md) kapsayıcısı kullandığınız müddetçe bu aşırı yüklemeleri kullanmanızı öneririz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcılar](../cpp/containers-modern-cpp.md) \
-Standart kitaplık başvurusu \ [ C++ ](../standard-library/cpp-standard-library-reference.md)
-[\<sample kapsayıcı >](../standard-library/sample-container.md) \
+[Kapsayıcılar](../cpp/containers-modern-cpp.md)\
+Standart kitaplık başvurusu\ [ C++ ](../standard-library/cpp-standard-library-reference.md)
+[\<örnek kapsayıcı >](../standard-library/sample-container.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

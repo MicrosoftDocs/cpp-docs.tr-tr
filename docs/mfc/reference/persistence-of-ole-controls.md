@@ -6,11 +6,11 @@ helpviewer_keywords:
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
 ms.openlocfilehash: 42e70f9e48339eddb2a5af4fa288400cce01f490
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502036"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855780"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 
@@ -24,7 +24,7 @@ OLE denetimlerinin bir özelliği, OLE denetiminin bir dosya veya akışa ait ö
 |[PX_Bool](#px_bool)|**Bool**türünde bir denetim özelliği değiş tokuş eder.|
 |[PX_Color](#px_color)|Bir denetimin Color özelliğini değiş tokuş eder.|
 |[PX_Currency](#px_currency)|**Cy**türünde bir denetim özelliği değiş tokuş eder.|
-|[PX_DataPath](#px_datapath)|Türünde `CDataPathProperty`bir denetim özelliği değiş tokuş eder.|
+|[PX_DataPath](#px_datapath)|`CDataPathProperty`türünde bir denetim özelliği değiş tokuş eder.|
 |[PX_Double](#px_double)|**Double**türünde bir denetim özelliği değiş tokuş eder.|
 |[PX_Font](#px_font)|Bir denetimin yazı tipi özelliğini değiş tokuş eder.|
 |[PX_Float](#px_float)|**Float**türünde bir denetim özelliği değiş tokuş eder.|
@@ -37,11 +37,11 @@ OLE denetimlerinin bir özelliği, OLE denetiminin bir dosya veya akışa ait ö
 |[PXstring](#px_string)|Bir karakter dizesi denetim özelliği değiş tokuş eder.|
 |[PX_VBXFontConvert](#px_vbxfontconvert)|Bir VBX denetiminin yazı tipi ile ilgili özelliklerini OLE denetim yazı tipi özelliğine dönüştürür.|
 
-Ayrıca, `AfxOleTypeMatchGuid` genel işlev TYPEDESC ve verilen bir GUID arasındaki eşleşmeyi test etmek için sağlanır.
+Ayrıca, `AfxOleTypeMatchGuid` genel işlevi, TYPEDESC ve verilen bir GUID arasındaki eşleşmeyi test etmek için sağlanır.
 
 ##  <a name="px_blob"></a>PX_Blob
 
-İkili büyük nesne (blob) verilerini `DoPropExchange` depolayan bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
+İkili büyük nesne (BLOB) verilerini depolayan bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Blob(
@@ -54,7 +54,7 @@ BOOL PX_Blob(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -71,7 +71,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, *hBlob*tarafından başvurulan değişkene uygun şekilde okunacak veya buradan yazılacak. Bu değişken başlangıçta ilk kez çağrılmadan `PX_Blob` önce null olarak başlatılmalıdır (genellikle, denetimin oluşturucusunda bu yapılabilir). *HBlobDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin başlatılması veya serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, *hBlob*tarafından başvurulan değişkene uygun şekilde okunacak veya buradan yazılacak. Başlangıçta `PX_Blob` ilk kez çağrılmadan önce bu değişken NULL olarak başlatılmalıdır (genellikle bu, denetimin oluşturucusunda yapılabilir). *HBlobDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin başlatılması veya serileştirme işleminin başarısız olması durumunda kullanılır.
 
 *HBlob* ve *hBlobDefault* tanıtıcıları, aşağıdakileri içeren bir bellek bloğuna başvurur:
 
@@ -79,11 +79,11 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 - Gerçek ikili verileri içeren bir bellek bloğu.
 
-BLOB türü özellikleri yüklenirken Windows [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) API 'sini kullanarak bellek ayıracağınaunutmayın.`PX_Blob` Bu belleği boşaltmaktan siz sorumlusunuz. Bu nedenle, denetiminizin yıkıcısında herhangi bir BLOB türü özellik tanıtıcısında [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree) çağrısı yapmanız gerekir.
+`PX_Blob`, BLOB türü özellikleri yüklenirken Windows [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) API 'sini kullanarak bellek ayıryacağını unutmayın. Bu belleği boşaltmaktan siz sorumlusunuz. Bu nedenle, denetiminizin yıkıcısında herhangi bir BLOB türü özellik tanıtıcısında [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree) çağrısı yapmanız gerekir.
 
 ##  <a name="px_bool"></a>PX_Bool
 
-BOOL türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+BOOL türünde bir özelliği seri hale getirmek veya başlatmak için denetimin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Bool(
@@ -101,7 +101,7 @@ BOOL PX_Bool(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -122,7 +122,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_color"></a>PX_Color
 
-OLE_COLOR türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+OLE_COLOR türünde bir özelliği seri hale getirmek veya başlatmak için denetimin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Color(
@@ -140,7 +140,7 @@ BOOL PX_Color(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -161,7 +161,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_currency"></a>PX_Currency
 
-Currency türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
+**Para birimi**türünde bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Currency(
@@ -179,7 +179,7 @@ BOOL PX_Currency(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -200,7 +200,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_datapath"></a>PX_DataPath
 
-[CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md)türünde bir veri `DoPropExchange` yolu özelliğini seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+[CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md)türünde bir veri yolu özelliğini seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_DataPath(
@@ -216,7 +216,7 @@ BOOL PX_DataPath(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -234,7 +234,7 @@ Veri yolu özellikleri zaman uyumsuz denetim özellikleri uygular. Özelliğin d
 
 ##  <a name="px_double"></a>PX_Double
 
-Double türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işleviçağırın.
+**Double**türünde bir özelliği seri hale getirmek veya başlatmak için denetimin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Double(
@@ -252,7 +252,7 @@ BOOL PX_Double(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -273,7 +273,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_font"></a>PX_Font
 
-Yazı tipi türünde bir özelliği seri hale `DoPropExchange` getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+Yazı tipi türünde bir özelliği seri hale getirmek veya başlatmak için denetimin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Font(
@@ -287,19 +287,19 @@ BOOL PX_Font(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
 
 *Yazý*<br/>
-Yazı tipi özelliğini içeren `CFontHolder` bir nesneye başvuru.
+Yazı tipi özelliğini içeren `CFontHolder` nesnesine bir başvuru.
 
 *pFontDesc*<br/>
-`FONTDESC` *Pfontdispambuya* 'nın null olduğu durumlarda, Font özelliğinin varsayılan durumunu başlatırken kullanılacak değerleri içeren bir yapıya yönelik işaretçi.
+*Pfontdispambulanın* null olduğu durumlarda, Font özelliğinin varsayılan durumunu başlatırken kullanılacak değerleri içeren `FONTDESC` yapısına yönelik bir işaretçi.
 
 *Pfontdispambun*<br/>
-Yazı tipi özelliğinin varsayılan `IFontDisp` durumunu başlatırken kullanılacak yazı tipinin arabirimine yönelik bir işaretçi.
+Yazı tipi özelliğinin varsayılan durumunu başlatırken kullanılacak yazı tipinin `IFontDisp` arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -307,11 +307,11 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun olduğunda bir `font` `CFontHolder` başvuruya göre okunurdur veya yazılır. *PFontDesc* ve *Pfontdispambköpek* belirtilmişse, gerektiğinde özelliğin varsayılan değerini başlatmak için kullanılır. Bu değerler, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır. Genellikle, pFontDesc için null ve `COleControl::AmbientFont` *pfontdispambun*tarafından döndürülen çevresel değer ile geçiş yapabilirsiniz. Tarafından `COleControl::AmbientFont` döndürülen yazı tipi nesnesinin, `IFontDisp::Release` üye işlevine yapılan bir çağrı tarafından yayımlanması gerektiğini unutmayın.
+Özelliğin değeri, uygun olduğunda bir `CFontHolder` başvurusu olan `font`yazılır veya yazılır. *PFontDesc* ve *Pfontdispambköpek* belirtilmişse, gerektiğinde özelliğin varsayılan değerini başlatmak için kullanılır. Bu değerler, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır. Genellikle, *pFontDesc* için null değeri ve *Pfontdispambun*için `COleControl::AmbientFont` tarafından döndürülen çevresel değeri geçirin. `COleControl::AmbientFont` tarafından döndürülen yazı tipi nesnesinin `IFontDisp::Release` member işlevine yapılan bir çağrı tarafından serbest bırakılacağını unutmayın.
 
 ##  <a name="px_float"></a>PX_Float
 
-Float türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işleviçağırın.
+**Float**türünde bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Float(
@@ -329,7 +329,7 @@ BOOL PX_Float(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -350,7 +350,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_iunknown"></a>PX_IUnknown
 
-Türetilmiş arabirime `DoPropExchange` `IUnknown`sahip bir nesne tarafından temsil edilen bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
+`IUnknown`türetilmiş bir arabirime sahip bir nesne tarafından temsil edilen bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_IUnknown(
@@ -364,7 +364,7 @@ BOOL PX_IUnknown(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -388,7 +388,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_long"></a>PX_Long
 
-Long türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
+**Long**türünde bir özelliği seri hale getirmek veya başlatmak için denetimin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Long(
@@ -406,7 +406,7 @@ BOOL PX_Long(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -427,7 +427,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_picture"></a>PX_Picture
 
-Denetiminizin bir resim özelliğini seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+Denetiminizin bir Picture özelliğini seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Picture(
@@ -445,7 +445,7 @@ BOOL PX_Picture(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -466,7 +466,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_short"></a>PX_Short
 
-Short türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işleviçağırın.
+**Short**türünde bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_Short(
@@ -484,7 +484,7 @@ BOOL PX_Short(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -505,7 +505,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_ulong"></a>PX_ULong
 
-ULONG türünde bir özelliği seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işleviçağırın.
+**Ulong**türünde bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_ULong(
@@ -523,7 +523,7 @@ BOOL PX_ULong(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -544,7 +544,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_ushort"></a>PX_UShort
 
-**İşaretsiz Short**türünde bir özelliği seri hale `DoPropExchange` getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+**İşaretsiz Short**türünde bir özelliği seri hale getirmek veya başlatmak için denetiminizin `DoPropExchange` member işlevinde bu işlevi çağırın.
 
 ```
 BOOL PX_UShort(
@@ -562,7 +562,7 @@ BOOL PX_UShort(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -583,7 +583,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_string"></a>PXstring
 
-Bir karakter dizesi özelliğini seri hale getirmek `DoPropExchange` veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+Bir karakter dizesi özelliğini seri hale getirmek veya başlatmak için denetimin `DoPropExchange` üye işlevinizin içinde bu işlevi çağırın.
 
 ```
 BOOL PXstring(
@@ -601,7 +601,7 @@ BOOL PXstring(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *pszPropName*<br/>
 Değiştirilen özelliğin adı.
@@ -622,7 +622,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ##  <a name="px_vbxfontconvert"></a>PX_VBXFontConvert
 
-Bir VBX denetiminin yazı tipine ilişkin `DoPropExchange` özellikleri dönüştürerek bir yazı tipi özelliğini başlatmak için bu işlevi denetiminizin member işlevinde çağırın.
+Bir VBX denetiminin yazı tipi ile ilgili özelliklerini dönüştürerek bir yazı tipi özelliğini başlatmak için bu işlevi denetiminizin `DoPropExchange` member işlevinde çağırın.
 
 ```
 BOOL PX_VBXFontConvert(
@@ -633,7 +633,7 @@ BOOL PX_VBXFontConvert(
 ### <a name="parameters"></a>Parametreler
 
 *pPX*<br/>
-[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle bir parametre `DoPropExchange`olarak geçirilir).
+[CPropExchange](../../mfc/reference/cpropexchange-class.md) nesnesine yönelik işaretçi (genellikle `DoPropExchange`parametresi olarak geçirilir).
 
 *Yazý*<br/>
 Dönüştürülmüş VBX yazı tipi ile ilgili özellikleri içeren OLE denetiminin yazı tipi özelliği.
@@ -644,9 +644,9 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca bir VBX denetimi için doğrudan değiştirme olarak tasarlanan bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamı, bir vbx denetimi içeren bir formu karşılık gelen değiştirme OLE denetimini kullanacak şekilde dönüştürdüğünde, vbx denetiminin özellik verilerini içeren `IDataObject::SetData` bir özellik kümesini geçirerek denetimin işlevini çağırır. Bu işlem, sırasıyla denetimin `DoPropExchange` işlevinin çağrılmasına neden olur. `DoPropExchange`, vbx denetiminin yazı tipi ile ilgili özelliklerini (örneğin, "FontName," "FontSize" vb.) OLE denetiminin yazı tipi özelliğinin karşılık gelen bileşenlerine dönüştürmek için çağrı `PX_VBXFontConvert` yapabilir.
+Bu işlev yalnızca bir VBX denetimi için doğrudan değiştirme olarak tasarlanan bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamı, kendisine karşılık gelen değiştirme OLE denetimini kullanmak üzere bir VBX denetimi içeren bir form dönüştürdüğünde, bu, denetimin `IDataObject::SetData` işlevini çağırır ve bu, VBX denetiminin özellik verilerini içeren bir özellik kümesine geçer. Bu işlem sırasıyla denetimin `DoPropExchange` işlevinin çağrılmasına neden olur. `DoPropExchange`, VBX denetiminin yazı tipi ile ilgili özelliklerini (örneğin, "FontName," "FontSize" vb.) OLE denetiminin yazı tipi özelliğinin karşılık gelen bileşenlerine dönüştürmek için `PX_VBXFontConvert` çağırabilir.
 
-`PX_VBXFontConvert`yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürüldüğünde çağrılmalıdır. Örneğin:
+`PX_VBXFontConvert` yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürülürken çağrılmalıdır. Örnek:
 
 [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]

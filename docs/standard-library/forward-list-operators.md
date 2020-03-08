@@ -1,5 +1,5 @@
 ---
-title: '&lt;forward_list &gt; işleçleri'
+title: '&lt;forward_list&gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - forward_list/std::operator!=
@@ -17,13 +17,13 @@ helpviewer_keywords:
 - std::operatoroperator&lt; (forward_list)
 - std::operatoroperator&lt;= (forward_list)
 ms.openlocfilehash: 1ddfb56c7ff68ec10c7bb56af3495e4042acb83c
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689679"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874762"
 ---
-# <a name="ltforward_listgt-operators"></a>&lt;forward_list &gt; işleçleri
+# <a name="ltforward_listgt-operators"></a>&lt;forward_list&gt; işleçleri
 
 ## <a name="op_eq_eq"></a>işleç = =
 
@@ -37,15 +37,15 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
-@No__t_0 türünde bir nesne.
+*sol*\
+`forward_list` türünün bir nesnesi.
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*sağ*\
+`forward_list` türünün bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi, sınıf şablonu `forward_list` iki nesnesini karşılaştırmak için `operator==` aşırı yükler. İşlev `distance(left.begin(), end()) == distance(right.begin(),right.end()) && equal(left. begin(),left. end(),right.begin())` döndürür.
+Bu şablon işlevi, sınıf şablonu `forward_list`iki nesnesini karşılaştırmak için `operator==` aşırı yükler. İşlev `distance(left.begin(), end()) == distance(right.begin(),right.end()) && equal(left. begin(),left. end(),right.begin())`döndürür.
 
 ## <a name="op_neq"></a>işleç! =
 
@@ -59,11 +59,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
-@No__t_0 türünde bir nesne.
+*sol*\
+`forward_list` türünün bir nesnesi.
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*sağ*\
+`forward_list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -71,9 +71,9 @@ listeler eşitse **true** ; listeler eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi `!(left == right)` döndürür.
+Bu şablon işlevi `!(left == right)`döndürür.
 
-## <a name="op_lt"></a>işleç &lt;
+## <a name="op_lt"></a>işleç&lt;
 
 İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileriye doğru liste nesnesinden küçük olup olmadığını sınar.
 
@@ -85,11 +85,11 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
-@No__t_0 türünde bir nesne.
+*sol*\
+`forward_list` türünün bir nesnesi.
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*sağ*\
+`forward_list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -97,9 +97,9 @@ işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeye eşit ancak 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi, sınıf şablonu `forward_list` iki nesnesini karşılaştırmak için `operator<` aşırı yükler. İşlev `lexicographical_compare(lhs. begin(), lhs. end(), rhs.begin(), rhs.end())` döndürür.
+Bu şablon işlevi, sınıf şablonu `forward_list`iki nesnesini karşılaştırmak için `operator<` aşırı yükler. İşlev `lexicographical_compare(lhs. begin(), lhs. end(), rhs.begin(), rhs.end())`döndürür.
 
-## <a name="op_lt_eq"></a>işleç &lt; =
+## <a name="op_lt_eq"></a>işleç&lt;=
 
 İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileri liste nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -111,11 +111,11 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
-@No__t_0 türünde bir nesne.
+*sol*\
+`forward_list` türünün bir nesnesi.
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*sağ*\
+`forward_list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -123,9 +123,9 @@ işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden daha küç�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi `!(right < left)` döndürür.
+Bu şablon işlevi `!(right < left)`döndürür.
 
-## <a name="op_gt"></a>işleç &gt;
+## <a name="op_gt"></a>işleç&gt;
 
 İşlecin sol tarafındaki ileri liste nesnesinin, sağ taraftaki ileri liste nesnesinden daha büyük olup olmadığını sınar.
 
@@ -137,11 +137,11 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
-@No__t_0 türünde bir nesne.
+*sol*\
+`forward_list` türünün bir nesnesi.
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*sağ*\
+`forward_list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -149,9 +149,9 @@ işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden büyükse *
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi `right < left` döndürür.
+Bu şablon işlevi `right < left`döndürür.
 
-## <a name="op_gt_eq"></a>işleç &gt; =
+## <a name="op_gt_eq"></a>işleç&gt;=
 
 İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileri liste nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -163,11 +163,11 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
-@No__t_0 türünde bir nesne.
+*sol*\
+`forward_list` türünün bir nesnesi.
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*sağ*\
+`forward_list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -175,4 +175,4 @@ işlecin sol tarafındaki ileri listesinin, işlecin sağ tarafındaki ileri lis
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `!(left < right)` döndürür.
+Şablon işlevi `!(left < right)`döndürür.

@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
 ms.openlocfilehash: e9ad7c363f2580200af20baeb0acd7a93c1f603b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502767"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78871777"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 
@@ -43,7 +43,7 @@ class AFX_NOVTABLE CPropExchange
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CPropExchange:: ExchangeBlobProp](#exchangeblobprop)|İkili büyük nesne (BLOB) özelliğini değiş tokuş eder.|
 |[CPropExchange:: ExchangeFontProp](#exchangefontprop)|Yazı tipi özelliğini değiş tokuş eder.|
@@ -56,19 +56,19 @@ class AFX_NOVTABLE CPropExchange
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPropExchange`taban sınıfına sahip değildir.
+`CPropExchange` temel bir sınıfa sahip değil.
 
 Bir özellik değişiminin bağlamını ve yönünü belirler.
 
 Kalıcılık, denetimin kendisi ve orta arasında, genellikle özellikleriyle temsil edilen, denetimin durum bilgilerinin alışverişinin kendisidir.
 
-Framework, bir OLE denetimi özelliklerinin kalıcı `CPropExchange` depolama alanından yüklenebileceği veya kalıcı olarak depolanabileceği hakkında bildirim geldiğinde öğesinden türetilmiş bir nesne oluşturur.
+Framework, bir OLE denetiminin özelliklerinin kalıcı depolama alanından yüklenebileceği veya depolanabileceği bildirildiğinde `CPropExchange` türetilen bir nesne oluşturur.
 
-Framework, `CPropExchange` `DoPropExchange` denetimin işlevine bu nesneye bir işaretçi geçirir. Denetiminiz için başlangıç dosyalarını oluşturmak üzere bir sihirbaz kullandıysanız, denetiminizin `DoPropExchange` işlevi çağırır. `COleControl::DoPropExchange` Temel sınıf sürüm, denetimin stok özelliklerini de değiş tokuş eder; türetilmiş sınıfınızın sürümünü, denetitiğiniz Exchange özelliklerine değiştirirsiniz.
+Framework, denetimin `DoPropExchange` işlevine bu `CPropExchange` nesnesine bir işaretçi geçirir. Denetiminiz için başlangıç dosyalarını oluşturmak üzere bir sihirbaz kullandıysanız, denetiminizin `DoPropExchange` işlevi `COleControl::DoPropExchange`çağırır. Temel sınıf sürüm, denetimin stok özelliklerini de değiş tokuş eder; türetilmiş sınıfınızın sürümünü, denetitiğiniz Exchange özelliklerine değiştirirsiniz.
 
-`CPropExchange`bir denetimin özelliklerini seri hale getirmek veya bir denetimin yükleme veya oluşturma sırasında denetimin özelliklerini başlatmak için kullanılabilir. `ExchangeProp` Ve üyesi`ExchangeFontProp` işlevleri özellikleridepolayıp`CPropExchange` farklı medyalardan yükleyebilir.
+`CPropExchange`, denetimin özelliklerini seri hale getirmek veya bir denetimin yükleme veya oluşturma sırasında denetimin özelliklerini başlatmak için kullanılabilir. `CPropExchange` `ExchangeProp` ve `ExchangeFontProp` üye işlevleri, özellikleri depolayıp farklı medyadan yükleyebilir.
 
-Kullanma `CPropExchange`hakkında daha fazla bilgi için bkz [. MFC ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
+`CPropExchange`kullanma hakkında daha fazla bilgi için [MFC ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -108,7 +108,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde, *phBlob*tarafından başvurulan değişkene göre okunurdur veya yazılır. *HBlobDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirilmesi başarısız olursa kullanılır.
 
-, Ve `CArchivePropExchange::ExchangeBlobProp` işlevleri`CPropsetPropExchange::ExchangeBlobProp` bu saf sanal işlevi geçersiz kılar. `CResetPropExchange::ExchangeBlobProp`
+`CArchivePropExchange::ExchangeBlobProp`, `CResetPropExchange::ExchangeBlobProp`ve `CPropsetPropExchange::ExchangeBlobProp` işlevleri bu saf sanal işlevi geçersiz kılar.
 
 ##  <a name="exchangefontprop"></a>CPropExchange:: ExchangeFontProp
 
@@ -134,7 +134,7 @@ Yazı tipi özelliğini içeren bir [Cfontheski](../../mfc/reference/cfontholder
 *Pfontdispambtıı* null olduğunda Font özelliğinin varsayılan durumunu başlatma değerlerini Içeren [fontdesc](/windows/win32/api/olectl/ns-olectl-fontdesc) yapısına yönelik bir işaretçi.
 
 *Pfontdispambun*<br/>
-Yazı tipi özelliğinin varsayılan `IFontDisp` durumunu başlatmak için kullanılacak yazı tipinin arabirimine yönelik bir işaretçi.
+Yazı tipi özelliğinin varsayılan durumunu başlatmak için kullanılacak yazı tipinin `IFontDisp` arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -142,9 +142,9 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazı tipi özelliği ortamdan denetime yükleniyorsa, yazı tipinin özellikleri ortamdan alınır ve `CFontHolder` *yazı tipi* tarafından başvurulan nesne bunlar ile başlatılır. Yazı tipi özelliği depolanıyorsa, yazı tipi nesnesindeki Özellikler ortama yazılır.
+Yazı tipi özelliği ortamdan denetime yükleniyorsa, yazı tipinin özellikleri ortamdan alınır ve *yazı tipi* tarafından başvurulan `CFontHolder` nesnesi bunlar ile başlatılır. Yazı tipi özelliği depolanıyorsa, yazı tipi nesnesindeki Özellikler ortama yazılır.
 
-, Ve `CArchivePropExchange::ExchangeFontProp` işlevleri`CPropsetPropExchange::ExchangeFontProp` bu saf sanal işlevi geçersiz kılar. `CResetPropExchange::ExchangeFontProp`
+`CArchivePropExchange::ExchangeFontProp`, `CResetPropExchange::ExchangeFontProp`ve `CPropsetPropExchange::ExchangeFontProp` işlevleri bu saf sanal işlevi geçersiz kılar.
 
 ##  <a name="exchangepersistentprop"></a>CPropExchange:: ExchangePersistentProp
 
@@ -164,7 +164,7 @@ virtual BOOL ExchangePersistentProp(
 Değiştirilen özelliğin adı.
 
 *ppUnk*<br/>
-Özelliğin `IUnknown` arabirimine bir işaretçi içeren bir değişken işaretçisi (Bu değişken, genellikle sınıfınızın bir üyesidir).
+Özelliğin `IUnknown` arabirimine bir işaretçi içeren bir değişken işaretçisi (Bu değişken genellikle sınıfınızın bir üyesidir).
 
 *'si*<br/>
 Denetimin kullanacağı özelliğin arabirim KIMLIĞI.
@@ -180,7 +180,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özellik dosyadan denetime yükleniyorsa, özelliği dosyasından oluşturulur ve başlatılır. Özellik depolanıyorsa, değeri dosyasına yazılır.
 
-, Ve `CArchivePropExchange::ExchangePersistentProp` işlevleri`CPropsetPropExchange::ExchangePersistentProp` bu saf sanal işlevi geçersiz kılar. `CResetPropExchange::ExchangePersistentProp`
+`CArchivePropExchange::ExchangePersistentProp`, `CResetPropExchange::ExchangePersistentProp`ve `CPropsetPropExchange::ExchangePersistentProp` işlevleri bu saf sanal işlevi geçersiz kılar.
 
 ##  <a name="exchangeprop"></a>CPropExchange:: ExchangeProp
 
@@ -208,7 +208,7 @@ Değiştirilen özelliğin türünü belirten bir sembol. Olası değerler şunl
 |VT_I4|**long**|
 |VT_BOOL|**BOOL**|
 |VT_BSTR|`CString`|
-|VT_CY|**LI**|
+|VT_CY|**Lı**|
 |VT_R4|**float**|
 |VT_R8|**double**|
 
@@ -226,7 +226,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliği ortamdan denetime yüklenemıyorsa, özelliğin değeri ortamdan alınır ve *pvProp*tarafından işaret edilen nesnede depolanır. Özellik ortamda depolanıyorsa, *pvProp* tarafından işaret edilen nesnenin değeri ortama yazılır.
 
-, Ve `CArchivePropExchange::ExchangeProp` işlevleri`CPropsetPropExchange::ExchangeProp` bu saf sanal işlevi geçersiz kılar. `CResetPropExchange::ExchangeProp`
+`CArchivePropExchange::ExchangeProp`, `CResetPropExchange::ExchangeProp`ve `CPropsetPropExchange::ExchangeProp` işlevleri bu saf sanal işlevi geçersiz kılar.
 
 ##  <a name="exchangeversion"></a>CPropExchange:: ExchangeVersion
 
@@ -293,4 +293,4 @@ BOOL IsLoading();
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)
+[Coelcontrol::D oPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)

@@ -819,11 +819,11 @@ helpviewer_keywords:
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
 ms.openlocfilehash: 1f0338d827a9ec92747169ff2682e6d47485e4c2
-ms.sourcegitcommit: 21e168731b8fe0eaff18f070cee5d54aa5782c2d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567892"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855595"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 

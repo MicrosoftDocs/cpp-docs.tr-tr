@@ -14,11 +14,11 @@ helpviewer_keywords:
 - structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
 ms.openlocfilehash: 93dd79b755f79dcb4857c1b1c4856362b0bd45dd
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142629"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884124"
 ---
 # <a name="structured_task_group-class"></a>structured_task_group Sınıfı
 
@@ -34,14 +34,14 @@ class structured_task_group;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[structured_task_group](#ctor)|Fazla Yüklendi. Yeni bir `structured_task_group` nesnesi oluşturur.|
 |[~ structured_task_group yok edici](#dtor)|`structured_task_group` nesnesini yok eder. Bir özel durum nedeniyle yığın geri sarma sonucu olarak yürütülemediği sürece, yıkıcı yürütmeden önce nesnedeki `wait` veya `run_and_wait` yöntemini çağırmanız bekleniyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[İptal](#cancel)|Bu görev grubunda kök olarak çalışan çalışmanın alt ağacını iptal etmeye yönelik en iyi çabayı sağlar. Görev grubunda zamanlanan her görev, mümkünse geçişli olarak iptal edilir.|
 |[is_canceling](#is_canceling)|Görev grubunun şu anda bir iptal etme ortatına bağlı olup olmadığına bakılmaksızın çağrıyı bilgilendirir. Bu, `cancel` yönteminin `structured_task_group` nesnesi üzerinde çağrıldığı anlamına gelmez (Bu nedenle, bu yöntemi **true**döndürecek şekilde nitelendirir). `structured_task_group` nesnenin satır içi yürütülmesi ve iş ağacında daha fazla görev grubunun iptal edilmesi durumunda olabilir. Bu gibi durumlarda, İptalin bu `structured_task_group` nesne üzerinden akacağı zamanın önüne göre belirleyebildiği gibi durumlarda, **true değeri** de döndürülür.|

@@ -15,11 +15,11 @@ helpviewer_keywords:
 - critical_section class
 ms.assetid: fa3c89d6-be5d-4d1b-bddb-8232814e6cf6
 ms.openlocfilehash: aef3ae6100133374cb89098f118c447effafd840
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143081"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867179"
 ---
 # <a name="critical_section-class"></a>critical_section Sınıfı
 
@@ -35,26 +35,26 @@ class critical_section;
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`native_handle_type`|`critical_section` nesnesine bir başvuru.|
 
 ### <a name="public-classes"></a>Ortak sınıflar
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[critical_section:: scoped_lock sınıfı](#critical_section__scoped_lock_class)|Bir `critical_section` nesnesi için özel durum güvenli bir OYıı sarmalayıcısı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[critical_section](#ctor)|Yeni bir kritik bölüm oluşturur.|
 |[~ critical_section yok edici](#dtor)|Kritik bir bölümü yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[lock](#lock)|Bu kritik bölümü elde edin.|
 |[native_handle](#native_handle)|Varsa, platforma özgü yerel bir tanıtıcı döndürür.|

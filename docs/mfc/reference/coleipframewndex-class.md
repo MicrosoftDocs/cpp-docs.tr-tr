@@ -95,16 +95,16 @@ helpviewer_keywords:
 - COleIPFrameWndEx [MFC], InitUserToobars
 ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
 ms.openlocfilehash: 71c0db8d059ede0016caf7ceb72c7f3ab7da2718
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504147"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78883946"
 ---
 # <a name="coleipframewndex-class"></a>Cotaipframewndex sınıfı
 
-Sınıfı `COleIPFrameWndEx` , MFC 'yi destekleyen bir OLE kapsayıcısı uygular. `COleIPFrameWndEx` [Copaipframewnd](../../mfc/reference/coleipframewnd-class.md)sınıfından türetmeniz yerine, uygulamanız için sınıf içi çerçeve pencere sınıfını türemeniz gerekir.
-Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
+`COleIPFrameWndEx` sınıfı, MFC 'yi destekleyen bir OLE kapsayıcısı uygular. [Copaipframewnd](../../mfc/reference/coleipframewnd-class.md)sınıfından türeterek, uygulamanız için `COleIPFrameWndEx` sınıfından, yerinde çerçeve pencere sınıfını türetmeniz gerekir.
+Daha fazla ayrıntı için, Visual Studio yüklemenizin **VC\\atlmfc\\src\\MFC** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -116,7 +116,7 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Cotaipframewndex:: AddDockSite](#adddocksite)||
 |[Cotaipframewndex:: AddPane](#addpane)||
@@ -137,16 +137,16 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 |[Cotaipframewndex:: Gettearoffbar çubukları](#gettearoffbars)|Bir ayırma durumunda olan bölme nesnelerinin bir listesini döndürür.|
 |[Cotaipframewndex:: GetToolbarButtonToolTipText](#gettoolbarbuttontooltiptext)|Düğme için araç ipucu görüntülenmeden önce Framework tarafından çağırılır.|
 |[Cotaipframewndex:: InsertPane](#insertpane)||
-|[Cotaipframewndex:: ısmenubaravailable](#ismenubaravailable)|Menü çubuğu nesnesinin `NULL`işaretçisinin olup olmadığını belirler.|
+|[Cotaipframewndex:: ısmenubaravailable](#ismenubaravailable)|Menü çubuğu nesnesinin işaretçisinin `NULL`olup olmadığını belirler.|
 |[Copaipframewndex:: Ispointyaklaştığında Docksite](#ispointneardocksite)||
-|[Cotaipframewndex:: LoadFrame](#loadframe)|(Geçersiz `COleIPFrameWnd::LoadFrame`kılmalar.)|
+|[Cotaipframewndex:: LoadFrame](#loadframe)|(`COleIPFrameWnd::LoadFrame`geçersiz kılar.)|
 |[Cotaipframewndex:: OnCloseDockingPane](#onclosedockingpane)||
 |[Cotaipframewndex:: OnCloseMiniFrame](#oncloseminiframe)||
-|[Cotaipframewndex:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü bir WM_DESTROY iletisini işlediğinde Framework tarafından çağırılır.|
-|[Cotaipframewndex:: OnCmdMsg](#oncmdmsg)|(Geçersiz `CFrameWnd::OnCmdMsg`kılmalar.)|
+|[Cotaipframewndex:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.|
+|[Cotaipframewndex:: OnCmdMsg](#oncmdmsg)|(`CFrameWnd::OnCmdMsg`geçersiz kılar.)|
 |[Cotaipframewndex:: OnDrawMenuImage](#ondrawmenuimage)|Bir menü öğesiyle ilişkili görüntü çizildiğinde Framework tarafından çağırılır.|
-|[Cotaipframewndex:: OnDrawMenuLogo](#ondrawmenulogo)|Bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)NESNESI bir WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.|
-|[Cotaipframewndex:: OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesnesi WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.|
+|[Cotaipframewndex:: OnDrawMenuLogo](#ondrawmenulogo)|Bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)nesnesi bir WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.|
+|[Cotaipframewndex:: OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesnesi WM_NCHITTEST ileti işlediğinde Framework tarafından çağırılır.|
 |[Cotaipframewndex:: OnMoveMiniFrame](#onmoveminiframe)||
 |[Cotaipframewndex:: Onsetönizleme modu](#onsetpreviewmode)|Bu üye işlevini, uygulamanın ana çerçeve penceresini yazdırma önizleme modundan ve dışına ayarlamak için çağırın. ( [CFrameWnd:: Onsetönizleme modunu](../../mfc/reference/cframewnd-class.md#onsetpreviewmode)geçersiz kılar.)|
 |[Cotaipframewndex:: OnShowCustomizePane](#onshowcustomizepane)||
@@ -154,8 +154,8 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 |[Cotaipframewndex:: OnShowPopupMenu](#onshowpopupmenu)|Bir açılır menü etkinleştirildiğinde Framework tarafından çağırılır.|
 |[Cotaipframewndex:: OnTearOffMenu](#ontearoffmenu)|Bir yırma çubuğu olan bir menü etkinleştirildiğinde Framework tarafından çağırılır.|
 |[Cotaipframewndex::P aneFromPoint](#panefrompoint)||
-|[Cotaipframewndex::P reTranslateMessage](#pretranslatemessage)|(Geçersiz `COleIPFrameWnd::PreTranslateMessage`kılmalar.)|
-|[Cotaipframewndex:: RecalcLayout](#recalclayout)|(Geçersiz `COleIPFrameWnd::RecalcLayout`kılmalar.)|
+|[Cotaipframewndex::P reTranslateMessage](#pretranslatemessage)|(`COleIPFrameWnd::PreTranslateMessage`geçersiz kılar.)|
+|[Cotaipframewndex:: RecalcLayout](#recalclayout)|(`COleIPFrameWnd::RecalcLayout`geçersiz kılar.)|
 |[Cotaipframewndex:: RemovePaneFromDockManager](#removepanefromdockmanager)||
 |[Cotaipframewndex:: SetDockState](#setdockstate)|Belirtilen sabitleme durumunu çerçeve penceresine ait bölmelere uygular.|
 |[Cotaipframewndex:: SetupToolbarMenu](#setuptoolbarmenu)|Bir araç çubuğu nesnesini, sözde öğeleri arayarak ve bunları belirtilen kullanıcı tanımlı öğelerle değiştirerek değiştirir.|
@@ -164,13 +164,13 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Cotaipframewndex:: ınitusertoobars](#initusertoobars)|Çerçeveye, Kullanıcı tanımlı araç çubuklarına atanan denetim kimliği aralığını başlatmasını söyler.|
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `COleIPFrameWndEx` sınıfının bir örneğinin nasıl kodlanacağını ve kendi yöntemlerini nasıl kullanacağınızı gösterir. Örnek, yöntemin, `OnDestory` yöntemin, `RecalcLayout` yöntemin ve `CalcWindowRect` yöntemin nasıl devralınacağını `RepositionFrame` gösterir. Bu kod parçacığı, [sözcük paneli örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `COleIPFrameWndEx` sınıfının bir örneğinin nasıl kodlanacağını ve kendi yöntemlerini nasıl kullanacağınızı gösterir. Örnek, `OnDestory` yönteminin, `RepositionFrame` yönteminin, `RecalcLayout` yönteminin ve `CalcWindowRect` yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [sözcük paneli örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_WordPad#1](../../mfc/reference/codesnippet/cpp/coleipframewndex-class_1.cpp)]
 
@@ -270,7 +270,7 @@ BOOL DockPaneLeftOf(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok bölme nesnesini önceden tanımlanmış bir sırada yerleştirmek için bu yöntemi çağırın. Bu yöntem, *pLeftOf*tarafından belirtilen bölmenin sol tarafında bulunan BBAR tarafından belirtilen bölmeyi sağlar.
+Birden çok bölme nesnesini önceden tanımlanmış bir sırada yerleştirmek için bu yöntemi çağırın. Bu yöntem, *pLeftOf*tarafından belirtilen bölmenin sol tarafında bulunan *BBAR* tarafından belirtilen bölmeyi sağlar.
 
 ##  <a name="enableautohidepanes"></a>Copaipframewndex:: Enableoto Hidebölmeleri
 
@@ -363,7 +363,7 @@ Menünün kaynak KIMLIĞINI veya çerçeve penceresinde menü çubuğu yoksa 0 d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve penceresi, çağırarak `COleIPFrameWndEx::LoadFrame`menü kaynağını yüklerken belirtilen kaynak kimliğini almak için bu işlevi çağırın.
+Çerçeve penceresi `COleIPFrameWndEx::LoadFrame`çağırarak menü kaynağını yüklerken belirtilen kaynak KIMLIĞINI almak için bu işlevi çağırın.
 
 ##  <a name="getdockframe"></a>Cotaipframewndex:: GetDockFrame
 
@@ -409,7 +409,7 @@ Menü çubuğu nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`COleIPFrameWndEx` Nesneye ait menü çubuğu nesnesine bir işaretçi almak için bu işlevi kullanın.
+`COleIPFrameWndEx` nesnesine ait menü çubuğu nesnesine bir işaretçi almak için bu işlevi kullanın.
 
 ##  <a name="getpane"></a>Cotaipframewndex:: GetPane
 
@@ -435,11 +435,11 @@ const CObList& GetTearOffBars() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CObList` [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)tarafından türetilen nesnelere işaretçiler koleksiyonu içeren bir nesnesine başvuru.
+[CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)tarafından türetilen nesnelere işaretçiler koleksiyonu içeren `CObList` nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnesi, çıkarma menülerinin koleksiyonunu [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)tarafından türetilen nesnelerin bir listesi olarak tutar. `COleIPFrameWndEx` Bu listeye bir başvuru almak için bu yöntemi kullanın.
+`COleIPFrameWndEx` nesnesi, ayırma menülerinin koleksiyonunu [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)tarafından türetilen nesnelerin bir listesi olarak tutar. Bu listeye bir başvuru almak için bu yöntemi kullanın.
 
 ##  <a name="gettoolbarbuttontooltiptext"></a>Cotaipframewndex:: GetToolbarButtonToolTipText
 
@@ -598,7 +598,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 
 ##  <a name="onclosepopupmenu"></a>Cotaipframewndex:: OnClosePopupMenu
 
-Etkin bir açılır menü bir WM_DESTROY iletisini işlediğinde Framework tarafından çağırılır.
+Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
@@ -611,7 +611,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCPopupMenu` Nesneleri wm_destroy iletileri işlediklerinde bildirimleri almak için bu yöntemi geçersiz kılın.
+WM_DESTROY iletilerini işlediklerinde `CMFCPopupMenu` nesnelerinden bildirimleri almak için bu yöntemi geçersiz kılın.
 
 ##  <a name="oncmdmsg"></a>Cotaipframewndex:: OnCmdMsg
 
@@ -662,11 +662,11 @@ Varsayılan uygulama hiçbir şey yapmaz ve 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilmiş nesnenin sahip olduğu `COleIPFrameWndEx`menü çubuğuna ait menü öğeleri için görüntü çizimini özelleştirmek istiyorsanız bu yöntemi geçersiz kılın.
+`COleIPFrameWndEx`türetilmiş nesnenin sahip olduğu menü çubuğuna ait menü öğeleri için görüntü çizimini özelleştirmek istiyorsanız bu yöntemi geçersiz kılın.
 
 ##  <a name="ondrawmenulogo"></a>Cotaipframewndex:: OnDrawMenuLogo
 
-Bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)NESNESI bir WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.
+Bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)nesnesi bir WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnDrawMenuLogo(
@@ -688,11 +688,11 @@ virtual void OnDrawMenuLogo(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açılan menüde, `COleIPFrameWndEx`türetilmiş nesnenin sahip olduğu menü çubuğuyla ilişkili bir logo göstermek için bu yöntemi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.
+`COleIPFrameWndEx`türetilmiş nesnenin sahip olduğu menü çubuğuyla ilişkili açılır menüde bir logo göstermek için bu yöntemi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.
 
 ##  <a name="onmenubuttontoolhittest"></a>Cotaipframewndex:: OnMenuButtonToolHitTest
 
-Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)NESNESI bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.
+Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesnesi bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnMenuButtonToolHitTest(
@@ -704,7 +704,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 
 [in] bir menü düğmesine yönelik pButton Işaretçisi.
 
-[out] bir `TOOLINFO` yapıya olan PTI işaretçisi.
+[out] `TOOLINFO` yapısına yönelik PTI Işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -911,7 +911,7 @@ void SetDockState(const CDockState& state);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`COleIPFrameWndEx` Nesneye ait bölmeler için yeni bir yerleştirme durumu belirtmek için bu işlevi kullanın.
+`COleIPFrameWndEx` nesnesine ait bölmeler için yeni bir yerleştirme durumu belirtmek için bu işlevi kullanın.
 
 ##  <a name="setuptoolbarmenu"></a>Cotaipframewndex:: SetupToolbarMenu
 

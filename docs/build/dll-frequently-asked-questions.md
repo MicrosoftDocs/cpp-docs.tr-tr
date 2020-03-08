@@ -1,5 +1,5 @@
 ---
-title: MFC DLL sık sorulan sorular
+title: MFC DLL sıkça sorulan sorular
 ms.date: 05/06/2019
 helpviewer_keywords:
 - troubleshooting [C++], DLLs
@@ -7,62 +7,62 @@ helpviewer_keywords:
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
 ms.openlocfilehash: 9108aaf3fcface847b0391455a2aecd4d45658c4
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220939"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856956"
 ---
 # <a name="dll-frequently-asked-questions"></a>Sıkça Sorulan DLL Soruları
 
-Aşağıda, DLL'leri hakkında bazı sık sorulan sorular (SSS) istenir.
+Aşağıda, dll 'Ler hakkında sık sorulan bazı sorular (SSS) verilmiştir.
 
-- [MFC DLL çoklu iş parçacığı oluşturabilir miyim?](#mfc_multithreaded_1)
+- [Bir MFC DLL birden çok iş parçacığı oluşturabilir mi?](#mfc_multithreaded_1)
 
-- [Çok iş parçacıklı uygulamada farklı iş parçacıkları MFC DLL'ine erişebilir mi?](#mfc_multithreaded_2)
+- [Çok iş parçacıklı bir uygulama farklı iş parçacıklarında bir MFC DLL 'sine erişebilmi?](#mfc_multithreaded_2)
 
-- [MFC sınıfları veya bir MFC DLL'inde kullanılamayan işlevleri var mıdır?](#mfc_prohibited_classes)
+- [MFC DLL 'de kullanılamayan MFC sınıfları veya işlevleri var mı?](#mfc_prohibited_classes)
 
-- [Yüklenirken istemci uygulamanın performansını artırmak için hangi iyileştirme tekniklerini kullanmalıyım?](#mfc_optimization)
+- [Yükleme sırasında istemci uygulamasının performansını iyileştirmek için hangi iyileştirme tekniklerini kullanmalıyım?](#mfc_optimization)
 
-- [My Normal MFC DLL içinde bir bellek sızıntısı vardır, ancak kodum doğru görünüyor. Bellek sızıntısının yerini nasıl bulabilirim?](#memory_leak)
+- [Normal MFC DLL 'imde bellek sızıntısı var, ancak kodum iyi görünüyor. Bellek sızıntısını nasıl bulabilirim?](#memory_leak)
 
-## <a name="mfc_multithreaded_1"></a> MFC DLL çoklu iş parçacığı oluşturabilir miyim?
+## <a name="mfc_multithreaded_1"></a>Bir MFC DLL birden çok iş parçacığı oluşturabilir mi?
 
-Win32 iş parçacığı yerel depolama (TLS) işlevleri gibi kullandığı sürece başlatma sırasında bir MFC DLL güvenli bir şekilde birden çok iş parçacığı oluşturabilirsiniz dışında **TlsAlloc** iş parçacığı yerel depolama alanı ayrılamadı. Ancak, MFC DLL kullanıyorsa **gt;__declspec(thread)** iş parçacığında yerel depolama ayırmak için istemci uygulaması örtük olarak DLL'ye bağlanmalıdır. İstemci uygulaması açıkça DLL çağrısı bağlar, **LoadLibrary** başarıyla DLL yüklenmez. DLL'lerde thread-local değişkenleri hakkında daha fazla bilgi için bkz. [iş parçacığı](../cpp/thread.md).
+Başlatma işlemi haricinde, bir MFC DLL, iş parçacığı yerel depolama alanı ayırmak için **TlsAlloc** gibi Win32 iş parçacığı yerel depolama (TLS) işlevlerini kullandığı sürece güvenli bir şekilde birden çok iş parçacığı oluşturabilir. Ancak, bir MFC DLL iş parçacığı yerel depolama alanı ayırmak için **__declspec (iş parçacığı)** kullanıyorsa, ISTEMCI uygulamanın DLL 'ye örtük olarak bağlanması gerekir. İstemci uygulaması açıkça DLL 'ye bağlanıyorsa, **LoadLibrary** 'e YAPıLAN çağrı dll 'yi başarıyla yüklemez. Dll 'Lerdeki iş parçacığı yerel değişkenleri hakkında daha fazla bilgi için bkz. [thread](../cpp/thread.md).
 
-Başlatma sırasında yeni bir MFC iş parçacığı oluşturan bir MFC DLL, bir uygulama tarafından yüklendiğinde yanıt vermeyi durdurur. Her bir iş parçacığı çağırarak oluşturulduğunda bu içerir `AfxBeginThread` veya `CWinThread::CreateThread` içinde:
+Başlangıç sırasında yeni bir MFC iş parçacığı oluşturan MFC DLL 'SI, bir uygulama tarafından yüklendiğinde yanıt vermeyi durdurur. Bu, `AfxBeginThread` veya içinde `CWinThread::CreateThread` çağırarak bir iş parçacığının oluşturulduğu her seferinde oluşur:
 
-- `InitInstance` , Bir `CWinApp`-Normal MFC DLL'SİNİN türetilmiş.
+- Normal bir MFC DLL 'de `CWinApp`türetilmiş bir nesnenin `InitInstance`.
 
-- Sağlanan `DllMain` veya **RawDllMain** Normal MFC DLL'SİNİN işlevi.
+- Normal bir MFC DLL 'de sağlanan bir `DllMain` veya **RawDllMain** işlevi.
 
-- Sağlanan `DllMain` veya **RawDllMain** bir MFC uzantılı DLL işlevi.
+- Bir MFC uzantı DLL dosyasında sağlanan bir `DllMain` veya **RawDllMain** işlevi.
 
-## <a name="mfc_multithreaded_2"></a> Çok iş parçacıklı uygulamada farklı iş parçacıkları MFC DLL'ine erişebilir mi?
+## <a name="mfc_multithreaded_2"></a>Çok iş parçacıklı bir uygulama farklı iş parçacıklarında bir MFC DLL 'sine erişebilmi?
 
-Çok iş parçacıklı uygulamalar farklı iş parçacıklarından dinamik olarak MFC'ye bağlanan normal MFC DLL'leri ve MFC uzantısı DLL'leri erişebilirsiniz. Uygulamanın, uygulama içinde oluşturulan birden çok iş parçacığından MFC DLL'lerine Normal MFC DLL'leri erişebilirsiniz.
+Çok iş parçacıklı uygulamalar, farklı iş parçacıklarından MFC ve MFC uzantı dll 'Lerine dinamik olarak bağlanan normal MFC DLL 'Lerine erişebilir. Uygulama, uygulamada oluşturulan birden çok iş parçacığından MFC 'ye statik olarak bağlanan normal MFC DLL 'Lerine erişebilir.
 
-## <a name="mfc_prohibited_classes"></a> MFC sınıfları veya bir MFC DLL'inde kullanılamayan işlevleri var mıdır?
+## <a name="mfc_prohibited_classes"></a>MFC DLL 'de kullanılamayan MFC sınıfları veya işlevleri var mı?
 
-Uzantı DLL'leri kullanma `CWinApp`-derived class istemci uygulaması. Bunlar, kendi olmamalıdır `CWinApp`-türetilmiş sınıf.
+Uzantı dll 'Leri istemci uygulamanın `CWinApp`türetilmiş sınıfını kullanır. Kendi `CWinApp`türetilmiş sınıfına sahip olmamalıdır.
 
-Normal MFC DLL'leri olmalıdır bir `CWinApp`-türetilmiş sınıf ve o uygulama sınıfın tek bir nesne gibi bir MFC uygulaması. Farklı `CWinApp` uygulama nesnesinin `CWinApp` DLL nesnesinin bir ana ileti pompası sahip değil.
+Normal MFC DLL 'Lerinin, bir MFC uygulaması gibi `CWinApp`türetilmiş bir sınıfı ve bu uygulama sınıfının tek bir nesnesi olmalıdır. Bir uygulamanın `CWinApp` nesnesinden farklı olarak, DLL 'nin `CWinApp` nesnesinin ana ileti göndericisi yoktur.
 
-Dikkat edin çünkü `CWinApp::Run` mekanizması, bir DLL için geçerli değildir, uygulamanın ana ileti göndericisi. DLL kalıcı olmayan iletişim kutuları açılır ya da kendi ana penceresi varsa, uygulamanın ana ileti pompası sırayla çağırır DLL tarafından dışarı aktarılan bir yordam çağırmalıdır `CWinApp::PreTranslateMessage` DLL'nin uygulama nesnesinin üye işlevi.
+`CWinApp::Run` mekanizması DLL 'ye uygulanmadığından, uygulamanın ana ileti göndericisinin sahibi olduğundan emin olmak. DLL kalıcı olmayan iletişim kutuları açarsa veya kendi ana çerçeve penceresine sahipse, uygulamanın ana ileti göndericisinin DLL tarafından dışarıya aktarılmış bir yordamı çağırması gerekir ve bu da DLL 'nin uygulama nesnesinin `CWinApp::PreTranslateMessage` üye işlevini çağırır.
 
-## <a name="mfc_optimization"></a> Hangi iyileştirme tekniklerini istemci uygulaması geliştirmek için kullanmalıyım&#39;yüklenirken s performans?
+## <a name="mfc_optimization"></a>Yükleme sırasında istemci uygulama&#39;performansını iyileştirmek için hangi iyileştirme tekniklerini kullanmalıyım?
 
-DLL'niz MFC normal değiştirilmesi, statik olarak bağlı normal MFC DLL'SİNİN ise dinamik olarak MFC'ye bağlı bir MFC DLL dosyasının boyutunu azaltır.
+DLL 'niz MFC 'ye statik olarak bağlanan normal bir MFC DLL ise, bunu MFC 'ye dinamik olarak bağlanan normal bir MFC DLL ile değiştirmek dosya boyutunu azaltır.
 
-DLL'de dışa aktarılan işlevleri çok sayıda varsa işlevleri dışarı aktarmak için bir .def dosyası kullanmanıza (kullanmak yerine **__declspec(dllexport)**) ve .def dosyası kullanmanıza [NONAME özniteliği](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) her işlevi dışa. NONAME özniteliği yalnızca sıralı değerlerine ve dosya boyutunu azaltır DLL'nin dışa aktarma tablosunda, depolanacak işlevi adı değil neden olur.
+DLL 'de çok sayıda dışarı aktarılmış işlev varsa, işlevleri dışarı aktarmak için bir. def dosyası kullanın ( **__declspec (dllexport)** kullanmak yerine) ve her dışa aktarılmış işlevde. def dosya [noname özniteliğini](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) kullanın. NONAME özniteliği, işlev adının DLL 'nin dışarı aktarma tablosunda depolanmasına ve dosya boyutunu azaltacak şekilde değil, yalnızca sıralı değer oluşmasına neden olur.
 
-Uygulama yüklendiğinde uygulama dolaylı olarak bağlantılı DLL'ler yüklenir. Yüklenirken performansını artırmak için farklı DLL'lere DLL bölmeyi deneyin. Bir DLL'e hemen sonra çağıran uygulamanız için gereken tüm işlevleri koyun ve bu DLL'ye örtük olarak bağlama çağıran uygulamanızı oluşturdunuz. Çağıran uygulama hemen gerekmeyen diğer işlevleri başka bir DLL içine yerleştirin ve sahip uygulamayı açıkça bağlanmak için bu DLL. Daha fazla bilgi için [çalıştırılabilir bir DLL'ye bağlandığı](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
+Uygulamaya örtük olarak bağlı olan DLL 'Ler, uygulama yüklendiğinde yüklenir. Yükleme sırasında performansı artırmak için DLL 'yi farklı dll 'Lere bölmek için deneyin. Çağıran uygulamanın bir DLL 'ye yükledikten hemen sonra ihtiyacı olan tüm işlevleri yerleştirin ve çağıran uygulamanın bu DLL 'ye örtülü olarak bağlantısını yapın. Çağıran uygulamanın başka bir DLL 'ye hemen gerek duymadığından diğer işlevleri ekleyin ve uygulamanın bu DLL 'ye açık bir şekilde bağlantı altına alın. Daha fazla bilgi için bkz. bir [yürütülebilir dosyayı dll 'ye bağlama](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
 
-## <a name="memory_leak"></a> Orada&#39;s my Normal MFC DLL'SİNİN ancak kodum bir bellek sızıntısı iyi görünüyor. Bellek sızıntısının yerini nasıl bulabilirim?
+## <a name="memory_leak"></a>Normal&#39;MFC DLL 'imde bellek sızıntısı var, ancak kodum iyi görünüyor. Bellek sızıntısını nasıl bulabilirim?
 
-Olası bir nedeni de bellek sızıntısı MFC ileti işleyicisi işlevler içinde kullanılan geçici nesneler oluşturmasıdır. MFC uygulamalarında, bu geçici nesneler otomatik olarak temizlenir `CWinApp::OnIdle()` iletilerini işleme arasında çağrılan işlev. Ancak, MFC dinamik bağlantı kitaplıklarını (DLL'ler) içinde `OnIdle()` işlevi otomatik olarak çağrılmaz. Sonuç olarak, geçici nesneler otomatik olarak temizlenir değil. Geçici nesneleri temizlemek için DLL'i açıkça çağırmalıdır `OnIdle(1)` düzenli aralıklarla.
+Bellek sızıntısının olası nedenlerinden biri, MFC 'nin ileti işleyici işlevleri içinde kullanılan geçici nesneler oluşturmasıdır. MFC uygulamalarında bu geçici nesneler, işleme iletileri arasında çağrılan `CWinApp::OnIdle()` işlevinde otomatik olarak temizlenir. Ancak, MFC dinamik bağlantı kitaplıkları (dll 'Ler) içinde `OnIdle()` işlevi otomatik olarak çağrılmaz. Sonuç olarak, geçici nesneler otomatik olarak temizlenmez. Geçici nesneleri temizlemek için DLL 'nin `OnIdle(1)` düzenli olarak açıkça çağırması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)

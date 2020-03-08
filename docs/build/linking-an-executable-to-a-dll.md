@@ -12,11 +12,11 @@ helpviewer_keywords:
 - loading DLLs [C++]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
 ms.openlocfilehash: 2f907fedcaaf9897749ee0eb6a7ea5a33e1af679
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821388"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856832"
 ---
 # <a name="link-an-executable-to-a-dll"></a>Bir yürütülebilir dosyayı DLL’ye bağlama
 

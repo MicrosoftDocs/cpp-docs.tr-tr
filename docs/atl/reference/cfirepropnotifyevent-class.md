@@ -12,11 +12,11 @@ helpviewer_keywords:
 - connection points [C++], notifying of events
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
 ms.openlocfilehash: 694127ceccc1d1b55e5da9abca799dff77dcfc60
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496947"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78864924"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
 
@@ -35,7 +35,7 @@ class CFirePropNotifyEvent
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CFirePropNotifyEvent:: FireOnChanged](#fireonchanged)|Se Kapsayıcının havuzuna bir denetim özelliği değiştiğini bildirir.|
 |[CFirePropNotifyEvent:: Fireonrequestedıt](#fireonrequestedit)|Se Kapsayıcının havuzuna bir denetim özelliğinin değiştirmek üzere olduğunu bildirir.|
@@ -44,7 +44,7 @@ class CFirePropNotifyEvent
 
 `CFirePropNotifyEvent`, kapsayıcının havuzuna bir denetim özelliğinin değiştiğini veya değiştirmek üzere olduğunu bildiren iki yöntem içerir.
 
-Denetiminizi uygulayan sınıf `IPropertyNotifySink`öğesinden türetildiyse `CFirePropNotifyEvent` , veya `FireOnChanged`çağırdığınızda `FireOnRequestEdit` yöntemler çağrılır. Denetim sınıfınız öğesinden `IPropertyNotifySink`türetilmediği takdirde, bu işlevlere yapılan çağrılar s_ok döndürür.
+Denetiminizi uygulayan sınıf `IPropertyNotifySink`türetildiyse, `FireOnRequestEdit` veya `FireOnChanged`çağırdığınızda `CFirePropNotifyEvent` yöntemleri çağrılır. Denetim sınıfınız `IPropertyNotifySink`türetilmediği takdirde, bu işlevlere yapılan çağrılar S_OK döndürür.
 
 Denetim oluşturma hakkında daha fazla bilgi için bkz. [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md).
 
@@ -63,9 +63,9 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 ### <a name="parameters"></a>Parametreler
 
 *pUnk dili*<br/>
-'ndaki `IUnknown` Bildirimi gönderen nesnenin işaretçisi.
+'ndaki Bildirimi gönderen nesnenin `IUnknown` işaretçisi.
 
-*dispID*<br/>
+*Dı*<br/>
 'ndaki Değiştirilen özelliğin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -87,9 +87,9 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 ### <a name="parameters"></a>Parametreler
 
 *pUnk dili*<br/>
-'ndaki `IUnknown` Bildirimi gönderen nesnenin işaretçisi.
+'ndaki Bildirimi gönderen nesnenin `IUnknown` işaretçisi.
 
-*dispID*<br/>
+*Dı*<br/>
 'ndaki Değiştirilecek özelliğin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri

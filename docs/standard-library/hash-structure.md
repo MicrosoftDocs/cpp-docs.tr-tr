@@ -5,15 +5,15 @@ f1_keywords:
 - typeindex/std::hash
 ms.assetid: e5a41202-ef3b-45d0-b3a7-4c2dbdc0487a
 ms.openlocfilehash: 4f73d1bfe7f3370d76b39b95f740a4d3a759b908
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687963"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876296"
 ---
 # <a name="hash-structure"></a>hash Yapısı
 
-Sınıf şablonu, yöntemini döndüren `val.hash_code()` olarak tanımlar. Yöntemi, [type_index](../standard-library/type-index-class.md) türündeki değerleri dizin değerlerinin dağıtımına eşlemek için kullanılan bir karma işlevi tanımlar.
+Sınıf şablonu, yöntemini döndüren `val.hash_code()`olarak tanımlar. Yöntemi, [type_index](../standard-library/type-index-class.md) türündeki değerleri dizin değerlerinin bir dağıtımına eşlemek için kullanılan bir karma işlevi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,4 +37,4 @@ template <> struct hash<error_condition>;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<typeindex >](../standard-library/typeindex.md)
+[\<typeındex >](../standard-library/typeindex.md)

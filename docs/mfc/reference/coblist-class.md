@@ -51,15 +51,15 @@ helpviewer_keywords:
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
 ms.openlocfilehash: 2fc3a3643c675394de555f1411030e278bcee775
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388247"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855332"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 
-Sipariş edilen listelerini listeler fSupports `CObject` işaretçileri erişilebilir sırayla veya işaretçinin değerine göre.
+, ardışık olmayan `CObject` işaretçilerin sıralı listesini sıralı olarak veya işaretçi değerine göre erişilebilir olarak destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,56 +71,56 @@ class CObList : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObList::CObList](#coblist)|İçin boş bir liste oluşturur `CObject` işaretçileri.|
+|[CObList:: CObList](#coblist)|`CObject` işaretçileri için boş bir liste oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObList::AddHead](#addhead)|Bir öğenin (veya başka bir listedeki tüm öğeleri) (yeni head sağlar) listenin başındaki ekler.|
-|[CObList::AddTail](#addtail)|Bir öğenin (veya başka bir listedeki tüm öğeleri) (yeni bir kuyruk sağlar) listesi kuyruğu için ekler.|
-|[CObList::Find](#find)|İşaretçi değeri tarafından belirtilen bir öğenin konumunu alır.|
-|[CObList::FindIndex](#findindex)|Sıfır tabanlı bir dizin tarafından belirtilen bir öğenin konumunu alır.|
-|[CObList::GetAt](#getat)|Öğesini, belirli bir konumda alır.|
-|[CObList::GetCount](#getcount)|Bu listedeki öğelerin sayısını döndürür.|
-|[CObList::GetHead](#gethead)|Head öğesi (boş olamaz) listesi döndürür.|
-|[CObList::GetHeadPosition](#getheadposition)|Head öğesi listesinin konumunu döndürür.|
-|[CObList::GetNext](#getnext)|Yineleme için sonraki öğeyi alır.|
-|[CObList::GetPrev](#getprev)|Yineleme için önceki öğeyi alır.|
-|[CObList::GetSize](#getsize)|Bu listedeki öğelerin sayısını döndürür.|
-|[CObList::GetTail](#gettail)|Kuyruk öğesini (boş olamaz) listesi döndürür.|
-|[CObList::GetTailPosition](#gettailposition)|Listenin tail öğenin konumunu döndürür.|
-|[CObList::InsertAfter](#insertafter)|Belirli bir pozisyon sonra yeni bir öğe ekler.|
-|[CObList::InsertBefore](#insertbefore)|Belirli bir pozisyon önce yeni bir öğe ekler.|
-|[CObList::IsEmpty](#isempty)|(Öğe yok) boş liste koşulu sınar.|
-|[CObList::RemoveAll](#removeall)|Bu listeden tüm öğeleri kaldırır.|
-|[CObList::RemoveAt](#removeat)|Belirtilen konuma göre bu listeden bir öğeyi kaldırır.|
-|[CObList::RemoveHead](#removehead)|Öğe listesinin başından kaldırır.|
-|[CObList::RemoveTail](#removetail)|Öğe listesinin kuyruğunu kaldırır.|
-|[CObList::SetAt](#setat)|Öğe, belirli bir konumda ayarlar.|
+|[CObList:: AddHead](#addhead)|Listenin baş bir bir öğesini (veya başka bir listedeki tüm öğeleri) ekler (yeni bir baş oluşturur).|
+|[CObList:: AddTail](#addtail)|Bir öğeyi (veya başka bir listedeki tüm öğeleri) listenin sonuna ekler (yeni bir kuyruk oluşturur).|
+|[CObList:: Find](#find)|İşaretçi değeri tarafından belirtilen öğenin konumunu alır.|
+|[CObList:: FindIndex](#findindex)|Sıfır tabanlı bir dizin tarafından belirtilen öğenin konumunu alır.|
+|[CObList:: GetAt](#getat)|Belirtilen konumdaki öğeyi alır.|
+|[CObList:: GetCount](#getcount)|Bu listedeki öğe sayısını döndürür.|
+|[CObList:: GetHead](#gethead)|Listenin baş öğesini döndürür (boş olamaz).|
+|[CObList:: GetHeadPosition](#getheadposition)|Listenin baş öğesinin konumunu döndürür.|
+|[CObList:: GetNext](#getnext)|Yineleme için bir sonraki öğeyi alır.|
+|[CObList:: Getöncekini](#getprev)|Yineleme için önceki öğeyi alır.|
+|[CObList:: GetSize](#getsize)|Bu listedeki öğe sayısını döndürür.|
+|[CObList:: GetTail](#gettail)|Listenin tail öğesini döndürür (boş olamaz).|
+|[CObList:: Getbir Position](#gettailposition)|Listenin tail öğesinin konumunu döndürür.|
+|[CObList:: InsertAfter](#insertafter)|Belirli bir konumdan sonra yeni bir öğe ekler.|
+|[CObList:: InsertBefore](#insertbefore)|Belirli bir konumdan önce yeni bir öğe ekler.|
+|[CObList:: IsEmpty](#isempty)|Boş liste koşulunu sınar (öğe yok).|
+|[CObList:: RemoveAll](#removeall)|Bu listedeki tüm öğeleri kaldırır.|
+|[CObList:: RemoveAt](#removeat)|Bu listeden, konuma göre belirtilen bir öğeyi kaldırır.|
+|[CObList:: RemoveHead](#removehead)|Öğeyi listenin Başndan kaldırır.|
+|[CObList:: RemoveTail](#removetail)|Öğeyi listenin tail öğesinden kaldırır.|
+|[CObList:: SetAt](#setat)|Belirtilen konumdaki öğeyi ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CObList` listeleri karakteriyle bağlantılı liste gibi davranır.
+`CObList` listeler, benzer şekilde bağlantılı listeler gibi davranır.
 
-KONUM türünde bir değişken listesi için bir anahtardır. Bir konumu değişkeni listesini sırayla geçiş için bir yineleyici olarak hem bir yerde tutmak için bir yer işareti olarak kullanabilirsiniz. Bir konum bir dizin aynı ancak değildir.
+POSITION türünde bir değişken, listenin bir anahtarıdır. Bir konum değişkenini hem bir yineleyici olarak hem de bir yeri tutacak bir yer işareti olarak çapraz bir şekilde gezmek için kullanabilirsiniz. Ancak bir konum bir dizinle aynı değildir.
 
-Öğe ekleme listesi sonunda, kuyruk ve bilinen bir konuma çok hızlı olması. Sıralı bir arama değeri veya dizin tarafından bir öğesini aramak gereklidir. Bu arama liste uzunsa yavaş olabilir.
+Öğe ekleme, kuyruklu ve bilinen bir konumda liste başıyla çok hızlıdır. Bir öğeyi değere veya dizine göre aramak için sıralı bir arama gerekir. Liste uzunsa bu arama yavaş olabilir.
 
-`CObList` Serileştirme ve alt öğeleri dökme desteklemek için ımplement_serıal makrosu içerir. Bir listesini, `CObject` işaretçiler veya aşırı yüklenmiş bir ekleme operatörü ile birlikte bir arşivden depolandığı `Serialize` her üye işlev `CObject` öğesi sırayla seri.
+`CObList`, öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu içerir. `CObject` işaretçileri listesi, aşırı yüklenmiş bir ekleme işleci veya `Serialize` member işlevi ile bir arşive depolanıyorsa, her bir `CObject` öğesi sırasıyla serileştirilir.
 
-Tek bir dökümü gerekiyorsa `CObject` listesindeki öğeleri, ayarlamalısınız döküm bağlam derinliğini 1 veya daha büyük.
+Listedeki ayrı `CObject` öğelerinin bir dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-Olduğunda bir `CObList` nesnesi silindiğinde veya ne zaman öğeleri kaldırılır, yalnızca `CObject` işaretçileri kaldırılır, nesneleri başvuruyor.
+`CObList` nesne silindiğinde veya öğeleri kaldırıldığında, başvurdukları nesneler değil yalnızca `CObject` işaretçileri kaldırılır.
 
-Kendi sınıfları türetebilirsiniz `CObList`. Öğesinden türetilen nesnelerine işaretçiler tutmak için tasarlanmış yeni liste sınıfınızı `CObject`, yeni veri üyeleri ve yeni üye işlevleri ekler. Herhangi bir ekleme izin verdiğinden sonuç listesini kesinlikle türü güvenli olmadığını unutmayın `CObject` işaretçi.
+`CObList`, kendi sınıflarınızı türetebilirsiniz. `CObject`türetilen nesnelerin işaretçilerini tutmak için tasarlanan yeni liste sınıfınız, yeni veri üyeleri ve yeni üye işlevleri ekler. `CObject` işaretçisinin eklenmesine izin verdiğinden, sonuçta elde edilen listenin kesinlikle güvenli olmadığını unutmayın.
 
 > [!NOTE]
->  Kullanmalısınız [ımplement_serıal](run-time-object-model-services.md#implement_serial) uygulanmasında bir liste serileştirmek istiyorsanız, türetilmiş sınıfınızın makrosu.
+>  Listeyi seri hale getirmek istiyorsanız türetilmiş sınıfınızın uygulamasındaki [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrosunu kullanmanız gerekir.
 
-Kullanma hakkında daha fazla bilgi için `CObList`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+`CObList`kullanma hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -130,11 +130,11 @@ Kullanma hakkında daha fazla bilgi için `CObList`, makaleye göz atın [koleks
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
-##  <a name="addhead"></a>  CObList::AddHead
+##  <a name="addhead"></a>CObList:: AddHead
 
-Bu listenin başındaki yeni bir öğe veya öğe listesi ekler.
+Bu listenin başından yeni bir öğe veya öğe listesi ekler.
 
 ```
 POSITION AddHead(CObject* newElement);
@@ -144,33 +144,33 @@ void AddHead(CObList* pNewList);
 ### <a name="parameters"></a>Parametreler
 
 *newElement*<br/>
-`CObject` Bu listeye eklenmesi için işaretçi.
+Bu listeye eklenecek `CObject` işaretçisi.
 
 *pNewList*<br/>
-Başka bir işaretçiye `CObList` listesi. Öğeleri *pNewList* bu listeye eklenir.
+Başka bir `CObList` listesine yönelik bir işaretçi. *PNewList* içindeki öğeler bu listeye eklenecektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sürümü, yeni eklenen öğenin KONUMUNU değerini döndürür.
+İlk sürüm, yeni takılan öğenin konum değerini döndürür.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::AddHead`.
+Aşağıdaki tabloda, `CObList::AddHead`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddHead (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddHead (CPtrList** <strong>\*</strong> `pNewList` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddHead (const CString &** `newElement` **);**<br /><br /> **Konum AddHead (LPCTSTR** `newElement` **);**<br /><br /> **void AddHead (CStringList** <strong>\*</strong> `pNewList` **);**|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste işlemi önce boş olabilir.
+İşlem öncesinde liste boş olabilir.
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#89](../../mfc/codesnippet/cpp/coblist-class_1.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 AddHead example: A CObList with 2 elements
@@ -178,9 +178,9 @@ a CAge at $44A8 40
 a CAge at $442A 21
 ```
 
-##  <a name="addtail"></a>  CObList::AddTail
+##  <a name="addtail"></a>CObList:: AddTail
 
-Bu liste kuyruğu için yeni bir öğe veya öğe listesi ekler.
+Bu listenin kuyruğu için yeni bir öğe veya öğe listesi ekler.
 
 ```
 POSITION AddTail(CObject* newElement);
@@ -190,33 +190,33 @@ void AddTail(CObList* pNewList);
 ### <a name="parameters"></a>Parametreler
 
 *newElement*<br/>
-`CObject` Bu listeye eklenmesi için işaretçi.
+Bu listeye eklenecek `CObject` işaretçisi.
 
 *pNewList*<br/>
-Başka bir işaretçiye `CObList` listesi. Öğeleri *pNewList* bu listeye eklenir.
+Başka bir `CObList` listesine yönelik bir işaretçi. *PNewList* içindeki öğeler bu listeye eklenecektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sürümü, yeni eklenen öğenin KONUMUNU değerini döndürür.
+İlk sürüm, yeni takılan öğenin konum değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste işlemi önce boş olabilir.
+İşlem öncesinde liste boş olabilir.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::AddTail`.
+Aşağıdaki tabloda, `CObList::AddTail`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddTail (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddTail (CPtrList** <strong>\*</strong> `pNewList` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddTail (const CString &** `newElement` **);**<br /><br /> **Konum AddTail (LPCTSTR** `newElement` **);**<br /><br /> **void AddTail (CStringList** <strong>\*</strong> `pNewList` **);**|
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#90](../../mfc/codesnippet/cpp/coblist-class_2.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 AddTail example: A CObList with 2 elements
@@ -224,9 +224,9 @@ a CAge at $444A 21
 a CAge at $4526 40
 ```
 
-##  <a name="coblist"></a>  CObList::CObList
+##  <a name="coblist"></a>CObList:: CObList
 
-Boş bir yapıları `CObject` işaretçi listesi.
+Boş bir `CObject` işaretçi listesi oluşturur.
 
 ```
 CObList(INT_PTR nBlockSize = 10);
@@ -239,28 +239,28 @@ Listeyi genişletmek için bellek ayırma ayrıntı düzeyi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste genişledikçe birimleri cinsinden ayrılan bellek *nBlockSize* girdileri. Bellek ayırma başarısız olursa bir `CMemoryException` oluşturulur.
+Liste büyüdükçe, bellek *nBlockSize* girdileri birimlerinde ayrılır. Bir bellek ayırma başarısız olursa, bir `CMemoryException` oluşturulur.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::CObList`.
+Aşağıdaki tabloda, `CObList::CObList`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**CPtrList( INT_PTR** `nBlockSize` **= 10 );**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**CStringList( INT_PTR** `nBlockSize` **= 10 );**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**CPtrList (INT_PTR** `nBlockSize` **= 10);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**CStringList (INT_PTR** `nBlockSize` **= 10);**|
 
 ### <a name="example"></a>Örnek
 
-  Bir listesi aşağıdadır `CObject`-türetilmiş sınıf `CAge` tüm koleksiyon örneklerde kullanılan:
+  Aşağıda, tüm koleksiyon örneklerinde kullanılan `CAge` `CObject`türetilmiş sınıfın bir listesi verilmiştir:
 
 [!code-cpp[NVC_MFCCollections#91](../../mfc/codesnippet/cpp/coblist-class_3.h)]
 
-Bir örnek aşağıdadır `CObList` Oluşturucu Kullanım:
+Aşağıda `CObList` Oluşturucu kullanımı örneği verilmiştir:
 
 [!code-cpp[NVC_MFCCollections#92](../../mfc/codesnippet/cpp/coblist-class_4.cpp)]
 
-##  <a name="find"></a>  CObList::Find
+##  <a name="find"></a>CObList:: Find
 
-Sıralı olarak ilk bulmak için liste arar `CObject` belirtilen eşleşen işaretçi `CObject` işaretçi.
+Belirtilen `CObject` işaretçiyle eşleşen ilk `CObject` işaretçiyi bulmak için listeyi sıralı olarak arar.
 
 ```
 POSITION Find(
@@ -271,35 +271,35 @@ POSITION Find(
 ### <a name="parameters"></a>Parametreler
 
 *searchValue*<br/>
-Bu listede bulunması nesne işaretçisi.
+Bu listede bulunan nesne işaretçisi.
 
 *startAfter*<br/>
 Arama için başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Nesne bulunmazsa null değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri; Nesne bulunamazsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretçi değerlerin karşılaştırılmasını Not, nesneleri içeriğini.
+İşaretçi değerlerinin, nesnelerin içeriği değil, karşılaştırıldığını unutmayın.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::Find`.
+Aşağıdaki tabloda, `CObList::Find`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Bul (void** <strong>\*</strong> `searchValue` **, konumu** `startAfter` **= NULL) const;**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum Bul (LPCTSTR** `searchValue` **, konumu** `startAfter` **= NULL) const;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum bulma (void** <strong>\*</strong> `searchValue` **, konum** `startAfter` **= null) sabit;**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum bulma (LPCTSTR** `searchValue` **, konum** `startAfter` **= null) sabit;**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#93](../../mfc/codesnippet/cpp/coblist-class_5.cpp)]
 
-##  <a name="findindex"></a>  CObList::FindIndex
+##  <a name="findindex"></a>CObList:: FindIndex
 
-Değerini kullanır *nIndex* listesine bir dizin olarak.
+Listede dizin olarak *nindex* değerini kullanır.
 
 ```
 POSITION FindIndex(INT_PTR nIndex) const;
@@ -307,33 +307,33 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Bulunacak liste öğesinin sıfır tabanlı dizini.
+*nDizin*<br/>
+Bulunamayan liste öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; NULL ise *nIndex* çok büyük. (Framework, bir onaylama işlemi oluşturur *nIndex* negatiftir.)
+Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri; *NIndex* çok büyükse null. (Framework, *nIndex* negatifse bir onaylama işlemi oluşturur.)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üzerinde durdurma listenin başındaki sıralı bir tarama başlatılır *n*öğedeki.
+Bu, *n*. öğesinde durdurulan, listenin başlarından sıralı bir tarama başlatır.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::FindIndex`.
+Aşağıdaki tabloda, `CObList::FindIndex`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**FindIndex konumu (INT_PTR** `nIndex` **) const;**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**FindIndex konumu (INT_PTR** `nIndex` **) const;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum FindIndex (INT_PTR** `nIndex` **) const;**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum FindIndex (INT_PTR** `nIndex` **) const;**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#94](../../mfc/codesnippet/cpp/coblist-class_6.cpp)]
 
-##  <a name="getat"></a>  CObList::GetAt
+##  <a name="getat"></a>CObList:: GetAt
 
-KONUM türünde bir değişken listesi için bir anahtardır.
+POSITION türünde bir değişken, listenin bir anahtarıdır.
 
 ```
 CObject*& GetAt(POSITION position);
@@ -342,33 +342,33 @@ const CObject*& GetAt(POSITION position) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
-Bir önceki tarafından döndürülen bir konum değeri `GetHeadPosition` veya `Find` üye işlev çağrısı.
+*yerine*<br/>
+Önceki bir `GetHeadPosition` veya `Find` üye işlev çağrısı tarafından döndürülen bir konum değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri açıklamasına bakın [GetHead](#gethead).
+[GetHead](#gethead)için dönüş değeri açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu dizin ile aynı değildir ve üzerinde bir konum değeri kendiniz çalışamaz. `GetAt` alır `CObject` işaretçi verilen bir konumu ile ilişkili.
+Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. `GetAt`, belirli bir konumla ilişkili `CObject` işaretçisini alır.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetAt`.
+Aşağıdaki tabloda, `CObList::GetAt`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetAt (konum** *konumu* **) const;**<br /><br /> **void\*& GetAt (konum** *konumu* **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetAt (konum** *konumu* **) const;**<br /><br /> **\*& GetAt (konum** *konumu* **) void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetAt (konum** *konumu* **) const;**<br /><br /> **CString & GetAt (konum** *konumu* **);**|
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [findIndex](#findindex).
+  [FindIndex](#findindex)örneğine bakın.
 
-##  <a name="getcount"></a>  CObList::GetCount
+##  <a name="getcount"></a>CObList:: GetCount
 
-Bu listedeki öğe sayısını alır.
+Bu listedeki öğelerin sayısını alır.
 
 ```
 INT_PTR GetCount() const;
@@ -378,22 +378,22 @@ INT_PTR GetCount() const;
 
 Öğe sayısını içeren bir tamsayı değeri.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetCount`.
+Aşağıdaki tabloda, `CObList::GetCount`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**INT_PTR GetCount( ) const;**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**INT_PTR GetCount( ) const;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**INT_PTR GetCount () const;**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**INT_PTR GetCount () const;**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#95](../../mfc/codesnippet/cpp/coblist-class_7.cpp)]
 
-##  <a name="gethead"></a>  CObList::GetHead
+##  <a name="gethead"></a>CObList:: GetHead
 
-Alır `CObject` head öğesi, bu listenin temsil eden bir işaretçi.
+Bu listenin baş öğesini temsil eden `CObject` işaretçisini alır.
 
 ```
 CObject*& GetHead();
@@ -402,32 +402,32 @@ const CObject*& GetHead() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin işaretçi üzerinden erişiliyorsa bir `const CObList`, ardından `GetHead` döndürür bir `CObject` işaretçi. Bu, yalnızca sağ tarafta Atama ifadesinin kullanılacak işlevi sağlar ve böylece liste değişikliklere karşı korur.
+Listeye bir `const CObList`işaretçi aracılığıyla erişiliyorsa `GetHead` `CObject` bir işaretçi döndürür. Bu, işlevin atama ifadesinin sağ tarafında kullanılmasına izin verir ve bu nedenle listenin değiştirilmesini önler.
 
-Listeden doğrudan veya bir işaretçiyle çok erişildiği durumda bir `CObList`, ardından `GetHead` bir başvuru döndürür bir `CObject` işaretçi. Bu işlev, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Listeye doğrudan veya bir `CObList`işaretçisi aracılığıyla erişiliyorsa `GetHead` `CObject` işaretçisine bir başvuru döndürür. Bu, işlevin atama ifadesinin her iki tarafında kullanılmasına izin verir ve bu nedenle liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `GetHead`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+`GetHead`çağrılmadan önce listenin boş olmadığından emin olmanız gerekir. Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](#isempty) kullanın.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetHead`.
+Aşağıdaki tabloda, `CObList::GetHead`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetHead () const; void\*& GetHead ();**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetHead () const; CString & GetHead ();**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
-Aşağıdaki örnek, kullanımını gösterir `GetHead` Atama ifadesinin sol tarafında.
+Aşağıdaki örnek, bir atama ifadesinin sol tarafında `GetHead` kullanımını gösterir.
 
 [!code-cpp[NVC_MFCCollections#96](../../mfc/codesnippet/cpp/coblist-class_8.cpp)]
 
-##  <a name="getheadposition"></a>  CObList::GetHeadPosition
+##  <a name="getheadposition"></a>CObList:: GetHeadPosition
 
-Bu listenin baş öğenin konumunu alır.
+Bu listenin baş öğesinin konumunu alır.
 
 ```
 POSITION GetHeadPosition() const;
@@ -435,24 +435,24 @@ POSITION GetHeadPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri; Liste boşsa NULL.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetHeadPosition`.
+Aşağıdaki tabloda, `CObList::GetHeadPosition`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**GetHeadPosition (const) getirin;**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**GetHeadPosition (const) getirin;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum GetHeadPosition () const;**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum GetHeadPosition () const;**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#97](../../mfc/codesnippet/cpp/coblist-class_9.cpp)]
 
-##  <a name="getnext"></a>  CObList::GetNext
+##  <a name="getnext"></a>CObList:: GetNext
 
-Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* için `POSITION` listedeki sonraki giriş değeri.
+*RPosition*tarafından tanımlanan liste öğesini alır ve ardından listedeki bir sonraki girdinin `POSITION` değerini *rPosition* olarak ayarlar.
 
 ```
 CObject*& GetNext(POSITION& rPosition);
@@ -462,48 +462,48 @@ const CObject* GetNext(POSITION& rPosition) const;
 ### <a name="parameters"></a>Parametreler
 
 *rPosition*<br/>
-Bir önceki tarafından döndürülen bir konum değeri başvurusu `GetNext`, `GetHeadPosition`, ya da diğer üye işlev çağrısı.
+Önceki bir `GetNext`, `GetHeadPosition`veya diğer üye işlev çağrısı tarafından döndürülen bir konum değerine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri açıklamasına bakın [GetHead](#gethead).
+[GetHead](#gethead)için dönüş değeri açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz `GetNext` çağrısıyla ilk konumunu kurarsanız ileriye doğru yineleme döngüsünde `GetHeadPosition` veya `Find`.
+İlk konumu `GetHeadPosition` veya `Find`çağrısıyla birlikte ayarlarsanız, bir iletme yineleme döngüsünde `GetNext` kullanabilirsiniz.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Alınan öğe listesinde, son öğesinin yeni değeri ise *rPosition* NULL olarak ayarlandı.
+Alınan öğe listedeki son ise, yeni *rPosition* değeri null olarak ayarlanır.
 
-Bir yineleme sırasında bir öğe kaldırmak mümkündür. Örneğin bakın [RemoveAt](#removeat).
+Yineleme sırasında bir öğeyi kaldırmak mümkündür. Bkz. [RemoveAt](#removeat)örneği.
 
 > [!NOTE]
->  MFC 8.0 itibarıyla döndürmek için bu yöntem const sürümü değişti `const CObject*` yerine `const CObject*&`.  Bu değişiklik, derleyici standart C++ ile uyumluluk için yapılmıştır.
+>  MFC 8,0 itibariyle bu yöntemin const sürümü `const CObject*&`yerine `const CObject*` döndürecek şekilde değiştirilmiştir.  Bu değişiklik, derleyicinin C++ standartta uyum sağlamak için yapılmıştır.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetNext`.
+Aşağıdaki tabloda, `CObList::GetNext`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|`void*& GetNext( POSITION&` `rPosition` `);`<br /><br /> `const void* GetNext( POSITION&` `rPosition` `) const;`|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|`CString& GetNext( POSITION&` `rPosition` `);`<br /><br /> `const CString& GetNext( POSITION&` `rPosition` `) const;`|
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#98](../../mfc/codesnippet/cpp/coblist-class_10.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 a CAge at $479C 40
 a CAge at $46C0 21
 ```
 
-##  <a name="getprev"></a>  CObList::GetPrev
+##  <a name="getprev"></a>CObList:: Getöncekini
 
-Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* konumu değerine listesinde önceki girişi.
+*RPosition*tarafından tanımlanan liste öğesini alır ve ardından listedeki ÖNCEKI girdinin konum değerine *rPosition* değerini ayarlar.
 
 ```
 CObject*& GetPrev(POSITION& rPosition);
@@ -513,46 +513,46 @@ const CObject* GetPrev(POSITION& rPosition) const;
 ### <a name="parameters"></a>Parametreler
 
 *rPosition*<br/>
-Bir önceki tarafından döndürülen bir konum değeri başvurusu `GetPrev` veya diğer üye işlev çağrısı.
+Önceki bir `GetPrev` veya diğer üye işlev çağrısı tarafından döndürülen bir konum değerine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri açıklamasına bakın [GetHead](#gethead).
+[GetHead](#gethead)için dönüş değeri açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz `GetPrev` çağrısıyla ilk konumunu kurarsanız geriye doğru yineleme döngüsünde `GetTailPosition` veya `Find`.
+İlk konumu `GetTailPosition` veya `Find`çağrısıyla birlikte ayarlarsanız, ters yineleme döngüsünde `GetPrev` kullanabilirsiniz.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Alınan öğe listesinde ilk yeni değeri ise *rPosition* NULL olarak ayarlandı.
+Alınan öğe listedeki ilk ise, yeni *rPosition* değeri null olarak ayarlanır.
 
 > [!NOTE]
->  MFC 8.0 itibarıyla döndürmek için bu yöntem const sürümü değişti `const CObject*` yerine `const CObject*&`.  Bu değişiklik, derleyici standart C++ ile uyumluluk için yapılmıştır.
+>  MFC 8,0 itibariyle bu yöntemin const sürümü `const CObject*&`yerine `const CObject*` döndürecek şekilde değiştirilmiştir.  Bu değişiklik, derleyicinin C++ standartta uyum sağlamak için yapılmıştır.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetPrev`.
+Aşağıdaki tabloda, `CObList::GetPrev`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|`void*& GetPrev( POSITION&` `rPosition` `);`<br /><br /> `const void* GetPrev( POSITION&` `rPosition` `) const;`|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|`CString& GetPrev( POSITION&` `rPosition` `);`<br /><br /> `const CString& GetPrev( POSITION&` `rPosition` `) const;`|
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#99](../../mfc/codesnippet/cpp/coblist-class_11.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 a CAge at $421C 21
 a CAge at $421C 40
 ```
 
-##  <a name="getsize"></a>  CObList::GetSize
+##  <a name="getsize"></a>CObList:: GetSize
 
-Liste öğelerin sayısını döndürür.
+Liste öğelerinin sayısını döndürür.
 
 ```
 INT_PTR GetSize() const;
@@ -560,28 +560,28 @@ INT_PTR GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listedeki öğe sayısı.
+Listedeki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Listedeki öğe sayısını almak için bu yöntemi çağırın.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetSize`.
+Aşağıdaki tabloda, `CObList::GetSize`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**INT_PTR GetSize () const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**INT_PTR GetSize () const;**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#100](../../mfc/codesnippet/cpp/coblist-class_12.cpp)]
 
-##  <a name="gettail"></a>  CObList::GetTail
+##  <a name="gettail"></a>CObList:: GetTail
 
-Alır `CObject` Kuyruk öğesi bu listenin temsil eden bir işaretçi.
+Bu listenin tail öğesini temsil eden `CObject` işaretçisini alır.
 
 ```
 CObject*& GetTail();
@@ -590,28 +590,28 @@ const CObject*& GetTail() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri açıklamasına bakın [GetHead](#gethead).
+[GetHead](#gethead)için dönüş değeri açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `GetTail`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+`GetTail`çağrılmadan önce listenin boş olmadığından emin olmanız gerekir. Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](#isempty) kullanın.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetTail`.
+Aşağıdaki tabloda, `CObList::GetTail`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetTail () const; void\*& GetTail ();**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetTail () const; CString & GetTail ();**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#101](../../mfc/codesnippet/cpp/coblist-class_13.cpp)]
 
-##  <a name="gettailposition"></a>  CObList::GetTailPosition
+##  <a name="gettailposition"></a>CObList:: Getbir Position
 
-Bu listenin tail öğenin konumunu alır; **NULL** liste boşsa.
+Bu listenin tail öğesinin konumunu alır; Liste boşsa **null** .
 
 ```
 POSITION GetTailPosition() const;
@@ -619,24 +619,24 @@ POSITION GetTailPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri; Liste boşsa NULL.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::GetTailPosition`.
+Aşağıdaki tabloda, `CObList::GetTailPosition`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**GetTailPosition (const) getirin;**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**GetTailPosition (const) getirin;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Getbir position () const;**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum Getbir position () const;**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#102](../../mfc/codesnippet/cpp/coblist-class_14.cpp)]
 
-##  <a name="insertafter"></a>  CObList::InsertAfter
+##  <a name="insertafter"></a>CObList:: InsertAfter
 
-Belirli bir konumda öğesinden sonra bu listeye bir öğe ekler.
+Belirtilen konumdaki öğeden sonra bu listeye bir öğe ekler.
 
 ```
 POSITION InsertAfter(
@@ -646,30 +646,30 @@ POSITION InsertAfter(
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
-Bir önceki tarafından döndürülen bir konum değeri `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.
+*yerine*<br/>
+Önceki bir `GetNext`, `GetPrev`veya `Find` üye işlev çağrısı tarafından döndürülen bir konum değeri.
 
 *newElement*<br/>
 Bu listeye eklenecek nesne işaretçisi.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::InsertAfter`.
+Aşağıdaki tabloda, `CObList::InsertAfter`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum InsertAfter (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum InsertAfter (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **Konum InsertAfter (konum** *konumu* **, LPCTSTR** `newElement` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Pozisyon InsertAfter (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum InsertAfter (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **Pozisyon InsertAfter (konum** *konumu* **, LPCTSTR** `newElement` **);**|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aynı olan bir konum değeri olarak *konumu* parametresi.
+*Konum* parametresiyle aynı olan bir konum değeri.
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#103](../../mfc/codesnippet/cpp/coblist-class_15.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 InsertAfter example: A CObList with 3 elements
@@ -678,9 +678,9 @@ a CAge at $4A64 65
 a CAge at $4968 21
 ```
 
-##  <a name="insertbefore"></a>  CObList::InsertBefore
+##  <a name="insertbefore"></a>CObList:: InsertBefore
 
-Belirli bir konumda öğesinden önce bu listeye bir öğe ekler.
+Bu listeye, belirtilen konumdaki öğeden önce bir öğe ekler.
 
 ```
 POSITION InsertBefore(
@@ -690,30 +690,30 @@ POSITION InsertBefore(
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
-Bir önceki tarafından döndürülen bir konum değeri `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.
+*yerine*<br/>
+Önceki bir `GetNext`, `GetPrev`veya `Find` üye işlev çağrısı tarafından döndürülen bir konum değeri.
 
 *newElement*<br/>
 Bu listeye eklenecek nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri; Liste boşsa NULL.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::InsertBefore`.
+Aşağıdaki tabloda, `CObList::InsertBefore`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Insertbefore (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum Insertbefore (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **Konum Insertbefore (konum** *konumu* **, LPCTSTR** `newElement` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**InsertBefore konumu (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**InsertBefore konumu (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **InsertBefore konumu (konum** *konumu* **, LPCTSTR** `newElement` **);**|
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#104](../../mfc/codesnippet/cpp/coblist-class_16.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 InsertBefore example: A CObList with 3 elements
@@ -722,9 +722,9 @@ a CAge at $4B02 65
 a CAge at $49E6 21
 ```
 
-##  <a name="isempty"></a>  CObList::IsEmpty
+##  <a name="isempty"></a>CObList:: IsEmpty
 
-Bu listeye öğe içerip içermediğini belirtir.
+Bu listenin hiç öğe içerip içermediğini gösterir.
 
 ```
 BOOL IsEmpty() const;
@@ -732,22 +732,22 @@ BOOL IsEmpty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu listenin boş olduğunu olursa sıfır dışı; Aksi durumda 0.
+Bu liste boşsa sıfır dışı; Aksi takdirde 0.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::IsEmpty`.
+Aşağıdaki tabloda, `CObList::IsEmpty`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**BOOL IsEmpty( ) const;**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**BOOL IsEmpty( ) const;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**BOOL IsEmpty () const;**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**BOOL IsEmpty () const;**|
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [RemoveAll](#removeall).
+  [RemoveAll](#removeall)için örneğe bakın.
 
-##  <a name="removeall"></a>  CObList::RemoveAll
+##  <a name="removeall"></a>CObList:: RemoveAll
 
-Tüm öğeleri bu listeden kaldırır ve ilişkili boşaltır `CObList` bellek.
+Bu listedeki tüm öğeleri kaldırır ve ilişkili `CObList` belleği serbest bırakır.
 
 ```
 void RemoveAll();
@@ -755,26 +755,26 @@ void RemoveAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste boş ise, bir hata oluşturulmaz.
+Liste zaten boşsa bir hata oluşturulmaz.
 
-Öğeleri kaldırdığınızda bir `CObList`, nesne işaretçileri listeden kaldırın. Bu nesneleri silmek için sizin sorumluluğunuzdur.
+Öğeleri `CObList`kaldırdığınızda, nesne işaretçilerini listeden kaldırırsınız. Nesnelerin kendilerini silme sorumluluğu sizin sorumluluğunuzdadır.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::RemoveAll`.
+Aşağıdaki tabloda, `CObList::RemoveAll`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAll( );**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAll( );**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAll ();**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAll ();**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#105](../../mfc/codesnippet/cpp/coblist-class_17.cpp)]
 
-##  <a name="removeat"></a>  CObList::RemoveAt
+##  <a name="removeat"></a>CObList:: RemoveAt
 
-Belirtilen öğeyi listeden kaldırır.
+Belirtilen öğeyi bu listeden kaldırır.
 
 ```
 void RemoveAt(POSITION position);
@@ -782,31 +782,31 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
+*yerine*<br/>
 Listeden kaldırılacak öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğeyi kaldırdığınızda bir `CObList`, nesne işaretçisi listeden kaldırın. Bu nesneleri silmek için sizin sorumluluğunuzdur.
+Bir öğeyi `CObList`kaldırdığınızda, nesne işaretçisini listeden kaldırırsınız. Nesnelerin kendilerini silme sorumluluğu sizin sorumluluğunuzdadır.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::RemoveAt`.
+Aşağıdaki tabloda, `CObList::RemoveAt`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAt (konum** *konumu* **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAt (konum** *konumu* **);**|
 
 ### <a name="example"></a>Örnek
 
-  Bir öğe listesi yineleme sırasında silerken dikkatli olun. Aşağıdaki örnek, geçerli bir garanti eden bir temizleme teknik gösterir **konumu** değerini [GetNext](#getnext).
+  Liste yinelemesi sırasında bir öğeyi kaldırırken dikkatli olun. Aşağıdaki örnek, [GetNext](#getnext)için geçerli bir **konum** değerini garanti eden bir kaldırma tekniği gösterir.
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#106](../../mfc/codesnippet/cpp/coblist-class_18.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 `RemoveAt example: A CObList with 2 elements`
 
@@ -814,9 +814,9 @@ Bu program sonuçları aşağıdaki gibidir:
 
 `a CAge at $4B22 21`
 
-##  <a name="removehead"></a>  CObList::RemoveHead
+##  <a name="removehead"></a>CObList:: RemoveHead
 
-Öğe listesinin başından kaldırır ve bir işaretçi döndürür.
+Öğeyi listenin baş öğesinden kaldırır ve ona bir işaretçi döndürür.
 
 ```
 CObject* RemoveHead();
@@ -824,28 +824,28 @@ CObject* RemoveHead();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CObject` Listenin başındaki işaretçisinde daha önce.
+`CObject` işaretçi daha önce listenin başbaşında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `RemoveHead`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+`RemoveHead`çağrılmadan önce listenin boş olmadığından emin olmanız gerekir. Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](#isempty) kullanın.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::RemoveHead`.
+Aşağıdaki tabloda, `CObList::RemoveHead`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void\* RemoveHead ();**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**RemoveHead ()\* void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveHead ();**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#107](../../mfc/codesnippet/cpp/coblist-class_19.cpp)]
 
-##  <a name="removetail"></a>  CObList::RemoveTail
+##  <a name="removetail"></a>CObList:: RemoveTail
 
-Listenin kuyruğunu öğeyi kaldırır ve bir işaretçi döndürür.
+Öğeyi listenin kuyruğunu kaldırır ve ona bir işaretçi döndürür.
 
 ```
 CObject* RemoveTail();
@@ -853,28 +853,28 @@ CObject* RemoveTail();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin kuyruğunu nesnesi için bir işaretçi.
+Listenin sonunda olan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `RemoveTail`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+`RemoveTail`çağrılmadan önce listenin boş olmadığından emin olmanız gerekir. Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](#isempty) kullanın.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::RemoveTail`.
+Aşağıdaki tabloda, `CObList::RemoveTail`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void\* RemoveTail ();**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**RemoveTail ()\* void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveTail ();**|
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+`CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#108](../../mfc/codesnippet/cpp/coblist-class_20.cpp)]
 
-##  <a name="setat"></a>  CObList::SetAt
+##  <a name="setat"></a>CObList:: SetAt
 
-Öğe, belirli bir konumda ayarlar.
+Belirtilen konumdaki öğeyi ayarlar.
 
 ```
 void SetAt(
@@ -884,32 +884,32 @@ void SetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
+*'un*<br/>
 Ayarlanacak öğenin konumu.
 
 *newElement*<br/>
-`CObject` Listesine yazılacak işaretçi.
+Listeye yazılacak `CObject` işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-KONUM türünde bir değişken listesi için bir anahtardır. Bu dizin ile aynı değildir ve üzerinde bir konum değeri kendiniz çalışamaz. `SetAt` Yazar `CObject` listede belirtilen konuma işaretçisi.
+POSITION türünde bir değişken, listenin bir anahtarıdır. Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. `SetAt` `CObject` işaretçisini listede belirtilen konuma yazar.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObList::SetAt`.
+Aşağıdaki tabloda, `CObList::SetAt`benzer diğer üye işlevleri gösterilmektedir.
 
-|örneği|Üye İşlevi|
+|Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void SetAt (konum** `pos` **, const CString &** `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**void SetAt (konum** `pos` **, LPCTSTR** `newElement` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**SetAt void (konum** `pos` **, const CString &** `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**SetAt void (konum** `pos` **, lpctstr** `newElement` **);**|
 
 ### <a name="example"></a>Örnek
 
-  Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.
+  `CAge` sınıfının listesi için bkz. [CObList:: CObList](#coblist) .
 
 [!code-cpp[NVC_MFCCollections#109](../../mfc/codesnippet/cpp/coblist-class_21.cpp)]
 
-Bu program sonuçları aşağıdaki gibidir:
+Bu programın sonuçları aşağıdaki gibidir:
 
 ```Output
 SetAt example: A CObList with 2 elements

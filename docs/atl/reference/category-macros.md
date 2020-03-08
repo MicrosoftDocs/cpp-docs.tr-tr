@@ -8,11 +8,11 @@ f1_keywords:
 - atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
 ms.openlocfilehash: 411e06cc795827eef356018ba427510fd9eb7c06
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497850"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78864452"
 ---
 # <a name="category-macros"></a>Kategori makroları
 
@@ -46,9 +46,9 @@ BEGIN_CATEGORY_MAP(theClass)
 
 Kategori Haritası, COM sınıfının hangi bileşen kategorilerinin uygulanacağını ve kapsayıcısından hangi kategorilerin gerektirdiğini belirtmek için kullanılır.
 
-COM sınıfı tarafından uygulanan her kategori için haritaya bir [IMPLEMENTED_CATEGORY](#implemented_category) girişi ekleyin. Sınıfın istemcilerinin uygulanmasını gerektirdiği her kategori için haritaya bir [REQUIRED_CATEGORY](#required_category) girişi ekleyin. Haritanın sonunu [END_CATEGORY_MAP](#end_category_map) makrosu ile işaretleyin.
+COM sınıfı tarafından uygulanan her kategori için haritaya bir [IMPLEMENTED_CATEGORY](#implemented_category) girişi ekleyin. Sınıfın istemcilerinin uygulanmasını gerektirdiği her kategori için haritaya bir [REQUIRED_CATEGORY](#required_category) girişi ekleyin. Haritanın sonunu [END_CATEGORY_MAP](#end_category_map) makroyla işaretleyin.
 
-Modül ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [object_entry_non_createable_ex_auto](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto)varsa, haritada listelenen Bileşen kategorileri otomatik olarak kaydedilir.
+Haritada listelenen Bileşen kategorileri, sınıf ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [object_entry_non_createable_ex_auto](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto)varsa, modül kaydedildiğinde otomatik olarak kaydedilir.
 
 > [!NOTE]
 >  ATL, bileşen kategorilerini kaydetmek için standart Bileşen kategorileri yöneticisini kullanır. Modül kaydedildiğinde yönetici sistemde yoksa, kayıt başarılı olur, ancak Bileşen kategorileri bu sınıf için kaydedilmeyecektir.
@@ -110,7 +110,7 @@ Bileşen kategorileri hakkında daha fazla bilgi için bkz. [Bileşen kategorile
 
 ##  <a name="required_category"></a>REQUIRED_CATEGORY
 
-Bileşenin, *catID* parametresi tarafından tanımlanan kategori gerektirerek kaydedilmesi gerektiğini belirtmek için, bileşeninizin [KATEGORI haritasına](#begin_category_map) bir REQUIRED_CATEGORY makrosu ekleyin.
+Bir REQUIRED_CATEGORY makrosunu, *catID* parametresi tarafından tanımlanan kategorinin gerektirdiği şekilde kaydedilmesi gerektiğini belirtmek için bileşeninizin [Kategori haritasına](#begin_category_map) ekleyin.
 
 ```
 REQUIRED_CATEGORY( catID )

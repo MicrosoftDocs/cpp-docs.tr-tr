@@ -31,15 +31,15 @@ helpviewer_keywords:
 - COccManager [MFC], SplitDialogTemplate
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
 ms.openlocfilehash: c2a49e3396879e5f1e0864ab5342b57541c6b36c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504495"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865944"
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 
-Çeşitli özel denetim sitelerini yönetir; `COleControlContainer` ve`COleControlSite` nesneleri tarafından uygulandı.
+Çeşitli özel denetim sitelerini yönetir; `COleControlContainer` ve `COleControlSite` nesneleri tarafından uygulanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,10 +51,10 @@ class COccManager : public CNoTrackObject
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[COccManager:: CreateContainer](#createcontainer)|Bir `COleContainer` nesnesi oluşturur.|
-|[COccManager:: CreateDlgControls](#createdlgcontrols)|İlişkili `COleContainer` nesne tarafından barındırılan ActiveX denetimleri oluşturur.|
+|[COccManager:: CreateDlgControls](#createdlgcontrols)|İlişkili `COleContainer` nesnesi tarafından barındırılan ActiveX denetimleri oluşturur.|
 |[COccManager:: CreateSite](#createsite)|Bir `COleClientSite` nesnesi oluşturur.|
 |[COccManager:: GetDefBtnCode](#getdefbtncode)|Varsayılan düğmenin kodunu alır.|
 |[COccManager:: IsDialogMessage](#isdialogmessage)|İletişim kutusu mesajının hedefini belirler.|
@@ -68,7 +68,7 @@ class COccManager : public CNoTrackObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-Temel sınıf, `CNoTrackObject`bir belgelenmemiş taban sınıftır (afxtls ' de bulunur. H). MFC çerçevesi tarafından kullanılmak üzere tasarlanan `CNoTrackObject` sınıftan türetilmiş sınıflar bellek sızıntısı algılamasında muaf tutulur. Doğrudan ' den `CNoTrackObject`türetmeniz önerilmez.
+Temel sınıf, `CNoTrackObject`, bir belgelenmemiş taban sınıftır (AFXTLS içinde bulunur. H). MFC çerçevesi tarafından kullanılmak üzere tasarlanan `CNoTrackObject` sınıfından türetilmiş sınıflar bellek sızıntısı algılamasında muaf tutulur. `CNoTrackObject`doğrudan türetmeniz önerilmez.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -156,7 +156,7 @@ Yeni oluşturulan denetim sitesine yönelik bir işaretçi.
 
 [Coelcontrolsıte](../../mfc/reference/colecontrolsite-class.md)ile türetilmiş sınıfınızı kullanarak özel bir denetim sitesi oluşturmak için bu işlevi geçersiz kılın.
 
-Her denetim kapsayıcısı birden çok siteyi barındırabilirler. Birden çok çağrısı `CreateSite`olan ek siteler oluşturun.
+Her denetim kapsayıcısı birden çok siteyi barındırabilirler. `CreateSite`için birden çok çağrıya sahip ek siteler oluşturun.
 
 ##  <a name="getdefbtncode"></a>COccManager:: GetDefBtnCode
 
@@ -175,9 +175,9 @@ Düğme denetimini içeren pencere nesnesi.
 
 Aşağıdaki değerlerden biri:
 
-- DLGC_DEFPUSHBUTTON denetimi, iletişim kutusunda varsayılan düğmedir.
+- DLGC_DEFPUSHBUTTON denetim, iletişim kutusunda varsayılan düğmedir.
 
-- DLGC_UNDEFPUSHBUTTON denetimi, iletişim kutusunda varsayılan düğme değildir.
+- DLGC_UNDEFPUSHBUTTON denetim, iletişim kutusunda varsayılan düğme değil.
 
 - **0** denetimi bir düğme değildir.
 
@@ -197,7 +197,7 @@ virtual BOOL IsDialogMessage(
 İletinin amaçlanan hedef iletişim kutusu işaretçisi.
 
 *lpMsg*<br/>
-Denetlenecek iletiyi içeren bir `MSG` yapıya yönelik işaretçi.
+Denetlenecek iletiyi içeren `MSG` yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -205,7 +205,7 @@ Denetlenecek iletiyi içeren bir `MSG` yapıya yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranışı `IsDialogMessage` , klavye iletilerini denetmek ve ilgili iletişim kutusu için bunları seçimlere dönüştürmelidir. Örneğin TAB tuşu basıldığında, bir sonraki denetimi veya denetim grubunu seçer.
+`IsDialogMessage` varsayılan davranışı, klavye iletilerini denetve ilgili iletişim kutusu için bunları seçimlere dönüştürmelidir. Örneğin TAB tuşu basıldığında, bir sonraki denetimi veya denetim grubunu seçer.
 
 Belirtilen iletişim kutusuna gönderilen iletiler için özel davranış sağlamak üzere bu işlevi geçersiz kılın.
 
@@ -274,7 +274,7 @@ virtual BOOL OnEvent(
 ### <a name="parameters"></a>Parametreler
 
 *pCmdTarget*<br/>
-Olayı işlemeye çalışan `CCmdTarget` nesneye yönelik bir işaretçi
+Olayı işlemeye çalışan `CCmdTarget` nesnesine yönelik bir işaretçi
 
 *ıdctrl*<br/>
 Denetimin kaynak KIMLIĞI.
@@ -283,7 +283,7 @@ Denetimin kaynak KIMLIĞI.
 İşlenmekte olan olay.
 
 *pHandlerInfo*<br/>
-NULL değilse, `OnEvent` komutu dağıtma yerine `AFX_CMDHANDLERINFO` yapının `pTarget` ve `pmf` üyelerini doldurur. Genellikle, bu parametre NULL olmalıdır.
+NULL değilse, `OnEvent` `pTarget` ve `pmf` `AFX_CMDHANDLERINFO` yapısının üyelerini, komutu dağıtma yerine doldurur. Genellikle, bu parametre NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -306,7 +306,7 @@ virtual const DLGTEMPLATE* PreCreateDialog(
 ### <a name="parameters"></a>Parametreler
 
 *Poccdialogınfo*<br/>
-İletişim `_AFX_OCC_DIALOG_INFO` kutusu şablonu ve iletişim kutusu tarafından barındırılan tüm ActiveX denetimleri hakkında bilgi içeren bir yapı.
+İletişim kutusu şablonu ve iletişim kutusu tarafından barındırılan tüm ActiveX denetimleri hakkında bilgi içeren `_AFX_OCC_DIALOG_INFO` yapısı.
 
 *pOrigTemplate*<br/>
 İletişim kutusunu oluştururken kullanılacak iletişim kutusu şablonuna yönelik bir işaretçi.
@@ -317,7 +317,7 @@ virtual const DLGTEMPLATE* PreCreateDialog(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranış öğesine `SplitDialogTemplate`bir çağrı yapar, varsa ActiveX denetimleri olup olmadığını belirler ve ardından sonuç iletişim kutusu şablonunu döndürür.
+Varsayılan davranış `SplitDialogTemplate`bir çağrı yapar, varsa ActiveX denetimleri olup olmadığını belirler ve ardından sonuç iletişim kutusu şablonunu döndürür.
 
 ActiveX denetimlerini barındıran bir iletişim kutusu oluşturma işlemini özelleştirmek için bu işlevi geçersiz kılın.
 
@@ -332,11 +332,11 @@ virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ### <a name="parameters"></a>Parametreler
 
 *Poccdialogınfo*<br/>
-İletişim `_AFX_OCC_DIALOG_INFO` kutusu şablonu ve iletişim kutusu tarafından barındırılan tüm ActiveX denetimleri hakkında bilgi içeren bir yapı.
+İletişim kutusu şablonu ve iletişim kutusu tarafından barındırılan tüm ActiveX denetimleri hakkında bilgi içeren `_AFX_OCC_DIALOG_INFO` yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bellek, öğesine `SplitDialogTemplate`yapılan bir çağrı tarafından ayrıldı ve iletişim kutusundaki barındırılan tüm ActiveX denetimleri için kullanıldı.
+Bu bellek `SplitDialogTemplate`çağrısıyla ayrıldı ve iletişim kutusundaki barındırılan tüm ActiveX denetimleri için kullanılmıştır.
 
 İletişim kutusu nesnesi tarafından kullanılan tüm kaynakları temizleme işlemini özelleştirmek için bu işlevi geçersiz kılın.
 
@@ -365,7 +365,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Denetimin OLEMISC_ACTSLIKEBUTTON durum biti ayarlanmış olması gerekir. OLEMISC bayrakları hakkında daha fazla bilgi için Windows SDK [Olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc) konusuna bakın.
+>  Denetimde OLEMISC_ACTSLIKEBUTTON durum biti ayarlanmış olmalıdır. OLEMISC bayrakları hakkında daha fazla bilgi için Windows SDK [Olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc) konusuna bakın.
 
 ##  <a name="splitdialogtemplate"></a>COccManager:: SplitDialogTemplate
 
@@ -396,7 +396,7 @@ Herhangi bir ActiveX denetimi bulunursa, şablon çözümlenir ve yalnızca Acti
 Şablonda ActiveX denetimi yoksa, NULL döndürülür *.*
 
 > [!NOTE]
->  Yeni şablon için ayrılan bellek, `PostCreateDialog` işlevde serbest bırakılır.
+>  Yeni şablon için ayrılan bellek `PostCreateDialog` işlevinde serbest bırakılır.
 
 Bu işlemi özelleştirmek için bu işlevi geçersiz kılın.
 

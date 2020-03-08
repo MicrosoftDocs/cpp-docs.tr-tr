@@ -8,11 +8,11 @@ helpviewer_keywords:
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ms.openlocfilehash: 071839df431071a7d8921d1b445094f886ad38e2
-ms.sourcegitcommit: 33a898bf976c65f998b4e88a84765a0cef4193a8
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72920103"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884098"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Başlık Dosyaları
 
@@ -116,7 +116,7 @@ Bu pragmalar, önceden derlenmiş üstbilginin bir parçası olarak tutulur ve �
 
 Bu tabloda, ön derlenmiş üst bilgi kullanılırken tutarsızlık uyarısı tetikleyebilen derleyici seçenekleri listelenmektedir:
 
-|Seçenek|Name|Kural|
+|Seçenek|Adı|Kural|
 |------------|----------|----------|
 |Belirtilmediyse|Sabitleri ve makroları tanımlama|Ön derlenmiş üstbilgiyi ve geçerli derlemeyi oluşturan derleme arasında aynı olmalıdır. Tanımlı sabitlerin durumu işaretli değil, ancak dosyalarınız değiştirilen sabitlerin değerlerine bağlıysa öngörülemeyen sonuçlar ortaya çıkabilir.|
 |/E veya/EP|Önişlemci çıkışını standart çıktıya Kopyala|Önceden derlenmiş üstbilgiler/E veya/EP seçeneğiyle çalışmaz.|

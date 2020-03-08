@@ -1,5 +1,5 @@
 ---
-title: DDX_DHtml yardımcı makroları
+title: DDX_DHtml Yardımcısı makroları
 ms.date: 11/04/2016
 f1_keywords:
 - AFXDHTML/DDX_DHtml_ElementValue
@@ -18,36 +18,36 @@ helpviewer_keywords:
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
 ms.openlocfilehash: 90c80dbc5c8b6788f3afad3cf77d796139fbd946
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323040"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866663"
 ---
-# <a name="ddxdhtml-helper-macros"></a>DDX_DHtml yardımcı makroları
+# <a name="ddx_dhtml-helper-macros"></a>DDX_DHtml Yardımcısı makroları
 
-DDX_DHtml yardımcı makroları, yaygın olarak kullanılan bir HTML sayfasında denetimlerin özelliklerini kolay erişim sağlar.
+DDX_DHtml Yardımcısı makroları, HTML sayfasındaki denetimlerin yaygın olarak kullanılan özelliklerine kolayca erişim sağlar.
 
-### <a name="data-exchange-macros"></a>Veri Değişim makroları
+### <a name="data-exchange-macros"></a>Veri değişimi makroları
 
 |||
 |-|-|
-|[DDX_DHtml_ElementValue](#ddx_dhtml_elementvalue)|Seçili denetiminden Value özelliği alır veya belirler.|
-|[DDX_DHtml_ElementInnerText](#ddx_dhtml_elementinnertext)|Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni alır veya ayarlar.|
-|[DDX_DHtml_ElementInnerHtml](#ddx_dhtml_elementinnerhtml)|Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML alır veya ayarlar.|
-|[DDX_DHtml_Anchor_Href](#ddx_dhtml_anchor_href)|Hedef URL veya bağlantı noktası alır veya ayarlar.|
-|[DDX_DHtml_Anchor_Target](#ddx_dhtml_anchor_target)|Hedef pencere veya çerçeve alır veya ayarlar.|
-|[DDX_DHtml_Img_Src](#ddx_dhtml_img_src)|Bir görüntü veya video klip belgedeki adını alır veya ayarlar.|
-|[DDX_DHtml_Frame_Src](#ddx_dhtml_frame_src)|İlişkili çerçeve URL'sini alır veya ayarlar.|
-|[DDX_DHtml_IFrame_Src](#ddx_dhtml_iframe_src)|İlişkili çerçeve URL'sini alır veya ayarlar.|
+|[DDX_DHtml_ElementValue](#ddx_dhtml_elementvalue)|Seçili denetimden değer özelliğini ayarlar veya alır.|
+|[DDX_DHtml_ElementInnerText](#ddx_dhtml_elementinnertext)|Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni ayarlar veya alır.|
+|[DDX_DHtml_ElementInnerHtml](#ddx_dhtml_elementinnerhtml)|Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML ayarlar veya alır.|
+|[DDX_DHtml_Anchor_Href](#ddx_dhtml_anchor_href)|Hedef URL 'YI veya bağlantı noktasını ayarlar veya alır.|
+|[DDX_DHtml_Anchor_Target](#ddx_dhtml_anchor_target)|Hedef pencereyi veya çerçeveyi ayarlar veya alır.|
+|[DDX_DHtml_Img_Src](#ddx_dhtml_img_src)|Belgedeki bir görüntünün veya video klibinin adını ayarlar veya alır.|
+|[DDX_DHtml_Frame_Src](#ddx_dhtml_frame_src)|İlişkili çerçevenin URL 'sini ayarlar veya alır.|
+|[DDX_DHtml_IFrame_Src](#ddx_dhtml_iframe_src)|İlişkili çerçevenin URL 'sini ayarlar veya alır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdhtml.h
+**Üstbilgi:** afxdhtml. h
 
-## <a name="ddx_dhtml_anchor_href"></a> DDX_DHtml_Anchor_Href
+## <a name="ddx_dhtml_anchor_href"></a>DDX_DHtml_Anchor_Href
 
-Hedef URL veya bağlantı noktası alır veya ayarlar.
+Hedef URL 'YI veya bağlantı noktasını ayarlar veya alır.
 
 ```
 DDX_DHtml_Anchor_Href(
@@ -59,21 +59,21 @@ DDX_DHtml_Anchor_Href(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLANCHORELEMENT_HREF kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLANCHORELEMENT_HREF dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
-## <a name="ddx_dhtml_anchor_target"></a>  DDX_DHtml_Anchor_Target
+## <a name="ddx_dhtml_anchor_target"></a>DDX_DHtml_Anchor_Target
 
-Hedef pencere veya çerçeve alır veya ayarlar.
+Hedef pencereyi veya çerçeveyi ayarlar veya alır.
 
 ```
 DDX_DHtml_Anchor_Target(
@@ -85,21 +85,21 @@ DDX_DHtml_Anchor_Target(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLANCHORELEMENT_TARGET kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLANCHORELEMENT_TARGET dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
-## <a name="ddx_dhtml_elementinnerhtml"></a>  DDX_DHtml_ElementInnerHtml
+## <a name="ddx_dhtml_elementinnerhtml"></a>DDX_DHtml_ElementInnerHtml
 
-Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML alır veya ayarlar.
+Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML ayarlar veya alır.
 
 ```
 DDX_DHtml_ElementInnerHtml(
@@ -111,21 +111,21 @@ DDX_DHtml_ElementInnerHtml(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLELEMENT_INNERHTML kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLELEMENT_INNERHTML dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
-## <a name="ddx_dhtml_elementinnertext"></a>  DDX_DHtml_ElementInnerText
+## <a name="ddx_dhtml_elementinnertext"></a>DDX_DHtml_ElementInnerText
 
-Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni alır veya ayarlar.
+Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni ayarlar veya alır.
 
 ```
 DDX_DHtml_ElementInnerText(
@@ -137,21 +137,21 @@ DDX_DHtml_ElementInnerText(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLELEMENT_INNERTEXT kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLELEMENT_INNERTEXT dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
-## <a name="ddx_dhtml_elementvalue"></a> DDX_DHtml_ElementValue
+## <a name="ddx_dhtml_elementvalue"></a>DDX_DHtml_ElementValue
 
-Seçili denetiminden Value özelliği alır veya belirler.
+Seçili denetimden değer özelliğini ayarlar veya alır.
 
 ```
 DDX_DHtml_ElementValue(
@@ -163,23 +163,23 @@ DDX_DHtml_ElementValue(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer. Bkz: *değer* içinde [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).
+Takas edilmekte olan değer. CDHtmlDialog içindeki *değeri* gör [::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makro, bir değer özelliği olan denetimlere çalıştırdığınızda yalnızca başarılı olur. Bir değer özelliği olan denetimleri düzenleme kutuları, liste kutuları ve birleşik giriş kutuları içerir.
+Bu makro yalnızca değer özelliği olan denetimlerde çalıştırıldığında başarılı olur. Değer özelliğine sahip denetimler, düzenleme kutuları, liste kutuları ve Birleşik giriş kutuları içerir.
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_A_VALUE kullanarak dağıtım kimliği
+Bu makro, DISPID_A_VALUE dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
-## <a name="ddx_dhtml_frame_src"></a> DDX_DHtml_Frame_Src
+## <a name="ddx_dhtml_frame_src"></a>DDX_DHtml_Frame_Src
 
-İlişkili çerçeve URL'sini alır veya ayarlar.
+İlişkili çerçevenin URL 'sini ayarlar veya alır.
 
 ```
 DDX_DHtml_Frame_Src(
@@ -191,21 +191,21 @@ DDX_DHtml_Frame_Src(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLFRAMEBASE_SRC kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLFRAMEBASE_SRC dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
-## <a name="ddx_dhtml_iframe_src"></a> DDX_DHtml_IFrame_Src
+## <a name="ddx_dhtml_iframe_src"></a>DDX_DHtml_IFrame_Src
 
-İlişkili çerçeve URL'sini alır veya ayarlar.
+İlişkili çerçevenin URL 'sini ayarlar veya alır.
 
 ```
 DDX_DHtml_IFrame_Src(
@@ -217,21 +217,21 @@ DDX_DHtml_IFrame_Src(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLFRAMEBASE_SRC kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLFRAMEBASE_SRC dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
 ## <a name="ddx_dhtml_img_src"></a>DDX_DHtml_Img_Src
 
-Alır veya bir görüntü veya video klip belgedeki adını alır.
+Belgedeki bir görüntünün veya video klibinin adını alır veya alır.
 
 ```
 DDX_DHtml_Img_Src(
@@ -243,19 +243,19 @@ DDX_DHtml_Img_Src(
 #### <a name="parameters"></a>Parametreler
 
 *DX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*Adı*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*ada*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *var*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir görüntü öğesi için kaynak özelliği almak için DDX_DHtml_Img_Src makrosu kullanırken, Internet Explorer resim nesnesi tamamen kaçan görüntü kaynağı URL'sini döndürür. Bir görüntü öğesi src özelliğini "bazı ilginç resim" dizesine ayarlamak için DDX_DHtml_Img_Src makro kullanırsanız, örneğin, bu özellik Internet Explorer aldığınızda "res://d:\myapplication\myapp.exe/some% dize döndürür 20interesting % 20picture."
+Bir görüntü öğesi için SRC özelliğini almak üzere DDX_DHtml_Img_Src makrosunu kullanırken, Internet Explorer görüntü nesnesi görüntü kaynağı için tam kaçan URL 'YI döndürür. Örneğin, bir görüntü öğesinin SRC özelliğini "ilginç resim" dizesi olarak ayarlamak için DDX_DHtml_Img_Src makrosunu kullanırsanız, Internet Explorer "res:/s: \ MyApplication \ MyApp. exe/bazıları %2 0 ilginç %2 0 resmi" dizesini döndürür.
 
-Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLIMGELEMENT_SRC kullanarak dağıtım kimliği
+Bu makro, DISPID_IHTMLIMGELEMENT_SRC dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

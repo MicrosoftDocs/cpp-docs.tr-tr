@@ -1,33 +1,33 @@
 ---
-title: Önemsiz, Standart Düzen ve POD değişmez değer türleri
+title: Önemsiz, Standart Düzen, POD ve değişmez değer türleri
 ms.date: 04/05/2018
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0
 ms.openlocfilehash: 2745302b3ebd7927e9d839e4661e884a2bd91042
-ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934207"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865799"
 ---
-# <a name="trivial-standard-layout-pod-and-literal-types"></a>Önemsiz, Standart Düzen ve POD değişmez değer türleri
+# <a name="trivial-standard-layout-pod-and-literal-types"></a>Önemsiz, Standart Düzen, POD ve değişmez değer türleri
 
-Terim *Düzen* bellekte sınıf, yapı veya birleşim türü, bir nesnenin üyelerine nasıl düzenlenir için ifade eder. Bazı durumlarda, Düzen dil belirtimine göre iyi tanımlanmış. Ancak bir sınıf veya yapı sanal temel sınıflar, sanal işlevler, farklı erişim denetimi ile üyeleri gibi belirli C++ dil özellikleri içerdiğinde, ardından derleyici bir düzen seçebilirsiniz. Bu düzen hangi iyileştirmeleri gerçekleştirilen bağlı olarak değişiklik gösterebilir ve çoğu durumda nesne bile bir bitişik bellek alanının belleğinde değil. Örneğin, bir sınıf sanal işlevler varsa, bu sınıfın tüm örnekleri tek sanal işlev tablosuna paylaşabilir. Gibi türler oldukça faydalıdır, ancak aynı zamanda sınırlamalara sahiptirler. Düzen tanımsız olduğundan bunlar C gibi diğer dillerde yazılmış programlar için geçirilemez ve bitişik olmayan olabileceğinden, güvenilir bir şekilde hızlı alt düzey işlevlerle gibi kopyalanamaz `memcopy`, veya bir ağ üzerinden seri hale getirilmiş.
+*Düzen* terimi, bir sınıf, yapı veya birleşim türü nesnesinin üyelerinin bellekte nasıl düzenlendiğini gösterir. Bazı durumlarda, düzen dil belirtimi tarafından iyi tanımlanır. Ancak, bir sınıf veya yapı, sanal C++ temel sınıflar, sanal işlevler, farklı erişim denetimine sahip Üyeler gibi bazı dil özelliklerini içerdiğinde, bir düzen seçmek için derleyici ücretsizdir. Bu düzen, uygulanan iyileştirmelere göre farklılık gösterebilir ve birçok durumda nesnenin bitişik bir bellek alanını kaplamayabilir. Örneğin, bir sınıfta sanal işlevler varsa, bu sınıfın tüm örnekleri tek bir sanal işlev tablosu paylaşabilir. Bu tür türler çok kullanışlıdır, ancak aynı zamanda sınırlamaları vardır. Düzen tanımsız olduğu için, C gibi diğer dillerde yazılmış programlara geçirilemez ve bunlar bitişik olmayan, `memcopy`veya ağ üzerinden serileştirilmiş gibi hızlı alt düzey işlevlerle güvenilir bir şekilde kopyalanamazlar.
 
-C ++ 14 derleyicileri hem de C++ programları ve üzerinde bir belirli bellek düzeni bağlı işlemler için belirtilen her türlü uygunluğu konusunda nedeni metaprograms etkinleştirmek için basit sınıflar ve yapılar üç kategorisi sunulan: *Önemsiz*, *Standart Düzen*, ve *POD* veya düz eski veriler. Standart kitaplık işlev şablonları sahip `is_trivial<T>`, `is_standard_layout<T>` ve `is_pod<T>` verilen tür belirli bir kategoriye ait olup olmadığını belirler.
+C++ 14, belirli bir bellek C++ düzenine bağlı olan işlemler için verilen herhangi bir tür uygunluğu konusunda nedenlerle derleyicilerin yanı sıra programlar ve metaprogramlar sağlamak için basit sınıfların ve yapıların üç kategorisini sunmuştur: *Önemsiz*, *Standart Düzen*ve *Pod* veya düz eski veriler. Standart Kitaplık, belirli bir türün belirli bir kategoriye ait olup olmadığını belirten `is_trivial<T>`, `is_standard_layout<T>` ve `is_pod<T>` işlev şablonlarına sahiptir.
 
 ## <a name="trivial-types"></a>Önemsiz türler
 
-Ne zaman bir sınıfın veya yapının c++ derleyici tarafından sağlanan olan veya basit bir tür ise özel üye işlevleri, açıkça varsayılan. Bu, bitişik bellek alanı kaplar. Farklı erişim belirticileri üyeleriyle sağlayabilirsiniz. C++'da, derleyici bu durumda üyelerini sıralamak üzere nasıl seçme ücretsiz olarak kullanılabilir. Bu nedenle, bu tür nesneler memcopy edebilirsiniz ancak bunların güvenilir bir şekilde bir C programı kullanamıyor. Bir basit türü T char unsigned char veya bir diziye kopyalanır ve güvenli bir şekilde geri T değişkene kopyalanır. Hizalama gereksinimleri nedeniyle unutmayın, tür üyeleri arasında doldurma bayt olabilir.
+İçindeki C++ bir sınıf veya yapı derleyicinin sağladığı veya açıkça varsayılan olarak ayarlanmış özel üye işlevse, önemsiz bir türdür. Bitişik bir bellek alanı kaplar. Farklı erişim belirticilerine sahip üyelere sahip olabilir. ' C++De, derleyici bu durumda üyelerin nasıl sipariş alınacağını seçmek için ücretsizdir. Bu nedenle, bu tür nesneleri Memcopy yapabilirsiniz ancak bunları bir C programından güvenilir bir şekilde kullanamazsınız. Önemsiz tür T bir char veya işaretsiz char dizisine kopyalanabilir ve güvenle bir T değişkenine geri kopyalanabilir. Hizalama gereksinimleri nedeniyle, tür üyeleri arasında Doldurma baytları olabileceğini unutmayın.
 
-Önemsiz türler Önemsiz varsayılan oluşturucu, basit bir kopya Oluşturucu, Önemsiz kopya atama işleci ve önemsiz yok Edicisi vardır. Her durumda *Önemsiz* Oluşturucu/işleci/yıkıcı kullanıcı tarafından sağlanan değil ve sahip bir sınıfın ait olduğu anlamına gelir
+Önemsiz türler için önemsiz bir varsayılan Oluşturucu, Önemsiz kopya Oluşturucu, Önemsiz kopya atama işleci ve basit yıkıcı vardır. Her durumda *Önemsiz* , oluşturucunun/işlecin/yıkıcının Kullanıcı tarafından sağlanmayacağı ve
 
-- hiçbir sanal işlevler veya sanal temel sınıflar
+- sanal işlev veya sanal temel sınıf yok,
 
-- karşılık gelen önemsiz Oluşturucu/işleci/yıkıcı ile temel olmayan sınıflar
+- ilgili önemsiz olmayan oluşturucuya/işlece/yok ediciye sahip temel sınıf yok
 
-- karşılık gelen önemsiz Oluşturucu/işleci/yıkıcı ile sınıf türünün hiçbir veri üyeleri
+- karşılık gelen önemsiz olmayan oluşturucuya/işlece/yıkıcıya sahip sınıf türünde veri üyesi yok
 
-Aşağıdaki örnekler, basit türleri gösterir. Trivial2, varlığı içinde `Trivial2(int a, int b)` Oluşturucusu gerektirir bir varsayılan oluşturucu sağlayın. Önemsiz olarak nitelemek türü için bu oluşturucu açıkça varsayılan gerekir.
+Aşağıdaki örneklerde önemsiz türler gösterilmektedir. Trivial2 ' de, `Trivial2(int a, int b)` oluşturucusunun varlığı için varsayılan bir Oluşturucu sağlamanız gerekir. Türün önemsiz olarak nitelendirime için, o oluşturucuyu açık bir şekilde varsayılan yapmanız gerekir.
 
 ```cpp
 struct Trivial
@@ -49,25 +49,25 @@ struct Trivial2
 
 ## <a name="standard-layout-types"></a>Standart Düzen türleri
 
-Bu, bir sınıf veya yapı, C dilinde bulunmayan sanal işlevleri gibi belirli C++ dil özellikleri içermiyor ve tüm üyeleri aynı erişim denetimine sahip bir Standart Düzen türüdür. Memcopy yapabilir ve düzenini yeterince C programları tarafından tüketilebilecek tanımlanır. Standart Düzen türü kullanıcı tanımlı özel üye işlevleri olabilir. Ayrıca, Standart Düzen türü şu özelliklere sahiptir:
+Bir sınıf veya yapı, C dilinde bulunmayan sanal C++ işlevler gibi bazı dil özelliklerini içermiyorsa ve tüm Üyeler aynı erişim denetimine sahip olduğunda, bu bir standart Düzen türüdür. Bu, Memcopy ile yapılabilir ve düzen, C programları tarafından tüketilen yeterli tanımlı değildir. Standart Düzen türlerinde Kullanıcı tanımlı özel üye işlevleri bulunabilir. Buna ek olarak, Standart Düzen türleri aşağıdaki özelliklere sahiptir:
 
-- hiçbir sanal işlevler veya sanal temel sınıflar
+- sanal işlev veya sanal temel sınıf yok
 
-- tüm statik olmayan veri üyeleri aynı erişim denetimi sahiptir
+- Tüm statik olmayan veri üyeleri aynı erişim denetimine sahip
 
-- Standart Düzen sınıf türünün tüm statik olmayan üyeler
+- sınıf türündeki statik olmayan tüm Üyeler standart düzendir
 
-- Standart Düzen tüm temel sınıflar
+- Tüm temel sınıflar standart düzendir
 
-- ilk statik olmayan veri üyesi aynı türden temel sınıfa sahip.
+- , ilk statik olmayan veri üyesiyle aynı türde temel sınıfa sahip değildir.
 
-- Bu koşullardan biri karşılar:
+- Şu koşullardan birini karşılar:
 
-  - Statik olmayan veri üyeleriyle en çok türetilen sınıf ve birden fazla temel sınıf yok statik olmayan veri üyesi veya
+  - en fazla türetilmiş sınıfta statik olmayan veri üyesi ve statik olmayan veri üyelerine sahip birden fazla temel sınıf yok veya
 
-  - Statik olmayan veri üyeleriyle temel sınıfa sahip
+  - statik olmayan veri üyeleri olan temel sınıflara sahip değil
 
-Aşağıdaki kod, bir Standart Düzen türünün bir örneği gösterilmektedir:
+Aşağıdaki kod, bir standart Düzen türünün bir örneğini göstermektedir:
 
 ```cpp
 struct SL
@@ -79,7 +79,7 @@ struct SL
 };
 ```
 
-Son iki gereksinimleri belki de daha iyi kod ile gösterilebilir. Sonraki örnekte olsa bile tabanıdır Standart Düzen `Derived` Standart Düzen olmadığından, hem BT (en çok türetilen sınıf) ve `Base` statik olmayan veri üyeleri sahiptir:
+Son iki gereksinim kod ile daha iyi gösterilebilir. Sonraki örnekte, taban Standart Düzen olsa da `Derived` Standart Düzen değildir çünkü her ikisi de (en fazla türetilmiş sınıf) ve `Base` statik olmayan veri üyelerine sahiptir:
 
 ```cpp
 struct Base
@@ -96,7 +96,7 @@ struct Derived : public Base
 };
 ```
 
-Bu örnekte `Derived` Standart Düzen çünkü `Base` statik olmayan veri üyeleri yoktur:
+Bu örnekte, `Base` statik olmayan veri üyesi olmadığından `Derived` standart düzendir:
 
 ```cpp
 struct Base
@@ -112,15 +112,15 @@ struct Derived : public Base
 };
 ```
 
-Türetilmiş ayrıca standart Düzen olacaktır, `Base` veri üyeleri vardı ve `Derived` yalnızca üye işlevler vardı.
+`Base` veri üyeleri ve `Derived` yalnızca üye işlevleri içeriyorsa, türetilmiş Standart Düzen de olur.
 
 ## <a name="pod-types"></a>POD türleri
 
-Bir sınıf veya yapı hem basit hem de Standart Düzen olduğunda, bir POD (düz eski veriler) türü olur. Bellek düzeni POD türleri, bu nedenle bitişik değil ve her üyesinin bu türlerde ikili g/ç ve böylece baytı kopyalar, daha önce bildirilen üye gerçekleştirilebilir daha yüksek bir adresi vardır.  Skaler türler int gibi da POD türleridir. Sınıflar POD türleri yalnızca POD türleri statik olmayan veri üyesi olabilir.
+Bir sınıf veya yapı hem önemsiz hem de Standart Düzen olduğunda, bu bir POD (düz eski veriler) türüdür. POD türlerinin bellek düzeni bu nedenle birbirini karşılanmıştır ve her üyenin bundan önce belirtilen Üyeden daha yüksek bir adresi vardır ve bu nedenle bayt kopyaları ve ikili g/ç için bayt bu türler üzerinde gerçekleştirilebilir.  İnt gibi skaler türler de POD türleridir. Sınıf olan POD türleri, statik olmayan veri üyeleri olarak yalnızca POD türlerine sahip olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, önemsiz, Standart Düzen arasındaki farklılıklar gösterir ve POD türleri:
+Aşağıdaki örnekte, önemsiz, Standart Düzen ve POD türleri arasındaki farklılıklar gösterilmektedir:
 
 ```cpp
 #include <type_traits>
@@ -183,15 +183,15 @@ int main()
 }
 ```
 
-## <a name="literal_types"></a> Değişmez değer türleri
+## <a name="literal_types"></a>Değişmez değer türleri
 
-Değişmez değer türü, düzen derleme zamanında belirlenebilir biridir. Değişmez değer türleri şunlardır:
+Değişmez değer türü, düzen derleme zamanında belirlenebileceği bir türdür. Aşağıdakiler değişmez türlerdir:
 
 - void
 - skaler türler
 - başvurular
-- Void diziler, skaler türleri veya başvuruyor
-- Önemsiz bir yok Edicisi olan bir sınıf ve bir veya daha fazla constexpr oluşturucular olan hareket ya da oluşturucular kopyalayın. Ayrıca, tüm temel sınıflar ve statik olmayan veri üyeleri değişmez değer türleri olmalıdır ve kalıcı değil.
+- Void, skaler türler veya başvuruların dizileri
+- Önemsiz yok edicisi olan bir sınıf ve taşınmayan ya da kopya Oluşturucu olmayan bir veya daha fazla constexpr Oluşturucusu. Ayrıca, tüm statik olmayan veri üyeleri ve temel sınıflar değişmez türler olmalı ve geçici olmamalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

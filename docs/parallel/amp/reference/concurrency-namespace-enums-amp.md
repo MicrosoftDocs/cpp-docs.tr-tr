@@ -6,11 +6,11 @@ f1_keywords:
 - amp/Concurrency::queuing_mode
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
 ms.openlocfilehash: a4feb2f98fc288fa79c0f9d81e4ed882027eddf8
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126961"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855743"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 
@@ -28,7 +28,7 @@ enum access_type;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`access_type_auto`|Hızlandırıcı için en iyi `access_type` otomatik olarak seçin.|
 |`access_type_none`|Ayrılan. Ayırmaya yalnızca hızlandırıcıda erişilebilirdir ve CPU üzerinde değil.|
@@ -46,7 +46,7 @@ enum queuing_mode;
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`queuing_mode_immediate`|Her komutun (örneğin, [parallel_for_each işlevi (C++ amp)](concurrency-namespace-functions-amp.md#parallel_for_each), çağırana geri döndükten sonra karşılık gelen Hızlandırıcı cihazına gönderileceğini belirten bir sıraya alma modu.|
 |`queuing_mode_automatic`|Bu komutların [accelerator_view](accelerator-view-class.md) nesnesine karşılık gelen bir komut kuyruğu üzerinde sıralanmış olduğunu belirten bir sıraya alma modu. [Accelerator_view:: Flush](accelerator-view-class.md#flush) çağrıldığında, komutlar cihaza gönderilir.|

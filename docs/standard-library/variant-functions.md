@@ -1,5 +1,5 @@
 ---
-title: '&lt;değişken&gt; işlevleri'
+title: '&lt;Variant&gt; işlevleri'
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::get
@@ -7,17 +7,17 @@ f1_keywords:
 - variant/std::holds_alternative
 - variant/std::visit
 ms.openlocfilehash: d558eb086e076ba22722080b0c19f3d5733136d2
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267870"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865762"
 ---
-# <a name="ltvariantgt-functions"></a>&lt;değişken&gt; işlevleri
+# <a name="ltvariantgt-functions"></a>&lt;Variant&gt; işlevleri
 
-## <a name="get"></a> Al
+## <a name="get"></a>Al
 
-Nesnenin çeşidini alır.
+Bir nesnenin türevini alır.
 
 ```cpp
 template <size_t I, class... Types>
@@ -38,9 +38,9 @@ template <class T, class... Types>
     constexpr const T&& get(const variant<Types...>&&);
 ```
 
-## <a name="get_if"></a> get_if
+## <a name="get_if"></a>get_if
 
-Varsa bir nesnenin değişken alır.
+Varsa, bir nesnenin türevini alır.
 
 ```cpp
 template <size_t I, class... Types>
@@ -53,23 +53,23 @@ template <class T, class... Types>
     constexpr add_pointer_t<const T> get_if(const variant<Types...>*) noexcept;
 ```
 
-## <a name="holds_alternative"></a> holds_alternative
+## <a name="holds_alternative"></a>holds_alternative
 
-Dönüş **true** bir değişken zaten varsa.
+Bir değişken varsa **true** döndürün.
 
 ```cpp
 template <class T, class... Types>
     constexpr bool holds_alternative(const variant<Types...>&) noexcept;
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
 ```cpp
 template <class... Types>
     void swap(variant<Types...>&, variant<Types...>&) noexcept(see below);
 ```
 
-## <a name="variant_npos"></a> variant_npos
+## <a name="variant_npos"></a>variant_npos
 
 ```cpp
 namespace std {
@@ -77,9 +77,9 @@ namespace std {
 }
 ```
 
-## <a name="visit"></a> Ziyaret edin
+## <a name="visit"></a>ederken
 
-Sonraki taşır **değişken**.
+Sonraki **varyanta**gider.
 
 ```cpp
 template <class Visitor, class... Variants>

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
 ms.openlocfilehash: 6860697dd3adbe26197dd9075e84f402029e00a5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502017"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855702"
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 
-Bir uygulamanın OLE sistem hizmetlerini kullanabilmesi için, OLE sistem dll 'Lerini başlatması ve DLL 'Lerin doğru sürüm olduğunu doğrulaması gerekir. `AfxOleInit` İşlevi OLE sistem dll 'lerini başlatır.
+Bir uygulamanın OLE sistem hizmetlerini kullanabilmesi için, OLE sistem dll 'Lerini başlatması ve DLL 'Lerin doğru sürüm olduğunu doğrulaması gerekir. `AfxOleInit` işlevi OLE sistem dll 'Lerini başlatır.
 
 ### <a name="ole-initialization"></a>OLE Başlatma
 
@@ -67,7 +67,7 @@ MFC uygulaması için OLE desteğini başlatmak üzere bu işlevi çağırın. B
 >  Bir MFC DLL 'den **AfxOleInit** çağrılırsa, çağrı başarısız olur. Hata oluşur çünkü işlev DLL 'den çağrılırsa OLE sisteminin daha önce çağıran uygulama tarafından başlatılmış olduğunu varsaymaktadır.
 
 > [!NOTE]
->  MFC uygulamalarının tek iş parçacıklı grup (STA) olarak başlatılması gerekir. `InitInstance` Geçersiz kılmada [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) öğesini çağırırsanız, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
+>  MFC uygulamalarının tek iş parçacıklı grup (STA) olarak başlatılması gerekir. `InitInstance` geçersiz kılmada [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) öğesini çağırırsanız, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
 
 ### <a name="requirements"></a>Gereksinimler
 

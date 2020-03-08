@@ -47,15 +47,15 @@ helpviewer_keywords:
 - CDocTemplate [MFC], SetServerInfo
 ms.assetid: 14b41a1f-bf9d-4eac-b6a8-4c54ffcc77f6
 ms.openlocfilehash: 3b2d84af9be8e5c606cde8794b51e12207dcdec9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62163993"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855516"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate sınıfı
 
-Belge şablonları için temel işlevselliği tanımlayan soyut bir temel sınıf.
+Belge şablonları için temel işlevselliği tanımlayan bir soyut temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,57 +67,57 @@ class CDocTemplate : public CCmdTarget
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDocTemplate::CDocTemplate](#cdoctemplate)|Oluşturur bir `CDocTemplate` nesne.|
+|[CDocTemplate:: CDocTemplate](#cdoctemplate)|`CDocTemplate` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDocTemplate::AddDocument](#adddocument)|Bir belge için bir şablon ekler.|
-|[CDocTemplate::CloseAllDocuments](#closealldocuments)|Bu şablonla ilişkili tüm belgeleri kapatır.|
-|[CDocTemplate::CreateNewDocument](#createnewdocument)|Yeni bir belge oluşturulur.|
-|[CDocTemplate::CreateNewFrame](#createnewframe)|Bir belge ve görünüm içeren yeni bir çerçeve penceresi oluşturur.|
-|[CDocTemplate::CreateOleFrame](#createoleframe)|Bir OLE etkin çerçeve penceresi oluşturur.|
-|[CDocTemplate::CreatePreviewFrame](#createpreviewframe)|Zengin Önizleme için kullanılan bir alt pencere oluşturur.|
-|[CDocTemplate::GetDocString](#getdocstring)|Belge türü ile ilişkili bir dize alır.|
-|[CDocTemplate::GetFirstDocPosition](#getfirstdocposition)|Bu şablonla ilişkili ilk belgenin konumunu alır.|
-|[CDocTemplate::GetNextDoc](#getnextdoc)|Bir belge ve bir sonraki konumunu alır.|
-|[CDocTemplate::InitialUpdateFrame](#initialupdateframe)|Çerçeve penceresi başlatır ve isteğe bağlı olarak görünür yapar.|
-|[CDocTemplate::LoadTemplate](#loadtemplate)|Kaynaklar için yükleyen bir verilen `CDocTemplate` veya türetilmiş sınıf.|
-|[CDocTemplate::MatchDocType](#matchdoctype)|Eşleşme bir belge türü ve bu şablonu arasındaki güven düzeyini belirler.|
-|[CDocTemplate::OpenDocumentFile](#opendocumentfile)|Bir yol tarafından belirtilen bir dosya açar.|
-|[CDocTemplate::RemoveDocument](#removedocument)|Bir şablondan bir belge kaldırır.|
-|[CDocTemplate::SaveAllModified](#saveallmodified)|Değiştirilmiş bu şablonla ilişkili tüm belgeleri kaydeder.|
-|[CDocTemplate::SetContainerInfo](#setcontainerinfo)|OLE kapsayıcıları için kaynakları yerinde OLE öğesini düzenlerken belirler.|
-|[CDocTemplate::SetDefaultTitle](#setdefaulttitle)|Varsayılan başlık, belge pencerenin başlık çubuğunda görüntülenir.|
-|[CDocTemplate::SetPreviewInfo](#setpreviewinfo)|İşlem dışı kurulumları Önizleme işleyicisi.|
-|[CDocTemplate::SetServerInfo](#setserverinfo)|Sunucu belgesinin katıştırılmış ya da yerinde düzenlenirken, kaynak ve sınıflarını belirler.|
+|[CDocTemplate:: AddDocument](#adddocument)|Bir şablona belge ekler.|
+|[CDocTemplate:: CloseAllDocuments](#closealldocuments)|Bu şablonla ilişkili tüm belgeleri kapatır.|
+|[CDocTemplate:: CreateNewDocument](#createnewdocument)|Yeni bir belge oluşturur.|
+|[CDocTemplate:: CreateNewFrame](#createnewframe)|Belge ve görünüm içeren yeni bir çerçeve penceresi oluşturur.|
+|[CDocTemplate:: CreateOleFrame](#createoleframe)|OLE etkin bir çerçeve penceresi oluşturur.|
+|[CDocTemplate:: Createönizleme çerçevesi](#createpreviewframe)|Zengin Önizleme için kullanılan bir alt çerçeve oluşturur.|
+|[CDocTemplate:: GetDocString](#getdocstring)|Belge türüyle ilişkili bir dize alır.|
+|[CDocTemplate:: GetFirstDocPosition](#getfirstdocposition)|Bu şablonla ilişkili ilk belgenin konumunu alır.|
+|[CDocTemplate:: GetNextDoc](#getnextdoc)|Bir belgeyi ve bir sonraki konumunu alır.|
+|[CDocTemplate:: ınitialupdateframe](#initialupdateframe)|Çerçeve penceresini başlatır ve isteğe bağlı olarak görünür hale getirir.|
+|[CDocTemplate:: LoadTemplate](#loadtemplate)|Belirli bir `CDocTemplate` veya türetilmiş sınıf için kaynakları yükler.|
+|[CDocTemplate:: MatchDocType](#matchdoctype)|Bir belge türü ve bu şablon arasındaki eşleşmenin güven derecesini belirler.|
+|[CDocTemplate:: OpenDocumentFile](#opendocumentfile)|Bir yol adıyla belirtilen bir dosya açar.|
+|[CDocTemplate:: RemoveDocument](#removedocument)|Bir şablondan belge kaldırır.|
+|[CDocTemplate:: SaveAllModified](#saveallmodified)|Bu şablonla ilişkili tüm belgeleri kaydeder.|
+|[CDocTemplate:: SetContainerInfo](#setcontainerinfo)|Yerinde OLE öğesi düzenlenirken OLE kapsayıcılarının kaynaklarını belirler.|
+|[CDocTemplate:: SetDefaultTitle](#setdefaulttitle)|Belge penceresinin başlık çubuğundaki varsayılan başlığı görüntüler.|
+|[CDocTemplate:: Setpreviewınınfo](#setpreviewinfo)|İşlem Önizleme işleyicisini ayarlar.|
+|[CDocTemplate:: SetServerInfo](#setserverinfo)|Sunucu belgesi katıştırılmış veya yerinde düzenlendiğinde kaynakları ve sınıfları belirler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızın uygulamada genellikle bir veya daha fazla belge şablonu oluşturma `InitInstance` işlevi. Üç tür sınıflar arasındaki ilişkileri bir belge şablonu tanımlar:
+Genellikle uygulamanızın `InitInstance` işlevinin uygulamasında bir veya daha fazla belge şablonu oluşturursunuz. Belge şablonu, üç tür sınıf arasındaki ilişkileri tanımlar:
 
-- Öğesinden türetilen bir belge sınıfı `CDocument`.
+- `CDocument`türettiğiniz bir belge sınıfı.
 
-- Yukarıda listelenen belge sınıfı verileri görüntüleyen bir görünüm sınıfı. Bu sınıftan türetilip `CView`, `CScrollView`, `CFormView`, veya `CEditView`. (Ayrıca `CEditView` doğrudan.)
+- Yukarıda listelenen belge sınıfından verileri görüntüleyen bir görünüm sınıfı. Bu sınıfı `CView`, `CScrollView`, `CFormView`veya `CEditView`türetilebilir. (`CEditView` doğrudan de kullanabilirsiniz.)
 
-- Görünüm içeren bir çerçeve penceresi sınıfı. Tek Belgeli Arabirim (SDI) uygulaması için bu sınıftan türetilen `CFrameWnd`. Bu sınıftan türetilen bir birden çok belge arabirimi (MDI) uygulaması için `CMDIChildWnd`. Çerçeve penceresi davranışını özelleştirmek gerekmiyorsa, kullanabileceğiniz `CFrameWnd` veya `CMDIChildWnd` kendi sınıf türetme olmadan doğrudan.
+- Görünümü içeren bir çerçeve pencere sınıfı. Tek belgeli arabirim (SDI) uygulaması için, bu sınıfı `CFrameWnd`türetirsiniz. Birden çok belge arabirimi (MDI) uygulaması için, bu sınıfı `CMDIChildWnd`türetirsiniz. Çerçeve penceresinin davranışını özelleştirmeniz gerekmiyorsa, doğrudan kendi sınıfınızı türetmeden `CFrameWnd` veya `CMDIChildWnd` kullanabilirsiniz.
 
-Uygulamanızın desteklediği belge her tür için bir belge şablonu vardır. Örneğin, elektronik tablolar hem metin belgeleri uygulamanız destekliyorsa, uygulama iki belge şablonu nesnesi vardır. Her bir belge şablonu oluşturma ve kendi türünün tüm belgeleri yönetme sorumludur.
+Uygulamanızda desteklediği her belge türü için bir belge şablonu vardır. Örneğin, uygulamanız hem elektronik tabloları hem de metin belgelerini destekliyorsa, uygulamanın iki belge şablonu nesnesi vardır. Her belge şablonu, türünün tüm belgelerini oluşturmaktan ve yönetmekten sorumludur.
 
-Belge şablonu işaretçileri depolar `CRuntimeClass` belge, Görünüm ve çerçeve penceresi sınıfları için nesneleri. Bunlar `CRuntimeClass` nesneleri, bir belge şablonu oluşturma sırasında belirtilir.
+Belge şablonu, belge, görünüm ve çerçeve penceresi sınıfları için `CRuntimeClass` nesnelerine işaretçiler depolar. Bu `CRuntimeClass` nesneleri bir belge şablonu oluşturulurken belirtilir.
 
-Belge şablonu belge türlerinin (örneğin, menü, simge veya Hızlandırıcı tablo kaynaklarını) ile birlikte kullanılan kaynak Kimliğini içerir. Belge şablonu dizeleri kendi belge türü hakkında ek bilgi içeren de vardır. Bunlar belge türü (örneğin, "Çalışma") ve dosya uzantısını (örneğin, ".xls") adını içerir. İsteğe bağlı olarak, uygulamanın kullanıcı arabirimini, Windows Dosya Yöneticisi ve nesne bağlama ve Katıştırma (OLE) desteği tarafından kullanılan diğer dizeleri içerebilir.
+Belge şablonu, belge türü (menü, simge veya Hızlandırıcı tablo kaynakları gibi) ile kullanılan kaynakların KIMLIĞINI içerir. Belge şablonunda Ayrıca belge türü hakkında ek bilgiler içeren dizeler de vardır. Bunlar belge türünün adını (örneğin, "çalışma sayfası") ve dosya uzantısını (örneğin, ". xls") içerir. İsteğe bağlı olarak, uygulamanın kullanıcı arabirimi, Windows Dosya Yöneticisi ve nesne bağlama ve Katıştırma (OLE) desteği tarafından kullanılan diğer dizeleri içerebilir.
 
-Uygulamanız bir OLE kapsayıcısı ve/veya sunucu ise, belge şablonunu da yerinde etkinleştirme sırasında kullanılan menü kimliği tanımlar. Uygulamanız OLE sunucusu ise, araç çubuğu ve menü yerinde etkinleştirme sırasında kullanılan kimliği belge şablonu tanımlar. Çağırarak bu ek OLE kaynakları belirtmek `SetContainerInfo` ve `SetServerInfo`.
+Uygulamanız bir OLE kapsayıcısı ve/veya sunucusu ise, belge şablonu Ayrıca yerinde etkinleştirme sırasında kullanılan menünün KIMLIĞINI de tanımlar. Uygulamanız bir OLE sunucusu ise, belge şablonu, yerinde etkinleştirme sırasında kullanılan araç çubuğunun ve menünün KIMLIĞINI tanımlar. Bu ek OLE kaynaklarını `SetContainerInfo` ve `SetServerInfo`çağırarak belirlersiniz.
 
-Çünkü `CDocTemplate` soyut bir sınıf olan sınıf doğrudan kullanamazsınız. Tipik bir uygulaması iki birini kullanan `CDocTemplate`-türetilmiş sınıflar Microsoft Foundation Class Kitaplığı tarafından sağlanan: `CSingleDocTemplate`, SDI, uygular ve `CMultiDocTemplate`, MDI uygular. Belge şablonlarını kullanma hakkında daha fazla bilgi için bu sınıflar bakın.
+`CDocTemplate` soyut bir sınıf olduğundan, sınıfı doğrudan kullanamazsınız. Tipik bir uygulama, Microsoft Foundation Class Kitaplığı tarafından sunulan iki `CDocTemplate`türetilmiş sınıftan birini kullanır: SDI uygulayan `CSingleDocTemplate`ve MDI uygulayan `CMultiDocTemplate`. Belge şablonlarını kullanma hakkında daha fazla bilgi için bu sınıflara bakın.
 
-Uygulamanız SDI veya MDI tamamen farklı bir kullanıcı arabirimi paradigma gerektiriyorsa, kendi sınıfınızı türetebilirsiniz `CDocTemplate`.
+Uygulamanız SDI veya MDI 'dan temelde farklılık gösteren bir kullanıcı arabirimi paradigmasını gerektiriyorsa, `CDocTemplate`kendi sınıfınızı türetebilirsiniz.
 
-Daha fazla bilgi için `CDocTemplate`, bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md).
+`CDocTemplate`hakkında daha fazla bilgi için bkz. [Belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -129,11 +129,11 @@ Daha fazla bilgi için `CDocTemplate`, bkz: [belge şablonları ve belge/görün
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="adddocument"></a>  CDocTemplate::AddDocument
+##  <a name="adddocument"></a>CDocTemplate:: AddDocument
 
-Bir belge için bir şablon eklemek için bu işlevi kullanın.
+Bir şablona belge eklemek için bu işlevi kullanın.
 
 ```
 virtual void AddDocument(CDocument* pDoc);
@@ -142,15 +142,15 @@ virtual void AddDocument(CDocument* pDoc);
 ### <a name="parameters"></a>Parametreler
 
 *pDoc*<br/>
-Eklenecek belgeye bir işaretçi.
+Eklenecek belgeye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen sınıfların [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) ve [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) bu işlevi geçersiz. Kendi belge şablonu sınıfından türetilen `CDocTemplate`, bu işlev, türetilmiş sınıf geçersiz kılmanız gerekir.
+Türetilmiş sınıflar [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) ve [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) bu işlevi geçersiz kılar. Kendi belge şablonu sınıfınızı `CDocTemplate`türettiğinizde, türetilmiş sınıfınız bu işlevi geçersiz kılmalıdır.
 
-##  <a name="cdoctemplate"></a>  CDocTemplate::CDocTemplate
+##  <a name="cdoctemplate"></a>CDocTemplate:: CDocTemplate
 
-Oluşturur bir `CDocTemplate` nesne.
+`CDocTemplate` nesnesi oluşturur.
 
 ```
 CDocTemplate (
@@ -163,9 +163,9 @@ CDocTemplate (
 ### <a name="parameters"></a>Parametreler
 
 *nIDResource*<br/>
-Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.
+Belge türüyle kullanılan kaynakların KIMLIĞINI belirtir. Bu, menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.
 
-'\N' karakteriyle ayrılmış en fazla yedi alt dizeler dize kaynağını oluşur ('\n' karakteri bir alt dizesi değilse, bir yer tutucu gereklidir; ancak, sonunda '\n' karakterler gerekli değildir) Bu alt dizeleri belge türü açıklar. Alt dizeler hakkında daha fazla bilgi için bkz: [GetDocString](#getdocstring). Bu dize kaynağı uygulama kaynak dosyası bulunamadı. Örneğin:
+Dize kaynağı, ' \n ' karakteriyle ayrılmış en fazla yedi alt dizeden oluşur (alt dize dahil değilse, bir yer tutucu olarak ' \n ' karakteri gerekir; ancak sondaki ' \n ' karakterleri gerekli değildir); Bu alt dizeler belge türünü anlatmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz. [GetDocString](#getdocstring). Bu dize kaynağı, uygulamanın kaynak dosyasında bulunur. Örnek:
 
 ```RC
 // MYCALC.RC
@@ -175,22 +175,22 @@ BEGIN
 END
 ```
 
-Unutmayın; dize '\n' karakteri ile başlar. ilk alt dizeyi MDI uygulamaları için kullanılmaz ve bu nedenle dahil olmadığından budur. Dize Düzenleyicisi'ni kullanarak bu dizeni düzenleyebilirsiniz; Tüm dize tek bir giriş dizesini Düzenleyicisi'nde, olarak değil yedi ayrı girişleri olarak görünür.
+Dizenin bir ' \n ' karakteriyle başlayacağını unutmayın; Bunun nedeni, ilk alt dizenin MDI uygulamaları için kullanılmadığından ve bu nedenle dahil edilmez. Bu dizeyi dize düzenleyicisini kullanarak düzenleyebilirsiniz; Tüm dize, dize düzenleyicisinde yedi ayrı girdi olarak değil tek bir girdi olarak görünür.
 
 *pDocClass*<br/>
-İşaret `CRuntimeClass` belge sınıfının nesne. Bu sınıf, bir `CDocument`-türetilmiş tanımladığınız belgelerinizi temsil eden sınıf.
+Belge sınıfının `CRuntimeClass` nesnesine işaret eder. Bu sınıf, belgelerinizi temsil etmek için tanımladığınız `CDocument`türetilmiş bir sınıftır.
 
 *pFrameClass*<br/>
-İşaret `CRuntimeClass` çerçeve penceresi sınıfın nesnesi. Bu sınıf olabilir bir `CFrameWnd`-derived class veya olabilir `CFrameWnd` kendisi için ana çerçeve penceresinin varsayılan davranışı istiyorsanız.
+Çerçeve penceresi sınıfının `CRuntimeClass` nesnesine işaret eder. Bu sınıf `CFrameWnd`türetilmiş bir sınıf olabilir veya ana çerçeve pencerenizin varsayılan davranışını istiyorsanız `CFrameWnd` olabilir.
 
 *pViewClass*<br/>
-İşaret `CRuntimeClass` nesne görünüm sınıfı. Bu sınıf, bir `CView`-türetilmiş sınıf belgelerinizi görüntülenecek tanımlayın.
+Görünüm sınıfının `CRuntimeClass` nesnesine işaret eder. Bu sınıf, belgelerinizi göstermek için tanımladığınız `CView`türetilmiş bir sınıftır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi oluşturmak için kullanmak bir `CDocTemplate` nesne. Dinamik olarak ayırabilir bir `CDocTemplate` nesne ve geçirin [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) gelen `InitInstance` uygulama sınıfının üye işlevi.
+`CDocTemplate` nesnesi oluşturmak için bu üye işlevini kullanın. `CDocTemplate` nesnesini dinamik olarak ayırın ve uygulama sınıfınızın `InitInstance` üye işlevinden [CWinApp:: AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) 'e geçirin.
 
-##  <a name="closealldocuments"></a>  CDocTemplate::CloseAllDocuments
+##  <a name="closealldocuments"></a>CDocTemplate:: CloseAllDocuments
 
 Tüm açık belgeleri kapatmak için bu üye işlevini çağırın.
 
@@ -205,13 +205,13 @@ Kullanılmadı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, genellikle dosya Çıkış komutunun bir parçası kullanılır. Bu işlev varsayılan uygulamasını çağırır [CDocument::DeleteContents](../../mfc/reference/cdocument-class.md#deletecontents) belgenin verilerini ve ardından tüm görünümleri için çerçeve pencereleri ekli belgeyi kapatır, üye işlevi.
+Bu üye işlev genellikle dosya çıkış komutunun bir parçası olarak kullanılır. Bu işlevin varsayılan uygulanması [CDocument::D eleteContents](../../mfc/reference/cdocument-class.md#deletecontents) üye işlevini çağırarak belgenin verilerini siler ve ardından belgeye ekli tüm görünümlerin çerçeve pencerelerini kapatır.
 
-Belge kapatılmadan önce özel bir temizleme işlemi işlem gerçekleştirmesine izin istemek bu işlevi geçersiz. Örneğin, bir veritabanındaki bir kaydı belgeyi temsil ediyorsa, veritabanı kapatmak için bu işlevi geçersiz kılmak isteyebilirsiniz.
+Kullanıcının Belge kapatılmadan önce özel temizleme işlemi gerçekleştirmesini gerektirmek istiyorsanız bu işlevi geçersiz kılın. Örneğin, belge bir veritabanındaki kaydı temsil ediyorsa, veritabanını kapatmak için bu işlevi geçersiz kılmak isteyebilirsiniz.
 
-##  <a name="createnewdocument"></a>  CDocTemplate::CreateNewDocument
+##  <a name="createnewdocument"></a>CDocTemplate:: CreateNewDocument
 
-Bu belge şablonuyla ilişkili türün yeni bir belge oluşturmak için bu üye işlevini çağırın.
+Bu belge şablonuyla ilişkili türde yeni bir belge oluşturmak için bu üye işlevini çağırın.
 
 ```
 virtual CDocument* CreateNewDocument();
@@ -219,11 +219,11 @@ virtual CDocument* CreateNewDocument();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan belgeyi veya bir hata oluşursa NULL bir işaretçi.
+Yeni oluşturulan belgeye yönelik bir işaretçi veya bir hata oluşursa NULL.
 
-##  <a name="createnewframe"></a>  CDocTemplate::CreateNewFrame
+##  <a name="createnewframe"></a>CDocTemplate:: CreateNewFrame
 
-Bir belge ve görünüm içeren yeni bir çerçeve penceresi oluşturur.
+Belge ve görünüm içeren yeni bir çerçeve penceresi oluşturur.
 
 ```
 virtual CFrameWnd* CreateNewFrame(
@@ -234,24 +234,24 @@ virtual CFrameWnd* CreateNewFrame(
 ### <a name="parameters"></a>Parametreler
 
 *pDoc*<br/>
-Belgeyi yeni bir çerçeve penceresi başvurmanız gerekir. NULL olabilir.
+Yeni çerçeve penceresinin başvurması gereken belge. NULL olabilir.
 
 *pOther*<br/>
-Çerçeve penceresi temel olan yeni bir çerçeve penceresi. NULL olabilir.
+Yeni çerçeve penceresinin temel alınacağı çerçeve penceresi. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan çerçeve penceresi ya da bir hata oluşursa NULL bir işaretçi.
+Yeni oluşturulan çerçeve penceresine yönelik bir işaretçi veya bir hata oluşursa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateNewFrame` kullanan `CRuntimeClass` nesneleri geçirilen bir görünümü ve ekli belge ile yeni bir çerçeve penceresi oluşturmak için oluşturucu. Varsa *pDoc* parametre NULL ise, framework izleme iletisi üreten.
+`CreateNewFrame`, bir görünüm ve belge eklenmiş yeni bir çerçeve penceresi oluşturmak için oluşturucuya geçirilen `CRuntimeClass` nesnelerini kullanır. *PDoc* parametresi null ise, çerçeve bir izleme iletisi çıkarır.
 
-*POther* parametresi, komut penceresinde yeni uygulamak için kullanılır. Bu, bir çerçeve penceresinde, yeni bir çerçeve penceresi modeli sağlar. Yeni bir çerçeve penceresi genellikle görünmez oluşturulur. Çerçeve pencereleri dışında dosya yeni ve dosya açık standart framework uygulamasını oluşturmak için bu işlevi çağırın.
+*Pother* parametresi pencere yeni komutunu uygulamak için kullanılır. Yeni çerçeve penceresini modelleyebilir bir çerçeve penceresi sağlar. Yeni çerçeve penceresi genellikle görünmez olarak oluşturulur. Yeni dosya ve dosya aç standart Framework uygulamasının dışında çerçeve pencereleri oluşturmak için bu işlevi çağırın.
 
-##  <a name="createoleframe"></a>  CDocTemplate::CreateOleFrame
+##  <a name="createoleframe"></a>CDocTemplate:: CreateOleFrame
 
-Bir OLE çerçeve penceresi oluşturur.
+OLE çerçevesi penceresi oluşturur.
 
 ```
 CFrameWnd* CreateOleFrame(
@@ -263,25 +263,25 @@ CFrameWnd* CreateOleFrame(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Çerçevenin üst penceresine bir işaretçi.
+Çerçevenin üst penceresine yönelik bir işaretçi.
 
 *pDoc*<br/>
-Bir işaretçi belgeye yeni bir OLE çerçeve penceresi başvurmanız gerekir.
+Yeni OLE çerçevesi penceresinin başvurması gereken belgeye yönelik bir işaretçi.
 
 *bCreateView*<br/>
-Bir görünüm birlikte çerçeve oluşturulup oluşturulmayacağını belirler.
+Kareyle birlikte bir görünümün oluşturulup oluşturulmayacağını belirler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bir çerçeve penceresi için bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa çerçeve penceresine yönelik bir işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *bCreateView* sıfırsa, boş bir çerçeve oluşturulur.
+*BCreateView* sıfırsa boş bir çerçeve oluşturulur.
 
-##  <a name="getdocstring"></a>  CDocTemplate::GetDocString
+##  <a name="getdocstring"></a>CDocTemplate:: GetDocString
 
-Belge türü ile ilişkili bir dize alır.
+Belge türüyle ilişkili bir dize alır.
 
 ```
 virtual BOOL GetDocString(
@@ -292,36 +292,36 @@ virtual BOOL GetDocString(
 ### <a name="parameters"></a>Parametreler
 
 *rString*<br/>
-Bir başvuru bir `CString` işlevi döndüğünde dizeyi içeren nesne.
+İşlevin döndürdüğü dizeyi içeren `CString` nesnesine bir başvuru.
 
-*Dizin*<br/>
-Belge türü tanımlayan dizeden alınan alt dizini. Bu parametre aşağıdaki değerlerden biri olabilir:
+*indeks*<br/>
+Belge türünü tanımlayan dizeden alınan alt dizenin bir dizini. Bu parametre aşağıdaki değerlerden birine sahip olabilir:
 
-- `CDocTemplate::windowTitle` Uygulama pencerenin başlık çubuğunu (örneğin, "Microsoft Excel") görünen adı. SDI uygulamaları için belge şablonunda yalnızca sunar.
+- uygulama penceresinin başlık çubuğunda görünen adı `CDocTemplate::windowTitle` (örneğin, "Microsoft Excel"). Yalnızca SDI uygulamalarına ait belge şablonunda bulunur.
 
-- `CDocTemplate::docName` Varsayılan belge adı (örneğin, "Sayfası") için kök. Bu kök yanı sıra, birkaç kullanıcı (örneğin, "Sayfa1" veya "Sheet2") ve Dosya menüsünden Yeni bir komut seçtiği zaman bu türdeki yeni bir belge için varsayılan ad kullanılır. Belirtilmezse, "Adsız" varsayılan olarak kullanılır.
+- Varsayılan belge adı için kök `CDocTemplate::docName` (örneğin, "sayfa"). Bu kök, ve bir sayı, Kullanıcı Dosya menüsünden Yeni komutu seçtiğinde bu türün varsayılan adı için kullanılır (örneğin, "Sheet1" veya "Sheet2"). Belirtilmemişse, varsayılan olarak "Başlıksız" kullanılır.
 
-- `CDocTemplate::fileNewName` Bu belge türü adı. Uygulama birden fazla belge türünü destekliyorsa, bu dize (örneğin, "Çalışma") yeni dosya iletişim kutusunda görüntülenir. Belirtilmezse, belge türü kullanarak dosya yeni komutunun erişilemiyor.
+- Bu belge türünün adı `CDocTemplate::fileNewName`. Uygulama birden fazla belge türünü destekliyorsa, bu dize dosya yeni iletişim kutusunda (örneğin, "çalışma sayfası") görüntülenir. Belirtilmezse, dosya yeni komutu kullanılarak belge türüne erişilemez.
 
-- `CDocTemplate::filterName` Belge türü ve bu tür belgeleri eşleşen bir joker karakter filtresi açıklaması. Bu dize, Dosya Aç iletişim kutusunda (örneğin, "çalışma (*.xls)") listelenecek dosya türü açılan listesinde görüntülenir. Belirtilmezse, belge türü Dosya Aç komutunu kullanarak erişilemiyor.
+- belge türünün açıklaması ve bu türdeki belgelerle eşleşen bir joker karakter filtresi `CDocTemplate::filterName`. Bu dize, dosya Aç iletişim kutusunda (örneğin, "çalışma sayfaları (*. xls)") açılan liste dosyalarını Listele listesinde görüntülenir. Belirtilmemişse, dosya Aç komutu kullanılarak belge türüne erişilemez.
 
-- `CDocTemplate::filterExt` Bu tür (örneğin, ".xls") belgeleri için uzantısı. Belirtilmezse, belge türü Dosya Aç komutunu kullanarak erişilemiyor.
+- Bu türdeki belgeler için `CDocTemplate::filterExt` uzantısı (örneğin, ". xls"). Belirtilmemişse, dosya Aç komutu kullanılarak belge türüne erişilemez.
 
-- `CDocTemplate::regFileTypeId` Windows tarafından tutulan kayıt defteri veritabanında depolanacak belge türü için tanımlayıcı. Yalnızca iç kullanım için (örneğin, "ExcelWorksheet") dizedir. Belirtilmezse, belge türü Windows Dosya Yöneticisi ile kaydedilemez.
+- Windows tarafından tutulan kayıt veritabanında depolanacak belge türü için tanımlayıcı `CDocTemplate::regFileTypeId`. Bu dize yalnızca iç kullanım içindir (örneğin, "ExcelWorksheet"). Belirtilmemişse, belge türü Windows Dosya Yöneticisi ile kaydedilemez.
 
-- `CDocTemplate::regFileTypeName` Kayıt defteri veritabanındaki depolanacak belge türü adı. Bu dize (örneğin, "Microsoft Excel çalışma sayfası") kayıt defteri veritabanında erişen uygulamalar iletişim kutularında görüntülenebilir.
+- kayıt veritabanında depolanacak belge türünün adı `CDocTemplate::regFileTypeName`. Bu dize, kayıt veritabanına erişen uygulamaların iletişim kutularında görüntülenebilir (örneğin, "Microsoft Excel çalışma sayfası").
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen alt dizeyle bulundu olursa sıfır dışı; Aksi durumda 0.
+Belirtilen alt dize bulunursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belge türü açıklayan belirli bir alt dizeyi almak için bu işlevi çağırın. Bu alt dizeleri içeren dize, belge şablonunda depolanır ve uygulama için kaynak dosyasındaki dizesinden türetilir. Framework, uygulamanın kullanıcı arabirimini için ihtiyaç duyduğu dizelerini almak için bu işlevi çağırır. Uygulamanızın belgeleri için bir dosya adı uzantısı belirtilmişse framework bir giriş için Windows kayıt defteri veritabanında eklerken de bu işlevi çağırır; Bu, Windows Dosya Yöneticisi'nden açılması belgeler sağlar.
+Belge türünü açıklayan belirli bir alt dizeyi almak için bu işlevi çağırın. Bu alt dizeleri içeren dize, belge şablonunda depolanır ve uygulamanın kaynak dosyasındaki bir dizeden türetilir. Framework, uygulamanın kullanıcı arabirimi için ihtiyaç duyacağı dizeleri almak için bu işlevi çağırır. Uygulamanızın belgeleri için bir dosya adı uzantısı belirttiyseniz, çerçeve Windows kayıt veritabanına bir giriş eklerken bu işlevi de çağırır; Bu, belgelerin Windows Dosya Yöneticisi 'nden açılmasını sağlar.
 
-Yalnızca kendi sınıftan türetme, bu işlevi çağırın `CDocTemplate`.
+Yalnızca kendi sınıfınızı `CDocTemplate`türetmeniz durumunda bu işlevi çağırın.
 
-##  <a name="getfirstdocposition"></a>  CDocTemplate::GetFirstDocPosition
+##  <a name="getfirstdocposition"></a>CDocTemplate:: GetFirstDocPosition
 
 Bu şablonla ilişkili ilk belgenin konumunu alır.
 
@@ -331,17 +331,17 @@ virtual POSITION GetFirstDocPosition() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu belge şablonuyla ilişkili belgelerin listesini yinelemek için kullanılabilecek bir konum değeri; veya liste boşsa, NULL.
+Bu belge şablonuyla ilişkili belge listesinde yinelemek için kullanılabilen bir konum değeri; veya liste boşsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablonla ilişkili belgeler listesinde ilk belgenin konumunu almak için bu işlevi kullanın. Bağımsız değişken olarak konum değerini kullanmak [CDocTemplate::GetNextDoc](#getnextdoc) şablonuyla ilişkili belgelerin listesini yinelemek için.
+Bu şablonla ilişkili belge listesindeki ilk belgenin konumunu almak için bu işlevi kullanın. Şablonla ilişkili belge listesini yinelemek için [CDocTemplate:: GetNextDoc](#getnextdoc) için bir bağımsız DEĞIŞKEN olarak konum değerini kullanın.
 
-[CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) ve [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) hem de bu saf sanal işlevi geçersiz. Herhangi bir sınıf, türetilen `CDocTemplate` bu işlev geçersiz kılmanız gerekir.
+[CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) ve [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) her ikisi de bu saf sanal işlevi geçersiz kılar. `CDocTemplate` türettiğiniz herhangi bir sınıf Ayrıca bu işlevi geçersiz kılmalıdır.
 
-##  <a name="getnextdoc"></a>  CDocTemplate::GetNextDoc
+##  <a name="getnextdoc"></a>CDocTemplate:: GetNextDoc
 
-Tarafından tanımlanan liste öğesi alır *RPO'lar*, ardından ayarlar *RPO'lar* konumu değerine listedeki sonraki giriş.
+*RPos*tarafından tanımlanan liste öğesini alır ve *rPos* 'u LISTEDEKI bir sonraki girdinin konum değerine ayarlar.
 
 ```
 virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
@@ -349,24 +349,24 @@ virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu şablonla ilişkili belgelerin listesini sonraki belgeye yönelik işaretçi.
+Bu şablonla ilişkili belge listesindeki sonraki belgeye yönelik bir işaretçi.
 
 ### <a name="parameters"></a>Parametreler
 
-*RPO*<br/>
-Önceki bir çağrı tarafından döndürülen bir konum değeri başvurusu [GetFirstDocPosition](#getfirstdocposition) veya `GetNextDoc`.
+*RPO 'lar*<br/>
+Önceki [GetFirstDocPosition](#getfirstdocposition) veya `GetNextDoc`çağrısıyla döndürülen bir konum değerine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alınan öğe listesinde, son öğesinin yeni değeri ise *RPO'lar* NULL olarak ayarlandı.
+Alınan öğe listedeki son ise, *rPos* 'un yenı değeri null olarak ayarlanır.
 
-Kullanabileceğiniz `GetNextDoc` çağrısıyla ilk konumunu kurarsanız ileriye doğru yineleme döngüsünde [GetFirstDocPosition](#getfirstdocposition).
+İlk konumu [GetFirstDocPosition](#getfirstdocposition)çağrısıyla birlikte ayarlarsanız, bir iletme yineleme döngüsünde `GetNextDoc` kullanabilirsiniz.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-##  <a name="initialupdateframe"></a>  CDocTemplate::InitialUpdateFrame
+##  <a name="initialupdateframe"></a>CDocTemplate:: ınitialupdateframe
 
-Çerçeve penceresi başlatır ve isteğe bağlı olarak görünür yapar.
+Çerçeve penceresini başlatır ve isteğe bağlı olarak görünür hale getirir.
 
 ```
 virtual void InitialUpdateFrame(
@@ -378,23 +378,23 @@ virtual void InitialUpdateFrame(
 ### <a name="parameters"></a>Parametreler
 
 *pFrame*<br/>
-İlk Güncelleştirme Onayı gereken çerçeve penceresi.
+İlk güncelleştirmeye ihtiyacı olan çerçeve penceresi.
 
 *pDoc*<br/>
-Belge çerçeve ilişkilidir. NULL olabilir.
+Çerçevenin ilişkilendirildiği belge. NULL olabilir.
 
 *bMakeVisible*<br/>
-Çerçeve görünür ve etkin olup olmayacağını belirtir.
+Çerçevenin görünür ve etkin hale gelmesi gerekip gerekmediğini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı `IntitialUpdateFrame` ile yeni bir çerçeve oluşturduktan sonra `CreateNewFrame`. Bu işlevi çağırmak, görünümleri almak için bu çerçeve penceresinde neden kendi `OnInitialUpdate` çağırır. Ayrıca, yoksa daha önce etkin bir görünüm, çerçeve penceresinin birincil görünüm etkinleştirilir; birincil görünüm Kimliği'nın AFX_IDW_PANE_FIRST alt ile bir görünümüdür. Son olarak, çerçeve penceresi görünür hale gelir, *bMakeVisible* sıfır değil. Varsa *bMakeVisible* sıfırsa, geçerli odak ve çerçeve penceresi görünür durumunu değişmeden kalır.
+`CreateNewFrame`ile yeni bir çerçeve oluşturduktan sonra `IntitialUpdateFrame` çağırın. Bu işlevi çağırmak, bu çerçeve penceresindeki görünümlerin `OnInitialUpdate` çağrılarını almasına neden olur. Ayrıca, daha önce etkin bir görünüm yoksa, çerçeve penceresinin birincil görünümü etkin hale getirilir; birincil görünüm, AFX_IDW_PANE_FIRST alt KIMLIĞI olan bir görünümüdür. Son olarak, *bMakeVisible* sıfır değilse çerçeve penceresi görünür hale getirilir. *BMakeVisible* sıfırsa, çerçeve penceresinin geçerli odağı ve görünür durumu değişmeden kalır.
 
-Framework'ün uygulaması dosya yeni ve Dosya Aç kullanırken bu işlevi çağırmak gerekli değildir.
+Framework 'ün yeni dosya ve dosya açma uygulamasının uygulanması kullanılırken bu işlevi çağırmak gerekli değildir.
 
-##  <a name="loadtemplate"></a>  CDocTemplate::LoadTemplate
+##  <a name="loadtemplate"></a>CDocTemplate:: LoadTemplate
 
-Kaynaklar için yükleyen bir verilen `CDocTemplate` veya türetilmiş sınıf.
+Belirli bir `CDocTemplate` veya türetilmiş sınıf için kaynakları yükler.
 
 ```
 virtual void LoadTemplate();
@@ -402,11 +402,11 @@ virtual void LoadTemplate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, kaynaklar için yüklemek için framework tarafından çağrılan bir verilen `CDocTemplate` veya türetilmiş sınıf. Şablon genel yapılandırılmakta olan normal olarak, oluşturma sırasında dışında çağrılır. Bu durumda, çağrı `LoadTemplate` kadar Gecikmeli [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) çağrılır.
+Bu üye işlevi, belirli bir `CDocTemplate` veya türetilmiş sınıf için kaynakları yüklemek üzere çerçevesi tarafından çağırılır. Normalde oluşturma sırasında, şablonun Global olarak oluşturulması dışında çağrılır. Bu durumda, [CWinApp:: AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) çağrılana kadar `LoadTemplate` çağrısı gecikir.
 
-##  <a name="matchdoctype"></a>  CDocTemplate::MatchDocType
+##  <a name="matchdoctype"></a>CDocTemplate:: MatchDocType
 
-Eşleşme bir belge türü ve bu şablonu arasındaki güven düzeyini belirler.
+Bir belge türü ve bu şablon arasındaki eşleşmenin güven derecesini belirler.
 
 ```
 virtual Confidence MatchDocType(
@@ -417,14 +417,14 @@ virtual Confidence MatchDocType(
 ### <a name="parameters"></a>Parametreler
 
 *lpszPathName*<br/>
-Belirlenecek türü olan dosyasının yol adı.
+Türü belirlenecek dosyanın yol adı.
 
 *rpDocMatch*<br/>
-Belirtilen dosya, eşleşen belgenin atandığı bir belge işaretçisi *lpszPathName* zaten açıktır.
+*LpszPathName* tarafından belirtilen dosya zaten açıksa, eşleşen belgeye atanan bir belgeye yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir değer **güvenle** sabit listesi aşağıdaki gibi tanımlanır:
+**Güven** numaralandırmasından aşağıdaki şekilde tanımlanan bir değer:
 
 ```
 enum Confidence
@@ -440,19 +440,19 @@ enum Confidence
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dosyanın açılması için kullanılacak belge şablonunu türünü belirlemek için bu işlevi kullanın. Örneğin, uygulamanızın birden çok dosya türünü destekliyorsa, kullanılabilir şablonların çağırarak belirli bir dosya için uygun olduğunu belirlemek için bu işlevi kullanabilirsiniz `MatchDocType` her şablonunun etkinleştirin ve bir şablonu konusuna göre seçme döndürülen olasılık değeri.
+Dosya açmak için kullanılacak belge şablonu türünü öğrenmek için bu işlevi kullanın. Uygulamanız birden çok dosya türünü destekliyorsa, örneğin, her bir şablon için `MatchDocType` çağırarak ve döndürülen güvenirlik değerine göre bir şablon seçerek, kullanılabilir belge şablonlarının hangisinin belirli bir dosyaya uygun olduğunu belirlemek için bu işlevi kullanabilirsiniz.
 
-Dosya belirtilen *lpszPathName* bu işlevi döndürür, açıksa `CDocTemplate::yesAlreadyOpen` ve dosya kopyalar `CDocument` nesne nesnesine *rpDocMatch*.
+*LpszPathName* tarafından belirtilen dosya zaten açıksa, bu işlev `CDocTemplate::yesAlreadyOpen` döndürür ve dosyanın `CDocument` nesnesini *rpDocMatch*konumundaki nesneye kopyalar.
 
-Dosya uzantısı'nda ancak açık değilse *lpszPathName* tarafından belirtilen uzantı eşleşen `CDocTemplate::filterExt`, bu işlevi döndürür `CDocTemplate::yesAttemptNative` ve ayarlar *rpDocMatch* null. Daha fazla bilgi için `CDocTemplate::filterExt`, bkz: [CDocTemplate::GetDocString](#getdocstring).
+Dosya açık değilse ancak *lpszPathName* 'deki uzantı `CDocTemplate::filterExt`tarafından belirtilen uzantıyla eşleşiyorsa, bu işlev `CDocTemplate::yesAttemptNative` döndürür ve *RPDOCMATCH* 'i null olarak ayarlar. `CDocTemplate::filterExt`hakkında daha fazla bilgi için bkz. [CDocTemplate:: GetDocString](#getdocstring).
 
-Hiçbir durum true ise işlev döndürür `CDocTemplate::yesAttemptForeign`.
+Hiçbir durum doğru değilse, işlev `CDocTemplate::yesAttemptForeign`döndürür.
 
-Varsayılan uygulama döndürmez `CDocTemplate::maybeAttemptForeign` veya `CDocTemplate::maybeAttemptNative`. Belki de iki bu değerleri kullanarak uygulamanıza uygun türü eşleştirme mantığını uygulamak için bu işlevi geçersiz kılma **güvenle** sabit listesi.
+Varsayılan uygulama `CDocTemplate::maybeAttemptForeign` veya `CDocTemplate::maybeAttemptNative`döndürmez. Güvenilir **Numaralandırmadaki** bu iki değeri kullanarak, uygulamanıza uygun tür eşleştirme mantığını uygulamak için bu işlevi geçersiz kılın.
 
-##  <a name="opendocumentfile"></a>  CDocTemplate::OpenDocumentFile
+##  <a name="opendocumentfile"></a>CDocTemplate:: OpenDocumentFile
 
-Bir yolu tarafından belirtilen bir dosya açar.
+Bir yol tarafından belirtilen bir dosya açar.
 
 ```
 virtual CDocument* OpenDocumentFile(LPCTSTR lpszPathName) = 0;
@@ -465,22 +465,22 @@ virtual CDocument* OpenDocumentFile(
 ### <a name="parameters"></a>Parametreler
 
 *lpszPathName*<br/>
-[in] İşaretçi açılacak belgeyi içeren dosyanın yolu.
+'ndaki Açılacak belgeyi içeren dosyanın yolu işaretçisi.
 
 *bAddToMRU*<br/>
-[in] Belgenin en son dosyaları biri TRUE gösterir; FALSE, belge en son dosyalardan biri değil gösterir.
+'ndaki TRUE, belgenin en son dosyalardan biri olduğunu belirtir; FALSE, belgenin en son dosyalardan biri olmadığını gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olarak adlandırılan, dosya belge işaretçisi *lpszPathName*; İşlem başarısız olursa NULL.
+Dosyası *lpszPathName*tarafından adlandırılan belgeye yönelik işaretçi Başarısız ise NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yolu tarafından belirtilen dosyayı açar *lpszPathName*. Varsa *lpszPathName* NULL ise bir belge türü bu şablonla ilişkili içeren yeni bir dosya oluşturulur.
+Yolu *lpszPathName*tarafından belirtilen dosyayı açar. *LPSZPATHNAME* null ise, bu şablonla ilişkili türdeki bir belgeyi içeren yeni bir dosya oluşturulur.
 
-##  <a name="removedocument"></a>  CDocTemplate::RemoveDocument
+##  <a name="removedocument"></a>CDocTemplate:: RemoveDocument
 
-İşaret ettiği belge kaldırır *pDoc* listesinden bu şablonla ilişkili belgeler.
+Bu şablonla ilişkili belge listesinden *pDoc* tarafından işaret edilen belgeyi kaldırır.
 
 ```
 virtual void RemoveDocument(CDocument* pDoc);
@@ -493,11 +493,11 @@ Kaldırılacak belgeye yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen sınıfların `CMultiDocTemplate` ve `CSingleDocTemplate` bu işlevi geçersiz. Kendi belge şablonu sınıfından türetilen `CDocTemplate`, bu işlev, türetilmiş sınıf geçersiz kılmanız gerekir.
+Türetilmiş sınıflar `CMultiDocTemplate` ve `CSingleDocTemplate` bu işlevi geçersiz kılar. Kendi belge şablonu sınıfınızı `CDocTemplate`türettiğinizde, türetilmiş sınıfınız bu işlevi geçersiz kılmalıdır.
 
-##  <a name="saveallmodified"></a>  CDocTemplate::SaveAllModified
+##  <a name="saveallmodified"></a>CDocTemplate:: SaveAllModified
 
-Değiştirilmiş tüm belgeleri kaydeder.
+Değiştirilen tüm belgeleri kaydeder.
 
 ```
 virtual BOOL SaveAllModified();
@@ -505,11 +505,11 @@ virtual BOOL SaveAllModified();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır olmayan başarılıysa; Aksi durumda 0.
+Başarılıysa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="setcontainerinfo"></a>  CDocTemplate::SetContainerInfo
+##  <a name="setcontainerinfo"></a>CDocTemplate:: SetContainerInfo
 
-OLE kapsayıcıları için kaynakları yerinde OLE öğesini düzenlerken belirler.
+Yerinde OLE öğesi düzenlenirken OLE kapsayıcılarının kaynaklarını belirler.
 
 ```
 void SetContainerInfo(UINT nIDOleInPlaceContainer);
@@ -517,18 +517,18 @@ void SetContainerInfo(UINT nIDOleInPlaceContainer);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDOleInPlaceContainer*<br/>
-Katıştırılmış nesne etkinleştirildiğinde kullanılan kaynakları kimliği.
+*Nidokaınplacecontainer*<br/>
+Katıştırılmış bir nesne etkinleştirildiğinde kullanılan kaynakların KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir OLE nesne yerinde etkin olduğunda kullanılacak kaynakları ayarlamak için bu işlevi çağırın. Bu kaynaklar, menüler ve Hızlandırıcı tablolarını içerebilir. Bu işlevin genellikle çağrılma yeri [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) uygulamanızın işlevi.
+Bir OLE nesnesi yerinde etkinleştirildiğinde kullanılacak kaynakları ayarlamak için bu işlevi çağırın. Bu kaynaklar, menüler ve Hızlandırıcı tabloları içerebilir. Bu işlev genellikle uygulamanızın [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) işlevinde çağrılır.
 
-İle ilişkili menü *nIDOleInPlaceContainer* kapsayıcı uygulamasını menüsünü birleştirmek için etkinleştirilmiş yerinde öğesi menüsü ver ayırıcılar içerir. Sunucu ve kapsayıcının menülerini birleştirme hakkında daha fazla bilgi için bkz [menüler ve kaynaklar (OLE)](../../mfc/menus-and-resources-ole.md).
+*Nidopainplacecontainer* ile ilişkili menü, etkinleştirilmiş yerinde öğenin menüsünün kapsayıcı uygulamasının menüsüyle birleştirilmesine izin veren ayırıcılar içerir. Sunucu ve kapsayıcı menülerini birleştirme hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar (OLE)](../../mfc/menus-and-resources-ole.md).
 
-##  <a name="setdefaulttitle"></a>  CDocTemplate::SetDefaultTitle
+##  <a name="setdefaulttitle"></a>CDocTemplate:: SetDefaultTitle
 
-Belgenin varsayılan başlık yüklemek ve belgenin başlık çubuğunda görüntülemek için bu işlevi çağırın.
+Belgenin varsayılan başlığını yüklemek ve belgenin başlık çubuğunda göstermek için bu işlevi çağırın.
 
 ```
 virtual void SetDefaultTitle(CDocument* pDocument) = 0;
@@ -537,15 +537,15 @@ virtual void SetDefaultTitle(CDocument* pDocument) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *pDocument*<br/>
-Ayarlanacak ayarlanmış başlık olan belge işaretçisi.
+Başlığı ayarlanacak belgeye yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan başlığı hakkında daha fazla bilgi için açıklamasına bakın `CDocTemplate::docName` içinde [CDocTemplate::GetDocString](#getdocstring).
+Varsayılan başlık hakkında daha fazla bilgi için [CDocTemplate:: GetDocString](#getdocstring)içindeki `CDocTemplate::docName` açıklamasına bakın.
 
-##  <a name="setserverinfo"></a>  CDocTemplate::SetServerInfo
+##  <a name="setserverinfo"></a>CDocTemplate:: SetServerInfo
 
-Sunucu belgesinin katıştırılmış ya da yerinde düzenlenirken, kaynak ve sınıflarını belirler.
+Sunucu belgesi katıştırılmış veya yerinde düzenlendiğinde kaynakları ve sınıfları belirler.
 
 ```
 void SetServerInfo(
@@ -557,27 +557,27 @@ void SetServerInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDOleEmbedding*<br/>
-Katıştırılmış nesne ayrı bir pencerede açıldığında kullanılan kaynakları kimliği.
+*Nidolet katıştırma*<br/>
+Katıştırılmış bir nesne ayrı bir pencerede açıldığında kullanılan kaynakların KIMLIĞI.
 
-*nIDOleInPlaceServer*<br/>
-Katıştırılmış nesne olduğunda kullanılan kaynakları kimliği yerinde etkinleştirilmiş.
+*Nidokaınplaceserver*<br/>
+Yerleşik bir nesne yerinde etkinleştirildiğinde kullanılan kaynakların KIMLIĞI.
 
-*pOleFrameClass*<br/>
-İşaretçi bir [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yerinde etkinleştirme oluştuğunda oluşturulan çerçeve pencere nesnesi için sınıf bilgileri içeren yapısı.
+*Potaframeclass*<br/>
+Yerinde etkinleştirme gerçekleştiğinde oluşturulan çerçeve penceresi nesnesi için sınıf bilgilerini içeren bir [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik işaretçi.
 
-*pOleViewClass*<br/>
-İşaretçi bir `CRuntimeClass` yerinde etkinleştirme oluştuğunda oluşturulan Görünüm nesnesi için sınıf bilgileri içeren yapısı.
+*Potaviewclass*<br/>
+Yerinde etkinleştirme gerçekleştiğinde oluşturulan görünüm nesnesi için sınıf bilgilerini içeren `CRuntimeClass` yapısına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı etkinleştirme gömülü bir nesnenin istediğinde, sunucu uygulaması tarafından kullanılan kaynakları belirlemek üzere bu üye işlevini çağırın. Bu kaynaklar menülerini ve Hızlandırıcı tablolarını oluşur. Bu işlevin genellikle çağrılma yeri `InitInstance` uygulamanızın.
+Kullanıcı katıştırılmış bir nesnenin etkinleştirmesini istediğinde sunucu uygulaması tarafından kullanılacak kaynakları belirlemek için bu üye işlevini çağırın. Bu kaynaklar menüler ve Hızlandırıcı tablolarından oluşur. Bu işlev genellikle uygulamanızın `InitInstance` çağırılır.
 
-İle ilişkili menü *nIDOleInPlaceServer* birleştirmek sunucu menüsü kapsayıcının menüsüyle izin ayırıcılar içerir. Sunucu ve kapsayıcının menülerini birleştirme hakkında daha fazla bilgi için bkz [menüler ve kaynaklar (OLE)](../../mfc/menus-and-resources-ole.md).
+*Nidotainplaceserver* ile ilişkili menü, sunucu menüsünün kapsayıcının menüsüyle birleştirilmesine izin veren ayırıcılar içerir. Sunucu ve kapsayıcı menülerini birleştirme hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar (OLE)](../../mfc/menus-and-resources-ole.md).
 
-##  <a name="createpreviewframe"></a>  CDocTemplate::CreatePreviewFrame
+##  <a name="createpreviewframe"></a>CDocTemplate:: Createönizleme çerçevesi
 
-Zengin Önizleme için kullanılan bir alt pencere oluşturur.
+Zengin Önizleme için kullanılan bir alt çerçeve oluşturur.
 
 ```
 CFrameWnd* CreatePreviewFrame(
@@ -588,20 +588,20 @@ CFrameWnd* CreatePreviewFrame(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-(Genellikle Kabuk tarafından sağlanan) bir üst penceresine bir işaretçi.
+Üst pencere (genellikle kabuk tarafından sağlanmış) işaretçisi.
 
 *pDoc*<br/>
-İçerikleri önizlemesi bir belge nesnesi için bir işaretçi.
+İçerik önizlemesi görüntülenecek bir belge nesnesi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir işaretçi bir `CFrameWnd` nesne veya oluşturulması başarısız olursa NULL.
+`CFrameWnd` nesnesine yönelik geçerli bir işaretçi veya oluşturma başarısız olursa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpreviewinfo"></a>  CDocTemplate::SetPreviewInfo
+##  <a name="setpreviewinfo"></a>CDocTemplate:: Setpreviewınınfo
 
-İşlem Önizleme işleyicisinin çıkış ayarlar.
+İşlem dışı önizleme işleyicisini ayarlar.
 
 ```
 void SetPreviewInfo(
@@ -612,14 +612,14 @@ void SetPreviewInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDPreviewFrame*<br/>
-Önizleme çerçevenin bir kaynak Kimliğini belirtir.
+*Nıdönizleme çerçevesi*<br/>
+Önizleme çerçevesinin kaynak KIMLIĞINI belirtir.
 
-*pPreviewFrameClass*<br/>
-Bir çalışma zamanı sınıf bilgileri yapısı Önizleme çerçeve işaretçisi belirtir.
+*Pönizleme Frameclass*<br/>
+Önizleme çerçevesinin çalışma zamanı sınıfı bilgi yapısına yönelik bir işaretçi belirtir.
 
-*pPreviewViewClass*<br/>
-Bir çalışma zamanı sınıf bilgileri yapısı Önizleme görünümü için bir işaretçi belirtir.
+*Pönizleme Viewclass*<br/>
+Önizleme görünümünün çalışma zamanı sınıfı bilgi yapısına yönelik bir işaretçi belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 

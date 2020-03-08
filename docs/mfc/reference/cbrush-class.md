@@ -25,11 +25,11 @@ helpviewer_keywords:
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
 ms.openlocfilehash: a99d8c8022d23f627320b66c3f376be803c9c839
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507429"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876054"
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 
@@ -45,13 +45,13 @@ class CBrush : public CGdiObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBrush:: CBrush](#cbrush)|Bir `CBrush` nesnesi oluşturur.|
+|[CBrush:: CBrush](#cbrush)|`CBrush` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CBrush:: Createbrühdolaylı](#createbrushindirect)|[LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) yapısında belirtilen stili, rengi ve kalıbı içeren bir fırça başlatır.|
 |[CBrush:: CreateDIBPatternBrush](#createdibpatternbrush)|Cihazdan bağımsız bir bit eşlem (DIB) tarafından belirtilen bir desenli fırçayı başlatır.|
@@ -59,22 +59,22 @@ class CBrush : public CGdiObject
 |[CBrush:: CreatePatternBrush](#createpatternbrush)|Bit eşlemle belirtilen bir fırça ile bir fırça başlatır.|
 |[CBrush:: Createkesintisdbrush](#createsolidbrush)|Belirtilen düz renge sahip bir fırça başlatır.|
 |[CBrush:: CreateSysColorBrush](#createsyscolorbrush)|Varsayılan sistem rengi olan bir fırça oluşturur.|
-|[CBrush:: FromHandle](#fromhandle)|Bir Windows `CBrush` `HBRUSH` nesnesine bir tanıtıcı verildiğinde, nesne için bir işaretçi döndürür.|
+|[CBrush:: FromHandle](#fromhandle)|Bir Windows `HBRUSH` nesnesine bir tanıtıcı verildiğinde `CBrush` nesnesine yönelik bir işaretçi döndürür.|
 |[CBrush:: GetLogBrush](#getlogbrush)|[LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) yapısını alır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBrush:: operator HBRUSH](#operator_hbrush)|`CBrush` Nesnesine eklenen Windows işleyicisini döndürür.|
+|[CBrush:: operator HBRUSH](#operator_hbrush)|`CBrush` nesnesine eklenen Windows işleyicisini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `CBrush` nesne kullanmak için, bir `CBrush` nesne oluşturun ve bunu fırça gerektiren herhangi `CDC` bir üye işlevine geçirin.
+`CBrush` nesnesini kullanmak için, bir `CBrush` nesnesi oluşturun ve bunu fırça gerektiren `CDC` üye işlevine geçirin.
 
 Fırçalar düz, taranmış veya desenli olabilir.
 
-Hakkında `CBrush`daha fazla bilgi için bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
+`CBrush`hakkında daha fazla bilgi için bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -90,7 +90,7 @@ Hakkında `CBrush`daha fazla bilgi için bkz. [grafik nesneleri](../../mfc/graph
 
 ##  <a name="cbrush"></a>CBrush:: CBrush
 
-Bir `CBrush` nesnesi oluşturur.
+`CBrush` nesnesi oluşturur.
 
 ```
 CBrush();
@@ -107,32 +107,32 @@ Fırçanın bir RGB rengi olarak ön plan rengini belirtir. Fırça, bu parametr
 *nDizin*<br/>
 Fırçanın tarama stilini belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- 45 derece HS_BDIAGONAL aşağı tarama (soldan sağa)
+- 45 derece HS_BDIAGONAL aşağı doğru tarama (soldan sağa)
 
 - HS_CROSS yatay ve dikey çapraz tarama
 
 - 45 derece HS_DIAGCROSS çapraz tarama
 
-- 45 derece HS_FDIAGONAL yukarı tarama (soldan sağa)
+- 45 derece HS_FDIAGONAL yukarı doğru tarama (soldan sağa)
 
-- HS_HORIZONTAL yatay tarama
+- Yatay tarama HS_HORIZONTAL
 
-- HS_VERTICAL dikey tarama
+- Dikey tarama HS_VERTICAL
 
 *Pbımap*<br/>
-Fırçanın boyayan `CBitmap` bir bit eşlem belirten bir nesnesine işaret eder.
+Fırçanın boyayan bir bit eşlem belirten `CBitmap` nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CBrush`dört aşırı yüklenmiş oluşturucuya sahiptir. Bağımsız değişken içermeyen Oluşturucu, kullanılmadan önce başlatılması `CBrush` gereken başlatılmamış bir nesne oluşturur.
+`CBrush` dört aşırı yüklenmiş Oluşturucu içerir. Bağımsız değişken içermeyen Oluşturucu, kullanılmadan önce başlatılması gereken başlatılmamış bir `CBrush` nesnesi oluşturur.
 
-Oluşturucuyu `CBrush` bağımsız değişken olmadan kullanırsanız, elde edilen nesneyi [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [createbrühdolaylı](#createbrushindirect), [CreatePatternBrush](#createpatternbrush)veya [ile başlatmalısınız CreateDIBPatternBrush](#createdibpatternbrush). Bağımsız değişken alan oluşturuculardan birini kullanırsanız, başka bir başlatma gerekmez. Bağımsız değişken içermeyen Oluşturucu her zaman başarılı olursa, bağımsız değişkenlere sahip oluşturucular bir özel durum oluşturabilir.
+Oluşturucuyu bağımsız değişken olmadan kullanırsanız, elde edilen `CBrush` nesnesini [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [createbrühdolaylı](#createbrushindirect), [CreatePatternBrush](#createpatternbrush)veya [createdibpatternbrush](#createdibpatternbrush)ile başlatmalısınız. Bağımsız değişken alan oluşturuculardan birini kullanırsanız, başka bir başlatma gerekmez. Bağımsız değişken içermeyen Oluşturucu her zaman başarılı olursa, bağımsız değişkenlere sahip oluşturucular bir özel durum oluşturabilir.
 
 Tek bir [colorref](/windows/win32/gdi/colorref) parametresine sahip Oluşturucu belirtilen renge sahip düz bir fırça oluşturur. Renk bir RGB değeri belirtir ve WINDOWS 'da RGB makrosu ile oluşturulabilir. Olsun.
 
 İki parametreli Oluşturucu bir tarama fırçası oluşturur. *NIndex* parametresi, bir hadallanmış düzenin dizinini belirtir. *CrColor* parametresi rengi belirtir.
 
-`CBitmap` Parametresi içeren Oluşturucu bir desenli fırça oluşturur. Parametresi bir bit eşlemi tanımlar. Bit eşlemin [CBitmap:: CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap:: createbitmapdolaylı](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap:: LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap)veya [CBitmap:: CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap)kullanılarak oluşturulmuş olduğu varsayılır. Bir bir bit eşlemin, bir Fill düzeninde kullanılacak en küçük boyutu 8 piksel 8 pikseldir.
+`CBitmap` parametresine sahip Oluşturucu bir desenli fırça oluşturur. Parametresi bir bit eşlemi tanımlar. Bit eşlemin [CBitmap:: CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap:: createbitmapdolaylı](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap:: LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap)veya [CBitmap:: CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap)kullanılarak oluşturulmuş olduğu varsayılır. Bir bir bit eşlemin, bir Fill düzeninde kullanılacak en küçük boyutu 8 piksel 8 pikseldir.
 
 ### <a name="example"></a>Örnek
 
@@ -185,14 +185,14 @@ BOOL CreateDIBPatternBrush(
 Paketlenmiş cihazdan bağımsız bit eşlem (DIB) içeren bir genel bellek nesnesini tanımlar.
 
 *nKullanım*<br/>
-[Bitmapınfo](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) veri `bmiColors[]` yapısı alanlarının ("Paketlenmiş DIB" bir parçası), şu anda gerçekleştirilen mantıksal palete açık RGB değerleri ya da dizinler içerip içermediğini belirtir. Parametre aşağıdaki değerlerden biri olmalıdır:
+[Bitmapınfo](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) veri yapısının ("Paketlenmiş DIB" bir parçası) `bmiColors[]` alanlarının, gerçekleştirilmiş olan mantıksal palete açık RGB değerleri veya dizinleri içerip içermediğini belirtir. Parametre aşağıdaki değerlerden biri olmalıdır:
 
 - DIB_PAL_COLORS renk tablosu, 16 bit dizinlerden oluşan bir diziden oluşur.
 
-- DIB_RGB_COLORS renk tablosu değişmez RGB değerleri içerir.
+- DIB_RGB_COLORS renk tablosu sabit RGB değerleri içerir.
 
 *Lppackeddıb*<br/>
-Bir `BITMAPINFO` yapıyı içeren paketlenmiş bir DIB 'ye işaret eder ve ardından bit eşlemin piksellerini tanımlayan bir bayt dizisi gelir.
+Bir `BITMAPINFO` yapısından oluşan paketlenmiş bir DIB 'ye işaret eder ve hemen ardından bit eşlemin piksellerini tanımlayan bir bayt dizisi gelir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -204,17 +204,17 @@ Fırça daha sonra Raster işlemlerini destekleyen herhangi bir cihaz bağlamı 
 
 İki sürüm, DIB 'yi nasıl işleytiğinize göre farklılık gösterir:
 
-- İlk sürümde, DIB 'ye bir tanıtıcı almak için, bir genel bellek bloğu ayırmak ve `GlobalAlloc` sonra Paketlenmiş DIB ile belleği doldurmanız için Windows işlevini çağırın.
+- İlk sürümde, DIB 'ye bir tanıtıcı almak için, bir genel bellek bloğu ayırmak ve sonra Paketlenmiş DIB ile belleği doldurmanız için Windows `GlobalAlloc` işlevini çağırın.
 
-- İkinci sürümde, Paketlenmiş DIB için bellek ayırmayı çağırmak `GlobalAlloc` gerekli değildir.
+- İkinci sürümde, Paketlenmiş DIB için bellek ayırmak üzere `GlobalAlloc` çağırmak gerekli değildir.
 
-Paketlenmiş bir DIB, hemen ardından `BITMAPINFO` bir veri yapısından oluşur ve ardından, bit eşlemin piksellerini tanımlayan bayt dizisini izler. Fill desenleri olarak kullanılan bit eşlemler 8 piksel olmalıdır. Bit eşlem daha büyükse, Windows yalnızca ilk 8 satıra karşılık gelen bitleri ve bit eşlemin sol üst köşesindeki 8 sütun pikseli kullanarak bir Fill stili oluşturur.
+Paketlenmiş bir DIB, hemen ardından bir `BITMAPINFO` veri yapısından oluşur ve ardından, bit eşlemin piksellerini tanımlayan bayt dizisini izler. Fill desenleri olarak kullanılan bit eşlemler 8 piksel olmalıdır. Bit eşlem daha büyükse, Windows yalnızca ilk 8 satıra karşılık gelen bitleri ve bit eşlemin sol üst köşesindeki 8 sütun pikseli kullanarak bir Fill stili oluşturur.
 
 Bir uygulama iki renkli bir DIB örüntüsünün tek renkli bir cihaz bağlamına seçtiği zaman, Windows, DIB 'de belirtilen renkleri yoksayar ve bunun yerine, cihaz bağlamının geçerli metin ve arka plan renklerini kullanarak kalıp fırçayı görüntüler. DIB 'nin ilk rengine eşlenen pikseller (DIB Color tablosundaki 0. uzaklığında) metin rengi kullanılarak görüntülenir. İkinci renkle eşlenen pikseller (renk tablosundaki 1. uzaklığında) arka plan rengi kullanılarak görüntülenir.
 
 Aşağıdaki Windows işlevlerini kullanma hakkında daha fazla bilgi için Windows SDK bakın:
 
-- [Createdibpatternbrush](/windows/win32/api/wingdi/nf-wingdi-createdibpatternbrush) (Bu işlev yalnızca 3,0 'den önceki Windows sürümleri için yazılmış uygulamalarla uyumluluk için sağlanır; `CreateDIBPatternBrushPt` işlevini kullanın.)
+- [Createdibpatternbrush](/windows/win32/api/wingdi/nf-wingdi-createdibpatternbrush) (Bu işlev yalnızca 3,0 'Den önceki Windows sürümleri için yazılmış uygulamalarla uyumluluk için sağlanır; `CreateDIBPatternBrushPt` işlevini kullanın.)
 
 - [Createdibpatternbrühpt](/windows/win32/api/wingdi/nf-wingdi-createdibpatternbrushpt) (Bu işlev Win32 tabanlı uygulamalar için kullanılmalıdır.)
 
@@ -239,17 +239,17 @@ BOOL CreateHatchBrush(
 *nDizin*<br/>
 Fırçanın tarama stilini belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- 45 derece HS_BDIAGONAL aşağı tarama (soldan sağa)
+- 45 derece HS_BDIAGONAL aşağı doğru tarama (soldan sağa)
 
 - HS_CROSS yatay ve dikey çapraz tarama
 
 - 45 derece HS_DIAGCROSS çapraz tarama
 
-- 45 derece HS_FDIAGONAL yukarı tarama (soldan sağa)
+- 45 derece HS_FDIAGONAL yukarı doğru tarama (soldan sağa)
 
-- HS_HORIZONTAL yatay tarama
+- Yatay tarama HS_HORIZONTAL
 
-- HS_VERTICAL dikey tarama
+- Dikey tarama HS_VERTICAL
 
 *crColor*<br/>
 Fırçanın bir RGB rengi (tarama rengi) olarak ön plan rengini belirtir. Daha fazla bilgi için Windows SDK [colorref](/windows/win32/gdi/colorref) bölümüne bakın.
@@ -320,7 +320,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Fırça daha sonra herhangi bir cihaz bağlamı için geçerli fırça olarak seçilebilir.
 
-Bir uygulama tarafından `CreateSolidBrush`oluşturulan fırçayı kullanmayı bitirdiğinde, cihaz bağlamından fırçayı seçer.
+Bir uygulama `CreateSolidBrush`tarafından oluşturulan fırçayı kullanmayı bitirdiğinde, cihaz bağlamından fırçayı seçer.
 
 ### <a name="example"></a>Örnek
 
@@ -347,7 +347,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Fırça daha sonra herhangi bir cihaz bağlamı için geçerli fırça olarak seçilebilir.
 
-Bir uygulama tarafından `CreateSysColorBrush`oluşturulan fırçayı kullanmayı bitirdiğinde, cihaz bağlamından fırçayı seçer.
+Bir uygulama `CreateSysColorBrush`tarafından oluşturulan fırçayı kullanmayı bitirdiğinde, cihaz bağlamından fırçayı seçer.
 
 ### <a name="example"></a>Örnek
 
@@ -355,7 +355,7 @@ Bir uygulama tarafından `CreateSysColorBrush`oluşturulan fırçayı kullanmay�
 
 ##  <a name="fromhandle"></a>CBrush:: FromHandle
 
-Bir Windows [HBRUSH](#operator_hbrush) nesnesine `CBrush` bir tanıtıcı verildiğinde, nesne için bir işaretçi döndürür.
+Bir Windows [HBRUSH](#operator_hbrush) nesnesine bir tanıtıcı verildiğinde `CBrush` nesnesine yönelik bir işaretçi döndürür.
 
 ```
 static CBrush* PASCAL FromHandle(HBRUSH hBrush);
@@ -368,11 +368,11 @@ Windows GDI fırçasının tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CBrush` nesne için bir işaretçi; Aksi takdirde null.
+Başarılı olursa `CBrush` nesnesine yönelik bir işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CBrush` nesne zaten tanıtıcıya iliştirilmişse, geçici `CBrush` bir nesne oluşturulur ve eklenir. Bu geçici `CBrush` nesne yalnızca uygulamanın olay döngüsünde süresi boş kaldığında geçerlidir. Şu anda tüm geçici grafik nesneleri silinir. Diğer bir deyişle, geçici nesne yalnızca bir pencere iletisi işlenirken geçerlidir.
+Bir `CBrush` nesnesi tanıtıcıya zaten iliştirilmişse, geçici bir `CBrush` nesnesi oluşturulur ve eklenir. Bu geçici `CBrush` nesne yalnızca, olay döngüsünde uygulamanın bir sonraki boşta kalma süresine kadar geçerlidir. Şu anda tüm geçici grafik nesneleri silinir. Diğer bir deyişle, geçici nesne yalnızca bir pencere iletisi işlenirken geçerlidir.
 
 Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/win32/gdi/graphic-objects) bölümüne bakın.
 
@@ -382,7 +382,7 @@ Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafi
 
 ##  <a name="getlogbrush"></a>CBrush:: GetLogBrush
 
-`LOGBRUSH` Yapıyı almak için bu üye işlevini çağırın.
+`LOGBRUSH` yapısını almak için bu üye işlevi çağırın.
 
 ```
 int GetLogBrush(LOGBRUSH* pLogBrush);
@@ -403,9 +403,9 @@ Fırça hakkında bilgi içeren bir [LOGBRUSH](/windows/win32/api/wingdi/ns-wing
 
 ### <a name="remarks"></a>Açıklamalar
 
-`LOGBRUSH` Yapı, bir fırçanın stilini, rengini ve modelini tanımlar.
+`LOGBRUSH` yapısı, bir fırçanın stilini, rengini ve modelini tanımlar.
 
-Örneğin, bir bit `GetLogBrush` eşlemin belirli bir rengini veya stilini eşleştirmek için çağırın.
+Örneğin, bir bit eşlemin belirli rengi veya düzeniyle eşleştirmek için `GetLogBrush` çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -413,7 +413,7 @@ Fırça hakkında bilgi içeren bir [LOGBRUSH](/windows/win32/api/wingdi/ns-wing
 
 ##  <a name="operator_hbrush"></a>CBrush:: operator HBRUSH
 
-`CBrush` Nesnenin ekli Windows GDI işleyicisini almak için bu işleci kullanın.
+`CBrush` nesnesinin ekli Windows GDI işleyicisini almak için bu işleci kullanın.
 
 ```
 operator HBRUSH() const;
@@ -421,7 +421,7 @@ operator HBRUSH() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `CBrush` nesne tarafından temsil edilen Windows GDI nesnesine yönelik bir tanıtıcı; Aksi takdirde null.
+Başarılı olursa, `CBrush` nesnesi tarafından temsil edilen Windows GDI nesnesine yönelik bir tanıtıcı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 

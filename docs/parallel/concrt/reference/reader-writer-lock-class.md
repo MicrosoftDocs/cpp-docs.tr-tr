@@ -16,11 +16,11 @@ helpviewer_keywords:
 - reader_writer_lock class
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
 ms.openlocfilehash: 1a7386e527b5327d928bfdcb3281c88666f1b106
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77140846"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867178"
 ---
 # <a name="reader_writer_lock-class"></a>reader_writer_lock Sınıfı
 
@@ -36,21 +36,21 @@ class reader_writer_lock;
 
 ### <a name="public-classes"></a>Ortak sınıflar
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[reader_writer_lock:: scoped_lock sınıfı](#scoped_lock_class)|Bir yazıcı olarak `reader_writer_lock` kilitleme nesneleri elde etmek için kullanılabilen özel durum güvenli bir KAıı sarmalayıcısı.|
 |[reader_writer_lock:: scoped_lock_read sınıfı](#scoped_lock_read_class)|Bir okuyucu olarak `reader_writer_lock` kilitleme nesneleri elde etmek için kullanılabilen özel durum güvenli bir KAıı sarmalayıcısı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[reader_writer_lock](#ctor)|Yeni bir `reader_writer_lock` nesnesi oluşturur.|
 |[~ reader_writer_lock yok edici](#dtor)|`reader_writer_lock` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[lock](#lock)|Okuyucu-yazıcı kilidini bir yazıcı olarak alır.|
 |[lock_read](#lock_read)|Reader-yazıcı kilidini okuyucu olarak alır. Yazıcılar varsa, etkin okuyucular tamamlanana kadar beklemelidir. Okuyucu yalnızca kilit için bir ilgi kaydeder ve yazarların bunu serbest bırakmasını bekler.|

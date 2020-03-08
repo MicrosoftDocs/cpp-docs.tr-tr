@@ -47,11 +47,11 @@ helpviewer_keywords:
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
 ms.openlocfilehash: 583b685295bf77910ef134776c1c4fa39baf93ad
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816348"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867046"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 
@@ -63,17 +63,17 @@ Microsoft Foundation Class Kitaplığı ileti eşleme mimarisine yönelik temel 
 class CCmdTarget : public CObject
 ```
 
-## <a name="members"></a>Üyeleri
+## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CCmdTarget:: CCmdTarget](#ccmdtarget)|`CCmdTarget` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CCmdTarget:: BeginWaitCursor](#beginwaitcursor)|İmleci bir kum saati imleci olarak görüntüler.|
 |[CCmdTarget::D Ootaverb](#dooleverb)|OLE fiili tarafından belirtilen bir eylemin gerçekleştirilmesine neden olur.|
@@ -349,7 +349,7 @@ HRESULT GetTypeInfoOfGuid(
 *lcid*<br/>
 Yerel ayar tanımlayıcısı (`LCID`).
 
-*guid*<br/>
+*'ini*<br/>
 Tür açıklamasının [GUID 'i](/previous-versions/cc317743(v%3dmsdn.10)) .
 
 *ppTypeInfo*<br/>

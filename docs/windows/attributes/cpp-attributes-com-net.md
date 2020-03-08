@@ -7,11 +7,11 @@ helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
 ms.openlocfilehash: 4885edf57988d5f83b56ba6a71da85877354d3ce
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491054"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856448"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM ve .NET için C++ öznitelikleri
 
@@ -34,7 +34,7 @@ Microsoft, COM programlama ve C++ .NET Framework ortak dil çalışma zamanı ge
 
 - Bir COM bileşeni için gereken büyük miktarda IDL kodunu birkaç kısa özniteliğe koyar.
 
-Örneğin, genel ATL sınıfına basit bir olay havuzu uygulamak için, [event_receiver](event-receiver.md) özniteliğini gibi `CMyReceiver`belirli bir sınıfa uygulayabilirsiniz. Öznitelik daha sonra Microsoft C++ derleyicisi tarafından derlenerek nesne dosyasına doğru kodu ekler. `event_receiver`
+Örneğin, genel ATL sınıfına basit bir olay havuzu uygulamak için, [event_receiver](event-receiver.md) özniteliğini `CMyReceiver`gibi belirli bir sınıfa uygulayabilirsiniz. `event_receiver` özniteliği daha sonra, uygun kodu nesne dosyasına C++ ekleyen Microsoft derleyicisi tarafından derlenir.
 
 ```cpp
 [event_receiver(com)]
@@ -45,7 +45,7 @@ class CMyReceiver
 }
 ```
 
-Daha sonra, [event_source](event-source.md)kullanarak oluşturabileceğiniz `CMyReceiver` bir olay `handler2` kaynağından olayları ayarlayabilir `handler1` ve olayları işleyebilir (iç işlev [__hook](../../cpp/hook.md)kullanarak).
+Daha sonra, [event_source](event-source.md)kullanarak oluşturabileceğiniz bir olay kaynağından olayları işlemek (iç işlev [__hook](../../cpp/hook.md)kullanarak) `CMyReceiver` Yöntemler `handler1` ve `handler2` ayarlayabilirsiniz.
 
 ## <a name="basic-mechanics-of-attributes"></a>Özniteliklerin Temel Mekanikleri
 
@@ -60,7 +60,7 @@ Aşağıdaki şekilde, derleyici ve öznitelik sağlayıcısı arasındaki iliş
 > [!NOTE]
 > Öznitelik kullanımı, kaynak dosyanın içeriğini değiştirmez. Oluşturulan öznitelik kodunun tek zaman hata ayıklama oturumları sırasında görünür. Ayrıca, projedeki her kaynak dosya için öznitelik değiştirme sonuçlarını görüntüleyen bir metin dosyası oluşturabilirsiniz. Bu yordam hakkında daha fazla bilgi için bkz. [/FX (eklenen kodu Birleştir)](../../build/reference/fx-merge-injected-code.md) ve [eklenen kodu hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).
 
-Çoğu C++ yapı gibi özniteliklerin, uygun kullanımını tanımlayan bir özellikler kümesi vardır. Bu, özniteliğin bağlamı olarak adlandırılır ve öznitelik bağlam tablosunda her öznitelik başvurusu konusu için belirtilir. Örneğin, [coclass](coclass.md) özniteliği yalnızca mevcut bir sınıfa veya yapıya, C++ kaynak dosya içinde herhangi bir yere eklenebilen [cpp_quote](cpp-quote.md) özniteliği aksine uygulanabilir.
+Çoğu C++ yapı gibi özniteliklerin, uygun kullanımını tanımlayan bir özellikler kümesi vardır. Bu, özniteliğin bağlamı olarak adlandırılır ve öznitelik bağlam tablosunda her öznitelik başvurusu konusu için belirtilir. Örneğin, [coclass](coclass.md) özniteliği yalnızca var olan bir sınıfa veya yapıya, C++ kaynak dosya içinde herhangi bir yere eklenebilen [cpp_quote](cpp-quote.md) özniteliği aksine uygulanabilir.
 
 ## <a name="building-an-attributed-program"></a>Öznitelikli Program Oluşturma
 
@@ -68,9 +68,9 @@ Kaynak kodunuza görsel C++ öznitelikler koyduktan sonra, Microsoft C++ derleyi
 
 - [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md)
 
-- [/IGNOREIDL](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+- [/IGNOREıDL](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
 
-- [/MIDL](../../build/reference/midl-specify-midl-command-line-options.md)
+- [/MıDL](../../build/reference/midl-specify-midl-command-line-options.md)
 
 - [/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)
 
@@ -80,7 +80,7 @@ Ayrıca görsel C++ BAĞLAYıCı, IDL ile ilgili tüm öznitelik bilgilerini tek
 
 ## <a name="contexts"></a>Öznitelik bağlamları
 
-C++öznitelikler dört temel alan kullanılarak açıklanabilir: (**Için geçerlidir**), tekrarlanabilir veya yoksa (**yinelenebilir**), diğer özniteliklerin gerekli varlığı (**gerekli öznitelikler**) ve uyumsuzluklar diğer özniteliklerle (**geçersiz öznitelikler**). Bu alanlar, her bir özniteliğin başvuru konusunun birlikte bulunan bir tabloda listelenir. Bu alanların her biri aşağıda açıklanmıştır.
+C++öznitelikler dört temel alan kullanılarak açıklanabilir: (**Için geçerlidir**), tekrarlanabilir veya yoksa (**yinelenebilir**), diğer özniteliklerin gerekli varlığı (**gerekli öznitelikler**) ve diğer özniteliklerle uyumsuzluklar (**geçersiz öznitelikler**). Bu alanlar, her bir özniteliğin başvuru konusunun birlikte bulunan bir tabloda listelenir. Bu alanların her biri aşağıda açıklanmıştır.
 
 ### <a name="applies-to"></a>Uygulanan Öğe
 

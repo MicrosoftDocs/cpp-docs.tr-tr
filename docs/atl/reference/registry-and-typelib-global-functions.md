@@ -1,5 +1,5 @@
 ---
-title: Kayıt defteri ve TypeLib genel işlevleri
+title: Kayıt defteri ve TypeLib genel Işlevleri
 ms.date: 03/27/2019
 f1_keywords:
 - atlbase/ATL::AtlGetPerUserRegistration
@@ -18,47 +18,47 @@ helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
 ms.openlocfilehash: c5fdaceb47b6cd09dd9d66f26af1337a8dc6bbae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275085"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78863247"
 ---
-# <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevleri
+# <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel Işlevleri
 
-Bu işlevler, yükleme ve bir tür kitaplığı kaydı desteği.
+Bu işlevler, bir tür kitaplığının yüklenmesi ve kaydedilmesi için destek sağlar.
 
 > [!IMPORTANT]
->  Aşağıdaki tablolarda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Aşağıdaki tablolarda listelenen işlevler, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 |||
 |-|-|
-|[AfxRegCreateKey](#afxregcreatekey)|Belirtilen kayıt defteri anahtarı oluşturur.|
+|[AfxRegCreateKey](#afxregcreatekey)|Belirtilen kayıt defteri anahtarını oluşturur.|
 |[AfxRegDeleteKey](#afxregdeletekey)|Belirtilen kayıt defteri anahtarını siler.|
-|[AfxRegisterPreviewHandler](#afxregisterpreviewhandler)|Önizleme işleyicisi kaydetmek için yardımcıyı.|
-|[AfxUnregisterPreviewHandler](#afxunregisterpreviewhandler)| Bir önizleme işleyici kaydı Yardımcısı. |
+|[AfxRegisterPreviewHandler](#afxregisterpreviewhandler)|Önizleme işleyicisini kaydetme Yardımcısı.|
+|[AfxUnregisterPreviewHandler](#afxunregisterpreviewhandler)| Önizleme işleyicisinin kaydını silme Yardımcısı. |
 |[AtlRegisterTypeLib](#atlregistertypelib)|Tür kitaplığını kaydetmek için bu işlev çağrılır.|
-|[AtlUnRegisterTypeLib](#atlunregistertypelib)|Bir tür kitaplığının kaydını silmek için bu işlev çağrılır|
-|[AfxRegOpenKey](#afxregopenkey)|Belirtilen kayıt defteri anahtarı'nı açar.|
-|[AfxRegOpenKeyEx](#afxregopenkeyex)|Belirtilen kayıt defteri anahtarı'nı açar.|
+|[AtlUnRegisterTypeLib](#atlunregistertypelib)|Bu işlev, bir tür kitaplığının kaydını silmek için çağırılır|
+|[AfxRegOpenKey](#afxregopenkey)|Belirtilen kayıt defteri anahtarını açar.|
+|[AfxRegOpenKeyEx](#afxregopenkeyex)|Belirtilen kayıt defteri anahtarını açar.|
 |[AtlLoadTypeLib](#atlloadtypelib)|Tür kitaplığını yüklemek için bu işlev çağrılır.|
 |[AtlUpdateRegistryFromResourceD](#atlupdateregistryfromresourced)|Sağlanan kaynaktan kayıt defterini güncelleştirmek için bu işlev çağrılır.|
-|[RegistryDataExchange](#registrydataexchange)|Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır. Çağıran [kayıt defteri veri değişimi makroları](../../atl/reference/registry-data-exchange-macros.md).|
+|[RegistryDataExchange](#registrydataexchange)|Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır. [Kayıt defteri verileri Exchange makroları](../../atl/reference/registry-data-exchange-macros.md)tarafından çağırılır.|
 
-Bu işlevler, hangi düğümün program bilgileri depolamak için kullandığı kayıt defterinde denetler.
+Bu işlevler, programın bilgileri depolamak için kullandığı kayıt defterindeki hangi düğümde olduğunu denetler.
 
 |||
 |-|-|
-|[AtlGetPerUserRegistration](#atlgetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını alır **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|
-|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|
+|[AtlGetPerUserRegistration](#atlgetperuserregistration)|Uygulamanın kayıt defteri erişimini **HKEY_CURRENT_USER** ( **HKCU**) düğümüne yeniden yönlendirip yönlendirmeyeceğini alır.|
+|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Uygulamanın kayıt defteri erişimini **HKEY_CURRENT_USER** ( **HKCU**) düğümüne yeniden yönlendirip yönlendirmeyeceğini ayarlar.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="atlgetperuserregistration"></a> AtlGetPerUserRegistration
+## <a name="atlgetperuserregistration"></a>AtlGetPerUserRegistration
 
-Uygulama kayıt defteri erişimini yönlendiren olup olmadığını belirlemek için bu işlevi kullanın **HKEY_CURRENT_USER** (**HKCU**) düğüm.
+Uygulamanın kayıt defteri erişimini **HKEY_CURRENT_USER** (**HKCU**) düğümüne yeniden yönlendirip yönlendirmediğini öğrenmek için bu işlevi kullanın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -69,25 +69,25 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ### <a name="parameters"></a>Parametreler
 
 *pEnabled*<br/>
-[out] TRUE, kayıt defteri bilgilerini Yönlendirilme biçimini gösterir **HKCU** düğüm; FALSE, uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).
+dışı DOĞRU, kayıt defteri bilgilerinin **HKCU** düğümüne yönlendirildiğini gösterir; FALSE, uygulamanın kayıt defteri bilgilerini varsayılan düğüme yazdığını gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılıysa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşursa.
+Yöntem başarılı olursa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt defteri yeniden yönlendirme varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimini yönlendireceği **HKEY_CURRENT_USER\Software\Classes**.
+Kayıt defteri yönlendirmesi varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi **HKEY_CURRENT_USER \Software\Classes**'a yönlendirilir.
 
-Yeniden yönlendirme genel değil. Yalnızca MFC ve ATL çerçeveleri, bu kayıt defteri yeniden yönlendirmeyi tarafından etkilenir.
+Yeniden yönlendirme genel değildir. Yalnızca MFC ve ATL çerçeveleri bu kayıt defteri yeniden yönlendirmesinin etkilenmiştir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="afxregcreatekey"></a> AfxRegCreateKey
+## <a name="afxregcreatekey"></a>AfxRegCreateKey
 
-Belirtilen kayıt defteri anahtarı oluşturur.
+Belirtilen kayıt defteri anahtarını oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -98,26 +98,26 @@ LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTr
 ### <a name="parameters"></a>Parametreler
 
 *hKey*<br/>
-Bir kayıt defteri anahtarı için bir tanıtıcı.
+Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.
 
-*lpSubKey*<br/>
-Bu işlev açar veya oluşturur bir anahtarın adı.
+*Lpaltanahtar*<br/>
+Bu işlevin açtığı veya oluşturduğu bir anahtarın adı.
 
 *phkResult*<br/>
-Açılan veya oluşturulan anahtarı için bir tanıtıcı alan bir değişken için bir işaretçi.
+Açık veya oluşturulmuş anahtara bir tanıtıcı alan bir değişkene yönelik işaretçi.
 
 *pTM*<br/>
-İşaretçi bir `CAtlTransactionManager` nesne.
+`CAtlTransactionManager` nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.
+İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h
+**Üst bilgi:** AFXPRIV. h
 
-## <a name="afxregdeletekey"></a> AfxRegDeleteKey
+## <a name="afxregdeletekey"></a>AfxRegDeleteKey
 
 Belirtilen kayıt defteri anahtarını siler.
 
@@ -130,25 +130,25 @@ LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager*
 ### <a name="parameters"></a>Parametreler
 
 *hKey*<br/>
-Bir kayıt defteri anahtarı için bir tanıtıcı.
+Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.
 
-*lpSubKey*<br/>
-Silinecek anahtar adı.
+*Lpaltanahtar*<br/>
+Silinecek anahtarın adı.
 
 *pTM*<br/>
-İşaretçi bir `CAtlTransactionManager` nesne.
+`CAtlTransactionManager` nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.
+İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h
+**Üst bilgi:** AFXPRIV. h
 
 ## <a name="afxregisterpreviewhandler"></a>
 
-Önizleme işleyicisi kaydetmek için yardımcıyı.
+Önizleme işleyicisini kaydetme Yardımcısı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -159,19 +159,19 @@ BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeNa
 ### <a name="parameters"></a>Parametreler
 
 *lpszCLSID*<br/>
-İşleyici CLSID değeri belirtir.
+İşleyicinin CLSID değerini belirtir.
 
 *lpszShortTypeName*<br/>
-ProgID işleyicisinin belirtir.
+İşleyicinin ProgID 'sini belirtir.
 
 *lpszFilterExt*<br/>
-Dosya uzantısı ile bu işleyici kayıtlı belirtir.
+Bu işleyicide kayıtlı dosya uzantısını belirtir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib
+##  <a name="atlregistertypelib"></a>AtlRegisterTypeLib
 
 Tür kitaplığını kaydetmek için bu işlev çağrılır.
 
@@ -181,27 +181,27 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*hInstTypeLib*<br/>
-Modül örneğinin tanıtıcısını.
+*Hınsttypelib*<br/>
+Modül örneği için tanıtıcı.
 
 *lpszIndex*<br/>
-Biçim dizesinde "\\\N", burada N tamsayı tür kitaplığı kaynağı dizinidir. Hiçbir dizin gerekiyorsa NULL olabilir.
+"\\\n" biçiminde dize, burada N, tür kitaplığı kaynağının tamsayı dizinidir. Dizin gerekmiyorsa NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı işlevi tarafından kullanılan [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) ve [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).
+Bu yardımcı işlev [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) ve [CAtlComModule:: RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib)tarafından kullanılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="afxregopenkey"></a> AfxRegOpenKey
+## <a name="afxregopenkey"></a>AfxRegOpenKey
 
-Belirtilen kayıt defteri anahtarı'nı açar.
+Belirtilen kayıt defteri anahtarını açar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -212,28 +212,28 @@ LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTran
 ### <a name="parameters"></a>Parametreler
 
 *hKey*<br/>
-Bir kayıt defteri anahtarı için bir tanıtıcı.
+Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.
 
-*lpSubKey*<br/>
-Bu işlev açar veya oluşturur bir anahtarın adı.
+*Lpaltanahtar*<br/>
+Bu işlevin açtığı veya oluşturduğu bir anahtarın adı.
 
 *phkResult*<br/>
-Oluşturulan anahtarı için bir tanıtıcı alan bir değişken için bir işaretçi.
+Oluşturulan anahtara bir tanıtıcı alan bir değişken işaretçisi.
 
 *pTM*<br/>
-İşaretçi bir `CAtlTransactionManager` nesne.
+`CAtlTransactionManager` nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.
+İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h
+**Üst bilgi:** AFXPRIV. h
 
-## <a name="afxregopenkeyex"></a>  AfxRegOpenKeyEx
+## <a name="afxregopenkeyex"></a>AfxRegOpenKeyEx
 
-Belirtilen kayıt defteri anahtarı'nı açar.
+Belirtilen kayıt defteri anahtarını açar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -244,34 +244,34 @@ LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM
 ### <a name="parameters"></a>Parametreler
 
 *hKey*<br/>
-Bir kayıt defteri anahtarı için bir tanıtıcı.
+Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.
 
-*lpSubKey*<br/>
-Bu işlev açar veya oluşturur bir anahtarın adı.
+*Lpaltanahtar*<br/>
+Bu işlevin açtığı veya oluşturduğu bir anahtarın adı.
 
 *ulOptions*<br/>
 Bu parametre ayrılmıştır ve sıfır olmalıdır.
 
 *samDesired*<br/>
-İstenen erişim hakları anahtarına belirtir maskesi.
+Anahtara istenen erişim haklarını belirten bir maske.
 
 *phkResult*<br/>
-Açılan anahtarı için bir tanıtıcı alan bir değişken için bir işaretçi.
+Açık anahtara bir tanıtıcı alan bir değişken işaretçisi.
 
 *pTM*<br/>
-İşaretçi bir `CAtlTransactionManager` nesne.
+`CAtlTransactionManager` nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.
+İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h
+**Üst bilgi:** AFXPRIV. h
 
-## <a name="afxunregisterpreviewhandler"></a> AfxUnregisterPreviewHandler
+## <a name="afxunregisterpreviewhandler"></a>AfxUnregisterPreviewHandler
 
-Bir önizleme işleyici kaydı Yardımcısı.
+Önizleme işleyicisinin kaydını silme Yardımcısı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -282,15 +282,15 @@ BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 ### <a name="parameters"></a>Parametreler
 
 *lpszCLSID*<br/>
-Sona erdirilecek CLSID işleyicisinin belirtir.
+Kaydı Kaldırılacak işleyicinin CLSID değerini belirtir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
+## <a name="atlsetperuserregistration"></a>AtlSetPerUserRegistration
 
-Uygulama kayıt defteri erişimini yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** (**HKCU**) düğüm.
+Uygulamanın kayıt defteri erişimini **HKEY_CURRENT_USER** (**HKCU**) düğümüne yeniden yönlendirip yönlendirmeyeceğini ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -300,24 +300,24 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-[in] TRUE, kayıt defteri bilgilerini Yönlendirilme biçimini gösterir **HKCU** düğüm; FALSE, uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).
+*bEnable*<br/>
+'ndaki DOĞRU, kayıt defteri bilgilerinin **HKCU** düğümüne yönlendirildiğini gösterir; FALSE, uygulamanın kayıt defteri bilgilerini varsayılan düğüme yazdığını gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılıysa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşursa.
+Yöntem başarılı olursa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt defteri yeniden yönlendirme varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimini yönlendireceği **HKEY_CURRENT_USER\Software\Classes**.
+Kayıt defteri yönlendirmesi varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi **HKEY_CURRENT_USER \Software\Classes**'a yönlendirilir.
 
-Yeniden yönlendirme genel değil. Yalnızca MFC ve ATL çerçeveleri, bu kayıt defteri yeniden yönlendirmeyi tarafından etkilenir.
+Yeniden yönlendirme genel değildir. Yalnızca MFC ve ATL çerçeveleri bu kayıt defteri yeniden yönlendirmesinin etkilenmiştir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib
+##  <a name="atlunregistertypelib"></a>AtlUnRegisterTypeLib
 
 Tür kitaplığının kaydını silmek için bu işlev çağrılır.
 
@@ -331,25 +331,25 @@ ATLAPI AtlUnRegisterTypeLib(
 
 ### <a name="parameters"></a>Parametreler
 
-*hInstTypeLib*<br/>
-Modül örneğinin tanıtıcısını.
+*Hınsttypelib*<br/>
+Modül örneği için tanıtıcı.
 
 *lpszIndex*<br/>
-Biçim dizesinde "\\\N", burada N tamsayı tür kitaplığı kaynağı dizinidir. Hiçbir dizin gerekiyorsa NULL olabilir.
+"\\\n" biçiminde dize, burada N, tür kitaplığı kaynağının tamsayı dizinidir. Dizin gerekmiyorsa NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı işlevi tarafından kullanılan [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) ve [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).
+Bu yardımcı işlevi [CAtlComModule:: UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) ve [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver)tarafından kullanılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib
+##  <a name="atlloadtypelib"></a>AtlLoadTypeLib
 
 Tür kitaplığını yüklemek için bu işlev çağrılır.
 
@@ -365,35 +365,35 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 ### <a name="parameters"></a>Parametreler
 
-*hInstTypeLib*<br/>
-Tür kitaplığı ile ilişkili modülü için işleyin.
+*Hınsttypelib*<br/>
+Tür kitaplığıyla ilişkili modülün tanıtıcısı.
 
 *lpszIndex*<br/>
-Biçim dizesinde "\\\N", burada N tamsayı tür kitaplığı kaynağı dizinidir. Hiçbir dizin gerekiyorsa NULL olabilir.
+"\\\n" biçiminde dize, burada N, tür kitaplığı kaynağının tamsayı dizinidir. Dizin gerekmiyorsa NULL olabilir.
 
 *pbstrPath*<br/>
-Başarılı getirisini tür kitaplığı ile ilişkili modülü tam yolunu içerir.
+Başarılı bir dönüşte, tür kitaplığıyla ilişkili modülün tam yolunu içerir.
 
 *ppTypeLib*<br/>
-Başarılı geri yüklenen bir tür kitaplığı için bir işaretçi işaretçisi içerir.
+Başarılı dönüşte, yüklenen tür kitaplığının işaretçisi için bir işaretçi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı işlevi tarafından kullanılan [AtlRegisterTypeLib](#atlregistertypelib) ve [AtlUnRegisterTypeLib](#atlunregistertypelib).
+Bu yardımcı işlevi, [AtlRegisterTypeLib](#atlregistertypelib) ve [AtlUnRegisterTypeLib](#atlunregistertypelib)tarafından kullanılır.
 
-##  <a name="atlupdateregistryfromresourced"></a>  AtlUpdateRegistryFromResourceD
+##  <a name="atlupdateregistryfromresourced"></a>AtlUpdateRegistryFromResourceD
 
-Bu işlev, Visual Studio 2013'te kullanım dışı bırakıldı ve Visual Studio 2015'te kaldırılır.
+Bu işlev Visual Studio 2013 kullanımdan kaldırılmıştır ve Visual Studio 2015 ' de kaldırılır.
 
 ```
 <removed>
 ```
 
-##  <a name="registrydataexchange"></a>  RegistryDataExchange
+##  <a name="registrydataexchange"></a>RegistryDataExchange
 
 Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır.
 
@@ -408,34 +408,34 @@ HRESULT RegistryDataExchange(
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-Geçerli nesneye bir işaretçi.
+*Yönergelerinin*<br/>
+Geçerli nesneye yönelik bir işaretçi.
 
 *rdxOp*<br/>
-İşlev işlemi gösteren bir sabit listesi değeri gerçekleştirmeniz gerekir. İzin verilen değerler için Açıklamalar bölümü içindeki tabloya bakın.
+İşlevin hangi işlemi gerçekleştireceğini belirten Enum değeri. İzin verilen değerler için açıklamalar bölümündeki tabloya bakın.
 
 *pItem*<br/>
-Okuma veya kayıt defterine, yazılan veri işaretçisi. Verileri ayrıca bir anahtarı kayıt defterinden silinecek temsil edebilir. Varsayılan değer NULL olur.
+Kayıt defterinden okunacak veya üzerine yazılacak verilere yönelik işaretçi. Veriler, kayıt defterinden silinecek bir anahtarı da temsil edebilir. Varsayılan değer NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Makroları [BEGIN_RDX_MAP](registry-data-exchange-macros.md#begin_rdx_map) ve [END_RDX_MAP](registry-data-exchange-macros.md#end_rdx_map) çağırdığı bir işleve genişletin `RegistryDataExchange`.
+Makrolar [BEGIN_RDX_MAP](registry-data-exchange-macros.md#begin_rdx_map) ve [END_RDX_MAP](registry-data-exchange-macros.md#end_rdx_map) `RegistryDataExchange`çağıran bir işleve genişletilir.
 
-İşlev işlemi gerçekleştirmeniz gerekir gösteren olası sabit listesi değerleri aşağıdaki tabloda gösterilmiştir:
+İşlevin gerçekleştirmesi gereken işlemi belirten olası Enum değerleri aşağıdaki tabloda gösterilmiştir:
 
-|Sabit listesi değeri|Çalışma|
+|Sabit listesi değeri|İşlem|
 |----------------|---------------|
-|eReadFromReg|Kayıt defterinden veri okuma.|
+|eReadFromReg|Kayıt defterinden verileri okuyun.|
 |eWriteToReg|Kayıt defterine veri yazma.|
-|eDeleteFromReg|Kayıt anahtarını kayıt defterinden silin.|
+|eDeleteFromReg|Anahtarı kayıt defterinden silin.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

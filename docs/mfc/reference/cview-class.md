@@ -53,11 +53,11 @@ helpviewer_keywords:
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
 ms.openlocfilehash: f6be846e80209ce94c84222d61c37a7964baad03
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127515"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855547"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
@@ -73,13 +73,13 @@ class AFX_NOVTABLE CView : public CWnd
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CView:: CView](#cview)|`CView` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CView::D oPreparePrinting](#doprepareprinting)|Yazdır iletişim kutusunu görüntüler ve yazıcı cihaz bağlamı oluşturur; `OnPreparePrinting` üye işlevini geçersiz kılarken çağırın.|
 |[CView:: GetDocument](#getdocument)|Görünümle ilişkili belgeyi döndürür.|
@@ -97,7 +97,7 @@ class AFX_NOVTABLE CView : public CWnd
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CView:: OnActivateFrame](#onactivateframe)|Görünümü içeren çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında çağırılır.|
 |[CView:: OnActivateView](#onactivateview)|Bir görünüm etkinleştirildiğinde çağırılır.|

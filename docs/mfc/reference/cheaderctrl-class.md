@@ -65,11 +65,11 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
 ms.openlocfilehash: 62915da703e1c938e65643ab389999b83c72d459
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741525"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78871593"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 
@@ -85,19 +85,19 @@ class CHeaderCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHeaderCtrl:: CHeaderCtrl](#cheaderctrl)|Bir `CHeaderCtrl` nesnesi oluşturur.|
+|[CHeaderCtrl:: CHeaderCtrl](#cheaderctrl)|`CHeaderCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CHeaderCtrl:: ClearAllFilters](#clearallfilters)|Üst bilgi denetimi için tüm filtreleri temizler.|
 |[CHeaderCtrl:: ClearFilter](#clearfilter)|Üst bilgi denetimi için filtreyi temizler.|
-|[CHeaderCtrl:: Create](#create)|Bir üst bilgi denetimi oluşturur ve bunu bir `CHeaderCtrl` nesneye ekler.|
+|[CHeaderCtrl:: Create](#create)|Bir üst bilgi denetimi oluşturur ve bir `CHeaderCtrl` nesnesine iliştirir.|
 |[CHeaderCtrl:: CreateDragImage](#createdragimage)|Üst bilgi denetimindeki bir öğenin resminin saydam bir sürümünü oluşturur.|
-|[CHeaderCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir üst bilgi denetimi oluşturur ve bunu bir `CListCtrl` nesneye ekler.|
+|[CHeaderCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir üst bilgi denetimi oluşturur ve bunu bir `CListCtrl` nesnesine ekler.|
 |[CHeaderCtrl::D Eleteıtem](#deleteitem)|Üst bilgi denetiminden bir öğeyi siler.|
 |[CHeaderCtrl::D rawItem](#drawitem)|Üst bilgi denetiminin belirtilen öğesini çizer.|
 |[CHeaderCtrl:: EditFilter](#editfilter)|, Bir üst bilgi denetiminin belirtilen filtresini düzenlemesine başlar.|
@@ -115,7 +115,7 @@ class CHeaderCtrl : public CWnd
 |[CHeaderCtrl:: Layout](#layout)|Belirli bir dikdörtgen içindeki üst bilgi denetiminin boyutunu ve konumunu alır.|
 |[CHeaderCtrl:: OrderToIndex](#ordertoindex)|Üst bilgi denetimindeki sırası temelinde bir öğenin dizin değerini alır.|
 |[CHeaderCtrl:: SetBitmapMargin](#setbitmapmargin)|Üst bilgi denetimindeki bir bit eşlemin kenar boşluğunun genişliğini ayarlar.|
-|[CHeaderCtrl:: SetFilterChangeTimeout](#setfilterchangetimeout)|Filtre özniteliklerinde ve bir `HDN_FILTERCHANGE` bildirimin nakliyle bir değişikliğin gerçekleştiği zaman arasındaki zaman aşımı aralığını ayarlar.|
+|[CHeaderCtrl:: SetFilterChangeTimeout](#setfilterchangetimeout)|Filtre özniteliklerinde bir değişikliğin gerçekleştiği saat ile `HDN_FILTERCHANGE` bildiriminin nakledilme arasındaki zaman aşımı aralığını ayarlar.|
 |[CHeaderCtrl:: SetFocusedItem](#setfocuseditem)|Odağı geçerli üstbilgi denetimindeki belirtilen üstbilgi öğesine ayarlar.|
 |[CHeaderCtrl:: Sethotayırıcı](#sethotdivider)|Üst bilgi öğesinin el ile sürükleyip sürüklemeyeceğini göstermek için üst bilgi öğeleri arasındaki ayırıcıyı değiştirir.|
 |[CHeaderCtrl:: SetImageList](#setimagelist)|Üstbilgi denetimine bir görüntü listesi atar.|
@@ -132,15 +132,15 @@ Windows 95/Internet Explorer 4,0 ortak denetimleri için eklenen işlevler şunl
 
 - Üst bilgi öğesi özel sıralaması.
 
-- Üstbilgi öğelerinin yeniden sıralanması için üst bilgi öğesi sürükle ve bırak. `CHeaderCtrl` Nesneyi oluştururken HDS_DRAGDROP stilini kullanın.
+- Üstbilgi öğelerinin yeniden sıralanması için üst bilgi öğesi sürükle ve bırak. `CHeaderCtrl` nesnesini oluştururken HDS_DRAGDROP stilini kullanın.
 
-- Sütun yeniden boyutlandırılırken sürekli olarak görüntülenebilir üstbilgi sütunu metni. Bir `CHeaderCtrl` nesne oluştururken HDS_FULLDRAG stilini kullanın.
+- Sütun yeniden boyutlandırılırken sürekli olarak görüntülenebilir üstbilgi sütunu metni. Bir `CHeaderCtrl` nesnesi oluştururken HDS_FULLDRAG stilini kullanın.
 
-- Üst bilgi öğesini işaretçinin üzerine getirildiğinde üst bilgi öğesini vurgular. `CHeaderCtrl` Nesneyi oluştururken HDS_HOTTRACK stilini kullanın.
+- Üst bilgi öğesini işaretçinin üzerine getirildiğinde üst bilgi öğesini vurgular. `CHeaderCtrl` nesnesini oluştururken HDS_HOTTRACK stilini kullanın.
 
-- Görüntü listesi desteği. Üst bilgi öğeleri, bir `CImageList` nesne veya metin içinde depolanan görüntüleri içerebilir.
+- Görüntü listesi desteği. Üst bilgi öğeleri, `CImageList` nesne veya metin içinde depolanan görüntüleri içerebilir.
 
-Kullanma `CHeaderCtrl`hakkında daha fazla bilgi için bkz. [denetimler](../../mfc/controls-mfc.md) ve [CHeaderCtrl kullanma](../../mfc/using-cheaderctrl.md).
+`CHeaderCtrl`kullanma hakkında daha fazla bilgi için bkz. [denetimler](../../mfc/controls-mfc.md) ve [CHeaderCtrl kullanma](../../mfc/using-cheaderctrl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -158,7 +158,7 @@ Kullanma `CHeaderCtrl`hakkında daha fazla bilgi için bkz. [denetimler](../../m
 
 ##  <a name="cheaderctrl"></a>CHeaderCtrl:: CHeaderCtrl
 
-Bir `CHeaderCtrl` nesnesi oluşturur.
+`CHeaderCtrl` nesnesi oluşturur.
 
 ```
 CHeaderCtrl();
@@ -182,7 +182,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK ' de açıklandığı gibi, Win32 iletisi [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter) davranışını-1 sütun değeriyle uygular.
+Bu yöntem, Windows SDK açıklandığı gibi, Win32 ileti [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter) ,-1 sütun değeri ile uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -207,7 +207,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter)davranışını uygular.
+Bu yöntem, Windows SDK açıklandığı gibi Win32 ileti [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -215,7 +215,7 @@ Bu yöntem, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_CLEARFILTER]
 
 ##  <a name="create"></a>CHeaderCtrl:: Create
 
-Bir üst bilgi denetimi oluşturur ve bunu bir `CHeaderCtrl` nesneye ekler.
+Bir üst bilgi denetimi oluşturur ve bir `CHeaderCtrl` nesnesine iliştirir.
 
 ```
 virtual BOOL Create(
@@ -234,7 +234,7 @@ virtual BOOL Create(
 Üst bilgi denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
 
 *pParentWnd*<br/>
-Üst bilgi denetiminin üst penceresini (genellikle a `CDialog`) belirtir. NULL olmaması gerekir.
+Üst bilgi denetiminin üst penceresini belirtir, genellikle bir `CDialog`. NULL olmaması gerekir.
 
 *NID*<br/>
 Üst bilgi denetiminin KIMLIĞINI belirtir.
@@ -245,7 +245,7 @@ Başlatma başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda bir `CHeaderCtrl` nesne oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra başlık `Create`denetimini oluşturan ve bunu `CHeaderCtrl` nesnesine bağlayan çağırın.
+`CHeaderCtrl` nesnesini iki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra başlık denetimini oluşturan ve `CHeaderCtrl` nesnesine ekleyen `Create`çağırın.
 
 Üst bilgi denetim stillerine ek olarak, üst bilgi denetiminin konumunu ve yeniden boyutlandırılacağını anlamak için aşağıdaki ortak denetim stillerini kullanabilirsiniz (daha fazla bilgi için bkz. [ortak denetim stilleri](/windows/win32/Controls/common-control-styles) ):
 
@@ -253,7 +253,7 @@ Başlatma başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 - CCS_NODIVIDER, iki piksellik bir vurgulamanın denetimin en üstünde çizilmesini önler.
 
-- CCS_NOMOVEY, bir WM_SIZE iletisine yanıt olarak denetimin kendisini yatay olarak yeniden boyutlandırmasına ve taşımasına neden olur. CCS_NORESIZE Stili kullanılırsa, bu stil uygulanmaz. Üstbilgi denetimlerinde bu stil varsayılan olarak vardır.
+- CCS_NOMOVEY, bir WM_SIZE iletisine yanıt olarak denetimin kendisini yatay olarak yeniden boyutlandırmasına ve taşımasına neden olur. CCS_NORESIZE stil kullanılırsa, bu stil uygulanmaz. Üstbilgi denetimlerinde bu stil varsayılan olarak vardır.
 
 - CCS_NOPARENTALIGN, denetimin üst pencerenin üst veya alt kısmına otomatik olarak taşınmasını önler. Bunun yerine denetim, üst pencerenin boyutunda değişikliğe karşın konumunu üst pencere içinde tutar. CCS_TOP veya CCS_BOTTOM stili de kullanılıyorsa, yükseklik varsayılana ayarlanır, ancak konum ve genişlik değişmeden kalır.
 
@@ -263,17 +263,17 @@ Başlatma başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 Ayrıca, bir üstbilgi denetimine aşağıdaki pencere stillerini uygulayabilirsiniz (daha fazla bilgi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ):
 
-- WS_CHILD bir alt pencere oluşturur. WS_POPUP stiliyle kullanılamaz.
+- WS_CHILD bir alt pencere oluşturur. WS_POPUP stille birlikte kullanılamaz.
 
 - WS_VISIBLE Başlangıçta görünür olan bir pencere oluşturur.
 
-- WS_DISABLED başlangıçta devre dışı bırakılmış bir pencere oluşturur.
+- WS_DISABLED başlangıçta devre dışı olan bir pencere oluşturur.
 
-- WS_GROUP bir denetim grubunun ilk denetimini belirtir. Bu, kullanıcının, ok tuşlarıyla bir denetimden diğerine hareket edebilir. İlk denetimden sonra WS_GROUP stiliyle tanımlanan tüm denetimler aynı gruba aittir. WS_GROUP stilinde bir sonraki denetim, stil grubunu sonlandırır ve sonraki grubu başlatır (yani, bir grup bir sonraki başladığı yerde sona erer).
+- WS_GROUP, kullanıcının ok tuşlarıyla bir denetimden diğerine taşıyabileceği bir denetim grubunun ilk denetimini belirtir. İlk denetimden sonra WS_GROUP stili ile tanımlanmış tüm denetimler aynı gruba aittir. WS_GROUP stili olan bir sonraki denetim stil grubunu sonlandırır ve sonraki grubu başlatır (yani, bir grup bir sonraki başladığı yerde sona erer).
 
-- WS_TABSTOP, kullanıcının TAB tuşunu kullanarak taşıyabileceği birçok denetimden birini belirtir. TAB tuşu, kullanıcıyı WS_TABSTOP stili tarafından belirtilen bir sonraki denetime taşıdıkça.
+- WS_TABSTOP, kullanıcının TAB tuşunu kullanarak taşıyabileceği birçok denetimden birini belirtir. TAB tuşu, Kullanıcı WS_TABSTOP stili tarafından belirtilen sonraki denetime taşınıyor.
 
-Denetimi ile genişletilmiş Windows stilleri kullanmak istiyorsanız, yerine `Create` [CreateEx](#createex) çağırın.
+Denetim ile genişletilmiş Windows stilleri kullanmak istiyorsanız, `Create`yerine [CreateEx](#createex) çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -281,7 +281,7 @@ Denetimi ile genişletilmiş Windows stilleri kullanmak istiyorsanız, yerine `C
 
 ##  <a name="createex"></a>CHeaderCtrl:: CreateEx
 
-Bir denetim (alt pencere) oluşturur ve `CHeaderCtrl` nesneyle ilişkilendirir.
+Bir denetim (alt pencere) oluşturur ve `CHeaderCtrl` nesnesiyle ilişkilendirir.
 
 ```
 virtual BOOL CreateEx(
@@ -315,7 +315,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows `CreateEx` genişletilmiş stili `Create` önsöz **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için yerine kullanın.
+Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için `Create` yerine `CreateEx` kullanın.
 
 ##  <a name="createdragimage"></a>CHeaderCtrl:: CreateDragImage
 
@@ -336,9 +336,9 @@ Başarılı olursa bir [Ciımagelist](../../mfc/reference/cimagelist-class.md) n
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_CREATEDRAGIMAGE](/windows/win32/Controls/hdm-createdragimage)davranışını uygular. Başlık öğesi sürükle ve bırak desteği için verilmiştir.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_CREATEDRAGIMAGE](/windows/win32/Controls/hdm-createdragimage)davranışını uygular. Başlık öğesi sürükle ve bırak desteği için verilmiştir.
 
-Döndürülen işaretçinin işaret ettiği nesne,geçicibirnesnevesonrakiboşzamanlıişlemeiçindesilinir.`CImageList`
+Döndürülen işaretçinin işaret ettiği `CImageList` nesnesi geçici bir nesne ve bir sonraki boş zamanlı işleme içinde silinir.
 
 ##  <a name="deleteitem"></a>CHeaderCtrl::D Eleteıtem
 
@@ -376,9 +376,9 @@ Boyanmış öğeyi açıklayan [Drawitemstruct](/windows/win32/api/winuser/ns-wi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DRAWITEMSTRUCT` Yapının üyesi gerçekleştirilecek çizim eylemini tanımlar. `itemAction`
+`DRAWITEMSTRUCT` yapısının `itemAction` üyesi, gerçekleştirilecek çizim eylemini tanımlar.
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bir sahip çizim `CHeaderCtrl` nesnesi için çizimi uygulamak üzere bu üye işlevini geçersiz kılın.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Sahip çizim `CHeaderCtrl` nesnesi için çizim uygulamak üzere bu üye işlevini geçersiz kılın.
 
 Uygulamanın, bu üye işlevi sonlandırılmadan önce *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
 
@@ -402,7 +402,7 @@ BOOL EditFilter(
 Düzenlenecek sütun.
 
 *bDiscardChanges*<br/>
-[HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter) iletisi gönderildiğinde kullanıcının filtreyi düzenlemesi süreciyorsa kullanıcının düzenlenme değişikliklerinin nasıl işleneceğini belirten bir değer.
+Kullanıcı, [HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter) ileti gönderildiğinde filtreyi düzenlemekte olduğunuz durumlarda kullanıcının düzenlenme değişikliklerinin nasıl işleneceğini belirten bir değer.
 
 Kullanıcı tarafından yapılan değişiklikleri atmak için TRUE, veya Kullanıcı tarafından yapılan değişiklikleri kabul etmek için FALSE değerini belirtin.
 
@@ -412,7 +412,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter)davranışını uygular.
+Bu yöntem, Windows SDK açıklandığı gibi Win32 ileti [HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -432,7 +432,7 @@ Bit eşlem kenar boşluğunun piksel cinsinden genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_GETBITMAPMARGIN](/windows/win32/Controls/hdm-getbitmapmargin)davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_GETBITMAPMARGIN](/windows/win32/Controls/hdm-getbitmapmargin)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -456,7 +456,7 @@ Bu yöntem, Windows SDK açıklanan [HDM_GETFOCUSEDITEM](/windows/win32/Controls
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli üst bilgi denetimine `m_headerCtrl`erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli üst bilgi denetimine erişmek için kullanılan `m_headerCtrl`değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
@@ -480,7 +480,7 @@ Bir [CImageList](../../mfc/reference/cimagelist-class.md) nesnesine yönelik bir
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_GETIMAGELIST](/windows/win32/Controls/hdm-getimagelist)davranışını uygular. Döndürülen işaretçinin işaret ettiği nesne,geçicibirnesnevesonrakiboşzamanlıişlemeiçindesilinir.`CImageList`
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_GETIMAGELIST](/windows/win32/Controls/hdm-getimagelist)davranışını uygular. Döndürülen işaretçinin işaret ettiği `CImageList` nesnesi geçici bir nesne ve bir sonraki boş zamanlı işleme içinde silinir.
 
 ### <a name="example"></a>Örnek
 
@@ -502,7 +502,7 @@ BOOL GetItem(
 Alınacak öğenin sıfır tabanlı dizinini belirtir.
 
 *Pheaderıtem*<br/>
-Yeni öğeyi alan [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısına yönelik işaretçi. Bu yapı `InsertItem` ve `SetItem` üye işlevleriyle birlikte kullanılır. `mask` Öğesinde ayarlanan tüm bayraklar, karşılık gelen öğelerdeki değerlerin geri dönüş sonrasında doğru doldurulduğundan emin olun. `mask` Öğe sıfır olarak ayarlandıysa, diğer yapı öğelerindeki değerler anlamsız olur.
+Yeni öğeyi alan [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısına yönelik işaretçi. Bu yapı, `InsertItem` ve `SetItem` üye işlevleriyle birlikte kullanılır. `mask` öğesinde ayarlanan herhangi bir bayrak, karşılık gelen öğelerdeki değerlerin geri dönüş sonrasında doğru doldurulduğundan emin olun. `mask` öğesi sıfır olarak ayarlandıysa, diğer yapı öğelerindeki değerler anlamlı değildir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -542,7 +542,7 @@ BOOL GetItemDropDownRect(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IItem*|'ndaki Stili HDF_SPLITBUTTON olan üst bilgi öğesinin sıfır tabanlı dizini. Daha fazla bilgi için bkz `fmt` . [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısı üyesi.|
+|*IItem*|'ndaki Stili HDF_SPLITBUTTON olan üst bilgi öğesinin sıfır tabanlı dizini. Daha fazla bilgi için bkz. [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısının `fmt` üyesi.|
 |*lpRect*|dışı Sınırlayıcı dikdörtgen bilgilerini almak için bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -555,13 +555,13 @@ Bu yöntem, Windows SDK açıklanan [HDM_GETITEMDROPDOWNRECT](/windows/win32/Con
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli üst bilgi denetimine `m_headerCtrl`erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli üst bilgi denetimine erişmek için kullanılan `m_headerCtrl`değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `GetItemDropDownRect` yöntemini gösterir. Kodun önceki bir bölümünde beş sütunlu bir başlık denetimi oluşturduk. Aşağıdaki kod örneği, üst bilgi açılan düğmesi için ayrılan ilk sütundaki konumun etrafında 3B bir dikdörtgen çizer.
+Aşağıdaki kod örneğinde `GetItemDropDownRect` yöntemi gösterilmektedir. Kodun önceki bir bölümünde beş sütunlu bir başlık denetimi oluşturduk. Aşağıdaki kod örneği, üst bilgi açılan düğmesi için ayrılan ilk sütundaki konumun etrafında 3B bir dikdörtgen çizer.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_13.cpp)]
 
@@ -589,7 +589,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_GETITEMRECT](/windows/win32/Controls/hdm-getitemrect)davranışını uygular.
+Bu yöntem, Windows SDK açıklandığı gibi Win32 ileti [HDM_GETITEMRECT](/windows/win32/Controls/hdm-getitemrect)davranışını uygular.
 
 ##  <a name="getorderarray"></a>CHeaderCtrl:: GetOrderArray
 
@@ -615,7 +615,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_GETORDERARRAY](/windows/win32/Controls/hdm-getorderarray)davranışını uygular. Başlık öğesi sıralamasını desteklemek için verilmiştir.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_GETORDERARRAY](/windows/win32/Controls/hdm-getorderarray)davranışını uygular. Başlık öğesi sıralamasını desteklemek için verilmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -641,19 +641,19 @@ Bu işlev başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üstbilgi denetimi aynı anda görüntülenebileceğinden daha fazla öğe içeriyorsa, denetim görünür olmayan öğelere kayan bir taşma düğmesi görüntüleyebilir. Üst bilgi denetimi, taşma düğmesini göstermek için HDS_OVERFLOW ve HDF_SPLITBUTTON stillerine sahip olmalıdır. Sınırlayıcı dikdörtgen taşma düğmesini barındırır ve yalnızca taşma düğmesi görüntülenirken bulunur. Daha fazla bilgi için bkz. [üstbilgi denetim stilleri](/windows/win32/Controls/header-control-styles).
+Üstbilgi denetimi aynı anda görüntülenebileceğinden daha fazla öğe içeriyorsa, denetim görünür olmayan öğelere kayan bir taşma düğmesi görüntüleyebilir. Üst bilgi denetiminde, taşma düğmesini göstermek için HDS_OVERFLOW ve HDF_SPLITBUTTON stilleri olmalıdır. Sınırlayıcı dikdörtgen taşma düğmesini barındırır ve yalnızca taşma düğmesi görüntülenirken bulunur. Daha fazla bilgi için bkz. [üstbilgi denetim stilleri](/windows/win32/Controls/header-control-styles).
 
 Bu yöntem, Windows SDK açıklanan [HDM_GETOVERFLOWRECT](/windows/win32/Controls/hdm-getoverflowrect) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli üst bilgi denetimine `m_headerCtrl`erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli üst bilgi denetimine erişmek için kullanılan `m_headerCtrl`değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `GetOverflowRect` yöntemini gösterir. Kodun önceki bir bölümünde beş sütunlu bir başlık denetimi oluşturduk. Ancak, sütunun görünür olmaması için bir sütun ayırıcısını sürükleyebilirsiniz. Bazı sütunlar görünür değilse, üst bilgi denetimi bir taşma düğmesi çizer. Aşağıdaki kod örneği, taşma düğmesinin konumunun etrafında bir 3B dikdörtgen çizer.
+Aşağıdaki kod örneğinde `GetOverflowRect` yöntemi gösterilmektedir. Kodun önceki bir bölümünde beş sütunlu bir başlık denetimi oluşturduk. Ancak, sütunun görünür olmaması için bir sütun ayırıcısını sürükleyebilirsiniz. Bazı sütunlar görünür değilse, üst bilgi denetimi bir taşma düğmesi çizer. Aşağıdaki kod örneği, taşma düğmesinin konumunun etrafında bir 3B dikdörtgen çizer.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_15.cpp)]
 
@@ -681,13 +681,13 @@ Bu yöntem, Windows SDK açıklanan [HDM_HITTEST](/windows/win32/Controls/hdm-hi
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli üst bilgi denetimine `m_headerCtrl`erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli üst bilgi denetimine erişmek için kullanılan `m_headerCtrl`değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `HitTest` yöntemini gösterir. Bu kod örneği daha önceki bir bölümünde beş sütunlu bir başlık denetimi oluşturduk. Ancak, sütunun görünür olmaması için bir sütun ayırıcısını sürükleyebilirsiniz. Bu örnek, görünür durumdaysa sütunun dizinini bildirir ve sütun görünür değilse-1 ' dir.
+Aşağıdaki kod örneğinde `HitTest` yöntemi gösterilmektedir. Bu kod örneği daha önceki bir bölümünde beş sütunlu bir başlık denetimi oluşturduk. Ancak, sütunun görünür olmaması için bir sütun ayırıcısını sürükleyebilirsiniz. Bu örnek, görünür durumdaysa sütunun dizinini bildirir ve sütun görünür değilse-1 ' dir.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_16.cpp)]
 
@@ -761,7 +761,7 @@ int OrderToIndex(int nOrder) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi Win32 makrosu [HDM_ORDERTOINDEX](/windows/win32/controls/hdm-ordertoindex)davranışını uygular. Başlık öğesi sıralamasını desteklemek için verilmiştir.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 makro [HDM_ORDERTOINDEX](/windows/win32/controls/hdm-ordertoindex)davranışını uygular. Başlık öğesi sıralamasını desteklemek için verilmiştir.
 
 ##  <a name="setbitmapmargin"></a>CHeaderCtrl:: SetBitmapMargin
 
@@ -782,7 +782,7 @@ Bit eşlem kenar boşluğunun piksel cinsinden genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_SETBITMAPMARGIN](/windows/win32/Controls/hdm-setbitmapmargin)davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_SETBITMAPMARGIN](/windows/win32/Controls/hdm-setbitmapmargin)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -790,7 +790,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_SETBITM
 
 ##  <a name="setfilterchangetimeout"></a>CHeaderCtrl:: SetFilterChangeTimeout
 
-Filtre özniteliklerinde bir değişikliğin gerçekleştiği zaman ve bir [HDN_FILTERCHANGE](/windows/win32/Controls/hdn-filterchange) bildiriminin nakledilme zamanı arasındaki zaman aşımı aralığını ayarlar.
+Filtre özniteliklerinde bir değişikliğin gerçekleştiği saat ile [HDN_FILTERCHANGE](/windows/win32/Controls/hdn-filterchange) bildiriminin nakledilme arasındaki zaman aşımı aralığını ayarlar.
 
 ```
 int SetFilterChangeTimeout(DWORD dwTimeOut);
@@ -807,7 +807,7 @@ Değiştirilmekte olan filtre denetiminin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_SETFILTERCHANGETIMEOUT](/windows/win32/Controls/hdm-setfilterchangetimeout)davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_SETFILTERCHANGETIMEOUT](/windows/win32/Controls/hdm-setfilterchangetimeout)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -837,7 +837,7 @@ Bu yöntem, Windows SDK açıklanan [HDM_SETFOCUSEDITEM](/windows/win32/Controls
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli üst bilgi denetimine `m_headerCtrl`erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli üst bilgi denetimine erişmek için kullanılan `m_headerCtrl`değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
@@ -870,7 +870,7 @@ Vurgulanan ayırıcının dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_SETHOTDIVIDER](/windows/win32/Controls/hdm-sethotdivider)davranışını uygular. Başlık öğesi sürükle ve bırak desteği için verilmiştir.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_SETHOTDIVIDER](/windows/win32/Controls/hdm-sethotdivider)davranışını uygular. Başlık öğesi sürükle ve bırak desteği için verilmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -887,7 +887,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ### <a name="parameters"></a>Parametreler
 
 *pImageList*<br/>
-Üst bilgi denetimine atanacak `CImageList` görüntü listesini içeren bir nesne işaretçisi.
+Üst bilgi denetimine Atanacak görüntü listesini içeren `CImageList` nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -895,7 +895,7 @@ Daha önce üst bilgi denetimine atanan [CImageList](../../mfc/reference/cimagel
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [HDM_SETIMAGELIST](/windows/win32/Controls/hdm-setimagelist)davranışını uygular. Döndürülen işaretçinin işaret ettiği nesne,geçicibirnesnevesonrakiboşzamanlıişlemeiçindesilinir.`CImageList`
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [HDM_SETIMAGELIST](/windows/win32/Controls/hdm-setimagelist)davranışını uygular. Döndürülen işaretçinin işaret ettiği `CImageList` nesnesi geçici bir nesne ve bir sonraki boş zamanlı işleme içinde silinir.
 
 ### <a name="example"></a>Örnek
 
@@ -951,7 +951,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi Win32 makrosu [HDM_SETORDERARRAY](/windows/win32/Controls/hdm-setorderarray)davranışını uygular. Başlık öğesi sıralamasını desteklemek için verilmiştir.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 makro [HDM_SETORDERARRAY](/windows/win32/Controls/hdm-setorderarray)davranışını uygular. Başlık öğesi sıralamasını desteklemek için verilmiştir.
 
 ### <a name="example"></a>Örnek
 

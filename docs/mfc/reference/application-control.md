@@ -5,34 +5,34 @@ helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
 ms.openlocfilehash: cb4ad19dfad06b793f226324d8e28c37c084ad67
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612297"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855701"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 
-OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OLE sistem DLL'lerini Başlat ve uygulamaları otomatik olarak yayınlayın, üretim ve değişikliği nesnelerin koordine etmek ve benzeri olması gerekir. Bu konudaki işlevleri bu gereksinimleri karşılar. OLE sistem DLL'lerini çağrılan ek olarak, bu işlevler, bazen de uygulamalar tarafından çağrılmalıdır.
+OLE, uygulamalar ve nesneler üzerinde önemli denetim gerektirir. OLE sistem dll 'Leri uygulamaları otomatik olarak başlatıp serbest bırakabilir, bunların üretimini ve nesnelerin değiştirilmesini koordine edebilir. Bu konudaki işlevler bu gereksinimleri karşılar. OLE sistem dll 'Leri tarafından çağrılmalarının yanı sıra, bu işlevlerin bazen uygulamalar tarafından da çağrılması gerekir.
 
 ### <a name="application-control"></a>Uygulama Denetimi
 
 |||
 |-|-|
-|[AfxOleCanExitApp](#afxolecanexitapp)|Uygulamayı sonlandırabilirsiniz olup olmadığını gösterir.|
+|[AfxOleCanExitApp](#afxolecanexitapp)|Uygulamanın sonlandırılıp sonlandıramayacağını gösterir.|
 |[AfxOleGetMessageFilter](#afxolegetmessagefilter)|Uygulamanın geçerli ileti filtresini alır.|
-|[AfxOleGetUserCtrl](#afxolegetuserctrl)|Geçerli kullanıcı denetimi bayrağı alır.|
-|[AfxOleSetUserCtrl](#afxolesetuserctrl)|Kullanıcı denetimi bayrağını kaldırır veya ayarlar.|
-|[AfxOleLockApp](#afxolelockapp)|Framework'ün genel bir uygulamada etkin nesne sayısını sayısını artırır.|
-|[AfxOleLockControl](#afxolelockcontrol)| Sınıf üretecini belirtilen denetiminin kilitler. |
-|[AfxOleUnlockApp](#afxoleunlockapp)|Azaltır uygulamada etkin nesne sayısını framework'ün sayısı.|
-|[AfxOleUnlockControl](#afxoleunlockcontrol)| Sınıf üretecini belirtilen denetiminin kilidini açar. |
-|[AfxOleRegisterServerClass](#afxoleregisterserverclass)|Bir sunucuya OLE sistem kayıt defterine kaydeder.|
-|[AfxOleSetEditMenu](#afxoleseteditmenu)|Kullanıcı arabirimi uygulayan *typename* nesne komutu.|
+|[AfxOleGetUserCtrl](#afxolegetuserctrl)|Geçerli Kullanıcı denetimi bayrağını alır.|
+|[AfxOleSetUserCtrl](#afxolesetuserctrl)|Kullanıcı denetimi bayrağını ayarlar veya temizler.|
+|[AfxOleLockApp](#afxolelockapp)|Çerçevenin bir uygulamadaki etkin nesne sayısının genel sayısını artırır.|
+|[AfxOleLockControl](#afxolelockcontrol)| Belirtilen denetimin sınıf fabrikasını kilitler. |
+|[AfxOleUnlockApp](#afxoleunlockapp)|Bir uygulamadaki etkin nesne sayısı çerçevesinin sayısını azaltır.|
+|[AfxOleUnlockControl](#afxoleunlockcontrol)| Belirtilen denetimin sınıf fabrikasının kilidini açar. |
+|[AfxOleRegisterServerClass](#afxoleregisterserverclass)|OLE sistem kayıt defterine bir sunucu kaydeder.|
+|[AfxOleSetEditMenu](#afxoleseteditmenu)|*TypeName* nesne komutu için Kullanıcı arabirimini uygular.|
 
-##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp
+##  <a name="afxolecanexitapp"></a>AfxOleCanExitApp
 
-Uygulamayı sonlandırabilirsiniz olup olmadığını gösterir.
+Uygulamanın sonlandırılıp sonlandıramayacağını gösterir.
 
 ```
 BOOL AFXAPI AfxOleCanExitApp();
@@ -40,11 +40,11 @@ BOOL AFXAPI AfxOleCanExitApp();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulamadan çıkmak olursa sıfır dışı; Aksi durumda 0.
+Uygulamanın çıkış yapmak için sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bekleyen nesnelerine başvurular varsa uygulamanın sonlanmalıdır değil. Genel işlevler `AfxOleLockApp` ve `AfxOleUnlockApp` artırın ve sırasıyla bir sayacı uygulamanın nesnelere yapılan başvuruların azaltma. Bu sayaç, sıfır dışında olduğunda uygulama sonlanmalıdır değil. Sayaç sıfır değilse, uygulamanın ana pencere kullanıcı sistem menüsünden veya çıkış Dosya menüsünden Kapat seçtiğinde (değil yok) gizlidir. Bu işlev çağrıları framework `CFrameWnd::OnClose`.
+Bir uygulama, nesnelerine yönelik bekleyen başvurular varsa sonlandırılmamalıdır. Genel işlevler, uygulama nesnelerine yapılan başvuruların bir sayacı sırasıyla `AfxOleLockApp` ve `AfxOleUnlockApp` artırır ve azaltır. Bu sayaç sıfır olmadığında uygulamanın sonlandırılması gerekir. Sayaç sıfır değilse, Kullanıcı sistem menüsünden Kapat ' ı seçtiğinde veya Dosya menüsünden çıkarken uygulamanın ana penceresi gizlenir (yok edilmez). Çerçeve `CFrameWnd::OnClose`bu işlevi çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -52,9 +52,9 @@ Bekleyen nesnelerine başvurular varsa uygulamanın sonlanmalıdır değil. Gene
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxdisp.h
+**Üstbilgi**: AfxDisp. h
 
-##  <a name="afxolegetmessagefilter"></a>  AfxOleGetMessageFilter
+##  <a name="afxolegetmessagefilter"></a>AfxOleGetMessageFilter
 
 Uygulamanın geçerli ileti filtresini alır.
 
@@ -64,11 +64,11 @@ COleMessageFilter* AFXAPI AfxOleGetMessageFilter();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli İleti Filtresi için bir işaretçi.
+Geçerli ileti filtresine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli erişmek için bu işlevi çağırın `COleMessageFilter`-yalnızca çağıracak şekilde nesne, türetilmiş `AfxGetApp` geçerli uygulama nesnesinin erişmek için.
+Geçerli `COleMessageFilter`türetilmiş nesneye erişmek için bu işlevi çağırın, böylece, geçerli uygulama nesnesine erişmek için `AfxGetApp` çağırırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -78,11 +78,11 @@ Geçerli erişmek için bu işlevi çağırın `COleMessageFilter`-yalnızca ça
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxwin.h
+**Üstbilgi**: Afxwin. h
 
-##  <a name="afxolegetuserctrl"></a>  AfxOleGetUserCtrl
+##  <a name="afxolegetuserctrl"></a>AfxOleGetUserCtrl
 
-Geçerli kullanıcı denetimi bayrağı alır.
+Geçerli Kullanıcı denetimi bayrağını alır.
 
 ```
 BOOL AFXAPI AfxOleGetUserCtrl();
@@ -90,19 +90,19 @@ BOOL AFXAPI AfxOleGetUserCtrl();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı uygulama denetiminde ise sıfır olmayan; Aksi durumda 0.
+Kullanıcı uygulamanın denetlikse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı açıkça açık veya yeni bir belge oluşturulan kullanıcı uygulama denetiminde olur. Uygulama OLE sistem DLL'lerini değil başlatıldıysa kullanıcı denetiminde olsa — diğer bir deyişle, kullanıcının uygulama system kabuğu ile başlatılan durumunda.
+Kullanıcı açıkça açıldığında veya yeni bir belge oluştururken uygulamanın denetimindeki kullanıcı denetimidir. Kullanıcı aynı zamanda uygulamanın OLE sistem dll 'Leri tarafından başlatılmadığından (başka bir deyişle, Kullanıcı uygulamayı sistem kabuğu ile başlatdıysa) denetim de olur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxdisp.h
+**Üstbilgi**: AfxDisp. h
 
-##  <a name="afxolesetuserctrl"></a>  AfxOleSetUserCtrl
+##  <a name="afxolesetuserctrl"></a>AfxOleSetUserCtrl
 
-Başvuru için açıklanan kullanıcı denetimi bayrağını ayarlar veya temizler `AfxOleGetUserCtrl`.
+`AfxOleGetUserCtrl`başvurusunda açıklanan Kullanıcı denetimi bayrağını ayarlar veya temizler.
 
 ```
 void AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl);
@@ -111,21 +111,21 @@ void AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl);
 ### <a name="parameters"></a>Parametreler
 
 *bUserCtrl*<br/>
-Kullanıcı denetimi bayrağı ayarlayın ya da seçili olup olmadığını belirtir.
+Kullanıcı denetimi bayrağının ayarlanacağını veya temizlenip temizlenmeyeceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir belge yüklendiğinde veya bir kapsayıcı uygulamasından katıştırılmış nesne yükleme gibi dolaylı bir eylem aracılığıyla oluşturulan değil, framework kullanıcı oluşturduğunda veya bir belgeyi yükler, ancak bu işlevi çağırır.
+Kullanıcı bir belge oluşturduğunda veya yüklediğinde bu işlevi çağırır, ancak bir belge yüklendiğinde veya bir kapsayıcı uygulamasından katıştırılmış bir nesne yükleme gibi dolaylı bir eylem aracılığıyla oluşturulduğunda değil.
 
-Diğer Eylemler uygulamanızdaki kullanıcı uygulama denetiminde koymanız gerekir, bu işlevi çağırın.
+Uygulamanızdaki başka eylemler uygulamayı uygulamanın denetimine yerleştirmelidir bu işlevi çağırın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxdisp.h
+**Üstbilgi**: AfxDisp. h
 
-##  <a name="afxolelockapp"></a>  AfxOleLockApp
+##  <a name="afxolelockapp"></a>AfxOleLockApp
 
-Framework'ün genel sayısını uygulamadaki etkin nesne sayısını artırır.
+Çerçevenin uygulamadaki etkin nesne sayısının genel sayısını artırır.
 
 ```
 void AFXAPI AfxOleLockApp();
@@ -133,11 +133,11 @@ void AFXAPI AfxOleLockApp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework nesneleri sayısını uygulamada etkin tutar. `AfxOleLockApp` Ve `AfxOleUnlockApp` işlevleri sırasıyla artırmak ve bu sayı azaltma.
+Çerçeve, bir uygulamada etkin olan nesne sayısının sayısını tutar. `AfxOleLockApp` ve `AfxOleUnlockApp` işlevleri sırasıyla bu sayıyı artırır ve azaltır.
 
-Kullanıcı çalıştığında, etkin nesneleri olan bir uygulamayı kapatmak — etkin nesnelerin sayımını olduğu sıfır olmayan bir uygulama — framework tamamen kapatmak yerine kullanıcının görünümünden uygulamayı gizler. `AfxOleCanExitApp` İşlevi, uygulamayı sonlandırabilirsiniz olup olmadığını gösterir.
+Kullanıcı, etkin nesneleri olan bir uygulamayı kapatmayı denediğinde — etkin nesne sayısı sıfır olmayan bir uygulama — çerçeve, uygulamayı tamamen kapatmak yerine kullanıcının görünümünden gizler. `AfxOleCanExitApp` işlevi, uygulamanın sonlandırılıp sonlanamayacağını gösterir.
 
-Çağrı `AfxOleLockApp` istenmeyen o nesnenin bir istemci uygulaması tarafından halen kullanılmakta sırasında yok edileceği için, OLE arabirimleri kullanıma açıp herhangi bir nesneden. Ayrıca `AfxOleUnlockApp` çağıran herhangi bir nesnenin bir yok edici içinde `AfxOleLockApp` oluşturucuda. Varsayılan olarak, `COleDocument` (ve türetilmiş sınıflar) otomatik olarak Kilitle ve uygulama kilidini açın.
+OLE arabirimlerini sunan herhangi bir nesneden `AfxOleLockApp` çağırın, bu nesne, bir istemci uygulaması tarafından kullanılmaya devam edilirken bu nesnenin yok edilmesi istenmeyen bir hale gelir. Ayrıca, oluşturucuda `AfxOleLockApp` çağıran herhangi bir nesnenin yıkıcısında `AfxOleUnlockApp` çağırın. Varsayılan olarak, `COleDocument` (ve türetilmiş sınıflar) uygulamayı otomatik olarak kilitler ve kilidi açar.
 
 ### <a name="example"></a>Örnek
 
@@ -145,11 +145,11 @@ Kullanıcı çalıştığında, etkin nesneleri olan bir uygulamayı kapatmak �
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxdisp.h
+**Üstbilgi**: AfxDisp. h
 
-##  <a name="afxoleunlockapp"></a>  AfxOleUnlockApp
+##  <a name="afxoleunlockapp"></a>AfxOleUnlockApp
 
-Azaltır framework'ün uygulamadaki etkin nesne sayısı.
+Çerçevenin uygulamadaki etkin nesne sayısını azaltır.
 
 ```
 void AFXAPI AfxOleUnlockApp();
@@ -157,21 +157,21 @@ void AFXAPI AfxOleUnlockApp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: `AfxOleLockApp` daha fazla bilgi için.
+Daha fazla bilgi için bkz. `AfxOleLockApp`.
 
-Etkin nesne sayısı sıfır ulaştığında `AfxOleOnReleaseAllObjects` çağrılır.
+Etkin nesne sayısı sıfıra ulaştığında `AfxOleOnReleaseAllObjects` çağrılır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [AfxOleLockApp](#afxolelockapp).
+[AfxOleLockApp](#afxolelockapp)için örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxdisp.h
+**Üstbilgi**: AfxDisp. h
 
 ## <a name="afxolelockcontrol"></a>AfxOleLockControl
 
-Sınıf üretecini belirtilen denetiminin, denetimle ilişkili dinamik olarak oluşturulan veri bellekte kalır. böylece kilitler.
+Denetimle ilişkili dinamik olarak oluşturulan verilerin bellekte kalması için, belirtilen denetimin sınıf fabrikasını kilitler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -182,19 +182,19 @@ BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-Denetim sınıfı benzersiz kimliği.
+*in*<br/>
+Denetimin benzersiz sınıf KIMLIĞI.
 
 *lpszProgID*<br/>
-Denetim programı benzersiz kimliği.
+Denetimin benzersiz program KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin sınıf üreteci başarıyla kilitliydi olursa sıfır dışı; Aksi durumda 0.
+Denetimin sınıf fabrikası başarıyla kilitliyse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, önemli ölçüde denetimlerin görünümünü hızlandırabilir. Örneğin, bir kez, iletişim kutusunda bir denetimi oluşturma ve Denetim ile kilitleme `AfxOleLockControl`, oluşturma ve iletişim kutusunda gösterilen veya yok olması her zaman yeniden KILL gerekmez. Kullanıcı açılır ve sürekli bir iletişim kutusu kapanır, denetimleri kilitleme performansı önemli ölçüde artırabilir. Kontrol edilecek hazır olduğunuzda, çağrı `AfxOleUnlockControl`.
+Bu, denetimlerin görüntülenmesini önemli ölçüde hızlandırabilir. Örneğin, iletişim kutusunda bir denetim oluşturup `AfxOleLockControl`denetimi kilitledikten sonra, iletişim kutusu her gösterildiğinde veya yok edildiğinde yeniden oluşturmanız ve sonlandırmanıza gerek yoktur. Kullanıcı bir iletişim kutusunu açar ve kapatır, denetimlerinizi kilitlemek performansı önemli ölçüde artırabilir. Denetimi yok etmeye hazırsanız `AfxOleUnlockControl`çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -208,11 +208,11 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass
+##  <a name="afxoleregisterserverclass"></a>AfxOleRegisterServerClass
 
-Bu işlev, sunucunuzun OLE sistem kayıt defterinde kaydetmenize olanak sağlar.
+Bu işlev, sunucunuzu OLE sistem kayıt defterine kaydetmenizi sağlar.
 
 ```
 BOOL AFXAPI AfxOleRegisterServerClass(
@@ -227,62 +227,62 @@ BOOL AFXAPI AfxOleRegisterServerClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-Sunucunun OLE sınıf kimliği başvurusu
+*in*<br/>
+Sunucunun OLE sınıf KIMLIĞINE başvuru.
 
 *lpszClassName*<br/>
-Sunucu nesneleri sınıf adını içeren bir dize işaretçisi.
+Sunucu nesnelerinin sınıf adını içeren bir dize işaretçisi.
 
 *lpszShortTypeName*<br/>
-Sunucu nesne türü "Grafiği" gibi kısa adını içeren bir dize işaretçisi
+Sunucunun nesne türünün (örneğin, "grafik") kısa adını içeren bir dize işaretçisi.
 
 *lpszLongTypeName*<br/>
-"Microsoft Excel 5.0 grafiği" gibi sunucunun nesne türü uzun adını içeren bir dize işaretçisi
+Sunucunun nesne türünün uzun adını içeren bir dize işaretçisi, örneğin "Microsoft Excel 5,0 Chart."
 
 *nAppType*<br/>
-OLE uygulama türünü belirleme OLE_APPTYPE numaralandırma alınan bir değer. Olası değerler şunlardır:
+OLE uygulamasının türünü belirten OLE_APPTYPE numaralandırmasından alınan bir değer. Olası değerler şunlardır:
 
-- Oat_ınplace_server sunucunuzun tam sunucu kullanıcı arabirimi var.
+- OAT_INPLACE_SERVER sunucusu, tam sunucu Kullanıcı arabirimine sahiptir.
 
-- OAT_SERVER sunucusu yalnızca ekleme destekler.
+- OAT_SERVER sunucusu yalnızca katıştırmayı destekler.
 
-- Oat_contaıner kapsayıcı katıştırma için destekler.
+- OAT_CONTAINER kapsayıcı, eklenebilir bağlantıları destekler.
 
-- Oat_dıspatch_object `IDispatch`-yeteneğine sahip bir nesne.
+- `IDispatch`özellikli nesne OAT_DISPATCH_OBJECT.
 
 *rglpszRegister*<br/>
-Anahtarları ve anahtarlar için mevcut hiçbir değer bulunduğunda OLE sistem kayıt defterine eklenmesi değerleri temsil eden bir dize için işaretçiler dizisi.
+Anahtarlar için mevcut bir değer bulunamazsa OLE sistem kayıt defterine eklenecek anahtarları ve değerleri temsil eden dizelerin işaretçisi dizisi.
 
 *rglpszOverwrite*<br/>
-Anahtarlar ve değerler var olan değerleri belirtilen anahtarları için kayıt defteri içeriyorsa, OLE sistem kayıt defterine eklenmesi temsil eden bir dize için işaretçiler dizisi.
+Kayıt defteri verilen anahtarlar için mevcut değerler içeriyorsa OLE sistem kayıt defterine eklenecek anahtarları ve değerleri temsil eden dizelerin işaretçisi dizisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sunucu sınıfı başarıyla kaydedildi olursa sıfır dışı; Aksi durumda 0.
+Sunucu sınıfı başarıyla kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamaların çoğu kullanabilirsiniz `COleTemplateServer::Register` uygulamanın belge türleri kaydedilecek. Tipik bir düzen, uygulamanızın sistem kayıt defteri biçimi uygun değilse, kullanabileceğiniz `AfxOleRegisterServerClass` daha fazla denetim.
+Çoğu uygulama, uygulamanın belge türlerini kaydetmek için `COleTemplateServer::Register` kullanabilir. Uygulamanızın sistem kayıt defteri biçimi tipik modele uymuyorsa, daha fazla denetim için `AfxOleRegisterServerClass` kullanabilirsiniz.
 
-Kayıt defteri anahtarları ve değerleri içeren bir kümesinden oluşur. *RglpszRegister* ve *rglpszOverwrite* dizelerine dizileri bağımsız değişkenler, her oluşan bir anahtar veya değer tarafından ayrılmış bir **NULL** karakter ( `'\0'`). Bu dizelerin her biri olan yerlerde, karakter dizileri işaretlenmiş değiştirilebilir parametreler olabilir *%1* aracılığıyla *%5*.
+Kayıt defteri bir anahtarlar ve değerler kümesinden oluşur. *RglpszRegister* ve *rglpszOverwrite* bağımsız değişkenleri, her biri bir anahtar ve bir **null** karakterle (`'\0'`) ayrılmış bir değerden oluşan dizelere yönelik işaretçilerin dizeleridir. Bu dizelerin her biri, yerleri% *1* karakter dizileri tarafından işaretlenmiş ve *%5*ile değişen değiştirilebilir parametrelere sahip olabilir.
 
-Simgeler gibi doldurulur:
+Semboller aşağıdaki gibi doldurulur:
 
 |Sembol|Değer|
 |------------|-----------|
-|%1|Biçimlendirilmiş bir dize, sınıf kimliği|
+|%1|Sınıf KIMLIĞI, dize olarak biçimlendirildi|
 |%2|Sınıf adı|
-|%3|Yürütülebilir dosya yolu|
-|%4|Kısa bir tür adı|
-|%5|Uzun bir tür adı|
+|%3|Yürütülebilir dosyanın yolu|
+|%4|Kısa tür adı|
+|%5|Uzun tür adı|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxdisp.h
+**Üstbilgi**: AfxDisp. h
 
-##  <a name="afxoleseteditmenu"></a>  AfxOleSetEditMenu
+##  <a name="afxoleseteditmenu"></a>AfxOleSetEditMenu
 
-Kullanıcı arabirimi uygulayan *typename* nesne komutu.
+*TypeName* nesne komutu için Kullanıcı arabirimini uygular.
 
 ```
 void AFXAPI AfxOleSetEditMenu(
@@ -297,38 +297,38 @@ void AFXAPI AfxOleSetEditMenu(
 ### <a name="parameters"></a>Parametreler
 
 *pClient*<br/>
-İstemci OLE öğesini bir işaretçi.
+İstemci OLE öğesine yönelik bir işaretçi.
 
 *pMenu*<br/>
-Güncelleştirilecek menü nesnesine bir işaretçi.
+Güncelleştirileceği menü nesnesine yönelik bir işaretçi.
 
-*iMenuItem*<br/>
-Güncelleştirilecek menü öğesi dizini.
+*Imtri öğesi*<br/>
+Güncelleştirileceği menü öğesinin dizini.
 
 *nIDVerbMin*<br/>
-Birincil fiil için karşılık gelen komut kimliği.
+Birincil fiilye karşılık gelen komut KIMLIĞI.
 
-*nIDVerbMax*<br/>
-Son fiil karşılık gelen komut kimliği.
+*Nıdverbmax*<br/>
+Son fiilye karşılık gelen komut KIMLIĞI.
 
-*nIDConvert*<br/>
-Dönüştürme menü öğesi kimliği.
+*Nıdconvert*<br/>
+Dönüştür menü öğesinin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu yalnızca birincil fiil tanıyorsa menü öğesi haline gelir "fiili *typename* nesne" ve *nIDVerbMin* komut, kullanıcı komutu seçtiğinde gönderilir. Sunucu çeşitli fiilleri tanır ve ardından menü öğesi olur, " *typename* nesne" ve kullanıcı komutu tıkladığında tüm fiiller listeleyen bir alt menü görünür. Menüden kullanıcı fiil seçtiğinde *nIDVerbMin* ilk fiili seçilmişse gönderilen *nIDVerbMin* + 1, ikinci fiili seçilen ve diğerleri ise gönderilir. Varsayılan `COleDocument` uygulaması, bu özellik otomatik olarak işler.
+Sunucu yalnızca birincil bir fiili değer tanırsa, menü öğesi "fiil *TypeName* nesnesi" olur ve Kullanıcı komutu seçtiğinde *nIDVerbMin* komutu gönderilir. Sunucu birkaç fiil algılarsa, menü öğesi " *TypeName* nesnesi" olur ve Kullanıcı komutu seçtiğinde tüm fiillerin listelendiği bir alt menü görünür. Kullanıcı alt menüden bir fiil seçtiğinde, ilk fiil seçilirse *nIDVerbMin* gönderilir, ikinci fiil seçilirse *nIDVerbMin* + 1 gönderilir ve bu şekilde devam eder. Varsayılan `COleDocument` uygulama bu özelliği otomatik olarak işler.
 
-Aşağıdaki deyim, müşterinizin uygulama kaynak kodda olmalıdır (. RC) dosyası:
+İstemcinizin uygulama kaynak betiğinizde (. RC) dosyası:
 
-**#include \<afxolecl.rc >**
+**#include \<Afxolecl. RC >**
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: afxole.h
+**Üstbilgi**: afxole. h
 
-## <a name="afxoleunlockcontrol"></a> AfxOleUnlockControl
+## <a name="afxoleunlockcontrol"></a>AfxOleUnlockControl
 
-Sınıf üretecini belirtilen denetiminin kilidini açar.
+Belirtilen denetimin sınıf fabrikasının kilidini açar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -339,19 +339,19 @@ BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-Denetim sınıfı benzersiz kimliği.
+*in*<br/>
+Denetimin benzersiz sınıf KIMLIĞI.
 
 *lpszProgID*<br/>
-Denetim programı benzersiz kimliği.
+Denetimin benzersiz program KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin sınıf üreteci kilidi başarıyla açıldı olursa sıfır dışı; Aksi durumda 0.
+Denetimin sınıf fabrikası başarıyla kilitse sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir denetim ile kilitli `AfxOleLockControl`, böylece denetimle ilişkili dinamik olarak oluşturulan veri bellekte kalır. Denetim olmayan oluşturulabilir ve görüntülendiğinde her zaman yok çünkü bu denetimin görünümünü önemli ölçüde hız kazandırabilir. Kontrol edilecek hazır olduğunuzda, çağrı `AfxOleUnlockControl`.
+Denetim, `AfxOleLockControl`ile kilitlidir, böylece denetimle ilişkili dinamik olarak oluşturulan veriler bellekte kalır. Bu, denetimin görüntülenmesi önemli ölçüde hızlanır, çünkü her görüntülendiğinde denetim oluşturulmamalıdır ve yok edilir. Denetimi yok etmeye hazırsanız `AfxOleUnlockControl`çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -363,8 +363,8 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[Makrolar ve genel öğeler](mfc-macros-and-globals.md)<br/>

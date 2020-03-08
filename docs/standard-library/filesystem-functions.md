@@ -85,11 +85,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
 ms.openlocfilehash: 1ab57a6fc13a03d02963f3d7ecc80f63decb9487
-ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74898704"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78875837"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 
@@ -150,11 +150,11 @@ void copy(const path& from, const path& to, copy_options opts, error_code& ec) n
 
 İşlevler muhtemelen, ' deki ' de bir veya daha fazla dosyayı, *OptIn* parametresi olmayan aşırı *yüklemeler için `copy_options::none`* olarak gerçekleştirilen *OptIn*denetimi ' *nden* içine ' ya kopyalayabilir veya bağlar. *OptIn* 'ler en az birini içerir:
 
-- `skip_existing`, `overwrite_existing` veya `update_existing`
+- `skip_existing`, `overwrite_existing`veya `update_existing`
 
 - `copy_symlinks` veya `skip_symlinks`
 
-- `directories_only`, `create_symlinks` veya `create_hard_links`
+- `directories_only`, `create_symlinks`veya `create_hard_links`
 
 İşlevler ilk *olarak* *, için `f` file_status değerlerini ve için* `t` için belirlenir:
 

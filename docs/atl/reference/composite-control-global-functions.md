@@ -19,11 +19,11 @@ helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
 ms.openlocfilehash: 525fc01247053a1e2bc993398978cb332262a1a5
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927778"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78864771"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik denetim genel Işlevleri
 
@@ -43,7 +43,7 @@ Bu işlevler, iletişim kutuları oluşturma ve ActiveX denetimleri oluşturma, 
 |[AtlAxAttachControl](#atlaxattachcontrol)|Önceden oluşturulmuş bir denetimi belirtilen pencereye ekler.|
 |[AtlAxGetHost](#atlaxgethost)|Belirli bir pencere için (varsa), kapsayıcısına doğrudan bir arabirim işaretçisi elde etmek için kullanılır (varsa).|
 |[AtlAxGetControl](#atlaxgetcontrol)|Belirtilen bir pencere içinde (varsa) yer alan denetime (varsa) doğrudan bir arabirim işaretçisi elde etmek için kullanılır.|
-|[AtlSetChildSite](#atlsetchildsite)|`IUnknown` Alt sitenin öğesini başlatır.|
+|[AtlSetChildSite](#atlsetchildsite)|Alt sitenin `IUnknown` başlatır.|
 |[AtlAxWinInit](#atlaxwininit)|AxWin nesneleri için barındırma kodunu başlatır.|
 |[AtlAxWinTerm](#atlaxwinterm)|AxWin nesneleri için barındırma kodunu başlatır.|
 |[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Bir nesnenin varsayılan kaynak arabirimiyle ilgili bilgileri döndürür.|
@@ -88,14 +88,14 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir ActiveX `AtlAxDialogBox` denetimi içeren bir iletişim kutusu şablonuyla kullanmak için, iletişim kaynağının **Denetim** bölümünün *metin* alanı olarak, *sınıf adı* alanı olarak "AtlAxWin80" ile birlikte geçerli bir CLSID, AppID veya URL dizesi belirtin aynı bölüm altında. Aşağıda geçerli bir **Denetim** bölümünün nasıl görünebileceğini gösterilmektedir:
+Bir ActiveX denetimi içeren bir iletişim kutusu şablonuyla `AtlAxDialogBox` kullanmak için, iletişim kaynağının **Denetim** bölümünün *metin* alanı olarak GEÇERLI bir CLSID, AppID veya URL dizesi belirtin ve aynı bölümde *sınıf adı* alanı olarak "AtlAxWin80" ile birlikte "" kullanın. Aşağıda geçerli bir **Denetim** bölümünün nasıl görünebileceğini gösterilmektedir:
 
 ```
 CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-Kaynak betikleri düzenlemeyle ilgili daha fazla bilgi için bkz [. nasıl yapılır: Bir kaynak betik dosyasını metin biçiminde](../../windows/how-to-open-a-resource-script-file-in-text-format.md)açın. Denetim kaynak tanımı deyimleri hakkında daha fazla bilgi için Windows SDK altındaki [ortak denetim parametreleri](/windows/win32/menurc/common-control-parameters) bölümüne bakın: SDK Tools.
+Kaynak betikleri düzenlemeyle ilgili daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı deyimleri hakkında daha fazla bilgi için, Windows SDK: SDK Tools altındaki [ortak denetim parametrelerine](/windows/win32/menurc/common-control-parameters) bakın.
 
 Genel içindeki iletişim kutuları hakkında daha fazla bilgi için, Windows SDK ' de [DialogBox](/windows/win32/api/winuser/nf-winuser-dialogboxw) ve [CreateDialogParam](/windows/win32/api/winuser/nf-winuser-createdialogparamw) ' a bakın.
 
@@ -156,18 +156,18 @@ ATLAPI AtlAxCreateControl(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- Gibi bir ProgID`"MSCAL.Calendar.7"`
+- `"MSCAL.Calendar.7"` gibi bir ProgID
 
-- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
+- `"{8E27C92B-1264-101C-8A2F-040224009C02}"` gibi bir CLSID
 
-- Gibi bir URL`"<https://www.microsoft.com>"`
+- `"<https://www.microsoft.com>"` gibi bir URL
 
-- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
+- `"file://\\\Documents\MyDoc.doc"` gibi etkin bir belgeye yönelik bir başvuru
 
-- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
+- `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"` gibi bir HTML parçası
 
    > [!NOTE]
-   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`, bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 'ndaki Denetimin iliştirilecektir pencerenin tutamacı.
@@ -176,7 +176,7 @@ Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biç
 'ndaki Denetimin özelliklerini başlatmak için kullanılan akışa yönelik bir işaretçi. NULL olabilir.
 
 *ppUnkContainer*<br/>
-dışı Kapsayıcının `IUnknown` konumunu alacak bir işaretçinin adresi. NULL olabilir.
+dışı Kapsayıcının `IUnknown` alacak bir işaretçinin adresi. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -188,7 +188,7 @@ Bu genel işlev, [AtlAxCreateControlEx](#atlaxcreatecontrolex)(*lpszName*, *HWND
 
 Lisanslı bir ActiveX denetimi oluşturmak için bkz. [AtlAxCreateControlLic](#atlaxcreatecontrollic).
 
-##  <a name="atlaxcreatecontrolex"></a>  AtlAxCreateControlEx
+##  <a name="atlaxcreatecontrolex"></a>AtlAxCreateControlEx
 
 Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır. Yeni denetim için bir arabirim işaretçisi ve olay havuzu da oluşturulabilir.
 
@@ -208,18 +208,18 @@ ATLAPI AtlAxCreateControlEx(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- Gibi bir ProgID`"MSCAL.Calendar.7"`
+- `"MSCAL.Calendar.7"` gibi bir ProgID
 
-- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
+- `"{8E27C92B-1264-101C-8A2F-040224009C02}"` gibi bir CLSID
 
-- Gibi bir URL`"<https://www.microsoft.com>"`
+- `"<https://www.microsoft.com>"` gibi bir URL
 
-- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
+- `"file://\\\Documents\MyDoc.doc"` gibi etkin bir belgeye yönelik bir başvuru
 
-- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
+- `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"` gibi bir HTML parçası
 
    > [!NOTE]
-   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`, bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 'ndaki Denetimin iliştirilecektir pencerenin tutamacı.
@@ -228,16 +228,16 @@ Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biç
 'ndaki Denetimin özelliklerini başlatmak için kullanılan akışa yönelik bir işaretçi. NULL olabilir.
 
 *ppUnkContainer*<br/>
-dışı Kapsayıcının `IUnknown` konumunu alacak bir işaretçinin adresi. NULL olabilir.
+dışı Kapsayıcının `IUnknown` alacak bir işaretçinin adresi. NULL olabilir.
 
 *ppUnkControl*<br/>
-dışı Oluşturulan denetimin `IUnknown` adını alacak bir işaretçinin adresi. NULL olabilir.
+dışı Oluşturulan denetimin `IUnknown` alacak olan işaretçinin adresi. NULL olabilir.
 
 *ııdsink*<br/>
 Kapsanan nesnedeki bir giden arabirimin arabirim tanımlayıcısı.
 
 *punkSink*<br/>
-Kapsanan nesne başarıyla oluşturulduktan `IUnknown` sonra kapsanan nesnede *ııdsink* tarafından belirtilen bağlantı noktasına bağlanacak havuz nesnesinin arabirimine yönelik bir işaretçi.
+Kapsanan nesne başarıyla oluşturulduktan sonra kapsanan nesnede *ııdsink* tarafından belirtilen bağlantı noktasına bağlanacak havuz nesnesinin `IUnknown` arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -267,18 +267,18 @@ ATLAPI AtlAxCreateControlLic(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- Gibi bir ProgID`"MSCAL.Calendar.7"`
+- `"MSCAL.Calendar.7"` gibi bir ProgID
 
-- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
+- `"{8E27C92B-1264-101C-8A2F-040224009C02}"` gibi bir CLSID
 
-- Gibi bir URL`"<https://www.microsoft.com>"`
+- `"<https://www.microsoft.com>"` gibi bir URL
 
-- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
+- `"file://\\\Documents\MyDoc.doc"` gibi etkin bir belgeye yönelik bir başvuru
 
-- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
+- `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"` gibi bir HTML parçası
 
    > [!NOTE]
-   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`, bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 Denetimin iliştirilecektir pencerenin tutamacı.
@@ -287,7 +287,7 @@ Denetimin iliştirilecektir pencerenin tutamacı.
 Denetimin özelliklerini başlatmak için kullanılan akışa yönelik bir işaretçi. NULL olabilir.
 
 *ppUnkContainer*<br/>
-Kapsayıcının `IUnknown` konumunu alacak bir işaretçinin adresi. NULL olabilir.
+Kapsayıcının `IUnknown` alacak bir işaretçinin adresi. NULL olabilir.
 
 *Bstrlik*<br/>
 Denetimin lisansını içeren BSTR.
@@ -298,7 +298,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="example"></a>Örnek
 
-Öğesinin nasıl kullanılacağına `AtlAxCreateControlLic`ilişkin bir örnek IÇIN bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) .
+`AtlAxCreateControlLic`nasıl kullanacağınızı gösteren bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) .
 
 ##  <a name="atlaxcreatecontrollicex"></a>AtlAxCreateControlLicEx
 
@@ -321,18 +321,18 @@ ATLAPI AtlAxCreateControlLicEx(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- Gibi bir ProgID`"MSCAL.Calendar.7"`
+- `"MSCAL.Calendar.7"` gibi bir ProgID
 
-- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
+- `"{8E27C92B-1264-101C-8A2F-040224009C02}"` gibi bir CLSID
 
-- Gibi bir URL`"<https://www.microsoft.com>"`
+- `"<https://www.microsoft.com>"` gibi bir URL
 
-- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
+- `"file://\\\Documents\MyDoc.doc"` gibi etkin bir belgeye yönelik bir başvuru
 
-- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
+- `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"` gibi bir HTML parçası
 
    > [!NOTE]
-   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`, bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 Denetimin iliştirilecektir pencerenin tutamacı.
@@ -341,16 +341,16 @@ Denetimin iliştirilecektir pencerenin tutamacı.
 Denetimin özelliklerini başlatmak için kullanılan akışa yönelik bir işaretçi. NULL olabilir.
 
 *ppUnkContainer*<br/>
-Kapsayıcının `IUnknown` konumunu alacak bir işaretçinin adresi. NULL olabilir.
+Kapsayıcının `IUnknown` alacak bir işaretçinin adresi. NULL olabilir.
 
 *ppUnkControl*<br/>
-dışı Oluşturulan denetimin `IUnknown` adını alacak bir işaretçinin adresi. NULL olabilir.
+dışı Oluşturulan denetimin `IUnknown` alacak olan işaretçinin adresi. NULL olabilir.
 
 *ııdsink*<br/>
 Kapsanan nesnedeki bir giden arabirimin arabirim tanımlayıcısı.
 
 *punkSink*<br/>
-Kapsanan nesne başarıyla oluşturulduktan `IUnknown` sonra kapsanan nesnede *ııdsink* tarafından belirtilen bağlantı noktasına bağlanacak havuz nesnesinin arabirimine yönelik bir işaretçi.
+Kapsanan nesne başarıyla oluşturulduktan sonra kapsanan nesnede *ııdsink* tarafından belirtilen bağlantı noktasına bağlanacak havuz nesnesinin `IUnknown` arabirimine yönelik bir işaretçi.
 
 *Bstrlik*<br/>
 Denetimin lisansını içeren BSTR.
@@ -365,9 +365,9 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="example"></a>Örnek
 
-Öğesinin nasıl kullanılacağına `AtlAxCreateControlLicEx`ilişkin bir örnek IÇIN bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) .
+`AtlAxCreateControlLicEx`nasıl kullanacağınızı gösteren bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) .
 
-##  <a name="atlaxattachcontrol"></a>  AtlAxAttachControl
+##  <a name="atlaxattachcontrol"></a>AtlAxAttachControl
 
 Önceden oluşturulmuş bir denetimi belirtilen pencereye ekler.
 
@@ -381,13 +381,13 @@ ATLAPI AtlAxAttachControl(
 ### <a name="parameters"></a>Parametreler
 
 *pControl*<br/>
-'ndaki Denetimin bir işaretçisi `IUnknown` .
+'ndaki Denetimin `IUnknown` bir işaretçisi.
 
 *lendiği*<br/>
 'ndaki Denetimi barındıracak pencereyi işleyin.
 
 *ppUnkContainer*<br/>
-dışı Kapsayıcı nesnesinin bir işaretçisine `IUnknown` yönelik işaretçi.
+dışı Kapsayıcı nesnesinin `IUnknown` işaretçiye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -398,9 +398,9 @@ Standart HRESULT değerlerinden biri.
 Aynı anda bir denetim oluşturmak ve eklemek için [AtlAxCreateControlEx](#atlaxcreatecontrolex) ve [AtlAxCreateControl](#atlaxcreatecontrol) kullanın.
 
 > [!NOTE]
->  İliştirilmekte olan denetim nesnesi çağrılmadan `AtlAxAttachControl`önce doğru şekilde başlatılmalıdır.
+>  `AtlAxAttachControl`çağrılmadan önce iliştirilmekte olan denetim nesnesinin doğru şekilde başlatılmış olması gerekir.
 
-##  <a name="atlaxgethost"></a>  AtlAxGetHost
+##  <a name="atlaxgethost"></a>AtlAxGetHost
 
 Belirli bir pencere için (varsa), kapsayıcıya tanıtıcısını göz önünde bulundurarak doğrudan bir arabirim işaretçisi alır.
 
@@ -410,17 +410,17 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
+*olsun*<br/>
 'ndaki Denetimi barındıran pencereye yönelik bir tanıtıcı.
 
 *Sy*<br/>
-dışı `IUnknown` Denetimin kapsayıcısının.
+dışı Denetim kapsayıcısının `IUnknown`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart HRESULT değerlerinden biri.
 
-##  <a name="atlaxgetcontrol"></a>  AtlAxGetControl
+##  <a name="atlaxgetcontrol"></a>AtlAxGetControl
 
 Belirli bir pencere içinde yer alan denetim için, tanıcısını göz önünde bulundurarak doğrudan arabirim işaretçisi alır.
 
@@ -430,11 +430,11 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
+*olsun*<br/>
 'ndaki Denetimi barındıran pencereye yönelik bir tanıtıcı.
 
 *Sy*<br/>
-dışı `IUnknown` Barındırılan denetimin.
+dışı Barındırılmakta olan denetimin `IUnknown`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -442,7 +442,7 @@ Standart HRESULT değerlerinden biri.
 
 ##  <a name="atlsetchildsite"></a>AtlSetChildSite
 
-Alt nesnenin sitesini üst nesnenin öğesine `IUnknown` ayarlamak için bu işlevi çağırın.
+Alt nesnenin sitesini üst nesnenin `IUnknown` ayarlamak için bu işlevi çağırın.
 
 ```
 HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
@@ -451,7 +451,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 ### <a name="parameters"></a>Parametreler
 
 *punkChild*<br/>
-'ndaki Alt öğesinin `IUnknown` arabirimine yönelik bir işaretçi.
+'ndaki Alt öğenin `IUnknown` arabirimine yönelik bir işaretçi.
 
 *punkParent*<br/>
 'ndaki Üst öğenin `IUnknown` arabirimine yönelik bir işaretçi.
@@ -460,7 +460,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 
 Standart bir HRESULT değeri.
 
-##  <a name="atlaxwininit"></a>  AtlAxWinInit
+##  <a name="atlaxwininit"></a>AtlAxWinInit
 
 Bu işlev, **"AtlAxWin80"** ve **"AtlAxWinLic80"** pencere sınıflarını ve birkaç özel pencere iletisi kaydederek ATL 'nin denetim barındırma kodunu başlatır.
 
@@ -494,7 +494,7 @@ Bu işlev yalnızca Windows SDK açıklandığı şekilde [UnregisterClass](/win
 
 [AtlAxWinInit](#atlaxwininit) olarak adlandırdıysanız tüm mevcut konak pencereleri yok edildiğinde temizlemek için bu işlevi çağırın ve artık ana bilgisayar pencereleri oluşturmanız gerekmez. Bu işlevi çağırmazsanız, işlem sonlandırıldığında pencere sınıfının kaydı otomatik olarak kaldırılır.
 
-##  <a name="atlgetobjectsourceinterface"></a>  AtlGetObjectSourceInterface
+##  <a name="atlgetobjectsourceinterface"></a>AtlGetObjectSourceInterface
 
 Bir nesnenin varsayılan kaynak arabirimi hakkında bilgi almak için bu işlevi çağırın.
 
@@ -518,7 +518,7 @@ dışı Kaynak arabirimin tanımını içeren tür kitaplığının LIBıD işar
 *piıd*<br/>
 dışı Nesnenin varsayılan kaynak arabiriminin arabirim KIMLIĞINE yönelik bir işaretçi.
 
-*pdwMajor*<br/>
+*Pdwana*<br/>
 dışı Kaynak arabirimin tanımını içeren tür kitaplığının ana sürüm numarasına yönelik bir işaretçi.
 
 *pdwMinor*<br/>
@@ -530,14 +530,14 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AtlGetObjectSourceInterface`, varsayılan kaynak arabirimin arabirim KIMLIĞINI ve bu arabirimi açıklayan tür kitaplığının kitaplık KIMLIĞI ve büyük ve küçük sürüm numaralarıyla birlikte sağlayabilir.
+`AtlGetObjectSourceInterface`, varsayılan kaynak arabirimin arabirim KIMLIĞINI ve bu arabirimi açıklayan tür kitaplığının LIBıD ve büyük ve küçük sürüm numaralarıyla birlikte sağlayabilir.
 
 > [!NOTE]
->  Bu işlevin istenen bilgileri başarılı bir şekilde alabilmesi için, *punkObj* `IDispatch` tarafından temsil edilen nesne, (ve tür bilgilerini aracılığıyla `IDispatch::GetTypeInfo`döndürmelidir `IProvideClassInfo2` ) ve ayrıca, ya da uygulamalıdır `IPersist`. Kaynak arabirimin tür bilgileri, için `IDispatch`tür bilgileriyle aynı tür kitaplığında olmalıdır.
+>  Bu işlevin istenen bilgileri başarılı bir şekilde alabilmesi için, *punkObj* tarafından temsil edilen nesne `IDispatch` (ve `IDispatch::GetTypeInfo`aracılığıyla dönüş türü bilgilerini) uygulamalıdır ve ayrıca `IProvideClassInfo2` ya da `IPersist`uygulamalıdır. Kaynak arabirimin tür bilgileri, `IDispatch`için tür bilgileriyle aynı tür kitaplığında olmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, tam temel noktalara `CEasySink` `IDispEventImpl` geçirebilmeniz için kullanabileceğiniz şablon bağımsız değişkenlerinin sayısını azaltan bir olay havuzu sınıfını nasıl tanımlayacağınızı gösterir. `EasyAdvise`ve `EasyUnadvise` [dispeventadmeni](idispeventsimpleimpl-class.md#dispeventadvise) veya [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise)çağrılmadan önce [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) üyelerini başlatmak için kullanın `AtlGetObjectSourceInterface` .
+Aşağıdaki örnekte, `IDispEventImpl`, çıplak temel noktalara geçirebilmeniz için kullanabileceğiniz şablon bağımsız değişkenlerinin sayısını azaltan bir olay havuzu sınıfını nasıl tanımlayacağınızı `CEasySink`gösterilmektedir. `EasyAdvise` ve `EasyUnadvise` [Dispeventadmeni](idispeventsimpleimpl-class.md#dispeventadvise) veya [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise)çağrılmadan önce [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) üyelerini başlatmak için `AtlGetObjectSourceInterface` kullanın.
 
 [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]
 
