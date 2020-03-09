@@ -18,15 +18,15 @@ helpviewer_keywords:
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
 ms.openlocfilehash: 7455610af5f03be024753e26f67e561b14c85612
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244013"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884137"
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;Yineleyici&gt; işleçleri
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.
 
@@ -43,19 +43,19 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `iterator`.
+*sol*\
+`iterator` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `iterator`.
+`iterator` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yineleyici nesneler eşit; değilse, **false** yineleyici nesneler eşit ise.
+Yineleyici nesneleri eşitse **true** ; Yineleyici nesneleri eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bunlar aynı öğeleri bir kapsayıcıda adresi değişirse bir yineleyici nesnesi başka bir eşittir. Bir kapsayıcı içindeki farklı öğelere iki yineleyici işaret ederseniz, ardından bunlar eşit değildir.
+Bir yineleyici nesne, bir kapsayıcıdaki aynı öğeleri ele aldıklarında, başka bir yineleyiciden eşittir. İki yineleyiciler bir kapsayıcıdaki farklı öğelere işaret ettikten sonra eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -119,7 +119,7 @@ in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.
 
@@ -147,21 +147,21 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü yineleyici.
+*sol*\
+Yineleyici türünde bir nesne.
 
 *sağ*\
-Bir nesne türü yineleyici.
+Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yineleyici nesneler eşitse; **false** yineleyici nesneler eşit değilse.
+Yineleyici nesneleri eşitse **true** ; Yineleyici nesneleri eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bunlar aynı öğeleri bir kapsayıcıda adresi değişirse bir yineleyici nesnesi başka bir eşittir. Bir kapsayıcı içindeki farklı öğelere iki yineleyici işaret ederseniz, ardından bunlar eşit değildir.
+Bir yineleyici nesne, bir kapsayıcıdaki aynı öğeleri ele aldıklarında, başka bir yineleyiciden eşittir. İki yineleyiciler bir kapsayıcıdaki farklı öğelere işaret ettikten sonra eşit değildir.
 
-İlk iki şablon işleçler yalnızca her iki true döndürür *sol* ve *doğru* aynı yineleyici depolar. Üçüncü şablon işlecini yalnızca her iki true değerini döndürür *sol* ve *doğru* aynı akış işaretçisini depolar. Dördüncü bir şablon işlecini verir `left.equal (right)`.
+İlk iki şablon işleci yalnızca *sol* ve *sağ* aynı yineleyiciyi depoladıysa true değerini döndürür. Üçüncü şablon işleci yalnızca *sol* ve *sağ* aynı akış işaretçisini depoladığınızda true değerini döndürür. Dördüncü şablon işleci `left.equal (right)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -225,7 +225,7 @@ in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işleç&lt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.
 
@@ -236,19 +236,19 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `iterator`.
+*sol*\
+`iterator` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `iterator`.
+`iterator` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** ifadesinin sol tarafındaki yineleyici; ifadesinin sağ tarafındaki yineleyici altındaysa **false** büyüktür veya eşittir sağdaki yineleyiciye ise.
+ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciden küçükse **true** ; sağdaki yineleyici değerinden büyükse veya buna eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha önce kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğeyi adresleyen bir yineleyici nesnesini daha az ise. Aynı öğeye bir yineleyici nesnesi olarak ya da daha sonra kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğe adresleri değişirse bir yineleyici nesnesi diğerinden daha küçük değil.
+Bir yineleyici nesne, kapsayıcıda daha önce, diğer yineleyici nesnesi tarafından ele alınan öğeden daha önce oluşan bir öğe adreslenir. Bir yineleyici nesne, diğer Yineleyici nesnesiyle aynı öğeyi veya diğer yineleyici nesnesi tarafından ele alınan öğeden daha sonra gerçekleşen bir öğeyi ele alıyorsa, bir yineleyici nesnesi diğerinden daha küçük değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -316,7 +316,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-## <a name="op_lt_eq"></a> İşleci&lt;=
+## <a name="op_lt_eq"></a>işleç&lt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
@@ -327,19 +327,19 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü yineleyici.
+*sol*\
+Yineleyici türünde bir nesne.
 
 *sağ*\
-Bir nesne türü yineleyici.
+Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa ifadenin sol tarafındaki yineleyici yineleyici; ifadesinin sağ tarafındaki küçüktür veya eşittir **false** sağdaki yineleyici büyükse.
+ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciye eşit veya daha küçükse **true** ; sağdaki yineleyici değerinden büyükse **yanlış** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yineleyici diğerine eşit veya aynı öğeye adresleri ya da daha önce kapsayıcı öğeden oluşan bir öğe bir yineleyici nesnesi tarafından ele alınan nesnedir. Bir yineleyici nesnesi diğerinden daha büyük ise daha sonra kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğe yöneliktir.
+Bir yineleyici nesne, aynı öğeye veya kapsayıcıda daha önce, diğer yineleyici nesnesi tarafından ele alınan öğeden daha önce gerçekleşen bir öğeye veya daha önce bir öğe adreslenir. Bir yineleyici nesne, kapsayıcıda daha sonra başka bir yineleyici nesnesi tarafından ele alınan öğeden daha sonra oluşan bir öğeye adreslenir.
 
 ### <a name="example"></a>Örnek
 
@@ -411,7 +411,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işleç&gt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.
 
@@ -422,19 +422,19 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü yineleyici.
+*sol*\
+Yineleyici türünde bir nesne.
 
 *sağ*\
-Bir nesne türü yineleyici.
+Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** ifadesinin sol tarafındaki yineleyici; ifadesinin sağ tarafındaki yineleyici büyükse **false** yineleyici sağ taraftaki küçük veya ona eşit olup olmadığını.
+ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciden büyükse **true** ; sağdaki yineleyici değerinden küçükse veya buna eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yineleyici nesnesi diğerinden daha büyük ise daha sonra kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğe yöneliktir. Bir yineleyici nesnesi aynı öğeye bir yineleyici nesnesi olarak ya da daha önce kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğe adresleri değişirse diğerinden daha büyük değil.
+Bir yineleyici nesne, kapsayıcıda daha sonra başka bir yineleyici nesnesi tarafından ele alınan öğeden daha sonra oluşan bir öğeye adreslenir. Bir yineleyici nesne, diğer Yineleyici nesnesiyle aynı öğeyi veya kapsayıcıda daha önce oluşan bir öğeyi diğer yineleyici nesnesi tarafından ele alınan bir öğe olarak ele alıyorsa, bir yineleyici nesnesi diğerinden daha büyük değil.
 
 ### <a name="example"></a>Örnek
 
@@ -500,7 +500,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-## <a name="op_gt_eq"></a> İşleci&gt;=
+## <a name="op_gt_eq"></a>işleç&gt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.
 
@@ -511,19 +511,19 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü yineleyici.
+*sol*\
+Yineleyici türünde bir nesne.
 
 *sağ*\
-Bir nesne türü yineleyici.
+Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** ifadesinin sol tarafındaki yineleyici büyüktür veya eşittir ifadesi; sağ tarafındaki yineleyici ise **false** yineleyici sağ taraftaki küçük ise.
+ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciye eşit veya daha büyükse **true** ; sağdaki yineleyici değerinden küçükse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı öğeye veya daha sonra kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğe adresleri değişirse bir yineleyici büyüktür veya eşittir başka bir nesnedir. Daha önce kapsayıcı bir yineleyici nesnesi tarafından ele alınan öğenin değerinden oluşan bir öğeyi adresleyen bir yineleyici nesnesini daha az ise.
+Bir yineleyici nesne, aynı öğeye veya daha sonra kapsayıcıda diğer yineleyici nesnesi tarafından ele alınan öğeden daha sonra meydana gelen bir öğeye adreslenir. Bir yineleyici nesne, kapsayıcıda daha önce, diğer yineleyici nesnesi tarafından ele alınan öğeden daha önce oluşan bir öğe adreslenir.
 
 ### <a name="example"></a>Örnek
 
@@ -595,9 +595,9 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_add"></a> operator +
+## <a name="op_add"></a>işleç +
 
-Yineleyiciye bir uzaklık ekler ve döndüren bir `move_iterator` veya `reverse_iterator` eklenen öğeyi yeni uzaklık konumunda ele alan.
+Bir yineleyici için bir konum ekler ve yeni konum konumunda eklenen öğeyi adresleyen bir `move_iterator` veya `reverse_iterator` döndürür.
 
 ```cpp
 template <class RandomIterator, class Diff>
@@ -616,14 +616,14 @@ operator+(
 ### <a name="parameters"></a>Parametreler
 
 *_Off*\
-Move_iterator const veya const reverse_iterator uzaklık olarak olduğu konum sayısı.
+Const move_iterator veya const reverse_iterator konum sayısı denkleştirilir.
 
 *sağ*\
-Uzaklık olarak yineleyici.
+Kaydırılacağı Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Toplamını döndürür *doğru* +  *_Off*.
+*_Off* *Sum + * döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -674,7 +674,7 @@ The iterator rVPOS1 now points to the fifth element
 in the reversed sequence: 2.
 ```
 
-## <a name="operator-"></a> operator-
+## <a name="operator-"></a>işlecinde
 
 Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.
 
@@ -692,23 +692,23 @@ Tdiff operator-(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir yineleyici.
+*sol*\
+Yineleyici.
 
 *sağ*\
-Bir yineleyici.
+Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki yineleyici arasındaki farkı `.`
+İki yineleyiciler arasındaki fark `.`
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlecini verir `left.base() - right.base()`.
+İlk şablon işleci `left.base() - right.base()`döndürür.
 
-İkinci şablon işlecini verir `right.current - left.current`.
+İkinci şablon işleci `right.current - left.current`döndürür.
 
-`Tdiff` döndürülen ifadeyi türüne göre belirlenir. Aksi halde `RandomIterator1::difference_type`.
+`Tdiff`, döndürülen ifadenin türüne göre belirlenir. Aksi takdirde, `RandomIterator1::difference_type`.
 
 ### <a name="example"></a>Örnek
 

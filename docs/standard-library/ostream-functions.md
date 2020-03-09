@@ -13,15 +13,15 @@ helpviewer_keywords:
 - std::ends [C++]
 - std::flush [C++]
 ms.openlocfilehash: 8d93e46b0323058d93c6d0bd8c1ee566998aef61
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447190"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874852"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream&gt; işlevleri
 
-Bunlar, ostream &lt;&gt;'de tanımlanan genel şablon işlevleridir. Üye işlevleri için [basic_ostream sınıfı](basic-ostream-class.md) belgelerine bakın.
+Bunlar, &lt;ostream&gt;tanımlanan genel şablon işlevleridir. Üye işlevleri için [basic_ostream sınıfı](basic-ostream-class.md) belgelerine bakın.
 
 ||||
 |-|-|-|
@@ -40,7 +40,7 @@ basic_ostream<Elem, Tr>& endl(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled*\
 Öğe türü.
 
 *OSTR*\
@@ -55,7 +55,7 @@ Karakter nitelikleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici *OSTR*'yi çağırıyor. [Yerleştir](../standard-library/basic-ostream-class.md#put) (*OSTR*. [Genişlet](../standard-library/basic-ios-class.md#widen) (' \n ')) ve ardından *OSTR*çağırır. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR*döndürür.
+İşleici *OSTR*'yi çağırıyor. [PUT](../standard-library/basic-ostream-class.md#put)(*OSTR*.[ ('](../standard-library/basic-ios-class.md#widen)\n ')) ve ardından *OSTR*çağırır. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -87,22 +87,22 @@ basic_ostream<Elem, Tr>& ends(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled*\
 Öğe türü.
 
 *OSTR*\
-Türünde `basic_ostream`bir nesne.
+`basic_ostream` türünün bir nesnesi.
 
 *Tr*\
 Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde `basic_ostream`bir nesne.
+`basic_ostream` türünün bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici *OSTR*'yi çağırıyor. [Yerleştir](../standard-library/basic-ostream-class.md#put) (*Eled*(' \ 0 ')). *OSTR*döndürür.
+İşleici *OSTR*'yi çağırıyor. [PUT](../standard-library/basic-ostream-class.md#put)(*eled*(' \ 0 ')). *OSTR*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -136,18 +136,18 @@ basic_ostream<Elem, Tr>& flush(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled*\
 Öğe türü.
 
 *OSTR*\
-Türünde `basic_ostream`bir nesne.
+`basic_ostream` türünün bir nesnesi.
 
 *Tr*\
 Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde `basic_ostream`bir nesne.
+`basic_ostream` türünün bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -173,7 +173,7 @@ testing
 
 ## <a name="swap"></a>swap
 
-İki `basic_ostream` nesnenin değerlerini değiş tokuş eder.
+İki `basic_ostream` nesnesinin değerlerini değiş tokuş eder.
 
 ```cpp
 template <class Elem, class Tr>
@@ -184,22 +184,22 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled*\
 Öğe türü.
 
 *Tr*\
 Karakter nitelikleri.
 
-*tarafta*\
-Bir `basic_ostream` nesneye lvalue başvurusu.
+*sol*\
+`basic_ostream` nesnesine bir lvalue başvurusu.
 
-*Right*\
-Bir `basic_ostream` nesneye lvalue başvurusu.
+*sağ*\
+`basic_ostream` nesnesine bir lvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `swap` yürütülür `left.swap(right)`.
+Şablon işlevi `left.swap(right)`yürütür `swap`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ostream >](../standard-library/ostream.md)
+[ostream > \<](../standard-library/ostream.md)

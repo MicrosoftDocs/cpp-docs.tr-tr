@@ -10,11 +10,11 @@ helpviewer_keywords:
 - else keyword [C++]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ms.openlocfilehash: 0e9de2d39e09e148c7e4f3ea82c3dadb173c2d0c
-ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661634"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884174"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 
@@ -113,7 +113,7 @@ int main()
 
 ## <a name="if_with_init"></a>Başlatıcı ile IF deyimleri
 
-**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): Bir **IF** deyimi, adlandırılmış bir değişkeni bildiren ve Başlatan bir ifade da içerebilir. Değişken yalnızca If-Block kapsamında gerektiğinde If-ifadesinin bu formunu kullanın.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)Ile kullanılabilir): bir **IF** deyimi, adlandırılmış bir değişkeni bildiren ve Başlatan bir ifade de içerebilir. Değişken yalnızca If-Block kapsamında gerektiğinde If-ifadesinin bu formunu kullanın.
 
 ## <a name="example"></a>Örnek
 
@@ -161,11 +161,11 @@ int main()
 
 **IF** deyiminin tüm formlarında, bir yapı dışında herhangi bir değere sahip olabilen *ifade*, tüm yan etkiler dahil değerlendirilir. Denetim, **IF** ifadesinden bir [Break](../cpp/break-statement-cpp.md), [Continue](../cpp/continue-statement-cpp.md)veya [goto](../cpp/goto-statement-cpp.md)içermiyorsa, programdaki Next ifadesine geçer.
 
-Bir `if...else` deyimin else yan tümcesi, aynı kapsamda karşılık gelen bir **Else** deyimi olmayan en yakın önceki if ifadesiyle ilişkilidir.
+Bir `if...else` deyimin **Else** yan tümcesi, aynı kapsamda karşılık gelen bir **Else** deyimi olmayan en yakın önceki **if** deyimi ile ilişkilendirilir.
 
-## <a name="a-nameifconstexpr-if-constexpr-statements"></a><a name="if_constexpr">Eğer constexpr deyimleri
+## <a name="a-nameif_constexpr-if-constexpr-statements"></a>constexpr deyimleri <a name="if_constexpr">
 
-**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): İşlev şablonlarında, birden çok işlev aşırı yüküne gerek duymadan derleme zamanı dallanma kararları almak için bir **IF constexpr** ifadesini kullanabilirsiniz. Örneğin, parametre açma işlemi gerçekleştiren tek bir işlev yazabilirsiniz (sıfır parametre aşırı yüklemesi gerekmez):
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): işlev şablonlarında, birden fazla işlev aşırı yüküne gerek duymadan derleme zamanı dallanma kararları almak için bir **IF constexpr** ifadesini kullanabilirsiniz. Örneğin, parametre açma işlemi gerçekleştiren tek bir işlev yazabilirsiniz (sıfır parametre aşırı yüklemesi gerekmez):
 
 ```cpp
 template <class T, class... Rest>

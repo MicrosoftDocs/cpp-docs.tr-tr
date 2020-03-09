@@ -1,5 +1,5 @@
 ---
-title: '&lt;ayarlama&gt; işleçleri'
+title: '&lt;&gt; işleçlerini ayarla'
 ms.date: 03/27/2019
 f1_keywords:
 - set/std::operator!=
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - std::operator&lt;= (set)
 - std::operator== (set)
 ms.openlocfilehash: 4618030cf81f79a085e16052c8b9c547201e3577
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246394"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78875779"
 ---
-# <a name="ltsetgt-operators"></a>&lt;ayarlama&gt; işleçleri
+# <a name="ltsetgt-operators"></a>&lt;&gt; işleçlerini ayarla
 
-## <a name="op_neq"></a> işleç! = (set)
+## <a name="op_neq"></a>işleç! = (küme)
 
-İşlecin sol tarafındaki küme nesnesi kümesi nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
+İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits, Allocator>& right);
@@ -35,19 +35,19 @@ bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `set`.
+*sol*\
+`set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `set`.
+`set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** kümeleri eşit; değilse, **false** kümeleri eşitse.
+kümeler eşit değilse **doğru** ; kümeler eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Küme nesneleri arasında karşılaştırma öğeleri arasında ikili bir karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki eşit olur. Aksi takdirde, eşit oldukları.
+Küme nesneleri arasındaki karşılaştırma, öğeleri arasındaki ikili karşılaştırmayı temel alır. İki küme aynı sayıda öğeye sahip olmaları halinde eşittir ve ilgili öğeleri aynı değere sahiptir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -86,9 +86,9 @@ The sets s1 and s3 are equal.
 */
 ```
 
-## <a name="op_lt"></a> İşleç&lt; (set)
+## <a name="op_lt"></a>işleç&lt; (küme)
 
-İşlecin sol tarafındaki küme nesnesi işlecin sağ tarafındaki kümesi nesneden küçük olup olmadığını sınar.
+İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden küçük olup olmadığını sınar.
 
 ```cpp
 bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits, Allocator>& right);
@@ -96,19 +96,19 @@ bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `set`.
+*sol*\
+`set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `set`.
+`set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki kümesi; işlecin sağ tarafındaki kümesi değerinden kesinlikle küçük ise, aksi takdirde **false**.
+işlecin sol tarafındaki küme, işlecin sağ tarafındaki kümesinden tamamen daha küçükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Küme nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Daha az-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
+Küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki daha az ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına dayalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -147,9 +147,9 @@ The set s1 is not less than the set s3.
 */
 ```
 
-## <a name="op_lt_eq"></a> İşleç&lt;= (set)
+## <a name="op_lt_eq"></a>işleç&lt;= (küme)
 
-İşlecinin sol tarafında kümesi nesnesi küçük olup olmadığını sınar veya küme nesnesi eşit işlecin sağ tarafındaki.
+İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Traits, Allocator>& right);
@@ -157,19 +157,19 @@ bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `set`.
+*sol*\
+`set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `set`.
+`set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki küçük daha veya işlecin sağ tarafındaki kümesinde eşit; Aksi takdirde ayarlanırsa **false**.
+işlecin sol tarafındaki küme, işlecin sağ tarafındaki ayarlamaya eşitse veya eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Küme nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki nesne arasındaki ilişki için daha az veya eşit ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
+Küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki en az veya daha fazla ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına bağlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -216,9 +216,9 @@ The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
 ```
 
-## <a name="op_eq_eq"></a> işleç == (set)
+## <a name="op_eq_eq"></a>işleç = = (küme)
 
-İşlecin sol tarafındaki kümesi nesne kümesi nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
+İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Traits, Allocator>& right);
@@ -226,19 +226,19 @@ bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `set`.
+*sol*\
+`set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `set`.
+`set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki kümesi ise, aksi takdirde işlecin sağ tarafındaki kümesinde eşit **false**.
+işlecin sol tarafındaki küme, işlecin sağ tarafındaki ayarlamaya eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Küme nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki eşit olur. Aksi takdirde, eşit oldukları.
+Küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki küme aynı sayıda öğeye sahip olmaları halinde eşittir ve ilgili öğeleri aynı değere sahiptir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -278,9 +278,9 @@ The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
 ```
 
-## <a name="op_gt"></a> İşleç&gt; (set)
+## <a name="op_gt"></a>işleç&gt; (küme)
 
-İşlecin sol tarafındaki kümesi nesne kümesi nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
+İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits, Allocator>& right);
@@ -288,19 +288,19 @@ bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `set`.
+*sol*\
+`set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `set`.
+`set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki ayarlanırsa işlecin sağ tarafındaki kümesinde büyüktür; Aksi takdirde **false**.
+işlecin sol tarafındaki küme, işlecin sağ tarafındaki kümesinden büyükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Küme nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyük-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
+Küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki büyüktür ilişkisi, eşit olmayan öğelerin ilk çiftinin karşılaştırmasını temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -339,9 +339,9 @@ The set s1 is greater than the set s3.
 */
 ```
 
-## <a name="op_gt_eq"></a> İşleç&gt;= (set)
+## <a name="op_gt_eq"></a>işleç&gt;= (küme)
 
-Küme nesnesi işlecinin sol tarafındaki büyük veya işlecin sağ tarafındaki kümesi nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Traits, Allocator>& right);
@@ -349,19 +349,19 @@ bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `set`.
+*sol*\
+`set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `set`.
+`set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki ayarlanırsa büyük veya eşit listenin sağ tarafında kümesine; tersi durumda **false**.
+işlecin sol tarafındaki küme, listenin sağ tarafındaki ayarla daha büyükse veya eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Küme nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyüktür veya eşittir iki nesne arasındaki ilişki için ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
+Küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki en büyük veya daha fazla ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına bağlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -408,9 +408,9 @@ Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
 ```
 
-## <a name="op_neq_multiset"></a> işleç! = (multiset)
+## <a name="op_neq_multiset"></a>işleç! = (çoklu küme)
 
-İşlecin sol tarafındaki multiset nesne işlecin sağ tarafındaki multiset nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <Key, Traits, Allocator>& right);
@@ -418,19 +418,19 @@ bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <K
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `multiset`.
+*sol*\
+`multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `multiset`.
+`multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** kümeleri veya multisets eşit; değilse, **false** kümeleri veya multisets eşitse.
+kümeler veya multisets 'ler eşitse **true** ; kümeler veya çoklu kümeler eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok kümeli nesneler arasında karşılaştırma öğeleri arasında ikili bir karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki kümeleri veya multisets eşit olur. Aksi takdirde, eşit oldukları.
+Çoklu küme nesneleri arasındaki karşılaştırma, öğeleri arasında ikili bir karşılaştırmayı temel alır. İki küme veya birden çok küme aynı sayıda öğeye sahip olmaları halinde eşittir ve ilgili öğeleri aynı değere sahiptir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -470,9 +470,9 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="op_lt_multiset"></a> İşleç&lt; (multiset)
+## <a name="op_lt_multiset"></a>işleç&lt; (çoklu küme)
 
-İşlecin sol tarafındaki multiset nesnesinin işlecin sağ tarafındaki multiset nesneden küçük olup olmadığını sınar.
+İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden küçük olup olmadığını sınar.
 
 ```cpp
 bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Key, Traits, Allocator>& right);
@@ -480,19 +480,19 @@ bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `multiset`.
+*sol*\
+`multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `multiset`.
+`multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki multiset; işlecin sağ tarafındaki multiset değerinden kesinlikle küçük ise, aksi takdirde **false**.
+işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli tamamen daha küçükse **true** . Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok kümeli nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Daha az-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
+Çoklu küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki daha az ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına dayalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -536,9 +536,9 @@ The multiset s1 is less than the multiset s2.
 The multiset s1 is not less than the multiset s3.
 ```
 
-## <a name="op_lt_eq_multiset"></a> İşleç&lt;= (multiset)
+## <a name="op_lt_eq_multiset"></a>işleç&lt;= (çoklu küme)
 
-Multiset işlecinin sol tarafında nesne küçük olup olmadığını sınar veya çok kümeli nesneye eşitse işlecin sağ tarafındaki.
+İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
 ```cpp
 bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <Key, Traits, Allocator>& right);
@@ -546,19 +546,19 @@ bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `multiset`.
+*sol*\
+`multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `multiset`.
+`multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki multiset daha veya işlecin sağ tarafındaki multiset eşit; Aksi takdirde küçükse **false**.
+işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çok kümeli veya daha küçükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok kümeli nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki nesne arasındaki ilişki için daha az veya eşit ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
+Çoklu küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki en az veya daha fazla ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına bağlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -611,9 +611,9 @@ The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
 ```
 
-## <a name="op_eq_eq_multiset"></a> işleç == (multiset)
+## <a name="op_eq_eq_multiset"></a>işleç = = (çoklu küme)
 
-İşlecin sol tarafındaki multiset nesne işlecin sağ tarafındaki multiset nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <Key, Traits, Allocator>& right);
@@ -621,19 +621,19 @@ bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `multiset`.
+*sol*\
+`multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `multiset`.
+`multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** multiset işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki multiset eşit **false**.
+işlecin sol tarafındaki bir çoklu küme, işlecin sağ tarafındaki çok kümeli birine eşitse **true** . Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok kümeli nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki kümeleri veya multisets eşit olur. Aksi takdirde, eşit oldukları.
+Çoklu küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki küme veya birden çok küme aynı sayıda öğeye sahip olmaları halinde eşittir ve ilgili öğeleri aynı değere sahiptir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -673,9 +673,9 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="op_gt_multiset"></a> İşleç&gt; (multiset)
+## <a name="op_gt_multiset"></a>işleç&gt; (çoklu küme)
 
-İşlecin sol tarafındaki multiset nesne multiset nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
+İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Key, Traits, Allocator>& right);
@@ -683,19 +683,19 @@ bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `multiset`.
+*sol*\
+`multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `multiset`.
+`multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** multiset işlecinin sol tarafındaki ise, aksi takdirde multiset işlecin sağ tarafındaki büyük **false**.
+işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli daha büyükse **true** . Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok kümeli nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyük-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
+Çoklu küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki büyüktür ilişkisi, eşit olmayan öğelerin ilk çiftinin karşılaştırmasını temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -739,9 +739,9 @@ The multiset s1 is not greater than the multiset s2.
 The multiset s1 is greater than the multiset s3.
 ```
 
-## <a name="op_gt_eq_multiset"></a> İşleç&gt;= (multiset)
+## <a name="op_gt_eq_multiset"></a>işleç&gt;= (çoklu küme)
 
-İşlecin sol tarafındaki multiset nesnesinin değerinden büyük veya çok kümeli nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
+İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <Key, Traits, Allocator>& right);
@@ -749,19 +749,19 @@ bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `multiset`.
+*sol*\
+`multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `multiset`.
+`multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki multiset büyüktür veya eşittir multiset listenin sağ tarafında; tersi durumda ise **false**.
+işlecin sol tarafındaki çoklu küme, listenin sağ tarafındaki çoklu kümeli daha büyükse veya eşitse **doğru** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok kümeli nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyüktür veya eşittir iki nesne arasındaki ilişki için ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
+Çoklu küme nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki en büyük veya daha fazla ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına bağlıdır.
 
 ### <a name="example"></a>Örnek
 

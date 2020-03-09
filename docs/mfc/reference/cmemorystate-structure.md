@@ -9,15 +9,15 @@ helpviewer_keywords:
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
 ms.openlocfilehash: a110e1345cb970c117de125bd8105e1bc86eaf94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62163760"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855351"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState yapısı
 
-Programınızda bellek sızıntılarını algılamak için kullanışlı bir yol sağlar.
+Programınızdaki bellek sızıntılarını algılamaya yönelik kolay bir yol sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,43 +29,43 @@ struct CMemoryState
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CMemoryState::CMemoryState](#cmemorystate)|Bellek denetim noktaları denetleyen bir sınıf benzeri yapısı oluşturur.|
+|[CMemoryState:: CMemoryState](#cmemorystate)|Bellek denetim noktalarını denetleyen sınıf benzeri bir yapı oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CMemoryState::Checkpoint](#checkpoint)|Geçerli bellek durumunun bir anlık görüntü (Denetim) alır.|
-|[CMemoryState::Difference](#difference)|Türünden iki nesne arasındaki farkı hesaplar `CMemoryState`.|
-|[CMemoryState::DumpAllObjectsSince](#dumpallobjectssince)|Şu anda ayrılmış olan tüm nesnelerin bir özeti, önceki bir denetim noktası beri dökümünü yapar.|
-|[CMemoryState::DumpStatistics](#dumpstatistics)|Bellek ayırma istatistiklerini yazdırır bir `CMemoryState` nesne.|
+|[CMemoryState:: Checkpoint](#checkpoint)|Geçerli bellek durumunun anlık görüntüsünü (Checkpoint) alır.|
+|[CMemoryState::D ifference](#difference)|`CMemoryState`türü iki nesne arasındaki farkı hesaplar.|
+|[CMemoryState::D umpAllObjectsSince](#dumpallobjectssince)|Önceki bir kontrol noktasından bu yana, ayrılmış olan tüm nesnelerin özetini döker.|
+|[CMemoryState::D öncelik Istatistikleri](#dumpstatistics)|`CMemoryState` nesne için bellek ayırma istatistiklerini yazdırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMemoryState` bir yapı olduğunu ve bir temel sınıfa sahip değil.
+`CMemoryState` bir yapıdır ve temel sınıfına sahip değildir.
 
-Bir nesne için bellek yığında ayrılmış ancak artık gerekli olmadığında serbest değil "Bellek sızıntısı" oluşuyor. Bu tür bellek sızıntılarını, sonunda bellek yetersiz hatalara yol açabilir. Ayırma ve programınızdaki bellek ayırması için birçok yol vardır:
+Bir nesnenin belleği yığında ayrıldığında ancak artık gerekli olmadığında serbest bırakılmadığında "bellek sızıntısı" oluşur. Bu tür bellek sızıntıları sonunda bellek yetersiz hatalara neden olabilir. Programınızda bellek ayırmayı ve serbest bırakmak için çeşitli yollar vardır:
 
-- Kullanarak `malloc` /  `free` işlevler Çalışma Zamanı Kitaplığı'ndan ailesi.
+- Çalışma zamanı kitaplığındaki `malloc`/ `free` işlevlerini kullanma.
 
-- Windows API bellek yönetimi işlevleri kullanarak `LocalAlloc` /  `LocalFree` ve `GlobalAlloc` /  `GlobalFree`.
+- Windows API bellek yönetimi işlevlerini kullanarak, `LocalAlloc`/ `LocalFree` ve `GlobalAlloc`/ `GlobalFree`.
 
-- C++ kullanarak **yeni** ve **Sil** işleçleri.
+- C++ **New** ve **Delete** işleçlerini kullanma.
 
-`CMemoryState` Tanılama yalnızca bellek belirlenmesine yardımcı ölçeklendiremediğinde meydana kullanarak ayrılan bellek sızıntılarını **yeni** işleci serbest kullanarak **Sil**. Diğer iki bellek yönetimi işlevleri harici C++ programları ve bunları ile karıştırma gruplarıdır **yeni** ve **Sil** aynı programda önerilmez. DEBUG_NEW, ek bir makro değiştirmek için sağlanan **yeni** , dosya ve satır numarası izleme bellek ayırmaları gerektiğinde işleci. Normalde her DEBUG_NEW kullanılan **yeni** işleci.
+`CMemoryState` tanılama, **Yeni** işleç kullanılarak ayrılan bellek, **silme**kullanılarak serbest bırakılmadığında, yalnızca bellek sızıntılarını algılamaya yardımcı olur. Diğer iki bellek yönetimi işlevleri,C++ programlar için değildir ve aynı programda **Yeni** ve **Sil** ile karıştırılması önerilmez. Ek bir makro DEBUG_NEW, bellek ayırmalarının dosya ve satır numarası izlemeye ihtiyacınız olduğunda **Yeni** işlecin yerine geçecek şekilde sağlanır. DEBUG_NEW, normalde **New** işlecini her kullandığınızda kullanılır.
 
-Diğer tanılama olduğu gibi ile `CMemoryState` tanılama bulunan ve yalnızca, programınızın hata ayıklama sürümleri. Hata ayıklama sürümü _DEBUG sabitinin tanımlanmasını olması gerekir.
+Diğer tanılamalarda olduğu gibi `CMemoryState` tanılamayı yalnızca programınızın hata ayıklama sürümlerinde bulabilirsiniz. Hata ayıklama sürümünde _DEBUG sabit tanımlanmış olmalıdır.
 
-Programınızda bir bellek sızıntısı şüpheleniyorsanız, kullanabileceğiniz `Checkpoint`, `Difference`, ve `DumpStatistics` program yürütmesinde farklı noktalarda iki bellek durumu (ayrılan nesneler) arasındaki fark bulmak için işlevleri. Bu bilgiler, ayırdığı tüm nesneleri bir işlev temizleme olup olmadığını belirlemede faydalı olabilir.
+Programınızın bellek sızıntısı olduğunu fark ediyorsanız, `Checkpoint`, `Difference`ve `DumpStatistics` işlevlerini kullanarak, program yürütmesindeki iki farklı noktada bellek durumu (ayrılan nesneler) arasındaki farkı bulabilirsiniz. Bu bilgiler, bir işlevin ayırdığı tüm nesneleri temizleyip temizedilmeyeceğini belirlemek için yararlı olabilir.
 
-Yalnızca ayırmayı ve ayırmayı kaldırma dengesizliği nerede oluştuğunu bilmek yeterli bilgi sağlamazsa, kullanabileceğiniz `DumpAllObjectsSince` önceki çağrısından itibaren ayrılan tüm nesnelerin dökümünü almak için işlev `Checkpoint`. Bu döküm ayırma, kaynak dosyasını ve burada nesne tahsis edildiğinde (DEBUG_NEW ayırma için kullanıyorsanız), satır sırasını gösterir ve nesnenin adresini ve boyutunu türetmede. `DumpAllObjectsSince` Ayrıca her nesnenin çağırır `Dump` geçerli durumu hakkında bilgi sağlamak için işlevi.
+Ayırma ve ayırmayı kaldırma işleminin ne olduğunu bilmenin yeterli bilgi sağlamadığından, `DumpAllObjectsSince` işlevini kullanarak, önceki `Checkpoint`çağrısından bu yana ayrılan tüm nesnelerin dökümünü alabilirsiniz. Bu döküm, ayırmanın sırasını, kaynak dosyayı ve nesnenin ayrıldığı satırı (ayırma için DEBUG_NEW kullanıyorsanız), nesnenin elde edilmesini, adresini ve boyutunu gösterir. `DumpAllObjectsSince` Ayrıca her nesnenin `Dump` işlevini çağırarak geçerli durumu hakkında bilgi sağlar.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CMemoryState` ve diğer tanılama [hata ayıklama MFC uygulamaları](/visualstudio/debugger/mfc-debugging-techniques).
+`CMemoryState` ve diğer tanılamayı kullanma hakkında daha fazla bilgi için bkz. [MFC uygulamalarında hata ayıklama](/visualstudio/debugger/mfc-debugging-techniques).
 
 > [!NOTE]
->  Nesne türü bildirimleri `CMemoryState` ve üye işlevleri çağrıları bracketed tarafından `#if defined(_DEBUG)/#endif` yönergeleri. Bu, yalnızca programınızın hata ayıklama yapılarında olarak eklenecek Bellek Tanılama neden olur.
+>  `CMemoryState` türündeki nesnelerin bildirimleri ve üye işlevlerine yapılan çağrılar `#if defined(_DEBUG)/#endif` yönergeleriyle parantez içine alınmalıdır. Bu, bellek tanılamalarını yalnızca programınızın hata ayıklamasına dahil edilmesini sağlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -73,11 +73,11 @@ Nasıl kullanılacağı hakkında daha fazla bilgi için `CMemoryState` ve diğe
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afx.h
+**Üstbilgi:** AFX. h
 
-##  <a name="checkpoint"></a>  CMemoryState::Checkpoint
+##  <a name="checkpoint"></a>CMemoryState:: Checkpoint
 
-Bellek Özet anlık görüntüsünü alır ve bu depolar `CMemoryState` nesne.
+Belleğin anlık görüntü özetini alır ve bu `CMemoryState` nesnesinde depolar.
 
 ```
 void Checkpoint();
@@ -85,15 +85,15 @@ void Checkpoint();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMemoryState` Üye işlevleri [fark](#difference) ve [DumpAllObjectsSince](#dumpallobjectssince) bu anlık görüntü verilerini kullan.
+`CMemoryState` üye işlevleri [fark](#difference) ve [DumpAllObjectsSince](#dumpallobjectssince) bu anlık görüntü verilerini kullanır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CMemoryState](#cmemorystate) Oluşturucusu.
+  [CMemoryState](#cmemorystate) oluşturucusunun örneğine bakın.
 
-##  <a name="cmemorystate"></a>  CMemoryState::CMemoryState
+##  <a name="cmemorystate"></a>CMemoryState:: CMemoryState
 
-Boş bir yapıları `CMemoryState` tarafından doldurulmalıdır nesne [denetim noktası](#checkpoint) veya [fark](#difference) üye işlevi.
+[Denetim noktası](#checkpoint) veya [fark](#difference) üye işlevi tarafından doldurulması gereken boş bir `CMemoryState` nesnesi oluşturur.
 
 ```
 CMemoryState();
@@ -103,9 +103,9 @@ CMemoryState();
 
 [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]
 
-##  <a name="difference"></a>  CMemoryState::Difference
+##  <a name="difference"></a>CMemoryState::D ifference
 
-İki karşılaştırır `CMemoryState` nesneleri sonra bu içine fark depolar `CMemoryState` nesne.
+İki `CMemoryState` nesnesini karşılaştırır ve sonra farkı bu `CMemoryState` nesnesine depolar.
 
 ```
 BOOL Difference(
@@ -115,27 +115,27 @@ BOOL Difference(
 
 ### <a name="parameters"></a>Parametreler
 
-*Eski*<br/>
-İlk bellek durumu tarafından tanımlandığı gibi bir `CMemoryState` denetim noktası.
+*Eski durum*<br/>
+`CMemoryState` denetim noktası tarafından tanımlanan başlangıç belleği durumu.
 
-*Durum*<br/>
-Yeni bellek durumu tarafından tanımlanan bir `CMemoryState` denetim noktası.
+*Yeni durum*<br/>
+`CMemoryState` denetim noktası tarafından tanımlanan yeni bellek durumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki bellek durumu farklı olursa sıfır dışı; Aksi durumda 0.
+İki bellek durumu farklıysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Denetim noktası](#checkpoint) her iki bellek durumu parametreleri için çağrılmışsa gerekir.
+İki bellek durumu parametresi için [denetim noktası](#checkpoint) çağrılmalıdır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CMemoryState](#cmemorystate) Oluşturucusu.
+  [CMemoryState](#cmemorystate) oluşturucusunun örneğine bakın.
 
-##  <a name="dumpallobjectssince"></a>  CMemoryState::DumpAllObjectsSince
+##  <a name="dumpallobjectssince"></a>CMemoryState::D umpAllObjectsSince
 
-Çağrıları `Dump` işlevi bir türdeki tüm nesneler için sınıfından türetilmiş `CObject` ayrılan (ve hala ayrılır) son [denetim noktası](#checkpoint) bu çağrı `CMemoryState` nesne.
+Bu `CMemoryState` nesnesinin son [denetim noktası](#checkpoint) çağrısından bu yana ayrılan (ve hala ayrılan) sınıf `CObject` türetilmiş bir türün tüm nesneleri için `Dump` işlevini çağırır.
 
 ```
 void DumpAllObjectsSince() const;
@@ -143,15 +143,15 @@ void DumpAllObjectsSince() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırma `DumpAllObjectsSince` başlatılmamış bir ile `CMemoryState` nesne bellekte bulunan tüm nesneleri dökümü.
+Başlatılmamış bir `CMemoryState` nesnesiyle `DumpAllObjectsSince` çağırmak, şu anda bellekte bulunan tüm nesneleri dökümünü alacak.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CMemoryState](#cmemorystate) Oluşturucusu.
+  [CMemoryState](#cmemorystate) oluşturucusunun örneğine bakın.
 
-##  <a name="dumpstatistics"></a>  CMemoryState::DumpStatistics
+##  <a name="dumpstatistics"></a>CMemoryState::D öncelik Istatistikleri
 
-Kısa bellek istatistikleri rapordan yazdırır bir `CMemoryState` tarafından doldurulur nesne [fark](#difference) üye işlevi.
+[Fark](#difference) üye işlevi tarafından doldurulan bir `CMemoryState` nesnesinden kısa bir bellek istatistikleri raporu yazdırır.
 
 ```
 void DumpStatistics() const;
@@ -159,41 +159,41 @@ void DumpStatistics() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazdırılır rapor [afxDump](diagnostic-services.md#afxdump) cihaz, aşağıdaki gösterir:
+[AfxDump](diagnostic-services.md#afxdump) cihazında yazdırılan rapor, aşağıdakileri gösterir:
 
-Bir örnek bildirim raporu sayı (veya tutar) hakkında bilgi sağlar:
+Örnek rapor, ' nin numarası (veya miktarı) hakkında bilgi verir:
 
-- boş blok
+- Ücretsiz bloklar
 
-- Normal blokları
+- normal bloklar
 
-- CRT blokları
+- CRT bloklar
 
 - blokları yoksay
 
 - istemci blokları
 
-- Maksimum bellek (bayt cinsinden) herhangi bir zamanda program tarafından kullanılan
+- program tarafından herhangi bir anda kullanılan en fazla bellek (bayt cinsinden)
 
-- şu anda program (bayt cinsinden) tarafından kullanılan toplam bellek
+- program tarafından şu anda kullanılan toplam bellek (bayt cinsinden)
 
-Ücretsiz taşlarıdır olan ayırmayı kaldırma durumunda gecikti bloğu `afxMemDF` ayarlandı `delayFreeMemDF`. Daha fazla bilgi için [afxMemDF](diagnostic-services.md#afxmemdf), "MFC makroları ve genel öğeleri" bölümünde.
+Ücretsiz bloklar, `afxMemDF` `delayFreeMemDF`olarak ayarlandıysa, ayırmayı kaldırma geciktirilen blokların sayısıdır. Daha fazla bilgi için bkz. "MFC makroları ve genel" bölümünde [afxMemDF](diagnostic-services.md#afxmemdf).
 
 ### <a name="example"></a>Örnek
 
-  Aşağıdaki kod yerleştirilmelidir *projname*App.cpp. Aşağıdaki genel değişkenleri tanımlayın:
+  Aşağıdaki kod, *ProjName*App. cpp içine yerleştirilmelidir. Aşağıdaki genel değişkenleri tanımlayın:
 
 [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/cpp/cmemorystate-structure_2.cpp)]
 
-İçinde `InitInstance` işlevi, satırı ekleyin:
+`InitInstance` işlevinde şu satırı ekleyin:
 
 [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/cpp/cmemorystate-structure_3.cpp)]
 
-İçin bir işleyici eklemek `ExitInstance` işlev ve aşağıdaki kodu kullanın:
+`ExitInstance` işlevi için bir işleyici ekleyin ve aşağıdaki kodu kullanın:
 
 [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/cpp/cmemorystate-structure_4.cpp)]
 
-Şimdi programı çıktısını görmek için hata ayıklama modunda çalıştırabilirsiniz `DumpStatistics` işlevi.
+Artık `DumpStatistics` işlevinin çıkışını görmek için programı hata ayıklama modunda çalıştırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

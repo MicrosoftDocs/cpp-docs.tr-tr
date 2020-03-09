@@ -1,5 +1,5 @@
 ---
-title: '&lt;Yeni&gt; işlevleri'
+title: Yeni&gt; işlevleri &lt;
 ms.date: 11/04/2016
 f1_keywords:
 - new/std::get_new_handler
@@ -7,15 +7,15 @@ f1_keywords:
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 ms.openlocfilehash: c912e5be07ea0ebdd3148d30c80c39a5f8cfa1a5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243662"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854957"
 ---
-# <a name="ltnewgt-functions"></a>&lt;Yeni&gt; işlevleri
+# <a name="ltnewgt-functions"></a>Yeni&gt; işlevleri &lt;
 
-## <a name="get_new_handler"></a> get_new_handler
+## <a name="get_new_handler"></a>get_new_handler
 
 ```cpp
 new_handler get_new_handler() noexcept;
@@ -23,9 +23,9 @@ new_handler get_new_handler() noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli döndürür `new_handler`.
+Geçerli `new_handler`döndürür.
 
-## <a name="launder"></a> launder
+## <a name="launder"></a>eksik
 
 ```cpp
 template <class T>
@@ -34,18 +34,18 @@ template <class T>
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*\
-Bellekte bir nesne türü içeren bir bayt adresini benzer *T*.
+*ptr*\
+Türü *T*'ye benzer bir nesneyi tutan bellekteki bir baytın adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir değer *T\**  X işaret eder.
+X 'e işaret eden *T\** türünde bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işaretçi iyileştirme engel da bilinir.
+Ayrıca işaretçi iyileştirme engeli olarak da adlandırılır.
 
-Sabit bir ifadede, bağımsız değişkenin değeri kullanılabilir olduğunda, sabit bir ifade kullanılır. Depolama baytı ise başka bir nesne, benzer bir işaretçi bir nesne tarafından kullanılan depolama içinde bir nesneye işaret eden bir işaretçi değeri aracılığıyla erişilebilir.
+Bağımsız değişkeninin değeri sabit bir ifadede kullanılıyorsa, sabit bir ifade olarak kullanılır. Başka bir nesnenin kapladığı depolama alanında, benzer işaretçili bir nesne olan bir nesne için bir bayt depolama alanına ulaşılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -59,9 +59,9 @@ const int b = p->n; // undefined behavior
 const int c = std::launder(p)->n; // OK
 ```
 
-## <a name="nothrow"></a> nothrow
+## <a name="nothrow"></a>nothrow
 
-Bir bağımsız değişken olarak kullanılacak nesne sağlar **nothrow** sürümlerini **yeni** ve **Sil**.
+**New** ve **Delete**'in **nothrow** sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar.
 
 ```cpp
 extern const std::nothrow_t nothrow;
@@ -69,15 +69,15 @@ extern const std::nothrow_t nothrow;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne parametre türüyle eşleşecek şekilde bir işlev bağımsız değişken olarak kullanılan [std::nothrow_t](../standard-library/nothrow-t-structure.md).
+Nesne, [std:: nothrow_t](../standard-library/nothrow-t-structure.md)parametre türü ile eşleşen bir işlev bağımsız değişkeni olarak kullanılır.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [new işleci](../standard-library/new-operators.md#op_new) ve [new işleci&#91; &#93; ](../standard-library/new-operators.md#op_new_arr) örnekleri için `std::nothrow_t` işlevi parametre olarak kullanılır.
+`std::nothrow_t` işlev parametresi olarak nasıl kullanıldığına ilişkin örnekler için [New işlecine](../standard-library/new-operators.md#op_new) ve [New&#91; ](../standard-library/new-operators.md#op_new_arr) işlecine bakın.
 
-## <a name="set_new_handler"></a> set_new_handler
+## <a name="set_new_handler"></a>set_new_handler
 
-Ne zaman çağrılacak olan bir kullanıcı işlevi yükler **new işleci** bellek ayırmak için kendi denemesi başarısız olur.
+**Yeni işleç** , bellek ayırma denemesinde başarısız olduğunda çağrılacak bir Kullanıcı işlevi yüklüyor.
 
 ```cpp
 new_handler set_new_handler(new_handler Pnew) throw();
@@ -86,15 +86,15 @@ new_handler set_new_handler(new_handler Pnew) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Pnew*\
-`new_handler` Yüklenecek.
+Yüklenecek `new_handler`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk çağrı ve önceki 0 `new_handler` arka arkaya çağrı.
+ilk çağrıda 0 ve sonraki çağrılarda önceki `new_handler`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev depoları *Pnew* statik olarak [yeni işleyici](../standard-library/new-typedefs.md#new_handler) bu tutar, işaretçi, ardından daha önce işaretçide depolanan değeri döndürür. Yeni işleyici tarafından kullanılan [new işleci](../standard-library/new-operators.md#op_new)(**size_t**).
+İşlevi, tuttuğu bir statik [yeni işleyici](../standard-library/new-typedefs.md#new_handler) Işaretçisine *pnew* ' i depolar ve daha önce işaretçide depolanan değeri döndürür. Yeni işleyici [New işleci](../standard-library/new-operators.md#op_new)(**size_t**) tarafından kullanılır.
 
 ### <a name="example"></a>Örnek
 
