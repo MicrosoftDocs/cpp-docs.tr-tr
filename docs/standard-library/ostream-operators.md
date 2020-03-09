@@ -5,19 +5,19 @@ f1_keywords:
 - ostream/std::operator&lt;&lt;
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 ms.openlocfilehash: c80abcb08423b4bb269e7d60ac43ef97d197a0e9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453528"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874853"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; işleçleri
 
 ||
 |-|
-|[işlecinde&lt;&lt;](#op_lt_lt)|
+|[işleç&lt;&lt;](#op_lt_lt)|
 
-## <a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="op_lt_lt"></a>işleç&lt;&lt;
 
 Akışa çeşitli türler yazar.
 
@@ -83,19 +83,19 @@ basic_ostream <_Elem, _Tr>& operator<<(
 *_Ch*\
 Bir karakter.
 
-*_Eley*\
+*_Elem*\
 Öğe türü.
 
 *_Ostr*\
-A `basic_ostream` nesne.
+Bir `basic_ostream` nesnesi.
 
-*üstbilgisine*\
+*str*\
 Bir karakter dizesi.
 
 *_Tr*\
 Karakter nitelikleri.
 
-*Acil*\
+*val*\
 Tür
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -104,7 +104,7 @@ Akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`basic_ostream` Sınıfı ayrıca birkaç ekleme işleci tanımlar. Daha fazla bilgi için bkz. [basic_ostream::&lt;operator&lt;](../standard-library/basic-ostream-class.md#basic_ostream_operator_lt_lt).
+`basic_ostream` sınıfı birçok ekleme işlecini de tanımlar. Daha fazla bilgi için bkz. [basic_ostream:: operator&lt;&lt;](../standard-library/basic-ostream-class.md#basic_ostream_operator_lt_lt).
 
 Şablon işlevi
 
@@ -115,7 +115,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-Str 'nin uzunluğu N = `traits_type::` [uzunluğunu](../standard-library/char-traits-struct.md#length)(`str`) belirler ve diziyi ekler. N < `_Ostr.` [Width](../standard-library/ios-base-class.md#width)ise, işlev bir `_Ostr.width` -N Fill karakter yinelemesi de ekler. Yineleme (`_Ostr`. [](../standard-library/ios-base-class.md#flags)bayraklar & != [sol](../standard-library/ios-functions.md#left).`adjustfield` Aksi takdirde, yineleme diziyi izler. İşlev *_Ostr*döndürür.
+*Str*'Nin uzunluğu N = `traits_type::`[uzunluğunu](../standard-library/char-traits-struct.md#length)(`str`) belirler ve diziyi ekler. N `_Ostr.`[width](../standard-library/ios-base-class.md#width)<, işlev Ayrıca `_Ostr.width`-N dolgusu karakterlerinden oluşan bir yineleme ekler. (`_Ostr`, yineleme sırayla önce gelir. [bayraklar](../standard-library/ios-base-class.md#flags) & `adjustfield`! = [kaldı](../standard-library/ios-functions.md#left). Aksi takdirde, yineleme diziyi izler. İşlev *_Ostr*döndürür.
 
 Şablon işlevi
 
@@ -126,7 +126,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-öğesi `_Ch`ekler. 1 < `_Ostr.width`, işlev bir `_Ostr.width` -1 Fill karakter yinelemesi de ekler. Yineleme, IF `_Ostr.flags & adjustfield != left`dizisinden önce gelir. Aksi takdirde, yineleme diziyi izler. *_Ostr*döndürür.
+öğe `_Ch`ekler. 1 < `_Ostr.width`, işlev aynı zamanda `_Ostr.width`-1 Fill karakterlerinden oluşan bir yineleme ekler. `_Ostr.flags & adjustfield != left`, yineleme sıranın önüne gelir. Aksi takdirde, yineleme diziyi izler. *_Ostr*döndürür.
 
 Şablon işlevi
 
@@ -146,7 +146,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-bir dizinin her bir *öğesi,* *Str* ' de başlayan her öğe için, [PUT](../standard-library/basic-ostream-class.md#put)(`_Ostr.`[Genişlet](../standard-library/basic-ios-class.md#widen)`_Ch`() `Elem` ) yöntemini `_Ostr.`çağırarak türü bir nesneye dönüştürüldüğünden hariç.
+her öğe _Ch, *Str* 'de başlayan sıranın , `_Ostr.`[put](../standard-library/basic-ostream-class.md#put)(`_Ostr.`[Genişlet](../standard-library/basic-ios-class.md#widen)(`_Ch`)) çağırarak `Elem` türünde bir nesneye dönüştürüldüğünden.
 
 Şablon işlevi
 
@@ -166,7 +166,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-Bu *_Ch* `Elem` , ( `_Ostr.put` `_Ostr.widen`( ))öğesiniçağıraraktüründebirnesneyedönüştürüldüğünden.`_Ch`
+*_Ch* , `_Ostr.put`(`_Ostr.widen`(`_Ch`)) çağırarak `Elem` türündeki bir nesneye dönüştürüldüğünden.
 
 Şablon işlevi
 
@@ -206,7 +206,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-(Bu, eklemeden önce *_Ch* öğesini genişletmek zorunda değildir.)
+(Bu, eklemeden önce *_Ch* genişlememelidir.)
 
 Şablon işlevi
 
@@ -217,7 +217,7 @@ basic_ostream<char, _Tr>& operator<<(
     const signed char *str);
 ```
 
-< `_Ostr` < (`const char *` )`str`döndürür.
+`_Ostr` < < (`const char *`) `str`döndürür.
 
 Şablon işlevi
 
@@ -228,7 +228,7 @@ basic_ostream<char, _Tr>& operator<<(
     signed char _Ch);
 ```
 
-< `_Ostr` < (`char` )`_Ch`döndürür.
+`_Ostr` < < (`char`) `_Ch`döndürür.
 
 Şablon işlevi:
 
@@ -239,7 +239,7 @@ basic_ostream<char, _Tr>& operator<<(
     const unsigned char *str);
 ```
 
-< `_Ostr` < (`const char *` )`str`döndürür.
+`_Ostr` < < (`const char *`) `str`döndürür.
 
 Şablon işlevi:
 
@@ -250,7 +250,7 @@ basic_ostream<char, _Tr>& operator<<(
     unsigned char _Ch);
 ```
 
-< `_Ostr` < (`char` )`_Ch`döndürür.
+`_Ostr` < < (`char`) `_Ch`döndürür.
 
 Şablon işlevi:
 
@@ -261,12 +261,12 @@ basic_ostream<_Elem, _Tr>& operator<<(
     T val);
 ```
 
-döndürür `_Ostr` `<<` (ve`_Ostr` bir [rvalue başvurusunu](../cpp/rvalue-reference-declarator-amp-amp.md) işlemdeki bir lvalue öğesine dönüştürür). `val`
+`_Ostr` `<<` `val` döndürür (ve rvalue `_Ostr` [başvurusunu](../cpp/rvalue-reference-declarator-amp-amp.md) işlemdeki bir lvalue öğesine dönüştürür).
 
 ### <a name="example"></a>Örnek
 
-Bkz [](../standard-library/ostream-functions.md#flush) `operator<<`. bir örnek için temizleme.
+`operator<<`kullanarak bir örnek için [Temizleme](../standard-library/ostream-functions.md#flush) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ostream >](../standard-library/ostream.md)
+[ostream > \<](../standard-library/ostream.md)

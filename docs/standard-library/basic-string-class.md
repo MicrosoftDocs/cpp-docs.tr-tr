@@ -117,11 +117,11 @@ helpviewer_keywords:
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ms.openlocfilehash: 08620e0ae6b54b106daba8e0b0a392ceb1a6577d
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821915"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856643"
 ---
 # <a name="basic_string-class"></a>basic_string Sınıfı
 
@@ -164,7 +164,7 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[iden](#iterator)|Bir dizedeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir rasgele erişim yineleyicisi sağlayan bir tür.|
 |[nPos](#npos)|Bir arama işlevi başarısız olduğunda "bulunamadı" veya "tüm kalan karakterler" i gösteren-1 ' e başlatılan işaretsiz bir tamsayı değeri.|
 |[çağrısı](#pointer)|Bir dize veya karakter dizisinde bir karakter öğesi işaretçisi sağlayan bir tür.|
-|[Başvuru](#reference)|Bir dizede depolanan bir öğeye başvuru sağlayan bir tür.|
+|[başvurunun](#reference)|Bir dizede depolanan bir öğeye başvuru sağlayan bir tür.|
 |[reverse_iterator](#reverse_iterator)|Ters çevrilen bir dizedeki bir öğeyi okuyabilen veya değiştirebilen bir rastgele erişim yineleyici sağlayan bir tür.|
 |[size_type](#size_type)|Dizedeki öğe sayısı için işaretsiz integral türü.|
 |[traits_type](#traits_type)|Bir dizede depolanan öğelerin karakter nitelikleri için bir tür.|
@@ -190,10 +190,10 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[crend](#crend)|Ters çevrilen dizedeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
 |[_Copy_s](#copy_s)|Kaynak dizedeki dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakter kopyalar.|
 |[verileri](#data)|Bir dizenin içeriğini bir karakter dizisine dönüştürür.|
-|[empty](#empty)|Dizenin karakter içerip içermediğini test eder.|
+|[olmamalıdır](#empty)|Dizenin karakter içerip içermediğini test eder.|
 |[erer](#end)|Dizedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
 |[silme](#erase)|Bir dizedeki bir öğeyi veya öğe aralığını belirtilen konumdan kaldırır.|
-|[bilgi](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi ileriye doğru yönde arar.|
+|[find](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi ileriye doğru yönde arar.|
 |[find_first_not_of](#find_first_not_of)|Belirtilen bir dizenin herhangi bir öğesi olmayan ilk karakter için bir dizeyi arar.|
 |[find_first_of](#find_first_of)|Belirtilen dizenin herhangi bir öğesiyle eşleşen ilk karakter için bir dizeyi arar.|
 |[find_last_not_of](#find_last_not_of)|Belirli bir dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.|
@@ -201,13 +201,13 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[yapılan](#front)|Dizedeki ilk öğeye bir başvuru döndürür.|
 |[get_allocator](#get_allocator)|Dizeyi oluşturmak için kullanılan `allocator` nesnesinin bir kopyasını döndürür.|
 |[ekleyin](#insert)|Belirli bir konumdaki dizeye bir öğe veya dizi öğe veya öğe aralığı ekler.|
-|[Uzunluğu](#length)|Dizedeki geçerli öğe sayısını döndürür.|
+|[uzunluklu](#length)|Dizedeki geçerli öğe sayısını döndürür.|
 |[max_size](#max_size)|Bir dizenin içerebileceği en fazla karakter sayısını döndürür.|
 |[pop_back](#pop_back)|Dizenin son öğesini siler.|
 |[push_back](#push_back)|Dizenin sonuna bir öğesi ekler.|
 |[rbegin](#rbegin)|Ters çevrilen dizedeki ilk öğeye bir yineleyici döndürür.|
 |[rend](#rend)|Ters çevrilen dizedeki son öğenin hemen ötesine işaret eden bir yineleyici döndürür.|
-|[replace](#replace)|Belirli bir konumdaki bir dizedeki öğeleri, belirtilen karakterlerle veya diğer aralıklardan ya da dizelerle veya C dizelerinden kopyalanmış karakterlerle değiştirir.|
+|[değiştirin](#replace)|Belirli bir konumdaki bir dizedeki öğeleri, belirtilen karakterlerle veya diğer aralıklardan ya da dizelerle veya C dizelerinden kopyalanmış karakterlerle değiştirir.|
 |[ayırmaya](#reserve)|Dizenin kapasitesini, belirtilen sayı kadar en az bir sayı olarak ayarlar.|
 |[yeniden boyutlandırma](#resize)|Bir dize için yeni bir boyut belirtir, gerektiğinde öğeleri ekleme veya silme.|
 |[rfind](#rfind)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi geriye doğru yönde arar.|
@@ -220,8 +220,8 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 
 |İşleç|Açıklama|
 |-|-|
-|[operator+=](#op_add_eq)|Bir dizeye karakter ekler.|
-|[operator=](#op_eq)|Bir dizenin içeriğine yeni karakter değerleri atar.|
+|[işleç + =](#op_add_eq)|Bir dizeye karakter ekler.|
+|[işleç =](#op_eq)|Bir dizenin içeriğine yeni karakter değerleri atar.|
 |[işlecinde&#91;&#93;](#op_at)|Bir dizedeki belirtilen dizine sahip karaktere bir başvuru sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
