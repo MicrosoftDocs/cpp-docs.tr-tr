@@ -18,18 +18,18 @@ helpviewer_keywords:
 - apartment model modules
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
 ms.openlocfilehash: 9b0fa685bf9a7de94b158bd62b00161c1b58562d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260221"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866179"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule sınıfı
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,8 +40,8 @@ class CComAutoThreadModule : public CComModule
 
 #### <a name="parameters"></a>Parametreler
 
-*ThreadAllocator*<br/>
-[in] İş parçacığı seçimi yönetme sınıfı. Varsayılan değer [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
+*Threadayırıcı*<br/>
+'ndaki İş parçacığı seçimini yöneten sınıf. Varsayılan değer [Ccomsimplethreadayırıcı](../../atl/reference/ccomsimplethreadallocator-class.md)' dır.
 
 ## <a name="members"></a>Üyeler
 
@@ -50,10 +50,10 @@ class CComAutoThreadModule : public CComModule
 |||
 |-|-|
 |[CreateInstance](#createinstance)|Bir iş parçacığı seçer ve ardından ilişkili grupta bir nesne oluşturur.|
-|[GetDefaultThreads](#getdefaultthreads)|(Statik) Dinamik olarak işlemci sayısına göre modülü için iş parçacığı sayısını hesaplar.|
-|[Init](#init)|Modülün iş parçacığı oluşturur.|
-|[Kilit](#lock)|Modül ve geçerli iş parçacığı üzerinde kilit sayacını artırır.|
-|[Kilit açma](#unlock)|Kilit sayısını azaltır ve geçerli iş parçacığı üzerinde modülü.|
+|[GetDefaultThreads](#getdefaultthreads)|Se Modül için iş parçacığı sayısını işlemci sayısına göre dinamik olarak hesaplar.|
+|[Init](#init)|Modülün iş parçacıklarını oluşturur.|
+|[İne](#lock)|Modüldeki ve geçerli iş parçacığındaki kilit sayısını artırır.|
+|[Kaldırın](#unlock)|Modüldeki ve geçerli iş parçacığındaki kilit sayısını azaltır.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
@@ -61,21 +61,21 @@ class CComAutoThreadModule : public CComModule
 
 |||
 |-|-|
-|[dwThreadID](#dwthreadid)|Geçerli iş parçacığının tanımlayıcısını içerir.|
-|[m_Allocator](#m_allocator)|İş parçacığı seçimi yönetir.|
+|[dwThreadId](#dwthreadid)|Geçerli iş parçacığının tanımlayıcısını içerir.|
+|[m_Allocator](#m_allocator)|İş parçacığı seçimini yönetir.|
 |[m_nThreads](#m_nthreads)|Modüldeki iş parçacığı sayısını içerir.|
-|[m_pApartments](#m_papartments)|Modülün apartmanlar yönetir.|
+|[m_pApartments](#m_papartments)|Modülün apartmanları yönetir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu sınıf tarafından değiştirilmiş eski [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) ve [CAtlModule](../../atl/reference/catlmodule-class.md) türetilmiş sınıflar. Aşağıdaki bilgiler, ATL daha eski sürümleri ile kullanıma yöneliktir
+>  Bu sınıf artık kullanılmıyor, [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) ve [CAtlModule](../../atl/reference/catlmodule-class.md) türetilmiş sınıfları tarafından değiştirildi. Aşağıdaki bilgiler, ATL 'nin eski sürümleriyle kullanım içindir.
 
-`CComAutoThreadModule` öğesinden türetilen [CComModule](../../atl/reference/ccommodule-class.md) apartman modeli iş parçacığı havuza, COM sunucusu sağlar ve exe ve Windows Hizmetleri için uygulanacak. `CComAutoThreadModule` kullanan [CComApartment](../../atl/reference/ccomapartment-class.md) modüldeki her bir iş parçacığı için bir grup yönetmek için.
+`CComAutoThreadModule`, EXEs ve Windows Hizmetleri için iş parçacığı havuza alınmış, Apartman modeli COM sunucusu uygulamak üzere [CComModule](../../atl/reference/ccommodule-class.md) 'ten türetilir. `CComAutoThreadModule`, modüldeki her iş parçacığı için bir grubu yönetmek üzere [CComApartment](../../atl/reference/ccomapartment-class.md) kullanır.
 
-Modülünüzün öğesinden türetilen `CComAutoThreadModule` içinde birden çok apartmanlar nesneleri oluşturmak istediğinizde. Aynı zamanda içermelidir [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosu belirtmek için nesnenin sınıf tanımında [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) sınıf üreteci olarak.
+Birden çok apartmanlarda nesne oluşturmak istediğinizde `CComAutoThreadModule` modülünüzü türetirsiniz. Ayrıca, sınıf fabrikası olarak [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) belirtmek için nesnenizin sınıf tanımına [declare_classfactory_auto_thread](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosunu da dahil etmeniz gerekir.
 
-Varsayılan olarak, ATL COM AppWizard (ATL projesi Sihirbazı'nda Visual Studio .NET), modülünden derleyeceği `CComModule`. Kullanılacak `CComAutoThreadModule`, sınıf tanımını değiştirin. Örneğin:
+Varsayılan olarak, ATL COM AppWizard (Visual Studio .NET 'te ATL Proje Sihirbazı) `CComModule`modülünden türetilecektir. `CComAutoThreadModule`kullanmak için, sınıf tanımını değiştirin. Örnek:
 
 [!code-cpp[NVC_ATL_AxHost#2](../../atl/codesnippet/cpp/ccomautothreadmodule-class_1.cpp)]
 
@@ -87,9 +87,9 @@ Varsayılan olarak, ATL COM AppWizard (ATL projesi Sihirbazı'nda Visual Studio 
 
 `IAtlAutoThreadModule`
 
-[CAtlModuleT](../../atl/reference/catlmodulet-class.md)
+[Catlmodület](../../atl/reference/catlmodulet-class.md)
 
-[CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md)
+[Catlautothreadmodület](../../atl/reference/catlautothreadmodulet-class.md)
 
 [CComModule](../../atl/reference/ccommodule-class.md)
 
@@ -97,11 +97,11 @@ Varsayılan olarak, ATL COM AppWizard (ATL projesi Sihirbazı'nda Visual Studio 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="createinstance"></a>  CComAutoThreadModule::CreateInstance
+##  <a name="createinstance"></a>CComAutoThreadModule:: CreateInstance
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT CreateInstance(
@@ -112,26 +112,26 @@ HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*pfnCreateInstance*<br/>
-[in] Bir oluşturucu işlevi işaretçisi.
+*Pfncreateınstance*<br/>
+'ndaki Oluşturucu işlevine yönelik bir işaretçi.
 
-*riid*<br/>
-[in] İstenen arabirim Laboratuvardaki.
+*riıd*<br/>
+'ndaki İstenen arabirimin IID 'si.
 
 *ppvObj*<br/>
-[out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
+dışı *Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObj* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bir iş parçacığı seçer ve ardından ilişkili grupta bir nesne oluşturur.
 
-##  <a name="dwthreadid"></a>  CComAutoThreadModule::dwThreadID
+##  <a name="dwthreadid"></a>CComAutoThreadModule::d Wthreadıd
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 DWORD dwThreadID;
@@ -141,9 +141,9 @@ DWORD dwThreadID;
 
 Geçerli iş parçacığının tanımlayıcısını içerir.
 
-##  <a name="getdefaultthreads"></a>  CComAutoThreadModule::GetDefaultThreads
+##  <a name="getdefaultthreads"></a>CComAutoThreadModule:: GetDefaultThreads
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 static int GetDefaultThreads();
@@ -155,11 +155,11 @@ EXE modülünde oluşturulacak iş parçacığı sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu statik işlev işlemci sayısına göre bir EXE modülü için iş parçacığı sayısını dinamik olarak hesaplar. Varsayılan olarak, bu dönüş değeri için geçirilen [Init](#init) iş parçacığı oluşturmak için yöntemi.
+Bu statik işlev, işlemci sayısına göre, EXE modülü için en fazla iş parçacığı sayısını dinamik olarak hesaplar. Varsayılan olarak, bu dönüş değeri, iş parçacıklarını oluşturmak için [Init](#init) yöntemine geçirilir.
 
-##  <a name="init"></a>  CComAutoThreadModule::Init
+##  <a name="init"></a>CComAutoThreadModule:: Init
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT Init(
@@ -171,25 +171,25 @@ HRESULT Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-[in] Bir nesne eşleme girişleri dizisine bir işaretçi.
+*Lama*<br/>
+'ndaki Nesne eşleme girdileri dizisine yönelik bir işaretçi.
 
-*h*<br/>
-[in] Geçirilen HINSTANCE `DLLMain` veya `WinMain`.
+*olsun*<br/>
+'ndaki HıNSTANCE `DLLMain` veya `WinMain`geçirildi.
 
-*plibid*<br/>
-[in] Projeyle ilişkili tür kitaplığının Kitaplık kimliği için bir işaretçi.
+*plibıd*<br/>
+'ndaki Projeyle ilişkili tür kitaplığının LIBıD işaretçisi.
 
 *nThreads*<br/>
-[in] Oluşturulacak iş parçacığı sayısı. Varsayılan olarak, *nThreads* tarafından döndürülen değer [GetDefaultThreads](#getdefaultthreads).
+'ndaki Oluşturulacak iş parçacığı sayısı. Varsayılan olarak, *nThreads* , [GetDefaultThreads](#getdefaultthreads)tarafından döndürülen değerdir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri üyeleri başlatılır ve tarafından belirtilen iş parçacığı sayısını oluşturur *nThreads*.
+Veri üyelerini başlatır ve *nThreads*tarafından belirtilen iş parçacığı sayısını oluşturur.
 
-##  <a name="lock"></a>  CComAutoThreadModule::Lock
+##  <a name="lock"></a>CComAutoThreadModule:: Lock
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 LONG Lock();
@@ -197,15 +197,15 @@ LONG Lock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanılama için kullanışlı veya test olabilir bir değer.
+Tanılama veya test için yararlı olabilecek bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atomik bir artış ve geçerli iş parçacığı modülü için kilit sayacını gerçekleştirir. `CComAutoThreadModule` Modülün kilit sayacını istemciler modülü eriştiğiniz olup olmadığını belirlemek için kullanır. Geçerli iş parçacığı üzerinde kilit sayacını İstatistiksel amaçlar için kullanılır.
+Modül için kilit sayısında ve geçerli iş parçacığı için bir atomik artış gerçekleştirir. `CComAutoThreadModule`, modüle herhangi bir istemcinin erişip erişemeyeceğini öğrenmek için modül kilit sayısını kullanır. Geçerli iş parçacığındaki kilit sayısı istatistiksel amaçlar için kullanılır.
 
-##  <a name="m_allocator"></a>  CComAutoThreadModule::m_Allocator
+##  <a name="m_allocator"></a>CComAutoThreadModule:: m_Allocator
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 ThreadAllocator  m_Allocator;
@@ -213,11 +213,11 @@ ThreadAllocator  m_Allocator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İş parçacığı seçimi yönetme nesne. Varsayılan olarak, `ThreadAllocator` sınıf şablonu parametresi [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
+İş parçacığı seçimini yöneten nesne. Varsayılan olarak, `ThreadAllocator` sınıfı şablon parametresi [Ccomsimplethreadayırıcı](../../atl/reference/ccomsimplethreadallocator-class.md)' dır.
 
-##  <a name="m_nthreads"></a>  CComAutoThreadModule::m_nThreads
+##  <a name="m_nthreads"></a>CComAutoThreadModule:: m_nThreads
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 int m_nThreads;
@@ -225,11 +225,11 @@ int m_nThreads;
 
 ### <a name="remarks"></a>Açıklamalar
 
-EXE modülündeki iş parçacığı sayısını içerir. Zaman [Init](#init) çağrıldığında `m_nThreads` ayarlanır *nThreads* parametre değeri. Her iş parçacığının ilişkili grup tarafından yönetilen bir [CComApartment](../../atl/reference/ccomapartment-class.md) nesne.
+EXE modülündeki iş parçacığı sayısını içerir. [Init](#init) çağrıldığında, `m_nThreads` *nThreads* parametre değerine ayarlanır. Her bir iş parçacığının ilişkili grubu bir [CComApartment](../../atl/reference/ccomapartment-class.md) nesnesi tarafından yönetilir.
 
-##  <a name="m_papartments"></a>  CComAutoThreadModule::m_pApartments
+##  <a name="m_papartments"></a>CComAutoThreadModule:: m_pApartments
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 CComApartment* m_pApartments;
@@ -237,11 +237,11 @@ CComApartment* m_pApartments;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaret dizilerine [CComApartment](../../atl/reference/ccomapartment-class.md) nesneleri, her biri bir grupta modülü yönetir. Dizideki öğelerin sayısını temel alır [m_nThreads](#m_nthreads) üyesi.
+Her biri modüldeki bir grubu yöneten bir [CComApartment](../../atl/reference/ccomapartment-class.md) nesneleri dizisine işaret eder. Dizideki öğelerin sayısı [m_nThreads](#m_nthreads) üyesini temel alır.
 
-##  <a name="unlock"></a>  CComAutoThreadModule::Unlock
+##  <a name="unlock"></a>CComAutoThreadModule:: unlock
 
-ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 LONG Unlock();
@@ -249,15 +249,15 @@ LONG Unlock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanılama için kullanışlı veya test olabilir bir değer.
+Tanılama veya test için yararlı olabilecek bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atomik bir azaltma ve geçerli iş parçacığı modülü için kilit sayacını gerçekleştirir. `CComAutoThreadModule` Modülün kilit sayacını istemciler modülü eriştiğiniz olup olmadığını belirlemek için kullanır. Geçerli iş parçacığı üzerinde kilit sayacını İstatistiksel amaçlar için kullanılır.
+Modül için kilit sayısı ve geçerli iş parçacığı için bir atomik azalış gerçekleştirir. `CComAutoThreadModule`, modüle herhangi bir istemcinin erişip erişemeyeceğini öğrenmek için modül kilit sayısını kullanır. Geçerli iş parçacığındaki kilit sayısı istatistiksel amaçlar için kullanılır.
 
-Modülün kilit sayacını sıfır ulaştığında, modül kaldırılamıyor.
+Modül kilit sayısı sıfıra ulaştığında modül bellekten kaldırılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

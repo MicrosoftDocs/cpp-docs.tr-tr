@@ -1,5 +1,5 @@
 ---
-title: '&lt;yardımcı programı&gt; işlevleri'
+title: '&lt;yardımcı program&gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - utility/std::exchange
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - std::move [C++]
 - std::swap [C++]
 ms.openlocfilehash: 723b077500b9b741445efcd8574fb26cd53e5fc7
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246305"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854879"
 ---
-# <a name="ltutilitygt-functions"></a>&lt;yardımcı programı&gt; işlevleri
+# <a name="ltutilitygt-functions"></a>&lt;yardımcı program&gt; işlevleri
 
-## <a name="asconst"></a> as_const
+## <a name="asconst"></a>as_const
 
 ```cpp
 template <class T> constexpr add_const_t<T>& as_const(T& t) noexcept;
@@ -32,17 +32,17 @@ template <class T> void as_const(const T&&) = delete;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *T*.
+*T*döndürür.
 
-## <a name="declval"></a> declval
+## <a name="declval"></a>declval
 
 ```cpp
 template <class T> add_rvalue_reference_t<T> declval() noexcept;  // as unevaluated operand
 ```
 
-## <a name="exchange"></a> Exchange
+## <a name="exchange"></a>değişimi
 
-**(C ++ 14)**  Bir nesneye yeni bir değer atar ve eski değeri döndürür.
+**(C++ 14)** Nesnesine yeni bir değer atar ve eski değerini döndürür.
 
 ```cpp
 template <class T, class Other = T>
@@ -51,19 +51,19 @@ template <class T, class Other = T>
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*\
-New_val değeri alacak nesne.
+*val*\
+New_val değerini alacak nesne.
 
 *new_val*\
-Nesne değeri kopyalanamaz ya da val taşındı.
+Değeri kopyalanmış veya Val 'e taşınan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık türler için `exchange` taşıma oluşturucusu yok, geçici bir nesne veya taşınır ve her türlü kullanılabilir dönüştürme atama işlecinden kullanarak yeni değer kabul eder, yeni değeri kopyalamaktan kaçınır olduğunda eski değeri kopyalamaktan kaçınır. Exchange işlevi farklıdır [std::swap](../standard-library/algorithm-functions.md#swap) sol bağımsız değişkeni değil veya taşınmış doğru bağımsız kopyalanan.
+Karmaşık türler için `exchange`, bir taşıma Oluşturucusu kullanılabilir olduğunda eski değerin kopyalanmasını önler, geçici bir nesne ise veya taşınmışsa yeni değeri kopyalamayı önler ve kullanılabilir herhangi bir dönüştürme atama işlecini kullanarak yeni değer olarak herhangi bir türü kabul eder. Exchange işlevi, sol bağımsız değişkenin sağ bağımsız değişkenine taşınmadığından veya kopyalanmadığı için [std:: Swap](../standard-library/algorithm-functions.md#swap) 'dan farklıdır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `exchange`. Gerçek dünyada `exchange` kopyalamak pahalı olan büyük nesneleri ile kullanışlıdır:
+Aşağıdaki örnek `exchange`nasıl kullanacağınızı gösterir. Gerçek dünyada `exchange`, kopyalamanın pahalı olduğu büyük nesneler ile en iyi seçenektir:
 
 ```cpp
 #include <utility>
@@ -95,7 +95,7 @@ The old value of c1 is: 1
 The new value of c1 after exchange is: 2
 ```
 
-## <a name="forward"></a> İleriye doğru
+## <a name="forward"></a>tirler
 
 Bağımsız değişken bir rvalue'da veya rvalue başvurusundaysa, bağımsız değişkenini bir rvalue başvurusuna koşullu olarak yayınlar. Bu, bir bağımsız değişkenin rvalue olma durumunu mükemmel iletim desteği sunarak iletim işlevine geri yükler.
 
@@ -109,25 +109,25 @@ template <class Type>    // accepts everything else
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-Geçirilen değerin türü *Arg*, olabilen türünden farklı *Arg*. Genellikle iletme işlevinin bir şablon bağımsız değişkeni tarafından belirlenir.
+*Tür*\
+Bağımsız değişken türünden farklı olabilecek, *arg*içinde geçirilen değerin *türü.* Genellikle iletme işlevinin bir şablon bağımsız değişkeni tarafından belirlenir.
 
-*bağımsız değişken*\
+*Bağımsız değişken*\
 Yayınlama için bağımsız değişkeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir rvalue başvurusu döndürür *Arg* değer iletilmezse *Arg* özgün bir rvalue ise veya bir rvalue başvuru oluştu; Aksi halde döndürür *Arg* türünü değiştirmeden.
+*Bağımsız* değişken içinde geçirilen değer ilk olarak bir rvalue veya bir rvalue başvurusu Ise, *arg* 'a bir rvalue başvurusu döndürür; Aksi takdirde, türünü değiştirmeden *bağımsız değişken* döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmak için bir açık şablon bağımsız değişkeni belirtmeniz gerekir `forward`.
+`forward`çağırmak için açık bir şablon bağımsız değişkeni belirtmeniz gerekir.
 
-`forward` bağımsız değişkeni ileriye doğru değil. Özgün bir rvalue ise veya rvalue başvurusu ise, bunun yerine, tarafından bağımsız değişkeni olarak bir rvalue başvurusuna koşullu olarak atama `forward` iletilen bağımsız değişkenin özgün türünün bilgisiyle aşırı yük çözümlemesi gerçekleştirmek derleyiciyi etkinleştirir. Bir iletme işlevine bağımsız değişkenin açık türü kendi özgün türünden farklı olabilir — örneğin, ne zaman bir rvalue bir işlev için bağımsız değişken olarak kullanılan ve bir parametre adı için bağlı bir ada sahip olması sağlar ne olursa olsun değer, aslında bir rvalue olarak var olan bir lvalue — `forward` bağımsız değişkenin rvalue durumunu geri yükler.
+`forward` bağımsız değişkenini iletmez. Bunun yerine, bağımsız değişkenini koşulsuz olarak bir rvalue başvurusuna atama, ilk olarak bir rvalue veya rvalue başvurusu ise, `forward` derleyicinin, iletilen bağımsız değişkenin özgün türü hakkında aşırı yükleme çözümlemesi gerçekleştirmesini sağlar. Bir iletme işlevinin bağımsız değişkeninin görünen türü, özgün türünden farklı olabilir — Örneğin, bir rvalue bir işlev için bağımsız değişken olarak kullanıldığında ve bir parametre adına bağlıysa; bir ada sahip olmak, bir rvalue olarak bir değeri olan bir lvalue oluşturur; `forward` bağımsız değişkenin rvalue kullanımını geri yükler.
 
-Aşırı yükleme çözümlemesi için bir bağımsız değişkenin özgün değerinin rvalue durumunu geri yükleme olarak bilinir *kusursuz iletme*. Kusursuz iletme bir şablon işlevinin her iki başvuru türünün bağımsız değişkenini kabul etmesini ve aşırı yük çözümlemeleri yapılması gerektiğinde rvalue durumunu geri yüklemesini sağlar. Kusursuz iletme kullanarak, rvalues için taşıma semantiğini koruyabilir ve bağımsız değişkenlerinin yalnızca başvuru türüne göre çeşitlenen işlevler için aşırı yük sağlanmasını önleyebilirsiniz.
+Bir bağımsız değişkenin özgün değerinin rvalue olma durumunu aşırı yükleme çözümüne geri yüklemek, *kusursuz iletme*olarak bilinir. Kusursuz iletme bir şablon işlevinin her iki başvuru türünün bağımsız değişkenini kabul etmesini ve aşırı yük çözümlemeleri yapılması gerektiğinde rvalue durumunu geri yüklemesini sağlar. Kusursuz iletme kullanarak, rvalues için taşıma semantiğini koruyabilir ve bağımsız değişkenlerinin yalnızca başvuru türüne göre çeşitlenen işlevler için aşırı yük sağlanmasını önleyebilirsiniz.
 
-## <a name="from_chars"></a> from_chars
+## <a name="from_chars"></a>from_chars
 
 ```cpp
 from_chars_result from_chars(const char* first, const char* last, see below& value, int base = 10);
@@ -139,9 +139,9 @@ from_chars_result from_chars(const char* first, const char* last, double& value,
 from_chars_result from_chars(const char* first, const char* last, long double& value, chars_format fmt = chars_format::general);
 ```
 
-## <a name="get"></a> Al
+## <a name="get"></a>Al
 
-Bir öğeyi alır bir `pair` nesne türü veya dizin konumu.
+Dizin konumuna veya türe göre `pair` nesnesinden bir öğe alır.
 
 ```cpp
 // get reference to element at Index in pair Pr
@@ -190,21 +190,21 @@ template <class T2, class T1>
 Seçilen öğenin 0 tabanlı dizini.
 
 *T1*\
-İlk çifti öğenin türü.
+İlk çift öğenin türü.
 
 *T2*\
-İkinci çift öğe türü.
+İkinci çift öğesinin türü.
 
-*çekme isteği*\
-Aralarından seçim yapabileceğiniz çifti.
+*pr*\
+Seçilecek çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevleri her bir öğenin bir başvuru döndürmeyi kendi `pair` bağımsız değişken.
+Şablon işlevleri, her biri `pair` bağımsız değişkeninin bir öğesine bir başvuru döndürür.
 
-Dizinli aşırı yüklemeler için değerini *dizin* işlevler döndürür 0 `pr.first` ve değerini *dizin* 1 işlevler döndürür `pr.second`. Türü `RI` döndürülen öğe türü.
+Dizinli aşırı yüklemeler için, *Dizin* değeri 0 ise işlevler `pr.first` döndürür ve *Dizin* değeri 1 ise işlevler `pr.second`döndürür. Tür `RI` döndürülen öğenin türüdür.
 
-Dizin parametresi olmayan aşırı yükler için döndürülecek öğe türü bağımsız değişkeni tarafından çıkarılır. Çağırma `get<T>(Tuple)` , bir derleyici hatasına neden olur *çekme isteği* t türünde bir öğe sayısından fazla veya az içerir
+Dizin parametresi olmayan aşırı yüklemeler için, döndürülecek öğe tür bağımsız değişkeni tarafından anlaşıyor. Çekme isteği T türünde birden fazla veya daha az *öğe içeriyorsa,* `get<T>(Tuple)` çağrısı bir derleyici hatası oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -235,37 +235,37 @@ int main()
 1 0.27
 ```
 
-## <a name="index_sequence"></a> index_sequence
+## <a name="index_sequence"></a>index_sequence
 
 ```cpp
 template<size_t... I>
     using index_sequence = integer_sequence<size_t, I...>;
 ```
 
-## <a name="index_sequence_for"></a> index_sequence_for
+## <a name="index_sequence_for"></a>index_sequence_for
 
 ```cpp
 template<class... T>
     using index_sequence_for = make_index_sequence<sizeof...(T)>;
 ```
 
-## <a name="make_index_sequence"></a> make_index_sequence
+## <a name="make_index_sequence"></a>make_index_sequence
 
 ```cpp
 template<size_t N>
     using make_index_sequence = make_integer_sequence<size_t, N>;
 ```
 
-## <a name="make_integer_sequence"></a> make_integer_sequence
+## <a name="make_integer_sequence"></a>make_integer_sequence
 
 ```cpp
 template<class T, T N>
     using make_integer_sequence = integer_sequence<T, see below >;
 ```
 
-## <a name="make_pair"></a> make_pair
+## <a name="make_pair"></a>make_pair
 
-Türünde nesne oluşturmak için kullanabileceğiniz bir şablon işlevi `pair`, burada bileşen türleri parametre olarak geçirilen veri türlerine dayanan otomatik olarak seçilir.
+Bileşen türlerinin parametre olarak geçirilen veri türlerine göre otomatik olarak seçildiği `pair`türünde nesneler oluşturmak için kullanabileceğiniz bir şablon işlevi.
 
 ```cpp
 template <class T, class U>
@@ -283,37 +283,37 @@ template <class T, class U>
 
 ### <a name="parameters"></a>Parametreler
 
-*val1*\
-İlk öğesini başlatan değer `pair`.
+*Val1*\
+`pair`ilk öğesini Başlatan değer.
 
-*Val2*\
-İkinci öğesini başlatan değer `pair`.
+*Val2 & lt*\
+`pair`ikinci öğesini Başlatan değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Oluşturulan çift nesnesi: `pair` < `T`,`U`> (`Val1`, `Val2`).
+Oluşturulan çift nesne: `pair`<`T`,`U`> (`Val1`, `Val2`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`make_pair` türü nesneyi [reference_wrapper sınıfı](../standard-library/reference-wrapper-class.md) başvuru türleri ve dizileri ve işlevleri işaretçilere küçülen dönüştürür.
+`make_pair`, [Reference_wrapper sınıfının](../standard-library/reference-wrapper-class.md) nesne türünü başvuru türlerine dönüştürür ve dizi dizilerini ve işlevleri işaretçilere dönüştürür.
 
-Döndürülen `pair` nesnesi `T` şu şekilde belirlenir:
+Döndürülen `pair` nesnesinde, `T` aşağıdaki şekilde belirlenir:
 
-- Giriş türü `T` olduğu `reference_wrapper<X>`, döndürülen türü `T` olduğu `X&`.
+- Giriş türü `T` `reference_wrapper<X>`, döndürülen tür `T` `X&`.
 
-- Aksi takdirde, döndürülen tür `T` olduğu `decay<T>::type`. Varsa [decay sınıfı](../standard-library/decay-class.md) desteklenmiyor, döndürülen tür `T` giriş türü ile aynı `T`.
+- Aksi takdirde, `T` döndürülen tür `decay<T>::type`. [Decay sınıfı](../standard-library/decay-class.md) desteklenmiyorsa döndürülen tür `T` `T`giriş türü ile aynıdır.
 
-Döndürülen türü `U` türündekine benzer şekilde belirlenir `U`.
+Döndürülen tür `U` benzer şekilde `U`giriş türünden belirlenir.
 
-Bir avantajı `make_pair` faydası depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenleri gibi kullanmayın `make_pair<int, int>(1, 2)` kullandığınızda `make_pair` ayrıntılı olduğundan ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler. Bu örnek için doğru sözdizimi olacaktır `make_pair(1, 2)`
+`make_pair` avantajlarından biri, depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenmesi ve açıkça belirtilmesi gerekmez. `make_pair` kullandığınızda `make_pair<int, int>(1, 2)` gibi açık şablon bağımsız değişkenlerini kullanmayın ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler. Bu örnekte, doğru sözdizimi `make_pair(1, 2)`
 
-`make_pair` Yardımcı işlevi ayrıca bir giriş parametresi olarak bir çift gerektiren bir işleve iki değer geçirilecek mümkün kılar.
+`make_pair` yardımcı işlevi, giriş parametresi olarak çift değer gerektiren bir işleve iki değer geçişini de olanaklı kılar.
 
 ### <a name="example"></a>Örnek
 
-Yardımcı işlevini kullanma hakkında bir örnek `make_pair` bildirmek ve bir çift başlatmak için bkz: [pair yapısı](../standard-library/pair-structure.md).
+Bir çifti bildirmek ve başlatmak için `make_pair` yardımcı işlevinin nasıl kullanılacağına ilişkin bir örnek için bkz. [çifte yapısı](../standard-library/pair-structure.md).
 
-## <a name="move"></a> Taşıma
+## <a name="move"></a>geçiş
 
 Kendi bağımsız değişkenini koşulsuz olarak bir rvalue başvurusuna yayınlar ve böylece kendi türünün taşınması etkinse, taşınabileceğini belirtir.
 
@@ -324,33 +324,33 @@ template <class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-Geçirilen bağımsız değişkenin türünden çıkarsanan tür *Arg*başvuru daraltma kurallarıyla birlikte.
+*Tür*\
+Başvuru daraltma kurallarıyla birlikte *, bağımsız değişken içinde geçirilen*bağımsız değişkenin türünden çıkarılan bir tür.
 
-*bağımsız değişken*\
-Yayınlama için bağımsız değişkeni. Ancak türünü *Arg* bir rvalue başvurusu olarak belirtilmesi için görünür `move` lvalue başvuruları rvalue başvurularına bağlanabileceğinden lvalue bağımsız değişkenlerini de kabul eder.
+*Bağımsız değişken*\
+Yayınlama için bağımsız değişkeni. *Bağımsız değişken* türü bir rvalue başvurusu olarak belirtilmiş gibi görünse de, lvalue başvuruları rvalue başvurularına bağlayabildiğinden `move` lvalue bağımsız değişkenlerini de kabul eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`Arg` bir rvalue başvurusu olarak olsun veya olmasın, türü bir başvuru türüdür.
+bir rvalue başvurusu olarak `Arg`, türünün bir başvuru türü olup olmadığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız değişkeni *türü* açıkça belirtilmesi, ancak geçirilen değerin türünden deyimli tasarlanmamıştır *Arg*. Türünü *türü* başvuru daraltma kurallarına göre daha fazla ayarlanır.
+Şablon bağımsız değişken *türü* açık olarak belirtilmemiştir, ancak *bağımsız*değişken içinde geçirilen değerin türünden çıkarsanmalıdır. *Tür* türü, başvuru daraltma kurallarına göre daha sonra ayarlanır.
 
-`move` bağımsız değişkeni taşınmaz. Bunun yerine, kendi bağımsız değişkeninin koşulsuzca tarafından — bir lvalue olabilen — kopyalama, geçirilen değer yerine isteğe bağlı olarak bir rvalue başvurusunu daha sonra taşımasına olanak sağlayan *Arg* türü taşıma etkinse. Türü taşıma etkin değilse, bunun yerine kopyalanır.
+`move` bağımsız değişkenini taşımaz. Bunun yerine, bir lvalue olabilecek bağımsız değişkenini koşulsuz olarak atama (bir lvalue olabilir), bir rvalue başvurusuna, derleyicinin, türü taşıma özelliği etkin olduğunda, *değişken* olarak geçirilen değeri kopyalamak yerine daha sonra taşımasını sağlar. Türü taşı etkin değilse, bunun yerine kopyalanmış olur.
 
-Değer iletilmezse *Arg* bir lvalue değeridir — diğer bir deyişle, bir ada sahip veya kendi adresi alınabiliyorsa — taşıma gerçekleştiğinde geçersiz kılınır. Geçirilen değere bakın yoksa *Arg* adı veya adresi taşındıktan sonra göre.
+*Bağımsız değişken* içinde geçirilen değer bir lvalue ise — diğer bir deyişle, bir ada sahip veya adresi alınabilir — taşıma gerçekleştiğinde geçersiz kılınır. Taşındıktan sonra adı veya adresi tarafından *bağımsız değişken* olarak geçirilen değere başvurmayın.
 
-## <a name="moveif"></a> move_if_noexcept
+## <a name="moveif"></a>move_if_noexcept
 
 ```cpp
 template <class T> constexpr conditional_t< !is_nothrow_move_constructible_v<T> && is_copy_constructible_v<T>, const T&, T&&> move_if_noexcept(T& x) noexcept;
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
-İki tür öğelerini değiştirir veya [pair yapısı](../standard-library/pair-structure.md) nesneleri.
+İki tür veya [çift yapı](../standard-library/pair-structure.md) nesnesinin öğelerini değiş tokuş eder.
 
 ```cpp
 template <class T>
@@ -363,17 +363,17 @@ template <class T, class U>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü veya tür `pair`.
+*sol*\
+`pair`veya türünde bir nesne.
 
 *sağ*\
-Bir nesne türü veya tür `pair`.
+`pair`veya türünde bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir avantajı `swap` faydası depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenleri gibi kullanmayın `swap<int, int>(1, 2)` kullandığınızda `swap` ayrıntılı olduğundan ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
+`swap` avantajlarından biri, depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenmesi ve açıkça belirtilmesi gerekmez. `swap` kullandığınızda `swap<int, int>(1, 2)` gibi açık şablon bağımsız değişkenlerini kullanmayın ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
 
-## <a name="to_chars"></a> to_chars
+## <a name="to_chars"></a>to_chars
 
 ```cpp
 to_chars_result to_chars(char* first, char* last, see below value, int base = 10);
@@ -390,4 +390,4 @@ to_chars_result to_chars(char* first, char* last, long double value, chars_forma
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değer aralığı doldurarak bir karakter dizisine dönüştürür `[first, last)`burada `[first, last)` geçerli bir aralıkta olması gerekir.
+Aralık `[first, last)`, `[first, last)` geçerli bir Aralık olması gereken aralığın doldurulmasıyla değeri bir karakter dizesine dönüştürür.

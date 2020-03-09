@@ -1,18 +1,18 @@
 ---
-title: '&lt;IStream&gt; işlevleri'
+title: IStream&gt; işlevleri &lt;
 ms.date: 11/04/2016
 f1_keywords:
 - istream/std::swap
 - istream/std::ws
 ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 ms.openlocfilehash: fc512558969bc25d2b16afa2b93219e13d0b28ca
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458762"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874854"
 ---
-# <a name="ltistreamgt-functions"></a>&lt;IStream&gt; işlevleri
+# <a name="ltistreamgt-functions"></a>IStream&gt; işlevleri &lt;
 
 |||
 |-|-|
@@ -36,10 +36,10 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
+*sol*\
 Bir akış.
 
-*Right*\
+*sağ*\
 Bir akış.
 
 ## <a name="ws"></a>RW
@@ -61,14 +61,14 @@ Akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici, `ch` [use_facet](../standard-library/basic-filebuf-class.md#open)< **CType** \< **eled**> > ( [getloc](../standard-library/ios-base-class.md#getloc)) için tüm öğeleri ayıklar ve atar. **Şu** ( **CType** \< **eled**>:: **Space**, **ch**) true.
+İşleici, [use_facet](../standard-library/basic-filebuf-class.md#open)< **CType**\< **eled**> > ( [getloc](../standard-library/ios-base-class.md#getloc)) `ch` tüm öğeleri ayıklar ve atar. **(** **CType**\< **eled**>:: **Space**, **ch**) true.
 
 İşlev, öğelerin ayıklanması sırasında dosya sonuyla karşılaştığında [SetState](../standard-library/basic-ios-class.md#setstate)( **eofbit**) öğesini çağırır. *_Istr*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Kullanım`ws`örneği için bkz. [operator > >](../standard-library/istream-operators.md#op_gt_gt) .
+`ws`kullanma örneği için bkz. [operator > >](../standard-library/istream-operators.md#op_gt_gt) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<IStream >](../standard-library/istream.md)
+[IStream > \<](../standard-library/istream.md)

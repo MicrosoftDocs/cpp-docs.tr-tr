@@ -53,11 +53,11 @@ helpviewer_keywords:
 - CArchive [MFC], m_pDocument
 ms.assetid: 9e950d23-b874-456e-ae4b-fe00781a7699
 ms.openlocfilehash: 3cf5c3b7a79e846928b5a7ee0af12a3324e141a3
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376364"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855341"
 ---
 # <a name="carchive-class"></a>CArchive sınıfı
 
@@ -73,66 +73,66 @@ class CArchive
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CArchive:: CArchive](#carchive)|Bir `CArchive` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CArchive:: Abort](#abort)|Özel durum oluşturmadan bir arşivi kapatır.|
-|[CArchive:: Close](#close)|Yazılı olmayan verileri temizler ve bağlantısını keser `CFile`.|
+|[CArchive:: Close](#close)|Yazılı olmayan verileri temizler ve `CFile`bağlantısını keser.|
 |[CArchive:: Flush](#flush)|Yazdırılamayan verileri arşiv arabelleğinden temizler.|
-|[CArchive:: GetFile](#getfile)|Bu arşiv için nesne işaretçisini alır. `CFile`|
-|[CArchive:: GetObjectSchema](#getobjectschema)|Seri durumdan çıkarılacak nesnenin sürümünü öğrenmek için işlevindençağırılır.`Serialize`|
+|[CArchive:: GetFile](#getfile)|Bu arşiv için `CFile` nesne işaretçisini alır.|
+|[CArchive:: GetObjectSchema](#getobjectschema)|Seri durumdan çıkarılacak nesnenin sürümünü öğrenmek için `Serialize` işlevinden çağırılır.|
 |[CArchive:: IsBufferEmpty](#isbufferempty)|Windows Sockets alma işlemi sırasında arabelleğin boşaltılıp boşaltılmadığını belirler.|
 |[CArchive:: ısyükleniyor](#isloading)|Arşivin yüklenip yüklenmediğini belirler.|
 |[CArchive:: ısdepo](#isstoring)|Arşivin depolayıp depolanmadığını belirler.|
 |[CArchive:: MapObject](#mapobject)|Eşlemeye, dosyaya serileştirilmemiş ancak alt nesnelerin başvurmasına izin veren nesneleri koyar.|
 |[CArchive:: Read](#read)|Ham baytları okur.|
-|[CArchive:: ReadClass](#readclass)|Daha önce ile `WriteClass`depolanan bir sınıf başvurusunu okur.|
+|[CArchive:: ReadClass](#readclass)|Daha önce `WriteClass`ile depolanan bir sınıf başvurusunu okur.|
 |[CArchive:: ReadObject](#readobject)|Yükleme için bir nesnenin `Serialize` işlevini çağırır.|
 |[CArchive:: ReadString](#readstring)|Tek satırlık bir metin okur.|
-|[CArchive:: SerializeClass](#serializeclass)|Öğesinin yönüne bağlı olarak `CArchive` nesnesine sınıf başvurusunu okur veya yazar. `CArchive`|
-|[CArchive:: SetLoadParams](#setloadparams)|Yükleme dizisinin büyüdüğü boyutu ayarlar. Herhangi bir nesne yüklenmeden veya `MapObject` `ReadObject` çağrılmadan önce çağrılmalıdır.|
+|[CArchive:: SerializeClass](#serializeclass)|`CArchive`yönüne bağlı olarak `CArchive` nesnesine sınıf başvurusunu okur veya yazar.|
+|[CArchive:: SetLoadParams](#setloadparams)|Yükleme dizisinin büyüdüğü boyutu ayarlar. Herhangi bir nesne yüklenmeden önce veya `MapObject` ya da `ReadObject` çağrılmadan önce çağrılmalıdır.|
 |[CArchive:: SetObjectSchema](#setobjectschema)|Arşiv nesnesinde depolanan nesne şemasını ayarlar.|
 |[CArchive:: SetStoreParams](#setstoreparams)|Serileştirme işlemi sırasında benzersiz nesneleri tanımlamak için kullanılan haritanın karma tablo boyutunu ve blok boyutunu ayarlar.|
 |[CArchive:: Write](#write)|Ham baytlar yazar.|
-|[CArchive:: WriteClass](#writeclass)|Öğesine bir başvuru `CRuntimeClass` `CArchive`yazar.|
+|[CArchive:: WriteClass](#writeclass)|`CArchive``CRuntimeClass` bir başvuru yazar.|
 |[CArchive:: WriteObject](#writeobject)|Depolamak için bir nesnenin `Serialize` işlevini çağırır.|
 |[CArchive:: WriteString](#writestring)|Tek satırlık bir metin yazar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CArchive:: işleci&lt;&lt;](#operator_lt_lt)|Nesneleri ve temel türleri arşive depolar.|
-|[CArchive:: işleci&gt;&gt;](#operator_gt_gt)|Arşivden nesneleri ve basit türleri yükler.|
+|[CArchive:: operator &lt;&lt;](#operator_lt_lt)|Nesneleri ve temel türleri arşive depolar.|
+|[CArchive:: operator &gt;&gt;](#operator_gt_gt)|Arşivden nesneleri ve basit türleri yükler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CArchive:: m_pDocument](#m_pdocument)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CArchive`taban sınıfına sahip değildir.
+`CArchive` temel bir sınıfa sahip değil.
 
 Daha sonra, nesneleri bellekte reconstituting kalıcı depolamadan yükleyebilirsiniz. Verileri kalıcı hale getirmeye yönelik bu işlem "serileştirme" olarak adlandırılır.
 
 Bir arşiv nesnesini bir tür ikili akış olarak düşünebilirsiniz. Bir giriş/çıkış akışı gibi, bir arşiv bir dosyayla ilişkilendirilir ve verilerin depolama alanına ve depolamaya bağlanmasına izin verir. Bir giriş/çıkış akışı, ASCII karakterlerinin dizilerini işler, ancak bir arşiv ikili nesne verilerini verimli ve gereksiz bir biçimde işler.
 
-Bir`CArchive` nesne oluşturabilmeniz için önce bir [CFile](../../mfc/reference/cfile-class.md) nesnesi oluşturmanız gerekir. Ayrıca, arşivin yük/mağaza durumunun dosyanın açık moduyla uyumlu olduğundan emin olmanız gerekir. Dosya başına bir etkin arşiv ile sınırlı olursunuz.
+`CArchive` nesnesi oluşturabilmeniz için bir [CFile](../../mfc/reference/cfile-class.md) nesnesi oluşturmanız gerekir. Ayrıca, arşivin yük/mağaza durumunun dosyanın açık moduyla uyumlu olduğundan emin olmanız gerekir. Dosya başına bir etkin arşiv ile sınırlı olursunuz.
 
-Bir `CArchive` nesne oluşturduğunuzda, onu açık bir dosyayı temsil eden sınıfının `CFile` bir nesnesine (veya türetilmiş bir sınıfa) iliştirmiş olursunuz. Ayrıca, arşivin yükleme veya depolama için kullanılıp kullanılmayacağını da belirtirsiniz. Bir `CArchive` nesne yalnızca ilkel türler değil, aynı zamanda, serileştirme için tasarlanan [CObject](../../mfc/reference/cobject-class.md)'ten türetilmiş sınıfların nesnelerini de işleyebilir. Seri hale getirilebilir bir sınıf genellikle `Serialize` bir üye işleve sahiptir ve genellikle sınıfı `CObject`altında açıklandığı gibi [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) makrolarını kullanır.
+Bir `CArchive` nesnesi oluşturduğunuzda, bir açık dosyayı temsil eden bir sınıf `CFile` (veya türetilmiş bir sınıf) nesnesine iliştirmiş olursunuz. Ayrıca, arşivin yükleme veya depolama için kullanılıp kullanılmayacağını da belirtirsiniz. `CArchive` nesnesi yalnızca ilkel türler değil, aynı zamanda, serileştirme için tasarlanan [CObject](../../mfc/reference/cobject-class.md)'ten türetilmiş sınıfların nesnelerini de işleyebilir. Seri hale getirilebilir bir sınıf genellikle `Serialize` üye işlevine sahiptir ve genellikle sınıf `CObject`altında açıklandığı gibi [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) makrolarını kullanır.
 
-Aşırı yüklenmiş ayıklama ( **>>** ) ve ekleme ( **<<** ) işleçleri, hem basit türler `CObject`hem de türetilmiş sınıfları destekleyen kullanışlı arşiv programlama arayüzleridir.
+Aşırı yüklenmiş ayıklama ( **>>** ) ve ekleme ( **<<** ) işleçleri hem ilkel türleri hem de `CObject`türetilmiş sınıfları destekleyen uygun arşiv programlama arabirimleridir.
 
-`CArchive`MFC Windows Yuvaları sınıfları [CSocket](../../mfc/reference/csocket-class.md) ve [CSocketFile](../../mfc/reference/csocketfile-class.md)ile programlamayı da destekler. [IsBufferEmpty](#isbufferempty) üye işlevi bu kullanımı destekler.
+`CArchive` Ayrıca MFC Windows Yuvaları sınıfları [CSocket](../../mfc/reference/csocket-class.md) ve [CSocketFile](../../mfc/reference/csocketfile-class.md)ile programlamayı destekler. [IsBufferEmpty](#isbufferempty) üye işlevi bu kullanımı destekler.
 
-Hakkında `CArchive`daha fazla bilgi için bkz. [serileştirme](../../mfc/serialization-in-mfc.md) ve [Windows Yuvaları makaleleri: Arşivler](../../mfc/windows-sockets-using-sockets-with-archives.md)ile yuvaları kullanma.
+`CArchive`hakkında daha fazla bilgi için bkz. [serileştirme](../../mfc/serialization-in-mfc.md) ve [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -152,11 +152,11 @@ void Abort ();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok edicisi normalde, ilişkili `CFile` nesnesine kaydedilmemiş tüm verileri temizedecek şekilde çağırır `Close`. `CArchive` Bu durum özel durumlara neden olabilir.
+`CArchive` yıkıcısı normalde, ilişkili `CFile` nesnesine kaydedilmemiş tüm verileri temizlendirilebilen `Close`çağırır. Bu durum özel durumlara neden olabilir.
 
-Bu özel durumları yakalandığınızda, daha iyi özel durumlara neden olmayacak `Abort`şekilde `CArchive` , kullanmak iyi bir fikirdir. Özel durumları `CArchive::Abort` işlerken hatalara yönelik bir özel durum oluşturmaz, çünkü [CArchive:: Close](#close), `Abort` hatalardan yokar.
+Bu özel durumları yakalandığınızda, `Abort`kullanmak iyi bir fikirdir. böylece, `CArchive` nesnesinin yeniden kullanılabilmesi daha fazla özel duruma neden olmaz. `CArchive::Abort`, özel durumları işlerken hatalara yönelik bir özel durum oluşturmaz, çünkü [CArchive:: Close](#close), `Abort` hatalara göz ardı eder.
 
-`CArchive` Nesneyi yığında ayırmak için **Yeni** ' yi kullandıysanız dosyayı kapattıktan sonra silmeniz gerekir.
+`CArchive` nesnesini yığında ayırmak için **Yeni** kullandıysanız, dosyayı kapattıktan sonra silmeniz gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -164,7 +164,7 @@ Bu özel durumları yakalandığınızda, daha iyi özel durumlara neden olmayac
 
 ##  <a name="carchive"></a>CArchive:: CArchive
 
-Bir `CArchive` nesne oluşturur ve nesneleri yüklemek ya da depolamak için kullanılıp kullanılmayacağını belirtir.
+`CArchive` nesnesi oluşturur ve nesneleri yüklemek veya depolamak için kullanılıp kullanılmayacağını belirtir.
 
 ```
 CArchive(
@@ -177,16 +177,16 @@ CArchive(
 ### <a name="parameters"></a>Parametreler
 
 *pFile*<br/>
-Kalıcı verilerin son kaynağı `CFile` veya hedefi olan nesneye yönelik bir işaretçi.
+Kalıcı verilerin son kaynağı veya hedefi olan `CFile` nesnesine yönelik bir işaretçi.
 
 *nMode*<br/>
 Nesnelerin arşive yüklenip yüklenmeyeceğini veya arşivden depolanmayacağını belirten bayrak. *NMode* parametresi aşağıdaki değerlerden birine sahip olmalıdır:
 
-- `CArchive::load`Arşivden veri yükler. Yalnızca `CFile` okuma izni gerektirir.
+- `CArchive::load` arşivden veri yükler. Yalnızca `CFile` okuma izni gerektirir.
 
-- `CArchive::store`Verileri arşive kaydeder. Yazma `CFile` izni gerektirir.
+- `CArchive::store` verileri arşive kaydeder. `CFile` yazma izni gerektirir.
 
-- `CArchive::bNoFlushOnDelete`Arşiv yıkıcısı çağrıldığında arşivin `Flush` otomatik olarak çağrılmasını önler. Bu bayrağı ayarlarsanız, yıkıcı çağrılmadan önce açıkça çağrılmadan `Close` sorumlu olursunuz. Aksi takdirde verileriniz bozulur.
+- `CArchive::bNoFlushOnDelete` Arşivi, arşiv yıkıcısı çağrıldığında otomatik olarak `Flush` çağırmasını önler. Bu bayrağı ayarlarsanız, yıkıcı çağrılmadan önce `Close` açıkça çağırmaktan siz sorumlusunuz. Aksi takdirde verileriniz bozulur.
 
 *nBufSize*<br/>
 İç dosya arabelleğinin boyutunu bayt cinsinden belirten bir tamsayı. Varsayılan arabellek boyutunun 4.096 bayt olduğunu unutmayın. Büyük nesneleri düzenli olarak arşivliyorsanız, dosya arabelleği boyutunun katı olan daha büyük bir arabellek boyutu kullanırsanız performansı artırabilirsiniz.
@@ -198,7 +198,7 @@ Kullanıcı tarafından sağlanan, *nBufSize*boyutundaki arabelleğe yönelik is
 
 Arşivi oluşturduktan sonra bu belirtimi değiştiremezsiniz.
 
-Arşivi kapatana kadar `CFile` , dosya durumunu değiştirmek için işlemleri kullanamazsınız. Bu tür bir işlem, arşivin bütünlüğüyle zarar verir. Dosya işaretçisinin konumuna serileştirme sırasında istediğiniz zaman, [GetFile](#getfile) üye işlevinden arşiv dosya nesnesini edinerek ve sonra [CFile:: GetPosition](../../mfc/reference/cfile-class.md#getposition) işlevini kullanarak erişebilirsiniz. Dosya işaretçisinin konumunu almadan önce [CArchive:: Flush](#flush) çağırmalısınız.
+Arşivi kapatana kadar, dosyanın durumunu değiştirmek için `CFile` işlemleri kullanamazsınız. Bu tür bir işlem, arşivin bütünlüğüyle zarar verir. Dosya işaretçisinin konumuna serileştirme sırasında istediğiniz zaman, [GetFile](#getfile) üye işlevinden arşiv dosya nesnesini edinerek ve sonra [CFile:: GetPosition](../../mfc/reference/cfile-class.md#getposition) işlevini kullanarak erişebilirsiniz. Dosya işaretçisinin konumunu almadan önce [CArchive:: Flush](#flush) çağırmalısınız.
 
 ### <a name="example"></a>Örnek
 
@@ -216,7 +216,7 @@ void Close();
 
 Arşivde başka bir işleme izin verilmiyor. Bir arşivi kapattıktan sonra, aynı dosya için başka bir arşiv oluşturabilir veya dosyayı kapatabilirsiniz.
 
-Üye işlevi `Close` , tüm verilerin arşivden dosyaya aktarılmasını sağlar ve arşivi kullanılamaz hale getirir. Dosyadan depolama ortamına aktarımı gerçekleştirmek için önce [CFile:: Close](../../mfc/reference/cfile-class.md#close) kullanmanız ve sonra `CFile` nesneyi yok etmeniz gerekir.
+Üye işlevi `Close` tüm verilerin arşivden dosyaya aktarılmasını sağlar ve arşivi kullanılamaz hale getirir. Dosyadan depolama ortamına aktarımı gerçekleştirmek için önce [CFile:: Close](../../mfc/reference/cfile-class.md#close) kullanmanız ve sonra `CFile` nesnesini yok etmeniz gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -232,7 +232,7 @@ void Flush();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `Flush` , tüm verilerin arşivden dosyaya aktarılmasını sağlar. Dosyadan depolama ortamına aktarımı tamamladıktan sonra [CFile:: Close](../../mfc/reference/cfile-class.md#close) çağrısı yapmanız gerekir.
+Üye işlevi `Flush` tüm verilerin arşivden dosyaya aktarılmasını sağlar. Dosyadan depolama ortamına aktarımı tamamladıktan sonra [CFile:: Close](../../mfc/reference/cfile-class.md#close) çağrısı yapmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -240,7 +240,7 @@ void Flush();
 
 ##  <a name="getfile"></a>CArchive:: GetFile
 
-Bu arşiv için nesne işaretçisini alır. `CFile`
+Bu arşiv için `CFile` nesne işaretçisini alır.
 
 ```
 CFile* GetFile() const;
@@ -248,11 +248,11 @@ CFile* GetFile() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanılan `CFile` nesneye yönelik sabit bir işaretçi.
+Kullanılan `CFile` nesnesine yönelik sabit bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-' İ kullanmadan önce `GetFile`Arşivi temizlemeniz gerekir.
+`GetFile`kullanmadan önce Arşivi temizlemeniz gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -260,7 +260,7 @@ Kullanılan `CFile` nesneye yönelik sabit bir işaretçi.
 
 ##  <a name="getobjectschema"></a>CArchive:: GetObjectSchema
 
-Şu anda Serisi kaldırılan nesnenin `Serialize` sürümünü öğrenmek için bu işlevi işlevinden çağırın.
+Şu anda Serisi kaldırılan nesnenin sürümünü öğrenmek için `Serialize` işlevinden bu işlevi çağırın.
 
 ```
 UINT GetObjectSchema();
@@ -272,9 +272,9 @@ Seri durumdan çıkarma sırasında, okunan nesnenin sürümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi çağırmak yalnızca `CArchive` nesne yüklenirken geçerlidir ( [CArchive:: ısyükleme](#isloading) sıfır dışında). Bu, `Serialize` işlevdeki ilk çağrı olmalıdır ve yalnızca bir kez çağırılır. (UINT)-1 dönüş değeri, sürüm numarasının bilinmediğini gösterir.
+Bu işlevi çağırmak yalnızca `CArchive` nesnesi yüklenirken geçerlidir ( [CArchive:: ısyükleme](#isloading) sıfır dışında bir değer döndürür). `Serialize` işlevindeki ilk çağrı olmalıdır ve yalnızca bir kez çağırılır. (UINT)-1 dönüş değeri, sürüm numarasının bilinmediğini gösterir.
 
-Türetilmiş `CObject`bir sınıf , şema sürümü kendisiyle (IMPLEMENT_SERIAL makrosunda) VERSIONABLE_SCHEMA birleştirilmiş (bit düzeyinde OR kullanarak) kullanarak bir "sürümlenebilir nesne" veya üyeişlevitarafındanokunabilenbirnesneoluşturma`Serialize` birden çok sürüm. Varsayılan çerçeve işlevselliği (VERSIONABLE_SCHEMA olmadan), sürüm eşleşmeksizin bir özel durum oluşturmak için kullanılır.
+`CObject`türetilmiş bir sınıf, şema sürümü kendisi (IMPLEMENT_SERIAL makrosunda) ile birlikte VERSIONABLE_SCHEMA birleştirilmiş (bit düzeyinde **or veya**) kullanarak bir "sürümlenebilir nesne" veya birden çok sürümü okuyabilen bir `Serialize` nesnedir. Varsayılan çerçeve işlevselliği (VERSIONABLE_SCHEMA olmadan), sürüm uyumsuz olduğunda bir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -294,11 +294,11 @@ Arşiv arabelleği boşsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC Windows Yuvaları sınıfı `CSocketFile`ile programlamayı desteklemek için sağlanır. Bir `CFile` nesneyle ilişkili bir arşiv için kullanmanız gerekmez.
+Bu işlev, MFC Windows Yuvaları sınıfı `CSocketFile`programlamayı desteklemek için sağlanır. `CFile` nesnesiyle ilişkili bir arşiv için bunu kullanmanız gerekmez.
 
-`IsBufferEmpty` Bir`CSocketFile` nesneyle ilişkili bir arşiv ile kullanılması nedeni, arşiv arabelleğinin birden fazla ileti veya kayıt içerebileceğinden kaynaklanabilir. Bir ileti aldıktan sonra, arabellek boş olana `IsBufferEmpty` kadar veri almaya devam eden bir döngüyü denetlemek için öğesini kullanmanız gerekir. Daha fazla bilgi için bkz. [](../../mfc/reference/casyncsocket-class.md#receive) sınıfının `CAsyncSocket`alma üye işlevi, öğesinin nasıl kullanılacağını `IsBufferEmpty`gösterir.
+`CSocketFile` nesnesiyle ilişkili bir arşiv ile `IsBufferEmpty` kullanmanın nedeni, arşiv arabelleğinin birden fazla ileti veya kayıt içerebileceğinden kaynaklanabilir. Bir ileti aldıktan sonra, arabellek boş olana kadar veri almaya devam eden bir döngüyü denetlemek için `IsBufferEmpty` kullanmanız gerekir. Daha fazla bilgi için, `IsBufferEmpty`nasıl kullanılacağını gösteren `CAsyncSocket`sınıfının [alma](../../mfc/reference/casyncsocket-class.md#receive) üye işlevini inceleyin.
 
-Daha fazla bilgi için bkz [. Windows Yuvaları: Arşivler](../../mfc/windows-sockets-using-sockets-with-archives.md)ile yuvaları kullanma.
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
 ##  <a name="isloading"></a>CArchive:: ısyükleniyor
 
@@ -336,7 +336,7 @@ Arşiv Şu anda depolamada kullanılıyorsa sıfır dışı; Aksi takdirde 0.
 
 Bu üye işlevi, arşivlenmiş sınıfların `Serialize` işlevleri tarafından çağırılır.
 
-Bir arşivin `IsLoading`durumusıfır değilse, durumu 0 olur ve tam tersi de geçerlidir. `IsStoring`
+Bir arşivin `IsStoring` durumu sıfır değilse, `IsLoading` durumu 0 olur ve tam tersi de geçerlidir.
 
 ### <a name="example"></a>Örnek
 
@@ -357,9 +357,9 @@ Depolanmakta olan nesneye yönelik sabit bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, bir belgeyi serileştirmeyebilirsiniz, ancak belgenin bir parçası olan öğeleri seri hale getirme. Çağırarak `MapObject`, bu öğelerin veya alt nesnelerin belgeye başvurması için izin verin. Ayrıca, serileştirilmiş alt öğeler *m_pDocument* geri işaretçisini seri hale getirilebilir.
+Örneğin, bir belgeyi serileştirmeyebilirsiniz, ancak belgenin bir parçası olan öğeleri seri hale getirme. `MapObject`çağırarak, bu öğelerin veya alt nesnelerin belgeye başvurması için izin verin. Ayrıca, serileştirilmiş alt öğeler *m_pDocument* arka işaretçisini seri hale getirilebilir.
 
-`CArchive` Nesnesine nezamandepolanacağınıvenesnesindenyüklemeyapabilirsiniz`MapObject` . `MapObject`belirtilen nesneyi serileştirme ve seri durumundan çıkarma sırasında `CArchive` nesne tarafından tutulan iç veri yapılarına ekler, ancak [ReadObject](#readobject) ve [WriteObject](#writeobject)'in aksine, nesne üzerinde serileştirme çağırmaz.
+`CArchive` nesnesinden ' a depolama ve yükleme yaparken `MapObject` çağırabilirsiniz. `MapObject`, belirtilen nesneyi serileştirme ve seri durumundan çıkarma sırasında `CArchive` nesne tarafından tutulan iç veri yapılarına ekler, ancak [ReadObject](#readobject) ve [WriteObject](#writeobject)'in aksine, nesne üzerinde serileştirme çağırmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -373,7 +373,7 @@ Depolanmakta olan nesneye yönelik sabit bir işaretçi.
 
 ##  <a name="m_pdocument"></a>CArchive:: m_pDocument
 
-Varsayılan olarak null olarak ayarlanır; Bu işaretçi `CDocument` , `CArchive` örnek kullanıcısının istediği her şeye ayarlanabilir.
+Varsayılan olarak NULL olarak ayarlanır; bu `CDocument` işaretçisi, `CArchive` örneğinin kullanıcısına istediği her şeye ayarlanabilir.
 
 ```
 CDocument* m_pDocument;
@@ -381,15 +381,15 @@ CDocument* m_pDocument;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işaretçinin ortak kullanımı, serileştirme işlemiyle ilgili ek bilgileri serileştirmekte olan tüm nesnelere iletmenin bir işlemdir. Bu, işaretçi, seri hale getirilen belgeyle (bir `CDocument`türetilmiş sınıf), gerekirse belge içindeki nesnelerin belgeye erişebileceği bir şekilde başlatılarak elde edilir. Bu işaretçi, serileştirme sırasında nesneler `COleClientItem` tarafından da kullanılır.
+Bu işaretçinin ortak kullanımı, serileştirme işlemiyle ilgili ek bilgileri serileştirmekte olan tüm nesnelere iletmenin bir işlemdir. Bu, bir belge (`CDocument`türetilmiş bir sınıf), seri hale getirilmekte olan belgeyle (örneğin, belge içindeki nesneler), gerektiğinde belgeye erişebileceği şekilde başlatılarak elde edilir. Bu işaretçi serileştirme sırasında `COleClientItem` nesneleri tarafından da kullanılır.
 
-Çerçeve, bir Kullanıcı bir dosya aç veya Kaydet komutu sorunlarsa serileştirilen belgeyi *m_pDocument* olarak ayarlar. Dosya açma veya kaydetme dışındaki nedenlerle bir nesne bağlama ve Katıştırma (OLE) kapsayıcısı belgesi seri hale getirmek istiyorsanız, *m_pDocument*açıkça ayarlamanız gerekir. Örneğin, panoya bir kapsayıcı belgesi serileştirilirken bunu yapabilirsiniz.
+Çerçeve, bir Kullanıcı bir dosya aç veya Kaydet komutu sorunlarsa serileştirilen belgeye *m_pDocument* ayarlar. Dosya açma veya kaydetme dışındaki nedenlerle bir nesne bağlama ve Katıştırma (OLE) kapsayıcısı belgesi serileştirmesi yaparsanız, açıkça *m_pDocument*ayarlamanız gerekir. Örneğin, panoya bir kapsayıcı belgesi serileştirilirken bunu yapabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCSerialization#35](../../mfc/codesnippet/cpp/carchive-class_11.cpp)]
 
-##  <a name="operator_lt_lt"></a>CArchive:: işleci&lt;&lt;
+##  <a name="operator_lt_lt"></a>CArchive:: operator &lt;&lt;
 
 Belirtilen nesneyi veya basit türü arşive depolar.
 
@@ -437,29 +437,29 @@ CArchive& operator<<(LONGLONG dwdw);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek `CArchive` bir satırda birden çok ekleme işleci sağlayan bir başvuru.
+Tek bir satırda birden çok ekleme işleci sağlayan bir `CArchive` başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Yukarıdaki son iki sürüm, özellikle 64 bitlik tamsayılar depolamak içindir.
 
-Sınıf uygulamanızda IMPLEMENT_SERIAL makrosunu kullandıysanız, korumalı `CObject` `WriteObject`çağrılar için ekleme işleci aşırı yüklenmiştir. Bu işlev, sırasıyla sınıfının `Serialize` işlevini çağırır.
+Sınıf uygulamanızda IMPLEMENT_SERIAL makrosunu kullandıysanız, `CObject` için ekleme işleci, korunan `WriteObject`çağırır. Bu işlev sırasıyla sınıfının `Serialize` işlevini çağırır.
 
 [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) ekleme işleci (< <), tanılama dökümünü ve bir arşive depolamayı destekler.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, **int** ve **Long** türleriyle `CArchive` birlikte < < ekleme işlecinin kullanımını gösterir.
+Bu örnek, **int** ve **long** türleriyle < < `CArchive` ekleme işlecinin kullanımını gösterir.
 
 [!code-cpp[NVC_MFCSerialization#31](../../mfc/codesnippet/cpp/carchive-class_12.cpp)]
 
 ### <a name="example"></a>Örnek
 
-Bu örnek 2, < < `CArchive` `CStringT` ekleme işlecinin kullanımını gösterir.
+Bu örnek 2 `CStringT` türü ile < < `CArchive` ekleme işlecinin kullanımını gösterir.
 
 [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]
 
-##  <a name="operator_gt_gt"></a>CArchive:: işleci&gt;&gt;
+##  <a name="operator_gt_gt"></a>CArchive:: operator &gt;&gt;
 
 Arşivden belirtilen nesneyi veya basit türü yükler.
 
@@ -517,25 +517,25 @@ CArchive& operator>>(LONGLONG& dwdw);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek `CArchive` bir satırda birden çok ayıklama işleci sağlayan bir başvuru.
+Tek bir satırda birden çok ayıklama işleci sağlayan bir `CArchive` başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Yukarıdaki son iki sürüm, özellikle 64 bitlik tamsayılar yüklemek içindir.
 
-Sınıf uygulamanızda IMPLEMENT_SERIAL makrosunu kullandıysanız, korumalı `CObject` `ReadObject` işlevi çağırmak için ayıklama işleçleri aşırı yüklenmiştir (sıfır dışında çalışma zamanı sınıf işaretçisi ile). Bu işlev, sırasıyla sınıfının `Serialize` işlevini çağırır.
+Sınıf uygulamanızda IMPLEMENT_SERIAL makrosunu kullandıysanız, `CObject` korumalı `ReadObject` işlevini çağırmak için ayıklama işleçleri aşırı yüklenmiştir (sıfır olmayan çalışma zamanı sınıf işaretçisi ile). Bu işlev sırasıyla sınıfının `Serialize` işlevini çağırır.
 
 [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) ayıklama işleci (> >) bir arşivden yüklemeyi destekler.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, **int** türüyle > > `CArchive` ayıklama işlecinin kullanımını gösterir.
+Bu örnek, **int** türü ile > > `CArchive` ayıklama işlecinin kullanımını gösterir.
 
 [!code-cpp[NVC_MFCSerialization#33](../../mfc/codesnippet/cpp/carchive-class_14.cpp)]
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, < `CArchive` \< ve > > ekleme ve ayıklama işleçleri kullanımını gösterir. `CStringT`
+Bu örnek, > türü ile\< ve > `CStringT` < `CArchive` ekleme ve ayıklama işleçleri kullanımını gösterir.
 
 [!code-cpp[NVC_MFCSerialization#34](../../mfc/codesnippet/cpp/carchive-class_15.cpp)]
 
@@ -563,7 +563,7 @@ Gerçekten okunan bayt sayısını içeren işaretsiz bir tamsayı. Dönüş de�
 
 Arşiv, baytları yorumlamaz.
 
-Nesnelerinizin içinde bulunan `Read` sıradan yapıları okumak için `Serialize` işlevinizdeki üye işlevini kullanabilirsiniz.
+Nesnelerinizin içindeki sıradan yapıları okumak için `Serialize` işlevinizdeki `Read` üye işlevini kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -597,13 +597,13 @@ Bir nesnenin benzersiz etiketine başvuran bir sayı. [ReadObject](#readobject)'
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PClassRefRequested* null değilse, `ReadClass` arşivlenen sınıf bilgilerinin çalışma zamanı sınıfınız ile uyumlu olduğunu doğrular. Uyumlu değilse, `ReadClass` bir [CArchiveException](../../mfc/reference/carchiveexception-class.md)oluşturur.
+*PClassRefRequested* null değilse, `ReadClass` arşivlenen sınıf bilgilerinin çalışma zamanı sınıfınız ile uyumlu olduğunu doğrular. Uyumlu değilse `ReadClass` bir [CArchiveException](../../mfc/reference/carchiveexception-class.md)oluşturur.
 
-Çalışma zamanı sınıfınızın [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)kullanması gerekir. Aksi takdirde `ReadClass` , bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturur.
+Çalışma zamanı sınıfınız [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)kullanmalıdır; Aksi takdirde `ReadClass` bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturur.
 
-*PSchema* null ise, saklı sınıfın şeması [CArchive:: GetObjectSchema](#getobjectschema); çağırarak alınabilir. Aksi halde <strong>\*</strong>, *pSchema* daha önce depolanan çalışma zamanı sınıfının şemasını içerecektir.
+*PSchema* null ise, saklı sınıfın şeması [CArchive:: GetObjectSchema](#getobjectschema); çağırarak alınabilir. Aksi halde, <strong>\*</strong> *pSchema* daha önce depolanan çalışma zamanı sınıfının şemasını içerecektir.
 
-Sınıf başvurusunun hem okuma hem de yazmayı işleyen yerine `ReadClass` [SerializeClass](#serializeclass) öğesini kullanabilirsiniz.
+Sınıf başvurusunu hem okumayı hem yazmayı işleyen `ReadClass`yerine [SerializeClass](#serializeclass) kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -628,9 +628,9 @@ Okunması beklenen nesneye karşılık gelen [CRuntimeClass](../../mfc/reference
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bir [CObject](../../mfc/reference/cobject-class.md) işaretçisi için `CArchive` normalde ayıklama **>>** () işleci tarafından çağrılır. `ReadObject`, sırasıyla arşivlenen sınıfın `Serialize` işlevini çağırır.
+Bu işlev normalde `CArchive` ayıklama ( **>>** ) işleci tarafından bir [CObject](../../mfc/reference/cobject-class.md) işaretçisi için aşırı yüklenmiş olarak çağrılır. `ReadObject`, sırasıyla arşivlenmiş sınıfın `Serialize` işlevini çağırır.
 
-[RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#runtime_class) makrosu tarafından elde edilen sıfır olmayan bir *pClass* parametresi sağlarsanız, işlev arşivlenmiş nesnenin çalışma zamanı sınıfını doğrular. Bu, sınıfının uygulamasında IMPLEMENT_SERIAL makrosunu kullanmış olduğunuzu varsayar.
+[RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#runtime_class) makro tarafından elde edilen sıfır olmayan bir *pClass* parametresi sağlarsanız, işlev arşivlenmiş nesnenin çalışma zamanı sınıfını doğrular. Bu, sınıfının uygulamasında IMPLEMENT_SERIAL makrosunu kullanmış olduğunuzu varsayar.
 
 ### <a name="example"></a>Örnek
 
@@ -638,7 +638,7 @@ Bu işlev, bir [CObject](../../mfc/reference/cobject-class.md) işaretçisi içi
 
 ##  <a name="readstring"></a>CArchive:: ReadString
 
-`CArchive` Nesne ile ilişkili dosyadaki bir arabelleğe metin verisi okumak için bu üye işlevi çağırın.
+`CArchive` nesnesiyle ilişkili dosyadaki bir arabelleğe metin verileri okumak için bu üye işlevi çağırın.
 
 ```
 BOOL ReadString(CString& rString);
@@ -660,7 +660,7 @@ Okunacak en fazla karakter sayısını belirtir. , *Lpsz* arabelleğinin boyutun
 
 BOOL döndüren sürümde, başarılı olursa doğru; Aksi takdirde FALSE.
 
-Döndüren `LPTSTR`sürümünde, metin verisini içeren arabelleğin bir işaretçisi; Dosya sonu ulaşılırsa NULL.
+`LPTSTR`döndüren sürümde, metin verisini içeren arabelleğin bir işaretçisi; Dosya sonu ulaşılırsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -687,13 +687,13 @@ Temel sınıf için çalışma zamanı sınıfı nesnesine yönelik bir işaret�
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SerializeClass`bir sınıfa `CArchive` başvuruyu okur veya yönüne `CArchive`bağlı olarak nesnesine yazar. Temel `SerializeClass` sınıf nesneleri seri hale getirmek için uygun bir yol olarak [ReadClass](#readclass) ve [WriteClass](#writeclass) yerine kullanın; `SerializeClass` daha az kod ve daha az parametre gerektirir.
+`SerializeClass`, `CArchive`yönlerine bağlı olarak `CArchive` nesnesine bir sınıfa olan başvuruyu okur veya yazar. Temel sınıf nesneleri seri hale getirmek için uygun bir yol olarak [ReadClass](#readclass) ve [writeclass](#writeclass) yerine `SerializeClass` kullanın; `SerializeClass` daha az kod ve daha az parametre gerektirir.
 
-Benzer `ReadClass`şekilde `SerializeClass` , arşivlenmiş sınıf bilgilerinin çalışma zamanı sınıfınız ile uyumlu olduğunu doğrular. Uyumlu değilse, `SerializeClass` bir [CArchiveException](../../mfc/reference/carchiveexception-class.md)oluşturur.
+`ReadClass`gibi `SerializeClass`, arşivlenmiş sınıf bilgilerinin çalışma zamanı sınıfınız ile uyumlu olduğunu doğrular. Uyumlu değilse `SerializeClass` bir [CArchiveException](../../mfc/reference/carchiveexception-class.md)oluşturur.
 
-Çalışma zamanı sınıfınızın [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)kullanması gerekir. Aksi takdirde `SerializeClass` , bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturur.
+Çalışma zamanı sınıfınız [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)kullanmalıdır; Aksi takdirde `SerializeClass` bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturur.
 
-*PRuntimeClass* parametresinin değerini almak için [RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#runtime_class) makrosunu kullanın. Temel sınıf, [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) makrosunu kullanmış olmalıdır.
+*PRuntimeClass* parametresinin değerini almak için [RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#runtime_class) makrosunu kullanın. Temel sınıfın [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) makrosunu kullanmış olması gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -701,7 +701,7 @@ Benzer `ReadClass`şekilde `SerializeClass` , arşivlenmiş sınıf bilgilerinin
 
 ##  <a name="setloadparams"></a>CArchive:: SetLoadParams
 
-Bir `SetLoadParams` arşivden çok `CObject`sayıda türetilmiş nesneyi okuyacaksanız çağırın.
+Bir arşivden çok sayıda `CObject`türetilmiş nesne okuduğunuzda `SetLoadParams` çağırın.
 
 ```
 void SetLoadParams(UINT nGrowBy = 1024);
@@ -714,9 +714,9 @@ Boyut artışı gerekliyse ayrılacak en az öğe yuvası sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CArchive`Arşivde depolanan nesnelere başvuruları çözümlemek için bir Load dizisi kullanır. `SetLoadParams`Yükleme dizisinin büyüdüğü boyutu ayarlamanıza olanak sağlar.
+`CArchive`, arşivde depolanan nesnelere başvuruları çözümlemek için bir yük dizisi kullanır. `SetLoadParams`, yükleme dizisinin büyüdüğü boyutu ayarlamanıza olanak sağlar.
 
-Herhangi bir nesne yüklendikten `SetLoadParams` sonra veya [MapObject](#mapobject) veya [ReadObject](#readobject) çağrıldıktan sonra çağrı yapmanız gerekir.
+Herhangi bir nesne yüklendikten sonra veya [MapObject](#mapobject) veya [readobject](#readobject) çağrıldıktan sonra `SetLoadParams` çağrısı yapmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -739,7 +739,7 @@ Nesnenin şemasını belirtir.
 
 [GetObjectSchema](#getobjectschema) 'ya yapılan sonraki çağrı *nSchema*'da depolanan değeri döndürür.
 
-Gelişmiş `SetObjectSchema` sürüm oluşturma için kullanın; örneğin, belirli bir sürümü türetilmiş bir sınıfın `Serialize` işlevinde okumaya zorlamak istediğinizde.
+Gelişmiş sürüm oluşturma için `SetObjectSchema` kullanın; Örneğin, belirli bir sürümü türetilmiş bir sınıfın `Serialize` işlevinde okumaya zorlamak istediğinizde.
 
 ### <a name="example"></a>Örnek
 
@@ -747,7 +747,7 @@ Gelişmiş `SetObjectSchema` sürüm oluşturma için kullanın; örneğin, beli
 
 ##  <a name="setstoreparams"></a>CArchive:: SetStoreParams
 
-Bir `SetStoreParams` arşivde çok `CObject`sayıda türetilmiş nesne depolarken kullanın.
+Bir arşivde çok sayıda `CObject`türetilmiş nesne depolarken `SetStoreParams` kullanın.
 
 ```
 void SetStoreParams(UINT nHashSize = 2053, UINT nBlockSize = 128);
@@ -763,9 +763,9 @@ Parametreleri genişletmek için bellek ayırma ayrıntı düzeyini belirtir. En
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetStoreParams`serileştirme işlemi sırasında benzersiz nesneleri tanımlamak için kullanılan haritanın karma tablo boyutunu ve blok boyutunu ayarlamanıza olanak sağlar.
+`SetStoreParams`, serileştirme işlemi sırasında benzersiz nesneleri tanımlamak için kullanılan haritanın karma tablo boyutunu ve blok boyutunu ayarlamanıza olanak sağlar.
 
-Herhangi bir nesne depolandıktan sonra veya `SetStoreParams` [MapObject](#mapobject) veya [WriteObject](#writeobject) çağrıldıktan sonra çağrı yapmanız gerekir.
+Herhangi bir nesne depolandıktan sonra veya [MapObject](#mapobject) veya [writeobject](#writeobject) çağrıldıktan sonra `SetStoreParams` çağırmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -791,7 +791,7 @@ Arşive yazılacak bayt sayısını belirten bir tamsayı.
 
 Arşiv, baytları biçimlendirmez.
 
-Nesnelerinizin içinde yer `Write` alan sıradan yapıları yazmak `Serialize` için işlevinizdeki üye işlevini kullanabilirsiniz.
+Nesnelerinizin içinde yer alan sıradan yapıları yazmak için `Serialize` işlevinizdeki `Write` üye işlevini kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -799,7 +799,7 @@ Nesnelerinizin içinde yer `Write` alan sıradan yapıları yazmak `Serialize` i
 
 ##  <a name="writeclass"></a>CArchive:: WriteClass
 
-Türetilmiş `WriteClass` sınıfın serileştirilmesi sırasında bir temel sınıfın sürümünü ve sınıf bilgilerini depolamak için kullanın.
+Türetilmiş sınıfın serileştirilmesi sırasında bir temel sınıfın sürümünü ve sınıf bilgilerini depolamak için `WriteClass` kullanın.
 
 ```
 void WriteClass(const CRuntimeClass* pClassRef);
@@ -812,13 +812,13 @@ void WriteClass(const CRuntimeClass* pClassRef);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`WriteClass`taban sınıfına `CArchive`ait [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) öğesine bir başvuru yazar. Başvuruyu almak için [CArchive:: ReadClass](#readclass) kullanın.
+`WriteClass` temel sınıf için [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) öğesine bir başvuru yazar `CArchive`. Başvuruyu almak için [CArchive:: ReadClass](#readclass) kullanın.
 
-`WriteClass`arşivlenmiş sınıf bilgilerinin çalışma zamanı sınıfınız ile uyumlu olduğunu doğrular. Uyumlu değilse, `WriteClass` bir [CArchiveException](../../mfc/reference/carchiveexception-class.md)oluşturur.
+`WriteClass`, arşivlenmiş sınıf bilgilerinin çalışma zamanı sınıfınız ile uyumlu olduğunu doğrular. Uyumlu değilse `WriteClass` bir [CArchiveException](../../mfc/reference/carchiveexception-class.md)oluşturur.
 
-Çalışma zamanı sınıfınızın [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)kullanması gerekir. Aksi takdirde `WriteClass` , bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturur.
+Çalışma zamanı sınıfınız [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)kullanmalıdır; Aksi takdirde `WriteClass` bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturur.
 
-Sınıf başvurusunun hem okuma hem de yazmayı işleyen yerine `WriteClass` [SerializeClass](#serializeclass) öğesini kullanabilirsiniz.
+Sınıf başvurusunu hem okumayı hem yazmayı işleyen `WriteClass`yerine [SerializeClass](#serializeclass) kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -826,7 +826,7 @@ Sınıf başvurusunun hem okuma hem de yazmayı işleyen yerine `WriteClass` [Se
 
 ##  <a name="writeobject"></a>CArchive:: WriteObject
 
-Belirtilen `CObject` arşivi depolar.
+Belirtilen `CObject` arşive depolar.
 
 ```
 void WriteObject(const CObject* pOb);
@@ -839,9 +839,9 @@ Depolanmakta olan nesneye yönelik sabit bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev normalde, için `CArchive` `CObject`ekleme ( **<<** ) işleci tarafından çağrılır. `WriteObject`, sırasıyla arşivlenen sınıfın `Serialize` işlevini çağırır.
+Bu işlev genellikle `CArchive` ekleme ( **<<** ) işleci tarafından `CObject`için aşırı yüklenmiş olarak çağrılır. `WriteObject`, sırasıyla arşivlenmiş sınıfın `Serialize` işlevini çağırır.
 
-Arşivlemeyi etkinleştirmek için IMPLEMENT_SERIAL makrosunu kullanmanız gerekir. `WriteObject`ASCII sınıf adını arşive yazar. Bu sınıf adı, yükleme işlemi sırasında daha sonra onaylanır. Özel bir kodlama şeması, sınıfının birden çok nesnesi için, sınıf adının gereksiz şekilde çoğaltılmasını önler. Bu düzen, birden fazla işaretçiden daha fazla hedef olan nesnelerin yedekli depolanmasını da engeller.
+Arşivlemeyi etkinleştirmek için IMPLEMENT_SERIAL makrosunu kullanmanız gerekir. `WriteObject`, ASCII sınıfı adını arşive yazar. Bu sınıf adı, yükleme işlemi sırasında daha sonra onaylanır. Özel bir kodlama şeması, sınıfının birden çok nesnesi için, sınıf adının gereksiz şekilde çoğaltılmasını önler. Bu düzen, birden fazla işaretçiden daha fazla hedef olan nesnelerin yedekli depolanmasını da engeller.
 
 Tam nesne kodlama yöntemi (ASCII sınıf adının varlığı dahil) bir uygulama ayrıntısıdır ve kitaplığın gelecekteki sürümlerinde değişebilir.
 
@@ -850,13 +850,13 @@ Tam nesne kodlama yöntemi (ASCII sınıf adının varlığı dahil) bir uygulam
 
 ### <a name="example"></a>Örnek
 
-Sınıfının `CAge`tanımı için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist)için örnek.
+`CAge`sınıfının bir tanımı için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist)için örnek.
 
 [!code-cpp[NVC_MFCSerialization#29](../../mfc/codesnippet/cpp/carchive-class_22.cpp)]
 
 ##  <a name="writestring"></a>CArchive:: WriteString
 
-Bir arabellekteki verileri `CArchive` nesneyle ilişkili dosyaya yazmak için bu üye işlevini kullanın.
+Bir arabellekteki verileri `CArchive` nesnesiyle ilişkili dosyaya yazmak için bu üye işlevini kullanın.
 
 ```
 void WriteString(LPCTSTR lpsz);
@@ -871,9 +871,9 @@ Null ile sonlandırılmış metin dizesi içeren bir arabelleğin işaretçisini
 
 Sonlandırıcı null karakteri (' \ 0 ') dosyaya yazılmadı; ya da otomatik olarak yazılmış bir yeni satır.
 
-`WriteString`disk tam koşulu da dahil olmak üzere çeşitli koşullara yanıt olarak bir özel durum oluşturur.
+`WriteString`, disk tam koşulu da dahil olmak üzere çeşitli koşullara yanıt olarak bir özel durum oluşturur.
 
-`Write`Ayrıca kullanılabilir, ancak null bir karakter üzerinde sonlandırılmaktansa, istenen bayt sayısını dosyaya yazar.
+`Write` da kullanılabilir, ancak null bir karakter üzerinde sonlandırmaktansa, istenen bayt sayısını dosyaya yazar.
 
 ### <a name="example"></a>Örnek
 
