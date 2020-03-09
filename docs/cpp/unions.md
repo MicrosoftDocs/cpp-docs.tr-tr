@@ -8,11 +8,11 @@ helpviewer_keywords:
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
 ms.openlocfilehash: 8a4ea3ae325eb5882c2f8b2524bbc156d12ffcc6
-ms.sourcegitcommit: bf724dfc639b16d5410fab72183f8e6b781338bc
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062051"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78875740"
 ---
 # <a name="unions"></a>Birleşimler
 
@@ -31,7 +31,7 @@ union [name]  { member-list };
 
 ### <a name="parameters"></a>Parametreler
 
-*name*<br/>
+*ada*<br/>
 Birleşime verilen tür adı.
 
 *üye listesi*<br/>
@@ -151,7 +151,7 @@ void Initialize()
 
 Tabii ki, önceki örnekte, ortak bir taban sınıftan türetilen sınıflar kullanılarak çözülebilmesine ve kodu kapsayıcıdaki her bir nesnenin çalışma zamanı türüne göre Dallandırmanın bir sorunu gösterilmektedir. Bu, bakımı ve anlaşılması daha kolay olan bir koda neden olabilir, ancak birleşimler kullanmaktan daha da yavaş olabilir. Ayrıca, bir birleşimle tamamen ilişkisiz türler saklayabilir ve birleşim değişkeninin türünü değiştirmeden depolanan değerin türünü dinamik olarak değiştirebilirsiniz. Bu nedenle, öğeleri farklı türlerdeki farklı değerleri depolayan MyUnionType öğesinin heterojen bir dizisini oluşturabilirsiniz.
 
-Yukarıdaki örnekteki `Input` yapının kolay bir şekilde kötüye kullanılması gerekebileceğini unutmayın. Verileri tutan üyeye erişmek için Ayrıştırıcıyı doğru bir şekilde kullanmak tamamen kullanıcıya tamamıyla yapılır. UNION Private yaparak ve sonraki örnekte gösterildiği gibi özel erişim işlevleri sunarak kötüye kullanılmasına karşı koruma sağlayabilirsiniz.
+Yukarıdaki örnekte `Input` yapısının kolayca kötüye kullanılabilir olabileceğini unutmayın. Verileri tutan üyeye erişmek için Ayrıştırıcıyı doğru bir şekilde kullanmak tamamen kullanıcıya tamamıyla yapılır. UNION Private yaparak ve sonraki örnekte gösterildiği gibi özel erişim işlevleri sunarak kötüye kullanılmasına karşı koruma sağlayabilirsiniz.
 
 ## <a name="unrestricted-unions-c11"></a>Kısıtlanmamış birleşimler (C++ 11)
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - IThreadProxy structure
 ms.assetid: feb89241-a555-4e61-ad48-40add54daeca
 ms.openlocfilehash: b87694393af4634ec97d05070aa5513cd132098a
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77140079"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854223"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 
@@ -32,7 +32,7 @@ struct IThreadProxy;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[IThreadProxy:: GetId](#getid)|İş parçacığı proxy 'si için benzersiz bir tanımlayıcı döndürür.|
 |[IThreadProxy:: geçiş](#switchout)|Bağlamı temeldeki sanal işlemci kökünden ilişkilendirir.|

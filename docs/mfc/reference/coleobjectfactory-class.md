@@ -37,11 +37,11 @@ helpviewer_keywords:
 - COleObjectFactory [MFC], VerifyUserLicense
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
 ms.openlocfilehash: 22805550d13ecb400b151495363e5eda2dfb3b76
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503738"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856982"
 ---
 # <a name="coleobjectfactory-class"></a>Colet ObjectFactory sınıfı
 
@@ -55,15 +55,15 @@ class COleObjectFactory : public CCmdTarget
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Colet ObjectFactory:: Copaobjectfactory](#coleobjectfactory)|Bir `COleObjectFactory` nesnesi oluşturur.|
+|[Colet ObjectFactory:: Copaobjectfactory](#coleobjectfactory)|`COleObjectFactory` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Colet ObjectFactory:: GetClassID](#getclassid)|Bu fabrika tarafından oluşturulan nesnelerin OLE sınıf KIMLIĞINI döndürür.|
 |[Colet ObjectFactory:: IsLicenseValid](#islicensevalid)|Denetimin lisansının geçerli olup olmadığını belirler.|
@@ -78,7 +78,7 @@ class COleObjectFactory : public CCmdTarget
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Colet ObjectFactory:: GetLicenseKey](#getlicensekey)|Denetimin DLL 'sinden benzersiz bir anahtar ister.|
 |[Colet ObjectFactory:: OnCreateObject](#oncreateobject)|Bu fabrika türünün yeni bir nesnesini oluşturmak için Framework tarafından çağırılır.|
@@ -87,7 +87,7 @@ class COleObjectFactory : public CCmdTarget
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleObjectFactory` Sınıfında aşağıdaki işlevleri gerçekleştirmek için üye işlevleri vardır:
+`COleObjectFactory` sınıfı aşağıdaki işlevleri gerçekleştirmek için üye işlevlere sahiptir:
 
 - Nesnelerin kaydını yönetme.
 
@@ -97,7 +97,7 @@ class COleObjectFactory : public CCmdTarget
 
 - Denetim nesnesi fabrikalarını OLE sistem kayıt defteriyle kaydetme.
 
-Nesne oluşturma hakkında daha fazla bilgi için bkz. Makaleler [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md) ve [veri nesneleri ve veri kaynakları: Oluşturma ve yok](../../mfc/data-objects-and-data-sources-creation-and-destruction.md)etme. Kayıt hakkında daha fazla bilgi için bkz. Makale [kaydı](../../mfc/registration.md).
+Nesne oluşturma hakkında daha fazla bilgi için, bkz. [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md) ve veri [nesneleri ve veri kaynakları: oluşturma ve yok etme](../../mfc/data-objects-and-data-sources-creation-and-destruction.md). Kayıt hakkında daha fazla bilgi için bkz. Makale [kaydı](../../mfc/registration.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -113,7 +113,7 @@ Nesne oluşturma hakkında daha fazla bilgi için bkz. Makaleler [veri nesneleri
 
 ##  <a name="coleobjectfactory"></a>Colet ObjectFactory:: Copaobjectfactory
 
-Bir `COleObjectFactory` nesne oluşturur, bunu, kaydı silinen nesne fabrikası olarak başlatır ve fabrika listesine ekler.
+`COleObjectFactory` nesnesi oluşturur, onu kayıtsız nesne fabrikası olarak başlatır ve fabrika listesine ekler.
 
 ```
 COleObjectFactory(
@@ -144,15 +144,15 @@ Uygulamanın tek bir örneğinin birden çok örneklemesini destekleyip destekle
 *nFlags*<br/>
 Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
-- `afxRegDefault`İş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegDefault` iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
-- `afxRegInsertable`OLE nesneleri için **nesne Ekle** iletişim kutusunda denetimin görünmesine izin verir.
+- `afxRegInsertable`, denetimin OLE nesneleri için **nesne Ekle** iletişim kutusunda görünmesine izin verir.
 
-- `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
-- `afxRegFreeThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
+- `afxRegFreeThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
 
-   İki bayrağı `afxRegApartmentThreading` birleştirebilir ve `afxRegFreeThreading` ThreadingModel = both olarak ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
+   `afxRegApartmentThreading` iki bayrağı birleştirebilir ve `afxRegFreeThreading`, ThreadingModel = her Ikisi de ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
 
 *lpszProgID*<br/>
 "Microsoft Excel" gibi bir Vere program tanımlayıcısı içeren bir dizeye yönelik işaretçi.
@@ -192,7 +192,7 @@ virtual BOOL GetLicenseKey(
 ### <a name="parameters"></a>Parametreler
 
 *Dwayrýlmýþ*<br/>
-Daha sonraki kullanımlar için ayrılmıştır.
+Gelecekte kullanılmak üzere ayrılmış.
 
 *pbstrKey*<br/>
 Lisans anahtarını depolayacak bir BSTR işaretçisine işaret eder.
@@ -334,9 +334,9 @@ Denetim sınıfının nesne fabrikasının kaydedilip edilmeyeceğini belirler.
 
 Bu işlevin iki formu için kısa tartışmalar şunları izler:
 
-- **UpdateRegistry (** `lpszProgID` **)** , bu nesne fabrikasını OLE sistem kayıt defteriyle kaydeder. Bu işlev genellikle, uygulama başlatıldığında [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) tarafından çağırılır.
+- **UpdateRegistry (** `lpszProgID` **)** Bu nesne fabrikasını OLE sistem kayıt defteriyle kaydeder. Bu işlev genellikle, uygulama başlatıldığında [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) tarafından çağırılır.
 
-- **UpdateRegistry (** `bRegister` **)** işlevin bu biçimi geçersiz kılınabilir. *BRegister* true ise, bu işlev denetim sınıfını sistem kayıt defteriyle kaydeder. Aksi takdirde, sınıfının kaydını siler.
+- **UpdateRegistry (** `bRegister` **)** İşlevin bu biçimi geçersiz kılınabilir. *BRegister* true ise, bu işlev denetim sınıfını sistem kayıt defteriyle kaydeder. Aksi takdirde, sınıfının kaydını siler.
 
    Projenizi oluşturmak için MFC ActiveX ControlWizard kullanırsanız, ControlWizard bu saf sanal işleve bir geçersiz kılma sağlar.
 
