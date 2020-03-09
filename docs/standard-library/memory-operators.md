@@ -11,17 +11,17 @@ f1_keywords:
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
 ms.openlocfilehash: 661f1bb4c0f5734d88dd23f73c69b362f59a76c2
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243825"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884085"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Nesneleri arasındaki eşitsizliği sınar.
+Nesneler arasında eşitsizlik için testler.
 
 ```cpp
 template <class Type, class Other>
@@ -42,27 +42,27 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir eşitsizlik için test edilecek nesne.
+*sol*\
+Eşitsizlik için test edilecek nesnelerden biri.
 
 *sağ*\
-Bir eşitsizlik için test edilecek nesne.
+Eşitsizlik için test edilecek nesnelerden biri.
 
 *Ty1*\
-Sol paylaşılan işaretçiyle kontrol edilen tür.
+Sol paylaşılan işaretçi tarafından denetlenen tür.
 
 *Ty2*\
-Doğru paylaşılan işaretçiyle kontrol edilen tür.
+Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler eşit; değilse, **false** nesneler eşit ise.
+Nesneler eşit değilse **true** ; nesneler eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlecini false döndürür. (Tüm varsayılan ayırıcılar eşit olur.)
+İlk şablon işleci false döndürür. (Varsayılan ayrıcılar eşittir.)
 
-İkinci ve üçüncü şablon işleçlerin dönüş `!(left == right)`.
+İkinci ve üçüncü şablon işleçleri `!(left == right)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -120,9 +120,9 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-Nesneleri arasındaki eşitliği sınar.
+Nesneler arasındaki eşitlik için testler.
 
 ```cpp
 template <class Type, class Other>
@@ -143,27 +143,27 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
+*sol*\
 Eşitlik için test edilecek nesnelerden biri.
 
 *sağ*\
 Eşitlik için test edilecek nesnelerden biri.
 
 *Ty1*\
-Sol paylaşılan işaretçiyle kontrol edilen tür.
+Sol paylaşılan işaretçi tarafından denetlenen tür.
 
 *Ty2*\
-Doğru paylaşılan işaretçiyle kontrol edilen tür.
+Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler eşitse **false** nesneler eşit değilse.
+nesneler eşitse **true** , nesneler eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlecini true değerini döndürür. (Tüm varsayılan ayırıcılar eşit olur.)
+İlk şablon işleci true döndürür. (Varsayılan ayrıcılar eşittir.)
 
-İkinci ve üçüncü şablon işleçlerin dönüş `left.get() ==  right.get()`.
+İkinci ve üçüncü şablon işleçleri `left.get() ==  right.get()`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -232,9 +232,9 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="op_gt_eq"></a> İşleci&gt;=
+## <a name="op_gt_eq"></a>işleç&gt;=
 
-Bir nesnesinin değerinden büyük veya eşittir ikinci bir nesnesinin sınar.
+Bir nesne için ikinci bir nesneden büyük veya ona eşit olan testler.
 
 ```cpp
 template <class T, class Del1, class U, class Del2>
@@ -250,25 +250,25 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir Karşılaştırılacak nesne.
+*sol*\
+Karşılaştırılacak nesnelerden biri.
 
 *sağ*\
-Bir Karşılaştırılacak nesne.
+Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
-Sol paylaşılan işaretçiyle kontrol edilen tür.
+Sol paylaşılan işaretçi tarafından denetlenen tür.
 
 *Ty2*\
-Doğru paylaşılan işaretçiyle kontrol edilen tür.
+Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleçlerin dönüş `left.get() >= right.get()`.
+Şablon işleçleri `left.get() >= right.get()`döndürür.
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işleç&lt;
 
-Bir nesnesinin değerinden küçük olmasını ikinci bir nesnesinin sınar.
+Bir nesne için ikinci bir nesneden daha az olan testler.
 
 ```cpp
 template <class T, class Del1, class U, class Del2>
@@ -284,21 +284,21 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir Karşılaştırılacak nesne.
+*sol*\
+Karşılaştırılacak nesnelerden biri.
 
 *sağ*\
-Bir Karşılaştırılacak nesne.
+Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
-Sol işaretçiyle kontrol edilen tür.
+Sol işaretçiye göre denetlenen tür.
 
 *Ty2*\
-Doğru işaretçiyle kontrol edilen tür.
+Sağ işaretçiye göre denetlenen tür.
 
-## <a name="op_lt_eq"></a> İşleci&lt;=
+## <a name="op_lt_eq"></a>işleç&lt;=
 
-Küçük veya buna eşit bir ikinci nesneye bir nesnesinin sınar.
+Bir nesne için ikinci bir nesneden daha az veya eşit olan testler.
 
 ```cpp
 template <class T, class Del1, class U, class Del2>
@@ -314,25 +314,25 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir Karşılaştırılacak nesne.
+*sol*\
+Karşılaştırılacak nesnelerden biri.
 
 *sağ*\
-Bir Karşılaştırılacak nesne.
+Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
-Sol paylaşılan işaretçiyle kontrol edilen tür.
+Sol paylaşılan işaretçi tarafından denetlenen tür.
 
 *Ty2*\
-Doğru paylaşılan işaretçiyle kontrol edilen tür.
+Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleçleri döndürür `left.get() <= right.get()`
+Şablon işleçleri `left.get() <= right.get()` döndürür
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işleç&gt;
 
-Bir nesnenin ikinci nesneden büyük olan sınar.
+Bir nesne için ikinci bir nesneden daha büyük olan testler.
 
 ```cpp
 template <class Ty1, class Del1, class Ty2, class Del2>
@@ -348,21 +348,21 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir Karşılaştırılacak nesne.
+*sol*\
+Karşılaştırılacak nesnelerden biri.
 
 *sağ*\
-Bir Karşılaştırılacak nesne.
+Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
-Sol paylaşılan işaretçiyle kontrol edilen tür.
+Sol paylaşılan işaretçi tarafından denetlenen tür.
 
 *Ty2*\
-Doğru paylaşılan işaretçiyle kontrol edilen tür.
+Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
-## <a name="op_lt_lt"></a> İşleci&lt;&lt;
+## <a name="op_lt_lt"></a>işleç&lt;&lt;
 
-Paylaşılan işaretçi akışa yazar.
+Paylaşılan işaretçiyi akışa yazar.
 
 ```cpp
 template <class Elem, class Tr, class Ty>
@@ -372,24 +372,24 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
-Akış öğesi türü.
+*Eled*\
+Stream öğesinin türü.
 
-*tr*\
-Türü akış öğesi özellikleri.
+*Tr*\
+Stream öğesi nitelikleri yazın.
 
 *Ty*\
-Paylaşılan işaretçiyle kontrol edilen tür.
+Paylaşılan işaretçi tarafından denetlenen tür.
 
-*Çıkış*\
+*out*\
 Çıkış akışı.
 
-*SP*\
+*sp*\
 Paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `out << sp.get()`.
+Şablon işlevi `out << sp.get()`döndürür.
 
 ### <a name="example"></a>Örnek
 
