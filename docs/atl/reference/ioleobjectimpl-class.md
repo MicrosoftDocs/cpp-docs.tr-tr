@@ -50,15 +50,15 @@ helpviewer_keywords:
 - IOleObjectImpl class
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
 ms.openlocfilehash: ded158b0ec862de5b0d0b23dd4b9edb50ad577ef
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495738"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78862947"
 ---
 # <a name="ioleobjectimpl-class"></a>IOleObjectImpl sınıfı
 
-Bu sınıf, `IUnknown` bir kapsayıcının bir denetimle iletişim kurduğu Principal arabirimini uygular ve kullanır.
+Bu sınıf `IUnknown` uygular ve bir kapsayıcının bir denetimle iletişim kurduğu asıl arabirimdir.
 
 > [!IMPORTANT]
 >  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
@@ -72,14 +72,14 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Sınıfınız, öğesinden `IOleObjectImpl`türetilir.
+*Şı*<br/>
+Sınıfınız `IOleObjectImpl`türetilir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[IOleObjectImpl:: Advise](#advise)|Denetimle bir danışmanlık bağlantısı kurar.|
 |[IOleObjectImpl:: Close](#close)|Denetim durumunu çalışır durumundan yüklendi olarak değiştirir.|
@@ -101,7 +101,7 @@ Sınıfınız, öğesinden `IOleObjectImpl`türetilir.
 |[IOleObjectImpl:: GetUserClassID](#getuserclassid)|Denetimin sınıf tanımlayıcısını alır.|
 |[IOleObjectImpl:: GetUserType](#getusertype)|Denetimin kullanıcı türü adını alır.|
 |[IOleObjectImpl:: InitFromData](#initfromdata)|Seçili verilerden denetimi başlatır. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleObjectImpl:: IsUpToDate](#isuptodate)|Denetimin güncel olup olmadığını denetler. ATL uygulamaları S_OK döndürür.|
+|[IOleObjectImpl:: IsUpToDate](#isuptodate)|Denetimin güncel olup olmadığını denetler. ATL uygulama S_OK döndürür.|
 |[IOleObjectImpl:: OnPostVerbDiscardUndo](#onpostverbdiscardundo)|Geri alma durumu atıldıktan sonra [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağırılır.|
 |[IOleObjectImpl:: OnPostVerbHide](#onpostverbhide)|Denetim gizlendikten sonra [DoVerbHide](#doverbhide) tarafından çağırılır.|
 |[IOleObjectImpl:: OnPostVerbInPlaceActivate](#onpostverbinplaceactivate)|Denetim etkin olduktan sonra [Doverbinplaceactivate](#doverbinplaceactivate) tarafından çağırılır.|
@@ -120,13 +120,13 @@ Sınıfınız, öğesinden `IOleObjectImpl`türetilir.
 |[IOleObjectImpl:: SetHostNames](#sethostnames)|Denetime kapsayıcı uygulamasının ve kapsayıcı belgenin adlarını bildirir.|
 |[IOleObjectImpl:: Setbilinen adı](#setmoniker)|Denetime adının ne olduğunu söyler. ATL uygulama E_NOTIMPL döndürür.|
 |[IOleObjectImpl:: Unadvise](#unadvise)|Denetim ile bir danışmanlık bağlantısını siler.|
-|[IOleObjectImpl:: Update](#update)|Denetimi güncelleştirir. ATL uygulamaları S_OK döndürür.|
+|[IOleObjectImpl:: Update](#update)|Denetimi güncelleştirir. ATL uygulama S_OK döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) arabirimi, bir kapsayıcının bir denetimle iletişim kurduğu asıl arabirimdir. Sınıfı `IOleObjectImpl` , bu arabirimin varsayılan bir uygulamasını sağlar ve hata `IUnknown` ayıklama yapılarında döküm cihazına bilgi göndererek uygular.
+[IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) arabirimi, bir kapsayıcının bir denetimle iletişim kurduğu asıl arabirimdir. Sınıf `IOleObjectImpl`, bu arabirimin varsayılan bir uygulamasını sağlar ve hata ayıklama yapılarında döküm cihazına bilgi göndererek `IUnknown` uygular.
 
-**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**Ilgili makaleler** [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -162,9 +162,9 @@ STDMETHOD(Close)(DWORD dwSaveOption);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimi devre dışı bırakır ve varsa Denetim penceresini yok eder. [CComControlBase:: m_bRequiresSave](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) denetim sınıfı VERI üyesi true Ise ve *dwSaveOption* PARAMETRESI OLECLOSE_SAVEIFDIRTY ya da OLECLOSE_PROMPTSAVE ise, denetim özellikleri kapatılmadan önce kaydedilir.
+Denetimi devre dışı bırakır ve varsa Denetim penceresini yok eder. Denetim sınıfı veri üyesi [CComControlBase:: M_BREQUIRESSAVE](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) true Ise ve *dwSaveOption* parametresi OLECLOSE_SAVEIFDIRTY veya OLECLOSE_PROMPTSAVE ise, denetim özellikleri kapatılmadan önce kaydedilir.
 
-[CComControlBase:: m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) ve [CComControlBase:: m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) adlı denetim sınıfı veri üyelerinde bulunan Işaretçiler ve [CComControlBase:: m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase:: m_ veri üyeleri bWndless](../../atl/reference/ccomcontrolbase-class.md#m_bwndless)ve [CComControlBase:: M_BINPLACESITEEX](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) , false olarak ayarlanmıştır.
+[CComControlBase:: m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) ve [ccomcontrolbase:: m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) denetim sınıfı veri üyelerinde tutulan Işaretçiler ve [ccomcontrolbase:: m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase:: m_bWndLess](../../atl/reference/ccomcontrolbase-class.md#m_bwndless)ve [CCOMCONTROLBASE:: m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) veri üyeleri false olarak ayarlanmıştır.
 
 Windows SDK için bkz. [IOleObject:: Close](/windows/win32/api/oleidl/nf-oleidl-ioleobject-close) .
 
@@ -184,7 +184,7 @@ STDMETHOD(DoVerb)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değerine `iVerb`bağlı olarak, ATL `DoVerb` yardımcı işlevlerinden biri aşağıdaki gibi çağrılır:
+`iVerb`değerine bağlı olarak, ATL `DoVerb` yardımcı işlevlerinden biri aşağıdaki gibi çağrılır:
 
 |*ıverb* Deeri|DoVerb yardımcı işlevi çağrıldı|
 |-------------------|-----------------------------------|
@@ -261,7 +261,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComControlBase:: InPlaceActivate öğesini](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate)çağırarak denetimi yerinde etkinleştirir. Denetim sınıfının veri üyesi `m_bWindowOnly` true değilse, önce denetimi penceresiz bir denetim olarak etkinleştirmeye çalışır (yalnızca kapsayıcı [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless)' `DoVerbInPlaceActivate` i destekliyorsa mümkündür). Bu başarısız olursa, işlev genişletilmiş özelliklerle denetimi etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex)' ı destekliyorsa mümkündür). Bu başarısız olursa, işlev, genişletilmiş özellikler olmadan denetimi etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)' ı destekliyorsa mümkündür). Etkinleştirme başarılı olursa, işlev kapsayıcıyı denetimin etkinleştirildiğini bildirir.
+[CComControlBase:: InPlaceActivate öğesini](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate)çağırarak denetimi yerinde etkinleştirir. Denetim sınıfının veri üyesi `m_bWindowOnly` TRUE değilse `DoVerbInPlaceActivate`, ilk olarak denetimi bir penceresiz denetim olarak etkinleştirmeye çalışır (yalnızca kapsayıcı [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless)' i destekliyorsa mümkündür). Bu başarısız olursa, işlev genişletilmiş özelliklerle denetimi etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex)' ı destekliyorsa mümkündür). Bu başarısız olursa, işlev, genişletilmiş özellikler olmadan denetimi etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)' ı destekliyorsa mümkündür). Etkinleştirme başarılı olursa, işlev kapsayıcıyı denetimin etkinleştirildiğini bildirir.
 
 ##  <a name="doverbopen"></a>IOleObjectImpl::D fazla baç
 
@@ -361,7 +361,7 @@ Windows SDK için bkz. [IOleObject:: Trmadmenlik](/windows/win32/api/oleidl/nf-o
 
 ##  <a name="enumverbs"></a>IOleObjectImpl:: EnumVerbs
 
-Çağırarak `OleRegEnumVerbs`bu denetim için kayıtlı eylemlerin (fiiller) bir listesini sağlar.
+`OleRegEnumVerbs`çağırarak bu denetim için kayıtlı eylemlerin (fiiller) bir listesini sağlar.
 
 ```
 STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
@@ -375,7 +375,7 @@ Windows SDK için bkz. [IOleObject:: EnumVerbs](/windows/win32/api/oleidl/nf-ole
 
 ##  <a name="getclientsite"></a>IOleObjectImpl:: GetClientSite
 
-İşaretçiyi [CComControlBase:: m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) denetim sınıfı veri üyesine *ppclientsite* içine koyar ve işaretçinin başvuru sayısını artırır.
+İşaretçiyi, *Ppclientsite* Içindeki [CComControlBase:: m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) denetim sınıfı veri üyesine koyar ve işaretçinin başvuru sayısını artırır.
 
 ```
 STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
@@ -415,13 +415,13 @@ STDMETHOD(GetExtent)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyut, [CComControlBase:: m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent)denetim sınıfı veri üyesinde depolanır.
+Boyut, [CComControlBase:: m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent)denetim sınıfı veri üyesinde saklanır.
 
 Windows SDK için bkz. [IOleObject:: GetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getextent) .
 
 ##  <a name="getmiscstatus"></a>IOleObjectImpl:: GetMiscStatus
 
-Çağırarak `OleRegGetMiscStatus`denetim için kayıtlı durum bilgilerine bir işaretçi döndürür.
+`OleRegGetMiscStatus`çağırarak Denetim için kayıtlı durum bilgilerine yönelik bir işaretçi döndürür.
 
 ```
 STDMETHOD(GetMiscStatus)(
@@ -468,7 +468,7 @@ Windows SDK ' de [IOleObject:: GetUserClassID](/windows/win32/api/oleidl/nf-olei
 
 ##  <a name="getusertype"></a>IOleObjectImpl:: GetUserType
 
-Çağırarak `OleRegGetUserType`denetimin kullanıcı türü adını döndürür.
+`OleRegGetUserType`çağırarak denetimin kullanıcı türü adını döndürür.
 
 ```
 STDMETHOD(GetUserType)(
@@ -719,7 +719,7 @@ STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha sonra yöntemi S_OK döndürür.
+Yöntemi daha sonra S_OK döndürür.
 
 Windows SDK bkz. [IOleObject:: SetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setclientsite) .
 
@@ -751,11 +751,11 @@ STDMETHOD(SetExtent)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aksi takdirde `SetExtent` , işaret `psizel` edilen değeri, [CComControlBase:: m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent)denetim sınıfı veri üyesinde depolar. Bu değer, HIMETRIK birimlerde (birim başına 0,01 milimetre).
+Aksi takdirde `SetExtent`, `psizel` tarafından işaret edilen değeri, [CComControlBase:: m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent)denetim sınıfı veri üyesine depolar. Bu değer, HIMETRIK birimlerde (birim başına 0,01 milimetre).
 
-[CComControlBase:: m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_bresizenatural) denetim sınıfı veri üyesi true ise, `SetExtent` denetim sınıfı veri üyesi [CComControlBase:: m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural) `psizel` içinde işaret edilen değeri de depolar.
+[CComControlBase:: m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_bresizenatural) denetim sınıfı VERI üyesi true ise, `SetExtent` Ayrıca [ccomcontrolbase:: m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural)denetim sınıfı veri üyesinde `psizel` tarafından işaret edilen değeri depolar.
 
-[CComControlBase:: m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) denetim sınıfı veri üyesi doğru ise, `SetExtent` `SendOnDataChange` denetim boyutunun değiştiği öneri `SendOnViewChange` sahibine kayıtlı tüm danışmanlık havuzlarını bilgilendirir ve bildirir.
+Denetim sınıfı veri üyesi [CComControlBase:: M_BRECOMPOSEONRESIZE](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) true ise, denetim boyutunun değiştiği öneri sahibine kayıtlı tüm danışmanlık havuzlarını bildirmek için `SendOnDataChange` ve `SendOnViewChange` çağırır `SetExtent`.
 
 Bkz. Windows SDK [IOleObject:: SetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent) .
 
