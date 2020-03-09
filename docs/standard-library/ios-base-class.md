@@ -109,17 +109,17 @@ helpviewer_keywords:
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ms.openlocfilehash: 17fb83cdbf882467f0ec330e05a6506b13051cab
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890121"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856574"
 ---
 # <a name="ios_base-class"></a>ios_base Sınıfı
 
-Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış akışları için ortak olan depolama ve üye işlevlerini açıklar. ( [Basic_ios](../standard-library/basic-ios-class.md) sınıf şablonu, ortak olduğunu ve şablon parametrelerine bağlı olanları açıklar.)
+Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış akışları için ortak olan depolama ve üye işlevlerini açıklar. (Sınıf şablonu [basic_ios](../standard-library/basic-ios-class.md) ortak olduğunu ve şablon parametrelerine bağımlı olduğunu açıklar.)
 
-İos_base sınıfının bir nesnesi, şunları içeren biçimlendirme bilgilerini depolar:
+Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_base.
 
 - [`fmtflags`](#fmtflags)türünde bir nesnedeki biçim bayrakları.
 
@@ -133,7 +133,7 @@ Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış a
 
 - **Long** ve **void** işaretçisi türünde öğeleri olan iki Genişletilebilir dizi.
 
-İos_base sınıfının bir nesnesi akış durum bilgilerini [`iostate`](#iostate)türünde bir nesne ve bir geri çağırma yığını da depolar.
+İos_base bir nesnesi, akış durum bilgilerini [`iostate`](#iostate)türünde bir nesne ve geri çağırma yığını da depolar.
 
 ## <a name="members"></a>Üyeler
 
@@ -147,7 +147,7 @@ Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış a
 
 |||
 |-|-|
-|[event_callback](#event_callback)|[Register_call](#register_callback)'e geçirilen bir işlevi açıklar.|
+|[event_callback](#event_callback)|[Register_call](#register_callback)geçirilen bir işlevi açıklar.|
 |[`fmtflags`](#fmtflags)|Çıktının görünümünü belirtmek için sabitler.|
 |[`iostate`](#iostate)|Akışın durumunu açıklayan sabitleri tanımlar.|
 |[OpenMode](#openmode)|Bir Stream ile nasıl etkileşim kuracağınızı açıklar.|
@@ -163,11 +163,11 @@ Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış a
 
 |||
 |-|-|
-|[adjustfield](#fmtflags)|`internal` &#124;`left`&#124;`right`olarak tanımlanan bir bit maskesi.|
+|[adjustfield](#fmtflags)|`internal` &#124; `left` &#124; `right`olarak tanımlanan bir bit maskesi.|
 |[uygulamanızda](#openmode)|Her ekleme işleminden önce akışın sonuna kadar aramayı belirtir.|
 |[önemi](#openmode)|Denetim nesnesi ilk oluşturulduğunda akışın sonuna aramayı belirtir.|
 |[rozbit](#iostate)|Akış arabelleğinin bütünlüğünden oluşan bir kayıp kaydeder.|
-|[basefield](#fmtflags)|`dec` &#124;`hex`&#124;`oct`olarak tanımlanan bir bit maskesi.|
+|[basefield](#fmtflags)|`dec` &#124; `hex` &#124; `oct`olarak tanımlanan bir bit maskesi.|
 |[BEG](#seekdir)|Bir dizinin başlangıcına göre aramayı belirtir.|
 |[ý](#openmode)|Bir dosyanın metin akışı yerine ikili akış olarak okunması gerektiğini belirtir.|
 |[boolalpha](#fmtflags)|**Bool** türündeki nesnelerin, sayısal değerler yerine ad ( **true** ve **false**gibi) eklenmesini veya ayıklanmasını belirtir.|
@@ -177,7 +177,7 @@ Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış a
 |[eofbit](#iostate)|Akıştan ayıklanan dosya sonunu kaydeder.|
 |[failbit](#iostate)|Akıştan geçerli bir alan ayıklama hatası kaydeder.|
 |[Düzenle](#fmtflags)|Kayan nokta değerlerinin sabit noktalı biçimde (üs alanı olmadan) eklenmesini belirtir.|
-|[floatfield](#fmtflags)|`fixed` &#124; olarak tanımlanan bir bit maskesi`scientific`|
+|[floatfield](#fmtflags)|`fixed` &#124; olarak tanımlanan bir bit maskesi `scientific`|
 |[goodbit](#iostate)|Tüm durum bitleri net.|
 |[eşlenecek](#fmtflags)|Tamsayı değerlerinin onaltılık biçimde eklenmesini veya ayıklanmasını belirtir.|
 |[in](#openmode)|Akıştan ayıklama belirtir.|
@@ -199,7 +199,7 @@ Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış a
 
 |||
 |-|-|
-|[hataları](#failure)|Üye sınıfı, sınıf şablonu [basic_ios](../standard-library/basic-ios-class.md)içinde [clear](../standard-library/basic-ios-class.md#clear) üye işlevi tarafından oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
+|[hataları](#failure)|Üye sınıfı, Sınıf şablonunda [basic_ios](../standard-library/basic-ios-class.md) [üye işlevi tarafından](../standard-library/basic-ios-class.md#clear) oluşturulan tüm özel durumlar için temel sınıf işlevi görür.|
 |[larına](#flags)|Geçerli bayrak ayarlarını ayarlar veya döndürür.|
 |[getloc](#getloc)|Depolanan yerel ayar nesnesini döndürür.|
 |[imbue](#imbue)|Yerel ayarı değiştirir.|
@@ -222,7 +222,7 @@ Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış a
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ios >
+**Üstbilgi:** ios > \<
 
 **Ad alanı:** std
 
@@ -253,7 +253,7 @@ Bir örnek için bkz. [register_callback](#register_callback) .
 
 ## <a name="event_callback"></a>event_callback
 
-[Register_call](#register_callback)'e geçirilen bir işlevi açıklar.
+[Register_call](#register_callback)geçirilen bir işlevi açıklar.
 
 ```cpp
 typedef void (__cdecl *event_callback)(
@@ -267,7 +267,7 @@ typedef void (__cdecl *event_callback)(
 *_E*\
 [Olay](#event).
 
-*_Temel*\
+*_Base*\
 Olayın çağrıldığı akış.
 
 *_I*\
@@ -275,7 +275,7 @@ Kullanıcı tanımlı bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, [register_callback](#register_callback)ile kaydedilenebilir bir işleve yönelik bir işaretçi tanımlar. Bu tür bir işlevin özel durum oluşturması gerekir.
+Türü, [register_callback](#register_callback)kayıtlı olabilecek bir işleve yönelik bir işaretçi tanımlar. Bu tür bir işlevin özel durum oluşturması gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -344,7 +344,7 @@ fmtflags flags(fmtflags fmtfl);
 
 ### <a name="parameters"></a>Parametreler
 
-*fmtfl* \
+*fmtfl*\
 Yeni `fmtflags` ayarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -453,7 +453,7 @@ Ayrıca, birkaç yararlı değer şunlardır:
 
 - `floatfield`, `fixed` &#124; olarak tanımlanmış `scientific`
 
-Bu biçim bayraklarını değiştiren işlevlerin örnekleri için bkz. [\<iomanip >](../standard-library/iomanip.md).
+Bu biçim bayraklarını değiştiren işlevlerin örnekleri için bkz. [\<iomanıp >](../standard-library/iomanip.md).
 
 ## <a name="getloc"></a>getloc
 
@@ -504,11 +504,11 @@ Yeni yerel ayar ayarı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi *_Loc* ' i yerel ayar nesnesinde depolar ve sonra geri çağırma olayını ve `imbue_event`bildirir. Önceki depolanmış değeri döndürür.
+Üye işlevi, yerel ayar nesnesinde *_Loc* depolar ve sonra geri çağırma olayını ve `imbue_event`bildirir. Önceki depolanmış değeri döndürür.
 
 ### <a name="example"></a>Örnek
 
-Örnek için bkz. [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue) .
+Bkz. [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue) bir örnek için.
 
 ## <a name="init"></a>Dengeleyici
 
@@ -532,7 +532,7 @@ ios_base();
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Korumalı) Oluşturucu hiçbir şey yapmaz. `basic_ios::`[Init](../standard-library/basic-ios-class.md#init) 'in daha sonraki bir çağrısı, güvenli bir şekilde yok edilebilmesi için nesneyi başlatmalıdır. Bu nedenle, ios_base sınıfı için tek güvenli kullanım, [basic_ios](../standard-library/basic-ios-class.md)sınıf şablonu için bir temel sınıf olarak bulunur.
+(Korumalı) Oluşturucu hiçbir şey yapmaz. `basic_ios::`[Init](../standard-library/basic-ios-class.md#init) 'in daha sonraki bir çağrısı, güvenli bir şekilde yok edilebilmesi için nesneyi başlatmalıdır. Bu nedenle, ios_base sınıfı için tek güvenli kullanım sınıfı şablon [basic_ios](../standard-library/basic-ios-class.md)temel bir sınıf olarak bulunur.
 
 ## <a name="iostate"></a>iostate
 
@@ -560,7 +560,7 @@ Türü, Stream durum bilgilerini depolayabilen bir nesneyi açıklayan bir bit m
 
 - `failbit`, akıştan geçerli bir alan ayıklama hatası kaydetmek için.
 
-Buna ek olarak, daha önce bahsedilen bitlerin hiçbirinin ayarlandığı `goodbit` yararlı bir değer (`goodbit` sıfır olduğu garanti edilir).
+Buna ek olarak, daha önce bahsedilen bitlerin hiçbirinin ayarlandığı `goodbit`yararlı bir değer (`goodbit` sıfır olduğu garanti edilir).
 
 ## <a name="iword"></a>iword
 
@@ -572,7 +572,7 @@ long& iword(int idx);
 
 ### <a name="parameters"></a>Parametreler
 
-*idx* \
+*idx*\
 `iword`olarak depolanacak değerin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -615,7 +615,7 @@ Tür, çeşitli `iostream` nesneleri için açma modunu depolayabilen bir nesney
 
 - akıştan ayıklanmasına izin vermek için `in`.
 
-- `out` bir akışa eklenmesine izin vermek için.
+- `out`bir akışa eklenmesine izin vermek için.
 
 - Denetim nesnesi oluşturulduğunda mevcut bir dosyanın içeriğini silmek için `trunc`.
 
@@ -639,7 +639,7 @@ int main ( )
 
 ## <a name="op_eq"></a>işleç =
 
-İos_base nesnelerine yönelik atama işleci.
+İos_base nesneler için atama işleci.
 
 ```cpp
 ios_base& operator=(const ios_base& right);
@@ -647,8 +647,8 @@ ios_base& operator=(const ios_base& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
-`ios_base`türünde bir nesne.
+*sağ*\
+`ios_base` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -656,7 +656,7 @@ Atanmakta olan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleci, Genişletilebilir dizilerin yeni bir kopyasını oluşturan, depolanan biçimlendirme bilgilerini kopyalar. Ardından **\*this**döndürür. Geri çağırma yığınının kopyalanmadığını unutmayın.
+İşleci, Genişletilebilir dizilerin yeni bir kopyasını oluşturan, depolanan biçimlendirme bilgilerini kopyalar. Ardından **\*** döndürür. Geri çağırma yığınının kopyalanmadığını unutmayın.
 
 Bu işleç yalnızca `ios_base`türetilen sınıflar tarafından kullanılır.
 
@@ -676,7 +676,7 @@ Sabit gösterimdeki ondalık ayırıcıdan sonraki basamak sayısı veya görün
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlevi depolanan [görüntüleme duyarlığını](../standard-library/ios-base-class.md)döndürür. İkinci üye işlevi, *_Prec* 'i görüntüleme duyarlığına depolar ve önceki depolanmış değerini döndürür.
+İlk üye işlevi depolanan [görüntüleme duyarlığını](../standard-library/ios-base-class.md)döndürür. İkinci üye işlevi, görüntüleme duyarlığını *_Prec* depolar ve önceki depolanmış değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -742,15 +742,15 @@ void register_callback(
 
 ### <a name="parameters"></a>Parametreler
 
-*PFN* \
+*PFN*\
 Geri çağırma işlevine yönelik işaretçi.
 
-*idx* \
+*idx*\
 Kullanıcı tanımlı bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, Çift `{pfn, idx}` depolanan geri çağırma yığını [geri çağırma yığınına](../standard-library/ios-base-class.md)iter. Bir geri **çağırma olayı oluşturulduğunda** , işlevler, `(*pfn)(ev, *this, idx)` ifade tarafından tersine kayıt sırasında çağrılır.
+Üye işlevi, Çift `{pfn, idx}` depolanan geri çağırma yığını [geri çağırma yığınına](../standard-library/ios-base-class.md)iter. Bir geri **çağırma olayı oluşturulduğunda** , işlevler, `(*pfn)(ev, *this, idx)`ifade tarafından tersine kayıt sırasında çağrılır.
 
 ### <a name="example"></a>Örnek
 
@@ -904,7 +904,7 @@ fmtflags setf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Maske*\
+*_Mask*\
 Açmak için bayraklar.
 
 *_Unset*\
@@ -954,8 +954,8 @@ static bool sync_with_stdio(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Eşitleme*\
-Tüm akışların `stdio` eşitlenmiş olup olmadığı.
+*_Sync*\
+Tüm akışların `stdio`eşitlenmiş olup olmadığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -963,7 +963,7 @@ Bu işlev için önceki ayar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Statik üye işlevi, başlangıçta **doğru**olan bir `stdio` Sync bayrağını depolar. **True**olduğunda, bu bayrak aynı dosyadaki işlemlerin, [`iostreams`](../standard-library/iostreams-conventions.md) işlevleri ve C++ standart kitaplıkta tanımlananlar arasında düzgün şekilde eşitlenmesini sağlar. Aksi takdirde, eşitleme garanti edilebilir veya olmayabilir, ancak performans artırılabilir. İşlevi, *_sync* `stdio` eşitleme bayrağıyla depolar ve önceki depolanmış değerini döndürür. Standart akışlarda herhangi bir işlem gerçekleştirmeden önce güvenilir bir şekilde çağrı yapabilirsiniz.
+Statik üye işlevi, başlangıçta **doğru**olan bir `stdio` Sync bayrağını depolar. **True**olduğunda, bu bayrak aynı dosyadaki işlemlerin, [`iostreams`](../standard-library/iostreams-conventions.md) işlevleri ve C++ standart kitaplıkta tanımlananlar arasında düzgün şekilde eşitlenmesini sağlar. Aksi takdirde, eşitleme garanti edilebilir veya olmayabilir, ancak performans artırılabilir. İşlevi, *_Sync* `stdio` Sync bayrağıyla depolar ve önceki depolanmış değerini döndürür. Standart akışlarda herhangi bir işlem gerçekleştirmeden önce güvenilir bir şekilde çağrı yapabilirsiniz.
 
 ## <a name="unsetf"></a>unsetf
 
@@ -977,12 +977,12 @@ void unsetf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Maske*\
+*_Mask*\
 İstediğiniz bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [bayrakları](#flags)etkin bir şekilde çağırır (`~` *_Mask* **& bayrakları**) (seçili bitleri temizle).
+Üye işlevi, [bayrakları](#flags)(`~` *_Mask* **& bayrakları**) etkin şekilde çağırır (seçili bitleri temizle).
 
 ### <a name="example"></a>Örnek
 
@@ -1001,7 +1001,7 @@ streamsize width(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Geniş*\
+*_Wide*\
 Çıkış akışının istenen boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1010,7 +1010,7 @@ Geçerli genişlik ayarı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan alan genişliğini döndürür. İkinci üye işlevi alan genişliğine göre *_geniş* depolar ve önceki depolanmış değerini döndürür.
+İlk üye işlevi, depolanan alan genişliğini döndürür. İkinci üye işlevi alan genişliğine *_Wide* depolar ve önceki depolanmış değerini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1081,6 +1081,6 @@ testing
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
-[iostream programlama](../standard-library/iostream-programming.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[iostream programlama](../standard-library/iostream-programming.md)\
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)

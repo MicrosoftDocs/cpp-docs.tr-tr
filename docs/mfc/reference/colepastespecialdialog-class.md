@@ -29,11 +29,11 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
 ms.openlocfilehash: f4174369620f14f2d1ac410aa5d756c75097ad0f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503759"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855611"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
 
@@ -49,17 +49,17 @@ class COlePasteSpecialDialog : public COleDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog)|Bir `COlePasteSpecialDialog` nesnesi oluşturur.|
+|[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog)|`COlePasteSpecialDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[COlePasteSpecialDialog:: AddFormat](#addformat)|Uygulamanızın yapıştırabileceğiniz biçim listesine özel biçimler ekler.|
 |[COlePasteSpecialDialog:: AddLinkEntry](#addlinkentry)|Desteklenen Pano biçimleri listesine yeni bir giriş ekler.|
-|[COlePasteSpecialDialog:: AddStandardFormats](#addstandardformats)|Uygulamanızın yapıştırabileceğiniz biçim listesine CF_BITMAP, CF_DIB, CF_METAFILEPICT ve isteğe bağlı CF_LINKSOURCE ekler.|
+|[COlePasteSpecialDialog:: AddStandardFormats](#addstandardformats)|Uygulamanızın yapıştırabileceğiniz biçim listesine CF_BITMAP, CF_DIB, CF_METAFILEPICT ve isteğe bağlı olarak CF_LINKSOURCE ekler.|
 |[COlePasteSpecialDialog:: CreateItem](#createitem)|Öğeyi kapsayıcı belgesinde belirtilen biçimi kullanarak oluşturur.|
 |[COlePasteSpecialDialog::D oModal](#domodal)|OLE Paste özel iletişim kutusunu görüntüler.|
 |[COlePasteSpecialDialog:: GetDrawAspect](#getdrawaspect)|Öğenin simge olarak mı çizileceğini söyler.|
@@ -69,13 +69,13 @@ class COlePasteSpecialDialog : public COleDialog
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COlePasteSpecialDialog::m_ps](#m_ps)|İletişim kutusunun işlevini denetleyen OLEUıPASTESPECIAL türünde bir yapı.|
+|[COlePasteSpecialDialog:: m_ps](#m_ps)|İletişim kutusunun işlevini denetleyen OLEUıPASTESPECIAL türünde bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iletişim kutusunu çağırmak istediğinizde `COlePasteSpecialDialog` , sınıfının bir nesnesi oluşturun. Bir `COlePasteSpecialDialog` nesne oluşturulduktan sonra, iletişim kutusuna Pano biçimleri eklemek için [AddFormat](#addformat) ve [AddStandardFormats](#addstandardformats) üye işlevlerini kullanabilirsiniz. İletişim kutusundaki denetimlerin değerlerini veya durumlarını başlatmak için [m_ps](#m_ps) yapısını da kullanabilirsiniz. Yapı `m_ps` , OleUIPasteSpecial türündedir.
+Bu iletişim kutusunu çağırmak istediğinizde `COlePasteSpecialDialog` sınıfından bir nesne oluşturun. `COlePasteSpecialDialog` nesnesi oluşturulduktan sonra, iletişim kutusuna Pano biçimleri eklemek için [AddFormat](#addformat) ve [AddStandardFormats](#addstandardformats) üye işlevlerini kullanabilirsiniz. İletişim kutusundaki denetimlerin değerlerini veya durumlarını başlatmak için [m_ps](#m_ps) yapısını da kullanabilirsiniz. `m_ps` yapısı, OLEUııPASTESPECIAL türündedir.
 
 Daha fazla bilgi için Windows SDK [Oleuıpasteözel](/windows/win32/api/oledlg/ns-oledlg-oleuipastespecialw) yapısına bakın.
 
@@ -91,7 +91,7 @@ OLE 'ye özgü iletişim kutuları hakkında daha fazla bilgi için [OLE 'deki m
 
 [CDialog](../../mfc/reference/cdialog-class.md)
 
-[CCommonDialog](../../mfc/reference/ccommondialog-class.md)
+[Ccommoniletişim kutusu](../../mfc/reference/ccommondialog-class.md)
 
 [Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
 
@@ -151,7 +151,7 @@ Liste kutusunda Bu biçim seçildiğinde bağlantıyı Yapıştır radyo düğme
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, CF_TEXT veya CF_TIFF gibi standart biçimleri ya da uygulamanızın sisteme kayıtlı olduğu özel biçimleri eklemek için çağrılabilir. Uygulamanıza veri nesneleri yapıştırma hakkında daha fazla bilgi için veri nesneleri ve veri kaynakları [makalesine bakın: Düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Bu işlev, CF_TEXT veya CF_TIFF ya da uygulamanızın sisteme kayıtlı olduğu özel biçimler gibi standart biçimleri eklemek için çağrılabilir. Uygulamanıza veri nesneleri yapıştırma hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
 Daha fazla bilgi için, Windows SDK [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) sabit listesi türüne ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
 
@@ -203,7 +203,7 @@ Bu biçimler ekleme ve bağlamayı desteklemek için kullanılır.
 
 ##  <a name="colepastespecialdialog"></a>COlePasteSpecialDialog::COlePasteSpecialDialog
 
-Bir `COlePasteSpecialDialog` nesnesi oluşturur.
+`COlePasteSpecialDialog` nesnesi oluşturur.
 
 ```
 COlePasteSpecialDialog(
@@ -217,23 +217,23 @@ COlePasteSpecialDialog(
 *dwFlags*<br/>
 Oluşturma bayrağı, bit düzeyinde OR işleci kullanılarak birleştirilmiş aşağıdaki bayrakların herhangi bir sayısını içerir:
 
-- PSF_SELECTPASTE, iletişim kutusu çağrıldığında Yapıştır radyo düğmesinin başlangıçta denetleneceğini belirtir. PSF_SELECTPASTELINK ile birlikte kullanılamaz. Bu varsayılandır.
+- PSF_SELECTPASTE, iletişim kutusu çağrıldığında radyo Yapıştır düğmesinin başlangıçta denetleneceğini belirtir. PSF_SELECTPASTELINK ile birlikte kullanılamaz. Bu varsayılandır.
 
 - PSF_SELECTPASTELINK, iletişim kutusu çağrıldığında bağlantıyı Yapıştır radyo düğmesinin başlangıçta denetleneceğini belirtir. PSF_SELECTPASTE ile birlikte kullanılamaz.
 
-- PSF_CHECKDISPLAYASICON iletişim kutusu çağrıldığında, simge olarak göster onay kutusunun başlangıçta denetleneceğini belirtir.
+- PSF_CHECKDISPLAYASICON, iletişim kutusu çağrıldığında simge olarak göster onay kutusunun başlangıçta denetleneceğini belirtir.
 
-- PSF_SHOWHELP iletişim kutusu çağrıldığında Yardım düğmesinin görüntülendiğini belirtir.
+- PSF_SHOWHELP, iletişim kutusu çağrıldığında Yardım düğmesinin görüntülendiğini belirtir.
 
 *pDataObject*<br/>
-Yapıştırma için [birlikte](../../mfc/reference/coledataobject-class.md) kullanılacak bir işaret gösterir. Bu değer null ise panodan alır `COleDataObject` .
+Yapıştırma için [birlikte](../../mfc/reference/coledataobject-class.md) kullanılacak bir işaret gösterir. Bu değer NULL ise panodan `COleDataObject` alır.
 
 *pParentWnd*<br/>
-İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (türü `CWnd`) işaret eder. NULL ise, iletişim kutusunun ana penceresi ana uygulama penceresine ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (`CWnd`türü) işaret eder. NULL ise, iletişim kutusunun ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca bir `COlePasteSpecialDialog` nesne oluşturur. İletişim kutusunu göstermek için [DoModal](#domodal) işlevini çağırın.
+Bu işlev yalnızca bir `COlePasteSpecialDialog` nesnesi oluşturur. İletişim kutusunu göstermek için [DoModal](#domodal) işlevini çağırın.
 
 Daha fazla bilgi için, Windows SDK ' de numaralandırılmış tür olan [Oleuıpagesteflag](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) ' a bakın.
 
@@ -248,7 +248,7 @@ BOOL CreateItem(COleClientItem* pNewItem);
 ### <a name="parameters"></a>Parametreler
 
 *pNewItem*<br/>
-Bir `COleClientItem` örneğe işaret eder. NULL olamaz.
+Bir `COleClientItem` örneğine işaret eder. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -274,13 +274,13 @@ virtual INT_PTR DoModal();
 
 - Kullanıcı iletişim kutusunu iptal edildiyse ıDCANCEL.
 
-- Bir hata oluştuysa ıDADBORT. Idadbort döndürülürse, oluşan hata türü hakkında `COleDialog::GetLastError` daha fazla bilgi edinmek için üye işlevini çağırın. Olası hataların listesi için Windows SDK [Oleuııpastespecial](/windows/win32/api/oledlg/nf-oledlg-oleuipastespecialw) işlevine bakın.
+- Bir hata oluştuysa ıDADBORT. IDADBORT döndürülürse, oluşan hata türü hakkında daha fazla bilgi edinmek için `COleDialog::GetLastError` member işlevini çağırın. Olası hataların listesi için Windows SDK [Oleuııpastespecial](/windows/win32/api/oledlg/nf-oledlg-oleuipastespecialw) işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[M_ps](#m_ps) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
+[M_ps](#m_ps) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak istiyorsanız, bunu `DoModal`çağrılmadan önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-IDOK `DoModal` döndürürse, Kullanıcı tarafından ayarları veya bilgi girişini iletişim kutusuna almak için diğer üye işlevlerini çağırabilirsiniz.
+`DoModal` ıDOK döndürürse, Kullanıcı tarafından iletişim kutusuna ayarları veya bilgi girişini almak için diğer üye işlevlerini çağırabilirsiniz.
 
 ##  <a name="getdrawaspect"></a>COlePasteSpecialDialog:: GetDrawAspect
 
@@ -294,9 +294,9 @@ DVASPECT GetDrawAspect() const;
 
 Nesneyi işlemek için gereken yöntem.
 
-- İletişim kutusu kapatıldığında, simge olarak göster onay kutusu işaretlenmediğinde DVASPECT_CONTENT döndürüldü.
+- İletişim kutusu kapatıldığında simge olarak göster onay kutusu işaretlenmediğinde DVASPECT_CONTENT döndürüldü.
 
-- İletişim kutusu kapatıldığında simge olarak göster onay kutusu işaretliyse DVASPECT_ICON döndürüldü.
+- İletişim kutusu kapatıldığında simge olarak göster onay kutusu işaretliyse DVASPECT_ICON döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -326,7 +326,7 @@ int GetPasteIndex() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı tarafından seçilen `OLEUIPASTEENTRY` yapıların dizisinin dizini. Yapıştırma işlemi gerçekleştirilirken seçilen dizine karşılık gelen biçim kullanılmalıdır.
+Kullanıcı tarafından seçilen `OLEUIPASTEENTRY` yapıları dizisinin dizini. Yapıştırma işlemi gerçekleştirilirken seçilen dizine karşılık gelen biçim kullanılmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -346,7 +346,7 @@ Yapılan seçim türünü döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş türü değerleri, `Selection` `COlePasteSpecialDialog` sınıfında belirtilen numaralandırma türü tarafından belirtilir.
+Dönüş türü değerleri, `COlePasteSpecialDialog` sınıfında bildirildiği `Selection` numaralandırma türü tarafından belirtilir.
 
 ```
 enum Selection {
@@ -359,15 +359,15 @@ enum Selection {
 
 Bu değerlerin kısa açıklaması şunları izler:
 
-- `COlePasteSpecialDialog::pasteLink`Bağlantıyı Yapıştır radyo düğmesi işaretlendi ve seçilen biçim standart OLE biçimiydi.
+- Bağlantıyı Yapıştır radyo düğmesi işaretli `COlePasteSpecialDialog::pasteLink` ve seçilen biçim standart bir OLE biçimidir.
 
-- `COlePasteSpecialDialog::pasteNormal`Radyo Yapıştır düğmesi işaretlendi ve seçilen biçim standart OLE biçimiydi.
+- `COlePasteSpecialDialog::pasteNormal` radyo düğmesi işaretlendi ve seçilen biçim standart OLE biçimiydi.
 
-- `COlePasteSpecialDialog::pasteOther`Seçilen biçim standart bir OLE biçimi değil.
+- `COlePasteSpecialDialog::pasteOther` seçili biçim standart OLE biçimi değil.
 
-- `COlePasteSpecialDialog::pasteStatic`Seçilen biçim bir meta dosyası.
+- Seçilen biçim bir meta dosyası `COlePasteSpecialDialog::pasteStatic`.
 
-##  <a name="m_ps"></a>COlePasteSpecialDialog::m_ps
+##  <a name="m_ps"></a>COlePasteSpecialDialog:: m_ps
 
 Özel Yapıştır iletişim kutusunun davranışını denetlemek için kullanılan OLEUıPAGESTESPECIAL türünün yapısı.
 

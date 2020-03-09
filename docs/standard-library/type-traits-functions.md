@@ -25,13 +25,13 @@ helpviewer_keywords:
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
 ms.openlocfilehash: 48ca51d56994f3d487af6744801acedf5c6cc79c
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447040"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874200"
 ---
-# <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; işlevleri
+# <a name="lttype_traitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 
 ||||
 |-|-|-|
@@ -43,7 +43,7 @@ ms.locfileid: "68447040"
 
 ## <a name="is_assignable"></a>is_assignable
 
-*Türden bir* değerin bir *to* türüne atanıp atanamayacağını sınar.
+Türden bir değerin bir *to* *türüne atanıp* atanamayacağını sınar.
 
 ```cpp
 template <class To, class From>
@@ -52,10 +52,10 @@ struct is_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*\
+\ *için*
 Atamayı alan nesnenin türü.
 
-*Kaynak*\
+\ *'den*
 Değer sağlayan nesnenin türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -73,12 +73,12 @@ struct is_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür değeri, kopya atama operatörü olan bir sınıfdaysa,  tür koşulunun bir örneği true, aksi takdirde false değerini taşır. İs_assignable\<Ty &, const Ty & > eşdeğerdir.
+*Tür değeri* , kopya atama operatörü olan bir sınıfdaysa, tür koşulunun bir örneği true, aksi takdirde false değerini taşır. İs_assignable\<Ty &, const Ty & > eşdeğerdir.
 
 ## <a name="is_copy_constructible"></a>is_copy_constructible
 
@@ -91,12 +91,12 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür değeri, kopya Oluşturucusu olan bir sınıfdaysa, tür  koşulu true, aksi takdirde false barındırır.
+*Tür değeri* , kopya Oluşturucusu olan bir sınıfdaysa, tür koşulu true, aksi takdirde false barındırır.
 
 ### <a name="example"></a>Örnek
 
@@ -143,12 +143,12 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*T*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür *T* türü, varsayılan oluşturucuya sahip bir sınıf türü ise true, aksi takdirde false barındırır. Bu koşul `is_constructible<T>`ile eşdeğerdir. Tür *T* , tamamen bir tür, **void**veya bilinmeyen bir bağlantılı dizi olmalıdır.
+Tür *T* türü, varsayılan oluşturucuya sahip bir sınıf türü ise true, aksi takdirde false barındırır. Bu, `is_constructible<T>`koşul ile eşdeğerdir. Tür *T* , tamamen bir tür, **void**veya bilinmeyen bir bağlantılı dizi olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -195,12 +195,12 @@ struct is_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*T*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türe bir rvalue başvurusu, türe bir başvuruya atanabileceği takdirde tür atanabilir. Tür koşulu ile `is_assignable<T&, T&&>`eşdeğerdir. Atanabilir türleri, derleyici tarafından oluşturulan veya Kullanıcı tanımlı taşıma atama işleçleri olan başvurulabilir skaler türlerini ve sınıf türlerini içerir.
+Türe bir rvalue başvurusu, türe bir başvuruya atanabileceği takdirde tür atanabilir. Tür koşulu `is_assignable<T&, T&&>`eşdeğerdir. Atanabilir türleri, derleyici tarafından oluşturulan veya Kullanıcı tanımlı taşıma atama işleçleri olan başvurulabilir skaler türlerini ve sınıf türlerini içerir.
 
 ## <a name="is_move_constructible"></a>is_move_constructible
 
@@ -213,12 +213,12 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*T*\
 Değerlendirilecek tür
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür *T* bir taşıma işlemi kullanılarak oluşturulabiliyorsa true olarak değerlendirilen bir tür koşulu. Bu koşul ile `is_constructible<T, T&&>`eşdeğerdir.
+Tür *T* bir taşıma işlemi kullanılarak oluşturulabiliyorsa true olarak değerlendirilen bir tür koşulu. Bu koşul `is_constructible<T, T&&>`eşdeğerdir.
 
 ## <a name="is_nothrow_move_assignable"></a>is_nothrow_move_assignable
 
@@ -231,12 +231,12 @@ struct is_nothrow_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür olarak bir nothrow taşıma atama işleci varsa, tür  koşulunda bir örnek true, aksi takdirde false barındırır.
+*Tür olarak* bir nothrow taşıma atama işleci varsa, tür koşulunda bir örnek true, aksi takdirde false barındırır.
 
 ## <a name="is_nothrow_swappable"></a>is_nothrow_swappable
 
@@ -273,14 +273,14 @@ struct is_trivially_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*T*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Tür *T* , Önemsiz kopya atama operatörü olan bir sınıf ise true, aksi takdirde false barındırır.
 
-*Sınıf t* için atama Oluşturucusu, örtük olarak sağlanmışsa, *t* sınıfı sanal bir Işleve sahip değildir, *t* sınıfının sanal temeli yoktur, sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları ise önemsiz atamadır İşleçler ve sınıf dizisi türündeki tüm statik olmayan veri üyelerinin basit atama işleçleri vardır.
+Sınıf t için atama Oluşturucusu, örtük olarak sağlanmışsa, *t* sınıfı sanal bir işleve *sahip değildir,* *t* sınıfının sanal bir tabanı yoktur, sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz atama işleçlerine sahiptir ve sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz atama işleçleridir.
 
 ## <a name="is_trivially_move_assignable"></a>is_trivially_move_assignable
 
@@ -293,12 +293,12 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür değeri, önemsiz taşıma atama operatörü olan bir sınıfdaysa  , tür koşulu true, aksi takdirde false barındırır.
+*Tür değeri* , önemsiz taşıma atama operatörü olan bir sınıfdaysa, tür koşulu true, aksi takdirde false barındırır.
 
 Sınıf *Ty* için bir taşıma atama işleci şu durumlarda önemsiz:
 
@@ -323,12 +323,12 @@ struct is_trivially_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kalite*\
+*Ty*\
 Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür değeri, önemsiz bir taşıma oluşturucusuna sahip bir sınıfdaysa  , tür belirtiminin bir örneği true, aksi takdirde false değerini taşır.
+*Tür değeri* , önemsiz bir taşıma oluşturucusuna sahip bir sınıfdaysa, tür belirtiminin bir örneği true, aksi takdirde false değerini taşır.
 
 Sınıf *Ty* için bir taşıma Oluşturucusu şu durumlarda önemsiz:
 

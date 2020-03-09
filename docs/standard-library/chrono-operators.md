@@ -1,21 +1,21 @@
 ---
-title: '&lt;chrono&gt; işleçleri'
+title: '&lt;İTO&gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - chrono/std::operator modulo
 ms.assetid: c5a19267-4684-40c1-b7a9-cc1012b058f3
 ms.openlocfilehash: 398e2429c38cffb454c7b510aa5ab44fbe4cfef6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244884"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865212"
 ---
-# <a name="ltchronogt-operators"></a>&lt;chrono&gt; işleçleri
+# <a name="ltchronogt-operators"></a>&lt;İTO&gt; işleçleri
 
-## <a name="operator-"></a> operator-
+## <a name="operator-"></a>işlecinde
 
-Veya negation işleci [süresi](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri.
+[Süre](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesnelerinin çıkarma veya olumsuzlama işleci.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -40,28 +40,28 @@ constexpr typename common_type<Duration1, Duration2>::type
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
-*saat*\
-A `time_point` nesne.
+*Zaman*\
+Bir `time_point` nesnesi.
 
 *Süre*\
-A `duration` nesne.
+Bir `duration` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev bir `duration` aralığına iki bağımsız zaman aralıkları arasındaki farkı nesnesi.
+İlk işlev, Aralık uzunluğu iki bağımsız değişkenin zaman aralıkları arasındaki fark olan bir `duration` nesnesi döndürür.
 
-İkinci işlevi döndürür bir `time_point` zamanında, tarafından olumsuzlama tarafından temsil edilen zaman aralığının değişmiş olan zamanda bir noktayı temsil eden bir nesne *süre*, tarafından belirtilen bir zaman noktasından *zaman*.
+İkinci işlev *, zaman içinde*belirtilen zaman aralığından *itibaren, süresi ile temsil*edilen zaman aralığının ne kadar süre içinde olduğunu gösteren bir `time_point` nesnesini döndürür.
 
-Üçüncü işlevi döndürür bir `duration` arasındaki zaman aralığını temsil eden nesne *sol* ve *sağ*.
+Üçüncü işlev, *sol* ve *sağ*arasındaki zaman aralığını temsil eden bir `duration` nesnesi döndürür.
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Eşitsizlik işleci için [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesneleri.
+[Süre](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesneleri için eşitsizlik işleci.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -78,18 +78,18 @@ constexpr bool operator!=(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her işlev `!(Left == Right)`.
+Her işlev `!(Left == Right)`döndürür.
 
-## <a name="op_star"></a> operator *
+## <a name="op_star"></a>işlecinde
 
-Çarpma işleci için [süresi](../standard-library/chrono-operators.md#op_star) nesneleri.
+[Duration](../standard-library/chrono-operators.md#op_star) nesneleri için çarpma işleci.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2>
@@ -109,22 +109,22 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 ### <a name="parameters"></a>Parametreler
 
 *Süre*\
-A `duration` nesne.
+Bir `duration` nesnesi.
 
 *Mult*\
 Bir tamsayı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her işlev bir `duration` aralığına nesne *Mult* çarpılan *süre*.
+Her işlev, Aralık uzunluğu, *süre*uzunluğu *ile çarpıldığı* `duration` nesnesini döndürür.
 
-Sürece `is_convertible<Rep2, common_type<Rep1, Rep2>>` *korumadıkça*, ilk işlev aşırı yükleme çözünürlüğü içinde yer almaz. Daha fazla bilgi için bkz [< type_traits >](../standard-library/type-traits.md).
+`is_convertible<Rep2, common_type<Rep1, Rep2>>`*true olarak saklanmamışsa*, ilk işlev aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz [< type_traits >](../standard-library/type-traits.md).
 
-Sürece `is_convertible<Rep1, common_type<Rep1, Rep2>>` *korumadıkça*, ikinci işlev aşırı yükleme çözünürlüğü içinde yer almaz. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
+`is_convertible<Rep1, common_type<Rep1, Rep2>>`*true olarak saklanmadıkça*ikinci işlev aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [< type_traits >](../standard-library/type-traits.md).
 
-## <a name="op_div"></a> operator /
+## <a name="op_div"></a>işlecinde
 
-Bölme işleci için [süresi](../standard-library/chrono-operators.md#op_star) nesneleri.
+[Duration](../standard-library/chrono-operators.md#op_star) nesneleri için bölme işleci.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2>
@@ -143,28 +143,28 @@ constexpr typename common_type<Rep1, Rep2>::type
 ### <a name="parameters"></a>Parametreler
 
 *Süre*\
-A `duration` nesne.
+Bir `duration` nesnesi.
 
-*div*\
+*Div*\
 Bir tamsayı değeri.
 
 *Sol*\
-Sol `duration` nesne.
+Sol `duration` nesnesi.
 
-*sağ*\
-Sağa `duration` nesne.
+*Sağ*\
+Doğru `duration` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç, aralığı bir süre nesnesi döndürür uzunluğunda uzunluğunu *süre* değeriyle bölünmüş *Div*.
+İlk operatör, Aralık uzunluğu *div* *değerine bölünen süre uzunluğu olan Duration* nesnesini döndürür.
 
-İkinci işleç aralık uzunluğu oranını döndürür *sol* ve *sağ*.
+İkinci işleç, *sol* ve *sağ*Aralık uzunluklarının oranını döndürür.
 
-Sürece `is_convertible<Rep2, common_type<Rep1, Rep2>>` *korumadıkça*, ve `Rep2` örneklemesi değil `duration`, ilk operatör aşırı yükleme çözünürlüğü içinde yer almaz. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
+`is_convertible<Rep2, common_type<Rep1, Rep2>>`*true*olarak yoksa ve `Rep2` `duration`örneklemesi değilse, ilk işleç aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [< type_traits >](../standard-library/type-traits.md).
 
-## <a name="op_add"></a> operator +
+## <a name="op_add"></a>işleç +
 
-Ekler [süresi](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri.
+[Süre](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri ekler.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -189,26 +189,26 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
-*saat*\
-A `time_point` nesne.
+*Zaman*\
+Bir `time_point` nesnesi.
 
 *Süre*\
-A `duration` nesne.
+Bir `duration` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev bir `duration` aralıklarına toplamına eşit bir zaman aralığına sahip bir nesne *sol* ve *sağ*.
+İlk işlev, *sol* ve *sağ*aralıkların toplamına eşit olan bir zaman aralığına sahip bir `duration` nesnesi döndürür.
 
-İkinci ve üçüncü işlevler döndürür bir `time_point` zamanında, aralığa göre değişmiş olan zamanda bir noktayı temsil eden bir nesne *süre*, zaman içerisinde bir noktadan *zaman*.
+İkinci ve üçüncü işlevleri, zaman aralığı ile zaman *içinde zaman içindeki* *noktadan sonra gelen*zaman aralığını temsil eden bir `time_point` nesnesi döndürür.
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işleç&lt;
 
-Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir daha az `duration` veya `time_point` nesne.
+Bir [sürenin](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesinin başka bir `duration` veya `time_point` nesnesinden küçük olup olmadığını belirler.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -225,20 +225,20 @@ constexpr bool operator<(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev **true** , aralık uzunluğu *sol* aralık uzunluğu'dan küçük *sağ*. Aksi halde, işlev döndürür **false**.
+Aralık uzunluğu *sağdaki*Aralık uzunluğundan *küçükse, ilk* işlev **true** değerini döndürür. Aksi takdirde, işlev **false**döndürür.
 
-İkinci işlevi döndürür **true** varsa *sol* önündeki *sağ*. Aksi halde, işlev döndürür **false**.
+İkinci işlev, *sağ* *den önce,* **doğru** değerini döndürür. Aksi takdirde, işlev **false**döndürür.
 
-## <a name="op_lt_eq"></a> İşleci&lt;=
+## <a name="op_lt_eq"></a>işleç&lt;=
 
-Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir küçüktür veya eşittir diğerine `duration` veya `time_point` nesne.
+Bir [sürenin](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesinin, başka bir `duration` veya `time_point` nesnesinden küçük veya ona eşit olup olmadığını belirler.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -255,18 +255,18 @@ constexpr bool operator<=(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her işlev `!(Right < Left)`.
+Her işlev `!(Right < Left)`döndürür.
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-İki olup olmadığını belirler `duration` nesneleri aynı uzunluğa sahip zaman aralıklarını temsil etmek veya iki olduğunu `time_point` nesneleri zaman içinde aynı noktaya temsil eder.
+İki `duration` nesnenin aynı uzunluğa sahip zaman aralıklarını mi temsil ettiğini yoksa iki `time_point` nesnesinin de aynı noktayı temsil edip etmediğini belirler.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -283,20 +283,20 @@ constexpr bool operator==(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev **true** varsa *sol* ve *sağ* aynı uzunluğa sahip zaman aralıklarını temsil eder. Aksi halde, işlev döndürür **false**.
+İlk işlev, *sol* ve *sağ* aynı uzunlukta olan zaman aralıklarını temsil ediyorsa **true** değerini döndürür. Aksi takdirde, işlev **false**döndürür.
 
-İkinci işlevi döndürür **true** varsa *sol* ve *sağ* zaman içinde aynı noktaya temsil eder. Aksi halde, işlev döndürür **false**.
+İkinci işlev, *sol* ve *sağ* aynı anda aynı noktayı temsil ediyorsa **true** değerini döndürür. Aksi takdirde, işlev **false**döndürür.
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işleç&gt;
 
-Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir diğerinden daha büyük `duration` veya `time_point` nesne.
+Bir [sürenin](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesinin başka bir `duration` veya `time_point` nesnesinden büyük olup olmadığını belirler.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -313,18 +313,18 @@ constexpr bool operator>(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her işlev `Right < Left`.
+Her işlev `Right < Left`döndürür.
 
-## <a name="op_gt_eq"></a> İşleci&gt;=
+## <a name="op_gt_eq"></a>işleç&gt;=
 
-Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir büyüktür veya eşittir diğerine `duration` veya `time_point` nesne.
+Bir [sürenin](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesinin, başka bir `duration` veya `time_point` nesnesinden büyük veya ona eşit olup olmadığını belirler.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2, class Period2>
@@ -341,18 +341,18 @@ constexpr bool operator>=(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `duration` veya `time_point` nesne.
+Sol `duration` veya `time_point` nesnesi.
 
-*sağ*\
-Sağa `duration` veya `time_point` nesne.
+*Sağ*\
+Sağ `duration` veya `time_point` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her işlev `!(Left < Right)`.
+Her işlev `!(Left < Right)`döndürür.
 
-## <a name="op_modulo"></a> mod işleci
+## <a name="op_modulo"></a>işleç modül
 
-Modül işlemleri için işleç [süresi](../standard-library/duration-class.md) nesneleri.
+[Duration](../standard-library/duration-class.md) nesnelerinde modül işlemleri için işleç.
 
 ```cpp
 template <class Rep1, class Period1, class Rep2>
@@ -371,19 +371,19 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 ### <a name="parameters"></a>Parametreler
 
 *Süre*\
-A `duration` nesne.
+Bir `duration` nesnesi.
 
-*div*\
+*Div*\
 Bir tamsayı değeri.
 
 *Sol*\
-Sol `duration` nesne.
+Sol `duration` nesnesi.
 
-*sağ*\
-Sağa `duration` nesne.
+*Sağ*\
+Doğru `duration` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev bir `duration` aralığına nesne *süre* modül *Div*.
+İlk işlev, Aralık uzunluğu *süre* mod *Div*olan bir `duration` nesnesi döndürür.
 
-İkinci işlevi temsil eden bir değer döndürür *sol* modül *sağ*.
+İkinci işlev, *sol* modül *hakkını*temsil eden bir değer döndürür.

@@ -1,39 +1,39 @@
 ---
-title: Makrolar ve İşlevler DLL'leri yönetmek için
+title: Dll 'Leri yönetmeye yönelik makrolar ve Işlevler
 ms.date: 03/27/2019
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 ms.openlocfilehash: b27f8763b60dc7ce3ee074cad1365e7e1de3a7e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322208"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854605"
 ---
-# <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
+# <a name="macros-and-functions-for-managing-dlls"></a>Dll 'Leri yönetmeye yönelik makrolar ve Işlevler
 
 |||
 |-|-|
 |[AFX_EXT_CLASS](#afx_ext_class)]|Sınıfları dışarı aktarır.|
-|[AFX_MANAGE_STATE](#afx_manage_state)|DLL'de dışa aktarılan bir işlevin koruyun.|
-|[AfxOleInitModule](#afxoleinitmodule)|Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN OLE desteği sağlar.|
-|[AfxNetInitModule](#afxnetinitmodule)|Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN gelen MFC yuva desteği sağlar.|
-|[AfxGetAmbientActCtx](#afxgetambientactctx)|Modül başına durum bayrağı geçerli durumunu alır.|
-|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Başlatmadan önce ve/veya temizleme sonra önceki modül durumunu geri yüklemek için modül durumunu ayarlar.|
-|[AfxInitExtensionModule](#afxinitextensionmodule)|DLL başlatır.|
-|[AfxSetAmbientActCtx](#afxsetambientactctx)|MFC WinSxS davranışını etkileyen modül başına durum bayrağını ayarlayın.|
-|[AfxTermExtensionModule](#afxtermextensionmodule)|Her işlem DLL'den ayırdığında MFC uzantısı DLL temizlemek MFC sağlar.|
+|[AFX_MANAGE_STATE](#afx_manage_state)|DLL içindeki bir içe aktarılmış işlevi koruma.|
+|[AfxOleInitModule](#afxoleinitmodule)|MFC 'ye dinamik olarak bağlanan normal bir MFC DLL 'den OLE desteği sağlar.|
+|[AfxNetInitModule](#afxnetinitmodule)|MFC 'ye dinamik olarak bağlanan normal bir MFC DLL 'den MFC Yuvaları desteği sağlar.|
+|[Afxgetambentactctx](#afxgetambientactctx)|Modül başına durum bayrağının geçerli durumunu alır.|
+|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Başlatmadan önce modül durumunu ayarlar ve/veya sildikten sonra önceki modül durumunu geri yüklemek için.|
+|[AfxInitExtensionModule](#afxinitextensionmodule)|DLL 'yi başlatır.|
+|[Afxsetambentactctx](#afxsetambientactctx)|MFC 'nin WinSxS davranışını etkileyen modül başına durum bayrağını ayarlayın.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|Her işlem DLL 'den ayrıldığında MFC 'nin MFC uzantı DLL 'sini temizlemesini sağlar.|
 
-## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
+## <a name="afx_ext_class"></a>AFX_EXT_CLASS
 
-[MFC uzantı DLL'leri](../../build/extension-dlls.md) AFX_EXT_CLASS makrosu sınıflarını dışarı aktarmak için kullanın; sınıflarını içeri aktarmak için makro MFC uzantısı DLL için bağlama yürütülebilir dosyaları kullanın.
+[MFC uzantı dll 'leri](../../build/extension-dlls.md) , sınıfları dışarı aktarmak için AFX_EXT_CLASS makroları kullanır; MFC uzantısı DLL 'sine bağlanan yürütülebilir dosyalar, sınıfları içeri aktarmak için makrosunu kullanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-AFX_EXT_CLASS makrosu ile MFC uzantısı DLL oluşturmak için kullanılan aynı üst bilgi dosyaları için DLL'e yürütülebilir dosyaları ile kullanılabilir.
+AFX_EXT_CLASS makroyla, MFC uzantı DLL 'sini oluşturmak için kullanılan üst bilgi dosyaları, DLL 'ye bağlanan yürütülebilir dosyalarla birlikte kullanılabilir.
 
-DLL dosyanız için üstbilgi dosyasında AFX_EXT_CLASS anahtar sözcüğü, sınıf bildirimi için aşağıdaki gibi ekleyin:
+DLL 'nizin başlık dosyasında, sınıfınızın bildirimine aşağıdaki şekilde AFX_EXT_CLASS anahtar sözcüğünü ekleyin:
 
 ```cpp
 class AFX_EXT_CLASS CMyClass : public CDocument
@@ -42,15 +42,15 @@ class AFX_EXT_CLASS CMyClass : public CDocument
 };
 ```
 
-Daha fazla bilgi için [dışarı ve içeri aktarma AFX_EXT_CLASS kullanarak](../../build/exporting-and-importing-using-afx-ext-class.md).
+Daha fazla bilgi için bkz. [AFX_EXT_CLASS kullanarak dışarı ve Içeri aktarma](../../build/exporting-and-importing-using-afx-ext-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxv_dll.h
+**Üst bilgi:** afxv_dll. h
 
-## <a name="afx_manage_state"></a>  AFX_MANAGE_STATE
+## <a name="afx_manage_state"></a>AFX_MANAGE_STATE
 
-DLL'de dışa aktarılan bir işlevin korumak için bu makroyu çağırın.
+DLL içindeki bir içe aktarılmış işlevi korumak için bu makroyu çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -61,33 +61,33 @@ AFX_MANAGE_STATE(AFX_MODULE_STATE* pModuleState )
 ### <a name="parameters"></a>Parametreler
 
 *pModuleState*<br/>
-Bir işaretçi bir `AFX_MODULE_STATE` yapısı.
+`AFX_MODULE_STATE` yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro çağrıldığında *pModuleState* etkili modül durumunu geri kalanı için hemen kapsam içeren. Kapsam ayrıldıktan sonra önceki etkili Modül durumu otomatik olarak kurulacaktır.
-`AFX_MODULE_STATE` Modülü, diğer bir deyişle, gönderilen veya POP Modül durumu kısmı için genel veri yapısı içerir.
+Bu makro çağrıldığında *pModuleState* , en yakın kapsayan kapsamın geri kalanı için etkin modül durumudur. Kapsam ayrıldıktan sonra, önceki etkin modül durumu otomatik olarak geri yüklenir.
+`AFX_MODULE_STATE` yapısı, modül için genel verileri, diğer bir deyişle, gönderilen veya atılan modül durumunun bölümünü içerir.
 
-Varsayılan olarak, kaynak şablonu yüklemek için ana uygulama kaynak tanıtıcısı MFC kullanır. Bir iletişim kutusu, DLL başlatan bir gibi bir DLL'de dışa aktarılan bir işlevin varsa bu şablon aslında DLL modülü içinde depolanır. Geçiş için kullanılacak doğru tanıtıcı Modül durumu gerekir. Bu işlevin başlangıcına aşağıdaki kodu ekleyerek yapabilirsiniz:
+Varsayılan olarak, MFC kaynak şablonunu yüklemek için ana uygulamanın kaynak tanıtıcısını kullanır. Dll 'de bir iletişim kutusu Başlatan gibi bir DLL 'de içe aktarılmış işleviniz varsa, bu şablon aslında DLL modülünde depolanır. Kullanılacak doğru tanıtıcının modül durumunu değiştirmeniz gerekir. Bunu, işlevin başlangıcına aşağıdaki kodu ekleyerek yapabilirsiniz:
 
 ```cpp
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 ```
 
-Bu geçerli bir modül durumunu döndürüldüğü durumu ile değiştirir [AfxGetStaticModuleState](#afxgetstaticmodulestate) geçerli kapsamdaki sonuna kadar.
+Bu, geçerli modülün durumunu geçerli kapsamın sonuna kadar [AfxGetStaticModuleState](#afxgetstaticmodulestate) öğesinden döndürülen durum ile değiştirir.
 
-Modül durumları ve MFC ile ilgili daha fazla bilgi için bkz: "Yönetme durumu verileri, MFC modülleri" [yeni belgeler oluşturma, Windows ve görünümler](../creating-new-documents-windows-and-views.md) ve [Teknik Not 58](../tn058-mfc-module-state-implementation.md).
+Modül durumları ve MFC hakkında daha fazla bilgi için [yeni belgeler, pencereler ve görünümler oluşturma](../creating-new-documents-windows-and-views.md) ve [Teknik NOTTA 58](../tn058-mfc-module-state-implementation.md)"MFC modüllerinin durum verilerini yönetme" bölümüne bakın.
 
 > [!NOTE]
->  MFC etkinleştirme bağlamı için bir derleme oluşturur, bunu kullanan [Afxwinınit](application-information-and-management.md#afxwininit) bağlamı oluşturur ve `AFX_MANAGE_STATE` etkinleştirmesine ve devre dışı. Ayrıca `AFX_MANAGE_STATE` statik MFC kitaplıkları, yanı sıra MFC DLL'leri kullanıcı DLL tarafından seçilen uygun etkinleştirme bağlamı yürütmek için MFC kodu izin vermek üzere etkinleştirilir. Daha fazla bilgi için [MFC modül durumunda etkinleştirme bağlamları desteği](../support-for-activation-contexts-in-the-mfc-module-state.md).
+>  MFC bir derleme için bir etkinleştirme bağlamı oluşturduğunda, bağlamı oluşturmak için [Afxwininit](application-information-and-management.md#afxwininit) kullanır ve etkinleştirmek ve devre dışı bırakmak için `AFX_MANAGE_STATE`. Ayrıca, MFC kodunun Kullanıcı DLL tarafından seçilen uygun etkinleştirme bağlamında yürütülmesine izin vermek için MFC DLL 'Lerinin yanı sıra, `AFX_MANAGE_STATE` statik MFC kitaplıkları için de etkinleştirilmiş olduğunu unutmayın. Daha fazla bilgi için bkz. [MFC modül durumunda etkinleştirme bağlamları Için destek](../support-for-activation-contexts-in-the-mfc-module-state.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxstat_.h
+**Üst bilgi:** afxstat_. h
 
 ## <a name="a-nameafxoleinitmodulea-afxoleinitmodule"></a><a name="afxoleinitmodule"><a/> AfxOleInitModule
 
-Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN OLE destek için Normal MFC DLL içinde bu işlevi çağırın `CWinApp::InitInstance` MFC OLE DLL işlevi.
+MFC 'ye dinamik olarak bağlanan normal bir MFC DLL 'den OLE desteği için MFC OLE DLL 'sini başlatmak üzere normal MFC DLL 'sinin `CWinApp::InitInstance` işlevinde bu işlevi çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -97,17 +97,17 @@ void AFXAPI AfxOleInitModule( );
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC OLE DLL bir MFC uzantılı DLL dosyasıdır; bir MFC uzantılı DLL içine kablolu için sırada bir `CDynLinkLibrary` zinciri gerekir oluşturma bir `CDynLinkLibrary` onu kullanan her bir modüle bağlamında nesne. `AfxOleInitModule` oluşturur `CDynLinkLibrary` içine kablolu, böylece Normal MFC DLL bağlamda nesne `CDynLinkLibrary` nesnesi Normal MFC DLL'SİNİN zinciri.
+MFC OLE DLL 'i MFC uzantısı DLL 'dir; bir MFC uzantısı DLL 'sinin `CDynLinkLibrary` zincirine kablolu olması için, onu kullanacak her modülün bağlamında bir `CDynLinkLibrary` nesnesi oluşturması gerekir. `AfxOleInitModule`, normal MFC DLL 'inin `CDynLinkLibrary` nesne zincirine kablolu olması için normal MFC DLL bağlamındaki `CDynLinkLibrary` nesnesini oluşturur.
 
-Bir OLE denetim oluşturma ve kullanıyorsanız `COleControlModule`, değil, çağırmalıdır `AfxOleInitModule` çünkü `InitInstance` üye işlevi için `COleControlModule` çağrıları `AfxOleInitModule`.
+OLE denetimi oluşturuyorsanız ve `COleControlModule`kullanıyorsanız, `COleControlModule` çağrılarının `InitInstance` üye işlevi `AfxOleInitModule`için `AfxOleInitModule` çağırmamalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<afxdll_.h >
+**Üstbilgi**: \<afxdll_. h >
 
-## <a name="afxnetinitmodule"></a>  AfxNetInitModule
+## <a name="afxnetinitmodule"></a>AfxNetInitModule
 
-Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN gelen MFC yuva desteği sağlamak için bu işlev çağrısı, Normal MFC DLL içinde ekleyin `CWinApp::InitInstance` yuva MFC DLL işlevi.
+MFC 'ye dinamik olarak bağlanan normal bir MFC DLL 'den MFC Yuvaları desteği için, MFC Yuvaları DLL 'sini başlatmak üzere normal MFC DLL 'sinin `CWinApp::InitInstance` işlevinde bu işleve bir çağrı ekleyin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -117,15 +117,15 @@ void AFXAPI AfxNetInitModule( );
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC yuva DLL bir MFC uzantılı DLL dosyasıdır; bir MFC uzantılı DLL içine kablolu için sırada bir `CDynLinkLibrary` zinciri gerekir oluşturma bir `CDynLinkLibrary` onu kullanan her bir modüle bağlamında nesne. `AfxNetInitModule` oluşturur `CDynLinkLibrary` içine kablolu, böylece Normal MFC DLL bağlamda nesne `CDynLinkLibrary` nesnesi Normal MFC DLL'SİNİN zinciri.
+MFC Yuvaları DLL 'i bir MFC uzantısı DLL 'si; bir MFC uzantısı DLL 'sinin `CDynLinkLibrary` zincirine kablolu olması için, onu kullanacak her modülün bağlamında bir `CDynLinkLibrary` nesnesi oluşturması gerekir. `AfxNetInitModule`, normal MFC DLL 'inin `CDynLinkLibrary` nesne zincirine kablolu olması için normal MFC DLL bağlamındaki `CDynLinkLibrary` nesnesini oluşturur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<afxdll_.h >
+**Üstbilgi:** \<afxdll_. h >
 
-## <a name="afxgetambientactctx"></a> AfxGetAmbientActCtx
+## <a name="afxgetambientactctx"></a>Afxgetambentactctx
 
-MFC WinSxS davranışını etkileyen modül başına durum bayrağı geçerli durumunu almak için bu işlevi kullanın.
+Bu işlevi, MFC 'nin WinSxS davranışını etkileyen modül başına durum bayrağının geçerli durumunu almak için kullanın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -135,23 +135,23 @@ BOOL AFXAPI AfxGetAmbientActCtx();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Modül durum bayrağı geçerli değeri.
+Modül durumu bayrağı geçerli değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ne zaman bayrağını (varsayılan değer olan) olarak ayarlanır ve bir iş parçacığına MFC modül girer (bkz [AFX_MANAGE_STATE](#afx_manage_state)), modül bağlamında etkinleştirilir.
+Bayrak ayarlandığında (varsayılan olarak) ve bir iş parçacığı bir MFC modülüne girdiğinde (bkz. [AFX_MANAGE_STATE](#afx_manage_state)), modülün bağlamı etkinleştirilir.
 
-Bayrak ayarlanmazsa, modül bağlamında girişinde etkinleştirilmedi.
+Bayrak ayarlanmamışsa, modülün bağlamı girişte etkinleştirilmez.
 
-Bir modül bağlamında, bildirimindeki modülü kaynaklar genellikle katıştırılmış belirlenir.
+Modülün bağlamı, genellikle modül kaynaklarına gömülü olan bildiriminden belirlenir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcomctl32.h
+**Üstbilgi:** afxcomctl32. h
 
-## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
+## <a name="afxgetstaticmodulestate"></a>AfxGetStaticModuleState
 
-Başlatmadan önce Modül durumu ayarlamak için ve/veya temizleme sonra önceki modül durumunu geri yüklemek için bu işlevi çağırın.
+Başlatmadan önce modül durumunu ayarlamak ve/veya sildikten sonra önceki modül durumunu geri yüklemek için bu işlevi çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -161,29 +161,29 @@ AFX_MODULE_STATE* AFXAPI AfxGetStaticModuleState( );
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir `AFX_MODULE_STATE` yapısı.
+`AFX_MODULE_STATE` yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AFX_MODULE_STATE` Modülü, diğer bir deyişle, gönderilen veya POP Modül durumu kısmı için genel veri yapısı içerir.
+`AFX_MODULE_STATE` yapısı, modül için genel verileri, diğer bir deyişle, gönderilen veya atılan modül durumunun bölümünü içerir.
 
-Varsayılan olarak, kaynak şablonu yüklemek için ana uygulama kaynak tanıtıcısı MFC kullanır. Bir iletişim kutusu, DLL başlatan bir gibi bir DLL'de dışa aktarılan bir işlevin varsa bu şablon aslında DLL modülü içinde depolanır. Geçiş için kullanılacak doğru tanıtıcı Modül durumu gerekir. Bu işlevin başlangıcına aşağıdaki kodu ekleyerek yapabilirsiniz:
+Varsayılan olarak, MFC kaynak şablonunu yüklemek için ana uygulamanın kaynak tanıtıcısını kullanır. Dll 'de bir iletişim kutusu Başlatan gibi bir DLL 'de içe aktarılmış işleviniz varsa, bu şablon aslında DLL modülünde depolanır. Kullanılacak doğru tanıtıcının modül durumunu değiştirmeniz gerekir. Bunu, işlevin başlangıcına aşağıdaki kodu ekleyerek yapabilirsiniz:
 
 ```cpp
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 ```
 
-Bu geçerli bir modül durumunu döndürüldüğü durumu ile değiştirir `AfxGetStaticModuleState` geçerli kapsamdaki sonuna kadar.
+Bu, geçerli modül durumunu geçerli kapsamın sonuna kadar `AfxGetStaticModuleState` döndürülen durum ile değiştirir.
 
-Modül durumları ve MFC ile ilgili daha fazla bilgi için bkz: "Yönetme durumu verileri, MFC modülleri" [yeni belgeler oluşturma, Windows ve görünümler](../creating-new-documents-windows-and-views.md) ve [Teknik Not 58](../tn058-mfc-module-state-implementation.md).
+Modül durumları ve MFC hakkında daha fazla bilgi için [yeni belgeler, pencereler ve görünümler oluşturma](../creating-new-documents-windows-and-views.md) ve [Teknik NOTTA 58](../tn058-mfc-module-state-implementation.md)"MFC modüllerinin durum verilerini yönetme" bölümüne bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxstat_.h
+**Üst bilgi:** afxstat_. h
 
 ## <a name="afxinitextensionmodule"></a>AfxInitExtensionModule
 
-Bir MFC uzantı DLL'in bu işlevi çağırın `DllMain` DLL başlatılamadı.
+DLL 'yi başlatmak için bu işlevi bir MFC uzantı DLL 'sinin `DllMain` çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -193,19 +193,19 @@ BOOL AFXAPI AfxInitExtensionModule( AFX_EXTENSION_MODULE& state,  HMODULE hModul
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*<br/>
-Bir başvuru [AFX_EXTENSION_MODULE yapısı](afx-extension-module-structure.md) başlatmadan sonra MFC uzantısı DLL modülü durumunu içerecek yapı. Durum normal durağan nesnenin yapımı önce yürütülen bir parçası olarak MFC uzantısı DLL tarafından başlatılmamış. çalışma zamanı sınıf nesnelerin bir kopyasını içeren `DllMain` girilir.
+*durumunda*<br/>
+Başlangıçtan sonra MFC uzantısı DLL modülünün durumunu içerecek [AFX_EXTENSION_MODULE yapısı](afx-extension-module-structure.md) yapısına yönelik bir başvuru. Durum, `DllMain` girilmeden önce yürütülen normal statik nesne oluşturma bir parçası olarak MFC uzantı DLL tarafından başlatılan çalışma zamanı sınıfı nesnelerinin bir kopyasını içerir.
 
-*hModule'ü*<br/>
-MFC uzantısı DLL modül tanıtıcısı.
+*hModule*<br/>
+MFC uzantı DLL modülünün tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-MFC uzantı DLL'sini başarıyla başlatılırsa, TRUE; Aksi takdirde FALSE.
+MFC uzantı DLL 'SI başarıyla başlatılmışsa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin:
+Örnek:
 
 ```cpp
 static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { NULL, NULL };
@@ -225,22 +225,22 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 ...
 ```
 
-`AfxInitExtensionModule` DLL'nin hModule'ü bir kopyasını oluşturur ve DLL'nin çalışma zamanı sınıflar yakalar (`CRuntimeClass` yapıları), nesne fabrikaları yanı sıra (`COleObjectFactory` nesneleri) kullanmak için sonraki olduğunda `CDynLinkLibrary` nesnesi oluşturulur.
-MFC uzantısı DLL'leri iki şeyler gerek kendi `DllMain` işlevi:
+`AfxInitExtensionModule`, DLL 'nin HMODULE kopyasını oluşturur ve DLL 'nin çalışma zamanı sınıflarını (`CRuntimeClass` yapılarını) ve nesne fabrikalarını (`COleObjectFactory` nesneleri), daha sonra `CDynLinkLibrary` nesnesi oluşturulduğunda kullanmak üzere yakalar.
+MFC uzantı dll 'Lerinin `DllMain` işlevinde iki şey yapması gerekir:
 
-- Çağrı [AfxInitExtensionModule](#afxinitextensionmodule) ve dönüş değeri denetleyin.
+- [AfxInitExtensionModule 'ü](#afxinitextensionmodule) çağırın ve dönüş değerini denetleyin.
 
-- Oluşturma bir `CDynLinkLibrary` DLL dışa, nesne [CRuntimeClass yapısı](cruntimeclass-structure.md) nesneleri veya kendi özel kaynaklara sahip.
+- DLL [CRuntimeClass yapı](cruntimeclass-structure.md) nesnelerini dışarı aktaracaktır veya kendi özel kaynaklarına sahip olursa `CDynLinkLibrary` nesnesi oluşturun.
 
-Çağırabilirsiniz `AfxTermExtensionModule` her işlem MFC uzantısı DLL ayırdığında MFC uzantısı DLL temizlemek için (işlem çıktığında veya DLL sonucu olarak kaldırıldığında gerçekleşir bir `AfxFreeLibrary` arayın).
+Her işlem MFC uzantısı DLL 'sinden ayrıldığında (işlem çıktığında veya bir `AfxFreeLibrary` çağrısının sonucu olarak DLL kaldırıldığında gerçekleşir) MFC uzantı DLL 'sini temizlemek için `AfxTermExtensionModule` çağırabilirsiniz.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdll_.h
+**Üst bilgi:** afxdll_. h
 
-## <a name="afxsetambientactctx"></a>  AfxSetAmbientActCtx
+## <a name="afxsetambientactctx"></a>Afxsetambentactctx
 
-MFC WinSxS davranışını etkileyen modül başına durumunu bayrağını ayarlamak için bu işlevi kullanın.
+Bu işlevi, MFC 'nin WinSxS davranışını etkileyen modül başına durum bayrağını ayarlamak için kullanın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -250,14 +250,14 @@ void AFXAPI AfxSetAmbientActCtx(BOOL bSet);
 
 ### <a name="parameters"></a>Parametreler
 
-*bInternet*<br/>
-Yeni Modül durumu bayrak değeri.
+*bSet*<br/>
+Modül durumu bayrağının yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ne zaman bayrağını (varsayılan değer olan) olarak ayarlanır ve bir iş parçacığına MFC modül girer (bkz [AFX_MANAGE_STATE](#afx_manage_state)), modül bağlamında etkinleştirilir.
-Bayrak ayarlanmazsa, modül bağlamında girişinde etkinleştirilmedi.
-Bir modül bağlamında, bildirimindeki modülü kaynaklar genellikle katıştırılmış belirlenir.
+Bayrak ayarlandığında (varsayılan olarak) ve bir iş parçacığı bir MFC modülüne girdiğinde (bkz. [AFX_MANAGE_STATE](#afx_manage_state)), modülün bağlamı etkinleştirilir.
+Bayrak ayarlanmamışsa, modülün bağlamı girişte etkinleştirilmez.
+Modülün bağlamı, genellikle modül kaynaklarına gömülü olan bildiriminden belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -271,11 +271,11 @@ BOOL CMFCListViewApp::InitInstance()
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcomctl32.h
+**Üstbilgi:** afxcomctl32. h
 
-## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
+## <a name="afxtermextensionmodule"></a>AfxTermExtensionModule
 
-MFC her işlem DLL'den ayırdığında MFC uzantısı DLL temizlemeye izin vermek için bu işlevi çağırın (işlem çıktığında veya DLL sonucu olarak kaldırıldığında gerçekleşir bir `AfxFreeLibrary` arayın).
+Bu işlevi, MFC 'nin her bir işlem DLL 'den ayrıldığında (işlem çıktığında veya `AfxFreeLibrary` çağrısının bir sonucu olarak kaldırıldığında gerçekleşir) MFC uzantı DLL 'sini temizlemesini sağlamak için çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -285,15 +285,15 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*<br/>
-Bir başvuru [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) MFC uzantısı DLL modülü durumunu içeren yapısı.
+*durumunda*<br/>
+MFC uzantı DLL modülünün durumunu içeren [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) yapısına yönelik bir başvuru.
 
-*Top*<br/>
-TRUE ise tüm MFC uzantısı DLL modülleri temizleyin. Aksi takdirde, yalnızca geçerli DLL modülü temizleyin.
+*Topu*<br/>
+TRUE ise, tüm MFC uzantı DLL modüllerini temizleyin. Aksi takdirde, yalnızca geçerli DLL modülünü temizleyin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AfxTermExtensionModule` Modülü bağlı herhangi bir yerel depolama silme ve tüm girdileri ileti eşlemesi önbellekten kaldırma başlar. Örneğin:
+`AfxTermExtensionModule`, modüle eklenen tüm yerel depolamayı silecek ve ileti eşleme önbelleğindeki tüm girdileri kaldıracak. Örnek:
 
 ```cpp
 static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { NULL, NULL };
@@ -325,16 +325,16 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 }
 ```
 
-Uygulamanızı yükler ve MFC uzantısı DLL'leri dinamik olarak boşaltır, çağırdığınızdan emin olun `AfxTermExtensionModule`. Çoğu MFC uzantısı DLL'leri dinamik olarak yüklenmediği beri (genellikle kullanıcılar, içeri aktarma kitaplıkları bağlı), çağrı `AfxTermExtensionModule` genellikle gerekli değildir.
+Uygulamanız MFC uzantı dll 'Lerini dinamik olarak yükler ve serbest bırakır, `AfxTermExtensionModule`çağırdığınızdan emin olun. Çoğu MFC uzantı dll 'Leri dinamik olarak yüklenmediğinden (genellikle içeri aktarma kitaplıkları aracılığıyla bağlantılarlarsa) `AfxTermExtensionModule` çağrısı genellikle gerekli değildir.
 
-MFC uzantısı DLL'leri çağırmak için gereken [AfxInitExtensionModule](#afxinitextensionmodule) içinde kendi `DllMain`. DLL dışa aktarılıyorsa [CRuntimeClass](cruntimeclass-structure.md) nesneleri veya kendi özel kaynaklara sahip oluşturmanız gerekir bir `CDynLinkLibrary` nesnesine `DllMain`.
+MFC uzantı dll 'Lerinin `DllMain`[AfxInitExtensionModule](#afxinitextensionmodule) çağrısı gerekir. DLL, [CRuntimeClass](cruntimeclass-structure.md) nesnelerini dışarı aktaracaktır veya kendi özel kaynaklarına sahip olursa, `DllMain`bir `CDynLinkLibrary` nesnesi oluşturmanız da gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdll_.h
+**Üst bilgi:** afxdll_. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[Makrolar ve genel öğeler](mfc-macros-and-globals.md)<br/>
 [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
 [MFC Modüllerinin Durum Verisini Yönetme](../managing-the-state-data-of-mfc-modules.md)<br/>
