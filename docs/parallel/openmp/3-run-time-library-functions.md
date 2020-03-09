@@ -3,11 +3,11 @@ title: 3. Çalışma zamanı kitaplık işlevleri
 ms.date: 05/13/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
 ms.openlocfilehash: 6155eb87bd7a1a0533caf99afb3db8417854df30
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142952"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78882879"
 ---
 # <a name="3-run-time-library-functions"></a>3. çalışma zamanı kitaplık işlevleri
 

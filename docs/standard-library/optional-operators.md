@@ -1,5 +1,5 @@
 ---
-title: '&lt;İsteğe bağlı&gt; işleçleri'
+title: isteğe bağlı&gt; işleçleri &lt;
 ms.date: 11/04/2016
 f1_keywords:
 - optional/std::operator!=
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - std::operatoroperator&lt; (optional)
 - std::operatoroperator&lt;= (optional)
 ms.openlocfilehash: c5d0de435180054b186400384fc0583df5b03246
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268032"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854088"
 ---
-# <a name="ltoptionalgt-operators"></a>&lt;İsteğe bağlı&gt; işleçleri
+# <a name="ltoptionalgt-operators"></a>isteğe bağlı&gt; işleçleri &lt;
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-Olmadığını test eder `optional` işlecin sol tarafındaki nesnesinin eşit olup `optional` işlecin sağ tarafındaki nesne.
+İşlecin sol tarafındaki `optional` nesnesinin sağ taraftaki `optional` nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 template <class T, class U> constexpr bool operator==(const optional<T>& left, const optional<U>& right);
@@ -39,15 +39,15 @@ template <class T, class U> constexpr bool operator==(const U&, const optional<T
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+*sol*\
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 *sağ*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Olmadığını test eder `optional` işlecinin sol tarafındaki nesnesi eşit değil `optional` işlecin sağ tarafındaki nesne.
+İşlecin sol tarafındaki `optional` nesnesinin sağ taraftaki `optional` nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 template <class T, class U> constexpr bool operator!=(const optional<T>&, const optional<U>&);
@@ -59,19 +59,19 @@ template <class T, class U> constexpr bool operator!=(const U&, const optional<T
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+*sol*\
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 *sağ*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevinin döndürdüğü `!(left == right)`.
+Bu şablon işlevi `!(left == right)`döndürür.
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işleç&lt;
 
-Olmadığını test eder `optional` nesne işlecinin sol tarafındaki küçüktür `optional` işlecin sağ tarafındaki nesne.
+İşlecin sol tarafındaki `optional` nesnesinin sağ taraftaki `optional` nesnesinden küçük olup olmadığını sınar.
 
 ```cpp
 template <class T, class U> constexpr bool operator<(const optional<T>&, const optional<U>&);
@@ -83,19 +83,19 @@ template <class T, class U> constexpr bool operator<(const U&, const optional<T>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+*sol*\
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 *sağ*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki listenin daha ancak değil işlecin sağ tarafındaki listenin eşit Aksi takdirde küçükse **false**.
+işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeye eşit ancak bundan küçükse **true** ; Aksi halde **yanlış**.
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a>işleç&lt;=
 
-Olmadığını test eder `optional` işlecin sol tarafındaki nesnesinin değerinden küçük veya buna eşit olup `optional` işlecin sağ tarafındaki nesne.
+İşlecin sol tarafındaki `optional` nesnesinin sağ taraftaki `optional` nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 template <class T, class U> constexpr bool operator<=(const optional<T>&, const optional<U>&);
@@ -107,23 +107,23 @@ template <class T, class U> constexpr bool operator<=(const U&, const optional<T
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+*sol*\
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 *sağ*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki listenin daha veya işlecin sağ tarafındaki listenin eşittir; Aksi takdirde küçükse **false**.
+işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden daha küçükse veya eşitse **doğru** . Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevinin döndürdüğü `!(right < left)`.
+Bu şablon işlevi `!(right < left)`döndürür.
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işleç&gt;
 
-Olmadığını test eder `optional` nesne işlecinin sol tarafındaki büyük `optional` işlecin sağ tarafındaki nesne.
+İşlecin sol tarafındaki `optional` nesnesinin sağ taraftaki `optional` nesnesinden büyük olup olmadığını sınar.
 
 ```cpp
 template <class T, class U> constexpr bool operator>(const optional<T>&, const optional<U>&);
@@ -135,23 +135,23 @@ template <class T, class U> constexpr bool operator>(const U&, const optional<T>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+*sol*\
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 *sağ*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki listenin ise, aksi takdirde listede bir işlecin sağ tarafındaki büyük **false**.
+işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden büyükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevinin döndürdüğü `right < left`.
+Bu şablon işlevi `right < left`döndürür.
 
-## <a name="op_gt_eq"></a> İşleci&gt;=
+## <a name="op_gt_eq"></a>işleç&gt;=
 
-Olmadığını test eder `optional` işlecin sol tarafındaki nesnesinin değerinden büyük veya ona eşit olup `optional` işlecin sağ tarafındaki nesne.
+İşlecin sol tarafındaki `optional` nesnesinin sağ taraftaki `optional` nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 template <class T, class U> constexpr bool operator>=(const optional<T>&, const optional<U>&);
@@ -163,16 +163,16 @@ template <class T, class U> constexpr bool operator>=(const U&, const optional<T
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+*sol*\
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 *sağ*\
-Bir nesne türü `optional`, `nullopt_t`, veya `T`.
+`optional`, `nullopt_t`veya `T`türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `optional` büyüktür veya eşittir işleci sol tarafında olduğu `optional` ; işlecin sağ tarafındaki aksi **false**.
+işlecin sol tarafındaki `optional` işlecin sağ tarafındaki `optional` daha büyükse veya buna eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `!(left < right)`.
+Şablon işlevi `!(left < right)`döndürür.

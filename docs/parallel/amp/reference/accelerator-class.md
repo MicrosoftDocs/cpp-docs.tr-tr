@@ -41,11 +41,11 @@ helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
 ms.openlocfilehash: 72a570ab28696730f835c42748a6ea12b865ca55
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127170"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855930"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 
@@ -61,14 +61,14 @@ class accelerator;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Hızlandırıcı Oluşturucusu](#ctor)|`accelerator` sınıfının yeni bir örneğini başlatır.|
 |[~ Accelerator yıkıcısı](#ctor)|`accelerator` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[create_view](#create_view)|Bu hızlandırıcıda bir `accelerator_view` nesnesi oluşturur ve döndürür.|
 |[get_all](#get_all)|Tüm kullanılabilir hızlandırıcıları temsil eden `accelerator` nesnelerinin bir vektörünü döndürür.|
@@ -90,7 +90,7 @@ class accelerator;
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[operator!=](#operator_neq)|Bu `accelerator` nesnesini diğeri ile karşılaştırır ve aynı ise **false** değerini döndürür; Aksi takdirde, **true**döndürür.|
 |[işleç =](#operator_eq)|Belirtilen `accelerator` nesnesinin içeriğini buna kopyalar.|
@@ -98,7 +98,7 @@ class accelerator;
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[cpu_accelerator](#cpu_accelerator)|CPU `accelerator`için bir dize sabiti alır.|
 |[dedicated_memory](#dedicated_memory)|`accelerator`için ayrılmış belleği kilobayt cinsinden alır.|
