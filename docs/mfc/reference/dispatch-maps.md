@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
 ms.openlocfilehash: f1afa95d7c20d54f2015255a7e4e0d7ad9ae9c2b
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916522"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856656"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 
@@ -31,7 +31,7 @@ OLE Otomasyonu yöntemleri çağırmak ve uygulamalar arasında özelliklere eri
 
 ## <a name="declare_dispatch_map"></a>DECLARE_DISPATCH_MAP
 
-Programınızda türetilmiş `CCmdTarget`bir sınıf OLE Otomasyonu destekliyorsa, bu sınıf, yöntemlerini ve özelliklerini sunmak için bir dağıtım Haritası sağlamalıdır.
+Programınızdaki `CCmdTarget`türetilmiş bir sınıf OLE Otomasyonu destekliyorsa, bu sınıf kendi yöntemlerini ve özelliklerini sunmak için bir dağıtım eşlemesi sağlamalıdır.
 
 ```cpp
 DECLARE_DISPATCH_MAP()
@@ -39,7 +39,7 @@ DECLARE_DISPATCH_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf bildirimindeki sonundaki DECLARE_DISPATCH_MAP makrosunu kullanın. Ardından içinde. Sınıf için üye işlevlerini tanımlayan CPP dosyası, BEGIN_DISPATCH_MAP makrosunu kullanın. Ardından, sınıfınızın sunulan yöntemlerin ve özelliklerin her biri için makro girdilerini ekleyin (DISP_FUNCTION, DISP_PROPERTY vb.). Son olarak, END_DISPATCH_MAP makrosunu kullanın.
+Sınıf bildirimindeki sonundaki DECLARE_DISPATCH_MAP makrosunu kullanın. Ardından içinde. Sınıf için üye işlevlerini tanımlayan CPP dosyası BEGIN_DISPATCH_MAP makrosunu kullanın. Ardından, sınıfınızın sunulan yöntemlerin ve özelliklerin her biri için makro girdilerini ekleyin (DISP_FUNCTION, DISP_PROPERTY vb.). Son olarak, END_DISPATCH_MAP makrosunu kullanın.
 
 > [!NOTE]
 > DECLARE_DISPATCH_MAP sonra herhangi bir üye bildirirseniz, bunlar için yeni bir erişim türü ( **genel**, **özel**veya **korumalı**) belirtmeniz gerekir.
@@ -68,11 +68,11 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 Bu dağıtım eşlemesine sahip olan sınıfın adını belirtir.
 
 *baseClass*<br/>
-Sınıfın temel sınıf adını belirtir.
+Sınıfın temel sınıf adını *belirtir.*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, dağıtım haritasını BEGIN_DISPATCH_MAP makrosu ile başlatın, dağıtım işlevlerinizin ve özelliklerinin her biri için makro girişleri ekleyin ve END_DISPATCH_ ile dağıtım haritasını doldurun Makroyu EŞLEYIN.
+Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, dağıtım haritasını BEGIN_DISPATCH_MAP makrosu ile başlatın, dağıtım işlevlerinizin ve özelliklerden her biri için makro girişleri ekleyin ve dağıtım haritasını END_DISPATCH_ ile doldurun Makroyu EŞLEYIN.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -126,7 +126,7 @@ Sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtRetVal* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için aşağıdaki olası değerler `VARENUM` numaralandırmada alınır:
+*VtRetVal* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için aşağıdaki olası değerler `VARENUM` numaralandırmasından alınır:
 
 |Sembol|Dönüş türü|
 |------------|-----------------|
@@ -135,7 +135,7 @@ Sınıfın adı.
 |VT_I4|**long**|
 |VT_R4|**float**|
 |VT_R8|**double**|
-|VT_CY|LI|
+|VT_CY|CY|
 |VT_DATE|DATE|
 |VT_BSTR|BSTR|
 |VT_DISPATCH|LPDISPATCH|
@@ -144,13 +144,13 @@ Sınıfın adı.
 |VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
-*VtsParams* bağımsız değişkeni, `VTS_*` sabitlerin değerlerinin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin,
+*VtsParams* bağımsız değişkeni, `VTS_*` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin,
 
 [!code-cpp[NVC_MFCAutomation#14](../../mfc/codesnippet/cpp/dispatch-maps_2.cpp)]
 
 kısa bir tamsayı içeren bir liste ve ardından kısa bir tamsayıya yönelik işaretçiyi belirtir.
 
-`VTS_` Sabitler ve anlamları aşağıdaki gibidir:
+`VTS_` sabitleri ve anlamları aşağıdaki gibidir:
 
 |Sembol|Parametre türü|
 |------------|--------------------|
@@ -166,10 +166,10 @@ kısa bir tamsayı içeren bir liste ve ardından kısa bir tamsayıya yönelik 
 |VTS_BOOL|BOOL|
 |VTS_VARIANT|`const VARIANT*` veya `VARIANT&`|
 |VTS_UNKNOWN|LPUNKNOWN|
-|VTS_PI2|__kısadır\*__|
-|VTS_PI4|__kalacağını\*__|
-|VTS_PR4|__float\*__|
-|VTS_PR8|__Çift\*__|
+|VTS_PI2|__kısa\*__|
+|VTS_PI4|__uzun\*__|
+|VTS_PR4|__kayan\*__|
+|VTS_PR8|__Double\*__|
 |VTS_PCY|`CY*`|
 |VTS_PDATE|`DATE*`|
 |VTS_PBSTR|`BSTR*`|
@@ -220,7 +220,7 @@ Sınıfın adı.
 |VT_I4|**long**|
 |VT_R4|**float**|
 |VT_R8|**double**|
-|VT_CY|LI|
+|VT_CY|CY|
 |VT_DATE|DATE|
 |VT_BSTR|`CString`|
 |VT_DISPATCH|LPDISPATCH|
@@ -269,7 +269,7 @@ Sınıfın adı.
 
 *MemberGet* ve *memberSet* Işlevlerinin, *vtPropType* bağımsız değişkeni tarafından belirlenen imzaları vardır. *MemberGet* işlevi bağımsız değişken almaz ve *vtPropType*tarafından belirtilen türde bir değer döndürür. *MemberSet* Işlevi, *vtPropType* tarafından belirtilen türde bir bağımsız değişken alır ve hiçbir şey döndürmez.
 
-*VtPropType* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır. Bu değerlerin bir listesi için, [DISP_FUNCTION](#disp_function)'Deki *vtRetVal* parametresine yönelik açıklamalara bakın. DISP_FUNCTION açıklamalarında listelenen VT_EMPTY Özellik veri türü olarak izin verilmediğini unutmayın.
+*VtPropType* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır. Bu değerlerin bir listesi için [DISP_FUNCTION](#disp_function) *vtRetVal* parametresinin açıklamalarını inceleyin. DISP_FUNCTION açıklamalarında listelenen VT_EMPTY, özellik veri türü olarak izin verilmediğini unutmayın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -317,7 +317,7 @@ DISP_PROPERTY ile tanımlanan özelliklerden farklı olarak, DISP_PROPERTY_NOTIF
 |VT_I4|**long**|
 |VT_R4|**float**|
 |VT_R8|**double**|
-|VT_CY|LI|
+|VT_CY|CY|
 |VT_DATE|DATE|
 |VT_BSTR|`CString`|
 |VT_DISPATCH|LPDISPATCH|
@@ -332,7 +332,7 @@ DISP_PROPERTY ile tanımlanan özelliklerden farklı olarak, DISP_PROPERTY_NOTIF
 
 ## <a name="disp_property_param"></a>DISP_PROPERTY_PARAM
 
-Ayrı `Get` ve`Set` üye işlevlerle erişilen bir özelliği tanımlar.
+Ayrı `Get` ve `Set` üye işlevlerle erişilen bir özelliği tanımlar.
 
 ```cpp
 DISP_PROPERTY_PARAM(
@@ -362,7 +362,7 @@ Sınıfın adı.
 Özelliğin türünü belirten bir değer.
 
 *vtsParams*<br/>
-Her parametre için bir tane olmak `VTS_*` üzere boşlukla ayrılmış değişken parametre türleri dizesi.
+Her parametre için bir tane olmak üzere boşlukla ayrılmış `VTS_*` Variant parametre türleri dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -374,7 +374,7 @@ Kullanıcının özelliğe erişirken belirli bir satır ve sütun istemesine iz
 
 [!code-cpp[NVC_MFCActiveXControl#9](../../mfc/codesnippet/cpp/dispatch-maps_3.h)]
 
-Bunlar, denetim dağıtım eşlemesindeki aşağıdaki DISP_PROPERTY_PARAM makroya karşılık gelir:
+Bunlar, denetim dağıtım eşlemesindeki şu DISP_PROPERTY_PARAM makroya karşılık gelir:
 
 [!code-cpp[NVC_MFCActiveXControl#10](../../mfc/codesnippet/cpp/dispatch-maps_4.cpp)]
 
@@ -382,7 +382,7 @@ Diğer bir örnek olarak, aşağıdaki get ve set üye işlevlerini göz önünd
 
 [!code-cpp[NVC_MFCActiveXControl#11](../../mfc/codesnippet/cpp/dispatch-maps_5.h)]
 
-Bunlar, denetim dağıtım eşlemesindeki aşağıdaki DISP_PROPERTY_PARAM makroya karşılık gelir:
+Bunlar, denetim dağıtım eşlemesindeki şu DISP_PROPERTY_PARAM makroya karşılık gelir:
 
 [!code-cpp[NVC_MFCActiveXControl#12](../../mfc/codesnippet/cpp/dispatch-maps_6.cpp)]
 

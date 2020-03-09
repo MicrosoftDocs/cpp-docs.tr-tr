@@ -22,11 +22,11 @@ helpviewer_keywords:
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
 ms.openlocfilehash: 551bca93a30bee52dc4c838864df28cb747d91df
-ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74898837"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856559"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -148,14 +148,14 @@ cout.imbue(loc);
 
 |Tür adı|Açıklama|
 |-|-|
-|[Kategori](#category)|Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.|
+|[alan](#category)|Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
 |[bile](#combine)|Belirtilen yerel ayardaki bir modeli hedef yerel ayara ekler.|
-|[Adı](#name)|Depolanan yerel ayar adını döndürür.|
+|[ada](#name)|Depolanan yerel ayar adını döndürür.|
 
 ### <a name="static-functions"></a>Statik işlevler
 
@@ -168,10 +168,10 @@ cout.imbue(loc);
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Bir yerel ayar atar.|
+|[işleç =](#op_eq)|Bir yerel ayar atar.|
 |[operator!=](#op_neq)|İki yerel ayarın farklı olup olmadığını sınar.|
 |[operator ()](#op_call)|İki `basic_string` nesnesini karşılaştırır.|
-|[operator==](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|
+|[işleç = =](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
 

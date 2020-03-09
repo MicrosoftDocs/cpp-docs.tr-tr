@@ -135,15 +135,15 @@ helpviewer_keywords:
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
 ms.openlocfilehash: 0c4ea79165f31de32645c2258f699f3a03f24877
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688800"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78890764"
 ---
 # <a name="unordered_multiset-class"></a>unordered_multiset Sınıfı
 
-Sınıf şablonu, `const Key` türünde bir dizi öğeyi denetleyen nesneyi tanımlar. Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe hem bir sıralama anahtarı hem de bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
+Sınıf şablonu, `const Key`türünde bir dizi öğeyi denetleyen nesneyi tanımlar. Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe hem bir sıralama anahtarı hem de bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -159,7 +159,7 @@ class unordered_multiset;
 
 |Parametre|Açıklama|
 |-|-|
-|*Key*|Anahtar türü.|
+|*Anahtar*|Anahtar türü.|
 |*Yla*|Karma işlev nesne türü.|
 |*Pred*|Eşitlik karşılaştırma işlevi nesne türü.|
 |*Tahsis*|Ayırıcı sınıf.|
@@ -193,14 +193,14 @@ class unordered_multiset;
 |[cbegin](#cbegin)|Denetlenen dizinin başlangıcını belirtir.|
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
 |[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
-|[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
+|[count](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
 |[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
 |[olmamalıdır](#empty)|Bir öğe olup olmadığını sınar.|
 |[erer](#end)|Denetlenen dizinin bitişini belirtir.|
 |[equal_range](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|
 |[silme](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
-|[bilgi](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
+|[find](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
 |[ekleyin](#insert)|Öğeleri ekler.|
@@ -220,13 +220,13 @@ class unordered_multiset;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesnesi, [unordered_multiset:: key_equal](#key_equal) türünde bir karşılaştırma işlevi nesnesi ve [unordered_multiset:: hasher](#hasher)türünde bir karma işlev nesnesi olan iki saklı nesneyi çağırarak denetlediği diziyi sıralar. [Unordered_multiset:: key_eq](#key_eq) `()`; üye işlevini çağırarak, ilk saklı nesneye erişirsiniz. ve [unordered_multiset:: hash_function](#hash) `()` üye işlevini çağırarak ikinci saklı nesneye erişirsiniz. Özellikle, tüm değerler `X` ve `Key` türünde `Y`, çağrı `key_eq()(X, Y)` yalnızca iki bağımsız değişken değeri eşdeğer sıralamaya sahip olduğunda true değerini döndürür; çağrı `hash_function()(keyval)` `size_t` türündeki değerlerin bir dağılımını verir. Sınıf şablonu [unordered_set sınıfından](../standard-library/unordered-set-class.md)farklı olarak, `unordered_multiset` türündeki bir nesne, denetlenen sıranın herhangi iki öğesi için `key_eq()(X, Y)` her zaman false olduğundan emin olmaz. (Anahtarlarının benzersiz olması gerekmez.)
+Nesne, iki saklı nesneyi çağırarak denetlediği sırayı, [unordered_multiset:: key_equal](#key_equal) türünde bir karşılaştırma işlev nesnesi ve [unordered_multiset:: hasher](#hasher)türünde bir karma işlev nesnesi olarak sıralar. [Unordered_multiset:: key_eq](#key_eq)`()`; üye işlevini çağırarak, ilk saklı nesneye erişirsiniz. ve [unordered_multiset:: hash_function](#hash)`()`üye işlevini çağırarak ikinci saklı nesneye erişirsiniz. Özellikle, tüm değerler `X` ve `Key`türünde `Y`, çağrı `key_eq()(X, Y)` yalnızca iki bağımsız değişken değeri eşdeğer sıralamaya sahip olduğunda true değerini döndürür; çağrı `hash_function()(keyval)` `size_t`türündeki değerlerin bir dağılımını verir. Sınıf şablonu [unordered_set sınıfından](../standard-library/unordered-set-class.md)farklı olarak, `unordered_multiset` türündeki bir nesne, denetlenen sıradaki iki öğe için `key_eq()(X, Y)` her zaman false olmasını sağlamaz. (Anahtarlarının benzersiz olması gerekmez.)
 
-Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yüksek yük faktörünü depolar. Bir öğe eklemek [unordered_multiset:: load_factor](#load_factor) `()`, en fazla yük etmenini aşmasına neden olursa kapsayıcı, demetlerin sayısını artırır ve gerekirse karma tabloyu yeniden oluşturur.
+Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yüksek yük faktörünü depolar. Bir öğe eklemek [unordered_multiset:: load_factor](#load_factor)`()` en fazla yük etmenini aşmasına neden olursa kapsayıcı, demetlerin sayısını artırır ve gerekirse karma tabloyu yeniden oluşturur.
 
 Denetlenen dizideki öğelerin gerçek sırası karma işleve, karşılaştırma işlevine, ekleme sırasına, en yüksek yük faktörüne ve geçerli demet sayısına bağlıdır. Denetlenen dizideki öğelerin sırasını genelde tahmin edemezsiniz. Ancak, eşdeğer sıralamaya sahip öğelerin herhangi bir alt kümesinin her zaman denetlenen dizide bitişik olduğundan emin olabilirsiniz.
 
-Nesnesi, [unordered_multiset:: allocator_type](#allocator_type)türünde depolanan bir ayırıcı nesne aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Böyle bir ayırıcı nesne, `allocator` türünde bir nesne ile aynı dış arabirime sahip olmalıdır. Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
+Nesnesi, [unordered_multiset:: allocator_type](#allocator_type)türünde depolanan bir ayırıcı nesne aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Böyle bir ayırıcı nesne, `allocator`türünde bir nesne ile aynı dış arabirime sahip olmalıdır. Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -234,7 +234,7 @@ Nesnesi, [unordered_multiset:: allocator_type](#allocator_type)türünde depolan
 
 **Ad alanı:** std
 
-## <a name="allocator_type"></a>unordered_multiset::allocator_type
+## <a name="allocator_type"></a>unordered_multiset:: allocator_type
 
 Depolamayı yönetmek için bir ayırıcı türü.
 
@@ -244,7 +244,7 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Alloc` şablon parametresi için bir eş anlamlı.
+Tür, `Alloc`şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -350,12 +350,12 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval* \
+*keyval*\
 Eşlenecek anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, şu anda `keyval` anahtar değere karşılık gelen demet numarasını döndürür.
+Üye işlevi, şu anda `keyval`anahtar değere karşılık gelen demet numarasını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -396,7 +396,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="bucket_count"></a>unordered_multiset::bucket_count
+## <a name="bucket_count"></a>unordered_multiset:: bucket_count
 
 Demet sayısını alır.
 
@@ -481,7 +481,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="bucket_size"></a>unordered_multiset::bucket_size
+## <a name="bucket_size"></a>unordered_multiset:: bucket_size
 
 Bir demet boyutunu alır
 
@@ -491,7 +491,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket* \
+*nbucket*\
 Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -551,9 +551,9 @@ Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir A
 
 ### <a name="remarks"></a>Açıklamalar
 
-@No__t_0 dönüş değeri ile aralıktaki öğeler değiştirilemez.
+`cbegin`dönüş değeri ile aralıktaki öğeler değiştirilemez.
 
-Dönüş değerinin `const_iterator` olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()` destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Dönüş değerinin `const_iterator`olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
 
 ```cpp
 auto i1 = Container.begin();
@@ -579,7 +579,7 @@ Yalnızca aralığın sonunu işaret eden bir **const** ileri erişim yineleyici
 
 `cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
-Dönüş değerinin `const_iterator` olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()` destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Dönüş değerinin `const_iterator`olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
 
 ```cpp
 auto i1 = Container.end();
@@ -589,7 +589,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-@No__t_0 tarafından döndürülen değer başvurulmamalıdır.
+`cend` tarafından döndürülen değer başvurulmamalıdır.
 
 ## <a name="clear"></a>unordered_multiset:: Clear
 
@@ -601,7 +601,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [unordered_multiset:: erase](#erase) `(` [unordered_multiset:: BEGIN](#begin) `(),` [unordered_multiset:: End](#end) `())` çağırır.
+Üye işlevi [unordered_multiset:: erase](#erase)`(` [unordered_multiset:: BEGIN](#begin)`(),` [unordered_multiset:: End](#end)`())`çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -658,7 +658,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a>unordered_multiset::const_iterator
+## <a name="const_iterator"></a>unordered_multiset:: const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -668,7 +668,7 @@ typedef T1 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada `T1` uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
+Türü, denetimli sıra için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada `T1`uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -701,7 +701,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_local_iterator"></a>unordered_multiset::const_local_iterator
+## <a name="const_local_iterator"></a>unordered_multiset:: const_local_iterator
 
 Denetlenen dizi için bir sabit demet yineleyici türü.
 
@@ -711,7 +711,7 @@ typedef T5 const_local_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, bir demet için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada `T5` uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
+Türü, bir demet için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada `T5`uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -749,7 +749,7 @@ int main()
 [a]
 ```
 
-## <a name="const_pointer"></a>unordered_multiset::const_pointer
+## <a name="const_pointer"></a>unordered_multiset:: const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -795,7 +795,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_reference"></a>unordered_multiset::const_reference
+## <a name="const_reference"></a>unordered_multiset:: const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -851,12 +851,12 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval* \
+*keyval*\
 Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [unordered_multiset:: equal_range](#equal_range) `(keyval)` ile ayrılmış aralıktaki öğelerin sayısını döndürür.
+Üye işlevi [unordered_multiset:: equal_range](#equal_range)`(keyval)`ile ayrılmış aralıktaki öğe sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -906,7 +906,7 @@ typedef T3 difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. Burada `T3` uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
+İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. Burada `T3`uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -968,7 +968,7 @@ iterator emplace(Args&&... args);
 
 |Parametre|Açıklama|
 |-|-|
-|*args*|Unordered_multiset içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+|*args*|Unordered_multiset eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -982,7 +982,7 @@ Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma 
 
 Kod örneği için bkz. [Çoklu küme:: emplace](../standard-library/multiset-class.md#emplace).
 
-## <a name="emplace_hint"></a>unordered_multiset::emplace_hint
+## <a name="emplace_hint"></a>unordered_multiset:: emplace_hint
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
@@ -997,7 +997,7 @@ iterator emplace_hint(
 
 |Parametre|Açıklama|
 |-|-|
-|*args*|Unordered_multiset içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+|*args*|Unordered_multiset eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
 |*olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1012,7 +1012,7 @@ Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma 
 
 Kod örneği için bkz. [set:: emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-## <a name="empty"></a>unordered_multiset:: Empty
+## <a name="empty"></a>unordered_multiset:: boş
 
 Bir öğe olup olmadığını sınar.
 
@@ -1092,7 +1092,7 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket* \
+*nbucket*\
 Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1145,7 +1145,7 @@ int main()
 [a]
 ```
 
-## <a name="equal_range"></a>unordered_multiset::equal_range
+## <a name="equal_range"></a>unordered_multiset:: equal_range
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
@@ -1159,7 +1159,7 @@ std::pair<const_iterator, const_iterator>
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval* \
+*keyval*\
 Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1216,7 +1216,7 @@ equal_range('b'): [b]
 
 ## <a name="erase"></a>unordered_multiset:: Erase
 
-Belirtilen konumlardan bir unordered_multiset içindeki öğe veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
+Belirtilen konumlardan bir unordered_multiset öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
 ```cpp
 iterator erase(
@@ -1232,21 +1232,21 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* \
+*Burada*\
 Kaldırılacak öğenin konumu.
 
-*İlk* \
+*İlk*\
 Kaldırılacak ilk öğenin konumu.
 
-*Son* \
+*Son*\
 Kaldırılacak son öğenin hemen ötesinde konumlandır.
 
-*Anahtar* \
+*Anahtar*\
 Kaldırılacak öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlevi için, kaldırılan öğelerin dışında kalan ilk öğeyi belirten çift yönlü bir yineleyici veya böyle bir öğe yoksa unordered_multiset sonu olan bir öğe.
+İlk iki üye işlevi için, kaldırılan öğelerin dışında kalan ilk öğeyi veya böyle bir öğe yoksa unordered_multiset sonu olan bir öğeyi atayan çift yönlü bir yineleyici.
 
 Üçüncü üye işlevi için, unordered_multiset kaldırılan öğelerin sayısını döndürür.
 
@@ -1264,12 +1264,12 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval* \
+*keyval*\
 Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [unordered_multiset:: equal_range](#equal_range) `(keyval).first` döndürür.
+Üye işlevi [unordered_multiset:: equal_range](#equal_range)`(keyval).first`döndürüyor.
 
 ### <a name="example"></a>Örnek
 
@@ -1314,7 +1314,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-## <a name="get_allocator"></a>unordered_multiset::get_allocator
+## <a name="get_allocator"></a>unordered_multiset:: get_allocator
 
 Depolanan ayırıcı nesnesini alır.
 
@@ -1352,7 +1352,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="hash"></a>unordered_multiset::hash_function
+## <a name="hash"></a>unordered_multiset:: hash_function
 
 Depolanan karma işlevi nesnesini alır.
 
@@ -1400,7 +1400,7 @@ typedef Hash hasher;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Hash` şablon parametresi için bir eş anlamlı.
+Tür, `Hash`şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1428,9 +1428,9 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a>unordered_multiset:: insert
+## <a name="insert"></a>unordered_multiset:: INSERT
 
-Bir unordered_multiset öğesine öğe veya öğe aralığı ekler.
+Bir unordered_multiset öğe veya öğe aralığı ekler.
 
 ```cpp
 // (1) single element
@@ -1470,19 +1470,19 @@ IList);
 
 |Parametre|Açıklama|
 |-|-|
-|*Acil*|Unordered_multiset içine eklenecek öğenin değeri.|
+|*Acil*|Unordered_multiset eklenecek öğenin değeri.|
 |*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer.|
-|*ValTy*|Unordered_multiset 'in bir [value_type](../standard-library/map-class.md#value_type)öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız *değişken olarak kusursuz* iletme değeri.|
+|*ValTy*|Unordered_multiset, [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız değişken olarak *kusursuz iletme değeri* .|
 |*Adı*|Kopyalanacak ilk öğenin konumu.|
 |*Soyadına*|Kopyalanacak son öğenin hemen ötesinde konum.|
-|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesnelerini oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
+|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
 |*IList*|Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek öğeli-ekleme üye işlevleri, (1) ve (2), yeni öğenin unordered_multiset içine eklendiği konuma bir yineleyici döndürür.
+Tek öğeli-ekleme üye işlevleri, (1) ve (2), yeni öğenin unordered_multiset eklendiği konuma bir yineleyici döndürür.
 
-Tek öğeli-ipucu üye işlevleri, (3) ve (4), yeni öğenin unordered_multiset içine eklendiği konuma işaret eden bir yineleyici döndürür.
+Tek öğeli-ipucu üye işlevleri, (3) ve (4), yeni öğenin unordered_multiset eklendiği konuma işaret eden bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1490,13 +1490,13 @@ Bu işlev tarafından geçersiz kılınan işaretçiler veya başvurular yok, an
 
 Yalnızca bir öğenin eklenmesi sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmemişse kapsayıcının durumu değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır. Birden çok öğenin eklenmesi sırasında, bir özel durum oluşturulursa, kapsayıcı belirtilmemiş ancak geçerli bir durumda bırakılır.
 
-Bir kapsayıcının [value_type](../standard-library/map-class.md#value_type) , kapsayıcıya ait olan bir typedef ve set için `unordered_multiset<V>::value_type` türü `const V`.
+Kapsayıcının [value_type](../standard-library/map-class.md#value_type) , kapsayıcıya ait olan bir typedef ve set için `unordered_multiset<V>::value_type` tür `const V`.
 
-Aralık üye işlevi (5), öğe değerlerinin dizisini aralıktaki bir yineleyici tarafından bahsedilen her öğeye karşılık gelen bir unordered_multiset içine ekler `[First, Last)`; Bu nedenle, *son* eklenmez. Kapsayıcı üye işlevi `end()` kapsayıcıdaki son öğeden hemen sonra gelen konuma başvurur — Örneğin, `m.insert(v.begin(), v.end());` deyimin tüm öğelerini `m` `v` ekler.
+Aralık üye işlevi (5), öğe değerlerinin dizisini aralıktaki bir yineleyici tarafından bahsedilen her öğeye karşılık gelen bir unordered_multiset ekler `[First, Last)`; Bu nedenle, *son* eklenmez. Kapsayıcı üye işlevi `end()` kapsayıcıdaki son öğeden hemen sonra gelen konuma başvurur — Örneğin, `m.insert(v.begin(), v.end());` deyimin tüm öğelerini `m``v` ekler.
 
-Başlatıcı listesi üye işlevi (6), unordered_multiset öğelerini kopyalamak için bir [initializer_list](../standard-library/initializer-list.md) kullanır.
+Başlatıcı listesi üye işlevi (6), öğeleri unordered_multiset kopyalamak için bir [initializer_list](../standard-library/initializer-list.md) kullanır.
 
-Yerinde oluşturulmuş bir öğenin eklenmesi için (yani, kopyalama veya taşıma işlemleri yapılmaz), bkz. [unordered_multiset:: emplace](#emplace) ve [unordered_multiset:: emplace_hint](#emplace_hint).
+Yerinde oluşturulmuş bir öğenin eklenmesi için — diğer bir deyişle, kopyalama veya taşıma işlemleri yapılmaz — [unordered_multiset:: emplace](#emplace) ve [unordered_multiset:: emplace_hint](#emplace_hint).
 
 Kod örneği için bkz. [Çoklu küme:: INSERT](../standard-library/multiset-class.md#insert).
 
@@ -1512,7 +1512,7 @@ typedef implementation-defined iterator;
 
 **Yineleyici**bildirme ve kullanma [](../standard-library/multiset-class.md#begin) örneğine örnek olarak bkz.
 
-## <a name="key_eq"></a>unordered_multiset::key_eq
+## <a name="key_eq"></a>unordered_multiset:: key_eq
 
 Depolanan karşılaştırma işlevi nesnesini alır.
 
@@ -1552,7 +1552,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_equal"></a>unordered_multiset::key_equal
+## <a name="key_equal"></a>unordered_multiset:: key_equal
 
 Karşılaştırma işlevinin türü.
 
@@ -1562,7 +1562,7 @@ typedef Pred key_equal;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Pred` şablon parametresi için bir eş anlamlı.
+Tür, `Pred`şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1592,7 +1592,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a>unordered_multiset::key_type
+## <a name="key_type"></a>unordered_multiset:: key_type
 
 Bir sıralama anahtarının türü.
 
@@ -1602,7 +1602,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Key` şablon parametresi için bir eş anlamlı.
+Tür, `Key`şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1646,7 +1646,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-## <a name="load_factor"></a>unordered_multiset::load_factor
+## <a name="load_factor"></a>unordered_multiset:: load_factor
 
 Demet başına ortalama öğeyi sayar.
 
@@ -1656,7 +1656,7 @@ float load_factor() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `(float)`[unordered_multiset:: size](#size) `() / (float)`[unordered_multiset:: bucket_count](#bucket_count) `()`, demet başına ortalama öğe sayısını döndürür.
+Üye işlevi `(float)`[unordered_multiset:: size](#size)`() / (float)`[unordered_multiset:: bucket_count](#bucket_count)`()`, demet başına düşen ortalama öğe sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1714,7 +1714,7 @@ int main()
 }
 ```
 
-## <a name="local_iterator"></a>unordered_multiset::local_iterator
+## <a name="local_iterator"></a>unordered_multiset:: local_iterator
 
 Demet yineleyicisinin türü.
 
@@ -1724,7 +1724,7 @@ typedef T4 local_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, bir demet için ileriye doğru Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada `T4` uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
+Türü, bir demet için ileriye doğru Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada `T4`uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -1762,7 +1762,7 @@ int main()
 [a]
 ```
 
-## <a name="max_bucket_count"></a>unordered_multiset::max_bucket_count
+## <a name="max_bucket_count"></a>unordered_multiset:: max_bucket_count
 
 En yüksek demet sayısını alır.
 
@@ -1848,7 +1848,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_load_factor"></a>unordered_multiset::max_load_factor
+## <a name="max_load_factor"></a>unordered_multiset:: max_load_factor
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
@@ -1860,7 +1860,7 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*faktör* \
+*faktör*\
 Yeni en yüksek yük faktörü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1941,7 +1941,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_size"></a>unordered_multiset::max_size
+## <a name="max_size"></a>unordered_multiset:: max_size
 
 Denetlenen dizinin en büyük boyutunu alır.
 
@@ -1990,11 +1990,11 @@ unordered_multiset& operator=(unordered_multiset&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|*Right*|@No__t_1 Kopyalanmakta olan [unordered_multiset](../standard-library/unordered-multiset-class.md) .|
+|*Right*|`unordered_multiset`kopyalandığı [unordered_multiset](../standard-library/unordered-multiset-class.md) .|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `unordered_multiset` var olan öğeleri sildikten sonra, `operator=` içeriğini kopyalar veya `unordered_multiset` içine *taşısa* .
+Bir `unordered_multiset`var olan öğeleri sildikten sonra, `operator=` içeriğini kopyalar veya `unordered_multiset`içine *taşısa* .
 
 ### <a name="example"></a>Örnek
 
@@ -2127,7 +2127,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="rehash"></a>unordered_multiset:: rehash
+## <a name="rehash"></a>unordered_multiset:: yeniden karma
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2137,7 +2137,7 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*ndemetler* \
+*ndemetler*\
 İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2272,7 +2272,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a>unordered_multiset::size_type
+## <a name="size_type"></a>unordered_multiset:: size_type
 
 İki öğe arasındaki işaretsiz bir mesafenin türü.
 
@@ -2282,7 +2282,7 @@ typedef T2 size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. Burada `T2` uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
+İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. Burada `T2`uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -2318,12 +2318,12 @@ void swap(unordered_multiset& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 İle takas edilecek kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. [Unordered_multiset:: get_allocator](#get_allocator) `() == right.get_allocator()`, bu, sabit bir zamanda, yalnızca `Tr` türündeki saklı nitelikler nesnesini kopyalamanın sonucu olarak bir özel durum oluşturur ve içinde öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar. iki denetimli dizi. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
+Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. [Unordered_multiset:: get_allocator](#get_allocator)`() == right.get_allocator()`, bu durum sabit zamanlı olarak, yalnızca `Tr`türündeki saklı nitelikler nesnesini kopyalamanın sonucu olarak bir özel durum oluşturur ve iki denetimli sırada öğeleri belirten başvuruları, işaretçileri veya yineleyicileri geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2380,7 +2380,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="unordered_multiset"></a>unordered_multiset::unordered_multiset
+## <a name="unordered_multiset"></a>unordered_multiset:: unordered_multiset
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -2442,15 +2442,15 @@ unordered_multiset(
 |*Yla*|Depolanacak karma işlev nesnesi.|
 |*Bucket_count*|En düşük demet sayısı.|
 |*Right*|Kopyalanacak kapsayıcı.|
-|*IList*|Kopyalanacak initializer_list.|
+|*IList*|Kopyalamanın initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, *sağdan*denetlenen sıranın bir kopyasını belirtir. İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü Oluşturucu öğe değerlerinin dizisini `[First, Last)` ekler. Dördüncü Oluşturucu *sağ*taşıyarak sıranın bir kopyasını belirtir.
+İlk Oluşturucu, *sağdan*denetlenen sıranın bir kopyasını belirtir. İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü Oluşturucu öğe değerlerinin dizisini `[First, Last)`ekler. Dördüncü Oluşturucu *sağ*taşıyarak sıranın bir kopyasını belirtir.
 
 Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya Oluşturucu için değerler *sağdan*alınır. Aksi durumda:.
 
-En düşük demet sayısı, varsa *Bucket_count*bağımsız değişkenidir; Aksi takdirde, burada `N0` uygulama tanımlı değer olarak açıklanan varsayılan bir değerdir.
+Varsa, en düşük demet sayısı *Bucket_count*bağımsız değişkendir; Aksi takdirde, burada `N0`uygulama tanımlı değer olarak açıklanan varsayılan bir değerdir.
 
 Karma işlev nesnesi varsa bağımsız değişken *karmasıdır*; Aksi takdirde `Hash()`.
 
@@ -2458,7 +2458,7 @@ Karşılaştırma işlevi nesnesi, varsa, *comp*bağımsız değişkenidir; Aksi
 
 Ayırıcı nesne varsa *Al*bağımsız değişkenidir; Aksi takdirde, `Alloc()`.
 
-## <a name="value_type"></a>unordered_multiset::value_type
+## <a name="value_type"></a>unordered_multiset:: value_type
 
 Öğenin türü.
 
@@ -2514,7 +2514,7 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< unordered_set >](../standard-library/unordered-set.md) \
-[Kapsayıcılar](../cpp/containers-modern-cpp.md) \
-[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[< unordered_set >](../standard-library/unordered-set.md)\
+[Kapsayıcılar](../cpp/containers-modern-cpp.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
