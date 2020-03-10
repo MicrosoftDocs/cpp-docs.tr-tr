@@ -109,11 +109,11 @@ helpviewer_keywords:
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
 ms.openlocfilehash: b54a1913073ca0b23aeb17a57b16f589a074637b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507187"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78890817"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 
@@ -129,27 +129,27 @@ class CComboBox : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComboBox:: CComboBox](#ccombobox)|Bir `CComboBox` nesnesi oluşturur.|
+|[CComboBox:: CComboBox](#ccombobox)|`CComboBox` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComboBox:: AddString](#addstring)|Birleşik giriş kutusunun liste kutusundaki listenin sonuna veya CBS_SORT stiliyle liste kutularına ilişkin sıralanmış konuma bir dize ekler.|
+|[CComboBox:: AddString](#addstring)|Birleşik giriş kutusunun liste kutusunda veya CBS_SORT stiliyle liste kutularına ilişkin sıralanmış konumda listenin sonuna bir dize ekler.|
 |[CComboBox:: Clear](#clear)|Eğer varsa, düzenleme denetimindeki geçerli seçimi siler (temizler).|
 |[CComboBox:: CompareItem](#compareitem)|Sıralanmış bir sahip tarafından çizilen birleşik giriş kutusunda yeni liste öğesinin göreli konumunu öğrenmek için Framework tarafından çağırılır.|
-|[CComboBox:: Copy](#copy)|Geçerli seçimi, varsa, CF_TEXT biçiminde Pano 'Ya kopyalar.|
-|[CComboBox:: Create](#create)|Birleşik giriş kutusunu oluşturur ve `CComboBox` nesneye ekler.|
-|[CComboBox:: kes](#cut)|Varsa, düzenleme denetimindeki geçerli seçimi siler (keser) ve silinen metni pano üzerine CF_TEXT biçiminde kopyalar.|
+|[CComboBox:: Copy](#copy)|Varsa, geçerli seçimi Pano üzerine CF_TEXT biçimde kopyalar.|
+|[CComboBox:: Create](#create)|Birleşik giriş kutusunu oluşturur ve `CComboBox` nesnesine iliştirir.|
+|[CComboBox:: kes](#cut)|, Varsa, düzenleme denetimindeki geçerli seçimi siler (keser) ve silinen metni pano üzerinde CF_TEXT biçiminde kopyalar.|
 |[CComboBox::D Eleteıtem](#deleteitem)|Bir liste öğesi, sahip tarafından çizilmiş Birleşik giriş kutusundan silindiğinde Framework tarafından çağırılır.|
 |[CComboBox::D eleteString](#deletestring)|Birleşik giriş kutusunun liste kutusundan bir dizeyi siler.|
 |[CComboBox::D IR](#dir)|Birleşik giriş kutusunun liste kutusuna dosya adlarının bir listesini ekler.|
 |[CComboBox::D rawItem](#drawitem)|Sahip tarafından çizilmiş Birleşik giriş kutusunun görsel bir yönü değiştiğinde Framework tarafından çağırılır.|
 |[CComboBox:: FindString](#findstring)|Birleşik giriş kutusunun liste kutusunda belirtilen öneki içeren ilk dizeyi bulur.|
 |[CComboBox:: Findstringözdeş](#findstringexact)|Belirtilen dizeyle eşleşen ilk liste kutusu dizesini (Birleşik giriş kutusunda) bulur.|
-|[CComboBox:: Getcomboboxınfo](#getcomboboxinfo)|`CComboBox` Nesnesi hakkında bilgi alır.|
+|[CComboBox:: Getcomboboxınfo](#getcomboboxinfo)|`CComboBox` nesnesi hakkında bilgi alır.|
 |[CComboBox:: GetCount](#getcount)|Birleşik giriş kutusunun liste kutusundaki öğelerin sayısını alır.|
 |[CComboBox:: Getcuebaşlık](#getcuebanner)|Birleşik giriş kutusu denetimi için görüntülenen ipucu metnini alır.|
 |[CComboBox:: GetCurSel](#getcursel)|Seçili olan öğenin dizinini, varsa Birleşik giriş kutusunun liste kutusunda alır.|
@@ -198,55 +198,55 @@ Aşağıdaki tabloda üç Birleşik giriş kutusu [stili](../../mfc/reference/st
 
 |Stil|Ne zaman liste kutusu görünür|Statik veya düzenleme denetimi|
 |-----------|-------------------------------|-----------------------------|
-|MPLE|Her zaman|Düzenle|
+|Basit|Her zaman|Düzenle|
 |Açılır liste|Ne zaman bırakıldığında|Düzenle|
 |Açılan liste|Ne zaman bırakıldığında|Statik|
 
-Bir iletişim kutusu şablonundan `CComboBox` ya da doğrudan kodunuzda bir nesne oluşturabilirsiniz. Her iki durumda da `CComboBox` , önce `CComboBox` nesneyi oluşturmak için oluşturucuyu çağırın; ardından denetimi oluşturmak ve [](#create) `CComboBox` nesneye iliştirmek için üye Oluştur işlevini çağırın.
+Bir iletişim kutusu şablonundan ya da doğrudan kodunuzda bir `CComboBox` nesnesi oluşturabilirsiniz. Her iki durumda da, `CComboBox` `CComboBox` nesnesini oluşturmak için önce oluşturucuyu çağırın; sonra, denetimi oluşturmak ve `CComboBox` nesnesine eklemek için üye [Oluştur](#create) işlevini çağırın.
 
-Bir Birleşik giriş kutusu tarafından üst öğeye (genellikle öğesinden `CDialog`türetilmiş bir sınıf) gönderilen Windows bildirim iletilerini işlemek istiyorsanız, her ileti için üst sınıfa bir ileti eşleme girişi ve ileti işleyici üye işlevi ekleyin.
+Bir Birleşik giriş kutusu tarafından üst öğeye (genellikle `CDialog`türetilen bir sınıf) gönderilen Windows bildirim iletilerini işlemek istiyorsanız, her ileti için üst sınıfa bir ileti eşleme girişi ve ileti işleyici üye işlevi ekleyin.
 
 Her ileti eşleme girişi aşağıdaki biçimi alır:
 
-Bildirimde (kimlik, memberFxn) **\_**
+**\_** _bildiriminde_ **(** _kimlik_, _memberFxn_ **)**
 
-Burada `id` bildirimi gönderen Birleşik giriş kutusu denetiminin alt pencere kimliğini belirtir ve `memberFxn` bildirimi işlemek için yazdığınız ana üye işlevinin adıdır.
+Burada `id`, bildirimi gönderen Birleşik giriş kutusu denetiminin alt pencere KIMLIĞINI belirtir ve `memberFxn`, bildirimi işlemek için yazdığınız ana üye işlevinin adıdır.
 
 Üst öğenin işlev prototipi aşağıdaki gibidir:
 
-**afx_msg** `void` `memberFxn` **( );**
+**afx_msg** `void` `memberFxn` **();**
 
-Belirli bildirimlerin gönderileceği sıra tahmin edilemez. Özellikle, bir CBN_CLOSEUP bildiriminden önce veya sonra bir CBN_SELCHANGE bildirimi gerçekleşebilir.
+Belirli bildirimlerin gönderileceği sıra tahmin edilemez. Özellikle, bir CBN_CLOSEUP bildiriminden önce veya sonra bir CBN_SELCHANGE bildirimi olabilir.
 
 Olası ileti eşleme girdileri şunlardır:
 
 - ON_CBN_CLOSEUP (Windows 3,1 ve üzeri.) Birleşik giriş kutusunun liste kutusu kapatıldı. Bu bildirim iletisi, [CBS_SIMPLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahip bir açılan kutu için gönderilmez.
 
-- ON_CBN_DBLCLK Kullanıcı, Birleşik giriş kutusunun liste kutusunda bir dizeyi çift tıklatır. Bu bildirim iletisi yalnızca CBS_SIMPLE stilinde bir açılan kutu için gönderilir. [Cbs_dropdown](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) veya [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahip bir Birleşik giriş kutusu için, tek bir tıklama liste kutusunu gizlemediğinden çift tıklama gerçekleşemez.
+- Kullanıcı ON_CBN_DBLCLK Birleşik giriş kutusunun liste kutusunda bir dizeye çift tıklar. Bu bildirim iletisi yalnızca CBS_SIMPLE stili olan bir Birleşik giriş kutusu için gönderilir. [Cbs_dropdown](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) veya [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahip bir Birleşik giriş kutusu için, tek bir tıklama liste kutusunu gizleyen bir çift tıklama gerçekleşemez.
 
-- ON_CBN_DROPDOWN Birleşik giriş kutusunun liste kutusu açılır (görünür hale getirilir). Bu bildirim iletisi yalnızca CBS_DROPDOWN veya CBS_DROPDOWNLIST stiline sahip bir Birleşik giriş kutusu için olabilir.
+- Birleşik giriş kutusunun liste kutusu ON_CBN_DROPDOWN açılır (görünür hale getirilir). Bu bildirim iletisi yalnızca CBS_DROPDOWN veya CBS_DROPDOWNLIST stili olan bir Birleşik giriş kutusu için oluşabilir.
 
 - ON_CBN_EDITCHANGE kullanıcı, Birleşik giriş kutusunun düzenleme denetimi bölümünde metni değiştirmiş olabilecek bir eylem gerçekleştirmiştir. CBN_EDITUPDATE iletisinin aksine, Windows ekranı güncelleştirdikten sonra bu ileti gönderilir. Birleşik giriş kutusunda CBS_DROPDOWNLIST stili varsa gönderilmez.
 
-- ON_CBN_EDITUPDATE Birleşik giriş kutusunun düzenleme denetimi bölümü, değiştirilen metni göstermek için kullanılır. Bu bildirim iletisi, denetim metni biçimlendirdikten sonra ancak metni görüntülemeden önce gönderilir. Birleşik giriş kutusunda CBS_DROPDOWNLIST stili varsa gönderilmez.
+- Birleşik giriş kutusunun düzenleme denetimi bölümü ON_CBN_EDITUPDATE değiştirilen metni göstermek için kullanılır. Bu bildirim iletisi, denetim metni biçimlendirdikten sonra ancak metni görüntülemeden önce gönderilir. Birleşik giriş kutusunda CBS_DROPDOWNLIST stili varsa gönderilmez.
 
 - ON_CBN_ERRSPACE Birleşik giriş kutusu belirli bir isteği karşılamak için yeterli bellek ayıramıyor.
 
-- ON_CBN_SELENDCANCEL (Windows 3,1 ve üzeri.) Kullanıcının seçiminin iptal edilmesi gerektiğini gösterir. Kullanıcı bir öğeyi tıklatır ve sonra bir açılan kutunun liste kutusunu gizlemek için başka bir pencere veya denetimi tıklatır. Bu bildirim iletisi, Kullanıcı seçiminin yoksayılması gerektiğini göstermek için CBN_CLOSEUP bildirim iletisinden önce gönderilir. CBN_CLOSEUP bildirim iletisi gönderilmese bile CBN_SELENDCANCEL veya CBN_SELENDOK bildirim iletisi gönderilir (CBS_SIMPLE stili ile Birleşik giriş kutusu durumunda olduğu gibi).
+- ON_CBN_SELENDCANCEL (Windows 3,1 ve üzeri.) Kullanıcının seçiminin iptal edilmesi gerektiğini gösterir. Kullanıcı bir öğeyi tıklatır ve sonra bir açılan kutunun liste kutusunu gizlemek için başka bir pencere veya denetimi tıklatır. Bu bildirim iletisi, Kullanıcı seçiminin yoksayılması gerektiğini göstermek için CBN_CLOSEUP bildirim iletisinden önce gönderilir. CBN_SELENDCANCEL veya CBN_SELENDOK bildirim iletisi, CBN_CLOSEUP bildirim iletisi gönderilmese bile gönderilir (CBS_SIMPLE stili ile Birleşik giriş kutusu durumunda olduğu gibi).
 
-- ON_CBN_SELENDOK Kullanıcı bir öğe seçer ve ardından ENTER tuşuna basar ya da aşağı ok tuşuna tıklayarak Birleşik giriş kutusunun liste kutusunu gizler. Bu bildirim iletisi, kullanıcının seçiminin geçerli kabul edilmesi gerektiğini belirtmek için CBN_CLOSEUP iletisinden önce gönderilir. CBN_CLOSEUP bildirim iletisi gönderilmese bile CBN_SELENDCANCEL veya CBN_SELENDOK bildirim iletisi gönderilir (CBS_SIMPLE stili ile Birleşik giriş kutusu durumunda olduğu gibi).
+- Kullanıcı bir öğe seçer ve ardından ENTER tuşuna basar veya açılan kutunun liste kutusunu gizlemek için aşağı ok tuşuna tıklar. ON_CBN_SELENDOK Bu bildirim iletisi, Kullanıcı seçiminin geçerli kabul edilmesi gerektiğini belirtmek için CBN_CLOSEUP iletiden önce gönderilir. CBN_SELENDCANCEL veya CBN_SELENDOK bildirim iletisi, CBN_CLOSEUP bildirim iletisi gönderilmese bile gönderilir (CBS_SIMPLE stili ile Birleşik giriş kutusu durumunda olduğu gibi).
 
-- ON_CBN_KILLFOCUS açılan kutusu giriş odağını kaybetmekte.
+- Birleşik giriş kutusu ON_CBN_KILLFOCUS giriş odağını kaybetmekte.
 
-- ON_CBN_SELCHANGE bir Birleşik giriş kutusunun liste kutusunda bulunan seçim, kullanıcının liste kutusuna tıklanması ya da ok tuşlarını kullanarak seçimi değiştirmesi halinde değiştirilmekte. Bu ileti işlenirken, Birleşik giriş kutusunun düzenleme denetimindeki metin yalnızca veya başka bir benzer işlev aracılığıyla `GetLBText` alınabilir. `GetWindowText`kullanılamaz.
+- Bir Birleşik giriş kutusunun liste kutusunda seçimi ON_CBN_SELCHANGE, kullanıcının liste kutusuna tıklanması ya da ok tuşlarını kullanarak seçimi değiştirmesi gibi bir sonuç olarak değiştirilmekte. Bu ileti işlenirken, Birleşik giriş kutusunun düzenleme denetimindeki metin yalnızca `GetLBText` veya başka bir benzer işlev aracılığıyla alınabilir. `GetWindowText` kullanılamaz.
 
-- ON_CBN_SETFOCUS açılan kutusu giriş odağını alır.
+- Birleşik giriş kutusu ON_CBN_SETFOCUS giriş odağını alır.
 
-İletişim kutusu içinde ( `CComboBox` bir iletişim kaynağı aracılığıyla) bir nesne oluşturursanız `CComboBox` , Kullanıcı iletişim kutusunu kapattığında nesne otomatik olarak yok edilir.
+İletişim kutusu içinde bir `CComboBox` nesnesi oluşturursanız (bir iletişim kutusu kaynağı aracılığıyla), Kullanıcı iletişim kutusunu kapattığında `CComboBox` nesnesi otomatik olarak yok edilir.
 
-Bir `CComboBox` nesneyi başka bir pencere nesnesi içine eklerseniz, yok etmeniz gerekmez. `CComboBox` Nesneyi yığında oluşturursanız, otomatik olarak yok edilir. `CComboBox` Nesneyi **Yeni** işlevi kullanarak yığında oluşturursanız, Windows Birleşik giriş kutusu yok edildiğinde nesneyi yok etmek için **Delete** öğesini çağırmanız gerekir.
+Başka bir pencere nesnesine bir `CComboBox` nesnesi katıştırırsanız, bunu yok etmeniz gerekmez. `CComboBox` nesnesini yığında oluşturursanız, otomatik olarak yok edilir. **Yeni** işlevi kullanarak yığında `CComboBox` nesnesi oluşturursanız, Windows Birleşik giriş kutusu yok edildiğinde yok etmek için nesneyi **silme** çağrısı yapmanız gerekir.
 
-**Göz önünde** WM_KEYDOWN ve WM_CHAR iletilerini işlemek istiyorsanız, Birleşik giriş kutusunun düzenleme ve liste kutusu denetimlerini alt sınıflara ayırmak, sınıfları `CEdit` ve ile `CListBox`türetmek ve türetilmiş sınıflara bu iletiler için işleyiciler eklemeniz gerekir. Daha fazla bilgi için bkz. [CWnd:: SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
+**Göz önünde** WM_KEYDOWN ve WM_CHAR iletilerini işlemek istiyorsanız, açılan kutunun düzenleme ve liste kutusu denetimlerini alt sınıflara ayırmak, sınıfları `CEdit` ve `CListBox`türetmeniz ve bu iletiler için işleyicileri türetilmiş sınıflara eklemeniz gerekir. Daha fazla bilgi için bkz. [CWnd:: SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -277,11 +277,11 @@ Eklenecek null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri 0 ' dan büyük veya buna eşitse, liste kutusunda dizenin sıfır tabanlı dizinidir. Bir hata oluşursa, dönüş değeri CB_ERR olur; Yeni dizeyi depolamak için yeterli alan yoksa, dönüş değeri CB_ERRSPACE olur.
+Dönüş değeri 0 ' dan büyük veya buna eşitse, liste kutusunda dizenin sıfır tabanlı dizinidir. Bir hata oluşursa, dönüş değeri CB_ERR; Yeni dizeyi depolamak için yeterli kullanılabilir alan yoksa, dönüş değeri CB_ERRSPACE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste kutusu [cbs_sort](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiliyle oluşturulmadıysa, dize listenin sonuna eklenir. Aksi takdirde, dize listeye eklenir ve liste sıralanır.
+Liste kutusu [cbs_sort](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stille oluşturulmadıysa, dize listenin sonuna eklenir. Aksi takdirde, dize listeye eklenir ve liste sıralanır.
 
 > [!NOTE]
 >  Bu işlev Windows `ComboBoxEx` denetimi tarafından desteklenmiyor. Bu denetim hakkında daha fazla bilgi için Windows SDK [ComboBoxEx denetimleri](/windows/win32/Controls/comboboxex-controls) bölümüne bakın.
@@ -294,7 +294,7 @@ Liste içinde belirli bir konuma bir dize eklemek için [InsertString](#insertst
 
 ##  <a name="ccombobox"></a>CComboBox:: CComboBox
 
-Bir `CComboBox` nesnesi oluşturur.
+`CComboBox` nesnesi oluşturur.
 
 ```
 CComboBox();
@@ -335,19 +335,19 @@ Bir [COMPAREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-compareitemstruct)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`COMPAREITEMSTRUCT` Yapıda açıklanan iki öğenin göreli konumunu gösterir. Aşağıdaki değerlerden herhangi biri olabilir:
+`COMPAREITEMSTRUCT` yapısında açıklanan iki öğenin göreli konumunu gösterir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
 |- 1|Öğe 1 öğe 2 ' den önce sıralar.|
 |0|Öğe 1 ve öğe 2 aynı şekilde sıralayın.|
-|1\.|Öğe 1 öğe 2 ' den sonra sıralar.|
+|1|Öğe 1 öğe 2 ' den sonra sıralar.|
 
-Açıklaması`COMPAREITEMSTRUCT`Için bkz. [CWnd:: OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem) .
+`COMPAREITEMSTRUCT`açıklaması için bkz. [CWnd:: OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. LBS_SORT stiline sahip bir sahip çiz kutusu oluşturursanız, bu üye işlevini geçersiz kılmalısınız. Bu öğe, bir liste kutusuna eklenen yeni öğeleri sıralama içinde çerçeveye yardımcı olur.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. LBS_SORT stiliyle bir sahip çizimi Birleşik kutusu oluşturursanız, çerçeveye, liste kutusuna eklenen yeni öğeleri sıralama konusunda yardımcı olması için bu üye işlevini geçersiz kılmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -355,7 +355,7 @@ Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. LBS_SORT stiline sahip 
 
 ##  <a name="copy"></a>CComboBox:: Copy
 
-Geçerli seçimi, varsa Birleşik giriş kutusunun düzenleme denetimindeki CF_TEXT biçimindeki Pano üzerine kopyalar.
+Geçerli seçimi, varsa Birleşik giriş kutusunun düzenleme denetimindeki CF_TEXT biçiminde Pano üzerine kopyalar.
 
 ```
 void Copy();
@@ -367,7 +367,7 @@ void Copy();
 
 ##  <a name="create"></a>CComboBox:: Create
 
-Birleşik giriş kutusunu oluşturur ve `CComboBox` nesneye ekler.
+Birleşik giriş kutusunu oluşturur ve `CComboBox` nesnesine iliştirir.
 
 ```
 virtual BOOL Create(
@@ -383,10 +383,10 @@ virtual BOOL Create(
 Birleşik giriş kutusunun stilini belirtir. Kutuya [Birleşik giriş kutusu stillerinin](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-Birleşik giriş kutusunun konumunu ve boyutunu gösterir. Bir [Rect yapısı](/windows/win32/api/windef/ns-windef-rect) veya bir `CRect` nesnesi olabilir.
+Birleşik giriş kutusunun konumunu ve boyutunu gösterir. Bir [Rect yapısı](/windows/win32/api/windef/ns-windef-rect) veya `CRect` nesnesi olabilir.
 
 *pParentWnd*<br/>
-Birleşik giriş kutusunun üst penceresini (genellikle a `CDialog`) belirtir. NULL olmaması gerekir.
+Birleşik giriş kutusunun üst penceresini belirtir (genellikle bir `CDialog`). NULL olmaması gerekir.
 
 *NID*<br/>
 Birleşik giriş kutusunun Denetim KIMLIĞINI belirtir.
@@ -397,27 +397,27 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda bir `CComboBox` nesne oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra Windows `Create`Birleşik giriş kutusunu oluşturan ve bunu `CComboBox` nesnesine ekleyen çağırın.
+`CComboBox` nesnesini iki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve ardından Windows Birleşik giriş kutusunu oluşturan ve `CComboBox` nesnesine ekleyen `Create`çağırın.
 
-[](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) [](../../mfc/reference/cwnd-class.md#oncreate) [](../../mfc/reference/cwnd-class.md#onnccalcsize) [](../../mfc/reference/cwnd-class.md#onnccreate)Yürütüldüğünde, Windows WM_NCCREATE, WM_CREATE, WM_NCCALCSIZE ve WM_GETMINMAXINFO iletilerini Birleşik giriş kutusuna gönderir. `Create`
+`Create` yürütüldüğünde Windows, açılan kutuya [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) iletileri gönderir.
 
-Bu iletiler, `CWnd` temel sınıftaki [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member işlevleri tarafından varsayılan olarak işlenir. Varsayılan ileti işlemeyi genişletmek için, öğesinden `CComboBox`bir sınıf türetebilir, yeni sınıfa bir ileti haritası ekleyin ve önceki ileti işleyici üye işlevlerini geçersiz kılın. Yeni `OnCreate`bir sınıf için gerekli başlatmayı gerçekleştirmek üzere, örneğin, öğesini geçersiz kılın.
+Bu iletiler, `CWnd` temel sınıfındaki [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member işlevleri tarafından varsayılan olarak işlenir. Varsayılan ileti işlemeyi genişletmek için, `CComboBox`bir sınıf türetebilir, yeni sınıfa bir ileti haritası ekleyin ve önceki ileti işleyici üye işlevlerini geçersiz kılın. Yeni bir sınıf için gerekli başlatmayı gerçekleştirmek üzere, örneğin `OnCreate`geçersiz kılın.
 
 Birleşik giriş kutusu denetimine aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) uygulayın. :
 
 - WS_CHILD her zaman
 
-- WS_VISIBLE genellikle
+- Genellikle WS_VISIBLE
 
 - WS_DISABLED nadiren
 
-- Birleşik giriş kutusundaki liste kutusu için dikey kaydırma eklemek Için WS_VSCROLL
+- Birleşik giriş kutusundaki liste kutusu için dikey kaydırma eklemek WS_VSCROLL
 
-- Birleşik giriş kutusundaki liste kutusu için yatay kaydırma eklemek Için WS_HSCROLL
+- Birleşik giriş kutusundaki liste kutusu için yatay kaydırma eklemek WS_HSCROLL
 
-- WS_GROUP denetimleri
+- Denetimleri gruplamak Için WS_GROUP
 
-- WS_TABSTOP, açılan kutuyu sekme sırasına dahil etmek Için
+- Birleşik giriş kutusunu sekme sırasına dahil etmek Için WS_TABSTOP
 
 ### <a name="example"></a>Örnek
 
@@ -441,7 +441,7 @@ Silinen metni pano 'ya yerleştirmeksizin geçerli seçimi silmek için, [clear]
 
 ##  <a name="deleteitem"></a>CComboBox::D Eleteıtem
 
-Kullanıcı, sahip çizim `CComboBox` nesnesinden bir öğe sildiğinde veya Birleşik giriş kutusunu yok eder, Framework tarafından çağırılır.
+Kullanıcı, sahip-çizim `CComboBox` nesnesinden bir öğe sildiğinde veya Birleşik giriş kutusunu yok eder, Framework tarafından çağırılır.
 
 ```
 virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
@@ -475,7 +475,7 @@ Silinecek dizenin dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri 0 ' dan büyük veya buna eşitse, bu, listede kalan dizelerin sayısıdır. *NIndex* , listedeki öğe sayısından daha büyük bir dizin belirtiyorsa, dönüş değeri cb_err olur.
+Dönüş değeri 0 ' dan büyük veya buna eşitse, bu, listede kalan dizelerin sayısıdır. *NIndex* , listedeki öğe sayısından daha büyük bir dizin belirtiyorsa, dönüş değeri cb_err.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -500,28 +500,28 @@ int Dir(
 *özniteliği*<br/>
 [CFile:: GetStatus](../../mfc/reference/cfile-class.md#getstatus) bölümünde açıklanan **enum** değerlerinin herhangi bir birleşimi veya aşağıdaki değerlerin herhangi bir birleşimi olabilir:
 
-- DDL_READWRITE dosyası, öğesinden okunabilir veya yazılabilir.
+- DDL_READWRITE dosya, öğesinden okunabilir veya yazılabilir.
 
-- DDL_READONLY dosyası okunabilir, ancak üzerine yazılamaz.
+- DDL_READONLY dosya okunabilir, ancak üzerine yazılamaz.
 
-- DDL_HIDDEN dosyası gizlidir ve bir dizin listesinde görünmez.
+- DDL_HIDDEN Dosya gizlidir ve bir dizin listesinde görünmez.
 
 - DDL_SYSTEM dosyası bir sistem dosyasıdır.
 
-- DDL_DIRECTORY *lpszWildCard* tarafından belirtilen ad bir dizini belirtiyor.
+- *LpszWildCard* tarafından belirtilen ad DDL_DIRECTORY bir dizini belirtir.
 
-- DDL_ARCHIVE dosyası arşivlendi.
+- DDL_ARCHIVE dosya arşivlendi.
 
 - DDL_DRIVES, *lpszWildCard*tarafından belirtilen adla eşleşen tüm sürücüleri içerir.
 
-- DDL_EXCLUSIVE özel bayrağı. Dışlamalı bayrak ayarlandıysa, yalnızca belirtilen türdeki dosyalar listelenir. Aksi halde, belirtilen türdeki dosyalar "normal" dosyalara ek olarak listelenir.
+- DDL_EXCLUSIVE dışlamalı bayrak. Dışlamalı bayrak ayarlandıysa, yalnızca belirtilen türdeki dosyalar listelenir. Aksi halde, belirtilen türdeki dosyalar "normal" dosyalara ek olarak listelenir.
 
 *lpszWildCard*<br/>
 Dosya belirtimi dizesini işaret eder. Dize joker karakterler içerebilir (örneğin, *.\*).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri 0 ' dan büyük veya buna eşitse, bu, listeye eklenen son dosya adının sıfır tabanlı dizinidir. Bir hata oluşursa, dönüş değeri CB_ERR olur; Yeni dizeleri depolamak için yeterli alan yoksa, dönüş değeri CB_ERRSPACE olur.
+Dönüş değeri 0 ' dan büyük veya buna eşitse, bu, listeye eklenen son dosya adının sıfır tabanlı dizinidir. Bir hata oluşursa, dönüş değeri CB_ERR; Yeni dizeleri depolamak için yeterli alan yoksa, dönüş değeri CB_ERRSPACE.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -546,9 +546,9 @@ Gerekli çizim türü hakkında bilgi içeren [Drawitemstruct](/windows/win32/ap
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DRAWITEMSTRUCT` Yapının üyesi gerçekleştirilecek çizim eylemini tanımlar. `itemAction` Bu yapının açıklaması için bkz. [CWnd:: OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) .
+`DRAWITEMSTRUCT` yapısının `itemAction` üyesi, gerçekleştirilecek çizim eylemini tanımlar. Bu yapının açıklaması için bkz. [CWnd:: OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) .
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bir sahip çizim `CComboBox` nesnesi için çizimi uygulamak üzere bu üye işlevini geçersiz kılın. Bu üye işlevi sonlandırılmadan önce, uygulamanın, *Lpdrawitemstruct*içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Sahip çizim `CComboBox` nesnesi için çizim uygulamak üzere bu üye işlevini geçersiz kılın. Bu üye işlevi sonlandırılmadan önce, uygulamanın, *Lpdrawitemstruct*içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -574,7 +574,7 @@ Arama yapılacak öneki içeren null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri 0 ' dan büyük veya buna eşitse, eşleşen öğenin sıfır tabanlı dizinidir. Arama başarısız olursa, CB_ERR.
+Dönüş değeri 0 ' dan büyük veya buna eşitse, eşleşen öğenin sıfır tabanlı dizinidir. Arama başarısız olursa CB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -586,7 +586,7 @@ Bu işlev Windows `ComboBoxEx` denetimi tarafından desteklenmiyor. Bu denetim h
 
 ##  <a name="findstringexact"></a>CComboBox:: Findstringözdeş
 
-*LpszFind içinde*belirtilen dizeyle eşleşen ilk liste kutusu dizesini (Birleşik giriş kutusunda) bulmak için üyeişlevini`FindStringExact` çağırın.
+*LpszFind*içinde belirtilen dizeyle eşleşen ilk liste kutusu dizesini (Birleşik giriş kutusunda) bulmak için `FindStringExact` member işlevini çağırın.
 
 ```
 int FindStringExact(
@@ -604,11 +604,11 @@ Aranacak null ile sonlandırılmış dizeyi gösterir. Bu dize, uzantısı dahil
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleşen öğenin sıfır tabanlı dizini veya arama başarısız ise CB_ERR.
+Eşleşen öğenin sıfır tabanlı dizini veya arama başarısız olduysa CB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birleşik giriş kutusu bir sahip çizimi stiliyle oluşturulduysa, ancak [CBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili olmadan, `FindStringExact` doubleword değerini *lpszFind*değerine göre eşleştirmeye çalışır.
+Birleşik giriş kutusu, bir sahip çizimi stiliyle oluşturulduysa, ancak [CBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili olmadan oluşturulmuşsa, `FindStringExact` *lpszFind*değerine karşılık doubleword değerini eşleştirmeye çalışır.
 
 ### <a name="example"></a>Örnek
 
@@ -616,7 +616,7 @@ Birleşik giriş kutusu bir sahip çizimi stiliyle oluşturulduysa, ancak [CBS_H
 
 ##  <a name="getcomboboxinfo"></a>CComboBox:: Getcomboboxınfo
 
-`CComboBox` Nesne için bilgileri alır.
+`CComboBox` nesne için bilgileri alır.
 
 ```
 BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
@@ -645,7 +645,7 @@ int GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe sayısı. Döndürülen sayı, son öğenin dizin değerinden (Dizin sıfır tabanlı) büyük bir değer. Bir hata oluşursa, bu CB_ERR.
+Öğe sayısı. Döndürülen sayı, son öğenin dizin değerinden (Dizin sıfır tabanlı) büyük bir değer. Bir hata oluşursa CB_ERR.
 
 ### <a name="example"></a>Örnek
 
@@ -672,7 +672,7 @@ BOOL GetCueBanner(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk aşırı yüklemede, varsa Cue başlık metnini içeren bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesi; Aksi takdirde, `CString` sıfır uzunluğuna sahip bir nesne.
+İlk aşırı yüklemede, varsa Cue başlık metnini içeren bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesi; Aksi takdirde, sıfır uzunluğuna sahip `CString` bir nesne.
 
 -veya-
 
@@ -698,7 +698,7 @@ Birleşik giriş kutusunun liste kutusunda şu anda seçili olan öğenin sıfı
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetCurSel`listeye bir dizin döndürür.
+`GetCurSel` listeye bir dizin döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -706,7 +706,7 @@ Birleşik giriş kutusunun liste kutusunda şu anda seçili olan öğenin sıfı
 
 ##  <a name="getdroppedcontrolrect"></a>CComboBox:: GetDroppedControlRect
 
-Açılan Birleşik giriş kutusunun görünür (açılan) liste kutusunun ekran koordinatlarını almak için üyeişleviniçağırın.`GetDroppedControlRect`
+Açılan Birleşik giriş kutusunun görünür (açılan) liste kutusunun ekran koordinatlarını almak için `GetDroppedControlRect` member işlevini çağırın.
 
 ```
 void GetDroppedControlRect(LPRECT lprect) const;
@@ -723,7 +723,7 @@ Koordinatları alacak olan [Rect yapısına](/windows/win32/api/windef/ns-windef
 
 ##  <a name="getdroppedstate"></a>CComboBox:: GetDroppedState
 
-Açılan Birleşik giriş kutusunun liste kutusunun görünür olup olmadığını (aşağı açılan) öğrenmek için üyeişleviniçağırın.`GetDroppedState`
+Açılan Birleşik giriş kutusunun liste kutusunun görünür olup olmadığını (aşağı açılan) öğrenmek için `GetDroppedState` member işlevini çağırın.
 
 ```
 BOOL GetDroppedState() const;
@@ -747,7 +747,7 @@ int GetDroppedWidth() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa piksel cinsinden izin verilen en düşük Genişlik; Aksi halde, CB_ERR.
+Başarılı olursa piksel cinsinden izin verilen en düşük Genişlik; Aksi takdirde, CB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -769,7 +769,7 @@ DWORD GetEditSel() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düşük sıralı sözcükteki başlangıç konumunu içeren 32 bitlik bir değer ve yüksek sıralı sözcükteki seçimin sonundan sonra seçili olmayan ilk karakterin konumu. Bu işlev, düzenleme denetimi olmadan Birleşik giriş kutusunda kullanılırsa, CB_ERR döndürülür.
+Düşük sıralı sözcükteki başlangıç konumunu içeren 32 bitlik bir değer ve yüksek sıralı sözcükteki seçimin sonundan sonra seçili olmayan ilk karakterin konumu. Bu işlev, düzenleme denetimi olmadan Birleşik giriş kutusunda kullanılırsa CB_ERR döndürülür.
 
 ### <a name="example"></a>Örnek
 
@@ -777,7 +777,7 @@ Düşük sıralı sözcükteki başlangıç konumunu içeren 32 bitlik bir değe
 
 ##  <a name="getextendedui"></a>CComboBox:: Getckesintileri ı
 
-Birleşik giriş kutusunun varsayılan kullanıcı arabirimine mi yoksa Genişletilmiş Kullanıcı arabirimine mi sahip olduğunu öğrenmek için üyeişleviniçağırın.`GetExtendedUI`
+Bir Birleşik giriş kutusunun varsayılan kullanıcı arabirimine mi yoksa Genişletilmiş Kullanıcı arabirimine mı sahip olduğunu öğrenmek için `GetExtendedUI` member işlevini çağırın.
 
 ```
 BOOL GetExtendedUI() const;
@@ -791,7 +791,7 @@ Birleşik giriş kutusunda Genişletilmiş Kullanıcı arabirimi varsa sıfır d
 
 Genişletilmiş Kullanıcı arabirimi aşağıdaki yollarla tanımlanabilir:
 
-- Statik denetime tıkladığınızda, liste kutusu yalnızca [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stilinde Birleşik giriş kutuları için görüntülenir.
+- Statik denetime tıkladığınızda liste kutusu yalnızca [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili olan Birleşik giriş kutuları için görüntülenir.
 
 - AŞAĞı ok tuşuna basıldığında liste kutusu görüntülenir (F4 devre dışıdır).
 
@@ -840,7 +840,7 @@ Birleşik giriş kutusunun liste kutusunda bir öğenin sıfır tabanlı dizinin
 
 ### <a name="remarks"></a>Açıklamalar
 
-32 bitlik değer bir [SetItemData](#setitemdata) üye Işlev çağrısının *dwitemdata* parametresiyle ayarlanabilir. Alınacak 32 bitlik değer bir işaretçisiyse (**void** <strong>\*</strong>) üyeişlevinikullanın.`GetItemDataPtr`
+32 bitlik değer bir [SetItemData](#setitemdata) üye Işlev çağrısının *dwitemdata* parametresiyle ayarlanabilir. Alınacak 32 bitlik değer bir işaretçisiyse (**void** <strong>\*</strong>) `GetItemDataPtr` member işlevini kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -869,7 +869,7 @@ Bir işaretçi alır veya bir hata oluşursa-1.
 
 ##  <a name="getitemheight"></a>CComboBox:: GetItemHeight
 
-Birleşik giriş kutusundaki liste öğelerinin yüksekliğini almak için üyeişleviniçağırın.`GetItemHeight`
+Birleşik giriş kutusundaki liste öğelerinin yüksekliğini almak için `GetItemHeight` member işlevini çağırın.
 
 ```
 int GetItemHeight(int nIndex) const;
@@ -882,7 +882,7 @@ Yüksekliği alınacak olan Birleşik giriş kutusunun bileşenini belirtir. *NI
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Birleşik giriş kutusundaki belirtilen öğenin piksel cinsinden yüksekliği. Bir hata oluşursa dönüş değeri CB_ERR olur.
+Birleşik giriş kutusundaki belirtilen öğenin piksel cinsinden yüksekliği. Bir hata oluşursa, dönüş değeri CB_ERR.
 
 ### <a name="example"></a>Örnek
 
@@ -915,11 +915,11 @@ Bir `CString`başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin sonlandırılıyor null karakteri hariç uzunluğu (bayt cinsinden). *NIndex* geçerli bir dizin belirtmezse, dönüş değeri cb_err olur.
+Dizenin sonlandırılıyor null karakteri hariç uzunluğu (bayt cinsinden). *NIndex* geçerli bir dizin belirtmezse, dönüş değeri cb_err.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevin ikinci formu, bir `CString` nesneyi öğenin metniyle doldurur.
+Bu üye işlevin ikinci formu, bir `CString` nesnesini öğenin metniyle doldurur.
 
 ### <a name="example"></a>Örnek
 
@@ -940,7 +940,7 @@ Liste kutusu dizesinin sıfır tabanlı dizinini içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin, Sonlandırıcı null karakteri hariç bayt cinsinden uzunluğu. *NIndex* geçerli bir dizin belirtmezse, dönüş değeri cb_err olur.
+Dizenin, Sonlandırıcı null karakteri hariç bayt cinsinden uzunluğu. *NIndex* geçerli bir dizin belirtmezse, dönüş değeri cb_err.
 
 ### <a name="example"></a>Örnek
 
@@ -992,7 +992,7 @@ int GetTopIndex() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, CB_ERR Aksi takdirde, açılan kutunun liste kutusu bölümündeki ilk görünür öğenin sıfır tabanlı dizini.
+Başarılı olursa, tersi durumda CB_ERR Birleşik giriş kutusunun liste kutusu bölümündeki ilk görünür öğenin sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1022,13 +1022,13 @@ Eklenecek öğelerin sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, Birleşik giriş kutusunun liste kutusu bölümünün bir bellek yeniden tahsisatı gerekmeden önce depolayabileceği en fazla öğe sayısı, aksi takdirde CB_ERRSPACE, ancak yeterli bellek yok.
+Başarılı olursa, Birleşik giriş kutusunun liste kutusu bölümünün bir bellek yeniden ayırma gerekmeden önce depolayabileceği en fazla öğe sayısı, aksi durumda CB_ERRSPACE, ancak yeterli bellek yok.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesinin liste kutusu kısmına çok sayıda öğe eklemeden önce bu işlevi çağırın `CComboBox`.
+`CComboBox`liste kutusu kısmına çok sayıda öğe eklemeden önce bu işlevi çağırın.
 
-Yalnızca Windows 95/98: *WParam* parametresi 16 bit değerlerle sınırlıdır. Bu, liste kutularının 32.767 taneden fazla öğe içeremeyeceği anlamına gelir. Öğe sayısı kısıtlanmış olsa da, bir liste kutusundaki öğelerin toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
+Yalnızca Windows 95/98: *wParam* parametresi 16 bit değerlerle sınırlıdır. Bu, liste kutularının 32.767 taneden fazla öğe içeremeyeceği anlamına gelir. Öğe sayısı kısıtlanmış olsa da, bir liste kutusundaki öğelerin toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
 
 Bu işlev, çok sayıda öğe (100 ' den fazla) olan liste kutularının başlatılmasını hızlandırmaya yardımcı olur. Sonraki [AddString](#addstring), [InsertString](#insertstring)ve [dir](#dir) işlevlerinin olası en kısa süreyi alması için belirtilen bellek miktarını önceden ayırır. Parametreler için tahminleri kullanabilirsiniz. Fazla tahmin ediyorsanız, bazı ek bellek ayrılır; tahmin ediyorsanız, önceden ayrılan miktarı aşan öğeler için normal ayırma kullanılır.
 
@@ -1056,11 +1056,11 @@ Eklenecek null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin eklendiği konumun sıfır tabanlı dizini. Bir hata oluşursa dönüş değeri CB_ERR olur. Yeni dizeyi depolamak için yeterli alan yoksa, dönüş değeri CB_ERRSPACE olur.
+Dizenin eklendiği konumun sıfır tabanlı dizini. Bir hata oluşursa, dönüş değeri CB_ERR. Yeni dizeyi depolamak için yeterli kullanılabilir alan yoksa, dönüş değeri CB_ERRSPACE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[AddString](#addstring) üye işlevinden farklı olarak, `InsertString` üye işlevi [cbs_sort](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili sıralanarak bir listeye neden olmaz.
+[AddString](#addstring) üye işlevinin aksine, `InsertString` member işlevi, [cbs_sort](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stilin sıralanmasına sahip bir listeye neden olmaz.
 
 > [!NOTE]
 >  Bu işlev Windows `ComboBoxEx` denetimi tarafından desteklenmiyor. Bu denetim hakkında daha fazla bilgi için Windows SDK [ComboBoxEx denetimleri](/windows/win32/Controls/comboboxex-controls) bölümüne bakın.
@@ -1084,13 +1084,13 @@ Kullanıcının girebileceği metnin uzunluğunu (bayt olarak) belirtir. Bu para
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı. Stili [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) olan Birleşik giriş kutusu veya düzenleme denetimi olmayan Birleşik giriş kutusu için çağrılırsa, dönüş değeri cb_err olur.
+Başarılı olursa sıfır dışı. Stil [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) veya düzenleme denetimi olmayan Birleşik giriş kutusu için bir Birleşik giriş kutusu için çağrılırsa, dönüş değeri cb_err olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birleşik giriş kutusunda [cbs_autohscroll](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles)stili yoksa, metin sınırının düzenleme denetimi boyutundan daha büyük olarak ayarlanması hiçbir etkiye sahip olmayacaktır.
+Birleşik giriş kutusunun Stil [cbs_autohscroll](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles)yoksa, metin sınırının düzenleme denetimi boyutundan daha büyük olarak ayarlanması hiçbir etkiye sahip olmayacaktır.
 
-`LimitText`yalnızca kullanıcının girebileceği metni sınırlandırır. İleti gönderildiğinde düzenleme denetimindeki herhangi bir metin üzerinde hiçbir etkisi yoktur veya liste kutusunda bir dize seçildiğinde düzenleme denetimine kopyalanmış metnin uzunluğunu etkilemez.
+`LimitText` yalnızca kullanıcının girebileceği metni sınırlandırır. İleti gönderildiğinde düzenleme denetimindeki herhangi bir metin üzerinde hiçbir etkisi yoktur veya liste kutusunda bir dize seçildiğinde düzenleme denetimine kopyalanmış metnin uzunluğunu etkilemez.
 
 ### <a name="example"></a>Örnek
 
@@ -1111,11 +1111,11 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bu üye işlevini geçersiz kılın ve Birleşik giriş `MEASUREITEMSTRUCT` kutusundaki liste kutusunun boyutlarını bilgilendirmek için yapıyı girin. Birleşik giriş kutusu [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiliyle oluşturulduysa, çerçeve liste kutusundaki her öğe için bu üye işlevini çağırır. Aksi takdirde, bu üye yalnızca bir kez çağrılır.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bu üye işlevini geçersiz kılın ve Birleşik giriş kutusundaki liste kutusunun boyutlarını bilgilendirmek için `MEASUREITEMSTRUCT` yapısını girin. Birleşik giriş kutusu [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiliyle oluşturulduysa, çerçeve liste kutusundaki her öğe için bu üye işlevini çağırır. Aksi takdirde, bu üye yalnızca bir kez çağrılır.
 
-[SubclassDlgItem](../../mfc/reference/cwnd-class.md#subclassdlgitem) üye işleviyle `CWnd` oluşturulan bir sahip çizimi açılan kutusunda CBS_OWNERDRAWFIXED stilini kullanmak, daha fazla programlama ile ilgili hususlar içerir. [Teknik not14](../../mfc/tn014-custom-controls.md)' te tartışmaya bakın.
+[SubclassDlgItem](../../mfc/reference/cwnd-class.md#subclassdlgitem) üye `CWnd` işleviyle oluşturulan bir sahip çizimi açılan kutusunda CBS_OWNERDRAWFIXED stilini kullanmak, daha fazla programlama ile ilgili dikkat edilmesi gereken noktaları içerir. [Teknik not14](../../mfc/tn014-custom-controls.md)' te tartışmaya bakın.
 
-`MEASUREITEMSTRUCT` Yapının açıklaması için bkz. [CWnd:: OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) .
+`MEASUREITEMSTRUCT` yapısının açıklaması için bkz. [CWnd:: OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) .
 
 ### <a name="example"></a>Örnek
 
@@ -1169,13 +1169,13 @@ Arama yapılacak öneki içeren null ile sonlandırılmış dizeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize bulunursa seçili öğenin sıfır tabanlı dizini. Arama başarısız olduysa, dönüş değeri CB_ERR olur ve geçerli seçim değiştirilmez.
+Dize bulunursa seçili öğenin sıfır tabanlı dizini. Arama başarısız olduysa, dönüş değeri CB_ERR ve geçerli seçim değiştirilmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Dize, yalnızca başlangıçtaki karakterleri (başlangıç noktasından) önek dizesindeki karakterlerle eşleşiyorsa seçilir.
 
-Ve üyesi işlevlerinin her ikisinin de `SelectString` bir dize buldığına, ancak member işlevinin de dizeyi seçtiği unutulmamalıdır. `FindString` `SelectString`
+`SelectString` ve `FindString` member işlevlerinin her ikisinin de bir dize buldığına, ancak `SelectString` member işlevinin de dizeyi seçtiği unutulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1232,7 +1232,7 @@ Seçilecek dizenin sıfır tabanlı dizinini belirtir. -1 ise, liste kutusundaki
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti başarılı olursa seçili öğenin sıfır tabanlı dizini. *NSelect* , listedeki öğe sayısından büyükse veya *nSelect* -1 olarak ayarlandıysa seçimi temizleyen, dönüş değeri cb_err olur.
+İleti başarılı olursa seçili öğenin sıfır tabanlı dizini. *NSelect* , listedeki öğe sayısından büyükse veya *nSelect* -1 olarak ayarlandıysa seçimi temizleyen, dönüş değeri cb_err.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1257,7 +1257,7 @@ Birleşik giriş kutusunun liste kutusu bölümünün piksel cinsinden izin veri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, liste kutusunun yeni genişliği, aksi takdirde CB_ERR.
+Başarılı olursa, liste kutusunun yeni genişliği, aksi durumda CB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1289,7 +1289,7 @@ Bitiş konumunu belirtir. Bitiş konumu-1 olarak ayarlandıysa, başlangıç kon
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi başarılı olursa sıfır dışı; Aksi takdirde 0. `CComboBox` [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahipse veya bir liste kutusu yoksa, cb_err.
+Üye işlevi başarılı olursa sıfır dışı; Aksi takdirde 0. `CComboBox` [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili varsa veya bir liste kutusu yoksa cb_err.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1304,7 +1304,7 @@ Pozisyonlar sıfır tabanlıdır. Düzenleme denetiminin ilk karakterini seçmek
 
 ##  <a name="setextendedui"></a>CComboBox:: Setckesintileri ı
 
-Varsayılan Kullanıcı arabirimini veya [cbs_dropdown](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) ya da [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahip bir Birleşik giriş kutusu için Genişletilmiş Kullanıcı arabirimini seçmek için üyeişleviniçağırın.`SetExtendedUI`
+Varsayılan Kullanıcı arabirimini veya [cbs_dropdown](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) veya [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahip bir Birleşik giriş kutusu için genişletilmiş kullanıcı arabirimini seçmek üzere `SetExtendedUI` member işlevini çağırın.
 
 ```
 int SetExtendedUI(BOOL bExtended = TRUE);
@@ -1317,13 +1317,13 @@ Birleşik giriş kutusunun Genişletilmiş Kullanıcı arabirimini mi yoksa vars
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-CB_OKAY işlem başarılı olursa veya bir hata oluşursa CB_ERR.
+İşlem başarılı olursa veya bir hata oluşursa CB_ERR CB_OKAY.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Genişletilmiş Kullanıcı arabirimi aşağıdaki yollarla tanımlanabilir:
 
-- Statik denetime tıkladığınızda, liste kutusu yalnızca CBS_DROPDOWNLIST stilinde Birleşik giriş kutuları için görüntülenir.
+- Statik denetime tıkladığınızda liste kutusu yalnızca CBS_DROPDOWNLIST stili olan Birleşik giriş kutuları için görüntülenir.
 
 - AŞAĞı ok tuşuna basıldığında liste kutusu görüntülenir (F4 devre dışıdır).
 
@@ -1378,7 +1378,7 @@ Bir hata oluşursa CB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
-32 bit öğe bir işaretçi ise üyeişlevinikullanın.`SetItemDataPtr`
+32 bit öğe bir işaretçi ise `SetItemDataPtr` üye işlevini kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -1416,7 +1416,7 @@ Bu işaretçi Birleşik giriş kutusunun ömrü boyunca geçerli kalır, ancak �
 
 ##  <a name="setitemheight"></a>CComboBox:: SetItemHeight
 
-Birleşik giriş kutusundaki liste öğelerinin yüksekliğini veya Birleşik giriş kutusunun düzenleme denetimi (veya statik metin) bölümünün yüksekliğini ayarlamak için üyeişleviniçağırın.`SetItemHeight`
+Birleşik giriş kutusundaki liste öğelerinin yüksekliğini veya Birleşik giriş kutusunun düzenleme denetimi (veya statik metin) bölümünün yüksekliğini ayarlamak için `SetItemHeight` member işlevini çağırın.
 
 ```
 int SetItemHeight(
@@ -1429,7 +1429,7 @@ int SetItemHeight(
 *nDizin*<br/>
 Liste öğelerinin yüksekliğinin veya Birleşik giriş kutusunun düzenleme denetimi (veya statik metin) bölümünün ayarlanmış olup olmadığını belirtir.
 
-Birleşik giriş kutusunda [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili varsa *nDizin* , yüksekliği ayarlanacak olan liste öğesinin sıfır tabanlı dizinini belirtir; Aksi takdirde, *nIndex* 0 olmalıdır ve tüm liste öğelerinin yüksekliği ayarlanır.
+Birleşik giriş kutusunda [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili varsa *nDizin* , yüksekliği ayarlanacak liste öğesinin sıfır tabanlı dizinini belirtir; Aksi takdirde, *nIndex* 0 olmalıdır ve tüm liste öğelerinin yüksekliği ayarlanır.
 
 *Nindex* -1 ise, Birleşik giriş kutusunun düzenleme denetimi veya statik metin bölümünün yüksekliği ayarlanır.
 
@@ -1467,7 +1467,7 @@ Bu Birleşik giriş kutusunun önceki yerel ayar tanıtıcısı (LCıD) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrılmaması durumunda `SetLocale` , varsayılan yerel ayar sistemden alınır. Bu sistem varsayılan yerel ayarı, Denetim Masası 'nın bölgesel (veya uluslararası) uygulaması kullanılarak değiştirilebilir.
+`SetLocale` çağrılmadığından, varsayılan yerel ayar sistemden alınır. Bu sistem varsayılan yerel ayarı, Denetim Masası 'nın bölgesel (veya uluslararası) uygulaması kullanılarak değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1522,7 +1522,7 @@ Liste kutusu öğesinin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır veya bir hata oluşursa CB_ERR.
+Başarılıysa sıfır veya bir hata oluşursa CB_ERR.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1549,7 +1549,7 @@ Açılan liste kutusunun gösterilip gösterilmeyeceğini veya gizlenmeyeceğini
 
 Varsayılan olarak, bu stilin Birleşik giriş kutusu liste kutusunu gösterir.
 
-Bu üye işlevin, [CBS_SIMPLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiliyle oluşturulmuş bir Birleşik giriş kutusu üzerinde hiçbir etkisi yoktur.
+Bu üye işlevin [CBS_SIMPLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiliyle oluşturulan Birleşik giriş kutusu üzerinde hiçbir etkisi yoktur.
 
 ### <a name="example"></a>Örnek
 

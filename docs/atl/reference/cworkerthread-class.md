@@ -16,11 +16,11 @@ helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
 ms.openlocfilehash: f1aa76514b98bbf12f8e516d3d54f68e8ef4dd7d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496110"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78862948"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 
@@ -45,20 +45,20 @@ class CWorkerThread
 
 ### <a name="protected-structures"></a>Korumalı yapılar
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`WorkerClientEntry`||
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CWorkerThread:: CWorkerThread](#cworkerthread)|Çalışan iş parçacığı için Oluşturucu.|
 |[CWorkerThread:: ~ CWorkerThread](#dtor)|Çalışan iş parçacığının yıkıcısı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CWorkerThread:: AddHandle](#addhandle)|Çalışan iş parçacığı tarafından tutulan listeye bir wasever nesnesinin tanıtıcısını eklemek için bu yöntemi çağırın.|
 |[CWorkerThread:: AddTimer](#addtimer)|Çalışan iş parçacığı tarafından tutulan listeye düzenli bir wasever süreölçeri eklemek için bu yöntemi çağırın.|
@@ -78,7 +78,7 @@ class CWorkerThread
 
 1. Bir çekirdek nesnesinin tanıtıcısı ve [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)uygulamasının bir Işaretçisi Ile [CWorkerThread:: AddHandle](#addhandle) çağırın.
 
-   \- veya -
+   \- veya-
 
    [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)uygulamasına yönelik bir Işaretçiyle [CWorkerThread:: AddTimer](#addtimer) çağrısı yapın.
 
@@ -116,7 +116,7 @@ Tanıtıcı sinyalden sonra [IWorkerThreadClient:: Execute](../../atl/reference/
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -150,7 +150,7 @@ dışı Başarı durumunda, yeni oluşturulan Zamanlayıcı için tanıtıcıyı
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -219,13 +219,13 @@ Mevcut bir çalışan iş parçacığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntem, oluşturulduktan sonra veya [CWorkerThread:: kapanmaya](#shutdown)yönelik bir çağrıdan sonra nesneyi başlatmak için çağrılmalıdır.
 
-İki veya daha fazla `CWorkerThread` nesnenin aynı çalışan iş parçacığını kullanması için herhangi bir bağımsız değişken geçirmeden bunlardan birini başlatın ve ardından bu nesneye `Initialize` bir işaretçi geçirin. İşaretçi kullanılarak başlatılan nesneler, nesneyi başlatmak için kullanılmadan önce kapatılmalıdır.
+İki veya daha fazla `CWorkerThread` nesnenin aynı çalışan iş parçacığını kullanması için herhangi bir bağımsız değişkeni geçirmeden bunlardan birini başlatın ve ardından bu nesneye bir işaretçi geçirerek diğerlerinin `Initialize` yöntemlerine geçirin. İşaretçi kullanılarak başlatılan nesneler, nesneyi başlatmak için kullanılmadan önce kapatılmalıdır.
 
 Bu yöntemin davranışının, var olan bir nesnenin işaretçisi kullanılarak başlatıldığında nasıl değiştiği hakkında bilgi için bkz. [CWorkerThread:: kapanıyor](#shutdown) .
 
@@ -244,7 +244,7 @@ Kaldırılacak tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -261,21 +261,21 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwWait*<br/>
-Çalışan iş parçacığının kapanması için beklenecek süre (milisaniye olarak). ATL_WORKER_THREAD_WAIT varsayılan olarak 10 saniyedir. Gerekirse, atlutil. h dahil etmeden önce Bu sembol için kendi değerini tanımlayabilirsiniz.
+Çalışan iş parçacığının kapanması için beklenecek süre (milisaniye olarak). ATL_WORKER_THREAD_WAIT varsayılan değer 10 saniyedir. Gerekirse, atlutil. h dahil etmeden önce Bu sembol için kendi değerini tanımlayabilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı durumunda S_OK döndürür veya hata durumunda HRESULT, zaman aşımı değeri *dwWait*gibi bir hata döndürür.
+Başarılı S_OK veya hata durumunda HRESULT, zaman aşımı değeri *dwWait*gibi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Nesneyi yeniden kullanmak için, bu yöntemi çağırdıktan sonra [CWorkerThread:: Initialize](#initialize) öğesini çağırın.
 
-`Shutdown` Başka`CWorkerThread` bir nesnenin işaretçisi ile başlatılan bir nesne üzerinde çağırmanın etkin olmadığını ve her zaman S_OK döndürdüğünü unutmayın.
+Başka bir `CWorkerThread` nesnesinin işaretçisi ile başlatılan bir nesne üzerinde `Shutdown` çağırmanın etkin olmadığını ve her zaman S_OK döndürdüğünü unutmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Defaultthreadnitelikler](atl-typedefs.md#defaultthreadtraits)<br/>
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>
-[Çoklu İş Parçacığı Kullanımı: Arka Plan İş Parçacıkları Oluşturma](../../parallel/multithreading-creating-worker-threads.md)<br/>
+[Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../../parallel/multithreading-creating-worker-threads.md)<br/>
 [IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)

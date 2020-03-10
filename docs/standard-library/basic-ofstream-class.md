@@ -17,15 +17,15 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
 ms.openlocfilehash: a73803f25c4fb9e54703b8bca93e68fedb63074e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452515"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865879"
 ---
-# <a name="basicofstream-class"></a>basic_ofstream Sınıfı
+# <a name="basic_ofstream-class"></a>basic_ofstream Sınıfı
 
-Öğelerin ve kodlanmış nesnelerin [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem` `Elem`sınıfının bir akış arabelleğine eklenmesini ve karakter nitelikleri belirlenen tür öğeleri olan >olduğunudenetleyenbirnesneyiaçıklar`Tr` sınıf `Tr`tarafından.
+Öğelerin ve kodlanmış nesnelerin bir akış arabelleğine [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, karakter nitelikleri sınıf `Elem`tarafından belirlendiği şekilde, `Tr`türündeki öğeleri içeren bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,21 +36,21 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled*\
 Dosya arabelleğinin temel öğesi.
 
 *Tr*\
-Dosya arabelleğinin temel öğesinin nitelikleri (genellikle `char_traits` <  `Elem`>).
+Dosya arabelleğinin temel öğesinin nitelikleri (genellikle `char_traits`< `Elem`>).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosyaya `basic_ofstream` yazdığı **wchar_t** özelleştirmesi, dosya metin modunda açılırsa bir MBCS sırası yazar. İç gösterim, bir `wchar_t` karakter arabelleği kullanır.
+`basic_ofstream` **wchar_t** özelleştirmesi dosyaya yazdığında, dosya metin modunda açılırsa, bir MBCS sırası yazar. İç gösterim `wchar_t` karakter arabelleği kullanır.
 
-`basic_filebuf`Nesnesi, <  >sınıfının`Elem`bir nesnesini depolar. `Tr`
+Nesnesi `basic_filebuf`< `Elem`, `Tr`> bir nesne saklar.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesnesinin nasıl oluşturulduğunu ve `basic_ofstream` bir metnin nasıl yazılacağını gösterir.
+Aşağıdaki örnek, bir `basic_ofstream` nesnesinin nasıl oluşturulduğunu ve ona nasıl metin yazılacağını gösterir.
 
 ```cpp
 // basic_ofstream_class.cpp
@@ -74,7 +74,7 @@ int main(int argc, char **argv)
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_ofstream](#basic_ofstream)|Türünde `basic_ofstream`bir nesne oluşturur.|
+|[basic_ofstream](#basic_ofstream)|`basic_ofstream`türünde bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -84,23 +84,23 @@ int main(int argc, char **argv)
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını belirler.|
 |[open](#open)|Bir dosya açar.|
 |[rdbuf](#rdbuf)|Depolanan akış arabelleğinin adresini döndürür.|
-|[Kur](#swap)|Bunun `basic_ofstream` içeriğini, belirtilen `basic_ofstream`içeriği için Exchange.|
+|[Kur](#swap)|Bu `basic_ofstream` içeriğini, belirtilen `basic_ofstream`içerikleri için Exchange.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Bu Stream nesnesinin içeriğini atar. Bu, arkasında bir kopya bırakmayan `rvalue reference` bir taşıma atamasıdır.|
+|[işleç =](#op_eq)|Bu Stream nesnesinin içeriğini atar. Bu, arkasında bir kopya bırakmayan bir `rvalue reference` içeren bir taşıma atamasıdır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<fstream >
+**Üstbilgi:** \<fstream >
 
 **Ad alanı:** std
 
-## <a name="basic_ofstream"></a>basic_ofstream::basic_ofstream
+## <a name="basic_ofstream"></a>basic_ofstream:: basic_ofstream
 
-Türünde `basic_ofstream`bir nesne oluşturur.
+`basic_ofstream`türünde bir nesne oluşturur.
 
 ```cpp
 basic_ofstream();
@@ -121,29 +121,29 @@ basic_ofstream(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Dosya adı*\
+*_Filename*\
 Açılacak dosyanın adı.
 
-*_Mod*\
+*_Mode*\
 [İos_base:: OpenMode](../standard-library/ios-base-class.md#openmode)içindeki Numaralandırmalardan biri.
 
 *_Prot*\
-Varsayılan dosya açma koruması, `shflag` [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)içindeki parametreye eşdeğerdir.
+Varsayılan dosya açma koruması, _fsopen `shflag` parametresine eşdeğer [_wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-*Right*\
-`basic_ofstream` Bu`basic_ofstream` nesneyi başlatmak için kullanılan nesneye rvalue başvurusu.
+*sağ*\
+Bu `basic_ofstream` nesnesini başlatmak için kullanılan `basic_ofstream` nesnesine rvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu,`sb` [basic_filebuf](../standard-library/basic-filebuf-class.md) `sb` sınıfınınsaklı`Elem`nesnesi olan [basic_ostream](../standard-library/basic-ostream-class.md)() öğesini çağırarak temel sınıfı başlatır, burada >.`Tr`<  >`Tr`Çağırarak `basic_filebuf` `sb` dabaşlatılır`Elem`. < 
+İlk Oluşturucu [basic_ostream](../standard-library/basic-ostream-class.md)(`sb`) çağırarak temel sınıfı başlatır; burada `sb`, [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`> sınıfının saklı nesnesidir. Ayrıca, `basic_filebuf`< `Elem`, `Tr`> çağırarak `sb` başlatır.
 
-İkinci ve üçüncü oluşturucular, temel sınıfı çağırarak `basic_ostream`( **SB**) başlatır. Ayrıca `sb` , `basic_filebuf` >çağırarak<  vesonra`sb`da başlatılır. `Elem` `Tr` [Açık](../standard-library/basic-filebuf-class.md#open) ( `_Filename`, `_Mode` &#124; `ios_base::out`). İkinci işlev null bir işaretçi döndürürse, Oluşturucu [SetState](../standard-library/basic-ios-class.md#setstate)(`failbit`) öğesini çağırır.
+İkinci ve üçüncü oluşturucular `basic_ostream`( **SB**) çağırarak temel sınıfı başlatır. Ayrıca, `basic_filebuf`< `Elem`, `Tr`> çağırarak ve ardından `sb``sb` başlatır. [açın](../standard-library/basic-filebuf-class.md#open)(`_Filename`, `_Mode` &#124; `ios_base::out`). İkinci işlev null bir işaretçi döndürürse, Oluşturucu [SetState](../standard-library/basic-ios-class.md#setstate)(`failbit`) öğesini çağırır.
 
 Dördüncü Oluşturucu bir kopyalama işlevidir. Nesneyi *sağ*içeriğiyle başlatır ve rvalue başvurusu olarak değerlendirilir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesnesinin nasıl oluşturulduğunu ve `basic_ofstream` bir metnin nasıl yazılacağını gösterir.
+Aşağıdaki örnek, bir `basic_ofstream` nesnesinin nasıl oluşturulduğunu ve ona nasıl metin yazılacağını gösterir.
 
 ```cpp
 // basic_ofstream_ctor.cpp
@@ -177,9 +177,9 @@ void close();
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `close`bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) .
+`close`kullanan bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) .
 
-## <a name="is_open"></a>basic_ofstream::is_open
+## <a name="is_open"></a>basic_ofstream:: is_open
 
 Bir dosyanın açık olup olmadığını gösterir.
 
@@ -243,26 +243,26 @@ void open(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Dosya adı*\
+*_Filename*\
 Açılacak dosyanın adı.
 
-*_Mod*\
+*_Mode*\
 [İos_base:: OpenMode](../standard-library/ios-base-class.md#openmode)içindeki Numaralandırmalardan biri.
 
 *_Prot*\
-Varsayılan dosya açma koruması, `shflag` [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)içindeki parametreye eşdeğerdir.
+Varsayılan dosya açma koruması, _fsopen `shflag` parametresine eşdeğer [_wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [rdarabelleğe](#rdbuf) **->** [Açık](../standard-library/basic-filebuf-class.md#open)' ı (_ *filename*, `_Mode` &#124; `ios_base::out`) çağırır. Bu işlev null bir işaretçi döndürürse, işlev [SetState](../standard-library/basic-ios-class.md#setstate)(`failbit`) yöntemini çağırır.
+Üye işlevi [rdarabelleğe](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode` &#124; `ios_base::out`) yöntemini çağırır. Bu işlev null bir işaretçi döndürürse, işlev [SetState](../standard-library/basic-ios-class.md#setstate)(`failbit`) öğesini çağırır.
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `open`bir örnek için bkz. [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) .
+`open`kullanan bir örnek için bkz. [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) .
 
 ## <a name="op_eq"></a>basic_ofstream:: operator =
 
-Bu Stream nesnesinin içeriğini atar. Bu, arkasında bir kopya bırakmayan `rvalue reference` bir taşıma atamasıdır.
+Bu Stream nesnesinin içeriğini atar. Bu, arkasında bir kopya bırakmayan bir `rvalue reference` içeren bir taşıma atamasıdır.
 
 ```cpp
 basic_ofstream& operator=(basic_ofstream&& right);
@@ -270,12 +270,12 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-Bir `basic_ofstream` nesneye rvalue başvurusu.
+*sağ*\
+`basic_ofstream` nesnesine bir rvalue başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür `*this`.
+`*this` döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -295,11 +295,11 @@ Depolanan akış arabelleğinin adresini döndürür.
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `rdbuf`bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) .
+`rdbuf`kullanan bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) .
 
 ## <a name="swap"></a>basic_ofstream:: swap
 
-İki `basic_ofstream` nesnenin içeriğini değiş tokuş eder.
+İki `basic_ofstream` nesnesinin içeriğini değiş tokuş eder.
 
 ```cpp
 void swap(basic_ofstream& right);
@@ -307,8 +307,8 @@ void swap(basic_ofstream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`lvalue` Başka`basic_ofstream` bir nesneye başvuru.
+*sağ*\
+`lvalue` başka bir `basic_ofstream` nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -317,6 +317,6 @@ void swap(basic_ofstream& right);
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [basic_ostream sınıfı](../standard-library/basic-ostream-class.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [iostream programlama](../standard-library/iostream-programming.md)\
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)
