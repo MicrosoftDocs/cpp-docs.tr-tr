@@ -167,15 +167,15 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
 ms.openlocfilehash: 96118645aa656e97fcb93a0fd223045208ab03a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206365"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867306"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 
-Bir veri kaynağından seçilen kayıt kümesini temsil eder.
+Bir veri kaynağından seçilen bir kayıt kümesini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -187,137 +187,137 @@ class CDaoRecordset : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDaoRecordset::CDaoRecordset](#cdaorecordset)|Oluşturur bir `CDaoRecordset` nesne.|
+|[CDaoRecordset:: CDaoRecordset](#cdaorecordset)|`CDaoRecordset` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDaoRecordset::AddNew](#addnew)|Yeni bir kayıt eklemek için hazırlar. Çağrı [güncelleştirme](#update) eklenmesi tamamlanması.|
-|[CDaoRecordset::CanAppend](#canappend)|Yeni kayıtlar kayıt kümesine eklenebilir, sıfır döndürür [AddNew](#addnew) üye işlevi.|
-|[CDaoRecordset::CanBookmark](#canbookmark)|Kayıt kümesi yer işaretleri destekliyorsa, sıfır döndürür.|
-|[CDaoRecordset::CancelUpdate](#cancelupdate)|Beklemedeki Güncelleştirmeleri nedeniyle iptal bir [Düzenle](#edit) veya [AddNew](#addnew) işlemi.|
-|[CDaoRecordset::CanRestart](#canrestart)|Döndürür gösterimiyse [Requery](#requery) kümesinin sorguyu yeniden çalıştırmayı çağrılabilir.|
-|[CDaoRecordset::CanScroll](#canscroll)|Kayıtlarda gezinmek, sıfır döndürür.|
-|[CDaoRecordset::CanTransact](#cantransact)|Veri kaynağı işlemleri destekliyorsa, sıfır döndürür.|
-|[CDaoRecordset::CanUpdate](#canupdate)|Kayıt kümesi güncelleştirilebilir, sıfır döndürür (ekleyebilir, güncelleştirme veya kayıtlarını sil).|
-|[CDaoRecordset::Close](#close)|Kayıt kümesi kapatır.|
-|[CDaoRecordset::Delete](#delete)|Geçerli kayıt kayıt kümesinden siler. Silindikten sonra başka bir kayıtla açıkça kaydırma gerekir.|
-|[CDaoRecordset::DoFieldExchange](#dofieldexchange)|Kayıt alan veri üyeleri ve ilgili kaydı veri kaynağında arasında (her iki yönde) veri değişimi için çağrılır. Implements DAO alanı değişimi (DFX) kaydedin.|
-|[CDaoRecordset::Edit](#edit)|Değişiklikleri geçerli kayda hazırlar. Çağrı `Update` düzenlemeyi tamamlamak için.|
-|[CDaoRecordset::FillCache](#fillcache)|Dolgular tüm veya bir yerel önbellek bir ODBC veri kaynağından alınan veriler içeren bir kayıt kümesi nesnesi için bir parçası.|
-|[CDaoRecordset::Find](#find)|İlk olarak, sonraki bulur geçerli kayıt kaydı yapar ve belirtilen ölçütleri karşılayan bir dinamik tür kümesinde belirli bir dizenin önceki ya da son konum.|
-|[CDaoRecordset::FindFirst](#findfirst)|Bir dinamik tür ya da anlık görüntü türü kayıt kümesi geçerli kayıt kaydı yapar ve belirtilen ölçütleri karşılayan ilk kaydı bulur.|
-|[CDaoRecordset::FindLast](#findlast)|Son kayda bir dinamik tür ya da geçerli kayıt kaydı yapar ve belirtilen ölçütleri karşılayan bir anlık görüntü türü kayıt kümesi bulur.|
-|[CDaoRecordset::FindNext](#findnext)|Sonraki kayda bir dinamik tür ya da geçerli kayıt kaydı yapar ve belirtilen ölçütleri karşılayan bir anlık görüntü türü kayıt kümesi bulur.|
-|[CDaoRecordset::FindPrev](#findprev)|Dinamik tür ya da geçerli kayıt kaydı yapar ve belirtilen ölçütleri karşılayan bir anlık görüntü türü kayıt kümesi içinde önceki kaydı bulur.|
-|[CDaoRecordset::GetAbsolutePosition](#getabsoluteposition)|Kayıt kümesi nesnesinin geçerli kayıt kayıt sayısını döndürür.|
-|[CDaoRecordset::GetBookmark](#getbookmark)|Bir kayıtta yer işareti temsil eden bir değer döndürür.|
-|[CDaoRecordset::GetCacheSize](#getcachesize)|Bir ODBC veri kaynağından yerel olarak önbelleğe alınacak verileri içeren dinamik türü kayıt kümesindeki kayıt sayısını belirten bir değeri döndürür.|
-|[CDaoRecordset::GetCacheStart](#getcachestart)|Önbelleğe alınacak kayıt kümesinde yer ilk kaydın belirten bir değeri döndürür.|
-|[CDaoRecordset::GetCurrentIndex](#getcurrentindex)|Döndürür bir `CString` dizinin adını içeren en son kullanılan dizini bir tablo-türü `CDaoRecordset`.|
-|[CDaoRecordset::GetDateCreated](#getdatecreated)|Temel tablo temel tarihi ve saati döndürür. bir `CDaoRecordset` nesnesi oluşturuldu|
-|[CDaoRecordset::GetDateLastUpdated](#getdatelastupdated)|Tarih ve saat, temel alınan temel tablo tasarımı için yapılan en son değişikliği döndürür bir `CDaoRecordset` nesne.|
-|[CDaoRecordset::GetDefaultDBName](#getdefaultdbname)|Varsayılan veri kaynağı adını döndürür.|
-|[CDaoRecordset::GetDefaultSQL](#getdefaultsql)|Yürütmek için varsayılan SQL dizesini almak için çağrılır.|
-|[CDaoRecordset::GetEditMode](#geteditmode)|Düzenleme için geçerli kayıt durumunu gösteren bir değer döndürür.|
-|[CDaoRecordset::GetFieldCount](#getfieldcount)|Bir kayıt içindeki alanların sayısını temsil eden bir değer döndürür.|
-|[CDaoRecordset::GetFieldInfo](#getfieldinfo)|Kayıt kümesinde belirli tür alanları hakkında bilgileri döndürür.|
-|[CDaoRecordset::GetFieldValue](#getfieldvalue)|Bir kayıt kümesinde bir alanın değerini döndürür.|
-|[CDaoRecordset::GetIndexCount](#getindexcount)|Bir kayıt kümesi temel alınan tablodaki dizinler sayısını alır.|
-|[CDaoRecordset::GetIndexInfo](#getindexinfo)|Çeşitli dizin hakkında bilgi döndürür.|
-|[CDaoRecordset::GetLastModifiedBookmark](#getlastmodifiedbookmark)|En son eklenen veya güncelleştirilen kaydı belirlemek için kullanılır.|
-|[CDaoRecordset::GetLockingMode](#getlockingmode)|Düzenleme sırasında yürürlükte olan kilitleme türünü belirten bir değer döndürür.|
-|[CDaoRecordset::GetName](#getname)|Döndürür bir `CString` kayıt kümesi adını içeren.|
-|[CDaoRecordset::GetParamValue](#getparamvalue)|Temel alınan DAOParameter nesnesinde depolanan belirtilen parametresinin geçerli değerini alır.|
-|[CDaoRecordset::GetPercentPosition](#getpercentposition)|Geçerli kayıt konumunu toplam kayıt sayısı yüzdesi olarak döndürür.|
-|[CDaoRecordset::GetRecordCount](#getrecordcount)|Bir kayıt kümesi nesnesi erişilen kayıt sayısını döndürür.|
-|[CDaoRecordset::GetSQL](#getsql)|Kayıt kümesi kayıtları seçmek için kullanılan SQL dizesi alır.|
-|[CDaoRecordset::GetType](#gettype)|Bir kayıt türünü belirlemek için çağırılır: Tablo türü, dinamik küme türü veya anlık görüntü türü.|
-|[CDaoRecordset::GetValidationRule](#getvalidationrule)|Döndürür bir `CString` alana girerken, verileri doğrular değerini içeren.|
-|[CDaoRecordset::GetValidationText](#getvalidationtext)|Bir doğrulama kuralı koşullar karşılanırsa görüntülenen metni alır.|
-|[CDaoRecordset::IsBOF](#isbof)|İlk kayıttan önce kayıt üzere konumlandırmıştır sıfır olmayan döndürür. Geçerli kayıt yok.|
-|[CDaoRecordset::IsDeleted](#isdeleted)|Kayıt kümesini silinmiş bir kayda konumlandırıldı, sıfır döndürür.|
-|[CDaoRecordset::IsEOF](#iseof)|Son kayıttan sonra kayıt üzere konumlandırmıştır, sıfır döndürür. Geçerli kayıt yok.|
-|[CDaoRecordset::IsFieldDirty](#isfielddirty)|Belirtilen alan geçerli kayıt değiştirilmişse, sıfır döndürür.|
-|[CDaoRecordset::IsFieldNull](#isfieldnull)|Geçerli kayıt belirtilen alan Null (hiçbir değer yok) ise sıfır döndürür.|
-|[CDaoRecordset::IsFieldNullable](#isfieldnullable)|(Hiçbir değer yok), geçerli kayıtta belirtilen alan Null olarak ayarlanabilir, sıfır döndürür.|
-|[CDaoRecordset::IsOpen](#isopen)|Döndürür gösterimiyse [açık](#open) daha önce çağırıldı.|
-|[CDaoRecordset::Move](#move)|Kayıt belirli bir kayıt sayısı için herhangi bir yönde geçerli kaydından yerleştirir.|
-|[CDaoRecordset::MoveFirst](#movefirst)|İlk kayıt kayıt kümesindeki geçerli kayıt yerleştirir.|
-|[CDaoRecordset::MoveLast](#movelast)|Kümesinde son kayıtta geçerli kayıt yerleştirir.|
-|[CDaoRecordset::MoveNext](#movenext)|Sonraki kayıt kayıt kümesindeki geçerli kayıt yerleştirir.|
-|[CDaoRecordset::MovePrev](#moveprev)|Önceki kayıt kayıt kümesindeki geçerli kayıt yerleştirir.|
-|[CDaoRecordset::Open](#open)|Yeni bir kayıt tablosu, dinamik veya anlık görüntü oluşturur.|
-|[CDaoRecordset::Requery](#requery)|Yeniden seçilen kayıtları yenilemek için kayıt kümesinin sorgusu çalıştırır.|
-|[CDaoRecordset::Seek](#seek)|Geçerli kayıt kaydı yapar ve geçerli dizin için belirtilen ölçütleri karşılayan bir dizinlenmiş tablo türü kayıt kümesi nesnesi içinde kaydı bulur.|
-|[CDaoRecordset::SetAbsolutePosition](#setabsoluteposition)|Kayıt kümesi nesnesinin geçerli kayıt kayıt sayısını ayarlar.|
-|[CDaoRecordset::SetBookmark](#setbookmark)|Belirtilen yer işareti içeren bir kayda kayıt kümesini yerleştirir.|
-|[CDaoRecordset::SetCacheSize](#setcachesize)|Bir ODBC veri kaynağından yerel olarak önbelleğe alınacak verileri içeren dinamik türü kayıt kümesindeki kayıt sayısını belirten bir değeri ayarlar.|
-|[CDaoRecordset::SetCacheStart](#setcachestart)|Önbelleğe alınacak kayıt kümesinde yer ilk kaydın belirten bir değeri ayarlar.|
-|[CDaoRecordset::SetCurrentIndex](#setcurrentindex)|Bir dizin üzerinde tablo türünde bir kayıt kümesi ayarlamak için çağrılır.|
-|[CDaoRecordset::SetFieldDirty](#setfielddirty)|Geçerli kayıt belirtilen alan değiştirilmiş olarak işaretler.|
-|[CDaoRecordset::SetFieldNull](#setfieldnull)|Null (hiçbir değer yok) geçerli kayıttaki belirtilen alanın değerini ayarlar.|
-|[CDaoRecordset::SetFieldValue](#setfieldvalue)|Bir kayıt kümesinde bir alanın değerini ayarlar.|
-|[CDaoRecordset::SetFieldValueNull](#setfieldvaluenull)|Bir kayıt kümesi null bir alanın değerini ayarlar. (hiçbir değer yok).|
-|[CDaoRecordset::SetLockingMode](#setlockingmode)|Düzenleme sırasında yürürlüğe koymak için kilitleme türünü belirten bir değer ayarlar.|
-|[CDaoRecordset::SetParamValue](#setparamvalue)|Temel alınan DAOParameter nesnesinde depolanan belirtilen parametresinin geçerli değerini ayarlar.|
-|[CDaoRecordset::SetParamValueNull](#setparamvaluenull)|Belirtilen parametre geçerli değeri Null (hiçbir değer yok) olarak ayarlar.|
-|[CDaoRecordset::SetPercentPosition](#setpercentposition)|Bir kayıt kümesindeki kayıtları toplam sayısının yüzdesi karşılık gelen bir konuma geçerli kayıt konumunu ayarlar.|
-|[CDaoRecordset::Update](#update)|Tamamlanan bir `AddNew` veya `Edit` yeni veya düzenlenmiş verilerin veri kaynağında kaydederek işlemi.|
+|[CDaoRecordset:: AddNew](#addnew)|Yeni bir kayıt eklemeye hazırlar. Ekleme işleminin tamamlanabilmesi için [güncelleştirmeyi](#update) çağırın.|
+|[CDaoRecordset:: CanAppend](#canappend)|[AddNew](#addnew) üye işlevi aracılığıyla kayıt kümesine yeni kayıtlar eklenebileceği sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: CanBookmark](#canbookmark)|Kayıt kümesi yer imlerini destekliyorsa sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: CancelUpdate](#cancelupdate)|Bir [düzenleme](#edit) veya [AddNew](#addnew) işlemi nedeniyle bekleyen tüm güncelleştirmeleri iptal eder.|
+|[CDaoRecordset:: CanRestart](#canrestart)|Kayıt kümesinin sorgusunu yeniden çalıştırmak için [YenidenSorgula](#requery) çağrılırsa sıfır dışı döndürür.|
+|[CDaoRecordset:: CanScroll](#canscroll)|Kayıtlar arasında gezinebilirsiniz, sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: CanTransact](#cantransact)|Veri kaynağı işlemleri destekliyorsa sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: CanUpdate](#canupdate)|Kayıt kümesi güncelleştiribir şekilde (kayıt ekleyebilir, güncelleştirebilir veya silebilirsiniz) sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: Close](#close)|Kayıt kümesini kapatır.|
+|[CDaoRecordset::D Sil](#delete)|Kayıt kümesinden geçerli kaydı siler. Silme işleminden sonra açıkça başka bir kayda kaydırma yapmanız gerekir.|
+|[CDaoRecordset::D oFieldExchange](#dofieldexchange)|Kayıt kümesinin alan veri üyeleri ile veri kaynağındaki karşılık gelen kayıt arasındaki verileri (her iki yönde) değiş tokuş etmek için çağırılır. DAO Kayıt alanı değişimi (DFX) uygular.|
+|[CDaoRecordset:: Edit](#edit)|Geçerli kayıttaki değişikliklere hazırlar. Düzenleme işleminin tamamlanabilmesi için `Update` çağırın.|
+|[CDaoRecordset:: FillCache](#fillcache)|ODBC veri kaynağından veri içeren bir kayıt kümesi nesnesi için yerel önbelleğin tümünü veya bir parçasını doldurur.|
+|[CDaoRecordset:: Find](#find)|Belirli bir dizenin, belirtilen ölçütlere uyan ve bu kaydı geçerli kayıt yapan bir Recordset içindeki ilk, sonraki, önceki veya son konumunu bulur.|
+|[CDaoRecordset:: FindFirst](#findfirst)|Belirtilen ölçütlere uyan bir değişken tür veya anlık görüntü türü kayıt kümesindeki ilk kaydı bulur ve bu kaydı geçerli kayıt yapar.|
+|[CDaoRecordset:: FindLast](#findlast)|Belirtilen ölçütlere uyan bir değişken tür veya anlık görüntü türü kayıt kümesindeki son kaydı bulur ve bu kaydı geçerli kayıt yapar.|
+|[CDaoRecordset:: Sonrabul](#findnext)|Bir sonraki kaydı, belirtilen ölçütlere uyan bir değişken tür veya anlık görüntü türü kayıt kümesinde bulur ve bu kaydı geçerli kayıt yapar.|
+|[CDaoRecordset:: Findöncekini](#findprev)|Bir önceki kaydı, belirtilen ölçütlere uyan bir değişken tür veya anlık görüntü türü kayıt kümesinde bulur ve bu kaydı geçerli kayıt yapar.|
+|[CDaoRecordset:: GetAbsolutePosition](#getabsoluteposition)|Bir kayıt kümesi nesnesinin geçerli kaydının kayıt numarasını döndürür.|
+|[CDaoRecordset:: GetBookmark](#getbookmark)|Bir kayıttaki yer işaretini temsil eden bir değer döndürür.|
+|[CDaoRecordset:: GetCacheSize](#getcachesize)|Bir ODBC veri kaynağından yerel olarak önbelleğe alınacak verileri içeren bir değişken türü Recordset içindeki kayıtların sayısını belirten bir değer döndürür.|
+|[CDaoRecordset:: GetCacheStart](#getcachestart)|Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işaretini belirten bir değer döndürür.|
+|[CDaoRecordset:: GetCurrentIndex](#getcurrentindex)|Dizine alınmış, tablo türü `CDaoRecordset`en son kullanılan dizin adını içeren `CString` döndürür.|
+|[CDaoRecordset:: GetDateCreated](#getdatecreated)|Temel tablonun bir `CDaoRecordset` nesnesinin oluşturulduğu tarih ve saati döndürür|
+|[CDaoRecordset:: GetDateLastUpdated](#getdatelastupdated)|`CDaoRecordset` nesnesi temel aldığı temel tablonun tasarımında yapılan en son değişikliğin tarih ve saatini döndürür.|
+|[CDaoRecordset:: GetDefaultDBName](#getdefaultdbname)|Varsayılan veri kaynağının adını döndürür.|
+|[CDaoRecordset:: GetDefaultSQL](#getdefaultsql)|Yürütülecek varsayılan SQL dizesini almak için çağırılır.|
+|[CDaoRecordset:: GetEditMode](#geteditmode)|Geçerli kayıt için düzenlemenin durumunu gösteren bir değer döndürür.|
+|[CDaoRecordset:: GetFieldCount](#getfieldcount)|Bir kayıt kümesindeki alan sayısını temsil eden bir değer döndürür.|
+|[CDaoRecordset:: GetFieldInfo](#getfieldinfo)|Kayıt kümesindeki alanlarla ilgili belirli tür bilgileri döndürür.|
+|[CDaoRecordset:: GetFieldValue](#getfieldvalue)|Bir kayıt kümesindeki bir alanın değerini döndürür.|
+|[CDaoRecordset:: GetIndexCount](#getindexcount)|Bir kayıt kümesini temel alan bir tablodaki dizinlerin sayısını alır.|
+|[CDaoRecordset:: GetIndexInfo](#getindexinfo)|Bir dizinle ilgili çeşitli bilgi türlerini döndürür.|
+|[CDaoRecordset:: GetLastModifiedBookmark](#getlastmodifiedbookmark)|En son eklenen veya güncelleştirilmiş kaydı belirlemede kullanılır.|
+|[CDaoRecordset:: GetLockingMode](#getlockingmode)|Düzen sırasında geçerli olan kilitleme türünü gösteren bir değer döndürür.|
+|[CDaoRecordset:: GetName](#getname)|Kayıt kümesinin adını içeren `CString` döndürür.|
+|[CDaoRecordset:: GetParamValue](#getparamvalue)|Temel alınan Baoparameter nesnesinde depolanan belirtilen parametrenin geçerli değerini alır.|
+|[CDaoRecordset:: GetPercentPosition](#getpercentposition)|Geçerli kaydın konumunu toplam kayıt sayısının yüzdesi olarak döndürür.|
+|[CDaoRecordset:: GetRecordCount](#getrecordcount)|Bir kayıt kümesi nesnesinde erişilen kayıt sayısını döndürür.|
+|[CDaoRecordset:: GetSQL](#getsql)|Kayıt kümesi için kayıt seçmek üzere kullanılan SQL dizesini alır.|
+|[CDaoRecordset:: GetType](#gettype)|Bir kayıt kümesinin türünü belirlemekte çağırılır: tablo türü, Dynaset türü veya anlık görüntü türü.|
+|[CDaoRecordset:: GetValidationRule](#getvalidationrule)|Bir alana girildiği için verileri doğrulayan değeri içeren `CString` döndürür.|
+|[CDaoRecordset:: GetValidationText](#getvalidationtext)|Doğrulama kuralı karşılanmadığı zaman görüntülenen metni alır.|
+|[CDaoRecordset:: IsBOF](#isbof)|Kayıt kümesi ilk kayıttan önce konumlandırılmışsa sıfır dışında bir değer döndürür. Geçerli kayıt yok.|
+|[CDaoRecordset:: IsDeleted](#isdeleted)|Kayıt kümesi silinen bir kayıt üzerinde konumlandırılmışsa sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: IOF](#iseof)|Kayıt kümesi son kayıttan sonra konumlandırılmışsa sıfır dışında bir değer döndürür. Geçerli kayıt yok.|
+|[CDaoRecordset:: IsFieldDirty](#isfielddirty)|Geçerli kayıttaki belirtilen alan değiştirilmişse sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: IsFieldNull](#isfieldnull)|Geçerli kayıttaki belirtilen alan null ise (hiçbir değer olmadan) sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: Isfieldnullenebilir](#isfieldnullable)|Geçerli kayıttaki belirtilen alan null (değer olmadan) olarak ayarlandıysa sıfır dışında bir değer döndürür.|
+|[CDaoRecordset:: IsOpen](#isopen)|[Open](#open) önceden çağrılırsa sıfır olmayan bir değer döndürür.|
+|[CDaoRecordset:: Move](#move)|Kayıt kümesini geçerli kayıttaki belirtilen sayıda kayda her iki yönde konumlandırır.|
+|[CDaoRecordset:: MoveFirst](#movefirst)|Kayıt kümesindeki ilk kayıttaki geçerli kaydı konumlandırır.|
+|[CDaoRecordset:: MoveLast](#movelast)|Kayıt kümesindeki son kayıttaki geçerli kaydı konumlandırır.|
+|[CDaoRecordset:: MoveNext](#movenext)|Kayıt kümesindeki bir sonraki kayıttaki geçerli kaydı konumlandırır.|
+|[CDaoRecordset:: Moveöncekini](#moveprev)|Kayıt kümesindeki önceki kayıttaki geçerli kaydı konumlandırır.|
+|[CDaoRecordset:: Open](#open)|Bir tablo, dynaset veya anlık görüntüden yeni bir kayıt kümesi oluşturur.|
+|[CDaoRecordset:: Requery](#requery)|Seçilen kayıtları yenilemek için kayıt kümesinin sorgusunu yeniden çalıştırır.|
+|[CDaoRecordset:: Seek](#seek)|Kaydı, geçerli dizin için belirtilen ölçütlere uyan bir dizinli tablo türü kayıt kümesi nesnesinde bulur ve bu kaydı geçerli kayıt yapar.|
+|[CDaoRecordset:: SetAbsolutePosition](#setabsoluteposition)|Kayıt kümesi nesnesinin geçerli kaydının kayıt numarasını ayarlar.|
+|[CDaoRecordset:: SetBookmark](#setbookmark)|Kayıt kümesini belirtilen yer işaretini içeren bir kayıt üzerinde konumlandırır.|
+|[CDaoRecordset:: SetCacheSize](#setcachesize)|Bir ODBC veri kaynağından yerel olarak önbelleğe alınacak verileri içeren bir değişken türü Recordset içindeki kayıt sayısını belirten bir değer ayarlar.|
+|[CDaoRecordset:: SetCacheStart](#setcachestart)|Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işaretini belirten bir değer ayarlar.|
+|[CDaoRecordset:: SetCurrentIndex](#setcurrentindex)|Tablo türü bir kayıt kümesinde dizin ayarlamak için çağırılır.|
+|[CDaoRecordset:: SetFieldDirty](#setfielddirty)|Geçerli kayıttaki belirtilen alanı değiştirildi olarak işaretler.|
+|[CDaoRecordset:: SetFieldNull](#setfieldnull)|Geçerli kayıttaki belirtilen alanın değerini null olarak ayarlar (hiçbir değer olmadan).|
+|[CDaoRecordset:: SetFieldValue](#setfieldvalue)|Bir kayıt kümesindeki bir alanın değerini ayarlar.|
+|[CDaoRecordset:: SetFieldValueNull](#setfieldvaluenull)|Kayıt kümesindeki bir alanın değerini null olarak ayarlar. (değer olmadan).|
+|[CDaoRecordset:: SetLockingMode](#setlockingmode)|Düzen sırasında yürürlüğe konacak kilit türünü gösteren bir değer ayarlar.|
+|[CDaoRecordset:: SetParamValue](#setparamvalue)|Temel alınan Baoparameter nesnesinde depolanan belirtilen parametrenin geçerli değerini ayarlar|
+|[CDaoRecordset:: SetParamValueNull](#setparamvaluenull)|Belirtilen parametrenin geçerli değerini null olarak ayarlar (hiçbir değer olmadan).|
+|[CDaoRecordset:: SetPercentPosition](#setpercentposition)|Geçerli kaydın konumunu bir kayıt kümesindeki toplam kayıt sayısının yüzdesine karşılık gelen bir konuma ayarlar.|
+|[CDaoRecordset:: Update](#update)|Yeni veya düzenlenmiş verileri veri kaynağına kaydederek bir `AddNew` veya `Edit` işlemi tamamlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDaoRecordset::m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields)|Alanları otomatik olarak değiştirilmiş olarak işaretlenmiş olup olmadığını belirten bir bayrak içerir.|
-|[CDaoRecordset::m_nFields](#m_nfields)|Alan veri üyeleri kayıt kümesi sınıfında sayısı ve kayıt veri kaynağından seçili sütun sayısını içerir.|
-|[CDaoRecordset::m_nParams](#m_nparams)|Kayıt kümesi sınıfı parametre veri üyeleri sayısını içerir — parametrelerin sayısı geçirilen kümesinin sorgu|
-|[CDaoRecordset::m_pDAORecordset](#m_pdaorecordset)|Kayıt kümesi nesnesi temel DAO arabirim işaretçisi.|
-|[CDaoRecordset::m_pDatabase](#m_pdatabase)|Bu sonuç kümesi için kaynak veritabanı. Bir işaretçi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesne.|
-|[CDaoRecordset::m_strFilter](#m_strfilter)|Bir SQL oluşturmak için kullanılan bir dize içeren **burada** deyimi.|
-|[CDaoRecordset::m_strSort](#m_strsort)|Bir SQL oluşturmak için kullanılan bir dize içeren **ORDER BY** deyimi.|
+|[CDaoRecordset:: m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields)|Alanların otomatik olarak değiştirilmiş olarak işaretlenip işaretlenmediğini belirten bir bayrak içerir.|
+|[CDaoRecordset:: m_nFields](#m_nfields)|Kayıt kümesi sınıfındaki alan veri üyelerinin sayısını ve veri kaynağından kayıt kümesi tarafından seçilen sütun sayısını içerir.|
+|[CDaoRecordset:: m_nParams](#m_nparams)|Kayıt kümesi sınıfındaki parametre veri üyelerinin sayısını içerir — kayıt kümesi sorgusuyla geçilen parametrelerin sayısı|
+|[CDaoRecordset:: m_pDAORecordset](#m_pdaorecordset)|Kayıt kümesi nesnesini temel alan DAO arabirimine yönelik bir işaretçi.|
+|[CDaoRecordset:: m_pDatabase](#m_pdatabase)|Bu sonuç kümesi için kaynak veritabanı. Bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine yönelik bir işaretçi içerir.|
+|[CDaoRecordset:: m_strFilter](#m_strfilter)|SQL **WHERE** ifadesini oluşturmak için kullanılan bir dize içerir.|
+|[CDaoRecordset:: m_strSort](#m_strsort)|SQL **order by** ifadesinin oluşturulması için kullanılan dizeyi içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-"Kayıt kümeleri," bilinen `CDaoRecordset` aşağıdaki üç formlarında nesneleri kullanılabilir:
+"Kayıt kümeleri" olarak bilinen `CDaoRecordset` nesneleri aşağıdaki üç biçimde mevcuttur:
 
-- Tablo türü kayıt kümeleri inceleyin, ekleme, değiştirme veya bir tek veritabanı tablosundan kayıtları silmek için kullanabileceğiniz bir temel tablo temsil eder.
+- Tablo türü kayıt kümeleri, tek bir veritabanı tablosundan kayıtları incelemek, eklemek, değiştirmek veya silmek için kullanabileceğiniz bir temel tabloyu temsil eder.
 
-- Dinamik tür kayıt kümeleri güncelleştirilebilir kayıtlarını içeren bir sorgu sonucudur. Bu kayıt kümeleri, inceleyin, eklemek, değiştirmek veya temel bir veritabanı tablosu ya da tablo kayıtlarını silmek için kullanabileceğiniz bir kayıt kümesidir. Dinamik tür kayıt kümeleri bir veritabanındaki bir veya daha fazla tablolardan alanlar içerebilir.
+- Değişken tür kayıt kümeleri, güncelleştirilebilir kayıtları olan bir sorgunun sonucudur. Bu kayıt kümeleri, temel bir veritabanı tablosu veya tablolarından kayıtları incelemek, eklemek, değiştirmek veya silmek için kullanabileceğiniz bir kayıt kümesidir. DYNASET türü kayıt kümeleri, bir veritabanındaki bir veya daha fazla tablodan alan içerebilir.
 
-- Anlık görüntü türü kayıt kümeleri, veri bulma veya raporlar oluşturmak için kullanabileceğiniz bir kayıt kümesini statik bir kopyasını ' dir. Bu kayıt kümeleri, bir veritabanındaki bir veya daha fazla tablolardan alanlar içerebilir ancak güncelleştirilemiyor.
+- Anlık görüntü türü kayıt kümeleri, veri bulmak veya rapor oluşturmak için kullanabileceğiniz bir kayıt kümesinin statik kopyasıdır. Bu kayıt kümeleri, bir veritabanındaki bir veya daha fazla tablodan alan içerebilir, ancak güncelleştirilemez.
 
-Her form kümesinin kayıt açıldığında sabit kayıt kümesini temsil eder. Tablo türünde bir kayıt kümesi veya dinamik türünde bir kayıt kümesi bir kayıtta gidin, kayıt kümesi açıldı diğer kullanıcılar tarafından veya uygulamanızdaki diğer kayıt kümeleri tarafından kaydı yapılan değişiklikleri yansıtır. (Bir anlık görüntü türü kayıt güncelleştirilemiyor.) Kullanabileceğiniz `CDaoRecordset` doğrudan veya bir uygulamaya özgü kayıt sınıfından türetilir `CDaoRecordset`. Ardından şunları yapabilirsiniz:
+Her kayıt kümesi formu, kayıt kümesi açıldığı sırada düzeltilen bir kayıt kümesini temsil eder. Tablo türü bir kayıt kümesindeki veya bir dinamik küme türü kayıt kümesindeki bir kayda kaydırdığınızda, kayıt kümesi açıldıktan sonra, diğer kullanıcılar ya da uygulamanızdaki diğer kayıt kümeleri tarafından yapılan değişiklikleri yansıtır. (Bir anlık görüntü türü kayıt kümesi güncelleştirilemez.) `CDaoRecordset` doğrudan kullanabilir veya `CDaoRecordset`, uygulamaya özel bir kayıt kümesi sınıfını türetebilirsiniz. Daha sonra şunları yapabilirsiniz:
 
-- Kayıtlarda gezinin.
+- Kayıtlarda ilerleyin.
 
-- Dizin ayarlama ve hızlı bir şekilde kullanarak kayıtları arar [arama](#seek) (yalnızca tablo türü kayıt kümeleri).
+- Bir dizin ayarlayın ve [Seek](#seek) (yalnızca tablo türü kayıt kümeleri) kullanarak kayıtları hızlıca arayın.
 
-- Dize karşılaştırma üzerine dayalı kayıtları bulma: "<","\<=", "=", "> =", veya ">" (dinamik tür ve anlık görüntü türü kayıt kümeleri).
+- Bir dize karşılaştırmasına göre kayıtları bulma: "<", "\<=", "=", "> =" veya ">" (Dynaset türü ve anlık görüntü türü kayıt kümeleri).
 
-- Kayıtları güncelleştirmek ve (anlık görüntü türü kayıt kümeleri dışında) bir kilitleme modunu belirtin.
+- Kayıtları güncelleştirin ve kilitleme modu (anlık görüntü türü kayıt kümeleri hariç) belirtin.
 
-- Veri kaynağında mevcut kodlar arasından seçen kayıtları sınırlamak için kayıt filtreleyin.
+- Veri kaynağında kullanılabilir olanlardan seçim yaptığı kayıtları kısıtlamak için kayıt kümesini filtreleyin.
 
-- Kayıt kümesi sıralayın.
+- Kayıt kümesini sıralayın.
 
-- Çalışma zamanına kadar bilinmiyor bilgilerle, seçim özelleştirmek için kayıt kümesini parametreleştirme.
+- Çalışma zamanına kadar bilinmeyen bilgilerle seçimini özelleştirmek için kayıt kümesini parametreleştirin.
 
-Sınıf `CDaoRecordset` sınıfı için benzer bir arabirim sağlayan `CRecordset`. Bu sınıf ana fark `CDaoRecordset` veri aracılığıyla bir veri erişim nesnesi (OLE üzerinde temel DAO) erişir. Sınıf `CRecordset` DBMS bu DBMS için açık veritabanı bağlantısı (ODBC) ve ODBC sürücüsü aracılığıyla erişir.
+Sınıf `CDaoRecordset`, sınıf `CRecordset`benzer bir arabirim sağlar. Temel fark, sınıfın OLE tabanlı bir veri erişim nesnesi (DAO) yoluyla verilere eriştiği `CDaoRecordset`. Sınıf `CRecordset` DBMS 'ye açık veritabanı bağlantısı (ODBC) ve bu DBMS için bir ODBC sürücüsü aracılığıyla erişir.
 
 > [!NOTE]
-> DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) üzerinde göre MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adları "CDao" önekini alır. Hala DAO sınıfları ile ODBC veri kaynaklarına erişim de kullanabilirsiniz. DAO sınıfları, genellikle Microsoft Jet veritabanı altyapısına özgü olduğundan üstün özellikler sunar.
+> DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) tabanlı MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adlarında "CDao" öneki vardır. ODBC veri kaynaklarına yine de DAO sınıfları ile erişebilirsiniz; DAO sınıfları, Microsoft Jet veritabanı altyapısına özgü olduklarından üstün yetenekler sunar.
 
-Kullanabilir `CDaoRecordset` doğrudan veya bir sınıftan türetilen `CDaoRecordset`. Her iki durumda da bir kayıt kümesi sınıfını kullanmak için bir veritabanı açın ve oluşturucusu için bir işaretçi geçirerek bir kayıt kümesi nesnesi oluşturun, `CDaoDatabase` nesne. Ayrıca oluşturabilirsiniz bir `CDaoRecordset` nesne ve geçici bir oluşturma MFC izin `CDaoDatabase` nesnesi. Ardından kayıt kümesinin çağrı [açık](#open) üye işlevi, nesnenin bir tablo türü kayıt, dinamik türünde bir kayıt kümesi ya da bir anlık görüntü türü kayıt olup olmadığını belirleme. Çağırma `Open` veritabanından verileri seçer ve ilk kaydı alır.
+`CDaoRecordset` doğrudan kullanabilir veya `CDaoRecordset`bir sınıf türetebilirsiniz. Her iki durumda da bir kayıt kümesi sınıfı kullanmak için bir veritabanı açın ve bir kayıt kümesi nesnesi oluşturun ve oluşturucuyu `CDaoDatabase` nesneniz için bir işaretçi geçirerek. Ayrıca, bir `CDaoRecordset` nesnesi oluşturabilir ve MFC 'nin sizin için geçici bir `CDaoDatabase` nesnesi oluşturmasını sağlayabilirsiniz. Ardından, nesnenin bir tablo türü kayıt kümesi, bir değişken türü kayıt kümesi veya bir anlık görüntü türü kayıt kümesi olup olmadığını belirterek kayıt kümesinin [Açık](#open) üye işlevini çağırın. `Open` çağırmak, veritabanından veri seçer ve ilk kaydı alır.
 
-Nesnenin üye işlevler ve veriler üyeleri kayıtlarda gezinin ve üzerlerinde çalışmak için kullanır. Nesnesi bir tablo türü kayıt, dinamik türünde bir kayıt kümesi ya da bir anlık görüntü türü kayıt olup olmadığı ve güncelleştirilebilir veya salt okunur olup kullanılabilen işlemleri bağlıdır; bu veritabanı veya açık veritabanı bağlantısı (ODBC) yeteneğini bağlıdır veri kaynağı. Değiştirilmiş veya olabilir beri eklenen kayıtları yenilemek için `Open` çağrı, nesnenin çağrı [Requery](#requery) üye işlevi. Nesnenin `Close` üye işlev ve ile işiniz bittiğinde nesneyi yok edin.
+Kayıtlarda gezinmek ve üzerinde işlem yapmak için nesnenin üye işlevlerini ve veri üyelerini kullanın. Kullanılabilir işlemler, nesnenin tablo türü bir kayıt kümesi, değişken tür bir kayıt kümesi veya bir anlık görüntü türü kayıt kümesi olmasına ve güncelleştirilebilir mi yoksa salt okunurdur mi olduğunu, bu veritabanının özelliğine veya açık veritabanı bağlantısına (ODBC) bağlı olmasına bağlıdır. veri kaynağı. `Open` çağrısından bu yana değiştirilmiş veya eklenmiş olabilecek kayıtları yenilemek için, nesnenin [YenidenSorgula](#requery) üye işlevini çağırın. Nesnenin `Close` üye işlevini çağırın ve ile bitirdiğinizde nesneyi yok edin.
 
-`CDaoRecordset` DAO kayıt alanı değişimi (DFX) tür kullanımı uyumlu C++ üye okuma ve kayıt alanlarının güncelleştirmeyi desteklemek için kullanır, `CDaoRecordset` veya `CDaoRecordset`-türetilmiş sınıf. DFX mekanizması kullanılarak kullanmadan bir veritabanında sütunların dinamik bağlama uygulayabilirsiniz [GetFieldValue](#getfieldvalue) ve [SetFieldValue](#setfieldvalue).
+`CDaoRecordset`, `CDaoRecordset` veya `CDaoRecordset`türetilmiş sınıfınızın tür açısından güvenli C++ üyeleri aracılığıyla kayıt alanlarını okumayı ve güncelleştirmeyi desteklemek için dao kayıt alanı DEĞIŞIMI (DFX) kullanır. [GetFieldValue](#getfieldvalue) ve [SETFIELDVALUE](#setfieldvalue)kullanarak DFX mekanizmasına gerek kalmadan, bir veritabanındaki sütunların dinamik bağlamasını da uygulayabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda "kayıt kümesi nesnesi" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "kayıt kümesi nesnesi" konusuna bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -327,11 +327,11 @@ Nesnenin üye işlevler ve veriler üyeleri kayıtlarda gezinin ve üzerlerinde 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
-##  <a name="addnew"></a>  CDaoRecordset::AddNew
+##  <a name="addnew"></a>CDaoRecordset:: AddNew
 
-Bir tablo türü veya tür dinamik kayıt kümesine yeni bir kayıt eklemek için bu üye işlevini çağırın.
+Tablo türü veya Dynaset türü bir kayıt kümesine yeni bir kayıt eklemek için bu üye işlevini çağırın.
 
 ```
 virtual void AddNew();
@@ -339,39 +339,39 @@ virtual void AddNew();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaydın alanları başlangıçta Null. (Veritabanı terminolojisinde Null "değer olan" anlamına gelir ve C++'ta NULL ile aynı değildir.) İşlemi tamamlamak için çağırmalıdır [güncelleştirme](#update) üye işlevi. `Update` yaptığınız değişiklikleri veri kaynağına kaydeder.
+Kaydın alanları başlangıçta null. (Veritabanı terimlerinde null "değer yok" anlamına gelir ve içinde C++null ile aynı değildir.) İşlemi gerçekleştirmek için, [Update](#update) member işlevini çağırmanız gerekir. `Update`, veri kaynağına yaptığınız değişiklikleri kaydeder.
 
 > [!CAUTION]
->  Bir kaydı düzenlemek ve başka bir kayıt çağırmadan kaydırarak `Update`, uyarı vermeden değişiklikleriniz kaybolur.
+>  Bir kaydı düzenleyip `Update`aramadan başka bir kayda kayırsanız değişiklikleriniz uyarı vermeden kaybedilir.
 
-Çağırarak bir kayıt türü dinamik kayıt kümesine eklerseniz [AddNew](#addnew), kayıt kümesinde görünür ve burada bunu görünür hale gelir herhangi yeni temel alınan tabloda bulunan `CDaoRecordset` nesneleri.
+[AddNew](#addnew)' ı çağırarak Dynaset türünde bir kayıt kümesine bir kayıt eklerseniz, kayıt, kayıt kümesinde görünür olur ve yeni `CDaoRecordset` nesneleri tarafından görünür hale geldiği temel tabloya dahil edilir.
 
-Yeni kayıt konumunu, kayıt kümesinin türüne bağlıdır:
+Yeni kaydın konumu, kayıt kümesinin türüne bağlıdır:
 
-- Dinamik tür burada yeni bir kayıt eklenir kayıt garanti edilmez. Bu davranış nedeniyle, performans ve eşzamanlılık Microsoft Jet 3. 0'ile değiştirildi. Amacınız, yeni eklenen kaydı geçerli kayıt yapmak için ise, son değiştirilen kaydın yer alın ve bu yer işaretine Taşı:
+- Yeni kaydın eklendiği, değişken tür bir kayıt kümesinde garanti edilmez. Bu davranış, performans ve eşzamanlılık nedeniyle Microsoft Jet 3,0 ile değiştirilmiştir. Amacınız yeni eklenen kaydı geçerli kayıt yapmak istiyorsanız, son değiştirilen kaydın yer işaretini alın ve bu yer işaretine geçin:
 
 [!code-cpp[NVC_MFCDatabase#1](../../mfc/codesnippet/cpp/cdaorecordset-class_1.cpp)]
 
-- Bir dizin belirtilen bir tablo türü kayıt kümesindeki kayıtları, uygun bir yerden sıralama düzeninde döndürülür. Belirtilen dizin yok, kayıt sonunda yeni kayıtlar döndürülür.
+- Bir dizinin belirtildiği tablo türü bir kayıt kümesinde, kayıtlar sıralama düzeninde doğru yerde döndürülür. Dizin belirtilmemişse, kayıt kümesinin sonunda yeni kayıtlar döndürülür.
 
-Kullandığınız önce geçerli kaydı `AddNew` geçerli olmaya devam eder. Yeni kayıt geçerli yapmak istediğiniz ve kayıt yer işaretleri, çağrı destekliyorsa [SetBookmark](#setbookmark) DAO kayıt nesnesini LastModified özelliği ayarı tarafından belirlenen yer işareti. Bunun yapılması, sayaç (otomatik artış) alanlarına eklenen bir kayıt değeri belirlemek için yararlıdır. Daha fazla bilgi için [GetLastModifiedBookmark](#getlastmodifiedbookmark).
+`AddNew` kullanılmadan önce geçerli olan kayıt geçerli kalır. Yeni kaydı geçerli yapmak ve kayıt kümesini, yer imlerini desteklemek istiyorsanız, temel alınan DAO Kayıt kümesi nesnesinin LastModified özelliği ayarıyla tanımlanan yer işaretine [SetBookmark](#setbookmark) çağrısı yapın. Bunun yapılması, eklenen bir kayıttaki sayaç (otomatik artırma) alanlarının değerini belirlemek için faydalıdır. Daha fazla bilgi için bkz. [GetLastModifiedBookmark](#getlastmodifiedbookmark).
 
-Veritabanı işlemleri destekliyorsa, yapabileceğiniz, `AddNew` arama işlemlerinin bir parçası. İşlemler hakkında daha fazla bilgi için bkz. [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md). Çağırmalısınız Not [CDaoWorkspace::BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans) çağırmadan önce `AddNew`.
+Veritabanı işlemleri destekliyorsa `AddNew` bir işlemin parçası olarak çağrı yapabilirsiniz. İşlemler hakkında daha fazla bilgi için bkz. Class [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md). `AddNew`çağrılmadan önce [CDaoWorkspace:: BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans) çağrısı yapmanız gerektiğini unutmayın.
 
-Çağırmak geçersizdir `AddNew` bir kayıt kümesi için olan [açık](#open) üye işlev çağrılmadı. A `CDaoException` çağırırsanız durum `AddNew` eklenemiyor bir kayıt kümesi için. Kayıt kümesi çağırarak güncelleştirilebilir olup olmadığını belirleyebilir [CanAppend](#canappend).
+[Açık](#open) üye işlevi çağrılmayan bir kayıt kümesi için `AddNew` çağrısı geçersizdir. Eklenmemiş bir kayıt kümesi için `AddNew` çağırırsanız `CDaoException` atılır. Kayıt kümesinin [CanAppend](#canappend)çağırarak güncelleştirilebilir olup olmadığını belirleyebilirsiniz.
 
-Framework işaretleri alan veri üyeleri, veri kaynağında kayıt DAO kayıt alanı değişimi (DFX) mekanizması tarafından yazılır emin olmak için değiştirildi. Genellikle bir alanın değerini değiştirme alanı kirli otomatik olarak ayarlar, nadiren çağırmanız gerekir böylece [SetFieldDirty](#setfielddirty) kendiniz, ancak bazen isteyebileceğiniz sütunları açıkça güncelleştirildi veya kaldırılacak bakılmaksızın eklenen emin emin olmak hangi alanın veri üyesi değeridir. DFX mekanizması kullanımını da kullanan **SÖZDE NULL**. Daha fazla bilgi için [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
+Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, genel olarak [SetFieldDirty](#setfielddirty) çağrısı yapmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması **sözde null**kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
 
-İki kez arabelleğe alma mekanizması kullanılmadığından, ardından bir alanın değerini değiştirerek otomatik olarak alanın kirli olarak ayarlamaz. Bu durumda, açıkça alan kirli olarak ayarlamak gerekli olacaktır. Bulunan bayrağı [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) otomatik alan denetleniyor kontrol eder.
+Çift arabelleğe alma mekanizması kullanılmıyorsa, alanın değerini değiştirmek alanı otomatik olarak kirli olarak ayarlamamaktadır. Bu durumda, alanı kirli olarak ayarlamak gerekli olacaktır. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) bulunan bayrak, bu otomatik alan denetimini denetler.
 
 > [!NOTE]
-> Kayıtlarını ise iki kez arabelleğe alınan (diğer bir deyişle, otomatik alan denetimi, çağırma etkin) `CancelUpdate` üye değişkenleri önce sahip oldukları değerlere geri yüklenir `AddNew` veya `Edit` çağrıldı.
+> Kayıtlar çift arabelleğe alıyorsa (yani, otomatik alan denetimi etkinse), `CancelUpdate` çağrısı, üye değişkenlerini `AddNew` veya `Edit` çağrılmadan önce sahip oldukları değerlere geri yükler.
 
-İlgili bilgiler için "AddNew yöntemi", "CancelUpdate yöntemi", "LastModified özelliği" ve "EditMode özelliği" DAO Yardımı'ndaki konulara bakın.
+İlgili bilgiler için, DAO yardımı 'nda "AddNew yöntemi", "CancelUpdate Yöntemi", "LastModified özelliği" ve "EditMode özelliği" konularına bakın.
 
-##  <a name="canappend"></a>  CDaoRecordset::CanAppend
+##  <a name="canappend"></a>CDaoRecordset:: CanAppend
 
-Önceden açılmış kayıt çağırarak yeni kayıtlar eklemenize izin verip vermeyeceğini belirlemek için bu üye işlevi çağrısı [AddNew](#addnew) üye işlevi.
+Daha önce açılan kayıt kümesinin [AddNew](#addnew) üye işlevini çağırarak yeni kayıtlar eklemenize izin verip sağlamamadığını öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL CanAppend() const;
@@ -379,15 +379,15 @@ BOOL CanAppend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni kayıtlar ekleyerek kayıt kümesini sağlayan olursa sıfır dışı; Aksi durumda 0. `CanAppend` kayıt kümesi salt okunur olarak açıldıysa 0 döndürür.
+Kayıt kümesi yeni kayıtlar eklemeye izin veriyorsa sıfır dışı; Aksi takdirde 0. kayıt kümesini salt okunurdur olarak açtıysanız `CanAppend` 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bilgiler için DAO Yardımı'nda "yöntemi ekleme" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ekleme yöntemi" konusuna bakın.
 
-##  <a name="canbookmark"></a>  CDaoRecordset::CanBookmark
+##  <a name="canbookmark"></a>CDaoRecordset:: CanBookmark
 
-Önceden açılmış kayıt, tek tek kayıtlar yer işaretlerini kullanma işaretlemek izin verip vermeyeceğini belirlemek için bu üye işlevini çağırın.
+Daha önce açılan kayıt kümesinin, kayıt imlerini kullanarak kayıtları tek tek işaretlemenizi isteyip istemediğinizi öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL CanBookmark();
@@ -395,17 +395,17 @@ BOOL CanBookmark();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi yer işaretleri, aksi durumda 0 destekliyorsa, sıfır dışında.
+Kayıt kümesi yer imlerini destekliyorsa sıfır dışında 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümeleri tamamen Microsoft Jet veritabanı altyapısı tablolarına bağlı kullanıyorsanız, yer işaretleri dışında yalnızca iletme kayan kayıt kümeleri işaretlenmiş bir anlık görüntü türü kayıt kümeleri üzerinde kullanılabilir. Diğer veritabanı ürünleri (Dış ODBC veri kaynakları), yer işaretleri desteklemeyebilir.
+Yalnızca Microsoft Jet veritabanı altyapısı tabloları tabanlı kayıt kümeleri kullanıyorsanız, yer işaretleri, salt ileri kaydırma kayıt kümeleri olarak işaretlenen anlık görüntü türü kayıt kümeleri dışında kullanılabilir. Diğer veritabanı ürünleri (dış ODBC veri kaynakları) yer işaretlerini desteklemiyor olabilir.
 
-İlgili bilgiler için DAO Yardımı'nda "Bookmarkable özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "Bookmarkable özelliği" konusuna bakın.
 
-##  <a name="cancelupdate"></a>  CDaoRecordset::CancelUpdate
+##  <a name="cancelupdate"></a>CDaoRecordset:: CancelUpdate
 
-`CancelUpdate` Üye işlevi, beklemedeki güncelleştirmeleri nedeniyle iptal bir [Düzenle](#edit) veya [AddNew](#addnew) işlemi.
+`CancelUpdate` üye işlevi, bir [düzenleme](#edit) veya [AddNew](#addnew) işlemi nedeniyle bekleyen tüm güncelleştirmeleri iptal eder.
 
 ```
 virtual void CancelUpdate();
@@ -413,18 +413,18 @@ virtual void CancelUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, bir uygulama çağrıları `Edit` veya `AddNew` üye işlevi ve değil çağırdı [güncelleştirme](#update), `CancelUpdate` sonra yapılan değişiklikleri iptal eder `Edit` veya `AddNew` çağrıldı.
+Örneğin, bir uygulama `Edit` veya `AddNew` üye işlevini çağırırsa ve [güncelleştirme](#update)çağrılmışsa, `CancelUpdate` `Edit` veya `AddNew` çağrıldıktan sonra yapılan değişiklikleri iptal eder.
 
 > [!NOTE]
->  Kayıtlarını ise iki kez arabelleğe alınan (diğer bir deyişle, otomatik alan denetimi, çağırma etkin) `CancelUpdate` üye değişkenleri önce sahip oldukları değerlere geri yüklenir `AddNew` veya `Edit` çağrıldı.
+>  Kayıtlar çift arabelleğe alıyorsa (yani, otomatik alan denetimi etkinse), `CancelUpdate` çağrısı, üye değişkenlerini `AddNew` veya `Edit` çağrılmadan önce sahip oldukları değerlere geri yükler.
 
-Yoksa hiçbir `Edit` veya `AddNew` işlemi beklemede, `CancelUpdate` MFC özel durum oluşturmasına neden olur. Çağrı [GetEditMode](#geteditmode) iptal edilebilir bekleyen bir işlem olup olmadığını belirlemek için üye işlevi.
+`Edit` veya `AddNew` işlemi beklenmemişse, `CancelUpdate` MFC 'nin bir özel durum oluşturmasına neden olur. İptal edilebilir bekleyen bir işlem olup olmadığını öğrenmek için [GetEditMode](#geteditmode) üye işlevini çağırın.
 
-İlgili bilgiler için DAO Yardımı'nda "CancelUpdate yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "CancelUpdate Yöntemi" konusuna bakın.
 
-##  <a name="canrestart"></a>  CDaoRecordset::CanRestart
+##  <a name="canrestart"></a>CDaoRecordset:: CanRestart
 
-Kayıt kümesi (kayıtlarını yenilemek için), sorgu çağırarak yeniden izin verip vermeyeceğini belirlemek için bu üye işlevi çağrısı `Requery` üye işlevi.
+`Requery` üye işlevini çağırarak, kayıt kümesinin sorgunun yeniden başlatılmasını (kayıtlarını yenilemek için) izin verip sağlamamadığını öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL CanRestart();
@@ -432,19 +432,19 @@ BOOL CanRestart();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gösterimiyse `Requery` kümesinin sorgusunu yeniden, aksi durumda 0'ı çalıştırmak için çağrılır.
+Kayıt kümesinin sorgusunu tekrar çalıştırmak için `Requery` çağrılırsa sıfır değil, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tablo türü kayıt kümelerini desteklemez `Requery`.
+Tablo türü kayıt kümeleri `Requery`desteklemez.
 
-Varsa `Requery` olan çağrı desteklenmiyor, [Kapat](#close) ardından [açık](#open) verileri yenilemek için. Çağırabilirsiniz `Requery` parametre değerlerini değiştikten sonra bir kayıt kümesi nesnesi güncelleştirmek için parametre sorgu temel.
+`Requery` desteklenmiyorsa, verileri yenilemek için [Kapat](#close) ' ı ve sonra [Aç](#open) ' ı çağırın. Parametre değerleri değiştirildikten sonra bir kayıt kümesi nesnesinin temel alınan parametre sorgusunu güncelleştirmek için `Requery` çağırabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda "yeniden başlatılabilir özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "yeniden başlatılabilir özellik" konusuna bakın.
 
-##  <a name="canscroll"></a>  CDaoRecordset::CanScroll
+##  <a name="canscroll"></a>CDaoRecordset:: CanScroll
 
-Kayıt kaydırma izin verip vermeyeceğini belirlemek için bu üye işlevini çağırın.
+Kayıt kümesinin kaydırmaya izin verip içermediğini öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL CanScroll() const;
@@ -452,17 +452,17 @@ BOOL CanScroll() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıtlarda, aksi durumda 0 kaydırırsanız sıfır.
+Kayıtlar arasında gezin, aksi takdirde 0 dışında geçiş yapabilirsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eğer [açık](#open) ile `dbForwardOnly`, kayıt yalnızca ileri gezinebilirsiniz.
+`dbForwardOnly`ile [Aç](#open) ' ı çağırırsanız, kayıt kümesi yalnızca ileri doğru kaydırabilirler.
 
-İlgili bilgiler için "Konumlandırma geçerli kayıt işaretçi ile DAO'da" DAO Yardım konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "geçerli kayıt Işaretçisini DAO ile konumlandırma" konusuna bakın.
 
-##  <a name="cantransact"></a>  CDaoRecordset::CanTransact
+##  <a name="cantransact"></a>CDaoRecordset:: CanTransact
 
-Kayıt işlemleri izin verip vermeyeceğini belirlemek için bu üye işlevini çağırın.
+Kayıt kümesinin işlemlere izin verip sağlamamadığını öğrenmek için bu üye işlevini çağırın.
 
 ```
 BOOL CanTransact();
@@ -470,15 +470,15 @@ BOOL CanTransact();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel alınan veri kaynağı işlemleri, aksi durumda 0 destekliyorsa sıfır.
+Temel alınan veri kaynağı işlemleri destekliyorsa sıfır dışı, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bilgiler için DAO Yardımı'nda "işlemleri özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "Işlemler özelliği" konusuna bakın.
 
-##  <a name="canupdate"></a>  CDaoRecordset::CanUpdate
+##  <a name="canupdate"></a>CDaoRecordset:: CanUpdate
 
-Kayıt kümesi güncelleştirilebilir olup olmadığını belirlemek için bu üye işlevini çağırın.
+Kayıt kümesinin güncelleştirilip güncelleştirimeyeceğini anlamak için bu üye işlevi çağırın.
 
 ```
 BOOL CanUpdate() const;
@@ -486,17 +486,17 @@ BOOL CanUpdate() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi güncelleştirilebilir olursa sıfır dışı (ekleme, güncelleştirme ve kayıtlarını sil), aksi durumda 0.
+Kayıt kümesi güncelleştirilemeyebilir (kayıtları ekleyin, güncelleştirin ve silin), aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kayıt kümesi veri kaynağındaki salt okunur ise veya belirttiyseniz salt okunur olabilir `dbReadOnly` için *nOptions* aradığınız ne zaman [açık](#open) kayıt kümesi için.
+Bir kayıt kümesi, temel alınan veri kaynağı salt okunurdur veya kayıt kümesi için [Aç](#open) ' i çağırdığınızda *noseçenekler* için `dbReadOnly` belirlediyseniz salt okunurdur.
 
-İlgili bilgiler için "AddNew yöntemi", "Yöntemi Düzenle", "Delete yöntemi", "Güncelleştirme yöntemi" ve DAO Yardımı'nda "güncelleştirilebilir özelliği" konulara bakın.
+İlgili bilgiler için, DAO yardımı 'nda "AddNew yöntemi", "düzenleme yöntemi", "silme yöntemi", "güncelleştirme yöntemi" ve "güncelleştirilebilir özellik" konularına bakın.
 
-##  <a name="cdaorecordset"></a>  CDaoRecordset::CDaoRecordset
+##  <a name="cdaorecordset"></a>CDaoRecordset:: CDaoRecordset
 
-Oluşturur bir `CDaoRecordset` nesne.
+`CDaoRecordset` nesnesi oluşturur.
 
 ```
 CDaoRecordset(CDaoDatabase* pDatabase = NULL);
@@ -505,20 +505,20 @@ CDaoRecordset(CDaoDatabase* pDatabase = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *pDatabase*<br/>
-Bir işaretçi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesne veya NULL değeri. BOŞ değilse ve `CDaoDatabase` nesnenin `Open` veri kaynağına bağlanmak için üye işlev çağrılmadı, kayıt, sizin için kendi sırasında açmaya [açın](#open) çağırın. NULL, başarılı olursa bir `CDaoDatabase` nesne oluşturulur ve size, kayıt kümesi sınıfından türetilen, belirttiğiniz veri kaynağı bilgilerini kullanarak bağlı `CDaoRecordset`.
+Bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) NESNESI veya null değeri için bir işaretçi içerir. NULL değilse ve `CDaoDatabase` nesnenin `Open` üye işlevi onu veri kaynağına bağlamak için çağrılmışsa, kayıt kümesi kendi [Açık](#open) çağrısı sırasında sizin için açmaya çalışır. NULL geçirirseniz, `CDaoRecordset`kayıt kümesi sınıfınızı türettiğiniz takdirde belirttiğiniz veri kaynağı bilgileri kullanılarak bir `CDaoDatabase` nesnesi oluşturulur ve sizin için bağlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanabilir `CDaoRecordset` doğrudan veya bir uygulamaya özgü sınıfından türetilir `CDaoRecordset`. ClassWizard kayıt kümesi sınıflarını türetmek için kullanabilirsiniz.
+`CDaoRecordset` doğrudan kullanabilir ya da uygulamaya özgü bir sınıfı `CDaoRecordset`türetebilirsiniz. Kayıt kümesi sınıflarınızı türetmek için ClassWizard ' i kullanabilirsiniz.
 
 > [!NOTE]
->  Türetirseniz bir `CDaoRecordset` sınıfı, türetilmiş sınıf kendi Oluşturucu sağlaması gerekir. Türetilmiş sınıfınızın oluşturucuda oluşturucusunu `CDaoRecordset::CDaoRecordset`, kendisine boyunca uygun parametreleri geçirme.
+>  Bir `CDaoRecordset` sınıfı türetirsiniz, türetilmiş sınıfınızın kendi oluşturucusunu sağlaması gerekir. Türetilmiş sınıfınızın oluşturucusunda, ile ilgili parametreleri geçirerek Oluşturucu `CDaoRecordset::CDaoRecordset`çağırın.
 
-NULL geçirmek için kayıt kümesi oluşturucusuna bir `CDaoDatabase` nesne oluşturulur ve sizin için otomatik olarak bağlı. Bu, oluşturmak ve bağlantı gerektirmez için yararlı bir kısayol bir `CDaoDatabase` kümenizin oluşturmak önce nesne. Varsa `CDaoDatabase` nesne açık değil bir [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesne de oluşturulacaktır sizin için varsayılan çalışma alanı kullanır. Daha fazla bilgi için [CDaoDatabase::CDaoDatabase](../../mfc/reference/cdaodatabase-class.md#cdaodatabase).
+Sizin için otomatik olarak bir `CDaoDatabase` nesnesinin oluşturulmasını ve bağlanmasını sağlamak için kayıt kümesi yapıcısına NULL geçirin. Bu, kayıt kümenizin oluşturmadan önce bir `CDaoDatabase` nesnesi oluşturup bağlamanıza gerek olmayan yararlı bir kısayoldur. `CDaoDatabase` nesnesi açık değilse, sizin için varsayılan çalışma alanını kullanan bir [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesi de oluşturulur. Daha fazla bilgi için bkz. [CDaoDatabase:: CDaoDatabase](../../mfc/reference/cdaodatabase-class.md#cdaodatabase).
 
-##  <a name="close"></a>  CDaoRecordset::Close
+##  <a name="close"></a>CDaoRecordset:: Close
 
-Kapatma bir `CDaoRecordset` nesne koleksiyondan ilişkili veritabanında açık kümelerinin onu kaldırır.
+Bir `CDaoRecordset` nesnenin kapatılması, ilişkili veritabanındaki açık kayıt kümeleri koleksiyonundan kaldırılır.
 
 ```
 virtual void Close();
@@ -526,17 +526,17 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çünkü `Close` yok `CDaoRecordset` nesnesi yeniden nesne çağırarak `Open` aynı veri kaynağına veya farklı bir veri kaynağı.
+`Close` `CDaoRecordset` nesnesini yok etmez, aynı veri kaynağına veya farklı bir veri kaynağına `Open` çağırarak nesneyi yeniden kullanabilirsiniz.
 
-Tüm bekleyen [AddNew](#addnew) veya [Düzenle](#edit) deyimleri iptal edilir ve tüm bekleyen işlemler geri alınır. Eklemeler veya düzenlemeleri korumak istiyorsanız, çağrı [güncelleştirme](#update) çağırmadan önce `Close` her kayıt için.
+Tüm bekleyen [AddNew](#addnew) veya [Edit](#edit) deyimleri iptal edilir ve tüm bekleyen işlemler geri alınır. Bekleyen eklemeleri veya düzenlemeleri korumak istiyorsanız, her bir kayıt kümesi için `Close` çağırmadan önce [güncelleştirme](#update) çağırın.
 
-Çağırabilirsiniz `Open` arama sonra yeniden `Close`. Bu, kayıt kümesi nesnesi yeniden kullanmanıza olanak sağlar. Daha iyi bir alternatif çağırmaktır [Requery](#requery), mümkünse.
+`Close`çağrıldıktan sonra `Open` yeniden çağırabilirsiniz. Bu, kayıt kümesi nesnesini yeniden kullanmanıza olanak sağlar. Mümkünse, yeniden [sorgula](#requery)çağrısı yapmanız daha iyi bir alternatiftir.
 
-İlgili bilgiler için "Kapat yöntemi" DAO Yardım konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "Yöntem kapatma" konusuna bakın.
 
-##  <a name="delete"></a>  CDaoRecordset::Delete
+##  <a name="delete"></a>CDaoRecordset::D Sil
 
-Açık bir dinamik türü veya tablo türündeki kayıt kümesi nesnesi geçerli kayıt silmek için bu üye işlevini çağırın.
+Açık bir Dynaset türü veya tablo türü Recordset nesnesindeki geçerli kaydı silmek için bu üye işlevini çağırın.
 
 ```
 virtual void Delete();
@@ -544,22 +544,22 @@ virtual void Delete();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı silindikten sonra kayıt kümesinin alan veri üyeleri bir Null değere ayarlanır ve bir kayıt kümesi Gezinti üye işlevleri, açıkça çağırmalıdır ( [taşıma](#move), [arama](#seek), [ SetBookmark](#setbookmark), vb.) silinen kayıt taşımak için. Bir kayıt kümesinden kayıtlarını sildiğinizde, olmalıdır geçerli bir kayıt kümenize çağırmadan önce `Delete`; Aksi takdirde, MFC, bir özel durum oluşturur.
+Başarılı bir silme işleminden sonra, kayıt kümesinin alan verisi üyeleri bir boş değere ayarlanır ve silinen kaydın dışına geçmek için kayıt kümesi gezinti üye işlevlerinden birini ( [Move](#move), [Seek](#seek), [SetBookmark](#setbookmark), vb.) açıkça çağırmanız gerekir. Kayıtları bir kayıt kümesinden sildiğinizde, `Delete`çağırmadan önce kayıt kümesinde geçerli bir kayıt olmalıdır; Aksi halde MFC bir özel durum oluşturur.
 
-`Delete` Geçerli kayıt kaldırır ve erişilemez hale getirir. Düzenleme veya silinen kaydı kullanın, ancak geçerli kalır. Başka bir kayıtla taşıdığınızda, ancak, silinen kaydı yeniden geçerli yapamazsınız.
+`Delete` geçerli kaydı kaldırır ve erişilmez hale getirir. Silinen kaydı düzenleyemez veya kullanamazsınız, ancak geçerli kalır. Ancak, başka bir kayda geçtiğinizde, silinen kaydı yeniden geçerli yapamazsınız.
 
 > [!CAUTION]
->  Kayıt kümesi güncelleştirilebilir olmalıdır ve olmalıdır geçerli bir kayıt kümenize geçerli çağırdığınızda `Delete`. Örneğin, bir kaydı silmek, ancak çağırmadan önce yeni bir kayıt için kaydırma değil `Delete` yeniden `Delete` oluşturur bir [CDaoException](../../mfc/reference/cdaoexception-class.md).
+>  Kayıt kümesi güncelleştirilebilir olmalıdır ve `Delete`çağırdığınızda kayıt kümesinde geçerli olan geçerli bir kayıt olmalıdır. Örneğin, bir kaydı siler ancak `Delete` yeniden çağırmadan önce yeni bir kayda kaydıramıyorsunuz `Delete` bir [Cdaoözel durumu](../../mfc/reference/cdaoexception-class.md)oluşturur.
 
-Kayıt işlemleri kullanırsanız ve çağırmanızı geri alınabilir [CDaoWorkspace::Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) üye işlevi. Temel tablo birincil tablonun ilişki içinde bir cascade delete, geçerli kayıt silme yabancı bir tablodaki bir veya daha fazla kayıt de silebilirsiniz. Daha fazla bilgi için "delete tanımı cascade" DAO Yardımı'ndaki bakın.
+İşlemleri kullanırsanız ve [CDaoWorkspace:: Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) üye işlevini çağırırsanız bir kaydın silmeyi geri alabilirsiniz. Temel tablo, bir basamaklı silme ilişkisinde birincil tablo ise, geçerli kaydın silinmesi yabancı bir tablodaki bir veya daha fazla kaydı da silebilir. Daha fazla bilgi için, DAO yardımı 'nda "basamaklı silme" tanımına bakın.
 
-Farklı `AddNew` ve `Edit`, çağrı `Delete` bir çağrı tarafından izlenmiyor `Update`.
+`AddNew` ve `Edit`aksine, bir `Delete` çağrısının ardından `Update`çağrısı olmaz.
 
-İlgili bilgiler için "AddNew yöntemi", "Yöntemi Düzenle", "Delete yöntemi", "Güncelleştirme yöntemi" ve DAO Yardımı'nda "güncelleştirilebilir özelliği" konulara bakın.
+İlgili bilgiler için, DAO yardımı 'nda "AddNew yöntemi", "düzenleme yöntemi", "silme yöntemi", "güncelleştirme yöntemi" ve "güncelleştirilebilir özellik" konularına bakın.
 
-##  <a name="dofieldexchange"></a>  CDaoRecordset::DoFieldExchange
+##  <a name="dofieldexchange"></a>CDaoRecordset::D oFieldExchange
 
-Framework otomatik olarak, kayıt kümesi nesnesi alan veri üyeleri geçerli kaydın veri kaynağında karşılık gelen sütunlara arasında veri değişimi için bu üye işlevini çağırır.
+Framework, kayıt kümesi nesnenizin alan veri üyeleri ile veri kaynağındaki geçerli kaydın ilgili sütunları arasında otomatik olarak veri alışverişi yapmak için bu üye işlevini çağırır.
 
 ```
 virtual void DoFieldExchange(CDaoFieldExchange* pFX);
@@ -567,22 +567,22 @@ virtual void DoFieldExchange(CDaoFieldExchange* pFX);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFX*<br/>
-Bir işaretçi içeren bir `CDaoFieldExchange` nesne. Çerçeve zaten bu nesnesini alan değiştirme işlemi için bir bağlam belirtmek için kurmanız gerekir.
+*Türk*<br/>
+`CDaoFieldExchange` nesnesine yönelik bir işaretçi içerir. Çerçeve, alan değişim işlemi için bir bağlam belirtmek üzere bu nesneyi zaten ayarlamış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıca, parametre veri üyeleri varsa kayıt kümesinin seçimi için SQL deyim dizesi parametre yer tutucularını bağlar. Her iki yönde DAO kayıt alanı değişimi (DFX) adlı alan veri alışverişi çalışır: kayıt nesnenin alan veri üyeleri alanlara veri kaynağında kayıt ve kayıt kümesi nesnesi için veri kaynağında kayıt. Sütunları dinamik olarak bağlıyorsanız, uygulama gerekmez `DoFieldExchange`.
+Ayrıca, varsa parametre veri üyelerinizi, kayıt kümesinin seçimine yönelik SQL deyimindeki parametre yer tutucularına bağlar. DAO Kayıt alanı değişimi (DFX) olarak adlandırılan alan verileri alışverişi her iki yönde de işe yarar: kayıt kümesi nesnesinin alan veri üyelerinden veri kaynağındaki kaydın alanları ve veri kaynağındaki kayıttan kayıt kümesi nesnesi. Sütunları dinamik olarak bağlıyorsanız `DoFieldExchange`uygulamanız gerekmez.
 
-Normal olarak yapmanız gereken uygulamak için tek eylem `DoFieldExchange` türetilmiş kümeniz için sınıf ClassWizard ile oluşturup alan veri üyeleri adları ve veri türlerini belirtmek için sınıftır. Ayrıca, hangi ClassWizard parametre veri üyeleri belirtmek yazar için kod ekleyebilirsiniz. Tüm alanları, dinamik olarak bağlı ise, parametre veri üyelerini belirtmediğiniz sürece bu işlevi devre dışı bırakılır.
+Yalnızca türetilmiş kayıt kümesi sınıfınız için `DoFieldExchange` uygulamak için gerçekleştirmeniz gereken tek eylem, sınıfı ClassWizard ile oluşturmak ve alan veri üyelerinin adlarını ve veri türlerini belirtmek içindir. Ayrıca, parametre veri üyelerini belirtmek için ClassWizard 'ın yazdığı kodu ekleyebilirsiniz. Tüm alanlar dinamik olarak bağlanmışsa, parametre veri üyelerini belirtmediğiniz takdirde bu işlev devre dışı bırakılır.
 
-ClassWizard ile türetilmiş kayıt kümesi sınıfı bildirdiğinizde, sihirbaz geçersiz kılma Yazar `DoFieldExchange` sizin için hangi benzer aşağıdaki örnekte:
+Türetilmiş kayıt kümesi sınıfınızı ClassWizard ile bildirdiğinizde, sihirbaz sizin için `DoFieldExchange` bir geçersiz kılma yazar ve bu örnek aşağıdaki örneğe benzer:
 
 [!code-cpp[NVC_MFCDatabase#2](../../mfc/codesnippet/cpp/cdaorecordset-class_2.cpp)]
 
-##  <a name="edit"></a>  CDaoRecordset::Edit
+##  <a name="edit"></a>CDaoRecordset:: Edit
 
-Değişiklikleri geçerli kayda izin vermek için bu üye işlevini çağırın.
+Geçerli kayıtta değişikliklere izin vermek için bu üye işlevi çağırın.
 
 ```
 virtual void Edit();
@@ -590,41 +590,41 @@ virtual void Edit();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kez çağırmanız `Edit` üye işlevi, geçerli kaydın alanları yapılan değişiklikleri kopyalama arabelleğine kopyalar. Kayda istediğiniz değişiklikleri yaptıktan sonra çağrı `Update` yaptığınız değişiklikleri kaydedin. `Edit` kayıt kümesi veri üyelerinin değerlerini kaydeder. Çağırırsanız `Edit`, ardından çağırın değişiklik `Edit` ne ilk önce oldukları için kaydın değerleri yeniden geri `Edit` çağırın.
+`Edit` üye işlevini çağırdığınızda, geçerli kaydın alanlarında yapılan değişiklikler kopya arabelleğine kopyalanır. Kayıt üzerinde istediğiniz değişiklikleri yaptıktan sonra değişikliklerinizi kaydetmek için `Update` çağırın. `Edit`, kayıt kümesinin veri üyelerinin değerlerini kaydeder. `Edit`çağırır, değişiklikler yaparsanız ve `Edit` yeniden çağırırsanız, kaydın değerleri ilk `Edit` çağrısından önceki duruma geri yüklenir.
 
 > [!CAUTION]
->  Bir kaydı düzenlemek ve ardından başka bir kayıt ilk çağırmadan taşır herhangi bir işlem gerçekleştirmek `Update`, uyarı vermeden değişiklikleriniz kaybolur. Ayrıca, kayıt kümesi veya üst veritabanı kapatırsanız düzenlenen kaydınızı uyarı vermeden göz ardı edilir.
+>  Bir kaydı düzenlerseniz ve sonra `Update`çağrılmadan başka bir kayda taşınan tüm işlemleri gerçekleştirirseniz, değişiklikleriniz uyarı vermeden kaybedilir. Ayrıca, kayıt kümesini veya üst veritabanını kapatırsanız, düzenlenen kaydınız uyarı vermeden atılır.
 
-Bazı durumlarda, bir sütun Null (hiçbir veri içeren) yaparak güncelleştirmek isteyebilirsiniz. Bunu yapmak için çağrı `SetFieldNull` parametresi Null; alanı işareti true ile bu da güncelleştirilmesi sütun neden olur. Bir alanın değerini değişmemiş olsa da veri kaynağına yazılması, çağrı istiyorsanız `SetFieldDirty` parametresi true. ' % S'değeri boş alan olsa bile bu çalışır.
+Bazı durumlarda, null (veri içermeyen) yaparak bir sütunu güncelleştirmek isteyebilirsiniz. Bunu yapmak için, alanı null olarak işaretlemek üzere TRUE parametresiyle birlikte `SetFieldNull` çağırın; Bu, sütunun güncelleştirilmesine de neden olur. Değer değişmemiş olmasına rağmen bir alanın veri kaynağına yazılmasını istiyorsanız, doğru bir parametresiyle `SetFieldDirty` çağırın. Bu, alanda null değeri olsa bile işe yarar.
 
-Framework işaretleri alan veri üyeleri, veri kaynağında kayıt DAO kayıt alanı değişimi (DFX) mekanizması tarafından yazılır emin olmak için değiştirildi. Genellikle bir alanın değerini değiştirme alanı kirli otomatik olarak ayarlar, nadiren çağırmanız gerekir böylece [SetFieldDirty](#setfielddirty) kendiniz, ancak bazen isteyebileceğiniz sütunları açıkça güncelleştirildi veya kaldırılacak bakılmaksızın eklenen emin emin olmak hangi alanın veri üyesi değeridir. DFX mekanizması kullanımını da kullanan **SÖZDE NULL**. Daha fazla bilgi için [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
+Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, genel olarak [SetFieldDirty](#setfielddirty) çağrısı yapmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması **sözde null**kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
 
-İki kez arabelleğe alma mekanizması kullanılmadığından, ardından bir alanın değerini değiştirerek otomatik olarak alanın kirli olarak ayarlamaz. Bu durumda, açıkça alan kirli olarak ayarlamak gerekli olacaktır. Bulunan bayrağı [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) otomatik alan denetleniyor kontrol eder.
+Çift arabelleğe alma mekanizması kullanılmıyorsa, alanın değerini değiştirmek alanı otomatik olarak kirli olarak ayarlamamaktadır. Bu durumda, alanı kirli olarak ayarlamak gerekli olacaktır. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) bulunan bayrak, bu otomatik alan denetimini denetler.
 
-Kayıt kümesi nesnesi çok kullanıcılı bir ortamda zor kilitliyken kayıt kilitli kalır `Edit` güncelleştirme tamamlanana kadar kullanılır. Kayıt kümesi iyimser kilitliyse kayıt kilitli ve veritabanında güncelleştirilmeden önce düzenlenmeden kayıtla karşılaştırılır. Aradığınız kaydı değişmişse `Edit`, `Update` işleminin başarısız olması ve MFC bir özel durum oluşturur. Kilitleme moduyla değiştirebilirsiniz `SetLockingMode`.
+Bir çok kullanıcılı ortamda pessimistically kayıt kümesi nesnesi kilitlendiğinde, güncelleştirme tamamlanana kadar `Edit`, kayıt zaman kilitli kalır. Kayıt kümesi optimizasyonu bir şekilde kilitliyse, kayıt kilitlenir ve veritabanında güncelleştirildikten hemen önce önceden düzenlenen kayıtla karşılaştırılır. `Edit`çağrıldıktan sonra kayıt değiştiyse, `Update` işlemi başarısız olur ve MFC bir özel durum oluşturur. Kilitleme modunu `SetLockingMode`değiştirebilirsiniz.
 
 > [!NOTE]
->  İyimser kilitleme ODBC ve yüklenebilir ISAM gibi dış veritabanı biçimleri hakkında her zaman kullanılır.
+>  İyimser kilitleme, ODBC ve yüklenebilir ISAM gibi dış veritabanı biçimlerinde her zaman kullanılır.
 
-Geçerli kayıt çağırdıktan sonra geçerli kaldığı `Edit`. Çağrılacak `Edit`, geçerli bir kayıt olmalıdır. Geçerli bir kayıt varsa veya kayıt kümesi için bir tablo türü veya dinamik türünde bir kayıt kümesi nesnesi belirtmiyorsa, bir özel durum oluşur. Çağırma `Edit` neden olan bir `CDaoException` aşağıdaki koşullarda oluşturulması için:
+`Edit`çağırdıktan sonra geçerli kayıt geçerli kalır. `Edit`çağırmak için, geçerli bir kayıt olmalıdır. Geçerli bir kayıt yoksa veya kayıt kümesi açık bir tablo türü veya Dynaset türü bir Recordset nesnesine başvurmaz, bir özel durum oluşur. `Edit` çağırmak aşağıdaki koşullarda bir `CDaoException` oluşturulmasına neden olur:
 
 - Geçerli kayıt yok.
 
-- Veritabanı ya da kayıt salt okunur.
+- Veritabanı veya kayıt kümesi salt okunurdur.
 
-- Kayıttaki alan yok güncelleştirilebilir.
+- Kayıttaki hiçbir alan güncelleştirilebilir değil.
 
-- Veritabanı ya da kayıt başka bir kullanıcı tarafından özel kullanım için açıldı.
+- Veritabanı veya kayıt kümesi, başka bir kullanıcı tarafından özel kullanım için açıldı.
 
-- Başka bir kullanıcı, kayıt içeren sayfa kilitledi.
+- Başka bir kullanıcı kaydınızı içeren sayfayı kilitlediği.
 
-Veri kaynağı işlemleri destekliyorsa, yapabileceğiniz `Edit` arama işlemlerinin bir parçası. Çağırmalısınız Not `CDaoWorkspace::BeginTrans` çağırmadan önce `Edit` ve kayıt açıldıktan sonra. Ayrıca, arama unutmayın `CDaoWorkspace::CommitTrans` çağırmak yerine değil `Update` tamamlanması `Edit` işlemi. İşlemler hakkında daha fazla bilgi için bkz. `CDaoWorkspace`.
+Veri kaynağı işlemleri destekliyorsa, `Edit` çağrısı bir işlemin parçası yapabilirsiniz. `Edit` çağrılmadan önce ve kayıt kümesi açıldıktan sonra `CDaoWorkspace::BeginTrans` çağırmanız gerektiğini unutmayın. Ayrıca, `Edit` işlemini tamamlamaya `Update` çağırmak için `CDaoWorkspace::CommitTrans` çağırma işleminin yerine konmadığını unutmayın. İşlemler hakkında daha fazla bilgi için bkz. sınıf `CDaoWorkspace`.
 
-İlgili bilgiler için "AddNew yöntemi", "Yöntemi Düzenle", "Delete yöntemi", "Güncelleştirme yöntemi" ve DAO Yardımı'nda "güncelleştirilebilir özelliği" konulara bakın.
+İlgili bilgiler için, DAO yardımı 'nda "AddNew yöntemi", "düzenleme yöntemi", "silme yöntemi", "güncelleştirme yöntemi" ve "güncelleştirilebilir özellik" konularına bakın.
 
-##  <a name="fillcache"></a>  CDaoRecordset::FillCache
+##  <a name="fillcache"></a>CDaoRecordset:: FillCache
 
-Belirli bir kayıt kümesindeki kayıt sayısı önbelleğe almak için bu üye işlevini çağırın.
+Kayıt kümesinden belirtilen sayıda kaydı önbelleğe almak için bu üye işlevi çağırın.
 
 ```
 void FillCache(
@@ -634,29 +634,29 @@ void FillCache(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSize*<br/>
-Önbellekte doldurmak için satır sayısını belirtir. Bu parametreyi unutursanız, değeri DAO nesnesini CacheSize özelliği ayarı tarafından belirlenir.
+*Psıze*<br/>
+Önbellekte doldurulacak satır sayısını belirtir. Bu parametreyi atlarsanız, değer temel alınan DAO nesnesinin CacheSize özelliği ayarıyla belirlenir.
 
 *pBookmark*<br/>
-A [COleVariant](../../mfc/reference/colevariant-class.md) bir yer işareti belirtme. Önbellek, bu yer işaretinin tarafından belirtilen kayıt başlayarak doldurulur. Bu parametreyi unutursanız, önbellek nesnesini DAO CacheStart özelliği tarafından belirtilen kayıt başlayarak doldurulur.
+Bir yer işareti belirten [Cotavariant](../../mfc/reference/colevariant-class.md) . Önbellek, bu yer işaretinin gösterdiği kayıttan başlayarak doldurulur. Bu parametreyi atlarsanız, önbellek, temel alınan DAO nesnesinin CacheStart özelliği tarafından belirtilen kayıttan başlayarak doldurulur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önbelleğe alma alır ya da getirir, uzak bir sunucuya verilerden bir uygulama performansını artırır. Bir önbellek, en son uygulama çalışırken verileri büyük olasılıkla yeniden istenir, varsayımına sunucudan alınan verileri tutan yerel belleğe alandır. Veri istendiğinde Microsoft Jet veritabanı altyapısı veriler için ilk daha uzun sürer sunucudan getiriliyor yerine denetler. Veriler önbellekte değil olarak olmayan ODBC veri kaynakları üzerinde önbelleğe alma verileri kullanarak etkisizdir.
+Önbelleğe alma, uzak bir sunucudan veri alan veya getiren bir uygulamanın performansını geliştirir. Önbellek, sunucudan en son getirilen verileri tutan, verilerin büyük olasılıkla uygulama çalışırken tekrar istendiğinin varsayımına sahip olan yerel bellekteki alandır. Veriler istendiğinde, Microsoft Jet veritabanı altyapısı, verileri sunucudan getirmek yerine önce, daha fazla zaman alan verileri denetler. ODBC olmayan veri kaynaklarında veri önbelleğe alma özelliğinin kullanılması, veriler önbellekte kaydedilmediğinden hiçbir etkiye sahip değildir.
 
-Önbelleğe alınan gibi kayıtlarla doldurulacak beklemek yerine, açıkça Önbellek herhangi bir zamanda çağırarak doldurabilirsiniz `FillCache` üye işlevi. Bu önbellek çünkü doldurmak için daha hızlı bir yoludur `FillCache` teker teker yerine tek seferde birden çok kayıt getirir. Örneğin, her dolusu kaydı görüntülenir, ancak uygulama aramanız olabilir `FillCache` sonraki ekran kayıtları dolusu getirilemedi.
+Önbellek, getirilen kayıtlarla doldurulmayı beklemek yerine, `FillCache` üye işlevini çağırarak önbelleği dilediğiniz zaman açık bir şekilde doldurabilirsiniz. Bu, `FillCache` her seferinde tek bir yerine birden çok kayıt getirtiğinden önbelleği doldurmanız daha hızlı bir yoldur. Örneğin, her bir kayıt görüntülenirken, uygulamanızın bir sonraki ekranda kayıtları getirmek için `FillCache` çağrısı yapabilirsiniz.
 
-Kayıt kümesi nesnelere herhangi bir ODBC veritabanı yerel önbellek olabilir. Önbellek oluşturmak için bir kayıt kümesi nesnesi uzak veri kaynağını açın ve sonra çağrı `SetCacheSize` ve `SetCacheStart` kümesinin üye işlevleri. Varsa *lSize* ve *lBookmark* kısmen veya tamamen tarafından belirtilen aralık dışında bir aralığı oluşturma `SetCacheSize` ve `SetCacheStart`, kayıt bu aralığın dışında kalan kısmını göz ardı edilir ve değil önbelleğine yüklenir. Varsa `FillCache` hiçbir özel durum uzak veri kaynağında çok kayıt kalır ve yalnızca kalan kayıtları getirilen ister.
+Kayıt kümesi nesneleriyle erişilen tüm ODBC veritabanları yerel bir önbelleğe sahip olabilir. Önbellek oluşturmak için, uzak veri kaynağından bir kayıt kümesi nesnesi açın ve ardından kayıt kümesinin `SetCacheSize` ve `SetCacheStart` üye işlevlerini çağırın. *LSize* ve *lbookmark* , `SetCacheSize` ve `SetCacheStart`tarafından belirtilen aralığın dışında kısmen veya tamamen dışarıda olan bir Aralık oluşturur, bu aralığın dışında kayıt kümesinin bölümü yok sayılır ve önbelleğe yüklenmez. `FillCache`, uzak veri kaynağında kalacağından daha fazla kayıt isterse, yalnızca kalan kayıtlar getirilir ve hiçbir özel durum oluşturulmaz.
 
-Kayıtlar önbellekten alınan eşzamanlı olarak diğer kullanıcılar tarafından kaynak verilerde yapılan değişiklikleri yansıtmaz.
+Önbellekten getirilen kayıtlar, diğer kullanıcılar tarafından kaynak verilerde aynı anda yapılan değişiklikleri yansıtmaz.
 
-`FillCache` henüz önbelleğe kayıtları getirir. Tüm önbelleğe alınan verilerin bir güncelleştirmeyi zorlamak için çağrı `SetCacheSize` üye işlevi bir *lSize* parametresi 0'a çağrı `SetCacheSize` ile yeniden *lSize* parametresi önbellek boyutuna eşit Başlangıçta istenen ve sonra çağrı `FillCache`.
+`FillCache` yalnızca önceden önbelleğe alınmamış kayıtları getirir. Önbelleğe alınmış tüm verilerin güncelleştirilmesini zorlamak için, `SetCacheSize` member işlevini 0 ' a eşit bir *lSize* parametresiyle çağırın, *lSize* parametresini ilk istediğiniz önbelleğin boyutuna eşit olarak `SetCacheSize` çağırın ve ardından `FillCache`çağırın.
 
-İlgili bilgiler için DAO Yardımı'nda "FillCache yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "FillCache yöntemi" konusuna bakın.
 
-##  <a name="find"></a>  CDaoRecordset::Find
+##  <a name="find"></a>CDaoRecordset:: Find
 
-Belirli bir dize karşılaştırma işlecini kullanarak dinamik veya anlık görüntü türü kayıt kümesinde bulmak için bu üye işlevini çağırın.
+Bir karşılaştırma işleci kullanarak Dynaset veya anlık görüntü türü bir kayıt kümesinde belirli bir dizeyi bulmak için bu üye işlevi çağırın.
 
 ```
 virtual BOOL Find(
@@ -667,39 +667,39 @@ virtual BOOL Find(
 ### <a name="parameters"></a>Parametreler
 
 *lFindType*<br/>
-İstenen bulma işlemi türünü belirten bir değer. Olası değerler şunlardır:
+İstenen bulma işlemi türünü gösteren bir değer. Olası değerler şunlardır:
 
-- AFX_DAO_NEXT eşleşen bir dize sonraki konumunu bulun.
+- Eşleşen bir dizenin sonraki konumunu bulmak AFX_DAO_NEXT.
 
-- AFX_DAO_PREV eşleşen bir dize önceki konumunu bulun.
+- Eşleşen bir dizenin önceki konumunu bulmak AFX_DAO_PREV.
 
-- AFX_DAO_FIRST eşleşen bir dizenin ilk konumu bulur.
+- AFX_DAO_FIRST eşleşen bir dizenin ilk konumunu bulur.
 
-- AFX_DAO_LAST eşleşen bir dize son konumunu bulun.
+- AFX_DAO_LAST eşleşen bir dizenin son konumunu bulur.
 
 *lpszFilter*<br/>
-Bir dize ifadesi (gibi **burada** yan tümcesinde sözcüğünü içermeyen bir SQL deyimi **burada**) kaydı bulmak için kullanılır. Örneğin:
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ). Örnek:
 
 [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/cpp/cdaorecordset-class_3.cpp)]
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır, aksi durumda 0 eşleşen kayıtları bulundu.
+Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk olarak, sonraki bulabilirsiniz dize önceki ya da son örneği. `Find` bir sanal işlev olduğundan bunu geçersiz kılmasına ve kendi uygulamanızı ekleyin. `FindFirst`, `FindLast`, `FindNext`, Ve `FindPrev` üye işlevleri çağrı `Find` üye işlevi kullanabilirsiniz, böylece `Find` tüm bulma işlemleri davranışını denetlemek için.
+Dizenin ilk, sonraki, önceki veya son örneğini bulabilirsiniz. `Find` sanal bir işlevdir, bu sayede onu geçersiz kılabilir ve kendi uygulamanızı ekleyebilirsiniz. `FindFirst`, `FindLast`, `FindNext`ve `FindPrev` üye işlevleri `Find` üye işlevini çağırır, böylece tüm bulma işlemlerinin davranışını denetlemek için `Find` kullanabilirsiniz.
 
-Bir tablo türü kayıt kümesinde bir kaydı bulmak için arama [arama](#seek) üye işlevi.
+Tablo türü bir kayıt kümesindeki bir kaydı bulmak için [Seek](#seek) üye işlevini çağırın.
 
 > [!TIP]
->  Kayıt daha etkili sahip olduğunuz, daha küçük kümesini `Find` olacaktır. Genel olarak ve özellikle ODBC veri ile tam olarak istediğiniz kayıtları alır. yeni bir sorgu oluşturmak daha iyidir.
+>  Sahip olduğunuz kayıt kümesi ne kadar küçükse, daha etkili `Find` olur. Genel olarak ve özellikle ODBC verileri ile, yalnızca istediğiniz kayıtları alan yeni bir sorgu oluşturmak daha iyidir.
 
-İlgili bilgiler için DAO Yardımı'nda, "FindFirst, FindLast, FindNext, FindPrevious Yöntemleri" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "FindFirst, FindLast, Sonrabul, FindPrevious yöntemleri" konusuna bakın.
 
-##  <a name="findfirst"></a>  CDaoRecordset::FindFirst
+##  <a name="findfirst"></a>CDaoRecordset:: FindFirst
 
-Belirtilen bir koşulu karşılayan ilk kaydı bulmak için bu üye işlevini çağırın.
+Belirtilen bir koşulla eşleşen ilk kaydı bulmak için bu üye işlevi çağırın.
 
 ```
 BOOL FindFirst(LPCTSTR lpszFilter);
@@ -708,52 +708,52 @@ BOOL FindFirst(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Bir dize ifadesi (gibi **burada** yan tümcesinde sözcüğünü içermeyen bir SQL deyimi **burada**) kaydı bulmak için kullanılır.
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır, aksi durumda 0 eşleşen kayıtları bulundu.
+Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FindFirst` Üye işlevi, arama kayıt kümesinin başlangıç ve kayıt sonuna aramaları başlar.
+`FindFirst` member işlevi, kayıt kümesinin başından itibaren aramasını başlatır ve kayıt kümesinin sonuna kadar arama yapar.
 
-Tüm arama (yalnızca bu belirli bir koşulu karşılayan) kayıtlara taşıma işlemlerini kayıttan diğerine taşımak için birini eklemek istiyorsanız. Bir tablo türü kayıt kümesinde bir kaydı bulmak için arama `Seek` üye işlevi.
+Aramanıza tüm kayıtları eklemek istiyorsanız (yalnızca belirli bir koşula uyan olanları değil), kayıttan kayda geçiş yapmak için taşıma işlemlerinden birini kullanın. Tablo türü bir kayıt kümesindeki bir kaydı bulmak için `Seek` member işlevini çağırın.
 
-Ölçütlerle eşleşen bir kaydı bulunamazsa, geçerli kayıt işaretçisi yapılmadığı ve `FindFirst` sıfır döndürür. Kayıt kümesi ölçütleri karşılayan birden fazla kayıtla içeriyorsa `FindFirst` ilk oluşumunu bulur `FindNext` Sonrakini vb. bulur.
+Ölçütlerle eşleşen bir kayıt bulunamıyorsa, geçerli kayıt işaretçisi belirlenmez ve `FindFirst` sıfır döndürür. Kayıt kümesi ölçütlere uyan birden fazla kayıt içeriyorsa, `FindFirst` ilk oluşumu bulur, sonraki oluşumu bulur `FindNext` ve bu şekilde devam eder.
 
 > [!CAUTION]
->  Geçerli kayıt düzenlerseniz, çağırarak değişiklikleri kaydettiğinizden emin olun `Update` başka bir kayıtla taşımadan önce üye işlevi. Başka bir kayıtla güncelleştirmeden taşırsanız, uyarı vermeden değişiklikleriniz kaybolur.
+>  Geçerli kaydı düzenlerseniz, başka bir kayda geçmeden önce `Update` üye işlevini çağırarak değişiklikleri kaydettiğinizden emin olun. Güncelleştirme olmadan başka bir kayda geçiş yaparsanız değişiklikleriniz uyarı vermeden kaybedilir.
 
-`Find` Üye işlevleri, konumundan ve aşağıdaki tabloda belirtilen yönde arayın:
+`Find` üye işlevleri, konumdan ve aşağıdaki tabloda belirtilen yönde arama yapılır:
 
-|İşlemleri Bul|başlayın|Arama yönü|
+|İşlemleri bul|BAŞLA|Arama yönü|
 |---------------------|-----------|----------------------|
-|`FindFirst`|Kayıt kümesi başına|Kayıt kümesi sonu|
-|`FindLast`|Kayıt kümesi sonu|Kayıt kümesi başına|
+|`FindFirst`|Kayıt kümesi başlangıcı|Kayıt kümesi sonu|
+|`FindLast`|Kayıt kümesi sonu|Kayıt kümesi başlangıcı|
 |`FindNext`|Geçerli kayıt|Kayıt kümesi sonu|
-|`FindPrevious`|Geçerli kayıt|Kayıt kümesi başına|
+|`FindPrevious`|Geçerli kayıt|Kayıt kümesi başlangıcı|
 
 > [!NOTE]
->  Çağırdığınızda `FindLast`, bu zaten yapılmadı, Microsoft Jet veritabanı altyapısı tam olarak kümenizin arama başlamadan önce doldurur. İlk arama sonraki aramaları uzun sürebilir.
+>  `FindLast`çağırdığınızda, Microsoft Jet veritabanı altyapısı, henüz yapmadıysanız, aramaya başlamadan önce kayıt kümenizin sonuna tam olarak doldurur. İlk arama sonraki aramalardan daha uzun sürebilir.
 
-Bulma işlemi birini kullanarak değil çağırma aynı `MoveFirst` veya `MoveNext`, ancak yalnızca getiren ilk veya sonraki kaydın geçerli bir koşul belirtmeden. Bir bulma işlemi bir taşıma işlemi ile izleyebilirsiniz.
+Find işlemlerinden birinin kullanılması, çağırma `MoveFirst` veya `MoveNext`aynı değildir, ancak bir koşul belirtmeden ilk veya sonraki kaydı geçerli hale getirir. Bir Move işlemiyle bir Find işlemini izleyebilirsiniz.
 
-Bulma işlemi kullanırken, aşağıdakileri göz önünde bulundurun:
+Bulma işlemlerini kullanırken şunları aklınızda tutun:
 
-- Varsa `Find` geçerli kayıt tanımlı değil, sıfır döndürür. Bu durumda, geçerli kayıt işaretçisini geçerli kayda geri getirin.
+- `Find` sıfır dışında bir değer döndürürse, geçerli kayıt tanımlı değildir. Bu durumda, geçerli kayıt işaretçisini geçerli bir kayda doğru konumlandırmalısınız.
 
-- Bulma işlemi bir salt iletme kaydırma anlık görüntü türü kayıt kümesi ile kullanamazsınız.
+- Yalnızca ileriye dönük bir kayan görüntü türü kayıt kümesiyle bir bul işlemi kullanamazsınız.
 
-- ABD tarih biçimi (ay gün yıl) kullanmanız gerekir; Microsoft Jet Veritabanı Altyapısı'nın ABD sürümü kullanmıyorsanız bile tarihleri içeren alanlar için arama yaparken Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
+- Microsoft Jet veritabanı altyapısının ABD sürümünü kullanmıyor olsanız bile tarihleri içeren alanları ararken ABD tarih biçimini (ay-gün-yıl) kullanmanız gerekir. Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
 
-- ODBC veritabanı ve büyük dynaset'ler ile çalışırken, bulma işlemleri kullanarak özellikle büyük kümeleriyle çalışırken yavaş olduğunu fark edebilirsiniz. SQL sorgularını kullanarak performansı artırabilirsiniz ile özelleştirilmiş **ORDERBY** veya **burada** yan tümceleri, parametre sorguları veya `CDaoQuerydef` belirli dizinli kayıtları nesneleri.
+- ODBC veritabanları ve büyük dinamik kümeler ile çalışırken, özellikle büyük kayıt kümeleriyle çalışırken bul işlemlerini kullanmanın yavaş olduğunu fark edebilirsiniz. Özelleştirilmiş **ORDERBY** veya **WHERE** yan tümceleri, parametre sorguları veya belirli dizine alınmış kayıtları alan `CDaoQuerydef` nesneleri ile SQL sorguları kullanarak performansı artırabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda, "FindFirst, FindLast, FindNext, FindPrevious Yöntemleri" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "FindFirst, FindLast, Sonrabul, FindPrevious yöntemleri" konusuna bakın.
 
-##  <a name="findlast"></a>  CDaoRecordset::FindLast
+##  <a name="findlast"></a>CDaoRecordset:: FindLast
 
-Belirtilen bir koşul ile eşleşen en son kaydını bulmak için bu üye işlevini çağırın.
+Belirtilen bir koşulla eşleşen son kaydı bulmak için bu üye işlevi çağırın.
 
 ```
 BOOL FindLast(LPCTSTR lpszFilter);
@@ -762,40 +762,40 @@ BOOL FindLast(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Bir dize ifadesi (gibi **burada** yan tümcesinde sözcüğünü içermeyen bir SQL deyimi **burada**) kaydı bulmak için kullanılır.
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır, aksi durumda 0 eşleşen kayıtları bulundu.
+Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FindLast` Üye işlevi kayıt kümesinin sonunda, arama ve arama kümesi başına doğru geriye dönük başlar.
+`FindLast` member işlevi, kayıt kümesinin sonunda aramasını başlatır ve kayıt kümesinin başlangıcında geriye doğru arar.
 
-Tüm arama (yalnızca bu belirli bir koşulu karşılayan) kayıtlara taşıma işlemlerini kayıttan diğerine taşımak için birini eklemek istiyorsanız. Bir tablo türü kayıt kümesinde bir kaydı bulmak için arama `Seek` üye işlevi.
+Aramanıza tüm kayıtları eklemek istiyorsanız (yalnızca belirli bir koşula uyan olanları değil), kayıttan kayda geçiş yapmak için taşıma işlemlerinden birini kullanın. Tablo türü bir kayıt kümesindeki bir kaydı bulmak için `Seek` member işlevini çağırın.
 
-Ölçütlerle eşleşen bir kaydı bulunamazsa, geçerli kayıt işaretçisi yapılmadığı ve `FindLast` sıfır döndürür. Kayıt kümesi ölçütleri karşılayan birden fazla kayıtla içeriyorsa `FindFirst` ilk oluşumunu bulur `FindNext` ilk geçtiği ve benzeri sonra sonraki tekrarı bulur.
+Ölçütlerle eşleşen bir kayıt bulunamıyorsa, geçerli kayıt işaretçisi belirlenmez ve `FindLast` sıfır döndürür. Kayıt kümesi ölçütlere uyan birden fazla kayıt içeriyorsa, `FindFirst` ilk oluşumu bulur, `FindNext` ilk oluşumdan sonra bir sonraki oluşumu bulur ve bu şekilde devam eder.
 
 > [!CAUTION]
->  Geçerli kayıt düzenlerseniz, çağırarak değişiklikleri kaydettiğinizden emin olması `Update` başka bir kayıtla taşımadan önce üye işlevi. Başka bir kayıtla güncelleştirmeden taşırsanız, uyarı vermeden değişiklikleriniz kaybolur.
+>  Geçerli kaydı düzenlerseniz, başka bir kayda geçmeden önce `Update` üye işlevini çağırarak değişiklikleri kaydettiğinizden emin olun. Güncelleştirme olmadan başka bir kayda geçiş yaparsanız değişiklikleriniz uyarı vermeden kaybedilir.
 
-Bulma işlemi birini kullanarak değil çağırma aynı `MoveFirst` veya `MoveNext`, ancak yalnızca getiren ilk veya sonraki kaydın geçerli bir koşul belirtmeden. Bir bulma işlemi bir taşıma işlemi ile izleyebilirsiniz.
+Find işlemlerinden birinin kullanılması, çağırma `MoveFirst` veya `MoveNext`aynı değildir, ancak bir koşul belirtmeden ilk veya sonraki kaydı geçerli hale getirir. Bir Move işlemiyle bir Find işlemini izleyebilirsiniz.
 
-Bulma işlemi kullanırken, aşağıdakileri göz önünde bulundurun:
+Bulma işlemlerini kullanırken şunları aklınızda tutun:
 
-- Varsa `Find` geçerli kayıt tanımlı değil, sıfır döndürür. Bu durumda, geçerli kayıt işaretçisini geçerli kayda geri getirin.
+- `Find` sıfır dışında bir değer döndürürse, geçerli kayıt tanımlı değildir. Bu durumda, geçerli kayıt işaretçisini geçerli bir kayda doğru konumlandırmalısınız.
 
-- Bulma işlemi bir salt iletme kaydırma anlık görüntü türü kayıt kümesi ile kullanamazsınız.
+- Yalnızca ileriye dönük bir kayan görüntü türü kayıt kümesiyle bir bul işlemi kullanamazsınız.
 
-- ABD tarih biçimi (ay gün yıl) kullanmanız gerekir; Microsoft Jet Veritabanı Altyapısı'nın ABD sürümü kullanmıyorsanız bile tarihleri içeren alanlar için arama yaparken Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
+- Microsoft Jet veritabanı altyapısının ABD sürümünü kullanmıyor olsanız bile tarihleri içeren alanları ararken ABD tarih biçimini (ay-gün-yıl) kullanmanız gerekir. Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
 
-- ODBC veritabanı ve büyük dynaset'ler ile çalışırken, bulma işlemleri kullanarak özellikle büyük kümeleriyle çalışırken yavaş olduğunu fark edebilirsiniz. SQL sorgularını kullanarak performansı artırabilirsiniz ile özelleştirilmiş **ORDERBY** veya **burada** yan tümceleri, parametre sorguları veya `CDaoQuerydef` belirli dizinli kayıtları nesneleri.
+- ODBC veritabanları ve büyük dinamik kümeler ile çalışırken, özellikle büyük kayıt kümeleriyle çalışırken bul işlemlerini kullanmanın yavaş olduğunu fark edebilirsiniz. Özelleştirilmiş **ORDERBY** veya **WHERE** yan tümceleri, parametre sorguları veya belirli dizine alınmış kayıtları alan `CDaoQuerydef` nesneleri ile SQL sorguları kullanarak performansı artırabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda, "FindFirst, FindLast, FindNext, FindPrevious Yöntemleri" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "FindFirst, FindLast, Sonrabul, FindPrevious yöntemleri" konusuna bakın.
 
-##  <a name="findnext"></a>  CDaoRecordset::FindNext
+##  <a name="findnext"></a>CDaoRecordset:: Sonrabul
 
-Belirtilen bir koşul ile eşleşen bir sonraki kaydı bulmak için bu üye işlevini çağırın.
+Belirtilen koşulla eşleşen bir sonraki kaydı bulmak için bu üye işlevi çağırın.
 
 ```
 BOOL FindNext(LPCTSTR lpszFilter);
@@ -804,40 +804,40 @@ BOOL FindNext(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Bir dize ifadesi (gibi **burada** yan tümcesinde sözcüğünü içermeyen bir SQL deyimi **burada**) kaydı bulmak için kullanılır.
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır, aksi durumda 0 eşleşen kayıtları bulundu.
+Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FindNext` Üye işlevi, geçerli kayıt sırasında arama başlar ve kümesinin sonuna arar.
+`FindNext` member işlevi, geçerli kayıtta aramasını başlatır ve kayıt kümesinin sonuna kadar arama yapar.
 
-Tüm arama (yalnızca bu belirli bir koşulu karşılayan) kayıtlara taşıma işlemlerini kayıttan diğerine taşımak için birini eklemek istiyorsanız. Bir tablo türü kayıt kümesinde bir kaydı bulmak için arama `Seek` üye işlevi.
+Aramanıza tüm kayıtları eklemek istiyorsanız (yalnızca belirli bir koşula uyan olanları değil), kayıttan kayda geçiş yapmak için taşıma işlemlerinden birini kullanın. Tablo türü bir kayıt kümesindeki bir kaydı bulmak için `Seek` member işlevini çağırın.
 
-Ölçütlerle eşleşen bir kaydı bulunamazsa, geçerli kayıt işaretçisi yapılmadığı ve `FindNext` sıfır döndürür. Kayıt kümesi ölçütleri karşılayan birden fazla kayıtla içeriyorsa `FindFirst` ilk oluşumunu bulur `FindNext` Sonrakini vb. bulur.
+Ölçütlerle eşleşen bir kayıt bulunamıyorsa, geçerli kayıt işaretçisi belirlenmez ve `FindNext` sıfır döndürür. Kayıt kümesi ölçütlere uyan birden fazla kayıt içeriyorsa, `FindFirst` ilk oluşumu bulur, sonraki oluşumu bulur `FindNext` ve bu şekilde devam eder.
 
 > [!CAUTION]
->  Geçerli kayıt düzenlerseniz, çağırarak değişiklikleri kaydettiğinizden emin olması `Update` başka bir kayıtla taşımadan önce üye işlevi. Başka bir kayıtla güncelleştirmeden taşırsanız, uyarı vermeden değişiklikleriniz kaybolur.
+>  Geçerli kaydı düzenlerseniz, başka bir kayda geçmeden önce `Update` üye işlevini çağırarak değişiklikleri kaydettiğinizden emin olun. Güncelleştirme olmadan başka bir kayda geçiş yaparsanız değişiklikleriniz uyarı vermeden kaybedilir.
 
-Bulma işlemi birini kullanarak değil çağırma aynı `MoveFirst` veya `MoveNext`, ancak yalnızca getiren ilk veya sonraki kaydın geçerli bir koşul belirtmeden. Bir bulma işlemi bir taşıma işlemi ile izleyebilirsiniz.
+Find işlemlerinden birinin kullanılması, çağırma `MoveFirst` veya `MoveNext`aynı değildir, ancak bir koşul belirtmeden ilk veya sonraki kaydı geçerli hale getirir. Bir Move işlemiyle bir Find işlemini izleyebilirsiniz.
 
-Bulma işlemi kullanırken, aşağıdakileri göz önünde bulundurun:
+Bulma işlemlerini kullanırken şunları aklınızda tutun:
 
-- Varsa `Find` geçerli kayıt tanımlı değil, sıfır döndürür. Bu durumda, geçerli kayıt işaretçisini geçerli kayda geri getirin.
+- `Find` sıfır dışında bir değer döndürürse, geçerli kayıt tanımlı değildir. Bu durumda, geçerli kayıt işaretçisini geçerli bir kayda doğru konumlandırmalısınız.
 
-- Bulma işlemi bir salt iletme kaydırma anlık görüntü türü kayıt kümesi ile kullanamazsınız.
+- Yalnızca ileriye dönük bir kayan görüntü türü kayıt kümesiyle bir bul işlemi kullanamazsınız.
 
-- ABD tarih biçimi (ay gün yıl) kullanmanız gerekir; Microsoft Jet Veritabanı Altyapısı'nın ABD sürümü kullanmıyorsanız bile tarihleri içeren alanlar için arama yaparken Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
+- Microsoft Jet veritabanı altyapısının ABD sürümünü kullanmıyor olsanız bile tarihleri içeren alanları ararken ABD tarih biçimini (ay-gün-yıl) kullanmanız gerekir. Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
 
-- ODBC veritabanı ve büyük dynaset'ler ile çalışırken, bulma işlemleri kullanarak özellikle büyük kümeleriyle çalışırken yavaş olduğunu fark edebilirsiniz. SQL sorgularını kullanarak performansı artırabilirsiniz ile özelleştirilmiş **ORDERBY** veya **burada** yan tümceleri, parametre sorguları veya `CDaoQuerydef` belirli dizinli kayıtları nesneleri.
+- ODBC veritabanları ve büyük dinamik kümeler ile çalışırken, özellikle büyük kayıt kümeleriyle çalışırken bul işlemlerini kullanmanın yavaş olduğunu fark edebilirsiniz. Özelleştirilmiş **ORDERBY** veya **WHERE** yan tümceleri, parametre sorguları veya belirli dizine alınmış kayıtları alan `CDaoQuerydef` nesneleri ile SQL sorguları kullanarak performansı artırabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda, "FindFirst, FindLast, FindNext, FindPrevious Yöntemleri" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "FindFirst, FindLast, Sonrabul, FindPrevious yöntemleri" konusuna bakın.
 
-##  <a name="findprev"></a>  CDaoRecordset::FindPrev
+##  <a name="findprev"></a>CDaoRecordset:: Findöncekini
 
-Belirtilen bir koşul ile eşleşen bir önceki kaydı bulmak için bu üye işlevini çağırın.
+Belirtilen bir koşulla eşleşen önceki kaydı bulmak için bu üye işlevi çağırın.
 
 ```
 BOOL FindPrev(LPCTSTR lpszFilter);
@@ -846,40 +846,40 @@ BOOL FindPrev(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Bir dize ifadesi (gibi **burada** yan tümcesinde sözcüğünü içermeyen bir SQL deyimi **burada**) kaydı bulmak için kullanılır.
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır, aksi durumda 0 eşleşen kayıtları bulundu.
+Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FindPrev` Üye işlevi, arama sırasında geçerli kayıt başlar ve kayıt başına doğru geriye doğru arar.
+`FindPrev` member işlevi, geçerli kayıtta aramasını başlatır ve kayıt kümesinin başlangıcına doğru bir şekilde arar.
 
-Tüm arama (yalnızca bu belirli bir koşulu karşılayan) kayıtlara taşıma işlemlerini kayıttan diğerine taşımak için birini eklemek istiyorsanız. Bir tablo türü kayıt kümesinde bir kaydı bulmak için arama `Seek` üye işlevi.
+Aramanıza tüm kayıtları eklemek istiyorsanız (yalnızca belirli bir koşula uyan olanları değil), kayıttan kayda geçiş yapmak için taşıma işlemlerinden birini kullanın. Tablo türü bir kayıt kümesindeki bir kaydı bulmak için `Seek` member işlevini çağırın.
 
-Ölçütlerle eşleşen bir kaydı bulunamazsa, geçerli kayıt işaretçisi yapılmadığı ve `FindPrev` sıfır döndürür. Kayıt kümesi ölçütleri karşılayan birden fazla kayıtla içeriyorsa `FindFirst` ilk oluşumunu bulur `FindNext` Sonrakini vb. bulur.
+Ölçütlerle eşleşen bir kayıt bulunamıyorsa, geçerli kayıt işaretçisi belirlenmez ve `FindPrev` sıfır döndürür. Kayıt kümesi ölçütlere uyan birden fazla kayıt içeriyorsa, `FindFirst` ilk oluşumu bulur, sonraki oluşumu bulur `FindNext` ve bu şekilde devam eder.
 
 > [!CAUTION]
->  Geçerli kayıt düzenlerseniz, çağırarak değişiklikleri kaydettiğinizden emin olması `Update` başka bir kayıtla taşımadan önce üye işlevi. Başka bir kayıtla güncelleştirmeden taşırsanız, uyarı vermeden değişiklikleriniz kaybolur.
+>  Geçerli kaydı düzenlerseniz, başka bir kayda geçmeden önce `Update` üye işlevini çağırarak değişiklikleri kaydettiğinizden emin olun. Güncelleştirme olmadan başka bir kayda geçiş yaparsanız değişiklikleriniz uyarı vermeden kaybedilir.
 
-Bulma işlemi birini kullanarak değil çağırma aynı `MoveFirst` veya `MoveNext`, ancak yalnızca getiren ilk veya sonraki kaydın geçerli bir koşul belirtmeden. Bir bulma işlemi bir taşıma işlemi ile izleyebilirsiniz.
+Find işlemlerinden birinin kullanılması, çağırma `MoveFirst` veya `MoveNext`aynı değildir, ancak bir koşul belirtmeden ilk veya sonraki kaydı geçerli hale getirir. Bir Move işlemiyle bir Find işlemini izleyebilirsiniz.
 
-Bulma işlemi kullanırken, aşağıdakileri göz önünde bulundurun:
+Bulma işlemlerini kullanırken şunları aklınızda tutun:
 
-- Varsa `Find` geçerli kayıt tanımlı değil, sıfır döndürür. Bu durumda, geçerli kayıt işaretçisini geçerli kayda geri getirin.
+- `Find` sıfır dışında bir değer döndürürse, geçerli kayıt tanımlı değildir. Bu durumda, geçerli kayıt işaretçisini geçerli bir kayda doğru konumlandırmalısınız.
 
-- Bulma işlemi bir salt iletme kaydırma anlık görüntü türü kayıt kümesi ile kullanamazsınız.
+- Yalnızca ileriye dönük bir kayan görüntü türü kayıt kümesiyle bir bul işlemi kullanamazsınız.
 
-- ABD tarih biçimi (ay gün yıl) kullanmanız gerekir; Microsoft Jet Veritabanı Altyapısı'nın ABD sürümü kullanmıyorsanız bile tarihleri içeren alanlar için arama yaparken Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
+- Microsoft Jet veritabanı altyapısının ABD sürümünü kullanmıyor olsanız bile tarihleri içeren alanları ararken ABD tarih biçimini (ay-gün-yıl) kullanmanız gerekir. Aksi takdirde, eşleşen kayıtlar bulunamamış olabilir.
 
-- ODBC veritabanı ve büyük dynaset'ler ile çalışırken, bulma işlemleri kullanarak özellikle büyük kümeleriyle çalışırken yavaş olduğunu fark edebilirsiniz. SQL sorgularını kullanarak performansı artırabilirsiniz ile özelleştirilmiş **ORDERBY** veya **burada** yan tümceleri, parametre sorguları veya `CDaoQuerydef` belirli dizinli kayıtları nesneleri.
+- ODBC veritabanları ve büyük dinamik kümeler ile çalışırken, özellikle büyük kayıt kümeleriyle çalışırken bul işlemlerini kullanmanın yavaş olduğunu fark edebilirsiniz. Özelleştirilmiş **ORDERBY** veya **WHERE** yan tümceleri, parametre sorguları veya belirli dizine alınmış kayıtları alan `CDaoQuerydef` nesneleri ile SQL sorguları kullanarak performansı artırabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda, "FindFirst, FindLast, FindNext, FindPrevious Yöntemleri" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "FindFirst, FindLast, Sonrabul, FindPrevious yöntemleri" konusuna bakın.
 
-##  <a name="getabsoluteposition"></a>  CDaoRecordset::GetAbsolutePosition
+##  <a name="getabsoluteposition"></a>CDaoRecordset:: GetAbsolutePosition
 
-Kayıt kümesi nesnesinin geçerli kayıt kayıt sayısını döndürür.
+Bir kayıt kümesi nesnesinin geçerli kaydının kayıt numarasını döndürür.
 
 ```
 long GetAbsolutePosition();
@@ -887,25 +887,25 @@ long GetAbsolutePosition();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesindeki kayıt sayısı bir tamsayı 0. Kayıt kümesi geçerli kaydın sıralı konumuna karşılık gelir.
+Kayıt kümesindeki kayıt sayısına 0 ' dan bir tamsayı. Kayıt kümesindeki geçerli kaydın sıra konumuna karşılık gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DAO nesnesini AbsolutePosition özellik değeri, sıfır tabanlıdır; kayıt kümesindeki ilk kayıt için 0 ayarı gösterir. Doldurulmuş bir kayıt kümesinde sayısını çağırarak belirleyebilirsiniz [GetRecordCount](#getrecordcount). Çağırma `GetRecordCount` sayısını belirlemek için tüm kayıtları erişmeniz gerekir çünkü biraz zaman alabilir.
+Temel alınan DAO nesnesinin AbsolutePosition özelliği değeri sıfır tabanlıdır; 0 ayarı, kayıt kümesindeki ilk kayda başvurur. [GetRecordCount](#getrecordcount)' i çağırarak kayıt kümesindeki doldurulmuş kayıt sayısını belirleyebilirsiniz. `GetRecordCount` çağrısı bir süre sürebilir, çünkü sayıyı belirlemede tüm kayıtlara erişmesi gerekir.
 
-Geçerli kayıt yok, olarak kayıt kümesindeki kayıt olduğunda - 1 döndürülür Geçerli kaydı silinirse, AbsolutePosition özellik değeri tanımlı değil ve başvuru MFC bir özel durum oluşturur. Dinamik tür kayıt kümeleri için yeni kayıtlar dizinin sonuna eklenir.
-
-> [!NOTE]
->  Bu özellik, bir yedek kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Yer işaretleri, yine de koruma ve belirli bir konuma döndürerek için önerilen yoldur ve tüm kayıt nesne türlerini geçerli kayıt konumuna tek yoludur. Özellikle, kendisinden kayıtları silinen verilen kayıt konumunu değiştirir. Ayrıca bir kayıt kümesi içinde bireysel kayıt sırasını kullanarak bir SQL deyimi oluşturulmadıkça kesin değildir çünkü kayıt yeniden yeniden oluşturulursa, belirli bir kaydı aynı mutlak konumunu olacağını hiçbir güvencesi yoktur bir  **ORDERBY** yan tümcesi.
+Geçerli kayıt yoksa, kayıt kümesinde kayıt olmadığı gibi,-1 döndürülür. Geçerli kayıt silinirse, AbsolutePosition özelliği değeri tanımlı değildir ve başvuru varsa MFC bir özel durum oluşturur. Dinamik küme türü kayıt kümeleri için, sıranın sonuna yeni kayıtlar eklenir.
 
 > [!NOTE]
->  Bu üye işlevi, yalnızca dinamik tür ve anlık görüntü türü kayıt kümeleri için geçerlidir.
+>  Bu özellik, bir vekil kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Yer işaretleri, belirli bir konuma devam etmek ve geri dönmek için önerilen bir yoldur ve geçerli kaydı tüm kayıt kümesi nesne türleri arasında konumlandırmanız için tek yoldur. Özellikle, belirli bir kaydın konumu, kendisinden önceki kayıtlar silindikten sonra değişir. Ayrıca, bir kayıt kümesi içindeki tek kayıtların sırası bir **ORDERBY** yan TÜMCESI kullanılarak SQL deyimi ile oluşturulmadığı müddetçe, belirli bir kaydın aynı mutlak konuma sahip olacağı bir güvence yoktur.
 
-İlgili bilgiler için DAO Yardımı'nda "AbsolutePosition özelliğini" konusuna bakın.
+> [!NOTE]
+>  Bu üye işlevi yalnızca dinamik küme türü ve anlık görüntü türü kayıt kümeleri için geçerlidir.
 
-##  <a name="getbookmark"></a>  CDaoRecordset::GetBookmark
+İlgili bilgiler için, DAO yardımı 'nda "AbsolutePosition özelliği" konusuna bakın.
 
-Belirli bir kayıtta yer işareti değeri elde etmek için bu üye işlevini çağırın.
+##  <a name="getbookmark"></a>CDaoRecordset:: GetBookmark
+
+Belirli bir kayıttaki yer işareti değerini almak için bu üye işlevini çağırın.
 
 ```
 COleVariant GetBookmark();
@@ -913,22 +913,22 @@ COleVariant GetBookmark();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli kayıtta yer işareti temsil eden bir değer döndürür.
+Geçerli kayıttaki yer işaretini temsil eden bir değer döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi nesnesi oluşturulduğunda veya açık olduğunda, bunları destekleyen, kayıtların her birinde zaten benzersiz bir yer işareti vardır. Çağrı `CanBookmark` kayıt yer işaretleri destekleyip desteklemediğini belirlemek için.
+Bir kayıt kümesi nesnesi oluşturulduğunda veya açıldığında, bu kayıtların her birinin destekliyorsa benzersiz bir yer işareti vardır. Bir kayıt kümesinin yer imlerini destekleyip desteklemediğini anlamak için `CanBookmark` çağırın.
 
-Yer işareti için geçerli kayıt yer işaretine değerini atayarak kaydedebileceğiniz bir `COleVariant` nesne. Hızlı bir şekilde başka bir kayıda taşıdıktan herhangi bir zamanda kayda döndürmek için çağrı `SetBookmark` , söz konusu değerine karşılık gelen parametre ile `COleVariant` nesne.
+Yer işaretinin değerini bir `COleVariant` nesnesine atayarak, geçerli kayıt için yer işaretini kaydedebilirsiniz. Farklı bir kayda geçtikten sonra istediğiniz zaman bu kayda hızlıca dönmek için, bu `COleVariant` nesnesinin değerine karşılık gelen bir parametreyle `SetBookmark` çağırın.
 
 > [!NOTE]
->  Çağırma [Requery](#requery) DAO yer işaretleri değiştirir.
+>  [YenidenSorgula](#requery) ÇAĞRıSı, DAO yer imlerini değiştirir.
 
-İlgili bilgiler için DAO Yardımı'nda "Bookmark özelliğini" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "yer Işareti özelliği" konusuna bakın.
 
-##  <a name="getcachesize"></a>  CDaoRecordset::GetCacheSize
+##  <a name="getcachesize"></a>CDaoRecordset:: GetCacheSize
 
-Önbelleğe alınan kayıt sayısını almak için bu üye işlevini çağırın.
+Önbelleğe alınan kayıt sayısını almak için bu üye işlevi çağırın.
 
 ```
 long GetCacheSize();
@@ -936,19 +936,19 @@ long GetCacheSize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ODBC veri kaynağından yerel olarak önbelleğe alınacak verileri içeren dinamik türü kayıt kümesindeki kayıt sayısını belirten bir değeri.
+Bir ODBC veri kaynağından yerel olarak önbelleğe alınacak verileri içeren bir değişken türü Recordset içindeki kayıtların sayısını belirten bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Verileri önbelleğe almayı dynaset türündeki kayıt kümesi nesneleri aracılığıyla uzak bir sunucudan veri alır. bir uygulamanın performansını artırır. Bir önbellek bir uygulama çalışırken verileri yeniden istenecektir olay o sunucudan en son alınan verileri tutan yerel belleğe alandır. Veri istendiğinde Microsoft Jet veritabanı altyapısı istenen veriler için ilk daha uzun sürer sunucudan almak yerine denetler. Bir ODBC veri kaynağından gelmeyen veri önbellekte kaydedilmez.
+Veri önbelleğe alma, dinamik bir sunucudan verileri alan ve değişken türü kayıt kümesi nesneleri aracılığıyla bir uygulamanın performansını geliştirir. Önbellek, uygulama çalışırken verilerin yeniden istenmesi durumunda sunucudan en son alınan verileri tutan yerel bellekteki bir alandır. Veriler istendiğinde, Microsoft Jet veritabanı altyapısı, verileri sunucudan almak yerine önce istenen verilerin önbelleğini denetler, bu da daha fazla zaman alır. ODBC veri kaynağından gelmeyen veriler önbellekte kaydedilmez.
 
-Ekli bir tablo gibi herhangi bir ODBC veri kaynağı, yerel bir önbellek sağlayabilirsiniz.
+Ekli tablo gibi tüm ODBC veri kaynakları yerel bir önbelleğe sahip olabilir.
 
-İlgili bilgiler için DAO Yardımı'ndaki "CacheSize CacheStart Özellikler" bölümüne bakın.
+İlgili bilgiler için, DAO yardımı 'nda "CacheSize, CacheStart özellikleri" konusuna bakın.
 
-##  <a name="getcachestart"></a>  CDaoRecordset::GetCacheStart
+##  <a name="getcachestart"></a>CDaoRecordset:: GetCacheStart
 
-Önbelleğe alınacak kayıt kümesindeki ilk kayıt yer işareti değeri elde etmek için bu üye işlevini çağırın.
+Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işareti değerini almak için bu üye işlevini çağırın.
 
 ```
 COleVariant GetCacheStart();
@@ -956,20 +956,20 @@ COleVariant GetCacheStart();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `COleVariant` önbelleğe alınacak kayıt kümesinde yer ilk kaydın belirtir.
+Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işaretini belirten `COleVariant`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Microsoft Jet veritabanı altyapısı, önbellekten önbellek aralığı içinde kayıt isteklerini ve sunucudan önbellek aralığın dışında kayıtları ister.
+Microsoft Jet veritabanı altyapısı, önbellekten önbellek aralığı içinde kayıt ister ve sunucudan önbellek aralığı dışında kayıtlar ister.
 
 > [!NOTE]
->  Kayıtlar önbellekten eşzamanlı olarak diğer kullanıcılar tarafından kaynak verilerde yapılan değişiklikleri yansıtmaz.
+>  Önbellekten alınan kayıtlar, diğer kullanıcılar tarafından kaynak verilerde aynı anda yapılan değişiklikleri yansıtmaz.
 
-İlgili bilgiler için DAO Yardımı'ndaki "CacheSize CacheStart Özellikler" bölümüne bakın.
+İlgili bilgiler için, DAO yardımı 'nda "CacheSize, CacheStart özellikleri" konusuna bakın.
 
-##  <a name="getcurrentindex"></a>  CDaoRecordset::GetCurrentIndex
+##  <a name="getcurrentindex"></a>CDaoRecordset:: GetCurrentIndex
 
-Dizini oluşturulmuş bir tablo türü şu anda kullanımda dizini belirlemek için bu üye işlevi çağrısı `CDaoRecordset` nesne.
+Dizine alınmış bir tablo türü `CDaoRecordset` nesnesinde kullanılmakta olan dizini öğrenmek için bu üye işlevini çağırın.
 
 ```
 CString GetCurrentIndex();
@@ -977,19 +977,19 @@ CString GetCurrentIndex();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` dizin şu anda kullanılmakta olan bir tablo türü kayıt kümesi adını içeren. Hiçbir dizin ayarlarsanız, boş bir dize döndürür.
+Halen tablo türü bir kayıt kümesiyle kullanımda olan dizinin adını içeren bir `CString`. Bir dizin ayarlanmamışsa boş bir dize döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu dizin, bir tablo türü kayıt kümesindeki kayıtları sıralama temelidir ve tarafından kullanılan [arama](#seek) kayıtları bulmak için üye işlevi.
+Bu dizin, tablo türü bir kayıt kümesindeki kayıtları sıralamak için temeldir ve kayıtları bulmak için [Seek](#seek) üye işlevi tarafından kullanılır.
 
-A `CDaoRecordset` nesne birden fazla dizine sahip olabilir, ancak aynı anda yalnızca bir dizini kullanabilirsiniz (rağmen bir [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) nesne üzerinde tanımlanan birden fazla dizin olabilir).
+Bir `CDaoRecordset` nesnesi birden fazla dizine sahip olabilir, ancak aynı anda yalnızca bir dizin kullanabilir (bir [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) nesnesi üzerinde birçok dizine tanımlanmış olabilir).
 
-Konu "Dizin nesnesi" ve "geçerli dizinde" DAO Yardım tanımı ilgili bilgi için bkz.
+İlgili bilgiler için, DAO yardımı 'nda "Dizin nesnesi" ve tanım "geçerli dizin" konusuna bakın.
 
-##  <a name="getdatecreated"></a>  CDaoRecordset::GetDateCreated
+##  <a name="getdatecreated"></a>CDaoRecordset:: GetDateCreated
 
-Tarih ve saat temel tablonun oluşturulma biçiminin almak için bu üye işlevini çağırın.
+Bir temel tablonun oluşturulduğu tarih ve saati almak için bu üye işlevini çağırın.
 
 ```
 COleDateTime GetDateCreated();
@@ -997,17 +997,17 @@ COleDateTime GetDateCreated();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) temel tablo oluşturulduğu saat ve tarihi içeren nesne.
+Temel tablonun oluşturulduğu tarih ve saati içeren bir [Cotadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarih ve saat ayarlarını temel tablo oluşturulduğu bilgisayardan türetilir.
+Tarih ve saat ayarları, temel tablonun oluşturulduğu bilgisayardan türetilir.
 
-İlgili bilgiler için DAO Yardımı'ndaki "Notes LastUpdated Özellikler" bölümüne bakın.
+İlgili bilgiler için, DAO yardımı 'nda "DateCreated, LastUpdated özellikleri" konusuna bakın.
 
-##  <a name="getdatelastupdated"></a>  CDaoRecordset::GetDateLastUpdated
+##  <a name="getdatelastupdated"></a>CDaoRecordset:: GetDateLastUpdated
 
-Tarih ve saat şemanın en son güncelleştirildiği almak için bu üye işlevini çağırın.
+Şemanın en son güncelleştirildiği tarihi ve saati almak için bu üye işlevi çağırın.
 
 ```
 COleDateTime GetDateLastUpdated();
@@ -1015,17 +1015,17 @@ COleDateTime GetDateLastUpdated();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) temel tablo yapısı (şema) son güncelleştirme saati ve tarihi içeren nesne.
+Temel tablo yapısının (şema) son güncelleştirildiği tarih ve saati içeren bir [Cotadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarih ve saat ayarlarını temel tablo yapısı (şema) en son güncelleştirildiği bilgisayardan türetilir.
+Tarih ve saat ayarları, temel tablo yapısının (şema) en son güncelleştirildiği bilgisayardan türetilir.
 
-İlgili bilgiler için DAO Yardımı'ndaki "Notes LastUpdated Özellikler" bölümüne bakın.
+İlgili bilgiler için, DAO yardımı 'nda "DateCreated, LastUpdated özellikleri" konusuna bakın.
 
-##  <a name="getdefaultdbname"></a>  CDaoRecordset::GetDefaultDBName
+##  <a name="getdefaultdbname"></a>CDaoRecordset:: GetDefaultDBName
 
-Bu kayıt kümesi için veritabanı adını belirlemek için bu üye işlevini çağırın.
+Bu kayıt kümesi için veritabanının adını öğrenmek üzere bu üye işlevi çağırın.
 
 ```
 virtual CString GetDefaultDBName();
@@ -1033,19 +1033,19 @@ virtual CString GetDefaultDBName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` , bu kayıt türetilmiştir veritabanının adını ve yolunu içerir.
+Bu kayıt kümesinin türetildiği veritabanının yolunu ve adını içeren bir `CString`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretçi olmayan bir kayıt oluşturduysanız bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md), bu yol varsayılan veritabanı kayıt kümesi tarafından kullanılır. Varsayılan olarak, bu işlev boş bir dize döndürür. Ne zaman ClassWizard türeyen yeni bir kayıt kümesinden `CDaoRecordset`, sizin için bu işlevi oluşturur.
+Bir kayıt kümesi, bir [cdaoveritabanı](../../mfc/reference/cdaodatabase-class.md)işaretçisi olmadan oluşturulduysa, bu yol kayıt kümesi tarafından varsayılan veritabanını açmak için kullanılır. Varsayılan olarak, bu işlev boş bir dize döndürür. ClassWizard `CDaoRecordset`yeni bir kayıt kümesi türettiği zaman sizin için bu işlevi oluşturacaktır.
 
-Aşağıdaki örnek çift ters eğik çizgi kullanımını gösterir (\\\\) dizesi içinde olduğu gibi dize doğru yorumlanması gerekli.
+Aşağıdaki örnek, dizenin doğru yorumlanması için gerekli olduğu gibi, dizesinde çift ters eğik çizgi (\\\\) kullanımını gösterir.
 
 [!code-cpp[NVC_MFCDatabase#4](../../mfc/codesnippet/cpp/cdaorecordset-class_4.cpp)]
 
-##  <a name="getdefaultsql"></a>  CDaoRecordset::GetDefaultSQL
+##  <a name="getdefaultsql"></a>CDaoRecordset:: GetDefaultSQL
 
-Framework, kayıt temel varsayılan SQL durumunu almak için bu üye işlevini çağırır.
+Çerçeve, üzerinde kayıt kümesinin temel aldığı varsayılan SQL ifadesini almak için bu üye işlevini çağırır.
 
 ```
 virtual CString GetDefaultSQL();
@@ -1053,19 +1053,19 @@ virtual CString GetDefaultSQL();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` , varsayılan SQL deyimi içerir.
+Varsayılan SQL ifadesini içeren bir `CString`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu tablo adı veya bir SQL olabilir **seçin** deyimi.
+Bu bir tablo adı veya bir SQL **Select** bildirisi olabilir.
 
-Dolaylı olarak ClassWizard ile kayıt kümesi sınıfı bildirerek varsayılan SQL deyimini tanımlayın ve bu görevi, ClassWizard gerçekleştirir.
+Sınıf Sihirbazı ile kayıt kümesi sınıfınızı bildirerek varsayılan SQL ifadesini dolaylı olarak tanımlarsınız ve ClassWizard bu görevi sizin için gerçekleştirir.
 
-Boş bir SQL dize geçirirseniz [açık](#open), sonra da bu işlev, SQL ve tablo adı için kümenizin belirlemek için çağrılır.
+[Açmak](#open)için null bir SQL dizesi geçirirseniz bu işlev, kayıt kümeniz için tablo adını veya SQL 'i belirlemekte çağrılır.
 
-##  <a name="geteditmode"></a>  CDaoRecordset::GetEditMode
+##  <a name="geteditmode"></a>CDaoRecordset:: GetEditMode
 
-Aşağıdaki değerlerden biri olan düzenleme, durumunu belirlemek için bu üye işlevini çağırın:
+Aşağıdaki değerlerden biri olan düzenlemenin durumunu öğrenmek için bu üye işlevi çağırın:
 
 ```
 short GetEditMode();
@@ -1073,21 +1073,21 @@ short GetEditMode();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düzenleme için geçerli kayıt durumunu gösteren bir değer döndürür.
+Geçerli kayıt için düzenlemenin durumunu gösteren bir değer döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|`dbEditNone`|Hiç bir düzenleme işleminin devam ediyor.|
+|`dbEditNone`|Devam eden bir Düzenle işlemi yok.|
 |`dbEditInProgress`|`Edit` çağrıldı.|
 |`dbEditAdd`|`AddNew` çağrıldı.|
 
-İlgili bilgiler için DAO Yardımı'nda "EditMode özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "EditMode özelliği" konusuna bakın.
 
-##  <a name="getfieldcount"></a>  CDaoRecordset::GetFieldCount
+##  <a name="getfieldcount"></a>CDaoRecordset:: GetFieldCount
 
-Kayıt kümesinde tanımlanan alan (sütun) almak için bu üye işlevini çağırın.
+Kayıt kümesinde tanımlanan alan (sütun) sayısını almak için bu üye işlevi çağırın.
 
 ```
 short GetFieldCount();
@@ -1095,15 +1095,15 @@ short GetFieldCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt alan sayısı.
+Kayıt kümesindeki alan sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bilgiler için DAO Yardımı'nda "Count özelliğini" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "Count Property" konusuna bakın.
 
-##  <a name="getfieldinfo"></a>  CDaoRecordset::GetFieldInfo
+##  <a name="getfieldinfo"></a>CDaoRecordset:: GetFieldInfo
 
-Bir kayıt alanları hakkında bilgi edinmek için bu üye işlevini çağırın.
+Bir kayıt kümesindeki alanlarla ilgili bilgi edinmek için bu üye işlevi çağırın.
 
 ```
 void GetFieldInfo(
@@ -1119,35 +1119,35 @@ void GetFieldInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Dizine göre arama için kayıt kümesinin alanlar koleksiyonu önceden tanımlanmış alanı sıfır tabanlı dizini.
+*nDizin*<br/>
+Dizine göre arama için kayıt kümesinin Fields koleksiyonundaki önceden tanımlanmış alanın sıfır tabanlı dizini.
 
-*FieldInfo*<br/>
-Bir başvuru bir [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı.
+*sağlanırken*<br/>
+[Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısına başvuru.
 
 *dwInfoOptions*<br/>
-Seçenekleri hangi bilgilerini almak için kayıt kümesi belirtin. Kullanılabilir seçenekler burada ne bunlar döndürmek işlev neden birlikte listelenir. En iyi performans için yalnızca gereksinim duyduğunuz bilgileri düzeyini alın:
+Alınacak kayıt kümesiyle ilgili bilgileri belirleyen seçenekler. Kullanılabilir seçenekler, işlevin döndürmesine neden olan özellikler ile birlikte listelenir. En iyi performansı elde etmek için yalnızca ihtiyacınız olan bilgi düzeyini alın:
 
-- `AFX_DAO_PRIMARY_INFO` (Varsayılan) Adı, türü, boyut öznitelikleri
+- `AFX_DAO_PRIMARY_INFO` (varsayılan) ad, tür, boyut, öznitelik
 
-- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: Gerekli, sıralı konumu harmanlama sırası, yabancı adı, kaynak alanı, kaynak tablosu için sıfır uzunluk, izin ver
+- Birincil bilgileri `AFX_DAO_SECONDARY_INFO`, ayrıca: sıralı konum, gerekli, sıfır uzunluğa Izin ver, harmanlama sırası, yabancı ad, kaynak alanı, kaynak tablo
 
-- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, ayrıca: Varsayılan değer, doğrulama kuralı, doğrulama metin
+- Birincil ve ikincil bilgileri `AFX_DAO_ALL_INFO`, ayrıca: varsayılan değer, doğrulama kuralı, doğrulama metni
 
 *lpszName*<br/>
 Alanın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin bir sürümünü bir alanından dizine göre aramak olanak sağlar. Başka bir sürüm bir alan adına göre aramak olanak sağlar.
+İşlevin bir sürümü bir alanı dizine göre arama yapmanızı sağlar. Diğer sürüm, bir alanı adına göre arama yapmanızı sağlar.
 
-Döndürülen bilgileri açıklaması için bkz: [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bilgi açıklamasındaki yukarıda listelenen öğelerin karşılık gelen üyeleri bu yapıya sahip *dwInfoOptions*. Bir düzeyde bilgi istediğinizde de önceki tüm düzeylerde hakkında bilgi alın.
+Döndürülen bilgilerin açıklaması için bkz. [Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
 
-İlgili bilgiler için DAO Yardımı'nda "öznitelikleri özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
 
-##  <a name="getfieldvalue"></a>  CDaoRecordset::GetFieldValue
+##  <a name="getfieldvalue"></a>CDaoRecordset:: GetFieldValue
 
-Bir kayıt kümesi verileri almak için bu üye işlevini çağırın.
+Bir kayıt kümesindeki verileri almak için bu üye işlevini çağırın.
 
 ```
 virtual void GetFieldValue(
@@ -1168,31 +1168,31 @@ virtual COleVariant GetFieldValue(int nIndex);
 Bir alanın adını içeren bir dize işaretçisi.
 
 *varValue*<br/>
-Bir başvuru bir `COleVariant` bir alanın değerini depolayan bir nesne.
+Bir alanın değerini depolayacak `COleVariant` nesnesine bir başvuru.
 
-*nIndex*<br/>
-Alanın dizine göre arama için kayıt kümesinin alanlar koleksiyonuna bir sıfır tabanlı dizini.
+*nDizin*<br/>
+Dizine göre arama için kayıt kümesinin Fields koleksiyonundaki alanın sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki sürümü `GetFieldValue` , bir değer döndürür dönüş bir [COleVariant](../../mfc/reference/colevariant-class.md) bir alanın değerini içeren nesne.
+Bir değer döndüren `GetFieldValue` iki sürümü, bir alanın değerini içeren bir [Cotavariant](../../mfc/reference/colevariant-class.md) nesnesi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alan adı veya sıra konumuna bakabilirsiniz.
+Bir alanı ada veya sıralı konuma göre arayabilirsiniz.
 
 > [!NOTE]
->  Çağrı alan bu üye işlevin sürümlerinden daha verimli bir `COleVariant` parametresi yerine döndüren bir sürümünü çağırma nesne başvurusu bir `COleVariant` nesne. Bu işlevin ikinci sürümleri, geriye dönük uyumluluk için tutulur.
+>  Bir `COleVariant` nesnesi döndüren sürümü çağırmak yerine, bir `COleVariant` nesne başvurusunu bir parametre olarak alan bu üye işlevinin sürümlerinden birini çağırmak daha etkilidir. Bu işlevin ikinci sürümleri geriye dönük uyumluluk için tutulur.
 
-Kullanım `GetFieldValue` ve [SetFieldValue](#setfieldvalue) alanlar, çalışma zamanı yerine statik bağlama sütunları kullanarak dinamik olarak bağlamak için [DoFieldExchange](#dofieldexchange) mekanizması.
+[DoFieldExchange](#dofieldexchange) mekanizmasını kullanarak sütunları statik olarak bağlama yerine çalışma zamanında dinamik olarak bağlamak için `GetFieldValue` ve [SetFieldValue](#setfieldvalue) kullanın.
 
-`GetFieldValue` ve `DoFieldExchange` mekanizması, performansı artırmak için birleştirilebilir. Örneğin, `GetFieldValue` yalnızca isteğe bağlı olarak gereken bir değer almanıza ve bu çağrı arabirimindeki "Daha fazla bilgi" düğmesine atayın.
+`GetFieldValue` ve `DoFieldExchange` mekanizması performansı artırmak için birleştirilebilir. Örneğin, yalnızca talep üzerine ihtiyacınız olan bir değeri almak için `GetFieldValue` kullanın ve bu çağrıyı, arabirimdeki "daha fazla bilgi" düğmesine atayın.
 
-İlgili bilgiler için "Alanı nesnesi" ve DAO Yardımı'nda "Value özelliği" konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "alan nesnesi" ve "değer özelliği" konularına bakın.
 
-##  <a name="getindexcount"></a>  CDaoRecordset::GetIndexCount
+##  <a name="getindexcount"></a>CDaoRecordset:: GetIndexCount
 
-Tablo türü kayıt kümesinde kullanılabilir dizinler sayısını belirlemek için bu üye işlevini çağırın.
+Tablo türü kayıt kümesindeki kullanılabilir dizinlerin sayısını öğrenmek için bu üye işlevi çağırın.
 
 ```
 short GetIndexCount();
@@ -1200,17 +1200,17 @@ short GetIndexCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tablo türü kümesinde dizinleri sayısı.
+Tablo türü kayıt kümesindeki dizinlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetIndexCount` kayıt kümesindeki tüm dizinleri döngü için kullanışlıdır. Bu amaçla kullanabileceğiniz `GetIndexCount` birlikte [GetIndexInfo](#getindexinfo). Dinamik tür veya anlık görüntü türü kayıt kümeleri bu üye işlevini çağırın, MFC özel durum oluşturur.
+`GetIndexCount`, kayıt kümesindeki tüm dizinlerde döngü için yararlıdır. Bu amaçla, [Getındexinfo](#getindexinfo)ile birlikte `GetIndexCount` kullanın. Bu üye işlevini Dynaset türü veya anlık görüntü türü kayıt kümelerinde çağırırsanız, MFC bir özel durum oluşturur.
 
-İlgili bilgiler için DAO Yardımı'nda "öznitelikleri özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
 
-##  <a name="getindexinfo"></a>  CDaoRecordset::GetIndexInfo
+##  <a name="getindexinfo"></a>CDaoRecordset:: GetIndexInfo
 
-Çeşitli arka plandaki bir kayıt içindeki temel tablo tanımlanan dizin hakkında bilgi edinmek için bu üye işlevini çağırın.
+Bir kayıt kümesini temel tabloda tanımlanan bir dizin hakkında çeşitli bilgiler almak için bu üye işlevini çağırın.
 
 ```
 void GetIndexInfo(
@@ -1226,35 +1226,35 @@ void GetIndexInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Sayısal konumuna göre arama için tablonun dizinler koleksiyonu sıfır tabanlı dizin.
+*nDizin*<br/>
+Sayısal konuma göre arama için tablonun dizinler koleksiyonundaki sıfır tabanlı dizin.
 
-*indexinfo*<br/>
-Bir başvuru bir [Cdaoındexınfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısı.
+*ındexınfo*<br/>
+Bir [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına başvuru.
 
 *dwInfoOptions*<br/>
-Seçenekler hangi bilgilerini almak için dizini belirtin. Kullanılabilir seçenekler burada ne bunlar döndürmek işlev neden birlikte listelenir. En iyi performans için yalnızca gereksinim duyduğunuz bilgileri düzeyini alın:
+Alınacak dizin hakkındaki bilgileri belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürmesine neden olan özellikler ile birlikte listelenir. En iyi performansı elde etmek için yalnızca ihtiyacınız olan bilgi düzeyini alın:
 
-- `AFX_DAO_PRIMARY_INFO` (Varsayılan) Ad alanı bilgisi alanları
+- `AFX_DAO_PRIMARY_INFO` (varsayılan) ad, alan bilgisi, alanlar
 
-- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: Birincil, benzersiz ve kümelenmiş, IgnoreNulls, gerekli, yabancı
+- `AFX_DAO_SECONDARY_INFO` birincil bilgiler, ayrıca: birincil, benzersiz, kümelenmiş, IgnoreNulls, gerekli, yabancı
 
-- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, ayrıca: Ayrı sayım
+- Birincil ve ikincil bilgileri `AFX_DAO_ALL_INFO`, ayrıca: ayrı sayım
 
 *lpszName*<br/>
-Ada göre arama için dizin nesnesi adı için bir işaretçi.
+Ada göre arama için dizin nesnesinin adına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin bir sürümünü, koleksiyondaki konumuna göre bir dizini arayın sağlar. Başka bir sürüm dizini adına göre aramak olanak sağlar.
+İşlevin bir sürümü, koleksiyondaki konumuyla bir dizin araması yapmanızı sağlar. Diğer sürüm, dizin adına göre arama yapmanızı sağlar.
 
-Döndürülen bilgileri açıklaması için bkz: [Cdaoındexınfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısı. Bilgi açıklamasındaki yukarıda listelenen öğelerin karşılık gelen üyeleri bu yapıya sahip *dwInfoOptions*. Bir düzeyde bilgi istediğinizde de önceki tüm düzeylerde hakkında bilgi alın.
+Döndürülen bilgilerin açıklaması için, [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
 
-İlgili bilgiler için DAO Yardımı'nda "öznitelikleri özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
 
-##  <a name="getlastmodifiedbookmark"></a>  CDaoRecordset::GetLastModifiedBookmark
+##  <a name="getlastmodifiedbookmark"></a>CDaoRecordset:: GetLastModifiedBookmark
 
-En son eklenen veya güncelleştirilen kaydının yer almak için bu üye işlevini çağırın.
+En son eklenen veya güncelleştirilmiş kaydın yer işaretini almak için bu üye işlevini çağırın.
 
 ```
 COleVariant GetLastModifiedBookmark();
@@ -1262,19 +1262,19 @@ COleVariant GetLastModifiedBookmark();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `COleVariant` içeren en son gösteren bir yer işareti eklendiğinde veya değiştirilmiş kayıt.
+En son eklenen veya değiştirilen kaydı belirten bir yer işareti içeren `COleVariant`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi nesnesi oluşturulduğunda veya açık olduğunda, bunları destekleyen, kayıtların her birinde zaten benzersiz bir yer işareti vardır. Çağrı [GetBookmark](#getbookmark) kayıt yer işaretleri destekleyip desteklemediğini belirlemek için. Kayıt kümesi yer işaretleri, desteklemiyorsa bir `CDaoException` oluşturulur.
+Bir kayıt kümesi nesnesi oluşturulduğunda veya açıldığında, bu kayıtların her birinin destekliyorsa benzersiz bir yer işareti vardır. Kayıt kümesinin yer imlerini destekleyip desteklemediğini anlamak için [GetBookmark](#getbookmark) öğesini çağırın. Kayıt kümesi yer imlerini desteklemiyorsa, bir `CDaoException` oluşturulur.
 
-Bir kayıt eklemek, kayıt sonunda görünür ve geçerli kaydı değildir. Yeni kayıt geçerli hale getirmek için çağrı `GetLastModifiedBookmark` ve sonra çağrı `SetBookmark` yeni eklenen kayda dönün.
+Bir kayıt eklediğinizde, kayıt kümesinin sonunda görünür ve geçerli kayıt değildir. Yeni kaydı güncel hale getirmek için `GetLastModifiedBookmark` çağırın ve sonra yeni eklenen kayda dönmek için `SetBookmark` çağırın.
 
-İlgili bilgiler için DAO Yardımı'nda "LastModified özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "LastModified özelliği" konusuna bakın.
 
-##  <a name="getlockingmode"></a>  CDaoRecordset::GetLockingMode
+##  <a name="getlockingmode"></a>CDaoRecordset:: GetLockingMode
 
-Kayıt kümesi için geçerli kilitleme türünü belirlemek için bu üye işlevini çağırın.
+Kayıt kümesi için etkin olan kilitleme türünü öğrenmek için bu üye işlevini çağırın.
 
 ```
 BOOL GetLockingMode();
@@ -1282,21 +1282,21 @@ BOOL GetLockingMode();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilitleme tür kötümser, ise sıfır olmayan kayıt İyimser kilitleme için Aksi durumda 0.
+Kilitleme türü kötümser ise sıfır olmayan, iyimser kayıt kilitleme için 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kötümser kilitleme aslında düzenlemekte olduğunuz kaydı içeren veri sayfası olduğunda çağırmanızı hemen sonra kilitli [Düzenle](#edit) üye işlevi. Çağırdığınızda sayfanın açılmış [güncelleştirme](#update) veya [Kapat](#close) taşıma veya Bul işlemlerden birini ya da bir üye işlevi.
+Kötümser kilitleme etkin olduğunda, düzenleme yaptığınız kaydı içeren veri sayfası, üye [Düzenle](#edit) işlevini çağırır almaz kilitlenir. [Update](#update) veya [Close](#close) üye Işlevini veya Move veya Find işlemlerinden birini çağırdığınızda sayfanın kilidi açılır.
 
-Yalnızca kaydı ile güncelleştirilirken İyimser kilitleme etkindir, kaydı içeren veri sayfası kilitlenir `Update` üye işlevi.
+İyimser kilitleme etkin olduğunda, kaydı içeren veri sayfası yalnızca kayıt `Update` üye işleviyle güncelleştirilirken kilitlenir.
 
-ODBC veri kaynakları ile çalışırken, kilitleme zaman iyimser modudur.
+ODBC veri kaynaklarıyla çalışırken kilitleme modu her zaman iyimser olur.
 
-İlgili bilgiler için "LockEdits özelliği" ve "Kilitleme davranışı, çok kullanıcılı uygulamalarında" DAO Yardım konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "LockEdits özelliği" ve "çok kullanıcılı uygulamalarda kilitleme davranışı" konularına bakın.
 
-##  <a name="getname"></a>  CDaoRecordset::GetName
+##  <a name="getname"></a>CDaoRecordset:: GetName
 
-Kayıt kümesi adını almak için bu üye işlevini çağırın.
+Kayıt kümesinin adını almak için bu üye işlevini çağırın.
 
 ```
 CString GetName();
@@ -1304,17 +1304,17 @@ CString GetName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` kayıt kümesi adını içeren.
+Kayıt kümesinin adını içeren bir `CString`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi adı bir harf ile başlamalı ve en fazla 40 karakter içerebilir. Sayılar içerebilir ve alt çizgi karakterleri, ancak noktalama işaretleri veya boşluk içeremez.
+Kayıt kümesinin adı bir harfle başlamalı ve en fazla 40 karakter içerebilir. Sayılar ve alt çizgi karakterlerini içerebilir, ancak noktalama veya boşluk içeremez.
 
-İlgili bilgiler için DAO Yardımı'nda "Name özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
-##  <a name="getparamvalue"></a>  CDaoRecordset::GetParamValue
+##  <a name="getparamvalue"></a>CDaoRecordset:: GetParamValue
 
-Temel alınan DAOParameter nesnesinde depolanan belirtilen parametresinin geçerli değerini almak için bu üye işlevini çağırın.
+Temel alınan Baoparameter nesnesinde depolanan belirtilen parametrenin geçerli değerini almak için bu üye işlevini çağırın.
 
 ```
 virtual COleVariant GetParamValue(int nIndex);
@@ -1323,25 +1323,25 @@ virtual COleVariant GetParamValue(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Temel alınan nesnede DAOParameter parametresi sayısal konumu.
+*nDizin*<br/>
+Temel alınan Davoparemeter nesnesindeki parametrenin sayısal konumu.
 
 *lpszName*<br/>
-Değer, istediğiniz parametrenin adı.
+Değerini istediğiniz parametrenin adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sınıfın bir nesnesi [COleVariant](../../mfc/reference/colevariant-class.md) içeren parametrenin değeri.
+Parametrenin değerini içeren [Cotavariant](../../mfc/reference/colevariant-class.md) sınıfının bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre adı veya koleksiyon içindeki sayısal konumuna erişebilir.
+Parametreye ada veya koleksiyondaki sayısal konumuna göre erişebilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda "parametresi nesne" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "parametre nesnesi" konusuna bakın.
 
-##  <a name="getpercentposition"></a>  CDaoRecordset::GetPercentPosition
+##  <a name="getpercentposition"></a>CDaoRecordset:: GetPercentPosition
 
-Eğer bir dinamik tür veya anlık görüntü türü kayıt ile çalışırken `GetPercentPosition` kayıt kümesinin tam doldurma önce taşıma çağırarak belirtildiği gibi erişilen kayıt sayısıyla miktarıdır [GetRecordCount](#getrecordcount).
+DYNASET türü veya anlık görüntü türü bir kayıt kümesiyle çalışırken, kayıt kümesini tamamen doldurmadan önce `GetPercentPosition` çağırırsanız, hareket miktarı [GetRecordCount](#getrecordcount)çağırarak belirtilen kayıt sayısına göre değişir.
 
 ```
 float GetPercentPosition();
@@ -1349,19 +1349,19 @@ float GetPercentPosition();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kayıt kümesinde yüzdesine göre kayıt kümesi nesnesi geçerli kayıt yaklaşık konumunu gösteren 0 ile 100 arasında bir sayı.
+Kayıt kümesindeki kayıtların yüzdesine göre kayıt kümesi nesnesindeki geçerli kaydın yaklaşık konumunu gösteren 0 ile 100 arasında bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırarak kayıt son taşıyabilirsiniz [MoveLast](#movelast) tam doldurma tüm kayıt kümelerini, ancak bu oldukça uzun sürebilir.
+Tüm kayıt kümelerinin popülasyonunu tamamlayabilmeniz için [MoveLast yöntemini](#movelast) çağırarak son kayda geçebilirsiniz. Bu işlem, önemli ölçüde zaman alabilir.
 
-Çağırabilirsiniz `GetPercentPosition` dizini olmayan tablolar üzerinde tüm üç tür kayıt nesnelerin dahil. Ancak, çağıramazsınız `GetPercentPosition` yalnızca iletme kaydırma anlık görüntülerini veya harici bir veritabanına karşı doğrudan bir sorgudan açılan bir kayıt kümesi. Geçerli kayıt yok veya geçerli he kaydı silinmiş, bir `CDaoException` oluşturulur.
+Dizinleri olmayan tablolar da dahil olmak üzere, her üç türdeki kayıt kümesi nesnesi üzerinde `GetPercentPosition` çağırabilirsiniz. Ancak, salt ileri kaydırılan anlık görüntülerle veya bir geçiş sorgusundan bir dış veritabanına yönelik açılan bir kayıt kümesinde `GetPercentPosition` çağırılamaz. Geçerli kayıt yoksa veya geçerli kayıt silinmişse bir `CDaoException` oluşturulur.
 
-İlgili bilgiler için DAO Yardımı'nda "PercentPosition özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "PercentPosition Özelliği" konusuna bakın.
 
-##  <a name="getrecordcount"></a>  CDaoRecordset::GetRecordCount
+##  <a name="getrecordcount"></a>CDaoRecordset:: GetRecordCount
 
-Bir kayıt kümesinde kaç tane kaydın erişildiğini bulmak için bu üye işlevini çağırın.
+Bir kayıt kümesindeki kaç kayda erişildiğini öğrenmek için bu üye işlevini çağırın.
 
 ```
 long GetRecordCount();
@@ -1369,27 +1369,27 @@ long GetRecordCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kayıt kümesi nesnesi erişilen kayıt sayısını döndürür.
+Bir kayıt kümesi nesnesinde erişilen kayıt sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetRecordCount` tüm kayıtları erişilen kadar kaç tane kaydın bir dinamik tür veya anlık görüntü türü kayıt kümesi içinde bulunan göstermez. Bu üye işlev çağrısı, önemli miktarda tamamlanması zaman alabilir.
+`GetRecordCount`, tüm kayıtlara erişilene kadar Dynaset türü veya anlık görüntü türü bir kayıt kümesinde kaç kayıt bulunduğunu göstermez. Bu üye işlev çağrısının tamamlanması, önemli miktarda zaman alabilir.
 
-Son kayda erişildikten sonra dönüş değeri silinmemiş kayıt kümesinde toplam sayısını gösterir. Son kayda erişilecek zorlamak için çağrı `MoveLast` veya `FindLast` kayıt kümesi için üye işlevi. Bir SQL sayısı, kayıtlar sorgunuzun döndürür yaklaşık sayısını belirlemek için de kullanabilirsiniz.
+Son kayda erişildikten sonra, dönüş değeri, kayıt kümesindeki silinmeyen kayıtların toplam sayısını gösterir. Son kayda erişilmesine zorlamak için, kayıt kümesi için `MoveLast` veya `FindLast` üye işlevini çağırın. Sorgunuzun döndürdüğü kayıtların yaklaşık sayısını öğrenmek için bir SQL Count de kullanabilirsiniz.
 
-Uygulamanız, dönüş değeri dynaset türü kayıt kümesindeki kayıtları siler `GetRecordCount` azaltır. Ancak, diğer kullanıcılar tarafından silinen kayıtlar tarafından yansıtılmaz `GetRecordCount` kadar geçerli kaydı silinen bir kayda konumlandırıldı. Kayıt sayısı etkileyen bir işlem yürütme ve daha sonra işlemi geri `GetRecordCount` gerçek kalan kayıt sayısı yansıtmaz.
+Uygulamanız, kayıt kümesi türündeki bir Recordset içindeki kayıtları sildiği için `GetRecordCount` dönüş değeri azalır. Ancak, diğer kullanıcılar tarafından silinen kayıtlar, geçerli kayıt silinmiş bir kayda yerleştirilene kadar `GetRecordCount` yansıtılmaz. Kayıt sayısını etkileyen ve sonra işlemi geri alan bir işlem yürütüyor, `GetRecordCount` kalan kayıtların gerçek sayısını yansıtmayacaktır.
 
-Değerini `GetRecordCount` bir anlık görüntü türü kayıt kümesinden tablolardaki değişikliklerden etkilenmez.
+Bir anlık görüntü türü kayıt kümesinden `GetRecordCount` değeri, temel tablolardaki değişikliklerden etkilenmez.
 
-Değerini `GetRecordCount` bir tablo türü kayıt yaklaşık tablosundaki kayıt sayısını yansıtır ve tablo kayıtlarını eklenen ve Silinen hemen etkilenir.
+Tablo türü bir kayıt kümesinden `GetRecordCount` değeri, tablodaki yaklaşık kayıt sayısını yansıtır ve tablo kayıtları eklenip silindiğine hemen etkilenir.
 
-Bir kayıt kümesi ile hiçbir kayıt 0 değerini döndürür. Bağlı tablolar veya ODBC veritabanlarının ile çalışırken `GetRecordCount` her zaman döndürür - 1. Çağırma `Requery` üye işlevi bir kayıt kümesinde sıfırlar değerini `GetRecordCount` sanki yalnızca sorguyu yeniden çalıştırılır.
+Kayıt içermeyen bir kayıt kümesi 0 değerini döndürür. Eklenmiş tablolar veya ODBC veritabanları ile çalışırken `GetRecordCount` her zaman-1 döndürür. Bir kayıt kümesinde `Requery` member işlevinin çağrılması, sorgunun yeniden yürütüldüğünden olduğu gibi `GetRecordCount` değerini sıfırlar.
 
-İlgili bilgiler için DAO Yardımı'nda "RecordCount özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "RecordCount özelliği" konusuna bakın.
 
-##  <a name="getsql"></a>  CDaoRecordset::GetSQL
+##  <a name="getsql"></a>CDaoRecordset:: GetSQL
 
-Açıldığında kayıt kümesinin kayıtları seçmek için kullanılan SQL durumunu almak için bu üye işlevini çağırın.
+Açıldığında kayıt kümesinin kayıtlarını seçmek için kullanılan SQL ifadesini almak için bu üye işlevi çağırın.
 
 ```
 CString GetSQL() const;
@@ -1397,22 +1397,22 @@ CString GetSQL() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` SQL deyimini içeren.
+SQL ifadesini içeren bir `CString`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, genellikle bir SQL olacaktır **seçin** deyimi.
+Bu, genellikle bir SQL **Select** deyimidir.
 
-Tarafından döndürülen dize `GetSQL` kümenize için geçirilen herhangi bir dize genellikle farklı *lpszSQL* parametresi [açık](#open) üye işlevi. Kayıt kümesi ne sizin için geçen dayalı tam bir SQL deyimi oluşturur olmasıdır `Open`ClassWizard ile belirtilen ve hangi belirttiğiniz [m_strFilter](#m_strfilter) ve [m_strSort](#m_strsort) veri üyeleri.
+`GetSQL` tarafından döndürülen dize, genellikle *lpszSQL* parametresindeki kayıt kümesine [Açık](#open) üye işlevine geçirilebileceğiniz herhangi bir dizeden farklıdır. Bunun nedeni, kayıt kümesinin `Open`ne geçirdiklerinizi, ClassWizard ile belirtilerinizi ve [m_strFilter](#m_strfilter) ve [m_strSort](#m_strsort) veri üyelerinde neleri belirtdiklerinizi temel alan tam bir SQL ifadesini oluşturur.
 
 > [!NOTE]
->  Bu üye işlevi çağırdıktan sonra yalnızca çağrı `Open`.
+>  Bu üye işlevini yalnızca `Open`çağrıldıktan sonra çağırın.
 
-İlgili bilgiler için DAO Yardımı'nda "SQL özelliğini" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "SQL özelliği" konusuna bakın.
 
-##  <a name="gettype"></a>  CDaoRecordset::GetType
+##  <a name="gettype"></a>CDaoRecordset:: GetType
 
-Kayıt kümesi nesnesi türünü belirlemek için kayıt açtıktan sonra bu üye işlevini çağırın.
+Kayıt kümesi nesnesinin türünü öğrenmek için kayıt kümesini açtıktan sonra bu üye işlevini çağırın.
 
 ```
 short GetType();
@@ -1420,21 +1420,21 @@ short GetType();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kayıt türünü gösteren aşağıdaki değerlerden biri:
+Bir kayıt kümesinin türünü gösteren aşağıdaki değerlerden biri:
 
-- `dbOpenTable` Tablo türünde bir kayıt kümesi
+- `dbOpenTable` tablo türü kayıt kümesi
 
-- `dbOpenDynaset` Dinamik türünde bir kayıt kümesi
+- `dbOpenDynaset` değişken kümesi türü Recordset
 
-- `dbOpenSnapshot` Anlık görüntü türü kayıt kümesi
+- `dbOpenSnapshot` anlık görüntü türü kayıt kümesi
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bilgiler için DAO Yardımı'nda "Type özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "tür özelliği" konusuna bakın.
 
-##  <a name="getvalidationrule"></a>  CDaoRecordset::GetValidationRule
+##  <a name="getvalidationrule"></a>CDaoRecordset:: GetValidationRule
 
-Verileri doğrulamak için kullanılan kural belirlemek için bu üye işlevini çağırın.
+Verileri doğrulamak için kullanılan kuralı öğrenmek için bu üye işlevi çağırın.
 
 ```
 CString GetValidationRule();
@@ -1442,19 +1442,19 @@ CString GetValidationRule();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` değiştirildi veya tabloya eklenen bir kayıttaki veriler doğrulayan bir değer içeren nesne.
+Bir kayda değiştiği veya tabloya eklendiği için bir kayıttaki verileri doğrulayan bir değeri içeren `CString` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kural, metin tabanlı ve temel alınan tabloda her değiştirildiğinde uygulanır. Verilerin yasal değil ise, MFC özel durum oluşturur. Döndürülen hata iletisi, belirtilmişse nesnenin temel alan ValidationText özelliğinin metin veya metin alanı nesnesini ValidationRule özelliği tarafından belirtilen ifadenin ' dir. Çağırabilirsiniz [GetValidationText](#getvalidationtext) hata iletisinin metni elde edilir.
+Bu kural metin tabanlıdır ve temel alınan tablonun her değiştirildiği her seferinde uygulanır. Veriler geçerli değilse, MFC bir özel durum oluşturur. Döndürülen hata iletisi, temeldeki alan nesnesinin ValidationText özelliğinin, belirtilmişse veya temel alan nesnesinin ValidationRule özelliği tarafından belirtilen ifadenin metni. Hata iletisinin metnini almak için [GetValidationText](#getvalidationtext) öğesini çağırabilirsiniz.
 
-Örneğin, ayın gününü gerektiren kaydındaki alan bir doğrulama kuralı gibi olabilir "günlük BETWEEN 1 ve 31."
+Örneğin, ayın gününü gerektiren bir kayıttaki bir alan, "1 Ile 31 arasında gün" gibi bir doğrulama kuralına sahip olabilir.
 
-İlgili bilgiler için DAO Yardımı'nda "ValidationRule özelliğini" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ValidationRule özelliği" konusuna bakın.
 
-##  <a name="getvalidationtext"></a>  CDaoRecordset::GetValidationText
+##  <a name="getvalidationtext"></a>CDaoRecordset:: GetValidationText
 
-Temel alan nesnenin ValidationText özelliğinin metni almak için bu üye işlevini çağırın.
+Temel alan nesnesinin ValidationText özelliğinin metnini almak için bu üye işlevini çağırın.
 
 ```
 CString GetValidationText();
@@ -1462,15 +1462,15 @@ CString GetValidationText();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` bir alanın değerini temel alan nesnenin doğrulama kuralı karşılamaz, görüntülenen iletinin metni içeren nesne.
+Bir alanın değeri, temel alan nesnesinin doğrulama kuralına uygun değilse görüntülenen iletinin metnini içeren `CString` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bilgiler için DAO Yardımı'nda "ValidationText özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ValidationText özelliği" konusuna bakın.
 
-##  <a name="isbof"></a>  CDaoRecordset::IsBOF
+##  <a name="isbof"></a>CDaoRecordset:: IsBOF
 
-Kayıttan önce ilk kaydı kümesi ilerlemiş olup olmadığını öğrenmek için kayıt kaydırarak önce bu üye işlevini çağırın.
+Kayıt kümesinin ilk kaydından önce ilerlemeyeceğinizi öğrenmek için kayıttan kayda geçmeden önce Bu üye işlevini çağırın.
 
 ```
 BOOL IsBOF() const;
@@ -1478,49 +1478,49 @@ BOOL IsBOF() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi kayıt içeriyorsa veya geriye doğru ilk kaydı önce kaydırılan sıfır; Aksi durumda 0.
+Kayıt kümesi kayıt içermiyorsa veya ilk kayıttan önce geriye doğru kaydırdıysanız sıfır dışı. Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıca, çağırabilirsiniz `IsBOF` ile birlikte `IsEOF` kayıt herhangi bir kayıt içerip boş olup olmadığını belirlemek için. Çağırdıktan hemen sonra `Open`, kayıt, kayıt bulundurmuyorsa `IsBOF` sıfır döndürür. En az bir kaydına sahip bir kayıt kümesi açtığınızda, geçerli kaydın ilk kaydıdır ve `IsBOF` 0 döndürür.
+Kayıt kümesinin herhangi bir kayıt içerip içermediğini veya boş olduğunu anlamak için `IsEOF` birlikte `IsBOF` de çağırabilirsiniz. `Open`çağırdıktan hemen sonra, kayıt kümesi hiçbir kayıt içermiyorsa, `IsBOF` sıfır dışında bir değer döndürür. En az bir kaydı olan bir kayıt kümesini açtığınızda, ilk kayıt geçerli kayıttır ve `IsBOF` 0 döndürür.
 
-Geçerli kaydı ilk kaydı ise ve çağırmanızı `MovePrev`, `IsBOF` sonradan sıfır döndürür. Varsa `IsBOF` sıfır döndürür ve çağrı `MovePrev`, bir özel durum oluşturulur. Varsa `IsBOF` sıfır döndürür, geçerli kayıt tanımsız olur ve geçerli bir kayıt gerektiren herhangi bir işlem, bir özel durumu oluşur.
+İlk kayıt geçerli kayıttır ve `MovePrev`çağırırsanız, `IsBOF` daha sonra sıfır dışında bir değer döndürür. `IsBOF` sıfır dışında bir değer döndürürse ve `MovePrev`çağırırsanız, bir özel durum oluşturulur. `IsBOF` sıfır dışında bir değer döndürürse, geçerli kayıt tanımsızdır ve geçerli bir kayıt gerektiren herhangi bir eylem, özel durum oluşmasına neden olur.
 
-Üzerinde belirli yöntemler etkisi `IsBOF` ve `IsEOF` ayarları:
+`IsBOF` ve `IsEOF` ayarlarındaki belirli yöntemlerin etkisi:
 
-- Çağırma `Open*` dahili olarak ilk kaydı kayıt kümesindeki geçerli kayıt çağırarak yapar `MoveFirst`. Bu nedenle, çağırma `Open` kayıtları neden bir boş dizi `IsBOF` ve `IsEOF` sıfır döndürülecek. (Başarısız davranışı için aşağıdaki tabloya bakın `MoveFirst` veya `MoveLast` arayın.)
+- `Open*` çağırarak, `MoveFirst`çağırarak kayıt kümesindeki ilk kaydı geçerli kayıt yapar. Bu nedenle, boş bir kayıt kümesinde `Open` çağırmak `IsBOF` ve `IsEOF` sıfır dışında dönüşmesine neden olur. (Başarısız bir `MoveFirst` veya `MoveLast` çağrısının davranışı için aşağıdaki tabloya bakın.)
 
-- Her ikisi de başarıyla bir kaydı bulmak tüm taşıma işlemlerini neden `IsBOF` ve `IsEOF` 0 dönün.
+- Bir kaydı başarıyla bulmayla ilgili tüm taşıma işlemleri, hem `IsBOF` hem de `IsEOF` 0 döndürmesine neden olur.
 
-- Bir `AddNew` çağrısı ve ardından bir `Update` başarıyla yeni bir kayıt ekler çağrı neden olacak `IsBOF` 0, ancak yalnızca döndürülecek `IsEOF` zaten sıfır değil. Durumunu `IsEOF` her zaman değişmeden kalır. Geçerli kayıt sonra yeni bir kayıt eklenir, böylece Microsoft Jet veritabanı altyapısı tarafından tanımlandığı gibi geçerli kayıt boş bir kümesinin bir dosya sonunda işaretçisidir.
+- Yeni bir kaydı başarıyla ekleyen bir `Update` çağrısı tarafından izlenen bir `AddNew` çağrısı, `IsBOF` 0 döndürmesini sağlar ancak yalnızca `IsEOF` sıfır dışında bir değer içeriyorsa. `IsEOF` durumu her zaman değişmeden kalır. Microsoft Jet veritabanı altyapısı tarafından tanımlandığı gibi, boş bir kayıt kümesinin geçerli kayıt işaretçisi dosyanın sonunda bulunur, bu nedenle geçerli kayıttan sonra tüm yeni kayıtlar eklenir.
 
-- Tüm `Delete` çağrısı, bir kayıt kümesinden tek kalan kayıt kaldırır bile değişmeyecek değerini `IsBOF` veya `IsEOF`.
+- Herhangi bir `Delete` çağrısı, bir kayıt kümesinden kalan kaydı kaldırsa bile, `IsBOF` veya `IsEOF`değerini değiştirmez.
 
-Bu tabloda, farklı birleşimlerini ile hangi taşıma işlemlerine izin gösterilmektedir `IsBOF` /  `IsEOF`.
+Bu tablo, `IsBOF`/ `IsEOF`farklı birleşimleriyle hangi taşıma işlemlerine izin verileceğini gösterir.
 
-||MoveFirst MoveLast|MovePrev,<br /><br /> < 0 Taşı|0 Taşı|MoveNext,<br /><br /> > 0 Taşı|
+||MoveFirst, MoveLast|MovePrev<br /><br /> < 0 taşı|0 taşı|Iken<br /><br /> > 0 taşı|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
-|`IsBOF`sıfır olmayan =<br /><br /> `IsEOF`=0|İzin Verildi|Özel Durum|Özel Durum|İzin Verildi|
-|`IsBOF`=0,<br /><br /> `IsEOF`sıfır olmayan =|İzin Verildi|İzin Verildi|Özel Durum|Özel Durum|
-|Her ikisi de sıfır olmayan|Özel Durum|Özel Durum|Özel Durum|Özel Durum|
-|Her iki 0|İzin Verildi|İzin Verildi|İzin Verildi|İzin Verildi|
+|`IsBOF`= sıfır dışında,<br /><br /> `IsEOF`= 0|İzin Verildi|Özel durum|Özel durum|İzin Verildi|
+|`IsBOF`= 0,<br /><br /> `IsEOF`= sıfır dışında|İzin Verildi|İzin Verildi|Özel durum|Özel durum|
+|Sıfır dışında|Özel durum|Özel durum|Özel durum|Özel durum|
+|Her ikisi de 0|İzin Verildi|İzin Verildi|İzin Verildi|İzin Verildi|
 
-Bir taşıma işlemi izin verme işlemi başarıyla bir kaydı bulmak anlamına gelmez. Yalnızca belirtilen taşıma işlemi gerçekleştirme girişimi izin verilir ve bir özel durum oluşturmayacağını belirtir. Değerini `IsBOF` ve `IsEOF` üye işlevleri, denenen taşıma nedeniyle değişebilir.
+Taşıma işlemine izin verilmesi, işlemin başarıyla bir kayıt bulabileceği anlamına gelmez. Yalnızca belirtilen taşıma işlemini gerçekleştirme denemesinin izin verileceğini ve bir özel durum oluşturmadığını gösterir. `IsBOF` ve `IsEOF` member işlevlerinin değeri, denenen taşımanın sonucu olarak değişebilir.
 
-Bir kayıt değeri temel bulundurmayın taşıma işlemlerini etkisini `IsBOF` ve `IsEOF` ayarları aşağıdaki tabloda gösterilmiştir.
+`IsBOF` değerinde bir kayıt bulmayan taşıma işlemlerinin etkisi ve `IsEOF` ayarları aşağıdaki tabloda gösterilmiştir.
 
-||IsBOF|IsEOF|
+||IsBOF|IOF|
 |------|-----------|-----------|
-|`MoveFirst`, `MoveLast`|Sıfır dışında|Sıfır dışında|
+|`MoveFirst`, `MoveLast`|Sıfır olmayan|Sıfır olmayan|
 |`Move` 0|Değişiklik yok|Değişiklik yok|
-|`MovePrev`, `Move` < 0|Sıfır dışında|Değişiklik yok|
-|`MoveNext`, `Move` > 0|Değişiklik yok|Sıfır dışında|
+|`MovePrev`, `Move` < 0|Sıfır olmayan|Değişiklik yok|
+|`MoveNext`, `Move` > 0|Değişiklik yok|Sıfır olmayan|
 
-İlgili bilgi için Ek Yardım konusuna "BOF, EOF özellikleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "BOF, EOF özellikleri" konusuna bakın.
 
-##  <a name="isdeleted"></a>  CDaoRecordset::IsDeleted
+##  <a name="isdeleted"></a>CDaoRecordset:: IsDeleted
 
-Geçerli kaydı silinmiş olup olmadığını belirlemek için bu üye işlevini çağırın.
+Geçerli kaydın silinip silinmediğini öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL IsDeleted() const;
@@ -1528,22 +1528,22 @@ BOOL IsDeleted() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi silinmiş bir kayda konumlandırıldı olursa sıfır dışı; Aksi durumda 0.
+Kayıt kümesi silinmiş bir kayıtta konumlandırılmışsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kayda kaydırırsanız ve `IsDeleted` doğru (sıfırdan farklı) döndürür ve herhangi bir kayıt işlemi gerçekleştirmek için önce başka bir kayıtla kaydırın.
+Bir kayda kayırsanız ve `IsDeleted` TRUE (sıfır dışında) döndürürse, başka bir kayıt kümesi işlemini gerçekleştirebilmek için önce başka bir kayda kaydırmanız gerekir.
 
 > [!NOTE]
->  Anlık görüntü veya tablo türünde bir kayıt kümesindeki kayıtları silinen durumunu denetleyin gerek yoktur. Anlık görüntüden kayıtları silinemiyor çünkü çağırmaya gerek yoktur `IsDeleted`. Tablo türü kayıt kümeleri için silinen kayıtlar gerçekten kayıt kümesinden kaldırılır. Bir kayıt, siz başka bir kullanıcı veya başka bir kayıt kümesi silindikten sonra geri kayda gidemez. Bu nedenle, çağırmaya gerek yoktur `IsDeleted`.
+>  Bir anlık görüntü veya tablo türü kayıt kümesindeki kayıtlar için silinen durumu denetlemeniz gerekmez. Kayıtlar bir anlık görüntüden silinemediğinden `IsDeleted`çağırmanız gerekmez. Tablo türü kayıt kümeleri için, silinen kayıtlar aslında kayıt kümesinden kaldırılır. Siz, başka bir Kullanıcı ya da başka bir kayıt kümesi tarafından bir kayıt silindikten sonra, bu kayda geri kaydıramıyorsunuz. Bu nedenle, `IsDeleted`çağırmanız gerekmez.
 
-Bir dinamik kayıt silme, kayıt kümesinden kaldırılır ve yeniden kayda'e gidin. Ancak, bir kayıtta dinamik küme başka bir kullanıcı tarafından veya başka bir kayıt kümesi aynı tabloya göre silinir `IsDeleted` kayda daha sonra kaydırdığınızda TRUE döndürür.
+Bir kayıt kümesinden bir kaydı sildiğinizde, kayıt kümesinden kaldırılır ve bu kayda geri kaydıramıyorsunuz. Ancak, bir Dynaset içindeki bir kayıt, başka bir kullanıcı tarafından veya aynı tabloyu temel alan başka bir kayıt kümesinde silinirse, daha sonra bu kayda kaydığınızda, `IsDeleted` TRUE döndürür.
 
-İlgili bilgiler için "Delete yöntemi", "LastModified özelliği" ve DAO Yardımı'nda "EditMode özelliği" konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "silme yöntemi", "LastModified özelliği" ve "EditMode özelliği" konularına bakın.
 
-##  <a name="iseof"></a>  CDaoRecordset::IsEOF
+##  <a name="iseof"></a>CDaoRecordset:: IOF
 
-Kayıt kümesi en son kaydını ilerlemiş olup olmadığını öğrenmek için kayda kaydından gezinirken bu üye işlevini çağırın.
+Kayıt kümesinin son kaydını aşıp geçmeyeceğinizi öğrenmek için kayıttan kayda gittiğinden bu üye işlevi çağırın.
 
 ```
 BOOL IsEOF() const;
@@ -1551,49 +1551,49 @@ BOOL IsEOF() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi kayıt içeriyorsa veya en son kaydını kaydırırsanız sıfır; Aksi durumda 0.
+Kayıt kümesi hiçbir kayıt içermiyorsa veya son kaydın ötesine kaydırdıysanız sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıca, çağırabilirsiniz `IsEOF` kayıt herhangi bir kayıt içerip boş olup olmadığını belirlemek için. Çağırdıktan hemen sonra `Open`, kayıt, kayıt bulundurmuyorsa `IsEOF` sıfır döndürür. En az bir kaydına sahip bir kayıt kümesi açtığınızda, geçerli kaydın ilk kaydıdır ve `IsEOF` 0 döndürür.
+Ayrıca, kayıt kümesinin herhangi bir kayıt içerip içermediğini veya boş olduğunu anlamak için `IsEOF` çağırabilirsiniz. `Open`çağırdıktan hemen sonra, kayıt kümesi hiçbir kayıt içermiyorsa, `IsEOF` sıfır dışında bir değer döndürür. En az bir kaydı olan bir kayıt kümesini açtığınızda, ilk kayıt geçerli kayıttır ve `IsEOF` 0 döndürür.
 
-Son kayda çağırdığınızda geçerli kayıt olup olmadığını `MoveNext`, `IsEOF` sonradan sıfır döndürür. Varsa `IsEOF` sıfır döndürür ve çağrı `MoveNext`, bir özel durum oluşturulur. Varsa `IsEOF` sıfır döndürür, geçerli kayıt tanımsız olur ve geçerli bir kayıt gerektiren herhangi bir işlem, bir özel durumu oluşur.
+`MoveNext`çağırdığınızda son kayıt geçerli kayıt ise, `IsEOF` daha sonra sıfır dışında bir değer döndürür. `IsEOF` sıfır dışında bir değer döndürürse ve `MoveNext`çağırırsanız, bir özel durum oluşturulur. `IsEOF` sıfır dışında bir değer döndürürse, geçerli kayıt tanımsızdır ve geçerli bir kayıt gerektiren herhangi bir eylem, özel durum oluşmasına neden olur.
 
-Üzerinde belirli yöntemler etkisi `IsBOF` ve `IsEOF` ayarları:
+`IsBOF` ve `IsEOF` ayarlarındaki belirli yöntemlerin etkisi:
 
-- Çağırma `Open` dahili olarak ilk kaydı kayıt kümesindeki geçerli kayıt çağırarak yapar `MoveFirst`. Bu nedenle, çağırma `Open` kayıtları neden bir boş dizi `IsBOF` ve `IsEOF` sıfır döndürülecek. (Başarısız davranışı için aşağıdaki tabloya bakın `MoveFirst` arayın.)
+- `Open` çağırarak, `MoveFirst`çağırarak kayıt kümesindeki ilk kaydı geçerli kayıt yapar. Bu nedenle, boş bir kayıt kümesinde `Open` çağırmak `IsBOF` ve `IsEOF` sıfır dışında dönüşmesine neden olur. (Başarısız `MoveFirst` çağrısının davranışı için aşağıdaki tabloya bakın.)
 
-- Her ikisi de başarıyla bir kaydı bulmak tüm taşıma işlemlerini neden `IsBOF` ve `IsEOF` 0 dönün.
+- Bir kaydı başarıyla bulmayla ilgili tüm taşıma işlemleri, hem `IsBOF` hem de `IsEOF` 0 döndürmesine neden olur.
 
-- Bir `AddNew` çağrısı ve ardından bir `Update` başarıyla yeni bir kayıt ekler çağrı neden olacak `IsBOF` 0, ancak yalnızca döndürülecek `IsEOF` zaten sıfır değil. Durumunu `IsEOF` her zaman değişmeden kalır. Geçerli kayıt sonra yeni bir kayıt eklenir, böylece Microsoft Jet veritabanı altyapısı tarafından tanımlandığı gibi geçerli kayıt boş bir kümesinin bir dosya sonunda işaretçisidir.
+- Yeni bir kaydı başarıyla ekleyen bir `Update` çağrısı tarafından izlenen bir `AddNew` çağrısı, `IsBOF` 0 döndürmesini sağlar ancak yalnızca `IsEOF` sıfır dışında bir değer içeriyorsa. `IsEOF` durumu her zaman değişmeden kalır. Microsoft Jet veritabanı altyapısı tarafından tanımlandığı gibi, boş bir kayıt kümesinin geçerli kayıt işaretçisi dosyanın sonunda bulunur, bu nedenle geçerli kayıttan sonra tüm yeni kayıtlar eklenir.
 
-- Tüm `Delete` çağrısı, bir kayıt kümesinden tek kalan kayıt kaldırır bile değişmeyecek değerini `IsBOF` veya `IsEOF`.
+- Herhangi bir `Delete` çağrısı, bir kayıt kümesinden kalan kaydı kaldırsa bile, `IsBOF` veya `IsEOF`değerini değiştirmez.
 
-Bu tabloda, farklı birleşimlerini ile hangi taşıma işlemlerine izin gösterilmektedir `IsBOF` /  `IsEOF`.
+Bu tablo, `IsBOF`/ `IsEOF`farklı birleşimleriyle hangi taşıma işlemlerine izin verileceğini gösterir.
 
-||MoveFirst MoveLast|MovePrev,<br /><br /> < 0 Taşı|0 Taşı|MoveNext,<br /><br /> > 0 Taşı|
+||MoveFirst, MoveLast|MovePrev<br /><br /> < 0 taşı|0 taşı|Iken<br /><br /> > 0 taşı|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
-|`IsBOF`sıfır olmayan =<br /><br /> `IsEOF`=0|İzin Verildi|Özel Durum|Özel Durum|İzin Verildi|
-|`IsBOF`=0,<br /><br /> `IsEOF`sıfır olmayan =|İzin Verildi|İzin Verildi|Özel Durum|Özel Durum|
-|Her ikisi de sıfır olmayan|Özel Durum|Özel Durum|Özel Durum|Özel Durum|
-|Her iki 0|İzin Verildi|İzin Verildi|İzin Verildi|İzin Verildi|
+|`IsBOF`= sıfır dışında,<br /><br /> `IsEOF`= 0|İzin Verildi|Özel durum|Özel durum|İzin Verildi|
+|`IsBOF`= 0,<br /><br /> `IsEOF`= sıfır dışında|İzin Verildi|İzin Verildi|Özel durum|Özel durum|
+|Sıfır dışında|Özel durum|Özel durum|Özel durum|Özel durum|
+|Her ikisi de 0|İzin Verildi|İzin Verildi|İzin Verildi|İzin Verildi|
 
-Bir taşıma işlemi izin verme işlemi başarıyla bir kaydı bulmak anlamına gelmez. Yalnızca belirtilen taşıma işlemi gerçekleştirme girişimi izin verilir ve bir özel durum oluşturmayacağını belirtir. Değerini `IsBOF` ve `IsEOF` üye işlevleri, denenen taşıma nedeniyle değişebilir.
+Taşıma işlemine izin verilmesi, işlemin başarıyla bir kayıt bulabileceği anlamına gelmez. Yalnızca belirtilen taşıma işlemini gerçekleştirme denemesinin izin verileceğini ve bir özel durum oluşturmadığını gösterir. `IsBOF` ve `IsEOF` member işlevlerinin değeri, denenen taşımanın sonucu olarak değişebilir.
 
-Bir kayıt değeri temel bulundurmayın taşıma işlemlerini etkisini `IsBOF` ve `IsEOF` ayarları aşağıdaki tabloda gösterilmiştir.
+`IsBOF` değerinde bir kayıt bulmayan taşıma işlemlerinin etkisi ve `IsEOF` ayarları aşağıdaki tabloda gösterilmiştir.
 
-||IsBOF|IsEOF|
+||IsBOF|IOF|
 |------|-----------|-----------|
-|`MoveFirst`, `MoveLast`|Sıfır dışında|Sıfır dışında|
+|`MoveFirst`, `MoveLast`|Sıfır olmayan|Sıfır olmayan|
 |`Move` 0|Değişiklik yok|Değişiklik yok|
-|`MovePrev`, `Move` < 0|Sıfır dışında|Değişiklik yok|
-|`MoveNext`, `Move` > 0|Değişiklik yok|Sıfır dışında|
+|`MovePrev`, `Move` < 0|Sıfır olmayan|Değişiklik yok|
+|`MoveNext`, `Move` > 0|Değişiklik yok|Sıfır olmayan|
 
-İlgili bilgi için Ek Yardım konusuna "BOF, EOF özellikleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "BOF, EOF özellikleri" konusuna bakın.
 
-##  <a name="isfielddirty"></a>  CDaoRecordset::IsFieldDirty
+##  <a name="isfielddirty"></a>CDaoRecordset:: IsFieldDirty
 
-Bir dinamik belirtilen alan veri üyesi "kirli" işaretlenmiş durumda olup olmadığını belirlemek için (değiştirilmiş) Bu üye işlevini çağırın.
+Bir Dynaset 'in belirtilen alan verisi üyesinin "kirli" (değiştirildi) olarak işaretlenip işaretlenmediğini öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL IsFieldDirty(void* pv);
@@ -1601,22 +1601,22 @@ BOOL IsFieldDirty(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Durumu denetlemek veya herhangi bir alanı olumsuz olup olmadığını belirlemek için boş istediğiniz alanın veri üyesi için bir işaretçi.
+*bakın*<br/>
+Durumu denetlemek istediğiniz alan verisi üyesine yönelik bir işaretçi veya alanlardan birinin kirli olup olmadığını belirleme NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen alan veri üyesi kirli olarak işaretlenmiş olursa sıfır dışı; Aksi durumda 0.
+Belirtilen alan verisi üyesi kirli olarak işaretlense sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapılan bir çağrıyla geçerli kayıt güncelleştirildiğinde tüm kirli alan veri üyeleri verileri kaydı veri kaynağında aktarılır `Update` üye işlevinin `CDaoRecordset` (çağrıyı izleyen `Edit` veya `AddNew`). Bu bilgiyle başka adımlar gibi uygulayabileceğiniz unflagging sütunu için veri kaynağına yazılmayacak işaretlemek için alan veri üyesi.
+Geçerli kayıt, `CDaoRecordset` `Update` üye işlevine yapılan bir çağrı (`Edit` veya `AddNew`bir çağrıdan sonra) tarafından güncelleştirildiği zaman, tüm kirli alan verileri üyelerinde veri kaynağındaki kayda aktarılır. Bu bilgi ile, alanı veri kaynağına yazılmayacak şekilde işaretlemek için alan veri üyesinin işaretini kaldırma gibi daha fazla adım alabilirsiniz.
 
-`IsFieldDirty` aracılığıyla uygulanır `DoFieldExchange`.
+`IsFieldDirty`, `DoFieldExchange`ile uygulanır.
 
-##  <a name="isfieldnull"></a>  CDaoRecordset::IsFieldNull
+##  <a name="isfieldnull"></a>CDaoRecordset:: IsFieldNull
 
-Bir kayıt kümesi belirtilen alan veri üyesi Null olarak işaretlenmiş durumda olup olmadığını belirlemek için bu üye işlevini çağırın.
+Bir kayıt kümesinin belirtilen alan verisi üyesinin null olarak işaretlenip işaretlenmediğini öğrenmek için bu üye işlevini çağırın.
 
 ```
 BOOL IsFieldNull(void* pv);
@@ -1624,28 +1624,28 @@ BOOL IsFieldNull(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Durumu denetlemek veya tüm alanları boş olup olmadığını belirlemek için boş istediğiniz alanın veri üyesi için bir işaretçi.
+*bakın*<br/>
+Durumu denetlemek istediğiniz alan verisi üyesine yönelik bir işaretçi veya alanlardan birinin null olup olmadığını belirleme NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen alan veri üyesi Null olarak işaretlenen olursa sıfır dışı; Aksi durumda 0.
+Belirtilen alan verisi üyesi null olarak işaretlense sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Veritabanı terminolojisinde Null "değer olan" anlamına gelir ve C++'ta NULL ile aynı değildir.) Alan veri üyesi Null olarak işaretlenmişse, kendisi için bir değer yoktur geçerli kaydın bir sütun olarak yorumlanır.
+(Veritabanı terimlerinde null "değer yok" anlamına gelir ve içinde C++null ile aynı değildir.) Bir alan veri üyesine null olarak bayrak eklenmiş ise, geçerli kaydın değeri olmayan bir sütun olarak yorumlanır.
 
 > [!NOTE]
->  Bazı durumlarda, kullanarak `IsFieldNull` aşağıdaki kod örneğinde gösterildiği gibi verimsiz olabilir:
+>  Bazı durumlarda, aşağıdaki kod örneğinde gösterildiği gibi `IsFieldNull` kullanımı verimsiz olabilir:
 
 [!code-cpp[NVC_MFCDatabase#5](../../mfc/codesnippet/cpp/cdaorecordset-class_5.cpp)]
 
 > [!NOTE]
->  Öğesinden türetme olmadan dinamik kayıt bağlama kullanıyorsanız `CDaoRecordset`, örnekte gösterildiği gibi VT_NULL kullandığınızdan emin olun.
+>  `CDaoRecordset`türetmeden dinamik kayıt bağlama kullanıyorsanız, örnekte gösterildiği gibi VT_NULL kullandığınızdan emin olun.
 
-##  <a name="isfieldnullable"></a>  CDaoRecordset::IsFieldNullable
+##  <a name="isfieldnullable"></a>CDaoRecordset:: Isfieldnullenebilir
 
-Belirtilen alan veri üyesi "NULL" olup olmadığını belirlemek için (bir Null değer; olabilir, bu üye işlevini çağırın C++ NULL değil diğer bir deyişle, Veritabanı terminolojisinde, Null, aynı "değeri olan").
+Belirtilen alan verisi üyesinin "Nullable" olup olmadığını ve null değere ayarlanamayacağını öğrenmek için bu üye işlevi çağırın; C++ Null, Veritabanı terminolojisinde "hiçbir değer yok" anlamına gelen null ile aynı değildir.
 
 ```
 BOOL IsFieldNullable(void* pv);
@@ -1653,20 +1653,20 @@ BOOL IsFieldNullable(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Durumu denetlemek veya tüm alanları boş olup olmadığını belirlemek için boş istediğiniz alanın veri üyesi için bir işaretçi.
+*bakın*<br/>
+Durumu denetlemek istediğiniz alan verisi üyesine yönelik bir işaretçi veya alanlardan birinin null olup olmadığını belirleme NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen alan veri üyesi Null yapılabilir olursa sıfır dışı; Aksi durumda 0.
+Belirtilen alan verisi üyesi null yapılırsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alan boş olamaz, bir değere sahip olmalıdır. Böyle bir alan ekleme veya bir kayıt güncelleştirirken Null olarak ayarlamak çalışırsanız, veri kaynağı ekleme veya güncelleştirme, reddeder ve `Update` bir özel durum oluşturur. Çağırdığınızda özel durum oluşur `Update`, arama yaparken `SetFieldNull`.
+Null olmayan bir alan bir değere sahip olmalıdır. Bir kaydı eklerken veya güncelleştirirken bu tür bir alanı null olarak ayarlamaya çalışırsanız, veri kaynağı ekleme veya güncelleştirmeyi reddeder ve `Update` bir özel durum oluşturur. Özel durum, `SetFieldNull`çağırdığınızda değil `Update`çağırdığınızda oluşur.
 
-##  <a name="isopen"></a>  CDaoRecordset::IsOpen
+##  <a name="isopen"></a>CDaoRecordset:: IsOpen
 
-Kayıt kümesi açık olup olmadığını belirlemek için bu üye işlevini çağırın.
+Kayıt kümesinin açık olup olmadığını anlamak için bu üye işlevini çağırın.
 
 ```
 BOOL IsOpen() const;
@@ -1674,101 +1674,101 @@ BOOL IsOpen() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ancak kayıt kümesi nesnesinin `Open` veya `Requery` üye işlev önceden çağrıldıktan ve kayıt kapalı değil; Aksi durumda 0.
+Kayıt kümesi nesnesinin `Open` veya `Requery` member işlevi daha önce çağrılırsa ve kayıt kümesi kapanmamış ise sıfır dışı. Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_bcheckcachefordirtyfields"></a>  CDaoRecordset::m_bCheckCacheForDirtyFields
+##  <a name="m_bcheckcachefordirtyfields"></a>CDaoRecordset:: m_bCheckCacheForDirtyFields
 
-Önbelleğe alınan alanları otomatik olarak kirli olarak (değiştirilmiş) işaretlenmiş olup olmadığını belirten bir bayrak içerir ve Null.
-
-### <a name="remarks"></a>Açıklamalar
-
-Bayrak varsayılan olarak true'dur. Bu veri üyesi ayarı tüm iki kez arabelleğe alma mekanizması denetler. Bayrağı TRUE olarak ayarlarsanız, DFX mekanizması kullanılarak bir alanlar tarafından temelinde önbelleğe almayı devre dışı kapatabilirsiniz. Bayrağı FALSE olarak ayarlarsanız, çağırmalıdır `SetFieldDirty` ve `SetFieldNull` kendiniz.
-
-Çağırmadan önce bu veri kümesi `Open`. Öncelikle kolay kullanım için mekanizmadır. Performans değişiklikler yapıldıkça iki kez arabelleğe alma nedeniyle alanlarının yavaşlayabilir.
-
-##  <a name="m_nfields"></a>  CDaoRecordset::m_nFields
-
-Alan veri üyeleri kayıt kümesi sınıfında sayısı ve kayıt veri kaynağından seçili sütun sayısını içerir.
+Önbelleğe alınmış alanların otomatik olarak kirli (değiştirilmiş) ve null olarak işaretlenip işaretlenmeyeceğini belirten bir bayrak içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi sınıfı için oluşturucu başlatmalıdır `m_nFields` statik olarak bağlı alanlarının doğru sayısı ile. Kayıt kümesi sınıfı bildirmek için kullandığınızda, bu başlatma ClassWizard yazar. Ayrıca, el ile yazabilirsiniz.
+Bayrak varsayılan olarak TRUE değerini alır. Bu veri üyesinde ayarı, tüm çift arabelleğe alma mekanizmasını denetler. Bayrağını TRUE olarak ayarlarsanız, DFX mekanizmayı kullanarak alan temelinde önbelleğe alma işlemini kapatabilirsiniz. Bayrağını FALSE olarak ayarlarsanız, `SetFieldDirty` ve `SetFieldNull` çağırmanız gerekir.
 
-Framework, alan veri üyeleri geçerli kaydın veri kaynağında karşılık gelen sütunlara arasındaki etkileşimi yönetmek için bu sayıyı kullanır.
+`Open`çağrılmadan önce bu veri üyesini ayarlayın. Bu mekanizma öncelikli olarak kullanım kolaylığı içindir. Değişiklikler yapıldığından alanların çift arabelleğe alınması nedeniyle performans daha yavaş olabilir.
+
+##  <a name="m_nfields"></a>CDaoRecordset:: m_nFields
+
+Kayıt kümesi sınıfındaki alan veri üyelerinin sayısını ve veri kaynağından kayıt kümesi tarafından seçilen sütun sayısını içerir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kayıt kümesi sınıfına yönelik oluşturucunun doğru sayıda statik olarak ilişkili alan `m_nFields` başlatması gerekir. ClassWizard, kayıt kümesi sınıfınızı bildirmek için kullandığınızda bu başlatmayı sizin için yazar. Ayrıca, el ile de yazabilirsiniz.
+
+Framework, alan veri üyeleri ile veri kaynağındaki geçerli kaydın ilgili sütunları arasındaki etkileşimi yönetmek için bu numarayı kullanır.
 
 > [!NOTE]
->  Bu sayı kayıtlı çıkış sütunu sayısı karşılık gelmelidir `DoFieldExchange` çağrısı yapıldıktan sonra `SetFieldType` parametresiyle `CDaoFieldExchange::outputColumn`.
+>  Bu sayı, `CDaoFieldExchange::outputColumn`parametresiyle `SetFieldType` çağrısından sonra `DoFieldExchange` kayıtlı olan çıktı sütunlarının sayısına karşılık gelmelidir.
 
-Sütunları dinamik olarak tarafından yolu bağlayabilirsiniz `CDaoRecordset::GetFieldValue` ve `CDaoRecordset::SetFieldValue`. Bunu yaparsanız, sayısı artırılamıyor gerekmez `m_nFields` DFX işlevi sayısını çağrıları yansıtacak şekilde, `DoFieldExchange` üye işlevi.
+Sütunları `CDaoRecordset::GetFieldValue` ve `CDaoRecordset::SetFieldValue`şekilde dinamik olarak bağlayabilirsiniz. Bunu yaparsanız, `DoFieldExchange` üye işlevinizdeki DFX işlev çağrılarının sayısını yansıtmak için `m_nFields` sayısını artırmanız gerekmez.
 
-##  <a name="m_nparams"></a>  CDaoRecordset::m_nParams
+##  <a name="m_nparams"></a>CDaoRecordset:: m_nParams
 
-Kayıt kümesi sınıfı parametre veri üyeleri sayısını içerir — parametrelerin sayısı geçirilen kümesinin sorgu.
+Kayıt kümesi sınıfındaki parametre veri üyelerinin sayısını içerir — kayıt kümesi sorgusuyla geçilen parametre sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi sınıfınızın herhangi bir parametre veri üyesi varsa, sınıfın oluşturucusunda başlatmanız gerekir *m_nParams* doğru numarasına sahip. Değerini *m_nParams* varsayılan ayar: 0. Parametre veri üyeleri eklerseniz — hangi el ile yapmanız gerekir — parametre sayısını yansıtacak şekilde sınıfı oluşturucusunda bir başlatma el ile eklemelisiniz (en az sayıda kadar büyük olması gereken '' içindeki yer tutucuları, *m_strFilter*  veya *m_strSort* dize).
+Kayıt kümesi sınıfınızın herhangi bir parametre veri üyesi varsa, sınıfın oluşturucusunun doğru sayıyla *m_nParams* başlatması gerekir. *M_nParams* değeri varsayılan olarak 0 ' dır. El ile yapmanız gereken parametre veri üyelerini eklerseniz, parametre sayısını yansıtmak için sınıf oluşturucusunda bir başlatma da eklemeniz gerekir (Bu, en azından *m_strFilter* veya *m_strSort* dizesindeki ' ' yer tutucuları sayısı kadar büyük olmalıdır).
 
-Framework kümesinin sorgu parametreleştiren bu sayıyı kullanır.
+Çerçeve, kayıt kümesinin sorgusunu parametrelendirtiğinde bu numarayı kullanır.
 
 > [!NOTE]
->  Bu sayı "kaydedilmiş params" sayısına karşılık gelmelidir `DoFieldExchange` çağrısı yapıldıktan sonra `SetFieldType` parametresiyle `CFieldExchange::param`.
+>  Bu sayı, `CFieldExchange::param`parametresiyle `SetFieldType` çağrısından sonra `DoFieldExchange` kayıtlı olan "params" sayısına karşılık gelmelidir.
 
-İlgili bilgiler için DAO Yardımı'nda "parametresi nesne" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "parametre nesnesi" konusuna bakın.
 
-##  <a name="m_pdaorecordset"></a>  CDaoRecordset::m_pDAORecordset
+##  <a name="m_pdaorecordset"></a>CDaoRecordset:: m_pDAORecordset
 
-DAO kayıt kümesi nesnesi temel OLE arabirimi için bir işaretçi içeren `CDaoRecordset` nesne.
-
-### <a name="remarks"></a>Açıklamalar
-
-DAO arabirimi doğrudan erişim gerekiyorsa, bu işaretçi kullanın.
-
-İlgili bilgiler için DAO Yardımı'nda "kayıt kümesi nesnesi" konusuna bakın.
-
-##  <a name="m_pdatabase"></a>  CDaoRecordset::m_pDatabase
-
-Bir işaretçi içeren `CDaoDatabase` üzerinden kayıt bir veri kaynağına bağlıysa nesne.
+`CDaoRecordset` nesnesini temel alan DAO Kayıt kümesi nesnesi için OLE arabirimine yönelik bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değişken, iki şekilde ayarlanır. Genellikle, bir işaretçi bir zaten açık geçirdiğiniz `CDaoDatabase` kayıt kümesi nesnesi oluştururken nesne. Bunun yerine, NULL geçirirseniz `CDaoRecordset` oluşturur bir `CDaoDatabase` nesnesi ve onu açar. Her iki durumda da `CDaoRecordset` işaretçiyi bu değişkeninde depolar.
+DAO arabirimine doğrudan erişmeniz gerekiyorsa bu işaretçiyi kullanın.
 
-Normalde, doğrudan depolanmış işaretçiyi kullanın gerekmez `m_pDatabase`. Kendi uzantılarınızı yazarsanız `CDaoRecordset`, ancak işaretçi kullanmanız gerekebilir. Durum, örneğin, işaretçiyi kendi ihtiyacınız olabilecek `CDaoException`(s).
+İlgili bilgiler için, DAO yardımı 'nda "kayıt kümesi nesnesi" konusuna bakın.
 
-İlgili bilgiler için DAO Yardımı'nda "veritabanı nesnesi" konusuna bakın.
+##  <a name="m_pdatabase"></a>CDaoRecordset:: m_pDatabase
 
-##  <a name="m_strfilter"></a>  CDaoRecordset::m_strFilter
-
-Oluşturmak için kullanılan bir dize içeren **nerede** SQL deyiminin yan tümcesi.
+Kayıt kümesinin bir veri kaynağına bağlı olduğu `CDaoDatabase` nesnesine yönelik bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılmış bir sözcük içermez **burada** kayıt kümesini filtrelemek için. Bu veri üyesi kullanımını tablo türü kayıt kümeleri için geçerli değildir. Kullanımını `m_strFilter` kullanarak bir kayıt kümesi açılırken etkisizdir bir `CDaoQueryDef` işaretçi.
+Bu değişken iki şekilde ayarlanır. Genellikle, kayıt kümesi nesnesini oluştururken zaten açık olan bir `CDaoDatabase` nesnesine bir işaretçi geçirirsiniz. Bunun yerine NULL geçirirseniz `CDaoRecordset`, sizin için bir `CDaoDatabase` nesnesi oluşturur ve açar. Her iki durumda da, `CDaoRecordset` işaretçiyi Bu değişkende depolar.
 
-(Ay gün yıl) ABD tarih biçimini kullanın; Microsoft Jet Veritabanı Altyapısı'nın ABD sürümü kullanmıyorsanız bile tarihleri içeren alanlar filtre beklediğiniz gibi Aksi halde veriler filtrelenebilir değil.
+Normalde, `m_pDatabase`' de depolanan işaretçiyi doğrudan kullanmanız gerekmez. `CDaoRecordset`için kendi uzantılarınızı yazarsanız, işaretçiyi kullanmanız gerekebilir. Örneğin, kendi `CDaoException`belirtirseniz işaretçiye gerek duyabilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'nda "filtre özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "veritabanı nesnesi" konusuna bakın.
 
-##  <a name="m_strsort"></a>  CDaoRecordset::m_strSort
+##  <a name="m_strfilter"></a>CDaoRecordset:: m_strFilter
 
-İçeren bir dize içeren **ORDERBY** ayrılmış sözcükler olmadan SQL deyiminin yan tümcesinde **ORDERBY**.
+Bir SQL ifadesinin **WHERE** yan tümcesini oluşturmak için kullanılan bir dize içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dinamik ve anlık görüntü türü kayıt nesneler üzerinde sıralayabilirsiniz.
+Kayıt kümesine filtre uygulanacak **olan** ayrılmış kelimeyi içermez. Bu veri üyesinin kullanımı tablo türü kayıt kümeleri için geçerli değildir. `m_strFilter` kullanımı, bir `CDaoQueryDef` işaretçisi kullanarak bir kayıt kümesi açılırken hiçbir etkiye sahip değildir.
 
-Tablo türündeki kayıt kümesi nesneler sıralanamaz. Bir tablo türü kümesinin sıralama düzeni belirlemek için çağrı [SetCurrentIndex](#setcurrentindex).
+Microsoft Jet veritabanı altyapısının ABD sürümünü kullanmıyor olsanız bile tarihleri içeren alanları filtreleyerek ABD tarih biçimini kullanın (ay-gün-yıl). Aksi takdirde, veriler beklenen şekilde filtrelenmemiş olabilir.
 
-Kullanımını *m_strSort* kullanarak bir kayıt kümesi açılırken etkisizdir bir `CDaoQueryDef` işaretçi.
+İlgili bilgiler için, DAO yardımı 'nda "filtre özelliği" konusuna bakın.
 
-İlgili bilgiler için DAO Yardımı'nda "sıralama özelliği" konusuna bakın.
+##  <a name="m_strsort"></a>CDaoRecordset:: m_strSort
 
-##  <a name="move"></a>  CDaoRecordset::Move
+Ayrılmış kelimeleri **OrderBy**olmayan bir SQL deyimi **OrderBy** yan tümcesini içeren bir dize içerir.
 
-Kayıt kümesi yerleştirmek için bu üye işlevi çağrısı *lRows* geçerli kayıt kayıtları.
+### <a name="remarks"></a>Açıklamalar
+
+DYNASET ve anlık görüntü türü kayıt kümesi nesnelerinde sıralama yapabilirsiniz.
+
+Tablo türü kayıt kümesi nesnelerini sıralayamazsınız. Tablo türü bir kayıt kümesinin sıralama düzenini öğrenmek için [SetCurrentIndex](#setcurrentindex)' i çağırın.
+
+*M_strSort* kullanımı, bir `CDaoQueryDef` işaretçisi kullanarak bir kayıt kümesi açılırken hiçbir etkiye sahip değildir.
+
+İlgili bilgiler için, DAO yardımı 'nda "sıralama özelliği" konusuna bakın.
+
+##  <a name="move"></a>CDaoRecordset:: Move
+
+Kayıt kümesi *lRows* kayıtlarını geçerli kayıttan konumlandırmak için bu üye işlevini çağırın.
 
 ```
 virtual void Move(long lRows);
@@ -1777,30 +1777,30 @@ virtual void Move(long lRows);
 ### <a name="parameters"></a>Parametreler
 
 *lRows*<br/>
-İleriye veya geriye doğru gitme kayıt sayısı. Pozitif değerlere, kayıt kümesinin sonuna doğru ileriye taşıyın. Negatif değerler başına doğru geriye doğru taşıyın.
+İleri veya geri taşınacak kayıt sayısı. Pozitif değerler, kayıt kümesinin sonuna doğru ileri doğru taşınır. Negatif değerler geriye doğru, başlangıca taşınır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleriye veya geriye doğru bir şekilde taşıyabilirsiniz. `Move( 1 )` eşdeğerdir `MoveNext`, ve `Move( -1 )` eşdeğerdir `MovePrev`.
+İleri veya geri gidebilirsiniz. `Move( 1 )` `MoveNext`eşdeğerdir ve `Move( -1 )` `MovePrev`eşdeğerdir.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Genel olarak, her ikisi de arama `IsBOF` ve `IsEOF` kayıt herhangi bir kayıt olup olmadığını belirlemek için bir taşıma işleminden önce. Çağırdıktan sonra `Open` veya `Requery`, çağırın ya da `IsBOF` veya `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Genel olarak, kayıt kümesinde herhangi bir kayıt olup olmadığını anlamak için bir taşıma işleminden önce hem `IsBOF` hem de `IsEOF` çağırın. `Open` veya `Requery`çağırdıktan sonra, `IsBOF` ya da `IsEOF`çağırın.
 
 > [!NOTE]
->  Başta veya sonda kümesinin kaydırılan varsa ( `IsBOF` veya `IsEOF` sıfır döndürür), bir çağrı `Move` oluşturur bir `CDaoException`.
+>  Kayıt kümesinin başlangıcını veya sonunu (`IsBOF` veya `IsEOF` sıfır dışında bir değer döndürür) daha önce kaydırdıysanız, bir `Move` çağrısı `CDaoException`oluşturur.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Çağırdığınızda `Move` yalnızca iletme kaydırma anlık üzerinde *lRows* parametresi pozitif bir tamsayı olmalıdır ve yer işaretleri izin verilmez, böylece ileriye yalnızca taşıyabilirsiniz.
+Yalnızca ileri yönlü bir kayan görüntüde `Move` çağırdığınızda, *lRows* parametresi pozitif bir tamsayı olmalıdır ve yer işaretlerine yalnızca ileri taşıyabilirsiniz.
 
-İlk, son yapmak için sonraki veya önceki bir kayıt kümesindeki geçerli kayıt, çağrı kayıt `MoveFirst`, `MoveLast`, `MoveNext`, veya `MovePrev` üye işlevi.
+Geçerli kayıt bir kayıt kümesinde ilk, son, sonraki veya önceki kaydı yapmak için `MoveFirst`, `MoveLast`, `MoveNext`veya `MovePrev` member işlevini çağırın.
 
-İlgili bilgiler için "Taşıma yöntemi" konularına bakın ve "MoveFirst, MoveLast MoveNext, MovePrevious Yöntemleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "taşıma yöntemi" ve "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" konularına bakın.
 
-##  <a name="movefirst"></a>  CDaoRecordset::MoveFirst
+##  <a name="movefirst"></a>CDaoRecordset:: MoveFirst
 
-İlk kayıt kümenize (varsa) yapmak için bu üye işlev çağrısı geçerli kayıt.
+Kayıt kümesindeki (varsa) ilk kaydı geçerli kayıt yapmak için bu üye işlevi çağırın.
 
 ```
 void MoveFirst();
@@ -1808,29 +1808,29 @@ void MoveFirst();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı gerekmez `MoveFirst` kayıt açıldıktan hemen sonra. O anda (varsa) ilk kaydı otomatik olarak geçerli kaydı olur.
+Kayıt kümesini açtıktan hemen sonra `MoveFirst` çağırmanız gerekmez. Bu sırada, ilk kayıt (varsa) otomatik olarak geçerli kayıt olur.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Genel olarak, her ikisi de arama `IsBOF` ve `IsEOF` kayıt herhangi bir kayıt olup olmadığını belirlemek için bir taşıma işleminden önce. Çağırdıktan sonra `Open` veya `Requery`, çağırın ya da `IsBOF` veya `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Genel olarak, kayıt kümesinde herhangi bir kayıt olup olmadığını anlamak için bir taşıma işleminden önce hem `IsBOF` hem de `IsEOF` çağırın. `Open` veya `Requery`çağırdıktan sonra, `IsBOF` ya da `IsEOF`çağırın.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kullanım `Move` bir koşul uygulamadan kayıttan diğerine taşımak için işlevleri. Bir dinamik tür ya da belirli bir koşulu karşılayan anlık görüntü türü kayıt kümesi nesnesi kayıtları bulmak için bulma işlemi kullanın. Bir tablo türü kayıt kümesi nesnesi bir kaydı bulmak için arama `Seek`.
+Bir koşul uygulamadan kayıttan kayda geçmek için `Move` işlevlerini kullanın. Belirli bir koşulu karşılayan bir değişken tür veya anlık görüntü türü kayıt kümesi nesnesinde kayıtları bulmak için bulma işlemlerini kullanın. Tablo türü bir kayıt kümesi nesnesinde bir kaydı bulmak için `Seek`çağırın.
 
-Kayıt kümesi için bir tablo türü kayıt başvuruyorsa, taşıma tablonun geçerli dizin izler. Geçerli dizin, dizin özelliğini DAO nesnesini kullanarak ayarlayabilirsiniz. Geçerli dizin ayarlamazsanız, döndürülen kayıtları sıralamasını tanımsızdır.
+Kayıt kümesi tablo türü bir kayıt kümesine başvuruyorsa, hareket tablonun geçerli dizinini izler. Geçerli dizini, temel alınan DAO nesnesinin Index özelliğini kullanarak ayarlayabilirsiniz. Geçerli dizini ayarlanmamışsa döndürülen kayıtların sırası tanımsızdır.
 
-Eğer `MoveLast` bir SQL sorgusu veya querydef göre bir kayıt kümesi nesnesi üzerinde sorgu tamamlanana kadar zorlanır ve kayıt kümesi nesnesi tam olarak doldurulur.
+Bir SQL sorgusunu veya QueryDef 'i temel alan bir kayıt kümesi nesnesinde `MoveLast` çağırırsanız, sorgu tamamlamaya zorlanır ve kayıt kümesi nesnesi tamamen doldurulur.
 
-Çağıramazsınız `MoveFirst` veya `MovePrev` yalnızca iletme kayan bir anlık görüntüyle üye işlevi.
+`MoveFirst` veya `MovePrev` üye işlevini yalnızca ileriye doğru bir kayan görüntüyle çağıramezsiniz.
 
-Geçerli konumu bir kayıt kümesi nesnesi sayısı kayıtlarını İleri veya geri belirli bir kayıt taşımak için çağrı `Move`.
+Kayıt kümesi nesnesindeki geçerli kaydın konumunu belirli bir kayıt veya geriye doğru bir şekilde taşımak için `Move`çağırın.
 
-İlgili bilgiler için "Taşıma yöntemi" konularına bakın ve "MoveFirst, MoveLast MoveNext, MovePrevious Yöntemleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "taşıma yöntemi" ve "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" konularına bakın.
 
-##  <a name="movelast"></a>  CDaoRecordset::MoveLast
+##  <a name="movelast"></a>CDaoRecordset:: MoveLast
 
-Geçerli kayıt kümenize (varsa) en son kaydını yapmak için bu üye işlevini çağırın.
+Geçerli kaydın kayıt kümesindeki son kaydı (varsa) yapmak için bu üye işlevi çağırın.
 
 ```
 void MoveLast();
@@ -1839,24 +1839,24 @@ void MoveLast();
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Genel olarak, her ikisi de arama `IsBOF` ve `IsEOF` kayıt herhangi bir kayıt olup olmadığını belirlemek için bir taşıma işleminden önce. Çağırdıktan sonra `Open` veya `Requery`, çağırın ya da `IsBOF` veya `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Genel olarak, kayıt kümesinde herhangi bir kayıt olup olmadığını anlamak için bir taşıma işleminden önce hem `IsBOF` hem de `IsEOF` çağırın. `Open` veya `Requery`çağırdıktan sonra, `IsBOF` ya da `IsEOF`çağırın.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kullanım `Move` bir koşul uygulamadan kayıttan diğerine taşımak için işlevleri. Bir dinamik tür ya da belirli bir koşulu karşılayan anlık görüntü türü kayıt kümesi nesnesi kayıtları bulmak için bulma işlemi kullanın. Bir tablo türü kayıt kümesi nesnesi bir kaydı bulmak için arama `Seek`.
+Bir koşul uygulamadan kayıttan kayda geçmek için `Move` işlevlerini kullanın. Belirli bir koşulu karşılayan bir değişken tür veya anlık görüntü türü kayıt kümesi nesnesinde kayıtları bulmak için bulma işlemlerini kullanın. Tablo türü bir kayıt kümesi nesnesinde bir kaydı bulmak için `Seek`çağırın.
 
-Kayıt kümesi için bir tablo türü kayıt başvuruyorsa, taşıma tablonun geçerli dizin izler. Geçerli dizin, dizin özelliğini DAO nesnesini kullanarak ayarlayabilirsiniz. Geçerli dizin ayarlamazsanız, döndürülen kayıtları sıralamasını tanımsızdır.
+Kayıt kümesi tablo türü bir kayıt kümesine başvuruyorsa, hareket tablonun geçerli dizinini izler. Geçerli dizini, temel alınan DAO nesnesinin Index özelliğini kullanarak ayarlayabilirsiniz. Geçerli dizini ayarlanmamışsa döndürülen kayıtların sırası tanımsızdır.
 
-Eğer `MoveLast` bir SQL sorgusu veya querydef göre bir kayıt kümesi nesnesi üzerinde sorgu tamamlanana kadar zorlanır ve kayıt kümesi nesnesi tam olarak doldurulur.
+Bir SQL sorgusunu veya QueryDef 'i temel alan bir kayıt kümesi nesnesinde `MoveLast` çağırırsanız, sorgu tamamlamaya zorlanır ve kayıt kümesi nesnesi tamamen doldurulur.
 
-Geçerli konumu bir kayıt kümesi nesnesi sayısı kayıtlarını İleri veya geri belirli bir kayıt taşımak için çağrı `Move`.
+Kayıt kümesi nesnesindeki geçerli kaydın konumunu belirli bir kayıt veya geriye doğru bir şekilde taşımak için `Move`çağırın.
 
-İlgili bilgiler için "Taşıma yöntemi" konularına bakın ve "MoveFirst, MoveLast MoveNext, MovePrevious Yöntemleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "taşıma yöntemi" ve "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" konularına bakın.
 
-##  <a name="movenext"></a>  CDaoRecordset::MoveNext
+##  <a name="movenext"></a>CDaoRecordset:: MoveNext
 
-Geçerli kayıt kümenize sonraki kayıt olmak için bu üye işlevini çağırın.
+Kayıt kümesindeki bir sonraki kaydı geçerli kayıt haline getirmek için bu üye işlevi çağırın.
 
 ```
 void MoveNext();
@@ -1864,25 +1864,25 @@ void MoveNext();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önerilen çağırmanızı `IsBOF` önceki kayda girişiminde bulunmadan önce. Bir çağrı `MovePrev` oluşturmaz bir `CDaoException` varsa `IsBOF` önce ilk kaydı zaten kaydırılan veya hiçbir kayıt kayıt tarafından seçilmedi gösteren, sıfır döndürür.
+Önceki kayda geçiş yapmayı denemeden önce `IsBOF` çağırmanız önerilir. `MovePrev` çağrısı, `IsBOF` sıfır dışında bir değer döndürürse, ilk kayıttan önce kaydırıldığınız ya da kayıt kümesi tarafından hiçbir kaydın seçilmediğini belirten bir `CDaoException` oluşturur.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Genel olarak, her ikisi de arama `IsBOF` ve `IsEOF` kayıt herhangi bir kayıt olup olmadığını belirlemek için bir taşıma işleminden önce. Çağırdıktan sonra `Open` veya `Requery`, çağırın ya da `IsBOF` veya `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Genel olarak, kayıt kümesinde herhangi bir kayıt olup olmadığını anlamak için bir taşıma işleminden önce hem `IsBOF` hem de `IsEOF` çağırın. `Open` veya `Requery`çağırdıktan sonra, `IsBOF` ya da `IsEOF`çağırın.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kullanım `Move` bir koşul uygulamadan kayıttan diğerine taşımak için işlevleri. Bir dinamik tür ya da belirli bir koşulu karşılayan anlık görüntü türü kayıt kümesi nesnesi kayıtları bulmak için bulma işlemi kullanın. Bir tablo türü kayıt kümesi nesnesi bir kaydı bulmak için arama `Seek`.
+Bir koşul uygulamadan kayıttan kayda geçmek için `Move` işlevlerini kullanın. Belirli bir koşulu karşılayan bir değişken tür veya anlık görüntü türü kayıt kümesi nesnesinde kayıtları bulmak için bulma işlemlerini kullanın. Tablo türü bir kayıt kümesi nesnesinde bir kaydı bulmak için `Seek`çağırın.
 
-Kayıt kümesi için bir tablo türü kayıt başvuruyorsa, taşıma tablonun geçerli dizin izler. Geçerli dizin, dizin özelliğini DAO nesnesini kullanarak ayarlayabilirsiniz. Geçerli dizin ayarlamazsanız, döndürülen kayıtları sıralamasını tanımsızdır.
+Kayıt kümesi tablo türü bir kayıt kümesine başvuruyorsa, hareket tablonun geçerli dizinini izler. Geçerli dizini, temel alınan DAO nesnesinin Index özelliğini kullanarak ayarlayabilirsiniz. Geçerli dizini ayarlanmamışsa döndürülen kayıtların sırası tanımsızdır.
 
-Geçerli konumu bir kayıt kümesi nesnesi sayısı kayıtlarını İleri veya geri belirli bir kayıt taşımak için çağrı `Move`.
+Kayıt kümesi nesnesindeki geçerli kaydın konumunu belirli bir kayıt veya geriye doğru bir şekilde taşımak için `Move`çağırın.
 
-İlgili bilgiler için "Taşıma yöntemi" konularına bakın ve "MoveFirst, MoveLast MoveNext, MovePrevious Yöntemleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "taşıma yöntemi" ve "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" konularına bakın.
 
-##  <a name="moveprev"></a>  CDaoRecordset::MovePrev
+##  <a name="moveprev"></a>CDaoRecordset:: Moveöncekini
 
-Geçerli kayıt kümenize önceki kaydı yapmak için bu üye işlevini çağırın.
+Kayıt kümesindeki önceki kaydı geçerli kayıt haline getirmek için bu üye işlevi çağırın.
 
 ```
 void MovePrev();
@@ -1890,27 +1890,27 @@ void MovePrev();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önerilen çağırmanızı `IsBOF` önceki kayda girişiminde bulunmadan önce. Bir çağrı `MovePrev` oluşturmaz bir `CDaoException` varsa `IsBOF` önce ilk kaydı zaten kaydırılan veya hiçbir kayıt kayıt tarafından seçilmedi gösteren, sıfır döndürür.
+Önceki kayda geçiş yapmayı denemeden önce `IsBOF` çağırmanız önerilir. `MovePrev` çağrısı, `IsBOF` sıfır dışında bir değer döndürürse, ilk kayıttan önce kaydırıldığınız ya da kayıt kümesi tarafından hiçbir kaydın seçilmediğini belirten bir `CDaoException` oluşturur.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Genel olarak, her ikisi de arama `IsBOF` ve `IsEOF` kayıt herhangi bir kayıt olup olmadığını belirlemek için bir taşıma işleminden önce. Çağırdıktan sonra `Open` veya `Requery`, çağırın ya da `IsBOF` veya `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Genel olarak, kayıt kümesinde herhangi bir kayıt olup olmadığını anlamak için bir taşıma işleminden önce hem `IsBOF` hem de `IsEOF` çağırın. `Open` veya `Requery`çağırdıktan sonra, `IsBOF` ya da `IsEOF`çağırın.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kullanım `Move` bir koşul uygulamadan kayıttan diğerine taşımak için işlevleri. Bir dinamik tür ya da belirli bir koşulu karşılayan anlık görüntü türü kayıt kümesi nesnesi kayıtları bulmak için bulma işlemi kullanın. Bir tablo türü kayıt kümesi nesnesi bir kaydı bulmak için arama `Seek`.
+Bir koşul uygulamadan kayıttan kayda geçmek için `Move` işlevlerini kullanın. Belirli bir koşulu karşılayan bir değişken tür veya anlık görüntü türü kayıt kümesi nesnesinde kayıtları bulmak için bulma işlemlerini kullanın. Tablo türü bir kayıt kümesi nesnesinde bir kaydı bulmak için `Seek`çağırın.
 
-Kayıt kümesi için bir tablo türü kayıt başvuruyorsa, taşıma tablonun geçerli dizin izler. Geçerli dizin, dizin özelliğini DAO nesnesini kullanarak ayarlayabilirsiniz. Geçerli dizin ayarlamazsanız, döndürülen kayıtları sıralamasını tanımsızdır.
+Kayıt kümesi tablo türü bir kayıt kümesine başvuruyorsa, hareket tablonun geçerli dizinini izler. Geçerli dizini, temel alınan DAO nesnesinin Index özelliğini kullanarak ayarlayabilirsiniz. Geçerli dizini ayarlanmamışsa döndürülen kayıtların sırası tanımsızdır.
 
-Çağıramazsınız `MoveFirst` veya `MovePrev` yalnızca iletme kayan bir anlık görüntüyle üye işlevi.
+`MoveFirst` veya `MovePrev` üye işlevini yalnızca ileriye doğru bir kayan görüntüyle çağıramezsiniz.
 
-Geçerli konumu bir kayıt kümesi nesnesi sayısı kayıtlarını İleri veya geri belirli bir kayıt taşımak için çağrı `Move`.
+Kayıt kümesi nesnesindeki geçerli kaydın konumunu belirli bir kayıt veya geriye doğru bir şekilde taşımak için `Move`çağırın.
 
-İlgili bilgiler için "Taşıma yöntemi" konularına bakın ve "MoveFirst, MoveLast MoveNext, MovePrevious Yöntemleri" DAO Yardımı'nda.
+İlgili bilgiler için, DAO yardımı 'nda "taşıma yöntemi" ve "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" konularına bakın.
 
-##  <a name="open"></a>  CDaoRecordset::Open
+##  <a name="open"></a>CDaoRecordset:: Open
 
-Kayıt kümesi için kayıtları almak için bu üye işlevi çağırmanız gerekir.
+Kayıt kümesine ait kayıtları almak için bu üye işlevini çağırmanız gerekir.
 
 ```
 virtual void Open(
@@ -1934,106 +1934,106 @@ virtual void Open(
 *nOpenType*<br/>
 Aşağıdaki değerlerden biri:
 
-- `dbOpenDynaset` Çift yönlü kaydırma ile dinamik türü kayıt. Bu varsayılandır.
+- Çift yönlü kaydırma içeren bir değişken türü kayıt kümesi `dbOpenDynaset`. Bu varsayılandır.
 
-- `dbOpenTable` Çift yönlü kaydırma ile bir tablo türü kayıt.
+- Çift yönlü kaydırma içeren tablo türü bir kayıt kümesi `dbOpenTable`.
 
-- `dbOpenSnapshot` Çift yönlü kaydırma ile bir anlık görüntü türü kayıt.
+- Çift yönlü kaydırma içeren bir anlık görüntü türü kayıt kümesi `dbOpenSnapshot`.
 
 *lpszSQL*<br/>
 Aşağıdakilerden birini içeren bir dize işaretçisi:
 
-- Bir NULL işaretçi.
+- NULL işaretçi.
 
-- Bir veya daha fazla tabledefs ve/veya querydefs (virgülle ayrılmış) adı.
+- Bir veya daha fazla TableDefs ve/veya QueryDefs (virgülle ayrılmış) adı.
 
-- Bir SQL **seçin** deyimi (isteğe bağlı olarak bir SQL ile **burada** veya **ORDERBY** yan tümcesi).
+- Bir SQL **Select** deyimi (isteğe bağlı olarak bir SQL **WHERE** veya **ORDERBY** yan tümcesi ile).
 
-- Bir doğrudan sorgudur.
+- Doğrudan sorgu.
 
-*nOptions*<br/>
-Bir veya birkaçını aşağıda listelenen seçenekler. Varsayılan değer 0’dır. Olası değerler aşağıdaki gibidir:
+*Önemli seçenekler*<br/>
+Aşağıda listelenen seçeneklerden biri veya birkaçı. Varsayılan değer 0’dır. Olası değerler aşağıdaki gibidir:
 
-- `dbAppendOnly` Yalnızca yeni kayıtları (yalnızca dinamik tür recordset) ekleyebilirsiniz. Bu seçenek, kayıt yalnızca eklenebilir tam anlamıyla anlamına gelir. MFC ODBC veritabanı sınıfları kayıtlar alınır ve eklenen izin veren bir salt ekleme seçeneğiniz vardır.
+- `dbAppendOnly` yalnızca yeni kayıtları (yalnızca Dynaset türü kayıt kümesi) ekleyebilirsiniz. Bu seçenek, kayıtların yalnızca eklenebileceği anlamına gelir. MFC ODBC veritabanı sınıfları, kayıtların alınmasına ve eklenmiş olmasına izin veren bir APPEND seçeneği vardır.
 
-- `dbForwardOnly` Kayıt kümesi yalnızca iletme kaydırma anlık görüntüsüdür.
+- kayıt kümesi, salt ileri kaydırılan bir anlık görüntüdür `dbForwardOnly`.
 
-- `dbSeeChanges` Düzenlemekte olduğunuz veri başka bir kullanıcı değişiyorsa, bir özel durum oluşturur.
+- `dbSeeChanges` başka bir Kullanıcı düzenlemekte olduğunuz verileri değiştirirken bir özel durum oluşturur.
 
-- `dbDenyWrite` Diğer kullanıcıların değiştiremez veya kayıt ekleyin.
+- `dbDenyWrite` diğer kullanıcılar kayıtları değiştiremez veya ekleyemez.
 
-- `dbDenyRead` Diğer kullanıcıların kayıt (yalnızca tablo türündeki kayıt kümesi) görüntüleyemezsiniz.
+- `dbDenyRead` diğer kullanıcılar kayıtları görüntüleyemez (yalnızca tablo türü kayıt kümesi).
 
-- `dbReadOnly` Kayıtları yalnızca görebilirsiniz; diğer kullanıcıların bunları değiştirebilirsiniz.
+- `dbReadOnly` kayıtları yalnızca görüntüleyebilirsiniz; diğer kullanıcılar bunları değiştirebilir.
 
-- `dbInconsistent` Tutarsız güncelleştirmeleri (yalnızca dinamik tür recordset) izin verilir.
+- `dbInconsistent` tutarsız güncelleştirmelere izin verilir (yalnızca Dynaset türü kayıt kümesi).
 
-- `dbConsistent` Yalnızca tutarlı güncelleştirmeleri (yalnızca dinamik tür recordset) izin verilir.
+- Yalnızca tutarlı güncelleştirmelere `dbConsistent` izin verilir (yalnızca Dynaset türü kayıt kümesi).
 
 > [!NOTE]
->  Sabitler `dbConsistent` ve `dbInconsistent` karşılıklı olarak birbirini dışlar. Kullanabilirsiniz veya diğer, ikisi de belirli bir örneğini `Open`.
+>  `dbConsistent` ve `dbInconsistent` sabitleri birbirini dışlıyor. Yalnızca belirli bir `Open`örneğinde değil, birini veya diğerini kullanabilirsiniz.
 
 *pTableDef*<br/>
-Bir işaretçi bir [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) nesne. Bu sürümü yalnızca tablo türü kayıt kümeleri için geçerli değildir. Bu seçenek kullanıldığında `CDaoDatabase` işaretçi oluşturmak için kullanılan `CDaoRecordset` kullanılmaz; bunun yerine, tabledef bulunduğu veritabanı kullanılır.
+Bir [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) nesnesine yönelik bir işaretçi. Bu sürüm yalnızca tablo türü kayıt kümeleri için geçerlidir. Bu seçenek kullanılırken, `CDaoRecordset` oluşturmak için kullanılan `CDaoDatabase` işaretçisi kullanılmaz; Bunun yerine, TableDef 'in bulunduğu veritabanı kullanılır.
 
 *pQueryDef*<br/>
-Bir işaretçi bir [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) nesne. Bu sürüm, yalnızca dinamik tür ve anlık görüntü türü kayıt kümeleri için geçerlidir. Bu seçenek kullanıldığında `CDaoDatabase` işaretçi oluşturmak için kullanılan `CDaoRecordset` kullanılmaz; bunun yerine, querydef bulunduğu veritabanı kullanılır.
+Bir [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) nesnesine yönelik bir işaretçi. Bu sürüm yalnızca dinamik küme türü ve anlık görüntü türü kayıt kümeleri için geçerlidir. Bu seçenek kullanılırken, `CDaoRecordset` oluşturmak için kullanılan `CDaoDatabase` işaretçisi kullanılmaz; Bunun yerine, QueryDef 'in bulunduğu veritabanı kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmadan önce `Open`, kayıt kümesi nesnesi oluşturmalıdır. Bunu yapmanın birkaç yolu vardır:
+`Open`çağrılmadan önce, kayıt kümesi nesnesi oluşturmanız gerekir. Bunu yapmak için çeşitli yollar vardır:
 
-- Kayıt kümesi nesnesi oluştururken, bir işaretçi geçirin bir `CDaoDatabase` zaten açık olan nesne.
+- Kayıt kümesi nesnesi oluşturduğunuzda, zaten açık olan bir `CDaoDatabase` nesnesine bir işaretçi geçirin.
 
-- Kayıt kümesi nesnesi oluştururken, bir işaretçi geçirin bir `CDaoDatabase` açık değil bir nesne. Kayıt kümesi açılır bir `CDaoDatabase` nesnesi ancak kayıt kümesi nesnesi kapandığında kapanmaz.
+- Kayıt kümesi nesnesini oluştururken açık olmayan `CDaoDatabase` nesnesine bir işaretçi geçirin. Kayıt kümesi bir `CDaoDatabase` nesnesi açar, ancak kayıt kümesi nesnesi kapandığında bunu kapatmaz.
 
-- Kayıt kümesi nesnesi oluştururken, bir NULL işaretçi geçirin. Kayıt kümesi nesnesi çağrıları `GetDefaultDBName` Microsoft Access adını almak için. Açılacak dosyayı MDB. Kayıt kümesi sonra açılır bir `CDaoDatabase` nesne ve kayıt kümesinin açık olduğu sürece açmadan tutar. Çağırdığınızda `Close` Recordset `CDaoDatabase` nesnesi de kapalı.
+- Kayıt kümesi nesnesi oluşturduğunuzda, NULL bir işaretçi geçirin. Kayıt kümesi nesnesi, Microsoft Access 'in adını almak için `GetDefaultDBName` çağırır. MDB dosyasını açın. Kayıt kümesi daha sonra bir `CDaoDatabase` nesnesi açar ve kayıt kümesi açık olduğu sürece açık tutar. Kayıt kümesinde `Close` çağırdığınızda `CDaoDatabase` nesnesi de kapatılır.
 
     > [!NOTE]
-    >  Kayıt kümesi açıldığında `CDaoDatabase` nesne özel kullanım erişimi ile veri kaynağı açar.
+    >  Kayıt kümesi `CDaoDatabase` nesnesini açtığında, veri kaynağını özel olmayan erişimle açar.
 
-Sürümü için `Open` kullanan *lpszSQL* parametresi, kayıt açıldıktan sonra kayıt birkaç yoldan biriyle alabilirsiniz. DFX işlevleri zorunda ilk seçenektir, `DoFieldExchange`. İkinci seçenek çağırarak dinamik bağlama kullanmak, `GetFieldValue` üye işlevi. Bu seçenekler, ayrı ayrı veya birlikte uygulanabilir. Bunlar birleştirilir, SQL deyiminde kendiniz çağrı aktarmak gerekir `Open`.
+*LpszSQL* parametresini kullanan `Open` sürümü için, kayıt kümesi açık olduktan sonra kayıtları birkaç şekilde alabilirsiniz. İlk seçenek `DoFieldExchange`DFX işlevleridir. İkinci seçenek `GetFieldValue` üye işlevini çağırarak dinamik bağlama kullanmaktır. Bu seçenekler, ayrı olarak veya birleşimine uygulanabilir. Birleştirilirse, SQL deyiminizi `Open`çağrısında kendiniz geçirmeniz gerekir.
 
-İkinci sürümü kullandığınızda `Open` geçirmek burada bir `CDaoTableDef` nesne, sonuçta elde edilen sütun, aracılığıyla bağlamak kullanılabilir olacak `DoFieldExchange` ve DFX mekanizması ve/veya aracılığıyla dinamik olarak bağlama `GetFieldValue`.
-
-> [!NOTE]
->  Yalnızca çağırabilirsiniz `Open` kullanarak bir `CDaoTableDef` tablo türü kayıt kümeleri için nesne.
-
-Üçüncü sürümünü kullandığınızda `Open` geçirmek burada bir `CDaoQueryDef` nesne, sorgu yürütülür ve sonuçta elde edilen sütun, aracılığıyla bağlamak kullanılabilir olacak `DoFieldExchange` ve DFX mekanizması ve/veya aracılığıyla dinamik olarak bağlama `GetFieldValue`.
+`CDaoTableDef` nesnesini geçirdiğiniz `Open` ikinci sürümünü kullandığınızda, sonuçta elde edilen sütunlar `DoFieldExchange` ve DFX mekanizmasıyla bağlamalısınız ve/veya `GetFieldValue`aracılığıyla dinamik olarak bağlanır.
 
 > [!NOTE]
->  Yalnızca çağırabilirsiniz `Open` kullanarak bir `CDaoQueryDef` dynaset-type ve anlık görüntü türü kayıt kümeleri için nesne.
+>  Yalnızca tablo türü kayıt kümeleri için bir `CDaoTableDef` nesnesi kullanarak `Open` çağırabilirsiniz.
 
-İlk sürümü için `Open` kullanan `lpszSQL` parametresi kayıtları aşağıdaki tabloda gösterilen seçilen göre ölçütleri olan.
+`CDaoQueryDef` nesnesini geçirdiğiniz `Open` üçüncü sürümünü kullandığınızda, bu sorgu yürütülür ve elde edilen sütunlar `DoFieldExchange` ve DFX mekanizmasıyla bağlamalısınız ve/veya `GetFieldValue`aracılığıyla dinamik olarak bağlanır.
 
-|Değeri `lpszSQL` parametresi|Seçilen kayıt tarafından belirlenir|Örnek|
+> [!NOTE]
+>  Yalnızca değişken türü ve anlık görüntü türü kayıt kümeleri için bir `CDaoQueryDef` nesnesi kullanarak `Open` çağırabilirsiniz.
+
+`lpszSQL` parametresini kullanan `Open` ilk sürümü için, kayıtlar aşağıdaki tabloda gösterilen ölçütlere göre seçilir.
+
+|`lpszSQL` parametresinin değeri|Seçilen kayıtlar şunları belirler|Örnek|
 |--------------------------------------|----------------------------------------|-------------|
-|NULL|Tarafından döndürülen dize `GetDefaultSQL`.||
-|Bir veya daha fazla tabledefs ve/veya querydef adlarının virgülle ayrılmış listesi.|Tüm sütunları temsil `DoFieldExchange`.|`"Customer"`|
-|**SEÇİN** sütun listesi **FROM** Tablo listesi|Belirtilen sütunları belirtilen tabledef(s) ve/veya querydef(s).|`"SELECT CustId, CustName`<br /><br /> `FROM Customer"`|
+|NULL|`GetDefaultSQL`tarafından döndürülen dize.||
+|Bir veya daha fazla TableDefs ve/veya QueryDef adının virgülle ayrılmış listesi.|`DoFieldExchange`temsil edilen tüm sütunlar.|`"Customer"`|
+|**Tablo listesinden** sütun listesi **seçin**|Belirtilen TableDef ve/veya QueryDef öğeleri için belirtilen sütunlar.|`"SELECT CustId, CustName`<br /><br /> `FROM Customer"`|
 
-NULL olarak geçirmek için normal yordamdır `Open`; bu durumda, `Open` çağrıları `GetDefaultSQL`, oluştururken ClassWizard oluşturan bir geçersiz kılınabilir üye işlevi bir `CDaoRecordset`-türetilmiş sınıf. Bu değer, ClassWizard'içinde belirtilen tabledef(s) ve/veya querydef adları sağlar. Bunun yerine diğer bilgileri belirtebilirsiniz *lpszSQL* parametresi.
+Her zamanki yordam `Open`NULL değer geçirmektir; Bu durumda, `CDaoRecordset`türetilmiş bir sınıf oluşturulurken ClassWizard tarafından oluşturulan geçersiz kılınabilir bir üye işlevi olan `GetDefaultSQL``Open` çağırır. Bu değer, ClassWizard 'da belirttiğiniz TableDef (s) ve/veya QueryDef adlarını verir. Bunun yerine, *lpszSQL* parametresindeki diğer bilgileri belirtebilirsiniz.
 
-İnovasyonunuz ne olursa olsun geçirdiğiniz `Open` sorgu için son SQL dizesi oluşturur (SQL dizesi olabilir **burada** ve **ORDERBY** yan tümceleri eklenmiş için *lpszSQL* dize geçirilen) ve ardından sorguyu yürütür. Çağırarak oluşturulmuş dize inceleyebilirsiniz `GetSQL` arama sonra `Open`.
+Her ne olursa olsun `Open`, sorgu için son bir SQL dizesi (dize, geçirdiğiniz *lpszSQL* DIZESINE eklenen SQL **WHERE** ve **ORDERBY** yan tümceleri olabilir) ve sonra sorguyu yürütür. `Open`çağrıldıktan sonra `GetSQL` çağırarak oluşturulmuş dizeyi inceleyebilirsiniz.
 
-Kayıt kümesi sınıfınızın alan veri üyeleri, seçili veri sütunlarının bağlıdır. Hiçbir kayıt döndürülmezse, ilk kayıt geçerli kayıt haline gelir.
+Kayıt kümesi sınıfınızın alan veri üyeleri, seçilen verilerin sütunlarına bağlanır. Herhangi bir kayıt döndürülürse, ilk kayıt geçerli kayıt olur.
 
-Kayıt kümesi gibi bir filtre veya sıralama seçeneklerini ayarlamak istiyorsanız `m_strSort` veya `m_strFilter` kayıt kümesi nesnesi oluşturduktan sonra ancak çağırmadan önce `Open`. Sonra kayıt kümesindeki kayıtları yenilemek istiyorsanız recordset zaten açık olan, çağrı `Requery`.
+Kayıt kümesi için bir filtre veya sıralama gibi seçenekler ayarlamak istiyorsanız, kayıt kümesi nesnesini oluşturduktan sonra, ancak `Open`çağırmadan önce `m_strSort` veya `m_strFilter` ayarlayın. Kayıt kümesi zaten açık olduktan sonra kayıt kümesindeki kayıtları yenilemek istiyorsanız, `Requery`çağırın.
 
-Çağırırsanız `Open` dynaset türü veya anlık görüntü türü kayıt veya veri kaynağı bir SQL deyimi veya eklenen tablonun temsil eden değer özelliği başvuruyorsa kullanamazsınız `dbOpenTable` bunu yaparsanız, tür bağımsız değişkeni; MFC özel durum oluşturur. Tabledef nesnesi eklenen tablonun temsil edip etmediğini belirlemek için oluşturun bir [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) nesne ve çağrı kendi [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) üye işlevi.
+Bir değişken türü veya anlık görüntü türü kayıt kümesinde `Open` çağırırsanız veya veri kaynağı bir SQL ifadesine ya da eklenmiş bir tabloyu temsil eden bir TableDef öğesine başvuruyorsa, tür bağımsız değişkeni için `dbOpenTable` kullanamazsınız; Bunu yaparsanız, MFC bir özel durum oluşturur. Bir TableDef nesnesinin ekli bir tabloyu temsil edip etmediğini anlamak için, bir [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) nesnesi oluşturun ve [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) üye işlevini çağırın.
 
-Kullanım `dbSeeChanges` düzenlerken veya aynı kayıt silme başka bir kullanıcı veya başka bir program makinenizde yapılan değişiklikleri yakalamak istiyorsanız bayrak. Örneğin, iki kullanıcı aynı çağrı yapılacak ilk kullanıcının kayıt düzenleme başlatırsanız `Update` üye işlevi başarılı olur. Zaman `Update` ikinci kullanıcı tarafından adlandırılan bir `CDaoException` oluşturulur. Benzer şekilde, ikinci kullanıcı çağırmaya çalışırsa `Delete` ve kayıt silme zaten ilk kullanıcı tarafından değiştirildi bir `CDaoException` gerçekleşir.
+Aynı kaydı düzenlediğinizde veya silerken başka bir kullanıcı veya makinenizde başka bir program tarafından yapılan değişiklikleri yakalamak istiyorsanız `dbSeeChanges` bayrağını kullanın. Örneğin, iki kullanıcı aynı kaydı düzenlemeyle başlamazsa, `Update` üye işlevini çağıran ilk kullanıcı başarılı olur. `Update` ikinci Kullanıcı tarafından çağrıldığında bir `CDaoException` oluşturulur. Benzer şekilde, ikinci Kullanıcı kaydı silmek için `Delete` çağırmayı dener ve ilk Kullanıcı tarafından zaten değiştirilmişse, bir `CDaoException` oluşur.
 
-Genellikle, kullanıcı bu alırsa `CDaoException` güncelleştirilirken, kodunuzu alanların içeriğini yenileyin ve yeni değiştirilmiş değerlerini alma. Silme işleminde özel durum meydana gelirse, kodunuzu kullanıcı ve veri yakın zamanda değiştiğini gösteren bir ileti için yeni kayıt verilerini görüntüleyebilirsiniz. Bu noktada, kodunuzu, kullanıcı hala kaydı silmek istediğini bir onay isteyebilir.
+Genellikle, Kullanıcı güncelleştirme sırasında bu `CDaoException` alırsa, kodunuzun alanların içeriğini yenilemesi ve yeni değiştirilen değerleri alması gerekir. Özel durum silme sürecinde gerçekleşirse, kodunuz kullanıcıya yeni kayıt verilerini ve verilerin yakın zamanda değiştiğini belirten bir ileti görüntüleyebilir. Bu noktada, kodunuz kullanıcının hala kaydı silmesini istediğini belirten bir onaylama isteğinde bulunabilir.
 
 > [!TIP]
->  Yalnızca iletme kaydırma seçeneğini kullanın (`dbForwardOnly`), uygulamanızın bir kayıt kümesi tek bir geçiş yaptığında, performansı artırmak için bir ODBC veri kaynağından açılır.
+>  Uygulamanız ODBC veri kaynağından açılan bir kayıt kümesinden tek bir geçiş yaptığında performansı artırmak için salt ileri kaydırma seçeneğini (`dbForwardOnly`) kullanın.
 
-İlgili bilgiler için DAO Yardımı'nda "OpenRecordset yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "OpenRecordset yöntemi" konusuna bakın.
 
-##  <a name="requery"></a>  CDaoRecordset::Requery
+##  <a name="requery"></a>CDaoRecordset:: Requery
 
-Bir kayıt kümesi (yenileme) yeniden oluşturmak için bu üye işlevini çağırın.
+Bir kayıt kümesini yeniden oluşturmak (yenilemek) için bu üye işlevi çağırın.
 
 ```
 virtual void Requery();
@@ -2041,29 +2041,29 @@ virtual void Requery();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir kayıt döndürülmezse, ilk kayıt geçerli kayıt haline gelir.
+Herhangi bir kayıt döndürülürse, ilk kayıt geçerli kayıt olur.
 
-Ekleme ve veri kaynağına, sizin veya diğer kullanıcıların kuran silme işlemleri yansıtacak şekilde kayıt kümesi için sırada çağırarak kayıt derlemelisiniz `Requery`. Kayıt kümesi bir dinamik ise, sizin veya diğer kullanıcıların, var olan kayıtların (ancak değil eklemeleri) olun güncelleştirmeleri otomatik olarak yansıtır. Kayıt kümesi bir anlık görüntüyse çağırmalısınız `Requery` düzenlemeleri diğer kullanıcıların yanı sıra ekleme ve silme işlemleri tarafından yansıtmak için.
+Kayıt kümesinin, sizin veya diğer kullanıcıların veri kaynağına yaptığı eklemeleri ve silmeleri yansıtması için, `Requery`çağırarak kayıt kümesini yeniden oluşturmanız gerekir. Kayıt kümesi bir Dynaset ise, sizin veya diğer kullanıcıların mevcut kayıtları (eklemeler) üzerinde yaptığı güncelleştirmeleri otomatik olarak yansıtır. Kayıt kümesi bir anlık görüntüdür, diğer kullanıcıların yanı sıra eklemeleri ve silmeleri yansıtmak için `Requery` çağırmanız gerekir.
 
-Bir dinamik veya bir anlık görüntü için çağrı `Requery` parametre değerlerini kullanarak kayıt yeniden oluşturmak için istediğiniz zaman. Yeni filtre veya sıralama ayarlayarak [m_strFilter](#m_strfilter) ve [m_strSort](#m_strsort) çağırmadan önce `Requery`. Parametre veri üyeleri çağırmadan önce yeni değerler atayarak yeni parametreler Ayarla `Requery`.
+DYNASET veya anlık görüntü için, parametre değerlerini kullanarak kayıt kümesini yeniden derlemek istediğiniz zaman `Requery` çağırın. `Requery`çağrılmadan önce [m_strFilter](#m_strfilter) ve [m_strSort](#m_strsort) ayarlayarak yeni filtre veya sıralama belirleyin. `Requery`çağrılmadan önce parametre veri üyelerine yeni değerler atayarak yeni parametreler ayarlayın.
 
-Kayıt yeniden deneme başarısız olursa, kayıt kapatılır. Çağırmadan önce `Requery`, kayıt çağırarak yeniden olup olmadığını belirlemek [CanRestart](#canrestart) üye işlevi. `CanRestart` garanti etmez `Requery` başarılı olur.
+Kayıt kümesini yeniden derleme girişimi başarısız olursa, kayıt kümesi kapalıdır. `Requery`çağırmadan önce, [CanRestart](#canrestart) üye işlevini çağırarak kayıt kümesinin yeniden sorgulama yapıp kullanamayacağını belirleyebilirsiniz. `CanRestart`, `Requery` başarılı olacağını garanti etmez.
 
 > [!CAUTION]
->  Çağrı `Requery` yalnızca çağrısı yapmanız sonrasında `Open`.
+>  Yalnızca `Open`çağrıldıktan sonra `Requery` çağırın.
 
 > [!NOTE]
->  Çağırma [Requery](#requery) DAO yer işaretleri değiştirir.
+>  [YenidenSorgula](#requery) ÇAĞRıSı, DAO yer imlerini değiştirir.
 
-Çağıramazsınız `Requery` dynaset türü veya çağırma varsa anlık görüntü türü kayıt `CanRestart` 0 döndürür ya da bir tablo türü kayıt üzerinde kullanabilirsiniz.
+Çağırma `CanRestart` 0 döndürürse veya onu tablo türü bir kayıt kümesinde kullanabileceğiniz bir değişken tür veya anlık görüntü türü kayıt kümesinde `Requery` çağırılamaz.
 
-Her iki `IsBOF` ve `IsEOF` çağırdıktan sonra sıfır dönüş `Requery`, herhangi bir kayıt ve kayıt veri içeren sorgu döndürmedi.
+`Requery`çağırdıktan sonra hem `IsBOF` hem de `IsEOF` sıfır dışında bir değere döndürürse, sorgu hiçbir kayıt döndürmez ve kayıt kümesi hiçbir veri içermeyecektir.
 
-İlgili bilgiler için "Requery yöntemi" DAO Yardım konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "YenidenSorgula yöntemi" konusuna bakın.
 
-##  <a name="seek"></a>  CDaoRecordset::Seek
+##  <a name="seek"></a>CDaoRecordset:: Seek
 
-Belirtilen ölçüt için geçerli dizin ve geçerli kayıt kayıt olun karşılayan bir dizinlenmiş tablo türü kayıt kümesi nesnesi içinde kaydı bulmak için bu üye işlevini çağırın.
+Geçerli dizin için belirtilen ölçütlere uyan bir dizinli tablo türü kayıt kümesi nesnesinde kaydı bulmak için bu üye işlevini çağırın ve bu kaydı geçerli kayıt yapar.
 
 ```
 BOOL Seek(
@@ -2081,53 +2081,53 @@ BOOL Seek(
 ### <a name="parameters"></a>Parametreler
 
 *lpszComparison*<br/>
-Aşağıdaki dizeyi ifadelerden biri: "<","\<=", "=", "> =", veya ">".
+Şu dize ifadelerinden biri: "<", "\<=", "=", "> =" veya ">".
 
 *pKey1*<br/>
-Bir işaretçi bir [COleVariant](../../mfc/reference/colevariant-class.md) değeri dizini ilk alanına karşılık gelir. Gerekli.
+Değeri dizindeki ilk alana karşılık gelen bir [Cotavariant](../../mfc/reference/colevariant-class.md) işaretçisi. Gereklidir.
 
 *pKey2*<br/>
-Bir işaretçi bir `COleVariant` değeri karşılık gelen dizin ikinci alan için varsa. Varsayılan olarak NULL.
+Değeri dizinde ikinci alana karşılık gelen bir `COleVariant` işaretçisi (varsa). Varsayılan olarak NULL değerini alır.
 
 *pKey3*<br/>
-Bir işaretçi bir `COleVariant` değeri karşılık gelen alan dizinde varsa. Varsayılan olarak NULL.
+Değeri dizinde üçüncü alana karşılık gelen bir `COleVariant` işaretçisi (varsa). Varsayılan olarak NULL değerini alır.
 
 *pKeyArray*<br/>
-Bir dizi çeşitleri için bir işaretçi. Dizi boyutu dizini alanlarda sayısına karşılık gelir.
+Bir çeşit dizisine yönelik bir işaretçi. Dizi boyutu, dizindeki alan sayısına karşılık gelir.
 
-*nKeys*<br/>
-Dizin alanlarına sayısı dizisinin boyutuna karşılık gelen bir tamsayı.
+*nKeys 'ler*<br/>
+Dizinin boyutuna karşılık gelen ve dizindeki alanların sayısı olan bir tamsayı.
 
 > [!NOTE]
->  Joker karakterler anahtarları belirtmeyin. Joker karakterler neden `Seek` hiçbir eşleşen kayıtları döndürmek için.
+>  Anahtarlarda joker karakter belirtmeyin. Joker karakterler `Seek` eşleşen kayıtlar döndürmesine neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır, aksi durumda 0 eşleşen kayıtları bulundu.
+Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci (dizi) sürümünü kullanmanız `Seek` dört alan dizinleri ya da daha fazla işlemek için.
+Dört alan dizinini veya daha fazlasını işlemek için `Seek` ikinci (dizi) sürümünü kullanın.
 
-`Seek` yüksek performanslı dizini tablo türü kümelerinde arama sağlar. Çağırarak geçerli dizini ayarlamalısınız `SetCurrentIndex` çağırmadan önce `Seek`. Dizini benzersiz olmayan bir anahtar alan veya alanlar tanımlıyorsa `Seek` ölçütleri karşılayan ilk kaydı bulur. Dizin ayarlamazsanız, bir özel durum oluşturulur.
+`Seek` tablo türü kayıt kümelerinde yüksek performanslı Dizin aramayı mümkün. `Seek`çağrılmadan önce `SetCurrentIndex` çağırarak geçerli dizini ayarlamanız gerekir. Dizin, benzersiz olmayan bir anahtar alanı veya alanı tanımlarsa, ölçütleri karşılayan ilk kaydı bulur `Seek`. Bir dizin ayarlanmamışsa, bir özel durum oluşturulur.
 
-Bir UNICODE kayıt oluşturmadığınızı unutmayın, `COleVariant` nesneleri ANSI açıkça da bildirilmelidir. Bu kullanarak yapılabilir [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)**  oluşturucuyla biçiminin *vtSrc* kümesine `VT_BSTRT` (ANSI) kullanarak veya `COleVariant` işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** ile *vtSrc* kümesine `VT_BSTRT`.
+Bir UNICODE kayıt kümesi oluşturmadıysanız, `COleVariant` nesnelerinin açıkça ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* 'nin `VT_BSTRT` (ANSI) olarak ayarlandığı **ya da `COleVariant`** işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring) **(** *lpszSrc* **,** *vtSrc* **)** *ile birlikte `VT_BSTRT`olarak ayarlanmış bir* Oluşturucu olan [cotavaryant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant) **(** *lpszSrc*
 
-Çağırdığınızda `Seek`, bir veya daha fazla anahtar değerleri ve bir karşılaştırma işleci geçirdiğiniz ("<","\<=", "=", "> =", veya ">"). `Seek` Belirtilen anahtar alanları arar ve tarafından belirtilen ölçütleri karşılayan ilk kaydı bulur *lpszComparison* ve *pKey1*. Bir kez bulundu, `Seek` sıfır döndürür ve kaydın geçerli hale getirir. Varsa `Seek` bir eşleşme bulamazsa `Seek` sıfır döndürür ve geçerli kayıt tanımsızdır. DAO doğrudan kullanırken NoMatch özelliği açıkça işaretlemeniz gerekir.
+`Seek`çağırdığınızda bir veya daha fazla anahtar değeri ve bir karşılaştırma işleci ("<", "\<=", "=", "> =" veya ">") geçirin. `Seek`, belirtilen anahtar alanlarında arama yapar ve *lpszComparison* ve *pKey1*tarafından belirtilen ölçütlere uyan ilk kaydı bulur. `Seek`, sıfır dışında bir değer döndürür ve bu kaydı geçerli hale getirir. `Seek` eşleşme bulamazsa, `Seek` sıfır döndürür ve geçerli kayıt tanımsızdır. Doğrudan DAO kullanırken NoMatch özelliğini açıkça denetlemeniz gerekir.
 
-Varsa `lpszComparison` olan "=", "> =", veya ">", `Seek` dizinin başından başlar. Varsa *lpszComparison* olan "<" veya "< =", `Seek` dizini sonunda başlar ve sonunda yinelenen dizin girişlerini sürece geriye doğru arama yapar. Bu durumda, `Seek` dizini sonunda yinelenen dizin girişlerini arasında rastgele bir giriş başlar.
+`lpszComparison` "=", "> =" veya ">" ise, `Seek` dizinin başlangıcında başlatılır. *LpszComparison* "<" veya "< =" ise, `Seek` dizinin sonunda başlar ve sonunda yinelenen dizin girişleri olmadıkça geriye doğru arar. Bu durumda `Seek` Dizin sonundaki yinelenen dizin girişleri arasında rastgele bir girdiyle başlar.
 
-Orada yok kullanırken geçerli bir kayıt olarak `Seek`.
+`Seek`kullandığınızda geçerli bir kayıt olması gerekmez.
 
-Bir kaydı bir dinamik tür ya da belirli bir koşulu karşılayan bir anlık görüntü türü kayıt kümesi bulmak için bulma işlemi kullanın. Yalnızca bu belirli bir koşulu karşılayan tüm kayıtları eklemek için kayıttan diğerine taşımak için taşıma işlemlerini kullanın.
+Belirli bir koşulu karşılayan bir değişken türü veya anlık görüntü türü kayıt kümesindeki bir kaydı bulmak için bulma işlemlerini kullanın. Yalnızca belirli bir koşulu karşılayan olanları değil, tüm kayıtları dahil etmek için, kayıttan kayda geçmek için taşıma işlemlerini kullanın.
 
-Çağıramazsınız `Seek` herhangi bir ekli tablosunda dynaset türü veya anlık görüntü türü kayıt kümeleri olarak bağlı tablolar açılması gerekir çünkü yazın. Ancak, çağırırsanız `CDaoDatabase::Open` yüklenebilir bir ISAM veritabanı doğrudan açmak için çağırabilirsiniz `Seek` bu veritabanındaki tablolar üzerinde performans olabilir ancak yavaş.
+Eklenmiş tabloların değişken tür veya anlık görüntü türü kayıt kümeleri olarak açılması gerektiğinden, herhangi bir türdeki ekli tabloda `Seek` çağırılamaz. Ancak, yüklenebilir bir ISAM veritabanını doğrudan açmak için `CDaoDatabase::Open` çağırırsanız, bu veritabanındaki tablolarda `Seek` çağırabilirsiniz, ancak performans yavaş olabilir.
 
-İlgili bilgiler için DAO Yardımı'nda "yöntemi arama" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "arama yöntemi" konusuna bakın.
 
-##  <a name="setabsoluteposition"></a>  CDaoRecordset::SetAbsolutePosition
+##  <a name="setabsoluteposition"></a>CDaoRecordset:: SetAbsolutePosition
 
-Kayıt kümesi nesnesinin geçerli kayıt göreli kayıt sayısını ayarlar.
+Bir kayıt kümesi nesnesinin geçerli kaydının göreli kayıt numarasını ayarlar.
 
 ```
 void SetAbsolutePosition(long lPosition);
@@ -2136,27 +2136,27 @@ void SetAbsolutePosition(long lPosition);
 ### <a name="parameters"></a>Parametreler
 
 *lPosition*<br/>
-Kayıt kümesi geçerli kaydın sıralı konumuna karşılık gelir.
+Kayıt kümesindeki geçerli kaydın sıra konumuna karşılık gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırma `SetAbsolutePosition` dinamik tür ya da anlık görüntü türü kayıt içindeki sıralı konumuna göre belirli bir kaydı için geçerli kayıt işaretçiyi sağlar. Ayrıca, çağırarak geçerli kayıt numarasını belirleyebilirsiniz [GetAbsolutePosition](#getabsoluteposition).
+`SetAbsolutePosition` çağırmak, geçerli kayıt işaretçisini, küme türü veya anlık görüntü türü bir kayıt kümesindeki sıra konumuna göre belirli bir kayda konumlandırabilmenizi sağlar. Ayrıca, [GetAbsolutePosition](#getabsoluteposition)' i çağırarak geçerli kayıt numarasını belirleyebilirsiniz.
 
 > [!NOTE]
->  Bu üye işlevi, yalnızca dinamik tür ve anlık görüntü türü kayıt kümeleri için geçerlidir.
+>  Bu üye işlevi yalnızca dinamik küme türü ve anlık görüntü türü kayıt kümeleri için geçerlidir.
 
-DAO nesnesini AbsolutePosition özellik değeri, sıfır tabanlıdır; kayıt kümesindeki ilk kayıt için 0 ayarı gösterir. Doldurulmuş kayıtları nedenleri MFC özel durum sayısından büyük bir değere ayarlamak. Doldurulmuş bir kayıt kümesinde sayısını çağırarak belirleyebilirsiniz `GetRecordCount` üye işlevi.
+Temel alınan DAO nesnesinin AbsolutePosition özelliği değeri sıfır tabanlıdır; 0 ayarı, kayıt kümesindeki ilk kayda başvurur. Doldurulmuş kayıt sayısından daha büyük bir değer ayarlandığında MFC 'nin bir özel durum oluşturması neden olur. `GetRecordCount` üye işlevini çağırarak, kayıt kümesindeki doldurulmuş kayıt sayısını belirleyebilirsiniz.
 
-Geçerli kaydı silinirse, AbsolutePosition özellik değeri tanımlı değil ve başvuru MFC bir özel durum oluşturur. Yeni kayıtlar dizinin sonuna eklenir.
+Geçerli kayıt silinirse, AbsolutePosition özelliği değeri tanımlı değildir ve başvuru varsa MFC bir özel durum oluşturur. Yeni kayıtlar sıranın sonuna eklenir.
 
 > [!NOTE]
->  Bu özellik, bir yedek kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Yer işaretleri, yine de koruma ve belirli bir konuma döndürerek için önerilen yoldur ve tüm yer işaretlerini destekleyen kayıt nesneleri türlerinde geçerli kayıt konumuna tek yoludur. Özellikle, kendisinden kayıtları silinen verilen kayıt konumunu değiştirir. Ayrıca bir kayıt kümesi içinde bireysel kayıt sırasını kullanarak bir SQL deyimi oluşturulmadıkça kesin değildir çünkü kayıt yeniden yeniden oluşturulursa, belirli bir kaydı aynı mutlak konumunu olacağını hiçbir güvencesi yoktur bir  **ORDERBY** yan tümcesi.
+>  Bu özellik, bir vekil kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Yer işaretleri hala, belirli bir konuma devam etmek ve döndürmek için önerilen bir yoldur ve geçerli kaydı, yer işaretlerini destekleyen tüm kayıt kümesi nesnesi türlerinde konumlandırın tek yoludur. Özellikle, belirli bir kaydın konumu, kendisinden önceki kayıtlar silindikten sonra değişir. Ayrıca, bir kayıt kümesi içindeki tek kayıtların sırası bir **ORDERBY** yan TÜMCESI kullanılarak SQL deyimi ile oluşturulmadığı müddetçe, belirli bir kaydın aynı mutlak konuma sahip olacağı bir güvence yoktur.
 
-İlgili bilgiler için DAO Yardımı'nda "AbsolutePosition özelliğini" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "AbsolutePosition özelliği" konusuna bakın.
 
-##  <a name="setbookmark"></a>  CDaoRecordset::SetBookmark
+##  <a name="setbookmark"></a>CDaoRecordset:: SetBookmark
 
-Kayıt kümesi belirtilen yer işareti içeren kayıt üzerinde yerleştirmek için bu üye işlevini çağırın.
+Kayıt kümesini belirtilen yer işaretini içeren kayıtta konumlandırmak için bu üye işlevini çağırın.
 
 ```
 void SetBookmark(COleVariant varBookmark);
@@ -2165,20 +2165,20 @@ void SetBookmark(COleVariant varBookmark);
 ### <a name="parameters"></a>Parametreler
 
 *varBookmark*<br/>
-A [COleVariant](../../mfc/reference/colevariant-class.md) belirli bir kaydı için yer işareti değeri içeren nesne.
+Belirli bir kayıt için yer işareti değerini içeren [Cotavariant](../../mfc/reference/colevariant-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi nesnesi oluşturulduğunda veya açık olduğunda, kayıtların her birinde benzersiz bir yer işareti zaten sahip. Yer işareti için geçerli kayıt çağırarak alabilirsiniz `GetBookmark` değerine kaydederek bir `COleVariant` nesne. Kayda çağırarak daha sonra geri dönebilirsiniz `SetBookmark` kaydedilmiş bu yer işaretini değerini kullanarak.
+Bir kayıt kümesi nesnesi oluşturulduğunda veya açıldığında, kayıtlarının her birinin zaten benzersiz bir yer işareti vardır. `GetBookmark` çağırarak ve değeri bir `COleVariant` nesnesine kaydederek geçerli kayıt için yer işaretini alabilirsiniz. Daha sonra, kaydedilen yer işareti değerini kullanarak `SetBookmark` çağırarak bu kayda geri dönebilirsiniz.
 
 > [!NOTE]
->  Çağırma [Requery](#requery) DAO yer işaretleri değiştirir.
+>  [YenidenSorgula](#requery) ÇAĞRıSı, DAO yer imlerini değiştirir.
 
-Bir UNICODE kayıt oluşturmadığınızı unutmayın, `COleVariant` nesne ANSI açıkça da bildirilmelidir. Bu kullanarak yapılabilir [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)**  oluşturucuyla biçiminin *vtSrc* kümesine `VT_BSTRT` (ANSI) kullanarak veya `COleVariant` işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** ile *vtSrc* kümesine `VT_BSTRT`.
+Bir UNICODE kayıt kümesi oluşturmadıysanız, `COleVariant` nesnesinin açıkça ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* 'nin `VT_BSTRT` (ANSI) olarak ayarlandığı **ya da `COleVariant`** işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring) **(** *lpszSrc* **,** *vtSrc* **)** *ile birlikte `VT_BSTRT`olarak ayarlanmış bir* Oluşturucu olan [cotavaryant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant) **(** *lpszSrc*
 
-İlgili bilgiler için "yer işareti" Bookmarkable özellik ve DAO Yardımı'nda bkz".
+İlgili bilgiler için, DAO yardımı 'nda "yer Işareti özelliği" ve Bookmarkable özelliği "konularına bakın.
 
-##  <a name="setcachesize"></a>  CDaoRecordset::SetCacheSize
+##  <a name="setcachesize"></a>CDaoRecordset:: SetCacheSize
 
 Önbelleğe alınacak kayıt sayısını ayarlamak için bu üye işlevini çağırın.
 
@@ -2188,20 +2188,20 @@ void SetCacheSize(long lSize);
 
 ### <a name="parameters"></a>Parametreler
 
-*lSize*<br/>
-Kayıt sayısını belirtir. Tipik bir değer 100'dür. 0 ayarı önbelleğe almayı devre dışı bırakır. Ayarı, 5 ve 1200 kayıtlar arasında olmalıdır. Önbellek, önemli miktarda bellek kullanabilir.
+*lSize dili*<br/>
+Kayıt sayısını belirtir. Tipik bir değer 100 ' dir. 0 ayarı önbelleğe almayı kapatır. Ayar 5 ile 1200 kayıt arasında olmalıdır. Önbellek, önemli miktarda bellek kullanabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir önbellek bir uygulama çalışırken verileri yeniden istenecektir olay o sunucudan en son alınan verileri tutan yerel belleğe alandır. Verileri önbelleğe almayı dynaset türündeki kayıt kümesi nesneleri aracılığıyla uzak bir sunucudan veri alır. bir uygulamanın performansını artırır. Veri istendiğinde Microsoft Jet veritabanı altyapısı istenen veriler için ilk daha uzun sürer sunucudan almak yerine denetler. Bir ODBC veri kaynağından gelmeyen veri önbellekte kaydedilmez.
+Önbellek, uygulama çalışırken verilerin yeniden istenmesi durumunda sunucudan en son alınan verileri tutan yerel bellekteki bir alandır. Veri önbelleğe alma, dinamik bir sunucudan verileri alan ve değişken türü kayıt kümesi nesneleri aracılığıyla bir uygulamanın performansını geliştirir. Veriler istendiğinde, Microsoft Jet veritabanı altyapısı, verileri sunucudan almak yerine önce istenen verilerin önbelleğini denetler, bu da daha fazla zaman alır. ODBC veri kaynağından gelmeyen veriler önbellekte kaydedilmez.
 
-Ekli bir tablo gibi herhangi bir ODBC veri kaynağı, yerel bir önbellek sağlayabilirsiniz. Önbellek oluşturmak için bir kayıt kümesi nesnesi uzak veri kaynağı, çağrı açın `SetCacheSize` ve `SetCacheStart` üye işlevleri ve sonra çağrı `FillCache` üye işlevini veya taşıma işlemlerini birini kullanarak kayıt adımlayın. *LSize* parametresinin `SetCacheSize` üye işlev uygulamanızı çalışabilir ile tek seferde kayıt sayısı üzerinde temel alabilir. Örneğin, ekranda görüntülenecek veri kaynağı olarak bir kayıt kümesi kullanıyorsanız çağrılsaydı `SetCacheSize` *lSize* parametre olarak 20 kayıtları tek seferde görüntülemek için 20.
+Ekli tablo gibi tüm ODBC veri kaynakları yerel bir önbelleğe sahip olabilir. Önbellek oluşturmak için, uzak veri kaynağından bir kayıt kümesi nesnesi açın, `SetCacheSize` ve `SetCacheStart` üye işlevlerini çağırın, sonra `FillCache` üye işlevini çağırın veya taşıma işlemlerinden birini kullanarak kayıtlarda gezinin. `SetCacheSize` member işlevinin *lSize* parametresi, uygulamanızın tek seferde üzerinde çalıştığı kayıt sayısına bağlı olabilir. Örneğin, ekranda görüntülenecek verilerin kaynağı olarak bir kayıt kümesi kullanıyorsanız, 20 kaydı tek seferde göstermek için `SetCacheSize` *lSize* parametresini 20 olarak geçirebilirsiniz.
 
-İlgili bilgiler için DAO Yardımı'ndaki "CacheSize CacheStart Özellikler" bölümüne bakın.
+İlgili bilgiler için, DAO yardımı 'nda "CacheSize, CacheStart özellikleri" konusuna bakın.
 
-##  <a name="setcachestart"></a>  CDaoRecordset::SetCacheStart
+##  <a name="setcachestart"></a>CDaoRecordset:: SetCacheStart
 
-Önbelleğe alınacak kayıt kümesinde yer ilk kaydın belirtmek için bu üye işlevini çağırın.
+Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işaretini belirtmek için bu üye işlevini çağırın.
 
 ```
 void SetCacheStart(COleVariant varBookmark);
@@ -2210,25 +2210,25 @@ void SetCacheStart(COleVariant varBookmark);
 ### <a name="parameters"></a>Parametreler
 
 *varBookmark*<br/>
-A [COleVariant](../../mfc/reference/colevariant-class.md) önbelleğe alınacak kayıt kümesinde yer ilk kaydın belirtir.
+Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işaretini belirten bir [Cotavariant](../../mfc/reference/colevariant-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yer işareti değeri için herhangi bir kayıttan kullanabileceğiniz *varBookmark* parametresinin `SetCacheStart` üye işlevi. Geçerli kayıtla önbelleği başlatmak, kullanarak kayıt için bir yer işareti oluşturmak istediğiniz kayıt olun [SetBookmark](#setbookmark)ve parametresi için olarak yer işareti değeri geçirin `SetCacheStart` üye işlevi.
+`SetCacheStart` member işlevinin *varBookmark* parametresi için herhangi bir kaydın yer işareti değerini kullanabilirsiniz. Önbelleği geçerli kayıt ile başlatmak istediğiniz kaydı yapın, [SetBookmark](#setbookmark)kullanarak bu kayıt için bir yer işareti oluşturun ve bookmark değerini `SetCacheStart` member işlevinin parametresi olarak geçirin.
 
-Microsoft Jet veritabanı altyapısı, önbellekten önbellek aralığı içinde kayıt isteklerini ve sunucudan önbellek aralığın dışında kayıtları ister.
+Microsoft Jet veritabanı altyapısı, önbellekten önbellek aralığı içinde kayıt ister ve sunucudan önbellek aralığı dışında kayıtlar ister.
 
-Kayıtlar önbellekten eşzamanlı olarak diğer kullanıcılar tarafından kaynak verilerde yapılan değişiklikleri yansıtmaz.
+Önbellekten alınan kayıtlar, diğer kullanıcılar tarafından kaynak verilerde aynı anda yapılan değişiklikleri yansıtmaz.
 
-Tüm önbelleğe alınan verilerin bir güncelleştirmeyi zorlamak için geçirmek *lSize* parametresinin `SetCacheSize` 0 çağrı `SetCacheSize` yeniden önbellek boyutu, başlangıçta istenen ve sonra çağrı `FillCache` üye işlevi.
+Önbelleğe alınmış tüm verilerin güncelleştirilmesini zorlamak için, `SetCacheSize` *lSize* parametresini 0 olarak geçirin, ilk olarak istediğiniz önbelleğin boyutuyla yeniden `SetCacheSize` çağırın ve ardından `FillCache` üye işlevini çağırın.
 
-Bir UNICODE kayıt oluşturmadığınızı unutmayın, `COleVariant` nesne ANSI açıkça da bildirilmelidir. Bu kullanarak yapılabilir [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)**  oluşturucuyla biçiminin *vtSrc* kümesine `VT_BSTRT` (ANSI) kullanarak veya `COleVariant` işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** ile *vtSrc* kümesine `VT_BSTRT`.
+Bir UNICODE kayıt kümesi oluşturmadıysanız, `COleVariant` nesnesinin açıkça ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* 'nin `VT_BSTRT` (ANSI) olarak ayarlandığı **ya da `COleVariant`** işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring) **(** *lpszSrc* **,** *vtSrc* **)** *ile birlikte `VT_BSTRT`olarak ayarlanmış bir* Oluşturucu olan [cotavaryant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant) **(** *lpszSrc*
 
-İlgili bilgiler için CacheSize CacheStart özelliklerini DAO Yardımı'ndaki konusuna".
+İlgili bilgiler için, DAO yardımı 'nda CacheSize, CacheStart özellikleri "konusuna bakın.
 
-##  <a name="setcurrentindex"></a>  CDaoRecordset::SetCurrentIndex
+##  <a name="setcurrentindex"></a>CDaoRecordset:: SetCurrentIndex
 
-Bir dizin üzerinde tablo türünde bir kayıt kümesi ayarlamak için bu üye işlevini çağırın.
+Tablo türü bir kayıt kümesinde bir dizin ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetCurrentIndex(LPCTSTR lpszIndex);
@@ -2241,17 +2241,17 @@ Ayarlanacak dizinin adını içeren bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel tablolarındaki kayıtlara herhangi belirli bir sırada depolanmaz. Dizin ayarlama veritabanından döndürülen kayıtları sırasını değiştirir, ancak kayıtları depolandığı sırayı etkilemez. Belirtilen dizinde zaten tanımlanmış olması gerekir. Var olmayan bir dizin nesnesi kullanmayı denerseniz veya çağırdığınızda dizini ayarlanmazsa [arama](#seek), MFC, bir özel durum oluşturur.
+Temel tablolardaki kayıtlar belirli bir sırada depolanmaz. Bir dizin ayarlandığında, veritabanından döndürülen kayıtların sırası değişir, ancak kayıtların depolandığı sırayı etkilemez. Belirtilen dizin zaten tanımlanmış olmalıdır. Varolmayan bir dizin nesnesi kullanmayı denerseniz veya [arama](#seek)çağrısı yaptığınızda Dizin ayarlanmamışsa, MFC bir özel durum oluşturur.
 
-Yeni bir dizin tablosu için çağırarak oluşturabilirsiniz [CDaoTableDef::CreateIndex](../../mfc/reference/cdaotabledef-class.md#createindex) ve yeni bir dizin çağırarak temel alınan TableDef dizinleri koleksiyona ekleme [CDaoTableDef::Append](../../mfc/reference/cdaotabledef-class.md#append), ve kapatıp yeniden açmayı kayıt.
+[CDaoTableDef:: CreateIndex](../../mfc/reference/cdaotabledef-class.md#createindex) ' i çağırarak ve sonra, [CDaoTableDef:: Append](../../mfc/reference/cdaotabledef-class.md#append)öğesini çağırarak ve sonra kayıt kümesini yeniden açarak temel alınan TableDef 'in Indexes koleksiyonuna yeni dizin ekleyerek tablo için yeni bir dizin oluşturabilirsiniz.
 
-Bir tablo türü kayıt kümesinden döndürülen kayıtları yalnızca temel alınan değer özelliği tanımlanmış dizinleri göre sıralanabilir. Kayıtları başka bir düzende sıralamak için dinamik tür veya anlık görüntü türü kayıt kümesi bir SQL kullanarak açabilirsiniz **ORDERBY** yan tümcesi içinde depolanan [CDaoRecordset::m_strSort](#m_strsort).
+Tablo türü bir kayıt kümesinden döndürülen kayıtlar yalnızca temel alınan TableDef için tanımlanan dizinlerde sıralanabilir. Kayıtları başka bir sırada sıralamak için, [CDaoRecordset:: m_strSort](#m_strsort)içinde depolanan bir SQL **ORDERBY** yan tümcesini kullanarak değişken türü veya anlık görüntü türü bir kayıt kümesi açabilirsiniz.
 
-Konu "Dizin nesnesi" ve "geçerli dizinde" DAO Yardım tanımı ilgili bilgi için bkz.
+İlgili bilgiler için, DAO yardımı 'nda "Dizin nesnesi" ve tanım "geçerli dizin" konusuna bakın.
 
-##  <a name="setfielddirty"></a>  CDaoRecordset::SetFieldDirty
+##  <a name="setfielddirty"></a>CDaoRecordset:: SetFieldDirty
 
-Alan veri üyesi olarak değiştirilmiş veya değişmemiş olarak kümesinin bayrağı için bu üye işlevini çağırın.
+Kayıt kümesinin alan veri üyesini değiştirilmiş veya değiştirilmemiş olarak işaretlemek için bu üye işlevini çağırın.
 
 ```
 void SetFieldDirty(
@@ -2261,40 +2261,40 @@ void SetFieldDirty(
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Kayıt kümesi veya NULL bir alan veri üyesinin adresini içerir. NULL ise, kayıt kümesindeki tüm alan veri üyeleri işaretlenir. (C++ NULL değil Null ile aynı veritabanı terminolojisinde, "herhangi bir değere sahip." anlamına gelir)
+*bakın*<br/>
+Kayıt kümesindeki bir alan veri üyesinin adresini veya NULL değerini içerir. NULL ise, kayıt kümesindeki tüm alan verisi üyeleri işaretlenir. (C++ Null, Veritabanı terminolojisinde null ile aynı değildir, yani "hiçbir değer yok" anlamına gelir.)
 
 *bDirty*<br/>
-"(Değiştirilmiş) kirli olarak" işaretlenmesini alan veri üyesi ise, TRUE. "(Değişmeden) temiz olarak" işaretlenmesini alan veri üyesi ise, aksi takdirde FALSE.
+Alan veri üyesi "kirli" (değiştirilmiş) olarak işaretlenmek için TRUE. Aksi takdirde, alan veri üyesi "temiz" (değiştirilmemiş) olarak işaretlenmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alanları değişmemiş olarak işaretlenmesi, alanı güncelleştirilmez sağlar.
+Alanları değiştirilmemiş olarak işaretlemek alanın güncelleştirilmesini sağlar.
 
-Framework işaretleri alan veri üyeleri, veri kaynağında kayıt DAO kayıt alanı değişimi (DFX) mekanizması tarafından yazılır emin olmak için değiştirildi. Genellikle bir alanın değerini değiştirme alanı kirli otomatik olarak ayarlar, nadiren çağırmanız gerekir böylece `SetFieldDirty` kendiniz, ancak bazen isteyebileceğiniz sütunları açıkça güncelleştirildi veya kaldırılacak alanı verileri hangi değeri bağımsız olarak eklenen emin emin olmak üye. DFX mekanizması PSEUDONULL kullanımını da kullanır. Daha fazla bilgi için [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
+Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, nadiren `SetFieldDirty` çağırmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması, sözde kullanım kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
 
-İki kez arabelleğe alma mekanizması kullanılmadığından, ardından bir alanın değerini değiştirerek otomatik olarak alanın kirli olarak ayarlamaz. Bu durumda, alan açıkça kirli olarak ayarlamak gerekli olacaktır. Bulunan bayrağı [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) otomatik alan denetleniyor kontrol eder.
+Çift arabelleğe alma mekanizması kullanılmıyorsa, alanın değerini değiştirmek alanı otomatik olarak kirli olarak ayarlamamaktadır. Bu durumda, alanı açıkça kirli olarak ayarlamanız gerekir. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) bulunan bayrak, bu otomatik alan denetimini denetler.
 
 > [!NOTE]
->  Yalnızca çağrısı yapmanız sonrasında bu üye işlevi çağrısı [Düzenle](#edit) veya [AddNew](#addnew).
+>  Yalnızca [Edit](#edit) veya [AddNew](#addnew)çağrıldıktan sonra bu üye işlevini çağırın.
 
-İşlevinin ilk bağımsız değişken işlev tümüne uygulanacak için NULL kullanarak `outputColumn` alanları değil **param** alanlarını `CDaoFieldExchange`. Örneğin, çağrı
+İşlevin ilk bağımsız değişkeni için NULL kullanmak, işlevi, `CDaoFieldExchange`**param** alanlarını değil, tüm `outputColumn` alanlarına uygular. Örneğin, çağrı
 
 [!code-cpp[NVC_MFCDatabase#6](../../mfc/codesnippet/cpp/cdaorecordset-class_6.cpp)]
 
-yalnızca ayarlar `outputColumn` null; alanlar **param** alanları etkilenmez.
+yalnızca `outputColumn` alanlarını NULL olarak ayarlar; **param** alanları etkilenmeyecektir.
 
-Üzerinde çalışmak için bir **param**, tek tek gerçek adresi sağlamalısınız **param** gibi çalışmak istediğiniz:
+Bir **param**üzerinde çalışmak için, çalışmak istediğiniz bağımsız **param** 'ın gerçek adresini sağlamanız gerekir, örneğin:
 
 [!code-cpp[NVC_MFCDatabase#7](../../mfc/codesnippet/cpp/cdaorecordset-class_7.cpp)]
 
-Yani tüm ayarlayamıyor **param** ile yapabildiğiniz gibi alanları NULL olarak `outputColumn` alanları.
+Bu, `outputColumn` alanları sayesinde, tüm **param** alanlarını null olarak ayarlayamayacağı anlamına gelir.
 
-`SetFieldDirty` aracılığıyla uygulanır `DoFieldExchange`.
+`SetFieldDirty`, `DoFieldExchange`ile uygulanır.
 
-##  <a name="setfieldnull"></a>  CDaoRecordset::SetFieldNull
+##  <a name="setfieldnull"></a>CDaoRecordset:: SetFieldNull
 
-Alan veri üyesi kayıt kümesinin (özellikle hiçbir değer yok) Null veya boş olmayan olarak işaretlemek için bu üye işlevini çağırın.
+Kayıt kümesinin alan veri üyesini null (özellikle değer olmadan) veya null olmayan olarak işaretlemek için bu üye işlevini çağırın.
 
 ```
 void SetFieldNull(
@@ -2304,36 +2304,36 @@ void SetFieldNull(
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Kayıt kümesi veya NULL bir alan veri üyesinin adresini içerir. NULL ise, kayıt kümesindeki tüm alan veri üyeleri işaretlenir. (C++ NULL değil Null ile aynı veritabanı terminolojisinde, "herhangi bir değere sahip." anlamına gelir)
+*bakın*<br/>
+Kayıt kümesindeki bir alan veri üyesinin adresini veya NULL değerini içerir. NULL ise, kayıt kümesindeki tüm alan verisi üyeleri işaretlenir. (C++ Null, Veritabanı terminolojisinde null ile aynı değildir, yani "hiçbir değer yok" anlamına gelir.)
 
 *bNull*<br/>
-Alan veri üyesi değeri (Null) sahip olarak işaretlenen ise sıfır olmayan. Null olmayan işaretlenmesine alan veri üyesi ise, aksi durumda 0.
+Alan verisi üyesinin değer yok (null) olarak işaretlenmek için sıfır dışında. Aksi takdirde 0 alan verisi üyesi null olarak işaretlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetFieldNull` içinde bağlı alanlar için kullanılan `DoFieldExchange` mekanizması.
+`SetFieldNull`, `DoFieldExchange` mekanizmasında bağlantılı alanlar için kullanılır.
 
-Yeni bir kayıt için bir kayıt kümesi eklediğinizde, tüm alan veri üyeleri başlangıçta Null değerine ayarlayın ve "(değiştirilmiş) kirli olarak" bayrak. Bir veri kaynağındaki bir kaydı aldığınızda, sütunlarını ya da zaten değerlere sahip veya Null. Bir alan Null yapmak uygun değilse bir [CDaoException](../../mfc/reference/cdaoexception-class.md) oluşturulur.
+Bir kayıt kümesine yeni bir kayıt eklediğinizde, tüm alan veri üyeleri başlangıçta null değere ayarlanır ve "kirli" (değiştirildi) olarak işaretlenir. Bir veri kaynağından bir kayıt aldığınızda, sütunlarının değerleri zaten var ya da null. Alanı null yapmak için uygun değilse, bir [CDaoException](../../mfc/reference/cdaoexception-class.md) oluşturulur.
 
-Örneğin, özel bir alan geçerli kaydın çağrısı bir değer olmaması olarak atamak istiyorsanız iki kez arabelleğe alma mekanizması kullanıyorsanız, `SetFieldNull` ile *bNull* boş olarak işaretlemek için TRUE olarak ayarlayın. Bir alan daha önce Null olarak işaretlendi ve artık bir değeri vermek istiyorsanız, yeni değeri ayarlamanız yeterlidir. Null bayrağıyla kaldırmak zorunda değilsiniz `SetFieldNull`. Alan Null olmasına izin verilip verilmeyeceğini belirlemek için çağrı [IsFieldNullable](#isfieldnullable).
+Çift arabelleğe alma mekanizması kullanıyorsanız, örneğin, özellikle geçerli kaydın bir alanını bir değer içermeyecek şekilde atamak istiyorsanız, null olarak işaretlemek için *bNull* değeri true olarak ayarlandığında `SetFieldNull` çağırın. Bir alan önceden null olarak işaretlenmişse ve bundan böyle bir değer vermek istiyorsanız, yeni değerini ayarlamanız yeterlidir. Null bayrağını `SetFieldNull`kaldırmak zorunda değilsiniz. Alanın null olmasına izin verilip verilmeyeceğini anlamak için, [Isfieldnullenebilir](#isfieldnullable)çağırın.
 
-İki kez arabelleğe alma mekanizması kullanmıyorsanız, ardından bir alanın değerini değiştirerek otomatik olarak alanın kirli ve Null olarak ayarlamaz. Özellikle, kirli ve Null olmayan alanları ayarlamanız gerekir. Bulunan bayrağı [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) otomatik alan denetleniyor kontrol eder.
+Çift arabelleğe alma mekanizmasını kullanmıyorsanız, alanın değerini değiştirmek alanı kirli ve null olmayan şekilde otomatik olarak ayarlar. Yalnızca Dirty ve null olmayan alanları ayarlamanız gerekir. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) bulunan bayrak, bu otomatik alan denetimini denetler.
 
-DFX mekanizması PSEUDONULL kullanımını kullanır. Daha fazla bilgi için [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
+DFX mekanizması, sözde kullanım kullanımını kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
 
 > [!NOTE]
->  Yalnızca çağrısı yapmanız sonrasında bu üye işlevi çağrısı [Düzenle](#edit) veya [AddNew](#addnew).
+>  Yalnızca [Edit](#edit) veya [AddNew](#addnew)çağrıldıktan sonra bu üye işlevini çağırın.
 
-İşlevinin ilk bağımsız değişkeni yalnızca işlev geçerlidir NULL kullanarak `outputColumn` alanları değil **param** alanlarını `CDaoFieldExchange`. Örneğin, çağrı
+İşlevin ilk bağımsız değişkeni için NULL kullanmak, işlevi yalnızca `outputColumn` alanlara uygular, bu, `CDaoFieldExchange`**param** alanları değildir. Örneğin, çağrı
 
 [!code-cpp[NVC_MFCDatabase#8](../../mfc/codesnippet/cpp/cdaorecordset-class_8.cpp)]
 
-yalnızca ayarlar `outputColumn` null; alanlar **param** alanları etkilenmez.
+yalnızca `outputColumn` alanlarını NULL olarak ayarlar; **param** alanları etkilenmeyecektir.
 
-##  <a name="setfieldvalue"></a>  CDaoRecordset::SetFieldValue
+##  <a name="setfieldvalue"></a>CDaoRecordset:: SetFieldValue
 
-Sıralı konumu veya dize değerini değiştirerek bir alanın değerini ayarlamak için bu üye işlevini çağırın.
+Bir alanın değerini sıra konumuna göre veya dizenin değerini değiştirerek ayarlamak için bu üye işlevini çağırın.
 
 ```
 virtual void SetFieldValue(
@@ -2359,25 +2359,25 @@ void SetFieldValue(
 Bir alanın adını içeren bir dize işaretçisi.
 
 *varValue*<br/>
-Bir başvuru bir [COleVariant](../../mfc/reference/colevariant-class.md) alanın içeriğini değerini içeren nesne.
+Alan içeriğinin değerini içeren bir [Cotavariant](../../mfc/reference/colevariant-class.md) nesnesine başvuru.
 
-*nIndex*<br/>
-(Sıfır tabanlı) kayıt kümesinin alanlar koleksiyonu sıralı alanın konumunu temsil eden bir tamsayı.
+*nDizin*<br/>
+Kayıt kümesinin Fields koleksiyonundaki (sıfır tabanlı) alanın sıra konumunu temsil eden bir tamsayı.
 
 *lpszValue*<br/>
-Alanın içeriğini değerini içeren bir dize işaretçisi.
+Alan içeriğinin değerini içeren bir dize işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `SetFieldValue` ve [GetFieldValue](#getfieldvalue) alanlar, çalışma zamanı yerine statik bağlama sütunları kullanarak dinamik olarak bağlamak için [DoFieldExchange](#dofieldexchange) mekanizması.
+[DoFieldExchange](#dofieldexchange) mekanizmasını kullanarak sütunları statik olarak bağlama yerine çalışma zamanında dinamik olarak bağlamak için `SetFieldValue` ve [GetFieldValue](#getfieldvalue) kullanın.
 
-Bir UNICODE kayıt oluşturmuyorsanız, ya da bir formu kullanmanız gerektiğini unutmayın `SetFieldValue` içermeyen bir `COleVariant` parametresi veya `COleVariant` nesne ANSI açıkça da bildirilmelidir. Bu kullanarak yapılabilir [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)**  oluşturucuyla biçiminin *vtSrc* kümesine `VT_BSTRT` (ANSI) kullanarak veya `COleVariant` işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** ile *vtSrc* kümesine `VT_BSTRT`.
+Bir UNICODE kayıt kümesi oluşturmadıysanız, bir `COleVariant` parametresi içermeyen `SetFieldValue` bir form kullanmanız gerektiğini veya `COleVariant` nesnesinin açıkça ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* 'nin `VT_BSTRT` (ANSI) olarak ayarlandığı **ya da `COleVariant`** işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring) **(** *lpszSrc* **,** *vtSrc* **)** *ile birlikte `VT_BSTRT`olarak ayarlanmış bir* Oluşturucu olan [cotavaryant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant) **(** *lpszSrc*
 
-İlgili bilgiler için "Alanı nesnesi" ve DAO Yardımı'nda "Value özelliği" konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "alan nesnesi" ve "değer özelliği" konularına bakın.
 
-##  <a name="setfieldvaluenull"></a>  CDaoRecordset::SetFieldValueNull
+##  <a name="setfieldvaluenull"></a>CDaoRecordset:: SetFieldValueNull
 
-Alanın bir Null değerine ayarlamak için bu üye işlevini çağırın.
+Alanı boş bir değere ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetFieldValueNull(int nIndex);
@@ -2386,21 +2386,21 @@ void SetFieldValueNull(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Kayıt kümesi için sıfır tabanlı dizine göre arama alanı dizini.
+*nDizin*<br/>
+Sıfır tabanlı dizine göre arama için kayıt kümesindeki alanın dizini.
 
 *lpszName*<br/>
-Ada göre arama kümesinde, alanın adı.
+Ada göre arama için, kayıt kümesindeki alanın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ NULL değil diğer bir deyişle, Veritabanı terminolojisinde, Null, aynı "herhangi bir değere sahip."
+C++NULL, Veritabanı terminolojisinde "değer olmadan" anlamına gelen null ile aynı değildir.
 
-İlgili bilgiler için "Alanı nesnesi" ve DAO Yardımı'nda "Value özelliği" konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "alan nesnesi" ve "değer özelliği" konularına bakın.
 
-##  <a name="setlockingmode"></a>  CDaoRecordset::SetLockingMode
+##  <a name="setlockingmode"></a>CDaoRecordset:: SetLockingMode
 
-Kayıt kümesi için kilitleme türünü ayarlamak için bu üye işlevini çağırın.
+Kayıt kümesine yönelik kilitleme türünü ayarlamak için bu üye işlevi çağırın.
 
 ```
 void SetLockingMode(BOOL bPessimistic);
@@ -2408,24 +2408,24 @@ void SetLockingMode(BOOL bPessimistic);
 
 ### <a name="parameters"></a>Parametreler
 
-*bPessimistic*<br/>
+*Bkötümser*<br/>
 Kilitleme türünü gösteren bir bayrak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kötümser kilitleme aslında düzenlemekte olduğunuz kayıt içeren 2 K sayfası olduğunda çağırmanızı hemen sonra kilitli `Edit` üye işlevi. Çağırdığınızda sayfanın açılmış `Update` veya `Close` taşıma veya Bul işlemlerden birini ya da bir üye işlevi.
+Kötümser kilitleme etkin olduğunda, `Edit` üye işlevini çağırdığınızda, düzenlemekte olduğunuz kaydı içeren 2K sayfası kilitlenir. `Update` veya `Close` üye işlevini veya taşıma ya da bulma işlemlerinden birini çağırdığınızda sayfanın kilidi açılır.
 
-Yalnızca kaydı ile güncelleştirilirken İyimser kilitleme etkindir, kayıt içeren 2 K sayfası kilitlenir `Update` üye işlevi.
+İyimser kilitleme etkin olduğunda, kaydı içeren 2K sayfası yalnızca kayıt `Update` üye işleviyle güncelleştirilirken kilitlenir.
 
-Bir sayfa kilitliyse, başka bir kullanıcı aynı sayfadaki kayıtları düzenleyebilirsiniz. Eğer `SetLockingMode` ve sıfır olmayan bir değer geçirin ve başka bir kullanıcı kilitli sayfası zaten sahipse, çağırdığınızda bir özel durum `Edit`. Diğer kullanıcıların, kilitli sayfalarından verileri okuyabilir.
+Bir sayfa kilitliyse, başka hiçbir Kullanıcı kayıtları aynı sayfada düzenleyemez. `SetLockingMode` çağırır ve sıfır dışında bir değer geçirirseniz ve başka bir kullanıcı zaten sayfayı kilitlediyseniz, `Edit`çağırdığınızda bir özel durum oluşturulur. Diğer kullanıcılar, kilitli sayfalardan verileri okuyabilir.
 
-Eğer `SetLockingMode` sıfır değeri ile ve sonraki çağrı `Update` sayfanın başka bir kullanıcı tarafından kilitliyken, bu bir özel durum oluşur. Kaydınız için başka bir kullanıcı tarafından yapılan değişiklikleri (ve değişiklikleri kaybetmek için), çağrı `SetBookmark` üye işlevi geçerli kaydın yer işareti değeri.
+Sıfır değeri olan `SetLockingMode` çağırırsanız ve daha sonra `Update` çağrı, sayfa başka bir kullanıcı tarafından kilitliyken, bir özel durum oluşur. Kayıt sırasında başka bir kullanıcı tarafından yapılan değişiklikleri görmek için (ve değişikliklerinizi kaybetmek), `SetBookmark` üye işlevini geçerli kaydın yer işareti değeriyle çağırın.
 
-ODBC veri kaynakları ile çalışırken, kilitleme zaman iyimser modudur.
+ODBC veri kaynaklarıyla çalışırken kilitleme modu her zaman iyimser olur.
 
-##  <a name="setparamvalue"></a>  CDaoRecordset::SetParamValue
+##  <a name="setparamvalue"></a>CDaoRecordset:: SetParamValue
 
-Bir parametrenin değeri, çalışma zamanında kümenize ayarlamak için bu üye işlevini çağırın.
+Çalışma zamanında kayıt kümesindeki bir parametrenin değerini ayarlamak için bu üye işlevini çağırın.
 
 ```
 virtual void SetParamValue(
@@ -2439,24 +2439,24 @@ virtual void SetParamValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Parametre querydef ait parametre koleksiyonunda sayısal konumu.
+*nDizin*<br/>
+QueryDef 'in Parameters koleksiyonundaki parametrenin sayısal konumu.
 
 *var*<br/>
-Ayarlanacak değer; Açıklamalara bakın.
+Ayarlanacak değer; bkz. açıklamalar.
 
 *lpszName*<br/>
-Değer, ayarlamak istediğiniz parametrenin adı.
+Değerini ayarlamak istediğiniz parametrenin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre zaten SQL dizesi kümesinin bir parçası olarak kurulmuş gerekir. Parametre adını veya koleksiyon içindeki dizin konumu erişebilirsiniz.
+Parametrenin, kayıt kümesinin SQL dizesinin parçası olarak zaten oluşturulmuş olması gerekir. Parametreye adına veya koleksiyondaki dizin konumuna göre erişebilirsiniz.
 
-Değeri olarak ayarlamak için belirtin bir `COleVariant` nesne. İstenen değeri ve türü ayarlama hakkında bilgi için `COleVariant` nesne, sınıfına bakın [COleVariant](../../mfc/reference/colevariant-class.md). Bir UNICODE kayıt oluşturmadığınızı unutmayın, `COleVariant` nesne ANSI açıkça da bildirilmelidir. Bu kullanarak yapılabilir [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)**  oluşturucuyla biçiminin *vtSrc* kümesine `VT_BSTRT` (ANSI) kullanarak veya `COleVariant` işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** ile *vtSrc* kümesine `VT_BSTRT`.
+`COleVariant` nesne olarak ayarlanacak değeri belirtin. `COleVariant` nesneniz için istenen değeri ve türü ayarlama hakkında daha fazla bilgi için bkz. sınıf [Cotavariant](../../mfc/reference/colevariant-class.md). Bir UNICODE kayıt kümesi oluşturmadıysanız, `COleVariant` nesnesinin açıkça ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* 'nin `VT_BSTRT` (ANSI) olarak ayarlandığı **ya da `COleVariant`** işlevi [SetString](../../mfc/reference/colevariant-class.md#setstring) **(** *lpszSrc* **,** *vtSrc* **)** *ile birlikte `VT_BSTRT`olarak ayarlanmış bir* Oluşturucu olan [cotavaryant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant) **(** *lpszSrc*
 
-##  <a name="setparamvaluenull"></a>  CDaoRecordset::SetParamValueNull
+##  <a name="setparamvaluenull"></a>CDaoRecordset:: SetParamValueNull
 
-Parametre için Null değeri ayarlamak için bu üye işlevini çağırın.
+Parametreyi null değere ayarlamak için bu üye işlevi çağırın.
 
 ```
 void SetParamValueNull(int nIndex);
@@ -2465,19 +2465,19 @@ void SetParamValueNull(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Kayıt kümesi için sıfır tabanlı dizine göre arama alanı dizini.
+*nDizin*<br/>
+Sıfır tabanlı dizine göre arama için kayıt kümesindeki alanın dizini.
 
 *lpszName*<br/>
-Ada göre arama kümesinde, alanın adı.
+Ada göre arama için, kayıt kümesindeki alanın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ NULL değil diğer bir deyişle, Veritabanı terminolojisinde, Null, aynı "herhangi bir değere sahip."
+C++NULL, Veritabanı terminolojisinde "değer olmadan" anlamına gelen null ile aynı değildir.
 
-##  <a name="setpercentposition"></a>  CDaoRecordset::SetPercentPosition
+##  <a name="setpercentposition"></a>CDaoRecordset:: SetPercentPosition
 
-Bir kayıt kümesinde yüzdesine göre kayıt kümesi nesnesi geçerli kayıt yaklaşık konumunu değiştiren bir değer ayarlamak için bu üye işlevini çağırın.
+Kayıt kümesindeki kayıtların yüzdesine göre kayıt kümesi nesnesindeki geçerli kaydın yaklaşık konumunu değiştiren bir değer ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetPercentPosition(float fPosition);
@@ -2490,18 +2490,18 @@ void SetPercentPosition(float fPosition);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dinamik tür veya anlık görüntü türü kayıt kümesi ile çalışırken, ilk kayıt kümesini çağırmadan önce son kayıt taşıyarak doldurmak `SetPercentPosition`. Eğer `SetPercentPosition` kayıt kümesinin tam doldurma önce taşıma değeri gösterilen erişilen kayıt sayısıyla miktarıdır [GetRecordCount](#getrecordcount). Çağırarak kayıt son taşıyabilirsiniz `MoveLast`.
+DYNASET türü veya anlık görüntü türü bir kayıt kümesiyle çalışırken, önce `SetPercentPosition`çağırmadan önce son kayda geçerek kayıt kümesini doldurun. Kayıt kümesini tamamen doldurmadan önce `SetPercentPosition` çağırırsanız, hareket miktarı [GetRecordCount](#getrecordcount)değeri tarafından belirtilen şekilde erişilen kayıt sayısına göre değişir. `MoveLast`çağırarak son kayda geçebilirsiniz.
 
-Bir kez çağırmanız `SetPercentPosition`, o değerine karşılık gelen yaklaşık bir konumda kayıt geçerli olur.
+`SetPercentPosition`çağırdıktan sonra, bu değere karşılık gelen yaklaşık konumdaki kayıt geçerli olur.
 
 > [!NOTE]
->  Çağırma `SetPercentPosition` bir kayıt kümesindeki belirli bir kaydı için geçerli kayıt önerilmez taşımak için. Çağrı [SetBookmark](#setbookmark) üye işlevini yerine.
+>  Geçerli kaydı bir kayıt kümesindeki belirli bir kayda taşımak için `SetPercentPosition` çağrısı yapmanız önerilmez. Bunun yerine [SetBookmark](#setbookmark) üye işlevini çağırın.
 
-İlgili bilgiler için DAO Yardımı'nda "PercentPosition özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "PercentPosition Özelliği" konusuna bakın.
 
-##  <a name="update"></a>  CDaoRecordset::Update
+##  <a name="update"></a>CDaoRecordset:: Update
 
-Bu üye işlevi çağrısı yapıldıktan sonra çağırma `AddNew` veya `Edit` üye işlevi.
+`AddNew` veya `Edit` member işlevine yapılan çağrıdan sonra bu üye işlevini çağırın.
 
 ```
 virtual void Update();
@@ -2509,21 +2509,21 @@ virtual void Update();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu çağrı tamamlamak için gereken `AddNew` veya `Edit` işlemi.
+`AddNew` veya `Edit` işleminin tamamlanabilmesi için bu çağrı gereklidir.
 
-Her ikisi de `AddNew` ve `Edit` eklendi veya düzenlenmiş verilerin yerleştirilir düzenleme arabelleği veri kaynağına kaydetmek için hazırlayın. `Update` verileri kaydeder. İşaretli veya değiştirilmiş olarak algılanan yalnızca bu alanları güncelleştirilir.
+Hem `AddNew` hem de `Edit` veri kaynağına kaydetmek için eklenen veya düzenlenen verilerin yerleştirildiği bir düzenleme arabelleği hazırlayın. `Update` verileri kaydeder. Yalnızca değiştirilen veya değiştirilmiş olarak algılanan alanlar güncelleştirilir.
 
-Veri kaynağı işlemleri destekliyorsa, yapabileceğiniz `Update` çağırın (ve kendi ilişkili `AddNew` veya `Edit` çağrısı) bir işlemin bir parçası.
+Veri kaynağı işlemleri destekliyorsa, `Update` çağrısını (ve buna karşılık gelen `AddNew` veya `Edit` çağrısını) bir işlemin parçası yapabilirsiniz.
 
 > [!CAUTION]
-> Eğer `Update` ilk ya da çağırma `AddNew` veya `Edit`, `Update` oluşturur bir `CDaoException`. Eğer `AddNew` veya `Edit`, çağırmalısınız `Update` çağırmadan önce [MoveNext](#movenext) veya kayıt veya veri kaynağı bağlantısı'nı kapatın. Aksi takdirde, bildirim yapılmadan değişiklikleriniz kaybolur.
+> Önce `AddNew` veya `Edit`çağırılmadan `Update` çağırırsanız `Update` bir `CDaoException`oluşturur. `AddNew` veya `Edit`çağırırsanız, [MoveNext](#movenext) 'i çağırmadan önce `Update` çağırmanız veya kayıt kümesini ya da veri kaynağı bağlantısını kapatmanız gerekir. Aksi takdirde, değişiklikleriniz bildirim olmadan kaybedilir.
 
-Kayıt kümesi nesnesi çok kullanıcılı bir ortamda zor kilitliyken kayıt kilitli kalır `Edit` güncelleştirme tamamlanana kadar kullanılır. Kayıt kümesi iyimser kilitliyse kayıt kilitli ve veritabanında güncelleştirilmeden önce düzenlenmeden kayıtla karşılaştırılır. Aradığınız kaydı değişmişse `Edit`, `Update` işleminin başarısız olması ve MFC bir özel durum oluşturur. Kilitleme moduyla değiştirebilirsiniz `SetLockingMode`.
+Bir çok kullanıcılı ortamda pessimistically kayıt kümesi nesnesi kilitlendiğinde, güncelleştirme tamamlanana kadar `Edit`, kayıt zaman kilitli kalır. Kayıt kümesi optimizasyonu bir şekilde kilitliyse, kayıt kilitlenir ve veritabanında güncelleştirildikten hemen önce önceden düzenlenen kayıtla karşılaştırılır. `Edit`çağrıldıktan sonra kayıt değiştiyse, `Update` işlemi başarısız olur ve MFC bir özel durum oluşturur. Kilitleme modunu `SetLockingMode`değiştirebilirsiniz.
 
 > [!NOTE]
-> İyimser kilitleme ODBC ve yüklenebilir ISAM gibi dış veritabanı biçimleri hakkında her zaman kullanılır.
+> İyimser kilitleme, ODBC ve yüklenebilir ISAM gibi dış veritabanı biçimlerinde her zaman kullanılır.
 
-İlgili bilgiler için "AddNew yöntemi", "CancelUpdate yöntemi", "Delete yöntemi", "LastModified özelliği", "Güncelleştirme yöntemi" ve DAO Yardımı'nda "EditMode özelliği" konulara bakın.
+İlgili bilgiler için, DAO yardımı 'nda "AddNew yöntemi", "CancelUpdate Yöntemi", "Delete yöntemi", "LastModified özelliği", "güncelleştirme yöntemi" ve "EditMode özelliği" konularına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

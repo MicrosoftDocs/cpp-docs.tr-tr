@@ -13,15 +13,15 @@ helpviewer_keywords:
 - std::istream_iterator [C++], traits_type
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
 ms.openlocfilehash: 941d625e388edc75dfe25a2de0e609c6d955ff19
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447752"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78869896"
 ---
-# <a name="istreamiterator-class"></a>istream_iterator Sınıfı
+# <a name="istream_iterator-class"></a>istream_iterator Sınıfı
 
-Bir giriş yineleyici nesnesi tanımlar. `Type` Bir giriş akışından sınıfının nesnelerini ayıklar ve bu, `basic_istream` <  `CharType`türü `pointer` `Traits`, > olan bir nesneden erişir.
+Bir giriş yineleyici nesnesi tanımlar. Bir giriş akışından `Type` sınıfının nesnelerini ayıklar. Bu, `basic_istream`< `CharType`, `Traits`> `pointer` tür, depoladığı bir nesne üzerinden erişir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,51 +36,51 @@ class istream_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*Türüyle*\
+*Tür*\
 Çıkış akışından ayıklanacak nesnenin türü.
 
 *CharType*\
-İçin karakter türünü temsil eden tür `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **char**' dır.
+`istream_iterator`için karakter türünü temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **char**' dır.
 
-*Lerdir*\
-İçin karakter türünü temsil eden tür `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits` <  `CharType`>.
+*Nitelikler*\
+`istream_iterator`için karakter türünü temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits`< `CharType`>.
 
 *Uzaklık*\
-İçin fark türünü temsil eden imzalı bir integral türü `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değerdir `ptrdiff_t`.
+`istream_iterator`için fark türünü temsil eden işaretli bir integral türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `ptrdiff_t`.
 
-Null olmayan bir saklı işaretçiyle istream_iterator sınıfının bir nesnesini oluşturduktan veya artırdıktan sonra, nesnesi ilişkili giriş akışından türünde `Type` bir nesne ayıklamaya ve depolamaya çalışır. Ayıklama işlemi başarısız olursa, nesne etkili bir şekilde depolanan işaretçinin yerini alır, böylece bir dizi sonu gösterge oluşturur.
+Null olmayan bir saklı işaretçiyle istream_iterator sınıfının bir nesnesini oluşturduktan veya artırdıktan sonra, nesne, ilişkili giriş akışından `Type` türünde bir nesne ayıklamaya ve depolamaya çalışır. Ayıklama işlemi başarısız olursa, nesne etkili bir şekilde depolanan işaretçinin yerini alır, böylece bir dizi sonu gösterge oluşturur.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[istream_iterator](#istream_iterator)|Varsayılan olarak bir akış sonu yineleyicisi veya tarafından okunan Yineleyici akış `istream_iterator` türü için `istream_iterator` başlatılmış bir değer oluşturur.|
+|[istream_iterator](#istream_iterator)|Varsayılan `istream_iterator` olarak bir akış sonu yineleyicisi veya bir yineleyicinin okuduğu akış türüyle başlatılan bir `istream_iterator` oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|Öğesinin karakter türü için sağlayan bir tür `istream_iterator`.|
-|[istream_type](#istream_type)|Akış türü `istream_iterator`için sağlayan bir tür.|
-|[traits_type](#traits_type)|Öğesinin karakter nitelikleri türü için sağlayan bir tür `istream_iterator`.|
+|[char_type](#char_type)|`istream_iterator`karakter türü için sağlayan bir tür.|
+|[istream_type](#istream_type)|`istream_iterator`akış türü için sağlayan bir tür.|
+|[traits_type](#traits_type)|`istream_iterator`karakter nitelikleri türü için sağlayan bir tür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işlecinde](#op_star)|Başvuru kaldırma işleci, `Type` `istream_iterator`tarafından bahsedilen saklanan nesne türünü döndürür.|
+|[işlecinde](#op_star)|Başvuru kaldırma işleci, `istream_iterator`tarafından bahsedilen `Type` türündeki saklı nesneyi döndürür.|
 |[operator->](#op_arrow)|Varsa, bir üyenin değerini döndürür.|
 |[işleç + +](#op_add_add)|Giriş akışındaki artırılmış nesneyi ayıklar ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Yineleyici >
+**Üstbilgi:** \<Yineleyici >
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>istream_iterator::char_type
+## <a name="char_type"></a>istream_iterator:: char_type
 
-Öğesinin karakter türü için sağlayan bir tür `istream_iterator`.
+`istream_iterator`karakter türü için sağlayan bir tür.
 
 ```cpp
 typedef CharType char_type;
@@ -88,7 +88,7 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Chartype`için bir eş anlamlı.
+Tür, `Chartype`şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -126,9 +126,9 @@ int main( )
 }
 ```
 
-## <a name="istream_iterator"></a>istream_iterator::istream_iterator
+## <a name="istream_iterator"></a>istream_iterator:: istream_iterator
 
-Varsayılan olarak bir akış sonu yineleyicisi veya tarafından okunan Yineleyici akış `istream_iterator` türü için `istream_iterator` başlatılmış bir değer oluşturur.
+Varsayılan `istream_iterator` olarak bir akış sonu yineleyicisi veya bir yineleyicinin okuduğu akış türüyle başlatılan bir `istream_iterator` oluşturur.
 
 ```cpp
 istream_iterator();
@@ -139,13 +139,13 @@ istream_iterator(istream_type& _Istr);
 ### <a name="parameters"></a>Parametreler
 
 *_Istr*\
-Öğesini başlatmak `istream_iterator`için kullanılacak giriş akışı.
+`istream_iterator`başlatmak için okunacak giriş akışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ilk Oluşturucu, giriş akışı işaretçisini null işaretçiyle başlatır ve akış sonu Yineleyici oluşturur. İkinci Oluşturucu, giriş akışı işaretçisini *& _Istr*ile başlatır, ardından türünde `Type`bir nesne ayıklamaya ve depolamaya çalışır.
+Ilk Oluşturucu, giriş akışı işaretçisini null işaretçiyle başlatır ve akış sonu Yineleyici oluşturur. İkinci Oluşturucu giriş akışı işaretçisini *& _Istr*ile başlatır, sonra `Type`türünde bir nesne ayıklamaya ve depolamaya çalışır.
 
-Akış sonu yineleyicisi, bir `istream_iterator` akışın sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+Akış sonu yineleyicisi, bir `istream_iterator` akışın sonuna ulaşmadığını test etmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -181,9 +181,9 @@ int main( )
 }
 ```
 
-## <a name="istream_type"></a>istream_iterator::istream_type
+## <a name="istream_type"></a>istream_iterator:: istream_type
 
-Akış türü `istream_iterator`için sağlayan bir tür.
+`istream_iterator`akış türü için sağlayan bir tür.
 
 ```cpp
 typedef basic_istream<CharType, Traits> istream_type;
@@ -191,15 +191,15 @@ typedef basic_istream<CharType, Traits> istream_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`basic_istream` Tür, **CharType**, **nitelikler**> için \< bir eş anlamlı.
+Tür, `basic_istream`\< **CharType**, **nitelikler**> için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-Bildirme [](#istream_iterator) ve kullanma `istream_type`hakkında bir örnek için bkz. istream_iterator.
+`istream_type`bildirme ve kullanma hakkında bir örnek için bkz. [istream_iterator](#istream_iterator) .
 
 ## <a name="op_star"></a>istream_iterator:: operator *
 
-Başvuru kaldırma işleci, `Type` `istream_iterator`tarafından bahsedilen saklanan nesne türünü döndürür.
+Başvuru kaldırma işleci, `istream_iterator`tarafından bahsedilen `Type` türündeki saklı nesneyi döndürür.
 
 ```cpp
 const Type& operator*() const;
@@ -207,7 +207,7 @@ const Type& operator*() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türündeki `Type`saklı nesne.
+`Type`türündeki saklı nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -255,9 +255,9 @@ Bir üyenin değeri (varsa).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`i->m`eşdeğerdir`(*i).m`
+`i->m` `(*i).m` eşdeğerdir
 
-İşleci döndürülür `&*this`.
+İşleci `&*this`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -291,7 +291,7 @@ int main( )
 }
 ```
 
-## <a name="op_add_add"></a>  istream_iterator::operator++
+## <a name="op_add_add"></a>istream_iterator:: operator + +
 
 Giriş akışındaki artırılmış nesneyi ayıklar ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.
 
@@ -303,7 +303,7 @@ istream_iterator<Type, CharType, Traits, Distance> operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işleci, giriş akışından ayıklanan türün `Type` artılan nesnesine bir başvuru döndürür ve ikinci üye işlevi nesnenin bir kopyasını döndürür.
+İlk üye işleci, giriş akışından ayıklanan `Type` türü artılan nesneye bir başvuru döndürür ve ikinci üye işlevi nesnenin bir kopyasını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -337,9 +337,9 @@ int main( )
 }
 ```
 
-## <a name="traits_type"></a>istream_iterator::traits_type
+## <a name="traits_type"></a>istream_iterator:: traits_type
 
-Öğesinin karakter nitelikleri türü için sağlayan bir tür `istream_iterator`.
+`istream_iterator`karakter nitelikleri türü için sağlayan bir tür.
 
 ```cpp
 typedef Traits traits_type;
@@ -386,8 +386,8 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[input_iterator_tag yapısı](../standard-library/input-iterator-tag-struct.md)\
-[Yineleyici yapısı](../standard-library/iterator-struct.md)\
-[\<Yineleyici >](../standard-library/iterator.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Input_iterator_tag Struct](../standard-library/input-iterator-tag-struct.md)\
+[Yineleyici Struct](../standard-library/iterator-struct.md)\
+[\<yineleyici >](../standard-library/iterator.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

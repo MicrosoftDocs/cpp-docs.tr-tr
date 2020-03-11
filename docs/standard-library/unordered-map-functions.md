@@ -9,19 +9,19 @@ ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
 ms.openlocfilehash: 8ad81157d12de017198afeeb48f3b329ef20dbde
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454829"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874015"
 ---
-# <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; işlevleri
+# <a name="ltunordered_mapgt-functions"></a>&lt;unordered_map&gt; işlevleri
 
 |||
 |-|-|
-|[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|
+|[takas (unordered_map)](#swap)|[takas (unordered_multimap)](#swap_function_multimap)|
 
-## <a name="swap"></a>swap (unordered_map)
+## <a name="swap"></a>takas (unordered_map)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -37,27 +37,27 @@ void swap(
 *Anahtar*\
 Anahtar türü.
 
-*Kalite*\
+*Ty*\
 Eşlenen tür.
 
-*Yla*\
+*Karma*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Tahsis*\
+*Ayırma*\
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol*\
 Takas edilecek ilk kapsayıcı.
 
-*Right*\
+*sağ*\
 Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.` [unordered_map:: Swap](../standard-library/unordered-map-class.md#swap)`(right)`yürütülür.
+Şablon işlevi `left.`[unordered_map:: swap](../standard-library/unordered-map-class.md#swap)`(right)`yürütür.
 
 ### <a name="example"></a>Örnek
 
@@ -114,7 +114,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="swap_function_multimap"></a>swap (unordered_multimap)
+## <a name="swap_function_multimap"></a>takas (unordered_multimap)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -130,27 +130,27 @@ void swap(
 *Anahtar*\
 Anahtar türü.
 
-*Kalite*\
+*Ty*\
 Eşlenen tür.
 
-*Yla*\
+*Karma*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Tahsis*\
+*Ayırma*\
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol*\
 Takas edilecek ilk kapsayıcı.
 
-*Right*\
+*sağ*\
 Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.` [unordered_multimap:: Swap](../standard-library/unordered-multimap-class.md#swap)`(right)`yürütülür.
+Şablon işlevi `left.`[unordered_multimap:: swap](../standard-library/unordered-multimap-class.md#swap)`(right)`yürütür.
 
 ### <a name="example"></a>Örnek
 

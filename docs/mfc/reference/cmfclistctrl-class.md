@@ -29,15 +29,15 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
 ms.openlocfilehash: 599a00af28ee5b8effbabbe5b334022ceb49f91a
-ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68682342"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78869972"
 ---
 # <a name="cmfclistctrl-class"></a>CMFCListCtrl sınıfı
 
-Sınıfı, [CMFCHeaderCtrl sınıfının](../../mfc/reference/cmfcheaderctrl-class.md)gelişmiş üstbilgi denetimi işlevini destekleyerek [clienstctrl Class](../../mfc/reference/clistctrl-class.md) sınıfının işlevselliğini genişletir. `CMFCListCtrl`
+`CMFCListCtrl` sınıfı, [CMFCHeaderCtrl sınıfının](../../mfc/reference/cmfcheaderctrl-class.md)gelişmiş üstbilgi denetimi Işlevini destekleyerek [clienstctrl Class](../../mfc/reference/clistctrl-class.md) sınıfının işlevselliğini genişletir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,7 +49,7 @@ class CMFCListCtrl : public CListCtrl
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCListCtrl:: EnableMarkSortedColumn](#enablemarksortedcolumn)|Sıralanmış bir sütunu farklı bir arka plan rengiyle işaretleyebilme olanağı tanır.|
 |[CMFCListCtrl:: EnableMultipleSort](#enablemultiplesort)|Birden çok sıralama moduna izin vermez.|
@@ -65,7 +65,7 @@ class CMFCListCtrl : public CListCtrl
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCListCtrl`[Clienstctrl sınıf](../../mfc/reference/clistctrl-class.md) sınıfında iki geliştirme sunar. İlk olarak, üst bilgide bir sıralama okunu otomatik olarak çizerek sütun sıralamanın kullanılabilir bir seçenek olduğunu gösterir. İkincisi, aynı anda birden çok sütunda veri sıralamayı destekler.
+`CMFCListCtrl` [Clienstctrl sınıf](../../mfc/reference/clistctrl-class.md) sınıfında iki geliştirme sunar. İlk olarak, üst bilgide bir sıralama okunu otomatik olarak çizerek sütun sıralamanın kullanılabilir bir seçenek olduğunu gösterir. İkincisi, aynı anda birden çok sütunda veri sıralamayı destekler.
 
 ## <a name="example"></a>Örnek
 
@@ -110,7 +110,7 @@ void EnableMarkSortedColumn(
 
 ### <a name="remarks"></a>Açıklamalar
 
-`EnableMarkSortedColumn`, sıralanmış sütunlarda `CDrawingManager::PixelAlpha` kullanılacak rengi hesaplamak için yöntemini kullanır. Çekilen renk, normal arka plan rengine göre belirlenir.
+`EnableMarkSortedColumn`, sıralanan sütunlarda kullanılacak rengi hesaplamak için `CDrawingManager::PixelAlpha` yöntemini kullanır. Çekilen renk, normal arka plan rengine göre belirlenir.
 
 ##  <a name="enablemultiplesort"></a>CMFCListCtrl:: EnableMultipleSort
 
@@ -215,7 +215,7 @@ Hücrenin arka plan rengini belirten bir birlikte bulunan başvuru değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama `OnGetCellBkColor` , sağlanan giriş parametrelerini kullanmaz ve bunun yerine yalnızca çağırır `GetBkColor`. Bu nedenle, varsayılan olarak tüm liste denetimi aynı arka plan rengine sahip olur. Tek tek hücreleri `OnGetCellBkColor` ayrı bir arka plan rengiyle işaretlemek için türetilmiş bir sınıfta geçersiz kılabilirsiniz.
+`OnGetCellBkColor` varsayılan uygulanması, sağlanan giriş parametrelerini kullanmaz ve bunun yerine `GetBkColor`çağırır. Bu nedenle, varsayılan olarak tüm liste denetimi aynı arka plan rengine sahip olur. Tek tek hücreleri ayrı bir arka plan rengiyle işaretlemek için türetilmiş bir sınıftaki `OnGetCellBkColor` geçersiz kılabilirsiniz.
 
 ##  <a name="ongetcellfont"></a>CMFCListCtrl:: OnGetCellFont
 
@@ -271,7 +271,7 @@ Hücrenin metin rengini belirten bir birlikte bulunan başvuru değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem giriş `GetTextColor` parametrelerinden bağımsız olarak çağırır. Tüm liste denetimi aynı metin rengine sahip olur. Tek tek hücreleri `OnGetCellTextColor` ayrı bir metin rengiyle işaretlemek için türetilmiş bir sınıfta geçersiz kılabilirsiniz.
+Varsayılan olarak, bu yöntem giriş parametrelerinden bağımsız olarak `GetTextColor` çağırır. Tüm liste denetimi aynı metin rengine sahip olur. Tek tek hücreleri ayrı bir metin rengiyle işaretlemek için türetilmiş bir sınıftaki `OnGetCellTextColor` geçersiz kılabilirsiniz.
 
 ##  <a name="removesortcolumn"></a>CMFCListCtrl:: RemoveSortColumn
 

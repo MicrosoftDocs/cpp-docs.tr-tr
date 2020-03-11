@@ -1,20 +1,20 @@
 ---
-title: '&lt;ayarlama&gt; işlevleri'
+title: '&gt; işlevleri &lt;ayarla'
 ms.date: 11/04/2016
 f1_keywords:
 - set/std::swap (map)
 - set/std::swap (multiset)
 ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
 ms.openlocfilehash: a3a63fb86caa3485b1ee14538c3eb1f1ff72923e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246407"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78875778"
 ---
-# <a name="ltsetgt-functions"></a>&lt;ayarlama&gt; işlevleri
+# <a name="ltsetgt-functions"></a>&gt; işlevleri &lt;ayarla
 
-## <a name="swap"></a> Swap (map)
+## <a name="swap"></a>swap (eşleme)
 
 İki kümenin öğelerini birbiriyle değiştirir.
 
@@ -26,26 +26,26 @@ void swap(set<Key, Traits, Allocator>& left, set<Key, Traits, Allocator>& right)
 ### <a name="parameters"></a>Parametreler
 
 *sağ*\
-Değiştirilecek öğeleri sağlayan kümesi veya öğeleri kümesi öğelerle ilişkili kümesi *sol*.
+Değiştirilecek öğeleri sağlayan küme veya öğeleri, *sol*ayarlı olanlarla birlikte değiş tokuş edilecek olan küme.
 
-*Sol*\
-Öğeleri kümesi öğelerle ilişkili kümesi *doğru*.
+*sol*\
+Öğeleri ayarlanan *sağdan*birlikte değiş tokuş edilecek olan küme.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel üye işlevini yürütmek için ayarlanan kapsayıcı sınıf üzerinde bir algoritma şablon işlevi olan `left.` [takas](../standard-library/set-class.md#swap)(`right`). İşlev şablonlarının kısmi derleyici tarafından sıralanması bir örneğini budur. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Genel bir sürümü olan şablon işlevi
+Şablon işlevi, [değiştirme](../standard-library/set-class.md#swap)(`right`) `left.`üye işlevini yürütmek üzere ayarlanmış kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır. Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Şablon işlevinin genel sürümü
 
-`template` \< **classT**> **void takas**( **T &** , **T &** )
+`template` \< **Classt**> **void takas**( **t &** , **t &** )
 
-algoritma sınıfı tarafından ataması çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+algoritma sınıfında atama ile çalışıyor ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-Üye sınıfı kod örneğine bakın [set::swap](../standard-library/set-class.md#swap) şablon sürümünü kullanımına ilişkin bir örnek `swap`.
+`swap`şablon sürümünün kullanımıyla ilgili bir örnek için bkz. Member Class [set:: Swap](../standard-library/set-class.md#swap) için kod örneği.
 
-## <a name="swap_multiset"></a> Swap (multiset)
+## <a name="swap_multiset"></a>takas (çoklu küme)
 
-İki multisets öğelerini birbiriyle değiştirir.
+İki multiset 'in öğelerini değiş tokuş eder.
 
 ```cpp
 template <class Key, class Traits, class Allocator>
@@ -55,19 +55,19 @@ void swap(multiset<Key, Traits, Allocator>& left, multiset<Key, Traits, Allocato
 ### <a name="parameters"></a>Parametreler
 
 *sağ*\
-Değiştirilecek öğeleri sağlayan multiset veya öğeleri olan çoklu olanlar değiştirilecek multiset *sol*.
+Değiştirilecek öğeleri sağlayan çoklu küme veya öğeleri, çok sayıda çoklu küme ile değiş tokuş *edilecek çoklu küme.*
 
-*Sol*\
-Öğeleri olan çoklu olanlar değiştirilecek multiset *doğru*.
+*sol*\
+Öğeleri çoklu küme *hakkı*ile değiş tokuş edilecek olan çok kümeli.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel üye işlevini yürütmek için kapsayıcı sınıfı multiset bir algoritma şablon işlevi olan `left.` [takas](../standard-library/multiset-class.md#swap)(`right`). İşlev şablonlarının kısmi derleyici tarafından sıralanması bir örneğini budur. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Genel bir sürümü olan şablon işlevi
+Şablon işlevi, [takas](../standard-library/multiset-class.md#swap)(`right`) `left.`üye işlevini yürütmek için çoklu kümeli kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır. Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Şablon işlevinin genel sürümü
 
-`template` \< **classT**> **void takas**( **T &** , **T &** )
+`template` \< **Classt**> **void takas**( **t &** , **t &** )
 
-algoritma sınıfı tarafından ataması çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+algoritma sınıfında atama ile çalışıyor ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-Üye sınıfı kod örneğine bakın [multiset::swap](../standard-library/multiset-class.md#swap)şablon sürümünü kullanımına ilişkin bir örnek `swap`.
+`swap`şablon sürümünün kullanımı örneği için bkz. [multıset:: Swap](../standard-library/multiset-class.md#swap)üye sınıfı için kod örneği.

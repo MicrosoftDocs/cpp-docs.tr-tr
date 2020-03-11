@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::gslice [C++], stride
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
 ms.openlocfilehash: 9290fabc86ffbdb051b7c61fe1600cd2f7f17dca
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448891"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866263"
 ---
 # <a name="gslice-class"></a>gslice Sınıfı
 
@@ -29,9 +29,9 @@ Sınıfı, [gslice_array](../standard-library/gslice-array-class.md)türünde bi
 
 - Başlangıç dizini.
 
-- Sınıfın `valarray<size_t>`uzunluk vektörü.
+- `valarray<size_t>`sınıfının uzunluk vektörü.
 
-- Sınıfın `valarray<size_t>`bir adım vektörü.
+- `valarray<size_t>`sınıfının bir adım vektörü.
 
 İki vektörün aynı uzunlukta olması gerekir.
 
@@ -43,19 +43,19 @@ Valarışın üzerinde işlemler yalnızca, gslices tarafından tanımlanan kayn
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[gslice](#gslice)|Belirtilen bir öğe `valarray` ile başlayan `valarray` birden çok diliminden oluşan bir alt kümesini tanımlar.|
+|[gslice](#gslice)|Belirtilen bir öğede başlayan `valarray` birden çok diliminden oluşan bir `valarray` alt kümesini tanımlar.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[boyutla](#size)|Genel bir `valarray`diliminizdeki öğe sayılarını belirten dizi değerlerini bulur.|
-|[start](#start)|A `valarray`'nın genel diliminin başlangıç dizinini bulur.|
-|[adım](#stride)|Bir `valarray`genel dilimi içindeki öğeler arasındaki mesafeyi bulur.|
+|[boyutla](#size)|Bir `valarray`genel diliminizdeki öğe sayılarını belirten dizi değerlerini bulur.|
+|[start](#start)|Bir `valarray`genel diliminin başlangıç dizinini bulur.|
+|[adım](#stride)|Bir `valarray`genel diliminden öğeler arasındaki mesafeyi bulur.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<valarray >
+**Üstbilgi:** \<valarray >
 
 **Ad alanı:** std
 
@@ -74,7 +74,7 @@ gslice(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Startındex*\
+*_StartIndex*\
 Alt kümedeki ilk öğenin valarray dizini.
 
 *_LenArray*\
@@ -85,11 +85,11 @@ Her bir dilimde bir adım belirten dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan Oluşturucu başlangıç dizini için sıfır, uzunluk ve ilerleme vektörlerine yönelik sıfır uzunluklu vektörler depolar. İkinci Oluşturucu başlangıç dizini için *_Startındex* , length dizisi Için *_LenArray* ve bir Ilerlemesiyle dizi için *_incarray* depolar.
+Varsayılan Oluşturucu başlangıç dizini için sıfır, uzunluk ve ilerleme vektörlerine yönelik sıfır uzunluklu vektörler depolar. İkinci Oluşturucu başlangıç dizini için *_StartIndex* , uzunluk dizisi için *_LenArray* ve ilerme dizisine yönelik *_IncArray* depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**gslice** , her biri belirtilen öğede başlayan valarray birden çok diliminden oluşan bir valarray alt kümesini tanımlar. Birden çok dilimi tanımlamak için dizileri kullanma yeteneği, ve `gslice` [Slice:: Slice](../standard-library/slice-class.md#slice)arasındaki tek farktır. İlk dilimin dizini *_Startındex*olan bir ilk öğe, *_LenArray*öğesinin ilk öğesi tarafından belirtilen bir dizi öğe ve *_incarray*öğesinin ilk öğesi tarafından verilen bir adım vardır. Dikgen dilimlerin sonraki kümesinde ilk dilim tarafından verilen ilk öğe vardır. *_Lenarray* öğesinin ikinci öğesi öğelerin sayısını belirtir. Bu adım, *_Incarray*öğesinin ikinci öğesi tarafından verilir. Üçüncü bir dilim boyutu, iki boyutlu dizinin öğelerini başlangıç öğeleri olarak alır ve anormal olarak devam edecektir
+**gslice** , her biri belirtilen öğede başlayan valarray birden çok diliminden oluşan bir valarray alt kümesini tanımlar. Birden çok dilimi tanımlamak için dizileri kullanma özelliği `gslice` ve [Slice:: Slice](../standard-library/slice-class.md#slice)arasındaki tek farktır. İlk dilimde *_StartIndex*dizinine sahip bir ilk öğe, *_LenArray*ilk öğesi tarafından belirtilen bir dizi öğe ve *_IncArray*ilk öğesi tarafından verilen bir adım vardır. Dikgen dilimlerin sonraki kümesinde ilk dilim tarafından verilen ilk öğe vardır. *_LenArray* ikinci öğesi öğelerin sayısını belirtir. Bu adım *_IncArray*ikinci öğesi tarafından verilir. Üçüncü bir dilim boyutu, iki boyutlu dizinin öğelerini başlangıç öğeleri olarak alır ve anormal olarak devam edecektir
 
 ### <a name="example"></a>Örnek
 

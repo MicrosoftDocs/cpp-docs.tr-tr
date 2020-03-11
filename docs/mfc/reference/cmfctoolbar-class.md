@@ -312,17 +312,17 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
 ms.openlocfilehash: d2af7a808e07e0368dd43ed920b6d8736a90b995
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504896"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78870005"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 
-Sınıf CToolBar sınıfına benzer, ancak kullanıcı arabirimi özellikleri için ek destek sağlar. [](../../mfc/reference/ctoolbar-class.md) `CMFCToolBar` Bunlar arasında düz araç çubukları, sık kullanılan görüntüler, büyük simgeler, sayfalayıcı düğmeleri, kilitli araç çubukları, yeniden çubuk denetimleri, görüntüler altındaki metinler, arka plan görüntüleri ve sekmeli araç çubukları dahildir. Bu `CMFCToolBar` sınıf Ayrıca araç çubukları ve menülerin Kullanıcı özelleştirmesi, araç çubukları ve menüler arasında sürükle ve bırak, Birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve aşağı açılan düğmeler için yerleşik destek içerir.
+`CMFCToolBar` sınıfı [CToolBar sınıfına](../../mfc/reference/ctoolbar-class.md)benzerdir, ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bunlar arasında düz araç çubukları, sık kullanılan görüntüler, büyük simgeler, sayfalayıcı düğmeleri, kilitli araç çubukları, yeniden çubuk denetimleri, görüntüler altındaki metinler, arka plan görüntüleri ve sekmeli araç çubukları dahildir. `CMFCToolBar` sınıfı ayrıca araç çubuklarının ve menülerin Kullanıcı özelleştirmesi, araç çubukları ve menüler arasında sürükle ve bırak, Birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve aşağı açılan düğmeler için yerleşik destek içerir.
 
-Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
+Daha fazla ayrıntı için, Visual Studio yüklemenizin **VC\\atlmfc\\src\\MFC** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -334,14 +334,14 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`CMFCToolBar::CMFCToolBar`|Varsayılan Oluşturucu.|
 |`CMFCToolBar::~CMFCToolBar`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCToolBar:: Addbasickomutu](#addbasiccommand)|Kullanıcı bir menü açtığında her zaman görüntülenen komutlar listesine bir menü komutu ekler.|
 |[CMFCToolBar:: AddCommandUsage](#addcommandusage)|Verilen komutla ilişkili bir sayaca göre artar.|
@@ -363,7 +363,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar:: Canhandleeşdüzey öğeleri](#canhandlesiblings)|Araç çubuğunun ve eşdeğerinin aynı bölmede konumlandırılıp yerleştirilmeyeceğini belirler.|
 |[CMFCToolBar:: Commandtoındex](#commandtoindex)|Araç çubuğundaki düğmenin dizinini belirtilen komut KIMLIĞIYLE döndürür.|
 |[CMFCToolBar:: Create](#create)|Bir `CMFCToolBar` nesnesi oluşturur.|
-|[CMFCToolBar:: CreateEx](#createex)|Büyük simgeler `CMFCToolBar` gibi ek stil seçeneklerini kullanan bir nesne oluşturur.|
+|[CMFCToolBar:: CreateEx](#createex)|Büyük simgeler gibi ek stil seçeneklerini kullanan bir `CMFCToolBar` nesnesi oluşturur.|
 |[CMFCToolBar::D eactivate](#deactivate)|Araç çubuğunu devre dışı bırakır.|
 |[CMFCToolBar:: EnableCustomizeButton](#enablecustomizebutton)|Araç çubuğunun sonunda görünen **Düğme Ekle veya Kaldır** düğmesini etkinleştirilir veya devre dışı bırakır.|
 |[CMFCToolBar:: EnableDocking](#enabledocking)|Bölmeyi ana çerçeveye yerleştirmeyi sağlar. ( [CBasePane:: Enabletakmayı](../../mfc/reference/cbasepane-class.md#enabledocking)geçersiz kılar.)|
@@ -371,11 +371,11 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar:: EnableQuickCustomization](#enablequickcustomization)|Kullanıcının **alt** tuşuna basabilmesi ve bir düğmeyi yeni bir konuma sürüklemek için araç çubuklarının hızlı özelleştirmesini sağlar veya devre dışı bırakır.|
 |[CMFCToolBar:: Enablereflet](#enablereflections)|Komut yansımasını etkinleştirilir veya devre dışı bırakır.|
 |[CMFCToolBar:: EnableTextLabels](#enabletextlabels)|Araç çubuğu düğme görüntüleri altındaki metin etiketlerini etkinleştirilir veya devre dışı bırakır.|
-|[CMFCToolBar:: Fromhandlekalıcı](#fromhandlepermanent)|Verilen pencere tanıtıcısını içeren `CMFCToolBar` nesneye bir işaretçi alır.|
+|[CMFCToolBar:: Fromhandlekalıcı](#fromhandlepermanent)|Verilen pencere tanıtıcısını içeren `CMFCToolBar` nesnesine bir işaretçi alır.|
 |[CMFCToolBar:: GetAllButtons](#getallbuttons)|Bir araç çubuğundaki düğmelerin salt okunurdur listesini döndürür.|
 |[CMFCToolBar:: GetAllToolbars](#getalltoolbars)|Uygulamadaki tüm araç çubuklarının salt okunurdur listesini döndürür.|
 |[CMFCToolBar:: GetBasicCommands](#getbasiccommands)|Uygulamada tanımlanan temel komutların salt okunurdur listesini döndürür.|
-|[CMFCToolBar:: GetButton](#getbutton)|Belirtilen bir araç çubuğu düğmesi `CMFCToolBarButton` dizinine sahip nesneye bir işaretçi döndürür.|
+|[CMFCToolBar:: GetButton](#getbutton)|Belirtilen bir araç çubuğu düğmesi dizinine sahip `CMFCToolBarButton` nesnesine bir işaretçi döndürür.|
 |[CMFCToolBar:: GetButtonInfo](#getbuttoninfo)|Belirtilen dizindeki düğmenin komut KIMLIĞINI, stilini ve resim dizinini döndürür.|
 |[CMFCToolBar:: GetButtonSize](#getbuttonsize)|Araç çubuğundaki her düğmenin boyutunu döndürür.|
 |[CMFCToolBar:: GetButtonStyle](#getbuttonstyle)|Belirtilen dizinde bulunan araç çubuğu düğmesinin geçerli stilini döndürür.|
@@ -384,7 +384,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar:: GetColumnWidth](#getcolumnwidth)|Araç çubuğu düğmelerinin genişliğini döndürür.|
 |[CMFCToolBar:: GetCommandButtons](#getcommandbuttons)|Uygulamadaki tüm araç çubuklarından belirtilen komut KIMLIĞINE sahip düğmelerin listesini döndürür.|
 |[CMFCToolBar:: GetCount](#getcount)|Araç çubuğundaki düğmelerin ve ayırıcıların sayısını döndürür.|
-|[CMFCToolBar:: GetCustomizeButton](#getcustomizebutton)|Araç çubuğuyla ilişkili `CMFCCustomizeButton` nesneye bir işaretçi alır.|
+|[CMFCToolBar:: GetCustomizeButton](#getcustomizebutton)|Araç çubuğuyla ilişkili `CMFCCustomizeButton` nesnesine bir işaretçi alır.|
 |[CMFCToolBar:: GetDefaultImage](#getdefaultimage)|Belirtilen komut KIMLIKLI bir araç çubuğu düğmesi için varsayılan görüntünün dizinini döndürür.|
 |[CMFCToolBar:: Getdisabledımages](#getdisabledimages)|Uygulamadaki devre dışı araç çubuğu düğmeleri için kullanılan görüntü koleksiyonuna bir işaretçi döndürür.|
 |[CMFCToolBar:: Getdisabledmenuımages](#getdisabledmenuimages)|Uygulamadaki devre dışı menü düğmeleri için kullanılan görüntü koleksiyonuna bir işaretçi döndürür.|
@@ -446,7 +446,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar:: LoadParameters](#loadparameters)|Windows kayıt defterinden genel araç çubuğu seçeneklerini yükler.|
 |[CMFCToolBar:: LoadState](#loadstate)|Windows kayıt defterinden araç çubuğu durum bilgilerini yükler. ( [CPane:: LoadState](../../mfc/reference/cpane-class.md#loadstate)geçersiz kılar)|
 |[CMFCToolBar:: LoadToolBar](#loadtoolbar)|Araç çubuğunu uygulama kaynaklarından yükler.|
-|[CMFCToolBar:: LoadToolBarEx](#loadtoolbarex)|Uygulamanın büyük görüntüleri kullanmasını sağlamak için `CMFCToolBarInfo` yardımcı sınıfını kullanarak uygulama kaynaklarından araç çubuğunu yükler.|
+|[CMFCToolBar:: LoadToolBarEx](#loadtoolbarex)|Uygulamanın büyük görüntüleri kullanmasını sağlamak için `CMFCToolBarInfo` Yardımcısı sınıfını kullanarak araç çubuğunu uygulama kaynaklarından yükler.|
 |[CMFCToolBar:: OnChangeHot](#onchangehot)|Kullanıcı araç çubuğunda bir düğme seçtiğinde Framework tarafından çağırılır.|
 |[CMFCToolBar:: OnFillBackground](#onfillbackground)|CBasePane öğesinden Framework tarafından çağırılır: araç çubuğunun arka planını doldurması için [oPaint:D](../../mfc/reference/cbasepane-class.md#dopaint) .|
 |[CMFCToolBar:: OnReset](#onreset)|Araç çubuğunu özgün durumuna geri yükler.|
@@ -460,8 +460,8 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar:: ResetAll](#resetall)|Tüm araç çubuklarını özgün durumlarına geri yükler.|
 |[CMFCToolBar:: Resettalmages](#resetallimages)|Uygulamadaki tüm araç çubuğu görüntü koleksiyonlarını temizler.|
 |[CMFCToolBar:: RestoreOriginalState](#restoreoriginalstate)|Bir araç çubuğunun özgün durumunu geri yükler.|
-|[CMFCToolBar:: Savemlak](#savestate)|Windows kayıt defteri 'nde araç çubuğunun durum bilgilerini kaydeder. ( [CPane::](../../mfc/reference/cpane-class.md#savestate)savkıya geçersiz kılar.)|
-|`CMFCToolBar::Serialize`|(Geçersiz `CBasePane::Serialize`kılmalar.)|
+|[CMFCToolBar:: Savemlak](#savestate)|Windows kayıt defteri 'nde araç çubuğunun durum bilgilerini kaydeder. ( [CPane:: savkıya](../../mfc/reference/cpane-class.md#savestate)geçersiz kılar.)|
+|`CMFCToolBar::Serialize`|(`CBasePane::Serialize`geçersiz kılar.)|
 |[CMFCToolBar:: SetBasicCommands](#setbasiccommands)|Kullanıcı bir menü açtığında her zaman görüntülenen komutların listesini ayarlar.|
 |[CMFCToolBar:: SetButtonInfo](#setbuttoninfo)|Bir araç çubuğu düğmesinin komut KIMLIĞINI, stilini ve görüntü KIMLIĞINI ayarlar.|
 |[CMFCToolBar:: SetButtonStyle](#setbuttonstyle)|Verilen dizindeki araç çubuğu düğmesinin stilini ayarlar.|
@@ -493,7 +493,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCToolBar:: AllowShowOnList](#allowshowonlist)|Araç çubuğunun **Özelleştir** Iletişim kutusunun **araç çubukları** bölmesindeki listede görüntülenip görüntülenmeyeceğini belirler.|
 |[CMFCToolBar:: CalcMaxButtonHeight](#calcmaxbuttonheight)|Araç çubuğundaki bir düğmenin en büyük yüksekliğini hesaplar.|
@@ -504,24 +504,24 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCToolBar:: m_bDontScaleImages](#m_bdontscaleimages)|Toolbar görüntülerinin yüksek DPı modunda ölçeklenemeyeceğini veya başlatılmayacağını belirtir.|
 |[CMFCToolBar:: m_dblLargeImageRatio](#m_dbllargeimageratio)|Büyük görüntülerin boyutu (yükseklik veya genişlik) ile normal görüntülerin boyutu arasındaki oranı belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanıza bir `CMFCToolBar` nesne eklemek için aşağıdaki adımları izleyin:
+Uygulamanıza bir `CMFCToolBar` nesnesi eklemek için aşağıdaki adımları izleyin:
 
-1. Ana çerçeve `CMFCToolBar` penceresine bir nesne ekleyin.
+1. Ana çerçeve penceresine `CMFCToolBar` nesne ekleyin.
 
 1. Ana çerçeve penceresi için WM_CREATE iletisini işleyken, araç çubuğunu oluşturmak ve stilini belirtmek için [CMFCToolBar:: Create](#create) veya [CMFCToolBar:: CreateEx](#createex) öğesini çağırın.
 
 1. Yerleştirme stilini belirtmek için [CBasePane:: Enabletakmayı](../../mfc/reference/cbasepane-class.md#enabledocking) çağırın.
 
-Birleşik giriş kutusu veya açılan araç çubuğu gibi özel bir düğme eklemek için, üst kaynakta bir kukla düğme ayırın ve [CMFCToolBar:: ReplaceButton](#replacebutton)öğesini kullanarak çalışma zamanında kukla düğmeyi değiştirin. Daha fazla bilgi için bkz [. İzlenecek yol: Denetimleri araç çubuklarına](../walkthrough-putting-controls-on-toolbars.md)yerleştirme.
+Birleşik giriş kutusu veya açılan araç çubuğu gibi özel bir düğme eklemek için, üst kaynakta bir kukla düğme ayırın ve [CMFCToolBar:: ReplaceButton](#replacebutton)öğesini kullanarak çalışma zamanında kukla düğmeyi değiştirin. Daha fazla bilgi için bkz. [Izlenecek yol: denetimleri araç çubuklarına yerleştirme](../walkthrough-putting-controls-on-toolbars.md).
 
-`CMFCToolBar`MFC kitaplık sınıfları [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md), [CMFCPopupMenuBar sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)ve [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)için temel sınıftır.
+`CMFCToolBar`, [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md), [CMFCPopupMenuBar sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)ve [CMFCDROPDOWNTOOLBAR sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)MFC kitaplık sınıfları için temel sınıftır.
 
 ## <a name="example"></a>Örnek
 
@@ -646,7 +646,7 @@ Bir araç çubuğu, boyutunu ve konumunu yeniden hesaplamak üzere oluşturuldu�
 
 Çerçeve, araç çubuğunun düzeninin değiştirilmesi gereken her seferinde bu yöntemi çağırır. Örneğin, Kullanıcı başka bir denetim çubuğunu taşırken, bir uygulama penceresini yeniden boyutlandırdığında veya araç çubuğunu özelleştirdiğinde düzen değişmelidir.
 
-İçinden `CMFCToolbar`türettiğiniz sınıflarda kendi dinamik düzeninizi sağlamak için bu yöntemi geçersiz kılın.
+`CMFCToolbar`türettiğiniz sınıflarda kendi dinamik düzeninizi sağlamak için bu yöntemi geçersiz kılın.
 
 ##  <a name="adjustsize"></a>CMFCToolBar:: AdjustSize
 
@@ -660,7 +660,7 @@ void AdjustSize();
 
 Bu yöntem, araç çubuğunun üst çerçevenin sınırlarına uygun olmasını sağlar. Araç çubuğunun üst çerçevesi yoksa, bu yöntem hiçbir şey yapmaz.
 
-[CMFCToolBar:: AdjustLayout](#adjustlayout) yöntemi, araç çubuğunun üst öğesi bir `CMFCReBar` nesne değilse boyutu yeniden hesaplamak için bu yöntemi çağırır.
+[CMFCToolBar:: AdjustLayout](#adjustlayout) yöntemi, araç çubuğunun üst öğesi `CMFCReBar` nesne değilse boyutu yeniden hesaplamak için bu yöntemi çağırır.
 
 ##  <a name="allowchangetextlabels"></a>CMFCToolBar:: AllowChangeTextLabels
 
@@ -680,7 +680,7 @@ Bu yöntem, seçilen araç çubuğu için **araç çubukları** sayfasında **me
 
 Varsayılan uygulama TRUE değerini döndürür.
 
-' Dan `CMFCToolBar` türetilmiş bir nesnede bu yöntemi geçersiz kılın ve kullanıcının, resim altındaki araç çubuğu düğmelerinde metin etiketlerinin görüntülenip görüntülenmeyeceğine karar vermesini istemediğiniz durumlarda false döndürün.
+Bu yöntemi, `CMFCToolBar` türetilen bir nesnede geçersiz kılın ve kullanıcının görüntü altındaki araç çubuğu düğmelerinde metin etiketlerinin görüntülenip görüntülenmeyeceğine karar vermesini istemediğiniz durumlarda FALSE döndürün.
 
 ##  <a name="allowshowonlist"></a>CMFCToolBar:: AllowShowOnList
 
@@ -696,7 +696,7 @@ Araç çubuğu özelleştirme sayfasındaki liste kutusunda araç çubuğu nesne
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, araç çubuğu özelleştirme sayfasındaki listenin öğesinden `CMFCToolBar`türetilmiş belirli bir nesneyi içerip içermediğini anlamak için çerçevesi tarafından çağırılır.
+Bu yöntem, araç çubuğu özelleştirme sayfasındaki listenin `CMFCToolBar`türetilmiş belirli bir nesneyi içerip içermediğini anlamak için Framework tarafından çağırılır.
 
 Varsayılan uygulama her zaman TRUE değerini döndürür. Özelleştirme iletişim kutusundaki araç çubukları listesinde bir araç çubuğunun görüntülenmesini istemediğiniz zaman bu yöntemi geçersiz kılın.
 
@@ -781,11 +781,11 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğunun boyutunu belirten nesne.`CSize`
+Araç çubuğunun boyutunu belirten `CSize` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CMFCToolBar::CalcLayout` yöntemini kullanarak araç çubuğunun boyutunu hesaplar. *Besif* true Ise *dwMode* parametresi için LM_STRETCH bayrağını geçirir. *BHorz* doğru ise LM_HORZ bayrağını geçirir.
+Bu yöntem, `CMFCToolBar::CalcLayout` yöntemini kullanarak araç çubuğunun boyutunu hesaplar. *Besnetse* , *dwMode* parametresi için LM_STRETCH bayrağını geçirir. *BHorz* doğru ise LM_HORZ bayrağını geçirir.
 
 Bu yöntemi kullanan bir örnek için bkz. VisualStudioDemo Sample.
 
@@ -805,7 +805,7 @@ Düğmelerin en fazla yüksekliği.
 
 Bu yöntem, araç çubuğundaki tüm araç çubuğu düğmeleri arasında yükseklik üst sınırını hesaplar. Yükseklik, geçerli araç çubuğu yerleştirme durumu gibi etkenlere bağlı olarak farklılık gösterebilir.
 
-Kendi yükseklik hesaplamanızı sağlamak için, öğesinden `CMFCToolBar` türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Kendi yükseklik hesaplamanızı sağlamak için `CMFCToolBar` türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
 ##  <a name="calcsize"></a>CMFCToolBar:: CalcSize
 
@@ -822,7 +822,7 @@ virtual CSize CalcSize(BOOL bVertDock);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğundaki düğmelerin genel boyutunu belirten nesne.`CSize`
+Araç çubuğundaki düğmelerin genel boyutunu belirten `CSize` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -844,9 +844,9 @@ Araç çubuğu kullanıcı tarafından kapatılabiliyorsa TRUE; Aksi halde yanl�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, kullanıcının bir araç çubuğunu kapatıp kapaamayacağını öğrenmek için bu yöntemi çağırır. Yöntem TRUE döndürürse, Framework araç çubuğunun sistem menüsündeki SC_CLOSE komutunu etkinleştirerek Kullanıcı araç çubuğunu özelleştirme iletişim kutusundaki araç çubuğu listesindeki bir onay kutusunu kullanarak kapatabilir.
+Framework, kullanıcının bir araç çubuğunu kapatıp kapaamayacağını öğrenmek için bu yöntemi çağırır. Yöntem TRUE döndürürse, çerçeve araç çubuğunun sistem menüsündeki SC_CLOSE komutuna izin verir ve Kullanıcı, özelleştirme iletişim kutusundaki araç çubuğu listesindeki bir onay kutusunu kullanarak araç çubuğunu kapatabilir.
 
-Varsayılan uygulama TRUE değerini döndürür. Kullanıcı tarafından kapatılameyen araç çubuğu nesnelerini `CMFCToolBar` yapmak için, öğesinden türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Varsayılan uygulama TRUE değerini döndürür. Kullanıcı tarafından kapatılameyen araç çubuğu nesnelerini yapmak için `CMFCToolBar` türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
 ##  <a name="canberestored"></a>CMFCToolBar:: Canberesrimi
 
@@ -864,11 +864,11 @@ Araç çubuğu uygulama kaynaklarından geri yüklenebiliyorsa, doğru. Aksi hal
 
 Framework, özelleştirme sonrasında bir araç çubuğunun özgün durumuna döndürülüp döndürülmeyeceğini anlamak için bu yöntemi çağırır. Özgün durum uygulama kaynaklarından yüklenir.
 
-TRUE değerini döndürürse, özelleştirme iletişim kutusunun **araç çubukları** sayfası seçili araç çubuğunun Sıfırla düğmesine izin verir. `CanBeRestored`
+`CanBeRestored` TRUE değerini döndürürse, özelleştirme iletişim kutusunun **araç çubukları** sayfası seçili araç çubuğunun **Sıfırla** düğmesine izin verir.
 
 Varsayılan uygulama, yüklendiğinde araç çubuğunun özgün kaynak KIMLIĞI sıfır olmayan bir değer döndürür. Genellikle, yalnızca Kullanıcı tanımlı araç çubukları geri yüklenemez.
 
-Türetilmiş sınıflarda bu davranışı `CanBeRestored` özelleştirmek için yöntemini geçersiz kılabilirsiniz.
+Türetilmiş sınıflarda bu davranışı özelleştirmek için `CanBeRestored` yöntemini geçersiz kılabilirsiniz.
 
 ##  <a name="canfocus"></a>CMFCToolBar:: CanFocus
 
@@ -952,7 +952,7 @@ Yöntem başarılı olursa araç çubuğu düğmesinin sıfır tabanlı dizini; 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CMFCToolBar` nesne, araç çubuğundaki düğmelerin iç listesini tutar. Düğme komut KIMLIĞI verilen listedeki bir düğmenin dizinini almak için bu işlevi çağırın.
+`CMFCToolBar` nesnesi, araç çubuğundaki düğmelerin iç listesini tutar. Düğme komut KIMLIĞI verilen listedeki bir düğmenin dizinini almak için bu işlevi çağırın.
 
 *IIndex* 0 ' dan büyükse, bu yöntem, bir dizin *iindex*'tan daha küçük olan bir araç çubuğunda yok sayılır.
 
@@ -988,7 +988,7 @@ Bu yöntem bir denetim çubuğu oluşturur ve araç çubuğuna iliştirir. TBSTY
 
 ##  <a name="createex"></a>CMFCToolBar:: CreateEx
 
-Büyük simgeler `CMFCToolBar` gibi ek stil seçeneklerini kullanan bir nesne oluşturur.
+Büyük simgeler gibi ek stil seçeneklerini kullanan bir `CMFCToolBar` nesnesi oluşturur.
 
 ```
 virtual BOOL CreateEx(
@@ -1014,7 +1014,7 @@ virtual BOOL CreateEx(
 'ndaki Araç çubuğu stili. Uygun stillerin bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri](/windows/win32/Controls/toolbar-control-and-button-styles) .
 
 *Rckenarlýklar*<br/>
-'ndaki Araç çubuğu pencere kenarlıklarının genişliklerini belirten nesne.`CRect`
+'ndaki Araç çubuğu pencere kenarlıklarının genişliklerini belirten `CRect` nesnesi.
 
 *NID*<br/>
 'ndaki Araç çubuğunun alt penceresinin KIMLIĞI.
@@ -1027,11 +1027,11 @@ Bu yöntem başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Bu yöntem bir denetim çubuğu oluşturur ve araç çubuğuna iliştirir.
 
-Belirli stiller sağlamak istediğinizde [CMFCToolBar:: Create](#create) yerine bu yöntemi çağırın. Örneğin, *dwCtrlStyle* öğesini tbstyle_flat olarak ayarlayın | TBSTYLE_TRANSPARENT Internet Explorer 4 tarafından kullanılan araç çubuklarına benzeyen bir araç çubuğu oluşturmak için.
+Belirli stiller sağlamak istediğinizde [CMFCToolBar:: Create](#create) yerine bu yöntemi çağırın. Örneğin, *dwCtrlStyle* olarak ayarlayın tbstyle_flat | Internet Explorer 4 tarafından kullanılan araç çubuklarına benzeyen bir araç çubuğu oluşturmak için TBSTYLE_TRANSPARENT.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CreateEx` `CMFCToolBar` sınıfının yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `CMFCToolBar` sınıfının `CreateEx` yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]
@@ -1065,7 +1065,7 @@ virtual void DoPaint(CDC* pDC);
 
 Araç çubuğunun bir kısmının yeniden boyanmalıdır, bu yöntem Framework tarafından çağırılır.
 
-Öğesinden `CMFCToolBar`türetilmiş bir nesnenin görünümünü özelleştirmek için bu yöntemi geçersiz kılın.
+`CMFCToolBar`türetilmiş bir nesnenin görünümünü özelleştirmek için bu yöntemi geçersiz kılın.
 
 ##  <a name="drawbutton"></a>CMFCToolBar::D rawButton
 
@@ -1131,7 +1131,7 @@ virtual void DrawSeparator(
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCToolBar::D oPaint](#dopaint) her CMFCToolBar için bu yöntemi çağırır: Bu düğmeler Için [cmfctoolbar::D rawbutton](#drawbutton) metodunu çağırmak yerine TBBS_SEPARATOR stilinde olan [:D rawseparator](#drawseparator) nesnesi.
+[CMFCToolBar::D oPaint](#dopaint) her [CMFCToolBar](#drawseparator) için bu yöntemi çağırır: Bu düğmeler için [CMFCToolBar::D rawbutton](#drawbutton) çağırmak yerine TBBS_SEPARATOR stiline sahip:D rawseparator nesnesi.
 
 Araç çubuğundaki ayırıcıların görünümünü özelleştirmek için [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) 'dan türetilmiş bir sınıfta bu yöntemi geçersiz kılın. Varsayılan uygulama, görünümü geçerli görsel yönetici tarafından belirlenen bir ayırıcı çizmek için [CMFCVisualManager:: OnDrawSeparator](../../mfc/reference/cmfcvisualmanager-class.md#ondrawseparator) ' i çağırır.
 
@@ -1242,7 +1242,7 @@ void EnableReflections(BOOL bEnable = TRUE);
 
 Birleşik giriş kutuları gibi katıştırılmış denetimleri içeren araç çubuğu düğmeleri için komut yansımasını etkinleştirmek üzere bu yöntemi çağırın.
 
-Komut yansıtma hakkında daha fazla bilgi için bkz [. TN062: Windows denetimleri](../../mfc/tn062-message-reflection-for-windows-controls.md)için ileti yansıtma.
+Komut yansıtma hakkında daha fazla bilgi için bkz. [TN062: Windows denetimleri Için Ileti yansıtma](../../mfc/tn062-message-reflection-for-windows-controls.md).
 
 ##  <a name="enabletextlabels"></a>CMFCToolBar:: EnableTextLabels
 
@@ -1259,11 +1259,11 @@ Metin etiketleri araç çubuğu düğme görüntüleri altında görünürse TRU
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin etiketleri etkinse, araç çubuğundaki tüm düğmeler, görüntülerin altında görüntülenecek Etiketler için boşluk sağlamak üzere genişletilir. Özelleştirme iletişim kutusunda, **araç çubukları** sayfasındaki **metin etiketini göster** onay kutusu bulunur. Kullanıcı bir araç çubuğu seçtiğinde ve bu seçeneği denetlediğinde, Framework seçili araç `EnableTextLabels` çubuğunu çağırır. CMFCToolBar 'dan türetilmiş bir nesne için onay kutusunu devre dışı [](../../mfc/reference/cmfctoolbar-class.md) bırakabilirsiniz [:: AllowChangeTextLabels](#allowchangetextlabels) .
+Metin etiketleri etkinse, araç çubuğundaki tüm düğmeler, görüntülerin altında görüntülenecek Etiketler için boşluk sağlamak üzere genişletilir. Özelleştirme iletişim kutusunda, **araç çubukları** sayfasındaki **metin etiketini göster** onay kutusu bulunur. Kullanıcı bir araç çubuğu seçtiğinde ve bu seçeneği denetlediğinde, Framework seçili araç çubuğu için `EnableTextLabels` çağırır. [CMFCToolBar 'dan türetilmiş](../../mfc/reference/cmfctoolbar-class.md) bir nesne için onay kutusunu devre dışı bırakabilirsiniz [:: AllowChangeTextLabels](#allowchangetextlabels) .
 
 ##  <a name="fromhandlepermanent"></a>CMFCToolBar:: Fromhandlekalıcı
 
-Verilen pencere tanıtıcısını içeren `CMFCToolBar` nesneye bir işaretçi alır.
+Verilen pencere tanıtıcısını içeren `CMFCToolBar` nesnesine bir işaretçi alır.
 
 ```
 static CMFCToolBar* __stdcall FromHandlePermanent(HWND hwnd);
@@ -1276,11 +1276,11 @@ static CMFCToolBar* __stdcall FromHandlePermanent(HWND hwnd);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen pencere tanıtıcısını içeren `CMFCToolBar` nesneye yönelik bir işaretçi ya da karşılık gelen `CMFCToolBar` bir nesne yoksa null.
+Verilen pencere tanıtıcısını içeren `CMFCToolBar` nesnesine yönelik bir işaretçi ya da karşılık gelen bir `CMFCToolBar` nesnesi yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu paylaşılan Yöntem, verilen pencere tanıtıcısını içeren `CMFCToolBar` nesne için uygulamadaki her bir araç çubuğunu inceler.
+Bu paylaşılan Yöntem, uygulamanın verilen pencere tanıtıcısını içeren `CMFCToolBar` nesnesi için her bir araç çubuğunu inceler.
 
 ##  <a name="getallbuttons"></a>CMFCToolBar:: GetAllButtons
 
@@ -1304,7 +1304,7 @@ static const CObList& GetAllToolbars();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CMFCToolBar` nesne koleksiyonu içeren bir [CObList sınıfı](../../mfc/reference/coblist-class.md) nesnesine const başvurusu.
+Bir `CMFCToolBar` nesneleri koleksiyonu içeren bir [CObList sınıfı](../../mfc/reference/coblist-class.md) nesnesine const başvurusu.
 
 ##  <a name="getbasiccommands"></a>CMFCToolBar:: GetBasicCommands
 
@@ -1367,7 +1367,7 @@ dışı Düğme için görüntünün dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetButtonInfo` Yöntemi belirtilen dizinde bir araç çubuğu düğmesi bulur ve düğmenin komut kimliğini, stilini ve resim dizinini alır.
+`GetButtonInfo` yöntemi belirtilen dizinde bir araç çubuğu düğmesi bulur ve düğmenin komut KIMLIĞINI, stilini ve resim dizinini alır.
 
 Belirtilen dizindeki düğme yoksa, çerçeve, *NID* ve *nStyle* değerini 0 olarak ve yöntem döndürüldüğünde *IImage* öğesini-1 olarak ayarlar.
 
@@ -1402,7 +1402,7 @@ UINT GetButtonStyle(int nIndex) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu düğmesinin stilini belirten bir değer. biçimindeki telefon numarasıdır. Olası stillerin listesi için bkz. [araç çubuğu denetim stilleri](../../mfc/reference/toolbar-control-styles.md) .
+Araç çubuğu düğmesinin stilini belirten bir değer. arasında yetersiz alanla karşılaştı. Olası stillerin listesi için bkz. [araç çubuğu denetim stilleri](../../mfc/reference/toolbar-control-styles.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1504,7 +1504,7 @@ Araç çubuğundaki düğmelerin ve ayırıcıların sayısı.
 
 ##  <a name="getcustomizebutton"></a>CMFCToolBar:: GetCustomizeButton
 
-Araç çubuğuyla ilişkili `CMFCCustomizeButton` nesneye bir işaretçi alır.
+Araç çubuğuyla ilişkili `CMFCCustomizeButton` nesnesine bir işaretçi alır.
 
 ```
 CMFCCustomizeButton* GetCustomizeButton();
@@ -1512,13 +1512,13 @@ CMFCCustomizeButton* GetCustomizeButton();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğuyla ilişkili `CMFCCustomizeButton` nesneye yönelik bir işaretçi.
+Araç çubuğuyla ilişkili `CMFCCustomizeButton` nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntem, araç çubuğunun sonunda görüntülenen **Özelleştir** düğmesini alır. Araç çubuğuna **Özelleştirme** düğmesini eklemek Için [CMFCToolBar:: EnableCustomizeButton](#enablecustomizebutton) yöntemini kullanın.
 
-Toolbar 'ın geçerli `CMFCCustomizeButton` bir nesne içerip içermediğini anlamak için [CMFCToolBar:: IsExistCustomizeButton](#isexistcustomizebutton) yöntemini çağırabilirsiniz.
+Toolbar 'ın geçerli bir `CMFCCustomizeButton` nesnesi içerip içermediğini anlamak için [CMFCToolBar:: IsExistCustomizeButton](#isexistcustomizebutton) yöntemini çağırabilirsiniz.
 
 ##  <a name="getdefaultimage"></a>CMFCToolBar:: GetDefaultImage
 
@@ -1624,7 +1624,7 @@ Bir araç çubuğu düğmesi nesnesi işaretçisi; ya da hiçbir düğme vurgula
 
 ### <a name="remarks"></a>Açıklamalar
 
-Klavye odağı varsa bir araç çubuğu düğmesi vurgulanır. Araç çubuğu düğmeleri bu uygulamada sık izleniyorsa bir araç çubuğu düğmesi de vurgulanmıştır (daha fazla bilgi için bkz [. CMFCToolBar:: GetHotBorder](#gethotborder) ve [CMFCToolBar:: SetHotBorder](#sethotborder)) ve fare çubuğu düğmesi olmadığında fare bunu işaret ediyor veya Menü öğesinde klavye odağı vardır.
+Klavye odağı varsa bir araç çubuğu düğmesi vurgulanır. Araç çubuğu düğmeleri bu uygulamada sık izleniyorsa bir araç çubuğu düğmesi de vurgulanır (daha fazla bilgi için bkz. [CMFCToolBar:: GetHotBorder](#gethotborder) ve [CMFCToolBar:: SetHotBorder](#sethotborder)) ve araç çubuğu düğmesi veya menü öğesi klavye odağına sahip olmadığında fare bunu işaret ediyor.
 
 ##  <a name="gethotborder"></a>CMFCToolBar:: GetHotBorder
 
@@ -1672,7 +1672,7 @@ Daha önce giriş odağa sahip olan [CMFCBaseToolBar sınıfından](../../mfc/re
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CMFCToolBar` denetim giriş odağını aldığında, daha sonra geri yükleyebilmek için odağı kaybettiğiniz pencereye bir tutamacı depolar.
+`CMFCToolBar` denetimi giriş odağını aldığında, daha sonra geri yükleyebilmek için odağı kaybettiğiniz pencereye bir tutamacı depolar.
 
 ##  <a name="getignoresettext"></a>CMFCToolBar:: Getıgnoresettext
 
@@ -1791,15 +1791,15 @@ virtual void GetItemRect(
 'ndaki Bir araç çubuğu düğmesinin dizinini belirtir.
 
 *lpRect*<br/>
-dışı Resim sınırlayıcı dikdörtgeninin `CRect` koordinatlarını alan nesne işaretçisi.
+dışı Resim sınırlayıcı dikdörtgeninin koordinatlarını alan `CRect` nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen dizindeki bir düğme yoksa, *lpRect* noktalarının 0 olarak ayarlandığı nesne.`CRect`
+Belirtilen dizindeki bir düğme yoksa, *lpRect* noktalarının `CRect` nesnesi 0 olarak ayarlanır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `GetItemRect` `CMFCToolBar` sınıfının yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `CMFCToolBar` sınıfının `GetItemRect` yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#9](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_4.cpp)]
@@ -1920,13 +1920,13 @@ CSize GetLockedImageSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilitli `CSize` araç çubuğu görüntülerinin boyutunu veya araç çubuğu kilitlenmediyse boş `CSize` bir yapıyı belirten bir yapı.
+Araç çubuğu kilitlenmediyse kilitli araç çubuğu görüntülerinin boyutunu veya boş bir `CSize` yapısını belirten `CSize` yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Kilitli görüntüler, Kullanıcı araç çubuğunu özelleştiremez çerçevenin kullandığı normal araç çubuğu düğmesi görüntülerinin sürümleridir.
 
-Bu yöntem, araç `CSize` çubuğu kilitlenmediyse sıfır genişliğine ve sıfır yüksekliğe sahip bir yapı döndürür. Bu yöntem ayrıca araç çubuğu kilitlenmediyse hata ayıklama yapılarında bir onaylama hatası oluşturur. Kilitli araç çubukları hakkında daha fazla bilgi için bkz. [CMFCToolBar:: ıskilitlendi](#islocked).
+Bu yöntem, araç çubuğu kilitlenmediyse sıfır genişliğine sahip `CSize` yapısını ve sıfır yüksekliğini döndürür. Bu yöntem ayrıca araç çubuğu kilitlenmediyse hata ayıklama yapılarında bir onaylama hatası oluşturur. Kilitli araç çubukları hakkında daha fazla bilgi için bkz. [CMFCToolBar:: ıskilitlendi](#islocked).
 
 Kilitli görüntünün boyutunu belirtmek için [CMFCToolBar:: Setlockedboyutlarda](#setlockedsizes) metodunu çağırın.
 
@@ -1960,7 +1960,7 @@ static CSize GetMenuButtonSize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü düğmelerinin boyutunu piksel cinsinden temsil eden nesne.`CSize`
+Menü düğmelerinin boyutunu piksel cinsinden temsil eden `CSize` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1996,7 +1996,7 @@ static CSize GetMenuImageSize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü görüntülerinin boyutunu temsil eden nesne.`CSize`
+Menü görüntülerinin boyutunu temsil eden bir `CSize` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2070,7 +2070,7 @@ Ana çerçeve araç çubuğuna komutlar gönderirse sıfır dışı; Eğer sahib
 
 Varsayılan olarak, üst çerçeve araç çubuğuna komutlar gönderir. Bu davranışı değiştirmek için [CMFCToolBar:: SetRouteCommandsViaFrame](#setroutecommandsviaframe) çağırın.
 
-Bu yöntem sıfır dışında bir değer döndürürse, `CMFCToolBar::GetCommandTarget` yöntemi kullanarak üst çerçeve nesnesine bir işaretçi alabilirsiniz. Bu yöntemi kullanan bir örnek için bkz. VisualStudioDemo Sample.
+Bu yöntem sıfır dışında bir değer döndürürse, `CMFCToolBar::GetCommandTarget` yöntemini kullanarak üst çerçeve nesnesine bir işaretçi alabilirsiniz. Bu yöntemi kullanan bir örnek için bkz. VisualStudioDemo Sample.
 
 ##  <a name="getrowheight"></a>CMFCToolBar:: GetRowHeight
 
@@ -2225,11 +2225,11 @@ CMFCToolBarButton* InvalidateButton(int nIndex);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizinde bulunan `CMFCToolBarButton` nesnenin işaretçisi veya böyle bir nesne yoksa null.
+Belirtilen dizinde bulunan `CMFCToolBarButton` nesnesine yönelik bir işaretçi veya böyle bir nesne yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, bir araç çubuğu düğmesiyle ilişkili istemci alanını güncelleştirdiğinde bu yöntemi çağırır. Belirtilen dizinde bulunan `CMFCToolBarButton` nesnenin istemci dikdörtgeniyle [CWnd:: InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect) yöntemini çağırır.
+Çerçeve, bir araç çubuğu düğmesiyle ilişkili istemci alanını güncelleştirdiğinde bu yöntemi çağırır. Belirtilen dizinde bulunan `CMFCToolBarButton` nesnesinin istemci dikdörtgeniyle [CWnd:: InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect) yöntemini çağırır.
 
 ##  <a name="isaddremovequickcustomize"></a>CMFCToolBar:: ısaddremovequickcustomize
 
@@ -2312,7 +2312,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 
 Araç çubuğu nesnesi, genişletilmiş kenarlıkların bulunduğu düğmeleri görüntülemesi durumunda TRUE değerini döndürür. Bir araç çubuğu düğmesi, [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd) bildirimini işlediğinde bu yöntemi çağırır ve iç ek kenarlık boyutu bayrağını uygun olarak ayarlar. Bu iç bayrak, daha sonra [CMFCToolBarButton:: IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize)çağırarak alınabilir.
 
-Bu yöntemi öğesinden `CMFCToolBar` türetilmiş bir sınıfta geçersiz kılın ve çubuğunuz, araç çubuğu düğmelerini ek kenarlık boyutuyla görüntüleyip false değerini döndürebiliyorsa true döndürün. Varsayılan uygulama TRUE değerini döndürür.
+Bu yöntemi, `CMFCToolBar` türetilmiş bir sınıfta geçersiz kılın ve çubuğunuz, araç çubuğu düğmelerini ek kenarlık boyutuyla görüntüleyip FALSE değerini döndürebiliyorsa TRUE değerini döndürür. Varsayılan uygulama TRUE değerini döndürür.
 
 ##  <a name="isbuttonhighlighted"></a>CMFCToolBar:: ısbuttonvurgulanmış
 
@@ -2375,7 +2375,7 @@ Belirtilen komut nadiren kullanılırsa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IsCommandRarelyUsed` Yöntemi aşağıdaki koşullardan biri veya daha fazlası oluştuğunda false döndürür:
+Aşağıdaki koşullardan biri veya daha fazlası gerçekleştiğinde `IsCommandRarelyUsed` yöntemi FALSE döndürür:
 
 - Belirtilen komut temel komutlar listesine ait
 
@@ -2385,7 +2385,7 @@ Belirtilen komut nadiren kullanılırsa doğru; Aksi halde yanlış.
 
 - Temel komutların listesi boş
 
-- Komut çağrılarının% 20 ' si, belirtilen komuta çağrılardır.
+- Komut çağrılarının %20 ' si, belirtilen komuta çağrılardır.
 
 ##  <a name="iscustomizemode"></a>CMFCToolBar:: IsCustomizeMode
 
@@ -2491,7 +2491,7 @@ Son komut, *pButton* 'ın belirttiği düğmeden GÖNDERILDIYSE doğru. Aksi hal
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, çağırarak `CWnd::GetCurrentMessage`bir [msg yapısına](/windows/win32/api/winuser/ns-winuser-msg) yönelik bir işaretçi alır. Sonra düğmenin, komutun kaynağı olup olmadığını anlamak için düğmenin `MSG::lParam` HWND `MSG::hwnd` 'sini ve üyeleriyle karşılaştırır.
+Bu yöntem, `CWnd::GetCurrentMessage`çağırarak bir [msg yapısına](/windows/win32/api/winuser/ns-winuser-msg) yönelik bir işaretçi alır. Sonra düğmenin bir komutun kaynağı olup olmadığını anlamak için düğmenin HWND 'sini `MSG::lParam` ve `MSG::hwnd` üyeleriyle karşılaştırır.
 
 ##  <a name="islocked"></a>CMFCToolBar:: ıskilitlendi
 
@@ -2603,7 +2603,7 @@ Yöntem başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [CMFCToolBar:: LoadToolBarEx](#loadtoolbarex) yöntemi, araç çubuğuyla ilişkili görüntüleri yüklemek için bu yöntemi çağırır. Görüntü kaynaklarının özel yükleme işlemini gerçekleştirmek için bu yöntemi geçersiz kılın.
 
-Araç çubuğunu oluşturduktan sonra ek görüntüleri yüklemek için yönteminiçağırın.`LoadBitmapEx`
+Araç çubuğunu oluşturduktan sonra ek görüntüleri yüklemek için `LoadBitmapEx` yöntemini çağırın.
 
 ##  <a name="loadbitmapex"></a>CMFCToolBar:: LoadBitmapEx
 
@@ -2737,14 +2737,14 @@ Framework, araç çubuğuyla ilişkili görüntüleri yüklemek için başlatma 
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `LoadToolBar` `CMFCToolBar` sınıfında yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `CMFCToolBar` sınıfında `LoadToolBar` yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]
 
 ##  <a name="loadtoolbarex"></a>CMFCToolBar:: LoadToolBarEx
 
-Uygulamanın büyük görüntüleri kullanmasını sağlamak için `CMFCToolBarInfo` yardımcı sınıfını kullanarak uygulama kaynaklarından araç çubuğunu yükler.
+Uygulamanın büyük görüntüleri kullanmasını sağlamak için `CMFCToolBarInfo` Yardımcısı sınıfını kullanarak araç çubuğunu uygulama kaynaklarından yükler.
 
 ```
 virtual BOOL LoadToolBarEx(
@@ -2759,7 +2759,7 @@ virtual BOOL LoadToolBarEx(
 'ndaki Araç çubuğunun kaynak KIMLIĞI.
 
 *params*<br/>
-'ndaki Araç çubuğu görüntülerinin kaynak `CMFCToolBarInfo` kimliklerini içeren bir nesneye başvuru.
+'ndaki Araç çubuğu görüntülerinin kaynak kimliklerini içeren `CMFCToolBarInfo` nesnesine bir başvuru.
 
 *engellendiğini*<br/>
 'ndaki Araç çubuğunun kilitli olup olmadığını belirten bir Boolean değer. Bu parametre TRUE ise, araç çubuğu kilitlenir. Aksi takdirde, araç çubuğu kilitli değildir.
@@ -2880,7 +2880,7 @@ virtual void OnReset();
 
 Bir araç çubuğu sıfırlaması hakkında bildirimi işlemek için bu yöntemi geçersiz kılın.
 
-Varsayılan uygulama hiçbir şey yapmaz. Araç `OnReset` çubuğunda, araç çubuğu özgün `CMFCToolBar` durumuna dönzaman değiştirilmeleri gereken kukla düğmelere sahip olan bir sınıfta geçersiz kılın.
+Varsayılan uygulama hiçbir şey yapmaz. Araç çubuğu özgün durumuna döndüğünde, araç çubuğunda değiştirilmesini gereken kukla düğmeler olduğunda, `CMFCToolBar` türetilmiş bir sınıfta `OnReset` geçersiz kılın.
 
 ##  <a name="onsetaccdata"></a>CMFCToolBar:: OnSetAccData
 
@@ -2935,7 +2935,7 @@ virtual BOOL OnUserToolTip(
 'ndaki Bir araç ipucunun görüntüleneceği bir araç çubuğu düğmesine işaret eder.
 
 *strTTText*<br/>
-dışı Araç ipucunun metnini `CString` alan nesneye bir başvuru.
+dışı Araç ipucunun metnini alan `CString` nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2943,9 +2943,9 @@ dışı Araç ipucunun metnini `CString` alan nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir araç çubuğu düğmesi için araç ipucu görüntülenmek üzere olduğunda çerçeve bu yöntemi çağırır. TRUE değerini döndürürse Framework, *strTTText*içinde tarafından `OnUserToolTip` döndürülen metni içeren bir araç ipucu görüntüler. `OnUserToolTip` Aksi halde araç ipucu düğme metnini içerir.
+Bir araç çubuğu düğmesi için araç ipucu görüntülenmek üzere olduğunda çerçeve bu yöntemi çağırır. `OnUserToolTip` TRUE değerini döndürürse Framework, *strTTText*içinde `OnUserToolTip` tarafından döndürülen metni içeren bir araç ipucu görüntüler. Aksi halde araç ipucu düğme metnini içerir.
 
-Araç `OnUserToolTip` çubuğu düğmelerinin araç ipuçlarını özelleştirmek için geçersiz kılın. Varsayılan uygulama, araç ipucu metnini almak için [CMFCToolBar:: OnUserToolTip](#onusertooltip) ' i çağırır.
+Araç çubuğu düğmelerinin araç ipuçlarını özelleştirmek için `OnUserToolTip` geçersiz kılın. Varsayılan uygulama, araç ipucu metnini almak için [CMFCToolBar:: OnUserToolTip](#onusertooltip) ' i çağırır.
 
 ##  <a name="prevmenu"></a>CMFCToolBar::P revMenu
 
@@ -2976,7 +2976,7 @@ Bu yöntem her zaman TRUE döndürmelidir. MFC, dahili olarak yanlış değerler
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CWnd::P ostMessage](../../mfc/reference/cwnd-class.md#postmessage) öğesini çağırarak ve belirtilen DÜĞMENIN komut kimliğini *wParam* parametresi olarak geçirerek araç çubuğuna sahıp olan pencereye bir WM_COMMAND iletisi gönderir.
+Bu yöntem, [CWnd::P ostMessage](../../mfc/reference/cwnd-class.md#postmessage) öğesini çağırarak ve belirtilen DÜĞMENIN komut kimliğini *wParam* parametresi olarak geçirerek araç çubuğuna sahip olan pencereye bir WM_COMMAND iletisi gönderir.
 
 WM_COMMAND iletisini bir üye işlevine eşlemek için [ON_COMMAND](message-map-macros-mfc.md#on_command) makrosunu kullanın.
 
@@ -3064,7 +3064,7 @@ int ReplaceButton(
 'ndaki Değiştirilecek düğmenin komut KIMLIĞI.
 
 *Bu*<br/>
-'ndaki Eklenecek öğesine bir başvuru `CMFCToolBarButton` .
+'ndaki Eklenecek `CMFCToolBarButton` başvurusu.
 
 *Topu*<br/>
 'ndaki *Uııcmd*tarafından BELIRTILEN komut kimliğine sahip tüm düğmelerin değiştirilip gösterilmeyeceğini belirten bir Boole değeri. Bu parametre TRUE ise, belirtilen komut KIMLIĞINE sahip olan tüm düğmeler değiştirilmiştir. Aksi halde, ilk düğme değiştirilmiştir.
@@ -3079,7 +3079,7 @@ Kaynaklardan yüklenemeyen araç çubuğu düğmeleri eklemek istediğinizde bu 
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `ReplaceButton` `CMFCToolBar` sınıfında yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `CMFCToolBar` sınıfında `ReplaceButton` yönteminin nasıl kullanılacağını gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#10](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_5.cpp)]
@@ -3197,7 +3197,7 @@ static void __stdcall SetBasicCommands(CList<UINT,UINT>& lstCommands);
 ### <a name="parameters"></a>Parametreler
 
 *lstCommands*<br/>
-'ndaki Bir komut koleksiyonu içeren `CList` bir nesneye başvuru.
+'ndaki Bir komut koleksiyonu içeren `CList` nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3293,7 +3293,7 @@ virtual void SetButtonStyle(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Kullanıcı devre dışı bir düğmeye tıklamadığı için *nStyle* ise TBBS_PRESSED stilini kaldırır.
+Bu yöntem, Kullanıcı devre dışı bir düğmeye tıklamadığından, *nstyle* TBBS_DISABLED TBBS_PRESSED stilini kaldırır.
 
 ##  <a name="setbuttontext"></a>CMFCToolBar:: SetButtonText
 
@@ -3347,7 +3347,7 @@ static BOOL SetCommandUsageOptions(
 
 Temel ve son kullanılan menü öğelerinin nasıl göründüğünü belirlemede Framework 'ün kullandığı algoritmayı özelleştirmek için bu yöntemi çağırın. Temel komutlar hakkında daha fazla bilgi için bkz. [CMFCToolBar:: AddBasicCommand](#addbasiccommand).
 
-Bu sınıf, komutlarının `CMFCCmdUsageCount` kullanım sayısını izlemek için sınıfını kullanır. Bu sınıf hakkında daha fazla bilgi için bkz. [CMFCCmdUsageCount sınıfı](../../mfc/reference/cmfccmdusagecount-class.md).
+Bu sınıf, komutların kullanım sayısını izlemek için `CMFCCmdUsageCount` sınıfını kullanır. Bu sınıf hakkında daha fazla bilgi için bkz. [CMFCCmdUsageCount sınıfı](../../mfc/reference/cmfccmdusagecount-class.md).
 
 ##  <a name="setcustomizemode"></a>CMFCToolBar:: SetCustomizeMode
 
@@ -3576,7 +3576,7 @@ static void SetNonPermittedCommands(CList<UINT,UINT>& lstCommands);
 ### <a name="parameters"></a>Parametreler
 
 *lstCommands*<br/>
-'ndaki Kullanıcı tarafından yürütülebilecek komutları `CList` içeren bir nesneye başvuru.
+'ndaki Kullanıcı tarafından yürütülebilecek komutları içeren `CList` nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3775,13 +3775,13 @@ static BOOL SetUserImages(CMFCToolBarImages* pUserImages);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa sıfır dışı; Aksi halde, belirtilen `CMFCToolBarImages` nesne geçerli değilse veya araç çubuğunun varsayılan görüntü boyutundan farklı olan bir görüntü boyutu varsa 0.
+Yöntem başarılı olursa sıfır dışı; Aksi halde, belirtilen `CMFCToolBarImages` nesnesi geçerli değilse veya araç çubuğunun varsayılan görüntü boyutundan farklı bir görüntü boyutu varsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Çerçeve Kullanıcı tarafından özelleştirilmiş araç çubuğu düğmeleri çizmek için Kullanıcı tanımlı görüntüleri kullanır. *PUserImages* tarafından belirtilen görüntü listesi, uygulamadaki tüm araç çubukları arasında paylaşılır.
 
-Bu yöntem, belirtilen `CMFCToolBarImages` nesne geçerli değilse veya araç çubuğunun varsayılan görüntü boyutundan farklı bir görüntü boyutuna sahipse hata ayıklama yapılarında bir onaylama hatası oluşturur.
+Bu yöntem, belirtilen `CMFCToolBarImages` nesnesi geçerli değilse veya araç çubuğunun varsayılan görüntü boyutundan farklı bir görüntü boyutuna sahipse hata ayıklama yapılarında bir onaylama hatası oluşturur.
 
 OutlookDemo, ToolTipDemo ve VisualStudioDemo örnekleri, Kullanıcı tanımlı görüntülerin genel koleksiyonunu ayarlamak için bu yöntemi kullanır. Bunlar, uygulamanın çalışma dizininde bulunan UserImages. bmp adlı dosyayı yükler.
 
@@ -3807,7 +3807,7 @@ virtual CSize StretchPane(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Toolbar `CSize` istemci alanının boyutunu belirten bir nesne.
+Araç çubuğu istemci alanının boyutunu belirten `CSize` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 

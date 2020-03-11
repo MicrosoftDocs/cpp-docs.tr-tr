@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
 ms.openlocfilehash: 88b04ad4f14faf4d152c0ce2b9c3477928263c52
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689817"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866166"
 ---
 # <a name="collate-class"></a>collate Sınıfı
 
@@ -42,12 +42,12 @@ class collate : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* \
+*CharType*\
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim `id` benzersiz bir pozitif değer depolar. Bazı dillerde, karakterler gruplandırılır ve tek bir karakter olarak ele alınır ve bazılarındaysa tekil karakterler iki karaktermiş gibi ele alınır. Harmanlama sınıfı tarafından sağlanan harmanlama hizmetleri bu durumları sıralamaya yönelik yöntem sağlar.
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim `id`benzersiz bir pozitif değer depolar. Bazı dillerde, karakterler gruplandırılır ve tek bir karakter olarak ele alınır ve bazılarındaysa tekil karakterler iki karaktermiş gibi ele alınır. Harmanlama sınıfı tarafından sağlanan harmanlama hizmetleri bu durumları sıralamaya yönelik yöntem sağlar.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -59,8 +59,8 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|@No__t_0 türünde bir karakteri tanımlayan tür.|
-|[string_type](#string_type)|@No__t_1 türünde karakterler içeren `basic_string` türünde bir dizeyi tanımlayan tür.|
+|[char_type](#char_type)|`CharType`türünde bir karakteri tanımlayan tür.|
+|[string_type](#string_type)|`CharType`türünde karakterler içeren `basic_string` türünde bir dizeyi tanımlayan tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -75,13 +75,13 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>collate:: char_type
+## <a name="char_type"></a>harmanlama:: char_type
 
-@No__t_0 türünde bir karakteri tanımlayan tür.
+`CharType`türünde bir karakteri tanımlayan tür.
 
 ```cpp
 typedef CharType char_type;
@@ -89,7 +89,7 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `CharType` şablon parametresi için bir eş anlamlı.
+Tür, `CharType`şablon parametresi için bir eş anlamlı.
 
 ## <a name="collate"></a>collate:: COLLATE
 
@@ -108,10 +108,10 @@ const char* _Locname,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*_Refs*\
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
-*_Locname* \
+*_Locname*\
 Yerel ayarın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -139,16 +139,16 @@ int compare(const CharType* first1,
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* \
+*first1*\
 Karşılaştırılacak ilk dizideki ilk öğe işaretçisi.
 
-*last1* \
+*last1*\
 Karşılaştırılacak ilk dizideki son öğenin işaretçisi.
 
-*first2* \
+*first2*\
 Karşılaştırılacak ikinci dizideki ilk öğenin işaretçisi.
 
-*last2* \
+*last2*\
 Karşılaştırılacak ikinci dizideki son öğenin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -205,16 +205,16 @@ virtual int do_compare(const CharType* first1,
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* \
+*first1*\
 Karşılaştırılacak ilk dizideki ilk öğe işaretçisi.
 
-*last1* \
+*last1*\
 Karşılaştırılacak ilk dizideki son öğenin işaretçisi.
 
-*first2* \
+*first2*\
 Karşılaştırılacak ikinci dizideki ilk öğenin işaretçisi.
 
-*last2* \
+*last2*\
 Karşılaştırılacak ikinci dizideki son öğenin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -229,11 +229,11 @@ Karşılaştırılacak ikinci dizideki son öğenin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi [* First1, last1) * konumundaki diziyi *[first2, last2*) sırasıyla karşılaştırır. @No__t_1 türündeki karşılık gelen öğelerin çiftleri arasında `operator<` uygulayarak değerleri karşılaştırır. İlk sıra, dizideki en yakın eşit olmayan çiftte daha küçük bir öğe varsa veya eşit olmayan çiftler yoksa, ancak ilk sıra daha kısadır.
+Korumalı sanal üye işlevi [* First1, last1) * konumundaki diziyi *[first2, last2*) sırasıyla karşılaştırır. `CharType`türündeki karşılık gelen öğelerin çiftleri arasında `operator<` uygulayarak değerleri karşılaştırır. İlk sıra, dizideki en yakın eşit olmayan çiftte daha küçük bir öğe varsa veya eşit olmayan çiftler yoksa, ancak ilk sıra daha kısadır.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [collate:: Compare](#compare)örneğine bakın.
+`do_compare`çağıran [collate:: Compare](#compare)örneğine bakın.
 
 ## <a name="do_hash"></a>harmanlama::d o_hash
 
@@ -245,10 +245,10 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Dizide değeri belirlenecek olan ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dizideki değeri belirlenecek olan son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -261,7 +261,7 @@ Karma değer, örneğin bir liste dizisi genelinde rastgele dizileri rastgele da
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [karma](#hash)için örneğe bakın.
+`do_hash`çağıran [karma](#hash)için örneğe bakın.
 
 ## <a name="do_transform"></a>harmanlama::d o_transform
 
@@ -273,10 +273,10 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Dönüştürülecek dizideki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dönüştürülecek dizideki son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -285,11 +285,11 @@ Dönüştürülmüş karakter dizisi olan bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, denetlenen sırası [`first`, `last`) sırasının bir kopyası olan [string_type](#string_type) sınıfının bir nesnesini döndürür. @No__t_0 **CharType**> harmanlanmasından türetilen bir sınıf [do_compare](#do_compare)geçersiz kıldığında, eşleşecek `do_transform` de geçersiz kılmalıdır. @No__t_0 geçirildiğinde, dönüştürülmüş dizelerin türetilmiş sınıfta karşılaştırılabilmesi için geçirmekten elde edilen iki dize aynı sonucu verir.
+Korumalı sanal üye işlevi, denetim sırası [`first`, `last`) bir kopyası olan [string_type](#string_type) sınıf nesnesini döndürür. \< **CharType**> harmanlanmasından türetilen bir sınıf [do_compare](#do_compare)geçersiz kılındığında, eşleşmesi için `do_transform` de geçersiz kılar. `collate::compare`geçirildiğinde, dönüştürülmüş dizelerin türetilmiş sınıfta karşılaştırılabilmesi için geçirmekten elde edilen iki dize aynı sonucu verir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [dönüştürme](#transform)örneğine bakın.
+`do_transform`çağıran [dönüştürme](#transform)örneğine bakın.
 
 ## <a name="hash"></a>collate:: Hash
 
@@ -301,10 +301,10 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Dizide değeri belirlenecek olan ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dizideki değeri belirlenecek olan son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -345,9 +345,9 @@ int main( )
 541187293 551279837
 ```
 
-## <a name="string_type"></a>collate:: string_type
+## <a name="string_type"></a>harmanlama:: string_type
 
-@No__t_1 türünde karakterler içeren `basic_string` türünde bir dizeyi tanımlayan tür.
+`CharType`türünde karakterler içeren `basic_string` türünde bir dizeyi tanımlayan tür.
 
 ```cpp
 typedef basic_string<CharType> string_type;
@@ -355,11 +355,11 @@ typedef basic_string<CharType> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, nesneleri kaynak dizinin kopyalarını depolayabilen [basic_string](../standard-library/basic-string-class.md) sınıf şablonu özelleştirmesi tanımlar.
+Türü, bir sınıf şablonu [basic_string](../standard-library/basic-string-class.md) , nesneleri kaynak dizinin kopyalarını depolayabilen bir özelleşme tanımlar.
 
 ### <a name="example"></a>Örnek
 
-@No__t_0 bildirme ve kullanma hakkında bir örnek için bkz. [Transform](#transform).
+`string_type`bildirme ve kullanma hakkında bir örnek için bkz. [Transform](#transform).
 
 ## <a name="transform"></a>collate:: Transform
 
@@ -371,10 +371,10 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Dönüştürülecek dizideki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dönüştürülecek dizideki son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -429,5 +429,5 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
+[\<yerel ayar >](../standard-library/locale.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -15,11 +15,11 @@ helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
 ms.openlocfilehash: a7bb3ab5ed292cef8108e937e67bc9e2ccc1ebce
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907881"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866587"
 ---
 # <a name="icommandui-interface"></a>Iommanduı arabirimi
 
@@ -35,23 +35,23 @@ interface class ICommandUI
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[icommandui__Check](#check)|Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
 |[Iommanduı:: Devamsallama](#continuerouting)|Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.|
 |[Iommanduı:: etkin](#enabled)|Bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır.|
-|[Iommanduı:: ID](#id)|`ICommandUI` Nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin kimliğini alır.|
-|[Iommanduı:: Index](#index)|`ICommandUI` Nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır.|
+|[Iommanduı:: ID](#id)|`ICommandUI` nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin KIMLIĞINI alır.|
+|[Iommanduı:: Index](#index)|`ICommandUI` nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır.|
 |[Iommanduı:: Radio](#radio)|Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
 |[ICommandUI:: metin](#text)|Bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, Kullanıcı arabirimi komutlarını yöneten Yöntemler ve özellikler sağlar. `ICommandUI`, [CCmdUI sınıfına](../../mfc/reference/ccmdui-class.md)benzerdir, ancak `ICommandUI` .NET bileşenleriyle birlikte çalışan MFC uygulamaları için kullanılır.
+Bu arabirim, Kullanıcı arabirimi komutlarını yöneten Yöntemler ve özellikler sağlar. `ICommandUI` [CCmdUI sınıfına](../../mfc/reference/ccmdui-class.md)benzerdir, ancak bu, .NET bileşenleriyle bırlıkte çalışan MFC uygulamaları için `ICommandUI` kullanılır.
 
-`ICommandUI`, bir [ıwıtarget](../../mfc/reference/icommandtarget-interface.md)ile türetilmiş SıNıFTA bir ON_UPDATE_COMMAND_UI işleyicisi içinde kullanılır. Bir uygulamanın kullanıcısı bir menüyü etkinleştirir (seçer veya tıklatır), her menü öğesi etkin veya devre dışı olarak görüntülenir. Her menü komutunun hedefi, bir ON_UPDATE_COMMAND_UI işleyicisi uygulayarak bu bilgileri sağlar. Uygulamanızdaki her bir komut Kullanıcı arabirimi nesnesi için, her işleyici için bir ileti eşleme girişi ve işlev prototipi oluşturmak üzere [sınıf Sihirbazı](mfc-class-wizard.md) ' nı kullanın.
+`ICommandUI`, [ICommandTarget](../../mfc/reference/icommandtarget-interface.md)ile türetilmiş bir sınıfta bir ON_UPDATE_COMMAND_UI işleyicisi içinde kullanılır. Bir uygulamanın kullanıcısı bir menüyü etkinleştirir (seçer veya tıklatır), her menü öğesi etkin veya devre dışı olarak görüntülenir. Her menü komutunun hedefi, bir ON_UPDATE_COMMAND_UI işleyicisi uygulayarak bu bilgileri sağlar. Uygulamanızdaki her bir komut Kullanıcı arabirimi nesnesi için, her işleyici için bir ileti eşleme girişi ve işlev prototipi oluşturmak üzere [sınıf Sihirbazı](mfc-class-wizard.md) ' nı kullanın.
 
-`ICommandUI` Arabirimin komut yönlendirmesinde nasıl kullanıldığı hakkında daha fazla bilgi için bkz [. nasıl yapılır: Windows Forms denetimine](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)komut yönlendirmesi ekleyin.
+`ICommandUI` arabiriminin komut yönlendirmesinde nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [nasıl yapılır: komut yönlendirmesi ekleme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
@@ -80,7 +80,7 @@ void ContinueRouting();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, FALSE döndüren bir ON_COMMAND_EX işleyicisiyle birlikte kullanılması gereken gelişmiş bir üye işlevdir. Daha fazla bilgi için bkz. Teknik NotTN006: İleti haritaları.
+Bu, FALSE döndüren bir ON_COMMAND_EX işleyicisiyle birlikte kullanılması gereken gelişmiş bir üye işlevdir. Daha fazla bilgi için bkz. Teknik NotTN006: Ileti haritaları.
 
 ## <a name="enabled"></a>Iommanduı:: etkin
 

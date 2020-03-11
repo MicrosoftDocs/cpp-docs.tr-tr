@@ -37,11 +37,11 @@ helpviewer_keywords:
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
 ms.openlocfilehash: 640b2cc8506e498006feedbea6825a0e51a88209
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688163"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876315"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 
@@ -56,26 +56,26 @@ class ctype : public ctype_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* \
+*CharType*\
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim `id` benzersiz bir pozitif değer depolar. Sınıflandırma ölçütü temel sınıf ctype_base içindeki bir iç içe bit maskesi türünde sağlanır.
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim `id`benzersiz bir pozitif değer depolar. Sınıflandırma ölçütü temel sınıf ctype_base içindeki bir iç içe bit maskesi türünde sağlanır.
 
 Standart C++ kitaplık, bu sınıf şablonunun iki açık uzmanlığını tanımlar:
 
-- farkları ayrı olarak açıklanan açık bir özelleşme `ctype<char>`. Daha fazla bilgi için bkz. [CType &lt;char &gt; sınıfı](../standard-library/ctype-char-class.md).
+- farkları ayrı olarak açıklanan açık bir özelleşme `ctype<char>`. Daha fazla bilgi için bkz. [CType&lt;char&gt; sınıfı](../standard-library/ctype-char-class.md).
 
 - öğeleri geniş karakter olarak ele veren `ctype<wchar_t>`.
 
-Sınıf şablonu `ctype<CharType>` diğer özelleştirilmiş meler:
+Sınıf şablonu `ctype<CharType>`diğer özelleştirilmiş meler:
 
-- *CharType* türündeki *bir değeri* **char** türünde bir değere `(char)ch` ifade ile dönüştürür.
+- *CharType* türündeki *bir değeri* **char** türünde bir değere `(char)ch`ifade ile dönüştürür.
 
-- **Char** türünde bir değer *baytı* , `CharType(byte)` ifade ile *CharType* türünde bir değere dönüştürür.
+- **Char** türünde bir değer *baytı* , `CharType(byte)`ifade ile *CharType* türünde bir değere dönüştürür.
 
-Tüm diğer işlemler, `ctype<char>` açık özelleştirme için aynı şekilde **char** değerlerinde gerçekleştirilir.
+Tüm diğer işlemler, `ctype<char>`açık özelleştirme için aynı şekilde **char** değerlerinde gerçekleştirilir.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -110,7 +110,7 @@ Tüm diğer işlemler, `ctype<char>` açık özelleştirme için aynı şekilde 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
@@ -140,7 +140,7 @@ explicit ctype(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*_Refs*\
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -174,19 +174,19 @@ virtual const CharType *do_is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* \
+*maskVal*\
 Karakterin test edileceği maske değeri.
 
-*ch* \
+*ch*\
 Öznitelikleri sınanacak olan karakter.
 
-*ilk* \
+*ilk*\
 İçindeki öznitelikleri sınıflandırılacak olan aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Öznitelikleri sınıflandırılacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
-*hedef* \
+*hedef*\
 Maske değerlerinin her bir karakterin özniteliklerini karakterize olarak niteleyen dizinin başlangıcına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -197,11 +197,11 @@ Maske değerlerinin her bir karakterin özniteliklerini karakterize olarak nitel
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karakterlerin özniteliklerini sınıflandırın maske değerleri, CType 'ın türetildiği [ctype_base](../standard-library/ctype-base-class.md)sınıfı tarafından sağlanır. İlk üye işlevi, bit maskeleri olarak adlandırılan ilk parametresi için ifadeleri kabul edebilir ve mantıksal bit düzeyinde işleçlere (&#124; , &, ^, ~) göre maske değerlerinin birleşiminden oluşturulur.
+Karakterlerin özniteliklerini sınıflandırın maske değerleri, CType 'ın türettiği [ctype_base](../standard-library/ctype-base-class.md)sınıf tarafından sağlanır. İlk üye işlevi, bit maskeleri olarak adlandırılan ilk parametresi için ifadeleri kabul edebilir ve mantıksal bit düzeyinde işleçlere (&#124; , &, ^, ~) göre maske değerlerinin birleşiminden oluşturulur.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [, için örneğe](#is)bakın.
+`do_is`çağıran [, için örneğe](#is)bakın.
 
 ## <a name="do_narrow"></a>CType::d o_narrow
 
@@ -221,34 +221,34 @@ virtual const CharType* do_narrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*ch* \
+*ch*\
 Dönüştürülecek yerel ayar tarafından kullanılan `Chartype` türü karakter.
 
-*varsayılan* \
+*varsayılan*\
 Üye işlevi tarafından **char**türünde karşılık gelen karakter olmayan `CharType` türünde karakterlere atanacak varsayılan değer.
 
-*ilk* \
+*ilk*\
 Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*hedef* \
+*hedef*\
 Hedef aralıktaki, dönüştürülmüş karakter aralığını depolayan **char** türündeki ilk karaktere yönelik const işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İlk korumalı üye işlevi, `CharType` türü parametre karakterine karşılık gelen char türünde yerel karakteri döndürür veya hiçbir karşılık tanımlanmamışsa, *varsayılan değer* .
 
-İkinci korumalı üye işlevi, `CharType` türündeki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçi döndürür.
+İkinci korumalı üye işlevi, `CharType`türündeki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablonu işlevi, `do_narrow` (`first` [`I`], `default`) `dest` [`I`] öğesinde, [0, `I` `last`  -  aralığında `first` için depolar.
+İkinci korumalı üye şablonu işlevi, `do_narrow`(`first` [`I`], `default`) `dest`[`I`] öğesinde, [0, `I` `last` - aralığında `first`için depolar.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [dar](#narrow)için örneğe bakın.
+`do_narrow`çağıran [dar](#narrow)için örneğe bakın.
 
 ## <a name="do_scan_is"></a>CType::d o_scan_is
 
@@ -263,13 +263,13 @@ virtual const CharType *do_scan_is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* \
+*maskVal*\
 Bir karakterle eşleştirilecek maske değeri.
 
-*ilk* \
+*ilk*\
 Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -282,7 +282,7 @@ Korumalı üye işlevi, [do_is](#do_is)(`maskVal`, \* `ptr`) doğru olduğu [`fi
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [scan_is](#scan_is)için örneğe bakın.
+`do_scan_is`çağıran [scan_is](#scan_is)için örneğe bakın.
 
 ## <a name="do_scan_not"></a>CType::d o_scan_not
 
@@ -297,13 +297,13 @@ virtual const CharType *do_scan_not(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* \
+*maskVal*\
 Maske değeri bir karakterle eşleştirilemez.
 
-*ilk* \
+*ilk*\
 Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -312,11 +312,11 @@ Belirli bir maskeyle eşleşmeyen bir aralıktaki ilk karaktere yönelik bir iş
 
 ### <a name="remarks"></a>Açıklamalar
 
-Protected member işlevi, [do_is](#do_is)(`maskVal`, \* `ptr`) false olduğunda, [`first`, `last`) aralığındaki en küçük işaretçiyi `ptr` döndürür.
+Korunan üye işlevi, [do_is](#do_is)(`maskVal`, \* `ptr`) yanlış olduğu [`first`, `last`) aralığındaki en küçük işaretçiyi `ptr` döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [scan_not](#scan_not)için örneğe bakın.
+`do_scan_not`çağıran [scan_not](#scan_not)için örneğe bakın.
 
 ## <a name="do_tolower"></a>CType::d o_tolower
 
@@ -332,13 +332,13 @@ virtual const CharType *do_tolower(
 
 ### <a name="parameters"></a>Parametreler
 
-*ch* \
+*ch*\
 Küçük harfe Dönüştürülecek karakter.
 
-*ilk* \
+*ilk*\
 Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -347,11 +347,11 @@ Küçük harfe Dönüştürülecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablonu işlevi, [0, `last`  -  `first`) `I` için her öğe `first` [`I`], `do_tolower` (`first` [`I`]) ile değiştirir.
+İkinci korumalı üye şablonu işlevi, [0, `last` - `first`) `I` için her öğe `first` [`I`], `do_tolower`(`first` [`I`]) ile değiştirir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [ToLower](#tolower)örneğine bakın.
+`do_tolower`çağıran [ToLower](#tolower)örneğine bakın.
 
 ## <a name="do_toupper"></a>CType::d o_toupper
 
@@ -367,13 +367,13 @@ virtual const CharType *do_toupper(
 
 ### <a name="parameters"></a>Parametreler
 
-*ch* \
+*ch*\
 Büyük harfe Dönüştürülecek karakter.
 
-*ilk* \
+*ilk*\
 Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karakter işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -382,11 +382,11 @@ Büyük harfe Dönüştürülecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablonu işlevi, [0, `last`  -  `first`) `I` için her öğe `first` [`I`], `do_toupper` (`first` [`I`]) ile değiştirir.
+İkinci korumalı üye şablonu işlevi, [0, `last` - `first`) `I` için her öğe `first` [`I`], `do_toupper`(`first` [`I`]) ile değiştirir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [ToUpper](#toupper)örneğine bakın.
+`do_toupper`çağıran [ToUpper](#toupper)örneğine bakın.
 
 ## <a name="do_widen"></a>CType::d o_widen
 
@@ -403,16 +403,16 @@ virtual const char *do_widen(
 
 ### <a name="parameters"></a>Parametreler
 
-*bayt* \
+*bayt*\
 Dönüştürülecek yerel karakter kümesindeki **char** türü karakteri.
 
-*ilk* \
+*ilk*\
 Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*hedef* \
+*hedef*\
 Hedef aralıktaki dönüştürülmüş karakter aralığını depolayan `CharType` türündeki ilk karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -423,11 +423,11 @@ Hedef aralıktaki dönüştürülmüş karakter aralığını depolayan `CharTyp
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablonu işlevi, `do_widen` (`first` [`I`]) `dest` [`I`] içinde, [0, `I` `last`  -  aralığında `first` için depolar.
+İkinci korumalı üye şablonu işlevi, `do_widen`(`first`[`I`]) `dest`[`I`] içinde, [0, `I` `last` - aralığında `first`için depolar.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [Genişlet](#widen)için örneğe bakın.
+`do_widen`çağıran [Genişlet](#widen)için örneğe bakın.
 
 ## <a name="is"></a>CType::
 
@@ -444,19 +444,19 @@ const CharType *is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* \
+*maskVal*\
 Karakterin test edileceği maske değeri.
 
-*ch* \
+*ch*\
 Öznitelikleri sınanacak olan karakter.
 
-*ilk* \
+*ilk*\
 İçindeki öznitelikleri sınıflandırılacak olan aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Öznitelikleri sınıflandırılacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
-*hedef* \
+*hedef*\
 Maske değerlerinin her bir karakterin özniteliklerini karakterize olarak niteleyen dizinin başlangıcına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -524,30 +524,30 @@ const CharType* narrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*ch* \
+*ch*\
 Dönüştürülecek yerel ayar tarafından kullanılan `Chartype` türü karakter.
 
-*varsayılan* \
+*varsayılan*\
 Üye işlevi tarafından **char**türünde karşılık gelen karakter olmayan `CharType` türünde karakterlere atanacak varsayılan değer.
 
-*ilk* \
+*ilk*\
 Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*hedef* \
+*hedef*\
 Hedef aralıktaki, dönüştürülmüş karakter aralığını depolayan **char** türündeki ilk karaktere yönelik const işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İlk üye işlevi, karşılık gelen bir değer tanımlanmışsa `CharType default` türü parametre karakterine karşılık gelen **char** türünde yerel karakteri döndürür.
 
-İkinci üye işlevi, `CharType` türündeki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçi döndürür.
+İkinci üye işlevi, `CharType`türündeki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi [do_narrow](#do_narrow)döndürür (`ch`, `default`). İkinci üye işlevi [do_narrow](#do_narrow) döndürür (`first`, `last`, `default`, `dest`). @No__t_1 altında benzersiz bir ters görüntü `CharType` için yalnızca temel kaynak karakterlerin garantisi vardır. Bu temel kaynak karakterler için şu sabit tutar: `narrow` ( [Genişlet](#widen) ( **c** ), 0) = = **c**.
+İlk üye işlevi [do_narrow](#do_narrow)döndürür (`ch`, `default`). İkinci üye işlevi [do_narrow](#do_narrow) döndürür (`first`, `last`, `default`, `dest`). `narrow`altında benzersiz bir ters görüntü `CharType` için yalnızca temel kaynak karakterlerin garantisi vardır. Bu temel kaynak karakterler için şu sabit tutar: `narrow` ( [Genişlet](#widen) ( **c** ), 0) = = **c**.
 
 ### <a name="example"></a>Örnek
 
@@ -588,13 +588,13 @@ const CharType *scan_is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* \
+*maskVal*\
 Bir karakterle eşleştirilecek maske değeri.
 
-*ilk* \
+*ilk*\
 Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -644,13 +644,13 @@ const CharType *scan_not(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* \
+*maskVal*\
 Maske değeri bir karakterle eşleştirilemez.
 
-*ilk* \
+*ilk*\
 Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -699,13 +699,13 @@ const CharType *tolower(CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ch* \
+*ch*\
 Küçük harfe Dönüştürülecek karakter.
 
-*ilk* \
+*ilk*\
 Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -754,13 +754,13 @@ const CharType *toupper(CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ch* \
+*ch*\
 Büyük harfe Dönüştürülecek karakter.
 
-*ilk* \
+*ilk*\
 Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -809,16 +809,16 @@ const char *widen(const char* first, const char* last, CharType* dest) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*bayt* \
+*bayt*\
 Dönüştürülecek yerel karakter kümesindeki char türü karakteri.
 
-*ilk* \
+*ilk*\
 Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*son* \
+*son*\
 Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*hedef* \
+*hedef*\
 Hedef aralıktaki dönüştürülmüş karakter aralığını depolayan `CharType` türündeki ilk karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -863,5 +863,5 @@ Hello everyone!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
+[\<yerel ayar >](../standard-library/locale.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

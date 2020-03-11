@@ -47,11 +47,11 @@ helpviewer_keywords:
 - std::moneypunct [C++], thousands_sep
 ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
 ms.openlocfilehash: 7960ee8b5e9ce6b27494e896e38bbf6b5256fe7e
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689290"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884012"
 ---
 # <a name="moneypunct-class"></a>moneypunct Sınıfı
 
@@ -66,10 +66,10 @@ class moneypunct;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* \
+*CharType*\
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
-*Intl* \
+*Intl*\
 Gözlenecek uluslararası kurallara uyulup uyulmayacağını belirten bayrak.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -82,14 +82,14 @@ Sabit statik nesne Intl, *Intl*şablon parametresinin değerini depolar.
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[moneypunct](#moneypunct)|@No__t_0 türündeki nesnelerin Oluşturucusu.|
+|[moneypunct](#moneypunct)|`moneypunct`türündeki nesnelerin Oluşturucusu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|
-|[string_type](#string_type)|@No__t_0 türünde karakterler içeren bir dizeyi tanımlayan tür.|
+|[string_type](#string_type)|`CharType`türünde karakterler içeren bir dizeyi tanımlayan tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -116,7 +116,7 @@ Sabit statik nesne Intl, *Intl*şablon parametresinin değerini depolar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
@@ -229,7 +229,7 @@ Ondalık noktası simgesi olarak kullanılacak öğelerin yerel ayara özgü diz
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `curr_symbol` tarafından çağrıldığı [curr_symbol](#curr_symbol)için örneğe bakın.
+Sanal üye işlevinin `curr_symbol`tarafından çağrıldığı [curr_symbol](#curr_symbol)için örneğe bakın.
 
 ## <a name="do_decimal_point"></a>moneypunct::d o_decimal_point
 
@@ -245,7 +245,7 @@ Ondalık noktası simgesi olarak kullanılacak öğelerin yerel ayara özgü diz
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `decimal_point` tarafından çağrıldığı [decimal_point](#decimal_point)için örneğe bakın.
+Sanal üye işlevinin `decimal_point`tarafından çağrıldığı [decimal_point](#decimal_point)için örneğe bakın.
 
 ## <a name="do_frac_digits"></a>moneypunct::d o_frac_digits
 
@@ -261,7 +261,7 @@ Herhangi bir ondalık noktasının sağında görüntülenecek basamak sayısın
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `frac_digits` tarafından çağrıldığı [frac_digits](#frac_digits)için örneğe bakın.
+Sanal üye işlevinin `frac_digits`tarafından çağrıldığı [frac_digits](#frac_digits)için örneğe bakın.
 
 ## <a name="do_grouping"></a>moneypunct::d o_grouping
 
@@ -277,7 +277,7 @@ Basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını b
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `grouping` tarafından çağrıldığı [Gruplandırma](#grouping)için örneğe bakın.
+Sanal üye işlevinin `grouping`tarafından çağrıldığı [Gruplandırma](#grouping)için örneğe bakın.
 
 ## <a name="do_neg_format"></a>moneypunct::d o_neg_format
 
@@ -289,7 +289,7 @@ virtual pattern do_neg_format() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Korumalı sanal üye işlevi, negatif bir miktar için parasal çıktı alanı oluşturmayı belirlemek için yerel ayara özgü bir kural döndürür. @No__t_0 dört öğenin her biri şu değerlere sahip olabilir:
+Korumalı sanal üye işlevi, negatif bir miktar için parasal çıktı alanı oluşturmayı belirlemek için yerel ayara özgü bir kural döndürür. `pattern::field` dört öğenin her biri şu değerlere sahip olabilir:
 
 - sıfır veya daha fazla boşlukla eşleşecek veya hiçbir şey oluşturmaya `none`.
 
@@ -301,13 +301,13 @@ Korumalı sanal üye işlevi, negatif bir miktar için parasal çıktı alanı o
 
 - bir parasal değer eşlemek veya oluşturmak için `value`.
 
-Parasal çıkış alanının bileşenleri oluşturulur ve bir parasal giriş alanının bileşenleri, bu öğelerin `pattern::field` görünme sırasıyla eşleştirilir. Her değerin `sign`, `symbol`, `value` ve `none` ya da `space` tam olarak bir kez görünmesi gerekir. @No__t_0 değeri ilk olarak görünmemelidir. Değer alanı ilk veya son olarak **görünmemelidir.** @No__t_0 true ise, düzen `symbol`, `sign`, `none` ve `value` olur.
+Parasal çıkış alanının bileşenleri oluşturulur ve bir parasal giriş alanının bileşenleri, bu öğelerin `pattern::field`görünme sırasıyla eşleştirilir. Her değerin `sign`, `symbol`, `value`ve `none` ya da `space` tam olarak bir kez görünmesi gerekir. `none` değeri ilk olarak görünmemelidir. Değer alanı ilk veya son olarak **görünmemelidir.** `Intl` true ise, düzen `symbol`, `sign`, `none`ve `value`olur.
 
-@No__t_1 **CharType**`moneypunct` şablon sürümü, **Intl**> `{`**money_base:: symbol**, **money_base:: Sign**, **money_base:: value**, **money_base:: None** `}` döndürüyor.
+\< **CharType**`moneypunct`şablon sürümü, **ıntl**> `{`**money_base:: symbol**, money_base:: **sign**, **money_base:: value**, **money_base:: None**`}`döndürüyor.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `neg_format` tarafından çağrıldığı [neg_format](#neg_format)için örneğe bakın.
+Sanal üye işlevinin `neg_format`tarafından çağrıldığı [neg_format](#neg_format)için örneğe bakın.
 
 ## <a name="do_negative_sign"></a>moneypunct::d o_negative_sign
 
@@ -323,7 +323,7 @@ Negatif bir işaret olarak kullanılacak öğelerin yerel ayara özgü dizisi.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `negative_sign` tarafından çağrıldığı [negative_sign](#negative_sign)için örneğe bakın.
+Sanal üye işlevinin `negative_sign`tarafından çağrıldığı [negative_sign](#negative_sign)için örneğe bakın.
 
 ## <a name="do_pos_format"></a>moneypunct::d o_pos_format
 
@@ -337,11 +337,11 @@ virtual pattern do_pos_format() const;
 
 Korumalı sanal üye işlevi, pozitif bir miktar için parasal çıktı alanı oluşturmayı belirlemek için yerel ayara özgü bir kural döndürür. (Parasal giriş alanının bileşenleriyle nasıl eşleşeceğini de belirler.) Kodlama, [do_neg_format](#do_neg_format)ile aynıdır.
 
-Moneypunct \< **CharType**, **ınputlterator**> şablon sürümü `{`**money_base:: symbol**, **money_base:: Sign**, **money_base:: value**, **money_base:: None** `}` döndürüyor.
+Moneypunct\< **CharType**, **ınputlterator**> şablon sürümü `{`**money_base:: symbol**, money_base:: **sign**, **money_base:: value**, **money_base:: None**`}`döndürüyor.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `pos_format` tarafından çağrıldığı [pos_format](#pos_format)için örneğe bakın.
+Sanal üye işlevinin `pos_format`tarafından çağrıldığı [pos_format](#pos_format)için örneğe bakın.
 
 ## <a name="do_positive_sign"></a>moneypunct::d o_positive_sign
 
@@ -357,7 +357,7 @@ Pozitif bir işaret olarak kullanılacak öğelerin yerel ayara özgü dizisi.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `positive_sign` tarafından çağrıldığı [positive_sign](#positive_sign)için örneğe bakın.
+Sanal üye işlevinin `positive_sign`tarafından çağrıldığı [positive_sign](#positive_sign)için örneğe bakın.
 
 ## <a name="do_thousands_sep"></a>moneypunct::d o_thousands_sep
 
@@ -373,7 +373,7 @@ Herhangi bir ondalık noktanın solunda Grup ayırıcı olarak kullanılacak yer
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `thousands_sep` tarafından çağrıldığı [thousands_sep](#thousands_sep)için örneğe bakın.
+Sanal üye işlevinin `thousands_sep`tarafından çağrıldığı [thousands_sep](#thousands_sep)için örneğe bakın.
 
 ## <a name="frac_digits"></a>moneypunct:: frac_digits
 
@@ -515,7 +515,7 @@ to the right of the radix character: 2
 
 ## <a name="moneypunct"></a>moneypunct:: moneypunct
 
-@No__t_0 türündeki nesnelerin Oluşturucusu.
+`moneypunct`türündeki nesnelerin Oluşturucusu.
 
 ```cpp
 explicit moneypunct(size_t _Refs = 0);
@@ -523,7 +523,7 @@ explicit moneypunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*_Refs*\
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -835,5 +835,5 @@ English_Canada.1252 domestic thousands separator: ,
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
+[\<yerel ayar >](../standard-library/locale.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

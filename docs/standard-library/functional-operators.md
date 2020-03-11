@@ -8,17 +8,17 @@ helpviewer_keywords:
 - functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 ms.openlocfilehash: b396e5c692129821c0deb9aef9469a5c54e600b0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243769"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876354"
 ---
 # <a name="ltfunctionalgt-operators"></a>&lt;işlevsel&gt; işleçleri
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-Çağrılabilir nesnesi boş olup olmadığını sınar.
+Çağrılabilir nesne boş ise sınar.
 
 ```cpp
 template <class Fty>
@@ -31,17 +31,17 @@ template <class Fty>
 ### <a name="parameters"></a>Parametreler
 
 *Fty*\
-Kaydırmak için işlev türü.
+Sarılacağı işlev türü.
 
-*F*\
+*f*\
 İşlev nesnesi
 
-*npc*\
-Null bir işaretçi.
+*NPC*\
+Null işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki işleçleri başvuru bir bağımsız değişken alır bir `function` nesnesi ve bir null işaretçi sabit bir bağımsız değişken. Her ikisi de yalnızca, true döndürür `function` nesnesi boş.
+İşleçler her ikisi de `function` nesnesine başvuru olan bir bağımsız değişken ve null işaretçi sabiti olan bir bağımsız değişken alır. Her ikisi de yalnızca `function` nesnesi boşsa true değeri döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -75,9 +75,9 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Çağrılabilir nesnesi boş olup olmadığını sınar.
+Çağrılabilir nesne boş değilse sınar.
 
 ```cpp
 template <class Fty>
@@ -90,17 +90,17 @@ template <class Fty>
 ### <a name="parameters"></a>Parametreler
 
 *Fty*\
-Kaydırmak için işlev türü.
+Sarılacağı işlev türü.
 
-*F*\
+*f*\
 İşlev nesnesi
 
-*npc*\
-Null bir işaretçi.
+*NPC*\
+Null işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki işleçleri başvuru bir bağımsız değişken alır bir `function` nesnesi ve bir null işaretçi sabit bir bağımsız değişken. Her ikisi de yalnızca, true döndürür `function` nesnesi boş değil.
+İşleçler her ikisi de `function` nesnesine başvuru olan bir bağımsız değişken ve null işaretçi sabiti olan bir bağımsız değişken alır. Her ikisi de yalnızca `function` nesnesi boş değilse true değerini döndürür.
 
 ### <a name="example"></a>Örnek
 

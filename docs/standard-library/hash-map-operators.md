@@ -6,25 +6,25 @@ f1_keywords:
 - hash_map/std::operator==
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 ms.openlocfilehash: c4cc73feb3c8163a2be9f0122f57eaa0fb8ab3b8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448725"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856702"
 ---
-# <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; işleçleri
+# <a name="lthash_mapgt-operators"></a>&lt;hash_map&gt; işleçleri
 
 |||
 |-|-|
 |[operator!=](#op_neq)|[işleç! = (multimap)](#op_neq_mm)|
-|[operator==](#op_eq_eq)|[işleç = = (multimap)](#op_eq_eq_mm)|
+|[işleç = =](#op_eq_eq)|[işleç = = (multimap)](#op_eq_eq_mm)|
 
 ## <a name="op_neq"></a>işleç! =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif, [unordered_map sınıfıdır](unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
 
-İşlecin sol tarafındaki hash_map nesnesinin, sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_map nesnesinin sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_map <Key, Type, Traits, Allocator>& right);
@@ -32,11 +32,11 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `hash_map`bir nesne.
+*sol*\
+`hash_map` türünün bir nesnesi.
 
-*Right*\
-Türünde `hash_map`bir nesne.
+*sağ*\
+`hash_map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -44,9 +44,9 @@ hash_maps eşitse **true** ; hash_maps eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_map nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_maps aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Hash_map nesneler arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_maps, aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
-[< Hash_map >](hash-map.md) ve [< hash_set >](hash-set.md) başlık dosyaları [stdext ad alanında](stdext-namespace.md).
+[< Üyeleri hash_map >](hash-map.md) ve hash_set üst bilgi [ad alanındaki](stdext-namespace.md) [<](hash-set.md) >.
 
 ### <a name="example"></a>Örnek
 
@@ -91,9 +91,9 @@ The hash_maps hm1 and hm3 are equal.
 ## <a name="op_eq_eq"></a>işleç = =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif, [unordered_map sınıfıdır](unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
 
-İşlecin sol tarafındaki hash_map nesnesinin, sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_map nesnesinin sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_map <Key, Type, Traits, Allocator>& right);
@@ -101,19 +101,19 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `hash_map`bir nesne.
+*sol*\
+`hash_map` türünün bir nesnesi.
 
-*Right*\
-Türünde `hash_map`bir nesne.
+*sağ*\
+`hash_map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki hash_map işlecin sağ tarafındaki hash_map öğesine eşitse **true** ; Aksi halde **yanlış**.
+işlecin sol tarafındaki hash_map, işlecin sağ tarafındaki hash_map eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_map nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_maps aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Hash_map nesneler arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_maps, aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -158,9 +158,9 @@ The hash_maps hm1 and hm3 are equal.
 ## <a name="op_neq_mm"></a>işleç! = (hash_multimap)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif, [unordered_multimap sınıfıdır](unordered-multimap-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
 
-İşlecin sol tarafındaki hash_multimap nesnesinin, sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_multimap nesnesinin sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const hash_multimap <Key, Type, Traits, Allocator>& right);
@@ -168,11 +168,11 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `hash_multimap`bir nesne.
+*sol*\
+`hash_multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `hash_multimap`bir nesne.
+*sağ*\
+`hash_multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -180,7 +180,7 @@ hash_multimaps eşitse **true** ; hash_multimaps eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multimap nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_multimaps aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Hash_multimap nesneler arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_multimaps, aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -222,12 +222,12 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.
 ```
 
-## <a name="op_eq_eq_mm"></a>operator = = (hash_multimap)
+## <a name="op_eq_eq_mm"></a>işleç = = (hash_multimap)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif, [unordered_multimap sınıfıdır](unordered-multimap-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
 
-İşlecin sol tarafındaki hash_multimap nesnesinin, sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_multimap nesnesinin sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const hash_multimap <Key, Type, Traits, Allocator>& right);
@@ -235,19 +235,19 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Türünde `hash_multimap`bir nesne.
+*sol*\
+`hash_multimap` türünün bir nesnesi.
 
-*Right*\
-Türünde `hash_multimap`bir nesne.
+*sağ*\
+`hash_multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki hash_multimap işlecin sağ tarafındaki hash_multimap öğesine eşitse **true** ; Aksi halde **yanlış**.
+işlecin sol tarafındaki hash_multimap, işlecin sağ tarafındaki hash_multimap eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multimap nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_multimaps aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Hash_multimap nesneler arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_multimaps, aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 

@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CurrentScheduler class
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
 ms.openlocfilehash: 6bf61af9ff55722553353a045c87501dbd27fad9
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143072"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867151"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 
@@ -38,7 +38,7 @@ class CurrentScheduler;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Oluşturma](#create)|Davranışı `_Policy` parametresi tarafından tanımlanan ve bunu çağıran bağlama bağlayan yeni bir zamanlayıcı oluşturur. Yeni oluşturulan Zamanlayıcı, çağıran bağlam için geçerli Zamanlayıcı olur.|
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Çağırma bağlamıyla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. `_Placement` parametresini alan sürüm, yeni oluşturulan zamanlama grubundaki görevlerin Bu parametre tarafından belirtilen konumda yürütülmeye dahil edilmesine neden olur.|

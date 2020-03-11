@@ -30,11 +30,11 @@ helpviewer_keywords:
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
 ms.openlocfilehash: 4db341cf58884263e414e24aacf888c8c88e57cc
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142025"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78882931"
 ---
 # <a name="openmp-directives"></a>OpenMP Yönergeleri
 
@@ -716,7 +716,7 @@ Bir iş parçacığına özel hale getirmek istediğiniz değişkenlerin virgül
 
 İşlem başlangıcında statik olarak yüklenen bir DLL 'de `threadprivate` kullanabilirsiniz, ancak aynı zamanda `LoadLibrary`kullanan, [/delayload (Gecikmeli yük içeri aktarma)](../../../build/reference/delayload-delay-load-import.md)ile yüklenen dll 'Ler gibi [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) aracılığıyla yüklenecek herhangi bir dll 'de `threadprivate` kullanamazsınız.
 
-Geri *dönüşlü* bir türün `threadprivate` değişkeni, yok edicinin çağrılmaması durumunda garanti edilmez. Örneğin:
+Geri *dönüşlü* bir türün `threadprivate` değişkeni, yok edicinin çağrılmaması durumunda garanti edilmez. Örnek:
 
 ```cpp
 struct MyType

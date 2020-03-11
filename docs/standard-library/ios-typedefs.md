@@ -1,5 +1,5 @@
 ---
-title: '&lt;ios &gt; tür tanımları'
+title: '&lt;iOS&gt; tür tanımları'
 ms.date: 11/04/2016
 f1_keywords:
 - iosfwd/std::ios
@@ -10,13 +10,13 @@ f1_keywords:
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
 ms.openlocfilehash: 20bffbeb7720274302633c5dda9e6364c06d5b54
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687883"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856409"
 ---
-# <a name="ltiosgt-typedefs"></a>&lt;ios &gt; tür tanımları
+# <a name="ltiosgt-typedefs"></a>&lt;iOS&gt; tür tanımları
 
 ## <a name="ios"></a>işlemine
 
@@ -28,7 +28,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş olan sınıf şablonu [basic_ios](../standard-library/basic-ios-class.md)için bir eş anlamlıdır.
+Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş [basic_ios](../standard-library/basic-ios-class.md)sınıf şablonu için bir eş anlamlı.
 
 ## <a name="streamoff"></a>streamoff
 
@@ -56,7 +56,7 @@ typedef fpos<mbstate_t> streampos;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, [fpos](../standard-library/fpos-class.md) <  `mbstate_t` > için bir eş anlamlı.
+Tür, [fpos](../standard-library/fpos-class.md)< `mbstate_t`> için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -99,7 +99,7 @@ Türü, çeşitli akış işlemlerinde yer alan öğelerin sayısını depolayab
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki programı derleyip çalıştırdıktan sonra, `streamsize` ayarının etkisini görmek için test. txt dosyasına bakın.
+Aşağıdaki programı derleyip çalıştırdıktan sonra, `streamsize`ayarının etkisini görmek için test. txt dosyasına bakın.
 
 ```cpp
 // ios_streamsize.cpp
@@ -127,7 +127,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri ile **wchar_t** türü öğeler için özelleştirilmiş olan sınıf şablonu [basic_ios](../standard-library/basic-ios-class.md)için bir eş anlamlıdır.
+Tür, varsayılan karakter nitelikleri olan **wchar_t** türündeki öğeler için özelleştirilmiş [basic_ios](../standard-library/basic-ios-class.md)sınıf şablonu için bir eş anlamlıdır.
 
 ## <a name="wstreampos"></a>wstreampos
 
@@ -139,7 +139,7 @@ typedef fpos<mbstate_t> wstreampos;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, [fpos](../standard-library/fpos-class.md) <  `mbstate_t` > için bir eş anlamlı.
+Tür, [fpos](../standard-library/fpos-class.md)< `mbstate_t`> için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 

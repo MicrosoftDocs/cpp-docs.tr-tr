@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::setprecision [C++]
 - std::setw [C++]
 ms.openlocfilehash: 944834e40a399622b5c85d95100d4ca3c3c2da93
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518471"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856588"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanıp&gt; işlevleri
 
@@ -57,7 +57,7 @@ T7 get_money(Money& amount, bool use_intl);
 Ayıklanan parasal değer.
 
 *use_intl*\
-**Değer doğru**ise, uluslararası biçim kullanın. Varsayılan değer **false**.
+**Değer doğru**ise, uluslararası biçim kullanın. Varsayılan değer **false**'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -65,7 +65,7 @@ Ayıklanan parasal değer.
 
 `Money`, `str`ile aynı öğe ve nitelikler parametrelerine sahip `basic_string` `long double` türünde veya bir örneklemede olmalıdır.
 
-## <a name="iomanip_get_time"></a>  get_time
+## <a name="iomanip_get_time"></a>get_time
 
 İstenen biçimi kullanarak bir akıştan zaman değeri ayıklar. Bir parametre içindeki değeri zaman yapısı olarak döndürür.
 

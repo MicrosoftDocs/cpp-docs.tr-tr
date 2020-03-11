@@ -1,5 +1,5 @@
 ---
-title: '&lt;codecvt&gt; numaralandırmaları'
+title: '&lt;codecvt&gt; numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - codecvt/std::codecvt_mode
@@ -7,13 +7,13 @@ ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
 helpviewer_keywords:
 - std::codecvt_mode
 ms.openlocfilehash: bbef1fe28c3321f06c0cc586062cd017168f8e73
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459788"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866164"
 ---
-# <a name="ltcodecvtgt-enums"></a>&lt;codecvt&gt; numaralandırmaları
+# <a name="ltcodecvtgt-enums"></a>&lt;codecvt&gt; numaralandırmalar
 
 ## <a name="codecvt_mode"></a>codecvt_mode numaralandırması
 
@@ -29,11 +29,11 @@ enum codecvt_mode {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sabit listesi, [ \<codecvt >](../standard-library/codecvt.md)içinde belirtilen yerel ayar modellerine yapılandırma bilgilerini sağlayan üç sabiti tanımlar. DISTINCT değerleri şunlardır:
+Sabit listesi, [\<codecvt >](../standard-library/codecvt.md)tarafından belirtilen yerel ayar modellerine yapılandırma bilgilerini sağlayan üç sabiti tanımlar. DISTINCT değerleri şunlardır:
 
-- `consume_header`, çok baytlı bir sırayı okurken bir başlangıç üst bilgi sırasını kullanmak ve daha sonra okunacak çok baytlı sıranın bitimliğini öğrenmek için
+- `consume_header`, çok baytlı bir sırayı okurken ilk üst bilgi sırasını tüketmek ve sonraki çok baytlı sıranın okunması için bitimliği belirleme
 
-- `generate_header`bir çok baytlı sıra yazarken bir ilk üst bilgi sırası oluşturmak için, daha sonra yazılacak olan sonraki çok baytlı sıranın bitimliği
+- `generate_header`, sonraki çok baytlı sıranın yazılması için çok baytlı bir sıra yazarken ilk başlık sırası oluşturmak için
 
 - `little_endian`, varsayılan Big-endian sırasından farklı olarak çok baytlı bir sıra oluşturmak için
 

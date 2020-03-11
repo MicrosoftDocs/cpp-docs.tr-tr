@@ -1,22 +1,22 @@
 ---
-title: '&lt;chrono&gt; işlevleri'
+title: '&lt;Tarihçe&gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - chrono/std::duration_cast
 - chrono/std::time_point_cast
 ms.assetid: d6800e15-77a1-4df3-900e-d8b2fee190c7
 ms.openlocfilehash: 85fdd413354b3f310d3315a80cf7da983cf6621d
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244914"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865211"
 ---
-# <a name="ltchronogt-functions"></a>&lt;chrono&gt; işlevleri
+# <a name="ltchronogt-functions"></a>&lt;Tarihçe&gt; işlevleri
 
-## <a name="duration_cast"></a> duration_cast
+## <a name="duration_cast"></a>duration_cast
 
-Yayınları bir `duration` belirli nesne.
+`duration` nesnesini belirtilen bir türe yayınlar.
 
 ```cpp
 template <class To, class Rep, class Period>
@@ -32,15 +32,15 @@ constexpr ToDuration round(const duration<Rep, Period>& d);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `duration` türündeki nesne `To` zaman aralığını temsil eden `Dur`, bu hedef türüne sığması gerekirse kesilen.
+Hedef türe sığması gerekiyorsa kesilen `Dur`zaman aralığını temsil eden `To` türünde bir `duration` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `To` örneklemesiyse `duration`, bu işlev aşırı yükleme çözünürlüğü içinde yer almaz.
+`To` `duration`örneklemesidir, bu işlev aşırı yükleme çözümüne katılmaz.
 
-## <a name="time_point_cast"></a> time_point_cast
+## <a name="time_point_cast"></a>time_point_cast
 
-Yayınları bir [time_point](../standard-library/time-point-class.md) belirli nesne.
+[Time_point](../standard-library/time-point-class.md) nesnesini belirtilen bir türe yayınlar.
 
 ```cpp
 template <class To, class Clock, class Duration>
@@ -59,8 +59,8 @@ round(const time_point<Clock, Duration>& tp);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `time_point` türü süresi olan nesne `To`.
+`To`türünde bir süre olan `time_point` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sürece `To` örneklemesiyse [süresi](../standard-library/duration-class.md), bu işlev aşırı yükleme çözünürlüğü içinde yer almaz.
+`To` [sürenin](../standard-library/duration-class.md)bir örneklenmesi değilse, bu işlev aşırı yükleme çözümüne katılmaz.

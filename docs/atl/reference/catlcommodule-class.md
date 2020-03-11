@@ -13,15 +13,15 @@ helpviewer_keywords:
 - CAtlComModule class
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
 ms.openlocfilehash: 09adcb33ca9e6f8524063130d6aedca044d6ecb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247197"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78863245"
 ---
 # <a name="catlcommodule-class"></a>CAtlComModule sınıfı
 
-Bu sınıf, bir COM sunucusu modülü uygular.
+Bu sınıf bir COM sunucu modülünü uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,25 +33,25 @@ class CAtlComModule : public _ATL_COM_MODULE
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlComModule::CAtlComModule](#catlcommodule)|Oluşturucu.|
-|[CAtlComModule:: ~ CAtlComModule](#dtor)|Yıkıcı.|
+|[CAtlComModule:: CAtlComModule](#catlcommodule)|Oluşturucu.|
+|[CAtlComModule:: ~ CAtlComModule](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlComModule::RegisterServer](#registerserver)|Nesne eşlemesindeki her nesnenin sistem kayıt defterini güncelleştirmek için bu yöntemi çağırın.|
-|[CAtlComModule::RegisterTypeLib](#registertypelib)|Tür kitaplığını kaydetmek için bu yöntemi çağırın.|
-|[CAtlComModule::UnregisterServer](#unregisterserver)|Nesne eşlemesindeki her nesnenin kaydını silmek için bu yöntemi çağırın.|
-|[CAtlComModule::UnRegisterTypeLib](#unregistertypelib)|Bir tür kitaplığının kaydını silmek için bu yöntemi çağırın.|
+|[CAtlComModule:: RegisterServer](#registerserver)|Nesne eşlemesindeki her bir nesne için sistem kayıt defterini güncelleştirmek için bu yöntemi çağırın.|
+|[CAtlComModule:: RegisterTypeLib](#registertypelib)|Bir tür kitaplığını kaydetmek için bu yöntemi çağırın.|
+|[CAtlComModule:: UnregisterServer](#unregisterserver)|Nesne eşlemesindeki her nesnenin kaydını silmek için bu yöntemi çağırın.|
+|[CAtlComModule:: UnRegisterTypeLib](#unregistertypelib)|Bir tür kitaplığının kaydını silmek için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlComModule` Modülün bileşenlerine erişmek bir istemci sağlayan bir COM sunucusu modülü uygular.
+`CAtlComModule` bir COM sunucu modülünü uygular ve istemcinin modülün bileşenlerine erişmesine izin verir.
 
-Bu sınıf artık kullanılmıyor değiştirir [CComModule](../../atl/reference/ccommodule-class.md) ATL'ın önceki sürümlerinde kullanılan sınıf Bkz: [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+Bu sınıf, ATL 'nin önceki sürümlerinde kullanılan eski [CComModule](../../atl/reference/ccommodule-class.md) sınıfının yerini alır. Daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -61,9 +61,9 @@ Bu sınıf artık kullanılmıyor değiştirir [CComModule](../../atl/reference/
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="catlcommodule"></a>  CAtlComModule::CAtlComModule
+##  <a name="catlcommodule"></a>CAtlComModule:: CAtlComModule
 
 Oluşturucu.
 
@@ -73,11 +73,11 @@ CAtlComModule() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modül başlatır.
+Modülünü başlatır.
 
-##  <a name="dtor"></a>  CAtlComModule:: ~ CAtlComModule
+##  <a name="dtor"></a>CAtlComModule:: ~ CAtlComModule
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CAtlComModule();
@@ -85,11 +85,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm sınıf üreteçlerini serbest bırakır.
+Tüm sınıf fabrikalarını serbest bırakır.
 
-##  <a name="registerserver"></a>  CAtlComModule::RegisterServer
+##  <a name="registerserver"></a>CAtlComModule:: RegisterServer
 
-Nesne eşlemesindeki her nesnenin sistem kayıt defterini güncelleştirmek için bu yöntemi çağırın.
+Nesne eşlemesindeki her bir nesne için sistem kayıt defterini güncelleştirmek için bu yöntemi çağırın.
 
 ```
 HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
@@ -98,22 +98,22 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *bRegTypeLib*<br/>
-Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer FALSE olur.
+Tür kitaplığının kaydı varsa TRUE. Varsayılan değer FALSE 'dur.
 
 *pCLSID*<br/>
-CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.
+Kaydedilecek nesnenin CLSID değerini gösterir. NULL ise (varsayılan değer), nesne haritadaki tüm nesneler kaydedilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genel işlev çağrıları [AtlComModuleRegisterServer](server-registration-global-functions.md#atlcommoduleregisterserver).
+[AtlComModuleRegisterServer](server-registration-global-functions.md#atlcommoduleregisterserver)genel işlevini çağırır.
 
-##  <a name="registertypelib"></a>  CAtlComModule::RegisterTypeLib
+##  <a name="registertypelib"></a>CAtlComModule:: RegisterTypeLib
 
-Tür kitaplığını kaydetmek için bu yöntemi çağırın.
+Bir tür kitaplığını kaydetmek için bu yöntemi çağırın.
 
 ```
 HRESULT RegisterTypeLib(LPCTSTR lpszIndex);
@@ -123,17 +123,17 @@ HRESULT RegisterTypeLib();
 ### <a name="parameters"></a>Parametreler
 
 *lpszIndex*<br/>
-Biçim dizesinde "\\\N", burada N tamsayı TYPELIB kaynak dizinidir.
+"\\\n" biçiminde dize, burada N, TYPELIB kaynağının tamsayı dizinidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür kitaplığı hakkında bilgi için sistem kayıt defterine ekler. Modül örneğinin birden fazla tür kitaplığı içeriyorsa, hangi tür kitaplığı kullanılması gerektiğini belirtmek için bu yöntem ilk sürümünü kullanın.
+Bir tür kitaplığı hakkında bilgileri sistem kayıt defterine ekler. Modül örneği birden çok tür kitaplığı içeriyorsa, hangi tür kitaplığının kullanılması gerektiğini belirtmek için bu yöntemin ilk sürümünü kullanın.
 
-##  <a name="unregisterserver"></a>  CAtlComModule::UnregisterServer
+##  <a name="unregisterserver"></a>CAtlComModule:: UnregisterServer
 
 Nesne eşlemesindeki her nesnenin kaydını silmek için bu yöntemi çağırın.
 
@@ -146,20 +146,20 @@ HRESULT UnregisterServer(
 ### <a name="parameters"></a>Parametreler
 
 *bRegTypeLib*<br/>
-Tür kitaplığı kaydı olması gerekiyorsa TRUE. Varsayılan değer FALSE olur.
+Tür kitaplığının kaydı kaldırılacak ise TRUE. Varsayılan değer FALSE 'dur.
 
 *pCLSID*<br/>
-CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.
+Kaydı kaldırılacak nesnenin CLSID değerini gösterir. NULL ise (varsayılan değer), nesne eşlemesindeki tüm nesnelerin kaydı silinir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genel işlev çağrıları [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).
+[AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver)genel işlevini çağırır.
 
-##  <a name="unregistertypelib"></a>  CAtlComModule::UnRegisterTypeLib
+##  <a name="unregistertypelib"></a>CAtlComModule:: UnRegisterTypeLib
 
 Bir tür kitaplığının kaydını silmek için bu yöntemi çağırın.
 
@@ -171,17 +171,17 @@ HRESULT UnRegisterTypeLib();
 ### <a name="parameters"></a>Parametreler
 
 *lpszIndex*<br/>
-Biçim dizesinde "\\\N", burada N tamsayı TYPELIB kaynak dizinidir.
+"\\\n" biçiminde dize, burada N, TYPELIB kaynağının tamsayı dizinidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür kitaplığı hakkında bilgi için sistem kayıt defterinden kaldırır. Modül örneğinin birden fazla tür kitaplığı içeriyorsa, hangi tür kitaplığı kullanılması gerektiğini belirtmek için bu yöntem ilk sürümünü kullanın.
+Bir tür kitaplığı hakkındaki bilgileri sistem kayıt defterinden kaldırır. Modül örneği birden çok tür kitaplığı içeriyorsa, hangi tür kitaplığının kullanılması gerektiğini belirtmek için bu yöntemin ilk sürümünü kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

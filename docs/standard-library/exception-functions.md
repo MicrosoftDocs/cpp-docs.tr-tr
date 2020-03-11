@@ -25,15 +25,15 @@ helpviewer_keywords:
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
 ms.openlocfilehash: 34a34c48be8bb0e319a7d0eebeccba805cafbc1f
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246055"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854918"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum&gt; işlevleri
 
-## <a name="current_exception"></a> current_exception
+## <a name="current_exception"></a>current_exception
 
 Geçerli özel durum için bir akıllı işaretçi alır.
 
@@ -43,21 +43,21 @@ exception_ptr current_exception();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) geçerli özel durumu gösteren nesne.
+Geçerli özel durumu işaret eden bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı `current_exception` işlevi bir catch bloğu içinde. Bir özel durum uçuştaysa ve yakalama bloğu özel durumu yakalayabilir `current_exception` işlevinin döndürdükleriyle bir `exception_ptr` özel duruma başvuran bir nesne. Aksi halde, işlev null döndürür `exception_ptr` nesne.
+Bir catch bloğunda `current_exception` işlevini çağırın. Bir özel durum uçuş durumunda ve catch bloğu özel durumu yakalayabiliyorsanız, `current_exception` işlevi özel duruma başvuran bir `exception_ptr` nesnesi döndürür. Aksi takdirde, işlev null `exception_ptr` bir nesne döndürür.
 
-`current_exception` İşlevi yakalayan özel durum uçuştaki **catch** deyimi belirtir bir [özel durum bildirimi](../cpp/try-throw-and-catch-statements-cpp.md) deyimi.
+`current_exception` işlevi, **catch** ifadesinin bir [özel durum bildirimi](../cpp/try-throw-and-catch-statements-cpp.md) bildirimi belirttiğinden bağımsız olarak uçuş durumunda olan özel durumu yakalar.
 
-Sonunda geçerli özel durumun yok Edicisi çağrılır **catch** özel durum oluşturmazsanız engelleyin. Ancak, çağırsanız bile `current_exception` işlevini yok edici içinde işlevi döndürür bir `exception_ptr` geçerli özel duruma başvuran bir nesne.
+Özel durumu yeniden oluşturmazsınız, geçerli özel durum için yok edici **catch** bloğunun sonunda çağırılır. Ancak, yıkıcı içinde `current_exception` işlevini çağırsanız bile, işlev geçerli özel duruma başvuran bir `exception_ptr` nesnesi döndürür.
 
-Art arda çağrılar `current_exception` işlev dönüş `exception_ptr` geçerli özel durumun farklı kopyalara başvuran nesneler. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.
+`current_exception` işleve art arda yapılan çağrılar, geçerli özel durumun farklı kopyalarına başvuran `exception_ptr` nesneleri döndürür. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.
 
-## <a name="make_exception_ptr"></a> make_exception_ptr
+## <a name="make_exception_ptr"></a>make_exception_ptr
 
-Oluşturur bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) bir özel durumun kopyasını tutan nesne.
+Bir özel durumun kopyasını tutan [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nesnesi oluşturur.
 
 ```cpp
 template <class E>
@@ -66,20 +66,20 @@ template <class E>
 
 ### <a name="parameters"></a>Parametreler
 
-*Dışında*\
-Kopyalanacak özel duruma sahip sınıf. Genellikle, belirttiğiniz bir [özel durum sınıfı](../standard-library/exception-class.md) bağımsız değişkeni olarak bir nesne `make_exception_ptr` herhangi bir sınıf nesnesi bağımsız değişken olsa da, işlev.
+\ *hariç*
+Kopyalanacak özel duruma sahip sınıf. Genellikle, bir [özel durum sınıfı](../standard-library/exception-class.md) nesnesini `make_exception_ptr` işlevine bağımsız değişken olarak belirtirsiniz, ancak herhangi bir sınıf nesnesi bağımsız değişken olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nesne için geçerli olan özel bir kopyasına işaret eden *dışında*.
+*Dışında*, geçerli özel durumun bir kopyasına işaret eden bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırma `make_exception_ptr` işlevi oluşturmaya eşdeğerdir bir C++ özel durum, bir catch bloğunda yakalamaya ve sonra çağırma [current_exception](../standard-library/exception-functions.md#current_exception) işlevini bir `exception_ptr` özel duruma başvuran bir nesne. Microsoft uyarlamasını `make_exception_ptr` işlevi oluşturmak ve ardından bir özel durum yakalamak daha verimlidir.
+`make_exception_ptr` işlevini çağırmak, C++ özel durum atma, bir catch bloğunda yakalama ve sonra özel duruma başvuran bir `exception_ptr` nesnesi döndürmek için [current_exception](../standard-library/exception-functions.md#current_exception) işlevini çağırma ile eşdeğerdir. `make_exception_ptr` işlevin Microsoft uygulamasında uygulanması daha etkilidir ve bir özel durum yakalanmasıdır.
 
-Bir uygulama genellikle gerektirmez `make_exception_ptr` işlevi ve kullanımı önerilmez.
+Uygulama genellikle `make_exception_ptr` işlevi gerektirmez ve kullanımını önermiyoruz.
 
-## <a name="rethrow_exception"></a> rethrow_exception
+## <a name="rethrow_exception"></a>rethrow_exception
 
 Bir parametre olarak geçirilen bir özel durum oluşturur.
 
@@ -90,23 +90,23 @@ void rethrow_exception(exception_ptr P);
 ### <a name="parameters"></a>Parametreler
 
 *P*\
-Yeniden oluşturulması için bir özel durum yakalandı. Varsa *P* null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), işlevin [gt; Std::bad_exception &](../standard-library/bad-exception-class.md).
+Yeniden oluşturulması için bir özel durum yakalandı. *P* null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), işlev [std:: bad_exception](../standard-library/bad-exception-class.md)atar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yakalanan bir özel durumu depolamanızın ardından bir `exception_ptr` nesnesi, birincil iş parçacığı nesneyi işleyebilir. Birincil iş parçacığı çağrı `rethrow_exception` ile birlikte çalışması `exception_ptr` ve bağımsız değişkeni olarak. `rethrow_exception` İşlevi, özel durumun ayıklar `exception_ptr` nesnesi ve ardından birincil iş parçacığının bağlamında özel durumu oluşturur.
+Yakalanan bir özel durumu bir `exception_ptr` nesnesinde depoladıktan sonra, birincil iş parçacığı nesneyi işleyebilir. Birincil iş parçacığındaki bağımsız değişkeni olarak `exception_ptr` nesnesiyle birlikte `rethrow_exception` işlevini çağırın. `rethrow_exception` işlevi, özel durumu `exception_ptr` nesnesinden ayıklar ve ardından birincil iş parçacığı bağlamında özel durumu oluşturur.
 
-## <a name="get_terminate"></a> get_terminate
+## <a name="get_terminate"></a>get_terminate
 
-Geçerli alır `terminate_handler` işlevi.
+Geçerli `terminate_handler` işlevini edinir.
 
 ```cpp
 terminate_handler get_terminate();
 ```
 
-## <a name="set_terminate"></a> set_terminate
+## <a name="set_terminate"></a>set_terminate
 
-Yeni bir kurar `terminate_handler` program sonlandırıldığında çağrılabilir.
+Programın sonlandırılması sırasında çağrılabilecek yeni bir `terminate_handler` oluşturur.
 
 ```cpp
 terminate_handler set_terminate(terminate_handler fnew) throw();
@@ -115,15 +115,15 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 ### <a name="parameters"></a>Parametreler
 
 *fnew*\
-Sonlandırma sırasında çağrılacak işlev.
+Sonlandırmada çağrılacak işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonlandırma sırasında çağrılması için kullanılan önceki işlevi adresi.
+Sonlandırma sırasında çağrılması için kullanılan önceki işlevin adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir işlev oluşturur [terminate_handler](../standard-library/exception-typedefs.md#terminate_handler) işlevi olarak * *fnew*. Bu nedenle, *fnew* bir null işaretçi olmamalıdır. Önceki adresini işlevi döndürür sonlandırma işleyicisi.
+İşlevi, * *fnew*işlevi olarak yeni bir [terminate_handler](../standard-library/exception-typedefs.md#terminate_handler) oluşturur. Bu nedenle, *fnew* bir null işaretçi olmamalıdır. İşlevi, önceki sonlandırma işleyicisinin adresini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -153,15 +153,15 @@ int main()
 }
 ```
 
-## <a name="get_unexpected"></a> get_unexpected
+## <a name="get_unexpected"></a>get_unexpected
 
-Geçerli alır `unexpected_handler` işlevi.
+Geçerli `unexpected_handler` işlevini edinir.
 
 ```cpp
 unexpected_handler get_unexpected();
 ```
 
-## <a name="rethrow_if_nested"></a> rethrow_if_nested
+## <a name="rethrow_if_nested"></a>rethrow_if_nested
 
 ```cpp
 template <class E> 
@@ -170,11 +170,11 @@ template <class E>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok biçimli bir sınıf türü veya `nested_exception` erişilemeyen veya belirsiz bir etkisi yoktur. Aksi takdirde, dinamik bir dönüştürme işlemi gerçekleştirir.
+Polimorfik bir sınıf türü değilse veya `nested_exception` erişilemez ya da belirsiz ise, hiçbir etkisi olmaz. Aksi takdirde, dinamik bir dönüştürme gerçekleştirir.
 
-## <a name="set_unexpected"></a> set_unexpected
+## <a name="set_unexpected"></a>set_unexpected
 
-Yeni bir kurar `unexpected_handler` olacak şekilde, beklenmeyen bir özel durumla karşılaştı.
+Beklenmeyen bir özel durumla karşılaşıldığında yeni bir `unexpected_handler` oluşturur.
 
 ```cpp
 unexpected_handler set_unexpected(unexpected_handler fnew) throw();
@@ -183,17 +183,17 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 ### <a name="parameters"></a>Parametreler
 
 *fnew*\
-Beklenmeyen bir özel durum oluştuğunda çağrılacak işlev.
+Beklenmeyen bir özel durumla karşılaşıldığında çağrılacak işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki adresini `unexpected_handler`.
+Önceki `unexpected_handler`adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*fnew* bir null işaretçi olmamalıdır.
+*fnew* , boş bir işaretçi olmamalıdır.
 
-C++ Standart gerektiren `unexpected` bir işlev, throw listede yer almayan bir özel durum oluşturduğunda çağrılır. Geçerli uygulama bu desteklemez. Aşağıdaki örnek çağrıları `unexpected` doğrudan, sonra çağıran `unexpected_handler`.
+Standart C++ , bir işlev kendi throw listesinde olmayan bir özel durum oluşturduğunda `unexpected` çağrılabilir. Geçerli uygulama bunu desteklemiyor. Aşağıdaki örnek doğrudan `unexpected` çağırır ve sonra `unexpected_handler`çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -220,7 +220,7 @@ int main()
 }
 ```
 
-## <a name="terminate"></a> sonlandırma
+## <a name="terminate"></a>sonlandırmayı
 
 Bir sonlandırıcı işleyici çağırır.
 
@@ -230,15 +230,15 @@ void terminate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi bir işlev türünün bir sonlandırıcı işleyici çağırır **void**. Varsa `terminate` doğrudan program tarafından Sonlandırıcı işleyici olarak adlandırılan bir en son yapılan bir çağrıyla ayarlanır [set_terminate](../standard-library/exception-functions.md#set_terminate). Varsa `terminate` çağrılır herhangi bir throw ifadesi değerlendirmesi sırasında çeşitli nedenlerle Sonlandırıcı işleyici bir throw deyimi hemen değerlendirdikten sonra etkindir.
+İşlevi, **void**türünde bir işlev olan bir sonlandırma işleyicisi çağırır. `terminate` doğrudan program tarafından çağrılırsa, sonlandırma işleyicisi en son bir [set_terminate](../standard-library/exception-functions.md#set_terminate)çağrısıyla ayarlanan bir çağrıdır. Bir throw ifadesinin değerlendirmesi sırasında bazı diğer nedenlerden herhangi biri için `terminate` çağrılırsa, sonlandırma işleyicisi throw ifadesi hesaplandıktan hemen sonra devreye girer.
 
-Bir sonlandırıcı işleyici çağırıcısına döndürmeyebilir. Program başlangıcında, sonlandırıcı işleyici çağırır işlevidir `abort`.
+Bir sonlandırma işleyicisi çağırana geri dönemeyebilir. Program başlangıcında, sonlandırma işleyicisi `abort`çağıran bir işlevdir.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek `terminate`.
+`terminate`kullanımına ilişkin bir örnek için bkz. [set_unexpected](../standard-library/exception-functions.md#set_unexpected) .
 
-## <a name="throw_with_nested"></a> throw_with_nested
+## <a name="throw_with_nested"></a>throw_with_nested
 
 ```cpp
 template <class T> [[noreturn]]
@@ -247,11 +247,11 @@ template <class T> [[noreturn]]
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç içe geçmiş özel durumları ile özel durum oluşturur.
+İç içe özel durumlarla özel durum oluşturur.
 
-## <a name="uncaught_exception"></a> uncaught_exception
+## <a name="uncaught_exception"></a>uncaught_exception
 
-Döndürür **true** yalnızca oluşan bir özel durum şu anda işleniyorsa.
+Yalnızca oluşturulan bir özel durum şu anda işleniyorsa **true** değerini döndürür.
 
 ```cpp
 bool uncaught_exception();
@@ -259,7 +259,7 @@ bool uncaught_exception();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür **true** throw ifadesi ve bir özel durum bildirimi eşleşen işleyici veya arama başlatılması tamamlanmadan önce değerlendirmeyi tamamladıktan sonra [beklenmeyen](../standard-library/exception-functions.md#unexpected) sonucu olarak throw ifadesi. Özellikle, `uncaught_exception` döndüreceği **true** bir özel durumu geriye doğru izleme sırasında çağrılan bir yok edici çağrıldığında. Cihazlarda `uncaught_exception` yalnızca Windows CE 5.00 ve Windows Mobile 2005 platformları dahil olmak üzere daha yüksek sürümlerinde desteklenir.
+Bir throw ifadesinin değerlendirilmesinden ve eşleşen işleyicide özel durum bildiriminin başlatılmasını tamamlamadan veya throw ifadesinin sonucu olarak [beklenmeyen](../standard-library/exception-functions.md#unexpected) şekilde çağrılmadan önce **true** döndürür. Özellikle `uncaught_exception`, özel durum geriye doğru çağrılan bir yıkıcıdan çağrıldığında **doğru** döndürülür. Cihazlarda, `uncaught_exception` yalnızca Windows Mobile 2005 platformları dahil Windows CE 5,00 ve üzeri sürümlerde desteklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -314,9 +314,9 @@ In Test::~Test("outside try block")
         std::uncaught_exception( ) = 0
 ```
 
-## <a name="unexpected"></a> beklenmeyen
+## <a name="unexpected"></a>bek
 
-Beklenmeyen bir işleyici çağırır.
+Beklenmeyen işleyiciyi çağırır.
 
 ```cpp
 void unexpected();
@@ -324,20 +324,20 @@ void unexpected();
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ Standart gerektiren `unexpected` bir işlev, throw listede yer almayan bir özel durum oluşturduğunda çağrılır. Geçerli uygulama bu desteklemez. Örnek aramalar `unexpected` çağıran doğrudan, beklenmeyen bir işleyici.
+Standart C++ , bir işlev kendi throw listesinde olmayan bir özel durum oluşturduğunda `unexpected` çağrılabilir. Geçerli uygulama bunu desteklemiyor. Örnek, beklenmeyen işleyiciyi çağıran `unexpected` doğrudan çağırır.
 
-Beklenmeyen bir işleyici, bir işlev türü işlev çağrıları **void**. Varsa `unexpected` doğrudan program tarafından beklenmeyen bir işleyici olarak adlandırılan bir en son yapılan bir çağrıyla ayarlanır [set_unexpected](../standard-library/exception-functions.md#set_unexpected).
+İşlevi, **void**türünde bir işlev olan beklenmeyen bir işleyici çağırır. `unexpected` doğrudan program tarafından çağrılırsa, beklenmeyen işleyici, en son bir [set_unexpected](../standard-library/exception-functions.md#set_unexpected)çağrısıyla ayarlanan bir çağrıdır.
 
-Beklenmeyen bir işleyici çağırıcısına döndürmeyebilir. Yürütme onu Sıfırla sonlandıramayan:
+Beklenmeyen bir işleyici çağırana geri dönemeyebilir. Yürütmeyi şu şekilde sonlandıramayabilir:
 
-- Özel durum belirtimi veya herhangi bir türde bir nesne doğrudan program tarafından beklenmeyen bir işleyici çağrılırsa listelenen bir türde bir nesne oluşturma.
+- Beklenmeyen işleyici doğrudan program tarafından çağrılırsa, özel durum belirtiminde veya herhangi bir türde bir nesne olarak listelenen bir türün nesnesi oluşturuluyor.
 
-- Türünde bir nesne [bad_exception](../standard-library/bad-exception-class.md).
+- [Bad_exception](../standard-library/bad-exception-class.md)türünde bir nesne oluşturuluyor.
 
-- Çağırma [sonlandırmak](../standard-library/exception-functions.md#terminate), `abort` veya **çıkmak**(`int`).
+- [Terminate](../standard-library/exception-functions.md#terminate), `abort` veya **Exit**(`int`) çağrılıyor.
 
-Program başlangıcında beklenmeyen bir işleyici çağıran bir işlev olan [sonlandırmak](../standard-library/exception-functions.md#terminate).
+Program başlangıcında, beklenmeyen işleyici, [Sonlandır](../standard-library/exception-functions.md#terminate)çağıran bir işlevdir.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek `unexpected`.
+`unexpected`kullanımına ilişkin bir örnek için bkz. [set_unexpected](../standard-library/exception-functions.md#set_unexpected) .

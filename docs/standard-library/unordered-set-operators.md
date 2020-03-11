@@ -6,17 +6,17 @@ f1_keywords:
 - unordered_set/std::operator==
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 ms.openlocfilehash: 59a7154ed46ac788516bc9f42c3385ec8f07dcf1
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243431"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78890762"
 ---
-# <a name="ltunorderedsetgt-operators"></a>&lt;unordered_set&gt; işleçleri
+# <a name="ltunordered_setgt-operators"></a>&lt;unordered_set&gt; işleçleri
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Testleri olmadığını [unordered_set](../standard-library/unordered-set-class.md) işlecinin sol tarafındaki nesne unordered_set nesnesinin işlecin sağ tarafındaki eşit değil.
+İşlecin sol tarafındaki [unordered_set](../standard-library/unordered-set-class.md) nesnesinin sağ taraftaki unordered_set nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const unordered_set <Key, Hash, Pred, Allocator>& right);
@@ -24,19 +24,19 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `unordered_set`.
+*sol*\
+`unordered_set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `unordered_set`.
+`unordered_set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** unordered_sets eşit; değilse, **false** eşit olmaları durumunda.
+unordered_sets eşitse **true** ; eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_set nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_sets eşit olur. Aksi takdirde, eşit oldukları.
+Unordered_set nesneleri arasındaki karşılaştırma, öğelerini depolayabilecekleri rastgele sıra tarafından etkilenmez. İki unordered_sets, aynı sayıda öğeye sahip olmaları ve bir kapsayıcıdaki öğelerin diğer kapsayıcıdaki öğelerin bir permütasyon olması halinde eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -74,7 +74,7 @@ int main()
 }
 ```
 
-**Çıkış:**
+**Çıktıların**
 
 `c1 != c2: true`
 
@@ -82,9 +82,9 @@ int main()
 
 `c2 != c3: true`
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-Testleri olmadığını [unordered_set](../standard-library/unordered-set-class.md) işlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki unordered_set nesneye eşit olup.
+İşlecin sol tarafındaki [unordered_set](../standard-library/unordered-set-class.md) nesnesinin sağ taraftaki unordered_set nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const unordered_set <Key, Hash, Pred, Allocator>& right);
@@ -92,19 +92,19 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `unordered_set`.
+*sol*\
+`unordered_set` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `unordered_set`.
+`unordered_set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** unordered_sets eşitse; **false** eşit değilse.
+unordered_sets eşitse **true** ; eşit değilse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_set nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_sets eşit olur. Aksi takdirde, eşit oldukları.
+Unordered_set nesneleri arasındaki karşılaştırma, öğelerini depolayabilecekleri rastgele sıra tarafından etkilenmez. İki unordered_sets, aynı sayıda öğeye sahip olmaları ve bir kapsayıcıdaki öğelerin diğer kapsayıcıdaki öğelerin bir permütasyon olması halinde eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -148,9 +148,9 @@ c1 == c3: true
 c2 == c3: false
 ```
 
-## <a name="op_neq_unordered_multiset"></a> işleç! =
+## <a name="op_neq_unordered_multiset"></a>işleç! =
 
-Testleri olmadığını [unordered_multiset](../standard-library/unordered-multiset-class.md) işlecinin sol tarafındaki nesne unordered_multiset nesnesinin işlecin sağ tarafındaki eşit değil.
+İşlecin sol tarafındaki [unordered_multiset](../standard-library/unordered-multiset-class.md) nesnesinin sağ taraftaki unordered_multiset nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, const unordered_multiset <Key, Hash, Pred, Allocator>& right);
@@ -158,19 +158,19 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `unordered_multiset`.
+*sol*\
+`unordered_multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `unordered_multiset`.
+`unordered_multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** unordered_multisets eşit; değilse, **false** eşit olmaları durumunda.
+unordered_multisets eşitse **true** ; eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_multiset nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_multisets eşit olur. Aksi takdirde, eşit oldukları.
+Unordered_multiset nesneleri arasındaki karşılaştırma, öğelerini depolayabilecekleri rastgele sıra tarafından etkilenmez. İki unordered_multisets, aynı sayıda öğeye sahip olmaları ve bir kapsayıcıdaki öğelerin diğer kapsayıcıdaki öğelerin bir permütasyon olması halinde eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -217,9 +217,9 @@ c1 != c3: false
 c2 != c3: true
 ```
 
-## <a name="op_eq_eq_unordered_multiset"></a> işleç ==
+## <a name="op_eq_eq_unordered_multiset"></a>işleç = =
 
-Testleri olmadığını [unordered_multiset](../standard-library/unordered-multiset-class.md) işlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki unordered_multiset nesneye eşit olup.
+İşlecin sol tarafındaki [unordered_multiset](../standard-library/unordered-multiset-class.md) nesnesinin sağ taraftaki unordered_multiset nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, const unordered_multiset <Key, Hash, Pred, Allocator>& right);
@@ -227,19 +227,19 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `unordered_multiset`.
+*sol*\
+`unordered_multiset` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `unordered_multiset`.
+`unordered_multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** unordered_multisets eşitse; **false** eşit değilse.
+unordered_multisets eşitse **true** ; eşit değilse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_multiset nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_multisets eşit olur. Aksi takdirde, eşit oldukları.
+Unordered_multiset nesneleri arasındaki karşılaştırma, öğelerini depolayabilecekleri rastgele sıra tarafından etkilenmez. İki unordered_multisets, aynı sayıda öğeye sahip olmaları ve bir kapsayıcıdaki öğelerin diğer kapsayıcıdaki öğelerin bir permütasyon olması halinde eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 

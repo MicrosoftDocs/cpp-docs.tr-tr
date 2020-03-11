@@ -7,30 +7,30 @@ f1_keywords:
 - atlwin/ATL::DECLARE_WND_CLASS_EX
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
 ms.openlocfilehash: c4617a04c199741b97316122456e417a94275e89
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62197180"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78862986"
 ---
 # <a name="window-class-macros"></a>Pencere sınıfı makroları
 
-Bu makrolar pencere sınıfı yardımcı programları tanımlayın.
+Bu makrolar pencere sınıfı yardımcı programlarını tanımlar.
 
 |||
 |-|-|
-|[DECLARE_WND_CLASS](#declare_wnd_class)|Yeni bir pencere sınıfının adını belirtmenizi sağlar.|
-|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Yeni bir pencere sınıf ve pencere yordamını yeni bir sınıf kullanacağı kapsayan sınıf adını belirtmenizi sağlar.|
-|[DECLARE_WND_SUPERCLASS](#declare_wnd_superclass)|Yeni bir pencere sınıf dayanacak var olan bir pencere sınıfı adını belirtmenizi sağlar.|
-|[DECLARE_WND_CLASS_EX](#declare_wnd_class_ex)|Bir sınıfın parametreleri belirtmenizi sağlar.|
+|[DECLARE_WND_CLASS](#declare_wnd_class)|Yeni bir pencere sınıfının adını belirtmenize izin verir.|
+|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Yeni bir pencere sınıfının adını ve pencere yordamını yeni sınıfın kullanacağı kapsayan sınıfı belirtmenize olanak tanır.|
+|[DECLARE_WND_SUPERCLASS](#declare_wnd_superclass)|Yeni bir pencere sınıfının temel alınacağı varolan bir pencere sınıfının adını belirtmenize olanak tanır.|
+|[DECLARE_WND_CLASS_EX](#declare_wnd_class_ex)|Bir sınıfın parametrelerini belirtmenize izin verir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="declare_wnd_class"></a>  DECLARE_WND_CLASS
+##  <a name="declare_wnd_class"></a>DECLARE_WND_CLASS
 
-Yeni bir pencere sınıfının adını belirtmenizi sağlar. Bu makro, ATL ActiveX denetiminin denetimi sınıfta yerleştirin.
+Yeni bir pencere sınıfının adını belirtmenize izin verir. Bu makroyu ATL ActiveX denetiminin denetim sınıfına yerleştirin.
 
 ```
 DECLARE_WND_CLASS( WndClassName )
@@ -39,17 +39,17 @@ DECLARE_WND_CLASS( WndClassName )
 ### <a name="parameters"></a>Parametreler
 
 *WndClassName*<br/>
-[in] Yeni pencere sınıfı adı. NULL ise, ATL pencere sınıfı adı oluşturur.
+'ndaki Yeni pencere sınıfının adı. NULL ise, ATL bir pencere sınıfı adı oluşturacaktır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-/Permissive-compiler seçeneğini kullanıyorsanız, DECLARE_WND_CLASS bir derleyici hatasına neden olur; Bunun yerine DECLARE_WND_CLASS2 kullanın.
+/Permissive-derleyici seçeneğini kullanıyorsanız, DECLARE_WND_CLASS derleyici hatasına neden olur; Bunun yerine DECLARE_WND_CLASS2 kullanın.
 
-DECLARE_WND_CLASS bilgilerini tarafından yönetilecek yeni bir pencere sınıfının adını belirtmenize olanak verir [Cwndclassınfo](cwndclassinfo-class.md). DECLARE_WND_CLASS aşağıdaki statik işlevi uygulayarak yeni pencere sınıfını tanımlar:
+DECLARE_WND_CLASS, bilgileri [CWndClassInfo](cwndclassinfo-class.md)tarafından yönetilecek yeni bir pencere sınıfının adını belirtmenize olanak tanır. DECLARE_WND_CLASS, aşağıdaki statik işlevi uygulayarak yeni pencere sınıfını tanımlar:
 
 [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/cpp/window-class-macros_1.cpp)]
 
-DECLARE_WND_CLASS aşağıdaki yeni pencere stillerini belirtir:
+DECLARE_WND_CLASS yeni pencere için aşağıdaki stilleri belirtir:
 
 - CS_HREDRAW
 
@@ -57,15 +57,15 @@ DECLARE_WND_CLASS aşağıdaki yeni pencere stillerini belirtir:
 
 - CS_DBLCLKS
 
-DECLARE_WND_CLASS Ayrıca varsayılan pencerenin arka plan rengini belirtir. Kullanım [DECLARE_WND_CLASS_EX](#declare_wnd_class_ex) makrosu kendi stilleri sağlamak ve arka plan rengi.
+DECLARE_WND_CLASS Ayrıca varsayılan pencerenin arka plan rengini belirtir. Kendi stillerinizi ve arka plan renginizi sağlamak için [declare_wnd_class_ex](#declare_wnd_class_ex) makrosunu kullanın.
 
-[Cwindowımpl](cwindowimpl-class.md) DECLARE_WND_CLASS makrosu yeni bir pencere sınıfını esas bir pencere oluşturmak için kullanır. Bu davranışı geçersiz kılmak için kullanın [DECLARE_WND_SUPERCLASS](#declare_wnd_superclass) makro veya kendi uygulamasını sağlamak [GetWndClassInfo](cwindowimpl-class.md#getwndclassinfo) işlevi.
+[CWindowImpl](cwindowimpl-class.md) , yeni bir pencere sınıfını temel alan bir pencere oluşturmak için DECLARE_WND_CLASS makrosunu kullanır. Bu davranışı geçersiz kılmak için [declare_wnd_superclass](#declare_wnd_superclass) makrosunu kullanın ya da [GetWndClassInfo](cwindowimpl-class.md#getwndclassinfo) işlevinin kendi uygulamanızı sağlayın.
 
-ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).
+ATL 'de Windows kullanımı hakkında daha fazla bilgi için bkz. [atl pencere sınıfları](../../atl/atl-window-classes.md)makalesi.
 
-##  <a name="declare_wnd_class2"></a>  DECLARE_WND_CLASS2
+##  <a name="declare_wnd_class2"></a>DECLARE_WND_CLASS2
 
-(Visual Studio 2017) Benzer DECLARE_WND_CLASS, ancak bir ekstra parametresiyle /permissive-option ile derleme yaparken bağımlı adı hatası önler.
+(Visual Studio 2017) DECLARE_WND_CLASS benzer, ancak/Permissive-seçeneğiyle derlerken bağımlı bir ad hatasını önleyen ek bir parametre ile.
 
 ```
 DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
@@ -74,19 +74,19 @@ DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
 ### <a name="parameters"></a>Parametreler
 
 *WndClassName*<br/>
-[in] Yeni pencere sınıfı adı. NULL ise, ATL pencere sınıfı adı oluşturur.
+'ndaki Yeni pencere sınıfının adı. NULL ise, ATL bir pencere sınıfı adı oluşturacaktır.
 
-*Bulunan EnclosingClass*<br/>
-[in] Yeni pencere sınıfını barındırır pencere sınıfı adı. NULL olamaz.
+*EnclosingClass*<br/>
+'ndaki Yeni pencere sınıfını kapsayan pencere sınıfının adı. NULL olamaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-/Permissive-option kullanıyorsanız, bağımlı bir ad içerdiğinden ardından DECLARE_WND_CLASS bir derleme hatasına neden olur. DECLARE_WND_CLASS2 açıkça bu makrosu kullanılır ve /permissive-flag altında hatasına neden olmayan bir sınıf adı gerektirir.
-Aksi takdirde bu makroyu aynıdır [DECLARE_WND_CLASS](#declare_wnd_class).
+/Permissive-seçeneğini kullanıyorsanız, DECLARE_WND_CLASS bağımlı bir ad içerdiğinden derleme hatasına neden olur. DECLARE_WND_CLASS2, bu makronun kullanıldığı sınıfı açıkça yazmanız gerekir ve/Permissive-bayrağı altında hataya neden olmaz.
+Aksi takdirde, bu makro [DECLARE_WND_CLASS](#declare_wnd_class)benzerdir.
 
-##  <a name="declare_wnd_superclass"></a>  DECLARE_WND_SUPERCLASS
+##  <a name="declare_wnd_superclass"></a>DECLARE_WND_SUPERCLASS
 
-Bir sınıfın parametreleri belirtmenizi sağlar. Bu makro, ATL ActiveX denetiminin denetimi sınıfta yerleştirin.
+Bir sınıfın parametrelerini belirtmenize izin verir. Bu makroyu ATL ActiveX denetiminin denetim sınıfına yerleştirin.
 
 ```
 DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
@@ -95,28 +95,28 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 ### <a name="parameters"></a>Parametreler
 
 *WndClassName*<br/>
-[in] Pencerenin adını, sınıfın sınıf *OrigWndClassName*. NULL ise, ATL pencere sınıfı adı oluşturur.
+'ndaki Üst sınıf *OrigWndClassName*olacak pencere sınıfının adı. NULL ise, ATL bir pencere sınıfı adı oluşturacaktır.
 
 *OrigWndClassName*<br/>
-[in] Var olan bir pencere sınıfı adı.
+'ndaki Varolan bir pencere sınıfının adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, sınıfın var olan bir pencere sınıfını bir pencere sınıf adını belirtmenizi sağlar. [Cwndclassınfo](cwndclassinfo-class.md) sınıfın bilgilerini yönetir.
+Bu makro, varolan bir pencere sınıfının üst sınıfını oluşturacak bir pencere sınıfının adını belirtmenize olanak tanır. [CWndClassInfo](cwndclassinfo-class.md) , üst sınıftan bilgileri yönetir.
 
-DECLARE_WND_SUPERCLASS aşağıdaki statik işlev uygular:
+DECLARE_WND_SUPERCLASS aşağıdaki statik işlevi uygular:
 
 [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/cpp/window-class-macros_1.cpp)]
 
-Varsayılan olarak, [Cwindowımpl](cwindowimpl-class.md) kullanan [DECLARE_WND_CLASS](#declare_wnd_class) bir pencere oluşturmak için temel üzerinde yeni bir pencere sınıfı. DECLARE_WND_SUPERCLASS makroda belirterek bir `CWindowImpl`-türetilmiş sınıf, pencere sınıfını mevcut bir sınıfı temel alarak ancak, pencere yordamını kullanır. Bu teknik superclassing çağrılır.
+Varsayılan olarak, [CWindowImpl](cwindowimpl-class.md) yeni bir pencere sınıfını temel alan bir pencere oluşturmak için [DECLARE_WND_CLASS](#declare_wnd_class) makrosunu kullanır. `CWindowImpl`türetilmiş bir sınıfta DECLARE_WND_SUPERCLASS makrosunu belirterek, pencere sınıfı mevcut bir sınıfı temel alır ancak pencere yordamınız kullanılır. Bu teknik, superclassing olarak adlandırılır.
 
-DECLARE_WND_CLASS ve DECLARE_WND_SUPERCLASS makroları kullanmanın yanı sıra, geçersiz kılabilirsiniz [GetWndClassInfo](cwindowimpl-class.md#getwndclassinfo) kendi uygulamanız ile işlevi.
+DECLARE_WND_CLASS ve DECLARE_WND_SUPERCLASS makrolarını kullanmanın yanı sıra, [GetWndClassInfo](cwindowimpl-class.md#getwndclassinfo) işlevini kendi uygulamanız ile geçersiz kılabilirsiniz.
 
-ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).
+ATL 'de Windows kullanımı hakkında daha fazla bilgi için bkz. [atl pencere sınıfları](../../atl/atl-window-classes.md)makalesi.
 
-##  <a name="declare_wnd_class_ex"></a>  DECLARE_WND_CLASS_EX
+##  <a name="declare_wnd_class_ex"></a>DECLARE_WND_CLASS_EX
 
-Yeni bir pencere sınıf dayanacak var olan bir pencere sınıfı adını belirtmenizi sağlar. Bu makro, ATL ActiveX denetiminin denetimi sınıfta yerleştirin.
+Yeni bir pencere sınıfının temel alınacağı varolan bir pencere sınıfının adını belirtmenize olanak tanır. Bu makroyu ATL ActiveX denetiminin denetim sınıfına yerleştirin.
 
 ```
 DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
@@ -125,22 +125,22 @@ DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 ### <a name="parameters"></a>Parametreler
 
 *WndClassName*<br/>
-[in] Yeni pencere sınıfı adı. NULL ise, ATL pencere sınıfı adı oluşturur.
+'ndaki Yeni pencere sınıfının adı. NULL ise, ATL bir pencere sınıfı adı oluşturacaktır.
 
-*Stil*<br/>
-[in] Pencere stili.
+*biçim*<br/>
+'ndaki Pencerenin stili.
 
-*bkgnd*<br/>
-[in] Pencerenin arka plan rengi.
+*arka plan*<br/>
+'ndaki Pencerenin arka plan rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, bilgileri tarafından yönetilecek yeni bir pencere sınıf sınıf parametreleri belirtmenizi sağlar [Cwndclassınfo](cwndclassinfo-class.md). DECLARE_WND_CLASS_EX aşağıdaki statik işlevi uygulayarak yeni pencere sınıfını tanımlar:
+Bu makro, bilgileri [CWndClassInfo](cwndclassinfo-class.md)tarafından yönetilecek yeni bir pencere sınıfının sınıf parametrelerini belirtmenize olanak tanır. DECLARE_WND_CLASS_EX, aşağıdaki statik işlevi uygulayarak yeni pencere sınıfını tanımlar:
 
 [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/cpp/window-class-macros_1.cpp)]
 
-Arka plan rengi ve varsayılan stilleri kullanmak istiyorsanız, kullanın [DECLARE_WND_CLASS](#declare_wnd_class) makrosu. ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).
+Varsayılan stilleri ve arka plan rengini kullanmak istiyorsanız [DECLARE_WND_CLASS](#declare_wnd_class) makrosunu kullanın. ATL 'de Windows kullanımı hakkında daha fazla bilgi için bkz. [atl pencere sınıfları](../../atl/atl-window-classes.md)makalesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları](atl-macros.md)
+[Larının](atl-macros.md)

@@ -87,11 +87,11 @@ helpviewer_keywords:
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
 ms.openlocfilehash: a4b066bf1620f8aaca1b0fc581348c73d5255591
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687643"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874019"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -109,18 +109,18 @@ class multimap;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* \
+*Anahtar*\
 Çoklu eşlemde depolanacak anahtar veri türü.
 
-*Tür* \
+*Tür*\
 Çoklu eşlemde depolanacak öğe veri türü.
 
-*Nitelikler* \
+*Nitelikler*\
 İki öğenin değerlerini çoklu eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul `less<Key>` varsayılan değerdir.
 
 C++ 14 ' te, tür parametreleri olmayan `std::less<>` veya `std::greater<>` koşulunu belirterek heterojen aramayı etkinleştirebilirsiniz. Daha fazla bilgi için bkz. [Ilişkilendirilebilir kapsayıcılarda heterojen arama](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers-c14)
 
-*Ayırıcı* \
+*Ayırıcı*\
 Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type> >`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -139,13 +139,13 @@ C++ Standart kitaplık multimap sınıfı
 
 - Sınıf şablonu, sağladığı işlevsellik geneldir ve bu nedenle öğe veya anahtar olarak içerilen belirli veri türünden bağımsızdır. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
 
-Map sınıfı tarafından sunulan Yineleyici çift yönlü bir yineleyicidir, ancak [Insert](#insert) ve [multimap](#multimap) sınıf üyesi işlevleri, şablon parametreleri daha zayıf bir giriş yineleyicisini alan, işlevsellik gereksinimleri daha düşük olan sürümlere sahiptir Çift yönlü yineleyicilerin sınıfının garantisini aşıyor. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en düşük işlevsellik kümesidir, ancak sınıfın üye işlevleri bağlamında `[First, Last)` bir dizi yineleyiciler hakkında anlamlı bir şekilde konuşabilmek yeterlidir.
+Map sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, ancak [Insert](#insert) ve [multimap](#multimap) sınıf üyesi işlevleri, şablon parametresi olarak daha zayıf bir giriş yineleyicisini alan, işlevsellik gereksinimleri çift yönlü yineleyicilerin sınıfının garantisiyle daha düşük olan sürümlere sahiptir. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en düşük işlevsellik kümesidir, ancak sınıfın üye işlevleri bağlamında `[First, Last)` bir dizi yineleyiciler hakkında anlamlı bir şekilde konuşabilmek yeterlidir.
 
 Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. İlişkilendirilebilir kapsayıcılar, arama, ekleme ve kaldırma işlemleri için en iyi duruma getirilir. Bu işlemleri açıkça destekleyen üye işlevleri, işlevlerini kapsayıcıdaki öğelerin sayısının logaritmasına ortalama orantılı bir sürede gerçekleştirir ve verimlidir. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
 
 Çoklu eşlem, değerleri onların kendi anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında seçimin ilişkili kapsayıcısı olmalıdır. Bu tür bir yapı için model, mesela açıklamalar sağlayan dize değerleriyle ilişkili anahtar sözcüklerin sıralı bir listesidir, burada sözcükler her zaman benzersiz olarak tanımlanmamıştır. Bunun yerine anahtar sözcükler benzersiz olarak tanımlanırsa, seçilecek kapsayıcı bir eşlem olurdu. Diğer taraftan, yalnızca sözcüklerin listesi depolanmaktadır, ardından bir küme doğru kapsayıcı olacaktır. Sözcüklerin birden çok defa geçmelerine izin verilirse, bir çoklu küme uygun bir kapsayıcı yapısı olacaktır.
 
-Multimap, [key_compare](#key_compare)türünde depolanmış bir işlev nesnesi çağırarak denetlediği diziyi sıralar. Bu saklı nesne, [key_comp](#key_comp)üye işlevi çağırarak erişilebilen bir karşılaştırma işlevidir. Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. İkili koşul `f(x,y)` iki bağımsız değişken nesnesi olan bir Function nesnesidir `x` ve `y` ve true ya da false değeri döndürür. İkili koşul geri dönüşsüz, antisimetrik ve geçişli ve denklik geçişli ise, küme üzerinde yer alan bir sıralama katı zayıf bir sıradır, burada iki nesne `x` ve `y` her ikisi de `f(x,y)` ve `f(y,x)` olduğunda eşdeğer olarak tanımlanmıştır yanlýþ. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
+Multimap, [key_compare](#key_compare)türünde bir saklı işlev nesnesi çağırarak denetlediği diziyi sıralar. Bu saklı nesne, [key_comp](#key_comp)üye işlevi çağırarak erişilebilen bir karşılaştırma işlevidir. Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. İkili koşul `f(x,y)` iki bağımsız değişken nesnesi olan bir Function nesnesidir `x` ve `y` ve true ya da false değeri döndürür. İkili koşul geri dönüşsüz, antisimetrik ve geçişli ve denklik geçişli ise, küme üzerinde yer alan bir sıralama katı zayıf bir sıradır, burada iki nesne `x` ve `y` her ikisi de `f(x,y)` ve `f(y,x)` false olduğunda eşdeğer olarak tanımlanmıştır. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
 C++ 14 ' te, tür parametreleri olmayan `std::less<>` veya `std::greater<>` koşulunu belirterek heterojen aramayı etkinleştirebilirsiniz. Daha fazla bilgi için bkz. [Ilişkilendirilebilir kapsayıcılarda heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
@@ -155,55 +155,55 @@ C++ 14 ' te, tür parametreleri olmayan `std::less<>` veya `std::greater<>` koş
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[multimap](#multimap)|Boş olan veya diğer bir `multimap` tümünün veya bir kısmının kopyası olan bir `multimap` oluşturur.|
+|[multimap](#multimap)|Boş olan veya diğer bir `multimap`tümünün veya bir kısmının kopyası olan bir `multimap` oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[allocator_type](#allocator_type)|@No__t_1 nesnesi için `allocator` sınıfını temsil eden bir tür.|
-|[const_iterator](#const_iterator)|@No__t_1 bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[const_pointer](#const_pointer)|@No__t_1 bir **const** öğesine işaretçi sağlayan bir tür.|
+|[allocator_type](#allocator_type)|`multimap` nesnesi için `allocator` sınıfını temsil eden bir tür.|
+|[const_iterator](#const_iterator)|`multimap`bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[const_pointer](#const_pointer)|`multimap`bir **const** öğesine işaretçi sağlayan bir tür.|
 |[const_reference](#const_reference)|**Const** işlemlerini okumak ve gerçekleştirmek için bir `multimap` depolanan **const** öğesine başvuru sağlayan bir tür.|
-|[const_reverse_iterator](#const_reverse_iterator)|@No__t_1 herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[const_reverse_iterator](#const_reverse_iterator)|`multimap`herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
 |[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki `multimap` öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.|
-|[iden](#iterator)|Aynı `multimap` içindeki öğelere başvuran iki yineleyiciler arasındaki farkı sağlayan bir tür.|
-|[key_compare](#key_compare)|@No__t_0 iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.|
-|[key_type](#key_type)|@No__t_0 her bir öğesini oluşturan sıralama anahtarı nesnesini açıklayan bir tür.|
-|[mapped_type](#mapped_type)|@No__t_0 depolanan veri türünü temsil eden bir tür.|
-|[çağrısı](#pointer)|@No__t_1 bir **const** öğesine işaretçi sağlayan bir tür.|
-|[başvurunun](#reference)|@No__t_0 depolanan bir öğeye başvuru sağlayan bir tür.|
-|[reverse_iterator](#reverse_iterator)|Ters çevrilen bir `multimap` bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[size_type](#size_type)|@No__t_1 bir **const** öğesine işaretçi sağlayan işaretsiz tamsayı türü.|
-|[value_type](#value_type)|@No__t_0 ilişkili sıralarını belirleyebilmek için sıralama anahtarları olarak iki öğeyi karşılaştıran bir işlev nesnesi sağlayan bir tür.|
+|[iden](#iterator)|Aynı `multimap`içindeki öğelere başvuran iki yineleyiciler arasındaki farkı sağlayan bir tür.|
+|[key_compare](#key_compare)|`multimap`iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.|
+|[key_type](#key_type)|`multimap`her bir öğesini oluşturan sıralama anahtarı nesnesini açıklayan bir tür.|
+|[mapped_type](#mapped_type)|`multimap`depolanan veri türünü temsil eden bir tür.|
+|[çağrısı](#pointer)|`multimap`bir **const** öğesine işaretçi sağlayan bir tür.|
+|[başvurunun](#reference)|`multimap`depolanan bir öğeye başvuru sağlayan bir tür.|
+|[reverse_iterator](#reverse_iterator)|Ters çevrilen bir `multimap`bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[size_type](#size_type)|`multimap`bir **const** öğesine işaretçi sağlayan işaretsiz tamsayı türü.|
+|[value_type](#value_type)|`multimap`ilişkili sıralarını belirleyebilmek için sıralama anahtarları olarak iki öğeyi karşılaştıran bir işlev nesnesi sağlayan bir tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[başladı](#begin)|@No__t_0 ilk öğeyi adresleyen bir yineleyici döndürür.|
-|[cbegin](#cbegin)|@No__t_0 ilk öğeyi adresleyen bir const yineleyici döndürür.|
-|[cend](#cend)|@No__t_0 son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
-|[lediğiniz](#clear)|@No__t_0 tüm öğelerini siler.|
-|[biriktirme](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir `multimap` öğe sayısını döndürür.|
-|[crbegin](#crbegin)|Ters çevrilen `multimap` ilk öğeyi adresleyen bir const yineleyici döndürür.|
-|[crend](#crend)|Ters çevrilen `multimap` son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
-|[Emplace](#emplace)|Bir `multimap` içinde oluşturulmuş bir öğe ekler.|
-|[emplace_hint](#emplace_hint)|Yerleştirme ipucuyla birlikte `multimap` oluşturulan bir öğeyi ekler|
-|[olmamalıdır](#empty)|@No__t_0 boş ise sınar.|
-|[erer](#end)|@No__t_0 son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
+|[başladı](#begin)|`multimap`ilk öğeyi adresleyen bir yineleyici döndürür.|
+|[cbegin](#cbegin)|`multimap`ilk öğeyi adresleyen bir const yineleyici döndürür.|
+|[cend](#cend)|`multimap`son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
+|[lediğiniz](#clear)|`multimap`tüm öğelerini siler.|
+|[count](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir `multimap` öğe sayısını döndürür.|
+|[crbegin](#crbegin)|Ters çevrilen `multimap`ilk öğeyi adresleyen bir const yineleyici döndürür.|
+|[crend](#crend)|Ters çevrilen `multimap`son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
+|[Emplace](#emplace)|Bir `multimap`içinde oluşturulmuş bir öğe ekler.|
+|[emplace_hint](#emplace_hint)|Yerleştirme ipucuyla birlikte `multimap`oluşturulan bir öğeyi ekler|
+|[olmamalıdır](#empty)|`multimap` boş ise sınar.|
+|[erer](#end)|`multimap`son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
 |[equal_range](#equal_range)|Öğenin anahtarının belirtilen değerle eşleştiği öğeler aralığını bulur.|
 |[silme](#erase)|Belirtilen konumlardan bir `multimap` öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[bilgi](#find)|Belirtilen anahtara eşdeğer bir anahtara sahip bir `multimap` öğenin ilk konumunu ele alan bir yineleyici döndürür.|
-|[get_allocator](#get_allocator)|@No__t_1 oluşturmak için kullanılan `allocator` nesnesinin bir kopyasını döndürür.|
-|[ekleyin](#insert)|Bir `multimap` öğe veya öğe aralığı ekler.|
-|[key_comp](#key_comp)|@No__t_0 anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
+|[find](#find)|Belirtilen anahtara eşdeğer bir anahtara sahip bir `multimap` öğenin ilk konumunu ele alan bir yineleyici döndürür.|
+|[get_allocator](#get_allocator)|`multimap`oluşturmak için kullanılan `allocator` nesnesinin bir kopyasını döndürür.|
+|[ekleyin](#insert)|Bir `multimap`öğe veya öğe aralığı ekler.|
+|[key_comp](#key_comp)|`multimap`anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
 |[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit olan bir anahtarla `multimap` ilk öğeye döndürür.|
-|[max_size](#max_size)|@No__t_0 maksimum uzunluğunu döndürür.|
-|[rbegin](#rbegin)|Ters çevrilen `multimap` ilk öğeyi adresleyen bir yineleyici döndürür.|
-|[rend](#rend)|Ters çevrilen `multimap` son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
-|[boyutla](#size)|@No__t_0 öğe sayısını döndürür.|
-|[Kur](#swap)|İki `multimap`s öğelerini değiş tokuş eder.|
+|[max_size](#max_size)|`multimap`maksimum uzunluğunu döndürür.|
+|[rbegin](#rbegin)|Ters çevrilen `multimap`ilk öğeyi adresleyen bir yineleyici döndürür.|
+|[rend](#rend)|Ters çevrilen `multimap`son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
+|[boyutla](#size)|`multimap`öğe sayısını döndürür.|
+|[Kur](#swap)|İki `multimap`öğelerini değiş tokuş eder.|
 |[upper_bound](#upper_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla bir `multimap` ilk öğeye döndürür.|
 |[value_comp](#value_comp)|Üye işlevi, anahtar değerlerini karşılaştırarak bir `multimap` öğelerinin sırasını belirleyen bir işlev nesnesi döndürür.|
 
@@ -211,15 +211,15 @@ C++ 14 ' te, tür parametreleri olmayan `std::less<>` veya `std::greater<>` koş
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç =](#op_eq)|@No__t_0 öğelerini başka bir `multimap` kopyasıyla değiştirir.|
+|[işleç =](#op_eq)|`multimap` öğelerini başka bir `multimap`kopyasıyla değiştirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<map >
+**Üst bilgi:** \<eşleme >
 
 **Ad alanı:** std
 
-( **Anahtar**, **değer**) çiftleri `pair` türünde nesneler olarak multimap içinde depolanır. Çift sınıfı, \<map > tarafından otomatik olarak eklenen \<utility > üst bilgisini gerektirir.
+( **Anahtar**, **değer**) çiftleri `pair`türünde nesneler olarak multimap içinde depolanır. Çift sınıfı, \<Map > tarafından otomatik olarak eklenen > üst bilgi \<yardımcı programı gerektirir.
 
 ## <a name="allocator_type"></a>multimap:: allocator_type
 
@@ -231,7 +231,7 @@ typedef Allocator allocator_type;
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanarak bir örnek için bkz. [get_allocator](#get_allocator) .
+`allocator_type`kullanarak bir örnek için [get_allocator](#get_allocator) örneğe bakın.
 
 ## <a name="begin"></a>multimap:: Begin
 
@@ -302,9 +302,9 @@ Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir A
 
 ### <a name="remarks"></a>Açıklamalar
 
-@No__t_0 dönüş değeri ile aralıktaki öğeler değiştirilemez.
+`cbegin`dönüş değeri ile aralıktaki öğeler değiştirilemez.
 
-Dönüş değerinin `const_iterator` olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()` destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Dönüş değerinin `const_iterator`olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
 
 ```cpp
 auto i1 = Container.begin();
@@ -330,7 +330,7 @@ Yalnızca aralığın sonunu işaret eden bir **const** çift yönlü erişim yi
 
 `cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
-Dönüş değerinin `const_iterator` olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()` destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Dönüş değerinin `const_iterator`olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
 
 ```cpp
 auto i1 = Container.end();
@@ -340,7 +340,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-@No__t_0 tarafından döndürülen değer başvurulmamalıdır.
+`cend` tarafından döndürülen değer başvurulmamalıdır.
 
 ## <a name="clear"></a>multimap:: Clear
 
@@ -398,15 +398,15 @@ typedef implementation-defined const_iterator;
 
 Bir tür `const_iterator`, bir öğenin değerini değiştirmek için kullanılamaz.
 
-Multimap tarafından tanımlanan `const_iterator`, `pair<const Key, Type>` türündeki [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
+Multimap tarafından tanımlanan `const_iterator`, `pair<const Key, Type>`türünde olan [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
 
 Multimap içindeki bir öğeye işaret eden bir `const_iterator` *citer* başvurusu için **->** işlecini kullanın.
 
-Öğesinin anahtar değerine erişmek için, `(*cIter).first` eşdeğer olan `cIter->first` kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*cIter).second` eşdeğer olan `cIter->second` kullanın.
+Öğesinin anahtar değerine erişmek için, `(*cIter).first`eşdeğer olan `cIter->first`kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*cIter).second`eşdeğer olan `cIter->second`kullanın.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanarak bir örnek için [Begin](#begin) örneğine bakın.
+`const_iterator`kullanarak bir örnek için [Begin](#begin) örneğine bakın.
 
 ## <a name="const_pointer"></a>multimap:: const_pointer
 
@@ -484,15 +484,15 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 Bir tür `const_reverse_iterator`, bir öğenin değerini değiştiremiyor ve bu öğe, ters eşleme içinde daha sonra yinelemek için kullanılır.
 
-Multimap tarafından tanımlanan `const_reverse_iterator`, `pair<const Key, Type>` türündeki [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
+Multimap tarafından tanımlanan `const_reverse_iterator`, `pair<const Key, Type>`türünde olan [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
 
 Çoklu haritadaki bir *öğeye işaret eden* bir `const_reverse_iterator` başvuruyu başvuru için **->** işlecini kullanın.
 
-Öğesinin anahtar değerine erişmek için, `(*crIter).first` eşdeğer olan `crIter->first` kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*crIter).first` eşdeğer olan `crIter->second` kullanın.
+Öğesinin anahtar değerine erişmek için, `(*crIter).first`eşdeğer olan `crIter->first`kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*crIter).first`eşdeğer olan `crIter->second`kullanın.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [rend](#rend) örneği.
+`const_reverse_iterator`bildirme ve kullanma hakkında bir örnek için bkz. [rend](#rend) örneği.
 
 ## <a name="count"></a>multimap:: Count
 
@@ -504,7 +504,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* \
+*anahtar*\
 Multimap 'ten eşleştirilecek öğelerin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -573,13 +573,13 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen [multimap](../standard-library/multimap-class.md) içindeki ilk öğeyi ele almak veya geri çevrilmeyen `multimap` son öğe olduğunu belirlemek için bir sabit ters çift yönlü Yineleyici.
+Ters çevrilen [multimap](../standard-library/multimap-class.md) içindeki ilk öğeyi ele almak veya geri çevrilmeyen `multimap`son öğe olduğunu belirlemek için bir sabit ters çift yönlü Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin`, [Başlangıç](#begin) olarak bir `multimap` kullanıldığı gibi tersine çevrilmiş bir `multimap` ile kullanılır.
+`crbegin`, [Başlangıç](#begin) olarak bir `multimap`kullanıldığı gibi tersine çevrilmiş bir `multimap` ile kullanılır.
 
-@No__t_0 dönüş değeri ile `multimap` nesnesi değiştirilemez.
+`crbegin`dönüş değeri ile `multimap` nesnesi değiştirilemez.
 
 `crbegin`, `multimap` geriye doğru yinelemek için kullanılabilir.
 
@@ -623,17 +623,17 @@ const_reverse_iterator crend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen [multimap](../standard-library/multimap-class.md) içindeki son öğeden sonra gelen konumu ele alan bir sabit ters çift yönlü yineleyici (geri çevrilmeyen `multimap` ilk öğeden önce olan konum).
+Ters çevrilen [multimap](../standard-library/multimap-class.md) içindeki son öğeden sonra gelen konumu ele alan bir sabit ters çift yönlü yineleyici (geri çevrilmeyen `multimap`ilk öğeden önce olan konum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`, zaten [multimap:: End](#end) bir `multimap` ile kullanıldığı için ters çevrilmiş bir `multimap` kullanılır.
+`crend`, zaten [multimap:: End](#end) bir `multimap`ile kullanıldığı için ters çevrilmiş bir `multimap` kullanılır.
 
-@No__t_0 dönüş değeri ile `multimap` nesnesi değiştirilemez.
+`crend`dönüş değeri ile `multimap` nesnesi değiştirilemez.
 
-`crend`, geriye doğru bir yineleyicinin `multimap` sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`crend`, geriye doğru bir yineleyicinin `multimap`sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
-@No__t_0 tarafından döndürülen değer başvurulmamalıdır.
+`crend` tarafından döndürülen değer başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -676,9 +676,9 @@ typedef typename allocator_type::difference_type difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-@No__t_0 kapsayıcının yineleyiciler aracılığıyla çıkartılacak veya arttırılarak döndürülen türdür. @No__t_0 genellikle yineleyiciler `first` ve `last` arasındaki [*First*, *Last*) aralıktaki öğelerin sayısını temsil etmek için kullanılır, `first` tarafından işaret edilen öğeyi ve öğe aralığını içeren, ancak dahil değil , `last` tarafından işaret edilen öğe.
+`difference_type` kapsayıcının yineleyiciler aracılığıyla çıkartılacak veya arttırılarak döndürülen türdür. `difference_type`, genellikle yineleyiciler `first` ve `last`arasındaki [*ilk*, *son*) aralıktaki öğelerin sayısını temsil etmek için kullanılır, `first` tarafından işaret edilen öğe ve dahil olmak üzere öğe aralığı, `last`tarafından işaret edilen öğeyi içerir.
 
-@No__t_0, bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir olsa da, bu arada ters çevrilebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyicilerin sınıfını içeren, yineleyiciler arasındaki çıkarma yalnızca vektör gibi bir rastgele erişim kapsayıcısı tarafından sunulan rastgele erişim yineleyiciler.
+Bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için `difference_type` kullanılabilir olsa da, yineleyiciler arasındaki çıkarma işlemi, yineleyiciler arasındaki çıkarma, yalnızca vektör gibi bir rastgele erişim kapsayıcısı tarafından sağlanan rastgele erişim yineleyiciler tarafından desteklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -749,7 +749,7 @@ Bu işlev tarafından kapsayıcı öğelerine yönelik başvuru geçersiz kılı
 
 Ekleme sırasında bir özel durum oluşturulursa, kapsayıcı değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
 
-Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifttir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
+Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifdir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
 ### <a name="example"></a>Örnek
 
@@ -820,7 +820,7 @@ Bu işlev tarafından kapsayıcı öğelerine yönelik başvuru geçersiz kılı
 
 Emplamak sırasında, bir özel durum oluşturulursa kapsayıcının durumu değiştirilmez.
 
-Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifttir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
+Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifdir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
 Kod örneği için bkz. [map:: emplace_hint](../standard-library/map-class.md#emplace_hint).
 
@@ -903,14 +903,14 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* \
+*anahtar*\
 Aranan multimap öğesinden bir öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Birincisi anahtarın [lower_bound](#lower_bound) , ikincisi ise anahtarın [upper_bound](#upper_bound) olduğu gibi yineleyiciler çifti.
+Birincisi anahtarın [lower_bound](#lower_bound) , ikincisi ise anahtarın [upper_bound](#upper_bound) olan yinelemelerin bir çiftinden biridir.
 
-Üye işlevi tarafından döndürülen bir çiftin ilk Yineleyici `pr` erişmek için `pr` kullanın. **ilk** olarak, alt sınır yineleyicisini başvuru için \* (`pr` kullanın. **ilk**). Üye işlevi tarafından döndürülen bir çiftin ikinci Yineleyici `pr` erişmek için `pr` kullanın. **ikincisi** ve üst sınır yineleyicisinin başvurusu için \* (`pr` kullanın. **ikinci**).
+Üye işlevi tarafından döndürülen bir çiftin ilk Yineleyici `pr` erişmek için `pr`kullanın. **ilk** olarak, alt sınır yineleyicisini başvuru için \*(`pr`kullanın. **ilk**). Üye işlevi tarafından döndürülen bir çiftin ikinci Yineleyici `pr` erişmek için `pr`kullanın. **ikincisi** ve üst sınır yineleyicisinin başvurusu için \*(`pr`kullanın. **ikinci**).
 
 ### <a name="example"></a>Örnek
 
@@ -990,16 +990,16 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* \
+*Burada*\
 Kaldırılacak öğenin konumu.
 
-*İlk* \
+*İlk*\
 Kaldırılacak ilk öğenin konumu.
 
-*Son* \
+*Son*\
 Kaldırılacak son öğenin hemen ötesinde konumlandır.
 
-*Anahtar* \
+*Anahtar*\
 Kaldırılacak öğelerin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1024,7 +1024,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* \
+*anahtar*\
 Aranan multimap öğesinden bir öğenin sıralama anahtarıyla eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1035,7 +1035,7 @@ Belirtilen anahtara sahip bir öğenin konumuna başvuran bir yineleyici veya an
 
 Üye işlevi, sıralama anahtarı, karşılaştırıdan daha az bir ilişkiye göre sıralama yapan bir ikili koşul altındaki bağımsız değişken anahtarına denk gelen, multimap içindeki bir öğeye başvuran bir yineleyici döndürür.
 
-@No__t_0 dönüş değeri bir `const_iterator` atanırsa, multimap nesnesi değiştirilemez. @No__t_0 dönüş değeri bir `iterator` atanırsa, multimap nesnesi değiştirilebilir.
+`find` dönüş değeri bir `const_iterator`atanırsa, multimap nesnesi değiştirilemez. `find` dönüş değeri bir `iterator`atanırsa, multimap nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1215,10 +1215,10 @@ IList);
 |-|-|
 |*Acil*|Multimap 'e eklenecek bir öğenin değeri.|
 |*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)|
-|*ValTy*|Haritanın bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız *değişken olarak* kusursuz [](../standard-library/map-class.md#value_type)iletme değeri.|
+|*ValTy*|Eşlemenin [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız değişken olarak *kusursuz iletme değeri* .|
 |*Adı*|Kopyalanacak ilk öğenin konumu.|
 |*Soyadına*|Kopyalanacak son öğenin hemen ötesinde konum.|
-|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesnelerini oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
+|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
 |*IList*|Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1233,9 +1233,9 @@ Bu işlev tarafından geçersiz kılınan işaretçiler veya başvurular yok, an
 
 Yalnızca bir öğenin eklenmesi sırasında, bir özel durum oluşturulursa, kapsayıcının durumu değiştirilmez. Birden çok öğenin eklenmesi sırasında, bir özel durum oluşturulursa, kapsayıcı belirtilmemiş ancak geçerli bir durumda bırakılır.
 
-Kapsayıcının [value_type](../standard-library/map-class.md#value_type) , kapsayıcıya ait olan bir typedef ve eşleme için `multimap<K, V>::value_type` `pair<const K, V>`. Bir öğenin değeri, ilk bileşenin anahtar değere eşit olduğu ve ikinci bileşenin öğenin veri değerine eşit olduğu sıralı bir çiftidir.
+Kapsayıcının [value_type](../standard-library/map-class.md#value_type) kapsayıcıya ait olan bir typedef ve eşleme için `multimap<K, V>::value_type` `pair<const K, V>`. Bir öğenin değeri, ilk bileşenin anahtar değere eşit olduğu ve ikinci bileşenin öğenin veri değerine eşit olduğu sıralı bir çiftidir.
 
-Aralık üye işlevi (5), öğe değerlerinin dizisini aralıktaki bir yineleyici tarafından bahsedilen her öğeye karşılık gelen multimap 'e ekler `[First, Last)`; Bu nedenle, *son* eklenmez. Kapsayıcı üye işlevi `end()` kapsayıcıdaki son öğeden hemen sonra gelen konuma başvurur — Örneğin, `m.insert(v.begin(), v.end());` deyimin tüm öğelerini `m` `v` ekler.
+Aralık üye işlevi (5), öğe değerlerinin dizisini aralıktaki bir yineleyici tarafından bahsedilen her öğeye karşılık gelen multimap 'e ekler `[First, Last)`; Bu nedenle, *son* eklenmez. Kapsayıcı üye işlevi `end()` kapsayıcıdaki son öğeden hemen sonra gelen konuma başvurur — Örneğin, `m.insert(v.begin(), v.end());` deyimin tüm öğelerini `m``v` ekler.
 
 Başlatıcı listesi üye işlevi (6), öğeleri haritaya kopyalamak için bir [initializer_list](../standard-library/initializer-list.md) kullanır.
 
@@ -1341,17 +1341,17 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Multimap tarafından tanımlanan `iterator`, `pair<const Key, Type>` türündeki [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
+Multimap tarafından tanımlanan `iterator`, `pair<const Key, Type>`türünde olan [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
 
 Multimap içindeki bir öğeye işaret eden bir `iterator` *Iter* başvurusu yapmak için **->** işlecini kullanın.
 
-Öğesinin anahtar değerine erişmek için, `(*Iter).first` eşdeğer olan `Iter->first` kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*Iter).second` eşdeğer olan `Iter->second` kullanın.
+Öğesinin anahtar değerine erişmek için, `(*Iter).first`eşdeğer olan `Iter->first`kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*Iter).second`eşdeğer olan `Iter->second`kullanın.
 
 Bir tür `iterator`, bir öğenin değerini değiştirmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 bildirme ve kullanma hakkında bir [örnek için bkz](#begin) . örnek.
+`iterator`bildirme ve kullanma hakkında bir [örnek için bkz](#begin) . örnek.
 
 ## <a name="key_comp"></a>multimap:: key_comp
 
@@ -1434,13 +1434,13 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare`, şablon parametresi `Traits` için bir eş anlamlı.
+`key_compare`, şablon parametresi `Traits`için bir eş anlamlı.
 
-@No__t_0 hakkında daha fazla bilgi için bkz. [multimap sınıfı](../standard-library/multimap-class.md) konusu.
+`Traits` hakkında daha fazla bilgi için bkz. [multimap sınıfı](../standard-library/multimap-class.md) konusu.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [key_comp](#key_comp) .
+`key_compare`bildirme ve kullanma hakkında bir örnek için bkz. [key_comp](#key_comp) örneği.
 
 ## <a name="key_type"></a>multimap:: key_type
 
@@ -1452,13 +1452,13 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type`, şablon parametresi `Key` için bir eş anlamlı.
+`key_type`, şablon parametresi `Key`için bir eş anlamlı.
 
-@No__t_0 hakkında daha fazla bilgi için, [multimap sınıfı](../standard-library/multimap-class.md) konusunun açıklamalar bölümüne bakın.
+`Key`hakkında daha fazla bilgi için, [multimap sınıfı](../standard-library/multimap-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) .
+`key_type`bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği.
 
 ## <a name="lower_bound"></a>multimap:: lower_bound
 
@@ -1472,14 +1472,14 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* \
+*anahtar*\
 Aranan multimap öğesinden bir öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bağımsız değişken anahtarına eşit veya ondan daha büyük bir anahtarla veya anahtar için eşleşme bulunmazsa, multimap içindeki son öğeden sonra gelen konumu ele alan bir bir yineleyici veya `const_iterator`.
 
-@No__t_0 dönüş değeri bir `const_iterator` atanırsa, multimap nesnesi değiştirilemez. @No__t_0 dönüş değeri bir **Yineleyici**öğesine atanırsa, multimap nesnesi değiştirilebilir.
+`lower_bound` dönüş değeri bir `const_iterator`atanırsa, multimap nesnesi değiştirilemez. `lower_bound` dönüş değeri bir **Yineleyici**öğesine atanırsa, multimap nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1558,13 +1558,13 @@ typedef Type mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`mapped_type`, şablon parametresi `Type` için bir eş anlamlı.
+`mapped_type`, şablon parametresi `Type`için bir eş anlamlı.
 
-@No__t_0 hakkında daha fazla bilgi için bkz. [multimap sınıfı](../standard-library/multimap-class.md) konusu.
+`Type` hakkında daha fazla bilgi için bkz. [multimap sınıfı](../standard-library/multimap-class.md) konusu.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) .
+`key_type`bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği.
 
 ## <a name="max_size"></a>multimap:: max_size
 
@@ -1654,7 +1654,7 @@ multimap(
 |Parametre|Açıklama|
 |-|-|
 |*Eşkenar*|Varsayılan ayırıcı olan bu multimap nesnesi için kullanılacak depolama ayırıcı sınıfı.|
-|*İnin*|@No__t_1 varsayılan olarak, haritadaki öğeleri sıralamak için kullanılan `constTraits` türü karşılaştırma işlevi.|
+|*İnin*|`Traits`varsayılan olarak, haritadaki öğeleri sıralamak için kullanılan `constTraits` türü karşılaştırma işlevi.|
 |*Right*|Oluşturulan kümesinin bir kopya olması gereken harita.|
 |*Adı*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Soyadına*|Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.|
@@ -1668,7 +1668,7 @@ Tüm oluşturucular multimap 'i başlatır.
 
 Tüm oluşturucular, multimap 'in anahtarları arasında bir sıra oluşturmak için kullanılan ve daha sonra [key_comp](#key_comp)çağırarak geri döndürülebilecek `Traits` türünde bir işlev nesnesi depolar.
 
-İlk üç Oluşturucu boş bir ilk multimap, öğelerin sırasını oluşturmak için kullanılan karşılaştırma işlevinin türünü (*comp*) ve üçüncü olarak açıkça ayırıcı türü (*Al*) belirtmek için kullanılır. kullanılamıyor. Anahtar sözcük **Açık** , belirli türde otomatik tür dönüştürme göstermez.
+İlk üç Oluşturucu boş bir ilk multimap, öğelerin sırasını oluşturmak için kullanılan karşılaştırma işlevi (*comp*) türünü ve üçüncü açıkça kullanılmak üzere ayırıcı türü (*Al*) belirten bir ad belirtir. Anahtar sözcük **Açık** , belirli türde otomatik tür dönüştürme göstermez.
 
 Dördüncü Oluşturucu, multimap *sağ*bir kopyasını belirtir.
 
@@ -1800,11 +1800,11 @@ multimap& operator=(multimap&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|*Right*|@No__t_1 içine Kopyalanmakta olan [multimap](../standard-library/multimap-class.md) .|
+|*Right*|`multimap`içine Kopyalanmakta olan [multimap](../standard-library/multimap-class.md) .|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `multimap` var olan öğeleri sildikten sonra, `operator=` içeriğini kopyalar veya `multimap` içine *taşısa* .
+Bir `multimap`var olan öğeleri sildikten sonra, `operator=` içeriğini kopyalar veya `multimap`içine *taşısa* .
 
 ### <a name="example"></a>Örnek
 
@@ -1875,7 +1875,7 @@ Ters çevrilen multimap içindeki ilk öğeyi ele almak veya geri çevrilmeyen m
 
 `rbegin`, bir çok eşleme ile [BEGIN](#begin) ile birlikte ters çevrilmiş multimap ile birlikte kullanılır.
 
-@No__t_0 dönüş değeri bir `const_reverse_iterator` atanırsa, multimap nesnesi değiştirilemez. @No__t_0 dönüş değeri bir `reverse_iterator` atanırsa, multimap nesnesi değiştirilebilir.
+`rbegin` dönüş değeri bir `const_reverse_iterator`atanırsa, multimap nesnesi değiştirilemez. `rbegin` dönüş değeri bir `reverse_iterator`atanırsa, multimap nesnesi değiştirilebilir.
 
 `rbegin`, bir çoklu haritada geriye doğru yinelemek için kullanılabilir.
 
@@ -2012,11 +2012,11 @@ Ters çevrilen multimap içindeki son öğeden sonra gelen konumu ele alan ters 
 
 `rend`, [uçtan uca](../standard-library/map-class.md#end) bir multimap ile kullanıldığı gibi bir ters eşleme ile kullanılır.
 
-@No__t_0 dönüş değeri bir `const_reverse_iterator` atanırsa, multimap nesnesi değiştirilemez. @No__t_0 dönüş değeri bir `reverse_iterator` atanırsa, multimap nesnesi değiştirilebilir.
+`rend` dönüş değeri bir `const_reverse_iterator`atanırsa, multimap nesnesi değiştirilemez. `rend` dönüş değeri bir `reverse_iterator`atanırsa, multimap nesnesi değiştirilebilir.
 
 `rend`, bir ters yineleyicinin multimap 'in sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
-@No__t_0 tarafından döndürülen değer başvurulmamalıdır.
+`rend` tarafından döndürülen değer başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2090,15 +2090,15 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 Bir tür `reverse_iterator`, bu multimap üzerinden ters yinelemek için kullanılır.
 
-Multimap tarafından tanımlanan `reverse_iterator`, `pair<const Key, Type>` türündeki [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
+Multimap tarafından tanımlanan `reverse_iterator`, `pair<const Key, Type>`türünde olan [value_type](#value_type)nesnelerine işaret eder. Anahtarın değeri, ilk üye çifti ile kullanılabilir ve eşlenmiş öğenin değeri, çiftin ikinci üyesi üzerinden kullanılabilir.
 
 Çoklu haritadaki bir *öğeye işaret eden* bir `reverse_iterator` bir şekilde başvuru yapmak için **->** işlecini kullanın.
 
-Öğesinin anahtar değerine erişmek için, `(*rIter).first` eşdeğer olan `rIter->first` kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*rIter).second` eşdeğer olan `rIter->second` kullanın.
+Öğesinin anahtar değerine erişmek için, `(*rIter).first`eşdeğer olan `rIter->first`kullanın. Öğesi için eşlenen veri değerine erişmek için, `(*rIter).second`eşdeğer olan `rIter->second`kullanın.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
+`reverse_iterator`bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
 
 ## <a name="size"></a>multimap:: size
 
@@ -2167,8 +2167,8 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
-Takas edilecek öğeleri sağlayan multimap veya öğeleri multimap `left` birlikte değiş tokuş edilecek multimap.
+*sağ*\
+Takas edilecek öğeleri sağlayan multimap veya öğeleri multimap `left`birlikte değiş tokuş edilecek multimap.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2237,14 +2237,14 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* \
+*anahtar*\
 Aranan multimap öğesinden bir öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bağımsız değişken anahtarından daha büyük bir anahtarla veya anahtar için eşleşme bulunmazsa, multimap içindeki son öğeden sonra gelen konumu ele alan bir veya birden çok eşleme içindeki bir öğenin konumunu ele alan bir yineleyici veya `const_iterator`.
 
-Dönüş değeri bir `const_iterator` atanırsa, multimap nesnesi değiştirilemez. Dönüş değeri bir `iterator` atanırsa, multimap nesnesi değiştirilebilir.
+Dönüş değeri bir `const_iterator`atanırsa, multimap nesnesi değiştirilemez. Dönüş değeri bir `iterator`atanırsa, multimap nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2318,7 +2318,7 @@ Multimap 'in öğelerini sıralamak için kullandığı karşılaştırma işlev
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çoklu harita için, iki öğe *E1*(*K1*, *D1*) ve *E2*(*K2*, *d2*) `value_type` türündeki nesnelerdir *; burada* *K1* ve *K2* 0 ve *D1* ve *D2* türünde anahtarlardır. 3 veri türleri 4 5 eşdeğerdir.
+Çoklu *harita için*, iki öğe *E1*(*K1*, *D1*) ve *E2*(*K2*, *D2*) `value_type`türündeki nesnelerdir; burada *K1* ve *K2* `key_type`, *D1* ve *D2* türü `mapped_type`, `m.value_comp(e1, e2)` `m.key_comp(k1, k2)`eşittir.
 
 ### <a name="example"></a>Örnek
 
@@ -2438,6 +2438,6 @@ The values of the mapped elements are: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcılar](../cpp/containers-modern-cpp.md) \
-[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Kapsayıcılar](../cpp/containers-modern-cpp.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

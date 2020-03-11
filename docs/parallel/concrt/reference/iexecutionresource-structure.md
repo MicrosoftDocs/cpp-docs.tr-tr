@@ -12,11 +12,11 @@ helpviewer_keywords:
 - IExecutionResource structure
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
 ms.openlocfilehash: 40799d1ed6e21e6932f1adfbad117c436918b792
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141285"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854222"
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 
@@ -32,7 +32,7 @@ struct IExecutionResource;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[IExecutionResource:: CurrentSubscriptionLevel](#currentsubscriptionlevel)|Etkinleştirilen sanal işlemci köklerinin ve bu yürütme kaynağının gösterdiği temel alınan donanım iş parçacığı ile ilişkili olan abone olunan dış iş parçacıklarının sayısını döndürür.|
 |[IExecutionResource:: GetExecutionResourceId](#getexecutionresourceid)|Bu yürütme kaynağının temsil ettiği donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.|

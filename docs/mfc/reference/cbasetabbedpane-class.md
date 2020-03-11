@@ -1,5 +1,5 @@
 ---
-title: CBaseTabbedPane Class
+title: CBaseTabbedPane sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CBaseTabbedPane
@@ -63,15 +63,15 @@ helpviewer_keywords:
 - CBaseTabbedPane [MFC], ShowTab
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
 ms.openlocfilehash: d7ffaa7274a8ed12944cdbc5dcbbdcb8fd3fd2b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388598"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78883686"
 ---
-# <a name="cbasetabbedpane-class"></a>CBaseTabbedPane Class
+# <a name="cbasetabbedpane-class"></a>CBaseTabbedPane sınıfı
 
-İşlevselliğini genişletir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) sekmeli pencerelerin oluşturulmasını desteklemek için.
+Sekmeli pencerelerin oluşturulmasını desteklemek için [CDockablePane sınıfının](../../mfc/reference/cdockablepane-class.md) işlevselliğini genişletir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,57 +83,57 @@ class CBaseTabbedPane : public CDockablePane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`CBaseTabbedPane::CBaseTabbedPane`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBaseTabbedPane::AddTab](#addtab)|Yeni bir sekme sekmeli bir bölmeye ekler.|
-|[CBaseTabbedPane::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)|Boş bir sekmeli bölme yok edilebilir olup olmadığını belirtir.|
-|[CBaseTabbedPane::ApplyRestoredTabInfo](#applyrestoredtabinfo)|Kayıt defterinden sekmeli bir bölmeye yüklenen Sekme ayarlarını uygular.|
-|[CBaseTabbedPane::CanFloat](#canfloat)|Bölmesinde kaydırabilirsiniz olup olmadığını belirler. (Geçersiz kılmaları [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).)|
-|[CBaseTabbedPane::CanSetCaptionTextToTabName](#cansetcaptiontexttotabname)|Sekmeli bölmesi için açıklama yazısını etkin sekme aynı metni görüntüleyip görüntülemeyeceğini belirler.|
-|[CBaseTabbedPane::ConvertToTabbedDocument](#converttotabbeddocument)|(Geçersiz kılmaları [CDockablePane::ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument).)|
-|[CBaseTabbedPane::DetachPane](#detachpane)|Bir veya daha fazla yerleştirilebilir bölmeleri MDI sekmeli belgeye dönüştürür.|
-|[CBaseTabbedPane::EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname)|Etkinleştirir veya sekmeli bölme etkin sekmede etiket metni ile açıklamalı alt yazı metni eşitlemek yeteneği devre dışı bırakır.|
-|[CBaseTabbedPane::FillDefaultTabsOrderArray](#filldefaulttabsorderarray)|İç sekme sırası varsayılan durumuna geri yükler.|
-|[CBaseTabbedPane::FindBarByTabNumber](#findbarbytabnumber)|Sekmesi sekmesini sıfır tabanlı dizine göre tanımlandığında bir sekmede bulunduğu bölme döndürür.|
+|[CBaseTabbedPane:: AddTab](#addtab)|Sekmeli bölmeye yeni bir sekme ekler.|
+|[CBaseTabbedPane:: AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)|Boş bir sekmeli bölmenin yok edilip edilmeyeceğini belirtir.|
+|[CBaseTabbedPane:: Applyrestoredtabınfo](#applyrestoredtabinfo)|Kayıt defterinden bir sekmeli bölmeye yüklenen sekme ayarlarını uygular.|
+|[CBaseTabbedPane:: CanFloat](#canfloat)|Bölmenin kayıp kayamayacağını belirler. ( [CBasePane:: CanFloat](../../mfc/reference/cbasepane-class.md#canfloat)) geçersiz kılar.|
+|[CBaseTabbedPane:: CanSetCaptionTextToTabName](#cansetcaptiontexttotabname)|Sekmeli bölme başlığının etkin sekmeyle aynı metni görüntüleyip görüntülemeyeceği belirler.|
+|[CBaseTabbedPane:: ConvertToTabbedDocument](#converttotabbeddocument)|( [CDockablePane:: ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument)geçersiz kılar.)|
+|[CBaseTabbedPane::D etachPane](#detachpane)|Bir veya daha fazla yerleştirilebilir bölmesini MDI sekmeli belgelerine dönüştürür.|
+|[CBaseTabbedPane:: EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname)|Sekmeli bölmenin açıklamalı alt yazı metnini etkin sekmesindeki etiket metniyle eşitlemesini sağlar veya devre dışı bırakır.|
+|[CBaseTabbedPane:: FillDefaultTabsOrderArray](#filldefaulttabsorderarray)|İç sekme sırasını varsayılan durumuna geri yükler.|
+|[CBaseTabbedPane:: FindBarByTabNumber](#findbarbytabnumber)|Sekme, sıfır tabanlı sekme dizini tarafından tanımlandığında bir sekmede bulunan bir bölmeyi döndürür.|
 |||
-|[CBaseTabbedPane::FindPaneByID](#findpanebyid)|Bölmesinde kimliğine göre tanımlanan bir bölme döndürür|
-|[CBaseTabbedPane::FloatTab](#floattab)|Bölmeyi şu anda çıkarılabilir bir sekmede yer alıyorsa ancak yalnızca bir bölme kaydırır.|
-|[CBaseTabbedPane::GetDefaultTabsOrder](#getdefaulttabsorder)|Varsayılan sekme sırasını bölmesinde döndürür.|
-|[CBaseTabbedPane::GetFirstVisibleTab](#getfirstvisibletab)|İlk görüntülenen sekme için bir işaretçi alır.|
-|[CBaseTabbedPane::GetMinSize](#getminsize)|Bölme boyutu izin verilen en düşük alır. (Geçersiz kılmaları [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|
-|[CBaseTabbedPane::GetPaneIcon](#getpaneicon)|Bölmesi simge için bir tanıtıcı döndürür. (Geçersiz kılmaları [CBasePane::GetPaneIcon](../../mfc/reference/cbasepane-class.md#getpaneicon).)|
-|[CBaseTabbedPane::GetPaneList](#getpanelist)|Sekmeli bölmesinde bulunan bölmeleri listesini döndürür.|
-|[CBaseTabbedPane::GetTabArea](#gettabarea)|Üst ve alt sekmesinde alanlar için sınırlayıcı dikdörtgenler döndürür.|
-|[CBaseTabbedPane::GetTabsNum](#gettabsnum)|Bir sekme penceresinde sekmeleri sayısını döndürür.|
-|[CBaseTabbedPane::GetUnderlyingWindow](#getunderlyingwindow)|Temel alınan (Sarmalanan) sekmesi penceresi alır.|
-|[CBaseTabbedPane::GetVisibleTabsNum](#getvisibletabsnum)|Görüntülenen sekmeleri sayısını döndürür.|
-|[CBaseTabbedPane::HasAutoHideMode](#hasautohidemode)|Sekmeli bölme otomatik gizleme moduna geçiş olup olmadığını belirler.|
-|[CBaseTabbedPane::IsHideSingleTab](#ishidesingletab)|Bir sekme görüntülenen yalnızca sekmeli bölme gizli olup olmadığını belirler.|
+|[CBaseTabbedPane:: Findbölmesi Byıd](#findpanebyid)|Bölme KIMLIĞI tarafından tanımlanan bir bölmeyi döndürür.|
+|[CBaseTabbedPane:: FloatTab](#floattab)|Bir bölmeyi, ancak yalnızca bölme şu anda çıkarılabilir bir sekmede bulunuyorsa kayar.|
+|[CBaseTabbedPane:: GetDefaultTabsOrder](#getdefaulttabsorder)|Bölmedeki sekmelerin varsayılan sırasını döndürür.|
+|[CBaseTabbedPane:: GetFirstVisibleTab](#getfirstvisibletab)|İlk görüntülenmiş sekmeye bir işaretçi alır.|
+|[CBaseTabbedPane:: GetMinSize](#getminsize)|Bölme için izin verilen en küçük boyutu alır. ( [CPane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize).) öğesini geçersiz kılar|
+|[CBaseTabbedPane:: GetPaneIcon](#getpaneicon)|Bölme simgesine bir tanıtıcı döndürür. ( [CBasePane:: GetPaneIcon](../../mfc/reference/cbasepane-class.md#getpaneicon).) öğesini geçersiz kılar|
+|[CBaseTabbedPane:: Getbölmesi listesi](#getpanelist)|Sekmeli bölmedeki bölmeler listesini döndürür.|
+|[CBaseTabbedPane:: GetTabArea](#gettabarea)|Üst ve alt sekme alanlarının sınırlayıcı dikdörtgenlerini döndürür.|
+|[CBaseTabbedPane:: GetTabsNum](#gettabsnum)|Sekme penceresindeki sekmelerin sayısını döndürür.|
+|[CBaseTabbedPane:: GetUnderlyingWindow](#getunderlyingwindow)|Temel alınan (kaydırılan) sekme penceresini alır.|
+|[CBaseTabbedPane:: GetVisibleTabsNum](#getvisibletabsnum)|Görüntülenmiş sekmelerin sayısını döndürür.|
+|[CBaseTabbedPane:: HasAutoHideMode](#hasautohidemode)|Sekmeli bölmenin otomatik gizleme moduna geçiş yapıp yapamayacağını belirler.|
+|[CBaseTabbedPane:: ıshidesingletab](#ishidesingletab)|Yalnızca bir sekme görüntüleniyorsa sekmeli bölmenin gizlenip gizlenmeyeceğini belirler.|
 |`CBaseTabbedPane::LoadSiblingPaneIDs`|Serileştirme sırasında dahili olarak kullanılır.|
-|[CBaseTabbedPane::RecalcLayout](#recalclayout)|Düzen bölmesi bilgilerini yeniden hesaplar. (Geçersiz kılmaları [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|
-|[CBaseTabbedPane::RemovePane](#removepane)|Bir bölme sekmeli bölmesinden kaldırır.|
+|[CBaseTabbedPane:: RecalcLayout](#recalclayout)|Bölmenin düzen bilgilerini yeniden hesaplar. ( [CPane:: RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).) öğesini geçersiz kılar|
+|[CBaseTabbedPane:: RemovePane](#removepane)|Sekmeli bölmeden bir bölmeyi kaldırır.|
 |`CBaseTabbedPane::SaveSiblingBarIDs`|Serileştirme sırasında dahili olarak kullanılır.|
-|`CBaseTabbedPane::Serialize`|(Geçersiz kılmaları [CDockablePane::Serialize](cdockablepane-class.md).)|
+|`CBaseTabbedPane::Serialize`|( [CDockablePane:: serileştirme](cdockablepane-class.md)geçersiz kılar.)|
 |`CBaseTabbedPane::SerializeTabWindow`|Serileştirme sırasında dahili olarak kullanılır.|
-|[CBaseTabbedPane::SetAutoDestroy](#setautodestroy)|Sekmeli denetim çubuğu otomatik olarak edileceği olup olmadığını belirler.|
-|[CBaseTabbedPane::SetAutoHideMode](#setautohidemode)|Yerleştirme bölmesi arasında görüntülenen değiştirir ve otomatik gizleme modu. (Geçersiz kılmaları [CDockablePane::SetAutoHideMode](../../mfc/reference/cdockablepane-class.md#setautohidemode).)|
-|[CBaseTabbedPane::ShowTab](#showtab)|Bir sekme gizler veya gösterir.|
+|[CBaseTabbedPane:: SetAutoDestroy](#setautodestroy)|Sekmeli denetim çubuğunun otomatik olarak yok edileceği olup olmayacağını belirler.|
+|[CBaseTabbedPane:: SetAutoHideMode](#setautohidemode)|Yerleştirme bölmesini, görüntülenmiş ve otomatik gizleme modu arasında değiştirir. ( [CDockablePane:: SetAutoHideMode](../../mfc/reference/cdockablepane-class.md#setautohidemode)'u geçersiz kılar.)|
+|[CBaseTabbedPane:: ShowTab](#showtab)|Bir sekmeyi gösterir veya gizler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, soyut bir sınıf olan ve örnekleri oluşturulamaz. Sekmeli bölmelerde her tür için ortak olan hizmetlere uygular.
+Bu sınıf, soyut bir sınıftır ve örneklenemez. Her türlü sekmeli bölme için ortak olan hizmetleri uygular.
 
-Şu anda iki türetilmiş sekmeli bölme sınıf kitaplığı içerir: [CTabbedPane sınıfı](../../mfc/reference/ctabbedpane-class.md) ve [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md).
+Şu anda, kitaplık iki türetilmiş sekmeli bölme sınıfı içerir: [CTabbedPane sınıfı](../../mfc/reference/ctabbedpane-class.md) ve [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md).
 
-A `CBaseTabbedPane` nesne için bir işaretçi sarar bir [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md) nesne. [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md) sekmeli bölme alt penceresi daha sonra olur.
+`CBaseTabbedPane` nesnesi bir [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md) nesnesine bir işaretçi sarmalar. [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md) daha sonra sekmeli bölmenin bir alt penceresi haline gelir.
 
-Sekmeli bölmelerde oluşturma hakkında daha fazla bilgi için bkz. [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md), [CTabbedPane sınıfı](../../mfc/reference/ctabbedpane-class.md), ve [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md).
+Sekmeli bölmeler oluşturma hakkında daha fazla bilgi için bkz. [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md), [CTabbedPane sınıfı](../../mfc/reference/ctabbedpane-class.md)ve [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -153,11 +153,11 @@ Sekmeli bölmelerde oluşturma hakkında daha fazla bilgi için bkz. [CDockableP
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxBaseTabbedPane.h
+**Üstbilgi:** afxBaseTabbedPane. h
 
-##  <a name="addtab"></a>  CBaseTabbedPane::AddTab
+##  <a name="addtab"></a>CBaseTabbedPane:: AddTab
 
-Yeni bir sekme sekmeli bir bölmeye ekler.
+Sekmeli bölmeye yeni bir sekme ekler.
 
 ```
 virtual BOOL AddTab(
@@ -170,28 +170,28 @@ virtual BOOL AddTab(
 ### <a name="parameters"></a>Parametreler
 
 *pNewBar*<br/>
-[out içinde] Bölmesine eklemek için bir işaretçi. Bu yöntem çağrısından sonra bu işaretçinin geçersiz hale gelebilir. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+[in, out] Eklenecek bölmeye yönelik bir işaretçi. Bu yöntemi çağırdıktan sonra bu işaretçi geçersiz hale gelebilir. Daha fazla bilgi için, açıklamalar bölümüne bakın.
 
 *bVisible*<br/>
-[in] Sekme görünür yapmak için TRUE; Aksi takdirde FALSE.
+'ndaki Sekmeyi görünür hale getirmek için TRUE; Aksi takdirde, FALSE.
 
 *bSetActive*<br/>
-[in] Etkin sekmede sekmesini yapmak için TRUE; Aksi takdirde FALSE.
+'ndaki Sekmeyi etkin sekmesine getirmek için TRUE; Aksi takdirde, FALSE.
 
-*bDetachable*<br/>
-[in] Sekme çıkarılabilir yapmak için TRUE; Aksi takdirde FALSE.
+*Ayrılabilir*<br/>
+'ndaki Sekmeyi çıkarılabilir hale getirmek için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE bölmesinde bir sekme başarıyla eklendi ve işlemde yok edilmez. Eklenen bölmesinde bir nesne türü ise FALSE `CBaseTabbedPane`. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+Bölme başarıyla bir sekme olarak eklendiyse ve işlemde yok edilmediyse TRUE. Eklenmekte olan bölme `CBaseTabbedPane`türünde bir nesne ise FALSE. Daha fazla bilgi için, açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölme sekmeli bir bölmeye yeni bir sekmede olarak eklemek için bu yöntemi çağırın. Varsa *pNewBar* türündeki bir nesneye işaret `CBaseTabbedPane`, tüm sekmeler sekmeli bölmesinden kopyalanır ve ardından *pNewBar* yok. Bu nedenle, *pNewBar* geçersiz bir işaretçi alır ve kullanılmamalıdır.
+Sekmeli bir bölmeye yeni sekme olarak bir bölme eklemek için bu yöntemi çağırın. *Pnewbar* `CBaseTabbedPane`türünde bir nesneye işaret ediyorsa, tüm sekmeleri sekmeli bölmeye kopyalanır ve sonra *pNewBar* yok edilir. Bu nedenle, *pNewBar* geçersiz bir işaretçi haline gelir ve kullanılmamalıdır.
 
-##  <a name="allowdestroyemptytabbedpane"></a>  CBaseTabbedPane::AllowDestroyEmptyTabbedPane
+##  <a name="allowdestroyemptytabbedpane"></a>CBaseTabbedPane:: AllowDestroyEmptyTabbedPane
 
-Boş bir sekmeli bölme yok edilebilir olup olmadığını belirtir.
+Boş bir sekmeli bölmenin yok edilip edilmeyeceğini belirtir.
 
 ```
 virtual BOOL AllowDestroyEmptyTabbedPane() const;
@@ -199,15 +199,15 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Boş bir sekmeli bölme yok edilebilir TRUE; Aksi takdirde FALSE. Varsayılan uygulama her zaman TRUE değerini döndürür.
+Boş bir sekmeli bölme yok edilebiliyorsa TRUE; Aksi takdirde, FALSE. Varsayılan uygulama her zaman TRUE değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boş bir sekmeli bölme yok edileceği izin verilmiyorsa framework bölmesi yerine gizler.
+Boş bir sekmeli bölmenin yok edilmesi izin verilmiyorsa, çerçeve bunun yerine bölmeyi gizler.
 
-##  <a name="applyrestoredtabinfo"></a>  CBaseTabbedPane::ApplyRestoredTabInfo
+##  <a name="applyrestoredtabinfo"></a>CBaseTabbedPane:: Applyrestoredtabınfo
 
-Sekme ayarları kayıt defterinden yükler ve bunları sekmeli bir bölmeye uygular.
+Kayıt defterinden sekme ayarlarını yükler ve sekmeli bir bölmeye uygular.
 
 ```
 virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
@@ -216,15 +216,15 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bUseTabIndexes*<br/>
-[in] Bu parametre, framework tarafından dahili olarak kullanılır.
+'ndaki Bu parametre, Framework tarafından dahili olarak kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme durumu bilgilerini kayıt defterinden yüklediğinde bu yöntem framework tarafından çağırılır. Yöntemi, sekme sırasını ve sekmeli bölme için sekmesinde adları hakkında bilgi alır.
+Bu yöntem, kayıt defterinden takma durum bilgilerini yeniden yüklediğinde Framework tarafından çağırılır. Yöntemi sekmeli bölme için sekme sırası ve sekme adları hakkında bilgi edinir.
 
-##  <a name="canfloat"></a>  CBaseTabbedPane::CanFloat
+##  <a name="canfloat"></a>CBaseTabbedPane:: CanFloat
 
-Sekmeli bölme kaydırabilirsiniz olup olmadığını belirtir.
+Sekmeli bölmenin kayıp kayamayacağını belirtir.
 
 ```
 virtual BOOL CanFloat() const;
@@ -232,11 +232,11 @@ virtual BOOL CanFloat() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmesinde kaydırabilirsiniz TRUE; Aksi takdirde FALSE.
+Bölme kaybiliyorsa, doğru; Aksi takdirde, FALSE.
 
-##  <a name="cansetcaptiontexttotabname"></a>  CBaseTabbedPane::CanSetCaptionTextToTabName
+##  <a name="cansetcaptiontexttotabname"></a>CBaseTabbedPane:: CanSetCaptionTextToTabName
 
-Sekmeli bölmesi için açıklama yazısını etkin sekme aynı metni görüntüleyip görüntülemeyeceğini belirler.
+Sekmeli bölme başlığının etkin sekmeyle aynı metni görüntüleyip görüntülemeyeceği belirler.
 
 ```
 virtual BOOL CanSetCaptionTextToTabName() const;
@@ -244,15 +244,15 @@ virtual BOOL CanSetCaptionTextToTabName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sekmeli bölme açıklamalı alt yazı metni etkin sekmede metne olarak ayarlanmışsa TRUE; Aksi takdirde FALSE.
+Sekmeli bölmenin açıklamalı alt yazı metni etkin sekmenin metni olarak ayarlandıysa, doğru. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi, metin sekmeli bölme açıklamalı alt yazı çoğaltmaların üzerinde etkin sekmede etiketi gösterilip belirlemek için kullanılır. Etkinleştirebilir veya çağırarak bu işlevi devre dışı [CBaseTabbedPane::EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname).
+Yöntemi, sekmeli bölme başlığı üzerinde görünen metnin etkin sekmenin etiketini çoğaltmasının gerekip gerekmediğini belirlemekte kullanılır. [CBaseTabbedPane:: EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname)çağırarak bu işlevselliği etkinleştirebilir veya devre dışı bırakabilirsiniz.
 
-##  <a name="converttotabbeddocument"></a>  CBaseTabbedPane::ConvertToTabbedDocument
+##  <a name="converttotabbeddocument"></a>CBaseTabbedPane:: ConvertToTabbedDocument
 
-Bir veya daha fazla yerleştirilebilir bölmeleri MDI sekmeli belgeye dönüştürür.
+Bir veya daha fazla yerleştirilebilir bölmesini MDI sekmeli belgelerine dönüştürür.
 
 ```
 virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
@@ -260,12 +260,12 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bActiveTabOnly*<br/>
-[in] Sekmeli bir bölmeye dönüştürdüğünüzde, yalnızca etkin sekmede dönüştürmek için true değerini belirtin. Bölmedeki tüm sekmeleri dönüştürmek için FALSE belirtin.
+*yalnızca bactivetab*<br/>
+'ndaki Sekmeli bir bölmeyi dönüştürdüğünüzde, yalnızca etkin sekmesini dönüştürmek için TRUE değerini belirtin. bölmedeki tüm sekmeleri dönüştürmek için FALSE belirtin.
 
-##  <a name="detachpane"></a>  CBaseTabbedPane::DetachPane
+##  <a name="detachpane"></a>CBaseTabbedPane::D etachPane
 
-Sekmeli bölme bölmesinden ayırır.
+Sekmeli bölmeden bir bölmeyi ayırır.
 
 ```
 virtual BOOL DetachPane(
@@ -276,22 +276,22 @@ virtual BOOL DetachPane(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[in] Bölmesinde ayırmak için işaretçi.
+'ndaki Ayrılmak için bölmenin işaretçisi.
 
 *bHide*<br/>
-[in] Ayrılmış sonra framework bölmesini gizler olup olmadığını belirten Boole parametresi.
+'ndaki Çerçevenin ayrıldıktan sonra bölmeyi gizleyemeyeceğini belirten Boolean parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Framework başarıyla bölmeyi ayırır, TRUE; FALSE ise *pBar* boş ise veya sekmeli bölmesinde değil bir bölme ifade eder.
+Framework bölmeyi başarıyla ayırır; *PBar* null ise veya sekmeli bölmede olmayan bir bölmeyi ifade eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework ayrılmış bölmesinde mümkünse kayar. Daha fazla bilgi için [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).
+Çerçeve, mümkünse ayrılan bölmeyi float. Daha fazla bilgi için bkz. [CBasePane:: CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).
 
-##  <a name="enablesetcaptiontexttotabname"></a>  CBaseTabbedPane::EnableSetCaptionTextToTabName
+##  <a name="enablesetcaptiontexttotabname"></a>CBaseTabbedPane:: EnableSetCaptionTextToTabName
 
-Etkinleştirir veya sekmeli bölme etkin sekmede etiket metni ile açıklamalı alt yazı metni eşitlemek yeteneği devre dışı bırakır.
+Sekmeli bölmenin açıklamalı alt yazı metnini etkin sekmesindeki etiket metniyle eşitlemesini sağlar veya devre dışı bırakır.
 
 ```
 virtual void EnableSetCaptionTextToTabName(BOOL bEnable);
@@ -299,12 +299,12 @@ virtual void EnableSetCaptionTextToTabName(BOOL bEnable);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-[in] Sekmeli Bölmesi Başlığı etkin sekme açıklamalı eşitlemek için TRUE; Aksi takdirde FALSE.
+*bEnable*<br/>
+'ndaki Sekmeli bölme başlığını etkin sekme başlığı ile senkronize etmek için TRUE; Aksi takdirde, FALSE.
 
-##  <a name="filldefaulttabsorderarray"></a>  CBaseTabbedPane::FillDefaultTabsOrderArray
+##  <a name="filldefaulttabsorderarray"></a>CBaseTabbedPane:: FillDefaultTabsOrderArray
 
-İç sekme sırası varsayılan durumuna geri yükler.
+İç sekme sırasını varsayılan durumuna geri yükler.
 
 ```
 void FillDefaultTabsOrderArray();
@@ -312,11 +312,11 @@ void FillDefaultTabsOrderArray();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework bir Outlook Çubuğu bir ilk durumuna geri yükler. Bu yöntem çağrılır.
+Bu yöntem, Framework bir Outlook çubuğunu bir başlangıç durumuna geri yüklediğinde çağrılır.
 
-##  <a name="findpanebyid"></a>  CBaseTabbedPane::FindPaneByID
+##  <a name="findpanebyid"></a>CBaseTabbedPane:: Findbölmesi Byıd
 
-Bölmesinde kimliği tarafından tanımlanan bölme döndürür
+Bölme KIMLIĞI tarafından tanımlanan bir bölmeyi döndürür.
 
 ```
 virtual CWnd* FindPaneByID(UINT uBarID);
@@ -325,19 +325,19 @@ virtual CWnd* FindPaneByID(UINT uBarID);
 ### <a name="parameters"></a>Parametreler
 
 *uBarID*<br/>
-[in] Bulunacak bölmesinde Kimliğini belirtir.
+'ndaki Bulunacak bölmenin KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi, bulunmadıysa bölmesine; Aksi takdirde NULL.
+Bulunursa bölme için bir işaretçi; Aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tüm sekmeler bölmesinde karşılaştırır ve tarafından belirtilen Kimliğe sahip bir döndürür *uBarID* parametresi.
+Bu yöntem, bölmedeki tüm sekmeleri karşılaştırır ve *uBarID* parametresi tarafından belirtilen kimliğe sahip olanı döndürür.
 
-##  <a name="findbarbytabnumber"></a>  CBaseTabbedPane::FindBarByTabNumber
+##  <a name="findbarbytabnumber"></a>CBaseTabbedPane:: FindBarByTabNumber
 
-Bir sekmede bulunduğu bir bölme döndürür.
+Bir sekmede bulunan bir bölmeyi döndürür.
 
 ```
 virtual CWnd* FindBarByTabNumber(
@@ -348,22 +348,22 @@ virtual CWnd* FindBarByTabNumber(
 ### <a name="parameters"></a>Parametreler
 
 *nTabNum*<br/>
-[in] Almak için sekmesinde sıfır tabanlı dizini belirtir.
+'ndaki Alınacak sekmenin sıfır tabanlı dizinini belirtir.
 
 *bGetWrappedBar*<br/>
-[in] Temel alınan (Sarmalanan) pencereyi bölmesinin bölmesi yerine döndürmek için TRUE; Aksi durumda FALSE. Bu, yalnızca türetilmiş bölmelere geçerlidir [CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md).
+'ndaki Bölmenin kendisi yerine, bölmenin temel (kaydırılan) penceresini döndürmek için TRUE; Aksi halde yanlış. Bu yalnızca [CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md)'dan türetilmiş bölmeler için geçerlidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmesinde bulunursa, geçerli bir işaretçi Aranan bölmesine verilir; Aksi takdirde NULL.
+Bölmesi bulunursa, aranmakta olan bölmeye yönelik geçerli bir işaretçi döndürülür; Aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından belirtilen sekmesinde bulunan bölmesinde almak için bu yöntemi çağırın *nTabNum* parametresi.
+*NTabNum* parametresi tarafından belirtilen sekmede bulunan bölmeyi almak için bu yöntemi çağırın.
 
-##  <a name="floattab"></a>  CBaseTabbedPane::FloatTab
+##  <a name="floattab"></a>CBaseTabbedPane:: FloatTab
 
-Bölmeyi şu anda çıkarılabilir bir sekmede yer alıyorsa ancak yalnızca bir bölme kaydırır.
+Bir bölmeyi, ancak yalnızca bölme şu anda çıkarılabilir bir sekmede bulunuyorsa kayar.
 
 ```
 virtual BOOL FloatTab(
@@ -376,30 +376,30 @@ virtual BOOL FloatTab(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[out içinde] Kayan nokta bölmesi için bir işaretçi.
+[in, out] Kaydırma için bölmeye yönelik bir işaretçi.
 
-*nTabID*<br/>
-[in] Kayan nokta için sekmesinde sıfır tabanlı dizini belirtir.
+*Ntabıd*<br/>
+'ndaki Kayan sekmenin sıfır tabanlı dizinini belirtir.
 
-*dockMethod*<br/>
-[in] Bölmesinde float yapmak için kullanılacak yöntemi belirtir. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+*Dockyöntemi*<br/>
+'ndaki Bölmeyi yüzer hale getirmek için kullanılacak yöntemi belirtir. Daha fazla bilgi için, açıklamalar bölümüne bakın.
 
 *bHide*<br/>
-[in] Kayan önce bölmesinde gizlemek için TRUE; Aksi takdirde FALSE.
+'ndaki Kayan bölmeden gizlemek için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmesinde kaydırıldı TRUE; Aksi takdirde FALSE.
+Bölme katalıyorsa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda bir çıkarılabilir sekmesinde bulunan bir bölme kaydırmak için bu yöntemi çağırın.
+Şu anda çıkarılabilir bir sekmede bulunan bir bölmeyi kaydırmak için bu yöntemi çağırın.
 
-Bir bölme programlı olarak ayırmak istediğinizde, için DM_SHOW belirtin *dockMethod* parametresi. Burada, kaydırıldı daha önce aynı konumda bölmesinde kaydırmak olarak DM_DBL_CLICK belirtin *dockMethod* parametresi.
+Bir bölmeyi programlı bir şekilde ayırmak istiyorsanız, *dockMethod* parametresi için DM_SHOW belirtin. Bölmeyi daha önce kaydırılan aynı konumda kaydırmak istiyorsanız, *dockMethod* parametresi olarak DM_DBL_CLICK belirtin.
 
-##  <a name="getdefaulttabsorder"></a>  CBaseTabbedPane::GetDefaultTabsOrder
+##  <a name="getdefaulttabsorder"></a>CBaseTabbedPane:: GetDefaultTabsOrder
 
-Varsayılan sekme sırasını bölmesinde döndürür.
+Bölmedeki sekmelerin varsayılan sırasını döndürür.
 
 ```
 const CArray<int,int>& GetDefaultTabsOrder();
@@ -407,15 +407,15 @@ const CArray<int,int>& GetDefaultTabsOrder();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CArray` nesnesini bölmede sekme varsayılan sırayı belirtir.
+Bölmedeki sekmelerin varsayılan sırasını belirten `CArray` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir Outlook Çubuğu bir ilk duruma sıfırlandığında framework bu yöntemi çağırır.
+Bir Outlook çubuğu bir başlangıç durumuna sıfırlandığında Framework bu yöntemi çağırır.
 
-##  <a name="getfirstvisibletab"></a>  CBaseTabbedPane::GetFirstVisibleTab
+##  <a name="getfirstvisibletab"></a>CBaseTabbedPane:: GetFirstVisibleTab
 
-İlk görüntülenen sekme için bir işaretçi alır.
+İlk görüntülenmiş sekmeye bir işaretçi alır.
 
 ```
 virtual CWnd* GetFirstVisibleTab(int& iTabNum);
@@ -423,33 +423,16 @@ virtual CWnd* GetFirstVisibleTab(int& iTabNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*iTabNum*<br/>
-[in] Bir tamsayının bir başvuru. Bu yöntem ilk görüntülenen sekmeyi sıfır tabanlı dizini bu parametresi veya -1 görüntülenen Hayır ise sekmesinde bulunan yazar.
+*ıtabnum*<br/>
+'ndaki Tamsayıya bir başvuru. Bu yöntem, ilk görüntülenmiş sekmenin sıfır tabanlı dizinini bu parametreye yazar veya görüntülenmediğinde-1.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ilk görüntülenen sekmesini; bir işaretçi Aksi takdirde NULL.
+Başarılı olursa, ilk görüntülenmiş sekmeye yönelik bir işaretçi; Aksi takdirde, NULL.
 
-##  <a name="getminsize"></a>  CBaseTabbedPane::GetMinSize
+##  <a name="getminsize"></a>CBaseTabbedPane:: GetMinSize
 
-Bölme boyutu izin verilen en düşük alır.
-
-```
-virtual void GetMinSize(CSize& size) const;
-```
-
-### <a name="parameters"></a>Parametreler
-
-*Boyutu*<br/>
-[out] A `CSize` boyutu izin verilen en düşük ile doldurulan bir nesne.
-
-### <a name="remarks"></a>Açıklamalar
-
-Minimum bölme boyutlarda tutarlı işleme etkinse ( [CPane::m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *boyutu* etkin sekme boyutu izin verilen en düşük ile doldurulur. Aksi takdirde, *boyutu* dönüş değeriyle doldurulur [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).
-
-##  <a name="getpaneicon"></a>  CBaseTabbedPane::GetPaneIcon
-
-Bölme boyutu izin verilen en düşük alır.
+Bölme için izin verilen en küçük boyutu alır.
 
 ```
 virtual void GetMinSize(CSize& size) const;
@@ -457,16 +440,33 @@ virtual void GetMinSize(CSize& size) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-[out] A `CSize` boyutu izin verilen en düşük ile doldurulan bir nesne.
+*boyutla*<br/>
+dışı İzin verilen en küçük boyut ile doldurulmuş `CSize` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Minimum bölme boyutlarda tutarlı işleme etkinse ( [CPane::m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *boyutu* etkin sekme boyutu izin verilen en düşük ile doldurulur. Aksi takdirde, *boyutu* dönüş değeriyle doldurulur [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).
+Minimum bölme boyutlarının tutarlılığını işleme etkinse ( [CPane:: m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *Boyut* , etkin sekme için izin verilen en düşük boyutla doldurulur. Aksi halde, *Boyut* [CPane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize)dönüş değeri ile doldurulur.
 
-##  <a name="getpanelist"></a>  CBaseTabbedPane::GetPaneList
+##  <a name="getpaneicon"></a>CBaseTabbedPane:: GetPaneIcon
 
-Sekmeli bölmesinde bulunan bölmeleri listesini döndürür.
+Bölme için izin verilen en küçük boyutu alır.
+
+```
+virtual void GetMinSize(CSize& size) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*boyutla*<br/>
+dışı İzin verilen en küçük boyut ile doldurulmuş `CSize` nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Minimum bölme boyutlarının tutarlılığını işleme etkinse ( [CPane:: m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)), *Boyut* , etkin sekme için izin verilen en düşük boyutla doldurulur. Aksi halde, *Boyut* [CPane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize)dönüş değeri ile doldurulur.
+
+##  <a name="getpanelist"></a>CBaseTabbedPane:: Getbölmesi listesi
+
+Sekmeli bölmedeki bölmeler listesini döndürür.
 
 ```
 virtual void GetPaneList(
@@ -476,15 +476,15 @@ virtual void GetPaneList(
 
 ### <a name="parameters"></a>Parametreler
 
-*lst*<br/>
-[out] A `CObList` sekmeli bölmesinde bulunan bölmelerin ile doldurulur.
+*LST*<br/>
+dışı Sekmeli bölmedeki bölmeler ile doldurulmuş bir `CObList`.
 
 *pRTCFilter*<br/>
-[in] NULL değilse, döndürülen liste belirtilen çalışma zamanı sınıfının olan bölmeleri içerir.
+'ndaki NULL değilse, döndürülen listede yalnızca belirtilen çalışma zamanı sınıfının bölmeleri bulunur.
 
-##  <a name="gettabarea"></a>  CBaseTabbedPane::GetTabArea
+##  <a name="gettabarea"></a>CBaseTabbedPane:: GetTabArea
 
-Üst ve alt sekmesinde alanlar için sınırlayıcı dikdörtgenler döndürür.
+Üst ve alt sekme alanlarının sınırlayıcı dikdörtgenlerini döndürür.
 
 ```
 virtual void GetTabArea(
@@ -495,18 +495,18 @@ virtual void GetTabArea(
 ### <a name="parameters"></a>Parametreler
 
 *rectTabAreaTop*<br/>
-[out] Üst sekme alanının ekran koordinatları alır.
+dışı Üst sekme alanının ekran koordinatlarını alır.
 
 *rectTabAreaBottom*<br/>
-[out] Ekran koordinatları alt sekme alanının alır.
+dışı Alt sekme alanının ekran koordinatlarını alır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekran koordinatları, sekme üst ve alt alanlar için sınırlayıcı dikdörtgenler belirlemek için bu yöntemi çağırın.
+Üst ve alt sekme alanlarının, Ekran koordinatlarındaki sınırlayıcı dörtgenler belirlenmesi için bu yöntemi çağırın.
 
-##  <a name="gettabsnum"></a>  CBaseTabbedPane::GetTabsNum
+##  <a name="gettabsnum"></a>CBaseTabbedPane:: GetTabsNum
 
-Bir sekme penceresinde sekmeleri sayısını döndürür.
+Sekme penceresindeki sekmelerin sayısını döndürür.
 
 ```
 virtual int GetTabsNum() const;
@@ -514,11 +514,11 @@ virtual int GetTabsNum() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sekmeli bölme sekmelerde sayısı.
+Sekmeli bölmedeki sekmelerin sayısı.
 
-##  <a name="getunderlyingwindow"></a>  CBaseTabbedPane::GetUnderlyingWindow
+##  <a name="getunderlyingwindow"></a>CBaseTabbedPane:: GetUnderlyingWindow
 
-Temel alınan (Sarmalanan) sekmesi penceresi alır.
+Temel alınan (kaydırılan) sekme penceresini alır.
 
 ```
 virtual CMFCBaseTabCtrl* GetUnderlyingWindow();
@@ -526,11 +526,11 @@ virtual CMFCBaseTabCtrl* GetUnderlyingWindow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel alınan sekmesi penceresi için bir işaretçi.
+Temel sekme penceresine yönelik bir işaretçi.
 
-##  <a name="getvisibletabsnum"></a>  CBaseTabbedPane::GetVisibleTabsNum
+##  <a name="getvisibletabsnum"></a>CBaseTabbedPane:: GetVisibleTabsNum
 
-Görünen sekmeler sayısını döndürür.
+Görünür sekmelerin sayısını döndürür.
 
 ```
 virtual int GetVisibleTabsNum() const;
@@ -538,15 +538,15 @@ virtual int GetVisibleTabsNum() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Büyük veya sıfıra eşit olacak görünür sekme sayısı.
+Sıfırdan büyük veya sıfıra eşit olacak görünür sekmelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sekmeli bölmesinde görünen sekmeler sayısını belirlemek için bu yöntemi çağırın.
+Sekmeli bölmedeki görünür sekmelerin sayısını öğrenmek için bu yöntemi çağırın.
 
-##  <a name="hasautohidemode"></a>  CBaseTabbedPane::HasAutoHideMode
+##  <a name="hasautohidemode"></a>CBaseTabbedPane:: HasAutoHideMode
 
-Sekmeli bölme autohide moduna geçiş olup olmadığını belirler.
+Sekmeli bölmenin otomatik gizleme moduna geçirilip geçirilemeyeceğini belirler.
 
 ```
 virtual BOOL HasAutoHideMode() const;
@@ -554,15 +554,15 @@ virtual BOOL HasAutoHideMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Otomatik Gizle moduna bölmesinde değiştirilebilir TRUE; Aksi takdirde FALSE.
+Bölme otomatik gizleme moduna geçtiyseniz doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Otomatik Gizle modu devre dışı bırakılırsa, hiç pin düğmesini sekmeli bölme resim yazısını görüntülenir.
+Otomatik gizleme modu devre dışıysa sekmeli bölme başlığı üzerinde bir pin düğmesi gösterilmez.
 
-##  <a name="ishidesingletab"></a>  CBaseTabbedPane::IsHideSingleTab
+##  <a name="ishidesingletab"></a>CBaseTabbedPane:: ıshidesingletab
 
-Bir sekme görüntülenen yalnızca sekmeli bölme gizli olup olmadığını belirler.
+Yalnızca bir sekme görüntüleniyorsa sekmeli bölmenin gizlenip gizlenmeyeceğini belirler.
 
 ```
 virtual BOOL IsHideSingleTab() const;
@@ -570,15 +570,15 @@ virtual BOOL IsHideSingleTab() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek bir görünür sekme olduğunda sekmesi penceresi görüntülenmiyorsa TRUE; Aksi takdirde FALSE.
+Yalnızca bir görünür sekme olduğunda sekme penceresi gösterilmezse TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tek bir sekme açık olduğundan bölmesi görüntülenmiyorsa sekmeli bölme doğru şekilde çalışıp çalışmadığını belirlemek için bu yöntemi çağırabilirsiniz.
+Yalnızca bir sekme açık olduğundan bölme görüntülenmiyorsa, sekmeli bölmenin doğru çalışıp çalışmadığını anlamak için bu yöntemi çağırabilirsiniz.
 
-##  <a name="removepane"></a>  CBaseTabbedPane::RemovePane
+##  <a name="removepane"></a>CBaseTabbedPane:: RemovePane
 
-Bir bölme sekmeli bölmesinden kaldırır.
+Sekmeli bölmeden bir bölmeyi kaldırır.
 
 ```
 virtual BOOL RemovePane(CWnd* pBar);
@@ -587,19 +587,19 @@ virtual BOOL RemovePane(CWnd* pBar);
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[out içinde] Sekmeli bölmesinden kaldırmak için bölmesi için bir işaretçi.
+[in, out] Sekmeli bölmeden kaldırılacak bölmeye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sekmeli bölmesinden bölmesinde başarıyla kaldırıldıysa ve sekmeli bölme hala geçerliyse TRUE. Son bölmesinde sekmeli bölmesinden kaldırıldı ve edilmek için sekmeli bölme ise FALSE. Dönüş değeri FALSE ise, sekmeli bölme artık kullanmayın.
+Bölmesi sekmeli bölmeden başarıyla kaldırıldıysa ve sekmeli bölme hala geçerliyse TRUE. Sekmeli bölmeden son bölme kaldırılmışsa ve sekmeli bölme yok edilmek üzere olduğunda FALSE. Dönüş değeri FALSE ise, sekmeli bölmeyi daha fazla kullanmayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından belirtilen bölmesinde kaldırmak için bu yöntemi çağırın *pBar* parametresinden sekmeli bölme.
+Sekmeli bölmedeki *pBar* parametresi tarafından belirtilen bölmeyi kaldırmak için bu yöntemi çağırın.
 
-##  <a name="setautodestroy"></a>  CBaseTabbedPane::SetAutoDestroy
+##  <a name="setautodestroy"></a>CBaseTabbedPane:: SetAutoDestroy
 
-Sekmeli denetim çubuğu otomatik olarak edileceği olup olmadığını belirler.
+Sekmeli denetim çubuğunun otomatik olarak yok edileceği olup olmayacağını belirler.
 
 ```
 void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
@@ -608,15 +608,15 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bAutoDestroy*<br/>
-[in] Sekmeli bölme dinamik olarak oluşturulmuş ve yaşam süresi denetleme değil ise TRUE; Aksi takdirde FALSE.
+'ndaki Sekmeli bölme dinamik olarak oluşturulduysa ve süresini denetlemekken doğru. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayarlama sekmeli bir bölmeye dinamik olarak oluşturmak ve ömrü denetleme değil, doğru moda otomatik-yok. Otomatik yok modu ise TRUE, sekmeli bölme framework tarafından otomatik olarak edileceği.
+Dinamik olarak bir sekmeli bölme oluşturursanız ve ömrünü denetlemekken otomatik yok etme modunu doğru olarak ayarlayın. Otomatik yok etme modu TRUE ise, sekmeli bölme Framework tarafından otomatik olarak yok edilir.
 
-##  <a name="showtab"></a>  CBaseTabbedPane::ShowTab
+##  <a name="showtab"></a>CBaseTabbedPane:: ShowTab
 
-Bir sekme gizler veya gösterir.
+Bir sekmeyi gösterir veya gizler.
 
 ```
 virtual BOOL ShowTab(
@@ -629,28 +629,28 @@ virtual BOOL ShowTab(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[in] Göstermek veya gizlemek için bölmesi için bir işaretçi.
+'ndaki Göstermek veya gizlemek için bölmenin bir işaretçisi.
 
-*bBilgi Göster*<br/>
-[in] Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.
+*bShow*<br/>
+'ndaki Bölmeyi göstermek için TRUE; Bölmeyi gizlemek için FALSE.
 
 *bDelay*<br/>
-[in] Sekme düzenini ayarlama geciktirmek için TRUE; Aksi takdirde FALSE.
+'ndaki Sekme düzeninin ayarlanmasını geciktirmek için TRUE. Aksi takdirde, FALSE.
 
-*bActivate*<br/>
-[in] Etkin sekmede sekmesini yapmak için TRUE; Aksi takdirde FALSE.
+*Bacetkinleştir*<br/>
+'ndaki Sekmeyi etkin sekmesine getirmek için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sekmesinde gösterilen veya gizli başarıyla gerekiyorsa TRUE; Aksi takdirde FALSE.
+Sekme gösterildiyse veya başarıyla gizliyse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağırdığınızda bir bölmesinde gösterilen veya gizli, bağlı olarak değeri *bBilgi Göster* parametresi. Bir sekme gizleyebilir ve temel alınan sekme penceresinde görünür son sekmeyi olan sekmeli bölme gizlenir. Sekmeli bölme vardır, daha önce hiç sekmeleri görünür bir sekme gösterirse, gösterilir.
+Bu yöntemi çağırdığınızda, *bShow* parametresinin değerine bağlı olarak bir bölme gösterilir ya da gizlenir. Bir sekmeyi gizlediyseniz ve temel sekme penceresindeki son görünür sekme ise sekmeli bölme gizlenir. Daha önce hiç sekme görünmemiş bir sekme alırsanız sekmeli bölme gösterilir.
 
-##  <a name="recalclayout"></a>  CBaseTabbedPane::RecalcLayout
+##  <a name="recalclayout"></a>CBaseTabbedPane:: RecalcLayout
 
-Düzen bölmesi bilgilerini yeniden hesaplar.
+Bölmenin düzen bilgilerini yeniden hesaplar.
 
 ```
 virtual void RecalcLayout();
@@ -658,13 +658,13 @@ virtual void RecalcLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bölmesinde kayan, Mini çerçeve geçerli boyutunu bölmesi için framework bildirir.
+Bölme Eğer kayan ise, bu yöntem Framework 'ü, çerçeveyi mini çerçevenin geçerli boyutuna yeniden boyutlandırmasını bildirir.
 
-Bu yöntem, bölmesinde yerleştirilmişse, hiçbir şey yapmaz.
+Bölme yerleştirilmişse, bu yöntem hiçbir şey yapmaz.
 
-##  <a name="setautohidemode"></a>  CBaseTabbedPane::SetAutoHideMode
+##  <a name="setautohidemode"></a>CBaseTabbedPane:: SetAutoHideMode
 
-Sekmeli bölmesinde çıkarılabilir bölmeleri için modu ayarlar otomatik olarak gizle.
+Sekmeli bölmedeki ayrılabilir bölmeler için otomatik gizleme modunu ayarlar.
 
 ```
 virtual CMFCAutoHideToolBar* SetAutoHideMode(
@@ -677,28 +677,28 @@ virtual CMFCAutoHideToolBar* SetAutoHideMode(
 ### <a name="parameters"></a>Parametreler
 
 *bMode*<br/>
-[in] Otomatik gizleme modunu etkinleştirmek için TRUE; Normal yerleştirme modunu etkinleştirmek için FALSE.
+'ndaki Otomatik gizleme modunu etkinleştirmek için TRUE; Normal yerleştirme modunu etkinleştirmek için FALSE.
 
-*dwAlignment*<br/>
-[in] Oluşturulacak otomatik gizleme bölmesini hizalamasını belirtir. Olası değerler listesi için bkz. [CPane::MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment).
+*Dwhizalaması*<br/>
+'ndaki Oluşturulacak otomatik gizleme bölmesinin hizalamasını belirtir. Olası değerler listesi için bkz. [CPane:: MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment).
 
-*pCurrAutoHideBar*<br/>
-[out içinde] Geçerli otomatik gizleme araç için bir işaretçi. NULL olabilir.
+*Pcurrayutohidebar*<br/>
+[in, out] Geçerli otomatik gizleme araç çubuğuna bir işaretçi. NULL olabilir.
 
 *bUseTimer*<br/>
-[in] Otomatik gizleme etkin kullanıcı bölmesinde otomatik gizleme moduna geçiş yaptığında kullanın ya da bölmeyi hemen gizlemek için belirtir.
+'ndaki Kullanıcı bölmeyi otomatik gizleme moduna geçtiğinde ya da bölmeyi hemen gizlemek için otomatik gizleme efektinin kullanılıp kullanılmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hiçbir araç oluşturulursa otomatik gizleme modu veya NULL geçiş yaparken oluşturulan otomatik gizleme araç için bir işaretçi.
+Otomatik gizleme moduna geçiş yaparken oluşturulan otomatik gizleme araç çubuğuna yönelik bir işaretçi veya bir araç çubuğu oluşturulmadıysa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı sekmeli bölme otomatik gizleme modu veya normal yerleştirme moduna geçmek için pin düğmesini seçtiğinde framework bu yöntemi çağırır.
+Kullanıcı, sekmeli bölmeyi otomatik gizleme moduna veya normal yerleştirme moduna geçirmek için Sabitle düğmesini seçtiğinde, bu yöntemi çağırır.
 
-Otomatik gizleme modu sekmeli bölmesinde çıkarılabilir her bölme için ayarlanır. Çıkarılabilir olmayan bölmeleri göz ardı edilir. Daha fazla bilgi için [CMFCBaseTabCtrl::EnableTabDetach](../../mfc/reference/cmfcbasetabctrl-class.md#enabletabdetach).
+Sekmeli bölmedeki her bir ayrılabilir bölme için otomatik gizleme modu ayarlanır. Çıkarılabilir olmayan bölmeler yok sayılır. Daha fazla bilgi için bkz. [CMFCBaseTabCtrl:: EnableTabDetach](../../mfc/reference/cmfcbasetabctrl-class.md#enabletabdetach).
 
-Sekmeli bir bölmeye program aracılığıyla otomatik gizleme moduna geçmek için bu yöntemi çağırın. Ana çerçeve penceresine bölmenin yerleştirilmiş olmalıdır ( [CDockablePane::GetDefaultPaneDivider](../../mfc/reference/cdockablepane-class.md#getdefaultpanedivider) geçerli işaretçi döndürmelidir [CPaneDivider](../../mfc/reference/cpanedivider-class.md)).
+Sekmeli bir bölmeyi program aracılığıyla otomatik olarak gizleyecek şekilde değiştirmek için bu yöntemi çağırın. Bölmenin ana çerçeve penceresine yerleştirilmiş olması gerekir ( [CDockablePane:: GetDefaultPaneDivider](../../mfc/reference/cdockablepane-class.md#getdefaultpanedivider) , [CPaneDivider](../../mfc/reference/cpanedivider-class.md)için geçerli bir işaretçi döndürmelidir).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

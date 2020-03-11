@@ -83,13 +83,13 @@ helpviewer_keywords:
 - std::regex_constants [C++], collate
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
 ms.openlocfilehash: c8abca8109db9c781d63721b795feb01161fdb40
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451664"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876157"
 ---
-# <a name="regexconstants-namespace"></a>regex_constants ad alanı
+# <a name="regex_constants-namespace"></a>regex_constants ad alanı
 
 Normal ifade bayrakları için ad alanı.
 
@@ -105,7 +105,7 @@ namespace regex_constants {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ad alanı `regex_constants` birkaç bayrak türünü ve bunlarla ilişkili bayrak değerlerini kapsüller.
+Ad alanı `regex_constants` çeşitli bayrak türlerini ve bunlarla ilişkili bayrak değerlerini kapsüller.
 
 |||
 |-|-|
@@ -115,11 +115,11 @@ Ad alanı `regex_constants` birkaç bayrak türünü ve bunlarla ilişkili bayra
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Regex >
+**Üstbilgi:** \<Regex >
 
 **Ad alanı:** std
 
-## <a name="error_type"></a>regex_constants::error_type
+## <a name="error_type"></a>regex_constants:: error_type
 
 Normal ifade sözdizimi hatalarını raporlamaya yönelik bayraklar.
 
@@ -152,15 +152,15 @@ Tür, hata bayraklarını tutabilecek bir nesneyi açıklayan, numaralandırılm
 
 `error_badbrace`--ifade bir {} ifadesinde geçersiz bir sayı içeriyordu
 
-`error_badrepeat`--bir Repeat ifadesi (' * ', ' ', ' + ', ' {' çoðu bağlamdaki) bir ifadenin önünde değil
+`error_badrepeat`--bir yineleme ifadesi (' * ', ' ', ' + ', ' {' çoðu bağlamdaki) bir ifadenin önünde değil
 
-`error_brace`--ifade eşleşmeyen bir ' {' veya '} ' içeriyordu
+`error_brace`--ifade eşleşmeyen bir ' {' veya '} ' içeriyor
 
 `error_brack`--ifade eşleşmeyen bir ' [' veya '] ' içeriyor
 
 `error_collate`--ifade geçersiz bir harmanlama öğesi adı içeriyordu
 
-`error_complexity`--denenen bir eşleşme çok karmaşık olduğundan başarısız oldu
+`error_complexity`--denenen eşleşme çok karmaşık olduğundan başarısız oldu
 
 `error_ctype`--ifade geçersiz bir karakter sınıfı adı içeriyordu
 
@@ -172,15 +172,15 @@ Tür, hata bayraklarını tutabilecek bir nesneyi açıklayan, numaralandırılm
 
 `error_range`--ifade geçersiz bir karakter aralığı belirleyicisi içeriyordu
 
-`error_space`--yeterli kullanılabilir kaynak olmadığından, normal ifade ayrıştırma başarısız oldu
+`error_space`--kullanılabilir yeterli kaynak olmadığından düzenli bir ifade ayrıştırma başarısız oldu
 
-`error_stack`--yeterli kullanılabilir bellek olmadığından denenen bir eşleşme başarısız oldu
+`error_stack`--yeterli kullanılabilir bellek olmadığından, denenen bir eşleşme başarısız oldu
 
 `error_syntax`--bir sözdizimi hatası üzerinde ayrıştırma başarısız oldu
 
 `error_backref`--ifade geçersiz bir geri başvuru içeriyordu
 
-## <a name="match_flag_type"></a>regex_constants::match_flag_type
+## <a name="match_flag_type"></a>regex_constants:: match_flag_type
 
 Normal ifade eşleştirme seçeneklerine yönelik bayraklar.
 
@@ -206,31 +206,31 @@ enum match_flag_type
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü bir metin dizisini bir normal ifade ve metin değiştirirken kullanılacak biçim bayrakları ile eşleştirirken kullanılacak seçenekleri açıklayan bir bit maskesi türüdür. Seçenekler ile `|`birleştirilebilir.
+Türü bir metin dizisini bir normal ifade ve metin değiştirirken kullanılacak biçim bayrakları ile eşleştirirken kullanılacak seçenekleri açıklayan bir bit maskesi türüdür. Seçenekler, `|`ile birleştirilebilir.
 
 Eşleşme seçenekleri şunlardır:
 
 `match_default`
 
-`match_not_bol`--Hedef dizideki ilk konumu satırın başlangıcı olarak değerlendirin
+`match_not_bol`--hedef dizideki ilk konumu satırın başı olarak değerlendirin
 
-`match_not_eol`--Hedef dizideki son bitiş konumunu satırın sonu olarak değerlendirin
+`match_not_eol`--hedef dizideki son bitiş konumunu satırın sonu olarak değerlendirin
 
 `match_not_bow`--bir sözcüğün başlangıcında hedef dizideki ilk konumu değerlendirin
 
-`match_not_eow`--Hedef dizideki son bitiş konumunu bir sözcüğün sonu olarak değerlendirin
+`match_not_eow`--bir sözcüğün sonu olarak hedef dizideki son bitiş konumunu işleme
 
-`match_any`--birden fazla eşleşme olasıysa, her türlü eşleşme kabul edilebilir
+`match_any`--birden fazla eşleşme mümkünse eşleşme kabul edilebilir
 
 `match_not_null`--boş bir alt diziyi eşleşme olarak değerlendirin
 
 `match_continuous`--hedef dizinin başından farklı eşleşmeleri arama
 
-`match_prev_avail` -- `--first`geçerli bir yineleyici; Yoksay `match_not_bol` ve`match_not_bow` If kümesi
+`match_prev_avail` -- `--first` geçerli bir yineleyici; `match_not_bol` yoksay ve ayarlandıysa `match_not_bow`
 
 Biçim bayrakları şunlardır:
 
-`format_default`--ECMAScript biçim kurallarını kullan
+`format_default`--ECMAScript biçim kurallarını kullanın
 
 `format_sed`--sed biçim kurallarını kullan
 
@@ -238,7 +238,7 @@ Biçim bayrakları şunlardır:
 
 `format_first_only`--birinciden sonra Eşleşmeler arama
 
-## <a name="syntax_option_type"></a>regex_constants::syntax_option_type
+## <a name="syntax_option_type"></a>regex_constants:: syntax_option_type
 
 Sözdizimi seçeneklerini belirlemek için bayraklar.
 
@@ -262,7 +262,7 @@ enum syntax_option_type
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, bir normal ifade derlenirken kullanılacak dil tanımlayıcılarını ve sözdizimi değiştiricilerini açıklayan bir bit maskesi türüdür. Seçenekler ile `|`birleştirilebilir. Tek seferde birden fazla dil belirticisi kullanılmamalıdır.
+Türü, bir normal ifade derlenirken kullanılacak dil tanımlayıcılarını ve sözdizimi değiştiricilerini açıklayan bir bit maskesi türüdür. Seçenekler, `|`ile birleştirilebilir. Tek seferde birden fazla dil belirticisi kullanılmamalıdır.
 
 Dil belirticileri şunlardır:
 
@@ -274,7 +274,7 @@ Dil belirticileri şunlardır:
 
 `awk`--awk olarak derle
 
-`grep`--GREP olarak derle
+`grep`--grep olarak derle
 
 `egrep`--egrep olarak derle
 
@@ -290,11 +290,11 @@ Sözdizimi değiştiricileri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)\
-[regex_error sınıfı](../standard-library/regex-error-class.md)\
-[\<Regex > işlevleri](../standard-library/regex-functions.md)\
-[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<Regex > işleçleri](../standard-library/regex-operators.md)\
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
-[regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<tür tanımları > Regex](../standard-library/regex-typedefs.md)
+[\<regex >](../standard-library/regex.md)\
+[Regex_error sınıfı](../standard-library/regex-error-class.md)\
+[\<regex > işlevleri](../standard-library/regex-functions.md)\
+[Regex_iterator sınıfı](../standard-library/regex-iterator-class.md)\
+[\<regex > işleçleri](../standard-library/regex-operators.md)\
+[Regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
+[regex_traits sınıfı](../standard-library/regex-traits-class.md)\
+[\<Regex > tür tanımları](../standard-library/regex-typedefs.md)

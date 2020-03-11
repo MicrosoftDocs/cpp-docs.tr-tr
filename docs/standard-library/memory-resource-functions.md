@@ -14,33 +14,33 @@ helpviewer_keywords:
 - std::polymorphic_allocator [C++]
 - std::set_default_resource [C++]
 ms.openlocfilehash: 35b624d2e486d3888f7d40e847bb290a73310748
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268077"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78884059"
 ---
-# <a name="ltnumericgt-functions"></a>&lt;Sayısal&gt; işlevleri
+# <a name="ltnumericgt-functions"></a>&lt;sayısal&gt; işlevleri
 
-## <a name="get_default"></a> get_default_resource
+## <a name="get_default"></a>get_default_resource
 
 ```cpp
 memory_resource* get_default_resource() noexcept;
 ```
 
-## <a name="new_delete"></a> new_delete_resource
+## <a name="new_delete"></a>new_delete_resource
 
 ```cpp
 memory_resource* new_delete_resource() noexcept;
 ```
 
-## <a name="null_memory"></a> null_memory_resource
+## <a name="null_memory"></a>null_memory_resource
 
 ```cpp
 memory_resource* null_memory_resource() noexcept;
 ```
 
-## <a name="poly_alloc"></a> polymorphic_allocator
+## <a name="poly_alloc"></a>polymorphic_allocator
 
 ```cpp
 template <class Tp>
@@ -80,7 +80,7 @@ class polymorphic_allocator {
 };
 ```
 
-## <a name="set_default"></a> set_default_resource
+## <a name="set_default"></a>set_default_resource
 
 ```cpp
 memory_resource* set_default_resource(memory_resource* r) noexcept;

@@ -5,15 +5,15 @@ helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
 ms.openlocfilehash: f8b891467d91d0c945b6c59c90dbc49fd7cbcb30
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491583"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855362"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
-[CObject](../../mfc/reference/cobject-class.md) ve [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) sınıfları, çalışma zamanı sınıf bilgilerine, serileştirme ve dinamik nesne oluşturmaya erişim de dahil olmak üzere çeşitli nesne hizmetlerini kapsülletir. Sınıfından türetilmiş tüm sınıflar `CObject` bu işlevi alır.
+[CObject](../../mfc/reference/cobject-class.md) ve [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) sınıfları, çalışma zamanı sınıf bilgilerine, serileştirme ve dinamik nesne oluşturmaya erişim de dahil olmak üzere çeşitli nesne hizmetlerini kapsülletir. `CObject` türetilen tüm sınıflar bu işlevselliği miras alır.
 
 Çalışma zamanı sınıf bilgilerine erişim, bir nesnenin sınıfı hakkında çalışma zamanında bilgi belirlemenizi sağlar. Çalışma zamanında bir nesnenin sınıfını belirleme özelliği, işlev bağımsız değişkenlerinin ek tür denetimi yapmanız gerektiğinde ve bir nesnenin sınıfına göre özel amaçlı kod yazmanız gerektiğinde faydalıdır. Çalışma zamanı sınıf bilgileri doğrudan C++ dil tarafından desteklenmez.
 
@@ -23,7 +23,7 @@ Dinamik nesne oluşturma, çalışma zamanında belirtilen sınıfın bir nesnes
 
 Aşağıdaki tabloda, çalışma zamanı sınıf bilgilerini, serileştirme ve dinamik oluşturmayı destekleyen MFC makroları listelenmektedir.
 
-Bu çalışma zamanı nesne Hizmetleri ve serileştirme hakkında daha fazla bilgi için CObject sınıfı makalesine [bakın: Çalışma zamanı sınıf bilgilerine](../../mfc/accessing-run-time-class-information.md)erişme.
+Bu çalışma zamanı nesne Hizmetleri ve serileştirme hakkında daha fazla bilgi için [CObject sınıfı: çalışma zamanı sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md)makalesine bakın.
 
 ### <a name="run-time-object-model-services-macros"></a>Çalışma zamanı nesne modeli Hizmetleri makroları
 
@@ -35,7 +35,7 @@ Bu çalışma zamanı nesne Hizmetleri ve serileştirme hakkında daha fazla bil
 |[IMPLEMENT_DYNAMIC](#implement_dynamic)|Çalışma zamanı sınıf bilgilerine erişimi (sınıf uygulamasında kullanılması gerekir) sağlar.|
 |[IMPLEMENT_DYNCREATE](#implement_dyncreate)|Dinamik oluşturma ve çalışma zamanı bilgilerine erişimi (sınıf uygulamasında kullanılması gerekir) sağlar.|
 |[IMPLEMENT_SERIAL](#implement_serial)|Serileştirme ve çalışma zamanı sınıf bilgilerine erişime izin verir (sınıf uygulamasında kullanılması gerekir).|
-|[RUNTIME_CLASS](#runtime_class)|Adlandırılmış sınıfa karşılık gelen yapıyıdöndürür.`CRuntimeClass`|
+|[RUNTIME_CLASS](#runtime_class)|Adlandırılmış sınıfa karşılık gelen `CRuntimeClass` yapısını döndürür.|
 
 OLE genellikle çalışma zamanında nesnelerin dinamik olarak oluşturulmasını gerektirir. Örneğin, bir OLE sunucu uygulamasının bir istemciden gelen bir isteğe yanıt olarak OLE öğeleri oluşturabiliyor olması gerekir. Benzer şekilde, bir Otomasyon sunucusunun Otomasyon istemcilerinden gelen isteklere yanıt olarak öğe oluşturabiliyor olması gerekir.
 
@@ -48,11 +48,11 @@ Microsoft Foundation Class Kitaplığı OLE 'e özgü iki makro sağlar.
 |[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)|Ortak denetimler kitaplığının belirtilen API 'YI uygulayıp uygulamadığını belirler.|
 |[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)|Ortak denetimler kitaplığının belirtilen API 'YI uygulayıp uygulamadığını belirler.|
 |[DECLARE_OLECREATE](#declare_olecreate)|OLE Otomasyonu aracılığıyla nesnelerin oluşturulmasını sağlar.|
-|[DECLARE_OLECTLTYPE](#declare_olectltype)|Denetim sınıfınızın `GetMiscStatus` ve üye işlevlerini bildirir. `GetUserTypeNameID`|
+|[DECLARE_OLECTLTYPE](#declare_olectltype)|Denetim sınıfınızın `GetUserTypeNameID` ve `GetMiscStatus` üye işlevlerini bildirir.|
 |[DECLARE_PROPPAGEIDS](#declare_proppageids)|OLE denetiminin özelliklerini görüntüleyen özellik sayfalarının bir listesini sağladığını bildirir.|
 |[IMPLEMENT_OLECREATE](#implement_olecreate)|OLE sistemi tarafından oluşturulan nesneleri sağlar.|
-|[IMPLEMENT_OLECTLTYPE](#implement_olectltype)|Denetim sınıfınızın `GetMiscStatus` ve üye işlevlerini uygular. `GetUserTypeNameID`|
-|[IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags)|Bu makro veya [IMPLEMENT_OLECREATE](#implement_olecreate) , tarafından kullanılan `DECLARE_OLECREATE`herhangi bir sınıf için uygulama dosyasında görünmelidir. |
+|[IMPLEMENT_OLECTLTYPE](#implement_olectltype)|Denetim sınıfınızın `GetUserTypeNameID` ve `GetMiscStatus` üye işlevlerini uygular.|
+|[IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags)|Bu makro veya [IMPLEMENT_OLECREATE](#implement_olecreate) , `DECLARE_OLECREATE`kullanan herhangi bir sınıf için uygulama dosyasında görünmelidir. |
 
 ## <a name="afx_comctl32_if_exists"></a>AFX_COMCTL32_IF_EXISTS
 
@@ -71,7 +71,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ortak denetimlerin işlem tarafından belirtilen işlevi ( [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)çağırmak yerine) kitaplık olarak belirtmediğini öğrenmek için bu makroyu kullanın.
+Ortak denetimlerin *işlem tarafından belirtilen* Işlevi ( [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)çağırmak yerine) kitaplık olarak belirtmediğini öğrenmek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -79,7 +79,7 @@ afxcomctl32. h, afxcomctl32. inl
 
 ## <a name="afx_comctl32_if_exists2"></a>AFX_COMCTL32_IF_EXISTS2
 
-Ortak denetimler kitaplığının belirtilen API 'YI uygulayıp uygulamadığını belirler (Bu, [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)'in Unicode sürümüdür).
+Ortak denetimler kitaplığının belirtilen API 'YI uygulayıp uygulamadığını belirler (Bu, [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)Unicode sürümüdür).
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -94,7 +94,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ortak denetimlerin işlem tarafından belirtilen işlevi ( [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)çağırmak yerine) kitaplık olarak belirtmediğini öğrenmek için bu makroyu kullanın. Bu makro, AFX_COMCTL32_IF_EXISTS 'in Unicode sürümüdür.
+Ortak denetimlerin *işlem tarafından belirtilen* Işlevi ( [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)çağırmak yerine) kitaplık olarak belirtmediğini öğrenmek için bu makroyu kullanın. Bu makro AFX_COMCTL32_IF_EXISTS Unicode sürümüdür.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -102,7 +102,7 @@ afxcomctl32. h, afxcomctl32. inl
 
 ##  <a name="declare_dynamic"></a>DECLARE_DYNAMIC
 
-Öğesinden `CObject`bir sınıf türetirken nesnenin sınıfı hakkında çalışma zamanı bilgilerine erişme özelliği ekler.
+`CObject`bir sınıf türettikten sonra bir nesnenin sınıfıyla ilgili çalışma zamanı bilgilerine erişme özelliği ekler.
 
 ```
 DECLARE_DYNAMIC(class_name)
@@ -115,13 +115,13 @@ Sınıfın gerçek adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfın üst bilgi (. h) modülüne DECLARE_DYNAMIC makrosunu ekleyin ve bu modülün bu sınıfın nesnelerine erişmesi gereken tüm. cpp modüllerine dahil edin.
+Sınıf için DECLARE_DYNAMIC makrosunu üst bilgi (. h) modülüne ekleyin ve bu modülün bu sınıfın nesnelerine erişmesi gereken tüm. cpp modüllerine dahil edin.
 
-Açıklandığı gibi declare_ DYNAMIC ve IMPLEMENT_DYNAMIC makrolarını kullanıyorsanız, çalışma zamanında nesnelerinizin sınıfını belirleyebilmek için RUNTIME_CLASS makrosunu ve `CObject::IsKindOf` işlevini kullanabilirsiniz.
+DECLARE_ dınamık ve IMPLEMENT_DYNAMIC makrolarını açıklandığı gibi kullanırsanız, çalışma zamanında nesnelerinizin sınıfını belirleyebilmek için RUNTIME_CLASS makrosunu ve `CObject::IsKindOf` işlevini kullanabilirsiniz.
 
-DECLARE_DYNAMIC sınıf bildiriminde yer alıyorsa, IMPLEMENT_DYNAMIC sınıf uygulamasına dahil olmalıdır.
+Sınıf bildirimine DECLARE_DYNAMIC dahil edilip, sınıf uygulamasına IMPLEMENT_DYNAMIC dahil olmalıdır.
 
-DECLARE_DYNAMIC makrosu hakkında daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobject.md).
+DECLARE_DYNAMIC makrosu hakkında daha fazla bilgi için bkz. [CObject Class konuları](../../mfc/using-cobject.md).
 
 ### <a name="example"></a>Örnek
 
@@ -133,7 +133,7 @@ DECLARE_DYNAMIC makrosu hakkında daha fazla bilgi için bkz. [CObject sınıfı
 
 ##  <a name="declare_dyncreate"></a>DECLARE_DYNCREATE
 
-Türetilmiş sınıfların nesnelerinin `CObject`çalışma zamanında dinamik olarak oluşturulmasını sağlar.
+`CObject`türetilen sınıfların nesnelerinin çalışma zamanında dinamik olarak oluşturulmasını sağlar.
 
 ```
 DECLARE_DYNCREATE(class_name)
@@ -150,12 +150,12 @@ Framework, dinamik olarak yeni nesneler oluşturmak için bu özelliği kullanı
 
 Sınıfına ait. h modülüne DECLARE_DYNCREATE makrosunu ekleyin ve bu modülün bu sınıfın nesnelerine erişmesi gereken tüm. cpp modüllerine dahil edin.
 
-DECLARE_DYNCREATE sınıf bildiriminde yer alıyorsa, IMPLEMENT_DYNCREATE sınıf uygulamasına dahil olmalıdır.
+Sınıf bildirimine DECLARE_DYNCREATE dahil edilip, sınıf uygulamasına IMPLEMENT_DYNCREATE dahil olmalıdır.
 
-DECLARE_DYNCREATE makrosu hakkında daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobject.md).
+DECLARE_DYNCREATE makrosu hakkında daha fazla bilgi için bkz. [CObject Class konuları](../../mfc/using-cobject.md).
 
 > [!NOTE]
->  DECLARE_DYNCREATE makrosu tüm DECLARE_DYNAMIC işlevlerini içerir.
+>  DECLARE_DYNCREATE makro, tüm DECLARE_DYNAMIC işlevlerini içerir.
 
 ### <a name="example"></a>Örnek
 
@@ -167,7 +167,7 @@ DECLARE_DYNCREATE makrosu hakkında daha fazla bilgi için bkz. [CObject sınıf
 
 ## <a name="declare_olectltype"></a>DECLARE_OLECTLTYPE
 
-Denetim sınıfınızın `GetMiscStatus` ve üye işlevlerini bildirir. `GetUserTypeNameID`
+Denetim sınıfınızın `GetUserTypeNameID` ve `GetMiscStatus` üye işlevlerini bildirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -182,7 +182,7 @@ Denetim sınıfının adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetUserTypeNameID`ve `GetMiscStatus` , içinde `COleControl`belirtilen saf sanal işlevlerdir. Bu işlevler saf sanal olduğundan, denetim sınıfınıza geçersiz kılınmalıdır. DECLARE_OLECTLTYPE ' a ek olarak, IMPLEMENT_OLECTLTYPE makrosunu denetim sınıfı bildiriye eklemeniz gerekir.
+`GetUserTypeNameID` ve `GetMiscStatus`, `COleControl`olarak belirtilen saf sanal işlevlerdir. Bu işlevler saf sanal olduğundan, denetim sınıfınıza geçersiz kılınmalıdır. DECLARE_OLECTLTYPE ek olarak, denetim sınıfı bildirimidir IMPLEMENT_OLECTLTYPE makrosunu eklemeniz gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -205,9 +205,9 @@ DECLARE_PROPPAGEIDS( class_name )
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf bildirimindeki sonundaki makroyu kullanın. `DECLARE_PROPPAGEIDS` Ardından, sınıfının üye işlevlerini tanımlayan. cpp dosyasında, denetimin özellik sayfalarının her biri için makro, `BEGIN_PROPPAGEIDS` makro girişleri `END_PROPPAGEIDS` ve özellik sayfası listesinin sonunu bildirmek için makro kullanın.
+Sınıf bildirimindeki sonundaki `DECLARE_PROPPAGEIDS` makrosunu kullanın. Ardından, sınıfının üye işlevlerini tanımlayan. cpp dosyasında, denetimin özellik sayfalarının her biri için `BEGIN_PROPPAGEIDS` makrosunu, makro girişlerini ve özellik sayfası listesinin sonunu bildirmek için `END_PROPPAGEIDS` makrosunu kullanın.
 
-Özellik sayfaları hakkında daha fazla bilgi için bkz [. ActiveX denetimleri: Özellik sayfaları](../mfc-activex-controls-property-pages.md).
+Özellik sayfaları hakkında daha fazla bilgi için, [ActiveX denetimleri: Özellik sayfaları](../mfc-activex-controls-property-pages.md)makalesine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -215,7 +215,7 @@ Sınıf bildirimindeki sonundaki makroyu kullanın. `DECLARE_PROPPAGEIDS` Ardın
 
 ##  <a name="declare_serial"></a>DECLARE_SERIAL
 
-Seri hale C++ getirilebilecek bir `CObject`türetilmiş sınıf için gereken üst bilgi kodunu üretir.
+Seri hale C++ getirilebilecek `CObject`türetilmiş bir sınıf için gereken üst bilgi kodunu üretir.
 
 ```
 DECLARE_SERIAL(class_name)
@@ -230,17 +230,17 @@ Sınıfın gerçek adı.
 
 Serileştirme, bir dosyanın içeriğini bir dosyadan veya dosyadan yazma veya okuma işlemidir.
 
-DECLARE_SERIAL makrosunu bir. h modülünde kullanın ve bu modülün bu sınıfın nesnelerine erişmesi gereken tüm. cpp modüllerine dahil edin.
+Bir. h modülünde DECLARE_SERIAL makrosunu kullanın ve bu modülün, bu sınıfın nesnelerine erişmesi gereken tüm. cpp modüllerine dahil edin.
 
-DECLARE_SERIAL sınıf bildiriminde yer alıyorsa, IMPLEMENT_SERIAL sınıf uygulamasına dahil olmalıdır.
+Sınıf bildirimine DECLARE_SERIAL dahil edilip, sınıf uygulamasına IMPLEMENT_SERIAL dahil olmalıdır.
 
-DECLARE_SERIAL makrosu, DECLARE_DYNAMIC ve DECLARE_DYNCREATE 'in tüm işlevlerini içerir.
+DECLARE_SERIAL makrosu, tüm DECLARE_DYNAMIC ve DECLARE_DYNCREATE işlevlerini içerir.
 
-AFX_API makrosunu, DECLARE_SERIAL ve IMPLEMENT_SERIAL makrolarını kullanan sınıfların `CArchive` ayıklama işlecini otomatik olarak dışarı aktarmak için kullanabilirsiniz. Sınıf bildirimlerini (. h dosyasında bulunur) aşağıdaki kodla ayraç içine girin:
+DECLARE_SERIAL ve IMPLEMENT_SERIAL makrolarını kullanan sınıflar için `CArchive` ayıklama işlecini otomatik olarak dışarı aktarmak üzere AFX_API makrosunu kullanabilirsiniz. Sınıf bildirimlerini (. h dosyasında bulunur) aşağıdaki kodla ayraç içine girin:
 
 [!code-cpp[NVC_MFCCObjectSample#20](../../mfc/codesnippet/cpp/run-time-object-model-services_1.h)]
 
-DECLARE_SERIAL makrosu hakkında daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobject.md).
+DECLARE_SERIAL makrosu hakkında daha fazla bilgi için bkz. [CObject Class konuları](../../mfc/using-cobject.md).
 
 ### <a name="example"></a>Örnek
 
@@ -252,7 +252,7 @@ DECLARE_SERIAL makrosu hakkında daha fazla bilgi için bkz. [CObject sınıfı 
 
 ##  <a name="implement_dynamic"></a>IMPLEMENT_DYNAMIC
 
-Sınıf adına C++ ve hiyerarşideki konuma çalışma zamanı `CObject`erişimi olan dinamik türetilmiş bir sınıf için gereken kodu üretir.
+Sınıf adına C++ ve hiyerarşideki konuma çalışma zamanı erişimiyle, dinamik `CObject`türetilmiş bir sınıf için gereken kodu üretir.
 
 ```
 IMPLEMENT_DYNAMIC(class_name, base_class_name)
@@ -268,7 +268,7 @@ Temel sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-IMPLEMENT_DYNAMIC makrosunu bir. cpp modülünde kullanın ve ardından elde edilen nesne kodunu yalnızca bir kez bağlayın.
+. Cpp modülünde IMPLEMENT_DYNAMIC makrosunu kullanın ve ardından elde edilen nesne kodunu yalnızca bir kez bağlayın.
 
 Daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobject.md).
 
@@ -284,7 +284,7 @@ Daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobjec
 
 ##  <a name="implement_dyncreate"></a>IMPLEMENT_DYNCREATE
 
-Türetilmiş sınıfların nesnelerinin `CObject`, DECLARE_DYNCREATE makrosu ile birlikte kullanıldığında çalışma zamanında dinamik olarak oluşturulmasını sağlar.
+`CObject`türetilen sınıfların nesnelerinin, DECLARE_DYNCREATE makroyla birlikte kullanıldığında çalışma zamanında dinamik olarak oluşturulmasını sağlar.
 
 ```
 IMPLEMENT_DYNCREATE(class_name, base_class_name)
@@ -304,7 +304,7 @@ Framework, serileştirme sırasında diskten bir nesne okurken, örneğin, dinam
 
 DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE makrolarını kullanıyorsanız, çalışma zamanında nesnelerinizin sınıfını belirleyebilmek için RUNTIME_CLASS makrosunu ve `CObject::IsKindOf` member işlevini kullanabilirsiniz.
 
-DECLARE_DYNCREATE sınıf bildiriminde yer alıyorsa, IMPLEMENT_DYNCREATE sınıf uygulamasına dahil olmalıdır.
+Sınıf bildirimine DECLARE_DYNCREATE dahil edilip, sınıf uygulamasına IMPLEMENT_DYNCREATE dahil olmalıdır.
 
 Bu makro tanımının sınıfınız için varsayılan oluşturucuyu çağıracağına unutmayın. Basit olmayan bir Oluşturucu sınıf tarafından açıkça uygulanırsa, ayrıca varsayılan oluşturucuyu de açıkça uygulamalıdır. Varsayılan Oluşturucu sınıfın **özel** veya **korumalı** üye bölümlerine, sınıf uygulamasının dışından çağrılmasına engel olmak için eklenebilir.
 
@@ -320,7 +320,7 @@ Bu makro tanımının sınıfınız için varsayılan oluşturucuyu çağıraca�
 
 ## <a name="implement_olecreate_flags"></a>IMPLEMENT_OLECREATE_FLAGS
 
-Bu makro ya da [IMPLEMENT_OLECREATE](#implement_olecreate) , DECLARE_OLECREATE kullanan herhangi bir sınıf için uygulama dosyasında görünmelidir.
+Bu makro veya [IMPLEMENT_OLECREATE](#implement_olecreate) , DECLARE_OLECREATE kullanan herhangi bir sınıf için uygulama dosyasında görünmelidir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -340,18 +340,18 @@ Diğer uygulamalara sunulan nesne adı (tırnak işaretleri içine alınmıştı
 *nFlags*<br/>
 Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
-   - `afxRegInsertable`OLE nesneleri için nesne Ekle iletişim kutusunda denetimin görünmesine izin verir.
-   - `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
-   - `afxRegFreeThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
+   - `afxRegInsertable`, denetimin OLE nesneleri için nesne Ekle iletişim kutusunda görünmesine Izin verir.
+   - `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+   - `afxRegFreeThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
 
          You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/win32/com/inprocserver32) in the Windows SDK for more information on threading model registration.
 
-*l*, *W1*, *W2*, *B1*, *B2*, *B3*, *B4*, *B5*, *B6*, *B7*, , sınıfın CLSID 'si.
+*l*, *W1*, *W2*, *B1*, *B2*, *B3*, *B4*, *B5*, *B6*, *B7*, *,* sınıfın CLSID 'si.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  IMPLEMENT_OLECREATE_FLAGS kullanıyorsanız, *nFlags* parametresini kullanarak nesnenizin hangi iş parçacığı modelini desteklediğini belirtebilirsiniz. Yalnızca tek-Tokuma modelini desteklemek istiyorsanız, IMPLEMENT_OLECREATE kullanın.
+>  IMPLEMENT_OLECREATE_FLAGS kullanıyorsanız, *nFlags* parametresini kullanarak nesnenizin hangi iş parçacığı modelini desteklediğini belirtebilirsiniz. Yalnızca tek-Tokuma modelini desteklemek istiyorsanız IMPLEMENT_OLECREATE kullanın.
 
 Dış ad, diğer uygulamalara sunulan tanıtıcıdır. İstemci uygulamaları, bir Otomasyon sunucusundan bu sınıftan bir nesne istemek için dış adı kullanır.
 
@@ -363,7 +363,7 @@ OLE sınıf KIMLIĞI, nesnesi için benzersiz bir 128 bitlik tanımlayıcıdır.
 
 ## <a name="implement_olectltype"></a>IMPLEMENT_OLECTLTYPE
 
-Denetim sınıfınızın `GetMiscStatus` ve üye işlevlerini uygular. `GetUserTypeNameID`
+Denetim sınıfınızın `GetUserTypeNameID` ve `GetMiscStatus` üye işlevlerini uygular.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -384,9 +384,9 @@ Bir veya daha fazla bayrak içeren bir sabit listesi. Bu numaralandırma hakkın
 
 ### <a name="remarks"></a>Açıklamalar
 
-IMPLEMENT_OLECTLTYPE ' a ek olarak, DECLARE_OLECTLTYPE makrosunu denetim sınıfı bildiriye eklemeniz gerekir.
+IMPLEMENT_OLECTLTYPE ek olarak, denetim sınıfı bildirimidir DECLARE_OLECTLTYPE makrosunu eklemeniz gerekir.
 
-Üye `GetUserTypeNameID` işlevi, denetim sınıfınızı tanımlayan kaynak dizesini döndürür. `GetMiscStatus`denetiminiz için OLEMISC bit döndürür. Bu numaralandırma, denetiminizin çeşitli özelliklerini açıklayan ayarların bir koleksiyonunu belirtir. OLEMISC ayarlarının tam açıklaması için bkz. Windows SDK [olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc) .
+`GetUserTypeNameID` member işlevi, denetim sınıfınızı tanımlayan kaynak dizesini döndürür. `GetMiscStatus` denetiminizin OLEMISC bitlerini döndürür. Bu numaralandırma, denetiminizin çeşitli özelliklerini açıklayan ayarların bir koleksiyonunu belirtir. OLEMISC ayarlarının tam açıklaması için bkz. Windows SDK [olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc) .
 
 > [!NOTE]
 >  ActiveX ControlWizard tarafından kullanılan varsayılan ayarlar şunlardır: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE ve OLEMISC_RECOMPOSEONRESIZE.
@@ -397,7 +397,7 @@ IMPLEMENT_OLECTLTYPE ' a ek olarak, DECLARE_OLECTLTYPE makrosunu denetim sınıf
 
 ##  <a name="implement_serial"></a>IMPLEMENT_SERIAL
 
-Sınıf adına C++ ve hiyerarşideki konuma çalışma zamanı `CObject`erişimi olan dinamik türetilmiş bir sınıf için gereken kodu üretir.
+Sınıf adına C++ ve hiyerarşideki konuma çalışma zamanı erişimiyle, dinamik `CObject`türetilmiş bir sınıf için gereken kodu üretir.
 
 ```
 IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
@@ -418,7 +418,7 @@ Seri durumdan çıkarma programının önceki program sürümleri tarafından ol
 
 . Cpp modülünde IMPLEMENT_SERIAL makrosunu kullanın; ardından elde edilen nesne kodunu yalnızca bir kez bağlayın.
 
-AFX_API makrosunu, DECLARE_SERIAL ve IMPLEMENT_SERIAL makrolarını kullanan sınıfların `CArchive` ayıklama işlecini otomatik olarak dışarı aktarmak için kullanabilirsiniz. Sınıf bildirimlerini (. h dosyasında bulunur) aşağıdaki kodla ayraç içine girin:
+DECLARE_SERIAL ve IMPLEMENT_SERIAL makrolarını kullanan sınıflar için `CArchive` ayıklama işlecini otomatik olarak dışarı aktarmak üzere AFX_API makrosunu kullanabilirsiniz. Sınıf bildirimlerini (. h dosyasında bulunur) aşağıdaki kodla ayraç içine girin:
 
 [!code-cpp[NVC_MFCCObjectSample#20](../../mfc/codesnippet/cpp/run-time-object-model-services_1.h)]
 
@@ -447,7 +447,7 @@ Sınıfın gerçek adı (tırnak işaretleri içine alınmaz).
 
 ### <a name="remarks"></a>Açıklamalar
 
-RUNTIME_CLASS, *class_name*tarafından belirtilen sınıf Için [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik bir işaretçi döndürür. Yalnızca `CObject`DECLARE_DYNAMIC, DECLARE_DYNCREATE veya DECLARE_SERIAL ile belirtilen türetilmiş sınıflar bir `CRuntimeClass` yapıya işaretçiler döndürür.
+RUNTIME_CLASS, *class_name*tarafından belirtilen sınıf Için [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik bir işaretçi döndürür. Yalnızca DECLARE_DYNAMIC, DECLARE_DYNCREATE veya DECLARE_SERIAL ile tanımlanan `CObject`türetilmiş sınıflar, `CRuntimeClass` yapısına işaretçiler döndürür.
 
 Daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobject.md).
 
@@ -461,7 +461,7 @@ Daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobjec
 
 ##  <a name="declare_olecreate"></a>DECLARE_OLECREATE
 
-Türetilmiş sınıfların nesnelerinin `CCmdTarget`OLE Otomasyonu aracılığıyla oluşturulmasını sağlar.
+`CCmdTarget`türetilen sınıfların nesnelerinin OLE Otomasyonu aracılığıyla oluşturulmasını sağlar.
 
 ```
 DECLARE_OLECREATE(class_name)
@@ -478,7 +478,7 @@ Bu makro, OLE özellikli diğer uygulamaların bu türden nesneler oluşturması
 
 Sınıfına ait. h modülüne DECLARE_OLECREATE makrosunu ekleyin ve bu modülün bu sınıfın nesnelerine erişmesi gereken tüm. cpp modüllerine dahil edin.
 
-DECLARE_OLECREATE sınıf bildiriminde yer alıyorsa, IMPLEMENT_OLECREATE sınıf uygulamasına dahil olmalıdır. DECLARE_OLECREATE kullanan bir sınıf bildirimi Ayrıca DECLARE_DYNCREATE veya DECLARE_SERIAL kullanmalıdır.
+Sınıf bildirimine DECLARE_OLECREATE dahil edilip, sınıf uygulamasına IMPLEMENT_OLECREATE dahil olmalıdır. DECLARE_OLECREATE kullanan bir sınıf bildiriminde DECLARE_DYNCREATE veya DECLARE_SERIAL de kullanılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -486,7 +486,7 @@ DECLARE_OLECREATE sınıf bildiriminde yer alıyorsa, IMPLEMENT_OLECREATE sını
 
 ##  <a name="implement_olecreate"></a>IMPLEMENT_OLECREATE
 
-Bu makro veya [IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags) , tarafından kullanılan `DECLARE_OLECREATE`herhangi bir sınıf için uygulama dosyasında görünmelidir.
+Bu makro veya [IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags) , `DECLARE_OLECREATE`kullanan herhangi bir sınıf için uygulama dosyasında görünmelidir.
 
 ```
 IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)
@@ -500,7 +500,7 @@ Sınıfın gerçek adı.
 *external_name*<br/>
 Diğer uygulamalara sunulan nesne adı (tırnak işaretleri içine alınmıştır).
 
-*l*, *W1*, *W2*, *B1*, *B2*, *B3*, *B4*, *B5*, *B6*, *B7*, , sınıfın CLSID 'si.
+*l*, *W1*, *W2*, *B1*, *B2*, *B3*, *B4*, *B5*, *B6*, *B7*, *,* sınıfın CLSID 'si.
 
 ### <a name="remarks"></a>Açıklamalar
 

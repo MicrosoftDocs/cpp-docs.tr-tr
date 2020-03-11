@@ -41,17 +41,17 @@ helpviewer_keywords:
 - std::tan [C++]
 - std::tanh [C++]
 ms.openlocfilehash: 12275f93c751b4d9ffafcae62621b251a8bc9bfc
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246681"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78875624"
 ---
 # <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; işlevleri
 
-## <a name="abs"></a> Abs
+## <a name="abs"></a>mutlak
 
-Öğeleri girdi valarray öğelerini mutlak değerini eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin mutlak değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -60,12 +60,12 @@ valarray<Type> abs(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini mutlak değerini eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin mutlak değerine eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -104,9 +104,9 @@ The initial valarray is: 0 -1 -2 -3 4 5 6 7 8 .
 The absolute value of the initial valarray is: 0 1 2 3 4 5 6 7 8 .
 ```
 
-## <a name="acos"></a> ACOS
+## <a name="acos"></a>acos
 
-Öğeleri girdi valarray öğelerini arkkosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin Arkkosinüs değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -115,18 +115,18 @@ valarray<Type> acos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini arkkosinüsünü eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin Arkkosinüs değerine eşit olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Radyan cinsinden ise döndürülen öğelerin birimleridir.
+Döndürülen öğelerin birimleri radyan cinsinden.
 
-Dönüş değeri 0 arasında asıl bir değerdir ve + giriş Kosinüs değerini ile tutarlıdır pi.
+Dönüş değeri, kosinüs değer girişi ile tutarlı olan 0 ile + Pi arasında bir asıl değerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -177,9 +177,9 @@ The arccosine of the initial valarray is:
          0  radians, which is            0  degrees
 ```
 
-## <a name="asin"></a> asin
+## <a name="asin"></a>Asin
 
-Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin arksinüsünü eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -188,18 +188,18 @@ valarray<Type> asin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray.
+Öğeleri, giriş valarray öğelerinin arksinüsünü eşit olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Radyan cinsinden ise döndürülen öğelerin birimleridir.
+Döndürülen öğelerin birimleri radyan cinsinden.
 
-Dönüş değeri sorumlu olan arasında değer + pi/2 ve - sinüs ile tutarlıdır pi/2 giriş değeri.
+Dönüş değeri + pi/2 ile-Pi/2 arasında, sinüs değeri girişi ile tutarlı bir ana değerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -250,9 +250,9 @@ The arcsine of the initial valarray is:
     1.5708  radians, which is           90  degrees
 ```
 
-## <a name="atan"></a> atan
+## <a name="atan"></a>atan
 
-Öğeleri girdi valarray öğelerini arktanjantını asıl değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin arktanjant değerinin asıl değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -261,18 +261,18 @@ valarray<Type> atan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini tanjantını eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin arktanjant değerine eşit olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Radyan cinsinden ise döndürülen öğelerin birimleridir.
+Döndürülen öğelerin birimleri radyan cinsinden.
 
-Dönüş değeri sorumlu olan arasında değer + pi/2 ve - tanjantını ile tutarlıdır pi/2 giriş değeri.
+Dönüş değeri, + pi/2 ile-Pi/2 arasında, teğet değer girişi ile tutarlı bir ana değerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -326,9 +326,9 @@ The arcsine of the initial valarray is:
     1.5608  radians, which is      89.4271  degrees
 ```
 
-## <a name="atan2"></a> ATAN2
+## <a name="atan2"></a>atan2
 
-Öğeleri arktanjantını Kartezyen için eşit olan bir valarray sabitler birleşimi ve valarrays öğeleri tarafından belirtilen bileşenlerini döndürür.
+Öğeleri, valarışın sabitlerinin ve öğelerinin bir birleşimiyle belirtilen Kartezyen bileşenlerinin ark birleşimine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -343,29 +343,29 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri y koordinatını arktanjantını bağımsız değişkenin değerlerini belirtin. sabit bir sayısal veri türü veya giriş valarray.
+*sol*\
+Öğeleri, arktanjant bağımsız değişkeninin y koordinatı için değerler sağlayan sabit sayısal veri türü veya giriş valarray.
 
 *sağ*\
-Öğeleri x koordinatını arktanjantını bağımsız değişkenin değerlerini belirtin. sabit bir sayısal veri türü veya giriş valarray.
+Öğeleri arktanjant bağımsız değişkeninin x koordinatı için değerler sağlayan sabit sayısal veri türü veya giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir valarray öğeleri `I` ark tanjantını eşit:
+Öğeleri `I`, öğesinin arktanjant değerine eşit olan bir valarray:
 
-- `left` [ *miyim* ] / *_Righ*t [ *miyim* ] için ilk şablon işlevi.
+- ilk şablon işlevi için `left` [ *i* ]/ *_Righ*t [ *i* ].
 
-- `left` [ *miyim* ] / `right` ikinci şablon işlevi için.
+- ikinci şablon işlevi için `left` [ *I* ]/`right`.
 
-- `left` / `right` [ *miyim* ] üçüncü şablon işlevi için.
+- Üçüncü şablon işlevi için `left` / `right` [ *I* ].
 
 ### <a name="remarks"></a>Açıklamalar
 
-Radyan cinsinden ise döndürülen öğelerin birimleridir.
+Döndürülen öğelerin birimleri radyan cinsinden.
 
-Bu işlev standart tanjant işlevi tarafından kayıp bağımsız bileşenler işaretleri hakkındaki bilgileri saklar ve bu Bilgi Bankası ' Çeyreğin arasındaki benzersiz bir açıyı atanması + pi ve pi - dönüş değeri sağlar.
+Bu işlev, standart teğet işlevi tarafından kaybolan bağımsız değişkende bileşenlerin işaretleriyle ilgili bilgileri korur ve Çeyrekli bu bilgi, dönüş değerine + Pi ve-pi arasında benzersiz bir açı atanmasını sağlar.
 
-Varsa *sol* ve *doğru* farklı sayıda öğe varsa, sonuç tanımsızdır.
+*Sol* ve *sağ* farklı sayıda öğe içeriyorsa, sonuç tanımsızdır.
 
 ### <a name="example"></a>Örnek
 
@@ -420,16 +420,16 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees
 ```
 
-## <a name="begin"></a> başlayın
+## <a name="begin"></a>başladı
 
 ```cpp
 template <class T> unspecified 1 begin(valarray<T>& v);
 template <class T> unspecified 2 begin(const valarray<T>& v);
 ```
 
-## <a name="cos"></a> Cos
+## <a name="cos"></a>cos
 
-Öğeleri girdi valarray öğelerini kosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin kosinüs değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -438,12 +438,12 @@ valarray<Type> cos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini mutlak değerini eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin mutlak değerine eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -504,9 +504,9 @@ The cosine of the initial valarray is:
 -1
 ```
 
-## <a name="cosh"></a> COSH
+## <a name="cosh"></a>Cosh
 
-Öğeleri girdi valarray öğelerini hiperbolik kosinüsünü için eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin hiperbolik kosinüs değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -515,18 +515,18 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini hiperbolik kosinüsünü için eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin hiperbolik kosinüs değerine eşit olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kimliklerini: üstel işlevi açısından hiperbolik kosinüsü tanımlama
+Üstel işlevi bakımından hiperbolik kosinüsü tanımlayan kimlikler:
 
-COSH ( *z* ) = (exp ( *z* ) + exp (- *z* )) / 2
+Cosh ( *z* ) = (EXP ( *z* ) + exp (- *z* ))/2
 
 ### <a name="example"></a>Örnek
 
@@ -587,16 +587,16 @@ The hyperbolic cosine of the initial valarray is:
 11.592
 ```
 
-## <a name="end"></a> Son
+## <a name="end"></a>erer
 
 ```cpp
 template <class T> unspecified 1 end(valarray<T>& v);
 template <class T> unspecified 2 end(const valarray<T>& v);
 ```
 
-## <a name="exp"></a> exp
+## <a name="exp"></a>exp
 
-Öğeleri girdi valarray öğelerinin üstel doğal eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin doğal üslerinin değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -605,12 +605,12 @@ valarray<Type> exp(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerinin üstel doğal eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin doğal üstel değerine eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -657,9 +657,9 @@ The natural exponential of the initial valarray is:
 22026.5
 ```
 
-## <a name="log"></a> Günlük
+## <a name="log"></a>açmasını
 
-Öğeleri için doğal logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin doğal logaritmasına eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -668,12 +668,12 @@ valarray<Type> log(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini mutlak değerini eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin mutlak değerine eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -720,9 +720,9 @@ The natural logarithm of the initial valarray is:
 4.38203
 ```
 
-## <a name="log10"></a> log10
+## <a name="log10"></a>log10
 
-Öğeleri taban 10 ya da ortak logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır; bu bir valarray, öğeleri 10 tabanında veya giriş valarray öğelerinin ortak logaritmasına eşit olan bir döndürür.
 
 ```cpp
 template <class Type>
@@ -731,12 +731,12 @@ valarray<Type> log10(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğeleri için ortak logaritmasını eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin ortak logaritmasına eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -785,9 +785,9 @@ The common logarithm of the initial valarray is:
 2
 ```
 
-## <a name="pow"></a> POW
+## <a name="pow"></a>POW
 
-Giriş valarrays ve öğeleri bir tabana eşit olan bir valarray ya da bir giriş valarray öğelerini belirtilen ya da bir üssü bir sabit ya da bir giriş valarray öğelerini belirtilen döndüren sabitleri, öğeler üzerinde çalışır veya sabit değer.
+Giriş valarışın ve sabitlerin öğeleri üzerinde çalışır, öğeleri bir giriş valarray öğeleri tarafından belirtilen bir tabana veya bir giriş valarray öğeleri tarafından belirtilen bir sabite ya da bir valarray sabit.
 
 ```cpp
 template <class Type>
@@ -811,25 +811,25 @@ pow(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Giriş valarray exponentiated olmasını her öğe için temel öğeleri sağlayın.
+*sol*\
+Öğeleri üs olarak kullanılacak her öğe için temel sağlayan giriş valarray.
 
 *sağ*\
-Giriş valarray öğeleri exponentiated olmasını her öğe için güç sağlayın.
+Öğeleri, öğeleri üs olarak kullanılacak her öğe için güç sağlayan giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir valarray öğeleri `I` eşit olan:
+Öğeleri `I` şuna eşit olan bir valarray:
 
-- `left` [ *miyim* ] üssü `right` [ *miyim* ] için ilk şablon işlevi.
+- ilk şablon işlevi için *[i] `left` [* i *] güç* `right` oluştu.
 
-- `left` [ *miyim* ] üssü `right` için ikinci şablon işlevi.
+- ikinci şablon işlevi için güç `right` `left` [ *I* ] oluştu.
 
-- `left` üssü `right` [ *miyim* ] üçüncü şablon işlevi için.
+- Üçüncü şablon işlevi için Power `right` [ *I* ] `left` yükseltildi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *sol* ve *doğru* farklı sayıda öğe varsa, sonuç tanımsızdır.
+*Sol* ve *sağ* farklı sayıda öğe içeriyorsa, sonuç tanımsızdır.
 
 ### <a name="example"></a>Örnek
 
@@ -882,9 +882,9 @@ n = 4   gives 256
 n = 5   gives 1024
 ```
 
-## <a name="sin"></a> Sin
+## <a name="sin"></a>sin
 
-Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin Sinüs değerine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -893,12 +893,12 @@ valarray<Type> sin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin Sinüs değerine eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -959,9 +959,9 @@ The sine of the initial valarray is:
 -2.06823e-013
 ```
 
-## <a name="sinh"></a> SİNH
+## <a name="sinh"></a>sinh
 
-Öğeleri girdi valarray öğelerini hiperbolik sinüsünü için eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin hiperbolik sinüsünü eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -970,18 +970,18 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini hiperbolik sinüsünü için eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin hiperbolik sinüsünü eşit olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kimliklerini: üstel işlevi açısından hiperbolik sinüsü tanımlama
+Üstel işlevi bakımından hiperbolik sinüsü tanımlayan kimlikler:
 
-SİNH ( *z* ) = (exp ( *z* )-exp (- *z* )) / 2
+sinh ( *z* ) = (EXP ( *z* )-exp (- *z* ))/2
 
 ### <a name="example"></a>Örnek
 
@@ -1042,9 +1042,9 @@ The hyperbolic sine of the initial valarray is:
 11.5487
 ```
 
-## <a name="sqrt"></a> Sqrt
+## <a name="sqrt"></a>k
 
-Öğeleri girdi valarray öğelerini kare kökünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin kare köküne eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -1053,12 +1053,12 @@ valarray<Type> sqrt(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini kare kökünü eşit olan bir valarray.
+Öğeleri, giriş valarray öğelerinin kare köküne eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -1096,9 +1096,9 @@ The initial valarray is: ( 0 1 4 9 16 ).
 The square root of the initial valarray is: ( 0 1 2 3 4 ).
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
-İki valarrays öğelerini birbiriyle değiştirir.
+İki valarışın öğelerini değiş tokuş eder.
 
 ```cpp
 template <class Type>
@@ -1109,19 +1109,19 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir nesne türü `valarray`.
+*sol*\
+`valarray` türünün bir nesnesi.
 
 *sağ*\
-Bir nesne türü `valarray`.
+`valarray` türünün bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütür `left.swap(right)`.
+Şablon işlevi `left.swap(right)`yürütür.
 
-## <a name="tan"></a> tan
+## <a name="tan"></a>Başlangıçtan
 
-Öğeleri girdi valarray öğelerini tanjantını eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin tanjantını eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -1130,12 +1130,12 @@ valarray<Type> tan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini tanjantını eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin tanjanta eşit olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -1196,9 +1196,9 @@ The tangent of the initial valarray is:
 -9.6701e+012
 ```
 
-## <a name="tanh"></a> TANH
+## <a name="tanh"></a>tanh
 
-Öğeleri girdi valarray öğelerini hiperbolik tanjantını için eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.
+, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin hiperbolik tanjantisine eşit olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -1207,18 +1207,18 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri üzerinde üye işlevi tarafından yapılacak olan giriş valarray.
+*sol*\
+Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri girdi valarray öğelerini hiperbolik kosinüsünü için eşit olan bir valarray.
+Öğeleri, input valarray öğelerinin hiperbolik kosinüs değerine eşit olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kimliklerini: üstel işlevi açısından hiperbolik tanjantı tanımlama
+Üstel işlevi bakımından hiperbolik tanjantı tanımlayan kimlikler:
 
-TANH ( *z* ) sinh = ( *z* ) / cosh ( *z* ) = (exp ( *z* )-exp (- *z* )) / (exp ( *z* ) + exp (- *z* ))
+tanh ( *z* ) = sinh ( *z* )/cosh ( *z* ) = (EXP ( *z* )-exp (- *z* ))/(EXP ( *z* ) + exp (- *z* ))
 
 ### <a name="example"></a>Örnek
 

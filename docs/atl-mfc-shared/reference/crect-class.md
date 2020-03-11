@@ -35,11 +35,11 @@ helpviewer_keywords:
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
 ms.openlocfilehash: 13f86c411cca98f5817d1b3b2d9162ae8af8b734
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821375"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866538"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
@@ -53,15 +53,15 @@ class CRect : public tagRECT
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRect:: CRect](#crect)|`CRect` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRect:: BottomRight](#bottomright)|`CRect`sağ alt noktasını döndürür.|
 |[CRect:: CenterPoint](#centerpoint)|`CRect`merkez noktasını döndürür.|
@@ -87,9 +87,9 @@ class CRect : public tagRECT
 |[CRect:: UnionRect](#unionrect)|İki dikdörtgenin birleşime eşit `CRect` ayarlar.|
 |[CRect:: Width](#width)|`CRect`genişliğini hesaplar.|
 
-### <a name="public-operators"></a>Genel İşleçler
+### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRect:: operator-](#operator_-)|Verilen uzaklıkları `CRect` çıkartır veya `CRect` erteler ve elde edilen `CRect`döndürür.|
 |[CRect:: operator LPCRECT](#operator_lpcrect)|Bir `CRect` `LPCRECT`dönüştürür.|
@@ -294,10 +294,10 @@ CRect(POINT topLeft, POINT bottomRight) throw();
 *şı*<br/>
 `CRect`en üstünü belirtir.
 
-*r*<br/>
+*sağ*<br/>
 `CRect`doğru konumunu belirtir.
 
-*b*<br/>
+*kenarı*<br/>
 `CRect`en altını belirtir.
 
 *srcRect*<br/>
@@ -375,7 +375,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 `CRect`sol ve sağ taraflarını söndür birim sayısını belirtir.
 
 *Iz*<br/>
@@ -393,10 +393,10 @@ Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder vey
 *şı*<br/>
 `CRect`en üstünü söndür olan birim sayısını belirtir.
 
-*r*<br/>
+*sağ*<br/>
 `CRect`sağ tarafını söndür birim sayısını belirtir.
 
-*b*<br/>
+*kenarı*<br/>
 `CRect`en altından söndür olan birim sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -501,7 +501,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 `CRect`sol ve sağ taraflarından şişiteedilecek birim sayısını belirtir.
 
 *Iz*<br/>
@@ -519,10 +519,10 @@ Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder vey
 *şı*<br/>
 `CRect`en üstünü içine almak için birim sayısını belirtir.
 
-*r*<br/>
+*sağ*<br/>
 `CRect`sağ tarafının kaç birim sayısını belirtir.
 
-*b*<br/>
+*kenarı*<br/>
 `CRect`altına inen alt kısmını almak için birim sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -653,7 +653,7 @@ void MoveToX(int x) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 Dikdörtgenin sol üst köşesinin mutlak x koordinatı.
 
 ### <a name="example"></a>Örnek
@@ -677,7 +677,7 @@ void MoveToXY(POINT point) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 Dikdörtgenin sol üst köşesinin mutlak x koordinatı.
 
 *Iz*<br/>
@@ -754,7 +754,7 @@ void OffsetRect(SIZE size) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 Sol veya sağ taşınacak miktarı belirtir. Sola ilerlemek için negatif olmalıdır.
 
 *Iz*<br/>

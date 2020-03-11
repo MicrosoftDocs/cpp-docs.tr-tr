@@ -14,11 +14,11 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::swap [C++]
 ms.openlocfilehash: b2be3e4a830113ee86a05fea0d39fd8e12ec3e9a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451583"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876158"
 ---
 # <a name="ltregexgt-functions"></a>&lt;Regex&gt; işlevleri
 
@@ -27,7 +27,7 @@ ms.locfileid: "68451583"
 |[regex_match](#regex_match)|Normal bir ifadenin tüm hedef dizeyle eşleşip eşleşmediğini sınar.|
 |[regex_replace](#regex_replace)|Eşleşen normal ifadeleri değiştirir.|
 |[regex_search](#regex_search)|Normal ifade eşleşmesi arar.|
-|[Kur](#swap)|İki `basic_regex` veya`match_results` nesneyi değiştirir.|
+|[Kur](#swap)|İki `basic_regex` veya `match_results` nesnesini değiştirir.|
 
 ## <a name="regex_match"></a>regex_match
 
@@ -85,13 +85,13 @@ bool regex_match(
 ### <a name="parameters"></a>Parametreler
 
 *BidIt*\
-Alt eşleşmeler için Yineleyici türü. Genel durumlar `string::const_iterator`için `wstring::const_iterator`, veya.`const char*` `const wchar_t*`
+Alt eşleşmeler için Yineleyici türü. Genellikle bu `string::const_iterator`, `wstring::const_iterator`, `const char*` veya `const wchar_t*`biridir.
 
-*Tahsis*\
+*Ayırma*\
 Eşleşen sonuç ayırıcısı sınıfı.
 
-*Elem*\
-Eşleşecek öğelerin türü. Yaygın durumlar `string`için, `char*` veya `wstring` olur.`wchar_t*`
+*Eled*\
+Eşleşecek öğelerin türü. Yaygın durumlarda bu `string`, `wstring`, `char*` veya `wchar_t*`.
 
 *Rxnitelikler*\
 Öğeler için nitelikler sınıfı.
@@ -105,32 +105,32 @@ Dize nitelikleri sınıfı.
 *Ioayırma*\
 Dize ayırıcı sınıfı.
 
-*larına*\
+*bayraklar*\
 Eşleşmeler için bayraklar.
 
-*adı*\
+*ilk*\
 Eşleştirilecek sıra başlangıcı.
 
-*soyadına*\
+*son*\
 Eşleştirilecek sıra sonu.
 
-*eşleşebilir*\
-Eşleşme sonucu. İçin elek türü: [smatch](../standard-library/regex-typedefs.md#smatch) `string`için `wstring`, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) , [cmatch](../standard-library/regex-typedefs.md#cmatch) `char*` for veya [wcmatch](../standard-library/regex-typedefs.md#wcmatch) `wchar_t*`öğesine karşılık gelir.
+\ *Eşleştir*
+Eşleşme sonucu. `string`için elek türü: [smatch](../standard-library/regex-typedefs.md#smatch) , `wstring`için [wsmatch](../standard-library/regex-typedefs.md#wsmatch) , `char*` için [cmatch](../standard-library/regex-typedefs.md#cmatch) veya `wchar_t*`için [wcmatch](../standard-library/regex-typedefs.md#wcmatch) öğesine karşılık gelir.
 
-*kaydetmeye*\
-Eşleştirilecek sıranın başlangıcı işaretçisi. `cmatch` *PTR* `char*`ise, ve`regex`kullanın. `wcmatch` *PTR* `wchar_t*` ise ve '`wregex`ı kullanır.
+*ptr*\
+Eşleştirilecek sıranın başlangıcı işaretçisi. *Ptr* `char*`, `cmatch` ve `regex`kullanın. *Ptr* `wchar_t*`, `wcmatch` ve `wregex`kullanın.
 
-*değerlendirmeyi*\
-Eşleştirilecek normal ifade. `regex` Veiçin,`wregex` veya için`wstring` yazın .`wchar_t*` `string` `char*`
+*yeniden*\
+Eşleştirilecek normal ifade. `string` ve `char*`için `regex`, `wstring` ve `wchar_t*`için `wregex` yazın.
 
-*üstbilgisine*\
+*str*\
 Eşleştirilecek dize. *Eled*türüne karşılık gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işlevi yalnızca, tüm işlenen dizisi *Str* , normal ifade bağımsız değişkeni *yeniden*ile tam olarak eşleşiyorsa true değerini döndürür. Hedef [](../standard-library/regex-functions.md#regex_search) dizi içindeki bir alt dizeyi eşleştirmek ve `regex_iterator` birden çok eşleşme bulmak için regex_search kullanın. Bir `match_results` nesneyi alan işlevler, eşleşmenin başarılı olup olmadığını yansıtmak için üyelerini, normal ifadede de bulunan çeşitli yakalama gruplarını yansıtır.
+Her şablon işlevi yalnızca, tüm işlenen dizisi *Str* , normal ifade bağımsız değişkeni *yeniden*ile tam olarak eşleşiyorsa true değerini döndürür. Hedef dizi içindeki bir alt dizeyle eşleştirmek için [regex_search](../standard-library/regex-functions.md#regex_search) kullanın ve birden çok eşleşme bulmak için `regex_iterator`. Bir `match_results` nesnesi alan işlevler, eşleşenlerin başarılı olup olmadığını yansıtmak için üyelerini ve Normal ifadedeki çeşitli yakalama gruplarının ne zaman yakalandığını yansıtacak şekilde ayarlar.
 
-Bir `match_results` nesneyi alan işlevler, eşleşmenin başarılı olup olmadığını yansıtmak için üyelerini, normal ifadede de bulunan çeşitli yakalama gruplarını yansıtır.
+Bir `match_results` nesnesi alan işlevler, eşleşenlerin başarılı olup olmadığını yansıtmak için üyelerini ve Normal ifadedeki çeşitli yakalama gruplarının ne zaman yakalandığını yansıtacak şekilde ayarlar.
 
 ### <a name="example"></a>Örnek
 
@@ -229,38 +229,38 @@ Alt eşleşmeler için Yineleyici türü.
 *Rxnitelikler*\
 Öğeler için nitelikler sınıfı.
 
-*Tahsis*\
+*Ayırma*\
 Normal ifade ayırıcısı sınıfı.
 
-*Elem*\
+*Eled*\
 Eşleşecek öğelerin türü.
 
-*larına*\
+*bayraklar*\
 Eşleşmeler için bayraklar.
 
-*adı*\
+*ilk*\
 Eşleştirilecek sıra başlangıcı.
 
-*FMT*\
+*fmt*\
 Değişiklik biçimi.
 
-*soyadına*\
+*son*\
 Eşleştirilecek sıra sonu.
 
-*dışı*\
+*out*\
 Çıkış Yineleyici.
 
-*değerlendirmeyi*\
+*yeniden*\
 Eşleştirilecek normal ifade.
 
-*üstbilgisine*\
+*str*\
 Eşleştirilecek dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev bir [regex_iterator sınıf](../standard-library/regex-iterator-class.md) nesnesi `iter(first, last, re, flags)` oluşturur ve onu kendi giriş aralığını `[first, last)` bir subsequences `T0 M0 T1 M1...TN-1 MN-1 TN`dizisine bölmek için kullanır; burada `Mn` Yineleyici tarafından algılanan n eşleşmedir. Hiçbir eşleşme bulunamazsa, `T0` tüm giriş aralığıdır ve `N` sıfırdır. Yalnızca ilk eşleşme kullanılırsa, `T1` eşleşmeyi izleyen giriş metninin hepsi ve `N` 1 ' dir. `(flags & format_first_only) != 0` Aralıkta bulunan `i` her biri `[0, N)` `(flags & format_no_copy) == 0` için aralıktaki `Ti` *metni Yineleyici olarak*kopyalar. Ardından öğesini çağırır `m.format(out, fmt, flags)`, burada `m` `match_results` , alt dizinin `iter` `Mi`Yineleyici nesnesinin döndürdüğü nesnedir. Son olarak, `(flags & format_no_copy) == 0` aralıktaki `TN` metni Yineleyici *dışına*kopyalar. İşlev *, döndürür.*
+İlk işlev `iter(first, last, re, flags)` bir [Regex_iterator sınıf](../standard-library/regex-iterator-class.md) nesnesi oluşturur ve bunu, giriş aralığı `[first, last)` bir dizi subsequences `T0 M0 T1 M1...TN-1 MN-1 TN`bölmek için kullanır; burada `Mn`, Yineleyici tarafından algılanan n eşleşme olur. Hiçbir eşleşme bulunmazsa, `T0` tüm giriş aralığıdır ve `N` sıfırdır. Yalnızca ilk eşleşme kullanılırsa `(flags & format_first_only) != 0`, eşleşmeyi izleyen tüm giriş metinlerini `T1` ve `N` 1 ' dir. `(flags & format_no_copy) == 0` `[0, N)`aralıktaki her `i` için, `Ti` aralıktaki metni Yineleyici *dışına*kopyalar. Daha sonra `m.format(out, fmt, flags)`çağırır; burada `m`, alt sıra `Mi`için Yineleyici nesne `iter` tarafından döndürülen `match_results` nesnesidir. Son olarak, `(flags & format_no_copy) == 0` `TN` aralıktaki metni Yineleyici *dışına*kopyalar. İşlev *, döndürür.*
 
-İkinci işlev, türünde `result` `basic_string<charT>` ve çağrılarından `regex_replace(back_inserter(result), str.begin(), str.end(), re, fmt, flags)`oluşan yerel bir değişken oluşturur. Döndürür `result`.
+İkinci işlev `basic_string<charT>` türünde bir yerel değişken `result` oluşturur ve `regex_replace(back_inserter(result), str.begin(), str.end(), re, fmt, flags)`çağırır. `result`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -356,10 +356,10 @@ bool regex_search(
 *BidIt*\
 Alt eşleşmeler için Yineleyici türü.
 
-*Tahsis*\
+*Ayırma*\
 Eşleşen sonuç ayırıcısı sınıfı.
 
-*Elem*\
+*Eled*\
 Eşleşecek öğelerin türü.
 
 *Rxnitelikler*\
@@ -374,30 +374,30 @@ Dize nitelikleri sınıfı.
 *Ioayırma*\
 Dize ayırıcı sınıfı.
 
-*larına*\
+*bayraklar*\
 Eşleşmeler için bayraklar.
 
-*adı*\
+*ilk*\
 Eşleştirilecek sıra başlangıcı.
 
-*soyadına*\
+*son*\
 Eşleştirilecek sıra sonu.
 
-*eşleşebilir*\
+\ *Eşleştir*
 Eşleşme sonucu.
 
-*kaydetmeye*\
+*ptr*\
 Eşleştirilecek sıranın başlangıcı işaretçisi.
 
-*değerlendirmeyi*\
+*yeniden*\
 Eşleştirilecek normal ifade.
 
-*üstbilgisine*\
+*str*\
 Eşleştirilecek dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işlevi, yalnızca kendi normal ifade bağımsız değişkeni için işlenen dizisinde *yeniden* bir arama başarılı olursa true değerini döndürür. Bir `match_results` nesneyi alan işlevler, aramanın başarılı olup olmadığını ve bu nedenle normal ifadede çeşitli yakalama gruplarının ne zaman yakalandığını yansıtacak şekilde kendi üyelerini ayarladı.
+Her şablon işlevi, yalnızca kendi normal ifade bağımsız değişkeni için işlenen dizisinde *yeniden* bir arama başarılı olursa true değerini döndürür. `match_results` nesnesini alan işlevler, arama başarılı olup olmadığını ve bu nedenle normal ifadede çeşitli yakalama gruplarının ne zaman yakalandığını yansıtacak şekilde üyelerini ayarlar.
 
 ### <a name="example"></a>Örnek
 
@@ -457,7 +457,7 @@ search(string, "abc") == true
 
 ## <a name="swap"></a>Kur
 
-İki `basic_regex` veya`match_results` nesneyi değiştirir.
+İki `basic_regex` veya `match_results` nesnesini değiştirir.
 
 ```cpp
 template <class Elem, class RXtraits>
@@ -473,7 +473,7 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled*\
 Eşleşecek öğelerin türü.
 
 *Rxnitelikler*\
@@ -520,11 +520,11 @@ string == aaa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)\
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
-[regex_error sınıfı](../standard-library/regex-error-class.md)\
-[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<Regex > işleçleri](../standard-library/regex-operators.md)\
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
-[regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<tür tanımları > Regex](../standard-library/regex-typedefs.md)
+[\<regex >](../standard-library/regex.md)\
+[Regex_constants sınıfı](../standard-library/regex-constants-class.md)\
+[Regex_error sınıfı](../standard-library/regex-error-class.md)\
+[Regex_iterator sınıfı](../standard-library/regex-iterator-class.md)\
+[\<regex > işleçleri](../standard-library/regex-operators.md)\
+[Regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
+[regex_traits sınıfı](../standard-library/regex-traits-class.md)\
+[\<Regex > tür tanımları](../standard-library/regex-typedefs.md)

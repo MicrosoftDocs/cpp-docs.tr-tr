@@ -3,59 +3,59 @@ title: x64 yığın kullanımı
 ms.date: 12/17/2018
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
 ms.openlocfilehash: 902e4304ac124be46c6edf0860118dc522b34890
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314820"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856969"
 ---
 # <a name="x64-stack-usage"></a>x64 yığın kullanımı
 
-Tüm geçerli adresi RSP bellekten geçici olarak kabul edilir: İşletim sistemi veya bir hata ayıklayıcı bu bellek kullanıcı hata ayıklama oturumu veya kesinti işleyicisinin sırasında üzerine yazabilir. Bu nedenle, RSP her zaman bir yığın çerçevesine değerleri okunamıyor veya yazılamıyor denemeden önce ayarlanmalıdır.
+Geçerli RSP adresinin ötesinde tüm bellek geçici olarak değerlendirilir: işletim sistemi veya hata ayıklayıcı, Kullanıcı hata ayıklama oturumu sırasında bu belleğin üzerine yazabilir veya bir kesme işleyicisi olabilir. Bu nedenle, bir yığın çerçevesinin değerlerini okumaya veya yazmaya çalışmadan önce RSP her zaman ayarlanmalıdır.
 
-Bu bölümde, yerel değişkenler için yığın alanı ayırma anlatılmaktadır ve **alloca** iç.
+Bu bölümde yerel değişkenler için yığın alanının ayrılması ve **alloca** iç sürümü ele alınmaktadır.
 
 ## <a name="stack-allocation"></a>Yığın ayırma
 
-Bir işlevin giriş yığın alanı yerel değişkenler için sorumlu olan, kaydedilmiş yazmaçlar, parametreleri yığın ve parametreleri kaydedin.
+Bir işlevin girişi, yerel değişkenler, kayıtlı Yazmaçları, yığın parametreleri ve kayıt parametreleri için yığın alanı ayırmaktan sorumludur.
 
-Parametre alanı her zaman yığının en altında olduğu (bile `alloca` kullanılır), böylece bu her zaman herhangi bir işlev çağrısı sırasında dönüş adresi için bitişik olacaktır. En az dört girişler içeriyor, ancak tüm parametreleri tutmak için yeterli alan çağrılabilir hiçbir işlev tarafından her zaman gerekli. Parametreleri yığına hiçbir zaman barındırılan olsa bile alan kayıt parametreleri için her zaman ayrılır dikkat edin. bir çağrılan alanı tüm parametreleri için ayrıldı garanti edilir. Bağımsız değişken listesi (va_list) ya da tek bir bağımsız değişken adresini almak çağrılan işlev ihtiyacı ardışık bir alanı kullanılabilir olması, ev adresleri yazmaç bağımsız değişkenleri gereklidir. Bu alan ayrıca kayıt bağımsız değişkenleri dönüştürücü yürütme sırasında ve hata ayıklama seçeneği olarak kaydetmek için uygun bir yer sağlar (örneğin, bağımsız değişkenler ev adreslerini giriş kodu içinde depolanıyorsa hata ayıklama sırasında bulmayı kolaylaştırır). Çağrılan işlev en az 4 parametreleri olsa bile, bu 4 yığın konumlarının etkili bir şekilde çağrılan işlev tarafından sahip olunan ve parametre kayıt değerlerini kaydetme yanı sıra diğer amaçlar için çağrılan işlev tarafından kullanılıyor olabilir.  Bu nedenle arayan bilgileri yığınının bu bölgede bir işlev çağrısı kaydedemeyebilir.
+Parametre alanı her zaman yığının en altında (`alloca` kullanılsa bile), her zaman herhangi bir işlev çağrısı sırasında dönüş adresine bitişik olacak. En az dört giriş içerir, ancak çağrılabilir herhangi bir işlev için gereken tüm parametreleri tutmak için yeterli alan yok. Parametrelerin kendileri hiçbir zaman yığına bağlı olmasa bile, kayıt parametreleri için alanın her zaman ayrıldığını unutmayın; çağrılan, alanın tüm parametreleri için ayrıldığı garantisi verir. Kayıt bağımsız değişkenleri için giriş adresleri gereklidir, böylece çağrılan işlevin bağımsız değişken listesinin adresini (va_list) veya bağımsız bir bağımsız değişkeni alması gerektiğinde bitişik bir alanın kullanılabilir olması gerekir. Bu alan Ayrıca, dönüştürücü yürütme sırasında kayıt bağımsız değişkenlerini kaydetmek için uygun bir yer sağlar ve bir hata ayıklama seçeneği olarak (örneğin, giriş kodundaki ana adreslerinde depolandıklarında, hata ayıklama sırasında bağımsız değişkenleri bulmayı kolaylaştırır). Çağrılan işlev 4 ' ten az parametreye sahip olsa da, bu 4 yığın konumları çağrılan işleve etkin bir şekilde sahip olur ve parametre kayıt değerlerini kaydetme yanı sıra çağrılan işlev tarafından başka amaçlar için de kullanılabilir.  Bu nedenle, çağıran bir işlev çağrısında bu yığın bölgesinde bilgi kaydedemez.
 
-Alan dinamik olarak ayırdığınızda (`alloca`) bir işlevde sonra bir kayıt çerçeve işaretçisi olarak tabanı yığın sabit bir parçası olarak işaretlemek için kullanılmalıdır ve kayıt kaydedildi ve giriş bölümünde başlatıldı. Dikkat edin `alloca` olan kullanıldığında, aynı çağrılan çağrıları aynı kayıt parametreleri için farklı ev adresleri olabilir.
+Bir işlevde bir boşluk dinamik olarak ayrılmışsa (`alloca`), kalıcı bir kaydın yığının sabit bölümünün temelini işaretlemek için bir çerçeve işaretçisi olarak kullanılması gerekir ve bu kayıt, giriş bölümünde kaydedilip başlatılmalıdır. `alloca` kullanıldığında, aynı çağırandan aynı çağrılan çağrıların, kayıt parametrelerine ait farklı giriş adreslerine sahip olabileceğini unutmayın.
 
-Yığın her zaman 16 baytlık korunur hizalanmış, giriş (örneğin, sonra dönüş adresi gönderilir) ve belirtilen belirtilmediği [işlev türleri](#function-types) çerçeve işlevlerinin belirli bir sınıf için.
+Yığın, giriş (örneğin, dönüş adresi gönderildikten sonra) ve belirli bir çerçeve işlevleri sınıfı için [Işlev türlerinde](#function-types) belirtilen durumlar dışında, her zaman 16 baytlık hizalanmış bir şekilde korunur.
 
-Burada A'dan B'ye işlevi giriş yaprak olmayan bir işlev çağrıları işlev yığın düzeni örneği zaten yığının sonuna B için gerekli tüm kayıt ve yığın parametreler için alanı ayırdığı verilmiştir. Çağrının dönüş adresi gönderir ve yerel değişkenleri ve kalıcı kayıtlar işlevleri çağırmak için ihtiyaç duyulan alanı B kullanıcısının giriş alanı ayırır. B kullanıyorsa `alloca`, yerel değişken/kalıcı kayıt kaydetme alanı ve parametre yığın alanı arasında ayrılmış alanı.
+Aşağıda, işlev A 'nın yaprak olmayan bir işlevi çağırdığı bir yığın düzenine örnek verilmiştir. Işlev A 'nın girişi, yığının en altında B için gereken tüm yazmaç ve yığın parametreleri için zaten alan ayırmıştır. Çağrı, dönüş adresini ve B 'nin giriş alanını, yerel değişkenleri, kalıcı yazmaçları ve işlevleri çağırmak için gereken alanı ayırır. B `alloca`kullanıyorsa, alan yerel değişken/kalıcı kayıt kaydetme alanı ve parametre yığın alanı arasında ayrılır.
 
-![AMD dönüştürme örnek](../build/media/vcamd_conv_ex_5.png "AMD dönüştürme örneği")
+![AMD dönüştürme örneği](../build/media/vcamd_conv_ex_5.png "AMD dönüştürme örneği")
 
-Dönüş adresi B işlevi başka bir işlevi çağırdığında, yalnızca aşağıdaki ev adresi RCX için gönderilir.
+B işlevi başka bir işlevi çağırdığında, dönüş adresi RCX giriş adresinin hemen altına gönderilir.
 
-## <a name="dynamic-parameter-stack-area-construction"></a>Dinamik parametre yığın alanı yapımı
+## <a name="dynamic-parameter-stack-area-construction"></a>Dinamik parametre yığın alanı oluşturma
 
-Çerçeve işaretçisini kullandıysanız, dinamik parametre yığın alanı oluşturmak için seçeneği bulunmaktadır. Bu şu anda içinde x64 yapılmadığı derleyici.
+Bir çerçeve işaretçisi kullanılıyorsa, parametre yığın alanını dinamik olarak oluşturmak için seçeneği vardır. Bu, şu anda x64 derleyicisinde yapılmamaktadır.
 
 ## <a name="function-types"></a>İşlev türleri
 
-Temel işlevleri iki tür vardır. Bir yığın çerçevesini gerektiren bir işlev çağrılır bir *çerçeve işlevi*. Bir yığın çerçevesini gerektirmeyen bir işlevi çağrıldığında bir *yaprak işlevi*.
+Temel olarak iki tür işlev vardır. Yığın çerçevesini gerektiren bir işleve *çerçeve işlevi*denir. Yığın çerçevesi gerektirmeyen bir işleve *yaprak işlevi*denir.
 
-Yığın alanı ayırır, diğer işlevleri çağırır, kalıcı Yazmaçları kaydeder veya özel durum işleme kullanan bir işlev bir çerçeve işlevidir. Ayrıca, bir işlevin tablo girişi gerektirir. Çerçeve işlevi, bir giriş ve bitiş gerektirir. Çerçeve işlevi yığın alanı dinamik olarak ayırabilir ve bir çerçeve işaretçisi tercih edebilirsiniz. Çerçeve işlevi tüm özelliklerini, atma standart çağırma vardır.
+Çerçeve işlevi, yığın alanı ayıran, diğer işlevleri çağıran, kalıcı kayıtları kaydeden veya özel durum işlemeyi kullanan bir işlevdir. Ayrıca bir işlev tablosu girişi gerektirir. Çerçeve işlevi, giriş ve bitiş gerektirir. Çerçeve işlevi, yığın alanı dinamik olarak ayırabilir ve bir çerçeve işaretçisi kullanabilir. Çerçeve işlevi, bu çağrıyı yapan standart 'nin elden çıkarılmasında tam yeteneklere sahiptir.
 
-Çerçeve işlevi başka bir işlevi çağırmadığı sonra yığın hizalamak için gerekli değildir (bölümünde başvurulan [yığın ayırma](#stack-allocation)).
+Bir çerçeve işlevi başka bir işlevi çağırmıyorsa, yığını hizalamak gerekmez (bölüm [yığını ayırmada](#stack-allocation)başvurulur).
 
-Bir yaprak işlev bir tablo girişi gerektirmeyen bir işlevdir. Bu, onun tüm işlevler veya yığın alanı ayırmak, yani RSP dahil olmak üzere tüm kalıcı Yazmaçları değişiklik yapamazsınız. Yığın yürütürken hizalanmamış bırakın izin verilir.
+Yaprak işlev, işlev tablosu girişi gerektirmeyen bir işlevdir. RSP de dahil olmak üzere herhangi bir kalıcı kayıt üzerinde değişiklik yapamaz, bu da hiçbir işlevi çağıramayacağı veya yığın alanı ayıramayacağı anlamına gelir. Yürütülürken yığının hizalanmamış olmasına izin verilir.
 
 ## <a name="malloc-alignment"></a>malloc hizalaması
 
-[malloc](../c-runtime-library/reference/malloc.md) temel hizalama ve, olan herhangi bir nesneyi depolamak için ayrılan bellek miktarına uygun olabilecek için uygun şekilde hizalanmış belleğe dönmesi garanti edilir. A *temel hizalama* hizalama belirtimleri olmaksızın uygulamayla desteklenen en geniş hizalamadan küçük veya ona eşit olan hizalamadır. (Visual C++'da, bunun için gerekli olan hizalamadır bir `double`, veya 8 bayt. 64-bit platformları hedefleyen kodda, 16 bayttır.) Örneğin, dört baytlık bir atama dört bayt veya daha küçük bir nesne destekleyen bir sınır üzerinde hizalanabilir.
+[malloc](../c-runtime-library/reference/malloc.md) , temel hizalaması olan ve ayrılan bellek miktarına uyalabilen herhangi bir nesneyi depolamak için uygun şekilde hizalı belleği döndürecek şekilde garanti edilir. *Temel hizalama* , bir hizalama belirtimi olmadan uygulamanın desteklediği en büyük hizalamadan küçük veya ona eşit olan hizalamadır. (Görselde C++, `double`veya 8 bayt için gerekli olan hizalamadır. 64 bitlik platformları hedefleyen kodda 16 bayttır.) Örneğin, dört baytlık bir ayırma dört baytlık veya daha küçük bir nesneyi destekleyen bir sınır üzerinde hizalanabilir.
 
-Visual C++ verir sahip türleri *genişletilmiş hizaya*, olarak da bilinen olduğu *aşırı hizalanmış* türleri. Örneğin SSE türleri [__m128](../cpp/m128.md) ve `__m256`ve kullanılarak bildirilen türler `__declspec(align( n ))` burada `n` 8'den büyükse, genişletilmiş hizaya sahiptir. Genişletilmiş hizalama gerektiren bir nesne için uygun olan bir sınır üzerinde bellek hizalama tarafından garanti edilmez `malloc`. Aşırı hizalanmış türlere bellek ayırmak için kullanmak [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) ve ilgili işlevleri.
+Görsel C++ , daha *fazla hizalanmış* türler olarak da bilinen *genişletilmiş hizalaması*olan türlere izin verir. Örneğin, SSE türü [__m128](../cpp/m128.md) ve `__m256`ve `n` 8 ' den büyük olan `__declspec(align( n ))` kullanılarak belirtilen türler, genişletilmiş hizalamadır. Genişletilmiş hizalama gerektiren bir nesne için uygun olan bir sınır üzerindeki bellek hizalaması `malloc`tarafından garanti edilmez. Fazla hizalanmış türler için bellek ayırmak üzere [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) ve ilgili işlevleri kullanın.
 
 ## <a name="alloca"></a>alloca
 
-[_alloca](../c-runtime-library/reference/alloca.md) 16 bayt olacak şekilde hizalanmış ve ayrıca bir çerçeve işaretçisi kullanmak için gereklidir.
+[_alloca](../c-runtime-library/reference/alloca.md) , 16 baytlık hizalanmış ve ek olarak bir çerçeve işaretçisi kullanmak için gereklidir.
 
-Ayrılmış yığın alanı sonra daha sonra çağrılan işlevlerin parametreleri için açıklandığı gibi eklemis [yığın ayırma](#stack-allocation).
+Ayrılan yığının, [yığın ayırma](#stack-allocation)bölümünde anlatıldığı gibi, daha sonra çağrılan işlevlerin parametreleri için öğesinden sonra boşluk eklemesi gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

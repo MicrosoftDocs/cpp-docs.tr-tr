@@ -5,34 +5,34 @@ helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
 ms.openlocfilehash: ad880c5302fd2274c5d46719e912461fd7497f10
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611020"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78854087"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 
-Biçimlendirme ve ayrıştırma için çok sayıda işlev sağlanan `CString` nesneleri. İşlemek olduğunda, bu işlevler kullanabilirsiniz `CString` nesneleri, ancak ileti kutusu metinde görünür dizeleri biçimlendirme için yararlıdır.
+`CString` nesneleri biçimlendirmek ve ayrıştırmak için bir dizi işlev sağlanır. `CString` nesnelerini her işlemek gerektiğinde bu işlevleri kullanabilirsiniz, ancak bunlar özellikle ileti kutusu metninde görünecek dizeleri biçimlendirmek için yararlıdır.
 
-Bu grubun işlevleri, ayrıca bir ileti kutusu görüntülemek için genel bir yordamı içerir.
+Bu işlev grubu ayrıca bir ileti kutusu görüntülemek için genel bir yordam içerir.
 
-### <a name="cstring-functions"></a>CString işlevleri
+### <a name="cstring-functions"></a>CString Işlevleri
 
 |||
 |-|-|
-|[AfxExtractSubString](#afxextractsubstring)|Belirtilen kaynak dizeden tek bir karakter ile ayrılmış alt dizeler ayıklar.|
-|[AfxFormatString1](#afxformatstring1)|Alternatifler dize tablosunda bir dizedeki karakterleri "%1" biçimlendirmek için belirli bir dize içeriyordu.|
-|[AfxFormatString2](#afxformatstring2)|Alternatifler iki dize biçimi için "%1" ve "% dize tablosunda bulunan 2" bir dizedeki karakter.|
+|[AfxExtractSubString](#afxextractsubstring)|Belirli bir kaynak dizeden tek bir karakterle ayrılmış alt dizeleri ayıklar.|
+|[AfxFormatString1](#afxformatstring1)|"%1" biçim karakterleri için dize tablosunda yer alan bir dizedeki belirli bir dizeyi değiştirir.|
+|[AfxFormatString2](#afxformatstring2)|"%1" ve "%2" biçim karakterleri için dize tablosunda yer alan bir dizedeki iki dizeyi değiştirir.|
 |[AfxMessageBox](#afxmessagebox)|Bir ileti kutusu görüntüler.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxwin.h
+  **Başlık** Afxwin. h
 
-##  <a name="afxextractsubstring"></a>  AfxExtractSubString
+##  <a name="afxextractsubstring"></a>AfxExtractSubString
 
-Bu genel işlevi, bir alt dizenin belirtilen kaynak çıkartmak için kullanılabilir.
+Bu genel işlev, belirli bir kaynak dizeden bir alt dize ayıklamak için kullanılabilir.
 
 ```
 BOOL AFXAPI AfxExtractSubString (
@@ -45,26 +45,26 @@ BOOL AFXAPI AfxExtractSubString (
 ### <a name="parameters"></a>Parametreler
 
 *rString*<br/>
-Başvuru bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesini tek bir alt dize alır.
+Tek bir alt dize alacak bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesine başvuru.
 
 *lpszFullString*<br/>
-Tam metin ayıklamak için dize içeren dize.
+Dizeden Ayıklanacak dizenin tam metnini içeren dize.
 
-*iSubString*<br/>
-Sıfır tabanlı dizin ayıklamak için alt dizenin *lpszFullString*.
+*ıubstring*<br/>
+*LpszFullString*öğesinden Ayıklanacak alt dizenin sıfır tabanlı dizini.
 
 *chSep*<br/>
-Alt dizeler sınırlandırmak için kullanılan ayırıcı karakter.
+Alt dizeleri sınırlandırmak için kullanılan ayırıcı karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarıyla alt dizenin belirtilen dizindeki ayıklanan TRUE; Aksi takdirde FALSE.
+İşlev, alt dizeyi belirtilen dizinde başarıyla ayıkladığında TRUE. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, her alt dizenin bilinen tek bir karakter ayıran bir kaynak dizedeki birden çok alt dizeler ayıklanmasında yararlıdır. Bu işlev arar başından *lpszFullString* parametresi çağırıldığında her zaman.
+Bu işlev, bilinen bir tek karakter her alt dizeyi ayırdığı zaman bir kaynak dizeden birden çok alt dizeyi ayıklamak için faydalıdır. Bu işlev, her çağrılışında *lpszFullString* parametresinin başından itibaren arar.
 
-Bu işlev ya da FALSE döndüreceği *lpszFullString* NULL olarak ayarlandı veya işlevin sonuna ulaşıldığında *lpszFullString* bulma olmadan *iSubString*+ 1 Belirtilen ayırıcıyı tekrarı. *RString* parametresi değiştirilmeyecek özgün değeri varsa *lpszFullString* NULL; Aksi takdirde ayarlandı *rString* parametresi varsa boş dize olarak ayarlayın alt dizenin belirtilen dizin için ayıklanamadı.
+Bu işlev, *LPSZFULLSTRING* null olarak ayarlandıysa ya da işlev, belirtilen ayırıcı karakterin *ısubstring*+ 1 tekrarlamalarını bulmaksızın *lpszFullString* sonuna ulaşırsa false döndürür. *LPSZFULLSTRING* null olarak ayarlandıysa, *rString* parametresi özgün değerinden değiştirilmez; Aksi halde, belirtilen dizin için alt dize ayıklanamadı *rString* parametresi boş dizeye ayarlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -72,11 +72,11 @@ Bu işlev ya da FALSE döndüreceği *lpszFullString* NULL olarak ayarlandı vey
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxwin.h
+  **Başlık** Afxwin. h
 
-##  <a name="afxformatstring1"></a>  AfxFormatString1
+##  <a name="afxformatstring1"></a>AfxFormatString1
 
-İşaret ettiği dizeyi değiştirir *lpsz1* tarafından tanımlanan şablon dize kaynağı "%1" karakterleri, tüm örnekler için *nIDS*.
+"%1" karakterlerinin herhangi bir örneği için *lpsz1* tarafından işaret edilen dizeyi, *NIDS*tarafından tanımlanan şablon dizesi kaynağında değiştirir.
 
 ```
 void  AfxFormatString1(
@@ -88,19 +88,19 @@ void  AfxFormatString1(
 ### <a name="parameters"></a>Parametreler
 
 *rString*<br/>
-Bir başvuru bir `CString` değiştirme işlemi gerçekleştirildikten sonra sonuç dizesi içeren bir nesne.
+Değiştirme gerçekleştirildikten sonra sonuçtaki dizeyi içeren `CString` nesnesine bir başvuru.
 
-*nIDS*<br/>
-Değiştirme gerçekleştirilecek şablon dize kaynak kimliği.
+*Nkimlikler*<br/>
+Değiştirme gerçekleştirileceği şablon dizesinin kaynak KIMLIĞI.
 
 *lpsz1*<br/>
-"%1" şablonu dizesi karakterlerin biçimi yerini alacak bir dize.
+Şablon dizesindeki "%1" biçim karakterlerinin yerini alacak bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir biçimlendirilmiş dize depolanan *rString*. Örneğin, dize tablosunda bir dize "Dosyası %1 bulunamadı" ise ve *lpsz1* "için C:\MYFILE. eşittir TXT", ardından *rString* "dosyası C:\MYFILE. dize içerir TXT"bulunamadı. Bu işlev, ileti kutularını ve diğer windows gönderilen dizeleri biçimlendirme için yararlıdır.
+Yeni oluşturulan dize, *rString*içinde depolanır. Örneğin, dize tablosundaki dize "dosya %1 bulunamadı" ise ve *lpsz1* şuna eşitse "C:\MYFILE. TXT ", ardından *rString* " dosya c:\FILE"dizesini içerir. TXT bulunamadı ". Bu işlev ileti kutularına ve diğer pencereler için gönderilen dizeleri biçimlendirmek için yararlıdır.
 
-Biçim karakterleri "%1" dizesinde birden çok kez görünüyorsa, birden çok değişimler sunulacaktır.
+"%1" biçim karakterleri dizede birden çok kez görünürse, birden çok değiştirme yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -108,11 +108,11 @@ Biçim karakterleri "%1" dizesinde birden çok kez görünüyorsa, birden çok d
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxwin.h
+  **Başlık** Afxwin. h
 
-##  <a name="afxformatstring2"></a>  AfxFormatString2
+##  <a name="afxformatstring2"></a>AfxFormatString2
 
-İşaret ettiği dizeyi değiştirir *lpsz1* tüm karakterleri "%1" örneklerini ve işaret ettiği dizeyi *lpsz2* şablon dize kaynağı "%2" karakterleri, tüm örnekler için tarafından tanımlanan *nIDS*.
+"%1" karakterlerinin herhangi bir örneği için *lpsz1* tarafından işaret edilen dizeyi ve *NIDS*tarafından tanımlanan şablon dizesi kaynağındaki "%2" karakterlerinin herhangi bir örneği için *lpsz2* tarafından işaret edilen dizeyi değiştirir.
 
 ```
 void AfxFormatString2(
@@ -125,22 +125,22 @@ void AfxFormatString2(
 ### <a name="parameters"></a>Parametreler
 
 *rString*<br/>
-Bir başvuru `CString` değiştirme işlemi gerçekleştirildikten sonra sonuç dize içerecek.
+Değiştirme gerçekleştirildikten sonra sonuçtaki dizeyi içeren `CString` başvurusu.
 
-*nIDS*<br/>
-Değiştirme gerçekleştirilecek şablonu dizesi dize tablo kimliği.
+*Nkimlikler*<br/>
+Değiştirme gerçekleştirileceği şablon dizesinin dize tablo KIMLIĞI.
 
 *lpsz1*<br/>
-"%1" şablonu dizesi karakterlerin biçimi yerini alacak bir dize.
+Şablon dizesindeki "%1" biçim karakterlerinin yerini alacak bir dize.
 
 *lpsz2*<br/>
-"%2" şablonu dizesi karakterlerin biçimi yerini alacak bir dize.
+Şablon dizesindeki "%2" biçim karakterlerinin yerini alacak bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir biçimlendirilmiş dize depolanan *rString*. Örneğin, "Dosyası %1 %2 dizini içinde bulunamadı" dize tablosunda bir dize ise, *lpsz1* işaret "MYFILE için. "TXT", ve *lpsz2* "C:\MYDIR", ardından işaret *rString* "MYFILE dosyası. dize içerir TXT"C:\MYDIR dizinde bulunamadı
+Yeni oluşturulan dize, *rString*içinde depolanır. Örneğin, dize tablosundaki dize "%2 dizininde bulunamayan dosya %1" ise, *lpsz1* "dosyam" olarak işaret eder. TXT "ve *lpsz2* " c:\mydir "olarak işaret ediyorsa, *rString* " dosya dosyam "dizesini içerir. TXT C:\DIR "dizininde bulunamadı
 
-Biçim karakterleri "%1" veya "%2" dizesinde birden çok kez görünmesi, birden çok değişimler sunulacaktır. Sayısal olması gerekmez.
+"%1" veya "%2" biçim karakterleri dizede birden çok kez görünürse, birden çok değişim yapılır. Bunların sayısal sırada olması gerekmez.
 
 ### <a name="example"></a>Örnek
 
@@ -148,9 +148,9 @@ Biçim karakterleri "%1" veya "%2" dizesinde birden çok kez görünmesi, birden
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxwin.h
+  **Başlık** Afxwin. h
 
-##  <a name="afxmessagebox"></a>  AfxMessageBox
+##  <a name="afxmessagebox"></a>AfxMessageBox
 
 Ekranda bir ileti kutusu görüntüler.
 
@@ -169,44 +169,44 @@ int AFXAPI AfxMessageBox(
 ### <a name="parameters"></a>Parametreler
 
 *lpszText*<br/>
-İşaret eden bir `CString` nesne veya ileti kutusunda görüntülenecek iletiyi içeren null ile sonlandırılmış dize.
+İleti kutusunda görüntülenecek iletiyi içeren bir `CString` nesnesine veya null ile sonlandırılmış dizeye işaret eder.
 
 *nTür*<br/>
-İleti kutusunun stili. Atanamadığı [ileti kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#message-box-styles) kutusu.
+İleti kutusunun stili. Kutuya [ileti kutusu stillerinden](../../mfc/reference/styles-used-by-mfc.md#message-box-styles) birini uygulayın.
 
 *nIDHelp*<br/>
-İleti için Yardım içeriği kimliği; 0 uygulamanın varsayılan Yardım içeriğinin kullanılacak gösterir.
+İleti için yardım bağlam KIMLIĞI; 0, uygulamanın varsayılan yardım bağlamını kullanacağını gösterir.
 
 *nIDPrompt*<br/>
-Dize tablosunda bir dize başvurmak için kullanılan benzersiz kimliği.
+Dize tablosundaki bir dizeye başvurmak için kullanılan benzersiz bir KIMLIK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti kutusu görüntülemek için yeterli bellek yoksa sıfır; Aksi halde aşağıdaki değerlerden biri döndürülür:
+İleti kutusunu göstermek için yeterli bellek yoksa sıfır; Aksi takdirde, aşağıdaki değerlerden biri döndürülür:
 
-- IDABORT Durdur düğmesi seçilmiştir.
+- Durdur düğmesi seçildi.
 
-- IDCANCEL iptal düğmesi seçilmiştir.
+- IDCANCEL Iptal düğmesi seçildi.
 
-- IDIGNORE yoksay düğmesi seçilmiştir.
+- IDıGNORE yoksay düğmesi seçildi.
 
-- IDNO Hayır düğmesi seçilmiştir.
+- IDNO düğmesi seçilmedi.
 
-- IDOK Tamam düğmesi seçilmiştir.
+- IDOK Tamam düğmesi seçildi.
 
-- IDRETRY yeniden dene düğmesi seçilmiştir.
+- IDRETRY yeniden dene düğmesi seçildi.
 
 - IDYES Evet düğmesi seçilmiştir.
 
-Bir ileti kutusunda İptal düğmesi varsa, ESC tuşuna basıldığında veya iptal düğmesi seçili IDCANCEL değeri döndürülür. İleti kutusunda İptal düğmesi varsa, ESC tuşuna basarak etkisizdir.
+İleti kutusunda bir Iptal düğmesi varsa, ESC tuşuna basıldığında ya da Iptal düğmesi seçiliyse ıDCANCEL değeri döndürülür. İleti kutusunda Iptal düğmesi yoksa, ESC tuşuna basıldığında hiçbir etkisi olmaz.
 
-İşlevleri [AfxFormatString1](#afxformatstring1) ve [AfxFormatString2](#afxformatstring2) bir ileti kutusunda görünen metni biçimlendirirken olabilir.
+[AfxFormatString1](#afxformatstring1) ve [AfxFormatString2](#afxformatstring2) işlevleri, bir ileti kutusunda görüntülenen metinde biçimlendirme yararlı olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ilk formu aşırı yüklenmiş bir metin dizesi tarafından işaret edilen işlevi görüntüler *lpszText* kullanır ve ileti kutusu içinde *nIDHelp* Yardım içeriğini açıklamak için. Kullanıcı Yardım tuşuna (genellikle F1) bastığında, ilişkili bir Yardım konusuna atlamak için Yardım bağlamında kullanılır.
+Bu aşırı yüklenmiş işlevin ilk formu ileti kutusunda *lpszText* tarafından işaret edilen bir metin dizesini görüntüler ve bir yardım bağlamını anlatmak Için *nIDHelp* kullanır. Yardım bağlamı, Kullanıcı Yardım tuşuna bastığında (genellikle F1) ilişkili bir yardım konusuna geçmek için kullanılır.
 
-İşlevin ikinci formu Kimliğiyle dize kaynağını kullanır *nIDPrompt* ileti kutusunda bir ileti görüntülemek için. İlişkili Yardım sayfası değeri aracılığıyla bulunur *nIDHelp*. Varsa varsayılan değer olan *nIDHelp* kullanılan (-1), dize kaynak kimliği *nIDPrompt*, Yardım bağlamında kullanılır. Yardım bağlamlarının tanımlanması hakkında daha fazla bilgi için bkz. [Teknik Not 28](../../mfc/tn028-context-sensitive-help-support.md).
+İşlevin ikinci formu, ileti kutusunda bir ileti göstermek için ID *nIDPrompt* ile dize kaynağını kullanır. İlişkili Yardım sayfası, *nIDHelp*değeri aracılığıyla bulunur. Varsayılan *nIDHelp* değeri kullanılırsa (-1), DIZE kaynak kimliği, *nIDPrompt*, yardım bağlamı için kullanılır. Yardım bağlamlarını tanımlama hakkında daha fazla bilgi için bkz. [teknik notta 28](../../mfc/tn028-context-sensitive-help-support.md).
 
 ### <a name="example"></a>Örnek
 
@@ -214,5 +214,5 @@ Bu ilk formu aşırı yüklenmiş bir metin dizesi tarafından işaret edilen i�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CStringT Sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)

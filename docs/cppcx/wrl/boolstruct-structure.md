@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::BoolStruct::Member data member
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
 ms.openlocfilehash: cdec425e317585abbd9730447e2c4fbb19b8250a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398777"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865722"
 ---
 # <a name="boolstruct-structure"></a>BoolStruct Yapısı
 
@@ -28,15 +28,15 @@ struct BoolStruct;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`BoolStruct` Yapısını tanımlar olup olmadığını bir `ComPtr` bir arabirimin nesne ömrü yönetimi. `BoolStruct` tarafından dahili olarak kullanılan [BoolType()](comptr-class.md#operator-microsoft-wrl-details-booltype) işleci.
+`BoolStruct` yapısı, bir `ComPtr` arabirimin nesne ömrünü yönetip yönetmediğini tanımlar. `BoolStruct`, [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) işleci tarafından dahili olarak kullanılır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-Ad                          | Açıklama
+Adı                          | Açıklama
 ----------------------------- | ------------------------------------------------------------------------------------------------------------------
-[BoolStruct::Member](#member) | Belirten bir [ComPtr](comptr-class.md) ya da bir arabirimin nesnenin ömrünü yönetmek değildir.
+[BoolStruct:: member](#member) | Bir arabirimin nesne ömrünü yöneten bir [ComPtr](comptr-class.md) veya değil olduğunu belirtir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -44,11 +44,11 @@ Ad                          | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** internal.h
+**Üst bilgi:** iç. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="member"></a>BoolStruct::Member
+## <a name="member"></a>BoolStruct:: member
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -58,4 +58,4 @@ int Member;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirten bir [ComPtr](comptr-class.md) ya da bir arabirimin nesnenin ömrünü yönetmek değildir.
+Bir arabirimin nesne ömrünü yöneten bir [ComPtr](comptr-class.md) veya değil olduğunu belirtir.

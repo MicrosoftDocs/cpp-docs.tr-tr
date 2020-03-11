@@ -15,15 +15,15 @@ helpviewer_keywords:
 - std::time_put [C++], put
 ms.assetid: df79493e-3331-48d2-97c3-ac3a745f0791
 ms.openlocfilehash: 2c0ae501693a8abffc72a23be9c427f31bad65b6
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72685429"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867319"
 ---
 # <a name="time_put-class"></a>time_put Sınıfı
 
-Sınıf şablonu, zaman değerlerinin `CharType` türlerine dönüştürmelerini denetlemek için bir yerel ayar modeli olarak işlev görebilecek bir nesne tanımlar.
+Sınıf şablonu, zaman değerlerinin `CharType`türlerine dönüştürmelerini denetlemek için bir yerel ayar modeli olarak işlev görebilecek bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,10 +35,10 @@ class time_put : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* \
+*CharType*\
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
-*OutputIterator* \
+*OutputIterator*\
 Saat koyma işlevlerinin kendi çıktılarının yazılacağı yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -49,7 +49,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[time_put](#time_put)|@No__t_0 türündeki nesneler için Oluşturucu.|
+|[time_put](#time_put)|`time_put`türündeki nesneler için Oluşturucu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -62,16 +62,16 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[do_put](#do_put)|@No__t_0s sırası olarak zaman ve tarih bilgilerini veren bir sanal işlev.|
-|[konur](#put)|Zaman ve tarih bilgilerini `CharType`s bir sıra olarak verir.|
+|[do_put](#do_put)|Zaman ve tarih bilgilerini `CharType`s dizisi olarak veren bir sanal işlev.|
+|[konur](#put)|Zaman ve tarih bilgilerini `CharType`s dizisi olarak verir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>time_put::char_type
+## <a name="char_type"></a>time_put:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -81,11 +81,11 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `CharType` şablon parametresi için bir eş anlamlı.
+Tür, `CharType`şablon parametresi için bir eş anlamlı.
 
 ## <a name="do_put"></a>time_put::d o_put
 
-@No__t_0s sırası olarak zaman ve tarih bilgilerini veren bir sanal işlev.
+Zaman ve tarih bilgilerini `CharType`s dizisi olarak veren bir sanal işlev.
 
 ```cpp
 virtual iter_type do_put(
@@ -98,20 +98,20 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>Parametreler
 
-*sonraki* \
+*sonraki*\
 Saati ve tarihi temsil eden karakter dizisinin ekleneceği çıkış yineleyicisi.
 
-*_Iosbase* \
-Kullanılmayan.
+*_Iosbase*\
+Kullanılmıyor.
 
-*_Pt* \
+*_Pt*\
 Çıkış zamanı ve tarih bilgileri.
 
-*_Fmt* \
-Çıkışın biçimi. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
+*_Fmt*\
+Çıkışın biçimi. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
-*_Mod* \
-Biçim için bir değiştirici. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
+*_Mod*\
+Biçim için bir değiştirici. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -119,15 +119,15 @@ Bir yineleyici, son öğeden sonraki ilk konuma ekleniyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal korumalı üye işlevi, `tm` türünde `_Pt` nesne \* depolanan zaman değerlerinden `next` başlayarak ardışık öğeleri oluşturur. İşlevi, oluşturulan çıkışın ötesinde bir öğe eklemek için sonraki yeri tanımlayarak bir yineleyici döndürür.
+Sanal korumalı üye işlevi, `tm`türünde `_Pt`nesne \* depolanan zaman değerlerinden `next` başlayarak ardışık öğeleri oluşturur. İşlevi, oluşturulan çıkışın ötesinde bir öğe eklemek için sonraki yeri tanımlayarak bir yineleyici döndürür.
 
-Çıktı, dizi içinde bir dizi **char** öğesi oluşturmak için, `strftime` tarafından kullanılan ve *_Pt*son bağımsız değişkeniyle oluşturulan kurallar tarafından oluşturulur. Her bir **char** öğesi, basit, bire bir eşleme tarafından `CharType` türünde eşdeğer bir öğeyle eşlenecek varsayılır. *_Mod* sıfıra eşitse, etkin biçim "% F" olur ve burada F, *_Fmt*ile değiştirilmiştir. Aksi halde, etkin biçim "% MF" olur; burada, b *_mod*ile değiştirilmiştir.
+Çıktı, `strftime`tarafından kullanılan kuralların, bir dizi **karakter** öğesi oluşturmak için *_Pt*son bağımsız değişkeniyle oluşturulur. Her bir **char** öğesi, basit, bire bir eşleme tarafından `CharType` türünde eşdeğer bir öğeyle eşlenecek varsayılır. *_Mod* sıfır eşitse, etkin biçim "% F" olur ve burada F, *_Fmt*ile değiştirilmiştir. Aksi takdirde, etkin biçim "% MF" olur; burada, b *_mod*ile değiştirilmiştir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [PUT](#put)örneğine bakın.
+`do_put`çağıran [PUT](#put)örneğine bakın.
 
-## <a name="iter_type"></a>time_put::iter_type
+## <a name="iter_type"></a>time_put:: iter_type
 
 Bir çıkış yineleyiciyi açıklayan tür.
 
@@ -137,11 +137,11 @@ typedef OutputIterator iter_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `OutputIterator` şablon parametresi için bir eş anlamlı.
+Tür, `OutputIterator`şablon parametresi için bir eş anlamlı.
 
 ## <a name="put"></a>time_put::p UT
 
-Zaman ve tarih bilgilerini `CharType`s bir sıra olarak verir.
+Zaman ve tarih bilgilerini `CharType`s dizisi olarak verir.
 
 ```cpp
 iter_type put(iter_type next,
@@ -161,29 +161,29 @@ iter_type put(iter_type next,
 
 ### <a name="parameters"></a>Parametreler
 
-*sonraki* \
+*sonraki*\
 Saati ve tarihi temsil eden karakter dizisinin ekleneceği çıkış yineleyicisi.
 
-*_Iosbase* \
-Kullanılmayan.
+*_Iosbase*\
+Kullanılmıyor.
 
-*_Fill* \
-@No__t_0 boşluk için kullanılan karakter türü.
+*_Fill*\
+`CharType` boşluk için kullanılan karakter türü.
 
-*_Pt* \
+*_Pt*\
 Çıkış zamanı ve tarih bilgileri.
 
-*_Fmt* \
-Çıkışın biçimi. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
+*_Fmt*\
+Çıkışın biçimi. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
-*_Mod* \
-Biçim için bir değiştirici. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
+*_Mod*\
+Biçim için bir değiştirici. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
-*ilk* \
-Çıkışın biçimlendirme dizesinin başlangıcı. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
+*ilk*\
+Çıkışın biçimlendirme dizesinin başlangıcı. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
-*son* \
-Çıkışın biçimlendirme dizesinin sonu. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
+*son*\
+Çıkışın biçimlendirme dizesinin sonu. Geçerli değerler için bkz. [strftime, wcsftime, _strftime_l _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -191,7 +191,7 @@ Bir yineleyici, son öğeden sonraki ilk konuma ekleniyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi [do_put](#do_put)döndürür (`next`, `_Iosbase`, `_Fill`, `_Pt`, `_Fmt`, `_Mod`). İkinci üye işlevi, bir yüzde (%) dışında [`first`, `last`) Aralık içindeki herhangi bir öğeye \* `next` + + ' a kopyalar. Bir yüzde için, [`first`, `last`) aralığındaki bir karakter *C* tarafından, bunun yerine işlev `next`  =  `do_put` (`next`, `_Iosbase`, `_Fill`, `_Pt`, *C*, 0) değerlendirir ve geçmiş *C*'yi atlar. Ancak, *C* , EOQ # kümesindeki bir niteleyici karakteri ve ardından [4, 5) aralığındaki bir karakter 3, bunun yerine 6 7 8 değerlendirir (9, 0 , 1, 2, 3, *C*) ve son 5 atlar.
+İlk üye işlevi [do_put](#do_put)döndürür (`next`, `_Iosbase`, `_Fill`, `_Pt`, `_Fmt`, `_Mod`). İkinci üye işlevi, bir yüzde (%) dışında [`first`, `last`) Aralık içindeki herhangi bir öğeye \* `next` + + ' a kopyalar. Bir yüzde için, [`first`, `last`) aralığındaki bir karakter *C* tarafından, bunun yerine işlev `next` = `do_put`(`next`, `_Iosbase`, `_Fill`, `_Pt`, *C*, 0) değerlendirir ve geçmiş *C*'yi atlar. Ancak, *C* , EOQ # kümesindeki bir niteleyici karakteri ve ardından [`first`, `last`) aralığındaki bir karakter `C2`, bunun yerine işlev `next` = `do_put`(`next`, `_Iosbase`, `_Fill`, `_Pt`, `C2`, *C*) değerlendirir ve geçmiş `C2`atlar.
 
 ### <a name="example"></a>Örnek
 
@@ -237,9 +237,9 @@ num_put( ) = x: 05:30:40 07/04/00
 strftime( ) = x: 05:30:40 07/04/00
 ```
 
-## <a name="time_put"></a>time_put::time_put
+## <a name="time_put"></a>time_put:: time_put
 
-@No__t_0 türündeki nesneler için Oluşturucu.
+`time_put`türündeki nesneler için Oluşturucu.
 
 ```cpp
 explicit time_put(size_t _Refs = 0);
@@ -247,7 +247,7 @@ explicit time_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*_Refs*\
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -264,6 +264,6 @@ Oluşturucu kendi temel nesnesini [locale:: model](../standard-library/locale-cl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
-[Time_base sınıfı](../standard-library/time-base-class.md) \
+[\<yerel ayar >](../standard-library/locale.md)\
+[Time_base sınıfı](../standard-library/time-base-class.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

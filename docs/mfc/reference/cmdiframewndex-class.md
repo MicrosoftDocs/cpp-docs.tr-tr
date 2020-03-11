@@ -157,11 +157,11 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
 ms.openlocfilehash: 42e630c1280eb366f9007511ac5d74ac19455a56
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741593"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866725"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx sınıfı
 
@@ -177,7 +177,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMDIFrameWndEx:: ActiveItemRecalcLayout](#activeitemrecalclayout)|Etkin öğenin yerleşimini yeniden hesaplar.|
 |`CMDIFrameWndEx::AddDockSite`|Bu yöntem kullanılmaz.|
@@ -200,7 +200,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx:: Enabhaditabbedgroups](#enablemditabbedgroups)|MDI sekmeli grupları özelliğini etkinleştirilir veya devre dışı bırakır.|
 |[CMDIFrameWndEx:: Enablimon](#enablemditabs)|MDI sekmeleri özelliğini etkinleştirilir veya devre dışı bırakır. Etkinleştirildiğinde, çerçeve penceresi her MDI alt penceresi için bir sekme görüntüler.|
 |[CMDIFrameWndEx:: Enabtifdıtabslastactiveactivation](#enablemditabslastactiveactivation)|Kullanıcı geçerli sekmeyi kapattığında son etkin sekmenin etkinleştirilmesi gerekip gerekmediğini belirtir.|
-|[CMDIFrameWndEx:: Enablebölmesi menüsü](#enablepanemenu)|Uygulama bölmelerinin listesini görüntüleyen açılır pencere bölmesinin otomatik olarak oluşturulmasını ve yönetimini devre dışı bırakır veya devre dışı bırakır.  biçimindeki telefon numarasıdır.|
+|[CMDIFrameWndEx:: Enablebölmesi menüsü](#enablepanemenu)|Uygulama bölmelerinin listesini görüntüleyen açılır pencere bölmesinin otomatik olarak oluşturulmasını ve yönetimini devre dışı bırakır veya devre dışı bırakır.  arasında yetersiz alanla karşılaştı.|
 |[CMDIFrameWndEx:: Enablewindowsiletişim kutusu](#enablewindowsdialog)|Komut KIMLIĞI bir [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) iletişim kutusu çağıran bir menü öğesi ekler.|
 |[CMDIFrameWndEx:: GetActivePopup](#getactivepopup)|Görüntülenmekte olan açılan menü için bir işaretçi döndürür.|
 |[CMDIFrameWndEx:: GetPane](#getpane)|Belirtilen denetim KIMLIĞINE sahip bölme için bir işaretçi döndürür.|
@@ -220,19 +220,19 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx:: IsMenuBarAvailable](#ismenubaravailable)|Çerçeve penceresinde bir menü çubuğu olup olmadığını belirler.|
 |[CMDIFrameWndEx:: ıspointyaklaştığında Docksite](#ispointneardocksite)|Belirtilen noktanın Dock sitesine yakın olup olmadığını belirler.|
 |[CMDIFrameWndEx:: ısprintpreview](#isprintpreview)|Çerçeve penceresinin baskı önizleme modunda olup olmadığını belirler.|
-|[CMDIFrameWndEx:: LoadFrame](#loadframe)|Kaynak bilgilerden bir çerçeve penceresi oluşturur. (Geçersiz `CMDIFrameWnd::LoadFrame`kılmalar.)|
+|[CMDIFrameWndEx:: LoadFrame](#loadframe)|Kaynak bilgilerden bir çerçeve penceresi oluşturur. (`CMDIFrameWnd::LoadFrame`geçersiz kılar.)|
 |[CMDIFrameWndEx:: LoadMDIState](#loadmdistate)|MDI sekmeli gruplarının belirtilen yerleşimini ve önceden açılmış belgelerin listesini yükler.|
 |[CMDIFrameWndEx:: MDITabMoveToNextGroup](#mditabmovetonextgroup)|Etkin sekmeyi, geçerli etkin sekmeli penceredeki bir sonraki veya önceki sekmeli gruba kaydırır.|
 |[CMDIFrameWndEx:: MDITabNewGroup](#mditabnewgroup)|Tek bir pencereye sahip olan yeni bir sekmeli grup oluşturur.|
 |[CMDIFrameWndEx:: NegotiateBorderSpace](#negotiateborderspace)|OLE yerinde etkinleştirme sırasında çerçeve penceresinde kenarlık alanını görüşür.|
 |[CMDIFrameWndEx:: OnCloseDockingPane](#onclosedockingpane)|Kullanıcı, bir yerleştirilebilir bölmesinde **Kapat** düğmesine tıkladığında Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnCloseMiniFrame](#oncloseminiframe)|Kullanıcı kayan mini çerçeve penceresinde **Kapat** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CMDIFrameWndEx:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü bir WM_DESTROY iletisini işlediğinde Framework tarafından çağırılır.|
+|[CMDIFrameWndEx:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnCmdMsg](#oncmdmsg)|Komut iletilerini yönlendirmek ve göndermek ve komut Kullanıcı arabirimi nesnelerini güncelleştirmek için Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnDrawMenuImage](#ondrawmenuimage)|Bir menü öğesiyle ilişkili görüntü çizildiğinde Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnDrawMenuLogo](#ondrawmenulogo)|Bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)bir WM_PAINT iletisini işlediğinde Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: Onsilinebilir Semdiclientbackground](#onerasemdiclientbackground)|MDI çerçevesi penceresi bir WM_ERASEBKGND iletisini işlediğinde Framework tarafından çağırılır.|
-|[CMDIFrameWndEx:: OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)NESNESI bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.|
+|[CMDIFrameWndEx:: OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesnesi bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnMoveMiniFrame](#onmoveminiframe)|Bir mini çerçeve penceresini taşımak için Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: Onsetönizleme modu](#onsetpreviewmode)|Uygulamanın ana çerçeve penceresi yazdırma-Önizleme modunu ayarlar. ( [CFrameWnd:: Onsetönizleme modunu](../../mfc/reference/cframewnd-class.md#onsetpreviewmode)geçersiz kılar.)|
 |[CMDIFrameWndEx:: OnShowCustomizePane](#onshowcustomizepane)|Hızlı özelleştirme bölmesi etkinleştirildiğinde Framework tarafından çağırılır.|
@@ -241,9 +241,9 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx:: OnShowPopupMenu](#onshowpopupmenu)|Bir açılır menü etkinleştirildiğinde Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnSizeMDIClient](#onsizemdiclient)|İstemci MDI penceresinin boyutu değiştirilirken Framework tarafından çağırılır.|
 |[CMDIFrameWndEx:: OnTearOffMenu](#ontearoffmenu)|Bir yırma çubuğu olan bir menü etkinleştirildiğinde Framework tarafından çağırılır.|
-|[CMDIFrameWndEx:: OnUpdateFrameMenu](#onupdateframemenu)|Çerçeve menüsünü güncelleştirmek için Framework tarafından çağırılır. (Geçersiz `CMDIFrameWnd::OnUpdateFrameMenu`kılmalar.)|
+|[CMDIFrameWndEx:: OnUpdateFrameMenu](#onupdateframemenu)|Çerçeve menüsünü güncelleştirmek için Framework tarafından çağırılır. (`CMDIFrameWnd::OnUpdateFrameMenu`geçersiz kılar.)|
 |[CMDIFrameWndEx::P aneFromPoint](#panefrompoint)|Belirtilen noktayı içeren yerleştirme bölmesini döndürür.|
-|`CMDIFrameWndEx::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini dönüştürmek için [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı tarafından kullanılır.  (Geçersiz `CMDIFrameWnd::PreTranslateMessage`kılmalar.)|
+|`CMDIFrameWndEx::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini dönüştürmek için [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı tarafından kullanılır.  (`CMDIFrameWnd::PreTranslateMessage`geçersiz kılar.)|
 |[CMDIFrameWndEx:: RecalcLayout](#recalclayout)|Çerçeve penceresinin yerleşimini yeniden hesaplamak için Framework tarafından çağırılır. ( [CFrameWnd:: RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).) öğesini geçersiz kılar|
 |[CMDIFrameWndEx:: RemovePaneFromDockManager](#removepanefromdockmanager)|Bir bölmenin kaydını siler ve onu yerleştirme yöneticisinden kaldırır.|
 |[CMDIFrameWndEx:: SaveMDIState](#savemdistate)|MDI sekmeli gruplarının geçerli yerleşimini ve önceden açılmış belgelerin listesini kaydeder.|
@@ -259,18 +259,18 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMDIFrameWndEx:: m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild)|Yerleştirme bölmelerinin MDI alt pencerelere dönüştürülüp dönüştürülmeyeceğini belirler.|
 |[CMDIFrameWndEx:: m_bDisableSetRedraw](#m_bdisablesetredraw)|MDI alt pencereleri için yeniden çizim iyileştirmeyi etkinleştirilir veya devre dışı bırakır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-MDI uygulamanızdaki genişletilmiş özelleştirme özelliklerinden yararlanmak için, uygulamanın MDI çerçeve pencere sınıfını `CMDIFrameWndEx` `CMDIFrameWnd`yerine ' den türetebilirsiniz.
+MDI uygulamanızdaki genişletilmiş özelleştirme özelliklerinden yararlanmak için, uygulamanın MDI çerçeve pencere sınıfını `CMDIFrameWnd`yerine `CMDIFrameWndEx` türetirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek öğesinden `CMDIFrameWndEx`bir sınıf türetiliyor. Bu kod parçacığı, [DrawClient örneğinden gelir: MFC Şeridi tabanlı OLE nesne çizimi uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek `CMDIFrameWndEx`bir sınıfı türetiliyor. Bu kod parçacığı, [DrawClient örneği: MFC Şerit tabanlı OLE nesne çizimi uygulamasından](../../overview/visual-cpp-samples.md)gelir.
 
 [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_1.h)]
 
@@ -345,7 +345,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *hdwp*<br/>
-'ndaki Birden çok pencere konumu yapısını tanımlar. Bu değeri çağırarak `BeginDeferWindowPos`elde edebilirsiniz.
+'ndaki Birden çok pencere konumu yapısını tanımlar. Bu değeri `BeginDeferWindowPos`çağırarak elde edebilirsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -364,7 +364,7 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
 *Pnmdıtabstype*<br/>
 dışı Hangi özelliklerin etkinleştirildiğini belirten bir tamsayı değişkeni işaretçisi:
 
-- 0: Tüm özellikler devre dışı bırakıldı.
+- 0: tüm özellikler devre dışı bırakıldı.
 
 - 1: MDI sekmeleri etkin.
 
@@ -396,7 +396,7 @@ virtual BOOL CanCovertControlBarToMDIChild();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilmiş bir sınıfta bu yöntemi geçersiz kılın ve yerleşik bölmeleri sekmeli belgelere dönüştürmeyi etkinleştirmek için TRUE döndürün. Alternatif olarak, [Cmdiframewndex:: m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild) değerini true olarak ayarlayabilirsiniz.
+Türetilmiş bir sınıfta bu yöntemi geçersiz kılın ve yerleşik bölmeleri sekmeli belgelere dönüştürmeyi etkinleştirmek için TRUE döndürün. Alternatif olarak, [Cmdiframewndex:: M_BCANCOVERTCONTROLBARTOMDICHILD](#m_bcancovertcontrolbartomdichild) true olarak ayarlayabilirsiniz.
 
 ##  <a name="controlbartotabbeddocument"></a>CMDIFrameWndEx:: ControlBarToTabbedDocument
 
@@ -439,7 +439,7 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçisi `CMDIChildWndEx`.
+`CMDIChildWndEx`için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -449,9 +449,9 @@ Kayıt defterinden yüklendiklerinde belge oluşturmak için bu yöntemi geçers
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `CreateDocumentWindow` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CreateDocumentWindow` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
-Bu örnekte, `g_strStartViewName` gerçekten bir disk dosyasından yüklenmeyen bir "sanal belge" (örneğin, "Başlangıç sayfası") adı olabilir. Bu nedenle, bu durumu işlemek için özel işleme ihtiyacımız var.
+Bu örnekte, `g_strStartViewName` bir disk dosyasından gerçekten yüklenmeyen bir "sanal belge" (örneğin, "Başlangıç sayfası") adı olabilir. Bu nedenle, bu durumu işlemek için özel işleme ihtiyacımız var.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]
 
@@ -505,7 +505,7 @@ Bu yöntem, belirtilen bölmeyi [CBasePane:: EnableDocking](../../mfc/reference/
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek `DockPane` yönteminin kullanımını gösterir. Bu kod parçacığı [VisualStudioDemo örneğinden gelir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek `DockPane` yönteminin kullanımını gösterir. Bu kod parçacığı [VisualStudioDemo örnek: mfc Visual Studio](../../overview/visual-cpp-samples.md)uygulamasından gelir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/cpp/cmdiframewndex-class_3.cpp)]
 
@@ -525,7 +525,7 @@ BOOL DockPaneLeftOf(
 'ndaki Yerleştirme bölmesine yönelik bir işaretçi.
 
 *pLeftOf*<br/>
-'ndaki Dock sitesi olarak hizmet veren bölmeye yönelik bir işaretçi. biçimindeki telefon numarasıdır.
+'ndaki Dock sitesi olarak hizmet veren bölmeye yönelik bir işaretçi. arasında yetersiz alanla karşılaştı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -537,7 +537,7 @@ Birden çok bölme nesnesini önceden tanımlanmış bir sırada yerleştirmek i
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `DockPaneLeftOf` [VisualStudioDemo örneğinde yönteminin nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `DockPaneLeftOf` yönteminin [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/cpp/cmdiframewndex-class_4.cpp)]
 
@@ -568,7 +568,7 @@ Ana çerçeve penceresinin belirtilen taraflarına yerleştirildiklerinde bölme
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `EnableAutoHidePanes` [VisualStudioDemo örneğinde yönteminin nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `EnableAutoHidePanes` yönteminin [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/cpp/cmdiframewndex-class_5.cpp)]
 
@@ -591,11 +591,11 @@ BOOL EnableDocking(DWORD dwDockStyle);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMDIFrameWndEx` Nesneye ait bölmeleri yerleştirmeyi etkinleştirmek için bu işlevi çağırın.
+`CMDIFrameWndEx` nesnesine ait bölmeleri yerleştirmeyi etkinleştirmek için bu işlevi çağırın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `EnableDocking` [VisualStudioDemo örneğinde yönteminin nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `EnableDocking` yönteminin [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/cpp/cmdiframewndex-class_6.cpp)]
 
@@ -629,7 +629,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tam ekran modunda, tüm yerleştirme denetim çubukları, araç çubukları ve menüler gizlenir ve etkin görünüm tam ekran kaplaması için yeniden boyutlandırılır. Tam ekran modunu etkinleştirdiğinizde, bunu etkinleştiren veya devre dışı bırakan bir komutun KIMLIĞINI belirtmeniz gerekir. `EnableFullScreenMode` Ana`OnCreate` çerçevenin işlevinden çağırabilirsiniz. Çerçeve penceresi tam ekran moduna geçiş yaparken, çerçeve belirtilen komut KIMLIĞINE sahip bir düğmeyle birlikte kayan bir araç çubuğu oluşturur. Ana menüyü ekranda tutmak istiyorsanız [CMDIFrameWndEx:: EnableFullScreenMainMenu](#enablefullscreenmainmenu)' i çağırın.
+Tam ekran modunda, tüm yerleştirme denetim çubukları, araç çubukları ve menüler gizlenir ve etkin görünüm tam ekran kaplaması için yeniden boyutlandırılır. Tam ekran modunu etkinleştirdiğinizde, bunu etkinleştiren veya devre dışı bırakan bir komutun KIMLIĞINI belirtmeniz gerekir. Ana çerçevenin `OnCreate` işlevinden `EnableFullScreenMode` çağırabilirsiniz. Çerçeve penceresi tam ekran moduna geçiş yaparken, çerçeve belirtilen komut KIMLIĞINE sahip bir düğmeyle birlikte kayan bir araç çubuğu oluşturur. Ana menüyü ekranda tutmak istiyorsanız [CMDIFrameWndEx:: EnableFullScreenMainMenu](#enablefullscreenmainmenu)' i çağırın.
 
 ##  <a name="enableloaddockstate"></a>CMDIFrameWndEx:: EnableLoadDockState
 
@@ -680,13 +680,13 @@ MDI sekmeli grupları özelliğini etkinleştirmek veya devre dışı bırakmak 
 
 Bu yöntemi *bEnable* ayarı false olarak çağırırsanız, *params* yok sayılır.
 
-MDI sekmeli grupları zaten etkinleştirilmiş olsa bile, alt pencereler için ayarları değiştirmek üzere bu yöntemi yeniden çağırabilirsiniz. Yöntemi *bEnable* ayarı true olarak çağırın ve `CMDITabInfo` *params* parametresi tarafından belirtilen nesnenin üyelerini değiştirin.
+MDI sekmeli grupları zaten etkinleştirilmiş olsa bile, alt pencereler için ayarları değiştirmek üzere bu yöntemi yeniden çağırabilirsiniz. Yöntemi *bEnable* ayarı true olarak çağırın ve *params* parametresi tarafından belirtilen `CMDITabInfo` nesnesinin üyelerini değiştirin.
 
 MDI sekmeli gruplarının nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [MDI sekmeli grupları](../../mfc/mdi-tabbed-groups.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `EnableMDITabbedGroups` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `EnableMDITabbedGroups` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/cpp/cmdiframewndex-class_7.cpp)]
 
@@ -720,7 +720,7 @@ Sekme etiketlerinin konumunu belirtir.
 Sekme kapatma düğmelerinin görüntülenip görüntülenmeyeceğini belirtir.
 
 *biçim*<br/>
-Sekmelerin stilini belirtir. Microsoft OneNote sekmeleri için normal sekmeler veya STYLE_3D_ONENOTE için STYLE_3D_SCROLLED kullanın.
+Sekmelerin stilini belirtir. Normal sekmeler için STYLE_3D_SCROLLED veya Microsoft OneNote sekmeleri için STYLE_3D_ONENOTE kullanın.
 
 *Btabcustomtooltip 'ler*<br/>
 Özel araç ipuçlarının etkinleştirilip etkinleştirilmeyeceğini belirtir.
@@ -732,13 +732,13 @@ TRUE ise, sekme alanının sağ köşesi yerine etkin sekmede bir **kapatma** d�
 
 MDI çerçevesi penceresi için MDI sekmeleri özelliğini etkinleştirmek veya devre dışı bırakmak için bu yöntemi çağırın. Etkinleştirildiğinde, tüm alt pencereler sekmeler olarak görüntülenir.
 
-Sekme etiketleri, *tabLocation*parametresinin ayarına bağlı olarak çerçevenin en üstünde veya altında bulunabilir. Ya da `CMFCTabCtrl::LOCATION_BOTTOM` (varsayılan ayar) veya `CMFCTabCtrl::LOCATION_TOP`belirtebilirsiniz.
+Sekme etiketleri, *tabLocation*parametresinin ayarına bağlı olarak çerçevenin en üstünde veya altında bulunabilir. `CMFCTabCtrl::LOCATION_BOTTOM` (varsayılan ayar) ya da `CMFCTabCtrl::LOCATION_TOP`belirtebilirsiniz.
 
-*Btabcustomtooltip* 'ler true ise, ana çerçeve PENCERESINE bir AFX_WM_ON_GET_TAB_TOOLTIP iletisi gönderilir. Kodunuz bu iletiyi işleyebilir ve çerçeveye MDI sekmeleri için özel araç ipuçları sağlayabilir.
+*Btabcustomtooltip* 'ler true ise, ana çerçeve penceresine AFX_WM_ON_GET_TAB_TOOLTIP bir ileti gönderilir. Kodunuz bu iletiyi işleyebilir ve çerçeveye MDI sekmeleri için özel araç ipuçları sağlayabilir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `EnableMDITabs` [MDITabsDemo örneğinde nasıl kullanıldığını göstermektedir: MFC sekmeli MDI uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `EnableMDITabs` [MDITabsDemo örneğinde nasıl kullanıldığını gösterir: MFC SEKMELI MDI uygulaması](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MDITabsDemo#3](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_8.cpp)]
 
@@ -765,7 +765,7 @@ Etkin sekme kapalıyken bir sekme açmak için iki yol vardır:
 
 Varsayılan uygulama ilk yolu kullanır.
 
-Sekme `EnableMDITabsLastActiveActivation` etkinleştirmenin ikinci yolunu etkinleştirmek için kullanın. Windows 'un MDI alt pencerelerini açma şeklini taklit eder.
+Sekme etkinleştirmenin ikinci yolunu etkinleştirmek için `EnableMDITabsLastActiveActivation` kullanın. Windows 'un MDI alt pencerelerini açma şeklini taklit eder.
 
 ##  <a name="enablepanemenu"></a>CMDIFrameWndEx:: Enablebölmesi menüsü
 
@@ -807,7 +807,7 @@ Açılır bölme menüsü, uygulamanın bölmeleri listesini görüntüler ve ku
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `EnablePaneMenu` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `EnablePaneMenu` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/cpp/cmdiframewndex-class_9.cpp)]
 
@@ -845,11 +845,11 @@ void EnableWindowsDialog(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komutu bir MDI alt pencere yönetimi iletişim kutusu ( [CMFCWindowsManagerDialog sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)) çağıran bir menü öğesi eklemek için bu yöntemi kullanın. Yeni öğe, *Uııenuid*tarafından belirtilen menüye eklenir. WM_CREATE `EnableWindowsDialog` iletisini işleyen çağrı.
+Komutu bir MDI alt pencere yönetimi iletişim kutusu ( [CMFCWindowsManagerDialog sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)) çağıran bir menü öğesi eklemek için bu yöntemi kullanın. Yeni öğe, *Uııenuid*tarafından belirtilen menüye eklenir. WM_CREATE iletisini işleyen `EnableWindowsDialog` çağırın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `EnableWindowsDialog` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `EnableWindowsDialog` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/cpp/cmdiframewndex-class_10.cpp)]
 
@@ -931,7 +931,7 @@ Aşağıdaki bayrakların bit düzeyinde veya birleşimi:
 
 - BCGP_MDI_CAN_MOVE_PREV-bir sekmeyi önceki sekme grubuna taşıyabilir.
 
-- BCGP_MDI_CAN_MOVE_NEXT-bir sekmeyi bir sonraki sekme grubuna taşıyabilir.
+- BCGP_MDI_CAN_MOVE_NEXT-bir sekmeyi sonraki sekme grubuna taşıyabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -998,11 +998,11 @@ const CObList& GetTearOffBars() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ayırma durumundaki türetilmiş nesnelerin işaretçilerinden `CPane`oluşan bir koleksiyonu içeren bir [CObList sınıf](../../mfc/reference/coblist-class.md) nesnesine başvuru.
+Bir ayırma durumundaki `CPane`türetilmiş nesnelere işaretçiler koleksiyonu içeren bir [CObList sınıf](../../mfc/reference/coblist-class.md) nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMDIFrameWndEx`bir yırma menüleri koleksiyonunu tutar. Bu listeye bir başvuru almak için bu yöntemi kullanın.
+`CMDIFrameWndEx`, bir yırma menüleri koleksiyonunu tutar. Bu listeye bir başvuru almak için bu yöntemi kullanın.
 
 ##  <a name="gettoolbarbuttontooltiptext"></a>CMDIFrameWndEx:: GetToolbarButtonToolTipText
 
@@ -1216,15 +1216,15 @@ MDI sekmelerinin ve gruplarının ve açık belgelerin listesinin durumunu yükl
 
 - Ana çerçeve kapalıyken [CMDIFrameWndEx:: SaveMDIState](#savemdistate) çağrısı yapın
 
-- Ana çerçeve oluşturulurken [CMDIFrameWndEx:: LoadMDIState](#loadmdistate) ' i çağırın. Bu çağrı için önerilen yer, ana çerçeve ilk kez görüntülenmeden önce yapılır. Ana `CWinAppEx::EnableLoadWindowPlacement` çerçeveyi kayıt `CBCGPWorkspace::ReloadWindowPlacement` defterinde depolanan konumda göstermek için`LoadMDIState` çağrısından `(FALSE);` `(pMainFrame);` sonra eklemeden önce `pMainFrame->LoadFrame (IDR_MAINFRAME);.` ekleyin.
+- Ana çerçeve oluşturulurken [CMDIFrameWndEx:: LoadMDIState](#loadmdistate) ' i çağırın. Bu çağrı için önerilen yer, ana çerçeve ilk kez görüntülenmeden önce yapılır. Kayıt defterinde saklanan konumda ana çerçeveyi göstermek için `(pMainFrame);` çağrısından sonra `CBCGPWorkspace::ReloadWindowPlacement` `LoadMDIState` `pMainFrame->LoadFrame (IDR_MAINFRAME);.` eklemeden önce `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` ekleyin.
 
-- Uygulamanız `GetDocumentName` dosya olarak `CMDIChildWndEx`depolanmayan belgeleri görüntülüyorsa, ile türetilmiş sınıfta geçersiz kılın. Döndürülen dize, belge tanımlayıcısı olarak kayıt defterine kaydedilir. [Cmdictepdwndex:: GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname) öğesinin temel uygulanması [CDocument:: GetPathName](../../mfc/reference/cdocument-class.md#getpathname)öğesinden alınan bir değer döndürüyor.
+- Uygulamanız dosya olarak depolanmayan belgeler görüntülüyorsa, `CMDIChildWndEx`türetilmiş sınıfta `GetDocumentName` geçersiz kılın. Döndürülen dize, belge tanımlayıcısı olarak kayıt defterine kaydedilir. [Cmdictepdwndex:: GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname) öğesinin temel uygulanması [CDocument:: GetPathName](../../mfc/reference/cdocument-class.md#getpathname)öğesinden alınan bir değer döndürüyor.
 
 - Kayıt defterinden yüklendiklerinde belgeleri doğru şekilde oluşturmak için [Cmdiframewndex:: CreateDocumentWindow](#createdocumentwindow) 'u geçersiz kılın. İlk parametre `GetDocumentName` döndürülen dizedir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `LoadMDIState` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `LoadMDIState` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/cpp/cmdiframewndex-class_11.cpp)]
 
@@ -1260,7 +1260,7 @@ Bu işlevi kullanarak yeni bir sekmeli pencere (yeni sekmeli grup) oluşturun ve
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `MDITabNewGroup` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `MDITabNewGroup` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/cpp/cmdiframewndex-class_12.cpp)]
 
@@ -1274,13 +1274,13 @@ BOOL m_bCanCovertControlBarToMDIChild;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme denetim çubuklarının MDI alt Windows 'a dönüştürülüp dönüştürülmeyeceğini belirtir. Bu bayrak TRUE ise, Kullanıcı **sekmeli belge** komutunu seçtiğinde, çerçeve dönüştürmeyi otomatik olarak işler. Bayrak korunur ve bu seçeneği, türetilmiş bir `m_bCanCovertControlBarToMDIChild` `CMDIFrameWndEx`sınıfın oluşturucusunda ayarlanarak veya geçersiz kılarak `CanConvertControlBarToMDIChild`açıkça etkinleştirmeniz gerekir.
+Yerleştirme denetim çubuklarının MDI alt Windows 'a dönüştürülüp dönüştürülmeyeceğini belirtir. Bu bayrak TRUE ise, Kullanıcı **sekmeli belge** komutunu seçtiğinde, çerçeve dönüştürmeyi otomatik olarak işler. Bayrak korunur ve `CMDIFrameWndEx`türetilmiş bir sınıfın oluşturucusunda `m_bCanCovertControlBarToMDIChild` ayarlayarak ya da `CanConvertControlBarToMDIChild`geçersiz kılarak bu seçeneği açıkça etkinleştirmeniz gerekir.
 
-Varsayılan değer `FALSE` şeklindedir.
+Varsayılan değer: `FALSE`.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `m_bCanCovertControlBarToMDIChild` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `m_bCanCovertControlBarToMDIChild` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]
 
@@ -1296,7 +1296,7 @@ AFX_IMPORT_DATA static BOOL m_bDisableSetRedraw;
 
 Varsayılan değer TRUE 'dur.
 
-MDI alt öğelerinin yeniden çizilmesini iyileştirmek istiyorsanız bu bayrağı FALSE olarak ayarlayın. Bu durumda, uygulama etkin sekmeyi değiştirirken `SetRedraw (FALSE)` çerçeve ana çerçeveye çağrı yapılır.
+MDI alt öğelerinin yeniden çizilmesini iyileştirmek istiyorsanız bu bayrağı FALSE olarak ayarlayın. Bu durumda, uygulama etkin sekmeyi değiştirirken çerçeve ana çerçeve için `SetRedraw (FALSE)` çağırır.
 
 Bu bayrak istenmeyen etkilere neden olabilir (örneğin, görünür hale gelen arka plan uygulamaları). Bu nedenle, varsayılan değer olarak yalnızca MDI sekme etkinleştirmesi sırasında dikkat çekici bir deneyim yaşarsanız değiştirmeniz önerilir.
 
@@ -1313,7 +1313,7 @@ virtual BOOL NegotiateBorderSpace(
 ### <a name="parameters"></a>Parametreler
 
 *nBorderCmd*<br/>
-'ndaki Numaralandırıcıdan `CFrameWnd::BorderCmd`aşağıdaki değerlerden birini içerir:
+'ndaki Enum `CFrameWnd::BorderCmd`aşağıdaki değerlerden birini içerir:
 
 - `borderGet` = 1
 
@@ -1380,7 +1380,7 @@ Varsayılan uygulama hiçbir şey yapmaz ve TRUE değerini döndürür.
 
 ##  <a name="onclosepopupmenu"></a>CMDIFrameWndEx:: OnClosePopupMenu
 
-Etkin bir açılır menü bir WM_DESTROY iletisini işlediğinde Framework tarafından çağırılır.
+Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
@@ -1393,7 +1393,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu nesneler WM_DESTROY iletileri işleyene kadar MDI çerçeve penceresine ait [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesnelerinden gelen bildirimleri işlemek istiyorsanız bu yöntemi geçersiz kılın.
+Bu nesneler WM_DESTROY iletileri işleyene kadar MDI çerçeve penceresine ait [CMFCPopupMenu sınıf](../../mfc/reference/cmfcpopupmenu-class.md) nesnelerinden gelen bildirimleri işlemek istiyorsanız bu yöntemi geçersiz kılın.
 
 ##  <a name="oncmdmsg"></a>CMDIFrameWndEx:: OnCmdMsg
 
@@ -1419,7 +1419,7 @@ virtual BOOL OnCmdMsg(
 'ndaki *NCode*değerine göre kullanılır. *PExtra*hakkında daha fazla bilgi için bkz. [CCmdTarget:: OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) .
 
 *pHandlerInfo*<br/>
-[in, out] Genellikle, bu parametre NULL olmalıdır. `OnCmdMsg` Null değilse, komutu dağıtma yerine *pHandlerInfo* yapısının `pTarget` ve `pmf` üyelerini doldurur.
+[in, out] Genellikle, bu parametre NULL olmalıdır. NULL değilse, `pTarget` `OnCmdMsg` doldurur ve komutu dağıtma yerine *pHandlerInfo* yapısının üyelerini `pmf`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1453,7 +1453,7 @@ Yöntem görüntüyü çizdiğinde doğru. Varsayılan uygulama yanlış döndü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilmiş nesnenin sahip olduğu `CMDIFrameWndEx`menü çubuğuna ait menü öğeleri için görüntü işlemeyi özelleştirmek istiyorsanız bu yöntemi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.
+`CMDIFrameWndEx`türetilmiş nesnenin sahip olduğu menü çubuğuna ait menü öğeleri için görüntü işlemeyi özelleştirmek istiyorsanız bu yöntemi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.
 
 ##  <a name="ondrawmenulogo"></a>CMDIFrameWndEx:: OnDrawMenuLogo
 
@@ -1468,7 +1468,7 @@ virtual void OnDrawMenuLogo(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilmiş nesnenin sahip `CMDIFrameWndEx`olduğu menü çubuğuna ait olan açılır menüde bir logo göstermek için bu işlevi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.
+`CMDIFrameWndEx`türetilmiş nesnenin sahip olduğu menü çubuğuna ait olan açılır menüde bir logo göstermek için bu işlevi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.
 
 ##  <a name="onerasemdiclientbackground"></a>CMDIFrameWndEx:: Onsilinebilir Semdiclientbackground
 
@@ -1484,11 +1484,11 @@ Uygulama iletiyi işliyorsa ve arka planı sildiği TRUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-WM_ERASEBKGND iletisini türetilmiş bir `CMDIFrameWndEx`sınıfta işlemek istiyorsanız bu üye işlevi geçersiz kılın.
+WM_ERASEBKGND iletisini `CMDIFrameWndEx`türetilmiş bir sınıfta işlemek istiyorsanız bu üye işlevi geçersiz kılın.
 
 ##  <a name="onmenubuttontoolhittest"></a>CMDIFrameWndEx:: OnMenuButtonToolHitTest
 
-Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)NESNESI bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.
+Bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesnesi bir WM_NCHITTEST iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnMenuButtonToolHitTest(
@@ -1545,7 +1545,7 @@ virtual void OnSetPreviewMode(
 'ndaki DOĞRU ise, yazdırma-Önizleme modunu ayarlar. YANLıŞSA, Önizleme modunu iptal eder.
 
 *pState*<br/>
-'ndaki Bir `CPrintPreviewState` yapıya yönelik işaretçi.
+'ndaki `CPrintPreviewState` yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1604,7 +1604,7 @@ virtual BOOL OnShowMDITabContextMenu(
 
 - BCGP_MDI_CAN_MOVE_PREV-bir sekmeyi önceki sekme grubuna taşıyabilir.
 
-- BCGP_MDI_CAN_MOVE_NEXT-bir sekmeyi bir sonraki sekme grubuna taşıyabilir.
+- BCGP_MDI_CAN_MOVE_NEXT-bir sekmeyi sonraki sekme grubuna taşıyabilir.
 
 - BCGP_MDI_CAN_BE_DOCKED-sekmeli bir belgeyi sabitlenmiş duruma geçir (yalnızca sekmeli belgeler için geçerlidir).
 
@@ -1617,11 +1617,11 @@ virtual BOOL OnShowMDITabContextMenu(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlem `OnShowMDITabContextMenu`yapmazsanız kısayol menüsü görüntülenmez. Bu işlev, MDI sekmeli gruplar özelliğini etkinleştirdiğinizde **MFC Uygulama Sihirbazı** tarafından oluşturulur.
+`OnShowMDITabContextMenu`işlemeyin, kısayol menüsü görüntülenmez. Bu işlev, MDI sekmeli gruplar özelliğini etkinleştirdiğinizde **MFC Uygulama Sihirbazı** tarafından oluşturulur.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `OnShowMDITabContextMenu` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `OnShowMDITabContextMenu` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/cpp/cmdiframewndex-class_13.cpp)]
 
@@ -1842,21 +1842,21 @@ Kaydetme başarılı olursa doğru; Kaydetme başarısız olduysa FALSE.
 
 MDI sekmelerinin ve gruplarının ve açık belgelerin listesinin durumunu yüklemek veya kaydetmek için aşağıdakileri yapın:
 
-- Ana `SaveMDIState` çerçeve kapatıldığında çağır
+- Ana çerçeve kapalıyken `SaveMDIState` çağrısı yapın
 
 - Ana çerçeve oluşturulurken [CMDIFrameWndEx:: LoadMDIState](#loadmdistate) ' i çağırın. Bu çağrı için önerilen konum, ana çerçeve ilk kez görüntülenmeden önce yapılır.
 
-- Önce `CWinAppEx::EnableLoadWindowPlacement(FALSE);` çağır`pMainFrame->LoadFrame (IDR_MAINFRAME);`
+- `CWinAppEx::EnableLoadWindowPlacement(FALSE);` önce çağırın `pMainFrame->LoadFrame (IDR_MAINFRAME);`
 
-- Ana `CWinAppEx::ReloadWindowPlacement(pMainFrame)` çerçeveyi `LoadMDIState` kayıt defterinde depolanan konumda görüntülemeyi tamamladıktan sonra çağrısı yapın.
+- Ana çerçeveyi kayıt defterinde depolanan konumda göstermek için `LoadMDIState` sonra `CWinAppEx::ReloadWindowPlacement(pMainFrame)` çağırın.
 
-- Uygulamanız `GetDocumentName` dosya olarak `CMDIChildWndEx`depolanmayan belgeleri görüntülüyorsa, ile türetilmiş sınıfta geçersiz kılın. Döndürülen dize, kayıt defterine bir belge tanımlayıcısı olarak kaydedilir. Daha fazla bilgi için bkz. [Cmdictepdwndex:: GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname).
+- Uygulamanız dosya olarak depolanmayan belgeler görüntülüyorsa, `CMDIChildWndEx`türetilmiş sınıfta `GetDocumentName` geçersiz kılın. Döndürülen dize, kayıt defterine bir belge tanımlayıcısı olarak kaydedilir. Daha fazla bilgi için bkz. [Cmdictepdwndex:: GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname).
 
-- Kayıt defterinden yüklendiklerinde belgeleri doğru şekilde oluşturmak için [CMDIFrameWndEx:: CreateDocumentWindow](#createdocumentwindow) 'u geçersiz kılın. Parametresi `CreateDocumentWindow` , daha önce `GetDocumentName` döndürülen dizedir.
+- Kayıt defterinden yüklendiklerinde belgeleri doğru şekilde oluşturmak için [CMDIFrameWndEx:: CreateDocumentWindow](#createdocumentwindow) 'u geçersiz kılın. `CreateDocumentWindow` parametresi, `GetDocumentName` daha önce döndürdüğü dizedir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `SaveMDIState` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `SaveMDIState` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/cpp/cmdiframewndex-class_14.cpp)]
 
@@ -1939,7 +1939,7 @@ Bölmeyi göstermek veya gizlemek için bu yöntemi çağırın. Yerleştirme b�
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `ShowPane` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `ShowPane` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/cpp/cmdiframewndex-class_15.cpp)]
 
@@ -1953,7 +1953,7 @@ void ShowWindowsDialog();
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `ShowWindowsDialog` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `ShowWindowsDialog` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmdiframewndex-class_16.cpp)]
 
@@ -1980,7 +1980,7 @@ Sekmeli bir belgeyi yerleştirme bölmesine dönüştürmek için bu yöntemi ku
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [VisualStudioDemo örneğinde `TabbedDocumentToControlBar` nasıl kullanıldığını göstermektedir: MFC Visual Studio uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `TabbedDocumentToControlBar` [VisualStudioDemo örnek: mfc Visual Studio uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/cpp/cmdiframewndex-class_17.cpp)]
 

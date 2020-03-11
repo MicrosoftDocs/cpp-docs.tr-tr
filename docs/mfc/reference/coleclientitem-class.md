@@ -165,11 +165,11 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
 ms.openlocfilehash: 9f97f117f0fd8570855079aca7bdfd7a63118bc5
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740876"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855563"
 ---
 # <a name="coleclientitem-class"></a>Colet Clienentidıtem sınıfı
 
@@ -185,13 +185,13 @@ class COleClientItem : public CDocItem
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Colet Clientıtem:: Copaclitıtem](#coleclientitem)|Bir `COleClientItem` nesnesi oluşturur.|
+|[Colet Clientıtem:: Copaclitıtem](#coleclientitem)|`COleClientItem` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Colet Clientıtem:: Activate](#activate)|Bir işlem için OLE öğesini açar ve ardından belirtilen fiil yürütülür.|
 |[Colet Clientıtem:: ActivateAs](#activateas)|Öğeyi başka bir tür olarak etkinleştirir.|
@@ -222,8 +222,8 @@ class COleClientItem : public CDocItem
 |[Colet Clientıtem:: GetActiveView](#getactiveview)|Öğenin yerinde etkinleştirildiği görünümü alır.|
 |[Colet Clientıtem:: GetCachedExtent](#getcachedextent)|OLE öğesinin dikdörtgeninin sınırlarını döndürür.|
 |[Colet Clientıtem:: GetClassID](#getclassid)|Mevcut öğenin sınıf KIMLIĞINI alır.|
-|[Colet Clientıtem:: GetClipboardData](#getclipboarddata)|`CopyToClipboard` Üye işlevini çağırarak Pano 'ya yerleştirilecek verileri alır.|
-|[Colet Clientıtem:: GetDocument](#getdocument)|Mevcut öğeyi içeren nesneyi döndürür. `COleDocument`|
+|[Colet Clientıtem:: GetClipboardData](#getclipboarddata)|`CopyToClipboard` üye işlevini çağırarak Pano 'Ya yerleştirilecek verileri alır.|
+|[Colet Clientıtem:: GetDocument](#getdocument)|Mevcut öğeyi içeren `COleDocument` nesnesini döndürür.|
 |[Colet Clientıtem:: GetDrawAspect](#getdrawaspect)|Öğenin, işleme için geçerli görünümünü alır.|
 |[Colet Clientıtem:: GetExtent](#getextent)|OLE öğesinin dikdörtgeninin sınırlarını döndürür.|
 |[Colet Clienentidıtem:: Getıconfromregistry](#geticonfromregistry)|Belirli bir CLSID sunucusuyla ilişkili simgeye bir tanıtıcı alır.|
@@ -252,7 +252,7 @@ class COleClientItem : public CDocItem
 |[Colet Clientıtem:: OnUpdateFrameTitle](#onupdateframetitle)|Çerçeve penceresinin başlık çubuğunu güncelleştirmek için Framework tarafından çağırılır.|
 |[Colet Clientıtem:: ReactivateAndUndo](#reactivateandundo)|Öğeyi yeniden etkinleştirir ve son yerinde Düzenle işlemini geri alır.|
 |[Colet Clientıtem:: Release](#release)|Bir OLE bağlantılı öğesiyle bağlantıyı serbest bırakır ve açıksa kapatır. İstemci öğesini yok etmez.|
-|[Colet Clientıtem:: reload](#reload)|Çağrısından sonra öğeyi yeniden yükler `ActivateAs`.|
+|[Colet Clientıtem:: reload](#reload)|`ActivateAs`çağrısından sonra öğeyi yeniden yükler.|
 |[Colet Clientıtem:: Run](#run)|Öğesiyle ilişkili uygulamayı çalıştırır.|
 |[Colet Clientıtem:: SetDrawAspect](#setdrawaspect)|Öğenin geçerli görünümünü işleme için ayarlar.|
 |[Colet Clientıtem:: SetExtent](#setextent)|OLE öğesinin sınırlayıcı dikdörtgenini ayarlar.|
@@ -265,7 +265,7 @@ class COleClientItem : public CDocItem
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[Colet Clientıtem:: CanActivate](#canactivate)|Yerinde etkinleştirmeye izin verilip verilmeyeceğini anlamak için Framework tarafından çağırılır.|
 |[Colet Clientıtem:: OnChangeItemPosition](#onchangeitemposition)|Bir öğenin konumu değiştiğinde Framework tarafından çağırılır.|
@@ -283,11 +283,11 @@ Bir OLE öğesi, bir sunucu uygulaması tarafından oluşturulan ve tutulan veri
 
 Bir OLE öğesi gömülü ya da bağlantılı olabilir. Katıştırılmışsa, verileri bileşik belgenin bir parçası olarak depolanır. Bağlantı varsa, verileri sunucu uygulaması tarafından oluşturulan ayrı bir dosyanın parçası olarak depolanır ve yalnızca bu dosyanın bir bağlantısı bileşik belgede depolanır. Tüm OLE öğeleri, bunları düzenlemek için çağrılması gereken sunucu uygulamasını belirten bilgileri içerir.
 
-`COleClientItem`sunucu uygulamasından gelen isteklere yanıt olarak çağrılan birkaç geçersiz kılınabilir işlevi tanımlar; Bu geçersiz kılınan kasalar genellikle bildirim olarak davranır. Bu, sunucu uygulamasının OLE öğesini düzenlenirken kullanıcının yaptığı değişikliklerin kapsayıcısını bilgilendirmesini ya da düzenlenme sırasında gereken bilgileri almak için izin verir.
+`COleClientItem`, sunucu uygulamasından gelen isteklere yanıt olarak çağrılan birkaç geçersiz kılınabilir işlevi tanımlar; Bu geçersiz kılınan kasalar genellikle bildirim olarak davranır. Bu, sunucu uygulamasının OLE öğesini düzenlenirken kullanıcının yaptığı değişikliklerin kapsayıcısını bilgilendirmesini ya da düzenlenme sırasında gereken bilgileri almak için izin verir.
 
-`COleClientItem`[Coeldocument](../../mfc/reference/coledocument-class.md), [copalinkingdoc](../../mfc/reference/colelinkingdoc-class.md)veya [copaserverdoc](../../mfc/reference/coleserverdoc-class.md) sınıfıyla birlikte kullanılabilir. Kullanmak `COleClientItem`için, öğesinden bir sınıf türetirsiniz ve [OnChange](#onchange) üye işlevini, kapsayıcının öğede yapılan değişikliklere nasıl yanıt verdiğini tanımlar. Yerinde etkinleştirmeyi desteklemek için [OnGetItemPosition](#ongetitemposition) üye işlevini geçersiz kılın. Bu işlev, OLE öğesinin görüntülendiği konum hakkında bilgi sağlar.
+`COleClientItem` [Copadocument](../../mfc/reference/coledocument-class.md), [cotalinkingdoc](../../mfc/reference/colelinkingdoc-class.md)veya [copaserverdoc](../../mfc/reference/coleserverdoc-class.md) sınıfıyla birlikte kullanılabilir. `COleClientItem`kullanmak için, öğesinden bir sınıf türetirsiniz ve [OnChange](#onchange) üye işlevini uygulayıp kapsayıcının öğede yapılan değişikliklere nasıl yanıt verdiğini tanımlar. Yerinde etkinleştirmeyi desteklemek için [OnGetItemPosition](#ongetitemposition) üye işlevini geçersiz kılın. Bu işlev, OLE öğesinin görüntülendiği konum hakkında bilgi sağlar.
 
-Kapsayıcı arabirimini kullanma hakkında daha fazla bilgi için bkz. Makale [kapsayıcıları: Kapsayıcı](../../mfc/containers-implementing-a-container.md) ve [etkinleştirme](../../mfc/activation-cpp.md)uygulama.
+Kapsayıcı arabirimini kullanma hakkında daha fazla bilgi için bkz. Makale [kapsayıcıları: kapsayıcı](../../mfc/containers-implementing-a-container.md) ve [etkinleştirme](../../mfc/activation-cpp.md)uygulama.
 
 > [!NOTE]
 >  Windows SDK, katıştırılmış ve bağlantılı öğeleri "nesneler" olarak ve öğe türlerine "sınıflar" olarak başvurur. Bu başvuru, OLE varlığını C++ C++ sınıftan ayırt etmek için "öğe" terimini ve OLE kategorisini sınıftan ayırt etmek için "tür" terimini kullanır.
@@ -322,10 +322,10 @@ void Activate(
 *Nfiil*<br/>
 Yürütülecek fiili belirtir. Aşağıdakilerden biri olabilir:
 
-|Değer|Açıklama|Sembol|
+|Değer|Anlamı|Sembol|
 |-----------|-------------|------------|
 |- 0|Birincil fiil|OLEIVERB_PRIMARY|
-|- 1|İkincil fiil|Seçim|
+|- 1|İkincil fiil|(Hiçbiri)|
 |- 1|Öğeyi düzenlenmek üzere görüntüle|OLEIVERB_SHOW|
 |- 2|Öğeyi ayrı pencerede Düzenle|OLEIVERB_OPEN|
 |- 3|Öğeyi Gizle|OLEIVERB_HIDE|
@@ -340,7 +340,7 @@ OLE öğesini içeren kapsayıcı görünümü penceresine yönelik işaretçi; 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev ilgili `COleServerItem` nesnenin [OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb) üye işlevinin yürütülmesine neden olur.
+Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev ilgili `COleServerItem` nesnesinin [OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb) üye işlevinin yürütülmesine neden olur.
 
 Birincil fiil düzenlenirse ve *nVerb* parametresinde sıfır BELIRTILMIŞSE, OLE öğesinin düzenlenmesine izin vermek için sunucu uygulaması başlatılır. Kapsayıcı uygulaması yerinde etkinleştirmeyi destekliyorsa, düzen yerinde yapılabilir. Kapsayıcı yerinde etkinleştirmeyi desteklemiyorsa (ya da açık fiil belirtilmişse), sunucu ayrı bir pencerede başlatılır ve düzenlemeler orada yapılabilir. Genellikle, kapsayıcı uygulamasının kullanıcısı OLE öğesine çift tıkladığında, *nVerb* parametresindeki birincil fiil değeri, kullanıcının hangi eyleme götürebileceğini belirler. Ancak, sunucu yalnızca bir eylemi destekliyorsa, *nVerb* parametresinde belirtilen değer ne olursa olsun bu eylemi gerçekleştirir.
 
@@ -387,7 +387,7 @@ void AttachDataObject(COleDataObject& rDataObject) const;
 ### <a name="parameters"></a>Parametreler
 
 *rDataObject*<br/>
-OLE öğesindeki verilere `COleDataObject` erişime izin vermek için başlatılacak bir nesneye başvuru.
+OLE öğesindeki verilere erişime izin vermek için başlatılacak bir `COleDataObject` nesnesine başvuru.
 
 ##  <a name="canactivate"></a>Colet Clientıtem:: CanActivate
 
@@ -409,7 +409,7 @@ Daha fazla bilgi için Windows SDK [IOleInPlaceSite:: CanInPlaceActivate](/windo
 
 ##  <a name="cancreatefromdata"></a>Colet Clientıtem:: CanCreateFromData
 
-Bir kapsayıcı uygulamanın verilen `COleDataObject` nesneden katıştırılmış nesne oluşturup oluşturamayacağını denetler.
+Bir kapsayıcı uygulamanın verilen `COleDataObject` nesnesinden katıştırılmış nesne oluşturup oluşturamayacağını denetler.
 
 ```
 static BOOL PASCAL CanCreateFromData(const COleDataObject* pDataObject);
@@ -422,11 +422,11 @@ OLE öğesinin oluşturulacağı [Cotadataobject](../../mfc/reference/coledataob
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı `COleDataObject` nesneden katıştırılmış nesne oluşturabilecek şekilde sıfır dışında; Aksi takdirde 0.
+Kapsayıcı `COleDataObject` nesnesinden gömülü bir nesne oluşturcan sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`COleDataObject` Sınıfı, panodaki, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden farklı biçimlerdeki verileri almak için veri aktarımları için kullanılır.
+`COleDataObject` sınıfı, panodaki, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden farklı biçimlerdeki verileri almak için veri aktarımlarında kullanılır.
 
 Kapsayıcılar, düzenleme Yapıştır ve Düzenle özel komutlarını devre dışı bırakmayı etkinleştirmek veya devre dışı bırakmak için bu işlevi kullanabilir.
 
@@ -434,7 +434,7 @@ Daha fazla bilgi için bkz. [veri nesneleri ve veri kaynakları (OLE)](../../mfc
 
 ##  <a name="cancreatelinkfromdata"></a>Colet Clienentidıtem:: CanCreateLinkFromData
 
-Bir kapsayıcı uygulamanın verilen `COleDataObject` nesneden bağlı nesne oluşturup oluşturamayacağını denetler.
+Bir kapsayıcı uygulamanın verilen `COleDataObject` nesnesinden bağlantılı nesne oluşturup oluşturamayacağını denetler.
 
 ```
 static BOOL PASCAL CanCreateLinkFromData(const COleDataObject* pDataObject);
@@ -447,11 +447,11 @@ OLE öğesinin oluşturulacağı [Cotadataobject](../../mfc/reference/coledataob
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı `COleDataObject` nesneden bağlı bir nesne oluşturbir nesneyse sıfır dışı.
+Kapsayıcı `COleDataObject` nesnesinden bağlantılı bir nesne oluştur, sıfır dışında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`COleDataObject` Sınıfı, panodaki, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden farklı biçimlerdeki verileri almak için veri aktarımları için kullanılır.
+`COleDataObject` sınıfı, panodaki, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden farklı biçimlerdeki verileri almak için veri aktarımlarında kullanılır.
 
 Kapsayıcılar, düzenleme Özel Yapıştır ve yapıştırma bağlantısını Düzenle komutlarını etkinleştirmek veya devre dışı bırakmak için bu işlevi kullanabilir.
 
@@ -502,11 +502,11 @@ void Close(OLECLOSE dwCloseOption = OLECLOSE_SAVEIFDIRTY);
 *Dwcloseseçeneği*<br/>
 OLE öğesinin yüklü duruma döndüğünü ne koşullarda kaydedileceğini belirten bayrak. Aşağıdaki değerlerden birine sahip olabilir:
 
-- OLECLOSE_SAVEIFDIRTY OLE öğesini kaydedin.
+- OLE öğesini OLECLOSE_SAVEIFDIRTY kaydedin.
 
-- OLECLOSE_NOSAVE OLE öğesini kaydetme.
+- OLE öğesini kaydetme OLECLOSE_NOSAVE.
 
-- OLECLOSE_PROMPTSAVE OLE öğesinin kaydedilip edilmeyeceğini kullanıcıya sorar.
+- OLECLOSE_PROMPTSAVE kullanıcıya OLE öğesinin kaydedilip edilmeyeceğini sorar.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -516,7 +516,7 @@ Daha fazla bilgi için Windows SDK [IOleObject:: Close](/windows/win32/api/oleid
 
 ##  <a name="coleclientitem"></a>Colet Clientıtem:: Copaclitıtem
 
-Bir `COleClientItem` nesnesi oluşturur ve onu kapsayıcı belgesinin belge öğeleri koleksiyonuna ekler ve yalnızca C++ nesneyi oluşturur ve herhangi bir OLE başlatması gerçekleştirmez.
+Bir `COleClientItem` nesnesi oluşturur ve onu kapsayıcı belgesinin belge öğeleri koleksiyonuna ekler ve yalnızca C++ nesneyi oluşturur ve HERHANGI bir OLE başlatması gerçekleştirmez.
 
 ```
 COleClientItem(COleDocument* pContainerDoc = NULL);
@@ -634,7 +634,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -648,7 +648,7 @@ Daha fazla bilgi için Windows SDK [olerender](/windows/win32/api/oleidl/ne-olei
 
 ##  <a name="createfromdata"></a>Colet Clientıtem:: CreateFromData
 
-Bir `COleDataObject` nesneden katıştırılmış öğe oluşturmak için bu işlevi çağırın.
+`COleDataObject` nesnesinden katıştırılmış öğe oluşturmak için bu işlevi çağırın.
 
 ```
 BOOL CreateFromData(
@@ -670,7 +670,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -678,7 +678,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Panodan yapıştırma veya sürükle ve bırak işlemleri gibi veri aktarımı işlemleri, bir sunucu uygulaması tarafından sunulan bilgileri içeren `COleDataObject` nesneler sağlar. Genellikle [CView:: OnDrop](../../mfc/reference/cview-class.md#ondrop)geçersiz kılmada kullanılır.
+Panodan yapıştırma veya sürükle ve bırak işlemleri gibi veri aktarımı işlemleri, bir sunucu uygulaması tarafından sunulan bilgileri içeren `COleDataObject` nesneleri sağlar. Genellikle [CView:: OnDrop](../../mfc/reference/cview-class.md#ondrop)geçersiz kılmada kullanılır.
 
 Daha fazla bilgi için Windows SDK [OleCreateFromData](/windows/win32/api/ole2/nf-ole2-olecreatefromdata), [olerender](/windows/win32/api/oleidl/ne-oleidl-olerender)ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) bölümüne bakın.
 
@@ -710,7 +710,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -742,7 +742,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -756,7 +756,7 @@ Daha fazla bilgi için Windows SDK [olerender](/windows/win32/api/oleidl/ne-olei
 
 ##  <a name="createlinkfromdata"></a>Colet Clientıtem:: CreateLinkFromData
 
-Bir `COleDataObject` nesneden bağlantılı öğe oluşturmak için bu işlevi çağırın.
+`COleDataObject` nesnesinden bağlantılı öğe oluşturmak için bu işlevi çağırın.
 
 ```
 BOOL CreateLinkFromData(
@@ -778,7 +778,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -786,7 +786,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı bir bağlantının oluşturulması gerektiğini gösterdiği zaman bırakma işlemi sırasında bunu çağırın. Ayrıca, düzenleme Yapıştır komutunu işlemek için de kullanılabilir. Bağlantı seçeneği belirlendiğinde, içindeki `COleClientItem::CreateLinkFromClipboard` ve [COlePasteSpecialDialog:: CreateItem](../../mfc/reference/colepastespecialdialog-class.md#createitem) içindeki Framework tarafından çağrılır.
+Kullanıcı bir bağlantının oluşturulması gerektiğini gösterdiği zaman bırakma işlemi sırasında bunu çağırın. Ayrıca, düzenleme Yapıştır komutunu işlemek için de kullanılabilir. Bağlantı seçeneği belirlendiğinde `COleClientItem::CreateLinkFromClipboard` ve [COlePasteSpecialDialog:: CreateItem](../../mfc/reference/colepastespecialdialog-class.md#createitem) içinde Framework tarafından çağrılır.
 
 Daha fazla bilgi için Windows SDK [OleCreateLinkFromData](/windows/win32/api/ole2/nf-ole2-olecreatelinkfromdata), [olerender](/windows/win32/api/oleidl/ne-oleidl-olerender)ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) bölümüne bakın.
 
@@ -814,7 +814,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -850,7 +850,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -882,7 +882,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -896,7 +896,7 @@ Daha fazla bilgi için Windows SDK [olerender](/windows/win32/api/oleidl/ne-olei
 
 ##  <a name="createstaticfromdata"></a>Colet Clientıtem:: CreateStaticFromData
 
-Bir `COleDataObject` nesneden statik öğe oluşturmak için bu işlevi çağırın.
+`COleDataObject` nesnesinden statik öğe oluşturmak için bu işlevi çağırın.
 
 ```
 BOOL CreateStaticFromData(
@@ -918,7 +918,7 @@ Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değer
 OLE öğesi oluştururken önbelleğe alınacak Pano veri biçimini belirtir.
 
 *lpFormatEtc*<br/>
-*Render* OLERENDER_FORMAT veya OLERENDER_DRAW ise, bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+*Render* OLERENDER_FORMAT veya OLERENDER_DRAW, kullanılan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. Bu parametreyi atlarsanız, `FORMATETC` yapısındaki diğer alanlar için varsayılan değerler kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -926,7 +926,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Statik bir öğe sunum verilerini içerir ancak yerel verileri içermez; Sonuç olarak, düzenlenemez. Bu aslında, yalnızca panodan değil, rastgele `COleDataObject`bir statik öğe oluşturulabilir hariç [createstaticfromclipboard](#createstaticfromclipboard) ile aynıdır.
+Statik bir öğe sunum verilerini içerir ancak yerel verileri içermez; Sonuç olarak, düzenlenemez. Bu aslında, yalnızca panodan değil, rastgele bir `COleDataObject`oluşturulabilmek dışında [Createstaticfromclipboard](#createstaticfromclipboard) ile aynıdır.
 
 Statik seçildiğinde [COlePasteSpecialDialog:: CreateItem](../../mfc/reference/colepastespecialdialog-class.md#createitem) içinde kullanılır.
 
@@ -944,7 +944,7 @@ void Deactivate();
 
 Genellikle kullanıcı öğe sınırları dışındaki istemci alanında fareyi tıkladığında bir yerinde etkin OLE öğesini devre dışı bırakır. OLE öğesinin devre dışı bırakılması geri alma durumunu atar, bu da [ReactivateAndUndo](#reactivateandundo) üye işlevinin çağrmasını olanaksız hale getirir.
 
-Uygulamanız geri almayı destekliyorsa, çağırmayın `Deactivate`; bunun yerine [DeactivateUI](#deactivateui)çağırın.
+Uygulamanız geri almayı destekliyorsa, `Deactivate`çağırmayın; Bunun yerine, [DeactivateUI](#deactivateui)çağrısı yapın.
 
 Daha fazla bilgi için Windows SDK bkz. [IOleInPlaceObject:: InPlaceDeactivate devre dışı bırakma](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) .
 
@@ -983,7 +983,7 @@ Bu işlev [serbest bırakma](#release) işlevini çağırır, bu da öğe için 
 
 ##  <a name="dodragdrop"></a>Colet Clientıtem::D oDragDrop
 
-Bir sürükle ve bırak işlemi gerçekleştirmek için üyeişleviniçağırın.`DoDragDrop`
+Bir sürükle ve bırak işlemi gerçekleştirmek için `DoDragDrop` member işlevini çağırın.
 
 ```
 DROPEFFECT DoDragDrop(
@@ -1013,7 +1013,7 @@ Sürüklediğiniz yerin gerçekten başladığı dikdörtgeni tanımlayan dikdö
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir DROPEFFECT değeri. DROPEFFECT_MOVE ise, özgün verilerin kaldırılması gerekir.
+Bir DROPEFFECT değeri. DROPEFFECT_MOVE, özgün verilerin kaldırılması gerekir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1021,7 +1021,7 @@ Sürükle ve bırak işlemi hemen başlamaz. Fare imleci, *lpRectStartDrag* tara
 
 Gecikme süresi bir kayıt defteri anahtarı ayarıyla belirtilir. , [CWinApp:: WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) veya [CWinApp:: writeprofileint](../../mfc/reference/cwinapp-class.md#writeprofileint)çağırarak gecikme süresini değiştirebilirsiniz. Gecikme süresini belirtmezseniz, varsayılan 200 milisaniyelik bir değer kullanılır. Sürükleme gecikmesi süresi şu şekilde depolanır:
 
-- Windows NT sürükleme gecikmesi süresi HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\NT\CurrentVersion\IniFileMapping\win.ini\Windows\DragDelay. içinde depolanır
+- Windows NT sürükleme gecikmesi süresi HKEY_LOCAL_MACHINE \Software\microsoft\windows\nt\currentversion\ınıfilemapping\win.exe dizininde depolanır.
 
 - Windows 3. x sürükleme gecikmesi süresi WIN 'da depolanır. INı dosyası, [Windows} bölümü altında.
 
@@ -1031,7 +1031,7 @@ Sürükleme gecikmesi bilgilerinin kayıt defterinde veya ' de nasıl depolandı
 
 ##  <a name="doverb"></a>Colet Clientıtem::D fazla b
 
-Belirtilen `DoVerb` fiili yürütmek için çağırın.
+Belirtilen fiili yürütmek için `DoVerb` çağırın.
 
 ```
 virtual BOOL DoVerb(
@@ -1045,10 +1045,10 @@ virtual BOOL DoVerb(
 *Nfiil*<br/>
 Yürütülecek fiili belirtir. Aşağıdakilerden birini içerebilir:
 
-|Değer|Açıklama|Sembol|
+|Değer|Anlamı|Sembol|
 |-----------|-------------|------------|
 |- 0|Birincil fiil|OLEIVERB_PRIMARY|
-|- 1|İkincil fiil|Seçim|
+|- 1|İkincil fiil|(Hiçbiri)|
 |- 1|Öğeyi düzenlenmek üzere görüntüle|OLEIVERB_SHOW|
 |- 2|Öğeyi ayrı pencerede Düzenle|OLEIVERB_OPEN|
 |- 3|Öğeyi Gizle|OLEIVERB_HIDE|
@@ -1088,7 +1088,7 @@ BOOL Draw(
 OLE öğesini çizmek için kullanılan bir [CDC](../../mfc/reference/cdc-class.md) nesnesine yönelik işaretçi.
 
 *Lpsınır*<br/>
-OLE öğesinin çizileceği sınırlayıcı dikdörtgeni [tanımlayan bir ekip](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya `RECT` yapısına yönelik işaretçi (cihaz bağlamı tarafından belirlenen mantıksal birimlerde).
+Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) NESNESINE veya OLE öğesinin çizileceği (cihaz bağlamı tarafından belirlenen mantıksal birimlerde) bir sınırlayıcı dikdörtgeni tanımlayan `RECT` yapısına yönelik işaretçi.
 
 *nDrawAspect*<br/>
 OLE öğesinin, yani nasıl görüntüleneceğini belirtir. *NDrawAspect* -1 Ise, [SetDrawAspect](#setdrawaspect) kullanılarak ayarlanan en son değer kullanılır. Bu bayrak için olası değerler hakkında daha fazla bilgi için bkz. [SetDrawAspect](#setdrawaspect).
@@ -1099,9 +1099,9 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, öğesinin `COleServerItem` [OnDraw](../../mfc/reference/coleserveritem-class.md#ondraw) üye işlevi tarafından oluşturulan ole öğesinin meta dosyası gösterimini kullanabilir.
+İşlevi, `COleServerItem`[OnDraw](../../mfc/reference/coleserveritem-class.md#ondraw) üye işlevi tarafından oluşturulan ole öğesinin meta dosyası gösterimini kullanabilir.
 
-Genellikle ekran görüntüleme `Draw` için ' i kullanarak ekran cihazı bağlamını *PDC*olarak geçirme. Bu durumda, yalnızca ilk iki parametreyi belirtmeniz gerekir.
+Genellikle ekran görüntüleme için `Draw`, ekran cihazı bağlamını *PDC*olarak geçirerek kullanırsınız. Bu durumda, yalnızca ilk iki parametreyi belirtmeniz gerekir.
 
 *Lpsınır* parametresi, hedef cihaz bağlamındaki dikdörtgeni tanımlar (geçerli eşleme moduna göre). İşleme resmi ölçeklendirmeyi içerebilir ve görüntülenen görünüm ile son yazdırılan görüntü arasında ölçeklendirilen bir görünüm oluşturmak için kapsayıcı uygulamalar tarafından kullanılabilir.
 
@@ -1132,7 +1132,7 @@ BOOL GetCachedExtent(
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-Boyut bilgilerini alacak `SIZE` bir yapıya veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine yönelik işaretçi.
+`SIZE` yapısına veya boyut bilgilerini alacak bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaretçi.
 
 *nDrawAspect*<br/>
 Sınırları alınacak olan OLE öğesinin yönünü belirtir. Olası değerler için bkz. [SetDrawAspect](#setdrawaspect).
@@ -1143,9 +1143,9 @@ Başarılı olursa sıfır dışı; OLE öğesi boşsa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, [GetExtent](#getextent)ile aynı bilgileri sağlar. Ancak, [OnChange](#onchange)gibi diğer `GetCachedExtent` OLE işleyicilerinin işlenmesi sırasında kapsam bilgilerini almak için çağırabilirsiniz. Boyutlar MM_HIMETRIC birimleridir.
+Bu işlev, [GetExtent](#getextent)ile aynı bilgileri sağlar. Ancak, [OnChange](#onchange)gıbı diğer OLE işleyicilerinin işlenmesi sırasında kapsam bilgilerini almak için `GetCachedExtent` çağırabilirsiniz. Boyutlar MM_HIMETRIC birimdir.
 
-Bu mümkündür çünkü `GetCachedExtent` bu öğenin kapsamını almak için [IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) arabirimini kullanmak yerine [IViewObject2](/windows/win32/api/oleidl/nn-oleidl-iviewobject2) arabirimini kullanır. COM nesnesi önceki IViewObject çağrısında kullanılan kapsam bilgilerini önbelleğe alır [::D RAW.](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw) `IViewObject2`
+`GetCachedExtent`, bu öğenin kapsamını almak için [IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) arabirimini kullanmak yerine [IViewObject2](/windows/win32/api/oleidl/nn-oleidl-iviewobject2) arabirimini kullandığından, bu mümkündür. `IViewObject2` COM nesnesi önceki IViewObject çağrısında kullanılan kapsam bilgilerini önbelleğe alır [::D RAW](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw).
 
 Daha fazla bilgi için Windows SDK [IViewObject2:: GetExtent](/windows/win32/api/oleidl/nf-oleidl-iviewobject2-getextent) bölümüne bakın.
 
@@ -1170,7 +1170,7 @@ Daha fazla bilgi için Windows SDK [IPersist:: GetClassID](/windows/win32/api/ob
 
 ##  <a name="getclipboarddata"></a>Colet Clientıtem:: GetClipboardData
 
-[CopyToClipboard](#copytoclipboard) üye işlevine yapılan `COleDataSource` bir çağrı ile panoya yerleştirilecek tüm verileri içeren bir nesne almak için bu işlevi çağırın.
+Bu işlevi çağırarak, [CopyToClipboard](#copytoclipboard) üye işlevine yapılan bir çağrı ile panoya yerleştirilecek tüm verileri içeren bir `COleDataSource` nesnesi alın.
 
 ```
 void GetClipboardData(
@@ -1196,7 +1196,7 @@ Nesnenin piksel cinsinden boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetClipboardData`, [OnGetClipboardData](#ongetclipboarddata)'ın varsayılan uygulama olarak çağrılır. Yalnızca `OnGetClipboardData` tarafından`CopyToClipboard`sunulanlara ek olarak veri biçimleri sunmak istiyorsanız geçersiz kılın. Bu biçimleri `COleDataSource` , çağrılmadan `CopyToClipboard`önce veya sonra nesnesine yerleştirin ve sonra `COleDataSource` nesneyi [cotadatasource:: SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) işlevine geçirin. Örneğin, OLE öğesinin kapsayıcı belgesindeki konumunu Pano üzerinde eşlik etmek istiyorsanız, bu bilgileri geçirmek için kendi biçiminizi tanımlamanız ve çağrılmadan `COleDataSource` `CopyToClipboard`önce içine yerleştirmeniz gerekir.
+`GetClipboardData`, [OnGetClipboardData](#ongetclipboarddata)'ın varsayılan uygulama olarak çağrılır. Yalnızca `CopyToClipboard`tarafından sunulanlara ek olarak veri biçimleri sunmak istiyorsanız `OnGetClipboardData` geçersiz kılın. Bu biçimleri, `CopyToClipboard`çağrılmadan önce veya sonra `COleDataSource` nesnesine yerleştirin ve ardından `COleDataSource` nesnesini [Cotadatasource:: SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) işlevine geçirin. Örneğin, OLE öğesinin kapsayıcı belgesindeki konumunun Pano üzerinde kendisine eşlik etmek istiyorsanız, bu bilgileri geçirmek için kendi biçiminizi tanımlayabilir ve `CopyToClipboard`çağrılmadan önce `COleDataSource` yerleştirebilirsiniz.
 
 ##  <a name="getdocument"></a>Colet Clientıtem:: GetDocument
 
@@ -1212,11 +1212,11 @@ OLE öğesini içeren belgeye yönelik bir işaretçi. Öğe bir belgenin parça
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işaretçi, `COleClientItem` oluşturucuya bir bağımsız `COleDocument` değişken olarak geçirilmiş nesneye erişim sağlar.
+Bu işaretçi, `COleClientItem` oluşturucusuna bağımsız değişken olarak geçirilmiş `COleDocument` nesnesine erişim sağlar.
 
 ##  <a name="getdrawaspect"></a>Colet Clientıtem:: GetDrawAspect
 
-Öğenin geçerli "en boy," veya görünümünü öğrenmek için üyeişleviniçağırın.`GetDrawAspect`
+Öğenin geçerli "en boy," veya görünümünü öğrenmek için `GetDrawAspect` member işlevini çağırın.
 
 ```
 DVASPECT GetDrawAspect() const;
@@ -1243,7 +1243,7 @@ BOOL GetExtent(
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-Bir `SIZE` yapıya veya boyut bilgilerini alacak `CSize` bir nesneye yönelik işaretçi.
+`SIZE` yapısına veya boyut bilgilerini alacak bir `CSize` nesnesine yönelik işaretçi.
 
 *nDrawAspect*<br/>
 Sınırları alınacak olan OLE öğesinin yönünü belirtir. Olası değerler için bkz. [SetDrawAspect](#setdrawaspect).
@@ -1254,10 +1254,10 @@ Başarılı olursa sıfır dışı; OLE öğesi boşsa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev ilgili `COleServerItem` nesnenin [OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent) üye işlevine çağrılır. Alınan boyutun [SetExtent](#setextent) üye işlevinin en son ayarlanan boyutundan farklı olabileceğini unutmayın; tarafından `SetExtent` belirtilen boyut, öneri olarak değerlendirilir. Boyutlar MM_HIMETRIC birimleridir.
+Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev karşılık gelen `COleServerItem` nesnesinin [OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent) üye işlevinin çağrılmasına neden olur. Alınan boyutun [SetExtent](#setextent) üye işlevinin en son ayarlanan boyutundan farklı olabileceğini unutmayın; `SetExtent` tarafından belirtilen boyut, öneri olarak değerlendirilir. Boyutlar MM_HIMETRIC birimdir.
 
 > [!NOTE]
->  [OnChange](#onchange)gibi bir `GetExtent` OLE işleyicisini işleme sırasında çağırmayın. Bunun yerine [GetCachedExtent](#getcachedextent) çağırın.
+>  [OnChange](#onchange)gibi OLE işleyicisinin işlenmesi sırasında `GetExtent` çağırmayın. Bunun yerine [GetCachedExtent](#getcachedextent) çağırın.
 
 Daha fazla bilgi için Windows SDK [IOleObject:: GetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getextent) bölümüne bakın.
 
@@ -1304,7 +1304,7 @@ Bu işlev Ayrıca, daha sonra kullanmak üzere meta dosyasını önbelleğe alma
 
 ##  <a name="getinplacewindow"></a>Colet Clientıtem:: Getınplacewindow
 
-Öğenin yerinde düzenlenmek üzere açıldığı pencereye bir işaretçi almak için üyeişleviniçağırın.`GetInPlaceWindow`
+Öğenin yerinde düzenlenmek üzere açıldığı pencereye bir işaretçi almak için `GetInPlaceWindow` member işlevini çağırın.
 
 ```
 CWnd* GetInPlaceWindow();
@@ -1328,13 +1328,13 @@ UINT GetItemState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Numaralandırılmış `COleClientItem::ItemState` bir değer, aşağıdakilerden biri olabilir: `emptyState`, `loadedState`, `openState` `activeState`,, `activeUIState`. Bu durumlar hakkında daha fazla bilgi için bkz. [makale kapsayıcıları: İstemci-öğe durumları](../../mfc/containers-client-item-states.md).
+`COleClientItem::ItemState` numaralandırılmış bir değer, aşağıdakilerden biri olabilir: `emptyState`, `loadedState`, `openState`, `activeState`, `activeUIState`. Bu durumlar hakkında daha fazla bilgi için bkz. [kapsayıcı: istemci-öğe durumları](../../mfc/containers-client-item-states.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
 OLE öğesinin durumu değiştiğinde bildirim almak için [OnChange](#onchange) üye işlevini kullanın.
 
-Daha fazla bilgi için bkz. Makale [kapsayıcıları: İstemci-öğe durumları](../../mfc/containers-client-item-states.md).
+Daha fazla bilgi için bkz. [kapsayıcı: istemci-öğe durumları](../../mfc/containers-client-item-states.md).
 
 ##  <a name="getlaststatus"></a>Colet Clientıtem:: GetLastStatus
 
@@ -1350,7 +1350,7 @@ Bir SCODE değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bool değeri veya null döndüren diğer üye işlevlerini döndüren üye işlevleri için, `GetLastStatus` daha ayrıntılı hata bilgileri döndürür. Çoğu OLE üye işlevlerinin daha ciddi hatalar için özel durumlar oluşturduğunu unutmayın. SCODE yorumu hakkındaki belirli bilgiler, son olarak bir SCODE değeri döndüren temel OLE çağrısına bağlıdır.
+BOOL değeri FALSE veya NULL döndüren diğer üye işlevleri döndüren üye işlevleri için `GetLastStatus` daha ayrıntılı hata bilgileri döndürür. Çoğu OLE üye işlevlerinin daha ciddi hatalar için özel durumlar oluşturduğunu unutmayın. SCODE yorumu hakkındaki belirli bilgiler, son olarak bir SCODE değeri döndüren temel OLE çağrısına bağlıdır.
 
 SCODE hakkında daha fazla bilgi için Windows SDK belgelerindeki [com hata kodlarının yapısı](/windows/win32/com/structure-of-com-error-codes) bölümüne bakın.
 
@@ -1366,9 +1366,9 @@ OLEUPDATE GetLinkUpdateOptions();
 
 Aşağıdaki değerlerden biri:
 
-- OLEUPDATE_ALWAYS bağlı öğeyi güncelleştirmek mümkün olduğunda. Bu seçenek bağlantılar iletişim kutusundaki otomatik bağlantı-güncelleştirme radyo düğmesini destekler.
+- OLEUPDATE_ALWAYS bağlı öğeyi güncelleştirin. Bu seçenek bağlantılar iletişim kutusundaki otomatik bağlantı-güncelleştirme radyo düğmesini destekler.
 
-- OLEUPDATE_ONCALL bağlantılı öğeyi yalnızca kapsayıcı uygulamasındaki istek üzerine güncelleştirin ( [UpdateLink](#updatelink) üye işlevi çağrıldığında). Bu seçenek bağlantılar iletişim kutusunda el Ile bağlantı-güncelleştirme radyo düğmesini destekler.
+- Bağlı öğeyi yalnızca kapsayıcı uygulamasındaki istek üzerine güncelleştirmek OLEUPDATE_ONCALL ( [UpdateLink](#updatelink) üye işlevi çağrıldığında). Bu seçenek bağlantılar iletişim kutusunda el Ile bağlantı-güncelleştirme radyo düğmesini destekler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1390,9 +1390,9 @@ OLE_OBJTYPE GetType() const;
 
 Aşağıdaki değerlerden birine sahip işaretsiz bir tamsayı:
 
-- OT_LINK OLE öğesi bir bağlantıdır.
+- OLE öğesi bir bağlantıdır OT_LINK.
 
-- OT_EMBEDDED OLE öğesi ekli.
+- OLE öğesi OT_EMBEDDED eklenmiş.
 
 - OT_STATIC OLE öğesi statiktir, diğer bir deyişle, yerel veriler değil yalnızca sunum verilerini içerir ve bu nedenle düzenlenemez.
 
@@ -1411,11 +1411,11 @@ void GetUserType(
 *nUserClassType*<br/>
 OLE öğesinin türünü tanımlayan dizenin istenen türevini belirten değer. Bu, aşağıdaki değerlerden birine sahip olabilir:
 
-- USERCLASSTYPE_FULL tam tür adı kullanıcıya gösterilir.
+- Kullanıcıya görünen tam tür adını USERCLASSTYPE_FULL.
 
 - Açılır menülerde ve bağlantıları Düzenle iletişim kutusunda kullanılmak üzere kısa bir ad (en fazla 15 karakter) USERCLASSTYPE_SHORT.
 
-- Sınıfa hizmet veren uygulamanın USERCLASSTYPE_APPNAME adı.
+- Sınıfa hizmet veren uygulamanın adı USERCLASSTYPE_APPNAME.
 
 *rString*<br/>
 OLE öğesinin türünü tanımlayan dizenin döndürüleceği bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine başvuru.
@@ -1442,7 +1442,7 @@ OLE öğesi yerinde etkin ise sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğenin yerinde düzenlenme şekline bağlı olarak farklı mantık yürütmek yaygındır. İşlevi, geçerli öğe durumunun `activeState` `activeUIState`veya ' ya eşit olup olmadığını denetler.
+Öğenin yerinde düzenlenme şekline bağlı olarak farklı mantık yürütmek yaygındır. İşlevi, geçerli öğe durumunun `activeState` ya da `activeUIState`eşit olup olmadığını denetler.
 
 ##  <a name="islinkuptodate"></a>Colet Clientıtem:: ıslinkuptodate
 
@@ -1522,13 +1522,13 @@ virtual void OnActivate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin, Kullanıcı arabiriminin kapsayıcı uygulamasına yüklendiğini göstermek için, sunucunun çalıştığını göstermek üzere çağrıldığını unutmayın. Bu noktada, nesnenin etkin bir kullanıcı arabirimi ( `activeUIState`değil) yoktur. Menülerini veya araç çubuğunu yüklememiştir. [OnActivateUI](#onactivateui) üye işlevi gerçekleştiğinde çağrılır.
+Bu işlevin, Kullanıcı arabiriminin kapsayıcı uygulamasına yüklendiğini göstermek için, sunucunun çalıştığını göstermek üzere çağrıldığını unutmayın. Bu noktada, nesne etkin bir kullanıcı arabirimine sahip değildir (`activeUIState`değildir). Menülerini veya araç çubuğunu yüklememiştir. [OnActivateUI](#onactivateui) üye işlevi gerçekleştiğinde çağrılır.
 
-Varsayılan uygulama, OLE_CHANGEDSTATE ile bir parametre olarak [OnChange](#onchange) üye işlevini çağırır. Bir öğe yerinde etkin hale geldiğinde özel işlem gerçekleştirmek için bu işlevi geçersiz kılın.
+Varsayılan uygulama, OLE_CHANGEDSTATE [OnChange](#onchange) üye işlevini parametre olarak çağırır. Bir öğe yerinde etkin hale geldiğinde özel işlem gerçekleştirmek için bu işlevi geçersiz kılın.
 
 ##  <a name="onactivateui"></a>Colet Clientıtem:: OnActivateUI
 
-Çerçeve, nesne `OnActivateUI` etkin kullanıcı arabirimi durumuna girildiğinde çağırır.
+Çerçeve, nesne etkin kullanıcı arabirimi durumuna girildiğinde `OnActivateUI` çağırır.
 
 ```
 virtual void OnActivateUI();
@@ -1538,7 +1538,7 @@ virtual void OnActivateUI();
 
 Nesne artık araç çubuğunu ve menülerini yükledi.
 
-Varsayılan uygulama, daha sonraki `GetServerWindow` çağrılar için sunucunun HWND 'sini anımsar.
+Varsayılan uygulama, daha sonra `GetServerWindow` çağrılar için sunucunun HWND 'sini anımsar.
 
 ##  <a name="onchange"></a>Colet Clientıtem:: OnChange
 
@@ -1555,7 +1555,7 @@ virtual void OnChange(
 *nCode*<br/>
 Sunucunun bu öğeyi değiştirme nedeni. Aşağıdaki değerlerden birine sahip olabilir:
 
-- OLE_CHANGED OLE öğesinin görünümü değişti.
+- OLE öğesinin görünümü değişti OLE_CHANGED.
 
 - OLE_SAVED OLE öğesi kaydedildi.
 
@@ -1564,11 +1564,11 @@ Sunucunun bu öğeyi değiştirme nedeni. Aşağıdaki değerlerden birine sahip
 - OLE_CHANGED_STATE OLE öğesi bir durumdan diğerine değişti.
 
 *dwParam*<br/>
-*NCode* , OLE_SAVED veya OLE_CLOSED ise, bu parametre kullanılmaz. *NCode* OLE_CHANGED ise, bu parametre değiştirilen OLE öğesinin yönünü belirtir. Olası değerler için bkz. [Colet Clienentidıtem::D RAW](#draw)' ın *dwParam* parametresi. *NCode* OLE_CHANGED_STATE ise, bu parametre numaralandırılmış bir `COleClientItem::ItemState` değerdir ve girilen durumu açıklar. Aşağıdaki değerlerden birine sahip olabilir: `emptyState`, `loadedState`, `openState` `activeState`, veya `activeUIState`.
+*NCode* OLE_SAVED veya OLE_CLOSED, bu parametre kullanılmaz. *NCode* OLE_CHANGED ise, bu parametre değiştirilen OLE öğesinin yönünü belirtir. Olası değerler için bkz. [Colet Clienentidıtem::D RAW](#draw)' ın *dwParam* parametresi. *NCode* OLE_CHANGED_STATE ise, bu parametre `COleClientItem::ItemState` numaralandırılmış bir değerdir ve girilen durumu açıklar. Şu değerlerden birine sahip olabilir: `emptyState`, `loadedState`, `openState`, `activeState`veya `activeUIState`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev veya `Notify` `COleServerItem`öğesinin `COleServerDoc` üye işlevlerine yanıt olarak çağrılır.) Varsayılan uygulama, *nCode* OLE_CHANGED veya OLE_SAVED ise kapsayıcı belgeyi değiştirildi olarak işaretler.
+(Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev `COleServerDoc` veya `COleServerItem``Notify` üyesi işlevlerine yanıt olarak çağrılır.) Varsayılan uygulama, *nCode* OLE_CHANGED veya OLE_SAVED ise kapsayıcı belgeyi değiştirildi olarak işaretler.
 
 OLE_CHANGED_STATE için, [GetItemState](#getitemstate) 'ten döndürülen geçerli durum, bu durum değişikliğinden önce geçerli olan durum nedeniyle eski durum olmaya devam edecektir.
 
@@ -1599,7 +1599,7 @@ Yeniden boyutlandırma/taşıma işlemine özel kurallar uygulamak için bu işl
 
 ##  <a name="ondeactivate"></a>Colet Clientıtem:: OnDeactivate
 
-Bir yerinde etkinleştirme sonrasında devre dışı bırakılmakta olduğu anlamına gelen, ole öğesi, yerinde etkin `activeState`durumdan () yüklenen duruma geçiş yaptığında Framework tarafından çağırılır.
+Bir yerinde etkinleştirme sonrasında devre dışı bırakılmakta olduğu anlamına gelen, OLE öğesi, yerinde etkin durumdan (`activeState`), yüklü duruma geçiş yaptığında Framework tarafından çağırılır.
 
 ```
 virtual void OnDeactivate();
@@ -1609,7 +1609,7 @@ virtual void OnDeactivate();
 
 Bu işlevin, Kullanıcı arabiriminin kapsayıcı uygulamadan kaldırıldığını değil, OLE öğesinin kapatıldığını göstermek için çağrıldığını unutmayın. Bu gerçekleştiğinde [OnDeactivateUI](#ondeactivateui) üye işlevi çağırılır.
 
-Varsayılan uygulama, OLE_CHANGEDSTATE ile bir parametre olarak [OnChange](#onchange) üye işlevini çağırır. Yerinde etkin bir öğe devre dışı bırakıldığında özel işlem gerçekleştirmek için bu işlevi geçersiz kılın. Örneğin, kapsayıcı uygulamanızdaki geri al komutunu destekledikten sonra, geri alma durumunu atmak için bu işlevi geçersiz kılabilirsiniz. böylece, öğe devre dışı bırakıldıktan sonra OLE öğesinde gerçekleştirilen son işlemin geri alınamayacağı.
+Varsayılan uygulama, OLE_CHANGEDSTATE [OnChange](#onchange) üye işlevini parametre olarak çağırır. Yerinde etkin bir öğe devre dışı bırakıldığında özel işlem gerçekleştirmek için bu işlevi geçersiz kılın. Örneğin, kapsayıcı uygulamanızdaki geri al komutunu destekledikten sonra, geri alma durumunu atmak için bu işlevi geçersiz kılabilirsiniz. böylece, öğe devre dışı bırakıldıktan sonra OLE öğesinde gerçekleştirilen son işlemin geri alınamayacağı.
 
 ##  <a name="ondeactivateandundo"></a>Colet Clientıtem:: OnDeactivateAndUndo
 
@@ -1662,7 +1662,7 @@ Daha fazla bilgi için bkz. [IOleInPlaceSite::D SCC ındostate](/windows/win32/a
 
 ##  <a name="ongetclipboarddata"></a>Colet Clientıtem:: OnGetClipboardData
 
-`COleDataSource` [CopyToClipboard](#copytoclipboard) veya [DoDragDrop](#dodragdrop) üye işlevine yapılan bir çağrı ile panoya yerleştirilecek tüm verileri içeren bir nesne almak için Framework tarafından çağırılır.
+[CopyToClipboard](#copytoclipboard) veya [DoDragDrop](#dodragdrop) üye işlevine yapılan bir çağrı ile panoya yerleştirilecek tüm verileri içeren bir `COleDataSource` nesnesi almak için Framework tarafından çağırılır.
 
 ```
 virtual COleDataSource* OnGetClipboardData(
@@ -1692,7 +1692,7 @@ Bu işlevin varsayılan uygulanması [GetClipboardData](#getclipboarddata)öğes
 
 ##  <a name="ongetcliprect"></a>Colet Clientıtem:: OnGetClipRect
 
-Çerçeve, yerinde düzenlenmekte `OnGetClipRect` olan öğenin kırpma dikdörtgeni koordinatlarını almak için üye işlevini çağırır.
+Çerçeve, yerinde düzenlenmekte olan öğenin kırpma dikdörtgeni koordinatlarını almak için `OnGetClipRect` üye işlevini çağırır.
 
 ```
 virtual void OnGetClipRect(CRect& rClipRect);
@@ -1711,7 +1711,7 @@ Varsayılan uygulama, yalnızca öğenin yerinde etkin olduğu görünümün ist
 
 ##  <a name="ongetitemposition"></a>Colet Clientıtem:: OnGetItemPosition
 
-Çerçeve, yerinde düzenlenmekte `OnGetItemPosition` olan öğenin koordinatlarını almak için üye işlevini çağırır.
+Çerçeve, yerinde düzenlenmekte olan öğenin koordinatlarını almak için `OnGetItemPosition` member işlevini çağırır.
 
 ```
 virtual void OnGetItemPosition(CRect& rPosition);
@@ -1780,7 +1780,7 @@ virtual void OnInsertMenus(
 Boş bir menüyü işaret eder.
 
 *Lpmenugenişlikleri*<br/>
-Aşağıdaki menü gruplarının her birinde kaç menü olduğunu gösteren altı uzun değerli bir diziyi işaret eder: Dosya, düzenleme, kapsayıcı, nesne, pencere, yardım. Kapsayıcı uygulaması, bu dizinin 0, 2 ve 4 öğelerine karşılık gelen dosya, kapsayıcı ve pencere menü gruplarından sorumludur.
+Şu menü gruplarının her birinde kaç menü olduğunu gösteren altı uzun değerli bir diziyi işaret eder: dosya, düzenleme, kapsayıcı, nesne, pencere, yardım. Kapsayıcı uygulaması, bu dizinin 0, 2 ve 4 öğelerine karşılık gelen dosya, kapsayıcı ve pencere menü gruplarından sorumludur.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1807,7 +1807,7 @@ virtual void OnRemoveMenus(CMenu* pMenuShared);
 
 Varsayılan uygulama, yerinde kapsayıcı menülerinden, diğer bir deyişle, dosya, kapsayıcı ve pencere menü gruplarının *pMenuShared* öğesinden kaldırılır. Varsayılan uygulama uygulamanız için uygun değilse bu işlevi geçersiz kılın; Örneğin, uygulamanız kaynakları belge türleriyle ilişkilendirmek için belge şablonları kullanmıyorsa. Bu işlevi geçersiz kılarsınız, muhtemelen [OnInsertMenus](#oninsertmenus) ve [OnSetMenu](#onsetmenu) de geçersiz kılmalısınız. Bu gelişmiş bir geçersiz kılınabilir.
 
-Sunucu art arda çağrılırsa `OnInsertMenus`, pMenuShared üzerindeki alt menüler birden fazla bileşik menü tarafından paylaşılabilir. Bu nedenle, `OnRemoveMenus`geçersiz kılmanızda herhangi bir alt menü silmemelisiniz; yalnızca bunları ayırmalısınız.
+Sunucu sürekli olarak `OnInsertMenus`çağrılırsa, *pMenuShared* üzerindeki alt menüler birden fazla bileşik menü tarafından paylaşılabilir. Bu nedenle `OnRemoveMenus`geçersiz kılmada herhangi bir alt menü silmemelisiniz; yalnızca bunları ayırmalısınız.
 
 Daha fazla bilgi için Windows SDK [IOleInPlaceFrame:: RemoveMenus](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceframe-removemenus) bölümüne bakın.
 
@@ -1851,7 +1851,7 @@ virtual void OnSetMenu(
 [OnInsertMenus](#oninsertmenus) üye işlevine ve `InsertMenu` işlevine yapılan çağrılar tarafından oluşturulan bileşik menüye yönelik işaretçi.
 
 *hoelmenu*<br/>
-`OleCreateMenuDescriptor` İşlev tarafından döndürülen menü tanımlayıcısına yönelik tanıtıcı veya gönderme kodu kaldırılamak üzere null.
+`OleCreateMenuDescriptor` işlevi tarafından döndürülen menü tanımlayıcısına yönelik tanıtıcı veya gönderme kodu kaldırılamak üzere NULL.
 
 *hwndActiveObject*<br/>
 OLE öğesi için Düzen penceresini işleyin. Bu, OLE 'den düzenlenen komutları alacak olan penceresidir.
@@ -1916,7 +1916,7 @@ Bu işlev, çerçeve başlığını başarıyla güncelleştirdiyse sıfır dı�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, çerçeve pencere başlığını değiştirmez. Uygulamanız için farklı bir çerçeve başlığı istiyorsanız, örneğin " *docName*içindeki *sunucu uygulama* - *öğesi* " (içinde olduğu gibi), "Microsoft Excel-elektronik tablosunda" raporda olduğu gibi bu işlevi geçersiz kılın. BELGE "). Bu gelişmiş bir geçersiz kılınabilir.
+Varsayılan uygulama, çerçeve pencere başlığını değiştirmez. Uygulamanız için farklı bir çerçeve başlığı istiyorsanız (örneğin, *docName*içindeki *sunucu uygulaması* - *öğesi* ", içinde," MICROSOFT Excel-elektronik tablosu "raporda olduğu gibi bu işlevi geçersiz kılın. BELGE "). Bu gelişmiş bir geçersiz kılınabilir.
 
 ##  <a name="reactivateandundo"></a>Colet Clientıtem:: ReactivateAndUndo
 
@@ -1953,7 +1953,7 @@ OLE öğesinin yüklü duruma döndüğünü ne koşullarda kaydedileceğini bel
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Release``COleClientItem` yok edicisi tarafından çağırılır.
+`Release`, `COleClientItem` yıkıcısı tarafından çağırılır.
 
 Daha fazla bilgi için Windows SDK [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) bölümüne bakın.
 
@@ -1971,7 +1971,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğeyi bir [ActivateAs](#activateas)çağrısıyla başka bir türün öğesi olarak etkinleştirdikten sonra işleviçağırın.`Reload`
+Öğeyi bir [ActivateAs](#activateas)çağrısıyla başka bir türün öğesi olarak etkinleştirdikten sonra `Reload` işlevini çağırın.
 
 ##  <a name="run"></a>Colet Clientıtem:: Run
 
@@ -1983,11 +1983,11 @@ void Run();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğeyi etkinleştirmeden önce sunucu uygulamasını başlatmak için üyeişleviniçağırın.`Run` Bu, [Activate](#activate) ve [DoVerb](#doverb)tarafından otomatik olarak yapılır, bu yüzden genellikle bu işlevi çağırmak gerekli değildir. Bu işlevi, [DoVerb](#doverb)yürütmeden önce [SetExtent](#setextent)gibi bir öğe özniteliği ayarlamak üzere çalıştırmak gerekirse çağırın.
+Öğeyi etkinleştirmeden önce sunucu uygulamasını başlatmak için `Run` member işlevini çağırın. Bu, [Activate](#activate) ve [DoVerb](#doverb)tarafından otomatik olarak yapılır, bu yüzden genellikle bu işlevi çağırmak gerekli değildir. Bu işlevi, [DoVerb](#doverb)yürütmeden önce [SetExtent](#setextent)gibi bir öğe özniteliği ayarlamak üzere çalıştırmak gerekirse çağırın.
 
 ##  <a name="setdrawaspect"></a>Colet Clientıtem:: SetDrawAspect
 
-Öğenin "en boy," veya görünümünü ayarlamak için üyeişleviniçağırın.`SetDrawAspect`
+Öğenin "en boy," veya görünümünü ayarlamak için `SetDrawAspect` member işlevini çağırın.
 
 ```
 virtual void SetDrawAspect(DVASPECT nDrawAspect);
@@ -1998,13 +1998,13 @@ virtual void SetDrawAspect(DVASPECT nDrawAspect);
 *nDrawAspect*<br/>
 DVASPECT numaralandırmasından bir değer. Bu parametre aşağıdaki değerlerden birine sahip olabilir:
 
-- DVASPECT_CONTENT öğesi, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
+- DVASPECT_CONTENT öğe, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
 
-- DVASPECT_THUMBNAIL öğesi, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
+- DVASPECT_THUMBNAIL öğe, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
 
-- DVASPECT_ICON öğesi bir simge ile temsil edilir.
+- DVASPECT_ICON öğe bir simge ile temsil edilir.
 
-- DVASPECT_DOCPRINT öğesi, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
+- DVASPECT_DOCPRINT öğe, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2032,7 +2032,7 @@ Sınırları ayarlanacak OLE öğesinin yönünü belirtir. Olası değerler iç
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu, karşılık gelen `COleServerItem` nesnenin [OnSetExtent](../../mfc/reference/coleserveritem-class.md#onsetextent) üye işlevine neden olur. OLE öğesi daha sonra görüntüsünü uygun şekilde ayarlayabilir. Boyutlar MM_HIMETRIC birimlerde olmalıdır. Kullanıcı OLE öğesini yeniden boyutlandırdığında veya bir düzen anlaşması biçimini destekliyorsa bu işlevi çağırın.
+Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu, karşılık gelen `COleServerItem` nesnesinin [OnSetExtent](../../mfc/reference/coleserveritem-class.md#onsetextent) üye işlevinin çağrılmasına neden olur. OLE öğesi daha sonra görüntüsünü uygun şekilde ayarlayabilir. Boyutlar MM_HIMETRIC birimlerde olmalıdır. Kullanıcı OLE öğesini yeniden boyutlandırdığında veya bir düzen anlaşması biçimini destekliyorsa bu işlevi çağırın.
 
 Daha fazla bilgi için Windows SDK [IOleObject:: SetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent) bölümüne bakın.
 
@@ -2056,7 +2056,7 @@ OLE öğesini içeren kapsayıcının tanımlayıcı dize işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev OLE öğesini içeren `COleServerDoc` belgenin [OnSetHostNames](../../mfc/reference/coleserverdoc-class.md#onsethostnames) üye işlevini çağırır. Bu bilgiler, OLE öğesi düzenlenirken pencere başlıklarında kullanılır. Bir kapsayıcı belgesi her yüklendiğinde, çerçeve belgedeki tüm OLE öğeleri için bu işlevi çağırır. `SetHostNames`yalnızca katıştırılmış öğeler için geçerlidir. Her katıştırılmış OLE öğesi düzenlenmek üzere etkinleştirildiğinde bu işlevi çağırmak gerekli değildir.
+Sunucu uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev OLE öğesini içeren `COleServerDoc` belgenin [OnSetHostNames](../../mfc/reference/coleserverdoc-class.md#onsethostnames) üye işlevini çağırır. Bu bilgiler, OLE öğesi düzenlenirken pencere başlıklarında kullanılır. Bir kapsayıcı belgesi her yüklendiğinde, çerçeve belgedeki tüm OLE öğeleri için bu işlevi çağırır. `SetHostNames` yalnızca katıştırılmış öğeler için geçerlidir. Her katıştırılmış OLE öğesi düzenlenmek üzere etkinleştirildiğinde bu işlevi çağırmak gerekli değildir.
 
 Bu Ayrıca, bir nesne yüklendiğinde veya dosya farklı bir adla kaydedildiğinde uygulama adı ve belge adıyla otomatik olarak çağrılır. Buna göre, genellikle bu işlevi çağırmak gerekli değildir.
 
@@ -2126,9 +2126,9 @@ void SetLinkUpdateOptions(OLEUPDATE dwUpdateOpt);
 *dwUpdateOpt*<br/>
 Bu öğe için bağlantı-güncelleştirme seçeneğinin değeri. Bu değer aşağıdakilerden biri olmalıdır:
 
-- OLEUPDATE_ALWAYS bağlı öğeyi güncelleştirmek mümkün olduğunda. Bu seçenek bağlantılar iletişim kutusundaki otomatik bağlantı-güncelleştirme radyo düğmesini destekler.
+- OLEUPDATE_ALWAYS bağlı öğeyi güncelleştirin. Bu seçenek bağlantılar iletişim kutusundaki otomatik bağlantı-güncelleştirme radyo düğmesini destekler.
 
-- OLEUPDATE_ONCALL bağlantılı öğeyi yalnızca kapsayıcı uygulamasındaki istek üzerine güncelleştirin ( [UpdateLink](#updatelink) üye işlevi çağrıldığında). Bu seçenek bağlantılar iletişim kutusunda el Ile bağlantı-güncelleştirme radyo düğmesini destekler.
+- Bağlı öğeyi yalnızca kapsayıcı uygulamasındaki istek üzerine güncelleştirmek OLEUPDATE_ONCALL ( [UpdateLink](#updatelink) üye işlevi çağrıldığında). Bu seçenek bağlantılar iletişim kutusunda el Ile bağlantı-güncelleştirme radyo düğmesini destekler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2147,7 +2147,7 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
 
 ### <a name="parameters"></a>Parametreler
 
-*ptd*<br/>
+*PTD*<br/>
 Yeni yazdırma hedefi aygıtı hakkında bilgi içeren bir [Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) veri yapısına yönelik işaretçi. NULL olabilir.
 
 *PDF*<br/>
@@ -2161,7 +2161,7 @@ Yeni yazdırma hedefi aygıtı hakkında bilgi içeren [PrintDlg](/windows/win32
 
 Bu işlev, öğe için yazdırma hedefi cihazını güncelleştirir, ancak sunu önbelleğini yenilemez. Bir öğenin sunu önbelleğini güncelleştirmek için [UpdateLink](#updatelink)çağırın.
 
-Bu işlevin bağımsız değişkenleri, OLE sisteminin hedef cihazı tanımlamak için kullandığı bilgileri içerir. Yapı `PRINTDLG` , Windows 'un ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusunu kapattıktan sonra, Windows kullanıcının bu yapıda seçimleriyle ilgili bilgileri döndürür. [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesinin `PRINTDLG` üyesi bir yapıdır. `m_pd`
+Bu işlevin bağımsız değişkenleri, OLE sisteminin hedef cihazı tanımlamak için kullandığı bilgileri içerir. `PRINTDLG` yapısı, Windows 'un ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusunu kapattıktan sonra, Windows kullanıcının bu yapıda seçimleriyle ilgili bilgileri döndürür. [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesinin `m_pd` üyesi bir `PRINTDLG` yapısıdır.
 
 Bu yapı hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) bölümüne bakın.
 

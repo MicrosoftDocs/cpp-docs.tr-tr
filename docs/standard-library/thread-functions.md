@@ -1,5 +1,5 @@
 ---
-title: '&lt;iş&gt; parçacığı işlevleri'
+title: '&lt;iş parçacığı&gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - thread/std::get_id
@@ -15,20 +15,20 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::yield [C++]
 ms.openlocfilehash: 8064cec7e94a909d7dc2e1b22142d362bb7b9488
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458509"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876184"
 ---
-# <a name="ltthreadgt-functions"></a>&lt;iş&gt; parçacığı işlevleri
+# <a name="ltthreadgt-functions"></a>&lt;iş parçacığı&gt; işlevleri
 
 ||||
 |-|-|-|
 |[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|
 |[Kur](#swap)|[yield](#yield)|
 
-## <a name="get_id"></a>  get_id
+## <a name="get_id"></a>get_id
 
 Yürütmenin geçerli iş parçacığını benzersiz şekilde tanımlar.
 
@@ -57,7 +57,7 @@ Bir zaman aralığı belirten [Duration](../standard-library/duration-class.md) 
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi çağıran iş parçacığını en az *Rel_time*tarafından belirtilen süre için engeller. Bu işlev hiçbir özel durum oluşturmaz.
+İşlevi çağıran iş parçacığını en az *Rel_time*tarafından belirtilen zaman için engeller. Bu işlev hiçbir özel durum oluşturmaz.
 
 ## <a name="sleep_until"></a>sleep_until
 
@@ -89,15 +89,15 @@ void swap(thread& Left, thread& Right) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Tarafta*\
+*Sol*\
 Sol **iş parçacığı** nesnesi.
 
-*Right*\
+*Sağ*\
 Sağ **iş parçacığı** nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev çağırır `Left.swap(Right)`.
+İşlevi `Left.swap(Right)`çağırır.
 
 ## <a name="yield"></a>yield
 

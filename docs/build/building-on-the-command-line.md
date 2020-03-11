@@ -11,11 +11,11 @@ helpviewer_keywords:
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ms.openlocfilehash: ec30cba8e119f96efc5bca156fa565db77904520
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051487"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856793"
 ---
 # <a name="use-the-microsoft-c-toolset-from-the-command-line"></a>Komut satırından Microsoft C++ araç takımını kullanma
 
@@ -135,13 +135,13 @@ Bu isteğe bağlı bağımsız değişken kullanılacak konak ve hedef mimarisin
 |*mimarisini*|Derleyici|Konak bilgisayar mimarisi|Derleme çıkışı (hedef) mimarisi|
 |----------------------------|--------------|----------------------------------|-------------------------------|
 |**Itanium**|x86 32 bit yerel|x86, x64|x86|
-|**x86\_AMD64** veya **x86\_x64**|x86 çapraz üzerinde x64|x86, x64|X64|
+|**x86\_AMD64** veya **x86\_x64**|x86 çapraz üzerinde x64|x86, x64|x64|
 |**x86_arm**|X86 çapraz üzerinde ARM|x86, x64|ARM|
 |**x86_arm64**|ARM64 üzerinde x86 çapraz|x86, x64|ARM64|
-|**AMD64** veya **x64**|x64 64-bit yerel|X64|X64|
-|**amd64\_x86** veya **x64\_x86**|x64 üzerinde x86 çapraz|X64|x86|
-|**amd64\_ARM** veya **x64\_ARM**|X64 çapraz ARM|X64|ARM|
-|**amd64\_arm64** veya **x64\_arm64**|X64 çapraz ARM64|X64|ARM64|
+|**AMD64** veya **x64**|x64 64-bit yerel|x64|x64|
+|**amd64\_x86** veya **x64\_x86**|x64 üzerinde x86 çapraz|x64|x86|
+|**amd64\_ARM** veya **x64\_ARM**|X64 çapraz ARM|x64|ARM|
+|**amd64\_arm64** veya **x64\_arm64**|X64 çapraz ARM64|x64|ARM64|
 
 *platform_type*<br/>
 Bu isteğe bağlı bağımsız değişken platform türü olarak **Store** veya **UWP** belirtmenize olanak tanır. Varsayılan olarak, ortam masaüstü veya konsol uygulamaları oluşturmak üzere ayarlanır.
@@ -228,7 +228,7 @@ Komut isteminde bir C/C++ proje oluşturmak Için, Visual Studio şu komut satı
 [CL](reference/compiling-a-c-cpp-program.md)<br/>
 Kaynak kodu dosyalarını derlemek ve uygulamalar, kitaplıklar ve DLL 'Lerde bağlamak için derleyici (CL. exe) kullanın.
 
-[Bağlantısının](reference/linking.md)<br/>
+[Bağlantı](reference/linking.md)<br/>
 Derlenen nesne dosyalarını ve kitaplıklarını uygulamalar ve DLL 'Lere bağlamak için bağlayıcı (LINK. exe) kullanın.
 
 [MSBuild](msbuild-visual-cpp.md)<br/>

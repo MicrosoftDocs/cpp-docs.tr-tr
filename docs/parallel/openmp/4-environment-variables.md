@@ -3,39 +3,39 @@ title: 4. Ortam değişkenleri
 ms.date: 01/16/2019
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
 ms.openlocfilehash: b41829fd9cf2f90312f669ef991f56dda02947f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363199"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78882878"
 ---
-# <a name="4-environment-variables"></a>4. Ortam değişkenleri
+# <a name="4-environment-variables"></a>4. ortam değişkenleri
 
-OpenMP C ve C++ API ortam değişkenlerini (veya benzer bir platforma özgü mekanizmaları) Bu bölümde açıklanmaktadır paralel kod yürütme denetimi.  Ortam değişkenlerinin adları büyük olmalıdır. Atanmış değerleri büyük/küçük harfe duyarsızdır ve öndeki ve sondaki boşluk olabilir.  Değerlerin program başlatıldıktan sonra yapılan değişiklikler yok sayılır.
+Bu bölümde, paralel kodun yürütülmesini denetleyen C++ OpenMP C ve API ortam değişkenleri (ya da benzer platforma özgü mekanizmalar) açıklanmaktadır.  Ortam değişkenlerinin adları büyük harfli olmalıdır. Bunlara atanan değerler büyük/küçük harfe duyarlıdır ve başında ve sonunda boşluk olabilir.  Program başlatıldıktan sonra değerlerde yapılan değişiklikler yok sayılır.
 
 Ortam değişkenleri aşağıdaki gibidir:
 
-- [OMP_SCHEDULE](#41-omp_schedule) çalışma zamanı zamanlama türü ve öbek boyutunu ayarlar.
-- [OMP_NUM_THREADS](#42-omp_num_threads) yürütme sırasında kullanılacak iş parçacığı sayısını ayarlar.
-- [Omp_dynamıc](#43-omp_dynamic) etkinleştirir veya iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakır.
-- [OMP_NESTED](#44-omp_nested) etkinleştirir veya iç içe geçmiş paralellik devre dışı bırakır.
+- [Omp_schedule](#41-omp_schedule) çalışma zamanı zamanlama türünü ve öbek boyutunu ayarlar.
+- [Omp_num_threads](#42-omp_num_threads) , yürütme sırasında kullanılacak iş parçacığı sayısını belirler.
+- [OMP_DYNAMIC](#43-omp_dynamic) , iş parçacıklarının sayısını dinamik olarak ayarlamayı mümkün veya devre dışı bırakır.
+- [OMP_NESTED](#44-omp_nested) iç içe paralel paralellik etkinleştirilir veya devre dışı bırakır.
 
-Bu bölümdeki örnekler, yalnızca bu değişkenleri UNIX C Kabuğu (csh) ortamlarda nasıl ayarlanabilir gösterir. Korn kabuk ve DOS ortamları, eylemleri benzerdir:
+Bu bölümdeki örneklerde yalnızca bu değişkenlerin UNIX C kabuğu (csh) ortamlarında nasıl ayarlanbileceği gösterilmektedir. Korn kabuğu ve DOS ortamlarında, işlemler benzerdir:
 
-csh:  
+CSH:  
 `setenv OMP_SCHEDULE "dynamic"`
 
 ksh:  
 `export OMP_SCHEDULE="dynamic"`
 
-DOS:  
+ÇALıŞTıRAN  
 `set OMP_SCHEDULE="dynamic"`
 
-## <a name="41-omp_schedule"></a>4.1 OMP_SCHEDULE
+## <a name="41-omp_schedule"></a>4,1 OMP_SCHEDULE
 
-`OMP_SCHEDULE` yalnızca geçerli `for` ve `parallel for` zamanlama türü olan yönergeleri `runtime`. Zamanlama türü ve Öbek boyutu tüm döngüler için çalışma zamanında ayarlanabilir. Herhangi bir tanınan zamanlama türü ve isteğe bağlı bu ortam değişkenini ayarlamak *chunk_size*.
+`OMP_SCHEDULE` yalnızca zamanlama türü `runtime`olan `for` ve `parallel for` yönergeleri için geçerlidir. Bu tür döngüler için zamanlama türü ve öbek boyutu çalışma zamanında ayarlanabilir. Bu ortam değişkenini herhangi bir kabul edilen zamanlama türüne ve isteğe bağlı bir *chunk_size*ayarlayın.
 
-İçin `for` ve `parallel for` dışındaki bir zamanlama türü olan yönergeleri `runtime`, `OMP_SCHEDULE` göz ardı edilir. Bu ortam değişkeni için varsayılan değer uygulama tarafından tanımlanır. İsteğe bağlı *chunk_size* ayarlanmış, değeri pozitif olmalıdır. Varsa *chunk_size* , 1 değeri kabul edilir, zamanlama dışında olduğunda, ayarlı değil `static`. İçin bir `static` zamanlama varsayılan öbek boyutu döngü için uygulanan bir iş parçacığı sayısını bölü döngü yineleme alanına ayarlanır.
+`runtime`dışında bir zamanlama türüne sahip `for` ve `parallel for` yönergeleri için `OMP_SCHEDULE` yok sayılır. Bu ortam değişkeninin varsayılan değeri uygulama tanımlı ' dır. İsteğe bağlı *chunk_size* ayarlandıysa değer pozitif olmalıdır. *Chunk_size* ayarlanmamışsa, zamanlamanın `static`dışında 1 değeri varsayılır. Bir `static` zamanlaması için, varsayılan öbek boyutu, döngüye uygulanan iş parçacığı sayısına bölünen döngü yineleme alanı olarak ayarlanır.
 
 Örnek:
 
@@ -44,22 +44,22 @@ setenv OMP_SCHEDULE "guided,4"
 setenv OMP_SCHEDULE "dynamic"
 ```
 
-### <a name="cross-references"></a>Çapraz başvuruları
+### <a name="cross-references"></a>Çapraz başvurular
 
-- [için](2-directives.md#241-for-construct) yönergesi
-- [için paralel](2-directives.md#251-parallel-for-construct) yönergesi
+- [for](2-directives.md#241-for-construct) yönergesi
+- [for yönergesi için Parallel](2-directives.md#251-parallel-for-construct)
 
-## <a name="42-omp_num_threads"></a>4.2 OMP_NUM_THREADS
+## <a name="42-omp_num_threads"></a>4,2 OMP_NUM_THREADS
 
-`OMP_NUM_THREADS` Ortam değişkenini ayarlar varsayılan yürütme sırasında kullanılacak iş parçacığı sayısı. `OMP_NUM_THREADS` Bu sayıyı açıkça çağrılarak değiştirilirse göz ardı edilir `omp_set_num_threads` yordamı. Ayrıca varsa açık bir yoksayılır `num_threads` yan tümcesi bir `parallel` yönergesi.
+`OMP_NUM_THREADS` ortam değişkeni, yürütme sırasında kullanılacak varsayılan iş parçacığı sayısını ayarlar. Bu sayı, `omp_set_num_threads` kitaplığı yordamı çağırarak açıkça değiştirilirse `OMP_NUM_THREADS` yok sayılır. Ayrıca, bir `parallel` yönergesinde açık bir `num_threads` yan tümcesi varsa de yok sayılır.
 
-Değerini `OMP_NUM_THREADS` ortam değişkeni, pozitif bir tamsayı olmalıdır. İş parçacığı sayısını yerleştirmenin dinamik ayarına etkin bağlı etkisini bağlıdır. Kurallar arasındaki etkileşimi hakkında kapsamlı bir dizi için `OMP_NUM_THREADS` ortam değişkeni ve dinamik ayarı iş parçacığı, bkz [bölümünde 2.3](2-directives.md#23-parallel-construct).
+`OMP_NUM_THREADS` ortam değişkeninin değeri pozitif bir tamsayı olmalıdır. Etkisi, iş parçacığı sayısının dinamik ayarlamasının etkin olup olmamasına bağlıdır. `OMP_NUM_THREADS` ortam değişkeni ve iş parçacıklarının dinamik ayarlaması arasındaki etkileşim hakkında kapsamlı bir kurallar kümesi için bkz. [bölüm 2,3](2-directives.md#23-parallel-construct).
 
-Kullanılacak iş parçacığı sayısını uygulama-ise tanımlanabilir:
+Şu durumlarda kullanılacak iş parçacıklarının sayısı uygulama tanımlı:
 
-- `OMP_NUM_THREADS` ortam değişkeni belirtilmediyse,
+- `OMP_NUM_THREADS` ortam değişkeni belirtilmemiş,
 - Belirtilen değer pozitif bir tamsayı değil veya
-- değer, sistemin destekleyebileceği iş parçacıklarını en fazla sayısından büyüktür.
+- değer, sistemin destekleyebileceği en fazla iş parçacığı sayısından daha büyük.
 
 Örnek:
 
@@ -67,17 +67,17 @@ Kullanılacak iş parçacığı sayısını uygulama-ise tanımlanabilir:
 setenv OMP_NUM_THREADS 16
 ```
 
-### <a name="cross-references"></a>Çapraz başvuruları
+### <a name="cross-references"></a>Çapraz başvurular
 
 - [num_threads](2-directives.md#23-parallel-construct) yan tümcesi
 - [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) işlevi
 - [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) işlevi
 
-## <a name="43-omp_dynamic"></a>4.3 OMP_DYNAMIC
+## <a name="43-omp_dynamic"></a>4,3 OMP_DYNAMIC
 
-`OMP_DYNAMIC` Ortam değişkeni etkinleştirir veya paralel bölgeleri yürütülmesi için kullanılabilir iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakır. `OMP_DYNAMIC` yerleştirmenin dinamik ayarına açıkça etkin veya devre dışı çağırarak göz ardı edilir `omp_set_dynamic` yordamı. Değeri olmalıdır `TRUE` veya `FALSE`.
+`OMP_DYNAMIC` ortam değişkeni, paralel bölgelerin yürütülmesi için kullanılabilen iş parçacığı sayısı için dinamik ayarlamayı mümkün veya devre dışı bırakır. Dinamik ayarlama açık olarak etkinleştirildiğinde veya `omp_set_dynamic` kitaplığı yordamı çağırarak devre dışı bırakıldığında `OMP_DYNAMIC` yok sayılır. Değeri `TRUE` veya `FALSE`olmalıdır.
 
-Varsa `OMP_DYNAMIC` ayarlanır `TRUE`, paralel bölgeleri yürütmek için kullanılan iş parçacıklarının sayısını en iyi sistem kaynakları kullanmak için çalışma zamanı ortamı tarafından ayarlanmış.  Varsa `OMP_DYNAMIC` ayarlanır `FALSE`, yerleştirmenin dinamik ayarına devre dışı bırakıldı. Uygulama tanımlı varsayılan durumdur.
+`OMP_DYNAMIC` `TRUE`olarak ayarlanırsa, paralel bölgeleri yürütmek için kullanılan iş parçacıklarının sayısı, sistem kaynaklarını en iyi şekilde kullanmak için çalışma zamanı ortamı tarafından ayarlanabilir.  `OMP_DYNAMIC` `FALSE`olarak ayarlanırsa, dinamik ayarlama devre dışı bırakılır. Varsayılan koşul uygulama tanımlı ' dır.
 
 Örnek:
 
@@ -85,14 +85,14 @@ Varsa `OMP_DYNAMIC` ayarlanır `TRUE`, paralel bölgeleri yürütmek için kulla
 setenv OMP_DYNAMIC TRUE
 ```
 
-### <a name="cross-references"></a>Çapraz başvuruları
+### <a name="cross-references"></a>Çapraz başvurular
 
-- [Paralel bölgeleri](2-directives.md#23-parallel-construct)
+- [Paralel bölgeler](2-directives.md#23-parallel-construct)
 - [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) işlevi
 
-## <a name="44-omp_nested"></a>4.4 OMP_NESTED
+## <a name="44-omp_nested"></a>4,4 OMP_NESTED
 
-`OMP_NESTED` Ortam değişkeni etkinleştirir veya iç içe geçmiş paralellik etkin veya devre dışı çağırarak sürece iç içe geçmiş paralellik devre dışı bırakır `omp_set_nested` yordamı. Varsa `OMP_NESTED` ayarlanır `TRUE`, iç içe geçmiş paralellik etkinleştirilir. Varsa `OMP_NESTED` ayarlanır `FALSE`, iç içe geçmiş paralellik devre dışı bırakıldı. Varsayılan değer `FALSE` şeklindedir.
+`OMP_NESTED` ortam değişkeni, iç içe paralelliği etkin hale `omp_set_nested` getirerek veya devre dışı bırakarak iç içe paralelliği devre dışı bırakır veya devre dışı bırakır. `OMP_NESTED` `TRUE`olarak ayarlanırsa, iç içe paralellik etkin olur. `OMP_NESTED` `FALSE`olarak ayarlanırsa, iç içe paralellik devre dışı bırakılır. Varsayılan değer: `FALSE`.
 
 Örnek:
 
@@ -100,6 +100,6 @@ setenv OMP_DYNAMIC TRUE
 setenv OMP_NESTED TRUE
 ```
 
-### <a name="cross-reference"></a>Çapraz
+### <a name="cross-reference"></a>Çapraz başvuru
 
 - [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) işlevi

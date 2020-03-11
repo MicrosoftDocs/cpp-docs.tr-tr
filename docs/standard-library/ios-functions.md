@@ -57,11 +57,11 @@ helpviewer_keywords:
 - std::unitbuf [C++]
 - std::uppercase [C++]
 ms.openlocfilehash: c3b1e2350d0923cbfddf95492842ae126859e29f
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890063"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856548"
 ---
 # <a name="ltiosgt-functions"></a>&lt;iOS&gt; işlevleri
 
@@ -75,7 +75,7 @@ ios_base& boolalpha(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -127,7 +127,7 @@ ios_base& dec(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -181,7 +181,7 @@ ios_base& defaultfloat(ios_base& iosbase);
 ### <a name="parameters"></a>Parametreler
 
 *_Iosbase*\
-`ios_base` nesnesi.
+Bir `ios_base` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -197,7 +197,7 @@ ios_base& fixed(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -245,7 +245,7 @@ ios_base& hex(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -286,7 +286,7 @@ ios_base& internal(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -297,7 +297,7 @@ ios_base& internal(ios_base& str);
 
 [showpos](../standard-library/ios-functions.md#showpos) , işaretin pozitif sayılar için görüntülenmesine neden olur.
 
-İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: Internal](../standard-library/ios-base-class.md#fmtflags)`, `[ios_base:: adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve *Str*döndürüyor.
+İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: iç](../standard-library/ios-base-class.md#fmtflags)`, `[ios_base:: adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve *Str*döndürüyor.
 
 ### <a name="example"></a>Örnek
 
@@ -344,7 +344,7 @@ ios_base& left(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -399,7 +399,7 @@ ios_base& noboolalpha(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -428,7 +428,7 @@ ios_base& noshowbase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -455,7 +455,7 @@ ios_base& noshowpoint(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -502,7 +502,7 @@ ios_base& noshowpos(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -529,7 +529,7 @@ ios_base& noskipws(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -571,7 +571,7 @@ ios_base& nounitbuf(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -594,7 +594,7 @@ ios_base& nouppercase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -619,7 +619,7 @@ ios_base& oct(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -646,7 +646,7 @@ ios_base& right(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -703,7 +703,7 @@ ios_base& scientific(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -748,7 +748,7 @@ ios_base& showbase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -802,7 +802,7 @@ ios_base& showpoint(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -829,7 +829,7 @@ ios_base& showpos(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -874,7 +874,7 @@ ios_base& skipws(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -926,7 +926,7 @@ ios_base& unitbuf(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -951,7 +951,7 @@ ios_base& uppercase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 [İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya `ios_base`devralan bir türe başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -962,7 +962,7 @@ ios_base& uppercase(ios_base& str);
 
 Varsayılan olarak, [nobüyük](../standard-library/ios-functions.md#nouppercase) değer etkindir.
 
-İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: büyük](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve ardından *Str*döndürüyor.
+İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: büyük harf](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve *Str*döndürüyor.
 
 ### <a name="example"></a>Örnek
 

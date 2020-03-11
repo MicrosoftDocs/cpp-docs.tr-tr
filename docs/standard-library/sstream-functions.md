@@ -5,11 +5,11 @@ f1_keywords:
 - sstream/std::swap
 ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
 ms.openlocfilehash: 707d35123797b84b2b7cef1d1cfd9005e4becb1c
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447536"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865930"
 ---
 # <a name="ltsstreamgt-functions"></a>&lt;sstream&gt; işlevleri
 
@@ -47,12 +47,12 @@ void swap(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*tarafta*|Bir `sstream` nesneye başvuru.|
-|*Right*|Bir `sstream` nesneye başvuru.|
+|*tarafta*|`sstream` nesnesine başvuru.|
+|*Right*|`sstream` nesnesine başvuru.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütülür `left.swap(right)`.
+Şablon işlevi `left.swap(right)`yürütür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

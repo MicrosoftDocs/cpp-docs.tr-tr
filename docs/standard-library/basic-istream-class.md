@@ -35,15 +35,15 @@ helpviewer_keywords:
 - std::basic_istream [C++], unget
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
 ms.openlocfilehash: 68c7f7ffa9c32c16654e57c8249348d74cc83a5b
-ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778515"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78874856"
 ---
 # <a name="basic_istream-class"></a>basic_istream Sınıfı
 
-[Char_type](../standard-library/basic-ios-class.md#char_type)olarak da bilinen, ve traits_type olarak da bilinen karakter nitelikleri, olarak da *bilinen sınıf özellikleri*tarafından belirlendiği şekilde, öğe ve kodlanmış nesnelerin bir akış Arabelle`Char_T` ğinden ayıklanmasını denetleyen bir nesne tanımlar. [ ](../standard-library/basic-ios-class.md#traits_type).
+[Char_type](../standard-library/basic-ios-class.md#char_type)olarak da bilinen, karakter nitelikleri, [traits_type](../standard-library/basic-ios-class.md#traits_type)olarak da *bilinen sınıf özellikleri*tarafından belirlendiği şekilde, öğe ve kodlanmış nesnelerin bir akış Arabelle`Char_T`ğinden ayıklanmasını denetleyen bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,23 +119,23 @@ if (ok)
 setstate(state);
 ```
 
-Her iki işlev grubu [`setstate`](../standard-library/basic-ios-class.md#setstate) çağrısı, öğelerin ayıklanması sırasında dosya sonuyla karşılaştıklarında `(eofbit)`.
+Her iki işlev grubu [`setstate`](../standard-library/basic-ios-class.md#setstate) çağrısı, öğelerin ayıklanması sırasında dosya sonuyla karşılaştıklarında`(eofbit)`.
 
-@No__t_0 depolayan bir nesne:
+`basic_istream<Char_T, Tr>` depolayan bir nesne:
 
-- [@No__t_1](../standard-library/basic-ios-class.md) `<Char_T, Tr>` sınıfının sanal ortak temel nesnesi.
+- [`basic_ios`](../standard-library/basic-ios-class.md)`<Char_T, Tr>`sınıfının sanal ortak temel nesnesi.
 
 - Son biçimlendirilmemiş giriş işleminin ayıklama sayısı (önceki kodda `count` olarak adlandırılır).
 
 ## <a name="example"></a>Örnek
 
-Giriş akışları hakkında daha fazla bilgi için bkz. [Basic_ifstream sınıfı](../standard-library/basic-ifstream-class.md) örneği.
+Giriş akışları hakkında daha fazla bilgi edinmek için [Basic_ifstream sınıfının](../standard-library/basic-ifstream-class.md) örneğine bakın.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_istream](#basic_istream)|@No__t_0 türünde bir nesne oluşturur.|
+|[basic_istream](#basic_istream)|`basic_istream`türünde bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -165,13 +165,13 @@ Giriş akışları hakkında daha fazla bilgi için bkz. [Basic_ifstream sınıf
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<istream >
+**Üst bilgi:** \<ıstream >
 
 **Ad alanı:** std
 
-## <a name="basic_istream"></a>basic_istream::basic_istream
+## <a name="basic_istream"></a>basic_istream:: basic_istream
 
-@No__t_0 türünde bir nesne oluşturur.
+`basic_istream`türünde bir nesne oluşturur.
 
 ```cpp
 explicit basic_istream(
@@ -183,24 +183,24 @@ basic_istream(basic_istream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*strarabelleğe* \
+*strarabelleğe*\
 [Basic_streambuf](../standard-library/basic-streambuf-class.md)türünde bir nesne.
 
-*_Isstd* \
+*_Isstd*\
 Standart akış ise **doğru** ; Aksi takdirde, **false**.
 
-*sağ* \
+*sağ*\
 Kopyalanacak `basic_istream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, [`init`](../standard-library/basic-ios-class.md#init) `(strbuf)` çağırarak temel sınıfı başlatır. Ayrıca, ayıklama sayısında sıfır depolar. Bu ayıklama sayısı hakkında daha fazla bilgi için [Basic_istream sınıfına](../standard-library/basic-istream-class.md) genel bakış konusunun açıklamalar bölümüne bakın.
+İlk Oluşturucu, [`init`](../standard-library/basic-ios-class.md#init)`(strbuf)`çağırarak temel sınıfı başlatır. Ayrıca, ayıklama sayısında sıfır depolar. Bu ayıklama sayısı hakkında daha fazla bilgi için [Basic_istream sınıfına](../standard-library/basic-istream-class.md) genel bakış ' ın açıklamalar bölümüne bakın.
 
-İkinci Oluşturucu, `move(right)` çağırarak temel sınıfı başlatır. Ayrıca, ayıklama sayımında `right.gcount()` depolar ve * Right * * ayıklama sayısında sıfır depolar.
+İkinci Oluşturucu, `move(right)`çağırarak temel sınıfı başlatır. Ayrıca, ayıklama sayımında `right.gcount()` depolar ve * Right * * ayıklama sayısında sıfır depolar.
 
 ### <a name="example"></a>Örnek
 
-Giriş akışları hakkında daha fazla bilgi edinmek için [basic_ifstream:: basic_ifstream](../standard-library/basic-ifstream-class.md#basic_ifstream) örneğine bakın.
+Giriş akışları hakkında daha fazla bilgi edinmek için [basic_ifstream:: basic_ifstream](../standard-library/basic-ifstream-class.md#basic_ifstream) örneğe bakın.
 
 ## <a name="gcount"></a>basic_istream:: gcount
 
@@ -266,19 +266,19 @@ basic_istream<Char_T, Tr>& get(basic_streambuf<Char_T, Tr>& strbuf, Char_T delim
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı* \
+*sayı*\
 *Strarabelleğe*okunacak karakter sayısı.
 
-*sınırlayıcı* \
+*sınırlayıcı*\
 *Count*'tan önce karşılaşılırsa okumayı sonlanacak karakter.
 
-*str* \
+*str*\
 Yazılacak bir dize.
 
-*Ch* \
+*Ch*\
 Alınacak bir karakter.
 
-*strarabelleğe* \
+*strarabelleğe*\
 Yazılacak bir arabellek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -287,13 +287,13 @@ Parametresiz formu, bir tamsayı veya dosya sonu olarak okunan öğeyi döndür�
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk biçimlendirilmemiş giriş işlevi, mümkünse `rdbuf->sbumpc` dönerek bir öğeyi ayıklar. Aksi takdirde, `traits_type::`[ `eof`](../standard-library/char-traits-struct.md#eof)döndürür. İşlev hiçbir öğe ayıklaıyorsa, [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır.
+İlk biçimlendirilmemiş giriş işlevi, mümkünse `rdbuf->sbumpc`dönerek bir öğeyi ayıklar. Aksi takdirde, `traits_type::`[`eof`](../standard-library/char-traits-struct.md#eof)döndürür. İşlev hiçbir öğe ayıklaıyorsa, [`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır.
 
-İkinci işlev, `meta` aynı şekilde [int_type](../standard-library/basic-ios-class.md#int_type) öğesini ayıklar. @No__t_0, `traits_type::eof` eşit olarak karşılaştırıyorsa işlev `setstate(failbit)` çağırır. Aksi takdirde, `traits_type::`[ `to_char_type`](../standard-library/char-traits-struct.md#to_char_type) `(meta)` de *ch*içinde depolar. İşlev __* this__döndürür.
+İkinci işlev [int_type](../standard-library/basic-ios-class.md#int_type) öğesi `meta` aynı şekilde ayıklar. `meta`, `traits_type::eof`eşit olarak karşılaştırıyorsa işlev `setstate(failbit)`çağırır. Aksi takdirde, `traits_type::`[`to_char_type`](../standard-library/char-traits-struct.md#to_char_type)`(meta)` de *ch*içinde depolar. İşlev __* this__döndürür.
 
-Üçüncü işlev `get(str, count, widen('\n'))` döndürür.
+Üçüncü işlev `get(str, count, widen('\n'))`döndürür.
 
-Dördüncü işlev `count - 1` öğeleri ayıklar ve bunları *Str*ile başlayan dizi içinde depolar. @No__t_0 her zaman, depoladığı tüm ayıklanan öğelerden sonra depolar. Sınama sırasında, ayıklama durduruluyor:
+Dördüncü işlev `count - 1` öğeleri ayıklar ve bunları *Str*ile başlayan dizi içinde depolar. `char_type` her zaman, depoladığı tüm ayıklanan öğelerden sonra depolar. Sınama sırasında, ayıklama durduruluyor:
 
 - Dosya sonunda.
 
@@ -301,11 +301,11 @@ Dördüncü işlev `count - 1` öğeleri ayıklar ve bunları *Str*ile başlayan
 
 - İşlev `count - 1` öğeleri ayıkladıktan sonra.
 
-İşlev hiçbir öğe ayıklaıyorsa, `setstate(failbit)` çağırır. Herhangi bir durumda, __* this__döndürür.
+İşlev hiçbir öğe ayıklaıyorsa, `setstate(failbit)`çağırır. Herhangi bir durumda, __* this__döndürür.
 
-Beşinci işlev `get(strbuf, widen('\n'))` döndürür.
+Beşinci işlev `get(strbuf, widen('\n'))`döndürür.
 
-Altıncı işlev öğeleri ayıklar ve bunları *strarabelleğe*ekler. Ayıklama işlemi dosya sonu veya eşit *sınırlayıcıyla*karşılaştırıldığı bir öğe üzerinde veya ayıklanmayan bir öğe üzerinde durduruluyor. Ayrıca, bir ekleme başarısız olursa veya bir özel durum oluşturursa (yakalanırsa ancak yeniden atılmadığında), söz konusu öğeyi ayıklamadan da duraklar. İşlev hiçbir öğe ayıklaıyorsa, `setstate(failbit)` çağırır. Herhangi bir durumda, işlev __* this__döndürür.
+Altıncı işlev öğeleri ayıklar ve bunları *strarabelleğe*ekler. Ayıklama işlemi dosya sonu veya eşit *sınırlayıcıyla*karşılaştırıldığı bir öğe üzerinde veya ayıklanmayan bir öğe üzerinde durduruluyor. Ayrıca, bir ekleme başarısız olursa veya bir özel durum oluşturursa (yakalanırsa ancak yeniden atılmadığında), söz konusu öğeyi ayıklamadan da duraklar. İşlev hiçbir öğe ayıklaıyorsa, `setstate(failbit)`çağırır. Herhangi bir durumda, işlev __* this__döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -349,13 +349,13 @@ basic_istream<Char_T, Tr>& getline(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı* \
+*sayı*\
 *Strarabelleğe*okunacak karakter sayısı.
 
-*sınırlayıcı* \
+*sınırlayıcı*\
 *Count*'tan önce karşılaşılırsa okumayı sonlanacak karakter.
 
-*str* \
+*str*\
 Yazılacak bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -364,7 +364,7 @@ Akış ( __* this__).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu biçimlendirilmemiş giriş işlevlerinin ilki `getline(str, count, widen('\n'))` döndürür.
+Bu biçimlendirilmemiş giriş işlevlerinin ilki `getline(str, count, widen('\n'))`döndürür.
 
 İkinci işlev `count - 1` öğeleri ayıklar ve bunları *Str*ile başlayan dizi içinde depolar. Bu, her zaman dize sonlandırma karakterini, depoladığı herhangi bir ayıklanan öğeden sonra depolar. Sınama sırasında, ayıklama durduruluyor:
 
@@ -374,7 +374,7 @@ Bu biçimlendirilmemiş giriş işlevlerinin ilki `getline(str, count, widen('\n
 
 - İşlev `count - 1` öğeleri ayıkladıktan sonra.
 
-İşlev hiçbir öğe veya `count - 1` öğesi ayıklaıyorsa, [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır. Herhangi bir durumda, __* this__döndürür.
+İşlev hiçbir öğe veya `count - 1` öğesi ayıklaıyorsa, [`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır. Herhangi bir durumda, __* this__döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -409,10 +409,10 @@ basic_istream<Char_T, Tr>& ignore(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı* \
+*sayı*\
 Geçerli okuma konumundan atlanacak öğe sayısı.
 
-*sınırlayıcı* \
+*sınırlayıcı*\
 Count 'tan önce karşılaşılırsa öğesi, *sınırlayıcıların* okunmasının ardından tüm öğelerin dönmesini ve izin vermesini `ignore` neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -421,7 +421,7 @@ Akış ( __* this__).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Biçimlendirilmemiş giriş işlevi öğeleri *saymak* için ayıklar ve bunları atar. Eğer *Count* eşitse `numeric_limits<int>::max`, ancak rastgele büyük olarak alınır. Ayıklama işlemi dosya sonunda veya bir öğe `Ch`, `traits_type::`[ `to_int_type`](../standard-library/char-traits-struct.md#to_int_type) `(Ch)` *sınırlayıcıyla* (Ayrıca ayıklanır) daha önce duraklar. İşlev __* this__döndürür.
+Biçimlendirilmemiş giriş işlevi öğeleri *saymak* için ayıklar ve bunları atar. Eğer *Count* eşitse `numeric_limits<int>::max`, ancak rastgele büyük olarak alınır. Ayıklama işlemi dosya sonunda veya bir öğe `Ch`, `traits_type::`[`to_int_type`](../standard-library/char-traits-struct.md#to_int_type)`(Ch)` *sınırlayıcıyla* (Ayrıca ayıklanır) daha önce duraklar. İşlev __* this__döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -445,7 +445,7 @@ Type 'abcdef': abcdef
 def
 ```
 
-## <a name="op_gt_gt"></a>temel \_istream:: operator > >
+## <a name="op_gt_gt"></a>temel\_IStream:: operator > >
 
 Giriş akışında bir işlev çağırır veya giriş akışından biçimlendirilen verileri okur.
 
@@ -471,13 +471,13 @@ basic_istream& operator>>(long double& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*PFN* \
+*PFN*\
 Bir işlev işaretçisi.
 
-*strarabelleğe* \
-@No__t_0 türünde bir nesne.
+*strarabelleğe*\
+`stream_buf` türünün bir nesnesi.
 
-*val* \
+*val*\
 Akıştan okunacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -486,9 +486,9 @@ Akış ( __* this__).
 
 ### <a name="remarks"></a>Açıklamalar
 
-@No__t_0istream > üst bilgisi birçok genel ayıklama işlecini de tanımlar. Daha fazla bilgi için bkz. [operator > > (\<istream >)](../standard-library/istream-operators.md#op_gt_gt).
+\<IStream > üst bilgisi birçok genel ayıklama işlecini de tanımlar. Daha fazla bilgi için bkz. [operator > > (\<ıstream >)](../standard-library/istream-operators.md#op_gt_gt).
 
-İlk üye işlevi, bir form ifadesinin `istr >> ws` [`ws`](../standard-library/istream-functions.md#ws) `(istr)` çağırmasını sağlar ve ardından __* this__döndürür. İkinci ve üçüncü işlevleri, [`hex`](../standard-library/ios-functions.md#hex)gibi diğer işleicilere benzer şekilde davrandığından emin olmanızı sağlamaktır. Kalan işlevler, biçimlendirilen giriş işlevleridir.
+İlk üye işlevi, bir form ifadesinin `istr >> ws` [`ws`](../standard-library/istream-functions.md#ws)`(istr)`çağırmasını sağlar ve ardından __* this__döndürür. İkinci ve üçüncü işlevleri, [`hex`](../standard-library/ios-functions.md#hex)gibi diğer işleicilere benzer şekilde davrandığından emin olmanızı sağlamaktır. Kalan işlevler, biçimlendirilen giriş işlevleridir.
 
 İşlev:
 
@@ -497,7 +497,7 @@ basic_istream& operator>>(
     basic_streambuf<Char_T, Tr>* strbuf);
 ```
 
-*strarabelleğe* boş bir işaretçi değilse öğeleri ayıklar ve bunları *strarabelleğe*ekler. Dosya sonunda ayıklama durduruluyor. Ayrıca, bir ekleme başarısız olursa veya bir özel durum oluşturursa (yakalanırsa ancak yeniden atılmadığında), söz konusu öğeyi ayıklamadan da duraklar. İşlev hiçbir öğe ayıklaıyorsa, [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır. Herhangi bir durumda, işlev __* this__döndürür.
+*strarabelleğe* boş bir işaretçi değilse öğeleri ayıklar ve bunları *strarabelleğe*ekler. Dosya sonunda ayıklama durduruluyor. Ayrıca, bir ekleme başarısız olursa veya bir özel durum oluşturursa (yakalanırsa ancak yeniden atılmadığında), söz konusu öğeyi ayıklamadan da duraklar. İşlev hiçbir öğe ayıklaıyorsa, [`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır. Herhangi bir durumda, işlev __* this__döndürür.
 
 İşlev:
 
@@ -505,7 +505,7 @@ basic_istream& operator>>(
 basic_istream& operator>>(bool& val);
 ```
 
-bir alanı ayıklar ve [`use_facet`](../standard-library/basic-filebuf-class.md#open) `< num_get<Char_T, InIt>(`[ `getloc`](../standard-library/ios-base-class.md#getloc) `).`[ `get`](../standard-library/ios-base-class.md#getloc) [ `( InIt(` 0 1 çağırarak](../standard-library/basic-ios-class.md#rdbuf) bir Boole değerine dönüştürür. Burada `InIt` [`istreambuf_iterator`](../standard-library/istreambuf-iterator-class.md) `<Char_T, Tr>` olarak tanımlanmıştır. İşlev __* this__döndürür.
+bir alanı ayıklar ve [`use_facet`](../standard-library/basic-filebuf-class.md#open)`< num_get<Char_T, InIt>(`[`getloc`](../standard-library/ios-base-class.md#getloc)`).`[`get`](../standard-library/ios-base-class.md#getloc) [`( InIt(``rdbuf``), Init(0), *this, getloc, val)`çağırarak](../standard-library/basic-ios-class.md#rdbuf) bir Boole değerine dönüştürür. Burada `InIt` [`istreambuf_iterator`](../standard-library/istreambuf-iterator-class.md)`<Char_T, Tr>`olarak tanımlanmıştır. İşlev __* this__döndürür.
 
 İşlevlerin her biri:
 
@@ -521,9 +521,9 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-`use_facet<num_get<Char_T, InIt>(getloc).`[ `get`](#get) `(InIt(rdbuf), Init(0), *this, getloc, val)` çağırarak bir alanı ayıklayın ve sayısal değere dönüştürün. Burada, `InIt` `istreambuf_iterator<Char_T, Tr>` olarak tanımlanmıştır ve *değer* , gerektiği gibi **Long**, **unsigned long**veya **void** <strong>\*</strong> türündedir.
+`use_facet<num_get<Char_T, InIt>(getloc).`[`get`](#get)`(InIt(rdbuf), Init(0), *this, getloc, val)`çağırarak bir alanı ayıklayın ve sayısal değere dönüştürün. Burada, `InIt` `istreambuf_iterator<Char_T, Tr>`olarak tanımlanmıştır ve *değer* , gerektiği gibi **Long**, **unsigned long**veya **void** <strong>\*</strong> türündedir.
 
-Dönüştürülen değer *Val*türü olarak temsil edilemiyorsa, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır. Herhangi bir durumda, işlev __* this__döndürür.
+Dönüştürülen değer *Val*türü olarak temsil edilemiyorsa, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır. Herhangi bir durumda, işlev __* this__döndürür.
 
 İşlevlerin her biri:
 
@@ -533,9 +533,9 @@ basic_istream& operator>>(double& val);
 basic_istream& operator>>(long double& val);
 ```
 
-`use_facet<num_get<Char_T, InIt>(getloc).get(InIt(rdbuf), Init(0), *this, getloc, val)` çağırarak bir alanı ayıklayın ve sayısal değere dönüştürün. Burada, `InIt` `istreambuf_iterator<Char_T, Tr>` olarak tanımlanmıştır ve *değer* gerektiğinde **Double** ya da **Long Double** türündedir.
+`use_facet<num_get<Char_T, InIt>(getloc).get(InIt(rdbuf), Init(0), *this, getloc, val)`çağırarak bir alanı ayıklayın ve sayısal değere dönüştürün. Burada, `InIt` `istreambuf_iterator<Char_T, Tr>`olarak tanımlanmıştır ve *değer* gerektiğinde **Double** ya da **Long Double** türündedir.
 
-Dönüştürülmüş değer *Val*türü olarak temsil edilemiyorsa işlev `setstate(failbit)` çağırır. Herhangi bir durumda, __* this__döndürür.
+Dönüştürülmüş değer *Val*türü olarak temsil edilemiyorsa işlev `setstate(failbit)`çağırır. Herhangi bir durumda, __* this__döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -584,7 +584,7 @@ basic_istream& operator=(basic_istream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Bir `basic_ifstream` nesnesine `rvalue` başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -593,7 +593,7 @@ __* This__döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci `swap(right)` çağırır.
+Üye işleci `swap(right)`çağırır.
 
 ## <a name="peek"></a>basic_istream::p EEK
 
@@ -609,7 +609,7 @@ Okunacak sonraki karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Biçimlendirilmemiş giriş işlevi, mümkünse `rdbuf->`[ `sgetc`](../standard-library/basic-streambuf-class.md#sgetc)döndüren gibi bir öğeyi ayıklar. Aksi takdirde, `traits_type::`[ `eof`](../standard-library/char-traits-struct.md#eof)döndürür.
+Biçimlendirilmemiş giriş işlevi, mümkünse `rdbuf->`[`sgetc`](../standard-library/basic-streambuf-class.md#sgetc)döndüren gibi bir öğeyi ayıklar. Aksi takdirde, `traits_type::`[`eof`](../standard-library/char-traits-struct.md#eof)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -651,7 +651,7 @@ basic_istream<Char_T, Tr>& putback(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch* \
+*Ch*\
 Akışa geri yerleştirilecek bir karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -660,7 +660,7 @@ Akış ( __* this__).
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Biçimlendirilmemiş giriş işlevi](../standard-library/basic-istream-class.md) , mümkünse [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) `->`[ `sputbackc`](../standard-library/basic-streambuf-class.md#sputbackc)çağırarak olduğu *gibi geri koyar*. @No__t_0 null işaretçisiyse veya `sputbackc` çağrısı `traits_type::`[ `eof`](../standard-library/char-traits-struct.md#eof)döndürürse, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` çağırır. Herhangi bir durumda, __* this__döndürür.
+[Biçimlendirilmemiş giriş işlevi](../standard-library/basic-istream-class.md) , mümkünse [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf)`->`[`sputbackc`](../standard-library/basic-streambuf-class.md#sputbackc)çağırarak olduğu *gibi geri koyar*. `rdbuf` null işaretçisiyse veya `sputbackc` çağrısı `traits_type::`[`eof`](../standard-library/char-traits-struct.md#eof)döndürürse, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)`çağırır. Herhangi bir durumda, __* this__döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -700,10 +700,10 @@ basic_istream<Char_T, Tr>& read(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 Karakterlerin okunacağı dizi.
 
-*sayı* \
+*sayı*\
 Okunacak karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -712,7 +712,7 @@ Akış (`*this`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Biçimlendirilmemiş giriş işlevi, öğeleri *saymak* için ayıklar ve *Str*' den başlayarak dizi içinde depolar. Ayıklama, dosyanın sonunda erken durduruluyor, bu durumda işlev [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır. Herhangi bir durumda, __* this__döndürür.
+Biçimlendirilmemiş giriş işlevi, öğeleri *saymak* için ayıklar ve *Str*' den başlayarak dizi içinde depolar. Ayıklama, dosyanın sonunda erken durduruluyor, bu durumda işlev [`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır. Herhangi bir durumda, __* this__döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -761,10 +761,10 @@ streamsize readsome(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
-@No__t_0 okuduğu karakterleri depolayan dizi.
+*str*\
+`readsome` okuduğu karakterleri depolayan dizi.
 
-*sayı* \
+*sayı*\
 Okunacak karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -818,13 +818,13 @@ basic_istream<Char_T, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 ### <a name="parameters"></a>Parametreler
 
-*pos* \
+*pos*\
 Okuma işaretçisinin taşınacağı mutlak konum.
 
-*kapalı* \
+*kapalı*\
 Okuma işaretçisini göreli olarak taşımaya yönelik bir göreli *yol*.
 
-*yol* \
+*yol*\
 [İos_base:: seekdir](../standard-library/ios-base-class.md#seekdir) Numaralandırmalardan biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -838,9 +838,9 @@ Akış ( __* this__).
 > [!NOTE]
 > Standart C++ metin dosyalarında göreli aramalar desteklemediğinden, ikinci üye işlevi metin dosyalarıyla birlikte kullanmayın.
 
-[@No__t_1](../standard-library/basic-ios-class.md#fail) false ise, ilk üye işlevi bazı `pubseekpos` geçici nesne `(pos)` için `newpos = `[ `rdbuf`](../standard-library/basic-ios-class.md#rdbuf) `->`[ `pos_type`](../standard-library/basic-streambuf-class.md#pubseekpos) `fail`0 çağırır. @No__t_0 false ise, ikinci işlev `newpos = rdbuf->`[ `pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff) `( off, way)` çağırır. Her iki durumda da, `(off_type)newpos == (off_type)(-1)` (konumlandırma işlemi başarısız olursa), işlev `istr.`[ `setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır. Her iki işlev de __* this__döndürür.
+[`fail`](../standard-library/basic-ios-class.md#fail) false ise, ilk üye işlevi bazı`pubseekpos`geçici nesne`(pos)`için `newpos = `[`rdbuf`](../standard-library/basic-ios-class.md#rdbuf)`->`[`pos_type`](../standard-library/basic-streambuf-class.md#pubseekpos) `newpos`çağırır. `fail` false ise, ikinci işlev `newpos = rdbuf->`[`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff)`( off, way)`çağırır. Her iki durumda da, `(off_type)newpos == (off_type)(-1)` (konumlandırma işlemi başarısız olursa), işlev `istr.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır. Her iki işlev de __* this__döndürür.
 
-[@No__t_1](../standard-library/basic-ios-class.md#fail) true ise üye işlevleri hiçbir şey yapmaz.
+[`fail`](../standard-library/basic-ios-class.md#fail) true ise üye işlevleri hiçbir şey yapmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -879,13 +879,13 @@ class sentry {
 
 ### <a name="remarks"></a>Açıklamalar
 
-@No__t_0[ `good`](../standard-library/basic-ios-class.md#good) true ise, Oluşturucu:
+`_Istr.`[`good`](../standard-library/basic-ios-class.md#good) true ise, Oluşturucu:
 
-- @No__t_6 null bir işaretçi değilse[ `flush`](../standard-library/basic-ostream-class.md#flush) `->` `_Istr.`[ `tie`](../standard-library/basic-ios-class.md#tie) çağırır.
+- `_Istr.tie` null bir işaretçi değilse [`flush`](../standard-library/basic-ostream-class.md#flush)`->``_Istr.`[`tie`](../standard-library/basic-ios-class.md#tie) çağırır.
 
-- @No__t_3[ `flags`](../standard-library/ios-base-class.md#flags) ` & `[ `skipws`](../standard-library/ios-functions.md#skipws) sıfır dışında olduğunda [`ws`](../standard-library/istream-functions.md#ws) `(_Istr)` etkin bir şekilde çağırır.
+- `_Istr.`[`flags`](../standard-library/ios-base-class.md#flags)` & `[`skipws`](../standard-library/ios-functions.md#skipws) sıfır dışında olduğunda [`ws`](../standard-library/istream-functions.md#ws)`(_Istr)` etkin bir şekilde çağırır.
 
-Bu tür bir hazırlığından sonra `_Istr.good`, Oluşturucu `_Istr.`[ `setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` çağırır. Herhangi bir durumda, Oluşturucu `status` `_Istr.good` tarafından döndürülen değeri depolar. Daha sonraki bir `operator bool` çağrısı, bu depolanmış değeri sağlar.
+Bu tür bir hazırlığından sonra `_Istr.good`, Oluşturucu `_Istr.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`çağırır. Herhangi bir durumda, Oluşturucu `status``_Istr.good` tarafından döndürülen değeri depolar. Daha sonraki bir `operator bool` çağrısı, bu depolanmış değeri sağlar.
 
 ## <a name="swap"></a>basic_istream:: swap
 
@@ -897,12 +897,12 @@ void swap(basic_istream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
-@No__t_0 nesnesine bir lvalue başvurusu.
+*sağ*\
+`basic_istream` nesnesine bir lvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [`basic_ios::swap`](../standard-library/basic-ios-class.md#swap) `(right)` çağırır. Ayrıca ayıklama sayısını *sağ*için ayıklama sayısı ile de değiştirir.
+Üye işlevi [`basic_ios::swap`](../standard-library/basic-ios-class.md#swap)`(right)`çağırır. Ayrıca ayıklama sayısını *sağ*için ayıklama sayısı ile de değiştirir.
 
 ## <a name="sync"></a>basic_istream:: Sync
 
@@ -914,7 +914,7 @@ int sync();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[@No__t_1](../standard-library/basic-ios-class.md#rdbuf) null işaretçisiyse, işlev-1 döndürür. Aksi takdirde, `rdbuf->`[ `pubsync`](../standard-library/basic-streambuf-class.md#pubsync)çağırır. Bu çağrı-1 döndürürse, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` çağırır ve-1 döndürür. Aksi takdirde, işlev sıfır döndürür.
+[`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) null işaretçisiyse, işlev-1 döndürür. Aksi takdirde, `rdbuf->`[`pubsync`](../standard-library/basic-streambuf-class.md#pubsync)çağırır. Bu çağrı-1 döndürürse, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)` çağırır ve-1 döndürür. Aksi takdirde, işlev sıfır döndürür.
 
 ## <a name="tellg"></a>basic_istream:: tellg
 
@@ -930,7 +930,7 @@ Akıştaki geçerli konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[@No__t_1](../standard-library/basic-ios-class.md#fail) false ise, üye işlevi [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) `->`[ `pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff) `(0, cur, in)` döndürür. Aksi takdirde, `pos_type(-1)` döndürür.
+[`fail`](../standard-library/basic-ios-class.md#fail) false ise, üye işlevi [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf)`->`[`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff)`(0, cur, in)`döndürür. Aksi takdirde, `pos_type(-1)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -972,9 +972,9 @@ Akış ( __* this__).
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Biçimlendirilmemiş giriş işlevi](../standard-library/basic-istream-class.md) , mümkünse, `rdbuf->`[ `sungetc`](../standard-library/basic-streambuf-class.md#sungetc)çağırarak olduğu gibi akışta önceki öğeyi geri koyar. [@No__t_1](../standard-library/basic-ios-class.md#rdbuf) null işaretçisiyse veya `sungetc` çağrısı `traits_type::`[ `eof`](../standard-library/basic-ios-class.md#eof)döndürürse, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` çağırır. Herhangi bir durumda, __* this__döndürür.
+[Biçimlendirilmemiş giriş işlevi](../standard-library/basic-istream-class.md) , mümkünse, `rdbuf->`[`sungetc`](../standard-library/basic-streambuf-class.md#sungetc)çağırarak olduğu gibi akışta önceki öğeyi geri koyar. [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) null işaretçisiyse veya `sungetc` çağrısı `traits_type::`[`eof`](../standard-library/basic-ios-class.md#eof)döndürürse, işlev [`setstate`](../standard-library/basic-ios-class.md#setstate)`(badbit)`çağırır. Herhangi bir durumda, __* this__döndürür.
 
-@No__t_0 nasıl başarısız olabileceği hakkında bilgi için bkz. [`basic_streambuf::sungetc`](../standard-library/basic-streambuf-class.md#sungetc).
+`unget` nasıl başarısız olabileceği hakkında bilgi için bkz. [`basic_streambuf::sungetc`](../standard-library/basic-streambuf-class.md#sungetc).
 
 ### <a name="example"></a>Örnek
 
@@ -1007,6 +1007,6 @@ abc
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
-[iostream programlama](../standard-library/iostream-programming.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[iostream programlama](../standard-library/iostream-programming.md)\
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)

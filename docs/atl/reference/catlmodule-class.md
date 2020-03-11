@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CAtlModule class
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
 ms.openlocfilehash: 798e94aed3bbd98108866ce0a1810485bd68699b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497743"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78857164"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
 
@@ -41,14 +41,14 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: CAtlModule](#catlmodule)|Oluşturucu.|
 |[CAtlModule:: ~ CAtlModule](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: Addcommonrgsdeğiştirmeler](#addcommonrgsreplacements)|ATL kayıt defteri bileşeni (kaydedici) değiştirme eşlemesine parametreler eklemek için bu yöntemi geçersiz kılın.|
 |[CAtlModule:: AddTermFunc](#addtermfunc)|Modül sonlandırıldığında çağrılacak yeni bir işlev ekler.|
@@ -58,12 +58,12 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 |[CAtlModule:: Term](#term)|Tüm veri üyelerini yayınlar.|
 |[CAtlModule:: unlock](#unlock)|Kilit sayısını azaltır.|
 |[CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced)|Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır.|
-|[CAtlModule:: UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|Bu yöntem, kayıt defteri `UpdateRegistryFromResourceD` güncelleştirmesini gerçekleştirmek için tarafından çağırılır.|
+|[CAtlModule:: UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|Bu yöntem, kayıt defteri güncelleştirmesini gerçekleştirmek için `UpdateRegistryFromResourceD` tarafından çağırılır.|
 |[CAtlModule:: UpdateRegistryFromResourceS](#updateregistryfromresources)|Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır. Bu yöntem, ATL kayıt defteri bileşenine statik olarak bağlantı sağlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: m_libid](#m_libid)|Geçerli modülün GUID 'sini içerir.|
 |[CAtlModule:: m_pGIT](#m_pgit)|Genel arabirim tablosuna yönelik işaretçi.|
@@ -101,7 +101,7 @@ Ayrılamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -127,7 +127,7 @@ Eklenecek işlevin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ##  <a name="catlmodule"></a>CAtlModule:: CAtlModule
 
@@ -168,7 +168,7 @@ Genel arabirim tablosuna yönelik işaretçiyi alacak değişkene yönelik işar
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda bir hata kodu döndürür. *Ppgit* , null DEĞERINE eşitse E_POINTER döndürülür.
+Başarılı S_OK veya hatada hata kodu döndürür. *Ppgit* , null değerine eşitse E_POINTER döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -274,7 +274,7 @@ Değiştirme eşlemesi için, betikle değiştirilebilen parametrelerle ilişkil
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -286,7 +286,7 @@ Bu yöntem, [CAtlModule:: UpdateRegistryFromResourceDHelper](#updateregistryfrom
 
 ##  <a name="updateregistryfromresourcedhelper"></a>CAtlModule:: UpdateRegistryFromResourceDHelper
 
-Bu yöntem, kayıt defteri `UpdateRegistryFromResourceD` güncelleştirmesini gerçekleştirmek için tarafından çağırılır.
+Bu yöntem, kayıt defteri güncelleştirmesini gerçekleştirmek için `UpdateRegistryFromResourceD` tarafından çağırılır.
 
 ```
 inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
@@ -308,7 +308,7 @@ Değiştirme eşlemesi için, betikle değiştirilebilen parametrelerle ilişkil
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -346,11 +346,11 @@ Değiştirme eşlemesi için, betikle değiştirilebilen parametrelerle ilişkil
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced) `CAtlModule::UpdateRegistryFromResourceS` ' ye benzer şekilde, atl kayıt defteri bileşeni (kaydedici) için statik bir bağlantı oluşturur.
+`CAtlModule::UpdateRegistryFromResourceS` hariç olmak üzere [CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced) , atl kayıt defteri bileşeni (kaydedici) için statik bir bağlantı oluşturur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

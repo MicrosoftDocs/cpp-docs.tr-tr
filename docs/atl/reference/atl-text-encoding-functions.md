@@ -26,11 +26,11 @@ f1_keywords:
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
 ms.openlocfilehash: 1380d33c485c1ac895558bbcaf86c902c6074cd4
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375888"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865049"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama Işlevleri
 
@@ -295,7 +295,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"B" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
+"B" kodlama şeması, RFC 2047 ' de ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) açıklanmaktadır.
 
 ## <a name="bencodegetrequiredlength"></a>BEncodeGetRequiredLength
 
@@ -319,7 +319,7 @@ Dönüştürme için kullanılacak karakter kümesinin karakter uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"B" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
+"B" kodlama şeması, RFC 2047 ' de ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) açıklanmaktadır.
 
 ## <a name="escapexml"></a>Çıkar Exml
 
@@ -351,8 +351,8 @@ Arayan tarafından ayrılan arabelleğin karakter cinsinden uzunluğu.
 *dwFlags*<br/>
 Dönüştürmenin nasıl gerçekleştirileceğini açıklayan ATL_ESC bayrakları.
 
-- Varsayılan ATL_ESC_FLAG_NONE davranışı. Tırnak işaretleri ve kesme çizgileri dönüştürülmez.
-- ATL_ESC_FLAG_ATTR tırnak işaretleri ve kesme çizgileri, ve `&quot;` `&apos;` sırasıyla öğesine dönüştürülür.
+- Varsayılan davranışı ATL_ESC_FLAG_NONE. Tırnak işaretleri ve kesme çizgileri dönüştürülmez.
+- ATL_ESC_FLAG_ATTR tırnak işaretleri ve kesme işaretleri sırasıyla `&quot;` ve `&apos;` dönüştürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -362,13 +362,13 @@ Dönüştürülmüş dizenin karakter cinsinden uzunluğu.
 
 Bu işlev tarafından gerçekleştirilen olası dönüşümler tabloda gösterilmiştir:
 
-|Source|Hedef|
+|Kaynak|Hedef|
 |------------|-----------------|
 |\<|&lt;|
 |>|&gt;|
 |&|&amp;|
 |'|&apos;|
-|"|&quot;|
+|depolama hesabında ayarlanan Yaşam Döngüsü Yönetimi İlkesinden dolayı otomatik olarak arşiv katmanına geri geçirilecek"|&quot;|
 
 ## <a name="getextendedchars"></a>Gebir Dedchars
 
@@ -400,7 +400,7 @@ inline int IsExtendedChar(char ch) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ch*<br/>
+*denetleyebilirsiniz*<br/>
 Sınanacak karakter
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -447,7 +447,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Q" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
+"Q" kodlama şeması, RFC 2047 ' de ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) açıklanmaktadır.
 
 ## <a name="qencodegetrequiredlength"></a>QEncodeGetRequiredLength
 
@@ -471,7 +471,7 @@ Dönüştürme için kullanılacak karakter kümesinin karakter uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Q" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
+"Q" kodlama şeması, RFC 2047 ' de ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) açıklanmaktadır.
 
 ## <a name="qpdecode"></a>Qpkodunu çöz
 
@@ -509,7 +509,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ' de ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) açıklanır.
 
 ## <a name="qpdecodegetrequiredlength"></a>QPDecodeGetRequiredLength
 
@@ -530,7 +530,7 @@ Kodu çözülen *nSrcLen* karakter dizesini tutan bir arabellek için gereken ba
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ' de ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) açıklanır.
 
 ## <a name="qpencode"></a>QPEncode
 
@@ -562,9 +562,9 @@ Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 *dwFlags*<br/>
 Dönüştürmenin nasıl gerçekleştirileceğini açıklayan ATLSMTP_QPENCODE bayrakları.
 
-- ATLSMTP_QPENCODE_DOT bir dönem başlangıcında bir nokta görünürse, çıkışa ve kodlanacak şekilde de eklenir.
+- ATLSMTP_QPENCODE_DOT satırın başlangıcında bir nokta görünürse, çıkışa ve kodlanacak şekilde eklenir.
 
-- ATLSMTP_QPENCODE_TRAILING_SOFT, `=\r\n` kodlanmış dizeye ekler.
+- ATLSMTP_QPENCODE_TRAILING_SOFT, kodlanmış dizeye `=\r\n` ekler.
 
 Tırnaklı yazdırılabilir kodlama şeması, [RFC 2045](https://www.ietf.org/rfc/rfc2045.txt)' de açıklanmaktadır.
 
@@ -574,7 +574,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ' de ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) açıklanır.
 
 ## <a name="qpencodegetrequiredlength"></a>QPEncodeGetRequiredLength
 
@@ -595,7 +595,7 @@ Kodlanacak veri bayt sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ' de ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) açıklanır.
 
 ## <a name="uudecode"></a>UUDecode
 
@@ -681,16 +681,16 @@ Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 *SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
 *lpszFile*<br/>
-*DwFlags*içinde ATLSMTP_UUENCODE_HEADER belirtildiğinde üstbilgiye eklenecek dosya.
+ATLSMTP_UUENCODE_HEADER *dwFlags*içinde belirtildiğinde üstbilgiye eklenecek dosya.
 
 *dwFlags*<br/>
 Bu işlevin davranışını denetleyen bayraklar.
 
-- ATLSMTP_UUENCODE_HEADE üst bilgi kodlanacak.
+- Üstbilgi kodlanacak ATLSMTP_UUENCODE_HEADE.
 
-- ATLSMTP_UUENCODE_END, son olarak kodlanır.
+- ATLSMTP_UUENCODE_END bitiş kodlanacak.
 
-- ATLSMTP_UUENCODE_DOT Data stuffing gerçekleştirilecek.
+- ATLSMTP_UUENCODE_DOT veri stuffing gerçekleştirilecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -723,5 +723,5 @@ Bu uuencoding uygulama, POSIX P 1003.2 b/D11 belirtimini izler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tiren](../active-template-library-atl-concepts.md)<br/>
+[Kavramlar ](../active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../atl-com-desktop-components.md)

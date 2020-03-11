@@ -5,28 +5,28 @@ helpviewer_keywords:
 - type libraries [MFC], accessing
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
 ms.openlocfilehash: 23d4675bd3638d2effd1b967f0729f9e70dac6de
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611538"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78867045"
 ---
 # <a name="type-library-access"></a>Tür Kitaplığı Erişimi
 
-Tür kitaplıkları OLE kullanan diğer uygulamalar için bir OLE denetim arabirimleri kullanıma sunar. Bir veya daha fazla arabirim sağlamak olması durumunda her bir OLE denetimi tür kitaplığı olması gerekir.
+Tür kitaplıkları OLE denetiminin arabirimlerini diğer OLE uyumlu uygulamalara sunar. Bir veya daha fazla arabirim gösterilmelidir, her OLE denetiminin bir tür kitaplığı olmalıdır.
 
-Aşağıdaki makroları, kendi tür kitaplığı erişimi sağlamak bir OLE denetimi izin ver:
+Aşağıdaki makrolar bir OLE denetiminin kendi tür kitaplığına erişim sağlamasına izin verir:
 
 ### <a name="type-library-access"></a>Tür Kitaplığı Erişimi
 
 |||
 |-|-|
-|[DECLARE_OLETYPELIB](#declare_oletypelib)|Bildiren bir `GetTypeLib` (sınıf bildirimi içinde kullanılmalıdır) bir OLE denetim üye işlevi.|
-|[IMPLEMENT_OLETYPELIB](#implement_oletypelib)|Uygulayan bir `GetTypeLib` (sınıfı uygulamasında kullanılmalıdır) bir OLE denetim üye işlevi.|
+|[DECLARE_OLETYPELIB](#declare_oletypelib)|OLE denetiminin `GetTypeLib` üye işlevini bildirir (sınıf bildiriminde kullanılması gerekir).|
+|[IMPLEMENT_OLETYPELIB](#implement_oletypelib)|OLE denetiminin `GetTypeLib` üye işlevini uygular (sınıf uygulamasında kullanılması gerekir).|
 
-##  <a name="declare_oletypelib"></a>  DECLARE_OLETYPELIB
+##  <a name="declare_oletypelib"></a>DECLARE_OLETYPELIB
 
-Bildirir `GetTypeLib` denetim sınıfınızın bir üye işlevi.
+Denetim sınıfınızın `GetTypeLib` üye işlevini bildirir.
 
 ```
 DECLARE_OLETYPELIB(class_name)
@@ -34,20 +34,20 @@ DECLARE_OLETYPELIB(class_name)
 
 ### <a name="parameters"></a>Parametreler
 
-*$class_name*<br/>
-Tür kitaplığına ilgili denetim sınıfı adı.
+*class_name*<br/>
+Tür kitaplığıyla ilgili denetim sınıfının adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro denetim sınıf üstbilgi dosyasında kullanın.
+Bu makroyu denetim sınıfı üstbilgi dosyasında kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-##  <a name="implement_oletypelib"></a>  IMPLEMENT_OLETYPELIB
+##  <a name="implement_oletypelib"></a>IMPLEMENT_OLETYPELIB
 
-Denetimin uygulayan `GetTypeLib` üye işlevi.
+Denetimin `GetTypeLib` üye işlevini uygular.
 
 ```
 IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
@@ -55,26 +55,26 @@ IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
 
 ### <a name="parameters"></a>Parametreler
 
-*$class_name*<br/>
-Tür kitaplığına ilgili denetim sınıfı adı.
+*class_name*<br/>
+Tür kitaplığıyla ilgili denetim sınıfının adı.
 
-*tlid*<br/>
-Tür kitaplığını kimliği sayısı.
+*tlıd*<br/>
+Tür kitaplığının KIMLIK numarası.
 
-*wVerMajor*<br/>
-Tür kitaplığı ana sürüm numarası.
+*Wverana*<br/>
+Tür kitaplığının ana sürüm numarası.
 
 *wVerMinor*<br/>
-Tür kitaplığı ikincil sürüm numarası.
+Tür kitaplığının ikincil sürüm numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, declare_oletypelıb makrosu kullanan herhangi bir denetim sınıf için uygulama dosyasında yer almalıdır.
+Bu makronun, DECLARE_OLETYPELIB makrosunu kullanan herhangi bir denetim sınıfı için uygulama dosyasında görünmesi gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

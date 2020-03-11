@@ -71,11 +71,11 @@ helpviewer_keywords:
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
 ms.openlocfilehash: 5373bd6a99605f5a63fb6aa2ed6de50c12b1c8f1
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687617"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78876041"
 ---
 # <a name="numeric_limits-class"></a>numeric_limits Sınıfı
 
@@ -90,14 +90,14 @@ template <class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* \
+*Tür*\
 Özellikleri test edilmiş ya da sorgulanan veya ayarlanan temel öğe veri türü. *Tür* Ayrıca **const**, **volatile**veya **const geçici**olarak da yapılandırılabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Üst bilgi **wchar_t**, **bool**, **char**, **imzalanmış char**, **işaretsiz char**, **Short**, **işaretsiz Short**, **int**, **işaretsiz int**, **Long**, türlerine yönelik açık uzmanlık tanımlar. **işaretsiz Long**, **float**, **Double**, **Long Double**, **Long Long**, **imzasız Long Long**, **char16_t**ve **char32_t**. Bu açık uzmanlık için, [numeric_limits:: is_specialized](#is_specialized) üyesi **true**ve ilgili tüm üyelerin anlamlı değerleri vardır. Program ek açık uzmanlık sağlayabilir. Sınıfının birçok üye işlevi, **kayan**nesnelerin olası uygulamalarını betimler veya test et.
+Üst bilgi **wchar_t**, **bool**, **char**, **imzalanmış char**, **işaretsiz char**, **Short**, **işaretsiz Short**, **int**, **işaretsiz int**, **long**, **işaretsiz Long**, **float**, **Double**, **Long Double**, **Long Long**, **unsigned long long**, **char16_t**ve **char32_t**türleri için açık uzmanlık tanımlar. Bu açık uzmanlık için, üye [numeric_limits:: is_specialized](#is_specialized) **true**ve ilgili tüm üyelerin anlamlı değerleri vardır. Program ek açık uzmanlık sağlayabilir. Sınıfının birçok üye işlevi, **kayan**nesnelerin olası uygulamalarını betimler veya test et.
 
-Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlamlı bir değere sahip olmayan bir üye nesnesi sıfır (veya **yanlış**) ve anlamlı bir değer döndürmeyen bir üye işlevi `Type(0)` döndürür.
+Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlamlı bir değere sahip olmayan bir üye nesnesi sıfır (veya **yanlış**) ve anlamlı bir değer döndürmeyen bir üye işlevi `Type(0)`döndürür.
 
 ## <a name="static-functions-and-constants"></a>Statik Işlevler ve sabitler
 
@@ -119,7 +119,7 @@ Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlam
 |[is_integer](#is_integer)|Bir türün tamsayı gösterimine sahip olup olmadığını sınar.|
 |[is_modulo](#is_modulo)|Bir türün bir modül gösterimine sahip olup olmadığını sınar.|
 |[is_signed](#is_signed)|Bir türün işaretli bir temsili olup olmadığını sınar.|
-|[is_specialized](#is_specialized)|Bir türün, Sınıf şablonunda `numeric_limits` tanımlanmış bir açık özelleşmeye sahip olup olmadığını sınar.|
+|[is_specialized](#is_specialized)|Bir türün, Sınıf şablonunda `numeric_limits`tanımlanmış bir açık özelleşmeye sahip olup olmadığını sınar.|
 |[Minimum](#lowest)|En negatif sonlu değeri döndürür.|
 |[Biçimlendir](#max)|Bir tür için en fazla sonlu değeri döndürür.|
 |[max_digits10](#max_digits10)|Türün iki farklı değerinin farklı ondalık gösterimlerine sahip olduğundan emin olmak için gereken ondalık basamak sayısını döndürür.|
@@ -152,7 +152,7 @@ Sıfırdan büyük olmayan en küçük değer.
 
 **Long Double** , C++ derleyici için **Double** ile aynıdır.
 
-İşlevi, türün en küçük değerini döndürür; bu değer [Min](#min) . [has_denorm](#has_denorm) `denorm_present` eşit değildir.
+İşlevi, türü için en küçük değeri döndürür, bu, [has_denorm](#has_denorm) `denorm_present`eşit değilse [Min](#min) ile aynıdır.
 
 #### <a name="example"></a>Örnek
 
@@ -297,7 +297,7 @@ static constexpr Type epsilon() throw();
 
 #### <a name="remarks"></a>Açıklamalar
 
-Değer **float**türü için FLT_EPSILON. bir tür için `epsilon`, en küçük pozitif kayan nokta sayısıdır *n* * +  `epsilon`*  + *n* gösterilemeyen tablo.
+Değer **float**türü için FLT_EPSILON. bir tür için `epsilon`, en küçük pozitif kayan nokta sayısıdır *n* * + `epsilon`*  + *n* gösterilemeyen tablo.
 
 #### <a name="example"></a>Örnek
 
@@ -345,7 +345,7 @@ static constexpr float_denorm_style has_denorm = denorm_absent;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Türün Normalleştirilmemiş değerlere izin verip içermediğini gösteren **const** `float_denorm_style` türünde bir sabit listesi değeri.
+Türün Normalleştirilmemiş değerlere izin verip içermediğini gösteren **const**`float_denorm_style`türünde bir sabit listesi değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -487,7 +487,7 @@ static constexpr bool has_quiet_NaN = false;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sessiz NAN bir sayı değil, bir ifadede varlığını işaret eden bir kodlamadır. [İs_iec559](#is_iec559) true ise dönüş değeri **true** 'dur.
+Sessiz NAN bir sayı değil, bir ifadede varlığını işaret eden bir kodlamadır. [İs_iec559](#is_iec559) true ise, dönüş değeri **true** olur.
 
 #### <a name="example"></a>Örnek
 
@@ -533,7 +533,7 @@ türün sinyal NAN için bir temsili varsa **true** ; değilse **yanlış** .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bir sinyal NAN bir sayı değil, bir ifadede varlığını işaret eden bir kodlamadır. [İs_iec559](#is_iec559) true ise dönüş değeri **true** 'dur.
+Bir sinyal NAN bir sayı değil, bir ifadede varlığını işaret eden bir kodlamadır. [İs_iec559](#is_iec559) true ise, dönüş değeri **true** olur.
 
 #### <a name="example"></a>Örnek
 
@@ -579,7 +579,7 @@ Varsa, bir tür için pozitif sonsuzluk temsili.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri yalnızca [has_infinity](#has_infinity) **true**ise anlamlı olur.
+Dönüş değeri yalnızca [has_infinity](#has_infinity) **true**olduğunda anlamlı olur.
 
 #### <a name="example"></a>Örnek
 
@@ -929,7 +929,7 @@ Whether unsigned char objects have a signed representation: 0
 
 ### <a name="is_specialized"></a>is_specialized
 
-Bir türün, Sınıf şablonunda `numeric_limits` tanımlanmış bir açık özelleşmeye sahip olup olmadığını sınar.
+Bir türün, Sınıf şablonunda `numeric_limits`tanımlanmış bir açık özelleşmeye sahip olup olmadığını sınar.
 
 ```cpp
 static constexpr bool is_specialized = false;
@@ -995,7 +995,7 @@ En negatif sonlu değeri döndürür.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Tür için en negatif sonlu değeri döndürür (genellikle tamsayı türleri için `min()` ve kayan nokta türleri için `-max()`). @No__t_0 **true**ise, dönüş değeri anlamlı olur.
+Tür için en negatif sonlu değeri döndürür (genellikle tamsayı türleri için `min()` ve kayan nokta türleri için `-max()`). `is_bounded` **true**ise, dönüş değeri anlamlı olur.
 
 ### <a name="max"></a>Biçimlendir
 
@@ -1011,7 +1011,7 @@ Bir tür için maksimum sonlu değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Maksimum sonlu değeri, **float**türü için **Int** ve FLT_MAX türü için INT_MAX. [İs_bounded](#is_bounded) **true**ise, dönüş değeri anlamlı olur.
+Maksimum sonlu değer, Type türü için INT_MAX **ve** **float**türü için FLT_MAX. [İs_bounded](#is_bounded) **true**ise, dönüş değeri anlamlı olur.
 
 #### <a name="example"></a>Örnek
 
@@ -1069,7 +1069,7 @@ Türe göre en büyük integral Radix tabanlı üs tablosu.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi dönüşü yalnızca kayan nokta türleri için anlamlıdır. @No__t_0 **float**türü için FLT_MAX_EXP değeridir.
+Üye işlevi dönüşü yalnızca kayan nokta türleri için anlamlıdır. `max_exponent` **float**türü için FLT_MAX_EXP değeridir.
 
 #### <a name="example"></a>Örnek
 
@@ -1115,7 +1115,7 @@ Türe göre en büyük integral tabanı 10 üs değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi dönüşü yalnızca kayan nokta türleri için anlamlıdır. @No__t_0 **float**türü için FLT_MAX_10 değeridir.
+Üye işlevi dönüşü yalnızca kayan nokta türleri için anlamlıdır. `max_exponent` **float**türü için FLT_MAX_10 değeridir.
 
 #### <a name="example"></a>Örnek
 
@@ -1161,7 +1161,7 @@ Tür için en küçük normalleştirilmiş değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-**Float** **türü IÇIN INT_MIN ve FLT_MIN** türü için en düşük normalleştirilmiş değer. [İs_bounded](#is_bounded) **true** ise veya [is_signed](#is_signed) **false**ise, dönüş değeri anlamlı olur.
+En küçük normalleştirilmiş değer, Type türü için **INT_MIN ve** **float**türü için FLT_MIN. [İs_bounded](#is_bounded) **true** ise veya [is_signed](#is_signed) **false**ise, dönüş değeri anlamlı olur.
 
 #### <a name="example"></a>Örnek
 
@@ -1211,7 +1211,7 @@ Türe göre en küçük integral yarıçapx tabanlı üs değer tablosu.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca kayan nokta türleri için anlamlıdır. @No__t_0 **float**türü için FLT_MIN_EXP değeridir.
+Üye işlevi yalnızca kayan nokta türleri için anlamlıdır. `min_exponent` **float**türü için FLT_MIN_EXP değeridir.
 
 #### <a name="example"></a>Örnek
 
@@ -1257,7 +1257,7 @@ Türe göre en küçük integral tabanı 10 üs değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca kayan nokta türleri için anlamlıdır. @No__t_0 **float**türü için FLT_MIN_10_EXP değeridir.
+Üye işlevi yalnızca kayan nokta türleri için anlamlıdır. `min_exponent10` **float**türü için FLT_MIN_10_EXP değeridir.
 
 #### <a name="example"></a>Örnek
 
@@ -1303,7 +1303,7 @@ Tür için sessiz NAN gösterimi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri yalnızca [has_quiet_NaN](#has_quiet_nan) **true**ise anlamlı olur.
+Dönüş değeri yalnızca [has_quiet_NaN](#has_quiet_nan) **true**olduğunda anlamlı olur.
 
 #### <a name="example"></a>Örnek
 
@@ -1433,7 +1433,7 @@ static constexpr float_round_style round_style = round_toward_zero;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0 numaralandırmasından yuvarlama stilini açıklayan bir değer.
+`float_round_style` numaralandırmasından yuvarlama stilini açıklayan bir değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -1484,7 +1484,7 @@ Tür için bir sinyal NAN gösterimi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri yalnızca [has_signaling_NaN](#has_signaling_nan) **true**ise anlamlı olur.
+Dönüş değeri yalnızca [has_signaling_NaN](#has_signaling_nan) **true**olduğunda anlamlı olur.
 
 #### <a name="example"></a>Örnek
 

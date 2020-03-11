@@ -1,5 +1,5 @@
 ---
-title: '&lt;Tanımlama grubu&gt; işlevleri'
+title: '&lt;tanımlama grubu&gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - tuple/std::get
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - std::make_tuple [C++]
 - std::tie [C++]
 ms.openlocfilehash: 46c386ecffb8fbbf7c07d40b334afd91d261ebcf
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241671"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866204"
 ---
-# <a name="lttuplegt-functions"></a>&lt;Tanımlama grubu&gt; işlevleri
+# <a name="lttuplegt-functions"></a>&lt;tanımlama grubu&gt; işlevleri
 
-## <a name="apply"></a> Uygula
+## <a name="apply"></a>uygulayabilirsiniz
 
 ```cpp
 template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
@@ -30,9 +30,9 @@ template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t)
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev çağrıları *F* bir kayıt düzeni ile *t*.
+Bir demet *t*ile *F* işlevini çağırır.
 
-## <a name="forward"></a> forward_as_tuple
+## <a name="forward"></a>forward_as_tuple
 
 ```cpp
 template <class... TTypes>
@@ -41,15 +41,15 @@ template <class... TTypes>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür `tuple<TTypes&&...>(std::forward<TTypes>(t)...)`.
+`tuple<TTypes&&...>(std::forward<TTypes>(t)...)` döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tanımlama grubu bağımsız başvuru yapıları *t* ileten bir işlev bağımsız değişkenleri olarak uygundur.
+Bir işleve bağımsız değişken olarak iletmek *için uygun olan* bağımsız değişkenlere başvuru tanımlama grubu oluşturur.
 
-## <a name="get"></a> Al
+## <a name="get"></a>Al
 
-Bir öğeyi alır bir `tuple` nesne, dizin veya (C ++ 14) türüne göre.
+`tuple` nesnesinden bir öğeyi, dizine veya (C++ 14 ' de) türüne göre alır.
 
 ```cpp
 // by index:
@@ -84,20 +84,20 @@ template <class T, class... Types>
 *Dizin*\
 Alınacak öğenin dizini.
 
-*Türleri*\
-Bildirim sırasında tanımlama grubu türleri dizisi bildirilmiş.
+*Türler*\
+Tanımlama sırasında bildirim sırasına göre bildirildiği türlerin sırası.
 
 *T*\
 Alınacak öğenin türü.
 
 *Tanımlama grubu*\
-A `std::tuple` , herhangi bir sayıda öğe içeriyor.
+Herhangi bir sayıda öğe içeren `std::tuple`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevleri değeri dizinindeki bir başvuru döndürmeyi *dizin*, veya tür *T* içinde `tuple` nesne.
+Şablon işlevleri, Dizin *dizinindeki*değere veya `tuple` nesnesinde *T* türüne bir başvuru döndürür.
 
-Çağırma `get<T>(Tuple)` demet t türünde bir öğe sayısından fazla veya az içeriyorsa, bir derleyici hatasına neden olur
+Kayıt düzeni T türünde birden fazla veya daha az öğe içeriyorsa `get<T>(Tuple)` çağırmak derleyici hatası oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -128,7 +128,7 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
-## <a name="make_from_tuple"></a> make_from_tuple
+## <a name="make_from_tuple"></a>make_from_tuple
 
 ```cpp
 template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
@@ -136,11 +136,11 @@ template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`.
+`return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`ile aynı.
 
-## <a name="make_tuple"></a> make_tuple
+## <a name="make_tuple"></a>make_tuple
 
-Yapar bir `tuple` öğesi değerlerden.
+Öğe değerlerinden bir `tuple` oluşturur.
 
 ```cpp
 template <class T1, class T2, ..., class TN>
@@ -150,16 +150,16 @@ template <class T1, class T2, ..., class TN>
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth işlevi parametrenin türü.
+Nth Function parametresinin türü.
 
-*TN*\
-Nth işlevi parametresinin değeri.
+*tN*\
+Nth işlev parametresinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)`, burada her tür `Vi` olduğu `X&` karşılık gelen yazdığınızda `Ti` olduğu `cv` `reference_wrapper<X>`; Aksi takdirde bu `Ti`.
+Şablon işlevi, karşılık gelen tür `Ti` `cv` `reference_wrapper<X>`olduğunda her tür `Vi` `X&` `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)`döndürür. Aksi takdirde, `Ti`.
 
-Bir avantajı `make_tuple` faydası depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenleri gibi kullanmayın `make_tuple<int, int>(1, 2)` kullandığınızda `make_tuple` çünkü gereksiz ayrıntılıdır ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
+`make_tuple` avantajlarından biri, depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenmesi ve açıkça belirtilmesi gerekmez. `make_tuple` kullandığınızda `make_tuple<int, int>(1, 2)` gibi açık şablon bağımsız değişkenlerini kullanmayın, çünkü gereksiz bir şekilde ayrıntılıdır ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
 
 ### <a name="example"></a>Örnek
 
@@ -196,16 +196,16 @@ int main() {
 4 5 6 7
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
 ```cpp
 template <class... Types>
     void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
 ```
 
-## <a name="tie"></a> tie
+## <a name="tie"></a>formlarınızı
 
-Yapar bir `tuple` öğesi referanslar.
+Öğe başvurularından bir `tuple` oluşturur.
 
 ```cpp
 template <class T1, class T2, ..., class TN>
@@ -215,11 +215,11 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 ### <a name="parameters"></a>Parametreler
 
 *TN*\
-Nth demet öğesi temel türü.
+N demet öğesinin temel türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`.
+Şablon işlevi `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -262,7 +262,7 @@ int main() {
 0 1 2 3
 ```
 
-## <a name="tuple_cat"></a> tuple_cat
+## <a name="tuple_cat"></a>tuple_cat
 
 ```cpp
 template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
@@ -270,16 +270,16 @@ template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her bir type öğesi başlatarak oluşturulmuş bir tanımlama grubu nesnesi.
+Her tür öğesi başlatılarak oluşturulan bir demet nesnesi.
 
-## <a name="tuple_element_t"></a> tuple_element_t
+## <a name="tuple_element_t"></a>tuple_element_t
 
 ```cpp
 template <size_t I, class T>
     using tuple_element_t = typename tuple_element<I, T>::type;
 ```
 
-## <a name="tuple_size_v"></a> tuple_size_v
+## <a name="tuple_size_v"></a>tuple_size_v
 
 ```cpp
 template <class T>

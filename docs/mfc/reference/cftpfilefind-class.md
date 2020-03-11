@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
 ms.openlocfilehash: 2f4a394e29be135cac95edf6f504d8b066f53414
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506241"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78866304"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind sınıfı
 
@@ -35,13 +35,13 @@ class CFtpFileFind : public CFileFind
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CFtpFileFind:: Cftpfılefind](#cftpfilefind)|Bir `CFtpFileFind` nesnesi oluşturur.|
+|[CFtpFileFind:: Cftpfılefind](#cftpfilefind)|`CFtpFileFind` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CFtpFileFind:: FindFile](#findfile)|FTP sunucusundaki bir dosyayı bulur.|
 |[CFtpFileFind:: FindNextFile](#findnextfile)|Önceki bir [FindFile](#findfile)çağrısından bir dosya aramaya devam eder.|
@@ -49,11 +49,11 @@ class CFtpFileFind : public CFileFind
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CFtpFileFind`arama işlemine başlayan üye işlevlerini içerir, bir dosya bulur ve URL 'YI ya da dosyayla ilgili diğer açıklayıcı bilgileri döndürür.
+`CFtpFileFind`, arama işlemine başlayan üye işlevlerini içerir, bir dosyayı bulur ve URL 'YI ya da dosyayla ilgili diğer açıklayıcı bilgileri döndürür.
 
-Internet ve yerel dosya için tasarlanan diğer MFC sınıfları, [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFileFind](../../mfc/reference/cfilefind-class.md)' i içerir. İle `CFtpFileFind`birlikte, bu sınıflar, sunucu protokolüne veya dosya türüne (yerel bir makine ya da uzak bir sunucu) bakılmaksızın, istemcinin belirli dosyaları bulması için sorunsuz bir mekanizma sağlar. HTTP sunucularında arama yapmak için MFC sınıfı olmadığını unutmayın; çünkü HTTP, aramalar için gerekli olan doğrudan dosya işlemesini desteklemez.
+Internet ve yerel dosya için tasarlanan diğer MFC sınıfları, [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFileFind](../../mfc/reference/cfilefind-class.md)' i içerir. `CFtpFileFind`ile birlikte, bu sınıflar, sunucu protokolüne veya dosya türüne (yerel bir makine ya da uzak bir sunucu) bakılmaksızın, istemcinin belirli dosyaları bulması için sorunsuz bir mekanizma sağlar. HTTP sunucularında arama yapmak için MFC sınıfı olmadığını unutmayın; çünkü HTTP, aramalar için gerekli olan doğrudan dosya işlemesini desteklemez.
 
-Ve diğer WinINet sınıflarının kullanımı `CFtpFileFind` hakkında daha fazla bilgi için bkz. [Wininet ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi.
+`CFtpFileFind` ve diğer WinINet sınıflarını kullanma hakkında daha fazla bilgi için bkz. [Wininet Ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi.
 
 ## <a name="example"></a>Örnek
 
@@ -75,7 +75,7 @@ Aşağıdaki kod, FTP sunucusunun geçerli dizinindeki tüm dosyaların nasıl n
 
 ##  <a name="cftpfilefind"></a>CFtpFileFind:: Cftpfılefind
 
-Bu üye işlevi bir `CFtpFileFind` nesne oluşturmak için çağırılır.
+Bu üye işlevi bir `CFtpFileFind` nesnesi oluşturmak için çağırılır.
 
 ```
 explicit CFtpFileFind(
@@ -86,14 +86,14 @@ explicit CFtpFileFind(
 ### <a name="parameters"></a>Parametreler
 
 *pConnection*<br/>
-Bir `CFtpConnection` nesne işaretçisi. [CInternetSession:: GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection)' i ÇAĞıRARAK bir FTP bağlantısı elde edebilirsiniz.
+`CFtpConnection` nesnesine yönelik bir işaretçi. [CInternetSession:: GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection)' i ÇAĞıRARAK bir FTP bağlantısı elde edebilirsiniz.
 
 *dwContext*<br/>
-`CFtpFileFind` Nesnenin bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. **açıklamalar** .
+`CFtpFileFind` nesnesi için bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. **açıklamalar** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*DwContext* için varsayılan değer, MFC `CFtpFileFind` tarafından `CFtpFileFind` nesneyi oluşturan [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesinden nesnesine gönderilir. Bağlam tanımlayıcıyı seçtiğiniz bir değere ayarlamak için varsayılanı geçersiz kılabilirsiniz. Bağlam tanımlayıcısı, tanımlanan nesne üzerinde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) öğesine döndürülür. Bkz. [Internet ilk adımlar: Bağlam](../../mfc/wininet-basics.md) tanımlayıcısı hakkında daha fazla bilgi için WinINet.
+*DwContext* için varsayılan değer, MFC tarafından `CFtpFileFind` nesnesini oluşturan [cınternetsession](../../mfc/reference/cinternetsession-class.md) nesnesinden `CFtpFileFind` nesnesine gönderilir. Bağlam tanımlayıcıyı seçtiğiniz bir değere ayarlamak için varsayılanı geçersiz kılabilirsiniz. Bağlam tanımlayıcısı, tanımlanan nesne üzerinde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) öğesine döndürülür. Bağlam tanımlayıcısı hakkında daha fazla bilgi için [Internet Ilk adımlar: WinINet](../../mfc/wininet-basics.md) makalesine bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -117,23 +117,23 @@ Bulunacak dosyanın adını içeren bir dize işaretçisi. NULL ise, çağrı jo
 *dwFlags*<br/>
 Bu oturumun nasıl işleneceğini açıklayan bayraklar. Bu bayraklar bit düzeyinde OR işleci (&#124;) ile birleştirilebilir ve aşağıdaki gibidir:
 
-- INTERNET_FLAG_RELOAD yerel olarak önbelleğe alınmış olsa bile verileri iletişimden alın. Bu, varsayılan bayraktır.
+- INTERNET_FLAG_RELOAD, yerel olarak önbelleğe alınmış olsa bile, verileri iletişimden alın. Bu, varsayılan bayraktır.
 
-- INTERNET_FLAG_DONT_CACHE, yerel olarak veya herhangi bir ağ geçidi içinde verileri önbelleğe almaz.
+- INTERNET_FLAG_DONT_CACHE, yerel olarak veya herhangi bir ağ geçitlerinde bulunan verileri önbelleğe almaz.
 
-- INTERNET_FLAG_RAW_DATA ham verileri döndürmek için varsayılan ayarı geçersiz kılar (FTP için [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapıları).
+- INTERNET_FLAG_RAW_DATA, ham verileri döndürmek için varsayılanı geçersiz kılar (FTP için [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapıları).
 
-- INTERNET_FLAG_SECURE, Güvenli Yuva Katmanı veya PCT ile iletişimlerdeki işlemleri korur. Bu bayrak yalnızca HTTP istekleri için geçerlidir.
+- INTERNET_FLAG_SECURE, Güvenli Yuva Katmanı veya PCT ile iletişimdeki işlemlerin güvenliğini sağlar. Bu bayrak yalnızca HTTP istekleri için geçerlidir.
 
-- INTERNET_FLAG_EXISTING_CONNECT mümkünse, her istek için yeni bir oturum oluşturmak yerine sunucuya mevcut `FindFile` bağlantıları yeni istekler için yeniden kullanın.
+- Mümkünse INTERNET_FLAG_EXISTING_CONNECT, her istek için yeni bir oturum oluşturmak yerine sunucuya mevcut bağlantıları yeni `FindFile` istekleri için yeniden kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 [işlevini çağırın](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk FTP `FindFile` dosyasını alma çağrısından sonra, sonraki FTP dosyalarını almak için [FindNextFile](#findnextfile) öğesini çağırabilirsiniz.
+İlk FTP dosyasını almak için `FindFile` çağrıldıktan sonra, sonraki FTP dosyalarını almak için [FindNextFile](#findnextfile) öğesini çağırabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -149,13 +149,13 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa `GetLastError` , işlev ERROR_NO_MORE_FILES döndürür.
+Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 [işlevini çağırın](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa, `GetLastError` işlevi ERROR_NO_MORE_FILES döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Herhangi bir öznitelik işlevini çağırmadan önce bu işlevi en az bir kez çağırmanız gerekir (bkz. [CFileFind:: FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).
 
-`FindNextFile`Win32 işlevi [FindNextFile dosyasını](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)kaydırır.
+`FindNextFile`, [FindNextFile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)Win32 işlevini kaydırır.
 
 ### <a name="example"></a>Örnek
 
@@ -175,7 +175,7 @@ Evrensel Kaynak bulucunun (URL) dosyası ve yolu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetFileURL`, formdaki `ftp://moose/dir/file.txt`URL 'Yi döndürmesi dışında [CFileFind:: GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath)üye işlevine benzerdir.
+`GetFileURL`, [CFileFind:: GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath)üye işlevine benzer, ancak URL 'yi `ftp://moose/dir/file.txt`olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
