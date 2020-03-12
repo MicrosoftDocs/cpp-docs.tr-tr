@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::basic_filebuf [C++], uflow
 - std::basic_filebuf [C++], underflow
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
-ms.openlocfilehash: 16d485320eb3970bd5c1e4a7a7fabb0602149e6f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
-ms.translationtype: HT
+ms.openlocfilehash: ec6fced70a53d27fdb3312a5b349e9e653ccbd24
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856587"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79128591"
 ---
 # <a name="basic_filebuf-class"></a>basic_filebuf Sınıfı
 
@@ -342,7 +342,7 @@ bool is_open() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisi boş bir işaretçi değilse **true** .
+Dosya işaretçisi null değilse **true** .
 
 ### <a name="example"></a>Örnek
 
@@ -413,7 +413,7 @@ Varsayılan dosya açma koruması, [_fsopen _wfsopen](../c-runtime-library/refer
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisi null işaretçisiyse, işlev null bir işaretçi döndürür. Aksi takdirde, bunu **döndürür.**
+Arabellek zaten açıksa veya dosya işaretçisi null işaretçisiyse, işlev null bir işaretçi döndürür. Aksi takdirde, bunu **döndürür.**
 
 ### <a name="remarks"></a>Açıklamalar
 
