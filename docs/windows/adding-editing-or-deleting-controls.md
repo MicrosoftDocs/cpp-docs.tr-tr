@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: Denetimleri ekleme, düzenleme veya silme (C++)'
+title: 'Nasıl yapılır: denetimleri ekleme, düzenleme veya silme (C++)'
 ms.date: 02/15/2019
 f1_keywords:
-- vc.editors.dialog.dialog
 - vc.controls.activex
 - vc.editors.dialog.insertActiveXControls
 helpviewer_keywords:
@@ -43,14 +42,14 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: b940e94faf710de8ae5bc604b47dc35a1bc290a7
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a42a64f93d334c0b5c63b0eca1567e6964d0a3ae
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491175"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447211"
 ---
-# <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: Denetimleri ekleme, düzenleme veya silme (C++)
+# <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: denetimleri ekleme, düzenleme veya silme (C++)
 
 Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetimleri ekleyebilir, yeniden boyutlandırabilir, düzenleyebilir ve silebilirsiniz. Ayrıca, bir denetimin özelliklerini (KIMLIĞI gibi) veya başlangıçta çalışma zamanında görünür olup olmadığını düzenleyebilirsiniz.
 
@@ -59,7 +58,7 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 > [!TIP]
 > Birçok örnekte **Iletişim kutusu düzenleyicisini**kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ fare düğmesini seçebilirsiniz.
 
-## <a name="add-controls"></a>Denetim Ekle
+## <a name="add-controls"></a>Denetim Ekleme
 
 ### <a name="to-add-a-control"></a>Denetim eklemek için
 
@@ -99,7 +98,7 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 
 ### <a name="to-add-a-custom-control"></a>Özel bir denetim eklemek için
 
-İletişim kutusuna özel denetimler ekleyebilirsiniz. **Araç kutusu** ' nda **özel denetim** simgesini seçin ve iletişim kutusuna sürükleyin. Bir `Syslink` denetim eklemek için özel bir denetim ekleyin, sonra denetimin **Class** özelliğini olarak `Syslink`değiştirin. Bu eylem, özelliklerin yenilenmesini ve `Syslink` denetim özelliklerini göstermesini sağlar. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
+İletişim kutusuna özel denetimler ekleyebilirsiniz. **Araç kutusu** ' nda **özel denetim** simgesini seçin ve iletişim kutusuna sürükleyin. `Syslink` bir denetim eklemek için özel bir denetim ekleyin ve sonra denetimin **Class** özelliğini `Syslink`olarak değiştirin. Bu eylem, özelliklerin yenilenmesine ve `Syslink` denetim özelliklerini görüntülemesine neden olur. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
 
 ## <a name="edit-controls"></a>Denetimleri Düzenle
 
@@ -113,13 +112,13 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 1. [Özellikler penceresi](/visualstudio/ide/reference/properties-window), denetiminizin özelliklerini değiştirin.
 
    > [!NOTE]
-   > Bir düğme, radyo düğmesi veya onay kutusu denetiminin **bit eşlem** özelliğini **true**değerine EŞITSE, denetiminiz için BS_BITMAP stili uygulanır. Daha fazla bilgi için bkz. [düğme stilleri](../mfc/reference/styles-used-by-mfc.md#button-styles). Bir bitmapi bir denetimle ilişkilendirme örneği için bkz. [CButton:: SetBit eşlem](../mfc/reference/cbutton-class.md#setbitmap). **Iletişim kutusu Düzenleyicinizde**, bit eşlemler denetiminiz üzerinde görünmez.
+   > Bir düğme, radyo düğmesi veya onay kutusu denetiminin **bit eşlem** özelliğini **true**değerine eşitse, denetiminiz için BS_BITMAP stil uygulanır. Daha fazla bilgi için bkz. [düğme stilleri](../mfc/reference/styles-used-by-mfc.md#button-styles). Bir bitmapi bir denetimle ilişkilendirme örneği için bkz. [CButton:: SetBit eşlem](../mfc/reference/cbutton-class.md#setbitmap). **Iletişim kutusu Düzenleyicinizde**, bit eşlemler denetiminiz üzerinde görünmez.
 
 ### <a name="to-undo-changes-to-the-properties-of-a-control"></a>Bir denetimin özelliklerinde yapılan değişiklikleri geri almak için
 
 1. Denetimin **Iletişim kutusu düzenleyicisine**odaklanıp bulunmadığından emin olun.
 
-1. Menüyü **Düzenle** > **geri al**'a gidin. Odak denetimde yoksa, **geri al** komutu kullanılamaz olur.
+1. Menü **düzenle** > **geri al**'a gidin. Odak denetimde yoksa, **geri al** komutu kullanılamaz olur.
 
 ### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>Bir (düğme dışı) iletişim kutusu denetimi için bir üye değişkeni tanımlamak için
 
@@ -149,7 +148,7 @@ Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önced
 
 ### <a name="troubleshooting"></a>Sorun giderme
 
-İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örneğin:
+İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örnek:
 
 1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarlarını değiştirerek bir Win32 projesi oluşturun.
 
@@ -175,9 +174,9 @@ Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önced
 |Kısayol tuşu|Zengin düzenleme denetimi|Genişletilmiş Birleşik giriş kutusu|
 |Liste denetimi|Zengin düzenleme 2,0 denetimi|Özel denetim|
 
-İletişim kutusu üzerinde ortak denetimleri kullanmak için, [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) ' ı çağırmanız veya `AFXInitCommonControls` iletişim kutusunu oluşturmadan önce bunu yapmanız gerekir.
+İletişim kutusu üzerinde ortak denetimleri kullanmak için, iletişim kutusunu oluşturmadan önce [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) veya `AFXInitCommonControls` çağrısı yapmanız gerekir.
 
-RichEdit denetimlerini kullanmak için çağrısı `LoadLibrary`yapmanız gerekir. Daha fazla bilgi için bkz. Windows SDK [zengin düzenleme denetimleri](/windows/win32/Controls/about-rich-edit-controls) ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
+RichEdit denetimlerini kullanmak için `LoadLibrary`çağırmanız gerekir. Daha fazla bilgi için bkz. Windows SDK [zengin düzenleme denetimleri](/windows/win32/Controls/about-rich-edit-controls) ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
 
 > [!NOTE]
 > Bir RichEdit denetimini MFC ile birlikte kullanmak için, öncelikle [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) öğesini çağırıp RichEdit 2,0 DENETIMINI (RICHED20) yüklemeniz gerekir. DLL) veya eski RichEdit 1,0 denetimini (RICHED32) yüklemek için [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) 'i çağırın. DLL).
@@ -193,7 +192,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar.
 |Özellik|Açıklama|
 |---|---|
 |**ActiveX denetimi**|ActiveX denetimlerinin bir listesini görüntüler.<br/><br/>Bu iletişim kutusundan bir denetim eklemek sarmalayıcı sınıfı oluşturmaz. Sarmalayıcı sınıfa ihtiyacınız varsa, oluşturmak için [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) kullanın, bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br/><br/>ActiveX denetimi bu iletişim kutusunda görünmezse, denetimi satıcının yönergelerine göre yüklemeyi deneyin.|
-|**Yolu**|ActiveX denetiminin bulunduğu dosyayı görüntüler.|
+|**Path**|ActiveX denetiminin bulunduğu dosyayı görüntüler.|
 
 > [!CAUTION]
 > Sisteminizdeki tüm ActiveX denetimlerini dağıtmak yasal olmayabilir. Denetimleri yükleyen yazılım için lisans sözleşmesine başvurun veya yazılım şirketiyle iletişim kurun.
@@ -231,8 +230,8 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Iletişim kutusu denetimlerini Yönet](controls-in-dialog-boxes.md)<br/>
-[Nasıl yapılır: Düzen Denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>
-[Nasıl yapılır: Denetim Erişimini ve Değerlerini Tanımlama](defining-mnemonics-access-keys.md)
+[Nasıl yapılır: düzen denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Nasıl yapılır: denetim erişimini ve değerlerini tanımlama](defining-mnemonics-access-keys.md)
 
 <!-- excluded links
 [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>

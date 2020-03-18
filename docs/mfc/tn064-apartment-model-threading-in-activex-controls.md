@@ -1,8 +1,6 @@
 ---
-title: 'TN064: ActiveX denetimlerinde apartman modeli Iş parçacığı oluşturma'
+title: 'TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.controls.activex
 helpviewer_keywords:
 - OLE controls [MFC], container support
 - containers [MFC], multithreaded
@@ -10,14 +8,14 @@ helpviewer_keywords:
 - multithread container [MFC]
 - apartment model threading [MFC]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
-ms.openlocfilehash: 2c6b9dd3ed244f7169e5055eebe7a34e3345e841
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f490e82e179da4614eea345136a9edfb1d320705
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513331"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442106"
 ---
-# <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: ActiveX denetimlerinde apartman modeli Iş parçacığı oluşturma
+# <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma
 
 > [!NOTE]
 >  Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
@@ -40,7 +38,7 @@ Apartman modeli iş parçacığı oluşturmayı destekleyen denetimler, aynı za
 
 ## <a name="protecting-shared-data"></a>Paylaşılan verileri koruma
 
-Denetiminiz statik üye değişkeni gibi paylaşılan verileri kullanıyorsa, verileri aynı anda birden fazla iş parçacığının değiştirmesini engellemek için bu verilere erişim kritik bir bölüm ile korunmalıdır. Bu amaçla kritik bir bölüm ayarlamak için, denetiminizin sınıfında bir statik üye değişkeni `CCriticalSection` bildirin. Kodunuzun paylaşılan verilere `Unlock` eriştiği her yerde bu kritik bölüm nesnesinin veüyeişlevlerinikullanın.`Lock`
+Denetiminiz statik üye değişkeni gibi paylaşılan verileri kullanıyorsa, verileri aynı anda birden fazla iş parçacığının değiştirmesini engellemek için bu verilere erişim kritik bir bölüm ile korunmalıdır. Bu amaçla kritik bir bölüm ayarlamak için, denetimin sınıfında `CCriticalSection` statik bir üye değişkeni bildirin. Kodunuzun paylaşılan verilere eriştiği her yerde, bu kritik bölüm nesnesinin `Lock` ve `Unlock` üye işlevlerini kullanın.
 
 Örneğin, tüm örnekler tarafından paylaşılan bir dizeyi sürdürmek için gereken bir denetim sınıfı düşünün. Bu dize statik bir üye değişkeninde korunabilir ve kritik bir bölüm tarafından korunabilir. Denetimin sınıf bildirimi şunları içerir:
 
@@ -60,7 +58,7 @@ int CString CSampleCtrl::_strShared;
 CCriticalSection CSampleCtrl::_critSect;
 ```
 
-`_strShared` Statik üyeye erişim daha sonra kritik bölüm tarafından korunabilir:
+`_strShared` statik üyeye erişim daha sonra kritik bölüm tarafından korunabilir:
 
 ```
 void CSampleCtrl::SomeMethod()
@@ -76,7 +74,7 @@ if (_strShared.Empty())
 
 ## <a name="registering-an-apartment-model-aware-control"></a>Grup modeli kullanan bir denetimi kaydetme
 
-Grup modeli iş parçacığı oluşturmayı destekleyen denetimler, sınıf kimliği kayıt defteri girişinde \\  **"Apartment" adlı adlandırılmış değeri "Apartment" değerine ekleyerek kayıt defterindeki bu özelliği göstermelidir Inprocserver32** anahtarı. Bu anahtarın denetiminizin otomatik olarak kaydedilmesini sağlamak için, altıncı parametresindeki *afxRegApartmentThreading* bayrağını şu şekilde `AfxOleRegisterControlClass`geçirin:
+Apartman modeli iş parçacığı oluşturmayı destekleyen denetimler, sınıf kimliği kayıt defteri girişinde "Apartment" adlı adlandırılmış değeri "Apartment" olarak ekleyerek kayıt defterindeki bu özelliği, *sınıf kimliği*\\**ınprocserver32** anahtarı altında göstermelidir. Bu anahtarın denetiminizin otomatik olarak kaydedilmesini sağlamak için, altıncı parametresindeki *afxRegApartmentThreading* bayrağını `AfxOleRegisterControlClass`geçirin:
 
 ```
 BOOL CSampleCtrl::CSampleCtrlFactory::UpdateRegistry(BOOL bRegister)

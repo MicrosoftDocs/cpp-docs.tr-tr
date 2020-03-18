@@ -1,19 +1,16 @@
 ---
 title: '&lt;özel durum >C++ (belge açıklamaları)'
 ms.date: 11/04/2016
-f1_keywords:
-- exception
-- <exception>
 helpviewer_keywords:
 - <exception> C++ XML tag
 - exception C++ XML tag
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
-ms.openlocfilehash: ddfe647fa2db55b3ca606265011896a66398a8a2
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: d56e0ce7c892cfd9fd909b5268043d77929bd43c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988298"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439867"
 ---
 # <a name="ltexceptiongt"></a>&lt;özel durum&gt;
 
@@ -32,9 +29,9 @@ Geçerli derleme ortamında kullanılabilir bir özel duruma başvuru. Ad arama 
 
 Adı tek veya çift tırnak içine alın.
 
-Genel bir türe cref başvurusu oluşturma hakkında daha fazla bilgi için bkz. [\<](see-visual-cpp.md).
+Genel bir türe cref başvurusu oluşturma hakkında daha fazla bilgi için bkz. [\<>](see-visual-cpp.md).
 
-*description*<br/>
+*açıklaması*<br/>
 Bir açıklama.
 
 ## <a name="remarks"></a>Açıklamalar

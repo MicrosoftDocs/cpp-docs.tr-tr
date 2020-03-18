@@ -1,20 +1,18 @@
 ---
 title: CSpinButtonCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CSpinButtonCtrl
 helpviewer_keywords:
 - up-down controls [MFC], spin button control
 - up-down controls
 - spin button control
 - CSpinButtonCtrl class [MFC], using
 ms.assetid: a91db36b-e11e-42ef-8e89-51915cc486d2
-ms.openlocfilehash: a2a12672f0e70248e135bdd177b76589b6197c75
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 775668426cd11e20a4c863f07a964935d0d5420f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513472"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447177"
 ---
 # <a name="using-cspinbuttonctrl"></a>CSpinButtonCtrl Kullanma
 
@@ -27,7 +25,7 @@ Döndürme düğmesi denetimi, MFC 'de [CSpinButtonCtrl](../mfc/reference/cspinb
 
 Genellikle, geçerli konum bir yardımcı denetimde görüntülenir. Yardımcı denetim *arkadaş penceresi*olarak bilinir. Bir döndürme düğmesi denetiminin bir çizimi için bkz. Windows SDK [Yukarı açılan denetimler hakkında](/windows/win32/Controls/up-down-controls) .
 
-Bir döndürme denetimi ve düzenleme denetimi arkadaş penceresi oluşturmak için, Visual Studio 'da, önce bir düzenleme denetimini iletişim kutusu veya pencereye sürükleyin ve sonra bir döndürme denetimini sürükleyin. Döndürme denetimini seçin ve kendi **Otomatik arkadaşları** ' nı ayarlayın ve **arkadaş tamsayı** özelliklerini **doğru**olarak ayarlayın. **Hizalama** özelliğini de ayarlayın; **Sağa Hizala** en normaldir. Bu ayarlarla düzenleme denetimi, doğrudan sekme düzeninde düzenleme denetiminden önce olduğu için arkadaş pencere olarak ayarlanır. Düzenleme denetimi tamsayılar görüntüler ve döndürme denetimi, düzenleme denetiminin sağ tarafına katıştırılır. İsteğe bağlı olarak, [CSpinButtonCtrl:: SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) yöntemini kullanarak, döndürme denetiminin geçerli aralığını ayarlayabilirsiniz. Verileri doğrudan değiş tokuş ettiğinden, döndürme denetimi ve arkadaş penceresi arasında iletişim kurmak için herhangi bir olay işleyicisi gerekmez. Örneğin, bir dizi Windows veya iletişim kutusu aracılığıyla sayfa için bir döndürme denetimi kullanırsanız, UDN_DELTAPOS iletisi için bir işleyici ekleyin ve özel eyleminizi orada gerçekleştirin.
+Bir döndürme denetimi ve düzenleme denetimi arkadaş penceresi oluşturmak için, Visual Studio 'da, önce bir düzenleme denetimini iletişim kutusu veya pencereye sürükleyin ve sonra bir döndürme denetimini sürükleyin. Döndürme denetimini seçin ve kendi **Otomatik arkadaşları** ' nı ayarlayın ve **arkadaş tamsayı** özelliklerini **doğru**olarak ayarlayın. **Hizalama** özelliğini de ayarlayın; **Sağa Hizala** en normaldir. Bu ayarlarla düzenleme denetimi, doğrudan sekme düzeninde düzenleme denetiminden önce olduğu için arkadaş pencere olarak ayarlanır. Düzenleme denetimi tamsayılar görüntüler ve döndürme denetimi, düzenleme denetiminin sağ tarafına katıştırılır. İsteğe bağlı olarak, [CSpinButtonCtrl:: SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) yöntemini kullanarak, döndürme denetiminin geçerli aralığını ayarlayabilirsiniz. Verileri doğrudan değiş tokuş ettiğinden, döndürme denetimi ve arkadaş penceresi arasında iletişim kurmak için herhangi bir olay işleyicisi gerekmez. Örneğin, bir dizi Windows veya iletişim kutusu aracılığıyla sayfa yapmak için başka bir amaçla bir döndürme denetimi kullanıyorsanız, UDN_DELTAPOS ileti için bir işleyici ekleyin ve özel eyleminizi orada gerçekleştirin.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 

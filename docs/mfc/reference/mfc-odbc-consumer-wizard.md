@@ -4,12 +4,12 @@ ms.date: 08/29/2019
 helpviewer_keywords:
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: 84fdc0d180f5b1b0f2e64c3597cb474611ad3914
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: fd7e8df6692889914af2dd060ac42ed4ca3ebb8b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177441"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446428"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC Tüketici Sihirbazı
 
@@ -25,7 +25,7 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
-- **Veri kaynağı**
+- **Veri Kaynağı**
 
   **Veri kaynağı** düğmesi, belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağını ayarlamanıza olanak sağlar. Veri kaynağı dosyaları (DSN) hakkında daha fazla bilgi için bkz. ODBC SDK 'daki [dosya veri kaynakları](/sql/odbc/reference/file-data-sources) .
 
@@ -35,7 +35,7 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
      **Içindeki ara** kutusu, veri kaynağı olarak kullanılacak dosyaların seçilecek dizini belirtir. Varsayılan değer \Program Files\Common Files\ODBC\Data kaynaklarıdır. Mevcut dosya veri kaynakları (. DSN dosyaları) ana liste kutusunda görünür. [ODBC veri kaynağı Yöneticisi](/sql/odbc/admin/odbc-data-source-administrator)'NDEKI **dosya DSN** sekmesini kullanarak veri kaynaklarını zaman içinde ayarlayabilir veya bu iletişim kutusunu kullanarak yeni bir tane oluşturabilirsiniz.
 
-     Bu iletişim kutusundan yeni bir dosya veri kaynağı oluşturmak için, bir DSN `New` adı belirtmek için öğesine tıklayın; **Yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. **Yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçin ve ' `Next`e tıklayın; birveri kaynağı olarak kullanılacak dosyanın adını seçin (. xls dosyaları gibi DSN olmayan dosyaları görüntülemek için "tüm dosyalar" ı seçmeniz gerekir); ve ardından son ' a tıklayın. `Next` (DSN olmayan bir dosya seçtiyseniz, dosyayı bir DSN 'e dönüştürecek "ODBC Microsoft Excel kurulumu" gibi sürücüye özgü bir iletişim kutusu alacaksınız.)
+     Bu iletişim kutusundan yeni bir dosya veri kaynağı oluşturmak için `New` ' ye tıklayarak bir DSN adı belirtin; **Yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. **Yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçin ve `Next`' a tıklayın. **Araştır**' a tıklayın ve veri kaynağı olarak kullanılacak dosyanın adını seçin (. xls dosyaları gıbı, DSN olmayan dosyaları görüntülemek Için "tüm dosyalar" ı seçmeniz gerekir); `Next`' ye ve ardından **son**' a tıklayın. (DSN olmayan bir dosya seçtiyseniz, dosyayı bir DSN 'e dönüştürecek "ODBC Microsoft Excel kurulumu" gibi sürücüye özgü bir iletişim kutusu alacaksınız.)
 
      > [!NOTE]
      > ODBC veri kaynağı Yöneticisi 'ni kullanarak önceden yeni bir dosya veri kaynağı da oluşturabilirsiniz. **Başlat** menüsünde **Ayarlar**, **Denetim Masası**, **Yönetim Araçları**, **veri kaynakları (ODBC)** ve ardından **ODBC veri kaynağı Yöneticisi**' ni seçin.
@@ -54,7 +54,7 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
 - **Sınıfı**
 
-      The name of the consumer class, based by default on the name of the file or machine data source that you selected.
+   Seçtiğiniz dosya veya makine veri kaynağı adı üzerinde varsayılan olarak temel alan tüketici sınıfının adı.
 
 - **. h dosyası**
 
@@ -68,9 +68,9 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
    Kayıt kümesinin Dynaset (varsayılan) veya anlık görüntü olduğunu belirtir.
 
-   - **Dynaset**: Kayıt kümesinin bir Dynaset olduğunu belirtir. DYNASET, sorgulanan veritabanının verilerine dizinli bir görünüm sağlayan sorgunun sonucudur. DYNASET, özgün verilerin yalnızca bir integral dizinini önbelleğe alır ve bu nedenle bir anlık görüntü üzerinde performans kazancı sağlar. Dizin, bir sorgunun sonucu olarak bulunan her bir kayda doğrudan işaret eder ve bir kaydın kaldırılıp kaldırılmadığını gösterir. Ayrıca, sorgulanan kayıtlardaki güncelleştirilmiş bilgilere erişebilirsiniz. Bu varsayılandır.
+   - **Dynaset**: kayıt kümesinin bir Dynaset olduğunu belirtir. DYNASET, sorgulanan veritabanının verilerine dizinli bir görünüm sağlayan sorgunun sonucudur. DYNASET, özgün verilerin yalnızca bir integral dizinini önbelleğe alır ve bu nedenle bir anlık görüntü üzerinde performans kazancı sağlar. Dizin, bir sorgunun sonucu olarak bulunan her bir kayda doğrudan işaret eder ve bir kaydın kaldırılıp kaldırılmadığını gösterir. Ayrıca, sorgulanan kayıtlardaki güncelleştirilmiş bilgilere erişebilirsiniz. Bu varsayılandır.
 
-   - **Anlık görüntü**: Kayıt kümesinin bir anlık görüntü olduğunu belirtir. Anlık görüntü, bir sorgunun sonucudur ve tek seferde bir veritabanında görüntülenir. Sorgunun bir sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.
+   - **Anlık görüntü**: kayıt kümesinin bir anlık görüntü olduğunu belirtir. Anlık görüntü, bir sorgunun sonucudur ve tek seferde bir veritabanında görüntülenir. Sorgunun bir sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.
 
 - **Tüm sütunları bağla**
 

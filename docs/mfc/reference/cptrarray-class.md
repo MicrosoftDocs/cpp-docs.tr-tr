@@ -1,55 +1,55 @@
 ---
-title: CPtrArray Class
+title: CPtrArray sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPtrArray
 - AFXCOLL/CPtrArray
-- AFXCOLL/CObArray::CObArray
-- AFXCOLL/CObArray::Add
-- AFXCOLL/CObArray::Append
-- AFXCOLL/CObArray::Copy
-- AFXCOLL/CObArray::ElementAt
-- AFXCOLL/CObArray::FreeExtra
-- AFXCOLL/CObArray::GetAt
-- AFXCOLL/CObArray::GetCount
-- AFXCOLL/CObArray::GetData
-- AFXCOLL/CObArray::GetSize
-- AFXCOLL/CObArray::GetUpperBound
-- AFXCOLL/CObArray::InsertAt
-- AFXCOLL/CObArray::IsEmpty
-- AFXCOLL/CObArray::RemoveAll
-- AFXCOLL/CObArray::RemoveAt
-- AFXCOLL/CObArray::SetAt
-- AFXCOLL/CObArray::SetAtGrow
-- AFXCOLL/CObArray::SetSize
+- AFXCOLL/CPtrArray::CPtrArray
+- AFXCOLL/CPtrArray::Add
+- AFXCOLL/CPtrArray::Append
+- AFXCOLL/CPtrArray::Copy
+- AFXCOLL/CPtrArray::ElementAt
+- AFXCOLL/CPtrArray::FreeExtra
+- AFXCOLL/CPtrArray::GetAt
+- AFXCOLL/CPtrArray::GetCount
+- AFXCOLL/CPtrArray::GetData
+- AFXCOLL/CPtrArray::GetSize
+- AFXCOLL/CPtrArray::GetUpperBound
+- AFXCOLL/CPtrArray::InsertAt
+- AFXCOLL/CPtrArray::IsEmpty
+- AFXCOLL/CPtrArray::RemoveAll
+- AFXCOLL/CPtrArray::RemoveAt
+- AFXCOLL/CPtrArray::SetAt
+- AFXCOLL/CPtrArray::SetAtGrow
+- AFXCOLL/CPtrArray::SetSize
 helpviewer_keywords:
-- CObArray [MFC], CObArray
-- CObArray [MFC], Add
-- CObArray [MFC], Append
-- CObArray [MFC], Copy
-- CObArray [MFC], ElementAt
-- CObArray [MFC], FreeExtra
-- CObArray [MFC], GetAt
-- CObArray [MFC], GetCount
-- CObArray [MFC], GetData
-- CObArray [MFC], GetSize
-- CObArray [MFC], GetUpperBound
-- CObArray [MFC], InsertAt
-- CObArray [MFC], IsEmpty
-- CObArray [MFC], RemoveAll
-- CObArray [MFC], RemoveAt
-- CObArray [MFC], SetAt
-- CObArray [MFC], SetAtGrow
-- CObArray [MFC], SetSize
+- CPtrArray [MFC], CPtrArray
+- CPtrArray [MFC], Add
+- CPtrArray [MFC], Append
+- CPtrArray [MFC], Copy
+- CPtrArray [MFC], ElementAt
+- CPtrArray [MFC], FreeExtra
+- CPtrArray [MFC], GetAt
+- CPtrArray [MFC], GetCount
+- CPtrArray [MFC], GetData
+- CPtrArray [MFC], GetSize
+- CPtrArray [MFC], GetUpperBound
+- CPtrArray [MFC], InsertAt
+- CPtrArray [MFC], IsEmpty
+- CPtrArray [MFC], RemoveAll
+- CPtrArray [MFC], RemoveAt
+- CPtrArray [MFC], SetAt
+- CPtrArray [MFC], SetAtGrow
+- CPtrArray [MFC], SetSize
 ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
-ms.openlocfilehash: 59ecf01b81c4150e2bdae3b6d2862c1b3e91152b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3167c6a388ecbfefce9a72b7bfd720f83639108a
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372408"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444286"
 ---
-# <a name="cptrarray-class"></a>CPtrArray Class
+# <a name="cptrarray-class"></a>CPtrArray sınıfı
 
 Void işaretçileri dizilerini destekler.
 
@@ -61,60 +61,60 @@ class CPtrArray : public CObject
 
 ## <a name="members"></a>Üyeler
 
-Üye işlevlerinin `CPtrArray` sınıfın üye işlevleri için benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CObArray` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir işlev parametre veya dönüş değeri olarak alternatif bir işaretçiye **void**.
+`CPtrArray` üye işlevleri [CObArray](../../mfc/reference/cobarray-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CObArray` başvuru belgelerini kullanabilirsiniz. İşlev parametresi veya dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, **void**için bir işaretçi yerine koyun.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
-Örneğin, için çevirir
+Örneğin, öğesine çevirir
 
 `void* CPtrArray::GetAt( int <nIndex> ) const;`
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObArray::CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
+|[CPtrArray:: CPtrArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObArray::Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğe ekler; dizi gerekirse büyür.|
-|[CObArray::Append](../../mfc/reference/cobarray-class.md#append)|Diziyi başka diziye ekler; dizi gerekirse büyür.|
-|[CObArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Diziyi başka diziye kopyalar; dizi gerekirse büyür.|
-|[CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.|
-|[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|
-|[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Belirtilen dizindeki değeri döndürür.|
-|[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizinin içinde öğe sayısını alır.|
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizide öğelere erişim sağlar. Olabilir `NULL`.|
-|[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizinin içinde öğe sayısını alır.|
-|[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizinini döndürür.|
-|[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.|
-|[CObArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizi boş olup olmadığını belirler.|
-|[CObArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizisinden tüm öğeleri kaldırır.|
-|[CObArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki öğeyi kaldırır.|
-|[CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirtilen dizin için değeri ayarlar; dizi büyümesine izin verilmiyor.|
-|[CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirtilen dizin için değeri ayarlar; dizi gerekirse büyür.|
-|[CObArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizinin içinde yer alması için öğe sayısını ayarlar.|
+|[CPtrArray:: Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
+|[CPtrArray:: Append](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür.|
+|[CPtrArray:: Copy](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
+|[CPtrArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru döndürür.|
+|[CPtrArray:: FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
+|[CPtrArray:: GetAt](../../mfc/reference/cobarray-class.md#getat)|Verilen dizindeki değeri döndürür.|
+|[CPtrArray:: GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CPtrArray:: GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişime izin verir. `NULL`olabilir.|
+|[CPtrArray:: GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CPtrArray:: Getüstsınırı](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CPtrArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
+|[CPtrArray:: IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CPtrArray:: RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CPtrArray:: RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CPtrArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
+|[CPtrArray:: SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
+|[CPtrArray:: SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
+|[CPtrArray:: operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPtrArray` ımplement_dynamıc makrosu, çalışma zamanı tür erişimi ve dökme için desteği kapsayan bir `CDumpContext` nesne. Tek tek işaretçisi, dizi öğelerinin bir döküm gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.
+`CPtrArray`, çalışma zamanı tür erişimini desteklemek ve bir `CDumpContext` nesnesine dökümünü yapmak için IMPLEMENT_DYNAMIC makrosunu içerir. Tek bir işaretçi dizisi öğelerinin dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
 > [!NOTE]
->  Bir dizi kullanmadan önce kullanmayı `SetSize` boyutuna kurmak ve kendisi için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, diziniz için öğeleri ekleme, oluyor, sık sık yeniden ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçası.
+>  Bir dizi kullanmadan önce, boyutunu belirlemek ve için bellek ayırmak üzere `SetSize` kullanın. `SetSize`kullanmıyorsanız, dizine öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
 
-İşaretçi dizileri nelze serializovat.
+İşaretçi dizileri serileştirilemiyor.
 
-Yalnızca işaretçiler, bir işaretçi dizisi silindiğinde veya öğeleri kaldırıldığında kaldırılır, bunlar başvuru varlıkları.
+Bir işaretçi dizisi silindiğinde veya öğeleri kaldırıldığında, başvurdukları varlıklara değil yalnızca işaretçiler kaldırılır.
 
-Kullanma hakkında daha fazla bilgi için `CPtrArray`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+`CPtrArray`kullanma hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -124,7 +124,7 @@ Kullanma hakkında daha fazla bilgi için `CPtrArray`, makaleye göz atın [kole
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

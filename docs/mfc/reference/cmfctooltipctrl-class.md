@@ -32,18 +32,18 @@ helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], SetLocation
 - CMFCToolTipCtrl [MFC], SetParams
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-ms.openlocfilehash: 5376fd21f84411c86ade564d7c76d073ccb909a6
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: aecd03371f0dfd4b4af5886bea6c6202c40b5236
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273688"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445554"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 
-[CToolTipCtrl sınıfına](../../mfc/reference/ctooltipctrl-class.md)dayalı genişletilmiş bir araç ipucu uygulama. `CMFCToolTipCtrl` Sınıfına dayalı bir araç ipucu, bir simge, etiket ve açıklama gösterebilir. Görsel görünümünü, bir gradyan dolgusu, özel metin ve kenarlık renkleri, kalın metin, yuvarlatılmış köşeler veya balon stili kullanarak özelleştirebilirsiniz.
+[CToolTipCtrl sınıfına](../../mfc/reference/ctooltipctrl-class.md)dayalı genişletilmiş bir araç ipucu uygulama. `CMFCToolTipCtrl` sınıfına dayalı bir araç ipucu, bir simge, etiket ve açıklama gösterebilir. Görsel görünümünü, bir gradyan dolgusu, özel metin ve kenarlık renkleri, kalın metin, yuvarlatılmış köşeler veya balon stili kullanarak özelleştirebilirsiniz.
 
-Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
+Daha fazla ayrıntı için, Visual Studio yüklemenizin **VC\\atlmfc\\src\\MFC** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,13 +55,13 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`CMFCToolTipCtrl::CMFCToolTipCtrl`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCToolTipCtrl:: GetIconSize](#geticonsize)|Araç ipucunda bir simgenin boyutunu döndürür.|
 |[CMFCToolTipCtrl:: GetParams](#getparams)|Bir araç ipucunun görüntüleme ayarlarını döndürür.|
@@ -75,17 +75,17 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 |[CMFCToolTipCtrl:: SetFixedWidth](#setfixedwidth)||
 |[CMFCToolTipCtrl:: Sethotribbondüğmesi](#sethotribbonbutton)||
 |[CMFCToolTipCtrl:: SetLocation](#setlocation)||
-|[CMFCToolTipCtrl:: SetParams](#setparams)|Bir araç ipucunun görsel görünümünü bir `CMFCToolTipInfo` nesne kullanarak belirtir.|
+|[CMFCToolTipCtrl:: SetParams](#setparams)|Bir `CMFCToolTipInfo` nesnesi kullanarak araç ipucunun görsel görünümünü belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızda `CMFCToolTipCtrl`özelleştirilmiş `CMFCToolTipInfo`araç ipuçları uygulamak için, ve [CTooltipManager sınıf](../../mfc/reference/ctooltipmanager-class.md) nesnelerini birlikte kullanın.
+Uygulamanızda özelleştirilmiş araç ipuçları uygulamak için `CMFCToolTipCtrl`, `CMFCToolTipInfo`ve [CTooltipManager sınıf](../../mfc/reference/ctooltipmanager-class.md) nesnelerini birlikte kullanın.
 
 Örneğin, balon stili araç ipuçlarını kullanmak için şu adımları izleyin:
 
 1. Uygulamanızdaki araç ipucu Yöneticisini başlatmak için [CWinAppEx Class](../../mfc/reference/cwinappex-class.md) metodunu kullanın.
 
-2. İstediğiniz görsel `CMFCToolTipInfo` stili belirtmek için bir yapı oluşturun:
+2. İstediğiniz görsel stili belirtmek için bir `CMFCToolTipInfo` yapısı oluşturun:
 
 ```
 CMFCToolTipInfo params;
@@ -103,19 +103,22 @@ if (m_bCustomColors)
 
 }
 ```
-3. `CMFCToolTipInfo` Nesnede tanımlanan stilleri kullanarak uygulamadaki tüm araç ipuçlarının görsel stilini ayarlamak için [CTooltipManager:: SetTooltipParams](../../mfc/reference/ctooltipmanager-class.md#settooltipparams) metodunu kullanın:
+
+3. `CMFCToolTipInfo` nesnesinde tanımlanan stilleri kullanarak uygulamadaki tüm araç ipuçlarında görsel stili ayarlamak için [CTooltipManager:: SetTooltipParams](../../mfc/reference/ctooltipmanager-class.md#settooltipparams) metodunu kullanın:
 
 ```
 theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
     RUNTIME_CLASS (CMFCToolTipCtrl), &params);
 ```
-Araç ipucu davranışını ve işlemeyi denetlemek için ' `CMFCToolTipCtrl` den yeni bir sınıf de türetebilirsiniz. Yeni bir araç ipucu denetim sınıfı belirtmek için `CTooltipManager::SetTooltipParams` yöntemini kullanın:
+
+Ayrıca, araç ipucu davranışını ve işlemeyi denetlemek için `CMFCToolTipCtrl` yeni bir sınıf türetebilirsiniz. Yeni bir araç ipucu denetim sınıfı belirtmek için `CTooltipManager::SetTooltipParams` yöntemi kullanın:
 
 ```
 myApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
     RUNTIME_CLASS (CMyToolTipCtrl))
 ```
-Varsayılan araç ipucu denetim sınıfını geri yüklemek ve araç ipucu görünümünü varsayılan durumuna sıfırlamak için, çalışma zamanı sınıfında NULL değerini ve araç ipucu bilgi parametrelerini `SetTooltipParams`seçin:
+
+Varsayılan araç ipucu denetim sınıfını geri yüklemek ve araç ipucu görünümünü varsayılan durumuna sıfırlamak için, çalışma zamanı sınıfında NULL değerini ve `SetTooltipParams`araç ipucu bilgi parametrelerini belirtin:
 
 ```
 theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
@@ -305,7 +308,7 @@ virtual void OnDrawSeparator(
 *x2*<br/>
 'ndaki Ayracın sağ ucunun yatay koordinatı.
 
-*Y*<br/>
+*Iz*<br/>
 'ndaki Ayırıcının Dikey koordinatı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -417,7 +420,7 @@ void SetParams(CMFCToolTipInfo* pParams);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipucu her görüntülendiğinde, *pParams* 'in belirttiği renkler ve görsel stiller kullanılarak çizilir. *PParams* değeri, `m_Params` [CMFCToolTipCtrl:: OnDrawBorder](#ondrawborder), CMFCToolTipCtrl:: ondrawcontrol, CMFCToolTipCtrl:: [](#ondrawicon)OnDrawLabel gibi geçersiz kılan türetilmiş bir sınıf tarafından erişilebilen korunan üyede saklanır [ ](#ondrawlabel), [CMFCToolTipCtrl:: OnDrawSeparator](#ondrawseparator)veya [CMFCToolTipCtrl:: OnFillBackground](#onfillbackground) , belirtilen görünümü korumak için.
+Araç ipucu her görüntülendiğinde, *pParams* 'in belirttiği renkler ve görsel stiller kullanılarak çizilir. *PParams* değeri, korunan üye `m_Params`depolanır, bu, bir türetilmiş sınıf tarafından erişilebilen [CMFCToolTipCtrl:: OnDrawBorder](#ondrawborder), CMFCToolTipCtrl:: [OnDrawIcon](#ondrawicon), CMFCToolTipCtrl:: [OnDrawLabel](#ondrawlabel), CMFCToolTipCtrl:: [OnDrawSeparator](#ondrawseparator)veya CMFCToolTipCtrl:: [OnFillBackground](#onfillbackground) , belirtilen görünümü sürdürmek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -21,7 +21,6 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- spawnlpe
 - _wspawnlpe
 - _spawnlpe
 - wspawnlpe
@@ -34,12 +33,12 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6
-ms.openlocfilehash: fe82d52418683d414ffbdd0f4fb0efd9bfd709cb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4fd7275969120b35253bbc12098f8dc8f69a1fed
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947656"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442505"
 ---
 # <a name="_spawnlpe-_wspawnlpe"></a>_spawnlpe, _wspawnlpe
 
@@ -87,12 +86,12 @@ Ortam ayarlarına işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Zaman uyumlu **_Bir nlpe** veya **_wspawnlpe** 'den ( *Mode*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Bir zaman uyumsuz **_Bir nlpe** veya **_wspawnlpe** ( *Mode*için belirtilen **_P_NOWAIT** veya **_P_NOWAITO** ) için dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını çağırmak için sıfır dışında bir bağımsız değişken kullanıyorsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme nedeniyle oluşan olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
+Zaman uyumlu bir **_spawnlpe** veya **_wspawnlpe** ( *mod*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Zaman uyumsuz bir **_spawnlpe** veya **_wspawnlpe** ( **_P_NOWAIT** veya *mod*için belirtilen **_P_NOWAITO** ) dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını çağırmak için sıfır dışında bir bağımsız değişken kullanıyorsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme nedeniyle oluşan olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
 
 |||
 |-|-|
 | **E2BIG** | Bağımsız değişken listesi 1024 baytı aşıyor. |
-| **EINVAL** | *Mode* bağımsız değişkeni geçersiz. |
+| **EıNVAL** | *Mode* bağımsız değişkeni geçersiz. |
 | **ENOENT** | Dosya veya yol bulunamadı. |
 | **ENOEXEC** | Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip. |
 | **ENOMEM** | Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok. |
@@ -109,14 +108,14 @@ Bu işlevler, parametrelerini doğrular. Herhangi bir *cmdname* veya *arg0* boş
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_Bir nlpe**|\<Process. h >|
+|**_spawnlpe**|\<Process. h >|
 |**_wspawnlpe**|\<stdio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[_Üretilemedi, _wspiyı işlevlerinde](../../c-runtime-library/spawn-wspawn-functions.md)örneğe bakın.
+[_Spawn, _Wspawn işlevlerde](../../c-runtime-library/spawn-wspawn-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

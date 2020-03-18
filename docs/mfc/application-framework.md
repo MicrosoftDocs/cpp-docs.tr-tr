@@ -1,25 +1,23 @@
 ---
 title: Uygulama Framework'ü
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.mfc
 helpviewer_keywords:
 - application framework [MFC], building applications
 - applications [MFC]
 - application framework [MFC]
 ms.assetid: 912684e6-4418-49dc-9877-a4cd19d69d20
-ms.openlocfilehash: fb8e19b7e8a305367e5265707bbef2801176c010
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b55635de322274ab02372251976d4ebb9511ade5
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394656"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446524"
 ---
 # <a name="application-framework"></a>Uygulama Framework'ü
 
-Microsoft Foundation Class (MFC) Kitaplığı'nın çekirdeği C++ formunda Windows API büyük bir kısmı sarmalanmasını olur. Windows, iletişim kutuları, cihaz bağlamları Fırçalar ve kalemler, denetimler ve diğer standart Windows öğeler gibi ortak GDI nesnelerini kitaplığı sınıflarını temsil eder. Bu sınıflar kullanışlı sağlar, bunlar kapsülleyen Windows yapılarda C++ üye işlevi arabirimi. Bu sınıflar kullanma hakkında daha fazla bilgi için bkz. [pencere nesnesi konuları](../mfc/window-objects.md).
+Microsoft Foundation Class (MFC) kitaplığı 'nın çekirdeği, Windows API 'sinin büyük bir bölümünü C++ biçiminde kapsüllenir. Kitaplık sınıfları Windows, iletişim kutularını, cihaz bağlamlarını, fırçalar ve kalemler, denetimler ve diğer standart Windows öğeleri gibi ortak GDI nesnelerini temsil eder. Bu sınıflar, Windows 'taki C++ yapıları kapsüllemek için uygun bir üye işlev arabirimi sağlar. Bu sınıfları kullanma hakkında daha fazla bilgi için bkz. [pencere nesnesi konuları](../mfc/window-objects.md).
 
-Ancak, MFC Kitaplığı da ek uygulama işlevlerinin C++ kapsülleme Windows API üzerinde derlenmiş bir katmanı sağlar. Bir çalışan uygulama çerçevesi için en yaygın kullanıcı arabirimi sağlayan Windows yazdırma, araç çubuklarını, durum çubukları dahil olmak üzere Windows için yazdırma önizleme programlarını beklenen veritabanı desteği ve ActiveX desteği bu katmanıdır. [Yazma uygulamaları için Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md) framework ayrıntılı açıklanmaktadır.
+Ancak MFC kitaplığı, Windows API 'nin C++ kapsüllenmesi üzerinde oluşturulmuş ek uygulama işlevlerinin bir katmanını de sağlar. Bu katman, Windows için programlar beklenen ve araç çubukları, durum çubukları, yazdırma, baskı önizleme, veritabanı desteği ve ActiveX desteği dahil olmak üzere Windows için programların beklenen ortak Kullanıcı arabiriminin çoğunu sağlayan, çalışan bir uygulama çerçevesidir. [Windows Için uygulama yazmak Için sınıfların kullanılması](../mfc/using-the-classes-to-write-applications-for-windows.md) , çerçeveyi ayrıntılı olarak açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

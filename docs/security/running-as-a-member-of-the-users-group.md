@@ -1,9 +1,6 @@
 ---
 title: Kullanıcı Grubu Üyesi Olarak Çalıştırma
 ms.date: 11/04/2016
-f1_keywords:
-- PRJ0050
-- VCD0047
 helpviewer_keywords:
 - Users Group [C++]
 - security [C++], Users Group
@@ -12,45 +9,45 @@ helpviewer_keywords:
 - user accounts [C++]
 - administrator (not running as) [C++]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-ms.openlocfilehash: dc06e2dc58d28c34a646ccffc0be90368b3297f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 117ef426950fc9aff5ae41e894f0d7ae898369cd
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411298"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445435"
 ---
 # <a name="running-as-a-member-of-the-users-group"></a>Kullanıcı Grubu Üyesi Olarak Çalıştırma
 
-Bu konu nasıl (aksine, Yöneticiler grubu) Users grubunun bir üyesi olarak Windows kullanıcı hesapları yapılandırılıyor kötü amaçlı kod bulaşması olasılığını azaltarak güvenliğini açıklar.
+Bu konu, Windows Kullanıcı hesaplarının, Kullanıcı grubunun bir üyesi olarak nasıl yapılandırılacağı açıklanmaktadır (Yöneticiler grubunun aksine) kötü amaçlı kodla bulaşma olasılığını azaltarak güvenliği artırır.
 
 ## <a name="security-risks"></a>Güvenlik riskleri
 
-Bir yönetici olarak, sistem güvenlik saldırısı, "Truva atı" ve "arabellek taşması." gibi çeşitli türlerde karşı savunmasız hale getirir Bir yönetici sisteme zarar olarak yalnızca sitesini ziyaret ederek bir Internet sitesini bir Internet sitesinden indirilen kötü amaçlı kod olarak bilgisayarınızı saldırı. Başarılı olursa, yönetici izinleri devralır ve tüm dosyaları sildikten, sabit yeniden biçimlendirme ve yeni bir kullanıcı, yönetici erişimine sahip hesapları oluşturma gibi eylemler gerçekleştirebilir.
+Yönetici olarak çalıştırıldığında, sisteminiz "Truva atı" ve "arabellek taşması" gibi çeşitli güvenlik saldırılarına karşı savunmasız olur. Bir Internet sitesinden indirilen kötü amaçlı kod bilgisayarınıza saldırmak için, bir yönetici olarak yalnızca bir Internet sitesini ziyaret edebilirsiniz. Başarılı olursa, yönetici izinlerinizi devralır ve daha sonra tüm dosyalarınızı silme, sabit sürücünüzü yeniden biçimlendirme ve yönetim erişimi olan yeni bir kullanıcı hesabı oluşturma gibi eylemler gerçekleştirebilir.
 
 ## <a name="non-administrator-user-groups"></a>Yönetici olmayan kullanıcı grupları
 
-Geliştiriciler normalde kullandığı Windows kullanıcı hesapları, kullanıcıları veya güç kullanıcı grupları için eklenmelidir. Geliştiriciler ayrıca hata ayıklama grubuna eklenmesi gerekir. Kullanıcılar grubunun bir üyesi olduğundan çalışan programlar ve gereksiz risk bilgisayarınıza sokmadan Internet siteleri ziyaret dahil olmak üzere, rutin görevleri gerçekleştirmenize olanak tanır. Power Users grubunun bir üyesi olarak uygulama yükleme, yazıcı yükleme ve çoğu Denetim Masası işlemleri gibi görevleri gerçekleştirebilirsiniz. İşletim sistemini yükseltmeyi veya sistem parametrelerini yapılandırma gibi yönetim görevlerini gerçekleştirmek gerekiyorsa, içinde bir yönetici hesabı süre için yönetim görevi gerçekleştirmek için yeterli oturum açmanız gerekir. Alternatif olarak, Windows **runas** komutu, belirli uygulamaları yönetici erişimi ile başlatmak için kullanılabilir.
+Geliştiricilerin normalde kullandığı Windows Kullanıcı hesapları, kullanıcılar ya da uzman kullanıcılar gruplarına eklenmelidir. Geliştiriciler de hata ayıklama grubuna eklenmelidir. Kullanıcılar grubunun bir üyesi olmak, çalışan programlar ve bilgisayarınızı gereksiz riske sokmadan Internet sitelerini ziyaret eden rutin görevleri gerçekleştirmenize olanak tanır. Power Users grubunun bir üyesi olarak, uygulama yükleme, yazıcı yükleme ve çoğu Denetim Masası işlemi gibi görevleri de gerçekleştirebilirsiniz. İşletim sistemini yükseltme veya sistem parametrelerini yapılandırma gibi yönetim görevleri gerçekleştirmeniz gerekiyorsa, yönetim görevini gerçekleştirmek için yeterince uzun bir yönetici hesabında oturum açmanız gerekir. Alternatif olarak, Windows **runas** komutu, yönetim erişimi olan belirli uygulamaları başlatmak için kullanılabilir.
 
-## <a name="exposing-customers-to-security-risks"></a>Müşterilerin güvenlik risklerine gösterme
+## <a name="exposing-customers-to-security-risks"></a>Müşterileri güvenlik risklerine sunma
 
-Geliştirme makineleri korumaya ek olarak, geliştiriciler Yöneticiler grubuna katılın müşterilere gerektiren kod yanlışlıkla yazmasını engeller, Yöneticiler grubunun bir parçası olmadığı geliştiriciler için özellikle önemlidir çünkü Sipariş uygulamalarını yürütmek için geliştirdiğiniz. Yönetici erişimi gerektiren kod geliştirme sırasında ortaya çıkan, uygulamanızın yönetici olarak çalıştırmak müşterilerin gerektirdiğini için uyarı, çalışma zamanında başarısız olur.
+Yöneticiler grubunun parçası değil geliştiriciler için özellikle önemlidir çünkü geliştirme makinelerini korumaya ek olarak, geliştiricilerin müşterilerin Yöneticiler grubuna katılması gereken kodu yanlışlıkla yazmasını engeller. Geliştirdiğiniz uygulamaları yürütmek için sıralama. Geliştirme sırasında yönetici erişimi gerektiren kod tanıtıldığında, çalışma zamanında başarısız olur ve uygulamanızın artık müşterilerin yönetici olarak çalıştırılmasını gerektirdiğini size uyarır.
 
 ## <a name="code-that-requires-administrator-privileges"></a>Yönetici ayrıcalıkları gerektiren kod
 
-Bazı kod yürütmek için yönetici erişimi gerektirir. Mümkünse, bu kod alternatifleri takip edilmelidir. Yönetici erişimi gerektiren kod işlem örnekleri şunlardır:
+Bazı kodlar yürütmek için yönetici erişimi gerektirir. Mümkünse, bu kodun alternatifleri yapılmalıdır. Yönetici erişimi gerektiren kod işlemlerine örnek olarak şunlar verilebilir:
 
-- Dosya sistemi, Windows veya Program Files dizini gibi korumalı alanlarına yazma
+- Dosya sisteminin Windows veya program dosyaları dizinleri gibi korumalı bölümlerine yazma
 
-- Kayıt defterinde HKEY_LOCAL_MACHINE gibi korumalı alanlarına yazma
+- Kayıt defterinin korunan bölümlerine yazma (örneğin, HKEY_LOCAL_MACHINE)
 
-- Derlemeleri Genel Derleme Önbelleği'ne (GAC) yükleme
+- Bütünleştirilmiş kodları genel derleme önbelleğinde (GAC) yükleme
 
-Genellikle, bu eylemleri uygulama yükleme programları için sınırlı olmalıdır. Bu yönetici durumu yalnızca geçici olarak kullanmasına olanak tanır.
+Genellikle, bu eylemlerin uygulama yükleme programlarıyla sınırlı olması gerekir. Bu, kullanıcıların yalnızca geçici olarak yönetici durumunu kullanmasına izin verir.
 
-## <a name="debugging"></a>Hata Ayıklama
+## <a name="debugging"></a>Hata ayıklama
 
-Hata ayıklama grubunun parçası olma tarafından yönetici olmayan Visual Studio içinden (yerel ve yönetilmeyen) başlatma uygulamalarda hata ayıklama yapabilirsiniz. Bu işlem komut işleme İliştir çalışan bir uygulamayı ekleme özelliği içerir. Ancak, farklı bir kullanıcı tarafından başlatılan yerel veya yönetilen uygulamalarda hata ayıklamak için yönetici grubunun bir parçası olması gereklidir.
+Hata ayıklama grubunun bir parçası haline getirerek, Visual Studio içinde (yerel ve yönetilmeyen), yönetici olmayan tüm uygulamalarda hata ayıklaması yapabilirsiniz. Bu, Işleme Iliştir komutunu kullanarak çalışan bir uygulamaya ekleme olanağını içerir. Ancak, farklı bir kullanıcı tarafından başlatılan yerel veya yönetilen uygulamaların hatalarını ayıklamak için yönetici grubunun bir parçası olması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[En iyi güvenlik uygulamaları](security-best-practices-for-cpp.md)
+[En Iyi güvenlik uygulamaları](security-best-practices-for-cpp.md)

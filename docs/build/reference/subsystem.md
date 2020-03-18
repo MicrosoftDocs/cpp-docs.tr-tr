@@ -2,18 +2,18 @@
 title: /SUBSYSTEM
 ms.date: 11/04/2016
 f1_keywords:
-- /subsystem
+- /subsystem_editbin
 helpviewer_keywords:
 - /SUBSYSTEM editbin option
 - -SUBSYSTEM editbin option
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-ms.openlocfilehash: e67ec57c3a8d74fdd97a94ed04c29cad53af1ea5
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 708bfcce3e6d6616116bcc08441f374b46914c82
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450735"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438869"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 
@@ -27,47 +27,47 @@ Yürütülebilir görüntü için gereken yürütme ortamını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, işletim sistemi yürütme için çağrılacak alt sistemini belirtmek için görüntü düzenler.
+Bu seçenek görüntüyü, işletim sisteminin yürütme için hangi alt sistemi çağırmak gerektiğini belirtecek şekilde düzenler.
 
-Aşağıdaki alt sistemlerden istediğinizi belirleyebilirsiniz:
+Aşağıdaki alt sistemlerden herhangi birini belirtebilirsiniz:
 
 **BOOT_APPLICATION**<br/>
 Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [BCD WMI sağlayıcısı hakkında](/previous-versions/windows/desktop/bcd/about-bcd).
 
-**KONSOLU**<br/>
-Windows karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar.
+**KONSOLA**<br/>
+Bir Windows karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar.
 
 **EFI_APPLICATION**<br/>
 **EFI_BOOT_SERVICE_DRIVER**<br/>
 **EFI_ROM**<br/>
 **EFI_RUNTIME_DRIVER**<br/>
-Genişletilebilir Bellenim Arabirimi (EFI) görüntüsü
+Genişletilebilir Bellenim Arabirimi (EFı) görüntüsü
 
-EFI alt seçenekleri, Genişletilebilir Bellenim Arabirimi ortamında çalışan yürütülebilir resimleri açıklar. Bu ortam genellikle donanımla birlikte sağlanır ve işletim sistemi yüklenmeden önce yürütülür. EFI resim türleri arasındaki başlıca farklar şunlardır: görüntünün yüklendiği bellek konumu ve resim çağrısı döndüğünde alınmış eylemi. Denetimi geri döndüğünde, efı_applıcatıon görüntüsü kaldırılır. Efı_boot_servıce_drıver veya efı_runtıme_drıver yalnızca denetim bir hata koduyla döndüğünde kaldırılır. Efı_rom görüntüsü ROM'dan yürütülür. Daha fazla bilgi için bakın [birleşik EFI Forumu](https://www.uefi.org/) Web sitesi.
+EFı alt sistem seçenekleri, Genişletilebilir Bellenim Arabirimi ortamında çalışan yürütülebilir görüntüleri anlatmaktadır. Bu ortam genellikle donanımla birlikte sağlanır ve işletim sistemi yüklenmeden önce yürütülür. EFı görüntü türleri arasındaki önemli farklılıklar, görüntünün yüklendiği bellek konumudur ve görüntüye yapılan çağrı döndürüldüğünde gerçekleştirilecek eylemdir. Denetim döndüğünde EFI_APPLICATION bir görüntü kaldırılır. Bir EFI_BOOT_SERVICE_DRIVER veya EFI_RUNTIME_DRIVER yalnızca denetim bir hata koduyla döndürülürse kaldırılır. ROM 'dan bir EFI_ROM görüntüsü yürütülür. Daha fazla bilgi için bkz. [BIRLEŞIK EFI Forumu](https://www.uefi.org/) Web sitesindeki özellikler.
 
-**YEREL**<br/>
-Bir alt sistem ortamı olmadan çalışan kod — Örneğin, kernel modlu cihaz sürücüleri ve yerel sistem işlemleri. Bu seçenek genelde Windows Sistem özellikleri için ayrılmıştır.
+**Yerel**<br/>
+Bir alt sistem ortamı olmadan çalışan kod (örneğin, çekirdek modu cihaz sürücüleri ve yerel sistem süreçler). Bu seçenek, genellikle Windows sistem özellikleri için ayrılmıştır.
 
-**POSIX**<br/>
-Windows, POSIX alt sisteminde çalışan bir uygulama.
+**OF**<br/>
+Windows 'daki POSIX alt sisteminde çalışan bir uygulama.
 
-**WINDOWS**<br/>
-Windows grafik ortamında çalışan bir uygulama. Bu, hem Masaüstü uygulamaları hem de Evrensel Windows Platformu (UWP) uygulamaları içerir.
+**PENCERELERIN**<br/>
+Windows grafik ortamında çalışan bir uygulama. Bu, hem masaüstü uygulamaları hem de Evrensel Windows Platformu (UWP) uygulamalarını içerir.
 
-**WINDOWSCE**<br/>
-WINDOWSCE alt sistemi, uygulamanın Windows CE çekirdeği sürümüne sahip bir cihazda çalıştırılacak amaçlandığını gösterir. Çekirdek sürümleri PocketPC, Windows Mobile, Windows Phone 7, Windows CE V1.0-6.0R3 ve Windows Embedded Compact 7 içerir.
+**WıNDOWSCE**<br/>
+WINDOWSCE alt sistemi, uygulamanın Windows CE çekirdek sürümü olan bir cihazda çalıştırmak için tasarlanan olduğunu gösterir. Çekirdek sürümleri şunlardır PocketPC, Windows Mobile, Windows Phone 7, Windows CE V 1.0-6.0 R3 ve Windows Embedded Compact 7.
 
-İsteğe bağlı `major` ve `minor` değerleri belirtilen alt sistemin gerekli en düşük sürümü belirtin:
+İsteğe bağlı `major` ve `minor` değerleri, belirtilen alt sistemin gerekli en düşük sürümünü belirtir:
 
-- Sürüm numarasının tam sayı bölümü — bölümü Ondalık ayırıcının solundaki — tarafından temsil edilen `major`.
+- Sürüm numarasının tamamı (ondalık noktanın solundaki bölüm) `major`ile temsil edilir.
 
-- Sürüm numarasının kesirli bölümü — bölümü ondalık noktanın sağındaki — tarafından temsil edilen `minor`.
+- Sürüm numarasının kesirli bölümü — ondalık noktanın sağ tarafında bulunan bölüm, `minor`ile temsil edilir.
 
-- Değerlerini `major` ve `minor` 0 ile 65.535 arasında olmalıdır.
+- `major` ve `minor` değerleri 0 ile 65.535 arasında olmalıdır.
 
-Başlangıç adresi program için varsayılan alt sistem seçimi etkiler. Daha fazla bilgi için [/Entry (giriş noktası simgesi)](entry-entry-point-symbol.md), bağlayıcı/Entry:*işlevi* seçeneği.
+Alt sistem seçimi programın varsayılan başlangıç adresini etkiler. Daha fazla bilgi için bkz. [/Entry (giriş noktası simgesi)](entry-entry-point-symbol.md), bağlayıcı/entry:*işlev* seçeneği.
 
-Her alt sistemin büyük ve küçük sürüm numaraları için minimum ve varsayılan değerler dahil olmak üzere daha fazla bilgi için bkz. [/Subsystem](subsystem-specify-subsystem.md) bağlayıcı seçeneği.
+Her alt sistem için birincil ve ikincil sürüm numaraları için en düşük ve varsayılan değerler de dahil olmak üzere daha fazla bilgi için [/Subsystem](subsystem-specify-subsystem.md) bağlayıcı seçeneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -2,18 +2,17 @@
 title: code_seg pragması
 ms.date: 08/29/2019
 f1_keywords:
-- code_seg_CPP
 - vc-pragma.code_seg
 helpviewer_keywords:
 - pragmas, code_seg
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-ms.openlocfilehash: 0144b3ed220c39cd30aeb8e53bc2aa3c0381b668
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 65d702273593dc7fba68cc040f700b01a2c5e4a7
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218318"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446487"
 ---
 # <a name="code_seg-pragma"></a>code_seg pragması
 
@@ -26,13 +25,13 @@ ms.locfileid: "70218318"
 
 ### <a name="parameters"></a>Parametreler
 
-**hareketle**\
+**gönderim**\
 Seçim İç derleyici yığınına bir kayıt koyar. **Gönderim** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir.
 
-**cağımız**\
+**pop**\
 Seçim İç derleyici yığınının en üstünden bir kaydı kaldırır. Bir **pop** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir. *Tanımlayıcıyı*kullanarak yalnızca bir **pop** komutu kullanarak birden çok kayıt ekleyebilirsiniz. *Bölüm adı* , pop 'tan sonra etkin metin bölümü adı olur.
 
-*Tanımlayıcısını*\
+*tanımlayıcı*\
 Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. Pop ile kullanıldığında, *tanımlayıcı* kaldırılana kadar yönerge, iç yığının içinden **açılır**. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
 
 "*bölüm-adı*" \
@@ -45,7 +44,7 @@ Seçim Yoksayıldı, ancak sürüm 2,0 ' den önceki Microsoft C++ sürümleriyl
 
 Bir nesne dosyasındaki *bölüm* , bir birim olarak belleğe yüklenen adlandırılmış veri bloğudur. Bir *metin bölümü* , yürütülebilir kod içeren bir bölümdür. Bu makalede, koşullar *segmenti* ve *bölümü* aynı anlama sahiptir.
 
-**Code_seg** pragma yönergesi derleyiciye, sonraki tüm nesne kodunu çeviri biriminden *bölüm adı*adlı bir metin bölümüne koymasını söyler. Varsayılan olarak, bir nesne dosyasındaki işlevler için kullanılan metin bölümü adlandırılır `.text`. *Bölüm adı* parametresi olmayan bir `.text` **code_seg** pragma yönergesi, sonraki nesne kodunun metin bölümü adını olarak sıfırlar.
+**Code_seg** pragma yönergesi derleyiciye, sonraki tüm nesne kodunu çeviri biriminden *bölüm adı*adlı bir metin bölümüne koymasını söyler. Varsayılan olarak, bir nesne dosyasındaki işlevler için kullanılan metin bölümü `.text`olarak adlandırılır. *Bölüm adı* parametresi olmayan **code_seg** pragma yönergesi, sonraki nesne kodu için metin bölümü adını `.text`olarak sıfırlar.
 
 **Code_seg** pragma yönergesi, Örneklenmiş şablonlar için oluşturulan nesne kodunun yerleşimini denetlemez. Ayrıca, özel üye işlevleri gibi derleyici tarafından örtülü olarak oluşturulan kodu denetler. Bu kodu denetlemek için, bunun yerine [__declspec (code_seg (...))](../cpp/code-seg-declspec.md) özniteliğini kullanmanızı öneririz. Derleyicinin ürettiği kod dahil olmak üzere tüm nesne kodunun yerleştirilmesi üzerinde denetim sağlar.
 

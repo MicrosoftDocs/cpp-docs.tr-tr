@@ -1,19 +1,17 @@
 ---
 title: EOF, WEOF
 ms.date: 11/04/2016
-f1_keywords:
-- EOF
 helpviewer_keywords:
 - EOF function
 - WEOF function
 - end of file
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
-ms.openlocfilehash: f00c4003afebad580bd2ea5d6853edc3ca6e8c73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ccb97b55cb61bd42d0487b22bd3e01413444ad3
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344077"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438435"
 ---
 # <a name="eof-weof"></a>EOF, WEOF
 
@@ -25,9 +23,9 @@ ms.locfileid: "62344077"
 
 ## <a name="remarks"></a>Açıklamalar
 
-EOF bir g/ç yordam tarafından döndürülen zaman son dosya (veya bazı durumlarda, bir hata) karşılaşıldı.
+Dosya sonu (veya bazı durumlarda bir hata) ile karşılaşıldığında, EOF bir g/ç yordamıyla döndürülür.
 
-WEOF türünün dönüş değerini verir **wint_t**geniş bir akışın sonuna sinyali veya bir hata durumu bildirmek için kullanılır.
+WEOF, geniş bir akışın sonuna işaret etmek veya bir hata koşulunu bildirmek için kullanılan **wint_t**türündeki dönüş değerini verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

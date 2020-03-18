@@ -1,8 +1,6 @@
 ---
 title: CObject'ten Sınıf Türetme
 ms.date: 11/04/2016
-f1_keywords:
-- CObject
 helpviewer_keywords:
 - DECLARE_DYNCREATE macro [MFC]
 - DECLARE_SERIAL macro [MFC]
@@ -13,55 +11,55 @@ helpviewer_keywords:
 - CObject class [MFC], deriving serializable classes
 - CObject class [MFC], deriving from
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
-ms.openlocfilehash: 26fdab5165ca098c5d7813ebf44983c261094449
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 860af88512acb33ff3035b3a04609165953d80a8
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152067"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446967"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 
-Öğesinden bir sınıf türetmek gerekli en azından aşağıdaki adımlar bu makalede [CObject](../mfc/reference/cobject-class.md). Diğer `CObject` sınıfı makaleler özgü avantajlarından yararlanmak için gereken adımları açıklar `CObject` seri hale getirme ve tanılama hata ayıklama desteği gibi özellikleri.
+Bu makalede, [CObject](../mfc/reference/cobject-class.md)'ten bir sınıf türetmek için gereken en düşük adımlar açıklanmaktadır. Diğer `CObject` sınıf makaleleri serileştirme ve tanılama hata ayıklama desteği gibi belirli `CObject` özelliklerden yararlanmak için gereken adımları anlatmaktadır.
 
-İçindeki tartışmalara `CObject`, arabirimi koşulları "file" ve "uygulama dosyası" sıkça kullanılır. Arabirim dosyası (genellikle üst bilgi dosyası adı veya. H dosyası), sınıf bildiriminin ve sınıfını kullanmak için gerekli diğer bilgileri içerir. Uygulama dosyasına (veya. CPP dosyasına) sınıf tanımının yanı sıra, sınıf üyesi işlevleri uygulayan kod içerir. Örneğin, adında bir sınıf için `CPerson`, genellikle kişi adlı bir arabirim dosyası oluşturursunuz. H ile bir uygulama dosyasını kişinin adı. CPP. Ancak, uygulamalar arasında paylaşılmaz bazı küçük sınıfları için bazen tek bir uygulama ve arabirim birleştirmek daha kolay olur. CPP dosyasına.
+`CObject`tartışmalarında, "arabirim dosyası" ve "uygulama dosyası" terimleri sıklıkla kullanılır. Arabirim dosyası (genellikle üstbilgi dosyası veya olarak adlandırılır.) H dosyası) sınıf bildirimini ve sınıfını kullanmak için gereken diğer bilgileri içerir. Uygulama dosyası (veya. CPP dosyası) sınıf tanımının yanı sıra sınıf üye işlevlerini uygulayan kodu içerir. Örneğin, `CPerson`adlı bir sınıf için genellikle kışı adında bir arabirim dosyası oluşturursunuz. H ve Kullanıcı adlı bir uygulama dosyası. CPP. Ancak, uygulamalar arasında paylaşılmayacak bazı küçük sınıflar için, arabirim ve uygulamayı tek bir olarak birleştirmek bazen daha kolay olur. CPP dosyası.
 
-Dört işlev düzeylerinden bir sınıftan türetilirken seçebilirsiniz `CObject`:
+`CObject`bir sınıf türetirken dört işlev düzeyi arasından seçim yapabilirsiniz:
 
-- Temel işlevler: Çalışma süresi sınıf bilgilerine veya seri hale getirme desteği, ancak tanılama bellek yönetimi içerir.
+- Temel işlevsellik: çalışma zamanı sınıf bilgisi veya serileştirme desteği yoktur, ancak tanılama bellek yönetimini içerir.
 
-- Temel işlevlerinin yanı sıra çalışma zamanı sınıf bilgileri için destek.
+- Temel işlevler ve çalışma zamanı sınıf bilgileri desteği.
 
-- Temel işlevlerinin yanı sıra çalışma süresi sınıf bilgilerine ve dinamik oluşturma desteği.
+- Temel işlevler ve çalışma zamanı sınıf bilgileri ve dinamik oluşturma desteği.
 
-- Temel işlevlerinin yanı sıra çalışma süresi sınıf bilgilerine, dinamik oluşturma ve seri hale getirme için destek.
+- Temel işlevler ve çalışma zamanı sınıf bilgileri, dinamik oluşturma ve serileştirme desteği.
 
-Gelecekteki serileştirme gerek uğrarsa yeniden (bunlar daha sonra temel sınıf olarak hizmet verecek) kullanım için tasarlanmış sınıflarını ve çalışma zamanı sınıf seri hale getirme desteği, en az içermelidir.
+Yeniden kullanım için tasarlanan sınıflar (daha sonra temel sınıflar olarak işlev görür), gelecekteki bir serileştirme ihtiyacı varsa, en azından çalışma zamanı sınıfı desteğini ve serileştirme desteğini içermelidir.
 
-İşlevsellik düzeyine bildirimini ve uygulamasını, türetilen sınıfların içindeki belirli bildirimini ve uygulamasını makroları kullanarak seçtiğiniz `CObject`.
+`CObject`türettiğiniz sınıfların bildiriminde ve uygulamasında belirli bildirim ve uygulama makroları kullanarak işlevsellik düzeyini seçersiniz.
 
-Aşağıdaki tablo, seri hale getirme ve çalışma zamanı bilgileri desteklemek için kullanılan makrolar arasındaki ilişkiyi gösterir.
+Aşağıdaki tabloda serileştirme ve çalışma zamanı bilgilerini desteklemek için kullanılan makrolar arasındaki ilişki gösterilmektedir.
 
-### <a name="macros-used-for-serialization-and-run-time-information"></a>Seri hale getirme ve çalışma zamanı bilgileri için kullanılan makrolar
+### <a name="macros-used-for-serialization-and-run-time-information"></a>Serileştirme ve çalışma zamanı bilgileri için kullanılan makrolar
 
-|Kullanılan makrosu|CObject::IsKindOf|CRuntimeClass::<br /><br /> CreateObject|CArchive::operator >><br /><br /> CArchive::operator <<|
+|Kullanılan makro|CObject:: IsKindOf|CRuntimeClass::<br /><br /> CreateObject|CArchive:: operator > ><br /><br /> CArchive:: operator < <|
 |----------------|-----------------------|--------------------------------------|-------------------------------------------------------|
-|Temel `CObject` işlevi|Hayır|Hayır|Hayır|
-|`DECLARE_DYNAMIC`|Evet|Hayır|Hayır|
-|`DECLARE_DYNCREATE`|Evet|Evet|Hayır|
-|`DECLARE_SERIAL`|Evet|Evet|Evet|
+|Temel `CObject` işlevselliği|Hayır|Hayır|Hayır|
+|`DECLARE_DYNAMIC`|Yes|Hayır|Hayır|
+|`DECLARE_DYNCREATE`|Yes|Yes|Hayır|
+|`DECLARE_SERIAL`|Yes|Yes|Yes|
 
-#### <a name="to-use-basic-cobject-functionality"></a>Temel CObject işlevselliği kullanmak için
+#### <a name="to-use-basic-cobject-functionality"></a>Temel CObject işlevlerini kullanmak için
 
-1. Sizin sınıfınızdan türetmek için normal C++ söz dizimini kullanan `CObject` (veya türetilmiş sınıftan `CObject`).
+1. Sınıfınızı `CObject` ( C++ veya `CObject`türetilmiş bir sınıftan) türetmek için normal sözdizimini kullanın.
 
-   Aşağıdaki örnek, en basit örnekte, bir sınıfın türetme gösterir `CObject`:
+   Aşağıdaki örnek, `CObject`bir sınıfın Türetmenin en basit durumunu göstermektedir:
 
    [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]
 
-Normalde, ancak, bazı geçersiz kılmak isteyebilirsiniz `CObject`ait yeni sınıfınıza ayrıntılarını işlemek için üye işlevleri. Örneğin, genellikle geçersiz kılmak istediğiniz `Dump` işlevi `CObject` sınıfınızın içeriği için hata ayıklama çıktısı sağlamak için. Geçersiz kılma hakkında ayrıntılar için `Dump`, makaleye göz atın [nesne dökümü özelleştirme](/previous-versions/visualstudio/visual-studio-2010/sc15kz85(v=vs.100)). Geçersiz kılmak isteyebilirsiniz `AssertValid` işlevi `CObject` özelleştirilmiş veri üyeleri sınıf nesnelerinin tutarlılığını doğrulamak için sınama sağlamak için. Geçersiz kılma açıklamasını `AssertValid`, bkz: [MFC assert_valıd ve CObject::AssertValid](reference/diagnostic-services.md#assert_valid).
+Ancak, normal olarak, Yeni sınıfınızın özelliklerini işlemek için `CObject`üye işlevlerinin bazılarını geçersiz kılmak isteyebilirsiniz. Örneğin, sınıfınızın içeriği için hata ayıklama çıkışı sağlamak üzere genellikle `CObject` `Dump` işlevini geçersiz kılmak isteyebilirsiniz. `Dump`geçersiz kılma hakkında daha fazla bilgi için, [nesne dökümü özelleştirmesi](/previous-versions/visualstudio/visual-studio-2010/sc15kz85(v=vs.100))makalesine bakın. Ayrıca, sınıf nesnelerinin veri üyelerinin tutarlılığını doğrulamak üzere özelleştirilmiş test sağlamak için `CObject` `AssertValid` işlevini geçersiz kılmak isteyebilirsiniz. `AssertValid`nasıl geçersiz kılabileceğiniz hakkında bir açıklama için bkz. [MFC ASSERT_VALID ve CObject:: AssertValid](reference/diagnostic-services.md#assert_valid).
 
-Makaleyi [düzeyleri işlevi belirterek](../mfc/specifying-levels-of-functionality.md) işlevsellik, çalışma zamanı sınıf bilgileri, dinamik Nesne oluşturma ve seri hale getirme gibi diğer düzeylerini belirtin açıklar.
+[Işlev düzeylerini belirleyen](../mfc/specifying-levels-of-functionality.md) makale, çalışma zamanı sınıf bilgileri, dinamik nesne oluşturma ve serileştirme dahil diğer işlevsellik düzeylerinin nasıl belirtileceğini açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

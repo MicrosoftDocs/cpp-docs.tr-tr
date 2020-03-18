@@ -4,16 +4,16 @@ ms.date: 04/22/2019
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: 7e0a2d9a342446acbb62ea64031e84e03855e026
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: bf42981396abf8e91077da5c1cc1f180891d2a63
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630815"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446557"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
-Derleyici, [/WV](../../build/reference/compiler-option-warning-level.md) derleyici seçeneğini kullanarak, belirttiğiniz sürümden sonra tanıtılan uyarıları engelleyebilir. Bu seçenek, yeni bir araç takımı sürümü oluştururken derleme işleminizi yönetmek ve yeni uyarıları geçici olarak gizlemek istediğinizde yararlıdır. Bu seçenek yalnızca uyarıları göstermez, yeni hata iletileri göstermez. Tüm yeni uyarıları kalıcı olarak göstermez! Her zaman en yüksek düzenli uyarı düzeyinde `/W4`derleme yapmanız ve derlemenizde `/Wv` seçeneği pratik olarak kaldırmanız önerilir.
+Derleyici, [/WV](../../build/reference/compiler-option-warning-level.md) derleyici seçeneğini kullanarak, belirttiğiniz sürümden sonra tanıtılan uyarıları engelleyebilir. Bu seçenek, yeni bir araç takımı sürümü oluştururken derleme işleminizi yönetmek ve yeni uyarıları geçici olarak gizlemek istediğinizde yararlıdır. Bu seçenek yalnızca uyarıları göstermez, yeni hata iletileri göstermez. Tüm yeni uyarıları kalıcı olarak göstermez! Her zaman en yüksek düzenli uyarı düzeyinde derleme yapmanız önerilir `/W4`ve `/Wv` seçeneğini pratik olarak en kısa sürede kaldırdık.
 
 Derleyicinin bu sürümleri yeni uyarılar sunmuştur:
 
@@ -39,15 +39,15 @@ Derleyicinin bu sürümleri yeni uyarılar sunmuştur:
 | Visual Studio 2017 sürüm 15,9 | 19.16.26926.0 |
 | Visual Studio 2019 RTM | 19.20.27004.0 |
 
-`/Wv` Seçeneğe yalnızca büyük sayıyı, büyük ve küçük rakamları veya ana, alt ve yapı numaralarını belirtebilirsiniz. Derleyici, belirtilen sayıyla başlayan sürümlerle eşleşen tüm uyarıları raporlar ve belirtilen sayıdan daha büyük sürümlere ait tüm uyarıları bastırır. Örneğin, `/Wv:17` Visual Studio 2012 ' nin herhangi bir sürümünde veya üzerinde tanıtılan uyarıları raporlar ve Visual Studio 2013 (sürüm 18) veya daha sonraki bir derleyici tarafından tanıtılan uyarıları göstermez. Visual Studio 2015 güncelleştirme 2 ve sonrasında tanıtılan uyarıları gizlemek için kullanabilirsiniz `/Wv:19.00.23506`. Visual `/Wv:19.11` Studio 2017 sürüm 15,5 ' den önceki herhangi bir Visual Studio sürümünde tanıtılan uyarıları raporlamak için kullanın, ancak Visual Studio 2017 sürüm 15,5 ve sonrasında sunulan uyarıları gizleyin.
+`/Wv` seçeneğine yalnızca büyük sayıyı, büyük ve küçük rakamları veya ana, alt ve yapı numaralarını belirtebilirsiniz. Derleyici, belirtilen sayıyla başlayan sürümlerle eşleşen tüm uyarıları raporlar ve belirtilen sayıdan daha büyük sürümlere ait tüm uyarıları bastırır. Örneğin, Visual Studio 2012 ' nin herhangi bir sürümünde veya üzerinde tanıtılan uyarıları `/Wv:17` ve Visual Studio 2013 (sürüm 18) veya daha sonraki bir derleyici tarafından tanıtılan uyarıları göstermez. Visual Studio 2015 güncelleştirme 2 ve sonrasında tanıtılan uyarıları gizlemek için `/Wv:19.00.23506`kullanabilirsiniz. Visual Studio 2017 sürüm 15,5 ' den önceki herhangi bir Visual Studio sürümünde tanıtılan uyarıları raporlamak için `/Wv:19.11` kullanın, ancak Visual Studio 2017 sürüm 15,5 ve sonrasında sunulan uyarıları gizleyin.
 
-Aşağıdaki bölümlerde, Visual bir görsel C++ sürümü tarafından tanıtılan ve `/Wv` derleyici seçeneğini kullanarak bastırdığınızda oluşan uyarılar listelenmektedir. Bu `/Wv` seçenek, belirtilen derleyicinin sürümlerinin ön tarihini belirleyen, listelenmeyen uyarıları göstermez.
+Aşağıdaki bölümlerde, `/Wv` derleyici seçeneğini kullanarak gizleyerek, her görsel C++ sürümü tarafından tanıtılan uyarılar listelenmektedir. `/Wv` seçeneği, belirtilen derleyicinin sürümlerinin ön tarihini içeren, listelenmeyen uyarıları göstermez.
 
 ::: moniker range=">= vs-2019"
 
 ## <a name="warnings-introduced-in-visual-studio-2019-rtw-compiler-version-1920270040"></a>Visual Studio 2019 RTW 'da tanıtılan uyarılar (derleyici sürümü 19.20.27004.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.15`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.15`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-158-compiler-version-1915267260"></a>Visual Studio 2017 sürüm 15,8 ' de tanıtılan uyarılar (derleyici sürümü 19.15.26726.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.14`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.14`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -85,7 +85,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-157-compiler-version-1914264280"></a>Visual Studio 2017 sürüm 15,7 ' de tanıtılan uyarılar (derleyici sürümü 19.14.26428.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.13`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.13`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -94,7 +94,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-156-compiler-version-1913261280"></a>Visual Studio 2017 sürüm 15,6 ' de tanıtılan uyarılar (derleyici sürümü 19.13.26128.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.12`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.12`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -102,7 +102,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-155-compiler-version-1912258300"></a>Visual Studio 2017 sürüm 15,5 ' de tanıtılan uyarılar (derleyici sürümü 19.12.25830.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.11`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.11`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -116,7 +116,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-153-compiler-version-1911255060"></a>Visual Studio 2017 sürüm 15,3 ' de tanıtılan uyarılar (derleyici sürümü 19.11.25506.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.10`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.10`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -138,7 +138,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2017-rtm-compiler-version-1910250170"></a>Visual Studio 2017 RTM 'de tanıtılan uyarılar (derleyici sürümü 19.10.25017.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.00`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.00`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -151,7 +151,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2015-update-3-compiler-version-1900242151"></a>Visual Studio 2015 güncelleştirme 3 ' te tanıtılan uyarılar (derleyici sürümü 19.00.24215.1)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.00.23918`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.00.23918`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -162,7 +162,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2015-update-2-compiler-version-1900239180"></a>Visual Studio 2015 güncelleştirme 2 ' de tanıtılan uyarılar (derleyici sürümü 19.00.23918.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.00.23506`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.00.23506`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -173,7 +173,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2015-update-1-compiler-version-1900235060"></a>Visual Studio 2015 güncelleştirme 1 ' de sunulan uyarılar (derleyici sürümü 19.00.23506.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:19.00.23026`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.00.23026`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -184,7 +184,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2015-rtm-compiler-version-1900230260"></a>Visual Studio 2015 RTM 'de tanıtılan uyarılar (derleyici sürümü 19.00.23026.0)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:18`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:18`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -243,7 +243,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2013-compiler-version-1800210051"></a>Visual Studio 2013 tanıtılan uyarılar (derleyici sürümü 18.00.21005.1)
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:17`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:17`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -272,7 +272,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2012-compiler-version-1700511061"></a>Visual Studio 2012 (derleyici sürümü 17.00.51106.1) içinde tanıtılan uyarılar
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:16`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:16`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -305,7 +305,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 | C4703 | `potentially uninitialized local pointer variable 'name' used` |
 | C4728 | `/Yl- option ignored because PCH reference is required` |
 | C4745 | `volatile access of 'name' cannot be honored due to its size` |
-| C4746|' name ' öğesinin geçici erişimi/volatile: < ISO 'ya tabidir | MS > ayarı; __ıso_volatile_load/Store iç işlevlerini kullanmayı düşünün |
+| C4746| `volatile access of 'name' is subject to /volatile:<iso | ms> setting; consider using __iso_volatile_load/store intrinsic functions` |
 | C4872 | `floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: 'description'` |
 | C4880 | `casting from 'type' to 'type': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function` |
 | C4881 | `the constructor and/or the destructor will not be invoked for tile_static variable 'type'` |
@@ -315,7 +315,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2010-compiler-version-16004021901"></a>Visual Studio 2010 (derleyici sürümü 16.00.40219.01) içinde tanıtılan uyarılar
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:15`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:15`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -331,7 +331,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2008-compiler-version-15002102208"></a>Visual Studio 2008 (derleyici sürümü 15.00.21022.08) içinde tanıtılan uyarılar
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:14`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:14`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -346,7 +346,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2005-compiler-version-140050727762"></a>Visual Studio 2005 (derleyici sürümü 14.00.50727.762) içinde tanıtılan uyarılar
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:13`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:13`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -489,7 +489,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2003-compiler-version-13103077"></a>Visual Studio 2003 (derleyici sürümü 13.10.3077) içinde tanıtılan uyarılar
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:13.00.9466`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:13.00.9466`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -525,7 +525,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 
 ## <a name="warnings-introduced-in-visual-studio-2002-compiler-version-13009466"></a>Visual Studio 2002 (derleyici sürümü 13.00.9466) içinde tanıtılan uyarılar
 
-Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği `/Wv:12`kullanılarak bastırılır.
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:12`derleyici seçeneği kullanılarak bastırılır.
 
 |||
 |-|-|
@@ -677,5 +677,5 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 [C/C++ derleyici ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
 [Derleyici uyarıları C4000-C5999](compiler-warnings-c4000-c5999.md) \
 [/WV derleyici seçeneği](../../build/reference/compiler-option-warning-level.md) \
-[Varsayılan olarak kapalı olan Derleyici Uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) \
+[Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) \
 [warning](../../preprocessor/warning.md)

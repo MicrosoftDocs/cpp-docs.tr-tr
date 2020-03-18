@@ -1,38 +1,36 @@
 ---
 title: CWinApp ve MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
-f1_keywords:
-- CWinApp
 helpviewer_keywords:
 - application wizards [MFC], and CWinApp
 - CWinApp class [MFC], and MFC Application Wizard
 - MFC, wizards
 ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
-ms.openlocfilehash: cb45c8ffae15628b0b99a1ebcd962d88d845f83b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a46842d7b4d6a588da585d63e2ad56982bb0ff8
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241593"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447033"
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp ve MFC Uygulama Sihirbazı
 
-İskelet bir uygulama oluşturduğunda, MFC Uygulama Sihirbazı, bir uygulama sınıfı türetilen bildirir [CWinApp](../mfc/reference/cwinapp-class.md). MFC Uygulama Sihirbazı, aşağıdaki öğeleri içeren bir uygulama dosyasını da oluşturur:
+Bir iskelet uygulaması oluşturduğunda, MFC Uygulama Sihirbazı [CWinApp](../mfc/reference/cwinapp-class.md)'dan türetilmiş bir uygulama sınıfı bildirir. MFC Uygulama Sihirbazı aşağıdaki öğeleri içeren bir uygulama dosyası da oluşturur:
 
-- Uygulama sınıfı için ileti eşlemesi.
+- Uygulama sınıfı için bir ileti eşlemi.
 
-- Bir boş sınıf oluşturucu.
+- Boş bir sınıf Oluşturucusu.
 
-- Değişken yalnızca sınıf nesnesi bildirir.
+- Sınıfın tek ve tek bir nesnesini bildiren bir değişken.
 
-- Standart bir uygulaması, `InitInstance` üye işlevi.
+- `InitInstance` üye işlevinizin standart bir uygulamasıdır.
 
-Proje başlığı ve ana kaynak dosyalarında uygulama sınıfı yerleştirilir. Oluşturulan dosyalar ve sınıf adları MFC Uygulama Sihirbazı'nda sağladığınız proje adı temel alır. Bu sınıfların kodunu görüntülemek için en kolay yolu aracılığıyladır [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).
+Uygulama sınıfı, proje başlığına ve ana kaynak dosyalarına yerleştirilir. Oluşturulan sınıf ve dosyaların adları, MFC Uygulama Sihirbazı 'nda sağladığınız proje adına göre yapılır. Bu sınıfların kodunu görüntülemenin en kolay yolu [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code)kullanmaktır.
 
-Standart uygulamalar ve sağlanan ileti eşlemesi birçok amaç için uygundur, ancak bunları gerektiği şekilde değiştirebilirsiniz. Bu uygulamalar en ilginç `InitInstance` üye işlevi. Genellikle, iskelet uygulanması için kod ekleyeceksiniz `InitInstance`.
+Sağlanan standart uygulamalar ve ileti haritası birçok amaçla yeterlidir, ancak bunları gerektiği gibi değiştirebilirsiniz. Bu uygulamaların en ilginç öğesi `InitInstance` member işlevidir. Genellikle, `InitInstance`iskelet uygulamasına kod ekleyeceksiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)<br/>
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)<br/>
 [Geçersiz Kılınabilir CWinApp Üye İşlevleri](../mfc/overridable-cwinapp-member-functions.md)<br/>
 [Özel CWinApp Hizmetleri](../mfc/special-cwinapp-services.md)

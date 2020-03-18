@@ -9,7 +9,6 @@ f1_keywords:
 - IRowsetInfoImpl.GetProperties
 - ATL::IRowsetInfoImpl::GetProperties
 - IRowsetInfoImpl::GetProperties
-- GetProperties
 - ATL::IRowsetInfoImpl::GetReferencedRowset
 - GetReferencedRowset
 - ATL.IRowsetInfoImpl.GetReferencedRowset
@@ -26,16 +25,16 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: b42ecf6c03dd1023d1ba150d579f77c4bae8998a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7389ba689fb1f371b5fbf73045dcdc78cd465d88
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390730"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446189"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
 
-Bir uygulamasını sağlar [IRowsetInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabirimi.
+[IRowsetInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabirimi için bir uygulama sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,15 +47,15 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IRowsetInfoImpl`.
+*Şı*<br/>
+Sınıfınız `IRowsetInfoImpl`türetilir.
 
 *PropClass*<br/>
-Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.
+Varsayılan olarak *T*olarak kullanılacak kullanıcı tanımlı bir özellik sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** altdb.h
+**Üstbilgi:** altdb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -64,17 +63,17 @@ Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıf�
 
 |||
 |-|-|
-|[GetProperties](#getproperties)|Geçerli ayarları kümesi tarafından desteklenen tüm özellikleri döndürür.|
-|[GetReferencedRowset](#getreferencedrowset)|Bir yer işareti uygulandığı satır kümesi için bir arabirim işaretçisini döndürür.|
-|[GetSpecification](#getspecification)|Bu satır kümesini oluşturan nesnede (komut veya oturumu) bir arabirim işaretçisini döndürür.|
+|[GetProperties](#getproperties)|Satır kümesi tarafından desteklenen tüm özelliklerin geçerli ayarlarını döndürür.|
+|[GetReferencedRowset](#getreferencedrowset)|Bir yer işaretinin uygulandığı satır kümesine bir arabirim işaretçisi döndürür.|
+|[GetSpecification](#getspecification)|Bu satır kümesini oluşturan nesne (komut veya oturum) üzerinde bir arabirim işaretçisi döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Satır kümeleri üzerinde zorunlu bir arabirim. Kullanarak satır kümesi özelliklerini bu sınıfın uyguladığı [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md) komut Sınıfınız içinde tanımlanan. Satır kümesi sınıfı komut sınıf özelliği kullanılmasını ayarlar görünse de, bir komut veya oturum nesnesi oluşturulduğunda satır kümesi kendi çalışma zamanı özellikleri kopyası ile sağlanır.
+Satır kümelerinde zorunlu bir arabirim. Bu sınıf, komut sınıfınıza tanımlanan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md) kullanarak satır kümesi özelliklerini uygular. Satır kümesi sınıfı komut sınıfı ' özellik kümelerini kullanıyor gibi görünse de, satır kümesi bir komut veya oturum nesnesi tarafından oluşturulduğunda çalışma zamanı özelliklerinin kendi kopyasıyla birlikte sağlanır.
 
-## <a name="getproperties"></a> Irowsetınfoımpl::GetProperties
+## <a name="getproperties"></a>IRowsetInfoImpl:: GetProperties
 
-Özellikler için geçerli ayarları döndürür `DBPROPSET_ROWSET` grubu.
+`DBPROPSET_ROWSET` grubundaki özelliklerin geçerli ayarlarını döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -87,11 +86,11 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda*bkz. [IRowsetInfo:: GetProperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) .
 
-## <a name="getreferencedrowset"></a> Irowsetınfoımpl::getreferencedrowset
+## <a name="getreferencedrowset"></a>IRowsetInfoImpl:: GetReferencedRowset
 
-Bir yer işareti uygulandığı satır kümesi için bir arabirim işaretçisini döndürür.
+Bir yer işaretinin uygulandığı satır kümesine bir arabirim işaretçisi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -103,11 +102,11 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) içinde *OLE DB Programcının Başvurusu*. *İOrdinal* parametresi, bir yer işareti sütunu olmalıdır.
+*OLE DB Programcı başvurusunda*bkz. [IRowsetInfo:: GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) . *Iordinal* parametresi bir yer işareti sütunu olmalıdır.
 
-## <a name="getspecification"></a> Irowsetınfoımpl::getspecification
+## <a name="getspecification"></a>IRowsetInfoImpl:: GetSpecification
 
-Bu satır kümesini oluşturan nesnede (komut veya oturumu) bir arabirim işaretçisini döndürür.
+Bu satır kümesini oluşturan nesne (komut veya oturum) üzerinde bir arabirim işaretçisi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -118,11 +117,11 @@ STDMETHOD (GetSpecification )(REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda*bkz. [IRowsetInfo:: GetSpecification](/previous-versions/windows/desktop/ms716746(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanmak [Igetdatasourceımpl](../../data/oledb/igetdatasourceimpl-class.md) veri kaynağı nesnesinden özellikleri alınamadı.
+Veri kaynağı nesnesinden özellikleri almak için bu yöntemi [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) ile birlikte kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

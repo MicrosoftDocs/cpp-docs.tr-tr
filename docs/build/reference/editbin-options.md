@@ -2,17 +2,15 @@
 title: EDITBIN Seçenekleri
 description: Microsoft EDITBIN yardımcı program komut satırı seçeneklerine yönelik başvuru kılavuzu.
 ms.date: 02/09/2020
-f1_keywords:
-- editbin
 helpviewer_keywords:
 - EDITBIN program, options
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
-ms.openlocfilehash: c27172522ceabeccd06d7b957aa791edc49beec8
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 9fd4170e5ee020780963d83936f1a9fd08d2be11
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257708"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439966"
 ---
 # <a name="editbin-options"></a>EDITBIN Seçenekleri
 

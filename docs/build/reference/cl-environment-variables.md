@@ -1,63 +1,61 @@
 ---
 title: CL ortam değişkenleri
 ms.date: 06/06/2019
-f1_keywords:
-- cl
 helpviewer_keywords:
 - INCLUDE environment variable
 - cl.exe compiler, environment variables
 - LIBPATH environment variable
 - environment variables, CL compiler
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
-ms.openlocfilehash: 0f7930728ef1bf6bea50c4388d52d30c569a8795
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: 4d6b1982b1e544459a025d6cb7bee75666e7130e
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821527"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440252"
 ---
 # <a name="cl-environment-variables"></a>CL ortam değişkenleri
 
-CL Aracı'nı aşağıdaki ortam değişkenleri kullanır:
+CL aracı aşağıdaki ortam değişkenlerini kullanır:
 
-- CL ve \_tanımlanmışsa CL_. CL araç seçenekleri ve komut satırı bağımsız değişkenleri için CL ortam değişkeninde tanımlanan değişkenleri ekler ve seçenekleri ekler ve bağımsız değişkenler tanımlanan \_CL_, işlemeden önce.
+- Tanımlı ise CL ve \_CL_. CL Aracı, CL ortam değişkeninde tanımlanan seçenekleri ve bağımsız değişkenleri komut satırı bağımsız değişkenlerine ekler ve işlemeden önce \_CL_ tanımlanan seçenekleri ve bağımsız değişkenleri ekler.
 
-- , Visual Studio yüklemenizin \include alt dizinine işaret etmelidir içerir.
+- INCLUDE, Visual Studio yüklemenizin \ınclude alt dizinine işaret etmelidir.
 
-- İle başvurulan meta veri dosyaları için aranacak dizinleri belirtir, LIBPATH [#using](../../preprocessor/hash-using-directive-cpp.md). LIBPATH hakkında daha fazla bilgi için bkz. [#using](../../preprocessor/hash-using-directive-cpp.md).
+- LIBPATH, [#using](../../preprocessor/hash-using-directive-cpp.md)başvurulan meta veri dosyaları için arama yapılacak dizinleri belirtir. LıBPATH hakkında daha fazla bilgi için bkz. [#using](../../preprocessor/hash-using-directive-cpp.md).
 
-CL ayarlayabilirsiniz veya \_CL_ ortam değişkeni sözdizimini kullanarak:
+Aşağıdaki sözdizimini kullanarak CL veya \_CL_ ortam değişkenini ayarlayabilirsiniz:
 
-> AYARLAMA CL = [[*seçeneği*]... [*dosya*]...] [/ link *bağlantı iyileştirilmiş* ...] \
-> AYARLAMA \_CL\_= [[*seçeneği*]... [*dosya*]...] [/ link *bağlantı iyileştirilmiş* ...]
+> SET CL = [[*seçenek*]... [*Dosya*]...] [/link *bağlantısı-opt* ...] \
+> \_CL\_= [[*seçenek*] öğesini ayarlayın... [*Dosya*]...] [/link *bağlantısı-opt* ...]
 
-CL bağımsız değişkenleri hakkında ayrıntılı bilgi için ve \_CL_ ortam değişkenlerini bkz [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md).
+CL ve \_CL_ ortam değişkenlerine yönelik bağımsız değişkenlerle ilgili ayrıntılar için bkz. [MSVC derleyicisi komut satırı sözdizimi](compiler-command-line-syntax.md).
 
-Bu ortam değişkenleri, dosyaları ve en sık kullandığınız seçenekleri tanımlamak için kullanabilirsiniz. Ardından, daha fazla dosya ve Seçenekler belirli amaçlar için CL öğesine vermek için komut satırını kullanın. CL ve \_CL_ ortam değişkenlerini (komut satırı giriş sınırı) 1024 karakterle sınırlıdır.
+En sık kullandığınız dosya ve seçenekleri tanımlamak için bu ortam değişkenlerini kullanabilirsiniz. Daha sonra belirli amaçlarla CL için daha fazla dosya ve seçenek sağlamak üzere komut satırını kullanın. CL ve \_CL_ ortam değişkenleri 1024 karakterle sınırlıdır (komut satırı giriş sınırı).
 
-Kullanamazsınız [/D](d-preprocessor-definitions.md) kullanan bir eşittir işareti simge tanımlamak için seçeneği ( **=** ). Bunun yerine, numara işareti kullanabilirsiniz ( **#** ) için eşittir. Bu şekilde, CL kullanabilirsiniz veya \_açık değerlerle önişlemci sabitleri tanımlamak için ortam değişkenlerini CL_ — Örneğin, `/DDEBUG#1` tanımlamak için `DEBUG=1`.
+Eşittir işareti ( **=** ) kullanan bir sembol tanımlamak için [/d](d-preprocessor-definitions.md) seçeneğini kullanamazsınız. Bunun yerine, eşittir işareti için sayı işaretini ( **#** ) kullanabilirsiniz. Bu şekilde, (örneğin, `DEBUG=1`tanımlamak için `/DDEBUG#1`) açık değerlerle Önişlemci sabitlerini tanımlamak için CL veya \_CL_ ortam değişkenlerini kullanabilirsiniz.
 
-İlgili bilgiler için bkz. [ortam değişkenlerini ayarlamak](../setting-the-path-and-environment-variables-for-command-line-builds.md).
+İlgili bilgiler için bkz. [ortam değişkenlerini ayarlama](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki komut, CL ortam değişkenini ayarlayarak, bir örnek verilmiştir:
+Aşağıdaki komut, CL ortam değişkenini ayarlamaya yönelik bir örnektir:
 
-> SET CL=/Zp2 /Ox /I\INCLUDE\MYINCLS \LIB\BINMODE.OBJ
+> SET CL =/ZP2/Ox/I\INCLUDE\MYINCLS \LIB\BINMODE. NESNESI
 
-CL ortam değişkeni ayarlandığında, girerseniz `CL INPUT.C` etkili komut komut satırında olur:
+CL ortam değişkeni ayarlandığında, komut satırına `CL INPUT.C` girerseniz, etkin komut şu şekilde olur:
 
-> CL /Zp2 /Ox /I\INCLUDE\MYINCLS \LIB\BINMODE.OBJ INPUT.C
+> CL/ZP2/Ox/I\ıNCLUDE\MYINCLS \LIB\BINMODE. OBJ GIRIŞI. ,
 
-Aşağıdaki örnek, FILE1.c ve FILE2.c kaynak dosyalarını derlemek ve ardından nesne dosyaları FILE1.obj FILE2.obj ve FILE3.obj bağlamak bir düz CL komut neden olur:
+Aşağıdaki örnek, düz bir CL komutunun FıLE1. c ve DOSYA2. c kaynak dosyalarını derlemesine ve sonra FıLE1. obj, DOSYA2. obj ve FILE3. obj nesne dosyalarını bağlantılandırmasına neden olur:
 
-> KÜMESİ CL = FILE1'DE. C DOSYA2. C \
-> SET \_CL_=FILE3.OBJ \
+> CL = FıLE1 AYARLAYıN. C DOSYA2. ,
+> \_CL_ = FILE3 AYARLAYıN. Nesnesi
 > CL
 
-Bu ortam değişkenlerini şu komut satırı ile aynı etkiye sahip CL çağrısı yapın:
+Bu ortam değişkenleri, CL çağrısının aşağıdaki komut satırıyla aynı etkiye sahip olmasını sağlar:
 
-> CL FILE1.C FILE2.C FILE3.OBJ
+> CL FıLE1. C DOSYA2. C FILE3. NESNESI
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: a7bb3ab5ed292cef8108e937e67bc9e2ccc1ebce
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 0740ad024e0ca7fd56ecf9178ca57b22dc66b79e
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421298"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445700"
 ---
 # <a name="icommandui-interface"></a>Iommanduı arabirimi
 
@@ -35,7 +35,7 @@ interface class ICommandUI
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[icommandui__Check](#check)|Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
 |[Iommanduı:: Devamsallama](#continuerouting)|Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.|
@@ -60,6 +60,7 @@ Kullanıcı arabirimi komutlarının MFC 'de nasıl yönetildiği hakkında daha
 ## <a name="check"></a>ICommandUI:: Check
 
 Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
+
 ```
 property UICheckState Check;
 ```
@@ -74,6 +75,7 @@ Bu özellik, bu komut için Kullanıcı arabirimi öğesini uygun denetim durumu
 ## <a name="continuerouting"></a>Iommanduı:: Devamsallama
 
 Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.
+
 ```
 void ContinueRouting();
 ```
@@ -85,6 +87,7 @@ Bu, FALSE döndüren bir ON_COMMAND_EX işleyicisiyle birlikte kullanılması ge
 ## <a name="enabled"></a>Iommanduı:: etkin
 
 Bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır.
+
 ```
 property bool Enabled;
 ```
@@ -96,6 +99,7 @@ Bu özellik, bu komut için Kullanıcı arabirimi öğesini etkinleştirilir vey
 ## <a name="id"></a>Iommanduı:: ID
 
 Iommandui nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin KIMLIĞINI alır.
+
 ```
 property unsigned int ID;
 ```
@@ -107,6 +111,7 @@ Bu özellik, bir menü öğesi, araç çubuğu düğmesi veya ıcommandui nesnes
 ## <a name="index"></a>Iommanduı:: Index
 
 Iommandui nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır.
+
 ```
 property unsigned int Index;
 ```
@@ -118,6 +123,7 @@ Bu özellik, bir menü öğesi, araç çubuğu düğmesi veya ıcommandui nesnes
 ## <a name="radio"></a>Iommanduı:: Radio
 
 Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
+
 ```
 property bool Radio;
 ```
@@ -129,6 +135,7 @@ Bu özellik, bu komut için Kullanıcı arabirimi öğesini uygun denetim durumu
 ## <a name="text"></a>ICommandUI:: metin
 
 Bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar.
+
 ```
 property String^ Text;
 ```

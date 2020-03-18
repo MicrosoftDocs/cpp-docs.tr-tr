@@ -3,12 +3,12 @@ title: CppProperties. JSON başvurusu
 ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
-ms.openlocfilehash: d59fca412a26d08f88ccbda20a2c0444cf33b1cb
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: c276b566d8efc116c8789fd7ebec17dc2017a00d
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417371"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442561"
 ---
 # <a name="cpppropertiesjson-reference"></a>CppProperties. JSON başvurusu
 
@@ -28,7 +28,7 @@ Bir yapılandırma aşağıdaki özelliklerden herhangi birine sahip olabilir:
 |`forcedInclude`|Her derleme birimine otomatik olarak dahil edilecek üst bilgi (MSVC veya Clang için-include için/FI 'e eşlenir)|
 |`undefines`|Tanımsız olacak makroların listesi (MSVC için/U ile eşlenir)|
 |`intelliSenseMode`|Kullanılacak IntelliSense altyapısı. MSVC, GCC veya Clang için önceden tanımlanmış mimariye özgü çeşitlerden birini belirtebilirsiniz.|
-|`environments`|Bir komut isteminde ortam değişkenleri gibi davranan ve $ {env.<VARIABLE>} ile erişilen değişkenlerin Kullanıcı tanımlı kümesi makroya.|
+|`environments`|Bir komut isteminde ortam değişkenleri gibi davranan ve $ {env.\<VARIABLE >} makrosu ile erişilen değişkenlerin Kullanıcı tanımlı kümesi.|
 
 ### <a name="intellisensemode-values"></a>ıntellisensemode değerleri
 
@@ -162,7 +162,7 @@ Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve di
 
 İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++ C/**  > **Gelişmiş** ' e giderek ve **günlük kaydını** **true**olarak ayarlayarak sorun gidermeye devam edebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
 
-![Tanılama günlükleri](media/diagnostic-logging.png)
+![Tanılama günlüğüne kaydetme](media/diagnostic-logging.png)
 
 Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster C++ : görsel günlük**' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 

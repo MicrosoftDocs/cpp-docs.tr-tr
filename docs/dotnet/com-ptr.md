@@ -3,20 +3,20 @@ title: com::ptr
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
-- ptr
+- msclr/com/com::ptr
 helpviewer_keywords:
 - com::ptr
 ms.assetid: ee302e3c-8fed-4875-a372-2e55003718d3
-ms.openlocfilehash: 74e168fe916b930e499a82ca3fcf5c7d0d669719
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 993511142b72bd769fe8582b2650e5d020bd6ce2
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209210"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446259"
 ---
 # <a name="comptr"></a>com::ptr
 
-Bir CLR sınıfının bir üyesi kullanılabilecek bir COM nesnesi için bir sarmalayıcı. Sarmalayıcı da yok edici çağrıldığında nesne üzerinde sahip olunan başvuruları serbest COM nesnesi ömrü yönetimini otomatikleştirir. Alınmak üzere [CComPtr sınıfı](../atl/reference/ccomptr-class.md).
+Bir CLR sınıfının üyesi olarak kullanılabilecek COM nesnesi için sarmalayıcı. Sarmalayıcı aynı zamanda COM nesnesinin yaşam süresi yönetimini de otomatikleştirir ve yok edicisi çağrıldığında nesneye ait başvuruları serbest bırakır. [CComPtr sınıfına](../atl/reference/ccomptr-class.md)benzer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,7 +26,7 @@ Bir CLR sınıfının bir üyesi kullanılabilecek bir COM nesnesi için bir sar
 
 ## <a name="remarks"></a>Açıklamalar
 
-[com::PTR sınıfı](../dotnet/com-ptr-class.md) tanımlanan \<msclr\com\ptr.h > dosya.
+[com::p tr sınıfı](../dotnet/com-ptr-class.md) \<msclr\com\ptr.h > dosyasında tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

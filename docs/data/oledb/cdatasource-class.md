@@ -18,7 +18,6 @@ f1_keywords:
 - ATL.CDataSource.GetProperties
 - CDataSource.GetProperties
 - ATL::CDataSource::GetProperties
-- GetProperties
 - ATL::CDataSource::GetProperty
 - ATL.CDataSource.GetProperty
 - CDataSource.GetProperty
@@ -57,12 +56,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: 3cb522d1f6ed256f8e042bc2f978e8bc5100888c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d97138b548a3e303898ee2bafde88af38aa78f40
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501403"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445304"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
@@ -84,11 +83,11 @@ class CDataSource
 
 |||
 |-|-|
-|[Kapat](#close)|Bağlantıyı kapatır.|
+|[~Eksik](#close)|Bağlantıyı kapatır.|
 |[Getınitializationstring](#getinitializationstring)|Şu anda açık olan veri kaynağının başlatma dizesini alır.|
 |[GetProperties](#getproperties)|Bağlı veri kaynağı için şu anda ayarlanmış olan özelliklerin değerlerini alır.|
 |[GetProperty](#getproperty)|Bağlı veri kaynağı için şu anda ayarlanmış olan tek bir özelliğin değerini alır.|
-|[açın](#open)|`CLSID` ,`ProgID` Ya`CEnumerator` da çağıran tarafından sağlanmış bilinen bir ad kullanarak bir sağlayıcıya (veri kaynağı) bir bağlantı oluşturur.|
+|[Açın](#open)|`CLSID`, `ProgID`ya da çağıran tarafından sağlanmış bir `CEnumerator` bilinen adı kullanarak bir sağlayıcıya (veri kaynağı) bir bağlantı oluşturur.|
 |[OpenFromFileName](#openfromfilename)|Kullanıcı tarafından sağlanan dosya adı tarafından belirtilen bir dosyadaki veri kaynağını açar.|
 |[OpenFromInitializationString](#openfrominitializationstring)|Bir başlatma dizesi tarafından belirtilen veri kaynağını açar.|
 |[OpenWithPromptFileName](#openwithpromptfilename)|Kullanıcının, ilgili veri kaynağını açmak için önceden oluşturulmuş bir veri bağlantısı dosyası seçmesine izin verir.|
@@ -96,13 +95,13 @@ class CDataSource
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabilir. Bu oturumlar tarafından `CSession`temsil edilir. İle`CSession::Open`oturum oluşturmadan önce bağlantıyı açmak için [CDataSource:: Open](../../data/oledb/cdatasource-open.md) ' i çağırmanız gerekir.
+Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabilir. Bu oturumlar `CSession`tarafından temsil edilir. `CSession::Open`bir oturum oluşturmadan önce bağlantıyı açmak için [CDataSource:: Open](../../data/oledb/cdatasource-open.md) çağrısı yapmanız gerekir.
 
-Öğesinin nasıl kullanılacağına `CDataSource`ilişkin bir örnek için bkz. [CATDB](../../overview/visual-cpp-samples.md) örneği.
+`CDataSource`kullanmanın bir örneği için bkz. [CATDB](../../overview/visual-cpp-samples.md) örneği.
 
 ## <a name="close"></a>CDataSource:: Close
 
-`m_spInit` İşaretçiyi serbest bırakarak bağlantıyı kapatır.
+`m_spInit` işaretçisini serbest bırakarak bağlantıyı kapatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -176,14 +175,14 @@ HRESULT GetProperty(const GUID& guid,
 
 #### <a name="parameters"></a>Parametreler
 
-*guid*<br/>
+*'ini*<br/>
 'ndaki Özelliğin döndürüleceği özellik kümesini tanımlayan bir GUID.
 
 *PROPID*<br/>
 'ndaki Döndürülecek özelliğin özellik KIMLIĞI.
 
 *pVariant*<br/>
-dışı Variant için bir işaretçi, özelliğin `GetProperty` değerini döndürür.
+dışı `GetProperty`, özelliğin değerini döndüren Variant için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -195,7 +194,7 @@ Birden çok özellik almak için [GetProperties](../../data/oledb/cdatasource-ge
 
 ## <a name="open"></a>CDataSource:: Open
 
-`CLSID` ,`ProgID`Veya bilinen`CEnumerator` bir ad kullanarak bir veri kaynağına bağlantı açar veya kullanıcıya bir Bulucu iletişim kutusu ister.
+`CLSID`, `ProgID`veya `CEnumerator` bilinen bir ad kullanarak bir veri kaynağına bağlantı açar veya kullanıcıya bir Bulucu iletişim kutusu ister.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -241,7 +240,7 @@ HRESULT Open(LPCSTR szProgID,
 #### <a name="parameters"></a>Parametreler
 
 *in*<br/>
-'ndaki `CLSID` Veri sağlayıcısı.
+'ndaki Veri sağlayıcısının `CLSID`.
 
 *pPropSet*<br/>
 'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın.
@@ -265,7 +264,7 @@ HRESULT Open(LPCSTR szProgID,
 'ndaki Bir program tanımlayıcısı.
 
 *sının*<br/>
-'ndaki Çağıran bir `CLSID`belirtmezse bağlantıyı açmaya yönelik bilinen adı almak Için kullanılan bir [CEnumerator](../../data/oledb/cenumerator-class.md) nesnesi.
+'ndaki Çağıran bir `CLSID`belirtmezse bağlantıyı açmaya yönelik bilinen adı almak için kullanılan bir [CEnumerator](../../data/oledb/cenumerator-class.md) nesnesi.
 
 *lendiği*<br/>
 'ndaki İletişim kutusunun üst öğesi olacak pencerenin tutamacı. *HWND* parametresini kullanan işlev aşırı yüklemesinin kullanılması, otomatik olarak hizmet bileşenlerini çağırır; Ayrıntılar için bkz. açıklamalar.
@@ -285,7 +284,7 @@ Standart HRESULT.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod, OLE DB şablonlarıyla bir Jet 4,0 veri kaynağının nasıl açılacağını gösterir. Jet veri kaynağını bir OLE DB veri kaynağı olarak değerlendirmiş olursunuz. Ancak, için `Open` çağrın iki özellik kümesine ihtiyacı vardır: biri DBPROPSET_DBINIT ve diğeri DBPROPSET_JETOLEDB_DBINIT için, DBPROP_JETOLEDB_DATABASEPASSWORD ayarlayabilmeniz için.
+Aşağıdaki kod, OLE DB şablonlarıyla bir Jet 4,0 veri kaynağının nasıl açılacağını gösterir. Jet veri kaynağını bir OLE DB veri kaynağı olarak değerlendirmiş olursunuz. Ancak, `Open` çağrın iki özellik kümesi olması gerekir: biri DBPROPSET_DBINIT ve diğeri DBPROPSET_JETOLEDB_DBINIT için, DBPROP_JETOLEDB_DATABASEPASSWORD ayarlayabilmeniz için.
 
 [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]
 
@@ -327,13 +326,13 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
 
 #### <a name="parameters"></a>Parametreler
 
-*szInitializationString*<br/>
+*Szınitializationstring*<br/>
 'ndaki Başlatma dizesi.
 
-*fPromptForInfo*<br/>
-'ndaki Bu bağımsız değişken **true**olarak ayarlanırsa, `OpenFromInitializationString` DBPROP_INIT_PROMPT özelliğini DBPROMPT_COMPLETEREQUIRED olarak ayarlar, bu da yalnızca daha fazla bilgi gerektiğinde kullanıcıya sorulup sorulmayacağını belirtir. Bu, başlatma dizesinin parola gerektiren bir veritabanını belirttiği durumlar için yararlıdır, ancak dize parolayı içermez. Veritabanına bağlanmaya çalışırken kullanıcıdan bir parola (veya eksik olan herhangi bir bilgi) istenir.
+*Fpromptforınfo*<br/>
+'ndaki Bu bağımsız değişken **true**olarak ayarlanırsa `OpenFromInitializationString`, DBPROP_INIT_PROMPT özelliğini DBPROMPT_COMPLETEREQUIRED olarak ayarlar, bu da yalnızca daha fazla bilgi gerektiğinde kullanıcıya sorulup sorulmayacağını belirtir. Bu, başlatma dizesinin parola gerektiren bir veritabanını belirttiği durumlar için yararlıdır, ancak dize parolayı içermez. Veritabanına bağlanmaya çalışırken kullanıcıdan bir parola (veya eksik olan herhangi bir bilgi) istenir.
 
-Varsayılan değer **false**şeklindedir; bu, kullanıcıya hiçbir şekilde sorulmayacağını BELIRTIR (DBPROP_INIT_PROMPT olarak ayarlanır).
+Varsayılan değer **false**şeklindedir; bu, kullanıcıdan hiçbir şekilde sorulmayacağını belirtir (DBPROMPT_NOPROMPT DBPROP_INIT_PROMPT belirler).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -363,7 +362,7 @@ HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
 *dwPromptOptions*<br/>
 'ndaki Görüntülenecek konum belirleyici iletişim kutusunun stilini belirler. Olası değerler için bkz. msdasc. h.
 
-*szInitialDirectory*<br/>
+*Szınitialdirectory*<br/>
 'ndaki Konumlandırıcı iletişim kutusunda görüntülenecek ilk dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -393,7 +392,7 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 #### <a name="parameters"></a>Parametreler
 
 *in*<br/>
-'ndaki `CLSID` Veri sağlayıcısı.
+'ndaki Veri sağlayıcısının `CLSID`.
 
 *Szprogıd*<br/>
 'ndaki Veri sağlayıcısının program KIMLIĞI.

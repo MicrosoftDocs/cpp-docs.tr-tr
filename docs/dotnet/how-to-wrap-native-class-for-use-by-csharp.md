@@ -6,14 +6,14 @@ helpviewer_keywords:
 - native code [C++], Visual C# and
 - classes [C++], Visual C# and
 ms.assetid: 988819ae-cc6a-4453-8ff5-be369210d962
-ms.openlocfilehash: 65a1b11578565e08f0be7aa04f96d3da4cbfbf7a
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 06cb922aff4079f29b93874787a8b79ef99d75c3
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988126"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446307"
 ---
-# <a name="how-to-wrap-native-class-for-use-by-c"></a>Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama
+# <a name="how-to-wrap-native-class-for-use-by-c"></a>Nasıl yapılır: yerel sınıfı C\# kullanımı için sarın
 
 Bu örnek C#, veya diğer .net dilinde yazılmış C++ kod tarafından tüketilebilmesi için yerel bir sınıfın nasıl sarılacağını gösterir.
 

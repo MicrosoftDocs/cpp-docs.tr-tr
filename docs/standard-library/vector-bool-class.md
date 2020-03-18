@@ -3,11 +3,7 @@ title: Vector&lt;bool&gt; sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - vector<bool>
-- vector/std::vector::const_pointer
-- vector/std::vector::const_reference
-- vector/std::vector::pointer
 - vector/std::vector::flip
-- vector/std::vector::swap
 helpviewer_keywords:
 - std::vector [C++], const_pointer
 - std::vector [C++], const_reference
@@ -15,16 +11,16 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-ms.openlocfilehash: d4ae53f9a14f04d5656a13c32e75494688c5cdd0
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4043b46bf2f93b362de029577fe9ac3c11dbcaa2
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452264"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443929"
 ---
 # <a name="vectorltboolgt-class"></a>Vector&lt;bool&gt; sınıfı
 
-Sınıfı, **bool**türündeki öğeler için Vector öğesinin kısmi bir özelleştirmesi. [](../standard-library/vector-class.md) `vector<bool>` Bir **bool** değeri bit başına depolayarak boşluk iyileştirmesi sağlayan, özelleştirme tarafından kullanılan temel tür için bir ayırıcısı vardır.
+`vector<bool>` sınıfı, **bool**türündeki öğeler için [Vector](../standard-library/vector-class.md) öğesinin kısmi bir özelleştirmesi. Bir **bool** değeri bit başına depolayarak boşluk iyileştirmesi sağlayan, özelleştirme tarafından kullanılan temel tür için bir ayırıcısı vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,32 +33,32 @@ class vector<bool, Allocator>
 
 Bu sınıf şablonu özelleştirmesi, bu makalede açıklanan farklar dışında vektör gibi davranır.
 
-**Bool** türüyle ilgilenen işlemler, kapsayıcı depolamadaki değerlere karşılık gelir. `allocator_traits::construct`Bu değerleri oluşturmak için kullanılmaz.
+**Bool** türüyle ilgilenen işlemler, kapsayıcı depolamadaki değerlere karşılık gelir. `allocator_traits::construct`, bu değerleri oluşturmak için kullanılmaz.
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[const_pointer](#const_pointer)|Bir ' `const_iterator` `vector<bool>`nin Boolean öğesine sabit bir işaretçi olarak işlev görmesi için bir typedef.|
+|[const_pointer](#const_pointer)|`vector<bool>`Boolean öğesine sabit bir işaretçi olarak görev yapabilecek `const_iterator` için bir typedef.|
 |[const_reference](#const_reference)|**Bool**için bir typedef. Başlatmanın ardından, özgün değerde güncelleştirmeleri gözlemlemez.|
-|[çağrısı](#pointer)|' A yönelik `iterator` bir typedef, `vector<bool>`bir Boolean öğesine işaretçi olarak işlev görebilir.|
+|[çağrısı](#pointer)|`vector<bool>`bir Boolean öğesine işaretçi olarak işlev görebilecek `iterator` için bir typedef.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[yazmayı](#flip)|İçindeki tüm bitleri tersine çevirir `vector<bool>`.|
-|[Kur](#swap)|İki `vector<bool>`öğenin öğelerini değiş tokuş eder.|
-|[işlecinde&#91;&#93;](#op_at)|Belirtilen konumdaki `vector<bool>` öğeye sanal bir başvuru döndürür.|
-|`at`|, Özel olmayan [Vector](../standard-library/vector-class.md):: at işleviyle aynı şekilde çalışır, ancak bu, [\<bool >:: Reference](#reference_class)proxy sınıfını kullanır. Ayrıca bkz [.&#91;işleci](#op_at).|
-|`front`|, Özel olmayan [Vector](../standard-library/vector-class.md):: Front işleviyle aynı şekilde çalışır, ancak bu, [\<bool >:: Reference](#reference_class)proxy sınıfını kullanır. Ayrıca bkz [.&#91;işleci](#op_at).|
-|`back`|, Özel olmayan [Vector](../standard-library/vector-class.md):: Back işleviyle aynı şekilde çalışır, ancak bu, [\<bool >:: Reference](#reference_class)proxy sınıfını kullanır. Ayrıca bkz [.&#91;işleci](#op_at).|
+|[yazmayı](#flip)|`vector<bool>`tüm bitleri tersine çevirir.|
+|[Kur](#swap)|İki `vector<bool>`öğelerini değiş tokuş eder.|
+|[işlecinde&#91;&#93;](#op_at)|`vector<bool>` öğesine belirtilen konumdaki sanal bir başvuruyu döndürür.|
+|`at`|, Özel olmayan [Vector](../standard-library/vector-class.md):: at işleviyle aynı şekilde çalışır, ancak [\<bool >:: Reference](#reference_class)proxy sınıfını kullanır. Ayrıca bkz [.&#91;işleci](#op_at).|
+|`front`|, Özel olmayan [Vector](../standard-library/vector-class.md):: Front işleviyle aynı şekilde çalışır, ancak [\<bool >:: Reference](#reference_class)proxy sınıfını kullanır. Ayrıca bkz [.&#91;işleci](#op_at).|
+|`back`|, Özel olmayan [Vector](../standard-library/vector-class.md):: Back işleviyle aynı şekilde çalışır, ancak [\<bool >:: Reference](#reference_class)proxy sınıfını kullanır. Ayrıca bkz [.&#91;işleci](#op_at).|
 
 ### <a name="proxy-class"></a>Proxy Sınıfı
 
 |||
 |-|-|
-|[Vector\<bool > başvuru sınıfı](#reference_class)|Davranışın benzetimini `bool&` yapmak için proxy görevi gören ve nesneleri bir `vector<bool>` nesne içindeki öğelere (tek bit) başvuru sağlayabilen bir sınıf.|
+|[Vector\<bool > başvuru sınıfı](#reference_class)|`bool&` davranışın benzetimini yapmak için proxy görevi gören ve nesneleri bir `vector<bool>` nesnesi içindeki öğelere (tek bit) başvuru sağlayabilen bir sınıf.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -72,7 +68,7 @@ Bu sınıf şablonu özelleştirmesi, bu makalede açıklanan farklar dışında
 
 ## <a name="const_pointer"></a>vektör\<bool >:: const_pointer
 
-`vector<bool>` Nesnenin içerdiği dizinin bir Boolean öğesi için sabit bir işaretçi olarak işlev görebilecek bir nesneyi tanımlayan bir tür.
+`vector<bool>` nesnesi tarafından içerilen dizinin bir Boolean öğesi için sabit bir işaretçi olarak kullanılabilecek bir nesneyi tanımlayan bir tür.
 
 ```cpp
 typedef const_iterator const_pointer;
@@ -80,7 +76,7 @@ typedef const_iterator const_pointer;
 
 ## <a name="const_reference"></a>vektör\<bool >:: const_reference
 
-`vector<bool>` Nesne tarafından içerilen dizinin bir Boolean öğesine sabit başvuru olarak işlev yapabilecek bir nesneyi tanımlayan bir tür.
+`vector<bool>` nesnesi tarafından içerilen dizinin bir Boolean öğesine sabit başvuru olarak kullanılabilecek bir nesneyi tanımlayan bir tür.
 
 ```cpp
 typedef bool const_reference;
@@ -88,11 +84,11 @@ typedef bool const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi ve kod örnekleri için bkz [.&lt;vector&gt;bool:: Reference:: operator =](#reference_operator_eq).
+Daha fazla bilgi ve kod örnekleri için bkz. [vector&lt;bool&gt;:: Reference:: operator =](#reference_operator_eq).
 
 ## <a name="flip"></a>vektör\<bool >:: çevir
 
-İçindeki tüm bitleri tersine çevirir `vector<bool>`.
+`vector<bool>`tüm bitleri tersine çevirir.
 
 ```cpp
 void flip();
@@ -130,7 +126,7 @@ int main()
 
 ## <a name="op_at"></a>Vector\<bool >:: operator []
 
-Belirtilen konumdaki `vector<bool>` öğeye sanal bir başvuru döndürür.
+`vector<bool>` öğesine belirtilen konumdaki sanal bir başvuruyu döndürür.
 
 ```cpp
 vector<bool>::reference operator[](size_type Pos);
@@ -142,11 +138,11 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 |Parametre|Açıklama|
 |-|-|
-|*'Un*|`vector<bool>` Öğesinin konumu.|
+|*'Un*|`vector<bool>` öğesinin konumu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [Vector\<bool >:: Reference](#reference_class) veya [Vector\<bool >:: const_reference](#const_reference) nesnesi, dizinli öğenin değerini içerir.
+Bir [vector\<bool >:: Reference](#reference_class) veya [vector\<bool >:: const_reference](#const_reference) , dizinli öğenin değerini içeren nesne.
 
 Belirtilen konum kapsayıcısının boyutuna eşit veya ondan daha büyük ise, sonuç tanımsızdır.
 
@@ -156,7 +152,7 @@ _ITERATOR_DEBUG_LEVEL kümesiyle derlerseniz, vektör sınırları dışında bi
 
 ### <a name="example"></a>Örnek
 
-Bu kod örneği, açıklama eklenen `vector<bool>::operator[]` ve iki yaygın kodlama hatalarının doğru kullanımını gösterir. `vector<bool>::reference` Döndürdüğü nesnenin adresi alınamadığından bu hatalar hatalara neden olur. `vector<bool>::operator[]`
+Bu kod örneği, `vector<bool>::operator[]` ve açıklama eklenen iki yaygın kodlama hatalarının doğru kullanımını gösterir. `vector<bool>::operator[]` döndürdüğü `vector<bool>::reference` nesnenin adresi alınamadığından bu hatalar hatalara neden olur.
 
 ```cpp
 // cl.exe /EHsc /nologo /W4 /MTd
@@ -187,7 +183,7 @@ int main()
 
 ## <a name="pointer"></a>vektör\<bool >::p oınter
 
-`vector<bool>` Nesnenin içerdiği dizinin bir Boolean öğesi için bir işaretçi olarak işlev görebilecek bir nesneyi tanımlayan bir tür.
+`vector<bool>` nesnesi tarafından içerilen dizinin bir Boolean öğesi için bir işaretçi olarak işlev görebilecek bir nesneyi tanımlayan bir tür.
 
 ```cpp
 typedef iterator pointer;
@@ -195,11 +191,11 @@ typedef iterator pointer;
 
 ## <a name="reference_class"></a>Vector\<bool >:: Reference sınıfı
 
-Sınıfı, benzetimi`bool&`yapılacak [vektör\<bool > sınıfı](../standard-library/vector-bool-class.md) tarafından sunulan bir ara sunucu sınıfıdır. `vector<bool>::reference`
+`vector<bool>::reference` sınıfı, [vektör\<bool > sınıfı](../standard-library/vector-bool-class.md) tarafından `bool&`benzetimini yapmak için sunulan bir proxy sınıfıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>`, bu proxy sınıfı kullanılarak başvurulabilen her öğe için yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, `vector<bool>::reference` nesnenin adresi alınamadığından, [vektör\<bool >:: işlecini&#91; ](#op_at) kullanan aşağıdaki kod doğru değildir:
+C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>`, bu proxy sınıfı kullanılarak başvurulabilen her öğe için yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, `vector<bool>::reference` nesnesinin adresi alınamadığından, şu [vektör\<bool >:: işleci&#91; ](#op_at) kullanan kod doğru değildir:
 
 ```cpp
 vector<bool> vb;
@@ -210,7 +206,7 @@ bool& refb = vb[1];   // conversion error - do not use
 
 ###  <a name="reference_flip"></a>Vector\<bool >:: Reference:: Flip
 
-Başvurulan [\<vector bool >](../standard-library/vector-bool-class.md) öğesinin Boole değerini tersine çevirir.
+Başvurulan bir [vector\<bool >](../standard-library/vector-bool-class.md) öğesinin Boole değerini tersine çevirir.
 
 ```cpp
 void flip();
@@ -257,7 +253,7 @@ The vector with first element flipped is:
 
 ###  <a name="reference_operator_bool"></a>Vector\<bool >:: Reference:: operator bool
 
-Kaynağından `vector<bool>::reference` **bool**'a örtük bir dönüştürme sağlar.
+`vector<bool>::reference` 'ten **bool**'a örtük bir dönüştürme sağlar.
 
 ```cpp
 operator bool() const;
@@ -265,13 +261,13 @@ operator bool() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Vektör\<bool > nesnesinin öğesinin Boolean değeri.
+Vector öğesinin\<bool > nesnesinin Boolean değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-`vector<bool>` Nesne bu işleç tarafından değiştirilemiyor.
+`vector<bool>` nesnesi bu işleç tarafından değiştirilemiyor.
 
-###  <a name="reference_operator_eq"></a>  vector\<bool>::reference::operator=
+###  <a name="reference_operator_eq"></a>Vector\<bool >:: Reference:: operator =
 
 Bir bite bir Boolean değeri, veya başvurulan bir öğenin tuttuğu değeri atar.
 
@@ -282,10 +278,10 @@ reference& operator=(bool Val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*Sağ*\
 Değerinin bite atanacağı öğe başvurusu.
 
-*Acil*\
+*Val*\
 Bite atanacak Boolean değeri.
 
 #### <a name="example"></a>Örnek
@@ -359,9 +355,9 @@ The original value of the 2nd element still stored in a bool: false
 The original value of the 3rd element still stored in a bool: false
 ```
 
-## <a name="swap"></a>vektör\<bool >:: takas
+## <a name="swap"></a>Vector\<bool >:: swap
 
-Bool > `vector<bool>` [:: Reference proxy sınıfını kullanarak Boole vektörlerinin () iki öğesini değiş tokuş eden\<](#reference_class)statik üye işlevi.
+Boolean vektörlerinin iki öğesini (`vector<bool>`), [bool >:: reference\<](#reference_class)proxy sınıfı vektörü kullanarak değiş tokuş eden statik üye işlevi.
 
 ```cpp
 static void swap(
@@ -371,17 +367,17 @@ static void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Tarafta*\
+*Sol*\
 *Sağ* öğesiyle değiştirilecek öğe.
 
-*Right*\
+*Sağ*\
 *Sol* öğesiyle değiştirilecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu aşırı yükleme, için özel proxy gereksinimlerini `vector<bool>`destekler. [Vector](../standard-library/vector-class.md):: swap, tek değişkenli aşırı yüklemesiyle `vector<bool>::swap()`aynı işlevselliğe sahiptir.
+Bu aşırı yükleme `vector<bool>`özel proxy gereksinimlerini destekler. [Vector](../standard-library/vector-class.md):: swap, `vector<bool>::swap()`tek değişkenli aşırı yüklemesiyle aynı işlevselliğe sahiptir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

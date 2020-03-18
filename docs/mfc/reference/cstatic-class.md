@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: fd7b6787b372e220a32770e19d54d149f5ba6934
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fc0164b2d0046ca2d36291696dd6137a9fcef069
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502409"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447422"
 ---
 # <a name="cstatic-class"></a>CStatic sınıfı
 
@@ -49,15 +49,15 @@ class CStatic : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStatic:: CStatic](#cstatic)|Bir `CStatic` nesnesi oluşturur.|
+|[CStatic:: CStatic](#cstatic)|`CStatic` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStatic:: Create](#create)|Windows statik denetimini oluşturur ve `CStatic` nesneye ekler.|
+|[CStatic:: Create](#create)|Windows statik denetimini oluşturur ve `CStatic` nesnesine iliştirir.|
 |[CStatic::D rawItem](#drawitem)|Sahip tarafından çizilmiş bir statik denetim çizmek için geçersiz kılın.|
 |[CStatic:: GetBitmap](#getbitmap)|Daha önce [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır.|
 |[CStatic:: GetCursor](#getcursor)|Daha önce [SetCursor](#setcursor)ile ayarlanmış imleç resminin tanıtıcısını alır.|
@@ -70,13 +70,13 @@ class CStatic : public CWnd
 
 ## <a name="remarks"></a>Açıklamalar
 
-Statik denetim bir metin dizesi, kutu, dikdörtgen, simge, imleç, bit eşlem veya geliştirilmiş meta dosya görüntüler. Diğer denetimleri etiketlemek, kutuyu veya ayırmak için kullanılabilir. Statik bir denetim normalde giriş gerçekleşmez ve çıkış vermez; Ancak, SS_NOTIFY stiliyle oluşturulduysa fare tıklamasının üst öğesine bildirimde bulunabilir.
+Statik denetim bir metin dizesi, kutu, dikdörtgen, simge, imleç, bit eşlem veya geliştirilmiş meta dosya görüntüler. Diğer denetimleri etiketlemek, kutuyu veya ayırmak için kullanılabilir. Statik bir denetim normalde giriş gerçekleşmez ve çıkış vermez; Ancak, SS_NOTIFY stille oluşturulduysa fare tıklamasının üst öğesine bildirimde bulunabilir.
 
-İki adımda statik denetim oluşturun. İlk olarak, `CStatic` nesneyi oluşturmak için oluşturucuyu çağırın, ardından statik denetimi oluşturmak [](#create) ve `CStatic` nesneye iliştirmek için üye Oluştur işlevini çağırın.
+İki adımda statik denetim oluşturun. İlk olarak, `CStatic` nesnesini oluşturmak için oluşturucuyu çağırın, ardından statik denetimi oluşturmak ve `CStatic` nesnesine eklemek için üye [Oluştur](#create) işlevini çağırın.
 
-İletişim kutusu içinde ( `CStatic` bir iletişim kaynağı aracılığıyla) bir nesne oluşturursanız `CStatic` , Kullanıcı iletişim kutusunu kapattığında nesne otomatik olarak yok edilir.
+İletişim kutusu içinde bir `CStatic` nesnesi oluşturursanız (bir iletişim kutusu kaynağı aracılığıyla), Kullanıcı iletişim kutusunu kapattığında `CStatic` nesnesi otomatik olarak yok edilir.
 
-Bir pencere içinde bir `CStatic` nesne oluşturursanız, bunu yok etmeniz de gerekebilir. Bir `CStatic` pencere içindeki yığında oluşturulan bir nesne otomatik olarak yok edilir. `CStatic` Nesneyi **Yeni** işlevi kullanarak yığında oluşturursanız, işlem tamamlandıktan sonra yok etmek için nesneyi **silme** çağrısı yapmanız gerekir.
+Bir pencere içinde bir `CStatic` nesnesi oluşturursanız, bunu yok etmeniz de gerekebilir. Bir pencere içindeki yığında oluşturulan `CStatic` nesnesi otomatik olarak yok edilir. **Yeni** işlevi kullanarak yığında `CStatic` nesnesi oluşturursanız, bununla işiniz bittiğinde yok etmek için nesneyi **silme** çağrısı yapmanız gerekir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -94,7 +94,7 @@ Bir pencere içinde bir `CStatic` nesne oluşturursanız, bunu yok etmeniz de ge
 
 ##  <a name="create"></a>CStatic:: Create
 
-Windows statik denetimini oluşturur ve `CStatic` nesneye ekler.
+Windows statik denetimini oluşturur ve `CStatic` nesnesine iliştirir.
 
 ```
 virtual BOOL Create(
@@ -114,10 +114,10 @@ Denetime yerleştirilecek metni belirtir. NULL ise, hiçbir metin görünür olm
 Statik denetimin pencere stilini belirtir. Denetim için herhangi bir [statik denetim stilleri](../../mfc/reference/styles-used-by-mfc.md#static-styles) birleşimini uygulayın.
 
 *Rect*<br/>
-Statik denetimin konumunu ve boyutunu belirtir. Bu bir `RECT` yapı `CRect` veya nesne olabilir.
+Statik denetimin konumunu ve boyutunu belirtir. Bir `RECT` yapısı veya bir `CRect` nesnesi olabilir.
 
 *pParentWnd*<br/>
-Genellikle bir`CDialog` nesnesi olan üstpencereyibelirtir.`CStatic` NULL olmaması gerekir.
+Genellikle bir `CDialog` nesnesi olan `CStatic` üst pencereyi belirtir. NULL olmaması gerekir.
 
 *NID*<br/>
 Statik denetimin denetim KIMLIĞINI belirtir.
@@ -128,13 +128,13 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda `CStatic` bir nesne oluşturun. İlk olarak, oluşturucuyu `CStatic`çağırın ve sonra Windows statik denetimini oluşturan `CStatic` ve bunu nesnesine ekleyen çağırın `Create`.
+İki adımda `CStatic` nesnesi oluşturun. İlk olarak, oluşturucuyu `CStatic`çağırın ve sonra Windows statik denetimini oluşturan ve `CStatic` nesnesine ekleyen `Create`çağırın.
 
 Statik denetime aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) uygulayın:
 
 - WS_CHILD her zaman
 
-- WS_VISIBLE genellikle
+- Genellikle WS_VISIBLE
 
 - WS_DISABLED nadiren
 
@@ -148,7 +148,7 @@ Statik denetimde bir bit eşlem, imleç, simge veya meta dosya görüntüleyecek
 
 İmleçler, bit eşlemler veya simgeler için aşağıdaki stili de kullanmak isteyebilirsiniz:
 
-- SS_CENTERIMAGE, görüntüyü statik denetimde ortalamak için kullanın.
+- SS_CENTERIMAGE statik denetimdeki görüntüyü ortalamak için kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -156,7 +156,7 @@ Statik denetimde bir bit eşlem, imleç, simge veya meta dosya görüntüleyecek
 
 ##  <a name="cstatic"></a>CStatic:: CStatic
 
-Bir `CStatic` nesnesi oluşturur.
+`CStatic` nesnesi oluşturur.
 
 ```
 CStatic();
@@ -181,11 +181,11 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahip tarafından çizilmiş `CStatic` bir nesne için çizim uygulamak üzere bu işlevi geçersiz kılın (denetim ss_ownerdraw stiline sahiptir).
+Sahip tarafından çizilmiş bir `CStatic` nesnesine çizim uygulamak için bu işlevi geçersiz kılın (denetim, SS_OWNERDRAW stiline sahiptir).
 
 ##  <a name="getbitmap"></a>CStatic:: GetBitmap
 
-Daha önce ile `CStatic`ilişkili [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır.
+`CStatic`ile ilişkili daha önce [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır.
 
 ```
 HBITMAP GetBitmap() const;
@@ -201,7 +201,7 @@ Geçerli bit eşlem için bir tanıtıcı veya bit eşlem ayarlanmamışsa NULL.
 
 ##  <a name="getcursor"></a>CStatic:: GetCursor
 
-İle`CStatic`ilişkili olan, daha önce [SetCursor](#setcursor)ile ayarlanan imlecin tanıtıcısını alır.
+`CStatic`ile ilişkili, daha önce [SetCursor](#setcursor)ile ayarlanan imlecin tanıtıcısını alır.
 
 ```
 HCURSOR GetCursor();
@@ -217,7 +217,7 @@ Geçerli imlecin bir tutamacı veya imleç ayarlanmamışsa NULL.
 
 ##  <a name="getenhmetafile"></a>CStatic:: GetEnhMetaFile
 
-İle`CStatic`ilişkili olan, daha önce [SetEnhMetaFile](#setenhmetafile)ile ayarlanmış olan gelişmiş meta dosyası tanıtıcısını alır.
+`CStatic`ile ilişkili olan, daha önce [SetEnhMetaFile](#setenhmetafile)ile ayarlanmış olan gelişmiş meta dosyası tanıtıcısını alır.
 
 ```
 HENHMETAFILE GetEnhMetaFile() const;
@@ -233,7 +233,7 @@ Geçerli Gelişmiş Meta dosyası için bir tanıtıcı veya gelişmiş bir dosy
 
 ##  <a name="geticon"></a>CStatic:: GetIcon
 
-İle`CStatic`ilişkili olan, daha önce [setIcon](#seticon)ile ayarlanan simgenin tanıtıcısını alır.
+`CStatic`ile ilişkili olan, daha önce [setIcon](#seticon)ile ayarlanan simgenin tanıtıcısını alır.
 
 ```
 HICON GetIcon() const;
@@ -272,18 +272,19 @@ Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stille
 
 - SS_BITMAP bu stili her zaman bitmapler için kullanın.
 
-- SS_CENTERIMAGE, görüntüyü statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan, bit eşlemin sol üst köşesindeki pikselin rengi ile doldurulur.
+- SS_CENTERIMAGE statik denetimdeki görüntüyü ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan, bit eşlemin sol üst köşesindeki pikselin rengi ile doldurulur.
 
-- MFC, yalnızca Win32 `CBitmap`işlevini `LoadBitmap`çağırmak yerine bir bit eşlem görüntüsüyle daha fazla yapmanız gerektiğinde kullanabileceğiniz sınıfını sağlar. `CBitmap`bir tür GDI nesnesi içeren, genellikle bir grafik nesnesini statik denetim olarak görüntülemek için kullanılan `CStatic`bir `CWnd` sınıf olan ile birlikte işlem içinde kullanılır.
+- MFC, bir bit eşlem görüntüsü ile daha fazla yapmanız gerektiğinde kullanabileceğiniz sınıfı `CBitmap`sağlar `LoadBitmap`. bir tür GDI nesnesi içeren `CBitmap`, genellikle bir grafik nesnesini statik bir denetim olarak görüntülemek için kullanılan `CWnd` bir sınıf olan `CStatic`birlikte ortak işlem içinde kullanılır.
 
 `CImage`, cihazdan bağımsız bit eşlemlerle (DIB) daha kolay çalışabilmenizi sağlayan bir ATL/MFC sınıfıdır. Daha fazla bilgi için bkz. [CImage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).
 
-- Tipik kullanım, bir `CStatic::SetBitmap` `CBitmap` veya `CImage` nesnesinin hbıx operatörü tarafından döndürülen bir GDI nesnesi vermektir. Bunu yapmak için kod aşağıdaki satıra benzer.
+- Tipik kullanım, bir `CBitmap` veya `CImage` nesnesinin HBıX operatörü tarafından döndürülen bir GDI nesnesi `CStatic::SetBitmap` vermektir. Bunu yapmak için kod aşağıdaki satıra benzer.
 
 ```
 MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 ```
-Aşağıdaki örnek yığında iki `CStatic` nesne oluşturur. Daha sonra bir dosya kullanarak `CBitmap::LoadOEMBitmap` bir sistem bit eşlemiyle ve diğeri kullanarak `CImage::Load`bir dosya yükler.
+
+Aşağıdaki örnek yığında iki `CStatic` nesnesi oluşturur. Daha sonra, `CImage::Load`kullanarak bir dosya `CBitmap::LoadOEMBitmap` ve diğeri kullanarak bir sistem bit eşlemiyle yükler.
 
 ### <a name="example"></a>Örnek
 
@@ -314,7 +315,7 @@ Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stille
 
 - SS_ICON bu stili her zaman imleçler ve simgeler için kullanın.
 
-- SS_CENTERIMAGE, statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan statik denetimin arka plan rengiyle doldurulur.
+- SS_CENTERIMAGE statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan statik denetimin arka plan rengiyle doldurulur.
 
 ### <a name="example"></a>Örnek
 
@@ -343,7 +344,7 @@ Gelişmiş Meta dosyası otomatik olarak statik denetimde çizilecektir. Gelişm
 
 Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stilleri kullanabilirsiniz:
 
-- SS_ENHMETAFILE bu stili her zaman gelişmiş meta dosyalar için kullanın.
+- SS_ENHMETAFILE gelişmiş meta dosyalar için her zaman bu stili kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -374,7 +375,7 @@ Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stille
 
 - SS_ICON bu stili her zaman imleçler ve simgeler için kullanın.
 
-- SS_CENTERIMAGE, statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan statik denetimin arka plan rengiyle doldurulur.
+- SS_CENTERIMAGE statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan statik denetimin arka plan rengiyle doldurulur.
 
 ### <a name="example"></a>Örnek
 

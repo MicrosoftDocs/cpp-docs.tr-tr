@@ -3,35 +3,34 @@ title: __declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 ms.date: 05/06/2019
 f1_keywords:
 - dllexport
-- __declspec
 helpviewer_keywords:
 - __declspec(dllexport) keyword [C++]
 - names [C++], DLL exports by
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: 167060d0270004b8648d32af206865bfe66c3b4b
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: c84a8eca25c90e0790ec8c4991d9d5a116afa59f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220796"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442533"
 ---
-# <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
+# <a name="exporting-from-a-dll-using-__declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 
-Veri, İşlevler, sınıflar veya sınıf üyesi işlevleri kullanarak bir DLL'nin dışa aktarabilirsiniz **__declspec(dllexport)** anahtar sözcüğü. **__declspec(dllexport)** bir .def dosyası kullanmanıza gerek yoktur nesne dosyasına dışarı aktarma yönergesi ekler.
+**__Declspec (dllexport)** anahtar sözcüğünü kullanarak bir dll 'den verileri, işlevleri, sınıfları veya sınıf üye işlevlerini dışarı aktarabilirsiniz. **__declspec (dllexport)** , nesne dosyasına dışarı aktarma yönergesini ekler, böylece bir. def dosyası kullanmanıza gerek kalmaz.
 
-Bu kolaylık, tasarlanan C++ işlev adlarını dışarı aktarılmaya çalışılırken zaman belirgin. Ad düzenlemesi için standart bir belirtim olmadığından dışa aktarılan bir işlevin adı derleyici sürümlerine göre değişebilir. Kullanırsanız **__declspec(dllexport)**, DLL ve .exe dosyalarını yeniden derlenmesi için adlandırma kuralı değişikliklerinin yalnızca hesabına gerekli.
+Bu kolaylık, düzenlenmiş C++ işlev adlarını dışa aktarmaya çalışırken en belirgin şekilde görünür. Ad dekorasyonu için standart belirtim olmadığından, bir içe aktarılmış işlevin adı derleyici sürümleri arasında değişebilir. **__Declspec (dllexport)** KULLANıYORSANıZ, dll ve Dependent. exe dosyalarını yeniden derleme yalnızca adlandırma kuralı değişikliklerinin hesaba sağlanması gerekir.
 
-Sıra sayıları, NONAME ve PRIVATE gibi yalnızca .def dosyasında yapılabilir ve bu öznitelikleri .def dosyası olmadan belirtmek için bir yolu yoktur gibi birçok yönergeleri verin. Ancak, **__declspec(dllexport)** .def kullanmanın yanı sıra dosya derleme hatalarına neden olmaz.
+Sıra sayısı, NONAME ve PRIVATE gibi birçok dışarı aktarma yönergesi yalnızca bir. def dosyasında yapılabilir ve bu öznitelikleri. def dosyası olmadan belirtmenin bir yolu yoktur. Ancak, bir. def dosyası kullanmanın yanı sıra **__declspec (dllexport)** kullanmak yapı hatalarına neden olmaz.
 
-İşlevleri dışarı aktarmak için **__declspec(dllexport)** anahtar sözcüğü bir anahtar sözcük belirtilmişse çağırma kuralı anahtar sözcüğünün solunda görünmesi gerekir. Örneğin:
+İşlevleri dışarı aktarmak için, anahtar sözcük belirtilmişse **__declspec (dllexport)** anahtar sözcüğü çağırma kuralı anahtar sözcüğünün sol tarafında görünmelidir. Örnek:
 
 ```
 __declspec(dllexport) void __cdecl Function1(void);
 ```
 
-Tüm genel veri üyeleri ve üye işlevler sınıfında dışarı aktarmak için anahtar sözcüğü sola sınıf adının şu şekilde görünmelidir:
+Bir sınıftaki tüm ortak veri üyelerini ve üye işlevlerini dışarı aktarmak için anahtar sözcüğünün aşağıdaki gibi sınıf adının solunda görünmesi gerekir:
 
 ```
 class __declspec(dllexport) CExampleExport : public CObject
@@ -39,31 +38,31 @@ class __declspec(dllexport) CExampleExport : public CObject
 ```
 
 > [!NOTE]
->  `__declspec(dllexport)` bulunan bir fonksiyona uygulanamaz `__clrcall` çağırma kuralı.
+>  `__declspec(dllexport)`, `__clrcall` çağırma kuralına sahip bir işleve uygulanamaz.
 
-DLL'nizi oluştururken genellikle işlev prototiplerini ve/veya veriyorsunuz ve ekleme sınıfları içeren üstbilgi dosyası oluşturduğunuz **__declspec(dllexport)** başlık dosyasındaki bildirimlere. Kodunuzu daha okunabilir hale getirmek için makro tanımlayın **__declspec(dllexport)** ve dışarı aktardığınız her sembol ile makroyu kullanın:
+DLL 'nizi oluştururken genellikle, dışarı aktardığınız işlev prototiplerini ve/veya sınıflarını içeren bir üst bilgi dosyası oluşturun ve üstbilgi dosyasındaki bildirimlere **__declspec (dllexport)** ekleyin. Kodunuzu daha okunabilir hale getirmek için **__declspec (dllexport)** için bir makro tanımlayın ve dışarı aktardığınız her sembol ile makroyu kullanın:
 
 ```
 #define DllExport   __declspec( dllexport )
 ```
 
-**__declspec(dllexport)** işlev adlarını DLL'nin dışa aktarma tablosunda depolar. Tablonun boyutunu en iyi duruma getirmek istiyorsanız, bkz. [yerine sıra adına göre bir DLL işlevlerini dışa aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+**__declspec (dllexport)** , Işlev adlarını dll 'nin dışarı aktarma tablosunda depolar. Tablonun boyutunu iyileştirmek istiyorsanız, bkz. [BIR DLL 'Den Işlevleri ad yerine sıraya göre dışarı aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
+- [. Def dosyalarını kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak dışarı ve içeri aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C C++ Dili Çalıştırılabilirlerinde kullanmak için işlevleri dışarı aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++dil Çalıştırılabilirlerinde kullanmak için c işlevlerini dışarı aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
+- [Hangi dışarı aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
 - [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
+- [DLL 'yi başlatma](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 

@@ -3,12 +3,12 @@ title: Visual Studio 'da Linux CMake projesi oluşturma ve yapılandırma
 description: Visual Studio 'da bir Linux CMake projesi oluşturma, yapılandırma, düzenleme ve derleme
 ms.date: 10/04/2019
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 9c6a60162c2dbbab8e348b27d1987d7f1001bee0
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: a0b98e1d0e9ca5e68f5fd12c458fe29b9835b65c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419408"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446859"
 ---
 # <a name="create-and-configure-a-linux-cmake-project"></a>Linux CMake projesi oluşturma ve yapılandırma
 
@@ -202,6 +202,7 @@ Visual Studio 2019 sürüm 16,1 ve sonraki sürümlerde varsayılan Linux-Debug 
   ]
 }
 ```
+
 ::: moniker-end
 
 Bu ayarlar hakkında daha fazla bilgi için bkz. [Cmakesettings. JSON başvurusu](../build/cmakesettings-reference.md).

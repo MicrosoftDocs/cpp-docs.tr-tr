@@ -1,24 +1,22 @@
 ---
 title: Global Değişkenler ve Standart Türler
 ms.date: 11/04/2016
-f1_keywords:
-- c.variables
 helpviewer_keywords:
 - global variables, CRT
 - standard types, CRT
 - standard types
 - types [CRT]
 ms.assetid: 8f8bad6f-2b78-4068-a0dc-77d58d978920
-ms.openlocfilehash: 3d235640613b7232e190ccb0e1dfe98b657e0c65
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46b0bf0ea9fd9671165e2d331ce1bb0787feaa3f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289513"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438242"
 ---
 # <a name="global-variables-and-standard-types"></a>Global Değişkenler ve Standart Türler
 
-Microsoft çalışma zamanı kitaplığı için tanımları içeren [genel değişkenler](../c-runtime-library/global-variables.md), [denetim bayrakları](../c-runtime-library/control-flags.md), ve [standart türler](../c-runtime-library/standard-types.md) kitaplık yordamları tarafından kullanılır. Bu değişkenler, bayraklar ve türleri bunları programınızda bildirme veya uygun bir başlık dosyaları dahil olmak üzere erişim.
+Microsoft çalışma zamanı kitaplığı, kitaplık yordamları tarafından kullanılan [genel değişkenler](../c-runtime-library/global-variables.md), [denetim bayrakları](../c-runtime-library/control-flags.md)ve [standart türler](../c-runtime-library/standard-types.md) için tanımlar içerir. Bu değişkenlere, bayraklara ve türlere, programınızda bildirerek veya uygun üst bilgi dosyalarını ekleyerek erişin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

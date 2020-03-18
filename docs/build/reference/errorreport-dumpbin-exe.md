@@ -3,18 +3,18 @@ title: /ERRORREPORT (dumpbin.exe)
 description: Microsoft DUMPBIN yardımcı programı/ERRORREPORT komut satırı seçeneği için başvuru.
 ms.date: 02/09/2020
 f1_keywords:
-- /ERRORREPORT
+- /ERRORREPORT_dumpbin
 helpviewer_keywords:
 - -ERRORREPORT dumpbin option
 - ERRORREPORT dumpbin option
 - /ERRORREPORT dumpbin option
 ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948
-ms.openlocfilehash: 665b4b1e7c01de4a1fcd848a9e6b36ddbf2944c9
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: f701c2e28dcf82194589877709bf6959de4bcbfc
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257682"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439938"
 ---
 # <a name="errorreport-dumpbinexe"></a>/ERRORREPORT (dumpbin.exe)
 

@@ -1,23 +1,22 @@
 ---
-title: '&lt;Ekle > (C++ belgeleri açıklamaları)'
+title: '&lt;içerme > (C++ belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
-- include
 - <include>
 helpviewer_keywords:
 - include C++ XML tag
 - <include> C++ XML tag
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
-ms.openlocfilehash: b7d1033aa5b6c95c0db8eb9debf74596dc214fb0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1d6a26f28069cfb4a1c74bd591d63bc89352774
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291333"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439511"
 ---
 # <a name="ltincludegt"></a>&lt;include&gt;
 
-\<Dahil > etiket türleri açıklayan yorumlar başka bir dosyaya ve üyeleri, kaynak kodunuzdaki bakın olanak tanır. Bu belge açıklamaları doğrudan, kaynak kodu dosyasında yerleştirme için bir alternatifidir.  Örneğin, kullanabileceğiniz \<dahil > ekibiniz veya şirketiniz içinde kullanılan standart "standart" açıklama eklemek için.
+\<içerme > etiketi, kaynak kodunuzda türleri ve üyeleri tanımlayan başka bir dosyadaki açıklamalara başvurmanıza olanak sağlar. Bu, belge açıklamalarını doğrudan kaynak kodu dosyanıza yerleştirmeye alternatiftir.  Örneğin, takımınızın veya şirketinizin tamamında kullanılan standart "demirbaş" açıklamalarını eklemek için \<içerme > kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,27 +26,27 @@ ms.locfileid: "62291333"
 
 #### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-Belgeleri içeren dosyanın adı. Dosya adını içeren bir yol nitelenmiş olmalıdır.  Ad, tek veya çift tırnak içine alın.  Değil bulamazsa, derleyici bir uyarı verir `filename`.
+*kısaltın*<br/>
+Belgeleri içeren dosyanın adı. Dosya adı bir yol ile nitelenebilir.  Adı tek veya çift tırnak içine alın.  Derleyici `filename`bulamazsa bir uyarı verir.
 
 *tagpath*<br/>
-İstenen düğüm dosyasında yer alan kümesi seçer geçerli bir XPath ifadesi.
+Dosyada bulunan istenen düğüm kümesini seçen geçerli bir XPath ifadesi.
 
-*Adı*<br/>
-Yorumları önündeki etiketinde ad tanımlayıcısı; `name` sahip bir `id`.
+*ada*<br/>
+Yorumlarla önce gelen etiketteki ad Belirleyicisi; `name` bir `id`olacaktır.
 
 *id*<br/>
-Yorumları önünde etiket kimliği.  Ad, tek veya çift tırnak içine alın.
+Açıklamaların önündeki etiketin KIMLIĞI.  Adı tek veya çift tırnak içine alın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-\<Dahil > etiketini XML XPath sözdizimi kullanır. XPath kullanarak özelleştirme yolları belgelerine başvurun \<dahil >.
+\<içerme > etiketi XML XPath söz dizimini kullanır. \<ekleme > kullanarak özelleştirmenin yolları için XPath belgelerine bakın.
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 
-Bu çok dosyalı bir örnektir. Kullanan ilk dosya \<dahil >, aşağıdaki belgeleri açıklamaları içerir:
+Bu çok dosyalı bir örnektir. > Dahil \<kullanan ilk dosya aşağıdaki belge açıklamalarını içerir:
 
 ```cpp
 // xml_include_tag.cpp
@@ -67,7 +66,7 @@ public ref class Test2 {
 };
 ```
 
-İkinci bir dosya, xml_include_tag.doc, aşağıdaki belgeleri açıklamaları içerir:
+İkinci dosya olan xml_include_tag. doc, aşağıdaki belge açıklamalarını içerir:
 
 ```xml
 <MyDocs>

@@ -1,29 +1,27 @@
 ---
 title: CAnimateCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CAnimateCtrl
 helpviewer_keywords:
 - animation controls [MFC], CAnimateCtrl class
 - controls [MFC], animation
 - CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
-ms.openlocfilehash: b967cc6dde6b4f639ef081b3821f6a7e5a2fe295
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79c1a0111317514ef6fd68acd0c6a2ebdccc3ba4
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351647"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447109"
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 
-Sınıfı tarafından temsil edilen bir animasyon denetimi [CAnimateCtrl](../mfc/reference/canimatectrl-class.md), Ses Video Aralanmış (tek) biçiminde bir küçük resim görüntüleyen bir pencere — standart Windows görüntü/ses biçimi. AVI klibi, bit eşlem çerçeveler, film gibi dizisidir.
+[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)sınıfı tarafından temsil edilen bir animasyon denetimi, ses video Aralanmış (AVI) biçiminde bir klibi (Standart Windows video/ses biçimi) görüntüleyen bir penceredir. AVI klibi, film gibi bir bit eşlem çerçevesi dizisidir.
 
-AVI klibi görüntülenirken çalıştırma, iş parçacığı devam ettiğinden, bir ortak animasyon denetimi için uzun bir işlem sırasında sistem etkinliğini belirtmek için kullanılır. Örneğin, Windows Bul iletişim kutusu, bir dosya sistemi arar olarak hareketli Büyüteç görüntüler.
+AVI klibi görüntülenirken iş parçacığın yürütmeye devam ettiğinden, bir animasyon denetimi için yaygın olarak kullanılan bir kullanım, uzun bir işlem sırasında sistem etkinliğini gösterir. Örneğin, Windows bul iletişim kutusu bir dosya için sistem ararken bir hareketli Büyüteç Camı görüntüler.
 
-Animasyon denetimlerinin yalnızca basit AVI klipleri oynatabilirsiniz ve ses desteklemez. (Sınırlamaları tam bir listesi için bkz. [CAnimateCtrl](../mfc/reference/canimatectrl-class.md).) Multimedya kayıttan yürütme ve/veya kaydı yetenekleri sağlamak üzere bir denetim gerekiyorsa değiştirilebilir ve animasyon denetimi yeteneklerini ciddi bir şekilde sınırlı olduğundan, alternatif MCIWnd denetimi gibi kullanmanız gerekir. MCIWnd denetimi hakkında daha fazla bilgi için multimedya belgelerine bakın.
+Animasyon denetimleri yalnızca basit AVI kliplerini yürütebilir ve sesi desteklemez. (Kısıtlamaların tamamen listesi için bkz. [CAnimateCtrl](../mfc/reference/canimatectrl-class.md).) Animasyon denetiminin özellikleri ciddi ölçüde sınırlı olduğundan ve değişikliğe tabi olduğundan, çoklu ortam yürütme ve/veya kayıt özellikleri sağlamak için bir denetime ihtiyacınız varsa, Mcder ND denetimi gibi bir alternatif kullanmanız gerekir. Mcder ND denetimi hakkında daha fazla bilgi için bkz. multimedya belgeleri.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Animasyon Denetimi Kullanma](../mfc/using-an-animation-control.md)
 

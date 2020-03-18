@@ -1,8 +1,6 @@
 ---
 title: CArchive Nesnesi Nedir?
 ms.date: 11/04/2016
-f1_keywords:
-- CArchive
 helpviewer_keywords:
 - archive objects [MFC]
 - archives [MFC], for serialization
@@ -10,23 +8,23 @@ helpviewer_keywords:
 - CArchive class [MFC], about CArchive class [MFC]
 - buffering, serializable objects
 ms.assetid: 843f1825-288d-4d89-a1fa-70e1f92d9b8b
-ms.openlocfilehash: 4bae451168449ce3e120ba9d172a615864ac2157
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0a78385c81c43a4b0c925bbe89ccd3937873ee8b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346375"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446023"
 ---
 # <a name="what-is-a-carchive-object"></a>CArchive Nesnesi Nedir?
 
-A `CArchive` nesnesi gelen veya giden serileştirilebilir nesneler okuma veya yazma için bir tür kullanımı uyumlu arabelleğe alma mekanizması sağlar bir `CFile` nesne. Genellikle `CFile` nesnesini temsil eden bir disk dosyası; ancak, da bellek dosyası olabilir (`CSharedFile` nesne), belki de Pano temsil eden.
+`CArchive` nesnesi, bir `CFile` nesnesine veya bir nesne türüne seri hale getirilebilir nesneler yazmak veya okumak için tür açısından güvenli bir arabelleğe alma mekanizması sağlar. Genellikle `CFile` nesnesi bir disk dosyasını temsil eder; Ancak, büyük olasılıkla panoyu temsil eden bir bellek dosyası (`CSharedFile` nesnesi) de olabilir.
 
-Belirli bir `CArchive` ya da depoları nesnesi (yazar, serileştiren) veri veya yükler (okuma, seri durumdan çıkarır) verileri, ancak hiçbir zaman hem de. Ömrü boyunca bir `CArchive` nesnedir nesneleri bir dosyaya yazmak veya nesneleri Dosyadan okuma aracılığıyla tek seferde sınırlıdır. Bu nedenle, iki sırayla oluşturulan `CArchive` nesneleri, verileri bir dosyaya seri hale getirme ve dosyasından serisini kaldırmak için gereklidir.
+Belirli bir `CArchive` nesnesi verileri depolar (Yazar, seri hale getirir) ya da verileri yükler (okur, dizileştirir), ancak her ikisi birden değildir. Bir `CArchive` nesnesinin ömrü, bir dosyaya nesne yazma veya bir dosyadaki nesneleri okuma yoluyla tek bir geçişle sınırlıdır. Bu nedenle, verileri bir dosyaya serileştirmek ve sonra dosyanın geri serisini kaldırmak için, büyük ölçüde oluşturulmuş iki `CArchive` nesne gerekir.
 
-Bir arşiv nesneleri bir dosyaya depoladığında, arşiv ekler `CRuntimeClass` nesnelere adı. Sonra başka bir arşiv nesneleri bellekte, bir dosya yüklendiğinde `CObject`-türetilmiş nesneler dinamik olarak yeniden göre `CRuntimeClass` nesne. Depolama arşivi dosyaya yazılır gibi belirli bir nesne birden çok kez başvurulabilir. Arşiv yüklenirken, ancak nesne yalnızca bir kez yeniden. Bir arşiv nasıl ekleyen hakkında ayrıntılar `CRuntimeClass` bilgilerini nesneleri ve birden fazla başvuru olası dikkate alarak, yeniden yapılandırır nesneler açıklanmıştır [Teknik Not 2](../mfc/tn002-persistent-object-data-format.md).
+Bir arşiv nesneleri bir dosyaya depoladığında arşiv, `CRuntimeClass` adını nesnelerine ekler. Daha sonra, başka bir arşiv bir dosyadaki nesneleri bellekten belleğe yüklediğinde, `CObject`türetilen nesneler nesnelerin `CRuntimeClass` göre dinamik olarak yeniden yapılandırılır. Verilen bir nesne, depolama arşivi tarafından dosyaya yazıldığı için birden çok kez başvuruda bulunabilir. Ancak, yükleme Arşivi nesneyi yalnızca bir kez yeniden oluşturacak. Bir arşiv 'in nesnelere `CRuntimeClass` bilgileri nasıl iliştirir ve nesneleri yeniden oluşturma hakkında ayrıntılar [teknik notta 2](../mfc/tn002-persistent-object-data-format.md)' de açıklanmıştır.
 
-Bir arşiv verileri seri hale getirilmiş gibi kendi arabellek dolana kadar arşiv verileri toplanır. Arşiv, arabelleğe Yazar sonra `CFile` nesne tarafından işaret edilen `CArchive` nesne. Arşivden veri okuma gibi benzer şekilde, bu verileri, arabellek dosyaya ve ardından, seri durumdan çıkarılmış nesne arabelleğe okur. Bu arabelleğe alma, bu nedenle, uygulamanızın performansını iyileştirme, bir sabit diski fiziksel olarak okunur sayısını azaltır.
+Veriler bir arşive serileştirildiği için arşiv, arabelleği dolu olana kadar verileri biriktirir. Sonra arşiv, `CArchive` nesnesi tarafından işaret edilen `CFile` nesnesine arabelleğini yazar. Benzer şekilde, bir arşivden verileri okurken, dosyadaki verileri arabelleğinden ve sonra arabelleğinden, seri durumdan çıkarılan nesneniz ile okur. Bu arabelleğe alma, bir sabit diskin fiziksel olarak okuduğu her zaman sayısını azaltır ve bu sayede uygulamanızın performansını geliştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Serileştirme: Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
+[Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)

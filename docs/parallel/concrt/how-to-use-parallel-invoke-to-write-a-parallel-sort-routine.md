@@ -9,11 +9,11 @@ helpviewer_keywords:
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
 ms.openlocfilehash: 6acac3f6bc82db6e6981f83715c7ee88cfd06fbd
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855414"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422292"
 ---
 # <a name="how-to-use-parallel_invoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma
 

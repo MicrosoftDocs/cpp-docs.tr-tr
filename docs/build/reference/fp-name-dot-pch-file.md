@@ -1,10 +1,9 @@
 ---
-title: /FP (adı &period;pch dosyası)
-description: /Fp derleyici seçeneği önceden derlenmiş üst bilgi dosyası adını belirtmek için kullanın.
+title: /FP (&period;pch dosyasını Adlandır)
+description: Ön derlenmiş üstbilgi dosyası adını belirtmek için/FP derleyici seçeneğini kullanın.
 ms.date: 05/31/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.PrecompiledHeaderFile
-- /fp
 - VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile
 helpviewer_keywords:
 - Fp compiler option [C++]
@@ -16,34 +15,34 @@ helpviewer_keywords:
 - precompiled header files, naming
 - /Fp compiler option [C++]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
-ms.openlocfilehash: 6e7faa934d14acb5d129173c5e0c7ee67d6caf2b
-ms.sourcegitcommit: 540fa2f5015de1adfa7b6bf823f6eb4ed5a6a4bd
+ms.openlocfilehash: d62c5bd9fc7920c0a2a5530879680fad2a01d39a
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66460881"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439788"
 ---
-# <a name="fp-name-periodpch-file"></a>/FP (adı &period;pch dosyası)
+# <a name="fp-name-periodpch-file"></a>/FP (&period;pch dosyasını Adlandır)
 
-Bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlar.
+Varsayılan yol adını kullanmak yerine önceden derlenmiş üst bilgi için bir yol adı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ FP**<em>yol adı</em>
+> **/FP**<em>yol adı</em>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım **/FP** seçeneğini [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](yc-create-precompiled-header-file.md) veya [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](yu-use-precompiled-header-file.md) önceden derlenmiş üst bilgi (PCH) yolu ve dosya adını belirtmek için dosya. Varsayılan olarak, **/Yc** seçeneği PCH dosya adı kaynak dosyanın temel adı kullanarak oluşturur ve bir *pch* uzantısı.
+Ön derlenmiş üstbilgi (PCH) dosyasının yolunu ve dosya adını belirtmek için [/N (önceden derlenmiş başlık dosyası oluştur)](yc-create-precompiled-header-file.md) veya [/yu (önceden derlenmiş üst bilgi dosyasını kullan)](yu-use-precompiled-header-file.md) ile **/FP** seçeneğini kullanın. Varsayılan olarak, **/Yıc** seçeneği kaynak dosyanın temel adını ve bir *PCH* uzantısını kullanarak bir PCH dosya adı oluşturur.
 
-Bir parçası olarak bir uzantı belirtmezseniz *pathname*, uzantısı *pch* varsayılır. Bir eğik çizgi kullanarak bir dizin adı belirttiğinizde ( **/** ) sonunda *pathname*, vc varsayılan dosya adıdır*sürüm*0.pch, burada  *Sürüm* ana Visual Studio araç seti sürümüdür. Bu dizin mevcut olmalıdır veya C1083 hatası oluşturulur.
+*Yol adının*bir parçası olarak bir uzantı belirtmezseniz, bir *PCH* uzantısı varsayılır. *Yol*adının sonunda bir eğik çizgi ( **/** ) kullanarak bir dizin adı belirttiğinizde, varsayılan dosya adı VC*sürümü*0. pch olur; burada *Sürüm* , Visual Studio araç takımının ana sürümüdür. Bu dizin var olmalıdır veya hata C1083 oluşturulmuştur.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Açık **yapılandırma özellikleri** > **C /C++**  > **önceden derlenmiş üst bilgiler** özellik sayfası.
+1. **Yapılandırma özellikleri** > **C/C++**  > **önceden derlenmiş üstbilgiler** özellik sayfasını açın.
 
-1. Değiştirme **önceden derlenmiş üst bilgi çıkış dosyası** özelliği.
+1. **Ön derlenmiş üstbilgi çıkış dosyası** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -51,13 +50,13 @@ Bir parçası olarak bir uzantı belirtmezseniz *pathname*, uzantısı *pch* var
 
 ## <a name="examples"></a>Örnekler
 
-Programınızın hata ayıklama derlemesi için önceden derlenmiş üst bilgi dosyasının sürümü adlı ayrı bir oluşturmak için bir komutu gibi belirtebilirsiniz:
+Programınızın hata ayıklama derlemesi için önceden derlenmiş üstbilgi dosyasının ayrı adlandırılmış bir sürümünü oluşturmak için, şöyle bir komut belirtebilirsiniz:
 
 ```CMD
 CL /DDEBUG /Zi /Yc /FpDPROG.PCH PROG.CPP
 ```
 
-Aşağıdaki komut MYPCH.pch adlı bir ön derlenmiş üstbilgi dosyasının kullanımını belirtir. Derleyici, sonuna kadar MYAPP.h PROG.cpp kaynak kodunda işlemini gerçekleştirir ve önceden derlenmiş kod içinde MYPCH.pch koyar. MYPCH.pch içeriğini kullanır ve kalan PROG.cpp bir .obj dosyası oluşturmak için derler. Bu örnek çıktısı PROG.exe adlı bir dosyadır.
+Aşağıdaki komut, MYPCH. pch adlı önceden derlenmiş bir üstbilgi dosyasının kullanımını belirtir. Derleyici, program. cpp içindeki kaynak kodu MYAPP. h sonu ile önceden derler ve önceden derlenmiş kodu MYPCH. pch dosyasına koyar. Daha sonra MYPCH. pch içeriğini kullanır ve bir. obj dosyası oluşturmak için program. cpp geri kalanını derler. Bu örneğin çıktısı, PROG. exe adlı bir dosyadır.
 
 ```CMD
 CL /YuMYAPP.H /FpMYPCH.PCH PROG.CPP

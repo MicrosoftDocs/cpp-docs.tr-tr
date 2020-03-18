@@ -5,6 +5,9 @@ f1_keywords:
 - __int128_cpp
 - __wchar_t_cpp
 - char_cpp
+- char8_t_cpp
+- char16_t_cpp
+- char32_t_cpp
 - double_cpp
 - float_cpp
 - int_cpp
@@ -43,12 +46,12 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: f6bfc72bf279d09e89423866d9cb46ad3496b49c
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: e67d31e18ebbb6afd9d98542e4a6aa236b2d3e71
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301502"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445315"
 ---
 # <a name="built-in-types-c"></a>Yerleşik türler (C++)
 

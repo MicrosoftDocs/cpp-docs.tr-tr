@@ -3,36 +3,35 @@ title: do-while Deyimi (C)
 ms.date: 11/04/2016
 f1_keywords:
 - do
-- while
 helpviewer_keywords:
 - do-while keyword [C]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
-ms.openlocfilehash: 052b02beca49f5de19c6f68cc475edb5f5daf6e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3658fe7635ad77db6d6e08ff9d7c30e29d665721
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234085"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438595"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 
-*Yapın-sırada* ifadesi belirtilen bir ifade yanlış olana kadar bir deyimi veya bileşik deyim Yinele olanak tanır.
+*Do-while* deyimi, belirtilen bir ifade false olana kadar bir deyimi veya bileşik deyimi tekrarlamanızı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yineleme deyiminin*: &nbsp; &nbsp; &nbsp; &nbsp; **yapmak** *deyimi* **sırada (** *ifade* **);**
+*yineleme deyimi*: &nbsp;&nbsp;&nbsp;&nbsp;**Do***deyimi***while (** *ifade* **);**
 
-*İfade* içinde bir *yapın-sırada* deyimi, döngü gövdesinin yürütüldükten sonra değerlendirilir. Bu nedenle, döngü gövdesinin her zaman en az bir kez yürütülür.
+*Do-while* deyimi içindeki *ifade* , döngünün gövdesi yürütüldükten sonra değerlendirilir. Bu nedenle, döngünün gövdesi her zaman en az bir kez yürütülür.
 
-*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:
+*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi devam eder:
 
 1. İfade gövdesi yürütülür.
 
-1. Ardından, *ifade* değerlendirilir. Varsa *ifade* false ise *yapın-sırada* deyimi sonlanır ve denetim geçer programdaki sonraki deyime. Varsa *ifade* (sıfırdan farklı) işlem tekrarlanır, adım 1'den itibaren geçerlidir.
+1. Sonra *ifade* değerlendirilir. *İfade* false ise *do-while* deyimi sonlanır ve denetim programdaki sonraki deyime geçer. *İfade* true (sıfır dışında) ise işlem, 1. adımdan itibaren yinelenir.
 
-*Yapın-sırada* deyimi de sonlandırılabilir bir **sonu**, **goto**, veya **dönüş** deyimi, deyim gövdesi içinde yürütülür.
+Deyimdeki bir **Break**, **goto**veya **Return** deyimleri yürütüldüğünde *do-while* ifadesini de sonlandırabilirsiniz.
 
-Bu bir örnektir *yapın-sırada* deyimi:
+Bu, *do-while* ifadesinin bir örneğidir:
 
 ```C
 do
@@ -42,7 +41,7 @@ do
 } while ( x > 0 );
 ```
 
-Bu *yapın-sırada* deyimi, iki deyim `y = f( x );` ve `x--;` başlangıç değerine bakılmaksızın yürütülür `x`. Ardından `x > 0` değerlendirilir. Varsa `x` 0'dan büyük olan deyim gövdesi yeniden yürütülür ve `x > 0` değerlendirilir. Deyim gövdesi sürekli çalıştırılan sürece `x` 0'dan büyük olarak kalır. Yürütülmesini *yapın-sırada* açıklamayı sonlandıran `x` 0 veya negatif olur. Döngü gövdesi en az bir kez yürütülür.
+Bu *do-while* deyiminde, `x`başlangıç değerinden bağımsız olarak `y = f( x );` ve `x--;` iki deyim yürütülür. `x > 0` değerlendirilir. `x` 0 ' dan büyükse, ifade gövdesi tekrar yürütülür ve `x > 0` yeniden değerlendirilirse. İfadenin gövdesi, `x` 0 ' dan büyük kaldığı sürece tekrar tekrar yürütülür. *Do-while* ifadesinin yürütülmesi `x` 0 veya negatif olduğunda sonlanır. Döngünün gövdesi en az bir kez yürütülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

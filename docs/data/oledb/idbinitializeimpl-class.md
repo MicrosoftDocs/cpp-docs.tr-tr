@@ -8,7 +8,6 @@ f1_keywords:
 - ATL::IDBInitializeImpl
 - ATL.IDBInitializeImpl
 - IDBInitializeImpl.IDBInitializeImpl
-- IDBInitializeImpl
 - IDBInitializeImpl::IDBInitializeImpl
 - Initialize
 - IDBInitializeImpl::Initialize
@@ -39,16 +38,16 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: 3418ce11e1a607d66fee593b32fd3a4b7d197407
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fc60db6db341d0667e24a81ae0f1394f54497ff
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409024"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447374"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 
-Bir uygulamasını sağlar [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)) arabirimi.
+[IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)) arabirimi için bir uygulama sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,12 +58,12 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IDBInitializeImpl`.
+*Şı*<br/>
+Sınıfınız `IDBInitializeImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -72,27 +71,27 @@ Sınıfınız, türetilen `IDBInitializeImpl`.
 
 |||
 |-|-|
-|[Idbınitializeımpl](#idbinitializeimpl)|Oluşturucu.|
+|[IDBInitializeImpl](#idbinitializeimpl)|Oluşturucu.|
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
 |||
 |-|-|
 |[Initialize](#initialize)|Sağlayıcıyı başlatır.|
-|[Geri alınıyor](#uninitialize)|Sağlayıcı durdurur.|
+|[Uninitialize](#uninitialize)|Sağlayıcıyı sonlandırır.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |||
 |-|-|
-|[m_dwStatus](#dwstatus)|Veri kaynağı bayraklar.|
-|[m_pCUtlPropInfo](#pcutlpropinfo)|DB özellikleri bilgileri, uygulama için bir işaretçi.|
+|[m_dwStatus](#dwstatus)|Veri kaynağı bayrakları.|
+|[m_pCUtlPropInfo](#pcutlpropinfo)|DB özellikleri bilgilerini uygulamaya yönelik bir işaretçi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesneleri ve isteğe bağlı bir arabirim numaralandırıcılar üzerinde zorunlu bir arabirim.
+Veri kaynağı nesnelerinde zorunlu arabirim ve numaralandırıcılara yönelik isteğe bağlı arabirim.
 
-## <a name="idbinitializeimpl"></a> Idbınitializeımpl::ıdbınitializeımpl
+## <a name="idbinitializeimpl"></a>IDBInitializeImpl:: IDBInitializeImpl
 
 Oluşturucu.
 
@@ -104,11 +103,11 @@ IDBInitializeImpl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm veri üyeleri başlatır.
+Tüm veri üyelerini başlatır.
 
-## <a name="initialize"></a> Idbınitializeımpl::Initialize
+## <a name="initialize"></a>Idbinitializeımpl:: Initialize
 
-Veri kaynağı nesnesinin özellik desteğini hazırlayarak başlatır.
+Özellik desteğini hazırlarken veri kaynağı nesnesini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -118,11 +117,11 @@ STDMETHOD(Initialize)(void);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ıdbınitiınitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) öğesine bakın.
 
-## <a name="uninitialize"></a> Idbınitializeımpl::Uninitialize
+## <a name="uninitialize"></a>IDBInitializeImpl:: Uninitialize
 
-Basamak veri özelliği desteği gibi iç kaynaklara azaltarak başlatılmamış durumda nesne kaynağı.
+Özellik desteği gibi iç kaynakları boşaltarak veri kaynağı nesnesini başlatılmamış bir duruma koyar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -132,11 +131,11 @@ STDMETHOD(Uninitialize)(void);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ıdbınitiınitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648(v=vs.85)) konusuna bakın.
 
-## <a name="dwstatus"></a> Idbınitializeımpl::m_dwstatus
+## <a name="dwstatus"></a>IDBInitializeImpl:: m_dwStatus
 
-Veri kaynağı bayraklar.
+Veri kaynağı bayrakları.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -146,7 +145,7 @@ DWORD m_dwStatus;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bayraklar belirtin veya veri kaynağı nesnesi için çeşitli öznitelikler durumunu gösterir. Bir veya daha fazlasını içeren **enum** değerleri:
+Bu bayraklar veri kaynağı nesnesi için çeşitli özniteliklerin durumunu belirtir veya belirtir. Aşağıdaki **enum** değerlerinden bir veya daha fazlasını içerir:
 
 ```cpp
 enum DATASOURCE_FLAGS {
@@ -158,13 +157,13 @@ enum DATASOURCE_FLAGS {
 
 |||
 |-|-|
-|`DSF_MASK_INIT`|Başlatılmamış duruma geri etkinleştirmek için bir maske.|
-|`DSF_PERSIST_DIRTY`|Veri kaynağı nesnesi Kalıcılık gerektiriyorsa (diğer bir deyişle, olduğunda değişiklikler) ayarlayın.|
-|`DSF_INITIALIZED`|Veri kaynağı başlatılmışsa ayarlayın.|
+|`DSF_MASK_INIT`|Başlatılmamış durumun geri yüklenmesini sağlayan bir maske.|
+|`DSF_PERSIST_DIRTY`|Veri kaynağı nesnesi kalıcılığı gerektiriyorsa (yani değişiklikler varsa) ayarlayın.|
+|`DSF_INITIALIZED`|Veri kaynağı başlatılmışsa ayarlanır.|
 
-## <a name="pcutlpropinfo"></a> Idbınitializeımpl::m_pcutlpropınfo
+## <a name="pcutlpropinfo"></a>IDBInitializeImpl:: m_pCUtlPropInfo
 
-DB özellikleri bilgileri uygulama nesnesi için bir işaretçi.
+DB özellikleri bilgileri için uygulama nesnesi işaretçisi.
 
 ### <a name="syntax"></a>Sözdizimi
 

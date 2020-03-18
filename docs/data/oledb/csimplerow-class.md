@@ -12,7 +12,6 @@ f1_keywords:
 - CSimpleRow.AddRefRow
 - CSimpleRow.Compare
 - CSimpleRow::Compare
-- CSimpleRow
 - ATL::CSimpleRow::CSimpleRow
 - CSimpleRow.CSimpleRow
 - ATL.CSimpleRow.CSimpleRow
@@ -35,16 +34,16 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: 19b90f4454e784907366ef6cf7e3e7e1b9ada799
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 00d8164425ada573020971f66312b2282cc72c45
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390938"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441140"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow Sınıfı
 
-Satır tanıtıcısı kullanılan bir varsayılan uygulamasını sağlar [Irowsetımpl](../../data/oledb/irowsetimpl-class.md) sınıfı.
+, [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) sınıfında kullanılan satır tanıtıcısı için varsayılan bir uygulama sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,7 +53,7 @@ class CSimpleRow
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -62,25 +61,25 @@ class CSimpleRow
 
 |||
 |-|-|
-|[AddRefRow](#addrefrow)|Var olan bir satır işleyici için bir başvuru sayısı ekler.|
-|[Compare](#compare)|Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.|
+|[AddRefRow](#addrefrow)|Varolan bir satır tanıtıcısına bir başvuru sayısı ekler.|
+|[Compare](#compare)|Aynı satır örneğine başvurduklarında iki satırı karşılaştırır.|
 |[CSimpleRow](#csimplerow)|Oluşturucu.|
-|[ReleaseRow](#releaserow)|Satır serbest bırakır.|
+|[ReleaseRow](#releaserow)|Satırları yayınlar.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |||
 |-|-|
-|[m_dwRef](#dwref)|Var olan bir satır işlemek için başvuru sayısı.|
-|[m_iRowset](#irowset)|İmleç temsil eden satır kümesi için bir dizin.|
+|[m_dwRef](#dwref)|Varolan bir satır tanıtıcısına başvuru sayısı.|
+|[m_iRowset](#irowset)|İmleci temsil eden satır kümesi dizini.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir satır tanıtıcı, mantıksal bir sonuç satırı için benzersiz bir etiket değil. `IRowsetImpl` Yeni bir oluşturur `CSimpleRow` her satır içinde istenen için [Irowsetımpl::GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` Satır tanıtıcısı ile kendi uygulaması, varsayılan şablon bağımsız değişkeni olarak da değiştirilebilir `IRowsetImpl`. Türünde tek bir parametre kabul eden bir oluşturucu sağlayın değiştirme sınıfı için bu sınıf değiştirmek için tek gereksinim olmasıdır **uzun**.
+Satır tanıtıcısı, bir sonuç satırı için mantıksal olarak benzersiz bir etikettir. `IRowsetImpl` [IRowsetImpl:: GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md)içinde istenen her satır için yeni bir `CSimpleRow` oluşturur. `CSimpleRow`, `IRowsetImpl`bir varsayılan şablon bağımsız değişkeni olduğundan, kendi satır tanıtıcı uygulamanız ile de değiştirilebilir. Bu sınıfı değiştirme gereksinimi, değiştirme sınıfının **Long**türünde tek bir parametre kabul eden bir Oluşturucu sağlamasını sağlamaktır.
 
-## <a name="addrefrow"></a> CSimpleRow::AddRefRow
+## <a name="addrefrow"></a>CSimpleRow:: AddRefRow
 
-Başvuru sayısı için mevcut bir satır tanıtıcısı iş parçacığı açısından güvenli bir şekilde ekler.
+Bir başvuru sayısını, iş parçacığı güvenli bir şekilde var olan bir satır tanıtıcısına ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -88,9 +87,9 @@ Başvuru sayısı için mevcut bir satır tanıtıcısı iş parçacığı açı
 DWORD AddRefRow();
 ```
 
-## <a name="compare"></a> CSimpleRow::Compare
+## <a name="compare"></a>CSimpleRow:: Compare
 
-Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.
+Aynı satır örneğine başvurduklarında iki satırı karşılaştırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -101,13 +100,13 @@ HRESULT Compare(CSimpleRow* pRow);
 #### <a name="parameters"></a>Parametreler
 
 *pRow*<br/>
-Bir işaretçi bir `CSimpleRow` nesne.
+`CSimpleRow` nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için.
+Genellikle S_OK, iki satır aynı satır örneği veya S_FALSE iki satırı farklı olduğunu belirten bir HRESULT değeri. *OLE DB Programcı 'nın* diğer olası dönüş değerleri için başvurusu Içindeki [IRowsetIdentity:: IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) bölümüne bakın.
 
-## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
+## <a name="csimplerow"></a>CSimpleRow:: CSimpleRow
 
 Oluşturucu.
 
@@ -119,16 +118,16 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 
 #### <a name="parameters"></a>Parametreler
 
-*iRowsetCur*<br/>
-[in] Geçerli satır kümesi için dizin.
+*ırowsetcur*<br/>
+'ndaki Geçerli satır kümesinin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kümeleri [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) için *iRowsetCur*.
+[M_iRowset](../../data/oledb/csimplerow-m-irowset.md) , *ırowsetcur*olarak ayarlar.
 
-## <a name="releaserow"></a> CSimpleRow::ReleaseRow
+## <a name="releaserow"></a>CSimpleRow:: ReleaseRow
 
-Satır iş parçacığı açısından güvenli bir şekilde serbest bırakır.
+Satırları iş parçacığı güvenli bir şekilde yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -136,9 +135,9 @@ Satır iş parçacığı açısından güvenli bir şekilde serbest bırakır.
 DWORD ReleaseRow();
 ```
 
-## <a name="dwref"></a> CSimpleRow::m_dwRef
+## <a name="dwref"></a>CSimpleRow:: m_dwRef
 
-Var olan bir satır işlemek için başvuru sayısı.
+Varolan bir satır tanıtıcısına başvuru sayısı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -146,9 +145,9 @@ Var olan bir satır işlemek için başvuru sayısı.
 DWORD m_dwRef;
 ```
 
-## <a name="irowset"></a> CSimpleRow::m_iRowset
+## <a name="irowset"></a>CSimpleRow:: m_iRowset
 
-İmleç temsil eden satır dizini.
+İmleci temsil eden satır kümesi dizini.
 
 ### <a name="syntax"></a>Sözdizimi
 

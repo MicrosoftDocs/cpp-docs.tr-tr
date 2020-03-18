@@ -5,17 +5,16 @@ ms.date: 12/03/2019
 f1_keywords:
 - twoPhase
 - /Zc:twoPhase
-- VC.Project.VCCLCompilerTool.EnforceTypeConversionRules
 helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: a2ede9f0875bf718d63361201cf8923666078f7a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 3464759793a2dd243024a9f3f52263f76514033a
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856962"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438643"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/Zc:twoPhase- (iki aşamalı ad aramayı devre dışı bırak)
 
@@ -155,7 +154,7 @@ Uyumluluk modu **/Permissive-** altında, çağrı `tfunc(1729)` `void func(long
 
 ### <a name="update-your-code-for-two-phase-conformance"></a>Kodunuzu iki aşamalı uygunluk için güncelleştirin
 
-Derleyicinin daha eski sürümleri, anahtar sözcükler `template` gerektirmez ve standart için C++ gereken her yerde `typename`. Bu anahtar sözcükler, derleyicilerin ilk aşamasında, derleyicilerin bağımlı bir adı nasıl ayrıştıracağını ortadan kaldırmak için bazı konumlarda gereklidir. Örneğin:
+Derleyicinin daha eski sürümleri, anahtar sözcükler `template` gerektirmez ve standart için C++ gereken her yerde `typename`. Bu anahtar sözcükler, derleyicilerin ilk aşamasında, derleyicilerin bağımlı bir adı nasıl ayrıştıracağını ortadan kaldırmak için bazı konumlarda gereklidir. Örnek:
 
 `T::Foo<a || b>(c);`
 
@@ -165,7 +164,7 @@ Uygun bir derleyici, `T`kapsamındaki bir değişken olarak `Foo` ayrıştırır
 
 Visual Studio 2017 sürüm 15,3 ve üzeri sürümlerde, **/Permissive-** ve **/Zc: twophao-** belirtildiğinde, derleyici `template` anahtar sözcüğü olmadan bu koda izin verir. Yalnızca şablonları sınırlı bir biçimde ayrıştırdığından, kodu bir işlev şablonu `a || b`bağımsız değişkeniyle bir çağrı olarak yorumlar. Yukarıdaki kod, ilk aşamada ayrıştırılmaz. İkinci aşamada, `T::Foo` bir değişken yerine bir şablon olduğunu söylemek için yeterli bağlam vardır. bu nedenle, derleyici anahtar sözcüğünün kullanımını zorlamaz.
 
-Bu davranış, işlev şablonu gövdelerinde, başlatıcılarda, varsayılan bağımsız değişkenlerde ve noexcept bağımsız değişkenlerinde adlardan önce `typename` anahtar sözcüğü ortadan kaldırarak da görülebilir. Örneğin:
+Bu davranış, işlev şablonu gövdelerinde, başlatıcılarda, varsayılan bağımsız değişkenlerde ve noexcept bağımsız değişkenlerinde adlardan önce `typename` anahtar sözcüğü ortadan kaldırarak da görülebilir. Örnek:
 
 ```cpp
 template<typename T>

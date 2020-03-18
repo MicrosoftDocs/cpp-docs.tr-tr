@@ -9,7 +9,6 @@ f1_keywords:
 - CRowsetImpl::NameFromDBID
 - CRowsetImpl.SetCommandText
 - CRowsetImpl::SetCommandText
-- GetColumnInfo
 - CRowsetImpl.GetColumnInfo
 - CRowsetImpl::GetColumnInfo
 - CRowsetImpl::GetCommandFromID
@@ -34,16 +33,16 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: 1fac3a74ca259fe3b680355fadc7f9bbd6e3cc13
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c2e5923fe35287a7586cd4b52bc60e4a5b27b2d
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368714"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441149"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl Sınıfı
 
-Standart bir OLE DB satır kümesi uygulaması, birçok uygulama arabirimlerin birden çok devralma gerek kalmadan sağlar.
+Birçok uygulama arabiriminin birden çok devralınması gerekmeden standart bir OLE DB satır kümesi uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,21 +63,21 @@ class CRowsetImpl :
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Öğesinden türetilen kullanıcı sınıfı `CRowsetImpl`.
+*Şı*<br/>
+Kullanıcının `CRowsetImpl`türettiği sınıfı.
 
 *Depolama*<br/>
 Kullanıcı kayıt sınıfı.
 
 *CreatorClass*<br/>
-Satır kümesi özelliklerini içeren sınıf; genellikle komutu.
+Satır kümesi için özellikler içeren sınıf; genellikle komutu.
 
 *ArrayType*<br/>
-Satır kümesinin veriler için depolama olarak davranacak bir sınıf. Bu parametre için varsayılan olarak `CAtlArray`, ancak gerekli işlevselliği destekleyen herhangi bir sınıf olabilir.
+Satır kümesinin verileri için depolama alanı olarak görev yapacak sınıf. Bu parametrenin varsayılan değeri `CAtlArray`, ancak gerekli işlevselliği destekleyen herhangi bir sınıf olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -86,40 +85,40 @@ Satır kümesinin veriler için depolama olarak davranacak bir sınıf. Bu param
 
 |||
 |-|-|
-|[NameFromDBID](#namefromdbid)|Bir dizeden ayıklar bir `DBID` ve kendisine kopyalar *bstr* geçirildi.|
-|[SetCommandText](#setcommandtext)|Doğrular ve depolar `DBID`iki dizeyi s ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).|
+|[Namefromdbıd](#namefromdbid)|Bir `DBID` dize ayıklar ve geçirilen *BSTR* 'ye kopyalar.|
+|[SetCommandText](#setcommandtext)|`DBID`s 'yi iki dizinin ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)) doğrular ve depolar.|
 
-### <a name="overridable-methods"></a>Geçersiz kılınabilir yöntemleri
+### <a name="overridable-methods"></a>Geçersiz kılınabilir Yöntemler
 
 |||
 |-|-|
-|[GetColumnInfo](#getcolumninfo)|Belirli istemci isteği için sütun bilgileri alır.|
-|[GetCommandFromID](#getcommandfromid)|Her ikisi de parametreleri dize değerleri içeriyorsa ve bu durumda olup olmadığını kontrol eder, veri üyelerine dize değerleri kopyalar [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|
-|[ValidateCommandID](#validatecommandid)|Ya da bakın veya her ikisini de denetler `DBID`s dize değerleri içeren ve bu durumda, veri üyeleri için kopyalar [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|
+|[GetColumnInfo](#getcolumninfo)|Belirli bir istemci isteği için sütun bilgilerini alır.|
+|[GetCommandFromID](#getcommandfromid)|Her iki parametre de dize değerleri içeriyorsa ve bu durumda dize değerlerini [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)veri üyelerine kopyalar.|
+|[ValidateCommandID](#validatecommandid)|`DBID`s veya her ikisi de dize değerleri içeriyorsa ve bu durumda bunları veri üyelerine [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)kopyalar.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |||
 |-|-|
-|[m_rgRowData](#rgrowdata)|Varsayılan olarak, bir `CAtlArray` için kullanıcı kayıt şablon bağımsız değişkeni üzerinde templatizes `CRowsetImpl`. Başka bir dizi türü sınıf değiştirerek kullanılabilir `ArrayType` şablon bağımsız değişkeni `CRowsetImpl`.|
-|[m_strCommandText](#strcommandtext)|Satır kümesinin başlangıç komutu içerir.|
-|[m_strIndexText](#strindextext)|Satır kümesinin başlangıç dizini içeriyor.|
+|[m_rgRowData](#rgrowdata)|Varsayılan olarak, `CRowsetImpl`için Kullanıcı kayıt şablonu bağımsız değişkeninde şablonlaştırılmış bir `CAtlArray`. `ArrayType` şablon bağımsız değişkeni `CRowsetImpl`olarak değiştirilerek başka bir dizi türü sınıfı kullanılabilir.|
+|[m_strCommandText](#strcommandtext)|Satır kümesinin ilk komutunu içerir.|
+|[m_strIndexText](#strindextext)|Satır kümesinin ilk dizinini içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CRowsetImpl` geçersiz kılmalar statik upcasts biçiminde sağlar. Yöntemleri, belirli bir satır kümesi komut metni doğrulayacak şekilde denetler. Kendi oluşturabilirsiniz `CRowsetImpl`-sınıfı birden fazla devralınan uygulama arabirimlerinizi yaparak stil. Kendisi için sağlamalısınız uygulamasıdır tek yöntem `Execute`. Ne tür bir satır kümesi oluşturmakta olduğunuz bağlı olarak, oluşturucu yöntemleri için farklı imzalara beklediği `Execute`. Örneğin kullanıyorsanız, bir `CRowsetImpl`-türetilmiş sınıf şeması satır kümesi uygulamak için `Execute` yöntemi aşağıdaki imzası olacaktır:
+`CRowsetImpl` statik uplarsa biçiminde geçersiz kılmalar sağlar. Yöntemler, belirli bir satır kümesinin komut metnini ne şekilde doğrulayacağını denetler. Uygulama arabirimlerinizi birden çok devralınmış yaparak kendi `CRowsetImpl`stili sınıfınızı oluşturabilirsiniz. Uygulama sağlamanız gereken tek yöntem `Execute`. Oluşturmakta olduğunuz satır kümesi türüne bağlı olarak, Oluşturucu yöntemleri `Execute`için farklı imzalar bekler. Örneğin, bir şema satır kümesi uygulamak için `CRowsetImpl`türetilmiş bir sınıf kullanıyorsanız, `Execute` yöntemi aşağıdaki imzaya sahip olur:
 
 `HRESULT Execute(LONG* pcRows, ULONG cRestrictions, const VARIANT* rgRestrictions)`
 
-Oluşturuyorsanız bir `CRowsetImpl`-türetilmiş sınıf, bir komut veya oturumunun satır uygulamak için `Execute` yöntemi aşağıdaki imzası olacaktır:
+Bir komut veya oturumun satır kümesini uygulamak için `CRowsetImpl`türetilmiş bir sınıf oluşturuyorsanız, `Execute` yöntemi aşağıdaki imzaya sahip olur:
 
 `HRESULT Execute(LONG* pcRows, DBPARAMS* pParams)`
 
-Herhangi bir uygulama `CRowsetImpl`-türetilmiş `Execute` yöntemleri, iç veri arabelleklerinin doldurmanız gerekir ([m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md)).
+`CRowsetImpl`türetilen `Execute` yöntemlerinden herhangi birini uygulamak için iç veri arabelleklerinizi ([m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md)) doldurmanız gerekir.
 
-## <a name="namefromdbid"></a> CRowsetImpl::namefromdbıd
+## <a name="namefromdbid"></a>CRowsetImpl:: Namefromdbıd
 
-Bir dizeden ayıklar bir `DBID` ve kendisine kopyalar *bstr* geçirildi.
+Bir `DBID` dize ayıklar ve geçirilen *BSTR* 'ye kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -131,26 +130,26 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 #### <a name="parameters"></a>Parametreler
 
-*pDBID*<br/>
-[in] Bir işaretçi `DBID` ayıklanacağı bir dize.
+*Pddeklarasyon*<br/>
+'ndaki Bir dizenin ayıklanacağı `DBID` işaretçisi.
 
 *BSTR*<br/>
-[in] A [CComBSTR](../../atl/reference/ccombstr-class.md) bir kopyasını yerleştirmek için başvuru `DBID` dize.
+'ndaki `DBID` dizesinin bir kopyasını yerleştirmek için bir [CComBSTR](../../atl/reference/ccombstr-class.md) başvurusu.
 
 *bIndex*<br/>
-[in] **true** dizin varsa `DBID`; **false** bir tablo `DBID`.
+'ndaki Dizin `DBID`**true ise doğru** Tablo `DBID`**false** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Bağlı olarak `DBID` bir tablo veya dizin (çağrılarınızla *bIndex*), yöntem ya da DB_E_NOINDEX veya DB_E_NOTABLE döndürür.
+Standart HRESULT. `DBID` bir tablo veya dizin ( *Bindex*tarafından belirtilen) olmasına bağlı olarak, yöntem DB_E_NOINDEX veya DB_E_NOTABLE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağıran `CRowsetImpl` uygulamaları [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) ve [Getcommandfromıd](../../data/oledb/crowsetimpl-getcommandfromid.md).
+Bu yöntem, [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) ve [Getcommandfromın](../../data/oledb/crowsetimpl-getcommandfromid.md)`CRowsetImpl` uygulamaları tarafından çağrılır.
 
-## <a name="setcommandtext"></a> CRowsetImpl::setCommandText
+## <a name="setcommandtext"></a>CRowsetImpl:: SetCommandText
 
-Doğrular ve depolar `DBID`iki dizeyi s ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).
+`DBID`s 'yi iki dizinin ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)) doğrular ve depolar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -161,25 +160,25 @@ HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,
 
 #### <a name="parameters"></a>Parametreler
 
-*pTableID*<br/>
-[in] Bir işaretçi `DBID` temsil eden tablo kimliği.
+*PTableID*<br/>
+'ndaki Tablo KIMLIĞINI temsil eden `DBID` işaretçisi.
 
-*pIndexID*<br/>
-[in] Bir işaretçi `DBID` dizin kimliği temsil eden
+*Pındexıd*<br/>
+'ndaki Dizin KIMLIĞINI temsil eden `DBID` işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetCommentText` Yöntemi tarafından çağrılır `CreateRowset`, statik bir yöntemi şablonlaştırılmış `IOpenRowsetImpl`.
+`SetCommentText` yöntemi, `IOpenRowsetImpl`statik şablonlaştırılmış bir yöntem olan `CreateRowset`tarafından çağrılır.
 
-Bu yöntemi çağırarak işini Temsilciler [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) ve [Getcommandfromıd](../../data/oledb/crowsetimpl-getcommandfromid.md) upcasted bir işaretçi aracılığıyla.
+Bu yöntem, bir veya daha fazla bir işaretçi aracılığıyla [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) ve [Getcommandfromid](../../data/oledb/crowsetimpl-getcommandfromid.md) çağırarak işini devreder.
 
-## <a name="getcolumninfo"></a> CRowsetImpl::GetColumnInfo
+## <a name="getcolumninfo"></a>CRowsetImpl:: GetColumnInfo
 
-Belirli istemci isteği için sütun bilgileri alır.
+Belirli bir istemci isteği için sütun bilgilerini alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -190,29 +189,29 @@ static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,
 
 #### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-[in] Kullanıcının bir işaretçiye `CRowsetImpl` türetilmiş sınıf.
+*bakın*<br/>
+'ndaki Kullanıcının `CRowsetImpl` türetilmiş sınıfına yönelik bir işaretçi.
 
 *pcCols*<br/>
-[in] (Bir sayıya çıkış) bir işaretçi sütun döndürdü.
+'ndaki Döndürülen sütun sayısına yönelik bir işaretçi (çıkış).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Statik bir işaretçiye `ATLCOLUMNINFO` yapısı.
+Statik `ATLCOLUMNINFO` yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Gelişmiş bir geçersiz kılma kullanılır.
+Bu yöntem gelişmiş bir geçersiz kılma.
 
-Bu yöntem, belirli bir istemci isteği için sütun bilgileri almak için birkaç temel uygulama sınıfları tarafından çağrılır. Genellikle, bu yöntem çağrılır `IColumnsInfoImpl`. Bu yöntemi geçersiz kılarsanız, yöntem bir sürümünü yerleştirmeniz gerekir, `CRowsetImpl`-türetilmiş sınıf. Yöntem şablonlaştırılmış olmayan bir sınıfta yerleştirilmiş olabilir çünkü değiştirmeli *pv* uygun `CRowsetImpl`-türetilmiş sınıf.
+Bu yöntem, belirli bir istemci isteği için sütun bilgilerini almak üzere çeşitli temel uygulama sınıfları tarafından çağırılır. Genellikle, bu yöntem `IColumnsInfoImpl`tarafından çağırılır. Bu yöntemi geçersiz kılarsınız, yönteminin bir sürümünü `CRowsetImpl`türetilmiş sınıfınıza yerleştirmeniz gerekir. Yöntemi Şablonsuz bir sınıfa yerleştirilebileceği için, *BD* 'i uygun `CRowsetImpl`türetilmiş sınıfa değiştirmelisiniz.
 
-Aşağıdaki örnek, gösterir `GetColumnInfo` kullanım. Bu örnekte, `CMyRowset` olduğu bir `CRowsetImpl`-türetilmiş sınıf. Geçersiz kılmak için `GetColumnInfo` bu sınıfın tüm örnekleri için aşağıdaki yöntemi yerleştirin `CMyRowset` sınıf tanımını:
+Aşağıdaki örnekte `GetColumnInfo` kullanımı gösterilmektedir. Bu örnekte, `CMyRowset` `CRowsetImpl`türetilmiş bir sınıftır. Bu sınıfın tüm örnekleri için `GetColumnInfo` geçersiz kılmak için, `CMyRowset` sınıf tanımına aşağıdaki yöntemi koyun:
 
 [!code-cpp[NVC_OLEDB_Provider#1](../../data/oledb/codesnippet/cpp/crowsetimpl-getcolumninfo_1.h)]
 
-## <a name="getcommandfromid"></a> CRowsetImpl::getcommandfromıd
+## <a name="getcommandfromid"></a>CRowsetImpl:: GetCommandFromID
 
-Her ikisi de parametreleri dize değerleri içeriyorsa ve bu durumda olup olmadığını kontrol eder, veri üyelerine dize değerleri kopyalar [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).
+Her iki parametre de dize değerleri içeriyorsa ve bu durumda dize değerlerini [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)veri üyelerine kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -223,23 +222,23 @@ HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,
 
 #### <a name="parameters"></a>Parametreler
 
-*pTableID*<br/>
-[in] Bir işaretçi `DBID` tablo kimliği temsil eden
+*PTableID*<br/>
+'ndaki Tablo KIMLIĞINI temsil eden `DBID` işaretçisi.
 
-*pIndexID*<br/>
-[in] Bir işaretçi `DBID` dizin kimliği temsil eden
+*Pındexıd*<br/>
+'ndaki Dizin KIMLIĞINI temsil eden `DBID` işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir statik yukarı çevrim tarafından aracılığıyla çağrılır `CRowsetImpl` veri üyeleri doldurmak için [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md). Varsayılan olarak, bu yöntem, her ikisi de parametreleri dize değerleri içerip içermediğini görmek için denetler. Bunlar dize değer içermiyorsa, bu yöntem veri üyelerine dize değerleri kopyalar. Bu imzaya sahip bir yöntemi yerleştirerek, `CRowsetImpl`-türetilmiş sınıf, taban uygulamasını yerine yönteminiz olarak adlandırılır.
+Bu yöntem, [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)veri üyelerini doldurmak için `CRowsetImpl` tarafından statik bir yukarı dönüştürme aracılığıyla çağrılır. Varsayılan olarak, bu yöntem parametrelerin dize değerleri içerdiğini veya her ikisini de denetler. Dize değerleri içeriyorsa, bu yöntem dize değerlerini veri üyelerine kopyalar. `CRowsetImpl`türetilmiş sınıfınıza bu imzaya sahip bir yöntem yerleştirerek, yöntemi temel uygulama yerine çağırılır.
 
-## <a name="validatecommandid"></a> CRowsetImpl::ValidateCommandID
+## <a name="validatecommandid"></a>CRowsetImpl:: ValidateCommandID
 
-Ya da bakın veya her ikisini de denetler `DBID`s dize değerleri içeren ve bu durumda, veri üyeleri için kopyalar [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).
+`DBID`s veya her ikisi de dize değerleri içeriyorsa ve bu durumda bunları veri üyelerine [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -250,23 +249,23 @@ HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,
 
 #### <a name="parameters"></a>Parametreler
 
-*pTableID*<br/>
-[in] Bir işaretçi `DBID` temsil eden tablo kimliği.
+*PTableID*<br/>
+'ndaki Tablo KIMLIĞINI temsil eden `DBID` işaretçisi.
 
-*pIndexID*<br/>
-[in] Bir işaretçi `DBID` dizin kimliği temsil eden
+*Pındexıd*<br/>
+'ndaki Dizin KIMLIĞINI temsil eden `DBID` işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir statik yukarı çevrim tarafından aracılığıyla çağrılır `CRowsetImpl` veri üyelerini doldurmak için [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md). Varsayılan olarak, bu yöntem, ya da bakın veya her ikisini de denetler. `DBID`s dize değerleri içeren ve bu durumda, veri üyeleri için kopyalar. Bu imzaya sahip bir yöntemi yerleştirerek, `CRowsetImpl`-türetilmiş sınıf, taban uygulamasını yerine yönteminiz olarak adlandırılır.
+Bu yöntem, [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)veri üyelerini doldurmak için `CRowsetImpl` tarafından statik bir yukarı dönüştürme aracılığıyla çağrılır. Varsayılan olarak, bu yöntem `DBID`s veya her ikisi de dize değerleri içeriyorsa ve bu durumda bunları veri üyelerine kopyalar. `CRowsetImpl`türetilmiş sınıfınıza bu imzaya sahip bir yöntem yerleştirerek, yöntemi temel uygulama yerine çağırılır.
 
-## <a name="rgrowdata"></a> CRowsetImpl::m_rgRowData
+## <a name="rgrowdata"></a>CRowsetImpl:: m_rgRowData
 
-Varsayılan olarak, bir `CAtlArray` için kullanıcı kayıt şablon bağımsız değişkeni üzerinde templatizes `CRowsetImpl`.
+Varsayılan olarak, `CRowsetImpl`için Kullanıcı kayıt şablonu bağımsız değişkeninde şablonlaştırılmış bir `CAtlArray`.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -276,11 +275,11 @@ ArrayType CRowsetBaseImpl::m_rgRowData;
 
 ### <a name="remarks"></a>Açıklamalar
 
-*ArrayType* şablon parametresi `CRowsetImpl`.
+*ArrayType* `CRowsetImpl`bir şablon parametresidir.
 
-## <a name="strcommandtext"></a> CRowsetImpl::m_strCommandText
+## <a name="strcommandtext"></a>CRowsetImpl:: m_strCommandText
 
-Satır kümesinin başlangıç komutu içerir.
+Satır kümesinin ilk komutunu içerir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -288,9 +287,9 @@ Satır kümesinin başlangıç komutu içerir.
 CComBSTR CRowsetBaseImpl::m_strCommandText;
 ```
 
-## <a name="strindextext"></a> CRowsetImpl::m_strındextext
+## <a name="strindextext"></a>CRowsetImpl:: m_strIndexText
 
-Satır kümesinin başlangıç dizini içeriyor.
+Satır kümesinin ilk dizinini içerir.
 
 ### <a name="syntax"></a>Sözdizimi
 

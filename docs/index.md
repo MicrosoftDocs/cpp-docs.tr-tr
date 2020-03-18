@@ -3,13 +3,15 @@ layout: HubPage
 title: Görsel C++ belgeler
 description: Platformlarınız ve cihazlarınız C++ için uygulamalar, hizmetler ve araçlar geliştirmek üzere kullanmayı öğrenin.
 ms.topic: hub-page
-ms.openlocfilehash: 2a54776149bef58656380f6f03351083189ea6c1
-ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
+ms.openlocfilehash: f8d9b683e8030cbbafa9b3da57b4f7fd738ed3ac
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75793806"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446109"
 ---
+<!-- markdownlint-disable MD033 -->
+
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
@@ -60,7 +62,7 @@ ms.locfileid: "75793806"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Visual Studio C++ 'daki yenilikler</h3>
+                                    <h3>Visual Studio 2017’deki C++ yenilikleri</h3>
                                 </div>
                             </div>
                         </div>
@@ -73,10 +75,10 @@ ms.locfileid: "75793806"
         <h1>Görsel C++ belgeler</h1>
         <ul class="pivots">
             <li>
-                <a href="#workloads">İş yükleri</a>
+                <a href="#workloads">Iş yükleri</a>
                 <ul id="workloads">
                     <li>
-                        <a href="#workloads1">İş yükleri</a>
+                        <a href="#workloads1">Iş yükleri</a>
                         <ul id="workloads1" class="cardsC">
                             <li>
                                 <a href="/cpp/cppcx/universal-windows-apps-cpp">
@@ -146,7 +148,7 @@ ms.locfileid: "75793806"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>C++ ile Mobil Geliştirme</h3>
+                                                    <h3>C++ ile mobil geliştirme</h3>
                                                     <p>İOS, Android ve UWP için mobil uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
@@ -232,7 +234,7 @@ ms.locfileid: "75793806"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>{1&gt;Yapı (Build)&lt;1}</h3>
+                                                    <h3>Oluşturma</h3>
                                                     <p>Kodunuzu derleyin ve bağlayın ve en yüksek aktarım hızı için iyileştirin.</p>
                                                 </div>
                                             </div>
@@ -270,7 +272,7 @@ ms.locfileid: "75793806"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>{1&gt;Sınama&lt;1}</h3>
+                                                    <h3>Test etme</h3>
                                                     <p>C++ Kodunuz için birim testleri oluşturun.</p>
                                                 </div>
                                             </div>
@@ -289,7 +291,7 @@ ms.locfileid: "75793806"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>dağıtımı</h3>
+                                                    <h3>Dağıtma</h3>
                                                     <p>Bitmiş programınızı son kullanıcılara dağıtın.</p>
                                                 </div>
                                             </div>
@@ -309,7 +311,7 @@ ms.locfileid: "75793806"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Performansı Artırma</h3>
-                                                    <p>Performans sorunlarını belirleme ve tanılama araçları ile kod performansını iyileştirin.</p>
+                                                    <p>Tanılama araçlarını kullanarak performans sorunlarını belirleyin ve kod performansını iyileştirin.</p>
                                                 </div>
                                             </div>
                                         </div>

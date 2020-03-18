@@ -3,24 +3,22 @@ title: CCustomRowset (CustomRS.H)
 ms.date: 10/22/2018
 f1_keywords:
 - cmyproviderrowset
-- myproviderrs.h
 - ccustomrowset
-- customrs.h
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderRowset class in MyProviderRS.H
 - CCustomRowset class in CustomRS.H
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
-ms.openlocfilehash: 9f9dcb97ecd6b5f37f1af2187abf8b5612eedce3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c84ff359bdbb39f281928fa0135edd40b1f7d20
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230669"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446085"
 ---
 # <a name="ccustomrowset-customrsh"></a>CCustomRowset (CustomRS.H)
 
-Sihirbaz, bir giriş satır kümesi nesnesi oluşturur. Bu durumda, adlı `CCustomRowset`. `CCustomRowset` Sınıfı olarak adlandırılan bir OLE DB sağlayıcısı sınıfından devralan `CRowsetImpl`, satır kümesi nesnesi için tüm gerekli arabirimleri uygular. Aşağıdaki kod için devralma zincirini göstermektedir `CRowsetImpl`:
+Sihirbaz, satır kümesi nesnesi için bir giriş oluşturur. Bu durumda, `CCustomRowset`çağırılır. `CCustomRowset` sınıfı, satır kümesi nesnesi için gerekli tüm arabirimleri uygulayan `CRowsetImpl`adlı OLE DB sağlayıcı sınıfından devralır. Aşağıdaki kod `CRowsetImpl`devralma zincirini gösterir:
 
 ```cpp
 template <class T, class Storage, class CreatorClass, 
@@ -30,13 +28,13 @@ class CMyRowsetImpl:
       CSimpleRow, IRowsetLocateImpl< T >>
 ```
 
-`CRowsetImpl` Ayrıca kullanan `IAccessor` ve `IColumnsInfo` arabirimleri. Bu arabirimler, tablolardaki çıktı alanları için kullanır. Sınıfı için bir uygulama sağlar `IRowsetIdentity`, iki satır aynı olup olmadığını belirlemek tüketici sağlar. `IRowsetInfo` Arabirimi uygulayan satır kümesi nesnesi için özellikler. `IConvertType` Tüketici tarafından istenen veri türleri ve sağlayıcı tarafından kullanılan arasındaki farklılıkları çözmeye sağlayıcı arabirimi sağlar.
+`CRowsetImpl` Ayrıca `IAccessor` ve `IColumnsInfo` arabirimlerini kullanır. Tablolardaki çıktı alanları için bu arabirimleri kullanır. Sınıfı ayrıca, `IRowsetIdentity`için bir uygulama sağlar ve bu da tüketicinin iki satır aynı olup olmadığını belirlemesine izin verir. `IRowsetInfo` arabirimi satır kümesi nesnesinin özelliklerini uygular. `IConvertType` arabirimi, sağlayıcının tüketici tarafından istenen veri türleri arasındaki farkları ve sağlayıcı tarafından kullanılan farklılıkları çözümlemesine izin verir.
 
-`IRowset` Arabirimi aslında veri almayı da işler. Tüketici ilk adlı bir yöntemi çağıran `GetNextRows` olarak bilinen, bir satır için bir tanıtıcı döndürülecek bir `HROW`. Daha sonra tüketici çağırır `IRowset::GetData` , ile `HROW` istenen verileri almak için.
+`IRowset` arabirimi aslında veri alımını işler. Tüketici, `HROW`olarak bilinen bir satıra tanıtıcı döndürmek için `GetNextRows` adlı bir yöntemi çağırır. Ardından tüketici, istenen verileri almak için bu `HROW` `IRowset::GetData` çağırır.
 
-`CRowsetImpl` Ayrıca birkaç şablon parametresi alır. Bu parametreleri belirlemenizi sağlar nasıl `CRowsetImpl` sınıf verilerini işler. `ArrayType` Bağımsız değişkeni hangi depolama mekanizmasını satır verileri depolamak için kullanılan belirlemenize olanak verir. *RowClass* parametresinin belirttiği hangi sınıfı içeren bir `HROW`.
+`CRowsetImpl` Ayrıca birkaç şablon parametresi alır. Bu parametreler `CRowsetImpl` sınıfının verileri nasıl işleyeceğini belirlemenizi sağlar. `ArrayType` bağımsız değişkeni, satır verilerini depolamak için kullanılan depolama mekanizmasını belirlemenizi sağlar. *RowClass* parametresi hangi sınıfın `HROW`içerdiğini belirtir.
 
-*RowsetInterface* parametresi de kullanmanıza olanak verir `IRowsetLocate` veya `IRowsetScroll` arabirimi. `IRowsetLocate` Ve `IRowsetScroll` arabirimleri hem de devralan `IRowset`. Bu nedenle, OLE DB sağlayıcı şablonları özel işleme için bu arabirimler sağlamanız gerekir. Bu arabirimler birini kullanmak istiyorsanız, bu parametreyi kullanmanız gerekir.
+*RowsetInterface* parametresi, `IRowsetLocate` veya `IRowsetScroll` arabirimini de kullanmanıza olanak sağlar. `IRowsetLocate` ve `IRowsetScroll` arabirimleri her ikisi de `IRowset`devralınır. Bu nedenle, OLE DB sağlayıcı şablonlarının bu arabirimler için özel işleme sağlaması gerekir. Bu arabirimlerden birini kullanmak istiyorsanız bu parametreyi kullanmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

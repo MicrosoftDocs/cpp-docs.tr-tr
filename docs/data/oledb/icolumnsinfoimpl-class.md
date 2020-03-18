@@ -7,7 +7,6 @@ f1_keywords:
 - IColumnsInfoImpl
 - ATL.IColumnsInfoImpl
 - ATL::IColumnsInfoImpl<T>
-- GetColumnInfo
 - ATL::IColumnsInfoImpl::GetColumnInfo
 - ATL.IColumnsInfoImpl.GetColumnInfo
 - ATL::IColumnsInfoImpl<T>::GetColumnInfo
@@ -27,16 +26,16 @@ helpviewer_keywords:
 - GetColumnInfo method
 - MapColumnIDs method
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
-ms.openlocfilehash: d9fbe95f87cfdf51ae9c52c7890e6f6c4075c89a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2eb7714762de8ccf810a8fdd04ee33ae24e9d431
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409154"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447063"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl Sınıfı
 
-Bir uygulamasını sağlar [IColumnsInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabirimi.
+[IColumnsInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,12 +48,12 @@ class ATL_NO_VTABLE IColumnsInfoImpl :
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IColumnsInfoImpl`.
+*Şı*<br/>
+Sınıfınız `IColumnsInfoImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -62,16 +61,16 @@ Sınıfınız, türetilen `IColumnsInfoImpl`.
 
 |||
 |-|-|
-|[GetColumnInfo](#getcolumninfo)|Çoğu tüketiciler tarafından gerekli sütun meta verileri döndürür.|
-|[MapColumnIDs](#mapcolumnids)|Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayıları dizisini döndürür.|
+|[GetColumnInfo](#getcolumninfo)|Çoğu tüketiciden gereken sütun meta verilerini döndürür.|
+|[MapColumnIDs](#mapcolumnids)|Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayılarını dizisini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Satır kümeleri ve komutları zorunlu bir arabirim. Sağlayıcınızın davranışını değiştirmek için `IColumnsInfo` uygulama, sağlayıcı sütun eşlemesini değiştirmek için ihtiyacınız.
+Satır kümelerinde ve komutlarda zorunlu arabirim. Sağlayıcınızın `IColumnsInfo` uygulamasının davranışını değiştirmek için sağlayıcı sütun haritasını değiştirmeniz gerekir.
 
-## <a name="getcolumninfo"></a> Icolumnsınfoımpl::GetColumnInfo
+## <a name="getcolumninfo"></a>IColumnsInfoImpl:: GetColumnInfo
 
-Çoğu tüketiciler tarafından gerekli sütun meta verileri döndürür.
+Çoğu tüketiciden gereken sütun meta verilerini döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -83,11 +82,11 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) bölümüne bakın.
 
-## <a name="mapcolumnids"></a> Icolumnsınfoımpl::mapcolumnıds
+## <a name="mapcolumnids"></a>IColumnsInfoImpl:: MapColumnIDs
 
-Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayıları dizisini döndürür.
+Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayılarını dizisini döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -99,7 +98,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IColumnsInfo:: MapColumnIDs](/previous-versions/windows/desktop/ms714200(v=vs.85)) öğesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

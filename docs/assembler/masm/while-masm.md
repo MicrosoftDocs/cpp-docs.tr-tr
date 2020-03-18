@@ -1,17 +1,15 @@
 ---
 title: WHILE (MASM)
 ms.date: 12/16/2019
-f1_keywords:
-- while
 helpviewer_keywords:
 - WHILE directive
 ms.assetid: ff9d908e-7e7f-4983-9f6b-31ff51ef0fad
-ms.openlocfilehash: b5c6f88933883e1620ae4990865cbe025ac0c099
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: fe847db16802abde41986f8aeb15eec70fdddfbe
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318364"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440526"
 ---
 # <a name="while"></a>WHILE
 
@@ -19,7 +17,7 @@ ms.locfileid: "75318364"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *ConstantExpression*\
+> **WHILE** *ConstantExpression*\
 > *deyimler*\
 > **ENDM**
 

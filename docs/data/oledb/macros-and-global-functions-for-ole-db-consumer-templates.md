@@ -2,7 +2,6 @@
 title: OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 ms.date: 02/11/2019
 f1_keywords:
-- vc.templates.ole
 - ATL.AtlTraceErrorRecords
 - ATL::AtlTraceErrorRecords
 - AtlTraceErrorRecords
@@ -100,90 +99,90 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: 854172de41ba6298d598801439d459b423c1ab37
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: 83d38dda61d973b2d176ee7164011d665ee04655
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861160"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446852"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 
-OLE DB Tüketici şablonları aşağıdaki makroları ve genel işlevler şunlardır:
+OLE DB tüketici şablonları aşağıdaki makroları ve genel işlevleri içerir:
 
-## <a name="global-functions"></a>Genel işlevleri
+## <a name="global-functions"></a>Genel Işlevler
 
 |||
 |-|-|
-|[AtlTraceErrorRecords](#atltraceerrorrecords)|Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm cihaza dökümünü yapar.|
+|[AtlTraceErrorRecords](#atltraceerrorrecords)|Hata döndürülürse OLE DB hata kayıt bilgilerini döküm cihazına döker.|
 
 ## <a name="accessor-map-macros"></a>Erişimci eşleme makroları
 
 |||
 |-|-|
-|[BEGIN_ACCESSOR](#begin_accessor)|Bir erişimci giriş başlangıcına işaret eder.|
-|[BEGIN_ACCESSOR_MAP](#begin_accessor_map)|Erişimci eşleme girişleri başlangıcını işaretler.|
-|[END_ACCESSOR](#end_accessor)|Bir erişimci girdinin sonunu işaretler.|
-|[END_ACCESSOR_MAP](#end_accessor_map)|Erişimci eşleme girişleri sonunu işaretler.|
+|[BEGIN_ACCESSOR](#begin_accessor)|Erişimci girişinin başlangıcını işaretler.|
+|[BEGIN_ACCESSOR_MAP](#begin_accessor_map)|Erişimci eşleme girdilerinin başlangıcını işaretler.|
+|[END_ACCESSOR](#end_accessor)|Erişimci girişinin sonunu işaretler.|
+|[END_ACCESSOR_MAP](#end_accessor_map)|Erişimci eşleme girdilerinin sonunu işaretler.|
 
-## <a name="column-map-macros"></a>Sütun eşleme makroları
+## <a name="column-map-macros"></a>Sütun Haritası makroları
 
 |||
 |-|-|
-|[BEGIN_COLUMN_MAP](#begin_column_map)|Kullanıcı kayıt sınıfı sütun eşleme girişleri başlangıcını işaretler.|
+|[BEGIN_COLUMN_MAP](#begin_column_map)|Kullanıcı kayıt sınıfındaki sütun eşleme girdilerinin başlangıcını işaretler.|
 |[BLOB_ENTRY](#blob_entry)|İkili büyük nesne (BLOB) bağlamak için kullanılır.|
-|[BLOB_ENTRY_LENGTH](#blob_entry_length)|BLOB veri sütununun uzunluğu bildirir.|
-|[BLOB_ENTRY_LENGTH_STATUS](#blob_entry_length_status)|Uzunluğu ve BLOB veri sütununu durumunu raporlar.|
-|[BLOB_ENTRY_STATUS](#blob_entry_status)|BLOB veri sütununu durumunu raporlar.|
-|[BLOB_NAME](#blob_name)|İkili büyük nesne sütunu adıyla bağlamak için kullanılır.|
-|[BLOB_NAME_LENGTH](#blob_name_length)|BLOB veri sütununun uzunluğu bildirir.|
-|[BLOB_NAME_LENGTH_STATUS](#blob_name_length_status)|Uzunluğu ve BLOB veri sütununu durumunu raporlar.|
-|[BLOB_NAME_STATUS](#blob_name_status)|BLOB veri sütununu durumunu raporlar.|
-|[BOOKMARK_ENTRY](#bookmark_entry)|Satır kümesi bir yer işareti girdisini temsil eder. Bir yer işareti girişi sütunu giriş özel türüdür.|
-|[COLUMN_ENTRY](#column_entry)|Veritabanındaki belirli bir sütuna bağlama temsil eder.|
-|[COLUMN_ENTRY_EX](#column_entry_ex)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü*, *uzunluğu*, *duyarlık*, *ölçek*, ve *durumu* parametreleri.|
-|[COLUMN_ENTRY_LENGTH](#column_entry_length)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *uzunluğu* değişkeni.|
-|[COLUMN_ENTRY_LENGTH_STATUS](#column_entry_length_status)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *durumu* ve *uzunluğu* parametreleri.|
-|[COLUMN_ENTRY_PS](#column_entry_ps)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *duyarlık* ve *ölçek* parametreleri.|
-|[COLUMN_ENTRY_PS_LENGTH](#column_entry_ps_length)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *uzunluğu* değişken *duyarlık* ve *ölçek* parametreleri.|
-|[COLUMN_ENTRY_PS_LENGTH_STATUS](#column_entry_ps_length_status)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *durumu* ve *uzunluğu* değişkenleri *duyarlık* ve *ölçek* parametreleri.|
-|[COLUMN_ENTRY_PS_STATUS](#column_entry_ps_status)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *durumu* değişken *duyarlık* ve *ölçek* parametreleri.|
-|[COLUMN_ENTRY_STATUS](#column_entry_status)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *durumu* değişkeni.|
-|[COLUMN_ENTRY_TYPE](#column_entry_type)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü* parametresi.|
-|[COLUMN_ENTRY_TYPE_SIZE](#column_entry_type_size)|Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü* ve *boyutu* parametreleri.|
-|[COLUMN_NAME](#column_name)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder.|
-|[COLUMN_NAME_EX](#column_name_ex)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Veri türü, boyutu, kesinlik, Ölçek, sütun uzunluğu ve sütun durum belirtimini destekler.|
-|[COLUMN_NAME_LENGTH](#column_name_length)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Sütun uzunluğu belirtimi destekler.|
-|[COLUMN_NAME_LENGTH_STATUS](#column_name_length_status)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Sütun uzunluğu ve durum belirtimini destekler.|
-|[COLUMN_NAME_PS](#column_name_ps)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Kesinlik ve ölçek belirtimini destekler.|
-|[COLUMN_NAME_PS_LENGTH](#column_name_ps_length)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Kesinlik ve ölçek sütun uzunluğu belirtimi destekler.|
-|[COLUMN_NAME_PS_LENGTH_STATUS](#column_name_ps_length_status)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Duyarlık, Ölçek, sütun uzunluğu ve sütun durum belirtimini destekler.|
-|[COLUMN_NAME_PS_STATUS](#column_name_ps_status)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Kesinlik ve ölçek sütun durum belirtimini destekler.|
-|[COLUMN_NAME_STATUS](#column_name_status)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Sütun durumu belirtimini destekler.|
-|[COLUMN_NAME_TYPE](#column_name_type)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Veri türü belirtimi destekler.|
-|[COLUMN_NAME_TYPE_PS](#column_name_type_ps)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Veri türü, kesinlik ve ölçek belirtimini destekler.|
-|[COLUMN_NAME_TYPE_SIZE](#column_name_type_size)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Veri türü ve boyut belirtimi destekler.|
-|[COLUMN_NAME_TYPE_STATUS](#column_name_type_status)|Veritabanındaki belirli bir sütuna bağlama adına göre temsil eder. Veri türü ve sütun durumu belirtimini destekler.|
-|[END_COLUMN_MAP](#end_column_map)|Sütun eşleme girişleri sonunu işaretler.|
+|[BLOB_ENTRY_LENGTH](#blob_entry_length)|BLOB veri sütununun uzunluğunu raporlar.|
+|[BLOB_ENTRY_LENGTH_STATUS](#blob_entry_length_status)|BLOB veri sütununun uzunluğunu ve durumunu raporlar.|
+|[BLOB_ENTRY_STATUS](#blob_entry_status)|BLOB veri sütununun durumunu raporlar.|
+|[BLOB_NAME](#blob_name)|Bir ikili büyük nesneyi sütun adına göre bağlamak için kullanılır.|
+|[BLOB_NAME_LENGTH](#blob_name_length)|BLOB veri sütununun uzunluğunu raporlar.|
+|[BLOB_NAME_LENGTH_STATUS](#blob_name_length_status)|BLOB veri sütununun uzunluğunu ve durumunu raporlar.|
+|[BLOB_NAME_STATUS](#blob_name_status)|BLOB veri sütununun durumunu raporlar.|
+|[BOOKMARK_ENTRY](#bookmark_entry)|Satır kümesindeki bir yer işareti girişini temsil eder. Yer işareti girişi, özel bir sütun girişi türüdür.|
+|[COLUMN_ENTRY](#column_entry)|Veritabanında belirli bir sütuna bağlamayı temsil eder.|
+|[COLUMN_ENTRY_EX](#column_entry_ex)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Tür*, *uzunluk*, *duyarlık*, *Ölçek*ve *durum* parametrelerini destekler.|
+|[COLUMN_ENTRY_LENGTH](#column_entry_length)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Uzunluk* değişkenini destekler.|
+|[COLUMN_ENTRY_LENGTH_STATUS](#column_entry_length_status)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Durum* ve *uzunluk* parametrelerini destekler.|
+|[COLUMN_ENTRY_PS](#column_entry_ps)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Duyarlık* ve *Ölçek* parametrelerini destekler.|
+|[COLUMN_ENTRY_PS_LENGTH](#column_entry_ps_length)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Length* değişkenini, *duyarlık* ve *Ölçek* parametrelerini destekler.|
+|[COLUMN_ENTRY_PS_LENGTH_STATUS](#column_entry_ps_length_status)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Durum* ve *uzunluk* değişkenlerini, *duyarlık* ve *Ölçek* parametrelerini destekler.|
+|[COLUMN_ENTRY_PS_STATUS](#column_entry_ps_status)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Durum* değişkenini, *duyarlık* ve *Ölçek* parametrelerini destekler.|
+|[COLUMN_ENTRY_STATUS](#column_entry_status)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Durum* değişkenini destekler.|
+|[COLUMN_ENTRY_TYPE](#column_entry_type)|Veritabanında belirli bir sütuna bağlamayı temsil eder. *Tür* parametresini destekler.|
+|[COLUMN_ENTRY_TYPE_SIZE](#column_entry_type_size)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Tür* ve *Boyut* parametrelerini destekler.|
+|[COLUMN_NAME](#column_name)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder.|
+|[COLUMN_NAME_EX](#column_name_ex)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Veri türü, boyut, duyarlık, ölçek, sütun uzunluğu ve sütun durumunun belirtimini destekler.|
+|[COLUMN_NAME_LENGTH](#column_name_length)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Sütun uzunluğunun belirtimini destekler.|
+|[COLUMN_NAME_LENGTH_STATUS](#column_name_length_status)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Sütun uzunluğu ve durumunun belirtimini destekler.|
+|[COLUMN_NAME_PS](#column_name_ps)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Duyarlık ve ölçek belirtimini destekler.|
+|[COLUMN_NAME_PS_LENGTH](#column_name_ps_length)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Duyarlık, ölçek ve sütun uzunluğunun belirtimini destekler.|
+|[COLUMN_NAME_PS_LENGTH_STATUS](#column_name_ps_length_status)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Duyarlık, ölçek, sütun uzunluğu ve sütun durumunun belirtimini destekler.|
+|[COLUMN_NAME_PS_STATUS](#column_name_ps_status)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Duyarlık, ölçek ve sütun durumunun belirtimini destekler.|
+|[COLUMN_NAME_STATUS](#column_name_status)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Sütun durumunun belirtimini destekler.|
+|[COLUMN_NAME_TYPE](#column_name_type)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Veri türü belirtimini destekler.|
+|[COLUMN_NAME_TYPE_PS](#column_name_type_ps)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Veri türü, duyarlık ve ölçek belirtimini destekler.|
+|[COLUMN_NAME_TYPE_SIZE](#column_name_type_size)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Veri türü ve boyutunun belirtimini destekler.|
+|[COLUMN_NAME_TYPE_STATUS](#column_name_type_status)|Veritabanında bir ada göre belirli bir sütuna bağlamayı temsil eder. Veri türü ve sütun durumunun belirtimini destekler.|
+|[END_COLUMN_MAP](#end_column_map)|Sütun eşleme girdilerinin sonunu işaretler.|
 
 ## <a name="command-macros"></a>Komut makroları
 
 |||
 |-|-|
-|[DEFINE_COMMAND](#define_command)|Satır kümesi kullanırken oluşturmak için kullanılacak komut belirtir [CCommand](../../data/oledb/ccommand-class.md) sınıfı. Yalnızca belirtilen uygulama türünü (ANSI veya Unicode) eşleşen dize türleri kabul eder. Kullanmanız önerilir [defıne_command_ex](../../data/oledb/define-command-ex.md) DEFINE_COMMAND yerine.|
-|[DEFINE_COMMAND_EX](#define_command_ex)|Satır kümesi kullanırken oluşturmak için kullanılacak komut belirtir [CCommand](../../data/oledb/ccommand-class.md) sınıfı. ANSI ve Unicode uygulamalarını destekler.|
+|[DEFINE_COMMAND](#define_command)|[CCommand](../../data/oledb/ccommand-class.md) sınıfı kullanılırken satır kümesini oluşturmak için kullanılacak komutu belirtir. Yalnızca belirtilen uygulama türüyle eşleşen dize türlerini kabul eder (ANSI veya Unicode). DEFINE_COMMAND yerine [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) kullanmanız önerilir.|
+|[DEFINE_COMMAND_EX](#define_command_ex)|[CCommand](../../data/oledb/ccommand-class.md) sınıfı kullanılırken satır kümesini oluşturmak için kullanılacak komutu belirtir. ANSI ve Unicode uygulamalarını destekler.|
 
 ## <a name="parameter-map-macros"></a>Parametre eşleme makroları
 
 |||
 |-|-|
-|[BEGIN_PARAM_MAP](#begin_param_map)|Kullanıcı kayıt sınıfı parametre eşleme girişleri başlangıcını işaretler.|
-|[END_PARAM_MAP](#end_param_map)|Parametre eşleme girişleri sonunu işaretler.|
-|[SET_PARAM_TYPE](#set_param_type)|SET_PARAM_TYPE makrosu giriş, çıkış ve giriş/çıkış izleyin COLUMN_ENTRY makroları belirtir.|
+|[BEGIN_PARAM_MAP](#begin_param_map)|Kullanıcı kayıt sınıfındaki parametre eşleme girdilerinin başlangıcını işaretler.|
+|[END_PARAM_MAP](#end_param_map)|Parametre eşleme girdilerinin sonunu işaretler.|
+|[SET_PARAM_TYPE](#set_param_type)|Giriş, çıkış veya giriş/çıkış olarak SET_PARAM_TYPE makrosunu izleyen COLUMN_ENTRY makroları belirtir.|
 
-### <a name="atltraceerrorrecords"></a> AtlTraceErrorRecords
+### <a name="atltraceerrorrecords"></a>AtlTraceErrorRecords
 
-Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm cihaza dökümünü yapar.
+Hata döndürülürse OLE DB hata kayıt bilgilerini döküm cihazına döker.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -194,15 +193,15 @@ inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);
 #### <a name="parameters"></a>Parametreler
 
 *hErr*<br/>
-[in] Bir OLE DB tüketici şablonu üye işlevi tarafından döndürülen HRESULT.
+'ndaki OLE DB Tüketici şablonu üye işlevi tarafından döndürülen bir HRESULT.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Varsa *hErr* S_OK, değil `AtlTraceErrorRecords` OLE DB hata kaydı bilgi döküm cihaza dökümleri ( **hata ayıklama** sekmesine çıkış penceresine veya bir dosya). Sağlayıcıdan alınan hata kaydı bilgileri her bir hata kayıt girişi için satır numarası, kaynak, açıklama, Yardım dosyası, bağlam ve GUID içerir. `AtlTraceErrorRecords` Bu bilgileri yalnızca hata ayıklama dökümleri. Sürüm yapılandırmasında bu çıkış iyileştirilmiş boş bir saptama olur. Daha fazla bilgi için [Cdberrorınfo sınıfı](../../data/oledb/cdberrorinfo-class.md).
+*Herr* S_OK değilse, `AtlTraceErrorRecords` döküm cihazına OLE DB hata kayıt bilgilerini (çıktı penceresinin veya bir dosyanın **hata ayıklama** sekmesi) kaydeder. Sağlayıcıdan elde edilen hata kayıt bilgileri, her bir hata kaydı girişi için satır numarası, kaynak, açıklama, yardım dosyası, bağlam ve GUID içerir. `AtlTraceErrorRecords`, bu bilgileri yalnızca hata ayıklama yapılarında döker. Yayın yapıları ' nda, en iyi duruma getirilmiş boş bir saplama olur. Daha fazla bilgi için bkz. [CDBErrorInfo sınıfı](../../data/oledb/cdberrorinfo-class.md).
 
-### <a name="begin_accessor"></a> BEGIN_ACCESSOR
+### <a name="begin_accessor"></a>BEGIN_ACCESSOR
 
-Bir erişimci giriş başlangıcına işaret eder.
+Erişimci girişinin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -212,23 +211,23 @@ BEGIN_ACCESSOR(num, bAuto)
 
 #### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-[in] Bu erişimci harita erişimcisinde sıfır uzaklığı numarası.
+*numaraları*<br/>
+'ndaki Bu erişimci eşlemesindeki erişimcinin sıfır-fark numarası.
 
-*bDil*<br/>
-[in] Bu erişimci erişimci otomatik veya el ile erişimci olup olmadığını belirtir. Varsa **true**, erişimci otomatik; ise **false**, erişimci el ile gerçekleştirilir. Otomatik erişimci, veri taşıma işlemleri sizin için alınmadığı anlamına gelir.
+*bAuto*<br/>
+'ndaki Bu erişimcinin bir otomatik erişimci mi yoksa el ile bir erişimci mi olduğunu belirtir. **True**ise erişimci Auto 'dur; **false**ise, erişimci el ile yapılır. Otomatik erişimci, veri taşıma işlemlerinde sizin için getirilir anlamına gelir.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üzerinde bir satır kümesinde çoklu erişimci söz konusu olduğunda BEGIN_ACCESSOR_MAP belirtin ve BEGIN_ACCESSOR makrosu kullanmak için tek tek her erişimci gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. BEGIN_ACCESSOR_MAP makrosu END_ACCESSOR_MAP makrosu ile tamamlanır.
+Bir satır kümesinde birden çok erişimci olması durumunda BEGIN_ACCESSOR_MAP belirtmeniz ve her bir erişimci için BEGIN_ACCESSOR makrosunu kullanmanız gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. BEGIN_ACCESSOR_MAP makrosu END_ACCESSOR_MAP makrosu ile tamamlanır.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
+Bkz. [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
 
-### <a name="begin_accessor_map"></a> BEGIN_ACCESSOR_MAP
+### <a name="begin_accessor_map"></a>BEGIN_ACCESSOR_MAP
 
-Erişimci eşleme girişleri başlangıcını işaretler.
+Erişimci eşleme girdilerinin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -238,17 +237,17 @@ BEGIN_ACCESSOR_MAP(x, num)
 
 #### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-[in] Kullanıcı kayıt sınıfı adı.
-
 *sayı*<br/>
-[in] Bu erişimci haritada erişimcileri sayısı.
+'ndaki Kullanıcı kayıt sınıfının adı.
+
+*numaraları*<br/>
+'ndaki Bu erişimci eşlemesindeki erişimcilerinin sayısı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üzerinde bir satır kümesinde çoklu erişimci söz konusu olduğunda, başında BEGIN_ACCESSOR_MAP belirtin ve BEGIN_ACCESSOR makrosu kullanmak için tek tek her erişimci gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. END_ACCESSOR_MAP makrosu ile erişimci harita tamamlandı.
+Bir satır kümesinde birden çok erişimci olması durumunda, başlangıçta BEGIN_ACCESSOR_MAP belirtmeniz ve her bir erişimci için BEGIN_ACCESSOR makrosunu kullanmanız gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. Erişimci eşlemesi END_ACCESSOR_MAP makrosu ile tamamlanır.
 
-Kullanıcı kaydına yalnızca bir erişimcisi varsa, makroyu kullanın [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md).
+Kullanıcı kaydında yalnızca bir erişimci varsa, [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md)makrosunu kullanın.
 
 #### <a name="example"></a>Örnek
 
@@ -295,9 +294,9 @@ END_ACCESSOR_MAP()
 };
 ```
 
-### <a name="end_accessor"></a> END_ACCESSOR
+### <a name="end_accessor"></a>END_ACCESSOR
 
-Bir erişimci girdinin sonunu işaretler.
+Erişimci girişinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -307,15 +306,15 @@ END_ACCESSOR()
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üzerinde bir satır kümesinde çoklu erişimci için BEGIN_ACCESSOR_MAP belirtin ve BEGIN_ACCESSOR makrosu kullanmak için tek tek her erişimci gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. BEGIN_ACCESSOR_MAP makrosu END_ACCESSOR_MAP makrosu ile tamamlanır.
+Bir satır kümesinde birden çok erişimci için, BEGIN_ACCESSOR_MAP belirtmeniz ve her bir erişimci için BEGIN_ACCESSOR makrosunu kullanmanız gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. BEGIN_ACCESSOR_MAP makrosu END_ACCESSOR_MAP makrosu ile tamamlanır.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
+Bkz. [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
 
-### <a name="end_accessor_map"></a> END_ACCESSOR_MAP
+### <a name="end_accessor_map"></a>END_ACCESSOR_MAP
 
-Erişimci eşleme girişleri sonunu işaretler.
+Erişimci eşleme girdilerinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -325,15 +324,15 @@ END_ACCESSOR_MAP()
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üzerinde bir satır kümesinde çoklu erişimci için BEGIN_ACCESSOR_MAP belirtin ve BEGIN_ACCESSOR makrosu kullanmak için tek tek her erişimci gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. BEGIN_ACCESSOR_MAP makrosu END_ACCESSOR_MAP makrosu ile tamamlanır.
+Bir satır kümesinde birden çok erişimci için, BEGIN_ACCESSOR_MAP belirtmeniz ve her bir erişimci için BEGIN_ACCESSOR makrosunu kullanmanız gerekir. BEGIN_ACCESSOR makrosu END_ACCESSOR makrosu ile tamamlanır. BEGIN_ACCESSOR_MAP makrosu END_ACCESSOR_MAP makrosu ile tamamlanır.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
+Bkz. [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
 
-### <a name="begin_column_map"></a> BEGIN_COLUMN_MAP
+### <a name="begin_column_map"></a>BEGIN_COLUMN_MAP
 
-Sütun eşleme girişi başlangıcını işaretler.
+Sütun Haritası girişinin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -343,26 +342,26 @@ BEGIN_COLUMN_MAP(x)
 
 #### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-[in] Kullanıcı kayıt sınıfı adını türetilen `CAccessor`.
+*sayı*<br/>
+'ndaki `CAccessor`türetilen Kullanıcı kayıt sınıfının adı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, bir satır kümesi üzerinde tek bir erişimci söz konusu olduğunda kullanılır. Satır kümesinde çoklu erişimci varsa, [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
+Bu makro, bir satır kümesinde tek bir erişimci olması durumunda kullanılır. Satır kümesinde birden çok erişimci varsa [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)kullanın.
 
-BEGIN_COLUMN_MAP makrosu END_COLUMN_MAP makrosu ile tamamlanır. Bu makro, yalnızca bir erişimci kullanıcı kaydında gerekli olduğunda kullanılır.
+BEGIN_COLUMN_MAP makrosu END_COLUMN_MAP makrosu ile tamamlanır. Bu makro, Kullanıcı kaydında yalnızca bir erişimci gerektiğinde kullanılır.
 
-Sütunları bağlamak istediğiniz satır kümesi içindeki alanlara karşılık gelir.
+Sütunlar, bağlamak istediğiniz satır kümesindeki alanlara karşılık gelir.
 
 #### <a name="example"></a>Örnek
 
-Bir örnek sütun ve parametre eşlemesi şu şekildedir:
+Örnek bir sütun ve parametre eşlemesi aşağıda verilmiştir:
 
 <!--[!CODE [NVC_OLEDB_Consumer#16](../codesnippet/vs_snippets_cpp/nvc_oledb_consumer#16)]  -->
 
-### <a name="blob_entry"></a> BLOB_ENTRY
+### <a name="blob_entry"></a>BLOB_ENTRY
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))).
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -373,24 +372,24 @@ BLOB_ENTRY(nOrdinal, IID, flags, data)
 #### <a name="parameters"></a>Parametreler
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).
+Bkz. [nasıl bır blob alabilirim?](../../data/oledb/retrieving-a-blob.md).
 
-### <a name="blob_entry_length"></a> BLOB_ENTRY_LENGTH
+### <a name="blob_entry_length"></a>BLOB_ENTRY_LENGTH
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu ayrıca BLOB sütun bayt cinsinden uzunluğu alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır. [BLOB_ENTRY](../../data/oledb/blob-entry.md)benzer, bu makro blob sütununun bayt cinsinden uzunluğunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -401,27 +400,27 @@ BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)
 #### <a name="parameters"></a>Parametreler
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.
+*uzunluklu*<br/>
+dışı BLOB sütununun bayt cinsinden (gerçek) uzunluğu.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).
+Bkz. [nasıl bır blob alabilirim?](../../data/oledb/retrieving-a-blob.md).
 
-### <a name="blob_entry_length_status"></a> BLOB_ENTRY_LENGTH_STATUS
+### <a name="blob_entry_length_status"></a>BLOB_ENTRY_LENGTH_STATUS
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makro uzunluğu ve BLOB sütununu durumunu alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır. [BLOB_ENTRY](../../data/oledb/blob-entry.md)benzer, bu makro blob sütununun uzunluğunu ve durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -438,30 +437,30 @@ BLOB_ENTRY_LENGTH_STATUS(
 #### <a name="parameters"></a>Parametreler
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.
+*uzunluklu*<br/>
+dışı BLOB sütununun bayt cinsinden (gerçek) uzunluğu.
 
-*status*<br/>
-[out] BLOB veri sütununun durumu.
+*durumlarına*<br/>
+dışı BLOB veri sütununun durumu.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).
+Bkz. [nasıl bır blob alabilirim?](../../data/oledb/retrieving-a-blob.md).
 
-### <a name="blob_entry_status"></a> BLOB_ENTRY_STATUS
+### <a name="blob_entry_status"></a>BLOB_ENTRY_STATUS
 
-BEGIN_COLUMN_MAP veya BEGIN_ACCESSOR_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu BLOB sütununu durumunu da alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP veya BEGIN_ACCESSOR_MAP ile kullanılır. [BLOB_ENTRY](../../data/oledb/blob-entry.md)benzer, bu makro blob sütununun durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -472,27 +471,27 @@ BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)
 #### <a name="parameters"></a>Parametreler
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*status*<br/>
-[out] BLOB alan durumu.
+*durumlarına*<br/>
+dışı BLOB alanının durumu.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).
+Bkz. [nasıl bır blob alabilirim?](../../data/oledb/retrieving-a-blob.md).
 
-### <a name="blob_name"></a> BLOB_NAME
+### <a name="blob_name"></a>BLOB_NAME
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu bir sütun numarası yerine sütun adını alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır. [BLOB_ENTRY](../../data/oledb/blob-entry.md)benzer, bu makro sütun numarası yerine bir sütun adı alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -503,24 +502,24 @@ BLOB_NAME(pszName, IID, flags, data )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).
+Bkz. [nasıl bır blob alabilirim?](../../data/oledb/retrieving-a-blob.md).
 
-### <a name="blob_name_length"></a> BLOB_NAME_LENGTH
+### <a name="blob_name_length"></a>BLOB_NAME_LENGTH
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makroyu ayrıca BLOB veri sütununun bayt cinsinden uzunluğu alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır. [BLOB_NAME](../../data/oledb/blob-name.md)benzer, bu makro blob veri sütununun bayt cinsinden uzunluğunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -531,23 +530,23 @@ BLOB_NAME_LENGTH(pszName, IID, flags, data, length )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.
+*uzunluklu*<br/>
+dışı BLOB sütununun bayt cinsinden (gerçek) uzunluğu.
 
-### <a name="blob_name_length_status"></a> BLOB_NAME_LENGTH_STATUS
+### <a name="blob_name_length_status"></a>BLOB_NAME_LENGTH_STATUS
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makro uzunluğu ve BLOB veri sütununu durumunu alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır. [BLOB_NAME](../../data/oledb/blob-name.md)benzer, bu makro blob veri sütununun uzunluğunu ve durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -558,26 +557,26 @@ BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.
+*uzunluklu*<br/>
+dışı BLOB sütununun bayt cinsinden (gerçek) uzunluğu.
 
-*status*<br/>
-[out] BLOB alan durumu.
+*durumlarına*<br/>
+dışı BLOB alanının durumu.
 
-### <a name="blob_name_status"></a> BLOB_NAME_STATUS
+### <a name="blob_name_status"></a>BLOB_NAME_STATUS
 
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makroyu BLOB veri sütununu durumunu da alır.
+İkili büyük nesne ([BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))) bağlamak için BEGIN_COLUMN_MAP ve end_column_map ile kullanılır. [BLOB_NAME](../../data/oledb/blob-name.md)benzer, bu makro blob veri sütununun durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -588,23 +587,23 @@ BLOB_NAME_STATUS(pszName, IID, flags, data, status )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*IID*<br/>
-[in] GUID gibi arabirim `IDD_ISequentialStream`BLOB almak için kullanılır.
+*'SI*<br/>
+'ndaki BLOB 'u almak için kullanılan `IDD_ISequentialStream`gibi arabirim GUID 'SI.
 
-*bayrakları*<br/>
-[in] Depolama modu bayrakları OLE yapılı depolama modeli tarafından tanımlandığı şekilde (örneğin, `STGM_READ`).
+*larına*<br/>
+'ndaki OLE yapılandırılmış depolama modeli tarafından tanımlanan depolama modu bayrakları (örneğin, `STGM_READ`).
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*status*<br/>
-[out] BLOB alan durumu.
+*durumlarına*<br/>
+dışı BLOB alanının durumu.
 
-### <a name="bookmark_entry"></a> BOOKMARK_ENTRY
+### <a name="bookmark_entry"></a>BOOKMARK_ENTRY
 
-Yer işareti sütunu bağlar.
+Yer işareti sütununu bağlar.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -614,8 +613,8 @@ BOOKMARK_ENTRY(variable)
 
 #### <a name="parameters"></a>Parametreler
 
-*Değişkeni*<br/>
-[in] Yer işareti sütunu bağlanması için değişken.
+*değişken*<br/>
+'ndaki Yer işareti sütununa bağlanacak değişken.
 
 #### <a name="example"></a>Örnek
 
@@ -665,11 +664,11 @@ END_COLUMN_MAP()
 };
 ```
 
-Daha fazla bilgi için [kullanarak yer işaretleri](using-bookmarks.md) ve [CBookmark sınıfı](../../data/oledb/cbookmark-class.md).
+Daha fazla bilgi için bkz. [yer imlerini](using-bookmarks.md) ve [CBookmark sınıfını](../../data/oledb/cbookmark-class.md)kullanma.
 
-### <a name="column_entry"></a> COLUMN_ENTRY
+### <a name="column_entry"></a>COLUMN_ENTRY
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -679,31 +678,31 @@ COLUMN_ENTRY(nOrdinal, data)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-COLUMN_ENTRY makrosu, aşağıdaki konumlarda kullanılır:
+COLUMN_ENTRY makro aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
 #### <a name="example"></a>Örnek
 
-Makro konulardaki örnekleri görmek [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
+[BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)makro konularında örneklere bakın.
 
-### <a name="column_entry_ex"></a> COLUMN_ENTRY_EX
+### <a name="column_entry_ex"></a>COLUMN_ENTRY_EX
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -713,49 +712,49 @@ COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, stat
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
 *wType*<br/>
-[in] Veri türü.
+'ndaki Veri türü.
 
 *nLength*<br/>
-[in] Bayt cinsinden veri boyutu.
+'ndaki Bayt cinsinden veri boyutu.
 
-*nPrecision*<br/>
-[in] Veri alma sırasında kullanılacak en fazla kesinlik ve *wType* olduğu `DBTYPE_NUMERIC`. Aksi takdirde, bu parametre yoksayılır.
+*Nduyarlılık*<br/>
+'ndaki Veri alınırken kullanılacak en büyük duyarlık `DBTYPE_NUMERIC`ve *wType* . Aksi takdirde, bu parametre yoksayılır.
 
 *nScale*<br/>
-[in] Veri alınırken kullanılacak ölçek ve *wType* olduğu `DBTYPE_NUMERIC` veya `DBTYPE_DECIMAL`.
+'ndaki Veri alırken kullanılacak ölçek `DBTYPE_NUMERIC` veya `DBTYPE_DECIMAL`. *wType*
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-COLUMN_ENTRY_EX makrosu, aşağıdaki konumlarda kullanılır:
+COLUMN_ENTRY_EX makro aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md).
+Bkz. [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md).
 
-### <a name="column_entry_length"></a> COLUMN_ENTRY_LENGTH
+### <a name="column_entry_length"></a>COLUMN_ENTRY_LENGTH
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -765,30 +764,30 @@ COLUMN_ENTRY_LENGTH(nOrdinal, data, length)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] İle başlayarak sütun numarası. Yer işareti sıfır sütununa karşılık gelir.
+'ndaki Sütun numarası, bir ile başlar. Yer işareti sıfır sütununa karşılık gelir.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro destekler *uzunluğu* değişkeni. Aşağıdaki konumlarda kullanılır:
+Bu makro *uzunluk* değişkenini destekler. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_length_status"></a> COLUMN_ENTRY_LENGTH_STATUS
+### <a name="column_entry_length_status"></a>COLUMN_ENTRY_LENGTH_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -798,33 +797,33 @@ COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, uzunluğu ve durumu değişkenlerini destekle istediğinizde kullanın. Aşağıdaki konumlarda kullanılır:
+Uzunluk ve durum değişkenlerini desteklemek istediğinizde bu makroyu kullanın. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_ps"></a> COLUMN_ENTRY_PS
+### <a name="column_entry_ps"></a>COLUMN_ENTRY_PS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -834,33 +833,33 @@ COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Kesinlik ve ölçek bağlamak istediğiniz sütunun belirtmenizi sağlar. Aşağıdaki konumlarda kullanılır:
+Bağlamak istediğiniz sütunun hassasiyetini ve ölçeğini belirtmenize izin verir. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_ps_length"></a> COLUMN_ENTRY_PS_LENGTH
+### <a name="column_entry_ps_length"></a>COLUMN_ENTRY_PS_LENGTH
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -870,36 +869,36 @@ COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] İle başlayarak sütun numarası. Yer işareti sıfır sütununa karşılık gelir.
+'ndaki Sütun numarası, bir ile başlar. Yer işareti sıfır sütununa karşılık gelir.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Kesinlik ve ölçek bağlamak istediğiniz sütunun belirtmenizi sağlar. Bu makro destekler *uzunluğu* değişkeni. Aşağıdaki konumlarda kullanılır:
+Bağlamak istediğiniz sütunun hassasiyetini ve ölçeğini belirtmenize izin verir. Bu makro *uzunluk* değişkenini destekler. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_ps_length_status"></a> COLUMN_ENTRY_PS_LENGTH_STATUS
+### <a name="column_entry_ps_length_status"></a>COLUMN_ENTRY_PS_LENGTH_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -909,39 +908,39 @@ COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Kesinlik ve ölçek bağlamak istediğiniz sütunun belirtmenizi sağlar. Bu makro, uzunluğu ve durumu değişkenlerini destekle istediğinizde kullanın. Aşağıdaki konumlarda kullanılır:
+Bağlamak istediğiniz sütunun hassasiyetini ve ölçeğini belirtmenize izin verir. Uzunluk ve durum değişkenlerini desteklemek istediğinizde bu makroyu kullanın. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_ps_status"></a> COLUMN_ENTRY_PS_STATUS
+### <a name="column_entry_ps_status"></a>COLUMN_ENTRY_PS_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -951,36 +950,36 @@ COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Kesinlik ve ölçek bağlamak istediğiniz sütunun belirtmenizi sağlar. Bu makro destekler *durumu* değişkeni. Aşağıdaki konumlarda kullanılır:
+Bağlamak istediğiniz sütunun hassasiyetini ve ölçeğini belirtmenize izin verir. Bu makro *durum* değişkenini destekler. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_status"></a> COLUMN_ENTRY_STATUS
+### <a name="column_entry_status"></a>COLUMN_ENTRY_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu temsil eder.
+Veritabanındaki belirli bir sütunun satır kümesindeki bağlamayı temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -990,30 +989,30 @@ COLUMN_ENTRY_STATUS(nOrdinal, data, status)
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) bölümüne bakın.
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro destekler *durumu* değişkeni. Aşağıdaki konumlarda kullanılır:
+Bu makro *durum* değişkenini destekler. Aşağıdaki yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_entry_type"></a> COLUMN_ENTRY_TYPE
+### <a name="column_entry_type"></a>COLUMN_ENTRY_TYPE
 
-Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü* parametresi.
+Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Tür* parametresini destekler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1024,21 +1023,21 @@ COLUMN_ENTRY_TYPE (nOrdinal, wType, data)
 #### <a name="parameters"></a>Parametreler
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
 *wType*<br/>
-[in] Sütun giriş veri türü.
+'ndaki Sütun girişinin veri türü.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro bir özelleştirilmiş çeşididir [COLUMN_ENTRY](../../data/oledb/column-entry.md) makro veri türünü belirten bir yol sağlar.
+Bu makro, veri türünü belirtmenin bir yolu sağlayan [COLUMN_ENTRY](../../data/oledb/column-entry.md) makrosunun özelleşmiş bir değişkendir.
 
-### <a name="column_entry_type_size"></a> COLUMN_ENTRY_TYPE_SIZE
+### <a name="column_entry_type_size"></a>COLUMN_ENTRY_TYPE_SIZE
 
-Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü* ve *boyutu* parametreleri.
+Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Tür* ve *Boyut* parametrelerini destekler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1049,24 +1048,24 @@ COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)
 #### <a name="parameters"></a>Parametreler
 
 *nOrdinal*<br/>
-[in] Sütun numarası.
+'ndaki Sütun numarası.
 
 *wType*<br/>
-[in] Sütun giriş veri türü.
+'ndaki Sütun girişinin veri türü.
 
 *nLength*<br/>
-[in] Sütun giriş bayt cinsinden boyutu.
+'ndaki Bayt cinsinden sütun girişi boyutu.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro bir özelleştirilmiş çeşididir [COLUMN_ENTRY](../../data/oledb/column-entry.md) makro veri boyutunu ve türünü belirten bir yol sağlar.
+Bu makro, veri boyutu ve türünü belirtmek için bir yol sağlayan [COLUMN_ENTRY](../../data/oledb/column-entry.md) makrosunun özelleştirilmiş bir değişkendir.
 
-### <a name="column_name"></a> COLUMN_NAME
+### <a name="column_name"></a>COLUMN_NAME
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_ENTRY](../../data/oledb/column-entry.md)dışında bu makroyu sütun numarası yerine sütun adını alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [COLUMN_ENTRY](../../data/oledb/column-entry.md)benzer, bu makronun sütun numarası yerine sütun adını almasının dışında.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1077,24 +1076,24 @@ COLUMN_NAME(pszName, data)
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-COLUMN_NAME_ * makroları aynı yerde kullanılan [COLUMN_ENTRY](../../data/oledb/column-entry.md):
+COLUMN_NAME_ * makroları [COLUMN_ENTRY](../../data/oledb/column-entry.md)aynı yerlerde kullanılır:
 
-- Arasında [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [END_COLUMN_MAP](../../data/oledb/end-column-map.md) makroları.
+- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) ve [end_column_map](../../data/oledb/end-column-map.md) makroları arasında.
 
-- Arasında [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makroları arasında.
 
-- Arasında [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları.
+- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) ve [END_PARAM_MAP](../../data/oledb/end-param-map.md) makroları arasında.
 
-### <a name="column_name_ex"></a> COLUMN_NAME_EX
+### <a name="column_name_ex"></a>COLUMN_NAME_EX
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu veri türü, boyut, duyarlık, Ölçek, sütun uzunluğu ve sütun durumunu alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makro veri türü, boyut, duyarlık, ölçek, sütun uzunluğu ve sütun durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1105,36 +1104,36 @@ COLUMN_NAME_EX(pszName, wType, nLength, nPrecision, nScale, data, length, status
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
 *wType*<br/>
-[in] Veri türü.
+'ndaki Veri türü.
 
 *nLength*<br/>
-[in] Bayt cinsinden veri boyutu.
+'ndaki Bayt cinsinden veri boyutu.
 
-*nPrecision*<br/>
-[in] Veri alma sırasında kullanılacak en fazla kesinlik ve *wType* olduğu `DBTYPE_NUMERIC`. Aksi takdirde, bu parametre yoksayılır.
+*Nduyarlılık*<br/>
+'ndaki Veri alınırken kullanılacak en büyük duyarlık `DBTYPE_NUMERIC`ve *wType* . Aksi takdirde, bu parametre yoksayılır.
 
 *nScale*<br/>
-[in] Veri alınırken kullanılacak ölçek ve *wType* olduğu `DBTYPE_NUMERIC` veya `DBTYPE_DECIMAL`.
+'ndaki Veri alırken kullanılacak ölçek `DBTYPE_NUMERIC` veya `DBTYPE_DECIMAL`. *wType*
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_length"></a> COLUMN_NAME_LENGTH
+### <a name="column_name_length"></a>COLUMN_NAME_LENGTH
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu Ayrıca sütun uzunluğunu alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makro sütun uzunluğunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1145,21 +1144,21 @@ COLUMN_NAME_LENGTH(pszName, data, length)
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_length_status"></a> COLUMN_NAME_LENGTH_STATUS
+### <a name="column_name_length_status"></a>COLUMN_NAME_LENGTH_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu sütun uzunluğu ve sütun durumunu alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makro sütun uzunluğunu ve sütun durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1170,24 +1169,24 @@ COLUMN_NAME_LENGTH_STATUS(pszName, data, length, status )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_ps"></a> COLUMN_NAME_PS
+### <a name="column_name_ps"></a>COLUMN_NAME_PS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu kesinlik ve ölçek alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makronun da duyarlık ve ölçek elde etmelerinin olması dışında.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1198,24 +1197,24 @@ COLUMN_NAME_PS(pszName, nPrecision, nScale, data )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_ps_length"></a> COLUMN_NAME_PS_LENGTH
+### <a name="column_name_ps_length"></a>COLUMN_NAME_PS_LENGTH
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu ayrıca kesinlik ve ölçek sütun uzunluğu alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makronun da duyarlık, ölçek ve sütun uzunluğu olması gerekir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1226,27 +1225,27 @@ COLUMN_NAME_PS_LENGTH(pszName, nPrecision, nScale, data, length )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_ps_length_status"></a> COLUMN_NAME_PS_LENGTH_STATUS
+### <a name="column_name_ps_length_status"></a>COLUMN_NAME_PS_LENGTH_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu duyarlığı, Ölçek, sütun uzunluğu ve sütununu durumunu alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makronun de duyarlık, ölçek, sütun uzunluğu ve sütun durumu olması gerekir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1257,30 +1256,30 @@ COLUMN_NAME_PS_LENGTH_STATUS(pszName, nPrecision, nScale, data, length, status )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Uzunluğu*<br/>
-[in] Sütun uzunluğu için bağlanacak değişkeni.
+*uzunluklu*<br/>
+'ndaki Sütun uzunluğuna bağlanacak değişken.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_ps_status"></a> COLUMN_NAME_PS_STATUS
+### <a name="column_name_ps_status"></a>COLUMN_NAME_PS_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu kesinlik ve ölçek sütun durumunu da alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makronun da duyarlık, ölçek ve sütun durumu olması gerekir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1291,27 +1290,27 @@ COLUMN_NAME_PS_STATUS(pszName, nPrecision, nScale, data, status )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*nPrecision*<br/>
-[in] Verilen duyarlık bağlamak istediğiniz sütun.
+*Nduyarlılık*<br/>
+'ndaki Bağlamak istediğiniz sütunun en büyük duyarlığı.
 
 *nScale*<br/>
-[in] Ölçeğin bağlamak istediğiniz sütun.
+'ndaki Bağlamak istediğiniz sütunun ölçeği.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_status"></a> COLUMN_NAME_STATUS
+### <a name="column_name_status"></a>COLUMN_NAME_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu sütununu durumunu da alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makro sütun durumunu da alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1322,21 +1321,21 @@ COLUMN_NAME_STATUS(pszName, data, status )
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_type"></a> COLUMN_NAME_TYPE
+### <a name="column_name_type"></a>COLUMN_NAME_TYPE
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu da veri türünü alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makronun de veri türü olması gerekir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1347,21 +1346,21 @@ COLUMN_NAME_TYPE(pszName, wType, data)
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
 *wType*<br/>
-[in] Veri türü.
+'ndaki Veri türü.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_type_ps"></a> COLUMN_NAME_TYPE_PS
+### <a name="column_name_type_ps"></a>COLUMN_NAME_TYPE_PS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu veri türü, kesinlik ve ölçek alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makro veri türünü, duyarlılığı ve ölçeği de alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1372,27 +1371,27 @@ COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
 *wType*<br/>
-[in] Veri türü.
+'ndaki Veri türü.
 
-*nPrecision*<br/>
-[in] Veri alma sırasında kullanılacak en fazla kesinlik ve *wType* olduğu `DBTYPE_NUMERIC`. Aksi takdirde, bu parametre yoksayılır.
+*Nduyarlılık*<br/>
+'ndaki Veri alınırken kullanılacak en büyük duyarlık `DBTYPE_NUMERIC`ve *wType* . Aksi takdirde, bu parametre yoksayılır.
 
 *nScale*<br/>
-[in] Veri alınırken kullanılacak ölçek ve *wType* olduğu `DBTYPE_NUMERIC` veya `DBTYPE_DECIMAL`.
+'ndaki Veri alırken kullanılacak ölçek `DBTYPE_NUMERIC` veya `DBTYPE_DECIMAL`. *wType*
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_type_size"></a> COLUMN_NAME_TYPE_SIZE
+### <a name="column_name_type_size"></a>COLUMN_NAME_TYPE_SIZE
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu veri türünü ve boyutunu alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer şekilde, bu makro veri türünü ve boyutunu de alır.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1403,24 +1402,24 @@ COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
 *wType*<br/>
-[in] Veri türü.
+'ndaki Veri türü.
 
 *nLength*<br/>
-[in] Bayt cinsinden veri boyutu.
+'ndaki Bayt cinsinden veri boyutu.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="column_name_type_status"></a> COLUMN_NAME_TYPE_STATUS
+### <a name="column_name_type_status"></a>COLUMN_NAME_TYPE_STATUS
 
-Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makroyu veri türü ve sütun durumunu da alır.
+Satır kümesindeki belirli bir sütuna yönelik bir bağlamayı temsil eder. [Column_name](../../data/oledb/column-name.md)benzer, bu makronun de veri türü ve sütun durumu olması gerekir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1431,24 +1430,24 @@ COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)
 #### <a name="parameters"></a>Parametreler
 
 *pszName*<br/>
-[in] Sütun adı için bir işaretçi. Adı bir Unicode dize olması gerekir. Bu örneğin adının önüne bir 'L' koyarak gerçekleştirebilirsiniz: `L"MyColumn"`.
+'ndaki Sütun adı işaretçisi. Ad bir Unicode dize olmalıdır. Bunu, adın önüne bir ' L ' koyarak yapabilirsiniz, örneğin: `L"MyColumn"`.
 
 *wType*<br/>
-[in] Veri türü.
+'ndaki Veri türü.
 
-*status*<br/>
-[in] Sütun durumuna bağlı değişken.
+*durumlarına*<br/>
+'ndaki Sütun durumuna bağlanacak değişken.
 
-*Veri*<br/>
-[in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
+*verileri*<br/>
+'ndaki Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [COLUMN_NAME](../../data/oledb/column-name.md) COLUMN_NAME_ * makroları kullanıldığı hakkında bilgi.
+COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [column_name](../../data/oledb/column-name.md) .
 
-### <a name="end_column_map"></a> END_COLUMN_MAP
+### <a name="end_column_map"></a>END_COLUMN_MAP
 
-Sütun eşleme girişleri sonunu işaretler.
+Sütun eşleme girdilerinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1458,18 +1457,18 @@ END_COLUMN_MAP()
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bir satır kümesi üzerinde tek bir erişimcisi ile kullanılır. BEGIN_COLUMN_MAP makrosu END_COLUMN_MAP makrosu ile tamamlanır.
+Satır kümesinde tek bir erişimci ile kullanılır. BEGIN_COLUMN_MAP makrosu END_COLUMN_MAP makrosu ile tamamlanır.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md).
+Bkz. [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md).
 
-### <a name="define_command"></a> DEFINE_COMMAND
+### <a name="define_command"></a>DEFINE_COMMAND
 
-Satır kümesi kullanırken oluşturmak için kullanılacak komut belirtir [CCommand](../../data/oledb/ccommand-class.md) sınıfı. Yalnızca belirtilen uygulama türünü (ANSI veya Unicode) eşleşen dize türleri kabul eder.
+[CCommand](../../data/oledb/ccommand-class.md) sınıfı kullanılırken satır kümesini oluşturmak için kullanılacak komutu belirtir. Yalnızca belirtilen uygulama türüyle eşleşen dize türlerini kabul eder (ANSI veya Unicode).
 
 > [!NOTE]
->  Kullanmanız önerilir [defıne_command_ex](../../data/oledb/define-command-ex.md) DEFINE_COMMAND yerine.
+>  DEFINE_COMMAND yerine [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) kullanmanız önerilir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1479,25 +1478,25 @@ DEFINE_COMMAND(x, szCommand)
 
 #### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-[in] Kullanıcı kayıt (komut) sınıfı adı.
+*sayı*<br/>
+'ndaki Kullanıcı kaydı (komut) sınıfının adı.
 
 *szCommand*<br/>
-[in] Satır kümesi kullanırken oluşturmak için kullanılan komut dizesi [CCommand](../../data/oledb/ccommand-class.md).
+'ndaki [CCommand](../../data/oledb/ccommand-class.md)kullanılırken satır kümesini oluşturmak için kullanılacak komut dizesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Komut metni belirtmezseniz, varsayılan olarak, belirttiğiniz komut dizesi kullanılacak [CCommand::Open](../../data/oledb/ccommand-open.md) yöntemi.
+Varsayılan olarak, [CCommand:: Open](../../data/oledb/ccommand-open.md) yönteminde komut metni belirtmezseniz belirttiğiniz komut dizesi varsayılan olarak kullanılır.
 
-Unicode olarak uygulamanızı varsa bu makroyu ANSI olarak uygulamanızı, ANSI dizelerini veya Unicode dizelerini kabul eder. Kullanmanız önerilir [defıne_command_ex](../../data/oledb/define-command-ex.md) DEFINE_COMMAND, yerine ANSI veya Unicode uygulama türünden bağımsız olarak, Unicode dizelerini önceki kabul ettiğinden.
+Uygulamanızı ANSI olarak oluşturursanız bu makro ANSI dizelerini veya uygulamanızı Unicode olarak oluşturursanız Unicode dizelerini kabul eder. ANSI veya Unicode uygulama türünden bağımsız olarak, ilki Unicode dizelerini kabul ettiğinden, DEFINE_COMMAND yerine [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) kullanmanız önerilir.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md).
+Bkz. [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md).
 
-### <a name="define_command_ex"></a> DEFINE_COMMAND_EX
+### <a name="define_command_ex"></a>DEFINE_COMMAND_EX
 
-Satır kümesi kullanırken oluşturmak için kullanılacak komut belirtir [CCommand](../../data/oledb/ccommand-class.md) sınıfı. Unicode ve ANSI uygulamalarını destekler.
+[CCommand](../../data/oledb/ccommand-class.md) sınıfı kullanılırken satır kümesini oluşturmak için kullanılacak komutu belirtir. Unicode ve ANSI uygulamalarını destekler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1507,25 +1506,25 @@ DEFINE_COMMAND_EX(x, wszCommand)
 
 #### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-[in] Kullanıcı kayıt (komut) sınıfı adı.
+*sayı*<br/>
+'ndaki Kullanıcı kaydı (komut) sınıfının adı.
 
 *wszCommand*<br/>
-[in] Satır kümesi kullanırken oluşturmak için kullanılan komut dizesi [CCommand](../../data/oledb/ccommand-class.md).
+'ndaki [CCommand](../../data/oledb/ccommand-class.md)kullanılırken satır kümesini oluşturmak için kullanılacak komut dizesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Komut metni belirtmezseniz, varsayılan olarak, belirttiğiniz komut dizesi kullanılacak [CCommand::Open](../../data/oledb/ccommand-open.md) yöntemi.
+Varsayılan olarak, [CCommand:: Open](../../data/oledb/ccommand-open.md) yönteminde komut metni belirtmezseniz belirttiğiniz komut dizesi varsayılan olarak kullanılır.
 
-Bu makro uygulama türünden bağımsız olarak, Unicode dizelerini kabul eder. Bu makro üzerinden tercih edilen [DEFINE_COMMAND](../../data/oledb/define-command.md) Unicode desteklediğinden, ANSI uygulamaların yanı sıra.
+Bu makro, uygulama türünden bağımsız olarak Unicode dizelerini kabul eder. Bu makro, UNICODE 'un yanı sıra ANSI uygulamalarını desteklediğinden [DEFINE_COMMAND](../../data/oledb/define-command.md) üzerinde tercih edilir.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md).
+Bkz. [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md).
 
-### <a name="begin_param_map"></a> BEGIN_PARAM_MAP
+### <a name="begin_param_map"></a>BEGIN_PARAM_MAP
 
-Parametre eşleme girişleri başlangıcını işaretler.
+Parametre eşleme girdilerinin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1535,20 +1534,20 @@ BEGIN_PARAM_MAP(x)
 
 #### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-[in] Kullanıcı kayıt sınıfı adı.
+*sayı*<br/>
+'ndaki Kullanıcı kayıt sınıfının adı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Tarafından kullanılan parametreleri [komutları](/previous-versions/windows/desktop/ms724608(v=vs.85)).
+Parametreler [komutları](/previous-versions/windows/desktop/ms724608(v=vs.85))tarafından kullanılır.
 
 #### <a name="example"></a>Örnek
 
-Örneğin bakın [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) makrosu.
+[BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) makrosunun örneğine bakın.
 
-### <a name="end_param_map"></a> END_PARAM_MAP
+### <a name="end_param_map"></a>END_PARAM_MAP
 
-Parametre eşleme girişleri sonunu işaretler.
+Parametre eşleme girdilerinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1558,11 +1557,11 @@ END_PARAM_MAP()
 
 #### <a name="example"></a>Örnek
 
-Örneğin bakın [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) makrosu.
+[BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) makrosunun örneğine bakın.
 
-### <a name="set_param_type"></a> SET_PARAM_TYPE
+### <a name="set_param_type"></a>SET_PARAM_TYPE
 
-SET_PARAM_TYPE makrosu giriş, çıkış veya giriş/çıkış izleyin COLUMN_ENTRY makroları belirtir.
+Makro giriş, çıkış veya giriş/çıkış SET_PARAM_TYPE izleyen COLUMN_ENTRY makroları belirtir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -1573,19 +1572,19 @@ SET_PARAM_TYPE(type)
 #### <a name="parameters"></a>Parametreler
 
 *type*<br/>
-[in] İçin parametre türü.
+'ndaki Parametresi için ayarlanacak tür.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre giriş/çıkış türleri destekler. Bir veya daha fazla tür birleşimidir `DBPARAMIO` değerleri (bkz [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*):
+Sağlayıcılar yalnızca temel alınan veri kaynağı tarafından desteklenen parametre giriş/çıkış türlerini destekler. Tür bir veya daha fazla `DBPARAMIO` değerinin birleşimidir (bkz. *OLE DB Programcı başvurusunda* [dbbinding yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)) ):
 
-- `DBPARAMIO_NOTPARAM` Erişimci hiç parametre yok. Genellikle, ayarladığınız `eParamIO` şu değer satır Erişimcilerde parametreleri göz ardı edilir, kullanıcıyı şu aralıklarla uyar.
+- `DBPARAMIO_NOTPARAM` erişimcisinin parametresi yok. Genellikle, kullanıcıya parametrelerin yoksayıldığını anımsatmak için satır erişimcilerinde bu değere `eParamIO` ayarlarsınız.
 
-- `DBPARAMIO_INPUT` Giriş parametresi.
+- giriş parametresi `DBPARAMIO_INPUT`.
 
-- `DBPARAMIO_OUTPUT` Çıkış parametresi.
+- Bir çıkış parametresi `DBPARAMIO_OUTPUT`.
 
-- `DBPARAMIO_INPUT | DBPARAMIO_OUTPUT` , Hem giriş hem de çıkış parametresi parametredir.
+- `DBPARAMIO_INPUT | DBPARAMIO_OUTPUT` parametresi hem giriş hem de çıkış parametresidir.
 
 #### <a name="example"></a>Örnek
 
@@ -1631,10 +1630,10 @@ END_COLUMN_MAP()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

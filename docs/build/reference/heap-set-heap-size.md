@@ -3,7 +3,6 @@ title: /HEAP (Öbek Boyutunu Ayarla)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.HeapCommitSize
-- /heap
 - VC.Project.VCLinkerTool.HeapReserveSize
 helpviewer_keywords:
 - -HEAP linker option
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - /HEAP linker option
 - HEAP linker option
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
-ms.openlocfilehash: 715eaa358d052d4ae646f38f2e784f0235dffccb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f155ad56ec1a90479b402e38e7ec7f3e3d80e470
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270360"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439530"
 ---
 # <a name="heap-set-heap-size"></a>/HEAP (Öbek Boyutunu Ayarla)
 
@@ -26,29 +25,29 @@ ms.locfileid: "62270360"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/HEAP seçeneği öbek boyutunu bayt cinsinden ayarlar. Bu seçenek yalnızca bir .exe dosyası oluşturulurken kullanılır.
+/HEAP seçeneği, yığının boyutunu bayt cinsinden ayarlar. Bu seçenek yalnızca bir. exe dosyası oluşturulurken kullanılır.
 
-*Rezerve* bağımsız değişkeni sanal bellekte toplam yığın ayırma belirtir. Varsayılan öbek boyutu 1 MB'dir. Bağlayıcı, belirtilen değeri en yakın 4 bayt yuvarlar.
+*Reserve* bağımsız değişkeni, sanal bellekteki toplam yığın ayırmayı belirtir. Varsayılan yığın boyutu 1 MB 'tır. Bağlayıcı belirtilen değeri en yakın 4 bayta yuvarlar.
 
-İsteğe bağlı `commit` bağımsız değişkeni bir kerede ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Daha yüksek bir `commit` değeri kaydeder zaman zaman uygulama daha fazla yığın alanı gerekiyor, ancak bellek gereksinimleri ve büyük olasılıkla başlangıç süresini artırır.
+İsteğe bağlı `commit` bağımsız değişkeni, bir seferde ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek, disk belleği dosyasında ayrılan alanın ayrılmasına neden olur. Daha yüksek bir `commit` değeri, uygulamanın daha fazla yığın alanına ihtiyacı olduğunda zaman kazandırır, ancak bellek gereksinimlerini ve muhtemelen başlangıç süresini arttırır.
 
-Belirtin *rezerve* ve `commit` değerleri ondalık ya da C dili gösterimi.
+Decimal veya C-Language gösteriminde *Reserve* ve `commit` değerlerini belirtin.
 
-Bu işlevi modül tanım dosyası aracılığıyla da kullanılabilir [HEAPSIZE](heapsize.md).
+Bu işlev, [heapsize](heapsize.md)ile bir modül tanım dosyası aracılığıyla da kullanılabilir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **sistem** özellik sayfası.
+1. **Sistem** Özellik sayfasına tıklayın.
 
-1. Değiştirme **yığın işleme boyutu** özelliği.
+1. **Yığın yürütmesi boyut** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapReserveSize%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapCommitSize%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapReserveSize%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapCommitSize%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

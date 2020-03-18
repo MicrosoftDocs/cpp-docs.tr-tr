@@ -2,18 +2,17 @@
 title: AND işleci
 ms.date: 12/17/2019
 f1_keywords:
-- And
 - operator AND
 helpviewer_keywords:
 - operator AND
 - AND operator
 ms.assetid: 6862d248-c169-4db8-a478-9d0ce4fdd1e3
-ms.openlocfilehash: 9f5884496653f9065e8eb3504dd9ca2f119ca495
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 8d89ad56ef71942018b95d438a87bd9d798be2f4
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75316726"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440669"
 ---
 # <a name="operator-and"></a>AND işleci
 

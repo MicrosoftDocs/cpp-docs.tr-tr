@@ -1,8 +1,6 @@
 ---
 title: "Çoklu iş parçacığı: MFC 'de Iş parçacıklarını sonlandırma"
 ms.date: 08/27/2018
-f1_keywords:
-- CREATE_SUSPENDED
 helpviewer_keywords:
 - premature thread termination
 - starting threads
@@ -13,12 +11,12 @@ helpviewer_keywords:
 - stopping threads
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-ms.openlocfilehash: db88f08a3eb9c219300e1359257706b44326d7ed
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 60c60d1aedf19ade6c84dafacd7de7a2e650e6ca
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77140470"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446274"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>Çoklu iş parçacığı: MFC 'de Iş parçacıklarını sonlandırma
 

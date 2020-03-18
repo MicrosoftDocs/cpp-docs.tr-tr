@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: 065735c13a3e763208142eb6bc989d3a496221f0
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: bee6deed3052d6cc923e432e97ad9a7904060cb6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421459"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447442"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd sınıfı
 
@@ -91,13 +91,13 @@ class CSplitterWnd : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CSplitterWnd:: CSplitterWnd](#csplitterwnd)|`CSplitterWnd` nesnesi oluşturmak için çağırın.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -522,17 +522,17 @@ Kaydırılan iletinin kaynaklandığı görünüme yönelik bir işaretçi.
 *nScrollCode*<br/>
 Kullanıcının kaydırma isteğini gösteren bir kaydırma çubuğu kodu. Bu parametre iki bölümden oluşur: yatay olarak oluşan kaydırma türünü belirleyen düşük sıralı bir bayt ve dikey olarak oluşan kaydırma türünü belirleyen yüksek sıralı bir bayt.
 
-    - SB_BOTTOM en alta kayar.
+- SB_BOTTOM en alta kayar.
 
-    - SB_LINEDOWN bir satır aşağı kaydırır.
+- SB_LINEDOWN bir satır aşağı kaydırır.
 
-    - SB_LINEUP bir satır yukarı kaydırır.
+- SB_LINEUP bir satır yukarı kaydırır.
 
-    - SB_PAGEDOWN bir sayfa aşağı kaydırır.
+- SB_PAGEDOWN bir sayfa aşağı kaydırır.
 
-    - SB_PAGEUP bir sayfa yukarı kaydırır.
+- SB_PAGEUP bir sayfa yukarı kaydırır.
 
-    - SB_TOP üste kayar.
+- SB_TOP üste kayar.
 
 *bDoScroll*<br/>
 Belirtilen kaydırma eyleminin oluşup oluşmadığını belirler. *BDoScroll* true ise (yani, bir alt pencere varsa ve bölünmüş pencerelerin bir kaydırma aralığı varsa), belirtilen kaydırma eylemi gerçekleştirilebilir; *bDoScroll* false ise (yani, alt pencere yoksa veya bölünmüş görünümlerin hiçbir kaydırma aralığı yoksa), kaydırma gerçekleşmez.
@@ -709,9 +709,9 @@ DWORD GetScrollStyle() const;
 
 Başarılı olursa, aşağıdaki Windows stil bayraklarından bir veya daha fazlası:
 
-    - Ayırıcı şu anda paylaşılan yatay kaydırma çubuklarını yönetirse WS_HSCROLL.
+- Ayırıcı şu anda paylaşılan yatay kaydırma çubuklarını yönetirse WS_HSCROLL.
 
-    - Ayırıcı şu anda paylaşılan dikey kaydırma çubuklarını yönetirse WS_VSCROLL.
+- Ayırıcı şu anda paylaşılan dikey kaydırma çubuklarını yönetirse WS_VSCROLL.
 
 Sıfır ise, ayırıcı pencere şu anda herhangi bir paylaşılan kaydırma çubuğunu yönetmez.
 
@@ -810,13 +810,13 @@ virtual void OnDrawSplitter(
 *nTür*<br/>
 `enum ESplitType`bir değeri, aşağıdakilerden biri olabilir:
 
-    - Bölümlendirici sürükleme kutusunu `splitBox`.
+- Bölümlendirici sürükleme kutusunu `splitBox`.
 
-    - iki bölünmüş pencere arasında görünen çubuğu `splitBar`.
+- iki bölünmüş pencere arasında görünen çubuğu `splitBar`.
 
-    - bölünmüş pencerelerin kesişimini `splitIntersection`. Bu öğe, Windows 95/98 üzerinde çalışırken çağrılmayacak.
+- bölünmüş pencerelerin kesişimini `splitIntersection`. Bu öğe, Windows 95/98 üzerinde çalışırken çağrılmayacak.
 
-    - Bölünmüş pencere kenarlıklarını `splitBorder`.
+- Bölünmüş pencere kenarlıklarını `splitBorder`.
 
 *Rect*<br/>
 Bölünmüş pencerelerin boyutunu ve şeklini belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine başvuru.

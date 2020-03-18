@@ -9,7 +9,6 @@ f1_keywords:
 - CUtlProps::IsValidValue
 - CUtlProps.IsValidValue
 - IsValidValue
-- CUtlProps
 - OnPropertyChanged
 - CUtlProps.OnPropertyChanged
 - CUtlProps::OnPropertyChanged
@@ -30,16 +29,16 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: 3f1af90bcf454a3651dd8de65bbee7cb6b5960ca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbeae4faad4d650d8dc44a61a22b1fcc63a0bc15
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176128"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441038"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
-OLE DB özelliği arabirimleri çeşitli özelliklerini uygular (örneğin, `IDBProperties`, `IDBProperties`, ve `IRowsetInfo`).
+Çeşitli OLE DB Özellik arabirimlerinin özelliklerini uygular (örneğin, `IDBProperties`, `IDBProperties`ve `IRowsetInfo`).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,12 +49,12 @@ class ATL_NO_VTABLE CUtlProps : public CUtlPropsBase
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-İçeren sınıf `BEGIN_PROPSET_MAP`.
+*Şı*<br/>
+`BEGIN_PROPSET_MAP`içeren sınıf.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -63,23 +62,23 @@ class ATL_NO_VTABLE CUtlProps : public CUtlPropsBase
 
 |||
 |-|-|
-|[GetPropValue](#getpropvalue)|Bir özelliği bir özellik kümesinden alır.|
-|[Isvalidvalue](#isvalidvalue)|Bir özellik ayarlamadan önce bir değer doğrulamak için kullanılır.|
-|[Onınterfacerequested](#oninterfacerequested)|Bir tüketici bir nesne oluşturma arabirimde bir yöntemi çağırdığında, isteğe bağlı bir arabirim için istekleri işler.|
-|[OnPropertyChanged](#onpropertychanged)|Zincirleme özellikleri işlemek üzere bir özelliğe ayarladıktan sonra çağrılır.|
-|[SetPropValue](#setpropvalue)|Bir özelliği bir özellik kümesi ayarlar.|
+|[GetPropValue](#getpropvalue)|Özellik kümesinden bir özellik alır.|
+|[IsValidValue](#isvalidvalue)|Bir özelliği ayarlamadan önce bir değeri doğrulamak için kullanılır.|
+|[OnInterfaceRequested](#oninterfacerequested)|Bir tüketici nesne oluşturma arabirimindeki bir yöntemi çağırdığında isteğe bağlı bir arabirim için istekleri işler.|
+|[OnPropertyChanged](#onpropertychanged)|Zincirleme özelliklerini işlemek için bir özellik ayarlandıktan sonra çağırılır.|
+|[SetPropValue](#setpropvalue)|Özellik kümesindeki bir özelliği ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çoğu bu sınıf, bir uygulama ayrıntısı olduğunu.
+Bu sınıfın çoğu bir uygulama ayrıntısıyla yapılır.
 
-`CUtlProps` dahili olarak özelliklerini ayarlamak için iki üyeleri içerir: [GetPropValue](../../data/oledb/cutlprops-getpropvalue.md) ve [SetPropValue](../../data/oledb/cutlprops-setpropvalue.md).
+`CUtlProps`, iç özellikleri ayarlamak için iki üye içerir: [GetPropValue](../../data/oledb/cutlprops-getpropvalue.md) ve [SetPropValue](../../data/oledb/cutlprops-setpropvalue.md).
 
-Bir özellik kümesi eşlemede kullanılan makrolar hakkında daha fazla bilgi için bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) ve [END_PROPSET_MAP](../../data/oledb/end-propset-map.md).
+Özellik kümesi eşlemesinde kullanılan makrolar hakkında daha fazla bilgi için bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) ve [END_PROPSET_MAP](../../data/oledb/end-propset-map.md).
 
-## <a name="getpropvalue"></a> CUtlProps::GetPropValue
+## <a name="getpropvalue"></a>CUtlProps:: GetPropValue
 
-Bir özelliği bir özellik kümesinden alır.
+Özellik kümesinden bir özellik alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -92,21 +91,21 @@ OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,
 #### <a name="parameters"></a>Parametreler
 
 *pguidPropSet*<br/>
-[in] PropSet GUİD'i.
+'ndaki PropSet için GUID.
 
 *Dwpropıd*<br/>
-[in] Özellik dizini.
+'ndaki Özellik dizini.
 
 *pvValue*<br/>
-[out] Yeni özellik değerini içeren bir değişken için bir işaretçi.
+dışı Yeni özellik değerini içeren bir varyant işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`Failure` hata ve başarılıysa S_OK.
+hata `Failure` ve başarılı olursa S_OK.
 
-## <a name="isvalidvalue"></a> CUtlProps::ısvalidvalue
+## <a name="isvalidvalue"></a>CUtlProps:: IsValidValue
 
-Bir özellik ayarlamadan önce bir değer doğrulamak için kullanılır.
+Bir özelliği ayarlamadan önce bir değeri doğrulamak için kullanılır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -117,23 +116,23 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
 
 #### <a name="parameters"></a>Parametreler
 
-*iCurSet*<br/>
-Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.
+*ıcurset*<br/>
+Özellik kümesi dizisine Dizin; yalnızca bir özellik kümesi varsa sıfırdır.
 
 *pDBProp*<br/>
-Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısı.
+Özellik KIMLIĞI ve bir [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısındaki yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Varsayılan dönüş S_OK değeridir.
+Standart HRESULT. Varsayılan dönüş değeri S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yaklaşık bir özelliği ayarlamak için kullanılacak olan değer üzerinde çalıştırmak istediğiniz herhangi bir doğrulama rutinleri varsa, bu işlev geçersiz kılmalıdır. Örneğin, geçerli bir değer belirlemek için bir parola tabloya karşı DBPROP_AUTH_PASSWORD doğrulama.
+Bir özelliği ayarlamak için kullanmak üzere olduğunuz bir değer üzerinde çalıştırmak istediğiniz doğrulama yordamlarınızın varsa, bu işlevi geçersiz kılmanız gerekir. Örneğin, geçerli bir değeri belirleyebilmek için parola tablosuna karşı DBPROP_AUTH_PASSWORD doğrulayabilirsiniz.
 
-## <a name="oninterfacerequested"></a> CUtlProps::onınterfacerequested
+## <a name="oninterfacerequested"></a>CUtlProps:: Onınterfacerequyilmiş
 
-Bir tüketici bir yöntem bir nesne oluşturma arabirimleri çağırdığında, isteğe bağlı bir arabirim için istekleri işler.
+Bir tüketici nesne oluşturma arabirimlerinden birindeki bir yöntemi çağırdığında isteğe bağlı bir arabirim için istekleri işler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -143,16 +142,16 @@ virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);
 
 #### <a name="parameters"></a>Parametreler
 
-*riid*<br/>
-[in] İstenen arabirimi için IID. Açıklamasını daha fazla ayrıntı için bkz. *riid* parametresinin `ICommand::Execute` içinde *OLE DB Programcının Başvurusu* (içinde *MDAC SDK*).
+*riıd*<br/>
+'ndaki İstenen arabirim için IID. Daha fazla ayrıntı için, *OLE DB Programcı başvurusunda* ( *MDAC SDK*'da) `ICommand::Execute` *riid* parametresinin açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnInterfaceRequested` bir tüketici bir yöntem bir nesne oluşturma arabirimleri çağırdığında, isteğe bağlı bir arabirim için tüketici isteklerini işler (gibi `IDBCreateSession`, `IDBCreateCommand`, `IOpenRowset`, veya `ICommand`). İstenen arabirim için karşılık gelen OLE DB özelliğini ayarlar. Örneğin, tüketici isterse `IID_IRowsetLocate`, `OnInterfaceRequested` ayarlar `DBPROP_IRowsetLocate` arabirimi. Bunun yapılması, satır kümesi oluşturma sırasında doğru durumda tutar.
+`OnInterfaceRequested`, bir tüketici nesne oluşturma arabirimlerinden (`IDBCreateSession`, `IDBCreateCommand`, `IOpenRowset`veya `ICommand`gibi) birindeki bir yöntemi çağırdığında isteğe bağlı bir arabirim için tüketici isteklerini işler. İstenen arabirim için karşılık gelen OLE DB özelliğini ayarlar. Örneğin, tüketici `IID_IRowsetLocate`isterse `OnInterfaceRequested` `DBPROP_IRowsetLocate` arabirimini ayarlar. Bunun yapılması, satır kümesi oluşturma sırasında doğru durumu korur.
 
-Bu yöntem, tüketici çağırdığında çağırılır `IOpenRowset::OpenRowset` veya `ICommand::Execute`.
+Bu yöntem, tüketici `IOpenRowset::OpenRowset` veya `ICommand::Execute`çağırdığında çağrılır.
 
-Bir tüketici bir nesneyi açan ve isteğe bağlı bir arabirim istekleri, sağlayıcı VARIANT_TRUE bu arabirimi ile ilişkilendirilmiş özelliği ayarlamanız gerekir. Özelliğe bağlı işleme izin verecek şekilde `OnInterfaceRequested` sağlayıcının önce çağrılır `Execute` yöntemi çağrılır. Varsayılan olarak, `OnInterfaceRequested` aşağıdaki arabirimlerinden işler:
+Bir tüketici bir nesne açarsa ve isteğe bağlı bir arabirim isterse, sağlayıcı bu arabirimle ilişkili özelliği VARIANT_TRUE olarak ayarlamış olmalıdır. Özelliğe özgü işleme izin vermek için `OnInterfaceRequested`, sağlayıcının `Execute` yöntemi çağrılmadan önce çağrılır. Varsayılan olarak, `OnInterfaceRequested` aşağıdaki arayüzleri işler:
 
 - `IRowsetLocate`
 
@@ -164,11 +163,11 @@ Bir tüketici bir nesneyi açan ve isteğe bağlı bir arabirim istekleri, sağl
 
 - `IRowsetScroll`
 
-Diğer arabirimleri işlemek istiyorsanız, bu işlem işlevleri için veri kaynağı, oturum, komut veya satır kümesi sınıfı işlevinde geçersiz kılar. Geçersiz kılma özellikleri ayarlama, herhangi bir zincirleme özelliği de ayarlar emin olmak için normal set/get özellikleri arabirimler gitmesi gereken (bkz [OnPropertyChanged](../../data/oledb/cutlprops-onpropertychanged.md)).
+Diğer arabirimleri işlemek istiyorsanız, işlevleri işlemek için veri kaynağınız, oturum, komut veya satır kümesi sınıfınıza bu işlevi geçersiz kılın. Geçersiz kılma özelliği, ayar özelliklerinin aynı zamanda zincirleme özellikleri de ayarlayadiğinden emin olmak için normal set/Get özellikleri arabirimlerini almalıdır (bkz. [OnPropertyChanged](../../data/oledb/cutlprops-onpropertychanged.md)).
 
-## <a name="onpropertychanged"></a> CUtlProps::OnPropertyChanged
+## <a name="onpropertychanged"></a>CUtlProps:: OnPropertyChanged
 
-Zincirleme özellikleri işlemek üzere bir özelliğe ayarladıktan sonra çağrılır.
+Zincirleme özelliklerini işlemek için bir özellik ayarlandıktan sonra çağırılır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -179,29 +178,29 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
 
 #### <a name="parameters"></a>Parametreler
 
-*iCurSet*<br/>
-Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.
+*ıcurset*<br/>
+Özellik kümesi dizisine Dizin; yalnızca bir özellik kümesi varsa sıfırdır.
 
 *pDBProp*<br/>
-Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısı.
+Özellik KIMLIĞI ve bir [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısındaki yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Varsayılan dönüş S_OK değeridir.
+Standart HRESULT. Varsayılan dönüş değeri S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yer işaretleri veya değerleri üzerinde başka bir özelliğin değerini, bağımlı olan güncelleştirmeler gibi zincirleme özellikleri işlemek istiyorsanız, bu işlev geçersiz kılmalıdır.
+Yer işaretleri veya değerleri başka bir özelliğin değerine bağımlı olan güncelleştirmeler gibi zincirleme özelliklerini işlemek istiyorsanız, bu işlevi geçersiz kılmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
-Bu işlevde harcanan, kullanıcının özellik kimliği alır `DBPROP*` parametresi. Artık, zincir bir özelliğe karşı kimliği karşılaştırmak mümkündür. Özellik bulunduğunda `SetProperties` artık diğer özelliğiyle birlikte ayarlanacak özelliği ile adlandırılır. Bir alır, bu durumda `DBPROP_IRowsetLocate`, `DBPROP_LITERALBOOKMARKS`, veya `DBPROP_ORDEREDBOOKMARKS` ayarlanmış bir özelliği `DBPROP_BOOKMARKS` özelliği.
+Bu işlevde, Kullanıcı `DBPROP*` parametresindeki Özellik KIMLIĞINI alır. Şimdi, KIMLIĞI bir özellikle zincirle karşılaştırmak mümkündür. Özellik bulunduğunda `SetProperties`, diğer özellikle birlikte ayarlanacak özelliği ile çağırılır. Bu durumda, biri `DBPROP_IRowsetLocate`, `DBPROP_LITERALBOOKMARKS`veya `DBPROP_ORDEREDBOOKMARKS` özelliğini alırsa, birisi `DBPROP_BOOKMARKS` özelliğini ayarlayabilir.
 
 [!code-cpp[NVC_OLEDB_Provider#2](../../data/oledb/codesnippet/cpp/cutlprops-onpropertychanged_1.h)]
 
-## <a name="setpropvalue"></a> CUtlProps::SetPropValue
+## <a name="setpropvalue"></a>CUtlProps:: SetPropValue
 
-Bir özelliği bir özellik kümesi ayarlar.
+Özellik kümesindeki bir özelliği ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -214,17 +213,17 @@ HRESULT SetPropValue(const GUID* pguidPropSet,
 #### <a name="parameters"></a>Parametreler
 
 *pguidPropSet*<br/>
-[in] PropSet GUİD'i.
+'ndaki PropSet için GUID.
 
 *Dwpropıd*<br/>
-[in] Özellik dizini.
+'ndaki Özellik dizini.
 
 *pvValue*<br/>
-[in] Yeni özellik değerini içeren bir değişken için bir işaretçi.
+'ndaki Yeni özellik değerini içeren bir varyant işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`Failure` hata ve başarılıysa S_OK.
+hata `Failure` ve başarılı olursa S_OK.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -2,7 +2,6 @@
 title: OLE DB Sağlayıcı Şablonları için Makrolar
 ms.date: 02/11/2019
 f1_keywords:
-- vc.templates.ole
 - BEGIN_PROPERTY_SET
 - BEGIN_PROPERTY_SET_EX
 - BEGIN_PROPSET_MAP
@@ -51,60 +50,60 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: f5cf5e8ebadcc48dbd040225496f0a437b92555c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b11455c1de13321bce52fbc3be906014b2844aee
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152715"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442409"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 
-OLE DB Şablonları sağlayıcısı makroları işlevselliğini Aşağıdaki kategorilerde sunulur:
+OLE DB şablonları sağlayıcı makroları aşağıdaki kategorilerdeki işlevleri sunar:
 
 ## <a name="property-set-map-macros"></a>Özellik kümesi eşleme makroları
 
 |||
 |-|-|
-|[BEGIN_PROPERTY_SET](#begin_property_set)|Bir özellik kümesi başlangıcını işaretler.|
-|[BEGIN_PROPERTY_SET_EX](#begin_property_set_ex)|Bir özellik kümesi başlangıcını işaretler.|
-|[BEGIN_PROPSET_MAP](#begin_propset_map)|Bir özelliğin başına kümesi işaretleri gizli veya sağlayıcı kapsamı dışında tanımlanmış.|
-|[CHAIN_PROPERTY_SET](#chain_property_set)|Özellik gruplarını zincir.|
-|[END_PROPERTY_SET](#end_property_set)|Bir özellik kümesi sonunu işaretler.|
-|[END_PROPSET_MAP](#end_propset_map)|Bir özellik kümesi eşlemesini sonunu işaretler.|
-|[PROPERTY_INFO_ENTRY](#property_info_entry)|Bir özellik için varsayılan bir değer kümesi içinde belirli bir özellik ayarlar.|
-|[PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex)|Belirli bir özellik, sizin tarafınızdan sağlanan bir değere özellik ayarlar. Ayrıca bayrakları ve seçenekleri ayarlamanıza olanak sağlar.|
-|[PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value)|Belirli bir özellik, sizin tarafınızdan sağlanan bir değere özellik ayarlar.|
+|[BEGIN_PROPERTY_SET](#begin_property_set)|Bir özellik kümesinin başlangıcını işaretler.|
+|[BEGIN_PROPERTY_SET_EX](#begin_property_set_ex)|Bir özellik kümesinin başlangıcını işaretler.|
+|[BEGIN_PROPSET_MAP](#begin_propset_map)|Bir özellik kümesinin başlangıcını, bu,, sağlayıcının kapsamı dışında gizli veya tanımlanmış olacak şekilde işaretler.|
+|[CHAIN_PROPERTY_SET](#chain_property_set)|Özellik gruplarını birlikte zincirler.|
+|[END_PROPERTY_SET](#end_property_set)|Bir özellik kümesinin sonunu işaretler.|
+|[END_PROPSET_MAP](#end_propset_map)|Özellik kümesi eşlemesinin sonunu işaretler.|
+|[PROPERTY_INFO_ENTRY](#property_info_entry)|Bir özellik kümesindeki belirli bir özelliği varsayılan değere ayarlar.|
+|[PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex)|Bir özellik kümesindeki belirli bir özelliği sizin tarafınızdan sağlanan bir değere ayarlar. Ayrıca bayrakları ve seçenekleri ayarlamanıza olanak sağlar.|
+|[PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value)|Bir özellik kümesindeki belirli bir özelliği sizin tarafınızdan sağlanan bir değere ayarlar.|
 
-## <a name="column-map-macros"></a>Sütun eşleme makroları
+## <a name="column-map-macros"></a>Sütun Haritası makroları
 
 |||
 |-|-|
-|[BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map)|Sağlayıcı sütun eşleme girişleri başlangıcını işaretler.|
-|[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|Sağlayıcı sütun eşleme girişleri sonunu işaretler.|
+|[BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map)|Sağlayıcı sütun eşleme girdilerinin başlangıcını işaretler.|
+|[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|Sağlayıcı sütun eşleme girdilerinin sonunu işaretler.|
 |[PROVIDER_COLUMN_ENTRY](#provider_column_entry)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.|
-|[PROVIDER_COLUMN_ENTRY_FIXED](#provider_column_entry_fixed)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütunun veri türünü belirtebilir.|
-|[PROVIDER_COLUMN_ENTRY_GN](#provider_column_entry_gn)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütun boyutu, veri türü, kesinlik, ölçek ve şeması satır kümesi GUID'si belirtebilirsiniz.|
-|[PROVIDER_COLUMN_ENTRY_LENGTH](#provider_column_entry_length)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütun boyutu belirtebilirsiniz.|
-|[PROVIDER_COLUMN_ENTRY_STR](#provider_column_entry_str)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Bu sütun türü bir dize olduğunu varsayar.|
-|[PROVIDER_COLUMN_ENTRY_TYPE_LENGTH](#provider_column_entry_type_length)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Provıder_column_entry_length ister, ancak ayrıca boyutu yanı sıra, sütunun veri türünü belirtmenize olanak sağlar.|
-|[PROVIDER_COLUMN_ENTRY_WSTR](#provider_column_entry_wstr)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Bu şekilde, bir Unicode karakter dizesi sütun türü olduğunu varsayar.|
+|[PROVIDER_COLUMN_ENTRY_FIXED](#provider_column_entry_fixed)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütun veri türünü belirtebilirsiniz.|
+|[PROVIDER_COLUMN_ENTRY_GN](#provider_column_entry_gn)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütunun boyutunu, veri türünü, duyarlılığını, ölçeğini ve şema satır kümesi GUID 'sini belirtebilirsiniz.|
+|[PROVIDER_COLUMN_ENTRY_LENGTH](#provider_column_entry_length)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütun boyutunu belirtebilirsiniz.|
+|[PROVIDER_COLUMN_ENTRY_STR](#provider_column_entry_str)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütun türünün bir dize olduğunu varsayar.|
+|[PROVIDER_COLUMN_ENTRY_TYPE_LENGTH](#provider_column_entry_type_length)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. PROVIDER_COLUMN_ENTRY_LENGTH gibi, ancak sütunun veri türünü de ve boyutunu belirtmenize de olanak tanır.|
+|[PROVIDER_COLUMN_ENTRY_WSTR](#provider_column_entry_wstr)|Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder. Sütun türünün bir Unicode karakter dizesi olduğunu varsayar.|
 
 ## <a name="schema-rowset-macros"></a>Şema satır kümesi makroları
 
 |||
 |-|-|
-|[BEGIN_SCHEMA_MAP](#begin_schema_map)|Bir şema eşlemesine başlangıcını işaretler.|
-|[END_SCHEMA_MAP](#end_schema_map)|Şema eşleme sonunu işaretler.|
-|[SCHEMA_ENTRY](#schema_entry)|Bir GUID, bir sınıf ile ilişkilendirir.|
+|[BEGIN_SCHEMA_MAP](#begin_schema_map)|Şema eşlemesinin başlangıcını işaretler.|
+|[END_SCHEMA_MAP](#end_schema_map)|Bir şema eşlemesinin sonunu işaretler.|
+|[SCHEMA_ENTRY](#schema_entry)|GUID 'ı bir sınıf ile ilişkilendirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
-### <a name="begin_property_set"></a> BEGIN_PROPERTY_SET
+### <a name="begin_property_set"></a>BEGIN_PROPERTY_SET
 
-Bir özelliğin başına bir özelliği ayarlamak işaretleri eşlemesi ayarlayın.
+Özellik kümesi eşlemesinde bir özelliğin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -114,16 +113,16 @@ BEGIN_PROPERTY_SET(guid)
 
 #### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
-[in] Özellik GUID.
+*'ini*<br/>
+'ndaki Özellik GUID 'SI.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="begin_property_set_ex"></a> BEGIN_PROPERTY_SET_EX
+### <a name="begin_property_set_ex"></a>BEGIN_PROPERTY_SET_EX
 
-Bir özelliğin başına bir özelliği ayarlamak işaretleri eşlemesi ayarlayın.
+Özellik kümesi eşlemesinde bir özelliğin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -133,19 +132,19 @@ BEGIN_PROPERTY_SET_EX(guid, flags)
 
 #### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
-[in] Özellik GUID.
+*'ini*<br/>
+'ndaki Özellik GUID 'SI.
 
-*bayrakları*<br/>
-[in] UPROPSET_HIDDEN göstermek istemediğiniz herhangi bir özellik kümeleri veya UPROPSET_PASSTHROUGH sağlayıcı kapsamı dışında tanımlanan özellikleri kullanıma sunan bir sağlayıcı için.
+*larına*<br/>
+'ndaki Göstermek istemediğiniz herhangi bir özellik kümesi için UPROPSET_HIDDEN veya sağlayıcının kapsamı dışında tanımlanan özellikleri açığa çıkaran bir sağlayıcı için UPROPSET_PASSTHROUGH.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="begin_propset_map"></a> BEGIN_PROPSET_MAP
+### <a name="begin_propset_map"></a>BEGIN_PROPSET_MAP
 
-İşaretleri özelliğinin başına eşleme girişleri ayarlayın.
+Özellik kümesi eşleme girdilerinin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -156,23 +155,23 @@ BEGIN_PROPSET_MAP(Class)
 #### <a name="parameters"></a>Parametreler
 
 *Sınıfı*<br/>
-[in] Bu özelliği ayarlamak, sınıfın belirtilir. Bir özellik kümesi, OLE DB nesneleri belirtilebilir:
+'ndaki Bu özellik kümesinin belirtildiği sınıf. Aşağıdaki OLE DB nesnelerinde bir özellik kümesi belirtilebilir:
 
 - [Veri kaynağı nesneleri](/previous-versions/windows/desktop/ms721278(v=vs.85))
 
 - [Oturum nesneleri](/previous-versions/windows/desktop/ms711572(v=vs.85))
 
-- [Komutları](/previous-versions/windows/desktop/ms724608(v=vs.85))
+- [Komut](/previous-versions/windows/desktop/ms724608(v=vs.85))
 
 #### <a name="example"></a>Örnek
 
-Örnek özellik kümesi eşlemesi şu şekildedir:
+Örnek özellik kümesi eşlemesi aşağıda verilmiştir:
 
 [!code-cpp[NVC_OLEDB_Provider#3](../../data/oledb/codesnippet/cpp/begin-propset-map_1.h)]
 
-### <a name="chain_property_set"></a> CHAIN_PROPERTY_SET
+### <a name="chain_property_set"></a>CHAIN_PROPERTY_SET
 
-Bu makro özellik gruplarını zincir.
+Bu makro, özellik gruplarını birlikte zincirler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -183,18 +182,18 @@ CHAIN_PROPERTY_SET(ChainClass)
 #### <a name="parameters"></a>Parametreler
 
 *ChainClass*<br/>
-[in] Zincir özelliklerini sınıfı adı. Bu, zaten (örneğin, bir oturum, komut veya veri kaynağı nesne sınıfı) bir harita içeren ATL Proje Sihirbazı tarafından oluşturulan bir sınıftır.
+'ndaki İçin özelliklerin zincirde olduğu sınıfın adı. Bu, zaten bir eşlem (örneğin, bir oturum, komut veya veri kaynağı nesne sınıfı) içeren ATL Proje Sihirbazı tarafından oluşturulan bir sınıftır.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Zincir kendi sınıf başka bir sınıftaki bir özellik kümesi, ardından sınıftan doğrudan erişim özellikleri.
+Başka bir sınıftan bir özellik kümesini kendi sınıfınıza zincirleyebilir, sonra doğrudan sınıfınızdan özelliklere erişebilirsiniz.
 
 > [!CAUTION]
->  Bu makro tedbirli şekilde kullanın. Hatalı kullanımı, bir tüketici OLE DB uygunluk testlerini başarısız olmasına neden olabilir.
+>  Bu makroyu dikkatli bir şekilde kullanın. Hatalı kullanım, bir tüketicinin OLE DB uygunluk testlerini başarısız olmasına neden olabilir.
 
-### <a name="end_property_set"></a> END_PROPERTY_SET
+### <a name="end_property_set"></a>END_PROPERTY_SET
 
-Bir özellik kümesi sonunu işaretler.
+Bir özellik kümesinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -204,16 +203,16 @@ END_PROPERTY_SET(guid)
 
 #### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
-[in] Özellik GUID.
+*'ini*<br/>
+'ndaki Özellik GUID 'SI.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="end_propset_map"></a> END_PROPSET_MAP
+### <a name="end_propset_map"></a>END_PROPSET_MAP
 
-İşaretleri özelliği sonuna eşleme girişleri ayarlayın.
+Özellik kümesi eşleme girdilerinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -223,11 +222,11 @@ END_PROPSET_MAP()
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="property_info_entry"></a> PROPERTY_INFO_ENTRY
+### <a name="property_info_entry"></a>PROPERTY_INFO_ENTRY
 
-Bir özellik kümesi içinde belirli bir özelliği temsil eder.
+Bir özellik kümesindeki belirli bir özelliği temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -237,20 +236,20 @@ PROPERTY_INFO_ENTRY(dwPropID)
 
 #### <a name="parameters"></a>Parametreler
 
-*dwPropID*<br/>
-[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.
+*Dwpropıd*<br/>
+'ndaki Bir özelliği tanımlamak için özellik kümesi GUID 'SI ile birlikte kullanılabilen bir [Dbpropid](/previous-versions/windows/desktop/ms723882(v=vs.85)) değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro türü özellik değerini ayarlar `DWORD` ATLDB içinde tanımlanmış bir varsayılan değer. H Bir değerine özellik ayarlamak için kullanın [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). Ayarlanacak `VARTYPE` ve [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) özelliği için aynı anda kullanmak [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).
+Bu makro, `DWORD` türü özellik değerini ATLDB içinde tanımlanan varsayılan değere ayarlar. Olsun. Özelliği seçtiğiniz bir değere ayarlamak için [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)kullanın. Özelliği için `VARTYPE` ve [dbpropflags](/previous-versions/windows/desktop/ms724342(v=vs.85)) 'i aynı anda ayarlamak için [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="property_info_entry_ex"></a> PROPERTY_INFO_ENTRY_EX
+### <a name="property_info_entry_ex"></a>PROPERTY_INFO_ENTRY_EX
 
-Bir özellik kümesi içinde belirli bir özelliği temsil eder.
+Bir özellik kümesindeki belirli bir özelliği temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -260,32 +259,32 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
 
 #### <a name="parameters"></a>Parametreler
 
-*dwPropID*<br/>
-[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.
+*Dwpropıd*<br/>
+'ndaki Bir özelliği tanımlamak için özellik kümesi GUID 'SI ile birlikte kullanılabilen bir [Dbpropid](/previous-versions/windows/desktop/ms723882(v=vs.85)) değeri.
 
-*vt*<br/>
-[in] `VARTYPE` Bu özelliği giriş. (Wtypes.h içinde tanımlanmıştır)
+*z*<br/>
+'ndaki Bu özellik girişinin `VARTYPE`. (WTypes. h içinde tanımlanır)
 
-*CertOpenStore*<br/>
-[in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) bu özellik girdisini tanımlayan değer.
+*dwFlags*<br/>
+'ndaki Bu özellik girişini açıklayan bir [dbpropflags](/previous-versions/windows/desktop/ms724342(v=vs.85)) değeri.
 
 *value*<br/>
-[in] Özellik değeri türü `DWORD`.
+'ndaki `DWORD`türünün Özellik değeri.
 
 *Seçenekler*<br/>
-DBPROPOPTIONS_REQUIRED veya DBPROPOPTIONS_SETIFCHEAP. Normalde, bir sağlayıcı ayarlayın gerekmez *seçenekleri* çünkü tüketici tarafından ayarlanır.
+Ya DBPROPOPTIONS_REQUIRED ya da DBPROPOPTIONS_SETIFCHEAP. Normalde, bir sağlayıcının tüketici tarafından ayarlandığı bu yana *seçenekleri* ayarlaması gerekmez.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, özellik değeri türü doğrudan belirtebilirsiniz `DWORD` yanı sıra seçenekleri ve bayrakları. Yalnızca ATLDB içinde tanımlanan varsayılan değerine özellik ayarlamak için. H, kullanım [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md). Bir değere seçeneklerini ayarlama ya da bayrakları olmadan tercih ettiğiniz bir özelliği ayarlamak üzere kullanımı [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md).
+Bu makro ile, tür ve bayrakların özellik değerini doğrudan belirtebilirsiniz `DWORD`. Yalnızca bir özelliği ATLDB 'de tanımlanan varsayılan bir değere ayarlamak için. H, [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md)kullanın. Bir özelliği seçtiğiniz bir değere ayarlamak için, üzerinde seçenek veya bayrak ayarlamadan [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="property_info_entry_value"></a> PROPERTY_INFO_ENTRY_VALUE
+### <a name="property_info_entry_value"></a>PROPERTY_INFO_ENTRY_VALUE
 
-Bir özellik kümesi içinde belirli bir özelliği temsil eder.
+Bir özellik kümesindeki belirli bir özelliği temsil eder.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -295,23 +294,23 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 
 #### <a name="parameters"></a>Parametreler
 
-*dwPropID*<br/>
-[in] A [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.
+*Dwpropıd*<br/>
+'ndaki Bir özelliği tanımlamak için özellik kümesi GUID 'SI ile birlikte kullanılabilen bir [Dbpropid](/previous-versions/windows/desktop/ms723882(v=vs.85)) değeri.
 
 *value*<br/>
-[in] Özellik değeri türü `DWORD`.
+'ndaki `DWORD`türünün Özellik değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, özellik değeri türü doğrudan belirtebilirsiniz `DWORD`. ATLDB içinde tanımlanan varsayılan değerine özellik ayarlamak için. H, kullanım [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md). Değer, bayraklar ve özellik seçeneklerini ayarlamak için kullanın [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).
+Bu makro ile, `DWORD`türünün özellik değerini doğrudan belirtebilirsiniz. Özelliği, ATLDB 'de tanımlanan varsayılan değere ayarlamak için. H, [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md)kullanın. Özelliğin değerini, bayraklarını ve seçeneklerini ayarlamak için [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-### <a name="begin_provider_column_map"></a> BEGIN_PROVIDER_COLUMN_MAP
+### <a name="begin_provider_column_map"></a>BEGIN_PROVIDER_COLUMN_MAP
 
-Sağlayıcı sütun eşleme girişleri başlangıcını işaretler.
+Sağlayıcı sütun eşleme girdilerinin başlangıcını işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -321,18 +320,18 @@ BEGIN_PROVIDER_COLUMN_MAP(theClass)
 
 #### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-[in] Bu harita ait olduğu sınıfın adı.
+*Sınıf*<br/>
+'ndaki Bu haritanın ait olduğu sınıfın adı.
 
 #### <a name="example"></a>Örnek
 
-Bir örnek sağlayıcısı sütun eşlemesi şu şekildedir:
+Örnek sağlayıcı sütun eşlemesi aşağıda verilmiştir:
 
 [!code-cpp[NVC_OLEDB_Provider#4](../../data/oledb/codesnippet/cpp/begin-provider-column-map_1.h)]
 
-### <a name="end_provider_column_map"></a> END_PROVIDER_COLUMN_MAP
+### <a name="end_provider_column_map"></a>END_PROVIDER_COLUMN_MAP
 
-Sağlayıcı sütun eşleme girişleri sonunu işaretler.
+Sağlayıcı sütun eşleme girdilerinin sonunu işaretler.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -342,9 +341,9 @@ END_PROVIDER_COLUMN_MAP()
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
-### <a name="provider_column_entry"></a> PROVIDER_COLUMN_ENTRY
+### <a name="provider_column_entry"></a>PROVIDER_COLUMN_ENTRY
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -356,16 +355,16 @@ PROVIDER_COLUMN_ENTRY (name, ordinal, member)
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
-*Üyesi*<br/>
-[in] Üye değişkeni `dataClass` sütununa karşılık gelen.
+*üyesidir*<br/>
+'ndaki Sütununa karşılık gelen `dataClass` üye değişkeni.
 
-### <a name="provider_column_entry_fixed"></a> PROVIDER_COLUMN_ENTRY_FIXED
+### <a name="provider_column_entry_fixed"></a>PROVIDER_COLUMN_ENTRY_FIXED
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -377,27 +376,27 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
 *DbType*<br/>
-[in] Veri türü olarak [DBTYPE](/previous-versions/windows/desktop/ms711251(v=vs.85)).
+'ndaki [DbType](/previous-versions/windows/desktop/ms711251(v=vs.85))içindeki veri türü.
 
-*Üyesi*<br/>
-[in] Üye değişkeni `dataClass` , verileri depolar.
+*üyesidir*<br/>
+'ndaki Verileri depolayan `dataClass` üye değişkeni.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sütun veri türü belirtmenizi sağlar.
+Sütun veri türünü belirtmenize izin verir.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
-### <a name="provider_column_entry_gn"></a> PROVIDER_COLUMN_ENTRY_GN
+### <a name="provider_column_entry_gn"></a>PROVIDER_COLUMN_ENTRY_GN
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -409,35 +408,35 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
-*bayrakları*<br/>
-[in] Veriler nasıl döndürülür belirtir. Bkz: `dwFlags` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)).
+*larına*<br/>
+'ndaki Verilerin nasıl döndürüleceğini belirtir. [Dbbinding yapılarında](/previous-versions/windows/desktop/ms716845(v=vs.85))`dwFlags` açıklamasına bakın.
 
 *colSize*<br/>
-[in] Sütun boyutu.
+'ndaki Sütun boyutu.
 
 *DbType*<br/>
-[in] Değeri veri türünü belirtir. Bkz: `wType` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)).
+'ndaki Değerin veri türünü gösterir. [Dbbinding yapılarında](/previous-versions/windows/desktop/ms716845(v=vs.85))`wType` açıklamasına bakın.
 
-*Duyarlık*<br/>
-[in] Veri alma sırasında kullanılacak duyarlık gösterir *dbType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL. Bkz: `bPrecision` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)).
+*duyarlılık*<br/>
+'ndaki *DbType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL olduğunda veri alırken kullanılacak duyarlığı gösterir. [Dbbinding yapılarında](/previous-versions/windows/desktop/ms716845(v=vs.85))`bPrecision` açıklamasına bakın.
 
-*Ölçek*<br/>
-[in] DbType DBTYPE_NUMERIC veya DBTYPE_DECIMAL ise veri alınırken kullanılacak ölçek gösterir. Bkz: `bScale` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)).
+*ölçek*<br/>
+'ndaki DbType DBTYPE_NUMERIC veya DBTYPE_DECIMAL olduğunda veri alırken kullanılacak ölçeği gösterir. [Dbbinding yapılarında](/previous-versions/windows/desktop/ms716845(v=vs.85))`bScale` açıklamasına bakın.
 
-*GUID*<br/>
-Bir şema satır kümesi GUID'si. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) içinde *OLE DB Programcının Başvurusu* şema satır kümeleri ve GUID'ler listesi.
+*'ini*<br/>
+Şema satır kümesi GUID 'SI. Şema satır kümelerinin listesi ve bunların GUID 'Leri için *OLE DB Programcı başvurusu* Içindeki [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) öğesine bakın.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sütun boyutu, veri türü, kesinlik, ölçek ve şeması satır kümesi GUID'si belirtmenizi sağlar.
+Sütunun boyutunu, veri türünü, duyarlılığını, ölçeğini ve şema satır kümesi GUID 'INI belirtmenize olanak tanır.
 
-### <a name="provider_column_entry_length"></a> PROVIDER_COLUMN_ENTRY_LENGTH
+### <a name="provider_column_entry_length"></a>PROVIDER_COLUMN_ENTRY_LENGTH
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -449,27 +448,27 @@ PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
-*Boyutu*<br/>
-[in] Sütun boyutu bayt cinsinden.
+*boyutla*<br/>
+'ndaki Bayt cinsinden sütun boyutu.
 
-*Üyesi*<br/>
-[in] Üye değişkeni `dataClass` , sütun verilerini depolar.
+*üyesidir*<br/>
+'ndaki Sütun verilerini depolayan `dataClass` üye değişkeni.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sütun boyutu belirtmenizi sağlar.
+Sütun boyutunu belirtmenize izin verir.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
-### <a name="provider_column_entry_str"></a> PROVIDER_COLUMN_ENTRY_STR
+### <a name="provider_column_entry_str"></a>PROVIDER_COLUMN_ENTRY_STR
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -481,24 +480,24 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
-*Üyesi*<br/>
-[in] Veri depolayan veri sınıfı üye değişkeni.
+*üyesidir*<br/>
+'ndaki Verileri depolayan veri sınıfındaki üye değişkeni.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sütun verileri varsayılır Bu makroyu kullanın [DBTYPE_STR](/previous-versions/windows/desktop/ms711251(v=vs.85)).
+Sütun verilerinin [dbtype_str](/previous-versions/windows/desktop/ms711251(v=vs.85))olduğu kabul edildiğinde bu makroyu kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz: [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
-### <a name="provider_column_entry_type_length"></a> PROVIDER_COLUMN_ENTRY_TYPE_LENGTH
+### <a name="provider_column_entry_type_length"></a>PROVIDER_COLUMN_ENTRY_TYPE_LENGTH
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -510,26 +509,26 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
 *DbType*<br/>
-[in] Veri türü olarak [DBTYPE](/previous-versions/windows/desktop/ms711251(v=vs.85)).
+'ndaki [DbType](/previous-versions/windows/desktop/ms711251(v=vs.85))içindeki veri türü.
 
-*Boyutu*<br/>
-[in] Sütun boyutu bayt cinsinden.
+*boyutla*<br/>
+'ndaki Bayt cinsinden sütun boyutu.
 
-*Üyesi*<br/>
-[in] Veri depolayan veri sınıfı üye değişkeni.
+*üyesidir*<br/>
+'ndaki Verileri depolayan veri sınıfındaki üye değişkeni.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Benzer şekilde [provıder_column_entry_length](../../data/oledb/provider-column-entry-length.md) ancak ayrıca boyutu yanı sıra, sütunun veri türünü belirtmenize olanak sağlar.
+[PROVIDER_COLUMN_ENTRY_LENGTH](../../data/oledb/provider-column-entry-length.md) benzer ancak sütunun veri türünü ve boyutunu belirtmenize de olanak tanır.
 
-### <a name="provider_column_entry_wstr"></a> PROVIDER_COLUMN_ENTRY_WSTR
+### <a name="provider_column_entry_wstr"></a>PROVIDER_COLUMN_ENTRY_WSTR
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
@@ -541,22 +540,22 @@ PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-[in] Sütun adı.
+*ada*<br/>
+'ndaki Sütun adı.
 
-*Sıra*<br/>
-[in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.
+*numarasını*<br/>
+'ndaki Sütun numarası. Sütun bir yer Işareti sütunu değilse, sütun numarası 0 olmamalı.
 
-*Üyesi*<br/>
-[in] Veri depolayan veri sınıfı üye değişkeni.
+*üyesidir*<br/>
+'ndaki Verileri depolayan veri sınıfındaki üye değişkeni.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sütun verileri bir null sonlandırılmış Unicode karakter dizesi olduğunda bu makroyu kullanın [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251(v=vs.85)).
+Sütun verileri boş bir sonlandırılmış Unicode karakter dizesi olduğunda bu makroyu kullanın, [dbtype_wstr](/previous-versions/windows/desktop/ms711251(v=vs.85)).
 
-### <a name="begin_schema_map"></a> BEGIN_SCHEMA_MAP
+### <a name="begin_schema_map"></a>BEGIN_SCHEMA_MAP
 
-Şema eşleme başına gösterir.
+Bir şema eşlemesinin başlangıcını gösterir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -567,15 +566,15 @@ BEGIN_SCHEMA_MAP(SchemaClass);
 #### <a name="parameters"></a>Parametreler
 
 *SchemaClass*<br/>
-Harita içeren sınıf. Genellikle bu oturum sınıfının olacaktır.
+HARITAYı içeren sınıf. Genellikle bu oturum sınıfı olacaktır.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) şema satır kümeleri hakkında daha fazla bilgi için Windows SDK.
+Şema satır kümeleri hakkında daha fazla bilgi için Windows SDK [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) bölümüne bakın.
 
-### <a name="end_schema_map"></a> END_SCHEMA_MAP
+### <a name="end_schema_map"></a>END_SCHEMA_MAP
 
-Şema eşleme sonuna gösterir.
+Şema eşlemesinin sonunu belirtir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -585,11 +584,11 @@ END_SCHEMA_MAP()
 
 #### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDBSchemaRowsetImpl sınıfı](../../data/oledb/idbschemarowsetimpl-class.md).
+Daha fazla bilgi için bkz. [IDBSchemaRowsetImpl Class](../../data/oledb/idbschemarowsetimpl-class.md).
 
-### <a name="schema_entry"></a> SCHEMA_ENTRY
+### <a name="schema_entry"></a>SCHEMA_ENTRY
 
-Bir GUID, bir sınıf ile ilişkilendirir.
+GUID 'ı bir sınıf ile ilişkilendirir.
 
 #### <a name="syntax"></a>Sözdizimi
 
@@ -600,15 +599,15 @@ SCHEMA_ENTRY(guid,
 
 #### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
-Bir şema satır kümesi GUID'si. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) içinde *OLE DB Programcının Başvurusu* şema satır kümeleri ve GUID'ler listesi.
+*'ini*<br/>
+Şema satır kümesi GUID 'SI. Şema satır kümelerinin listesi ve bunların GUID 'Leri için *OLE DB Programcı başvurusu* Içindeki [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) öğesine bakın.
 
-*RowsetClass*<br/>
-Şema satır kümesi temsil etmek için oluşturulan sınıf.
+*rowsetClass*<br/>
+Şema satır kümesini temsil etmek için oluşturulacak sınıf.
 
 #### <a name="remarks"></a>Açıklamalar
 
-[IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) sonra eşleme GUID'lerinin listesi için sorgu yapabilirsiniz veya bir GUID verilirse, bir satır kümesi oluşturabilirsiniz. Şema satır kümesi `IDBSchemaRowsetImpl` oluşturur standart benzer `CRowsetImpl`-sağlamanız gerekir ancak türetilmiş bir sınıf, bir `Execute` şu imzaya sahip yöntemi:
+[IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) daha sonra bir GUID listesi için eşlemeyi sorgulayabilir veya bir GUID verildiyse bir satır kümesi oluşturabilir. `IDBSchemaRowsetImpl` şema satır kümesi, standart `CRowsetImpl`türetilmiş bir sınıfa benzer, ancak aşağıdaki imzaya sahip bir `Execute` yöntemi sağlamalıdır:
 
 ```cpp
 HRESULT Execute (LONG* pcRowsAffected,
@@ -616,7 +615,7 @@ HRESULT Execute (LONG* pcRowsAffected,
     const VARIANT* rgRestrictions);
 ```
 
-Bu `Execute` işlevi satır kümesinin veri doldurur. ATL projesi Sihirbazı oluşturur açıklandığı [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) içinde *OLE DB Programcının Başvurusu*, üç ilk şema satır kümeleri projedeki her üç zorunlu OLE DB şemaları için:
+Bu `Execute` işlevi satır kümesinin verilerini doldurur. ATL Proje Sihirbazı, *OLE DB Programcı başvurusunda* [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) bölümünde açıklandığı gibi, üç zorunlu OLE DB şemasının her biri için projede üç tane ilk şema satır kümesi oluşturur:
 
 - DBSCHEMA_TABLES
 
@@ -624,7 +623,7 @@ Bu `Execute` işlevi satır kümesinin veri doldurur. ATL projesi Sihirbazı olu
 
 - DBSCHEMA_PROVIDER_TYPES
 
-Sihirbaz, ayrıca şema haritada üç karşılık gelen girişler ekler. Bkz: [OLE DB Şablon sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md) bir sağlayıcı oluşturmak için sihirbazı kullanma hakkında daha fazla bilgi için.
+Sihirbaz ayrıca şema eşlemesine üç karşılık gelen giriş ekler. Sağlayıcı oluşturmak için Sihirbazı kullanma hakkında daha fazla bilgi için bkz. [OLE DB Şablon sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

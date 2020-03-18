@@ -2,43 +2,43 @@
 title: /Zc:trigraphs (Trigrafları Değiştirme)
 ms.date: 03/06/2018
 f1_keywords:
-- /Zc
+- /Zc:trigraphs
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - /Zc compiler options (C++)
 - Conformance compiler options
 - Zc compiler options (C++)
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
-ms.openlocfilehash: 7a20123603030dfe719cd8990018f795df137981
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e4c98e09551d39e3ff7978767b21f1d2c5bb318
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316008"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438654"
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs (Trigrafları Değiştirme)
 
-Zaman **/ZC: trigraphs** belirtilirse, derleyici, karşılık gelen bir noktalama karakteri kullanarak bir trigraf karakter dizisi yerini alır.
+**/Zc: trigraf** belirtildiğinde, derleyici bir trigraf karakter dizisini karşılık gelen noktalama karakterini kullanarak değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:trigraphs**[**-**]
+> **/Zc: trigraf**[ **-** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
-A *trigraf* oluşur birbirini izleyen iki soru işareti ("??") üçüncü bir benzersiz karakter. C dil standardı trigrafları bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesini kullandırır kaynak dosyaları için destekler. Örneğin, derleyici trigrafları etkinleştirildiğinde, yerini alan "?? = "trigraf '#' karakterinden kullanarak. C ++ 14, olduğu gibi c trigrafları desteklenir Trigrafları, C ++ 17 standardına C++ dili kaldırır. C++ kodunda **/ZC: trigraphs** derleyici seçeneği tarafından karşılık gelen noktalama karakteri trigraf dizileri değiştirme sağlar. **/ZC:trigraphs-** trigraf değiştirme devre dışı bırakır.
+*Üçlü grafik* , birbirini izleyen iki soru işaretinden ("??") ve ardından benzersiz bir üçüncü karakterle oluşur. C dil standardı, bazı noktalama karakterleri için kullanışlı grafik gösterimleri içermeyen bir karakter kümesi kullanan kaynak dosyalar için üç aylık grafiği destekler. Örneğin, trigraf etkin olduğunda, derleyici "?? = "' # ' karakterini kullanarak trigraf. C++ 14 aracılığıyla trigraf C 'de olduğu gibi desteklenir. C++ 17 standardı, C++ dilin trigraf 'yi kaldırır. C++ Kodda, **/Zc: trigraf** derleyici seçeneği, trigraf sıralarının karşılık gelen noktalama karakteriyle kullanılmasına izin vermez. **/Zc: trigraf-** trigraf değişimini devre dışı bırakır.
 
-**/ZC: trigraphs** seçeneği varsayılan olarak kapalıdır ve seçeneği ne zaman etkilenen [/ permissive-](permissive-standards-conformance.md) seçeneği belirtildi.
+**/Zc: trigraf** seçeneği varsayılan olarak kapalıdır ve [/Permissive-](permissive-standards-conformance.md) seçeneği belirtildiğinde seçenek etkilenmez.
 
-C/C++ trigrafları ve trigrafları kullanmayı gösteren bir örnek listesi için bkz: [Trigrafları](../../c-language/trigraphs.md).
+C/C++ trigraf listesi ve trigraf nasıl kullanılacağını gösteren bir örnek için bkz. [trigraf](../../c-language/trigraphs.md).
 
 ## <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri** > **CC++ /**  > **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: trigraphs** veya **/Zc:trigraphs-** seçip **Tamam**.
+1. **Ek seçenekler** özelliğini **/Zc: trigraf** veya **/Zc: trigraf** içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

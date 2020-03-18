@@ -1,26 +1,24 @@
 ---
 title: CImageList Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CImageList
 helpviewer_keywords:
 - image list control
 - CImageList class [MFC], using
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
-ms.openlocfilehash: c3e4cec75ce23beb2a617d672170f86c608ca0a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09fd0e95ce2981afbebbfe10d87b26f88a7b5e13
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411844"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447228"
 ---
 # <a name="using-cimagelist"></a>CImageList Kullanma
 
-Sınıfı tarafından temsil edilen bir görüntü listesi [Cımagelist](../mfc/reference/cimagelist-class.md), her biri başvurulabilir dizinini tarafından aynı boyutta görüntüleri oluşan bir koleksiyondur. Görüntü listeleri büyük simgeler veya bit eşlemler kümelerini etkili bir şekilde yönetmek için kullanılır. Görüntü listeleri windows; olmadığından değil kendilerini denetimleri bulunur. Ancak, birkaç farklı türde liste denetimleri gibi denetimleri ile kullanılır ([CListCtrl](../mfc/reference/clistctrl-class.md)), ağaç denetimleri ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ve denetimlerini sekmesine ([CTabCtrl](../mfc/reference/ctabctrl-class.md)).
+Sınıf [CImageList](../mfc/reference/cimagelist-class.md)tarafından temsil edilen bir görüntü listesi, her biri dizin tarafından başvurulabilen aynı boyutlu görüntülerin bir koleksiyonudur. Görüntü listeleri, büyük simge veya bit eşlem kümelerini verimli bir şekilde yönetmek için kullanılır. Görüntü listeleri, Windows olmadığından denetimler değildir; Ancak, liste denetimleri ([CListCtrl](../mfc/reference/clistctrl-class.md)), ağaç denetimleri ([ctreecu](../mfc/reference/ctreectrl-class.md)) ve sekme denetimleri ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) dahil olmak üzere birçok farklı denetim türüyle kullanılır.
 
-Ekran cihazında biçiminde tek, geniş eşlemde görüntü listesi'ndaki tüm görüntüler yer alır. Görüntü listesi görüntüleri şeffaf bir şekilde çizmek için kullanılan maskeleri (simge stili) içeren tek renkli bir bit eşlem de. `CImageList` görüntüler çizme, oluşturma ve görüntü listeleri yok etmek, ekleyin ve görüntülerini kaldırmak, görüntüleri değiştirin, görüntüleri birleştirin ve görüntüleri sürükleme olanak sağlayan işlevleri sağlar.
+Görüntü listesindeki tüm görüntüler, ekran aygıtı biçiminde tek ve geniş bir bit eşlemde yer alır. Görüntü listesi, görüntüleri saydam olarak çizmek için kullanılan maskeleri içeren tek renkli bir bit eşlem de içerebilir (simge stili). `CImageList`, görüntü çizmenizi, görüntü listesi oluşturmanıza ve yok, görüntü ekleyip kaldırmanıza, görüntülerin değiştirilmesini, görüntüleri birleştirmeye ve görüntüleri sürüklemeye olanak sağlayan üye işlevleri sağlar.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Görüntü Listesi Türleri](../mfc/types-of-image-lists.md)
 

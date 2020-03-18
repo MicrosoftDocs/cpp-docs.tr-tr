@@ -1,31 +1,29 @@
 ---
 title: CReBarCtrl Kullanma
 ms.date: 11/19/2018
-f1_keywords:
-- CReBarCtrl
 helpviewer_keywords:
 - child windows [MFC], rebar controls
 - combo boxes [MFC], in rebar controls
 - rebar controls
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-ms.openlocfilehash: 5e0a2e9d9eedd99bb2fca39f328c49d27fe7b6ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2578ddbb626da4959c81cf37a38082315ec8c6a0
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411904"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441953"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 
-Rebar denetimiyle alt pencereler için kapsayıcı görevi görür. Bu alt pencereler, genellikle diğer denetimleri, bir çubuk barınağı denetim bandı atanır. Rebar denetimiyle, her bant bir Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini sahip olan bir veya daha fazla bant içerebilir. Ancak, bantlar birden fazla alt penceresi içeremez.
+Bir Rebar denetimi, alt pencereler için bir kapsayıcı olarak davranır. Bu alt Windows, genellikle diğer denetimler bir Rebar denetim bandına atanır. Bir Rebar denetimi, her bantın bir kavrayıcı çubuğu, bir bit eşlem, bir metin etiketi ve bir alt pencere ile herhangi bir birleşimini içeren bir veya daha fazla bant içerebilir. Ancak bantların birden fazla alt penceresi olamaz.
 
-Aşağıdaki çizimde, iki bant olmayan bir çubuk barınağı denetimi gösterir. Bir Mandal çubuğu, bir metin etiketi ("Adres") ve birleşik giriş kutusunun alt pencere içeriyor. Başka bir bant kavrayıcı çubuğu, bir metin etiketi ve (bir alt pencere ile uygulanan) bir düz araç içerir.
+Aşağıdaki çizimde, iki bant içeren bir Rebar denetimi gösterilmektedir. Biri bir kavrayıcı çubuğu, bir metin etiketi ("adres") ve Birleşik giriş kutusu alt penceresi içerir. Diğer bant bir kavrayıcı çubuğu, bir metin etiketi ve düz bir araç çubuğu içerir (alt pencere ile uygulanır).
 
-![Rebar bantları iki olan denetim](../mfc/media/vc4ruz1.gif "Rebar bantları iki olan denetim")
+![İki bant içeren yeniden çubuk denetimi](../mfc/media/vc4ruz1.gif "İki bant içeren yeniden çubuk denetimi")
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [CReBar ile CReBarCtrl Karşılaştırması](../mfc/crebar-vs-crebarctrl.md)
+- [CReBar ile CReBarCtrl karşılaştırması](../mfc/crebar-vs-crebarctrl.md)
 
 - [Rebar Denetimi Oluşturma](../mfc/creating-a-rebar-control.md)
 

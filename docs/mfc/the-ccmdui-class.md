@@ -1,8 +1,6 @@
 ---
 title: CCmdUI Sınıfı
 ms.date: 11/04/2016
-f1_keywords:
-- CCmdUI
 helpviewer_keywords:
 - updating user interface objects [MFC]
 - user interface objects [MFC], updating
@@ -10,21 +8,21 @@ helpviewer_keywords:
 - update handlers [MFC]
 - toolbars [MFC], updating
 ms.assetid: 2f2bae62-8c29-45a4-bbce-490eb01907d5
-ms.openlocfilehash: 8e0af0703924d6fae626d3753b8523efe0c56652
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 105aa7ad6c5cc6a5563dbde8145327a2b3d066a1
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306307"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447146"
 ---
 # <a name="the-ccmdui-class"></a>CCmdUI Sınıfı
 
-Bu güncelleştirme komut işleyicisine yönlendirir, framework işleyici işaretçisi geçirir. bir `CCmdUI` nesne (veya bir nesne için bir `CCmdUI`-türetilmiş sınıf). Bu nesne, menü öğesi veya araç çubuğu düğmesini veya komut oluşturulan diğer kullanıcı arabirimi nesnesi temsil eder. Güncelleştirme işleyici üye işlevlerini çağıran `CCmdUI` yapı ile güncelleştirme kullanıcı arabirimi nesnesi için işaretçi. Örneğin, bir güncelleştirme işleyici Tümünü Temizle menü öğesi için şu şekildedir:
+Bir update komutunu işleyicisine yönlendirirse, çerçeve işleyiciyi bir `CCmdUI` nesnesine (veya `CCmdUI`türetilmiş bir sınıfın nesnesine) geçirir. Bu nesne, komutu oluşturan menü öğesini veya araç çubuğu düğmesini veya diğer kullanıcı arabirimi nesnesini temsil eder. Güncelleştirme işleyicisi, Kullanıcı arabirimi nesnesini güncelleştirme işaretçisi aracılığıyla `CCmdUI` yapısının üye işlevlerini çağırır. Örneğin, Tümünü Temizle menü öğesi için bir güncelleştirme işleyicisi aşağıda verilmiştir:
 
 [!code-cpp[NVC_MFCDocView#3](../mfc/codesnippet/cpp/the-ccmdui-class_1.cpp)]
 
-Bu işleyici çağırır `Enable` menü öğesine erişimi olan bir nesnenin üye işlevi. `Enable` öğenin kullanılabilir hale getirir.
+Bu işleyici, menü öğesine erişimi olan bir nesnenin `Enable` üye işlevini çağırır. `Enable` öğeyi kullanıma hazır hale getirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
+[Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme](../mfc/how-to-update-user-interface-objects.md)

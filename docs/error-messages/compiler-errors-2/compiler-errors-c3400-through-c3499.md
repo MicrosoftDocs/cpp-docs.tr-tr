@@ -35,8 +35,6 @@ f1_keywords:
 - C3442
 - C3443
 - C3444
-- C3445
-- C3446
 - C3471
 - C3472
 - C3473
@@ -83,8 +81,6 @@ helpviewer_keywords:
 - C3442
 - C3443
 - C3444
-- C3445
-- C3446
 - C3471
 - C3472
 - C3473
@@ -98,125 +94,125 @@ helpviewer_keywords:
 - C3494
 - C3497
 ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
-ms.openlocfilehash: 587b28cedb0ab8b11c244be4278c7dc17d1f4247
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: f4aff80178033d34cf051a14d89736b2b8347dd0
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857373"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446842"
 ---
 # <a name="compiler-errors-c3400-through-c3499"></a>C3400 ile C3499 arasındaki derleyici hataları
 
-Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
+Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata iletilerinin bir alt kümesini açıklar.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|`Message`|
+|Hata|İleti|
 |-----------|-------------|
-|[Derleyici Hatası C3400](compiler-error-c3400.md)|Döngüsel kısıtlama bağımlılığı içeren '*constraint1*'ve'*constraint2*'|
-|Derleyici Hatası C3401|'*belirticisi*': Geçersiz derleme erişim belirticisi - yalnızca 'private' sınıf şablonlarında izin verilir|
-|Derleyici Hatası C3402|'*işlevi*': geçerli kapsamda haricinde aşırı yükleme çözümlenemez|
-|Derleyici Hatası C3403|thread_local, / CLR ile kullanılamaz: pure veya/CLR: safe|
-|Derleyici Hatası C3404|'*oluşturmak*': beklenmeyen sözdizimi hatası|
-|Derleyici Hatası C3405|'*işlevi*': tam tanımlayıcı olmadan aşırı yükleme çözümlenemez|
-|Derleyici Hatası C3406|'*anahtar sözcüğü*': detaylandırılmış bir tür tanımlayıcı içinde kullanılamaz|
-|Derleyici Hatası C3407|'*türü*' Bu bağlamda kullanılamaz|
-|[Derleyici Hatası C3408](compiler-error-c3408.md)|'*özniteliği*': öznitelik şablon tanımlarında izin verilmiyor|
-|[Derleyici Hatası C3409](compiler-error-c3409.md)|boş öznitelik bloğuna izin verilmiyor|
-|Derleyici Hatası C3410|'*tanımlayıcı*': açık örnek oluşturmanın türü '*türü*'değişken şablonun türüyle eşleşmiyor'*türü*'|
-|Derleyici Hatası C3411|'*türü*' bir tamsayı türünde olmadığından dizi boyutu geçerli değil|
-|[Derleyici Hatası C3412](compiler-error-c3412.md)|'*özelleştirmesi*': şablon geçerli kapsamda özelleştirilemiyor|
-|[Derleyici Hatası C3413](compiler-error-c3413.md)|'*şablon*': Geçersiz açıkça örnek oluşturma|
-|[Derleyici Hatası C3414](compiler-error-c3414.md)|'*işlevi*': içeri aktarılan üye işlev tanımlanamıyor|
-|[Derleyici Hatası C3415](compiler-error-c3415.md)|birden çok '*bölümü*' bölümleri farklı özniteliklerle bulunamadı ('0 x*değer*')|
-|Derleyici Hatası C3416|Kullanımdan kalktı.|
-|[Derleyici Hatası C3417](compiler-error-c3417.md)|'*bildirimci*': değer türleri kullanıcı tanımlı özel üye işlevler içeremez|
-|[Derleyici Hatası C3418](compiler-error-c3418.md)|erişim belirticisi '*belirticisi*' desteklenmiyor|
-|Derleyici Hatası C3419|Kullanımdan kalktı.|
-|[Derleyici Hatası C3420](compiler-error-c3420.md)|'*işlevi*': bir sonlandırıcı sanal olamaz|
-|[Derleyici Hatası C3421](compiler-error-c3421.md)|'*işlevi*': ya da olduğu gibi bu sınıf için Sonlandırıcı çağrılamıyor erişilemez veya artık yok|
-|Derleyici Hatası C3422|'*bildirimi*': eşleşmeyen türler*türü*'ve'*türü*'|
-|Derleyici Hatası C3423|Kullanımdan kalktı.|
-|Derleyici Hatası C3424|'*türü*': işlev stili bir dizi türüne izin verilmiyor|
-|Derleyici Hatası C3425|tamamlanmamış türündeki nesneye işaretçi oluşturulamıyor '*türü*'|
-|Derleyici Hatası C3426|eksik türe ait objekt nelze vyvolat '*türü*'|
-|Derleyici Hatası C3427|'*bağlam*': '*anahtar sözcüğü*' ile layout_version kullanılamaz (*numarası*)|
-|Derleyici Hatası C3428|'*bağlam*': '*anahtar sözcüğü*' yalnızca sınıf bildirimlerine veya tanımlarına uygulanabilir|
-|Derleyici Hatası C3429|'*bağlam*': '*anahtar sözcüğü*' bir birleşime uygulanamaz|
-|Derleyici Hatası C3430|kapsamlı numaralandırmanın bir adı olmalıdır|
-|Derleyici Hatası C3431|'*tanımlayıcı*': *type1* olarak bildirilemez *type2*|
-|Derleyici Hatası C3432|'*tanımlayıcı*': kapsamsız bir numaralandırmanın İleri dönük bildiriminin bir temel türü olmalıdır|
-|Derleyici Hatası C3433|'*tanımlayıcı*': numaralandırmanın tüm bildirimler aynı temel türü olmalıdır, oldu '*type1*'artık'*type2*'|
-|Derleyici Hatası C3434|'*bağlam*': Numaralandırıcı değeri '*numarası*'olarak gösterilemez'*türü*', değer'*sayı*'|
-|Derleyici Hatası C3435|karakter kümesi '*adı*' desteklenmiyor|
-|Derleyici Hatası C3436|/ Source-Charset, / Execution-Charset veya/UTF-8 belirtildiğinde #pragma setlocale desteklenmez|
-|Derleyici Hatası C3437|/ Source-Charset, / Execution-Charset veya/UTF-8 belirtildiğinde #pragma execution_character_set desteklenmez|
-|Derleyici Hatası C3438|'*bağlam*': '*değer*' yönetilen WinRT sınıfına uygulanamaz|
-|Derleyici Hatası C3439|layout_version (*numarası*): Geçersiz sürüm numarası|
-|Derleyici Hatası C3440|'*bildirimi*': layout_version (*numarası*) önceki bir bildirim ile uyumsuz|
-|Derleyici Hatası C3441|'*bildirimi*': '*anahtar sözcüğü*' sınıf tanımlandıktan sonra uygulanamaz|
-|Derleyici Hatası C3442|Birleşimin birden fazla üyesi başlatılıyor: '*Üye1*'ve'*üye2*'|
-|Derleyici Hatası C3443|İçin varsayılan üye Başlatıcı '*sınıfı*' özyinelemelidir|
-|Derleyici Hatası C3444|Boş toplama sınıfı*sınıfı*'ile başlatılmalıdır'{}'|
-|[Derleyici Hatası C3445](compiler-error-c3445.md)|kopya listesi başlatmasında, '*türü*' açık bir Oluşturucu kullanılamaz|
-|[Derleyici Hatası C3446](compiler-error-c3446.md)|'*sınıfı*': bir değer sınıfının üyesi için varsayılan üye başlatıcıya izin verilmez|
-|Derleyici Hatası C3447|Kullanımdan kalktı.|
-|Derleyici Hatası C3448|Kullanımdan kalktı.|
-|Derleyici Hatası C3449|Kullanımdan kalktı.|
-|[Derleyici Hatası C3450](compiler-error-c3450.md)|'*türü*': öznitelik değil; [System::AttributeUsageAttribute] belirtilemez / [Windows::Foundation::Metadata::AttributeUsageAttribute]|
-|[Derleyici Hatası C3451](compiler-error-c3451.md)|'*özniteliği*': Yönetilmeyen öznitelik için uygulanamaz '*türü*'|
-|[Derleyici Hatası C3452](compiler-error-c3452.md)|Liste bağımsız değişken üyesi sabit değil|
-|[Derleyici Hatası C3453](compiler-error-c3453.md)|'*özniteliği*': öznitelik olduğundan uygulanmadı niteleyicisi '*niteleyicisi*' eşleşmedi|
-|[Derleyici Hatası C3454](compiler-error-c3454.md)|[attribute] sınıf bildiriminde kullanılamaz|
-|[Derleyici Hatası C3455](compiler-error-c3455.md)|'*özniteliği*': öznitelik oluşturucularının hiçbiri bağımsız değişkenlerle eşleşmedi|
-|[Derleyici Hatası C3456](compiler-error-c3456.md)|[kaynak\_annotation_attribute] yönetilen WinRT sınıf bildiriminde kullanılamaz|
-|[Derleyici Hatası C3457](compiler-error-c3457.md)|'*özniteliği*': öznitelik adsız bağımsız değişkenleri desteklemiyor|
-|[Derleyici Hatası C3458](compiler-error-c3458.md)|' [*özniteliği*]': öznitelik ' [*özniteliği*]' için zaten belirtildi '*tanımlayıcı*'|
-|[Derleyici Hatası C3459](compiler-error-c3459.md)|' [*özniteliği*]': öznitelik yalnızca sınıf dizin oluşturucusunda izin verilir (varsayılan dizini oluşturulan özellik)|
-|[Derleyici Hatası C3460](compiler-error-c3460.md)|'*türü*': yalnızca bir kullanıcı tanımlı bir tür iletilebilir|
-|[Derleyici Hatası C3461](compiler-error-c3461.md)|'*türü*': yalnızca yönetilen/WinRT türü iletilebilir|
-|[Derleyici Hatası C3462](compiler-error-c3462.md)|'*türü*': yalnızca içeri aktarılmış bir tür iletilebilir|
-|[Derleyici Hatası C3463](compiler-error-c3463.md)|'*türü*': türe 'implements' özniteliğinin içinde izin verilmiyor|
-|[Derleyici Hatası C3464](compiler-error-c3464.md)|'*türü*' iç içe geçmiş bir tür iletilemez|
-|[Derleyici Hatası C3465](compiler-error-c3465.md)|türü kullanmak için '*türü*'derlemesine başvuru vermelisiniz'*derleme*'|
-|[Derleyici Hatası C3466](compiler-error-c3466.md)|'*türü*': bir genel sınıfın özelleştirmesi iletilemez|
-|[Derleyici Hatası C3467](compiler-error-c3467.md)|'*türü*': Bu tür zaten iletilmiş|
-|[Derleyici Hatası C3468](compiler-error-c3468.md)|'*türü*': bir tür yalnızca bir derlemeye iletebilirsiniz: '*tanımlayıcı*' bir derleme değil|
-|[Derleyici Hatası C3469](compiler-error-c3469.md)|'*türü*': genel bir sınıf iletilemez|
-|[Derleyici Hatası C3470](compiler-error-c3470.md)|'*sınıfı*': bir sınıf hem bir dizin oluşturucu olamaz (varsayılan dizini oluşturulan özellik) ve [] işleci|
-|Derleyici Hatası C3471|Yeni modül adı *adı* önceki adıyla çakışıyor (komut satırında ayarlanan) *adı*|
-|Derleyici Hatası C3472|Yeni çıkış dosyası adı *filename* (komut satırında ayarlanan) önceki dosya adı çakışıyor *dosya adı*|
-|Derleyici Hatası C3473|çıkış yolu adı veya modül adı belirtilmedi.|
-|Derleyici Hatası C3474|Çıkış dosyası açılamadı '*filename*'|
-|Derleyici Hatası C3475|Giriş dosyasında söz dizimi hatası '*filename*'|
-|Derleyici Hatası C3476|Dosya açılamadı '*filename*' giriş|
-|Derleyici Hatası C3477|bir lambda değerlendirilmemiş bir bağlamda yer alamaz|
-|Derleyici Hatası C3478|'*tanımlayıcı*': dizi, kopyaya göre yakalanamaz|
-|Derleyici Hatası C3479|SAL ek açıklamaları desteklenmiyor|
-|[Derleyici Hatası C3480](compiler-error-c3480.md)|'*değişkeni*': bir lambda yakalama değişkeni bir kapsayan işlev kapsamından gelmelidir|
-|[Derleyici Hatası C3481](compiler-error-c3481.md)|'*tanımlayıcı*': lambda yakalama değişkeni bulunamadı|
-|[Derleyici Hatası C3482](compiler-error-c3482.md)|'this' yalnızca statik olmayan üye işlevin içinde lambda yakalaması olarak kullanılır|
-|[Derleyici Hatası C3483](compiler-error-c3483.md)|'*tanımlayıcı*' zaten lambda yakalama listesinin bir parçasıdır|
-|[Derleyici Hatası C3484](compiler-error-c3484.md)|sözdizimi hatası: dönüş türünden önce ' ->' bekleniyor|
-|[Derleyici Hatası C3485](compiler-error-c3485.md)|bir lambda tanımında cv niteleyicileri bulunamaz|
-|Derleyici Hatası C3486|Kullanımdan kalktı.|
-|[Derleyici Hatası C3487](compiler-error-c3487.md)|'*türü*': tüm dönüş ifadeleri aynı tür olarak çözümlenmelidir: daha önce şeklindeydi '*türü*'|
-|[Derleyici Hatası C3488](compiler-error-c3488.md)|' &*tanımlayıcı*' varsayılan yakalama modu başvuruya göre olduğunda izin verilmez|
-|[Derleyici Hatası C3489](compiler-error-c3489.md)|' &*tanımlayıcı*' varsayılan yakalama modu kopyaya göre olduğunda gereklidir|
-|[Derleyici Hatası C3490](compiler-error-c3490.md)|'*tanımlayıcı*' bir const nesnesi üzerinden erişiliyor olduğundan değiştirilemez|
-|[Derleyici Hatası C3491](compiler-error-c3491.md)|'*tanımlayıcı*': bir değişemeyen bir lambda içinde kopyaya göre yakalama değiştirilemez|
-|[Derleyici Hatası C3492](compiler-error-c3492.md)|'*tanımlayıcı*': anonim bir birleşim üyesi yakalayamazsınız|
-|[Derleyici Hatası C3493](compiler-error-c3493.md)|'*tanımlayıcı*' hiçbir varsayılan yakalama modu belirtilmediğinden örtük olarak yakalanamıyor|
-|Derleyici Hatası C3494|kapsayan bir yakalama modu izin vermediğinden 'this' açıkça yakalanamaz|
-|[Derleyici Hatası C3495](compiler-error-c3495.md)|'*tanımlayıcı*': tanımlayıcı lambdanın lambda içinde bildirilen otomatik depolama süresine sahip bir değişken olmalıdır|
-|[Derleyici Hatası C3496](compiler-error-c3496.md)|'this' her zaman değere göre yakalanan: '&' yoksayıldı|
-|Derleyici Hatası C3497|bir lambda örneği oluşturulamaz|
-|[Derleyici Hatası C3498](compiler-error-c3498.md)|'*tanımlayıcı*': bir yönetilen/WinRT türüne sahip bir değişkeni yakalayamazsınız|
-|[Derleyici Hatası C3499](compiler-error-c3499.md)|dönüş türü void olacak şekilde belirtilen lambdanın bir dönüş değeri olamaz|
+|[Derleyici hatası C3400](compiler-error-c3400.md)|'*Constraint1*' ve '*constraint2*' ile ilişkili döngüsel kısıtlama bağımlılığı|
+|Derleyici hatası C3401|'*belirtici*': geçersiz derleme erişim belirticisi-sınıf şablonlarında yalnızca ' Private ' kullanılabilir|
+|Derleyici hatası C3402|'*Function*': geçerli kapsam haricinde aşırı yükleme çözümlenemiyor|
+|Derleyici hatası C3403|thread_local/clr: pure veya/clr: Safe ile kullanılamaz|
+|Derleyici hatası C3404|'*Yapı*': beklenmeyen sözdizimi hatası|
+|Derleyici hatası C3405|'*Function*': tüm tanımlayıcı olmadan aşırı yükleme çözümlenemez|
+|Derleyici hatası C3406|'*anahtar sözcüğü*': bir ayrıntılı tür tanımlayıcıda kullanılamaz|
+|Derleyici hatası C3407|'*Type*' Bu bağlamda kullanılamaz|
+|[Derleyici hatası C3408](compiler-error-c3408.md)|'*Attribute*': özniteliğe şablon tanımlarında izin verilmiyor|
+|[Derleyici hatası C3409](compiler-error-c3409.md)|boş öznitelik bloğuna izin verilmiyor|
+|Derleyici hatası C3410|'*tanımlayıcı*': '*Type*' açık örneğinin türü, '*Type*' değişken şablonunun türüyle eşleşmiyor|
+|Derleyici hatası C3411|'*Type*' bir tamsayı türü olmadığından dizinin boyutu olarak geçerli değil|
+|[Derleyici hatası C3412](compiler-error-c3412.md)|'*özelleşme*': şablon geçerli kapsamda özelleştirilemiyor|
+|[Derleyici hatası C3413](compiler-error-c3413.md)|'*Template*': geçersiz açık örnek oluşturma|
+|[Derleyici hatası C3414](compiler-error-c3414.md)|'*Function*': içeri aktarılan üye işlev tanımlanamıyor|
+|[Derleyici hatası C3415](compiler-error-c3415.md)|farklı özniteliklere sahip birden çok '*section*' bölümü bulundu (' 0x*Value*')|
+|Derleyici hatası C3416|Kullanımdan kalktı.|
+|[Derleyici hatası C3417](compiler-error-c3417.md)|'*bildirimci*': değer türleri Kullanıcı tanımlı özel üye işlevleri içeremez|
+|[Derleyici hatası C3418](compiler-error-c3418.md)|'*tanımlayıcı*' erişim belirticisi desteklenmiyor|
+|Derleyici hatası C3419|Kullanımdan kalktı.|
+|[Derleyici hatası C3420](compiler-error-c3420.md)|'*Function*': Sonlandırıcı sanal olamaz|
+|[Derleyici hatası C3421](compiler-error-c3421.md)|'*Function*': erişilemez olduğu veya var olmadığı için bu sınıfın sonlandırıcısını çağıramazsınız|
+|Derleyici hatası C3422|'*declaration*': eşleşmeyen türler '*Type*' ve '*Type*'|
+|Derleyici hatası C3423|Kullanımdan kalktı.|
+|Derleyici hatası C3424|'*Type*': bir dizi türüne işlev stili atama yapılmasına izin verilmez|
+|Derleyici hatası C3425|tamamlanmamış '*Type*' türündeki nesneye işaretçi oluşturulamıyor|
+|Derleyici hatası C3426|eksik '*Type*' türündeki nesne oluşturulamıyor|
+|Derleyici hatası C3427|'*Context*': '*anahtar sözcüğü*' layout_version (*sayı*) ile kullanılamaz|
+|Derleyici hatası C3428|'*Context*': '*anahtar sözcüğü*' yalnızca sınıf bildirimlerine veya tanımlarına uygulanabilir|
+|Derleyici hatası C3429|'*Context*': '*anahtar sözcüğü*' bir birleşime uygulanamaz|
+|Derleyici hatası C3430|kapsamlı numaralandırma bir ada sahip olmalıdır|
+|Derleyici hatası C3431|'*Identifier*': *Type1* *type2* olarak yeniden bildirilemez|
+|Derleyici hatası C3432|'*tanımlayıcı*': kapsamlı olmayan numaralandırmanın ileri bir bildiriminin temel bir türü olmalıdır|
+|Derleyici hatası C3433|'*tanımlayıcı*': bir numaralandırmanın tüm bildirimleri aynı temel türe sahip olmalıdır; '*Type1*' Şimdi '*type2*' idi|
+|Derleyici hatası C3434|'*Context*': '*Number*' Numaralandırıcı değeri '*Type*' olarak gösterilemez; değer '*Number*'|
+|Derleyici hatası C3435|'*Name*' karakter kümesi desteklenmiyor|
+|Derleyici hatası C3436|/Source-charset,/Execution-charset veya/UTF-8 belirtildiğinde belirtildiğinde #pragma setlocale desteklenmez|
+|Derleyici hatası C3437|/Source-charset,/Execution-charset veya/UTF-8 belirtildiğinde belirtildiğinde #pragma execution_character_set desteklenmez|
+|Derleyici hatası C3438|'*Context*': '*Value*' bir yönetilen/WinRT sınıfına uygulanamaz|
+|Derleyici hatası C3439|layout_version (*sayı*): geçersiz sürüm numarası|
+|Derleyici hatası C3440|'*declaration*': layout_version (*sayı*) önceki bir bildirimle uyumsuz|
+|Derleyici hatası C3441|'*declaration*': sınıf tanımlandıktan sonra '*anahtar sözcüğü*' uygulanamaz|
+|Derleyici hatası C3442|'*Member1*' ve '*member2*' UNION öğesinin birden çok üyesi başlatılıyor|
+|Derleyici hatası C3443|'*Class*' için varsayılan üye başlatıcısı özyinelemeli|
+|Derleyici hatası C3444|Boş '*Class*' toplama sınıfının '{}' ile başlatılması gerekir|
+|[Derleyici hatası C3445](compiler-error-c3445.md)|'*Type*' öğesinin kopya-liste başlatması açık bir Oluşturucu kullanamaz|
+|[Derleyici hatası C3446](compiler-error-c3446.md)|'*Class*': değer sınıfının bir üyesi için varsayılan üye başlatıcıya izin verilmez|
+|Derleyici hatası C3447|Kullanımdan kalktı.|
+|Derleyici hatası C3448|Kullanımdan kalktı.|
+|Derleyici hatası C3449|Kullanımdan kalktı.|
+|[Derleyici hatası C3450](compiler-error-c3450.md)|'*Type*': öznitelik değil; [System:: AttributeUsageAttribute]/[Windows:: Foundation:: Metadata:: AttributeUsageAttribute] belirtilemiyor|
+|[Derleyici hatası C3451](compiler-error-c3451.md)|'*Attribute*': yönetilmeyen öznitelik '*Type*' öğesine uygulanamıyor|
+|[Derleyici hatası C3452](compiler-error-c3452.md)|liste bağımsız değişken üyesi sabit değil|
+|[Derleyici hatası C3453](compiler-error-c3453.md)|'*Attribute*': '*niteleyici*' niteleyicisi eşleşmediğinden öznitelik uygulanmadı|
+|[Derleyici hatası C3454](compiler-error-c3454.md)|sınıf bildiriminde [Attribute] kullanılamaz|
+|[Derleyici hatası C3455](compiler-error-c3455.md)|'*Attribute*': öznitelik oluşturucularının hiçbiri bağımsız değişkenlerle eşleşmedi|
+|[Derleyici hatası C3456](compiler-error-c3456.md)|[kaynak\_annotation_attribute] yönetilen/WinRT sınıfı bildiriminde kullanılamaz|
+|[Derleyici hatası C3457](compiler-error-c3457.md)|'*Attribute*': öznitelik adlandırılmamış bağımsız değişkenleri desteklemiyor|
+|[Derleyici hatası C3458](compiler-error-c3458.md)|' [*Attribute*] ': *' [Attribute*] ' özniteliği '*Identifier*' için zaten belirtildi|
+|[Derleyici hatası C3459](compiler-error-c3459.md)|' [*Attribute*] ': özniteliğe yalnızca sınıf dizin oluşturucuda izin veriliyor (varsayılan dizinli özellik)|
+|[Derleyici hatası C3460](compiler-error-c3460.md)|'*Type*': yalnızca Kullanıcı tanımlı bir tür iletilebilir|
+|[Derleyici hatası C3461](compiler-error-c3461.md)|'*Type*': yalnızca bir yönetilen/WinRT türü iletilebilir|
+|[Derleyici hatası C3462](compiler-error-c3462.md)|'*Type*': yalnızca içeri aktarılan bir tür iletilebilir|
+|[Derleyici hatası C3463](compiler-error-c3463.md)|'*Type*': türe ' Implements ' özniteliğinde izin verilmiyor|
+|[Derleyici hatası C3464](compiler-error-c3464.md)|'*Type*' iç içe geçmiş bir tür iletilemez|
+|[Derleyici hatası C3465](compiler-error-c3465.md)|'*Type*' türünü kullanmak için '*Assembly*' derlemesine başvurmanız gerekir|
+|[Derleyici hatası C3466](compiler-error-c3466.md)|'*Type*': bir genel sınıfın özelleştirmesi iletilemez|
+|[Derleyici hatası C3467](compiler-error-c3467.md)|'*Type*': Bu tür zaten iletilmiş|
+|[Derleyici hatası C3468](compiler-error-c3468.md)|'*Type*': bir türü yalnızca bir derlemeye iletebilirsiniz: '*Identifier*' bir derleme değil|
+|[Derleyici hatası C3469](compiler-error-c3469.md)|'*Type*': genel bir sınıf iletilemez|
+|[Derleyici hatası C3470](compiler-error-c3470.md)|'*Class*': bir sınıfta hem Dizin Oluşturucu (varsayılan dizinli özellik) hem de operator [] bulunamaz|
+|Derleyici hatası C3471|Yeni modül adı *adı* (komut satırında ayarlanan) önceki ad *adıyla* çakışıyor|
+|Derleyici hatası C3472|Yeni çıkış dosyası adı *Dosya* adı (komut satırında ayarlanan) önceki dosya adı *Dosya* adıyla çakışıyor|
+|Derleyici hatası C3473|çıkış yol adı veya modül adı belirtilmedi.|
+|Derleyici hatası C3474|'*filename*' çıkış dosyası açılamadı|
+|Derleyici hatası C3475|'*filename*' giriş dosyasında söz dizimi hatası|
+|Derleyici hatası C3476|'*filename*' dosyası giriş için açılamadı|
+|Derleyici hatası C3477|bir lambda değerlendirilmeyecek bir bağlamda bulunamaz|
+|Derleyici hatası C3478|'*tanımlayıcı*': bir dizi kopyaya göre yakalanamaz|
+|Derleyici hatası C3479|Lambdalar üzerinde SAL ek açıklamaları desteklenmiyor|
+|[Derleyici hatası C3480](compiler-error-c3480.md)|'*değişken*': bir Lambda yakalama değişkeni bir kapsayan işlev kapsamından gelmelidir|
+|[Derleyici hatası C3481](compiler-error-c3481.md)|'*tanımlayıcı*': Lambda yakalama değişkeni bulunamadı|
+|[Derleyici hatası C3482](compiler-error-c3482.md)|' this ' yalnızca statik olmayan bir üye işlevi içinde bir lambda yakalaması olarak kullanılabilir|
+|[Derleyici hatası C3483](compiler-error-c3483.md)|'*tanımlayıcı*' zaten Lambda yakalama listesinin bir parçası|
+|[Derleyici hatası C3484](compiler-error-c3484.md)|sözdizimi hatası: dönüş türünden önce '-> ' bekleniyor|
+|[Derleyici hatası C3485](compiler-error-c3485.md)|bir lambda tanımında CV niteleyicileri bulunamaz|
+|Derleyici hatası C3486|Kullanımdan kalktı.|
+|[Derleyici hatası C3487](compiler-error-c3487.md)|'*Type*': tüm dönüş ifadeleri aynı tür olarak çözümlenmelidir: daha önce '*Type*' idi|
+|[Derleyici hatası C3488](compiler-error-c3488.md)|varsayılan yakalama modu başvuruya göre olduğunda ' &*Identifier*' öğesine izin verilmez|
+|[Derleyici hatası C3489](compiler-error-c3489.md)|varsayılan yakalama modu kopyaya göre olduğunda ' &*tanımlayıcı*' gereklidir|
+|[Derleyici hatası C3490](compiler-error-c3490.md)|'*Identifier*' değiştirilemez çünkü bir const nesnesi üzerinden erişildi|
+|[Derleyici hatası C3491](compiler-error-c3491.md)|'*tanımlayıcı*': bir kopyaya göre yakalama, kesilebilir olmayan bir lambda içinde değiştirilemez|
+|[Derleyici hatası C3492](compiler-error-c3492.md)|'*tanımlayıcı*': bir anonim birleşimin üyesini yakalayamazsınız|
+|[Derleyici hatası C3493](compiler-error-c3493.md)|varsayılan yakalama modu belirtilmediğinden '*tanımlayıcı*' örtük olarak yakalanamaz|
+|Derleyici hatası C3494|kapsayan bir yakalama modu buna izin vermediğinden ' this ' açıkça yakalanamaz|
+|[Derleyici hatası C3495](compiler-error-c3495.md)|'*tanımlayıcı*': yakalamadaki tanımlayıcı, lambdanın elde edilen kapsamında belirtilen otomatik depolama süresine sahip bir değişken olmalıdır|
+|[Derleyici hatası C3496](compiler-error-c3496.md)|' this ' her zaman değere göre yakalanır: ' & ' yoksayıldı|
+|Derleyici hatası C3497|Lambda örneği oluşturamazsınız|
+|[Derleyici hatası C3498](compiler-error-c3498.md)|'*tanımlayıcı*': yönetilen/WinRT türüne sahip bir değişken yakalayamazsınız|
+|[Derleyici hatası C3499](compiler-error-c3499.md)|void dönüş türüne sahip olarak belirtilen bir lambda bir değer döndüremez|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
-[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[C/C++ derleyici ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Derleyici hataları C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

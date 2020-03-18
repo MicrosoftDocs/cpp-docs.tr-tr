@@ -1,24 +1,22 @@
 ---
 title: CToolTipCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CToolTipCtrl
 helpviewer_keywords:
 - CToolTipCtrl class [MFC], creating tool tips
 - CToolTipCtrl class
 ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
-ms.openlocfilehash: 06f296fc21a6ad4480755289d30b5ff4ac27ca8e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a750a9927f5cf36cb0232b3ce1bac1720f7020f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411634"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442208"
 ---
 # <a name="using-ctooltipctrl"></a>CToolTipCtrl Kullanma
 
-[CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) sınıfı, bir uygulamada bir aracın amacını açıklayan metnin tek bir çizgi görüntüler küçük bir açılır pencere bir araç ipucunu denetimini işlevselliğini kapsüller. Çoğu zaman, yalnızca kullanıcı imleci bir aracı üzerinde koyar ve veriler var. yaklaşık yarısı için ikinci dışına görünen bir araç ipucu gizlenir. Araç ipucu, imlecin yanında görünür ve kullanıcı fare düğmesine tıklar veya imleç aracı dışına gider kaybolur.
+[CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) sınıfı, bir uygulamada aracın amacını açıklayan tek satırlık bir metin görüntüleyen küçük bir açılan pencere olan araç ipucu denetiminin işlevselliğini Kapsüller. Bir araç ipucu, yalnızca Kullanıcı imleci bir araç üzerine yerleştirdiği ve yaklaşık bir yarı yarım saniye boyunca ayrıldığında görüntülenen zaman gizli bir araç. Araç ipucu imlecin yakınında görünür ve Kullanıcı fare düğmesine tıkladığında veya imleci aracın dışına taşırken kaybolur.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Araç İpuçları Oluşturma Yöntemleri](../mfc/methods-of-creating-tool-tips.md)
 

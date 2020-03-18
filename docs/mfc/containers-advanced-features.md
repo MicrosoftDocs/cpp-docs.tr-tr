@@ -12,64 +12,64 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 350431975a4335fc06e436237b7e0d3388faab64
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88acba8d6e2541b3c9f7707b4dd9c03b13067dda
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152936"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445356"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 
-Bu makalede, isteğe bağlı Gelişmiş Özellikler mevcut kapsayıcı uygulamalarınızı birleştirmek gereken adımları açıklar. Bu özellikler şunlardır:
+Bu makalede, mevcut kapsayıcı uygulamalarına isteğe bağlı gelişmiş özellikler eklemek için gereken adımlar açıklanmaktadır. Bu özellikler şunlardır:
 
-- [Bir kapsayıcı hem bir sunucu bir uygulama](#_core_creating_a_container_server_application)
+- [Hem kapsayıcı hem de sunucu olan uygulama](#_core_creating_a_container_server_application)
 
-- [Katıştırılmış nesne için bir OLE bağlantısı](#_core_links_to_embedded_objects)
+- [Katıştırılmış nesneye OLE bağlantısı](#_core_links_to_embedded_objects)
 
-##  <a name="_core_creating_a_container_server_application"></a> Kapsayıcı/sunucu uygulaması oluşturma
+##  <a name="_core_creating_a_container_server_application"></a>Kapsayıcı/sunucu uygulaması oluşturma
 
-Kapsayıcı/sunucu uygulaması, bir kapsayıcı ve bir sunucu gibi davranan bir uygulamadır. Windows için Microsoft Word, bu bir örnektir. Word için Windows belgeleri diğer uygulamalarda ekleyebilir ve Word için Windows belgelerine öğeleri de ekleyebilir. Kapsayıcı uygulamanızı bir kapsayıcı hem (bir birleşimi kapsayıcı/miniserver uygulama oluşturamaz) tam bir sunucu olarak değiştirme işlemi, bir tam sunucu oluşturma işlemi benzerdir.
+Kapsayıcı/sunucu uygulaması, hem kapsayıcı hem de sunucu olarak davranan bir uygulamadır. Windows için Microsoft Word buna bir örnektir. Windows belgelerini Word 'e başka uygulamalara ekleyebilirsiniz ve ayrıca Windows belgeleri için Word 'e öğe ekleyebilirsiniz. Kapsayıcı uygulamanızı hem kapsayıcı hem de tam sunucu olarak değiştirme işlemi (bir bileşim kapsayıcı veya minıver uygulaması oluşturamazsınız) tam sunucu oluşturma işlemine benzerdir.
 
-Makaleyi [sunucuları: Sunucu uygulama](../mfc/servers-implementing-a-server.md) bir sunucu uygulaması uygulamak için gereken görevlerin sayısını listeler. Kapsayıcılı bir uygulama bir kapsayıcı/sunucu uygulaması dönüştürün, sonra aynı bu görevlerden bazılarını gerçekleştirmek kapsayıcıya kod ekleme gerekir. Dikkate alınması gereken önemli noktalar aşağıda listelenmiştir:
+Makale [sunucuları: sunucu](../mfc/servers-implementing-a-server.md) uygulama, bir sunucu uygulaması uygulamak için gereken sayıda görevi listeler. Bir kapsayıcı uygulamasını bir kapsayıcı/sunucu uygulamasına dönüştürürseniz, aynı görevlerden bazılarını gerçekleştirmeniz ve kodu kapsayıcıya eklemek gerekir. Aşağıda dikkate alınması gereken önemli noktalar listelenmiştir:
 
-- Uygulama Sihirbazı tarafından önceden oluşturulmuş kapsayıcı kod OLE alt başlatır. Değiştirme veya ekleme desteği için herhangi bir şey gerekmez.
+- Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu, OLE alt sistemini zaten başlatır. Bu destek için herhangi bir şey değiştirmeniz veya eklemeniz gerekmez.
 
-- Bir belge sınıfının temel sınıfı olduğu her durumda `COleDocument`, temel sınıfa değiştirme `COleServerDoc`.
+- Bir belge sınıfının temel sınıfının `COleDocument`olduğu her yerde, temel sınıfı `COleServerDoc`olarak değiştirin.
 
-- Geçersiz kılma `COleClientItem::CanActivate` sunucu yerinde düzenleme için kullanıldığı sırada öğeleri yerinde düzenleme önlemek için.
+- Sunucu yerinde düzenlemek için kullanıldığı sırada öğelerin yerinde düzenlenmesinden kaçınmak için `COleClientItem::CanActivate` geçersiz kılın.
 
-   Örneğin, MFC OLE örnek [OCLIENT](../overview/visual-cpp-samples.md) kapsayıcı/sunucu uygulamanız tarafından oluşturulan bir öğe katıştırılmış. OCLIENT uygulamayı açın ve yerinde kapsayıcı/sunucu uygulamanız tarafından oluşturulan öğenin düzenleyin. Uygulamanızın öğe düzenlenirken, MFC OLE örnek tarafından oluşturulan bir öğe eklemek istediğinize karar [HIERSVR](../overview/visual-cpp-samples.md). Bunu yapmak için yerinde etkinleştirme kullanamazsınız. Tam olarak bu öğesini etkinleştirmek için HIERSVR açmanız gerekir. Microsoft Foundation Class Kitaplığı Bu OLE özellik desteklemediği için geçersiz kılma `COleClientItem::CanActivate` bu durum için denetleyin ve uygulamanızdaki olası bir çalışma zamanı hatası önlemeye olanak tanır.
+   Örneğin, MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md) , Kapsayıcınız/sunucu uygulamanız tarafından oluşturulan bir öğeyi katıştırmıştır. OCLIENT uygulamasını açarsınız ve kapsayıcı/sunucu uygulamanız tarafından oluşturulan öğeyi yerinde düzenleyebilirsiniz. Uygulamanızın öğesini düzenlenirken, MFC OLE örnek [Hiersvr](../overview/visual-cpp-samples.md)tarafından oluşturulan bir öğeyi eklemek istediğinize karar verirsiniz. Bunu yapmak için yerinde etkinleştirme kullanamazsınız. Bu öğeyi etkinleştirmek için HIERSVR 'yi tamamen açmanız gerekir. Microsoft Foundation Class Kitaplığı bu OLE özelliğini desteklemediğinden, `COleClientItem::CanActivate` geçersiz kılmak bu durumu denetlemenizi ve uygulamanızda olası bir çalışma zamanı hatasını önlemenize olanak sağlar.
 
-Yeni bir uygulama oluşturma ve kapsayıcı/sunucu uygulaması çalışabilmesi için istediğiniz seçeneği Uygulama Sihirbazı'nı ve bu destek OLE Seçenekler iletişim kutusundaki otomatik olarak oluşturulması'ı seçin. Daha fazla bilgi için bkz [genel bakış: Bir ActiveX denetimi kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri MFC örnekleri hakkında daha fazla bilgi için bkz.
+Yeni bir uygulama oluşturuyorsanız ve bir kapsayıcı/sunucu uygulaması olarak çalışmasını istiyorsanız, uygulama Sihirbazı 'ndaki OLE seçenekleri iletişim kutusunda bu seçeneği belirleyin ve bu destek otomatik olarak oluşturulur. Daha fazla bilgi için bkz. [genel bakış: ActiveX Denetim kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri hakkında daha fazla bilgi için bkz. MFC örnekleri.
 
-Kendi içine bir MDI uygulaması ekleyemeyeceğinizi unutmayın. Bir SDI uygulaması olmadığı sürece, bir kapsayıcı/sunucu olmayan bir uygulamanın kendi içine eklenemiyor.
+MDI uygulamasını kendi içine ekleyemeyeceğinize unutmayın. Bir SDI uygulaması olmadığı müddetçe kapsayıcı/sunucu olan bir uygulama kendi kendine eklenemez.
 
-##  <a name="_core_links_to_embedded_objects"></a> Katıştırılmış nesneler bağlantılar
+##  <a name="_core_links_to_embedded_objects"></a>Katıştırılmış nesne bağlantıları
 
-Katıştırılmış nesneler özellik bağlanan kapsayıcı uygulamanızı içine katıştırılmış nesne için bir OLE bağlantısını içeren bir belge oluşturmak bir kullanıcı etkinleştirir. Örneğin, bir sözcük işlemcisi katıştırılmış bir elektronik tablo içeren bir belge oluşturun. Katıştırılmış nesneler bağlantılar uygulamanız destekliyorsa, word işlemcinin belgedeki elektronik bağlantısını yapıştırabilirsiniz. Bu özellik, uygulamanızın nerede sözcük işlemci başlangıçta anladım bilmeden elektronik tabloda yer alan bilgileri kullanmasına olanak sağlar.
+Katıştırılmış nesne bağlantıları özelliği, bir kullanıcının kapsayıcı uygulamanızın içindeki katıştırılmış bir nesneye OLE bağlantısı olan bir belge oluşturmasını sağlar. Örneğin, bir Word işlemcisinde ekli bir elektronik tablo içeren bir belge oluşturun. Uygulamanız gömülü nesnelere bağlantıları destekliyorsa, Word işlemcinin belgesinde yer alan elektronik tabloya bir bağlantı yapıştırabilir. Bu özellik, uygulamanızın elektronik tabloda bulunan bilgileri, sözcük işlemcisinin ilk olarak aldığı yeri bilmeden kullanmasına izin verir.
 
-#### <a name="to-link-to-embedded-objects-in-your-application"></a>Katıştırılmış nesneler uygulamanızı bağlamak için
+#### <a name="to-link-to-embedded-objects-in-your-application"></a>Uygulamanızdaki katıştırılmış nesnelere bağlantı sağlamak için
 
-1. Belge sınıfından türetilir `COleLinkingDoc` yerine `COleDocument`.
+1. Belge sınıfınızı `COleDocument`yerine `COleLinkingDoc` türetirsiniz.
 
-1. Bir OLE sınıf kimliği oluşturun (**CLSID**) sınıf kimliği OLE geliştirme araçları ile dahil Oluşturucu kullanarak uygulamanız için.
+1. OLE geliştirme araçlarına dahil edilen sınıf KIMLIĞI oluşturucusunu kullanarak uygulamanız için bir OLE sınıfı KIMLIĞI (**CLSID**) oluşturun.
 
-1. OLE ile uygulamayı kaydedin.
+1. Uygulamayı OLE ile kaydedin.
 
-1. Oluşturma bir `COleTemplateServer` uygulama sınıfınızın bir üye olarak nesnesi.
+1. Uygulama sınıfınızın bir üyesi olarak bir `COleTemplateServer` nesnesi oluşturun.
 
-1. Uygulama sınıfın içinde `InitInstance` üye işlev, aşağıdakileri yapın:
+1. Uygulama sınıfınızın `InitInstance` üye işlevinde şunları yapın:
 
-   - Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı nesnesine `ConnectTemplate` üye işlevi.
+   - Nesnenin `ConnectTemplate` üye işlevini çağırarak `COleTemplateServer` nesneniz belge şablonlarınıza bağlayın.
 
-   - Çağrı `COleTemplateServer::RegisterAll` tüm sınıf nesnelerine OLE sistemine kaydetmek için üye işlevi.
+   - Tüm sınıf nesnelerini OLE sistemine kaydetmek için `COleTemplateServer::RegisterAll` member işlevini çağırın.
 
-   - Çağrı `COleTemplateServer::UpdateRegistry`. Tek parametre `UpdateRegistry` olmalıdır *oat_contaıner* uygulama "/ katıştırılmış" anahtarıyla başlatılmaz. Bu uygulama bağlantılar katıştırılmış nesneleri destekleyen bir kapsayıcı olarak kaydeder.
+   - `COleTemplateServer::UpdateRegistry`çağırın. Uygulamanın "/Embedded" anahtarıyla başlatılmadığından `UpdateRegistry` için tek parametre *OAT_CONTAINER* olmalıdır. Bu, uygulamayı gömülü nesnelere bağlantıları destekleyebilen bir kapsayıcı olarak kaydeder.
 
-         If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.
+      Uygulama "/Embedded" anahtarıyla başlatılırsa, bir sunucu uygulamasına benzer şekilde ana penceresini göstermemelidir.
 
-MFC OLE örnek [OCLIENT](../overview/visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığına bir örnek için bkz `InitInstance` işlevi *OCLIENT. CPP* Bu örnek uygulamanın dosya.
+MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığını gösteren bir örnek için, Oclient içindeki `InitInstance` işlevine bakın *.* Bu örnek UYGULAMANıN cpp dosyası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

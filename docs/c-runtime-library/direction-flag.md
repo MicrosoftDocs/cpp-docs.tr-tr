@@ -1,25 +1,23 @@
 ---
 title: Yön Bayrağı
 ms.date: 11/04/2016
-f1_keywords:
-- c.flags
 helpviewer_keywords:
 - direction flag
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2
-ms.openlocfilehash: ead32fa7f09e9dd98130855ecd87ba3b3d454ef5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04e096c6a62f806f4c214745a8401b1730eda3a6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344427"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443385"
 ---
 # <a name="direction-flag"></a>Yön Bayrağı
 
-Yön bayrağı tüm Intel x86 uyumlu CPU'ları belirli bir CPU bayrağı ' dir. MOVS, MOVSD, MOVSW ve diğerleri gibi Temsilcisi (Yineleme) önek kullanan tüm derleme yönergeleri için geçerlidir. Yön bayrağı iptal edilirse ilgili yönergeler için sağlanan adreslerini artırıldı.
+Yön bayrağı, tüm Intel x86 uyumlu CPU 'Lara özgü bir CPU bayrağıdır. MOVS, MOVSD, MOVSW ve diğerleri gibi REP (Repeat) önekini kullanan tüm derleme yönergeleri için geçerlidir. Yön bayrağı silinirse, uygulanabilir yönergelere girilen adresler artar.
 
-Yön bayrağı temizlenir C çalışma zamanı yordamları varsayılır. C çalışma zamanı işlevleri diğer işlevleri kullanıyorsanız, diğer işlevler yön bayrağı dokunmayın veya orijinal durumuna geri emin olmanız gerekir. Yön bayrağı giriş temizlenmesini bekleniyor çalışma zamanı kod daha hızlı ve daha verimli hale getirir.
+C çalışma zamanı yordamları, yön bayrağının temizlenmiş olduğunu varsayar. C çalışma zamanı işlevleri ile başka işlevler kullanıyorsanız, diğer işlevlerin yön bayrağını tek başına bırakması veya özgün durumuna geri yüklemeniz gerekir. Girişte yön bayrağının açık olması beklenirken, çalışma zamanı kodu daha hızlı ve daha verimli olur.
 
-Dize düzenlemesi ve ara bellek düzenlemesi yordamlar gibi C çalışma zamanı kitaplık işlevleri yön bayrağı açık olmasını bekler.
+Dize işleme ve arabellek işleme yordamları gibi C çalışma zamanı kitaplığı işlevleri, yön bayrağının açık olmasını bekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

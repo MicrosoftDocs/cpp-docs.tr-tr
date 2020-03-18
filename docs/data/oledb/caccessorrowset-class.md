@@ -9,15 +9,12 @@ f1_keywords:
 - CAccessorRowset::Bind
 - CAccessorRowset::CAccessorRowset
 - CAccessorRowset.CAccessorRowset
-- CAccessorRowset
 - ATL.CAccessorRowset.CAccessorRowset
 - ATL::CAccessorRowset::CAccessorRowset
 - CAccessorRowset.Close
 - CAccessorRowset::Close
 - CAccessorRowset::FreeRecordMemory
 - CAccessorRowset.FreeRecordMemory
-- FreeRecordMemory
-- GetColumnInfo
 - CAccessorRowset.GetColumnInfo
 - CAccessorRowset::GetColumnInfo
 helpviewer_keywords:
@@ -30,16 +27,16 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: af38695ccee79e539782dc3f695a567f72fa41c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77c4eebae6ede5d74e24421cc4d3951c78e08777
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62283846"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447277"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 
-Bir satır kümesi ve tek bir sınıftaki ilişkili erişimcilerini kapsüller.
+Bir satır kümesini ve onunla ilişkili erişimcileri tek bir sınıfta kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,14 +49,14 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 ### <a name="parameters"></a>Parametreler
 
 *TAccessor*<br/>
-Bir erişimci sınıfı.
+Erişimci sınıfı.
 
-*CRowset*<br/>
-Bir satır kümesi sınıfı.
+*TRowset*<br/>
+Satır kümesi sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -67,19 +64,19 @@ Bir satır kümesi sınıfı.
 
 |||
 |-|-|
-|[Bind](#bind)|Bağlamaları oluşturur (kullanılabilir `bBind` olarak belirtilen **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md)).|
+|[Bind](#bind)|Bağlamalar oluşturur (`bBind`, [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde **false** olarak belirtildiğinde kullanılır).|
 |[CAccessorRowset](#caccessorrowset)|Oluşturucu.|
-|[Kapat](#close)|Satır kümesi ve tüm erişimcileri kapatır.|
-|[FreeRecordMemory](#freerecordmemory)|Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.|
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)).|
+|[~Eksik](#close)|Satır kümesini ve tüm erişimcileri kapatır.|
+|[FreeRecordMemory](#freerecordmemory)|Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır.|
+|[GetColumnInfo](#getcolumninfo)|[IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\))uygular.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf `TAccessor` erişimci yönetir. Sınıf *CRowset* satır kümesi yönetir.
+Sınıf `TAccessor` erişimciyi yönetir. *TRowset* sınıfı satır kümesini yönetir.
 
-## <a name="bind"></a> CAccessorRowset::Bind
+## <a name="bind"></a>CAccessorRowset:: bind
 
-Belirttiyseniz bağlamaları oluşturur `bBind` olarak **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md).
+[CCommand:: Open](../../data/oledb/ccommand-open.md)içinde `bBind` **false** olarak belirttiyseniz bağlamaları oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -89,11 +86,11 @@ HRESULT Bind();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="caccessorrowset"></a> CAccessorRowset::CAccessorRowset
+## <a name="caccessorrowset"></a>CAccessorRowset:: CAccessorRowset
 
-Başlatır `CAccessorRowset` nesne.
+`CAccessorRowset` nesnesini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -101,9 +98,9 @@ Başlatır `CAccessorRowset` nesne.
 CAccessorRowset();
 ```
 
-## <a name="close"></a> CAccessorRowset::Close
+## <a name="close"></a>CAccessorRowset:: Close
 
-Tüm etkin erişimciler ve satır kümesi serbest bırakır.
+Tüm etkin erişimcileri ve satır kümesini yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -113,11 +110,11 @@ void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Herhangi bir ilişkili belleği serbest bırakır.
+İlişkili tüm belleği serbest bırakır.
 
-## <a name="freerecordmemory"></a> CAccessorRowset::FreeRecordMemory
+## <a name="freerecordmemory"></a>CAccessorRowset:: FreeRecordMemory
 
-Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.
+Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -125,9 +122,9 @@ Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır
 void FreeRecordMemory();
 ```
 
-## <a name="getcolumninfo"></a> CAccessorRowset::GetColumnInfo
+## <a name="getcolumninfo"></a>CAccessorRowset:: GetColumnInfo
 
-Açık satır kümesinden sütun bilgileri alır.
+Açılan satır kümesinden sütun bilgilerini alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -142,19 +139,19 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı, döndürülen sütun bilgileri ve dize arabellek boşaltmanız gerekir. Dosyanın ikinci sürümü, bu yöntemi kullandığınızda kullanın [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) ve bağlamaları geçersiz kılmanız gerekir.
+Kullanıcı döndürülen sütun bilgisini ve dize arabelleğini boşaltmalıdır. [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) kullandığınızda bu yöntemin ikinci sürümünü kullanın ve bağlamaları geçersiz kılmanız gerekir.
 
-Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+Daha fazla bilgi için *OLE DB Programcı başvurusunda* [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

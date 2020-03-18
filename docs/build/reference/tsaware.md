@@ -2,18 +2,18 @@
 title: /TSAWARE
 ms.date: 11/04/2016
 f1_keywords:
-- /tsaware
+- /tsaware_editbin
 helpviewer_keywords:
 - -TSAWARE editbin option
 - /TSAWARE editbin option
 - TSAWARE editbin option
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931
-ms.openlocfilehash: 0800b05cd4619c8ac380c878a5c81bf55be3ede5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66202743be20bc040560027a4ab1ebc5a16cd442
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317529"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438841"
 ---
 # <a name="tsaware"></a>/TSAWARE
 
@@ -23,7 +23,7 @@ ms.locfileid: "62317529"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ TSAWARE seçeneği EDITBIN yardımcı programı, senaryosuyla aynı şekilde program görüntüsü değiştirebilmenizi sağlar [/TSAWARE](tsaware-create-terminal-server-aware-application.md) bağlayıcı seçeneği.
+EDITBIN için/TSAWARE seçeneği, bir program görüntüsünü [/T saware](tsaware-create-terminal-server-aware-application.md) bağlayıcı seçeneğini kullanmışsınız gibi değiştirmenize olanak sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

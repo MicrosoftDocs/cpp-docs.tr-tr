@@ -1,26 +1,24 @@
 ---
-title: 'Unicode: Joker karakter kümesi'
+title: 'Unicode: Joker Karakter Kümesi'
 ms.date: 11/04/2016
-f1_keywords:
-- c.international
 helpviewer_keywords:
 - Unicode [C++], wide character set
 - wide characters [C++], Unicode
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
-ms.openlocfilehash: dc9028be85870766af0274ede091d74a9b4d5130
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3a0c5698544c72e19feea8f35b7f5a516d95d561
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304208"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444492"
 ---
-# <a name="unicode-the-wide-character-set"></a>Unicode: Joker karakter kümesi
+# <a name="unicode-the-wide-character-set"></a>Unicode: Joker Karakter Kümesi
 
-Bir geniş karakter 2 baytlık çok dilli karakter kodudur. Modern tüm dünyada teknik simgeleri ve yayımlama özel karakterler dahil olmak üzere bilgi işlem kullanımı herhangi bir karakter olarak geniş bir karakter Unicode belirtimine göre temsil edilebilir. Microsoft içeren büyük bir consortium tarafından geliştirilen ve korunan, Unicode standardı artık yaygın olarak kabul edilir.
+Geniş bir karakter 2 baytlık çok dilli karakter kodudur. Teknik semboller ve özel yayımlama karakterleri dahil olmak üzere modern bilgi işlem ortamında kullanılan herhangi bir karakter, Unicode belirtimine göre geniş bir karakter olarak temsil edilebilir. Microsoft 'un bulunduğu büyük bir konsorsiyum tarafından geliştirilen ve korunan, Unicode standardı artık yaygın olarak kabul edilir.
 
-Bir geniş karakter türüdür **wchar_t**. Geniş karakterli dize olarak temsil edilen bir **wchar_t** dizisi ve tarafından işaret edilen bir `wchar_t*` işaretçi. Herhangi bir ASCII karakteri harf ekleyerek bir geniş karakter temsil edebilen **L** karakter. Örneğin, sonlandırıcı geniş (16-bit) null karakteri '\0' L değeridir. Benzer şekilde, ASCII değişmez değeri (L "Merhaba") için Harf L ekleyerek herhangi bir ASCII dize değişmez geniş karakter dize sabit değeri olarak temsil edebilir.
+Geniş bir karakter **wchar_t**türündedir. Geniş karakterli bir dize **wchar_t []** dizisi olarak temsil edilir ve bir `wchar_t*` işaretçisi tarafından işaret edilir. Karakteri harfe **lvalue** olarak ekleyerek HERHANGI bir ASCII karakterini geniş bir karakter olarak temsil edebilirsiniz. Örneğin, L ' \ 0 ', Sonlandırıcı geniş (16 bit) null karakterdir. Benzer şekilde, ASCII değişmez değeri (L "Hello") için L harfine önek ekleyerek yalnızca bir ASCII dize sabit değerini geniş karakterli bir dize sabiti olarak temsil edebilirsiniz.
 
-Genellikle, geniş karakterler çok baytlı karakterden daha fazla bellek alan alır ancak işlemine daha hızlıdır. Ayrıca, yalnızca bir yerel ayar çok baytlı kodlama anında temsil edilebilir, dünyanın tüm karakter kümeleri ise aynı anda Unicode gösterimi tarafından temsil edilir.
+Genellikle, geniş karakterler çok baytlı karakterlerden çok daha fazla alan kaplar ancak işlemek daha hızlıdır. Ayrıca, çok baytlı kodlamada yalnızca bir yerel ayar gösterilebilir, ancak dünyanın tüm karakter kümeleri aynı anda Unicode temsili tarafından temsil edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

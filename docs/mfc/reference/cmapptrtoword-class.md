@@ -1,49 +1,49 @@
 ---
-title: CMapPtrToWord Class
+title: CMapPtrToWord sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMapPtrToWord
 - AFXCOLL/CMapPtrToWord
-- AFXCOLL/CMapStringToOb::CMapStringToOb
-- AFXCOLL/CMapStringToOb::GetCount
-- AFXCOLL/CMapStringToOb::GetHashTableSize
-- AFXCOLL/CMapStringToOb::GetNextAssoc
-- AFXCOLL/CMapStringToOb::GetSize
-- AFXCOLL/CMapStringToOb::GetStartPosition
-- AFXCOLL/CMapStringToOb::HashKey
-- AFXCOLL/CMapStringToOb::InitHashTable
-- AFXCOLL/CMapStringToOb::IsEmpty
-- AFXCOLL/CMapStringToOb::Lookup
-- AFXCOLL/CMapStringToOb::LookupKey
-- AFXCOLL/CMapStringToOb::RemoveAll
-- AFXCOLL/CMapStringToOb::RemoveKey
-- AFXCOLL/CMapStringToOb::SetAt
+- AFXCOLL/CMapPtrToWord::CMapPtrToWord
+- AFXCOLL/CMapPtrToWord::GetCount
+- AFXCOLL/CMapPtrToWord::GetHashTableSize
+- AFXCOLL/CMapPtrToWord::GetNextAssoc
+- AFXCOLL/CMapPtrToWord::GetSize
+- AFXCOLL/CMapPtrToWord::GetStartPosition
+- AFXCOLL/CMapPtrToWord::HashKey
+- AFXCOLL/CMapPtrToWord::InitHashTable
+- AFXCOLL/CMapPtrToWord::IsEmpty
+- AFXCOLL/CMapPtrToWord::Lookup
+- AFXCOLL/CMapPtrToWord::LookupKey
+- AFXCOLL/CMapPtrToWord::RemoveAll
+- AFXCOLL/CMapPtrToWord::RemoveKey
+- AFXCOLL/CMapPtrToWord::SetAt
 helpviewer_keywords:
-- CMapStringToOb [MFC], CMapStringToOb
-- CMapStringToOb [MFC], GetCount
-- CMapStringToOb [MFC], GetHashTableSize
-- CMapStringToOb [MFC], GetNextAssoc
-- CMapStringToOb [MFC], GetSize
-- CMapStringToOb [MFC], GetStartPosition
-- CMapStringToOb [MFC], HashKey
-- CMapStringToOb [MFC], InitHashTable
-- CMapStringToOb [MFC], IsEmpty
-- CMapStringToOb [MFC], Lookup
-- CMapStringToOb [MFC], LookupKey
-- CMapStringToOb [MFC], RemoveAll
-- CMapStringToOb [MFC], RemoveKey
-- CMapStringToOb [MFC], SetAt
+- CMapPtrToWord [MFC], CMapPtrToWord
+- CMapPtrToWord [MFC], GetCount
+- CMapPtrToWord [MFC], GetHashTableSize
+- CMapPtrToWord [MFC], GetNextAssoc
+- CMapPtrToWord [MFC], GetSize
+- CMapPtrToWord [MFC], GetStartPosition
+- CMapPtrToWord [MFC], HashKey
+- CMapPtrToWord [MFC], InitHashTable
+- CMapPtrToWord [MFC], IsEmpty
+- CMapPtrToWord [MFC], Lookup
+- CMapPtrToWord [MFC], LookupKey
+- CMapPtrToWord [MFC], RemoveAll
+- CMapPtrToWord [MFC], RemoveKey
+- CMapPtrToWord [MFC], SetAt
 ms.assetid: 4631c6b6-d49f-49d9-adc0-1e0491e32d7b
-ms.openlocfilehash: eec254852c00e1b7f3a536e4e63c874fd1f3b12a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 698e306896fd62888a84b6d6ce55fb4c9678187b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237721"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442647"
 ---
-# <a name="cmapptrtoword-class"></a>CMapPtrToWord Class
+# <a name="cmapptrtoword-class"></a>CMapPtrToWord sınıfı
 
-Void işaretçilerle Anahtarlanan 16 bit sözcüklerin haritalarını destekler.
+Void işaretçilerle anahtarlı 16 bit sözcüklerin haritalarını destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,53 +53,53 @@ class CMapPtrToWord : public CObject
 
 ## <a name="members"></a>Üyeler
 
-Üye işlevlerinin `CMapPtrToWord` sınıfın üye işlevleri için benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CMapStringToOb` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` WORD işaretçi bir işlev parametre veya dönüş değeri olarak değiştirin. Gördüğünüz yerde bir `CString` veya **const** işaretçisine **char** işlevi parametre veya dönüş değeri bir işaretçiye yerine **void**.
-
-`BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`
-
-Örneğin, için çevirir
+`CMapPtrToWord` üye işlevleri [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CMapStringToOb` başvuru belgelerini kullanabilirsiniz. İşlev parametresi veya dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, SÖZCÜĞÜNÜ değiştirin. Bir işlev parametresi veya dönüş değeri olarak **char** için `CString` ya da **const** işaretçisi gördüğünüz her yerde, **void**için bir işaretçi yerine koyun.
 
 `BOOL CMapPtrToWord::Lookup( const void* <key>, WORD& <rValue> ) const;`
 
+Örneğin, öğesine çevirir
+
+`BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`
+
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Oluşturucu.|
+|[CMapPtrToWord:: CMapPtrToWord](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritada öğelerin sayısını döndürür.|
-|[CMapStringToOb::GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Geçerli bir karma tablo içindeki öğelerin sayısını belirler.|
-|[CMapStringToOb::GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Yineleme için sonraki öğeyi alır.|
-|[CMapStringToOb::GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Bu haritada öğelerin sayısını döndürür.|
-|[CMapStringToOb::GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|İlk öğenin konumunu döndürür.|
-|[CMapStringToOb::HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Belirtilen bir anahtarı karma değerini hesaplar.|
-|[CMapStringToOb::InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Karma tablo başlatır.|
-|[CMapStringToOb::IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|(Öğe yok) boş-map koşulu sınar.|
-|[CMapStringToOb::Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Void bir işaretçi void işaretçisine anahtara göre arar. İşaretçi değeri değil, işaret varlık anahtar karşılaştırma için kullanılır.|
-|[CMapStringToOb::LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Belirtilen anahtar değeriyle ilişkili anahtar için bir başvuru döndürür.|
-|[CMapStringToOb::RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Tüm öğeleri bu eşlemden kaldırır.|
-|[CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|
-|[CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Haritayı bir öğe ekler; eşleşen bir anahtar bulunursa, var olan öğenin yerini alır.|
+|[CMapPtrToWord:: GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritadaki öğelerin sayısını döndürür.|
+|[CMapPtrToWord:: GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Karma tablodaki geçerli öğe sayısını belirler.|
+|[CMapPtrToWord:: GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Yineleme için bir sonraki öğeyi alır.|
+|[CMapPtrToWord:: GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Bu haritadaki öğelerin sayısını döndürür.|
+|[CMapPtrToWord:: GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|İlk öğenin konumunu döndürür.|
+|[CMapPtrToWord:: HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Belirtilen anahtarın karma değerini hesaplar.|
+|[CMapPtrToWord:: InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Karma tabloyu başlatır.|
+|[CMapPtrToWord:: IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|Boş eşleme koşulunu sınar (öğe yok).|
+|[CMapPtrToWord:: Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Void işaretçi tuşuna bağlı olarak void bir işaretçi arar. İşaret ettiği varlık değil işaretçi değeri, anahtar karşılaştırması için kullanılır.|
+|[CMapPtrToWord:: LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Belirtilen anahtar değeriyle ilişkili anahtara bir başvuru döndürür.|
+|[CMapPtrToWord:: RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Tüm öğeleri bu eşlemden kaldırır.|
+|[CMapPtrToWord:: RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Anahtar tarafından belirtilen öğeyi kaldırır.|
+|[CMapPtrToWord:: SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Haritaya bir öğe ekler; eşleşen bir anahtar bulunursa varolan bir öğeyi değiştirir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
+|[CMapPtrToWord:: operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map içine bir öğe ekler — `SetAt`için işleç değiştirme.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapWordToPtr` ımplement_dynamıc makrosu, çalışma zamanı tür erişimi ve dökme için desteği kapsayan bir `CDumpContext` nesne. Tek tek harita öğelerine dökümü gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.
+`CMapWordToPtr`, çalışma zamanı tür erişimini desteklemek ve bir `CDumpContext` nesnesine dökümünü yapmak için IMPLEMENT_DYNAMIC makrosunu içerir. Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-İşaretçi sözcük eşlemelerini serileştirilemez.
+Sözcüğe işaretçi eşlemeleri serileştirilemiyor.
 
-Olduğunda bir `CMapPtrToWord` nesnesi silindiğinde veya işaretçiler ve sözcükler öğelerine kaldırıldığında kaldırılır. Anahtar işaretçiler tarafından başvurulan varlık kaldırılmaz.
+`CMapPtrToWord` nesne silindiğinde veya öğeleri kaldırıldığında, işaretçiler ve sözcükler kaldırılır. Anahtar işaretçilerin başvurduğu varlıklar kaldırılmaz.
 
-Daha fazla bilgi için `CMapPtrToWord`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+`CMapPtrToWord`hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -109,7 +109,7 @@ Daha fazla bilgi için `CMapPtrToWord`, makaleye göz atın [koleksiyonları](..
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,11 +6,11 @@ f1_keywords:
 - unordered_set/std::operator==
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 ms.openlocfilehash: 59a7154ed46ac788516bc9f42c3385ec8f07dcf1
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890762"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422509"
 ---
 # <a name="ltunordered_setgt-operators"></a>&lt;unordered_set&gt; işleçleri
 

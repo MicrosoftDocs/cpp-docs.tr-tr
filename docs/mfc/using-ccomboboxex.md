@@ -1,28 +1,26 @@
 ---
 title: CComboBoxEx Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CComboBoxEx
 helpviewer_keywords:
 - combo boxes [MFC], extended
 - extended combo boxes [MFC], about extended combo boxes
 - combo boxes [MFC], CComboBoxEx class
 - CComboBox class [MFC], extended
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
-ms.openlocfilehash: e119b41bbca42a1cbc0dbb5e721947c5bd7f1bc8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a9f3ca623ca729837da56c5b8a8be92b29a5c913
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394475"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447093"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx Kullanma
 
-Genişletilmiş Birleşik giriş kutusu denetimi öğesi görüntüler için yerel destek sağlayan standart Kombo kutusu denetiminin bir uzantısıdır. Bu görüntüler, birleşik giriş kutusunda, şu anda seçili ve seçili öğeleri gibi tek tek öğelerin durumunu göstermek için kullanılabilir. Öğesi görüntülerini kolayca erişilebilir hale getirmek için resim listesi desteği denetim sağlar.
+Genişletilmiş Birleşik giriş kutusu denetimi, öğe görüntüleri için yerel destek sağlayan standart Birleşik giriş kutusu denetiminin bir uzantısıdır. Bu görüntüler, seçili ve seçilmemiş öğeler gibi Birleşik giriş kutusundaki öğelerin tek tek durumunu belirtmek için kullanılabilir. Öğe görüntülerini kolayca erişilebilir hale getirmek için denetim görüntü listesi desteği sağlar.
 
-El ile öğesi grafik çizim yapmak zorunda kalmadan bir birleşik giriş kutusunun işlevselliğini sağlamak için bu denetimi kullanın.
+Öğe grafiklerini manuel olarak çizmek zorunda kalmadan Birleşik giriş kutusunun işlevlerini sağlamak için bu denetimi kullanın.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Genişletilmiş Birleşik Giriş Kutusu Denetimi Oluşturma](../mfc/creating-an-extended-combo-box-control.md)
 

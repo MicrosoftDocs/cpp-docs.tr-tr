@@ -1,37 +1,35 @@
 ---
 title: Dizin Denetimi
 ms.date: 11/04/2016
-f1_keywords:
-- c.programs
 helpviewer_keywords:
 - controls [C++], directory
 - directory control routines
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-ms.openlocfilehash: 327647ee2eee7e149ec0e9ebfc71883a8a3643d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 640ce8a8665936b604c6e8e6270e358a200c880a
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343920"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438548"
 ---
 # <a name="directory-control"></a>Dizin Denetimi
 
-Bu yordamların erişmek, değiştirmek ve dizin yapısı hakkında bilgi edinin.
+Bu yordamlar dizin yapısı hakkında bilgi erişir, bunları değiştirebilir ve bilgileri elde eder.
 
-## <a name="directory-control-routines"></a>Dizin denetim yordamları
+## <a name="directory-control-routines"></a>Dizin denetimi yordamları
 
-|Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Yordam|Kullanım|
 |-------------|---------|
 |[_chdir, _wchdir](../c-runtime-library/reference/chdir-wchdir.md)|Geçerli çalışma dizinini Değiştir|
-|[_chdrive](../c-runtime-library/reference/chdrive.md)|Geçerli sürücüyü değiştirin|
-|[_getcwd, _wgetcwd](../c-runtime-library/reference/getcwd-wgetcwd.md)|Geçerli çalışma dizini için varsayılan sürücü Al|
-|[_getdcwd, _wgetdcwd](../c-runtime-library/reference/getdcwd-wgetdcwd.md)|Geçerli çalışma dizini için belirtilen sürücü Al|
-|[_getdiskfree](../c-runtime-library/reference/getdiskfree.md)|Dolduran bir **_diskfree_t** yapısı bir disk sürücüsü hakkında bilgi.|
-|[_getdrive](../c-runtime-library/reference/getdrive.md)|Geçerli (varsayılan) sürücüyü Al|
+|[_chdrive](../c-runtime-library/reference/chdrive.md)|Geçerli sürücüyü değiştir|
+|[_getcwd, _wgetcwd](../c-runtime-library/reference/getcwd-wgetcwd.md)|Varsayılan sürücü için geçerli çalışma dizinini al|
+|[_getdcwd, _wgetdcwd](../c-runtime-library/reference/getdcwd-wgetdcwd.md)|Belirtilen sürücü için geçerli çalışma dizinini al|
+|[_getdiskfree](../c-runtime-library/reference/getdiskfree.md)|Bir **_diskfree_t** yapısını bir disk sürücüsüyle ilgili bilgilerle doldurur.|
+|[_getdrive](../c-runtime-library/reference/getdrive.md)|Geçerli (varsayılan) sürücüyü al|
 |[_getdrives](../c-runtime-library/reference/getdrives.md)|Şu anda kullanılabilir disk sürücüleri temsil eden bir bit maskesi döndürür.|
-|[_mkdir, _wmkdir](../c-runtime-library/reference/mkdir-wmkdir.md)|Yeni bir dizin oluşturun|
+|[_mkdir, _wmkdir](../c-runtime-library/reference/mkdir-wmkdir.md)|Yeni dizin oluştur|
 |[_rmdir, _wrmdir](../c-runtime-library/reference/rmdir-wrmdir.md)|Dizini Kaldır|
-|[_searchenv, _wsearchenv](../c-runtime-library/reference/searchenv-wsearchenv.md), [_searchenv_s, _wsearchenv_s](../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)|Belirtilen yol bir dosyada verilen arayın|
+|[_searchenv, _wsearchenv](../c-runtime-library/reference/searchenv-wsearchenv.md), [_searchenv_s, _wsearchenv_s](../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)|Belirtilen yollarda verilen dosyayı ara|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

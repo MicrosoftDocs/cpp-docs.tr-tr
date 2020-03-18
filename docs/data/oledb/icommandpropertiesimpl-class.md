@@ -7,25 +7,23 @@ f1_keywords:
 - ATL::ICommandPropertiesImpl
 - ICommandPropertiesImpl::GetProperties
 - ICommandPropertiesImpl.GetProperties
-- GetProperties
 - ICommandPropertiesImpl.SetProperties
 - ICommandPropertiesImpl::SetProperties
-- SetProperties
 helpviewer_keywords:
 - ICommandPropertiesImpl class
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: 1250f1c5c5094a0ca8348f325260e6079afe2baa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 165f7124657cbaf0c0f94171eaf9394011796aea
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408959"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447051"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044(v=vs.85)) arabirimi.
+[Iomtionproperties](/previous-versions/windows/desktop/ms723044(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,15 +35,15 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Türetilmiş sınıfınızın
+*Şı*<br/>
+Sınıfından türetilmiş
 
 *PropClass*<br/>
-Özellikleri sınıfınıza.
+Özellikler sınıfınız.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -53,16 +51,16 @@ Türetilmiş sınıfınızın
 
 |||
 |-|-|
-|[GetProperties](#getproperties)|Şu anda satır kümesi için istenen satır kümesi özelliği grubunda özelliklerinin listesini döndürür.|
-|[SetProperties](#setproperties)|Satır kümesi özelliği grubunda özelliklerini ayarlar.|
+|[GetProperties](#getproperties)|Satır kümesi için şu anda istenen satır kümesi özellik grubundaki özelliklerin listesini döndürür.|
+|[SetProperties](#setproperties)|Satır kümesi özellik grubundaki özellikleri ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, komutları zorunludur. Uygulama tarafından tanımlanan statik işlev tarafından sağlanan [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) makrosu.
+Bu, komutlarda zorunludur. Uygulama, [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) makrosu tarafından tanımlanan statik bir işlev tarafından sağlanır.
 
-## <a name="getproperties"></a> Icommandpropertiesımpl::GetProperties
+## <a name="getproperties"></a>ICommandPropertiesImpl:: GetProperties
 
-Komutun özellik eşlemesi kullanarak tüm istenen özellik kümeleri döndürür.
+Komutun Özellik eşlemesini kullanarak istenen tüm özellik kümelerini döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -75,15 +73,15 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ICommandText:: GetProperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-## <a name="setproperties"></a> Icommandpropertiesımpl::SetProperties
+## <a name="setproperties"></a>ICommandPropertiesImpl:: SetProperties
 
-Komut nesnesi için özelliklerini ayarlar.
+Komut nesnesi için özellikleri ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -94,7 +92,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ICommandText:: SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

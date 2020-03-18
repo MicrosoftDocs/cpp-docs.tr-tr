@@ -2,7 +2,6 @@
 title: /GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)
 ms.date: 11/04/2016
 f1_keywords:
-- /gr
 - VC.Project.VCCLWCECompilerTool.RuntimeTypeInfo
 - VC.Project.VCCLCompilerTool.RuntimeTypeInfo
 helpviewer_keywords:
@@ -12,16 +11,16 @@ helpviewer_keywords:
 - /Gr compiler option [C++]
 - enable run-time type information compiler option [C++]
 ms.assetid: d1f9f850-dcec-49fd-96ef-e72d01148906
-ms.openlocfilehash: 15ad453b10fd31de97bbc25f8062e628129076f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee1398b2f9ee78c62fb84aa591e77708cd0d9d83
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292126"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439592"
 ---
 # <a name="gr-enable-run-time-type-information"></a>/GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)
 
-Nesne türlerini çalışma zamanında denetlemek için kod ekler.
+Çalışma zamanında nesne türlerini denetlemek için kod ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,21 +30,21 @@ Nesne türlerini çalışma zamanında denetlemek için kod ekler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **GR** açıktır, derleyici tanımlar `_CPPRTTI` önişlemci makrosu. Varsayılan olarak, **GR** açıktır. **Denetleyen** çalışma zamanı türü bilgileri devre dışı bırakır.
+**/Gr** açık olduğunda, derleyici `_CPPRTTI` önişlemci makrosunu tanımlar. Varsayılan olarak, **/gr** açık olur. **/Gr-** çalışma zamanı tür bilgilerini devre dışı bırakır.
 
-Kullanım **GR** derleyici, kodunuzda bir nesne türü statik olarak çözümleyememesi durumunda. Genellikle ihtiyacınız **GR** seçeneği kodunuzu kullandığında [dynamic_cast işleci](../../cpp/dynamic-cast-operator.md) veya [TypeID](../../cpp/typeid-operator.md). Ancak, **GR** görüntünüzü .rdata bölümlerini boyutu artar. Kodunuzu kullanmıyorsa **dynamic_cast** veya **TypeID**, **denetleyen** daha küçük bir resmi üretebilir.
+Derleyici kodunuzda bir nesne türünü statik olarak çözümleyemezse **/gr** kullanın. Kodunuzun [dynamic_cast işleci](../../cpp/dynamic-cast-operator.md) veya [TypeId](../../cpp/typeid-operator.md)kullanması durumunda genellikle **/gr** seçeneğine ihtiyacınız vardır. Ancak, **/gr** görüntünüzün. rdata bölümlerinin boyutunu artırır. Kodunuz **dynamic_cast** veya **TypeId**kullanmıyorsa, **/gr-** daha küçük bir resim üretebilir.
 
-Çalışma zamanı tür denetimi hakkında daha fazla bilgi için bkz. [çalışma zamanı türü bilgileri](../../cpp/run-time-type-information.md) içinde *C++ dil başvurusu*.
+Çalışma zamanı tür denetimi hakkında daha fazla bilgi için bkz.  *C++ dil başvurusunda* [çalışma zamanı türü bilgileri](../../cpp/run-time-type-information.md) .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++**  klasörüne tıklayın.
 
-1. Tıklayın **dil** özellik sayfası.
+1. **Dil** Özellik sayfasına tıklayın.
 
-1. Değiştirme **çalışma zamanı türü bilgileri etkinleştir** özelliği.
+1. **Çalışma zamanı türü bilgilerini etkinleştir** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

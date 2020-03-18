@@ -1,25 +1,23 @@
 ---
 title: Pencere, İletişim Kutusu ve Denetim Sınıfları
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.mfc
 helpviewer_keywords:
 - windows [MFC], dialog and control classes
 ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
-ms.openlocfilehash: 3fc7d800cee7e3bf64f64028b2499935eb42a044
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e761c063e6c6e27943f9816d88b4d78718d3d18
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167627"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446303"
 ---
 # <a name="window-dialog-and-control-classes"></a>Pencere, İletişim Kutusu ve Denetim Sınıfları
 
-Sınıf `CWnd` ve türetilmiş sınıflarının kapsülleyen bir `HWND`, bir Windows penceresi için bir tanıtıcı. `CWnd` tek başına veya bir temel olarak yeni bir sınıf türetmek için kullanılabilir. Sınıf kitaplığı tarafından sağlanan türetilen sınıflar, çeşitli windows temsil eder.
+Sınıf `CWnd` ve türetilmiş sınıfları bir Windows penceresi tutamacı olan bir `HWND`kapsülleyin. `CWnd`, tek başına veya yeni sınıfları türetmede temel olarak kullanılabilir. Sınıf kitaplığı tarafından sağlanan türetilmiş sınıflar çeşitli pencere türlerini temsil eder.
 
 [CWnd](../mfc/reference/cwnd-class.md)<br/>
-Tüm windows için temel sınıf. Türetilmiş sınıflardan birini kullanabilirsiniz `CWnd` veya doğrudan kendi sınıflar türetilir.
+Tüm pencereler için temel sınıf. `CWnd` türetilmiş sınıflardan birini kullanabilir veya kendi sınıflarınızı doğrudan buradan türetebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

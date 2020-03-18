@@ -4,12 +4,6 @@ ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - cliext::vector
-- cliext::operator!=
-- cliext::operator<
-- cliext::operator<=
-- cliext::operator==
-- cliext::operator>
-- cliext::operator>=
 - cliext::vector::assign
 - cliext::vector::at
 - cliext::vector::back
@@ -97,18 +91,18 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-ms.openlocfilehash: 34997476085ece7f7a55f72340b57516874aa483
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 5b16319c17b5f5681f6417d8732931da1974b66b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926127"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445550"
 ---
 # <a name="vector-stlclr"></a>vektör (STL/CLR)
 
-Şablon sınıfı, rasgele erişimi olan öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar. Bir dizi öğeyi bitişik `vector` bir depolama bloğu olarak yönetmek için kapsayıcıyı kullanırsınız. Blok, isteğe bağlı olarak büyüyen bir dizi olarak uygulanır.
+Şablon sınıfı, rasgele erişimi olan öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar. Öğe dizisini bitişik bir depolama bloğu olarak yönetmek için kapsayıcı `vector` kullanırsınız. Blok, isteğe bağlı olarak büyüyen bir dizi olarak uygulanır.
 
-Aşağıdaki açıklamada, `GValue` ikinci *değeri* bir başvuru türü olmadığı sürece, bu `Value^`örnekte olduğu gibi olur.
+Aşağıdaki açıklamada, ikinci *değeri* bir başvuru türü olmadığı sürece `GValue`, bu durumda `Value^`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -133,7 +127,7 @@ Denetlenen sıradaki öğenin türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<clienext/Vector >
+**Üst bilgi:** \<cliext/Vector >
 
 **Ad alanı:** cliext
 
@@ -188,12 +182,12 @@ Denetlenen sıradaki öğenin türü.
 |--------------|-----------------|
 |[vector::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
 |[vector::operator(STL/CLR)](#op)|Belirtilen konumdaki bir öğeye erişir.|
-|[operator!= (vector) (STL/CLR)](#op_neq)|Bir `vector` nesnenin başka bir `vector` nesneye eşit olup olmadığını belirler.|
-|[operator< (vector) (STL/CLR)](#op_lt)|Bir `vector` nesnenin başka bir `vector` nesneden daha az olup olmadığını belirler.|
-|[operator<= (vector) (STL/CLR)](#op_lteq)|Bir `vector` nesnenin başka bir `vector` nesneden küçük veya ona eşit olup olmadığını belirler.|
-|[operator== (vector) (STL/CLR)](#op_eq)|Bir `vector` nesnenin başka bir `vector` nesneye eşit olup olmadığını belirler.|
-|[operator> (vector) (STL/CLR)](#op_gt)|Bir `vector` nesnenin başka bir `vector` nesneden daha büyük olup olmadığını belirler.|
-|[operator>= (vector) (STL/CLR)](#op_gteq)|Bir `vector` nesnenin başka bir `vector` nesneden büyük veya ona eşit olup olmadığını belirler.|
+|[operator!= (vector) (STL/CLR)](#op_neq)|`vector` nesnenin başka bir `vector` nesnesine eşit olup olmadığını belirler.|
+|[operator< (vector) (STL/CLR)](#op_lt)|`vector` nesnenin başka bir `vector` nesnesinden küçük olup olmadığını belirler.|
+|[operator<= (vector) (STL/CLR)](#op_lteq)|`vector` nesnenin başka bir `vector` nesnesinden küçük veya ona eşit olup olmadığını belirler.|
+|[operator== (vector) (STL/CLR)](#op_eq)|`vector` nesnenin başka bir `vector` nesnesine eşit olup olmadığını belirler.|
+|[operator> (vector) (STL/CLR)](#op_gt)|`vector` nesnenin başka bir `vector` nesnesinden büyük olup olmadığını belirler.|
+|[operator>= (vector) (STL/CLR)](#op_gteq)|`vector` nesnenin başka bir `vector` nesnesinden büyük veya ona eşit olup olmadığını belirler.|
 
 ## <a name="interfaces"></a>Arabirimler
 
@@ -211,11 +205,11 @@ Denetlenen sıradaki öğenin türü.
 
 Nesnesi, istek üzerine büyüyerek, depolanan bir *değer* öğeleri dizisi aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Büyüme, yeni bir öğe ekleme maliyetinin, sabit zamanlı bir zaman olduğu şekilde meydana gelir. Diğer bir deyişle, son olarak öğe ekleme maliyeti, denetimli sıranın uzunluğu arttıkça ortalama artmaz. Bu nedenle, bir vektör, şablon sınıfı [yığını (STL/CLR)](../dotnet/stack-stl-clr.md)için temel alınan kapsayıcı için iyi bir adaydır.
 
-, Rasgele erişim yineleyicileri `size() - 1` destekler,bu,biröğeyedoğrudansayısalkonumuverildiğinde,ilk(ön)öğesiiçinsıfırdansayarakenson(geri)öğesinebaşvurabileceğinizanlamınagelir.`vector` Ayrıca vektör, [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)şablon sınıfı için temel alınan kapsayıcı için iyi bir aday olduğu anlamına gelir.
+`vector` rastgele erişim yineleyicileri destekler, bu da bir öğeye, ilk (ön) öğesi için sıfırdan sayarak, son (geri) öğe için `size() - 1` kadar doğrudan sayısal konumuna başvurabileceğiniz anlamına gelir. Ayrıca bir vektör, şablon sınıfı [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)için temel alınan kapsayıcı için iyi bir aday olduğu anlamına gelir.
 
 Bir vektör Yineleyici, kendi ilişkili vektör nesnesine bir tutamacı, onun oluşturduğu öğenin sapması ile birlikte depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Vector öğesinin sapması konumuyla aynıdır.
 
-Öğeleri ekleme veya silme, belirli bir konumda depolanan öğe değerini değiştirebilir, bu nedenle bir yineleyici tarafından belirlenen değer de değişebilir. (Bir INSERT 'tan önce bir delik oluşturmak veya bir silme işleminden sonra bir delik açmak için kapsayıcının öğeleri yukarı veya aşağı kopyalaması gerekebilir.) Bununla birlikte, bir vektör Yineleyici, sapması aralıkta `[0, size()]`olduğu sürece geçerli kalır. Ayrıca, geçerli bir yineleyici, bir bütün olarak devam eder `size()`. bu değeri, yaptığı öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. bu nedenle, sapması değerine eşit değildir.
+Öğeleri ekleme veya silme, belirli bir konumda depolanan öğe değerini değiştirebilir, bu nedenle bir yineleyici tarafından belirlenen değer de değişebilir. (Bir INSERT 'tan önce bir delik oluşturmak veya bir silme işleminden sonra bir delik açmak için kapsayıcının öğeleri yukarı veya aşağı kopyalaması gerekebilir.) Bununla birlikte, bir vektör Yineleyici geçerli kalır, çünkü sapması Aralık `[0, size()]`. Ayrıca, geçerli bir yineleyici, bir bütün olarak devam eder; bu işlemi, yaptığı öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. bu nedenle, sapması `size()`eşit olmadığı sürece.
 
 Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının öğelerini yok ettiğini unutmayın.
 
@@ -236,13 +230,13 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*biriktirme*<br/>
+*count*<br/>
 Eklenecek öğe sayısı.
 
-*first*<br/>
+*adı*<br/>
 Eklenecek aralığın başlangıcı.
 
-*last*<br/>
+*soyadına*<br/>
 Eklenecek aralığın sonu.
 
 *Right*<br/>
@@ -255,7 +249,7 @@ Eklenecek öğenin değeri.
 
 İlk üye işlevi denetlenen diziyi değer *değer değeri olan* *Count* öğelerinin yinelemesi ile değiştirir. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
 
-Bir tamsayı türünde ise ikinci üye işlevi ile aynı şekilde `assign((size_type)first, (value_type)last)`davranır. `InIt` Aksi takdirde, denetlenen diziyi [`first`, `last`) sırasıyla değiştirir. Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
+`InIt` bir tamsayı türüdür, ikinci üye işlevi `assign((size_type)first, (value_type)last)`ile aynı şekilde davranır. Aksi takdirde, denetlenen diziyi [`first`, `last`) sırasıyla değiştirir. Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
 
 Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ*tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
 
@@ -468,7 +462,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir rastgele erişim yineleyici döndürür. Denetlenen dizinin `current` başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetlenen sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir rastgele erişim yineleyici döndürür. Denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -523,7 +517,7 @@ size_type capacity();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, en az [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()`olarak en az bir değer olan denetimli sırayı tutmak için ayrılmış depolama alanını döndürür. Kapsayıcının, denetlenen sıra için depolamayı yeniden ayrılacak kadar ne kadar büyüleyeceğini öğrenmek için bunu kullanırsınız.
+Üye işlevi, denetlenen sırayı tutmak için şu anda ayrılmış depolama alanını döndürür: en az [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()`. Kapsayıcının, denetlenen sıra için depolamayı yeniden ayrılacak kadar ne kadar büyüleyeceğini öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -573,7 +567,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [vector:: Erase (STL/CLR)](../dotnet/vector-erase-stl-clr.md) `(` [vector:: BEGIN (STL/CLR)](../dotnet/vector-begin-stl-clr.md) `(),` [vector:: End (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`öğesini etkin bir şekilde çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi vector:: [Erase](../dotnet/vector-erase-stl-clr.md) (stl/clr)`(` vector:: [BEGIN (](../dotnet/vector-begin-stl-clr.md) stl/clr)`(),` [vector:: End (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`'yi etkin şekilde çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -630,7 +624,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir rastgele `T2` erişim Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
+Türü, denetlenen sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek `T2` belirtilmeyen türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -715,7 +709,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters `T4` Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
+Türü, denetimli sıra için sabit bir ters Yineleyici olarak kullanılabilecek belirtilmemiş türde `T4` bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -862,7 +856,7 @@ iterator end();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizinin sonunun hemen ötesinde işaret eden bir rastgele erişim yineleyici döndürür. Denetlenen dizinin `current` sonunu atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetimli dizinin sonunun hemen ötesinde işaret eden bir rastgele erişim yineleyici döndürür. Denetlenen sıranın `current` sonunu belirten bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -919,10 +913,10 @@ iterator erase(iterator first, iterator last);
 
 #### <a name="parameters"></a>Parametreler
 
-*first*<br/>
+*adı*<br/>
 Silinecek aralığın başlangıcı.
 
-*last*<br/>
+*soyadına*<br/>
 Silinecek aralığın sonu.
 
 *olmadığı*<br/>
@@ -932,9 +926,9 @@ Silinecek öğe.
 
 İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu*gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
-İkinci üye işlevi, [`first`, `last`) aralığındaki denetlenen sıranın öğelerini kaldırır. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
+İkinci üye işlevi [`first`, `last`) aralığındaki denetlenen sıranın öğelerini kaldırır. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
-Her iki üye işlevi de kaldırılan öğelerin dışında kalan ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [vector:: End (STL/CLR)](../dotnet/vector-end-stl-clr.md) `()` .
+Her iki üye işlevi de kaldırılan öğelerin dışında kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa [vector:: End (STL/CLR)](../dotnet/vector-end-stl-clr.md)`()`.
 
 Öğeleri silerken, öğe kopyalarının sayısı doğrusal bir şekilde sıra sayısının bitişine ve sonuna kadar olan sayı arasındaki öğe sayısını gösterir. (Sıranın her iki ucunda bir veya daha fazla öğe silinirken, hiçbir öğe kopyası gerçekleşmez.)
 
@@ -1277,7 +1271,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için `GValue` genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan türünde bir nesne tanımlar.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1338,13 +1332,13 @@ void insert(iterator where,
 
 #### <a name="parameters"></a>Parametreler
 
-*biriktirme*<br/>
+*count*<br/>
 Eklenecek öğe sayısı.
 
-*first*<br/>
+*adı*<br/>
 Eklenecek aralığın başlangıcı.
 
-*last*<br/>
+*soyadına*<br/>
 Eklenecek aralığın sonu.
 
 *Right*<br/>
@@ -1364,11 +1358,11 @@ Kapsayıcının ekleneceği yer.
 
 İkinci üye işlevi, değer *Val*'in *Count* öğelerinin tekrarından birini ekler. Aynı değerin tüm kopyaları olan sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
-Bir tamsayı türü ise, üçüncü üye işlevi ile aynı şekilde `insert(where, (size_type)first, (value_type)last)`davranır. `InIt` Aksi takdirde, [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
+`InIt` bir tamsayı türüdür, üçüncü üye işlevi `insert(where, (size_type)first, (value_type)last)`ile aynı şekilde davranır. Aksi takdirde, [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
 Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
-Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) Bir `InIt` giriş yineleyicidir, üçüncü üye işlevi dizideki her öğe için etkin bir şekilde tek bir ekleme gerçekleştirir. Aksi halde, öğe `N` eklerken, öğe kopyalarının sayısı `N` doğrusal ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısına eklenir.
+Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt` bir giriş yineleyicisi ise, üçüncü üye işlevi dizideki her öğe için etkin olarak tek bir ekleme gerçekleştirir. Aksi takdirde, `N` öğeleri eklerken, öğe kopyalarının sayısı `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısı ile doğrusal olur.
 
 ### <a name="example"></a>Örnek
 
@@ -1442,7 +1436,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için rastgele erişim Yineleyici `T1` işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
+Türü, denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek `T1` belirtilmeyen türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1496,7 +1490,7 @@ Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür `*this`. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -1643,7 +1637,7 @@ void push_back(value_type val);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın sonunda değeri `val` olan bir öğe ekler. Vector öğesine başka bir öğe eklemek için bunu kullanırsınız.
+Üye işlevi denetlenen sıranın sonunda `val` değeri olan bir öğe ekler. Vector öğesine başka bir öğe eklemek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1683,7 +1677,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` öğesini belirler. Doğru sırada görülen denetimli sıranın `current` başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1793,7 +1787,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` öğesini belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1849,12 +1843,12 @@ void reserve(size_type count);
 
 #### <a name="parameters"></a>Parametreler
 
-*biriktirme*<br/>
+*count*<br/>
 Kapsayıcının yeni en düşük kapasitesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, henceileri 'nin `capacity()` en az *sayı*döndürdüğünden emin olmanızı sağlar. Kapsayıcının, belirtilen boyuta kadar büyüene kadar, denetlenen sıra için depolamayı yeniden ayırmaya gerek gerektirmediğinden emin olmak için bunu kullanırsınız.
+Üye işlevi `capacity()` henceileri 'nin en az *sayıda*döndürdüğünden emin olmanızı sağlar. Kapsayıcının, belirtilen boyuta kadar büyüene kadar, denetlenen sıra için depolamayı yeniden ayırmaya gerek gerektirmediğinden emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1913,7 +1907,7 @@ Padding öğesinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri hem [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md) `()` henceileri 'nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri `value_type()`olan öğeleri ekler; ikinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [vektörü:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md) `() -` `new_size` zamanlarını etkin bir şekilde siler. Denetlenen dizinin boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre bunu kullanırsınız.
+Üye işlevleri hem [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()` henceileri 'nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi `value_type()`değeri olan öğeleri ekler, ikinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [vektörü:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`() -` `new_size` süreleri etkin bir şekilde siler. Kontrol edilen sıranın boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -1964,7 +1958,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen sıra için ters Yineleyici olarak `T3` işlev görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
+Tür, denetlenen sıra için ters Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T3`.
 
 ### <a name="example"></a>Örnek
 
@@ -2013,7 +2007,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [vector:: Empty (STL/CLR)](../dotnet/vector-empty-stl-clr.md)`()`.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı hakkında bilgi için bkz. [vector:: Empty (STL/CLR)](../dotnet/vector-empty-stl-clr.md)`()`.
 
 ### <a name="example"></a>Örnek
 
@@ -2116,7 +2110,7 @@ void swap(vector<Value>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve `*this` *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2276,13 +2270,13 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*biriktirme*<br/>
+*count*<br/>
 Eklenecek öğe sayısı.
 
-*first*<br/>
+*adı*<br/>
 Eklenecek aralığın başlangıcı.
 
-*last*<br/>
+*soyadına*<br/>
 Eklenecek aralığın sonu.
 
 *Right*<br/>
@@ -2315,7 +2309,7 @@ Oluşturucu:
 
 `explicit vector(size_type count);`
 
-Her bir değer `value_type()`içeren *sayı* öğeleri olan denetimli sırayı başlatır. Kapsayıcıyı, varsayılan değere sahip olan öğelerle birlikte doldurmanız için kullanırsınız.
+*sayı* öğeleri olan denetlenen sırayı, her biri `value_type()`değer ile başlatır. Kapsayıcıyı, varsayılan değere sahip olan öğelerle birlikte doldurmanız için kullanırsınız.
 
 Oluşturucu:
 
@@ -2424,7 +2418,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi döndürülür `!(left == right)`. Bu uygulamayı, iki Vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
+İşleç işlevi `!(left == right)`döndürür. Bu uygulamayı, iki Vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2493,7 +2487,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi, `i` bununda`!(right[i] < left[i])` doğru olduğu en düşük konum için true değerini döndürür. `left[i] < right[i]` Aksi takdirde, iki `left->size() < right->size()` vektörün öğe öğesine göre karşılaştırıldığı zaman, *sol* *taraftaki bir* süre önce kaldığını test etmek için bunu kullanır.
+İşleç işlevi true değerini döndürür, en düşük konum için de bu `!(right[i] < left[i])` `left[i] < right[i]`true `i`. Aksi takdirde, bu, iki Vektörün öğe öğesine göre *left* karşılaştırıldığı sırada sola *doğru* sıralanıp sıralanmadığını test etmek için onu `left->size() < right->size()` döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -2540,7 +2534,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a>operator&lt;= (vektör) (STL/CLR)
+## <a name="op_lteq"></a>işleç&lt;= (vektör) (STL/CLR)
 
 Vektör küçüktür veya eşittir karşılaştırması.
 
@@ -2562,7 +2556,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi döndürülür `!(right < left)`. Bu, iki Vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* sıralı olup olmadığını test etmek için kullanılır.
+İşleç işlevi `!(right < left)`döndürür. Bu, iki Vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* sıralı olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2631,7 +2625,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve `i` `left[i] ==` `right[i]`her bir konum için aynı uzunluğa sahip olursa true değerini döndürür. İki vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her konum için `i``left[i] ==` `right[i]`için true değerini döndürür. İki vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2700,7 +2694,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi döndürülür `right`. `<` `left` Bu, iki Vektörün öğe öğesine göre karşılaştırıldığı zaman *sağdan doğru* sıralı *olup olmadığını test* etmek için kullanılır.
+İşleç işlevi `right` `<` `left`döndürüyor. Bu, iki Vektörün öğe öğesine göre karşılaştırıldığı zaman *sağdan doğru* sıralı *olup olmadığını test* etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2747,7 +2741,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a>operator&gt;= (vektör) (STL/CLR)
+## <a name="op_gteq"></a>işleç&gt;= (vektör) (STL/CLR)
 
 Vektör büyük veya eşit karşılaştırması.
 
@@ -2769,7 +2763,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi döndürülür `!(left < right)`. İki vektör öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan önce sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi `!(left < right)`döndürür. İki vektör öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan önce sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

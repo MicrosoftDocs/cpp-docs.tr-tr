@@ -1,19 +1,16 @@
 ---
 title: new ve delete İşleçleri
 ms.date: 11/19/2019
-f1_keywords:
-- delete_cpp
-- new
 helpviewer_keywords:
 - new keyword [C++]
 - delete keyword [C++]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
-ms.openlocfilehash: c64b15f1e1e63b1e743743883429ffd11007de0a
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 2fd665ce2570bbe7750684057cdf7f517f6f64f3
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246444"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445451"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete işleçleri
 
@@ -23,7 +20,7 @@ Standart kitaplıktaki **Yeni** işlev, C++ standart olarak belirtilen davranı�
 
 C çalışma zamanı kitaplığını ve C++ standart kitaplığı oluşturan kitaplık dosyalarının listesi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
-##  <a id="new_operator"></a> New işleci
+##  <a id="new_operator"> </a> New işleci
 
 Bir programda aşağıdakiler gibi bir ifadeye rastlandı, yeni bir işlev **işlecine**çağrı yapar:
 
@@ -41,7 +38,7 @@ Belleği boşaltmak ve ayırmayı yeniden denemek için bir yordam yazabilirsini
 
 |İşleç|Kapsam|
 |--------------|-----------|
-|**:: New işleci**|Global|
+|**:: New işleci**|Genel|
 |*class-name* **:: operator new**|Sınıf|
 
 **New işlecine** yönelik ilk bağımsız değişken `size_t` türünde olmalıdır (\<stddef. h > ' de tanımlı bir tür) ve dönüş türü her zaman **void** <strong>\*</strong>.
@@ -83,7 +80,7 @@ Parantez içinde **New** olarak sağlanan bağımsız değişken `chInit` bağı
 Blanks *SomeBlanks = new Blanks;
 ```
 
-Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örneğin:
+Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örnek:
 
 ```cpp
 class MyClass
@@ -124,7 +121,7 @@ int main() {
 
 Başarısız bellek ayırma isteklerini işlemenin başka bir yolu vardır. Bu tür bir hatayı işlemek için özel bir kurtarma yordamı yazın ve ardından [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı işlevini çağırarak işlevinizi kaydedin.
 
-##  <a id="delete_operator"></a> Delete işleci
+##  <a id="delete_operator"> </a> Delete işleci
 
 **New** işleci kullanılarak dinamik olarak ayrılan bellek, **Delete** işleci kullanılarak serbest bırakılabilirler. Delete işleci, belleği kullanılabilir havuza yeniden **boşalten Delete işleç** işlevini çağırır. **Delete** işlecinin kullanılması Ayrıca sınıf yıkıcısına (varsa) neden olur.
 
@@ -193,7 +190,7 @@ int main( int argc, char *argv[] ) {
 
 Yukarıdaki kod, "bellek sızıntısı", diğer bir deyişle, ücretsiz depoya ayrılan ancak hiç boşaltılmamış bellek algılamak için kullanılabilir. Bu algılamayı gerçekleştirmek için, genel **Yeni** ve **silme** işleçleri, belleğin ayrılması ve ayırmayı kaldırma için yeniden tanımlanır.
 
-Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örneğin:
+Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örnek:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

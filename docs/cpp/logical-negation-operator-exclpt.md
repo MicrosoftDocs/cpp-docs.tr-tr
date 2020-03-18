@@ -3,18 +3,17 @@ title: 'Mantıksal Değilleme İşleci: !'
 ms.date: 08/27/2018
 f1_keywords:
 - '!'
-- Not
 helpviewer_keywords:
 - '! operator'
 - NOT operator
 - logical negation
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
-ms.openlocfilehash: 7b37e5108ca01d782c13508c0cd7a96b096cd745
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 06142ef15fcdbafdbae4b892772a04b117c087f6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216414"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446546"
 ---
 # <a name="logical-negation-operator-"></a>Mantıksal Değilleme İşleci: !
 
@@ -26,13 +25,13 @@ ms.locfileid: "62216414"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mantıksal değilleme işleci (**!**), işlenenin anlamını tersine çevirir. İşlenen, aritmetik veya işaretçi türünde (veya aritmetik ya da işaretçi türü olarak değerlendirilen bir ifade) olmalıdır. İşlenen örtülü olarak türüne dönüştürülür **bool**. Dönüştürülen işlenen FALSE ise, sonuç değeri True'dur; Dönüştürülen işlenen TRUE ise sonuç FALSE olur. Sonuç türünde **bool**.
+Mantıksal Değilleme İşleci ( **!** ), işleneninin anlamını tersine çevirir. İşlenen, aritmetik veya işaretçi türünde (veya aritmetik ya da işaretçi türü olarak değerlendirilen bir ifade) olmalıdır. İşlenen örtük olarak **bool**türüne dönüştürülür. Dönüştürülen işlenen FALSE ise sonuç doğrudur; dönüştürülmüş işlenen TRUE ise sonuç FALSE 'TUR. Sonuç **bool**türündedir.
 
-Bir ifade için *e*, birli ifadesi `!e` ifadesine eşdeğerdir `(e == 0)`, aşırı yüklenmiş işleçler dahil olduğu dışında.
+*E*ifadesi için, `!e` birli ifade, aşırı yüklenmiş işleçlerin dahil olduğu durumlar dışında `(e == 0)`ifade ile eşdeğerdir.
 
 ## <a name="operator-keyword-for-"></a>! için İşleç Anahtar Sözcüğü
 
-**Değil** işleci, bir alternatif yazım **!**. Erişmenin iki yöntemi vardır **değil** programlarınızda işleci: üstbilgi dosyasını dahil \<iso646.h >, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.
+**Not** işleci, **!** için alternatif bir yazıdır. Programlarınızda **Not** operatörüne erişmenin iki yolu vardır: \<iso646. h > üst bilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
 
 ## <a name="example"></a>Örnek
 

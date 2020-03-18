@@ -4,15 +4,14 @@ ms.date: 10/03/2018
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::AgileEventSource
-- event/Microsoft::WRL::InvokeModeOptions
 helpviewer_keywords:
 - AgileEventSource class
-ms.openlocfilehash: fa1e0a72d865b2993e149f6e4d2b57fe13463a61
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: 7a919c0b2aa778ba1db19c3bfc3871542e8f9569
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821746"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441274"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource sınıfı
 
@@ -56,9 +55,9 @@ Windows Çalışma Zamanı bileşenlerin büyük çoğunluğu çevik bileşenler
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[AgileEventSource:: Add yöntemi](#add)|Belirtilen temsilci arabirimiyle temsil edilen çevik olay işleyicisini geçerli **Agileeventsource** nesnesinin olay işleyicileri kümesine ekler.|
 
@@ -77,7 +76,7 @@ HRESULT Add(
 
 ### <a name="parameters"></a>Parametreler
 
-*delegateInterface*<br/>
+*Delegateınterface*<br/>
 Bir olay işleyicisini temsil eden bir temsilci nesnesine arabirim.
 
 *simgesinde*<br/>

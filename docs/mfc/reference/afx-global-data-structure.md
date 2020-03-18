@@ -20,7 +20,7 @@ f1_keywords:
 - AFXGLOBALS/AFX_GLOBAL_DATA::GetTextHeight
 - AFXGLOBALS/AFX_GLOBAL_DATA::GetWICFactory
 - AFXGLOBALS/AFX_GLOBAL_DATA::GetWriteFactory
-- AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized
+- AFXGLOBALS/AFX_GLOBAL_DATA::InitD2D
 - AFXGLOBALS/AFX_GLOBAL_DATA::Is32BitIcons
 - AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized
 - AFXGLOBALS/AFX_GLOBAL_DATA::IsDwmCompositionEnabled
@@ -55,12 +55,12 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA structure [MFC]
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-ms.openlocfilehash: dda3056cbed18ef93e09b52cd9d0a6b00e1db177
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 66cfb66e091d487ea9d3f563b7b6bbb9ca1ea928
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420591"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447331"
 ---
 # <a name="afx_global_data-structure"></a>AFX_GLOBAL_DATA Yapısı
 
@@ -76,14 +76,14 @@ struct AFX_GLOBAL_DATA
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA`|`AFX_GLOBAL_DATA` yapısı oluşturur.|
 |`AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[AFX_GLOBAL_DATA:: CleanUp](#cleanup)|Çerçeve tarafından ayrılan, fırçalar, yazı tipleri ve DLL 'Ler gibi kaynakları serbest bırakır.|
 |[AFX_GLOBAL_DATA::D 2D1MakeRotateMatrix](#d2d1makerotatematrix)|Belirtilen bir nokta etrafında belirtilen açıyla döndüren bir döndürme dönüştürmesi oluşturur.|
@@ -100,7 +100,7 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA:: GetTextHeight](#gettextheight)|Geçerli yazı tipindeki metin karakterlerinin yüksekliğini alır.|
 |[AFX_GLOBAL_DATA:: GetWICFactory](#getwicfactory)|Genel verilerde depolanan `IWICImagingFactory` arabirimine yönelik bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.|
 |[AFX_GLOBAL_DATA:: GetWriteFactory](#getwritefactory)|Genel verilerde depolanan `IDWriteFactory` arabirimine yönelik bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.|
-|[AFX_GLOBAL_DATA:: IsD2DInitialized](#isd2dinitialized)|`D2D`, `DirectWrite`ve `WIC` fabrikalarını başlatır. Ana pencere başlatılmadan önce bu yöntemi çağırın.|
+|[AFX_GLOBAL_DATA:: InitD2D](#initd2d)|`D2D`, `DirectWrite`ve `WIC` fabrikalarını başlatır. Ana pencere başlatılmadan önce bu yöntemi çağırın.|
 |[AFX_GLOBAL_DATA:: Is32BitIcons](#is32biticons)|Önceden tanımlanmış 32 bitlik simgelerin desteklenip desteklenmediğini gösterir.|
 |[AFX_GLOBAL_DATA:: IsD2DInitialized](#isd2dinitialized)|`D2D` başlatılmış olup olmadığını belirler.|
 |[AFX_GLOBAL_DATA:: Isdwmkompozisyontionenabled](#isdwmcompositionenabled)|Windows [Dwmiskompozisyontionenabled](/windows/win32/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemini çağırmak için basit bir yol sağlar.|
@@ -117,7 +117,7 @@ struct AFX_GLOBAL_DATA
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[AFX_GLOBAL_DATA:: EnableAccessibilitySupport](#enableaccessibilitysupport)|Microsoft Etkin Erişilebilirlik desteğini etkinleştirilir veya devre dışı bırakır. Etkin Erişilebilirlik, Kullanıcı arabirimi öğeleriyle ilgili bilgileri açığa çıkarmak için güvenilir yöntemler sağlar.|
 |[AFX_GLOBAL_DATA:: IsAccessibilitySupport](#isaccessibilitysupport)|Microsoft Etkin Erişilebilirlik desteğinin etkin olup olmadığını gösterir.|
@@ -125,7 +125,7 @@ struct AFX_GLOBAL_DATA
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[AFX_GLOBAL_DATA:: bIsOSAlphaBlendingSupport](#bisosalphablendingsupport)|Geçerli işletim sisteminin Alfa karıştırmasını destekleyip desteklemediğini gösterir.|
 |[AFX_GLOBAL_DATA:: bIsWindows7](#biswindows7)|Uygulamanın Windows 7 işletim sistemi veya üzeri kapsamında yürütülüp yürütülmediğini belirtir|
@@ -535,6 +535,7 @@ BOOL IsDwmCompositionEnabled();
 ## <a name="ishighcontrastmode"></a>AFX_GLOBAL_DATA:: ıshighınstmode
 
 Görüntülerin Şu anda yüksek karşıtlıkta görüntülenip görüntülenmediğini gösterir.
+
 ```
 BOOL IsHighContrastMode() const;
 ```

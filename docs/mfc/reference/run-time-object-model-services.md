@@ -4,12 +4,12 @@ ms.date: 03/27/2019
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: f8b891467d91d0c945b6c59c90dbc49fd7cbcb30
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: a4e471decd07cb2025b833513403b64f43105d0c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421347"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446448"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
@@ -340,11 +340,11 @@ Diğer uygulamalara sunulan nesne adı (tırnak işaretleri içine alınmıştı
 *nFlags*<br/>
 Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
-   - `afxRegInsertable`, denetimin OLE nesneleri için nesne Ekle iletişim kutusunda görünmesine Izin verir.
-   - `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
-   - `afxRegFreeThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
+- `afxRegInsertable`, denetimin OLE nesneleri için nesne Ekle iletişim kutusunda görünmesine Izin verir.
+- `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegFreeThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
 
-         You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/win32/com/inprocserver32) in the Windows SDK for more information on threading model registration.
+`afxRegApartmentThreading` iki bayrağı birleştirebilir ve `afxRegFreeThreading`, ThreadingModel = her Ikisi de ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
 
 *l*, *W1*, *W2*, *B1*, *B2*, *B3*, *B4*, *B5*, *B6*, *B7*, *,* sınıfın CLSID 'si.
 

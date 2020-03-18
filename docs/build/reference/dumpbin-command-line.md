@@ -1,31 +1,29 @@
 ---
 title: DUMPBIN Komut Satırı
 ms.date: 11/04/2016
-f1_keywords:
-- dumpbin
 helpviewer_keywords:
 - DUMPBIN program, command line
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
-ms.openlocfilehash: 1f94b26ca3bdc2778c2f9ed41103b456f5194fe3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f663a74fd57f52aa559270d61df4a130cf7e86f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271950"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440063"
 ---
 # <a name="dumpbin-command-line"></a>DUMPBIN Komut Satırı
 
-DUMPBIN çalıştırmak için aşağıdaki sözdizimini kullanın:
+DUMPBIN 'i çalıştırmak için aşağıdaki sözdizimini kullanın:
 
 ```
 DUMPBIN [options] files...
 ```
 
-Bir veya daha fazla ikili dosyaları, ile birlikte bilgileri denetlemek için gereken herhangi bir seçenek belirtin. DUMPBIN standart çıktıya bilgileri görüntüler. Bir dosyaya yönlendirin veya çıkış için bir dosya adı belirtmek için / out seçeneği kullanın.
+Bilgileri denetlemek için gereken herhangi bir seçeneği ve bir veya daha fazla ikili dosyayı belirtin. DUMPBIN, standart çıktıya bilgileri görüntüler. Bunu bir dosyaya yönlendirebilir veya çıkış için bir dosya adı belirtmek üzere/OUT seçeneğini kullanabilirsiniz.
 
-Bir seçenek belirtmeden bir dosya DUMPBIN çalıştırdığınızda, / Summary DUMPBIN görüntüler çıktı.
+Bir seçenek belirtmeden DUMPBIN 'i çalıştırdığınızda, DUMPBIN/SUMMARY çıkışını görüntüler.
 
-Komut yazdığınızda `dumpbin` herhangi diğer komut satırı girişi olmadan, buna ilişkin seçenekler özetlenmektedir bir kullanım deyimi DUMPBIN görüntüler.
+Komut `dumpbin` başka bir komut satırı girişi olmadan yazdığınızda, DUMPBIN, seçeneklerini özetleyen bir kullanım ifadesini görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

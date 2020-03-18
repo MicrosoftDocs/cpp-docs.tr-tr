@@ -1,8 +1,6 @@
 ---
 title: C Dili API'sına yönelik ilişki
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.mfc
 helpviewer_keywords:
 - books [MFC], about MFC and Windows SDK
 - books [MFC]
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - Visual C, Windows API calls
 - Windows API [MFC], and MFC
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
-ms.openlocfilehash: 8601dd034dbd73ac035084ad57c51f62e333fd32
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c52b11a7395e3972f8bf9d83501fbafb61e6f4a6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511859"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446380"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C Dili API'sına yönelik ilişki
 

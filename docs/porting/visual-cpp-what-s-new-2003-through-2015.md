@@ -2,12 +2,12 @@
 title: Visual C++ &#39;s yeni 2003 ile 2015 arasında
 ms.date: 07/02/2019
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 6a3db2c9af2bcd9201f696756053cedb0788571a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1e5454e749d93a817caa9ca13553e203f96e038b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510307"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446495"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ &#39;s yeni 2003 ile 2015 arasında
 
@@ -36,13 +36,13 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **/Zc: forScope-seçenek**
 
-   Derleyici seçeneği `/Zc:forScope-` kullanımdan kaldırılmıştır ve gelecek sürümde kaldırılacaktır.
+   Derleyici seçeneği `/Zc:forScope-` kullanımdan kaldırılmıştır ve gelecek sürümlerde kaldırılacaktır.
 
    ```output
     Command line warning  D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
    ```
 
-   Bu seçenek genellikle, standart olarak, kapsam dışı bir noktaya göre döngü değişkenlerini kullanan standart olmayan koda izin vermek için kullanılır. Yalnızca `/Za` seçeneği ile derlerken, `/Za`döngünün sonuna kadar bir for döngüsü değişkeninin kullanılması her zaman izin verilir. Standartlara uygunluğu konusunda endişelenmezseniz (örneğin, kodunuz diğer derleyicilere taşınabilir değilse), `/Za` seçeneğini kapatabilir (veya **dil uzantılarını devre dışı bırak** özelliğini **Hayır**olarak ayarlayabilirsiniz). Taşınabilir, standartlara uyumlu kod yazma konusunda dikkatli değilseniz, bu tür değişkenlerin bildirimini döngü dışındaki bir noktaya taşıyarak, kodunuzu standart olacak şekilde yeniden yazmanız gerekir.
+   Bu seçenek genellikle, standart olarak, kapsam dışı bir noktaya göre döngü değişkenlerini kullanan standart olmayan koda izin vermek için kullanılır. Yalnızca `/Za` seçeneği ile derlerken gereklidir, `/Za`olmadan, döngünün sonuna kadar bir for döngüsü değişkeni kullanmak her zaman izin verilir. Standartlara uygunluğu konusunda endişelenmezseniz (örneğin, kodunuz diğer derleyicilere taşınabilir değilse) `/Za` seçeneğini kapatabilir (veya **dil uzantılarını devre dışı bırak** özelliğini **Hayır**olarak ayarlayabilirsiniz). Taşınabilir, standartlara uyumlu kod yazma konusunda dikkatli değilseniz, bu tür değişkenlerin bildirimini döngü dışındaki bir noktaya taşıyarak, kodunuzu standart olacak şekilde yeniden yazmanız gerekir.
 
    ```cpp
     // zc_forScope.cpp
@@ -59,7 +59,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Zg derleyici seçeneği.**
 
-   `/Zg` Derleyici seçeneği (işlev prototipleri üret) artık kullanılamıyor. Bu derleyici seçeneği daha önce kullanım dışıdır.
+   `/Zg` derleyici seçeneği (Işlev prototipleri üret) artık kullanılamıyor. Bu derleyici seçeneği daha önce kullanım dışıdır.
 
 - Artık, MSTest. exe ile komut satırından C++/CLI ile birim testlerini çalıştıramazsınız. Bunun yerine, VSTest. Console. exe ' yi kullanın
 
@@ -85,7 +85,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **char_16_t ve char32_t**
 
-   Bu türler artık yerleşik olarak `char16_t` değerlendirildiğinden, bir typedef içinde artık diğer adlar kullanılamaz `char32_t` . Kullanıcılar ve kitaplık yazarlarının, `char16_t` sırasıyla ve `uint32_t`' nin `uint16_t` diğer adlarını `char32_t` tanımlamak için yaygındır.
+   Bu türler artık yerleşik olarak kabul edildiği için `char16_t` veya `char32_t` diğer ad olarak kullanamazsınız. Kullanıcılar ve kitaplık yazarlarının, sırasıyla `uint16_t` ve `uint32_t`diğer adları `char16_t` ve `char32_t` tanımlanması yaygındır.
 
    ```cpp
     #include <cstdint>
@@ -135,15 +135,15 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Kodunuzda bu hatayı gidermek için kullandığınız şablon bağımsız değişkeninin türünün şablon parametresinin belirtilen türüyle eşleştiğinden emin olun.
 
-- **__declspec (align)**
+- **__declspec (Hizala)**
 
-   Derleyici artık işlevlerde kabul `__declspec(align)` etmez. Bu her zaman yoksayıldı, ancak şimdi bir derleyici hatası veriyor.
+   Derleyici artık işlevlerde `__declspec(align)` kabul etmez. Bu her zaman yoksayıldı, ancak şimdi bir derleyici hatası veriyor.
 
    ```cpp
     error C3323: 'alignas' and '__declspec(align)' are not allowed on function declarations
    ```
 
-   Bu sorunu gidermek için, işlev `__declspec(align)` bildiriminden kaldırın. Hiçbir etkisi olmadığından, kaldırma hiçbir şeyi değiştirmez.
+   Bu sorunu gidermek için, işlev bildiriminden `__declspec(align)` kaldırın. Hiçbir etkisi olmadığından, kaldırma hiçbir şeyi değiştirmez.
 
 - **Özel durum işleme**
 
@@ -227,7 +227,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
    ```
 
-   Derleyici bunu bir "Hello" dize sabit değeri olarak, ardından "burada" genişletilmiş olan ve iki dize sabit değerinin bir tane ile bitiştirildiği bir makro tarafından yorumlanıyor. Visual Studio 2015 ' de derleyici bunu Kullanıcı tanımlı bir değişmez değer olarak yorumlar, ancak eşleşen bir Kullanıcı tanımlı sabit değer _X tanımlanmadığı için bir hata verir.
+   Derleyici bunu bir "Hello" dize sabit değeri olarak, ardından "burada" genişletilmiş olan ve iki dize sabit değerinin bir tane ile bitiştirildiği bir makro tarafından yorumlanıyor. Visual Studio 2015 ' de, derleyici bunu Kullanıcı tanımlı değişmez değer olarak yorumlar, ancak tanımlı _x Kullanıcı tanımlı sabit değer olmadığından, bir hata verir.
 
    ```cpp
     error C3688: invalid literal suffix '_x'; literal operator or literal operator template 'operator ""_x' not found
@@ -253,9 +253,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Yeni yerleştirme ve silme**
 
-   C++ 14 standardı ile uyumlu hale getirmek için **Delete** işlecinde bir değişiklik yapılmıştır. Standartlar değişikliğinin ayrıntıları, [ C++ boyutu kaldırma](https://isocpp.org/files/papers/n3778.html)sırasında bulunabilir. Değişiklikler, bir boyut parametresi alan Global **Delete** işlecinin bir formunu ekler. Son değişiklik, daha önce aynı imzaya sahip bir işleç **silme** işlemi kullanıyorsanız ( **Yeni bir yerleştirme** işlecine karşılık gelmesi için), bir derleyici hatası (C2956, **yerleştirme yeni bir noktada gerçekleşen** , derleyicinin uygun eşleşen **silme** işlecini belirlemeyi denediği koddaki konum olduğundan, kullanılır.
+   C++ 14 standardı ile uyumlu hale getirmek için **Delete** işlecinde bir değişiklik yapılmıştır. Standartlar değişikliğinin ayrıntıları, [ C++ boyutu kaldırma](https://isocpp.org/files/papers/n3778.html)sırasında bulunabilir. Değişiklikler, bir boyut parametresi alan Global **Delete** işlecinin bir formunu ekler. Son değişiklik, daha önce aynı imzaya sahip bir işleç **silme** **işlemi (** **Yeni bir yerleştirme** işleçle karşılık gelen) kullandığınızda bir derleyici hatası (C2956 ' in, derleyicinin uygun bir eşleşen **silme** işlecini belirlemeyi denediği koddaki konum) ile karşılaşırsınız.
 
-   İşlev `void operator delete(void *, size_t)` , c++ 11 ' deki **yerleştirme yeni** işlevine `void * operator new(size_t, size_t)` karşılık gelen bir **yerleşim silme** işleçiydi. C++ 14 boyutunda ayırmayı kaldırma ile, bu **Delete** işlevi artık *olağan bir ayırmayı kaldırma işlevidir* (Global **Delete** işleci). Standart, **Yeni bir yerleşim** kullanılması karşılık gelen bir **silme** işlevini arar ve normal bir ayırmayı kaldırma işlevi bulursa programın hatalı biçimlendirilmiş olması gerekir.
+   `void operator delete(void *, size_t)` işlev, C++ 11 ' `void * operator new(size_t, size_t)` **yerleştirme yeni** işlevine karşılık gelen **yerleştirme silme** işleçiydi. C++ 14 boyutunda ayırmayı kaldırma ile, bu **Delete** işlevi artık *olağan bir ayırmayı kaldırma işlevidir* (Global **Delete** işleci). Standart, **Yeni bir yerleşim** kullanılması karşılık gelen bir **silme** işlevini arar ve normal bir ayırmayı kaldırma işlevi bulursa programın hatalı biçimlendirilmiş olması gerekir.
 
    Örneğin, kodunuzun hem **yerleştirmesini** hem de bir **yerleşimi silmeyi**tanımladığını varsayalım:
 
@@ -264,17 +264,17 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     void operator delete(void*, std::size_t) noexcept;
    ```
 
-   Bu sorun, tanımladığınız bir **yerleşim silme** işleci ve yeni global boyutlu **silme** işleci arasındaki işlev imzalarındaki eşleşme nedeniyle oluşur. Herhangi bir `size_t` **yerleştirme New** ve **Delete** işleçleri için dışında farklı bir tür kullanıp kullanmayacağınızı göz önünde bulundurun.  `size_t` **Typedef** türünün derleyiciye bağlı olduğunu ve Visual C++'teki **işaretsiz int** için bir **typedef** olduğunu unutmayın. İyi bir çözüm, şöyle bir numaralandırılmış tür kullanmaktır:
+   Bu sorun, tanımladığınız bir **yerleşim silme** işleci ve yeni global boyutlu **silme** işleci arasındaki işlev imzalarındaki eşleşme nedeniyle oluşur. Tüm **yerleştirme** ve **silme** işleçleri için `size_t` dışında farklı bir tür kullanıp kullanmayacağınızı düşünün.  `size_t` **typedef** türünün derleyiciye bağlı olduğunu unutmayın; Bu, Visual C++'te **işaretsiz int** için bir **typedef** 'tir. İyi bir çözüm, şöyle bir numaralandırılmış tür kullanmaktır:
 
    ```cpp
     enum class my_type : size_t {};
    ```
 
-   Ardından, **Yeni** yerleştirme tanımınızı değiştirin ve bu türü, `size_t`yerine ikinci bağımsız değişken olarak kullanmak için silin. Ayrıca yeni bir türü geçirmek (örneğin, tam sayı değerinden dönüştürmek için kullanarak `static_cast<my_type>` ) ve **Yeni** ve **silme** tanımını tam sayı türüne dönüştürmek için yeni yerleştirme için yapılan çağrıları güncelleştirmeniz gerekir. Bunun için bir **enum** kullanmanız gerekmez; `size_t` üye içeren bir sınıf türü de çalışır.
+   Ardından, **Yeni** yerleştirme tanımınızı değiştirin ve bu türü `size_t`yerine ikinci bağımsız değişken olarak kullanmak için **silin** . Ayrıca, **Yeni bir türü** geçirmek için (örneğin, tam sayı değerinden dönüştürmek üzere `static_cast<my_type>` kullanarak), yeni ve **silme** tanımını güncelleyerek tamsayı türüne geri dönüştürülecek şekilde yeni **yerleştirme** için yapılan çağrıları güncelleştirmeniz gerekir. Bunun için bir **enum** kullanmanız gerekmez; `size_t` üyeye sahip bir sınıf türü de çalışır.
 
-   Alternatif bir çözüm de **yeni yerleşimi** tamamen ortadan kaldırabilmeyebilirsiniz. Kodunuz, yerleştirme bağımsız değişkeninin ayrılan veya Silinen nesnenin boyutu olduğu bir bellek havuzunu uygulamak için **yeni yerleştirme** kullanıyorsa, boyutu kaldırma özelliği kendi özel bellek havuzu kodunuzu değiştirmek için uygun olabilir ve şu şekilde kurtulabilen yerleştirme işlevleri ve yerleştirme işlevleri yerine kendi iki bağımsız değişkenli **silme** işlecini kullanın.
+   Alternatif bir çözüm de **yeni yerleşimi** tamamen ortadan kaldırabilmeyebilirsiniz. Kodunuz, yerleştirme bağımsız değişkeninin ayrılan veya Silinen nesnenin boyutu olduğu bir bellek havuzunu uygulamak için **yeni yerleştirme** kullanıyorsa, boyutu kaldırma özelliği kendi özel bellek havuzu kodunuzu değiştirmek için uygun olabilir ve yerleştirme işlevlerinin kurtulabileceği ve yerleştirme işlevleri yerine kendi iki bağımsız değişkenli **silme** işlecini kullanmanız yeterlidir.
 
-   Kodunuzu hemen güncelleştirmek istemiyorsanız, derleyici seçeneğini `/Zc:sizedDealloc-`kullanarak eski davranışa dönüştürebilirsiniz. Bu seçeneği kullanırsanız, iki bağımsız değişken **silme** işlevi yoktur ve **yerleştirme silme** işleçle bir çakışmaya neden olmaz.
+   Kodunuzu hemen güncelleştirmek istemiyorsanız, `/Zc:sizedDealloc-`derleyici seçeneğini kullanarak eski davranışa dönüştürebilirsiniz. Bu seçeneği kullanırsanız, iki bağımsız değişken **silme** işlevi yoktur ve **yerleştirme silme** işleçle bir çakışmaya neden olmaz.
 
 - **Birleşim veri üyeleri**
 
@@ -514,7 +514,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Özel sanal temel sınıflar ve dolaylı devralma**
 
-   Derleyicinin önceki sürümleri, türetilmiş bir sınıfın *dolaylı olarak türetilmiş* `private virtual` temel sınıfların üye işlevlerini çağırmasını sağlar. Bu eski davranış yanlıştı ve C++ standart ile uyumlu değil. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve sonuç olarak derleyici hatası C2280 yayınlar.
+   Derleyicinin önceki sürümleri, türetilmiş bir sınıfın *dolaylı olarak türetilen* `private virtual` taban sınıflarının üye işlevlerini çağırmasını izin vermez. Bu eski davranış yanlıştı ve C++ standart ile uyumlu değil. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve sonuç olarak derleyici hatası C2280 yayınlar.
 
    ```Output
     error C2280: 'void *S3::__delDtor(unsigned int)': attempting to reference a deleted function
@@ -552,7 +552,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
    ```
 
-  \-veya
+  \-veya-
 
    ```cpp
     class base;  // as above
@@ -568,7 +568,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Yeni işleç New ve delete işleci**
 
-   Derleyicinin önceki sürümleri, üyenin üye olmayan **işlecine** ve üyenin statik olarak bildirilmesini ve genel ad alanından farklı ad alanlarında bildirilmesine izin verilir.  Bu eski davranış, programın programladığı **Yeni** veya **silme** işletmeni uygulamasını çağırmayacağı ve sessiz bozuk çalışma zamanı davranışına neden olan bir risk oluşturdu. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve bunun yerine derleyici hatası C2323 yayınlar.
+   Derleyicinin önceki sürümleri, üyenin üye olmayan **işlecine** **ve üyenin statik** olarak bildirilmesini ve genel ad alanından farklı ad alanlarında bildirilmesine izin verilir.  Bu eski davranış, programın programladığı **Yeni** veya **silme** işletmeni uygulamasını çağırmayacağı ve sessiz bozuk çalışma zamanı davranışına neden olan bir risk oluşturdu. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve bunun yerine derleyici hatası C2323 yayınlar.
 
    ```Output
     error C2323: 'operator new': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace.
@@ -648,7 +648,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     error C2668: 'function' : ambiguous call to overloaded function.
    ```
 
-   Örnek 1: Aşırı yüklenmiş işleve belirsiz çağrı (önce)
+   Örnek 1: aşırı yüklenmiş işleve belirsiz çağrı (önce)
 
    ```cpp
     // In previous versions of the compiler, code written in this way would unambiguously call f(int, Args...)
@@ -726,7 +726,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Switch ifadesinin uyarılarını geri yükleme**
 
-   Derleyicinin önceki bir sürümü, **Switch** deyimleriyle ilgili önceden var olan uyarıları kaldırdı; Bu uyarılar artık geri yüklendi. Derleyici artık geri yüklenen uyarıları verir ve belirli durumlar (varsayılan durum dahil) ile ilgili uyarılar artık switch ifadesinin son satırı yerine sorunlu durumu içeren satıra çıkarılır. Artık bu uyarıların geçmiş dışında farklı satırlarda verilmesi sonucunda, daha önce kullanılarak `#pragma warning(disable:####)` gizlenen uyarılar amaçlanan şekilde gizlemeyebilir. Bu uyarıların istendiği şekilde görüntülenmesini sağlamak için, `#pragma warning(disable:####)` yönergeyi ilk olası olay durumunun üzerindeki bir satıra taşımak gerekebilir. Geri yüklenen uyarılar aşağıda verilmiştir.
+   Derleyicinin önceki bir sürümü, **Switch** deyimleriyle ilgili önceden var olan uyarıları kaldırdı; Bu uyarılar artık geri yüklendi. Derleyici artık geri yüklenen uyarıları verir ve belirli durumlar (varsayılan durum dahil) ile ilgili uyarılar artık switch ifadesinin son satırı yerine sorunlu durumu içeren satıra çıkarılır. Artık bu uyarıların geçmiş dışında farklı satırlarda verilmesi sonucunda, daha önce `#pragma warning(disable:####)` kullanılarak gizlenen uyarılar artık istendiği gibi gizlemeyebilir. Bu uyarıların istendiği şekilde görüntülenmesini sağlamak için, `#pragma warning(disable:####)` yönergesini ilk olası çıkabilecek büyük küçük harfli bir satıra taşımak gerekebilir. Geri yüklenen uyarılar aşağıda verilmiştir.
 
    ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels
@@ -821,9 +821,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Diğer geri yüklenen uyarıların örnekleri belgelerde verilmiştir.
 
-- **#include: PathName 'teki '.. ' üst dizin belirticisinin kullanımı** (yalnızca etkiler `/Wall`) `/WX`
+- **#include: PathName 'teki '.. ' üst dizin belirticisinin kullanımı** (yalnızca `/Wall` `/WX`etkiler)
 
-   Derleyicinin önceki sürümleri, '.. ' üst dizin belirticisinin kullanımını algılamadı `#include` yönergelerinin yol. Bu şekilde yazılan kod, genellikle proje ile ilgili yollar kullanarak proje dışında var olan üst bilgilerin dahil edilmesine yöneliktir. Bu eski davranış, programın, programcı tarafından amaçlanan farklı bir kaynak dosyası ekleyerek derlenebilecek veya bu göreli yolların diğer derleme ortamlarına taşınmayan bir risk oluşturdu. Derleyici artık kod Programlayıcısının bu şekilde yazıldığını algılar ve bildirir ve etkinleştirilirse isteğe bağlı bir derleyici uyarısı C4464 yayınlar.
+   Derleyicinin önceki sürümleri, '.. ' üst dizin belirticisinin kullanımını algılamadı `#include` yönergelerinin yol adı ' nda. Bu şekilde yazılan kod, genellikle proje ile ilgili yollar kullanarak proje dışında var olan üst bilgilerin dahil edilmesine yöneliktir. Bu eski davranış, programın, programcı tarafından amaçlanan farklı bir kaynak dosyası ekleyerek derlenebilecek veya bu göreli yolların diğer derleme ortamlarına taşınmayan bir risk oluşturdu. Derleyici artık kod Programlayıcısının bu şekilde yazıldığını algılar ve bildirir ve etkinleştirilirse isteğe bağlı bir derleyici uyarısı C4464 yayınlar.
 
    ```Output
     warning C4464: relative include path contains '..'
@@ -843,9 +843,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Ayrıca, derleyici belirli bir tanılama sunmasa da ".." üst dizin belirticisinin, projenizin içerme dizinlerini belirtmek için kullanılması gerektiğini de öneririz.
 
-- **#pragma optimize () üst bilgi dosyasının son sonunu genişletiyor** (yalnızca etkiler `/Wall`) `/WX`
+- **#pragma optimize () üst bilgi dosyasının sonunu genişletiyor** (yalnızca `/Wall` `/WX`etkiler)
 
-   Önceki derleyicinin sürümleri, bir çeviri birimi içinde yer alan bir üst bilgi dosyası ile çıkış yapan iyileştirme bayrağı ayarlarında yapılan değişiklikleri algılamadı. Derleyici artık, kod programcısında bu şekilde yazılmış kodu algılar ve bildirir ve etkinleştiriliyorsa, soruna `#include`neden olan isteğe bağlı bir derleyici uyarısı C4426 yayınlar. Bu uyarı yalnızca, derleyici için komut satırı bağımsız değişkenleri tarafından ayarlanan iyileştirme bayraklarıyla çakışırsa değişiklikler yapılır.
+   Önceki derleyicinin sürümleri, bir çeviri birimi içinde yer alan bir üst bilgi dosyası ile çıkış yapan iyileştirme bayrağı ayarlarında yapılan değişiklikleri algılamadı. Derleyici artık, kod Programlayıcısının bu şekilde yazıldığını algılar ve bildirir ve etkinleştiriliyorsa, soruna neden olan `#include`yerinde bir isteğe bağlı derleyici uyarısı C4426 yayınlar. Bu uyarı yalnızca, derleyici için komut satırı bağımsız değişkenleri tarafından ayarlanan iyileştirme bayraklarıyla çakışırsa değişiklikler yapılır.
 
    ```Output
     warning C4426: optimization flags changed after including header, may be due to #pragma optimize()
@@ -876,9 +876,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     #include "C4426.h"
    ```
 
-- **Eşleşmeyen #pragma warning (push)** ve **#pragma warning (pop)** (yalnızca etkiler `/Wall`) `/WX`
+- **Eşleşmeyen #pragma warning (push)** ve **#pragma warning (pop)** (yalnızca `/Wall` `/WX`etkiler)
 
-   Derleyicinin önceki sürümleri, farklı bir kaynak dosyadaki `#pragma warning(push)` `#pragma warning(pop)` durum değişiklikleriyle eşleştirmekte olan durum değişikliklerinin algılanmadığını algılamadı, ancak nadiren tasarlanmıştır. Bu eski davranış, programın, programcı tarafından amaçlanan farklı bir uyarı kümesiyle derlenmesi, büyük olasılıkla sessiz hatalı çalışma zamanı davranışına neden olduğundan bir risk oluşturdu. Derleyici artık kod programcısının bu şekilde yazılmış olduğunu algılar ve bildirir ve etkinleştirilirse, isteğe bağlı bir derleyici uyarısı C5031, bu şekilde eşleşen `#pragma warning(pop)`konuma sorun verir. Bu uyarı, karşılık gelen `#pragma warning(push)`konumuna başvuran bir nota sahiptir.
+   Derleyicinin önceki sürümleri, farklı bir kaynak dosyadaki `#pragma warning(pop)` durum değişiklikleriyle eşleştirilmiş olan `#pragma warning(push)` durum değişikliklerinin algılanmadığını algılamadı, ancak nadiren amaçlanır. Bu eski davranış, programın, programcı tarafından amaçlanan farklı bir uyarı kümesiyle derlenmesi, büyük olasılıkla sessiz hatalı çalışma zamanı davranışına neden olduğundan bir risk oluşturdu. Derleyici artık, kod Programlayıcısının bu şekilde yazıldığını algılar ve bildirir ve etkinleştirilmişse, eşleşen `#pragma warning(pop)`konum üzerinde isteğe bağlı bir derleyici uyarısı C5031 yayınlar. Bu uyarı, karşılık gelen `#pragma warning(push)`konumuna başvuran bir nota sahiptir.
 
    ```Output
     warning C5031: #pragma warning(pop): likely mismatch, popping warning state pushed in different file
@@ -930,11 +930,11 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     ...
    ```
 
-   Yaygın olarak, bu şekilde yazılan kod bazen bilerek yapılır. Bu şekilde yazılan kod, `#include` sırayla yapılan değişikliklere duyarlıdır; mümkün olduğunda, kaynak kodu dosyalarının uyarı durumunu kendi kendine içeren bir şekilde yönetmesini öneririz.
+   Yaygın olarak, bu şekilde yazılan kod bazen bilerek yapılır. Bu şekilde yazılan kod `#include` sırada değişikliklere duyarlıdır; mümkün olduğunda, kaynak kodu dosyalarının uyarı durumunu kendi kendine içeren bir şekilde yönetmesini öneririz.
 
-- **Eşleşmeyen #pragma Uyarısı (gönderim)** (yalnızca etkiler `/Wall`) `/WX`
+- **Eşleşmeyen #pragma Uyarısı (push)** (yalnızca `/Wall` `/WX`etkiler)
 
-   Derleyicinin önceki sürümleri, bir çeviri biriminin sonunda eşleşmeyen `#pragma warning(push)` durum değişikliklerini algılamadı. Derleyici artık kod programcısının bu şekilde yazıldığını algılar ve bildirir ve etkinleştirilirse, eşleşmeyen `#pragma warning(push)`bir derleyici uyarı C5032. Bu uyarı yalnızca çeviri biriminde derleme hatası yoksa verilir.
+   Derleyicinin önceki sürümleri, çeviri biriminin sonundaki eşleşmeyen `#pragma warning(push)` durum değişikliklerini algılamadı. Derleyici artık, kod Programlayıcısının bu şekilde yazıldığını algılar ve bildirir ve etkinleştirilirse, eşleşmeyen `#pragma warning(push)`konumunda isteğe bağlı bir derleyici uyarısı C5032 yayınlar. Bu uyarı yalnızca çeviri biriminde derleme hatası yoksa verilir.
 
    ```Output
     warning C5032: detected #pragma warning(push) with no corresponding #pragma warning(pop)
@@ -973,9 +973,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Gelişmiş #pragma uyarı durumu izlemenin sonucu olarak ek uyarılar verilebilir**
 
-   Derleyici tarafından izlenen `#pragma warning` durum değişikliklerinin önceki sürümleri, tüm amaçlanan uyarıları vermek için yeterince iyi sonuç veriyor. Bu davranış, belirli uyarıların, programcı tarafından farklı koşullarda etkili bir şekilde gizleneceği bir risk oluşturdu. Derleyici artık daha fazla `#pragma warning` robustly durumu izler; özellikle şablonların içindeki `#pragma warning` durum değişiklikleriyle ilgilidir ve isteğe bağlı olarak, programcı 'nin istenmeyenkullanımlarınıbulmasınısağlamayayönelikyeniuyarılarC5031veC5032`#pragma warning(push)` ve .`#pragma warning(pop)`
+   Derleyicinin izlenen `#pragma warning` durum değişikliklerinin önceki sürümleri, tüm amaçlanan uyarıları vermek için yeterince iyi bir şekilde sorunsuz bir şekilde yapılır. Bu davranış, belirli uyarıların, programcı tarafından farklı koşullarda etkili bir şekilde gizleneceği bir risk oluşturdu. Derleyici artık `#pragma warning` durumu daha robustly izler. Bu, özellikle de şablonlar içindeki `#pragma warning` durum değişiklikleriyle ilgilidir ve isteğe bağlı olarak, programcının `#pragma warning(push)` ve `#pragma warning(pop)`istenmeyen kullanımlarını bulmasını sağlayan yeni uyarılar C5031 ve C5032 ' i yayınlar.
 
-   Geliştirilmiş `#pragma warning` durum değişikliği izlemenin bir sonucu olarak, daha önce yanlış bir şekilde gizlenen uyarılar ya da daha önce yanlış tanılanmış sorunlarla ilgili uyarılar artık verilebilir.
+   Gelişmiş `#pragma warning` durum değişikliği izlemenin bir sonucu olarak, daha önce hatalı olarak gizlenen uyarılar ya da daha önce yanlış tanılanabilir sorunlar ile ilgili uyarılar artık verilebilir.
 
 - **Erişilemeyen kodun geliştirilmiş kimliği**
 
@@ -1104,7 +1104,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
    ```
 
-- `volatile`**üye değişkenleri örtük olarak tanımlanmış oluşturucuları ve atama işleçlerini önler** Derleyicinin önceki sürümlerinde, varsayılan kopyalama/taşıma oluşturucuları ve varsayılan kopyalama/taşıma atama işleçleri otomatik olarak oluşturulan **geçici** üye değişkenlerine sahip bir sınıf izin verilir. Bu eski davranış yanlıştı ve C++ standart ile uyumlu değil. Derleyici artık, bu işleçlerin varsayılan uygulamalarının otomatik olarak oluşturulmasını önleyen, önemsiz olmayan oluşturma ve atama işleçleri olan geçici üye değişkenleri olan bir sınıfı kabul eder. Böyle bir sınıf bir birleşimin üyesi (veya bir sınıfın içindeki anonim bir birleşim) olduğunda, birleşimin kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri (veya unontanýmlý birleşimini içeren sınıf) örtük olarak silindi olarak tanımlanır. Açıkça tanımlanmaksızın birleşim (veya anonim birleşim içeren sınıf) oluşturmaya veya kopyalamaya çalışılması bir hatadır ve derleyici sonuç olarak derleyici hatası C2280 yayınlar.
+- `volatile` **üye değişkenleri örtük olarak tanımlanmış oluşturucuları ve atama işleçlerini önler** derleyicinin önceki sürümlerinin varsayılan kopyalama/taşıma oluşturucuları ve varsayılan kopyalama/taşıma atama işleçleri otomatik olarak oluşturulmasını sağlayan **geçici** üye değişkenlerine sahip bir sınıfa izin verilir. Bu eski davranış yanlıştı ve C++ standart ile uyumlu değil. Derleyici artık, bu işleçlerin varsayılan uygulamalarının otomatik olarak oluşturulmasını önleyen, önemsiz olmayan oluşturma ve atama işleçleri olan geçici üye değişkenleri olan bir sınıfı kabul eder. Böyle bir sınıf bir birleşimin üyesi (veya bir sınıfın içindeki anonim bir birleşim) olduğunda, birleşimin kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri (veya unontanýmlý birleşimini içeren sınıf) örtük olarak silindi olarak tanımlanır. Açıkça tanımlanmaksızın birleşim (veya anonim birleşim içeren sınıf) oluşturmaya veya kopyalamaya çalışılması bir hatadır ve derleyici sonuç olarak derleyici hatası C2280 yayınlar.
 
    ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -1188,9 +1188,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     void A::func() {}  // removed const
    ```
 
-- **WinRT kodunda numaralandırmanın iletme bildirimine izin verilmiyor** (yalnızca `/ZW` etkiler)
+- **WinRT kodunda enum iletme bildirimine izin verilmiyor** (yalnızca `/ZW` etkiler)
 
-   Windows çalışma zamanı (WinRT) için derlenen kod, C++ `/clr` derleme türlerinin, bir derleyici anahtarı kullanılarak .NET Framework için derlendiğine benzer şekilde bildirilmesine izin vermez. Bu davranış, bir numaralandırma boyutunun her zaman bilinmesini ve WinRT türü sistemine doğru şekilde yansıtılmasını sağlar. Derleyici bu şekilde yazılmış kodu reddeder ve derleyici hatası C3197 ile birlikte derleyici hatası C2599 yayınlar.
+   Windows Çalışma Zamanı (WinRT) için derlenen kod, `/clr` derleyici anahtarı kullanılarak .NET Framework için yönetilen C++ kodun derlendiğine benzer şekilde, numaralandırma türlerinin ileri olarak bildirilmesine izin vermez. Bu davranış, bir numaralandırma boyutunun her zaman bilinmesini ve WinRT türü sistemine doğru şekilde yansıtılmasını sağlar. Derleyici bu şekilde yazılmış kodu reddeder ve derleyici hatası C3197 ile birlikte derleyici hatası C2599 yayınlar.
 
    ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -1245,7 +1245,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
    ```
 
-- **Aşırı yüklenmiş üye olmayan New işleci ve delete işleci satır içi olarak bildirilemez** (Düzey 1 (`/W1`)-varsayılan)
+- **Aşırı yüklenmiş üye olmayan New işleci ve işleç silme satır içi olarak bildirilemez** (düzey 1 (`/W1`)-varsayılan)
 
    Önceki derleyicinin sürümleri, üye olmayan **operator new** ve **operator delete** işlevleri satır içi olarak bildirildiğinde bir uyarı vermez. Bu şekilde yazılan kod hatalı biçimlendirilmiş (Tanılama gerekmez) ve eşleşmeyen yeni ve silme işleçlerinden kaynaklanan bellek sorunlarına neden olabilir (özellikle de boyutu kaldırma ile birlikte kullanıldığında), tanılanması zor olabilir. Derleyici artık bu şekilde yazılmış kodu belirlemesine yardımcı olmak için derleyici uyarısı C4595 ' i yayınlar.
 
@@ -1275,7 +1275,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 ### <a name="VS_Update3"></a>Visual Studio 2015 güncelleştirme 3 ' te uyumluluk geliştirmeleri
 
-- **std:: is_convertable artık kendi kendine atamayı algılar**  (Standart Kitaplık) Nitelik `std::is_convertable` türünün önceki sürümleri, kopya Oluşturucusu silindiği veya özel bir sınıf türünün kendi kendine atamasını doğru bir şekilde algılamadı. Şimdi, `std::is_convertable<>::value` silinmiş veya özel kopya Oluşturucusu olan bir sınıf türüne uygulandığında doğru olarak **false** olarak ayarlanmıştır.
+- **std:: is_convertable artık otomatik atama** (standart kitaplık) `std::is_convertable` türünün önceki sürümlerini algılar-nitelik, kopya Oluşturucusu silindiğinde veya özel bir sınıf türünün kendi kendine atamasını doğru bir şekilde algılamamıştır. Şimdi, silinen veya özel kopya Oluşturucusu olan bir sınıf türüne uygulandığında `std::is_convertable<>::value` doğru şekilde **false** olarak ayarlanmıştır.
 
    Bu değişiklik ile ilişkili bir derleyici tanılaması yok.
 
@@ -1299,7 +1299,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     static_assert(std::is_convertible<X1&, X1>::value, "BOOM");static_assert(std::is_convertible<X2&, X2>::value, "BOOM");
    ```
 
-   Visual C++'ın önceki sürümlerinde, bu örneğin en altındaki statik onaylar, yanlış şekilde **doğru**olarak ayarlandığı `std::is_convertable<>::value` için geçti. Artık yanlış olarak ayarlanmıştır, statik onayların başarısız olmasına neden olur. `std::is_convertable<>::value`
+   Visual C++'ın önceki sürümlerinde, `std::is_convertable<>::value` yanlış şekilde **doğru**şekilde ayarlandığından bu örneğin altındaki statik onaylar geçer. Şimdi, `std::is_convertable<>::value` doğru olarak **false**olarak ayarlandığından statik onayların başarısız olmasına neden olur.
 
 - **Varsayılan olarak ayarlanmış veya silinmiş önemsiz kopyalama ve taşıma oluşturucuları erişim belirticilerine göre**
 
@@ -1347,7 +1347,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
    ```
 
-- **ÖZNITELIKLI atl kod desteğinin kullanımdan kaldırılması** (Düzey 1 (`/W1`)-varsayılan)
+- **ÖZNITELIKLI atl kod desteğinin kullanımdan kaldırılması** (düzey 1 (`/W1`)-varsayılan)
 
    Derleyicinin önceki sürümleri, öznitelikli ATL kodunu destekliyordu. [Visual C++ 2008 ' de başlayan](#whats-new-for-c-in-visual-studio-2008)öznitelikli atl kodu desteğini kaldırmanın sonraki AŞAMASı olarak, öznitelikli atl kodu kaldırılmıştır. Derleyici artık bu tür kullanım dışı kodu belirlemesine yardımcı olmak için derleyici uyarısı C4467 ' i yayınlar.
 
@@ -1355,7 +1355,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     warning C4467: Usage of ATL attributes is deprecated
    ```
 
-   Destek derleyicisinden kaldırılana kadar öznitelikli atl kodu kullanmaya devam etmek istiyorsanız, `/Wv:18` veya `/wd4467` komut satırı bağımsız değişkenlerini derleyiciye geçirerek veya kaynak kodunuza ekleyerek `#pragma warning(disable:4467)` bu uyarıyı devre dışı bırakabilirsiniz.
+   Destek derleyicisinden kaldırılıncaya kadar öznitelikli ATL kodu kullanmaya devam etmek istiyorsanız, `/Wv:18` veya `/wd4467` komut satırı bağımsız değişkenlerini derleyiciye geçirerek veya kaynak kodunuza `#pragma warning(disable:4467)` ekleyerek bu uyarıyı devre dışı bırakabilirsiniz.
 
    Örnek 1 (önceki)
 
@@ -1391,7 +1391,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
    ```
 
-   İlk olarak, *. IDL dosyasını oluşturun; vc140. IDL tarafından oluşturulan dosya, arabirimleri ve ek açıklamaları içeren \*bir. IDL dosyası elde etmek için kullanılabilir.
+   İlk olarak, *. IDL dosyasını oluşturun; vc140. IDL tarafından oluşturulan dosya, arabirimleri ve ek açıklamaları içeren bir \*. IDL dosyası almak için kullanılabilir.
 
    Ardından, C++ arabirim tanımlarının oluşturulduğundan emin olmak için, derlemenize BIR MIDL adımı ekleyin.
 
@@ -1444,9 +1444,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
    ```
 
-- **Önceden derlenmiş üstbilgi (pch) dosyaları ve eşleşmeyen #include yönergeleri** (yalnızca etkiler `/Wall`) `/WX`
+- **Önceden derlenmiş üstbilgi (pch) dosyaları ve eşleşmeyen #include yönergeleri** (yalnızca `/Wall` `/WX`etkiler)
 
-   Derleyicinin önceki sürümleri, önceden derlenmiş üst `#include` bilgi (pch) dosyaları `-Yc` kullanılırken `-Yu` ve derlemeler arasında kaynak dosyalarda eşleşmeyen yönergeleri kabul etti. Bu şekilde yazılan kod artık derleyici tarafından kabul edilmez. Derleyici artık, PCH dosyalarını kullanırken eşleşmeyen `#include` yönergeleri tanımlamanızı sağlamak için derleyici uyarısı CC4598 ' i yayınlar.
+   Derleyicinin önceki sürümleri, önceden derlenmiş üst bilgi (PCH) dosyaları kullanılırken `-Yc` ve `-Yu` derlemeler arasındaki kaynak dosyalardaki yönergeleri `#include` eşleşmeyen bir şekilde kabul etti. Bu şekilde yazılan kod artık derleyici tarafından kabul edilmez. Derleyici artık, PCH dosyalarını kullanırken eşleşmeyen `#include` yönergelerinin tanımlanmasına yardımcı olması için derleyici uyarısı CC4598 ' i yayınlar.
 
    ```Output
     warning C4598: 'b.h': included header file specified for Ycc.h at position 2 does not match Yuc.h at that position
@@ -1488,9 +1488,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     #include "c.h"
    ```
 
-- **Ön derlenmiş üstbilgi (pch) dosyaları ve eşleşmeyen içerme dizinleri** (yalnızca etkiler `/Wall`) `/WX`
+- **Önceden derlenmiş üst bilgi (pch) dosyaları ve uyuşmayan içerme dizinleri** (yalnızca `/Wall` `/WX`etkiler)
 
-   Derleyicinin önceki sürümleri kabul edildi, önceden derlenmiş üst bilgi`-I`(pch) dosyalarını kullanırken derlemeler arasında `-Yc` ve `-Yu` derlemelerde dizin () komut satırı bağımsız değişkenleri içerir. Bu şekilde yazılan kod artık derleyici tarafından kabul edilmez.   Derleyici artık, PCH dosyalarını kullanırken eşleşmeyen içerme dizini (`-I`) komut satırı bağımsız değişkenlerini tanımlamanızı sağlamak için derleyici uyarısı CC4599 ' i yayınlar.
+   Derleyicinin önceki sürümleri, önceden derlenmiş üst bilgi (PCH) dosyalarını kullanırken `-Yc` ve `-Yu` derlemeleri arasında derleyiciye dizin (`-I`) komut satırı bağımsız değişkenleri içeriyor. Bu şekilde yazılan kod artık derleyici tarafından kabul edilmez.   Derleyici artık, PCH dosyalarını kullanırken eşleşmeyen içerme dizini (`-I`) komut satırı bağımsız değişkenlerini tanımlamanızı sağlamak için derleyici uyarısı CC4599 ' i yayınlar.
 
    ```Output
     warning C4599: '-I..' : specified for Ycc.h at position 1 does not match Yuc.h at that position
@@ -1527,14 +1527,14 @@ MSVC, bu ISO C++ 11 dil özelliklerini destekler:
 - Diğer ad şablonları.
 - Silinen İşlevler.
 - Statik olmayan veri üyesi başlatıcıları (NSDMIs).
-- Varsayılan işlevler. [https://doi.org/10.13012/J8PN93H8](\*)
+- Varsayılan işlevler. \*
 - Bu ISO C99 dil özelliklerini destekler:
 - _Bool
 - Bileşik değişmez değerler.
 - Belirlenen başlatıcılar.
 - Bildirimleri kodla karıştırma.
-- Yeni derleyici seçeneği `/Zc:strictStrings`kullanılarak, değiştirilebilir değerlere dize sabiti dönüştürmeye izin verilmez. C++ 98 ' de, dize değişmez `char*` değerlerinin (ve geniş dize `wchar_t*`değişmez değerleri) dönüşümü kullanım dışıdır. C++ 11 ' de, dönüştürme tamamen kaldırılmıştır. Derleyici, standardı kesin olarak uyumlu hale gelse de, bunun yerine dönüştürmeyi denetleyebilmeniz için `/Zc:strictStrings` seçeneğini sağlar. Varsayılan olarak, seçeneği kapalıdır. Bu seçeneği hata ayıklama modunda kullandığınızda STL 'in derlenmeyeceğini unutmayın.
-- rvalue/lvalue başvuru yayınları. Rvalue başvuruları ile C++ 11, lvalues ve rvalues değerlerini açıkça ayırt edebilir. Daha önce, derleyici bunu belirli atama senaryolarında sağlamadı. Derleyicinin C++ dil çalışma kağıdına uyumlu `/Zc:rvalueCast`hale getirmek için yeni bir derleyici seçeneği eklenmiştir (bkz. Bölüm 5,4, [expr. Cast]/1). Bu seçenek belirtilmediğinde varsayılan davranış, Visual Studio 2012 ile aynıdır.
+- Yeni derleyici seçeneği `/Zc:strictStrings`kullanılarak değiştirilebilir değerlere dize sabiti dönüştürmeye izin verilmez. C++ 98 ' de, dize sabitlerden `char*` dönüştürme (ve geniş dize sabit değerleri `wchar_t*`) kullanım dışıdır. C++ 11 ' de, dönüştürme tamamen kaldırılmıştır. Derleyici tamamen standart olarak uyumlu hale gelse de, dönüştürmeyi denetleyebilmeniz için `/Zc:strictStrings` seçeneğini sağlar. Varsayılan olarak, seçeneği kapalıdır. Bu seçeneği hata ayıklama modunda kullandığınızda STL 'in derlenmeyeceğini unutmayın.
+- rvalue/lvalue başvuru yayınları. Rvalue başvuruları ile C++ 11, lvalues ve rvalues değerlerini açıkça ayırt edebilir. Daha önce, derleyici bunu belirli atama senaryolarında sağlamadı. Derleyicinin C++ dil çalışma kağıdına uyumlu hale getirmek için `/Zc:rvalueCast`yeni bir derleyici seçeneği eklenmiştir (bkz. Bölüm 5,4, [expr. Cast]/1). Bu seçenek belirtilmediğinde varsayılan davranış, Visual Studio 2012 ile aynıdır.
 
 > [!NOTE]
 > Varsayılan işlevler için, üye tabanlı taşıma oluşturucuları ve taşıma atama işleçleri istemek için = Default kullanılması desteklenmez.
@@ -1550,12 +1550,12 @@ Tüm kapsayıcılar artık C++ 11 ayrıntılı öğe gereksinimlerini destekleme
 Bu C++ 14 özellikleri için destek:
 
 - "Saydam operatör" daha az < >, daha fazla < > ve < >, < > ve benzeri.
-- make_unique<T>(args...) ve make_unique < T [] > (n)
+- make_unique\<T > (args...) ve make_unique < T [] > (n)
 - cbegin ()/cend (), rbegin ()/rend (), ve crbegin ()/crend () üye olmayan işlevleri.
-- \<Atomik > çok sayıda performans geliştirmesi aldı.
-- \<type_traits >, büyük sabitleştirme ve kod düzeltmeleri aldı.
+- \<atomik > çok sayıda performans geliştirmesi aldı.
+- \<type_traits > büyük sabitleştirme ve kod düzeltmeleri aldı.
 
-### <a name="breaking-changes"></a>Yeni Değişiklikler
+### <a name="breaking-changes"></a>Hataya Neden Olan Değişiklikler
 
 ISO C/C++ standartları için geliştirilmiş bu destek, c++ 11 ' e uymak ve Visual Studio 2013 Visual C++ üzerinde doğru bir şekilde derleme yapmak için mevcut kodda değişiklik yapılmasını gerektirebilir.
 
@@ -1569,8 +1569,8 @@ ISO C/C++ standartları için geliştirilmiş bu destek, c++ 11 ' e uymak ve Vis
 
 - Otomatik Vektörleştirici şimdi kodunuzun daha hızlı çalışmasını sağlamak C++ için daha fazla desen tanır ve iyileştirir.
 - ARM platformu ve Atom mikro mimari kod kalitesi geliştirmeleri.
-- __vectorcall çağırma kuralı eklendi. Vektör kayıtlarını kullanmak için __vectorcall çağırma kuralını kullanarak vektör türü bağımsız değişkenlerini geçirin.
-- Yeni bağlayıcı seçenekleri. ( `/Gw` Derleyici) ve `/Gy` (Assembler) anahtarları, geçiş ikililerini oluşturmak için bağlayıcı iyileştirmelerini etkinleştirir.
+- __vectorcall çağırma kuralı eklendi. Vektör türlerini kullanmak için __vectorcall çağırma kuralını kullanarak vektör türü bağımsız değişkenlerini geçirin.
+- Yeni bağlayıcı seçenekleri. `/Gw` (derleyici) ve `/Gy` (Assembler) anahtarları, anahtar ikililerini oluşturmak için bağlayıcı iyileştirmelerini etkinleştirir.
 - C++CPU ve GPU arasında veri kopyalamayı azaltmak veya ortadan kaldırmak için AMP paylaşılan bellek desteği.
 
 ### <a name="profile-guided-optimization-pgo-enhancements"></a>Profil temelli Iyileştirme (PGO) geliştirmeleri
@@ -1582,7 +1582,7 @@ ISO C/C++ standartları için geliştirilmiş bu destek, c++ 11 ' e uymak ve Vis
 
 - **Değer yapılarında kutulanmış türler Için destek.**
 
-   Artık null olabilecek alanları (örneğin, `IBox<int>^` **int**yerine) kullanarak değer türlerini tanımlayabilirsiniz. Bu, alanların bir değeri olabileceği ya da **nullptr**'ye eşit olabileceği anlamına gelir.
+   Artık null olabilecek alanları kullanarak değer türlerini tanımlayabilirsiniz — Örneğin, **int**yerine `IBox<int>^`. Bu, alanların bir değeri olabileceği ya da **nullptr**'ye eşit olabileceği anlamına gelir.
 
 - **Daha zengin özel durum bilgileri.**
 
@@ -1640,7 +1640,7 @@ ISO C/C++ standartları için geliştirilmiş bu destek, c++ 11 ' e uymak ve Vis
 
 **Tüm başvuruları bul** artık, metin eşleşmeleri listesini görüntülendikten sonra arka planda başvuruları otomatik olarak çözümler ve filtreler.
 
-**Bağlam tabanlı üye listesi filtrelemesi.** Erişilemeyen Üyeler, IntelliSense üye listelerinden filtrelenmez. Örneğin, türü uygulayan kodu değiştirmediğiniz müddetçe, özel üyeler üye listesinde gösterilmez. Üye listesi açıkken, tek bir filtreleme düzeyini kaldırmak için **CTRL**+**J** tuşlarına basabilirsiniz (yalnızca geçerli üye listesi penceresi için geçerlidir). Metin filtrelemeyi kaldırmak ve her üyeyi göstermek için **CTRL**+**J** 'ye tekrar basabilirsiniz.
+**Bağlam tabanlı üye listesi filtrelemesi.** Erişilemeyen Üyeler, IntelliSense üye listelerinden filtrelenmez. Örneğin, türü uygulayan kodu değiştirmediğiniz müddetçe, özel üyeler üye listesinde gösterilmez. Üye listesi açıkken, tek bir filtreleme düzeyini kaldırmak için **Ctrl**+**J** tuşlarına basabilirsiniz (yalnızca geçerli üye listesi penceresi için geçerlidir). Metin filtrelemeyi kaldırmak ve her üyeyi göstermek için **Ctrl**+**J** tuşlarına tekrar basabilirsiniz.
 
 **Parametre yardımı kaydırma.** Parametre-Yardım araç ipucunda gösterilen işlev imzası, yalnızca rastgele bir imzayı göstermek ve geçerli bağlam temelinde güncelleştirilemeymek yerine gerçekten yazdığınız parametre sayısına göre değişir. Parametre yardımı, iç içe yerleştirilmiş işlevlerde görüntülendiğinde de doğru şekilde çalışır.
 
@@ -1662,8 +1662,8 @@ ISO C/C++ standartları için geliştirilmiş bu destek, c++ 11 ' e uymak ve Vis
 
 #### <a name="standard-template-library"></a>Standart Şablon Kitaplığı
 
-- Yeni STL üstbilgileri için destek: \<atomik >, \<No >, \<condition_variable >, \<dosya sistemi > \<, gelecekteki > \<, mutex > \<, oran > ve \< iş parçacığı >.
-- Bellek kaynağı kullanımını iyileştirmek için kapsayıcılar artık küçüktür. Örneğin, varsayılan ayarlarla x86 yayın modunda, `std::vector` Visual Studio 2010 ' de 16 bayttan Visual Studio 2012 ' de 12 bayt kadar küçültülebilir ve `std::map` Visual Studio 2010 ' de 16 bayttan Visual Studio 2012 ' e kadar küçültülebilir.
+- Yeni STL üst bilgileri için destek: \<atomik >, \<bir >, \<condition_variable >, \<FileSystem >, \<> \<, > mutex \<, > Ratio \<ve > iş parçacığı.
+- Bellek kaynağı kullanımını iyileştirmek için kapsayıcılar artık küçüktür. Örneğin, varsayılan ayarlarla x86 yayın modunda `std::vector`, Visual Studio 2010 ' de 16 bayttan Visual Studio 2012 ' de 16 bayt kadar küçültülebilir ve `std::map` Visual Studio 2010 ' de 16 bayttan, Visual Studio 2012 ' te 8 bayt ile küçültülebilir.
 - C++ 11 standardı için izin verilen ancak gerekli olmadığı için, SCARY yineleyiciler uygulandı.
 
 #### <a name="other-c11-enhancements"></a>Diğer C++ 11 geliştirmeleri
@@ -1690,7 +1690,7 @@ ISO C/C++ standartları için geliştirilmiş bu destek, c++ 11 ' e uymak ve Vis
 ### <a name="compiler-and-linker"></a>Derleyici ve bağlayıcı
 
 - **Otomatik Vektörleştirici**. Derleyici, kodunuzda döngüleri analiz eder ve mümkün olduğunda, tüm modern işlemcilerde bulunan vektör kayıtlarını ve talimatlarını kullanan yönergeleri yayar. Bu, döngülerin daha hızlı çalışmasını sağlar. (İşlemci yönergeleri, Streaming SIMD Extensions için SSE olarak bilinir). Otomatik olarak uygulandığından, bu iyileştirmeyi etkinleştirmeniz veya istemeniz gerekmez.
-- **Otomatik paralelleştirme**. Derleyici, kodunuzda döngüleri çözümleyebilir ve hesaplamaları birden çok çekirdeğe veya işlemciye yayan yönergeler yayabilir. Bu, döngülerin daha hızlı çalışmasını sağlayabilir. Varsayılan olarak etkinleştirilmediğinden Bu iyileştirmeyi istemeniz gerekir. Birçok durumda, paralel olarak istediğiniz döngülere hemen `#pragma loop(hint_parallel(N))` önce kodunuza bir eklemek yardımcı olur.
+- **Otomatik paralelleştirme**. Derleyici, kodunuzda döngüleri çözümleyebilir ve hesaplamaları birden çok çekirdeğe veya işlemciye yayan yönergeler yayabilir. Bu, döngülerin daha hızlı çalışmasını sağlayabilir. Varsayılan olarak etkinleştirilmediğinden Bu iyileştirmeyi istemeniz gerekir. Çoğu durumda, paralel olarak istediğiniz döngülere hemen önce kodunuzda bir `#pragma loop(hint_parallel(N))` dahil etmenize yardımcı olur.
 - Otomatik Vektörleştirici ve otomatik paralelleştirme birlikte çalışarak, hesaplamaların birden çok çekirdeğe yayılmasını ve her bir çekirdekte kodun vektör kayıtlarını kullanmasını sağlayabilirsiniz.
 
 ### <a name="new-in-visual-studio-2012-update-1"></a>Visual Studio 2012 güncelleştirme 1 ' de yeni
@@ -1714,14 +1714,14 @@ C++AMP, genellikle ayrı bir grafik C++ kartında GPU olarak bulunan veri parale
 Visual Studio 2010 ' de, C++ paralel Desenler kitaplığı gibi güçlü paralelleştirme kitaplıkları, gelişmiş veri akışı işlem hatlarını ifade ederek eşzamanlılık avantajlarından yararlanma özellikleriyle birlikte sunulmuştur. Visual Studio 2012 ' de, bu kitaplıklar daha iyi performans, daha fazla denetim ve geliştiricilerin en çok ihtiyaç duyduğu paralel desenler için daha zengin destek sağlamak üzere genişletilmiştir. Teklifin genişliği artık şunları içerir:
 
 - Zaman uyumsuzluğu ve devamlılıkları destekleyen zengin görev tabanlı bir programlama modeli.
-- Çatalla birleşen paralellik (parallel_for, parallel_for ile benzeşim, parallel_for_each, parallel_sort, parallel_reduce, parallel_transform) destekleyen paralel algoritmalar.
-- Priority_queue, Queue, vector ve Map gibi std veri yapılarının iş parçacığı güvenli sürümlerini sağlayan eşzamanlılık güvenli kapsayıcılar.
+- Çatalla birleşen paralellik (parallel_for, benzeşim parallel_for parallel_for_each, parallel_sort, parallel_reduce, parallel_transform) destekleyen paralel algoritmalar.
+- Priority_queue, kuyruk, vektör ve eşleme gibi std veri yapılarının iş parçacığı güvenli sürümlerini sağlayan eşzamanlılık güvenli kapsayıcılar.
 - Geliştiricilerin, doğal olarak eşzamanlı birimlerde bulunan veri akışı işlem hatlarını hızlı bir şekilde ifade etmek için kullanabileceği zaman uyumsuz aracılar Kitaplığı.
 - Bu listedeki desenlerin düzgün bir şekilde oluşumunu kolaylaştırmak için özelleştirilebilir bir Zamanlayıcı ve Kaynak Yöneticisi.
 
 ##### <a name="general-parallel-debugging-enhancements"></a>Genel paralel hata ayıklama geliştirmeleri
 
-**Paralel görevler** penceresi ve **Paralel Yığınlar** penceresine ek olarak Visual Studio 2012, bir ifadenin değerlerini tüm iş parçacıkları ve süreçler genelinde incelemenize ve sıralamayı gerçekleştirmenize olanak tanıyan yeni bir **paralel izleme** penceresi sunar. Sonuç üzerine filtreleniyor. Ayrıca, pencereyi genişletmek için kendi görselleştiricilerini de kullanabilir ve tüm araç pencereleri genelinde yeni çok işlem desteğinden yararlanabilirsiniz.
+**Paralel görevler** penceresi ve **Paralel Yığınlar** penceresine ek olarak Visual Studio 2012, bir ifadenin değerlerini tüm iş parçacıkları ve süreçler genelinde incelemenize ve sonuç üzerine sıralama ve filtreleme gerçekleştirmek Için yeni bir **paralel izleme** penceresi sunar. Ayrıca, pencereyi genişletmek için kendi görselleştiricilerini de kullanabilir ve tüm araç pencereleri genelinde yeni çok işlem desteğinden yararlanabilirsiniz.
 
 ### <a name="ide"></a>IDE
 
@@ -1737,11 +1737,11 @@ Visual Studio 2010 ' de, C++ paralel Desenler kitaplığı gibi güçlü paralel
 
 **C++Kod yapıları.** Çatı kodu, anahtar, if-else, for döngüsü ve diğer temel kod yapıları için liste üyeleri açılan listesinde kullanılabilir. Koda eklemek için listeden bir kod parçası seçin ve gerekli mantığı girin. Ayrıca, düzenleyicide kullanmak üzere kendi özel kod parçalarını da oluşturabilirsiniz.
 
-**Üyelerin geliştirmelerini listeleyin.** Kod Düzenleyicisi 'ne kod yazarken, **üyeleri Listele** açılır listesi otomatik olarak görünür. Sonuçlar filtrelenmiştir, böylece siz yazarken yalnızca ilgili üyelerin görüntülenmesini sağlayabilirsiniz. Üye listesi tarafından kullanılan filtreleme mantığının türünü, >  **metin düzenleyici** > **C/C++** **Gelişmiş**altındaki **Seçenekler** iletişim kutusunda kontrol edebilirsiniz.
+**Üyelerin geliştirmelerini listeleyin.** Kod Düzenleyicisi 'ne kod yazarken, **üyeleri Listele** açılır listesi otomatik olarak görünür. Sonuçlar filtrelenmiştir, böylece siz yazarken yalnızca ilgili üyelerin görüntülenmesini sağlayabilirsiniz. Üye listesi tarafından kullanılan filtreleme mantığı türünü denetleyebilir — **metin Düzenleyicisi** altındaki **Seçenekler** iletişim kutusunda, **C++ C/**  > **Gelişmiş** > .
 
 **Anlam renklendirme.** Türler, numaralandırmalar, makrolar ve diğer C++ belirteçler artık varsayılan olarak renklendirmektedir.
 
-**Başvuru vurgulama.** Bir sembol seçilmesi artık geçerli dosyadaki sembolün tüm örneklerini vurgular. Vurgulanan başvurular arasında gezinmek için **CTRL**+ **+ Shift**+**yukarı ok** veya **CTRL**+**SHIFT**+**aşağı ok** tuşlarına basın. Bu özelliği, **Seçenekler** iletişim kutusunda, **metin düzenleyici** >  > **C++C/** **Gelişmiş**altında devre dışı bırakabilirsiniz.
+**Başvuru vurgulama.** Bir sembol seçilmesi artık geçerli dosyadaki sembolün tüm örneklerini vurgular. Vurgulanan başvurular arasında ilerlemek için **ctrl**+**SHIFT**+**yukarı ok** veya **CTRL**+**SHIFT**+**aşağı ok** tuşlarına basın. Bu özelliği, **Seçenekler** iletişim kutusunda, **metin Düzenleyicisi** **C++ > ** Gelişmiş ' i > **Gelişmiş**' in altında bırakabilirsiniz.
 
 ### <a name="application-lifecycle-management-tools"></a>Uygulama yaşam döngüsü yönetimi araçları
 
@@ -1759,25 +1759,25 @@ Diğer kod analizi geliştirmeleri aşağıda verilmiştir:
 
 #### <a name="updated-unit-test-framework"></a>Güncelleştirilmiş birim test çerçevesi
 
-Birim testlerini yazmak C++ C++ için Visual Studio 'da yeni birim testi çerçevesini kullanın. Yeni proje iletişim kutusundaki görsel C++ C++ C++ kategori altında bulunan birim testi proje şablonunu bularak varolan çözümünüze yeni bir birim test projesi ekleyin. UnitTest1. cpp dosyasındaki oluşturulan TEST_METHOD Code saplamasında birim testlerinizi yazmaya başlayın. Test kodu yazıldığında Çözümü derleyin. Testleri çalıştırmak istediğinizde,**diğer Windows** > **birim testi Gezginini** **görüntüle** > ' yi seçerek bir **birim testi gezgin** penceresi açın ve ardından istediğiniz test çalışmasının kısayol menüsünde Çalıştır ' ı seçin.  **seçili test**. Test çalıştırması bittikten sonra, test sonuçlarını ve ek yığın izleme bilgilerini aynı pencerede görüntüleyebilirsiniz.
+Birim testlerini yazmak C++ C++ için Visual Studio 'da yeni birim testi çerçevesini kullanın. Yeni proje iletişim kutusundaki görsel C++ C++ C++ kategori altında bulunan birim testi proje şablonunu bularak varolan çözümünüze yeni bir birim test projesi ekleyin. UnitTest1. cpp dosyasındaki oluşturulan TEST_METHOD kodu saplamasında birim testlerinizi yazmaya başlayın. Test kodu yazıldığında Çözümü derleyin. Testleri çalıştırmak istediğinizde, **diğer Windows** > **birim test Gezgini** > **görüntüle** ' yi seçerek bir **birim testi gezgin** penceresi açın ve ardından Istediğiniz test çalışmasının kısayol menüsünde, **Seçili Testi Çalıştır**' ı seçin. Test çalıştırması bittikten sonra, test sonuçlarını ve ek yığın izleme bilgilerini aynı pencerede görüntüleyebilirsiniz.
 
 #### <a name="architecture-dependency-graphs"></a>Mimari bağımlılık grafikleri
 
-Kodunuzu daha iyi anlamak için artık ikili, sınıf, ad alanı ve ekleme dosyaları için bir çözüme bağımlılık grafikleri oluşturabilirsiniz. Menü çubuğunda, **mimari** > **bağımlılık grafiği oluştur**' u ve ardından bir bağımlılık grafiği oluşturmak için **çözüm** ya da **içerme dosyası için bir dosya** seçin. Grafik oluşturma işlemi tamamlandığında, her bir düğümü genişleterek, düğümler arasında hareket ederek bağımlılık ilişkilerini öğrenerek ve düğüm için kısayol menüsünde **Içeriği görüntüle** ' yi seçerek kaynak koda göz atarak bunu keşfedebilirsiniz. İçerme dosyaları için bir bağımlılık grafiği oluşturmak üzere, \*. cpp kaynak kodu dosyası veya \*. h üstbilgi dosyası için kısayol menüsünde, **ekleme dosyalarının grafiğini oluştur**' u seçin.
+Kodunuzu daha iyi anlamak için artık ikili, sınıf, ad alanı ve ekleme dosyaları için bir çözüme bağımlılık grafikleri oluşturabilirsiniz. Menü çubuğunda, **mimari** seçin > **bağımlılık grafiği oluştur**' u ve ardından bir bağımlılık grafiği oluşturmak Için **çözüm** veya **içerme dosyası için** Grafik oluşturma işlemi tamamlandığında, her bir düğümü genişleterek, düğümler arasında hareket ederek bağımlılık ilişkilerini öğrenerek ve düğüm için kısayol menüsünde **Içeriği görüntüle** ' yi seçerek kaynak koda göz atarak bunu keşfedebilirsiniz. İçerme dosyaları için bir bağımlılık grafiği oluşturmak üzere bir \*. cpp kaynak kodu dosyası veya \*. h üstbilgi dosyası için kısayol menüsünde, **ekleme dosyalarının grafiğini oluştur**' u seçin.
 
 #### <a name="architecture-explorer"></a>Mimari Gezgini
 
-**Mimari Gezginini**kullanarak C++ çözümünüzdeki, projelerinizde veya dosyalarınızda varlıkları keşfedebilirsiniz. Menü çubuğunda **mimari** > **Windows** > **Mimari Gezgini**' ni seçin. İlgilendiğiniz bir düğümü seçebilirsiniz, örneğin, **sınıf görünümü**. Bu durumda, araç penceresinin sağ tarafı bir ad alanı listesi ile genişletilir. Bir ad alanı seçerseniz, yeni bir sütun bu ad alanındaki sınıfların, yapıların ve Numaralandırmaların bir listesini gösterir. Bu varlıkları keşfetmeye devam edebilir veya başka bir sorgu başlatmak için en soldaki sütuna geri dönebilirsiniz. Bkz. **Mimari Gezgini Ile kod bulma**.
+**Mimari Gezginini**kullanarak C++ çözümünüzdeki, projelerinizde veya dosyalarınızda varlıkları keşfedebilirsiniz. Menü çubuğunda, **mimari** > **Windows** > **Mimari Gezgini**' ni seçin. İlgilendiğiniz bir düğümü seçebilirsiniz, örneğin, **sınıf görünümü**. Bu durumda, araç penceresinin sağ tarafı bir ad alanı listesi ile genişletilir. Bir ad alanı seçerseniz, yeni bir sütun bu ad alanındaki sınıfların, yapıların ve Numaralandırmaların bir listesini gösterir. Bu varlıkları keşfetmeye devam edebilir veya başka bir sorgu başlatmak için en soldaki sütuna geri dönebilirsiniz. Bkz. **Mimari Gezgini Ile kod bulma**.
 
 #### <a name="code-coverage"></a>Kod Kapsamı
 
-Kod kapsamı, çalışma zamanında dinamik olarak araç ikilileriyle güncelleştirildi. Bu, yapılandırma yükünü düşürür ve daha iyi performans sağlar. Ayrıca, uygulamalar için C++ birim testlerinden kod kapsamı verileri toplayabilirsiniz. C++ Birim testleri oluşturduğunuzda, çözümünüzdeki testleri öğrenmek Için **birim test Gezgini** ' ni kullanabilirsiniz. Birim testlerini çalıştırmak ve bunlara yönelik kod kapsamı verilerini toplamak için, **birim testi Gezgini**'Nde **kod kapsamını çözümle**' yi seçin. Kod kapsamı sonuçlarını **kod kapsamı** sonuçları penceresinde inceleyebilirsiniz: menü çubuğunda, **Test** > **Windows** > **kod kapsamı sonuçları**' nı seçin.
+Kod kapsamı, çalışma zamanında dinamik olarak araç ikilileriyle güncelleştirildi. Bu, yapılandırma yükünü düşürür ve daha iyi performans sağlar. Ayrıca, uygulamalar için C++ birim testlerinden kod kapsamı verileri toplayabilirsiniz. C++ Birim testleri oluşturduğunuzda, çözümünüzdeki testleri öğrenmek Için **birim test Gezgini** ' ni kullanabilirsiniz. Birim testlerini çalıştırmak ve bunlara yönelik kod kapsamı verilerini toplamak için, **birim testi Gezgini**'Nde **kod kapsamını çözümle**' yi seçin. Kod kapsamı **sonuçlarını kod kapsamı sonuçları penceresinde inceleyebilirsiniz** (menü çubuğunda, **Test** > **Windows** > **kod kapsamı sonuçları**' nı seçin.
 
 ## <a name="whats-new-for-c-in-visual-studio-2010"></a>Visual Studio 2010 C++ ' deki yenilikler
 
 ### <a name="c-compiler-and-linker"></a>C++Derleyici ve bağlayıcı
 
-**auto anahtar sözcüğü.** **Auto** anahtar sözcüğünün yeni bir amacı vardır. Değişkeni, değişkenin bildiriminde başlatma ifadesinden çıkarılan bir değişken bildirmek için **Auto** anahtar sözcüğünün varsayılan anlamını kullanın. Derleyici seçeneği, auto anahtar sözcüğünün yeni ya da önceki anlamını çağırır. `/Zc:auto`
+**auto anahtar sözcüğü.** **Auto** anahtar sözcüğünün yeni bir amacı vardır. Değişkeni, değişkenin bildiriminde başlatma ifadesinden çıkarılan bir değişken bildirmek için **Auto** anahtar sözcüğünün varsayılan anlamını kullanın. `/Zc:auto` derleyici seçeneği **Auto** anahtar sözcüğünün yeni ya da önceki anlamını çağırır.
 
 **decltype türü belirleyicisi.** **Decltype** türü tanımlayıcısı, belirtilen bir ifadenin türünü döndürür. Karmaşık veya yalnızca derleyicinin bildiği bir türü bildirmek için **Auto** anahtar sözcüğüyle birlikte **decltype** tür belirticisini kullanın. Örneğin, dönüş türü kendi şablon bağımsız değişkenlerinin türlerine bağlı olan bir şablon işlevi bildirmek için birleşimini kullanın. Ya da başka bir işlevi çağıran bir şablon işlevi bildirin, sonra çağrılan işlevin dönüş türünü döndürür.
 
@@ -1785,21 +1785,21 @@ Kod kapsamı, çalışma zamanında dinamik olarak araç ikilileriyle güncelle�
 
 **Rvalue başvurusu.** Rvalue başvuru bildirimci (& &) bir rvalue başvurusu bildirir. Rvalue başvurusu, daha verimli oluşturucular, işlevler ve şablonlar yazmak için taşıma semantiğini ve kusursuz iletme özelliğini kullanmanıza olanak sağlar.
 
-**static_assert bildirimi.** Bir **static_assert** bildirimi, çalışma zamanında test eden diğer onaylama mekanizmalarından farklı olarak, derleme zamanında bir yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen bir hata iletisi verilir.
+**static_assert bildirimi.** **Static_assert** bildirimi, çalışma zamanında test eden diğer onaylama mekanizmalarından farklı olarak, derleme zamanında yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen bir hata iletisi verilir.
 
-**nullptr ve __nullptr anahtar sözcükleri.** MSVC, yerel kodla veya yönetilen kodla **nullptr** anahtar sözcüğünü kullanmanıza olanak sağlar. **Nullptr** anahtar sözcüğü bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türünün bir nesneyi işaret içermediğini belirtir. Derleyici, `/clr` derleyici seçeneğini kullandığınızda **nullptr** 'yi yönetilen kod olarak yorumlar ve `/clr` seçeneğini kullanmazsanız yerel koddur.
-Microsoft 'a özgü **__nullptr** anahtar sözcüğü, **nullptr**ile aynı anlama sahiptir, ancak yalnızca yerel kod için geçerlidir. `/clr` Derleyici seçeneğini kullanarak yerel C/C++ Code derlerseniz, derleyici **nullptr** anahtar sözcüğünün yerel mi yoksa yönetilen bir terim mi olduğunu belirleyemez. Derleyicisini derleyiciye eklemek için, yönetilen terimi belirtmek için nullptr anahtar sözcüğünü ve yerel terimi belirtmek için **__nullptr** ' yi kullanın.
+**nullptr ve __nullptr anahtar sözcükleri.** MSVC, yerel kodla veya yönetilen kodla **nullptr** anahtar sözcüğünü kullanmanıza olanak sağlar. **Nullptr** anahtar sözcüğü bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türünün bir nesneyi işaret içermediğini belirtir. Derleyici, `/clr` derleyici seçeneğini kullandığınızda ve `/clr` seçeneğini kullanmazsanız yerel kod olarak **nullptr** 'yi yönetilen kod olarak yorumlar.
+Microsoft 'a özgü **__nullptr** anahtar sözcüğü, **nullptr**ile aynı anlama sahiptir, ancak yalnızca yerel kod için geçerlidir. `/clr` derleyici seçeneğini kullanarak yerel CC++ /kod derlerseniz, derleyici **nullptr** anahtar sözcüğünün yerel mi yoksa yönetilen bir terim mi olduğunu belirleyemez. Derleyicisini derleyiciye eklemek için, yönetilen terimi belirtmek üzere nullptr anahtar sözcüğünü kullanın ve yerel terimi belirtmek için **__nullptr** .
 
-**/Zc: trigraf derleyici seçeneği.** Trigraf desteği varsayılan olarak devre dışıdır. Trigraf desteğini etkinleştirmek için derleyiciseçeneğinikullanın.`/Zc:trigraphs`
+**/Zc: trigraf derleyici seçeneği.** Trigraf desteği varsayılan olarak devre dışıdır. Trigraf desteğini etkinleştirmek için `/Zc:trigraphs` derleyici seçeneğini kullanın.
 Üçlü grafik, birbirini izleyen iki soru işaretinden (??) ve ardından benzersiz bir üçüncü karakterden oluşur. Derleyici, karşılık gelen noktalama karakteriyle bir trigraf yerini alır. Örneğin, derleyici??? = # (sayı işareti) karakteri ile trigraf. Belirli noktalama karakterleri içermeyen bir karakter kümesi kullanan C kaynak dosyalarında trigraf kullanın.
 
 **Yeni Profil temelli Iyileştirme seçeneği.** PogoSafeMode, uygulamanızı en iyi duruma getirmeye yönelik güvenli mod veya hızlı mod kullanıp kullanmayacağınızı belirtmenize imkan tanıyan yeni bir profil temelli iyileştirme seçeneğidir. Güvenli mod iş parçacığı açısından güvenlidir, ancak hızlı moddan daha yavaştır. Hızlı mod varsayılan davranıştır.
 
-**Yeni ortak dil çalışma zamanı (CLR) seçeneği/clr: nostdlib.** (Ortak dil çalışma zamanı derlemesi `/clr` ) için yeni bir seçenek eklenir. Aynı kitaplıkların farklı sürümleri dahil edilip, bir derleme hatası verilir. Yeni seçenek, programınızın belirtilen bir sürümü kullanabilmesi için varsayılan CLR kitaplıklarını dışlamanızı sağlar.
+**Yeni ortak dil çalışma zamanı (CLR) seçeneği/clr: nostdlib.** `/clr` (ortak dil çalışma zamanı derlemesi) için yeni bir seçenek eklenmiştir. Aynı kitaplıkların farklı sürümleri dahil edilip, bir derleme hatası verilir. Yeni seçenek, programınızın belirtilen bir sürümü kullanabilmesi için varsayılan CLR kitaplıklarını dışlamanızı sağlar.
 
 **Yeni pragma yönergesi detect_mismatch.** Pragma yönergesi detect_mismatch, dosyalarınıza aynı ada sahip diğer etiketlerle karşılaştırılan bir etiket yerleştirmenizi sağlar. Aynı ad için birden çok değer varsa, bağlayıcı bir hata verir.
 
-**XOP Iç bilgileri, FMA4 Içleri ve LWP Iç bilgileri.** Visual Studio 2010 SP1 için eklenen XOP iç işlevleri, Visual Studio 2010 SP1 için eklenen FMA4 l 'ler ve Visual Studio 2010 SP1 işlemci teknolojileri için eklenen LWP Iç işlevleri desteklemek için yeni iç işlevler eklenmiştir. Belirli bir bilgisayarda hangi işlemci teknolojilerinin desteklendiğini öğrenmek için __cpuıd, __cpuıdex kullanın.
+**XOP Iç bilgileri, FMA4 Içleri ve LWP Iç bilgileri.** Visual Studio 2010 SP1 için eklenen XOP iç işlevleri, Visual Studio 2010 SP1 için eklenen FMA4 l 'ler ve Visual Studio 2010 SP1 işlemci teknolojileri için eklenen LWP Iç işlevleri desteklemek için yeni iç işlevler eklenmiştir. Belirli bir bilgisayarda hangi işlemci teknolojilerinin desteklendiğini öğrenmek için __cpuid __cpuidex kullanın.
 
 ### <a name="visual-studio-c-projects-and-the-build-system"></a>Visual Studio C++ projeleri ve derleme sistemi
 
@@ -1809,7 +1809,7 @@ Microsoft 'a özgü **__nullptr** anahtar sözcüğü, **nullptr**ile aynı anla
 
 **Projeden projeye bağımlılıklar.** Önceki sürümlerde, projeler arasında tanımlanan bağımlılıklar çözüm dosyasında depolanmıştı. Bu çözümler yeni proje dosya biçimine dönüştürüldüğünde, bağımlılıklar proje-proje başvurularına dönüştürülür. Çözüm bağımlılıklarının ve projeden projeye başvuruların kavramları farklı olduğundan bu değişiklik uygulamaları etkileyebilir.
 
-**Makrolar ve ortam değişkenleri.** New _ıTERATOR_DEBUG_LEVEL makrosu yineleyiciler için hata ayıklama desteğini çağırır. Eski _SECURE_SCL ve _HAS_ıTERATOR_HATA ayıklama makroları yerine bu makroyu kullanın.
+**Makrolar ve ortam değişkenleri.** Yeni _ITERATOR_DEBUG_LEVEL makro yineleyiciler için hata ayıklama desteğini çağırır. Eski _SECURE_SCL ve makroları _HAS_ITERATOR_DEBUGGING yerine bu makroyu kullanın.
 
 ### <a name="visual-c-libraries"></a>Visual C++ Kitaplıkları
 
@@ -1818,15 +1818,15 @@ Microsoft 'a özgü **__nullptr** anahtar sözcüğü, **nullptr**ile aynı anla
 **Standart C++ kitaplık.** Aşağıdaki listede, standart C++ kitaplıkta yapılan birçok değişikliğin birçoğu açıklanmaktadır.
 
 - Yeni rvalue başvuru C++ dili özelliği, standart şablon kitaplığındaki birçok işlev için taşıma semantiğini ve kusursuz iletme uygulamak amacıyla kullanılmıştır. Taşıma semantiği ve kusursuz iletme, değişkenler veya parametreler ayıran veya atayan işlemlerin performansını önemli ölçüde geliştirir.
-- Rvalue başvuruları, `auto_ptr` sınıftan daha güvenli bir akıllı işaretçi `unique_ptr` türü olan yeni sınıfı uygulamak için de kullanılır. `unique_ptr` Sınıf taşınabilir ancak kopyalanabilir değildir, güvenliği etkilemeden katı sahiplik semantiğini uygular ve Rvalue başvurularını algılayan kapsayıcılarla iyi sonuç verir. `auto_ptr` Sınıf kullanım dışıdır.
-- On beş `find_if_not`yeni işlev, örneğin `copy_if`,, ve `is_sorted`, \<algoritma > başlığına eklenmiştir.
-- \<Bellek > üstbilgisinde, yeni make_shared işlevi, nesne oluşturulduğu anda bir nesneye paylaşılan bir işaretçi oluşturmanın kullanışlı, sağlam ve verimli bir yoludur.
+- Rvalue başvuruları, `auto_ptr` sınıfından daha güvenli bir akıllı işaretçi türü olan yeni `unique_ptr` sınıfını uygulamak için de kullanılır. `unique_ptr` sınıfı taşınabilir ancak kopyalanabilir değildir, güvenliği etkilemeden katı sahiplik semantiğini uygular ve Rvalue başvurularını algılayan kapsayıcılarla iyi sonuç verir. `auto_ptr` sınıfı kullanım dışıdır.
+- On beş yeni işlev, örneğin `find_if_not`, `copy_if`ve `is_sorted`\<algoritma > başlığına eklenmiştir.
+- \<belleği > üst bilgisinde, yeni make_shared işlevi, nesne oluşturulduğu anda bir nesneye paylaşılan bir işaretçi oluşturmanın kullanışlı, sağlam ve verimli bir yoludur.
 - Listedir bağlantılı listeler \<forward_list > üst bilgisi tarafından desteklenir.
-- New `cbegin`, `cend` `const_iterator` , ve`crbegin`member işlevleribirkapsayıcıboyuncaİleriveya`crend` geri taşınan bir sağlar.
-- \<System_error > üstbilgisi ve ilgili şablonlar, alt düzey sistem hatalarının işlenmesini destekler. `exception_ptr` Sınıfının üyeleri, iş parçacıkları arasında özel durumları aktarmak için kullanılabilir.
-- Codecvt \<> üstbilgisi, Unicode karakterlerinin çeşitli kodlamalarının diğer kodlara dönüştürülmesini destekler.
-- Ayrıcılar > üst bilgisi, \<düğüm tabanlı kapsayıcılar için bellek blokları ayırmaya ve serbest bırakma konusunda yardımcı olan çeşitli şablonları tanımlar.
-- \<Rastgele > üst bilgisinde çok sayıda güncelleştirme vardır.
+- Yeni `cbegin`, `cend`, `crbegin`ve `crend` üye işlevleri bir kapsayıcı üzerinden ileriye veya geriye doğru taşınan bir `const_iterator` sağlar.
+- \<system_error > üst bilgisi ve ilgili şablonlar, alt düzey sistem hatalarının işlenmesini destekler. `exception_ptr` sınıfının üyeleri, özel durumları iş parçacıkları arasında taşımak için kullanılabilir.
+- \<codecvt > üst bilgisi, Unicode karakterlerin çeşitli kodlamalarının diğer kodlara dönüştürülmesini destekler.
+- \<ayırıcılar > üst bilgisi, düğüm tabanlı kapsayıcılar için bellek blokları ayırmaya ve serbest bırakma konusunda yardımcı olan çeşitli şablonlar tanımlar.
+- \<rastgele > üst bilgisinde çok sayıda güncelleştirme vardır.
 
 ### <a name="microsoft-foundation-class-mfc-library"></a>Microsoft Foundation Class (MFC) kitaplığı
 
@@ -1836,9 +1836,9 @@ Microsoft 'a özgü **__nullptr** anahtar sözcüğü, **nullptr**ile aynı anla
 
 **Yüksek DPı tanıma.** Varsayılan olarak, MFC uygulamaları artık yüksek DPı özellikli. Bir uygulama yüksek DPı (yüksek nokta/inç başına) kullanıyorsa, işletim sistemi Windows, metin ve diğer kullanıcı arabirimi öğelerini geçerli ekran çözünürlüğüne ölçeklendirebilir. Bu, ölçeklendirilen bir görüntünün doğru düzenlenmesinin ve kırpılmamış ya da pikselleştirileceği anlamına gelir.
 
-**Yöneticiyi yeniden başlatın.** Yeniden başlatma Yöneticisi, belgeleri otomatik olarak kaydeder ve beklenmedik şekilde kapanmışsa veya yeniden başlatılırsa uygulamanızı yeniden başlatır. Örneğin, bir otomatik güncelleştirme tarafından kapatıldıktan sonra uygulamanızı başlatmak için yeniden başlatma Yöneticisi ' ni kullanabilirsiniz. Uygulamanızı yeniden başlatma yöneticisini kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz **. nasıl yapılır: Yeniden başlatma Yöneticisi desteği**ekleyin.
+**Yöneticiyi yeniden başlatın.** Yeniden başlatma Yöneticisi, belgeleri otomatik olarak kaydeder ve beklenmedik şekilde kapanmışsa veya yeniden başlatılırsa uygulamanızı yeniden başlatır. Örneğin, bir otomatik güncelleştirme tarafından kapatıldıktan sonra uygulamanızı başlatmak için yeniden başlatma Yöneticisi ' ni kullanabilirsiniz. Uygulamanızı yeniden başlatma yöneticisini kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. **nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme**.
 
-**Uygulamaya CTaskDialog.** `CTaskDialog` Sınıfı Standart`AfxMessageBox` ileti kutusu yerine kullanılabilir. `CTaskDialog` Sınıfı, standart ileti kutusu ' na göre daha fazla bilgi görüntüler ve toplar.
+**Uygulamaya CTaskDialog.** `CTaskDialog` sınıfı standart `AfxMessageBox` ileti kutusu yerine kullanılabilir. `CTaskDialog` sınıfı, standart ileti kutusu ' na göre daha fazla bilgi görüntüler ve toplar.
 
 #### <a name="safeint-library"></a>SafeInt Kitaplığı
 
@@ -1846,7 +1846,7 @@ Yeni SafeInt Kitaplığı, tamsayı taşması için bu hesabı güvenli aritmeti
 
 #### <a name="new-active-template-library-atl-macros"></a>Yeni etkin şablon kitaplığı (ATL) makroları
 
-PROP_ENTRY_TYPE ve PROP_ENTRY_TYPE_EX işlevlerini genişletmek için ATL 'ye yeni makrolar eklenmiştir. PROP_ENTRY_INTERFACE ve PROP_ENTRY_INTERFACE_EX, geçerli CLSID 'lerin bir listesini eklemenizi sağlar. PROP_ENTRY_INTERFACE_CALLBACK ve PROP_ENTRY_INTERFACE_CALLBACK_EX, bir CLSID 'nin geçerli olup olmadığını belirlemek için bir geri çağırma işlevi belirtmenize izin verir.
+PROP_ENTRY_TYPE ve PROP_ENTRY_TYPE_EX işlevlerini genişletmek için ATL 'ye yeni makrolar eklenmiştir. PROP_ENTRY_INTERFACE ve PROP_ENTRY_INTERFACE_EX, geçerli CLSID 'lerin bir listesini eklemenizi sağlar. PROP_ENTRY_INTERFACE_CALLBACK ve PROP_ENTRY_INTERFACE_CALLBACK_EX bir CLSID 'nin geçerli olup olmadığını belirlemek için bir geri çağırma işlevi belirtmenize izin verir.
 
 #### <a name="analyze-warnings"></a>/Analyze uyarıları
 
@@ -1854,7 +1854,7 @@ PROP_ENTRY_TYPE ve PROP_ENTRY_TYPE_EX işlevlerini genişletmek için ATL 'ye ye
 
 #### <a name="animation-and-d2d-support"></a>Animasyon ve D2D desteği
 
-MFC artık animasyon ve Direct2D grafiklerini desteklemektedir. MFC kitaplığı, bu işlevselliği desteklemeye yönelik çeşitli yeni MFC sınıfları ve işlevleri içerir. Ayrıca, bir D2D nesnesi ve bir animasyon nesnesinin projeye nasıl ekleneceğini göstermek için iki yeni izlenecek yol vardır. İzlenecek yollar şunlardır **: Bir MFC projesine** D2D nesnesi ekleme ve **izlenecek yol: Bir MFC projesine**animasyon ekleme.
+MFC artık animasyon ve Direct2D grafiklerini desteklemektedir. MFC kitaplığı, bu işlevselliği desteklemeye yönelik çeşitli yeni MFC sınıfları ve işlevleri içerir. Ayrıca, bir D2D nesnesi ve bir animasyon nesnesinin projeye nasıl ekleneceğini göstermek için iki yeni izlenecek yol vardır. Bu izlenecek yollar **Izlenecek yol: BIR MFC PROJESINE D2D nesnesi ekleme** ve **Izlenecek yol: MFC projesine animasyon ekleme**.
 
 ### <a name="ide"></a>IDE
 
@@ -1864,7 +1864,7 @@ IntelliSense yalnızca sizin için gerekli olan bilgileri işlediğinden, IDE da
 
 **Geliştirilmiş IntelliSense hataları.** IDE, IntelliSense kaybına neden olabilecek hataları daha iyi algılar ve bunların altındaki kırmızı dalgalı alt çizgileri görüntüler. Ayrıca IDE, IntelliSense hatalarını **hata listesi penceresine**bildirir. Soruna neden olan kodu göstermek için **hata Listesi penceresindeki**hataya çift tıklayın.
 
-**Özelliği otomatik olarak tamamlamayı #include.** IDE, `#include` anahtar sözcüğü için otomatik tamamlamayı destekler. Yazdığınızda `#include`, IDE geçerli üstbilgi dosyalarının açılan liste kutusu oluşturur. Bir dosya adı yazarak devam ederseniz, IDE, girdinizi temel alarak listeye filtre uygular. Herhangi bir noktada, dahil etmek istediğiniz dosyayı listeden seçebilirsiniz. Bu, tam dosya adını bilmeden dosyaları hızlı bir şekilde eklemenizi sağlar.
+**Özelliği otomatik olarak tamamlamayı #include.** IDE, `#include` anahtar sözcüğü için otomatik tamamlamayı destekler. `#include`yazdığınızda, IDE geçerli üstbilgi dosyalarının açılan liste kutusu oluşturur. Bir dosya adı yazarak devam ederseniz, IDE, girdinizi temel alarak listeye filtre uygular. Herhangi bir noktada, dahil etmek istediğiniz dosyayı listeden seçebilirsiniz. Bu, tam dosya adını bilmeden dosyaları hızlı bir şekilde eklemenizi sağlar.
 
 **Öğesine gidin.** **Git** iletişim kutusu, projenizdeki belirli bir dizeyle eşleşen tüm sembolleri ve dosyaları aramanıza olanak tanır. Arama dizeniz üzerinde ek karakterler yazdığınızda Arama sonuçları hemen düzeltilir. **Sonuçlar** geri bildirim alanı, bulunan öğelerin sayısını söyler ve aramanızı sınırlandırıp sınırlandırmamaya karar vermenize yardımcı olur. **Tür/kapsam**, **konum**ve **Önizleme** geri bildirim alanları, benzer adlara sahip öğelerin belirsizliğini ortadan kaldırmaya yardımcı olur. Ayrıca, bu özelliği diğer programlama dillerini destekleyecek şekilde genişletebilirsiniz.
 
@@ -1878,7 +1878,7 @@ IntelliSense yalnızca sizin için gerekli olan bilgileri işlediğinden, IDE da
 
 **MFC sınıf Sihirbazı.** Visual C++ 2010, iyi kabul eden MFC sınıf Sihirbazı aracını geri getirir. MFC sınıf Sihirbazı, kaynak dosya kümelerini el ile değiştirmek zorunda kalmadan bir projeye sınıf, ileti ve değişken eklemenin kolay bir yoludur.
 
-**ATL Denetim Sihirbazı.** ATL Denetim Sihirbazı artık `ProgID` alanı otomatik olarak doldurur. ATL denetiminde `ProgID`yoksa, diğer araçlar ile çalışmayabilir. Denetimlerin `ProgID` , **etkin denetim Ekle** iletişim kutusu olmasını gerektiren bir araç örneği. İletişim kutusu hakkında daha fazla bilgi için bkz. **ActiveX denetimi ekleme Iletişim kutusu**.
+**ATL Denetim Sihirbazı.** ATL Denetim Sihirbazı artık `ProgID` alanını otomatik olarak doldurur. ATL denetiminde `ProgID`yoksa, diğer araçlar onunla çalışmayabilir. Denetimlerin bir `ProgID` sahip olmasını gerektiren bir araç örneği, **etkin denetim Ekle** iletişim kutusudur. İletişim kutusu hakkında daha fazla bilgi için bkz. **ActiveX denetimi ekleme Iletişim kutusu**.
 
 ### <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
 
@@ -1890,9 +1890,9 @@ Inmmword veri türünün eklenmesi, Intel Gelişmiş vektör Uzantıları (AVX) 
 
 - ATL, MFC ve Win32 uygulamalarında oluşturulan iletişim kutuları artık Windows Vista stil kılavuzlarıyla uyumlu. Visual Studio 2008 kullanarak yeni bir proje oluşturduğunuzda, uygulamanıza eklediğiniz tüm iletişim kutuları Windows Vista stil kılavuzlarıyla uyumlu olacaktır. Visual Studio 'nun önceki bir sürümüyle oluşturduğunuz bir projeyi yeniden derleyebiliyorsanız, var olan iletişim kutuları, daha önce sahip oldukları aynı görünümü korur. Uygulamanıza iletişim kutusu ekleme hakkında daha fazla bilgi için bkz. **iletişim kutusu Düzenleyicisi**.
 
-- **Atl Proje** Sihirbazı artık tüm kullanıcılar için bileşenleri kaydetme seçeneğine sahiptir. Visual Studio 2008 ' den başlayarak, **atl Proje** Sihirbazı tarafından oluşturulan com bileşenleri ve tür kitaplıkları, **tüm kullanıcılar için Kaydet**' i SEÇMEDIĞINIZ takdirde kayıt defterinin HKEY_CURRENT_USER düğümüne kaydedilir.
+- **Atl Proje** Sihirbazı artık tüm kullanıcılar için bileşenleri kaydetme seçeneğine sahiptir. Visual Studio 2008 ' den başlayarak, **atl Proje** Sihirbazı tarafından oluşturulan com bileşenleri ve tür kitaplıkları, **tüm kullanıcılar için Kaydet**' i seçmediğiniz takdirde kayıt defterinin HKEY_CURRENT_USER düğümüne kaydedilir.
 - **Atl Proje** Sihirbazı artık öznitelikli ATL projeleri oluşturma seçeneği sağlamaz. Visual Studio 2008 ile başlayarak, **atl Proje** Sihirbazı, yeni bir projenin öznitelikli durumunu değiştirme seçeneğine sahip değildir. Sihirbazın oluşturduğu tüm yeni ATL projelerinin artık öznitelik yok.
-- Kayıt defterine yazma yeniden yönlendirilebilir. Windows Vista 'nın kullanıma sunulmasıyla, kayıt defterinin belirli bölümlerine yazmak için bir programın Yükseltilmiş modda çalıştırılması gerekir. Visual Studio 'Yu her zaman Yükseltilmiş modda çalıştırmak istenmez. Kullanıcı başına yeniden yönlendirme, hiçbir programlama değişikliği yapmadan HKEY_CLASSES_ROOT kayıt defteri yazma işlemlerini otomatik olarak HKEY_CURRENT_USER 'ye yönlendirir.
+- Kayıt defterine yazma yeniden yönlendirilebilir. Windows Vista 'nın kullanıma sunulmasıyla, kayıt defterinin belirli bölümlerine yazmak için bir programın Yükseltilmiş modda çalıştırılması gerekir. Visual Studio 'Yu her zaman Yükseltilmiş modda çalıştırmak istenmez. Kullanıcı başına yeniden yönlendirme, herhangi bir programlama değişikliği yapmadan HKEY_CLASSES_ROOT kayıt defteri yazmaları otomatik olarak HKEY_CURRENT_USER olarak yeniden yönlendirir.
 - **Sınıf Tasarımcısı** artık yerel C++ kod için sınırlı desteğe sahiptir. Visual Studio 'nun önceki sürümlerinde **Sınıf Tasarımcısı** yalnızca görsel C# ve Visual Basic ile çalıştı. C++Kullanıcılar artık **Sınıf Tasarımcısı**, ancak yalnızca salt okuma modunda kullanabilir. **Sınıf Tasarımcısı** ile birlikte C++kullanma hakkında daha fazla bilgi için, bkz. **Sınıf Tasarımcısı Visual C++ Code ile çalışma**.
 - Proje sihirbazının artık C++ SQL Server projesi oluşturma seçeneği yoktur. Visual Studio 2008 ' den başlayarak yeni proje Sihirbazı C++ SQL Server projesi oluşturma seçeneğine sahip değildir. Visual Studio 'nun önceki bir sürümü kullanılarak oluşturulan SQL Server projeler yine de derleyip doğru çalışacaktır.
 
@@ -1909,9 +1909,9 @@ Inmmword veri türünün eklenmesi, Intel Gelişmiş vektör Uzantıları (AVX) 
 #### <a name="mfc-library"></a>MFC Kitaplığı
 
 - Windows Vista ortak denetimleri destekler. 18 yeni veya var olan sınıflarda 150 ' den fazla yöntem Windows Vista 'daki destek özelliklerine eklendi veya geçerli MFC sınıflarında işlevselliği geliştirmek için eklenmiştir.
-- Yeni `CNetAddressCtrl` sınıf, IPv4 ve IPv6 adreslerini veya DNS adlarını girmenizi ve doğrulamanızı sağlar.
-- Yeni `CPagerCtrl` sınıf, Windows sayfalayıcı denetiminin kullanımını basitleştirir.
-- Yeni `CSplitButton` sınıf, varsayılan veya isteğe bağlı bir eylem seçmek için Windows SplitButton denetiminin kullanımını basitleştirir.
+- Yeni `CNetAddressCtrl` sınıfı, IPv4 ve IPv6 adreslerini veya DNS adlarını girmenizi ve doğrulamanızı sağlar.
+- Yeni `CPagerCtrl` sınıfı, Windows sayfalayıcı denetiminin kullanımını basitleştirir.
+- Yeni `CSplitButton` sınıfı, varsayılan veya isteğe bağlı bir eylem seçmek için Windows SplitButton denetiminin kullanımını basitleştirir.
 
 #### <a name="c-support-library"></a>C++ Destek Kitaplığı
 
@@ -1931,17 +1931,17 @@ Inmmword veri türünün eklenmesi, Intel Gelişmiş vektör Uzantıları (AVX) 
 - Derleyici yönetilen artımlı yapıları destekler. Bu seçeneği belirttiğinizde, başvurulan bir derleme değiştiğinde Derleyici kodu yeniden deretmez. Bunun yerine, artımlı bir yapı gerçekleştirir. Dosyalar yalnızca değişiklikler bağımlı kodu etkiliyorsa yeniden derlenir.
 - ATL sunucusu ile ilgili öznitelikler artık desteklenmiyor. Derleyici artık doğrudan ATL sunucusuyla ilgili olan birkaç özniteliği desteklememektedir. Kaldırılan özniteliklerin tüm listesi için bkz. son değişiklikler.
 - Derleyici Intel Core mikro mimarisini destekler. Derleyici, kod oluşturma sırasında Intel Core mikro mimarisine yönelik ayarlamayı içerir. Varsayılan olarak, bu ayarlama açık ve Pentium 4 ve diğer işlemcilere de yardımcı olduğundan devre dışı bırakılamaz.
-- İç yapı daha yeni AMD ve Intel işlemcileri destekler. Birçok yeni iç yönerge, daha yeni AMD ve Intel işlemcilerinde daha fazla işlevselliği destekler. Yeni iç bilgiler hakkında daha fazla bilgi için bkz. **ek Streaming SIMD Extensions 3 yönergeleri**, **Streaming SIMD Extensions 4 yönergeleri**, **SSE4A ve gelişmiş bit Işleme iç**bilgileri, **AES iç** **bilgileri, _mm_clmutapi64_sı128**ve **__rdtscp**.
-- `__cpuid` İşlev güncelleştirildi. `__cpuid` ,İşlevleriartıkAMDveIntelişlemcilerinensondüzeltmelerindeki`__cpuidex` birkaç yeni özelliği desteklemektedir. `__cpuidex` İç öğe yenidir ve son işlemcilerle daha fazla bilgi toplar.
-- `/MP` Derleyici seçeneği toplam derleme süresini azaltır. Bu `/MP` seçenek, dosyaları aynı anda derleyen birkaç işlem oluşturarak birkaç kaynak dosyayı derlemek için toplam süreyi önemli ölçüde azaltabilir. Bu seçenek, özellikle hiper iş parçacığı, birden çok işlemci veya birden çok çekirdeği destekleyen bilgisayarlarda yararlıdır.
-- Derleyici seçeneği ve **__w64** anahtar sözcüğü kullanım dışıdır. `/Wp64` 64-bit taşınabilirlik sorunlarını algılayan derleyiciseçeneğive__w64anahtarsözcüğükullanımdankaldırılmıştırvederleyiciningelecekbirsürümünde`/Wp64` kaldırılacaktır. Bu derleyici seçeneği ve anahtar sözcüğü yerine 64 bitlik bir platformu hedefleyen bir MSVC kullanın.
-- `/Qfast_transcendentals`döküm işlevleri için satır içi kod üretir.
-- `/Qimprecise_fwaits``/fp:except` derleyici seçeneğini kullandığınızda blokları denemek için iç bekleme komutlarını kaldırır.
+- İç yapı daha yeni AMD ve Intel işlemcileri destekler. Birçok yeni iç yönerge, daha yeni AMD ve Intel işlemcilerinde daha fazla işlevselliği destekler. Yeni iç bilgiler hakkında daha fazla bilgi için bkz. **ek Streaming SIMD Extensions 3 yönergeleri**, **Streaming SIMD Extensions 4 yönergeleri**, **SSE4A ve gelişmiş bit Işleme Iç**bilgileri, **AES iç**bilgileri, **_mm_clmulepi64_si128**ve **__rdtscp**.
+- `__cpuid` işlevi güncelleştirildi. `__cpuid`, `__cpuidex` işlevleri artık AMD ve Intel işlemcilerin en son düzeltmelerindeki birkaç yeni özelliği desteklemektedir. `__cpuidex` iç yenidir ve son işlemcilerle daha fazla bilgi toplar.
+- `/MP` derleyici seçeneği toplam derleme süresini azaltır. `/MP` seçeneği, dosyaları aynı anda derleyen birkaç işlem oluşturarak birkaç kaynak dosyayı derlemek için toplam süreyi önemli ölçüde azaltabilir. Bu seçenek, özellikle hiper iş parçacığı, birden çok işlemci veya birden çok çekirdeği destekleyen bilgisayarlarda yararlıdır.
+- `/Wp64` derleyici seçeneği ve **__w64** anahtar sözcüğü kullanım dışıdır. 64-bit taşınabilirlik sorunlarını algılayan `/Wp64` derleyici seçeneği ve **__w64** anahtar sözcüğü kullanımdan kaldırılmıştır ve derleyicinin gelecek bir sürümünde kaldırılacaktır. Bu derleyici seçeneği ve anahtar sözcüğü yerine 64 bitlik bir platformu hedefleyen bir MSVC kullanın.
+- `/Qfast_transcendentals`, trantal işlevleri için satır içi kod üretir.
+- `/Qimprecise_fwaits`, `/fp:except` derleyici seçeneğini kullandığınızda blokları denemek için iç bekleme komutlarını kaldırır.
 
 ### <a name="linker-changes"></a>Bağlayıcı değişiklikleri
 
-- Kullanıcı hesabı denetim bilgileri artık görsel C++ bağlayıcı (LINK. exe) tarafından yürütülebilir dosyalar için bildirim dosyalarına katıştırılır. Bu özellik varsayılan olarak etkindir. Bu özelliği devre dışı bırakma veya varsayılan davranışı değiştirme hakkında daha fazla bilgi için, bkz `/MANIFESTUAC` . (UAC bilgilerini bildirimde bulunan).
-- Bağlayıcı artık Windows Vista 'nın `/DYNAMICBASE` adres alanı düzeni rastgele seçme özelliğini etkinleştirme seçeneğine sahiptir. Bu seçenek, uygulamanın yükleme sırasında rastgele olarak yeniden yapılıp yapılmayacağını belirtmek için bir yürütülebilir dosyanın üst bilgisini değiştirir.
+- Kullanıcı hesabı denetim bilgileri artık görsel C++ bağlayıcı (LINK. exe) tarafından yürütülebilir dosyalar için bildirim dosyalarına katıştırılır. Bu özellik varsayılan olarak etkindir. Bu özelliğin devre dışı bırakılması veya varsayılan davranışın nasıl değiştirileceği hakkında daha fazla bilgi için bkz. `/MANIFESTUAC` (UAC bilgilerini bildirimde katıştırır).
+- Bağlayıcı artık Windows Vista 'nın adres alanı düzeni rastgele seçme özelliğini etkinleştirmek için `/DYNAMICBASE` seçeneğine sahiptir. Bu seçenek, uygulamanın yükleme sırasında rastgele olarak yeniden yapılıp yapılmayacağını belirtmek için bir yürütülebilir dosyanın üst bilgisini değiştirir.
 
 ## <a name="whats-new-for-c-in-visual-studio-2005"></a>Visual Studio 2005 C++ ' deki yenilikler
 
@@ -1985,154 +1985,154 @@ __sptr, __uptr
 Derleyicinin bu sürümde son değişiklikleri vardır.
 
 - ' 64-bit yerel ve çapraz derleyiciler.
-- `/analyze`(Kurumsal kod analizi) derleyici seçeneği eklenmiştir.
-- `/bigobj`derleyici seçeneği eklendi.
-- `/clr:pure`, `/clr:safe` ve`/clr:oldSyntax` eklendi. (Daha sonra Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de kaldırılmıştır.)
+- `/analyze` (kurumsal kod analizi) derleyici seçeneği eklenmiştir.
+- `/bigobj` derleyici seçeneği eklendi.
+- `/clr:pure`, `/clr:safe`ve `/clr:oldSyntax` eklendi. (Daha sonra Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de kaldırılmıştır.)
 - Kullanım dışı derleyici seçenekleri: Bu sürümde birçok derleyici seçeneği kullanımdan kaldırılmıştır; daha fazla bilgi için bkz. **kullanım dışı derleyici seçenekleri** .
-- `/clr` Koddaki çift dönüştürme azaltılmıştır; daha fazla bilgi için bkz. **Double thunking (C++)** .
-- `/EH`(Özel durum işleme modeli) `/EHs` veya artık throw dışında bir şeyle oluşturulan bir özel durumu yakalamak için kullanılamaz; kullanın. `/EHa`
-- `/errorReport`(Iç derleyici hatalarını bildir) derleyici seçeneği eklenmiştir.
-- `/favor`(64 için iyileştirin) derleyici seçeneği eklenmiştir.
-- `/FA`, `/Fa` (Listeleme dosyası) derleyici seçeneği eklenmiştir.
-- `/FC`(Tanılama 'da kaynak kodu dosyasının tam yolu) derleyici seçeneği eklenmiştir.
-- `/fp`(Kayan nokta davranışını belirt) derleyici seçeneği eklenmiştir.
-- `/G`(Işlemci için iyileştirme) Seçenekler derleyici seçeneği eklendi.
-- `/G`(Işlemci için iyileştirme) Seçenekler derleyici seçeneği eklendi.
-- `/G3``/G4` ,,`/G7`,, ve derleyiciseçeneklerikaldırılmıştır`/GB` . `/G6` `/G5` Derleyici artık tüm mimariler için en iyi çıkış dosyasını oluşturmayı deneyen bir "karıştırılan model" kullanır.
-- `/Gf`kaldırıldı. Bunun `/GF` yerine (Yinelenen dizeleri ortadan kaldırın) kullanın.
-- `/GL`(Tüm program Iyileştirmesi) artık ile `/CLRHEADER`uyumludur.
-- `/GR`artık varsayılan olarak açık durumdadır.
-- `/GS`(Arabellek güvenlik denetimi) artık güvenlik açığı bulunan işaretçi parametrelerine yönelik güvenlik koruması sağlar. `/GS`artık varsayılan olarak açık durumdadır. `/GS`Artık, `/clr` MSIL 'e (ortak dil çalışma zamanı derlemesi) derlenen işlevlerde de çalışır.
-- `/homeparams`(Parametreleri yığına Kaydet) derleyici seçeneği eklenmiştir.
-- `/hotpatch`(Düzeltme eki uygulanmış görüntü oluşturma) derleyici seçeneği eklenmiştir.
+- `/clr` kodundaki çift dönüştürme azaltılmıştır; daha fazla bilgi için bkz. **Double thunking (C++)** .
+- `/EH` (özel durum Işleme modeli) veya `/EHs` artık throw dışında bir şeyle oluşturulan bir özel durumu yakalamak için kullanılamaz; `/EHa`kullanın.
+- `/errorReport` (Iç derleyici hatalarını raporla) derleyici seçeneği eklenmiştir.
+- `/favor` (64 için optimize) derleyici seçeneği eklenmiştir.
+- `/FA`, `/Fa` (listeleme dosyası) derleyici seçeneği eklenmiştir.
+- `/FC` (Tanılama 'da kaynak kodu dosyasının tam yolu) derleyici seçeneği eklenmiştir.
+- `/fp` (kayan nokta davranışını belirt) derleyici seçeneği eklenmiştir.
+- `/G` (Işlemci için Iyileştirme) seçenekler derleyici seçeneği eklenmiştir.
+- `/G` (Işlemci için Iyileştirme) seçenekler derleyici seçeneği eklenmiştir.
+- `/G3`, `/G4`, `/G5`, `/G6`, `/G7`ve `/GB` derleyici seçenekleri kaldırılmıştır. Derleyici artık tüm mimariler için en iyi çıkış dosyasını oluşturmayı deneyen bir "karıştırılan model" kullanır.
+- `/Gf` kaldırıldı. Bunun yerine `/GF` kullanın (Yinelenen dizeleri kaldırın).
+- `/GL` (tüm program Iyileştirmesi) artık `/CLRHEADER`uyumludur.
+- `/GR` artık varsayılan olarak açık durumdadır.
+- `/GS` (arabellek güvenlik denetimi) artık güvenlik açığı bulunan işaretçi parametrelerine yönelik güvenlik koruması sağlar. `/GS` artık varsayılan olarak açık durumdadır. `/GS` artık `/clr` (ortak dil çalışma zamanı derlemesi) ile MSIL 'e derlenen işlevlerde de çalışır.
+- `/homeparams` (kayıt parametrelerini yığına Kopyala) derleyici seçeneği eklenmiştir.
+- `/hotpatch` (düzeltme eki uygulanmış görüntü oluşturma) derleyici seçeneği eklenmiştir.
 - Satır içi işlev buluşsal yöntemleri güncelleştirildi; daha fazla bilgi için bkz. **satır içi**, **__inline**, **__forceinline** ve **inline_depth**
 - Birçok yeni iç işlev eklenmiştir ve daha önce belgelenmemiş çok sayıda iç yapı artık belgelenmiştir.
 - Varsayılan olarak, başarısız olan yeni bir çağrı özel durum oluşturur.
-- `/ML`ve `/MLd` derleyici seçenekleri kaldırılmıştır. Görsel C++ artık tek iş parçacıklı, STATIK bağlantılı CRT kitaplığı desteğini desteklememektedir.
-- Derleyici `/O1`, ile `/O2` derlerken etkin olan adlandırılmış dönüş değeri iyileştirmesi (boyutu en aza indir, hızı Büyüt), `/Og` (Global iyileştirmeler) ve `/Ox` (tam iyileştirme) öğesini uyguladık.
-- `/Oa`derleyici seçeneği kaldırılmıştır, ancak sessizce yok sayılacak; Derleyicinin nasıl diğer `restrict__declspec` ad kullandığını belirtmek için veyadeğiştiricilerinikullanın.`noalias`
-- `/Op`derleyici seçeneği kaldırılmıştır. Bunun `/fp` yerine (kayan nokta davranışını belirt) kullanın.
+- `/ML` ve `/MLd` derleyici seçenekleri kaldırılmıştır. Görsel C++ artık tek iş parçacıklı, STATIK bağlantılı CRT kitaplığı desteğini desteklememektedir.
+- Derleyici, `/O1`, `/O2` (boyutu Küçült, Ekranı Kapla), `/Og` (genel Iyileştirmeler) ve `/Ox` (tam Iyileştirme) ile derleme yaptığınızda etkinleştirilen adlandırılmış dönüş değeri Iyileştirmesini uyguladık.
+- `/Oa` derleyici seçeneği kaldırılmıştır, ancak sessizce yok sayılacak; Derleyicinin nasıl diğer ad kullandığını belirtmek için `noalias` veya `restrict__declspec` değiştiricilerini kullanın.
+- `/Op` derleyici seçeneği kaldırılmıştır. Bunun yerine `/fp` (kayan nokta davranışını belirt) kullanın.
 - OpenMP artık görsel C++tarafından destekleniyor.
-- `/openmp`(OpenMP 2,0 desteğini etkinleştir) derleyici seçeneği eklenmiştir.
-- `/Ow`derleyici seçeneği kaldırılmıştır, ancak sessizce yok sayılacak. Derleyicinin nasıl diğer `restrict__declspec` ad kullandığını belirtmek için veyadeğiştiricilerinikullanın.`noalias`
+- `/openmp` (OpenMP 2,0 desteğini etkinleştir) derleyici seçeneği eklenmiştir.
+- `/Ow` derleyici seçeneği kaldırılmıştır, ancak sessizce yok sayılacak. Derleyicinin nasıl diğer ad kullandığını belirtmek için `noalias` veya `restrict__declspec` değiştiricilerini kullanın.
 
 ### <a name="profile-guided-optimizations"></a>Profil Temelli İyileştirmeler
 
-- `/QI0f`kaldırıldı.
-- `/QIfdiv`kaldırıldı.
-- `/QIPF_B`(B CPU adımlaması için errampa) derleyici seçeneği eklenmiştir.
-- `/QIPF_C`(C CPU adımlaması için errampa) derleyici seçeneği eklenmiştir.
-- `/QIPF_fr32`(Büyük 96 kayan nokta Yazmaçları kullanmayın) derleyici seçeneği eklenmiştir.
-- `/QIPF_noPIC`(Konuma bağımlı kod oluştur) derleyici seçeneği eklenmiştir.
-- `/QIPF_restrict_plabels`(Çalışma zamanında hiçbir Işlev Oluşturusız olduğunu varsay) derleyici seçeneği eklenmiştir.
+- `/QI0f` kaldırıldı.
+- `/QIfdiv` kaldırıldı.
+- `/QIPF_B` (B CPU adımlaması için Errampa) derleyici seçeneği eklenmiştir.
+- `/QIPF_C` (C CPU adımlaması için Errampa) derleyici seçeneği eklenmiştir.
+- `/QIPF_fr32` (büyük 96 kayan nokta Yazmaçları kullanmayın) derleyici seçeneği eklenmiştir.
+- `/QIPF_noPIC` (konuma bağımlı kod üret) derleyici seçeneği eklenmiştir.
+- `/QIPF_restrict_plabels` (çalışma zamanında hiçbir Işlev Oluşturumayın) derleyici seçeneği eklenmiştir.
 
 ### <a name="unicode-support-in-the-compiler-and-linker"></a>Derleyicide ve Bağlayıcıda Unicode Desteği
 
-- `/vd`(Oluşturma yeniden oluşturmayı devre dışı bırak) artık, oluşturulmakta olan bir nesne üzerinde dynamic_cast Işleci kullanmanıza izin veriyor (/VD2)
-- `/YX`derleyici seçeneği kaldırılmıştır. Bunun `/Yc` yerine (önceden derlenmiş üst bilgi dosyası `/Yu` oluştur) veya (önceden derlenmiş üst bilgi dosyası kullan) kullanın. Yapı yapılandırmalardan kaldırırsanız `/YX` ve bunu hiçbir şey ile değiştirirseniz, daha hızlı yapılar oluşmasına neden olabilir.
-- `/Zc:forScope`artık varsayılan olarak açık durumdadır.
-- `/Zc:wchar_t`artık varsayılan olarak açık durumdadır.
-- `/Zd`derleyici seçeneği kaldırılmıştır. Yalnızca satır numarası hata ayıklama bilgileri artık desteklenmiyor. Bunun `/Zi` yerine kullanın (daha fazla bilgi için bkz. **/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)** ).
-- `/Zg`Artık, C++ kaynak kodu dosyalarında değil yalnızca C kaynak kodu dosyaları üzerinde geçerlidir.
-- `/Zx`(Hata ayıklama için Iyileştirilmiş Itanium kodu) derleyici seçeneği eklenmiştir.
+- `/vd` (oluşturma yeniden devre dışı bırak), artık oluşturulan bir nesne üzerinde dynamic_cast Işlecini kullanmanıza izin veriyor (/VD2)
+- `/YX` derleyici seçeneği kaldırılmıştır. Bunun yerine `/Yc` (önceden derlenmiş üst bilgi dosyası oluştur) veya `/Yu` (önceden derlenmiş üstbilgi dosyası kullan) kullanın. Yapı yapılandırmalarınızın `/YX` kaldırır ve bunu hiçbir şey ile değiştirirseniz, daha hızlı yapılar oluşmasına neden olabilir.
+- `/Zc:forScope` artık varsayılan olarak açık durumdadır.
+- `/Zc:wchar_t` artık varsayılan olarak açık durumdadır.
+- `/Zd` derleyici seçeneği kaldırılmıştır. Yalnızca satır numarası hata ayıklama bilgileri artık desteklenmiyor. Bunun yerine `/Zi` kullanın (daha fazla bilgi için bkz. **/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)** .
+- `/Zg` artık yalnızca C kaynak kodu dosyalarında geçerlidir, C++ kaynak kodu dosyalarında değildir.
+- `/Zx` (Iyileştirilmiş Itanium kodu hata ayıklama) derleyici seçeneği eklenmiştir.
 
 ### <a name="new-language-features"></a>Yeni dil özellikleri
 
 - AttributeAttribute artık kullanım dışıdır.
-- `appdomain__declspec`değiştirici eklendi.
-- `__clrcall`çağırma kuralı eklendi.
+- `appdomain__declspec` değiştirici eklendi.
+- `__clrcall` çağırma kuralı eklendi.
 - kullanım dışıC++bırakılmış () **declspec** değiştiricisi artık, bir Kullanıcı kullanım dışı bir sınıfa veya işleve erişmeyi denediğinde derleme zamanında görüntülenecek bir dize belirtmenize olanak tanır.
 - **dynamic_cast** İşlecin son değişiklikleri yok.
 - Yerel numaralandırmalar artık temel türü belirtmenizi sağlar.
-- `jitintrinsicdeclspec`değiştirici eklendi.
-- `noaliasdeclspec`değiştirici eklendi.
-- `process__declspec`değiştirici eklendi.
+- `jitintrinsicdeclspec` değiştirici eklendi.
+- `noaliasdeclspec` değiştirici eklendi.
+- `process__declspec` değiştirici eklendi.
 - **abstract**, **override**ve **Sealed** yerel derlemeler için geçerlidir.
 - **__restrict** anahtar sözcüğü eklendi.
-- `restrictdeclspec`değiştirici eklendi.
+- `restrictdeclspec` değiştirici eklendi.
 - **__thiscall** artık bir anahtar sözcüktür.
-- **__hizalanmamış** anahtar sözcük artık belgelenmiştir.
-- **geçici** (C++) iyileştirmelere göre davranış saptadı.
+- **__unaligned** anahtar sözcüğü artık belgelenmiştir.
+- **volatile** (C++), iyileştirmelere göre davranışı güncelleştirildi.
 
 ### <a name="new-preprocessor-features"></a>Yeni Önişlemci özellikleri
 
-- __CLR_VER önceden tanımlanmış makrosu eklendi.
-- Comment (C/C++) pragma şimdi bir bağlayıcı `/MANIFESTDEPENDENCY` yorumu olarak kabul etmektedir. Comment için exestr seçeneği artık kullanım dışıdır.
-- `embedded_idl`öznitelik ( `#import` yönerge) artık isteğe bağlı bir parametre alır.
-- `fenv_access`Prag
-- `float_control`Prag
-- `fp_contract`Prag
+- Önceden tanımlanmış __CLR_VER makro eklendi.
+- Comment (C/C++) pragma artık `/MANIFESTDEPENDENCY` bağlayıcı yorumu olarak kabul etmektedir. Comment için exestr seçeneği artık kullanım dışıdır.
+- `embedded_idl` özniteliği (`#import` yönergesi) artık isteğe bağlı bir parametre alır.
+- `fenv_access` pragma
+- `float_control` pragma
+- `fp_contract` pragma
 - Genel değişkenler, pragma yönetilen, yönetilmeyen ve yönetilmeyen bölümlerde genel değişkenleriniz varsa, bunların bildirildiği sırada başlatılmaz. Bu, örneğin, yönetilmeyen genel bir değişken yönetilen genel değişkenlerle birlikte başlatılmışsa ve tamamen oluşturulmuş bir yönetilen nesne gerekliyse, olası bir son değişiklik budur.
 - İnit_seg ile belirtilen bölümler artık salt okunurdur ve önceki sürümlerde okuma/yazma değildir.
 - inline_depth varsayılan değer 16 ' dır. Visual C++ .NET 2003 ' de varsayılan 16 ' da etkilidir.
-- _INTEGRAL_MAX_BITS önceden tanımlanmış makro eklendi, bkz. önceden tanımlanmış makrolar.
+- Önceden tanımlanmış _INTEGRAL_MAX_BITS makro eklendi, bkz. önceden tanımlanmış makrolar.
 - _M_CEE, _M_CEE_PURE ve _M_CEE_SAFE önceden tanımlanmış makrolar eklendi, bkz. önceden tanımlanmış makrolar.
-- _M_IX86_FP önceden tanımlanmış makro eklendi.
-- _M_X64 önceden tanımlanmış makro eklendi.
-- `make_public`Prag
-- `managed`, `unmanaged` pragma sözdizimi güncelleştirildi ( `push` Şu anda ve `pop`)
-- mscorlib. dll artık tüm `#using` `/clr` derlemelerde yönerge tarafından örtük olarak başvuruluyor.
-- _OPENMP önceden tanımlanmış makrosu eklendi.
+- Önceden tanımlanmış _M_IX86_FP makro eklendi.
+- Önceden tanımlanmış _M_X64 makro eklendi.
+- `make_public` pragma
+- `managed`, `unmanaged` pragma sözdizimi güncelleştirildi (Şu anda `push` ve `pop`sahiptir)
+- mscorlib. dll artık tüm `/clr` derlemelerinin `#using` yönergesi tarafından örtük olarak başvuruluyor.
+- Önceden tanımlanmış _OPENMP makro eklendi.
 - optimize pragma güncelleştirildi, a ve w artık geçerli parametreler değildir.
 - no_registry # import özniteliği eklendi.
 - `region`, `endregion` pragmalar eklendi
-- _VC_NODEFAULTLIB önceden tanımlanmış makrosu eklendi.
+- Önceden tanımlanmış _VC_NODEFAULTLIB makro eklendi.
 - Değişen sayıda makro artık uygulandı.
-- `vtordisp`kullanım dışıdır ve sonraki bir görselin C++sürümünde kaldırılacaktır.
-- `warning` Pragma artık gizleme belirticisine sahiptir.
+- `vtordisp` kullanım dışıdır ve bu bir görselin C++gelecekteki bir sürümünde kaldırılacaktır.
+- `warning` pragma artık gizleme belirticisine sahiptir.
 
 ### <a name="new-linker-features"></a>Yeni bağlayıcı Özellikleri
 
 - Modüller (derleme olmayan MSIL çıkış dosyaları) artık bağlayıcıya giriş olarak izin verilir.
-- `/ALLOWISOLATION`(Bildirim arama) bağlayıcı seçeneği eklendi.
-- `/ASSEMBLYRESOURCE`(Yönetilen bir kaynağı katıştırma), şimdi derlemede kaynak adını belirtmenizi ve kaynağın derlemede özel olduğunu belirtmenizi sağlayacak şekilde güncelleştirilmiştir.
-- `/CLRIMAGETYPE`(CLR görüntü türünü belirt) bağlayıcı seçeneği eklenmiştir.
-- `/CLRSUPPORTLASTERROR`(PInvoke çağrıları için son hata kodunu koru) bağlayıcı seçeneği eklenmiştir.
-- `/CLRTHREADATTRIBUTE`(CLR Iş parçacığı özniteliğini ayarla) bağlayıcı seçeneği eklenmiştir.
-- `/CLRUNMANAGEDCODECHECK`(SuppressUnmanagedCodeSecurityAttribute ekleyin) bağlayıcı seçeneği eklendi.
-- `/ERRORREPORT`(Iç bağlayıcı hatalarını raporla) bağlayıcı seçeneği eklenmiştir.
-- `/EXETYPE`bağlayıcı seçeneği kaldırılmıştır. Bağlayıcı artık Windows 95 ve Windows 98 cihaz sürücülerini oluşturmayı desteklemiyor. Bu cihaz sürücülerini oluşturmak için uygun bir DDK kullanın. EXETYPE anahtar sözcüğü artık modül tanım dosyaları için geçerli değildir.
-- `/FUNCTIONPADMIN`(Düzeltme eki uygulanmış görüntü oluşturma) bağlayıcı seçeneği eklenmiştir.
-- `/LTCG`bağlayıcı seçeneği, ile `/clr`derlenen modüllerde artık desteklenmektedir. `/LTCG`Profil temelli iyileştirmeleri desteklemek için de güncelleştirilmiştir.
-- `/MANIFEST`(Yan yana derleme bildirimi oluşturma) bağlayıcı seçeneği eklenmiştir.
-- `/MANIFESTDEPENDENCY`(Bildirim Bağımlılıklarını Belirt) bağlayıcı seçeneği eklenmiştir.
-- `/MANIFESTFILE`(Ad bildirim dosyası) bağlayıcı seçeneği eklendi.
-- `/MAPINFO:LINES`bağlayıcı seçeneği kaldırılmıştır.
-- `/NXCOMPAT`(Veri Yürütme Engellemesi ile uyumlu) bağlayıcı seçeneği eklenmiştir.
-- `/PGD`(Profil temelli Iyileştirmeler için veritabanını belirt) bağlayıcı seçeneği eklenmiştir.
-- `/PROFILE`(Performans araçları profil Oluşturucu) bağlayıcı seçeneği eklenmiştir.
-- `/SECTION`(Bölüm özniteliklerini belirt) bağlayıcı seçeneği artık öznitelik olumsuzunu destekliyor ve artık L veya D (VxD ile ilişkili) özniteliklerini desteklemiyor.
+- `/ALLOWISOLATION` (bildirim arama) bağlayıcı seçeneği eklendi.
+- `/ASSEMBLYRESOURCE` (yönetilen bir kaynağı katıştırma), şimdi derlemede kaynak adını belirtmenizi ve kaynağın derlemede özel olduğunu belirtmenizi sağlayacak şekilde güncelleştirilmiştir.
+- `/CLRIMAGETYPE` (CLR görüntü türünü belirt) bağlayıcı seçeneği eklenmiştir.
+- `/CLRSUPPORTLASTERROR` (PInvoke çağrıları için son hata kodunu koru) bağlayıcı seçeneği eklenmiştir.
+- `/CLRTHREADATTRIBUTE` (CLR Iş parçacığı özniteliğini ayarla) bağlayıcı seçeneği eklendi.
+- `/CLRUNMANAGEDCODECHECK` (SuppressUnmanagedCodeSecurityAttribute ekleyin) bağlayıcı seçeneği eklendi.
+- `/ERRORREPORT` (Iç bağlayıcı hatalarını raporla) bağlayıcı seçeneği eklenmiştir.
+- `/EXETYPE` bağlayıcı seçeneği kaldırılmıştır. Bağlayıcı artık Windows 95 ve Windows 98 cihaz sürücülerini oluşturmayı desteklemiyor. Bu cihaz sürücülerini oluşturmak için uygun bir DDK kullanın. EXETYPE anahtar sözcüğü artık modül tanım dosyaları için geçerli değildir.
+- `/FUNCTIONPADMIN` (düzeltme eki uygulanmış görüntü oluşturma) bağlayıcı seçeneği eklendi.
+- `/LTCG` bağlayıcı seçeneği artık `/clr`derlenmiş modüllerde desteklenmektedir. `/LTCG` profil temelli iyileştirmeleri desteklemek için de güncelleştirilmiştir.
+- `/MANIFEST` (yan yana derleme bildirimi oluşturma) bağlayıcı seçeneği eklendi.
+- `/MANIFESTDEPENDENCY` (Bildirim Bağımlılıklarını Belirt) bağlayıcı seçeneği eklenmiştir.
+- `/MANIFESTFILE` (ad bildirim dosyası) bağlayıcı seçeneği eklendi.
+- `/MAPINFO:LINES` bağlayıcı seçeneği kaldırılmıştır.
+- `/NXCOMPAT` (Veri Yürütme Engellemesi ile uyumlu) bağlayıcı seçeneği eklendi.
+- `/PGD` (Profil temelli Iyileştirmeler için veritabanını belirt) bağlayıcı seçeneği eklenmiştir.
+- `/PROFILE` (performans araçları profil Oluşturucu) bağlayıcı seçeneği eklendi.
+- `/SECTION` (bölüm özniteliklerini belirt) bağlayıcı seçeneği artık öznitelik olumsuzunu destekliyor ve artık L veya D (VxD ile ilişkili) özniteliklerini desteklemiyor.
 - Derleyicide ve Bağlayıcıda Unicode Desteği
-- `/VERBOSE`(Ilerleme Iletilerini Yazdır) bağlayıcı seçeneği artık ICF ve REF değerlerini de kabul eder.
-- `/VXD`bağlayıcı seçeneği kaldırılmıştır. Bağlayıcı artık Windows 95 ve Windows 98 cihaz sürücülerini oluşturmayı desteklemiyor. Bu cihaz sürücülerini oluşturmak için uygun bir DDK kullanın. VXD anahtar sözcüğü artık modül tanım dosyaları için geçerli değildir.
-- `/WS`bağlayıcı seçeneği kaldırılmıştır. `/WS`Windows NT 4,0 için hedeflenen görüntüleri değiştirmek için kullanılmıştır. IMAGECFG. exe-R dosya adı yerine `/WS`kullanılabilir. IMAGECFG. exe, SUPPORT\DEBUG\I386\ıMAGECFGIÇINDEKI Windows NT 4,0 CD-ROM ' da bulunabilir. EXE.
-- `/WX`(Bağlayıcı uyarılarını hata olarak işle) bağlayıcı seçeneği artık belgelenmiştir.
+- `/VERBOSE` (Ilerleme Iletilerini Yazdır) bağlayıcı seçeneği artık ICF ve REF 'i de kabul eder.
+- `/VXD` bağlayıcı seçeneği kaldırılmıştır. Bağlayıcı artık Windows 95 ve Windows 98 cihaz sürücülerini oluşturmayı desteklemiyor. Bu cihaz sürücülerini oluşturmak için uygun bir DDK kullanın. VXD anahtar sözcüğü artık modül tanım dosyaları için geçerli değildir.
+- `/WS` bağlayıcı seçeneği kaldırılmıştır. Windows NT 4,0 için hedeflenen görüntüleri değiştirmek için `/WS` kullanıldı. IMAGECFG. exe-R filename, `/WS`yerine kullanılabilir. IMAGECFG. exe, SUPPORT\DEBUG\I386\ıMAGECFGIÇINDEKI Windows NT 4,0 CD-ROM ' da bulunabilir. EXE.
+- `/WX` (bağlayıcı uyarılarını hata olarak Işle) bağlayıcı seçeneği artık belgelenmiştir.
 
 ### <a name="new-linker-utility-features"></a>Yeni bağlayıcı yardımcı programı özellikleri
 
-- `/ALLOWISOLATION`Editbin seçeneği eklendi
+- `/ALLOWISOLATION` editbin seçeneği eklendi
 - Açıklama Modülü tanım dosyası AÇıKLAMASı kaldırıldı. Bağlayıcı artık sanal cihaz sürücüleri oluşturmayı desteklemiyor.
-- `/ERRORREPORT`seçenek bscmake. exe, dumpbin. exe, Editbin. exe ve lib. exe ' ye eklenmiştir.
-- `/LTCG`LIB seçeneği eklendi.
-- `/NXCOMPAT`Editbin seçeneği eklendi.
-- `/RANGE`dumpbin seçeneği eklendi.
-- `/TLS`dumpbin seçeneği eklendi.
-- `/WS`Editbin seçeneği kaldırılmıştır. `/WS`Windows NT 4,0 için hedeflenen görüntüleri değiştirmek için kullanılmıştır. IMAGECFG. exe-R dosya adı yerine `/WS`kullanılabilir. IMAGECFG. exe, SUPPORT\DEBUG\I386\ıMAGECFGIÇINDEKI Windows NT 4,0 CD-ROM ' da bulunabilir. EXE.
+- `/ERRORREPORT` seçenek bscmake. exe, dumpbin. exe, Editbin. exe ve lib. exe ' ye eklenmiştir.
+- `/LTCG` lib seçeneği eklendi.
+- `/NXCOMPAT` editbin seçeneği eklenmiştir.
+- `/RANGE` dumpbin seçeneği eklendi.
+- `/TLS` dumpbin seçeneği eklendi.
+- `/WS` editbin seçeneği kaldırılmıştır. Windows NT 4,0 için hedeflenen görüntüleri değiştirmek için `/WS` kullanıldı. IMAGECFG. exe-R filename, `/WS`yerine kullanılabilir. IMAGECFG. exe, SUPPORT\DEBUG\I386\ıMAGECFGIÇINDEKI Windows NT 4,0 CD-ROM ' da bulunabilir. EXE.
 - /WX [: NO] lib seçeneği eklendi.
 
 ### <a name="new-nmake-features"></a>Yeni NMAKE özellikleri
 
-- `/ERRORREPORT`eklendi.
-- `/G`eklendi.
+- `/ERRORREPORT` eklendi.
+- `/G` eklendi.
 - Önceden tanımlanmış kurallar güncelleştirildi.
 - Özyineleme makrosunda belgelenen $ (MAKE) makrosu, artık nmake. exe ' nin tam yolunu verir.
 
 ### <a name="new-masm-features"></a>Yeni masa özellikleri
 
 - Masd ifadeleri artık 64 bitlik değerlerdir. Önceki sürümlerde Masd ifadeleri 32 bitlik değerlerdir.
-- __Asm INT 3 yönergesi şimdi bir işlevin yerel olarak derlenmesine neden oluyor.
+- __Asm INT 3 yönergesi artık bir işlevin yerel olarak derlenmesine neden oluyor.
 - DIĞER ad (Masd) artık belgelenmiştir.
-- `/ERRORREPORT`ml. exe ve ml64. exe seçeneği eklenmiştir.
+- `/ERRORREPORT` ml. exe ve ml64. exe seçeneği eklenmiştir.
 - . Şimdi belgelenmiştir.
 - H2INC. exe, Visual C++ 2005 ile birlikte gelmez. H2INC kullanmaya devam etmeniz gerekiyorsa, Visual C++'ın önceki BIR sürümünden H2INC. exe ' yi kullanın.
 - ıMAGEREL işleci eklendi.
@@ -2147,7 +2147,7 @@ Derleyicinin bu sürümde son değişiklikleri vardır.
 - .SAVEXMM128
 - . SETFRAME Ayrıca, PROC yönergesi yalnızca x64 sözdizimi ile güncelleştirildi.
 - MMWORD yönergesi eklendi
-- `/omf`(ML. exe komut satırı seçeneği) artık şunları `/c`gösterir. ML. exe, OMF biçim nesnelerinin bağlanmasını desteklemez.
+- `/omf` (ML. exe komut satırı seçeneği) artık `/c`anlamına gelir. ML. exe, OMF biçim nesnelerinin bağlanmasını desteklemez.
 - SEGMENT yönergesi artık ek öznitelikleri desteklemektedir.
 - BÖLÜREL işleci eklendi.
 - XMMWORD yönergesi eklendi
@@ -2157,39 +2157,39 @@ Derleyicinin bu sürümde son değişiklikleri vardır.
 - Çeşitli işlevlerin güvenli sürümleri eklendi. Bu işlevler, hataları daha iyi bir şekilde işler ve yaygın güvenlik hatalarından kaçınmak için arabelleklerdeki sıkı denetimleri uygular. Yeni güvenli sürümler **_s** soneki tarafından tanımlanır.
 - Birçok işlevin var olan daha az güvenli sürümleri kullanımdan kaldırılmıştır. Kullanımdan kaldırma uyarılarını devre dışı bırakmak için _CRT_SECURE_NO_WARNINGS tanımlayın.
 - Varolan birçok işlev artık parametrelerini doğrular ve geçersiz parametre geçirildiğinde geçersiz parametre işleyicisini çağırır.
-- Birçok mevcut işlev artık daha `errno` önce olmadıkları yerde ayarlanır.
-- Tamsayı türünde `errno_t` typedef eklendi. `errno_t`bir işlev dönüş türü veya parametresi, öğesinden `errno`hata kodlarıyla ilişkili olduğunda kullanılır. `errno_t`değiştirilir `errcode`.
-- Yerel ayara bağımlı işlevler artık geçerli yerel ayarı kullanmak yerine yerel ayarı parametre olarak kullanan sürümlere sahiptir. Bu yeni işlevler **_l** sonekine sahiptir. Yerel ayar nesneleriyle çalışacak birkaç yeni işlev eklenmiştir. Yeni işlevler, `_get_current_locale` `_create_locale` ve`_free_locale`içerir.
+- Mevcut birçok işlev artık `errno` olarak ayarlanmıştır.
+- Tür tamsayı ile typedef `errno_t` eklendi. `errno_t`, bir işlev dönüş türü veya parametresi, `errno`hata kodlarıyla ilişkili olduğunda kullanılır. `errno_t` `errcode`yerini alır.
+- Yerel ayara bağımlı işlevler artık geçerli yerel ayarı kullanmak yerine yerel ayarı parametre olarak kullanan sürümlere sahiptir. Bu yeni işlevlerde **_l** soneki vardır. Yerel ayar nesneleriyle çalışacak birkaç yeni işlev eklenmiştir. Yeni işlevler `_get_current_locale`, `_create_locale` ve `_free_locale`içerir.
 - Dosya tanıtıcılarının kilitlenmesini ve kilidinin açılmasını desteklemek için yeni işlevler eklenmiştir.
-- Önceki sürümlerde olduğu gibi, işlev ailesibaşarıdurumundaerrno,sıfırolaraksıfırlanmaz.`_spawn`
-- Bağımsız değişkenlerin kullanılacağı sırayı belirtmenize izin veren işlevlerin ailesisürümleri.`printf`
-- Unicode artık desteklenen bir metin biçimidir. İşlevi `_open` _o_textw, _o_utf8 ve _o_utf16 özniteliklerini destekler. `fopen` İşlevi, Unicode biçimi belirtmeye yönelik "CCS = ENCODING" yöntemini destekler.
+- İşlevin `_spawn` ailesi, önceki sürümlerde olduğu gibi, başarı durumunda errno ile sıfır sıfırlama yapmaz.
+- Bağımsız değişkenlerin kullanılacağı sırayı belirtmenize izin veren `printf` işlevlerinin sürümleri.
+- Unicode artık desteklenen bir metin biçimidir. İşlev `_open` _O_TEXTW, _O_UTF8 ve _O_UTF16 özniteliklerini destekler. `fopen` işlevi, Unicode biçimi belirtmeye yönelik "CCS = ENCODING" yöntemini destekler.
 - Yönetilen kodda (MSIL) oluşturulan CRT kitaplıklarının yeni bir sürümü artık kullanılabilir ve `/clr` (ortak dil çalışma zamanı derlemesi) seçeneğiyle derlenirken kullanılır.
-- _fıleınfo kaldırıldı.
-- İçin `time_t` varsayılan boyut artık 64 bittir, bu da `time_t` aralığını ve birkaç süreyi de 3000 yılına kadar genişletir.
-- CRT artık iş parçacığı başına yerel ayarı ayarlamayı desteklemektedir. İşlev `_configthreadlocale` , bu özelliği desteklemek için eklenmiştir.
-- `_statusfp2` Ve`__control87_2` işlevleri, hem x87 hem de SSE2 kayan nokta işlemcisinde kayan nokta denetim sözcüğünün erişimine ve denetime izin vermek için eklenmiştir.
-- `_mkgmtime` Ve`_mkgmtime64` işlevleri, saatleri (struct tm) Greenwich Ortalama saatine (GMT) dönüştürme desteği sağlamak için eklenmiştir.
-- `swprintf` Ve`vswprintf` standart ile daha iyi uyum sağlamak için değişiklikler yapıldı.
+- _fileinfo kaldırıldı.
+- `time_t` için varsayılan boyut artık 64 bittir. Bu, `time_t` aralığını ve birkaç zaman işlevini 3000 yılına kadar genişletir.
+- CRT artık iş parçacığı başına yerel ayarı ayarlamayı desteklemektedir. `_configthreadlocale` işlevi bu özelliği desteklemek için eklenmiştir.
+- `_statusfp2` ve `__control87_2` işlevleri, hem x87 hem de SSE2 kayan nokta işlemcisinde kayan nokta denetim kelimesinin erişimine ve denetime izin verecek şekilde eklenmiştir.
+- `_mkgmtime` ve `_mkgmtime64` işlevleri, saat (struct tm) ile Greenwich saati (GMT) arasında dönüştürme desteği sağlamak için eklenmiştir.
+- `swprintf` ve `vswprintf`, standart ile daha iyi uyum sağlamak için değişiklikler yapıldı.
 - Yeni bir üst bilgi dosyası, ıNTRIN. H, bazı iç işlevler için prototipler sağlar.
-- `fopen` İşlevin şimdi bir N özniteliği vardır.
-- `_open` İşlevin şimdi bir _o_noınherit özniteliği vardır.
-- İşlev artık INT_MAX döndürüyor ve taşma üzerinde ERANGE olarak ayarlıyor `errno`. `atoi` Önceki sürümlerde, taşma davranışı tanımsızdır.
-- İşlev `printf` ailesi,% a ve% a biçim türü belirticileri kullanılarak ANSI C99 standardına göre uygulanan onaltılık kayan nokta çıkışını destekler.
-- `printf` Aile artık "ll" (uzun uzun) boyut önekini destekliyor.
-- `_controlfp` İşlev daha iyi performans için iyileştirildi.
+- `fopen` işlevin artık N özniteliği vardır.
+- `_open` işlevi artık bir _O_NOINHERIT özniteliğine sahip.
+- `atoi` işlevi artık INT_MAX döndürür ve taşma üzerinde `errno` olarak ayarlar. Önceki sürümlerde, taşma davranışı tanımsızdır.
+- `printf` ailesi işlevleri, ANSI C99 standardına göre uygulanan onaltılık kayan nokta çıkışını,% a ve% A biçim tür belirticileri kullanılarak destekler.
+- `printf` ailesi artık "ll" (uzun uzun) boyut önekini destekliyor.
+- `_controlfp` işlevi, daha iyi performans için iyileştirildi.
 - Bazı işlevlerin hata ayıklama sürümleri eklendi.
-- Eklendi `_chgsignl` ve`_cpysignl` (uzun çift sürümler).
-- Tür `_locale_t` tablosuna tür eklendi.
-- Bir dizideki `_countof` öğelerin sayısı hesaplanırken yeni makro makrosu eklendi.
+- `_chgsignl` ve `_cpysignl` eklendi (uzun çift sürümler).
+- Tür tablosuna `_locale_t` türü eklendi.
+- Bir dizideki öğelerin sayısı hesaplanırken yeni makro `_countof` makro eklendi.
 - Her bir işlev konusu .NET Framework eşdeğerleri için bir bölüm eklenmiştir.
-- Artık birkaç dize işlevi, çıkış arabellekleri çok küçük olduğunda başarısız olması yerine dizeleri kesilme seçeneğine sahiptir; bkz. **_Truncate**.
-- `_set_se_translator`Artık `/EHa` derleyici seçeneğinin kullanılmasını gerektirir.
-- `fpos_t`Artık **__int64** `/Za` (C kodu için) ve __stdc__ el ile ayarlandığında (kod için C++ ). **Yapı**olarak kullanılır.
+- Artık birkaç dize işlevi, çıkış arabellekleri çok küçük olduğunda başarısız olması yerine dizeleri kesilme seçeneğine sahiptir; bkz. **_TRUNCATE**.
+- `_set_se_translator` artık `/EHa` derleyici seçeneğinin kullanılmasını gerektirir.
+- `fpos_t` artık `/Za` (C kodu için) **__int64** ve __stdc__ el ile ayarlandığında (kod için C++ ). **Yapı**olarak kullanılır.
 - _CRT_DISABLE_PERFCRIT_LOCKS, tek iş parçacıklı programların g/ç performansını iyileştirebilir.
-- POSIX adları ISO C++ uyumlu adları (örneğin, yerine kullanım `_getch` `getch`) kullanım dışı bırakılmıştır.
+- POSIX adları ISO C++ uyumlu adları kullanım dışı bırakılmıştır (örneğin, `getch`yerine `_getch` kullanın).
 - Yeni bağlantı seçenekleri. obj dosyaları saf modda kullanılabilir
-- `_recalloc`, `realloc` ve`calloc`özelliklerini birleştirir.
+- `_recalloc`, `realloc` ve `calloc`özelliklerini birleştirir.
 
 ## <a name="whats-new-for-c-in-visual-studio-2003"></a>Visual Studio 2003 C++ ' deki yenilikler
 
@@ -2197,33 +2197,33 @@ Derleyicinin bu sürümde son değişiklikleri vardır.
 
 - Çalışma zamanının önceki bir sürümünde, geçerli sürüm derleyicisi C++ ile oluşturulmuş bir uygulama Için yönetilen uzantıların nasıl çalıştırılacağı hakkında bilgiler.
 - Sık sorulan sorular C++ Için yönetilen uzantılar.
-- İçin C++yönetilen uzantıları kullanmak üzere mevcut, yerel bir uygulamanın bağlantı noktasının nasıl yapılacağını gösteren bir izlenecek yol eklenmiştir: İzlenecek yol: Mevcut bir yerel C++ uygulamanın .NET Framework bileşenleriyle birlikte çalışmak üzere taşıma.
+- Şu şekilde yönetilen uzantıları kullanmak için var olan yerel bir uygulamanın bağlantı noktasının nasıl yapılacağını gösteren bir izlenecek yol C++eklenmiştir: İzlenecek yol: mevcut bir C++ yerel uygulamanın .NET Framework bileşenleriyle birlikte çalışmak üzere taşıma.
 - Artık bir değer türünün yönteminde bir temsilci oluşturabilirsiniz.
 - Derleyicinin C++ standardı ile uyumluluğu, Visual C++ .NET 2003 için önemli ölçüde geliştirilmiştir.
-- `/arch`derleyici seçeneği eklenmiştir.
-- `/Gf`kullanım dışıdır ve sonraki görsel C++sürümünde kaldırılacaktır.
-- `/G7`derleyici seçeneği eklenmiştir.
-- Derleyici `/GS` seçeneği, yerel değişkenlerin doğrudan arabellek taşmalarına karşı korunmasına yardımcı olmak için geliştirilmiştir.
-- `/noBool` Derleyici seçeneği kaldırılmıştır. Derleyici artık **bool** 'un bir C++ kaynak kod dosyasında yalnızca bir anahtar sözcük (tanımlayıcı değil) olarak görünmesine izin veriyor.
-- **Uzun uzun** tür artık bir **__int64** **typedef** olarak kullanılabilir, CRT içinde henüz **uzun süredir** desteklenmeyen bir değer olmadığını unutmayın.
-- `/Zm` Derleyici seçeneği artık önceden derlenmiş üst bilgi bellek ayırma sınırını belirtir.
+- `/arch` derleyici seçeneği eklenmiştir.
+- `/Gf` kullanımdan kaldırılmıştır ve sonraki görsel C++sürümünde kaldırılacaktır.
+- `/G7` derleyici seçeneği eklenmiştir.
+- `/GS` derleyici seçeneği, yerel değişkenlerin doğrudan arabellek taşmalarına karşı korunmasına yardımcı olmak için geliştirilmiştir.
+- `/noBool` derleyici seçeneği kaldırılmıştır. Derleyici artık **bool** 'un bir C++ kaynak kod dosyasında yalnızca bir anahtar sözcük (tanımlayıcı değil) olarak görünmesine izin veriyor.
+- **Uzun uzun** tür artık **__int64** bir **typedef** olarak kullanılabilir, CRT içinde henüz **uzun süredir** desteklenmeyen bir değer olmadığını unutmayın.
+- `/Zm` derleyici seçeneği artık önceden derlenmiş üst bilgi bellek ayırma sınırını belirtir.
 - _InterlockedCompareExchange iç artık belgelenmiş.
-- _Interlockedazaltma iç artık belgelenmiş.
-- _InterlockedExchange iç artık belgelenmiştir.
-- _InterlockedExchangeAdd iç artık belgelenmiştir.
-- _InterlockedIncrement iç şimdi belgelenmiştir.
-- _Readwriteengel iç eklendi.
+- _InterlockedDecrement iç artık belgelenmiş.
+- _InterlockedExchange iç artık belgelenmiş.
+- _InterlockedExchangeAdd iç artık belgelenmiş.
+- _InterlockedIncrement iç artık belgelenmiş.
+- _ReadWriteBarrier iç eklendi.
 
 ### <a name="attributes"></a>Öznitelikler
 
-- `implements`öznitelik artık belgelenmiştir.
+- `implements` öznitelik artık belgelenmiştir.
 
 ### <a name="linker-features"></a>Bağlayıcı Özellikleri
 
 Aşağıdaki bağlayıcı anahtarları eklendi:
 
 - /ASSEMBLYDEBUG
-- /ASSEMBLYLINKRESOURCE
+- /ASSEMBLYLıNKRESOURCE
 - DELAYSIGN
 - /KEYFILE
 - /KEYCONTAINER

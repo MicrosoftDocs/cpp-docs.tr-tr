@@ -1,8 +1,6 @@
 ---
 title: ASSERT Yerine VERIFY Kullanma
 ms.date: 05/06/2019
-f1_keywords:
-- assert
 helpviewer_keywords:
 - ASSERT statements
 - debugging [MFC], ASSERT statements
@@ -11,24 +9,24 @@ helpviewer_keywords:
 - debugging assertions
 - assertions, debugging
 ms.assetid: 4c46397b-3fb1-49c1-a09b-41a72fae3797
-ms.openlocfilehash: 83ea24904c75d41f7c9c9b383f8b7cf8c39e328f
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: bfc0847677ae232fef67ab6200c626472f042bdb
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217676"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438614"
 ---
 # <a name="using-verify-instead-of-assert"></a>ASSERT Yerine VERIFY Kullanma
 
-MFC uygulamanızı hata ayıklama sürümünü çalıştırdığınızda, herhangi bir sorun yok varsayalım. Ancak aynı uygulamanın yayın sürümünü çöküyor, hatalı sonuçlar verir ve/veya bazı diğer anormal bir davranış gösteriyor.
+MFC uygulamanızın hata ayıklama sürümünü çalıştırdığınızda bir sorun olmadığını varsayalım. Ancak, aynı uygulamanın yayın sürümü kilitleniyor, hatalı sonuçlar döndürüyor ve/veya bazı olağan dışı davranışlar sergiler.
 
-Doğru bir şekilde gerçekleştirir doğrulamak için bir onay deyimi önemli kod yerleştirdiğinizde bu soruna neden olabilir. MFC programı bir yayın derlemesinin ASSERT deyimleri satırlarıdır olduğundan, bir yayın yapı içinde kod çalıştırmaz.
+Bu sorun, önemli kodu doğru şekilde gerçekleştiğini doğrulamak üzere bir onay bildirimine yerleştirdiğinizde meydana gelir. ONAYLAMA deyimleri, bir MFC programının yayın derlemesinde yorum yaptığından, kod bir yayın derlemesi içinde çalışmaz.
 
-Bir işlev çağrısı başarılı olduğunu doğrulamak için onayı kullanıyorsanız, kullanmayı [doğrulama](../mfc/reference/diagnostic-services.md#verify) yerine. VERIFY makrosu hem hata ayıklama bağımsız kendi değişkenlerini değerlendirir ve uygulamayı yayın oluşturur.
+Bir işlev çağrısının başarılı olduğunu onaylamak için onay kullanıyorsanız, bunun yerine [VERIFY](../mfc/reference/diagnostic-services.md#verify) kullanmayı deneyin. VERIFY makrosu, uygulamanın hata ayıklama ve yayın Derlemeleriyle kendi bağımsız değişkenlerini değerlendirir.
 
-Başka bir tekniktir işlevin dönüş değeri geçici bir değişkene atayın ve ardından değişkeni bir onay deyimi içinde test etmek için tercih edilir.
+Başka bir tercih edilen teknik, işlevin dönüş değerini geçici bir değişkene atamak ve sonra değişkeni bir onay ifadesinde test etmek.
 
-Aşağıdaki kod parçası inceleyin:
+Aşağıdaki kod parçasını inceleyin:
 
 ```
 enum {
@@ -40,15 +38,15 @@ strcpy_s( buf, sizeOfBuffer, "Hello, World" );
 free( buf );
 ```
 
-Bu kod, bir MFC uygulaması, bir hata ayıklama sürümünde mükemmel bir şekilde çalışır. Çağrı `calloc( )` başarısız dosya ve satır numarası içeren bir tanılama iletisi görünür. Ancak, bir perakende bir MFC uygulaması oluşturun:
+Bu kod, bir MFC uygulamasının hata ayıklama sürümünde kusursuz bir şekilde çalışır. `calloc( )` çağrısı başarısız olursa, dosya ve satır numarası içeren bir tanılama iletisi görüntülenir. Ancak, bir MFC uygulamasının perakende derlemesinde:
 
-- çağrı `calloc( )` hiçbir zaman oluşur, bırakarak `buf` başlatılmamış, veya
+- `calloc( )` çağrısı hiçbir şekilde gerçekleşmez, `buf` başlatılmamış olarak bırakılır veya
 
-- `strcpy_s( )` kopya "`Hello, World`" bellek, büyük olasılıkla uygulama kilitlenme veya sistem yanıt vermeyi durdurmasına neden rastgele bir parçası olarak veya
+- `strcpy_s( )` "`Hello, World`" öğesini rastgele bir bellek parçasına kopyalar, büyük olasılıkla uygulamanın kilitlenmesi veya sistemin yanıt vermemesine neden olabilir veya
 
-- `free()` hiçbir zaman ayrılan belleği boşaltmak çalışır.
+- `free()` hiç ayrılmamış belleği serbest bırakma girişiminde bulunur.
 
-ASSERT doğru bir şekilde kullanmak için kodu örneği aşağıdaki değiştirilmelidir:
+ONAYı doğru bir şekilde kullanmak için, kod örneği aşağıdaki şekilde değiştirilmelidir:
 
 ```
 enum {
@@ -61,7 +59,7 @@ strcpy_s( buf, sizeOfBuffer, "Hello, World" );
 free( buf );
 ```
 
-Veya bunun yerine doğrulama kullanabilirsiniz:
+Ya da bunun yerine VERIFY kullanabilirsiniz:
 
 ```
 enum {

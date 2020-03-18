@@ -11,7 +11,6 @@ f1_keywords:
 - CStreamRowset.CStreamRowset
 - ATL.CStreamRowset.CStreamRowset
 - ATL::CStreamRowset::CStreamRowset
-- CStreamRowset
 - CStreamRowset<TAccessor>::CStreamRowset
 - ATL::CStreamRowset<TAccessor>::CStreamRowset
 - CStreamRowset<TAccessor>.Close
@@ -27,16 +26,16 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: b566ddab89d2198e3f6b24eb9a20c60747749d1a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a0e67ff1e800ff0f838b863eaaf839d4456ed82
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368675"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441081"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset Sınıfı
 
-Kullanılan bir `CCommand` veya `CTable` bildirimi.
+`CCommand` veya `CTable` bildiriminde kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,11 +47,11 @@ class CStreamRowset
 ### <a name="parameters"></a>Parametreler
 
 *TAccessor*<br/>
-Bir erişimci sınıfı.
+Erişimci sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -60,31 +59,31 @@ Bir erişimci sınıfı.
 
 |||
 |-|-|
-|[CStreamRowset](#cstreamrowset)|Oluşturucu. Oluşturur ve başlatır `CStreamRowset` nesne.|
-|[Kapat](#close)|Yayınları [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) sınıfında arabirim işaretçisi.|
+|[CStreamRowset](#cstreamrowset)|Oluşturucu. `CStreamRowset` nesnesini başlatır ve başlatır.|
+|[~Eksik](#close)|Sınıfında [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) arabirim işaretçisini yayınlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım `CStreamRowset` içinde `CCommand` veya `CTable` bildirimi, örneğin:
+`CCommand` veya `CTable` bildiriminde `CStreamRowset` kullanın, örneğin:
 
 [!code-cpp[NVC_OLEDB_Consumer#11](../../data/oledb/codesnippet/cpp/cstreamrowset-class_1.cpp)]
 
-veya
+or
 
 [!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]
 
-`ICommand::Execute` döndürür bir `ISequentialStream` depolanan işaretçi `m_spStream`. Daha sonra `Read` XML biçiminde (Unicode dize) veri almak için yöntemi. Örneğin:
+`ICommand::Execute`, `m_spStream`depolanan `ISequentialStream` bir işaretçi döndürür. Daha sonra, (Unicode dize) verilerini XML biçiminde almak için `Read` yöntemini kullanırsınız. Örnek:
 
 [!code-cpp[NVC_OLEDB_Consumer#13](../../data/oledb/codesnippet/cpp/cstreamrowset-class_3.cpp)]
 
-SQL Server 2000 XML biçimlendirme gerçekleştirir ve tüm sütun ve satır kümesinin bir XML dizesi olarak tüm satırları döndürür.
+SQL Server 2000, XML biçimlendirmesini gerçekleştirir ve tüm sütunları ve satır kümesinin tüm satırlarını tek bir XML dizesi olarak döndürür.
 
 > [!NOTE]
->  Bu özellik yalnızca SQL Server 2000 ile çalışır.
+>  Bu özellik yalnızca SQL Server 2000 ile birlikte kullanılabilir.
 
-## <a name="cstreamrowset"></a> CStreamRowset::CStreamRowset
+## <a name="cstreamrowset"></a>CStreamRowset:: CStreamRowset
 
-Oluşturur ve başlatır `CStreamRowset` nesne.
+`CStreamRowset` nesnesini başlatır ve başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -92,9 +91,9 @@ Oluşturur ve başlatır `CStreamRowset` nesne.
 CStreamRowset();
 ```
 
-## <a name="close"></a> CStreamRowset::Close
+## <a name="close"></a>CStreamRowset:: Close
 
-Yayınları [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) sınıfında arabirim işaretçisi.
+Sınıfında [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) arabirim işaretçisini yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -104,5 +103,5 @@ void Close();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

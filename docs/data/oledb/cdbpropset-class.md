@@ -21,7 +21,6 @@ f1_keywords:
 - ATL.CDBPropSet.SetGUID
 - CDBPropSet.SetGUID
 - ATL::CDBPropSet::SetGUID
-- SetGUID
 - CDBPropSet::SetGUID
 helpviewer_keywords:
 - CDBPropSet class
@@ -33,16 +32,16 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: b58c0262d361ede37bc3db68784177ec4c29f3a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 08cab967fbfbd4b3207e96a4fdbd2d2dbc6da793
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325032"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447454"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
-Devralınan `DBPROPSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve `AddProperty` erişim yöntemi.
+`DBPROPSET` yapısından devralır ve anahtar alanlarını ve `AddProperty` erişim yöntemini Başlatan bir Oluşturucu ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,7 +51,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -60,23 +59,23 @@ class CDBPropSet : public tagDBPROPSET
 
 |||
 |-|-|
-|[AddProperty](#addproperty)|Bir özellik için özellik kümesi ekler.|
+|[AddProperty](#addproperty)|Özellik kümesine bir özellik ekler.|
 |[CDBPropSet](#cdbpropset)|Oluşturucu.|
-|[Setguıd](#setguid)|Kümeleri `guidPropertySet` alanını `DBPROPSET` yapısı.|
+|[Setguıd](#setguid)|`DBPROPSET` yapısının `guidPropertySet` alanını ayarlar.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](#op_equal)|Bir özellik kümesinden diğerine içeriğini atar.|
+|[işleç =](#op_equal)|Bir özelliğin içeriğini başka bir özellik kümesine atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-OLE DB sağlayıcıları ve tüketiciler kullanım `DBPROPSET` dizileri geçirilecek yapıları `DBPROP` yapıları. Her `DBPROP` yapısı ayarlanabilir tek bir özelliği temsil eder.
+OLE DB sağlayıcıları ve tüketicileri `DBPROP` yapıların dizilerini iletmek için `DBPROPSET` yapılarını kullanır. Her `DBPROP` yapısı, ayarlanabilir tek bir özelliği temsil eder.
 
-## <a name="addproperty"></a> CDBPropSet::AddProperty
+## <a name="addproperty"></a>CDBPropSet:: AddProperty
 
-Bir özellik için özellik kümesi ekler.
+Özellik kümesine bir özellik ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -98,36 +97,36 @@ bool AddProperty(DWORD dwPropertyID,
 #### <a name="parameters"></a>Parametreler
 
 *dwPropertyID*<br/>
-[in] Eklenecek özelliğin kimliği. Başlatmak için kullanılan `dwPropertyID` , `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Eklenecek özelliğin KIMLIĞI. Özellik kümesine eklenen `DBPROP` yapısının `dwPropertyID` başlatmak için kullanılır.
 
 *var*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir değişken `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısının özellik değerini başlatmak için kullanılan bir varyant.
 
 *szValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir dize `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısının özellik değerini başlatmak için kullanılan dize.
 
 *bDeğer*<br/>
-[in] A `BYTE` veya boolean değeri için özellik değerini başlatmak için kullanılan `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısına yönelik özellik değerini başlatmak için kullanılan bir `BYTE` veya Boole değeri.
 
 *nDeğer*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir tamsayı değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısının özellik değerini başlatmak için kullanılan bir tamsayı değeri.
 
 *fltValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısının özellik değerini başlatmak için kullanılan kayan nokta değeri.
 
 *dblValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir çift duyarlıklı kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısının özellik değerini başlatmak için kullanılan çift duyarlıklı kayan nokta değeri.
 
 *cyValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan CY para birimi değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+'ndaki Özellik kümesine eklenen `DBPROP` yapısının özellik değerini başlatmak için kullanılan bir CY para birimi değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa özelliği başarıyla eklendi. Aksi takdirde, **false**.
+Özellik başarıyla eklendiyse **true** . Aksi takdirde, **false**.
 
-## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
+## <a name="cdbpropset"></a>CDBPropSet:: CDBPropSet
 
-Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısı.
+Oluşturucu. [Dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısının `rgProperties`, `cProperties`ve `guidPropertySet` alanlarını başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -141,15 +140,15 @@ CDBPropSet();
 
 #### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
-[in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.
+*'ini*<br/>
+'ndaki `guidPropertySet` alanı başlatmak için kullanılan bir GUID.
 
-*propset*<br/>
-[in] Başka bir `CDBPropSet` kopya oluşumuna nesnesi.
+*PropSet*<br/>
+'ndaki Kopya oluşturma için başka bir `CDBPropSet` nesnesi.
 
-## <a name="setguid"></a> CDBPropSet::setguıd
+## <a name="setguid"></a>CDBPropSet:: Setguıd
 
-Kümeleri `guidPropertySet` alanındaki `DBPROPSET` yapısı.
+`DBPROPSET` yapısındaki `guidPropertySet` alanını ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -159,16 +158,16 @@ void SetGUID(const GUID& guid) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
-[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısı.
+*'ini*<br/>
+'ndaki [Dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısının `guidPropertySet` alanını ayarlamak IÇIN kullanılan GUID.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropset-cdbpropset.md) de.
+Bu alan, [Oluşturucu](../../data/oledb/cdbpropset-cdbpropset.md) tarafından da ayarlanabilir.
 
-## <a name="op_equal"></a> CDBPropSet::operator =
+## <a name="op_equal"></a>CDBPropSet:: operator =
 
-Bir özellik için başka bir özellik set içeriğini atar.
+Bir özellik kümesinin içeriğini başka bir özellik kümesine atar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -178,8 +177,8 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CDBPropIDSet Sınıfı](../../data/oledb/cdbpropidset-class.md)<br/>
-[DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367(v=vs.85))
+[Dbpropset yapısı](/previous-versions/windows/desktop/ms714367(v=vs.85))
 [DBPROP yapısı](/previous-versions/windows/desktop/ms717970(v=vs.85))

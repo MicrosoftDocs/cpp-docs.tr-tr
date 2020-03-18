@@ -25,35 +25,35 @@ f1_keywords:
 - VC.Project.VCLinkerTool.Clang.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.Clang.AdditionalDependencies
 - VC.Project.VCLinkerTool.Clang.LibraryDependencies
-ms.openlocfilehash: 844af38ff57b8721e21e8e2c44d9a8c34c94dfe3
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.openlocfilehash: 55b944040157d13741b992f4ec66c35d1b117d95
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78177614"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446532"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang bağlayıcı Özellikleri (Android C++)
 
-Özellik | Açıklama | Yapabileceği
---- | ---| ---
-Çıkış Dosyası | Seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. (-o)
-Ilerlemeyi göster | Bağlayıcı Ilerleme Iletilerini yazdırır.
-Sürüm | -Version seçeneği, bağlayıcıya yürütülebilir dosyanın üstbilgisine bir sürüm numarası koymasını söyler.
-Ayrıntılı çıktıyı etkinleştir | -Verbose seçeneği, bağlayıcıya hata ayıklama için ayrıntılı iletiler çıkışını söyler.
-Artımlı bağlamayı etkinleştir | Seçeneği bağlayıcıya artımlı bağlamayı etkinleştirmesini söyler.
-Paylaşılan kitaplık arama yolu | Kullanıcının paylaşılan kitaplık arama yolunu doldurmasına izin verir.
-Ek kitaplık dizinleri | Kullanıcının ortam kitaplık yolunu geçersiz kılmasına izin verir. (-L klasörü).
-Çözümlenmemiş sembol başvurularını raporla | Etkin olduğunda bu seçenek çözümlenmemiş sembol başvurularını rapor eder.
-Bellek kullanımı Için iyileştirin | Bellek kullanımı için okuyarak, sembol tablolarını gereken şekilde iyileştirin.
-Belirli varsayılan kitaplıkları Yoksay | Yoksayılacak bir veya daha fazla varsayılan kitaplık adını belirtir.
-Sembol başvurularını zorla | Simgenin çıkış dosyasına tanımsız bir sembol olarak girilmesini zorla.
-Hata ayıklayıcı sembol bilgisi | Çıkış dosyasından hata ayıklayıcı sembol bilgisi. | **Tümünü dahil et**<br>**Yeniden konumlandırma Işlemesi için gereksiz sembolleri atla**<br>**Yalnızca hata ayıklayıcı sembol bilgisini atla**<br>**Tüm sembol bilgilerini atla**<br>
-Paket hata ayıklayıcı sembol bilgisi | Paketlemeden önce hata ayıklayıcı sembolleri bilgilerini Strip.  Hata ayıklama için özgün ikilinin bir kopyası kullanılacaktır.
-Eşleme dosyası adı | MAP seçeneği, bağlayıcının Kullanıcı tanımlı ada sahip bir eşleme dosyası oluşturmasını söyler.
-Yeniden konumlandırmadan sonra değişkenleri ReadOnly olarak işaretle | Bu seçenek, yeniden konumlandırmadan sonra değişkenleri salt okunurdur.
-Hemen Işlev bağlamayı etkinleştir | Bu seçenek, hemen işlev bağlamasının nesnesini işaretler.
-Yürütülebilir yığın gerektir | Bu seçenek çıktıyı yürütülebilir yığın gerektirmeyen olarak işaretler.
-Tüm arşiv | Tüm arşiv kaynaklardaki tüm kodu ve ek bağımlılıkları kullanır.
-Ek Seçenekler | Ek seçenekler.
-{1&gt;Ek Bağımlılıklar&lt;1} | Bağlantı komut satırına eklenecek ek öğeleri belirtir.
-Kitaplık bağımlılıkları | Bu seçenek bağlayıcı komut satırına eklenecek ek kitaplıkların belirtilmesine izin verir. Ek kitaplıklar, *LIB* ile başlayan ve *. a* veya *. so* uzantılı bağlayıcı komut satırının sonuna eklenir.  (-lFILE)
+| Özellik | Açıklama | Yapabileceği |
+|--|--|--|
+| Çıkış Dosyası | Seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. (-o) |
+| Ilerlemeyi göster | Bağlayıcı Ilerleme Iletilerini yazdırır. |
+| Sürüm | -Version seçeneği, bağlayıcıya yürütülebilir dosyanın üstbilgisine bir sürüm numarası koymasını söyler. |
+| Ayrıntılı çıktıyı etkinleştir | -Verbose seçeneği, bağlayıcıya hata ayıklama için ayrıntılı iletiler çıkışını söyler. |
+| Artımlı bağlamayı etkinleştir | Seçeneği bağlayıcıya artımlı bağlamayı etkinleştirmesini söyler. |
+| Paylaşılan kitaplık arama yolu | Kullanıcının paylaşılan kitaplık arama yolunu doldurmasına izin verir. |
+| Ek kitaplık dizinleri | Kullanıcının ortam kitaplık yolunu geçersiz kılmasına izin verir. (-L klasörü). |
+| Çözümlenmemiş sembol başvurularını raporla | Etkin olduğunda bu seçenek çözümlenmemiş sembol başvurularını raporlar. |
+| Bellek kullanımı Için iyileştirin | Bellek kullanımı için okuyarak, sembol tablolarını gereken şekilde iyileştirin. |
+| Belirli varsayılan kitaplıkları Yoksay | Yoksayılacak bir veya daha fazla varsayılan kitaplık adını belirtir. |
+| Sembol başvurularını zorla | Simgenin çıkış dosyasına tanımsız bir sembol olarak girilmesini zorla. |
+| Hata ayıklayıcı sembol bilgisi | Çıkış dosyasından hata ayıklayıcı sembol bilgisi. | **Tümünü dahil et**<br /><br />**Yeniden konumlandırma Işlemesi için gereksiz sembolleri atla**<br /><br />**Yalnızca hata ayıklayıcı sembol bilgisini atla**<br /><br />**Tüm sembol bilgilerini atla** |
+| Paket hata ayıklayıcı sembol bilgisi | Paketlemeden önce hata ayıklayıcı sembolleri bilgilerini Strip.  Hata ayıklama için özgün ikilinin bir kopyası kullanılır. |
+| Eşleme dosyası adı | MAP seçeneği, bağlayıcının Kullanıcı tanımlı ada sahip bir eşleme dosyası oluşturmasını söyler. |
+| Yeniden konumlandırmadan sonra değişkenleri ReadOnly olarak işaretle | Bu seçenek, yeniden konumlandırmadan sonra değişkenleri salt okunurdur. |
+| Hemen Işlev bağlamayı etkinleştir | Bu seçenek, hemen işlev bağlamasının nesnesini işaretler. |
+| Yürütülebilir yığın gerektir | Bu seçenek çıktıyı yürütülebilir yığın gerektirmeyen olarak işaretler. |
+| Tüm arşiv | Tüm arşiv kaynaklardaki tüm kodu ve ek bağımlılıkları kullanır. |
+| Ek Seçenekler | Ek seçenekler. |
+| {1&gt;Ek Bağımlılıklar&lt;1} | Bağlantı komut satırına eklenecek ek öğeleri belirtir. |
+| Kitaplık bağımlılıkları | Bu seçenek bağlayıcı komut satırına eklenecek ek kitaplıkların belirtilmesine izin verir. Ek kitaplıklar, *LIB* ile başlayan ve *. a* veya *. so* uzantılı bağlayıcı komut satırının sonuna eklenir.  (-lFILE) |

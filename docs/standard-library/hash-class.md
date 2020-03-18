@@ -7,8 +7,6 @@ f1_keywords:
 - memory/std::hash
 - string/std::hash
 - system_error/std::hash
-- thread/std::hash
-- typeindex/std::hash
 - vector/std::hash
 - XSTDDEF/std::hash
 - xstring/std::hash
@@ -23,12 +21,12 @@ helpviewer_keywords:
 - std::hash [C++]
 - std::hash [C++]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
-ms.openlocfilehash: e30810412db29473597da144d2dd42bdb8184f7e
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: aa51e56197ba79afbe2bd2597596c52b23a4f65b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687995"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446586"
 ---
 # <a name="hash-class"></a>hash Sınıfı
 
@@ -45,7 +43,7 @@ struct hash {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Function nesnesi bir karma işlevi tanımlar, bu tür değeri, dizin değerlerinin dağıtımına göre değer *eşlemek için uygundur* . Üye `operator()`, sınıf şablonları `unordered_map`, `unordered_multimap`, `unordered_set` ve `unordered_multiset` ile kullanım için uygun *değer için bir*karma kod döndürür. Standart Kitaplık, temel türler için uzmanlık sağlar: *Ty* , işaretçi türleri ve numaralandırma türleri dahil herhangi bir skalar tür olabilir. Ayrıca, kitaplık türleri için `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, 0, 1, 2 , 3, 4, 5, 6 ve 7.
+Function nesnesi bir karma işlevi tanımlar, bu tür değeri, dizin değerlerinin dağıtımına göre değer *eşlemek için uygundur* . Üye `operator()`, sınıf şablonları `unordered_map`, `unordered_multimap`, `unordered_set`ve `unordered_multiset`ile kullanım için uygun *değer için bir*karma kod döndürür. Standart Kitaplık, temel türler için uzmanlık sağlar: *Ty* , işaretçi türleri ve numaralandırma türleri dahil herhangi bir skalar tür olabilir. Ayrıca, kitaplık türleri için `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant`ve `vector<bool>`için özelleştirilmiş türler vardır.
 
 ## <a name="example"></a>Örnek
 
@@ -72,13 +70,13 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<functional >
+**Üstbilgi:** \<işlevsel >
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< unordered_map >](../standard-library/unordered-map.md) \
-[unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md) \
-[unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md) \
+[< unordered_map >](../standard-library/unordered-map.md)\
+[unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md)\
+[unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md)\
 [<unordered_set>](../standard-library/unordered-set.md)

@@ -2,7 +2,6 @@
 title: 'Bit düzeyinde kapsamlı OR işleci: |'
 ms.date: 06/14/2018
 f1_keywords:
-- bitor
 - '|'
 helpviewer_keywords:
 - OR operator [C++], bitwise inclusive
@@ -10,28 +9,28 @@ helpviewer_keywords:
 - inclusive OR operator
 - '| operator'
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
-ms.openlocfilehash: 848bf3b2ec61084b59ab5b1ee6807f6066a4675e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0df3493930206d655c0d9bca8a2468151aa3c2c6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184299"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445518"
 ---
 # <a name="bitwise-inclusive-or-operator-"></a>Bit düzeyinde kapsamlı OR işleci: |
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *İfade1* **|** *expression2*
+> *ifade1* **|** *İfade2*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde kapsamlı OR işleci (**&#124;**) karşılık gelen bit ikinci işlenenin ilk işlenenin her bitini karşılaştırır. Her iki bit 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.
+Bit düzeyinde kapsamlı OR işleci ( **&#124;** ), ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine karşılaştırır. Her iki bit de 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.
 
-Bit düzeyinde kapsamlı OR işlecinin her iki işleneni de, integral türde olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md) işlenenlere uygulanır.
+Bit düzeyinde kapsamlı OR işlecinin her iki işleneni de, integral türde olmalıdır. [Standart dönüştürmelerde](standard-conversions.md) ele alınan Olağan aritmetik dönüştürmeler işlenenlere uygulanır.
 
 ## <a name="operator-keyword-for-124"></a>İçin işleç anahtar sözcüğü&#124;
 
-**Bitor** işlecidir öğesinin metin eşdeğeridir **&#124;**. Erişmenin iki yöntemi vardır **bitor** programlarınızda işleci: üstbilgi dosyasını dahil \<iso646.h >, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.
+**Bitor** işleci, öğesinin **&#124;** metin eşdeğeridir. Programlarınızdaki **bitor** işlecine erişmenin iki yolu vardır: \<iso646. h > üst bilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
 
 ## <a name="example"></a>Örnek
 

@@ -1,26 +1,24 @@
 ---
 title: CTreeCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CTreeCtrl
 helpviewer_keywords:
 - CTreeCtrl class [MFC], about CTreeCtrl
 - tree controls [MFC], using
 ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
-ms.openlocfilehash: ab73ea66af27e6c1de43ff09074a9539f7518700
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 443ad948e7d48eaefbb74165a0072966b22439b9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411662"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442196"
 ---
 # <a name="using-ctreectrl"></a>CTreeCtrl Kullanma
 
-Sınıfı tarafından temsil edilen bir ağaç denetimi [CTreeCtrl](../mfc/reference/ctreectrl-class.md), disk üzerinde hiyerarşik bir dizin veya dosya ve dizinleri girişleri başlıkları bir belgede gibi öğeleri listesini görüntüleyen bir pencere. Her öğesi bir etiket ve isteğe bağlı bir bit eşlemli görüntü oluşur ve her bir öğe ile ilişkili alt öğeleri listesi olabilir. Kullanıcı, bir öğeye tıklayarak genişletin ve ilişkili listesini alt öğeleri Daralt. Dizin ağacında dosya Gezgini sol bölmesinde, ağaç denetimi örneğidir.
+[Ctreecini](../mfc/reference/ctreectrl-class.md)sınıfı tarafından temsil edilen bir ağaç denetimi, bir belgedeki başlıklar, bir dizindeki girişler veya bir diskteki dosya ve dizinler gibi öğelerin hiyerarşik bir listesini görüntüleyen bir penceredir. Her öğe bir etiketten ve isteğe bağlı bir bit eşlenmiş görüntüden oluşur ve her öğe onunla ilişkili alt öğelerin bir listesine sahip olabilir. Bir öğeye tıklayarak Kullanıcı, ilişkili alt öğelerin listesini genişletebilir ve daraltabilir. Dosya Gezgini 'nin sol bölmesindeki dizin ağacı, ağaç denetimine bir örnektir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [CTreeCtrl ile CTreeView Karşılaştırması](../mfc/ctreectrl-vs-ctreeview.md)
+- [Ctreec, ile CTreeView](../mfc/ctreectrl-vs-ctreeview.md)
 
 - [Ağaç Denetimlerini Kullanma](../mfc/using-tree-controls.md)
 

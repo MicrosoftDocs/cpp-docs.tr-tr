@@ -1,17 +1,15 @@
 ---
 title: Sağlamlık
 ms.date: 11/04/2016
-f1_keywords:
-- c.runtime
 helpviewer_keywords:
 - robustness [CRT]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
-ms.openlocfilehash: 108b4c9dde08adf1a3c54c810f68be69bf150472
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 5e13152b2c31511cce4df9976d6c800960c099a5
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739608"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444879"
 ---
 # <a name="robustness"></a>Sağlamlık
 
@@ -19,7 +17,7 @@ Programınızın sağlamlığını artırmak için aşağıdaki C çalışma zam
 
 ## <a name="run-time-robustness-functions"></a>Çalışma zamanı sağlamlık Işlevleri
 
-|İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|İşlev|Kullanım|
 |--------------|---------|
 |[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|**Yeni** operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır.|
 |[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Oluşturulmuş özel durumlar olarak C++ Win32 özel durumlarını (C yapılandırılmış özel durumlar) işler.|

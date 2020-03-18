@@ -217,7 +217,6 @@ f1_keywords:
 - concurrent_vector/Concurrency::details::_Concurrent_vector_base_v4::_Segment_t
 - concrt/Concurrency::details::_ReentrantPPLLock::_Scoped_lock
 - ppl/Concurrency::_Task_handle_base_with_dtor::_Task_handle_base
-- DWORD
 - concurrent_queue/Concurrency::details::_Concurrent_queue_base_v4::_Internal_empty
 - concrt/Concurrency::details::_TaskCollection::_Wait
 - agents/Concurrency::_Order_node_base::consume_message
@@ -453,25 +452,25 @@ helpviewer_keywords:
 - LPSECURITY_ATTRIBUTES typedef
 - HRESULT typedef
 ms.assetid: a057c776-7caa-4605-8f33-9815cf6f9b27
-ms.openlocfilehash: fa1156aa6406f1c34712e845612147a42b753184
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1ae4616400069b44e23e30e3df69aae6dec6592
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180153"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446284"
 ---
 # <a name="reference-concurrency-runtime"></a>Başvuru (Eşzamanlılık Çalışma Zamanı)
 
-Bu bölümde, eşzamanlılık çalışma zamanı için başvuru bilgileri içerir.
+Bu bölüm Eşzamanlılık Çalışma Zamanı için başvuru bilgileri içerir.
 
 > [!Note]
-> C++ Dil standardı, kütüphane gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcı kullanımını ayırır. Kodunuzda bu adları kullanmayın. Öğe adları bu kurala uymayan garantili değildir ve gelecekte değişikliğe tabi olduğu kodun çalışma biçiminin serbest bırakır. Bu nedenlerden dolayı bu tür kod öğeleri eşzamanlılık çalışma zamanı belgelerinden çıkarılır.
+> Dil C++ standardı, kitaplıklar gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcıların kullanımını saklı tutar. Bu adları kodunuzda kullanmayın. Adları bu kuralı izleyen kod öğelerinin davranışı garanti edilmez ve gelecek sürümlerde değiştirilebilir. Bu nedenlerden dolayı bu tür kod öğeleri Eşzamanlılık Çalışma Zamanı belgelerinden çıkarılır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-Eşzamanlılık ad alanı sınıfları sağlar ve Eşzamanlılık Çalışma zamanı C++ için eşzamanlı programlama çerçevesi için size işlevleri erişebilirsiniz. Daha fazla bilgi için [eşzamanlılık çalışma zamanı](../concurrency-runtime.md).
+Eşzamanlılık ad alanı, için C++eşzamanlı bir programlama çerçevesi olan eşzamanlılık çalışma zamanı erişim sağlayan sınıfları ve işlevleri sağlar. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../concurrency-runtime.md).
 
-[Std ad alanı](std-namespace.md)
+[std ad alanı](std-namespace.md)
 
 [stdx ad alanı](stdx-namespace.md)

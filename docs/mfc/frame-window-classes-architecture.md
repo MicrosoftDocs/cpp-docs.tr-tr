@@ -1,38 +1,36 @@
 ---
 title: Çerçeve Penceresi Sınıfları (Mimari)
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.frame
 helpviewer_keywords:
 - frame window classes [MFC], document/view architecture
 ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
-ms.openlocfilehash: affa217f481cc6d9e125d526f1b97be9120e0990
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3ae432c1adc881a5c67d6a6c292dc1f6a583ab3
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392849"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441259"
 ---
 # <a name="frame-window-classes-architecture"></a>Çerçeve Penceresi Sınıfları (Mimari)
 
-Belge/görünüm mimarisi çerçeve pencereleri Görünümü penceresi içeren dizisidir. Bunlar da sahip denetim çubukları kendilerine iliştirilmiş destekler.
+Belge/görünüm mimarisinde, çerçeve pencereleri bir görünüm penceresi içeren Windows ' dir. Ayrıca, bunlara eklenmiş denetim çubuklarının olmasını da destekler.
 
-Ana pencereyi türetilir birden çok belge arabirimi (MDI) uygulamaları, `CMDIFrameWnd`. Olan belgelerin çerçeveler dolaylı olarak içerdiği `CMDIChildWnd` nesneleri. `CMDIChildWnd` Nesneleri, belge görünümleri içerir.
+Birden çok belge arabirimi (MDI) uygulamasında ana pencere `CMDIFrameWnd`türetilir. Bu, dolaylı olarak `CMDIChildWnd` nesneler olan belgelerin çerçevelerini içerir. `CMDIChildWnd` nesneler, sırasıyla belgelerin görünümlerini içerir.
 
-Tek Belgeli Arabirim (SDI) uygulamalar, ana penceresinde, türetilen `CFrameWnd`, geçerli belgenin görünümü içerir.
+Tek belge arabirimi (SDI) uygulamalarında, `CFrameWnd`türetilen ana pencere, geçerli belgenin görünümünü içerir.
 
 [CFrameWnd](../mfc/reference/cframewnd-class.md)<br/>
-Bir SDI uygulamanın ana çerçeve penceresi için taban sınıf. Ayrıca temel sınıf için tüm diğer çerçeve penceresi sınıfları.
+SDI uygulamasının ana çerçeve penceresi için temel sınıf. Ayrıca tüm diğer çerçeve pencere sınıfları için temel sınıf.
 
 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)<br/>
-Bir MDI uygulamanın ana çerçeve penceresi için taban sınıf.
+MDI uygulamasının ana çerçeve penceresi için temel sınıf.
 
-[Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md)<br/>
-Bir MDI uygulamanın belge çerçeve pencereleri için temel sınıf.
+[CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)<br/>
+MDI uygulamasının belge çerçeve pencereleri için temel sınıf.
 
-[Coleıpframewnd](../mfc/reference/coleipframewnd-class.md)<br/>
-Sunucu belgesinin yerinde düzenlenirken çerçeve penceresi için bir görünüm sağlar.
+[COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)<br/>
+Bir sunucu belgesi yerinde düzenlenirken bir görünüm için çerçeve penceresi sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

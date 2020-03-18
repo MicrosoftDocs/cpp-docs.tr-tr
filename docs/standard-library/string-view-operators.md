@@ -17,12 +17,12 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
-ms.openlocfilehash: 699b1f1bddeb71ecbf03297d162a7e45ebd39609
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 871b7dc93f5d548897cf77e55dbacf5a104cbee9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419422"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446759"
 ---
 # <a name="ltstring_viewgt-operators"></a>&lt;string_view&gt; işleçleri
 
@@ -116,6 +116,7 @@ Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırma
 ## <a name="op_lt"></a>işleç&lt;
 
 İşlecin sol tarafındaki nesnenin sağdaki nesneden daha az olup olmadığını sınar sidestring_view
+
 ```cpp
 template <class CharType, class Traits>
 bool operator<(

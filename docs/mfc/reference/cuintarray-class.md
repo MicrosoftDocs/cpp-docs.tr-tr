@@ -1,57 +1,57 @@
 ---
-title: Cuıntarray sınıfı
+title: CUIntArray sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CUIntArray
 - AFXCOLL/CUIntArray
-- AFXCOLL/CObArray::CObArray
-- AFXCOLL/CObArray::Add
-- AFXCOLL/CObArray::Append
-- AFXCOLL/CObArray::Copy
-- AFXCOLL/CObArray::ElementAt
-- AFXCOLL/CObArray::FreeExtra
-- AFXCOLL/CObArray::GetAt
-- AFXCOLL/CObArray::GetCount
-- AFXCOLL/CObArray::GetData
-- AFXCOLL/CObArray::GetSize
-- AFXCOLL/CObArray::GetUpperBound
-- AFXCOLL/CObArray::InsertAt
-- AFXCOLL/CObArray::IsEmpty
-- AFXCOLL/CObArray::RemoveAll
-- AFXCOLL/CObArray::RemoveAt
-- AFXCOLL/CObArray::SetAt
-- AFXCOLL/CObArray::SetAtGrow
-- AFXCOLL/CObArray::SetSize
+- AFXCOLL/CUIntArray::CUIntArray
+- AFXCOLL/CUIntArray::Add
+- AFXCOLL/CUIntArray::Append
+- AFXCOLL/CUIntArray::Copy
+- AFXCOLL/CUIntArray::ElementAt
+- AFXCOLL/CUIntArray::FreeExtra
+- AFXCOLL/CUIntArray::GetAt
+- AFXCOLL/CUIntArray::GetCount
+- AFXCOLL/CUIntArray::GetData
+- AFXCOLL/CUIntArray::GetSize
+- AFXCOLL/CUIntArray::GetUpperBound
+- AFXCOLL/CUIntArray::InsertAt
+- AFXCOLL/CUIntArray::IsEmpty
+- AFXCOLL/CUIntArray::RemoveAll
+- AFXCOLL/CUIntArray::RemoveAt
+- AFXCOLL/CUIntArray::SetAt
+- AFXCOLL/CUIntArray::SetAtGrow
+- AFXCOLL/CUIntArray::SetSize
 helpviewer_keywords:
-- CObArray [MFC], CObArray
-- CObArray [MFC], Add
-- CObArray [MFC], Append
-- CObArray [MFC], Copy
-- CObArray [MFC], ElementAt
-- CObArray [MFC], FreeExtra
-- CObArray [MFC], GetAt
-- CObArray [MFC], GetCount
-- CObArray [MFC], GetData
-- CObArray [MFC], GetSize
-- CObArray [MFC], GetUpperBound
-- CObArray [MFC], InsertAt
-- CObArray [MFC], IsEmpty
-- CObArray [MFC], RemoveAll
-- CObArray [MFC], RemoveAt
-- CObArray [MFC], SetAt
-- CObArray [MFC], SetAtGrow
-- CObArray [MFC], SetSize
+- CUIntArray [MFC], CUIntArray
+- CUIntArray [MFC], Add
+- CUIntArray [MFC], Append
+- CUIntArray [MFC], Copy
+- CUIntArray [MFC], ElementAt
+- CUIntArray [MFC], FreeExtra
+- CUIntArray [MFC], GetAt
+- CUIntArray [MFC], GetCount
+- CUIntArray [MFC], GetData
+- CUIntArray [MFC], GetSize
+- CUIntArray [MFC], GetUpperBound
+- CUIntArray [MFC], InsertAt
+- CUIntArray [MFC], IsEmpty
+- CUIntArray [MFC], RemoveAll
+- CUIntArray [MFC], RemoveAt
+- CUIntArray [MFC], SetAt
+- CUIntArray [MFC], SetAtGrow
+- CUIntArray [MFC], SetSize
 ms.assetid: d71f3d8f-ef9f-4e48-9b69-7782c0e2ddf7
-ms.openlocfilehash: 39d5fd4707f1c03de78cf9fd078655389c93ba17
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 932062ec289a34cffcd929853233a0c7c81a7a72
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323550"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447545"
 ---
-# <a name="cuintarray-class"></a>Cuıntarray sınıfı
+# <a name="cuintarray-class"></a>CUIntArray sınıfı
 
-İşaretsiz tamsayı dizilerini destekler.
+İşaretsiz tamsayıların dizilerini destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,58 +61,58 @@ class CUIntArray : public CObject
 
 ## <a name="members"></a>Üyeler
 
-Üye işlevlerinin `CUIntArray` sınıfın üye işlevleri için benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CObArray` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir işlev parametre veya dönüş değeri olarak bir UINT değiştirin.
+`CUIntArray` üye işlevleri [CObArray](../../mfc/reference/cobarray-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CObArray` başvuru belgelerini kullanabilirsiniz. İşlev parametresi veya dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, bir UINT yerine ekleyin.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
-Örneğin, için çevirir
+Örneğin, öğesine çevirir
 
 `UINT CUIntArray::GetAt( int <nIndex> ) const;`
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObArray::CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
+|[CUIntArray:: CUIntArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObArray::Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğe ekler; dizi gerekirse büyür.|
-|[CObArray::Append](../../mfc/reference/cobarray-class.md#append)|Diziyi başka diziye ekler; dizi gerekirse büyür.|
-|[CObArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Diziyi başka diziye kopyalar; dizi gerekirse büyür.|
-|[CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.|
-|[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|
-|[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Belirtilen dizindeki değeri döndürür.|
-|[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizinin içinde öğe sayısını alır.|
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizide öğelere erişim sağlar. NULL olabilir.|
-|[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizinin içinde öğe sayısını alır.|
-|[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizinini döndürür.|
-|[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.|
-|[CObArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizi boş olup olmadığını belirler.|
-|[CObArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizisinden tüm öğeleri kaldırır.|
-|[CObArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki öğeyi kaldırır.|
-|[CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirtilen dizin için değeri ayarlar; dizi büyümesine izin verilmiyor.|
-|[CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirtilen dizin için değeri ayarlar; dizi gerekirse büyür.|
-|[CObArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizinin içinde yer alması için öğe sayısını ayarlar.|
+|[CUIntArray:: Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
+|[CUIntArray:: Append](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür.|
+|[CUIntArray:: Copy](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
+|[CUIntArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru döndürür.|
+|[CUIntArray:: FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
+|[CUIntArray:: GetAt](../../mfc/reference/cobarray-class.md#getat)|Verilen dizindeki değeri döndürür.|
+|[CUIntArray:: GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CUIntArray:: GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişime izin verir. NULL olabilir.|
+|[CUIntArray:: GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CUIntArray:: Getüstsınırı](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CUIntArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
+|[CUIntArray:: IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CUIntArray:: RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CUIntArray:: RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CUIntArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
+|[CUIntArray:: SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
+|[CUIntArray:: SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
+|[CUIntArray:: operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hedef işletim ortamı bağlı olarak fiziksel bir UINT boyutunu değiştirebilirsiniz, işaretsiz bir tamsayı veya UINT sözcükler ve doublewords farklıdır. Bir UINT bir doubleword olarak aynı boyutta olan.
+İşaretsiz bir tamsayı veya UINT, bir UINT fiziksel boyutunun hedef işletim ortamına bağlı olarak değiştiremedeki sözcüklerden ve doublesözcüklerden farklıdır. Bir UINT, doubleword ile aynı boyutudır.
 
-`CUIntArray` içerir [ımplement_dynamıc](run-time-object-model-services.md#implement_dynamic) çalışma zamanı tür erişimi ve için dökme desteklemek için makro bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesne. Tek bir işaretsiz tamsayı öğelerin bir döküm gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir. İşaretsiz tamsayı dizilerini nelze serializovat.
+`CUIntArray`, çalışma zamanı türü erişimini desteklemek ve bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesine eklemek için [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic) makrosunu içerir. Bağımsız işaretsiz tamsayı öğelerinin bir dökümine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir. İşaretsiz tamsayı dizileri serileştirilemiyor.
 
 > [!NOTE]
->  Bir dizi kullanmadan önce kullanmayı `SetSize` boyutuna kurmak ve kendisi için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, diziniz için öğeleri ekleme, oluyor, sık sık yeniden ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçası.
+>  Bir dizi kullanmadan önce, boyutunu belirlemek ve için bellek ayırmak üzere `SetSize` kullanın. `SetSize`kullanmıyorsanız, dizine öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
 
-Kullanma hakkında daha fazla bilgi için `CUIntArray`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+`CUIntArray`kullanma hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -122,7 +122,7 @@ Kullanma hakkında daha fazla bilgi için `CUIntArray`, makaleye göz atın [kol
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

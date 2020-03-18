@@ -2,17 +2,15 @@
 title: DUMPBIN seçenekleri
 description: Microsoft DUMPBIN yardımcı program komut satırı seçeneklerine yönelik başvuru kılavuzu.
 ms.date: 02/09/2020
-f1_keywords:
-- dumpbin
 helpviewer_keywords:
 - DUMPBIN program, options
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-ms.openlocfilehash: 98a4fd221d66b93f945667deadaba3180f8d3e66
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 54f5a22808026f4442f85d5e53a0805702e05868
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257734"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440045"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN seçenekleri
 

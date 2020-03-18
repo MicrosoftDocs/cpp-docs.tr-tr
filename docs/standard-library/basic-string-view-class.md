@@ -119,12 +119,12 @@ helpviewer_keywords:
 - std::basic_string_view, substr
 - std::basic_string_view, swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: 7a53a27e11088ab02f873613794d6799851ca373
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 2f262ee238d8ee9b441f5bc1daebcf6a64f35a52
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416178"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445843"
 ---
 # <a name="basic_string_view-class"></a>basic_string_view sınıfı
 
@@ -285,7 +285,7 @@ Parametre dizini tarafından belirtilen konumdaki karaktere const_reference.
 
 İlk öğe sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluğu bir string_view n *-* 1 sayısı tarafından dizine alınmış bir *n*. öğesi vardır. **öğesinde** , [işleç\[\]](#op_at)farklı olarak geçersiz dizinler için bir özel durum oluşturur. 
 
-Genel olarak, `std::vector` ve string_view gibi diziler asla kullanılmamalıdır. Bir diziye geçirilen geçersiz dizin, geliştirme sırasında bulunması ve düzeltilmesi gereken bir mantık hatasıdır. Bir program, dizinlerinin geçerli olduğundan kesinlikle emin olmazsa, () çağrısı değil, onları test etmelidir ve daha az programlamaya karşı savunması için özel durumlara güvenmelidir.
+Genel olarak, `std::vector` ve string_view **at** gibi diziler asla kullanılmamalıdır. Bir diziye geçirilen geçersiz dizin, geliştirme sırasında bulunması ve düzeltilmesi gereken bir mantık hatasıdır. Bir program, dizinlerinin geçerli olduğundan kesinlikle emin olmazsa, () çağrısı değil, onları test etmelidir ve daha az programlamaya karşı savunması için özel durumlara güvenmelidir.
 
 Daha fazla bilgi için bkz. [basic_string_view:: operator\[\]](#op_at) .
 
@@ -902,12 +902,14 @@ Başka bir string_view string_view veya dönüştürülebilir dize nesnesi atar.
 ```cpp
 constexpr basic_string_view& operator=(const basic_string_view&) noexcept = default;
 ```
+
 ### <a name="example"></a>Örnek
 
 ```cpp
    string_view s = "Hello";
    string_view s2 = s;
 ```
+
 ## <a name="op_at"></a>basic_string_view:: operator []
 
 Belirtilen dizine sahip karaktere bir const_reference sağlar.

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 8b216941837cd79492aa6cb707481073b5321bce
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 48ffe6f124b91ee8ad60452f26d895bc2698779b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421361"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447310"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -476,7 +476,8 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . `DDX_Fie
 
   **Header** afxdao. h
 
-  ## <a name="ddx_fieldslider"></a>DDX_FieldSlider
+## <a name="ddx_fieldslider"></a>DDX_FieldSlider
+
 `DDX_FieldSlider` işlevi bir kayıt görünümündeki kaydırıcı denetiminin Thumb konumunu ve kayıt görünümüyle ilişkili bir kayıt kümesinin (veya eşlemesini seçtiğiniz herhangi bir tamsayı değişkeniyle) bir **int** alan veri üyesine eşitler.
 
 ### <a name="syntax"></a>Sözdizimi

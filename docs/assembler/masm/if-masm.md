@@ -1,17 +1,15 @@
 ---
 title: IF (MASM)
 ms.date: 12/17/2019
-f1_keywords:
-- if
 helpviewer_keywords:
 - IF directive
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
-ms.openlocfilehash: 38d366a3a41e7b08759594899cdcbb2cb84dfbfa
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 6e63f5c8075b3c94370ad8863d224c097cf0ecdf
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317298"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440753"
 ---
 # <a name="if"></a>IF
 

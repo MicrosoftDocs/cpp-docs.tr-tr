@@ -138,11 +138,11 @@ helpviewer_keywords:
 - std::unordered_multimap::swap
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
 ms.openlocfilehash: f19e6c1a4befa3e1b5ddd46e607b8cf894f29ba6
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78874017"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422544"
 ---
 # <a name="unordered_multimap-class"></a>unordered_multimap Sınıfı
 

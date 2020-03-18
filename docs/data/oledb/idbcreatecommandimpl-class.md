@@ -6,22 +6,21 @@ f1_keywords:
 - IDBCreateCommandImpl
 - ATL.IDBCreateCommandImpl
 - IDBCreateCommandImpl.CreateCommand
-- CreateCommand
 - IDBCreateCommandImpl::CreateCommand
 helpviewer_keywords:
 - IDBCreateCommandImpl class
 - CreateCommand method
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-ms.openlocfilehash: 7450d91cd5e5383b55e2ebb391fe5f1190cbed2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27ca1fd20e8f358d936789da695611d96a6e7aa1
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408920"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446131"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl Sınıfı
 
-Bir uygulamasını sağlar [IDBCreateCommand](/previous-versions/windows/desktop/ms711625(v=vs.85)) arabirimi.
+[IDBCreateCommand](/previous-versions/windows/desktop/ms711625(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,15 +32,15 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Oturum nesnesi türetilen `IDBCreateCommandImpl`.
+*Şı*<br/>
+`IDBCreateCommandImpl`türetilen oturum nesnesi.
 
 *CommandClass*<br/>
-Komutu sınıfınızın.
+Komut sınıfınız.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -55,9 +54,9 @@ Komutu sınıfınızın.
 
 Yeni bir komut almak için oturum nesnesi üzerinde isteğe bağlı bir arabirim.
 
-## <a name="createcommand"></a> Idbcreatecommandımpl::CreateCommand
+## <a name="createcommand"></a>IDBCreateCommandImpl:: CreateCommand
 
-Yeni bir komut oluşturur ve istenen arabirim döndürür.
+Yeni bir komut oluşturur ve istenen arabirimi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -69,11 +68,11 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IDBCreateCommand:: CreateCommand](/previous-versions/windows/desktop/ms709772(v=vs.85)) öğesine bakın.
 
-Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBCreateCommand::CreateCommand`:
+Bazı parametreler, `IDBCreateCommand::CreateCommand`açıklanan farklı adların *OLE DB Programcı Başvuru* parametrelerine karşılık gelir:
 
-|OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|
+|OLE DB şablon parametreleri|*OLE DB Programcı Başvuru* parametreleri|
 |--------------------------------|------------------------------------------------|
 |*ppvCommand*|*ppCommand*|
 

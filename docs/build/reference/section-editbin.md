@@ -2,19 +2,19 @@
 title: /SECTION (EDITBIN)
 ms.date: 11/04/2016
 f1_keywords:
-- /section
+- /section_editbin
 helpviewer_keywords:
 - -SECTION editbin option
 - SECTION editbin option
 - alignment characters in sections
 - /SECTION editbin option
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615
-ms.openlocfilehash: 8bcc925b34118630c872a0147b93291626b7c19b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 770e1d1c1cf288a7fe68f5bd076791d43f5b8572
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318608"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438919"
 ---
 # <a name="section-editbin"></a>/SECTION (EDITBIN)
 
@@ -24,41 +24,41 @@ ms.locfileid: "62318608"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, nesne dosyası bölümü için derlenmiş ya da bağlı ayarlanan öznitelikleri geçersiz kılma, bir bölümün özniteliklerini değiştirir.
+Bu seçenek, bir bölümün özniteliklerini değiştirir, bu, bölümün nesne dosyası derlendiğinde veya bağlandığında ayarlanan öznitelikleri geçersiz kılar.
 
-Sonra iki nokta üst üste ( **:** ), belirtin *adı* bölümü. Bölüm adı değiştirmek için izleyin *adı* eşittir işareti (=) ve bir *newname* bölümü için.
+İki nokta üst üste ( **:** ) sonra, bölümün *adını* belirtin. Bölüm adını değiştirmek için *adı* eşittir işareti (=) ve bölüm için bir *YeniAd* kullanın.
 
-Veya bölümün `attributes`, virgül belirtin (**,**) bir veya daha fazla öznitelik karakterlerle devam eder. Bir öznitelik negatif yapılacak, ünlem işareti (!) karakteriyle koyun. Aşağıdaki karakterlerden bellek öznitelikleri belirtin:
+Bölümün `attributes`ayarlamak veya değiştirmek için, bir virgül ( **,** ) ve ardından bir veya daha fazla öznitelik karakteri belirtin. Bir özniteliğe bir öznitelik eklemek için, karakterinin önüne bir ünlem işareti (!) getirin. Aşağıdaki karakterler bellek özniteliklerini belirtir:
 
 |Öznitelik|Ayar|
 |---------------|-------------|
 |c|kod|
-|d|Discardable|
-|e|yürütülebilir|
-|ı|başlatılmış veriler|
-|K|önbelleğe alınan sanal bellek|
-|m|bağlantıyı Kaldır|
-|o|bağlantı bilgileri|
-|p|sanal disk belleği|
+|d|discardable|
+|e|yürütülür|
+|ı|başlatılan veriler|
+|Ek|önbelleğe alınmış sanal bellek|
+|m|bağlantıyı kaldır|
+|o|bağlantı bilgisi|
+|p|disk belleğine alınmış sanal bellek|
 |r|read|
 |s|shared|
-|u|başlatılmamış veri|
+|u|başlatılmamış veriler|
 |w|write|
 
-Denetime *hizalama*, bir karakter belirtmek **A** hizalama boyutu bayt cinsinden şu şekilde ayarlamak için aşağıdaki karakterlerden birini ve ardından:
+*Hizalamayı*denetlemek için, aşağıdaki karakterlerden birini izleyen karakteri belirterek, şöyle **bir** hizalama boyutunu aşağıda gösterildiği gibi ayarlayın:
 
-|Karakter|Bayt hizalama boyutu|
+|Karakter|Bayt cinsinden hizalama boyutu|
 |---------------|-----------------------------|
-|1.|1.|
+|1|1|
 |2|2|
 |4|4|
 |8|8|
 |p|16|
 |t|32|
 |s|64|
-|x|Hizalama yok|
+|x|hizalama yok|
 
-Belirtin `attributes` ve *hizalama* hiçbir boşluk içeren bir dize olarak karakter. Karakterler büyük/küçük harfe duyarlı değildir.
+Boşluk olmayan bir dize olarak `attributes` ve *Hizalama* karakterlerini belirtin. Karakterler büyük/küçük harfe duyarlı değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

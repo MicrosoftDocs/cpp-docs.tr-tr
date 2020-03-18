@@ -1,8 +1,6 @@
 ---
 title: OLE Kapsayıcı Sınıfları
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.ole
 helpviewer_keywords:
 - ActiveX classes [MFC]
 - container classes [MFC]
@@ -11,43 +9,43 @@ helpviewer_keywords:
 - OLE [MFC], classes
 - containers [MFC], OLE container applications
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
-ms.openlocfilehash: 87db824e5ab4daec15870b245ea8341be7442109
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61db5310637d13da2d2cc183f12f8f62aa60e328
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186016"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447660"
 ---
 # <a name="ole-container-classes"></a>OLE Kapsayıcı Sınıfları
 
-Bu sınıflar, kapsayıcı uygulamalar tarafından kullanılır. Her ikisi de `COleLinkingDoc` ve `COleDocument` koleksiyonları yönetme `COleClientItem` nesneleri. Öğesinden, belge sınıfı türetme yerine `CDocument`, bu sınıftan türetilen `COleLinkingDoc` veya `COleDocument`bağlantıları belgenize katıştırılmış nesneler için destek istemediğinizi bağlı olarak.
+Bu sınıflar kapsayıcı uygulamalar tarafından kullanılır. Hem `COleLinkingDoc` hem de `COleDocument` `COleClientItem` nesne koleksiyonlarını yönetir. Belge sınıfınızı `CDocument`türetmek yerine `COleLinkingDoc` veya `COleDocument`türetireceksiniz. Bu, belgenize katıştırılmış nesneler için destek isteyip istemediğinize bağlıdır.
 
-Kullanım bir `COleClientItem` başka bir belgeden gömülü veya başka bir belge bağlantısına belgeyi her OLE öğesinde göstermek için nesne.
+Belgenizde başka bir belgeden eklenmiş veya başka bir belgenin bağlantısı olan her bir OLE öğesini göstermek için bir `COleClientItem` nesnesi kullanın.
 
-[Coledocobjectıtem](../mfc/reference/coledocobjectitem-class.md)<br/>
-Etkin belge kapsaması destekler.
+[COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)<br/>
+Etkin belge kapsamayı destekler.
 
-[COleDocument](../mfc/reference/coledocument-class.md)<br/>
-Bileşik belge uygulaması, ek olarak temel kapsayıcı desteği kullanılır. Türetilen sınıflar için bir kapsayıcı olarak hizmet veren `CDocItem`. Bu sınıfın temel sınıf olarak kullanılabilir kapsayıcı belgeleri ve temel sınıfı olan `COleServerDoc`.
+[Colet belgesi](../mfc/reference/coledocument-class.md)<br/>
+Bileşik belge uygulamasının yanı sıra temel kapsayıcı desteği için de kullanılır. `CDocItem`türetilmiş sınıflar için kapsayıcı görevi görür. Bu sınıf, kapsayıcı belgeleri için temel sınıf olarak kullanılabilir ve `COleServerDoc`için temel sınıftır.
 
-[COleLinkingDoc](../mfc/reference/colelinkingdoc-class.md)<br/>
-Öğesinden türetilen bir sınıf `COleDocument` bağlamak için altyapı sağlar. Belge sınıfları için kapsayıcı uygulamalarınızı yerine bu sınıftan türetilmelidir `COleDocument` katıştırılmış nesnelere bağlantıları desteklemek istiyorsanız.
+[Cotalinkingdoc](../mfc/reference/colelinkingdoc-class.md)<br/>
+Bağlama için altyapıyı sağlayan `COleDocument` türetilen bir sınıf. Kapsayıcı uygulamalarınızın belge sınıflarını, `COleDocument` yerine bu sınıftan türetmeniz gerekir. bu nesnelerin gömülü nesnelere bağlantıları desteklemesini istiyorsanız.
 
 [CRichEditDoc](../mfc/reference/cricheditdoc-class.md)<br/>
-Zengin düzenleme denetimine OLE istemci öğeleri listesini tutar. İle kullanılan [CRichEditView](../mfc/reference/cricheditview-class.md) ve [Cricheditcntrıtem](../mfc/reference/cricheditcntritem-class.md).
+Zengin düzenleme denetimindeki OLE istemci öğelerinin listesini tutar. [CRichEditView](../mfc/reference/cricheditview-class.md) ve [Cricheditcntridıtem](../mfc/reference/cricheditcntritem-class.md)ile kullanılır.
 
-[Cdocıtem](../mfc/reference/cdocitem-class.md)<br/>
-Soyut taban sınıfı `COleClientItem` ve `COleServerItem`. Sınıfından türetilen sınıfların nesnelerini `CDocItem` belge parçalarını temsil eder.
+[CDocItem](../mfc/reference/cdocitem-class.md)<br/>
+`COleClientItem` ve `COleServerItem`soyut temel sınıfı. `CDocItem` türetilen sınıfların nesneleri, belgelerin parçalarını temsil eder.
 
-[Coleclientıtem](../mfc/reference/coleclientitem-class.md)<br/>
-Gömülü veya bağlantılı OLE öğesini bağlantı istemci tarafında temsil eden bir istemci Item sınıfı. İstemci öğelerinizi sınıfından türetilir.
+[COleClientItem](../mfc/reference/coleclientitem-class.md)<br/>
+Gömülü veya bağlantılı bir OLE öğesine bağlantının yüzünü temsil eden istemci öğe sınıfı. Bu sınıftan istemci öğelerinizi türetebilirsiniz.
 
-[Cricheditcntrıtem](../mfc/reference/cricheditcntritem-class.md)<br/>
-OLE öğesi ile kullanıldığında bir zengin düzenleme denetimindeki depolanan istemci tarafı erişim sağlayan `CRichEditView` ve `CRichEditDoc`.
+[CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md)<br/>
+`CRichEditView` ve `CRichEditDoc`birlikte kullanıldığında zengin düzenleme denetiminde depolanan bir OLE öğesine istemci tarafı erişimi sağlar.
 
-[COleException](../mfc/reference/coleexception-class.md)<br/>
-OLE işlenirken bir hata kaynaklanan bir özel durum. Bu sınıf, kapsayıcılar ve sunucular tarafından kullanılır.
+[Colet özel durumu](../mfc/reference/coleexception-class.md)<br/>
+OLE işlemedeki bir hatadan kaynaklanan bir özel durum. Bu sınıf, hem kapsayıcılar hem de sunucular tarafından kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

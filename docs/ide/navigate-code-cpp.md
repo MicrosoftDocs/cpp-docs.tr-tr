@@ -1,135 +1,135 @@
 ---
-title: Gezinme C++ Visual Studio'daki kod
-description: Geçici olarak gezinmek için Visual Studio'da çeşitli araçlar kullanın, C++ kod tabanı.
+title: Visual C++ Studio 'da koda gitme
+description: Kod tabanınızın C++ etrafında gezinmek Için Visual Studio 'daki çeşitli araçları kullanın.
 ms.date: 05/28/2019
-ms.openlocfilehash: c2d3a1aa4a26cb820ff4a1e87d6eae88b1b8e739
-ms.sourcegitcommit: 96f48079cdc402e4c2c1578d1f1eed4846a484dc
+ms.openlocfilehash: 0877fe64e913ab394d9605b9ff0b9825febca793
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67576520"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446647"
 ---
-# <a name="navigate-c-code-in-visual-studio"></a>Gezinme C++ Visual Studio'daki kod
+# <a name="navigate-c-code-in-visual-studio"></a>Visual C++ Studio 'da koda gitme
 
-Visual Studio takımının bir geçici olarak gezinmek için kullanabileceğiniz araçlar sağlar, hızlı ve verimli bir şekilde kod tabanı.
+Visual Studio, kod tabanınızda hızlı ve verimli bir şekilde gezinmek için kullanabileceğiniz bir araç paketi sağlar.
 
-## <a name="open-an-included-file"></a>Eklenen bir dosyayı açma
+## <a name="open-an-included-file"></a>Dahil edilen bir dosyayı açma
 
-Sağ bir `#include` yönerge ve select **belgeye Git**. Ya da seçin **F12** dosyayı açmak için bu satırı üzerinden imleç.
+`#include` yönergesine sağ tıklayın ve **belgeye git**' i seçin. Ya da dosyayı açmak için bu satırın üzerine imleci ile **F12** ' i seçin.
 
-![C&#43; &#43; belgeye Git menü seçeneği](../ide/media/go-to-document.png "belge gidin")
+![C&#43; &#43; belgeye git menü seçeneği](../ide/media/go-to-document.png "Belgeye git")
 
-## <a name="toggle-headercode-file"></a>Başlık/kod dosyası Aç/Kapat
+## <a name="toggle-headercode-file"></a>Üst bilgi/kod dosyası değiştirme
 
-Karşılık gelen kaynak dosyası ve üstbilgi dosyası arasında geçiş yapabilirsiniz. Dosya ve seçme içinde herhangi bir yeri sağ **geçiş başlık/kod dosyası**. Ya da seçebilirsiniz **Ctrl + K**, **Ctrl + O**.
+Üst bilgi dosyası ile buna karşılık gelen kaynak dosyası arasında geçiş yapabilirsiniz. Dosyanızda herhangi bir yere sağ tıklayın ve **başlık/kod dosyasını aç**' ı seçin. Ya da **CTRL + K**, **CTRL + O**tuşlarına da seçebilirsiniz.
 
-## <a name="go-to-definitiondeclaration"></a>Tanımı/bildirimine gidin
+## <a name="go-to-definitiondeclaration"></a>Tanıma/bildirime git
 
-Düzenleyicide sağ tıklatıp seçerek bir kod simgesi tanımına gidebilirsiniz **tanıma**, seçerek veya **F12**. Bir bildirimi için benzer şekilde bağlam menüsünü açmak için sağ tıklayarak veya seçerek gezinebileceğiniz **Ctrl + F12**.
+Düzenleyicide sağ tıklayıp **Tanıma Git**' i seçerek veya **F12**' i seçerek bir kod sembolünün tanımına gidebilirsiniz. Bağlam menüsünü açmak için sağ tıklayarak veya **CTRL + F12**' i seçerek bir bildirime gidebilirsiniz.
 
-![C&#43; &#43; Tanıma Git](../ide/media/go-to-def.png "Tanıma Git")
+![C&#43; &#43; tanıma git](../ide/media/go-to-def.png "Tanıma Git")
 
 ## <a name="go-to"></a>Git
 
-**Git** sağlayan her filtreleriyle belirli bir sonuç türünü temel özellikleri belirtin Gezinti kümesine başvuruyor. 
+**Git** , her birinin belirttiğiniz filtrelere göre belirli bir sonuç türünü sağlayan bir dizi gezinti özelliği anlamına gelir. 
 
-Açabileceğiniz **Git** ile **Ctrl +** . Bu eylem, düzenlediğiniz belge üzerinde bir arama kutusu oluşturur.
+**Git** **' i CTRL + '** de açabilirsiniz. Bu eylem, düzenlemekte olduğunuz belge üzerinde bir arama kutusu oluşturur.
 
-![C&#43; &#43; Git](../ide/media/go-to-cpp.png "gidin")
+![C&#43; &#43; 'ye git](../ide/media/go-to-cpp.png "Git")
 
-**Git** bu arama filtreleri içerir:
+Bu arama filtrelerini içerir **öğesine git** :
 
-- **Satıra Git** (**Ctrl + g'tuşlarını**): Hızlı bir şekilde, geçerli belgede farklı bir satıra atla.
-- **Tümüne Git** (**Ctrl +** ) veya (**Ctrl + T**): Arama sonuçları izleyen her şeyi içerir.
-- **Dosyaya gidin** (**Ctrl 1, F**): Çözümünüzde dosyaları arayın.
-- **Tür Git** (**Ctrl 1, T**): Arama sonuçlarını şunlardır:
-  - Sınıflar, yapılar ve sabit listeleri.
-  - Arabirimlerde ve temsilcilerde (yalnızca yönetilen kod).
-- **Üye Git** (**Ctrl 1, M**): Arama sonuçlarını şunlardır:
+- **Satıra git** (**CTRL + G**): geçerli belgenizdeki farklı bir satıra hızlıca atlayın.
+- **Tümüne git** (**CTRL +,** ) veya (**CTRL + T**): arama sonuçları, izleyen her şeyi içerir.
+- **Dosyaya git** (**CTRL 1, F**): çözümünüzdeki dosyaları arayın.
+- **Türe git** (**CTRL 1, T**): arama sonuçları şunları içerir:
+  - Sınıflar, yapılar ve Numaralandırmalar.
+  - Arabirimler ve Temsilciler (yalnızca yönetilen kod).
+- **Üyeye git** (**CTRL 1, e**): arama sonuçları şunları içerir:
   - Genel değişkenler ve genel işlevler.
   - Sınıf üyesi değişkenleri ve üye işlevleri.
-  - Sabitler.
-  - Sabit listesi öğeleri.
+  - Lerde.
+  - Enum öğeleri.
   - Özellikler ve olaylar.
-- **Sembol Git** (**Ctrl 1, S**): Arama sonuçlarını şunlardır:
-  - Üye sonuç türleri Git ve Git.
-  - Tüm kalan C++ makroları içeren dil yapıları.
+- **Simgeye git** (**CTRL 1, S**): arama sonuçları şunları içerir:
+  - Türlere git ve üyelere git sonuçları.
+  - Makrolar içeren C++ tüm kalan dil yapıları.
 
-İlk çağırdığınızda **Git** ile **Ctrl +** , **tümüne Git** olduğu (filtreler arama sonuçları) etkinleştirildi. Ardından, arama kutusuna düğmeleri kullanarak istediğiniz filtreyi seçebilirsiniz. İlgili olarak klavye kısayolunu kullanarak belirli bir filtre çağırabilirsiniz. Bu durumda açılır yapılması **Git** arama kutusuyla seçilmiş Bu filtre. Tüm klavye kısayollarını yapılandırılabilir özelliktedir.
+**CTRL +** ile **Git** ' i Ilk kez çağırdığınızda, **tümüne git** etkinleştirilir (arama sonuçlarında filtre yoktur). Ardından, arama kutusunun yakınında bulunan düğmeleri kullanarak istediğiniz filtreyi seçebilirsiniz. Karşılık gelen klavye kısayolunu kullanarak belirli bir filtreyi çağırabilirsiniz. Bunun yapılması, bu filtrenin önceden seçilmiş olduğu arama kutusuna **Git** ' i açar. Tüm klavye kısayolları yapılandırılabilir.
 
-Bir metin filtre uygulamak için arama sorgunuz filtrenin karaktere karşılık gelen bir boşluk ile başlatın. (**Satıra Git** isteğe bağlı olarak alan atlayabilirsiniz.) Bu metin filtreler mevcuttur:
+Bir metin filtresi uygulamak için, arama sorgunuzu filtrenin karşılık gelen karakteriyle ve ardından bir boşluk ile başlatın. (**Satıra git** , isteğe bağlı olarak boşluğu atlayabilir.) Bu metin filtreleri kullanılabilir:
 
-- Tümüne Git: (metin filtre yok)
-- Satır numarası gidin::
-- Dosyaya gidin: f
-- Tür gidin: t
-- Üye gidin: m
-- Sembol gidin: #
+- Tümüne git: (metin filtresi yok)
+- Satır numarasına git::
+- Dosyaya git: f
+- Türe git: t
+- Üyeye git: e
+- Simgeye git: #
 
-Aşağıdaki örnek, sonuçları gösterir. bir *dosyaya Git* "f" filtresini kullanarak işlemi:
+Aşağıdaki örnek, "f" filtresi kullanılarak bir *Dosya go* işleminin sonuçlarını gösterir:
 
-![C&#43; &#43; menüsüne gidin](../ide/media/vs2017-go-to-results.png "menüsüne gidin")
+![C&#43; &#43; Git menüsü](../ide/media/vs2017-go-to-results.png "Menüye git")
 
-Metin filtreleri listesini görmek için şunu yazın bir? ardından bir boşluk. Da erişebilirsiniz **Git** ile komutları **Düzenle** menüsü. Kendinize ana anımsatmak için başka bir yolu budur **Git** klavye kısayolları.
+Metin filtrelerinin listesini görmek için şunu yazın: ardından bir boşluk gelir. Ayrıca, **düzenleme** menüsüyle komutlara **Git** komutlarına de erişebilirsiniz. Bu, kendinizi ana klavye kısayollarına **anımsatmak için başka** bir yoldur.
 
-![C&#43; &#43; menüsüne gidin](../ide/media/go-to-menu-cpp.png "menüsüne gidin")
+![C&#43; &#43; Git menüsü](../ide/media/go-to-menu-cpp.png "Menüye git")
 
-## <a name="find-or-find-in-files"></a>Bulmak veya dosyalarda Bul
+## <a name="find-or-find-in-files"></a>Dosyaları bulma veya bulma
 
-Her şey için bir metin arama çözümünüzü ile çalıştırabileceğiniz **Bul** (**Ctrl + F**) veya **dosyalarda Bul** (**Ctrl + SHIFT + F**).
+Çözümünüzde **bul** (**Ctrl + f**) veya **dosyalarda bul** (**Ctrl + Shift + f**) ile çözümünüzdeki herhangi bir şey için bir metin araması çalıştırabilirsiniz.
 
-**Bulma** seçimi, geçerli belgede, bütün açık belgeleri, geçerli proje veya çözümün tamamını kapsamlandırılabilir. Normal ifadeler ve düz metin kullanabilirsiniz. Ayrıca, tüm eşleşmeleri IDE içinde otomatik olarak vurgular.
+**Bul** , seçim, geçerli belge, tüm açık belgeler, geçerli proje ya da tüm çözüm kapsamına eklenebilir. Normal ifadeler ve düz metin kullanabilirsiniz. Ayrıca, IDE 'de tüm eşleşmeleri otomatik olarak vurgular.
 
-![C&#43; &#43; Bul](../ide/media/find-cpp.png "bulun")
+![C&#43; &#43; bul](../ide/media/find-cpp.png "Bul")
 
-**Dosyalarda Bul** daha güçlü bir sürümü **Bul** sonuçları görüntüler **sonuçları Bul** penceresi. Dış kod bağımlılıklarını, dosya türleri tarafından filtre ve daha fazla arama yapabilirsiniz. 
+**Dosyalarda bul** , sonuçları **bul** penceresinde sonuçları görüntüleyen bir **bul** 'un daha güçlü bir sürümüdür. Dış kod bağımlılıklarını arayabilir, dosya türlerine göre filtreleyebilirsiniz ve daha fazlasını yapabilirsiniz. 
 
-![C&#43; &#43; dosyalarda Bul](../ide/media/find-in-files-cpp.png "dosyalarda Bul")
+![Dosyalarda&#43; &#43; C bul](../ide/media/find-in-files-cpp.png "Dosyalarda Bul")
 
-Organize edebilirsiniz **dosyalarda Bul** iki windows sonuçlanır. Birden çok arama sonuçlarından birlikte ekleyebilirsiniz. Dosyayı bu konuma gitmek için bir sonuç seçin.
+**Dosya bulma** sonuçlarını iki pencere ile düzenleyebilirsiniz. Birden çok aramadan sonuçları bir araya getirebilirsiniz. Dosyadaki bu konuma gitmek için bir sonuç seçin.
 
-![C&#43; &#43; dosyalarda Bul](../ide/media/vs2017-find-in-files-results.png "dosyalarda Bul")
+![Dosyalarda&#43; &#43; C bul](../ide/media/vs2017-find-in-files-results.png "Dosyalarda Bul")
 
-Daha fazla bilgi için [dosyalarda Bul](/visualstudio/ide/find-in-files) Visual Studio belgelerinde.
+Daha fazla bilgi için bkz. Visual Studio belgelerindeki [dosyalarda bulma](/visualstudio/ide/find-in-files) .
 
 ## <a name="find-all-references"></a>Tüm Başvuruları Bul
 
-Kod tabanınızdaki bir simgenin tüm kullanımları bulmak için giriş işaretini veya sembol, sağ tıklayın ve ardından hemen sonra yerleştirin **tüm başvuruları Bul**. Filtre, sıralama veya birçok farklı şekilde sonuçları gruplandırabilirsiniz. Sonuçları artımlı olarak doldurun. Bunlar okur veya yazar çözümünüzü aksine, sistem üstbilgileri veya diğer kitaplıkları neler olacağıyla yardımcı olması olarak sınıflandırılmış.
+Kod tabanınızdaki bir sembolün tüm kullanımlarını bulmak için, giriş işaretini simgenin içine veya hemen arkasına yerleştirin, sağ tıklayın ve ardından **tüm başvuruları bul**' u seçin. Sonuçları birçok farklı yolla filtreleyebilir, sıralayabilir veya gruplandırabilirsiniz. Sonuçlar artımlı olarak doldurulur. Bunlar, sistem üst bilgileri veya diğer kitaplıkların aksine, çözümünüzde neler olduğunu görmenizi sağlayacak okuma veya yazma olarak sınıflandırılmaktadır.
 
-![C&#43; &#43; tüm başvuruları Bul](../ide/media/find-all-references-results-cpp.png "tüm başvuruları Bul")
+![C&#43; &#43; tüm başvuruları bul](../ide/media/find-all-references-results-cpp.png "Tüm başvuruları Bul")
 
-Sonuçlar aşağıdaki kategorilere göre gruplandırma:
+Sonuçları aşağıdaki kategorilere göre gruplandırabilirsiniz:
 
 - Proje sonra tanım
 - Yalnızca tanım
-- Önce tanım sonra proje
+- Tanım sonra proje
 - Tanım sonra yol
-- Tanım, proje ve sonra yol
+- Tanım, proje sonra yol
 
- #### <a name="filter-results"></a>Sonuçları filtreleme
+#### <a name="filter-results"></a>Sonuçları filtreleme
 
-Sonuçları filtrelemek için bir sütun gelin ve açılan filtreleme simgesini seçin. Sonuçları görmek için istemeyebilirsiniz dize ve yorum başvuruları gibi şeyleri gizlemek için ilk sütunundaki filtre uygulayabilirsiniz.
+Sonuçları filtrelemek için bir sütunun üzerine gelin ve açılan filtre simgesini seçin. , Görmek istemediğiniz dize ve açıklama başvuruları gibi şeyleri gizlemek için ilk sütundan sonuçları filtreleyebilirsiniz.
 
-![C&#43; &#43; filtreler tüm başvuruları Bul](../ide/media/find-all-references-filters-cpp.png "filtreler tüm başvuruları Bul")
+![C&#43; &#43; tüm başvuruları bul filtreleri](../ide/media/find-all-references-filters-cpp.png "Tüm başvuru filtrelerini bul")
 
-- **Onaylanmış sonuçları**: Gerçek kod başvurularını Aranan sembol. Örneğin, bir üye işlev için arama adlı `Size` yapılan tüm başvurular döndürür `Size` tanımlayan sınıf kapsamı eşleşen `Size`.
+- **Onaylanan sonuçlar**: gerçek kod, aranmakta olan simgeye başvurur. Örneğin, `Size` adlı bir üye işlevi aramak, `Size`tanımlayan sınıfın kapsamıyla eşleşen `Size` tüm başvuruları döndürür.
 
-- **Sonuçları disconfirmed**: Adıyla eşleşir, ancak gerçek aradığınız sembol başvuruları olmayan sembolleri gösterir çünkü bu filtre varsayılan olarak kapalıdır. Örneğin, her adında bir üye işlevi tanımlayan iki sınıfınız varsa `Size`, ve arama için çalıştırma `Size` bir başvurudan bir nesne üzerinde `Class1`, yönelik tüm başvuruları `Size` gelen `Class2` disconfirmed olarak görünür.
+- **Onaylanan sonuçlar**: Bu filtre varsayılan olarak kapalıdır çünkü adı eşleşen sembolleri gösterir, ancak Aradığınız simgeye gerçek başvurulardır. Örneğin, her biri `Size`adlı bir üye işlevi tanımladıysanız ve bir `Class1`nesnesinden bir başvuru üzerinde `Size` için bir arama çalıştırırsanız, `Class2` `Size` yapılan tüm başvurular onaylanmamış olarak görünür.
 
-- **İşlenmemiş sonuçları**: **Tüm başvuruları Bul** işlemleri üzerinde tamamlanması zaman alabilir büyük sonuçlar listesinden buraya "İşlenmemiş" sonuçları gösterecek şekilde çıkabilirsiniz. İşlenmemiş sonuçlar Aranan simgenin adını eşleşen ancak henüz gerçek kod başvurularını onaylanmış henüz. Daha hızlı sonuçlar almak için bu filtreyi kapatabilirsiniz. Yalnızca bazı sonuçları gerçek başvuruları olmayabileceğini unutmayın.
+- **İşlenmemiş sonuçlar**: **tüm başvuruları bul** , daha büyük kod tabanlarında tamamlanması zaman alabilir, bu nedenle sonuçlar listesi burada "işlenmemiş" sonuçları gösterir. İşlenmemiş sonuçlar, aranmakta olan sembolün adıyla eşleşir ancak henüz gerçek kod başvuruları onaylanmamıştır. Daha hızlı sonuçlar elde etmek için bu filtreyi açabilirsiniz. Yalnızca bazı sonuçların fiili başvurular olabileceğini unutmayın.
 
- #### <a name="sort-results"></a>Sonuçları sıralama
+#### <a name="sort-results"></a>Sonuçları sıralama
 
-Bu sütun seçerek herhangi bir sütuna göre sonuçları sıralayabilirsiniz. Artan veya azalan sütunu tekrar seçerek arasında değiştirebilir.
+Bu sütunu seçerek sonuçları herhangi bir sütuna göre sıralayabilirsiniz. Sütunu yeniden seçerek artan veya azalan sırada takas edebilirsiniz.
 
 ## <a name="navigation-bar"></a>Gezinti Çubuğu
 
-Bir dosyadaki veya üyeleri kullanarak yazmak için bir tür tanımı gidebilirsiniz **gezinti çubuğu** Düzenleyicisi penceresinin üzerinde olmasıdır.
+Düzenleyici penceresinin üzerindeki **Gezinti çubuğunu** kullanarak bir dosyadaki bir türün tanımına veya üye türüne gidebilirsiniz.
 
-![C&#43; &#43; gezinti çubuğu](../ide/media/navbar-cpp.png "gezinti çubuğu")
+![C&#43; &#43; gezinti çubuğu](../ide/media/navbar-cpp.png "Gezinti Çubuğu")
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Okumanız ve anlamanız C++ kod](read-and-understand-code-cpp.md)</br>
-- [Düzenleme ve yeniden düzenleme C++ kod](read-and-understand-code-cpp.md)</br>
-- [Canlı paylaşım için işbirliği yapınC++](live-share-cpp.md)
+- [Kodu okuyun ve C++ anlayın](read-and-understand-code-cpp.md)</br>
+- [Kodu düzenleme ve C++ yeniden düzenleme](read-and-understand-code-cpp.md)</br>
+- [İçin Live Share işbirliği yapınC++](live-share-cpp.md)

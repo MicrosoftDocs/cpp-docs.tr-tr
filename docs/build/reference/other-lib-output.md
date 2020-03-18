@@ -1,27 +1,25 @@
 ---
 title: Diğer LIB Çıktısı
 ms.date: 11/04/2016
-f1_keywords:
-- Lib
 helpviewer_keywords:
 - output files, LIB
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
-ms.openlocfilehash: 1f0140d33a06a1bdb95df4a8c52aea1f84b3aca1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4152795c2f1cc2acbeb7a55d0d5ee3419fe6f789
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320259"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439169"
 ---
 # <a name="other-lib-output"></a>Diğer LIB Çıktısı
 
-Varsayılan modda/List seçeneği, sonuçta elde edilen Kitaplığı hakkında bilgi görüntülemek için kullanabilirsiniz. Bu çıktıyı bir dosyaya yeniden yönlendirebilirsiniz.
+Varsayılan modda, sonuç kitaplığıyla ilgili bilgileri göstermek için/LIST seçeneğini kullanabilirsiniz. Bu çıktıyı bir dosyaya yeniden yönlendirebilirsiniz.
 
-LIB, telif hakkı ve sürüm bir ileti görüntüler ve komut dosyaları/nologo seçeneği kullanılmadığı sürece görüntülemektedir.
+/NOLOGO,/NOLOGO seçeneği kullanılmadığı takdirde bir telif hakkı ve sürüm iletisi ve yankı komut dosyalarını görüntüler.
 
-Yazdığınızda `lib` diğer herhangi bir giriş ile LIB seçeneklerini özetleyen bir kullanım deyimi görüntüler.
+Başka bir girişi olmayan `lib` yazdığınızda LIB, seçeneklerini özetleyen bir kullanım ifadesini görüntüler.
 
-Hata ve uyarı iletileri LIB tarafından verilen formun LNK*nnnn*. BAĞLANTI, DUMPBIN ve EDITBIN araçları ayrıca hatalar bu aralığı kullanın. Çıkış penceresinde hata'ı seçip F1 tuşuna basarak Yardım kullanılabilir.
+LıB tarafından verilen hata ve uyarı iletileri, LNK*nnnn*biçiminde olmalıdır. BAĞLANTı, DUMPBIN ve EDITBIN araçları da bu hata aralığını kullanır. Yardım, çıkış penceresinde hata seçilerek ve F1 'e basılarak kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

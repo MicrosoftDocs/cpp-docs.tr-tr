@@ -5,7 +5,6 @@ f1_keywords:
 - ATL::IRowsetIdentityImpl
 - ATL.IRowsetIdentityImpl
 - IRowsetIdentityImpl
-- IsSameRow
 - IRowsetIdentityImpl.IsSameRow
 - ATL.IRowsetIdentityImpl.IsSameRow
 - IRowsetIdentityImpl::IsSameRow
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - IRowsetIdentityImpl class
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-ms.openlocfilehash: 51f8d7e832476619ccec277c9d73791041d146a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e8c976fcb23bf41d88d88be3887db4dde52379d
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390847"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446318"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl Sınıfı
 
-OLE DB uygulayan [IRowsetIdentity](/previous-versions/windows/desktop/ms715913(v=vs.85)) satır kimliği için test sağlayan arabirim.
+Satır kimliği için test sağlayan OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913(v=vs.85)) arabirimini uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,15 +34,15 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Öğesinden türetilen bir sınıf `IRowsetIdentityImpl`.
+*Şı*<br/>
+`IRowsetIdentityImpl`türetilen bir sınıf.
 
 *RowClass*<br/>
-Depolama birimi için `HROW`.
+`HROW`için depolama birimi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -51,11 +50,11 @@ Depolama birimi için `HROW`.
 
 |||
 |-|-|
-|[Issamerow](#issamerow)|Bunlar aynı satıra başvurmak için iki satır işleyicilerini karşılaştırır.|
+|[IsSameRow](#issamerow)|Aynı satıra başvurduklarında, bunları görmek için iki satır tutamaçlarını karşılaştırır.|
 
-## <a name="issamerow"></a> Irowsetıdentityımpl::ıssamerow
+## <a name="issamerow"></a>IRowsetIdentityImpl:: IsSameRow
 
-Bunlar aynı satıra başvurmak için iki satır işleyicilerini karşılaştırır.
+Aynı satıra başvurduklarında, bunları görmek için iki satır tutamaçlarını karşılaştırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -66,11 +65,11 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IRowsetIdentity:: IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) ' a bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satır işleyicilerini karşılaştırmak için bu yöntem bıraktığı `HROW` için işleme `RowClass` üyeleri ve çağrıları `memcmp` işaretçileri.
+Satır tutamaçlarını karşılaştırmak için, bu yöntem `HROW` tutamaçlarını `RowClass` üyelerine yayınlar ve işaretçiler üzerinde `memcmp` çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

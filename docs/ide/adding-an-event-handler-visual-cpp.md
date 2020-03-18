@@ -1,8 +1,7 @@
 ---
-title: Bir olay işleyicisi ekleme
+title: Olay işleyicisi ekleme
 ms.date: 11/12/2018
 f1_keywords:
-- vc.codewiz.eventhandler.overview
 - vc.codewiz.eventhandler.overview
 helpviewer_keywords:
 - event handlers, adding
@@ -10,69 +9,69 @@ helpviewer_keywords:
 - MSBuild, properties
 - event handler wizard [C++]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
-ms.openlocfilehash: 96e5b8777bb8b0c976277a06e8ad49b3334921fb
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0d852991c29281a7ecf912bd3d764d9916ef10f7
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345258"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447514"
 ---
-# <a name="add-an-event-handler"></a>Bir olay işleyicisi ekleme
+# <a name="add-an-event-handler"></a>Olay işleyicisi ekleme
 
-Kaynak Düzenleyicisi'nde, yeni bir olay işleyicisi ekleyebilir, veya Düzenle iletişim kutusu denetimi kullanarak var olan olay işleyicisi, [olay işleyici Sihirbazı](#event-handler-wizard).
+Kaynak Düzenleyicisi ' nden, [olay işleyicisi Sihirbazı 'nı](#event-handler-wizard)kullanarak bir iletişim kutusu denetimi için yeni bir olay işleyicisi ekleyebilir veya var olan bir olay işleyicisini düzenleyebilirsiniz.
 
-İletişim kutusunu kullanarak uygulama sınıfa olaya ekleyebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Olay iletişim kutusu sınıf dışında bir sınıf eklemek için olay işleyici Sihirbazı'nı kullanın.
+[Özellikler penceresi](/visualstudio/ide/reference/properties-window)kullanarak iletişim kutusunu uygulayan sınıfa bir olay ekleyebilirsiniz. Olayı iletişim kutusu sınıfından başka bir sınıfa eklemek için olay işleyicisi Sihirbazı ' nı kullanın.
 
-**Bir iletişim kutusu denetimi olay işleyicisi eklemek için:**
+**İletişim kutusu denetimine bir olay işleyicisi eklemek için:**
 
-1. İletişim kutusu kaynak çift [kaynak görünümü](../windows/how-to-create-a-resource-script-file.md#create-resources) denetimi içeren bir iletişim kutusu kaynağına açmak için [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).
+1. İletişim kutusu [düzenleyicisinde](../windows/dialog-editor.md)denetimi içeren iletişim kutusu kaynağını açmak için [kaynak görünümü](../windows/how-to-create-a-resource-script-file.md#create-resources) iletişim kutusu kaynağına çift tıklayın.
 
-1. Bildirim olayı işlemek istediğiniz denetime sağ tıklayın.
+1. Bildirim olayını işlemek istediğiniz denetime sağ tıklayın.
 
-1. Kısayol menüsünde **olay işleyici Ekle** olay işleyici Sihirbazı'nı görüntülemek için.
+1. Olay Işleyicisi Sihirbazı 'Nı göstermek için kısayol menüsünde **olay Işleyicisi Ekle** ' yi seçin.
 
-1. Olay seçin **ileti türü** de seçilen sınıfı eklemek için onay kutusunu **sınıf listesi** kutusu.
+1. **Sınıf liste** kutusunda seçilen sınıfa eklemek için **ileti türü** kutusundaki olayı seçin.
 
-1. Varsayılan adı kabul **işlev işleyicisi adı** kutusuna veya tercih ettiğiniz bir ad sağlayın.
+1. **İşlev işleyicisi ad** kutusunda varsayılan adı kabul edin veya istediğiniz adı belirtin.
 
-1. Seçin **ekleme ve düzenleme** projeye olay işleyicisi eklemek ve uygun bir olay işleyici kodu eklemek için yeni işlevi metin düzenleyicisini açın.
+1. Projeye olay işleyicisini eklemek için **Ekle ve Düzenle** ' yi seçin ve uygun olay işleyicisi kodunu eklemek için yeni işlevde metin düzenleyicisini açın.
 
-   Seçili ileti türü seçilen bir sınıf için bir olay işleyicisi zaten varsa **ekleme ve düzenleme** kullanılamıyor ve **kod düzenleme** kullanılabilir. Seçin **kod düzenleme** mevcut işlevi metin düzenleyiciyi açın.
+   Seçilen ileti türünün seçili sınıf için zaten bir olay işleyicisi varsa, **ekleme ve düzenleme** kullanılamaz ve **kod düzenleme** kullanılabilir. Varolan işlevde metin düzenleyiciyi açmak için **kodu Düzenle** ' yi seçin.
 
-Alternatif olarak, olay işleyicilerindeki ekleyebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Daha fazla bilgi için [iletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md).
+Alternatif olarak, [Özellikler penceresi](/visualstudio/ide/reference/properties-window)olay işleyicileri ekleyebilirsiniz. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri için olay Işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md).
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Olay işleyici Sihirbazı](#event-handler-wizard)
+- [Olay işleyicisi Sihirbazı](#event-handler-wizard)
 
-## <a name="event-handler-wizard"></a>Olay işleyici Sihirbazı
+## <a name="event-handler-wizard"></a>Olay işleyicisi Sihirbazı
 
-Bu sihirbaz, seçtiğiniz sınıfa bir iletişim kutusu denetimi için bir olay işleyicisi ekler. Bir olay işleyicisinden eklerseniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window), iletişim kutusu uygulayan sınıfına ekleyin. Daha fazla bilgi için [iletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md).
+Bu sihirbaz, seçtiğiniz sınıfa bir iletişim kutusu denetimi için bir olay işleyicisi ekler. [Özellikler penceresi](/visualstudio/ide/reference/properties-window)bir olay işleyicisi eklerseniz, bunu yalnızca iletişim kutusunu uygulayan sınıfa ekleyebilirsiniz. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri için olay Işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md).
 
 - **Komut adı**
 
-  Kendisi için olay işleyicisi eklenir, seçilen denetimi tanımlar. Bu kutuyu kullanılamıyor.
+  Olay işleyicisinin eklendiği Seçili denetimi tanımlar. Bu kutu kullanılamıyor.
 
 - **İleti türü**
 
-  Seçili denetim için geçerli olası ileti işleyicileri listesini görüntüler.
+  Seçili denetim için geçerli olası ileti işleyicilerinin listesini görüntüler.
 
 - **İşlev işleyicisi adı**
 
-  Olayı işlemek için eklenen işlev adını görüntüler. İleti türü ve tarafından başına, komut, varsayılan olarak adı dayanır `On`. Örneğin, düğme için adlı `IDC_BUTTON1`, ileti türü `BN_CLICKED` işlev işleyicisi adı görüntüler `OnBnClickedButton1`.
+  Olayı işlemek için eklenen işlevin adını görüntüler. Ad varsayılan olarak ileti türüne ve komutuna göre belirlenir, önüne `On`. Örneğin, `IDC_BUTTON1`adlı düğme için, `BN_CLICKED` ileti türü `OnBnClickedButton1`işlev işleyicisi adını görüntüler.
 
 - **Sınıf listesi**
 
-  Bir olay işleyicisi ekleyebileceğiniz kullanılabilir sınıflarını görüntüler. Seçili iletişim kutusu sınıfı kırmızı renkte görüntülenir.
+  Bir olay işleyicisi ekleyebileceğiniz kullanılabilir sınıfları görüntüler. Seçili iletişim kutusu için sınıf kırmızı renkte görüntülenir.
 
 - **İşleyici açıklaması**
 
-  Seçili öğe için bir açıklama sağlar **ileti türü** kutusu. Bu kutuyu kullanılamıyor.
+  **İleti türü** kutusunda seçilen öğe için bir açıklama sağlar. Bu kutu kullanılamıyor.
 
 - **Ekleme ve düzenleme**
 
-  Seçilen bir sınıf veya nesne için ileti işleyicisi ekler. Denetim bildirimi işleyicinizin kodunu ekleyebilmeniz için de yeni işleve metin düzenleyicisi açılır.
+  İleti işleyicisini seçili sınıfa veya nesneye ekler. Ayrıca, denetim bildirimine yönelik işleyici kodunu ekleyebilmeniz için metin düzenleyiciyi yeni işleve açar.
 
-- **Kodu düzenleme**
+- **Kodu Düzenle**
 
-  Ekleme ya da Denetim bildirimi işleyicinizin kodunu düzenle seçili mevcut işlevi metin düzenleyicisi açılır.
+  Denetim bildirim işleyicisi kodunu ekleyebileceğiniz veya düzenleyebilmeniz için seçili mevcut işleve metin düzenleyiciyi açar.

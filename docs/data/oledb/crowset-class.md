@@ -37,7 +37,6 @@ f1_keywords:
 - ATL::CRowset::CRowset
 - ATL::CRowset<TAccessor>::CRowset
 - ATL.CRowset.CRowset
-- CRowset
 - CRowset<TAccessor>.CRowset
 - CRowset::CRowset
 - ATL.CRowset<TAccessor>.CRowset
@@ -84,7 +83,6 @@ f1_keywords:
 - ATL.CRowset.GetDataHere
 - ATL.CRowset<TAccessor>.GetOriginalData
 - CRowset<TAccessor>::GetOriginalData
-- GetOriginalData
 - ATL::CRowset<TAccessor>::GetOriginalData
 - ATL.CRowset.GetOriginalData
 - CRowset::GetOriginalData
@@ -98,7 +96,6 @@ f1_keywords:
 - CRowset<TAccessor>::GetRowStatus
 - ATL.CRowset.GetRowStatus
 - CRowset<TAccessor>.GetRowStatus
-- GetRowStatus
 - ATL.CRowset<TAccessor>.Insert
 - CRowset.Insert
 - CRowset<TAccessor>.Insert
@@ -109,7 +106,6 @@ f1_keywords:
 - ATL::CRowset::Insert
 - CRowset::IsSameRow
 - CRowset.IsSameRow
-- IsSameRow
 - ATL::CRowset::IsSameRow
 - ATL.CRowset.IsSameRow
 - CRowset<TAccessor>::IsSameRow
@@ -129,7 +125,6 @@ f1_keywords:
 - ATL.CRowset.MoveLast
 - ATL::CRowset::MoveLast
 - CRowset<TAccessor>.MoveLast
-- MoveLast
 - CRowset::MoveLast
 - ATL.CRowset<TAccessor>.MoveLast
 - CRowset.MoveLast
@@ -143,7 +138,6 @@ f1_keywords:
 - ATL::CRowset::MoveNext
 - CRowset<TAccessor>.MovePrev
 - CRowset.MovePrev
-- MovePrev
 - CRowset::MovePrev
 - ATL.CRowset.MovePrev
 - ATL::CRowset<TAccessor>::MovePrev
@@ -154,11 +148,9 @@ f1_keywords:
 - ATL::CRowset<TAccessor>::MoveToBookmark
 - ATL.CRowset.MoveToBookmark
 - ATL.CRowset<TAccessor>.MoveToBookmark
-- MoveToBookmark
 - CRowset::MoveToBookmark
 - CRowset.MoveToBookmark
 - CRowset<TAccessor>::MoveToBookmark
-- MoveToRatio
 - CRowset<TAccessor>::MoveToRatio
 - CRowset::MoveToRatio
 - CRowset<TAccessor>.MoveToRatio
@@ -167,7 +159,6 @@ f1_keywords:
 - CRowset.MoveToRatio
 - ATL.CRowset<TAccessor>.MoveToRatio
 - ATL::CRowset<TAccessor>::MoveToRatio
-- ReleaseRows
 - CRowset::ReleaseRows
 - ATL::CRowset<TAccessor>::ReleaseRows
 - CRowset<TAccessor>.ReleaseRows
@@ -177,7 +168,6 @@ f1_keywords:
 - CRowset<TAccessor>::ReleaseRows
 - ATL::CRowset::ReleaseRows
 - ATL.CRowset<TAccessor>.SetData
-- SetData
 - ATL::CRowset::SetData
 - CRowset<TAccessor>.SetData
 - CRowset::SetData
@@ -238,16 +228,16 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: dc4f619fb0dba924693682c927247e809fe2cfe9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 689cd3a1f7496ad75bf83e0b1a2a14f7bd1b1f6f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361977"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441178"
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 
-Bir OLE DB satır kümesi nesnesi ve ilgili birkaç kapsayan arabirimleri ve satır kümesi veri işleme yöntemlerini sağlar.
+OLE DB satır kümesi nesnesini ve bazı ilgili arabirimleri kapsüller ve satır kümesi verileri için işleme yöntemleri sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -259,11 +249,11 @@ class CRowset
 ### <a name="parameters"></a>Parametreler
 
 *TAccessor*<br/>
-Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.
+Erişimci sınıfı. Varsayılan değer: `CAccessorBase`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -271,40 +261,40 @@ Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.
 
 |||
 |-|-|
-|[AddRefRows](#addrefrows)|Artışlarla başvuru sayısı geçerli satır ile ilişkili.|
-|[Kapat](#close)|Satırları ve geçerli sürümleri `IRowset` arabirimi.|
-|[Compare](#compare)|Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).|
-|[CRowset](#crowset)|Yeni bir oluşturur `CRowset` nesne ve bunu ile ilişkilendirir (isteğe bağlı olarak) bir `IRowset` bir parametre olarak sağlanan arabirim.|
-|[Delete](#delete)|Satır kümesi kullanarak satırları siler [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
+|[AddRefRows](#addrefrows)|Geçerli satırla ilişkili başvuru sayısını artırır.|
+|[~Eksik](#close)|Satırları ve geçerli `IRowset` arabirimini yayınlar.|
+|[Compare](#compare)|[IRowsetLocate:: Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))kullanarak iki yer işaretini karşılaştırır.|
+|[CRowset](#crowset)|Yeni bir `CRowset` nesnesi oluşturur ve (isteğe bağlı olarak) onu bir parametre olarak sağlanan bir `IRowset` arabirimiyle ilişkilendirir.|
+|[Silme](#delete)|[IRowsetChange: DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85))kullanarak satır kümesinden satır siler.|
 |[FindNextRow](#findnextrow)|Belirtilen yer işaretinden sonra sonraki eşleşen satırı bulur.|
-|[GetApproximatePosition](#getapproximateposition)|Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.|
-|[GetData](#getdata)|Satır satır kümesinin kopyadan verileri alır.|
-|[GetDataHere](#getdatahere)|Belirtilen arabellek verilerini alır.|
-|[GetOriginalData](#getoriginaldata)|En son öğesinden alınan veya bekleyen değişiklikleri yoksayma veri kaynağına gönderilen verileri alır.|
-|[GetRowStatus](#getrowstatus)|Tüm satırları durumunu döndürür.|
-|[Ekle](#insert)|Oluşturur ve kullanarak yeni bir satır ekler [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
-|[Issamerow](#issamerow)|Geçerli satır belirtilen satırı karşılaştırır.|
-|[MoveFirst](#movefirst)|Sonraki getirme konumunu ilk konumuna yeniden konumlandırır.|
+|[GetApproximatePosition](#getapproximateposition)|Bir yer işaretine karşılık gelen satırın yaklaşık konumunu döndürür.|
+|[GetData](#getdata)|Satır kümesinin satır kopyasından verileri alır.|
+|[GetDataHere](#getdatahere)|Belirtilen arabellekteki verileri alır.|
+|[GetOriginalData](#getoriginaldata)|Bekleyen değişiklikleri yoksayarak veri kaynağından en son getirilen veya aktarılan verileri alır.|
+|[GetRowStatus](#getrowstatus)|Tüm satırların durumunu döndürür.|
+|[Ekleyin](#insert)|[IRowsetChange: InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85))kullanarak yeni bir satır oluşturur ve ekler.|
+|[IsSameRow](#issamerow)|Belirtilen satırı geçerli satırla karşılaştırır.|
+|[MoveFirst](#movefirst)|Sonraki getirme konumunu ilk konuma konumlandırır.|
 |[MoveLast](#movelast)|Son kayda gider.|
-|[MoveNext](#movenext)|Bir sonraki sıralı satır ya da bir belirli sayıdaki uzaklığına sonraki satırda ötesinde veri getirir.|
+|[Iken](#movenext)|Sonraki sıralı satırdan veya bir sonraki satırın ötesinde belirtilen sayıda konumda veri getirir.|
 |[MovePrev](#moveprev)|Önceki kayda gider.|
-|[MoveToBookmark](#movetobookmark)|Bu yer işaretinden yer işareti tarafından işaretlenen satırı veya belirtilen bir uzaklık satırı getirir.|
-|[MoveToRatio](#movetoratio)|Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.|
-|[ReleaseRows](#releaserows)|Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) geçerli satır tanıtıcısını bırakmak için.|
-|[SetData](#setdata)|Kullanarak bir satır bir veya daha fazla sütun veri değerlerini ayarlar [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
-|[Geri alma](#undo)|Satır son getirme bu yana yapılan değişiklikleri geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).|
-|[Güncelleştir](#update)|Bekleyen tüm geçerli satırın son getirme veya güncelleştirme yapılan değişiklikleri iletir.|
-|[UpdateAll](#updateall)|Bekleyen tüm son getirme veya güncelleştirme tüm satırları için yapılan değişiklikleri iletir.|
+|[MoveToBookmark](#movetobookmark)|Bir yer işareti tarafından işaretlenen satırı veya bu yer işaretinin belirtilen uzaklığında satırı getirir.|
+|[MoveToRatio](#movetoratio)|Satır kümesindeki kesirli konumdan başlayarak satırları getirir.|
+|[ReleaseRows](#releaserows)|Geçerli satır tanıtıcısını serbest bırakmak için [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) çağırır.|
+|[SetData](#setdata)|Bir satırın bir veya daha fazla sütununda [IRowsetChange: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85))kullanarak veri değerlerini ayarlar.|
+|[Komutunu](#undo)|Son getirme veya [güncelleştirmeden](../../data/oledb/crowset-update.md)bu yana bir satırda yapılan tüm değişiklikleri geri alır.|
+|[Güncelleştirme](#update)|Son getirme veya güncelleştirmeden bu yana geçerli satıra yapılan bekleyen değişiklikleri iletir.|
+|[UpdateAll](#updateall)|Son getirme veya güncelleştirmeden bu yana tüm satırlarda yapılan bekleyen değişiklikleri iletir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-OLE DB'de bir satır kümesi, bir program ayarlar ve verileri alır nesnedir.
+OLE DB, bir satır kümesi, bir programın verileri ayarladığı ve aldığı nesnedir.
 
-Bu sınıf örneği ancak bunun yerine bir şablon parametre olarak geçirilen tasarlanmamıştır `CTable` veya `CCommand` (`CRowset` varsayılandır).
+Bu sınıf, örneklenemez, ancak `CTable` veya `CCommand` bir şablon parametresi olarak geçirilir (`CRowset` varsayılandır).
 
-## <a name="addrefrows"></a> CRowset::AddRefRows
+## <a name="addrefrows"></a>CRowset:: AddRefRows
 
-Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) (bir) başvuru sayısını artırmak için geçerli satır tanıtıcısı ile ilişkili.
+Geçerli satır tutamacı ile ilişkili başvuru sayısını artırmak için [IRowset:: AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) çağırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -314,15 +304,15 @@ HRESULT AddRefRows() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, geçerli satır tanıtıcısı için başvuru sayısını artırır. Çağrı [ReleaseRows](../../data/oledb/crowset-releaserows.md) sayısını azaltmak için. Taşıma yöntemleri tarafından döndürülen satır bir başvuru sayısına sahip.
+Bu yöntem, geçerli satır tanıtıcısının başvuru sayısını artırır. Sayıyı azaltmak için [ReleaseRows](../../data/oledb/crowset-releaserows.md) çağırın. Taşıma yöntemlerinin döndürdüğü satırların başvuru sayısı bir olmalıdır.
 
-## <a name="close"></a> CRowset::Close
+## <a name="close"></a>CRowset:: Close
 
-Satırları ve geçerli sürümleri [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) arabirimi.
+Satırları ve geçerli [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) arabirimini yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -334,9 +324,9 @@ void Close() throw();
 
 Bu yöntem, şu anda satır kümesindeki tüm satırları serbest bırakır.
 
-## <a name="compare"></a> CRowset::Compare
+## <a name="compare"></a>CRowset:: Compare
 
-Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).
+[IRowsetLocate:: Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))kullanarak iki yer işaretini karşılaştırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -349,27 +339,27 @@ HRESULT Compare(const CBookmarkBase& bookmark1,
 #### <a name="parameters"></a>Parametreler
 
 *Bookmark1*<br/>
-[in] Karşılaştırılacak ilk yer işareti.
+'ndaki Karşılaştırılacak ilk yer işareti.
 
 *Bookmark2*<br/>
-[in] Karşılaştırılacak ikinci yer işareti.
+'ndaki Karşılaştırılacak ikinci yer işareti.
 
 *pComparison*<br/>
-[out] Karşılaştırmanın sonucu için bir işaretçi.
+dışı Karşılaştırma sonucuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetLocate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetLocate` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetLocate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetLocate` ayarlamanız gerekir.
 
-Tüketicilerinizin yer işaretlerini kullanma hakkında daha fazla bilgi için bkz: [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md).
+Tüketicilerle yer işaretlerini kullanma hakkında daha fazla bilgi için bkz. [yer Imlerini kullanma](../../data/oledb/using-bookmarks.md).
 
-## <a name="crowset"></a> CRowset::CRowset
+## <a name="crowset"></a>CRowset:: CRowset
 
-Yeni bir oluşturur `CRowset` nesne ve bunu ile ilişkilendirir (isteğe bağlı olarak) bir [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) bir parametre olarak sağlanan arabirim.
+Yeni bir `CRowset` nesnesi oluşturur ve (isteğe bağlı) onu bir parametre olarak sağlanan bir [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) arabirimiyle ilişkilendirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -382,11 +372,11 @@ CRowset(IRowset* pRowset);
 #### <a name="parameters"></a>Parametreler
 
 *pRowset*<br/>
-[in] Bir işaretçi bir `IRowset` arabirimi bu sınıf ile ilişkili olması.
+'ndaki Bu sınıfla ilişkilendirilecek `IRowset` arabirimine yönelik bir işaretçi.
 
-## <a name="delete"></a> CRowset::Delete
+## <a name="delete"></a>CRowset::D Sil
 
-Çağrıları [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)) geçerli satır satır kümesinden silinemedi.
+Kayıt kümesinden geçerli satırı silmek için [IRowsetChange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) çağırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -396,9 +386,9 @@ HRESULT Delete() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="findnextrow"></a> CRowset::FindNextRow
+## <a name="findnextrow"></a>CRowset:: FindNextRow
 
 Belirtilen yer işaretinden sonra sonraki eşleşen satırı bulur.
 
@@ -417,43 +407,43 @@ HRESULT FindNextRow(DBCOMPAREOP op,
 
 #### <a name="parameters"></a>Parametreler
 
-*OP*<br/>
-[in] Satır değerleri karşılaştırmak kullanılacak işlem. Değerler için bkz: [IRowsetFind::FindNextRow](/previous-versions/windows/desktop/ms723091(v=vs.85)).
+*üs*<br/>
+'ndaki Satır değerlerini karşılaştırmak için kullanılacak işlem. Değerler için bkz. [IRowsetFind:: FindNextRow](/previous-versions/windows/desktop/ms723091(v=vs.85)).
 
 *pData*<br/>
-[in] Eşleştirilecek değer için bir işaretçi.
+'ndaki Eşleştirilecek değere yönelik bir işaretçi.
 
 *wType*<br/>
-[in] Arabellek değer bölümünü veri türünü belirtir. Türü göstergeleri hakkında daha fazla bilgi için bkz. [veri türleri](/previous-versions/windows/desktop/ms723969(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK.
+'ndaki Arabelleğin değer bölümünün veri türünü gösterir. Tür göstergeleri hakkında daha fazla bilgi için, Windows SDK *OLE DB Programcı başvurusu* Içindeki [veri türleri](/previous-versions/windows/desktop/ms723969(v=vs.85)) bölümüne bakın.
 
 *nLength*<br/>
-[in] Uzunluğu, bayt cinsinden veri değeri için ayrılmış tüketici veri yapısı. Açıklamasını Ayrıntılar için bkz `cbMaxLen` içinde [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu.*
+'ndaki Veri değeri için ayrılan tüketici veri yapısının bayt cinsinden uzunluğu. Ayrıntılar için, *OLE DB Programcı başvurusu* Içindeki [dbbinding yapılarında](/previous-versions/windows/desktop/ms716845(v=vs.85)) `cbMaxLen` açıklamasına bakın.
 
 *bPrecision*<br/>
-[in] Veri alınırken kullanılan en yüksek duyarlık. Yalnızca şu durumlarda kullanılan *wType* DBTYPE_NUMERIC olduğu. Daha fazla bilgi için [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](/previous-versions/windows/desktop/ms719714(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+'ndaki Veri alınırken kullanılan duyarlık üst sınırı. Yalnızca *wType* DBTYPE_NUMERIC ise kullanılır. Daha fazla bilgi için bkz. *OLE DB Programcı başvurusunda* [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](/previous-versions/windows/desktop/ms719714(v=vs.85)) .
 
 *bScale*<br/>
-[in] Veri alınırken kullanılan ölçek. Yalnızca şu durumlarda kullanılan *wType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL. Daha fazla bilgi için [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](/previous-versions/windows/desktop/ms719714(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+'ndaki Veri alınırken kullanılan ölçek. Yalnızca *wType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL ise kullanılır. Daha fazla bilgi için bkz. *OLE DB Programcı başvurusunda* [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](/previous-versions/windows/desktop/ms719714(v=vs.85)) .
 
 *bSkipCurrent*<br/>
-[in] Yer işareti bir arama başlayacağı satır sayısı.
+'ndaki Yer işaretinden, aramanın başlatılacağı satır sayısı.
 
 *pBookmark*<br/>
-[in] Yer işareti için bir arama başlayacağı konum.
+'ndaki Aramanın başlatılacağı konum için yer işareti.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetFind`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetFind` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetFind`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetFind` ayarlamanız gerekir.
 
-Tüketicilerinizin yer işaretlerini kullanma hakkında daha fazla bilgi için bkz: [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md).
+Tüketicilerle yer işaretlerini kullanma hakkında daha fazla bilgi için bkz. [yer Imlerini kullanma](../../data/oledb/using-bookmarks.md).
 
-## <a name="getapproximateposition"></a> CRowset::GetApproximatePosition
+## <a name="getapproximateposition"></a>CRowset:: GetApproximatePosition
 
-Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.
+Bir yer işaretine karşılık gelen satırın yaklaşık konumunu döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -466,27 +456,27 @@ HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,
 #### <a name="parameters"></a>Parametreler
 
 *pBookmark*<br/>
-[in] Bulunacak konumu olan satırı tanımlayan bir yer işareti için bir işaretçi. Yalnızca satır sayısı gerekliyse null değerini DÖNDÜRÜR.
+'ndaki Konumu bulunan satırı tanımlayan yer işaretine yönelik bir işaretçi. Yalnızca satır sayısı gerekliyse NULL.
 
 *pPosition*<br/>
-[out] Konumu için bir işaretçi burada `GetApproximatePosition` satır konumunu döndürür. Konum gerekli değilse null değerini DÖNDÜRÜR.
+dışı `GetApproximatePosition` satırın konumunu döndüren konuma yönelik bir işaretçi. Konum gerekmiyorsa NULL.
 
 *pcRows*<br/>
-[out] Konumu için bir işaretçi burada `GetApproximatePosition` toplam satır sayısını döndürür. Satır sayısı gerekli değilse null değerini DÖNDÜRÜR.
+dışı `GetApproximatePosition` toplam satır sayısını döndüren konuma yönelik bir işaretçi. Satır sayısı gerekmiyorsa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetScroll`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetScroll` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetScroll`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetScroll` ayarlamanız gerekir.
 
-Tüketicilerinizin yer işaretlerini kullanma hakkında daha fazla bilgi için bkz: [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md).
+Tüketicilerle yer işaretlerini kullanma hakkında daha fazla bilgi için bkz. [yer Imlerini kullanma](../../data/oledb/using-bookmarks.md).
 
-## <a name="getdata"></a> CRowset::GetData
+## <a name="getdata"></a>CRowset:: GetData
 
-Satır satır kümesinin kopyadan verileri alır.
+Satır kümesinin satır kopyasından verileri alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -499,19 +489,19 @@ HRESULT GetData(int nAccessor) throw();
 #### <a name="parameters"></a>Parametreler
 
 *nAccessor*<br/>
-[in] Verilere erişmek için kullanılacak bir erişimci (sıfır sapma) dizin sayısı.
+'ndaki Verilere erişmek için kullanılacak erişimcinin (sıfır-fark) dizin numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişimcinin içinde değil bir erişimci belirtirseniz [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md), açıkça erişimci sayısını geçirerek verileri almak için bu yöntemi kullanın.
+[BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md)içinde bir oto erişimcisi olmayan bir erişimci belirtirseniz, erişimci numarasını geçirerek verileri açıkça almak için bu yöntemi kullanın.
 
-## <a name="getdatahere"></a> CRowset::GetDataHere
+## <a name="getdatahere"></a>CRowset:: GetDataHere
 
-Geçerli satırdaki verileri alır ve belirtilen arabelleğine koyar.
+Geçerli satırdan verileri alır ve belirtilen arabelleğe koyar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -523,22 +513,22 @@ HRESULT GetDataHere(int nAccessor,
 #### <a name="parameters"></a>Parametreler
 
 *nAccessor*<br/>
-[in] Erişimci, verilere erişmek için kullanılacak dizini sayısı.
+'ndaki Verilere erişmek için kullanılacak erişimcinin Dizin numarası.
 
 *pBuffer*<br/>
-[out] Bir arabelleğe geçerli kayıt verilerini yerleştirmek için.
+dışı Geçerli kayıt için verilerin yerleştirileceği bir arabellek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi kullanmak nasıl bir örnek için bkz [MultiRead örnek](../../overview/visual-cpp-samples.md).
+Bu işlevi nasıl kullanacağınızı gösteren bir örnek için bkz. [MultiRead örneği](../../overview/visual-cpp-samples.md).
 
-## <a name="getoriginaldata"></a> CRowset::GetOriginalData
+## <a name="getoriginaldata"></a>CRowset:: GetOriginalData
 
-Çağrıları `IRowsetUpdate::GetOriginalData` dan getirilen veya veri kaynağına gönderilen en son verileri almak üzere.
+Veri kaynağından en son getirilen veya aktarılan verileri almak için `IRowsetUpdate::GetOriginalData` çağırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -548,17 +538,17 @@ HRESULT GetOriginalData() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem en son öğesinden alınan veya veri kaynağına gönderilen verileri alır; Bekleyen değişiklikler temel değerleri almaz.
+Bu yöntem, en son getirilen veya veri kaynağından aktarılan verileri alır; bekleyen değişikliklere göre değerleri almaz.
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetUpdate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetUpdate` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetUpdate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetUpdate` ayarlamanız gerekir.
 
-## <a name="getrowstatus"></a> CRowset::GetRowStatus
+## <a name="getrowstatus"></a>CRowset:: GetRowStatus
 
-Tüm satırları durumunu döndürür.
+Tüm satırların durumunu döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -569,19 +559,19 @@ HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();
 #### <a name="parameters"></a>Parametreler
 
 *pStatus*<br/>
-[out] Bir işaretçi bir konuma burada `GetRowStatus` durum değeri döndürür. OLE DB Programcının Başvurusu DBPENDINGSTATUS bakın.
+dışı `GetRowStatus` durum değerini döndüren konuma yönelik bir işaretçi. OLE DB Programcı başvurusunda DBPENDINGSTATUS bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetUpdate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetUpdate` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetUpdate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetUpdate` ayarlamanız gerekir.
 
-## <a name="insert"></a> CRowset::INSERT
+## <a name="insert"></a>CRowset:: INSERT
 
-Oluşturur ve veri erişimci kullanarak yeni bir satır başlatır.
+Erişimcinin verilerini kullanarak yeni bir satır oluşturur ve başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -593,32 +583,32 @@ HRESULT Insert(int nAccessor = 0,
 #### <a name="parameters"></a>Parametreler
 
 *nAccessor*<br/>
-[in] Veri eklemek için kullanılan erişimci sayısı.
+'ndaki Verileri eklemek için kullanılacak erişimcinin numarası.
 
 *bGetHRow*<br/>
-[in] Eklenen satırın tanıtıcı alınan olup olmadığını gösterir.
+'ndaki Yerleştirilen satır için tanıtıcının alınıp alınmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetChange`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetChange` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetChange`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetChange` ayarlamanız gerekir.
 
-Bir veya daha fazla sütun ise yazılabilir ekleme başarısız olabilir. Bu sorunu gidermek için imleç harita değiştirin.
+Bir veya daha fazla sütun yazılabilir değilse INSERT başarısız olabilir. Bunu düzeltmek için imleç eşlemenizi değiştirin.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir satır kümesi bir veri kaynağına erişmek ve ardından söz konusu satır kümesinde bir tablo kullanarak bir dize eklemek gösterilmektedir.
+Aşağıdaki örnek, bir veri kaynağına bir satır kümesi aracılığıyla nasıl eriş, sonra o satır kümesindeki bir tabloyu kullanarak bir dize nasıl ekleneceğini gösterir.
 
-İlk olarak projenize yeni bir ATL nesne ekleyerek bir tablo sınıfı oluşturun. Örneğin, çalışma alanı bölmesinde projeyi sağ tıklayıp **yeni ATL nesnesi**. Gelen **veri erişimi** kategorisi, select **tüketici**. Bir tüketici türü nesne oluşturma **tablo**. (Seçerek **tablo** doğrudan tablodan bir satır oluşturur; seçme **komut** SQL komutu aracılığıyla bir satır kümesi oluşturur.) Belirten bir tablo, bu veri kaynağına erişmek bir veri kaynağını seçin. Tüketici nesnenizin çağırırsanız **CCustomerTable**, ardından ekleme kodunuz şu şekilde uygulayabilir:
+İlk olarak, projenize yeni bir ATL nesnesi ekleyerek tablo sınıfı oluşturun. Örneğin, çalışma alanı bölmesinde projeye sağ tıklayın ve **yenı ATL nesnesi**' ni seçin. **Veri erişimi** kategorisinden **Tüketici**' yi seçin. **Tablo**türünde bir tüketici nesnesi oluşturun. ( **Tablo** seçme doğrudan tablodan bir satır kümesi oluşturur; **komut** seçme seçeneği bir SQL komutu aracılığıyla bir satır kümesi oluşturur.) Bu veri kaynağına erişmek için bir tablo belirterek bir veri kaynağı seçin. Tüketici nesneniz **Ccustomertable**' ı çağırırsanız, ekleme kodunuzu aşağıdaki şekilde uygulamalısınız:
 
 [!code-cpp[NVC_OLEDB_Consumer#10](../../data/oledb/codesnippet/cpp/crowset-insert_1.cpp)]
 
-## <a name="issamerow"></a> CRowset::ıssamerow
+## <a name="issamerow"></a>CRowset:: IsSameRow
 
-Geçerli satır belirtilen satırı karşılaştırır.
+Belirtilen satırı geçerli satırla karşılaştırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -629,15 +619,15 @@ HRESULT IsSameRow(HROW hRow) const throw();
 #### <a name="parameters"></a>Parametreler
 
 *hRow*<br/>
-[in] Geçerli satırın karşılaştırmak için bir satır için bir tanıtıcı.
+'ndaki Geçerli satırla Karşılaştırılacak satıra yönelik bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Satırları aynıdır S_OK gösterir. Diğer değerler için bkz. [IRowsetIndentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK.
+Standart HRESULT. S_OK satırların aynı olduğunu gösterir. Diğer değerler için, Windows SDK *OLE DB Programcı başvurusunda* bkz. [IRowsetIndentity:: IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) .
 
-## <a name="movefirst"></a> CRowset::MoveFirst
+## <a name="movefirst"></a>CRowset:: MoveFirst
 
-İmleç ilk konuma taşır ve ilk satır alır.
+İmleci ilk konuma taşıın ve ilk satırı alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -647,15 +637,15 @@ HRESULT MoveFirst() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) sonraki getirme konumunu ilk konumuna (satır kümesi oluşturduğunuzda, sonraki getirme konumunu konumu) yeniden konumlandırmak için ve ilk satır alır.
+Sonraki getirme konumunu ilk konum olarak yeniden konumlandırmak için [IRowset:: RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) çağırır (satır kümesi oluşturulduğunda bir sonraki getirme konumu olan konum) ve ilk satırı alır.
 
-## <a name="movelast"></a> CRowset::MoveLast
+## <a name="movelast"></a>CRowset:: MoveLast
 
-İmleç son satıra taşır.
+İmleci son satıra kaydırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -665,17 +655,17 @@ HRESULT MoveLast() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) sonraki getirme konumunu son yeniden konumlandırmak için getirin ve son satırını alır.
+Sonraki getirme konumunu son konuma yeniden konumlandırmak için [IRowset:: RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) çağırır ve son satırı alır.
 
-Bu yöntem, ayarladığınız gerektirir `DBPROP_CANSCROLLBACKWARDS` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu. (Daha iyi performans için de ayarlayabilirsiniz `DBPROP_QUICKRESTART` VARIANT_TRUE için.)
+Bu yöntem, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE `DBPROP_CANSCROLLBACKWARDS` ayarlamanızı gerektirir. (Daha iyi performans için `DBPROP_QUICKRESTART` VARIANT_TRUE olarak da ayarlayabilirsiniz.)
 
-## <a name="movenext"></a> CRowset::MoveNext
+## <a name="movenext"></a>CRowset:: MoveNext
 
-İmleci sonraki kayda taşır.
+İmleci bir sonraki kayda kaydırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -689,30 +679,30 @@ HRESULT MoveNext(LONG lSkip,
 #### <a name="parameters"></a>Parametreler
 
 *lSkip*<br/>
-[in] Getirilmeden önce atlanacak satır sayısı.
+'ndaki Getirmeden önce atlanacak satır sayısı.
 
-*bForward*<br/>
-[in] Geçirmek **true** sonraki kayda ilerlemek için **false** geriye doğru gitme.
+*Bilet*<br/>
+'ndaki Sonraki kayda ilerlemek için **doğru** geçirin, geriye doğru ilerlemek için **false** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Satır sonuna ulaşıldığında DB_S_ENDOFROWSET döndürür.
+Standart HRESULT. Satır kümesinin sonuna ulaşıldığında DB_S_ENDOFROWSET döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sonraki sıralı satırdan getirir `CRowset` önceki konumdan hatırlamak nesnesi. İsteğe bağlı olarak, önceden atlamayı seçebilirsiniz *lSkip* satır veya geriye doğru taşıyın.
+`CRowset` nesnesinden sonraki sıralı satırı getirir ve önceki konumu hatırlar. İsteğe bağlı olarak, bir sonraki *lSkip* satırı atlamayı veya geriye doğru taşımayı seçebilirsiniz.
 
-Bu yöntemi çağırmadan önce aşağıdaki özellikleri ayarlayın gerektirir `Open` tablo ya da komut satır kümesi içeren:
+Bu yöntem, satır kümesini içeren tablo veya komutta `Open` çağrılmadan önce aşağıdaki özellikleri ayarlamanızı gerektirir:
 
-- `DBPROP_CANSCROLLBACKWARDS` VARIANT_TRUE olmalıdır *lSkip* < 0
+- *lSkip* < 0 ise `DBPROP_CANSCROLLBACKWARDS` VARIANT_TRUE olmalıdır
 
-- `DBPROP_CANFETCHBACKWARDS` VARIANT_TRUE olmalıdır *bForward* = false
+- *bForward* = false ise `DBPROP_CANFETCHBACKWARDS` VARIANT_TRUE olmalıdır
 
-Aksi takdirde (varsa *lSkip* > = 0 ve *bForward* = true), ek özellikleri ayarlamak gerekmez.
+Aksi takdirde ( *lSkip* > = 0 ve *bForward* = true), ek özellikler ayarlamanız gerekmez.
 
-## <a name="moveprev"></a> CRowset::MovePrev
+## <a name="moveprev"></a>CRowset:: Moveöncekini
 
-İmleci önceki kayda taşır.
+İmleci önceki kayda kaydırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -722,15 +712,15 @@ HRESULT MovePrev() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem ya da ayarlamanızı gerektirir `DBPROP_CANFETCHBACKWARDS` veya `DBPROP_CANSCROLLBACKWARDS` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, satır kümesini içeren tablodaki veya komutta `Open` çağrılmadan önce `DBPROP_CANFETCHBACKWARDS` veya `DBPROP_CANSCROLLBACKWARDS` VARIANT_TRUE olarak ayarlamanızı gerektirir.
 
-## <a name="movetobookmark"></a> CRowset::MoveToBookmark
+## <a name="movetobookmark"></a>CRowset:: MoveToBookmark
 
-Bir yer işareti veya belirtilen bir uzaklık satırında tarafından işaretlenen satırı getirir (*lSkip*), yer işareti öğesinden.
+Yer işaretiyle işaretlenmiş satırı veya belirtilen bir uzaklığında (*lSkip*) satırı bu yer işaretinden getirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -742,24 +732,24 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 #### <a name="parameters"></a>Parametreler
 
 *Yer işareti*<br/>
-[in] Veri getirmek istediğiniz yeri işaretlemek bir yer işareti.
+'ndaki Veri getirmek istediğiniz konuma işaret eden bir yer işareti.
 
 *lSkip*<br/>
-[in] Yer işareti hedef satır satır numarası sayısı. Varsa *lSkip* sıfırsa, getirilen ilk satır işaretli bir satırdır. Varsa *lSkip* 1, getirilen ilk satırın sonuna işaretli satır satırdır. Varsa *lSkip* -1, ilk satırın getirilen işaretli satır önce satırdır.
+'ndaki Yer işaretinden hedef satıra ait satır sayısı. *LSkip* sıfır ise, ilk alınan satır yer işareti yer işaretiyle kaydedilir. *LSkip* 1 ise, getirilen ilk satır, yer işareti alınan satırdan sonraki satırdır. *LSkip* -1 ise, getirilen ilk satır, yer işareti alınan satırdan önceki satırdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetLocate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. De ayarlamanız gerekir `DBPROP_IRowsetLocate` VARIANT_TRUE ve kümesi `DBPROP_CANFETCHBACKWARDS` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetLocate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE `DBPROP_IRowsetLocate` ayarlamanız ve `DBPROP_CANFETCHBACKWARDS` VARIANT_TRUE ayarlamanız gerekir.
 
-Tüketicilerinizin yer işaretlerini kullanma hakkında daha fazla bilgi için bkz: [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md).
+Tüketicilerle yer işaretlerini kullanma hakkında daha fazla bilgi için bkz. [yer Imlerini kullanma](../../data/oledb/using-bookmarks.md).
 
-## <a name="movetoratio"></a> CRowset::MoveToRatio
+## <a name="movetoratio"></a>CRowset:: MoveToRatio
 
-Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.
+Satır kümesindeki kesirli konumdan başlayarak satırları getirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -770,32 +760,32 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 #### <a name="parameters"></a>Parametreler
 
-*nNumerator*<br/>
-[in] Kesirli belirlemek için kullanılan pay, verileri getirmek konumsal.
+*Npay*<br/>
+'ndaki Verilerin getirileceği kesirli konumsal değeri belirlemede kullanılan pay.
 
-*nDenominator*<br/>
-[in] Kesirli belirlemek için kullanılan paydası konumsal verileri getirmek üzere.
+*Npayda*<br/>
+'ndaki Verilerin alınacağı kesirli konumsal değeri belirlemede kullanılan payda.
 
-*bForward*<br/>
-[in] İleriye veya geriye doğru gitme görüntülenip görüntülenmeyeceğini gösterir. İleri varsayılandır.
+*Bilet*<br/>
+'ndaki İleri veya geri hareket edilip edilmeyeceğini gösterir. Varsayılan değer ileri ' dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`MoveToRatio` kabaca şu formüle göre satırları getirir:
+`MoveToRatio`, satırları kabaca aşağıdaki formüle göre getirir:
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)).
+Burada `RowsetSize`, satır içinde ölçülen satır kümesinin boyutudur. Bu formülün doğruluğu, belirli sağlayıcıya bağlıdır. Ayrıntılar için bkz. [IRowsetScroll:: GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)).
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetScroll`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetScroll` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetScroll`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetScroll` ayarlamanız gerekir.
 
-## <a name="releaserows"></a> CRowset::ReleaseRows
+## <a name="releaserows"></a>CRowset:: ReleaseRows
 
-Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) geçerli satır tanıtıcısını bırakmak için.
+Geçerli satır tanıtıcısını serbest bırakmak için [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) çağırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -805,11 +795,11 @@ HRESULT ReleaseRows() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="setdata"></a> CRowset::SetData
+## <a name="setdata"></a>CRowset:: SetData
 
-Bir satırın bir veya daha fazla sütun veri değerlerini ayarlar.
+Bir satırın bir veya daha fazla sütununda veri değerlerini ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -822,23 +812,23 @@ HRESULT SetData(int nAccessor) const throw();
 #### <a name="parameters"></a>Parametreler
 
 *nAccessor*<br/>
-[in] Verilere erişmek için kullanılacak erişimci sayısı.
+'ndaki Verilere erişmek için kullanılacak erişimcinin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin `SetData` kabul eden herhangi bir bağımsız değişken, tüm erişimcileri form güncelleştirmek için kullanılır. Genellikle arama `SetData` bir satırdaki sütun veri değerlerini ayarlamak için ardından çağırın [güncelleştirme](../../data/oledb/crowset-update.md) bu değişiklikleri aktarmak için.
+Bağımsız değişken içermeyen `SetData` form için, tüm erişimciler güncelleştirme için kullanılır. Genellikle bir satırdaki sütunlarda veri değerlerini ayarlamak için `SetData` çağırır, ardından bu değişiklikleri aktarmak için [Update](../../data/oledb/crowset-update.md) 'i çağırın.
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetChange`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetChange` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetChange`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetChange` ayarlamanız gerekir.
 
-Bir veya daha fazla sütun ise yazılabilir ayarlama işlemi başarısız olabilir. Bu sorunu gidermek için imleç harita değiştirin.
+Bir veya daha fazla sütun yazılabilir değilse ayar işlemi başarısız olabilir. Bunu düzeltmek için imleç eşlemenizi değiştirin.
 
-## <a name="undo"></a> CRowset::Undo
+## <a name="undo"></a>CRowset:: Undo
 
-Satır son getirme bu yana yapılan değişiklikleri geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).
+Son getirme veya [güncelleştirmeden](../../data/oledb/crowset-update.md)bu yana bir satırda yapılan tüm değişiklikleri geri alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -851,25 +841,25 @@ HRESULT Undo(DBCOUNTITEM* pcRows = NULL,
 #### <a name="parameters"></a>Parametreler
 
 *pcRows*<br/>
-[out] Konumu için bir işaretçi burada `Undo` çalıştı gerekirse geri satır sayısını döndürür.
+dışı `Undo`, gerektiğinde geri almaya çalıştığı satır sayısını döndüren konuma yönelik bir işaretçi.
 
 *phRow*<br/>
-[out] Konumu için bir işaretçi burada `Undo` çalıştı gerekirse geri almak için tüm satırların tanıtıcıları dizisini döndürür.
+dışı `Undo`, gerektiğinde geri almaya çalıştığı tüm satırlara bir dizi tutamacı döndüren konuma yönelik bir işaretçi.
 
 *pStatus*<br/>
-[out] Konumu için bir işaretçi burada `Undo` satır durum değeri döndürür. Durum yok döndürülür *pStatus* null.
+dışı `Undo` satır durumu değerini döndüren konuma yönelik bir işaretçi. *PStatus* null ise hiçbir durum döndürülmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetUpdate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetUpdate` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetUpdate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetUpdate` ayarlamanız gerekir.
 
-## <a name="update"></a> CRowset::Update
+## <a name="update"></a>CRowset:: Update
 
-Bekleyen tüm geçerli satırın son getirme bu yana yapılan değişiklikleri iletir veya `Update` çağrı.
+Son getirme veya `Update` çağrısından bu yana geçerli satıra yapılan bekleyen değişiklikleri iletir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -882,27 +872,27 @@ HRESULT Update(DBCOUNTITEM* pcRows = NULL,
 #### <a name="parameters"></a>Parametreler
 
 *pcRows*<br/>
-[out] Konumu için bir işaretçi burada `Update` , denenen güncelleştirmek için gerekirse satır sayısını döndürür.
+dışı `Update`, güncelleştirmeye çalıştığı satır sayısını (gerekliyse) geri döndürdüğü konuma yönelik bir işaretçi.
 
 *phRow*<br/>
-[out] Konumu için bir işaretçi burada `Update` çalıştı güncelleştirilecek satırın tanıtıcısını döndürür. Hiçbir tanıtıcı döndürülür *phRow* null.
+dışı `Update`, güncelleştirmeye çalıştığı satırın tanıtıcısını döndüren konuma yönelik bir işaretçi. *Phrow* null ise hiçbir tanıtıcı döndürülmez.
 
 *pStatus*<br/>
-[out] Konumu için bir işaretçi burada `Update` satır durum değeri döndürür. Durum yok döndürülür *pStatus* null.
+dışı `Update` satır durumu değerini döndüren konuma yönelik bir işaretçi. *PStatus* null ise hiçbir durum döndürülmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bekleyen tüm geçerli satıra o satırın son getirilen veya güncelleştirilmiş itibaren yapılan değişiklikleri iletir (kullanarak `Update` veya [UpdateAll](../../data/oledb/crowset-updateall.md)). Genellikle arama [SetData](../../data/oledb/crowset-setdata.md) satırda sütun veri değerlerini ayarlayın ve ardından çağırmak için `Update` bu değişiklikleri aktarmak için.
+Geçerli satıra yapılan bekleyen değişiklikleri, bu satırın en son getirilme veya güncelleştirildiği bu yana iletir (`Update` veya [UpdateAll](../../data/oledb/crowset-updateall.md)kullanılarak). Tipik olarak, bir satırdaki sütunlarda veri değerlerini ayarlamak için [SetData](../../data/oledb/crowset-setdata.md) 'yı çağırın ve ardından bu değişiklikleri iletmek için `Update` çağırın.
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetUpdate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetUpdate` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetUpdate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetUpdate` ayarlamanız gerekir.
 
-## <a name="updateall"></a> CRowset::UpdateAll
+## <a name="updateall"></a>CRowset:: UpdateAll
 
-Bekleyen tüm son getirme itibaren tüm satırları için yapılan değişiklikleri iletir veya `Update` çağrı.
+Son getirme veya `Update` çağrısından bu yana tüm satırlarda yapılan bekleyen değişiklikleri iletir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -915,30 +905,30 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 #### <a name="parameters"></a>Parametreler
 
 *pcRows*<br/>
-[out] Konumu için bir işaretçi burada `UpdateAll` , denenen güncelleştirmek için gerekirse satır sayısını döndürür.
+dışı `UpdateAll`, güncelleştirmeye çalıştığı satır sayısını (gerekliyse) geri döndürdüğü konuma yönelik bir işaretçi.
 
 *pphRow*<br/>
-[out] Burada bellek işaretçisi `UpdateAll` çalıştı güncelleştirilecek satırın tanıtıcısını döndürür. Hiçbir tanıtıcı döndürülür *pphRow* null.
+dışı `UpdateAll` güncelleştirmeye çalıştığı satırın tanıtıcısını döndürdüğü belleğe yönelik bir işaretçi. *PphRow* null ise hiçbir tanıtıcı döndürülmez.
 
 *ppStatus*<br/>
-[out] Konumu için bir işaretçi burada `Update` satır durum değeri döndürür. Durum yok döndürülür *ppStatus* null.
+dışı `Update` satır durumu değerini döndüren konuma yönelik bir işaretçi. *PpStatus* null olduğunda hiçbir durum döndürülmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bekleyen tüm satırları son getirildi kullanılarak veya güncelleştirildiğinde bu yana tüm satırları için yapılan değişiklikleri iletir [güncelleştirme](../../data/oledb/crowset-update.md) veya `UpdateAll`. `UpdateAll` hala tanıtıcı kendileri için olmasına bakılmaksızın değiştirilmiş her satır güncelleştirir (bkz *pphRow*) veya değil.
+Tüm satırlarda yapılan bekleyen değişiklikleri, bu satırlar son getirilen veya [güncelleştirme](../../data/oledb/crowset-update.md) veya `UpdateAll`ile güncelleştirildiği için iletir. `UpdateAll`, hala ( *pphRow*) için tanıtıcı olup olmadığından bağımsız olarak değiştirilen her satırı güncelleştirecektir.
 
-Örneğin, kullandıysanız `Insert` bir satır kümesinde beş satır eklemek için çağrısı olabilir. `Update` beş kat veya çağrı `UpdateAll` tümünü güncelleştirmek için bir kez.
+Örneğin, bir satır kümesine beş satır eklemek için `Insert` kullandıysanız, beş kez `Update` çağırabilir veya tümünü güncelleştirmek için bir kez `UpdateAll` çağırabilirsiniz.
 
-Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetUpdate`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetUpdate` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
+Bu yöntem, tüm sağlayıcılar üzerinde desteklenmeyebilir `IRowsetUpdate`isteğe bağlı arabirimi gerektirir; Bu durumda, yöntem E_NOINTERFACE döndürür. Ayrıca, satır kümesini içeren tabloda veya komutta `Open` çağrılmadan önce VARIANT_TRUE olarak `DBPROP_IRowsetUpdate` ayarlamanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DBVIEWER örneği](../../overview/visual-cpp-samples.md)<br/>
-[MultiRead örnek](../../overview/visual-cpp-samples.md)<br/>
-[Örnek multiRead öznitelikleri](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[DBViewer örneği](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead örneği](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead öznitelikleri örneği](../../overview/visual-cpp-samples.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

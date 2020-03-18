@@ -1,21 +1,19 @@
 ---
-title: "TN036: Cformview'yu AppWizard ve ClassWizard ile kullanma"
+title: "TN036: CFormView'yu AppWizard ve ClassWizard ile Kullanma"
 ms.date: 11/04/2016
-f1_keywords:
-- CFormView
 helpviewer_keywords:
 - TN036
 ms.assetid: dd54053f-ae80-4d23-9180-c7d07ddf2290
-ms.openlocfilehash: 698070340e2f44b908a564bdda2c69ecda227386
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a339ba7b4a3837d4712174dbb5b749131435617
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305534"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447421"
 ---
-# <a name="tn036-using-cformview-with-appwizard-and-classwizard"></a>TN036: Cformview'yu AppWizard ve ClassWizard ile kullanma
+# <a name="tn036-using-cformview-with-appwizard-and-classwizard"></a>TN036: CFormView'yu AppWizard ve ClassWizard ile Kullanma
 
-Bu teknik Not, nasıl kullanıldıkları AppWizard tarafından oluşturulan uygulama değiştirileceğini açıklanan bir `CFormView` varsayılan yerine `CView` ana görünüm sınıfı olarak. Bu, doğrudan Visual C++ bu sürümü ile desteklenir.
+Bu teknik notta, AppWizard tarafından oluşturulan bir uygulamanın, ana görünüm sınıfı olarak varsayılan `CView` yerine `CFormView` kullanabilmesi için nasıl değiştirileceği açıklanmaktadır. Bu, doğrudan bu görsel C++sürümü ile desteklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

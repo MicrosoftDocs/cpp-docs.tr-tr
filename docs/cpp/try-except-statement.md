@@ -4,16 +4,12 @@ ms.date: 10/09/2018
 f1_keywords:
 - _abnormal_termination_cpp
 - _exception_code_cpp
-- EXCEPTION_CONTINUE_SEARCH
 - _exception_info
 - __except
 - _except
-- EXCEPTION_CONTINUE_EXECUTION
 - _exception_code
 - __except_cpp
 - _exception_info_cpp
-- EXCEPTION_EXECUTE_HANDLER
-- _abnormal_termination
 helpviewer_keywords:
 - __try keyword [C++]
 - EXCEPTION_CONTINUE_EXECUTION macro
@@ -26,12 +22,12 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-ms.openlocfilehash: af378f510f11e1fe7d08619b5f33efe92a13d7be
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 7d3a92aa8c6d1f77a1795eabde0ae1e575bb5770
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245172"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444122"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 

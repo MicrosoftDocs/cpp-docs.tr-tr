@@ -1,37 +1,37 @@
 ---
-title: Uzak arşivi özellikleri (C++ Linux)
+title: Uzak Arşiv özellikleri (C++ Linux)
 ms.date: 06/07/2019
 ms.assetid: 5ee1e44c-8337-4c3a-b2f3-35e4be954f9f
 f1_keywords: []
-ms.openlocfilehash: 00de4ac56a9ce390672019c7fe5a838367823100
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: dc20eecef9947581ca87b9489285bc058a249e26
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821272"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446819"
 ---
-# <a name="remote-archive-properties-c-linux"></a>Uzak arşivi özellikleri (C++ Linux)
+# <a name="remote-archive-properties-c-linux"></a>Uzak Arşiv özellikleri (C++ Linux)
 
 ::: moniker range="vs-2015"
 
-Linux desteği, Visual Studio 2017 ile kullanılabilir ve üzerinde desteklenir.
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-Özellik | Açıklama
---- | ---
-Arşiv dizini oluştur | Arşiv dizini (ranlib tarafından yapıldığı şekilde) oluşturun. Bu seçenek, bağlamayı hızlandırabilir ve kendi kitaplığındaki bağımlılığı azaltabilir.
-Kısa arşiv oluştur | Bir arşiv oluşturun.  Bir arşiv, nesneleri katıştırmak yerine nesneleri için göreli yolları içerir.  İnce ve Normal arasında geçiş yapma varolan kitaplığın silinmesini gerektirir.
-Herhangi bir uyarı oluştur | İse veya kitaplık oluşturulduğunda uyarı vermez.
-Zaman damgasını çıkar | Zaman damgaları ve uid'ler/gid'ler için sıfır kullanın.
-Başlangıç başlığını gösterme | Sürüm numarasını gösterme.
-Ayrıntılı | Ayrıntılı
-Ek Seçenekler | Ek Seçenekler.
-Çıkış dosyası | / Out seçeneği varsayılan adını ve lib oluşturduğu program konumunu geçersiz kılar.
-Arşivleyicide | Statik nesneler ya da uzak sistemdeki arşivleyicinin yolunu bağlama sırasında çağrılacak programı belirtir.
-Arşivleyicide zaman aşımı | Uzak arşivleyicide zaman aşımı, milisaniye cinsinden.
-Çıkışı Kopyala | Derleme çıkışı dosyasının Uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir.
+| Özellik | Açıklama |
+|--|--|
+| Arşiv dizini oluştur | Arşiv dizini oluşturun (ranlib tarafından yapıldığı gibi). Bu seçenek, bağlamayı hızlandırabilir ve kendi kitaplığı içinde bağımlılığı azaltabilir. |
+| Ince Arşiv oluştur | İnce Arşiv oluşturun.  İnce bir arşiv nesneleri katıştırmak yerine nesnelere göreli yollar içerir.  Ince ve normal arasında geçiş yapmak için var olan kitaplığın silinmesi gerekir. |
+| Oluşturma sırasında uyarı yok | Kitaplık oluşturulduğunda ya da, uyarı vermez. |
+| Kesme zaman damgası | Zaman damgaları ve uid 'ler/GID 'ler için sıfır kullanın. |
+| Başlangıç başlığını gösterme | Sürüm numarasını gösterme. |
+| Ayrıntılı | Ayrıntılı |
+| Ek Seçenekler | Ek seçenekler. |
+| Çıkış Dosyası | /OUT seçeneği, LIB 'in oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. |
+| Arşivleyicide | Statik nesnelerin bağlanması sırasında çağrılacak programı ya da uzak sistemdeki arşivleyicide yolunu belirtir. |
+| Arşivleyicide zaman aşımı | Milisaniye cinsinden uzak arşivleyicide zaman aşımı. |
+| Çıkışı Kopyala | Derleme çıkış dosyasının uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir. |
 
 ::: moniker-end

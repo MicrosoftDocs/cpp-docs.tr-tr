@@ -3,11 +3,6 @@ title: '&lt;filesystem&gt;'
 description: Standart C++ kitaplığın filesystem üstbilgisindeki sınıfları, işlevleri ve türleri açıklar.
 ms.date: 01/22/2020
 f1_keywords:
-- filesystem/std::experimental::filesystem::directory_entry
-- filesystem/std::experimental::filesystem::recursive_directory_iterator
-- filesystem/std::experimental::filesystem::path
-- filesystem/std::experimental::filesystem::filesystem_error
-- filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
 no-loc:
@@ -17,12 +12,12 @@ no-loc:
 - wchar_t
 - char16_t
 - char32_t
-ms.openlocfilehash: dbe6dc89d5460a08ffafd86aa3fcd01222c82166
-ms.sourcegitcommit: b67b08472b6f1ee8f1c5684bba7056d3e0fc745f
+ms.openlocfilehash: f9e384953a4e675ad6235a274c447031976a1585
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725688"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441716"
 ---
 # &lt;filesystem&gt;
 
@@ -42,7 +37,7 @@ using namespace std::experimental::filesystem::v1;
 
 Bu üst bilgi, ana bilgisayar işletim sistemi sınıfının iki geniş sınıfından biri için dosya sistemlerini destekler: Microsoft Windows ve POSIX.
 
-Çoğu işlevsellik her iki işletim sisteminde de yaygın olsa da, bu belge farkların nerede olduğunu tanımlar. Örneğin:
+Çoğu işlevsellik her iki işletim sisteminde de yaygın olsa da, bu belge farkların nerede olduğunu tanımlar. Örnek:
 
 - Windows, `c:` veya `\\network_name`gibi birden çok kök adı destekler. Bir dosya sistemi, her biri kendi kök dizinine sahip `c:\` veya `\\network_name\`ve her biri bir göreli yol adını (mutlak yol adı olmayan bir yol değil) tamamlamak için kendi geçerli dizinine sahip bir ağaç ormanından oluşur.
 
@@ -125,7 +120,7 @@ Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi gezintisiC++()](../st
 
 [\<filesystem> işleçleri](../standard-library/filesystem-operators.md)
 
-## <a name="enumerations"></a>Listelemeler
+## <a name="enumerations"></a>Numaralandırmalar
 
 |||
 |-|-|

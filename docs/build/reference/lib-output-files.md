@@ -1,27 +1,25 @@
 ---
 title: LIB Çıktı Dosyaları
 ms.date: 11/04/2016
-f1_keywords:
-- Lib
 helpviewer_keywords:
 - output files, LIB
 ms.assetid: e73d2f9b-a42d-402b-b7e3-3a94bebb317e
-ms.openlocfilehash: d7a6352665f12307bfa54025a32f9f7b84311dac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8aeb46b0249ddf4155277866f7d8537bbfa98244
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269706"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439379"
 ---
 # <a name="lib-output-files"></a>LIB Çıktı Dosyaları
 
-LIB tarafından oluşturulan çıktı dosyaları, aşağıdaki tabloda gösterildiği gibi çünkü kullanılıyor, modunu bağlıdır.
+LıB tarafından üretilen çıkış dosyaları, aşağıdaki tabloda gösterildiği gibi, kullanıldığı moda bağlıdır.
 
-|Mod|Çıkış|
+|Mod|Çıktı|
 |----------|------------|
-|Varsayılan (oluşturmak veya bir kitaplık değiştirme)|COFF kitaplık (.lib)|
-|/ Extract ile bir üyesini ayıklama|Nesne (.obj) dosyası|
-|Bir dışarı aktarma dosyası oluşturup ile/def kitaplığı içeri aktarma|Kitaplık (.lib) ve dışarı aktarma (.exp) dosyası içeri aktarma|
+|Varsayılan (bir kitaplığı oluşturma veya değiştirme)|COFF kitaplığı (. lib)|
+|/EXTRACT ile üye ayıklama|Nesne (. obj) dosyası|
+|Dışa aktarma dosyası oluşturma ve kitaplığı/DEF ile içeri aktarma|Kitaplık (. lib) ve dışarı aktarma (. exp) dosyasını içeri aktar|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

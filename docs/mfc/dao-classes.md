@@ -1,18 +1,16 @@
 ---
 title: DAO Sınıfları
 ms.date: 09/17/2019
-f1_keywords:
-- vc.classes.data
 helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-ms.openlocfilehash: cdd3fd9a733df73d36441693d049724878219df5
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 506206517fb37755bffc5f3a49635f0899232452
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303396"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447017"
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
 

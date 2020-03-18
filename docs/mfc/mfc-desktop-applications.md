@@ -3,18 +3,17 @@ title: MFC Masaüstü Uygulamaları
 ms.date: 07/28/2019
 f1_keywords:
 - MFC
-- mfc
 helpviewer_keywords:
 - libraries, MFC
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-ms.openlocfilehash: f23a41a0dbaedb7063617accee3afe4ba833d59c
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: e9921d18e9ec060f61959278b68906338f02b5b7
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68607528"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447713"
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 
@@ -35,7 +34,7 @@ Ortak ve korunan sınıf üyeleri yalnızca uygulama programlarında veya türet
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Tiren](mfc-concepts.md)<br/>
+[Kavramlar ](mfc-concepts.md)<br/>
 MFC konularındaki kavramsal makaleler.
 
 [Hiyerarşi Grafiği](hierarchy-chart.md)<br/>
@@ -44,7 +43,7 @@ Sınıf kitaplığındaki sınıf ilişkilerinin görsel olarak ayrıntılarına
 [Sınıfa genel bakış](class-library-overview.md)<br/>
 MFC kitaplığındaki sınıfları kategoriye göre listeler.
 
-[İzlenecek Yollar](walkthroughs-mfc.md)<br/>
+[Kılavuz](walkthroughs-mfc.md)<br/>
 MFC Kitaplığı özellikleriyle ilişkili çeşitli görevlerde size kılavuzluk eden makaleler içerir.
 
 [Teknik notlar](mfc-technical-notes.md)<br/>

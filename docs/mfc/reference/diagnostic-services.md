@@ -18,12 +18,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: 4cf3f53d1e238218b4eb892dc92e3c823dcc1296
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 6880a6a3d25738bd0480168902044530d06f7e7f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421403"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446216"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -109,6 +109,7 @@ _AFX_SECURE_NO_WARNINGS tanımlanmamışsa, bu kod örneği bir derleyici uyarı
 // define this before including any afx files in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier)
 #define _AFX_SECURE_NO_WARNINGS
 ```
+
 ```cpp
 CRichEditCtrl* pRichEdit = new CRichEditCtrl;
 pRichEdit->Create(WS_CHILD|WS_VISIBLE|WS_BORDER|ES_MULTILINE,
@@ -621,7 +622,7 @@ Yukarıdaki çıktıda bulunan her satır, son işlev çağrısının adresini, 
 
 Örneğin, aşağıdaki tabloda yukarıdaki çıktının ilk satırı açıklanmaktadır:
 
-|Çıkış|Açıklama|
+|Çıktı|Açıklama|
 |------------|-----------------|
 |`00427D55:`|Son işlev çağrısının dönüş adresi.|
 |`DUMP2\DEBUG\DUMP2.EXE!`|İşlev çağrısını içeren modülün tam yol adı.|
@@ -635,7 +636,8 @@ Bu işlevi başarıyla kullanmak için:
 - IMAGEHLP dosyası. DLL, yolunuzda olmalıdır. Bu DLL 'ye sahip değilseniz, işlev bir hata mesajı görüntüler. IMAGEHLP tarafından sağlanan işlev kümesi hakkında bilgi için bkz. [görüntü Yardım Kitaplığı](/windows/win32/Debug/image-help-library) .
 
 - Yığındaki çerçevelere sahip modüller hata ayıklama bilgilerini içermelidir. Hata ayıklama bilgileri içermiyorsa, işlev yine de bir yığın izlemesi oluşturacaktır, ancak izleme daha az ayrıntılı olacaktır.
-  ### <a name="requirements"></a>Gereksinimler
+
+### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** AFX. h
 
