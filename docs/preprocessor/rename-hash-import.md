@@ -1,17 +1,15 @@
 ---
 title: İçeri aktarma özniteliğini yeniden adlandır
 ms.date: 08/29/2019
-f1_keywords:
-- Rename
 helpviewer_keywords:
 - rename attribute
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
-ms.openlocfilehash: ef1f64e0c268f850899efe499f7b1ad3991dd570
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 520369f0308078fead2947e27a512f25a3ad3fab
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216668"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447489"
 ---
 # <a name="rename-import-attribute"></a>İçeri aktarma özniteliğini yeniden adlandır
 
@@ -21,14 +19,14 @@ Ad çakışma sorunları etrafında çalışmaktadır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#import** *tür kitaplığı* **yeniden adlandır (** "*OldName*" **,** "*YeniAd*" **)**
+> **#import** *türü-kitaplık* **yeniden adlandırma (** "*OldName*" **,** "*YeniAd*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
 *OldName*\
 Tür kitaplığındaki eski ad.
 
-*Ad*\
+*Yeniad*\
 Eski ad yerine kullanılacak ad.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -40,19 +38,19 @@ Eski ad yerine kullanılacak ad.
 > [!NOTE]
 > Değişiklik, sonuç üst bilgi dosyasında kullanılan bir ad için değil tür kitaplığında kullanılan bir addır.
 
-Örneğin, bir tür kitaplığı içinde adlı `MyParent` bir özelliğin var olduğunu ve bir makronun `GetMyParent` bir başlık dosyasında tanımlandığını ve daha önce `#import`kullanıldığını varsayalım. , Hata işleme `get` özelliği için bir sarmalayıcı işlevinin varsayılan adı olduğundan,biradçakışmasımeydanagelir.`GetMyParent` Sorunu geçici olarak çözmek için, `#import` bildiriminde aşağıdaki özniteliği kullanın:
+Örneğin, `MyParent` adlı bir özelliğin tür kitaplığında var olduğunu ve bir makro `GetMyParent` bir başlık dosyasında tanımlandığını ve `#import`önce kullanıldığını varsayın. `GetMyParent`, hata işleme `get` özelliği için bir sarmalayıcı işlevinin varsayılan adı olduğundan, bir ad çakışması meydana gelir. Sorunu geçici olarak çözmek için `#import` deyimindeki aşağıdaki özniteliği kullanın:
 
 ```cpp
 #import MyTypeLib.tlb rename("MyParent","MyParentX")
 ```
 
-tür kitaplığındaki adı `MyParent` yeniden adlandırır. `GetMyParent` Sarmalayıcı adını yeniden adlandırma girişimi başarısız olur:
+Bu, tür kitaplığındaki `MyParent` adı yeniden adlandırır. `GetMyParent` sarmalayıcı adını yeniden adlandırma girişimi başarısız olur:
 
 ```cpp
 #import MyTypeLib.tlb rename("GetMyParent","GetMyParentX")
 ```
 
-Bunun nedeni, adın `GetMyParent` yalnızca ortaya çıkan tür kitaplığı üst bilgi dosyasında gerçekleşmesinden kaynaklanır.
+Bunun nedeni `GetMyParent` adı yalnızca elde edilen tür kitaplığı üst bilgi dosyasında gerçekleştiğinden oluşur.
 
 **SONA C++ özgü**
 

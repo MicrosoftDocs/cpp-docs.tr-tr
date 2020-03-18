@@ -20,23 +20,19 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- cabsl
 - _cabs
-- _cabsl
 helpviewer_keywords:
 - cabs function
-- cabsl function
 - absolute values
-- _cabsl function
 - _cabs function
 - calculating absolute values
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
-ms.openlocfilehash: 5e2536fbeed2f466d3795e2ed26e643279e8bc67
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ba24b10fb267c9b54ec4944704de988128b4b419
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943419"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443056"
 ---
 # <a name="_cabs"></a>_cabs
 
@@ -52,16 +48,16 @@ double _cabs(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_cabs** başarılı olursa bağımsız değişkeninin mutlak değerini döndürür. Taşma durumunda **_cabs** , **HUGE_VAL** döndürür ve **errno** değerini **ERANGE**olarak ayarlar. Hata işlemeyi [_matherr](matherr.md)ile değiştirebilirsiniz.
+**_cabs** , başarılı olursa bağımsız değişkeninin mutlak değerini döndürür. Taşma üzerinde, **_cabs** **HUGE_VAL** döndürür ve **errno** , **ERANGE**olarak ayarlar. Hata işlemeyi [_matherr](matherr.md)ile değiştirebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cabs** işlevi, karmaşık bir sayının mutlak değerini hesaplar, bu da [_complex](../../c-runtime-library/standard-types.md)türünde bir yapı olmalıdır. *Z* yapısı gerçek bir bileşen *x* ve sanal bileşen *y*' den oluşur. **_Cabs** çağrısı, ifadenin `sqrt( z.x * z.x + z.y * z.y )`değerine denk bir değer üretir.
+**_Cabs** işlevi, bir karmaşık sayının mutlak değerini hesaplar, bu, [_complex](../../c-runtime-library/standard-types.md)türünde bir yapı olmalıdır. *Z* yapısı gerçek bir bileşen *x* ve sanal bileşen *y*' den oluşur. **_Cabs** çağrısı, `sqrt( z.x * z.x + z.y * z.y )`ifade ile eşdeğer bir değer üretir.
 
 ## <a name="requirements"></a>Gereksinimler
 

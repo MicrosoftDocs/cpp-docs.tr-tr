@@ -25,7 +25,6 @@ topic_type:
 f1_keywords:
 - _isgraph_l
 - _iswgraph_l
-- _ismbcgraph_l
 - Isgraph
 - _istgraph_l
 - _istgraph
@@ -40,12 +39,12 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-ms.openlocfilehash: 88219ca6dc4218fc13f7d7c0b5f2ba399c07d501
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 282f11dfa6a4545b672419d42fe960c0e5001fbf
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954872"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442969"
 ---
 # <a name="isgraph-iswgraph-_isgraph_l-_iswgraph_l"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
 
@@ -72,7 +71,7 @@ int _iswgraph_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
+*,*<br/>
 Sınanacak tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -81,13 +80,13 @@ Bu yordamların her biri, *c* , boşluk dışında yazdırılabilir bir karakter
 
 **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-*C* , EOF veya 0 ile 0xFF (dahil) aralığında değilse, **isgraph** ve **_isgraph_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
+*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **ısgraph** ve **_isgraph_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istgraf**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraf**|
+|**_istgraph**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraf**|
 |**_istgraph_l**|**_isgraph_l**|[_ismbcgraph_l](ismbcgraph-functions.md)|**_iswgraph_l**|
 
 ## <a name="requirements"></a>Gereksinimler

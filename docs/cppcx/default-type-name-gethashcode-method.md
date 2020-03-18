@@ -1,19 +1,17 @@
 ---
-title: 'Varsayılan:: (type_name):: GetHashCode metodu'
+title: 'Varsayılan::(type_name):: GetHashCode yöntemi'
 ms.date: 12/30/2016
-f1_keywords:
-- VCCORLIB/Platform::Object::GetHashCode
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5
-ms.openlocfilehash: 427756e8e87162738bd2297f1f6edc5af8d7b194
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f64607ab21cd0fd5deccbd16f3f69f96e4d245b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176121"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444304"
 ---
-# <a name="defaulttypenamegethashcode-method"></a>Varsayılan:: (type_name):: GetHashCode metodu
+# <a name="defaulttype_namegethashcode-method"></a>Varsayılan::(type_name):: GetHashCode yöntemi
 
-Bu örneğin karma kodunu döndürür.
+Bu örneğe ilişkin karma kodu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +25,13 @@ Bu örneğin karma kodu.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** varsayılan
+**Ad alanı:** varsayılan
 
-**Başlık:** vccorlib.h
+**Üstbilgi:** vccorlib. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

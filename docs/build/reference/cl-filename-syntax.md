@@ -1,8 +1,6 @@
 ---
 title: CL Dosya Adı Sözdizimi
 ms.date: 11/04/2016
-f1_keywords:
-- cl
 helpviewer_keywords:
 - syntax, compiler filename
 - paths, CL compiler filename syntax
@@ -11,18 +9,18 @@ helpviewer_keywords:
 - file names [C++], CL compiler
 - file names [C++]
 ms.assetid: 3ca72586-75be-4477-b323-a1be232e80d4
-ms.openlocfilehash: b20f88e69c6e0d1774f1cd81b3ee833c4f0ff696
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1135e5c682b79fec5de808b61c93d370f05a3aa9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272701"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440231"
 ---
 # <a name="cl-filename-syntax"></a>CL Dosya Adı Sözdizimi
 
-CL dosya FAT, HPFS veya NTFS adlandırma kurallarına uygun adlarla kabul eder. Herhangi bir dosya adının, tam veya kısmi bir yol dahil edebilirsiniz. Tam yol, bir sürücü adı ve bir veya daha fazla dizin adlarını içerir. CL kabul dosya adları ters eğik çizgi ile ayrılmış (\\) veya İleri eğik çizgi (/). Boşluk içeren dosya adlarını karakter çift tırnak işareti içine alınmalıdır. Kısmi bir yolu, geçerli bir sürücüsü olmasını CL varsayar sürücü adı atlar. Bir yol belirtmezseniz, CL dosya geçerli dizinde olduğu varsayılır.
+CL, FAT, HPFS veya NTFS adlandırma kurallarını izleyen adlara sahip dosyaları kabul eder. Herhangi bir dosya adı tam veya kısmi yol içerebilir. Tam yol bir sürücü adı ve bir veya daha fazla dizin adı içerir. CL ters eğik çizgileri (\\) veya eğik çizgi (/) ile ayrılmış dosya adlarını kabul eder. Boşluk içeren dosya adları çift tırnak karakterleriyle çevrelenmelidir. Kısmi bir yol sürücü adını atlar ve bu, CL 'nin geçerli sürücü olduğunu varsayar. Bir yol belirtmezseniz, CL dosyanın geçerli dizinde olduğunu varsayar.
 
-Dosya adı uzantısı dosyaları nasıl işleneceğini belirler. Uzantı .c, .cxx veya .cpp sahip, C ve C++ dosyaları derlenir. .Obj dosyaları, kitaplık (.lib) ve modül-tanımlama (.def) dosyaları gibi diğer dosyalar için bağlayıcı işlenen olmadan geçirilir.
+Dosya adı uzantısı dosyaların nasıl işlendiğini belirler. C ve C++ . c,. cxx veya. cpp uzantısına sahip dosyalar derlenir. . Obj dosyaları, kitaplıklar (. lib) ve modül tanım (. def) dosyaları da dahil olmak üzere diğer dosyalar, işlem yapılmadan bağlayıcıya geçirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

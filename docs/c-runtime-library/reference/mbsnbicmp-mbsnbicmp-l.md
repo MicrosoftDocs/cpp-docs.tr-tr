@@ -21,15 +21,9 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- _strnicmp
-- _wcsnicmp_l
 - _mbsnbicmp
 - mbsnbicmp
 - mbsnbicmp_l
-- _tcsnicmp
-- _strnicmp_l
-- _tcsnicmp_l
-- _wcsnicmp
 - _mbsnbicmp_l
 helpviewer_keywords:
 - _tcsnicmp_l function
@@ -43,12 +37,12 @@ helpviewer_keywords:
 - mbsnbicmp function
 - _wcsnicmp function
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
-ms.openlocfilehash: 19ffa4c47f0144ba136607fe5cef09e9bd65374f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c7a4d5def115101c9f3fbd6c53d649ab5b122f1c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952184"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442841"
 ---
 # <a name="_mbsnbicmp-_mbsnbicmp_l"></a>_mbsnbicmp, _mbsnbicmp_l
 
@@ -72,7 +66,7 @@ int _mbsnbicmp(
 *Dize1*, *dize2*<br/>
 Karşılaştırılacak null ile sonlandırılmış dizeler.
 
-*biriktirme*<br/>
+*count*<br/>
 Karşılaştırılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -85,25 +79,25 @@ Dönüş değeri, alt dizeler arasındaki ilişkiyi gösterir.
 |0|*Dize1* substring, *dize2* alt dizesi ile özdeş.|
 |> 0|*Dize1* substring, *dize2* alt dizinden büyük.|
 
-Bir hatada, **_mbsnbıcmp** , String. h ve mbstring. h Içinde tanımlanan **_Nlscmperror**döndürür.
+Bir hatada, **_Mbsnbicmp** String. h ve mbstring. h içinde tanımlanan **_NLSCMPERROR**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbıcmp** işlevi, *Dize1* ve *dize2*'nin en fazla ilk *sayım* baytından sıralı bir karşılaştırma gerçekleştirir. Karşılaştırma, her karakteri küçük harfe dönüştürerek gerçekleştirilir; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) , **_mbsnbıcmp**'nin büyük/küçük harfe duyarlı bir sürümüdür. *Sayma* karakterleri karşılaştırılmadan önce her iki dizede de bir Sonlandırıcı null karakterine ulaşıldığında karşılaştırma biter. *Sayı* karakterleri karşılaştırılmadan önce bir dizede bir Sonlandırıcı null karakterine ulaşıldığında dizeler eşitse, daha kısa dize daha küçüktür.
+**_Mbsnbicmp** işlevi, *Dize1* ve *dize2*' nin en fazla ilk *sayım* baytından sıralı bir karşılaştırma gerçekleştirir. Karşılaştırma, her karakteri küçük harfe dönüştürerek gerçekleştirilir; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) , **_mbsnbicmp**, büyük/küçük harfe duyarlı bir sürümdür. *Sayma* karakterleri karşılaştırılmadan önce her iki dizede de bir Sonlandırıcı null karakterine ulaşıldığında karşılaştırma biter. *Sayı* karakterleri karşılaştırılmadan önce bir dizede bir Sonlandırıcı null karakterine ulaşıldığında dizeler eşitse, daha kısa dize daha küçüktür.
 
-**_mbsnbıcmp** , [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)ile benzerdir, ancak dizeleri karakterlerin yerine bayt *sayısına* göre karşılaştırır.
+**_mbsnbicmp** [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)benzerdir, ancak dizeleri karakter yerine bayt *sayısı* kadar karşılaştırır.
 
-ASCII tablosunda (' [', '\\', '] ', ' ^ ', ' _ ' ve '\`') ' Z ' ve ' a ' arasında karakter içeren iki dize, durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" iki dizesi, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer yolla ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
+ASCII tablosunda (' [', '\\', '] ', ' ^ ', ' _ ' ve '\`') ' Z ' ve ' a ' arasında karakterler içeren iki dize, durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" iki dizesi, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer yolla ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
 
-**_mbsnbıcmp** kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır. Geçerli yerel ayar ayarından etkilenmez.
+**_mbsnbicmp** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır. Geçerli yerel ayar ayarından etkilenmez.
 
-*Dize1* veya *dize2* null bir işaretçisiyse, **_Mbsnbıcmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **_Nlscmperror** döndürür ve **errno** değerini **EINVAL**olarak ayarlar.
+*Dize1* veya *dize2* , null Işaretçisiyse, **_mbsnbicmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL**olarak ayarlar.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tcsnıcmp**|**_strnıcmp**|**_mbsnbicmp**|**_wcsnıcmp**|
+|**_tcsnicmp**|**_strnicmp**|**_mbsnbicmp**|**_wcsnicmp**|
 |**_tcsnicmp_l**|**_strnicmp_l**|**_mbsnbicmp_l**|**_wcsnicmp_l**|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -116,7 +110,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="example"></a>Örnek
 
-[_Mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)örneğine bakın.
+[_Mbsnbcmp _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

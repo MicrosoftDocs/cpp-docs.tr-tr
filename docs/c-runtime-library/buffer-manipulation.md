@@ -1,37 +1,35 @@
 ---
 title: Ara bellek düzenlemesi
 ms.date: 04/04/2018
-f1_keywords:
-- c.memory
 helpviewer_keywords:
 - buffers, manipulation routines
 - buffers
 ms.assetid: 164f4860-ce66-412c-8291-396fbd70f03e
-ms.openlocfilehash: e8a449cbfa6a52ccc2346e2215ce187c09d677e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a79bfdb33d2bff5e18c916a2e116ab03251afdf1
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290397"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443595"
 ---
 # <a name="buffer-manipulation"></a>Ara bellek düzenlemesi
 
-Bir bayt bayt temelinde bellek alanları ile çalışmak için bu yordamları kullanın.
+Bayt bir bayt temelinde bellek alanlarıyla çalışmak için bu yordamları kullanın.
 
-## <a name="buffer-manipulation-routines"></a>Ara bellek düzenlemesi rutinleri
+## <a name="buffer-manipulation-routines"></a>Arabellek işleme yordamları
 
-|Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Yordam|Kullanım|
 |-------------|---------|
-|[_memccpy](../c-runtime-library/reference/memccpy.md)|Kopyalama başka bir karakter kadar verilen bir arabellek karakter veya rakam veya karakter sayısını kopyalandı|
-|[memchr, wmemchr](../c-runtime-library/reference/memchr-wmemchr.md)|İşaretçi başlayarak belirtilen sayıda karakteri, içinde ilk yinelenme, belirli bir karakter arabelleği döndürür|
-|[memcmp, wmemcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)|Belirtilen sayıda karakteri iki arabellek karşılaştırın|
-|[memcpy, wmemcpy](../c-runtime-library/reference/memcpy-wmemcpy.md), [memcpy_s, wmemcpy_s](../c-runtime-library/reference/memcpy-s-wmemcpy-s.md)|Belirtilen sayıda karakteri bir arabellek kopyalayın|
-|[_memicmp, _memicmp_l](../c-runtime-library/reference/memicmp-memicmp-l.md)|Belirtilen sayıda karakteri çalışması dikkate almaksızın iki arabellek karşılaştırın|
-|[memmove, wmemmove](../c-runtime-library/reference/memmove-wmemmove.md),[memmove_s, wmemmove_s](../c-runtime-library/reference/memmove-s-wmemmove-s.md)|Belirtilen sayıda karakteri bir arabellek kopyalayın|
-|[memset, wmemset](../c-runtime-library/reference/memset-wmemset.md)|Belirtilen karakterin belirtilen sayıda baytı arabellekteki başlatmak için kullanın|
-|[_swab](../c-runtime-library/reference/swab.md)|Bayt veri değiştirme ve bunları belirli bir konumda depolayın|
+|[_memccpy](../c-runtime-library/reference/memccpy.md)|Verilen karakter veya verilen karakter sayısı kopyalanana kadar bir arabellekteki karakterleri diğerine kopyala|
+|[memchr, wmemchr](../c-runtime-library/reference/memchr-wmemchr.md)|Belirtilen karakter için arabellekteki belirli karakter sayısı içinde, ilk örneğe işaretçiyi döndürün|
+|[memcmp, wmemcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)|İki arabelleki belirtilen karakter sayısını karşılaştırın|
+|[memckopyala, wmemcpy](../c-runtime-library/reference/memcpy-wmemcpy.md), [memcpy_s, wmemcpy_s](../c-runtime-library/reference/memcpy-s-wmemcpy-s.md)|Belirtilen karakter sayısını bir arabellekten diğerine kopyala|
+|[_memicmp, _memicmp_l](../c-runtime-library/reference/memicmp-memicmp-l.md)|Büyük/küçük harfe bakılmaksızın belirtilen sayıda karakteri iki arabelleki karşılaştırın|
+|[memmove, wmemmove](../c-runtime-library/reference/memmove-wmemmove.md),[memmove_s wmemmove_s](../c-runtime-library/reference/memmove-s-wmemmove-s.md)|Belirtilen karakter sayısını bir arabellekten diğerine kopyala|
+|[memset, wmemset](../c-runtime-library/reference/memset-wmemset.md)|Arabellekte belirtilen sayıda bayt başlatmak için verilen karakter kullan|
+|[_swab](../c-runtime-library/reference/swab.md)|Verilerin baytlarını değiştirin ve belirtilen konumda depolayın|
 
-Ne zaman kaynak ve hedef alanlarını üst üste, yalnızca **memmove** tam kaynak düzgün bir şekilde kopyalamak için sağlanır.
+Kaynak ve hedef bölgeler çakıştığında, tam kaynağı doğru bir şekilde kopyalamak için yalnızca **memmove** garanti edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

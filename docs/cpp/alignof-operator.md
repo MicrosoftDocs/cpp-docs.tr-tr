@@ -2,7 +2,6 @@
 title: __alignof İşleci
 ms.date: 12/17/2018
 f1_keywords:
-- alignas_cpp
 - __alignof_cpp
 - alignof_cpp
 - __alignof
@@ -14,20 +13,20 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-ms.openlocfilehash: 96c85db83c133af6f1712baa8597ed3360277854
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3764e95846d48d293991d69d04bc71c6b3aed90
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258258"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443610"
 ---
-# <a name="alignof-operator"></a>__alignof İşleci
+# <a name="__alignof-operator"></a>__alignof İşleci
 
-C ++ 11 tanıtır **alignof** bayt belirtilen türün hizalama döndüren işleci. En fazla taşınabilirlik için Microsoft'a özgü __alignof işleci yerine alignof işleci kullanmanız gerekir.
+C++ 11, belirtilen türün bayt cinsinden hizalamasını döndüren **bir işlecin hizalamasını** tanıtır. En fazla taşınabilirlik için, Microsoft 'a özgü __alignof işleci yerine hizalama işlecini kullanmanız gerekir.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Türünde bir değer döndürür `size_t` hizalama gereksinimi olan türü.
+Türün hizalama gereksinimi olan `size_t` türünde bir değer döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,36 +36,36 @@ Türünde bir değer döndürür `size_t` hizalama gereksinimi olan türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneğin:
+Örnek:
 
-|İfade|Değer|
+|İfadeler|Değer|
 |----------------|-----------|
-|**__alignof (karakter)**|1.|
+|**__alignof (Char)**|1|
 |**__alignof (kısa)**|2|
 |**__alignof (int)**|4|
-|**__alignof ( \__int64)**|8|
-|**__alignof (kayan nokta)**|4|
+|**__alignof (\__int64)**|8|
+|**__alignof (float)**|4|
 |**__alignof (çift)**|8|
-|**__alignof (char\* )**|4|
+|**__alignof (Char\*)**|4|
 
-**__Alignof** değerdir aynı değeri olarak `sizeof` temel türleri için. , Ancak bu örneği göz önünde bulundurun:
+**__Alignof** değeri, temel türler için `sizeof` değeri ile aynıdır. Ancak şu örneği göz önünde bulundurun:
 
 ```cpp
 typedef struct { int a; double b; } S;
 // __alignof(S) == 8
 ```
 
-Bu durumda, **__alignof** yapısındaki en büyük öğenin hizalama gereksinimi değerdir.
+Bu durumda **__alignof** değeri, yapıdaki en büyük öğenin hizalama gereksinimidir.
 
-Benzer şekilde,
+Benzer şekilde, için
 
 ```cpp
 typedef __declspec(align(32)) struct { int a; } S;
 ```
 
-`__alignof(S)` eşittir `32`.
+`__alignof(S)`, `32`eşittir.
 
-Bir kullanımı **__alignof** kendi bellek ayırma yordamlarınızın birine bir parametre olarak olacaktır. Yapı aşağıdaki ' gibi tanımlı `S`, adlı bir bellek ayırma yordam çağırabilir `aligned_malloc` belirli hizalama sınırındaki bellek ayrılamadı.
+**__Alignof** için bir kullanım, kendi bellek ayırma yordamlarınızın bir parametresi olarak olacaktır. Örneğin, aşağıdaki tanımlı yapı `S`verildiğinde, belirli bir hizalama sınırında bellek ayırmak için `aligned_malloc` adlı bir bellek ayırma yordamını çağırabilirsiniz.
 
 ```cpp
 typedef __declspec(align(32)) struct { int a; double b; } S;
@@ -74,9 +73,9 @@ int n = 50; // array size
 S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
 ```
 
-Önceki sürümlerle uyumluluk için **_alignof** eşanlamlıdır **__alignof** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
+Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_alignof** **__alignof** için bir eş anlamlı.
 
-Hizalama değiştirme hakkında daha fazla bilgi için bkz:
+Hizalamayı değiştirme hakkında daha fazla bilgi için bkz.:
 
 - [pack](../preprocessor/pack.md)
 
@@ -86,13 +85,13 @@ Hizalama değiştirme hakkında daha fazla bilgi için bkz:
 
 - [/Zp (Yapı Üyesi Hizalama)](../build/reference/zp-struct-member-alignment.md)
 
-- [Yapı hizalama örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 belirli)
+- [Yapı hizalaması örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 'e özgü)
 
-Hizalama x86 ve x64 kodda farklılıklar hakkında daha fazla bilgi için bkz:
+X86 ve x64 için kod hizalama farkları hakkında daha fazla bilgi için bkz.:
 
 - [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

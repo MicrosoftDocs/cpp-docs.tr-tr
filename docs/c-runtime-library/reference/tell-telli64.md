@@ -21,7 +21,6 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- tell
 - telli64
 - _telli64
 - _tell
@@ -33,12 +32,12 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-ms.openlocfilehash: 54f672a1b230103d6f9ae1c45d2c9e487764939e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f092bdfdb27dd73baf159da60ba66bd5809aaf61
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946267"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443680"
 ---
 # <a name="_tell-_telli64"></a>_tell, _telli64
 
@@ -70,13 +69,13 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Söyleyin** işlevi, *tanıtıcı* bağımsız değişkeniyle ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, dosyanın başından itibaren bayt sayısı olarak ifade edilir. **_Telli64** işlevi için, bu değer 64 bitlik bir tamsayı olarak ifade edilir.
+**_Tell** işlevi, *tanıtıcı* bağımsız değişkeniyle ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, dosyanın başından itibaren bayt sayısı olarak ifade edilir. **_Telli64** işlevi için bu değer 64 bitlik bir tamsayı olarak ifade edilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_söyle**, **_telli64**|\<GÇ. h >|
+|**_tell**, **_telli64**|\<IO. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -120,7 +119,7 @@ Line one.
 Line two.
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Current file position is: 20

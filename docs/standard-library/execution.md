@@ -6,12 +6,12 @@ f1_keywords:
 - std::<execution>
 helpviewer_keywords:
 - execution header
-ms.openlocfilehash: 3b0ccd540c56500c2f265aa6192a12fc2d5078b0
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 81e9aa63265c367412fda709aacd5ca3953e9fdf
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457977"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445034"
 ---
 # <a name="ltexecutiongt"></a>&lt;yürütme&gt;
 
@@ -29,6 +29,7 @@ namespace std::execution {
     inline constexpr parallel_unsequenced_policy par_unseq { unspecified };
 }
 ```
+
 ### <a name="classes-and-structs"></a>Sınıflar ve Yapılar
 
 |||
@@ -47,5 +48,5 @@ namespace std::execution {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](cpp-standard-library-reference.md)

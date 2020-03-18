@@ -1,8 +1,6 @@
 ---
 title: Kod Sayfaları
 ms.date: 11/04/2016
-f1_keywords:
-- c.international
 helpviewer_keywords:
 - character sets [C++], code pages
 - ANSI [C++], code pages
@@ -12,34 +10,34 @@ helpviewer_keywords:
 - code pages [C++], types of
 - locale code pages [C++]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-ms.openlocfilehash: 83c54a3d624ddad4de6c359c44c3b4be80c95a6e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13b31b7d7750158caf498d92db67fd3e61856c5c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344713"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443506"
 ---
 # <a name="code-pages"></a>Kod Sayfaları
 
-A *kod sayfası* sayılar, noktalama işaretleri ve diğer karakterleri dahil edebilirsiniz bir karakter kümesi. Farklı dillerde ve yerel ayarlar, farklı kod sayfalarını kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve en Avrupa dilleri için kullanılır; OEM kod sayfası 932'de Japonca Kanji için kullanılır.
+*Kod sayfası* , sayılar, noktalama işaretleri ve diğer Glifler içerebilen bir karakter kümesidir. Farklı diller ve yerel ayarlar farklı kod sayfaları kullanabilir. Örneğin, ANSI kod sayfası 1252, Ingilizce ve çoğu Avrupa dilleri için kullanılır; OEM kod sayfası 932, Japonca Kanji için kullanılır.
 
-Bir kod sayfası bir tablodaki tek baytlık değer veya değerlerini çok baytlı karakter eşlemesi olarak gösterilebilir. Birçok kod sayfaları ASCII karakter aralığı 0x00 - 0x7F karakter kümesini paylaşır.
+Bir kod sayfası, tek baytlık değerlere veya çok baytlı değerlere karakter eşleştirmesi olarak bir tabloda gösterilebilir. Birçok kod sayfası, 0x00-0x7F aralığındaki karakterler için ASCII karakter kümesini paylaşır.
 
-Microsoft çalışma zamanı kitaplığı aşağıdaki kod sayfaları türlerini kullanır:
+Microsoft çalışma zamanı kitaplığı aşağıdaki kod sayfası türlerini kullanır:
 
-- Sistem varsayılan ANSI kod sayfası. Varsayılan olarak, başlatma sırasında çalışma zamanı otomatik olarak çok baytlı kod sayfası işletim sisteminden alınan sistem varsayılan ANSI kod sayfasına ayarlar. Çağrı:
+- Sistem varsayılan ANSI kod sayfası. Varsayılan olarak, başlangıçta çalışma zamanı sistemi, çok baytlı kod sayfasını işletim sisteminden alınan sistem varsayılan ANSI kod sayfasına otomatik olarak ayarlar. Çağrı:
 
     ```C
     setlocale ( LC_ALL, "" );
     ```
 
-   Ayrıca yerel sistem varsayılan ANSI kod sayfasına ayarlar.
+   Ayrıca yerel ayarı sistem varsayılan ANSI kod sayfasına ayarlar.
 
-- Yerel ayar kod sayfası. Çalışma zamanı yordamları bir dizi davranışını yerel ayar kod sayfası içeren geçerli yerel ayarda bağlıdır. (Daha fazla bilgi için [yerel ayara bağımlı yordamlar](../c-runtime-library/locale.md).) Varsayılan olarak, Microsoft Çalışma Zamanı Kitaplığı'ndaki tüm yerel ayara bağımlı yordamlar için "C" yerel karşılık gelen kod sayfasını kullanın. Çalışma zamanında değiştirebilir veya yerel ayar kod sayfasına çağrısı ile sorgu [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
+- Yerel ayar kodu sayfası. Çalışma zamanı yordamlarının bir dizi davranışı, yerel ayar kodu sayfasını içeren geçerli yerel ayara bağımlıdır. (Daha fazla bilgi için bkz. [yerel ayara bağımlı yordamlar](../c-runtime-library/locale.md).) Varsayılan olarak, Microsoft çalışma zamanı kitaplığındaki tüm yerel ayara bağımlı yordamlar, "C" yerel ayarına karşılık gelen kod sayfasını kullanır. Çalışma zamanında, kullanılan yerel ayar kodu sayfasını bir [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)çağrısıyla değiştirebilir veya sorgulayabilirsiniz.
 
-- Çok baytlı kod sayfası. Çalışma Zamanı Kitaplığı'nda çok baytlı karakter yordamlarını çoğunu davranışını geçerli çok baytlı kod sayfası ayarını bağlıdır. Varsayılan olarak, bu yordamların sistem varsayılan ANSI kod sayfasını kullanın. Çalışma zamanında sorgulamak ve çok baytlı kod sayfası ile Değiştir [_getmbcp](../c-runtime-library/reference/getmbcp.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md)sırasıyla.
+- Çok baytlı kod sayfası. Çalışma zamanı kitaplığındaki çok baytlı karakter yordamlarının çoğunun davranışı geçerli çok baytlı kod sayfası ayarına bağlıdır. Varsayılan olarak, bu yordamlar sistem varsayılan ANSI kod sayfasını kullanır. Çalışma zamanında çok baytlı kod sayfasını, sırasıyla [_getmbcp](../c-runtime-library/reference/getmbcp.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md)ile sorgulayabilir ve değiştirebilirsiniz.
 
-- "C" yerel ANSI C programları geleneksel yürüttünüz yerel ayarına karşılık gelecek şekilde tanımlanır. "C" yerel ("C" kod sayfası) için kod sayfası, ASCII karakter kümesi karşılık gelir. Örneğin, "C" yerel olarak **islower** değerlerini 0x61 - yalnızca 0x7A true değerini döndürür. Başka bir yerel ayarında, **islower** bu yerel ayar tarafından tanımlandığı şekilde bu yanı sıra diğer değerleri true döndürebilir.
+- "C" yerel ayarı ANSI tarafından, C programlarının geleneksel olarak yürütüldüğü yerel ayara karşılık gelecek şekilde tanımlanır. "C" yerel ayarı ("C" kod sayfası) için kod sayfası ASCII karakter kümesine karşılık gelir. Örneğin, "C" yerel ayarında, **ılower** yalnızca 0x61-0x7A değerleri için true döndürür. Başka bir yerel ayarda, **IsLower** , bu yerel ayar tarafından tanımlanan diğer değerler için de true döndürebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

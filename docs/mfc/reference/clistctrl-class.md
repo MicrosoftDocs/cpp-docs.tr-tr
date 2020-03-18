@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: c8f1b8a9ed0ca8437ba40e77b47448d1bb209d20
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 83d7c0223e2ca4a40560e29932beca1f17f74f80
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418680"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442687"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -283,13 +283,13 @@ class CListCtrl : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CListCtrl:: Clienstctrl](#clistctrl)|`CListCtrl` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -708,7 +708,7 @@ Başarılı olursa sürükle resmi listesine yönelik bir işaretçi. Aksi takdi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CImageList` nesnesi kalıcıdır ve tamamlandığında silmeniz gerekir. Örneğin:
+`CImageList` nesnesi kalıcıdır ve tamamlandığında silmeniz gerekir. Örnek:
 
 ```cpp
         CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
@@ -1381,6 +1381,7 @@ public:
 ### <a name="example"></a>Örnek
 
 Aşağıdaki kod örneğinde `GetGroupInfoByIndex` yöntemi gösterilmektedir. Bu kod örneği daha önceki bir bölümünde, bir rapor görünümünde "ClientID" ve "sınıf" başlıklı iki sütunu görüntüleyen bir liste görünümü oluşturduk. Aşağıdaki kod örneği, böyle bir grup varsa, dizini 0 olan grup hakkındaki bilgileri alır.
+
 ```cpp
     // GetGroupInfoByIndex
     const int GROUP_HEADER_BUFFER_SIZE = 40;
@@ -1457,6 +1458,7 @@ Bu yöntem, Windows SDK açıklanan [LVM_GETGROUPRECT](/windows/win32/Controls/l
 ### <a name="example"></a>Örnek
 
 Aşağıdaki kod örneği, geçerli liste görünümü denetimine erişmek için kullanılan `m_listCtrl`bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+
 ```cpp
 public:
     // Variable used to access the list control.
@@ -4240,6 +4242,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```
+
 İlk öğe ikinciden önce gelmelidir, ilk öğe ikinciden önce gelmesi gerekiyorsa pozitif bir değer veya iki öğe eşitse sıfır değeri, karşılaştırma işlevi için negatif bir değer döndürmelidir.
 
 *LParam1* parametresi, karşılaştırılan ilk öğeyle ilişkili 32 bitlik değerdir ve *lParam2* parametresi ikinci öğeyle ilişkili değerdir. Bunlar, listeye eklendiklerinde öğelerin ' [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının *lParam* üyesinde belirtilen değerlerdir. *LParamSort* parametresi *dwData* değeri ile aynıdır.
@@ -4300,6 +4303,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```
+
 Bu ileti, Karşılaştırma işlevine geçirilen bilgi türü dışında [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems)gibidir. [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems), *lParam1* ve *lParam2* ' de Karşılaştırılacak öğelerin değerleridir. [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex)içinde *lParam1* , Karşılaştırılacak ilk öğenin geçerli dizinidir ve *lParam2* ikinci öğenin geçerli dizinidir. Bir öğe hakkında daha fazla bilgi almak için [LVM_GETITEMTEXT](/windows/win32/Controls/lvm-getitemtext) iletisi gönderebilirsiniz.
 
 İlk öğe ikinciden önce gelmelidir, ilk öğe ikinciden önce gelmesi gerekiyorsa pozitif bir değer veya iki öğe eşitse sıfır değeri, karşılaştırma işlevi için negatif bir değer döndürmelidir.

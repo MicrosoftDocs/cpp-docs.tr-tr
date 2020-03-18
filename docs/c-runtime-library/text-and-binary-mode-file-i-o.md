@@ -1,8 +1,6 @@
 ---
 title: Metin ve İkili Mod Dosyası G/Ç
 ms.date: 04/11/2018
-f1_keywords:
-- c.io
 helpviewer_keywords:
 - files [C++], open functions
 - I/O [CRT], text files
@@ -15,24 +13,24 @@ helpviewer_keywords:
 - translation modes (file I/O)
 - binary access
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
-ms.openlocfilehash: 2c875350aedadb55d8f96fb682d6215030be2198
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75d302e625747d6e02e1d904c21542530d70d02f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304546"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444632"
 ---
 # <a name="text-and-binary-mode-file-io"></a>Metin ve İkili Mod Dosyası G/Ç
 
-Dosya g/ç işlemleri Al iki çeviri modlarından birini yerinde *metin* veya *ikili*dosya açıldığı mod bağlı olarak. Veri dosyaları, genellikle metin modunda işlenir. Dosya çevirisi modu kontrol etmek için birini yapabilirsiniz:
+Dosya g/ç işlemleri, dosyanın açıldığı moda bağlı olarak iki çeviri modundan birinde, *metin* veya *ikili*bir yerde gerçekleşir. Veri dosyaları genellikle metin modunda işlenir. Dosya çevirisi modunu denetlemek için aşağıdakilerden biri olabilir:
 
-- Geçerli varsayılan ayar Koru ve yalnızca seçilen dosyalar açıldığında alternatif modu belirtin.
+- Geçerli varsayılan ayarı koruyun ve yalnızca seçili dosyaları açtığınızda alternatif modu belirtin.
 
-- İşlevini [_set_fmode](../c-runtime-library/reference/set-fmode.md) açılmış dosyaları için yeni varsayılan modunu değiştirmek için. Kullanım [_get_fmode](../c-runtime-library/reference/get-fmode.md) geçerli varsayılan modu bulunamıyor. Metin modunu ilk varsayılan ayardır (**_O_TEXT**).
+- Yeni açılan dosyaların varsayılan modunu değiştirmek için [_set_fmode](../c-runtime-library/reference/set-fmode.md) işlevini kullanın. Geçerli varsayılan modu bulmak için [_get_fmode](../c-runtime-library/reference/get-fmode.md) kullanın. İlk varsayılan ayar metin modudur ( **_O_TEXT**).
 
-- Doğrudan genel değişkenini ayarlayarak varsayılan çeviri modunu değiştirmek [_fmode](../c-runtime-library/fmode.md) programınızdaki. İşlev **_set_fmode** Bu değişken, ancak değeri de ayarlanabilir doğrudan ayarlar.
+- Varsayılan çeviri modunu programınızdaki [_fmode](../c-runtime-library/fmode.md) genel değişkeni ayarlayarak doğrudan değiştirin. İşlevi **_set_fmode** bu değişkenin değerini ayarlar, ancak doğrudan de ayarlanabilir.
 
-Çağırdığınızda bir dosya açma işlevi gibi [_aç](../c-runtime-library/reference/open-wopen.md), [fopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md), [freopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md), [_fsopen](../c-runtime-library/reference/fsopen-wfsopen.md) veya [_sopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md), geçerli varsayılan ayarı geçersiz kılabilirsiniz **_fmode** işleviuygunbağımsızdeğişkenibelirterek[_set_fmode](../c-runtime-library/reference/set-fmode.md). **Stdin**, **stdout**, ve **stderr** akışları her zaman varsayılan olarak metin modunda açın; bu varsayılan bu dosyalar açılırken kılabilirsiniz. Kullanım [_setmode](../c-runtime-library/reference/setmode.md) dosya açıldıktan sonra dosya tanımlayıcısını kullanarak çeviri modunu değiştirmek için.
+[_Open](../c-runtime-library/reference/open-wopen.md), [fopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md), [serbest aç](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md), [_fsopen](../c-runtime-library/reference/fsopen-wfsopen.md) veya [_sopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md)gibi bir dosya açma işlevini çağırdığınızda, işlev [_fmode](../c-runtime-library/reference/set-fmode.md)uygun bağımsız değişkenini belirterek **_set_fmode** geçerli varsayılan ayarını geçersiz kılabilirsiniz. **STDIN**, **stdout**ve **stderr** akışları her zaman varsayılan olarak metin modunda açılır; Ayrıca, bu dosyalardan herhangi birini açarken bu varsayılanı geçersiz kılabilirsiniz. Dosya açıldıktan sonra dosya tanımlayıcısını kullanarak çeviri modunu değiştirmek için [_setmode](../c-runtime-library/reference/setmode.md) kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

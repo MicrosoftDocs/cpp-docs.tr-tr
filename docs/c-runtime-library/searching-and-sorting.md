@@ -1,37 +1,35 @@
 ---
 title: Arama ve Sıralama
 ms.date: 11/04/2016
-f1_keywords:
-- c.programs
 helpviewer_keywords:
 - sorting data
 - data [CRT], searching
 - searching [C++], CRT search functions
 - searching [C++]
 ms.assetid: 15e984f0-e155-46f5-8542-51c458792f54
-ms.openlocfilehash: a58526f65be4951b57804c08359c349e78d622fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92fe4c43f076a7cb0df5bc94521cfc8fb77b5da6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364933"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444688"
 ---
 # <a name="searching-and-sorting"></a>Arama ve Sıralama
 
-Aşağıdaki işlevleri, arama ve sıralama için kullanın.
+Arama ve sıralama için aşağıdaki işlevleri kullanın.
 
-## <a name="searching-and-sorting-functions"></a>Arama ve sıralama işlevleri
+## <a name="searching-and-sorting-functions"></a>Işlevleri arama ve sıralama
 
-|İşlev|Arama ve sıralama|
+|İşlev|Arama veya sıralama|
 |--------------|--------------------|
 |[bsearch](../c-runtime-library/reference/bsearch.md)|İkili arama|
-|[bsearch_s](../c-runtime-library/reference/bsearch-s.md)|Daha güvenli bir sürümü **bsearch**|
-|[_lfind](../c-runtime-library/reference/lfind.md)|Verilen değer doğrusal Ara|
-|[_lfind_s](../c-runtime-library/reference/lfind-s.md)|Daha güvenli bir sürümü **_lfind**|
-|[_lsearch](../c-runtime-library/reference/lsearch.md)|Doğrusal dizisi değilse bulunan eklenen değer arayın|
-|[_lsearch_s](../c-runtime-library/reference/lsearch-s.md)|Daha güvenli bir sürümü **_lsearch**|
+|[bsearch_s](../c-runtime-library/reference/bsearch-s.md)|**Bsearch** 'ün daha güvenli bir sürümü|
+|[_lfind](../c-runtime-library/reference/lfind.md)|Verilen değer için doğrusal arama|
+|[_lfind_s](../c-runtime-library/reference/lfind-s.md)|**_Lfind** daha güvenli bir sürümü|
+|[_lsearch](../c-runtime-library/reference/lsearch.md)|Dizi bulunmazsa diziye eklenen verilen değer için doğrusal arama|
+|[_lsearch_s](../c-runtime-library/reference/lsearch-s.md)|**_Lsearch** daha güvenli bir sürümü|
 |[qsort](../c-runtime-library/reference/qsort.md)|Hızlı sıralama|
-|[qsort_s](../c-runtime-library/reference/qsort-s.md)|Daha güvenli bir sürümü **qsort**|
+|[qsort_s](../c-runtime-library/reference/qsort-s.md)|Daha güvenli bir **qsort** sürümü|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

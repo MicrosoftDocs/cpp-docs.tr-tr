@@ -1,17 +1,6 @@
 ---
 title: '&lt;type_traits&gt; işlevleri'
 ms.date: 11/04/2016
-f1_keywords:
-- type_traits/std::is_assignable
-- type_traits/std::is_copy_assignable
-- type_traits/std::is_copy_constructible
-- type_traits/std::is_default_constructible
-- type_traits/std::is_move_assignable
-- type_traits/std::is_move_constructible
-- type_traits/std::is_nothrow_move_assignable
-- type_traits/std::is_trivially_copy_assignable
-- type_traits/std::is_trivially_move_assignable
-- type_traits/std::is_trivially_move_constructible
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
 helpviewer_keywords:
 - std::is_assignable
@@ -24,12 +13,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 48ca51d56994f3d487af6744801acedf5c6cc79c
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 40ebd24a286039391dedacf289d305ee5ec9ca95
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422642"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447470"
 ---
 # <a name="lttype_traitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 

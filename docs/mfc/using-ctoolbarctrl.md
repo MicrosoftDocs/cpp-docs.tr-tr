@@ -1,24 +1,22 @@
 ---
 title: CToolBarCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CToolBarCtrl
 helpviewer_keywords:
 - CToolBarCtrl class [MFC]
 - toolbar controls [MFC], creating
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
-ms.openlocfilehash: 70bb563b7dd4558ab1943ad87ee3db5b877951e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a82a763ca357feccbe5b61d4f85d6038563c1c11
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411675"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442245"
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl Kullanma
 
-Araç çubuğu denetimi kullanabilirsiniz ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) düğmeler ve isteğe bağlı alanları içeren bir denetim pencere oluşturmak için. Kullanıcının seçtiği gibi araç çubuğu denetimi penceresinde her düğmesine üst penceresine bir komut iletisi gönderir. Genellikle, bir araç çubuğu düğmeleri uygulama menüsünde, ek ve daha doğrudan bir yolla uygulamanın komutlara erişmek kullanıcı sağlama öğelere karşılık gelir.
+Düğme ve isteğe bağlı boşluklar içeren bir denetim penceresi oluşturmak için araç çubuğu denetimini ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) kullanabilirsiniz. Araç çubuğu denetim penceresinde her düğme, Kullanıcı tarafından seçtiği için ana pencereye bir komut iletisi gönderir. Genellikle, bir araç çubuğundaki düğmeler uygulama menüsündeki öğelere karşılık gelir ve kullanıcının bir uygulamanın komutlarına erişmesi için ek ve daha kolay bir yol sağlar.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Araç Çubuğu Oluşturma Yöntemleri](../mfc/methods-of-creating-a-toolbar.md)
 

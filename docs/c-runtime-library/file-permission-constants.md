@@ -1,9 +1,6 @@
 ---
 title: Dosya İzin Sabitleri
 ms.date: 11/04/2016
-f1_keywords:
-- _S_IWRITE
-- _S_IREAD
 helpviewer_keywords:
 - S_IWRITE constant
 - constants [C++], file attributes
@@ -12,12 +9,12 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-ms.openlocfilehash: 0e042cddce6edf079aa54f114130f9750412e327
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f6126b867e29ca37468c6ff383224a483639c78
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343855"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443281"
 ---
 # <a name="file-permission-constants"></a>Dosya İzin Sabitleri
 
@@ -29,23 +26,23 @@ ms.locfileid: "62343855"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sabitlerden birine gereklidir `_O_CREAT` (`_open`, `_sopen`) belirtilir.
+`_O_CREAT` (`_open`, `_sopen`) belirtildiğinde Bu sabitlerden biri gereklidir.
 
-`pmode` Bağımsız değişkeni aşağıdaki gibi dosyanın izin ayarlarını belirtir.
+`pmode` bağımsız değişkeni, dosyanın izin ayarlarını aşağıda gösterildiği gibi belirtir.
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
-|`_S_IREAD`|Okuma izin verilir|
+|`_S_IREAD`|Okuma izni verildi|
 |`_S_IWRITE`|İzin verilen yazma|
-|`_S_IREAD` &#124; `_S_IWRITE`|Okuma ve yazma izin verilir|
+|`_S_IREAD` &#124; `_S_IWRITE`|Okuma ve yazma izni verildi|
 
-Olarak kullanıldığında `pmode` için bağımsız değişken `_umask`, Bildirim sabiti izin ayarının gibi ayarlar.
+`_umask`için `pmode` bağımsız değişkeni olarak kullanıldığında, bildirim sabiti, izin ayarını aşağıdaki şekilde ayarlar.
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
-|`_S_IREAD`|Yazma izin verilmez (salt okunur dosya)|
-|`_S_IWRITE`|Okuma izin verilmez (dosya salt yazılır)|
-|`_S_IREAD` &#124; `_S_IWRITE`|Okuma ne yazmaya izin verilir|
+|`_S_IREAD`|Yazmaya izin verilmiyor (dosya salt okunurdur)|
+|`_S_IWRITE`|Okumaya izin verilmiyor (dosya salt yazılır)|
+|`_S_IREAD` &#124; `_S_IWRITE`|Ne okumadan ne de yazmadan izin verilmez|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

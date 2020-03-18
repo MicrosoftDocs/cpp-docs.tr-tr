@@ -22,7 +22,6 @@ topic_type:
 - apiref
 f1_keywords:
 - _wexeclpe
-- execlpe
 - wexeclpe
 - _execlpe
 helpviewer_keywords:
@@ -31,12 +30,12 @@ helpviewer_keywords:
 - _execlpe function
 - execlpe function
 ms.assetid: 07b861da-3e7e-4f1d-bb80-ad69b55e5162
-ms.openlocfilehash: 960d148963aa9c6410fec03b5a6f265a6e4ab9d5
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0783e07c945de7d65a11247efc6346c5e315c900
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941906"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443019"
 ---
 # <a name="_execlpe-_wexeclpe"></a>_execlpe, _wexeclpe
 
@@ -83,8 +82,8 @@ Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönü
 |-------------------|-----------------|
 |**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
 |**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
-|**EINVAL**|Geçersiz parametre.|
-|**EMFILE**|Çok fazla dosya açık (belirtilen dosyanın yürütülebilir olup olmadığını anlamak için açılması gerekir).|
+|**EıNVAL**|Geçersiz parametre.|
+|**EMFıLE**|Çok fazla dosya açık (belirtilen dosyanın yürütülebilir olup olmadığını anlamak için açılması gerekir).|
 |**ENOENT**|Dosya veya yol bulunamadı.|
 |**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
 |**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin düzgün bir şekilde ayrılmadığını belirten geçersiz bir blok var.|
@@ -108,7 +107,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="example"></a>Örnek
 
-[_Exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)içindeki örneğe bakın.
+[_Exec, _Wexec işlevlerde](../../c-runtime-library/exec-wexec-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

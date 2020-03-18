@@ -1,34 +1,21 @@
 ---
 title: sacnf genişlik belirtimi
 ms.date: 10/22/2019
-api_location:
-- msvcr100.dll
-- msvcr120.dll
-- msvcr80.dll
-- msvcr110_clr0400.dll
-- msvcr110.dll
-- msvcr90.dll
-api_type:
-- DLLExport
-topic_type:
-- apiref
-f1_keywords:
-- scanf
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: 54331f4150c50b084b59ac51b3f34ffe15c5b1c8
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+ms.openlocfilehash: ea0b2728021e3093ab7818af17e60c598f73587f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811124"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444710"
 ---
 # <a name="scanf-width-specification"></a>sacnf genişlik belirtimi
 
 Bu bilgiler, `scanf_s`gibi güvenli sürümler dahil olmak üzere `scanf` işlev ailesinde biçim dizelerinin yorumu için geçerlidir. Bu işlevler normalde giriş akışının bir belirteç dizisine bölündüğünü varsayar. Belirteçler boşluk (boşluk, sekme veya yeni satır) ile veya sayısal türler için, sayısal metin olarak dönüştürülemeyen ilk karakter tarafından belirtildiği gibi sayısal bir veri türünün doğal sonuna kadar ayrılır. Ancak, bir belirtecin doğal sonundan önce girişin ayrıştırılmasını engellemek için genişlik belirtimi kullanılabilir.
 
-*Genişlik* belirtimi `%` ve tür alanı belirleyicisi arasındaki karakterlerden oluşur. Bu, *Width* alanı adlı pozitif bir tamsayı ve alanın boyutunu belirten bir veya daha fazla karakter içerebilir ve bu da olabilir Tamsayı türünün **kısa** veya **uzun**olup olmadığına ilişkin bir gösterge gibi alanın türünün değiştirici olarak değerlendirilir. Bu tür karakterler boyut ön eki olarak adlandırılır.
+*Genişlik* belirtimi, `%` ve tür alanı belirleyicisi arasındaki karakterlerden oluşur. Bu, *Width* alanı olarak adlandırılan pozitif bir tamsayı ve alanın boyutunu belirten bir veya daha fazla karakter içerebilir; bu da, tamsayı türünün **kısa** veya **uzun**olup olmadığına ilişkin bir gösterge gibi, alan türünün değiştiriciler olarak da düşünülebilir. Bu tür karakterler boyut ön eki olarak adlandırılır.
 
 ## <a name="the-width-field"></a>Genişlik alanı
 

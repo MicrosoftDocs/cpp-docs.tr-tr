@@ -26,10 +26,6 @@ f1_keywords:
 - ATL::CDataConnection::operatorBOOL
 - CDataConnection.operatorBOOL
 - ATL.CDataConnection.operatorBOOL
-- CDataConnection::operatorBOOL
-- ATL::CDataConnection::operatorBOOL
-- CDataConnection.operatorBOOL
-- ATL.CDataConnection.operatorBOOL
 - CDataSource&
 - CDataConnection.operatorCDataSource&
 - operatorCDataSource&
@@ -65,16 +61,16 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: 94c7025185a24b07d5968157d49c856d4359b33a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e966ce8d0f8b277c0edde2b0b9b345a11c6a964c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209305"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442494"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 
-Veri kaynağı ile bağlantı yönetir.
+Veri kaynağıyla bağlantıyı yönetir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,7 +80,7 @@ class CDataConnection
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -92,36 +88,36 @@ class CDataConnection
 
 |||
 |-|-|
-|[CDataConnection](#cdataconnection)|Oluşturucu. Oluşturur ve başlatır bir `CDataConnection` nesne.|
-|[Kopyala](#copy)|Mevcut bir veri bağlantısı bir kopyasını oluşturur.|
-|[açın](#open)|Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.|
-|[OpenNewSession](#opennewsession)|Geçerli bağlantı üzerinde yeni bir oturum açar.|
+|[CDataConnection](#cdataconnection)|Oluşturucu. `CDataConnection` nesnesini başlatır ve başlatır.|
+|[Kopyala](#copy)|Varolan bir veri bağlantısının kopyasını oluşturur.|
+|[Açın](#open)|Başlatma dizesi kullanarak bir veri kaynağına bir bağlantı açar.|
+|[OpenNewSession](#opennewsession)|Geçerli bağlantıda yeni bir oturum açar.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[BOOL işleci](#op_bool)|Geçerli oturumu açık olup olmadığını belirler.|
-|[bool işleci](#op_bool_ole)|Geçerli oturumu açık olup olmadığını belirler.|
-|[işleç CDataSource &](#op_cdata_amp)|Kapsanan bir başvuru döndürür `CDataSource` nesne.|
-|[CDataSource * işleci](#op_cdata_star)|Kapsanan bir işaretçi döndürür `CDataSource` nesne.|
-|[işleç CSession &](#op_csession_amp)|Kapsanan bir başvuru döndürür `CSession` nesne.|
-|[işleç CSession *](#op_csession_star)|Kapsanan bir işaretçi döndürür `CSession` nesne.|
+|[işleç BOOL](#op_bool)|Geçerli oturumun açık olup olmadığını belirler.|
+|[işleç bool](#op_bool_ole)|Geçerli oturumun açık olup olmadığını belirler.|
+|[CDataSource işleci &](#op_cdata_amp)|İçerilen `CDataSource` nesnesine bir başvuru döndürür.|
+|[CDataSource * işleci](#op_cdata_star)|İçerilen `CDataSource` nesnesine bir işaretçi döndürür.|
+|[işleç CSession &](#op_csession_amp)|İçerilen `CSession` nesnesine bir başvuru döndürür.|
+|[CSession * işleci](#op_csession_star)|İçerilen `CSession` nesnesine bir işaretçi döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDataConnection` gerekli nesneleri (veri kaynağı ve oturum) ve bir veri kaynağına bağlanırken gerçekleştirmeniz gereken işinin bir kısmını kapsülleyen çünkü istemciler oluşturan için kullanışlı bir sınıftır
+`CDataConnection`, gerekli nesneleri (veri kaynağı ve oturumu) ve bir veri kaynağına bağlanırken yapmanız gereken bazı işleri (veri kaynağı ve oturum) sarmalayan istemciler oluşturmak için faydalı bir sınıftır
 
-Olmadan `CDataConnection`, oluşturmak zorunda bir `CDataSource` nesne, çağrı kendi [OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md) yöntemi, bir örneğini oluşturup bir [CSession](../../data/oledb/csession-class.md) nesne, arama, [ Açık](../../data/oledb/csession-open.md) yöntemi, oluşturup bir [CCommand](../../data/oledb/ccommand-class.md) nesne ve çağrı kendi `Open`* yöntemleri.
+`CDataConnection`olmadan bir `CDataSource` nesnesi oluşturmanız, [Openfrominitializationstring](../../data/oledb/cdatasource-openfrominitializationstring.md) metodunu çağırmanız, sonra bir [CSession](../../data/oledb/csession-class.md) nesnesi örneği oluşturmanız, [Open](../../data/oledb/csession-open.md) metodunu çağırmanız, sonra bir [CCommand](../../data/oledb/ccommand-class.md) nesnesi oluşturmanız ve `Open`* yöntemlerini çağırmanız gerekir.
 
-İle `CDataConnection`, yalnızca bir bağlantı nesnesi oluşturma, başlatma dizesi geçirin ve ardından komutları açmak için bu bağlantıyı kullanmak gerekir. Veritabanı bağlantınızı sürekli olarak kullanmayı planlıyorsanız, bu bağlantının açık kalması için iyi bir fikirdir ve `CDataConnection` bunu yapmanın kolay bir yol sağlar.
+`CDataConnection`ile yalnızca bir bağlantı nesnesi oluşturmanız, bir başlatma dizesi iletmeniz ve ardından bu bağlantıyı kullanarak komutları açmanız gerekir. Veritabanı bağlantınızı sürekli olarak kullanmayı planlıyorsanız, bağlantının açık tutulması iyi bir fikirdir ve `CDataConnection` bunu yapmak için kullanışlı bir yol sağlar.
 
 > [!NOTE]
->  Birden çok oturumu işlemek için gereken bir veritabanı uygulaması oluşturuyorsanız, kullanmanız gerekecektir [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md).
+>  Birden çok oturumu işlemesi gereken bir veritabanı uygulaması oluşturuyorsanız, [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md)kullanmanız gerekir.
 
-## <a name="cdataconnection"></a> CDataConnection::CDataConnection
+## <a name="cdataconnection"></a>CDataConnection:: CDataConnection
 
-Oluşturur ve başlatır bir `CDataConnection` nesne.
+`CDataConnection` nesnesini başlatır ve başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -132,18 +128,18 @@ CDataConnection(const CDataConnection &ds);
 
 #### <a name="parameters"></a>Parametreler
 
-*DS*<br/>
-[in] Mevcut bir veri bağlantısı başvuru.
+*FID*<br/>
+'ndaki Mevcut bir veri bağlantısına başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk geçersiz kılma yeni bir oluşturur `CDataConnection` varsayılan ayarlarla nesne.
+İlk geçersiz kılma varsayılan ayarlarla yeni bir `CDataConnection` nesnesi oluşturur.
 
-İkinci geçersiz kılma yeni bir oluşturur `CDataConnection` ayarları, belirttiğiniz veri bağlantı nesnesi eşdeğer olan nesne.
+İkinci geçersiz kılma, belirttiğiniz veri bağlantısı nesnesine denk ayarlarla yeni bir `CDataConnection` nesnesi oluşturur.
 
-## <a name="copy"></a> CDataConnection::Copy
+## <a name="copy"></a>CDataConnection:: Copy
 
-Mevcut bir veri bağlantısı bir kopyasını oluşturur.
+Varolan bir veri bağlantısının kopyasını oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -153,12 +149,12 @@ CDataConnection& Copy(const CDataConnection & ds) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*DS*<br/>
-[in] Mevcut bir veri bağlantısı kopyalamak için bir başvuru.
+*FID*<br/>
+'ndaki Kopyalamak için mevcut bir veri bağlantısına bir başvuru.
 
-## <a name="open"></a> CDataConnection::Open
+## <a name="open"></a>CDataConnection:: Open
 
-Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.
+Başlatma dizesi kullanarak bir veri kaynağına bir bağlantı açar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -168,16 +164,16 @@ HRESULT Open(LPCOLESTR szInitString) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*szInitString*<br/>
-[in] Veri kaynağı için başlatma dizesi.
+*Szınitstring*<br/>
+'ndaki Veri kaynağı için başlatma dizesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="opennewsession"></a> CDataConnection::OpenNewSession
+## <a name="opennewsession"></a>CDataConnection:: OpenNewSession
 
-Geçerli bağlantı nesnesinin veri kaynağı kullanarak yeni bir oturum açar.
+Geçerli bağlantı nesnesinin veri kaynağını kullanarak yeni bir oturum açar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -187,20 +183,20 @@ HRESULT OpenNewSession(CSession & session) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*Oturumu*<br/>
-[daraltma/genişletme] Yeni bir oturum nesnesi bir başvuru.
+*oturumuna*<br/>
+[ın/out] Yeni oturum nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir oturum geçerli bağlantı nesnenin içerdiği veri kaynağı nesnesi kendi üst öğesi olarak kullanır ve tüm veri kaynağı olarak aynı bilgileri erişebilir.
+Yeni oturum, geçerli bağlantı nesnesinin üst öğesi olarak bulunan veri kaynağı nesnesini kullanır ve veri kaynağıyla aynı bilgilere erişebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="op_bool"></a> CDataConnection::operator BOOL
+## <a name="op_bool"></a>CDataConnection:: operator BOOL
 
-Geçerli oturumu açık olup olmadığını belirler.
+Geçerli oturumun açık olup olmadığını belirler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -210,11 +206,11 @@ operator BOOL() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürür **BOOL** (MFC typedef) değeri. **DOĞRU** geçerli oturum açın; anlamına gelir **FALSE** geçerli oturum kapatıldığında anlamına gelir.
+**Bool** (MFC typedef) değerini döndürür. **Doğru** , geçerli oturumun açık olduğu anlamına gelir; **Yanlış** , geçerli oturumun kapalı olduğu anlamına gelir.
 
-## <a name="op_bool_ole"></a> CDataConnection::operator bool (OLE DB)
+## <a name="op_bool_ole"></a>CDataConnection:: operator bool (OLE DB)
 
-Geçerli oturumu açık olup olmadığını belirler.
+Geçerli oturumun açık olup olmadığını belirler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -224,11 +220,11 @@ operator bool() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürür bir **bool** (C++ veri türü) değeri. **doğru** geçerli oturum açın; anlamına gelir **false** geçerli oturum kapatıldığında anlamına gelir.
+Bir **bool** (C++ veri türü) değeri döndürür. **doğru** , geçerli oturumun açık olduğu anlamına gelir; **yanlış** , geçerli oturumun kapalı olduğu anlamına gelir.
 
-## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&amp;
+## <a name="op_cdata_amp"></a>CDataConnection:: operator CDataSource&amp;
 
-Kapsanan bir başvuru döndürür `CDataSource` nesne.
+İçerilen `CDataSource` nesnesine bir başvuru döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -238,19 +234,19 @@ operator const CDataSource&() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlecin bağımsız bir başvuru döndürür `CDataSource` geçirmenize izin nesnesi, bir `CDataConnection` nesne olduğu bir `CDataSource` başvurusu bekleniyor.
+Bu işleç, içerilen `CDataSource` nesnesine bir başvuru döndürür ve bir `CDataSource` başvurusunun beklenildiği bir `CDataConnection` nesnesini geçirmenize olanak sağlar.
 
 ### <a name="example"></a>Örnek
 
-Bir işlev varsa (gibi `func` aşağıda) alan bir `CDataSource` kullanabileceğiniz başvuru `CDataSource&` geçirilecek bir `CDataConnection` bunun yerine nesne.
+`CDataSource` başvuru alan bir işleviniz varsa (aşağıdaki `func` gibi), bunun yerine `CDataConnection` nesnesini geçirmek için `CDataSource&` kullanabilirsiniz.
 
 [!code-cpp[NVC_OLEDB_Consumer#3](../../data/oledb/codesnippet/cpp/cdataconnection-operator-cdatasource-amp_1.cpp)]
 
 [!code-cpp[NVC_OLEDB_Consumer#4](../../data/oledb/codesnippet/cpp/cdataconnection-operator-cdatasource-amp_2.cpp)]
 
-## <a name="op_cdata_star"></a> CDataConnection::operator CDataSource *
+## <a name="op_cdata_star"></a>CDataConnection:: operator CDataSource *
 
-Kapsanan bir işaretçi döndürür `CDataSource` nesne.
+İçerilen `CDataSource` nesnesine bir işaretçi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -260,13 +256,13 @@ operator const CDataSource*() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç içerdiği için bir işaretçi döndürür `CDataSource` geçirmenize izin nesnesi, bir `CDataConnection` nesne olduğu bir `CDataSource` işaretçi beklenmektedir.
+Bu işleç, içerilen `CDataSource` nesnesine bir işaretçi döndürür ve bir `CDataSource` işaretçisinin beklenildiği bir `CDataConnection` nesnesini geçirmenize olanak sağlar.
 
-Bkz: [işleci CDataSource &](../../data/oledb/cdataconnection-operator-cdatasource-amp.md) bir kullanım örneği için.
+Kullanım örneği için bkz. [CDataSource & işleci](../../data/oledb/cdataconnection-operator-cdatasource-amp.md) .
 
-## <a name="op_csession_amp"></a> CDataConnection::operator CSession&amp;
+## <a name="op_csession_amp"></a>CDataConnection:: operator CSession&amp;
 
-Kapsanan bir başvuru döndürür `CSession` nesne.
+İçerilen `CSession` nesnesine bir başvuru döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -276,19 +272,19 @@ operator const CSession&();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlecin bağımsız bir başvuru döndürür `CSession` geçirmenize izin nesnesi, bir `CDataConnection` nesne olduğu bir `CSession` başvurusu bekleniyor.
+Bu işleç, içerilen `CSession` nesnesine bir başvuru döndürür ve bir `CSession` başvurusunun beklenildiği bir `CDataConnection` nesnesini geçirmenize olanak sağlar.
 
 ### <a name="example"></a>Örnek
 
-Bir işlev varsa (gibi `func` aşağıda) alan bir `CSession` kullanabileceğiniz başvuru `CSession&` geçirilecek bir `CDataConnection` bunun yerine nesne.
+`CSession` başvuru alan bir işleviniz varsa (aşağıdaki `func` gibi), bunun yerine `CDataConnection` nesnesini geçirmek için `CSession&` kullanabilirsiniz.
 
 [!code-cpp[NVC_OLEDB_Consumer#5](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_1.cpp)]
 
 [!code-cpp[NVC_OLEDB_Consumer#6](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_2.cpp)]
 
-## <a name="op_csession_star"></a> CDataConnection::operator CSession *
+## <a name="op_csession_star"></a>CDataConnection:: operator CSession *
 
-Kapsanan bir işaretçi döndürür `CSession` nesne.
+İçerilen `CSession` nesnesine bir işaretçi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -298,13 +294,13 @@ operator const CSession*() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç içerdiği için bir işaretçi döndürür `CSession` geçirmenize izin nesnesi, bir `CDataConnection` nesne olduğu bir `CSession` işaretçi beklenmektedir.
+Bu işleç, içerilen `CSession` nesnesine bir işaretçi döndürür ve bir `CSession` işaretçisinin beklenildiği bir `CDataConnection` nesnesini geçirmenize olanak sağlar.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [işleç CSession &](../../data/oledb/cdataconnection-operator-csession-amp.md) bir kullanım örneği için.
+Kullanım örneği için bkz. [operator CSession &](../../data/oledb/cdataconnection-operator-csession-amp.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -2,16 +2,13 @@
 title: Hizalama
 description: Modern C++içinde veri hizalaması nasıl belirtilir.
 ms.date: 12/11/2019
-f1_keywords:
-- alignas_cpp
-- alignof_cpp
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
-ms.openlocfilehash: 23c14d99e5f540a5065d01a31146b7334ac1c0b3
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 13f09366501de2482b8ae9ea430898d6c32134c2
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301671"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443659"
 ---
 # <a name="alignment"></a>Hizalama
 

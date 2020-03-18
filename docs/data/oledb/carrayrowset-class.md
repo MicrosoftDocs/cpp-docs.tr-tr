@@ -12,7 +12,6 @@ f1_keywords:
 - ATL.CArrayRowset.CArrayRowset
 - ATL.CArrayRowset<TAccessor>.CArrayRowset
 - CArrayRowset::CArrayRowset
-- CArrayRowset
 - CArrayRowset<TAccessor>::CArrayRowset
 - ATL::CArrayRowset<TAccessor>::CArrayRowset
 - CArrayRowset<TAccessor>.Snapshot
@@ -43,16 +42,16 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-ms.openlocfilehash: b257c4e95a99bfbc8042c5935638a70deac0ea7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66b7607eb28392196f6b7d3790aee976a861f2b6
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176167"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441718"
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset Sınıfı
 
-Dizi söz dizimini kullanarak bir satır öğeleri erişir.
+Dizi sözdizimini kullanarak bir satır kümesinin öğelerine erişir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,11 +65,11 @@ class CArrayRowset :
 ### <a name="parameters"></a>Parametreler
 
 *TAccessor*<br/>
-Satır kümesi kullanmak istediğiniz erişimci sınıfında türü.
+Satır kümesinin kullanmasını istediğiniz erişimci sınıfının türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -79,13 +78,13 @@ Satır kümesi kullanmak istediğiniz erişimci sınıfında türü.
 |||
 |-|-|
 |[CArrayRowset](#carrayrowset)|Oluşturucu.|
-|[Anlık Görüntü](#snapshot)|Tüm satır kümesi belleğe okur.|
+|[Anlık Görüntü](#snapshot)|Tüm satır kümesini belleğe okur.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleci&#91;&#93;](#operator)|Bir öğe kümesi erişir.|
+|[İşlecinde&#91;&#93;](#operator)|Satır kümesinin bir öğesine erişir.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
@@ -93,9 +92,9 @@ Satır kümesi kullanmak istediğiniz erişimci sınıfında türü.
 |-|-|
 |[CArrayRowset::m_nRowsRead](#nrowsread)|Zaten okunan satır sayısı.|
 
-## <a name="carrayrowset"></a> CArrayRowset::CArrayRowset
+## <a name="carrayrowset"></a>CArrayRowset:: CArrayRowset
 
-Yeni bir oluşturur `CArrayRowset` nesne.
+Yeni bir `CArrayRowset` nesnesi oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -105,12 +104,12 @@ CArrayRowset(int nMax = 100000);
 
 #### <a name="parameters"></a>Parametreler
 
-*nMax*<br/>
-[in] Satır kümesinde satır sayısı.
+*Ngünde en çok*<br/>
+'ndaki Satır kümesindeki en fazla satır sayısı.
 
-## <a name="snapshot"></a> CArrayRowset::Snapshot
+## <a name="snapshot"></a>CArrayRowset:: Snapshot
 
-Tüm satır kümesi, bir resim veya bunu anlık görüntü oluşturma belleğe okur.
+Tüm satır kümesini belleğe okur, görüntünün görüntüsünü veya anlık görüntüsünü oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -118,9 +117,9 @@ Tüm satır kümesi, bir resim veya bunu anlık görüntü oluşturma belleğe o
 HRESULT Snapshot() throw();
 ```
 
-## <a name="operator"></a> CArrayRowset::operator
+## <a name="operator"></a>CArrayRowset:: işleci
 
-Bir satır kümesinde erişmek için dizi benzeri sözdizimi sağlar.
+Satır kümesindeki bir satıra erişmek için dizi benzeri sözdizimi sağlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -131,22 +130,22 @@ TAccessor & operator[](int nrow);
 #### <a name="parameters"></a>Parametreler
 
 *TAccessor*<br/>
-Bir şablonlu parametresi kümesi içinde depolanan erişimcisinin türünü belirtir.
+Satır kümesinde depolanan erişimci türünü belirten şablonlu bir parametre.
 
-*nRow*<br/>
-[in] Erişmek istediğiniz satır (dizi öğesi) sayısı.
+*Nsatır*<br/>
+'ndaki Erişmek istediğiniz satır (dizi öğesi) sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İstenen satır içeriği.
+İstenen satırın içeriği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *nRow* satır kümesinde satır sayısını aşıyor, bir özel durum oluşturulur.
+*NRow* , satır kümesindeki satır sayısını aşarsa, bir özel durum oluşturulur.
 
-## <a name="nrowsread"></a> CArrayRowset::m_nRowsRead
+## <a name="nrowsread"></a>CArrayRowset:: m_nRowsRead
 
-Zaten okunmuş satır kümesinde satır sayısını içerir.
+Satır kümesindeki, zaten okunmuş olan satır sayısını içerir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -156,6 +155,6 @@ ULONG m_nRowsRead;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CRowset Sınıfı](../../data/oledb/crowset-class.md)

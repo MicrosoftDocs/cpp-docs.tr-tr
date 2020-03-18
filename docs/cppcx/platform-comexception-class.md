@@ -4,17 +4,17 @@ ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::COMException
-- VCCORLIB/Platform::Exception::HResult
-- VCCORLIB/Platform::Exception::Message
+- VCCORLIB/Platform::COMException::HResult
+- VCCORLIB/Platform::COMException::Message
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: eb6f3e0e4860687d0d47294e11b7741294abac20
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1d0d36ec16303d6bdaa5f2344cd5d48fba03c8bf
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500543"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444300"
 ---
 # <a name="platformcomexception-class"></a>Platform:: COMException sınıfı
 
@@ -55,7 +55,7 @@ COMException sınıfı aşağıdaki özelliklere sahiptir.
 
 Aşağıdaki önceden tanımlanmış özel durumlar COMException öğesinden türetilir. Bunlar, COMException 'dan yalnızca kendi adında, oluşturucusunun adına ve temel alınan HRESULT değerine göre farklılık gösterir.
 
-|Ad|Temel alınan HRESULT|Açıklama|
+|Adı|Temel alınan HRESULT|Açıklama|
 |----------|------------------------|-----------------|
 |COMException|*Kullanıcı tanımlı HRESULT*|Bir COM yöntem çağrısından tanınmayan HRESULT döndürüldüğünde oluşturulur.|
 |AccessDeniedException Oluşturucusu|E_ACCESSDENIED|Bir kaynak veya özelliğe erişim reddedildiğinde oluşturulur.|
@@ -73,11 +73,11 @@ Aşağıdaki önceden tanımlanmış özel durumlar COMException öğesinden tü
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
 **Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Uzayına** Platform
+**Ad alanı:** Platformunun
 
 **Meta veri:** platform. winmd
 

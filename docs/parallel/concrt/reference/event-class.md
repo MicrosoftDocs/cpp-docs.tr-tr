@@ -2,7 +2,6 @@
 title: event Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
-- event
 - CONCRT/concurrency::event
 - CONCRT/concurrency::event::reset
 - CONCRT/concurrency::event::set
@@ -12,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - event class
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-ms.openlocfilehash: 2c72b4b086e932f4fe404259c25f8d2c8be2be31
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 3d645cc09c61402059e9a86679c10ee703ee8031
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77138852"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443733"
 ---
 # <a name="event-class"></a>event Sınıfı
 
@@ -33,13 +32,13 @@ class event;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[~ olay yıkıcısı](#dtor)|Bir olayı yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[döndürmek](#reset)|Olayı, sinyal olmayan bir duruma sıfırlar.|
 |[set](#set)|Olayı bildirir.|
@@ -48,7 +47,7 @@ class event;
 
 ### <a name="public-constants"></a>Genel sabitler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[timeout_infinite](#timeout_infinite)|Bir bekleme süresinin asla zaman aşımına uğramayacağını gösteren değer.|
 

@@ -1,14 +1,14 @@
 ---
 title: C++uyumluluk geliştirmeleri
-ms.date: 12/04/2019
+ms.date: 03/16/2020
 description: Visual C++ Studio 'da Microsoft, c++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
-ms.openlocfilehash: e9c2a69c8d33ea692a76a5642a15b581567c2c63
-ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
+ms.openlocfilehash: 31c64ca8ce6b13af89a2e19bccd1de1bfb99543a
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75793849"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79446790"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -236,7 +236,7 @@ void f() {
 
 - `basic_string` ve `basic_string_view`için `starts_with()` ve `ends_with()`.
 - İlişkili kapsayıcılar için `contains()`.
-- `list` ve `forward_list` için `remove()`, `remove_if()` ve `unique()` artık `size_type` değerini döndürüyor.
+- `remove()` ve `remove_if()` için `unique()`, `list` ve `forward_list` artık `size_type` değerini döndürüyor.
 - `shift_left()` ve `shift_right()` \<algoritma > eklendi.
 
 
@@ -408,7 +408,7 @@ std::cin >> x;
 
 ### <a name="new-keywords-requires-and-concept"></a>Yeni anahtar sözcükler ve **kavram** **gerektirir**
 
-Yeni anahtar sözcükler, Microsoft C++ derleyicisi için **gereklidir** ve kavram eklenmiştir. [/Std: c + + en son](../build/reference/std-specify-language-standard-version.md) modunda bir tanımlayıcı olarak birini kullanmaya çalışırsanız, derleyici *C2059 oluşturacak: sözdizimi hatası*.
+Yeni anahtar sözcükler, **concept** Microsoft C++ derleyicisi için **gereklidir** ve kavram eklenmiştir. [/Std: c + + en son](../build/reference/std-specify-language-standard-version.md) modunda bir tanımlayıcı olarak birini kullanmaya çalışırsanız, derleyici *C2059 oluşturacak: sözdizimi hatası*.
 
 ### <a name="constructors-as-type-names-disallowed"></a>Tür adları olarak oluşturucular izin verilmiyor
 
@@ -571,7 +571,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### <a name="user-provided-specializations-of-type-traits"></a>Kullanıcı tarafından sunulan özelleştirilmiş tür nitelikleri
 
-Standart 'ın *meta. rqmts* alt yan tümcesiyle uyumlu olarak, MSVC derleyicisi artık, `std` ad alanındaki belirtilen type_traits şablonlarından birinin Kullanıcı tanımlı özelleştirmeyle karşılaştığında bir hata oluşturuyor. Aksi belirtilmediği takdirde, bu tür Uzmanlıklar tanımsız davranışa neden olur. Aşağıdaki örnek, kuralı ihlal ettiğinden tanımsız davranışa sahiptir ve `static_assert` **C2338**hatasıyla başarısız olur.
+Standart 'ın *meta. rqmts* alt yan tümcesiyle uyumlu olarak, MSVC derleyicisi artık, `std` ad alanındaki belirtilen `type_traits` şablonlarından birinin Kullanıcı tanımlı özelleştirmeyle karşılaştığında bir hata oluşturuyor. Aksi belirtilmediği takdirde, bu tür Uzmanlıklar tanımsız davranışa neden olur. Aşağıdaki örnek, kuralı ihlal ettiğinden tanımsız davranışa sahiptir ve `static_assert` **C2338**hatasıyla başarısız olur.
 
 ```cpp
 #include <type_traits>
@@ -583,7 +583,7 @@ struct std::is_fundamental<S> : std::true_type {};
 static_assert(std::is_fundamental<S>::value, "fail");
 ```
 
-Hatayı önlemek için, istenen type_trait devralan bir yapı tanımlayın ve şunları yapın:
+Hatayı önlemek için, tercih edilen `type_trait`devralan bir yapı tanımlayın ve şunları yapın:
 
 ```cpp
 #include <type_traits>
@@ -603,19 +603,19 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 MSVC derleyicisi artık [/std: c + + latest](../build/reference/std-specify-language-standard-version.md) seçeneği etkin olduğunda [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html) başına karşılaştırma işleçleri için aşağıdaki değişiklikleri uygular:
 
-Derleyici, **bool**olmayan bir dönüş türü içeriyorsa `operator==` deyimleri artık yeniden yazmayacaktır. Aşağıdaki kod şu anda *C2088 hatasını veriyor: '! = ': struct için geçersiz*:
+Derleyici, **bool**olmayan bir dönüş türü içeriyorsa `operator==` kullanarak ifadeleri artık yeniden yazar. Aşağıdaki kod şu anda *C2088 hatasını veriyor: '! = ': struct için geçersiz*:
 
 ```cpp
 struct U {
-  operator bool() const;
+    operator bool() const;
 };
 
 struct S {
-  U operator==(const S&) const;
+    U operator==(const S&) const;
 };
 
 bool neq(const S& lhs, const S& rhs) {
-  return lhs != rhs;
+    return lhs != rhs;
 }
 ```
 
@@ -636,7 +636,7 @@ bool neq(const S& lhs, const S& rhs) {
 }
 ```
 
-Derleyici artık birleşim benzeri bir sınıfın üyesiyse, varsayılan olarak bir karşılaştırma işleci tanımlamaz. Aşağıdaki örnek şu anda *C2120 üretir: ' void ' tüm türlerle geçersizdir*:
+Derleyici artık birleşim benzeri bir sınıfın üyesiyse, varsayılan olarak bir karşılaştırma işleci tanımlamıyor. Aşağıdaki örnek şu anda *C2120 üretir: ' void ' tüm türlerle geçersizdir*:
 
 ```cpp
 #include <compare>
@@ -658,13 +658,13 @@ Hatayı önlemek için işleç için bir gövde tanımlayın:
 #include <compare>
 
 union S {
-  int a;
-  char b;
-  auto operator<=>(const S&) const { ... }
-}; 
+    int a;
+    char b;
+    auto operator<=>(const S&) const { ... }
+};
 
 bool lt(const S& lhs, const S& rhs) {
-  return lhs < rhs;
+    return lhs < rhs;
 }
 ```
 
@@ -698,6 +698,195 @@ bool lt(const U& lhs, const U& rhs) {
 }
 ```
 
+## <a name="improvements_165"></a>Visual Studio 2019 sürüm 16,5 ' de uyumluluk geliştirmeleri
+
+### <a name="explicit-specialization-declaration-without-an-initializer-is-not-a-definition"></a>Başlatıcı olmadan açık özelleştirme bildirimi, tanım değildir
+
+`/permissive-`altında, MSVC artık Başlatıcı olmayan açık özelleştirme bildirimlerinin tanımsız bir standart kuralı zorlar. Daha önce, bildirim varsayılan başlatıcısı olan bir tanım olarak kabul edilir. Bu davranışa bağlı bir programın artık çözümlenmemiş sembolleri olabileceği için bağlantı zamanında bu efekt Observable ' dır. Bu örnek şimdi bir hatayla sonuçlanır:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// In permissive-, this declaration is not a definition and the program will not link.
+template <> int S<char>::a;
+
+int main() {
+    return S<char>::a;
+}
+```
+
+```Output
+error LNK2019: unresolved external symbol "public: static int S<char>::a" (?a@?$S@D@@2HA) referenced in function _main
+at link time.
+```
+
+Sorunu çözmek için bir başlatıcı ekleyin:
+
+```cpp
+template <typename> struct S {
+    static int a;
+};
+
+// Add an initializer for the declaration to be a definition.
+template <> int S<char>::a{};
+
+int main() {
+    return S<char>::a;
+}
+```
+
+### <a name="preprocessor-output-preserves-newlines"></a>Önişlemci çıktısı newlines 'ı korur
+
+Deneysel ön işlemci artık `/P` veya `/experimental:preprocessor`ile `/E` kullanırken newlines ve Whitespace 'yi korur. Bu değişiklik `/d1experimental:preprocessor:oldWhitespace`kullanılarak devre dışı bırakılabilir.
+
+Bu örnek kaynak verildiğinde,
+
+```cpp
+#define m()
+line m(
+) line
+```
+
+Önceki `/E` çıktısı:
+
+```Output
+line line
+#line 2
+```
+
+`/E` yeni çıktısı artık şunlardır:
+
+```Output
+line
+ line
+```
+
+### <a name="import-and-module-keywords-are-context-dependent"></a>' import ' ve ' Module ' anahtar sözcükleri bağlama bağımlı
+
+P1857R1 başına, Import ve Module Önişlemci yönergelerinin sözdizimi hakkında ek kısıtlamalar vardır. Bu örnek artık derlenmezse:
+
+```cpp
+import // Invalid
+m;
+```
+
+Aşağıdaki hata iletisini üretir:
+
+```Output
+error C2146: syntax error: missing ';' before identifier 'm'
+```
+
+Sorunu çözmek için içeri aktarma işlemi aynı satırda kalsın:
+
+```cpp
+import m; // OK
+```
+
+### <a name="removal-of-stdweak_equality-and-stdstrong_equality"></a>Std:: weak_equality ve std:: strong_equality kaldırılıyor
+
+P1959R0 öğesinin birleştirilmesi için derleyicinin davranışı ve `std::weak_equality` ve `std::strong_equality` türlerine yönelik başvuruları kaldırması gerekir.
+
+Bu örnekteki kod artık derlenmezse:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_equality operator<=>(const S&) const = default;
+};
+
+void f() {
+    nullptr<=>nullptr;
+    &f <=> &f;
+    &S::operator<=> <=> &S::operator<=>;
+}
+```
+
+Örnek şimdi bu hatalara neden oluyor:
+
+```Output
+error C2039: 'strong_equality': is not a member of 'std'
+error C2143: syntax error: missing ';' before '<=>'
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+error C7546: binary operator '<=>': unsupported operand types 'nullptr' and 'nullptr'
+error C7546: binary operator '<=>': unsupported operand types 'void (__cdecl *)(void)' and 'void (__cdecl *)(void)'
+error C7546: binary operator '<=>': unsupported operand types 'int (__thiscall S::* )(const S &) const' and 'int (__thiscall S::* )(const S &) const'
+```
+
+Sorunu çözmek için, yerleşik İlişkisel işleçleri tercih etmek ve kaldırılan türleri değiştirmek üzere güncelleştirin:
+
+```cpp
+#include <compare>
+
+struct S {
+    std::strong_ordering operator<=>(const S&) const = default; // prefer 'std::strong_ordering'
+};
+
+void f() {
+    nullptr != nullptr; // use pre-existing builtin operator != or ==.
+    &f != &f;
+    &S::operator<=> != &S::operator<=>;
+}
+```
+
+### <a name="tls-guard-changes"></a>TLS koruyucu değişiklikleri
+
+Daha önce, dll 'Lerdeki iş parçacığı yerel değişkenleri dll yüklenmeden önce var olan iş parçacıklarında ilk kullanılmadan önce, DLL 'yi yükleyen iş parçacığından farklı şekilde başlatılmıyordu. Bu hata düzeltildi.
+Bu tür bir DLL 'deki iş parçacığı yerel değişkenleri, bu iş parçacıkları üzerinde ilk kullanılmadan hemen önce başlatılır.
+
+Bu yeni davranış, iş parçacığı yerel değişkenlerinin kullanımları üzerinde başlatma için test etme davranışının `/Zc:tlsGuards-` derleyici anahtarı kullanılarak devre dışı bırakılabilir. Veya `[[msvc:no_tls_guard]]` özniteliğini belirli iş parçacığı yerel değişkenlerine ekleyerek.
+
+### <a name="better-diagnosis-of-call-to-deleted-functions"></a>Silinen işlevlere yapılan çağrının daha iyi tanılaması
+
+Derleyicimiz, daha önce silinen işlevlere yapılan çağrılar hakkında daha fazla izne sahiptir. Örneğin, çağrılar bir şablon gövdesi bağlamında gerçekleştiyse, çağrıyı tanılamadık. Ayrıca, silinen işlevlere birden çok çağrı örneği olsaydı yalnızca bir tanılama oluşturacağız. Artık her biri için bir tanılama veriyoruz.
+
+Yeni davranışın bir sonucu küçük bir değişiklik üretebilir: silinen bir işlevi çağıran kod, kod üretimi için hiçbir daha gerekmiyorsa tanıaramamaktadır. Şimdi tanıdık.
+
+Bu örnek, şimdi bir hata üreten kodu gösterir:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s{};
+};
+
+U u{ 0 };
+```
+
+```Output
+error C2280: 'S::S(void)': attempting to reference a deleted function
+note: see declaration of 'S::S'
+note: 'S::S(void)': function was explicitly deleted
+```
+
+Sorunu çözmek için silinen işlevlere yapılan çağrıları kaldırın:
+
+```cpp
+struct S {
+  S() = delete;
+  S(int) { }
+};
+
+struct U {
+  U() = delete;
+  U(int i): s{ i } { }
+
+  S s;  // Do not call the deleted ctor of 'S'.
+};
+
+U u{ 0 };
+```
+
 ## <a name="update_160"></a>Visual Studio 2019 'de hata düzeltmeleri ve davranış değişiklikleri
 
 ### <a name="reinterpret_cast-in-a-constexpr-function"></a>Constexpr işlevinde Reinterpret_cast
@@ -715,7 +904,7 @@ Hatayı önlemek için, işlev bildiriminden **constexpr** değiştiricisini kal
 
 ### <a name="correct-diagnostics-for-basic_string-range-constructor"></a>Basic_string Range Oluşturucusu için tanılama doğru
 
-Visual Studio 2019 ' de `basic_string` Range Oluşturucusu artık `static_cast`ile derleyici tanılamayı göstermez. Aşağıdaki kod, Visual Studio 2017 ' de uyarılar olmadan derlenir, çünkü `out`başlatılırken `wchar_t` veri kaybı olabilir.
+Visual Studio 2019 ' de `basic_string` Range Oluşturucusu artık `static_cast`ile derleyici tanılamayı göstermez. Aşağıdaki kod, Visual Studio 2017 ' de uyarılar olmadan derlenir, çünkü `out`başlatılırken `wchar_t` veri kaybı olabilir. **char**
 
 ```cpp
 std::wstring ws = /* … */;
@@ -819,7 +1008,7 @@ void example()
 
 ### <a name="function-template-bodies-containing-constexpr-if-statements"></a>Constexpr if deyimleri içeren işlev şablonu gövdeleri
 
-Constexpr deyimlerinin bir [/Permissive-](../build/reference/permissive-standards-conformance.md) ayrıştırmaya ilişkin denetim etkin **olup olmadığını** içeren şablon işlev gövdeleri. Örneğin, Visual Studio 2017 ' de şu kod C7510 oluşturur *: ' Type ': bağımlı tür adının kullanımı yalnızca/Permissive-seçeneği ayarlanmamışsa ' TypeName ' öneki olmalıdır* . Visual Studio 2019 ' de, **/Permissive-** seçeneği ayarlandığında de aynı kod hata oluşturuyor:
+Constexpr deyimlerinin bir [/Permissive-](../build/reference/permissive-standards-conformance.md) ayrıştırmaya ilişkin denetim etkin **olup olmadığını** içeren şablon işlev gövdeleri. Örneğin, Visual Studio 2017 ' de şu kod C7510 oluşturur *: ' Type ': bağımlı tür adının kullanımı yalnızca/Permissive-seçeneği ayarlanmamışsa ' TypeName ' öneki olmalıdır* . **/permissive-** Visual Studio 2019 ' de, **/Permissive-** seçeneği ayarlandığında de aynı kod hata oluşturuyor:
 
 ```cpp
 template <typename T>
@@ -1918,7 +2107,7 @@ Uyarıyı onarmak için önce `extern "C"` yerleştirin:
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
 
-Bu uyarı, varsayılan olarak 15,3 ' de, ancak varsayılan olarak 15,5 ' de kapalıdır ve yalnızca **/duvar/WX**ile derlenen kodu etkiler.
+Bu uyarı, varsayılan olarak 15,3 ' de, ancak varsayılan olarak 15,5 ' de kapalıdır ve yalnızca **/duvar/WX** **/WX**ile derlenen kodu etkiler.
 
 ### <a name="decltype-and-calls-to-deleted-destructors"></a>**decltype** ve silinen yıkıcıları çağrıları
 
@@ -2683,7 +2872,7 @@ Visual Studio 2017 sürüm 15,8 ' de derleyici değişiklikleri, hata düzeltmel
 
 ###<a name="typename-on-unqualified-identifiers"></a>Nitelenmemiş tanımlayıcılardaki **TypeName**
 
-[/Permissive-](../build/reference/permissive-standards-conformance.md) modunda, diğer ad şablonu tanımlarında nitelenmemiş tanımlayıcılarda bulunan spurertypename anahtar sözcükleri artık derleyici tarafından kabul edilmez. Aşağıdaki kod şu anda C7511 *'t ': ' TypeName ' anahtar sözcüğünün ardından tam bir ad*gelmelidir:
+[/Permissive-](../build/reference/permissive-standards-conformance.md) modunda, diğer ad şablonu tanımlarında nitelenmemiş tanımlayıcılarda bulunan spurertypename anahtar sözcükleri artık derleyici tarafından kabul edilmez.**typename** Aşağıdaki kod şu anda C7511 *'t ': ' TypeName ' anahtar sözcüğünün ardından tam bir ad*gelmelidir:
 
 ```cpp
 template <typename T>
@@ -2847,7 +3036,7 @@ int main()
 
 [/Permissive-](../build/reference/permissive-standards-conformance.md) modunda, derleyici artık **şablon** anahtar sözcüğünün, bağımlı bir iç içe-ad belirleyicisi öğesinden sonra geldiği sırada şablon adının önünde olmasını gerektirir.
 
-[/Permissive-](../build/reference/permissive-standards-conformance.md) modundaki şu kod artık C7510: *' example ': bağımlı şablon adının kullanımı ' Template ' önekini almalıdır. Note: derlenen ' X<T>' sınıf şablonu örneklemesine yönelik başvuruya bakın*:
+[/Permissive-](../build/reference/permissive-standards-conformance.md) modundaki şu kod artık C7510: *' example ': bağımlı şablon adının kullanılmasına ' Template ' ön eki eklenmiş olmalıdır. Note: derlenen ' X\<t > ' sınıf şablonu örneği oluşturma başvurusuna bakın*:
 
 ```cpp
 template<typename T> struct Base

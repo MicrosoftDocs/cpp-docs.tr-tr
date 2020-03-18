@@ -23,13 +23,9 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- mbsnbicoll
-- mbsnbcoll
-- mbsnbicoll_l
 - _mbsnbcoll
+- _mbsnbcoll_l
 - _mbsnbicoll
-- _ftcsnicoll
-- _ftcsncoll
 - mbsnbcoll_l
 helpviewer_keywords:
 - _mbsnbcoll_l function
@@ -42,15 +38,15 @@ helpviewer_keywords:
 - _tcsncoll function
 - _mbsnbicoll function
 - _mbsnbicoll_l function
-- tcsncoll function
-- tcsnicoll function
+- _tcsncoll_l function
+- _tcsnicoll_l function
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
-ms.openlocfilehash: 72c435060a6ac62213a50ba1d9fb9ef7d83fcb33
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d759bda0133a95406a586011d39d69074283bf97
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952276"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438213"
 ---
 # <a name="_mbsnbcoll-_mbsnbcoll_l-_mbsnbicoll-_mbsnbicoll_l"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 
@@ -91,7 +87,7 @@ int _mbsnbicoll_l(
 *Dize1*, *dize2*<br/>
 Karşılaştırılacak dizeler.
 
-*biriktirme*<br/>
+*count*<br/>
 Karşılaştırılacak bayt sayısı.
 
 *ayarlar*<br/>
@@ -107,17 +103,17 @@ Dönüş değeri, *Dize1* ve *dize2*alt dizelerinin ilişkisini gösterir.
 |0|*Dize1* substring, *dize2* alt dizesi ile özdeş.|
 |> 0|*Dize1* substring, *dize2* alt dizinden büyük.|
 
-*Dize1* veya *dize2* **null** ya da *Count* değeri **INT_MAX**değerinden büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_Nlscmperror** döndürür ve **errno** öğesini **EINVAL**olarak ayarlayın. **_Nlscmperror**kullanmak için String. h veya mbstring. h dahil edin.
+*Dize1* veya *dize2* **null** veya *sayı* **INT_MAX**değerinden büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_NLSCMPERROR** döndürür ve **errno** , **EINVAL**olarak ayarlanır. **_NLSCMPERROR**kullanmak için String. h veya mbstring. h ekleyin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, en çok, *Dize1* *ve* *dize2* içindeki ilk *sayı* baytlarını harmanlar ve bir değer *döndürür.* *Dize1* veya *dize2* alt dizesi içindeki son bayt bir ön bayt ise, karşılaştırmaya dahil değildir; Bu işlevler yalnızca alt dizelerdeki tüm karakterleri karşılaştırır. **_mbsnbıoll** , **_mbsnbcoll**'ın büyük/küçük harfe duyarlı bir sürümüdür. Bu şekilde, [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) ve [_mbsnbıcmp](mbsnbicmp-mbsnbicmp-l.md), **_mbsnbcoll** ve **_mbsnbıswl** gibi iki çok baytlı karakter dizesini, kullanımda olan çok baytlı [kod sayfası](../../c-runtime-library/code-pages.md) tarafından belirtilen naicographic sırasına göre Harmanla.
+Bu işlevlerin her biri, en çok, *Dize1* *ve* *dize2* içindeki ilk *sayı* baytlarını harmanlar ve bir değer *döndürür.* *Dize1* veya *dize2* alt dizesi içindeki son bayt bir ön bayt ise, karşılaştırmaya dahil değildir; Bu işlevler yalnızca alt dizelerdeki tüm karakterleri karşılaştırır. **_mbsnbicoll** , **_mbsnbcoll**büyük/küçük harfe duyarsız bir sürümdür. [_Mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) ve [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)gibi, **_mbsnbcoll** ve **_mbsnbicoll** iki çok baytlı karakter dizesini, kullanımda olan çok baytlı [kod sayfası](../../c-runtime-library/code-pages.md) tarafından belirtilen naicographic sırasına göre Harmanla.
 
 Bazı kod sayfaları ve karşılık gelen karakter kümeleri için, karakter kümesindeki karakterlerin sırası lexicographic karakter sıraından farklı bir şekilde değişebilir. "C" yerel ayarında bu durum böyle değildir: ASCII karakter kümesindeki karakterlerin sırası karakterlerin lexicographic sırasıyla aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, ' a ' karakteri (0x61) karakter kümesindeki ' ä ' (değer 0xE4) karakterinden önce gelir, ancak ' ä ' karakteri ' a ' lexıgrafik karakterinden önce gelir. Bu örnekte, dizelerin bayt olarak bir lexıgraphic karşılaştırması gerçekleştirmek için **_mbsnbcmp**yerine **_mbsnbcoll** kullanın; yalnızca dize eşitliği denetlemek için **_mbsnbcmp**kullanın.
 
 **Coll** işlevleri karşılaştırmayı için lexıgrafik 'i karşılaştırmak üzere harmanlarken, **CMP** işlevleri yalnızca dize eşitlik için test ederken, **coll** işlevleri karşılık gelen **CMP** sürümlerinden çok daha yavaştır. Bu nedenle, **coll** işlevleri, yalnızca karakter kümesi sırası ve geçerli kod sayfasındaki lexıgraphic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark karşılaştırma açısından ilgi açısından önemlidir.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

@@ -2,7 +2,6 @@
 title: 'Eşitlik İşleçleri: == ve !='
 ms.date: 11/04/2016
 f1_keywords:
-- not_eq
 - '!='
 - ==
 helpviewer_keywords:
@@ -14,12 +13,12 @@ helpviewer_keywords:
 - not_eq operator
 - equal to operator
 ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
-ms.openlocfilehash: d6248d4a31c478b62e5fbe304d9bde9b51b7cb06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e42b66438579bc9be6274863366762b8b4ffbe9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392175"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444404"
 ---
 # <a name="equality-operators--and-"></a>Eşitlik İşleçleri: == ve !=
 
@@ -32,15 +31,15 @@ expression != expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili eşitlik işleçleri işlenenleri katı eşitlik ve eşitsizlik için karşılaştırın.
+İkili eşitlik işleçleri işlenenlerini katı eşitlik veya eşitsizlik için karşılaştırır.
 
-Eşitlik işleçleri eşit (`==`) ve eşit değildir (`!=`), ilişkisel işleçler daha düşük önceliğe sahip, ancak benzer şekilde davranır. Bu işleçler için sonuç türü **bool**.
+Eşitlik işleçleri (`==`) ve eşit değildir (`!=`), ilişkisel işleçlerden daha düşük önceliğe sahiptir, ancak benzer şekilde davranır. Bu işleçler için sonuç türü **bool**olur.
 
-Eşittir işleci (`==`) döndürür **true** (1) Eğer her iki işlenen de aynı değere sahip; Aksi halde **false** (0). Not-eşittir operatörü (`!=`) döndürür **true** işlenenler aynı değeri; yoksa, aksi halde döndürür **false**.
+Eşittir işleci (`==`), her iki işlenen de aynı değere sahip olursa **true** (1) döndürür. Aksi takdirde, **false** (0) değerini döndürür. Eşit olmayan işleç (`!=`), işlenenler aynı değere sahip değilse **true** değerini döndürür; Aksi takdirde, **false**döndürür.
 
-## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü! =
+## <a name="operator-keyword-for-"></a>! = İçin işleç anahtar sözcüğü
 
-`not_eq` işleci, `!=` öğesinin metin eşdeğeridir. Erişmenin iki yöntemi vardır `not_eq` programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.
+`not_eq` işleci, `!=` öğesinin metin eşdeğeridir. Programlarınızda `not_eq` işlecine erişmenin iki yolu vardır: üstbilgi dosyasını `iso646.h`dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
 
 ## <a name="example"></a>Örnek
 
@@ -60,7 +59,7 @@ int main() {
 }
 ```
 
-Eşitlik işleçleri, aynı türde üye işaretçileri karşılaştırabilirsiniz. Böyle bir Karşılaştırmada işaretçi-üye dönüşümleri gerçekleştirilir. Üye işaretçileri için 0 olarak değerlendirilen sabit bir ifade ayrıca karşılaştırılabilir.
+Eşitlik işleçleri aynı türdeki üyelerle işaretçileri karşılaştırabilirler. Böyle bir karşılaştırma için, üye işaretçisi dönüştürmeleri gerçekleştirilir. Üye işaretçileri, 0 olarak değerlendirilen bir sabit ifadeyle da karşılaştırılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

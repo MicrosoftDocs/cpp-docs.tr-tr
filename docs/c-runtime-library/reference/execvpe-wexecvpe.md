@@ -22,7 +22,6 @@ topic_type:
 - apiref
 f1_keywords:
 - wexecvpe
-- execvpe
 - _wexecvpe
 - _execvpe
 helpviewer_keywords:
@@ -31,12 +30,12 @@ helpviewer_keywords:
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-ms.openlocfilehash: eab63cd54d410daf1dd4d09fb3d904feca0a230d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 49b7f4c55dd0c84807d6ed754ae9b45d63f37dcf
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941734"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443015"
 ---
 # <a name="_execvpe-_wexecvpe"></a>_execvpe, _wexecvpe
 
@@ -79,7 +78,7 @@ Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönü
 |-------------------|-----------------|
 |**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
 |**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
-|**EMFILE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
+|**EMFıLE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
 |**ENOENT**|Dosya veya yol bulunamadı.|
 |**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
 |**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin doğru şekilde ayrılmadığını gösteren geçersiz bir blok var.|
@@ -90,7 +89,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 Bu işlevlerin her biri yeni bir işlem yükler ve yürütür ve komut satırı bağımsız değişkenlerine bir işaretçiler dizisi ve ortam ayarlarına işaretçiler dizisi geçirir. Bu işlevler, yürütülecek dosyayı bulmak için **Path** ortam değişkenini kullanır.
 
-**_Execvpe** işlevleri parametrelerini doğrular. *Cmdname* null bir işaretçiyse veya *argv* boş bir işaretçi, boş bir diziye yönelik bir işaretçi veya ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisi ise, bu işlevler, içinde [açıklandığı gibi geçersiz parametre işleyicisini çağırır. Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür. Hiçbir işlem başlatılmadı.
+**_Execvpe** işlevleri parametrelerini doğrular. *Cmdname* null bir işaretçiyse veya *argv* boş bir işaretçi, boş bir diziye yönelik bir işaretçi veya ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisi Ise, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür. Hiçbir işlem başlatılmadı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -103,7 +102,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="example"></a>Örnek
 
-[_Exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)içindeki örneğe bakın.
+[_Exec, _Wexec işlevlerde](../../c-runtime-library/exec-wexec-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

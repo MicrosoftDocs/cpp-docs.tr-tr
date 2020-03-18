@@ -1,29 +1,27 @@
 ---
 title: CHeaderCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CHeaderCtrl
 helpviewer_keywords:
 - header controls [MFC], using
 - CHeaderCtrl class [MFC]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
-ms.openlocfilehash: bf99aad508aee52bc8d345ca084ef96ef40f803b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74e306368d7354bbc9f8281a8bf7fa857b6bf524
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386414"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444006"
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl Kullanma
 
-Sınıfı tarafından temsil edilen bir üstbilgi denetimi [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)sütunlu bir liste için sütun üst bilgilerini görüntülemek için. Örneğin, bir üstbilgi denetimi bir elektronik tabloda sütun denetimler uygulamak için yararlı olacaktır.
+Sütunlu bir liste için sütun üst bilgilerini göstermek için, [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)sınıfının gösterdiği bir üst bilgi denetimi kullanın. Örneğin, bir başlık denetimi bir elektronik tabloda sütun denetimleri uygulamak için yararlı olabilir.
 
-Üstbilgi denetimi genellikle "her ilişkili metin veya sayı sütunu için bir başlık pul üstbilgi öğeleri" adlı parçalara bölünmüştür. Ayarladığınız stilleri bağlı olarak, kullanıcıların üstbilgi öğeleri işlemek doğrudan çeşitli yollarla sağlayabilirsiniz.
+Üst bilgi denetimi genellikle "üst bilgi öğeleri" olarak adlandırılır. Bu, her biri ilişkili metin veya sayı sütunu için bir başlık haline gelmiştir. Ayarladığınız stillere bağlı olarak, kullanıcıların üstbilgi öğelerini işlemek için bir dizi doğrudan yol sağlayabilirsiniz.
 
 > [!NOTE]
->  [CListCtrl](../mfc/reference/clistctrl-class.md) bir katıştırılmış üstbilgi denetimi sağlar ve [CListView](../mfc/reference/clistview-class.md) kapsülleyen `CListCtrl` MFC sınıfı içinde. Kullanarak genel olarak, düşünme `CHeaderCtrl` kendiniz çizmek için istediğinize etiket listeleri.
+>  [CListCtrl](../mfc/reference/clistctrl-class.md) , gömülü bir üst bilgi denetimi sağlar ve [CLISTVIEW](../mfc/reference/clistview-class.md) bir mfc sınıfında `CListCtrl` kapsüller. Genel olarak, kendinizi çizmeyi planladığınız listeleri etiketlemek için `CHeaderCtrl` kullanmayı düşünün.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Üstbilgi Denetimi ve Liste Denetimi](../mfc/header-control-and-list-control.md)
 

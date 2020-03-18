@@ -5,25 +5,23 @@ f1_keywords:
 - ISessionPropertiesImpl
 - ISessionPropertiesImpl::GetProperties
 - ISessionPropertiesImpl.GetProperties
-- GetProperties
 - ISessionPropertiesImpl.SetProperties
-- SetProperties
 - ISessionPropertiesImpl::SetProperties
 helpviewer_keywords:
 - ISessionPropertiesImpl class
 - GetProperties method
 - SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-ms.openlocfilehash: ed8b7a271bc6ac234fc9276d6c88d26848da24f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50052e13371482fa0a8b6d66ef666b9801837501
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390691"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444032"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ISessionProperties](/previous-versions/windows/desktop/ms713721(v=vs.85)) arabirimi.
+[ISessionProperties](/previous-versions/windows/desktop/ms713721(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,15 +34,15 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `ISessionPropertiesImpl`.
+*Şı*<br/>
+Sınıfınız `ISessionPropertiesImpl`türetilir.
 
 *PropClass*<br/>
-Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.
+Varsayılan olarak *T*olarak kullanılacak kullanıcı tanımlı bir özellik sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -52,16 +50,16 @@ Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıf�
 
 |||
 |-|-|
-|[GetProperties](#getproperties)|Şu anda oturumda ayarlanan oturumu özellik grubundaki özelliklerinin listesini döndürür.|
+|[GetProperties](#getproperties)|Oturumda ayarlanmış olan Session Özellik grubundaki özelliklerin listesini döndürür.|
 |[SetProperties](#setproperties)|Oturum özellik grubundaki özellikleri ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Oturumlarının üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik bir işlev çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesi oturumu Sınıfınız içinde belirtilmelidir.
+Oturumlardaki zorunlu arabirim. Bu sınıf, [özellik kümesi eşlemesi](../../data/oledb/begin-propset-map.md)tarafından tanımlanan statik bir işlevi çağırarak oturum özelliklerini uygular. Özellik kümesi eşlemesi, oturum sınıfınıza belirtilmelidir.
 
-## <a name="getproperties"></a> Isessionpropertiesımpl::GetProperties
+## <a name="getproperties"></a>ISessionPropertiesImpl:: GetProperties
 
-Özellikler listesini döndürür `DBPROPSET_SESSION` oturumda ayarlanan özellik grubu.
+Oturumda ayarlanmış olan `DBPROPSET_SESSION` özellik grubundaki özelliklerin listesini döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -74,11 +72,11 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ISessionProperties:: GetProperties](/previous-versions/windows/desktop/ms723643(v=vs.85)) bölümüne bakın.
 
-## <a name="setproperties"></a> Isessionpropertiesımpl::SetProperties
+## <a name="setproperties"></a>ISessionPropertiesImpl:: SetProperties
 
-Ayarlar özellikleri `DBPROPSET_SESSION` özellik grubu.
+`DBPROPSET_SESSION` özellik grubundaki özellikleri ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -89,7 +87,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ISessionProperties:: SetProperties](/previous-versions/windows/desktop/ms714405(v=vs.85)) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,23 +1,23 @@
 ---
-title: Platform::ıboxarray arabirimi
+title: 'Platform:: ıboxarray arabirimi'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
-- VCCORLIB/Namespace not found::Platform
-- VCCORLIB/Namespace not found::Platform::Value
+- VCCORLIB/Platform::IBoxArray
+- VCCORLIB/Platform::IBoxArray::Value
 helpviewer_keywords:
 - Platform::IBoxArray
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-ms.openlocfilehash: ea2517ad64cfd6742ef072d24e94a9b3899cea2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 493770cab092c2bb719d47e5d3a9d6a9f0646489
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392082"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444164"
 ---
-# <a name="platformiboxarray-interface"></a>Platform::ıboxarray arabirimi
+# <a name="platformiboxarray-interface"></a>Platform:: ıboxarray arabirimi
 
-`IBoxArray` Uygulama ikili arabiriminde (ABI) geçirilen veya koleksiyonları içinde depolanan değer türü diziler için bir sarmalayıcı olan `Platform::Object^` XAML denetimleri de gibi öğeleri.
+`IBoxArray`, uygulama ikili arabirimine (ABı) geçirilen veya XAML denetimlerinde bulunan `Platform::Object^` öğelerinin koleksiyonlarında depolanan değer türlerinin dizileri için sarmalayıcıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,24 +28,24 @@ interface class IBoxArray
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Her dizi öğesi kutulanmış değer türü.
+*Şı*<br/>
+Her dizi öğesindeki kutulanmış değerin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IBoxArray` olan C++/CX adı `Windows::Foundation::IReferenceArray`.
+`IBoxArray`, `Windows::Foundation::IReferenceArray`C++için/CX adıdır.
 
 ### <a name="members"></a>Üyeler
 
-`IBoxArray` Arabirimi devralır `IValueType` arabirimi. `IBoxArray` Ayrıca bu üyeleri içerir:
+`IBoxArray` arabirimi `IValueType` arabiriminden devralır. `IBoxArray` Ayrıca şu üyelere sahiptir:
 
 |Yöntem|Açıklama|
 |------------|-----------------|
-|[Değer](#value)|Bu konuda daha önce depolanan sarmalanmamış bir dizi döndürür `IBoxArray` örneği.|
+|[Değer](#value)|Daha önce bu `IBoxArray` örneğinde depolanan kutulanmamış diziyi döndürür.|
 
-## <a name="value"></a> IBoxArray::Value özelliği
+## <a name="value"></a>Iboxarray:: Value özelliği
 
-Bu nesnesinde depolanan değeri döndürür.
+Bu nesnede ilk olarak depolanan değeri döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -55,16 +55,16 @@ property T Value {T get();}
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Paketlenmiş değer türü.
+*Şı*<br/>
+Paketlenmiş değerin türü.
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-Bu nesnesinde depolanan değeri döndürür.
+Bu nesnede ilk olarak depolanan değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).
+Bir örnek için bkz. [paketleme](../cppcx/boxing-c-cx.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

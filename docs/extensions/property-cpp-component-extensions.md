@@ -2,18 +2,15 @@
 title: Özellik (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
-f1_keywords:
-- property_cpp
-- property
 helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-ms.openlocfilehash: 4a05f9cf8cbec9644254d14873a3259f12b33aed
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 46501717755933b2bdc11ee4ee6249bfea9f18cd
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509715"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445164"
 ---
 # <a name="property--ccli-and-ccx"></a>Özellik (C++/CLI ve C++/CX)
 
@@ -90,7 +87,7 @@ Daha fazla bilgi için bkz. [ÖzelliklerC++(/CX)](../cppcx/properties-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -127,11 +124,11 @@ Köşeli ayraçlar içinde belirtilen bir veya daha fazla dizinin virgülle ayr�
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sözdizimi örneği, hem hemde `set` `get` yöntemini dolaylı olarak bildiren basit bir özelliği gösterir. Derleyici, özelliğin değerini depolamak için otomatik olarak bir özel alan oluşturur.
+İlk sözdizimi örneği, hem `set` hem de `get` yöntemini dolaylı olarak bildiren *basit bir özelliği*gösterir. Derleyici, özelliğin değerini depolamak için otomatik olarak bir özel alan oluşturur.
 
-İkinci sözdizimi örneği, hem hem de `set` `get` yöntemini açıkça bildiren bir *özellik bloğunu*gösterir.
+İkinci sözdizimi örneği, hem `set` hem de `get` yöntemini açıkça bildiren bir *özellik bloğunu*gösterir.
 
-Üçüncü sözdizimi örneği, müşteri tarafından tanımlanan bir *Dizin özelliğini*gösterir. Dizin özelliği, ayarlanacak veya alınacak değere ek olarak parametreleri alır. Özellik için bir ad belirtmeniz gerekir. Basit bir özelliğin aksine, `set` bir Index özelliğinin ve/veya `get` yöntemlerinin açıkça tanımlanması ve özellik için bir ad belirtmeniz gerekir.
+Üçüncü sözdizimi örneği, müşteri tarafından tanımlanan bir *Dizin özelliğini*gösterir. Dizin özelliği, ayarlanacak veya alınacak değere ek olarak parametreleri alır. Özellik için bir ad belirtmeniz gerekir. Basit bir özelliğin aksine, bir dizin özelliğinin `set` ve/veya `get` yöntemleri açıkça tanımlanmalıdır ve özellik için bir ad belirtmeniz gerekir.
 
 Dördüncü sözdizimi örneği, tür örneğine dizi benzeri erişim sağlayan *varsayılan* bir özelliği gösterir. **Varsayılan**anahtar sözcüğü, yalnızca varsayılan bir özellik belirtmek için hizmet verir. Varsayılan özelliğin adı, özelliğin tanımlandığı türün adıdır.
 
@@ -153,7 +150,7 @@ Get ve set yöntemleri aşağıdaki açıklamaya sığması halinde bir özellik
 
 - Get yönteminin parametresi yok ve dönüş türü `T`.
 
-- Set yöntemi türünde `T`bir parametreye ve **void**dönüş türüne sahiptir.
+- Set yöntemi `T`türünde bir parametreye sahiptir ve dönüş türü **void**.
 
 Aynı tanımlayıcıya sahip bir kapsamda belirtilen yalnızca bir skaler özellik olacaktır. Skaler Özellikler aşırı yüklenemez.
 
@@ -165,7 +162,7 @@ Bir özellik veri üyesi bildirildiğinde, derleyici bir veri üyesini çıkart�
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

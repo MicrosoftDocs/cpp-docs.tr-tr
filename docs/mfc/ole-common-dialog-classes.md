@@ -1,55 +1,53 @@
 ---
 title: OLE Ortak İletişim Kutusu Sınıfları
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.ole
 helpviewer_keywords:
 - ActiveX classes [MFC]
 - dialog classes [MFC], OLE
 - OLE common dialog classes [MFC]
 - common dialog classes [MFC]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
-ms.openlocfilehash: d34c141fc9a2b53eab6a4c0b0ce1799ff5243d84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b44a7b203c17f09f872cfedbb05798affb57f0f9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186398"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447667"
 ---
 # <a name="ole-common-dialog-classes"></a>OLE Ortak İletişim Kutusu Sınıfları
 
-Bu sınıflar, bir dizi standart OLE iletişim kutuları uygulayarak ortak OLE görevleri işler. OLE işlevselliği için tutarlı bir kullanıcı arabirimi de sağlanır.
+Bu sınıflar, bir dizi standart OLE iletişim kutusu uygulayarak ortak OLE görevlerini işler. Ayrıca OLE işlevselliği için tutarlı bir kullanıcı arabirimi sağlar.
 
-[COleDialog](../mfc/reference/coledialog-class.md)<br/>
-Tüm OLE iletişim kutuları için yaygın olarak görülen uygulamalar içeren için framework tarafından kullanılır. Kullanıcı arabirimi kategorideki tüm iletişim kutusu sınıfları bu temel sınıfından türetilir. `COleDialog` doğrudan kullanılamaz.
+[Colet Iletişim kutusu](../mfc/reference/coledialog-class.md)<br/>
+Framework tarafından tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde kullanılır. Kullanıcı arabirimi kategorisindeki tüm iletişim kutusu sınıfları bu temel sınıftan türetilir. `COleDialog` doğrudan kullanılamaz.
 
-[Coleınsertdialog](../mfc/reference/coleinsertdialog-class.md)<br/>
-Yeni OLE ekleme ya da bağlı öğeleri gömülü nesne Ekle iletişim kutusu, standart kullanıcı arabirimi görüntüler.
+[COleInsertDialog](../mfc/reference/coleinsertdialog-class.md)<br/>
+Yeni OLE bağlantılı veya katıştırılmış öğeleri eklemek için standart Kullanıcı arabirimi olan nesne Ekle iletişim kutusunu görüntüler.
 
 [COlePasteSpecialDialog](../mfc/reference/colepastespecialdialog-class.md)<br/>
-Paste Special iletişim kutusu, Düzen Özel Yapıştır komut uygulamak için standart kullanıcı arabirimi görüntüler.
+Özel Yapıştır iletişim kutusunu, düzenleme Özel Yapıştır komutunu uygulamak için standart Kullanıcı arabirimini görüntüler.
 
-[COleLinksDialog](../mfc/reference/colelinksdialog-class.md)<br/>
-Bağlantılı öğeler hakkındaki bilgileri değiştirmek için standart kullanıcı arabirimi Edit Links iletişim kutusu görüntüler.
+[Cotalinksdialog](../mfc/reference/colelinksdialog-class.md)<br/>
+Bağlantılı öğelerle ilgili bilgileri değiştirmek için standart Kullanıcı arabirimi olan bağlantıları Düzenle iletişim kutusunu görüntüler.
 
 [COleChangeIconDialog](../mfc/reference/colechangeicondialog-class.md)<br/>
-Change Icon iletişim kutusu, katıştırılmış bir OLE ile ilişkili simgeyi değiştirme veya bağlantılı öğe için standart kullanıcı arabirimi görüntüler.
+OLE Embedded veya bağlantılı öğeyle ilişkili simgeyi değiştirmek için standart Kullanıcı arabirimi olan simge Değiştir iletişim kutusunu görüntüler.
 
-[COleConvertDialog](../mfc/reference/coleconvertdialog-class.md)<br/>
-Dönüştür iletişim kutusu, standart kullanıcı arabirimi OLE öğelerine bir türden diğerine dönüştürme için görüntüler.
+[Cotaconvertdialog](../mfc/reference/coleconvertdialog-class.md)<br/>
+OLE öğelerini bir türden diğerine dönüştürmek için standart Kullanıcı arabirimi olan Dönüştür iletişim kutusunu görüntüler.
 
-[COlePropertiesDialog](../mfc/reference/colepropertiesdialog-class.md)<br/>
-Windows ortak OLE Özellikleri iletişim kutusunu kapsüller. Ortak OLE Özellikleri iletişim kutusu görüntülemek ve bir OLE belge öğesi Windows standartları ile tutarlı şekilde özelliklerini değiştirmek için kolay bir yol sağlar.
+[Cotapropertiesiletişim kutusu](../mfc/reference/colepropertiesdialog-class.md)<br/>
+Windows ortak OLE özellikleri iletişim kutusunu kapsüller. Ortak OLE özellikleri iletişim kutuları, bir OLE belge öğesinin özelliklerini Windows standartlarıyla tutarlı bir şekilde görüntülemenin ve değiştiremenin kolay bir yolunu sunar.
 
-[COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md)<br/>
-Güncelleştirme iletişim kutusunda, bir belgedeki tüm bağlantıların güncelleştirilmesi için standart kullanıcı arabirimi görüntüler. İletişim kutusu, güncelleştirme yordamı tamamlanana kadar ne kadar yakın olduğunu belirten bir İlerleme göstergesi içerir.
+[Cotaupdatedialog](../mfc/reference/coleupdatedialog-class.md)<br/>
+Belgedeki tüm bağlantıları güncelleştirmek için standart Kullanıcı arabirimi olan Güncelleştir iletişim kutusunu görüntüler. İletişim kutusu, güncelleştirme yordamının tamamlanmasını nasıl kapatabelirten bir ilerleme göstergesi içerir.
 
-[COleChangeSourceDialog](../mfc/reference/colechangesourcedialog-class.md)<br/>
-Kaynağı Değiştir iletişim kutusu, bir bağlantının kaynak ve hedef değiştirmek için standart kullanıcı arabirimi görüntüler.
+[Colet Changesourcedialog](../mfc/reference/colechangesourcedialog-class.md)<br/>
+Bir bağlantının hedefini veya kaynağını değiştirmek için standart Kullanıcı arabirimi olan kaynak Değiştir iletişim kutusunu görüntüler.
 
-[COleBusyDialog](../mfc/reference/colebusydialog-class.md)<br/>
-Sunucu meşgul ve sunucu yanıt iletişim kutularında, meşgul uygulamaların çağrıları işlemek için standart kullanıcı arabirimi görüntüler. Genellikle tarafından otomatik olarak görüntülenen `COleMessageFilter` uygulaması.
+[Cotabusi Iletişim kutusu](../mfc/reference/colebusydialog-class.md)<br/>
+Meşgul uygulamalara yapılan çağrıları işlemeye yönelik standart Kullanıcı arabirimi olan sunucu meşgul ve sunucu yanıt vermiyor iletişim kutularını görüntüler. Genellikle `COleMessageFilter` uygulama tarafından otomatik olarak gösterilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

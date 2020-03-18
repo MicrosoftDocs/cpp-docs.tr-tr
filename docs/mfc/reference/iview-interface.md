@@ -12,12 +12,12 @@ helpviewer_keywords:
 - IView class [MFC]
 - views [MFC], classes
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-ms.openlocfilehash: 22e08a70ff4cc742406a1489899c0ba1df7eb664
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: e8afa7a5f5a7692f88ace4da08209b80f902b603
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420822"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445671"
 ---
 # <a name="iview-interface"></a>IView arabirimi
 
@@ -33,7 +33,7 @@ interface class IView
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[IView:: OnActivateView](#onactivateview)|Bir görünüm etkinleştirildiğinde veya devre dışı bırakıldığında MFC tarafından çağırılır.|
 |[IView:: OnInitialUpdate](#oninitialupdate)|Görünüm belgeye ilk iliştirildikten sonra, ancak görünüm ilk görüntülenmeden önce Framework tarafından çağırılır.|
@@ -54,6 +54,7 @@ Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows fo
 ## <a name="onactivateview"></a>IView:: OnActivateView
 
 Bir görünüm etkinleştirildiğinde veya devre dışı bırakıldığında MFC tarafından çağırılır.
+
 ```
 void OnActivateView(bool activate);
 ```
@@ -66,6 +67,7 @@ Görünümün etkinleştirildiğini veya devre dışı bırakıldığını göst
 ## <a name="oninitialupdate"></a>IView:: OnInitialUpdate
 
 Görünüm belgeye ilk iliştirildikten sonra, ancak görünüm ilk görüntülenmeden önce Framework tarafından çağırılır.
+
 ```
 void OnInitialUpdate();
 ```
@@ -73,6 +75,7 @@ void OnInitialUpdate();
 ## <a name="onupdate"></a>IView:: OnUpdate
 
 Görünümün belgesi değiştirildikten sonra MFC tarafından çağırılır.
+
 ```
 void OnUpdate();
 ```

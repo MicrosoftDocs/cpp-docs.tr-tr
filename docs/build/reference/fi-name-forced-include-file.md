@@ -5,23 +5,22 @@ f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 - VC.Project.VCCLCompilerTool.ForcedIncludeFiles
 - VC.Project.VCCLWCECompilerTool.ForcedIncludeFiles
-- /fi
 helpviewer_keywords:
 - FI compiler option [C++]
 - -FI compiler option [C++]
 - /FI compiler option [C++]
 - preprocess header file compiler option [C++]
 ms.assetid: 07e79577-8152-4df9-a64c-aae08c603397
-ms.openlocfilehash: e047ecc5266a898f2c6dc24be3c204f8ddf94386
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6460f75e2cad81bc1dcc540e3c687de5d0dc0d32
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293062"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439794"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI (Zorla Dahil Edilen Dosyayı Adlandır)
 
-Önişlemci belirtilen üstbilgi dosyasını işlemek neden olur.
+Önişlemci 'nin belirtilen üst bilgi dosyasını işlemesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,17 +30,17 @@ ms.locfileid: "62293062"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek dosyayı çift tırnak işaretleri ile belirtmekle aynı etkiye sahip bir `#include` komut satırında, CL ortam değişkeninde veya komut dosyası içinde belirtilen her kaynak dosyasının ilk satırındaki yönergesi. Birden çok kullanırsanız **/FI** seçenekleri, dosyaları, CL ile bunların işlenme sırasını bulunmaktadır.
+Bu seçenek, komut satırında, CL ortam değişkeninde veya bir komut dosyasında belirtilen her kaynak dosyanın ilk satırında bir `#include` yönergesinde çift tırnak işaretleriyle birlikte dosyayı belirtirken de aynı etkiye sahiptir. Birden çok **/FI** seçeneği kullanırsanız, dosyalar CL tarafından işlendikleri sıraya dahil edilir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++**  klasörüne tıklayın.
 
-1. Tıklayın **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** Özellik sayfasına tıklayın.
 
-1. Değiştirme **zorla dahil etme dosyası** özelliği.
+1. **Zorunlu Içerme dosyası** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

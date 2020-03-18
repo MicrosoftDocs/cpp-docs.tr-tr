@@ -8,7 +8,6 @@ f1_keywords:
 - memory/std::const_pointer_cast
 - memory/std::declare_no_pointers
 - memory/std::declare_reachable
-- memory/std::default_delete
 - memory/std::dynamic_pointer_cast
 - memory/std::get_deleter
 - memory/std::get_pointer_safety
@@ -28,8 +27,6 @@ f1_keywords:
 - memory/std::uninitialized_copy_n
 - memory/std::uninitialized_fill
 - memory/std::uninitialized_fill_n
-- memory/std::get_temporary_buffer
-- memory/std::return_temporary_buffer
 ms.assetid: 3e1898c2-44b7-4626-87ce-84962e4c6f1a
 helpviewer_keywords:
 - std::addressof [C++]
@@ -77,12 +74,12 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.openlocfilehash: 2aceb96fcda49df8a1fd40a1bd8011170dccd8ef
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: fa8f0dd7e5588891aeef4fbe04a907fbbfc52b52
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419940"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79447389"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;belleği&gt; işlevleri
 

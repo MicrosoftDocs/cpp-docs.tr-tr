@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: cc6c5315757b4a1602eba53ebafb573dd88caed2
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 2ceb22afa5e6d071c1cb8dae79327eaaf08e3ee1
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141804"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79445113"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için içinde C++ zaman uyumsuz işlemler oluşturma
 
@@ -90,7 +90,7 @@ Aşağıdaki örnek, başka bir Windows Çalışma Zamanı bileşeni tarafından
 
 [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]
 
-## <a name="example-component"></a>Örnek: bir C++ Windows çalışma zamanı bileşeni oluşturma veC#
+## <a name="example-component"></a>Örnek: C++ Windows çalışma zamanı bileşen oluşturma ve bunu C 'den kullanma\#
 
 İşlem yoğunluklu işlemleri gerçekleştirmek için XAML kullanan C# ve Kullanıcı arabirimini ve bir C++ Windows çalışma zamanı bileşeni tanımlamak için bir uygulama düşünün. Bu örnekte, C++ bileşen belirli bir aralıktaki hangi sayıların asal olduğunu hesaplar. Dört Windows Çalışma Zamanı zaman uyumsuz görev arabirimleri arasındaki farkları göstermek için, Visual Studio 'da, **boş bir çözüm** oluşturup `Primes`adlandırarak başlatın. Daha sonra çözüme bir **Windows çalışma zamanı bileşen** projesi ekleyin ve `PrimesLibrary`olarak adlandırın. Oluşturulan C++ üst bilgi dosyasına aşağıdaki kodu ekleyin (Bu örnek, Class1. h 'Yi Primes. h olarak yeniden adlandırır). Her `public` yöntemi, dört zaman uyumsuz arabirimden birini tanımlar. Bir değer döndüren yöntemler bir [Windows:: Foundation:: Collections:: IVector\<int >](/uwp/api/Windows.Foundation.Collections.IVector_T_) nesnesi döndürür. İlerlemeyi rapor eden yöntemler, tamamlanan genel çalışmanın yüzdesini tanımlayan `double` değerler üretir.
 

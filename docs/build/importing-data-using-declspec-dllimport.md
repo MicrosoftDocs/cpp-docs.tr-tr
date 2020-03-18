@@ -1,24 +1,22 @@
 ---
 title: __declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
 ms.date: 11/04/2016
-f1_keywords:
-- dllimport
 helpviewer_keywords:
 - importing data [C++]
 - dllimport attribute [C++], data imports
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
-ms.openlocfilehash: 74ad93e640a4e961f7670077227bb5c35a42c20f
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: c9dce798572a91bcb9721f022393abb669970131
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342102"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440451"
 ---
-# <a name="importing-data-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
+# <a name="importing-data-using-__declspecdllimport"></a>__declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
 
-Kullanarak verileri, söz konusu olduğunda **__declspec(dllimport)** katmanındaki yöneltme kaldıran bir kolaylık öğesidir. DLL'den verileri içeri aktardığınızda, içeri aktarma adres tablosu Git çözümlenmedi. Önce **__declspec(dllimport)**, bu verilere erişme DLL'den dışarı aktardığınızda, ek bir yöneltme düzeyi yapmayı unutmamanız gerekiyordu geliyordu:
+Veriler söz konusu olduğunda **__declspec (dllimport)** kullanarak bir yöneltme katmanını kaldıran kolay bir öğedir. Bir DLL 'den veri aktardığınızda içeri aktarma adresi tablosunu kullanmaya devam etmeniz gerekir. **__Declspec (dllimport)** öncesinde, bu, dll 'den içe aktarılmış verilere erişirken ek bir yöneltme düzeyi yapmanız gerektiğini unutmayın:
 
 ```
 // project.h
@@ -30,7 +28,7 @@ Kullanarak verileri, söz konusu olduğunda **__declspec(dllimport)** katmanınd
 #endif
 ```
 
-Ardından verileri aktarın. DEF dosyası:
+Daha sonra verileri ' de dışarı aktarabilirsiniz. DEF dosyası:
 
 ```
 // project.def
@@ -39,7 +37,7 @@ EXPORTS
    ulDataInDll   CONSTANT
 ```
 
-ve DLL dışında erişebilirsiniz:
+ve ona DLL dışından erişin:
 
 ```
 if (*ulDataInDll == 0L)
@@ -48,9 +46,9 @@ if (*ulDataInDll == 0L)
 }
 ```
 
-Verileri olarak işaretlediğinizde **__declspec(dllimport)**, derleyici otomatik olarak yöneltme kod sizin için oluşturur. Artık, yukarıdaki adımları hakkında endişelenmeniz gerekmez. Daha önce belirtildiği gibi kullanmayın **__declspec(dllimport)** DLL'yi oluştururken veri bildiriminde. DLL içindeki işlevleri içeri aktarma adres tablosunda veri nesnesine erişmek için kullanmayın; Bu nedenle, ek düzeyi yöneltme mevcut olmaz.
+Verileri **__declspec (dllimport)** olarak işaretlediğinizde, derleyici yöneltme kodunu sizin için otomatik olarak oluşturur. Yukarıdaki adımlar hakkında endişelenmenize artık gerek kalmaz. Daha önce belirtildiği gibi, DLL 'yi derlerken veride **__declspec (dllimport)** bildirimini kullanmayın. DLL içindeki işlevler, veri nesnesine erişmek için içeri aktarma adresi tablosunu kullanmaz; Bu nedenle, ek bir yöneltme düzeyi mevcut olmayacaktır.
 
-Verileri otomatik olarak DLL'den dışarı aktarmak için bu bildirimi kullanın:
+Verileri DLL 'den otomatik olarak dışarı aktarmak için şu bildirimi kullanın:
 
 ```
 __declspec(dllexport) ULONG ulDataInDLL;

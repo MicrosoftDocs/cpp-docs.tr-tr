@@ -1,27 +1,25 @@
 ---
 title: Rutin Eşlemeler
 ms.date: 11/04/2016
-f1_keywords:
-- c.mappings
 helpviewer_keywords:
 - _tWinMain
 - TCHAR.H data types, list of routine mappings
 - generic-text mappings
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-ms.openlocfilehash: 60a05b8102df1ecb9bb6f66eda15ff10cb12b32a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 245a44a6722bdf704a5ce750dd285eb3eac66609
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383379"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444863"
 ---
 # <a name="routine-mappings"></a>Rutin Eşlemeler
 
-Genel metin yordam eşleşmeleri TCHAR içinde tanımlanır. H `_tccpy` ve `_tclen` eşleme işlevlerine MBCS modelinde; makrolar veya bütünlük SBCS ve Unicode modellerindeki satır içi işlevleri eşlenir. Genel metin yordam hakkında daha fazla bilgi için karşılık gelen hakkında Yardım konusuna bakın `SBCS`-, `_MBCS`-, veya `_UNICODE`-ilgili yordamı.
+Genel metin yordam eşlemeleri TCHAR 'da tanımlanmıştır. Olsun. `_tccpy` ve `_tclen` MBCS modelindeki işlevlere eşleyin; Bunlar, daha fazla olması için SBCS ve Unicode modellerindeki makrolara veya satır içi işlevlere eşlenir. Genel bir metin yordamı hakkında daha fazla bilgi için, karşılık gelen `SBCS`, `_MBCS`-veya `_UNICODE`ilgili yordam hakkında yardım konusuna bakın.
 
-Aşağıdaki tabloda sol sütunda listelenen tek yordamları hakkında daha ayrıntılı bilgi bu belgede kullanılabilir değil. Ancak, kolayca karşılık gelen bilgi arayabilirsiniz `SBCS`-, `_MBCS`-, veya `_UNICODE`-ilgili yordamı. Kullanım **arama** komutunu **yardımcı** aşağıda listelenen herhangi bir genel metin yordam aramak için menü.
+Aşağıdaki tabloda yer aldığı sol sütunda listelenen ayrı yordamlar hakkında daha ayrıntılı bilgiler bu belgelerde bulunmamaktadır. Bununla birlikte, ilgili `SBCS`, `_MBCS`veya `_UNICODE`ilgili bir yordamın üzerinde kolayca bilgi arayabilirsiniz. Aşağıda listelenen herhangi bir genel metin yordamını aramak için **Yardım** menüsündeki **Ara** komutunu kullanın.
 
-İlgili bilgiler için bkz. [TCHAR üzerinde genel metin eşlemeleri. H](../text/generic-text-mappings-in-tchar-h.md).
+İlgili bilgiler için, bkz [. TCHAR 'Da genel metin eşlemeleri. H](../text/generic-text-mappings-in-tchar-h.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -52,9 +50,9 @@ Aşağıdaki tabloda sol sütunda listelenen tek yordamları hakkında daha ayr�
 |`_istcntrl`|`iscntrl`|`iscntrl`|`iswcntrl`|
 |`_istdigit`|`isdigit`|`_ismbcdigit`|`iswdigit`|
 |`_istgraph`|`isgraph`|`_ismbcgraph`|`iswgraph`|
-|`_istlead`|Daima yanlış getirir|`_ismbblead`|Daima yanlış getirir|
-|`_istleadbyte`|Daima yanlış getirir|`isleadbyte`|Daima yanlış getirir|
-|`_istlegal`|Her zaman true değerini döndürür|`_ismbclegal`|Her zaman true değerini döndürür|
+|`_istlead`|Her zaman yanlış döndürür|`_ismbblead`|Her zaman yanlış döndürür|
+|`_istleadbyte`|Her zaman yanlış döndürür|`isleadbyte`|Her zaman yanlış döndürür|
+|`_istlegal`|Her zaman true döndürür|`_ismbclegal`|Her zaman true döndürür|
 |`_istlower`|`islower`|`_ismbclower`|`iswlower`|
 |`_istprint`|`isprint`|`_ismbcprint`|`iswprint`|
 |`_istpunct`|`ispunct`|`_ismbcpunct`|`iswpunct`|
@@ -82,11 +80,11 @@ Aşağıdaki tabloda sol sütunda listelenen tek yordamları hakkında daha ayr�
 |`_taccess_s`|`_access_s`|`_access_s`|`_waccess_s`|
 |`_tasctime`|`asctime`|`asctime`|`_wasctime`|
 |`_tasctime_s`|`asctime_s`|`asctime_s`|`_wasctime_s`|
-|`_tccmp`|Makro veya satır içi işleve eşlenir|`_mbsncmp`|Makro veya satır içi işleve eşlenir|
-|`_tccpy`|Makro veya satır içi işleve eşlenir|`_mbccpy`|Makro veya satır içi işleve eşlenir|
+|`_tccmp`|Makroya veya satır içi işleve eşlenir|`_mbsncmp`|Makroya veya satır içi işleve eşlenir|
+|`_tccpy`|Makroya veya satır içi işleve eşlenir|`_mbccpy`|Makroya veya satır içi işleve eşlenir|
 |`_tccpy_s`|`strcpy_s`|`_mbccpy_s`|`wcscpy_s`|
 |`_tchdir`|`_chdir`|`_chdir`|`_wchdir`|
-|`_tclen`|Makro veya satır içi işleve eşlenir|`_mbclen`|Makro veya satır içi işleve eşlenir|
+|`_tclen`|Makroya veya satır içi işleve eşlenir|`_mbclen`|Makroya veya satır içi işleve eşlenir|
 |`_tchmod`|`_chmod`|`_chmod`|`_wchmod`|
 |`_tcprintf`|`_cprintf`|`_cprintf`|`_cwprintf`|
 |`_tcprintf_s`|`_cprintf_s`|`_cprintf_s`|`_cwprintf_s`|

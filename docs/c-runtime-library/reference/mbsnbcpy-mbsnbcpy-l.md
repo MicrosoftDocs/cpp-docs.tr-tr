@@ -22,7 +22,6 @@ topic_type:
 - apiref
 f1_keywords:
 - mbsnbcpy
-- _ftcsncpy
 - _mbsnbcpy
 - mbsnbcpy_l
 - _mbsnbcpy_l
@@ -36,16 +35,16 @@ helpviewer_keywords:
 - mbsnbcpy_l function
 - tcsncpy function
 ms.assetid: 83d17b50-3cbf-4df9-bce8-3b6d52f85d04
-ms.openlocfilehash: 9b8a5884b646baf582e6bb9868136ffe7c2a24cf
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9a52f8abb220c840f1b7f71d029efacd4c5206fb
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952260"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442862"
 ---
 # <a name="_mbsnbcpy-_mbsnbcpy_l"></a>_mbsnbcpy, _mbsnbcpy_l
 
-Bir dizenin **n** baytını bir hedef dizeye kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur — bkz. [_mbsnbcpy_s, _mbsnbcpon_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md).
+Bir dizenin **n** baytını bir hedef dizeye kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur — [_mbsnbcpy_s, _mbsnbcpy_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md)bakın.
 
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -87,7 +86,7 @@ Kopyalanacak karakter dizesinin hedefi.
 *strSource*<br/>
 Kopyalanacak karakter dizesi.
 
-*biriktirme*<br/>
+*count*<br/>
 Kopyalanacak bayt sayısı.
 
 *ayarlar*<br/>
@@ -99,7 +98,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcpy** işlevi, *sayı* baytlarını *strSource* 'tan *strDest*öğesine kopyalar. *Sayım* , *strDest* boyutunu aşıyorsa veya kaynak ve hedef dizeleri örtüştürürse, **_mbsnbcpy** 'nin davranışı tanımsızdır.
+**_Mbsnbcpy** Işlevi, *strSource* 'dan *strDest*öğesine *sayı* baytlarını kopyalar. *Sayım* , *strDest* boyutunu aşıyorsa veya kaynak ve hedef dizeleri örtüştürürse, **_mbsnbcpy** davranışı tanımsızdır.
 
 *StrSource* veya *strDest* null bir işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
@@ -115,7 +114,7 @@ Kullanılacak yerel ayar.
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsncpy**|[strncpy](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)|**_mbsnbcpy**|[wcsncpy](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)|
-|**_tcsncpyı_l**|**_strncpyı_l**|**_mbsnbcp_l**|**_wcsncpy_l**|
+|**_tcsncpy_l**|**_strncpy_l**|**_mbsnbcp_l**|**_wcsncpy_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 

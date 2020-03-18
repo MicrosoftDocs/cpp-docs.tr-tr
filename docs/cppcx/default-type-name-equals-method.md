@@ -1,19 +1,17 @@
 ---
-title: 'Varsayılan:: (type_name):: eşittir yöntemi'
+title: 'Varsayılan::(type_name):: Equals yöntemi'
 ms.date: 12/30/2016
-f1_keywords:
-- VCCORLIB/Platform::Object::Equals
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873
-ms.openlocfilehash: ef34e50e6561481eafd7de635bdbcc1b6cd4c8b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57143da18e98ed2d034343726ac96a92b4d1b23c
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389391"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444318"
 ---
-# <a name="defaulttypenameequals-method"></a>Varsayılan:: (type_name):: eşittir yöntemi
+# <a name="defaulttype_nameequals-method"></a>Varsayılan::(type_name):: Equals yöntemi
 
-Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.
+Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,22 +23,22 @@ bool Equals(
 
 ### <a name="parameters"></a>Parametreler
 
-*obj*<br/>
+*nesnesi*<br/>
 Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** aksi nesneler eşitse, **false**.
+nesneler eşitse **true** , aksi takdirde **false**.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** varsayılan
+**Ad alanı:** varsayılan
 
-**Başlık:** vccorlib.h
+**Üstbilgi:** vccorlib. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

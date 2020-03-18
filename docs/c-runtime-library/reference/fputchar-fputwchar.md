@@ -25,7 +25,6 @@ f1_keywords:
 - _fputwchar
 - fputwchar
 - _fputtchar
-- fputchar
 - _fputchar
 helpviewer_keywords:
 - fputchar function
@@ -36,12 +35,12 @@ helpviewer_keywords:
 - fputtchar function
 - _fputchar function
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
-ms.openlocfilehash: 39642be871c1c5b5c2deaf35b7c26d19c188b440
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b78c59b937a8854d7a36355173a1ccf4f219d541
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956929"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442976"
 ---
 # <a name="_fputchar-_fputwchar"></a>_fputchar, _fputwchar
 
@@ -60,7 +59,7 @@ wint_t _fputwchar(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
+*,*<br/>
 Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -71,7 +70,7 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, err
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her ikisi de **stdout** öğesine tek karakterlik *c* 'yi yazar ve göstergeyi uygun şekilde ilerletir. **_fputchar** ile `fputc( stdout )`eşdeğerdir. Ayrıca, **putchar**öğesine de eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. **Fputc** ve **putchar**'ın aksıne, bu işlevler ANSI standardı ile uyumlu değildir.
+Bu işlevlerin her ikisi de **stdout** öğesine tek karakterlik *c* 'yi yazar ve göstergeyi uygun şekilde ilerletir. **_fputchar** `fputc( stdout )`eşdeğerdir. Ayrıca, **putchar**öğesine de eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. **Fputc** ve **putchar**'ın aksıne, bu işlevler ANSI standardı ile uyumlu değildir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

@@ -88,17 +88,17 @@ helpviewer_keywords:
 - stdext::hash_map::upper_bound
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
-ms.openlocfilehash: e993b694e03c83ef2b2bc96ecefc2d37e48f7747
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: 4e13402fbff40ff810e71f78f43060cb59f03cd9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419030"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441631"
 ---
 # <a name="hash_map-class"></a>hash_map Sınıfı
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Her öğenin değeri benzersiz olan ve ilişkili bir veri değeri olan bir sıralama anahtarına sahip bir çiftin bulunduğu bir koleksiyondan verileri hızlı bir şekilde depolar ve alır.
 
@@ -124,7 +124,7 @@ Hash_map depolanacak öğe veri türü.
 İki işlev nesnesi içeren tür, bir sınıftan biri, kendi göreli sıralarını ve öğelerin birli koşul eşleme anahtarı değerleri olan `size_t`türünde işaretsiz tamsayılar olan bir karma işlevi belirleyen, iki öğe değerlerini sıralama anahtarları olarak karşılaştırabilecektir. Bu bağımsız değişken isteğe bağlıdır ve hash_compare <`Key`, daha az <`Key`> > varsayılan değerdir.
 
 *Ayırıcı*\
-Hash_map, bellek ayırma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer ayırıcı < çift < const `Key`, `Type`> >.
+Hash_map, bellek ayırma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer ayırıcı\<çift < const `Key`, `Type`> >.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -229,7 +229,7 @@ Hash_map Sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidi
 ## <a name="allocator_type"></a>hash_map:: allocator_type
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
@@ -244,7 +244,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 ## <a name="at"></a>hash_map:: at
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map, belirtilen anahtar değeri olan bir öğe bulur.
 
@@ -298,7 +298,7 @@ int main( )
 ## <a name="begin"></a>hash_map:: Begin
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -359,7 +359,7 @@ The first element of hm1 is now 1.
 ## <a name="cbegin"></a>hash_map:: cbegin
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -403,7 +403,7 @@ The first element of hm1 is 2.
 ## <a name="cend"></a>hash_map:: cend
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -454,7 +454,7 @@ The value of last element of hm1 is 30.
 ## <a name="clear"></a>hash_map:: Clear
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map tüm öğelerini siler.
 
@@ -504,7 +504,7 @@ The size of the hash_map after clearing is 0.
 ## <a name="const_iterator"></a>hash_map:: const_iterator
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -529,7 +529,7 @@ Bir `const_iterator` başvuru yapmak için, bir hash_map bir öğeye işaret ede
 ## <a name="const_pointer"></a>hash_map:: const_pointer
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map bir **const** öğesine işaretçi sağlayan bir tür.
 
@@ -546,7 +546,7 @@ Bir tür `const_pointer`, bir öğenin değerini değiştirmek için kullanılam
 ## <a name="const_reference"></a>hash_map:: const_reference
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 **Const** işlemlerini okumak ve gerçekleştirmek için bir hash_map depolanan **const** öğesine başvuru sağlayan bir tür.
 
@@ -602,7 +602,7 @@ The data value of the first element in the hash_map is 10.
 ## <a name="const_reverse_iterator"></a>hash_map:: const_reverse_iterator
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -627,7 +627,7 @@ Bir `const_reverse_iterator` başvuru yapmak için, bir hash_map bir öğeye iş
 ## <a name="count"></a>hash_map:: Count
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir hash_map öğe sayısını döndürür.
 
@@ -699,7 +699,7 @@ The number of elements in hm1 with a sort key of 3 is: 0.
 ## <a name="crbegin"></a>hash_map:: crbegin
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Ters çevrilen hash_map ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -751,7 +751,7 @@ The first element of the reversed hash_map hm1 is 3.
 ## <a name="crend"></a>hash_map:: crend
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Ters çevrilen hash_map son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -806,7 +806,7 @@ The last element of the reversed hash_map hm1 is 3.
 ## <a name="difference_type"></a>hash_map::d ifference_type
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki hash_map öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
@@ -876,7 +876,7 @@ The values of the mapped elements are: 10 20 20.
 ## <a name="emplace"></a>hash_map:: emplace
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir hash_map içinde oluşturulmuş bir öğe ekler.
 
@@ -935,7 +935,7 @@ After the emplace insertion, hm1 contains:
 ## <a name="emplace_hint"></a>hash_map:: emplace_hint
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Yerleştirme ipucuyla birlikte hash_map oluşturulan bir öğe ekler.
 
@@ -995,7 +995,7 @@ After the emplace insertion, hm1 contains:
 ## <a name="empty"></a>hash_map:: boş
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map boş ise sınar.
 
@@ -1046,7 +1046,7 @@ The hash_map hm2 is empty.
 ## <a name="end"></a>hash_map:: End
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -1117,7 +1117,7 @@ The value of last element of hm1 is now 20.
 ## <a name="equal_range"></a>hash_map:: equal_range
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Belirtilen anahtardan daha büyük bir anahtarla ve anahtardan daha büyük veya ona eşit olan bir anahtarla hash_map ilk öğe olan bir hash_map yineleyicilerin bir çiftini döndürür.
 
@@ -1204,7 +1204,7 @@ The hash_map hm1 doesn't have an element with a key less than 40.
 ## <a name="erase"></a>hash_map:: Erase
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Belirtilen konumlardan bir hash_map öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1328,7 +1328,7 @@ of the 2nd element is deleted, the hash_map hm3 is: 0 3.
 ## <a name="find"></a>hash_map:: Find
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Belirtilen anahtara eşdeğer bir anahtara sahip bir hash_map öğenin konumunu ele alan bir yineleyici döndürür.
 
@@ -1407,7 +1407,7 @@ The element of hm1 with a key matching that of the last element is: 30.
 ## <a name="get_allocator"></a>hash_map:: get_allocator
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1483,7 +1483,7 @@ int main( )
 ## <a name="hash_map"></a>hash_map:: hash_map
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Boş bir hash_map oluşturur veya diğer bir hash_map tümünün veya bir kısmının kopyasıdır.
 
@@ -1561,7 +1561,7 @@ Son Oluşturucu hash_map *sağa*taşımaktır.
 ## <a name="insert"></a>hash_map:: INSERT
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir hash_map öğe veya öğe aralığı ekler.
 
@@ -1727,7 +1727,7 @@ After the move insertion, hm4 contains:
 ## <a name="iterator"></a>hash_map:: Yineleyici
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir hash_map herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -1752,7 +1752,7 @@ Bir tür `iterator`, bir öğenin değerini değiştirmek için kullanılabilir.
 ## <a name="key_comp"></a>hash_map:: key_comp
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -1828,7 +1828,7 @@ int main( )
 ## <a name="key_compare"></a>hash_map:: key_compare
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Haritadaki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
@@ -1849,7 +1849,7 @@ typedef Traits key_compare;
 ## <a name="key_type"></a>hash_map:: key_type
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir tür, hash_map her bir öğesini oluşturan sıralama anahtarı nesnesini açıklar.
 
@@ -1870,7 +1870,7 @@ typedef Key key_type;
 ## <a name="lower_bound"></a>hash_map:: lower_bound
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtar değeri olan bir hash_map ilk öğeye döndürür.
 
@@ -1947,7 +1947,7 @@ The element of hm1 with a key matching that of the last element is: 30.
 ## <a name="mapped_type"></a>hash_map:: mapped_type
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map depolanan veri türünü temsil eden bir tür.
 
@@ -1968,7 +1968,7 @@ typedef Type mapped_type;
 ## <a name="max_size"></a>hash_map:: max_size
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map maksimum uzunluğunu döndürür.
 
@@ -2007,7 +2007,7 @@ int main( )
 ## <a name="op_at"></a>hash_map:: operator []
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Belirtilen anahtar değeri olan bir `hash_map` öğe ekler.
 
@@ -2104,7 +2104,7 @@ int main( )
 ## <a name="op_eq"></a>hash_map:: operator =
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map öğelerini başka bir hash_map kopyasıyla değiştirir.
 
@@ -2165,7 +2165,7 @@ int main( )
 ## <a name="pointer"></a>hash_map::p oınter
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map bir öğeye işaretçi sağlayan bir tür.
 
@@ -2182,7 +2182,7 @@ Bir tür `pointer`, bir öğenin değerini değiştirmek için kullanılabilir.
 ## <a name="rbegin"></a>hash_map:: rbegin
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Ters çevrilen hash_map ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -2266,7 +2266,7 @@ After the erasure, the first element in the reversed hash_map is 2.
 ## <a name="reference"></a>hash_map:: Reference
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -2329,7 +2329,7 @@ The modified data value of first element is 15.
 ## <a name="rend"></a>hash_map:: rend
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Ters çevrilen hash_map son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -2419,7 +2419,7 @@ After the erasure, the last element in the reversed hash_map is 2.
 ## <a name="reverse_iterator"></a>hash_map:: reverse_iterator
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Ters çevrilen bir hash_map bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -2444,7 +2444,7 @@ Bir `reverse_iterator` başvuru yapmak için, bir hash_map bir öğeye işaret e
 ## <a name="size"></a>hash_map:: size
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map öğe sayısını döndürür.
 
@@ -2494,7 +2494,7 @@ The hash_map length is now 2.
 ## <a name="size_type"></a>hash_map:: size_type
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir hash_map öğe sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -2511,7 +2511,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 ## <a name="swap"></a>hash_map:: swap
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 İki hash_maps öğelerini değiş tokuş eder.
 
@@ -2585,7 +2585,7 @@ After swapping with hm3, hash_map hm1 is: 300.
 ## <a name="upper_bound"></a>hash_map:: upper_bound
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük bir değere sahip olan bir hash_map içindeki ilk öğeye döndürür.
 
@@ -2663,7 +2663,7 @@ of the initial element of hm1 is: 20.
 ## <a name="value_comp"></a>hash_map:: value_comp
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Anahtar değerlerini karşılaştırarak bir hash_map öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
 
@@ -2731,7 +2731,7 @@ int main( )
 ## <a name="value_type"></a>hash_map:: value_type
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
 Hash_map depolanan nesne türünü temsil eden bir tür.
 

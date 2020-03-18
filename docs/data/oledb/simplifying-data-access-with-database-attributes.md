@@ -1,13 +1,6 @@
 ---
 title: Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 ms.date: 10/19/2018
-f1_keywords:
-- vc-attr.db_param
-- vc-attr.db_column
-- vc-attr.db_accessor
-- vc-attr.db_command
-- vc-attr.db_table
-- vc-attr.db_source
 helpviewer_keywords:
 - attributes [C++], database
 - attributes [C++], data access
@@ -18,54 +11,55 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - attributes [C++], OLE DB consumer
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
-ms.openlocfilehash: 83519ffff7dd1f1b5f8a635f094932a1f9728193
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5fc30596058271523f64cc9108ee6f39eb5016fa
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404474"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444136"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 
-Bu konu, veritabanı işlemleri basitleştirmek için veritabanı öznitelikleri kullanımını gösterir.
+Bu konu, veritabanı işlemlerini basitleştirmek için veritabanı özniteliklerinin kullanımını gösterir.
 
-Bir veritabanından bilgilere erişmek için temel yolu komutu (veya tablo) bir sınıfı ve belirli bir tablo için bir kullanıcı kayıt sınıfı veritabanında oluşturmaktır. Veritabanı öznitelikleri bazı önceden yapmak zorunda şablon bildirimleri basitleştirin.
+Bir veritabanından bilgilere erişmenin temel yolu, veritabanında belirli bir tablo için bir komut (veya tablo) sınıfı ve bir kullanıcı kayıt sınıfı oluşturmaktır. Veritabanı öznitelikleri, daha önce yapmak zorunda olduğunuz bazı şablon bildirimlerini basitleştirir.
 
-Veritabanı öznitelikleri kullanımını göstermek için aşağıdaki bölümleri iki eşdeğer tablo ve kullanıcı kayıt sınıf bildirimleri göster: ilk öznitelikleri ve ikinci OLE DB Şablonları kullanır. Bu tür bildirimi kod genellikle adlı tablo veya komut nesnesi için bir üstbilgi dosyası gibi Authors.h yerleştirilir.
+Veritabanı özniteliklerinin kullanımını göstermek için aşağıdaki bölümlerde iki eşdeğer tablo ve Kullanıcı kayıt sınıfı bildirimleri gösterilmektedir: ilki öznitelikleri ve ikincisi OLE DB şablonları kullanır. Bu tür bildirim kodu genellikle tablo veya komut nesnesi (örneğin, yazarlar. h) adlı bir başlık dosyasına yerleştirilir.
 
-İki dosyayı karşılaştırarak öznitelikleri ne kadar kolay olduğunu görebilirsiniz. Arasındaki farklar şunlardır:
+İki dosyayı karşılaştırarak, öznitelikleri kullanmanın ne kadar kolay olduğunu görebilirsiniz. Farklar arasında:
 
-- Öznitelikleri kullanarak, yalnızca bir sınıf bildirmeniz gerekir: `CAuthors`iki bildirmenize gerek şablonlarıyla korurken: `CAuthorsNoAttrAccessor` ve `CAuthorsNoAttr`.
+- Öznitelikleri kullanarak yalnızca bir sınıf bildirmeniz gerekir: `CAuthors`, ancak şablonlar ile iki tane bildirmeniz gerekir: `CAuthorsNoAttrAccessor` ve `CAuthorsNoAttr`.
 
-- `db_source` Öznitelikli sürümdeki çağrısı eşdeğer `OpenDataSource()` şablon bildiriminde çağırın.
+- Öznitelikli sürümdeki `db_source` çağrısı, şablon bildirimindeki `OpenDataSource()` çağrısına eşdeğerdir.
 
-- `db_table` Öznitelikli sürümdeki çağrısı için aşağıdaki şablon bildirimi eşdeğerdir:
+- Öznitelikli sürümdeki `db_table` çağrısı aşağıdaki şablon bildirimine eşdeğerdir:
 
     ```cpp
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>
     ```
 
-- `db_column` Öznitelikli çağrılarında sütun eşlemesi için eşdeğer olan (bkz `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) şablon bildirimindeki.
+- Öznitelikli sürümdeki `db_column` çağrısı, şablon bildiriminde sütun eşlemesine (bkz. `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) eşdeğerdir.
 
-Öznitelikleri sizin için bir kullanıcı kaydı sınıf bildirimi ekleyin. Kullanıcı kayıt sınıfı eşittir `CAuthorsNoAttrAccessor` şablon bildirimindeki. Tablo sınıfınız varsa `CAuthors`, eklenen kullanıcı kayıt sınıfı adlı `CAuthorsAccessor`, ve bildiriminden eklenen kodun yalnızca görüntüleyebilir. Daha fazla bilgi için bkz: "Öznitelik eklenmiş kullanıcı kayıt sınıfları" [kullanıcı kayıtlarını](../../data/oledb/user-records.md).
+Öznitelikleri sizin için bir kullanıcı kayıt sınıfı bildirimi ekler. Kullanıcı kayıt sınıfı, şablon bildiriminde `CAuthorsNoAttrAccessor` eşittir. Tablo sınıfınız `CAuthors`, eklenen Kullanıcı kayıt sınıfı `CAuthorsAccessor`olarak adlandırılır ve yalnızca eklenen koddaki bildirimini görüntüleyebilirsiniz. Daha fazla bilgi için [Kullanıcı kayıtlarında](../../data/oledb/user-records.md)"öznitelik eklenmiş Kullanıcı kaydı sınıfları" başlığına bakın.
 
-Hem öznitelikli ve şablonlu kodu, kullanarak satır kümesi özelliklerini ayarlamalısınız `CDBPropSet::AddProperty`.
+Hem öznitelikli hem de şablonlu kodda, `CDBPropSet::AddProperty`kullanarak satır kümesi özelliklerini ayarlamanız gerekir.
 
-Bu konuda tartışılan öznitelikleri hakkında daha fazla bilgi için bkz: [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md).
+Bu konuda açıklanan öznitelikler hakkında daha fazla bilgi için bkz. [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md).
 
 > [!NOTE]
-> Aşağıdaki `include` ifadeleri, aşağıdaki örneklerde derlemek için gereklidir:
+> Aşağıdaki `include` deyimleri aşağıdaki örnekleri derlemek için gereklidir:
+
 > ```cpp
 > #include <atlbase.h>
 > #include <atlplus.h>
 > #include <atldbcli.h>
 > ```
 
-## <a name="table-and-accessor-declaration-using-attributes"></a>Tablo ve öznitelikleri kullanarak erişimci bildirimi
+## <a name="table-and-accessor-declaration-using-attributes"></a>Öznitelikleri kullanarak tablo ve erişimci bildirimi
 
-Aşağıdaki kod çağrıları `db_source` ve `db_table` tablo sınıfı üzerinde. `db_source` kullanılacak bağlantı ve veri kaynağını belirtir. `db_table` bir tablo sınıfı bildirmek için uygun şablonu kodu ekler. `db_column` Sütun eşlemesi belirtin ve erişimci bildirimini ekleyin. ATL destekleyen herhangi bir projede kullanabileceğiniz OLE DB tüketici öznitelikleri
+Aşağıdaki kod, tablo sınıfında `db_source` ve `db_table` çağırır. `db_source`, kullanılacak veri kaynağını ve bağlantıyı belirtir. `db_table` tablo sınıfı bildirmek için uygun şablon kodunu çıkartır. `db_column` sütun haritasını belirtin ve erişimci bildirimini ekleme. ATL 'yi destekleyen herhangi bir projede OLE DB tüketici öznitelikleri kullanabilirsiniz.
 
-Öznitelikleri kullanarak tablo ve erişimcisi bildirimi şu şekildedir:
+Öznitelikleri kullanan tablo ve erişimci bildirimi aşağıda verilmiştir:
 
 ```cpp
 //////////////////////////////////////////////////////////////////////
@@ -100,9 +94,9 @@ public:
 };
 ```
 
-## <a name="table-and-accessor-declaration-using-templates"></a>Tablo ve şablonları kullanarak erişimci bildirimi
+## <a name="table-and-accessor-declaration-using-templates"></a>Şablonları kullanarak tablo ve erişimci bildirimi
 
-Şablonları kullanarak tablo ve erişimcisi bildirimi aşağıda verilmiştir.
+Şablonlar kullanılarak tablo ve erişimci bildirimi aşağıda verilmiştir.
 
 ```cpp
 //////////////////////////////////////////////////////////////////////

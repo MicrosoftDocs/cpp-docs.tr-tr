@@ -1,62 +1,60 @@
 ---
 title: Denetim Çubuğu Sınıfları
 ms.date: 11/04/2016
-f1_keywords:
-- vc.classes.control
 helpviewer_keywords:
 - control bars [MFC], classes
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
-ms.openlocfilehash: 3426d84eab888a6fe78b663945776fff2fe708dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a050c5d2f7396324c2c380a03fc28e01ab992208
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301961"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440955"
 ---
 # <a name="control-bar-classes"></a>Denetim Çubuğu Sınıfları
 
-Denetim çubukları çerçeve penceresine eklenir. Düğmeler, durum bölmeleri veya bir iletişim şablonunu içerirler. Takılı denetim çubukları, araç paletleri olarak da bilinir, ekleyerek uygulandığından bir [CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md) nesne.
+Denetim çubukları bir çerçeve penceresine eklenir. Düğmeler, durum bölmeleri veya bir iletişim kutusu şablonu içerirler. Araç paletleri olarak da bilinen serbest kayan denetim çubukları, bunları bir [CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md) nesnesine ekleyerek uygulanır.
 
-## <a name="framework-control-bars"></a>Framework denetim çubukları
+## <a name="framework-control-bars"></a>Çerçeve denetim çubukları
 
-Bu denetim çubukları MFC çerçevesi ayrılmaz bir parçasıdır. Bunlar, kullanmayı daha kolay ve framework ile tümleşik olduğu için Windows çubukları denetlemek çok daha güçlü. Çoğu MFC uygulamaları, Windows Denetim çubukları yerine bu denetim çubuklarını kullanın.
+Bu denetim çubukları MFC çerçevesinin ayrılmaz bir parçasıdır. Bunlar, çerçevesiyle tümleştirildiği için Windows Denetim çubuklarıyla daha kolay ve daha güçlü bir şekilde kullanılır. Çoğu MFC uygulaması, Windows Denetim çubukları yerine bu denetim çubuklarını kullanır.
 
 [CControlBar](../mfc/reference/ccontrolbar-class.md)<br/>
-Bu bölümde listelenen MFC denetim çubukları için temel sınıf. Denetim çubuğu, bir çerçeve penceresi kenarına hizalanır bir penceredir. Denetim çubuğu ya da içeren `HWND`-alt veya denetimleri göre değil temel bir `HWND`, araç çubuğu düğmeleri gibi.
+Bu bölümde listelenen MFC denetim çubuklarının temel sınıfı. Bir denetim çubuğu, bir çerçeve penceresinin kenarına hizalanmış bir penceredir. Denetim çubuğu, araç çubuğu düğmeleri gibi `HWND`tabanlı olmayan `HWND`tabanlı alt denetimleri ya da denetimleri içerir.
 
 [CDialogBar](../mfc/reference/cdialogbar-class.md)<br/>
-Bir iletişim kutusu şablonu temel alan bir denetim çubuğu.
+İletişim kutusu şablonunu temel alan bir denetim çubuğu.
 
 [CReBar](../mfc/reference/crebar-class.md)<br/>
-Ek alt pencereleri biçiminde denetimleri içerebilen bir araç çubuğu destekler.
+, Denetim biçiminde ek alt pencereler içerebilen bir araç çubuğunu destekler.
 
 [CToolBar](../mfc/reference/ctoolbar-class.md)<br/>
-Bit eşlem komut düğmeleri içermemesi araç çubuğu denetimi windows temel alan bir `HWND`. Bu sınıf MFC uygulamaları çoğu kullanmak yerine `CToolBarCtrl`.
+Bir `HWND`tabanlı olmayan bit eşlem komut düğmelerini içeren araç çubuğu denetimi pencereleri. Çoğu MFC uygulaması `CToolBarCtrl`yerine bu sınıfı kullanır.
 
 [CStatusBar](../mfc/reference/cstatusbar-class.md)<br/>
-Durum çubuğu denetimi windows için temel sınıf. Bu sınıf MFC uygulamaları çoğu kullanmak yerine `CStatusBarCtrl`.
+Durum çubuğu denetim pencereleri için temel sınıf. Çoğu MFC uygulaması `CStatusBarCtrl`yerine bu sınıfı kullanır.
 
 ## <a name="windows-control-bars"></a>Windows Denetim çubukları
 
-Bu denetim çubukları karşılık gelen Windows denetimleri için ince sarmalayıcıları ' dir. Framework ile tümleşik değil çünkü bunlar daha zor daha önce listelenen denetim çubukları kullanmak üzeresiniz. Çoğu MFC uygulamaları, daha önce listelenen denetim çubuklarını kullanın.
+Bu denetim çubukları, ilgili Windows denetimleri için ince sarmalayıcılardır. Framework ile tümleştirildiği için, daha önce listelenmiş olan denetim çubuklarıyla kullanmaktan daha zordur. Çoğu MFC uygulaması daha önce listelenen denetim çubuklarını kullanır.
 
 [CRebarCtrl](../mfc/reference/crebarctrl-class.md)<br/>
-İç denetim uygulayan `CRebar` nesne.
+`CRebar` nesnesinin iç denetimini uygular.
 
 [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)<br/>
-Yatay bir pencere genellikle uygulama durum bilgilerini görüntüleyebilen bölmelere bölünür.
+Bir uygulamanın durum bilgilerini görüntüleyebilen, genellikle bölmelere ayrılmış yatay bir pencere.
 
 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)<br/>
-Windows ortak araç çubuğu denetimi işlevlerini sağlar.
+Windows Toolbar ortak denetiminin işlevlerini sağlar.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
 [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)<br/>
-Bir uygulamada bir aracın amacını açıklayan metnin tek bir çizgi görüntüler küçük bir açılır pencere.
+Uygulamadaki bir aracın amacını açıklayan tek satırlık bir metin görüntüleyen küçük bir açılır pencere.
 
 [CDockState](../mfc/reference/cdockstate-class.md)<br/>
-Kalıcı depolama, yerleştirme denetim çubukları için eyalet verilerini işler.
+Denetim çubukları için yerleştirme durumu verilerinin kalıcı depolamayı işler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

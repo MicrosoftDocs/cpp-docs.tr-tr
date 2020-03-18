@@ -9,11 +9,8 @@ f1_keywords:
 - vc.editors.bitmap
 - vc.editors.dialog.GridSettings
 - vc.editors.gridsettings
-- vc.editors.bitmap
 - vc.editors.icon
 - vc.editors.texttool
-- vc.editors.bitmap
-- vc.editors.icon
 helpviewer_keywords:
 - editors, images
 - resource editors [C++], graphics
@@ -42,12 +39,12 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: 0f8fe228b804538b6a0d0377f05d79c34e787587
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.openlocfilehash: 9c1c09f8ffe0ef8d4759b9242ba30e8fafaaeb01
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "69514224"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443757"
 ---
 # <a name="image-editor-for-icons-c"></a>Simgeler (C++) Için görüntü Düzenleyicisi
 
@@ -86,8 +83,8 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 |**Donuk Çiz**|Seçildiğinde, geçerli seçimi donuk hale getirir.<br/><br/>Kaldırıldığında, geçerli seçimi saydam hale getirir.|
 |**Araç Çubuğu Düzenleyicisi**|[Yeni araç çubuğu kaynağı iletişim kutusunu](../windows/new-toolbar-resource-dialog-box.md)açar.|
 |**Kılavuz ayarları**|Görüntünüzün kılavuzlarını belirtebileceğiniz **Kılavuz ayarları** iletişim kutusunu açar.|
-|**Yeni görüntü türü**|[ Yeni\<cihaz > görüntü türü iletişim kutusunu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)açar.<br/><br/>Tek bir simge kaynağı farklı boyutlarda birkaç görüntü içerebilir ve Windows, nasıl görüntüleneceklerinize bağlı olarak uygun simge boyutunu kullanabilir. Yeni bir cihaz türü simgenin boyutunu değiştirmez, bunun yerine simgenin içinde yeni bir görüntü oluşturur. Yalnızca simgeler ve imleçler için geçerlidir.|
-|**Geçerli simge/Imleç resim türü**|Kullanılabilir ilk dokuz imleç veya simge görüntüsünü listeleyen bir alt menü açar. Alt menüdeki son komut, **daha fazla**, [Cihaz > görüntüsü aç \<iletişim kutusunu](../windows/open-device-image-dialog-box-image-editor-for-icons.md)açar.|
+|**Yeni görüntü türü**|[Yeni \<cihaz > görüntü türü iletişim kutusunu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)açar.<br/><br/>Tek bir simge kaynağı farklı boyutlarda birkaç görüntü içerebilir ve Windows, nasıl görüntüleneceklerinize bağlı olarak uygun simge boyutunu kullanabilir. Yeni bir cihaz türü simgenin boyutunu değiştirmez, bunun yerine simgenin içinde yeni bir görüntü oluşturur. Yalnızca simgeler ve imleçler için geçerlidir.|
+|**Geçerli simge/Imleç resim türü**|Kullanılabilir ilk dokuz imleç veya simge görüntüsünü listeleyen bir alt menü açar. Alt menüdeki son komut, **daha fazla** [\<cihaz > görüntüsünü Aç iletişim kutusunu](../windows/open-device-image-dialog-box-image-editor-for-icons.md)açar.|
 |**Görüntü türünü sil**|Seçili cihaz görüntüsünü siler.|
 |**Araçlar**|**Görüntü Düzenleyicisi** araç çubuğundan kullanılabilen tüm araçları içeren bir alt menü başlatır.|
 
@@ -104,7 +101,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 **Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünümleri düzenleme araçlarını içerir. Ayrıca, her bir aracı kullanma seçeneklerini seçebileceğiniz bir seçenek seçici de içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve çizgi stilleri arasından seçim yapabilirsiniz.
 
-**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü** > **araçlarından**de kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
+**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü** > **araçları**' ndan da kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
 
 ![Görüntü Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "Vcımageeditortoolbar")<br/>
 **Görüntü Düzenleyicisi** araç çubuğu
@@ -114,7 +111,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 [Klavyede](../windows/accelerator-keys-image-editor-for-icons.md)birçok çizim aracı kullanılabilir olduğundan, bazen **resim Düzenleyicisi** araç çubuğunu gizlemek yararlı olur.
 
-- **Görüntü Düzenleyicisi** araç çubuğunu görüntülemek veya gizlemek için menü **Görünüm** > **araç çubukları** ' na gidin ve **Görüntü Düzenleyicisi**' ni seçin.
+- **Görüntü Düzenleyicisi** araç çubuğunu görüntülemek veya gizlemek Için menü **görünümü** > **araç çubukları** ' na gidin ve **Görüntü Düzenleyicisi**' ni seçin.
 
 > [!NOTE]
 > Geçerli projeden veya çözümden bir görüntü dosyası **görüntü düzenleyicisinde**açık olmadığında, bu araç çubuğundan öğeler kullanılamaz görünür.
@@ -130,7 +127,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 Bir imlece, bit eşlem ya da simge kaynağına metin eklemek için **metin aracı** iletişim kutusunu kullanın.
 
-Bu iletişim kutusuna erişmek için, **görüntü düzenleyicisini** açın ve menü **görüntüsü** > **araçları**' na gidin ve **metin aracı** komutunu seçin.
+Bu iletişim kutusuna erişmek için, **görüntü düzenleyicisini** açın ve menü **görüntüsü** > **Araçlar**' a gidin ve **metin aracı** komutunu seçin.
 
 > [!TIP]
 > Standart Windows komutlarının bir listesini içeren bir varsayılan kısayol menüsüne erişmek için **metin aracı** iletişim kutusuna sağ tıklayabilirsiniz.
@@ -141,21 +138,21 @@ Bu iletişim kutusuna erişmek için **metin aracı** Iletişim kutusunda **yaz�
 
 |Özellik|Açıklama|
 |---|---|
-|**Yazı tipi**|Kullanılabilir yazı tiplerini listeler.|
+|**Yazý**|Kullanılabilir yazı tiplerini listeler.|
 |**Yazı tipi stili**|Belirtilen yazı tipi için kullanılabilir stilleri listeler.|
-|**Boyutla**|Belirtilen yazı tipi için kullanılabilir nokta boyutlarını listeler.|
-|**Örnekli**|Metnin, belirtilen yazı tipi ayarlarıyla nasıl görüneceğini gösteren bir örnek gösterir.|
+|**Boyut**|Belirtilen yazı tipi için kullanılabilir nokta boyutlarını listeler.|
+|**Örnek**|Metnin, belirtilen yazı tipi ayarlarıyla nasıl görüneceğini gösteren bir örnek gösterir.|
 |**Komut Dosyası**|Belirtilen yazı tipi için kullanılabilir dil betiklerini listeler.<br/><br/>Farklı bir dil betiği seçtiğinizde, bu dilin karakter kümesi çok dilli belgeler oluşturmak için kullanılabilir hale gelir.|
 
 #### <a name="to-change-the-font-of-text-on-an-image"></a>Görüntüdeki metnin yazı tipini değiştirmek için
 
 Aşağıda, bir Windows uygulamasındaki simgeye metin ekleme ve metninizin yazı tipini değiştirme örnekleri verilmiştir.
 
-1. C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [. nasıl yapılır: Windows Forms uygulamalar](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90))oluşturun. Varsayılan olarak projenize bir *app. ico* dosyası eklenir.
+1. C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz. [nasıl yapılır: oluşturma Windows Forms uygulamalar](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90)). Varsayılan olarak projenize bir *app. ico* dosyası eklenir.
 
 1. **Çözüm Gezgini**' de *app. ico*dosyasına çift tıklayın. **Görüntü Düzenleyicisi** açılır.
 
-1. Menü **görüntü** > **araçları** ' na gidin ve **metin aracı**' nı seçin.
+1. Menü **görüntüsü** > **Araçlar** ' a gidin ve **metin aracı**' nı seçin.
 
 1. **Metin aracı** iletişim kutusunda boş metin alanına yazın *C++* . Bu metin, **görüntü düzenleyicisinde** *app. ico* öğesinin sol üst köşesinde bulunan yeniden boyutlandırılabilir bir kutu içinde görüntülenir.
 
@@ -209,13 +206,13 @@ Varsayılan olarak, **Görüntü Düzenleyicisi** gerçek boyutun sol bölmesind
 
 4 veya daha büyük bir büyütme faktörü içeren tüm **görüntü düzenleyici** bölmeleri için görüntüdeki tek pikselleri sınırlandıran bir kılavuz görüntüleyebilirsiniz.
 
-1. Menü **resmi** > **Kılavuz ayarları**' na gidin.
+1. Menü **görüntüsü** > **Kılavuz ayarları**' na gidin.
 
 1. Kılavuzu göstermek için **piksel Kılavuzu** onay kutusunu seçin veya kılavuzu gizlemek için kutuyu temizleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
