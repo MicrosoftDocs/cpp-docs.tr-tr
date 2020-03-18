@@ -1,17 +1,15 @@
 ---
 title: CListCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CListCtrl
 helpviewer_keywords:
 - CListCtrl class [MFC], using
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-ms.openlocfilehash: 8641b7aec3aacf4de6aabfdcc9ffcbc64c278b41
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ada26f43849bec2ad4cb63a6084c10805e27fcb0
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512910"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441980"
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 
@@ -22,7 +20,7 @@ Bazı görünümlerde, kullanıcılar simgeleri farklı konumlara sürükleyebil
 İlgili bilgiler için, bkz. Windows SDK [liste görünümü denetimleri](/windows/win32/Controls/list-view-controls-overview) .
 
 > [!NOTE]
->  Windows SDK liste denetimlerine "liste görünümü denetimleri" olarak başvurur. Bu "Görünüm" kullanımı, özellikle `CListView`MFC görünüm sınıflarına başvurmaz. Daha fazla bilgi için bkz. [liste denetimi ve liste görünümü](../mfc/list-control-and-list-view.md).
+>  Windows SDK liste denetimlerine "liste görünümü denetimleri" olarak başvurur. Bu "Görünüm" kullanımı MFC görünüm sınıflarına başvurmuyor, özellikle `CListView`. Daha fazla bilgi için bkz. [liste denetimi ve liste görünümü](../mfc/list-control-and-list-view.md).
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 

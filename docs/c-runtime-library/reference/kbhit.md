@@ -21,7 +21,6 @@ topic_type:
 - apiref
 f1_keywords:
 - _kbhit
-- kbhit
 - conio/_kbhit
 helpviewer_keywords:
 - keyboard input
@@ -33,12 +32,12 @@ helpviewer_keywords:
 - _kbhit function
 - keyboards, checking input
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
-ms.openlocfilehash: 49c8df1a2c600ad3976babea0b560108ea69efd8
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 972b060dd98b5d267fa1f529c898573d4b82bb61
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953512"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438095"
 ---
 # <a name="_kbhit"></a>_kbhit
 
@@ -56,11 +55,11 @@ int _kbhit( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_kbhit** , bir anahtara basıldığında sıfır dışında bir değer döndürür. Aksi takdirde, 0 döndürür.
+bir anahtara basıldığında **_kbhit** sıfır dışında bir değer döndürür. Aksi takdirde, 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Kbhit** işlevi, son tuş vuruşu için konsolu denetler. İşlev sıfır dışında bir değer döndürürse, bir tuş vuruşu arabellekte bekler. Program daha sonra tuş vuruşunu almak için **_getch** veya **_getche** 'i çağırabilir.
+**_Kbhit** işlevi, son tuş vuruşu için konsolu denetler. İşlev sıfır dışında bir değer döndürürse, bir tuş vuruşu arabellekte bekler. Program daha sonra tuş vuruşunu almak için **_getch** veya **_getche** çağırabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

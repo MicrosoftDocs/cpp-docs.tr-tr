@@ -6,11 +6,11 @@ f1_keywords:
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
 ms.openlocfilehash: 2fbc05c16ba6629397bbb07bab30cb9315a16e1f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78883855"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421620"
 ---
 # <a name="lthash_setgt-functions"></a>&lt;hash_set&gt; işlevleri
 
@@ -21,7 +21,7 @@ ms.locfileid: "78883855"
 ## <a name="swap"></a>Kur
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
 İki hash_sets öğelerini değiş tokuş eder.
 
@@ -54,7 +54,7 @@ algoritma sınıfında atama ile çalışıyor ve yavaş bir işlemdir. Kapsayı
 ## <a name="swap_hash_multiset"></a>takas (hash_multiset)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
 İki hash_multisets öğelerini değiş tokuş eder.
 

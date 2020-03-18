@@ -29,11 +29,11 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
 ms.openlocfilehash: 599a00af28ee5b8effbabbe5b334022ceb49f91a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78869972"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420318"
 ---
 # <a name="cmfclistctrl-class"></a>CMFCListCtrl sınıfı
 
@@ -49,7 +49,7 @@ class CMFCListCtrl : public CListCtrl
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCListCtrl:: EnableMarkSortedColumn](#enablemarksortedcolumn)|Sıralanmış bir sütunu farklı bir arka plan rengiyle işaretleyebilme olanağı tanır.|
 |[CMFCListCtrl:: EnableMultipleSort](#enablemultiplesort)|Birden çok sıralama moduna izin vermez.|

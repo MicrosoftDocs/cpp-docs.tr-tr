@@ -27,7 +27,6 @@ f1_keywords:
 - ungetwch
 - ungetch_nolock
 - _ungetwch
-- ungetch
 - ungetwch_nolock
 - _ungetch
 - _ungettch_nolock
@@ -47,12 +46,12 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-ms.openlocfilehash: 2f6b782334df710ac9fe6359fda77b40a31e060c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5fd34d0c975ee49bce688cd902a6df856b5d6963
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945916"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79443752"
 ---
 # <a name="_ungetch-_ungetwch-_ungetch_nolock-_ungetwch_nolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
@@ -80,22 +79,22 @@ wint_t _ungetwch_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
+*,*<br/>
 Gönderilecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her iki işlev de başarılı olursa *c* karakterini döndürür. Bir hata varsa, **_ungetch** bir **EOF** değeri döndürür ve **_Ungetwch** , **weof**döndürür.
+Her iki işlev de başarılı olursa *c* karakterini döndürür. Bir hata varsa, **_Ungetch** **EOF** değerini döndürür ve **_ungetwch** **weof**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler *c* karakterini konsola geri göndererek, *c* 'nin **_getch** veya **_getche** (veya **_getwch** veya **_getwche**) tarafından okunan sonraki karakter olmasına neden olur. **_ungetch** ve **_ungetwch** , bir sonraki okumadan önce birden çok kez çağrılırsa başarısız olur. *C* bağımsız değişkeni **EOF** (veya **weof**) olmayabilir.
+Bu işlevler *c* karakterini konsola geri göndererek, **_getch** veya **_getche** (veya **_getwch** ya da **_getwche**) tarafından okunan bir sonraki karakter *olmasına neden olur* . **_ungetch** ve **_ungetwch** bir sonraki okumadan önce birden çok kez çağrıldıklarında başarısız olur. *C* bağımsız değişkeni **EOF** (veya **weof**) olmayabilir.
 
 **_Nolock** sonekine sahip sürümler, diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında aynıdır. Diğer iş parçacıklarını kilitleyen ek yüke neden olmadıklarından bu, daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_ungettch**|**_ungetch**|**_ungetch**|**_ungetwch**|
 |**_ungettch_nolock**|**_ungetch_nolock**|**_ungetch_nolock**|**_ungetwch_nolock**|

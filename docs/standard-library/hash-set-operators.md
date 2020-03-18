@@ -6,11 +6,11 @@ f1_keywords:
 - hash_set/std::operator==
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ms.openlocfilehash: 3900e9c6e4fb7f5a163279165a51b440d138a8e5
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78883856"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419002"
 ---
 # <a name="lthash_setgt-operators"></a>&lt;hash_set&gt; işleçleri
 
@@ -22,7 +22,7 @@ ms.locfileid: "78883856"
 ## <a name="op_neq"></a>işleç! =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
 İşlecin sol tarafındaki hash_set nesnesinin sağ taraftaki hash_set nesnesine eşit olup olmadığını sınar.
 
@@ -90,7 +90,7 @@ The hash_sets hs1 and hs3 are equal.
 ## <a name="op_eq_eq"></a>işleç = =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
 İşlecin sol tarafındaki hash_set nesnesinin sağ taraftaki hash_set nesnesine eşit olup olmadığını sınar.
 
@@ -156,7 +156,7 @@ The hash_sets s1 and s3 are equal.
 ## <a name="op_neq_hash_multiset"></a>işleç! = (hash_multiset)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
 İşlecin sol tarafındaki hash_multiset nesnesinin sağ taraftaki hash_multiset nesnesine eşit olup olmadığını sınar.
 
@@ -222,7 +222,7 @@ The hash_multisets hs1 and hs3 are equal.
 ## <a name="op_eq_eq_hash_multiset"></a>işleç = = (hash_multiset)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
 İşlecin sol tarafındaki hash_multiset nesnesinin sağ taraftaki hash_multiset nesnesine eşit olup olmadığını sınar.
 

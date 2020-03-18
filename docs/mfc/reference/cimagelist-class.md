@@ -75,11 +75,11 @@ helpviewer_keywords:
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
 ms.openlocfilehash: 1555209ce0f1c2caacbfb4b01107775db948d230
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890713"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420360"
 ---
 # <a name="cimagelist-class"></a>CImageList sınıfı
 
@@ -95,13 +95,13 @@ class CImageList : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CImageList:: CImageList](#cimagelist)|`CImageList` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CImageList:: Add](#add)|Görüntü listesine bir resim veya resim ekler.|
 |[CImageList:: Attach](#attach)|`CImageList` nesnesine bir görüntü listesi ekler.|
@@ -138,13 +138,13 @@ class CImageList : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CImageList:: operator HıMAGELIST](#operator_himagelist)|`CImageList`eklenmiş HıMAGELIST 'i döndürür.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CImageList:: m_hImageList](#m_himagelist)|Bu nesneye eklenen görüntü listesini içeren bir tanıtıcı.|
 
@@ -295,7 +295,7 @@ Kopyalama işleminin kaynağı olarak kullanılacak görüntünün sıfır taban
 *uFlags*<br/>
 Yapılacak kopyalama işleminin türünü belirten bit bayrak değeri. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |ILCF_MOVE|Kaynak görüntü, hedef görüntünün dizinine kopyalanır. Bu işlem belirli bir görüntünün birden fazla örneğine neden olur. ILCF_MOVE varsayılandır.|
 |ILCF_SWAP|Kaynak ve hedef görüntüleri Exchange görüntü listesi içinde konumlandırır.|
@@ -357,7 +357,7 @@ Her resmin piksel cinsinden boyutları.
 *nFlags*<br/>
 Oluşturulacak görüntü listesinin türünü belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir, ancak `ILC_COLOR` değerlerinden yalnızca birini içerebilir.
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |ILC_COLOR|Diğer ILC_COLOR * bayraklarının Hiçbiri belirtilmediyse, varsayılan davranışı kullanın. Genellikle, varsayılan ILC_COLOR4; Ancak, daha eski görüntü sürücüleri için varsayılan değer ILC_COLORDDB.|
 |ILC_COLOR4|Görüntü listesi için bit eşlem olarak 4 bit (16 renk) cihazdan bağımsız bit eşlem (DIB) bölümü kullanın.|
@@ -591,7 +591,7 @@ Belirtilen cihaz bağlamı içinde çizilecek konum.
 *nStyle*<br/>
 Çizim stilini belirten bayrak. Bu değerlerden biri veya daha fazlası olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |ILD_BLEND25, ILD_FOCUS|Görüntüyü, sistem vurgu rengiyle yüzde 25 ' i karıştırarak çizer. Görüntü listesi bir maske içermiyorsa, bu değerin etkisi yoktur.|
 |ILD_BLEND50, ILD_SELECTED, ILD_BLEND|Görüntüyü, sistem vurgu rengi ile yüzde 50 karıştırma halinde çizer. Görüntü listesi bir maske içermiyorsa, bu değerin etkisi yoktur.|
@@ -712,7 +712,7 @@ Diğer olası değerler [IMAGELISTDRAWPARAMS](/windows/win32/api/commctrl/ns-com
 *rgbBack*<br/>
 Görüntünün arka plan rengi, varsayılan CLR_DEFAULT. Bu parametre, uygulama tanımlı bir RGB değeri veya aşağıdaki değerlerden biri olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |CLR_DEFAULT|Varsayılan arka plan rengi. Görüntü, görüntü listesi arka plan rengi kullanılarak çizilir.|
 |CLR_NONE|Arka plan rengi yok. Görüntü saydam olarak çizilir.|
@@ -720,7 +720,7 @@ Görüntünün arka plan rengi, varsayılan CLR_DEFAULT. Bu parametre, uygulama 
 *Rgbön*<br/>
 Varsayılan CLR_DEFAULT görüntü ön plan rengi. Bu parametre, uygulama tanımlı bir RGB değeri veya aşağıdaki değerlerden biri olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |CLR_DEFAULT|Varsayılan ön plan rengi. Görüntü, ön plan rengi olarak sistem vurgu rengi kullanılarak çizilir.|
 |CLR_NONE|Blend rengi yok. Görüntü, hedef cihaz bağlamının rengi ile karıştırkaydedilir.|

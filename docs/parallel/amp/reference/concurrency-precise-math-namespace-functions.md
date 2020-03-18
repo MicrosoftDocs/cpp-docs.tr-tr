@@ -91,11 +91,11 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
 ms.openlocfilehash: 53ebaf8d9cc1bca53b1fe51464668d6df8e08424
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890700"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419247"
 ---
 # <a name="concurrencyprecise_math-namespace-functions"></a>Concurrency::precise_math ad alanı işlevleri
 

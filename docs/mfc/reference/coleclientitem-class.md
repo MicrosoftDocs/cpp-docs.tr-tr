@@ -165,11 +165,11 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
 ms.openlocfilehash: 9f97f117f0fd8570855079aca7bdfd7a63118bc5
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855563"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421725"
 ---
 # <a name="coleclientitem-class"></a>Colet Clienentidıtem sınıfı
 
@@ -183,13 +183,13 @@ class COleClientItem : public CDocItem
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Colet Clientıtem:: Copaclitıtem](#coleclientitem)|`COleClientItem` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -701,7 +701,7 @@ BOOL CreateFromFile(
 OLE öğesinin oluşturulacağı dosyanın adı işaretçisi.
 
 *in*<br/>
-Daha sonraki kullanımlar için ayrılmıştır.
+Gelecekte kullanılmak üzere ayrılmış.
 
 *işlenecek*<br/>
 Sunucunun OLE öğesini nasıl işleyemeyeceğini belirten bayrak. Olası değerler için Windows SDK [olerender](/windows/win32/api/oleidl/ne-oleidl-olerender) bölümüne bakın.

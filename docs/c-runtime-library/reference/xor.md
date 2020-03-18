@@ -17,18 +17,17 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- Xor
 - std::xor
 - std.xor
 helpviewer_keywords:
 - xor function
 ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
-ms.openlocfilehash: 44290cb42cd70370ae9bbdac2c8588bbade59577
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a1a1fb677087da173ef490b1a533f4c62d463702
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944837"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444188"
 ---
 # <a name="xor"></a>xor
 
@@ -73,4 +72,4 @@ int main( )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<iso646. h >
+**Üstbilgi:** \<iso646. h >

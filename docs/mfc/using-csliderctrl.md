@@ -1,28 +1,26 @@
 ---
 title: CSliderCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CSliderCtrl
 helpviewer_keywords:
 - CSliderCtrl class [MFC], using
 - slider controls [MFC], using
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
-ms.openlocfilehash: f133d25ddab76f42b4bf7b133bb988def9f0f01a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5fb26bc981630b59a918acf5bb81b9f3fdb4620a
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411779"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441793"
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl Kullanma
 
-[CSliderCtrl](../mfc/reference/csliderctrl-class.md) sınıfı bir trackbar olarak da adlandırılan bir kaydırıcı denetimi temsil eder. Bir kaydırıcı ve isteğe bağlı bir değer çizgisi içeren bir pencere "Kaydırıcı denetimi" olan işaretler. Kullanıcı fareyi veya ok tuşlarını kullanarak, kaydırıcıyı hareket ettirdiğinde kaydırıcı denetimi değişikliği göstermek için bildirim iletileri gönderir.
+[CSliderCtrl](../mfc/reference/csliderctrl-class.md) sınıfı, TrackBar olarak da adlandırılan bir kaydırıcı denetimini temsil eder. "Kaydırıcı denetimi", kaydırıcı ve isteğe bağlı değer çizgileri içeren bir penceredir. Kullanıcı kaydırıcıyı hareket ettirir, fare veya ok tuşlarını kullanarak kaydırıcı denetimi, değişikliği belirtmek için bildirim mesajları gönderir.
 
-Kaydırıcı denetimlerini, bir ayrık değere veya bir dizi ardışık değerleri bir aralıktaki seçmesini istediğinizde kullanışlıdır. Örneğin, verilen değer çizgisi için kaydırıcıyı hareket ettirerek klavye yineleme oranını ayarlamak izin vermek için bir kaydırıcı denetimi kullanabilirsiniz.
+Kaydırıcı denetimleri, kullanıcının bir aralıktaki bir ayrık değer veya ardışık değerler kümesi seçmesini istediğinizde faydalıdır. Örneğin, kaydırıcıyı verilen bir değer işaretine taşıyarak kullanıcının, klavye yineleme hızını ayarlamaya izin vermek için kaydırıcı denetimini kullanabilirsiniz.
 
-Bir kaydırıcı denetimi kaydırıcı oluşturduğunuzda, belirttiğiniz aralıklarla taşır. Kaydırıcı denetimi beş bir dizi olmalıdır belirtirseniz, örneğin, kaydırıcıyı yalnızca altı konumları kaplayabilir: kaydırıcı denetimi aralığındaki her artış için bir konum ve sol tarafında bir konumu. Genellikle, her biri bu konumları onay işareti tarafından tanımlanır.
+Kaydırıcı denetimindeki kaydırıcı, oluştururken belirttiğiniz artışlarla hareket eder. Örneğin, kaydırıcı denetiminin beş aralığına sahip olması gerektiğini belirtirseniz kaydırıcı yalnızca altı konum içerebilir: kaydırıcı denetiminin sol tarafındaki bir konum ve aralıktaki her artış için bir konum. Genellikle, bu konumların her biri bir değer çizgisi tarafından tanımlanır.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Kaydırıcı Denetimlerini Kullanma](../mfc/using-slider-controls.md)
 

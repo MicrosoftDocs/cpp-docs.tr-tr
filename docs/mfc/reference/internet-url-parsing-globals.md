@@ -6,11 +6,11 @@ helpviewer_keywords:
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
 ms.openlocfilehash: 310e4ffb3fc207d874e97ba1fac65f6f8cb41a31
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865814"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421305"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL 'SI, genel ve yardımcıları ayrıştırma
 
@@ -187,7 +187,7 @@ Kullanıcının parolasını içeren `CString` nesnesine bir başvuru.
 *dwFlags*<br/>
 URL 'YI ayrıştırmayı denetleyen bayraklar. Aşağıdaki değerlerin bir birleşimi olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |ICU_DECODE|% XX kaçış dizilerini karakterlere Dönüştür.|
 |ICU_NO_ENCODE|Güvenli olmayan karakterleri kaçış dizisine dönüştürmeyin.|

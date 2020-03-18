@@ -1,23 +1,22 @@
 ---
-title: '&lt;Liste > (C++ belgeleri açıklamaları)'
+title: '&lt;listesi > (C++ belge açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - list
-- <list>
 helpviewer_keywords:
 - list C++ XML tag
 - <list> C++ XML tag
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
-ms.openlocfilehash: fd5b97ac518bc4075697da7b6ed88ed46bdd8814
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 102cf9f7b1b867a012f662ce786d97012826abd1
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305274"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439307"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
-\<Listheader > blok satırında bir tablo veya tanım listesi tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca bir giriş başlığı hükmün sağlamanız gerekir.
+\<listheader > bloğu, bir tablo ya da tanım listesinin başlık satırını tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca başlıktaki terim için bir giriş sağlamanız gerekir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,19 +35,19 @@ ms.locfileid: "62305274"
 
 #### <a name="parameters"></a>Parametreler
 
-*Terim*<br/>
-İçinde tanımlanan tanımlamak için bir terim `description`.
+*terimli*<br/>
+`description`tanımlanacak bir terim.
 
-*Açıklaması*<br/>
-Bir ya da öğe bir madde işareti veya numaralı liste tanımını bir `term`.
+*açıklaması*<br/>
+Bir madde işareti veya numaralandırılmış listedeki bir öğe ya da bir `term`tanımı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Listedeki her bir öğe ile belirtilen bir \<öğesi > bloğu. Tanım listesi oluştururken, her ikisi de belirtmeniz gerekir `term` ve `description`. Ancak, bir tablo, madde işaretli liste veya numaralı liste için bir giriş sağlamanız yeterlidir `description`.
+Listedeki her öğe, bir \<öğesi > bloğu ile belirtilir. Tanım listesi oluştururken hem `term` hem de `description`belirtmeniz gerekir. Ancak, bir tablo, madde işaretli liste veya numaralandırılmış liste için yalnızca `description`için bir giriş sağlamanız gerekir.
 
-Bir listeyi veya tabloyu kadar olabilir \<öğesi > gerektiğinde engeller.
+Bir liste veya tablo, gereken sayıda \<öğe > bloğunu içerebilir.
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 

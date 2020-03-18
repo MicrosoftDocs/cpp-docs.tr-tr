@@ -2,9 +2,8 @@
 title: /Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 ms.date: 09/05/2018
 f1_keywords:
-- /gr
+- /Gr
 - /Gv
-- /gz
 - /Gd
 - VC.Project.VCCLCompilerTool.CallingConvention
 helpviewer_keywords:
@@ -21,89 +20,89 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-ms.openlocfilehash: eabb4e11715e03745e27911ccd654568d70b8352
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 92fd4f6ae4193e86edb114cc366e6d40e4208ca8
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400506"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439670"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 
-Bu seçenekler çağıran işlevin veya çağrılan işlevin çağrının sonunda yığından bağımsız değişkenler kaldırır olup olmadığını, işlev bağımsız değişkenleri yığın itilir sırasını ve tanımlamak için derleyicinin kullandığı ad dekorasyon kuralı belirler. tek tek işlevleri.
+Bu seçenekler, işlev bağımsız değişkenlerinin yığına gönderilme sırasını belirler. çağıran işlevi veya çağrılan işlev, çağrının sonundaki bağımsız değişkenleri yığından kaldırır ve derleyicinin tanımlamak için kullandığı ad dekorasyon kuralını belirtir. ayrı işlevler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Gd**<br/>
-> **Gr**<br/>
-> **/Gv**<br/>
-> **/GZ**
+> **/GD**<br/>
+> **/Gr**<br/>
+> **/GV**<br/>
+> **/Gz**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Gd**, varsayılan ayar belirtir [__cdecl](../../cpp/cdecl.md) hariç tüm işlevler çağırma kuralını C++ üye işlevleri ve işaretli işlevler [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md), veya [__vectorcall](../../cpp/vectorcall.md).
+Varsayılan ayar olan **/GD**, [__fastcall](../../cpp/fastcall.md)veya [__vectorcall](../../cpp/vectorcall.md) [__stdcall](../../cpp/stdcall.md)işaretlenmiş üye işlevleri ve işlevler hariç C++ tüm işlevler için [__cdecl](../../cpp/cdecl.md) çağırma kuralını belirtir.
 
-**Gr** belirtir `__fastcall` C++ üye işlevleri hariç tüm işlevler için çağırma kuralı, İşlevler adlı `main`ve işaretli işlevler `__cdecl`, `__stdcall`, veya `__vectorcall`. Tüm `__fastcall` işlevleri prototiplere sahip olmalıdır. Bu çağırma kuralı yalnızca x86 hedefleyen derleyicilerde kullanılabilir ve diğer mimarileri hedefleyen derleyiciler tarafından göz ardı edilir.
+**/Gr** üye işlevleri, `main`adlı işlevler ve `__cdecl`, C++ `__stdcall`veya `__vectorcall`olarak işaretlenen işlevler hariç tüm işlevler için `__fastcall` çağırma kuralını belirtir. Tüm `__fastcall` işlevleri prototiptürlerine sahip olmalıdır. Bu çağırma kuralı yalnızca x86 'yi hedefleyen derleyicilerde kullanılabilir ve diğer mimarileri hedefleyen derleyiciler tarafından yok sayılır.
 
-**/GZ** belirtir `__stdcall` C++ üye işlevleri hariç tüm işlevler için çağırma kuralı, İşlevler adlı `main`ve işaretli işlevler `__cdecl`, `__fastcall`, veya `__vectorcall`. Tüm `__stdcall` işlevleri prototiplere sahip olmalıdır. Bu çağırma kuralı yalnızca x86 hedefleyen derleyicilerde kullanılabilir ve diğer mimarileri hedefleyen derleyiciler tarafından göz ardı edilir.
+**/Gz** ; üye işlevleri, `main`adlı işlevler ve `__cdecl`C++ , `__fastcall`veya `__vectorcall`olarak işaretlenen işlevler hariç tüm işlevler için çağrı kuralı `__stdcall` belirtir. Tüm `__stdcall` işlevleri prototiptürlerine sahip olmalıdır. Bu çağırma kuralı yalnızca x86 'yi hedefleyen derleyicilerde kullanılabilir ve diğer mimarileri hedefleyen derleyiciler tarafından yok sayılır.
 
-**/GV** belirtir `__vectorcall` hariç tüm işlevler çağırma kuralını C++ üye işlevleri, İşlevler adlı `main`, içeren işlevler bir `vararg` bağımsız değişken listesi veya çakışan ile işaretlenen İşlevler `__cdecl`, `__stdcall`, veya `__fastcall` özniteliği. Bu çağırma kuralı yalnızca/arch: SSE2 desteği x86 ve x64 mimarilerde ve üzerinde kullanılabilir ve ARM mimarisini hedefleyen derleyiciler tarafından göz ardı edilir.
+**/GV** ; üye işlevleri, `main`adlı işlevler, `vararg` C++ değişken bağımsız değişken listesi olan işlevler veya çakışan bir `__cdecl`, `__stdcall`veya `__fastcall` özniteliğiyle işaretlenmiş işlevler dışındaki tüm işlevler için `__vectorcall` çağırma kuralını belirtir. Bu çağırma kuralı yalnızca/Arch: SSE2 ve üstünü destekleyen x86 ve x64 mimarilerinde kullanılabilir ve ARM mimarisini hedefleyen derleyiciler tarafından yok sayılır.
 
-Değişken sayıda bağımsız değişkenler almayan işlevleri işaretlenmelidir `__cdecl`.
+Değişken sayıda bağımsız değişken alan işlevlerin `__cdecl`olarak işaretlenmesi gerekir.
 
-**/Gd**, **GR**, **GV** ve **/Gz** ile uyumlu [/CLR: safe](clr-common-language-runtime-compilation.md) veya   **/CLR: pure**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerde desteklenmiyor.
+**/GD**, **/gr**, **/GV** ve **/gz** [/clr: Safe](clr-common-language-runtime-compilation.md) veya **/clr: Pure**ile uyumlu değildir. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ve sonrasında desteklenmez.
 
 > [!NOTE]
-> X86 için varsayılan olarak işlemciler C++ üye işlevleri kullanmak [__thiscall](../../cpp/thiscall.md).
+> Varsayılan olarak, C++ x86 işlemcileri için üye işlevleri [__thiscall](../../cpp/thiscall.md)kullanır.
 
-Tüm işlemciler için açıkça olarak işaretlenen bir üye işlev `__cdecl`, `__fastcall`, `__vectorcall`, veya `__stdcall` o mimaride yok sayılmıyorsa belirli çağrı kuralını kullanır. Değişken sayıda bağımsız değişken kullanan her zaman alan bir üye işlev `__cdecl` çağırma kuralı.
+Tüm işlemciler için, açıkça `__cdecl`, `__fastcall`, `__vectorcall`veya `__stdcall` olarak işaretlenen bir üye işlevi, Bu mimaride yok sayılmaması durumunda belirtilen çağırma kuralını kullanır. Değişken sayıda bağımsız değişken alan bir üye işlevi her zaman `__cdecl` çağırma kuralını kullanır.
 
-Bu derleyici seçeneklerinin, C++ yöntemleri ve işlevlerinin ad düzenlemesi üzerine hiçbir etkisi. Olarak bildirilmedikleri sürece `extern "C"`, C++ yöntemleri ve işlevleri farklı bir ad dekorasyon düzeni kullanın. Daha fazla bilgi için [düzenlenmiş adlar](decorated-names.md).
+Bu derleyici seçeneklerinin, C++ yöntemlerin ve işlevlerin ad dekorasyonu üzerinde hiçbir etkisi yoktur. `extern "C"`olarak bildirildiği sürece, C++ Yöntemler ve işlevler farklı bir ad dekorasyon şeması kullanır. Daha fazla bilgi için bkz. [düzenlenmiş adlar](decorated-names.md).
 
 Çağırma kuralları hakkında daha fazla bilgi için bkz. [çağırma kuralları](../../cpp/calling-conventions.md).
 
-## <a name="cdecl-specifics"></a>__cdecl özellikleri
+## <a name="__cdecl-specifics"></a>__cdecl özellikleri
 
-X86 işlemcilerde, tüm işlev bağımsız değişkenleri Kalanlar yığın üzerinde sağdan sola. ARM ve x64 mimarilerinde, bazı bağımsız değişkenler kayıt tarafından geçirilir ve geri Kalanlar yığın üzerinde sağdan sola. Çağıran yordam, yığından bağımsız değişkenleri yığından açar.
+X86 işlemcilerde, tüm işlev bağımsız değişkenleri yığına sağdan sola geçirilir. ARM ve x64 mimarilerinde bazı bağımsız değişkenler kayıt tarafından geçirilir ve geri kalan, yığına sağdan sola geçirilir. Çağıran yordam, yığındaki bağımsız değişkenleri açılır.
 
-C'de, `__cdecl` kuralı kullanan bir işlev adı adlandırma öncesinde bir alt çizgi ( `_` ); durum çevirisi yapılmaz. Olarak bildirilmedikleri sürece `extern "C"`, C++ işlevleri farklı bir ad dekorasyon düzeni kullanır. Daha fazla bilgi için [düzenlenmiş adlar](decorated-names.md).
+C için `__cdecl` adlandırma kuralı, önce bir alt çizgi (`_`) tarafından işlev adını kullanır; durum çevirisi yapılmaz. `extern "C"`olarak bildirildiği sürece, C++ işlevler farklı bir ad dekorasyon şeması kullanır. Daha fazla bilgi için bkz. [düzenlenmiş adlar](decorated-names.md).
 
-## <a name="fastcall-specifics"></a>__fastcall özellikleri
+## <a name="__fastcall-specifics"></a>__fastcall özellikleri
 
-Bazı bir `__fastcall` işlev bağımsız yazmaçlara geçirilir (x86 için işlemciler, ECX ve EDX), ve geri kalan yığın üstüne sağdan sola itilir. Çağırılan rutin, döndürülmeden önce yığından bu bağımsız değişkenleri yığından açar. Genellikle, **GR** yürütme süresini azaltır.
+Bir `__fastcall` işlevinin bağımsız değişkenlerinden bazıları yazmaçlara geçirilir (x86 işlemcileri, ECX ve EDX için) ve REST, yığının üzerine sağdan sola gönderilir. Çağrılan yordam, döndürülmeden önce bu bağımsız değişkenleri yığından çıkarır. Genellikle, **/gr** yürütme süresini azaltır.
 
 > [!NOTE]
-> Kullanırken dikkatli olun `__fastcall` satır içi derleme dilinde yazılmış bir işlev çağırma kuralını. Yazmaçların kullanımı derleyicinin kullanımıyla çakışabilir.
+> Satır içi derleme dilinde yazılmış herhangi bir işlev için `__fastcall` çağırma kuralını kullanırken dikkatli olun. Kayıt kullanımı derleyicinin kullanımıyla çakışabilir.
 
-C'de, `__fastcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir at işareti ( **\@** ) işlev bağımsız değişkenlerinin bayt cinsinden boyutu ardından. Durum çevirisi yok gerçekleştirilir. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
+C için `__fastcall` adlandırma kuralı, önce bir at işareti ( **\@** ) ve ardından işlev bağımsız değişkenlerinin bayt cinsinden boyutu ile işlev adını kullanır. Durum çevirisi yapılmaz. Derleyici bu şablonu adlandırma kuralı için kullanır:
 
 `@function_name@number`
 
-Kullanırken `__fastcall` dosyalarını adlandırma kuralını kullanın. Aksi takdirde, çözülmemiş dış başvurular alırsınız.
+`__fastcall` adlandırma kuralını kullandığınızda, standart içerme dosyalarını kullanın. Aksi takdirde, çözümlenmemiş dış başvurular alırsınız.
 
-## <a name="stdcall-specifics"></a>__stdcall özellikleri
+## <a name="__stdcall-specifics"></a>__stdcall özellikleri
 
-A `__stdcall` işlevinin bağımsız değişkenleri sağdan sola yığın itilir ve çağrılan işlev döndürülmeden önce yığından bu bağımsız yığından açar.
+Bir `__stdcall` işlevin bağımsız değişkenleri, sağdan sola yığına gönderilir ve çağrılan işlev, döndürülmeden önce bu bağımsız değişkenleri yığından yükler.
 
-C'de, `__stdcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir alt çizgi ( **\_** ) ve ardından bir at işareti ( **\@** ) ve işlevin boyutu bayt cinsinden bağımsız değişkenler. Gerçekleşen durum çevirisi yok. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
+C için `__stdcall` adlandırma kuralı, önce bir alt çizgi ( **\_** ) ve ardından bir at işareti ( **\@** ) ve işlev bağımsız değişkenlerinin bayt cinsinden boyutu ile işlev adını kullanır. Durum çevirisi yapılmaz. Derleyici bu şablonu adlandırma kuralı için kullanır:
 
 `_functionname@number`
 
-## <a name="vectorcall-specifics"></a>__vectorcall özellikleri
+## <a name="__vectorcall-specifics"></a>__vectorcall özellikleri
 
-A `__vectorcall` işlevinin tamsayı değişkenleri (x x86) iki veya dört (x x64) kullanılarak değerle geçirilir tamsayı kaydeder ve en fazla altı XMM için kayan nokta ve vektör değerleri ve geri Kalanlar yığın üzerinde sağdan sola. Çağrılan işlev, döndürülmeden önce yığını temizler. XMM0'vektör ve kayan nokta dönüş değerleri döndürülür.
+`__vectorcall` işlevin tamsayı bağımsız değişkenleri değere göre geçirilir, en fazla iki (x86) veya dört (x64) tamsayı Yazmaçları, kayan nokta ve vektör değerleri için en fazla altı XMM kaydı ve REST, yığın üzerine sağdan sola geçirilir. Çağrılan işlev, döndürülmadan önce yığını temizler. Vektör ve kayan nokta dönüş değerleri XMM0 içinde döndürülür.
 
-C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullanır ( **\@\@** ) ve işlev bağımsız değişkenlerinin bayt cinsinden boyutu. Gerçekleşen durum çevirisi yok. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
+C için `__vectorcall` adlandırma kuralı, işlev adını izleyen iki işareti ( **\@\@** ) ve işlev bağımsız değişkenlerinin bayt cinsinden boyutunu kullanır. Durum çevirisi yapılmaz. Derleyici bu şablonu adlandırma kuralı için kullanır:
 
 `functionname@@number`
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **C/C++**  > **Gelişmiş** özellik sayfası.
+1. **C/C++**  > **Gelişmiş** özellik sayfasını seçin.
 
-1. Değiştirme **çağırma kuralı** özelliği.
+1. **Çağırma kuralı** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -113,3 +112,4 @@ C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullan
 
 - [MSVC Derleyicisi Seçenekleri](compiler-options.md)
 - [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+ 

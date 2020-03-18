@@ -1,28 +1,26 @@
 ---
 title: Geriye Dönük Uyumluluk
 ms.date: 11/04/2016
-f1_keywords:
-- c.programs
 helpviewer_keywords:
 - CRT, compatibility
 - backward compatibility, C run-time libraries
 - compatibility, C run-time libraries
 - backward compatibility
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
-ms.openlocfilehash: f672f0601a9d20a726f90963265d08ec212dedce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c2b4570e5e3131911e7f424280f16e9977f047e
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290371"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438567"
 ---
 # <a name="backward-compatibility"></a>Geriye Dönük Uyumluluk
 
-Kitaplık OLDNAMES ürün sürümleri arasında uyumluluk için. LIB eski adları için yeni adlarını eşler. Örneğin, `open` eşlendiği `_open`. Açıkça OLDNAMES ile bağlanmanız gerekir. Yalnızca komut satırı seçenekleri aşağıdaki birleşimler ile derlerken LIB:
+Ürün sürümleri arasındaki uyumluluk için, kitaplık OLDNAMES. LıB eski adları yeni adlara eşler. Örneğin, `open` `_open`eşlenir. OLDNAMES ile açıkça bağlantı oluşturmanız gerekir. Yalnızca aşağıdaki komut satırı seçenekleri birleşimleriyle derleme yaptığınızda LIB:
 
-- `/Zl` (nesne dosya varsayılan kitaplık adını atla) ve `/Ze` (varsayılan: Microsoft uzantıları kullanın)
+- `/Zl` (varsayılan kitaplık adını nesne dosyasından atla) ve `/Ze` (varsayılan — Microsoft uzantıları kullanın)
 
-- `/link` (Bağlayıcı-denetimi) `/NOD` (varsayılan kitaplık arama), ve `/Ze`
+- `/link` (bağlayıcı denetimi), `/NOD` (varsayılan kitaplık arama yok) ve `/Ze`
 
 Derleyici komut satırı seçenekleri hakkında daha fazla bilgi için bkz. [derleyici başvurusu](../build/reference/compiler-options.md).
 

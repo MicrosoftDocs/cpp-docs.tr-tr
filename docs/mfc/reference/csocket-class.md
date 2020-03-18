@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CSocket [MFC], OnMessagePending
 ms.assetid: 7f23c081-d24d-42e3-b511-8053ca53d729
 ms.openlocfilehash: a861e557b7368d13d615aaf796faded93c72b040
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854603"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421172"
 ---
 # <a name="csocket-class"></a>CSocket sınıfı
 
@@ -41,13 +41,13 @@ class CSocket : public CAsyncSocket
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CSocket:: CSocket](#csocket)|`CSocket` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CSocket:: Attach](#attach)|Bir `CSocket` nesnesine bir yuva tutamacı iliştirir.|
 |[CSocket:: CancelBlockingCall](#cancelblockingcall)|Şu anda devam eden bir engelleme çağrısını iptal eder.|
@@ -57,7 +57,7 @@ class CSocket : public CAsyncSocket
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CSocket:: OnMessagePending](#onmessagepending)|Bir engelleme çağrısının tamamlanmasını beklerken bekleyen iletileri işlemek için çağırılır.|
 

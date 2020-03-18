@@ -44,8 +44,8 @@ ms.openlocfilehash: ec6fced70a53d27fdb3312a5b349e9e653ccbd24
 ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79128591"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422110"
 ---
 # <a name="basic_filebuf-class"></a>basic_filebuf Sınıfı
 

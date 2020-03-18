@@ -312,11 +312,11 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
 ms.openlocfilehash: d2af7a808e07e0368dd43ed920b6d8736a90b995
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78870005"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420227"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 
@@ -334,14 +334,14 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`CMFCToolBar::CMFCToolBar`|Varsayılan Oluşturucu.|
 |`CMFCToolBar::~CMFCToolBar`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBar:: Addbasickomutu](#addbasiccommand)|Kullanıcı bir menü açtığında her zaman görüntülenen komutlar listesine bir menü komutu ekler.|
 |[CMFCToolBar:: AddCommandUsage](#addcommandusage)|Verilen komutla ilişkili bir sayaca göre artar.|
@@ -493,7 +493,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBar:: AllowShowOnList](#allowshowonlist)|Araç çubuğunun **Özelleştir** Iletişim kutusunun **araç çubukları** bölmesindeki listede görüntülenip görüntülenmeyeceğini belirler.|
 |[CMFCToolBar:: CalcMaxButtonHeight](#calcmaxbuttonheight)|Araç çubuğundaki bir düğmenin en büyük yüksekliğini hesaplar.|
@@ -504,7 +504,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBar:: m_bDontScaleImages](#m_bdontscaleimages)|Toolbar görüntülerinin yüksek DPı modunda ölçeklenemeyeceğini veya başlatılmayacağını belirtir.|
 |[CMFCToolBar:: m_dblLargeImageRatio](#m_dbllargeimageratio)|Büyük görüntülerin boyutu (yükseklik veya genişlik) ile normal görüntülerin boyutu arasındaki oranı belirtir.|
@@ -1402,7 +1402,7 @@ UINT GetButtonStyle(int nIndex) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu düğmesinin stilini belirten bir değer. arasında yetersiz alanla karşılaştı. Olası stillerin listesi için bkz. [araç çubuğu denetim stilleri](../../mfc/reference/toolbar-control-styles.md) .
+Araç çubuğu düğmesinin stilini belirten bir değer. biçimindeki telefon numarasıdır. Olası stillerin listesi için bkz. [araç çubuğu denetim stilleri](../../mfc/reference/toolbar-control-styles.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 

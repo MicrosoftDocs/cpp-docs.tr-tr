@@ -87,16 +87,16 @@ helpviewer_keywords:
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
 ms.openlocfilehash: 7881b1d6775206fbea40c3ba4b15572a6d4b3580
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865153"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421683"
 ---
 # <a name="hash_multiset-class"></a>hash_multiset Sınıfı
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Kapsayıcı sınıfı hash_multiset C++ standart kitaplığın bir uzantısıdır ve içinde bulunan öğelerin değerlerinin anahtar değerler olarak kullanılacağı ve benzersiz olması gerekmediği bir koleksiyondaki verilerin depolanması ve hızlı bir şekilde alınması için kullanılır.
 
@@ -217,7 +217,7 @@ Hash_multiset sınıfı tarafından sunulan Yineleyici, çift yönlü bir yinele
 ## <a name="allocator_type"></a>hash_multiset:: allocator_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
@@ -232,7 +232,7 @@ Bir örnek için bkz. `allocator_type` kullanarak [get_allocator](#get_allocator
 ## <a name="begin"></a>hash_multiset:: Begin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -293,7 +293,7 @@ The first element of hms1 is now 2
 ## <a name="cbegin"></a>hash_multiset:: cbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset ilk öğeyi ele alan bir const yineleyici döndürür.
 
@@ -340,7 +340,7 @@ The first element of hs1 is 1
 ## <a name="cend"></a>hash_multiset:: cend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -388,7 +388,7 @@ The last element of hs1 is 3
 ## <a name="clear"></a>hash_multiset:: Clear
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset tüm öğelerini siler.
 
@@ -432,7 +432,7 @@ The size of the hash_multiset after clearing is 0.
 ## <a name="const_iterator"></a>hash_multiset:: const_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -451,7 +451,7 @@ Bir tür `const_iterator`, bir öğenin değerini değiştirmek için kullanıla
 ## <a name="const_pointer"></a>hash_multiset:: const_pointer
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset bir **const** öğesine işaretçi sağlayan bir tür.
 
@@ -468,7 +468,7 @@ Bir tür `const_pointer`, bir öğenin değerini değiştirmek için kullanılam
 ## <a name="const_reference"></a>hash_multiset:: const_reference
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 **Const** işlemlerini okumak ve gerçekleştirmek için bir hash_multiset depolanan **const** öğesine başvuru sağlayan bir tür.
 
@@ -515,7 +515,7 @@ The first element in the hash_multiset is 10.
 ## <a name="const_reverse_iterator"></a>hash_multiset:: const_reverse_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -534,7 +534,7 @@ Bir tür `const_reverse_iterator`, bir öğenin değerini değiştiremez ve hash
 ## <a name="count"></a>hash_multiset:: Count
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir hash_multiset öğe sayısını döndürür.
 
@@ -597,7 +597,7 @@ The number of elements in hms1 with a sort key of 2 is: 0.
 ## <a name="crbegin"></a>hash_multiset:: crbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Ters çevrilen hash_multiset ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -649,7 +649,7 @@ The first element in the reversed hash_multiset is 30.
 ## <a name="crend"></a>hash_multiset:: crend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Ters çevrilen hash_multiset son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -702,7 +702,7 @@ The last element in the reversed hash_multiset is 10.
 ## <a name="difference_type"></a>hash_multiset::d ifference_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Aynı hash_multiset içindeki öğeleri ele alan iki yineleyiciler arasındaki farkı sağlayan işaretli bir tamsayı türü.
 
@@ -782,7 +782,7 @@ The number of elements in the hash_multiset hms1 is 3.
 ## <a name="emplace"></a>hash_multiset:: emplace
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir hash_multiset içinde oluşturulmuş bir öğe ekler.
 
@@ -832,7 +832,7 @@ After the emplace insertion, hms3 contains a.
 ## <a name="emplace_hint"></a>hash_multiset:: emplace_hint
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Yerleştirme ipucuyla birlikte hash_multiset oluşturulan bir öğe ekler.
 
@@ -888,7 +888,7 @@ After the emplace insertion, hms1 contains a.
 ## <a name="empty"></a>hash_multiset:: boş
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset boş ise sınar.
 
@@ -937,7 +937,7 @@ The hash_multiset hms2 is empty.
 ## <a name="end"></a>hash_multiset:: End
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -1000,7 +1000,7 @@ The last element of hms1 is now 2
 ## <a name="equal_range"></a>hash_multiset:: equal_range
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Belirtilen anahtardan daha büyük bir anahtarla ve anahtardan daha büyük veya ona eşit olan bir anahtarla hash_multiset ilk öğe olan bir hash_multiset yineleyicilerin bir çiftini döndürür.
 
@@ -1087,7 +1087,7 @@ The hash_multiset hms1 doesn't have an element with a key less than 40.
 ## <a name="erase"></a>hash_multiset:: Erase
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Belirtilen konumlardan bir hash_multiset öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1210,7 +1210,7 @@ is deleted, the hash_multiset hms3 is: 0 3.
 ## <a name="find"></a>hash_multiset:: Find
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Belirtilen anahtara eşdeğer bir anahtara sahip bir hash_multiset öğenin konumunu ele alan bir yineleyici döndürür.
 
@@ -1288,7 +1288,7 @@ The element of hms1 with a key matching that of the last element is: 30.
 ## <a name="get_allocator"></a>hash_multiset:: get_allocator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1364,7 +1364,7 @@ int main( )
 ## <a name="hash_multiset"></a>hash_multiset:: hash_multiset
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Boş olan veya diğer bir `hash_multiset`tümünün veya bir kısmının kopyası olan bir `hash_multiset` oluşturur.
 
@@ -1451,7 +1451,7 @@ Karma küme kapsayıcısındaki öğelerin gerçek sırası, karma işleve, sır
 ## <a name="insert"></a>hash_multiset:: INSERT
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir hash_multiset öğe veya öğe aralığı ekler.
 
@@ -1520,7 +1520,7 @@ Ekleme noktası *nerede*olursa, ekleme noktası, Logaritmik süre yerine, ekleme
 ## <a name="iterator"></a>hash_multiset:: Yineleyici
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir hash_multiset herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -1539,7 +1539,7 @@ Bir tür `iterator`, bir öğenin değerini değiştirmek için kullanılabilir.
 ## <a name="key_comp"></a>hash_multiset:: key_comp
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -1615,7 +1615,7 @@ int main( )
 ## <a name="key_compare"></a>hash_multiset:: key_compare
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 İki işlev nesnesi sağlayan bir tür, bir hash_multiset iki öğe değerini karşılaştırabilir ve öğelerin karma oluşturan birli bir koşulu tespit edebilir.
 
@@ -1638,7 +1638,7 @@ Hem `key_compare` hem de value_compare şablon parametresi *nitelikleri*için e�
 ## <a name="key_type"></a>hash_multiset:: key_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset iki öğenin göreli sırasını belirlemede sıralama anahtarlarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
@@ -1661,7 +1661,7 @@ typedef Key key_type;
 ## <a name="lower_bound"></a>hash_multiset:: lower_bound
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla bir hash_multiset ilk öğeye döndürür.
 
@@ -1728,7 +1728,7 @@ int main() {
 ## <a name="max_size"></a>hash_multiset:: max_size
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset maksimum uzunluğunu döndürür.
 
@@ -1766,7 +1766,7 @@ int main( )
 ## <a name="op_eq"></a>hash_multiset:: operator =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset öğelerini başka bir hash_multiset kopyasıyla değiştirir.
 
@@ -1827,7 +1827,7 @@ int main( )
 ## <a name="pointer"></a>hash_multiset::p oınter
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset bir öğeye işaretçi sağlayan bir tür.
 
@@ -1844,7 +1844,7 @@ Bir tür `pointer`, bir öğenin değerini değiştirmek için kullanılabilir.
 ## <a name="rbegin"></a>hash_multiset:: rbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Ters çevrilen hash_multiset ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -1927,7 +1927,7 @@ After the erasure, the first element in the reversed hash_multiset is 20.
 ## <a name="reference"></a>hash_multiset:: Reference
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -1977,7 +1977,7 @@ The first element in the hash_multiset is now 15.
 ## <a name="rend"></a>hash_multiset:: rend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Ters çevrilen hash_multiset son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -2063,7 +2063,7 @@ After the erasure, the last element in the reversed hash_multiset is 20.
 ## <a name="reverse_iterator"></a>hash_multiset:: reverse_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Ters çevrilen bir hash_multiset bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -2082,7 +2082,7 @@ Bir tür `reverse_iterator`, hash_multiset doğru bir şekilde yinelemek için k
 ## <a name="size"></a>hash_multiset:: size
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Hash_multiset öğe sayısını döndürür.
 
@@ -2129,7 +2129,7 @@ The hash_multiset length is now 2.
 ## <a name="size_type"></a>hash_multiset:: size_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir hash_multiset öğe sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -2146,7 +2146,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 ## <a name="swap"></a>hash_multiset:: swap
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 İki hash_multisets öğelerini değiş tokuş eder.
 
@@ -2220,7 +2220,7 @@ After swapping with hms3, list hms1 is: 300.
 ## <a name="upper_bound"></a>hash_multiset:: upper_bound
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla bir hash_multiset ilk öğeye döndürür.
 
@@ -2298,7 +2298,7 @@ that of the initial element of hms1 is: 20.
 ## <a name="value_comp"></a>hash_multiset:: value_comp
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir hash_multiset öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -2379,7 +2379,7 @@ vc2( 2,3 ) returns value of false, where vc2 is the function object of hms2.
 ## <a name="value_compare"></a>hash_multiset:: value_compare
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 İki işlev nesnesi sağlayan bir tür, bir hash_multiset iki öğe değerini karşılaştırabilir ve öğelerin karma oluşturan birli bir koşulu tespit edebilir.
 
@@ -2402,7 +2402,7 @@ Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi *nite
 ## <a name="value_type"></a>hash_multiset:: value_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multiset sınıfıdır](../standard-library/unordered-multiset-class.md).
 
 Bir nesne olarak, bir değer olarak hash_multiset bir öğe olarak depolanan bir nesne tanımlayan tür.
 

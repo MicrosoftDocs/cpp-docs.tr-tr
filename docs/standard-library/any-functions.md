@@ -6,11 +6,11 @@ f1_keywords:
 - any/std::make_any
 - any/std::swap
 ms.openlocfilehash: bb5f8b4411477cfcd33613ee0395227dced784f6
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875916"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422054"
 ---
 # <a name="ltanygt-functions"></a>Tüm&gt; işlevleri &lt;
 

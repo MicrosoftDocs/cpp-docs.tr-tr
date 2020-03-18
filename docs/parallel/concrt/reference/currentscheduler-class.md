@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CurrentScheduler class
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
 ms.openlocfilehash: 6bf61af9ff55722553353a045c87501dbd27fad9
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867151"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422187"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 
@@ -36,12 +36,12 @@ class CurrentScheduler;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Oluşturma](#create)|Davranışı `_Policy` parametresi tarafından tanımlanan ve bunu çağıran bağlama bağlayan yeni bir zamanlayıcı oluşturur. Yeni oluşturulan Zamanlayıcı, çağıran bağlam için geçerli Zamanlayıcı olur.|
-|[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Çağırma bağlamıyla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. `_Placement` parametresini alan sürüm, yeni oluşturulan zamanlama grubundaki görevlerin Bu parametre tarafından belirtilen konumda yürütülmeye dahil edilmesine neden olur.|
+|[CreateScheduleGroup](#createschedulegroup)|Aşırı yüklendi. Çağırma bağlamıyla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. `_Placement` parametresini alan sürüm, yeni oluşturulan zamanlama grubundaki görevlerin Bu parametre tarafından belirtilen konumda yürütülmeye dahil edilmesine neden olur.|
 |[Detach](#detach)|Geçerli zamanlayıcıyı çağıran bağlamdan ayırır ve varsa, önceden eklenmiş olan zamanlayıcıyı geçerli Zamanlayıcı olarak geri yükler. Bu yöntem çağrıldıktan sonra, çağıran bağlam daha önce `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi kullanılarak bağlama eklenmiş olan Zamanlayıcı tarafından yönetilir.|
 |[Get](#get)|Geçerli Zamanlayıcı olarak da adlandırılan çağırma bağlamıyla ilişkili Scheduler 'a bir işaretçi döndürür.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Çağıran bağlamla ilişkili Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.|
@@ -49,7 +49,7 @@ class CurrentScheduler;
 |[Kimlik](#id)|Geçerli Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
 |[IsAvailableLocation](#isavailablelocation)|Belirli bir konumun geçerli Scheduler 'da kullanılabilir olup olmadığını belirler.|
 |[RegisterShutdownEvent](#registershutdownevent)|Geçerli bağlamla ilişkilendirilen Zamanlayıcı kapandığı ve kendisi yok edildiğinde `_ShutdownEvent` parametresinde geçirilen Windows olay tanıtıcısına neden olur. Olaya işaret edilen zaman, Scheduler 'a zamanlanan tüm işler tamamlanmıştır. Birden çok kapanmaya yönelik olay, bu yöntem kullanılarak kaydedilebilir.|
-|[ScheduleTask](#scheduletask)|Fazla Yüklendi. Çağırma bağlamıyla ilişkili Zamanlayıcı içinde bir hafif görevi zamanlar. Hafif görev, çalışma zamanı tarafından belirlenen bir zamanlama grubuna yerleştirilir. `_Placement` parametresini alan sürüm, görevin belirtilen konumda yürütülerek aşağı doğru kaydırılmasına neden olur.|
+|[ScheduleTask](#scheduletask)|Aşırı yüklendi. Çağırma bağlamıyla ilişkili Zamanlayıcı içinde bir hafif görevi zamanlar. Hafif görev, çalışma zamanı tarafından belirlenen bir zamanlama grubuna yerleştirilir. `_Placement` parametresini alan sürüm, görevin belirtilen konumda yürütülerek aşağı doğru kaydırılmasına neden olur.|
 
 ## <a name="remarks"></a>Açıklamalar
 

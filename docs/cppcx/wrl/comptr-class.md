@@ -52,11 +52,11 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
 ms.openlocfilehash: 1e20a991c8f32027aeea6a17df0534aa6e1c2c43
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865723"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418323"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -94,14 +94,14 @@ Adı            | Açıklama
 --------------- | ---------------------------------------------------------------
 `InterfaceType` | *T* şablonu parametresi tarafından belirtilen tür için eş anlamlı.
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 Adı                             | Açıklama
 -------------------------------- | --------------------------------------------------------------------------------------------------------------------
 [ComPtr:: ComPtr](#comptr)        | `ComPtr` sınıfının yeni bir örneğini başlattıktan sonra. Aşırı yüklemeler varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları sağlar.
 [ComPtr:: ~ ComPtr](#tilde-comptr) | Bir `ComPtr`örneğini kaldırır.
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 Adı                                                      | Açıklama
 --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -124,7 +124,7 @@ Adı                                        | Açıklama
 [ComPtr:: InternalAddRef](#internaladdref)   | Bu `ComPtr`ilişkili arabirimin başvuru sayısını artırır.
 [ComPtr:: InternalRelease](#internalrelease) | Bu `ComPtr`ilişkili arabirim üzerinde bir COM serbest bırakma işlemi gerçekleştirir.
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 Adı                                                                                           | Açıklama
 ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------

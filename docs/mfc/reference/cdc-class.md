@@ -403,11 +403,11 @@ helpviewer_keywords:
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
 ms.openlocfilehash: bae2f9a5a4f39c4eeffe68cc33e744e44c6800c8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855579"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420682"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -423,13 +423,13 @@ class CDC : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDC:: CDC](#cdc)|`CDC` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDC:: AbortDoc](#abortdoc)|`StartDoc` member işlevinin son çağrısından bu yana uygulamanın cihaza yazdığı her şeyi silerek geçerli yazdırma işini sonlandırır.|
 |[CDC:: AbortPath](#abortpath)|Cihaz bağlamındaki tüm yolları kapatır ve atar.|
@@ -629,13 +629,13 @@ class CDC : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDC:: operator HDC](#operator_hdc)|Cihaz bağlamının tanıtıcısını alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDC:: m_hAttribDC](#m_hattribdc)|Bu `CDC` nesnesi tarafından kullanılan öznitelik-cihaz bağlamı.|
 |[CDC:: m_hDC](#m_hdc)|Bu `CDC` nesnesi tarafından kullanılan çıkış aygıtı bağlamı.|
@@ -3177,7 +3177,7 @@ Bilgilerin döndürüleceği karakteri belirtir.
 *nFormat*<br/>
 İşlevin bilgi döndürmek için olduğu biçimi belirtir. Aşağıdaki değerlerden biri olabilir veya 0:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |GGO_BITMAP|Glif bit eşlemini döndürür. İşlev döndürüldüğünde, *lpBuffer* tarafından işaret edilen arabellek, satırları doubleword sınırları üzerinde başlayan bir piksel başına 1 bit eşlem içerir.|
 |GGO_NATIVE|Cihaz birimleri kullanarak, tarayıcının yerel biçimindeki eğri veri noktalarını döndürür. Bu değer belirtildiğinde, *lpmat2* içinde belirtilen herhangi bir dönüşüm yok sayılır.|
@@ -6022,7 +6022,7 @@ DWORD SetLayout(DWORD dwLayout);
 *dwLayout*<br/>
 Cihaz bağlamı düzeni ve bit eşlem denetim bayrakları. Aşağıdaki değerlerin bir birleşimi olabilir.
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |LAYOUT_BITMAPORIENTATIONPRESERVED|[CDC:: BitBlt](#bitblt) ve [CDC:: ırblt](#stretchblt)çağrıları için herhangi bir yansımayı devre dışı bırakır.|
 |LAYOUT_RTL|Varsayılan yatay düzeni sağdan sola olacak şekilde ayarlar.|
@@ -6363,7 +6363,7 @@ Metin hizalama bayraklarını belirtir. Bayraklar, bir nokta ile metni sınıral
 
 - TA_CENTER, noktayı sınırlayıcı dikdörtgenin yatay merkezine hizalar.
 
-- TA_LEFT, noktayı sınırlayıcı dikdörtgenin sol tarafıyla hizalar. Bu varsayılan ayardır.
+- TA_LEFT, noktayı sınırlayıcı dikdörtgenin sol tarafıyla hizalar. Varsayılan ayar budur.
 
 - TA_RIGHT, noktayı sınırlayıcı dikdörtgenin sağ tarafıyla hizalar.
 
@@ -6373,11 +6373,11 @@ Metin hizalama bayraklarını belirtir. Bayraklar, bir nokta ile metni sınıral
 
 - TA_BOTTOM, noktayı sınırlayıcı dikdörtgenin alt tarafıyla hizalar.
 
-- TA_TOP, noktayı sınırlayıcı dikdörtgenin en üstüne hizalar. Bu varsayılan ayardır.
+- TA_TOP, noktayı sınırlayıcı dikdörtgenin en üstüne hizalar. Varsayılan ayar budur.
 
 Üçüncü kategori, metin yazıldığında geçerli konumun güncelleştirilip güncelleştirilmediğini belirler:
 
-- TA_NOUPDATECP, bir metin çıkışı işlevine yapılan her çağrıdan sonra geçerli konumu güncelleştirmez. Bu varsayılan ayardır.
+- TA_NOUPDATECP, bir metin çıkışı işlevine yapılan her çağrıdan sonra geçerli konumu güncelleştirmez. Varsayılan ayar budur.
 
 - TA_UPDATECP, bir metin çıkışı işlevine yapılan her çağrıdan sonra geçerli x konumunu güncelleştirir. Yeni konum metin için sınırlayıcı dikdörtgenin sağ tarafındadır. Bu bayrak ayarlandığında, `TextOut` üye işlevine yapılan çağrılarında belirtilen koordinatlar yok sayılır.
 

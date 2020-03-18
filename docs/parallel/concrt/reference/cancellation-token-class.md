@@ -14,11 +14,11 @@ helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
 ms.openlocfilehash: 34743ce48510eec9d8f7862e5ed951a722932962
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876080"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422243"
 ---
 # <a name="cancellation_token-class"></a>cancellation_token Sınıfı
 
@@ -32,14 +32,14 @@ class cancellation_token;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[cancellation_token](#ctor)||
 |[~ cancellation_token yok edici](#dtor)||
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -49,7 +49,7 @@ class cancellation_token;
 |[seçim](#none)|İptal 'e hiçbir şekilde tabi olmayan bir iptal belirteci döndürür.|
 |[register_callback](#register_callback)|Belirteç ile bir geri çağırma işlevi kaydeder. Belirteç iptal edildiğinde, geri çağırma yapılır. Belirteç bu yöntemin çağrıldığı noktada zaten iptal edilirse, geri çağırma işlemi hemen ve zaman uyumlu olarak yapılır.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

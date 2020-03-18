@@ -4,12 +4,12 @@ description: Kodunuzu biçimlendirmek C++ , gezinmek, anlamak ve yeniden düzenl
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ms.topic: overview
-ms.openlocfilehash: 2da1b38d2f5bb61edb473e5909b76225f214a116
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: da3f4e7d783561dba8250652a0715e51e71cc387
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274784"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438156"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodu düzenleme ve yeniden düzenleme
 
@@ -23,7 +23,7 @@ IntelliSense, siz yazarken sizin için semboller ve kod parçacıkları öneren 
 
 Sonuçların daralmasına yardımcı olmak için bazı semboller otomatik olarak atlanır. Örneğin, sınıfın dışından bir sınıf nesnesi üyelerine erişirken, varsayılan olarak veya korumalı Üyeler (bir alt sınıf bağlamında değilseniz) özel üyeleri göremezsiniz. En alttaki düğmeleri kullanarak filtrelemeyi ayarlayabilirsiniz.
 
-Aşağı açılan listeden simgeyi seçtikten sonra, bunu **sekme**, **girme**veya diğer tamamlama karakterlerinden biri ile (varsayılan olarak: {} [ ]().,:; +-*/% & | ^! =? @ #\)) kullanarak otomatik hale getirebilirsiniz. Bu listeye karakter eklemek veya kaldırmak için **Hızlı başlatma** bölümünde "IntelliSense" araması yapın (CTRL + Q) ve **metin düzenleyici > CC++ /> Advanced** seçeneğini belirleyin. **Üye listesi tamamlama karakterleri** seçeneği, listeyi istediğiniz değişikliklerle özelleştirmenizi sağlar.
+Aşağı açılan listeden simgeyi seçtikten sonra, **sekme**, **ENTER**veya diğer tamamlama karakterlerinden biri (varsayılan olarak: `{ } [ ] ( ) . , : ; + - * / % & | ^ ! = ? @ # \`) ile otomatik olarak yeniden deneyebilirsiniz. Bu listeye karakter eklemek veya kaldırmak için **Hızlı başlatma** bölümünde "IntelliSense" araması yapın (CTRL + Q) ve **metin düzenleyici > CC++ /> Advanced** seçeneğini belirleyin. **Üye listesi tamamlama karakterleri** seçeneği, listeyi istediğiniz değişikliklerle özelleştirmenizi sağlar.
 
 **Üye listesi filtre modu** seçeneği, ne tür IntelliSense AutoComplete önerilerini görmenizi denetler. Varsayılan olarak, **belirsiz**olarak ayarlanır. Benzer bir aramada, *Myawesomeclass*adlı bir sembolünüz varsa, "Mac" yazabilir ve otomatik tamamlama önerileriniz içinde sınıfı bulabilirsiniz. Benzer algoritma, simgelerin listede görünmesi için uyması gereken minimum eşiği ayarlar. **Akıllı** filtreleme, yazdıklarınız ile eşleşen alt dizeleri içeren tüm sembolleri görüntüler. **Ön ek** filtrelemesi, yazdıklarıyla başlayan dizeleri arar.
 
@@ -33,13 +33,13 @@ IntelliSense hakkında C++ daha fazla bilgi için bkz [. C++ Visual IntelliSense
 
 Intellicode, AI destekli IntelliSense 'dir. En olası adayı tamamlanma listenizin en üstüne koyar. Intellicode önerileri, GitHub üzerindeki binlerce açık kaynaklı projeyi, her biri 100 yıldızlı yıldızla temel alır. Kodunuzun bağlamı ile birleştirildiğinde, tamamlanma listesi ortak uygulamaları yükseltmek için tasarlanmıştır.
 
-Yazarken C++, C++ standart kitaplık gibi popüler kitaplıkları kullanırken ıntellicode yardımcı olacaktır. Kodunuzun bağlamı öncelikle en faydalı önerileri sağlamak için kullanılır. Aşağıdaki örnekte, `size` üye işlevi genellikle `sort` işleviyle kullanılır, bu nedenle sonuçlar listesinin en üstüne gelir.
+Yazarken C++, C++ standart kitaplık gibi popüler kitaplıkları kullanırken ıntellicode yardımcı olacaktır. Kodunuzun bağlamı öncelikle en faydalı önerileri sağlamak için kullanılır. Aşağıdaki örnekte, `size` member işlevi genellikle `sort` işleviyle birlikte kullanılır, bu nedenle sonuçlar listesinin en üstüne gelir.
 
-![&#43; C&#43; ıntellicode](../ide/media/intellicode-cpp.png " C++ ıntellicode")
+![C&#43; &#43; ıntellicode](../ide/media/intellicode-cpp.png "C++Intellicode")
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 ' de ıntellicode,  **C++ masaüstü geliştirme** iş yükünde isteğe bağlı bir bileşen olarak sunulmaktadır. Intellicode 'un için C++etkin olduğundan emin olmak için, **Araçlar** > **Seçenekler** > **ıntellicode** > **genel** ' e gidin ve  **C++ temel modeli** **etkin**olarak ayarlayın.
+Visual Studio 2019 ' de ıntellicode,  **C++ masaüstü geliştirme** iş yükünde isteğe bağlı bir bileşen olarak sunulmaktadır. C++Intellicode 'un için etkin olduğundan emin olmak için, **Araçlar** > **Seçenekler** > **ıntellicode** > **genel** ' e gidin ve  **C++ temel modeli** **etkin**olarak ayarlayın.
 
 ::: moniker-end
 
@@ -51,11 +51,11 @@ Visual Studio 2017 ' de, ıntellicode Visual Studio Market bir uzantı olarak ku
 
 ## <a name="predictive-intellisense-experimental"></a>Tahmine dayalı IntelliSense (deneysel)
 
-Tahmine **dayalı IntelliSense** , IntelliSense açılan listesinde görüntülenen sonuçların sayısını sınırlamak için bağlamsal tanıma kullanan deneysel bir özelliktir. Algoritma, yalnızca beklenen türle eşleşen sonuçları görüntüleyecek şekilde tür eşleştirmeyi uygular. En basit durumda, IntelliSense açılan listesini yazıp `int x =` çağırdığınızda yalnızca tamsayılar döndüren tamsayılar veya işlevler görürsünüz. Hala geliştirilme aşamasında olduğundan, bu özellik varsayılan olarak kapalıdır. Genel simgelerle en iyi şekilde çalışmaktadır; üye işlevleri henüz desteklenmiyor. **Hızlı Başlat** ' da "tahmine dayalı" yazarak veya **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** >  > **C/C++** **deneysel** öğesine giderek bunu açabilirsiniz. Tahmine dayalı **IntelliSense 'i etkinleştirin.**  > 
+Tahmine **dayalı IntelliSense** , IntelliSense açılan listesinde görüntülenen sonuçların sayısını sınırlamak için bağlamsal tanıma kullanan deneysel bir özelliktir. Algoritma, yalnızca beklenen türle eşleşen sonuçları görüntüleyecek şekilde tür eşleştirmeyi uygular. En basit durumda, `int x =` yazıp IntelliSense açılan listesini çağırdığınızda yalnızca tamsayılar döndüren tamsayılar veya işlevler görürsünüz. Hala geliştirilme aşamasında olduğundan, bu özellik varsayılan olarak kapalıdır. Genel simgelerle en iyi şekilde çalışmaktadır; üye işlevleri henüz desteklenmiyor. **Hızlı başlatma** ' ya "tahmine dayalı" yazarak veya **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **deneysel** > tahmine **dayalı IntelliSense 'i etkinleştir**' e giderek açabilirsiniz.
 
 Tahmine **dayalı IntelliSense** 'i geçersiz kılmak ve uzun listesini göstermek için **CTRL + J**tuşlarına basın. Tahmine dayalı **IntelliSense** açık Ise, **CTRL + J** çağırma, tahmine dayalı Filtreyi kaldırır. **CTRL + J** tuşlarına basıldığında, Ilgili yerlerde üye listesi sonuçlarından erişilebilirlik filtresi kaldırılır. IntelliSense açılan listesinin altındaki ([+]) düğmesi, **CTRL + J**ile aynı şeyi yapar. Gösterilmekte olan özellikler hakkında araç ipucu bilgilerini görmek için düğmenin üzerine gelin.
 
-![&#43; C&#43; tahmine dayalı IntelliSense] Tahmine (../ide/media/predictive-intellisense-cpp.png "dayalı IntelliSense")
+![C&#43; &#43; tahmine dayalı IntelliSense](../ide/media/predictive-intellisense-cpp.png "Tahmine dayalı IntelliSense")
 
 Önceki ekran görüntüsünde, açılan liste altında birkaç düğme gösterilmektedir. Bunlar, farklı türlerde sonuçlar için IntelliSense filtrelerini etkinleştirir:
 
@@ -72,21 +72,21 @@ Bir düğme yalnızca geçerli IntelliSense oturumunuzla ilgiliyse görüntülen
 
 Giriş işareti bir şablon tanımının içindeyken, IntelliSense için örnek şablon bağımsız değişkenleri sağlamanıza olanak tanıyan bir **şablon çubuğu** görünür. 
 
-![&#43; C&#43; şablonu IntelliSense mevcut örneklemeleri göster](../ide/media/template-intellisense-cpp-1.png "Şablon IntelliSense mevcut örneklemeleri göster")
+![C&#43; &#43; şablonu IntelliSense mevcut örneklemeleri göster](../ide/media/template-intellisense-cpp-1.png "Şablon IntelliSense mevcut örneklemeleri göster")
 
-**Şablon çubuğunu**genişletmek/daraltmak için **simgeyetıklayın.<T>** **Düzenle** penceresini açmak için kalem simgesine tıklayın veya **şablon çubuğuna** çift tıklayın. 
+**Şablon çubuğunu**genişletmek/daraltmak Için **\<t >** simgesine tıklayın. **Düzenle** penceresini açmak için kalem simgesine tıklayın veya **şablon çubuğuna** çift tıklayın. 
 
-![&#43; C&#43; şablonu IntelliSense](../ide/media/template-intellisense-cpp-3.png "Şablon IntelliSense")
+![C&#43; &#43; şablonu IntelliSense](../ide/media/template-intellisense-cpp-3.png "Şablon IntelliSense")
 
 Pencerede yaptığınız düzenlemeler, etkileri gerçek zamanlı olarak görebileceğiniz şekilde doğrudan kaynak koda uygulanır. 
 
 Şablon çubuğu, kodunuzdaki örneklemeleri temel alarak adayları otomatik olarak doldurabilir. Kod tabanınız genelinde şablonu örneklemek için kullanılan tüm somut bağımsız değişkenlerin listesini görmek için **mevcut tüm örneklemeleri Ekle** ' ye tıklayın.
 
-![&#43; C&#43; şablonu IntelliSense sonuçlar listesi](../ide/media/template-intellisense-cpp-2.png "Şablon IntelliSense sonuçlar listesi")
+![C&#43; &#43; şablonu IntelliSense sonuçlar listesi](../ide/media/template-intellisense-cpp-2.png "Şablon IntelliSense sonuçlar listesi")
 
 Düzenleyicinin alt kısmındaki bir pencere, her bir örneklemede nerede nerede olduğunu ve bağımsız değişkenlerinin ne olduğunu gösterir.
 
-![&#43; C&#43; şablonu IntelliSense örneklemesi eşleme](../ide/media/template-intellisense-cpp-4.png "Şablon IntelliSense örnek oluşturma eşlemesi")
+![C&#43; &#43; şablonu IntelliSense örneklemesi eşleme](../ide/media/template-intellisense-cpp-4.png "Şablon IntelliSense örnek oluşturma eşlemesi")
 
 **Şablon çubuğu** bilgileri kullanıcıya özgü olarak değerlendirilir. . Vs klasöründe depolanır ve kaynak denetimine uygulanmamalıdır.
 
@@ -96,19 +96,19 @@ Düzenleyici, kodunuzla ilgili sorunları algılarsa, sorunun altında renkli da
 
 Yaygın kodlama desenlerinin yanı sıra bazı hatalar için, düzenleyici, dalgalı bir ampulde yer alan bir ampul biçiminde **hızlı bir çözüm** sunar. Önerileri görmek için aşağı oka tıklayın. 
 
-Aşağıdaki örnekte, bir `vector` tanımı bildirildi ancak tanım bulunamadı, bu nedenle düzenleyici gerekli üst bilgi dosyasını dahil etmek için:
+Aşağıdaki örnekte, bir `vector` bildirildi ancak tanım bulunamadı, bu nedenle düzenleyici gerekli üst bilgi dosyasını dahil etmek için:
 
-![&#43; C&#43; hızlı çözüm](../ide/media/quick-fix-for-header-cpp.png " C++ hızlı düzeltilmesi")
+![C&#43; &#43; hızlı düzelme](../ide/media/quick-fix-for-header-cpp.png "C++Hızlı çözüm")
 
 Düzenleyici, bazı yeniden düzenleme fırsatları için de hızlı düzeltmeler sağlar. Örneğin, bir başlık dosyasında bir sınıf bildirirseniz, Visual Studio buna ayrı bir. cpp dosyasında bir tanım oluşturmayı sağlar. 
 
-![&#43; C&#43; hızlı çözüm](../ide/media/quick-fix.png " C++ hızlı düzeltilmesi")
+![C&#43; &#43; hızlı düzelme](../ide/media/quick-fix.png "C++Hızlı çözüm")
 
-## <a name="change-tracking"></a>Change tracking
+## <a name="change-tracking"></a>Değişiklik izleme
 
 Bir dosyada her değişiklik yaptığınızda, kaydedilmemiş değişikliklerin yapıldığını belirtmek için sol tarafta sarı bir çubuk görüntülenir. Dosyayı kaydettiğinizde, çubuk yeşile döner. Yeşil ve sarı çubuklar belge düzenleyicide açık olduğu sürece korunur. Belgeyi en son açtığınızdan bu yana yapılan değişiklikleri temsil ederler.
 
-![&#43; C&#43; değişiklik izleme](../ide/media/change-tracking-cpp.png "Değişiklik izleme")
+![C&#43; &#43; değişiklik izleme](../ide/media/change-tracking-cpp.png "Değişiklik izleme")
 
 ## <a name="move-code"></a>Kodu taşı
 
@@ -116,15 +116,15 @@ Kod satırlarını, alt tuşunu basılı tutarak ve **yukarı/aşağı** ok tuş
 
 ##  <a name="insert-snippets"></a>Kod parçacığı Ekle
 
-Kod parçacığı, kaynak kodu önceden tanımlanmış bir parçasıdır. Bir kod parçacığı eklemek veya seçili metni kod parçacığına çevrelemek için tek bir noktaya veya seçili metinde sağ tıklayın. Aşağıdaki çizimde, for döngüsü ile seçili bir deyimin çevrelemenin üç adımı gösterilmektedir. Son görüntüdeki sarı vurgular sekme tuşuyla erişebileceğiniz düzenlenebilir alanlardır. Daha fazla bilgi için [kod parçacıkları](/visualstudio/ide/code-snippets).
+Kod parçacığı, kaynak kodu önceden tanımlanmış bir parçasıdır. Bir kod parçacığı eklemek veya seçili metni kod parçacığına çevrelemek için tek bir noktaya veya seçili metinde sağ tıklayın. Aşağıdaki çizimde, for döngüsü ile seçili bir deyimin çevrelemenin üç adımı gösterilmektedir. Son görüntüdeki sarı vurgular sekme tuşuyla erişebileceğiniz düzenlenebilir alanlardır. Daha fazla bilgi için bkz. [kod parçacıkları](/visualstudio/ide/code-snippets).
 
-![&#43; C&#43; kod parçacığı ekleme&#45;açılan](../ide/media/vs2015_cpp_surround_with.png "vs2015_cpp_surround_with")
+![C&#43; &#43; kod parçacığı ekleme&#45;açılan](../ide/media/vs2015_cpp_surround_with.png "vs2015_cpp_surround_with")
 
 ##  <a name="add-class"></a>Sınıf Ekle
 
 **Proje** menüsünden veya **Çözüm Gezgini**bağlam menüsünden Yeni bir sınıf ekleyin:
 
-![C&#43; 'de yeni sınıf Ekle](../ide/media/vs2017-add-class.png "vs2015_cpp_add_class")
+![C 'de yeni sınıf Ekle&#43;&#43;](../ide/media/vs2017-add-class.png "vs2015_cpp_add_class")
 
 Ayrıca, varolan bir sınıfı değiştirmek veya incelemek için sınıf Sihirbazı 'Nı kullanabilirsiniz.
 
@@ -155,11 +155,11 @@ Visual Studio 2017 ve üzeri, Clang/LLVM 'yi C++ temel alan popüler bir kod bi�
 - WebKit
 - Visual Studio
 
-Ayrıca kendi. Clang-format veya _clang-Format dosyanızı, tüm kod dosyalarına aynı düzeyde veya altında özel kurallar uygulamak için de sağlayabilirsiniz.
+Ayrıca kendi. Clang-format veya _clang biçimli dosyanızı, tüm kod dosyalarına aynı düzeyde veya altında özel kurallar uygulamak için de sağlayabilirsiniz.
 
 Dosyalar, kaynak denetimi aracılığıyla kolayca paylaşılabilir, bu sayede tüm geliştirme ekibiniz genelinde kodlama kurallarını zorunlu kılabilirsiniz.
 
-![&#43; C&#43; Clang biçimi](../ide/media/clang-format-cpp.png "Clang biçimi")
+![C&#43; &#43; Clang biçimi](../ide/media/clang-format-cpp.png "Clang biçimi")
 
 Visual Studio 2017 ve üzeri, benzer bir şekilde çalışabilen [Editorconfig](https://editorconfig.org/)'i de destekler. Ancak, ClangFormat, için C++özel kurallar da dahil olmak üzere editorconfig öğesinden daha fazla stil seçeneklerine sahiptir. **Editorconfig**ile, **. editorconfig** dosyaları oluşturur ve bu klasörler ve alt klasörleri için kod stilleri belirtmek üzere kodu kod tabanınızın farklı klasörlerine yerleştirebilirsiniz. Bir **. editorconfig** dosyası, üst klasörlerdeki diğer tüm **. editorconfig** dosyalarının yerini alır ve **Araçlar** > **seçenekleri**aracılığıyla yapılandırılan biçimlendirme ayarlarının üzerine yazar. Sekmeler ve boşluklar, girinti boyutu ve daha fazlası için kurallar ayarlayabilirsiniz. Daha fazla bilgi için bkz. [EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma](/visualstudio/ide/create-portable-custom-editor-options).
 
@@ -173,11 +173,11 @@ Girintiler, küme ayracı tamamlama ve renklendirme gibi biçimlendirme seçenek
 
 ![C++biçimlendirme seçenekleri](media/cpp-formatting-options.png)
 
-Diğer biçimlendirme seçenekleri, ana menüdeki**Gelişmiş** **Düzenle** > altında bulunur.
+Diğer biçimlendirme seçenekleri, ana menüdeki **düzenle** > **Gelişmiş** altında bulunur.
 
 ![C++Gelişmiş Düzenle seçenekleri](media/edit-advanced-cpp.png)
 
-Belirli düzenleme özelliklerini etkinleştirme ve C++yapılandırma seçenekleri, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++** altında bulunur. Hangi seçeneği ayarlamak istediğinizi seçtikten sonra iletişim kutusu odaklanıldığında **F1** tuşuna basarak daha fazla yardım alabilirsiniz. Genel kod biçimlendirme seçenekleri için `Editor C++` **Hızlı başlatma**' ya yazın.
+Belirli düzenleme özelliklerini etkinleştirme ve C++yapılandırmaya yönelik seçenekler, **araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++** ' ün altında bulunur. Hangi seçeneği ayarlamak istediğinizi seçtikten sonra iletişim kutusu odaklanıldığında **F1** tuşuna basarak daha fazla yardım alabilirsiniz. Genel kod biçimlendirme seçenekleri için **hızlı başlatmaya**`Editor C++` yazın.
 
 ![Visual Studio Araçları > seçenekleri](../ide/media/tools-options.png "Düzenleyici seçenekleri")
 

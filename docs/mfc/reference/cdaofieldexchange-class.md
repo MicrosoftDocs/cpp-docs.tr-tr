@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
 ms.openlocfilehash: cfffebd16c3c1d62dc4084b962c22911e4b46ae5
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867305"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420626"
 ---
 # <a name="cdaofieldexchange-class"></a>Cdadofieldexchange sınıfı
 
@@ -37,14 +37,14 @@ class CDaoFieldExchange
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cdadofieldexchange:: IsValidOperation](#isvalidoperation)|Güncel işlem güncelleştirilmekte olan alanın türü için uygun ise sıfır olmayan bir değer döndürür.|
 |[Cdadofieldexchange:: settc](#setfieldtype)|`SetFieldType`bir sonraki çağrıya kadar DFX işlevlerine yapılan tüm sonraki çağrılar tarafından temsil edilen kayıt kümesi veri üyesi (sütun veya parametre) türünü belirtir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cdadofieldexchange:: m_nOperation](#m_noperation)|Kayıt kümesinin `DoFieldExchange` üye işlevine yapılan geçerli çağrı tarafından gerçekleştirilen DFX işlemi.|
 |[Cdadofieldexchange:: m_prs](#m_prs)|DFX işlemlerinin gerçekleştirildiği kayıt kümesine yönelik bir işaretçi.|
@@ -108,7 +108,7 @@ Alan değişimi nesnesiyle ilişkili [CDaoRecordset](../../mfc/reference/cdaorec
 
 `m_nOperation` olası değerleri şunlardır:
 
-|İşlem|Açıklama|
+|Çalışma|Açıklama|
 |---------------|-----------------|
 |`AddToParameterList`|SQL ifadesinin **Parameters** yan tümcesini oluşturur.|
 |`AddToSelectList`|SQL ifadesinin **Select** yan tümcesini oluşturur.|

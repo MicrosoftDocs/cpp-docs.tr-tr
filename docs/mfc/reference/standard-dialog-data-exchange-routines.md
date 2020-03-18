@@ -5,11 +5,11 @@ helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
 ms.openlocfilehash: 47586f9cff0fcbe2cd7bad31f3d93fed08190830
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865160"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421228"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
 
@@ -310,7 +310,7 @@ IP adresi denetiminin dört alan değerini içeren DWORD başvurusu. Alanlar dol
 |-----------|-------------------------------------|
 |3|0 ila 7|
 |2|8 ila 15|
-|1|16 ila 23|
+|1\.|16 ila 23|
 |0|24 ila 31|
 
 Değeri okumak için Win32 [IPM_GETADDRESS](/windows/win32/Controls/ipm-getaddress) kullanın veya değeri doldurmanız için [IPM_SETADDRESS](/windows/win32/Controls/ipm-setaddress) kullanın. Bu iletiler Windows SDK açıklanmaktadır.

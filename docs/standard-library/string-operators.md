@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
 ms.openlocfilehash: f9aa07f7ca30ded5f61e77a327efafe91aa5c269
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890908"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419415"
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize&gt; işleçleri
 
@@ -810,7 +810,7 @@ Giriş akışından ayıklanan dize.
 
 İşleci `skipws` bayrağı ayarlanmadığı takdirde baştaki boşlukları atlar. Sonraki karakter bir boşluk olana veya dosyanın sonuna ulaşılana kadar aşağıdaki tüm karakterleri okur.
 
-Şablon işlevi aşırı yüklerini _Istr, akışayıklanan bir dizi öğe ile *doğrudan* denetlenen sırayı değiştirmek için **> >** . Ayıklama durduruluyor:
+Şablon işlevi aşırı yüklerini _Istr, akış *_Istr*ayıklanan bir dizi öğe ile *doğrudan* denetlenen sırayı değiştirmek için **> >** . Ayıklama durduruluyor:
 
 - Dosya sonunda.
 

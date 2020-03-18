@@ -2,22 +2,22 @@
 title: /ALLOWBIND
 ms.date: 11/04/2016
 f1_keywords:
-- /allowbind
+- /allowbind_bind
 helpviewer_keywords:
 - ALLOWBIND editbin option
 - /ALLOWBIND editbin option
 - -ALLOWBIND editbin option
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
-ms.openlocfilehash: 4cb7e5a3627d865e2f2193dee096c72cced75f5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f5b662223914cbb4970188595afb52cc2500cd4
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273202"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440382"
 ---
 # <a name="allowbind"></a>/ALLOWBIND
 
-DLL'in bağlı olamayacağını belirtir.
+DLL 'nin bağlanıp bağlanamayacağını belirtir.
 
 ```
 
@@ -26,11 +26,11 @@ DLL'in bağlı olamayacağını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ALLOWBIND** seçeneği görüntü bağlanması için izin verildiğini Bind.exe'yi gösteren DLL üst bilgisinde bir bit ayarlar. Yükleyici rebase ve her başvurulan DLL için adres düzeltmesi gerçekleştirmek sahip olmadığında daha hızlı bir şekilde yüklemek bir görüntü bağlama izin verebilirsiniz. Bir DLL dijital olarak imzalanmışsa bağlı olmasını istemeyebilirsiniz — bağlama imzayı geçersiz kılar. Bağlama hiçbir etkisi rastgele adres alanı düzenini (ASLR) kullanarak görüntüyü etkinse **dynamıcbase** ASLR destekleyen Windows sürümleri üzerinde.
+**/Allowbind** seçeneği dll 'nin üst bilgisinde, görüntünün bağlı olmasına izin verileceğini belirten bir bit ayarlar. Bağlama, yükleyicinin her bir DLL için yeniden temellendirmeyi ve adres düzeltmesini gerçekleştirmesini gerektirmeyen bir görüntünün daha hızlı yüklenmesine izin verebilir. Dijital olarak imzalanmışsa DLL 'nin bağlanmasını istemeyebilirsiniz; bağlama imzayı geçersiz kılar. Görüntü için adres boşluğu düzeni rastgele seçimi (ASLR), ASLR desteği olan Windows sürümlerinde **/DynamicBase** kullanarak etkin değilse bağlama etkisizdir.
 
-Kullanım **/ALLOWBIND:NO** DLL bağlama gelen Bind.exe'yi önlemek için.
+Bind. exe ' nın DLL 'yi bağlamasını engellemek için **/Allowbind: No** komutunu kullanın.
 
-Daha fazla bilgi için [/ALLOWBIND](allowbind-prevent-dll-binding.md) bağlayıcı seçeneği.
+Daha fazla bilgi için [/Allowbind](allowbind-prevent-dll-binding.md) bağlayıcı seçeneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

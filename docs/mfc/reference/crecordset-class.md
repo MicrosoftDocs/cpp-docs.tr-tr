@@ -131,11 +131,11 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
 ms.openlocfilehash: 1ebdb18254171d28b5d5e02367596b79142df284
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854032"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421018"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 
@@ -151,13 +151,13 @@ class CRecordset : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CRecordset:: CRecordset](#crecordset)|`CRecordset` nesnesi oluşturur. Türetilmiş sınıfınız bunu çağıran bir Oluşturucu sağlamalıdır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CRecordset:: AddNew](#addnew)|Yeni bir kayıt eklemeye hazırlar. Ekleme işleminin tamamlanabilmesi için `Update` çağırın.|
 |[CRecordset:: CanAppend](#canappend)|`AddNew` üye işlevi aracılığıyla kayıt kümesine yeni kayıtlar eklenebileceği sıfır dışında bir değer döndürür.|
@@ -217,7 +217,7 @@ class CRecordset : public CObject
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CRecordset:: m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC ifade tanıtıcısını içerir. `HSTMT` yazın.|
 |[CRecordset:: m_nFields](#m_nfields)|Kayıt kümesindeki alan veri üyelerinin sayısını içerir. `UINT` yazın.|

@@ -1,8 +1,6 @@
 ---
-title: Dosya okuma / yazma erişimi sabitleri
+title: Dosya okuma/yazma erişimi sabitleri
 ms.date: 11/04/2016
-f1_keywords:
-- c.constants.file
 helpviewer_keywords:
 - read/write access constants
 - write access constants
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - constants [C++], file attributes
 - file read/write access constants
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
-ms.openlocfilehash: 0dfbc925c5252724cbb1caad58470849915242a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96d146b2e2f0ed82cbdc52b11d92c049da50e2cb
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289903"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438399"
 ---
 # <a name="file-readwrite-access-constants"></a>Dosya Okuma/Yazma Erişimi Sabitleri
 
@@ -27,20 +25,20 @@ ms.locfileid: "62289903"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sabitler, dosya için istenen erişim türünü ("a", "r" veya "w") belirtin. Her iki [çeviri modu](../c-runtime-library/file-translation-constants.md) ("b" veya "t") ve [işleme disk modu](../c-runtime-library/commit-to-disk-constants.md) ("c" veya "n") erişim türü ile belirtilebilir.
+Bu sabitler dosya için istenen erişim türünü ("a", "r" veya "w") belirtir. Hem [çeviri modu](../c-runtime-library/file-translation-constants.md) ("b" veya "t") hem de [diske kaydetme modu](../c-runtime-library/commit-to-disk-constants.md) ("c" veya "n") erişim türüyle belirtilebilir.
 
 Erişim türleri bu tabloda açıklanmıştır:
 
 |Erişim türü|Açıklama|
 |----------|----------------|
-|**"r"**|Okuma için açar. Dosya yok veya nebyla nalezena dosyayı açmak için bir çağrı başarısız olur.|
-|**"w"**|Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.|
-|**"a"**|(Ekleme); dosyanın sonunda yazma için açar henüz yoksa, dosyayı ilk oluşturur. Tüm işlemleri dosyanın sonunda gerçekleşmesi yazın. Dosya işaretçisi kullanılarak konumlandırılabilir rağmen `fseek` veya `rewind`, herhangi bir işlemi yazma önce her zaman geri dosyanın sonuna kadar taşınır. |
-|**"r +"**|Hem okuma ve yazma için açar. Dosya yok veya nebyla nalezena dosyayı açmak için bir çağrı başarısız olur.|
-|**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.|
-|**"a+"**|Aynı **"a"** ancak okuma de sağlar.|
+|**sağ**|Okuma için açılır. Dosya yoksa veya bulunamazsa, dosyayı açma çağrısı başarısız olur.|
+|**anlatımı**|Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir.|
+|**a**|Dosyanın sonuna yazmak için açılır (ekleme); Dosya yoksa, önce dosyayı oluşturur. Tüm yazma işlemleri, dosyanın sonunda oluşur. Dosya işaretçisi `fseek` veya `rewind`kullanılarak yeniden konumlandırılabilse de, herhangi bir yazma işlemi yapılmadan önce her zaman dosyanın sonuna geri taşınır. |
+|**"r +"**|Hem okuma hem de yazma için açılır. Dosya yoksa veya bulunamazsa, dosyayı açma çağrısı başarısız olur.|
+|**"w +"**|Hem okuma hem de yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir.|
+|**"a +"**|**"A"** ile aynıdır, ancak okumayı de sağlar.|
 
-"R +", "w +" veya "a +" türü belirtildiğinde, hem okumaya hem yazmaya izin verilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma ve okuma arasında geçiş yaptığınızda, olmalıdır bir araya giren `fflush`, `fsetpos`, `fseek`, veya `rewind` işlemi. Geçerli konum için belirtilen `fsetpos` veya `fseek` işlemi.
+"R +", "w +" ya da "a +" türü belirtildiğinde, hem okuma hem de yazma için izin verilir (dosya "güncelleştirme" için açık olarak kabul edilir). Ancak, okuma ve yazma arasında geçiş yaptığınızda, bir aradaki `fflush`, `fsetpos`, `fseek`veya `rewind` işlemi olmalıdır. `fsetpos` veya `fseek` işlemi için geçerli konum belirtilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

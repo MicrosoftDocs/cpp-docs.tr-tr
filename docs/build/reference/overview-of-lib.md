@@ -2,17 +2,15 @@
 title: LIB'e Genel Bakış
 description: Lib. exe kitaplık aracının kullanımına ve seçeneklerine genel bakış.
 ms.date: 02/09/2020
-f1_keywords:
-- Lib
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-ms.openlocfilehash: 5829a65ab0dc4ef193236c9ae480856a17c5874c
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 4ed725f383d956adf7abcf1c68002dee51703013
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257618"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79439005"
 ---
 # <a name="overview-of-lib"></a>LIB'e Genel Bakış
 

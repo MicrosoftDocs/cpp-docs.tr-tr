@@ -335,11 +335,11 @@ helpviewer_keywords:
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
 ms.openlocfilehash: 97c605426ed0ac869714f0f83d4957f7f6ce7d87
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855779"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421592"
 ---
 # <a name="colecontrol-class"></a>Coelcontrol sınıfı
 
@@ -353,13 +353,13 @@ class COleControl : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Coelcontrol:: Coelcontrol](#colecontrol)|Bir `COleControl` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -738,7 +738,7 @@ Geçerli dönüş değerlerinin listesi aşağıda verilmiştir:
 |------------------|-------------|
 |0|Genel hizalama (sağdaki sayılar, sola metin).|
 |1|Sola Yasla|
-|2|Merkez|
+|2|Center|
 |3|Sağa Yasla|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1989,7 +1989,7 @@ Nesnenin `IDropTarget` arabirimine yönelik işaretçi. Bir penceresi olmadığ�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, kapsayıcının çağrıları uygun zamanda atayabileceği `IDropTarget` arabiriminin bir uygulamasını sağlaması gerekir. Örnek:
+Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, kapsayıcının çağrıları uygun zamanda atayabileceği `IDropTarget` arabiriminin bir uygulamasını sağlaması gerekir. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]
 
@@ -2322,7 +2322,7 @@ virtual void OnClose(DWORD dwSaveOption);
 ### <a name="parameters"></a>Parametreler
 
 *dwSaveOption*<br/>
-Nesnenin yüklemeden önce kaydedilip kaydedilmeyeceğini belirten bayrak. Geçerli değerler şunlardır:
+Nesnenin yüklemeden önce kaydedilip kaydedilmeyeceğini belirten bayrak. Geçerli değerler:
 
 - OLECLOSE_SAVEIFDIRTY
 
@@ -2448,7 +2448,7 @@ Kapsayıcıda denetim tarafından kullanılan dikdörtgene yönelik bir işaret�
 
 Bu, denetimin OLEIVERB_UIACTIVATE fiilini çağırma ile aynı etkiye sahiptir.
 
-Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örnek:
+Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]
 
@@ -3145,7 +3145,7 @@ OLE denetimi istemci alanının sınırlayıcı dikdörtgenini belirten `RECT` y
 Nesnenin sol üst köşesine göre bir isabet (nesne dikdörtgeniyle örtüşüyor) için denetlenecek dikdörtgeni belirten `RECT` yapısına yönelik işaretçi.
 
 *Lcloseipucu*<br/>
-Kullanılmadı.
+Kullanılmıyor.
 
 *pHitResult*<br/>
 İsabet sorgusunun sonucunun işaretçisi. Aşağıdaki değerlerden biri:

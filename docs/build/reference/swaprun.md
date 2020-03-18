@@ -2,18 +2,18 @@
 title: /SWAPRUN
 ms.date: 11/04/2016
 f1_keywords:
-- /swaprun
+- /swaprun_editbin
 helpviewer_keywords:
 - /SWAPRUN editbin option
 - -SWAPRUN editbin option
 - SWAPRUN editbin option
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7
-ms.openlocfilehash: ff11e64ae8ec0eb5236369e8322e051ee40b26bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83aa2cdb445ed1ac6bac5b1237f90a116986b0a9
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317763"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79438850"
 ---
 # <a name="swaprun"></a>/SWAPRUN
 
@@ -23,15 +23,15 @@ ms.locfileid: "62317763"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, görüntüyü bir takas dosyasına kopyalayın ve oradan çalıştırın işletim sisteminin bildirmek için görüntü düzenler. Ağları veya çıkarılabilir medyada bulunan görüntüleri için bu seçeneği kullanın.
+Bu seçenek, işletim sistemine görüntüyü bir takas dosyasına kopyalamasını ve oradan çalıştırmayı bildirmek için görüntüyü düzenler. Ağlarda veya çıkarılabilir medyada bulunan görüntüler için bu seçeneği kullanın.
 
-NET ya da CD niteleyicileri kaldırın ya da ekleyin:
+NET veya CD niteleyicileri ekleyebilir veya kaldırabilirsiniz:
 
-- Görüntünün bir ağda bulunan ağ gösterir.
+- NET, görüntünün bir ağda bulunduğunu gösterir.
 
-- CD resmi bir CD-ROM veya benzer çıkarılabilir medyayı bulunduğu gösterir.
+- CD, görüntünün bir CD-ROM veya benzer çıkarılabilir bir medyada bulunduğunu gösterir.
 
-- Kullanım! NET ve! NET ve CD etkilerini tersine çevirmek için CD'ı tıklatın.
+- ! NET ve! kullanın! CD, NET ve CD 'nin etkilerini tersine çevirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

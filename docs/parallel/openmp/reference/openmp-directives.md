@@ -9,10 +9,8 @@ f1_keywords:
 - flush
 - for
 - master
-- ordered
 - parallel
 - section
-- SECTIONS
 - single
 - threadprivate
 helpviewer_keywords:
@@ -29,12 +27,12 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-ms.openlocfilehash: 4db341cf58884263e414e24aacf888c8c88e57cc
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
-ms.translationtype: HT
+ms.openlocfilehash: bfd2cec32acdd6431a571916f1c80e1700ef3af7
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417042"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441777"
 ---
 # <a name="openmp-directives"></a>OpenMP Yönergeleri
 
@@ -716,7 +714,7 @@ Bir iş parçacığına özel hale getirmek istediğiniz değişkenlerin virgül
 
 İşlem başlangıcında statik olarak yüklenen bir DLL 'de `threadprivate` kullanabilirsiniz, ancak aynı zamanda `LoadLibrary`kullanan, [/delayload (Gecikmeli yük içeri aktarma)](../../../build/reference/delayload-delay-load-import.md)ile yüklenen dll 'Ler gibi [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) aracılığıyla yüklenecek herhangi bir dll 'de `threadprivate` kullanamazsınız.
 
-Geri *dönüşlü* bir türün `threadprivate` değişkeni, yok edicinin çağrılmaması durumunda garanti edilmez. Örneğin:
+Geri *dönüşlü* bir türün `threadprivate` değişkeni, yok edicinin çağrılmaması durumunda garanti edilmez. Örnek:
 
 ```cpp
 struct MyType

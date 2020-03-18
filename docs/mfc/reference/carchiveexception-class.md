@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
 ms.openlocfilehash: 731735bccf9225e67d82b1fe90336c92a630b368
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855371"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420654"
 ---
 # <a name="carchiveexception-class"></a>CArchiveException sınıfı
 
@@ -33,13 +33,13 @@ class CArchiveException : public CException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CArchiveException::CArchiveException](#carchiveexception)|`CArchiveException` nesnesi oluşturur.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CArchiveException:: m_cause](#m_cause)|Özel durumun nedenini gösterir.|
 |[CArchiveException:: m_strFileName](#m_strfilename)|Bu özel durum koşulunun dosya adını belirtir.|

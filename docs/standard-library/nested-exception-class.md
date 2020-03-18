@@ -2,18 +2,18 @@
 title: nested_exception sınıfı
 ms.date: 11/04/2016
 f1_keywords:
-- exception/std::bad_exception
+- exception/std::nested_exception
 helpviewer_keywords:
-- bad_exception class
+- nested_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-ms.openlocfilehash: 5741b3aa255f915500f5fe79ab5374c8c86f8814
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ed58eb6cc074b54ae6801d2b11089af9a79f8c8f
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460185"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441623"
 ---
-# <a name="nestedexception-class"></a>nested_exception sınıfı
+# <a name="nested_exception-class"></a>nested_exception sınıfı
 
 Sınıfı, birden çok Devralmada kullanılmak üzere bir özel durum tanımlar. Şu anda işlenmiş özel durumu yakalar ve daha sonra kullanmak üzere depolar.
 
@@ -34,7 +34,7 @@ class nested_exception {
 
 |||
 |-|-|
-|[operator=](#op_as)||
+|[işleç =](#op_as)||
 
 ### <a name="functions"></a>İşlevler
 
@@ -57,7 +57,7 @@ exception_ptr nested_ptr() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bu `nested_exception` nesne tarafından yakalanan saklı özel durum.
+Bu `nested_exception` nesnesi tarafından yakalanan saklı özel durum.
 
 ### <a name="rethrow_nested"></a>rethrow_nested
 
@@ -67,7 +67,7 @@ Bu `nested_exception` nesne tarafından yakalanan saklı özel durum.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Null bir işaretçi `std::terminate()` döndürürse`nested_ptr()` , işlev çağırır. Aksi takdirde, tarafından `*this`yakalanan saklı özel durumu oluşturur.
+`nested_ptr()` null bir işaretçi döndürürse, işlev `std::terminate()`çağırır. Aksi takdirde, `*this`tarafından yakalanan saklı özel durumu oluşturur.
 
 ## <a name="requirements"></a>Gereksinimler
 

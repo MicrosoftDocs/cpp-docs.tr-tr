@@ -14,11 +14,11 @@ helpviewer_keywords:
 - structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
 ms.openlocfilehash: 93dd79b755f79dcb4857c1b1c4856362b0bd45dd
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78884124"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422131"
 ---
 # <a name="structured_task_group-class"></a>structured_task_group Sınıfı
 
@@ -32,21 +32,21 @@ class structured_task_group;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[structured_task_group](#ctor)|Fazla Yüklendi. Yeni bir `structured_task_group` nesnesi oluşturur.|
+|[structured_task_group](#ctor)|Aşırı yüklendi. Yeni bir `structured_task_group` nesnesi oluşturur.|
 |[~ structured_task_group yok edici](#dtor)|`structured_task_group` nesnesini yok eder. Bir özel durum nedeniyle yığın geri sarma sonucu olarak yürütülemediği sürece, yıkıcı yürütmeden önce nesnedeki `wait` veya `run_and_wait` yöntemini çağırmanız bekleniyor.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[İptal](#cancel)|Bu görev grubunda kök olarak çalışan çalışmanın alt ağacını iptal etmeye yönelik en iyi çabayı sağlar. Görev grubunda zamanlanan her görev, mümkünse geçişli olarak iptal edilir.|
 |[is_canceling](#is_canceling)|Görev grubunun şu anda bir iptal etme ortatına bağlı olup olmadığına bakılmaksızın çağrıyı bilgilendirir. Bu, `cancel` yönteminin `structured_task_group` nesnesi üzerinde çağrıldığı anlamına gelmez (Bu nedenle, bu yöntemi **true**döndürecek şekilde nitelendirir). `structured_task_group` nesnenin satır içi yürütülmesi ve iş ağacında daha fazla görev grubunun iptal edilmesi durumunda olabilir. Bu gibi durumlarda, İptalin bu `structured_task_group` nesne üzerinden akacağı zamanın önüne göre belirleyebildiği gibi durumlarda, **true değeri** de döndürülür.|
-|[çalışmaz](#run)|Fazla Yüklendi. `structured_task_group` nesnesinde bir görevi zamanlar. Çağıran, `_Task_handle` parametresinde geçirilen `task_handle` nesnesinin ömrünü yönetir. `_Placement` parametresini alan sürüm, görevin, bu parametre tarafından belirtilen konumda yürütülmeye yaklaşmasına neden olur.|
-|[run_and_wait](#run_and_wait)|Fazla Yüklendi. Tam iptal desteği için `structured_task_group` nesnenin yardımı ile, çağıran bağlamda satır içi çalışacak şekilde bir görev zamanlar. Bir `task_handle` nesnesi `run_and_wait`bir parametre olarak geçirilirse, çağıran `task_handle` nesnesinin kullanım ömrünü yönetmekten sorumludur. İşlev daha sonra, `structured_task_group` nesnesi üzerindeki tüm işler tamamlanana ya da iptal edilene kadar bekler.|
+|[çalışmaz](#run)|Aşırı yüklendi. `structured_task_group` nesnesinde bir görevi zamanlar. Çağıran, `_Task_handle` parametresinde geçirilen `task_handle` nesnesinin ömrünü yönetir. `_Placement` parametresini alan sürüm, görevin, bu parametre tarafından belirtilen konumda yürütülmeye yaklaşmasına neden olur.|
+|[run_and_wait](#run_and_wait)|Aşırı yüklendi. Tam iptal desteği için `structured_task_group` nesnenin yardımı ile, çağıran bağlamda satır içi çalışacak şekilde bir görev zamanlar. Bir `task_handle` nesnesi `run_and_wait`bir parametre olarak geçirilirse, çağıran `task_handle` nesnesinin kullanım ömrünü yönetmekten sorumludur. İşlev daha sonra, `structured_task_group` nesnesi üzerindeki tüm işler tamamlanana ya da iptal edilene kadar bekler.|
 |[bekleneceğini](#wait)|`structured_task_group` tüm çalışmalar tamamlanana veya iptal edilene kadar bekler.|
 
 ## <a name="remarks"></a>Açıklamalar

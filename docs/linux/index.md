@@ -3,16 +3,18 @@ layout: LandingPage
 title: C++ Belgelerle Linux geliştirme
 description: Linux üzerinde çalışan uygulamalar oluşturun ve hatalarını ayıklayın.
 ms.topic: landing-page
-ms.openlocfilehash: ee956f25914e1996acb6776d9ecbb8c9e79c689b
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 9c09e9bd590ece013a2ee7d85017b3e046394232
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216107"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79441513"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ Belgelerle Linux geliştirme
 
 Linux uzak makineler veya Linux için Windows alt sistemi üzerinde çalışan uygulamalar oluşturmak ve hatalarını ayıklamak için Visual Studio 2017 ve üstünü kullanın.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsF">
     <li>

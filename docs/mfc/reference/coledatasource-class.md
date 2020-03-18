@@ -37,11 +37,11 @@ helpviewer_keywords:
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
 ms.openlocfilehash: 5cd573590bc1adb303e0b4c5cd600b9fa6c685b2
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855778"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421137"
 ---
 # <a name="coledatasource-class"></a>Cotadatasource sınıfı
 
@@ -57,13 +57,13 @@ class COleDataSource : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cotadatasource:: Cotadatasource](#coledatasource)|`COleDataSource` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cotadatasource:: CacheData](#cachedata)|`STGMEDIUM` yapısını kullanarak verileri belirtilen biçimde sunar.|
 |[Cotadatasource:: CacheGlobalData](#cacheglobaldata)|Verileri bir HGLOBAL kullanarak belirtilen biçimde sunar.|

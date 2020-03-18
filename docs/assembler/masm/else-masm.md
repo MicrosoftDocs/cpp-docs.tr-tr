@@ -1,17 +1,15 @@
 ---
 title: ELSE (MASM)
 ms.date: 12/17/2019
-f1_keywords:
-- else
 helpviewer_keywords:
 - ELSE directive
 ms.assetid: c43af707-4567-4489-97ca-f14982d84e88
-ms.openlocfilehash: e7098cb5be7f39458410e48507a4aea675974724
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: f80de36cf6c7447f345bb54f1263386e76367cd7
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318156"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79440900"
 ---
 # <a name="else-masm"></a>ELSE (MASM)
 
