@@ -31,11 +31,11 @@ helpviewer_keywords:
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
 ms.openlocfilehash: 94ee4cb938ee061470282eb2f08a94d83c908805
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890808"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418575"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 
@@ -49,15 +49,15 @@ class CFtpConnection : public CInternetConnection
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CFtpConnection:: CFtpConnection](#cftpconnection)|`CFtpConnection` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CFtpConnection:: komutu](#command)|Bir FTP sunucusuna doğrudan bir komut gönderir.|
 |[CFtpConnection:: CreateDirectory](#createdirectory)|Sunucuda bir dizin oluşturur.|

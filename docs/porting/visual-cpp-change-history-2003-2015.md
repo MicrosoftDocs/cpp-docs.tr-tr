@@ -5,11 +5,11 @@ helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ms.openlocfilehash: 335db55f3b181021f4deb391358df5bbfb607815
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865515"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79416937"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003 - 2015
 
@@ -2883,7 +2883,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, `/W3` derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın ve uyarı C4370 ' ı açın. Örnek:
+   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, `/W3` derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın ve uyarı C4370 ' ı açın. Örneğin:
 
     ```cpp
     #pragma warning(default:4370)
@@ -2952,7 +2952,7 @@ Visual Studio 2013 C++ derleyici, Visual Studio 2010 ' de uygulanan _ITERATOR_DE
 
    Bu değişikliğin yan etkisi olarak, kimlik durumu artık çalışmaz (common_type\<T > her zaman T türünde sonuç vermez). Bu davranış önerilen çözünürlüğe uyar, ancak önceki davranışa bağlı olan tüm kodları keser.
 
-   Bir kimlik türü nitelik gerekliyse, \<void > için çalışmadığı için, \<type_traits > tanımlanmış standart olmayan `std::identity` kullanmayın. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Bir örneği aşağıda verilmiştir:
+   Bir kimlik türü nitelik gerekliyse, \<void > için çalışmadığı için, \<type_traits > tanımlanmış standart olmayan `std::identity` kullanmayın. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Örnek buradadır:
 
     ```cpp
     template < typename T> struct Identity {

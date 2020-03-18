@@ -13,11 +13,11 @@ helpviewer_keywords:
 - aggregation [C++], aggregation models
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
 ms.openlocfilehash: 5b4e39fa4d93893d288bb8de03d8a71b671be087
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78863255"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417945"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass sınıfı
 
@@ -40,7 +40,7 @@ Nesnenin CLSID 'sine yönelik bir işaretçi.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -163,7 +163,7 @@ static HRESULT Error(
 'ndaki Hata veya GUID_NULL tanımlayan arabirimin IID 'si (varsayılan değer) işletim sistemi tarafından tanımlanmışsa.
 
 *hRes*<br/>
-'ndaki Çağırana geri dönmek istediğiniz HRESULT. Varsayılan değer 0’dır. *HRes*hakkında daha fazla bilgi için bkz. açıklamalar.
+'ndaki Çağırana geri dönmek istediğiniz HRESULT. Varsayılan değer 0'dır. *HRes*hakkında daha fazla bilgi için bkz. açıklamalar.
 
 *NID*<br/>
 'ndaki Hata açıklaması dizesinin depolandığı kaynak tanımlayıcısı. Bu değer, ikisi de dahil olmak üzere 0x0200 ile 0xFFFF arasında olmalıdır. Hata ayıklama yapılarında, *NID* geçerli bir dizeye Dizin oluşturmadığı takdirde bir **onaylama** sonucu olur. Yayın derlemeleri ' nde hata açıklaması dizesi "Bilinmeyen hata" olarak ayarlanır.
@@ -213,7 +213,7 @@ Sınıf nesnesinin açıklaması.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama NULL değerini döndürür. Bu yöntemi [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) makroyla geçersiz kılabilirsiniz. Örnek:
+Varsayılan uygulama NULL değerini döndürür. Bu yöntemi [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) makroyla geçersiz kılabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]
 

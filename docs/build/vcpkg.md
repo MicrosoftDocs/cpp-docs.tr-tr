@@ -5,11 +5,11 @@ ms.date: 01/10/2020
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ms.openlocfilehash: 7c3dddd62a66c746d92d2f931b97e354ee27d75f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78857038"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417266"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows C++ , Linux ve MacOS için Paket Yöneticisi
 
@@ -79,7 +79,7 @@ The following packages will be built and installed:
 Additional packages (*) will be installed to complete this operation.
 ```
 
-CMAKE projeleri için, kitaplıkları `find_package()`kullanılabilir hale getirmek için CMAKE_TOOLCHAIN_FILE kullanın. Örnek:
+CMAKE projeleri için, kitaplıkları `find_package()`kullanılabilir hale getirmek için CMAKE_TOOLCHAIN_FILE kullanın. Örneğin:
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)

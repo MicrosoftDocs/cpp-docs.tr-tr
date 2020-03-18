@@ -6,11 +6,11 @@ helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
 ms.openlocfilehash: c372f43bc5184349e70f29b6c0ae6a490f2102ed
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854615"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419163"
 ---
 # <a name="application-information-and-management"></a>Uygulama bilgileri ve yönetimi
 

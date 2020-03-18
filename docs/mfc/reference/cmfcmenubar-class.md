@@ -107,11 +107,11 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
 ms.openlocfilehash: 278feca6b64915d0cf789e8f68af3c3fdf9b3129
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78869959"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420269"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 
@@ -128,7 +128,7 @@ class CMFCMenuBar : public CMFCToolbar
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCMenuBar:: AdjustLocations](#adjustlocations)|(`CMFCToolBar::AdjustLocations`geçersiz kılar.)|
 |[CMFCMenuBar:: AllowChangeTextLabels](#allowchangetextlabels)|Araç çubuğu düğmelerinde görüntüler altında metin etiketlerinin gösterilip gösterilmeyeceğini belirtir. ( [CMFCToolBar:: AllowChangeTextLabels](../../mfc/reference/cmfctoolbar-class.md#allowchangetextlabels)geçersiz kılar.)|

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - aggregate initializers [C++]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 ms.openlocfilehash: 2cc68f2384402ce1eb3ac06b414f597a6b3951f0
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865800"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418435"
 ---
 # <a name="initializers"></a>Başlatıcılar
 
@@ -480,7 +480,7 @@ int main() {
 
 ### <a name="reference-initialization"></a>Başvuru başlatma
 
-Başvuru türündeki değişkenler, başvuru türünün türetildiği türden bir nesne ile veya başvuru türünün türetildiği türe dönüştürülebilen bir türde bir nesne ile başlatılmış olmalıdır. Örnek:
+Başvuru türündeki değişkenler, başvuru türünün türetildiği türden bir nesne ile veya başvuru türünün türetildiği türe dönüştürülebilen bir türde bir nesne ile başlatılmış olmalıdır. Örneğin:
 
 ```cpp
 // initializing_references.cpp
@@ -505,25 +505,25 @@ Hem başvuru türünün bir bağımsız değişkenini bir işleve geçirme hem d
 
 Başvuru türü değişkenleri yalnızca, başlatıcılar olmadan bildirilemez:
 
-- İşlev bildirimleri (prototürler). Örnek:
+- İşlev bildirimleri (prototürler). Örneğin:
 
     ```cpp
     int func( int& );
     ```
 
-- İşlev dönüş türü bildirimleri. Örnek:
+- İşlev dönüş türü bildirimleri. Örneğin:
 
     ```cpp
     int& func( int& );
     ```
 
-- Başvuru türü sınıf üyesinin bildirimi. Örnek:
+- Başvuru türü sınıf üyesinin bildirimi. Örneğin:
 
     ```cpp
     class c {public:   int& i;};
     ```
 
-- Açıkça **extern**olarak belirtilen bir değişken bildirimi. Örnek:
+- Açıkça **extern**olarak belirtilen bir değişken bildirimi. Örneğin:
 
     ```cpp
     extern int& iVal;

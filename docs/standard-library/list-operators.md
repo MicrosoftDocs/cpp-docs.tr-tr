@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::operator&lt;= (list)
 - std::operator== (list)
 ms.openlocfilehash: 7b0b7540c1b9a55140405a55e8e034f9c6ec646c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78874455"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420045"
 ---
 # <a name="ltlistgt-operators"></a>&lt;List&gt; işleçleri
 

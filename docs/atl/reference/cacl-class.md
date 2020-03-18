@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CAcl class
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
 ms.openlocfilehash: 5d03154597f800042846e82d0a0cf5e7c46b613f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864911"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418148"
 ---
 # <a name="cacl-class"></a>CAcl sınıfı
 
@@ -52,14 +52,14 @@ class CAcl
 |[CAcl:: Caceflagdizisi](#caceflagarray)|Bir bayt dizisi.|
 |[CAcl:: CAceTypeArray](#cacetypearray)|Bir bayt dizisi.|
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CAcl:: CAcl](#cacl)|Oluşturucu.|
 |[CAcl:: ~ CAcl](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -75,7 +75,7 @@ class CAcl
 |[CAcl:: SetEmpty](#setempty)|`CAcl` nesnesini boş olarak işaretler.|
 |[CAcl:: SetNull](#setnull)|`CAcl` nesnesini NULL olarak işaretler.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

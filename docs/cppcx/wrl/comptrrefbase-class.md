@@ -14,11 +14,11 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ComPtrRefBase::ptr_ data member
 ms.assetid: 6d344c1a-cc13-4a3f-8a0d-f167ccb9348f
 ms.openlocfilehash: df4e2aa1ce650fd5b1f04baf2f7c4cd2fb4cff93
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865827"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418316"
 ---
 # <a name="comptrrefbase-class"></a>ComPtrRefBase Sınıfı
 
@@ -48,7 +48,7 @@ Adı            | Açıklama
 --------------- | -------------------------------------------------
 `InterfaceType` | *T*şablon parametresinin türü için bir eş anlamlı.
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 Adı                                                                       | Açıklama
 -------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------

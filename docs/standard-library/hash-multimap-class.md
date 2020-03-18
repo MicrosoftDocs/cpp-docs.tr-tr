@@ -87,16 +87,16 @@ helpviewer_keywords:
 - stdext::hash_multimap::value_comp
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
 ms.openlocfilehash: b42dd5ba4aa3df12e3ef1aba930b2214dde19756
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856752"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419023"
 ---
 # <a name="hash_multimap-class"></a>hash_multimap Sınıfı
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Kapsayıcı sınıfı hash_multimap C++ standart kitaplığın bir uzantısıdır ve her bir öğenin, değeri benzersiz olması gereken bir sıralama anahtarına ve ilişkili bir veri değerine sahip olan bir çifte veri depolama ve hızlı şekilde alınması için kullanılır.
 
@@ -225,7 +225,7 @@ Hash_multimap sınıfı tarafından verilen yineleyici çift yönlü bir yineley
 ## <a name="allocator_type"></a>hash_multimap:: allocator_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
@@ -246,7 +246,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 ## <a name="begin"></a>hash_multimap:: Begin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -311,7 +311,7 @@ The first element of hm1 is now 1.
 ## <a name="cbegin"></a>hash_multimap:: cbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -355,7 +355,7 @@ The first element of hm1 is 2.
 ## <a name="cend"></a>hash_multimap:: cend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -406,7 +406,7 @@ The value of last element of hm1 is 30.
 ## <a name="clear"></a>hash_multimap:: Clear
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap tüm öğelerini siler.
 
@@ -456,7 +456,7 @@ The size of the hash_multimap after clearing is 0.
 ## <a name="const_iterator"></a>hash_multimap:: const_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -481,7 +481,7 @@ Bir `const_iterator` başvuru yapmak için, bir hash_multimap bir öğeye işare
 ## <a name="const_pointer"></a>hash_multimap:: const_pointer
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap bir **const** öğesine işaretçi sağlayan bir tür.
 
@@ -498,7 +498,7 @@ Bir tür `const_pointer`, bir öğenin değerini değiştirmek için kullanılam
 ## <a name="const_reference"></a>hash_multimap:: const_reference
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 **Const** işlemlerini okumak ve gerçekleştirmek için bir hash_multimap depolanan **const** öğesine başvuru sağlayan bir tür.
 
@@ -554,7 +554,7 @@ The data value of 1st element in the hash_multimap is 10.
 ## <a name="const_reverse_iterator"></a>hash_multimap:: const_reverse_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -579,7 +579,7 @@ Bir `const_reverse_iterator` başvuru yapmak için, bir hash_multimap bir öğey
 ## <a name="count"></a>hash_multimap:: Count
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir hash_multimap öğe sayısını döndürür.
 
@@ -652,7 +652,7 @@ The number of elements in hm1 with a sort key of 3 is: 0.
 ## <a name="crbegin"></a>hash_multimap:: crbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Ters çevrilen hash_multimap ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -704,7 +704,7 @@ The first element of the reversed hash_multimap hm1 is 3.
 ## <a name="crend"></a>hash_multimap:: crend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Ters çevrilen hash_multimap son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -759,7 +759,7 @@ The last element of the reversed hash_multimap hm1 is 3.
 ## <a name="difference_type"></a>hash_multimap::d ifference_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki hash_multimap öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
@@ -836,7 +836,7 @@ The values of the mapped elements are: 10 20 30 20.
 ## <a name="emplace"></a>hash_multimap:: emplace
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Bir hash_multimap içinde oluşturulmuş bir öğe ekler.
 
@@ -891,7 +891,7 @@ After the emplace insertion, hm1 contains:
 ## <a name="emplace_hint"></a>hash_multimap:: emplace_hint
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Yerleştirme ipucuyla birlikte hash_multimap oluşturulan bir öğe ekler.
 
@@ -951,7 +951,7 @@ After the emplace insertion, hm1 contains:
 ## <a name="empty"></a>hash_multimap:: boş
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap boş ise sınar.
 
@@ -1002,7 +1002,7 @@ The hash_multimap hm2 is empty.
 ## <a name="end"></a>hash_multimap:: End
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -1073,7 +1073,7 @@ The value of last element of hm1 is now 20.
 ## <a name="equal_range"></a>hash_multimap:: equal_range
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Belirtilen anahtardan daha büyük bir anahtarla ve anahtardan daha büyük veya ona eşit olan bir anahtarla hash_multimap ilk öğe olan bir hash_multimap yineleyicilerin bir çiftini döndürür.
 
@@ -1162,7 +1162,7 @@ The hash_multimap hm1 doesn't have an element with a key less than 4.
 ## <a name="erase"></a>hash_multimap:: Erase
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Belirtilen konumlardan bir hash_multimap öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1288,7 +1288,7 @@ After another element with a key equal to that of the
 ## <a name="find"></a>hash_multimap:: Find
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Belirtilen anahtara eşdeğer bir anahtara sahip bir hash_multimap öğenin ilk konumunu ele alan bir yineleyici döndürür.
 
@@ -1384,7 +1384,7 @@ This is not the last element of hash_multimap hm1.
 ## <a name="get_allocator"></a>hash_multimap:: get_allocator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1460,7 +1460,7 @@ int main( )
 ## <a name="hash_multimap"></a>hash_multimap:: hash_multimap
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Boş bir hash_multimap oluşturur veya diğer bir hash_multimap tümünün veya bir kısmının kopyasıdır.
 
@@ -1543,7 +1543,7 @@ Son üç Oluşturucu bir initializer_list kullanır.
 ## <a name="insert"></a>hash_multimap:: INSERT
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Bir hash_multimap öğe veya öğe aralığı ekler.
 
@@ -1599,7 +1599,7 @@ Ekleme noktası *nerede*olursa, ekleme noktası, Logaritmik süre yerine `insert
 ## <a name="iterator"></a>hash_multimap:: Yineleyici
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Bir hash_multimap herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -1624,7 +1624,7 @@ Bir tür `iterator`, bir öğenin değerini değiştirmek için kullanılabilir.
 ## <a name="key_comp"></a>hash_multimap:: key_comp
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -1696,7 +1696,7 @@ int main( )
 ## <a name="key_compare"></a>hash_multimap:: key_compare
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.
 
@@ -1717,7 +1717,7 @@ typedef Traits key_compare;
 ## <a name="key_type"></a>hash_multimap:: key_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap her bir öğesini oluşturan sıralama anahtarı nesnesini açıklayan bir tür.
 
@@ -1738,7 +1738,7 @@ typedef Key key_type;
 ## <a name="lower_bound"></a>hash_multimap:: lower_bound
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla bir hash_multimap ilk öğeye döndürür.
 
@@ -1833,7 +1833,7 @@ This is not the last element of hash_multimap hm1.
 ## <a name="mapped_type"></a>hash_multimap:: mapped_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap depolanan veri türünü temsil eden bir tür.
 
@@ -1854,7 +1854,7 @@ typedef Type mapped_type;
 ## <a name="max_size"></a>hash_multimap:: max_size
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap maksimum uzunluğunu döndürür.
 
@@ -1892,7 +1892,7 @@ int main( )
 ## <a name="op_eq"></a>hash_multimap:: operator =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap öğelerini başka bir hash_multimap kopyasıyla değiştirir.
 
@@ -1953,7 +1953,7 @@ int main( )
 ## <a name="pointer"></a>hash_multimap::p oınter
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap bir öğeye işaretçi sağlayan bir tür.
 
@@ -1970,7 +1970,7 @@ Bir tür `pointer`, bir öğenin değerini değiştirmek için kullanılabilir.
 ## <a name="rbegin"></a>hash_multimap:: rbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Ters çevrilen hash_multimap ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -2055,7 +2055,7 @@ in the reversed hash_multimap is 2.
 ## <a name="reference"></a>hash_multimap:: Reference
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -2118,7 +2118,7 @@ The modified data value of first element is 15.
 ## <a name="rend"></a>hash_multimap:: rend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Ters çevrilen hash_multimap son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -2206,7 +2206,7 @@ After the erasure, the last element in the reversed hash_multimap is 2.
 ## <a name="reverse_iterator"></a>hash_multimap:: reverse_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Ters çevrilen bir hash_multimap bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -2227,7 +2227,7 @@ Hash_multimap tarafından tanımlanan `reverse_iterator`, `pair`\< **const anaht
 ## <a name="size"></a>hash_multimap:: size
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap öğe sayısını döndürür.
 
@@ -2277,7 +2277,7 @@ The hash_multimap length is now 2.
 ## <a name="size_type"></a>hash_multimap:: size_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Bir hash_multimap öğe sayısını sayan işaretsiz bir tamsayı türü.
 
@@ -2294,7 +2294,7 @@ Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boy
 ## <a name="swap"></a>hash_multimap:: swap
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 İki hash_multimaps öğelerini değiş tokuş eder.
 
@@ -2366,7 +2366,7 @@ After swapping with hm3, hash_multimap hm1 is: 300.
 ## <a name="upper_bound"></a>hash_multimap:: upper_bound
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla bir hash_multimap ilk öğeye döndürür.
 
@@ -2452,7 +2452,7 @@ that of the initial element of hm1 is: 20.
 ## <a name="value_comp"></a>hash_multimap:: value_comp
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Üye işlevi, anahtar değerlerini karşılaştırarak bir hash_multimap öğelerinin sırasını belirleyen bir işlev nesnesi döndürür.
 
@@ -2522,7 +2522,7 @@ int main( )
 ## <a name="value_type"></a>hash_multimap:: value_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
 Hash_multimap depolanan nesne türünü temsil eden bir tür.
 

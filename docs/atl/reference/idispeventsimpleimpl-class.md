@@ -16,11 +16,11 @@ helpviewer_keywords:
 - IDispEventSimpleImpl class
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
 ms.openlocfilehash: 3ceb436e4f20a17ecd086fb68f9c1cfdcbe0be3e
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864770"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417651"
 ---
 # <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl sınıfı
 
@@ -49,7 +49,7 @@ Bu sınıf tarafından uygulanan olay görüntüleme arabiriminin IID 'sine yön
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

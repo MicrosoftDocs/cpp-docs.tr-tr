@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
 ms.openlocfilehash: 2f4a394e29be135cac95edf6f504d8b066f53414
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866304"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420374"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind sınıfı
 
@@ -35,13 +35,13 @@ class CFtpFileFind : public CFileFind
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CFtpFileFind:: Cftpfılefind](#cftpfilefind)|`CFtpFileFind` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CFtpFileFind:: FindFile](#findfile)|FTP sunucusundaki bir dosyayı bulur.|
 |[CFtpFileFind:: FindNextFile](#findnextfile)|Önceki bir [FindFile](#findfile)çağrısından bir dosya aramaya devam eder.|

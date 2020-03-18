@@ -61,11 +61,11 @@ helpviewer_keywords:
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
 ms.openlocfilehash: a9161764f6c8646766a73add01c25cce5619ad19
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855384"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418708"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 
@@ -79,13 +79,13 @@ class CFile : public CObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CFile:: CFile](#cfile)|Bir yol veya dosya tanıtıcısından `CFile` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -113,7 +113,7 @@ class CFile : public CObject
 |[CFile:: UnlockRange](#unlockrange)|Dosyadaki bir bayt aralığının kilidini açar.|
 |[CFile:: Write](#write)|Dosyadaki verileri geçerli dosya konumuna yazar (arabelleğe alınmamış).|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -557,7 +557,7 @@ CAtlTransactionManager* m_pTM;
 
 ##  <a name="open"></a>CFile:: Open
 
-Fazla Yüklendi. `Open`, varsayılan `CFile` oluşturucusuyla kullanılmak üzere tasarlanmıştır.
+Aşırı yüklendi. `Open`, varsayılan `CFile` oluşturucusuyla kullanılmak üzere tasarlanmıştır.
 
 ```
 virtual BOOL Open(
@@ -601,9 +601,9 @@ Aşağıdaki tabloda `Open`olası sonuçları açıklanmaktadır.
 |`pError`|Hatayla karşılaşıldı|Dönüş değeri|CFileException içeriği|
 |--------------|------------------------|------------------|----------------------------|
 |NULL|Hayır|TRUE|yok|
-|`CFileException` için PTR|Hayır|TRUE|Değiştirilmediği|
-|NULL|Yes|Yanlış|yok|
-|`CFileException` için PTR|Yes|Yanlış|hatayı tanımlayacak şekilde başlatıldı|
+|`CFileException` için PTR|Hayır|TRUE|değiştirilmediği|
+|NULL|Evet|Yanlış|yok|
+|`CFileException` için PTR|Evet|Yanlış|hatayı tanımlayacak şekilde başlatıldı|
 
 ### <a name="example"></a>Örnek
 

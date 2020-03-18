@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
 ms.openlocfilehash: be42915c6c2e941bc5fc1de78c5c7ac26ccca6e2
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78863244"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418071"
 ---
 # <a name="catldllmodulet-class"></a>Catldllmodület sınıfı
 
@@ -39,14 +39,14 @@ Sınıfınız `CAtlDllModuleT`türetilir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Catldllmodület:: Catldllmodület](#catldllmodulet)|Oluşturucu.|
 |[Catldllmodület:: ~ Catldllmodület](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

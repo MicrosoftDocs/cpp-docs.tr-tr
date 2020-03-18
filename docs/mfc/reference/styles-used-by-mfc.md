@@ -195,11 +195,11 @@ helpviewer_keywords:
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
 ms.openlocfilehash: 0c5f5aaacf96eef52b36421534b02f9d2a5fff6c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854089"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421452"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller
 

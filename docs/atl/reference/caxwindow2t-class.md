@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CAxWindow2 class
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
 ms.openlocfilehash: 0d5991dcbf79d1c2415594636a09908586d1dc2f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864768"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417994"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T sınıfı
 
@@ -41,13 +41,13 @@ template <class TBase = CWindow>
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CAxWindow2T::CAxWindow2T](#caxwindow2t)|`CAxWindow2T` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -56,7 +56,7 @@ template <class TBase = CWindow>
 |[CAxWindow2T:: CreateControlLicEx](#createcontrollicex)|Lisanslı bir ActiveX denetimi oluşturur, onu başlatır, belirtilen pencerede barındırır ve denetimden bir arabirim işaretçisi (veya işaretçiler) alır.|
 |[CAxWindow2T:: GetWndClassName](#getwndclassname)|Pencere sınıfının adını alan statik yöntem.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

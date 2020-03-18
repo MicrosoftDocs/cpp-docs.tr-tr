@@ -9,11 +9,11 @@ helpviewer_keywords:
 - composite controls, macros
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
 ms.openlocfilehash: 685bf55910d4746463de30b17b71aa6d246db199
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78857125"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417791"
 ---
 # <a name="composite-control-macros"></a>Bileşik denetim makroları
 

@@ -47,11 +47,11 @@ helpviewer_keywords:
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
 ms.openlocfilehash: 583b685295bf77910ef134776c1c4fa39baf93ad
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867046"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420528"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 
@@ -67,13 +67,13 @@ class CCmdTarget : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CCmdTarget:: CCmdTarget](#ccmdtarget)|`CCmdTarget` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CCmdTarget:: BeginWaitCursor](#beginwaitcursor)|İmleci bir kum saati imleci olarak görüntüler.|
 |[CCmdTarget::D Ootaverb](#dooleverb)|OLE fiili tarafından belirtilen bir eylemin gerçekleştirilmesine neden olur.|

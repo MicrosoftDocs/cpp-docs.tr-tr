@@ -37,11 +37,11 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
 ms.openlocfilehash: 7d46f175a62cda7f1ff08327830f1dffe2967727
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865554"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420514"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx sınıfı
 
@@ -57,13 +57,13 @@ class CComboBoxEx : public CComboBox
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CComboBoxEx:: CComboBoxEx](#ccomboboxex)|`CComboBoxEx` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CComboBoxEx:: Create](#create)|Birleşik giriş kutusunu oluşturur ve `CComboBoxEx` nesnesine iliştirir.|
 |[CComboBoxEx:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle Birleşik giriş kutusu oluşturur ve bir `ComboBoxEx` nesnesine ekler.|

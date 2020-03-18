@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
 ms.openlocfilehash: 77313f8c4dcc87fa9de852afe2d60e614f8fc3a3
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865749"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418351"
 ---
 # <a name="platformobject-class"></a>Platform:: Object sınıfı
 
@@ -31,13 +31,13 @@ public ref class Object : Object
 
 ### <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Object:: Object](#ctor)|Nesne sınıfının yeni bir örneğini başlatır.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

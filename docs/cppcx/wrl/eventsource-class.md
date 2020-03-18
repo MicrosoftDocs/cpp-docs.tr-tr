@@ -24,11 +24,11 @@ helpviewer_keywords:
 - Microsoft::WRL::EventSource::targetsPointerLock_ data member
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
 ms.openlocfilehash: 1350e51ff609a888b6a8ad6841be6856b68c7994
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865736"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418309"
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 
@@ -48,15 +48,15 @@ Bir olay işleyicisini temsil eden bir temsilci için arabirim.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-| Name                                     | Açıklama                                            |
+| Adı                                     | Açıklama                                            |
 | ---------------------------------------- | ------------------------------------------------------ |
 | [EventSource:: EventSource](#eventsource) | `EventSource` sınıfının yeni bir örneğini başlatır. |
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-| Name                                 | Açıklama                                                                                                                                                      |
+| Adı                                 | Açıklama                                                                                                                                                      |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [EventSource:: Add](#add)             | Belirtilen temsilci arabirimiyle temsil edilen olay işleyicisini geçerli `EventSource` nesnesi için olay işleyicileri kümesine ekler.                     |
 | [EventSource:: GetSize](#getsize)     | Geçerli `EventSource` nesnesiyle ilişkili olay işleyicilerinin sayısını alır.                                                                         |
@@ -65,7 +65,7 @@ Bir olay işleyicisini temsil eden bir temsilci için arabirim.
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-| Name                                                    | Açıklama                                                                                                                       |
+| Adı                                                    | Açıklama                                                                                                                       |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | [EventSource:: addRemoveLock_](#addremovelock)           | Olay işleyicilerini eklerken, kaldırırken veya çağırırken [targets_](#targets) dizisine erişimi eşitler.                          |
 | [EventSource:: targets_](#targets)                       | Bir veya daha fazla olay işleyicilerinden oluşan bir dizi.                                                                                           |

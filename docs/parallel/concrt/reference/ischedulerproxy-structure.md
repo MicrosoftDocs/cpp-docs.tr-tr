@@ -14,11 +14,11 @@ helpviewer_keywords:
 - ISchedulerProxy structure
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
 ms.openlocfilehash: 776f70f9b93eb2e38151ceb5e84b4664420cf954
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854214"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419149"
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy Yapısı
 
@@ -32,7 +32,7 @@ struct ISchedulerProxy;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

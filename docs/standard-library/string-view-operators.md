@@ -18,11 +18,11 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
 ms.openlocfilehash: 699b1f1bddeb71ecbf03297d162a7e45ebd39609
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
-ms.translationtype: MT
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890921"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419422"
 ---
 # <a name="ltstring_viewgt-operators"></a>&lt;string_view&gt; işleçleri
 

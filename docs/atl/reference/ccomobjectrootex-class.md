@@ -21,11 +21,11 @@ helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
 ms.openlocfilehash: 8fa4e7a035ded2e1a20dd278a5d54d40252e1958
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78862619"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417931"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
 
@@ -135,7 +135,7 @@ Sınıfınızın Oluşturucusu yerine `FinalConstruct` başlatmayı gerçekleşt
 
 ### <a name="example"></a>Örnek
 
-Genellikle, toplanan nesneleri oluşturmak için `CComObjectRootEx` türetilen sınıfta bu yöntemi geçersiz kılın. Örnek:
+Genellikle, toplanan nesneleri oluşturmak için `CComObjectRootEx` türetilen sınıfta bu yöntemi geçersiz kılın. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/cpp/ccomobjectrootex-class_1.h)]
 

@@ -71,11 +71,11 @@ helpviewer_keywords:
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
 ms.openlocfilehash: 5373bd6a99605f5a63fb6aa2ed6de50c12b1c8f1
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876041"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419772"
 ---
 # <a name="numeric_limits-class"></a>numeric_limits Sınıfı
 

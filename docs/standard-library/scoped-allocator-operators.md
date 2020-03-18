@@ -6,11 +6,11 @@ f1_keywords:
 - scoped_allocator/std::operator==
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
 ms.openlocfilehash: 071fc3b73cd3378b110d6d412bb7575e35a77478
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876341"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419562"
 ---
 # <a name="ltscoped_allocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 

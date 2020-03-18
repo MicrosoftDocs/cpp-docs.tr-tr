@@ -3,11 +3,11 @@ title: 2. Yönergeler
 ms.date: 01/18/2019
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
 ms.openlocfilehash: 125d2d83b277e62d007e3a208e426ea717d52790
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78882877"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417091"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 
@@ -768,12 +768,12 @@ Aşağıdaki tabloda, geçerli olan işleçler ve bunların kurallı başlatma d
 |İşleç|Başlatma|
 |--------------|--------------------|
 |`+`|0|
-|`*`|1|
+|`*`|1\.|
 |`-`|0|
 |`&`|~0|
 |`|`|0|
 |`^`|0|
-|`&&`|1|
+|`&&`|1\.|
 |`||`|0|
 
 `reduction` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:

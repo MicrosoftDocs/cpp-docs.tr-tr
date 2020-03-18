@@ -6,11 +6,11 @@ f1_keywords:
 - amp/Concurrency::queuing_mode
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
 ms.openlocfilehash: a4feb2f98fc288fa79c0f9d81e4ed882027eddf8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855743"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419303"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 

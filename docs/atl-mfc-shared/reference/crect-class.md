@@ -35,11 +35,11 @@ helpviewer_keywords:
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
 ms.openlocfilehash: 13f86c411cca98f5817d1b3b2d9162ae8af8b734
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866538"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418253"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
@@ -53,13 +53,13 @@ class CRect : public tagRECT
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CRect:: CRect](#crect)|`CRect` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -87,7 +87,7 @@ class CRect : public tagRECT
 |[CRect:: UnionRect](#unionrect)|İki dikdörtgenin birleşime eşit `CRect` ayarlar.|
 |[CRect:: Width](#width)|`CRect`genişliğini hesaplar.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

@@ -345,11 +345,11 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
 ms.openlocfilehash: b631baefdb200c787d7b764ed73b60b3bdd5f592
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866728"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420220"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 
@@ -367,13 +367,13 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`CMFCVisualManager::CMFCVisualManager`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCVisualManager:: AdjustFrames](#adjustframes)||
 |[CMFCVisualManager:: AdjustToolbars](#adjusttoolbars)||

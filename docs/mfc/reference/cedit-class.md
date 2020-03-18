@@ -95,11 +95,11 @@ helpviewer_keywords:
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
 ms.openlocfilehash: 5ad8784f3bff999eec046aa91f52b1cd164764e5
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876367"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420388"
 ---
 # <a name="cedit-class"></a>Cedıt sınıfı
 
@@ -115,13 +115,13 @@ class CEdit : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cedıt:: Cedıt](#cedit)|`CEdit` denetim nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cedıt:: CanUndo](#canundo)|Bir düzenleme denetimi işleminin geri döndürülüp alınamayacağını belirler.|
 |[Cedıt:: CharFromPos](#charfrompos)|Belirtilen konuma en yakın karakterin satır ve karakter dizinlerini alır.|

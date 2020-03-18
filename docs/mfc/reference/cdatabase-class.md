@@ -51,11 +51,11 @@ helpviewer_keywords:
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
 ms.openlocfilehash: ebc36d82af9bfe12ab30a86214e58610b5eaab95
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866271"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418757"
 ---
 # <a name="cdatabase-class"></a>CDatabase sınıfı
 
@@ -69,13 +69,13 @@ class CDatabase : public CObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CDatabase:: CDatabase](#cdatabase)|`CDatabase` nesnesi oluşturur. `OpenEx` veya `Open`çağırarak nesneyi başlatmalısınız.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

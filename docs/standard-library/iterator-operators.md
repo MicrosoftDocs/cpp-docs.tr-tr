@@ -18,11 +18,11 @@ helpviewer_keywords:
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
 ms.openlocfilehash: 7455610af5f03be024753e26f67e561b14c85612
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78884137"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420108"
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;Yineleyici&gt; işleçleri
 

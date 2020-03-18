@@ -41,11 +41,11 @@ helpviewer_keywords:
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
 ms.openlocfilehash: b07190c70fb11950b25aff45fb10e850c0e81b24
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865114"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418722"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 
@@ -59,13 +59,13 @@ class CDialog : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CDialog:: CDialog](#cdialog)|`CDialog` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

@@ -4,11 +4,11 @@ description: Varsayılan x64 ABı çağırma kuralının ayrıntıları.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
 ms.openlocfilehash: 2cad00ac7f2cb5fe086fa262a0f512330997391f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856891"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417168"
 ---
 # <a name="x64-calling-convention"></a>x64 çağırma kuralı
 

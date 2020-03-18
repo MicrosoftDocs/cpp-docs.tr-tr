@@ -35,11 +35,11 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
 ms.openlocfilehash: 20d74030cdc90ed2e1a7809c121967e74db21b4a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866573"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418505"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
 
@@ -53,13 +53,13 @@ class CMDIFrameWnd : public CFrameWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CMDIFrameWnd:: CMDIFrameWnd](#cmdiframewnd)|Bir `CMDIFrameWnd`oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

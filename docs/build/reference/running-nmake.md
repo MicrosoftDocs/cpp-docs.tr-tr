@@ -12,11 +12,11 @@ helpviewer_keywords:
 - command files, NMAKE
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
 ms.openlocfilehash: bfada33a89c04d25bf7444cbf3b1e7ef3ed44385
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856943"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417294"
 ---
 # <a name="running-nmake"></a>NMAKE Çalıştırma
 
@@ -66,10 +66,10 @@ NMAKE, **/r** kullanılmadığı takdirde makefiles 'ı okumadan önce Tools. in
 
 NMAKE şu çıkış kodlarını döndürür:
 
-| Kod | Anlamı |
+| Kod | Açıklama |
 | ---------- | ------------- |
 | 0 | Hata yok (muhtemelen bir uyarı) |
-| 1 | Tamamlanmamış derleme (yalnızca **/k** kullanıldığında verilir) |
+| 1\. | Tamamlanmamış derleme (yalnızca **/k** kullanıldığında verilir) |
 | 2 | Program hatası, muhtemelen şu sorunlardan biri neden oldu:<br /> -Derleme görevleri dosyasında sözdizimi hatası<br /> -Bir komuttan bir hata veya çıkış kodu<br /> -Kullanıcı tarafından bir kesinti |
 | 4 | Sistem hatası — bellek yetersiz |
 | 255 | Hedef güncel değil (yalnızca **/q** kullanıldığında verilir) |

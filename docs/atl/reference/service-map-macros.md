@@ -8,11 +8,11 @@ f1_keywords:
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
 ms.openlocfilehash: ab130b2401dc9885f82fd5668a2d722a96dd289b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78862521"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417476"
 ---
 # <a name="service-map-macros"></a>Hizmet Eşlemesi makrolar
 

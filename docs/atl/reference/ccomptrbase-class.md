@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
 ms.openlocfilehash: 740920225fc513a869b4a92344f87004831e4768
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864976"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417882"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
 
@@ -42,13 +42,13 @@ Akıllı işaretçinin başvurduğu nesne türü.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CComPtrBase:: ~ CComPtrBase](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -62,7 +62,7 @@ Akıllı işaretçinin başvurduğu nesne türü.
 |[CComPtrBase:: Release](#release)|Arabirimi yayınlamak için bu yöntemi çağırın.|
 |[CComPtrBase:: SetSite](#setsite)|`CComPtrBase` nesnesinin sitesini üst nesnenin `IUnknown` ayarlamak için bu yöntemi çağırın.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

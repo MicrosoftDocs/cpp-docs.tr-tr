@@ -25,11 +25,11 @@ helpviewer_keywords:
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
 ms.openlocfilehash: a99d8c8022d23f627320b66c3f376be803c9c839
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876054"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420542"
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 
@@ -45,13 +45,13 @@ class CBrush : public CGdiObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CBrush:: CBrush](#cbrush)|`CBrush` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CBrush:: Createbrühdolaylı](#createbrushindirect)|[LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) yapısında belirtilen stili, rengi ve kalıbı içeren bir fırça başlatır.|
 |[CBrush:: CreateDIBPatternBrush](#createdibpatternbrush)|Cihazdan bağımsız bir bit eşlem (DIB) tarafından belirtilen bir desenli fırçayı başlatır.|
@@ -64,7 +64,7 @@ class CBrush : public CGdiObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CBrush:: operator HBRUSH](#operator_hbrush)|`CBrush` nesnesine eklenen Windows işleyicisini döndürür.|
 

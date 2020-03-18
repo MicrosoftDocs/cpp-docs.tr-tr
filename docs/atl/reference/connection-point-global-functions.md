@@ -9,11 +9,11 @@ helpviewer_keywords:
 - connection points [C++], global functions
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
 ms.openlocfilehash: 0313e93ee82bb96f3bfe08e45f70ccfee30dbee6
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864414"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417763"
 ---
 # <a name="connection-point-global-functions"></a>Bağlantı noktası genel Işlevleri
 

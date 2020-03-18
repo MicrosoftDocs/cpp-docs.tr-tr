@@ -65,11 +65,11 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
 ms.openlocfilehash: 62915da703e1c938e65643ab389999b83c72d459
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78871593"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418561"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 
@@ -83,13 +83,13 @@ class CHeaderCtrl : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CHeaderCtrl:: CHeaderCtrl](#cheaderctrl)|`CHeaderCtrl` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

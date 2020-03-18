@@ -75,11 +75,11 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
 ms.openlocfilehash: 4e14052d400268a8852298113ba9b51fda713dc8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855342"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418890"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 
@@ -93,13 +93,13 @@ class CAsyncSocket : public CObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CAsyncSocket:: CAsyncSocket](#casyncsocket)|`CAsyncSocket` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -141,7 +141,7 @@ class CAsyncSocket : public CObject
 |[CAsyncSocket:: OnReceive](#onreceive)|`Receive`çağırarak, bir dinleme yuvasına alınacak veriler olduğunu bildirir.|
 |[CAsyncSocket:: OnSend](#onsend)|`Send`çağırarak bir yuvaya veri gönderebilirim.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

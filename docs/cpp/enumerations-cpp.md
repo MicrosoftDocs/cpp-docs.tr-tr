@@ -11,11 +11,11 @@ helpviewer_keywords:
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
 ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78884175"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418456"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 

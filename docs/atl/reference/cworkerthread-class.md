@@ -16,11 +16,11 @@ helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
 ms.openlocfilehash: f1aa76514b98bbf12f8e516d3d54f68e8ef4dd7d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78862948"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417721"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 
@@ -49,14 +49,14 @@ class CWorkerThread
 |----------|-----------------|
 |`WorkerClientEntry`||
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CWorkerThread:: CWorkerThread](#cworkerthread)|Çalışan iş parçacığı için Oluşturucu.|
 |[CWorkerThread:: ~ CWorkerThread](#dtor)|Çalışan iş parçacığının yıkıcısı.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

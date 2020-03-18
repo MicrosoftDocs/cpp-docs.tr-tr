@@ -38,11 +38,11 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
 ms.openlocfilehash: 42fdc7a3f09568b641229e897a2a493994a7ba8a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78862987"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417595"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 
@@ -408,7 +408,7 @@ COMMAND_HANDLER(id, code, func)
 
 ### <a name="remarks"></a>Açıklamalar
 
-COMMAND_HANDLER, bildirim koduna ve denetim tanımlayıcısına göre [WM_COMMAND](/windows/win32/menurc/wm-command) bir iletiyi belirtilen işleyici işlevine eşler. Örnek:
+COMMAND_HANDLER, bildirim koduna ve denetim tanımlayıcısına göre [WM_COMMAND](/windows/win32/menurc/wm-command) bir iletiyi belirtilen işleyici işlevine eşler. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]
 

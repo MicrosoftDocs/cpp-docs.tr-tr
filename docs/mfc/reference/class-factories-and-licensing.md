@@ -5,11 +5,11 @@ helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
 ms.openlocfilehash: 18d86122e57af056a50a4d94bac89d65a7b71c7d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855777"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420444"
 ---
 # <a name="class-factories-and-licensing"></a>Sınıf Oluşturucular ve Lisanslama
 

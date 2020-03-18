@@ -10,11 +10,11 @@ helpviewer_keywords:
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 ms.openlocfilehash: 024e757f57e62ba2b30048c783798180b4da2b9a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865514"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417175"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim sözdizimi: printf ve wprintf işlevleri
 
@@ -65,7 +65,7 @@ Biçim dizesini izleyen bağımsız değişkenler, karşılık gelen *tür* kara
 |**larınız**|Tamsayı|İşaretsiz ondalık tamsayı.|
 |**sayı**|Tamsayı|İşaretsiz onaltılık tamsayı; "abcdef" kullanır.|
 |**Sayı**|Tamsayı|İşaretsiz onaltılık tamsayı; "ABCDEF" kullanır.|
-|**a**|Kayan nokta|[-]*D. gggg*__e ±__*dd*\[*d*] biçimindeki işaretli değer; burada *d* , belirtilen duyarlığa bağlı olarak bir veya daha fazla ondalık basamak, ya *da\[varsayılan* olarak altı veya üç *ondalık basamak olur* . [](../c-runtime-library/set-output-format.md)|
+|**a**|Kayan nokta|*d*[-]*D. gggg*__e ±__*dd*\[*d*] biçimindeki işaretli değer; burada *d* , belirtilen duyarlığa bağlı olarak bir veya daha fazla ondalık basamak, ya *da\[varsayılan* olarak altı veya üç *ondalık basamak olur* . [output format](../c-runtime-library/set-output-format.md)|
 |**A**|Kayan nokta|**E** 'nin üs 'i **sağlaması yerine** **e biçimi dışında, e biçimiyle** aynıdır.|
 |**vadeli**|Kayan nokta|[-]*Gggg*biçimindeki işaretli değer __.__ *gggg,* *gggg* bir veya daha fazla ondalık basamak. Ondalık ayırıcıdan önceki basamakların sayısı, sayının büyüklüğüne ve ondalık ayırıcıdan sonraki basamak sayısı, istenen duyarlığa veya altıya göre varsayılan olarak değişir.|
 |**Vadeli**|Kayan nokta|Sonsuzluk ve Nan çıkışının büyük harfli olduğu durumlar dışında **f** biçimiyle aynıdır.|
@@ -81,7 +81,7 @@ Biçim dizesini izleyen bağımsız değişkenler, karşılık gelen *tür* kara
 
 Visual Studio 2015 ' den başlayarak, bir kayan nokta dönüştürme tanımlayıcısına (**a**, **a**, **e**, **e**, **f**, **f**, **g**, **g**) karşılık gelen bağımsız değişken sonsuz, sonsuz veya NaN ise, biçimlendirilen çıktı C99 standardına uygundur. Bu tablo, biçimlendirilen çıktıyı listeler:
 
-|Değer|Çıktı|
+|Değer|Çıkış|
 |-----------|------------|
 |sonsuz|`inf`|
 |Sessiz NaN|`nan`|
@@ -92,12 +92,12 @@ Bu değerlerden herhangi birine bir işaret ön eki uygulanabilir. Bir kayan nok
 
 Visual Studio 2015 ' den önce, CRT sonsuz, sonsuz ve NaN değerlerinin çıkışı için farklı, standart olmayan bir biçim kullandı:
 
-|Değer|Çıktı|
+|Değer|Çıkış|
 |-----------|------------|
 |+ sonsuzluk|`1.#INF` *rastgele rakamlar*|
 |-sonsuzluk|`-1.#INF` *rastgele rakamlar*|
 |Sonsuz (sessiz NaN ile aynı)|*basamak* `.#IND` *rastgele rakamlar*|
-|NaN|*basamak* `.#NAN` *rastgele rakamlar*|
+|{1&gt;NaN&lt;1}|*basamak* `.#NAN` *rastgele rakamlar*|
 
 Bunlardan herhangi biri bir işaret tarafından ön eki alınmış olabilir ve bazı durumlarda bazen olağandışı etkilerle, alan genişliğine ve duyarlığına bağlı olarak biraz farklı şekilde biçimlendirilmiştir. Örneğin, #INF `1.#J` `printf("%.2f\n", INFINITY)`, bu da "yuvarlanmış" olarak 2 basamaklı olacak şekilde yazdırılır.
 
@@ -118,7 +118,7 @@ Bir dönüştürme belirtiminde ilk isteğe bağlı alan *bayrak yönergeleri*, 
 
 ### <a name="flag-characters"></a>Bayrak karakterleri
 
-|Bayrağı|Anlamı|Varsayılan|
+|Bayrağı|Açıklama|Varsayılan|
 |----------|-------------|-------------|
 |**-**|Sonucu verilen alan genişliği içinde sola hizalayın.|Sağa Hizala.|
 |**+**|İmzalı bir tür ise çıkış değeri öneki için bir işaret (+ veya-) kullanın.|İmza yalnızca negatif işaretli değerler için görünür (-).|
@@ -160,7 +160,7 @@ Aşağıdaki tabloda gösterildiği gibi, *tür* karakteri duyarlık *ya da vars
 
 ### <a name="how-precision-values-affect-type"></a>Duyarlık değerlerinin türü nasıl etkiler
 
-|Tür|Anlamı|Varsayılan|
+|Tür|Açıklama|Varsayılan|
 |----------|-------------|-------------|
 |**a**, **a**|Duyarlık, noktadan sonraki basamak sayısını belirtir.|Varsayılan duyarlık 13 ' dir. Duyarlık 0 ise, **#** bayrağı kullanılmadığı takdirde hiçbir ondalık noktası yazdırılmaz.|
 |**c**, **c**|Duyarlık hiçbir etkiye sahip değildir.|Karakter yazdırılır.|

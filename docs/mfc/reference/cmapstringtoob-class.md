@@ -35,11 +35,11 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 09653980-b885-4f3a-8594-0aeb7f94c601
 ms.openlocfilehash: b56e9052533269ba62d248312f07ac16db71bf4a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876380"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418540"
 ---
 # <a name="cmapstringtoob-class"></a>CMapStringToOb sınıfı
 
@@ -53,13 +53,13 @@ class CMapStringToOb : public CObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CMapStringToOb:: CMapStringToOb](#cmapstringtoob)|Oluşturucu.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -77,7 +77,7 @@ class CMapStringToOb : public CObject
 |[CMapStringToOb:: RemoveKey](#removekey)|Anahtar tarafından belirtilen öğeyi kaldırır.|
 |[CMapStringToOb:: SetAt](#setat)|Haritaya bir öğe ekler; eşleşen bir anahtar bulunursa varolan bir öğeyi değiştirir.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

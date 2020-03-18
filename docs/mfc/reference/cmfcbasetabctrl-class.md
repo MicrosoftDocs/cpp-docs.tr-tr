@@ -239,11 +239,11 @@ helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
 ms.openlocfilehash: 8a1637c77c326ddcfcb7f4dcb834ab6f6b2c0cf1
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866726"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420605"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 
@@ -260,7 +260,7 @@ class CMFCBaseTabCtrl : public CWnd
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCBaseTabCtrl:: AddIcon](#addicon)||
 |[CMFCBaseTabCtrl:: AddTab](#addtab)|Sekmeli pencereye yeni bir sekme ekler.|
@@ -378,13 +378,13 @@ class CMFCBaseTabCtrl : public CWnd
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCBaseTabCtrl:: CreateWrapper](#createwrapper)|[CWnd](../../mfc/reference/cwnd-class.md) 'den türetilmiş bir nesne için, `CDockablePane`türetilmeyen bir sarmalayıcı oluşturur. Bir `CMFCBaseTabCtrl` nesnesini sabitlemek için, her ekli denetimin bir yerleştirme sarmalayıcısı olmalıdır ya da `CDockablePane`türetilmiş olmalıdır.<br /><br /> Sarmalayıcı sınıfını `SetDockingBayWrapperRTC`kullanarak ayarlarsınız.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCBaseTabCtrl:: m_bActivateTabOnRightClick](#m_bactivatetabonrightclick)|Sol fare tıklaması veya sağ fare tıklaması kullanılarak sekmelerin seçili olup olmadığını belirtir.|
 |[CMFCBaseTabCtrl:: m_bAutoDestroyWindow](#m_bautodestroywindow)|Sekmelerde bulunan bölmelerin otomatik olarak yok edilip edilmeyeceğini belirtir.|

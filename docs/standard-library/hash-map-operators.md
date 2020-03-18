@@ -6,11 +6,11 @@ f1_keywords:
 - hash_map/std::operator==
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 ms.openlocfilehash: c4cc73feb3c8163a2be9f0122f57eaa0fb8ab3b8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856702"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419016"
 ---
 # <a name="lthash_mapgt-operators"></a>&lt;hash_map&gt; işleçleri
 
@@ -22,7 +22,7 @@ ms.locfileid: "78856702"
 ## <a name="op_neq"></a>işleç! =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
 
 İşlecin sol tarafındaki hash_map nesnesinin sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
 
@@ -91,7 +91,7 @@ The hash_maps hm1 and hm3 are equal.
 ## <a name="op_eq_eq"></a>işleç = =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
 
 İşlecin sol tarafındaki hash_map nesnesinin sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
 
@@ -158,7 +158,7 @@ The hash_maps hm1 and hm3 are equal.
 ## <a name="op_neq_mm"></a>işleç! = (hash_multimap)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
 
 İşlecin sol tarafındaki hash_multimap nesnesinin sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
 
@@ -225,7 +225,7 @@ The hash_multimaps hm1 and hm3 are equal.
 ## <a name="op_eq_eq_mm"></a>işleç = = (hash_multimap)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
+> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
 
 İşlecin sol tarafındaki hash_multimap nesnesinin sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
 

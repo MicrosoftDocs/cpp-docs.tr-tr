@@ -7,11 +7,11 @@ helpviewer_keywords:
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ms.openlocfilehash: 985c63c5c937f9e85b6898cdbcc61f347688b96d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865801"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418512"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 

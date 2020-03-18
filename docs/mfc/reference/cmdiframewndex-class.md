@@ -157,11 +157,11 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
 ms.openlocfilehash: 42e630c1280eb366f9007511ac5d74ac19455a56
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866725"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418498"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx sınıfı
 
@@ -175,7 +175,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -200,7 +200,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx:: Enabhaditabbedgroups](#enablemditabbedgroups)|MDI sekmeli grupları özelliğini etkinleştirilir veya devre dışı bırakır.|
 |[CMDIFrameWndEx:: Enablimon](#enablemditabs)|MDI sekmeleri özelliğini etkinleştirilir veya devre dışı bırakır. Etkinleştirildiğinde, çerçeve penceresi her MDI alt penceresi için bir sekme görüntüler.|
 |[CMDIFrameWndEx:: Enabtifdıtabslastactiveactivation](#enablemditabslastactiveactivation)|Kullanıcı geçerli sekmeyi kapattığında son etkin sekmenin etkinleştirilmesi gerekip gerekmediğini belirtir.|
-|[CMDIFrameWndEx:: Enablebölmesi menüsü](#enablepanemenu)|Uygulama bölmelerinin listesini görüntüleyen açılır pencere bölmesinin otomatik olarak oluşturulmasını ve yönetimini devre dışı bırakır veya devre dışı bırakır.  arasında yetersiz alanla karşılaştı.|
+|[CMDIFrameWndEx:: Enablebölmesi menüsü](#enablepanemenu)|Uygulama bölmelerinin listesini görüntüleyen açılır pencere bölmesinin otomatik olarak oluşturulmasını ve yönetimini devre dışı bırakır veya devre dışı bırakır.  .|
 |[CMDIFrameWndEx:: Enablewindowsiletişim kutusu](#enablewindowsdialog)|Komut KIMLIĞI bir [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) iletişim kutusu çağıran bir menü öğesi ekler.|
 |[CMDIFrameWndEx:: GetActivePopup](#getactivepopup)|Görüntülenmekte olan açılan menü için bir işaretçi döndürür.|
 |[CMDIFrameWndEx:: GetPane](#getpane)|Belirtilen denetim KIMLIĞINE sahip bölme için bir işaretçi döndürür.|
@@ -525,7 +525,7 @@ BOOL DockPaneLeftOf(
 'ndaki Yerleştirme bölmesine yönelik bir işaretçi.
 
 *pLeftOf*<br/>
-'ndaki Dock sitesi olarak hizmet veren bölmeye yönelik bir işaretçi. arasında yetersiz alanla karşılaştı.
+'ndaki Dock sitesi olarak hizmet veren bölmeye yönelik bir işaretçi. .
 
 ### <a name="return-value"></a>Dönüş Değeri
 

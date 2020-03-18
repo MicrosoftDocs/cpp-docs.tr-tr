@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
 ms.openlocfilehash: 11d29b6c31ccecfe5b9c51c2f9311213bd4a6732
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865606"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417196"
 ---
 # <a name="x64-software-conventions"></a>x64 yazılım kuralları
 
@@ -47,8 +47,8 @@ Herhangi bir hizalama ile verilere erişmek mümkün olsa da, performans kaybın
 |||||
 |-|-|-|-|
 |Skaler tür|C veri türü|Depolama boyutu (bayt)|Önerilen hizalama|
-|**INT8**|**char**|1|Bayt|
-|**UINT8**|**işaretsiz karakter**|1|Bayt|
+|**INT8**|**char**|1\.|Bayt|
+|**UINT8**|**işaretsiz karakter**|1\.|Bayt|
 |**INT16**|**short**|2|Word|
 |**INT16**|**işaretsiz kısa**|2|Word|
 |**INT32**|**int**, **Long**|4|Doubleword|
@@ -73,7 +73,7 @@ Diziler, yapılar ve birleşimler gibi diğer türler, tutarlı toplam ve birle�
 
    Sıralı bir veri nesneleri grubunu içerir. Bir dizinin öğelerinden farklı olarak, bir yapı içindeki veri nesneleri farklı veri türlerine ve boyutlara sahip olabilir. Bir yapıdaki her veri nesnesine *üye*denir.
 
-- Birleşim
+- UNION
 
    Adlandırılmış üye kümesinden birini tutan nesne. Adlandırılmış küme üyeleri herhangi bir türde olabilir. Bir bileşim için ayrılan depolama alanı, bu birleşimin en büyük üyesi için gereken depolamaya ve hizalama için gereken herhangi bir doldurmaya eşittir.
 
@@ -193,7 +193,7 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları genelinde nasıl kullanı
 
 ||||
 |-|-|-|
-|Kaydolma|Durum|Kullanım|
+|Yazmaç|Durum|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |RAX|Katılımcıdan|Dönüş değeri kaydı|
 |RCX|Katılımcıdan|İlk tamsayı bağımsız değişkeni|
 |RDX|Katılımcıdan|İkinci tamsayı bağımsız değişkeni|

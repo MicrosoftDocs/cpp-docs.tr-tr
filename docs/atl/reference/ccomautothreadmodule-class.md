@@ -18,11 +18,11 @@ helpviewer_keywords:
 - apartment model modules
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
 ms.openlocfilehash: 9b0fa685bf9a7de94b158bd62b00161c1b58562d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866179"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417924"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule sınıfı
 
@@ -75,7 +75,7 @@ class CComAutoThreadModule : public CComModule
 
 Birden çok apartmanlarda nesne oluşturmak istediğinizde `CComAutoThreadModule` modülünüzü türetirsiniz. Ayrıca, sınıf fabrikası olarak [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) belirtmek için nesnenizin sınıf tanımına [declare_classfactory_auto_thread](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosunu da dahil etmeniz gerekir.
 
-Varsayılan olarak, ATL COM AppWizard (Visual Studio .NET 'te ATL Proje Sihirbazı) `CComModule`modülünden türetilecektir. `CComAutoThreadModule`kullanmak için, sınıf tanımını değiştirin. Örnek:
+Varsayılan olarak, ATL COM AppWizard (Visual Studio .NET 'te ATL Proje Sihirbazı) `CComModule`modülünden türetilecektir. `CComAutoThreadModule`kullanmak için, sınıf tanımını değiştirin. Örneğin:
 
 [!code-cpp[NVC_ATL_AxHost#2](../../atl/codesnippet/cpp/ccomautothreadmodule-class_1.cpp)]
 

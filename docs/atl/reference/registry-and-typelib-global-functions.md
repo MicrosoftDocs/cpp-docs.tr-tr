@@ -18,11 +18,11 @@ helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
 ms.openlocfilehash: c5fdaceb47b6cd09dd9d66f26af1337a8dc6bbae
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78863247"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417497"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel Işlevleri
 

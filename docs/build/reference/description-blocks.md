@@ -8,11 +8,11 @@ helpviewer_keywords:
 - blocks, description
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
 ms.openlocfilehash: fb9cf4400c96b588e8704e972dd29ab27f41cae9
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856942"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417301"
 ---
 # <a name="description-blocks"></a>Açıklama blokları
 

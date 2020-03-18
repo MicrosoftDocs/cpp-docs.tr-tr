@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::operatoroperator&lt; (optional)
 - std::operatoroperator&lt;= (optional)
 ms.openlocfilehash: c5d0de435180054b186400384fc0583df5b03246
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854088"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419695"
 ---
 # <a name="ltoptionalgt-operators"></a>isteğe bağlı&gt; işleçleri &lt;
 

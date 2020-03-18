@@ -8,11 +8,11 @@ helpviewer_keywords:
 - connection points [C++], macros
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
 ms.openlocfilehash: cb8d6f696980ef91d7b43c960dc50289ea8500a6
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78872488"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417735"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
 

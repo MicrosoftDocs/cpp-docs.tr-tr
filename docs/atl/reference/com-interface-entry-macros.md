@@ -19,11 +19,11 @@ helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
 ms.openlocfilehash: 1e1674bad1164e640939d430a860beac7a6e4208
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855672"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417889"
 ---
 # <a name="com_interface_entry-macros"></a>COM_INTERFACE_ENTRY makrolar
 
@@ -38,7 +38,7 @@ Bu makrolar, `QueryInterface`tarafından erişilebilmesi için COM eşlemesine b
 |[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)|*IID* tarafından tanımlanan arabirim için sorgulandığında, `COM_INTERFACE_ENTRY_AGGREGATE` `punk`iletir.|
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletilmesinin sonucu olduğu durumlar dışında.|
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturur.|
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturan [](#com_interface_entry_autoaggregate).|
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturan [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate).|
 |[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Belirtilen arabirim için sorgulandığında programınızın [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ' i çağırmasını sağlar.|
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Her örnek için arabirime özgü verileri kaydeder.|
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Yırma arabirimlerini gösterir.|
@@ -219,7 +219,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ##  <a name="com_interface_entry_autoaggregate_blind"></a>COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND
 
-COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturan [](#com_interface_entry_autoaggregate).
+COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturan [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate).
 
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)

@@ -16,11 +16,11 @@ helpviewer_keywords:
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
 ms.openlocfilehash: 572a0ba70c1ba2d46d2d9fd6d8ac543a77bbbc01
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856780"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417315"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 'Ler ve C++ görsel çalışma zamanı kitaplığı davranışı
 

@@ -81,11 +81,11 @@ helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
 ms.openlocfilehash: 36afd716009848ccd2e2f0ab966f66f573acdfd8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78862949"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417896"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase sınıfı
 
@@ -108,14 +108,14 @@ class ATL_NO_VTABLE CComControlBase
 |----------|-----------------|
 |[CComControlBase:: AppearanceType](#appearancetype)|`m_nAppearance` Stock özelliği **Short**türünde değilse, bunu geçersiz kılın.|
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CComControlBase:: CComControlBase](#ccomcontrolbase)|Oluşturucu.|
 |[CComControlBase:: ~ CComControlBase](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -1063,7 +1063,7 @@ unsigned m_bWndLess:1;
 > [!NOTE]
 >  Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-Veri üyesi `m_spInPlaceSite`, `m_bWndLess` ve [CComControlBase:: m_bInPlaceSiteEx](#m_binplacesiteex) bayraklarının değerine bağlı olarak bir IOleInPlaceSiteEx veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirimine işaret eder. [](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite) [](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) (CComControlBase [:: m_bNegotiatedWnd](#m_bnegotiatedwnd) veri üyesi [ccomcontrolbase:: m_spInPlaceSite](#m_spinplacesite) IŞARETÇISININ geçerli olması için true olmalıdır.)
+Veri üyesi `m_spInPlaceSite`, `m_bWndLess` ve [CComControlBase:: m_bInPlaceSiteEx](#m_binplacesiteex) bayraklarının değerine bağlı olarak bir IOleInPlaceSiteEx veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirimine işaret eder. [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite) [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) (CComControlBase [:: m_bNegotiatedWnd](#m_bnegotiatedwnd) veri üyesi [ccomcontrolbase:: m_spInPlaceSite](#m_spinplacesite) IŞARETÇISININ geçerli olması için true olmalıdır.)
 
 `m_bWndLess` TRUE ise, `m_spInPlaceSite` bir `IOleInPlaceSiteWindowless` arabirim işaretçisidir. Bu veri üyeleri arasındaki tüm ilişkiyi gösteren bir tablo için bkz. [CComControlBase:: m_spInPlaceSite](#m_spinplacesite) .
 

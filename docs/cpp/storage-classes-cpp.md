@@ -11,11 +11,11 @@ helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 ms.openlocfilehash: ab00a5c64a32dc1dab5fef4bc15b722587bc2d6b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
-ms.translationtype: MT
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856914"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418400"
 ---
 # <a name="storage-classes"></a>Depolama sınıfları
 

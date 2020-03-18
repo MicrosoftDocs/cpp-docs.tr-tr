@@ -5,11 +5,11 @@ f1_keywords:
 - forward_list/std::swap
 ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 ms.openlocfilehash: 78b1eaa44ed464de67d8ec45fab3241179bb94b9
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875851"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419100"
 ---
 # <a name="ltforward_listgt-functions"></a>&lt;forward_list&gt; işlevleri
 

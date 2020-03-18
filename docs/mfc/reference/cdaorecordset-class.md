@@ -167,11 +167,11 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
 ms.openlocfilehash: 96118645aa656e97fcb93a0fd223045208ab03a3
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867306"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418792"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 
@@ -185,13 +185,13 @@ class CDaoRecordset : public CObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CDaoRecordset:: CDaoRecordset](#cdaorecordset)|`CDaoRecordset` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -678,7 +678,7 @@ virtual BOOL Find(
 - AFX_DAO_LAST eşleşen bir dizenin son konumunu bulur.
 
 *lpszFilter*<br/>
-Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ). Örnek:
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ). Örneğin:
 
 [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/cpp/cdaorecordset-class_3.cpp)]
 
@@ -1512,9 +1512,9 @@ Taşıma işlemine izin verilmesi, işlemin başarıyla bir kayıt bulabileceği
 ||IsBOF|IOF|
 |------|-----------|-----------|
 |`MoveFirst`, `MoveLast`|Sıfır olmayan|Sıfır olmayan|
-|`Move` 0|Değişiklik yok|Değişiklik yok|
-|`MovePrev`, `Move` < 0|Sıfır olmayan|Değişiklik yok|
-|`MoveNext`, `Move` > 0|Değişiklik yok|Sıfır olmayan|
+|`Move` 0|düzeltme sınıfı,|düzeltme sınıfı,|
+|`MovePrev`, `Move` < 0|Sıfır olmayan|düzeltme sınıfı,|
+|`MoveNext`, `Move` > 0|düzeltme sınıfı,|Sıfır olmayan|
 
 İlgili bilgiler için, DAO yardımı 'nda "BOF, EOF özellikleri" konusuna bakın.
 
@@ -1585,9 +1585,9 @@ Taşıma işlemine izin verilmesi, işlemin başarıyla bir kayıt bulabileceği
 ||IsBOF|IOF|
 |------|-----------|-----------|
 |`MoveFirst`, `MoveLast`|Sıfır olmayan|Sıfır olmayan|
-|`Move` 0|Değişiklik yok|Değişiklik yok|
-|`MovePrev`, `Move` < 0|Sıfır olmayan|Değişiklik yok|
-|`MoveNext`, `Move` > 0|Değişiklik yok|Sıfır olmayan|
+|`Move` 0|düzeltme sınıfı,|düzeltme sınıfı,|
+|`MovePrev`, `Move` < 0|Sıfır olmayan|düzeltme sınıfı,|
+|`MoveNext`, `Move` > 0|düzeltme sınıfı,|Sıfır olmayan|
 
 İlgili bilgiler için, DAO yardımı 'nda "BOF, EOF özellikleri" konusuna bakın.
 
@@ -1952,7 +1952,7 @@ Aşağıdakilerden birini içeren bir dize işaretçisi:
 - Doğrudan sorgu.
 
 *Önemli seçenekler*<br/>
-Aşağıda listelenen seçeneklerden biri veya birkaçı. Varsayılan değer 0’dır. Olası değerler aşağıdaki gibidir:
+Aşağıda listelenen seçeneklerden biri veya birkaçı. Varsayılan değer 0'dır. Olası değerler aşağıdaki gibidir:
 
 - `dbAppendOnly` yalnızca yeni kayıtları (yalnızca Dynaset türü kayıt kümesi) ekleyebilirsiniz. Bu seçenek, kayıtların yalnızca eklenebileceği anlamına gelir. MFC ODBC veritabanı sınıfları, kayıtların alınmasına ve eklenmiş olmasına izin veren bir APPEND seçeneği vardır.
 

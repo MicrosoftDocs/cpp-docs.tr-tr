@@ -101,11 +101,11 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
 ms.openlocfilehash: b32578cc3c9ad4f7a89b8ee76449259c0fa0b43b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78883682"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421480"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
 
@@ -119,13 +119,13 @@ class CRichEditView : public CCtrlView
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CRichEditView:: CRichEditView](#cricheditview)|`CRichEditView` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -1127,7 +1127,7 @@ Sorgu için [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) işar
 Kabul edilebilir veri biçimine yönelik işaretçi.
 
 *dwReco*<br/>
-Kullanılmadı.
+Kullanılmıyor.
 
 *Bresel olarak*<br/>
 Yapıştırma işleminin devam edip edemeyeceğini gösterir.

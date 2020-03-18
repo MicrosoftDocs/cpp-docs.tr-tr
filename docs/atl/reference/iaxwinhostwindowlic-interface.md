@@ -10,11 +10,11 @@ helpviewer_keywords:
 - IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
 ms.openlocfilehash: aca3970d13db53ffa04fe9582bbe9b8db78e820d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864859"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417644"
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>Iaxwinhostwindowlik arabirimi
 

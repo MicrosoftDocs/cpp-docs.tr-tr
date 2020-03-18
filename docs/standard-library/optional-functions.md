@@ -5,11 +5,11 @@ f1_keywords:
 - optional/std::swap
 ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 ms.openlocfilehash: ebb7ccfb8a39bf1f45c7003d7c38e503ab20c89b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854090"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419702"
 ---
 # <a name="ltoptionalgt-functions"></a>isteğe bağlı&gt; işlevleri &lt;
 

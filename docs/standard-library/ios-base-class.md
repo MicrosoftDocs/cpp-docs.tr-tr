@@ -109,11 +109,11 @@ helpviewer_keywords:
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ms.openlocfilehash: 17fb83cdbf882467f0ec330e05a6506b13051cab
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856574"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418974"
 ---
 # <a name="ios_base-class"></a>ios_base Sınıfı
 
@@ -159,7 +159,7 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 |-|-|
 |[event](#event)|Olay türlerini belirtir.|
 
-### <a name="constants"></a>Sabitler
+### <a name="constants"></a>{1&gt;Sabitler&lt;1}
 
 |||
 |-|-|

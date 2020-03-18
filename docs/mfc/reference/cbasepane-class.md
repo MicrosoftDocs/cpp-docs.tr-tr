@@ -167,11 +167,11 @@ helpviewer_keywords:
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
 ms.openlocfilehash: 59291516c14ea6ff8b1d2fe515d121dd6f910cba
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866727"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420584"
 ---
 # <a name="cbasepane-class"></a>CBasePane sınıfı
 
@@ -187,14 +187,14 @@ class CBasePane : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`CBasePane::CBasePane`|Varsayılan Oluşturucu.|
 |`CBasePane::~CBasePane`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`CBasePane::accHitTest`|Ekranın verilen bir noktada alt öğe veya alt nesne almak için Framework tarafından çağırılır. ( [CWnd:: accHitTest](../../mfc/reference/cwnd-class.md#acchittest)geçersiz kılar.)|
 |`CBasePane::accLocation`|Belirtilen nesnenin geçerli ekran konumunu almak için Framework tarafından çağırılır. ( [CWnd:: accLocation](../../mfc/reference/cwnd-class.md#acclocation).)|
@@ -302,7 +302,7 @@ class CBasePane : public CWnd
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CBasePane::D oPaint](#dopaint)|Bölmenin arka planını doldurur.|
 

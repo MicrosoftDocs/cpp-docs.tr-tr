@@ -81,11 +81,11 @@ helpviewer_keywords:
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
 ms.openlocfilehash: a411ed54a73a0dee49ebbd9ccacbd7c6f8e69ca5
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856319"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418211"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -132,14 +132,14 @@ Dize sınıfının C çalışma zamanı (CRT) kitaplık desteğinin gerekip gere
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CStringT:: CStringT](#cstringt)|Çeşitli yollarla `CStringT` nesnesi oluşturur.|
 |[CStringT:: ~ CStringT](#_dtorcstringt)|`CStringT` nesnesini yok eder.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -1478,7 +1478,7 @@ Karakter veya alt dizenin değiştirilen örneklerinin sayısını veya dize de�
 |_UNICODE|Geniş karakterler|
 |_MBCS|Çok baytlı karakterler|
 |Hiçbiri|Tek baytlık karakterler|
-|Her ikisi de|Tanımlanmadı|
+|Her İkisi|Tanımlanmamış|
 
 ### <a name="example"></a>Örnek
 

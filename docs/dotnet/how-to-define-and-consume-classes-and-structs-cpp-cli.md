@@ -6,11 +6,11 @@ helpviewer_keywords:
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
 ms.openlocfilehash: 5fe7d6876b094c84fe3d4cdbba417106edcca528
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855792"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418295"
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)
 
@@ -226,7 +226,7 @@ Bu tablo çeşitli erişim Belirticilerinin etkisini özetler:
 
 |Belirleyici|Etki|
 |---------------|------------|
-|public|Üyeye derleme içinde ve dışında erişilebilir.  Daha fazla bilgi için bkz. [genel](../cpp/public-cpp.md) .|
+|{1&gt;public&lt;1}|Üyeye derleme içinde ve dışında erişilebilir.  Daha fazla bilgi için bkz. [genel](../cpp/public-cpp.md) .|
 |private|Üyeye, derleme içinde veya dışında hiçbir yerde erişilemiyor.  Daha fazla bilgi için bkz. [özel](../cpp/private-cpp.md) .|
 |protected|Üyeye, derleme içinde ve dışında erişilebilir, ancak yalnızca türetilmiş türlere erişilebilir.  Daha fazla bilgi için bkz. [korumalı](../cpp/protected-cpp.md) .|
 |internal|Üye derleme içinde ortak ve derleme dışında özel.  `internal`, bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](../extensions/context-sensitive-keywords-cpp-component-extensions.md).|

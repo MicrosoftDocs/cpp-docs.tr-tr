@@ -107,11 +107,11 @@ helpviewer_keywords:
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
 ms.openlocfilehash: d2e043c8c9f4ad86636cd0e9ea7d695826b6c8fb
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866455"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418631"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 
@@ -125,13 +125,13 @@ class CFrameWnd : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CFrameWnd:: CFrameWnd](#cframewnd)|`CFrameWnd` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -175,7 +175,7 @@ class CFrameWnd : public CWnd
 |[CFrameWnd:: SetProgressBarPosition](#setprogressbarposition)|Görev çubuğunda görüntülenmek üzere Windows 7 ilerleme çubuğunun geçerli konumunu ayarlar.|
 |[CFrameWnd:: SetProgressBarRange](#setprogressbarrange)|Görev çubuğunda görüntülenmek üzere Windows 7 ilerleme çubuğu aralığını ayarlar.|
 |[CFrameWnd:: SetProgressBarState](#setprogressbarstate)|Bir görev çubuğu düğmesinde görünen ilerleme göstergesinin türünü ve durumunu ayarlar.|
-|[CFrameWnd:: Settaskbaroverlayıcon](#settaskbaroverlayicon)|Fazla Yüklendi. Uygulama durumunu veya kullanıcıya yönelik bir bildirimi göstermek için bir görev çubuğu düğmesine bir kaplama uygular.|
+|[CFrameWnd:: Settaskbaroverlayıcon](#settaskbaroverlayicon)|Aşırı yüklendi. Uygulama durumunu veya kullanıcıya yönelik bir bildirimi göstermek için bir görev çubuğu düğmesine bir kaplama uygular.|
 |[CFrameWnd:: SetTitle](#settitle)|İlgili denetim çubuğunun başlığını ayarlar.|
 |[CFrameWnd:: ShowControlBar](#showcontrolbar)|Denetim çubuğunu göstermek için çağırın.|
 |[CFrameWnd:: ShowOwnedWindows](#showownedwindows)|`CFrameWnd` nesnesinin alt öğesi olan tüm pencereleri gösterir.|
@@ -1196,7 +1196,7 @@ void SetProgressBarState(TBPFLAG tbpFlags);
 
 ##  <a name="settaskbaroverlayicon"></a>CFrameWnd:: Settaskbaroverlayıcon
 
-Fazla Yüklendi. Uygulama durumunu göstermek veya kullanıcıya bildirimde bulunan bir görev çubuğu düğmesine bir kaplama uygular.
+Aşırı yüklendi. Uygulama durumunu göstermek veya kullanıcıya bildirimde bulunan bir görev çubuğu düğmesine bir kaplama uygular.
 
 ```
 BOOL SetTaskbarOverlayIcon(

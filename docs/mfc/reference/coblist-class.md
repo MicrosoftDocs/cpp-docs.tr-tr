@@ -51,11 +51,11 @@ helpviewer_keywords:
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
 ms.openlocfilehash: 2fc3a3643c675394de555f1411030e278bcee775
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855332"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79416874"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 
@@ -71,13 +71,13 @@ class CObList : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CObList:: CObList](#coblist)|`CObject` işaretçileri için boş bir liste oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CObList:: AddHead](#addhead)|Listenin baş bir bir öğesini (veya başka bir listedeki tüm öğeleri) ekler (yeni bir baş oluşturur).|
 |[CObList:: AddTail](#addtail)|Bir öğeyi (veya başka bir listedeki tüm öğeleri) listenin sonuna ekler (yeni bir kuyruk oluşturur).|
@@ -155,7 +155,7 @@ Başka bir `CObList` listesine yönelik bir işaretçi. *PNewList* içindeki ö�
 
 Aşağıdaki tabloda, `CObList::AddHead`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddHead (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddHead (CPtrList** <strong>\*</strong> `pNewList` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddHead (const CString &** `newElement` **);**<br /><br /> **Konum AddHead (LPCTSTR** `newElement` **);**<br /><br /> **void AddHead (CStringList** <strong>\*</strong> `pNewList` **);**|
@@ -205,7 +205,7 @@ Başka bir `CObList` listesine yönelik bir işaretçi. *PNewList* içindeki ö�
 
 Aşağıdaki tabloda, `CObList::AddTail`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddTail (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddTail (CPtrList** <strong>\*</strong> `pNewList` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddTail (const CString &** `newElement` **);**<br /><br /> **Konum AddTail (LPCTSTR** `newElement` **);**<br /><br /> **void AddTail (CStringList** <strong>\*</strong> `pNewList` **);**|
@@ -243,7 +243,7 @@ Liste büyüdükçe, bellek *nBlockSize* girdileri birimlerinde ayrılır. Bir b
 
 Aşağıdaki tabloda, `CObList::CObList`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**CPtrList (INT_PTR** `nBlockSize` **= 10);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**CStringList (INT_PTR** `nBlockSize` **= 10);**|
@@ -286,7 +286,7 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 Aşağıdaki tabloda, `CObList::Find`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum bulma (void** <strong>\*</strong> `searchValue` **, konum** `startAfter` **= null) sabit;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum bulma (LPCTSTR** `searchValue` **, konum** `startAfter` **= null) sabit;**|
@@ -320,7 +320,7 @@ Bu, *n*. öğesinde durdurulan, listenin başlarından sıralı bir tarama başl
 
 Aşağıdaki tabloda, `CObList::FindIndex`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum FindIndex (INT_PTR** `nIndex` **) const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum FindIndex (INT_PTR** `nIndex` **) const;**|
@@ -357,7 +357,7 @@ KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız ge
 
 Aşağıdaki tabloda, `CObList::GetAt`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetAt (konum** *konumu* **) const;**<br /><br /> **\*& GetAt (konum** *konumu* **) void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetAt (konum** *konumu* **) const;**<br /><br /> **CString & GetAt (konum** *konumu* **);**|
@@ -380,7 +380,7 @@ INT_PTR GetCount() const;
 
 Aşağıdaki tabloda, `CObList::GetCount`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**INT_PTR GetCount () const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**INT_PTR GetCount () const;**|
@@ -412,7 +412,7 @@ Listeye doğrudan veya bir `CObList`işaretçisi aracılığıyla erişiliyorsa 
 
 Aşağıdaki tabloda, `CObList::GetHead`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetHead () const; void\*& GetHead ();**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetHead () const; CString & GetHead ();**|
@@ -439,7 +439,7 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 Aşağıdaki tabloda, `CObList::GetHeadPosition`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum GetHeadPosition () const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum GetHeadPosition () const;**|
@@ -483,7 +483,7 @@ Yineleme sırasında bir öğeyi kaldırmak mümkündür. Bkz. [RemoveAt](#remov
 
 Aşağıdaki tabloda, `CObList::GetNext`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|`void*& GetNext( POSITION&` `rPosition` `);`<br /><br /> `const void* GetNext( POSITION&` `rPosition` `) const;`|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|`CString& GetNext( POSITION&` `rPosition` `);`<br /><br /> `const CString& GetNext( POSITION&` `rPosition` `) const;`|
@@ -532,7 +532,7 @@ Alınan öğe listedeki ilk ise, yeni *rPosition* değeri null olarak ayarlanır
 
 Aşağıdaki tabloda, `CObList::GetPrev`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|`void*& GetPrev( POSITION&` `rPosition` `);`<br /><br /> `const void* GetPrev( POSITION&` `rPosition` `) const;`|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|`CString& GetPrev( POSITION&` `rPosition` `);`<br /><br /> `const CString& GetPrev( POSITION&` `rPosition` `) const;`|
@@ -568,7 +568,7 @@ Listedeki öğe sayısını almak için bu yöntemi çağırın.
 
 Aşağıdaki tabloda, `CObList::GetSize`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**INT_PTR GetSize () const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**INT_PTR GetSize () const;**|
@@ -598,7 +598,7 @@ const CObject*& GetTail() const;
 
 Aşağıdaki tabloda, `CObList::GetTail`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetTail () const; void\*& GetTail ();**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetTail () const; CString & GetTail ();**|
@@ -623,7 +623,7 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 Aşağıdaki tabloda, `CObList::GetTailPosition`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Getbir position () const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum Getbir position () const;**|
@@ -654,7 +654,7 @@ Bu listeye eklenecek nesne işaretçisi.
 
 Aşağıdaki tabloda, `CObList::InsertAfter`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Pozisyon InsertAfter (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum InsertAfter (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **Pozisyon InsertAfter (konum** *konumu* **, LPCTSTR** `newElement` **);**|
@@ -702,7 +702,7 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 Aşağıdaki tabloda, `CObList::InsertBefore`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**InsertBefore konumu (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**InsertBefore konumu (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **InsertBefore konumu (konum** *konumu* **, LPCTSTR** `newElement` **);**|
@@ -736,7 +736,7 @@ Bu liste boşsa sıfır dışı; Aksi takdirde 0.
 
 Aşağıdaki tabloda, `CObList::IsEmpty`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**BOOL IsEmpty () const;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**BOOL IsEmpty () const;**|
@@ -761,7 +761,7 @@ Liste zaten boşsa bir hata oluşturulmaz.
 
 Aşağıdaki tabloda, `CObList::RemoveAll`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAll ();**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAll ();**|
@@ -793,7 +793,7 @@ KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız ge
 
 Aşağıdaki tabloda, `CObList::RemoveAt`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAt (konum** *konumu* **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAt (konum** *konumu* **);**|
@@ -832,7 +832,7 @@ CObject* RemoveHead();
 
 Aşağıdaki tabloda, `CObList::RemoveHead`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**RemoveHead ()\* void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveHead ();**|
@@ -861,7 +861,7 @@ Listenin sonunda olan nesneye yönelik bir işaretçi.
 
 Aşağıdaki tabloda, `CObList::RemoveTail`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**RemoveTail ()\* void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveTail ();**|
@@ -898,7 +898,7 @@ KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız ge
 
 Aşağıdaki tabloda, `CObList::SetAt`benzer diğer üye işlevleri gösterilmektedir.
 
-|Sınıf|Üye İşlevi|
+|örneği|Üye İşlevi|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**SetAt void (konum** `pos` **, const CString &** `newElement` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**SetAt void (konum** `pos` **, lpctstr** `newElement` **);**|

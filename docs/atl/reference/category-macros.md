@@ -8,11 +8,11 @@ f1_keywords:
 - atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
 ms.openlocfilehash: 411e06cc795827eef356018ba427510fd9eb7c06
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864452"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418134"
 ---
 # <a name="category-macros"></a>Kategori makroları
 

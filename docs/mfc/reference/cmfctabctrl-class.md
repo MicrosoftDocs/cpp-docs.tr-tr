@@ -105,11 +105,11 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
 ms.openlocfilehash: 74f5c6e0471682a6b96e82cb2f80cc53155866ca
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78883687"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420248"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 
@@ -125,14 +125,14 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`CMFCTabCtrl::CMFCTabCtrl`|Varsayılan Oluşturucu.|
 |`CMFCTabCtrl::~CMFCTabCtrl`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCTabCtrl:: ActivateMDITab](#activatemditab)|Geçerli sekme denetiminin belirtilen sekmesini görüntüler ve odağı bu sekmede ayarlar.|
 |[CMFCTabCtrl:: AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)||
@@ -193,7 +193,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCTabCtrl:: m_bEnableActivate](#m_benableactivate)|Yeni bir sekme eklendiğinde ve etkinleştirildiğinde etkin görünümün odağı kaybetmesini engeller.|
 
@@ -846,7 +846,7 @@ Her zaman TRUE.
 
 *Stil* parametresinin değeri aşağıdaki `CMFCTabCtrl::Style` Numaralandırmalardan biri olabilir.
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |STYLE_3D|Yuvarlak köşelere sahip üç boyutlu, dikdörtgen sekmeler görüntüler.|
 |STYLE_3D_ONENOTE|Dikey ve bir eğimli kenar ve yuvarlatılmış köşeler içeren üç boyutlu sekmeleri görüntüler.|
@@ -1078,7 +1078,7 @@ void SetResizeMode(ResizeMode resizeMode);
 
 *ResizeMode* parametresi, aşağıdaki `ResizeMode` sabit listesi değerlerinden biri olabilir.
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |RESIZE_NO|Sekme denetimi yeniden boyutlandırılamıyor.|
 |RESIZE_VERT|Sekme denetimi dikey olarak yeniden boyutlandırılabilir, ancak yatay olarak yeniden boyutlandırılabilir.|

@@ -5,11 +5,11 @@ f1_keywords:
 - ostream/std::operator&lt;&lt;
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 ms.openlocfilehash: c80abcb08423b4bb269e7d60ac43ef97d197a0e9
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78874853"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419688"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; işleçleri
 
@@ -146,7 +146,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-her öğe _Ch, *Str* 'de başlayan sıranın , `_Ostr.`[put](../standard-library/basic-ostream-class.md#put)(`_Ostr.`[Genişlet](../standard-library/basic-ios-class.md#widen)(`_Ch`)) çağırarak `Elem` türünde bir nesneye dönüştürüldüğünden.
+her öğe _Ch, *Str* 'de başlayan sıranın *_Ch* , `_Ostr.`[put](../standard-library/basic-ostream-class.md#put)(`_Ostr.`[Genişlet](../standard-library/basic-ios-class.md#widen)(`_Ch`)) çağırarak `Elem` türünde bir nesneye dönüştürüldüğünden.
 
 Şablon işlevi
 

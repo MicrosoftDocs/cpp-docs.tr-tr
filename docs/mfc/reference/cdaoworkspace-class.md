@@ -63,11 +63,11 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
 ms.openlocfilehash: c1d235035cee9342c8c54c7aaa4e05a96d5a37e3
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78883882"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420493"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 
@@ -83,13 +83,13 @@ class CDaoWorkspace : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDaoWorkspace:: Cdaoçalışma alanı](#cdaoworkspace)|Bir çalışma alanı nesnesi oluşturur. Daha sonra `Create` veya `Open`çağırın.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDaoWorkspace:: Append](#append)|Yeni oluşturulan bir çalışma alanını veritabanı altyapısının çalışma alanları koleksiyonuna ekler.|
 |[CDaoWorkspace:: BeginTrans](#begintrans)|Çalışma alanında açık olan tüm veritabanları için geçerli olan yeni bir işlem başlatır.|
@@ -120,7 +120,7 @@ class CDaoWorkspace : public CObject
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDaoWorkspace:: m_pDAOWorkspace](#m_pdaoworkspace)|Temel alınan DAO çalışma alanı nesnesine işaret eder.|
 

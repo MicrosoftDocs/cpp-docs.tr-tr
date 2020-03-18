@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CAtlModule class
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
 ms.openlocfilehash: 798e94aed3bbd98108866ce0a1810485bd68699b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78857164"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418050"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
 
@@ -39,14 +39,14 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: CAtlModule](#catlmodule)|Oluşturucu.|
 |[CAtlModule:: ~ CAtlModule](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

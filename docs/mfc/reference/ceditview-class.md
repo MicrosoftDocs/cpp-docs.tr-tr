@@ -41,11 +41,11 @@ helpviewer_keywords:
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
 ms.openlocfilehash: e9b7dea980e607c776e2d50c679042c765080fdb
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78872501"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418659"
 ---
 # <a name="ceditview-class"></a>CEditView sınıfı
 
@@ -59,13 +59,13 @@ class CEditView : public CCtrlView
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CEditView:: CEditView](#ceditview)|`CEditView`türünde bir nesne oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

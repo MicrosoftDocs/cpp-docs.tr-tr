@@ -89,11 +89,11 @@ helpviewer_keywords:
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
 ms.openlocfilehash: d25d8837c549b425416632ee07e23bb57fbd17ae
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856754"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419989"
 ---
 # <a name="map-class"></a>map Sınıfı
 

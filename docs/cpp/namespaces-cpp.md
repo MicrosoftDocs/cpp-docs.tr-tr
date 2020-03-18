@@ -8,11 +8,11 @@ helpviewer_keywords:
 - namespaces [C++]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
 ms.openlocfilehash: ae3006dd1b17ec38240a318af6cfcac5c7d6bf49
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856676"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418428"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 
@@ -98,7 +98,7 @@ int ContosoDataServer::Bar(){return 0;}
 
 Bir ad alanı, tek bir dosyada ve birden çok dosyada birden çok blok halinde bildirilebilecek. Derleyici, ön işleme sırasında parçaları birleştirir ve sonuçta elde edilen ad alanı tüm parçalar içinde belirtilen tüm üyeleri içerir. Standart Kitaplığı 'ndaki üst bilgi dosyalarında belirtilen std ad alanı buna bir örnektir.
 
-Adlandırılmış bir ad alanının üyeleri, tanımlanan adın açık niteliği tarafından bildirilen ad alanının dışında tanımlanabilir. Ancak, tanım, bildirimin ad alanını içeren bir ad alanındaki bildirimin öğesinden sonra gelmelidir. Örnek:
+Adlandırılmış bir ad alanının üyeleri, tanımlanan adın açık niteliği tarafından bildirilen ad alanının dışında tanımlanabilir. Ancak, tanım, bildirimin ad alanını içeren bir ad alanındaki bildirimin öğesinden sonra gelmelidir. Örneğin:
 
 ```cpp
 // defining_namespace_members.cpp
@@ -243,7 +243,7 @@ namespace Contoso
 
 ## <a id="namespace_aliases"></a>Ad uzayı diğer adları
 
-Ad alanı adlarının benzersiz olması gerekir. Bu, genellikle çok kısa olmaması gereken anlamına gelir. Bir adın uzunluğu kodu okumayı zorlaştırıyorsa veya kullanım yönergelerinin kullanılması gereken bir üst bilgi dosyasını yazmak sıkıcı ise, gerçek ad için bir kısaltma görevi gören bir ad alanı diğer adı yapabilirsiniz. Örnek:
+Ad alanı adlarının benzersiz olması gerekir. Bu, genellikle çok kısa olmaması gereken anlamına gelir. Bir adın uzunluğu kodu okumayı zorlaştırıyorsa veya kullanım yönergelerinin kullanılması gereken bir üst bilgi dosyasını yazmak sıkıcı ise, gerçek ad için bir kısaltma görevi gören bir ad alanı diğer adı yapabilirsiniz. Örneğin:
 
 ```cpp
 namespace a_very_long_namespace_name { class Foo {}; }

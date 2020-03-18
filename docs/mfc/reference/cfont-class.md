@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CFont [MFC], GetLogFont
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
 ms.openlocfilehash: c37b2f657105e0065e0cddb2c508424bd6c89b0a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866613"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418624"
 ---
 # <a name="cfont-class"></a>CFont sınıfı
 
@@ -39,13 +39,13 @@ class CFont : public CGdiObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CFont:: CFont](#cfont)|`CFont` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -56,7 +56,7 @@ class CFont : public CGdiObject
 |[CFont:: FromHandle](#fromhandle)|Bir Windows HFONT verildiğinde `CFont` nesnesine bir işaretçi döndürür.|
 |[CFont:: GetLogFont](#getlogfont)|Bir `LOGFONT` `CFont` nesnesine eklenen mantıksal yazı tipiyle ilgili bilgilerle doldurur.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

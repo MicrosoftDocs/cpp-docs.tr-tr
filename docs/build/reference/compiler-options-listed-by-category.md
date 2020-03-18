@@ -6,11 +6,11 @@ helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ms.openlocfilehash: d29076e6eae4bcbd15a4bc50bb48477e3f93152d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856917"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417308"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 

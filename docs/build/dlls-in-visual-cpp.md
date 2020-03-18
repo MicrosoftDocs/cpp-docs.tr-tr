@@ -10,11 +10,11 @@ helpviewer_keywords:
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
 ms.openlocfilehash: 7083924f137fa9283da40404c7d15183e59c0b1c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78872535"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417357"
 ---
 # <a name="create-cc-dlls-in-visual-studio"></a>Visual Studio 'daC++ C/dll oluşturma
 

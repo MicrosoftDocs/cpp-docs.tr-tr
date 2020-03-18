@@ -3,11 +3,11 @@ title: 4. Ortam değişkenleri
 ms.date: 01/16/2019
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
 ms.openlocfilehash: b41829fd9cf2f90312f669ef991f56dda02947f7
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78882878"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417056"
 ---
 # <a name="4-environment-variables"></a>4. ortam değişkenleri
 
@@ -92,7 +92,7 @@ setenv OMP_DYNAMIC TRUE
 
 ## <a name="44-omp_nested"></a>4,4 OMP_NESTED
 
-`OMP_NESTED` ortam değişkeni, iç içe paralelliği etkin hale `omp_set_nested` getirerek veya devre dışı bırakarak iç içe paralelliği devre dışı bırakır veya devre dışı bırakır. `OMP_NESTED` `TRUE`olarak ayarlanırsa, iç içe paralellik etkin olur. `OMP_NESTED` `FALSE`olarak ayarlanırsa, iç içe paralellik devre dışı bırakılır. Varsayılan değer: `FALSE`.
+`OMP_NESTED` ortam değişkeni, iç içe paralelliği etkin hale `omp_set_nested` getirerek veya devre dışı bırakarak iç içe paralelliği devre dışı bırakır veya devre dışı bırakır. `OMP_NESTED` `TRUE`olarak ayarlanırsa, iç içe paralellik etkin olur. `OMP_NESTED` `FALSE`olarak ayarlanırsa, iç içe paralellik devre dışı bırakılır. Varsayılan değer `FALSE` şeklindedir.
 
 Örnek:
 

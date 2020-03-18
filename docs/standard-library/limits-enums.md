@@ -6,11 +6,11 @@ f1_keywords:
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
 ms.openlocfilehash: 567e0538f59c40d57f85d652a8919be6e034cf0b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78876040"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420073"
 ---
 # <a name="ltlimitsgt-enums"></a>&lt;sınırları&gt; numaralandırmalar
 

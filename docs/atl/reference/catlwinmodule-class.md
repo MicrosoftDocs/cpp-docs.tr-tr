@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CAtlWinModule class
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
 ms.openlocfilehash: d0bc98fa48f84e67ab38106dea3fe22d5ad1757d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78857357"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418029"
 ---
 # <a name="catlwinmodule-class"></a>CAtlWinModule sınıfı
 
@@ -32,16 +32,16 @@ class CAtlWinModule : public _ATL_WIN_MODULE
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlWinModule:: CAtlWinModule](#catlwinmodule)|Oluşturucu.|
 |[CAtlWinModule:: ~ CAtlWinModule](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlWinModule:: AddCreateWndData](#addcreatewnddata)|Veri nesnesi ekler.|
 |[CAtlWinModule:: ExtractCreateWndData](#extractcreatewnddata)|Pencere modülü veri nesnesine bir işaretçi döndürür.|

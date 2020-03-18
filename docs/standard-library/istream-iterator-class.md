@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::istream_iterator [C++], traits_type
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
 ms.openlocfilehash: 941d625e388edc75dfe25a2de0e609c6d955ff19
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78869896"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420122"
 ---
 # <a name="istream_iterator-class"></a>istream_iterator Sınıfı
 

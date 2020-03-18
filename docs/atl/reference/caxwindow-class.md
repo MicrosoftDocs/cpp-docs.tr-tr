@@ -17,11 +17,11 @@ helpviewer_keywords:
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
 ms.openlocfilehash: 6f5c178090a970906209e41da9298be61a61c639
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864769"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418008"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 

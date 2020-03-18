@@ -141,11 +141,11 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
 ms.openlocfilehash: 210432b8ec193efccc0bf2338089dbccca310726
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866724"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420234"
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages sınıfı
 
@@ -161,13 +161,13 @@ class CMFCToolBarImages : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBarImages:: CMFCToolBarImages](#cmfctoolbarimages)|`CMFCToolBarImages` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBarImages:: AdaptColors](#adaptcolors)||
 |[CMFCToolBarImages:: AddIcon](#addicon)|Araç çubuğu görüntülerine bir simge ekler.|
@@ -236,13 +236,13 @@ class CMFCToolBarImages : public CObject
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBarImages::P Reçoğullyalpha](#premultiplyalpha)||
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMFCToolBarImages:: m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|TrueColor Alfa karıştırma (32-bit renk) devre dışıysa TRUE.|
 

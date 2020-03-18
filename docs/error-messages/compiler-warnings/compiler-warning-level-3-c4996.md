@@ -8,11 +8,11 @@ helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ms.openlocfilehash: 98662dc0b5439c1f8857e4f2ad259793a4d03e41
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865233"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419380"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (düzey 3) C4996
 
@@ -244,7 +244,7 @@ Bu uyarıları gösterme hakkında daha fazla bilgi için bkz. [_AFX_SECURE_NO_W
 
 ## <a name="obsolete-crt-functions-and-variables"></a>Eski CRT işlevleri ve değişkenleri
 
-**Bu işlevin veya değişkenin yerini yeni kitaplık veya işletim sistemi işlevselliği almıştır.**  **Bunun yerine new_item kullanmayı düşünün. Ayrıntılar için çevrimiçi yardıma bakın.**
+**Bu işlevin veya değişkenin yerini yeni kitaplık veya işletim sistemi işlevselliği almıştır.**  *new_item* **Bunun yerine new_item kullanmayı düşünün. Ayrıntılar için çevrimiçi yardıma bakın.**
 
 Bazı kitaplık işlevleri ve genel değişkenler kullanımdan kaldırılmıştır. Bu işlevler ve değişkenler, kitaplığın gelecek bir sürümünde kaldırılabilir. Derleyici bu öğeler için kullanımdan kaldırma uyarısı verir ve tercih edilen alternatifi önerir.
 

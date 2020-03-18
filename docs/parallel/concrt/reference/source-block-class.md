@@ -34,11 +34,11 @@ helpviewer_keywords:
 - source_block class
 ms.assetid: fbdd4146-e8d0-42e8-b714-fe633f69ffbf
 ms.openlocfilehash: 3a0d69bc2e2904b1dcf37a7e9891d95bd869a610
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866140"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417084"
 ---
 # <a name="source_block-class"></a>source_block Sınıfı
 
@@ -63,20 +63,20 @@ Hedef bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`target_iterator`|Bağlı hedeflere kılavuzluk eden Yineleyici.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[source_block](#ctor)|`source_block` nesnesi oluşturur.|
 |[~ source_block yok edici](#dtor)|`source_block` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[ettiğinizde](#accept)|Bu `source_block` nesnesi tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.|
 |[acquire_ref](#acquire_ref)|Silmeyi engellemek için bu `source_block` nesnesi üzerinde bir başvuru sayısı alır.|
@@ -90,7 +90,7 @@ Hedef bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[accept_message](#accept_message)|Türetilmiş bir sınıfta geçersiz kılınırsa, kaynak tarafından önerilen bir iletiyi kabul eder. İleti blokları, `_MsgId` doğrulamak ve bir ileti döndürmek için bu yöntemi geçersiz kılmalıdır.|
 |[async_send](#async_send)|Zaman uyumsuz olarak iletileri kuyruğa alır ve henüz yapmadıysanız bir yayma görevi başlatır|

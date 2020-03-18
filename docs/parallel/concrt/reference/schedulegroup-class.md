@@ -12,11 +12,11 @@ helpviewer_keywords:
 - ScheduleGroup class
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
 ms.openlocfilehash: 8686b5ef0906e3188a1e683d1190bbe6124cd19e
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867149"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417133"
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup Sınıfı
 
@@ -32,13 +32,13 @@ class ScheduleGroup;
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[~ ScheduleGroup yok edici](#dtor)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Kimlik](#id)|Grubun ait olduğu Zamanlayıcı dahilinde benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.|
 |[Başvuru](#reference)|Zamanlama grubu başvuru sayısını artırır.|

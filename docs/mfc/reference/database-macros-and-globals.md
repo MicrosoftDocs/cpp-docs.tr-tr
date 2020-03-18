@@ -14,11 +14,11 @@ helpviewer_keywords:
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
 ms.openlocfilehash: 47a1bb434801c24ab8eee048d9ef8f93793101cc
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866650"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420843"
 ---
 # <a name="database-macros-and-globals"></a>Veritabanı Makroları ve Genel Öğeleri
 

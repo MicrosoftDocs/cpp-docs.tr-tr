@@ -16,11 +16,11 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier, constructor
 ms.assetid: 17249cd1-4d88-42e3-8146-da9e942d12bd
 ms.openlocfilehash: 5fc1b8965bf8bf2f86dd30f2195fa825f85f6d7e
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865593"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418288"
 ---
 # <a name="modulereleasenotifier-class"></a>Module::ReleaseNotifier Sınıfı
 
@@ -34,14 +34,14 @@ class ReleaseNotifier;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 Adı                                                                                | Açıklama
 ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------
 [Module:: ReleaseNotifier:: ~ ReleaseNotifier](#releasenotifier-tilde-releasenotifier) | `Module::ReleaseNotifier` sınıfının geçerli örneğini kaldırır.
 [Module:: ReleaseNotifier:: ReleaseNotifier](#releasenotifier-releasenotifier)        | `Module::ReleaseNotifier` sınıfının yeni bir örneğini başlatır.
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 Adı                                                         | Açıklama
 ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------
