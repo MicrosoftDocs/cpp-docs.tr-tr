@@ -53,11 +53,11 @@ helpviewer_keywords:
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
 ms.openlocfilehash: f6be846e80209ce94c84222d61c37a7964baad03
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855547"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421571"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
@@ -77,7 +77,7 @@ class AFX_NOVTABLE CView : public CWnd
 |----------|-----------------|
 |[CView:: CView](#cview)|`CView` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -139,7 +139,7 @@ Bir görünüm, [CWnd:: OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) 
 
 - Liste denetimleriyle belge görünümü mimarisinin kullanılmasına izin veren bir görünüm olan [Clienstview](../../mfc/reference/clistview-class.md).
 
-- [](../../mfc/reference/crecordview-class.md)İletişim kutusu denetimlerinde veritabanı kayıtlarını görüntüleyen bir görünüm.
+- [CRecordView](../../mfc/reference/crecordview-class.md)İletişim kutusu denetimlerinde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
 - [CRichEditView](../../mfc/reference/cricheditview-class.md), zengin düzenleme denetimleriyle belge görünümü mimarisinin kullanılmasına izin veren bir görünüm.
 
