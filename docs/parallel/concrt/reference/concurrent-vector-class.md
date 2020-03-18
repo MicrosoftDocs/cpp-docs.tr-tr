@@ -34,11 +34,11 @@ helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
 ms.openlocfilehash: 002f1e3f691de3315810efed8f7d8f6c547cf653
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854230"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417252"
 ---
 # <a name="concurrent_vector-class"></a>concurrent_vector Sınıfı
 
@@ -65,7 +65,7 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`allocator_type`|Eşzamanlı vektörün ayırıcı sınıfını temsil eden bir tür.|
 |`const_iterator`|Eşzamanlı vektörde bir `const` öğesini okuyabilen bir rastgele erişim yineleyici sağlayan bir tür.|
@@ -82,14 +82,14 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[concurrent_vector](#ctor)|Fazla Yüklendi. Eşzamanlı bir vektör oluşturur.|
 |[~ concurrent_vector yok edici](#dtor)|Tüm öğeleri siler ve bu eşzamanlı vektörü yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[ata](#assign)|Fazla Yüklendi. Eş zamanlı vektörün öğelerini siler ve bu, `_Item``_N` kopyalarını ya da yineleyici aralığı [`_Begin`, `_End`) tarafından belirtilen değerleri atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 |[hızı](#at)|Fazla Yüklendi. Eşzamanlı vektörde verilen dizindeki öğeye erişim sağlar. Bu yöntem, okuma işlemleri için eşzamanlılık açısından güvenlidir ve aynı zamanda `_Index` değerin eşzamanlı vektörün boyutundan daha az olduğu sürece vektörü büyümekte de olur.|
@@ -119,7 +119,7 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[işleç\[\]](#operator_at)|Fazla Yüklendi. Eşzamanlı vektörde verilen dizindeki öğeye erişim sağlar. Bu yöntem, okuma işlemleri için eşzamanlılık açısından güvenlidir ve aynı zamanda `_Index` değerin eşzamanlı vektör boyutundan daha az olduğu sürece vektörü büyümeye devam ederken vector.|
 |[işleç =](#operator_eq)|Fazla Yüklendi. Başka bir `concurrent_vector` nesnesinin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|

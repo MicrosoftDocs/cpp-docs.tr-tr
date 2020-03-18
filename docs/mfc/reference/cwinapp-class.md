@@ -193,11 +193,11 @@ helpviewer_keywords:
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
 ms.openlocfilehash: e65ad8b5d8b14ff747adc55b517d9e695d9cbb66
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855580"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421004"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -213,13 +213,13 @@ class CWinApp : public CWinThread
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinApp:: CWinApp](#cwinapp)|`CWinApp` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinApp:: AddDocTemplate](#adddoctemplate)|Uygulamanın kullanılabilir belge şablonları listesine bir belge şablonu ekler.|
 |[CWinApp:: AddToRecentFileList](#addtorecentfilelist)|En son kullanılan (MRU) dosya listesine bir dosya adı ekler.|
@@ -287,7 +287,7 @@ class CWinApp : public CWinThread
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinApp:: EnableShellOpen](#enableshellopen)|Kullanıcının Windows Dosya Yöneticisi 'nden veri dosyaları açmasına olanak sağlar.|
 |[CWinApp:: LoadStdProfileSettings](#loadstdprofilesettings)|Standart yükler. INı dosyası ayarları ve MRU dosya listesi özelliğini etkinleştirilir.|
@@ -306,7 +306,7 @@ class CWinApp : public CWinThread
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinApp:: m_bHelpMode](#m_bhelpmode)|Kullanıcının Yardım bağlam modunda olup olmadığını gösterir (genellikle SHIFT + F1 ile çağrılır).|
 |[CWinApp:: m_eHelpType](#m_ehelptype)|Uygulama tarafından kullanılan yardım türünü belirtir.|
@@ -323,7 +323,7 @@ class CWinApp : public CWinThread
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinApp:: m_dwRestartManagerSupportFlags](#m_dwrestartmanagersupportflags)|Yeniden başlatma yöneticisinin nasıl davranacağını belirleme bayrakları.|
 |[CWinApp:: m_nAutosaveInterval](#m_nautosaveinterval)|Saniye cinsinden, oto kaydetme arasındaki süre uzunluğu.|
@@ -1437,7 +1437,7 @@ Uygulama adı, [CWinApp](#cwinapp) oluşturucusuna geçirilen parametreden veya 
 [AfxGetAppName](application-information-and-management.md#afxgetappname)genel işlevi tarafından döndürüldü. `m_pszAppName`, **const char** <strong>\*</strong>türünde ortak bir değişkendir.
 
 > [!NOTE]
-> `m_pszAppName`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> `m_pszAppName`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]
 
@@ -1458,7 +1458,7 @@ LPCTSTR m_pszExeName;
 [M_pszAppName](#m_pszappname)aksine, bu ad boşluk içeremez. `m_pszExeName`, **const char** <strong>\*</strong>türünde ortak bir değişkendir.
 
 > [!NOTE]
-> `m_pszExeName`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> `m_pszExeName`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]
 
@@ -1475,7 +1475,7 @@ LPCTSTR m_pszHelpFilePath;
 Varsayılan olarak Framework, "ile uygulamanın adına `m_pszHelpFilePath` başlatır. HLP "eklendi. Yardım dosyasının adını değiştirmek için `m_pszHelpFilePath`, istenen yardım dosyasının tüm adını içeren bir dizeye işaret etmek üzere ayarlayın. Bunu yapmak için uygun bir yer, uygulamanın [InitInstance](#initinstance) işlevidir. `m_pszHelpFilePath`, **const char** <strong>\*</strong>türünde ortak bir değişkendir.
 
 > [!NOTE]
-> `m_pszHelpFilePath`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> `m_pszHelpFilePath`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]
 
@@ -1492,7 +1492,7 @@ LPCTSTR m_pszProfileName;
 `m_pszProfileName`, **const char** <strong>\*</strong>türünde ortak bir değişkendir.
 
 > [!NOTE]
-> `m_pszProfileName`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> `m_pszProfileName`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]
 
@@ -1510,7 +1510,7 @@ Normalde, bu veri üyesi salt okunurdur.
 
 - Değer bir kayıt defteri anahtarında depolanır. Uygulama profili ayarının adı şu kayıt defteri anahtarına eklenir: HKEY_CURRENT_USER/Software/LocalAppWizard-Generated/.
 
-`m_pszRegistryKey`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+`m_pszRegistryKey`için bir değer atarsanız, yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp` yıkıcısı bu işaretçiyle **Free**() öğesini çağırır. Ayırmayı yapmak için `_tcsdup`() çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/cpp/cwinapp-class_23.cpp)]
 

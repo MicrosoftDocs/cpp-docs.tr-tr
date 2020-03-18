@@ -16,11 +16,11 @@ f1_keywords:
 - concrt/concurrency::VirtualProcessorEventGuid
 ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
 ms.openlocfilehash: 883e0a995605be3e2ac73495250f96815013df06
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78854207"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419156"
 ---
 # <a name="concurrency-namespace-constants"></a>Eşzamanlılık ad alanı sabitleri
 

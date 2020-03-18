@@ -139,11 +139,11 @@ helpviewer_keywords:
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
 ms.openlocfilehash: 6b6d907fd0f1f19c829f991a61c9d92e015c6686
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78874016"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422572"
 ---
 # <a name="unordered_map-class"></a>unordered_map Sınıfı
 
@@ -164,7 +164,7 @@ class unordered_map;
 
 |Parametre|Açıklama|
 |-|-|
-|*Anahtar*|Anahtar türü.|
+|*Key*|Anahtar türü.|
 |*Kalite*|Eşlenen tür.|
 |*Yla*|Karma işlev nesne türü.|
 |*Pred*|Eşitlik karşılaştırma işlevi nesne türü.|

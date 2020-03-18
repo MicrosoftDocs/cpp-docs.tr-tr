@@ -22,11 +22,11 @@ helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
 ms.openlocfilehash: 77ad876b8352ab1ae86fde622b05712ec5f2cea9
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867150"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422117"
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 
@@ -47,13 +47,13 @@ class Scheduler;
 |[Scheduler](#ctor)|`Scheduler` sınıfının bir nesnesi yalnızca Fabrika yöntemleri kullanılarak veya örtük olarak oluşturulabilir.|
 |[~ Scheduler yıkıcısı](#dtor)|`Scheduler` sınıfının bir nesnesi, kendisine yapılan tüm dış başvurular mevcut olduğunda örtük olarak yok edilir.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Attach](#attach)|Zamanlayıcıyı çağıran bağlama iliştirir. Bu yöntem çağrıldıktan sonra, çağıran bağlam Zamanlayıcı tarafından yönetilir ve Zamanlayıcı geçerli Zamanlayıcı olur.|
 |[Oluşturma](#create)|Davranışı `_Policy` parametresi tarafından tanımlanan yeni bir zamanlayıcı oluşturur, Scheduler 'a bir başlangıç başvurusu koyar ve ona bir işaretçi döndürür.|
-|[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. `_Placement` parametresini alan sürüm, yeni oluşturulan zamanlama grubundaki görevlerin Bu parametre tarafından belirtilen konumda yürütülmeye dahil edilmesine neden olur.|
+|[CreateScheduleGroup](#createschedulegroup)|Aşırı yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. `_Placement` parametresini alan sürüm, yeni oluşturulan zamanlama grubundaki görevlerin Bu parametre tarafından belirtilen konumda yürütülmeye dahil edilmesine neden olur.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.|
 |[GetPolicy](#getpolicy)|Scheduler 'ın ile oluşturulduğu ilkenin bir kopyasını döndürür.|
 |[Kimlik](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
@@ -62,7 +62,7 @@ class Scheduler;
 |[RegisterShutdownEvent](#registershutdownevent)|Zamanlayıcı kapandığında ve kendisini yok eder `_Event` parametresinde geçirilen Windows olay tanıtıcısına neden olur. Olaya işaret edilen zaman, Scheduler 'a zamanlanan tüm işler tamamlanmıştır. Birden çok kapanmaya yönelik olay, bu yöntem kullanılarak kaydedilebilir.|
 |[Sürüm](#release)|Zamanlayıcı başvuru sayısını azaltır.|
 |[ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|Varsayılan zamanlayıcı ilkesini çalışma zamanı varsayılan ayarlarına sıfırlar. Varsayılan bir Zamanlayıcı oluşturulduğunda, çalışma zamanı varsayılan ilke ayarlarını kullanır.|
-|[ScheduleTask](#scheduletask)|Fazla Yüklendi. Zamanlayıcı içinde bir hafif görevi zamanlar. Hafif görev, çalışma zamanı tarafından belirlenen bir zamanlama grubuna yerleştirilir. `_Placement` parametresini alan sürüm, görevin belirtilen konumda yürütülerek aşağı doğru kaydırılmasına neden olur.|
+|[ScheduleTask](#scheduletask)|Aşırı yüklendi. Zamanlayıcı içinde bir hafif görevi zamanlar. Hafif görev, çalışma zamanı tarafından belirlenen bir zamanlama grubuna yerleştirilir. `_Placement` parametresini alan sürüm, görevin belirtilen konumda yürütülerek aşağı doğru kaydırılmasına neden olur.|
 |[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|Varsayılan zamanlayıcıyı oluşturmak için Kullanıcı tanımlı bir ilkenin kullanılmasına izin verir. Bu yöntem yalnızca işlem içinde varsayılan Zamanlayıcı yoksa çağrılabilir. Varsayılan bir ilke ayarlandıktan sonra, `SetDefaultSchedulerPolicy` veya [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) yöntemine bir sonraki geçerli çağrıya kadar yürürlükte kalır.|
 
 ## <a name="remarks"></a>Açıklamalar

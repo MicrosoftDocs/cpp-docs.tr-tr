@@ -18,11 +18,11 @@ helpviewer_keywords:
 - agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
 ms.openlocfilehash: f0092f5f90bbdf253c09dbdc80849c3db472212f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78882944"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422264"
 ---
 # <a name="agent-class"></a>agent Sınıfı
 
@@ -38,14 +38,14 @@ class agent;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Aracısı](#ctor)|Fazla Yüklendi. Bir aracı oluşturur.|
 |[~ Aracı yıkıcısı](#dtor)|Aracıyı yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[İptal](#cancel)|Bir aracıyı `agent_created` veya `agent_runnable` durumlarından `agent_canceled` duruma kaydırır.|
 |[start](#start)|Bir aracıyı `agent_created` durumundan `agent_runnable` durumuna taşıdıkça yürütme için zamanlar.|
@@ -57,7 +57,7 @@ class agent;
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[yapıldığını](#done)|Aracının tamamlandığını belirten bir aracıyı `agent_done` durumuna taşımıştır.|
 |[çalışmaz](#run)|Bir aracının ana görevini temsil eder. `run` türetilmiş bir sınıfta geçersiz kılınmalı ve aracının başlatıldıktan sonra ne yapması gerektiğini belirtir.|

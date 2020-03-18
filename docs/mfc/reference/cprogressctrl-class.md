@@ -43,11 +43,11 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
 ms.openlocfilehash: 9d63a1113e521eb73c99c47b335eb7ab00ccd753
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866330"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421536"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 
@@ -61,13 +61,13 @@ class CProgressCtrl : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CProgressCtrl:: CProgressCtrl](#cprogressctrl)|`CProgressCtrl` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

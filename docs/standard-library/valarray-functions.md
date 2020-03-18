@@ -41,11 +41,11 @@ helpviewer_keywords:
 - std::tan [C++]
 - std::tanh [C++]
 ms.openlocfilehash: 12275f93c751b4d9ffafcae62621b251a8bc9bfc
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875624"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422418"
 ---
 # <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; işlevleri
 

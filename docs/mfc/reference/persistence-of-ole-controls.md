@@ -6,11 +6,11 @@ helpviewer_keywords:
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
 ms.openlocfilehash: 42e70f9e48339eddb2a5af4fa288400cce01f490
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855780"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421277"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 
@@ -646,7 +646,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Bu işlev yalnızca bir VBX denetimi için doğrudan değiştirme olarak tasarlanan bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamı, kendisine karşılık gelen değiştirme OLE denetimini kullanmak üzere bir VBX denetimi içeren bir form dönüştürdüğünde, bu, denetimin `IDataObject::SetData` işlevini çağırır ve bu, VBX denetiminin özellik verilerini içeren bir özellik kümesine geçer. Bu işlem sırasıyla denetimin `DoPropExchange` işlevinin çağrılmasına neden olur. `DoPropExchange`, VBX denetiminin yazı tipi ile ilgili özelliklerini (örneğin, "FontName," "FontSize" vb.) OLE denetiminin yazı tipi özelliğinin karşılık gelen bileşenlerine dönüştürmek için `PX_VBXFontConvert` çağırabilir.
 
-`PX_VBXFontConvert` yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürülürken çağrılmalıdır. Örnek:
+`PX_VBXFontConvert` yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürülürken çağrılmalıdır. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]

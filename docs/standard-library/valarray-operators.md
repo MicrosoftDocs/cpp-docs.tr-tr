@@ -31,11 +31,11 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
 ms.openlocfilehash: 231bad65e2af1ee2ab800890c83cc50e584a8c6a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875625"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422390"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 

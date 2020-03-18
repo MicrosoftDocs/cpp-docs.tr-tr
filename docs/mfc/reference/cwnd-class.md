@@ -819,11 +819,11 @@ helpviewer_keywords:
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
 ms.openlocfilehash: 1f0338d827a9ec92747169ff2682e6d47485e4c2
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855595"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420990"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -839,13 +839,13 @@ class CWnd : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWnd:: CWnd](#cwnd)|`CWnd` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWnd:: accDoDefaultAction](#accdodefaultaction)|Nesnenin varsayılan eylemini gerçekleştirmek için Framework tarafından çağırılır.|
 |[CWnd:: accHitTest](#acchittest)|Ekranın verilen bir noktada alt öğe veya alt nesne almak için Framework tarafından çağırılır.|
@@ -1088,7 +1088,7 @@ class CWnd : public CCmdTarget
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWnd::D EFAULT](#default)|Bir uygulamanın işlem yaptığı herhangi bir pencere iletisi için varsayılan işlem sağlayan varsayılan pencere yordamını çağırır.|
 |[CWnd::D efWindowProc](#defwindowproc)|Bir uygulamanın işlem yaptığı herhangi bir pencere iletisi için varsayılan işlem sağlayan varsayılan pencere yordamını çağırır.|
@@ -1259,7 +1259,7 @@ class CWnd : public CCmdTarget
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWnd:: operator HWND](#operator_hwnd)|Pencereye yönelik bir tanıtıcı almak için çağırın.|
 |[CWnd:: operator! =](#operator_neq)|Bir pencerenin tutamacı [m_hWnd](#m_hwnd)olan pencereyle aynı olup olmadığını belirler.|
@@ -1267,7 +1267,7 @@ class CWnd : public CCmdTarget
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWnd:: m_hWnd](#m_hwnd)|Bu `CWnd`eklenen HWND 'yi gösterir.|
 
@@ -1818,7 +1818,7 @@ Sınanacak noktanın istemci koordinatlarını belirtir.
 *nFlags*<br/>
 Hangi alt pencerelerin atlayamayacağını belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |CWP_ALL|Herhangi bir alt pencere atlama|
 |CWP_SKIPINVISIBLE|Görünmeyen alt pencereleri atla|
@@ -1966,7 +1966,7 @@ virtual HRESULT CreateAccessibleProxy(
 *wParam*<br/>
 Etkin Erişilebilirlik proxy 'si tarafından erişilen nesneyi tanımlar. Aşağıdaki değerlerden biri olabilir
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |OBJID_CLIENT|Pencerenin istemci alanına başvurur.|
 
@@ -6121,7 +6121,7 @@ Yineleme sayısını, Kullanıcı anahtarı tuttuğunda tuş vuruşlarının ka�
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu içerir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-15|Yineleme sayısını belirtir. Değer, anahtarın basılı tutulduğu kullanıcının sonucu olarak tuş vuruşu tekrarlanma sayısıdır.|
 |16-23|Tarama kodunu belirtir. Değer, özgün ekipman üreticisine (OEM) bağlıdır|
@@ -6338,11 +6338,11 @@ Birleşik giriş veya liste kutusundaki iki öğe için tanımlayıcıları ve u
 
 İki öğenin göreli konumunu gösterir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |-1|Öğe 1 öğe 2 ' den önce sıralar.|
 |0|Öğe 1 ve öğe 2 aynı şekilde sıralayın.|
-|1|Öğe 1 öğe 2 ' den sonra sıralar.|
+|1\.|Öğe 1 öğe 2 ' den sonra sıralar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7754,7 +7754,7 @@ Dönüş değerinin yüksek düzen sözcüğü aşağıdaki komut kodlarından b
 |Değer|Açıklama|
 |-----------|-----------------|
 |0|Windows 'un kullanıcıya basılan karakteri atıp sistem konuşmacısı üzerinde kısa bir bip sesi oluşturduğunu söyler.|
-|1|Windows 'un geçerli menüyü kapatmasını söyler.|
+|1\.|Windows 'un geçerli menüyü kapatmasını söyler.|
 |2|Windows 'a, dönüş değerinin düşük sıralı sözcüğünün belirli bir öğe için öğe numarasını içerdiğini bildirir. Bu öğe Windows tarafından seçilidir.|
 
 Yüksek sıralı sözcük 0 veya 1 içeriyorsa düşük sıralı sözcük yok sayılır. Bir menüye yerleştirilmiş bit eşlemleri seçmek için Hızlandırıcı (kısayol) tuşları kullanıldığında uygulamalar bu iletiyi işlemelidir.
@@ -7785,7 +7785,7 @@ afx_msg UINT OnMenuDrag(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|Dönüş Değeri|Anlamı|
+|Dönüş Değeri|Açıklama|
 |------------------|-------------|
 |MND_CONTINUE|Menü etkin kalmalıdır. Fare yayımlanmışsa, göz ardı edilmelidir.|
 |MND_ENDMENU|Menünün sonlandırılması gerekir.|
@@ -7813,7 +7813,7 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|Dönüş Değeri|Anlamı|
+|Dönüş Değeri|Açıklama|
 |------------------|-------------|
 |MNGO_NOERROR|[Menugetobjectınfo](/windows/win32/api/winuser/ns-winuser-menugetobjectinfo) yapısının `pvObj` üyesinde bırakma ve sürükleme işlemlerini destekleyen bir arabirim işaretçisi döndürülür. Şu anda yalnızca [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabirimi destekleniyor.|
 |MNGO_NOINTERFACE|Bırakma ve sürükleme arabirimi desteklenmez.|
@@ -8730,7 +8730,7 @@ afx_msg UINT OnNotifyFormat(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|Dönüş değeri|Anlamı|
+|Dönüş değeri|Açıklama|
 |------------------|-------------|
 |NFR_ANSI|ANSI yapıları, denetim tarafından gönderilen WM_NOTIFY iletilerinde kullanılmalıdır.|
 |NFR_UNICODE|Unicode yapıları, denetim tarafından gönderilen WM_NOTIFY iletilerinde kullanılmalıdır.|
@@ -9518,7 +9518,7 @@ Yineleme sayısını belirtir (anahtar, anahtarı tutan kullanıcının sonucu o
 *nFlags*<br/>
 *NFlags* parametresi şu değerlere sahip olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-15|Yineleme sayısını belirtir. Değer, anahtarın basılı tutulduğu kullanıcının bir sonucu olarak tuş vuruşu tekrarlanma sayısıdır.|
 |16-23|Tarama kodunu belirtir. Değer, özgün ekipman üreticisine (OEM) bağlıdır|
@@ -9642,7 +9642,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -9681,7 +9681,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -9728,7 +9728,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|

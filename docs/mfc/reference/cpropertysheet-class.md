@@ -53,11 +53,11 @@ helpviewer_keywords:
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
 ms.openlocfilehash: 23d17aee2aacbc1484c0f3e181bc824546ab49a2
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865463"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421011"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -73,13 +73,13 @@ class CPropertySheet : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropertySheet:: CPropertySheet](#cpropertysheet)|`CPropertySheet` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropertySheet:: AddPage](#addpage)|Özellik sayfasına bir sayfa ekler.|
 |[CPropertySheet:: yapısı](#construct)|`CPropertySheet` nesnesi oluşturur.|
@@ -105,7 +105,7 @@ class CPropertySheet : public CWnd
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropertySheet:: m_psh](#m_psh)|Windows [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
 

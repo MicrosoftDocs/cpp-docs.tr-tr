@@ -63,11 +63,11 @@ helpviewer_keywords:
 - std::atomic_thread_fence [C++]
 - std::kill_dependency [C++]
 ms.openlocfilehash: 5314db43bed913e801846341309513c239216887
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867095"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421998"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomik&gt; işlevleri
 

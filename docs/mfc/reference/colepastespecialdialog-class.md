@@ -29,11 +29,11 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
 ms.openlocfilehash: f4174369620f14f2d1ac410aa5d756c75097ad0f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855611"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421249"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
 
@@ -49,13 +49,13 @@ class COlePasteSpecialDialog : public COleDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog)|`COlePasteSpecialDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[COlePasteSpecialDialog:: AddFormat](#addformat)|Uygulamanızın yapıştırabileceğiniz biçim listesine özel biçimler ekler.|
 |[COlePasteSpecialDialog:: AddLinkEntry](#addlinkentry)|Desteklenen Pano biçimleri listesine yeni bir giriş ekler.|
@@ -69,7 +69,7 @@ class COlePasteSpecialDialog : public COleDialog
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[COlePasteSpecialDialog:: m_ps](#m_ps)|İletişim kutusunun işlevini denetleyen OLEUıPASTESPECIAL türünde bir yapı.|
 

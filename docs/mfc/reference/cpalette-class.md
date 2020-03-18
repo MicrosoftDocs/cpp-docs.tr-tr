@@ -27,11 +27,11 @@ helpviewer_keywords:
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
 ms.openlocfilehash: 27f4f14c9e93091728e256c890dcffee26a43de4
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855532"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421662"
 ---
 # <a name="cpalette-class"></a>CPalette sınıfı
 
@@ -45,13 +45,13 @@ class CPalette : public CGdiObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CPalette:: CPalette](#cpalette)|Ekli Windows paleti olmayan bir `CPalette` nesnesi oluşturur. `CPalette` nesnesini, kullanılmadan önce başlatma üyesi işlevlerden biriyle başlatmalısınız.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -65,7 +65,7 @@ class CPalette : public CGdiObject
 |[CPalette:: ResizePalette](#resizepalette)|`CPalette` nesnesi tarafından belirtilen mantıksal paletin boyutunu belirtilen girdi sayısı olarak değiştirir.|
 |[CPalette:: SetPaletteEntries](#setpaletteentries)|Mantıksal bir paletteki bir giriş aralığındaki RGB renk değerlerini ve bayraklarını ayarlar.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

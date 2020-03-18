@@ -4,11 +4,11 @@ ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
 ms.openlocfilehash: d59fca412a26d08f88ccbda20a2c0444cf33b1cb
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
-ms.translationtype: MT
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856819"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417371"
 ---
 # <a name="cpppropertiesjson-reference"></a>CppProperties. JSON başvurusu
 
@@ -162,7 +162,7 @@ Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve di
 
 İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++ C/**  > **Gelişmiş** ' e giderek ve **günlük kaydını** **true**olarak ayarlayarak sorun gidermeye devam edebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
 
-![Tanılama günlüğüne kaydetme](media/diagnostic-logging.png)
+![Tanılama günlükleri](media/diagnostic-logging.png)
 
 Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster C++ : görsel günlük**' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 

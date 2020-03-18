@@ -85,11 +85,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
 ms.openlocfilehash: 1ab57a6fc13a03d02963f3d7ecc80f63decb9487
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875837"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421823"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 

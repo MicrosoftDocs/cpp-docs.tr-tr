@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CHttpConnection [MFC], OpenRequest
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
 ms.openlocfilehash: 1941af1e16a897235dd90db509d6ed29c2d9a875
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78890806"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420402"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 
@@ -31,13 +31,13 @@ class CHttpConnection : public CInternetConnection
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CHttpConnection::CHttpConnection](#chttpconnection)|Bir `CHttpConnection` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CHttpConnection:: OpenRequest](#openrequest)|Bir HTTP isteği açar.|
 
@@ -182,7 +182,7 @@ HTTP istek türüyle ilişkili bir sayı. Aşağıdakilerden biri olabilir:
 |HTTP istek türü|*Nfiil* değeri|
 |-----------------------|-------------------|
 |HTTP_VERB_POST|0|
-|HTTP_VERB_GET|1|
+|HTTP_VERB_GET|1\.|
 |HTTP_VERB_HEAD|2|
 |HTTP_VERB_PUT|3|
 |HTTP_VERB_LINK|4|

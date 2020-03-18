@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
 ms.openlocfilehash: e9ad7c363f2580200af20baeb0acd7a93c1f603b
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78871777"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420997"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 
@@ -43,7 +43,7 @@ class AFX_NOVTABLE CPropExchange
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropExchange:: ExchangeBlobProp](#exchangeblobprop)|İkili büyük nesne (BLOB) özelliğini değiş tokuş eder.|
 |[CPropExchange:: ExchangeFontProp](#exchangefontprop)|Yazı tipi özelliğini değiş tokuş eder.|

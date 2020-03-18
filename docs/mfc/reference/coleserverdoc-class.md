@@ -83,11 +83,11 @@ helpviewer_keywords:
 - COleServerDoc [MFC], OnShowDocument
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
 ms.openlocfilehash: eec94a32fa0963d4cf2eccae0fb9e2423e75ffdc
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855612"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421697"
 ---
 # <a name="coleserverdoc-class"></a>Cotaserverdoc sınıfı
 
@@ -101,13 +101,13 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[Copaserverdoc:: Cotaserverdoc](#coleserverdoc)|`COleServerDoc` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -335,7 +335,7 @@ Bu belgeyi sunucuya bağlayacak `IOleDocumentSite` arabirimine yönelik işaret�
 
 Bir DocObject sunucusu etkinleştirildiğinde, NULL olmayan bir işaretçinin geri dönmesi, istemcinin DocObjects destekleyecan olduğunu gösterir. Varsayılan uygulama NULL değerini döndürür.
 
-DocObjects 'i destekleyen bir belge için tipik bir uygulama, yeni bir `CDocObjectServer` nesnesi ayırır ve bunu çağırana döndürür. Örnek:
+DocObjects 'i destekleyen bir belge için tipik bir uygulama, yeni bir `CDocObjectServer` nesnesi ayırır ve bunu çağırana döndürür. Örneğin:
 
 [!code-cpp[NVC_MFCOleServer#3](../../mfc/codesnippet/cpp/coleserverdoc-class_1.cpp)]
 

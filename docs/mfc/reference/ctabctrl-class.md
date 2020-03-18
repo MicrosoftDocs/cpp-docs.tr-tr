@@ -73,11 +73,11 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
 ms.openlocfilehash: a0ca4cbad48c420250fe39e131de5504b1ae70f3
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875852"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420927"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 
@@ -93,13 +93,13 @@ class CTabCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CTabCtrl:: CTabCtrl](#ctabctrl)|`CTabCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CTabCtrl:: AdjustRect](#adjustrect)|Bir pencere dikdörtgeni verilen sekme denetiminin görüntüleme alanını hesaplar veya belirli bir görüntüleme alanına karşılık gelen pencere dikdörtgenini hesaplar.|
 |[CTabCtrl:: Create](#create)|Bir sekme denetimi oluşturur ve bunu bir `CTabCtrl` nesnesinin örneğine ekler.|

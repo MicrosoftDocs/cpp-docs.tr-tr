@@ -39,11 +39,11 @@ helpviewer_keywords:
 - COlePropertyPage [MFC], SetPageName
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
 ms.openlocfilehash: 8253b2c2fa6b93ec51c7ede983ef710eed039970
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865892"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421095"
 ---
 # <a name="colepropertypage-class"></a>COlePropertyPage sınıfı
 
@@ -59,13 +59,13 @@ class AFX_NOVTABLE COlePropertyPage : public CDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[COlePropertyPage:: COlePropertyPage](#colepropertypage)|`COlePropertyPage` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[COlePropertyPage:: GetControlStatus](#getcontrolstatus)|Kullanıcının denetimdeki değeri değiştirilip değiştirilmediğini belirtir.|
 |[COlePropertyPage:: GetObjectArray](#getobjectarray)|Özellik sayfası tarafından düzenlenmekte olan nesnelerin dizisini döndürür.|

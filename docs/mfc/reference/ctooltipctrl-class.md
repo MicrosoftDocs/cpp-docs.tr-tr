@@ -73,11 +73,11 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
 ms.openlocfilehash: bf32671eb3535de1bf072e24bc642145e87c84ee
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865462"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420906"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 
@@ -93,13 +93,13 @@ class CToolTipCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CToolTipCtrl:: CToolTipCtrl](#ctooltipctrl)|`CToolTipCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CToolTipCtrl:: Activate](#activate)|Araç ipucu denetimini etkinleştirir ve devre dışı bırakır.|
 |[CToolTipCtrl:: AddTool](#addtool)|Araç ipucu denetimiyle bir araç kaydeder.|
@@ -289,7 +289,7 @@ Araç ipucu denetiminin stilini belirtir. Daha fazla bilgi için **açıklamalar
 
 *DwStyle* parametresi [pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)herhangi bir birleşimi olabilir. Ayrıca, bir araç ipucu denetiminde sınıfa özgü iki stil vardır: TTS_ALWAYSTIP ve TTS_NOPREFIX.
 
-|Stil|Anlamı|
+|Stil|Açıklama|
 |-----------|-------------|
 |TTS_ALWAYSTIP|Araç ipucu denetiminin sahip penceresinin etkin veya devre dışı olmasına bakılmaksızın, imleç bir araç üzerindeyken araç ipucunun görüneceğini belirtir. Bu stil olmadan araç ipucu denetimi, aracın sahip penceresi etkin olduğunda, ancak etkin olmadığında görünmez.|
 |TTS_NOPREFIX|Bu stil, sistemin bir dizeden ampersan (&) karakterini almasını engeller. Bir araç ipucu denetiminin TTS_NOPREFIX stili yoksa, sistem ve bir uygulamanın aynı dizeyi bir menü öğesi ile aynı dizeyi ve araç ipucu denetiminde metin olarak kullanmasına izin vererek, sistem, ve karakterlerini otomatik olarak kaldırır.|

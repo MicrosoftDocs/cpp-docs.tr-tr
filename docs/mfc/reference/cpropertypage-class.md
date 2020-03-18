@@ -41,11 +41,11 @@ helpviewer_keywords:
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
 ms.openlocfilehash: 6a6223708c83f7a5b3e6532a2016660d558f8270
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865437"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421039"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 
@@ -61,13 +61,13 @@ class CPropertyPage : public CDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropertyPage:: CPropertyPage](#cpropertypage)|`CPropertyPage` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropertyPage:: CancelToClose](#canceltoclose)|Tamam düğmesini Oku Kapat olarak değiştirir ve kalıcı özellik sayfası sayfasında kurtarılamaz bir değişiklikten sonra Iptal düğmesini devre dışı bırakır.|
 |[CPropertyPage:: yapısı](#construct)|`CPropertyPage` nesnesi oluşturur. Çalışma zamanında parametrelerinizi belirtmek istiyorsanız veya diziler kullanıyorsanız `Construct` kullanın.|
@@ -87,7 +87,7 @@ class CPropertyPage : public CDialog
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPropertyPage:: m_psp](#m_psp)|Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
 

@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CMFCDropDownFrame [MFC], SetAutoDestroy
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
 ms.openlocfilehash: 534dc90443371c8440e0cb317540f2cf80f6eacc
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78869070"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420332"
 ---
 # <a name="cmfcdropdownframe-class"></a>CMFCDropDownFrame sınıfı
 
@@ -39,7 +39,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 
 |||
 |-|-|
-|Adı|Açıklama|
+|Name|Açıklama|
 |`CMFCDropDownFrame::CMFCDropDownFrame`|Varsayılan Oluşturucu.|
 |`CMFCDropDownFrame::~CMFCDropDownFrame`|Yıkıcı.|
 
@@ -47,7 +47,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 
 |||
 |-|-|
-|Adı|Açıklama|
+|Name|Açıklama|
 |[CMFCDropDownFrame:: Create](#create)|Bir `CMFCDropDownFrame` nesnesi oluşturur.|
 |`CMFCDropDownFrame::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
 |[CMFCDropDownFrame:: GetParentMenuBar](#getparentmenubar)|Açılan çerçevenin ana menü çubuğunu alır.|

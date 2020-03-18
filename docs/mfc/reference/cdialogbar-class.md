@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CDialogBar [MFC], Create
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
 ms.openlocfilehash: af84c5239a9cb3cbddb1ab4f0230e5b1a3373573
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78883635"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420479"
 ---
 # <a name="cdialogbar-class"></a>CDialogBar sınıfı
 
@@ -31,13 +31,13 @@ class CDialogBar : public CControlBar
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDialogBar:: CDialogBar](#cdialogbar)|`CDialogBar` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDialogBar:: Create](#create)|Bir Windows iletişim kutusu oluşturur ve onu `CDialogBar` nesnesine ekler.|
 

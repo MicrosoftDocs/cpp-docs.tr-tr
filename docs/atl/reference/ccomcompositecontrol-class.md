@@ -17,11 +17,11 @@ helpviewer_keywords:
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
 ms.openlocfilehash: b57eaf105bfca1a49d53b5e5e99969b0fa2fc82f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78864974"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417910"
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl sınıfı
 
@@ -44,14 +44,14 @@ Sınıfınız, [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) vey
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CComCompositeControl:: CComCompositeControl](#ccomcompositecontrol)|Oluşturucu.|
 |[CComCompositeControl:: ~ CComCompositeControl](#dtor)|Yok edicisi.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|

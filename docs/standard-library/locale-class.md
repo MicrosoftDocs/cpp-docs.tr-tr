@@ -22,11 +22,11 @@ helpviewer_keywords:
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
 ms.openlocfilehash: 551bca93a30bee52dc4c838864df28cb747d91df
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856559"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420003"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -175,7 +175,7 @@ cout.imbue(loc);
 
 ### <a name="classes"></a>Sınıflar
 
-|Sınıf|Açıklama|
+|örneği|Açıklama|
 |-|-|
 |[facet](#facet_class)|Tüm yerel ayar modelleri için temel sınıf görevi gören sınıf.|
 |[`id`](#id_class)|Üye sınıfı özellikleri, bir yerel ayardaki arama modelleri için bir dizin olarak kullanılan benzersiz bir kimlik sağlar.|

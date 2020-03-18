@@ -85,11 +85,11 @@ helpviewer_keywords:
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
 ms.openlocfilehash: 1cd7be72dc6c9a38fae4f5ccc1a15c184a2d4466
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855643"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420808"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 
@@ -105,13 +105,13 @@ class CMenu : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMenu:: CMenu](#cmenu)|`CMenu` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMenu:: AppendMenu](#appendmenu)|Bu menünün sonuna yeni bir öğe ekler.|
 |[CMenu:: Attach](#attach)|Bir `CMenu` nesnesine Windows menü tutamacı ekler.|
@@ -153,7 +153,7 @@ class CMenu : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMenu:: operator HMENU](#operator_hmenu)|Menü nesnesinin tanıtıcısını alır.|
 |[CMenu:: operator! =](#operator_neq)|İki menü nesnesinin eşit olup olmadığını belirler.|
@@ -161,7 +161,7 @@ class CMenu : public CObject
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMenu:: m_hMenu](#m_hmenu)|`CMenu` nesnesine eklenen Windows menüsüne yönelik tanıtıcıyı belirtir.|
 
@@ -651,7 +651,7 @@ UINT GetDefaultItem(
 *Gmdıflags*<br/>
 İşlevin menü öğelerini nasıl arayacağını belirten değer. Bu parametre None, One veya aşağıdaki değerlerin bir birleşimi olabilir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |GMDI_GOINTOPOPUPS|Varsayılan öğe alt menüyü açan bir öğe ise, işlevin karşılık gelen alt menüde yinelemeli olarak aranacağını belirtir. Alt menüde varsayılan öğe yoksa, dönüş değeri alt menüyü açan öğeyi tanımlar.<br /><br /> Varsayılan olarak, işlev, alt menüyü açan bir öğe olup olmamasına bakılmaksızın, belirtilen menüdeki ilk varsayılan öğeyi döndürür.|
 |GMDI_USEDISABLED|Devre dışı bırakılmış olsa bile, işlevin varsayılan bir öğe döndürmeme olduğunu belirtir.<br /><br /> Varsayılan olarak, işlev devre dışı veya gri öğeleri atlar.|

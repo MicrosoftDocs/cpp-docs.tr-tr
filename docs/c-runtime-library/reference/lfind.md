@@ -20,7 +20,6 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- lfind
 - _lfind
 helpviewer_keywords:
 - linear searching
@@ -30,12 +29,12 @@ helpviewer_keywords:
 - finding keys in arrays
 - _lfind function
 ms.assetid: a40ece70-1674-4b75-94bd-9f57cfff18f2
-ms.openlocfilehash: 8fd2141caf8311844a90a6d12226bb7797ac4734
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ec59340433b92334effa8004720e4f0756085670
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953379"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442926"
 ---
 # <a name="_lfind"></a>_lfind
 
@@ -72,13 +71,13 @@ Karşılaştırma yordamının işaretçisi. İlk parametre, arama için bir tu�
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa, **_lfind** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa **_lfind** **null**değerini döndürür.
+Anahtar bulunursa **_lfind** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa, **_Lfind** **null**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lfind** işlevi, her bir *Genişlik* baytından oluşan *sayı* öğesi dizisinde değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch**'ten farklı olarak, **_lfind** dizinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind** , arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır ve her çağrıda iki dizi öğesine işaretçiler geçiyor. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) ya da 0 (öğeler özdeş) döndürmelidir.
+**_Lfind** işlevi, her *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch**'ten farklı olarak **_lfind** , dizinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind** , arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırarak her çağrıda iki dizi öğesine işaretçiler geçer. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) ya da 0 (öğeler özdeş) döndürmelidir.
 
-Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse ya da *Genişlik* sıfırdan küçükse, parametre bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. [ Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
+Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise ya da *taban* **null** ve *sayı* sıfır değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı *width* gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 

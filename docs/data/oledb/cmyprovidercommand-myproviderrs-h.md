@@ -3,24 +3,22 @@ title: CCustomCommand (CustomRS.H)
 ms.date: 10/22/2018
 f1_keywords:
 - cmyprovidercommand
-- myproviderrs.h
 - ccustomcommand
-- customrs.h
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderCommand class in MyProviderRS.H
 - CCustomCommand class in CustomRS.H
 ms.assetid: b30b956e-cc91-4cf5-9fe6-f8b1ce9cc2a5
-ms.openlocfilehash: b10d7bccae6fa9b86d072b8e13791f23516b2c63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61bd60b63490303c65729843c3c0351a570a8056
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230725"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444152"
 ---
 # <a name="ccustomcommand-customrsh"></a>CCustomCommand (CustomRS.H)
 
-`CCustomCommand` Sınıfı sağlayıcısı komut nesnesi uygulamasıdır. Uygulamasını sağlar `IAccessor`, `ICommandText`, ve `ICommandProperties` arabirimleri. `IAccessor` Arabirimi olan bir satır kümesi ile aynı. Komut nesnesi erişimci bağlamaları parametreleri belirtmek için kullanır. Satır kümesi nesnesi çıkış sütunları bağlamalarda belirtmek için bunları kullanır. `ICommandText` Arabirimi, bir komut belirtmede kullanışlı bir yoludur. Bu örnekte `ICommandText` özel kod eklediğinde, daha sonra arabirim; ayrıca geçersiz kılar `ICommand::Execute` yöntemi. `ICommandProperties` Arabirimi komut ve satır kümesi nesneler için tüm özellikler işler.
+`CCustomCommand` sınıfı, sağlayıcı komut nesnesinin uygulamasıdır. `IAccessor`, `ICommandText`ve `ICommandProperties` arabirimleri için uygulama sağlar. `IAccessor` arabirimi, satır kümesindeki bir ile aynıdır. Komut nesnesi, parametrelere yönelik bağlamaları belirtmek için erişimcisini kullanır. Satır kümesi nesnesi bunları çıkış sütunları için bağlamaları belirtmek üzere kullanır. `ICommandText` arabirimi, Command metin içeriğini eklemek belirtmek için kullanışlı bir yoldur. Bu örnek, daha sonra özel kod eklediğinde `ICommandText` arabirimini kullanır; Ayrıca `ICommand::Execute` yöntemini geçersiz kılar. `ICommandProperties` arabirimi komut ve satır kümesi nesneleri için tüm özellikleri işler.
 
 ```cpp
 // CCustomCommand
@@ -35,11 +33,11 @@ class ATL_NO_VTABLE CCustomCommand :
    public IColumnsInfoImpl<CCustomCommand>
 ```
 
-`IAccessor` Arabirimi komutları ve satır kümeleri kullanılan tüm bağlantıları yönetir. Tüketici çağrıları `IAccessor::CreateAccessor` bir `DBBINDING` yapıları. Her `DBBINDING` yapısı (türde ve uzunluktaki gibi) sütun bağlamaları nasıl işleneceğini hakkında bilgileri içerir. Sağlayıcı, yapıları alır ve ardından verileri nasıl transfer ve herhangi bir dönüştürme gerekli olup belirler. `IAccessor` Arabirimi command nesnesinde komut tüm parametreleri işlemek için kullanılır.
+`IAccessor` arabirimi, komutlarda ve satır kümelerinde kullanılan tüm bağlamaları yönetir. Tüketici, `DBBINDING` yapıları dizisiyle `IAccessor::CreateAccessor` çağırır. Her `DBBINDING` yapısı, sütun bağlamalarının nasıl ele alınacağını (tür ve uzunluk gibi) içeren bilgileri içerir. Sağlayıcı yapıları alır ve sonra verilerin nasıl aktarılacağını ve herhangi bir dönüştürmenin gerekli olup olmadığını belirler. `IAccessor` arabirimi, komutta herhangi bir parametreyi işlemek için komut nesnesinde kullanılır.
 
-Komut nesnesi de bir uygulamasını sağlar `IColumnsInfo`. OLE DB gerektirir `IColumnsInfo` arabirimi. Tüketici komutu parametreleri hakkında bilgi almak arabirim sağlar. Satır kümesi nesnesi kullanan `IColumnsInfo` sağlayıcıya çıkış sütunları hakkında bilgi döndürmek için arabirim.
+Komut nesnesi ayrıca bir `IColumnsInfo`uygulanmasını sağlar. OLE DB `IColumnsInfo` arabirimini gerektirir. Arabirim, tüketicinin komuttan parametreler hakkında bilgi almasına izin verir. Satır kümesi nesnesi, sağlayıcıya çıkış sütunları hakkında bilgi döndürmek için `IColumnsInfo` arabirimini kullanır.
 
-Sağlayıcı adlı bir arabirim de içeren `IObjectWithSite`. `IObjectWithSite` Arabirimi ATL 2. 0'da uygulanmıştır ve kendi hakkında bilgileri, Alta geçirmek uygulayan sağlar. Komut nesnesi kullanır `IObjectWithSite` herhangi bildirmek için bilgi oluşturulan kimin oluşturduğunu hakkında rowset nesneleri.
+Sağlayıcı ayrıca `IObjectWithSite`adlı bir arabirim içerir. `IObjectWithSite` arabirimi ATL 2,0 ' de uygulanmıştır ve uygulayıcının kendi alt öğesi hakkında bilgi almasına izin verir. Komut nesnesi, oluşturulan herhangi bir satır kümesi nesnesini kimin oluşturduğunu bildirmek için `IObjectWithSite` bilgilerini kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

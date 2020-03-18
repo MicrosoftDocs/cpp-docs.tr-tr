@@ -10,11 +10,11 @@ helpviewer_keywords:
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 ms.openlocfilehash: 6e23ccd6fcae03bcad40ea560356f4d1290dbcdd
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866343"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422278"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 

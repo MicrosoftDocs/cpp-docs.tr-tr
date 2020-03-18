@@ -53,11 +53,11 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
 ms.openlocfilehash: b92c796fdaa972966dcbfa85b1e34f267b6c629c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867020"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421102"
 ---
 # <a name="coledocument-class"></a>Cotadocument sınıfı
 
@@ -73,13 +73,13 @@ class COleDocument : public CDocument
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Copadocument:: Cotadocument](#coledocument)|`COleDocument` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cotadocument:: AddItem](#additem)|Belge tarafından tutulan öğeler listesine bir öğe ekler.|
 |[Cotadocument:: ApplyPrintDevice](#applyprintdevice)|Yazdırma hedefi cihazını belgedeki tüm istemci öğeleri için ayarlar.|
@@ -97,7 +97,7 @@ class COleDocument : public CDocument
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cotadocument:: Oneditchangeıcon](#oneditchangeicon)|Değişiklik simgesi menü komutunda olayları işler.|
 |[Cotadocument:: OnEditConvert](#oneditconvert)|Katıştırılmış veya bağlantılı nesnenin bir türden diğerine dönüştürülmesini işler.|

@@ -19,11 +19,11 @@ helpviewer_keywords:
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 ms.openlocfilehash: 4cf3f53d1e238218b4eb892dc92e3c823dcc1296
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
-ms.translationtype: MT
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855361"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421403"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -621,7 +621,7 @@ Yukarıdaki çıktıda bulunan her satır, son işlev çağrısının adresini, 
 
 Örneğin, aşağıdaki tabloda yukarıdaki çıktının ilk satırı açıklanmaktadır:
 
-|Çıktı|Açıklama|
+|Çıkış|Açıklama|
 |------------|-----------------|
 |`00427D55:`|Son işlev çağrısının dönüş adresi.|
 |`DUMP2\DEBUG\DUMP2.EXE!`|İşlev çağrısını içeren modülün tam yol adı.|

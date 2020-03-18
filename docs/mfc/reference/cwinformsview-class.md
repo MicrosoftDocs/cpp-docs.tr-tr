@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CWinFormsView [MFC], GetControl
 ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895
 ms.openlocfilehash: f4a5e6b88527dad8606092ccebd4899bba5181f6
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78872451"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420864"
 ---
 # <a name="cwinformsview-class"></a>CWinFormsView sınıfı
 
@@ -31,19 +31,19 @@ class CWinFormsView : public CView;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinFormsView:: CWinFormsView](#cwinformsview)|`CWinFormsView` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CWinFormsView:: GetControl](#getcontrol)|Windows Forms denetimine bir işaretçi alır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı||
+|Name||
 |----------|-|
 |[CWinFormsView:: operator denetimi ^](#operator_control)|Bir türü Windows Forms denetimine işaretçi olarak yayınlar.|
 

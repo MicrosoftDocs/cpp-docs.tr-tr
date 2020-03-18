@@ -27,11 +27,11 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
 ms.openlocfilehash: fa88147b57b0506f7f9ab96d4a5d2f43fdd75458
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855628"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421263"
 ---
 # <a name="coledispatchdriver-class"></a>Cotadispatchdriver sınıfı
 
@@ -47,13 +47,13 @@ class COleDispatchDriver
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cotadispatchdriver:: Cotadispatchdriver](#coledispatchdriver)|`COleDispatchDriver` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cotadispatchdriver:: AttachDispatch](#attachdispatch)|`COleDispatchDriver` nesnesine bir `IDispatch` bağlantısı iliştirir.|
 |[Cotadispatchdriver:: CreateDispatch](#createdispatch)|`IDispatch` bir bağlantı oluşturur ve `COleDispatchDriver` nesnesine iliştirir.|
@@ -65,14 +65,14 @@ class COleDispatchDriver
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[COleDispatchDriver:: operator =](#operator_eq)|Kaynak değeri `COleDispatchDriver` nesnesine kopyalar.|
 |[COleDispatchDriver:: operator LPDISPATCH](#operator_lpdispatch)|Temel alınan `IDispatch` işaretçisine erişir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Colet Dispatchdriver:: m_bAutoRelease](#m_bautorelease)|`ReleaseDispatch` veya nesne yok etme sırasında `IDispatch` serbest bırakılıp başlatılmayacağını belirtir.|
 |[Colet Dispatchdriver:: m_lpDispatch](#m_lpdispatch)|Bu `COleDispatchDriver`iliştirilmiş `IDispatch` arabirimine yönelik işaretçiyi gösterir.|
@@ -258,7 +258,7 @@ void AFX_CDECL InvokeHelper(
 Çağrılacak yöntemi veya özelliği tanımlar.
 
 *wFlags*<br/>
-`IDispatch::Invoke`çağrısının bağlamını açıklayan bayraklar. arasında yetersiz alanla karşılaştı. Olası değerler listesi için, Windows SDK [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) Içindeki *wFlags* parametresine bakın.
+`IDispatch::Invoke`çağrısının bağlamını açıklayan bayraklar. biçimindeki telefon numarasıdır. Olası değerler listesi için, Windows SDK [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) Içindeki *wFlags* parametresine bakın.
 
 *Sanal tret*<br/>
 Dönüş değerinin türünü belirtir. Olası değerler için, açıklamalar bölümüne bakın.

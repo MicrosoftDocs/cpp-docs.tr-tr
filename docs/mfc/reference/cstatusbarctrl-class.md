@@ -45,11 +45,11 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
 ms.openlocfilehash: 8c33aa4d77eeeeca69e50dc63982ff4d7e8bd505
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865541"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420941"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 
@@ -65,13 +65,13 @@ class CStatusBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CStatusBarCtrl:: CStatusBarCtrl](#cstatusbarctrl)|`CStatusBarCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CStatusBarCtrl:: Create](#create)|Bir durum çubuğu denetimi oluşturur ve bir `CStatusBarCtrl` nesnesine iliştirir.|
 |[CStatusBarCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir durum çubuğu denetimi oluşturur ve bunu bir `CStatusBarCtrl` nesnesine ekler.|

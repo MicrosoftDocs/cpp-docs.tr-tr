@@ -56,11 +56,11 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
 ms.openlocfilehash: dda3056cbed18ef93e09b52cd9d0a6b00e1db177
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
-ms.translationtype: MT
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78869922"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420591"
 ---
 # <a name="afx_global_data-structure"></a>AFX_GLOBAL_DATA Yapısı
 
@@ -76,14 +76,14 @@ struct AFX_GLOBAL_DATA
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA`|`AFX_GLOBAL_DATA` yapısı oluşturur.|
 |`AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[AFX_GLOBAL_DATA:: CleanUp](#cleanup)|Çerçeve tarafından ayrılan, fırçalar, yazı tipleri ve DLL 'Ler gibi kaynakları serbest bırakır.|
 |[AFX_GLOBAL_DATA::D 2D1MakeRotateMatrix](#d2d1makerotatematrix)|Belirtilen bir nokta etrafında belirtilen açıyla döndüren bir döndürme dönüştürmesi oluşturur.|
@@ -117,7 +117,7 @@ struct AFX_GLOBAL_DATA
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[AFX_GLOBAL_DATA:: EnableAccessibilitySupport](#enableaccessibilitysupport)|Microsoft Etkin Erişilebilirlik desteğini etkinleştirilir veya devre dışı bırakır. Etkin Erişilebilirlik, Kullanıcı arabirimi öğeleriyle ilgili bilgileri açığa çıkarmak için güvenilir yöntemler sağlar.|
 |[AFX_GLOBAL_DATA:: IsAccessibilitySupport](#isaccessibilitysupport)|Microsoft Etkin Erişilebilirlik desteğinin etkin olup olmadığını gösterir.|
@@ -125,7 +125,7 @@ struct AFX_GLOBAL_DATA
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[AFX_GLOBAL_DATA:: bIsOSAlphaBlendingSupport](#bisosalphablendingsupport)|Geçerli işletim sisteminin Alfa karıştırmasını destekleyip desteklemediğini gösterir.|
 |[AFX_GLOBAL_DATA:: bIsWindows7](#biswindows7)|Uygulamanın Windows 7 işletim sistemi veya üzeri kapsamında yürütülüp yürütülmediğini belirtir|

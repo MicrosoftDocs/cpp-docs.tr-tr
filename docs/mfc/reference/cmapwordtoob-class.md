@@ -4,46 +4,46 @@ ms.date: 11/04/2016
 f1_keywords:
 - CMapWordToOb
 - AFXCOLL/CMapWordToOb
-- AFXCOLL/CMapStringToOb::CMapStringToOb
-- AFXCOLL/CMapStringToOb::GetCount
-- AFXCOLL/CMapStringToOb::GetHashTableSize
-- AFXCOLL/CMapStringToOb::GetNextAssoc
-- AFXCOLL/CMapStringToOb::GetSize
-- AFXCOLL/CMapStringToOb::GetStartPosition
-- AFXCOLL/CMapStringToOb::HashKey
-- AFXCOLL/CMapStringToOb::InitHashTable
-- AFXCOLL/CMapStringToOb::IsEmpty
-- AFXCOLL/CMapStringToOb::Lookup
-- AFXCOLL/CMapStringToOb::LookupKey
-- AFXCOLL/CMapStringToOb::RemoveAll
-- AFXCOLL/CMapStringToOb::RemoveKey
-- AFXCOLL/CMapStringToOb::SetAt
+- AFXCOLL/CMapWordToOb::CMapWordToOb
+- AFXCOLL/CMapWordToOb::GetCount
+- AFXCOLL/CMapWordToOb::GetHashTableSize
+- AFXCOLL/CMapWordToOb::GetNextAssoc
+- AFXCOLL/CMapWordToOb::GetSize
+- AFXCOLL/CMapWordToOb::GetStartPosition
+- AFXCOLL/CMapWordToOb::HashKey
+- AFXCOLL/CMapWordToOb::InitHashTable
+- AFXCOLL/CMapWordToOb::IsEmpty
+- AFXCOLL/CMapWordToOb::Lookup
+- AFXCOLL/CMapWordToOb::LookupKey
+- AFXCOLL/CMapWordToOb::RemoveAll
+- AFXCOLL/CMapWordToOb::RemoveKey
+- AFXCOLL/CMapWordToOb::SetAt
 helpviewer_keywords:
-- CMapStringToOb [MFC], CMapStringToOb
-- CMapStringToOb [MFC], GetCount
-- CMapStringToOb [MFC], GetHashTableSize
-- CMapStringToOb [MFC], GetNextAssoc
-- CMapStringToOb [MFC], GetSize
-- CMapStringToOb [MFC], GetStartPosition
-- CMapStringToOb [MFC], HashKey
-- CMapStringToOb [MFC], InitHashTable
-- CMapStringToOb [MFC], IsEmpty
-- CMapStringToOb [MFC], Lookup
-- CMapStringToOb [MFC], LookupKey
-- CMapStringToOb [MFC], RemoveAll
-- CMapStringToOb [MFC], RemoveKey
-- CMapStringToOb [MFC], SetAt
+- CMapWordToOb [MFC], CMapWordToOb
+- CMapWordToOb [MFC], GetCount
+- CMapWordToOb [MFC], GetHashTableSize
+- CMapWordToOb [MFC], GetNextAssoc
+- CMapWordToOb [MFC], GetSize
+- CMapWordToOb [MFC], GetStartPosition
+- CMapWordToOb [MFC], HashKey
+- CMapWordToOb [MFC], InitHashTable
+- CMapWordToOb [MFC], IsEmpty
+- CMapWordToOb [MFC], Lookup
+- CMapWordToOb [MFC], LookupKey
+- CMapWordToOb [MFC], RemoveAll
+- CMapWordToOb [MFC], RemoveKey
+- CMapWordToOb [MFC], SetAt
 ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
-ms.openlocfilehash: 42c41407b86705e46d43113326d15f1ef3271d1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 80d53f195ba98f853c86a4d9c38fa9fcda52da3b
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375866"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442575"
 ---
 # <a name="cmapwordtoob-class"></a>CMapWordToOb sınıfı
 
-Haritalarını destekler `CObject` 16 bit sözcüklerle Anahtarlanan işaretçileri.
+16 bit sözcüklerle anahtarlanan `CObject` işaretçilerin haritalarını destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,53 +53,53 @@ class CMapWordToOb : public CObject
 
 ## <a name="members"></a>Üyeler
 
-Üye işlevlerinin `CMapWordToOb` sınıfın üye işlevleri için benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CMapStringToOb` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CString` veya **const** işaretçisine **char** WORD işlevi parametre veya dönüş değeri değiştirin.
-
-`BOOL CMapStringToOb::Lookup( const char* <key>,` CObject* & <rValue> ) const;'
-
-Örneğin, için çevirir
+`CMapWordToOb` üye işlevleri [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CMapStringToOb` başvuru belgelerini kullanabilirsiniz. Bir işlev parametresi veya dönüş değeri olarak **char** için `CString` ya da **const** işaretçisi gördüğünüz her yerde, sözcüğünü değiştirin.
 
 `BOOL CMapWordToOb::Lookup( WORD <key>, CObject*& <rValue> ) const;`
 
+Örneğin, öğesine çevirir
+
+`BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`
+
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Oluşturucu.|
+|[CMapWordToOb:: CMapWordToOb](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritada öğelerin sayısını döndürür.|
-|[CMapStringToOb::GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Geçerli bir karma tablo içindeki öğelerin sayısını belirler.|
-|[CMapStringToOb::GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Yineleme için sonraki öğeyi alır.|
-|[CMapStringToOb::GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Bu haritada öğelerin sayısını döndürür.|
-|[CMapStringToOb::GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|İlk öğenin konumunu döndürür.|
-|[CMapStringToOb::HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Belirtilen bir anahtarı karma değerini hesaplar.|
-|[CMapStringToOb::InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Karma tablo başlatır.|
-|[CMapStringToOb::IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|(Öğe yok) boş-map koşulu sınar.|
-|[CMapStringToOb::Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Void bir işaretçi void işaretçisine anahtara göre arar. İşaretçi değeri değil, işaret varlık anahtar karşılaştırma için kullanılır.|
-|[CMapStringToOb::LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Belirtilen anahtar değeriyle ilişkili anahtar için bir başvuru döndürür.|
-|[CMapStringToOb::RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Tüm öğeleri bu eşlemden kaldırır.|
-|[CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|
-|[CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Haritayı bir öğe ekler; eşleşen bir anahtar bulunursa, var olan öğenin yerini alır.|
+|[CMapWordToOb:: GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritadaki öğelerin sayısını döndürür.|
+|[CMapWordToOb:: GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Karma tablodaki geçerli öğe sayısını belirler.|
+|[CMapWordToOb:: GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Yineleme için bir sonraki öğeyi alır.|
+|[CMapWordToOb:: GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Bu haritadaki öğelerin sayısını döndürür.|
+|[CMapWordToOb:: GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|İlk öğenin konumunu döndürür.|
+|[CMapWordToOb:: HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Belirtilen anahtarın karma değerini hesaplar.|
+|[CMapWordToOb:: InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Karma tabloyu başlatır.|
+|[CMapWordToOb:: IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|Boş eşleme koşulunu sınar (öğe yok).|
+|[CMapWordToOb:: Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Void işaretçi tuşuna bağlı olarak void bir işaretçi arar. İşaret ettiği varlık değil işaretçi değeri, anahtar karşılaştırması için kullanılır.|
+|[CMapWordToOb:: LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Belirtilen anahtar değeriyle ilişkili anahtara bir başvuru döndürür.|
+|[CMapWordToOb:: RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Tüm öğeleri bu eşlemden kaldırır.|
+|[CMapWordToOb:: RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Anahtar tarafından belirtilen öğeyi kaldırır.|
+|[CMapWordToOb:: SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Haritaya bir öğe ekler; eşleşen bir anahtar bulunursa varolan bir öğeyi değiştirir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
+|[CMapWordToOb:: operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map içine bir öğe ekler — `SetAt`için işleç değiştirme.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapWordToOb` Serileştirme ve alt öğeleri dökme desteklemek için ımplement_serıal makrosu içerir. Bir eşleme bir arşiv, aşırı yüklenmiş ekleme ile depolanıyorsa her öğesi sırayla seri ( **<<**) işleci veya `Serialize` üye işlevi.
+`CMapWordToOb`, öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu içerir. Bir eşleme bir arşive depolanıyorsa, aşırı yüklenmiş ekleme ( **<<** ) işleci veya `Serialize` member işleviyle birlikte her öğe sırayla serileştirilir.
 
-Tek tek WORD - dökümü gerekiyorsa `CObject` öğeleri ayarlamanız gerekir döküm bağlam derinliğini 1 veya daha büyük.
+Tek sözcük `CObject` öğelerinin bir dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-Olduğunda bir `CMapWordToOb` nesnesi silindiğinde veya ne zaman öğeleri kaldırılır, `CObject` işaretçileri kaldırılır. Tarafından başvurulan nesneleri `CObject` işaretçileri yok edilmez.
+`CMapWordToOb` nesne silindiğinde veya öğeleri kaldırıldığında, `CObject` işaretçileri kaldırılır. `CObject` işaretçileri tarafından başvurulan nesneler yok edilmez.
 
-Daha fazla bilgi için `CMapWordToOb`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+`CMapWordToOb`hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -109,7 +109,7 @@ Daha fazla bilgi için `CMapWordToOb`, makaleye göz atın [koleksiyonları](../
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

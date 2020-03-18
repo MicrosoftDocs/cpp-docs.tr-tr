@@ -6,11 +6,11 @@ f1_keywords:
 - set/std::swap (multiset)
 ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
 ms.openlocfilehash: a3a63fb86caa3485b1ee14538c3eb1f1ff72923e
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78875778"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79419555"
 ---
 # <a name="ltsetgt-functions"></a>&gt; işlevleri &lt;ayarla
 

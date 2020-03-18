@@ -1,53 +1,51 @@
 ---
 title: Zaman Yönetimi
 ms.date: 11/04/2016
-f1_keywords:
-- c.memory
 helpviewer_keywords:
 - dates, run-time library members
 - time, time management
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: e9842d8c24089c7fbb33745c3bf5d4edb1d29343
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 24859a0b35274881b03b960807904ed38b19e354
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446791"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79444593"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
-Geçerli saati Al ve Dönüştür, ayarlamak ve gerektiği şekilde depolamak için bu işlevleri kullanın. Geçerli sistem saatini zamandır.
+Bu işlevleri, geçerli saati almak ve dönüştürmek, ayarlamak ve gerektiği şekilde depolamak için kullanın. Geçerli saat sistem saati.
 
-**_Ftime** ve **localtime** kullanmalarını **TZ** ortam değişkeni. Varsa **TZ** ayarlanmazsa işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmak çalışma zamanı kitaplığı çalışır. Bu bilgiler kullanılamıyorsa, bu işlevler PST8PDT varsayılan değeri kullanın. Daha fazla bilgi için **TZ**, bakın [_tzset](../c-runtime-library/reference/tzset.md); Ayrıca bkz: [_daylight, saat diliminizi ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+**_Ftime** ve **localtime** yordamları **TZ** ortam değişkenini kullanır. **TZ** ayarlanmamışsa, çalışma zamanı kitaplığı işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler kullanılamıyorsa, bu işlevler varsayılan değer olan PST8PDT kullanır. **TZ**hakkında daha fazla bilgi için bkz. [_tzset](../c-runtime-library/reference/tzset.md); Ayrıca bkz. [_daylight, saat dilimi ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
-### <a name="time-routines"></a>Zamanı yordamları
+### <a name="time-routines"></a>Zaman yordamları
 
-|İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|İşlev|Kullanım|
 |--------------|---------|
-|[asctime, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s, _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|Saat türünden dönüştürme **yapı tm** karakter dizesi. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[clock](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati döndürür.|
-|[CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [_ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|Saat türünden dönüştürme **time_t**, **__time32_t** veya **__time64_t** karakter dizesi. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|İki zaman arasındaki farkı hesaplayın.|
-|[_ftime, _ftime32, _ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md),[_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)|Türünde bir değişken geçerli sistem saatinin Store **yapı _timeb** veya türü **yapı __timeb64** sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md)|Açık dosya değiştirme saati ayarla|
-|[gmtime, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md), [gmtime_s, _gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)|Saat türünden dönüştürme **time_t** için **yapı tm** veya türünden **__time64_t** için **yapı tm**. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[localtime, _localtime32, _localtime64](../c-runtime-library/reference/localtime-localtime32-localtime64.md), [localtime_s, _localtime32_s, _localtime64_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)|Saat türünden dönüştürme **time_t** için **yapı tm** veya türünden **__time64_t** için **yapı tm** yerel düzeltme. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[_mkgmtime, _mkgmtime32, _mkgmtime64](../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md)|Greenwich saati Takvim değerine dönüştürün.|
-|[mktime, _mktime32, _mktime64](../c-runtime-library/reference/mktime-mktime32-mktime64.md)|Takvim değerine dönüştürün.|
-|[_strdate, _wstrdate](../c-runtime-library/reference/strdate-wstrdate.md), [_strdate_s, _wstrdate_s](../c-runtime-library/reference/strdate-s-wstrdate-s.md)|Geçerli sistem tarihi dize olarak döndürür. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)|Uluslararası kullanılmak tarih ve saat dizesi biçimi.|
-|[_strtime, _wstrtime](../c-runtime-library/reference/strtime-wstrtime.md), [_strtime_s, _wstrtime_s](../c-runtime-library/reference/strtime-s-wstrtime-s.md)|Geçerli sistem saatinin dize olarak döndürür. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[time, _time32, _time64](../c-runtime-library/reference/time-time32-time64.md)|Geçerli sistem saatinin türü olarak alma **time_t**, **__time32_t** türü olarak veya **__time64_t**.|
-|[_tzset](../c-runtime-library/reference/tzset.md)|Dış saat değişkenlerini zaman iliştirdiğinizde ayarlama **TZ**.|
-|[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)|Değiştirme saati için belirtilen dosya geçerli saat veya saat değeri yapısında depolanmış kullanarak ayarlayın.|
+|[yoksaat, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|**Struct** from türünden karakter dizesine saati dönüştürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
+|[clock](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati saati döndürür.|
+|[CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [_ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|**Time_t**, **__time32_t** veya **__time64_t** türünden karakter dizesine kadar olan süreyi dönüştürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
+|[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|İki kez işlem farkı.|
+|[_ftime, _ftime32, _ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md),[_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)|Geçerli sistem saatini **struct _timeb** veya Type struct türünde bir değişkende depolayın **__timeb64** bu işlevlerin sürümleri **_s** sonekiyle daha güvenlidir.|
+|[_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md)|Açık dosyada değişiklik saatini ayarla|
+|[gmsaati, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md), [gmtime_s, _gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)|**Time_t** türünden **Yapı tm** 'ye veya **__time64_t** türünden **struct tm**'e dönüştürün. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
+|[localtime, _localtime32, _localtime64](../c-runtime-library/reference/localtime-localtime32-localtime64.md), [localtime_s, _localtime32_s, _localtime64_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)|**Time_t** türünden **Yapı tm** 'ye veya **__time64_t** türünden **struct tm 'e, yerel** düzeltme içeren bir süre dönüştürme. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
+|[_mkgmtime, _mkgmtime32, _mkgmtime64](../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md)|Greenwich saati cinsinden saati takvim değerine dönüştürür.|
+|[mktime, _mktime32, _mktime64](../c-runtime-library/reference/mktime-mktime32-mktime64.md)|Saati takvim değerine dönüştürür.|
+|[_strdate, _wstrdate](../c-runtime-library/reference/strdate-wstrdate.md), [_strdate_s, _wstrdate_s](../c-runtime-library/reference/strdate-s-wstrdate-s.md)|Geçerli sistem tarihini dize olarak döndürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
+|[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)|Uluslararası kullanım için tarih ve saat dizesini biçimlendirin.|
+|[_strtime, _wstrtime](../c-runtime-library/reference/strtime-wstrtime.md), [_strtime_s, _wstrtime_s](../c-runtime-library/reference/strtime-s-wstrtime-s.md)|Geçerli sistem saatini dize olarak döndürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
+|[time, _time32, _time64](../c-runtime-library/reference/time-time32-time64.md)|**Time_t**, **__time32_t** veya türü **__time64_t**olarak geçerli sistem saatini alın.|
+|[_tzset](../c-runtime-library/reference/tzset.md)|Dış zaman değişkenlerini, ortam zaman değişkeni **TZ**değerinden ayarlayın.|
+|[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)|Belirtilen dosya için, yapıda depolanan geçerli saat veya saat değerini kullanarak değiştirme süresini ayarlayın.|
 
 > [!NOTE]
-> 1 Ocak 1970 gece yarısından beri geçen saniye sayısı saat olarak, Microsoft C/C++ Microsoft C/C++ version 7.0 dışında tüm sürümlerinde ve tüm sürümlerinde Visual C++ zaman işlev geçerli saati döndürür. Microsoft C/C++ version 7.0, **zaman** 31 Aralık 1899 gece yarısından beri geçen saniye sayısı saat olarak geçerli saati döndürdü.
+> Microsoft c/C++ C++ sürüm 7,0 ' nin tüm sürümlerinde ve tüm Visual C++sürümlerinde, time işlevi geçerli saati 1 Ocak 1970 ' de gece yarısından beri geçen saniye sayısı olarak döndürür. Microsoft C/C++ sürüm 7,0 ' de, **süresi** 31 Aralık 1899 ' de gece yarısından beri geçen saniye sayısı olarak geçerli saati geri döndürdü.
 
 > [!NOTE]
-> Visual sürümlerinde C++ ve Microsoft C /C++ Visual Studio 2005 önce **time_t** olduğu bir **uzun** **int** (32 bit) ve bu nedenle son tarihlerini kullanılamadı 3:14:07 Ocak 19, 2038, UTC. **time_t** artık değerine eşdeğer olan **__time64_t** varsayılan, ancak tanımlama **_use_32bıt_tıme_t** değişiklikleri **time_t** için **__time32_t** alan 32-bit sürümleri çağırmak için birçok saat işlevleri zorlar **time_t**. Daha fazla bilgi için [standart türler](../c-runtime-library/standard-types.md) ve bireysel saat işlevleri belgelerindeki açıklamalar.
+> Visual C++ Studio 2005 ' nin visual StudioC++ ' den önceki sürümlerinde, **time_t** uzun bir **long** **int** (32 BIT) ve bu nedenle, 19 Ocak 2038, UTC 'den 3:14:07 önceki tarihler için kullanılamadı. **time_t** artık varsayılan olarak **__time64_t** eşdeğerdir, ancak **_USE_32BIT_TIME_T** değişiklik **time_t** ve 32-bit **__time32_t**alan sürümleri **çağırmak için birçok** zaman işlevi zorlayarak. Daha fazla bilgi için, bireysel zaman işlevleri için belgelerde [standart türler](../c-runtime-library/standard-types.md) ve açıklamalar bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -47,11 +47,11 @@ helpviewer_keywords:
 - CDocTemplate [MFC], SetServerInfo
 ms.assetid: 14b41a1f-bf9d-4eac-b6a8-4c54ffcc77f6
 ms.openlocfilehash: 3b2d84af9be8e5c606cde8794b51e12207dcdec9
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855516"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420612"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate sınıfı
 
@@ -67,13 +67,13 @@ class CDocTemplate : public CCmdTarget
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDocTemplate:: CDocTemplate](#cdoctemplate)|`CDocTemplate` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDocTemplate:: AddDocument](#adddocument)|Bir şablona belge ekler.|
 |[CDocTemplate:: CloseAllDocuments](#closealldocuments)|Bu şablonla ilişkili tüm belgeleri kapatır.|
@@ -165,7 +165,7 @@ CDocTemplate (
 *nIDResource*<br/>
 Belge türüyle kullanılan kaynakların KIMLIĞINI belirtir. Bu, menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.
 
-Dize kaynağı, ' \n ' karakteriyle ayrılmış en fazla yedi alt dizeden oluşur (alt dize dahil değilse, bir yer tutucu olarak ' \n ' karakteri gerekir; ancak sondaki ' \n ' karakterleri gerekli değildir); Bu alt dizeler belge türünü anlatmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz. [GetDocString](#getdocstring). Bu dize kaynağı, uygulamanın kaynak dosyasında bulunur. Örnek:
+Dize kaynağı, ' \n ' karakteriyle ayrılmış en fazla yedi alt dizeden oluşur (alt dize dahil değilse, bir yer tutucu olarak ' \n ' karakteri gerekir; ancak sondaki ' \n ' karakterleri gerekli değildir); Bu alt dizeler belge türünü anlatmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz. [GetDocString](#getdocstring). Bu dize kaynağı, uygulamanın kaynak dosyasında bulunur. Örneğin:
 
 ```RC
 // MYCALC.RC

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ms.openlocfilehash: 542a469393d3655418f69e5d51d59adfa824ad15
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865580"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79417392"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings. JSON şema başvurusu
 

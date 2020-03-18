@@ -91,11 +91,11 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
 ms.openlocfilehash: 963aecfed4f6eb67a0ab227df06fce98c0778f7f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866396"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420206"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 
@@ -111,13 +111,13 @@ class CMonthCalCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMonthCalCtrl:: CMonthCalCtrl](#cmonthcalctrl)|`CMonthCalCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CMonthCalCtrl:: Create](#create)|Bir aylık Takvim denetimi oluşturur ve `CMonthCalCtrl` nesnesine iliştirir.|
 |[CMonthCalCtrl:: GetCalendarBorder](#getcalendarborder)|Geçerli ay Takvim denetiminin kenarlığının genişliğini alır.|
@@ -373,7 +373,7 @@ DWORD GetCurrentView() const;
 
 Şu değerlerden biri tarafından belirtilen geçerli görünüm:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |MCMV_MONTH|Aylık görünüm|
 |MCMV_YEAR|Yıllık görünüm|
@@ -451,7 +451,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [MCM_GETFIRSTDAYO
 |Değer|Haftanın günü|
 |-----------|---------------------|
 |0|Pazartesi|
-|1|Salı|
+|1\.|Salı|
 |2|Çarşamba|
 |3|Perşembe|
 |4|Cuma|
@@ -587,7 +587,7 @@ Aralığın en yüksek sonundaki tarihi içeren `SYSTEMTIME` yapısına yönelik
 *dwFlags*<br/>
 Alınacak Aralık sınırlarının kapsamını belirten değer. Bu değer aşağıdakilerden biri olmalıdır.
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |GMR_DAYSTATE|Yalnızca kısmen görüntülenen görünür aralığın önceki ve sondaki ayları dahil edin.|
 |GMR_VISIBLE|Yalnızca tamamen görüntülenen ayları dahil et.|
@@ -634,7 +634,7 @@ DWORD GetRange(
 
 Sıfır (hiçbir sınır ayarlanmamış) veya limit bilgilerini belirten aşağıdaki değerlerin bir birleşimi olan bir DWORD.
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |GDTR_MAX|Denetim için bir maksimum sınır ayarlanır; *pMaxRange* geçerlidir ve geçerli tarih bilgilerini içerir.|
 |GDTR_MIN|Denetim için bir minimum sınır ayarlanır; *pMinRange* geçerlidir ve geçerli tarih bilgilerini içerir.|
@@ -917,7 +917,7 @@ COLORREF SetColor(
 *nRegion*<br/>
 Hangi ay Takvim renginin ayarlanacağını belirten bir tamsayı değeri. Bu değer aşağıdakilerden biri olabilir.
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |MCSC_BACKGROUND|Aylar arasında görünen arka plan rengi.|
 |MCSC_MONTHBK|Ay içinde gösterilecek arka plan rengi.|

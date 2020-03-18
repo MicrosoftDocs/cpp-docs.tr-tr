@@ -183,11 +183,11 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
 ms.openlocfilehash: 6f15280943fce39bae4eebfb537f9a61d256d2e8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856423"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420920"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 
@@ -203,13 +203,13 @@ class CToolBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CToolBarCtrl:: CToolBarCtrl](#ctoolbarctrl)|`CToolBarCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CToolBarCtrl:: AddBitmap](#addbitmap)|Bir araç çubuğu denetimi için kullanılabilen düğme görüntülerinin listesine bir veya daha fazla bit eşlem düğme görüntüsü ekler.|
 |[CToolBarCtrl:: AddButtons](#addbuttons)|Bir araç çubuğu denetimine bir veya daha fazla düğme ekler.|

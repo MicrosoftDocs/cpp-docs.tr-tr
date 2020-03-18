@@ -11,11 +11,11 @@ helpviewer_keywords:
 - threading [C]
 ms.assetid: 67cdc99e-1ad9-452b-a042-ed246b70040e
 ms.openlocfilehash: 1764561e0b2b43b8a89d8a1eb2e85d84ce33c4fc
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78867059"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79422124"
 ---
 # <a name="multithreading-with-c-and-win32"></a>C ve Win32 ile Çoklu İş Parçacığı Kullanımı
 
@@ -79,7 +79,7 @@ Her iş parçacığının kendi yığını ve kendi CPU yazmaçlarının kopyas�
 
 Birden çok iş parçacığı statik verilere erişirken, programınızın olası kaynak çakışmalarını sağlaması gerekir. Bir iş parçacığının başka bir iş parçacığı tarafından görüntülenmek üzere *x*,*y* koordinatları içeren bir statik veri yapısını güncelleştirdiği bir programı düşünün. Güncelleştirme iş parçacığı *x* koordinatını değiştirirse ve *y* koordinatını değiştirebilmek için önce önayarlanırsa, *y* koordinatı güncellenmek için görüntü iş parçacığı zamanlanabilir. Öğe yanlış konumda görüntülenir. Yapıya erişimi denetlemek için semaforları kullanarak bu sorundan kaçınabilirsiniz.
 
-Bir mutex *(örneğin,* stand içinkısa bir süre), bir diğerinden zaman uyumsuz olarak yürütülen iş parçacıkları veya süreçler arasında iletişim kurma yöntemidir. Bu iletişim, genellikle kaynağı kilitleyerek ve kilidini açarak, paylaşılan bir kaynağa erişimi denetleyerek birden çok iş parçacığının veya işlemin etkinliklerini koordine etmek için kullanılabilir. Bu *x*,*y* koordinatı güncelleştirme sorununu çözmek için, güncelleştirme iş parçacığı, güncelleştirme gerçekleştirilmeden önce veri yapısının kullanımda olduğunu gösteren bir mutex ayarlar. Her iki koordinat işlendikten sonra mutex 'i temizler. Görüntüleme iş parçacığı, görüntüyü güncelleştirmeden önce mutex 'in temiz olmasını beklemelidir. Bu işlem için bekleyen bu işleme, işlem engellendiği ve mutex temizlenene kadar devam edemediği için bir mutex üzerinde *engelleme* olarak adlandırılır.
+Bir mutex *(örneğin,* stand için *ex*kısa bir süre), bir diğerinden zaman uyumsuz olarak yürütülen iş parçacıkları veya süreçler arasında iletişim kurma yöntemidir. Bu iletişim, genellikle kaynağı kilitleyerek ve kilidini açarak, paylaşılan bir kaynağa erişimi denetleyerek birden çok iş parçacığının veya işlemin etkinliklerini koordine etmek için kullanılabilir. Bu *x*,*y* koordinatı güncelleştirme sorununu çözmek için, güncelleştirme iş parçacığı, güncelleştirme gerçekleştirilmeden önce veri yapısının kullanımda olduğunu gösteren bir mutex ayarlar. Her iki koordinat işlendikten sonra mutex 'i temizler. Görüntüleme iş parçacığı, görüntüyü güncelleştirmeden önce mutex 'in temiz olmasını beklemelidir. Bu işlem için bekleyen bu işleme, işlem engellendiği ve mutex temizlenene kadar devam edemediği için bir mutex üzerinde *engelleme* olarak adlandırılır.
 
 [Örnek çoklu Iş parçacıklı c programında](sample-multithread-c-program.md) gösterilen sıçrama. c programı, ekran güncelleştirmelerini koordine etmek için `ScreenMutex` adlı bir mutex kullanır. Görüntüleme iş parçacıklarından biri ekrana yazmaya hazır olduğunda, `WaitForSingleObject` çağrısının mutex üzerinde engellenmesi ve zaman aşımına gerekmediğini belirtmek için, `ScreenMutex` ve sabit sonsuz ile `WaitForSingleObject` çağırır. `ScreenMutex` açık ise, bekleme işlevi mutex 'i diğer iş parçacıklarının görüntülemeyi kesintiye uğramaması için ayarlar ve iş parçacığını yürütmeye devam eder. Aksi takdirde, iş parçacığı mutex temizlenene kadar engeller. İş parçacığı görüntü güncelleştirmesini tamamladığında, `ReleaseMutex`çağırarak mutex 'i serbest bırakır.
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ms.openlocfilehash: 34741dc05efe77c0932343739540370f54db6008
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78855627"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79420976"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -126,7 +126,7 @@ Olay tetikleme işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* parametresi, `VTS_` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* parametresi, `VTS_` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
@@ -199,7 +199,7 @@ Olay harekete geçirildiğinde denetim kapsayıcısına geçirilen parametreleri
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişkeni, `VTS_` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* bağımsız değişkeni, `VTS_` sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 

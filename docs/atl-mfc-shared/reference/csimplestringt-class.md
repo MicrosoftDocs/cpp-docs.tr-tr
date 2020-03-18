@@ -37,11 +37,11 @@ helpviewer_keywords:
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
 ms.openlocfilehash: c033346b7a687a1c6778ad23e30ee0e73c787ad8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78865088"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79418197"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 
@@ -74,14 +74,14 @@ Dize sınıfının karakter türü. Aşağıdakilerden biri olabilir:
 |[CSimpleStringT::P CXSTR](#pcxstr)|Sabit dize işaretçisi.|
 |[CSimpleStringT::P XSTR](#pxstr)|Dize işaretçisi.|
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
 |[CSimpleStringT:: CSimpleStringT](#ctor)|Çeşitli yollarla `CSimpleStringT` nesneleri oluşturur.|
 |[CSimpleStringT:: ~ CSimpleStringT](#dtor)|Yıkıcı.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
@@ -110,7 +110,7 @@ Dize sınıfının karakter türü. Aşağıdakilerden biri olabilir:
 |[CSimpleStringT:: Truncate](#truncate)|Dizeyi belirtilen uzunluğa kırpar.|
 |[CSimpleStringT:: UnlockBuffer](#unlockbuffer)|Başvuru saymayı ve arabellekteki dizeyi serbest bırakır.|
 
-### <a name="public-operators"></a>Ortak İşleçler
+### <a name="public-operators"></a>Genel İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|

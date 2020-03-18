@@ -20,7 +20,6 @@ api_type:
 topic_type:
 - apiref
 f1_keywords:
-- rmtmp
 - _rmtmp
 helpviewer_keywords:
 - removing temporary files
@@ -30,12 +29,12 @@ helpviewer_keywords:
 - files [C++], removing
 - temporary files [C++], removing
 ms.assetid: 7419501e-2587-4f2a-b469-0dca07f84736
-ms.openlocfilehash: 314399cf174974132a3635631162a7ffa89342c4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: de28768f479df00eae315c99b80103c5319b38af
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949155"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442787"
 ---
 # <a name="_rmtmp"></a>_rmtmp
 

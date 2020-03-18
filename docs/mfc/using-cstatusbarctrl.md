@@ -1,24 +1,22 @@
 ---
 title: CStatusBarCtrl Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- CStatusBarCtrl
 helpviewer_keywords:
 - CStatusBarCtrl class [MFC], using
 - status bar controls [MFC], about status bar controls
 ms.assetid: 08b39f83-580d-439a-b93e-7ef9e2a5702a
-ms.openlocfilehash: b02b37cee930c0fa2522583c5c331bb4e0563ef4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee691d013d578f4c16fa9eadabd05f8710f32d8e
+ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411701"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79442339"
 ---
 # <a name="using-cstatusbarctrl"></a>CStatusBarCtrl Kullanma
 
-Durum çubuğu denetimi kullanabilirsiniz ([CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)) çeşitli uygulama hakkındaki durum bilgilerini gösteren bir denetimi penceresi oluşturmak için. Durum penceresi birden fazla tür bilgileri görüntüleyen parçalara ayrılabilir.
+Uygulama hakkında çeşitli durum bilgilerini yansıtan bir denetim penceresi oluşturmak için durum çubuğu denetimini ([CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)) kullanabilirsiniz. Durum penceresi birden fazla bilgi türü gösteren parçalara ayrılabilir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Durum Çubuğu Oluşturma Yöntemleri](../mfc/methods-of-creating-a-status-bar.md)
 

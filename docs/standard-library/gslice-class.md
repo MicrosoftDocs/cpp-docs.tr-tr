@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::gslice [C++], stride
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
 ms.openlocfilehash: 9290fabc86ffbdb051b7c61fe1600cd2f7f17dca
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78866263"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79421739"
 ---
 # <a name="gslice-class"></a>gslice Sınıfı
 
