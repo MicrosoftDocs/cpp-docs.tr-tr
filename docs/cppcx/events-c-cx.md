@@ -3,12 +3,12 @@ title: Olaylar (C++/CX)
 description: Windows Çalışma Zamanı için/CX C++kullanarak olay işleyicileri oluşturma ve kullanma.
 ms.date: 02/03/2020
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: 45f9a7bc17d9a695613ce551dae796b2cd2e0e6f
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: b40f71b183561b52047c1f7316def3d895465d2a
+ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972194"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79509382"
 ---
 # <a name="events-ccx"></a>Olaylar (C++/CX)
 
@@ -49,7 +49,7 @@ Sonraki örnek, bir olaya özel ekleme, kaldırma ve oluşturma yöntemlerinin n
 
 ## <a name="removing-an-event-handler-from-the-subscriber-side"></a>Abone tarafında bir olay işleyicisini kaldırma
 
-Nadir durumlarda, daha önce abone olduğunuz bir olay için bir olay işleyicisini kaldırmak isteyebilirsiniz. Örneğin, başka bir olay işleyicisiyle değiştirmek isteyebilirsiniz veya onu tarafından tutulan bazı kaynakları silmek isteyebilirsiniz. Bir işleyiciyi kaldırmak için `+=` işlemden döndürülen EventRegistrationToken 'ı depolamanız gerekir. Daha sonra bir olay işleyicisini kaldırmak için belirteçteki `-=` işlecini kullanabilirsiniz.  Ancak, özgün işleyici kaldırıldıktan sonra bile hala çağrılabilir. Örneğin, olay kaynağı işleyicilerin listesini aldığında ve bunları çağırmaya başladığında bir yarış durumu oluşabilir. Bu durumda bir olay işleyicisi kaldırılırsa, listenin tarihi eski olur. Bu nedenle, bir olay işleyicisini kaldırmak istiyorsanız üye bayrağı oluşturun. Olay kaldırılırsa bu ayarı ayarlayın ve ardından olay işleyicisinde bayrağı işaretleyin ve ayarlandıysa hemen geri dönün. Sonraki örnekte temel desenler gösterilmektedir.
+Nadir durumlarda, daha önce abone olduğunuz bir olay için bir olay işleyicisini kaldırmak isteyebilirsiniz. Örneğin, başka bir olay işleyicisiyle değiştirmek isteyebilirsiniz veya onu tarafından tutulan bazı kaynakları silmek isteyebilirsiniz. Bir işleyiciyi kaldırmak için `+=` işlemden döndürülen EventRegistrationToken 'ı depolamanız gerekir. Daha sonra bir olay işleyicisini kaldırmak için belirteçteki `-=` işlecini kullanabilirsiniz.  Ancak, özgün işleyici kaldırıldıktan sonra bile hala çağrılabilir. Örneğin, olay kaynağı işleyicilerin bir listesini aldığında ve bunları çağırmaya başladığında bir yarış durumu oluşabilir. Bu durumda bir olay işleyicisi kaldırılırsa, listenin tarihi eski olur. Bu nedenle, bir olay işleyicisini kaldırmak istiyorsanız üye bayrağı oluşturun. Olay kaldırılırsa bu ayarı ayarlayın ve ardından olay işleyicisinde bayrağı işaretleyin ve ayarlandıysa hemen geri dönün. Sonraki örnekte temel desenler gösterilmektedir.
 
 [!code-cpp[cx_events#04](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#04)]
 

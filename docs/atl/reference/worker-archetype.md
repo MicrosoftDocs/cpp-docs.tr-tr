@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-ms.openlocfilehash: 7f28b9e64c88a5be440417dd9d22f129ee7d6edf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 2e57c575ed778184cf319bb84e61f585fcfa2111
+ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495263"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79509347"
 ---
 # <a name="worker-archetype"></a>Çalışan arşiv Etype
 
@@ -37,7 +37,7 @@ Tipik bir *çalışan* sınıfı şöyle görünür:
 
 Bu sınıflar bu arşiv ETYPE ile uyumlu:
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
 |[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|İş parçacığı havuzundan gelen istekleri alır ve her istek için oluşturulan ve yok edilen bir çalışan nesnesine geçirir.|
 
@@ -68,17 +68,18 @@ void Execute(
 #### <a name="parameters"></a>Parametreler
 
 *isteyen*<br/>
-İşlenecek iş öğesi. İş öğesi ile `RequestType`aynı türde.
+İşlenecek iş öğesi. İş öğesi `RequestType`ile aynı türde.
 
 *pvWorkerParam*<br/>
-Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Initialize` , ve ' `Terminate`a geçirilir.
+Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Initialize` ve `Terminate`' a geçirilir.
 
 *Polatik*<br/>
 [Çakışan](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) yapının iş öğelerinin sıraya alındığı kuyruğu oluşturmak için kullanılan bir işaretçisi.
 
 ## <a name="initialize"></a>WorkerArchetype:: Initialize
 
-Herhangi bir istek geçirilmeden `WorkerArchetype::Execute`çalışan nesnesini başlatmak için çağırılır.
+Tüm istekler `WorkerArchetype::Execute`geçirilmeden önce çalışan nesnesini başlatmak için çağırılır.
+
 ```
 BOOL Initialize(void* pvParam) throw();
 ```
@@ -86,7 +87,7 @@ BOOL Initialize(void* pvParam) throw();
 #### <a name="parameters"></a>Parametreler
 
 *pvParam*<br/>
-Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Terminate` , ve ' `WorkerArchetype::Execute`a geçirilir.
+Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Terminate` ve `WorkerArchetype::Execute`' a geçirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -102,11 +103,11 @@ typedef MyRequestType RequestType;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu tür, öğesinin `WorkerArchetype::Execute` ilk parametresi olarak kullanılmalıdır ve bir ulong_ptr öğesine veya bir öğesine atama yeteneğine sahip olmalıdır.
+Bu tür, `WorkerArchetype::Execute` ilk parametresi olarak kullanılmalıdır ve bir ULONG_PTR ve ' a dönüştürme yeteneğine sahip olmalıdır.
 
 ## <a name="terminate"></a>WorkerArchetype:: Terminate
 
-Tüm istekler iletildikten `WorkerArchetype::Execute`sonra çalışan nesnesine Uninitialize için çağırılır).
+Tüm istekler `WorkerArchetype::Execute`geçirildiğinde çalışan nesne Uninitialize için çağırılır.
 
 ```
 void Terminate(void* pvParam) throw();
@@ -115,9 +116,9 @@ void Terminate(void* pvParam) throw();
 #### <a name="parameters"></a>Parametreler
 
 *pvParam*<br/>
-Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Initialize` , ve ' `WorkerArchetype::Execute`a geçirilir.
+Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Initialize` ve `WorkerArchetype::Execute`' a geçirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tiren](../../atl/active-template-library-atl-concepts.md)<br/>
+[Kavramlar ](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)

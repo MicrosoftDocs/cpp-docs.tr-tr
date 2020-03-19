@@ -4,12 +4,12 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: 3988c5f062c1f30886dbaa4bca8502e2bd841dfc
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: f7a8594fb4cdedd4a1f5640914155ccd1eacdc14
+ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73624751"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79509438"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış derleme yapılandırması
 
@@ -351,6 +351,7 @@ Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak s
   ]
 }
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ms.topic: overview
-ms.openlocfilehash: 1548f82b62163600b5220c553bebcea72020abbc
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: df3b768c139bc4dc000c185d7153fd4aa38ae94a
+ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274740"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79509457"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>Visual StudioC++ 'da C/projeler ve derleme sistemleri
 
@@ -40,11 +40,12 @@ MSVC derleyicisini (CL. exe) doğrudan komut satırından çağırarak basit pro
 ```cmd
 cl /EHsc hello.cpp
 ```
+
 Burada derleyicinin (CL. exe), son çıktı dosyasını oluşturmak için C++ Önişlemci ve bağlayıcı için otomatik olarak çağırdığını unutmayın.  Daha fazla bilgi için, bkz. [komut satırı üzerinde oluşturma](building-on-the-command-line.md).
 
 ## <a name="build-systems-and-projects"></a>Yapı sistemleri ve projeler
 
-Çoğu gerçek dünyada, birden çok yapılandırma (örneğin, hata ayıklama vs. sürüm), birden çok platform (x86, x64, ARM, vb.), özel derleme adımları ve hatta birden çok kaynak dosyasını derleme karmaşıklıklarını yönetmek için bazı tür *derleme sistemleri* kullanır. belirli bir sırada derlenmesi gereken yürütülebilir dosyalar. Bir yapı yapılandırma dosyasında ayarları yaparsınız ve derleme sistemi bu dosyayı derleyicinin çağrılmadan önce girdi olarak kabul eder. Yürütülebilir dosya oluşturmak için gereken kaynak kodu dosyaları ve yapı yapılandırma dosyaları kümesi *Proje*olarak adlandırılır. 
+Çoğu gerçek dünyada, birden çok yapılandırma (örneğin, hata ayıklama vs. sürüm), birden çok platform (x86, x64, ARM, vb.), özel derleme adımları ve hatta belirli bir sırada derlenmesi gereken birden çok yürütülebilir dosya için birden çok kaynak dosyası derleme karmaşıklıklarını yönetmek üzere bir tür *derleme sistemi* kullanır. Bir yapı yapılandırma dosyasında ayarları yaparsınız ve derleme sistemi bu dosyayı derleyicinin çağrılmadan önce girdi olarak kabul eder. Yürütülebilir dosya oluşturmak için gereken kaynak kodu dosyaları ve yapı yapılandırma dosyaları kümesi *Proje*olarak adlandırılır. 
 
 Aşağıdaki listede, Visual Studio projeleri için çeşitli seçenekler gösterilmektedir C++:
 
@@ -77,7 +78,7 @@ Visual Studio IDE kullanmak yerine C/C++ derleyici ve derleme araçlarının do�
 
 [Visual Studio 'Da dll 'Leri derleme](dlls-in-visual-cpp.md) Visual Studio 'da C/C++ dll (paylaşılan kitaplıklar) oluşturma, hata ayıklama ve dağıtma.
 
-[İzlenecek yol: Statik kitaplık](walkthrough-creating-and-using-a-static-library-cpp.md) oluşturma ve kullanma. lib ikili dosyası oluşturma.
+[Izlenecek yol: statik kitaplık oluşturma ve kullanma](walkthrough-creating-and-using-a-static-library-cpp.md) . Lib ikili dosyası oluşturma.
 
 [CC++ /yalıtılmış uygulamalar ve yan yana derlemeler oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md) Yalıtılmış uygulamaların ve yan yana derlemelerin fikrini temel alarak Windows Masaüstü uygulamaları için dağıtım modelini açıklar.
 
