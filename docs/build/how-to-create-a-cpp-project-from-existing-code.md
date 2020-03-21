@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Varolan koddan C++ projesi oluşturma'
+title: 'Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma'
 ms.date: 05/06/2019
 helpviewer_keywords:
 - C++, creating projects from existing code
@@ -10,66 +10,66 @@ f1_keywords:
 - vc.appwiz.importwiz.debugsettings
 - vc.appwiz.importwiz.releasesettings
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
-ms.openlocfilehash: a899fe7f1b038ac1497465171098183f63f40564
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 5e59230186380b787c95dbe08914bcd9d3ca2407
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221461"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078545"
 ---
-# <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl yapılır: Varolan koddan C++ projesi oluşturma
+# <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma
 
-Visual Studio'da, varolan kod dosyaları kullanarak bir C++ projesi bağlantı noktası **oluşturma yeni proje varolan kod dosyalarından** Sihirbazı. Bu sihirbaz, kaynak dosyaları yönetmek ve derleme yapılandırması için MSBuild sistemini kullanan bir proje çözüm oluşturur. En iyi, karmaşık bir klasör hiyerarşisi yoktur görece basit projeleriyle çalışır. Sihirbaz, Visual Studio'nun eski Express sürümlerinde kullanılamaz. 
+Visual Studio 'da, varolan kod dosyalarından **Yeni proje oluştur** sihirbazını kullanarak C++ varolan kod dosyalarının bir projeye bağlantı noktası oluşturabilirsiniz. Bu sihirbaz, kaynak dosyalarını ve derleme yapılandırmasını yönetmek için MSBuild sistemini kullanan bir proje çözümü oluşturur. Karmaşık klasör hiyerarşileri olmayan görece basit projelerle en iyi şekilde işe yarar. Sihirbaz, Visual Studio 'nun daha eski Express sürümlerinde kullanılamaz.
 
-Varolan kod dosyaları bir C++ projesine taşımak, IDE içine yerleşik yerel MSBuild proje yönetimi özellikleri sağlar. Nmake derleme görevleri dosyalarını, CMake veya alternatifleri gibi var olan, derleme sisteminizi kullanmayı tercih ederseniz, bunun yerine açık klasör veya CMake seçeneklerini kullanabilirsiniz. Daha fazla bilgi için [C++ açık klasörü projelerde](open-folder-projects-cpp.md) veya [Visual Studio'daki CMake projeleri](cmake-projects-in-visual-studio.md). İki seçenek de gibi IDE özelliklerini kullanmanıza izin [IntelliSense](/visualstudio/ide/using-intellisense) ve [proje özellikleri](working-with-project-properties.md).
+Varolan kod dosyalarının bir C++ projeye AKTARıLMALARıNı, IDE içinde yerleşik olarak bulunan yerel MSBuild Proje Yönetimi özelliklerinin kullanılmasını sunar. Var olan derleme sisteminizi (NMAKE makefiles, CMake veya alternatifler gibi) kullanmayı tercih ediyorsanız, bunun yerine açık klasörü veya CMake seçeneklerini kullanabilirsiniz. Daha fazla bilgi için bkz. Visual Studio 'da [için C++ klasör projelerini açma](open-folder-projects-cpp.md) veya [CMake projeleri](cmake-projects-in-visual-studio.md). Her iki seçenek de [IntelliSense](/visualstudio/ide/using-intellisense) ve [Proje özellikleri](working-with-project-properties.md)gibi IDE özelliklerini kullanmanıza olanak sağlar.
 
 ### <a name="to-create-a-c-project-from-existing-code"></a>Varolan koddan bir C++ projesi oluşturmak için
 
-1. Üzerinde **dosya** menüsünde **yeni** > **varolan koddan proje**.
+1. **Dosya** menüsünde, **varolan koddan** **Yeni** > proje ' yi seçin.
 
-1. Proje konumu, kaynak dosyalarınızı ve dosyaları yeni projeye sihirbaz aktarır türleri için dizini belirtin. Seçin **sonraki** devam etmek için.
+1. Proje konumunuzu, kaynak dosyalarınızın dizinini ve sihirbazın yeni projeye aktardığı dosya türlerini belirtin. Devam etmek için **İleri ' yi** seçin.
 
     | Ayar | Açıklama |
     | --- | --- |
-    | **Proje dosya konumu** | Yeni Proje dizini yolunu belirtir. Sihirbaz tüm dosyaları (ve alt dizinleri) yeni projenin nerede elverdiği bu konumdur.<br/><br/>Seçin **Gözat** görüntülenecek **proje dosya konumu** iletişim. Doğru klasöre gidin ve yeni projeyi içeren dizini belirtin. |
-    | **Proje adı** | Yeni proje adını belirtir. Proje dosyaları, bu ad .vcxproj devralır ve kendi özgün adı varolan kod dosyaları tutmak gibi dosya uzantılarına sahiptir. |
-    | **Dosyalar projeye bu klasörlerden ekleyin.** | Varolan kod dosyaları (Bu, liste kutusunda Bu denetimin altında belirtilir), özgün dizin kopyalamak için Sihirbazı ayarlanacak yeni projeye denetleyin.<br/><br/>Denetleme **alt klasörleri Ekle** projeye tüm alt dizinleri kopyalama kod dosyalarından belirtmek için. Dizinleri listelenen **klasör** sütun.<br/>-Select **Ekle** görüntülenecek **ekleme dosyaları projeye bu klasörden** iletişim kutusu, sihirbaz varolan kod dosyaları arar dizinleri belirtmek için.<br/>-Select **Kaldır** liste kutusunda seçili dizin yolu silinemedi.<br/><br/>İçinde **dosya projeye eklenecek türleri** kutusunda, Sihirbazı belirli dosya uzantılarını temel alan yeni proje ekler. dosya türü belirtin. Dosya uzantıları, yıldız işareti joker karakteriyle öncesinde ve noktalı virgülle ayrılmış dosya uzantıları listesinde. |
-    | **Çözüm Gezgini içindeki tüm dosyaları göster** | Tüm dosyaları görünür ve görüntülenen yeni projede belirtir **Çözüm Gezgini** penceresi. Bu seçenek varsayılan olarak etkindir. |
+    | **Proje dosyası konumu** | Yeni projenin dizin yolunu belirtir. Bu konum, sihirbazın yeni projenin tüm dosyalarını (ve alt dizinlerini) mevdubudur.<br/><br/>**Proje dosyası konumu** iletişim kutusunu göstermek için **Araştır** ' ı seçin. Doğru klasöre gidin ve yeni projeyi içeren dizini belirtin. |
+    | **Proje adı** | Yeni projenin adını belirtir. . Vcxproj gibi dosya uzantılarına sahip proje dosyaları, bu adı ve mevcut kod dosyalarını özgün adlarını tutar. |
+    | **Bu klasörlerden dosyaları projeye Ekle** | Sihirbazı, mevcut kod dosyalarını özgün dizinlerinden (Bu denetimin altındaki liste kutusunda belirtilen) yeni projeye kopyalamak üzere ayarlamak için işaretleyin.<br/><br/>Tüm alt dizinlerden kod dosyalarını projeye kopyalamayı belirtmek için **alt klasör ekle** ' ye bakın. Dizinler **klasör** sütununda listelenir.<br/>-Sihirbazın var olan kod dosyalarını arayacağı dizinleri belirtmek için **Bu klasörden Proje Ekle iletişim kutusunda Dosya Ekle** ' **yi seçin.**<br/>-Liste kutusunda seçili dizin yolunu silmek için **Kaldır** ' ı seçin.<br/><br/>**Projeye eklenecek dosya türlerinde** , belirtilen dosya uzantılarına göre sihirbazın yeni projeye eklediği dosya türlerini belirtin. Dosya uzantıları önce yıldız işareti joker karakteriyle gelir ve dosya uzantıları listesinde noktalı virgülle ayrılır. |
+    | **Tüm dosyaları Çözüm Gezgini göster** | Yeni projedeki tüm dosyaların **Çözüm Gezgini** penceresinde görünür ve görüntülenir olduğunu belirtir. Bu seçenek varsayılan olarak etkindir. |
 
     ![Proje konumu](media/location.png)
 
-1. Yeni proje için yapı ortamı gibi kullanmak için proje ayarları ve oluşturulacak yeni projenin belirli bir türüyle eşleşecek şekilde derleme ayarlarını belirtin. Seçin **sonraki** devam etmek için.
+1. Yeni proje için yapı ortamı gibi kullanılacak proje ayarlarını ve oluşturulacak belirli bir yeni proje türüyle eşleşecek derleme ayarlarını belirtin. Devam etmek için **İleri ' yi** seçin.
 
     | Ayar | Açıklama |
     | --- | --- |
-    | **Visual Studio'yu kullanın.** | Visual Studio'da yeni proje oluşturmak için dahil edilen derleme araçları kullanılacağını belirtir. Bu seçenek varsayılan olarak seçilidir.<br/><br/>Seçin **proje türü** Sihirbazı'nın ürettiği projenin türünü belirtmek için. Seçin **Windows uygulaması projesi**, **konsol uygulama projesi**, **dinamik olarak bağlı bir kitaplığı (DLL) projesi**, veya **statik kitaplık (LIB) Proje**.<br/><br/>Denetleme **ATL için destek ekleme** yeni projeye ATL desteği eklenecek.<br/><br/>Denetleme **MFC desteği ekleme** yeni proje için MFC desteği eklemek için.<br/><br/>Denetleyin **ortak dil çalışma zamanı için destek ekleme** CLR programlama desteği projeye eklenecek. Seçin **ortak dil çalışma zamanı desteği** uyumluluk türü gibi **ortak dil çalışma zamanı (eski sözdizimi)** için Yönetilen Uzantılar'ile uyumluluğu C++ söz dizimi, CLR programlama sözdizimi Visual Studio 2005'den önce. |
-    | **Dış yapı ortamı kullanın** | Visual Studio'da yeni proje oluşturmak için yer almayan derleme araçları kullanılacağını belirtir. Bu seçenek belirlendiğinde, derleme komut satırları belirtebilirsiniz **hata ayıklama yapılandırma ayarlarını belirt** ve **sürüm yapılandırma ayarlarını belirt** sayfaları. |
+    | **Visual Studio kullanma** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil edilen derleme araçlarının kullanılacağını belirtir. Bu seçenek varsayılan olarak seçilidir.<br/><br/>Sihirbazın oluşturduğu proje türünü belirtmek için **proje türünü** seçin. **Windows uygulama projesi**, **konsol uygulama projesi**, **dınamık olarak bağlı kitaplık (dll) PROJESI**veya **statik kitaplık (LIB) projesi**seçin.<br/><br/>Yeni projeye ATL desteği eklemek için **atl desteği ekle** ' ye bakın.<br/><br/>Yeni projeye MFC desteği eklemek için **MFC desteği ekleyin** ' i işaretleyin.<br/><br/>Projeye CLR programlama desteği eklemek için **ortak dil çalışma zamanı desteği ekleyin** ' i işaretleyin. Sözdizimi için C++ yönetilen uzantılar ile uyumluluk için ortak dil çalışma zamanı **(eski sözdizimi)** , Visual Studio 2005 ' den önceki CLR programlama sözdizimi gibi uyumluluk türü Için **ortak dil çalışma zamanı desteğini** seçin. |
+    | **Dış yapı sistemi kullan** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil olmayan yapı araçlarının kullanılacağını belirtir. Bu seçenek belirlendiğinde, **hata ayıklama yapılandırma ayarlarını belirtin** ve **Yayın yapılandırma ayarlarını belirtin** sayfasında derleme komut satırları ' nı belirtebilirsiniz. |
 
     ![Proje ayarları](media/settings.png)
 
     > [!NOTE]
-    > Zaman **kullanım dış yapı sistemi** seçeneği, IDE Proje yapı değil böylece /D, / ı, /FI, /AI veya /FU seçenekleri derleme için gerekli değildir. Ancak, bu seçenekler sırada düzgün çalışması IntelliSense doğru şekilde ayarlanmalıdır.
+    > **Dış yapı sistemi kullan** seçeneği IŞARETLENDIĞINDE, IDE projeyi oluşturmaz, bu nedenle/D,/I,/FI,/AI veya/Fu seçenekleri derleme için gerekli değildir. Ancak, IntelliSense 'in düzgün çalışması için bu seçeneklerin doğru şekilde ayarlanması gerekir.
 
-1. Hata ayıklama yapılandırma ayarlarını belirtin. Seçin **sonraki** devam etmek için.
+1. Kullanılacak hata ayıklama yapılandırma ayarlarını belirtin. Devam etmek için **İleri ' yi** seçin.
 
     | Ayar | Açıklama |
     | --- | --- |
-    | **Komut satırı derleme** | Proje derleme komut satırı belirtir. Derleyici (artı herhangi anahtarlar veya bağımsız değişkenler) adını girin veya projeyi derlemek için kullanmak istediğiniz derleme betikleri. |
-    | **Yeniden derle komut satırı** | Yeni proje oluşturur. komut satırı belirtir. |
+    | **Derleme komut satırı** | Projeyi oluşturan komut satırını belirtir. Derleyicinin adını (artı herhangi bir anahtar veya bağımsız değişken) ya da projeyi derlemek için kullanmak istediğiniz derleme betikleri girin. |
+    | **Komut satırını yeniden oluştur** | Yeni projeyi yeniden oluşturan komut satırını belirtir. |
     | **Temizle komut satırı** | Proje için yapı araçları tarafından oluşturulan destek dosyalarını silmek için komut satırını belirtir. |
     | **Çıkış (hata ayıklama için)** | Projenin hata ayıklama yapılandırması için çıkış dosyalarının dizin yolunu belirtir. |
-    | **Önişlemci tanımları (/ D)** | Önişlemci sembolleri tanımlar proje için bkz: [/D (önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md). |
-    | **Arama Yolu Ekle (/ ı)** | Dizin yolları derleyici arar dosya başvuruları geçirilecek önişlemci yönergeleri, projedeki gidermek için bkz: belirtir [/ı (ek içeren dizinler)](../build/reference/i-additional-include-directories.md). |
-    | **Zorunlu eklenen dosyalar (/FI)** | Üst bilgi dosyaları, projeyi derlerken işlemek için bkz belirtir [/FI (zorla dahil dosyasını Adlandır)](../build/reference/fi-name-forced-include-file.md). |
-    | **.NET bütünleştirilmiş kod arama yolu (/ AI)** | Derleyicinin arama projesinde .NET derleme başvuruları geçirilecek ön işlemci yönergeleri gidermek için bkz: dizin yolları belirtir [/AI (meta veri dizinlerini belirtin)](../build/reference/ai-specify-metadata-directories.md). |
-    | **Zorunlu .NET derlemeleri (/ FU)** | Projeyi derlerken işlemek için bkz: .NET bütünleştirilmiş kodları belirtir [/FU (zorlanan adı #using)](../build/reference/fu-name-forced-hash-using-file.md). |
+    | **Önişlemci tanımları (/D)** | Proje için önişlemci sembolleri tanımlar, bkz. [/d (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md). |
+    | **Arama yolunu ekle (/I)** | Derleyicinin, projedeki Önişlemci yönergelerine geçilen dosya başvurularını çözümlemek için arayacağı dizin yollarını belirtir, bkz. [/i (ek Içerme dizinleri)](../build/reference/i-additional-include-directories.md). |
+    | **Zorunlu eklenen dosyalar (/FI)** | Projeyi oluştururken işlenecek üst bilgi dosyalarını belirtir, bkz. [/Fi (zorunlu Içerme dosyasını Adlandır)](../build/reference/fi-name-forced-include-file.md). |
+    | **.NET bütünleştirilmiş kod arama yolu (/AI)** | Derleyicinin, projedeki Önişlemci yönergelerine geçirilen .NET derleme başvurularını çözümlemek için arayacağı dizin yollarını belirtir, bkz. [/AI (meta veri dizinlerini belirt)](../build/reference/ai-specify-metadata-directories.md). |
+    | **.NET derlemeleri (/FU) kullanılarak zorlandı** | Projeyi oluştururken işlenecek .NET derlemelerini belirtir, bkz. [/Fu (zorlanan #using dosyayı adlandır)](../build/reference/fu-name-forced-hash-using-file.md). |
 
     ![Proje yapılandırması](media/config.png)
 
     > [!NOTE]
-    > **Derleme**, **yeniden**, **temiz** komut satırı ve **(hata ayıklama için) çıktı** ayarları yalnızca, etkin **kullanın Dış yapı sistemi** seçeneği seçili **proje ayarlarını belirtme** sayfası.
+    > **Derleme**, **yeniden oluşturma**, **Temizleme** komut satırı ve **Çıkış (hata ayıklama için)** ayarları yalnızca **Proje ayarlarını belirtin** sayfasında **dış yapı sistemi kullan** seçeneği işaretliyse etkinleştirilir.
 
-1. Sürüm yapılandırma ayarlarını belirtin, bu ayarları yapılandırma ayarlarında hata ayıklamayı ile aynıdır. Seçin **son** yeni projeyi oluşturmak için.
+1. Kullanılacak yayın yapılandırma ayarlarını belirtin, bu ayarlar hata ayıklama yapılandırma ayarları ile aynıdır. Yeni projeyi oluşturmak için **son** ' a tıklayın.
 
     > [!NOTE]
-    > Buradan göz atabilirsiniz **hata ayıklama yapılandırması ile aynı** Sihirbazı için hata ayıklama yapılandırması proje ayarları sürüm yapılandırması proje ayarları aynı oluşturacak belirtmek için. Bu seçenek varsayılan olarak denetlenir. Bu kutunun işaretini kaldırın sürece bu sayfadaki diğer tüm seçenekler devre dışıdır.
+    > Burada, sihirbazın yapılandırma projesi ayarlarında hata ayıklama ile aynı sürüm yapılandırma proje ayarlarını oluşturmasını belirtmek için **hata ayıklama yapılandırmasıyla aynı şekilde** bakabilirsiniz. Bu seçenek varsayılan olarak işaretlidir. Bu kutunun işaretini kaldırmanız gerekmedikçe, bu sayfadaki diğer tüm seçenekler etkin değildir.

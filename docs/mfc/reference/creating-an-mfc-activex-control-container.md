@@ -9,35 +9,34 @@ helpviewer_keywords:
 - containers [MFC], creating
 - OLE controls [MFC], containers
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-ms.openlocfilehash: 7591b3ed84c1703a201e4e62f699df877de36058
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 27f229a23595d4842a77409a3cedc7a57aa43e6c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220194"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079431"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX Denetimi Kapsayıcısı Oluşturma
 
-Bir ActiveX denetimi kapsayıcısı bir ActiveX (eski adı OLE) denetimini çalıştırmak ortamı sağlayan bir üst programdır. Özelliğine sahip olan veya olmayan MFC ActiveX denetimleri içeren bir uygulama oluşturabilirsiniz, ancak ile MFC yapmak daha kolaydır.
+ActiveX Denetim kapsayıcısı, bir ActiveX (eski adıyla OLE) denetiminin çalıştırılacağı ortamı sağlayan bir ana programdır. MFC ile veya MFC olmadan ActiveX denetimleri içeren bir uygulama oluşturabilirsiniz, ancak MFC ile daha kolay hale gelir.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](../activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](../activex-controls.md).
 
-Bir MFC kapsayıcı programını kullanarak oluşturma [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md) MFC ve ActiveX sınıfları tarafından uygulanan özellikleri ActiveX denetimlerini ve Otomasyon erişmenize olanak sağlar. Bu özellikler, görsel düzenleme, otomasyon, bileşik dosyalar oluşturma içerir ve denetimler için destek. Bir kapsayıcı, bir mini sunucu, bir tam sunucu ve bir kapsayıcı hem bir sunucusu olan bir program oluşturma üst programınızı destekleyen MFC Uygulama Sihirbazı'nı visual düzenleme seçeneklerini içerir.
+MFC [Uygulama Sihirbazı 'nı](../../mfc/reference/mfc-application-wizard.md) kullanarak mfc kapsayıcı programı oluşturma, MFC ve ActiveX sınıfları tarafından uygulanan ActiveX denetimlerinin ve otomasyonunun birçok özelliğine erişmenize olanak tanır. Bu özellikler görsel düzenlemeler, otomasyon, bileşik dosyalar oluşturma ve denetimler için destek içerir. MFC Uygulama Sihirbazı, ana programınızın desteklediği bir kapsayıcı, bir mini sunucu, tam sunucu ve hem kapsayıcı hem de sunucu olan bir program oluşturma seçeneklerini içerir.
 
-- **Yeni bir MFC uygulaması**. Otomasyon içeren yeni bir MFC programı oluşturmak için görsel düzenleme, dosyalar, bileşik veya destek denetlemek, MFC Uygulama Sihirbazı'nı kullanın ve uygun Otomasyon seçenekleri belirleyin.
+- **Yenı MFC uygulaması**. Otomasyon, görsel düzenlemeler, bileşik dosyalar ya da denetim desteği içeren yeni bir MFC programı oluşturmak için MFC Uygulama Sihirbazı 'Nı kullanın ve uygun Otomasyon seçeneklerini belirleyin.
 
-- **Varolan bir MFC uygulamasına**. Varolan bir MFC uygulamasına denetimi kapsamasını ekliyorsanız, bkz. [OLE denetim kapsayıcıları: OLE denetimi kapsamasını el ile etkinleştirme](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md).
+- **Mevcut MFC uygulaması**. Mevcut bir MFC uygulamasına denetim kapsamı ekliyorsanız bkz. [OLE denetim kapsayıcıları: OLE denetim kapsamayı El Ile etkinleştirme](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md).
 
-### <a name="to-create-an-activex-container-for-any-of-the-following-types-of-applications"></a>Aşağıdaki uygulama türlerini herhangi bir ActiveX kapsayıcısı oluşturmak için
+### <a name="to-create-an-activex-container-for-any-of-the-following-types-of-applications"></a>Aşağıdaki uygulama türlerinin herhangi biri için bir ActiveX kapsayıcısı oluşturmak için
 
 1. [Kapsayıcılar](../../mfc/containers.md)
 
-1. [Görsel düzenleme](../../mfc/ole-mfc.md)
+1. [Görsel Düzenle](../../mfc/ole-mfc.md)
 
 1. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Visual Studio Proje türleri](../../build/reference/visual-cpp-project-types.md)
-
+[C++Visual Studio 'da proje türleri](../../build/reference/visual-cpp-project-types.md)

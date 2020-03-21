@@ -7,80 +7,80 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: 68c01623ef97e89623dff3f46a952c75ea31a774
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 5e31105e682e8acecbdc0da461614fc46e4ae227
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707823"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079768"
 ---
 # <a name="sql"></a>SQL
 
-SQL (yapılandırılmış sorgu dili), tanımlayın, sorgu, değiştirmek ve veri denetimi sağlayan ilişkisel bir veritabanı ile iletişim kurmak için kullanılan bir yoldur. SQL söz dizimini kullanarak, belirttiğiniz ölçütlere göre kayıtlar ayıklar bir deyim oluşturabilirsiniz.
+SQL (Yapılandırılmış Sorgu Dili), verileri tanımlamanıza, sorgulamanızı, değiştirmenize ve denetlemenize olanak tanıyan ilişkisel bir veritabanıyla iletişim kurmanın bir yoludur. SQL söz dizimini kullanarak, belirttiğiniz ölçütlere göre kayıtları ayıklayan bir ifade oluşturabilirsiniz.
 
 > [!NOTE]
->  Bu bilgiler, MFC ODBC sınıflarına uygulanır. MFC DAO sınıflarına ile çalışıyorsanız, ANSI SQL DAO Yardımı'nda ve konu karşılaştırma Microsoft Jet veritabanı altyapısı SQL bakın.
+>  Bu bilgiler MFC ODBC sınıfları için geçerlidir. MFC DAO sınıflarıyla çalışıyorsanız, DAO yardımı 'nda Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL ' in karşılaştırması konusuna bakın.
 
-SQL deyimleri ile anahtar sözcüğü fiili gibi başlayan **Oluştur** veya **seçin**. SQL çok güçlü bir dildir; tek bir deyimde bir tablonun tamamını etkileyebilir.
+SQL deyimleri **Create** veya **Select**gibi bir anahtar sözcük fiili ile başlar. SQL çok güçlü bir dildir; tek bir ifade, bir tablonun tamamını etkileyebilir.
 
-SQL'ın birçok sürümü mevcut, her biri belirli bir DBMS aklınızda geliştirilmiştir. MFC veritabanı sınıfları bir dizi X / açık karşılık gelen SQL deyimleri ve SQL erişim grubu ortak uygulamaları ortam (CAE) SQL taslak belirtimi (1991) algılar. Bu deyimler sözdizimi hakkında daha fazla bilgi için bkz: Ek C *ODBC SDK'sı* *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki.
+Her biri göz önünde bulundurularak geliştirilen pek çok SQL sürümü vardır. MFC veritabanı sınıfları, X/Open ve SQL Access Group ortak uygulamalar ortamı (CAE) SQL taslak belirtimine (1991) karşılık gelen bir SQL deyimleri kümesini algılar. Bu deyimlerin sözdizimi hakkında daha fazla bilgi için, MSDN Kitaplığı CD 'sindeki *ODBC SDK* *Programcının Başvurusu* ' nda ek C bölümüne bakın.
 
-Bu konu şunları açıklar:
+Bu konuda aşağıdakiler açıklanmaktadır:
 
-- [ODBC'ye ve SQL'e arasındaki ilişkiyi](#_core_open_database_connectivity_.28.odbc.29).
+- [ODBC ve SQL arasındaki ilişki](#_core_open_database_connectivity_.28.odbc.29).
 
-- [Veritabanı sınıfları tarafından kullanılan en yaygın SQL anahtar sözcükleri](#_core_the_database_classes).
+- [Veritabanı sınıfları tarafından kullanılan en YAYGıN SQL anahtar sözcükleri](#_core_the_database_classes).
 
-- [SQL veritabanı sınıflarını kullanma](#_core_how_the_database_classes_use_sql).
+- [Veritabanı SıNıFLARı SQL 'ı nasıl kullanır](#_core_how_the_database_classes_use_sql).
 
-##  <a name="_core_open_database_connectivity_.28.odbc.29"></a> Açık veritabanı bağlantısı (ODBC)
+##  <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a>Açık veritabanı bağlantısı (ODBC)
 
-SQL komutları ekleme kodu yerine bir çağrı düzeyi arabirimi SQL kullanan ODBC ile veritabanı sınıflarını uygulanır. ODBC ile iletişim kurmak için SQL kullanan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) aracılığıyla ODBC sürücüleri. Bu sürücüleri SQL yorumlar ve, gerekirse, bir Microsoft Access gibi belirli veritabanı biçimi ile kullanılmak üzere çevir. ODBC SQL nasıl kullandığı hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve ODBC SDK'sı *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki.
+Veritabanı sınıfları, koda SQL komutları katıştırmak yerine SQL 'yi çağrı düzeyinde bir arabirimde kullanarak ODBC ile uygulanır. ODBC, ODBC sürücüleri aracılığıyla bir [veri kaynağıyla](../../data/odbc/data-source-odbc.md) iletişim kurmak için SQL kullanır. Bu sürücüler, SQL 'i Yorumlar ve gerekirse, Microsoft Access gibi belirli bir veritabanı biçimiyle kullanılmak üzere çevirir. ODBC 'nin SQL 'in nasıl kullanıldığı hakkında daha fazla bilgi için, MSDN Kitaplığı CD 'sindeki [ODBC](../../data/odbc/odbc-basics.md) ve ODBC SDK *Programcının Başvurusu* ' na bakın.
 
-##  <a name="_core_the_database_classes"></a> Veritabanı sınıfları
+##  <a name="database-classes"></a><a name="_core_the_database_classes"></a>Veritabanı sınıfları
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Veritabanı sınıfları işlemek ve mevcut veri güncelleştirme izin vermek için tasarlanmış [veri kaynağı](../../data/odbc/data-source-odbc.md). [MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (aracılığıyla erişilen **sınıfı Ekle**), ve veritabanı sınıfları SQL deyimlerinin çoğu sizin için oluşturur.
+Veritabanı sınıfları, var olan bir [veri kaynağındaki](../../data/odbc/data-source-odbc.md)verileri değiştirmenize ve güncelleştirmenize olanak sağlayacak şekilde tasarlanmıştır. MFC [Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) ( **Sınıf Ekle**aracılığıyla erişilir) ve veritabanı sınıfları sizin için SQL deyimlerinin çoğunu oluşturur.
 
-Veritabanı sınıfları, SQL veri işleme dili (DML) olarak bilinen bir bölümünü kullanın. Bu komutlar, tüm ya da veri kaynağının bir parçası, yeni kayıtlar ekleme, kayıtlarını düzenleyin ve kayıtları silme olanak tanır. Aşağıdaki tabloda en yaygın SQL anahtar sözcüklerini listeler ve veritabanı sınıfları yollarını kullanabilirsiniz.
+Veritabanı sınıfları, veri Işleme dili (DML) olarak bilinen bir SQL bölümünü kullanır. Bu komutlar, veri kaynağının tümü veya bir kısmı ile çalışmanıza, yeni kayıtlar eklemenize, kayıtları düzenlemenize ve kayıtları silmenize olanak sağlar. Aşağıdaki tabloda en yaygın SQL anahtar kelimeleri ve veritabanı sınıflarının bunları kullanma yolları listelenmektedir.
 
 ### <a name="some-common-sql-keywords"></a>Bazı yaygın SQL anahtar sözcükleri
 
-|SQL anahtar sözcüğü|Sihirbazlar ve veritabanı sınıfları bunu kullanın.|
+|SQL anahtar sözcüğü|Sihirbazlar ve veritabanı sınıfları onu kullanır|
 |-----------------|---------------------------------------------|
-|**SELECT**|Tanımlamak için hangi tablolar ve sütunlar veri kaynağında kullanıma yöneliktir.|
-|**WHERE**|Bir filtre uygulamak için bu seçimi daraltır.|
-|**ORDER BY**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|
-|**EKLE**|Yeni kayıtlar için bir kayıt eklemek için.|
-|**DELETE**|Bir kayıt kümesinden kayıtları silmek için.|
-|**GÜNCELLEŞTİRME**|Bir kaydın alanlarını değiştirmek için.|
+|**SELECT**|Veri kaynağındaki hangi tablo ve sütunların kullanılacağını belirlemek için.|
+|**WHERE**|Seçimi daralan bir filtre uygulamak için.|
+|**ORDER BY**|Kayıt kümesine bir sıralama düzeni uygulamak için.|
+|**INSERT**|Yeni kayıtları bir kayıt kümesine eklemek için.|
+|**DELETE**|Kayıt kümesinden kayıtları silmek için.|
+|**UPDATE**|Bir kaydın alanlarını değiştirmek için.|
 
-Ayrıca, ODBC veritabanı sınıfları tanımak **çağrı** deyimleri, bazı veri kaynakları üzerinde önceden tanımlanmış sorgu (veya saklı yordam) aramak için kullanabilirsiniz. ODBC veritabanı sürücüsü, bu deyimler yorumlar ve her DBMS için uygun komut yerini alır.
+Ayrıca, veritabanı sınıfları bazı veri kaynaklarında önceden tanımlanmış bir sorguyu (veya saklı yordamı) çağırmak için kullanabileceğiniz ODBC **çağrı** deyimlerini tanır. ODBC veritabanı sürücüsü bu deyimleri Yorumlar ve komutu her DBMS için uygun olarak değiştirir.
 
 > [!NOTE]
->  Tüm DBMS Destek **çağrı** deyimleri.
+>  Tüm **Dbcepler çağrı** deyimlerini desteklemez.
 
-Sınıfları bir kullanıcı tarafından sağlanan bir deyimde tanıyamaz `CRecordset::Open`, bir tablonun adı olarak yorumlanır.
+Sınıflar `CRecordset::Open`içinde Kullanıcı tarafından sağlanan bir ifadeyi tanıyamazsa tablo adı olarak yorumlanır.
 
-Nasıl framework SQL deyimleri oluşturan bir açıklaması için bkz [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) ve [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+Framework 'ün SQL deyimlerini nasıl geliştirdiğinin açıklaması için bkz. [kayıt kümesi: kayıt kümeleri kayıtları seçme (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) ve [SQL: Kayıt Kümenizin SQL DEYIMINI özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-SQL veritabanları, C ve C++ içinde kullanılan benzer veri türlerini kullanın. Bu benzerlikler bir tartışma için bkz [SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).
+SQL veritabanları, C ve C++' de kullanılanlarla benzer veri türlerini kullanır. Bu benzerlikler hakkında bir tartışma için bkz. [SQL: SQL C++ ve VERI türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).
 
-Desteklenen SQL deyimleri, veri türleri, SQL çekirdek dil bilgisi ve ilgili SQL, önerilen yayınlara okuma listesi listesi dahil olmak üzere, SQL hakkında daha fazla bilgi bulabilirsiniz *ODBC SDK* *Programcının Başvurusu*  MSDN Kitaplığı CD'sindeki.
+Desteklenen SQL deyimlerinin listesi, veri türleri, SQL Core dilbilgisinde ve SQL hakkında önerilen yayınların bir okuma listesinin yanı sıra, MSDN Kitaplığı CD 'sindeki *ODBC SDK* *Programlayıcısının başvurusu* dahil olmak üzere SQL hakkında daha fazla bilgi edinebilirsiniz.
 
-##  <a name="_core_how_the_database_classes_use_sql"></a> SQL veritabanı sınıflarını kullanma
+##  <a name="how-the-database-classes-use-sql"></a><a name="_core_how_the_database_classes_use_sql"></a>Veritabanı sınıfları SQL 'i nasıl kullanır?
 
-Veritabanı sınıflarından kayıt kümeleri, veri kaynağı ile iletişim kurmak için ODBC kullanma ve ODBC kayıt veri kaynağından SQL deyimleri göndererek alır. Bu konu, SQL ve veritabanı sınıfları arasındaki ilişkiyi açıklar.
+Veritabanı sınıflarından türettiğiniz kayıt kümeleri ODBC 'yi bir veri kaynağıyla iletişim kurmak için kullanır ve ODBC, SQL deyimleri göndererek veri kaynağından kayıtları alır. Bu konu, veritabanı sınıfları ve SQL arasındaki ilişkiyi açıklar.
 
-Bir SQL deyiminde parçalarını oluşturarak bir SQL deyimi bir kayıt oluşturur bir `CString`. Dize olarak oluşturulmuş bir **seçin** deyimi kayıt kümesini döndürür.
+Bir kayıt kümesi, bir SQL deyimin parçalarını `CString`olarak oluşturarak bir SQL ifadesini oluşturur. Dize, bir kayıt kümesi döndüren bir **Select** ifadesiyle oluşturulur.
 
-Kayıt kümesi bir SQL deyimi veri kaynağına göndermek için ODBC çağırdığında, ODBC Sürücü Yöneticisi deyim ODBC sürücüsüne geçer ve isteğe bağlı olarak sürücü için temel alınan DBMS gönderir. DBMS kayıtlarının sonuç kümesi döndürür ve ODBC sürücüsü, uygulamaya kayıtları döndürür. Veritabanı sınıfları sonuç kümesini tür kullanımı uyumlu bir C++ sınıfı türetilen program erişiminizi izin `CRecordset`.
+Kayıt kümesi ODBC 'yi bir SQL ifadesini veri kaynağına göndermek için çağırdığında, ODBC Sürücü Yöneticisi, ifadeyi ODBC sürücüsüne geçirir ve sürücü onu temel DBMS 'ye gönderir. DBMS bir kayıt kümesi döndürür ve ODBC sürücüsü kayıtları uygulamaya döndürür. Veritabanı sınıfları, programınızın `CRecordset`türetilen tür açısından güvenli C++ bir sınıftaki sonuç kümesine erişmesini sağlar.
 
-Aşağıdaki konular, SQL veritabanı sınıflarını kullanma hakkında daha fazla bilgi sağlar:
+Aşağıdaki konularda, veritabanı sınıflarının SQL kullanımı hakkında daha fazla bilgi sağlanmaktadır:
 
-- [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
+- [SQL: Kayıt Kümenizin SQL deyiminizi özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
 
 - [SQL: SQL ve C++ Veri Türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)
 

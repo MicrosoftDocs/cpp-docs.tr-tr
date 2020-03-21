@@ -6,12 +6,12 @@ helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: 9b2d1f3bf1a229a0590553369e37bc07f35ada33
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 381fa347a4ca2872ef0697d76a1e788c97e8a014
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627137"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075434"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: standart C++ program oluşturma (C++)
 
@@ -22,7 +22,7 @@ Kendi C++ programınızı yazabilir veya örnek programlardan birini kullanabili
 > [!NOTE]
 > C++ Dil standardının belirli bir sürümüyle uyumluluk (örn. c++ 14 veya c++ 17) gerekliyse, `/std:c++14` veya `/std:c++17` derleyici seçeneğini kullanın. (Visual Studio 2017 ve üzeri.)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu adım adım öğreticiyi tamamlamak için C++ dilinin temellerini anlamanız gerekir.
 
@@ -36,7 +36,7 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden **dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın. 
+1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
 
 1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
 
@@ -54,7 +54,7 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir, ancak farklı bir ad yazabilirsiniz. Ayrıca, proje için farklı bir konum da yazabilirsiniz.
 
-1. Projeyi oluşturmak için **Tamam** ' ı tıklatın.
+1. Projeyi oluşturmak için **Tamam**'a tıklayın.
 
 ::: moniker-end
 
@@ -70,11 +70,11 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir, ancak farklı bir ad yazabilirsiniz. Ayrıca, proje için farklı bir konum da yazabilirsiniz.
 
-1. Projeyi oluşturmak için **Tamam** ' ı tıklatın.
+1. Projeyi oluşturmak için **Tamam**'a tıklayın.
 
-1. **Win32 uygulama Sihirbazı 'nı**doldurun. 
+1. **Win32 uygulama Sihirbazı 'nı**doldurun.
 
-1. **İleri**' ye tıklayın, ardından **konsol uygulamasının** seçili olduğundan emin olun ve **önceden derlenmiş üstbilgiler** kutusunun işaretini kaldırın. 
+1. **İleri**' ye tıklayın, ardından **konsol uygulamasının** seçili olduğundan emin olun ve **önceden derlenmiş üstbilgiler** kutusunun işaretini kaldırın.
 
 1. **Son**'a tıklayın.
 
@@ -96,7 +96,7 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. Dosyayı kaydedin.
 
-1. **Yapı** menüsünde **çözüm oluştur**' a tıklayın.
+1. **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
 
    **Çıkış** penceresi, derleme ilerlemesi hakkındaki bilgileri, örneğin, derleme günlüğünün konumunu ve yapı durumunu gösteren bir iletiyi görüntüler.
 

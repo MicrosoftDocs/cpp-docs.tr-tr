@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MACRO directive
 ms.assetid: 89434f7c-bc2c-4e91-8940-fe2db8785233
-ms.openlocfilehash: 23c6b0aefae856da449da574669e8475122c7556
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 8eb0afdf73270c3e741f43b2e1fba02fe965846c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75312956"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076145"
 ---
 # <a name="macro"></a>MACRO
 
@@ -19,7 +19,7 @@ Bir makro bloğunu *ad* olarak işaretler ve Makro çağrıldığında geçirile
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **makro** ⟦*parametresini* Adlandır ⟦ **: REQ** | : =*varsayılan* | *args* **: vararg**⟧... ⟧\
+> *name***makro** ⟦*parametresini* Adlandır ⟦ **: REQ** | : =*varsayılan* | *args* **: vararg**⟧... ⟧\
 > *deyimler*\
 ⟦**Goto** :*macrolabelıd*⟧ \
 > ⟦**Exitd**⟧ \
@@ -35,4 +35,3 @@ Makro işlevi, çağırma ifadesine *değer* döndürür.
 [Goto (masa)](goto-masm.md)\
 [Enda](endm.md)\
 [MASMG BNF dilbilgisi](masm-bnf-grammar.md)
-

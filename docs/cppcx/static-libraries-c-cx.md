@@ -2,19 +2,18 @@
 title: Statik kitaplıklar (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: f62ef03cfdf2f424fd4a50c2e866d73b5bdce7fc
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 42c247650f778dcc9dbfa13d27cbb0244c0ebbc2
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302937"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077971"
 ---
 # <a name="static-libraries-ccx"></a>Statik kitaplıklar (C++/CX)
 
 Evrensel Windows Platformu (UWP) uygulamasında kullanılan statik bir kitaplık, STL türleri dahil olmak üzere ISO standardı C++ kodu ve ayrıca Windows çalışma zamanı uygulama platformundan hariç tutulan Win32 API 'lerine çağrılar içerebilir. Statik Kitaplık Windows Çalışma Zamanı bileşenleri kullanır ve belirli kısıtlamalara sahip Windows Çalışma Zamanı bileşenleri oluşturabilir.
 
 ## <a name="creating-static-libraries"></a>Statik kitaplıklar oluşturma
-
 
 Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sürümüne bağlı olarak farklılık gösterir. Sol üstteki sürüm seçicisine doğru sürüme sahip olduğunuzdan emin olun.
 
@@ -24,7 +23,7 @@ Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sür�
 
 1. **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda **dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **UWP**olarak ayarlayın. 
+1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **UWP**olarak ayarlayın.
 
 1. Filtre uygulanmış proje türleri listesinden **statik kitaplık (Evrensel Windows- C++/CX)** öğesini seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, projeye bir ad verin ve isterseniz proje konumunu belirtin.
 

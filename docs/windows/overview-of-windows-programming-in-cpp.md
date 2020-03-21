@@ -2,16 +2,16 @@
 title: C++'da Windows Programlamasına Genel Bakış
 ms.date: 09/17/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 96a03194059f59f57780bfd70cab3065d6a1aff0
-ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
+ms.openlocfilehash: cd95332721f51ed2d17c3205cba5f1456a1037b9
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71127188"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075493"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
-İle C++oluşturabileceğiniz çeşitli geniş Windows uygulamaları kategorileri vardır. Her birinin kendi programlama modeli ve Windows 'a özel kitaplıkları vardır, ancak C++ standart kitaplık ve üçüncü taraf C++ kitaplıkları bunlardan hiçbirinde kullanılabilir. 
+İle C++oluşturabileceğiniz çeşitli geniş Windows uygulamaları kategorileri vardır. Her birinin kendi programlama modeli ve Windows 'a özel kitaplıkları vardır, ancak C++ standart kitaplık ve üçüncü taraf C++ kitaplıkları bunlardan hiçbirinde kullanılabilir.
 
 Bu bölümde, Windows programları oluşturmak için Visual Studio ve MFC/ATL sarmalayıcı kitaplıklarının nasıl kullanılacağı açıklanmaktadır. Windows platformunun belgeleri için, bkz. [Windows belgeleri](/windows/index).
 
@@ -21,9 +21,9 @@ C++Konsol uygulamaları konsol penceresinde komut satırından çalışır ve ya
 
 ## <a name="native-desktop-client-applications"></a>Yerel Masaüstü istemci uygulamaları
 
-*Yerel Masaüstü istemci uygulaması* , işletim sistemine erişmek için C++ özgün yerel [Windows C API 'lerini veya bileşen nesne modeli (com) API 'lerini](/windows/win32/apiindex/windows-api-list) kullanan bir C veya pencereli uygulamadır. Bu API 'Ler çoğunlukla C içinde yazılır. Yerel masaüstü uygulaması oluşturmanın birden çok yolu vardır: İşletim sistemi olaylarını işleyen C stili bir ileti döngüsü kullanarak doğrudan Win32 API 'Leri kullanarak program yapabilirsiniz. Ya da, Win32 sarmalayan hafif bir nesne yönelimli C++ kitaplık olan Microsoft Foundation sınıfları (MFC) kullanarak program yapabilirsiniz. Hiçbir yaklaşım, Evrensel Windows Platformu (UWP) ile karşılaştırıldığında "modern" olarak kabul edilir, ancak her ikisi de tamamen desteklenmektedir ve dünyanın dört bir kısmında çalışan milyonlarca kod satırı vardır. Bir pencerede çalışan bir Win32 uygulaması, geliştiricinin bir Windows yordamı işlevi içinde Windows iletileriyle açık bir şekilde çalışmasını gerektirir. Ada karşın, bir Win32 uygulaması 32 bitlik (x86) veya 64 bit (x64) ikili olarak derlenebilir. Visual Studio IDE 'de, x86 ve Win32 terimleri eşanlamlı olarak anlamlıdır.
+*Yerel Masaüstü istemci uygulaması* , işletim sistemine erişmek için C++ özgün yerel [Windows C API 'lerini veya bileşen nesne modeli (com) API 'lerini](/windows/win32/apiindex/windows-api-list) kullanan bir C veya pencereli uygulamadır. Bu API 'Ler çoğunlukla C içinde yazılır. Yerel bir masaüstü uygulaması oluşturmanın birden fazla yolu var: işletim sistemi olaylarını işleyen C stili bir ileti döngüsü kullanarak doğrudan Win32 API 'Lerini kullanmaya program gönderebilirsiniz. Ya da, Win32 sarmalayan *Microsoft Foundation Classes* hafif bir nesne yönelimli C++ kitaplık olan Microsoft Foundation sınıfları (MFC) kullanarak program yapabilirsiniz. Hiçbir yaklaşım, Evrensel Windows Platformu (UWP) ile karşılaştırıldığında "modern" olarak kabul edilir, ancak her ikisi de tamamen desteklenmektedir ve dünyanın dört bir kısmında çalışan milyonlarca kod satırı vardır. Bir pencerede çalışan bir Win32 uygulaması, geliştiricinin bir Windows yordamı işlevi içinde Windows iletileriyle açık bir şekilde çalışmasını gerektirir. Ada karşın, bir Win32 uygulaması 32 bitlik (x86) veya 64 bit (x64) ikili olarak derlenebilir. Visual Studio IDE 'de, x86 ve Win32 terimleri eşanlamlı olarak anlamlıdır.
 
-Geleneksel Windows C++ programlama ile çalışmaya başlamak için bkz. [Win32 ve C++ile çalışmaya ](/windows/win32/LearnWin32/learn-to-program-for-windows)başlama. Win32 hakkında biraz bilgi sahibi olduktan sonra [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)hakkında daha fazla bilgi edinmek daha kolay olacaktır. Gelişmiş grafikler kullanan geleneksel C++ masaüstü uygulamasına bir örnek için bkz [. Tepo: C++ Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)için uygulamalar geliştirme.
+Geleneksel Windows C++ programlama ile çalışmaya başlamak için bkz. [Win32 ve C++ile çalışmaya ](/windows/win32/LearnWin32/learn-to-program-for-windows)başlama. Win32 hakkında biraz bilgi sahibi olduktan sonra [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)hakkında daha fazla bilgi edinmek daha kolay olacaktır. Gelişmiş grafikler kullanan geleneksel C++ masaüstü uygulamalarına bir örnek için bkz. [Windows için uygulama geliştirme C++ ](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
 ### <a name="c-or-net"></a>C++veya .NET?
 
@@ -53,7 +53,7 @@ Windows 10 ' da, mevcut masaüstü uygulamanızı veya COM nesnesini UWP uygulam
 
 Visual Studio 2017 sürüm 15,4 ve üzeri, mevcut masaüstü uygulamanızı paketleme işini önemli ölçüde basitleştirmek için bir Windows uygulama paketi projesi oluşturmanızı sağlar. Masaüstü uygulamanızın kullanabileceği kayıt defteri çağrıları veya API 'Leri için birkaç kısıtlama geçerlidir. Ancak çoğu durumda, bir uygulama paketinde çalışırken benzer işlevlere ulaşmak için alternatif kod yolları oluşturabilirsiniz. Daha fazla bilgi için bkz. [Masaüstü Köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
-## <a name="games"></a>Oynayabilir
+## <a name="games"></a>Oyunlar
 
 DirectX oyunları PC veya Xbox üzerinde çalışabilir. Daha fazla bilgi için bkz. [DirectX grafik ve oyun](/windows/win32/directx).
 
@@ -77,13 +77,13 @@ Visual Studio, C çalışma zamanı kitaplığı (CRT), C++ standart kitaplığ�
 
 Microsoft kitaplıkları şunları içerir:
 
-- Microsoft Foundation Sınıfları (MFC): Özellik düğmeleri, liste kutuları, ağaç görünümleri ve diğer denetimler için zengin Kullanıcı arabirimleri olan geleneksel Windows programları (özellikle kurumsal uygulamalar) oluşturmaya yönelik nesne odaklı bir çerçeve. Daha fazla bilgi için bkz. [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md).
+- Microsoft Foundation Classes (MFC): Geleneksel Windows programları ve özellikle de düğmeler, liste kutuları, ağaç görünümleri ve diğer denetimleri barındıran zengin kullanıcı arabirimlerine sahip kurumsal uygulamalar oluşturmaya yönelik nesne yönelimli bir çerçevedir. Daha fazla bilgi için bkz. [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md).
 
-- Etkin Şablon kitaplığı (ATL): COM bileşenleri oluşturmak için güçlü bir yardımcı kitaplığı. Daha fazla bilgi için bkz. [atl com Masaüstü bileşenleri](../atl/atl-com-desktop-components.md).
+- Etkin Şablon Kitaplığı (ATL): COM bileşenleri oluşturmak için güçlü bir yardımcı kitaplık. Daha fazla bilgi için bkz. [atl com Masaüstü bileşenleri](../atl/atl-com-desktop-components.md).
 
-- C++AMP (C++ hızlandırılmış geniş paralellik): GPU üzerinde yüksek performanslı genel hesaplama çalışmasına izin veren bir kitaplık. Daha fazla bilgi için bkz [ C++ . ampC++ (hızlandırılmış geniş paralellik)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md).
+- C++ AMP (C++ Accelerated Massive Parallelism): GPU üzerinde yüksek performanslı genel hesaplama işlerini etkinleştiren bir kitaplık. Daha fazla bilgi için bkz [ C++ . ampC++ (hızlandırılmış geniş paralellik)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md).
 
-- Eşzamanlılık Çalışma Zamanı: Çoklu ve çok çekirdekli cihazlar için paralel ve zaman uyumsuz programlama çalışmasını kolaylaştıran bir kitaplık. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
+- Eşzamanlılık Çalışma Zamanı: Birden fazla çekirdekli ve çok çekirdekli cihazlar için paralel ve zaman uyumsuz programlama işini basitleştiren bir kitaplık. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
 
 Birçok Windows programlama senaryosunda ayrıca, Windows işletim sistemi bileşenlerine erişimi etkinleştiren başlık dosyalarını içeren Windows SDK gerekir. Varsayılan olarak, Visual Studio Windows SDK, Evrensel Windows uygulamalarının geliştirilmesini sağlayan C++ masaüstü iş yükünün bir bileşeni olarak yüklenir. UWP uygulamaları geliştirmek için Windows SDK Windows 10 sürümü gerekir. Bilgi için bkz. [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk). (Windows 'un önceki sürümleri için Windows SDK 'Ları hakkında daha fazla bilgi için bkz. [Windows SDK Arşivi](https://developer.microsoft.com/windows/downloads/sdk-archive)).
 
@@ -98,8 +98,8 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 ## <a name="in-this-section"></a>Bu bölümde
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[İzlenecek yol: Standart Bir C++ Programı Oluşturma](walkthrough-creating-a-standard-cpp-program-cpp.md)| Bir Windows konsol uygulaması oluşturun.|
-|[İzlenecek yol: Windows Masaüstü Uygulaması Oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Yerel bir Windows masaüstü uygulaması oluşturun.|
+|[İzlenecek yol: standart C++ program oluşturma](walkthrough-creating-a-standard-cpp-program-cpp.md)| Bir Windows konsol uygulaması oluşturun.|
+|[İzlenecek yol: Windows Masaüstü Uygulamaları Oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Yerel bir Windows masaüstü uygulaması oluşturun.|
 |[Windows Masaüstü Sihirbazı](windows-desktop-wizard.md)|Yeni Windows projeleri oluşturmak için Sihirbazı kullanın.|
 |[Etkin Şablon Kitaplığı (ATL)](../atl/atl-com-desktop-components.md)|' De C++com bileşenleri oluşturmak için ATL kitaplığını kullanın.|
 |[Microsoft Foundation Sınıfları (MFC)](../mfc/mfc-desktop-applications.md)|İletişim kutuları ve denetimlerle büyük veya küçük Windows uygulamaları oluşturmak için MFC 'yi kullanma|
@@ -107,7 +107,7 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 |[Veri Erişimi](../data/data-access-in-cpp.md)| OLE DB ve ODBC|
 |[Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)|Windows üzerinde çeşitli dize türleri.|
 |[DirectX Kullanarak Oyun Oluşturmak için Kaynaklar](resources-for-creating-a-game-using-directx.md)
-|[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK|
+|[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK’sı|
 |[Kaynak Dosyalarıyla Çalışma](working-with-resource-files.md)|Bir masaüstü uygulamasına görüntü, simge, dize tablosu ve diğer kaynakları ekleme.|
 |[DirectX (C++) kullanarak oyun oluşturmak için kaynaklar](resources-for-creating-a-game-using-directx.md)|İçindeki C++oyunları oluşturmak için içerik bağlantıları.|
 |[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK kullanarak derlemek için projenizi ayarlama adımlarını içerir.|

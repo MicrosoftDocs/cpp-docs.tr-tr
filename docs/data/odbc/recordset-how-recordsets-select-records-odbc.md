@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder'
+title: 'Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
 - recordsets, selecting records
@@ -9,100 +9,98 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-ms.openlocfilehash: 41542e3e11d304bd9ad8b81c0a1b9c6504e156a7
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 4b446d69651cb3cf52bd6c15899d85ed76b319da
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707895"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079807"
 ---
-# <a name="recordset-how-recordsets-select-records-odbc"></a>Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder
+# <a name="recordset-how-recordsets-select-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konu şunları açıklar:
+Bu konuda aşağıdakiler açıklanmaktadır:
 
-- [Rolünüz ve kayıt seçme içinde seçeneklerinizi](#_core_your_options_in_selecting_records).
+- [Rolünüz ve kayıt seçerken seçenekleriniz](#_core_your_options_in_selecting_records).
 
-- [Bir kayıt kümesi nasıl kendi SQL deyimini oluşturan ve kayıtları seçer](#_core_how_a_recordset_constructs_its_sql_statement).
+- [Bir kayıt KÜMESI SQL Ifadesini nasıl oluşturur ve kayıtları seçer](#_core_how_a_recordset_constructs_its_sql_statement).
 
-- [Seçimi özelleştirmek için yapabilecekleriniz](#_core_customizing_the_selection).
+- [Seçimi özelleştirmek için](#_core_customizing_the_selection)yapabilecekleriniz.
 
-Kayıt kümeleri kayıtları bir veri kaynağına ODBC sürücüsü aracılığıyla bir sürücü için SQL deyimleri göndererek seçin. Gönderilen SQL tasarlama ve açın, kayıt kümesi sınıfı üzerinde bağlıdır.
+Kayıt kümeleri, sürücüye SQL deyimleri göndererek bir ODBC sürücüsü aracılığıyla bir veri kaynağındaki kayıtları seçer. Gönderilen SQL, kayıt kümesi sınıfınızı nasıl tasarlayacağınızı ve açdığınıza bağlıdır.
 
-##  <a name="_core_your_options_in_selecting_records"></a> Kayıtları seçme içinde seçenekleri
+##  <a name="your-options-in-selecting-records"></a><a name="_core_your_options_in_selecting_records"></a>Kayıtları seçerken seçenekleriniz
 
-Aşağıdaki tablo, kayıt seçme içinde seçeneklerinizi gösterir.
+Aşağıdaki tabloda kayıtları seçme seçenekleriniz gösterilmektedir.
 
-### <a name="how-and-when-you-can-affect-a-recordset"></a>Nasıl ve ne zaman bir kayıt kümesi etkileyebilir.
+### <a name="how-and-when-you-can-affect-a-recordset"></a>Bir kayıt kümesini nasıl ve ne zaman etkileyebilirsiniz
 
-|Olduğunda,|Şunları yapabilirsiniz|
+|Bir dosyaya|Şunları yapabilirsiniz|
 |--------------|-------------|
-|Kayıt kümesi sınıfınızı bildirmek **sınıfı Ekle** Sihirbazı|Seçim yapılacak tablo belirtin.<br /><br /> Hangi sütunların dahil edileceğini belirtin.<br /><br /> Bkz: [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).|
-|Kayıt kümesi sınıf uygulamanızı tamamlayın|Üye işlevleri gibi geçersiz kılma `OnSetOptions` (Gelişmiş) uygulamaya özgü seçenekleri ayarlayın ya da varsayılan ayarları değiştirmek için. Parametreli bir kayıt kümesi istiyorsanız parametre veri üyeleri belirtin.|
-|Kayıt kümesi nesnesi oluşturun (çağırmadan önce `Open`)|Kullanılmak üzere (büyük olasılıkla bileşik) arama koşulu belirtin bir **burada** kayıtları süzer yan tümcesi. Bkz: [kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).<br /><br /> Bir sıralama düzeni kullanmak için belirtin bir **ORDER BY** kayıtları sıralar yan tümcesi. Bkz: [kayıt kümesi: Kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).<br /><br /> Sınıfa eklediğiniz herhangi bir parametre için parametre değerlerini belirtin. Bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).|
+|**Sınıf ekleme** Sihirbazı ile kayıt kümesi sınıfınızı bildirin|Seçilecek tabloyu belirtin.<br /><br /> Hangi sütunların ekleneceğini belirtin.<br /><br /> Bkz. [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).|
+|Kayıt kümesi sınıfı uygulamanızı doldurun|Uygulamaya özgü seçenekleri ayarlamak veya Varsayılanları değiştirmek için `OnSetOptions` (Gelişmiş) gibi üye işlevlerini geçersiz kılın. Parametreli bir kayıt kümesi istiyorsanız parametre veri üyelerini belirtin.|
+|Bir kayıt kümesi nesnesi oluşturun (`Open`çağırmadan önce)|Kayıtları filtreleyen **WHERE** yan tümcesinde kullanılmak üzere bir arama koşulu (Belki de bileşik) belirtin. Bkz. [kayıt kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).<br /><br /> Kayıtları sıralayan **order by** yan tümcesinde kullanılmak üzere bir sıralama düzeni belirtin. Bkz. [kayıt kümesi: kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).<br /><br /> Sınıfa eklediğiniz parametrelerin parametre değerlerini belirtin. Bkz. [kayıt kümesi: bir kayıt kümesini parametrize (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).|
 
-| Çağırarak kümesinin sorgusu `Open`| Sihirbaz tarafından ayarlanmış varsayılan SQL dizesi değiştirilecek özel bir SQL dizesi belirtin. Bkz: [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) içinde *sınıf kitaplığı başvurusu* ve [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md). |
+| `Open`çağırarak kayıt kümesinin sorgusunu çalıştırın | Sihirbaz tarafından ayarlanan varsayılan SQL dizesini değiştirmek için özel bir SQL dizesi belirtin. Bkz. [CRecordset:: Open](../../mfc/reference/crecordset-class.md#open) *sınıf kitaplığı başvurusu* ve [SQL: kayıt kümenizin sql deyiminizi özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md). |
 
-| Çağrı `Requery` kayıt veri kaynağındaki en son değerlerle sorgulayacak | Yeni parametreleri, filtre veya sıralama belirtin. Bkz: [kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md). |
+| Veri kaynağındaki en son değerlerle kayıt kümesini yeniden sorgulamak için `Requery` çağırın | Yeni parametreler, filtre veya sıralama belirtin. Bkz. [kayıt kümesi: bir kayıt kümesini yeniden sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md). |
 
-##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> Bir kayıt kümesi, SQL deyimini nasıl oluşturur
+##  <a name="how-a-recordset-constructs-its-sql-statement"></a><a name="_core_how_a_recordset_constructs_its_sql_statement"></a>Bir kayıt kümesi SQL Ifadesini nasıl oluşturur
 
-Kayıt kümesi nesnesinin çağırdığınızda [açık](../../mfc/reference/crecordset-class.md#open) üye işlevini `Open` bazılarını veya tümünü aşağıdaki içeriklerin kullanarak bir SQL deyimi oluşturur:
+Bir kayıt kümesi nesnesinin [Open](../../mfc/reference/crecordset-class.md#open) üye işlevini çağırdığınızda, `Open` aşağıdaki malzemeleri kullanarak bir SQL ifadesini oluşturur:
 
-- *LpszSQL* geçirilen `Open`. BOŞ değilse bu parametre özel SQL dizesi veya bir parçası olarak belirtir. Çerçeve dizeyi ayrıştırır. Bir SQL bir dize ise **seçin** deyimi veya bir ODBC **çağrı** deyim, framework dize kayıt kümenizin SQL deyimini kullanır. Bir SQL oluşturmak için sağlanan dize "Seçin" veya "{ÇAĞRISI" ile başlamıyorsa framework kullanan **FROM** yan tümcesi.
+- `Open`öğesine aktarılan *lpszSQL* parametresi. NULL değilse, bu parametre özel bir SQL dizesini veya bir kısmını belirtir. Çerçeve, dizeyi ayrıştırır. Dize bir SQL **Select** deyimidir veya bir ODBC **Call** deyimidir, çerçeve, dizeyi kayıt kümesinin SQL ifadesiyle kullanır. Dize "SELECT" veya "{CALL" ile başlamazsa, çerçeve bir SQL **from** yan tümcesi oluşturmak için verilen öğeleri kullanır.
 
-- Tarafından döndürülen dize [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql). Varsayılan olarak, bu sihirbazdaki kayıt kümesi için belirtilen tablo adıdır ancak ne işlevi döndürür değiştirebilirsiniz. Framework çağrıları `GetDefaultSQL` — dize "Seçin" veya "{ÇAĞRISI" ile başlamıyorsa, bu SQL dizesi oluşturmak için kullanılan bir tablo adı olduğu varsayılır.
+- [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql)tarafından döndürülen dize. Bu, varsayılan olarak, sihirbazda kayıt kümesi için belirttiğiniz tablonun adıdır, ancak işlevin ne geri döndüğünü de değiştirebilirsiniz. Çerçeve `GetDefaultSQL` çağırır — dize "SELECT" veya "{CALL" ile başlamaıyorsa, bir SQL dizesi oluşturmak için kullanılan tablo adı olduğu varsayılır.
 
+- Kayıt kümesinin, tablodaki belirli sütunlara bağlanacak olan alan veri üyeleri. Framework, kayıt sütunlarını bu üyelerin adreslerine bağlar ve bunları arabellekler olarak kullanarak bağlar. Framework, alan veri üyelerinin, kayıt kümesinin [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) veya [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye IŞLEVINDEKI [RFX](../../data/odbc/record-field-exchange-using-rfx.md) veya toplu RFX işlevi çağrılarından tablo sütunlarına bağıntısını belirler.
 
-- Belirli bir tablonun sütunlarını için bağlı olan alan veri üyeleri kümesi. Çerçeve kaydı sütunları arabellek olarak kullanarak, bu üyeler adreslerine bağlar. Alan veri üyeleri bağıntısını framework tablo sütunlarından belirler [RFX](../../data/odbc/record-field-exchange-using-rfx.md) veya Bulk RFX işlevi çağıran kümenizin [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) veya [DoBulkFieldExchange ](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevi.
+- [M_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) veri üyesinde bulunan, kayıt kümesi için [filtre](../../data/odbc/recordset-filtering-records-odbc.md) . Framework, bu dizeyi bir SQL **WHERE** yan tümcesi oluşturmak için kullanır.
 
-- [Filtre](../../data/odbc/recordset-filtering-records-odbc.md) varsa, kayıt kümesi için kapsanıyorsa [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) veri üyesi. Framework, bir SQL oluşturmak için bu dizeyi kullanır. **burada** yan tümcesi.
-
-- [Sıralama](../../data/odbc/recordset-sorting-records-odbc.md) herhangi biri, içerdiği durumlarda kayıt kümesi için sipariş [m_strSort](../../mfc/reference/crecordset-class.md#m_strsort) veri üyesi. Framework, bir SQL oluşturmak için bu dizeyi kullanır. **ORDER BY** yan tümcesi.
+- [M_strSort](../../mfc/reference/crecordset-class.md#m_strsort) veri üyesinde bulunan, kayıt kümesi için [sıralama](../../data/odbc/recordset-sorting-records-odbc.md) düzeni. Framework, bu dizeyi bir SQL **order by** yan tümcesi oluşturmak için kullanır.
 
    > [!TIP]
-   > SQL kullanmak için **GROUP BY** yan tümcesi (ve muhtemelen **HAVING** yan tümcesi), yan tümceleri, filtre dizesinin sonuna.
+   > SQL **Group By** yan tümcesini (ve muhtemelen **HAVING** yan tümcesini) kullanmak için, yan tümceleri filtre dizenizin sonuna ekleyin.
 
-- Tüm değerleri [parametre veri üyeleri](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) için sınıfı belirtin. Parametre değerleri yalnızca çağırmadan önce ayarladığınız `Open` veya `Requery`. Çerçeve parametre değerlerini bağlar "?" SQL dizesinde yer tutucular. Derleme zamanında yer tutucuları olan dize belirtin. Çalışma zamanında, geçirdiğiniz parametre değerine göre ayrıntıları framework doldurur.
+- Sınıf için belirttiğiniz tüm [parametre veri üyelerinin](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) değerleri. Yalnızca `Open` veya `Requery`çağırmadan önce parametre değerlerini ayarlarsınız. Çerçeve, parametre değerlerini SQL dizesindeki "?" yer tutucularına bağlar. Derleme zamanında, dizeyi yer tutucuları ile belirtirsiniz. Çalışma zamanında, çerçeve geçirdiğiniz parametre değerlerine göre ayrıntıları doldurur.
 
-`Open` bir SQL yapıları **seçin** bu maddelerden deyimi. Bkz: [seçimi özelleştirme](#_core_customizing_the_selection) framework malzemeleri nasıl kullandığı hakkında ayrıntılar için.
+`Open`, bu malzemeler arasından bir SQL **Select** açıklaması oluşturur. Framework 'ün malzemeleri nasıl kullandığını gösteren Ayrıntılar için bkz. [seçimi özelleştirme](#_core_customizing_the_selection) .
 
-Deyimi yapılandırılırken sonra `Open` ODBC Sürücü Yöneticisi (ve ODBC imleç kitaplığı bellekte ise), SQL gönderir gönderen ODBC sürücüsüne belirli DBMS için. Sürücü, veri kaynağında seçimi gerçekleştirmek için DBMS ile iletişim kurar ve ilk kayıt getirir. Çerçeve kaydı alan veri üyeleri kayıt kümesinin yükler.
+Bu ifadeyi oluşturduktan sonra, `Open` SQL 'i, belirli bir DBMS için ODBC sürücüsüne gönderen ODBC Sürücü Yöneticisi 'ne (ve bellekde ODBC Imleç kitaplığına) gönderir. Sürücü, veri kaynağında seçimi yürütmek için DBMS ile iletişim kurar ve ilk kaydı getirir. Çerçeve, kaydı kayıt kümesinin alan veri üyelerine yükler.
 
-Açmak için bu tekniklerin bir birleşimini kullanabilir [tabloları](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) ve temel bir sorgu oluşturmak için bir [birleştirme](../../data/odbc/recordset-performing-a-join-odbc.md) birden çok tablo. Ek özelleştirme ile çağırabilirsiniz [önceden tanımlanmış sorgular](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (saklı yordamlar), select tablo sütunları tasarım zamanında bilinmiyor ve [bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) kendilerine kayıt kümesi alanlarını veya diğer birçok gerçekleştirebilirsiniz Veri erişim görevleri Olamaz gerçekleştirmek kayıt kümeleri özelleştirerek görevler yine de gerçekleştirilebilir tarafından [ODBC API işlevlerini çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) veya doğrudan SQL deyimleri ile yürütme [CDatabase:: Executesql'den](../../mfc/reference/cdatabase-class.md#executesql).
+Bu tekniklerin bileşimini kullanarak [tabloları](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) açabilir ve birden çok tablonun [JOIN](../../data/odbc/recordset-performing-a-join-odbc.md) 'i temel alan bir sorgu oluşturabilirsiniz. Ek özelleştirme sayesinde, [önceden tanımlanmış sorguları](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (saklı yordamlar) çağırabilir, tasarım zamanında bilinmeyen tablo sütunlarını seçebilir ve bunları kayıt kümesi alanlarına [bağlayabilir](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) veya diğer veri erişimi görevlerinin çoğunu gerçekleştirebilirsiniz. Kayıt kümelerini özelleştirerek yerine getirebileceğiniz görevler, [ODBC API işlevleri çağırarak](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) veya doğrudan SQL deyimlerini [CDatabase:: ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql)ile yürütülerek gerçekleştirilebilir.
 
-##  <a name="_core_customizing_the_selection"></a> Seçimi özelleştirme
+##  <a name="customizing-the-selection"></a><a name="_core_customizing_the_selection"></a>Seçimi özelleştirme
 
-Bir filtre, sıralama düzeni veya parametreleri sağlamanın yanı sıra, kümenizin seçimi özelleştirmek için aşağıdaki eylemleri gerçekleştirebilirsiniz:
+Filtre, sıralama düzeni veya parametreler sağlamanın yanı sıra, kayıt kümenizin seçimini özelleştirmek için aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
-- Özel bir SQL dizesine geçmenizi *lpszSQL* çağırdığınızda [açık](../../mfc/reference/crecordset-class.md#open) kayıt kümesi için. Geçirdiğiniz her şeyi *lpsqSQL* ne üzerinde önceliklidir [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) üye işlevi döndürür.
+- Kayıt kümesi için [Açık](../../mfc/reference/crecordset-class.md#open) ' i çağırdığınızda, *lpszSQL* 'de özel bir SQL dizesi geçirin. *LpsqSQL* 'e geçirdiğiniz her şey, [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) üye işlevinin döndürdüğü kadar önceliklidir.
 
-   Daha fazla bilgi için [SQL: Kümenizin SQL deyimini (ODBC) özelleştirme](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md), türleri açıklayan SQL deyimleri (veya kısmi deyimleri) öğesine iletebileceğiniz `Open` ve framework bunlarla ne yapar.
+   Daha fazla bilgi için bkz. [SQL: kayıt KÜMENIZIN SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md), `Open` geçirebilmeniz IÇIN kullanabileceğiniz SQL deyimlerinin türlerini (veya kısmi deyimlerini) açıklar.
 
     > [!NOTE]
-    >  Geçirdiğiniz özel dize "Seçin" veya "{ÇAĞRISI" ile başlamıyorsa MFC tablo adı içerdiğini varsayar. Bu, sonraki madde işaretli öğesi için de geçerlidir.
+    >  Geçirdiğiniz özel dize "SELECT" veya "{CALL" ile başlamadıysanız, MFC bir tablo adı içerdiğini varsayar. Bu, bir sonraki madde işaretli öğe için de geçerlidir.
 
-- Sihirbaz, kayıt kümesinin Yazar dize alter `GetDefaultSQL` üye işlevi. Ne döndürür değiştirmek için işlevin kodunu düzenleyin. Varsayılan olarak, sihirbaz Yazar bir `GetDefaultSQL` tek bir tablo adı döndüren işlev.
+- Sihirbazın kayıt kümenizin `GetDefaultSQL` üye işlevinde yazdığı dizeyi değiştirin. İşlevin kodunu, döndürdüğü şeyi değiştirmek için düzenleyin. Varsayılan olarak, sihirbaz tek bir tablo adı döndüren bir `GetDefaultSQL` işlevi yazar.
 
-   Sahip olduğunuz `GetDefaultSQL` de geçirebilirsiniz öğeleri iade *lpszSQL* parametresi `Open`. Özel bir SQL dizesinde geçmeyin, *lpszSQL*, dize framework kullanan, `GetDefaultSQL` döndürür. En azından `GetDefaultSQL` tek bir tablo adı döndürmelidir. Ancak birden çok tablo adları, tam bir dönüş sağlayabilirsiniz **seçin** deyimi, bir ODBC **çağrı** deyimi ve benzeri. Öğesine iletebileceğiniz listesi için *lpszSQL* — veya `GetDefaultSQL` dönüş — bkz [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+   `Open`için *lpszSQL* parametresinde geçirebilmeniz gereken öğelerden herhangi birini `GetDefaultSQL` döndürebilir. *LpszSQL*'de özel bir SQL dizesi geçirmezseniz, çerçeve `GetDefaultSQL` döndüren dizeyi kullanır. En azından, `GetDefaultSQL` tek bir tablo adı döndürmelidir. Ancak birden çok tablo adı, tam **Select** EKSTRESI, ODBC **çağrı** ekstresi vb. döndürebilmenizi sağlayabilirsiniz. *LpszSQL* 'ye geçebileceğinize veya `GetDefaultSQL` Dönebileceğinize ilişkin bir liste için, bkz. [SQL: kayıt kümenizin sql deyiminizi özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-   İki veya daha fazla tablo birleşimi gerçekleştiriyorsanız, yeniden `GetDefaultSQL` SQL'de kullanılan tablo listesini özelleştirmek için **FROM** yan tümcesi. Daha fazla bilgi için [kayıt kümesi: Birleşim gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
+   İki veya daha fazla tablonun bir birleştirmesini gerçekleştiriyorsanız, SQL **from** yan tümcesinde kullanılan tablo listesini özelleştirmek için `GetDefaultSQL` yeniden yazın. Daha fazla bilgi için bkz. [kayıt kümesi: JOIN gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
 
+- Ek alan veri üyelerini, belki de çalışma zamanında veri kaynağınızın şeması hakkında elde ettiğiniz bilgilere bağlı olarak el ile bağlayın. Alan veri üyelerini, bu kayıt kümesi sınıfına, [RFX](../../data/odbc/record-field-exchange-using-rfx.md) veya toplu RFX işlev çağrılarını, [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) veya [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) üye işlevine ekler ve sınıf oluşturucusunda veri üyelerinin başlatmaları için çağırır. Daha fazla bilgi için bkz. [kayıt kümesi: dinamik olarak veri sütunlarını bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 
-- Ek alan veri üyeleri, belki de elde şeması hakkında bilgi veri kaynağınızın çalışma zamanında göre el ile bağlayın. Kayıt kümesi sınıfı için alan veri üyeleri ekleme [RFX](../../data/odbc/record-field-exchange-using-rfx.md) veya Bulk RFX işlevi çağıran bunların [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) veya [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) üye işlevi, ve veri üyeleri sınıf oluşturucu başlatmalar. Daha fazla bilgi için [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
+- Uygulamaya özgü seçenekleri ayarlamak veya Varsayılanları geçersiz kılmak için `OnSetOptions`gibi kayıt kümesi üye işlevlerini geçersiz kılın.
 
-- Kayıt kümesi üye işlevleri gibi geçersiz kılma `OnSetOptions`, uygulamaya özgü seçenekleri ayarlayın veya Varsayılanları geçersiz kılmak için.
-
-Kayıt üzerinde karmaşık bir SQL deyimi temel almasını istiyorsanız, bu özelleştirme bileşimi kullanmanız gerekir. Örneğin, belki de SQL yan tümceler kullanmak istediğiniz ve anahtar sözcükleri kayıt kümeleri veya belki de tarafından doğrudan desteklenmeyen birden fazla tabloyu katıldığınız.
+Kayıt kümesini karmaşık bir SQL deyimindeki temel almak istiyorsanız, bu özelleştirme tekniklerinin bir birleşimini kullanmanız gerekir. Örneğin, büyük olasılıkla, kayıt kümeleri tarafından doğrudan desteklenmeyen SQL yan tümceleri ve anahtar sözcükleri kullanmak istiyor olabilirsiniz veya belki birden çok tabloyu birleştiriyorsanız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
+[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
 [ODBC Temelleri](../../data/odbc/odbc-basics.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
-[Kayıt kümesi: Kayıtları Kilitleme (OBDC)](../../data/odbc/recordset-locking-records-odbc.md)
+[Kayıt Kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

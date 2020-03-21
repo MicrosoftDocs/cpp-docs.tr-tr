@@ -2,12 +2,12 @@
 title: Range-based for Deyimi (C++)
 ms.date: 11/04/2016
 ms.assetid: 5750ba1d-ba48-4236-a923-e32de8345c2d
-ms.openlocfilehash: 1cbdb4e1636f471c26f6742b9e8686a332ed845f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af9811fd707d4dbc28158dba3b6b3fbfcc43e4fe
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244150"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077179"
 ---
 # <a name="range-based-for-statement-c"></a>Range-based for Deyimi (C++)
 
@@ -22,11 +22,11 @@ for ( for-range-declaration : expression )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aralık tabanlı kullanın **için** "yinelemek herhangi bir şey olarak tanımlanan bir aralığı" ile yürütülmesi gereken döngüler oluşturmak için — örneğin, `std::vector`, tüm diğer C++ Standart Kitaplığı dizisi aralığı veya tarafından tanımlanan bir `begin()` ve `end()`. Bölümünde bildirilen ad `for-range-declaration` için yereldir **için** deyimi ve içinde yeniden bildirilemez `expression` veya `statement`. Unutmayın [otomatik](../cpp/auto-cpp.md) anahtar sözcüğünün tercih `for-range-declaration` deyiminin bölümü.
+Aralık tabanlı **for** ifadesini kullanarak, tekrarlayabilmeniz gereken herhangi bir şey olarak tanımlanan bir "Aralık" aracılığıyla yürütülmesi gereken döngüler oluşturun — örneğin, `std::vector`veya aralığı bir `begin()` ve `end()`tarafından tanımlanan herhangi bir C++ standart kitaplık sırası. `for-range-declaration` bölümünde belirtilen ad, **for** deyimindeki yereldir ve `expression` veya `statement`içinde yeniden bildirilemez. [Otomatik](../cpp/auto-cpp.md) anahtar sözcüğünün deyimin `for-range-declaration` bölümünde tercih edildiğini unutmayın.
 
-**Yeni Visual Studio 2017'de:**  Aralık tabanlı const_iterator ve end() aynı türe ait nesneleri iade döngüler artık gereksinim için. Bu gibi aralıkları V3 teklife tanımlanan aralıkları tarafından kullanılan bir sentinel nesneyi döndürmek end() sağlar. Daha fazla bilgi için bkz [Genelleştiriliyor aralık tabanlı For döngüsü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) ve [aralığı v3 kitaplığı github'da](https://github.com/ericniebler/range-v3).
+**Visual Studio 2017 ' de yeni:**  Aralık tabanlı for döngüleri artık Begin () ve End () öğesinin aynı türdeki nesneleri döndürmesini gerektirmez. Bu, End () ' in, Ranges-v3 teklifinde tanımlandığı şekilde aralıklar tarafından kullanılmak gibi bir Sentinel nesnesi döndürmesini sağlar. Daha fazla bilgi için bkz. [Aralık tabanlı for döngüsünü](https://wg21.link/p0184r0) ve [GitHub 'daki Range-v3 kitaplığını](https://github.com/ericniebler/range-v3)Genelleştirme.
 
-Bu kod aralık tabanlı nasıl kullanılacağını gösterir. **için** bir dizi ve vektör aracılığıyla yineleme yapmak için:
+Bu kod, bir dizi ve vektör aracılığıyla yinelemek **için Aralık tabanlı döngüleri nasıl** kullanacağınızı gösterir:
 
 ```cpp
 // range-based-for.cpp
@@ -83,7 +83,7 @@ int main()
 }
 ```
 
-Çıktı bu şekildedir:
+Çıktı şöyledir:
 
 ```Output
 1 2 3 4 5 6 7 8 9 10
@@ -96,9 +96,9 @@ end of integer array test
 end of vector test
 ```
 
-Aralık tabanlı **için** döngüyü sonlandırır içinde bunlardan biri `statement` yürütülür: bir [sonu](../cpp/break-statement-cpp.md), [dönüş](../cpp/return-statement-cpp.md), veya [goto](../cpp/goto-statement-cpp.md) etiketli bir için Aralık tabanlı dışında'bir deyim **için** döngü. A [devam](../cpp/continue-statement-cpp.md) aralık tabanlı deyiminde **için** döngü yalnızca geçerli yinelemeyi sonlandırır.
+Aralık temelli bir **for** döngüsü `statement` yürütüldüğünde, bir Aralık tabanlı for döngüsü sona erer: Aralık tabanlı **for** döngüsü dışında etiketli bir ifadeye bir [Break](../cpp/break-statement-cpp.md), [Return](../cpp/return-statement-cpp.md)veya [goto](../cpp/goto-statement-cpp.md) . Aralık temelli bir **for** döngüsünde [Continue](../cpp/continue-statement-cpp.md) deyimleri yalnızca geçerli yinelemeyi sonlandırır.
 
-Bu bilgiler hakkında aralık tabanlı aklınızda **için**:
+Aralık tabanlı hakkında şu olguları göz önünde bulundurun **:**
 
 - Dizileri otomatik olarak tanır.
 

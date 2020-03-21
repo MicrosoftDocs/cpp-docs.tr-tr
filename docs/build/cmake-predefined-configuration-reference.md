@@ -4,12 +4,12 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: f7a8594fb4cdedd4a1f5640914155ccd1eacdc14
-ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
+ms.openlocfilehash: 296977a08a869b1da2ed8ca292fc39e0df6324b4
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79509438"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078759"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış derleme yapılandırması
 
@@ -34,7 +34,6 @@ CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasınd
 - MinGW sürümü
 
 Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *Cmakesettings. JSON* dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için bkz. [Cmakesettings Reference](cmakesettings-reference.md).
-
 
 ## <a name="linux-predefined-build-configurations"></a>Linux önceden tanımlanmış derleme yapılandırması:
 
@@ -381,7 +380,6 @@ CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasınd
 - Clang
 
 Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki CMakeSettings. JSON dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz.
-
 
 ```json
 {

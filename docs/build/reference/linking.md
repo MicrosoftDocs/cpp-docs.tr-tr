@@ -2,68 +2,67 @@
 title: MSVC bağlayıcı başvurusu
 ms.date: 12/10/2018
 ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
-ms.openlocfilehash: 3a9eebef0a264b0131311b5ca96011a4d56264a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d46874b5eaff889834df284ba90e6c6f196d8d66
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176635"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079508"
 ---
 # <a name="linking"></a>Bağlama
 
-Bir C++ projesinde *bağlama* derleyici kaynak kodu (*.obj) nesne dosyalarına hazırladığı sonra adım gerçekleştirilir. Bağlayıcı (link.exe) nesne dosyalarına tek bir yürütülebilir dosya birleştirir. 
+Bir C++ projede, derleyici kaynak kodu nesne dosyalarına (*. obj) derledikten sonra *bağlama* adımı gerçekleştirilir. Bağlayıcı (LINK. exe) nesne dosyalarını tek bir yürütülebilir dosyada birleştirir.
 
-Bağlayıcı seçenekleri içinde veya Visual Studio dışında ayarlayabilirsiniz. Visual Studio içinde bağlayıcı Seçenekleri'nde proje düğümüne sağ tıklayarak erişim **Çözüm Gezgini** seçip **özellikleri** özellik sayfaları görüntülemek için. Seçin **bağlayıcı** düğümünü genişletin ve tüm seçenekleri görmek için sol bölmedeki. 
-
+Bağlayıcı seçenekleri, Visual Studio 'nun içinde veya dışında ayarlanabilir. Visual Studio 'da, bağlayıcı seçeneklerine **Çözüm Gezgini** ' de bir proje düğümüne sağ tıklayıp **Özellikler** ' i seçerek özellik sayfalarını görüntüleyin. Düğümü genişletmek ve tüm seçenekleri görmek için sol bölmedeki **bağlayıcı** ' ı seçin.
 
 ## <a name="linker-command-line-syntax"></a>Bağlayıcı komut satırı sözdizimi
 
-Visual Studio dışında bağlantı çalıştırdığınızda Giriş bir veya daha fazla şekilde belirtebilirsiniz:
+BAĞLANTıYı Visual Studio dışında çalıştırdığınızda, girişi bir veya daha fazla şekilde belirtebilirsiniz:
 
 - Komut satırında:
 
 - Komut dosyalarını kullanma
 
-- Ortam değişkenleri
+- Ortam değişkenlerinde
 
-İlk işlem seçeneklerinin bağlantı seçenekleri komut satırında belirtilen bunlar sırada ve komut dosyaları tarafından izlenen bağlantı ortam değişkeninde belirtilen. Bir seçenek farklı bağımsız değişkenler yinelenirse işlediği son olaydan önceliklidir.
+BAĞLANTı ortamı değişkeninde belirtilen ilk işlem seçeneklerini BAĞLAYıN, ardından Seçenekler, komut satırında ve komut dosyalarında belirtildikleri sırayla belirlenir. Bir seçenek farklı bağımsız değişkenlerle yinelenirse, işlenen son bir öncelik alır.
 
-Seçenekler, tüm derleme için geçerlidir; belirli bir giriş dosyaları için seçenekleri uygulanabilir.
+Tüm derleme için seçenekler geçerlidir; belirli giriş dosyalarına hiçbir seçenek uygulanamaz.
 
-BAĞLANTI çalıştırılacak. EXE, aşağıdaki komut söz dizimini kullanın:
+BAĞLANTıSıNı çalıştırmak için. EXE, aşağıdaki komut sözdizimini kullanın:
 
 ```
 LINK arguments
 ```
 
-`arguments` Seçenekleri ve dosya adları içerir ve herhangi bir sırada belirtilebilen. Seçenekler şunlardır: ilk işlenen, sonra da dosyaları. Bir veya daha fazla boşluk veya sekme bağımsız değişkenleri ayırmak için kullanın.
+`arguments` seçenekler ve dosya adları içerir ve herhangi bir sırada belirtilebilir. Seçenekler önce ve ardından dosyalar işlenir. Bağımsız değişkenleri ayırmak için bir veya daha fazla boşluk veya sekme kullanın.
 
 > [!NOTE]
->  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
+>  Bu aracı yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bunu bir sistem komut isteminden veya dosya Gezgini 'nden başlatamazsınız.
 
 ## <a name="command-line"></a>Komut satırı
 
-Komut satırında bir seçenek bir seçenek belirleyicisinden oluşur. bir tire (-) veya eğik çizgi (/) seçeneğinin adı tarafından izlenen. Seçenek adları kısaltılmış olamaz. Bazı seçenekler bir iki nokta (:) sonra belirtilen bir bağımsız değişken alan. Boşluk veya sekme bir seçenek belirtimi içinde dışında/Comment seçeneğinde alıntılanmış dize içinde izin verilir. Ondalık veya C dili gösterimi sayısal bağımsız değişkenleri belirtin. Seçenek adları ve anahtar sözcüğü veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir, ancak bağımsız değişken olarak tanımlayıcıları büyük küçük harf duyarlıdır.
+Komut satırında bir seçenek, bir seçenek belirticisinin, tire (-) veya eğik çizgi (/) ve ardından seçeneğin adı ile oluşur. Seçenek adları kısaltılabilir. Bazı seçenekler, iki nokta üst üste (:)) sonra belirtilen bir bağımsız değişken alır. Bir seçenek belirtiminde,/COMMENT seçeneğinde tırnak içine alınmış bir dize dışında boşluk veya sekmeye izin verilmez. Decimal veya C dili gösteriminde sayısal bağımsız değişkenler belirtin. Seçenek adları ve bunların anahtar sözcük veya dosya adı bağımsız değişkenleri büyük/küçük harfe duyarlıdır
 
-Bağlayıcı için bir dosya geçirmek için dosya adı bağlantı komutundan sonra komut satırında belirtin. Mutlak veya göreli bir yol ile dosya adını belirtin ve dosya adında joker karakterler kullanabilirsiniz. Nokta (.) ve dosya adı uzantısı atlarsanız, bağlantı .obj dosyası bulma amacıyla varsayar. BAĞLANTI eksikliği veya dosya adı uzantıları dosyaların içeriği hakkında varsayımlar yapmak kullanmaz; Dosya türü, inceleyerek belirler ve buna göre işler.
+Bağlayıcıya bir dosya geçirmek için, bağlantı komutundan sonra komut satırında dosya adını belirtin. Dosya adında mutlak veya göreli bir yol belirtebilirsiniz ve dosya adında joker karakter kullanabilirsiniz. Nokta (.) ve dosya adı uzantısını atlarsanız, bağlantı, dosyayı bulmak amacıyla. obj olarak varsayılır. BAĞLANTı, dosyaların içeriğiyle ilgili varsayımlar yapmak için dosya adı uzantıları veya bunların olmaması; dosyayı inceleyerek dosya türünü belirler ve uygun şekilde işler.
 
-Link.exe başarı durumunda (hatasız) sıfır döndürür.  Aksi takdirde bağlayıcı bağlantı durduruldu hata numarasını döndürür.  Örneğin, bağlayıcı LNK1104 oluşturursa, bağlayıcı 1104 döndürür.  Buna göre bir hatada bağlayıcı tarafından döndürülen en düşük hata sayısı 1000'dir.  128 dönüş değeri bir yapılandırma sorunu işletim sisteminde veya .config dosyasını temsil eder; Yükleyici link.exe ya da c2.dll yüklenmedi.
+LINK. exe başarılı (hata yok) için sıfır döndürüyor.  Aksi takdirde, bağlayıcı bağlantıyı durduran hata numarasını döndürür.  Örneğin, bağlayıcı LNK1104 oluşturursa bağlayıcı 1104 döndürür.  Buna uygun olarak, bağlayıcı tarafından bir hatada döndürülen en düşük hata numarası 1000 ' dir.  128 dönüş değeri, işletim sistemi ya da. config dosyası ile bir yapılandırma sorununu temsil eder; Yükleyici, LINK. exe veya C2. dll dosyasını yüklemedi.
 
 ## <a name="link-command-files"></a>LINK Komut Dosyaları
 
-Komut satırı bağımsız değişkenleri, bir komut dosyası biçiminde bağlantıya geçirebilirsiniz. Bağlayıcı için bir komut dosyası belirtmek için aşağıdaki sözdizimini kullanın:
+Komut satırı bağımsız değişkenlerini bir komut dosyası biçiminde bağlantı altına geçirebilirsiniz. Bağlayıcıya bir komut dosyası belirtmek için aşağıdaki sözdizimini kullanın:
 
-> **Bağlantı \@**  <em>commandfile</em>
+> **\@** <em>commandfile</em> 'ı bağla
 
-*Commandfile* bir metin dosyasının adıdır. Hiçbir boşluk veya sekme arasında izin at işareti (**\@**) ve dosya adı. Hiçbir varsayılan uzantı yoktur; herhangi bir uzantısına dahil olmak üzere tam dosya adı belirtmeniz gerekir. Joker karakterler kullanılamaz. Mutlak veya göreli bir yol ile dosya adını belirtebilirsiniz. BAĞLANTI, dosyayı aramak için bir ortam değişkeni kullanmaz.
+*Commandfile* , bir metin dosyasının adıdır. At işareti ( **\@** ) ve dosya adı arasında boşluk veya sekmeye izin verilmez. Varsayılan uzantı yoktur; herhangi bir uzantı dahil olmak üzere tam dosya adını belirtmeniz gerekir. Joker karakterler kullanılamaz. Dosya adıyla mutlak veya göreli bir yol belirtebilirsiniz. BAĞLANTı, dosyayı aramak için bir ortam değişkeni kullanmaz.
 
-Komut dosyasında bağımsız değişkenleri tarafından boşluk veya sekme (komut satırında gibi) ayrılabilir ve yeni satır karakterleri.
+Komut dosyasında, bağımsız değişkenler boşluklarla veya sekmelerle (komut satırında olduğu gibi) ve yeni satır karakterlerine göre ayrılabilir.
 
-Komut satırının bir kısmını veya tamamını bir komut dosyasında belirtebilirsiniz. Birden fazla komut dosyasında bir LINK komutunu kullanabilirsiniz. Komut satırında o konumda belirtildi alacağı bağlantı komut dosyası girişi kabul eder. Komut dosyaları iç içe olamaz. BAĞLANTI yankılayan komut dosyalarının içeriğini sürece [/nologo](nologo-suppress-startup-banner-linker.md) seçeneği belirtildi.
+Komut satırının tamamını veya bir kısmını bir komut dosyasında belirtebilirsiniz. Bir bağlantı komutunda birden fazla komut dosyası kullanabilirsiniz. BAĞLANTı, komut dosyası girişini komut satırındaki bu konumda belirtilmiş gibi kabul eder. Komut dosyaları iç içe geçirilemez. [/Nologo](nologo-suppress-startup-banner-linker.md) seçeneği belirtilmediği takdirde, komut dosyalarının içeriğini YANKı altına bağlayın.
 
 ## <a name="example"></a>Örnek
 
-Bir DLL yapılandırmak için aşağıdaki komutu ayrı komut dosyaları nesne dosyaları ve kitaplıkları adlarını geçirir ve kullanır, dosya/EXPORTS seçeneğinin belirtimi için üçüncü komut:
+DLL oluşturmak için aşağıdaki komut, nesne dosyalarının ve kitaplıklarının adlarını ayrı komut dosyalarında geçirir ve/dışarı aktarmalar seçeneğinin belirtimi için bir üçüncü komut dosyası kullanır:
 
 ```cmd
 link /dll @objlist.txt @liblist.txt @exports.txt
@@ -71,19 +70,19 @@ link /dll @objlist.txt @liblist.txt @exports.txt
 
 ## <a name="link-environment-variables"></a>LINK Ortam Değişkenleri
 
-Bağlantı aracını aşağıdaki ortam değişkenleri kullanır:
+BAĞLANTı aracı aşağıdaki ortam değişkenlerini kullanır:
 
-- BAĞLANTI ve \_bağlantı\_, tanımlı değilse. BAĞLANTI araç seçenekleri ve bağlantı ortam değişkeninde tanımlanan değişkenleri ekler ve seçenekleri ekler ve bağımsız değişkenler tanımlanan \_bağlantı\_ işlemeden önce komut satırı bağımsız değişkenleri ortam değişkeni.
+- Tanımlandıysa ve bağlantı\_\_. BAĞLANTı aracı, bağlantı ortamı değişkeninde tanımlanan seçenekleri ve bağımsız değişkenleri ekler ve \_LINK\_ ortam değişkeninde tanımlanan seçenekleri ve bağımsız değişkenleri işlemeden önce komut satırı bağımsız değişkenlerine ekler.
 
-- LIB, tanımlı değilse. BAĞLANTI araçları, bir nesne, kitaplık veya komut satırında ya da belirtilen başka bir dosya ararken LIB yolunu kullanır [/BASE](base-base-address.md) seçeneği. Ayrıca bir nesnedeki adlı bir .pdb dosyası bulmak için LIB yolunu kullanır. LIB değişkeni, noktalı virgülle ayrılmış bir veya daha fazla yol özellikleri içerebilir. Bir yol, Visual C++ yüklemenizin \lib alt dizinine işaret etmelidir.
+- Eğer tanımlanmışsa LIB. BAĞLANTı araçları, komut satırında veya [/Base](base-base-address.md) seçeneğinde belirtilen bir nesne, kitaplık veya diğer bir dosyayı ararken LIB yolunu kullanır. Ayrıca, nesnesinde adlı bir. pdb dosyasını bulmak için LIB yolunu da kullanır. LıB değişkeni, noktalı virgülle ayrılmış bir veya daha fazla yol belirtimi içerebilir. Bir yol, görsel C++ yüklemenizin \lib alt dizinine işaret etmelidir.
 
-- YOL, aracın CVTRES çalıştırmaya gerek duymadığı ve bağlantının kendisi ile aynı dizinde dosya bulunamıyor. (Bağlantı CVTRES bir .res dosyası bağlamanız gerekir.) YOL, Visual C++ yüklemenizin \bin alt dizinine işaret etmelidir.
+- YOL, aracın CVTRES 'yi çalıştırması gerekiyorsa ve dosyayı bağlantı kendisiyle aynı dizinde bulamadıysanız. (Bağlantı, bir. res dosyasını bağlamak için CVTRES gerektirir.) YOL, görsel C++ yüklemenizin \bin alt dizinine işaret etmelidir.
 
-- TMP, OMF veya .res dosyaları bağlanırken bir dizin belirtmek için kullanılır.
+- TMP, OMF veya. res dosyalarını bağlarken bir dizin belirtmek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ oluşturma başvurusu](c-cpp-building-reference.md)
+[C++ ](c-cpp-building-reference.md)
 [MSVC bağlayıcı seçenekleri](linker-options.md)
-[modül-tanımlama (.def) dosyaları](module-definition-dot-def-files.md)
-[için bağlayıcı desteği Gecikmeli yüklenen DLL'ler](linker-support-for-delay-loaded-dlls.md)
+[modül tanım (. def) dosyaları](module-definition-dot-def-files.md)
+, [Gecikmeli yüklenen dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md) olan C/oluşturma başvurusu

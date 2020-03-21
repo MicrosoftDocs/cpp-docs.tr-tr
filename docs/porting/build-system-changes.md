@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-ms.openlocfilehash: afa9324d6074db72fd065cfa07c16349f86a615c
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: ce3eb9e51a103aa54b74c7b5b4f775eb402269f1
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626608"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076936"
 ---
 # <a name="vcbuild-vs-msbuild-build-system-changes-in-visual-studio-2010"></a>VCBuild ile MSBuild: Visual Studio 2010 'de sistem değişiklikleri oluşturma
 
@@ -63,7 +63,7 @@ Bir projeye dosya eklemek için **Çözüm Gezgini** kullanıldığında, filtre
 
 ## <a name="vc-directories-settings"></a>VC + + dizin ayarları
 
-Görsel C++ dizinler ayarları, [VC + + dizinleri Özellik sayfasında](../ide/vcpp-directories-property-page.md)belirtilir. Visual Studio 2008 ve önceki sürümlerde, dizin ayarları Kullanıcı başına uygulanır ve dışlanan dizinlerin listesi, *sysındat* dosyasında belirtilir. 
+Görsel C++ dizinler ayarları, [VC + + dizinleri Özellik sayfasında](../ide/vcpp-directories-property-page.md)belirtilir. Visual Studio 2008 ve önceki sürümlerde, dizin ayarları Kullanıcı başına uygulanır ve dışlanan dizinlerin listesi, *sysındat* dosyasında belirtilir.
 
 [Devenv/ResetSettings](/visualstudio/ide/reference/resetsettings-devenv-exe) komutunu komut satırında ÇALıŞTıRıRSANıZ, VC + + dizinleri ayarlarını değiştiremezsiniz. Ayrıca, **Araçlar** menüsünü açıp ayarları **Içeri aktar ve dışarı aktar**' a tıklayıp **tüm ayarları Sıfırla** seçeneğini belirlediğinizde ayarları değiştiremezsiniz.
 

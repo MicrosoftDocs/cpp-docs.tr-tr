@@ -8,12 +8,12 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-ms.openlocfilehash: da30d647947e98146cd89f255c2e05991c1be562
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: fbc8b108ea958f526156e7f81a75a2918a0a8903
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418449"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076154"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -202,7 +202,7 @@ void DoSomething(const std::string& input){...}
 void DoSomething(const std::string&& input){...}
 ```
 
-**Void** anahtar sözcüğü bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesinde **void** tek anahtar sözcüğüyle belirtilen bir işlev bağımsız değişken almaz. Listede başka bir yerde **void** türündeki bağımsız değişkenler hata üretir. Örneğin:
+**Void** anahtar sözcüğü bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesinde **void** tek anahtar sözcüğüyle belirtilen bir işlev bağımsız değişken almaz. Listede başka bir yerde **void** türündeki bağımsız değişkenler hata üretir. Örnek:
 
 ```cpp
 
@@ -261,7 +261,7 @@ Bir işlev gövdesi içinde belirtilen bir değişken *yerel bir değişken* vey
 
 Yerel C++ bir değişkende statik olarak tanımlanmış olabilir. Değişken yalnızca işlev gövdesinin içinde görünür, ancak işlevin tüm örnekleri için değişkenin tek bir kopyası vardır. Yerel statik nesneler `atexit` tarafından belirtilen sonlandırma sırasında yok edilir. Programın denetim akışı bildirimi atlamasından dolayı statik nesne oluşturulmazsa, söz konusu nesneyi yok etmek için girişimde bulunulmaz.
 
-##  <a name="type_deduction"></a>Dönüş türlerinde tür kesintisi (C++ 14)
+##  <a name="type-deduction-in-return-types-c14"></a><a name="type_deduction"></a>Dönüş türlerinde tür kesintisi (C++ 14)
 
 C++ 14 ' te, derleyicinin dönüş türünü, bir sondaki dönüş türü sağlamak zorunda kalmadan işlev gövdesinden çıkarması için **Otomatik** ' i kullanabilirsiniz. **Otomatik** olarak her zaman bir değer döndürür. Derleyiciye bir başvuru almasını söylemek için `auto&&` kullanın.
 
@@ -277,7 +277,7 @@ auto Add2(const Lhs& lhs, const Rhs& rhs)
 
 **Otomatik** olarak, kesintiler olan türün sabit durumunu korumadığını unutmayın. Dönüş değeri, bağımsız değişkenlerinin const durumunu veya başvurusunu korumak zorunda olan bir işlev iletmek için, **decltype** tür çıkarımı kurallarını kullanan ve tüm tür bilgilerini koruyan **decltype (Auto)** anahtar sözcüğünü kullanabilirsiniz. **decltype (Auto)** , sol tarafta sıradan bir dönüş değeri veya sondaki dönüş değeri olarak kullanılabilir.
 
-Aşağıdaki örnek ( [N3493](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3493.html)' dan koda bağlı olarak), işlev bağımsız değişkenlerinin, şablon örneklenene kadar bilinmeyen bir dönüş türünde tam olarak iletilmesini sağlamak için kullanılan **decltype (Auto)** öğesini gösterir.
+Aşağıdaki örnek ( [N3493](https://wg21.link/n3493)' dan koda bağlı olarak), işlev bağımsız değişkenlerinin, şablon örneklenene kadar bilinmeyen bir dönüş türünde tam olarak iletilmesini sağlamak için kullanılan **decltype (Auto)** öğesini gösterir.
 
 ```cpp
 template<typename F, typename Tuple = tuple<T...>, int... I>
@@ -295,7 +295,7 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-## <a name="multi_val"></a>Bir işlevden birden çok değer döndürme
+## <a name="returning-multiple-values-from-a-function"></a><a name="multi_val"></a>Bir işlevden birden çok değer döndürme
 
 Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
 

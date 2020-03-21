@@ -14,16 +14,16 @@ f1_keywords:
 - VC.Project.VCResourceCompilerTool.ResourceOutputFileName
 - VC.Project.VCResourceCompilerTool.NullTerminateStrings
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 916b6615d80000d601c909f771a1ec8f1b947927
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: 4f3688da4feb11f673e11372e5df086dc8c7e21a
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177345"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078287"
 ---
 # <a name="resources-property-page"></a>Kaynaklar özellik sayfası
 
-Yerel Windows Masaüstü programlarında, derleme, ikili dosyaya görüntü, dize tabloları ve *. res* dosyaları eklemek Için [kaynak derleyicisini (RC. exe)](/windows/win32/menurc/resource-compiler) çağırır. Bu özellik sayfasında gösterilen özellikler, C++ derleyiciye veya bağlayıcıya değil kaynak derleyiciye geçirilir. Burada listelenen özellikler ve RC komut satırı seçeneklerine nasıl eşlendikleri hakkında daha fazla bilgi için bkz. [RC kullanma (rc komut satırı)](/windows/win32/menurc/using-rc-the-rc-command-line-). **Kaynak** özelliği sayfalarına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md). Bu özelliklere programlı bir şekilde erişmek için <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>bkz.
+Yerel Windows Masaüstü programlarında, derleme, ikili dosyaya görüntü, dize tabloları ve *. res* dosyaları eklemek Için [kaynak derleyicisini (RC. exe)](/windows/win32/menurc/resource-compiler) çağırır. Bu özellik sayfasında gösterilen özellikler, C++ derleyiciye veya bağlayıcıya değil kaynak derleyiciye geçirilir. Burada listelenen özellikler ve RC komut satırı seçeneklerine nasıl eşlendikleri hakkında daha fazla bilgi için bkz. [RC kullanma (rc komut satırı)](/windows/win32/menurc/using-rc-the-rc-command-line-). **Kaynak** özelliği sayfalarına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md). Bu özelliklere programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
 
 C++/CLı uygulamalarında .net kaynaklarının özellikleri, [yönetilen kaynaklar özellik sayfasında](managed-resources-property-page.md)gösterilir.
 
@@ -35,7 +35,7 @@ Kaynak derleyicisi için bir veya daha fazla tanımlar belirtir. (/d [makro])
 
 Bir simgenin tanımlanunnu kaldır. p
 
-## <a name="culture"></a>Kültür
+## <a name="culture"></a>Culture (Kültür)
 
 Kaynaklarda kullanılan kültürü (ABD Ingilizcesi veya Italyanca gibi) listeler. (/l [sayı])
 
@@ -59,7 +59,7 @@ Başlangıç başlığının ve bilgi iletisinin görüntülenmesini engelle (/n
 
 Kaynak dosyasının adını belirtir (/fo [dosya])
 
-## <a name="null-terminate-strings"></a>Null sonlandırma dizeleri 
+## <a name="null-terminate-strings"></a>Null sonlandırma dizeleri
 
 Dize tablolarındaki tüm dizelere null değeri ekleyin. /n
 

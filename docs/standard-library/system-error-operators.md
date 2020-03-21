@@ -5,16 +5,16 @@ f1_keywords:
 - system_error/std::operator!=
 - system_error/std::operator==
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
-ms.openlocfilehash: 5cf6a455beb5654ef65f7411db4783a32c71d625
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 8631cae146a311f1890583900b564471d5a80958
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420731"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076254"
 ---
 # <a name="ltsystem_errorgt-operators"></a>&lt;system_error&gt; işleçleri
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -45,7 +45,7 @@ nesneler eşitse **true** ; nesneler eşitse **false** .
 
 Bu işlev `left.category() == right.category() && left.value() == right.value()`döndürür.
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -72,7 +72,7 @@ Eşitsizlik için test edilecek nesne.
 
 Bu işlev `!(left == right)`döndürür.
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işleç&lt;
 
 Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.
 
@@ -116,9 +116,9 @@ Karşılaştırılacak nesne.
 
 Bu işlev hata sıralamasını sınar.
 
-## <a name="op_ostream"></a>işleç&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_ostream"></a>işleç&lt;&lt;
 
 ```cpp
-template <class charT, class traits> 
+template <class charT, class traits>
     basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
 ```

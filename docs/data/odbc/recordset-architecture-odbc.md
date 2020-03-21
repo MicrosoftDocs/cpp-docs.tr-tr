@@ -13,18 +13,18 @@ helpviewer_keywords:
 - m_nParams data member
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-ms.openlocfilehash: 0edde640e0eebaf21216fc9ef37a8e31e2c1a210
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: e95250b5ef307eafdb334050fbace945355e0521
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707972"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079856"
 ---
 # <a name="recordset-architecture-odbc"></a>Kayıt kümesi: Mimari (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konu, bir kayıt kümesi nesnesi mimarisi oluşturan veri üyelerini açıklar:
+Bu konu, bir kayıt kümesi nesnesinin mimarisini oluşturan veri üyelerini açıklar:
 
 - [Alan veri üyeleri](#_core_field_data_members)
 
@@ -33,14 +33,14 @@ Bu konu, bir kayıt kümesi nesnesi mimarisi oluşturan veri üyelerini açıkla
 - [M_nFields ve m_nParams veri üyelerini kullanma](#_core_using_m_nfields_and_m_nparams)
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa, benzer bir mimaridir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen nesneler için geçerlidir. Toplu satır getirme uygulanmışsa, mimari benzerdir. Farkları anlamak için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="_core_a_sample_class"></a> Örnek sınıfı
+##  <a name="sample-class"></a><a name="_core_a_sample_class"></a>Örnek sınıf
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Kullandığınızda, [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** sınıfından türetilen bir kayıt kümesi sınıfı bildirmek için Sihirbazı `CRecordset`, sonuçta elde edilen sınıfında aşağıdaki basit gösterilen genel yapı sınıf:
+`CRecordset`türetilen bir kayıt kümesi sınıfını bildirmek için **sınıf ekleme** Sihirbazı ' ndan [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) 'nı kullandığınızda, elde edilen sınıf aşağıdaki basit sınıfta gösterilen genel yapıya sahiptir:
 
 ```cpp
 class CCourse : public CRecordset
@@ -54,48 +54,48 @@ public:
 };
 ```
 
-Sınıfın başında, bir dizi sihirbaz Yazar [alan veri üyeleri](#_core_field_data_members). Sınıfı oluşturduğunuzda, bir veya daha fazla alan veri üyeleri belirtmeniz gerekir. Sınıf parametreli, örnek olarak sınıftır (veri üyesi ile `m_strIDParam`), el ile eklemelisiniz [parametre veri üyeleri](#_core_parameter_data_members). Sihirbaz bir sınıfa parametreler eklemeyi desteklemez.
+Sınıfının başlangıcında, sihirbaz bir [alan veri üyeleri](#_core_field_data_members)kümesi yazar. Sınıfı oluşturduğunuzda bir veya daha fazla alan veri üyesi belirtmeniz gerekir. Sınıf parametreli ise, örnek sınıf olarak (`m_strIDParam`veri üyesiyle), [parametre veri üyelerini](#_core_parameter_data_members)el ile eklemeniz gerekir. Sihirbaz bir sınıfa parametre eklemeyi desteklemez.
 
-##  <a name="_core_field_data_members"></a> Alan veri üyeleri
+##  <a name="field-data-members"></a><a name="_core_field_data_members"></a>Alan veri üyeleri
 
-Kayıt kümesi sınıfının en önemli alan veri üyeleri üyesidir. Veri kaynağını seçin ve her sütun için söz konusu sütun için uygun veri türünün veri üyesi sınıfı içerir. Örneğin, [örnek sınıf](#_core_a_sample_class) bu başında gösterilen bölümüne sahip iki alan veri üyeleri, her iki tür `CString`adlı `m_strCourseID` ve `m_strCourseTitle`.
+Kayıt kümesi sınıfınızın en önemli üyeleri alan veri üyeleridir. Veri kaynağından seçtiğiniz her sütun için, sınıfı ilgili sütun için uygun veri türünün bir veri üyesini içerir. Örneğin, bu konunun başlangıcında gösterilen [örnek sınıfta](#_core_a_sample_class) , `m_strCourseID` ve `m_strCourseTitle`olarak adlandırılan `CString`türü iki alan veri üyesi vardır.
 
-Kayıt kümesi bir kayıt kümesi seçtiğinde geçerli kayıtla sütunlar çerçeve otomatik olarak bağlar. (sonra `Open` çağrısının ilk kaydı şu anda) nesne alan veri üyeleri için. Diğer bir deyişle, çerçeve uygun alan veri üyesi kayıt sütunu içeriğini depolamak için bir arabellek olarak kullanır.
+Kayıt kümesi bir kayıt kümesi seçtiğinde, çerçeve otomatik olarak geçerli kaydın sütunlarını (`Open` çağrısından sonra ilk kayıt geçerli olur) nesnenin alan veri üyelerine bağlar. Diğer bir deyişle, çerçeve bir kayıt sütununun içeriğini depolamak için uygun alan veri üyesini bir arabellek olarak kullanır.
 
-Kullanıcı için yeni bir kayıt kaydırma gibi framework alan veri üyeleri geçerli kayıt temsil etmek için kullanır. Framework önceki kaydın değerleri değiştirerek alan veri üyeleri yeniler. Alan veri üyeleri, yeni kayıtlar ekleme ve geçerli kaydı güncelleştirmek için de kullanılır. Bir kaydı güncelleştirme işleminin bir parçası, uygun alan veri üyesi veya üyeleri için değerlerin atayarak güncelleştirme değerlerini belirtin.
+Kullanıcı yeni bir kayda kaydığında, çerçeve geçerli kaydı temsil etmek için alan veri üyelerini kullanır. Çerçeve, önceki kaydın değerlerini değiştirerek alan veri üyelerini yeniler. Alan veri üyeleri, geçerli kaydı güncelleştirmek ve yeni kayıtlar eklemek için de kullanılır. Bir kaydı güncelleştirme sürecinin bir parçası olarak, değerleri doğrudan uygun alan veri üyesine veya üyelerine atayarak güncelleştirme değerlerini belirtirsiniz.
 
-##  <a name="_core_parameter_data_members"></a> Parametre veri üyeleri
+##  <a name="parameter-data-members"></a><a name="_core_parameter_data_members"></a>Parametre veri üyeleri
 
-Sınıf parametreli bir veya daha fazla parametre veri üyeleri yoktur. Parametreli bir sınıf, bir kayıt kümesi sorgu zamanında hesaplanan veya alınan bilgileri temel sağlar.
+Sınıf parametreli ise, bir veya daha fazla parametre veri üyesine sahiptir. Parametreli bir sınıf, çalışma zamanında alınan veya hesaplanan bilgilere bir kayıt kümesi sorgusu temellendirmenizi sağlar.
 
-Genellikle, parametre seçim, aşağıdaki örnekte olduğu gibi daraltmaya yardımcı olur. Temel [örnek sınıf](#_core_a_sample_class) bu konunun başında, kayıt kümesi nesnesi şu SQL ifadesini paralellikle çalışabilir:
+Genellikle parametresi, aşağıdaki örnekte olduğu gibi seçimi daraltmaya yardımcı olur. Bu konunun başındaki [örnek sınıfa](#_core_a_sample_class) bağlı olarak, kayıt kümesi NESNESI şu SQL ifadesini yürütebilir:
 
 ```sql
 SELECT CourseID, CourseTitle FROM Course WHERE CourseID = ?
 ```
 
-"?", Çalışma zamanında sağladığınız parametre değeri için bir yer tutucudur. Kayıt kümesi oluşturmak zaman ve kendi `m_strIDParam` kayıt kümesi için geçerli SQL deyimi veri üyesi MATH101 olur:
+"?", Çalışma zamanında sağladığınız parametre değeri için bir yer tutucudur. Kayıt kümesini oluşturup `m_strIDParam` veri üyesini MATH101 olarak ayarlarsanız, kayıt kümesi için etkin SQL açıklaması şu şekilde olur:
 
 ```sql
 SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101
 ```
 
-Parametre veri üyeleri tanımlayarak SQL dizesi parametrelerinde framework anlatın. Framework ODBC için yer tutucu değerleri yerine nereden alacağını bilmesini sağlayan parametreyi bağlar. Örnekte, yalnızca kaydı kurs tablosundan MATH101 CourseID sütun değeri ile elde edilen kayıt kümesi içerir. Bu kaydın tüm belirtilen sütun seçilmedi. Kadar parametreleri (ve yer tutucular) belirtebilirsiniz gerektiği.
+Parametre veri üyelerini tanımlayarak, çerçeveye SQL dizesindeki parametreler hakkında söylemiş olursunuz. Framework parametresini bağlar, bu da ODBC 'nin yer tutucu için değiştirilecek değerlerin nereden alınacağını bilmesini sağlar. Örnekte, elde edilen kayıt kümesi yalnızca Kurs tablosundan, değeri MATH101 olan bir CourseID sütunuyla kayıt içerir. Bu kaydın tüm belirtilen sütunları seçilidir. İhtiyaç duyduğunuz kadar fazla parametre (ve yer tutucu) belirtebilirsiniz.
 
 > [!NOTE]
->  MFC kendisini başka bir şey parametrelerle yapmaz; özellikle, bir metin değiştirme gerçekleştirmez. Bunun yerine, MFC ODBC parametrenin nereden bildirir; ODBC verileri alır ve gerekli parametrelemeyi gerçekleştirir.
+>  MFC parametrelerle hiçbir şey yapmaz — özellikle de bir metin değişimi gerçekleştirmez. Bunun yerine, MFC ODBC 'yi parametrenin nereden alınacağını belirtir; ODBC, verileri alır ve gerekli parametrelemeyi gerçekleştirir.
 
 > [!NOTE]
->  Parametreler sırası önemlidir. Bu konu hakkında bilgi ve parametreleri hakkında daha fazla bilgi için bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+>  Parametrelerin sırası önemlidir. Bu ve parametreler hakkında daha fazla bilgi için bkz. [kayıt kümesi: bir kayıt kümesini parametrize (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-##  <a name="_core_using_m_nfields_and_m_nparams"></a> M_nFields ve m_nParams kullanma
+##  <a name="using-m_nfields-and-m_nparams"></a><a name="_core_using_m_nfields_and_m_nparams"></a>M_nFields ve m_nParams kullanma
 
-Bir sihirbaz sınıfınız için bir oluşturucu yazdığında, ayrıca başlatır [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) sayısını belirten veri üyesi [alan veri üyeleri](#_core_field_data_members) sınıfında. Tüm eklerseniz [parametreleri](#_core_parameter_data_members) sınıfınız için bir başlatma için de eklemelisiniz [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) veri üyesi, parametre veri üyeleri sayısını belirtir. Framework, veri üyeleri ile çalışmak için bu değerleri kullanır.
+Bir sihirbaz sınıfınız için bir Oluşturucu yazdığında, bu, sınıftaki [alan veri üyelerinin](#_core_field_data_members) sayısını belirten [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesini de başlatır. Sınıfınıza herhangi bir [parametre](#_core_parameter_data_members) eklerseniz, parametre veri üyelerinin sayısını belirten [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) veri üyesine yönelik bir başlatma da eklemeniz gerekir. Framework, veri üyeleriyle çalışmak için bu değerleri kullanır.
 
-Daha fazla bilgi ve örnekler için bkz. [kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md).
+Daha fazla bilgi ve örnek için bkz. [kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

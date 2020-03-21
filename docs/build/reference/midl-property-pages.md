@@ -47,30 +47,30 @@ f1_keywords:
 - VC.Project.VCMidlTool.RedirectOutputAndErrors
 - VC.Project.VCMidlTool.MinimumTargetSystem
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: e9c9cb75d326642c86405992a4bf9d7da9e578df
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 260936d01a611f061b0b4fa9a5c087ff38cc66a3
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927692"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076124"
 ---
 # <a name="midl-property-pages"></a>MIDL Özellik Sayfaları
 
-MıDL Özellik sayfaları, öğesinde bir öğe özelliği olarak kullanılabilir. COM kullanan bir C++ projedeki IDL dosyası. [MIDL derleyicisini](/windows/win32/midl/using-the-midl-compiler-2)yapılandırmak için bunları kullanın. Projeler için C++ MIDL seçeneklerine programlı olarak erişme hakkında daha fazla bilgi için, <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> bkz. nesne. Ayrıca bkz. [genel MIDL komut satırı sözdizimi](/windows/win32/midl/general-midl-command-line-syntax).
+MıDL Özellik sayfaları, öğesinde bir öğe özelliği olarak kullanılabilir. COM kullanan bir C++ projedeki IDL dosyası. [MIDL derleyicisini](/windows/win32/midl/using-the-midl-compiler-2)yapılandırmak için bunları kullanın. Projeler için C++ MIDL seçeneklerine programlama yoluyla erişme hakkında bilgi için, bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> nesne. Ayrıca bkz. [genel MIDL komut satırı sözdizimi](/windows/win32/midl/general-midl-command-line-syntax).
 
 ## <a name="general-property-page"></a>Genel özellik sayfası
 
 ### <a name="preprocessor-definitions"></a>Önişlemci tanımları
 
-MIDL makroları ([/d](/windows/win32/midl/-d))\[makroları\]dahil bir veya daha fazla tanımlar belirtir).
+MıDL makroları ([/d](/windows/win32/midl/-d))\[makrolar\]) dahil bir veya daha fazla tanımlar belirtir.
 
 ### <a name="additional-include-directories"></a>Ek Içerme dizinleri
 
-Ekleme yoluna ([/i](/windows/win32/midl/-i)\[yolu\]) eklenecek bir veya daha fazla dizini belirtir.
+Ekleme yoluna eklenecek bir veya daha fazla dizin belirtir ([/i](/windows/win32/midl/-i)\[Path\]).
 
 ### <a name="additional-metadata-directories"></a>Ek meta veri dizinleri
 
-Windows. Foundation. winmd dosyasını içeren dizini belirtin ([/metadata_dir](/windows/win32/midl/-metadata-dir) \[yolu\]).
+Windows. Foundation. WinMD dosyasını içeren dizini belirtin ([/metadata_dir](/windows/win32/midl/-metadata-dir) \[yolu\]).
 
 ### <a name="enable-windows-runtime"></a>Windows Çalışma Zamanı etkinleştir
 
@@ -78,7 +78,7 @@ Windows meta veri dosyası ([/wınrt](/windows/win32/midl/-winrt)) oluşturmak i
 
 ### <a name="ignore-standard-include-path"></a>Standart ekleme yolunu yoksay
 
-Geçerli ve IÇERME dizinlerini yoksayın ([/no_def_,](/windows/win32/midl/-no-def-idir)).
+Geçerli ve ekleme dizinlerini yoksayın ([/no_def_idir](/windows/win32/midl/-no-def-idir)).
 
 ### <a name="mktyplib-compatible"></a>MkTypLib uyumlu
 
@@ -133,7 +133,7 @@ Nesne arabirimleri için Uzantılar ve saplamasız proxy 'leriyle tamamen yoruml
 
 ### <a name="suppress-compiler-warnings"></a>Derleyici Uyarılarını Engelleme
 
-Derleyici uyarı iletilerini engelle ([/no_warn](/windows/win32/midl/-no-warn)).
+Derleyici uyarı iletilerini gizleyin ([/no_warn](/windows/win32/midl/-no-warn)).
 
 ### <a name="application-configuration-mode"></a>Uygulama yapılandırma modu
 
@@ -220,7 +220,7 @@ Tür kitaplığı dosya biçimini belirtir ([/oldtlb |/newtlb]).
 
 ### <a name="c-preprocess-options"></a>C ön Işleme seçenekleri
 
-C derleyicisi önişlemcisi 'ne geçirilecek anahtarları belirtir ([/cpp_opt](/windows/win32/midl/-cpp-opt) Switches).
+C derleyicisi önişlemcisi 'ne geçirilecek anahtarları belirtir ([/cpp_opt](/windows/win32/midl/-cpp-opt) anahtarlar).
 
 ### <a name="undefine-preprocessor-definitions"></a>Önişlemci tanımlarının tanımı kaldırılıyor
 
@@ -262,7 +262,7 @@ Sunucu tarafı saplama verileri geçerliliği için ek denetim yayma ([/Error](/
 
 ### <a name="validate-parameters"></a>Parametreleri doğrula
 
-Parametreleri doğrulamak için ek bilgi oluşturun ([/dayanıklı](/windows/win32/midl/-robust) | [/no_dayanıklı](/windows/win32/midl/-no-robust)).
+Parametreleri doğrulamak için ek bilgi oluşturun ([/dayanıklı](/windows/win32/midl/-robust) | [/no_robust](/windows/win32/midl/-no-robust)).
 
 ### <a name="struct-member-alignment"></a>Struct üye hizalaması
 
@@ -283,6 +283,3 @@ Hedef sistemdeki yapıların paket düzeyini belirtir (/ZpN).
 ### <a name="minimum-target-system"></a>En düşük hedef sistem
 
 En düşük hedef sistemi ([/target](/windows/win32/midl/-target) STRING) ayarlayın.
-
-
-

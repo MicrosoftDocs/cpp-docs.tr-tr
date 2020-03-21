@@ -7,31 +7,31 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: a65ad69914b14e7b8b37c321fa7d06740af57e3a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a8cd13e27859d09bcaaca1f5f6f1c2750b908fe6
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493381"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078779"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıkları ve bileşenleri kullanma
 
-Genellikle bir C++ projenin, statik kitaplık (. lib dosyaları), DLL, Windows çalışma zamanı BILEŞENI, com bileşeni veya .NET derlemesi gibi bir ikili dosyadaki işlevleri çağırması veya verilere erişmesi gerekir. Bu gibi durumlarda, projenin derleme zamanında bu ikiliyi bulabileceği şekilde yapılandırmasını sağlayabilirsiniz. Belirli adımlar projenizin türüne, ikili türüne ve ikilinin projenizle aynı çözümde oluşturulup oluşturulmadığına bağlıdır. 
+Genellikle bir C++ projenin, statik kitaplık (. lib dosyaları), DLL, Windows çalışma zamanı BILEŞENI, com bileşeni veya .NET derlemesi gibi bir ikili dosyadaki işlevleri çağırması veya verilere erişmesi gerekir. Bu gibi durumlarda, projenin derleme zamanında bu ikiliyi bulabileceği şekilde yapılandırmasını sağlayabilirsiniz. Belirli adımlar projenizin türüne, ikili türüne ve ikilinin projenizle aynı çözümde oluşturulup oluşturulmadığına bağlıdır.
 
 ## <a name="consuming-libraries-downloaded-via-vcpkg"></a>Vcpkg aracılığıyla indirilen kitaplıkları kullanma
 
-**Vcpkg** paket yöneticisini kullanarak indirdiğiniz bir kitaplığı kullanmak için aşağıdaki yönergeleri yoksayabilirsiniz. Bkz [. vcpkg: Daha C++ fazla bilgi için Windows, Linux ve MacOS](vcpkg.md#integrate-with-visual-studio-windows) için bir paket yöneticisi.
+**Vcpkg** paket yöneticisini kullanarak indirdiğiniz bir kitaplığı kullanmak için aşağıdaki yönergeleri yoksayabilirsiniz. Daha fazla bilgi için bkz. [vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi](vcpkg.md#integrate-with-visual-studio-windows) .
 
 ## <a name="consuming-static-libraries"></a>Statik kitaplıkları kullanma
 
 Statik kitaplık projeniz aynı çözümde oluşturulmakta ise:
 
-1. #<a name="include-the-header-files-for-the-static-library-using-quotation-marks-in-a-typical-solution-the-path-will-start-with-library-project-name-intellisense-will-help-you-find-it"></a>tırnak işaretleri kullanarak statik kitaplık için üst bilgi dosyalarını ekleyin. Tipik bir çözümde yol ile `../<library project name>`başlar. IntelliSense onu bulmanıza yardımcı olur.
-2. Statik kitaplık projesine bir başvuru ekleyin. **Çözüm Gezgini** içindeki uygulama projesi düğümünün altında **Başvurular** ' a sağ tıklayın ve **Başvuru Ekle**' yi seçin. 
+1. #<a name="include-the-header-files-for-the-static-library-using-quotation-marks-in-a-typical-solution-the-path-will-start-with-library-project-name-intellisense-will-help-you-find-it"></a>tırnak işaretleri kullanarak statik kitaplık için üst bilgi dosyalarını ekleyin. Tipik bir çözümde yol `../<library project name>`başlar. IntelliSense onu bulmanıza yardımcı olur.
+2. Statik kitaplık projesine bir başvuru ekleyin. **Çözüm Gezgini** içindeki uygulama projesi düğümünün altında **Başvurular** ' a sağ tıklayın ve **Başvuru Ekle**' yi seçin.
 
 Statik kitaplık çözümün bir parçası değilse:
 
-1. **Çözüm Gezgini** ' de uygulama projesi düğümüne sağ tıklayın ve ardından **Özellikler**' i seçin. 
+1. **Çözüm Gezgini** ' de uygulama projesi düğümüne sağ tıklayın ve ardından **Özellikler**' i seçin.
 2. **VC + + dizinleri** Özellik sayfasında, yolu. lib dosyasının **kitaplık yollarında** bulunduğu dizine ekleyin ve yolu **Include dizinlerinde**kitaplık üst bilgi dosyasına (ler) ekleyin.  
 3. **Bağlayıcı > girişi** özelliği sayfasında,. lib dosyasının adını **ek bağımlılıklara**ekleyin.
 
@@ -46,11 +46,11 @@ DLL, uygulama çözümünün bir parçası değilse, DLL dosyası, içe aktarıl
 
 ## <a name="com-objects"></a>COM nesneleri
 
-Yerel C++ UYGULAMANıZıN bir com nesnesini kullanması gerekiyorsa ve bu nesne *kayıtlıysa*, tek yapmanız gereken, CoCreateInstance ÇAĞRıSı yapın ve nesnenin CLSID 'sini geçirin. Sistem bunu Windows kayıt defterinde bulur ve yükler. Bir C++/CLI PROJESI bir com nesnesini aynı şekilde kullanabilir ya da başvuru **Ekle > com** listesinden buna bir başvuru ekleyerek ve [çalışma zamanında çağrılabilir sarmalayıcı](/dotnet/framework/interop/runtime-callable-wrapper)aracılığıyla tüketerek. 
+Yerel C++ UYGULAMANıZıN bir com nesnesini kullanması gerekiyorsa ve bu nesne *kayıtlıysa*, tek yapmanız gereken, CoCreateInstance ÇAĞRıSı yapın ve nesnenin CLSID 'sini geçirin. Sistem bunu Windows kayıt defterinde bulur ve yükler. Bir C++/CLI PROJESI bir com nesnesini aynı şekilde kullanabilir ya da başvuru **Ekle > com** listesinden buna bir başvuru ekleyerek ve [çalışma zamanında çağrılabilir sarmalayıcı](/dotnet/framework/interop/runtime-callable-wrapper)aracılığıyla tüketerek.
 
 ## <a name="net-assemblies-and-windows-runtime-components"></a>.NET derlemeleri ve Windows Çalışma Zamanı bileşenleri
 
-UWP veya C++/CLI projelerinde, derleme veya bileşene bir *başvuru* ekleyerek .NET derlemelerini veya Windows çalışma zamanı bileşenlerini kullanırsınız. UWP veya C++/CLI projesindeki başvurular düğümü altında, yaygın olarak kullanılan bileşenlere başvurular görürsünüz. **Başvuru yöneticisini** açmak ve sistem tarafından bilinen ek bileşenlere gözatmak için **Çözüm Gezgini** ' deki **Başvurular** düğümüne sağ tıklayın. Özel bir bileşenin bulunduğu herhangi bir klasöre gitmek için, **Gözden** geçirme düğmesine tıklayın. .NET derlemeleri ve Windows Çalışma Zamanı bileşenleri yerleşik tür bilgilerini içerdiğinden, kendi yöntemlerini ve sınıflarını sağ tıklayıp, **nesne tarayıcısı görüntüle '** yi seçerek görüntüleyebilirsiniz. 
+UWP veya C++/CLI projelerinde, derleme veya bileşene bir *başvuru* ekleyerek .NET derlemelerini veya Windows çalışma zamanı bileşenlerini kullanırsınız. UWP veya **References** C++/CLI projesindeki başvurular düğümü altında, yaygın olarak kullanılan bileşenlere başvurular görürsünüz. **Başvuru yöneticisini** açmak ve sistem tarafından bilinen ek bileşenlere gözatmak için **Çözüm Gezgini** ' deki **Başvurular** düğümüne sağ tıklayın. Özel bir bileşenin bulunduğu herhangi bir klasöre gitmek için, **Gözden** geçirme düğmesine tıklayın. .NET derlemeleri ve Windows Çalışma Zamanı bileşenleri yerleşik tür bilgilerini içerdiğinden, kendi yöntemlerini ve sınıflarını sağ tıklayıp, **nesne tarayıcısı görüntüle '** yi seçerek görüntüleyebilirsiniz.
 
 ## <a name="reference-properties"></a>Başvuru özellikleri
 
@@ -106,7 +106,7 @@ Aşağıdaki özellikler çeşitli türlerde başvurularda kullanılabilir. Bunl
 
 ### <a name="project-to-project-reference-properties"></a>Projeden projeye başvuru özellikleri
 
-Aşağıdaki özellikler, **Başvurular** bölmesinde seçilen projeden projeden *projeye başvurusunu* aynı çözümdeki başka bir projeye tanımlar. Daha fazla bilgi için [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
+Aşağıdaki özellikler, **Başvurular** bölmesinde seçilen projeden projeden *projeye başvurusunu* aynı çözümdeki başka bir projeye tanımlar. Daha fazla bilgi için bkz. [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
 
 - **Bağlantı kitaplığı bağımlılıkları**
 
@@ -158,7 +158,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
 - **Tanımlayıcı ad**
 
-   `true`başvurulan derlemenin tanımlayıcı bir adı varsa. Tanımlayıcı adlı bütünleştirilmiş kod benzersiz bir şekilde sürümü oluşturulmuş.
+   başvurulan derlemenin tanımlayıcı adı varsa `true`. Tanımlayıcı adlı bütünleştirilmiş kod benzersiz bir şekilde sürümü oluşturulmuş.
 
 - **Sürüm**
 

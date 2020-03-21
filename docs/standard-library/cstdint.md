@@ -1,19 +1,19 @@
 ---
-title: '&lt;cstdınt&gt;'
+title: '&lt;cstdint&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <cstdint>
 ms.assetid: 87afafb2-c630-4383-a2fc-a6b47c639e21
-ms.openlocfilehash: 9f4839ed6166e328feac4ae89fcce0637abce993
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 142ea2b341dad307dea98d1406803a1e7eca5e78
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447470"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076636"
 ---
-# <a name="ltcstdintgt"></a>&lt;cstdınt&gt;
+# <a name="ltcstdintgt"></a>&lt;cstdint&gt;
 
-Standart C Kitaplığı başlığı \<stdint. h > içerir ve ilişkili adları `std` ad alanına ekler. Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
+Standart C Kitaplığı üst bilgisini \<stdint. h > içerir ve ilişkili adları `std` ad alanına ekler. Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -24,7 +24,7 @@ Standart C Kitaplığı başlığı \<stdint. h > içerir ve ilişkili adları `
 ## <a name="types"></a>Türler
 
 ```cpp
-namespace std { 
+namespace std {
     using int8_t = signed integer type; // optional
     using int16_t = signed integer type; // optional
     using int32_t = signed integer type; // optional

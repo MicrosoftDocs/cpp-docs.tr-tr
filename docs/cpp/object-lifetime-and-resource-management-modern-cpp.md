@@ -1,17 +1,17 @@
 ---
-title: Nesne yaşam süresi ve kaynak yönetimi (Çıı)
+title: Nesne yaşam süresi ve kaynak yönetimi (RAII)
 description: Kaynak sızıntılarını önlemek için modern C++ 'teki çii 'ın ilkesini izleyin.
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-ms.openlocfilehash: 01867ec0a71ba54bb6534da1b408cb0610d652a7
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: d30b5296b35bec7f8949057becfaeeea61ef09a0
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303371"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078025"
 ---
-# <a name="object-lifetime-and-resource-management-raii"></a>Nesne yaşam süresi ve kaynak yönetimi (Çıı)
+# <a name="object-lifetime-and-resource-management-raii"></a>Nesne yaşam süresi ve kaynak yönetimi (RAII)
 
 Yönetilen dillerin aksine, C++ otomatik *atık toplama*yoktur. Bu, bir program çalışırken yığın belleği ve diğer kaynakları serbest bırakan bir iç işlemdir. Bir C++ program, tüm alınan kaynakların işletim sistemine döndürülmesinden sorumludur. Kullanılmayan bir kaynağı serbest bırakma hatası, *sızıntı*olarak adlandırılır. Sızan kaynaklar, işlem bitene kadar diğer programlar için kullanılamaz. Özellikle de bellek sızıntıları, C stili programlamada hataların yaygın nedenlidir.
 
@@ -41,7 +41,7 @@ void functionUsingWidget () {
 ```
 
 Aşağıdaki örnekte, `w` bir bellek kaynağına sahiptir ve bu nedenle belleği silmek için yıkıcısında kodu olmalıdır.
- 
+
 ```cpp
 class widget
 {

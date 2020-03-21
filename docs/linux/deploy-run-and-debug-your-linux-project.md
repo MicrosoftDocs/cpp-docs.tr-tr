@@ -3,12 +3,12 @@ title: Visual Studio 'da C++ Linux projenizi dağıtma, çalıştırma ve hata a
 description: Visual Studio 'da bir Linux C++ projesinin içinden uzak hedefte kod derleme, yürütme ve hata ayıklama işlemlerini açıklar.
 ms.date: 06/07/2019
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-ms.openlocfilehash: 183554814ef48a93c11d782a89e04c43fcce5e9f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e68feab3a71cd5bb3f6b88eee52f0872ef4bb213
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441661"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077834"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama
 
@@ -35,7 +35,7 @@ Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç
 ## <a name="debug-your-linux-project"></a>Linux projenizde hata ayıklama
 
 1. **Hata ayıklama** Özellik sayfasında hata ayıklama modu ' nu seçin.
-   
+
    ::: moniker range="vs-2019"
 
    GDB, Linux üzerinde çalışan uygulamalarda hata ayıklamak için kullanılır. Uzak sistemde hata ayıklama yapıldığında (WSL değil) GDB, projenin **hata ayıklama** özellik sayfasındaki **hata ayıklama modu** seçeneğinden seçilebilen iki farklı modda çalışabilir:
@@ -51,7 +51,6 @@ Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç
    ![GDB seçenekleri](media/vs2017-debugger-settings.png)
 
    ::: moniker-end
-
 
    - **Gdbserver** modunda, gdb yerel olarak çalıştırılır ve bu, uzak sistemdeki gdbserver 'a bağlanır.  Bunun, Linux konsol penceresinin desteklediği tek mod olduğunu unutmayın.
 
@@ -129,7 +128,7 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 
 ::: moniker range="vs-2019"
 
-## <a name="separate_build_debug"></a>Oluşturma ve hata ayıklama için farklı makineler belirtin
+## <a name="specify-different-machines-for-building-and-debugging"></a><a name="separate_build_debug"></a>Oluşturma ve hata ayıklama için farklı makineler belirtin
 
 Visual Studio 2019 sürüm 16,1 ' de uzak derleme makinenizi hem MSBuild tabanlı Linux projeleri hem de uzak bir Linux makinesini hedefleyen CMake projeleri için uzaktan hata ayıklama makinenizden ayırabilirsiniz. Örneğin, artık x64 üzerinde çapraz derleme yapabilir ve IoT senaryolarını hedeflerken ARM cihazına dağıtabilirsiniz.
 

@@ -49,12 +49,12 @@ helpviewer_keywords:
 - IsUpdateAllowed method
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-ms.openlocfilehash: dba962c761fac0408a3c68a46ec6447aa7832522
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: fdd6072f831d7bfb77673169c2ef8062cc7107a6
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444077"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077856"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl Sınıfı
 
@@ -145,7 +145,7 @@ Burada açıklanan her şey burada da geçerli olduğundan, [IRowsetChange](/pre
 
 - Ayrıca, `RUpdateRowset` sınıfının [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örneğinde nasıl kullanıldığını görün
 
-## <a name="setdata"></a>IRowsetUpdateImpl:: SetData
+## <a name="irowsetupdateimplsetdata"></a><a name="setdata"></a>IRowsetUpdateImpl:: SetData
 
 Veri değerlerini bir veya daha fazla sütunda ayarlar.
 
@@ -165,7 +165,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 Bu yöntem, [IRowsetChangeImpl:: SetData](../../data/oledb/irowsetchangeimpl-setdata.md) metodunu geçersiz kılar, ancak işlemin anında veya ertelenmiş işlemesini sağlamak için özgün verilerin önbelleğe alınmasını içerir.
 
-## <a name="getoriginaldata"></a>IRowsetUpdateImpl:: GetOriginalData
+## <a name="irowsetupdateimplgetoriginaldata"></a><a name="getoriginaldata"></a>IRowsetUpdateImpl:: GetOriginalData
 
 Bekleyen değişiklikleri yoksayarak veri kaynağından en son iletilen veya alınan verileri alır.
 
@@ -181,7 +181,7 @@ STDMETHOD (GetOriginalData )(HROW hRow,
 
 *OLE DB Programcı başvurusunda*bkz. [IRowsetUpdate:: GetOriginalData](/previous-versions/windows/desktop/ms709947(v=vs.85)) .
 
-## <a name="getpendingrows"></a>IRowsetUpdateImpl:: GetPendingRows
+## <a name="irowsetupdateimplgetpendingrows"></a><a name="getpendingrows"></a>IRowsetUpdateImpl:: GetPendingRows
 
 Bekleyen değişiklikleri olan satırların bir listesini döndürür.
 
@@ -206,7 +206,7 @@ Diğer parametreler için *OLE DB Programcı başvurusunda* [IRowsetUpdate:: Get
 
 Daha fazla bilgi için *OLE DB Programcı başvurusunda* [IRowsetUpdate:: GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85)) bölümüne bakın.
 
-## <a name="getrowstatus"></a>IRowsetUpdateImpl:: GetRowStatus
+## <a name="irowsetupdateimplgetrowstatus"></a><a name="getrowstatus"></a>IRowsetUpdateImpl:: GetRowStatus
 
 Belirtilen satırların durumunu döndürür.
 
@@ -226,7 +226,7 @@ STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,
 
 Diğer parametreler için *OLE DB Programcı başvurusunda*bkz. [IRowsetUpdate:: GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85)) .
 
-## <a name="undo"></a>IRowsetUpdateImpl:: Undo
+## <a name="irowsetupdateimplundo"></a><a name="undo"></a>IRowsetUpdateImpl:: Undo
 
 Son getirme veya güncelleştirmeden sonra satırdaki değişiklikleri geri alır.
 
@@ -254,7 +254,7 @@ dışı [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.
 
 Diğer parametreler için *OLE DB Programcı başvurusunda*bkz. [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85)) .
 
-## <a name="update"></a>IRowsetUpdateImpl:: Update
+## <a name="irowsetupdateimplupdate"></a><a name="update"></a>IRowsetUpdateImpl:: Update
 
 Son getirme veya güncelleştirmeden bu yana satırda yapılan değişiklikleri iletir.
 
@@ -280,7 +280,7 @@ Diğer parametreler için *OLE DB Programcı başvurusunda* [IRowsetUpdate:: Upd
 
 Değişiklikler [IRowsetChangeImpl:: FlushData](../../data/oledb/irowsetchangeimpl-flushdata.md)çağırarak iletilir. Değişikliklerin etkili olması için tüketiciden [CRowset:: Update](../../data/oledb/crowset-update.md) çağrısı yapılmalıdır. *PrgRowstatus* *programcı başvurusunda satır ole db* [durumları](/previous-versions/windows/desktop/ms722752(v=vs.85)) bölümünde açıklandığı gibi uygun bir değere ayarlayın.
 
-## <a name="isupdateallowed"></a>IRowsetUpdateImpl:: ısupdateallowed
+## <a name="irowsetupdateimplisupdateallowed"></a><a name="isupdateallowed"></a>IRowsetUpdateImpl:: ısupdateallowed
 
 Güncelleştirmelerden önce güvenlik, bütünlük ve benzerlerini denetlemek için bu yöntemi geçersiz kılın.
 
@@ -307,7 +307,7 @@ dışı Kullanıcıya döndürülen durum.
 
 Bir güncelleştirmenin izin verileceğini belirlerseniz, S_OK döndürür; Aksi takdirde E_FAIL döndürür. Bir güncelleştirmeye izin verirseniz, [IRowsetUpdateImpl:: Update](../../data/oledb/irowsetupdateimpl-update.md) içindeki `DBROWSTATUS` uygun bir [satır durumuna](/previous-versions/windows/desktop/ms722752(v=vs.85))ayarlamanız gerekir.
 
-## <a name="mapcacheddata"></a>IRowsetUpdateImpl:: m_mapCachedData
+## <a name="irowsetupdateimplm_mapcacheddata"></a><a name="mapcacheddata"></a>IRowsetUpdateImpl:: m_mapCachedData
 
 Ertelenmiş işlem için özgün verileri içeren bir harita.
 
@@ -315,7 +315,7 @@ Ertelenmiş işlem için özgün verileri içeren bir harita.
 
 ```cpp
 CAtlMap<
-   HROW hRow, 
+   HROW hRow,
    Storage* pData
 >
 m_mapCachedData;

@@ -1,5 +1,5 @@
 ---
-title: "Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma"
+title: "Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - SQL, retrieving aggregate values from recordsets
@@ -10,76 +10,76 @@ helpviewer_keywords:
 - SQL Server projects, retrieving aggregate values from recordsets
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-ms.openlocfilehash: 29906366e6e9a5a852fcf40d9e7ecc8593d1b0b0
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 38a458eb6634d5075315c9c0bbd2cb215bc76eda
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707840"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075912"
 ---
-# <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma
+# <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konu başlığında, aşağıdaki kullanarak toplama sonuçları elde etmek açıklanmaktadır [SQL](../../data/odbc/sql.md) anahtar sözcükler:
+Bu konu başlığı altında, aşağıdaki [SQL](../../data/odbc/sql.md) anahtar kelimeleri kullanılarak nasıl toplam sonuçlar elde edileceği açıklanmaktadır:
 
-- **SUM** sayısal veri türüne sahip bir sütundaki değerlerin toplamını hesaplar.
+- **Toplam** Bir sütundaki değerlerin toplamını sayısal veri türüne göre hesaplar.
 
-- **MIN** sayısal veri türüne sahip bir sütundaki en küçük değeri ayıklar.
+- **En az** En küçük değeri sayısal veri türüne sahip bir sütunda ayıklar.
 
-- **En fazla** sayısal veri türüne sahip bir sütundaki en büyük değeri ayıklar.
+- **En fazla** En büyük değeri sayısal veri türüne sahip bir sütunda ayıklar.
 
-- **Ortalama** ortalama değeri bir sütundaki tüm değerlerin sayısal veri türüne sahip hesaplar.
+- **Ort** . Sayısal veri türüne sahip bir sütundaki tüm değerlerin ortalama değerini hesaplar.
 
-- **SAYISI** herhangi bir veri türü sütununun kayıtlarını sayar.
+- **Sayı** Herhangi bir veri türünün bir sütunundaki kayıtların sayısını sayar.
 
-Bu SQL işlevleri, bir veri kaynağındaki kayıtları hakkında istatistiksel bilgi edinmek için yerine veri kaynağından kayıtlar ayıklamak için kullanın. Genellikle oluşturulan kayıt tek bir oluşan bir değer içeren kayıt (tüm sütunları toplamalar varsa). (Kullandıysanız birden fazla kayıtla olabilir bir **GROUP BY** yan tümcesi.) Bir SQL işlev tarafından gerçekleştirilebilse ayıklama veya hesaplama sonucu değerdir.
+Veri kaynağındaki kayıtları ayıklamak yerine bir veri kaynağındaki kayıtlar hakkında istatistiksel bilgiler almak için bu SQL işlevlerini kullanırsınız. Oluşturulan kayıt kümesi, genellikle bir değer içeren tek bir kayıttan (tüm sütunlar toplamalarda) oluşur. ( **Group By** yan tümcesi kullandıysanız birden fazla kayıt olabilir.) Bu değer, SQL işlevi tarafından gerçekleştirilen hesaplamanın veya ayıklamanın sonucudur.
 
 > [!TIP]
->  Bir SQL eklemek için **GROUP BY** yan tümcesi (ve muhtemelen bir **HAVING** yan tümcesi) SQL deyimine, sonuna `m_strFilter`. Örneğin:
+>  SQL deyiminize bir SQL **Group By** yan tümcesi (ve muhtemelen bir **HAVING** yan tümcesi) eklemek için `m_strFilter`sonuna ekleyin. Örnek:
 
 ```
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
 ```
 
-Filtreleme ve sıralama sütunlarını toplama sonuçları elde etmek için kullandığınız kayıt sayısını sınırlayabilirsiniz.
+Sütunları filtreleyerek ve sıralayarak toplama sonuçları elde etmek için kullandığınız kayıt sayısını sınırlayabilirsiniz.
 
 > [!CAUTION]
->  Bazı toplama işleçleri, farklı bir veri türü üzerinde toplama sütunları döndürür.
+>  Bazı toplama işleçleri, topladıkları sütunlardan farklı bir veri türü döndürür.
 
-- **SUM** ve **ortalama** sonraki daha büyük veri türü döndürebilir (örneğin, ile arama `int` döndürür **uzun** veya **çift**).
+- **Sum** ve **AVG** bir sonraki daha büyük veri türünü döndürebilir (örneğin, `int` ile çağırmak **uzun** veya **çift**döndürür).
 
-- **SAYISI** genellikle döndürür **uzun** hedef sütun türü ne olursa olsun.
+- **Count** genellikle hedef sütun türünden bağımsız olarak **uzun** döndürür.
 
-- **En fazla** ve **MIN** hesaplanacak sütunları aynı veri türünde döndürür.
+- **Max** ve **MIN** , hesaplandıkları sütunlarla aynı veri türünü döndürür.
 
-     Örneğin, **sınıfı Ekle** sihirbaz `long` `m_lSales` satış sütun, ancak uyum sağlamak için bunu değiştirmeniz gerekir bir `double m_dblSumSales` toplam sonucu barındırmak için veri üyesi. Aşağıdaki örnekte bakın.
+     Örneğin, **sınıf ekleme** Sihirbazı bir satış sütununa uyum sağlamak için `long` `m_lSales` oluşturur, ancak bunu toplama sonucunu karşılamak için `double m_dblSumSales` bir veri üyesiyle değiştirmeniz gerekir. Aşağıdaki örneğe bakın.
 
-#### <a name="to-obtain-an-aggregate-result-for-a-recordset"></a>Bir kayıt kümesi için birleşik bir sonuç elde etmek için
+#### <a name="to-obtain-an-aggregate-result-for-a-recordset"></a>Bir kayıt kümesi için toplam sonuç elde etmek için
 
-1. Bölümünde anlatıldığı gibi bir kayıt kümesi oluşturma [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md) toplama sonuçları elde etmek istediğiniz sütunları içeren.
+1. Toplu sonuçları almak istediğiniz sütunları içeren bir [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md) bölümünde açıklandığı gibi bir kayıt kümesi oluşturun.
 
-1. Değiştirme [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) kayıt kümesi için işlevi. Sütun adını temsil eden dize değiştirin (ikinci bağımsız değişkeni [RFX](../../data/odbc/record-field-exchange-using-rfx.md) işlev çağrılarında) ile sütunda toplama işlevini temsil eden bir dize. Örneğin, değiştirin:
+1. Kayıt kümesi için [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) işlevini değiştirin. Sütun adını temsil eden dizeyi ( [RFX](../../data/odbc/record-field-exchange-using-rfx.md) işlev çağrılarının ikinci bağımsız değişkeni) sütunundaki toplama işlevini temsil eden bir dize ile değiştirin. Örneğin, şunu değiştirin:
 
     ```
     RFX_Long(pFX, "Sales", m_lSales);
     ```
 
-     İle:
+     Yeni değer:
 
     ```
     RFX_Double(pFX, "Sum(Sales)", m_dblSumSales)
     ```
 
-1. Kayıt kümesini açın. Toplama işleminin sonucu left içinde `m_dblSumSales`.
+1. Kayıt kümesini açın. Toplama işleminin sonucu `m_dblSumSales`bırakılır.
 
 > [!NOTE]
->  Sihirbaz, aslında Macarca önekleri olmadan veri üye adlarını atar. Örneğin, sihirbaz oluşturur `m_Sales` bir satış sütunu için yerine `m_lSales` önceki çizim için kullanılan ad.
+>  Sihirbaz aslında veri üyesi adlarını Macarca ön ekler olmadan atar. Örneğin, sihirbaz, daha önce çizim için kullanılan `m_lSales` adı yerine bir satış sütunu için `m_Sales` üretecektir.
 
-Kullanıyorsanız bir [CRecordView](../../mfc/reference/crecordview-class.md) verileri görüntülemek için sınıf, yeni veri üyesinin değerini görüntülemek için DDX işlev çağrısı değiştirmek zorunda bu durumda, ondan değiştirme:
+Verileri görüntülemek için bir [CRecordView](../../mfc/reference/crecordview-class.md) sınıfı kullanıyorsanız, yeni veri üye değerini görüntülemek için DDX işlev çağrısını değiştirmeniz gerekir; Bu durumda, şu şekilde değiştiriliyor:
 
 ```
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_lSales, m_pSet);
@@ -94,4 +94,4 @@ DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_dblSumSales, m_pSet);
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

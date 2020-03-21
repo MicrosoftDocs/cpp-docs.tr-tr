@@ -26,12 +26,12 @@ helpviewer_keywords:
 - flushing
 - fflush function
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-ms.openlocfilehash: 966ff5622faaccd2d9e501b39da99b010e841c22
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4597a013054a549047b4467c5bfed605e55e7656
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940941"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077333"
 ---
 # <a name="fflush"></a>fflush
 
@@ -55,7 +55,7 @@ int fflush(
 ara bellek başarıyla temizleniyorsa **fflush** 0 döndürür. 0 değeri, belirtilen akışın arabelleği olmadığı veya yalnızca okuma için açık olduğu durumlarda da döndürülür. **EOF** dönüş değeri bir hatayı gösterir.
 
 > [!NOTE]
-> **Fflush** **EOF**döndürürse, veriler bir yazma hatası nedeniyle kaybolmuş olabilir. Kritik bir hata işleyicisi ayarlarken, **setvarabelleğe** işlevi ile arabelleğe almayı kapatmak veya akış g/ç işlevleri yerine **_Aç**, **_close**ve **_write** gibi alt düzey g/ç yordamlarını kullanmak en güvenli hale gelir.
+> **Fflush** **EOF**döndürürse, veriler bir yazma hatası nedeniyle kaybolmuş olabilir. Kritik bir hata işleyicisi ayarlarken, **setvarabelleğe** işlevi ile arabelleğe almayı kapatmak veya akış g/ç işlevleri yerine **_open**, **_close**ve **_write** gibi alt düzey g/ç yordamlarını kullanmak en güvenli hale gelir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -63,9 +63,9 @@ ara bellek başarıyla temizleniyorsa **fflush** 0 döndürür. 0 değeri, belir
 
 *Stream* **null**ise, her açık akışta bir **fflush** çağrısıyla aynı davranış vardır. Yazma modunda açılan tüm akışlar ve son işlemin bir yazma işlemi olduğu güncelleştirme modunda açılan tüm akışlar. Çağrının diğer akışlar üzerinde hiçbir etkisi yoktur.
 
-Arabellekler normalde işletim sistemi tarafından korunur. Bu, verilerin diske otomatik olarak yazılması için en iyi zamanı belirler: bir arabellek dolduğunda, bir akış kapatıldığında veya bir program normal olarak akışı kapatmadan sonlandırıldığında. Çalışma zamanı kitaplığının diske kaydet özelliği, kritik verilerin işletim sistemi arabellekleri yerine doğrudan diske yazılmasını sağlamanıza olanak tanır. Mevcut bir programı yeniden yazmadan, programın nesne dosyalarını COMMODE. OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Elde edilen yürütülebilir dosyada, **_flushall** çağrılarına tüm arabelleklerin içeriğini diske yazar. Yalnızca **_flushall** ve **FFLUSH** , Commode. obj tarafından etkilendi.
+Arabellekler normalde işletim sistemi tarafından korunur. Bu, verilerin diske otomatik olarak yazılması için en iyi zamanı belirler: bir arabellek dolduğunda, bir akış kapatıldığında veya bir program normal olarak akışı kapatmadan sonlandırıldığında. Çalışma zamanı kitaplığının diske kaydet özelliği, kritik verilerin işletim sistemi arabellekleri yerine doğrudan diske yazılmasını sağlamanıza olanak tanır. Mevcut bir programı yeniden yazmadan, programın nesne dosyalarını COMMODE. OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Elde edilen yürütülebilir dosyada, tüm arabelleklerin içeriğini diske yazmak **_flushall** için çağırır. Yalnızca **_flushall** ve **FFLUSH** , Commode. obj tarafından etkilendi.
 
-Diske işleme özelliğini denetleme hakkında daha fazla bilgi için bkz. [Stream g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md)ve [_fdopen](fdopen-wfdopen.md).
+Diske işleme özelliğini denetleme hakkında daha fazla bilgi için bkz. [akış g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md)ve [_fdopen](fdopen-wfdopen.md).
 
 Bu işlev, çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fflush_nolock**.
 
@@ -103,10 +103,10 @@ int main(void)
 
         // Write data to a file immediately instead of buffering.
         fflush(my_file);
-    
+
         if (my_number == 5)
         {
-            // Without using fflush, no data was written to the file 
+            // Without using fflush, no data was written to the file
             // prior to the crash, so the data is lost.
             *crash_the_program = 5;
         }

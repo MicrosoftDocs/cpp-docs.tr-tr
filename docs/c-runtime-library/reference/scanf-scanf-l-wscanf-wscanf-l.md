@@ -43,18 +43,18 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-ms.openlocfilehash: acb336827a669a867b937806a6cdb9aa51d75cbe
-ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.openlocfilehash: df63baa8ffa878a4a65c84e07f0e68aa383e79cf
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778328"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079205"
 ---
 # <a name="scanf-_scanf_l-wscanf-_wscanf_l"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
 Standart giriş akışından biçimlendirilen verileri okur. Bu işlevin daha güvenli sürümleri mevcuttur; bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
-> [!NOTE] 
+> [!NOTE]
 > Visual Studio 2015 ' de `printf` ve `scanf` işlev ailesi **satır içi** olarak bildirilmiştir ve `<stdio.h>` ve `<conio.h>` üst bilgilerine taşındı. Eski kodu geçiriyorsanız, Bu işlevlerle bağlantılı *LNK2019* görebilirsiniz. Daha fazla bilgi için bkz [. C++ görsel değişiklik geçmişi 2003-2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## <a name="syntax"></a>Sözdizimi
@@ -104,7 +104,7 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 **Scanf** işlevi standart giriş akışı **stdin** ' den verileri okur ve *bağımsız değişken*tarafından verilen konuma verileri yazar. Her *bağımsız değişken* , *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
 > [!IMPORTANT]
-> **Scanf**ile bir dize okunurken, her zaman **% s** biçimi için bir genişlik belirleyin (örneğin, "% **s"** yerine **"% 32S"** ); Aksi halde, düzensiz biçimli giriş, arabellek taşmasına kolayca neden olabilir. Alternatif olarak, [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fal](fgets-fgetws.md)kullanmayı göz önünde bulundurun.
+> **Scanf**ile bir dize okunurken, her zaman **% s** biçimi için bir genişlik belirleyin (örneğin, "% **s"** yerine **"% 32S"** ); Aksi halde, düzensiz biçimli giriş, arabellek taşmasına kolayca neden olabilir. Alternatif olarak, [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fal](fgets-fgetws.md)kullanmayı düşünün.
 
 **wscanf** , **scanf**'nin geniş karakterli bir sürümüdür; **wscanf** *Biçim* bağımsız değişkeni geniş karakterli bir dizedir. Akış ANSI modunda açılırsa **wscanf** ve **scanf** aynı şekilde davranır. **scanf** Şu anda UNICODE akışından girişi desteklememektedir.
 
@@ -112,7 +112,7 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tscanf**|**scanf**|**scanf**|**wscanf**|
 |**_tscanf_l**|**_scanf_l**|**_scanf_l**|**_wscanf_l**|

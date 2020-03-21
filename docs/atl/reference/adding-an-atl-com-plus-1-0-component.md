@@ -1,34 +1,33 @@
 ---
-title: ATL COM + 1.0 bileşeni ekleme
+title: ATL COM+ 1,0 bileşeni ekleme
 ms.date: 05/09/2019
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
-ms.openlocfilehash: 6b8ffd71dd7e743bcbb7ff6ccac333dfd235156f
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 843563e324e5e01af3c38896f268efc06c9a6222
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706952"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075319"
 ---
-# <a name="adding-an-atl-com-10-component"></a>ATL COM + 1.0 bileşeni ekleme
-
+# <a name="adding-an-atl-com-10-component"></a>ATL COM+ 1,0 bileşeni ekleme
 
 ::: moniker range="vs-2019"
 
-ATL COM + 1.0 bileşeni Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
+ATL COM+ 1,0 Bileşen Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Bu sihirbaz projenize işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini destekleyen bir nesne ekler.
+Bu sihirbaz, projenize işlemler de dahil olmak üzere COM+ 1,0 hizmetlerini destekleyen bir nesne ekler.
 
-## <a name="to-add-an-atl-com-10-component-to-your-project"></a>ATL COM + 1.0 bileşeni projenize eklemek için
+## <a name="to-add-an-atl-com-10-component-to-your-project"></a>Projenize ATL COM+ 1,0 bileşeni eklemek için
 
-1. Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ATL COM + 1.0 bileşeni eklemek istediğiniz proje adına sağ tıklayın.
+1. **Çözüm Gezgini** ya da [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), atl com+ 1,0 bileşenini eklemek istediğiniz projenin adına sağ tıklayın.
 
-1. Kısayol menüsünde **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünde, **Ekle**' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusundaki **şablonları** bölmesinde tıklayın **ATL COM + 1.0 bileşeni**ve ardından **açık** görüntülemekiçin[ ATL COM + 1.0 bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md).
+1. [Sınıf Ekle](../../ide/add-class-dialog-box.md) iletişim kutusunda, **Şablonlar** bölmesinde, **atl com+ 1,0 bileşeni**' ne ve ardından **Aç** ' a tıklayarak [atl com+ 1,0 Bileşen Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)'nı görüntüleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -36,5 +35,3 @@ Bu sihirbaz projenize işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini dest
 [Yöntem ekleme](../../ide/adding-a-method-visual-cpp.md)
 
 ::: moniker-end
-
-

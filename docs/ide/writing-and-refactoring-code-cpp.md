@@ -4,12 +4,12 @@ description: Kodunuzu biçimlendirmek C++ , gezinmek, anlamak ve yeniden düzenl
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ms.topic: overview
-ms.openlocfilehash: da3f4e7d783561dba8250652a0715e51e71cc387
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 6d920ec302e8385d900d74152ee5ad17851fdaac
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438156"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077843"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodu düzenleme ve yeniden düzenleme
 
@@ -70,15 +70,15 @@ Bir düğme yalnızca geçerli IntelliSense oturumunuzla ilgiliyse görüntülen
 
 ## <a name="template-intellisense"></a>Şablon IntelliSense
 
-Giriş işareti bir şablon tanımının içindeyken, IntelliSense için örnek şablon bağımsız değişkenleri sağlamanıza olanak tanıyan bir **şablon çubuğu** görünür. 
+Giriş işareti bir şablon tanımının içindeyken, IntelliSense için örnek şablon bağımsız değişkenleri sağlamanıza olanak tanıyan bir **şablon çubuğu** görünür.
 
 ![C&#43; &#43; şablonu IntelliSense mevcut örneklemeleri göster](../ide/media/template-intellisense-cpp-1.png "Şablon IntelliSense mevcut örneklemeleri göster")
 
-**Şablon çubuğunu**genişletmek/daraltmak Için **\<t >** simgesine tıklayın. **Düzenle** penceresini açmak için kalem simgesine tıklayın veya **şablon çubuğuna** çift tıklayın. 
+**Şablon çubuğunu**genişletmek/daraltmak Için **\<t >** simgesine tıklayın. **Düzenle** penceresini açmak için kalem simgesine tıklayın veya **şablon çubuğuna** çift tıklayın.
 
 ![C&#43; &#43; şablonu IntelliSense](../ide/media/template-intellisense-cpp-3.png "Şablon IntelliSense")
 
-Pencerede yaptığınız düzenlemeler, etkileri gerçek zamanlı olarak görebileceğiniz şekilde doğrudan kaynak koda uygulanır. 
+Pencerede yaptığınız düzenlemeler, etkileri gerçek zamanlı olarak görebileceğiniz şekilde doğrudan kaynak koda uygulanır.
 
 Şablon çubuğu, kodunuzdaki örneklemeleri temel alarak adayları otomatik olarak doldurabilir. Kod tabanınız genelinde şablonu örneklemek için kullanılan tüm somut bağımsız değişkenlerin listesini görmek için **mevcut tüm örneklemeleri Ekle** ' ye tıklayın.
 
@@ -94,13 +94,13 @@ Düzenleyicinin alt kısmındaki bir pencere, her bir örneklemede nerede nerede
 
 Düzenleyici, kodunuzla ilgili sorunları algılarsa, sorunun altında renkli dalgalı çizgiler eklenir. Red dalgalı çizgiler, derlenmeyen kodu gösterir. Yeşil dalgalı çizgiler, hala ciddi olabilecek diğer sorun türlerini gösterir. Sorunlar hakkında daha fazla bilgi edinmek için **hata listesi** penceresini açabilirsiniz.
 
-Yaygın kodlama desenlerinin yanı sıra bazı hatalar için, düzenleyici, dalgalı bir ampulde yer alan bir ampul biçiminde **hızlı bir çözüm** sunar. Önerileri görmek için aşağı oka tıklayın. 
+Yaygın kodlama desenlerinin yanı sıra bazı hatalar için, düzenleyici, dalgalı bir ampulde yer alan bir ampul biçiminde **hızlı bir çözüm** sunar. Önerileri görmek için aşağı oka tıklayın.
 
 Aşağıdaki örnekte, bir `vector` bildirildi ancak tanım bulunamadı, bu nedenle düzenleyici gerekli üst bilgi dosyasını dahil etmek için:
 
 ![C&#43; &#43; hızlı düzelme](../ide/media/quick-fix-for-header-cpp.png "C++Hızlı çözüm")
 
-Düzenleyici, bazı yeniden düzenleme fırsatları için de hızlı düzeltmeler sağlar. Örneğin, bir başlık dosyasında bir sınıf bildirirseniz, Visual Studio buna ayrı bir. cpp dosyasında bir tanım oluşturmayı sağlar. 
+Düzenleyici, bazı yeniden düzenleme fırsatları için de hızlı düzeltmeler sağlar. Örneğin, bir başlık dosyasında bir sınıf bildirirseniz, Visual Studio buna ayrı bir. cpp dosyasında bir tanım oluşturmayı sağlar.
 
 ![C&#43; &#43; hızlı düzelme](../ide/media/quick-fix.png "C++Hızlı çözüm")
 

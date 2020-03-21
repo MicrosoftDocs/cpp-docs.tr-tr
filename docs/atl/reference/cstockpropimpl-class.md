@@ -64,12 +64,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 29b4337679f05d780d3d6cd5de6bf6f889a6ea30
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: bc349137661d7026e48688f8ef510958de270280
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496335"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075213"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl sınıfı
 
@@ -82,12 +82,12 @@ Bu sınıf, hisse senedi özellik değerlerini desteklemek için yöntemler sağ
 
 ```
 template <
-    class T, 
+    class T,
     class InterfaceName,
     const IID* piid = &_ATL_IIDOF(InterfaceName),
     const GUID* plibid = &CComModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, 
+    WORD wMinor = 0,
     class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE CStockPropImpl :
     public IDispatchImpl<InterfaceName, piid, plibid, wMajor, wMinor, tihclass>
@@ -95,17 +95,17 @@ class ATL_NO_VTABLE CStockPropImpl :
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Denetimi uygulayan ve öğesinden türeten `CStockPropImpl`sınıf.
+*Şı*<br/>
+Denetimi uygulayan ve `CStockPropImpl`türetmede olan sınıf.
 
 *'Nün*<br/>
 Hisse senedi özelliklerini açığa çıkaran çift arabirim.
 
 *piıd*<br/>
-IID için bir işaretçi `InterfaceName`.
+`InterfaceName`IID 'sine yönelik bir işaretçi.
 
 *plibıd*<br/>
-Tanımını içeren tür kitaplığının LIBıD işaretçisi `InterfaceName`.
+`InterfaceName`tanımını içeren tür kitaplığının LIBıD işaretçisi.
 
 *Wana*<br/>
 Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.
@@ -114,7 +114,7 @@ Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.
 Tür kitaplığının ikincil sürümü. Varsayılan değer 0’dır.
 
 *tihclass*<br/>
-*T*için tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder` şeklindedir.
+*T*için tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder`.
 
 ## <a name="members"></a>Üyeler
 
@@ -165,7 +165,7 @@ Tür kitaplığının ikincil sürümü. Varsayılan değer 0’dır.
 |[put_FillStyle](#put_fillstyle)|Denetimin Fill stilini ayarlamak için bu yöntemi çağırın, örneğin, düz, saydam veya çapraz taranmış.|
 |[put_Font](#put_font)|Denetimin yazı tipi özelliklerini ayarlamak için bu yöntemi çağırın.|
 |[put_ForeColor](#put_forecolor)|Denetimin ön plan rengini ayarlamak için bu yöntemi çağırın.|
-|[put_HWND](#put_hwnd)|Bu yöntem E_FAıL döndürür.|
+|[put_HWND](#put_hwnd)|Bu yöntem E_FAIL döndürür.|
 |[put_MouseIcon](#put_mouseicon)|Fare denetimin üzerindeyken görüntülenecek grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası) ayarlamak için bu yöntemi çağırın.|
 |[put_MousePointer](#put_mousepointer)|Fare denetimin üzerindeyken (örneğin, ok, çapraz veya kum saati) fare işaretçisinin türünü ayarlamak için bu yöntemi çağırın.|
 |[put_Picture](#put_picture)|Görüntülenecek grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası) ayarlamak için bu yöntemi çağırın.|
@@ -173,18 +173,18 @@ Tür kitaplığının ikincil sürümü. Varsayılan değer 0’dır.
 |[put_TabStop](#put_tabstop)|Denetimin bir sekme durağı olup olmadığını gösteren bayrağın değerini ayarlamak için bu yöntemi çağırın.|
 |[put_Text](#put_text)|Denetimiyle görüntülenen metni ayarlamak için bu yöntemi çağırın.|
 |[putvalid](#put_valid)|Denetimin geçerli olup olmadığını gösteren bayrağı ayarlamak için bu yöntemi çağırın.|
-|[put_Window](#put_window)|Bu yöntem, E_FAıL döndüren [CStockPropImpl::P ut_hwnd](#put_hwnd)öğesini çağırır.|
+|[put_Window](#put_window)|Bu yöntem, E_FAIL döndüren [CStockPropImpl::p ut_HWND](#put_hwnd)çağırır.|
 |[putref_Font](#putref_font)|Denetimin yazı tipi özelliklerini bir başvuru sayısıyla ayarlamak için bu yöntemi çağırın.|
 |[putref_MouseIcon](#putref_mouseicon)|Fare denetimin üzerindeyken, bir başvuru sayısıyla görüntülenecek grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası) ayarlamak için bu yöntemi çağırın.|
 |[putref_Picture](#putref_picture)|Görüntülenecek bir grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası), başvuru sayısı ile ayarlamak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CStockPropImpl`her hisse senedi özelliği için **PUT** ve **Get** yöntemleri sağlar. Bu yöntemler, her bir özellik ile ilişkili veri üyesini ayarlamak ya da almak için gereken kodu ve herhangi bir özellik değiştiğinde kapsayıcıya bildirme ve eşitlemenizi sağlar.
+`CStockPropImpl` her hisse senedi özelliği için **PUT** ve **Get** yöntemleri sağlar. Bu yöntemler, her bir özellik ile ilişkili veri üyesini ayarlamak ya da almak için gereken kodu ve herhangi bir özellik değiştiğinde kapsayıcıya bildirme ve eşitlemenizi sağlar.
 
 Visual Studio, sihirbazları aracılığıyla hisse senedi özellikleri için destek sağlar. Bir denetime hisse senedi özellikleri ekleme hakkında daha fazla bilgi için bkz. [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md).
 
-Geriye `CStockPropImpl` dönük uyumluluk için Ayrıca, ve `put_Window` sırasıyla yalnızca ve `put_HWND`' `get_HWND` ı çağıran yöntemler de sunar `get_Window` . HWND, salt okunurdur `put_HWND` özelliği olması gerektiğinden, varsayılan olarak bu uygulamanın E_FAIL döndürür.
+Geriye dönük uyumluluk için `CStockPropImpl` Ayrıca, sırasıyla `get_HWND` ve `put_HWND`çağıran `get_Window` ve `put_Window` yöntemler de sunar. `put_HWND` varsayılan uygulanması, HWND salt okunurdur özelliği olması gerektiğinden E_FAIL döndürür.
 
 Aşağıdaki özellikler ayrıca bir **PutRef** uygulamasına sahiptir:
 
@@ -194,7 +194,7 @@ Aşağıdaki özellikler ayrıca bir **PutRef** uygulamasına sahiptir:
 
 - Resim
 
-Aynı üç hisse senedi özelliği, karşılık gelen veri üyelerinin tür `CComPtr` olmasını veya atama işleci aracılığıyla doğru arabirim başvurusunu sağlayan başka bir sınıfı gerektirir.
+Aynı üç hisse senedi özelliği, karşılık gelen veri üyelerinin `CComPtr` türünde olmasını veya atama operatörü aracılığıyla doğru arabirim başvurusu sağlayan başka bir sınıfı gerektirir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -208,7 +208,7 @@ Aynı üç hisse senedi özelliği, karşılık gelen veri üyelerinin tür `CCo
 
 **Üstbilgi:** atlctl. h
 
-##  <a name="get_appearance"></a>CStockPropImpl:: get_Appearance
+##  <a name="cstockpropimplget_appearance"></a><a name="get_appearance"></a>CStockPropImpl:: get_Appearance
 
 Denetim tarafından kullanılan boyama stilini (örneğin, düz veya 3B) almak için bu yöntemi çağırın.
 
@@ -223,9 +223,9 @@ Denetimin boyama stilini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_autosize"></a>CStockPropImpl:: get_AutoSize
+##  <a name="cstockpropimplget_autosize"></a><a name="get_autosize"></a>CStockPropImpl:: get_AutoSize
 
 Denetimin diğer bir boyut olup olmayacağını gösteren bayrağın durumunu almak için bu yöntemi çağırın.
 
@@ -240,9 +240,9 @@ Bayrak durumunu alan değişken. DOĞRU, denetimin başka bir boyut olmadığın
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_backcolor"></a>CStockPropImpl:: get_BackColor
+##  <a name="cstockpropimplget_backcolor"></a><a name="get_backcolor"></a>CStockPropImpl:: get_BackColor
 
 Denetimin arka plan rengini almak için bu yöntemi çağırın.
 
@@ -257,9 +257,9 @@ Denetimin arka plan rengini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_backstyle"></a>CStockPropImpl:: get_BackStyle
+##  <a name="cstockpropimplget_backstyle"></a><a name="get_backstyle"></a>CStockPropImpl:: get_BackStyle
 
 Denetimin arka plan stilini saydam ya da donuk almak için bu yöntemi çağırın.
 
@@ -274,9 +274,9 @@ Denetimin arka plan stilini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_bordercolor"></a>CStockPropImpl:: get_BorderColor
+##  <a name="cstockpropimplget_bordercolor"></a><a name="get_bordercolor"></a>CStockPropImpl:: get_BorderColor
 
 Denetimin kenarlık rengini almak için bu yöntemi çağırın.
 
@@ -291,9 +291,9 @@ Denetimin kenarlık rengini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_borderstyle"></a>CStockPropImpl:: get_BorderStyle
+##  <a name="cstockpropimplget_borderstyle"></a><a name="get_borderstyle"></a>CStockPropImpl:: get_BorderStyle
 
 Denetimin kenarlık stilini almak için bu yöntemi çağırın.
 
@@ -308,9 +308,9 @@ Denetimin kenarlık stilini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_bordervisible"></a>CStockPropImpl:: get_BorderVisible
+##  <a name="cstockpropimplget_bordervisible"></a><a name="get_bordervisible"></a>CStockPropImpl:: get_BorderVisible
 
 Denetimin kenarlığının görünür olup olmadığını gösteren bayrağın durumunu almak için bu yöntemi çağırın.
 
@@ -325,9 +325,9 @@ Bayrak durumunu alan değişken. DOĞRU, denetimin kenarlığının görünür o
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_borderwidth"></a>CStockPropImpl:: get_BorderWidth
+##  <a name="cstockpropimplget_borderwidth"></a><a name="get_borderwidth"></a>CStockPropImpl:: get_BorderWidth
 
 Denetimin kenarlığının genişliğini almak için bu yöntemi çağırın.
 
@@ -342,9 +342,9 @@ Denetimin kenarlık genişliğini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_caption"></a>CStockPropImpl:: get_Caption
+##  <a name="cstockpropimplget_caption"></a><a name="get_caption"></a>CStockPropImpl:: get_Caption
 
 Nesnenin Başlık metninde belirtilen metni almak için bu yöntemi çağırın.
 
@@ -359,9 +359,9 @@ Denetimle birlikte görüntülenecek metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_drawmode"></a>CStockPropImpl:: get_DrawMode
+##  <a name="cstockpropimplget_drawmode"></a><a name="get_drawmode"></a>CStockPropImpl:: get_DrawMode
 
 Denetimin çizim modunu almak için bu yöntemi çağırın, örneğin XOR Pen veya ters çevir renkleri.
 
@@ -376,9 +376,9 @@ Denetimin çizim modunu alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_drawstyle"></a>CStockPropImpl:: get_DrawStyle
+##  <a name="cstockpropimplget_drawstyle"></a><a name="get_drawstyle"></a>CStockPropImpl:: get_DrawStyle
 
 Denetimin çizim stilini (örneğin, düz, kesikli veya noktalı) almak için bu yöntemi çağırın.
 
@@ -393,9 +393,9 @@ Denetimin çizim stilini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_drawwidth"></a>CStockPropImpl:: get_DrawWidth
+##  <a name="cstockpropimplget_drawwidth"></a><a name="get_drawwidth"></a>CStockPropImpl:: get_DrawWidth
 
 Denetimin çizim yöntemleri tarafından kullanılan çizim genişliğini (piksel cinsinden) almak için bu yöntemi çağırın.
 
@@ -410,9 +410,9 @@ Denetimin genişlik değeri piksel cinsinden alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_enabled"></a>CStockPropImpl:: get_Enabled
+##  <a name="cstockpropimplget_enabled"></a><a name="get_enabled"></a>CStockPropImpl:: get_Enabled
 
 Denetimin etkin olup olmadığını gösteren bayrağın durumunu almak için bu yöntemi çağırın.
 
@@ -427,9 +427,9 @@ Bayrak durumunu alan değişken. TRUE, denetimin etkinleştirildiğini gösterir
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_fillcolor"></a>CStockPropImpl:: get_FillColor
+##  <a name="cstockpropimplget_fillcolor"></a><a name="get_fillcolor"></a>CStockPropImpl:: get_FillColor
 
 Denetimin Fill rengini almak için bu yöntemi çağırın.
 
@@ -444,9 +444,9 @@ Denetimin dolgusu rengini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_fillstyle"></a>CStockPropImpl:: get_FillStyle
+##  <a name="cstockpropimplget_fillstyle"></a><a name="get_fillstyle"></a>CStockPropImpl:: get_FillStyle
 
 Denetimin Fill stilini (örneğin, düz, saydam veya çapraz tarama) almak için bu yöntemi çağırın.
 
@@ -461,9 +461,9 @@ Denetimin Fill stilini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_font"></a>CStockPropImpl:: get_Font
+##  <a name="cstockpropimplget_font"></a><a name="get_font"></a>CStockPropImpl:: get_Font
 
 Denetimin yazı tipi özelliklerine bir işaretçi almak için bu yöntemi çağırın.
 
@@ -478,9 +478,9 @@ Denetimin yazı tipi özelliklerine bir işaretçi alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_forecolor"></a>CStockPropImpl:: get_ForeColor
+##  <a name="cstockpropimplget_forecolor"></a><a name="get_forecolor"></a>CStockPropImpl:: get_ForeColor
 
 Denetimin ön plan rengini almak için bu yöntemi çağırın.
 
@@ -495,9 +495,9 @@ Denetimlerin ön plan rengini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_hwnd"></a>CStockPropImpl:: get_HWND
+##  <a name="cstockpropimplget_hwnd"></a><a name="get_hwnd"></a>CStockPropImpl:: get_HWND
 
 Denetimle ilişkili pencere tanıtıcısını almak için bu yöntemi çağırın.
 
@@ -512,9 +512,9 @@ Denetimle ilişkili pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_mouseicon"></a>CStockPropImpl:: get_MouseIcon
+##  <a name="cstockpropimplget_mouseicon"></a><a name="get_mouseicon"></a>CStockPropImpl:: get_MouseIcon
 
 Fare denetimin üzerindeyken görüntülenecek grafiğin (simge, bit eşlem veya meta dosyası) resim özelliklerini almak için bu yöntemi çağırın.
 
@@ -529,9 +529,9 @@ Grafiğin resim özelliklerine bir işaretçi alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_mousepointer"></a>CStockPropImpl:: get_MousePointer
+##  <a name="cstockpropimplget_mousepointer"></a><a name="get_mousepointer"></a>CStockPropImpl:: get_MousePointer
 
 Fare denetimin üzerindeyken (örneğin, ok, çapraz veya kum saati) fare işaretçisinin türünü almak için bu yöntemi çağırın.
 
@@ -546,9 +546,9 @@ Fare işaretçisinin türünü alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_picture"></a>CStockPropImpl:: get_Picture
+##  <a name="cstockpropimplget_picture"></a><a name="get_picture"></a>CStockPropImpl:: get_Picture
 
 Görüntülenecek grafiğin (simge, bit eşlem veya meta dosyası) resim özelliklerine yönelik bir işaretçi almak için bu yöntemi çağırın.
 
@@ -563,9 +563,9 @@ Resmin özelliklerine bir işaretçi alan değişken. Daha fazla ayrıntı için
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_readystate"></a>CStockPropImpl:: get_ReadyState
+##  <a name="cstockpropimplget_readystate"></a><a name="get_readystate"></a>CStockPropImpl:: get_ReadyState
 
 Denetimin Ready durumunu (örneğin, yükleme veya yükleme) almak için bu yöntemi çağırın.
 
@@ -580,9 +580,9 @@ Denetimin Ready durumunu alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_tabstop"></a>CStockPropImpl:: get_TabStop
+##  <a name="cstockpropimplget_tabstop"></a><a name="get_tabstop"></a>CStockPropImpl:: get_TabStop
 
 Denetimin bir sekme durağı olup olmadığını gösteren bayrağın durumunu almak için bu yöntemi çağırın.
 
@@ -597,9 +597,9 @@ Bayrak durumunu alan değişken. DOĞRU, denetimin bir sekme durağı olduğunu 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_text"></a>CStockPropImpl:: get_Text
+##  <a name="cstockpropimplget_text"></a><a name="get_text"></a>CStockPropImpl:: get_Text
 
 Denetimle birlikte görüntülenecek metni almak için bu yöntemi çağırın.
 
@@ -614,9 +614,9 @@ Denetimle birlikte görüntülenen metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_valid"></a>CStockPropImpl:: getvalid
+##  <a name="cstockpropimplgetvalid"></a><a name="get_valid"></a>CStockPropImpl:: getvalid
 
 Denetimin geçerli olup olmadığını gösteren bayrağın durumunu almak için bu yöntemi çağırın.
 
@@ -631,9 +631,9 @@ Bayrak durumunu alan değişken. TRUE, denetimin geçerli olduğunu gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="get_window"></a>CStockPropImpl:: get_Window
+##  <a name="cstockpropimplget_window"></a><a name="get_window"></a>CStockPropImpl:: get_Window
 
 Denetimle ilişkili pencere tanıtıcısını almak için bu yöntemi çağırın. [CStockPropImpl:: get_HWND](#get_hwnd)ile özdeş.
 
@@ -648,9 +648,9 @@ Denetimle ilişkili pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_appearance"></a>CStockPropImpl::p ut_Appearance
+##  <a name="cstockpropimplput_appearance"></a><a name="put_appearance"></a>CStockPropImpl::p ut_Appearance
 
 Denetim tarafından kullanılan boyama stilini (örneğin, düz veya 3B) ayarlamak için bu yöntemi çağırın.
 
@@ -665,9 +665,9 @@ Denetim tarafından kullanılacak yeni boyama stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_autosize"></a>CStockPropImpl::p ut_AutoSize
+##  <a name="cstockpropimplput_autosize"></a><a name="put_autosize"></a>CStockPropImpl::p ut_AutoSize
 
 Denetimin başka bir boyut olup olmayacağını gösteren bayrak değerini ayarlamak için bu yöntemi çağırın.
 
@@ -682,9 +682,9 @@ Denetim başka bir boyut değilse TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_backcolor"></a>CStockPropImpl::p ut_BackColor
+##  <a name="cstockpropimplput_backcolor"></a><a name="put_backcolor"></a>CStockPropImpl::p ut_BackColor
 
 Denetimin arka plan rengini ayarlamak için bu yöntemi çağırın.
 
@@ -699,9 +699,9 @@ Yeni denetim arka plan rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_backstyle"></a>CStockPropImpl::p ut_BackStyle
+##  <a name="cstockpropimplput_backstyle"></a><a name="put_backstyle"></a>CStockPropImpl::p ut_BackStyle
 
 Denetimin arka plan stilini ayarlamak için bu yöntemi çağırın.
 
@@ -716,9 +716,9 @@ Yeni denetim arka plan stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_bordercolor"></a>CStockPropImpl::p ut_BorderColor
+##  <a name="cstockpropimplput_bordercolor"></a><a name="put_bordercolor"></a>CStockPropImpl::p ut_BorderColor
 
 Denetimin kenarlık rengini ayarlamak için bu yöntemi çağırın.
 
@@ -729,13 +729,13 @@ HRESULT STDMETHODCALLTYPE put_BorderColor(OLE_COLOR clrBorderColor);
 ### <a name="parameters"></a>Parametreler
 
 *clrBorderColor*<br/>
-Yeni kenarlık rengi. OLE_COLOR veri türü dahili olarak 32 bitlik bir uzun tamsayı olarak temsil edilir.
+Yeni kenarlık rengi. OLE_COLOR veri türü dahili olarak 32 bitlik uzun tamsayı olarak temsil edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_borderstyle"></a>CStockPropImpl::p ut_BorderStyle
+##  <a name="cstockpropimplput_borderstyle"></a><a name="put_borderstyle"></a>CStockPropImpl::p ut_BorderStyle
 
 Denetimin kenarlık stilini ayarlamak için bu yöntemi çağırın.
 
@@ -750,9 +750,9 @@ Yeni kenarlık stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_bordervisible"></a>CStockPropImpl::p ut_BorderVisible
+##  <a name="cstockpropimplput_bordervisible"></a><a name="put_bordervisible"></a>CStockPropImpl::p ut_BorderVisible
 
 Denetimin kenarlığının görünür olup olmadığını gösteren bayrağın değerini ayarlamak için bu yöntemi çağırın.
 
@@ -767,9 +767,9 @@ Kenarlığın görünür olması durumunda TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_borderwidth"></a>CStockPropImpl::p ut_BorderWidth
+##  <a name="cstockpropimplput_borderwidth"></a><a name="put_borderwidth"></a>CStockPropImpl::p ut_BorderWidth
 
 Denetimin kenarlığının genişliğini ayarlamak için bu yöntemi çağırın.
 
@@ -784,9 +784,9 @@ Denetimin kenarlığının yeni genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_caption"></a>CStockPropImpl::p ut_Caption
+##  <a name="cstockpropimplput_caption"></a><a name="put_caption"></a>CStockPropImpl::p ut_Caption
 
 Denetimiyle görüntülenecek metni ayarlamak için bu yöntemi çağırın.
 
@@ -801,9 +801,9 @@ Denetimle birlikte görüntülenecek metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_drawmode"></a>CStockPropImpl::p ut_DrawMode
+##  <a name="cstockpropimplput_drawmode"></a><a name="put_drawmode"></a>CStockPropImpl::p ut_DrawMode
 
 Denetimin çizim modunu ayarlamak için bu yöntemi çağırın, örneğin XOR Pen veya ters çevir renkleri.
 
@@ -818,9 +818,9 @@ Denetim için yeni çizim modu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_drawstyle"></a>CStockPropImpl::p ut_DrawStyle
+##  <a name="cstockpropimplput_drawstyle"></a><a name="put_drawstyle"></a>CStockPropImpl::p ut_DrawStyle
 
 Denetimin çizim stilini (örneğin, düz, kesikli veya noktalı) ayarlamak için bu yöntemi çağırın.
 
@@ -835,9 +835,9 @@ Denetim için yeni çizim stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_drawwidth"></a>CStockPropImpl::p ut_DrawWidth
+##  <a name="cstockpropimplput_drawwidth"></a><a name="put_drawwidth"></a>CStockPropImpl::p ut_DrawWidth
 
 Denetimin çizim yöntemleri tarafından kullanılan genişliği (piksel cinsinden) ayarlamak için bu yöntemi çağırın.
 
@@ -852,9 +852,9 @@ Denetimin çizim yöntemleri tarafından kullanılacak yeni Genişlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_enabled"></a>CStockPropImpl::p ut_Enabled
+##  <a name="cstockpropimplput_enabled"></a><a name="put_enabled"></a>CStockPropImpl::p ut_Enabled
 
 Denetimin etkin olup olmadığını gösteren bayrağın değerini ayarlamak için bu yöntemi çağırın.
 
@@ -869,9 +869,9 @@ Denetim etkinse TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_fillcolor"></a>CStockPropImpl::p ut_FillColor
+##  <a name="cstockpropimplput_fillcolor"></a><a name="put_fillcolor"></a>CStockPropImpl::p ut_FillColor
 
 Denetimin Fill rengini ayarlamak için bu yöntemi çağırın.
 
@@ -886,9 +886,9 @@ Denetimin yeni dolgusu rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_fillstyle"></a>CStockPropImpl::p ut_FillStyle
+##  <a name="cstockpropimplput_fillstyle"></a><a name="put_fillstyle"></a>CStockPropImpl::p ut_FillStyle
 
 Denetimin Fill stilini ayarlamak için bu yöntemi çağırın, örneğin, düz, saydam veya çapraz taranmış.
 
@@ -903,9 +903,9 @@ Denetimin yeni Fill stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_font"></a>CStockPropImpl::p ut_Font
+##  <a name="cstockpropimplput_font"></a><a name="put_font"></a>CStockPropImpl::p ut_Font
 
 Denetimin yazı tipi özelliklerini ayarlamak için bu yöntemi çağırın.
 
@@ -920,9 +920,9 @@ Denetimin yazı tipi özelliklerine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_forecolor"></a>CStockPropImpl::p ut_ForeColor
+##  <a name="cstockpropimplput_forecolor"></a><a name="put_forecolor"></a>CStockPropImpl::p ut_ForeColor
 
 Denetimin ön plan rengini ayarlamak için bu yöntemi çağırın.
 
@@ -937,11 +937,11 @@ Denetimin yeni ön plan rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_hwnd"></a>CStockPropImpl::p ut_HWND
+##  <a name="cstockpropimplput_hwnd"></a><a name="put_hwnd"></a>CStockPropImpl::p ut_HWND
 
-Bu yöntem E_FAıL döndürür.
+Bu yöntem E_FAIL döndürür.
 
 ```
 HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
@@ -954,13 +954,13 @@ Ayrılamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_FAıL döndürür.
+E_FAIL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Pencere tutamacı salt okunurdur.
 
-##  <a name="put_mouseicon"></a>CStockPropImpl::p ut_MouseIcon
+##  <a name="cstockpropimplput_mouseicon"></a><a name="put_mouseicon"></a>CStockPropImpl::p ut_MouseIcon
 
 Fare denetimin üzerindeyken görüntülenecek grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası) ayarlamak için bu yöntemi çağırın.
 
@@ -975,9 +975,9 @@ Grafiğin resim özelliklerine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_mousepointer"></a>CStockPropImpl::p ut_MousePointer
+##  <a name="cstockpropimplput_mousepointer"></a><a name="put_mousepointer"></a>CStockPropImpl::p ut_MousePointer
 
 Fare denetimin üzerindeyken (örneğin, ok, çapraz veya kum saati) fare işaretçisinin türünü ayarlamak için bu yöntemi çağırın.
 
@@ -992,9 +992,9 @@ Fare işaretçisinin türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_picture"></a>CStockPropImpl::p ut_Picture
+##  <a name="cstockpropimplput_picture"></a><a name="put_picture"></a>CStockPropImpl::p ut_Picture
 
 Görüntülenecek grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası) ayarlamak için bu yöntemi çağırın.
 
@@ -1009,9 +1009,9 @@ Resmin özelliklerine yönelik bir işaretçi. Daha fazla ayrıntı için bkz. [
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_readystate"></a>CStockPropImpl::p ut_ReadyState
+##  <a name="cstockpropimplput_readystate"></a><a name="put_readystate"></a>CStockPropImpl::p ut_ReadyState
 
 Denetimin Ready durumunu ayarlamak için bu yöntemi çağırın, örneğin, yükleme veya yükleme.
 
@@ -1026,9 +1026,9 @@ Denetimin Ready durumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_tabstop"></a>CStockPropImpl::p ut_TabStop
+##  <a name="cstockpropimplput_tabstop"></a><a name="put_tabstop"></a>CStockPropImpl::p ut_TabStop
 
 Denetimin bir sekme durağı olup olmadığını gösteren bayrağı ayarlamak için bu yöntemi çağırın.
 
@@ -1043,9 +1043,9 @@ Denetim bir sekme durağı ise TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_text"></a>CStockPropImpl::p ut_Text
+##  <a name="cstockpropimplput_text"></a><a name="put_text"></a>CStockPropImpl::p ut_Text
 
 Denetimiyle görüntülenen metni ayarlamak için bu yöntemi çağırın.
 
@@ -1060,9 +1060,9 @@ Denetimle birlikte görüntülenen metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_valid"></a>CStockPropImpl::p utvalid
+##  <a name="cstockpropimplputvalid"></a><a name="put_valid"></a>CStockPropImpl::p utvalid
 
 Denetimin geçerli olup olmadığını gösteren bayrağı ayarlamak için bu yöntemi çağırın.
 
@@ -1077,11 +1077,11 @@ Denetim geçerliyse TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="put_window"></a>CStockPropImpl::p ut_Window
+##  <a name="cstockpropimplput_window"></a><a name="put_window"></a>CStockPropImpl::p ut_Window
 
-Bu yöntem, E_FAıL döndüren [CStockPropImpl::P ut_hwnd](#put_hwnd)öğesini çağırır.
+Bu yöntem, E_FAIL döndüren [CStockPropImpl::p ut_HWND](#put_hwnd)çağırır.
 
 ```
 HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
@@ -1094,13 +1094,13 @@ Pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_FAıL döndürür.
+E_FAIL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Pencere tutamacı salt okunurdur.
 
-##  <a name="putref_font"></a>CStockPropImpl::p utref_Font
+##  <a name="cstockpropimplputref_font"></a><a name="putref_font"></a>CStockPropImpl::p utref_Font
 
 Denetimin yazı tipi özelliklerini bir başvuru sayısıyla ayarlamak için bu yöntemi çağırın.
 
@@ -1115,13 +1115,13 @@ Denetimin yazı tipi özelliklerine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CStockPropImpl::P ut_font](#put_font), ancak başvuru sayısı ile aynıdır.
+[CStockPropImpl::p ut_Font](#put_font), ancak başvuru sayısı ile aynı.
 
-##  <a name="putref_mouseicon"></a>CStockPropImpl::p utref_MouseIcon
+##  <a name="cstockpropimplputref_mouseicon"></a><a name="putref_mouseicon"></a>CStockPropImpl::p utref_MouseIcon
 
 Fare denetimin üzerindeyken, bir başvuru sayısıyla görüntülenecek grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası) ayarlamak için bu yöntemi çağırın.
 
@@ -1136,13 +1136,13 @@ Grafiğin resim özelliklerine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CStockPropImpl::P ut_mouseicon](#put_mouseicon), ancak başvuru sayısı ile aynıdır.
+[CStockPropImpl::p ut_MouseIcon](#put_mouseicon), ancak başvuru sayısı ile aynı.
 
-##  <a name="putref_picture"></a>CStockPropImpl::p utref_Picture
+##  <a name="cstockpropimplputref_picture"></a><a name="putref_picture"></a>CStockPropImpl::p utref_Picture
 
 Görüntülenecek bir grafiğin resim özelliklerini (simge, bit eşlem veya meta dosyası), başvuru sayısı ile ayarlamak için bu yöntemi çağırın.
 
@@ -1157,11 +1157,11 @@ Resmin özelliklerine yönelik bir işaretçi. Daha fazla ayrıntı için bkz. [
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CStockPropImpl::P ut_picture](#put_picture), ancak başvuru sayısı ile aynıdır.
+[CStockPropImpl::p ut_Picture](#put_picture), ancak başvuru sayısı ile aynı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -4,12 +4,12 @@ ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - CPP
-ms.openlocfilehash: 955a445fbc29fca479a64684b4b60909234a0b38
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: b9eea6dc466db202ee388a2bfb2e59632e210b7f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418685"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076173"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
@@ -17,7 +17,7 @@ C++ Temel yönergeler, uzmanlar ve tasarımcılar tarafından C++ C++ oluşturul
 
 ## <a name="the-c-core-guidelines-project"></a>C++ Temel yönergeler projesi
 
-Bjarne Stroustrup ve diğerleri tarafından oluşturulan C++ temel yönergeler, modern C++ bir şekilde güvenli ve etkili bir şekilde kullanılması için bir kılavuzdur. Yönergeler statik tür güvenliğini ve kaynak güvenliğini vurgular. Bu, dilin hata olasılığı olan kısımlarını ortadan kaldırmaya veya en aza indirmenin yollarını belirler ve kodunuzun daha basit ve daha iyi performans sağlamak için güvenilir bir yol sunar. Bu yönergeler standart C++ temel tarafından korunur. Daha fazla bilgi edinmek için, bkz. belge, [ C++ temel yönergeler](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)ve GitHub C++ 'daki temel yönergeler belge proje dosyalarına [](https://github.com/isocpp/CppCoreGuidelines)erişin.
+Bjarne Stroustrup ve diğerleri tarafından oluşturulan C++ temel yönergeler, modern C++ bir şekilde güvenli ve etkili bir şekilde kullanılması için bir kılavuzdur. Yönergeler statik tür güvenliğini ve kaynak güvenliğini vurgular. Bu, dilin hata olasılığı olan kısımlarını ortadan kaldırmaya veya en aza indirmenin yollarını belirler ve kodunuzun daha basit ve daha iyi performans sağlamak için güvenilir bir yol sunar. Bu yönergeler standart C++ temel tarafından korunur. Daha fazla bilgi edinmek için, bkz. belge, [ C++ temel yönergeler](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)ve GitHub C++ 'daki temel yönergeler belge proje dosyalarına [GitHub](https://github.com/isocpp/CppCoreGuidelines)erişin.
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Kod çözümlemede C++ çekirdek denetim yönergelerini etkinleştirme
 
@@ -166,7 +166,7 @@ Microsoft C++ DERLEYICISININ GSL gösterme özniteliği için sınırlı bir des
 
 `/analyze-`belirterek, bir dosyanın tüm kod analizini geçici olarak devre dışı bırakmak için komut satırı seçeneğini kullanabilirsiniz. Bu, Kod analizini daha sonra yeniden etkinleştirmenizi hatırlatır ve ' */analiz ze-' ile '/Analyze ' değerini geçersiz kılan*bir uyarı oluşturur.
 
-## <a name="corecheck_per_file"></a>Belirli proje C++ dosyalarında temel kılavuz denetleyicisini etkinleştirin
+## <a name="enable-the-c-core-guidelines-checker-on-specific-project-files"></a><a name="corecheck_per_file"></a>Belirli proje C++ dosyalarında temel kılavuz denetleyicisini etkinleştirin
 
 Bazen odaklanmış kod analizi yapmak ve Visual Studio IDE 'yi kullanmaya devam etmek faydalı olabilir. Aşağıdaki örnek senaryo, derleme süresini kaydetmek ve sonuçların filtrelanmasını kolaylaştırmak için büyük projeler için kullanılabilir:
 
@@ -237,7 +237,7 @@ Birkaç ortam değişkeni ayarlamanız ve derleyici için uygun komut satırı s
 
 Kılavuz Desteği kitaplığı, temel yönergeleri takip etmenize yardımcı olmak için tasarlanmıştır. GSL, hataya açık olan yapıları daha güvenli alternatifler ile değiştirmenize olanak tanıyan tanımlar içerir. Örneğin, parametrelerin `T*, length` çiftini `span<T>` türüyle değiştirebilirsiniz. GSL [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl)adresinden kullanılabilir. Kitaplık açık kaynağıdır, bu sayede kaynakları görüntüleyebilir, yorum yapabilir veya katkıda bulunabilirsiniz. Proje [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)bulunabilir.
 
-## <a name="vs2015_corecheck"></a>Visual Studio C++ 2015 projelerinde çekirdek denetim yönergelerini kullanma
+## <a name="use-the-c-core-check-guidelines-in-visual-studio-2015-projects"></a><a name="vs2015_corecheck"></a>Visual Studio C++ 2015 projelerinde çekirdek denetim yönergelerini kullanma
 
 Visual Studio 2015 kullanıyorsanız, C++ çekirdek denetimi kod analizi kural kümeleri varsayılan olarak yüklenmez. Visual Studio 2015 ' de çekirdek denetimi kod analizi araçlarını etkinleştirebilmeniz C++ için bazı ek adımlar gerçekleştirmeniz gerekir. Microsoft, bir NuGet paketi kullanarak Visual Studio 2015 projeleri için destek sağlar. Paketin adı Microsoft. CppCoreCheck olarak adlandırılmıştır ve [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck)adresinden kullanılabilir. Bu paket, güncelleştirme 1 ile en az Visual Studio 2015 yüklü olmasını gerektirir.
 

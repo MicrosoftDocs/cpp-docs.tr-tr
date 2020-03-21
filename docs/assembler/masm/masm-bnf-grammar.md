@@ -4,12 +4,12 @@ description: X için MASG 'nin BNF açıklaması.
 ms.date: 12/17/2019
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), BNF reference
-ms.openlocfilehash: 29eae0b110f99f1f417e153f18aa2ac3aff5c69b
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 1a9577292e60db73838e5e6b850a4634db959fd6
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75322808"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075459"
 ---
 # <a name="microsoft-macro-assembler-bnf-grammar"></a>Microsoft Macro Assembler BNF dilbilgisi
 
@@ -142,7 +142,7 @@ BNF dilbilgisi özyinelemeli tanımlara izin verir. Örneğin, dilbilgisi, quali
 &nbsp;&nbsp;&nbsp;&nbsp;**PopContext** *contextıtemlist* ;;
 
 *ContextItem*\
-&nbsp;&nbsp;&nbsp;&nbsp; **, | ** **CPU** ** | ** **listesini** | **varsayar**
+&nbsp;&nbsp;&nbsp;&nbsp; **, | ** **CPU** ** | ** **listesini** | **varsayar** | 
 
 *Contextıtemlist*\
 &nbsp;&nbsp;&nbsp;&nbsp;*contextıtem* | *contextıtemlist* , *ContextItem*
@@ -256,7 +256,7 @@ BNF dilbilgisi özyinelemeli tanımlara izin verir. Örneğin, dilbilgisi, quali
 &nbsp;&nbsp;&nbsp;&nbsp;| **SEG** *E10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **Lroffset** *E10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **tür** *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Bu** *E10* | 
+&nbsp;&nbsp;&nbsp;&nbsp;**Bu** *E10* | \
 &nbsp;&nbsp;&nbsp;&nbsp;| *E09* **PTR** *E10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *E09* : *E10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *E10*
@@ -274,7 +274,7 @@ BNF dilbilgisi özyinelemeli tanımlara izin verir. Örneğin, dilbilgisi, quali
 &nbsp;&nbsp;&nbsp;&nbsp;| **Boyut** *sizearg*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **SIZEOF** *sizearg*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **uzunluk** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **lengthıd**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **lengthıd** *id*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *Recordconst*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *dize*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *sabit*\
@@ -434,8 +434,8 @@ BNF dilbilgisi özyinelemeli tanımlara izin verir. Örneğin, dilbilgisi, quali
 &nbsp;&nbsp;&nbsp;&nbsp;| *Titledir* | *Pagedir* | *listdir*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *Crefdir* | *yankı dizini*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *Ifdir* | *Errordir* | *includeDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Macrodir* | makro *çağrısı* |  *purgeDir* | 
-| *Macroforc* için * | &nbsp;* &nbsp; &nbsp; | &nbsp;\
+&nbsp;&nbsp;&nbsp;&nbsp;| *Macrodir* | makro *çağrısı* | *macroRepeat* *purgeDir* | \
+| *Macroforc* için * | &nbsp;* &nbsp;*macroFor* &nbsp; | &nbsp;\
 &nbsp;&nbsp;&nbsp;&nbsp;| *diğerad dir*
 
 *Gpregister*\
@@ -620,7 +620,7 @@ Tüm ayrılmış kelimeyi &nbsp;&nbsp;&nbsp;&nbsp;.
 &nbsp;&nbsp;&nbsp;&nbsp;*ID* ⟦: *parmtype* ⟧
 
 *Makroparmlist*\
-&nbsp;&nbsp;&nbsp;&nbsp; | *Macroparmlist* , ⟦;; ⟧ *Macropara*
+&nbsp;&nbsp;&nbsp;&nbsp;*macroParm* | *Macroparmlist* , ⟦;; ⟧ *Macropara*
 
 *makro procId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
@@ -676,7 +676,7 @@ Tüm ayrılmış kelimeyi &nbsp;&nbsp;&nbsp;&nbsp;.
 &nbsp;&nbsp;&nbsp;&nbsp;*kimliği* ;; \
 
 en *yakın*\
-&nbsp;&nbsp;&nbsp;&nbsp;**yakın** | 
+&nbsp;&nbsp;&nbsp;&nbsp;**yakın** | **FAR**
 
 *Nestedstruct*\
 &nbsp;&nbsp;&nbsp;&nbsp;*Structhdr* ⟦ *ID* ⟧;; \
@@ -875,7 +875,7 @@ en *yakın*\
 &nbsp;&nbsp;&nbsp;&nbsp;**bayt** | **WORD** | **DWORD** | **para** | **sayfası**
 
 *Segattrib*\
-&nbsp;&nbsp;&nbsp;&nbsp;**genel** | **Stack** | , *constExpr* | PRIVATE **üzerinde** **ortak** |  **bellek** | 
+&nbsp;&nbsp;&nbsp;&nbsp;**genel** | **Stack** | , *constExpr* | PRIVATE **üzerinde** **ortak** | **PRIVATE** **bellek** | 
 
 *Segdir*\
 &nbsp;&nbsp;&nbsp;&nbsp; **. KOD**\
@@ -1058,7 +1058,7 @@ en *yakın*\
 &nbsp;&nbsp;&nbsp;&nbsp; **. UNTILCXZ** ⟦ *cxzexpr* ⟧;;
 
 *Usesregs*\
-&nbsp;&nbsp;&nbsp;&nbsp; *reglist* kullanır
+&nbsp;&nbsp;&nbsp;&nbsp;**USES** *reglist* kullanır
 
 *Whileblock*\
 &nbsp;&nbsp;&nbsp;&nbsp; **.\**
@@ -1071,4 +1071,3 @@ en *yakın*\
 
 *Xmmregister*\
 &nbsp;&nbsp;&nbsp;&nbsp;XMM0 | XMM1 | XMM2 | XMM3 | XMM4 | XMM5 | XMM6 | XMM7 | XMM8 | XMM9 | XMM10 | XMM11 | XMM12 | XMM13 | XMM14 | XMM15\
-

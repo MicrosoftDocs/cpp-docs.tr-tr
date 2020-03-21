@@ -24,16 +24,16 @@ f1_keywords:
 - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
 - vc.project.AdditionalOptionsPage
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: d9b074667614da8d83fae7b00b49bf63c9390b69
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 20ca118b3aacb02333d49b67d13de30f11dc5d8d
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927687"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079492"
 ---
 # <a name="manifest-tool-property-pages"></a>Bildirim Aracı Özellik Sayfaları
 
-Bu sayfaları, [mt. exe](/windows/win32/sbscs/mt-exe)için genel seçenekleri belirtmek üzere kullanın. Bu sayfalar **Proje** > **özellikleri** > **yapılandırma**özellikleribildirim > **Aracı**altında bulunur.
+Bu sayfaları, [mt. exe](/windows/win32/sbscs/mt-exe)için genel seçenekleri belirtmek üzere kullanın. Bu sayfalar, **proje** > **özellikleri** > **yapılandırma özellikleri** > **bildirim aracı**altında bulunur.
 
 ## <a name="general-property-page"></a>Genel özellik sayfası
 
@@ -47,11 +47,11 @@ Bu sayfaları, [mt. exe](/windows/win32/sbscs/mt-exe)için genel seçenekleri be
 
 ### <a name="assembly-identity"></a>Derleme kimliği * *
 
-AssemblyIdentity > öğesi için [ \<](/visualstudio/deployment/assemblyidentity-element-clickonce-application)öznitelikleri içeren bir kimlik dizesi belirtmek için/Identity seçeneğini kullanır. Bir kimlik `name` dizesi, öznitelik değeri ile başlar ve ardından *öznitelik* = *değeri* çiftleri gelir. Bir kimlik dizesindeki öznitelikler virgülle ayrılır.
+, [\<assemblyıdentity > öğesi](/visualstudio/deployment/assemblyidentity-element-clickonce-application)için öznitelikleri içeren bir kimlik dizesi belirtmek için/Identity seçeneğini kullanır. Bir kimlik dizesi `name` özniteliği değeri ile başlar ve ardından *öznitelik* = *değer* çiftleri gelir. Bir kimlik dizesindeki öznitelikler virgülle ayrılır.
 
-Bu örnek bir kimlik dizesidir:`Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
+Bu örnek bir kimlik dizesidir: `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
 
-## <a name="input-and-output-property-page"></a>Giriş ve çıkış Özellik sayfası     
+## <a name="input-and-output-property-page"></a>Giriş ve çıkış Özellik sayfası
 
 ###  <a name="additional-manifest-files"></a>Ek bildirim dosyaları
 
@@ -59,7 +59,7 @@ Bildirim Aracı tarafından işlenecek veya birleştirilecek ek bildirim dosyala
 
 ###  <a name="input-resource-manifests"></a>Giriş kaynağı bildirimleri
 
-, Bildirim aracına girmek için RT_MANIFEST türünde bir kaynağın tam yolunu belirtmek için **/ınputresource** seçeneğini kullanır. Yolun ardından belirtilen kaynak KIMLIĞI gelebilir. Örneğin:
+, Bildirim aracına girmek için RT_MANIFEST türünde bir kaynağın tam yolunu belirtmek için **/ınputresource** seçeneğini kullanır. Yolun ardından belirtilen kaynak KIMLIĞI gelebilir. Örnek:
 
 `dll_with_manifest.dll;#1`
 
@@ -99,13 +99,13 @@ Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu 
 
 **Yapabileceği**
 
-- **Yok.**
+- **Seçim**
 - **Yüksek DPı kullanan**
 - **Monitör başına yüksek DPı kullanan**
 
 ## <a name="isolated-com-property-page"></a>Yalıtılmış COM özellik sayfası
 
-Yalıtılmış com hakkında daha fazla bilgi için bkz. [Yalıtılmış uygulamalar](/windows/win32/SbsCs/isolated-applications) ve [nasıl yapılır: COM bileşenlerini](../how-to-build-isolated-applications-to-consume-com-components.md)tüketmek için yalıtılmış uygulamalar oluşturun.
+Yalıtılmış COM hakkında daha fazla bilgi için bkz. [yalıtılmış](/windows/win32/SbsCs/isolated-applications) uygulamalar ve [nasıl yapılır: com bileşenlerini kullanmak Için yalıtılmış uygulamalar oluşturma](../how-to-build-isolated-applications-to-consume-com-components.md).
 
 ###  <a name="type-library-file"></a>Tür kitaplığı dosyası
 
@@ -133,10 +133,9 @@ Dosya öğelerinde belirtilen dosyaların karmasını hesaplar ve karma öznitel
 
 Dosya karmalarını güncelleştirirken kullanılacak arama yolunu belirtir.
 
-###  <a name="additional-options"></a>Ek seçenekler
+###  <a name="additional-options"></a>Ek Seçenekler
 
-Ek seçenekler
-
+Ek Seçenekler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,17 +1,17 @@
 ---
-title: Windows 'da Linux programlarını çalıştırma
+title: Windows’da Linux programları çalıştırma
 ms.date: 07/31/2019
 helpviewer_keywords:
 - Linux [C++], porting to Win32
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: 6b59d7685aaada3ba44c03da2e5c27c75c8a473a
-ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
+ms.openlocfilehash: 1c1807cee07db479a91f45e21434b3ba13be2ab6
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68682383"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076898"
 ---
-# <a name="running-linux-programs-on-windows"></a>Windows 'da Linux programlarını çalıştırma
+# <a name="running-linux-programs-on-windows"></a>Windows’da Linux programları çalıştırma
 
 Windows üzerinde bir Linux programı çalıştırmak için şu seçeneklere sahipsiniz:
 
@@ -20,4 +20,3 @@ Windows üzerinde bir Linux programı çalıştırmak için şu seçeneklere sah
 - Linux 'tan Windows Sistem çağrılarına bir çeviri katmanı sağlayan [MinGW](http://MinGW.org/) veya [MinGW-W64](https://MinGW-w64.org/doku.php) ortamlarında GCC veya Clang kullanarak programı derleyin.
 - Windows üzerinde MinGW veya MinGW-W64 ile karşılaştırıldığında daha tam bir Linux ortamı sağlayan [Cygwin](https://www.cygwin.com/) ortamındaki GCC veya Clang kullanarak programı derleyin ve çalıştırın.
 - Linux 'tan kodunuzu el ile bağlantı noktası ile Microsoft C++ (MSVC) kullanarak Windows için derleyin. Bu, platformdan bağımsız kodu ayrı kitaplıklara yeniden düzenlemeyi ve sonra Windows 'a özel kod (örneğin, Win32 veya DirectX API 'Leri) kullanmak için Linux 'a özgü kodu yeniden yazmayı içerir. Yüksek performanslı grafikler gerektiren uygulamalar için bu büyük olasılıkla en iyi seçenektir.
-

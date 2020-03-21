@@ -200,16 +200,16 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 199634997397cca0008c60843b5d977633277331
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: b9f1e5c4c5600fa07d2f9c5222bf57fb43446955
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422138"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076835"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritması&gt; işlevleri
 
-## <a name="adjacent_find"></a>adjacent_find
+## <a name="adjacent_find"></a><a name="adjacent_find"></a>adjacent_find
 
 Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.
 
@@ -327,7 +327,7 @@ There are two adjacent elements where the second is twice the first.
 They have values of 10 & 20.
 ```
 
-## <a name="all_of"></a>all_of
+## <a name="all_of"></a><a name="all_of"></a>all_of
 
 Verilen aralıktaki her bir öğede bir koşul olduğunda **true** döndürür.
 
@@ -403,7 +403,7 @@ li = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
 
-## <a name="any_of"></a>any_of
+## <a name="any_of"></a><a name="any_of"></a>any_of
 
 Bir koşul, belirtilen öğe aralığında en az bir kez olduğunda **true** döndürür.
 
@@ -480,7 +480,7 @@ li = ( 51 41 11 21 20 )
 There's an even element in li.
 ```
 
-## <a name="binary_search"></a>binary_search
+## <a name="binary_search"></a><a name="binary_search"></a>binary_search
 
 Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığını ya da bir ikili koşula göre belirtilen anlamda ona eşdeğer bir öğe olup olmadığını sınar.
 
@@ -619,7 +619,7 @@ Ordered using mod_lesser, vector v1 = ( 0 -1 1 -2 2 3 4 )
 There is an element with a value equivalent to -3 under mod_lesser.
 ```
 
-## <a name="clamp"></a>Clamp
+## <a name="clamp"></a><a name="clamp"></a>Clamp
 
 Bir değeri üst ve alt sınır ile karşılaştırır ve sınırlar arasındaysa değere bir başvuru ya da değerin üstünde ya da altında ise, üst veya alt sınır başvurusu döndürür.
 
@@ -660,7 +660,7 @@ Değerlerin Clamp *değerine* göre üst sınırı.
 
 *Sınır* *daha*küçüktür ise, bu davranış tanımsızdır.
 
-## <a name="copy"></a>kopya
+## <a name="copy"></a><a name="copy"></a>kopya
 
 Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.
 
@@ -763,7 +763,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 ```
 
-## <a name="copy_backward"></a>copy_backward
+## <a name="copy_backward"></a><a name="copy_backward"></a>copy_backward
 
 Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.
 
@@ -860,7 +860,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
 ```
 
-## <a name="copy_if"></a>copy_if
+## <a name="copy_if"></a><a name="copy_if"></a>copy_if
 
 Bir dizi öğe içinde, belirtilen koşul için **doğru** olan öğeleri kopyalar.
 
@@ -939,7 +939,7 @@ int main()
 
     // is_even checks if the element is even.
     auto is_even = [](int const elem) { return !(elem % 2); };
-    // use copy_if to select only even elements from li 
+    // use copy_if to select only even elements from li
     // and copy them to le, starting from le's begin position
     auto ec = copy_if(li.begin(),li.end(), le.begin(), is_even);
     le.resize(std::distance(le.begin(), ec));  // shrink le to new size
@@ -965,7 +965,7 @@ Even numbers are le = ( 46 88 72 60 40 84 )
 Odd numbers are lo = ( 59 79 71 5 )
 ```
 
-## <a name="copy_n"></a>copy_n
+## <a name="copy_n"></a><a name="copy_n"></a>copy_n
 
 Belirtilen sayıda öğeyi kopyalar.
 
@@ -1035,7 +1035,7 @@ int main()
 dandelion + badger = danger
 ```
 
-## <a name="count"></a>biriktirme
+## <a name="count"></a><a name="count"></a>biriktirme
 
 Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.
 
@@ -1116,7 +1116,7 @@ v1 = ( 10 20 10 40 10 )
 The number of 10s in v2 is: 3.
 ```
 
-## <a name="count_if"></a>count_if
+## <a name="count_if"></a><a name="count_if"></a>count_if
 
 Değerleri belirtilen koşula uyan bir aralıktaki öğelerin sayısını döndürür.
 
@@ -1201,7 +1201,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.
 ```
 
-## <a name="equal"></a>sıfıra
+## <a name="equal"></a><a name="equal"></a>sıfıra
 
 Bir ikili koşula göre belirtilen anlamda, eşitlik veya denklik için öğe ile iki Aralık öğesini karşılaştırır.
 
@@ -1336,7 +1336,7 @@ int main()
 }
 ```
 
-## <a name="equal_range"></a>equal_range
+## <a name="equal_range"></a><a name="equal_range"></a>equal_range
 
 Sıralı bir Aralık verildiğinde, tüm öğelerin verilen değere eşit olduğu alt aralığı bulur.
 
@@ -1502,7 +1502,7 @@ int main()
 }
 ```
 
-## <a name="fill"></a>doldurması
+## <a name="fill"></a><a name="fill"></a>doldurması
 
 Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.
 
@@ -1580,7 +1580,7 @@ Vector v1 = ( 0 5 10 15 20 25 30 35 40 45 )
 Modified v1 = ( 0 5 10 15 20 2 2 2 2 2 )
 ```
 
-## <a name="fill_n"></a>fill_n
+## <a name="fill_n"></a><a name="fill_n"></a>fill_n
 
 Belirli bir öğeyle başlayan bir aralıktaki belirli öğe sayısına yeni bir değer atar.
 
@@ -1669,7 +1669,7 @@ int main()
 }
 ```
 
-## <a name="find"></a>bilgi
+## <a name="find"></a><a name="find"></a>bilgi
 
 Bir öğenin belirli bir değere sahip olan aralıktaki ilk geçtiği konumu bulur.
 
@@ -1712,7 +1712,7 @@ Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan 
 
 `find()`kullanarak bir kod örneği için bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
 
-## <a name="find_end"></a>find_end
+## <a name="find_end"></a><a name="find_end"></a>find_end
 
 Belirli bir diziye özdeş veya bir ikili koşula göre belirtildiği şekilde denk olan son dizi için bir aralık arar.
 
@@ -1876,7 +1876,7 @@ There is a sequence of elements in v1 that are equivalent to those
 in v2 under the binary predicate twice and that begins at position 8.
 ```
 
-## <a name="find_first_of"></a>find_first_of
+## <a name="find_first_of"></a><a name="find_first_of"></a>find_first_of
 
 Bir hedef aralığındaki çeşitli değerlerden herhangi birinin ilk geçtiği yeri veya bir ikili koşula göre belirtilen bir öğeler kümesine belirtildiği şekilde denk olan çeşitli öğelerin geçtiği ilk yeri arar.
 
@@ -2043,7 +2043,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="find_if"></a>find_if
+## <a name="find_if"></a><a name="find_if"></a>find_if
 
 Bir öğenin belirli bir koşulu karşıladığı aralıktaki ilk geçtiği konumu bulur.
 
@@ -2165,7 +2165,7 @@ int main()
 }
 ```
 
-## <a name="find_if_not"></a>find_if_not
+## <a name="find_if_not"></a><a name="find_if_not"></a>find_if_not
 
 Bir koşulu karşılamayan belirtilen aralıktaki ilk öğeyi döndürür.
 
@@ -2204,7 +2204,7 @@ Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme 
 
 `find_if_not()`bir kod örneği için, bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
 
-## <a name="for_each"></a>for_each
+## <a name="for_each"></a><a name="for_each"></a>for_each
 
 Bir aralıktaki ileriye doğru sıradaki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.
 
@@ -2359,7 +2359,7 @@ The average of the elements of v1 is:
 Average ( v1mod2 ) = 10.
 ```
 
-## <a name="for_each_n"></a>for_each_n
+## <a name="for_each_n"></a><a name="for_each_n"></a>for_each_n
 
 ```cpp
 template<class InputIterator, class Size, class Function>
@@ -2376,7 +2376,7 @@ ForwardIterator for_each_n(
     Function f);
 ```
 
-## <a name="generate"></a>üretecek
+## <a name="generate"></a><a name="generate"></a>üretecek
 
 Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.
 
@@ -2456,7 +2456,7 @@ Vector v1 is ( 41 18467 6334 26500 19169 ).
 Deque deq1 is ( 15724 11478 29358 26962 24464 ).
 ```
 
-## <a name="generate_n"></a>generate_n
+## <a name="generate_n"></a><a name="generate_n"></a>generate_n
 
 Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki belirli sayıda öğeye atar ve en son atanan değeri aşan konuma döndürür.
 
@@ -2542,7 +2542,7 @@ int main()
 }
 ```
 
-## <a name="includes"></a>içermektedir
+## <a name="includes"></a><a name="includes"></a>içermektedir
 
 Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.
 
@@ -2767,7 +2767,7 @@ At least one of the elements in vector v2b is not contained in vector v2a.
 At least one of the elements in vector v3b is not contained under mod_lesser in vector v3a.
 ```
 
-## <a name="inplace_merge"></a>inplace_merge
+## <a name="inplace_merge"></a><a name="inplace_merge"></a>inplace_merge
 
 Ardışık iki sıralanmış aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -2937,7 +2937,7 @@ Merged inplace with binary predicate mod_lesser specified,
 vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 ```
 
-## <a name="is_heap"></a>is_heap
+## <a name="is_heap"></a><a name="is_heap"></a>is_heap
 
 Belirtilen aralıktaki öğeler bir yığın oluşturbiliyorsa, **true** döndürür.
 
@@ -2993,7 +2993,7 @@ Belirtilen aralıktaki öğeler bir yığın oluşturacaksa **true** , değilse 
 
 `is_heap_until(first, last, pred) == last`.
 
-## <a name="is_heap_until"></a>is_heap_until
+## <a name="is_heap_until"></a><a name="is_heap_until"></a>is_heap_until
 
 Yığın sıralama koşulunu karşılamayan [`first`, `last`) aralığındaki ilk öğede konumlandırılmış bir yineleyici *döndürür veya Aralık* bir yığın oluşturur.
 
@@ -3047,7 +3047,7 @@ Belirtilen Aralık bir yığın veya bir ya da daha az öğe içeriyorsa *son* d
 
 İkinci şablon işlevi, yığın sıralaması koşulu olarak `std::less<>` yerine *Pred* koşulunu kullanması dışında, ilki ile aynı şekilde davranır.
 
-## <a name="is_partitioned"></a>is_partitioned
+## <a name="is_partitioned"></a><a name="is_partitioned"></a>is_partitioned
 
 Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğeler **false**test eden herhangi bir öğeden önce geliyorsa **true** döndürür.
 
@@ -3088,7 +3088,7 @@ Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğelerin, **
 
 Şablon işlevi yalnızca `[first, last)` tüm öğeler *Pred*tarafından bölümlenmiş ise **true** değerini döndürür; diğer bir deyişle, `pred (X)` true olduğu `[first, last)` tüm öğeler, `pred (Y)` **false**olan tüm öğeler `Y` önünde `X`.
 
-## <a name="is_permutation"></a>is_permutation
+## <a name="is_permutation"></a><a name="is_permutation"></a>is_permutation
 
 Her iki Aralık de aynı öğeleri içeriyorsa, öğelerin aynı sırada olup olmadığına bakılmaksızın true döndürür. İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
 
@@ -3208,7 +3208,7 @@ int main()
 }
 ```
 
-## <a name="is_sorted"></a>is_sorted
+## <a name="is_sorted"></a><a name="is_sorted"></a>is_sorted
 
 Belirtilen aralıktaki öğeler sıralanmış sıradüzende ise, **true** döndürür.
 
@@ -3258,7 +3258,7 @@ Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
 İkinci şablon işlevi `is_sorted_until( first, last , pred ) == last`döndürür. *Pred* koşul işlevi, sıra karşılaştırması gerçekleştirir.
 
-## <a name="is_sorted_until"></a>is_sorted_until
+## <a name="is_sorted_until"></a><a name="is_sorted_until"></a>is_sorted_until
 
 Belirtilen aralıktan sıralanmış sırada olan son öğeye ayarlanmış bir `ForwardIterator` döndürür.
 
@@ -3314,7 +3314,7 @@ Sıralanmış düzende son öğeye ayarlanmış bir `ForwardIterator` döndürü
 
 İkinci şablon işlevi aynı şekilde davranır, ancak `operator<(X, Y)` `pred(X, Y)`ile yerini alır.
 
-## <a name="iter_swap"></a>iter_swap
+## <a name="iter_swap"></a><a name="iter_swap"></a>iter_swap
 
 Belirtilen yineleyicilerin bir çifti tarafından başvurulan iki değeri birbiriyle değiştirir.
 
@@ -3470,7 +3470,7 @@ vector v1 is: v1 = ( 4 1 2 3 ).
 & deque deq2 is: deq2 = ( 0 5 ).
 ```
 
-## <a name="lexicographical_compare"></a>lexicographical_compare
+## <a name="lexicographical_compare"></a><a name="lexicographical_compare"></a>lexicographical_compare
 
 Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.
 
@@ -3637,7 +3637,7 @@ Vector v1 is lexicographically_less than L1.
 Vector v1 is not lexicographically_less than v2 under twice.
 ```
 
-## <a name="lower_bound"></a>lower_bound
+## <a name="lower_bound"></a><a name="lower_bound"></a>lower_bound
 
 Sıralı bir aralıkta belirtilen değere eşit ya da daha büyük bir değere sahip ilk öğenin konumunu bulur, burada sıralama kriteri bir ikili koşula göre belirtilebilir.
 
@@ -3776,7 +3776,7 @@ int main()
 }
 ```
 
-## <a name="make_heap"></a>make_heap
+## <a name="make_heap"></a><a name="make_heap"></a>make_heap
 
 Belirtilen bir aralıktaki öğeleri ilk öğenin en büyük olduğu ve onun için bir ikili koşula sahip bir sıralama ölçütünün belirtilebildiği bir yığına dönüştürür.
 
@@ -3858,7 +3858,7 @@ int main() {
 }
 ```
 
-## <a name="max"></a>Biçimlendir
+## <a name="max"></a><a name="max"></a>Biçimlendir
 
 İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -4071,7 +4071,7 @@ Vector v4 = max (v1,v2) is ( 0 1 2 ).
 Vector v5 = max (v1,v3) is ( 0 2 4 ).
 ```
 
-## <a name="max_element"></a>max_element
+## <a name="max_element"></a><a name="max_element"></a>max_element
 
 Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -4225,7 +4225,7 @@ int main()
 }
 ```
 
-## <a name="merge"></a>birleþtirmek
+## <a name="merge"></a><a name="merge"></a>birleþtirmek
 
 İki sıralanmış kaynak aralığından tüm öğeleri, sıralama ölçütünün bir ikili koşula göre belirtilebileceği tek, sıralanmış bir hedef aralıkla birleştirir.
 
@@ -4420,7 +4420,7 @@ int main() {
 }
 ```
 
-## <a name="min"></a>Min
+## <a name="min"></a><a name="min"></a>Min
 
 İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -4635,7 +4635,7 @@ Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).
 Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).
 ```
 
-## <a name="min_element"></a>min_element
+## <a name="min_element"></a><a name="min_element"></a>min_element
 
 Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -4799,7 +4799,7 @@ The smallest element in v1 under the mod_lesser
 binary predicate is: 0
 ```
 
-## <a name="minmax_element"></a>minmax_element
+## <a name="minmax_element"></a><a name="minmax_element"></a>minmax_element
 
 `min_element` tarafından gerçekleştirilen çalışmayı gerçekleştirir ve tek bir çağrıda `max_element`.
 
@@ -4859,7 +4859,7 @@ Döndürür
 
 Dizi boş değilse, işlev en çok `3 * (last - first - 1) / 2` karşılaştırmaları gerçekleştirir.
 
-## <a name="minmax"></a>MinMax
+## <a name="minmax"></a><a name="minmax"></a>MinMax
 
 İki giriş parametresini karşılaştırır ve bunları daha küçük bir şekilde bir çift olarak döndürür.
 
@@ -4909,7 +4909,7 @@ Kalan şablon işlevleri, *sol* ve *sağ* parametrelerin *ınlist*ile yerini ala
 
 İşlev tam olarak bir karşılaştırma gerçekleştirir.
 
-## <a name="mismatch"></a>mez
+## <a name="mismatch"></a><a name="mismatch"></a>mez
 
 İki Aralık öğesini öğesiyle karşılaştırır ve bir farkın gerçekleştiği ilk konumu bulur.
 
@@ -5114,7 +5114,7 @@ C++14: vec_1 and list_1 are a mismatch: false
 Press a key
 ```
 
-## <a name="alg_move"></a>&lt;alg&gt; taşı
+## <a name="ltalggt-move"></a><a name="alg_move"></a>&lt;alg&gt; taşı
 
 Belirtilen aralıkla ilişkili öğeleri taşı.
 
@@ -5151,7 +5151,7 @@ Taşınan öğeleri içeren çıkış yineleyicisi.
 
 Şablon işlevi, Aralık `[0, last - first)`her bir `N` için `*(dest + N) = move(*(first + N))` değerlendirir ve en düşük değerle başlayarak `N` değerlerini kesin olarak artırır. Ardından `dest + N`döndürür. `dest` ve *ilk* olarak depolamanın bölgelerini belirlerseniz, *hedef* Aralık `[first, last)`olmamalıdır.
 
-## <a name="move_backward"></a>move_backward
+## <a name="move_backward"></a><a name="move_backward"></a>move_backward
 
 Bir yineleyicinin öğelerini diğerine taşır. Hareket belirli bir aralıktaki son öğeyle başlar ve söz konusu aralıktaki ilk öğeyle biter.
 
@@ -5180,7 +5180,7 @@ Hedef aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yön
 
 `move` ve `move_backward`, bir taşıma yineleyicisi ile `copy` ve `copy_backward` ile işlevsel olarak eşdeğerdir.
 
-## <a name="next_permutation"></a>next_permutation
+## <a name="next_permutation"></a><a name="next_permutation"></a>next_permutation
 
 Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.
 
@@ -5359,7 +5359,7 @@ After another next_permutation of vector v1,
 v1 =   ( -3 -2 -1 1 0 2 3 ).
 ```
 
-## <a name="nth_element"></a>nth_element
+## <a name="nth_element"></a><a name="nth_element"></a>nth_element
 
 Aralıktaki sıranın *n*. öğesini doğru bir şekilde bulur ve bu sayede dizideki tüm öğelerin bu değerden küçük veya ona eşit olması ve dizide izleyen tüm öğelerin bu değerden büyük veya ona eşit olması için bir dizi öğeyi bölümler.
 
@@ -5486,7 +5486,7 @@ int main() {
 }
 ```
 
-## <a name="none_of"></a>none_of
+## <a name="none_of"></a><a name="none_of"></a>none_of
 
 Verilen aralıktaki öğeler arasında hiçbir zaman bir koşul mevcut olmadığında **true** döndürür.
 
@@ -5527,7 +5527,7 @@ Koşul, belirtilen aralıkta en az bir kez saptanmamışsa **true** , koşul alg
 
 Şablon işlevi yalnızca, Aralık `[0, last - first)``N` koşul `pred(*(first + N))` her zaman **false**olduğunda **true** döndürür.
 
-## <a name="partial_sort"></a>partial_sort
+## <a name="partial_sort"></a><a name="partial_sort"></a>partial_sort
 
 Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -5658,7 +5658,7 @@ Partially resorted (UDgreater) vector:
 v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
 ```
 
-## <a name="partial_sort_copy"></a>partial_sort_copy
+## <a name="partial_sort_copy"></a><a name="partial_sort_copy"></a>partial_sort_copy
 
 Öğeleri bir kaynak aralığından bir hedef aralığa kopyalar, burada kaynak öğeleri daha küçük olana ya da belirtilen başka bir ikili koşula göre sıralanır.
 
@@ -5802,7 +5802,7 @@ int main() {
 }
 ```
 
-## <a name="partition"></a>bölümünüzün
+## <a name="partition"></a><a name="partition"></a>bölümünüzün
 
 Bir aralıktaki öğeleri, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.
 
@@ -5888,7 +5888,7 @@ int main()
 }
 ```
 
-## <a name="partition_copy"></a>partition_copy
+## <a name="partition_copy"></a><a name="partition_copy"></a>partition_copy
 
 , Koşulun bir hedefe **doğru** olması için ve koşulun **yanlış** olduğu bir diğerinin olduğu öğeleri kopyalar. Öğeler belirtilen bir aralıktan gelmelidir.
 
@@ -5935,7 +5935,7 @@ Sınanacak koşul. Bu, test edilecek koşulu tanımlayan Kullanıcı tanımlı b
 
 Şablon işlevi, `pred(X)` true ise veya değilse `*dest2++` `*dest1++` `X` `[first,last)` her öğeyi kopyalar. `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`döndürür.
 
-## <a name="partition_point"></a>partition_point
+## <a name="partition_point"></a><a name="partition_point"></a>partition_point
 
 Koşulu karşılamayan verili aralıktaki ilk öğeyi döndürür. Öğeler koşulu karşılayanlar karşılamayanlardan önce gelecek şekilde sıralanır.
 
@@ -5966,7 +5966,7 @@ Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gerek
 
 Şablon işlevi, `pred(*it)` **false**olan `[first, last)` `it` ilk yineleyiciyi bulur. Sıra, *Pred*tarafından sıralanmalıdır.
 
-## <a name="pop_heap"></a>pop_heap
+## <a name="pop_heap"></a><a name="pop_heap"></a>pop_heap
 
 En büyük öğeyi bir yığının önünden aralıktaki bir sonraki son konuma kaldırır ve ardından kalan öğelerden yeni bir yığın oluşturur.
 
@@ -6075,7 +6075,7 @@ int main()
 }
 ```
 
-## <a name="prev_permutation"></a>prev_permutation
+## <a name="prev_permutation"></a><a name="prev_permutation"></a>prev_permutation
 
 Bir aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama, varsa sözcüıgrafik önceki daha büyük permütasyon ile değiştirilmelidir, bu durumda Previous 'in anlamı bir ikili koşula göre belirtilebilir.
 
@@ -6250,7 +6250,7 @@ After another prev_permutation of vector v1,
 v1 =   ( -3 -2 0 2 -1 1 3 ).
 ```
 
-## <a name="push_heap"></a>push_heap
+## <a name="push_heap"></a><a name="push_heap"></a>push_heap
 
 Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.
 
@@ -6363,11 +6363,11 @@ int main() {
 }
 ```
 
-## <a name="random_shuffle"></a>random_shuffle
+## <a name="random_shuffle"></a><a name="random_shuffle"></a>random_shuffle
 
 Std:: random_shuffle () işlevi kullanım dışıdır ve [std:: karıştır](../standard-library/algorithm-functions.md#shuffle)ile değiştirilmiştir. Bir kod örneği ve daha fazla bilgi için, bkz. [\<rastgele >](../standard-library/random.md) ve Stack Overflow [Şu neden std:: random_shuffle yöntemleri c++ 14 ' te kullanım dışı bırakılıyor?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
-## <a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a>temizlenmesine
 
 Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.
 
@@ -6463,7 +6463,7 @@ int main()
 }
 ```
 
-## <a name="remove_copy"></a>remove_copy
+## <a name="remove_copy"></a><a name="remove_copy"></a>remove_copy
 
 Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.
 
@@ -6561,7 +6561,7 @@ int main()
 }
 ```
 
-## <a name="remove_copy_if"></a>remove_copy_if
+## <a name="remove_copy_if"></a><a name="remove_copy_if"></a>remove_copy_if
 
 Bir koşulu karşılayan öğeler hariç, bir kaynak aralıktaki öğeleri bir hedef aralığa kopyalar. Öğeler kalan öğelerin sırasını bozmadan kopyalanır. Yeni bir hedef aralığın sonunu döndürür.
 
@@ -6668,7 +6668,7 @@ int main()
 }
 ```
 
-## <a name="remove_if"></a>remove_if
+## <a name="remove_if"></a><a name="remove_if"></a>remove_if
 
 Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki bir koşulu karşılayan öğeleri ortadan kaldırır.
 
@@ -6769,7 +6769,7 @@ int main()
 }
 ```
 
-## <a name="replace"></a>değiştirin
+## <a name="replace"></a><a name="replace"></a>değiştirin
 
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.
 
@@ -6856,7 +6856,7 @@ int main()
 }
 ```
 
-## <a name="replace_copy"></a>replace_copy
+## <a name="replace_copy"></a><a name="replace_copy"></a>replace_copy
 
 Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen değerle eşleşiyorsa, onu değiştirir.
 
@@ -6971,7 +6971,7 @@ int main()
 }
 ```
 
-## <a name="replace_copy_if"></a>replace_copy_if
+## <a name="replace_copy_if"></a><a name="replace_copy_if"></a>replace_copy_if
 
 Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen bir koşulu karşılıyorsa, onu değiştirir.
 
@@ -7094,7 +7094,7 @@ int main()
 }
 ```
 
-## <a name="replace_if"></a>replace_if
+## <a name="replace_if"></a><a name="replace_if"></a>replace_if
 
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa değiştirir.
 
@@ -7190,7 +7190,7 @@ int main()
 }
 ```
 
-## <a name="reverse"></a>tersini
+## <a name="reverse"></a><a name="reverse"></a>tersini
 
 Bir aralık içindeki öğelerin sırasını tersine çevirir.
 
@@ -7265,7 +7265,7 @@ The modified vector v1 with values reversed is:
 ( 9 8 7 6 5 4 3 2 1 0 ).
 ```
 
-## <a name="reverse_copy"></a>reverse_copy
+## <a name="reverse_copy"></a><a name="reverse_copy"></a>reverse_copy
 
 Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sırasını tersine çevirir
 
@@ -7347,7 +7347,7 @@ int main()
 }
 ```
 
-## <a name="rotate"></a>Boyut
+## <a name="rotate"></a><a name="rotate"></a>Boyut
 
 İki bitişik aralık içindeki öğeleri birbiriyle değiştirir.
 
@@ -7461,7 +7461,7 @@ After the rotation of a single deque element to the back,
 d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="rotate_copy"></a>rotate_copy
+## <a name="rotate_copy"></a><a name="rotate_copy"></a>rotate_copy
 
 Bir kaynak aralık içindeki iki bitişik aralıktaki öğeleri birbiriyle değiştirir ve sonucu bir hedef aralığına kopyalar.
 
@@ -7569,7 +7569,7 @@ int main()
 }
 ```
 
-## <a name="sample"></a>örnekli
+## <a name="sample"></a><a name="sample"></a>örnekli
 
 ```cpp
 template<class PopulationIterator, class SampleIterator, class Distance, class UniformRandomBitGenerator>
@@ -7581,7 +7581,7 @@ SampleIterator sample(
     UniformRandomBitGenerator&& g);
 ```
 
-## <a name="search"></a>aramanız
+## <a name="search"></a><a name="search"></a>aramanız
 
 Öğeleri verili bir öğe dizisi içindekilerle eşit olan veya öğeleri verili bir dizi öğe için ikili bir koşula göre belirtildiği şekilde denk olan bir hedef aralığındaki dizinin ilk geçtiği yeri arar.
 
@@ -7759,7 +7759,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="search_n"></a>search_n
+## <a name="search_n"></a><a name="search_n"></a>search_n
 
 Belirli bir değere veya ikili bir koşula göre belirtilen değerle bir ilişkiye sahip olan öğelerin belirli bir sayısının aralığındaki ilk diziyi arar.
 
@@ -7912,7 +7912,7 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
 predicate one_half in v1 and the first one begins at position 15.
 ```
 
-## <a name="set_difference"></a>set_difference
+## <a name="set_difference"></a><a name="set_difference"></a>set_difference
 
 Sıralanmış ikinci bir kaynak aralığına sahip olanları değil, sıralanmış bir kaynak aralığına sahip öğelerin tümünü tek, sıralanmış bir hedef aralığı içinde birleştirir, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -8114,7 +8114,7 @@ int main()
 }
 ```
 
-## <a name="set_intersection"></a>set_intersection
+## <a name="set_intersection"></a><a name="set_intersection"></a>set_intersection
 
 Her iki sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -8312,7 +8312,7 @@ int main()
 }
 ```
 
-## <a name="set_symmetric_difference"></a>set_symmetric_difference
+## <a name="set_symmetric_difference"></a><a name="set_symmetric_difference"></a>set_symmetric_difference
 
 İki değil, tek bir sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -8514,7 +8514,7 @@ int main()
 }
 ```
 
-## <a name="set_union"></a>set_union
+## <a name="set_union"></a><a name="set_union"></a>set_union
 
 İki sıralanmış kaynak aralığından en az birine sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -8716,7 +8716,7 @@ int main()
 }
 ```
 
-## <a name="shuffle"></a>çalmayı
+## <a name="shuffle"></a><a name="shuffle"></a>çalmayı
 
 Rastgele bir sayı Oluşturucu kullanarak belirli bir Aralık için öğeleri karışık (yeniden düzenler).
 
@@ -8743,7 +8743,7 @@ Bir yineleyiciden, tek başına karıştırılmış ve dışlamalı son öğe. `
 
 Daha fazla bilgi ve `shuffle()`kullanan bir kod örneği için bkz. [\<rastgele >](../standard-library/random.md).
 
-## <a name="sort"></a>düzenine
+## <a name="sort"></a><a name="sort"></a>düzenine
 
 Belirtilen bir aralıktaki öğeleri azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -8863,7 +8863,7 @@ Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 ```
 
-## <a name="sort_heap"></a>sort_heap
+## <a name="sort_heap"></a><a name="sort_heap"></a>sort_heap
 
 Bir yığını sıralanmış bir aralığa dönüştürür.
 
@@ -8963,7 +8963,7 @@ int main()
 }
 ```
 
-## <a name="stable_partition"></a>stable_partition
+## <a name="stable_partition"></a><a name="stable_partition"></a>stable_partition
 
 Bir aralıktaki öğeleri, eşdeğer öğelerin göreli sırasını koruyaraktan, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.
 
@@ -9053,7 +9053,7 @@ int main()
 }
 ```
 
-## <a name="stable_sort"></a>stable_sort
+## <a name="stable_sort"></a><a name="stable_sort"></a>stable_sort
 
 Belirtilen bir aralıktaki öğeleri, eşdeğer öğelerin göreli sıralamasını koruyaraktan, azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -9172,7 +9172,7 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Kur
 
 İlk geçersiz kılma iki nesnenin değerlerini değiş tokuş eder. İkinci geçersiz kılma, iki nesne dizisi arasındaki değerleri değiş tokuş eder.
 
@@ -9255,7 +9255,7 @@ Vector v1 is ( 5 5 5 5 5 ).
 Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).
 ```
 
-## <a name="swap_ranges"></a>swap_ranges
+## <a name="swap_ranges"></a><a name="swap_ranges"></a>swap_ranges
 
 Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.
 
@@ -9359,7 +9359,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="transform"></a>Dönüşümler
+## <a name="transform"></a><a name="transform"></a>Dönüşümler
 
 Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.
 
@@ -9515,7 +9515,7 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
 v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
-## <a name="unique"></a>eşi
+## <a name="unique"></a><a name="unique"></a>eşi
 
 Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.
 
@@ -9664,7 +9664,7 @@ Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).
 ```
 
-## <a name="unique_copy"></a>unique_copy
+## <a name="unique_copy"></a><a name="unique_copy"></a>unique_copy
 
 Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.
 
@@ -9801,7 +9801,7 @@ int main() {
 }
 ```
 
-## <a name="upper_bound"></a>upper_bound
+## <a name="upper_bound"></a><a name="upper_bound"></a>upper_bound
 
 Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 

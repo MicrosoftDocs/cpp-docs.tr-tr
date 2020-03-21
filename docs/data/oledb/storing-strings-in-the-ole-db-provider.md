@@ -4,20 +4,19 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - user records, editing
 ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
-ms.openlocfilehash: f0ae4a3718858c4de5417aaf5a4f9bc0c0ba9984
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 1d6d2b73495d5ca6e275b13ed3c430f8169179d4
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525349"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079106"
 ---
 # <a name="storing-strings-in-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısında Depolama
 
-> [!NOTE] 
-> ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
+> [!NOTE]
+> ATL OLE DB sağlayıcı Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
-
-İçinde *özel*RS.h, **ATL OLE DB sağlayıcısı Sihirbazı** adlı bir varsayılan kullanıcı kayıt oluşturur `CWindowsFile`. İki dizenin işlemek için değiştirme `CWindowsFile` aşağıdaki kodda gösterildiği gibi:
+*Özel*RS. h 'de, **ATL OLE DB sağlayıcı Sihirbazı** `CWindowsFile`adlı varsayılan bir kullanıcı kaydı oluşturur. İki dizeyi işlemek için `CWindowsFile` aşağıdaki kodda gösterildiği gibi değiştirin:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -52,9 +51,9 @@ END_PROVIDER_COLUMN_MAP()
 };
 ```
 
-Veri üyeleri `szCommand` ve `szText` ile iki dizeyi temsil eden `szCommand2` ve `szText2` gerekirse ek sütunlar içeren. Veri üyesi `dwBookmark` bu basit bir salt okunur sağlayıcı için gerekli değildir ancak daha sonra eklemek için kullanılan bir `IRowsetLocate` arabirim; bkz [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md). `==` İşleci örnekleri karşılaştırır (Bu imlecini uygulamadan isteğe bağlı).
+`szCommand` ve `szText` veri üyeleri, `szCommand2` ve gerekirse ek sütunlarla `szText2` iki dizeyi temsil eder. Veri üyesi `dwBookmark`, bu basit salt okunurdur sağlayıcı için gerekli değildir, ancak daha sonra `IRowsetLocate` arabirimi eklemek için kullanılır; bkz. [basit salt okuma sağlayıcısını geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md). `==` işleci örnekleri karşılaştırır (Bu işleci uygulamak isteğe bağlıdır).
 
-Bu yapıldığında, işlevselliğini ekleyebilirsiniz [dizeleri OLE DB sağlayıcısına okuma](../../data/oledb/reading-strings-into-the-ole-db-provider.md).
+Bu işlem tamamlandığında, [dizeleri okuma işlevlerini OLE DB sağlayıcısına](../../data/oledb/reading-strings-into-the-ole-db-provider.md)ekleyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

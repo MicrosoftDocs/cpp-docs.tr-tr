@@ -6,61 +6,60 @@ helpviewer_keywords:
 - databases [C++], ODBC
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-ms.openlocfilehash: fdaafd5c8243143fd9705d45db2497577820ca0a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1d4e962e91e2a30356fc9f90a26dbeb857c8a29
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395748"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075893"
 ---
 # <a name="open-database-connectivity-odbc"></a>Açık Veritabanı Bağlantısı (ODBC)
 
-Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritabanı bağlantısı (ODBC) için sınıflar sağlar. Visual Studio 2015 ve SQL Server 2012 ODBC itibaren SQL veri kaynaklarına bağlanmak için tercih edilen yoludur.
+Microsoft Foundation Sınıfları (MFC) kitaplığı, açık veritabanı bağlantısı (ODBC) ile programlama için sınıflar sağlar. Visual Studio 2015 ve SQL Server 2012 ' den itibaren, SQL veri kaynaklarına bağlanmak için tercih edilen yoldur.
 
-MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) MSDN SDK.
-
+MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için MSDN 'de [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK 'sına bakın.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 - [ODBC](odbc-basics.md)— açık veritabanı bağlantısı standardı ve API
 
-- [Hangi MFC Desteği sağlanmaktadır?](odbc-and-mfc.md) ODBC programlama için
+- ODBC programlama için [HANGI MFC desteğinin sağlandığı](odbc-and-mfc.md)
 
 - [Hangi ODBC sürücüleri kullanılabilir?](odbc-driver-list.md)
 
 - [ODBC veri kaynaklarına bağlanma](data-source-managing-connections-odbc.md)
 
-- [Kayıt alanı değişimi (RFX)](record-field-exchange-rfx.md) arasında bir veritabanı ve kayıt kümesi nesnesi
+- Veritabanı ve kayıt kümesi nesnesi arasındaki [kayıt alanı değişimi (RFX)](record-field-exchange-rfx.md)
 
 - [ODBC kayıt kümeleri](recordset-odbc.md)
 
-- [SQL](sql.md) ODBC için
+- ODBC için [SQL](sql.md)
 
-- [Veritabanı işlemleri](transaction-odbc.md)
+- [Veritabanı Işlemleri](transaction-odbc.md)
 
-- [Bir ODBC veri kaynağının şemasını belirleme](data-source-determining-the-schema-of-the-data-source-odbc.md) çalışma zamanında
+- Çalışma zamanında [ODBC veri kaynağı şemasını belirleme](data-source-determining-the-schema-of-the-data-source-odbc.md)
 
-- [Program aracılığıyla ODBC veri kaynağını yapılandırma](data-source-programmatically-configuring-an-odbc-data-source.md)
+- [Programlı olarak ODBC veri kaynağını yapılandırma](data-source-programmatically-configuring-an-odbc-data-source.md)
 
-- [Program aracılığıyla ODBC veri kaynağında tablo oluşturma](data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)
+- [ODBC veri kaynağında programlı bir şekilde tablo oluşturma](data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)
 
-- [Kayıtları toplu yakalama](recordset-fetching-records-in-bulk-odbc.md)
+- [Kayıtları toplu olarak getirme](recordset-fetching-records-in-bulk-odbc.md)
 
-- [Kayıt Kümemin SQL deyimini özelleştirme](sql-customizing-your-recordsets-sql-statement-odbc.md)
+- [Kayıt Kümenizin SQL deyimimi özelleştirme](sql-customizing-your-recordsets-sql-statement-odbc.md)
 
 - [Doğrudan SQL çağrıları yapma](sql-making-direct-sql-calls-odbc.md)
 
-- [Doğrudan ODBC API çağrıları yapma](odbc-calling-odbc-api-functions-directly.md)
+- [ODBC API 'sine doğrudan çağrı yapma](odbc-calling-odbc-api-functions-directly.md)
 
-- [Veritabanı sınıfları MFC'nin belge/görünüm mimarisi ile nasıl çalışır?](working-with-documents-and-views.md)
+- [Veritabanı sınıfları MFC 'nin belge/görünüm mimarisi ile nasıl çalışır?](working-with-documents-and-views.md)
 
 - [ODBC Sürücü Listesi](odbc-driver-list.md)
 
 ## <a name="odbc-database-tasks"></a>ODBC veritabanı görevleri
 
-Bu görevler MFC dayalı [ODBC](odbc-basics.md) sınıfları. MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK.
+Bu görevler MFC [ODBC](odbc-basics.md) sınıflarını temel alır. MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için, [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK 'sına bakın.
 
-- [Yükleme ve ODBC ile çalışmaya başlama](installing-and-getting-started-with-odbc.md)
+- [ODBC 'yi yükleyip kullanmaya başlayın](installing-and-getting-started-with-odbc.md)
 
 - [Bir ODBC Veritabanı Uygulaması Tasarlama ve Oluşturma](design-and-create-an-odbc-database-application.md)
 

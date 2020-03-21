@@ -6,29 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - R6025
 ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
-ms.openlocfilehash: 461bfb2aa46053ec56fff67de70038b1fcd97389
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d5edb08278b7b6b9b3eb62e92fc04410f96a8f09
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214174"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075122"
 ---
 # <a name="c-runtime-error-r6025"></a>C Çalışma Zamanı Hatası R6025
 
 saf sanal işlev çağrısı
 
 > [!NOTE]
-> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu hatanın en yaygın nedeni, uygulama ya da bozuk yükleme için kullanılan bir hatadır.
+> Bir uygulamayı çalıştırırken bu hata iletisiyle karşılaşırsanız, bir iç sorun olduğundan uygulama kapatıldı. Bu hatanın en yaygın nedeni, uygulamadaki bir hata veya bozuk bir yüklemedir.
 >
 > Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
-> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Programı onarmak ya da yeniden yüklemek için **Denetim Masası** 'ndaki **uygulamalar ve Özellikler** veya **Programlar ve Özellikler** sayfasını kullanın.
+> - Yazılım güncelleştirmeleri için **Denetim Masası** 'ndaki **Windows Update** kontrol edin.
 > - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
-**Programcıları için bilgi**
+**Programcılar için bilgiler**
 
-Hiçbir nesne, saf sanal işlev çağrısındaki işleneceğini örneği.
+Saf sanal işlev çağrısını işlemek için hiçbir nesne örneği oluşturulmadı.
 
-Türetilmiş sınıf türü için bir yayın tarafından oluşturulur ancak gerçekten bir işaretçi temel sınıfın bir işaretçisi aracılığıyla soyut bir temel sınıfta sanal bir işlev çağırarak bu hataya neden olur. Gelen atama olduğunda ortaya çıkabilir bir **void** <strong>\*</strong> bir sınıf işaretçisi olduğunda **void** <strong>\*</strong> oluştu temel sınıf oluşumu sırasında oluşturuldu.
-
+Bu hata, türetilmiş sınıfın türüne atama tarafından oluşturulan bir işaretçi aracılığıyla soyut bir temel sınıfta bir sanal işlevin çağrılmasından kaynaklanır, ancak aslında temel sınıfa bir işaretçidir. Bu durum, bir **void** <strong>\*</strong> , temel sınıfın oluşturulması sırasında **void** <strong>\*</strong> oluşturulduğunda bir sınıfa işaretçiye atama yapıldığında meydana gelebilir.

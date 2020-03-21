@@ -2,18 +2,18 @@
 title: 'İzlenecek yol: Matris Çarpım'
 ms.date: 04/23/2019
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: 341800e258f89db340d206ebe04bc20d4763ad1a
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: a84383aa02b3f8300774e18ba2b27655d07b72ae
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518497"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075717"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 
 Bu adım adım izlenecek yol, matris çarpma 'nın yürütülmesini hızlandırmak C++ için amp 'ın nasıl kullanılacağını gösterir. İki algoritma sunulur, biri döşeme ve döşeme olmadan bir tane.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Başlamadan önce:
 
@@ -33,7 +33,7 @@ Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sür�
 
 1. **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda **dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın. 
+1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
 
 1. Filtre uygulanmış proje türleri listesinden **boş proje** ' yi seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna *matrixçarp* girin ve isterseniz proje konumunu belirtin.
 
@@ -57,7 +57,7 @@ Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sür�
 
 1. **Boş proje**' yi seçin, **ad** kutusuna *matrixçarp* girin ve **Tamam** düğmesini seçin.
 
-1. Seçin **sonraki** düğmesi.
+1. **İleri** düğmesini seçin.
 
 1. **Çözüm Gezgini**' de, **kaynak dosyaları**için kısayol menüsünü açın ve ardından > **Yeni öğe** **Ekle** ' yi seçin.
 

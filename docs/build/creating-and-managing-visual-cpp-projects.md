@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: d6bfefdaa3dfc67f861cf116718f89c0e9766e47
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 3694478e22bfd2a3c58a72ba0c3ad2d15351bc9f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73624474"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078688"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
 
@@ -23,7 +23,7 @@ ms.locfileid: "73624474"
 
 ::: moniker range="vs-2019"
 
-C++ **Dosya** > **Yeni** > **Proje**' yi seçerek ve sonra **dili** olarak C++ayarlayarak projeler oluşturabilirsiniz. Sonuçlar listesinde, **Platform** veya **proje türünü** ayarlayarak ve arama kutusuna anahtar sözcükleri yazarak filtreleyebileceğiniz proje şablonlarının listesini görürsünüz. 
+C++ **Dosya** > **Yeni** > **Proje**' yi seçerek ve sonra **dili** olarak C++ayarlayarak projeler oluşturabilirsiniz. Sonuçlar listesinde, **Platform** veya **proje türünü** ayarlayarak ve arama kutusuna anahtar sözcükleri yazarak filtreleyebileceğiniz proje şablonlarının listesini görürsünüz.
 
    ![Visual Studio 2019 proje şablonları](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 yeni proje Iletişim kutusu")
 
@@ -51,7 +51,7 @@ Yeni bir proje oluşturduğunuzda, bir çözüm dosyası (. sln) de oluşturulur
 
 ## <a name="add-third-party-libraries"></a>Üçüncü taraf kitaplıklarını ekleme
 
-Üçüncü taraf kitaplıklar eklemek için [vcpkg](vcpkg.md) paket yöneticisini kullanın. Herhangi bir Visual Studio projesinden başvuru yaparken bu kitaplığa yönelik yolları ayarlamak için Visual Studio Tümleştirme adımını çalıştırın. 
+Üçüncü taraf kitaplıklar eklemek için [vcpkg](vcpkg.md) paket yöneticisini kullanın. Herhangi bir Visual Studio projesinden başvuru yaparken bu kitaplığa yönelik yolları ayarlamak için Visual Studio Tümleştirme adımını çalıştırın.
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>Derleyici seçeneklerini ve diğer derleme özelliklerini ayarlama
 
@@ -61,7 +61,7 @@ Bir projenin yapı ayarlarını yapılandırmak için, **Çözüm Gezgini** içi
 
 Yeni projeyi derlemek ve çalıştırmak için **F5** 'e basın veya ana araç çubuğunda yeşil ok ile *hata ayıklama açılan* listesine tıklayın. *Yapılandırma açılan kutusu* , *hata ayıklama* veya *yayın* derlemesi (veya başka bir özel yapılandırma) gerçekleştirmeyi tercih ettiğiniz yerdir.
 
-Yeni bir proje hata olmadan derlenir. Kendi kodunuzu eklerken zaman zaman bir hata verebilir veya bir uyarı tetikleyebilirsiniz. Bir hata, yapılandırmanın tamamlanmasını engelliyor; uyarı yok. Tüm hatalar ve uyarılar, projeyi oluştururken hem Çıkış Penceresi hem de Hata Listesi görünür. 
+Yeni bir proje hata olmadan derlenir. Kendi kodunuzu eklerken zaman zaman bir hata verebilir veya bir uyarı tetikleyebilirsiniz. Bir hata, yapılandırmanın tamamlanmasını engelliyor; uyarı yok. Tüm hatalar ve uyarılar, projeyi oluştururken hem Çıkış Penceresi hem de Hata Listesi görünür.
 
    ![Çıkış penceresi ve hata listesi](../overview/media/vs2017-output-error-list.png)
 
@@ -74,7 +74,7 @@ Proje ayarlarınızı belirtmek için özellik sayfalarını ve özellik sayfala
 
 [Derleme zamanında kitaplıklara ve bileşenlere başvurma](adding-references-in-visual-cpp-projects.md)<br/>
 Bir projeye LIBS, dll 'Ler, COM ve .NET bileşenleri ekleme.
- 
+
 [Proje Çıkış Dosyalarını Düzenleme](how-to-organize-project-output-files-for-builds.md)<br/>
 Yapı sürecinde oluşturulan yürütülebilir dosyaların konumunu özelleştirme.
 

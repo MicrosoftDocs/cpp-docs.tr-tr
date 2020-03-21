@@ -28,18 +28,18 @@ helpviewer_keywords:
 - operator< [C++], pointers
 - == operator [C++], with specific Visual C++ objects
 ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
-ms.openlocfilehash: d3b1d6d1579c9f9bf5eca4f8a3f6733f27584674
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c2c3dccb93f8e2475cdf2c7494bf4af11b65aa2
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399245"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079939"
 ---
-# <a name="comptrt-relational-operators"></a>_com_ptr_t İlişkisel İşleçleri
+# <a name="_com_ptr_t-relational-operators"></a>_com_ptr_t İlişkisel İşleçleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-NULL veya başka bir akıllı işaretçinin, ham arabirim işaretçisi için akıllı işaretçi nesnesinin karşılaştırın.
+Akıllı işaretçi nesnesini başka bir akıllı işaretçi, ham arabirim işaretçisi veya NULL ile karşılaştırın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,7 +47,7 @@ NULL veya başka bir akıllı işaretçinin, ham arabirim işaretçisi için ak�
 template<typename _OtherIID>
 bool operator==( const _com_ptr_t<_OtherIID>& p );
 
-template<typename _OtherIID> 
+template<typename _OtherIID>
 bool operator==( _com_ptr_t<_OtherIID>& p );
 
 template<typename _InterfaceType>
@@ -114,9 +114,9 @@ bool operator>=( _InterfaceType* p );
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir akıllı işaretçi nesnesinin diğerine karşılaştırır, akıllı işaretçinin, ham arabirim işaretçisi veya NULL. NULL işaretçi testleri dışında bu işleçlerden önce her iki işaretçiler için sorgu `IUnknown`ve sonuçlarını karşılaştırın.
+Akıllı işaretçi nesnesini başka bir akıllı işaretçi, ham arabirim işaretçisi veya NULL ile karşılaştırır. NULL işaretçi testleri hariç, bu işleçler ilk olarak `IUnknown`için her iki işaretçiyi sorgular ve sonuçları karşılaştırır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

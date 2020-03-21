@@ -17,16 +17,16 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
-ms.openlocfilehash: 871b7dc93f5d548897cf77e55dbacf5a104cbee9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 1bf4fa82e10d236828059a37c639e3a3b64bc5f9
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446759"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076401"
 ---
 # <a name="ltstring_viewgt-operators"></a>&lt;string_view&gt; işleçleri
 
-Örtük bir dönüştürmenin sağlandığı iki string_view nesnesini veya bir string_view ve diğer bir dize nesnesini (örneğin, [std:: String](basic-string-class.md)veya **char\*** ) karşılaştırmak için bu işleçleri kullanın. 
+Örtük bir dönüştürmenin sağlandığı iki string_view nesnesini veya bir string_view ve diğer bir dize nesnesini (örneğin, [std:: String](basic-string-class.md)veya **char\*** ) karşılaştırmak için bu işleçleri kullanın.
 
 ||||
 |-|-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "79446759"
 |[işleç&lt;](#op_lt)|[işleç&lt;&lt;](#op_lt_lt)|[işleç&lt;=](#op_lt_eq)|
 |[işleç = =](#op_eq_eq)|["" SV işleci](#op_sv)|
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -69,11 +69,11 @@ işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik eşit de�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır. 
+Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır.
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir. Aksi takdirde, bunlar eşit değildir.
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -108,12 +108,11 @@ işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik eşitse *
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır. 
+Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır.
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir.
 
-
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işleç&lt;
 
 İşlecin sol tarafındaki nesnenin sağdaki nesneden daha az olup olmadığını sınar sidestring_view
 
@@ -148,7 +147,7 @@ işlecin sol tarafındaki nesne sağ taraftaki nesnenin lexıgrafik değerinden 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır. 
+Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır.
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. İlk eşit olmayan karakter çiftinden karşılaşıldığında, bu Karşılaştırmanın sonucu döndürülür. Eşit olmayan karakter bulunamazsa, ancak bir dizi kısaysa, daha kısa bir sıra daha uzundur. Diğer bir deyişle, "Cat", "Kediler" den küçüktür.
 
@@ -174,7 +173,7 @@ int main()
 }
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işleç&lt;=
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden küçük veya ona eşit olup olmadığını sınar.
 
@@ -211,7 +210,7 @@ işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik veya daha
 
 Bkz. [operatör&lt;](#op_lt).
 
-## <a name="op_lt_lt"></a>işleç&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işleç&lt;&lt;
 
 Çıkış akışına bir string_view yazar.
 
@@ -237,7 +236,7 @@ yazılan çıkış akışı.
 
 Bir string_view içeriğini bir çıkış akışına eklemek için, örneğin [std:: cout](iostream.md#cout)kullanarak bu işleci kullanın.
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işleç&gt;
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha büyük olup olmadığını sınar.
 
@@ -274,7 +273,7 @@ işlecin sol tarafındaki nesne sağ taraftaki string_view nesnesinden sözcüı
 
 Bkz. [operatör&lt;](#op_lt).
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işleç&gt;=
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden büyük veya ona eşit olup olmadığını sınar.
 
@@ -311,9 +310,9 @@ işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik büyükse
 
 Bkz. [operatör&lt;](#op_lt).
 
-## <a name="op_sv"></a>"" SV işleci (string_view Sabit)
+## <a name="operator-sv-string_view-literal"></a><a name="op_sv"></a>"" SV işleci (string_view Sabit)
 
-Bir dize sabit değerinden string_view oluşturur. Ad alanı `std::literals::string_view_literals`gerektirir. 
+Bir dize sabit değerinden string_view oluşturur. Ad alanı `std::literals::string_view_literals`gerektirir.
 
 ### <a name="example"></a>Örnek
 

@@ -1,55 +1,54 @@
 ---
-title: ATL Özellik Sayfası Sihirbazı Seçenekleri
+title: Seçenekler, ATL Özellik sayfası Sihirbazı
 ms.date: 05/09/2019
 f1_keywords:
 - vc.codewiz.class.atl.ppg.options
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: 205f6d3debafe22373355af12ef88c83d6a01911
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: a46a55cca221293e83a72bf0c2670e2343c744b0
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707010"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076205"
 ---
-# <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
-
+# <a name="options-atl-property-page-wizard"></a>Seçenekler, ATL Özellik sayfası Sihirbazı
 
 ::: moniker range="vs-2019"
 
-ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
+ATL Özellik sayfası Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Sihirbazın bu sayfasındaki özellik sayfası oluşturmakta olduğunuz iş parçacığı modelini ve toplamayı düzeyini tanımlamak için kullanın.
+Oluşturmakta olduğunuz özellik sayfasının iş parçacığı modelini ve toplama düzeyini tanımlamak için sihirbazın bu sayfasını kullanın.
 
 - **İş parçacığı modeli**
 
    Özellik sayfası tarafından kullanılan iş parçacığı modelini belirtir.
 
-   Bkz: [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) daha fazla bilgi için.
+   Daha fazla bilgi için bkz. [projenin Iş parçacığı modelini belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) .
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Tek**|Özellik sayfası, yalnızca birincil COM iş parçacığında çalışır.|
-   |**Grup**|Özellik sayfasını herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.|
+   |**Sunuculu**|Özellik sayfası yalnızca birincil COM iş parçacığında çalışır.|
+   |**Yapı**|Özellik sayfası herhangi bir tek iş parçacığı grubu içinde oluşturulabilir. Varsayılan.|
 
 - **Toplama**
 
-   Oluşturmakta olduğunuz özellik sayfası için toplama desteği ekler. Bkz: [toplama](../../atl/aggregation.md) daha fazla bilgi için.
+   Oluşturmakta olduğunuz özellik sayfası için toplama desteği ekler. Daha fazla bilgi için bkz. [toplama](../../atl/aggregation.md) .
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Evet**|Toplanabilir bir özellik sayfası oluşturun.|
-   |**Yok**|Toplanamaz bir özellik sayfası oluşturun.|
-   |**Yalnızca**|Yalnızca toplama oluşturulan özellik sayfası oluşturun.|
+   |**Evet**|Toplanabilecek bir özellik sayfası oluşturun.|
+   |**Hayır**|Toplanmayan bir özellik sayfası oluşturun.|
+   |**Yalnızca**|Yalnızca toplama yoluyla örneklenebilir bir özellik sayfası oluşturun.|
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Özellik Sayfası Sihirbazı](../../atl/reference/atl-property-page-wizard.md)<br/>
-[Dizeleri, ATL Özellik Sayfası Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)
+[Dizeler, ATL Özellik sayfası Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)

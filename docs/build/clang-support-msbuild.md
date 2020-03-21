@@ -4,12 +4,12 @@ ms.date: 08/30/2019
 ms.description: Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ MSBuild projects
-ms.openlocfilehash: 819f96bf2fd949f80ae72ca878ba7eb9cb1bffcc
-ms.sourcegitcommit: c3283062ce4e382aec7f11626d358a37caf8cdbb
+ms.openlocfilehash: 5bd90141cdc7646dce206e6b02a605b73d78de95
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75914359"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078814"
 ---
 # <a name="clangllvm-support-in-visual-studio-projects"></a>Visual Studio projelerinde Clang/LLVM desteği
 
@@ -23,9 +23,9 @@ CMake ve MSBuild projelerinin her ikisi için de Clang desteği Visual Studio 20
 
 Windows veya Linux 'u hedefleyen Visual Studio projelerini (MSBuild) düzenlemek, derlemek ve hatalarını ayıklamak C++ Için visual Studio 2019 sürüm 16,2 Ile Clang kullanabilirsiniz.
 
-## <a name="install"></a>yükleme
+## <a name="install"></a>Yükleme
 
-Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyicisi araçlarını kullanmanızı öneririz. Henüz yoksa, Visual Studio yükleyicisi açarak ve isteğe bağlı bileşenlerle **masaüstü geliştirme C++**  altında  **C++ Windows için Clang araçları** ' nı seçerek yükleyebilirsiniz. Makinenizde var olan bir Clang yüklemesini kullanmayı tercih ediyorsanız,  **C++ v142 derleme araçları için Clang-CL ' yi seçin.** isteğe bağlı bileşen. Microsoft C++ standart kitaplığı şu anda en az Clang 8.0.0 gerektirir. Standart kitaplığın Microsoft uygulamasındaki güncelleştirmelerle güncel kalmak için Clang 'nin paketlenmiş sürümü otomatik olarak güncelleştirilir. 
+Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyicisi araçlarını kullanmanızı öneririz. Henüz yoksa, Visual Studio yükleyicisi açarak ve isteğe bağlı bileşenlerle **masaüstü geliştirme C++**  altında  **C++ Windows için Clang araçları** ' nı seçerek yükleyebilirsiniz. Makinenizde var olan bir Clang yüklemesini kullanmayı tercih ediyorsanız,  **C++ v142 derleme araçları için Clang-CL ' yi seçin.** isteğe bağlı bileşen. Microsoft C++ standart kitaplığı şu anda en az Clang 8.0.0 gerektirir. Standart kitaplığın Microsoft uygulamasındaki güncelleştirmelerle güncel kalmak için Clang 'nin paketlenmiş sürümü otomatik olarak güncelleştirilir.
 
 ![Clang bileşeni yüklemesi](media/clang-install-vs2019.png)
 
@@ -45,16 +45,16 @@ Linux projeleri için, Visual Studio Clang GCC ile uyumlu ön uç 'yi kullanır.
 
 Bir Visual Studio Linux projesini Clang kullanacak şekilde yapılandırmak için:
 
-1. **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. 
-1. Genellikle, ilk olarak iletişim kutusunun en üstündeki **tüm yapılandırma** ' yı seçmeniz gerekir. 
+1. **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin.
+1. Genellikle, ilk olarak iletişim kutusunun en üstündeki **tüm yapılandırma** ' yı seçmeniz gerekir.
 1. **Genel** > **platform araç takımı**altında, Linux için Windows alt sistemi kullanıyorsanız veya uzak bır makine ya da VM kullanıyorsanız **Remote_Clang_1_0** **WSL_Clang_1_0** seçin.
-1. Tuşuna **Tamam**.
+1. **Tamam**'a basın.
 
 ![Clang bileşeni yüklemesi](media/clang-msbuild-prop-page.png)
 
 Linux 'ta, Visual Studio varsayılan olarak PATH Environment özelliğinde karşılaştığı ilk Clang konumunu kullanır. Özel bir Clang yüklemesi kullanıyorsanız, `LLVMInstallDir` özelliğinin değerini değiştirmeniz veya **Project** > **Properties** > **VC + + dizinleri** > **yapılandırma özellikleri** > **çalıştırılabilir dizinler**altında bir yol yerine konacak olması gerekir. Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
 
-## <a name="custom_llvm_location"></a>Özel bir LLVM konumu ayarlama
+## <a name="set-a-custom-llvm-location"></a><a name="custom_llvm_location"></a>Özel bir LLVM konumu ayarlama
 
 Bir veya daha fazla proje için, bir *Dizin. Build. props* dosyası oluşturarak ve bu dosyayı herhangi bir projenin kök klasörüne ekleyerek LLVM için özel bir yol ayarlayabilirsiniz. Bunu Çözümdeki tüm projelere uygulamak için kök çözüm klasörüne ekleyebilirsiniz. Dosya şuna benzemelidir (ancak gerçek yolunu yerine koyun):
 

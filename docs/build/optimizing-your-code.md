@@ -8,35 +8,35 @@ helpviewer_keywords:
 - optimization, C++ code
 - code, optimizing
 - performance, compiler
-ms.openlocfilehash: f44fb734c8441e10b656c5326c8df4bf6879499a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 00356cf50ca8e50c80e8a1142adf654816490c9b
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220181"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078500"
 ---
 # <a name="optimizing-your-code"></a>Kodunuzu iyileştirme
 
-Yürütülebilir hale getirerek, Hızlı yürütme hızını ve küçük kod boyutu arasında bir denge elde edebilirsiniz. Bu konu, bazı Visual Studio kod iyileştirmenize yardımcı sağlayan mekanizmalarını açıklar.
+Bir yürütülebiliri iyileştirerek, Hızlı yürütme hızı ve küçük kod boyutu arasında bir denge elde edebilirsiniz. Bu konuda, kodu iyileştirmenize yardımcı olmak için Visual Studio 'nun sağladığı mekanizmalardan bazıları ele alınmaktadır.
 
 ## <a name="language-features"></a>Dil özellikleri
 
-Aşağıdaki konularda C/C++ dilinde iyileştirme özelliklerinden bazıları açıklanmaktadır.
+Aşağıdaki konularda C/C++ dilindeki en iyi duruma getirme özellikleri açıklanır.
 
-[En iyi duruma getirme pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
-Anahtar sözcükler ve pragmalar performansını artırmak için kodunuzda kullanabileceğiniz listesi.
+[Iyileştirme pragmaları ve anahtar sözcükler](optimization-pragmas-and-keywords.md) \
+Kodunuzun performansını artırmak için kodunuzda kullanabileceğiniz anahtar sözcüklerin ve pragmaların bir listesi.
 
-[Kategorilere göre listelenen derleyici seçenekleri](reference/compiler-options-listed-by-category.md) \
-Listesini **/O** derleyici seçenekleri, özellikle yürütme hızını veya kod boyutunu etkiler.
+[Kategoriye göre listelenen derleyici seçenekleri](reference/compiler-options-listed-by-category.md) \
+Özellikle yürütme hızını veya kod boyutunu etkileyen **/o** derleyici seçeneklerinin bir listesi.
 
-[Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md) \
-Rvalue başvuruları uygulamasını destekler *taşıma semantiği*. Taşıma semantiği Şablon Kütüphanesi, bu şablonları kullanan uygulamaların performansını uygulamak için kullanılan önemli ölçüde artırabilir.
+[Rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md) \
+Rvalue başvuruları, *taşıma semantiğinin*uygulanmasını destekler. Taşıma semantiği şablon kitaplıklarını uygulamak için kullanılırsa, bu şablonları kullanan uygulamaların performansı önemli ölçüde iyileştirebilirler.
 
-### <a name="the-optimize-pragma"></a>Optimize pragması
+### <a name="the-optimize-pragma"></a>Optimize pragma
 
-Kodun en iyi duruma getirilmiş bir bölümünü, hatalar veya yavaşlama neden olursa, kullanabileceğiniz [en iyi duruma getirme](../preprocessor/optimize.md) pragması, bu bölümü için iyileştirme devre dışı bırakmak için.
+İyileştirilmiş bir kod bölümü hatalara veya yavaşlama hatasına neden oluyorsa, bu bölüm için iyileştirmeyi devre dışı bırakmak için [optimize](../preprocessor/optimize.md) pragma 'ı kullanabilirsiniz.
 
-İki pragmaları arasında kod, aşağıda gösterildiği gibi alın:
+Kodu, burada gösterildiği gibi iki pragma arasına koyun:
 
 ```cpp
 #pragma optimize("", off)
@@ -44,34 +44,33 @@ Kodun en iyi duruma getirilmiş bir bölümünü, hatalar veya yavaşlama neden 
 #pragma optimize("", on)
 ```
 
-## <a name="programming-practices"></a>Programlama yöntemler
+## <a name="programming-practices"></a>Programlama uygulamaları
 
-Kodunuzu iyileştirme ile derleme yaparken ek uyarı iletileri görebilirsiniz. Bazı uyarılar için yalnızca en iyi duruma getirilmiş kod arasında bir ilişki olduğundan, bu davranış beklenmektedir. Bu uyarılar önemseyin, birçok iyileştirme sorunlarını önleyebilirsiniz.
+Kodunuzu iyileştirme ile derlerken ek uyarı iletileri görebilirsiniz. Bu davranış, bazı uyarılar yalnızca iyileştirilmiş kodla ilişkilendirildiğinden beklenmektedir. Bu uyarıları önemseen iyileştirme sorunlarından kaçınabilirsiniz.
 
-Paradoxically, bir program hızını en iyi duruma getirme, kodun daha yavaş çalışmasına neden olabilir. Bazı iyileştirmeler hızı için kod boyutunu artırın olmasıdır. Örneğin, satır içi işlevler işlev çağrılarının ek yükü ortadan kaldırır. Ancak, yapılmış programınızı çok fazla kod çok büyük sanal bellek sayfası sayısı arttıkça hataları neden olabilir. Bu nedenle, işlev çağrıları ortadan öğesinden elde edilen hızı, bellek takas için kaybolmuş olabilir.
+Paradoxically, bir programı hız için iyileştirmek kodun daha yavaş çalışmasına neden olabilir. Bunun nedeni hız için bazı iyileştirmelerin kod boyutunu artırması nedeniyle oluşur. Örneğin, satır içi işlevler işlev çağrılarının ek yükünü ortadan kaldırır. Ancak, çok fazla kod, programınızı, sanal bellek sayfa hatalarının sayısının arttığı kadar büyük hale getirir. Bu nedenle, işlev çağrılarını ortadan kaldırarak elde edilen hız bellek takası için kaybolabilir.
 
-Aşağıdaki konular, iyi bir programlama uygulamalarını tartışın.
+Aşağıdaki konular iyi programlama uygulamalarını tartışır.
 
-[Zamana bağlı kodu geliştirme ipuçları](tips-for-improving-time-critical-code.md) \
-Teknikleri daha iyi kodlama daha iyi performans sağlayabilir. Bu konuda, zaman açısından kritik kod bölümlerini tatmin edici bir şekilde gerçekleştirdiğinizden emin olun yardımcı olabilecek teknikleri kodlama önerir.
+[Zaman açısından kritik kod \ geliştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md)
+Daha iyi kodlama teknikleri daha iyi performans sağlayabilir. Bu konuda, kodunuzun zaman kritik bölümlerinin önemli olduğundan emin olmanıza yardımcı olabilecek kodlama teknikleri önerilir.
 
-[En iyi uygulamaları iyileştirme](optimization-best-practices.md) \
-Uygulamanızı en iyi duruma getirmek en iyi nasıl hakkında genel yönergeler sağlar.
+[Iyileştirme En Iyi uygulamaları](optimization-best-practices.md) \
+Uygulamanızın en iyi şekilde iyileştirilmesi hakkında genel yönergeler sağlar.
 
-## <a name="debugging-optimized-code"></a>En iyi duruma getirilmiş kodda hata ayıklama
+## <a name="debugging-optimized-code"></a>İyileştirilmiş kodda hata ayıklama
 
-İyileştirme derleyici tarafından oluşturulan kodu değişebileceğinden, uygulamanızda hata ayıklamak ve performansını ölçmek ve kodunuzu en iyi duruma öneririz.
+İyileştirme derleyici tarafından oluşturulan kodu değiştirebileceğinden, uygulamanızda hata ayıklamanızı ve performansını ölçmenizi ve ardından kodunuzu en iyi duruma getirmeyi öneririz.
 
-Aşağıdaki konular, derlemeler sürüm hata ayıklama hakkında bilgi sağlar.
+Aşağıdaki konularda, sürüm Derlemeleriyle ilgili hata ayıklama hakkında bilgi sağlanmaktadır.
 
 - [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)
 
-- [Nasıl yapılır: İyileştirilmiş Kodda Hata Ayıklama](/visualstudio/debugger/how-to-debug-optimized-code)
+- [Nasıl Yapılır: İyileştirilmiş Kodda Hata Ayıklama](/visualstudio/debugger/how-to-debug-optimized-code)
 
 - [Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği](why-floating-point-numbers-may-lose-precision.md)
 
-
-Aşağıdaki konular, derleme, yükleme ve kodunuzun yürütme en iyi duruma getirme hakkında bilgi sağlar.
+Aşağıdaki konularda, kodunuzun oluşturulması, yüklenmesi ve yürütülmesi nasıl iyileştirileceği hakkında bilgi sağlanmaktadır.
 
 - [Derleyici Üretimini Geliştirme](improving-compiler-throughput.md)
 
@@ -81,24 +80,23 @@ Aşağıdaki konular, derleme, yükleme ve kodunuzun yürütme en iyi duruma get
 
 - [ATL Projesinde Derleyici İyileştirmesi Belirtme](../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
-- [Yüklenirken istemci uygulamanın performansını artırmak için hangi iyileştirme tekniklerini kullanmalıyım?](../build/dll-frequently-asked-questions.md#mfc_optimization)
-
+- [Yükleme sırasında istemci uygulamasının performansını iyileştirmek için hangi iyileştirme tekniklerini kullanmalıyım?](../build/dll-frequently-asked-questions.md#mfc_optimization)
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[En iyi duruma getirme pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
-[Derleyici üretimini geliştirme](improving-compiler-throughput.md) \
-[Kayan noktalı sayıların neden duyarlık kaybedebileceği](why-floating-point-numbers-may-lose-precision.md) \
-[IEEE kayan Noktası temsili](ieee-floating-point-representation.md) \
-[Zamana bağlı kodu geliştirme ipuçları](tips-for-improving-time-critical-code.md) \
-[() Olmadan işlev adının kullanılması kod üretmez](using-function-name-without-parens-produces-no-code.md) \
-[En iyi uygulamaları iyileştirme](optimization-best-practices.md) \
+[Iyileştirme pragmaları ve anahtar sözcükler](optimization-pragmas-and-keywords.md) \
+[Derleyici aktarım hızını iyileştirme](improving-compiler-throughput.md) \
+[Kayan noktalı sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md) \
+[IEEE kayan nokta temsili](ieee-floating-point-representation.md) \
+[Zaman açısından kritik kod \ geliştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md)
+[() Olmadan Işlev adının kullanılması kod üretmez](using-function-name-without-parens-produces-no-code.md) \
+[Iyileştirme En Iyi uygulamaları](optimization-best-practices.md) \
 [Profil temelli iyileştirmeler](profile-guided-optimizations.md) \
-[Profil temelli iyileştirmeler için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
-[PgoAutoSweep](pgoautosweep.md) \
-[pgomgr](pgomgr.md) \
-[pgosweep](pgosweep.md) \
-[Nasıl yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
+[Profil temelli iyileştirmeler Için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
+[Pgooto süpürme](pgoautosweep.md) \
+[Pgomgr](pgomgr.md) \
+[pgosüpürme](pgosweep.md) \
+[Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

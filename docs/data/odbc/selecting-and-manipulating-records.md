@@ -6,35 +6,35 @@ helpviewer_keywords:
 - record selection, MFC ODBC classes
 - ODBC recordsets, selecting records
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
-ms.openlocfilehash: 745c0c35e42426242d92d720d5dcd3de631fb17b
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 8388cd5c8c53a4595dc9b44430077421ee8680bf
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707803"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079794"
 ---
 # <a name="selecting-and-manipulating-records"></a>Kayıtları Seçme ve Düzenleme
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Normalde seçtiğinizde, kayıtları bir SQL kullanarak bir veri kaynağından **seçin** deyimi, bir dizi kayıtlardan bir tablo veya bir sorgu bir sonuç kümesi alın. Veritabanı sınıfları ile seçin ve sonuç kümesi erişmek için bir kayıt kümesi nesnesi kullanın. Bu sınıftan türetilen bir uygulamaya özgü sınıfın bir nesnesi, [CRecordset](../../mfc/reference/crecordset-class.md). Kayıt kümesi sınıfı tanımladığınızda, ile ilişkilendirmek istediğiniz veri kaynağı tablosunu ve tablo sütunları belirtin. MFC Uygulama Sihirbazı'nı veya **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) belirli bir veri kaynağına bağlantı ile bir sınıf oluşturur. Sihirbazlar [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) sınıfının üye işlevinde `CRecordset` tablo adını döndürmek için.
+Normal olarak, bir SQL **Select** ifadesini kullanarak bir veri kaynağından kayıtlar ' ı seçtiğinizde, bir tablo veya sorgudan bir kayıt kümesi olan bir sonuç kümesi elde edersiniz. Veritabanı sınıflarıyla, sonuç kümesini seçmek ve erişmek için bir kayıt kümesi nesnesi kullanırsınız. Bu, [CRecordset](../../mfc/reference/crecordset-class.md)sınıfından türettiğiniz uygulamaya özgü sınıfın bir nesnesidir. Bir kayıt kümesi sınıfı tanımladığınızda, ile ilişkilendirilecek veri kaynağını, kullanılacak tabloyu ve tablonun sütunlarını belirtirsiniz. MFC Uygulama Sihirbazı veya **Sınıf Ekle** ( [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)bölümünde açıklandığı gibi), belirli bir veri kaynağına bağlantısı olan bir sınıf oluşturur. Sihirbazlar tablo adını döndürmek için `CRecordset`, sınıfının [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) üye işlevini yazar.
 
-Kullanarak bir [CRecordset](../../mfc/reference/crecordset-class.md) nesne çalışma zamanında, şunları yapabilirsiniz:
+Çalışma zamanında bir [CRecordset](../../mfc/reference/crecordset-class.md) nesnesi kullanarak şunları yapabilirsiniz:
 
-- Geçerli kayıt veri alanlarını inceleyin.
+- Geçerli kaydın veri alanlarını inceleyin.
 
-- Filtreleme veya sıralama kayıt.
+- Kayıt kümesini filtreleyin veya sıralayın.
 
-- Varsayılan SQL özelleştirme **seçin** deyimi.
+- Varsayılan SQL **Select** ifadesini özelleştirin.
 
-- Seçili kayıtlarda gezinin.
+- Seçili kayıtlarda ilerleyin.
 
-- Ekleme, güncelleştirme veya (hem veri kaynağı kayıt güncelleştirilebilir ise) kayıtlarını silin.
+- Kayıt ekleme, güncelleştirme veya silme (hem veri kaynağı hem de kayıt kümesi güncelleştirilebilir ise).
 
-- Kayıt kümesinde yeniden sorgulama izin verip vermediğini test ve kümesinin içeriği yenileyin.
+- Kayıt kümesinin, kayıt kümesinin içeriğini yeniden sorgulama ve yenileme izni verip etmeyeceğini test edin.
 
-Kayıt kümesi nesnesi kullanarak işiniz bittiğinde kapatın ve onu yok. Kayıt kümeleri hakkında daha fazla bilgi için bkz. [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md).
+Kayıt kümesi nesnesini kullanmayı bitirdiğinizde, kapatır ve yok edersiniz. Kayıt kümeleri hakkında daha fazla bilgi için bkz. [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

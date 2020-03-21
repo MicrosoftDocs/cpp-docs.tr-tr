@@ -3,12 +3,12 @@ title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
 ms.date: 08/19/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: b4c18d83feb6c61b603bb1880960193cf9150f9b
-ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
+ms.openlocfilehash: 31ecee084f620256820a685df1f0e6891046fb8f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79509401"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075339"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
@@ -24,7 +24,7 @@ Bu öğretici, bir çokgen görüntüleyen ActiveX nesnesi oluşturan, özniteli
 > #endif
 > ```
 >
-> şununla değiştirin
+> örneklerini şununla değiştirin:
 >
 > ```
 > #ifndef WINVER
@@ -45,7 +45,7 @@ Bu öğretici, bir çokgen görüntüleyen ActiveX nesnesi oluşturan, özniteli
 
     Kaynak kodun konumu genellikle varsayılan olarak \Users\\\<username > \source\repos olarak değişir ve yeni bir klasör otomatik olarak oluşturulur.
 
-1. Visual Studio 2019 ' de, varsayılan değerleri kabul edin ve **Tamam**' ı tıklatın. 
+1. Visual Studio 2019 ' de, varsayılan değerleri kabul edin ve **Tamam**' ı tıklatın.
    Visual Studio 2017 ' de, **atl Proje** Sihirbazı ' nı açmak için **Tamam** ' ı tıklatın. Kullanılabilir seçenekleri görmek için **uygulama ayarları** ' na tıklayın. Bu proje bir denetim oluşturduğundan ve bir denetimin işlem içi sunucu olması gerektiğinden, **uygulama türünü** dll olarak bırakın. **Tamam** düğmesine tıklayın.
 
 Visual Studio, birden çok dosya oluşturarak projeyi oluşturur. `Polygon` nesnesini genişleterek bu dosyaları **Çözüm Gezgini** görüntüleyebilirsiniz. Dosyalar aşağıda listelenmiştir.

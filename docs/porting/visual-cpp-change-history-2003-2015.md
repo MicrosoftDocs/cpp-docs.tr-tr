@@ -4,12 +4,12 @@ ms.date: 10/21/2019
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: 335db55f3b181021f4deb391358df5bbfb607815
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: d9e8778e970b6b672d6198770ad0c7ab5a4674b9
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416937"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076863"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003 - 2015
 
@@ -36,9 +36,9 @@ Ayrıca, derleyici uyumsuzluğuna yönelik sürekli geliştirmeler bazen derleyi
 
 - [Eşzamanlılık Çalışma Zamanı son değişiklikler](#BK_ConcRT)
 
-## <a name="VC_2015"></a>Visual Studio 2015 uygunluk değişiklikleri
+## <a name="visual-studio-2015-conformance-changes"></a><a name="VC_2015"></a>Visual Studio 2015 uygunluk değişiklikleri
 
-###  <a name="BK_CRT"></a>C çalışma zamanı kitaplığı (CRT)
+###  <a name="c-runtime-library-crt"></a><a name="BK_CRT"></a>C çalışma zamanı kitaplığı (CRT)
 
 #### <a name="general-changes"></a>Genel değişiklikler
 
@@ -78,7 +78,7 @@ Ayrıca, derleyici uyumsuzluğuna yönelik sürekli geliştirmeler bazen derleyi
 
 - **Kayan nokta uyumluluğu**
 
-   , NaNs ve sonsuz gibi özel durum girdilerine göre IEEE-754 ve C11 ek F belirtimleriyle uyumluluğu artırmak için matematik kitaplığı 'nda birçok değişiklik yapılmıştır. Örneğin, genellikle kitaplığın önceki sürümlerinde hata olarak kabul edilen sessiz NaN girdileri artık hata olarak değerlendirilmez. [C11 standardının](http://www.iso-9899.info/wiki/The_Standard) [IEEE 754 standardına](https://standards.ieee.org/standard/754-2008.html) ve ek F bölümüne bakın.
+   , NaNs ve sonsuz gibi özel durum girdilerine göre IEEE-754 ve C11 ek F belirtimleriyle uyumluluğu artırmak için matematik kitaplığı 'nda birçok değişiklik yapılmıştır. Örneğin, genellikle kitaplığın önceki sürümlerinde hata olarak kabul edilen sessiz NaN girdileri artık hata olarak değerlendirilmez. [C11 standardının](https://www.iso.org/standard/57853.html) [IEEE 754 standardına](https://standards.ieee.org/standard/754-2008.html) ve ek F bölümüne bakın.
 
    Bu değişiklikler, derleme zamanı hatalarına neden olmaz, ancak programların standart 'e göre farklı ve doğru davranmasına neden olabilir.
 
@@ -106,7 +106,7 @@ Ayrıca, derleyici uyumsuzluğuna yönelik sürekli geliştirmeler bazen derleyi
 
    Kod derlenirken C++ [va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) , derleme zamanında kendisine geçirilen bağımsız değişkenin başvuru türü olmadığını doğrular. Başvuru türü bağımsız değişkenleri C++ standart tarafından yasaktır.
 
-#### <a name="stdio_and_conio"></a>\<stdio. h > ve \<conio. h >
+#### <a name="stdioh-and-conioh"></a><a name="stdio_and_conio"></a>\<stdio. h > ve \<conio. h >
 
 - **Printf ve scanf ailesi işlevleri artık satır içi olarak tanımlanmıştır.**
 
@@ -303,7 +303,7 @@ Ayrıca, derleyici uyumsuzluğuna yönelik sürekli geliştirmeler bazen derleyi
 
    CLOCKS_PER_SEC makro artık C dilinin gerektirdiği gibi `clock_t`türünde bir tam sayıya genişletilir.
 
-####  <a name="BK_STL"></a>C++ Standart kitaplık
+####  <a name="c-standard-library"></a><a name="BK_STL"></a>C++ Standart kitaplık
 
 Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++ Standart Kitaplığı'nın Visual Studio uygulaması bir sürümden sonraki bir sürüme ikili uyumluluğu kasıtlı olarak bozar. Bu nedenle, C++ Standart Kitaplığı kullanıldığında, farklı sürümlerin kullanımıyla derlenmiş nesne dosyaları ve statik kitaplıklar tek bir ikili dosya (EXE veya DLL) halinde karma yapılabilir ve C++ Standart Kitaplığı nesneleri, farklı sürümler kullanılarak derlenmiş ikili dosyalar arasında geçirilemez. Bu tür karmalar, _MSC_VER uyuşmazlıklarıyla ilgili bağlayıcı hataları verir. (_MSC_VER, derleyicinin ana sürümünü içeren makrodur — Örneğin, Visual Studio 2013 için 1800.) Bu denetim, DLL karıştırmasını algılayamaz ve Visual Studio 2008 veya önceki bir sürümünü içeren karıştırma 'yı algılayamaz.
 
@@ -335,7 +335,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **std:: ayırıcı::d eallocate**
 
-   Visual Studio 2013 ve önceki sürümlerde, `std::allocator::deallocate(p, n)` *n*için geçirilen bağımsız değişkeni yok sayıldı.  Standart her zaman, *n* 'nin döndürdüğü `allocate` çağrısına ilk bağımsız değişken olarak geçirilen değere eşit olması gerekir. C++ Ancak, geçerli sürümde *n* değeri denetlenir. Standart için gerekli olan, çalışma zamanında kilitlenebiliyor olan *n* için bağımsız değişkenleri geçiren kod.
+   Visual Studio 2013 ve önceki sürümlerde, `std::allocator::deallocate(p, n)` *n*için geçirilen bağımsız değişkeni yok sayıldı.  Standart her zaman, *n* 'nin döndürdüğü `allocate` çağrısına ilk bağımsız değişken olarak geçirilen değere eşit olması gerekir. *p* C++ Ancak, geçerli sürümde *n* değeri denetlenir. Standart için gerekli olan, çalışma zamanında kilitlenebiliyor olan *n* için bağımsız değişkenleri geçiren kod.
 
 - **hash_map ve hash_set**
 
@@ -385,7 +385,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
    Standart olmayan `launch::any` ve `launch::sync` ilkeleri kaldırılmıştır. Bunun yerine, `launch::any`için `launch:async | launch:deferred`kullanın. `launch::sync` için `launch::deferred`'i kullanın. Bkz. [başlatma numaralandırması](../standard-library/future-enums.md#launch).
 
-####  <a name="BK_MFC"></a>MFC ve ATL
+####  <a name="mfc-and-atl"></a><a name="BK_MFC"></a>MFC ve ATL
 
 - **Microsoft Foundation Sınıfları (MFC)**
 
@@ -393,7 +393,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
    Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.
 
-####  <a name="BK_ConcRT"></a>Eşzamanlılık Çalışma Zamanı
+####  <a name="concurrency-runtime"></a><a name="BK_ConcRT"></a>Eşzamanlılık Çalışma Zamanı
 
 - **Windows. h 'den concurrency:: Context:: yield ile çakışan yield makrosu**
 
@@ -421,7 +421,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - [Güncelleştirme 3 ' te uyumluluk geliştirmeleri](#VS_Update3)
 
-###  <a name="VS_RTM"></a>Visual Studio 2015 uyumluluk geliştirmeleri
+###  <a name="conformance-improvements-in-visual-studio-2015"></a><a name="VS_RTM"></a>Visual Studio 2015 uyumluluk geliştirmeleri
 
 - /Zc: forScope-seçenek
 
@@ -472,7 +472,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **char_16_t ve char32_t**
 
-   Bu türler artık yerleşik olarak kabul edildiği için `char16_t` veya `char32_t` diğerad olarak kullanamazsınız. Kullanıcılar ve kitaplık yazarlarının, sırasıyla `uint16_t` ve `uint32_t`diğer adları `char16_t` ve `char32_t` tanımlanması yaygındır.
+   Bu türler artık yerleşik olarak kabul edildiği için `char16_t` veya `char32_t` diğer **typedef**ad olarak kullanamazsınız. Kullanıcılar ve kitaplık yazarlarının, sırasıyla `uint16_t` ve `uint32_t`diğer adları `char16_t` ve `char32_t` tanımlanması yaygındır.
 
     ```cpp
     #include <cstdint>
@@ -1697,7 +1697,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     C c;
     ```
 
-###  <a name="VS_Update1"></a>Güncelleştirme 1 ' deki uyumluluk geliştirmeleri
+###  <a name="conformance-improvements-in-update-1"></a><a name="VS_Update1"></a>Güncelleştirme 1 ' deki uyumluluk geliştirmeleri
 
 - **Özel sanal temel sınıflar ve dolaylı devralma**
 
@@ -2201,7 +2201,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-###  <a name="VS_Update2"></a>Güncelleştirme 2 ' deki uyumluluk geliştirmeleri
+###  <a name="conformance-improvements-in-update-2"></a><a name="VS_Update2"></a>Güncelleştirme 2 ' deki uyumluluk geliştirmeleri
 
 - **Ek uyarılar ve hatalar, SFıNAE ifadesi için kısmi destek sonucu olarak verilebilir.**
 
@@ -2380,7 +2380,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **WinRT kodunda enum iletme bildirimine izin verilmiyor** (yalnızca `/ZW`etkiler)
 
-   Windows Çalışma Zamanı (WinRT) için derlenen kod, `/clr` derleyici anahtarı kullanılarak .NET Framework için yönetilen C++ kodun derlendiğine benzer şekilde, numaralandırma türlerinin ileri olarak bildirilmesine izin vermez. Bu davranış, bir numaralandırma boyutunun her zaman bilinmesini ve WinRT türü sistemine doğru şekilde yansıtılmasını sağlar. Derleyici bu şekilde yazılmış kodu reddeder ve derleyici hatası C3197 ile birlikte derleyici hatası C2599 yayınlar.
+   Windows Çalışma Zamanı (WinRT) için derlenen kod, `/clr` derleyici **enum** anahtarı kullanılarak .NET Framework için yönetilen C++ kodun derlendiğine benzer şekilde, numaralandırma türlerinin ileri olarak bildirilmesine izin vermez. Bu davranış, bir numaralandırma boyutunun her zaman bilinmesini ve WinRT türü sistemine doğru şekilde yansıtılmasını sağlar. Derleyici bu şekilde yazılmış kodu reddeder ve derleyici hatası C3197 ile birlikte derleyici hatası C2599 yayınlar.
 
     ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -2463,7 +2463,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Bu şekilde yazılmış kodu düzeltme, işleç tanımlarının bir üstbilgi dosyasından ve karşılık gelen bir kaynak dosyaya taşınmasını gerektirebilir.
 
-###  <a name="VS_Update3"></a>Güncelleştirme 3 ' te uyumluluk geliştirmeleri
+###  <a name="conformance-improvements-in-update-3"></a><a name="VS_Update3"></a>Güncelleştirme 3 ' te uyumluluk geliştirmeleri
 
 - **std:: is_convertable artık kendinden atamayı algılar** (Standart Kitaplığı)
 
@@ -2883,7 +2883,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, `/W3` derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın ve uyarı C4370 ' ı açın. Örneğin:
+   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, `/W3` derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın ve uyarı C4370 ' ı açın. Örnek:
 
     ```cpp
     #pragma warning(default:4370)
@@ -2952,7 +2952,7 @@ Visual Studio 2013 C++ derleyici, Visual Studio 2010 ' de uygulanan _ITERATOR_DE
 
    Bu değişikliğin yan etkisi olarak, kimlik durumu artık çalışmaz (common_type\<T > her zaman T türünde sonuç vermez). Bu davranış önerilen çözünürlüğe uyar, ancak önceki davranışa bağlı olan tüm kodları keser.
 
-   Bir kimlik türü nitelik gerekliyse, \<void > için çalışmadığı için, \<type_traits > tanımlanmış standart olmayan `std::identity` kullanmayın. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Örnek buradadır:
+   Bir kimlik türü nitelik gerekliyse, \<void > için çalışmadığı için, \<type_traits > tanımlanmış standart olmayan `std::identity` kullanmayın. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Bir örneği aşağıda verilmiştir:
 
     ```cpp
     template < typename T> struct Identity {

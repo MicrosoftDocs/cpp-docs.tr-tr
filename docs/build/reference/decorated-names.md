@@ -6,85 +6,85 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: e3950f79c4c88d031e04d0d145e0a03c9ebc0a37
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 3389b5466bf4a2a48c5e36b01da6818a523fec6f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221797"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077357"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 
-İşlevleri, verileri ve nesneleri C ve C++ programları, dahili olarak düzenlenmiş adlarıyla gösterilir. A *ile düzenlenmiş adın* bir nesne, veri veya işlev tanımı bir derleme sırasında derleyici tarafından oluşturulan kodlanmış bir dize. Bu, çağırma kuralları, türleri, işlev parametrelerini ve diğer bilgileri adı ile birlikte kaydeder. Olarak da bilinen bu ad düzenlemesi *ad değiştirmeyi*nesneleri bir yürütülebilir dosya bağlanırken ve doğru işlevlerin bulunacağı bağlayıcı yardımcı olur.
+C ve C++ programlarındaki işlevler, veriler ve nesneler kendi kendilerini düzenlenmiş adlarıyla temsil edilir. *Düzenlenmiş bir ad* , bir nesne, veri veya işlev tanımının derlenmesi sırasında derleyici tarafından oluşturulan kodlanmış bir dizedir. Kural, tür, işlev parametreleri ve diğer bilgileri birlikte çağıran bir adla kaydeder. *Ad değiştirmeyi*olarak da bilinen bu ad dekorasyonu, bağlayıcının bir yürütülebilir dosyayı bağlarken doğru işlevleri ve nesneleri bulmasına yardımcı olur.
 
-Düzenlenmiş adlandırma kuralları çeşitli Visual Studio sürümlerinde değişmiş ve farklı bir hedef mimarilerde farklı da olabilir. Visual Studio, C kullanarak oluşturulan kaynak dosyaları ile doğru şekilde bağlamak ve C++ DLL'ler ve kitaplıkları aynı derleyici araç takımı, bayraklar ve hedef mimari kullanarak derlenmelidir. 
+Düzenlenmiş adlandırma kuralları, Visual Studio 'nun çeşitli sürümlerinde değiştirilmiştir ve farklı hedef mimarilerde de farklı olabilir. Visual Studio kullanılarak oluşturulan kaynak dosyalarla doğru bir şekilde bağlantı sağlamak için C ve C++ dll 'ler ve kitaplıklar aynı derleyici araç takımı, bayraklar ve hedef mimari kullanılarak derlenmelidir.
 
 > [!NOTE]
-> Visual Studio 2015 ile oluşturulan kitaplıkları Visual Studio 2017 veya Visual Studio 2019 ile oluşturulmuş uygulamalar tarafından kullanılır.
+> Visual Studio 2015 ile oluşturulan kitaplıklar, Visual Studio 2017 veya Visual Studio 2019 ile oluşturulmuş uygulamalar tarafından kullanılabilir.
 
-##  <a name="Using"></a> Düzenlenmiş adları kullanma
+##  <a name="using-decorated-names"></a><a name="Using"></a>Düzenlenmiş adlar kullanma
 
-Normalde, derleme kod yazmak için düzenlenmiş adı ve bağlantı başarıyla bilmeniz gerekmez. İç derleyici ve bağlayıcı için bir uygulama ayrıntısı düzenlenmiş adlarıdır. Araçlar ve biçimde adı genellikle başa çıkabilir. Bağlayıcı ve diğer araçlar için bir işlev adı belirttiğinizde ancak düzenlenmiş adı bazen gereklidir. Örneğin, ad alanları, sınıf Oluşturucular, Yıkıcılar ve özel üye işlevleri, üye aşırı yüklenmiş C++ işlevlerini eşleştirilecek düzenlenmiş adı belirtmeniz gerekir. Düzenlenmiş adları seçeneği bayraklar ve gerektiren diğer durumlar hakkında ayrıntılar için kullanmakta olduğunuz seçenekleri ve Araçları belgelerine bakın.
+Normal olarak, derlenen ve başarıyla bağlanan kodu yazmak için düzenlenmiş adı bilmeniz gerekmez. Düzenlenmiş adlar, derleyici ve bağlayıcının iç bir uygulama ayrıntısıyla yapılır. Araçlar genellikle adı kendi kendine ait olmayan biçimde işleyebilir. Ancak, bağlayıcı ve diğer araçlara bir işlev adı belirttiğinizde, bazen düzenlenmiş bir ad gerekir. Örneğin, aşırı yüklenmiş C++ işlevleri, ad alanları, sınıf oluşturucuları, yok ediciler ve özel üye işlevleri eşleştirmek için, düzenlenmiş adı belirtmeniz gerekir. Seçenek bayrakları ve düzenlenmiş adlar gerektiren diğer durumlar hakkında daha fazla bilgi için, kullandığınız araçlar ve seçenekler için belgelere bakın.
 
-İşlev adı, sınıf, çağırma kuralı, dönüş türü veya herhangi bir parametre değiştirirseniz düzenlenmiş adı da değişir. Bu durumda, yeni düzenlenmiş adı almak ve her yerde düzenlenmiş adı belirtilen kullanmanız gerekir.
+İşlev adı, sınıf, çağırma kuralı, dönüş türü veya herhangi bir parametreyi değiştirirseniz, düzenlenmiş ad de değişir. Bu durumda, yeni düzenlenmiş adı almalısınız ve düzenlenmiş adın belirtildiği her yerde kullanmanız gerekir.
 
-Ad düzenlemesi, ayrıca diğer programlama veya diğer derleyiciler kullanarak içinde yazılan koda bağlarken önemlidir. Farklı derleyiciler farklı ad düzenlemesi kuralları kullanın. Yürütülebilir dosyanın başka bir dilde yazılan koda bağlantılar, dışarı aktarılan ve içeri aktarılan ad ve çağırma kuralları eşleştirmek için özel dikkatli olunması gerekir. Assembly dili kod MSVC kullanılarak yazılmış kaynak koda bağlamak için MSVC düzenlenmiş adları ve çağırma kurallarını kullanmanız gerekir.
+Ad dekorasyonu, diğer programlama dillerinde yazılmış veya diğer derleyicilerin kullanıldığı koda bağlanırken de önemlidir. Farklı derleyiciler farklı ad dekorasyon kuralları kullanır. Yürütülebilir dosya, başka bir dilde yazılmış kodla bağlantılarsa, aktarılan ve içeri aktarılan adları ve çağırma kurallarını eşleştirmek için özel dikkatli olunması gerekir. Derleme dili kodu, MSVC kullanılarak yazılmış kaynak koda bağlantı sağlamak için MSVC ile düzenlenmiş adları ve çağırma kurallarını kullanmalıdır.
 
-##  <a name="Format"></a> İle düzenlenmiş adın biçimi bir C++
+##  <a name="format-of-a-c-decorated-name"></a><a name="Format"></a>C++ Düzenlenmiş adın biçimi
 
-Bir C++ işlevi için düzenlenmiş bir ad, aşağıdaki bilgileri içerir:
+C++ İşlevin düzenlenmiş adı aşağıdaki bilgileri içerir:
 
 - İşlev adı.
 
-- Üye işlevi ise işlevi, üyesi olduğu sınıf. Bu işlevini içeren sınıf kapsayan bir sınıf içerir ve benzeri.
+- Bir üye işleviniz ise, işlevin üyesi olduğu sınıf. Bu, işlevi içeren sınıfını kapsayan sınıfı içerebilir ve bu şekilde devam eder.
 
-- Bir ad alanı bir parçası ise ad işlevi için ait.
+- Bir ad alanının parçasıysa işlevin ait olduğu ad alanı.
 
 - İşlev parametrelerinin türleri.
 
 - Çağırma kuralı.
 
-- İşlev dönüş türü.
+- İşlevin dönüş türü.
 
-İşlev ve sınıf adları düzenlenmiş adı kodlanır. Kalan düzenlenmiş adı, derleyici ve bağlayıcı için yalnızca iç anlamı bir koddur. Tamamlanmamış ve düzenlenmiş C++ adları örnekleri aşağıda verilmiştir.
+İşlev ve sınıf adları, düzenlenmiş adda kodlanır. Düzenlenmiş adın geri kalanı yalnızca derleyici ve bağlayıcı için iç anlamı olan bir koddur. Aşağıda, süslenmiş ve düzenlenmiş C++ adların örnekleri verilmiştir.
 
-|Tamamlanmamış adı|Düzenlenmiş adı|
+|Süslenmiş ad|Düzenlenmiş ad|
 |----------------------|--------------------|
 |`int a(char){int i=3;return i;};`|`?a@@YAHD@Z`|
 |`void __stdcall b::c(float){};`|`?c@b@@AAGXM@Z`|
 
-##  <a name="FormatC"></a> İle düzenlenmiş adın biçimi c
+##  <a name="format-of-a-c-decorated-name"></a><a name="FormatC"></a>C ile düzenlenmiş adın biçimi
 
-C işlev için düzenleme formu, bildirimde kullanılan çağırma kuralı aşağıdaki tabloda gösterildiği gibi bağlıdır. C++ kodu için bildirildiğinde kullanılan düzenleme biçimi de budur `extern "C"` bağlantı. Çağırma kuralı varsayılan `__cdecl`. Bir 64-bit ortamında işlevleri değil düzenlenmiş unutmayın.
+Bir C işlevinin dekoratinin biçimi, aşağıdaki tabloda gösterildiği gibi bildiriminde kullanılan çağırma kuralına bağlıdır. Bu Ayrıca, C++ kod `extern "C"` bağlantısına sahip olacak şekilde bildirildiğinde kullanılan dekoronun biçimidir. Varsayılan çağırma kuralı `__cdecl`. 64 bitlik bir ortamda işlevler tasarlanmadığını unutmayın.
 
-|Çağırma kuralı|Düzenleme|
+|Çağırma kuralı|Düzenlemenin|
 |------------------------|----------------|
-|`__cdecl`|Önünde alt çizgi (**_**)|
-|`__stdcall`|Önünde alt çizgi (**_**) ve sondaki işaretini (**\@**) ondalık parametre listesindeki bayt sayısı ardından|
-|`__fastcall`|Baştaki ve sondaki işaretleri (**\@**) parametre listesindeki bayt sayısını temsil eden bir ondalık sayı ardından|
-|`__vectorcall`|İki işaretleri sonda (**\@\@**) ondalık parametre listesindeki bayt sayısı ardından|
+|`__cdecl`|Baştaki alt çizgi ( **_** )|
+|`__stdcall`|Baştaki alt çizgi ( **_** ) ve sondaki işareti ( **\@** ), ardından parametre listesindeki bayt sayısı ondalık olarak|
+|`__fastcall`|Baştaki ve sondaki işaretlere ( **\@** ), ardından parametre listesindeki bayt sayısını temsil eden bir ondalık sayı gelmelidir|
+|`__vectorcall`|İki sonda işareti ( **\@\@** ), ardından parametre listesindeki ondalık sayıda bayt|
 
-##  <a name="Viewing"></a> Görüntüleme düzenlenmiş adlar
+##  <a name="viewing-decorated-names"></a><a name="Viewing"></a>Düzenlenmiş adları görüntüleme
 
-Verileri, nesne veya işlev tanımı veya prototip içeren kaynak dosyayı derledikten sonra bir sembol adı düzenlenmiş biçiminde alabilirsiniz. Düzenlenmiş adlar programınızdaki incelemek için aşağıdaki yöntemlerden birini kullanabilirsiniz:
+Veri, nesne veya işlev tanımı ya da prototipi içeren kaynak dosyayı derledikten sonra sembol adının düzenlenmiş biçimini alabilirsiniz. Programınızda düzenlenmiş adları incelemek için aşağıdaki yöntemlerden birini kullanabilirsiniz:
 
-#### <a name="to-use-a-listing-to-view-decorated-names"></a>Düzenlenmiş adları görüntülemek için liste kullanma
+#### <a name="to-use-a-listing-to-view-decorated-names"></a>Düzenlenmiş adları görüntülemek için bir liste kullanmak
 
-1. Verileri, nesne veya işlev tanımı veya Prototiple içeren kaynak dosyanın derleme tarafından listesini oluşturmak [listeleme dosya türü](fa-fa-listing-file.md) kaynak kodlu bütünleştirilmiş kod olarak derleyici seçeneği (**/Fas**).
+1. Veri, nesne veya işlev tanımı ya da prototip içeren kaynak dosyayı, kaynak kodu ( **/Fas**) olan derleme olarak ayarlanmış şekilde ayarlayarak [bir liste oluşturun](fa-fa-listing-file.md) .
 
-   Örneğin, `cl /c /FAs example.cpp` bir listeleme dosyası oluşturmak için geliştirici komut isteminde example.asm.
+   Örneğin, bir liste dosyası oluşturmak için bir geliştirici komut isteminde `cl /c /FAs example.cpp` girin, örneğin. asm.
 
-2. Sonuçta ortaya çıkan döküm dosyasında ortak ile başlar ve ardından ve veri veya işlev adı noktalı virgül biten satırını bulun. Genel ve noktalı virgül arasında simge düzenlenmiş bir addır.
+2. Elde edilen liste dosyasında, genel ile başlayan satırı bulun ve ardından, bir noktalı virgülden sonra, açıklanarak verilerin veya işlev adının sonuna kadar sonlandırır. ORTAK ve noktalı virgül arasındaki simge, düzenlenmiş addır.
 
-#### <a name="to-use-dumpbin-to-view-decorated-names"></a>Düzenlenmiş adları görüntülemek için DUMPBIN kullanma
+#### <a name="to-use-dumpbin-to-view-decorated-names"></a>Düzenlenmiş adları görüntülemek için DUMPBIN 'i kullanmak için
 
-1. Dışarı aktarılan bir .obj veya .lib dosyası sembolleri görmek için girin `dumpbin /symbols` `objfile` bir geliştirici komut isteminde.
+1. Bir. obj veya. lib dosyasında, içe aktarılmış sembolleri görmek için, bir geliştirici komut isteminde `dumpbin /symbols` `objfile` girin.
 
-2. Bir simgenin düzenlenmiş formunu bulmak için parantez içinde düzenlenmemiş adını arayın. Düzenlenmiş adı bir kanal sonra aynı satırda olduğu (&#124;) ve adından önce ve karakter.
+2. Bir simgenin düzenlenmiş biçimini bulmak için, parantez içinde açıklanedilmemiş adı arayın. Düzenlenmiş ad, bir kanal (&#124;) karakterinden sonra ve ardışık olmayan ad ile aynı satırda bulunur.
 
-##  <a name="Undecorated"></a> Adları ve görüntüleme
+##  <a name="viewing-undecorated-names"></a><a name="Undecorated"></a>Açıklanmamalıdır adları görüntüleme
 
-Düzenlenmiş adları ve kendi biçimine dönüştürmek için undname.exe kullanabilirsiniz. Bu örnek nasıl çalıştığını gösterir:
+Bir düzenlenmiş adı, kendine ait olmayan biçime dönüştürmek için undadı. exe ' yi kullanabilirsiniz. Bu örnekte nasıl çalıştığı gösterilmektedir:
 
 ```
 C:\>undname ?func1@a@@AAEXH@Z

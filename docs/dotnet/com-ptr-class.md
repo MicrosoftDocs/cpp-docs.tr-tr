@@ -16,16 +16,16 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::ptr class
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
-ms.openlocfilehash: 342c222b837e179e2e13dbbd27c88efc18b12332
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a3223543dfa6c1b5b45fef2780cd11b558eab84
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209236"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078961"
 ---
 # <a name="comptr-class"></a>com::ptr Sınıfı
 
-Bir CLR sınıfının bir üyesi kullanılabilecek bir COM nesnesi için bir sarmalayıcı.  Sarmalayıcı da yok edici çağrıldığında nesne üzerinde sahip olunan tüm başvurularını serbest COM nesnesi ömrü yönetimini otomatikleştirir. Alınmak üzere [CComPtr sınıfı](../atl/reference/ccomptr-class.md).
+Bir CLR sınıfının üyesi olarak kullanılabilecek COM nesnesi için sarmalayıcı.  Sarmalayıcı aynı zamanda COM nesnesinin yaşam süresi yönetimini de otomatikleştirir ve yok edicisi çağrıldığında nesnenin sahip olduğu tüm başvuruları serbest bırakır. [CComPtr sınıfına](../atl/reference/ccomptr-class.md)benzer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,15 +41,15 @@ COM arabirimi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-A `com::ptr` yerel işlev değişken olarak çeşitli COM görevleri basitleştirin ve ömür Yönetimi otomatik hale getirmek için de kullanılabilir.
+Ayrıca, çeşitli COM görevlerini basitleştirmek ve ömür yönetimini otomatikleştirmek için bir yerel işlev değişkeni olarak bir `com::ptr` kullanılabilir.
 
-A `com::ptr` doğrudan işlevi parametre olarak kullanılamaz; kullanmak bir [izleme başvurusu işleci](../extensions/tracking-reference-operator-cpp-component-extensions.md) veya [işlemek nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) yerine.
+Bir `com::ptr` doğrudan bir işlev parametresi olarak kullanılamaz; Bunun yerine bir [izleme başvurusu işleci](../extensions/tracking-reference-operator-cpp-component-extensions.md) veya [nesne işleci (^) için bir tanıtıcı](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) kullanın.
 
-A `com::ptr` doğrudan bir işlevden döndürülen kullanılamaz; bunun yerine bir tanıtıcı kullanın.
+Bir `com::ptr` doğrudan bir işlevden döndürülemez; Bunun yerine bir tanıtıcı kullanın.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  Kapsanan çağrılarında sınıfı sonuçları genel yöntemleri çağırma `IXMLDOMDocument` nesne.  Örnek bir XML belgesi bir örneğini oluşturur, bazı basit XML ile doldurur ve Basitleştirilmiş bir Yürüme XML konsola yazdırmak için ayrıştırılmış belge ağacında düğümlerin yapar.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular.  Sınıfın ortak yöntemlerini çağırmak, içerilen `IXMLDOMDocument` nesnesine yapılan çağrılara neden olur.  Örnek, bir XML belgesinin bir örneğini oluşturur, onu bir basit XML ile doldurur ve ayrıştırılmış belge ağacındaki düğümlerin, XML 'yi konsola yazdırması için basitleştirilmiş bir yol oluşturur.
 
 ```cpp
 // comptr.cpp
@@ -165,44 +165,42 @@ int main() {
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel oluşturucular
+### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Ad|Açıklama| 
-|---------|-----------| 
-|[ptr::ptr](#ptr)|Oluşturur bir `com::ptr` bir COM nesnesini sarmak için.| 
-|[ptr::~ptr](#tilde-ptr)|Destructs bir `com::ptr`.| 
+|Adı|Açıklama|
+|---------|-----------|
+|[ptr::ptr](#ptr)|Bir COM nesnesini kaydırmak için bir `com::ptr` oluşturur.|
+|[ptr::~ptr](#tilde-ptr)|`com::ptr`yapıları kaldırır.|
 
-### <a name="public-methods"></a>Genel yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|---------|-----------| 
-|[ptr::Attach](#attach)|Bir COM nesnesine iliştirir bir `com::ptr`.| 
-|[ptr::CreateInstance](#createInstance)|Bir COM nesnesi içinde bir örneği oluşturan bir `com::ptr`.| 
-|[ptr::Detach](#detach)|Nesnesine bir işaretçi döndüren COM nesnesi sahipliğini ayarlama olanağı sağlar.| 
-|[ptr::GetInterface](#getInterface)|Bir COM nesnesi içinde bir örneği oluşturan bir `com::ptr`.| 
-|[ptr::QueryInterface](#queryInterface)|Sahip olunan bir COM nesnesi bir arabirim için sorgular ve sonucu bir diğerine ekler `com::ptr`.| 
-|[ptr::Release](#release)|COM nesne üzerinde sahip olunan tüm başvurularını serbest bırakır.|
+|Adı|Açıklama|
+|---------|-----------|
+|[ptr::Attach](#attach)|`com::ptr`bir COM nesnesi ekler.|
+|[ptr::CreateInstance](#createInstance)|`com::ptr`içinde bir COM nesnesi örneği oluşturur.|
+|[ptr::Detach](#detach)|COM nesnesinin sahipliğini verir ve nesneye bir işaretçi döndürür.|
+|[ptr::GetInterface](#getInterface)|`com::ptr`içinde bir COM nesnesi örneği oluşturur.|
+|[ptr::QueryInterface](#queryInterface)|Bir arabirim için sahip olunan COM nesnesini sorgular ve sonucu başka bir `com::ptr`iliştirir.|
+|[ptr::Release](#release)|COM nesnesinde sahip olunan tüm başvuruları yayınlar.|
 
-### <a name="public-operators"></a>Genel işleçler
+### <a name="public-operators"></a>Ortak işleçler
 
-|Ad|Açıklama|
-|---------|-----------| 
-|[PTR::operator-&gt;](#operator-arrow)|Üye erişim işleci, sahip olunan bir COM nesnesi üzerinde yöntemleri çağırmak için kullanılır.| 
-|[ptr::operator=](#operator-assign)|Bir COM nesnesine iliştirir bir `com::ptr`.| 
-|[PTR::operator&nbsp;bool](#operator-bool)|Kullanarak işleci `com::ptr` koşullu ifadede.| 
-|[ptr::operator!](#operator-logical-not)|Sahip olunan bir COM nesnesi geçersiz olup olmadığını belirlemek için işleci.| 
+|Adı|Açıklama|
+|---------|-----------|
+|[PTR:: operator-&gt;](#operator-arrow)|Üye erişim işleci, sahip olunan COM nesnesinde yöntemleri çağırmak için kullanılır.|
+|[ptr::operator=](#operator-assign)|`com::ptr`bir COM nesnesi ekler.|
+|[PTR:: operator&nbsp;bool](#operator-bool)|Koşullu ifadede `com::ptr` kullanmak için işleç.|
+|[ptr::operator!](#operator-logical-not)|Sahip olunan COM nesnesinin geçersiz olup olmadığını belirleme işleci.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası** \<msclr\com\ptr.h >
+**Üstbilgi dosyası** \<msclr\com\ptr.h >
 
-**Namespace** msclr::com
+**Ad alanı** msclr:: com
 
- 
+## <a name="ptrptr"></a><a name="ptr"></a>PTR::p tr
 
-## <a name="ptr"></a>PTR::PTR
-
-Sahip olunan bir COM nesnesi için bir işaretçi döndürür.
+Sahip olunan COM nesnesine bir işaretçi döndürür.
 
 ```cpp
 ptr();
@@ -213,20 +211,20 @@ ptr(
 
 ### <a name="parameters"></a>Parametreler
 
-*P*<br/>
+*Lama*<br/>
 Bir COM arabirim işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken olmayan Oluşturucu atar `nullptr` temel alınan nesne işlenecek. Gelecekteki çağrılar `com::ptr` iç nesne doğrulamak ve bir nesne oluşturulduğunda veya bağlı kadar sessizce başarısız.
+No-bağımsız değişken Oluşturucu temel nesne tanıtıcısına `nullptr` atar. `com::ptr` yapılan çağrılar iç nesneyi doğrular ve bir nesne oluşturuluncaya veya iliştirilene kadar sessizce başarısız olur.
 
-Tek bağımsız değişkenli Oluşturucusu COM nesnesine bir başvuru ekler, ancak çağıranın çağırmanız gerekir böylece arayanın başvuru yayın değil `Release` gerçekten denetimini sağlamak için COM nesne üzerinde. Zaman `com::ptr`ait yok edici çağrıldığında otomatik olarak bir COM nesnesi üzerinde başvuruları serbest bırakır.
+Tek değişkenli bir Oluşturucu COM nesnesine bir başvuru ekler ancak çağıranın başvurusunu serbest bırakmaz, bu nedenle çağıran, denetimi gerçekten denetlemek için COM nesnesinde `Release` çağırmalıdır. `com::ptr`yıkıcısı çağrıldığında, başvuruları COM nesnesinde otomatik olarak serbest bırakılır.
 
-Geçirme `NULL` bu oluşturucuya çağırma bağımsız değişkenli sürümü ile aynıdır.
+Bu oluşturucuya `NULL` geçirmek, bağımsız değişken olmayan sürümü çağırmada de aynıdır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. Bu oluşturucu her iki sürümü de kullanımını gösterir.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. Her iki oluşturucunun sürümünün kullanımını gösterir.
 
 ```cpp
 // comptr_ptr.cpp
@@ -287,9 +285,9 @@ int main() {
 }
 ```
 
-## <a name="tilde-ptr"></a>ptr::~ptr
+## <a name="ptrptr"></a><a name="tilde-ptr"></a>PTR:: ~ PTR
 
-Destructs bir `com::ptr`.
+`com::ptr`yapıları kaldırır.
 
 ```cpp
 ~ptr();
@@ -297,11 +295,11 @@ Destructs bir `com::ptr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok etme üzerinde `com::ptr` , COM nesnesine sahip tüm başvurularını serbest bırakır. Orada olduğu varsayılırsa, COM nesnesi için tutulan diğer başvuru, COM nesnesi silinecek ve onun belleğini serbest.
+Yok etme durumunda `com::ptr`, kendi COM nesnesine sahip olduğu tüm başvuruları yayınlar. COM nesnesinde başka hiçbir başvuru olmadığı varsayılarak, COM nesnesi silinir ve belleği serbest bırakılır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  İçinde `main` işlev, iki `XmlDocument` kapsamı dışında gitmeleri olduğunda nesnelerin yıkıcıları çağrılacaktır `try` temel kaynaklanan bloğu `com::ptr` yok Edicisi çağrılır, COM şirkete ait tüm başvurularını serbest bırakma nesne.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular.  `main` işlevinde, bu iki `XmlDocument` nesnenin yok edicisi `try` bloğunun kapsamından çalıştıklarında çağrılır ve bu, temel alınan `com::ptr` yıkıcıya sahip olan tüm başvuruları COM nesnesine serbest bırakır.
 
 ```cpp
 // comptr_dtor.cpp
@@ -362,9 +360,9 @@ int main() {
 }
 ```
 
-## <a name="attach"></a>PTR::Attach
+## <a name="ptrattach"></a><a name="attach"></a>PTR:: Attach
 
-Bir COM nesnesine iliştirir bir `com::ptr`.
+`com::ptr`bir COM nesnesi ekler.
 
 ```cpp
 void Attach(
@@ -375,21 +373,21 @@ void Attach(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-COM arabirimi eklemek için işaretçi.
+Eklenecek COM arabirimi işaretçisi.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Varsa `com::ptr` bir COM nesnesine bir başvuru zaten sahip `Attach` oluşturur <xref:System.InvalidOperationException>.
+`com::ptr` bir COM nesnesine bir başvuruya zaten sahipse, `Attach` <xref:System.InvalidOperationException>oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrı `Attach` COM nesnesine başvuruyor ancak arayanın referansı sürüm değil.
+`Attach` çağrısı COM nesnesine başvurur ancak çağıranın ona başvurusunu serbest bırakmaz.
 
-Geçirme `NULL` için `Attach` alınan hiçbir eylem sonuçlanır.
+`NULL` `Attach`, hiçbir eylemde bulunulmasına neden olur.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. `ReplaceDocument` İlk işlev çağrıları, üye `Release` herhangi nesnesi ve ardından aramaları önceden ait `Attach` yeni bir belge nesnesi eklemek için.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. `ReplaceDocument` member işlevi önce daha önce sahip olunan herhangi bir nesne üzerinde `Release` çağırır ve sonra yeni bir belge nesnesi eklemek `Attach` çağırır.
 
 ```cpp
 // comptr_attach.cpp
@@ -463,9 +461,9 @@ int main() {
 }
 ```
 
-## <a name="createInstance"></a>PTR::CreateInstance
+## <a name="ptrcreateinstance"></a><a name="createInstance"></a>PTR:: CreateInstance
 
-Bir COM nesnesi içinde bir örneği oluşturan bir `com::ptr`.
+`com::ptr`içinde bir COM nesnesi örneği oluşturur.
 
 ```cpp
 void CreateInstance(
@@ -509,30 +507,30 @@ void CreateInstance(
 ### <a name="parameters"></a>Parametreler
 
 *progid*<br/>
-A `ProgID` dize.
+Bir `ProgID` dizesi.
 
-*pouter*<br/>
-Toplam nesnenin IUnknown arabirimi (IUnknown) yönelik işaretçi. Varsa `pouter` belirlenmezse, `NULL` kullanılır.
+*pOuter*<br/>
+Toplama nesnesinin IUnknown arabirimine yönelik işaretçi (IUnknown denetimi). `pouter` belirtilmezse, `NULL` kullanılır.
 
 *cls_context*<br/>
-Yeni oluşturulan nesne yöneten kod çalıştırılacağı bağlamı. Değerleri alınmıştır `CLSCTX` sabit listesi. Varsa `cls_context` belirlenmezse, değerin CLSCTX_ALL kullanılır.
+Yeni oluşturulan nesneyi yöneten kodun çalışacağı bağlam. Değerler `CLSCTX` numaralandırmasından alınır. `cls_context` belirtilmemişse, CLSCTX_ALL değeri kullanılır.
 
-*rclsid*<br/>
-`CLSID` veri ve nesneyi oluşturmak için kullanılan kod ile ilişkili.
+*rclsıd*<br/>
+nesneyi oluşturmak için kullanılacak veriler ve kodla ilişkili `CLSID`.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Varsa `com::ptr` bir COM nesnesine bir başvuru zaten sahip `CreateInstance` oluşturur <xref:System.InvalidOperationException>.
+`com::ptr` bir COM nesnesine bir başvuruya zaten sahipse, `CreateInstance` <xref:System.InvalidOperationException>oluşturur.
 
-Bu işlev çağrıları `CoCreateInstance` ve kullandığı <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> herhangi bir hata dönüştürmek için `HRESULT` için uygun bir özel durum.
+Bu işlev `CoCreateInstance` çağırır ve herhangi bir hata `HRESULT` uygun bir özel duruma dönüştürmek için <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> kullanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateInstance` kullanan `CoCreateInstance` ProgID veya bir CLSID tanımlanan belirtilen bir nesnenin yeni bir örneğini oluşturmak için. `com::ptr` Yeni oluşturulan nesneye başvuran ve yok etme sırasında şirkete ait tüm başvurularını otomatik olarak serbest bırakır.
+`CreateInstance`, bir ProgID veya CLSID 'den tanımlanan, belirtilen nesnenin yeni bir örneğini oluşturmak için `CoCreateInstance` kullanır. `com::ptr` yeni oluşturulan nesneye başvurur ve yok etme sonrasında tüm sahip olan başvuruları otomatik olarak serbest bırakılır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. İki farklı tür sınıf oluşturucuları kullanmanıza `CreateInstance` ProgID içinden ya bir CLSID değeri artı bir CLSCTX belge nesnesi oluşturulamıyor.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. Sınıf oluşturucular, bir ProgID 'den ya da bir CLSID ile CLSCTX arasında belge nesnesini oluşturmak için iki farklı `CreateInstance` biçimi kullanır.
 
 ```cpp
 // comptr_createinstance.cpp
@@ -581,9 +579,9 @@ int main() {
 }
 ```
 
-## <a name="detach"></a>PTR::detach
+## <a name="ptrdetach"></a><a name="detach"></a>PTR::D etach
 
-Nesnesine bir işaretçi döndüren COM nesnesi sahipliğini ayarlama olanağı sağlar.
+COM nesnesinin sahipliğini verir ve nesneye bir işaretçi döndürür.
 
 ```cpp
 _interface_type * Detach();
@@ -591,21 +589,21 @@ _interface_type * Detach();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-COM nesne işaretçisi.
+COM nesnesi işaretçisi.
 
-Hiçbir nesnenin sahibi, NULL döndürülür.
+Hiçbir nesne sahip değilse, NULL döndürülür.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Dahili olarak `QueryInterface` sahip olunan bir COM nesnesi ve herhangi bir hata çağrılır `HRESULT` bir özel durumun dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.
+Dahili olarak, `QueryInterface` sahip olan COM nesnesinde çağrılır ve herhangi bir hata `HRESULT` <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>tarafından özel duruma dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Detach` ilk çağıranın adına COM nesnesine bir başvuru ekler ve ardından tarafından sahip olunan tüm başvurularını serbest `com::ptr`.  Çağıran, yok etmek için döndürülen nesne sonuçta bırakmalıdır.
+`Detach` önce çağıran adına COM nesnesine bir başvuru ekler ve sonra `com::ptr`ait tüm başvuruları serbest bırakır.  Çağıran, sonunda döndürülen nesneyi yok etmek için serbest bırakmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  `DetachDocument` Üye işlev çağrıları `Detach` COM nesnesi sahipliğini vermek ve çağırana bir işaretçi döndürür.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular.  `DetachDocument` member işlevi, COM nesnesinin sahipliğini sağlamak için `Detach` çağırır ve çağırana bir işaretçi döndürür.
 
 ```cpp
 // comptr_detach.cpp
@@ -686,9 +684,9 @@ int main() {
 }
 ```
 
-## <a name="getInterface"></a>PTR::GetInterface
+## <a name="ptrgetinterface"></a><a name="getInterface"></a>PTR:: GetInterface
 
-Sahip olunan bir COM nesnesi için bir işaretçi döndürür.
+Sahip olunan COM nesnesine bir işaretçi döndürür.
 
 ```cpp
 _interface_type * GetInterface();
@@ -696,19 +694,19 @@ _interface_type * GetInterface();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-Sahip olunan bir COM nesnesine bir işaretçi.
+Sahip olunan COM nesnesine yönelik bir işaretçi.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Dahili olarak `QueryInterface` sahip olunan bir COM nesnesi ve herhangi bir hata çağrılır `HRESULT` bir özel durumun dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.
+Dahili olarak, `QueryInterface` sahip olan COM nesnesinde çağrılır ve herhangi bir hata `HRESULT` <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>tarafından özel duruma dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`com::ptr` Arayanın adınıza COM nesnesine bir başvuru ekler ve de COM nesnesi üzerinde kendi başvurusunu tutar. Çağırana döndürülen nesne üzerinde başvuru sonuçta serbest bırakmanız gerekir veya hiç yok edilir.
+`com::ptr`, çağıran adına COM nesnesine bir başvuru ekler ve ayrıca COM nesnesinde kendi başvurusunu tutar. Çağıran, sonunda başvuruyu döndürülen nesne üzerinde serbest bırakmalıdır veya hiçbir şekilde yok olmayacaktır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. `GetDocument` Üye işlevini kullanan `GetInterface` için COM nesnesine bir işaretçi döndürür.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. `GetDocument` member işlevi COM nesnesine bir işaretçi döndürmek için `GetInterface` kullanır.
 
 ```cpp
 // comptr_getinterface.cpp
@@ -828,9 +826,9 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="queryInterface"></a>PTR::QueryInterface
+## <a name="ptrqueryinterface"></a><a name="queryInterface"></a>PTR:: QueryInterface
 
-Sahip olunan bir COM nesnesi bir arabirim için sorgular ve sonucu bir diğerine ekler `com::ptr`.
+Bir arabirim için sahip olunan COM nesnesini sorgular ve sonucu başka bir `com::ptr`iliştirir.
 
 ```cpp
 template<class _other_type>
@@ -841,20 +839,20 @@ void QueryInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
-`com::ptr` Arabirimi alırsınız.
+*farklı*<br/>
+Arabirimi alacak `com::ptr`.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Dahili olarak `QueryInterface` sahip olunan bir COM nesnesi ve herhangi bir hata çağrılır `HRESULT` bir özel durumun dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.
+Dahili olarak, `QueryInterface` sahip olan COM nesnesinde çağrılır ve herhangi bir hata `HRESULT` <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>tarafından özel duruma dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli bir sarmalayıcı tarafından sahip olunan COM nesnesinin farklı bir arabirim için COM sarmalayıcı oluşturmak için bu yöntemi kullanın. Bu yöntemin çağırdığı `QueryInterface` com belirli bir arabirim işaretçisi istemek için sahip olunan COM nesnesi aracılığıyla nesne ve geçilen için döndürülen arabirim işaretçisinde ekler `com::ptr`.
+Geçerli sarmalayıcı tarafından sahip olunan COM nesnesinin farklı bir arabirimi için bir COM sarmalayıcısı oluşturmak için bu yöntemi kullanın. Bu yöntem, COM nesnesinin belirli bir arabirimine bir işaretçi istemek için sahip olunan COM nesnesi aracılığıyla `QueryInterface` çağırır ve döndürülen arabirim işaretçisini geçirilen `com::ptr`iliştirir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. `WriteTopLevelNode` Üye işlevini kullanır `QueryInterface` yerel doldurmak için `com::ptr` ile bir `IXMLDOMNode` geçirir `com::ptr` (yönelik izleme başvurusuna tarafından) bir özel üye işlevine düğümün adını ve metin özellikleri konsola yazar.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. `WriteTopLevelNode` member işlevi bir `IXMLDOMNode` ile yerel bir `com::ptr` `QueryInterface` ve ardından `com::ptr` (başvuruya göre), düğümün adını ve metin özelliklerini konsola yazan özel bir üye işlevine geçirir.
 
 ```cpp
 // comptr_queryinterface.cpp
@@ -959,9 +957,9 @@ int main() {
 <#document>persnickety</#document>
 ```
 
-## <a name="release"></a>PTR::Release
+## <a name="ptrrelease"></a><a name="release"></a>PTR:: Release
 
-COM nesne üzerinde sahip olunan tüm başvurularını serbest bırakır.
+COM nesnesinde sahip olunan tüm başvuruları yayınlar.
 
 ```cpp
 void Release();
@@ -969,11 +967,11 @@ void Release();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu fonksiyonu çağıran COM nesnesi üzerinde sahip olunan tüm başvurularını serbest bırakır ve iç işleyici COM nesnesine ayarlar `nullptr`.  COM nesne üzerinde diğer başvuru yoksa yok edilir.
+Bu işlevi çağırmak COM nesnesinde sahip olunan tüm başvuruları yayınlar ve iç tanıtıcıyı `nullptr`için COM nesnesine ayarlar.  COM nesnesinde başka bir başvuru yoksa, yok edilir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  `ReplaceDocument` Üye işlevini kullanan `Release` yeni belge eklemeden önce herhangi bir önceki belge nesneyi serbest bırakmak için.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular.  `ReplaceDocument` member işlevi, yeni belgeyi eklemeden önce herhangi bir önceki belge nesnesini serbest bırakmak için `Release` kullanır.
 
 ```cpp
 // comptr_release.cpp
@@ -1047,9 +1045,9 @@ int main() {
 }
 ```
 
-## <a name="operator-arrow"></a>PTR::operator-&gt;
+## <a name="ptroperator-gt"></a><a name="operator-arrow"></a>PTR:: operator-&gt;
 
-Üye erişim işleci, sahip olunan bir COM nesnesi üzerinde yöntemleri çağırmak için kullanılır.
+Üye erişim işleci, sahip olunan COM nesnesinde yöntemleri çağırmak için kullanılır.
 
 ```cpp
 _detail::smart_com_ptr<_interface_type> operator->();
@@ -1057,19 +1055,19 @@ _detail::smart_com_ptr<_interface_type> operator->();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-A `smart_com_ptr` COM nesnesi için.
+COM nesnesine bir `smart_com_ptr`.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Dahili olarak `QueryInterface` sahip olunan bir COM nesnesi ve herhangi bir hata çağrılır `HRESULT` bir özel durumun dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.
+Dahili olarak, `QueryInterface` sahip olan COM nesnesinde çağrılır ve herhangi bir hata `HRESULT` <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>tarafından özel duruma dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, sahip olunan COM nesnesinin yöntemlerini çağırmanız olanak tanır. Geçici bir döndürür `smart_com_ptr` otomatik olarak işleyen kendi `AddRef` ve `Release`.
+Bu işleç, sahip olunan COM nesnesinin yöntemlerini çağıralmanıza olanak sağlar. Kendi `AddRef` ve `Release`otomatik olarak işleyen geçici bir `smart_com_ptr` döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. `WriteDocument` İşlevini kullanan `operator->` çağrılacak `get_firstChild` belge nesnenin bir üyesi.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. `WriteDocument` işlevi, belge nesnesinin `get_firstChild` üyesini çağırmak için `operator->` kullanır.
 
 ```cpp
 // comptr_op_member.cpp
@@ -1189,9 +1187,9 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="operator-assign"></a>PTR::operator =
+## <a name="ptroperator"></a><a name="operator-assign"></a>PTR:: operator =
 
-Bir COM nesnesine iliştirir bir `com::ptr`.
+`com::ptr`bir COM nesnesi ekler.
 
 ```cpp
 ptr<_interface_type> % operator=(
@@ -1202,25 +1200,25 @@ ptr<_interface_type> % operator=(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-COM arabirimi eklemek için işaretçi.
+Eklenecek COM arabirimi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş değeri
 
-İzleme başvurusu üzerinde `com::ptr`.
+`com::ptr`bir izleme başvurusu.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Varsa `com::ptr` bir COM nesnesine bir başvuru zaten sahip `operator=` oluşturur <xref:System.InvalidOperationException>.
+`com::ptr` bir COM nesnesine bir başvuruya zaten sahipse, `operator=` <xref:System.InvalidOperationException>oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir COM nesnesine atamak bir `com::ptr` COM nesnesine başvuruyor ancak arayanın referansı sürüm değil.
+Com nesnesine bir `com::ptr` atamak COM nesnesine başvurur ancak çağıranın ona başvurusunu serbest bırakmaz.
 
-Bu işleç aynı etkiye sahiptir `Attach`.
+Bu işleç `Attach`ile aynı etkiye sahiptir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  `ReplaceDocument` İlk işlev çağrıları, üye `Release` herhangi nesnesi ve ardından kullanan önceden ait `operator=` yeni bir belge nesnesi eklemek için.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular.  `ReplaceDocument` member işlevi önce daha önce sahip olunan herhangi bir nesne üzerinde `Release` çağırır ve sonra yeni bir belge nesnesi iliştirmek `operator=` kullanır.
 
 ```cpp
 // comptr_op_assign.cpp
@@ -1294,9 +1292,9 @@ int main() {
 }
 ```
 
-## <a name="operator-bool"></a> PTR::operator bool
+## <a name="ptroperator-bool"></a><a name="operator-bool"></a>PTR:: operator bool
 
-Kullanarak işleci `com::ptr` koşullu ifadede.
+Koşullu ifadede `com::ptr` kullanmak için işleç.
 
 ```cpp
 operator bool();
@@ -1304,17 +1302,17 @@ operator bool();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-`true` sahip olunan bir COM nesnesi geçerliyse; `false` Aksi takdirde.
+sahip olan COM nesnesi geçerliyse `true`; Aksi takdirde `false`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahip olunan bir COM nesnesi değilse geçerli `nullptr`.
+Sahip olunan COM nesnesi `nullptr`geçerli değildir.
 
-Bu işleç dönüştürür `_detail_class::_safe_bool` daha güvenli olan `bool` bir integral türe dönüştürülemediğinden.
+Bu işleç, bir integral türüne dönüştürülemediğinden, `bool` daha güvenli olan `_detail_class::_safe_bool` dönüştürür.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. `CreateInstance` Üye işlevini kullanan `operator bool` geçerli olduğundan ve bu ise, konsola, belirlemek için yeni belge nesnesi oluşturduktan sonra.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular. `CreateInstance` member işlevi, yeni bir belge nesnesini oluşturduktan sonra `operator bool` kullanır ve varsa konsola yazar.
 
 ```cpp
 // comptr_op_bool.cpp
@@ -1365,9 +1363,9 @@ int main() {
 DOM Document created.
 ```
 
-## <a name="operator-logical-not"></a>PTR::operator!
+## <a name="ptroperator"></a><a name="operator-logical-not"></a>PTR:: operator!
 
-Sahip olunan bir COM nesnesi geçersiz olup olmadığını belirlemek için işleci.
+Sahip olunan COM nesnesinin geçersiz olup olmadığını belirleme işleci.
 
 ```cpp
 bool operator!();
@@ -1375,15 +1373,15 @@ bool operator!();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-`true` sahip olunan bir COM nesnesi geçersiz `false` Aksi takdirde.
+sahip olan COM nesnesi geçersiz ise `true`; Aksi takdirde `false`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahip olunan bir COM nesnesi değilse geçerli `nullptr`.
+Sahip olunan COM nesnesi `nullptr`geçerli değildir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  `CreateInstance` Üye işlevini kullanan `operator!` belge nesnesi zaten sahip olduğu ve Nesne geçersiz ise yalnızca yeni bir örneğini oluşturur, belirlemek için.
+Bu örnek, özel üye `IXMLDOMDocument` nesnesini kaydırmak için `com::ptr` kullanan bir CLR sınıfı uygular.  `CreateInstance` member işlevi bir belge nesnesinin zaten sahip olup olmadığını anlamak için `operator!` kullanır ve yalnızca nesne geçersizse yeni bir örnek oluşturur.
 
 ```cpp
 // comptr_op_not.cpp

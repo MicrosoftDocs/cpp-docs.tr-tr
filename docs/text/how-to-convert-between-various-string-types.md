@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme'
+title: 'Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,24 +7,24 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 21006f19f7c811f87f3f75e346983f7a8e7e0bf5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e7c83b70b4204cfc8880c968bb353b47e5b79e1
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410739"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075543"
 ---
-# <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme
+# <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma
 
-Bu konuda çeşitli Visual C++ dize türlerinin diğer dizelere dönüştürülebileceği gösterilmektedir. Kapsanan dize türleri `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), ve <xref:System.String?displayProperty=fullName>. Her durumda, yeni türe dönüştürüldüğünde dizenin kopyası yapılır. Yeni dizeye yapılan tüm değişiklikler orijinal dizeyi etkilemeyecektir ve bunun tersi de geçerlidir.
+Bu konuda çeşitli görsel C++ dize türlerinin diğer dizelere nasıl dönüştürüleceği gösterilmektedir. Kapsanan dize türleri `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md)ve <xref:System.String?displayProperty=fullName>içerir. Her durumda, dizenin bir kopyası yeni türe dönüştürüldüğünde yapılır. Yeni dizede yapılan tüm değişiklikler özgün dizeyi etkilemez, tersi de geçerlidir.
 
-## <a name="converting-from-char-"></a>Char dönüştürme \*
+## <a name="converting-from-char-"></a>Char \* dönüştürme
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek nasıl dönüştürüleceğini gösterir bir `char *` yukarıda listelenen diğer dize türlerine. A `char *` dize (C türü dize olarak da bilinir) dizenin sonunu göstermek için boş karakter kullanır. C stili dizeler genellikle karakter başına bir bayt gerektirir ancak iki bayt da kullanabilirsiniz. Aşağıdaki örneklerde `char *` dizeleri adlandırılır çok baytlı karakter dizesi olarak dize verileri, Unicode dizelerinden dönüştürülmekten dolayı. Tek baytlı ve çok baytlı karakter (`MBCS`) işlevleri çalışabilir `char *` dizeleri.
+Bu örnek, bir `char *` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. `char *` dizesi (C stili dize olarak da bilinir) dizenin sonunu belirtmek için null bir karakter kullanır. C stili dizeler genellikle karakter başına bir bayt gerektirir, ancak iki bayt de kullanabilir. Aşağıdaki örneklerde, Unicode dizelerinden dönüştürmekten kaynaklanan dize verileri nedeniyle `char *` dizeleri bazen çok baytlı karakter dizeleri olarak adlandırılır. Tek baytlı ve çok baytlı karakter (`MBCS`) işlevleri, `char *` dizelerinde çalışabilir.
 
 ### <a name="code"></a>Kod
 
@@ -119,13 +119,13 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-wchart-"></a>Wchar_t dönüştürme \*
+## <a name="converting-from-wchar_t-"></a>Wchar_t \* dönüştürme
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek nasıl dönüştürüleceğini gösterir bir `wchar_t *` yukarıda listelenen diğer dize türlerine. Dahil çeşitli dize türleri, `wchar_t *`, geniş karakter biçimlerini uygular. Bir dizeyi çok baytlı ve geniş karakter biçimi arasında dönüştürmek için bir tek bir işlev çağrısıyla kullanabilirsiniz `mbstowcs_s` veya bir sınıf için bir oluşturucu çağrı `CStringA`.
+Bu örnek, bir `wchar_t *` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. `wchar_t *`dahil olmak üzere birkaç dize türü, geniş karakter biçimlerini uygular. Bir dizeyi çok baytlı ve geniş karakter biçimi arasında dönüştürmek için, `mbstowcs_s` gibi tek bir işlev çağrısı veya `CStringA`gibi bir sınıf için Oluşturucu çağrısı kullanabilirsiniz.
 
 ### <a name="code"></a>Kod
 
@@ -243,13 +243,13 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-bstrt"></a>_Bstr_t öğesinden dönüştürme
+## <a name="converting-from-_bstr_t"></a>_Bstr_t dönüştürme
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek nasıl dönüştürüleceğini gösterir bir `_bstr_t` yukarıda listelenen diğer dize türlerine. `_bstr_t` Nesnedir geniş karakter sarmalamanın bir yoludur `BSTR` dizeleri. BSTR dizesi bir uzunluk değerine sahiptir ve dizeyi sonlandırmak için boş karakter kullanmaz, ancak dönüştürdüğünüz dize türü, bir sonlandırıcı null gerektirebilir.
+Bu örnek, bir `_bstr_t` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. `_bstr_t` nesnesi, geniş karakter `BSTR` dizelerini kapsüllemek için bir yoldur. BSTR dizesinde length değeri bulunur ve dizeyi sonlandırmak için null bir karakter kullanmaz, ancak dönüştürdüğünüz dize türü bir Sonlandırıcı null değer gerektirebilir.
 
 ### <a name="code"></a>Kod
 
@@ -343,13 +343,13 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-ccombstr"></a>CComBSTR öğesinden dönüştürme
+## <a name="converting-from-ccombstr"></a>CComBSTR 'den dönüştürme
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek nasıl dönüştürüleceğini gösterir bir `CComBSTR` yukarıda listelenen diğer dize türlerine. _Bstr_t gibi bir `CComBSTR` nesnesi, geniş karakter BSTR dizelerini yalıtmanın bir yoludur. BSTR dizesi bir uzunluk değerine sahiptir ve dizeyi sonlandırmak için boş karakter kullanmaz, ancak dönüştürdüğünüz dize türü, bir sonlandırıcı null gerektirebilir.
+Bu örnek, bir `CComBSTR` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. _Bstr_t gibi, `CComBSTR` bir nesne geniş karakter BSTR dizelerini kapsüllemek için bir yoldur. BSTR dizesinde length değeri bulunur ve dizeyi sonlandırmak için null bir karakter kullanmaz, ancak dönüştürdüğünüz dize türü bir Sonlandırıcı null değer gerektirebilir.
 
 ### <a name="code"></a>Kod
 
@@ -459,9 +459,9 @@ Hello, World! (System::String)
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek nasıl dönüştürüleceğini gösterir bir `CString` yukarıda listelenen diğer dize türlerine. `CString` sırayla bağlıdır olarak TCHAR veri türünü dayalı sembol `_UNICODE` tanımlanır. Varsa `_UNICODE` tanımlı değil, `TCHAR` char olarak tanımlanır ve `CString` bir çok baytlı karakter dizesi içerir; `_UNICODE` tanımlanan `TCHAR` olarak tanımlanır `wchar_t` ve `CString` geniş bir karakter içeriyor dize.
+Bu örnek, bir `CString` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. `CString`, symbol `_UNICODE` tanımlı olup olmamasına bağlı olarak, TCHAR veri türünü temel alır. `_UNICODE` tanımlanmamışsa, `TCHAR` char olarak tanımlanır ve `CString` çok baytlı bir karakter dizesi içerir; `_UNICODE` tanımlanmışsa, `TCHAR` `wchar_t` olarak tanımlanır ve `CString` geniş bir karakter dizesi içerir.
 
-`CStringA` olan çok baytlı sürekli dize sürümüdür `CString`, `CStringW` geniş karakter sadece dize sürümüdür. Ne `CStringA` ya da `CStringW` kullanın `_UNICODE` nasıl derlemesi gerektiğini belirlemek için. `CStringA` ve `CStringW` Bu örnekte, arabellek boyutu ayırma küçük farklılıkları açıklamak ve çıkış işleme için kullanılır.
+`CStringA`, `CString`çok baytlı dize her zaman bir sürümüdür `CStringW`, yalnızca geniş karakter dizesi sürümüdür. Ne `CStringA` ne de `CStringW` derleme yapmak için `_UNICODE` kullanmaz. Bu örnekte `CStringA` ve `CStringW`, arabellek boyutu ayırma ve çıkış işlemede küçük farklılıkları açıklığa kavuşturacak şekilde kullanılır.
 
 ### <a name="code"></a>Kod
 
@@ -485,7 +485,7 @@ int main()
     // Set up a multibyte CStringA string.
     CStringA origa("Hello, World!");
     cout << origa << " (CStringA)" << endl;
-    
+
     // Set up a wide character CStringW string.
     CStringW origw("Hello, World!");
     wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
@@ -545,7 +545,7 @@ int main()
     // Convert to a wide character CComBSTR string from
     // a wide character CStringW string.
     CComBSTR ccombstrw(origw);
-    
+
     // Append the type of string to it, and display the result.
     if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
     {
@@ -572,7 +572,7 @@ int main()
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
     delete systemstring;
-    
+
     // Convert a wide character CStringW to a
     // System::String.
     String ^systemstringw = gcnew String(origw);
@@ -597,13 +597,13 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-basicstring"></a>Basic_string öğesinden dönüştürme
+## <a name="converting-from-basic_string"></a>Basic_string dönüştürme
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek nasıl dönüştürüleceğini gösterir bir `basic_string` yukarıda listelenen diğer dize türlerine.
+Bu örnek, bir `basic_string` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -693,13 +693,13 @@ Hello, World! (CStringW)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-systemstring"></a>System::String öğesinden dönüştürme
+## <a name="converting-from-systemstring"></a>System:: String öğesinden dönüştürme
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, bir geniş karakter (Unicode) dönüştürmek gösterilmiştir [System::String](assetId:///System::String?qualifyHint=True&autoUpgrade=True) yukarıda listelenen diğer dize türlerine.
+Bu örnek, geniş bir karakter (Unicode) [sistemi:: dizeden](assetId:///System::String?qualifyHint=True&autoUpgrade=True) yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -802,11 +802,11 @@ Hello, World! (basic_string)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL ve MFC dize dönüşüm makroları](../atl/reference/string-conversion-macros.md)<br/>
+[ATL ve MFC dize dönüştürme makroları](../atl/reference/string-conversion-macros.md)<br/>
 [C Stili Dizelerle İlgili CString İşlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
 [Nasıl yapılır: Standart Dizeyi System::String Olarak Dönüştürme](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
 [Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
-[Nasıl yapılır: System:: String'i wchar_t * veya char olarak dönüştürme\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
+[Nasıl yapılır: System:: String 'i wchar_t * veya char\* dönüştürme](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
 [CComBSTR ile programlama](../atl/programming-with-ccombstr-atl.md)<br/>
 [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
 [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>

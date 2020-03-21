@@ -1,5 +1,5 @@
 ---
-title: / await (eş yordam desteğini etkinleştir)
+title: /await (Eş yordam desteğini etkinleştir)
 ms.date: 08/15/2017
 f1_keywords:
 - /await
@@ -9,34 +9,34 @@ helpviewer_keywords:
 - -await enable coroutine support [C++]
 - await enable coroutine support [C++]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
-ms.openlocfilehash: c0c8c0183c356900ba8f95d39e427d56eb1ec96b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eeab3f4a1afc73e341f04222a55c8ce429490742
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295012"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078442"
 ---
-# <a name="await-enable-coroutine-support"></a>/ await (eş yordam desteğini etkinleştir)
+# <a name="await-enable-coroutine-support"></a>/await (Eş yordam desteğini etkinleştir)
 
-Kullanım **/ await** eş yordamlar için derleyici desteği etkinleştirme derleyici seçeneği.
+Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** derleyici seçeneğini kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> / await
+> /await
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ Await** derleyici seçeneği için derleyici desteği sağlayan C++ eş yordamlar ve anahtar sözcükler **co_await**, **co_yield**, ve **co_return**. Varsayılan olarak bu seçenek kapalıdır. Eş yordamlar Visual Studio desteği hakkında daha fazla bilgi için bkz: [Visual Studio Ekip blog'u](https://blogs.msdn.microsoft.com/vcblog/category/coroutine/). Eş yordamlar standart teklifi hakkında daha fazla bilgi için bkz. [N4628 çalışma Taslak, eş yordamlar için C++ uzantıları teknik belirtim](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/n4628.pdf).
+**/Await** derleyici seçeneği, eş değerleri ve C++ **co_await**, **co_yield**ve **co_return**anahtar kelimeleri için derleyici desteği sunar. Bu seçenek varsayılan olarak kapalıdır. Visual Studio 'da eş yordamlar için destek hakkında bilgi için bkz. [Visual Studio Ekip Blogu](https://blogs.msdn.microsoft.com/vcblog/category/coroutine/). Eş standart teklif hakkında daha fazla bilgi için bkz. [N4628 çalışma taslağı, eş için Uzantılar Için C++ teknik belirtim](https://wg21.link/n4628).
 
-**/ Await** seçeneği olan Visual Studio 2015'te sonraki sürümlerinde kullanılabilir.
+**/Await** seçeneği Visual Studio 2015 ' den başlayarak kullanılabilir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenizin açın **özellik sayfaları** iletişim kutusu.
+1. Projenizin **Özellik sayfaları** iletişim kutusunu açın.
 
-1. Altında **yapılandırma özellikleri**, genişletme **C/C++** klasörü seçin **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**altında **CC++ /** klasörünü genişletin ve **komut satırı** özellik sayfasını seçin.
 
-1. Girin **/ await** derleyici seçeneğini **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
+1. **Ek seçenekler** kutusuna **/await** derleyici seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

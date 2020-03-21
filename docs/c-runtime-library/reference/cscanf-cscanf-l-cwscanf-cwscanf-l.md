@@ -48,18 +48,18 @@ helpviewer_keywords:
 - reading data [C++], from the console
 - _cwscanf_l function
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
-ms.openlocfilehash: 8b996e510d6a8c106aa88a60a8da456d36a4b3e5
-ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.openlocfilehash: 973642aa113c8db4174b399f22e980daba95ce41
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778308"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079991"
 ---
 # <a name="_cscanf-_cscanf_l-_cwscanf-_cwscanf_l"></a>_cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
 Konsoldan biçimlendirilen verileri okur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
 
-> [!NOTE] 
+> [!NOTE]
 > Visual Studio 2015 ' de `printf` ve `scanf` işlev ailesi **satır içi** olarak bildirilmiştir ve `<stdio.h>` ve `<conio.h>` üst bilgilerine taşındı. Eski kodu geçiriyorsanız, Bu işlevlerle bağlantılı *LNK2019* görebilirsiniz. Daha fazla bilgi için bkz [. C++ görsel değişiklik geçmişi 2003-2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 > [!IMPORTANT]
@@ -105,7 +105,7 @@ Başarıyla dönüştürülen ve atanan alan sayısı. Dönüş değeri, okunan 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cscanf** işlevi, verileri doğrudan konsolundan *bağımsız değişken*tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki*bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf](scanf-scanf-l-wscanf-wscanf-l.md) işlevinin *Format* parametresiyle aynı form ve işleve sahiptir. **_Cscanf** normalde giriş karakterini yankılarken, son çağrı **_ungetch**ise bunu yapmaz.
+**_Cscanf** işlevi, verileri doğrudan konsolundan *bağımsız değişken*tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki*bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf](scanf-scanf-l-wscanf-wscanf-l.md) işlevinin *Format* parametresiyle aynı form ve işleve sahiptir. **_Cscanf** normalde giriş karakterini yankılarken, son çağrı **_ungetch**, bunu yapmaz.
 
 Bu işlev, parametrelerini doğrular. Biçim **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EOF**döndürür.
 

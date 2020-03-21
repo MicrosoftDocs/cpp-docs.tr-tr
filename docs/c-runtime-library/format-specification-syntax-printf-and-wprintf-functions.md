@@ -9,16 +9,16 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: 024e757f57e62ba2b30048c783798180b4da2b9a
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: c5cd93607f8e5a892d789dcb6aeef934f8936dad
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417175"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078057"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim sözdizimi: printf ve wprintf işlevleri
 
-Çeşitli `printf` ve `wprintf` işlevleri, bir biçim dizesi ve isteğe bağlı bağımsız değişkenler alır ve çıktı için biçimlendirilen bir karakter dizisi üretir. Biçim dizesi, çıkışta bir bağımsız değişkeni biçimlendirmeyi açıklayan, çıkış veya kodlanmış *dönüştürme belirtimleri* için sabit karakter olan sıfır veya daha fazla *yönergeler*içerir. Bu makalede, dönüştürme belirtimlerini biçim dizesinde kodlamak için kullanılan söz dizimi açıklanmaktadır. Bu işlevlerin listesi için bkz. [akış g/ç](../c-runtime-library/stream-i-o.md). 
+Çeşitli `printf` ve `wprintf` işlevleri, bir biçim dizesi ve isteğe bağlı bağımsız değişkenler alır ve çıktı için biçimlendirilen bir karakter dizisi üretir. Biçim dizesi, çıkışta bir bağımsız değişkeni biçimlendirmeyi açıklayan, çıkış veya kodlanmış *dönüştürme belirtimleri* için sabit karakter olan sıfır veya daha fazla *yönergeler*içerir. Bu makalede, dönüştürme belirtimlerini biçim dizesinde kodlamak için kullanılan söz dizimi açıklanmaktadır. Bu işlevlerin listesi için bkz. [akış g/ç](../c-runtime-library/stream-i-o.md).
 
 Bir dönüştürme belirtimi, bu formdaki isteğe bağlı ve gerekli alanlardan oluşur:
 
@@ -39,7 +39,7 @@ Temel bir dönüştürme belirtimi yalnızca yüzde işaretini ve bir *tür* kar
 
 <a name="type"></a>
 
-> [!NOTE] 
+> [!NOTE]
 > Visual Studio 2015 ' de `printf` ve `scanf` işlev ailesi **satır içi** olarak bildirilmiştir ve `<stdio.h>` ve `<conio.h>` üst bilgilerine taşındı. Eski kodu geçiriyorsanız, Bu işlevlerle bağlantılı *LNK2019* görebilirsiniz. Daha fazla bilgi için bkz [. C++ görsel değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## <a name="type-conversion-specifier"></a>Tür dönüştürme Belirleyicisi
@@ -81,7 +81,7 @@ Biçim dizesini izleyen bağımsız değişkenler, karşılık gelen *tür* kara
 
 Visual Studio 2015 ' den başlayarak, bir kayan nokta dönüştürme tanımlayıcısına (**a**, **a**, **e**, **e**, **f**, **f**, **g**, **g**) karşılık gelen bağımsız değişken sonsuz, sonsuz veya NaN ise, biçimlendirilen çıktı C99 standardına uygundur. Bu tablo, biçimlendirilen çıktıyı listeler:
 
-|Değer|Çıkış|
+|Değer|Çıktı|
 |-----------|------------|
 |sonsuz|`inf`|
 |Sessiz NaN|`nan`|
@@ -92,7 +92,7 @@ Bu değerlerden herhangi birine bir işaret ön eki uygulanabilir. Bir kayan nok
 
 Visual Studio 2015 ' den önce, CRT sonsuz, sonsuz ve NaN değerlerinin çıkışı için farklı, standart olmayan bir biçim kullandı:
 
-|Değer|Çıkış|
+|Değer|Çıktı|
 |-----------|------------|
 |+ sonsuzluk|`1.#INF` *rastgele rakamlar*|
 |-sonsuzluk|`-1.#INF` *rastgele rakamlar*|
@@ -118,7 +118,7 @@ Bir dönüştürme belirtiminde ilk isteğe bağlı alan *bayrak yönergeleri*, 
 
 ### <a name="flag-characters"></a>Bayrak karakterleri
 
-|Bayrağı|Açıklama|Varsayılan|
+|Bayrağı|Anlamı|Varsayılan|
 |----------|-------------|-------------|
 |**-**|Sonucu verilen alan genişliği içinde sola hizalayın.|Sağa Hizala.|
 |**+**|İmzalı bir tür ise çıkış değeri öneki için bir işaret (+ veya-) kullanın.|İmza yalnızca negatif işaretli değerler için görünür (-).|
@@ -160,7 +160,7 @@ Aşağıdaki tabloda gösterildiği gibi, *tür* karakteri duyarlık *ya da vars
 
 ### <a name="how-precision-values-affect-type"></a>Duyarlık değerlerinin türü nasıl etkiler
 
-|Tür|Açıklama|Varsayılan|
+|Tür|Anlamı|Varsayılan|
 |----------|-------------|-------------|
 |**a**, **a**|Duyarlık, noktadan sonraki basamak sayısını belirtir.|Varsayılan duyarlık 13 ' dir. Duyarlık 0 ise, **#** bayrağı kullanılmadığı takdirde hiçbir ondalık noktası yazdırılmaz.|
 |**c**, **c**|Duyarlık hiçbir etkiye sahip değildir.|Karakter yazdırılır.|

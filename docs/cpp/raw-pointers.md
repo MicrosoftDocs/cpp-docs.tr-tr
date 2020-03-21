@@ -4,12 +4,12 @@ description: İçinde ham işaretçiler kullanmaC++
 ms.date: 11/19/2019
 helpviewer_keywords:
 - pointers [C++]
-ms.openlocfilehash: 9ea498c254bc37dc8dc550232127cb2db3bc0886
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 2dbb4f11fc0c08578e82371e8df77e9643313879
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74250662"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077143"
 ---
 # <a name="raw-pointers-c"></a>Ham işaretçiler (C++)
 
@@ -45,7 +45,7 @@ Bir işaretçi ( **const**olarak bildirilmemiş), bellekteki yeni bir konuma iş
     const int* pconst = &c; // declare a non-const pointer to const int
     const int c2 = 2;
     pconst = &c2;  // OK pconst itself isn't const
-    const int* const pconst2 = &c; 
+    const int* const pconst2 = &c;
     // pconst2 = &c2; // Error! pconst2 is const.
 ```
 
@@ -168,7 +168,7 @@ int main()
 
 Belirli aritmetik işlemler, yeni bir bellek konumuna işaret etmek üzere const olmayan işaretçilerde gerçekleştirilebilir. **++** , **+=** , **-=** ve **--** işleçlerini kullanarak bir işaretçi arttırılır ve azaltılır. Bu teknik diziler için kullanılabilir ve özellikle türsüz verilerin arabelleklerinde faydalıdır. **Void\*** bir **char** (1 baytlık) boyutuna göre artar. Yazılı bir işaretçi, işaret ettiği türün boyutuna göre artar.
 
-Aşağıdaki örnek, Windows üzerindeki bir bit eşlemdeki tek tek piksellere erişmek için işaretçi aritmetiğinin nasıl kullanılabileceğini gösterir. **Yeni** ve **Sil**'in kullanımını ve başvuru işlecinin olduğunu aklınızda edin. 
+Aşağıdaki örnek, Windows üzerindeki bir bit eşlemdeki tek tek piksellere erişmek için işaretçi aritmetiğinin nasıl kullanılabileceğini gösterir. **Yeni** ve **Sil**'in kullanımını ve başvuru işlecinin olduğunu aklınızda edin.
 
 ```cpp
 #include <Windows.h>
@@ -235,7 +235,7 @@ int main()
 
 ## <a name="void-pointers"></a>void * işaretçileri
 
-**Void** işaretçisi, ham bellek konumunu işaret eder. Bazen kod ve C işlevleri arasında C++ geçiş yaparken **void\*** işaretçilerinin kullanılması gerekir. 
+**Void** işaretçisi, ham bellek konumunu işaret eder. Bazen kod ve C işlevleri arasında C++ geçiş yaparken **void\*** işaretçilerinin kullanılması gerekir.
 
 Yazılı bir işaretçi void işaretçiye ayarlandığında, bellek konumunun içeriği değiştirilmez, ancak artış veya azaltma işlemlerini gerçekleştirebilmek için tür bilgileri kaybedilir. Bir bellek konumu, örneğin MyClass * öğesinden void * ve yeniden MyClass * öğesine dönüşebilir. Bu gibi işlemler, doğal olarak hataya açıktır ve hataları önlemek için harika bir fikir gerektirir. Modern C++ etkilenmeden, kesin bir şekilde gerekmedikçe void işaretçilerinin kullanımını kullanır.
 
@@ -290,7 +290,7 @@ int main()
 }
 ```
 
-## <a name="pointers_to_functions"></a>İşlevlere işaretçiler
+## <a name="pointers-to-functions"></a><a name="pointers_to_functions"></a>İşlevlere işaretçiler
 
 C stili programlamada, işlev işaretçileri birincil olarak işlevleri diğer işlevlere geçirmek için kullanılır. Bu senaryoda, çağıran bir işlevin davranışını değiştirmeden özelleştirebilir. Modern C++bir deyişle, [lambda ifadeleri](lambda-expressions-in-cpp.md) daha fazla güvenlik ve diğer avantajlar ile aynı özelliği sağlar.
 

@@ -1,23 +1,23 @@
 ---
-title: Önişlemci dilbilgisi özeti (C/C++)
+title: Ön işlemci dil bilgisi özeti (C/C++)
 description: Microsoft C/C++ DERLEYICISI (MSVC) Önişlemci dilbilgisi sözdizimini tanımlar ve tanımlar.
 ms.date: 08/29/2019
 helpviewer_keywords:
 - grammar
 - preprocessor, grammar
 ms.assetid: 0acb6e9b-364c-4ef8-ace4-7be980521121
-ms.openlocfilehash: 99e7e8218a80e28d67767392cadfb5c4918a3bfe
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 68e5f09acfc6444afb46bcbc0f7e9db10b04afed
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302191"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076868"
 ---
-# <a name="preprocessor-grammar-summary-cc"></a>Önişlemci dilbilgisi özeti (C/C++)
+# <a name="preprocessor-grammar-summary-cc"></a>Ön işlemci dil bilgisi özeti (C/C++)
 
 Bu makalede C ve C++ Önişlemci 'nin biçimsel dilbilgisi açıklanır. Ön işleme yönergelerinin ve işleçlerinin sözdizimini içerir. Daha fazla bilgi için bkz. [Önişlemci](../preprocessor/preprocessor.md) ve [Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
-## <a name="definitions"></a>Dilbilgisi özeti tanımları
+## <a name="definitions-for-the-grammar-summary"></a><a name="definitions"></a>Dilbilgisi özeti tanımları
 
 Terminal, bir sözdizimi tanımındaki uç noktalardır. Başka bir çözüm mümkün değildir. Terminal, ayrılmış sözcükler ve Kullanıcı tanımlı tanımlayıcılar kümesini içerir.
 
@@ -29,7 +29,7 @@ Terminal dışı, söz dizimi içindeki yer tutuculardır. Çoğu, bu söz dizim
 
 **{** *Expression*<sub>opt</sub> **}**
 
-## <a name="conventions"></a>Belge kuralları
+## <a name="document-conventions"></a><a name="conventions"></a>Belge kuralları
 
 Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelikleri kullanır. Simgeler ve yazı tipleri aşağıdaki gibidir:
 
@@ -52,7 +52,7 @@ Kod sözdizimi blokları ' nda, varsayılan yazı tipindeki bu simgelerin özel 
 
 Kod sözdizimi blokları, virgüller (`,`), nokta (`.`), noktalı virgül (`;`), iki nokta üst üste (`:`), parantez (`( )`), çift tırnak (`"`) ve tek tırnak (`'`) değişmez değerler.
 
-## <a name="grammar"></a>Önişlemci dilbilgisi
+## <a name="preprocessor-grammar"></a><a name="grammar"></a>Önişlemci dilbilgisi
 
 *denetim satırı*: \
 &nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* *belirteci-dize*<sub>opt</sub>\
@@ -62,7 +62,7 @@ Kod sözdizimi blokları, virgüller (`,`), nokta (`.`), noktalı virgül (`;`),
 &nbsp;&nbsp;&nbsp;&nbsp; **#line** *basamak sırası* **"** _filename_ **"** <sub>opt</sub>\
 &nbsp;&nbsp;&nbsp;&nbsp; **#undef** *tanımlayıcı*\
 &nbsp;&nbsp;&nbsp;&nbsp; **#error** *belirteci-dize*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *token-string*
+&nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *belirteci-dize*
 
 *sabit ifadesi*: \
 &nbsp;&nbsp;&nbsp;&nbsp;**tanımlı (** *tanımlayıcı* **)** \
@@ -124,7 +124,6 @@ Herhangi bir metin dizisini &nbsp;&nbsp;&nbsp;&nbsp;
 
 > [!NOTE]
 > Aşağıdaki Terminaller,  *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde genişletilir: *sabit*, *sabit-ifade*, *tanımlayıcı*, *anahtar sözcük*, *işleç*ve *noktalama*.
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

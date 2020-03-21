@@ -2,18 +2,18 @@
 title: Dosya Sistemi Gezintisi
 ms.date: 11/04/2016
 ms.assetid: f7cc5f5e-a541-4e00-87c7-a3769ef6096d
-ms.openlocfilehash: ea9bf44a11087180d3bd02c5dcd5d1acfa4b9e57
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: f5fe8d29baae76b1e7fb851bf04f4c6b32215a8e
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518510"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076537"
 ---
 # <a name="file-system-navigation"></a>Dosya Sistemi Gezintisi
 
-\<FileSystem > üstbilgisi, C++ dosya sistemi teknık belirtimi ISO/ıec TS 18822:2015 (son taslak: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) öğesini uygular ve dosya sistemine gezinmek için platforma bağımsız kod yazmanıza olanak tanıyan tür ve işlevlere sahiptir. Platformlar arası olduğundan, Windows sistemlerine uygun olmayan API 'Leri içerir. Örneğin bu, `is_fifo(const path&)` her zaman Windows üzerinde **false** olarak döndürdüğü anlamına gelir.
+\<FileSystem > üstbilgisi, C++ dosya sistemi teknık belirtimi ISO/ıec TS 18822:2015 (son taslak: [ISO/IEC JTC 1/SC 22/WG 21 N4100](https://wg21.link/n4100)) öğesini uygular ve dosya sistemine gezinmek için platforma bağımsız kod yazmanıza olanak tanıyan tür ve işlevlere sahiptir. Platformlar arası olduğundan, Windows sistemlerine uygun olmayan API 'Leri içerir. Örneğin bu, `is_fifo(const path&)` her zaman Windows üzerinde **false** olarak döndürdüğü anlamına gelir.
 
-## <a name="overview"></a>Genel bakış
+## <a name="overview"></a>Genel Bakış
 
 Aşağıdaki görevler için \<FileSystem > API 'Leri kullanın:
 

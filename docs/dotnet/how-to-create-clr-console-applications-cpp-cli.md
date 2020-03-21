@@ -1,66 +1,65 @@
 ---
-title: 'Nasıl yapılır: CLR konsol uygulamaları oluşturma (C++/CLI)'
+title: 'Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - console applications, templates
 - CLR console applications, project template
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-ms.openlocfilehash: ba0fa81aa42f946dbaf005c00380573e44312c5a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 610efc8b0780422fc89e3bf9708ba488fe7d1f47
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387486"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080061"
 ---
-# <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR konsol uygulamaları oluşturma (C++/CLI)
+# <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)
 
-Konsol uygulaması şablonu, temel proje başvuruları ve dosyalarını zaten bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.
+Konsol uygulaması şablonunu, zaten temel proje başvuruları ve dosyaları olan bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.
 
-Genellikle, bir konsol uygulaması bir tek başına yürütülebilir dosyasına derlenir, ancak bir grafik kullanıcı arabirimi yok. Bir kullanıcı, bir komut isteminde konsol uygulaması çalışır ve sorunu yönergeleri çalıştırılan uygulama için komut istemine kullanır. Uygulamayı komut isteminde çıkış bilgi de sağlar. Bir konsol uygulamasının immediacy kullanıcı arabirimini uygulamak için kaygısı olmadan programlama teknikleri öğrenmek için harika bir yöntemdir kolaylaştırır.
+Genellikle, bir konsol uygulaması tek başına yürütülebilir bir dosyaya derlenir ancak grafik kullanıcı arabirimine sahip değildir. Bir Kullanıcı konsol uygulamasını bir komut isteminde çalıştırır ve çalışan uygulamaya yönergeler vermek için komut istemi 'ni kullanır. Ayrıca, komut isteminde uygulama çıktı bilgilerini sağlar. Konsol uygulamasının immediacy, bir kullanıcı arabirimi uygulamaya gerek duymadan programlama tekniklerini öğrenmenin harika bir yolunu sunar.
 
-Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, otomatik olarak bu başvuruları ve dosyalarını ekler:
+Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, otomatik olarak bu başvuruları ve dosyaları ekler:
 
 - Bu .NET Framework ad alanlarına başvurular:
 
-   - <xref:System.AppDomainManager>— Temel sınıfları ve yaygın olarak kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işleme özel durum tanımlayan temel sınıfları içerir.
+   - <xref:System.AppDomainManager>— yaygın olarak kullanılan değerleri ve başvuru veri türlerini, olayları ve olay işleyicilerini, arabirimleri, öznitelikleri ve işleme özel durumlarını tanımlayan temel sınıfları ve temel sınıfları Içerir.
 
-   - mscorlib — derleme DLL, .NET Framework için geliştirmeyi destekler.
+   - mscorlib — .NET Framework geliştirmeyi destekleyen derleme DLL 'SI.
 
-- Kaynak dosyaları:
+- Kaynak dosyalar:
 
-   - Konsolu (.cpp dosyası) — yeni oluşturduğunuz uygulamayı ana kaynak dosya ve giriş noktası. Bu proje .dll dosyası ve proje ad alanı tanımlar. Bu dosyadaki kendi kodunu sağlayın.
+   - Konsol (. cpp dosyası) — ana kaynak dosya ve giriş noktası, yeni oluşturduğunuz uygulamaya göre yapılır. Project. dll dosyasını ve proje ad alanını tanımlar. Bu dosyada kendi kodunuzu girin.
 
-   - AssemblyInfo.cpp—Contains öznitelikleri, dosyaları, kaynaklar, türleri, sürüm oluşturma bilgilerini, imza bilgilerini ve projenin derleme meta verilerini değiştirmek için kullanabileceğiniz benzeri. Daha fazla bilgi için [derleme içerikleri](/dotnet/framework/app-domains/assembly-contents).
+   - AssemblyInfo. cpp — projenin derleme meta verilerini değiştirmek için kullanabileceğiniz öznitelikleri, dosyaları, kaynakları, türleri, sürüm oluşturma bilgilerini, imzalama bilgilerini ve benzerlerini Içerir. Daha fazla bilgi için bkz. [bütünleştirilmiş kod içeriği](/dotnet/framework/app-domains/assembly-contents).
 
-   - Stdafx.cpp—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.
+   - Stdadfx. cpp — Win32. pch adlı önceden derlenmiş bir üstbilgi dosyası ve Stbafx. obj adlı önceden derlenmiş türler dosyası oluşturmak için kullanılır.
 
 - Üst bilgi dosyaları:
 
-   - Stdafx.h—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.
+   - Stdadfx. h — Win32. pch adlı önceden derlenmiş bir üstbilgi dosyası ve Stdadfx. obj adlı önceden derlenmiş türler dosyası oluşturmak için kullanılır.
 
-   - oluşturulan resource.h—A app.rc dosyası içerir.
+   - Resource. h — App. RC için oluşturulan bir içerme dosyası.
 
 - Kaynak dosyaları:
 
-   - bir programın App.rc—the kaynak betik dosyası.
+   - App. RC — bir programın kaynak betik dosyası.
 
-   - bir programın App.ico—the simge dosyası.
+   - App. ico — bir programın simge dosyası.
 
-- ReadMe.txt—Describes projesindeki dosyalar.
+- ReadMe. txt — projedeki dosyaları açıklar.
 
 ## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak dil çalışma zamanı (CLR) konsol uygulaması projesi oluşturmak için
 
-1. Menü çubuğunda, **dosya**, **yeni**, **proje**.
+1. Menü çubuğunda **Dosya**, **Yeni**, **Proje**' yi seçin.
 
-1. İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**seçin **Visual C++** düğümünü **CLR** düğümüne tıklayın ve ardından Konsol uygulaması şablonu.
+1. **Yeni proje** iletişim kutusunda, **yüklü şablonlar**altında,  **C++ görsel** düğümünü seçin, **clr** düğümünü seçin ve konsol uygulaması şablonunu seçin.
 
-1. İçinde **adı** kutusuna, uygulamanız için benzersiz bir ad girin.
+1. **Ad** kutusuna uygulamanız için benzersiz bir ad girin.
 
-   Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak gerekli değildir.
+   Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak bunlar gerekli değildir.
 
-1. Seçin **Tamam** düğmesi.
+1. **Tamam** düğmesini seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CLR projeleri](../build/reference/files-created-for-clr-projects.md)
-

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3446
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
-ms.openlocfilehash: 0f9ebd274a90dffe00b0e8375cc374acf46e7a08
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 2e1e474b27fec6c1625136e526add0935e309746
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447112"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075025"
 ---
 # <a name="compiler-error-c3446"></a>Derleyici hatası C3446
 
@@ -43,4 +43,3 @@ value struct V
        int j;
 };
 ```
-

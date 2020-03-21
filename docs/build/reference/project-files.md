@@ -5,12 +5,12 @@ helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-ms.openlocfilehash: 0eb87c3f3ba8bd60f0944ad673d22f9b84e070a5
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 97224380a591f4fa3fe23d25a898c112702f5a5c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630761"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078295"
 ---
 # <a name="project-files"></a>Proje Dosyaları
 
@@ -30,9 +30,8 @@ Aşağıdaki Sample. vcxproj dosyası **Yeni proje** iletişim kutusunda bir **W
 
 ::: moniker-end
 
-
 >[!NOTE]
-> Visual Studio 2017 ve önceki `pch.h` sürümlerde bulunan projeler için `stdafx.h` ve `pch.cpp` `stdafx.cpp`olarak değiştirin.
+> Visual Studio 2017 ve önceki sürümlerde bulunan projeler için `pch.h` `stdafx.h` ve `stdafx.cpp``pch.cpp` değiştirin.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

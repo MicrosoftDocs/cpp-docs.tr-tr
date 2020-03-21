@@ -1,6 +1,6 @@
 ---
-title: Derleme bir C++CLR'yi hedefleyen /CLI programı
-description: Microsoft kullanım C++ programlar ve bağlanabilir kitaplıkları yerel oluşturmak için C++ kod ve .NET programlarının.
+title: CLR 'yi C++hedefleyen bir/CLI programını derleme
+description: Yerel C++ kod C++ ve .net programlarını bağlayabilirler program ve kitaplıklar oluşturmak için Microsoft 'u kullanın.
 ms.date: 04/23/2019
 helpviewer_keywords:
 - command-line applications [C++], managed code
@@ -8,104 +8,104 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: 8462b2b031bdcdebf65d58974c521d80e57d856d
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 36c41856dfcdb5c5f50ba59205b4c73c5fde5963
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221813"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080013"
 ---
-# <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Derleme bir C++Visual Studio'da CLR'yi hedefleyen /CLI programı
+# <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Visual C++STUDIO 'da clr 'yi hedefleyen bir/CLI programını derleme
 
-Kullanarak C++/CLI oluşturabilirsiniz C++ yerel yanı sıra .NET sınıfları kullanan programlar C++ türleri. C++/ CLI konsol uygulamaları ve yerel kaydırma DLL'leri kullanılmak için tasarlanmıştır C++ kod ve .NET programlarının erişilebilir hale getirebilirsiniz. .NET tabanlı bir Windows kullanıcı arabirimi oluşturmak için kullanın C# veya Visual Basic. 
+/CLI kullanarak C++, .net sınıflarının yanı C++ sıra yerel C++ türler kullanan programlar da oluşturabilirsiniz. C++/CLı, konsol uygulamalarında ve yerel C++ kodu kaydırmak ve .net programlarından erişilebilir hale getirmek Için kullanılan dll 'lerde kullanılmak üzere tasarlanmıştır. .NET tabanlı bir Windows Kullanıcı arabirimi oluşturmak için veya Visual Basic kullanın C# .
 
-Bu yordam için kendi C++ programınızı yazabilir veya örnek programlardan birini kullanın. Bu yordamda kullandığımız örnek program, textfile.txt adlı bir metin dosyası oluşturur ve proje dizinine kaydeder.
+Bu yordam için kendi C++ programınızı yazabilir veya örnek programlardan birini kullanabilirsiniz. Bu yordamda kullandığımız örnek program, textfile. txt adlı bir metin dosyası oluşturur ve bunu proje dizinine kaydeder.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Bir C++ dilinin temellerini anlama.
-- Visual Studio 2017 ve sonraki sürümlerinde, C++/CLI desteği isteğe bağlı bir bileşenidir. Yüklemek için açık **Visual Studio yükleyicisi** Windows Başlat menüsünde. Emin olun **ile masaüstü geliştirme C++**  kutucuk denetlenir ve **isteğe bağlı** bileşenleri bölüm, ayrıca onay  **C++CLI desteği**.
+- C++ Dilin temellerini anlama.
+- Visual Studio 2017 ve üzeri sürümlerde, C++/CLI desteği isteğe bağlı bir bileşendir. Yüklemek için, Windows Başlat menüsünden **Visual Studio yükleyicisi** açın. Kutucuk **ile C++ masaüstü geliştirme** 'nın işaretli olduğundan ve **isteğe bağlı** bileşenler bölümünde,  **C++/CLI desteğini**de denetleyin.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-Aşağıdaki adımlar, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak farklılık gösterir. Bu sayfanın sol üst sürüm seçicisinde doğru ayarlandığından emin olun.
+Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Bu sayfanın sol üst kısmındaki sürüm seçicinin doğru ayarlandığından emin olun.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-a-ccli-project-in-visual-studio-2019"></a>Oluşturmak için bir C++Visual Studio 2019 /CLI projesinde
+### <a name="to-create-a-ccli-project-in-visual-studio-2019"></a>Visual Studio 2019 C++' de bir/CLI projesi oluşturmak için
 
-1. İçinde **Çözüm Gezgini**, açmak için ekranın üst sağ **yeni bir proje oluşturma** iletişim kutusu.
+1. **Çözüm Gezgini**' de, en üste sağ tıklayıp **Yeni proje oluştur** iletişim kutusunu açın.
 
-1. İletişim kutusunun üstüne yazın **CLR** arama kutusuna ve ardından **CLR boş proje** sonuçları listesinde. 
+1. İletişim kutusunda **clr** yazın ve ardından sonuçlar listesinden **clr boş proje** ' yi seçin.
 
-1. Seçin **Oluştur** projeyi oluşturmak için.
+1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-### <a name="to-create-a-ccli-project-in-visual-studio-2017"></a>Oluşturmak için bir C++/CLI proje Visual Studio 2017
+### <a name="to-create-a-ccli-project-in-visual-studio-2017"></a>Visual Studio 2017 C++' de bir/CLI projesi oluşturmak için
 
-1. Yeni bir proje oluşturun. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
+1. Yeni bir proje oluşturma. **Dosya** menüsünde, **Yeni**' nin üzerine gelin ve ardından **Proje**' ye tıklayın.
 
-1. Visual C++ proje türlerinden tıklayın **CLR**ve ardından **CLR boş proje**.
+1. Görsel C++ proje türleri ' nden **clr**' ye ve ardından **clr boş proje**' ye tıklayın.
 
-1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm yeni proje ile aynı ada sahiptir ancak farklı bir ad girebilirsiniz. İsterseniz, proje için farklı bir konum girebilirsiniz.
+1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm, yeni projeyle aynı ada sahiptir, ancak farklı bir ad girebilirsiniz. İsterseniz proje için farklı bir konum girebilirsiniz.
 
-1. Tıklayın **Tamam** yeni projeyi oluşturmak için.
+1. Yeni projeyi oluşturmak için **Tamam** ' ı tıklatın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2015"
 
-### <a name="to-create-a-ccli-project-in-visual-studio-2015"></a>Oluşturmak için bir C++/CLI proje Visual Studio 2015'te
+### <a name="to-create-a-ccli-project-in-visual-studio-2015"></a>Visual Studio 2015 C++' de bir/CLI projesi oluşturmak için
 
-1. Yeni bir proje oluşturun. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
+1. Yeni bir proje oluşturma. **Dosya** menüsünde, **Yeni**' nin üzerine gelin ve ardından **Proje**' ye tıklayın.
 
-1. Visual C++ proje türlerinden tıklayın **CLR**ve ardından **CLR boş proje**.
+1. Görsel C++ proje türleri ' nden **clr**' ye ve ardından **clr boş proje**' ye tıklayın.
 
-1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm yeni proje ile aynı ada sahiptir ancak farklı bir ad girebilirsiniz. İsterseniz, proje için farklı bir konum girebilirsiniz.
+1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm, yeni projeyle aynı ada sahiptir, ancak farklı bir ad girebilirsiniz. İsterseniz proje için farklı bir konum girebilirsiniz.
 
-1. Tıklayın **Tamam** yeni projeyi oluşturmak için.
+1. Yeni projeyi oluşturmak için **Tamam** ' ı tıklatın.
 
 ::: moniker-end
 
-## <a name="add-a-source-file"></a>Bir kaynak dosyası ekleme
+## <a name="add-a-source-file"></a>Kaynak dosya Ekle
 
-1. Varsa **Çözüm Gezgini** görünmeyen, tıklayın **Çözüm Gezgini** üzerinde **görünümü** menüsü.
+1. **Çözüm Gezgini** görünmüyorsa, **Görünüm** menüsünde **Çözüm Gezgini** ' a tıklayın.
 
-1. Yeni bir kaynak dosyası projeye ekleyin:
+1. Projeye yeni bir kaynak dosyası ekleyin:
 
-   - Sağ **kaynak dosyaları** klasöründe **Çözüm Gezgini**, işaret **Ekle**, tıklatıp **yeni öğe**.
+   - **Çözüm Gezgini**' de **kaynak dosyalar** klasörüne sağ tıklayın, **Ekle**' nin üzerine gelin ve **Yeni öğe**' ye tıklayın.
 
-   - Tıklayın **C++ dosyası (.cpp)** ve bir dosya adı yazın ve ardından **Ekle**.
+   - **C++ Dosya (. cpp)** öğesine tıklayın ve bir dosya adı yazın ve ardından **Ekle**' ye tıklayın.
 
-   **.Cpp** dosya görünür **kaynak dosyaları** klasöründe **Çözüm Gezgini** ve kod girebileceğiniz bir sekmeli pencere görünür, bu dosyada istediğiniz.
+   **. Cpp** dosyası **Çözüm Gezgini** içindeki **kaynak dosyaları** klasöründe görünür ve bu dosyada istediğiniz kodu yazdığınız bir sekmeli pencere görüntülenir.
 
-1. Visual Studio'da yeni oluşturulan sekmesine tıklayın ve geçerli bir Visual C++ programı yazın veya kopyalayın ve örnek programlardan birini yapıştırın.
+1. Visual Studio 'da yeni oluşturulan sekmesine tıklayın ve geçerli bir görsel C++ program yazın veya örnek programlardan birini kopyalayıp yapıştırın.
 
-   Örneğin, kullanabileceğiniz [nasıl yapılır: Metin dosyaları yazma (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) örnek program (içinde **dosya işleme ve g/ç** düğümünün Programlama Kılavuzu).
+   Örneğin, [nasıl yapılır: metin dosyası yazma (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) örnek programını kullanabilirsiniz (programlama kılavuzunun **Dosya işleme ve g/ç** düğümünde).
 
-   Örnek programı kullanırsanız, kullandığına dikkat edin `gcnew` anahtar sözcüğü yerine `new` bir .NET nesnesini ve oluştururken `gcnew` bir tanıtıcı döndürür (`^`) yerine bir işaretçi (`*`):
+   Örnek programı kullanıyorsanız, bir .NET nesnesi oluştururken `new` yerine `gcnew` anahtar sözcüğünü kullanacağınızı ve `gcnew` işaretçi (`*`) yerine bir tanıtıcı (`^`) döndürdüğünü unutmayın:
 
    `StreamWriter^ sw = gcnew StreamWriter(fileName);`
 
-   Daha fazla bilgi için C++/CLI sözdizimine bakın [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
+   /CLI sözdizimi hakkında C++daha fazla bilgi için bkz. [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
-1. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+1. **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
 
-   **Çıkış** pencere konumunu yapı günlüğüne ve yapı durumunu belirten bir ileti gibi derleme ilerlemesi hakkında bilgileri görüntüler.
+   **Çıktı** penceresi, derleme günlüğü konumu ve derleme durumunu gösteren bir ileti gibi derleme ilerlemesi hakkındaki bilgileri görüntüler.
 
-   Değişiklik yapmak ve bir yapı yapmadan programı çalıştırırsanız, bir iletişim kutusu projenin güncel olduğunu gösterebilir. Tıklamadan önce bu iletişim kutusundaki onay kutusunu işaretleyin **Tamam** dosyaları güncel sürümleri yerine her zaman sormadan kullanılması her zaman Visual Studio istiyorsanız, uygulama oluşturur.
+   Değişiklik yapıp programı bir derleme yapmadan çalıştırırsanız, bir iletişim kutusu projenin güncel olmadığını gösterebilir. Visual Studio 'nun uygulamayı her oluşturduğunda sormak yerine her zaman güncel dosya sürümlerini kullanmasını istiyorsanız **Tamam** ' a tıklayarak bu iletişim kutusunda onay kutusunu seçin.
 
-1. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+1. **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
 
-1. Programı çalıştırdığınızda örnek programı kullandıysanız bir metin dosyasının oluşturulduğunu belirten bir komut penceresi görüntülenir.
+1. Örnek programı kullandıysanız, programı çalıştırdığınızda, metin dosyasının oluşturulduğunu belirten bir komut penceresi görüntülenir.
 
-   **Textfile.txt** metin dosyası artık proje dizininde bulunur. Not Defteri'ni kullanarak bu dosyayı açabilirsiniz.
+   **Textfile. txt** metin dosyası artık proje dizininizde bulunur. Bu dosyayı Not defteri 'Ni kullanarak açabilirsiniz.
 
    > [!NOTE]
-   > Boş CLR seçerek proje şablonu otomatik olarak `/clr` derleyici seçeneği. Bunu doğrulamak için projeye sağ **Çözüm Gezgini** tıklayıp **özellikleri**, iade edin **ortak dil çalışma zamanı desteği** seçeneği **Genel** düğümünün **yapılandırma özellikleri**.
+   > Boş CLR proje şablonunu seçme, `/clr` derleyici seçeneğini otomatik olarak ayarlar. Bunu doğrulamak için **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Özellikler**' e tıkladıktan sonra **yapılandırma özellikleri**' nin **genel** düğümünde **ortak dil çalışma zamanı desteği** seçeneğini işaretleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

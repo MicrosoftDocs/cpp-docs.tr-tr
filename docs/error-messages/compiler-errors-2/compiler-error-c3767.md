@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3767
 ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
-ms.openlocfilehash: 994b235b4775c28126d92c241a7e42dc837d4493
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d4a69d7dffb4a01a91b14c3858cb0a5d553d1cf8
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757208"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075165"
 ---
 # <a name="compiler-error-c3767"></a>Derleyici hatası C3767
 
@@ -75,4 +75,3 @@ ref class Der : public Base {
    }
 };
 ```
-

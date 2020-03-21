@@ -3,12 +3,12 @@ title: x64 çağırma kuralı
 description: Varsayılan x64 ABı çağırma kuralının ayrıntıları.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: 2cad00ac7f2cb5fe086fa262a0f512330997391f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 5b9801eff6a9789313d083fdd6ed69c3076643ad
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417168"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078076"
 ---
 # <a name="x64-calling-convention"></a>x64 çağırma kuralı
 
@@ -147,7 +147,7 @@ Kx, RCX, RDX, R8, R9, R10, R11, XMM0-5 ve YMM0 Ila-15 ve ZMM0-15 ' in üst böl�
 RBX, RBP, RDı, RSı, RSP, R12, R13, R14, R15 ve XMM6-15 kayıtları kalıcı olarak değerlendirilir ve bunları kullanan bir işlev tarafından kaydedilmesi ve geri yüklenmesi gerekir.
 
 ## <a name="function-pointers"></a>İşlev işaretçileri
- 
+
 İşlev işaretçileri, yalnızca ilgili işlevin etiketine yönelik işaretçilerdir. İşlev işaretçileri için içindekiler tablosu (TOC) gereksinimi yoktur.
 
 ## <a name="floating-point-support-for-older-code"></a>Eski kod için kayan nokta desteği

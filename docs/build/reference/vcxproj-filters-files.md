@@ -5,12 +5,12 @@ description: Çözüm Gezgini içindeki dosyalar için özel mantıksal C++ klas
 helpviewer_keywords:
 - vcxproj.filters
 - filters file [C++]
-ms.openlocfilehash: ee44bf3d1cbe06d6c007ed8976ec384a456efca5
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: bdf40708a70d841cb3d3144fa8fa73a71e9e9ef2
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686861"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078272"
 ---
 # <a name="vcxprojfilters-files"></a>vcxproj. Filters dosyaları
 
@@ -26,7 +26,7 @@ Visual Studio bu dosyayı otomatik olarak oluşturur. Masaüstü uygulamaları i
 
 Aşağıdaki örnek, daha önce gösterilecek örnek için filtreler dosyasını gösterir. Düz bir hiyerarşiye sahiptir; diğer bir deyişle, iç içe geçmiş mantıksal klasör yoktur. `UniqueIdentifier` düğümü isteğe bağlıdır. Visual Studio Automation arabirimlerinin filtreyi bulmasını sağlar. `Extensions` Ayrıca isteğe bağlıdır. Projeye yeni bir dosya eklendiğinde, bu, eşleşen bir dosya uzantısına sahip en üstteki filtreye eklenir. Belirli bir filtreye dosya eklemek için filtreye sağ tıklayıp **Yeni öğe Ekle**' yi seçin.
 
-`ClInclude` düğümlerini içeren `ItemGroup`, proje ilk başlatıldığında oluşturulur. Kendi vcxproj dosyalarınızı oluşturuyorsanız, tüm proje öğelerinin filtreler dosyasında da bir girdiye sahip olduğundan emin olun. `ClInclude` düğümdeki değerler, dosya uzantılarına göre varsayılan filtrelemeyi geçersiz kılar. Projeye yeni bir öğe eklemek için Visual Studio kullandığınızda, IDE filtreler dosyasına tek bir dosya girişi ekler. Dosyanın uzantısını değiştirirseniz filtre otomatik olarak yeniden atanmaz. 
+`ClInclude` düğümlerini içeren `ItemGroup`, proje ilk başlatıldığında oluşturulur. Kendi vcxproj dosyalarınızı oluşturuyorsanız, tüm proje öğelerinin filtreler dosyasında da bir girdiye sahip olduğundan emin olun. `ClInclude` düğümdeki değerler, dosya uzantılarına göre varsayılan filtrelemeyi geçersiz kılar. Projeye yeni bir öğe eklemek için Visual Studio kullandığınızda, IDE filtreler dosyasına tek bir dosya girişi ekler. Dosyanın uzantısını değiştirirseniz filtre otomatik olarak yeniden atanmaz.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,4 +107,3 @@ Aşağıdaki örnek, daha önce gösterilecek örnek için filtreler dosyasını
     </Filter>
   </ItemGroup>
 ```
-

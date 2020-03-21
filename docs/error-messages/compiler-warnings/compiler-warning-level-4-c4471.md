@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4471
 ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
-ms.openlocfilehash: 0345b730b8fc37329f632bb5d8486c67efd8e3b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d7ed7dc84c0ef61c7789deeb128b99977fa6028
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400792"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076931"
 ---
 # <a name="compiler-warning-level-4-c4471"></a>Derleyici Uyarısı (düzey 4) C4471
 
-'*numaralandırma*': kapsamsız bir numaralandırmanın İleri dönük bildiriminin bir temel türü (int varsayıldı) olmalıdır
+'*Enumeration*': kapsamlı olmayan numaralandırmanın ileri bir bildiriminin temel bir türü olmalıdır (int varsayıldı)
 
-Kapsamsız bir numaralandırmanın İleri dönük bildiriminin bir tanımlayıcı temel alınan türü için bulunamadı. Varsayılan olarak, Visual C++ varsayar `int` numaralandırma için temel alınan türü. Farklı bir açık tür belirtilirse, farklı bir tür numaralandırma tanımında, örneğin, kullanılıyorsa veya farklı bir tür bir başlatıcısı tarafından örtük olarak ayarlanırsa bu sorunlara neden olabilir. Taşınabilirlik sorunlarını da olabilir; diğer derleyiciler değil varsayar `int` temel numaralandırma türüdür.
+Temel alınan tür için tanımlayıcı olmadan kapsamlı olmayan numaralandırmanın ileri bir bildirimi bulundu. Varsayılan olarak, görsel C++ `int` bir numaralandırma için temeldeki tür olduğunu varsayar. Bu, sabit listesi tanımında farklı bir tür kullanılırsa, örneğin, farklı bir açık tür belirtilmişse veya farklı bir tür bir başlatıcı tarafından örtük olarak ayarlandıysa soruna neden olabilir. Ayrıca taşınabilirlik sorunlarınız da olabilir; diğer derleyiciler `int` numaralandırmanın temel alınan türüdür.
 
-Varsayılan olarak bu uyarıyı kapalıdır; /Wall veya /w kullanabileceğiniz*N*komut satırında etkinleştirmek veya #pragma 4471 [uyarı](../../preprocessor/warning.md) , kaynak dosyanızdaki.
+Bu uyarı varsayılan olarak kapalıdır; komut satırında etkinleştirmek için/Duvarveya/w*N*4471 kullanabilirsiniz veya kaynak dosyanızda #pragma [Uyarı](../../preprocessor/warning.md) kullanabilirsiniz.
 
-Bazı durumlarda bu sahte bir uyarıdır. Bu uyarı, İleri dönük bildiriminin bir sabit listesi için tanımından sonra görünüyorsa, harekete. Örneğin, C4471 neden olsa bile bu kod geçerli şöyledir:
+Bazı durumlarda bu uyarı, smerak ediyor. Bir numaralandırma için ileri bildirim, tanımdan sonra görünürse, bu uyarı harekete çıkabilir. Örneğin, bu kod C4471 neden olabilir, ancak şu şekilde geçerlidir:
 
 ```cpp
 // C4471a.cpp
@@ -33,7 +33,7 @@ enum Example;    // Spurious C4471
 
 ## <a name="example"></a>Örnek
 
-Genel olarak, İleri dönük bildirimi yerine kapsamlı olmayan numaralandırma için tam tanımı kullanmak güvenlidir. Tanımı bir üstbilgi dosyasında yerleştirin ve ona başvuran kaynak dosyaları dahil edin. Bu, C ++ 98 ve üzeri için yazılmış kod içinde çalışır. Bu çözüm taşınabilirlik ve Bakım kolaylığı için öneririz.
+Genel olarak, ileri bildirim yerine kapsamlı olmayan numaralandırma için tam tanımı kullanmak güvenlidir. Tanımı bir başlık dosyasına yerleştirebilir ve buna başvuran kaynak dosyalara dahil edebilirsiniz. Bu, C++ 98 ve üzeri için yazılmış kodda kullanılır. Bu çözümü taşınabilirlik ve bakım kolaylığı için öneririz.
 
 ```cpp
 // C4471b.cpp
@@ -46,7 +46,7 @@ enum Example;    // C4471
 
 ## <a name="example"></a>Örnek
 
-C ++ 11'de, kapsamlı olmayan numaralandırma ve kendi İleri dönük bildirimi için açık bir tür ekleyebilirsiniz. Karmaşık üstbilgi ekleme mantığı kullanmak yerine İleri dönük bildiriminin tanımının engelliyorsa Bu çözüm öneririz. Bu çözüm için bir bakım sorunu neden olabilir: numaralandırma tanımı için kullanılan temel alınan türünü değiştirmek tüm eşleştirilecek bildirimleri ayrıca değiştirmeli veya kodunuzda sessiz hataları olabilir. Bu sorunu en aza indirmek için bir üstbilgi dosyasına İleri dönük bildirimi koyabilirsiniz.
+C++ 11 ' de, kapsamlı olmayan bir numaralandırmaya ve ileri bildirimine açık bir tür ekleyebilirsiniz. Bu çözümü yalnızca karmaşık üstbilgi ekleme mantığı, bir iletme bildirimi yerine tanımın kullanılmasını engelliyorsa önerilir. Bu çözüm bir bakım sorununa yol açabilir: sabit listesi tanımı için kullanılan temel türü değiştirirseniz, aynı zamanda tüm ileriye doğru bildirimleri de değiştirmeniz gerekir veya kodunuzda sessiz hatalara sahip olabilirsiniz. Bu sorunu en aza indirmek için ileri bildirimini bir üstbilgi dosyasına koyabilirsiniz.
 
 ```cpp
 // C4471c.cpp
@@ -66,11 +66,11 @@ enum Example : unsigned { item = 0x80000000 }; // explicit type
 // ...
 ```
 
-Bir numaralandırma için açık bir tür belirtirseniz, uyarı de etkinleştirmeniz önerilir [C4369](compiler-warning-level-1-C4369.md), hangi varsayılan olarak açıktır. Bu, burada bir sabit listesi öğesi farklı bir türe açıkça belirtilen türe ihtiyaç duyması tanımlar.
+Bir numaralandırma için açık bir tür belirtirseniz, varsayılan olarak açık olan uyarı [C4369](compiler-warning-level-1-C4369.md)de etkinleştirmenizi öneririz. Bu, bir numaralandırma öğesinin açıkça belirtilen türden farklı türde olması gereken durumları tanımlar.
 
 ## <a name="example"></a>Örnek
 
-C ++ 11'de yeni bir özellik kapsamlı enum kullanmak için kodunuzu değiştirebilirsiniz. Hem tanımı hem de sabit listesi türünü kullanan herhangi bir istemci kod kapsamlı enum kullanmak için değiştirilmesi gerekir. Ad alanı kirliliği ile ilgili sorunlar varsa, tanımlanan numaralandırma öğelerin adlarını enum kapsamına sınırlı olduğu gibi kapsamlı bir numaralandırma kullanmanızı öneririz. Başka bir kapsamlı numaralandırma üyelerini küçük hatalar, kaynak olabilecek başka bir integral veya numaralandırma türü, örtük olarak dönüştürülemez özelliğidir.
+C++ 11 ' deki yeni bir özellik olan kapsamlı bir sabit listesi kullanmak için kodunuzu değiştirebilirsiniz. Hem tanım hem de numaralandırma türünü kullanan istemci kodları kapsamlı bir sabit listesi kullanacak şekilde değiştirilmelidir. Tanımlı numaralandırma öğelerinin adları, numaralandırmanın kapsamıyla sınırlı olduğu için, ad alanı kirliliğine sahip sorunlarınız varsa kapsamlı bir sabit listesi kullanmanızı öneririz. Kapsamlı bir numaralandırmanın başka bir özelliği, üyelerinin örtük olarak başka bir integral veya numaralandırma türüne dönüştürülemeymesidir ve bu da hafif hataların kaynağı olabilir.
 
 ```cpp
 // C4471e.cpp
@@ -89,4 +89,3 @@ enum Example;    // C4471
 enum class Example { item = 0 };
 // ...
 ```
-

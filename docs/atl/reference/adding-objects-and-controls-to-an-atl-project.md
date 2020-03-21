@@ -1,5 +1,5 @@
 ---
-title: Bir ATL projesine nesne ve denetim ekleme
+title: ATL projesine nesne ve denetim ekleme
 ms.date: 05/09/2019
 f1_keywords:
 - vc.appwiz.ATL.controls
@@ -11,46 +11,46 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: deaac8f2d6aac02d0cd751e6abebb3b67051200f
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 415432eb2f5e0bc8f58fc84edaf8409ee8792f27
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706856"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075301"
 ---
-# <a name="adding-objects-and-controls-to-an-atl-project"></a>Bir ATL projesine nesne ve denetim ekleme
+# <a name="adding-objects-and-controls-to-an-atl-project"></a>ATL projesine nesne ve denetim ekleme
 
-> [!NOTE] 
-> ATL COM + 1.0 bileşeni Sihirbazı, ATL OLE DB Tüketicisi Sihirbazı ve ATL Active Server Page bileşeni Sihirbazı'nı Visual Studio 2019 ve sonraki sürümlerinde kullanılamaz.
+> [!NOTE]
+> ATL COM+ 1,0 Bileşen Sihirbazı, ATL OLE DB Tüketici Sihirbazı ve ATL Active Server Page bileşeni Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
-ATL kodu sihirbazlardan birini, ATL veya MFC tabanlı projelerinize bir nesne veya bir denetim eklemek için kullanabilirsiniz. Her bir COM nesnesi veya denetim için eklemenize, sihirbaz, .cpp ve .h dosyaları yanı sıra, kayıt defteri betik tabanlı desteği için bir .rgs dosyası oluşturur. Aşağıdaki ATL kod sihirbazları, Visual Studio'da kullanılabilir:
+ATL veya MFC tabanlı projelerinize bir nesne veya denetim eklemek için ATL kod sihirbazlarından birini kullanabilirsiniz. Eklediğiniz her bir COM nesnesi veya denetimi için, sihirbaz. cpp ve. h dosyalarını ve betik tabanlı kayıt defteri desteği için bir. rgs dosyası oluşturur. Aşağıdaki ATL kod sihirbazları, Visual Studio 'da kullanılabilir:
 
 ||||
 |-|-|-|
-|[ATL Basit Nesne](../../atl/reference/atl-simple-object-wizard.md)|[ATL iletişim kutusu](../../atl/reference/atl-dialog-wizard.md)|[ATL denetimi](../../atl/reference/atl-control-wizard.md)|
-|[ATL özellik sayfası](../../atl/reference/atl-property-page-wizard.md)|[ATL Active Server Page bileşeni](../../atl/reference/atl-active-server-page-component-wizard.md)|[ATL OLE DB Tüketicisi](../../atl/reference/atl-ole-db-consumer-wizard.md)|
-|[MFC'ye ATL desteği Ekle](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|[ATL COM+ 1.0 Bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)|[ATL OLE DB sağlayıcısı](../../atl/reference/atl-ole-db-provider-wizard.md)|
+|[ATL basit nesnesi](../../atl/reference/atl-simple-object-wizard.md)|[ATL Iletişim kutusu](../../atl/reference/atl-dialog-wizard.md)|[ATL denetimi](../../atl/reference/atl-control-wizard.md)|
+|[ATL Özellik sayfası](../../atl/reference/atl-property-page-wizard.md)|[ATL Active Server sayfa bileşeni](../../atl/reference/atl-active-server-page-component-wizard.md)|[ATL OLE DB tüketicisi](../../atl/reference/atl-ole-db-consumer-wizard.md)|
+|[MFC 'ye ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|[ATL COM+ 1.0 Bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)|[ATL OLE DB sağlayıcısı](../../atl/reference/atl-ole-db-provider-wizard.md)|
 
 > [!NOTE]
-> Projenize ATL nesnesi eklemeden önce Ayrıntılar ve gereksinimler için Yardım konusuna nesnesinde gözden geçirmelisiniz.
+> Projenize ATL nesnesi eklemeden önce ilgili yardım konularında nesnenin ayrıntılarını ve gereksinimlerini gözden geçirmeniz gerekir.
 
-## <a name="to-add-an-object-or-a-control-using-the-atl-control-wizard"></a>Bir nesne veya ATL Denetim Sihirbazı'nı kullanarak bir denetim eklemek için
+## <a name="to-add-an-object-or-a-control-using-the-atl-control-wizard"></a>ATL Denetim Sihirbazı 'Nı kullanarak bir nesne veya denetim eklemek için
 
-1. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklatıp **Ekle** kısayol menüsünden. Tıklayın **sınıfı Ekle**.
+1. **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve kısayol menüsünden **Ekle** ' ye tıklayın. **Sınıf Ekle**' ye tıklayın.
 
-   [Sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusu görüntülenir.
+   [Sınıf Ekle](../../ide/add-class-dialog-box.md) iletişim kutusu görünür.
 
-1. İle **ATL** seçili klasör **kategorileri** bölmesinde öğesinden eklenecek nesne bir seçin **şablonları** bölmesi. Tıklayın **açık**. Seçili nesne için kod Sihirbazı görünür.
+1. **Kategoriler** bölmesinde seçili **ATL** klasörü ile **Şablonlar** bölmesinden eklenecek bir nesne seçin. **Aç**'a tıklayın. Seçili nesne için kod Sihirbazı görüntülenir.
 
    > [!NOTE]
-   > MFC projesinde ATL nesnesi eklemek istiyorsanız, varolan bir projeye ATL desteği eklemeniz gerekir. Bu yönergeleri izleyerek yapabilirsiniz [MFC projenize ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md).
+   > Bir MFC projesine ATL nesnesi eklemek istiyorsanız, mevcut projeye ATL desteği eklemeniz gerekir. Bunu, [MFC PROJENIZE atl desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)bölümündeki yönergeleri izleyerek yapabilirsiniz.
 
-   Alternatif olarak, ATL desteği eklemeden önce MFC projenize ATL nesnesi eklemek çalışırsanız, Visual Studio projenize eklenen ATL desteğinin isteyip istemediğinizi belirtmenizi ister. Tıklayın **Evet** projeye ATL desteği Ekle ve seçili ATL Sihirbazı'nı açın.
+   Alternatif olarak, daha önce ATL desteği eklemeden MFC projenize ATL nesnesi eklemeye çalışırsanız, Visual Studio projenize ATL desteğinin eklenmesini isteyip istemediğinizi belirtmenizi ister. Projeye ATL desteği eklemek ve seçili ATL Sihirbazı 'nı açmak için **Evet** ' e tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
-[C++Visual Studio Proje türleri](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++Visual Studio 'da proje türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)

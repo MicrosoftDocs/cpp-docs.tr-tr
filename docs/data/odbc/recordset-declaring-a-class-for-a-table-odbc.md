@@ -1,35 +1,35 @@
 ---
-title: 'Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo'
+title: 'Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets, declaring class for tables
 - recordsets, declaring classes for tables
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
-ms.openlocfilehash: ea17f131552fe7f71d9106a8979bb661955fe850
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: b6e7f4456b5ff29cec854d1b4818fda965e04b96
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707946"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076985"
 ---
-# <a name="recordset-declaring-a-class-for-a-table-odbc"></a>Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo
+# <a name="recordset-declaring-a-class-for-a-table-odbc"></a>Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-En sık karşılaşılan kayıt kümesi sınıfı, tek bir tabloyu açılır. Tek bir tablo için bir kayıt kümesi sınıfı bildirmek için kullanın [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** ve karşılık gelen bir kayıt kümesi alan veri üyesi adlandırarak istediğiniz her bir sütun seçin.
+En yaygın kayıt kümesi sınıfı tek bir tablo açar. Tek bir tablo için bir kayıt kümesi sınıfı bildirmek üzere **Sınıf Ekle** ' den [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) ' nı kullanın ve ilgili bir kayıt kümesi alanı veri üyesini adlandırarak istediğiniz her sütunu seçin.
 
-Kayıt kümeleri diğer kullanımları şunlardır:
+Kayıt kümeleri için diğer kullanımlar şunları içerir:
 
-- İki veya daha fazla tabloları birleştirme.
+- İki veya daha fazla tablo katılıyor.
 
-- Önceden tanımlanmış sorgu sonuçlarını içeren.
+- Önceden tanımlanmış bir sorgunun sonuçlarını içeren.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
-[Kayıt kümesi: Önceden Tanımlanmış Sorgu için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[Kayıt kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+[Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
+[Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

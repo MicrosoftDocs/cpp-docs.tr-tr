@@ -8,12 +8,12 @@ helpviewer_keywords:
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-ms.openlocfilehash: d91ee36d26e307577aa56560eb95bef5ed03305b
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 1b4e7f0f188ce7b3003f12cb7acafaf15a03d86a
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051526"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078247"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: komut satırında C programı derleme
 
@@ -21,7 +21,7 @@ Görsel C++ , temel konsol programlarından tam Windows masaüstü uygulamaları
 
 Bu izlenecek yol, bir metin düzenleyicisi kullanarak temel, "Merhaba, Dünya" stili C programı oluşturmayı ve ardından komut satırında derlemeyi gösterir. Komut satırında C++ üzerinde çalışmayı tercih ediyorsanız, bkz. [Izlenecek yol: komut satırında yerel C++ program derleme](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). Komut satırını kullanmak yerine Visual Studio IDE 'yi denemek istiyorsanız, bkz. [izlenecek yol: projeler ve çözümlerle çalışma (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) veya [masaüstü geliştirme için C++ Visual Studio IDE 'yi kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu izlenecek yolu tamamlamak için, Visual Studio 'Yu ve isteğe bağlı görsel C++ bileşenleri ya da Visual Studio Için derleme araçlarını yüklemiş olmanız gerekir.
 
@@ -63,9 +63,8 @@ Farklı bir Windows sürümü çalıştırıyorsanız, geliştirici komut istemi
 Windows 10 ' da Microsoft Visual C++ derleme araçları 2015 ' ü yüklediyseniz, **Başlat** menüsünü açın ve ardından aşağı kaydırın ve  **C++ Visual derleme araçları** klasörünü açın. Komut istemi penceresini açmak için  **C++ Visual 2015 x86 yerel araçları komut istemi** seçin.
 
 Farklı bir Windows sürümü çalıştırıyorsanız, geliştirici komut istemi kısayolunu içeren bir Visual Studio Araçları klasörü için başlangıç menünüzün veya başlangıç sayfası ' na bakın. Windows Search işlevini "Geliştirici komut istemi" ni aramak ve yüklü Visual Studio sürümünüz ile eşleşen bir seçim yapmak için de kullanabilirsiniz. Komut istemi penceresini açmak için kısayolu kullanın.
-   
-::: moniker-end
 
+::: moniker-end
 
 Ardından, Visual C++ Developer komut isteminin doğru şekilde ayarlandığını doğrulayın. Komut istemi penceresinde `cl` girin ve çıktının şuna benzer göründüğünü doğrulayın:
 

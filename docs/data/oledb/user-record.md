@@ -8,19 +8,19 @@ helpviewer_keywords:
 - user records, described
 - rowsets, user record
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-ms.openlocfilehash: d6920a73f107f226cc31cb27fd15178f6d2f1c26
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 4a8fb6c9eeee3736501a04a095bdd763de16de7d
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525260"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078997"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
 
-> [!NOTE] 
-> ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
+> [!NOTE]
+> ATL OLE DB sağlayıcı Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
-Kullanıcı kaydı, bir satır için sütun verileri temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. İle bir sağlayıcı oluşturduğunuzda **ATL OLE DB sağlayıcısı Sihirbazı**, şuna benzer bir varsayılan kullanıcı kaydı sihirbaz oluşturur (bir sağlayıcı adı [kısa adı] belirtilen varsayılarak *MyProvider*):
+Kullanıcı kaydı, bir satır kümesi için sütun verilerini temsil eden kodu ve veri yapısını sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. **ATL OLE DB sağlayıcı Sihirbazı 'nı**kullanarak bir sağlayıcı oluşturduğunuzda, sihirbaz şuna benzer bir varsayılan kullanıcı kaydı oluşturur ( *bir sağlayıcı adı*[kısa ad] belirtmediğiniz varsayılarak):
 
 ```cpp
 class CWindowsFile:
@@ -39,35 +39,35 @@ END_PROVIDER_COLUMN_MAP()
 };
 ```
 
-OLE DB sağlayıcı şablonları tüm OLE DB ayrıntılarına istemci etkileşim bağlı işleyin. Bir yanıt için gerekli olan sütun verileri almak için sağlayıcı çağırır `GetColumnInfo` işlevin kullanıcı kaydında yerleştirmeniz gerekir. Açıkça geçersiz kılabilirsiniz `GetColumnInfo` kullanıcı kaydında gibi bildirerek .h dosyasındaki burada gösterildiği gibi:
+OLE DB sağlayıcı şablonları, istemciyle etkileşimlerle ilgili tüm OLE DB özellikleri işler. Bir yanıt için gereken sütun verisini almak için sağlayıcı, kullanıcı kaydına yerleştirmeniz gereken `GetColumnInfo` işlevini çağırır. Kullanıcı kaydındaki `GetColumnInfo`, örneğin, burada gösterildiği gibi. h dosyasında bildirerek açıkça geçersiz kılabilirsiniz:
 
 ```cpp
 template <class T>
-static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols) 
+static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols)
 ```
 
-Bu karşılık gelir:
+Bu, şu şekilde yapılır:
 
 ```cpp
 static ATLCOLUMNINFO* GetColumnInfo(CommandClass* pThis, ULONG* pcCols)
 static ATLCOLUMNINFO* GetColumnInfo(RowsetClass* pThis, ULONG* pcCols)
 ```
 
-Ardından, uygulama `GetColumnInfo` kullanıcı kaydının .cpp dosyası içinde.
+Ardından, Kullanıcı kaydının. cpp dosyasında `GetColumnInfo` uygulayın.
 
-PROVIDER_COLUMN_MAP makroları yardımcı oluştururken bir `GetColumnInfo` işlevi:
+PROVIDER_COLUMN_MAP makroları `GetColumnInfo` işlevi oluşturmaya yardımcı olur:
 
-- BEGIN_PROVIDER_COLUMN_MAP işlev prototipi ve statik bir dizi tanımlar `ATLCOLUMNINFO` yapıları.
+- BEGIN_PROVIDER_COLUMN_MAP, işlev prototipini ve statik bir `ATLCOLUMNINFO` yapıları dizisini tanımlar.
 
-- PROVIDER_COLUMN_ENTRY tanımlar ve tek bir başlatır `ATLCOLUMNINFO`.
+- PROVIDER_COLUMN_ENTRY tek bir `ATLCOLUMNINFO`tanımlar ve başlatır.
 
-- END_PROVIDER_COLUMN_MAP dizi ve işlev kapatır. Ayrıca bir dizi öğe sayısını yerleştirir *pcCols* parametresi.
+- END_PROVIDER_COLUMN_MAP diziyi ve işlevi kapatır. Ayrıca, dizi öğe sayısını *pcCols* parametresine koyar.
 
-Çalışma zamanında, bir kullanıcı kaydı oluşturulduğunda `GetColumnInfo` kullanan *pThis* satır kümesi veya komut örneğine bir işaretçi almak için parametre. Komutlar ve satır kümeleri desteklemelidir `IColumnsInfo` sütun bilgileri bu işaretçiyle alınması için arabirim.
+Çalışma zamanında bir kullanıcı kaydı oluşturulduğunda `GetColumnInfo`, bir satır kümesine veya komut örneğine bir işaretçi almak için *pThis* parametresini kullanır. Komutların ve satır kümelerinin `IColumnsInfo` arabirimini desteklemesi gerekir, bu nedenle sütun bilgileri bu işaretçiden alınabilir.
 
-`CommandClass` ve `RowsetClass` komut ve kullanıcı kaydını kullanan satır kümesi.
+`CommandClass` ve `RowsetClass`, Kullanıcı kaydını kullanan komut ve satır kümesidir.
 
-Geçersiz kılmak daha ayrıntılı bir örnek `GetColumnInfo` bir kullanıcı kaydı görebilirsiniz [dinamik olarak belirleme sütunları döndürülen tüketici](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
+Bir Kullanıcı kaydındaki `GetColumnInfo` geçersiz kılma hakkında daha ayrıntılı bir örnek için bkz. [tüketiciye döndürülen sütunları dinamik olarak belirleme](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

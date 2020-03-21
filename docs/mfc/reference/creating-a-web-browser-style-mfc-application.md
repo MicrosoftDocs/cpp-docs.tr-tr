@@ -9,37 +9,37 @@ helpviewer_keywords:
 - Web browsers
 - Web applications [MFC], creating
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
-ms.openlocfilehash: 9d249c7effc2c78e319207d82c9a963d7a61a67c
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: d928d8de34c6caab0f86e9205d0aea45b5ed737c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504773"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079444"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 
-Bir Web tarayıcısı stilinde uygulaması bilgilere (örneğin, HTML veya etkin belgeler) Internet veya intranet, yanı klasör yerel dosya sistemi ve ağ üzerinde erişebilirsiniz. Uygulamanın görünümü sınıftan türetme tarafından [CHtmlView](../../mfc/reference/chtmlview-class.md), etkili bir şekilde WebBrowser denetimi ile görünüm sağlayarak uygulama bir Web tarayıcısı olun.
+Web tarayıcı stili bir uygulama, Internet 'ten (HTML veya etkin belgeler) veya bir intranet 'e ait bilgilere ve yerel dosya sisteminde ve bir ağdaki klasörlere erişebilir. Uygulamanın görünüm sınıfını [CHtmlView](../../mfc/reference/chtmlview-class.md)öğesinden türeterek, uygulamayı WebBrowser denetimiyle görünümü sağlayarak bir Web tarayıcısı olarak yaparsınız.
 
-### <a name="to-create-a-web-browser-application-based-on-the-mfc-documentview-architecture"></a>MFC belge/görünüm mimarisi hakkında temel bir Web tarayıcı uygulaması oluşturmak için
+### <a name="to-create-a-web-browser-application-based-on-the-mfc-documentview-architecture"></a>MFC belge/görünüm mimarisine dayalı bir Web tarayıcı uygulaması oluşturmak için
 
-1. Bölümündeki yönergeleri izleyin [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md).
+1. [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md)yönergelerini izleyin.
 
-1. MFC Uygulama Sihirbazı'nda [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, belirli olun **belge/görünüm mimarisi** kutusu seçilidir. (Ya da tercih edebilirsiniz **tek belge** veya **birden çok belge**, ama **iletişim kutusu tabanlı**.)
+1. MFC Uygulama Sihirbazı [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, **belge/görünüm mimarisi** kutusunun seçili olduğundan emin olun. ( **Tek belge** veya **birden çok belge**seçebilirsiniz, ancak **iletişim temelli**değildir.)
 
-1. Üzerinde [gözden geçirme oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfasında **temel sınıfı** seçmek için aşağı açılan menüsünü `CHtmlView`.
+1. [Oluşturulan sınıfları gözden geçir](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfasında, `CHtmlView`seçmek için **temel sınıf** açılan menüsünü kullanın.
 
-1. Yerleşik çatı uygulamasına istediğiniz diğer seçenekleri belirleyin.
+1. Çatı uygulamasına yerleşik olarak kullanmak istediğiniz diğer seçenekleri seçin.
 
 1. **Son**'a tıklayın.
 
-WebBrowser denetimi, köprüler ve Tekdüzen Kaynak Konum Belirleyicisi (URL) gezinti aracılığıyla gözatmayı destekler. İleriye göz atmak kullanıcıya izin veren geçmiş listesi denetimi korur ve geri önceden siteler, klasörler ve belgeler göz. Denetim, gezinti, köprüler, geçmiş listeleri, Sık Kullanılanlar ve güvenlik doğrudan işler. Uygulamaları WebBrowser denetimi de etkin belgeler konak için bir etkin belge kapsayıcısı olarak kullanabilir. Bu nedenle, Microsoft Excel elektronik tablolar gibi zengin biçimli belgeler veya Word belgeleri açılabilir ve WebBrowser denetimi içinde yerinde düzenlenebilir. WebBrowser denetimi ayrıca herhangi bir ActiveX denetimi barındıran bir ActiveX denetimi kapsayıcısı var.
+WebBrowser denetimi köprüler ve Tekdüzen Kaynak Bulucu (URL) gezintisi aracılığıyla Web 'e gözatmayı destekler. Denetim, kullanıcının önceden gözatılan siteler, klasörler ve belgeler boyunca İleri ve geri göz atmasına izin veren bir geçmiş listesi tutar. Denetim doğrudan gezinti, köprüler, geçmiş listeleri, Sık Kullanılanlar ve güvenlik ' i işler. Uygulamalar, etkin belgeleri de barındırmak için WebBrowser denetimini etkin bir belge kapsayıcısı olarak kullanabilir. Bu nedenle, Microsoft Excel elektronik tabloları veya Word belgeleri gibi zengin biçimli belgeler, WebBrowser denetimi içinden yerinde açılabilir ve düzenlenebilir. WebBrowser denetimi aynı zamanda herhangi bir ActiveX denetimini barındırasağlayan bir ActiveX denetim kapsayıcısıdır.
 
 > [!NOTE]
->  WebBrowser ActiveX denetimi (ve bu nedenle `CHtmlView`) yalnızca Windows sürümlerinde hangi Internet Explorer 4.0 altında çalışan uygulamalar için kullanılabilir veya üzeri yüklü.
+>  WebBrowser ActiveX denetimi (ve bu nedenle `CHtmlView`) yalnızca Internet Explorer 4,0 veya sonraki bir sürümünün yüklendiği Windows sürümleri altında çalışan uygulamalarda kullanılabilir.
 
-Çünkü `CHtmlView` yazdırma gibi diğer değil yalnızca Microsoft Web tarayıcı denetimi desteği uygulayan [CView](../../mfc/reference/cview-class.md)-türetilmiş sınıflar. Bunun yerine, yazıcı kullanıcı arabirimi ve yazdırma WebBrowser denetimi uygular. Sonuç olarak, `CHtmlView` mu desteklemediği Baskı Önizleme ve framework için yazdırma diğer destek işlevlerini sağlamaz: Örneğin, [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting), ve [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting), olan diğer MFC uygulamalarında kullanılabilir.
+`CHtmlView` yalnızca Microsoft Web tarayıcısı denetimini uyguladığından, yazdırma desteği diğer [CView](../../mfc/reference/cview-class.md)ile türetilmiş sınıflar gibi değildir. Bunun yerine, WebBrowser denetimi Yazıcı Kullanıcı arabirimini ve yazdırmayı uygular. Sonuç olarak, `CHtmlView` baskı önizlemeyi desteklemez ve Framework diğer yazdırma desteği işlevlerini sağlamaz: Örneğin, [CView:: OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView:: OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)ve [CView](../../mfc/reference/cview-class.md#onendprinting):: OnEndPrinting, diğer MFC uygulamalarında kullanılabilir.
 
-`CHtmlView` Uygulamanız bir Web veya HTML sayfasından bir görünümde sunan Web tarayıcı denetimi için bir sarmalayıcı olarak görev yapar. Bir geçersiz kılma için sihirbazın oluşturduğu [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) Microsoft Visual C++ Web sitesine gezinme bağlantısı sağlama görünüm sınıfı, işlev:
+`CHtmlView` Web tarayıcısı denetimi için bir sarmalayıcı işlevi görür. Bu, uygulamanıza bir Web veya HTML sayfası üzerinde bir görünüm sağlar. Sihirbaz, Microsoft Visual C++ Web sitesine gezinti bağlantısı sağlayan görünüm sınıfındaki [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) işlevinde bir geçersiz kılma oluşturur:
 
 ```cpp
 void CWebView::OnInitialUpdate()
@@ -54,7 +54,7 @@ void CWebView::OnInitialUpdate()
 }
 ```
 
-Bu site kendi biriyle değiştirebilirsiniz ya da kullanabileceğinizi [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) görünümü için varsayılan içerik olarak projenin kaynak komut dosyasında yer alan bir HTML sayfasını açmak için üye işlevi. Örneğin:
+Bu siteyi kendi kendinize değiştirebilir veya [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) üye işlevini, projenin kaynak komut dosyasında görünüm için varsayılan içerik olarak bulunan bir HTML sayfasını açmak için kullanabilirsiniz. Örnek:
 
 ```cpp
 void CWebView::OnInitialUpdate()
@@ -69,9 +69,8 @@ void CWebView::OnInitialUpdate()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MFCIE](https://github.com/Microsoft/VCSamples)<br/>
+[MFC örnek MFCıE](https://github.com/Microsoft/VCSamples)<br/>
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Derleyici ayarlayın ve derleme özellikleri](../../build/working-with-project-properties.md)<br/>
+[Derleyici ve derleme özelliklerini ayarlama](../../build/working-with-project-properties.md)<br/>
 [Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)<br/>
-[Derleyici ayarlayın ve derleme özellikleri](../../build/working-with-project-properties.md)
-
+[Derleyici ve derleme özelliklerini ayarlama](../../build/working-with-project-properties.md)

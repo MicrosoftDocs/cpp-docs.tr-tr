@@ -12,12 +12,12 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-ms.openlocfilehash: 50052e13371482fa0a8b6d66ef666b9801837501
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: c1a3539ea4ea705ad8bd1e40acda965ef66e2051
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444032"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077723"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 
@@ -28,7 +28,7 @@ ms.locfileid: "79444032"
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE ISessionPropertiesImpl :
-   public ISessionProperties, 
+   public ISessionProperties,
    public CUtlProps<PropClass>
 ```
 
@@ -57,7 +57,7 @@ Varsayılan olarak *T*olarak kullanılacak kullanıcı tanımlı bir özellik s�
 
 Oturumlardaki zorunlu arabirim. Bu sınıf, [özellik kümesi eşlemesi](../../data/oledb/begin-propset-map.md)tarafından tanımlanan statik bir işlevi çağırarak oturum özelliklerini uygular. Özellik kümesi eşlemesi, oturum sınıfınıza belirtilmelidir.
 
-## <a name="getproperties"></a>ISessionPropertiesImpl:: GetProperties
+## <a name="isessionpropertiesimplgetproperties"></a><a name="getproperties"></a>ISessionPropertiesImpl:: GetProperties
 
 Oturumda ayarlanmış olan `DBPROPSET_SESSION` özellik grubundaki özelliklerin listesini döndürür.
 
@@ -74,7 +74,7 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets,
 
 *OLE DB Programcı başvurusunda* [ISessionProperties:: GetProperties](/previous-versions/windows/desktop/ms723643(v=vs.85)) bölümüne bakın.
 
-## <a name="setproperties"></a>ISessionPropertiesImpl:: SetProperties
+## <a name="isessionpropertiesimplsetproperties"></a><a name="setproperties"></a>ISessionPropertiesImpl:: SetProperties
 
 `DBPROPSET_SESSION` özellik grubundaki özellikleri ayarlar.
 

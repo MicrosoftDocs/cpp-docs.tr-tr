@@ -2,12 +2,12 @@
 title: Visual C++ Studio 'da koda gitme
 description: Kod tabanınızın C++ etrafında gezinmek Için Visual Studio 'daki çeşitli araçları kullanın.
 ms.date: 05/28/2019
-ms.openlocfilehash: 0877fe64e913ab394d9605b9ff0b9825febca793
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 932694db70019924557259d4defe802b53ef0f89
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446647"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079086"
 ---
 # <a name="navigate-c-code-in-visual-studio"></a>Visual C++ Studio 'da koda gitme
 
@@ -31,7 +31,7 @@ Düzenleyicide sağ tıklayıp **Tanıma Git**' i seçerek veya **F12**' i seçe
 
 ## <a name="go-to"></a>Git
 
-**Git** , her birinin belirttiğiniz filtrelere göre belirli bir sonuç türünü sağlayan bir dizi gezinti özelliği anlamına gelir. 
+**Git** , her birinin belirttiğiniz filtrelere göre belirli bir sonuç türünü sağlayan bir dizi gezinti özelliği anlamına gelir.
 
 **Git** **' i CTRL + '** de açabilirsiniz. Bu eylem, düzenlemekte olduğunuz belge üzerinde bir arama kutusu oluşturur.
 
@@ -82,7 +82,7 @@ Metin filtrelerinin listesini görmek için şunu yazın: ardından bir boşluk 
 
 ![C&#43; &#43; bul](../ide/media/find-cpp.png "Bul")
 
-**Dosyalarda bul** , sonuçları **bul** penceresinde sonuçları görüntüleyen bir **bul** 'un daha güçlü bir sürümüdür. Dış kod bağımlılıklarını arayabilir, dosya türlerine göre filtreleyebilirsiniz ve daha fazlasını yapabilirsiniz. 
+**Dosyalarda bul** , sonuçları **bul** penceresinde sonuçları görüntüleyen bir **bul** 'un daha güçlü bir sürümüdür. Dış kod bağımlılıklarını arayabilir, dosya türlerine göre filtreleyebilirsiniz ve daha fazlasını yapabilirsiniz.
 
 ![Dosyalarda&#43; &#43; C bul](../ide/media/find-in-files-cpp.png "Dosyalarda Bul")
 

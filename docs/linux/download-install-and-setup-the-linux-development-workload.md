@@ -3,12 +3,12 @@ title: C++ Linux Iş yükünü Visual Studio 'ya yükler
 description: Visual Studio 'da için C++ Linux iş yükünün nasıl indirileceği, yükleneceği ve kurulacağı açıklanmaktadır.
 ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 1dad17756cbc12fdf65250b7c54314ff2a645287
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 719fb9a04c3b0090a1ae5442f881ba6b7d2136c5
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73966205"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077634"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
@@ -20,11 +20,11 @@ Linux projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir.
 
 ::: moniker range=">=vs-2017"
 
-Windows üzerinde Visual Studio IDE 'yi kullanarak, uzak bir Linux sisteminde, sanal makinede C++ veya [Linux Için Windows alt sisteminde](/windows/wsl/about)yürütülen projeleri oluşturabilir, düzenleyebilir ve hata ayıklaması yapabilirsiniz. 
+Windows üzerinde Visual Studio IDE 'yi kullanarak, uzak bir Linux sisteminde, sanal makinede C++ veya [Linux Için Windows alt sisteminde](/windows/wsl/about)yürütülen projeleri oluşturabilir, düzenleyebilir ve hata ayıklaması yapabilirsiniz.
 
-Visual Studio projesine dönüştürmek zorunda kalmadan CMake kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, Visual Studio içinden hem Windows hem de Linux 'u hedefleyebilirsiniz. Örneğin, Visual Studio kullanarak Windows 'da kodunuzu düzenleyebilir, oluşturabilir ve hata ayıklamanıza ve Linux ortamında derleyip hata ayıklamanın ardından Linux için projeyi hızla yeniden hedefleyebilirsiniz. Linux üst bilgi dosyaları, Visual Studio 'Nun tam IntelliSense desteği sağlamak için bunları kullandığı yerel makinenize otomatik olarak kopyalanır (deyimin tamamlanması, tanıma git vb.). 
- 
-Bu senaryoların herhangi biri için iş yüküyle **Linux geliştirme C++**  gereklidir. 
+Visual Studio projesine dönüştürmek zorunda kalmadan CMake kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, Visual Studio içinden hem Windows hem de Linux 'u hedefleyebilirsiniz. Örneğin, Visual Studio kullanarak Windows 'da kodunuzu düzenleyebilir, oluşturabilir ve hata ayıklamanıza ve Linux ortamında derleyip hata ayıklamanın ardından Linux için projeyi hızla yeniden hedefleyebilirsiniz. Linux üst bilgi dosyaları, Visual Studio 'Nun tam IntelliSense desteği sağlamak için bunları kullandığı yerel makinenize otomatik olarak kopyalanır (deyimin tamamlanması, tanıma git vb.).
+
+Bu senaryoların herhangi biri için iş yüküyle **Linux geliştirme C++**  gereklidir.
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ Linux C++ geliştirmeye yönelik destek, Visual Studio 2017 ve üzeri sürümler
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.:
+Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.
 
 - [Yeni Linux projesi oluşturma](create-a-new-linux-project.md)
 - [Linux CMake projesi yapılandırma](cmake-linux-project.md)

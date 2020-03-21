@@ -2,12 +2,12 @@
 title: Bildirimler ve tanımlar (C++)
 ms.date: 12/12/2019
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
-ms.openlocfilehash: d52294b635e05f42a4c48620214a90cad609f575
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 7aa9e07a471ed5a32ecc8f13690f1a1bf08b655f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301554"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077214"
 ---
 # <a name="declarations-and-definitions-c"></a>Bildirimler ve tanımlar (C++)
 
@@ -40,9 +40,9 @@ namespace N {
 }
 ```
 
-5\. satırda `main` işlevi bildirilmiştir. 7\. satırda, `pi` adlı bir **const** değişkeni bildirilmiştir ve *başlatılır*. 8\. satırda, bir tamsayı `i`, işlev `f`tarafından üretilen değer ile bildirilmiştir ve başlatılır. `f` adı, 3. satırdaki *iletme bildirimi* nedeniyle derleyici tarafından görülebilir. 
+5\. satırda `main` işlevi bildirilmiştir. 7\. satırda, `pi` adlı bir **const** değişkeni bildirilmiştir ve *başlatılır*. 8\. satırda, bir tamsayı `i`, işlev `f`tarafından üretilen değer ile bildirilmiştir ve başlatılır. `f` adı, 3. satırdaki *iletme bildirimi* nedeniyle derleyici tarafından görülebilir.
 
-9\. satırda, `C` türünde `obj` adlı bir değişken bildirilmiştir. Ancak, bu bildirim bir hata oluşturur, çünkü `C` programın sonraki kısımlarında olana kadar bildirilmemiş ve ileriye dönük olarak bildirilmemiş. Hatayı onarmak için, `main` önce tüm `C` *tanımını* taşıyabilir ya da bunun için bir ileri bildirim ekleyebilirsiniz. Bu davranış C#, bir kaynak dosyasındaki bildirim noktasından önce işlev ve sınıfların kullanılabileceği gibi diğer dillerden farklıdır. 
+9\. satırda, `C` türünde `obj` adlı bir değişken bildirilmiştir. Ancak, bu bildirim bir hata oluşturur, çünkü `C` programın sonraki kısımlarında olana kadar bildirilmemiş ve ileriye dönük olarak bildirilmemiş. Hatayı onarmak için, `main` önce tüm `C` *tanımını* taşıyabilir ya da bunun için bir ileri bildirim ekleyebilirsiniz. Bu davranış C#, bir kaynak dosyasındaki bildirim noktasından önce işlev ve sınıfların kullanılabileceği gibi diğer dillerden farklıdır.
 
 10. satırda, `std::string` türünde `str` adlı bir değişken bildirilmiştir. `std::string` adı, 1. satırdaki kaynak dosyayla birleştirilmiş `string` [üst bilgi dosyasında](header-files-cpp.md) tanıtıldığı için görülebilir. `std`, `string` sınıfının bildirildiği ad alanıdır.
 

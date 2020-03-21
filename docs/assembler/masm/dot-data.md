@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .DATA directive
 ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
-ms.openlocfilehash: e89fa948f40c984f8c455d11d5916b807f6319bc
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 2bb71c7f9d26f12bfefbef947592acc8bef48214
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75313996"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076228"
 ---
 # <a name="data"></a>.DATA
 
@@ -30,4 +30,3 @@ ms.locfileid: "75313996"
 [. FARVERILERI](dot-fardata.md)\
 [. FARVERI?](dot-fardata-q.md)\
 [MASMG BNF dilbilgisi](masm-bnf-grammar.md)
-

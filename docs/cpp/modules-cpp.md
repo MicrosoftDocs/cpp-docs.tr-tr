@@ -5,16 +5,16 @@ helpviewer_keywords:
 - modules [C++]
 - modules [C++], overview
 description: C++ 20 ' deki modüller üst bilgi dosyalarına modern bir alternatif sağlar.
-ms.openlocfilehash: 28e1824250ad4fb404c528aa9511745abb001f31
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 286d2ec8a26dbd0a85e8f8721ad6fd7f12f45a31
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301385"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078036"
 ---
 # <a name="overview-of-modules-in-c"></a>C++ içindeki modüllere genel bakış
 
-C++ 20,kitaplıkları ve programları çözüme yönelik modern bir çözüm olan C++ modülleri tanıtır. Modül, içeri aktarılan [çeviri birimlerinden](https://wikipedia.org/wiki/Translation_unit_(programming)) bağımsız olarak derlenen bir kaynak kod dosyaları kümesidir. Modüller, üst bilgi dosyaları kullanımıyla ilişkili birçok sorunu ortadan kaldırır veya büyük ölçüde azaltır, ayrıca derleme sürelerini de azaltabilir. Bir modülde belirtilen makrolar, Önişlemci yönergeleri ve dışa aktarılmamış adlar görünür değildir ve bu nedenle modülü içeri aktaran çeviri biriminin derlenmesi üzerinde hiçbir etkisi yoktur. Herhangi bir sırada, makro yeniden tanımlarına yönelik bir sorun olmadan modülleri içeri aktarabilirsiniz. İçeri aktarma çeviri birimindeki bildirimler, içeri aktarılan modülde aşırı yükleme çözümüne veya ad aramasına katılmaz. Bir modül bir kez derlendikten sonra sonuçlar, tüm aktarılmış türleri, işlevleri ve şablonları açıklayan bir ikili dosyada depolanır. Bu dosya bir üstbilgi dosyasından çok daha hızlı işlenebilir ve derleyici bir projeye içeri aktarılırken her yerde derleyici tarafından yeniden kullanılabilir.
+C++ 20, *modules*kitaplıkları ve programları çözüme yönelik modern bir çözüm olan C++ modülleri tanıtır. Modül, içeri aktarılan [çeviri birimlerinden](https://wikipedia.org/wiki/Translation_unit_(programming)) bağımsız olarak derlenen bir kaynak kod dosyaları kümesidir. Modüller, üst bilgi dosyaları kullanımıyla ilişkili birçok sorunu ortadan kaldırır veya büyük ölçüde azaltır, ayrıca derleme sürelerini de azaltabilir. Bir modülde belirtilen makrolar, Önişlemci yönergeleri ve dışa aktarılmamış adlar görünür değildir ve bu nedenle modülü içeri aktaran çeviri biriminin derlenmesi üzerinde hiçbir etkisi yoktur. Herhangi bir sırada, makro yeniden tanımlarına yönelik bir sorun olmadan modülleri içeri aktarabilirsiniz. İçeri aktarma çeviri birimindeki bildirimler, içeri aktarılan modülde aşırı yükleme çözümüne veya ad aramasına katılmaz. Bir modül bir kez derlendikten sonra sonuçlar, tüm aktarılmış türleri, işlevleri ve şablonları açıklayan bir ikili dosyada depolanır. Bu dosya bir üstbilgi dosyasından çok daha hızlı işlenebilir ve derleyici bir projeye içeri aktarılırken her yerde derleyici tarafından yeniden kullanılabilir.
 
 Modüller, üst bilgi dosyaları ile yan yana kullanılabilir. C++ Kaynak dosya, modülleri içeri aktarabilir ve ayrıca üstbilgi dosyalarını #include. Bazı durumlarda, bir üst bilgi dosyası Önişlemci tarafından metin içeriğini eklemek #included yerine bir modül olarak içeri aktarılabilir. Yeni projelerin, üst bilgi dosyaları yerine modüller kullanmasını mümkün olduğunca çok tercih ederiz. Etkin geliştirme kapsamındaki daha büyük mevcut projeler için, derleme saatlerinde anlamlı bir azaltma elde edilip edilmeyeceğini görmek üzere eski üst bilgileri modüllere dönüştürmeyi öneririz.
 
@@ -34,7 +34,7 @@ C++ 20 standardı tarafından belirtilmediği halde Microsoft, C++ standart kita
 - STD. Threading \<atomik >, \<condition_variable >, gelecekteki \<>, \<mutex >, \<shared_mutex > ve \<iş parçacığı için üst bilgilerin içeriğini sağlar >
 - STD. Core, C++ standart kitaplıkta diğer her şeyi sağlar
 
-Bu modülleri kullanmak için, kaynak kodu dosyasının en üstüne bir içeri aktarma bildirimi eklemeniz yeterlidir. Örneğin:
+Bu modülleri kullanmak için, kaynak kodu dosyasının en üstüne bir içeri aktarma bildirimi eklemeniz yeterlidir. Örnek:
 
 ```cpp
 import std.core;
@@ -52,7 +52,7 @@ export module Foo;
 
 #define ANSWER 42
 
-namespace Bar 
+namespace Bar
 {
    int f_internal() {
         return ANSWER;

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: 5f3a24a46db1c9013e5458143812faa079ade013
-ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
+ms.openlocfilehash: 16dbbc4a3b2e8927643d3612bec034f9f5da8d9c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108546"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077521"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 
-MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığı 'nı temel alan Windows için yürütülebilir bir uygulamadır. MFC yürütülebilir dosyaları genellikle beş türe ayrılır: standart Windows uygulamaları, iletişim kutuları, form tabanlı uygulamalar, Gezgin stili uygulamalar ve Web tarayıcı stili uygulamalar. Daha fazla bilgi için bkz.:
+MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığı 'nı temel alan Windows için yürütülebilir bir uygulamadır. MFC yürütülebilir dosyaları genellikle beş türe ayrılır: standart Windows uygulamaları, iletişim kutuları, form tabanlı uygulamalar, Gezgin stili uygulamalar ve Web tarayıcı stili uygulamalar. Daha fazla bilgi için bkz.
 
 - [Windows uygulamaları yazmak için sınıfları kullanma](../../mfc/using-the-classes-to-write-applications-for-windows.md)
 
@@ -29,14 +29,13 @@ MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığı 'nı temel alan W
 
 MFC Uygulama Sihirbazı, sihirbazda belirlediğiniz seçeneklere bağlı olarak, bu tür uygulamalardan herhangi biri için uygun sınıfları ve dosyaları oluşturur.
 
-
 MFC uygulaması oluşturmanın en kolay yolu MFC Uygulama Sihirbazı 'Nı kullanmaktır (Visual Studio 2019 ' de**MFC Uygulama Projesi** ). MFC konsol uygulaması (MFC kitaplıklarını kullanan ancak konsol penceresinde çalışan bir komut satırı programı) oluşturmak için, Windows Masaüstü Sihirbazı 'Nı kullanın ve **konsol uygulaması** ve **MFC üstbilgileri** seçeneklerini belirleyin.
 
 ::: moniker range=">=vs-2019"
 
 ## <a name="to-create-an-mfc-forms-or-dialog-based-application"></a>MFC formları veya iletişim kutusu tabanlı uygulama oluşturmak için
 
-1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Ana menüden **dosya** > **Yeni** > **Proje**' yi seçin.
 1. Arama kutusuna "MFC" yazın ve ardından sonuç listesinden **MFC uygulaması** ' nı seçin.
 1. Gerekirse Varsayılanları değiştirin ve ardından **Oluştur** ' a basarak **MFC Uygulama sihirbazını**açın.
 1. Yapılandırma değerlerini gereken şekilde değiştirip **son**' a basın.
@@ -49,7 +48,7 @@ Daha fazla bilgi için bkz. [form tabanlı MFC uygulaması oluşturma](creating-
 
 MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde çalıştırılan bir komut satırı programıdır.
 
-1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Ana menüden **dosya** > **Yeni** > **Proje**' yi seçin.
 1. Arama kutusuna "Masaüstü" yazın ve ardından sonuç listesinden **Windows Masaüstü Sihirbazı** ' nı seçin.
 1. Proje adını gereken şekilde değiştirin ve ardından **İleri** ' ye basarak **Windows Masaüstü Sihirbazı 'nı**açın.
 1. **MFC üstbilgileri** kutusunu işaretleyin ve diğer değerleri gerektiği gibi ayarlayıp **son**' a basın.
@@ -62,8 +61,8 @@ MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde 
 
 ## <a name="to-create-an-mfc-forms-or-dialog-based-application"></a>MFC formları veya iletişim kutusu tabanlı uygulama oluşturmak için
 
-1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin.
-1. **Yüklü** Şablonlar altında, **Visual C++**   >  **MFC/ATL**' yi seçin. Bunları görmüyorsanız, eklemek için Visual Studio Yükleyicisi kullanın.
+1. Ana menüden **dosya** > **Yeni** > **Proje**' yi seçin.
+1. **Yüklü** Şablonlar altında **Visual C++**  > **MFC/ATL**' yi seçin. Bunları görmüyorsanız, eklemek için Visual Studio Yükleyicisi kullanın.
 1. Orta bölmeden **MFC uygulaması** ' nı seçin.
 1. Yapılandırma değerlerini gereken şekilde değiştirip **son**' a basın.
 
@@ -75,8 +74,8 @@ Daha fazla bilgi için bkz. [form tabanlı MFC uygulaması oluşturma](creating-
 
 MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde çalıştırılan bir komut satırı programıdır.
 
-1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin.
-1. **Yüklü** Şablonlar altında, > **Visual C++**  **Windows Desktop**' ı seçin.
+1. Ana menüden **dosya** > **Yeni** > **Proje**' yi seçin.
+1. **Yüklü** Şablonlar altında, **Windows Masaüstü**> **görsel C++**  ' i seçin.
 1. Orta bölmeden **Windows Masaüstü Sihirbazı** ' nı seçin.
 1. Proje adını gereken şekilde değiştirin ve sonra **Windows Masaüstü Sihirbazı 'nı**açmak için **Tamam** ' a basın.
 1. **MFC üstbilgileri** kutusunu işaretleyin ve diğer değerleri gerektiği gibi ayarlayıp **son**' a basın.
@@ -89,8 +88,8 @@ MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde 
 
 ## <a name="to-create-an-mfc-forms-or-dialog-based-application"></a>MFC formları veya iletişim kutusu tabanlı uygulama oluşturmak için
 
-1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin.
-1. **Yüklü** Şablonlar altında, **Visual C++**  > **MFC**' yi seçin.
+1. Ana menüden **dosya** > **Yeni** > **Proje**' yi seçin.
+1. **Yüklü** Şablonlar altında **Visual C++**  > **MFC**' yi seçin.
 1. Orta bölmeden **MFC uygulaması** ' nı seçin.
 1. **İleri** ' ye tıklayarak **MFC Uygulama Sihirbazı 'nı**başlatın.
 
@@ -102,7 +101,7 @@ Daha fazla bilgi için bkz. [form tabanlı MFC uygulaması oluşturma](creating-
 
 MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde çalıştırılan bir komut satırı programıdır.
 
-1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Ana menüden **dosya** > **Yeni** > **Proje**' yi seçin.
 1. **Yüklü** Şablonlar altında, **Visual C++**  > **Win32**öğesini seçin.
 1. Orta bölmeden **Win32 konsol uygulaması** ' nı seçin.
 1. Proje adını gereken şekilde değiştirip **Tamam**' a basın.

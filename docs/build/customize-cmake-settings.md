@@ -3,28 +3,28 @@ title: Visual Studio 'da CMake derleme ayarlarını özelleştirme
 ms.date: 08/20/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: ecd2964e035cbf3d48a737164b0067720e9b6b9a
-ms.sourcegitcommit: 0df462d79ad617296095c3012badc2fe669bab2f
+ms.openlocfilehash: f93997e498502e0e326edfc2b023af9808f86357
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69887037"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078646"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake derleme ayarlarını özelleştirme
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 ve üzeri sürümlerde, **CMake ayarları düzenleyicisini**kullanarak yapılandırma ekleyebilir ve ayarlarını özelleştirebilirsiniz. Düzenleyicinin *Cmakesettings. JSON* dosyasını el ile düzenlemeye yönelik daha basit bir alternatif olması amaçlanmıştır, ancak dosyayı doğrudan düzenlemek isterseniz, düzenleyicinin sağ üst köşesindeki **JSON bağlantısını Düzenle** ' ye tıklayabilirsiniz. 
+Visual Studio 2019 ve üzeri sürümlerde, **CMake ayarları düzenleyicisini**kullanarak yapılandırma ekleyebilir ve ayarlarını özelleştirebilirsiniz. Düzenleyicinin *Cmakesettings. JSON* dosyasını el ile düzenlemeye yönelik daha basit bir alternatif olması amaçlanmıştır, ancak dosyayı doğrudan düzenlemek isterseniz, düzenleyicinin sağ üst köşesindeki **JSON bağlantısını Düzenle** ' ye tıklayabilirsiniz.
 
 Düzenleyiciyi açmak için ana araç çubuğunda **yapılandırma** açılan düğmesine tıklayın ve **yapılandırmaları Yönet**' i seçin.
 
 ![CMake yapılandırma açılır](media/vs2019-cmake-manage-configurations.png)
 
-Artık **Ayarlar düzenleyicisini** sol taraftaki yüklü yapılandırmalara görürsünüz. 
+Artık **Ayarlar düzenleyicisini** sol taraftaki yüklü yapılandırmalara görürsünüz.
 
 ![CMake ayarları Düzenleyicisi](media/cmake-settings-editor.png)
 
-Visual Studio varsayılan olarak `x64-Debug` bir yapılandırma sağlar. Yeşil artı işaretine tıklayarak daha fazla yapılandırma ekleyebilirsiniz. Düzenleyicide gördüğünüz ayarlar hangi yapılandırmanın seçili olduğuna bağlı olarak değişiklik gösterebilir.
+Visual Studio varsayılan olarak bir `x64-Debug` yapılandırma sağlar. Yeşil artı işaretine tıklayarak daha fazla yapılandırma ekleyebilirsiniz. Düzenleyicide gördüğünüz ayarlar hangi yapılandırmanın seçili olduğuna bağlı olarak değişiklik gösterebilir.
 
 Düzenleyicide seçtiğiniz seçenekler *Cmakesettings. JSON*adlı bir dosyaya yazılır. Bu dosya, projeleri oluştururken CMake 'e geçirilen komut satırı bağımsız değişkenleri ve ortam değişkenleri sağlar. Visual Studio, *Cmakelists. txt dosyasını* hiçbir şekilde otomatik olarak değiştirir; *Cmakesettings. JSON* kullanarak derlemeyi Visual Studio ile özelleştirebilirsiniz, böylece ekibinizdeki diğer kişilerin kullandıkları araçlarla onları kullanabilmesi Için CMake proje dosyalarını dokunmadan özelleştirebilirsiniz.
 
@@ -34,12 +34,11 @@ Düzenleyicide seçtiğiniz seçenekler *Cmakesettings. JSON*adlı bir dosyaya y
 
 ### <a name="configuration-name"></a>Yapılandırma adı
 
-**Ad** ayarına karşılık gelir. Bu ad, C++ yapılandırma açılan listesinde görünür. Yollar gibi diğer özellik `${name}` değerlerini oluşturmak için makrosunu kullanabilirsiniz.
-
+**Ad** ayarına karşılık gelir. Bu ad, C++ yapılandırma açılan listesinde görünür. Yollar gibi diğer özellik değerlerini oluşturmak için `${name}` makrosunu kullanabilirsiniz.
 
 ### <a name="configuration-type"></a>Yapılandırma türü
 
-**ConfigurationType** ayarına karşılık gelir. Seçili Oluşturucu için derleme yapılandırma türünü tanımlar. Şu anda desteklenen değerler şunlardır "Debug", "MinSizeRel", "Release" ve "Relwithdeınfo". [CMAKE_BUILD_TYPE](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html)ile eşlenir.
+**ConfigurationType** ayarına karşılık gelir. Seçili Oluşturucu için derleme yapılandırma türünü tanımlar. Şu anda desteklenen değerler şunlardır "Debug", "MinSizeRel", "Release" ve "Relwithdeınfo". [CMAKE_BUILD_TYPE](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html)eşlenir.
 
 ### <a name="toolset"></a>Araç Takımı
 
@@ -47,11 +46,11 @@ Düzenleyicide seçtiğiniz seçenekler *Cmakesettings. JSON*adlı bir dosyaya y
 
 ### <a name="cmake-toolchain-file"></a>CMake araç zinciri dosyası
 
-[CMake araç zinciri dosyasının](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html)yolu. Bu yol CMake 'e "-DCMAKE_TOOLCHAIN_FILE = \<FilePath >" olarak geçirilir. Araç zinciri dosyaları, derleyicilerin ve araç zinciri yardımcı programlarının ve diğer hedef platformun ve derleyicinin ilgili bilgilerinin konumlarını belirtir. Varsayılan olarak, bu ayar belirtilmemişse Visual Studio [vcpkg toolzincirde dosyasını](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) kullanır. 
+[CMake araç zinciri dosyasının](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html)yolu. Bu yol CMake as "-DCMAKE_TOOLCHAIN_FILE = \<FilePath >" olarak geçirilir. Araç zinciri dosyaları, derleyicilerin ve araç zinciri yardımcı programlarının ve diğer hedef platformun ve derleyicinin ilgili bilgilerinin konumlarını belirtir. Varsayılan olarak, bu ayar belirtilmemişse Visual Studio [vcpkg toolzincirde dosyasını](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) kullanır.
 
 ### <a name="build-root"></a>Derleme kökü
 
-**Buildroot**öğesine karşılık gelir. [CMAKE_BINARY_DIR](https://cmake.org/cmake/help/v3.15/variable/CMAKE_BINARY_DIR.html)ile eşlenir ve CMake önbelleğinin nerede oluşturulacağını belirtir. Belirtilen klasör mevcut değilse oluşturulur.
+**Buildroot**öğesine karşılık gelir. [CMAKE_BINARY_DIR](https://cmake.org/cmake/help/v3.15/variable/CMAKE_BINARY_DIR.html)eşlenir ve CMake önbelleğinin nerede oluşturulacağını belirtir. Belirtilen klasör mevcut değilse oluşturulur.
 
 ## <a name="command-arguments"></a>Komut bağımsız değişkenleri
 
@@ -63,8 +62,7 @@ Aşağıdaki ayarlar **komut bağımsız değişkenleri** başlığı altında b
 
 ### <a name="build-command-arguments"></a>Derleme komutu bağımsız değişkenleri
 
-**Buildcommandargs**öğesine karşılık gelir. Temel yapı sistemine geçirilecek ek anahtarlar belirtir. Örneğin, dokja `-v` oluşturucusunu kullanmanın ne zaman geçirilmesi, komut satırları çıktısını almak için dokja zorlar.
-
+**Buildcommandargs**öğesine karşılık gelir. Temel yapı sistemine geçirilecek ek anahtarlar belirtir. Örneğin, Dokja oluşturucusunu kullanırken `-v` geçirmek, komut satırları çıktısını almak için Dokja zorlar.
 
 ### <a name="ctest-command-arguments"></a>CTest komut bağımsız değişkenleri
 
@@ -76,11 +74,11 @@ Uzak derlemeleri kullanan Linux gibi yapılandırmalar için aşağıdaki ayarla
 
 ### <a name="rsync-command-arguments"></a>rsync komut bağımsız değişkenleri
 
-Hızlı ve çok yönlü bir dosya kopyalama aracı olan [rsync](https://download.samba.org/pub/rsync/rsync.html)'e geçirilen ek komut satırı seçenekleri. 
+Hızlı ve çok yönlü bir dosya kopyalama aracı olan [rsync](https://download.samba.org/pub/rsync/rsync.html)'e geçirilen ek komut satırı seçenekleri.
 
 ## <a name="cmake-variables-and-cache"></a>CMake değişkenleri ve önbelleği
 
-Bu ayarlar CMake değişkenlerini ayarlamanıza ve bunları *Cmakesettings. JSON*içinde kaydetmenize olanak sağlar. Derleme zamanında CMake 'e geçirilir ve *Cmakelists. txt* dosyasında hangi değerlerin olduğunu geçersiz kılar. Bu bölümü, düzenlenecek tüm CMake değişkenlerinin listesini görüntülemek için Cmakeguı 'yi kullandığınız şekilde kullanabilirsiniz. Gelişmiş değişkenler de dahil olmak üzere, düzenleme için kullanılabilen tüm CMake değişkenlerinin listesini görüntülemek için **önbelleği Kaydet ve oluştur** düğmesine tıklayın (Cmakeguı başına). Listeyi değişken adına göre filtreleyebilirsiniz. 
+Bu ayarlar CMake değişkenlerini ayarlamanıza ve bunları *Cmakesettings. JSON*içinde kaydetmenize olanak sağlar. Derleme zamanında CMake 'e geçirilir ve *Cmakelists. txt* dosyasında hangi değerlerin olduğunu geçersiz kılar. Bu bölümü, düzenlenecek tüm CMake değişkenlerinin listesini görüntülemek için Cmakeguı 'yi kullandığınız şekilde kullanabilirsiniz. Gelişmiş değişkenler de dahil olmak üzere, düzenleme için kullanılabilen tüm CMake değişkenlerinin listesini görüntülemek için **önbelleği Kaydet ve oluştur** düğmesine tıklayın (Cmakeguı başına). Listeyi değişken adına göre filtreleyebilirsiniz.
 
 **Değişkenlere**karşılık gelir. **-D** *_ad_=_değeri_* CMake olarak geçirilen bir ad-değer çifti değişkeni içerir. CMake proje derleme yönergelerinizi herhangi bir değişkenin eklenmesini doğrudan CMake önbellek dosyasına belirtiyorsanız, bunun yerine bunları buraya eklemenizi öneririz.
 
@@ -88,7 +86,7 @@ Bu ayarlar CMake değişkenlerini ayarlamanıza ve bunları *Cmakesettings. JSON
 
 ### <a name="cmake-generator"></a>CMake Oluşturucusu
 
-**Oluşturucuya**karşılık gelir. CMake **-G** anahtarına eşlenir ve kullanılacak [CMake oluşturucuyu](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) belirtir. Bu özellik `${generator}`, diğer özellik değerlerini oluştururken makro olarak da kullanılabilir. Visual Studio şu anda aşağıdaki CMake Kurucularını desteklemektedir:
+**Oluşturucuya**karşılık gelir. CMake **-G** anahtarına eşlenir ve kullanılacak [CMake oluşturucuyu](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) belirtir. Bu özellik, diğer özellik değerlerini oluştururken `${generator}`makro olarak da kullanılabilir. Visual Studio şu anda aşağıdaki CMake Kurucularını desteklemektedir:
 
   - Ninja
   - "Unix makefiles"
@@ -110,7 +108,7 @@ IntelliSense altyapısı tarafından kullanılan IntelliSense modu. Hiçbir mod 
 
 ### <a name="install-directory"></a>Dizin yüklemesi
 
-CMake 'in hedefleri yüklediği dizin. [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html)ile eşlenir. 
+CMake 'in hedefleri yüklediği dizin. [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html)eşlenir.
 
 ### <a name="cmake-executable"></a>CMake yürütülebiliri
 
@@ -124,15 +122,15 @@ Kök *Cmakelists. txt* dosyasını içeren uzak makinedeki dizin.
 
 ### <a name="remote-install-root"></a>Uzaktan Install root
 
-CMake 'in hedefleri yüklediği uzak makinedeki dizin. [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html)ile eşlenir. 
+CMake 'in hedefleri yüklediği uzak makinedeki dizin. [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html)eşlenir.
 
 ### <a name="remote-copy-sources"></a>Uzak kopya kaynakları
 
-Kaynak dosyaların uzak makineye kopyalanıp kopyalanmayacağını belirtir ve rsync veya SFTP kullanıp kullanmayacağınızı belirtmenize izin verir. 
+Kaynak dosyaların uzak makineye kopyalanıp kopyalanmayacağını belirtir ve rsync veya SFTP kullanıp kullanmayacağınızı belirtmenize izin verir.
 
 ## <a name="directly-edit-cmakesettingsjson"></a>CMakeSettings. JSON öğesini doğrudan Düzenle
 
-Ayrıca, özel yapılandırma oluşturmak için *Cmakesettings. JSON* öğesini doğrudan düzenleyebilirsiniz. **Ayarlar Düzenleyicisi** 'nin sağ üst köşesinde dosyayı düzenleme için açan bir **JSON Düzenle** düğmesi vardır. 
+Ayrıca, özel yapılandırma oluşturmak için *Cmakesettings. JSON* öğesini doğrudan düzenleyebilirsiniz. **Ayarlar Düzenleyicisi** 'nin sağ üst köşesinde dosyayı düzenleme için açan bir **JSON Düzenle** düğmesi vardır.
 
 Aşağıdaki örnekte, bir başlangıç noktası olarak kullanabileceğiniz örnek bir yapılandırma gösterilmektedir:
 
@@ -170,13 +168,13 @@ Visual Studio 2017, CMake. exe ' nin belirli bir proje için CMake önbelleğini
 
    ![CMake önceden tanımlı yapılandırma](media/cmake-configurations.png)
 
-İlk kez bir yapılandırma seçtiğinizde, Visual Studio projenizin kök klasöründe bir *Cmakesettings. JSON* dosyası oluşturur. Bu dosya, CMake önbellek dosyasını yeniden oluşturmak için kullanılır, örneğin bir **Temizleme** işleminden sonra. 
+İlk kez bir yapılandırma seçtiğinizde, Visual Studio projenizin kök klasöründe bir *Cmakesettings. JSON* dosyası oluşturur. Bu dosya, CMake önbellek dosyasını yeniden oluşturmak için kullanılır, örneğin bir **Temizleme** işleminden sonra.
 
-Ek bir yapılandırma eklemek için *Cmakesettings. JSON* öğesine sağ tıklayın ve **yapılandırma Ekle**' yi seçin. 
+Ek bir yapılandırma eklemek için *Cmakesettings. JSON* öğesine sağ tıklayın ve **yapılandırma Ekle**' yi seçin.
 
    ![CMake yapılandırma Ekle](media/cmake-add-configuration.png "CMake yapılandırma Ekle")
 
-Ayrıca, **CMake ayarları düzenleyicisini**kullanarak dosyayı düzenleyebilirsiniz. **Çözüm Gezgini** Içinde *cmakesettings. JSON* öğesine sağ tıklayın ve **CMake ayarlarını Düzenle**' yi seçin. Ya da düzenleyici penceresinin en üstündeki yapılandırma açılır listesinden **yapılandırmaları Yönet** ' i seçin. 
+Ayrıca, **CMake ayarları düzenleyicisini**kullanarak dosyayı düzenleyebilirsiniz. **Çözüm Gezgini** Içinde *cmakesettings. JSON* öğesine sağ tıklayın ve **CMake ayarlarını Düzenle**' yi seçin. Ya da düzenleyici penceresinin en üstündeki yapılandırma açılır listesinden **yapılandırmaları Yönet** ' i seçin.
 
 Ayrıca, özel yapılandırma oluşturmak için *Cmakesettings. JSON* öğesini doğrudan düzenleyebilirsiniz. Aşağıdaki örnekte, bir başlangıç noktası olarak kullanabileceğiniz örnek bir yapılandırma gösterilmektedir:
 

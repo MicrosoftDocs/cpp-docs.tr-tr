@@ -12,12 +12,12 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: 9e8a671a7fe67150e1b867c62231173429f7b6ed
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 60399994cd5fc2f39efeadc6ffcf917138aada37
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415938"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078535"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: komut satırında 64 bit, x64 içinde barındırılan MSVC araç takımını etkinleştirme
 
@@ -25,7 +25,7 @@ Visual Studio, C++ 32 bit, 64 BIT veya ARM tabanlı Windows işletim sistemlerin
 
 ## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>64 bitlik bir barındırılan Geliştirici komut istemi kısayolu kullanın
 
-Windows 10 ' da bu komut istemlerini erişmek için, **Başlat** menüsünde, Visual Studio sürümünüz için klasörü açın, örneğin **Visual Studio 2019**ve ardından x64 yerel veya çapraz araç Geliştirici komut istemlerinin birini seçin. 
+Windows 10 ' da bu komut istemlerini erişmek için, **Başlat** menüsünde, Visual Studio sürümünüz için klasörü açın, örneğin **Visual Studio 2019**ve ardından x64 yerel veya çapraz araç Geliştirici komut istemlerinin birini seçin.
 
 ![x64 Yerel Araçları Komut İstemi](media/x64-native-tools-command-prompt.png "Başlangıç menüsünde x64 yerel araçları")
 

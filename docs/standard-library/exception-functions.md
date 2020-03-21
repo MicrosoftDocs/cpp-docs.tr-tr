@@ -24,16 +24,16 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 34a34c48be8bb0e319a7d0eebeccba805cafbc1f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: ede3c828437aab1759c6711fc40511c69646a133
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419128"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076576"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum&gt; işlevleri
 
-## <a name="current_exception"></a>current_exception
+## <a name="current_exception"></a><a name="current_exception"></a>current_exception
 
 Geçerli özel durum için bir akıllı işaretçi alır.
 
@@ -55,7 +55,7 @@ Bir catch bloğunda `current_exception` işlevini çağırın. Bir özel durum u
 
 `current_exception` işleve art arda yapılan çağrılar, geçerli özel durumun farklı kopyalarına başvuran `exception_ptr` nesneleri döndürür. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.
 
-## <a name="make_exception_ptr"></a>make_exception_ptr
+## <a name="make_exception_ptr"></a><a name="make_exception_ptr"></a>make_exception_ptr
 
 Bir özel durumun kopyasını tutan [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nesnesi oluşturur.
 
@@ -79,7 +79,7 @@ Kopyalanacak özel duruma sahip sınıf. Genellikle, bir [özel durum sınıfı]
 
 Uygulama genellikle `make_exception_ptr` işlevi gerektirmez ve kullanımını önermiyoruz.
 
-## <a name="rethrow_exception"></a>rethrow_exception
+## <a name="rethrow_exception"></a><a name="rethrow_exception"></a>rethrow_exception
 
 Bir parametre olarak geçirilen bir özel durum oluşturur.
 
@@ -96,7 +96,7 @@ Yeniden oluşturulması için bir özel durum yakalandı. *P* null [exception_pt
 
 Yakalanan bir özel durumu bir `exception_ptr` nesnesinde depoladıktan sonra, birincil iş parçacığı nesneyi işleyebilir. Birincil iş parçacığındaki bağımsız değişkeni olarak `exception_ptr` nesnesiyle birlikte `rethrow_exception` işlevini çağırın. `rethrow_exception` işlevi, özel durumu `exception_ptr` nesnesinden ayıklar ve ardından birincil iş parçacığı bağlamında özel durumu oluşturur.
 
-## <a name="get_terminate"></a>get_terminate
+## <a name="get_terminate"></a><a name="get_terminate"></a>get_terminate
 
 Geçerli `terminate_handler` işlevini edinir.
 
@@ -104,7 +104,7 @@ Geçerli `terminate_handler` işlevini edinir.
 terminate_handler get_terminate();
 ```
 
-## <a name="set_terminate"></a>set_terminate
+## <a name="set_terminate"></a><a name="set_terminate"></a>set_terminate
 
 Programın sonlandırılması sırasında çağrılabilecek yeni bir `terminate_handler` oluşturur.
 
@@ -153,7 +153,7 @@ int main()
 }
 ```
 
-## <a name="get_unexpected"></a>get_unexpected
+## <a name="get_unexpected"></a><a name="get_unexpected"></a>get_unexpected
 
 Geçerli `unexpected_handler` işlevini edinir.
 
@@ -161,10 +161,10 @@ Geçerli `unexpected_handler` işlevini edinir.
 unexpected_handler get_unexpected();
 ```
 
-## <a name="rethrow_if_nested"></a>rethrow_if_nested
+## <a name="rethrow_if_nested"></a><a name="rethrow_if_nested"></a>rethrow_if_nested
 
 ```cpp
-template <class E> 
+template <class E>
     void rethrow_if_nested(const E& e);
 ```
 
@@ -172,7 +172,7 @@ template <class E>
 
 Polimorfik bir sınıf türü değilse veya `nested_exception` erişilemez ya da belirsiz ise, hiçbir etkisi olmaz. Aksi takdirde, dinamik bir dönüştürme gerçekleştirir.
 
-## <a name="set_unexpected"></a>set_unexpected
+## <a name="set_unexpected"></a><a name="set_unexpected"></a>set_unexpected
 
 Beklenmeyen bir özel durumla karşılaşıldığında yeni bir `unexpected_handler` oluşturur.
 
@@ -220,7 +220,7 @@ int main()
 }
 ```
 
-## <a name="terminate"></a>sonlandırmayı
+## <a name="terminate"></a><a name="terminate"></a>sonlandırmayı
 
 Bir sonlandırıcı işleyici çağırır.
 
@@ -238,7 +238,7 @@ Bir sonlandırma işleyicisi çağırana geri dönemeyebilir. Program başlangı
 
 `terminate`kullanımına ilişkin bir örnek için bkz. [set_unexpected](../standard-library/exception-functions.md#set_unexpected) .
 
-## <a name="throw_with_nested"></a>throw_with_nested
+## <a name="throw_with_nested"></a><a name="throw_with_nested"></a>throw_with_nested
 
 ```cpp
 template <class T> [[noreturn]]
@@ -249,7 +249,7 @@ template <class T> [[noreturn]]
 
 İç içe özel durumlarla özel durum oluşturur.
 
-## <a name="uncaught_exception"></a>uncaught_exception
+## <a name="uncaught_exception"></a><a name="uncaught_exception"></a>uncaught_exception
 
 Yalnızca oluşturulan bir özel durum şu anda işleniyorsa **true** değerini döndürür.
 
@@ -314,7 +314,7 @@ In Test::~Test("outside try block")
         std::uncaught_exception( ) = 0
 ```
 
-## <a name="unexpected"></a>bek
+## <a name="unexpected"></a><a name="unexpected"></a>bek
 
 Beklenmeyen işleyiciyi çağırır.
 

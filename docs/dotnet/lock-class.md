@@ -14,16 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-ms.openlocfilehash: 43418da36aa2d87608a9d672e4345d24011be0b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2ae1be31233e55aa34d6f3046d90fb2127348c0
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153446"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080037"
 ---
 # <a name="lock-class"></a>lock Sınıfı
 
-Bu sınıf, erişim, çeşitli iş parçacıklarından nesneyi eşitlemek için bir kilit almayı otomatikleştirir.  Oluşturulan, kilit alır ve yayınlar kaldırıldığında kilidi.
+Bu sınıf, birkaç iş parçacığından bir nesneye erişimi eşitlemek için bir kilit almayı otomatikleştirir.  Oluşturulduğunda kilidi devralır ve yok edildiğinde kilidi bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,47 +33,45 @@ ref class lock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`lock` yalnızca CLR nesneler için kullanılabilir ve yalnızca CLR kod içinde kullanılabilir.
+`lock` yalnızca CLR nesnelerinde kullanılabilir ve yalnızca CLR kodunda kullanılabilir.
 
-Dahili olarak, kilit sınıfı kullanır <xref:System.Threading.Monitor> erişimi eşitlemek için. Daha fazla bilgi için başvurulan makalesine bakın.
+Dahili olarak, Lock sınıfı erişimi eşleştirmek için <xref:System.Threading.Monitor> kullanır. Daha fazla bilgi için, başvurulan makaleye bakın.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel oluşturucular
+### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |---------|-----------|
-|[lock::lock](#lock)|Oluşturur bir `lock` nesne, isteğe bağlı olarak her zaman, belirli bir süre süreyi veya hiç kilit bekleniyor.|
-|[lock::~lock](#tilde-lock)|Destructs bir `lock` nesne.|
+|[lock::lock](#lock)|İsteğe bağlı olarak, belirli bir süre boyunca kilit almayı bekleyen veya hiç değil, bir `lock` nesnesi oluşturur.|
+|[lock::~lock](#tilde-lock)|`lock` nesne yapılarını kaldırır.|
 
-### <a name="public-methods"></a>Genel yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |---------|-----------|
-|[lock::acquire](#acquire)|İsteğe bağlı olarak her zaman, belirli bir süre süreyi veya hiç kilit için bekleyen bir nesne üzerinde bir kilit alır.|
-|[lock::is_locked](#is-locked)|Kilit tutulan olup olmadığını gösterir.|
-|[lock::release](#release)|Bir kilidi serbest bırakır.|
-|[lock::try_acquire](#try-acquire)|Belirtilen bir zaman miktarı için bekleyen ve döndüren bir nesne üzerinde bir kilit alması bir `bool` bir özel durum oluşturmaktansa edinme başarısını raporlamak için.|
+|[lock::acquire](#acquire)|Bir nesne üzerinde bir kilit alır, isteğe bağlı olarak, belirli bir süre boyunca kilidi sonsuza kadar almayı bekler veya hiç değil.|
+|[lock::is_locked](#is-locked)|Bir kilidin tutulmakta olup olmadığını gösterir.|
+|[lock::release](#release)|Bir kilit yayınlar.|
+|[lock::try_acquire](#try-acquire)|Bir nesne üzerinde bir kilit elde edin, belirli bir süre bekler ve bir özel durum oluşturmak yerine alma işleminin başarısını raporlamak için bir `bool` döndürür.|
 
-### <a name="public-operators"></a>Genel işleçler
+### <a name="public-operators"></a>Ortak işleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |---------|-----------|
-|[Lock::operator&nbsp;bool](#operator-bool)|Kullanarak işleci `lock` koşullu ifadede.|
+|[Lock:: operator&nbsp;bool](#operator-bool)|Koşullu ifadede `lock` kullanmak için işleç.|
 |[lock::operator==](#operator-equality)|Eşitlik işleci.|
 |[lock::operator!=](#operator-inequality)|Eşitsizlik işleci.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası** \<msclr\lock.h >
+**Üstbilgi dosyası** \<msclr\lock.h >
 
-**Namespace** msclr
+**Ad alanı** msclr
 
+## <a name="locklock"></a><a name="lock"></a>Lock:: Lock
 
-
-## <a name="lock"></a>Lock::LOCK
-
-Oluşturur bir `lock` nesne, isteğe bağlı olarak her zaman, belirli bir süre süreyi veya hiç kilit bekleniyor.
+İsteğe bağlı olarak, belirli bir süre boyunca kilit almayı bekleyen veya hiç değil, bir `lock` nesnesi oluşturur.
 
 ```cpp
 template<class T> lock(
@@ -95,29 +93,29 @@ template<class T> lock(
 
 ### <a name="parameters"></a>Parametreler
 
-*n_esne*<br/>
+*_object*<br/>
 Kilitlenecek nesne.
 
-*_Zaman aşımı*<br/>
-Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeSpan>.
+*_timeout*<br/>
+Milisaniye veya <xref:System.TimeSpan>olarak zaman aşımı değeri.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Oluşturur <xref:System.ApplicationException> oluşmuyorsa zaman aşımından önce kilit edinme.
+Kilit alma zaman aşımından önce gerçekleşmiyorsa <xref:System.ApplicationException> oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucunun ilk üç formlar üzerinde kilit çalıştığınızda `_object` belirtilen zaman aşımı süresi içinde (veya <xref:System.Threading.Timeout.Infinite> hiçbiri belirtilmezse).
+Oluşturucunun ilk üç formu, belirtilen zaman aşımı süresi içinde `_object` bir kilit almaya çalışır (veya belirtilmemişse <xref:System.Threading.Timeout.Infinite>).
 
-Dördüncü Oluşturucu biçiminde üzerinde kilit değil `_object`. `lock_later` bir üyesidir [lock_when numaralandırması](../dotnet/lock-when-enum.md). Kullanım [lock::acquire](../dotnet/lock-acquire.md) veya [lock::try_acquire](../dotnet/lock-try-acquire.md) kilit bu durumda.
+Oluşturucunun dördüncü biçimi `_object`bir kilit alamaz. `lock_later`, [lock_when numaralandırmasının](../dotnet/lock-when-enum.md)bir üyesidir. Bu durumda kilidi almak için [Lock:: Acquire](../dotnet/lock-acquire.md) veya [lock:: try_acquire](../dotnet/lock-try-acquire.md) kullanın.
 
-Kilit, yok edici çağrıldığında otomatik olarak yayımlanacaktır.
+Yok edicisi çağrıldığında kilit otomatik olarak serbest bırakılır.
 
-`_object` olamaz <xref:System.Threading.ReaderWriterLock>.  Bu durumda, bir derleyici hatasına neden olur.
+`_object` <xref:System.Threading.ReaderWriterLock>olamaz.  Bu ise, bir derleyici hatası ortaya kalır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır. Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığı hala mevcut olup olmadığını görmek için düzenli aralıklarla denetleyin için aynı sınıf örneği üzerinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıklarının görevlerini tamamlayıncaya kadar çıkmak için bekler.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır. Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için düzenli aralıklarla kontrol etmek üzere sınıfının aynı örneğinde bir kilit kullanır. Ana uygulama daha sonra tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış olarak bekler.
 
 ```cpp
 // msl_lock_lock.cpp
@@ -205,9 +203,9 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="tilde-lock"></a>Kilit:: ~ lock
+## <a name="locklock"></a><a name="tilde-lock"></a>Lock:: ~ Lock
 
-Destructs bir `lock` nesne.
+`lock` nesne yapılarını kaldırır.
 
 ```cpp
 ~lock();
@@ -215,11 +213,11 @@ Destructs bir `lock` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çağrıları [lock::release](../dotnet/lock-release.md).
+Yıkıcı [Lock:: Release](../dotnet/lock-release.md)öğesini çağırır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır.  Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığı hala mevcut olup olmadığını görmek için düzenli aralıklarla denetleyin için aynı sınıf örneği üzerinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıklarının görevlerini tamamlayıncaya kadar çıkmak için bekler.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır.  Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır.  Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için düzenli aralıklarla kontrol etmek üzere sınıfının aynı örneğinde bir kilit kullanır. Ana uygulama daha sonra tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış olarak bekler.
 
 ```cpp
 // msl_lock_dtor.cpp
@@ -307,9 +305,9 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="acquire"></a>Lock::Acquire
+## <a name="lockacquire"></a><a name="acquire"></a>Lock:: Acquire
 
-İsteğe bağlı olarak her zaman, belirli bir süre süreyi veya hiç kilit için bekleyen bir nesne üzerinde bir kilit alır.
+Bir nesne üzerinde bir kilit alır, isteğe bağlı olarak, belirli bir süre boyunca kilidi sonsuza kadar almayı bekler veya hiç değil.
 
 ```cpp
 void acquire();
@@ -323,22 +321,22 @@ void acquire(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Zaman aşımı*<br/>
-Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeSpan>.
+*_timeout*<br/>
+Milisaniye cinsinden veya <xref:System.TimeSpan>olarak zaman aşımı değeri.
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-Oluşturur <xref:System.ApplicationException> oluşmuyorsa zaman aşımından önce kilit edinme.
+Kilit alma zaman aşımından önce gerçekleşmiyorsa <xref:System.ApplicationException> oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir zaman aşımı değeri belirtilirse, bu değilse, varsayılan zaman aşımı olan <xref:System.Threading.Timeout.Infinite>.
+Bir zaman aşımı değeri sağlanmazsa, varsayılan zaman aşımı <xref:System.Threading.Timeout.Infinite>.
 
-Bu işlev, bir kilidi zaten alınmış, hiçbir şey yapmaz.
+Bir kilit zaten alınırsa, bu işlev hiçbir şey yapmaz.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığı hala mevcut olup olmadığını görmek için düzenli aralıklarla denetleyin için aynı sınıf örneği üzerinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıklarının görevlerini tamamlayıncaya kadar çıkmak için bekler.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır.  Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için düzenli aralıklarla kontrol etmek üzere sınıfının aynı örneğinde bir kilit kullanır. Ana uygulama daha sonra tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış olarak bekler.
 
 ```cpp
 // msl_lock_acquire.cpp
@@ -426,9 +424,9 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="is-locked"></a>Lock::is_locked
+## <a name="lockis_locked"></a><a name="is-locked"></a>Kilit:: is_locked
 
-Kilit tutulan olup olmadığını gösterir.
+Bir kilidin tutulmakta olup olmadığını gösterir.
 
 ```cpp
 bool is_locked();
@@ -436,11 +434,11 @@ bool is_locked();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-`true` bir kilidi açık tutulduğu, `false` Aksi takdirde.
+kilit tutuluyorsa `true`, aksi takdirde `false`.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır.  Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır.  Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için bir kilit kullanır ve tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış ' ı bekler.
 
 ```cpp
 // msl_lock_is_locked.cpp
@@ -529,9 +527,9 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="operator-bool"></a>Lock::operator bool
+## <a name="lockoperator-bool"></a><a name="operator-bool"></a>Lock:: operator bool
 
-Kullanarak işleci `lock` koşullu ifadede.
+Koşullu ifadede `lock` kullanmak için işleç.
 
 ```cpp
 operator bool();
@@ -539,15 +537,15 @@ operator bool();
 
 ### <a name="return-value"></a>Dönüş değeri
 
-`true` bir kilidi açık tutulduğu, `false` Aksi takdirde.
+kilit tutuluyorsa `true`, aksi takdirde `false`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç gerçekten dönüştürür `_detail_class::_safe_bool` daha güvenli olan `bool` bir integral türe dönüştürülemediğinden.
+Bu işleç, bir integral türüne dönüştürülemediğinden, gerçekten `bool` daha güvenli olan `_detail_class::_safe_bool` dönüştürür.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığı hala mevcut olup olmadığını görmek için düzenli aralıklarla denetleyin için aynı sınıf örneği üzerinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıklarının görevlerini tamamlayıncaya kadar çıkmak için bekler.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır.  Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için düzenli aralıklarla kontrol etmek üzere sınıfının aynı örneğinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış yapmak için bekler.
 
 ```cpp
 // msl_lock_op_bool.cpp
@@ -636,9 +634,9 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="release"></a>Lock::Release
+## <a name="lockrelease"></a><a name="release"></a>Lock:: Release
 
-Bir kilidi serbest bırakır.
+Bir kilit yayınlar.
 
 ```cpp
 void release();
@@ -646,13 +644,13 @@ void release();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kilit tutulan, `release` hiçbir şey yapmaz.
+Kilit tutulmadığında `release` hiçbir şey yapmaz.
 
-Bu işlev açıkça çağırmanız gerekmez. Olduğunda bir `lock` nesne, yıkıcı çağrıları kapsam dışına gider `release`.
+Bu işlevi açıkça çağırmanız gerekmez. `lock` nesne kapsam dışına geçtiğinde, yıkıcısı `release`çağırır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır. Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığı hala mevcut olup olmadığını görmek için düzenli aralıklarla denetleyin için aynı sınıf örneği üzerinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıklarının görevlerini tamamlayıncaya kadar çıkmak için bekler.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır. Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için düzenli aralıklarla kontrol etmek üzere sınıfının aynı örneğinde bir kilit kullanır. Ana uygulama daha sonra tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış olarak bekler.
 
 ```cpp
 // msl_lock_release.cpp
@@ -740,9 +738,9 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="try-acquire"></a>Lock::try_acquire
+## <a name="locktry_acquire"></a><a name="try-acquire"></a>Kilit:: try_acquire
 
-Belirtilen bir zaman miktarı için bekleyen ve döndüren bir nesne üzerinde bir kilit alması bir `bool` bir özel durum oluşturmaktansa edinme başarısını raporlamak için.
+Bir nesne üzerinde bir kilit elde edin, belirli bir süre bekler ve bir özel durum oluşturmak yerine alma işleminin başarısını raporlamak için bir `bool` döndürür.
 
 ```cpp
 bool try_acquire(
@@ -755,20 +753,20 @@ bool try_acquire(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Zaman aşımı*<br/>
-Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeSpan>.
+*_timeout*<br/>
+Milisaniye cinsinden veya <xref:System.TimeSpan>olarak zaman aşımı değeri.
 
 ### <a name="return-value"></a>Dönüş değeri
 
-`true` Kilit alındıysa `false` Aksi takdirde.
+kilit alınırsa `true`, aksi takdirde `false`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bir kilidi zaten alınmış, hiçbir şey yapmaz.
+Bir kilit zaten alınırsa, bu işlev hiçbir şey yapmaz.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, çeşitli iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır. Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olduğundan emin olmak için kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığı hala mevcut olup olmadığını görmek için düzenli aralıklarla denetleyin için aynı sınıf örneği üzerinde bir kilit kullanır. Ana uygulama, tüm çalışan iş parçacıklarının görevlerini tamamlayıncaya kadar çıkmak için bekler.
+Bu örnek, birkaç iş parçacığı üzerinde bir sınıfın tek bir örneğini kullanır. Sınıfı, iç verilerine erişimin her iş parçacığı için tutarlı olduğundan emin olmak için kendi üzerinde bir kilit kullanır. Ana uygulama iş parçacığı, herhangi bir çalışan iş parçacığının hala mevcut olup olmadığını denetlemek için düzenli aralıklarla kontrol etmek üzere sınıfının aynı örneğinde bir kilit kullanır. Ana uygulama daha sonra tüm çalışan iş parçacıkları görevlerini tamamlayana kadar çıkış olarak bekler.
 
 ```cpp
 // msl_lock_try_acquire.cpp
@@ -856,7 +854,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="operator-equality"></a>Lock::operator ==
+## <a name="lockoperator"></a><a name="operator-equality"></a>Lock:: operator = =
 
 Eşitlik işleci.
 
@@ -868,12 +866,12 @@ template<class T> bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Eşitlik için karşılaştırma yapılacak nesne.
+*şı*<br/>
+Eşitlik için Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş değeri
 
-Döndürür `true` varsa `t` kilit ait nesne aynı `false` Aksi takdirde.
+`t` kilidin nesnesiyle aynıysa `true` döndürür `false` Aksi takdirde.
 
 ### <a name="example"></a>Örnek
 
@@ -899,7 +897,7 @@ int main () {
 Equal!
 ```
 
-## <a name="operator-inequality"></a>Lock::operator! =
+## <a name="lockoperator"></a><a name="operator-inequality"></a>Lock:: operator! =
 
 Eşitsizlik işleci.
 
@@ -911,12 +909,12 @@ template<class T> bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Eşitsizlik için karşılaştırılacak nesne.
+*şı*<br/>
+Eşitsizlik için Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş değeri
 
-Döndürür `true` varsa `t` farklı kilit 's nesneden `false` Aksi takdirde.
+Kilit nesnesinden `t` farklıysa `true` döndürür `false` Aksi takdirde.
 
 ### <a name="example"></a>Örnek
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 3572bd0d0b0e8149f527c1c43eca5870783b13a8
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 4fa0990de25b624b670ababfd8e66f340e2fb8f3
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965253"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079972"
 ---
 # <a name="pack-pragma"></a>pack pragması
 
@@ -35,14 +35,14 @@ Seçim Paketleme hizalaması için geçerli bayt değerini görüntüler. Değer
 Seçim İç derleyici yığınında geçerli paketleme hizalama değerini iter ve geçerli paketleme hizalama değerini *n*olarak ayarlar. *N* belirtilmezse, geçerli paketleme hizalama değeri gönderilir.
 
 **pop**\
-Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *Hayır* , **pop**ile belirtilmediyse, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilirse, örneğin `#pragma pack(pop, 16)`, *n* yeni paketleme hizalama değeri haline gelir. Bir *tanımlayıcı*kullanarak (örneğin, `#pragma pack(pop, r1)`) seçerseniz, yığındaki tüm kayıtlar, *tanımlayıcı* bulunana kadar doldurulur. Bu kayıt oluşur ve yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri yeni paketleme hizalama değeridir. Yığındaki herhangi bir kayıtta bulunmayan bir *tanımlayıcıyı* kullanarak öğesini seçerseniz, **pop** yok sayılır. 
+Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *Hayır* , **pop**ile belirtilmediyse, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilirse, örneğin `#pragma pack(pop, 16)`, *n* yeni paketleme hizalama değeri haline gelir. Bir *tanımlayıcı*kullanarak (örneğin, `#pragma pack(pop, r1)`) seçerseniz, yığındaki tüm kayıtlar, *tanımlayıcı* bulunana kadar doldurulur. Bu kayıt oluşur ve yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri yeni paketleme hizalama değeridir. Yığındaki herhangi bir kayıtta bulunmayan bir *tanımlayıcıyı* kullanarak öğesini seçerseniz, **pop** yok sayılır.
 
 `#pragma pack (pop, r1, 2)` deyimin `#pragma pack (pop, r1)`, ardından `#pragma pack(2)`ile eşdeğerdir.
 
 *tanımlayıcı*\
 Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. **Pop**ile kullanıldığında, kayıt *kaldırıldığında, pop* 'lar iç yığının dışına çıkar. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
 
-*n* \
+*n*\
 Seçim Paketleme için kullanılacak değeri bayt cinsinden belirtir. Modül için [/ZP](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ayarlanmamışsa, *n* için varsayılan değer 8 ' dir. Geçerli değerler 1, 2, 4, 8 ve 16 ' dır. Bir üyenin hizalaması, *n*' nin katı olan veya üyenin boyutunun (hangisi daha küçükse) bir sınırından fazla.
 
 ## <a name="remarks"></a>Açıklamalar

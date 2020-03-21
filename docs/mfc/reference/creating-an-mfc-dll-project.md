@@ -9,19 +9,19 @@ helpviewer_keywords:
 - projects [MFC], creating
 - DLLs [MFC], creating
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
-ms.openlocfilehash: 649a47abea23aedb9aa97bb4923e7a800348e27e
-ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
+ms.openlocfilehash: 6a1718e1f347be46b2f228479d3dbd30027b3160
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108473"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077440"
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL Projesi Oluşturma
 
 MFC DLL, birden çok uygulama tarafından aynı anda kullanılabilecek bir paylaşılan işlev kitaplığı olarak davranan bir ikili dosyadır. MFC DLL projesi oluşturmanın en kolay yolu MFC DLL Sihirbazı 'Nı kullanmaktır.
 
 > [!NOTE]
->  IDE 'deki özelliklerin görünümü, etkin ayarlarınıza veya sürümüne bağlı olabilir ve yardım 'da açıklananlardan farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
+>  IDE 'deki özelliklerin görünümü, etkin ayarlarınıza veya sürümüne bağlı olabilir ve yardım 'da açıklananlardan farklı olabilir. Ayarlarınızı değiştirmek için **Araçlar** menüsünden **Içeri ve dışarı aktarma ayarları** ' nı seçin. Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 ### <a name="to-create-an-mfc-dll-project-using-the-mfc-dll-wizard"></a>MFC DLL Sihirbazı 'Nı kullanarak bir MFC DLL projesi oluşturmak için
 
@@ -41,4 +41,3 @@ Projeniz oluşturulduktan sonra, **Çözüm Gezgini**oluşturulan dosyaları gö
 [C++Visual Studio 'da proje türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)
-

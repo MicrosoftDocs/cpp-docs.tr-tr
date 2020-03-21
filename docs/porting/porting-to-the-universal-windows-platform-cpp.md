@@ -2,12 +2,12 @@
 title: Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 ms.date: 10/23/2019
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-ms.openlocfilehash: 9314cb564e792a7d4949d422a3942e9d46a23cb2
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 0013d85ad8c27c06560c9f9e541691f4335252d1
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627201"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076844"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 
@@ -21,9 +21,9 @@ Bu konu, kodu UWP 'ye taşıma için aşağıdaki yordamları içerir.
 
 - [Windows 8.1 çalışma zamanı bileşenini UWP 'e taşıma](#BK_81Component)
 
-Klasik bir Masaüstü Win32 DLL 'SI varsa ve bunu bir UWP uygulamasından çağırmak istiyorsanız, bunu da yapabilirsiniz. Bu tür yordamları kullanarak, mevcut bir klasik Windows Masaüstü C++ uygulaması veya platformlar arası standart C++ kodunuz için UWP Kullanıcı arabirimi katmanı oluşturabilirsiniz. Bkz. [nasıl yapılır: mevcut C++ kodu bir Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md). 
+Klasik bir Masaüstü Win32 DLL 'SI varsa ve bunu bir UWP uygulamasından çağırmak istiyorsanız, bunu da yapabilirsiniz. Bu tür yordamları kullanarak, mevcut bir klasik Windows Masaüstü C++ uygulaması veya platformlar arası standart C++ kodunuz için UWP Kullanıcı arabirimi katmanı oluşturabilirsiniz. Bkz. [nasıl yapılır: mevcut C++ kodu bir Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
 
-## <a name="BK_81StoreApp"></a>Windows 8.1 Mağazası uygulamasını UWP 'e taşıma
+## <a name="porting-a-windows-81-store-app-to-the-uwp"></a><a name="BK_81StoreApp"></a>Windows 8.1 Mağazası uygulamasını UWP 'e taşıma
 
 Bir Windows 8.1 mağazası uygulamanız varsa, bu yordamı kullanarak UWP üzerinde ve Windows 10 çalıştıran herhangi bir cihazda çalışır hale getirebilirsiniz.  İlk olarak, derleyici ve kitaplıklardaki değişikliklerden kaynaklanan sorunları ortadan kaldırmak için Visual Studio 2019 ile projeyi bir Windows 8.1 projesi olarak derlemek iyi bir fikirdir. Bunu yaptıktan sonra, bunu bir Windows 10 UWP projesine dönüştürmenin iki yolu vardır. En kolay yol (aşağıdaki yordamda açıklandığı gibi), bir Evrensel Windows projesi oluşturmak ve var olan kodunuzu buna kopyalamak için kullanılır. Windows 8.1 Masaüstü ve Windows 8.1 telefon için evrensel bir proje kullanıyorsanız, projeniz XAML 'de iki farklı düzen ile başlar, ancak görüntüleme boyutuna göre ayarlayan tek bir dinamik düzen ile biter.
 
@@ -68,7 +68,7 @@ Bir Windows 8.1 mağazası uygulamanız varsa, bu yordamı kullanarak UWP üzeri
 
 1. Uygulamanızın desteklediği her cihaz türü için bir öykünücü veya fiziksel cihazda uygulamayı çalıştırın ve hata ayıklayın. Bir öykünücü çalıştırmak için, Visual Studio 'Yu bir sanal makinede değil fiziksel bir bilgisayarda çalıştırmanız gerekir.
 
-## <a name="BK_81Component"></a>Windows 8.1 çalışma zamanı bileşenini UWP 'e taşıma
+## <a name="porting-a-windows-81-runtime-component-to-the-uwp"></a><a name="BK_81Component"></a>Windows 8.1 çalışma zamanı bileşenini UWP 'e taşıma
 
 Windows 8.1 Store uygulamalarıyla zaten çalışan bir DLL veya Windows Çalışma Zamanı bileşeni varsa, bu yordamı kullanarak bir bileşeni veya DLL 'yi UWP ve Windows 10 ' da çalışır durumda bulabilirsiniz. Temel yordam, yeni bir proje oluşturmak ve kodunuzu buna kopyalamak için kullanılır.
 

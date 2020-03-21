@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4127
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
-ms.openlocfilehash: bef825f546573b878c415c385e1a2a2286e08db4
-ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
+ms.openlocfilehash: 52a966bb321226058afbf4667a4192e4e814f0a1
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72444911"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075852"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>Derleyici Uyarısı (düzey 4) C4127
 
@@ -45,7 +45,6 @@ int main() {
 ```
 
 Bu uyarı, koşullu ifadede bir derleme zamanı sabiti kullanıldığında da oluşturulabilir:
-
 
 ```cpp
 #include <string>

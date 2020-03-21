@@ -14,16 +14,16 @@ helpviewer_keywords:
 - std::make_pair [C++]
 - std::move [C++]
 - std::swap [C++]
-ms.openlocfilehash: 723b077500b9b741445efcd8574fb26cd53e5fc7
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 3e92d6dc9f6966efda0e26fb28cf14652be880c7
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422502"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075592"
 ---
 # <a name="ltutilitygt-functions"></a>&lt;yardımcı program&gt; işlevleri
 
-## <a name="asconst"></a>as_const
+## <a name="as_const"></a><a name="asconst"></a>as_const
 
 ```cpp
 template <class T> constexpr add_const_t<T>& as_const(T& t) noexcept;
@@ -34,13 +34,13 @@ template <class T> void as_const(const T&&) = delete;
 
 *T*döndürür.
 
-## <a name="declval"></a>declval
+## <a name="declval"></a><a name="declval"></a>declval
 
 ```cpp
 template <class T> add_rvalue_reference_t<T> declval() noexcept;  // as unevaluated operand
 ```
 
-## <a name="exchange"></a>değişimi
+## <a name="exchange"></a><a name="exchange"></a>değişimi
 
 **(C++ 14)** Nesnesine yeni bir değer atar ve eski değerini döndürür.
 
@@ -95,7 +95,7 @@ The old value of c1 is: 1
 The new value of c1 after exchange is: 2
 ```
 
-## <a name="forward"></a>tirler
+## <a name="forward"></a><a name="forward"></a>tirler
 
 Bağımsız değişken bir rvalue'da veya rvalue başvurusundaysa, bağımsız değişkenini bir rvalue başvurusuna koşullu olarak yayınlar. Bu, bir bağımsız değişkenin rvalue olma durumunu mükemmel iletim desteği sunarak iletim işlevine geri yükler.
 
@@ -127,19 +127,19 @@ Yayınlama için bağımsız değişkeni.
 
 Bir bağımsız değişkenin özgün değerinin rvalue olma durumunu aşırı yükleme çözümüne geri yüklemek, *kusursuz iletme*olarak bilinir. Kusursuz iletme bir şablon işlevinin her iki başvuru türünün bağımsız değişkenini kabul etmesini ve aşırı yük çözümlemeleri yapılması gerektiğinde rvalue durumunu geri yüklemesini sağlar. Kusursuz iletme kullanarak, rvalues için taşıma semantiğini koruyabilir ve bağımsız değişkenlerinin yalnızca başvuru türüne göre çeşitlenen işlevler için aşırı yük sağlanmasını önleyebilirsiniz.
 
-## <a name="from_chars"></a>from_chars
+## <a name="from_chars"></a><a name="from_chars"></a>from_chars
 
 ```cpp
 from_chars_result from_chars(const char* first, const char* last, see below& value, int base = 10);
 
-from_chars_result from_chars(const char* first, const char* last, float& value, chars_format fmt = chars_format::general); 
+from_chars_result from_chars(const char* first, const char* last, float& value, chars_format fmt = chars_format::general);
 
-from_chars_result from_chars(const char* first, const char* last, double& value, chars_format fmt = chars_format::general); 
+from_chars_result from_chars(const char* first, const char* last, double& value, chars_format fmt = chars_format::general);
 
 from_chars_result from_chars(const char* first, const char* last, long double& value, chars_format fmt = chars_format::general);
 ```
 
-## <a name="get"></a>Al
+## <a name="get"></a><a name="get"></a>Al
 
 Dizin konumuna veya türe göre `pair` nesnesinden bir öğe alır.
 
@@ -235,35 +235,35 @@ int main()
 1 0.27
 ```
 
-## <a name="index_sequence"></a>index_sequence
+## <a name="index_sequence"></a><a name="index_sequence"></a>index_sequence
 
 ```cpp
 template<size_t... I>
     using index_sequence = integer_sequence<size_t, I...>;
 ```
 
-## <a name="index_sequence_for"></a>index_sequence_for
+## <a name="index_sequence_for"></a><a name="index_sequence_for"></a>index_sequence_for
 
 ```cpp
 template<class... T>
     using index_sequence_for = make_index_sequence<sizeof...(T)>;
 ```
 
-## <a name="make_index_sequence"></a>make_index_sequence
+## <a name="make_index_sequence"></a><a name="make_index_sequence"></a>make_index_sequence
 
 ```cpp
 template<size_t N>
     using make_index_sequence = make_integer_sequence<size_t, N>;
 ```
 
-## <a name="make_integer_sequence"></a>make_integer_sequence
+## <a name="make_integer_sequence"></a><a name="make_integer_sequence"></a>make_integer_sequence
 
 ```cpp
 template<class T, T N>
     using make_integer_sequence = integer_sequence<T, see below >;
 ```
 
-## <a name="make_pair"></a>make_pair
+## <a name="make_pair"></a><a name="make_pair"></a>make_pair
 
 Bileşen türlerinin parametre olarak geçirilen veri türlerine göre otomatik olarak seçildiği `pair`türünde nesneler oluşturmak için kullanabileceğiniz bir şablon işlevi.
 
@@ -313,7 +313,7 @@ Döndürülen tür `U` benzer şekilde `U`giriş türünden belirlenir.
 
 Bir çifti bildirmek ve başlatmak için `make_pair` yardımcı işlevinin nasıl kullanılacağına ilişkin bir örnek için bkz. [çifte yapısı](../standard-library/pair-structure.md).
 
-## <a name="move"></a>geçiş
+## <a name="move"></a><a name="move"></a>geçiş
 
 Kendi bağımsız değişkenini koşulsuz olarak bir rvalue başvurusuna yayınlar ve böylece kendi türünün taşınması etkinse, taşınabileceğini belirtir.
 
@@ -342,13 +342,13 @@ bir rvalue başvurusu olarak `Arg`, türünün bir başvuru türü olup olmadı�
 
 *Bağımsız değişken* içinde geçirilen değer bir lvalue ise — diğer bir deyişle, bir ada sahip veya adresi alınabilir — taşıma gerçekleştiğinde geçersiz kılınır. Taşındıktan sonra adı veya adresi tarafından *bağımsız değişken* olarak geçirilen değere başvurmayın.
 
-## <a name="moveif"></a>move_if_noexcept
+## <a name="move_if_noexcept"></a><a name="moveif"></a>move_if_noexcept
 
 ```cpp
 template <class T> constexpr conditional_t< !is_nothrow_move_constructible_v<T> && is_copy_constructible_v<T>, const T&, T&&> move_if_noexcept(T& x) noexcept;
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Kur
 
 İki tür veya [çift yapı](../standard-library/pair-structure.md) nesnesinin öğelerini değiş tokuş eder.
 
@@ -373,18 +373,18 @@ template <class T, class U>
 
 `swap` avantajlarından biri, depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenmesi ve açıkça belirtilmesi gerekmez. `swap` kullandığınızda `swap<int, int>(1, 2)` gibi açık şablon bağımsız değişkenlerini kullanmayın ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
 
-## <a name="to_chars"></a>to_chars
+## <a name="to_chars"></a><a name="to_chars"></a>to_chars
 
 ```cpp
 to_chars_result to_chars(char* first, char* last, see below value, int base = 10);
-to_chars_result to_chars(char* first, char* last, float value); 
-to_chars_result to_chars(char* first, char* last, double value); 
+to_chars_result to_chars(char* first, char* last, float value);
+to_chars_result to_chars(char* first, char* last, double value);
 to_chars_result to_chars(char* first, char* last, long double value);
-to_chars_result to_chars(char* first, char* last, float value, chars_format fmt); 
-to_chars_result to_chars(char* first, char* last, double value, chars_format fmt); 
+to_chars_result to_chars(char* first, char* last, float value, chars_format fmt);
+to_chars_result to_chars(char* first, char* last, double value, chars_format fmt);
 to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt);
-to_chars_result to_chars(char* first, char* last, float value, chars_format fmt, int precision); 
-to_chars_result to_chars(char* first, char* last, double value, chars_format fmt, int precision); 
+to_chars_result to_chars(char* first, char* last, float value, chars_format fmt, int precision);
+to_chars_result to_chars(char* first, char* last, double value, chars_format fmt, int precision);
 to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt, int precision);
 ```
 

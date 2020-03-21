@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 f1_keywords:
 - new/std::new_handler
 ms.assetid: aef01de1-06b5-4b6c-aebc-2c9f423d7e47
-ms.openlocfilehash: 80123bc35422984ef92bdba6da45052d3461b1d7
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 30bd84a1d69d3d8f24cd36450a18b23b92c3c2c6
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419800"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076433"
 ---
 # <a name="ltnewgt-typedefs"></a>Yeni &lt;&gt; tür tanımları
 
-## <a name="hardware_constructive_interference_size"></a>hardware_constructive_interference_size
+## <a name="hardware_constructive_interference_size"></a><a name="hardware_constructive_interference_size"></a>hardware_constructive_interference_size
 
 ```cpp
 inline constexpr size_t hardware_constructive_interference_size = implementation-defined;
@@ -26,7 +26,7 @@ Bu sayı, eş zamanlı iş parçacıkları tarafından zamana bağlı olarak eri
 ### <a name="example"></a>Örnek
 
 ```cpp
-struct together { 
+struct together {
     atomic<int> dog;
     int puppy;
 };
@@ -40,7 +40,7 @@ struct kennel {
 static_assert(sizeof(together) <= hardware_constructive_interference_size);
 ```
 
-## <a name="hardware_destructive_interference_size"></a>hardware_destructive_interference_size
+## <a name="hardware_destructive_interference_size"></a><a name="hardware_destructive_interference_size"></a>hardware_destructive_interference_size
 
 ```cpp
 inline constexpr size_t hardware_destructive_interference_size = implementation-defined;
@@ -59,7 +59,7 @@ struct keep_apart {
 };
 ```
 
-## <a name="new_handler"></a>new_handler
+## <a name="new_handler"></a><a name="new_handler"></a>new_handler
 
 Türü, yeni işleyici olarak kullanım için uygun bir işleve işaret eder.
 

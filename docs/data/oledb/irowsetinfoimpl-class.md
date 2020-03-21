@@ -25,12 +25,12 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: 7389ba689fb1f371b5fbf73045dcdc78cd465d88
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 691871bfc4a9e63167611a3228807fb12e32d1cb
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446189"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077875"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
 
@@ -41,7 +41,7 @@ ms.locfileid: "79446189"
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE IRowsetInfoImpl :
-   public IRowsetInfo, 
+   public IRowsetInfo,
    public CUtlProps<PropClass>
 ```
 
@@ -71,7 +71,7 @@ Varsayılan olarak *T*olarak kullanılacak kullanıcı tanımlı bir özellik s�
 
 Satır kümelerinde zorunlu bir arabirim. Bu sınıf, komut sınıfınıza tanımlanan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md) kullanarak satır kümesi özelliklerini uygular. Satır kümesi sınıfı komut sınıfı ' özellik kümelerini kullanıyor gibi görünse de, satır kümesi bir komut veya oturum nesnesi tarafından oluşturulduğunda çalışma zamanı özelliklerinin kendi kopyasıyla birlikte sağlanır.
 
-## <a name="getproperties"></a>IRowsetInfoImpl:: GetProperties
+## <a name="irowsetinfoimplgetproperties"></a><a name="getproperties"></a>IRowsetInfoImpl:: GetProperties
 
 `DBPROPSET_ROWSET` grubundaki özelliklerin geçerli ayarlarını döndürür.
 
@@ -88,7 +88,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 *OLE DB Programcı başvurusunda*bkz. [IRowsetInfo:: GetProperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) .
 
-## <a name="getreferencedrowset"></a>IRowsetInfoImpl:: GetReferencedRowset
+## <a name="irowsetinfoimplgetreferencedrowset"></a><a name="getreferencedrowset"></a>IRowsetInfoImpl:: GetReferencedRowset
 
 Bir yer işaretinin uygulandığı satır kümesine bir arabirim işaretçisi döndürür.
 
@@ -104,7 +104,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 *OLE DB Programcı başvurusunda*bkz. [IRowsetInfo:: GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) . *Iordinal* parametresi bir yer işareti sütunu olmalıdır.
 
-## <a name="getspecification"></a>IRowsetInfoImpl:: GetSpecification
+## <a name="irowsetinfoimplgetspecification"></a><a name="getspecification"></a>IRowsetInfoImpl:: GetSpecification
 
 Bu satır kümesini oluşturan nesne (komut veya oturum) üzerinde bir arabirim işaretçisi döndürür.
 

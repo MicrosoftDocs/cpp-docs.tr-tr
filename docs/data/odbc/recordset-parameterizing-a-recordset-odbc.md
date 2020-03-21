@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme'
+title: 'Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
 - parameterizing recordsets
@@ -7,60 +7,60 @@ helpviewer_keywords:
 - recordsets, parameterizing
 - passing parameters, to queries at runtime
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-ms.openlocfilehash: 499741693009fb27df58f0ed3cde046d5e6b8c2d
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: eaf95312b73b5165d64de7f9ded95db29d8909d0
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707799"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075814"
 ---
-# <a name="recordset-parameterizing-a-recordset-odbc"></a>Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme
+# <a name="recordset-parameterizing-a-recordset-odbc"></a>Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bazen, çalışma zamanında kayıtları seçmek hesaplanan veya son Kullanıcınızdan alınan bilgileri kullanarak isteyebilirsiniz. Kayıt kümesi parametreleri bu amacı gerçekleştirmenize olanak tanır.
+Bazen, son kullanıcıdan hesapladığınız veya aldığınız bilgileri kullanarak çalışma zamanında kayıtları seçebilmek isteyebilirsiniz. Kayıt kümesi parametreleri bu hedefi gerçekleştirmenize olanak sağlar.
 
-Bu konu şunları açıklar:
+Bu konuda aşağıdakiler açıklanmaktadır:
 
 - [Parametreli bir kayıt kümesinin amacı](#_core_parameterized_recordsets).
 
-- [Ne zaman ve neden, bir kayıt kümesini parametreleştirme isteyebilirsiniz](#_core_when_to_use_parameters).
+- [Ne zaman ve neden bir kayıt kümesini parametreleştirmek](#_core_when_to_use_parameters)isteyebilirsiniz.
 
-- [Kayıt kümesi sınıfı veri üyelerinde parametre bildirmeyi](#_core_parameterizing_your_recordset_class).
+- [Kayıt kümesi sınıfınıza parametre veri üyelerini bildirme](#_core_parameterizing_your_recordset_class).
 
-- [Kayıt kümesi nesnesi için çalışma zamanında parametre bilgileri nasıl](#_core_passing_parameter_values_at_run_time).
+- [Çalışma zamanında parametre bilgilerini bir kayıt kümesi nesnesine geçirme](#_core_passing_parameter_values_at_run_time).
 
-##  <a name="_core_parameterized_recordsets"></a> Parametreli kayıt kümeleri
+##  <a name="parameterized-recordsets"></a><a name="_core_parameterized_recordsets"></a>Parametreli kayıt kümeleri
 
-Parametreli bir kayıt kümesi çalışma zamanında parametre bilgilerini geçirmenize olanak tanır. Bu iki değerli etkilere sahiptir:
+Parametreli bir kayıt kümesi, çalışma zamanında parametre bilgilerini geçirmenize olanak sağlar. Bu iki değerli etkiye sahiptir:
 
-- Daha iyi yürütme hızı neden olabilir.
+- Daha iyi yürütme hızına neden olabilir.
 
-- Tasarım zamanında kullanılabilir olmayan bilgileri gibi bilgileri Kullanıcınızdan alınan veya çalışma zamanında hesaplanan temel çalışma zamanında, bir sorgu oluşturmanıza olanak sağlar.
+- Çalışma zamanında, kullanıcıdan elde edilen veya çalışma zamanında hesaplanan bilgiler gibi tasarım zamanında size kullanılamayan bilgileri temel alarak bir sorgu oluşturmanızı sağlar.
 
-Çağırdığınızda `Open` sorguyu çalıştırmak için tamamlamak için parametre bilgileri kayıt kümesini kullanır, **SQL SELECT** deyimi. Bir kayıt kümesini parametreleştirme.
+Sorguyu çalıştırmak için `Open` çağırdığınızda, kayıt kümesi **SQL SELECT** ifadesini tamamlayacak parametre bilgilerini kullanır. Herhangi bir kayıt kümesini parametreleştirebilirsiniz.
 
-##  <a name="_core_when_to_use_parameters"></a> Ne zaman parametreleri kullanma
+##  <a name="when-to-use-parameters"></a><a name="_core_when_to_use_parameters"></a>Parametrelerin ne zaman kullanılacağı
 
-Parametreler için tipik kullanımları şunlardır:
+Parametrelerin tipik kullanımları şunlardır:
 
-- Önceden tanımlanmış sorgu için çalışma zamanı bağımsız değişkenleri geçirme.
+- Çalışma zamanı bağımsız değişkenlerini önceden tanımlanmış bir sorguya geçirme.
 
-   Bir saklı yordamın parametreleri geçirmek için tam bir özel ODBC belirtmelisiniz **çağrı** deyimi — parametresi tutucularla — çağırdığınızda `Open`, kümesinin varsayılan SQL deyimi geçersiz kılma. Daha fazla bilgi için [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) içinde *sınıf kitaplığı başvurusu* ve [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) ve [kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
+   Parametreleri bir saklı yordama geçirmek için, `Open`çağırdığınızda, kayıt kümesinin varsayılan SQL ifadesini geçersiz kılarak, parametre yer tutucuları ile tüm özel bir ODBC **çağrı** ekstresi belirtmeniz gerekir. Daha fazla bilgi için bkz. [CRecordset:: Open](../../mfc/reference/crecordset-class.md#open) *sınıf kitaplığı başvurusu* ve [SQL: kayıt KÜMENIZIN SQL ifadesini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) ve [kayıt kümesi: önceden TANıMLANMıŞ sorgu için bir sınıf bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
 
-- Verimli bir şekilde farklı parametre bilgileri ile çok sayıda sorgular gerçekleştirme.
+- Farklı parametre bilgileriyle çok sayıda yeniden sorgulama işlemi verimli bir şekilde gerçekleştiriliyor.
 
-   Örneğin, her zaman son kullanıcı için Öğrenci kayıt defteri veritabanında belirli bir öğrenci bilgi arar, Öğrenci adı veya kimliği kullanıcıdan alınan bir parametre olarak belirtebilirsiniz. Ardından, kümenizin çağırdığınızda `Requery` üye işlevi, sorgu yalnızca bu öğrencinin kaydı seçer.
+   Örneğin, Son Kullanıcı öğrenci kayıt veritabanındaki belirli bir öğrenciye ilişkin bilgileri her ararken, öğrencinin adını veya KIMLIĞINI kullanıcıdan alınan bir parametre olarak belirtebilirsiniz. Sonra, kayıt kümenizin `Requery` üye işlevini çağırdığınızda sorgu yalnızca söz konusu öğrencinin kaydını seçer.
 
-   Depolanan kümenizin filtre dizesi `m_strFilter`, şuna benzeyebilir:
+   Kayıt kümenizin `m_strFilter`depolanan filtre dizesi şöyle görünebilir:
 
     ```cpp
     "StudentID = ?"
     ```
 
-   Öğrenci Kimliği değişkeninde elde varsayalım `strInputID`. Bir parametre ayarlandığında `strInputID` (örneğin, kimliği 100 Öğrenci) tarafından temsil edilen parametresi yer tutucu değişkenin değerini bağlıdır "?" filtre dizesi içinde.
+   `strInputID`değişkende öğrenci KIMLIĞINI aldığınızı varsayın. `strInputID` için bir parametre ayarladığınızda (örneğin, öğrenci No 100) değişkenin değeri, filtre dizesinde "?" ile temsil edilen parametre yer tutucusuna bağlanır.
 
-   Parametre değerini şu şekilde atayın:
+   Parametre değerini aşağıdaki gibi atayın:
 
     ```cpp
     strInputID = "100";
@@ -68,39 +68,39 @@ Parametreler için tipik kullanımları şunlardır:
     m_strParam = strInputID;
     ```
 
-   Bu şekilde bir filtre dizesi ayarlama istemezsiniz:
+   Bu şekilde bir filtre dizesi ayarlamak istemezsiniz:
 
     ```cpp
     m_strFilter = "StudentID = 100";   // 100 is incorrectly quoted
                                        // for some drivers
     ```
 
-   Teklif için filtre dizeleri doğru kullanma hakkında bir tartışma için bkz [kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
+   Filtre dizeleri için tekliflerin doğru şekilde nasıl kullanılacağına ilişkin bir tartışma için bkz. [kayıt kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
-   Parametre değeri kayıt için yeni bir öğrenci kimliği requery her zaman farklıdır
+   Parametre değeri, yeni bir öğrenci KIMLIĞI için kayıt kümesini her yeniden sorguışınızda farklıdır.
 
    > [!TIP]
-   > Bir parametre kullanarak, sadece bir filtre kullanmaktan daha verimlidir. Parametreli bir kayıt kümesi için bir SQL veritabanı işlemelisiniz **seçin** deyimi yalnızca bir kez. Parametresiz, filtrelenmiş bir kayıt kümesi için **seçin** deyimi işlenmelidir her zaman `Requery` ile yeni bir filtre değeri.
+   > Bir parametre kullanmak yalnızca bir filtreden daha etkilidir. Parametreli bir kayıt kümesi için veritabanının bir SQL **Select** ifadesini yalnızca bir kez işlemesi gerekir. Parametreleri olmayan filtrelenmiş bir kayıt kümesi için, her yeni filtre değeri ile her `Requery` **Select** ifadesinin işlenmesi gerekir.
 
-Filtreleri hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
+Filtreler hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
-##  <a name="_core_parameterizing_your_recordset_class"></a> Sınıfınıza kayıt kümesini parametreleştirme
+##  <a name="parameterizing-your-recordset-class"></a><a name="_core_parameterizing_your_recordset_class"></a>Kayıt kümesi sınıfınızı parametrize etme
 
 > [!NOTE]
-> Bu bölüm, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme, parametreleri uygulama kullanıyorsanız benzer bir işlemdir. Daha fazla bilgi için [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu bölüm, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen nesneler için geçerlidir. Toplu satır getirme kullanıyorsanız, parametreleri uygulamak benzer bir işlemdir. Daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Kayıt kümesi sınıfı oluşturmadan önce gereksinim duyduğunuz parametreleri, veri türlerini nelerdir ve kayıt bunları nasıl kullandığını belirleyin.
+Kayıt kümesi sınıfınızı oluşturmadan önce, hangi parametrelere ihtiyacınız olduğunu, veri türlerinin ne olduğunu ve kayıt kümesinin bunları nasıl kullandığını saptayın.
 
-#### <a name="to-parameterize-a-recordset-class"></a>Kayıt kümesi sınıfı parametre haline getirmek için
+#### <a name="to-parameterize-a-recordset-class"></a>Bir kayıt kümesi sınıfını parametreleştirmek için
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bu işlevselliği yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Bu işlevi yine de el ile oluşturabilirsiniz.
 
-1. Çalıştırma [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** sınıfı oluşturmak için.
+1. Sınıfı oluşturmak için **Sınıf Ekle** ' den [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) ' nı çalıştırın.
 
-1. Alan veri üyeleri kayıt kümesinin sütunlar için belirtin.
+1. Kayıt kümesi sütunları için alan veri üyelerini belirtin.
 
-1. Sınıf Sihirbazı, projenizdeki bir dosyaya yazar sonra .h dosyasına gidin ve bir veya daha fazla parametre veri üyeleri sınıf bildirimi için el ile ekleyin. Ayrıca, aşağıdaki örneğe benzer bir şey görünebilir, bir anlık görüntü sınıfın parçası için tasarlanmış sorgu yanıt "olan Öğrenciler son sınıfta?"
+1. Sihirbaz, sınıfı projenizdeki bir dosyaya yazdıktan sonra. h dosyasına gidin ve sınıf bildirimine bir veya daha fazla parametre veri üyesini el ile ekleyin. Ek olarak, aşağıdaki örneğe benzer şekilde tasarlanan bir anlık görüntü sınıfının bir parçası olan "öğrenciler kıdemli sınıfta bulunan bir sorguyu yanıtlamak üzere tasarlandı"
 
     ```cpp
     class CStudentSet : public CRecordset
@@ -115,44 +115,44 @@ Kayıt kümesi sınıfı oluşturmadan önce gereksinim duyduğunuz parametreler
     };
     ```
 
-   Sonra alan Sihirbazı tarafından üretilen veri üyeleri, parametre veri üyeleri ekleyin. "Parametre" sözcüğü için her bir kullanıcı tarafından tanımlanan parametre adı eklemek için kullanılan kuraldır.
+   Sihirbaz tarafından oluşturulan alan verileri üyelerinden sonra parametre veri üyelerinizi ekleyin. Bu kural, her kullanıcı tanımlı parametre adına "param" sözcüğünü eklemedir.
 
-1. Değiştirme [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlev tanımında .cpp dosyası. RFX işlev çağrısı bir sınıfa eklediğiniz her parametre veri üyesi ekleyin. RFX işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md). RFX çağrıları parametreleri için tek bir çağrı ile koyun:
+1. . Cpp dosyasındaki [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlev tanımını değiştirin. Sınıfa eklediğiniz her bir parametre veri üyesi için bir RFX işlev çağrısı ekleyin. RFX işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md). Parametrelerin tek bir çağrısıyla RFX çağrılarının önüne:
 
     ```cpp
     pFX->SetFieldType( CFieldExchange::param );
     // RFX calls for parameter data members
     ```
 
-1. Kayıt kümesi sınıfı oluşturucusunun içinde parametre sayısını artırmak `m_nParams`.
+1. Kayıt kümesi sınıfınızın oluşturucusunda, `m_nParams`parametre sayısını artırın.
 
-   Bilgi için [kayıt alanı değişimi: Sihirbaz kodu ile çalışma](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md).
+   Bilgi için bkz. [kayıt alanı değişimi: sihirbaz kodu Ile çalışma](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md).
 
-1. Bu sınıfın bir kayıt kümesi nesnesi oluşturan kodu yazdığınız zaman yerleştirileceği bir "?" bir parametre değiştirilecek olduğu her yerde SQL deyimi dizelerinizi (soru işareti) simgesi.
+1. Bu sınıfın bir kayıt kümesi nesnesi oluşturan kodu yazdığınızda, bir "?" yerleştirin (soru işareti) SQL deyiminizdeki her yerde bir parametrenin değiştirildiği bir yerde simge.
 
-   Çalışma zamanında "?" yer tutucuları doldurulur, sırayla, geçirdiğiniz parametre değerleri ile. Sonra ilk parametresinin veri üye kümesi [SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) çağrı değiştirir ilk "?"SQL dizesinde ikinci parametre veri üyesi ikinci değiştirir"?" ve benzeri.
+   Çalışma zamanında, "?" yer tutucuları geçirdiğiniz parametre değerleri tarafından sırayla doldurulur. [SETbir](../../mfc/reference/cfieldexchange-class.md#setfieldtype) çağrısından sonra ilk parametre veri üyesi KÜMESI, SQL dizesinde ilk "?" yerini almıştır, ikinci parametre veri üyesi ikinci "?" ve bu şekilde değiştirilir.
 
 > [!NOTE]
-> Parametre sırası önemlidir: RFX sırasını çağıran parametreler için `DoFieldExchange` işlevi parametre içindeki yer tutucuları SQL dizenizi sırasını eşleşmesi gerekir.
+> Parametre sırası önemlidir: `DoFieldExchange` işlevinizdeki parametrelerin RFX çağrılarının sırası, SQL dizinizdeki parametre yer tutucuların sırasıyla aynı olmalıdır.
 
 > [!TIP]
-> Çalışmak için en olası dize belirttiğiniz dizedir (varsa) için sınıfın [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) veri üyesi, ancak bazı ODBC sürücüleri izin parametreleri diğer SQL yan tümcelerinde.
+> Birlikte çalışmak için en olası dize, sınıfın [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) veri üyesi için (varsa) belirttiğiniz dizedir, ancak bazı ODBC SÜRÜCÜLERI diğer SQL yan tümcelerinde parametrelere izin verebilir.
 
-##  <a name="_core_passing_parameter_values_at_run_time"></a> Çalışma zamanında parametre değerlerini geçirme
+##  <a name="passing-parameter-values-at-run-time"></a><a name="_core_passing_parameter_values_at_run_time"></a>Çalışma zamanında parametre değerlerini geçirme
 
-Çağırmadan önce parametre değerlerini belirtin `Open` (için yeni bir kayıt kümesi nesnesi) veya `Requery` (için mevcut bir).
+`Open` (yeni bir kayıt kümesi nesnesi için) veya `Requery` (mevcut bir tane için) öğesini çağırmadan önce parametre değerlerini belirtmeniz gerekir.
 
-#### <a name="to-pass-parameter-values-to-a-recordset-object-at-run-time"></a>Çalışma zamanında bir kayıt nesnesine parametre değerlerini geçirmek için
+#### <a name="to-pass-parameter-values-to-a-recordset-object-at-run-time"></a>Çalışma zamanında parametre değerlerini bir kayıt kümesi nesnesine geçirmek için
 
-1. Kayıt kümesi nesnesi oluşturun.
+1. Kayıt kümesi nesnesini oluşturun.
 
-1. Bir dize veya dizeler gibi hazırlama `m_strFilter` SQL deyiminin veya bazı bölümleri içeren bir dize. PUT "?" parametre bilgileri olduğu gitmek için yer tutucu.
+1. SQL ifadesini veya bunun parçalarını içeren `m_strFilter` dize gibi bir dize veya dizeler hazırlayın. Parametre bilgisinin Gidecebileceği "?" yer tutucuları koyun.
 
-1. Bir çalışma zamanı parametre değeri, her nesne parametresi veri üyesine atayın.
+1. Nesnenin her bir parametre veri üyesine bir çalışma zamanı parametre değeri atayın.
 
-1. Çağrı `Open` üye işlevi (veya `Requery`, var olan bir kayıt kümesi için).
+1. `Open` üye işlevini (veya `Requery`, var olan bir kayıt kümesi için) çağırın.
 
-Örneğin, çalışma zamanında alınan bilgileri kullanarak kayıt için bir filtre dizesi belirtmek istediğinizi varsayalım. Bir kayıt kümesi sınıfının oluşturulmuş varsayar `CStudentSet` önceki — adlı `rsStudents` — ve artık belirli bir öğrenci bilgi türünü de requery istiyorsunuz.
+Örneğin, çalışma zamanında elde edilen bilgileri kullanarak kayıt kümeniz için bir filtre dizesi belirtmek istediğinizi varsayalım. Daha önce `rsStudents` adlı `CStudentSet` bir sınıf kayıt kümesi oluşturduğunuzu ve şimdi belirli bir öğrenci bilgileri türü için yeniden sorgulamak istediğinizi varsayalım.
 
 ```cpp
 // Set up a filter string with
@@ -171,13 +171,13 @@ if( !rsStudents.Requery( ) )
     return FALSE;
 ```
 
-Kayıt kümesi kayıtlarını çalışma zamanı parametrelerinden oluşturulmuş filtre tarafından belirtilen koşulları karşılayan bu Öğrenciler için kayıtları içerir. Bu durumda, kayıt kümesinin tüm üst düzey Öğrenciler için kayıtlar içerir.
+Kayıt kümesi, kayıtları, çalışma zamanı parametrelerinden oluşturulan filtre tarafından belirtilen koşullara uyan öğrenciler için kayıtlar içerir. Bu durumda, kayıt kümesi tüm kıdemli öğrenciler için kayıtlar içerir.
 
 > [!NOTE]
->  Gerekli olursa, parametre veri üyesinin değerini Null olarak ayarlayabilirsiniz kullanarak [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull). Benzer şekilde bir parametre veri üyesi Null olup olmadığını denetleyebiliriz kullanarak [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull).
+>  Gerekirse, [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull)kullanarak bir parametre veri üyesinin değerini null olarak ayarlayabilirsiniz. Benzer şekilde, [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull)kullanarak bir parametre veri üyesinin null olup olmadığını kontrol edebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
-[Kayıt kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

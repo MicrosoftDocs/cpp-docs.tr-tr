@@ -53,16 +53,16 @@ helpviewer_keywords:
 - Microsoft::WRL::AsyncBase::TryTransitionToCompleted method
 - Microsoft::WRL::AsyncBase::TryTransitionToError method
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
-ms.openlocfilehash: 367d0b0cd3197623b27ee1a50e804cca797aedf3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09819c9e8dd924581ce8cd67233d273f7e8d62ca
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398829"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079905"
 ---
 # <a name="asyncbase-class"></a>AsyncBase Sınıfı
 
-Windows çalışma zamanı zaman uyumsuz Durum makinesi uygular.
+Windows Çalışma Zamanı zaman uyumsuz durum makinesini uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,56 +81,55 @@ class AsyncBase<TComplete, Details::Nil, resultType> :
 
 ### <a name="parameters"></a>Parametreler
 
-*TComplete*<br/>
-Bir zaman uyumsuz işlem tamamlandığında çağrılan bir olay işleyicisi.
+*Ttamam*<br/>
+Zaman uyumsuz bir işlem tamamlandığında çağrılan bir olay işleyicisi.
 
 *TProgress*<br/>
-Bir çalıştırma zaman uyumsuz işlem geçerli işlemin ilerlemesini bildirdiğinde çağrılan bir olay işleyicisi.
+Çalışan bir zaman uyumsuz işlem, işlemin geçerli ilerlemesini raporladığında çağrılan bir olay işleyicisi.
 
-*resulttype'ı*<br/>
-Aşağıdakilerden birini [AsyncResultType](asyncresulttype-enumeration.md) sabit listesi değerleri. Varsayılan olarak, `SingleResult`.
+*'ı*<br/>
+[AsyncResultType](asyncresulttype-enumeration.md) numaralandırma değerlerinden biri. Varsayılan olarak, `SingleResult`.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                               | Açıklama
+Adı                               | Açıklama
 ---------------------------------- | -------------------------------------------------
-[AsyncBase::AsyncBase](#asyncbase) | Bir örneğini başlatır `AsyncBase` sınıfı.
+[AsyncBase:: AsyncBase](#asyncbase) | `AsyncBase` sınıfının örneğini başlatır.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                         | Açıklama
+Adı                                         | Açıklama
 -------------------------------------------- | -------------------------------------------------------------------------------------
-[AsyncBase::Cancel](#cancel)                 | Zaman uyumsuz bir işlem iptal eder.
-[AsyncBase::Close](#close)                   | Zaman uyumsuz işlemi kapatır.
-[AsyncBase::FireCompletion](#firecompletion) | Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilci sıfırlar.
-[AsyncBase::FireProgress](#fireprogress)     | Geçerli ilerleme olay işleyicisini çağırır.
-[AsyncBase::get_ErrorCode](#get-errorcode)   | Geçerli zaman uyumsuz işlem hata kodunu alır.
-[Asyncbase::get_ıd](#get-id)                 | Zaman uyumsuz işlem tanıtıcısını alır.
-[AsyncBase::get_Status](#get-status)         | Zaman uyumsuz işlemin durumunu gösteren bir değer alır.
-[AsyncBase::GetOnComplete](#getoncomplete)   | Adres geçerli tamamlama olay işleyicisinin belirtilen değişkenine kopyalar.
-[AsyncBase::GetOnProgress](#getonprogress)   | Adres geçerli ilerleme olay işleyicisinin belirtilen değişkenine kopyalar.
-[Asyncbase::put_ıd](#put-id)                 | Zaman uyumsuz işlem tanıtıcısı ayarlar.
-[AsyncBase::PutOnComplete](#putoncomplete)   | Tamamlama olay işleyicisinin adresi belirtilen değere ayarlar.
-[AsyncBase::PutOnProgress](#putonprogress)   | Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.
-
+[AsyncBase:: Cancel](#cancel)                 | Zaman uyumsuz bir işlemi iptal eder.
+[AsyncBase:: Close](#close)                   | Zaman uyumsuz işlemi kapatır.
+[AsyncBase:: FireCompletion](#firecompletion) | Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilcisini sıfırlar.
+[AsyncBase:: FireProgress](#fireprogress)     | Geçerli ilerleme olayı işleyicisini çağırır.
+[AsyncBase:: get_ErrorCode](#get-errorcode)   | Geçerli zaman uyumsuz işlem için hata kodunu alır.
+[AsyncBase:: get_Id](#get-id)                 | Zaman uyumsuz işlemin tanıtıcısını alır.
+[AsyncBase:: get_Status](#get-status)         | Zaman uyumsuz işlemin durumunu gösteren bir değer alır.
+[AsyncBase:: Getontamamlanmıştır](#getoncomplete)   | Geçerli tamamlanma olayı işleyicisinin adresini belirtilen değişkene kopyalar.
+[AsyncBase:: GetOnProgress](#getonprogress)   | Geçerli ilerleme olayı işleyicisinin adresini belirtilen değişkene kopyalar.
+[AsyncBase::p ut_Id](#put-id)                 | Zaman uyumsuz işlemin tanıtıcısını ayarlar.
+[AsyncBase::P Uıtontamamlanmıştır](#putoncomplete)   | Tamamlanma olayı işleyicisinin adresini belirtilen değere ayarlar.
+[AsyncBase::P Uıtonprogress](#putonprogress)   | İlerleme olayı işleyicisinin adresini belirtilen değere ayarlar.
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Ad                                                                         | Açıklama
+Adı                                                                         | Açıklama
 ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------
-[AsyncBase::CheckValidStateForDelegateCall](#checkvalidstatefordelegatecall) | Temsilci özellikleri geçerli zaman uyumsuz durumunda değiştirilebilir olup olmadığını sınar.
-[AsyncBase::CheckValidStateForResultsCall](#checkvalidstateforresultscall)   | Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.
-[AsyncBase::ContinueAsyncOperation](#continueasyncoperation)                 | Zaman uyumsuz işlem işlemeye devam etmesi gerektiğinin veya durdurmak belirler.
-[AsyncBase::CurrentStatus](#currentstatus)                                   | Geçerli zaman uyumsuz işlemin durumunu alır.
-[AsyncBase::ErrorCode](#errorcode)                                           | Geçerli zaman uyumsuz işlem hata kodunu alır.
-[AsyncBase::OnCancel](#oncancel)                                             | Türetilen bir sınıfta geçersiz kılındığında, bir zaman uyumsuz işlem iptal eder.
-[AsyncBase::OnClose](#onclose)                                               | Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.
-[AsyncBase::OnStart](#onstart)                                               | Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem başlatır.
-[AsyncBase::Start](#start)                                                   | Zaman uyumsuz işlemi başlatır.
-[AsyncBase::TryTransitionToCompleted](#trytransitiontocompleted)             | Geçerli zaman uyumsuz işlem tamamlanıp tamamlanmadığını gösterir.
-[AsyncBase::TryTransitionToError](#trytransitiontoerror)                     | Belirtilen hata kodu iç hata durumunda değiştirip değiştiremeyeceğini belirtir.
+[AsyncBase:: CheckValidStateForDelegateCall](#checkvalidstatefordelegatecall) | Temsilci özelliklerinin geçerli zaman uyumsuz durumda değiştirilip değiştirilemeyeceğini sınar.
+[AsyncBase:: CheckValidStateForResultsCall](#checkvalidstateforresultscall)   | Zaman uyumsuz bir işlemin sonuçlarının geçerli zaman uyumsuz durumda toplanıp toplanamayacağını sınar.
+[AsyncBase:: ContinueAsyncOperation](#continueasyncoperation)                 | Zaman uyumsuz işlemin işleme devam edip etmediğini mi yoksa durdurmak mı gerektiğini belirler.
+[AsyncBase:: CurrentStatus](#currentstatus)                                   | Geçerli zaman uyumsuz işlemin durumunu alır.
+[AsyncBase:: ErrorCode](#errorcode)                                           | Geçerli zaman uyumsuz işlem için hata kodunu alır.
+[AsyncBase:: OnCancel](#oncancel)                                             | Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir işlemi iptal eder.
+[AsyncBase:: OnClose](#onclose)                                               | Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir işlemi kapatır.
+[AsyncBase:: OnStart](#onstart)                                               | Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir işlem başlatır.
+[AsyncBase:: Start](#start)                                                   | Zaman uyumsuz işlemi başlatır.
+[AsyncBase:: Trygeçişli Tiontocompleted](#trytransitiontocompleted)             | Geçerli zaman uyumsuz işlemin tamamlanıp tamamlanmadığını belirtir.
+[AsyncBase:: Trygeçişli Tiontoerror](#trytransitiontoerror)                     | Belirtilen hata kodunun iç hata durumunu değiştiremeyeceğini gösterir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -140,21 +139,21 @@ Ad                                                                         | Aç
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** async.h
+**Üst bilgi:** Async. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="asyncbase"></a>AsyncBase::AsyncBase
+## <a name="asyncbaseasyncbase"></a><a name="asyncbase"></a>AsyncBase:: AsyncBase
 
-Bir örneğini başlatır `AsyncBase` sınıfı.
+`AsyncBase` sınıfının örneğini başlatır.
 
 ```cpp
 AsyncBase();
 ```
 
-## <a name="cancel"></a>AsyncBase::Cancel
+## <a name="asyncbasecancel"></a><a name="cancel"></a>AsyncBase:: Cancel
 
-Zaman uyumsuz bir işlem iptal eder.
+Zaman uyumsuz bir işlemi iptal eder.
 
 ```cpp
 STDMETHOD(
@@ -164,15 +163,15 @@ STDMETHOD(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan olarak, her zaman S_OK döndürür.
+Varsayılan olarak her zaman S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Cancel()` bir varsayılan uygulamasıdır `IAsyncInfo::Cancel`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten iptal etmek için geçersiz kılma `OnCancel()` saf sanal yöntemi.
+`Cancel()` varsayılan bir `IAsyncInfo::Cancel`uygulamasıdır ve gerçek çalışma yapmaz. Gerçekten zaman uyumsuz bir işlemi iptal etmek için `OnCancel()` saf sanal yöntemini geçersiz kılın.
 
-## <a name="checkvalidstatefordelegatecall"></a>AsyncBase::CheckValidStateForDelegateCall
+## <a name="asyncbasecheckvalidstatefordelegatecall"></a><a name="checkvalidstatefordelegatecall"></a>AsyncBase:: CheckValidStateForDelegateCall
 
-Temsilci özellikleri geçerli zaman uyumsuz durumunda değiştirilebilir olup olmadığını sınar.
+Temsilci özelliklerinin geçerli zaman uyumsuz durumda değiştirilip değiştirilemeyeceğini sınar.
 
 ```cpp
 inline HRESULT CheckValidStateForDelegateCall();
@@ -180,11 +179,11 @@ inline HRESULT CheckValidStateForDelegateCall();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temsilci özellikleri değiştirilip değiştirilmediğini S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Temsilci özellikleri değiştirilemiyorsa, S_OK. Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
-## <a name="checkvalidstateforresultscall"></a>AsyncBase::CheckValidStateForResultsCall
+## <a name="asyncbasecheckvalidstateforresultscall"></a><a name="checkvalidstateforresultscall"></a>AsyncBase:: CheckValidStateForResultsCall
 
-Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.
+Zaman uyumsuz bir işlemin sonuçlarının geçerli zaman uyumsuz durumda toplanıp toplanamayacağını sınar.
 
 ```cpp
 inline HRESULT CheckValidStateForResultsCall();
@@ -192,9 +191,9 @@ inline HRESULT CheckValidStateForResultsCall();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK sonuçları toplanabilir; Aksi takdirde, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.
+Sonuçların toplanabilmesi S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.
 
-## <a name="close"></a>AsyncBase::Close
+## <a name="asyncbaseclose"></a><a name="close"></a>AsyncBase:: Close
 
 Zaman uyumsuz işlemi kapatır.
 
@@ -206,15 +205,15 @@ STDMETHOD(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlemi kapatır veya zaten S_OK kapalı; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.
+İşlem kapatılırsa veya zaten kapalıysa S_OK; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Close()` bir varsayılan uygulamasıdır `IAsyncInfo::Close`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten kapatmak için geçersiz kılma `OnClose()` saf sanal yöntemi.
+`Close()` varsayılan bir `IAsyncInfo::Close`uygulamasıdır ve gerçek çalışma yapmaz. Bir zaman uyumsuz işlemi gerçekten kapatmak için `OnClose()` saf sanal metodunu geçersiz kılın.
 
-## <a name="continueasyncoperation"></a>AsyncBase::ContinueAsyncOperation
+## <a name="asyncbasecontinueasyncoperation"></a><a name="continueasyncoperation"></a>AsyncBase:: ContinueAsyncOperation
 
-Zaman uyumsuz işlem işlemeye devam etmesi gerektiğinin veya durdurmak belirler.
+Zaman uyumsuz işlemin işleme devam edip etmediğini mi yoksa durdurmak mı gerektiğini belirler.
 
 ```cpp
 inline bool ContinueAsyncOperation();
@@ -222,9 +221,9 @@ inline bool ContinueAsyncOperation();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** geçerli durumunu zaman uyumsuz işlemi ise *çalışmaya*, yani işlemi devam etmelidir. Aksi takdirde, **false**, yani işlemi durdurmak.
+zaman uyumsuz işlemin geçerli durumu *başlatılmışsa* **true** , yani işlemin devam etmesi gerekir. Aksi takdirde, **yanlış**, işlemin durdurmayacağı anlamına gelir.
 
-## <a name="currentstatus"></a>AsyncBase::CurrentStatus
+## <a name="asyncbasecurrentstatus"></a><a name="currentstatus"></a>AsyncBase:: CurrentStatus
 
 Geçerli zaman uyumsuz işlemin durumunu alır.
 
@@ -236,16 +235,16 @@ inline void CurrentStatus(
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*<br/>
-Bu işlem geçerli durumu depoladığı konum.
+*durumlarına*<br/>
+Bu işlemin geçerli durumu depoladığı konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem, iş parçacığı açısından güvenlidir.
+Bu işlem iş parçacığı açısından güvenlidir.
 
-## <a name="errorcode"></a>AsyncBase::ErrorCode
+## <a name="asyncbaseerrorcode"></a><a name="errorcode"></a>AsyncBase:: ErrorCode
 
-Geçerli zaman uyumsuz işlem hata kodunu alır.
+Geçerli zaman uyumsuz işlem için hata kodunu alır.
 
 ```cpp
 inline void ErrorCode(
@@ -255,16 +254,16 @@ inline void ErrorCode(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hata*<br/>
-Bu işlem, geçerli hata kodu depoladığı konum.
+*hatayla*<br/>
+Bu işlemin geçerli hata kodunu depoladığı konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem, iş parçacığı açısından güvenlidir.
+Bu işlem iş parçacığı açısından güvenlidir.
 
-## <a name="firecompletion"></a>AsyncBase::FireCompletion
+## <a name="asyncbasefirecompletion"></a><a name="firecompletion"></a>AsyncBase:: FireCompletion
 
-Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilci sıfırlar.
+Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilcisini sıfırlar.
 
 ```cpp
 void FireCompletion(
@@ -276,11 +275,11 @@ virtual void FireCompletion();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ürününün ilk sürümünü `FireCompletion()` iç ilerleme temsilci değişkeni sıfırlar. Zaman uyumsuz işlem tamamlandıysa ikinci sürüm tamamlama olay işleyicisini çağırır.
+`FireCompletion()` ilk sürümü, iç ilerleme temsilcisi değişkenini sıfırlar. İkinci sürüm, zaman uyumsuz işlem tamamlandıktan sonra tamamlanma olayı işleyicisini çağırır.
 
-## <a name="fireprogress"></a>AsyncBase::FireProgress
+## <a name="asyncbasefireprogress"></a><a name="fireprogress"></a>AsyncBase:: FireProgress
 
-Geçerli ilerleme olay işleyicisini çağırır.
+Geçerli ilerleme olayı işleyicisini çağırır.
 
 ```cpp
 void FireProgress(
@@ -290,16 +289,16 @@ void FireProgress(
 
 ### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
+*değişkeni*<br/>
 Çağrılacak olay işleyicisi yöntemi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ProgressTraits` türetilen [ArgTraitsHelper yapısı](argtraitshelper-structure.md).
+`ProgressTraits`, [Yapı başına Argtraitshelfrom](argtraitshelper-structure.md)öğesinden türetilir.
 
-## <a name="get-errorcode"></a>AsyncBase::get_ErrorCode
+## <a name="asyncbaseget_errorcode"></a><a name="get-errorcode"></a>AsyncBase:: get_ErrorCode
 
-Geçerli zaman uyumsuz işlem hata kodunu alır.
+Geçerli zaman uyumsuz işlem için hata kodunu alır.
 
 ```cpp
 STDMETHOD(
@@ -309,16 +308,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*hata kodu*<br/>
-Geçerli hata kodu nerede depolandığını konumu.
+*Raporladı*<br/>
+Geçerli hata kodunun depolandığı konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, geçerli zaman uyumsuz işlemin kapatılırsa E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, geçerli zaman uyumsuz işlem kapalıysa E_ILLEGAL_METHOD_CALL.
 
-## <a name="get-id"></a>AsyncBase::get_Id
+## <a name="asyncbaseget_id"></a><a name="get-id"></a>AsyncBase:: get_Id
 
-Zaman uyumsuz işlem tanıtıcısını alır.
+Zaman uyumsuz işlemin tanıtıcısını alır.
 
 ```cpp
 STDMETHOD(
@@ -329,17 +328,17 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-Tanıtıcı depolanacak bulunduğu konumu.
+Tanıtıcının depolanacağı konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem `IAsyncInfo::get_Id`.
+Bu yöntem `IAsyncInfo::get_Id`uygular.
 
-## <a name="get-status"></a>AsyncBase::get_Status
+## <a name="asyncbaseget_status"></a><a name="get-status"></a>AsyncBase:: get_Status
 
 Zaman uyumsuz işlemin durumunu gösteren bir değer alır.
 
@@ -351,20 +350,20 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*<br/>
-Durum depolanacak bulunduğu konumu. Daha fazla bilgi için `Windows::Foundation::AsyncStatus` sabit listesi.
+*durumlarına*<br/>
+Durumun depolanacağı konum. Daha fazla bilgi için bkz. `Windows::Foundation::AsyncStatus` numaralandırması.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem `IAsyncInfo::get_Status`.
+Bu yöntem `IAsyncInfo::get_Status`uygular.
 
-## <a name="getoncomplete"></a>AsyncBase::GetOnComplete
+## <a name="asyncbasegetoncomplete"></a><a name="getoncomplete"></a>AsyncBase:: Getontamamlanmıştır
 
-Adres geçerli tamamlama olay işleyicisinin belirtilen değişkenine kopyalar.
+Geçerli tamamlanma olayı işleyicisinin adresini belirtilen değişkene kopyalar.
 
 ```cpp
 STDMETHOD(
@@ -375,15 +374,15 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *completeHandler*<br/>
-Adres geçerli tamamlama olay işleyicisinin depolandığı konum.
+Geçerli tamamlanma olayı işleyicisinin adresinin depolandığı konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
-## <a name="getonprogress"></a>AsyncBase::GetOnProgress
+## <a name="asyncbasegetonprogress"></a><a name="getonprogress"></a>AsyncBase:: GetOnProgress
 
-Adres geçerli ilerleme olay işleyicisinin belirtilen değişkenine kopyalar.
+Geçerli ilerleme olayı işleyicisinin adresini belirtilen değişkene kopyalar.
 
 ```cpp
 STDMETHOD(
@@ -394,15 +393,15 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *progressHandler*<br/>
-Adres geçerli ilerleme olay işleyicisinin depolandığı konum.
+Geçerli ilerleme olayı işleyicisinin adresinin depolandığı konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
-## <a name="oncancel"></a>AsyncBase::OnCancel
+## <a name="asyncbaseoncancel"></a><a name="oncancel"></a>AsyncBase:: OnCancel
 
-Türetilen bir sınıfta geçersiz kılındığında, bir zaman uyumsuz işlem iptal eder.
+Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir işlemi iptal eder.
 
 ```cpp
 virtual void OnCancel(
@@ -410,9 +409,9 @@ virtual void OnCancel(
 ) = 0;
 ```
 
-## <a name="onclose"></a>AsyncBase::OnClose
+## <a name="asyncbaseonclose"></a><a name="onclose"></a>AsyncBase:: OnClose
 
-Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.
+Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir işlemi kapatır.
 
 ```cpp
 virtual void OnClose(
@@ -420,9 +419,9 @@ virtual void OnClose(
 ) = 0;
 ```
 
-## <a name="onstart"></a>AsyncBase::OnStart
+## <a name="asyncbaseonstart"></a><a name="onstart"></a>AsyncBase:: OnStart
 
-Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem başlatır.
+Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir işlem başlatır.
 
 ```cpp
 virtual HRESULT OnStart(
@@ -430,9 +429,9 @@ virtual HRESULT OnStart(
 ) = 0;
 ```
 
-## <a name="put-id"></a>Asyncbase::put_ıd
+## <a name="asyncbaseput_id"></a><a name="put-id"></a>AsyncBase::p ut_Id
 
-Zaman uyumsuz işlem tanıtıcısı ayarlar.
+Zaman uyumsuz işlemin tanıtıcısını ayarlar.
 
 ```cpp
 STDMETHOD(
@@ -447,11 +446,11 @@ Sıfır dışında bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde E_INVALIDARG veya E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_INVALIDARG veya E_ILLEGAL_METHOD_CALL.
 
-## <a name="putoncomplete"></a>AsyncBase::PutOnComplete
+## <a name="asyncbaseputoncomplete"></a><a name="putoncomplete"></a>AsyncBase::P Uıtontamamlanmıştır
 
-Tamamlama olay işleyicisinin adresi belirtilen değere ayarlar.
+Tamamlanma olayı işleyicisinin adresini belirtilen değere ayarlar.
 
 ```cpp
 STDMETHOD(
@@ -462,15 +461,15 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *completeHandler*<br/>
-İstediğiniz tamamlama olay işleyicisinin nasıl ayarlandığını adresi.
+Tamamlanma olayı işleyicisinin ayarlandığı adres.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
-## <a name="putonprogress"></a>AsyncBase::PutOnProgress
+## <a name="asyncbaseputonprogress"></a><a name="putonprogress"></a>AsyncBase::P Uıtonprogress
 
-Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.
+İlerleme olayı işleyicisinin adresini belirtilen değere ayarlar.
 
 ```cpp
 STDMETHOD(
@@ -481,13 +480,13 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *progressHandler*<br/>
-İstediğiniz ilerleme olay işleyicisinin nasıl ayarlandığını adresi.
+İlerleme olayı işleyicisinin ayarlandığı adres.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+Başarılı olursa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
 
-## <a name="start"></a>AsyncBase::Start
+## <a name="asyncbasestart"></a><a name="start"></a>AsyncBase:: Start
 
 Zaman uyumsuz işlemi başlatır.
 
@@ -499,15 +498,15 @@ STDMETHOD(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlemi başlatıldığında veya zaten varsa S_OK başlatıldı; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.
+İşlem başlarsa veya zaten başlatılmış S_OK; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Start()` zaman uyumsuz işlemleri başlatma çağırana döndürülmeden önce sık erişimli"için" dışarıdan görünmemesi korumalı bir yöntem olur.
+`Start()`, çağrı yapana dönmeden önce zaman uyumsuz işlemler "etkin başlatma" nedeniyle dışarıdan görünmeyen korumalı bir yöntemdir.
 
-## <a name="trytransitiontocompleted"></a>AsyncBase::TryTransitionToCompleted
+## <a name="asyncbasetrytransitiontocompleted"></a><a name="trytransitiontocompleted"></a>AsyncBase:: Trygeçişli Tiontocompleted
 
-Geçerli zaman uyumsuz işlem tamamlanıp tamamlanmadığını gösterir.
+Geçerli zaman uyumsuz işlemin tamamlanıp tamamlanmadığını belirtir.
 
 ```cpp
 bool TryTransitionToCompleted(
@@ -517,11 +516,11 @@ bool TryTransitionToCompleted(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** zaman uyumsuz işlem tamamlandıysa; Aksi takdirde, **false**.
+zaman uyumsuz işlem tamamlanırsa **doğru** ; Aksi takdirde, **false**.
 
-## <a name="trytransitiontoerror"></a>AsyncBase::TryTransitionToError
+## <a name="asyncbasetrytransitiontoerror"></a><a name="trytransitiontoerror"></a>AsyncBase:: Trygeçişli Tiontoerror
 
-Belirtilen hata kodu iç hata durumunda değiştirip değiştiremeyeceğini belirtir.
+Belirtilen hata kodunun iç hata durumunu değiştiremeyeceğini gösterir.
 
 ```cpp
 bool TryTransitionToError(
@@ -531,13 +530,13 @@ bool TryTransitionToError(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hata*<br/>
-HRESULT hatası.
+*hatayla*<br/>
+Bir HRESULT hatası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** iç hata durumunda, değiştirilen; Aksi takdirde **false**.
+iç hata durumu değiştiyse **doğru** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem, yalnızca hata durumunda S_OK için zaten ayarlanmışsa hata durumu değiştirir. Hata durumunda zaten iptal edildi, tamamlandı veya kapalı hata olması durumunda bu işlem bir etkisi yoktur.
+Bu işlem yalnızca hata durumu zaten S_OK olarak ayarlandıysa hata durumunu değiştirir. Hata durumu zaten hata, iptal edildi, tamamlandı veya kapatıldı olduğunda bu işlemin etkisi yoktur.

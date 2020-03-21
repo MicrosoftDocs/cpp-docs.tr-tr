@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-ms.openlocfilehash: ebf9324d478a12476b548dc62455e205b9261430
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 5a4e7306dbfee4f1482ee81d3470f166697e3ab6
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72685862"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076375"
 ---
 # <a name="student_t_distribution-class"></a>student_t_distribution Sınıfı
 
@@ -64,8 +64,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* \
-Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz. [\<random >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz. [\<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -80,7 +80,7 @@ Sınıf şablonu, Kullanıcı tarafından belirtilen **integral türünün değe
 
 Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
 
-Öğrencinin *t*dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [öğrenciler t-Distribution](http://mathworld.wolfram.com/Studentst-Distribution.html).
+Öğrencinin *t*dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [öğrenciler t-Distribution](https://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## <a name="example"></a>Örnek
 
@@ -159,11 +159,11 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<random >
+**Üst bilgi:** \<rastgele >
 
 **Ad alanı:** std
 
-## <a name="student_t_distribution"></a>student_t_distribution::student_t_distribution
+## <a name="student_t_distributionstudent_t_distribution"></a><a name="student_t_distribution"></a>student_t_distribution:: student_t_distribution
 
 Dağıtımı oluşturur.
 
@@ -174,10 +174,10 @@ explicit student_t_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*n* \
-@No__t_0 dağıtım parametresi.
+*n*\
+`n` dağıtım parametresi.
 
-*para* \
+*para*\
 Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -186,9 +186,9 @@ Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 İlk Oluşturucu, depolanan `n` değeri *n*değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. `param()` üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>student_t_distribution::p aram_type
+## <a name="student_t_distributionparam_type"></a><a name="param_type"></a>student_t_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 
@@ -205,10 +205,10 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*n* \
-@No__t_0 dağıtım parametresi.
+*n*\
+`n` dağıtım parametresi.
 
-*sağ* \
+*sağ*\
 Bu, Karşılaştırılacak `param_type` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -219,4 +219,4 @@ Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, v
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<random >](../standard-library/random.md)
+[\<rastgele >](../standard-library/random.md)

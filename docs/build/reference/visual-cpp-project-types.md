@@ -10,16 +10,16 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: f234f9a05a871fe474b783a68f644cb4f2b1c2e7
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f322d16bbbe91d229fb8efdfb5f2d35cb0a686ae
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498436"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079221"
 ---
 # <a name="c-project-templates"></a>C++ proje şablonları
 
-Visual Studio proje şablonları, oluşturmak istediğiniz proje türü için uygun olan kaynak kodu dosyalarını, derleyici seçeneklerini, menüleri, `#include` araç çubuklarını, simgeleri, başvuruları ve deyimleri oluşturur. Visual Studio çeşitli C++ proje şablonu türlerini içerir ve bunların birçoğu için sihirbazları sağlar, böylece projelerinizi oluşturduğunuz şekilde özelleştirebilirsiniz. Projeyi oluşturduktan hemen sonra, oluşturup uygulamayı çalıştırabilirsiniz; uygulamanızı geliştirirken zaman zaman oluşturmak iyi bir uygulamadır.
+Visual Studio proje şablonları, oluşturmak istediğiniz proje türü için uygun olan kaynak kodu dosyaları, derleyici seçenekleri, menüler, araç çubukları, simgeler, başvurular ve `#include` deyimleri oluşturur. Visual Studio çeşitli C++ proje şablonu türlerini içerir ve bunların birçoğu için sihirbazları sağlar, böylece projelerinizi oluşturduğunuz şekilde özelleştirebilirsiniz. Projeyi oluşturduktan hemen sonra, oluşturup uygulamayı çalıştırabilirsiniz; uygulamanızı geliştirirken zaman zaman oluşturmak iyi bir uygulamadır.
 
 > [!NOTE]
 > Proje şablonları kullanarak C++ C dili bir proje oluşturabilirsiniz. Oluşturulan projede,. cpp dosya adı uzantısına sahip dosyaları bulun ve. c olarak değiştirin. Ardından, proje için **Proje özellikleri** sayfasında (çözüm için değil), **yapılandırma özellikleri**, **C/C++**  öğesini genişletin ve **Gelişmiş**' i seçin. **Derleme olarak derle** ayarını **C kodu olarak derle (/TC)** olarak değiştirin.
@@ -52,7 +52,7 @@ Visual Studio 'ya dahil edilen proje şablonları ürün sürümüne ve yükledi
 |----------------------|-----------------------------|
 |[ATL projesi](../../atl/reference/creating-an-atl-project.md)|Etkin şablon kitaplığını kullanan bir proje.|
 
-### <a name="test"></a>Test
+### <a name="test"></a>Test etme
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
@@ -89,5 +89,3 @@ Visual Studio yüklemenize C++ Windows Universal platform araçları bileşeni e
 ## <a name="todo-comments"></a>TODO açıklamaları
 
 Bir proje şablonu tarafından oluşturulan dosyaların birçoğu, kendi kaynak kodunuzu sağlayabileceğiniz yeri belirlemenize yardımcı olacak TODO açıklamalarını içerir. Kod ekleme hakkında daha fazla bilgi için bkz. [kod sihirbazları Ile Işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md) ve [kaynak dosyalarıyla çalışma](../../windows/working-with-resource-files.md).
-
-

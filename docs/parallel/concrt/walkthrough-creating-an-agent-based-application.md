@@ -5,18 +5,18 @@ helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 3ece04811a75fba22db447875dc6ed08c22987b5
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 25fffd018c45200571f99dc87ab8ffe29bb6667f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142049"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080002"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 
 Bu konu, temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını açıklamaktadır. Bu kılavuzda, bir metin dosyasından verileri zaman uyumsuz olarak okuyan bir aracı oluşturabilirsiniz. Uygulama, bu dosyanın içeriğinin sağlama toplamını hesaplamak için Adler-32 sağlama algoritmasını kullanır.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu izlenecek yolu tamamlamak için aşağıdaki konuları anlamanız gerekir:
 
@@ -28,7 +28,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki konuları anlamanız gerekir:
 
 - [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a>Başlıklı
 
 Bu izlenecek yol, aşağıdaki görevlerin nasıl gerçekleştirileceğini göstermektedir:
 
@@ -38,7 +38,7 @@ Bu izlenecek yol, aşağıdaki görevlerin nasıl gerçekleştirileceğini göst
 
 - [Uygulamada file_reader sınıfını kullanma](#useagentclass)
 
-## <a name="createapplication"></a>Konsol uygulaması oluşturma
+## <a name="creating-the-console-application"></a><a name="createapplication"></a>Konsol uygulaması oluşturma
 
 Bu bölümde, programın kullanacağı üstbilgi dosyalarına C++ başvuran bir konsol uygulamasının nasıl oluşturulacağı gösterilmektedir. İlk adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Bu sayfanın sol üst kısmında sürüm seçicinin doğru ayarlandığından emin olun.
 
@@ -48,7 +48,7 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına C++ başvuran bir 
 
 1. **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden **dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın. 
+1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
 
 1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, projenin adı olarak `BasicAgent` girin ve isterseniz proje konumunu belirtin.
 
@@ -80,7 +80,7 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına C++ başvuran bir 
 
 [[Üst](#top)]
 
-## <a name="createagentclass"></a>File_reader sınıfı oluşturma
+## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a>File_reader sınıfı oluşturma
 
 Bu bölümde `file_reader` sınıfının nasıl oluşturulacağı gösterilmektedir. Çalışma zamanı, her aracıyı kendi bağlamında iş gerçekleştirecek şekilde zamanlar. Bu nedenle, işi zaman uyumlu olarak gerçekleştiren, ancak diğer bileşenleriyle zaman uyumsuz olarak etkileşim kuran bir aracı oluşturabilirsiniz. `file_reader` sınıfı, belirli bir giriş dosyasından verileri okur ve bu dosyadaki verileri belirli bir hedef bileşene gönderir.
 
@@ -128,7 +128,7 @@ Aşağıdaki örnek file_reader. h öğesinin tüm içeriğini gösterir.
 
 [[Üst](#top)]
 
-## <a name="useagentclass"></a>Uygulamada file_reader sınıfını kullanma
+## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a>Uygulamada file_reader sınıfını kullanma
 
 Bu bölümde, bir metin dosyasının içeriğini okumak için `file_reader` sınıfının nasıl kullanılacağı gösterilmektedir. Ayrıca, bu dosya verilerini alan ve Adler-32 sağlama toplamını hesaplayan bir [concurrency:: Call](../../parallel/concrt/reference/call-class.md) nesnesinin nasıl oluşturulacağını gösterir.
 

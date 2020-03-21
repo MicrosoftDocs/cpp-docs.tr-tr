@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri'
+title: 'Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets, creating
@@ -9,61 +9,61 @@ helpviewer_keywords:
 - ODBC recordsets, closing
 - ODBC recordsets, opening
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-ms.openlocfilehash: b4896dff711d87db05334afc0345c15da2fa23e6
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: e7aa4c0fc2a0acfe7b8df2f50f99bf44eb1ef456
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707993"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075914"
 ---
-# <a name="recordset-creating-and-closing-recordsets-odbc"></a>Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri
+# <a name="recordset-creating-and-closing-recordsets-odbc"></a>Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)
 
-> [!NOTE] 
-> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+> [!NOTE]
+> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bir kayıt kümesini kullanmak için bir kayıt kümesi nesnesi oluşturun ve sonra çağrı kendi `Open` kümesinin sorgusunu çalıştırın ve kayıtları seçmek için üye işlevi. Kayıt kümesi ile işiniz bittiğinde kapatın ve nesne yok.
+Bir kayıt kümesi kullanmak için bir kayıt kümesi nesnesi oluşturun ve ardından kayıt kümesinin sorgusunu çalıştırmak ve kayıtlar ' ı seçmek üzere `Open` üye işlevini çağırın. Kayıt kümesiyle bitirdiğinizde nesneyi kapatın ve yok edin.
 
-Bu konu şunları açıklar:
+Bu konuda aşağıdakiler açıklanmaktadır:
 
-- [Bir kayıt kümesi nesnesi oluşturmak nasıl ve ne zaman](#_core_creating_recordsets_at_run_time).
+- [Bir kayıt kümesi nesnesi ne zaman ve nasıl oluşturulur](#_core_creating_recordsets_at_run_time).
 
-- [Ne zaman ve nasıl kayıt kümesinin davranışını kümesini parametreleştirme, filtreleme, sıralama veya kilitleyerek belirtebilme](#_core_setting_recordset_options).
+- [Ne zaman ve, filtre uygulayan, filtreleyerek, sıralayarak veya kilitleyerek kayıt kümesinin davranışını nasıl niteleyebilirsiniz?](#_core_setting_recordset_options)
 
-- [Ne zaman ve nasıl kayıt kümesi nesnesi kapatma](#_core_closing_a_recordset).
+- [Bir kayıt kümesi nesnesini ne zaman ve nasıl kapatırsınız](#_core_closing_a_recordset).
 
-##  <a name="_core_creating_recordsets_at_run_time"></a> Çalışma zamanında kayıt kümeleri oluşturma
+##  <a name="creating-recordsets-at-run-time"></a><a name="_core_creating_recordsets_at_run_time"></a>Çalışma zamanında kayıt kümeleri oluşturma
 
-Programınızda kayıt nesneleri oluşturmadan önce genellikle uygulamaya özgü kayıt kümesi sınıfları yazın. Bu ilk adım hakkında daha fazla bilgi için bkz: [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
+Programınızda kayıt kümesi nesneleri oluşturabilmeniz için, genellikle uygulamaya özel kayıt kümesi sınıfları yazarsınız. Bu ön adım hakkında daha fazla bilgi için bkz. [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
 
-Bir veri kaynağındaki kayıtları seçmek gerektiğinde dinamik veya anlık görüntü bir nesneyi açın. Oluşturulacak nesne türü için yapmanız gerekenler üzerinde bağlıdır verilerle uygulamanız ve hangi ODBC sürücüsünün destekler. Daha fazla bilgi için [Dynaset](../../data/odbc/dynaset.md) ve [anlık görüntü](../../data/odbc/snapshot.md).
+Bir veri kaynağından kayıtlar seçmeniz gerektiğinde bir Dynaset veya anlık görüntü nesnesi açın. Oluşturulacak nesnenin türü, uygulamanızdaki verilerle ne yapmanız gerektiğini ve ODBC sürücünüzün neleri desteklediğine bağlıdır. Daha fazla bilgi için bkz. [Dynaset](../../data/odbc/dynaset.md) ve [anlık görüntü](../../data/odbc/snapshot.md).
 
 #### <a name="to-open-a-recordset"></a>Bir kayıt kümesi açmak için
 
-1. Bir nesne oluşturun, `CRecordset`-türetilmiş sınıf.
+1. `CRecordset`türetilmiş sınıfınızın bir nesnesini oluşturun.
 
-   Yığın veya yığın çerçevesi bir işlev nesnesi oluşturabilirsiniz.
+   Nesneyi yığında veya bir işlevin yığın çerçevesinde oluşturabilirsiniz.
 
-1. İsteğe bağlı olarak varsayılan kayıt davranışını değiştirin. Kullanılabilir seçenekleri için bkz. [ayarı kayıt seçenekleri](#_core_setting_recordset_options).
+1. İsteğe bağlı olarak varsayılan kayıt kümesi davranışını değiştirin. Kullanılabilir seçenekler için bkz. [kayıt kümesi seçeneklerini ayarlama](#_core_setting_recordset_options).
 
-1. Nesnenin [açık](../../mfc/reference/crecordset-class.md#open) üye işlevi.
+1. Nesnenin [Open](../../mfc/reference/crecordset-class.md#open) üye işlevini çağırın.
 
-Oluşturucusunun içinde bir işaretçi geçirin bir `CDatabase` nesne veya framework oluşturan bir geçici veritabanı nesnesini kullanmak için NULL ve açılır tarafından döndürülen bağlantı dizesini geçirin [GetDefaultConnect](../../mfc/reference/crecordset-class.md#getdefaultconnect) üye işlevi. `CDatabase` Nesnesi zaten bağlı bir veri kaynağına.
+Oluşturucuda, `CDatabase` nesnesine bir işaretçi geçirin veya bir veri geçirin ve bu nesnenin, [GetDefaultConnect](../../mfc/reference/crecordset-class.md#getdefaultconnect) üye işlevi tarafından döndürülen bağlantı dizesine göre oluşturduğu ve açtığı geçici bir veritabanı nesnesini kullanın. `CDatabase` nesnesi zaten bir veri kaynağına bağlı olabilir.
 
-Çağrı `Open` SQL veri kaynağından kayıtları seçmek için kullanır. (Varsa) seçilen ilk kayıt geçerli bir kayıttır. Kayıt kümesi nesnenin alan veri üyeleri bu kaydın alanlarının değerlerini depolanır. Herhangi bir kayıt seçildiyse, hem `IsBOF` ve `IsEOF` üye işlevleri, 0 döndürür.
+`Open` çağrısı, veri kaynağından kayıtları seçmek için SQL 'i kullanır. Seçilen ilk kayıt (varsa) geçerli kayıttır. Bu kaydın alanlarının değerleri, kayıt kümesi nesnesinin alan veri üyelerinde depolanır. Herhangi bir kayıt seçildiyse, hem `IsBOF` hem de `IsEOF` üye işlevleri 0 döndürür.
 
-İçinde [açık](../../mfc/reference/crecordset-class.md#open) çağrı, şunları yapabilirsiniz:
+[Açık](../../mfc/reference/crecordset-class.md#open) çağrın içinde şunları yapabilirsiniz:
 
-- Kayıt kümesi bir dinamik anlık görüntü olup olmadığını belirtin. Kayıt kümeleri varsayılan olarak anlık görüntü olarak açın. Veya yalnızca ileri kaydırma, aynı anda tek bir kayıtta sağlayan bir salt iletme kayıt belirtebilirsiniz.
+- Kayıt kümesinin bir Dynaset mi yoksa anlık görüntü mi olduğunu belirtin. Kayıt kümeleri varsayılan olarak anlık görüntüler olarak açılır. Ya da, tek seferde bir kayıt olmak üzere yalnızca ileriye doğru kaydırmaya izin veren bir salt iletme kayıt kümesi belirtebilirsiniz.
 
-   Varsayılan olarak, bir kayıt kümesi içinde depolanan varsayılan türü kullanır. `CRecordset` veri üyesi `m_nDefaultType`. Sihirbazları başlatmak için kod yazma `m_nDefaultType` sihirbazda seçtiğiniz kayıt kümesi türü. Bu varsayılanı kabul etmek yerine başka bir kayıt kümesi türü yerine kullanabilirsiniz.
+   Varsayılan olarak, bir kayıt kümesi `CRecordset` veri üyesi `m_nDefaultType`depolanan varsayılan türü kullanır. Sihirbazlar, sihirbazda seçtiğiniz kayıt kümesi türüne `m_nDefaultType` başlatmak için kod yazar. Bu varsayılanı kabul etmek yerine, başka bir kayıt kümesi türünü değiştirebilirsiniz.
 
-- Varsayılan SQL değiştirmek için bir dize belirtin **seçin** kayıt kümesini oluşturan bir ifade.
+- Kayıt kümesini oluşturan varsayılan SQL **Select** ifadesini değiştirmek için bir dize belirtin.
 
-- Kayıt kümesi salt okunur veya salt olup olmadığını belirtin. Kayıt kümeleri varsayılan olarak, güncelleştirme tam izin ver, ancak, yeni kayıtları eklemeye yalnızca sınırlayabilirsiniz veya tüm güncelleştirmeleri engelleyebilirsiniz.
+- Kayıt kümesinin salt okunurdur mi yoksa salt Ekle mi olduğunu belirtin. Kayıt kümeleri varsayılan olarak tam güncelleştirmeye izin verir, ancak bunu yalnızca yeni kayıtlar eklemeye veya tüm güncelleştirmelere izin vermemeyi sınırlayabilirsiniz.
 
-Aşağıdaki örnek, sınıfın bir salt okunur anlık görüntü nesnesi açmak gösterilmektedir `CStudentSet`, uygulamaya özgü sınıfı:
+Aşağıdaki örnek, uygulamaya özgü bir sınıf olan `CStudentSet`sınıfının salt okunurdur bir anlık görüntü nesnesinin nasıl açılacağını gösterir:
 
 ```cpp
 // Construct the snapshot object
@@ -74,44 +74,44 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
 // Use the snapshot to operate on its records...
 ```
 
-Çağırdıktan sonra `Open`, nesnenin üye işlevleri ve veri üyelerine kayıtlarıyla çalışmak üzere kullanın. Bazı durumlarda, requery veya veri kaynağı üzerinde oluşan değişikliklerin eklenmesi için kayıt kümesini yenilemek isteyebilirsiniz. Daha fazla bilgi için [kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md).
+`Open`çağırdıktan sonra, kayıtlarla çalışmak için nesnenin üye işlevlerini ve veri üyelerini kullanın. Bazı durumlarda, veri kaynağında gerçekleşen değişiklikleri dahil etmek için kayıt kümesini yeniden sorgulamak veya yenilemek isteyebilirsiniz. Daha fazla bilgi için bkz. [kayıt kümesi: bir kayıt kümesini yeniden sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md).
 
 > [!TIP]
->  Geliştirme sırasında kullandığınız bağlantı dizesi, son kullanıcılarınızın gereken aynı bağlantı dizesini olmayabilir. Bu konuda, uygulamanızın genelleştiriliyor hakkında daha fazla fikir için bkz [veri kaynağı: Bağlantıları yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
+>  Geliştirme sırasında kullandığınız bağlantı dizesi, son kullanıcılarınızın ihtiyacı olan bağlantı dizesi olmayabilir. Uygulamanızı bu şekilde genelleştirerek, bkz. [veri kaynağı: bağlantıları yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
 
-##  <a name="_core_setting_recordset_options"></a> Kayıt kümesi seçeneklerini ayarlama
+##  <a name="setting-recordset-options"></a><a name="_core_setting_recordset_options"></a>Kayıt kümesi seçeneklerini ayarlama
 
-Kayıt kümesi nesnenizi oluşturduktan sonra ancak çağırmadan önce `Open` kayıtları seçmek için kayıt kümesinin davranışını denetlemek için bazı seçenekleri ayarlamak isteyebilirsiniz. Tüm kayıt kümelerini için şunları yapabilirsiniz:
+Kayıt kümesi nesnenizi oluşturduktan sonra, kayıtları seçmek için `Open` çağırmadan önce, kayıt kümesinin davranışını denetlemek için bazı seçenekler ayarlamak isteyebilirsiniz. Tüm kayıt kümelerinde şunları yapabilirsiniz:
 
-- Belirtin bir [filtre](../../data/odbc/recordset-filtering-records-odbc.md) kayıt seçimi sınırlamak için.
+- Kayıt seçimini kısıtlamak için bir [filtre](../../data/odbc/recordset-filtering-records-odbc.md) belirtin.
 
-- Belirtin bir [sıralama](../../data/odbc/recordset-sorting-records-odbc.md) kayıtlar için düzeni.
+- Kayıtlar için bir [sıralama](../../data/odbc/recordset-sorting-records-odbc.md) düzeni belirtin.
 
-- Belirtin [parametreleri](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) alınan veya çalışma zamanında hesaplanan bilgileri kullanarak kayıtları seçebilmeniz için.
+- Çalışma zamanında alınan veya hesaplanan bilgileri kullanarak kayıtları seçebilmeniz için [parametreleri](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) belirtin.
 
-Koşullar doğru olduğunda, aşağıdaki seçeneği ayarlayabilirsiniz:
+Koşullar doğru ise aşağıdaki seçeneği de ayarlayabilirsiniz:
 
-- Kayıt kümesi güncelleştirilemez ve kilitleme seçenekleri destekler, belirtin [kilitleme](../../data/odbc/recordset-locking-records-odbc.md) güncelleştirmeleri için kullanılan yöntem.
+- Kayıt kümesi güncelleştirilebilir ise ve kilitleme seçeneklerini destekliyorsa, güncelleştirmeler için kullanılan [kilitleme](../../data/odbc/recordset-locking-records-odbc.md) yöntemini belirtin.
 
 > [!NOTE]
->  Çağırmadan önce kayıt seçimini etkilemek için bu seçenekleri ayarlamalısınız `Open` üye işlevi.
+>  Kayıt seçimini etkilemek için, `Open` üye işlevini çağırmadan önce bu seçenekleri ayarlamanız gerekir.
 
-##  <a name="_core_closing_a_recordset"></a> Bir kayıt kümesi kapatma
+##  <a name="closing-a-recordset"></a><a name="_core_closing_a_recordset"></a>Kayıt kümesini kapatma
 
-Kümenizin ile işiniz bittiğinde, atabilirsiniz ve kendi bellek ayırması gerekir.
+Kayıt kümeniz ile bitirdiğinizde, bunu atmalısınız ve belleğini serbest bırakın.
 
-#### <a name="to-close-a-recordset"></a>Bir kayıt kümesi kapatmak için
+#### <a name="to-close-a-recordset"></a>Bir kayıt kümesini kapatmak için
 
-1. Çağrı, [Kapat](../../mfc/reference/crecordset-class.md#close) üye işlevi.
+1. [Close](../../mfc/reference/crecordset-class.md#close) üye işlevini çağırın.
 
-1. Kayıt kümesi nesnesi yok.
+1. Kayıt kümesi nesnesini yok edin.
 
-   Yığın çerçevesinin işlev üzerinde bildirilen, nesne kapsam dışına çıktığında, nesne otomatik olarak yok edilir. Aksi takdirde kullanın **Sil** işleci.
+   Bir işlevin yığın çerçevesinde bildirdiyseniz, nesne kapsam dışına geçtiğinde nesne otomatik olarak yok edilir. Aksi takdirde, **Delete** işlecini kullanın.
 
-`Close` kayıt kümesi boşaltır `HSTMT` tanıtıcı. C++ nesne yok.
+`Close` kayıt kümesinin `HSTMT` tanıtıcısını serbest bırakır. C++ Nesneyi yok etmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kaydırma (ODBS)](../../data/odbc/recordset-scrolling-odbc.md)<br/>
+[Kayıt Kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>
 [Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)

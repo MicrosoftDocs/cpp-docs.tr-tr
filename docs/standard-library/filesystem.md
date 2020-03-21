@@ -12,12 +12,12 @@ no-loc:
 - wchar_t
 - char16_t
 - char32_t
-ms.openlocfilehash: f9e384953a4e675ad6235a274c447031976a1585
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 86be11da1e2cef2fe0ca12691aeb0ce3dbe94202
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441716"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076506"
 ---
 # &lt;filesystem&gt;
 
@@ -32,7 +32,7 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> Visual Studio 2017 ' un sürümünde, \<filesystem> üst bilgisi henüz C++ standart değildi. C++Visual Studio 2017 RTW ' de, [ISO/ıEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)içinde bulunan son taslak standardını uygular. Visual Studio 2017 sürüm 15,7 ve üzeri, yeni C++ 17 \<filesystem> standardını destekler.
+> Visual Studio 2017 ' un sürümünde, \<filesystem> üst bilgisi henüz C++ standart değildi. C++Visual Studio 2017 RTW ' de, [ISO/ıEC JTC 1/SC 22/WG 21 N4100](https://wg21.link/n4100)içinde bulunan son taslak standardını uygular. Visual Studio 2017 sürüm 15,7 ve üzeri, yeni C++ 17 \<filesystem> standardını destekler.
 > Bu, önceki `std::experimental` sürümüyle uyumlu olmayan tamamen yeni bir uygulama. Oluşturmaksızın desteği, hata düzeltmeleri ve standart-gerekli davranıştaki değişiklikler tarafından gerekli hale getirilir. Şu anda \<filesystem> dahil, yeni `std::filesystem` ve önceki `std::experimental::filesystem`sağlar. \<experimental/filesystem> dahil olmak üzere yalnızca eski experimental uygulamasını sağlar. experimental uygulama, kitaplıkların sonraki ABı-kırılımı sürümünde kaldırılacak.
 
 Bu üst bilgi, ana bilgisayar işletim sistemi sınıfının iki geniş sınıfından biri için dosya sistemlerini destekler: Microsoft Windows ve POSIX.

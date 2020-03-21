@@ -38,12 +38,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-ms.openlocfilehash: a3765da94560eb84a1d441a6b25c42822fc857bb
-ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
+ms.openlocfilehash: 38979a058cd6a8b029961708b4197daea2826d85
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79509477"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077164"
 ---
 # <a name="hstring-class"></a>HString Sınıfı
 
@@ -61,14 +61,14 @@ Windows Çalışma Zamanı, [HString](/windows/win32/WinRT/hstring) tanıtıcıl
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 Adı                                | Açıklama
 ----------------------------------- | -----------------------------------------------------
 [HString:: HSTRING](#hstring)        | `HString` sınıfının yeni bir örneğini başlatır.
 [HString:: ~ HSTRING](#tilde-hstring) | `HString` sınıfının geçerli örneğini yok eder.
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 Adı                                     | Açıklama
 ---------------------------------------- | -------------------------------------------------------------------------------------------------------------
@@ -83,7 +83,7 @@ Adı                                     | Açıklama
 [HString:: Release](#release)             | Temel alınan dize değerini siler ve geçerli `HString` nesnesini boş bir değere ayırır.
 [HString:: set](#set)                     | Geçerli `HString` nesnesinin değerini belirtilen geniş karakterli dize veya `HString` parametresine ayarlar.
 
-### <a name="public-operators"></a>Genel İşleçler
+### <a name="public-operators"></a>Ortak İşleçler
 
 Adı                                         | Açıklama
 -------------------------------------------- | ----------------------------------------------------------------------------
@@ -102,7 +102,7 @@ Adı                                         | Açıklama
 
 **Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="tilde-hstring"></a>HString:: ~ HSTRING
+## <a name="hstringhstring"></a><a name="tilde-hstring"></a>HString:: ~ HSTRING
 
 `HString` sınıfının geçerli örneğini yok eder.
 
@@ -110,7 +110,7 @@ Adı                                         | Açıklama
 ~HString() throw()
 ```
 
-## <a name="attach"></a>HString:: Attach
+## <a name="hstringattach"></a><a name="attach"></a>HString:: Attach
 
 Belirtilen `HString` nesnesini geçerli `HString` nesnesiyle ilişkilendirir.
 
@@ -125,7 +125,7 @@ void Attach(
 *HSTR*<br/>
 Varolan bir `HString` nesnesi.
 
-## <a name="copyto"></a>HString:: CopyTo
+## <a name="hstringcopyto"></a><a name="copyto"></a>HString:: CopyTo
 
 Geçerli `HString` nesnesini bir HSTRING nesnesine kopyalar.
 
@@ -144,7 +144,7 @@ Kopyayı alan HSTRıNG.
 
 Bu yöntem, [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) işlevini çağırır.
 
-## <a name="detach"></a>HString::D etach
+## <a name="hstringdetach"></a><a name="detach"></a>HString::D etach
 
 Belirtilen `HString` nesnesini, temel aldığı değerle kaldırır.
 
@@ -156,7 +156,7 @@ HSTRING Detach() throw()
 
 Ayırma işlemi başlatılmadan önce temel alınan `HString` değeri.
 
-## <a name="get"></a>HString:: Get
+## <a name="hstringget"></a><a name="get"></a>HString:: Get
 
 Temel alınan HSTRıNG tanıtıcısının değerini alır.
 
@@ -168,7 +168,7 @@ HSTRING Get() const throw()
 
 Temel alınan HSTRıNG tanıtıcısının değeri
 
-## <a name="getaddressof"></a>HString:: GetAddressOf
+## <a name="hstringgetaddressof"></a><a name="getaddressof"></a>HString:: GetAddressOf
 
 Temel alınan HSTRıNG tanıtıcısına bir işaretçi alır.
 
@@ -184,7 +184,7 @@ Temel alınan HSTRıNG tanıtıcısına yönelik bir işaretçi.
 
 Bu işlemden sonra, temeldeki HSTRıNG tanıtıcısının dize değeri yok edilir.
 
-## <a name="getrawbuffer"></a>HSTRING:: GetRawBuffer
+## <a name="hstringgetrawbuffer"></a><a name="getrawbuffer"></a>HSTRING:: GetRawBuffer
 
 Temel alınan dize verilerine yönelik bir işaretçi alır.
 
@@ -200,8 +200,7 @@ const wchar_t* GetRawBuffer(unsigned int* length) const;
 
 Temel alınan dize verilerine yönelik **const** işaretçisi.
 
-
-## <a name="hstring"></a>HString:: HSTRING
+## <a name="hstringhstring"></a><a name="hstring"></a>HString:: HSTRING
 
 `HString` sınıfının yeni bir örneğini başlatır.
 
@@ -224,7 +223,7 @@ Varolan bir `HString` nesnesi.
 
 İkinci Oluşturucu, var olan *diğer* parametrenin değerine yeni bir `HString` nesnesini başlatır ve ardından *diğer* parametreyi yok eder.
 
-## <a name="isvalid"></a>HString:: IsValid
+## <a name="hstringisvalid"></a><a name="isvalid"></a>HString:: IsValid
 
 Geçerli `HString` nesnesinin boş olup olmadığını gösterir.
 
@@ -236,7 +235,7 @@ bool IsValid() const throw()
 
 geçerli `HString` nesnesi boş değilse **true** ; Aksi takdirde, **false**.
 
-## <a name="makereference"></a>HString:: MakeReference
+## <a name="hstringmakereference"></a><a name="makereference"></a>HString:: MakeReference
 
 Belirtilen dize parametresinden bir `HStringReference` nesnesi oluşturur.
 
@@ -266,7 +265,7 @@ Bu işlemde kullanılacak *Str* parametre arabelleğinin uzunluk üst sınırı.
 
 Değeri belirtilen *Str* parametresiyle aynı olan `HStringReference` nesne.
 
-## <a name="operator-assign"></a>HString:: operator = Işleci
+## <a name="hstringoperator-operator"></a><a name="operator-assign"></a>HString:: operator = Işleci
 
 Başka bir `HString` nesnesinin değerini geçerli `HString` nesnesine kaydırır.
 
@@ -283,7 +282,7 @@ Varolan bir `HString` nesnesi.
 
 Varolan *diğer* nesnenin değeri geçerli `HString` nesnesine kopyalanır ve sonra *diğer* nesne yok edilir.
 
-## <a name="operator-equality"></a>HString:: operator = = Işleci
+## <a name="hstringoperator-operator"></a><a name="operator-equality"></a>HString:: operator = = Işleci
 
 İki parametrenin eşit olup olmadığını gösterir.
 
@@ -321,7 +320,7 @@ Karşılaştırılacak ikinci parametre. *RHS* bir `HString` veya `HStringRefere
 
 *LHS* ve *RHS* parametreleri eşitse **true** ; Aksi takdirde, **false**.
 
-## <a name="operator-inequality"></a>HString:: operator! = Işleci
+## <a name="hstringoperator-operator"></a><a name="operator-inequality"></a>HString:: operator! = Işleci
 
 İki parametrenin eşit olup olmadığını gösterir.
 
@@ -354,7 +353,7 @@ Karşılaştırılacak ikinci parametre. *RHS* bir `HString` veya `HStringRefere
 
 *LHS* ve *RHS* parametreleri eşitse **true** ; Aksi takdirde, **false**.
 
-## <a name="operator-less-than"></a>HString:: operator&lt; Işleci
+## <a name="hstringoperatorlt-operator"></a><a name="operator-less-than"></a>HString:: operator&lt; Işleci
 
 İlk parametrenin ikinci parametreden küçük olup olmadığını gösterir.
 
@@ -376,7 +375,7 @@ Karşılaştırılacak ikinci parametre. *RHS* bir `HString`başvuru olabilir.
 
 *LHS* parametresi *RHS* parametresinden küçükse **true** ; Aksi takdirde, **false**.
 
-## <a name="release"></a>HString:: Release
+## <a name="hstringrelease"></a><a name="release"></a>HString:: Release
 
 Temel alınan dize değerini siler ve geçerli `HString` nesnesini boş bir değere ayırır.
 
@@ -384,7 +383,7 @@ Temel alınan dize değerini siler ve geçerli `HString` nesnesini boş bir değ
 void Release() throw()
 ```
 
-## <a name="set"></a>HString:: set
+## <a name="hstringset"></a><a name="set"></a>HString:: set
 
 Geçerli `HString` nesnesinin değerini belirtilen geniş karakterli dize veya `HString` parametresine ayarlar.
 

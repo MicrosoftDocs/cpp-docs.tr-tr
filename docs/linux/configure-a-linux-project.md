@@ -2,12 +2,12 @@
 title: Visual Studio C++ 'da Linux projesi yapılandırma
 ms.date: 06/11/2019
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 5d42ca587946d3b5adcbd3b6fe35a6c1e1bb9ae8
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 853afc39412ecd07f3ec6c9ad42d0ab599bfe17e
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419387"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077734"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -17,9 +17,9 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-Bu konu başlığında [, Visual Studio 'da yeni C++ bir Linux projesi oluşturma](create-a-new-linux-project.md)bölümünde açıklandığı gibi bir C++ Linux projesinin nasıl yapılandırılacağı açıklanmaktadır. CMake Linux projeleri için bkz. [Linux CMake projesini yapılandırma ](cmake-linux-project.md). 
+Bu konu başlığında [, Visual Studio 'da yeni C++ bir Linux projesi oluşturma](create-a-new-linux-project.md)bölümünde açıklandığı gibi bir C++ Linux projesinin nasıl yapılandırılacağı açıklanmaktadır. CMake Linux projeleri için bkz. [Linux CMake projesini yapılandırma ](cmake-linux-project.md).
 
-Bir Linux projesini fiziksel bir Linux makinesini, sanal makineyi veya [Linux Için Windows alt sistemini](/windows/wsl/about) (WSL) hedeflemek üzere yapılandırabilirsiniz. 
+Bir Linux projesini fiziksel bir Linux makinesini, sanal makineyi veya [Linux Için Windows alt sistemini](/windows/wsl/about) (WSL) hedeflemek üzere yapılandırabilirsiniz.
 
 ::: moniker range="vs-2019"
 
@@ -92,7 +92,7 @@ Tüm derleme uzak bir bilgisayarda (veya WSL) bulunduğundan, proje özellikleri
 
 ![Derleme olayları](media/settings_buildevents.png)
 
-## <a name="remote_intellisense"></a>Uzak sistemlerde üst bilgiler için IntelliSense
+## <a name="intellisense-for-headers-on-remote-systems"></a><a name="remote_intellisense"></a>Uzak sistemlerde üst bilgiler için IntelliSense
 
 **Bağlantı Yöneticisi**'nde yeni bir bağlantı eklediğinizde, Visual Studio, uzak sistemdeki derleyicinin ekleme dizinlerini otomatik olarak algılar. Daha sonra Visual Studio, bu dosyaları yerel Windows makinenizde bir dizine kopyalar. Bundan sonra, bu bağlantıyı bir Visual Studio veya CMake projesinde kullandığınızda, bu dizinteki üstbilgiler IntelliSense sağlamak için kullanılır.
 

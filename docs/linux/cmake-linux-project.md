@@ -3,12 +3,12 @@ title: Visual Studio 'da Linux CMake projesi oluşturma ve yapılandırma
 description: Visual Studio 'da bir Linux CMake projesi oluşturma, yapılandırma, düzenleme ve derleme
 ms.date: 10/04/2019
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: a0b98e1d0e9ca5e68f5fd12c458fe29b9835b65c
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d781d1995a4c9a60932d498d2ad7cfea97ee023f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446859"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077658"
 ---
 # <a name="create-and-configure-a-linux-cmake-project"></a>Linux CMake projesi oluşturma ve yapılandırma
 
@@ -37,14 +37,14 @@ Visual Studio 'da CMake desteği hakkında genel bilgi için bkz. [Visual Studio
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-İlk olarak, CMake bileşeni de dahil olmak üzere iş yükünün yüklü **olduğu C++ Linux geliştirdiğinizden** emin olun. Bkz. [Visual C++ Studio 'da Linux iş yükünü yüklemeyi](download-install-and-setup-the-linux-development-workload.md). 
+İlk olarak, CMake bileşeni de dahil olmak üzere iş yükünün yüklü **olduğu C++ Linux geliştirdiğinizden** emin olun. Bkz. [Visual C++ Studio 'da Linux iş yükünü yüklemeyi](download-install-and-setup-the-linux-development-workload.md).
 
-Linux sisteminde aşağıdakilerin yüklü olduğundan emin olun: 
+Linux sisteminde aşağıdakilerin yüklü olduğundan emin olun:
 
 - GCC
 - GDB
 - rsync
-- zip 
+- zip
 
 ::: moniker range="vs-2019"
 
@@ -92,7 +92,7 @@ Klasörü açtığınızda, Visual Studio CMakeLists. txt dosyasını ayrıştı
 
 ::: moniker range="vs-2019"
 
-Linux için Windows alt sistemini hedeflemek için ana araç çubuğundaki yapılandırma açılan kutusunda bulunan **yapılandırmaları Yönet** ' e tıklayın. Ardından **yapılandırma Ekle** düğmesine basın ve CLANG/LLVM araç takımını kullanıyorsanız, GCC veya Clang türevlerini kullanıyorsanız **WSL-Debug** veya **WSL-Release** ' i seçin. 
+Linux için Windows alt sistemini hedeflemek için ana araç çubuğundaki yapılandırma açılan kutusunda bulunan **yapılandırmaları Yönet** ' e tıklayın. Ardından **yapılandırma Ekle** düğmesine basın ve CLANG/LLVM araç takımını kullanıyorsanız, GCC veya Clang türevlerini kullanıyorsanız **WSL-Debug** veya **WSL-Release** ' i seçin.
 
 **Visual Studio 2019 sürüm 16,1** WSL 'yi hedeflerken, Linux üzerindeki derleyicinin kaynak dosyalarınızın bulunduğu Windows dosya sistemine doğrudan erişimi olduğundan, kaynak veya üst bilgilerin kopyalanması gerekmez. (Windows sürüm 1903 ve üzeri sürümlerde, Windows uygulamaları Linux üst bilgi dosyalarına doğrudan erişebilir, ancak Visual Studio henüz bu özellikten yararlanamaz).
 
@@ -102,13 +102,13 @@ Uzak hedefler için, Visual Studio varsayılan olarak **araçlar** >  > **Seçen
 
 Uzak bir Linux hedefi belirtirseniz, kaynağınız uzak sisteme kopyalanır.
 
-Bir hedef seçtikten sonra CMake, projenizin CMake önbelleğini oluşturmak için Linux sisteminde otomatik olarak çalışır. 
+Bir hedef seçtikten sonra CMake, projenizin CMake önbelleğini oluşturmak için Linux sisteminde otomatik olarak çalışır.
 
 ![Linux 'ta CMake önbelleği oluşturma](media/cmake-linux-1.png "Linux 'ta CMake önbelleğini oluşturma")
 
 Uzak Linux sistemlerindeki üst bilgiler için IntelliSense desteği sağlamak üzere, Visual Studio bunları otomatik olarak Linux makinesinden yerel Windows makinenizde bir dizine kopyalar. Daha fazla bilgi için bkz. [uzak üstbilgiler Için IntelliSense](configure-a-linux-project.md#remote_intellisense).
 
-## <a name="debug_cmake_project"></a>CMake projesinde hata ayıklama
+## <a name="debug-the-cmake-project"></a><a name="debug_cmake_project"></a>CMake projesinde hata ayıklama
 
 Belirtilen hata ayıklama hedef sisteminde kodunuzun hatalarını ayıklamak için, bir kesme noktası ayarlayın, proje ayarının yanındaki araç çubuğu menüsünde bulunan başlangıç öğesi olarak CMake hedefini seçin ve araç çubuğundan  **&#x23f5; Başlat** ' ı seçin veya F5 tuşuna basın.
 
@@ -125,13 +125,13 @@ Programınızın komut satırı bağımsız değişkenlerini özelleştirmek iç
 
 Ek bağımsız değişkenler belirtmek için, `args` JSON dizisine ekleyin. Daha fazla bilgi için bkz. [klasör C++ projelerini açma](../build/open-folder-projects-cpp.md) ve [CMake hata ayıklama oturumlarını yapılandırma](../build/configure-cmake-debugging-sessions.md).
 
-## <a name="configure_cmake_linux"></a>Linux için CMake ayarlarını yapılandırma
+## <a name="configure-cmake-settings-for-linux"></a><a name="configure_cmake_linux"></a>Linux için CMake ayarlarını yapılandırma
 
-CMake Linux projesindeki bir CMakeSettings. JSON dosyası, [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md)bölümünde listelenen tüm özellikleri ve uzak Linux makinesindeki derleme ayarlarını denetleyen ek özellikleri belirtebilir. 
+CMake Linux projesindeki bir CMakeSettings. JSON dosyası, [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md)bölümünde listelenen tüm özellikleri ve uzak Linux makinesindeki derleme ayarlarını denetleyen ek özellikleri belirtebilir.
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 ' de varsayılan CMake ayarlarını değiştirmek için, ana araç çubuğundan **yapılandırma** açılan çubuğunu açın ve **yapılandırmaları Yönet**' i seçin. 
+Visual Studio 2019 ' de varsayılan CMake ayarlarını değiştirmek için, ana araç çubuğundan **yapılandırma** açılan çubuğunu açın ve **yapılandırmaları Yönet**' i seçin.
 
 ![CMake yönetme yapılandırması](../build/media/vs2019-cmake-manage-configurations.png "CMake yapılandırma açılır")
 
@@ -207,7 +207,6 @@ Visual Studio 2019 sürüm 16,1 ve sonraki sürümlerde varsayılan Linux-Debug 
 
 Bu ayarlar hakkında daha fazla bilgi için bkz. [Cmakesettings. JSON başvurusu](../build/cmakesettings-reference.md).
 
-
 ## <a name="optional-settings"></a>İsteğe Bağlı Ayarlar
 
 Daha fazla denetim için aşağıdaki isteğe bağlı ayarları kullanabilirsiniz:
@@ -221,8 +220,6 @@ Daha fazla denetim için aşağıdaki isteğe bağlı ayarları kullanabilirsini
 ```
 
 Bu seçenekler, Linux sisteminde oluşturmadan önce ve sonra ve CMake oluşturmadan önce komutları çalıştırmanızı sağlar. Değerler, uzak sistemde geçerli olan herhangi bir komut olabilir. Çıktı, Visual Studio 'ya geri gönderilir.
-
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

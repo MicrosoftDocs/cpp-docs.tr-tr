@@ -9,22 +9,22 @@ helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CCustomWindowsFile class
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
-ms.openlocfilehash: 4af302d8a391de359f3b8ac66d41b5d7198fd8f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 103a1ce5568c6137994056e574ce8eec04511d8f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182918"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079738"
 ---
 # <a name="ccustomwindowsfile"></a>CCustomWindowsFile
 
-Sihirbaz, bir veri satırı olan bir sınıf oluşturur; Bu durumda, adlı `CCustomWindowsFile`. Aşağıdaki kod için `CCustomWindowsFile` Sihirbazı tarafından oluşturulan ve bir dizindeki tüm dosyaları kullanarak listeleri `WIN32_FIND_DATA` yapısı. `CCustomWindowsFile` devralınan `WIN32_FIND_DATA` yapısı:
+Sihirbaz bir veri satırı içeren bir sınıf oluşturur; Bu durumda, `CCustomWindowsFile`çağırılır. `CCustomWindowsFile` için aşağıdaki kod sihirbaz oluşturulur ve `WIN32_FIND_DATA` yapısını kullanarak bir dizindeki tüm dosyaları listeler. `CCustomWindowsFile` `WIN32_FIND_DATA` yapısından devralır:
 
 ```cpp
 /////////////////////////////////////////////////////////////////////
 // CustomRS.H
 
-class CCustomWindowsFile: 
+class CCustomWindowsFile:
    public WIN32_FIND_DATA
 {
 public:
@@ -38,9 +38,9 @@ END_PROVIDER_COLUMN_MAP()
 };
 ```
 
-`CCustomWindowsFile` çağrılır [kullanıcı kayıt sınıfı](../../data/oledb/user-record.md) Ayrıca sağlayıcının satır sütunları açıklayan bir eşlemesi olduğundan. Sağlayıcı sütun eşlemesini PROVIDER_COLUMN_ENTRY kullanarak satır kümesindeki her bir alan için bir girdi içeriyor. Makroları, sıra ve yapısı girdi için uzaklık sütun adı belirtin. Yukarıdaki kodda sağlayıcısı sütun girişleri içine uzaklıkları içeren `WIN32_FIND_DATA` yapısı. Tüketici çağırdığında `IRowset::GetData`, verileri bitişik bir arabellek aktarılır. İşaretçi aritmetiği Bunu yapmak yerine, eşleme, bir veri üyesi belirtmenizi sağlar.
+`CCustomWindowsFile`, [Kullanıcı kayıt sınıfı](../../data/oledb/user-record.md) olarak adlandırılır çünkü sağlayıcının satır kümesindeki sütunları açıklayan bir eşlem de vardır. Sağlayıcı sütun eşlemesi, PROVIDER_COLUMN_ENTRY makroları kullanarak satır kümesindeki her alan için bir giriş içerir. Makrolar sütun adını, sıra sayısını ve bir yapı girişinin konumunu belirtir. Yukarıdaki koddaki sağlayıcı sütun girdileri `WIN32_FIND_DATA` yapısına uzaklıklar içerir. Tüketici `IRowset::GetData`çağırdığında, veriler bir bitişik arabellekte aktarılır. Bir işaretçi aritmetik yapmak yerine, eşleme bir veri üyesi belirtmenize olanak tanır.
 
-`CCustomRowset` Sınıfı da içeren `Execute` yöntemi. `Execute` hangi verileri yerel kaynaktan okuyan yöntemdir. Aşağıdaki kod Sihirbazı tarafından oluşturulan gösterir `Execute` yöntemi. Win32 işlevini kullanan `FindFirstFile` ve `FindNextFile` dizindeki dosyaları hakkında bilgi almak ve bunları örneklerine yerleştirmek için API'ler `CCustomWindowsFile` sınıfı.
+`CCustomRowset` sınıfı `Execute` metodunu da içerir. `Execute`, yerel kaynaktaki içindeki verileri gerçekte okur. Aşağıdaki kodda, sihirbaz tarafından oluşturulan `Execute` yöntemi gösterilmektedir. İşlevi, dizindeki dosyalar hakkında bilgi almak ve bunları `CCustomWindowsFile` sınıfının örneklerine yerleştirmek için Win32 `FindFirstFile` ve `FindNextFile` API 'Lerini kullanır.
 
 ```cpp
 /////////////////////////////////////////////////////////////////////
@@ -73,9 +73,9 @@ HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)
 }
 ```
 
-Arama dizini tarafından gösterilen `m_strCommandText`; bu tarafından gösterilen metni içeren `ICommandText` arabiriminde komut nesnesi. Hiçbir dizin belirtilirse, geçerli dizin kullanır.
+Arama yapılacak Dizin `m_strCommandText`gösterilir; Bu, komut nesnesindeki `ICommandText` arabirimi tarafından temsil edilen metni içerir. Dizin belirtilmemişse, geçerli dizini kullanır.
 
-Yöntem (karşılık gelen bir satıra) her dosya için bir girdi oluşturur ve yerleştirir `m_rgRowData` veri üyesi. `CRowsetImpl` Sınıfı tanımlar `m_rgRowData` veri üyesi. Bu dizi verilerinde tablonun tamamını gösterilir ve tüm şablonlarda kullanılır.
+Yöntemi her dosya için bir giriş oluşturur (bir satıra karşılık gelir) ve `m_rgRowData` veri üyesine koyar. `CRowsetImpl` sınıfı `m_rgRowData` veri üyesini tanımlar. Bu dizideki veriler tablonun tamamında gösterilir ve şablonlar boyunca kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

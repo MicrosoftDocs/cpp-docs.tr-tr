@@ -2,12 +2,12 @@
 title: Android ve iOS Üzerinde OpenGL ES uygulaması oluşturma
 ms.date: 10/09/2019
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-ms.openlocfilehash: 23dd9dbb1ff32050494e0d1d105cd55de3123fbb
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.openlocfilehash: 3709cfcc681f265d08758f97422ae16e98a66a1c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78177677"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079666"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android ve iOS Üzerinde OpenGL ES uygulaması oluşturma
 
@@ -109,7 +109,7 @@ Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama proje
 
    Oluşturulan Android yerel etkinlik uygulaması ve kitaplık projeleri, C++ paylaşılan kodu dinamik bir kitaplığa koyar. Android platformuna sahip arabirime "tutkalla" kodunu içerir. Uygulama kodunun çoğu kitaplıkta bulunur. Bildirim, kaynak ve derleme yönergeleri paketleme projelerdir. Paylaşılan kod, NativeActivity projesindeki Main. cpp öğesinden çağrılır. Android yerel etkinliğinin nasıl programgörüntüleneceği hakkında daha fazla bilgi için bkz. Android Geliştirici NDK [kavramları](https://developer.android.com/ndk/guides/concepts.html) sayfası.
 
-   Visual Studio, Android NDK 'yi kullanarak Android yerel etkinlik projelerini oluşturur. Platform araç takımı olarak Clang 'yi kullanır. Visual Studio, projenin özelliklerini hedef platformda derleme, bağlantı ve hata ayıklama komutlarıyla eşleştirir. Ayrıntılar için, Myopengtasapp. Android. NativeActivity projesi için **Özellik sayfaları** iletişim kutusunu açın. Komut satırı anahtarları hakkında daha fazla bilgi için bkz. [Clang derleyicisi Kullanıcı el kitabı](http://clang.llvm.org/docs/UsersManual.html).
+   Visual Studio, Android NDK 'yi kullanarak Android yerel etkinlik projelerini oluşturur. Platform araç takımı olarak Clang 'yi kullanır. Visual Studio, projenin özelliklerini hedef platformda derleme, bağlantı ve hata ayıklama komutlarıyla eşleştirir. Ayrıntılar için, Myopengtasapp. Android. NativeActivity projesi için **Özellik sayfaları** iletişim kutusunu açın. Komut satırı anahtarları hakkında daha fazla bilgi için bkz. [Clang derleyicisi Kullanıcı el kitabı](https://clang.llvm.org/docs/UsersManual.html).
 
 ## <a name="build-and-run-the-ios-app-on-an-ios-device"></a>İOS cihazında iOS uygulaması oluşturma ve çalıştırma
 

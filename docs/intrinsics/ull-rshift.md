@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ull_rshift intrinsic
 - __ull_rshift intrinsic
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-ms.openlocfilehash: e914a019877482058c6b2842d3138cda02f1e228
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bf9fe7775cee1c774c097a1b6bd371721c9fa34f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219711"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80074982"
 ---
 # <a name="__ull_rshift"></a>__ull_rshift
 
@@ -24,14 +24,14 @@ x64 üzerinde, ilk parametre tarafından belirtilen 64 bitlik bir değeri ikinci
 
 ```C
 unsigned __int64 __ull_rshift(
-   unsigned __int64 mask, 
+   unsigned __int64 mask,
    int nBit
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*maskesi*\
+*maske*\
 'ndaki Sağa kayılacak 64 bitlik tamsayı değeri.
 
 *nBit*\
@@ -39,7 +39,7 @@ unsigned __int64 __ull_rshift(
 
 ## <a name="return-value"></a>Dönüş değeri
 
-Bitler tarafından `nBit` kaydırılan maske.
+`nBit` bitler tarafından kaydırılan maske.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -51,7 +51,7 @@ Bitler tarafından `nBit` kaydırılan maske.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkinci parametre x86 üzerinde 31 ' den büyükse (x64 üzerinde 63), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 32 (x64 üzerinde 64) olarak alınır. Ad içindeki ' i gösterir `unsigned long long (unsigned __int64)`. `ull`
+İkinci parametre x86 üzerinde 31 ' den büyükse (x64 üzerinde 63), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 32 (x64 üzerinde 64) olarak alınır. Ad içindeki `ull` `unsigned long long (unsigned __int64)`gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -83,5 +83,5 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__ll_lshift](../intrinsics/ll-lshift.md)\
-[__ll_rshıft](../intrinsics/ll-rshift.md)\
+[__ll_rshift](../intrinsics/ll-rshift.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

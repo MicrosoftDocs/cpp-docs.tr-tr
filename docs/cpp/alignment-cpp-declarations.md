@@ -3,16 +3,16 @@ title: Hizalama
 description: Modern C++içinde veri hizalaması nasıl belirtilir.
 ms.date: 12/11/2019
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
-ms.openlocfilehash: 13f09366501de2482b8ae9ea430898d6c32134c2
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 45b22742394a0b1c159e8b8102a26802a2441929
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443659"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076120"
 ---
 # <a name="alignment"></a>Hizalama
 
-Öğesinin C++ alt düzey özelliklerinden biri, belirli bir donanım mimarisinin en yüksek avantajlarından yararlanmak için bellekteki nesnelerin kesin hizalamasını belirtme yeteneğidir. Varsayılan olarak, derleyici sınıf ve yapı üyelerini boyut değerlerine göre hizalar: `bool` ve `char` 1 baytlık sınırlarda, 2 baytlık sınırlarda `short`, `int`, `long`ve `float`, 8 baytlık sınırlarda `long long`, `double`ve `long double`. 
+Öğesinin C++ alt düzey özelliklerinden biri, belirli bir donanım mimarisinin en yüksek avantajlarından yararlanmak için bellekteki nesnelerin kesin hizalamasını belirtme yeteneğidir. Varsayılan olarak, derleyici sınıf ve yapı üyelerini boyut değerlerine göre hizalar: `bool` ve `char` 1 baytlık sınırlarda, 2 baytlık sınırlarda `short`, `int`, `long`ve `float`, 8 baytlık sınırlarda `long long`, `double`ve `long double`.
 
 Çoğu senaryoda, varsayılan hizalama zaten en iyi durumda olduğu için hizalamayla ilgilenmelisiniz. Ancak bazı durumlarda, veri yapılarınız için özel bir hizalama belirterek önemli performans geliştirmeleri veya bellek tasarrufu elde edebilirsiniz. Visual Studio 2015 ' den önce, Microsoft 'a özgü anahtar kelimeleri `__alignof` ve varsayılandan daha büyük bir hizalama belirtmek için `declspec(alignas)` kullanabilirsiniz. Visual Studio 2015 ' den başlayarak, en fazla kod taşınabilirlik için C++ 11 standart anahtar sözcükleri **hizalamasını** ve **alignas** 'yi kullanmanız gerekir. Yeni anahtar sözcükler, Microsoft 'a özgü uzantılar ile aynı şekilde davranır. Bu uzantılara ait belgeler yeni anahtar sözcükler için de geçerlidir. Daha fazla bilgi için bkz. [__Alignof işleci](../cpp/alignof-operator.md) ve [Hizalama](../cpp/align-cpp.md). Standart C++ , hedef platformun varsayılan derleyicisinden daha küçük olan sınırlara göre hizalama için paketleme davranışını belirtmez, bu nedenle yine de bu durumda Microsoft #pragma [paketini](../preprocessor/pack.md) kullanmanız gerekir.
 

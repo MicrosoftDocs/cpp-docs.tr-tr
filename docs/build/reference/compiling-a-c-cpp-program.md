@@ -1,25 +1,25 @@
 ---
-title: MSVC C/C++ Derleyici başvurusu - Visual Studio
+title: MSVC C/C++ derleyici başvurusu-Visual Studio
 description: MSVC derleyici araç takımı seçenekleri.
 ms.date: 12/10/2018
 helpviewer_keywords:
 - cl.exe compiler
 - cl.exe compiler, setting options
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
-ms.openlocfilehash: 2269ba69cea2702ff190c791eb6753acb3619f7d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c75176b139895d7b00d88aca1c58604b47386894
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294154"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077371"
 ---
-# <a name="compiling-a-cc-project"></a>C/C++ projesi derleme
+# <a name="compiling-a-cc-project"></a>C/C++ proje derleme
 
-C ve C++ derleyici seçenekleri, Visual Studio IDE veya komut satırında ayarlanabilir. 
+C ve C++ derleyici seçenekleri, VISUAL Studio IDE içinde ya da komut satırında ayarlanabilir.
 
-## <a name="in-visual-studio"></a>Visual Studio'da
+## <a name="in-visual-studio"></a>Visual Studio’da
 
-Visual Studio her proje için derleyici seçeneklerini ayarlayabilirsiniz **özellik sayfaları** iletişim kutusu. Sol bölmede seçin **yapılandırma özellikleri**, **C/C++** derleyici seçeneği kategorisini seçin. Her derleyici seçeneğinin başlığı, geliştirme ortamında nasıl ayarlanabileceği ve nerede bulunabileceğini tanımlar. Bkz: [MSVC derleyici seçenekleri](compiler-options.md) tam listesi için.
+Visual Studio **Özellik sayfaları** iletişim kutusunda her bir proje için derleyici seçeneklerini ayarlayabilirsiniz. Sol bölmede, **yapılandırma özellikleri**, **C/C++**  öğesini seçin ve ardından derleyici seçenek kategorisini seçin. Her derleyici seçeneğinin başlığı, geliştirme ortamında nasıl ayarlanabileceği ve nerede bulunabileceğini tanımlar. Tüm liste için bkz. [MSVC derleyicisi seçenekleri](compiler-options.md) .
 
 ## <a name="from-the-command-line"></a>Komut satırından
 
@@ -27,7 +27,7 @@ Derleyici (CL.exe) seçeneklerini ayarlayabilirsiniz:
 
 - [Komut satırında](compiler-command-line-syntax.md)
 
-- [Komut dosyaları](cl-command-files.md)
+- [Komut dosyalarında](cl-command-files.md)
 
 - [CL ortam değişkeninde](cl-environment-variables.md)
 
@@ -43,7 +43,7 @@ Derleyici seçenekleri "soldan sağa" işlenir ve bir çakışma ile karşılaş
 
 - [CL Bağlayıcı Çağırır](cl-invokes-the-linker.md)
 
-Derleyici konak ve hedef mimari seçme hakkında daha fazla bilgi için bkz [yapılandırma C++ projeleri 64-bit için x64 hedefleri](../configuring-programs-for-64-bit-visual-cpp.md).
+Derleyici Konağı ve hedef mimarisini seçme hakkında daha fazla bilgi için bkz [. C++ 64-bit, x64 hedefleri için projeleri yapılandırma](../configuring-programs-for-64-bit-visual-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

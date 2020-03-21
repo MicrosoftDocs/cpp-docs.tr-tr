@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: MFC Scribble'
 ms.date: 10/23/2019
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: c5e0e8fecd99e4f03077574da7b7fcb3e538762b
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 789d29effeea76045a4a10fbca19f20d06778f7c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627221"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076960"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
@@ -23,11 +23,11 @@ Yükseltmeyi denemeden önce, Windows masaüstü iş yükünün yüklü olduğun
 
 Sonra, tüm çözümü ve tüm içeriğini yedekleyin.
 
-Son olarak, çözümü Visual Studio 'nun en son sürümünde açın ve sihirbazın projeyi dönüştürmesini bekleyin. 
+Son olarak, çözümü Visual Studio 'nun en son sürümünde açın ve sihirbazın projeyi dönüştürmesini bekleyin.
 
 Projelerinizi yükseltmek için Sihirbazı kullanmak yerine, `/Upgrade` seçeneğini kullanarak komut satırında devenv ' i de çalıştırabileceğinizi unutmayın. Bkz. [/Upgrade (devenv. exe)](/visualstudio/ide/reference/upgrade-devenv-exe). Bu, çok sayıda projenin yükseltme işlemini otomatikleştirmede yararlı olabilir.
 
-### <a name="step-1-converting-the-project-file"></a>Adım 1. Proje dosyası dönüştürülüyor
+### <a name="step-1-converting-the-project-file"></a>1\. Adım. Proje dosyası dönüştürülüyor
 
 Visual Studio 'da eski bir proje dosyası açtığınızda, Visual Studio proje dosyasını kabul ettiğimiz en son sürüme dönüştürmek için teklifler sunar. Aşağıdaki iletişim kutusu görüntülendü:
 
@@ -47,11 +47,11 @@ Daha sonra Visual Studio, eski proje dosyası ile ilgili tüm sorunları listele
 
 Bu durumda, sorunlar tüm uyarılardır ve Visual Studio proje dosyasında uygun değişiklikleri yaptı. Projenin en büyük farkı, yapı aracının VCBuild 'den MSBuild 'e değiştiği bir kaygıdır. Bu değişiklik ilk olarak Visual Studio 2010 ' de tanıtılmıştı. Diğer değişiklikler, proje dosyasının kendisindeki öğelerin sırasını yeniden düzenleme içerir. Bu basit proje için daha fazla dikkat etmeniz gereken sorun yok.
 
-### <a name="step-2-getting-it-to-build"></a>Adım 2. Oluşturmaya alma
+### <a name="step-2-getting-it-to-build"></a>2\. Adım Oluşturmaya alma
 
 Derlemeden önce, proje sisteminin hangi derleyici sürümünü kullandığını bilmemiz için platform araç takımını denetliyoruz. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** kategorisinde, **platform araç takımı** özelliğine bakın. Visual Studio sürümünü ve bu örnekte, araçların Visual Studio 2017 sürümü için v141 olan platform Aracı sürüm numarasını içerir. Özgün olarak Visual Studio 2010, 2012, 2013 veya 2015 ile derlenen bir projeyi dönüştürdüğünüzde, araç takımı en son araç takımını otomatik olarak güncellenmez.
 
-Anahtarı Unicode 'a getirmek için, projenin özelliklerini açın, **yapılandırma özellikleri**altında **genel** bölümünü seçin ve **karakter kümesi** özelliğini bulun. Bunu, **birden çok baytlık karakter kümesini** **Unicode karakter kümesi kullanacak**şekilde değiştirin. Bu değişikliğin etkisi artık _unicode ve Unicode makrolarının tanımlandığından ve _MBCS 'nin, **komut satırı** özelliğindeki **C/C++**  kategori altındaki Özellikler iletişim kutusunda doğrulayabileceği anlamına gelir.
+Anahtarı Unicode 'a getirmek için, projenin özelliklerini açın, **yapılandırma özellikleri**altında **genel** bölümünü seçin ve **karakter kümesi** özelliğini bulun. Bunu, **birden çok baytlık karakter kümesini** **Unicode karakter kümesi kullanacak**şekilde değiştirin. Bu değişikliğin etkisi artık _UNICODE ve UNICODE makrolarının tanımlandığından ve _MBCS olmadığından, **komut satırı** özelliğindeki **C/C++**  kategorisi altındaki Özellikler iletişim kutusunda doğrulayabilirler.
 
 ```Output
 /GS /analyze- /W4 /Zc:wchar_t /Zi /Gm- /Od /Fd".\Debug\vc141.pdb" /Zc:inline /fp:precise /D "_AFXDLL" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /errorReport:prompt /WX /Zc:forScope /Gd /Oy- /MDd /Fa".\Debug\" /EHsc /nologo /Fo".\Debug\" /Fp".\Debug\Scribble.pch" /diagnostics:classic
@@ -59,13 +59,13 @@ Anahtarı Unicode 'a getirmek için, projenin özelliklerini açın, **yapıland
 
 Karalama projesi Unicode karakterlerle derlemek üzere ayarlanmamış olsa da, karakter yerine TCHAR ile zaten yazılmıştır, bu nedenle gerçekte değiştirilmeleri gerekmez. Proje Unicode karakter kümesiyle başarıyla oluşturulur.
 
-Şimdi Çözümü derleyin. Çıkış penceresinde derleyici, _WıNNT32_WıNNT 'in tanımlanmayacağını söyler:
+Şimdi Çözümü derleyin. Çıkış penceresinde derleyici, _WINNT32_WINNT tanımlanmadığı konusunda bize söyler:
 
 ```Output
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 ```
 
-Bu bir uyarı değildir ve bir Visual Studio C++ projesi yükseltilirken çok yaygın bir hatadır. Bu, uygulamamız üzerinde hangi en düşük Windows sürümünün çalışacağını tanımlayan bir makrodur. Uyarıyı yok saydığımızda, geçerli Windows sürümü anlamına gelen, _WIN32_WıNNT_MAXVER varsayılan değerini kabul ediyoruz. Olası değerler tablosu için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers). Örneğin, bunu Vista 'dan herhangi bir sürümde çalışacak şekilde ayarlayabiliriz.
+Bu bir uyarı değildir ve bir Visual Studio C++ projesi yükseltilirken çok yaygın bir hatadır. Bu, uygulamamız üzerinde hangi en düşük Windows sürümünün çalışacağını tanımlayan bir makrodur. Uyarıyı yok saydığımızda, geçerli Windows sürümü anlamına gelen _WIN32_WINNT_MAXVER varsayılan değeri kabul ediyoruz. Olası değerler tablosu için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers). Örneğin, bunu Vista 'dan herhangi bir sürümde çalışacak şekilde ayarlayabiliriz.
 
 ```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA
@@ -73,13 +73,13 @@ Bu bir uyarı değildir ve bir Visual Studio C++ projesi yükseltilirken çok ya
 
 Kod, bu makroyla belirttiğiniz Windows sürümünde kullanılamayan Windows API 'sinin parçalarını kullanıyorsa, bunu bir derleyici hatası olarak görmeniz gerekir. Karalama kodu söz konusu olduğunda, bir hata yoktur.
 
-### <a name="step-3-testing-and-debugging"></a>Adım 3. Test ve hata ayıklama
+### <a name="step-3-testing-and-debugging"></a>3\. Adım Test etme ve hata ayıklama
 
 Test paketi yok, bu nedenle uygulamayı yalnızca kullanıcı arabiriminden el ile test ettik. Hiçbir sorun gözlemlenmedi.
 
-### <a name="step-4-improve-the-code"></a>4\. adım. Kodu geliştirme
+### <a name="step-4-improve-the-code"></a>4\. Adım. Kodu geliştirme
 
-Artık Visual Studio 2017 ' ye geçirdiniz, yeni C++ özelliklerden yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. C++ Derleyicinin geçerli sürümü standart ve C++ önceki sürümlere çok daha uyumlu olduğundan, kodunuzu daha güvenli hale getirmek için bazı kod değişiklikleri yapmanız ve diğer derleyiciler ve işletim sistemlerine daha fazla taşınabilir bazı iyileştirmeleri göz önünde bulundurun.
+Artık Visual Studio 2017 ' ye geçirdiniz, yeni C++ özelliklerden yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. C++ Derleyicinin geçerli sürümü C++ standart daha sonra önceki sürümlere çok daha uyumlu olduğundan, kodunuzu daha güvenli hale getirmek için bazı kod değişiklikleri yapmanız ve diğer derleyicilere ve işletim sistemlerine daha fazla taşınabilir, bazı geliştirmeler göz önünde bulundurmanız gerekir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

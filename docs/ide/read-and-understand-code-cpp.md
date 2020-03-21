@@ -2,12 +2,12 @@
 title: Visual Studio 'da C++ kodu okuyun ve anlayın
 description: Kodunuzu biçimlendirmek C++ ve anlamak Için Visual Studio 'da kod düzenleyicisini kullanın.
 ms.date: 05/28/2019
-ms.openlocfilehash: 2ddeabd9d70ebb344fe6d14abe520ee51a42eebb
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: aa9008900ae631668d7a87fb413dd389696f3454
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416125"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079038"
 ---
 # <a name="read-and-understand-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodu okuyun ve anlayın
 
@@ -61,7 +61,7 @@ Bildirim ve hemen öncesinde bulunan tüm yorumlar dahil olmak üzere herhangi b
 
 ![C 'de hızlı bilgi&#43;&#43;](../ide/media/quick-info-vs2019.png "Hızlı Bilgi")
 
-**Hızlı bilgi** araç Ipucunda bir **çevrimiçi arama** bağlantısı vardır. Arama sağlayıcısını belirtmek için **araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++**  > **görünümü** ' ne gidin. 
+**Hızlı bilgi** araç Ipucunda bir **çevrimiçi arama** bağlantısı vardır. Arama sağlayıcısını belirtmek için **araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++**  > **görünümü** ' ne gidin.
 
 Kodunuzda bir hata varsa, üzerine gelin ve **hızlı bilgi** hata iletisini görüntüler. Hata iletisini Hata Listesi penceresinde de bulabilirsiniz.
 

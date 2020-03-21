@@ -4,12 +4,12 @@ ms.date: 04/22/2019
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: bf42981396abf8e91077da5c1cc1f180891d2a63
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: b5d44a378e231b99f1b6461bc1329179bfd68f89
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446557"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80075826"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -55,7 +55,6 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, `/Wv:19.15`derleyic
 
 ::: moniker-end
 ::: moniker range=">= vs-2017"
-
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-158-compiler-version-1915267260"></a>Visual Studio 2017 sürüm 15,8 ' de tanıtılan uyarılar (derleyici sürümü 19.15.26726.0)
 

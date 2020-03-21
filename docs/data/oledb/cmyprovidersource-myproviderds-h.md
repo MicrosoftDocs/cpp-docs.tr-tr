@@ -11,16 +11,16 @@ helpviewer_keywords:
 - CMyProviderSource class in MyProviderDS.H
 - CCustomSource class in CustomDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
-ms.openlocfilehash: 296e7848b1d756fe0aba6156be2501db45bb092b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60324ae914c9490144a715e06323ee6d184ce201
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230562"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079730"
 ---
-# <a name="ccustomsource-customdsh"></a>CCustomSource (CustomDS.h)
+# <a name="ccustomsource-customdsh"></a>CCustomSource (CustomDS. h)
 
-Birden çok devralma sağlayıcısı sınıfları kullanın. Aşağıdaki kod, veri kaynağı nesnesi için devralma zincirini gösterir:
+Sağlayıcı sınıfları birden çok devralma kullanır. Aşağıdaki kod, veri kaynağı nesnesinin devralma zincirini gösterir:
 
 ```cpp
 /////////////////////////////////////////////////////////////////////////
@@ -35,18 +35,18 @@ class ATL_NO_VTABLE CCustomSource :
    public IInternalConnectionImpl<CCustomSource>
 ```
 
-Türetilen tüm COM bileşenlerini `CComObjectRootEx` ve `CComCoClass`. `CComObjectRootEx` Tüm uygulamasını sağlar `IUnknown` arabirimi. Bu, herhangi bir iş parçacığı modeli başa çıkabilir. `CComCoClass` gerekli herhangi bir hata destek işler. Daha zengin hata bilgileri istemciye göndermek istiyorsanız, bazı hata API'leri kullanabilirsiniz, `CComCoClass`.
+Tüm COM bileşenleri `CComObjectRootEx` ve `CComCoClass`türetilir. `CComObjectRootEx`, `IUnknown` arabirimi için tüm uygulamaları sağlar. Herhangi bir iş parçacığı modelini işleyebilir. `CComCoClass`, gereken tüm hata desteğini işler. İstemciye daha zengin hata bilgileri göndermek istiyorsanız `CComCoClass`bazı hata API 'Lerini kullanabilirsiniz.
 
-Veri kaynağı nesnesinin ayrıca çeşitli ' Impl ' sınıfından devralır. Her sınıf, arabirim uygulamasını sağlar. Veri kaynağı nesnesi uygulayan `IPersist`, `IDBProperties`, `IDBInitialize`, ve `IDBCreateSession` arabirimleri. Her arabirim tarafından OLE DB veri kaynağı nesnesinin uygulamak için gereklidir. Bu 'Impl' sınıflarının birinden devralan değil ya da belirli işlevler desteklenmez veya desteklemek üzere seçebilirsiniz. Desteklemek istiyorsanız `IDBDataSourceAdmin` , arabirim, devralma `IDBDataSourceAdminImpl` gerekli işlevi almak için sınıf.
+Veri kaynağı nesnesi Ayrıca birkaç ' Impl ' sınıfından devralır. Her sınıf, bir arabirim için uygulama sağlar. Veri kaynağı nesnesi `IPersist`, `IDBProperties`, `IDBInitialize`ve `IDBCreateSession` arabirimlerini uygular. Her arabirim, veri kaynağı nesnesini uygulamak için OLE DB gereklidir. Bu ' Impl ' sınıflarından birinden devralma veya devralma yaparak belirli işlevleri desteklemeyi veya desteklemeyi tercih edebilirsiniz. `IDBDataSourceAdmin` arabirimini desteklemek istiyorsanız, gereken işlevselliği almak için `IDBDataSourceAdminImpl` sınıfından kalıtılır.
 
 ## <a name="com-map"></a>COM eşlemesi
 
-Her istemci çağrıları `QueryInterface` isteğe bağlı olarak veri kaynağında bir arabirim için aşağıdaki COM eşlemesi üzerinden geçer:
+İstemci veri kaynağındaki bir arabirim için `QueryInterface` çağırdığında, aşağıdaki COM eşlemesinden geçer:
 
 ```cpp
 /////////////////////////////////////////////////////////////////////////
 // CCustomSource
-class ATL_NO_VTABLE CCustomSource : 
+class ATL_NO_VTABLE CCustomSource :
    public CComObjectRootEx<CComSingleThreadModel>,
    public CComCoClass<CCustomSource, &CLSID_Custom>,
    public IDBCreateSessionImpl<CCustomSource, CCustomSession>,
@@ -56,13 +56,13 @@ class ATL_NO_VTABLE CCustomSource :
    public IInternalConnectionImpl<CCustomSource>
 ```
 
-Türetilen tüm COM bileşenlerini `CComObjectRootEx` ve `CComCoClass`. `CComObjectRootEx` Tüm uygulamasını sağlar `IUnknown` arabirimi. Bu, herhangi bir iş parçacığı modeli başa çıkabilir. `CComCoClass` gerekli herhangi bir hata destek işler. Daha zengin hata bilgileri istemciye göndermek istiyorsanız, bazı hata API'leri kullanabilirsiniz, `CComCoClass`.
+Tüm COM bileşenleri `CComObjectRootEx` ve `CComCoClass`türetilir. `CComObjectRootEx`, `IUnknown` arabirimi için tüm uygulamaları sağlar. Herhangi bir iş parçacığı modelini işleyebilir. `CComCoClass`, gereken tüm hata desteğini işler. İstemciye daha zengin hata bilgileri göndermek istiyorsanız `CComCoClass`bazı hata API 'Lerini kullanabilirsiniz.
 
-Veri kaynağı nesnesinin ayrıca çeşitli ' Impl ' sınıfından devralır. Her sınıf, arabirim uygulamasını sağlar. Veri kaynağı nesnesi uygulayan `IPersist`, `IDBProperties`, `IDBInitialize`, ve `IDBCreateSession` arabirimleri. Her arabirim tarafından OLE DB veri kaynağı nesnesinin uygulamak için gereklidir. Bu 'Impl' sınıflarının birinden devralan değil ya da belirli işlevler desteklenmez veya desteklemek üzere seçebilirsiniz. Desteklemek istiyorsanız `IDBDataSourceAdmin` , arabirim, devralma `IDBDataSourceAdminImpl` gerekli işlevi almak için sınıf.
+Veri kaynağı nesnesi Ayrıca birkaç ' Impl ' sınıfından devralır. Her sınıf, bir arabirim için uygulama sağlar. Veri kaynağı nesnesi `IPersist`, `IDBProperties`, `IDBInitialize`ve `IDBCreateSession` arabirimlerini uygular. Her arabirim, veri kaynağı nesnesini uygulamak için OLE DB gereklidir. Bu ' Impl ' sınıflarından birinden devralma veya devralma yaparak belirli işlevleri desteklemeyi veya desteklemeyi tercih edebilirsiniz. `IDBDataSourceAdmin` arabirimini desteklemek istiyorsanız, gereken işlevselliği almak için `IDBDataSourceAdminImpl` sınıfından kalıtılır.
 
 ## <a name="com-map"></a>COM eşlemesi
 
-Her istemci çağrıları `QueryInterface` isteğe bağlı olarak veri kaynağında bir arabirim için aşağıdaki COM eşlemesi üzerinden geçer:
+İstemci veri kaynağındaki bir arabirim için `QueryInterface` çağırdığında, aşağıdaki COM eşlemesinden geçer:
 
 ```cpp
 BEGIN_COM_MAP(CCustomSource)
@@ -74,11 +74,11 @@ BEGIN_COM_MAP(CCustomSource)
 END_COM_MAP()
 ```
 
-COM_INTERFACE_ENTRY makroları ATL rosling ve yürütmesinin `QueryInterface` içinde `CComObjectRootEx` uygun arabirimleri dönün.
+COM_INTERFACE_ENTRY makroları ATL 'den ve `CComObjectRootEx` `QueryInterface` uygulamasına uygun arabirimleri döndürmesini söyleyecektir.
 
 ## <a name="property-map"></a>Özellik eşlemesi
 
-Özellik eşlemesi, sağlayıcı tarafından atanan tüm özellikleri belirtir:
+Özellik eşlemesi sağlayıcı tarafından atanan tüm özellikleri belirtir:
 
 ```cpp
 BEGIN_PROPSET_MAP(CCustomSource)
@@ -148,9 +148,9 @@ BEGIN_PROPSET_MAP(CCustomSource)
 END_PROPSET_MAP()
 ```
 
-OLE DB özelliklerinde gruplandırılır. Veri kaynağı nesnesinin özellikleri iki grup vardır: DBPROPSET_DATASOURCEINFO bir kümesi, diğeri DBPROPSET_DBINIT ayarlayın. DBPROPSET_DATASOURCEINFO kümesi özellikleri hakkında sağlayıcı ve veri kaynağına karşılık gelir. DBPROPSET_DBINIT kümesi başlangıçta kullanılan özelliklere karşılık gelir. OLE DB sağlayıcı şablonları PROPERTY_SET makrolar ile bu kümeleri işleyin. Makrolar, bir dizi özellikleri içeren bir blok oluşturur. Her istemci çağrıları `IDBProperties` arabirimi, sağlayıcı özellik eşlemesi kullanır.
+OLE DB Özellikler gruplandırılır. Veri kaynağı nesnesinin iki grup özelliği vardır: biri DBPROPSET_DATASOURCEINFO kümesi ve diğeri DBPROPSET_DBINIT kümesi için. DBPROPSET_DATASOURCEINFO kümesi, sağlayıcının ve veri kaynağının özelliklerine karşılık gelir. DBPROPSET_DBINIT kümesi, başlatma sırasında kullanılan özelliklere karşılık gelir. OLE DB sağlayıcı şablonları, bu kümeleri PROPERTY_SET makrolarıyla işler. Makrolar bir özellikler dizisi içeren bir blok oluşturur. İstemci `IDBProperties` arabirimini her çağırdığında, sağlayıcı özellik eşlemesini kullanır.
 
-Her özelliği belirtiminde uygulama gerekmez. Ancak, gerekli özelliklerini desteklemelidir; Düzey 0 Uyumluluğu belirtimi daha fazla bilgi için bkz. Bir özelliği desteklemek istemiyorsanız, haritadaki kaldırabilirsiniz. Bir özelliği desteklemek istiyorsanız, haritayı PROPERTY_INFO_ENTRY makrosu kullanarak ekleyin. Makro karşılık gelen `UPROPINFO` aşağıdaki kodda gösterildiği gibi yapılandırın:
+Belirtimde her özelliği uygulamanız gerekmez. Ancak, gerekli özellikleri desteklemeniz gerekir; daha fazla bilgi için düzey 0 uyumluluk belirtimine bakın. Bir özelliği desteklemek istemiyorsanız, bunu haritadan kaldırabilirsiniz. Bir özelliği desteklemek istiyorsanız, PROPERTY_INFO_ENTRY makro kullanarak Haritayı haritaya ekleyin. Makro, aşağıdaki kodda gösterildiği gibi `UPROPINFO` yapısına karşılık gelir:
 
 ```cpp
 struct UPROPINFO
@@ -168,17 +168,17 @@ struct UPROPINFO
 };
 ```
 
-Her öğe yapısında özelliği işlemek için bilgileri temsil eder. İçerdiği bir `DBPROPID` GUID ve ID özelliği belirlemek için. Ayrıca, türünü ve özelliğin değerini belirlemek için giriş içerir.
+Yapıdaki her öğe, özelliği işlemek için bilgileri temsil eder. Özelliğin GUID 'INI ve KIMLIĞINI belirlemede bir `DBPROPID` içerir. Ayrıca, özelliğin türünü ve değerini belirleme girdilerini de içerir.
 
-(Bir tüketici yazılabilir bir özellik değerini istediğiniz zaman değiştirebilirsiniz. Not) özelliğinin varsayılan değeri değiştirmek istiyorsanız, PROPERTY_INFO_ENTRY_VALUE ya da PROPERTY_INFO_ENTRY_EX makrosu kullanabilirsiniz. Bu makrolar, karşılık gelen bir özellik için bir değer belirtmenizi sağlar. PROPERTY_INFO_ENTRY_VALUE makrosu değeri değiştirmenize izin verir ve kısa bir gösterim ' dir. PROPERTY_INFO_ENTRY_VALUE makrosu PROPERTY_INFO_ENTRY_EX makrosu çağırır. Bu makro, eklemek veya tüm öznitelikleri değiştirmek sağlar `UPROPINFO` yapısı.
+Bir özelliğin varsayılan değerini değiştirmek istiyorsanız (bir müşterinin yazılabilir bir özelliğin değerini istediğiniz zaman değiştirebileceğine, PROPERTY_INFO_ENTRY_VALUE veya PROPERTY_INFO_ENTRY_EX makrosunu kullanabilirsiniz. Bu makrolar, karşılık gelen bir özellik için bir değer belirtmenize olanak tanır. PROPERTY_INFO_ENTRY_VALUE makrosu, değeri değiştirmenize olanak tanıyan bir Özet gösterimidir. PROPERTY_INFO_ENTRY_VALUE makro PROPERTY_INFO_ENTRY_EX makrosunu çağırır. Bu makro `UPROPINFO` yapısındaki tüm öznitelikleri eklemenize veya değiştirmenize olanak sağlar.
 
-Kendi özellik kümesi tanımlamak istiyorsanız, ek bir BEGIN_PROPSET_MAP/END_PROPSET_MAP birleşim yaparak ekleyebilirsiniz. Özellik kümesi için bir GUID tanımlayın ve ardından kendi özelliklerini tanımlayın. Sağlayıcıya özgü özellikleri varsa bunları kullanarak mevcut bir yerine yeni bir özellik ekleyin. Bu sorunlar daha sonraki sürümlerinde bir OLE DB önler.
+Kendi özellik kümesini tanımlamak istiyorsanız, ek bir BEGIN_PROPSET_MAP/END_PROPSET_MAP birleşimi yaparak bir tane ekleyebilirsiniz. Özellik kümesi için bir GUID tanımlayın ve ardından kendi özelliklerinizi tanımlayın. Sağlayıcıya özel özellikler varsa, var olan bir özellik kullanmak yerine bunları yeni bir özellik kümesine ekleyin. Bu, sonraki OLE DB sürümlerindeki sorunları önler.
 
 ## <a name="user-defined-property-sets"></a>Kullanıcı tanımlı özellik kümeleri
 
-Visual C++ kullanıcı tanımlı özellik kümesini destekler. Geçersiz kılma gerekmez `GetProperties` veya `GetPropertyInfo`. Bunun yerine, şablonlar, herhangi bir kullanıcı tarafından tanımlanan bir özellik kümesi algılamak ve uygun nesnesine ekleyin.
+Görsel C++ Kullanıcı tanımlı özellik kümelerini destekler. `GetProperties` veya `GetPropertyInfo`geçersiz kılmak zorunda değilsiniz. Bunun yerine, şablonlar Kullanıcı tanımlı herhangi bir özellik kümesini algılar ve uygun nesneye ekler.
 
-Başlatma zamanında kullanılabilir olması gereken kullanıcı tanımlı bir özellik kümesi varsa (diğer bir deyişle, tüketici çağırmadan önce `IDBInitialize::Initialize`), bu BEGIN_PROPERTY_SET_EX makrosu birlikte UPROPSET_USERINIT bayrağı kullanılarak belirtin. Özellik kümesi (OLE DB belirtimi gerektirdiği şekilde) çalışması bu veri kaynağı nesnesi olması gerekir. Örneğin:
+Başlatma zamanında kullanılabilir olması gereken kullanıcı tanımlı bir özellik kümesine sahipseniz (diğer bir deyişle, tüketici `IDBInitialize::Initialize`çağırmadan önce), bunu BEGIN_PROPERTY_SET_EX makrolarıyla birlikte UPROPSET_USERINIT bayrağını kullanarak belirtebilirsiniz. Özellik kümesi, bunun çalışması için veri kaynağı nesnesinde olmalıdır (OLE DB belirtimi gerektirdiğinden). Örnek:
 
 ```cpp
 BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)

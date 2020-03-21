@@ -1,5 +1,5 @@
 ---
-title: Veritabanı desteği (MFC-ATL) yükleme
+title: Veritabanı desteğini yükleme (MFC-ATL)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data access [C++], installing database support
@@ -7,17 +7,16 @@ helpviewer_keywords:
 - ATL [C++], database support
 - databases [C++], installing database support
 ms.assetid: 3820ba96-4fb8-4405-83dd-bb3bc5998667
-ms.openlocfilehash: cd0e8892aa208c80fdd30e6c3f4d47bddb9886ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c105b0ec579354a7360f9ff2d1e99f394618befc
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397945"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80077101"
 ---
-# <a name="installing-database-support-mfcatl"></a>Veritabanı desteği (MFC/ATL) yükleme
+# <a name="installing-database-support-mfcatl"></a>Veritabanı desteğini yükleme (MFC/ATL)
 
-Visual C++ veritabanı ürünlerden içermez. Bitiş
-
+Görsel C++ herhangi bir veritabanı ürünü içermez. Alıcı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

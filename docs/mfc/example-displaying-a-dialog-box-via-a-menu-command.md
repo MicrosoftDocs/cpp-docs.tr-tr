@@ -1,5 +1,5 @@
 ---
-title: 'Örnek: Bir menü komutu aracılığıyla bir Iletişim kutusu görüntüleme'
+title: 'Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme'
 ms.date: 09/07/2019
 helpviewer_keywords:
 - MFC dialog boxes [MFC], examples
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - examples [MFC], dialog boxes
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-ms.openlocfilehash: 12c919c1c79a3e40a1322f3f73398b90af2fad5f
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: ec4e0495519db3e30213d8abb9292409f2110e3c
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095928"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80078837"
 ---
-# <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir menü komutu aracılığıyla bir Iletişim kutusu görüntüleme
+# <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme
 
 Bu konu aşağıdaki yordamları içerir:
 
@@ -44,7 +44,7 @@ Yordamlar aşağıdaki adları ve değerleri kullanır:
 
 1. İletişim kutusu için bir sınıf ekleyin. Daha fazla bilgi için bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md) .
 
-1. **Sınıf görünümü**, belge sınıfını (CDisplayDialogDoc) seçin. **Özellikler** penceresinde **Olaylar** düğmesine tıklayın. Menü komutunun KIMLIĞINE (ID_VIEW_TEST) çift tıklayın. Ardından aşağı oka tıklayın ve  **\<> Ekle OnViewTest**' i seçin.
+1. **Sınıf görünümü**, belge sınıfını (CDisplayDialogDoc) seçin. **Özellikler** penceresinde **Olaylar** düğmesine tıklayın. Menü komutunun KIMLIĞINE (ID_VIEW_TEST) çift tıklayın. Sonra, aşağı oka tıklayın ve **\<ekle > OnViewTest**' i seçin.
 
    Bir MDI uygulamasının anaadına menü komutu eklediyseniz bunun yerine uygulama sınıfını (CDisplayDialogApp) seçin.
 
@@ -54,11 +54,11 @@ Yordamlar aşağıdaki adları ve değerleri kullanır:
    #include "TestDialog.h"
    ```
 
-1. İşlevi uygulamak `OnViewTest` için aşağıdaki kodu ekleyin:
+1. İşlevi uygulamak için aşağıdaki kodu `OnViewTest` ekleyin:
 
    ```cpp
    CTestDialog testdlg;
-   testdlg.DoModal(); 
+   testdlg.DoModal();
    ```
 
 ### <a name="to-display-a-modeless-dialog-box"></a>Kalıcı olmayan iletişim kutusu görüntüleme
@@ -99,7 +99,7 @@ Yordamlar aşağıdaki adları ve değerleri kullanır:
    delete m_pTestDlg;
    ```
 
-   - İşlevi uygulamak `OnViewTest` için aşağıdaki kodu ekleyin:
+   - İşlevi uygulamak için aşağıdaki kodu `OnViewTest` ekleyin:
 
    ```cpp
    if (NULL == m_pTestDlg)

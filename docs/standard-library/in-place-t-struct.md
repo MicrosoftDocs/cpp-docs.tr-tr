@@ -6,14 +6,14 @@ f1_keywords:
 - utility/std::in_place_t
 helpviewer_keywords:
 - utility<in_place_t> struct
-ms.openlocfilehash: c9628ea996ef6be601cb76e83b4f395f5e394bc4
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d7dad4f6ffbbf7111016bffdd087b5e9b1599c87
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267993"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076489"
 ---
-# <a name="inplacet-struct"></a>in_place_t yapısı
+# <a name="in_place_t-struct"></a>in_place_t yapısı
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,7 +28,7 @@ template <class T>
     struct in_place_type_t {
         explicit in_place_type_t() = default;
     };
-    
+
 template <class T> inline constexpr in_place_type_t<T> in_place_type{};
 
 template <size_t I>

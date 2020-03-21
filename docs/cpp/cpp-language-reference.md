@@ -5,16 +5,16 @@ ms.date: 12/10/2019
 helpviewer_keywords:
 - C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 8d828c1b151e37380c123003c245f6b83243f84a
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: f00d4eb5dc69ee0ab95ea864e63091b041a1853f
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301593"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80079930"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 
-Bu başvuru, Microsoft C++ C++ derleyicisinde uygulanan şekilde programlama dilini açıklar. Kuruluş, Margaret Ellis ve Bjarne Stroustrup ile ANSI/ISO C++ uluslararası standart (ISO/ıEC fd, 14882) [*ek açıklamalı C++ başvuru kılavuzuna*](http://www.stroustrup.com/arm.html) dayanır. Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
+Bu başvuru, Microsoft C++ C++ derleyicisinde uygulanan şekilde programlama dilini açıklar. Kuruluş, Margaret Ellis ve Bjarne Stroustrup ile ANSI/ISO C++ uluslararası standart (ISO/ıEC fd, 14882) *ek açıklamalı C++ başvuru kılavuzuna* dayanır. Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
 
 Modern C++ programlama uygulamalarına genel bakış için bkz. uygulamasına [ C++geri hoş geldiniz ](welcome-back-to-cpp-modern-cpp.md).
 
