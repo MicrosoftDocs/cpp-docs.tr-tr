@@ -116,12 +116,12 @@ helpviewer_keywords:
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: 08620e0ae6b54b106daba8e0b0a392ceb1a6577d
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 9d00ba8161e204661077848f213043bf2b275c15
+ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422033"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80076726"
 ---
 # <a name="basic_string-class"></a>basic_string Sınıfı
 
@@ -236,7 +236,7 @@ Denetlenen diziyi değiştiren bir işleve yapılan herhangi bir çağrıdan son
 
 **Ad alanı:** std
 
-## <a name="allocator_type"></a>basic_string:: allocator_type
+## <a name="basic_stringallocator_type"></a><a name="allocator_type"></a>basic_string:: allocator_type
 
 Bir dize nesnesi için ayırıcı sınıfını temsil eden bir tür.
 
@@ -267,7 +267,7 @@ int main( )
 }
 ```
 
-## <a name="append"></a>basic_string:: Append
+## <a name="basic_stringappend"></a><a name="append"></a>basic_string:: Append
 
 Dizenin sonuna karakter ekler.
 
@@ -428,7 +428,7 @@ The string str2f is: Wide World
 The appended string str1 is: Hello World.
 ```
 
-## <a name="assign"></a>basic_string:: Assign
+## <a name="basic_stringassign"></a><a name="assign"></a>basic_string:: Assign
 
 Bir dizenin içeriğine yeni karakter değerleri atar.
 
@@ -589,7 +589,7 @@ The string str2f is: Wide World
 The string str1 assigned a range of string str2f is: World.
 ```
 
-## <a name="at"></a>basic_string:: at
+## <a name="basic_stringat"></a><a name="at"></a>basic_string:: at
 
 Bir dizedeki belirtilen dizine sahip karaktere bir başvuru sağlar.
 
@@ -657,7 +657,7 @@ int main( )
 }
 ```
 
-## <a name="back"></a>basic_string:: Back
+## <a name="basic_stringback"></a><a name="back"></a>basic_string:: Back
 
 Dizedeki son öğeye bir başvuru döndürür.
 
@@ -673,7 +673,7 @@ Dizenin boş olmayan bir son öğesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="basic_string"></a>basic_string:: basic_string
+## <a name="basic_stringbasic_string"></a><a name="basic_string"></a>basic_string:: basic_string
 
 Boş olan, belirli karakterler tarafından başlatılan veya başka bir dize nesnesinin veya C Style (null sonlandırılmış) dizenin tümünün veya bir kısmının kopyası olan bir dize oluşturur.
 
@@ -830,7 +830,7 @@ int main( )
 }
 ```
 
-## <a name="begin"></a>basic_string:: Begin
+## <a name="basic_stringbegin"></a><a name="begin"></a>basic_string:: Begin
 
 Dizedeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -880,7 +880,7 @@ int main( ) {
 }
 ```
 
-## <a name="c_str"></a>basic_string:: c_str
+## <a name="basic_stringc_str"></a><a name="c_str"></a>basic_string:: c_str
 
 Bir dizenin içeriğini C stili, null ile sonlandırılmış bir dize olarak dönüştürür.
 
@@ -944,7 +944,7 @@ The C-style string c_str1 is: Hello world
 The length of C-style string str1 = 11
 ```
 
-## <a name="capacity"></a>basic_string:: kapasite
+## <a name="basic_stringcapacity"></a><a name="capacity"></a>basic_string:: kapasite
 
 Dizenin bellek ayırmayı arttırmadan bir dizede depolanabilecek en büyük öğe sayısını döndürür.
 
@@ -1014,7 +1014,7 @@ int main( )
 }
 ```
 
-## <a name="cbegin"></a>basic_string:: cbegin
+## <a name="basic_stringcbegin"></a><a name="cbegin"></a>basic_string:: cbegin
 
 Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
 
@@ -1040,7 +1040,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>basic_string:: cend
+## <a name="basic_stringcend"></a><a name="cend"></a>basic_string:: cend
 
 Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir **const** yineleyici döndürür.
 
@@ -1068,7 +1068,7 @@ auto i2 = Container.cend();
 
 `cend` tarafından döndürülen değer başvurulmamalıdır.
 
-## <a name="clear"></a>basic_string:: Clear
+## <a name="basic_stringclear"></a><a name="clear"></a>basic_string:: Clear
 
 Bir dizenin tüm öğelerini siler.
 
@@ -1119,7 +1119,7 @@ The modified string str1 is:
 Nothing printed above because the string str1 is empty.
 ```
 
-## <a name="compare"></a>basic_string:: Compare
+## <a name="basic_stringcompare"></a><a name="compare"></a>basic_string:: Compare
 
 İki dizenin eşit olup olmadığını veya birinin sözcüıgrafik değerinden daha küçük olduğunu anlamak için, belirtilen bir dizeyle büyük/küçük harfe duyarlı bir karşılaştırma gerçekleştirir.
 
@@ -1380,7 +1380,7 @@ The 3 characters from position 2 of the operand string are equal to
 the first 3 characters of the parameter C-string.
 ```
 
-## <a name="const_iterator"></a>basic_string:: const_iterator
+## <a name="basic_stringconst_iterator"></a><a name="const_iterator"></a>basic_string:: const_iterator
 
 Dizedeki **const** bir öğeye erişebilen ve okuyabilen bir rastgele erişim yineleyici sağlayan bir tür.
 
@@ -1396,7 +1396,7 @@ Bir tür `const_iterator`, bir karakterin değerini değiştirmek için kullanı
 
 `const_iterator`bildirme ve kullanma hakkında bir [örnek için bkz](#begin) . örnek.
 
-## <a name="const_pointer"></a>basic_string:: const_pointer
+## <a name="basic_stringconst_pointer"></a><a name="const_pointer"></a>basic_string:: const_pointer
 
 Dizedeki **const** öğe için bir işaretçi sağlayan bir tür.
 
@@ -1436,7 +1436,7 @@ The string pstr1a is: In Here.
 The C-string cstr1c is: Out There.
 ```
 
-## <a name="const_reference"></a>basic_string:: const_reference
+## <a name="basic_stringconst_reference"></a><a name="const_reference"></a>basic_string:: const_reference
 
 **Const** işlemlerini okumak ve gerçekleştirmek için bir dizede depolanan **const** öğesine başvuru sağlayan bir tür.
 
@@ -1454,7 +1454,7 @@ Tür `allocator_type::const_reference`için bir eş anlamlı. Dize `type`için c
 
 `const_reference`bildirme ve kullanma hakkında bir [örnek için bkz](#at) .
 
-## <a name="const_reverse_iterator"></a>basic_string:: const_reverse_iterator
+## <a name="basic_stringconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>basic_string:: const_reverse_iterator
 
 Dizedeki herhangi bir **const** öğesini okuyabilen bir rastgele erişim yineleyici sağlayan bir tür.
 
@@ -1470,7 +1470,7 @@ Bir tür `const_reverse_iterator`, bir karakterin değerini değiştiremez ve te
 
 `const_reverse_iterator`bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
 
-## <a name="copy"></a>basic_string:: Copy
+## <a name="basic_stringcopy"></a><a name="copy"></a>basic_string:: Copy
 
 Kaynak dizedeki dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakter kopyalar.
 
@@ -1550,7 +1550,7 @@ The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
 
-## <a name="crbegin"></a>basic_string:: crbegin
+## <a name="basic_stringcrbegin"></a><a name="crbegin"></a>basic_string:: crbegin
 
 Ters çevrilen dizedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.
 
@@ -1562,7 +1562,7 @@ const_reverse_iterator crbegin() const;
 
 Dizenin sonunun hemen ötesinde işaret eden bir ters Yineleyici. Konum, ters dizenin başlangıcını belirler.
 
-## <a name="crend"></a>basic_string:: crend
+## <a name="basic_stringcrend"></a><a name="crend"></a>basic_string:: crend
 
 Ters çevrilen dizedeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -1576,7 +1576,7 @@ Ters çevrilen dizedeki son öğeden sonra gelen konumu ele alan bir sabit ters 
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="copy_s"></a>basic_string:: _Copy_s
+## <a name="basic_string_copy_s"></a><a name="copy_s"></a>basic_string:: _Copy_s
 
 Kaynak dizedeki dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakter kopyalar.
 
@@ -1656,7 +1656,7 @@ The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
 
-## <a name="data"></a>basic_string::d ata
+## <a name="basic_stringdata"></a><a name="data"></a>basic_string::d ata
 
 Bir dizenin içeriğini null sonlandırılmış bir karakter dizisine dönüştürür.
 
@@ -1673,7 +1673,7 @@ Dizenin içeriğini içeren, null ile sonlandırılmış dizinin ilk öğesine y
 
 `data` noktası tarafından döndürülen işaretçi geçerli bir Aralık `[data(), data() + size()]`. Aralıktaki her öğe, dizedeki geçerli veriye karşılık gelir. Diğer bir deyişle, aralığındaki her geçerli *fark için* `data() + n == addressof(operator[](n))`.
 
-`data`**const** aşırı yüklemesiyle döndürülen dizenin içeriğini değiştirirseniz, davranış tanımsızdır. Ayrıca, Terminal null karakteri başka bir değerle değiştirilirse tanımsız bir davranış alırsınız. Dizeye yönelik const olmayan bir başvuru standart kitaplık işlevine geçirilmezse döndürülen işaretçi geçersiz kılınabilir. Ayrıca, const olmayan bir üye işlevine yapılan bir çağrı tarafından geçersiz kılınabilir. `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`ve `operator[]` üye çağrıları, işaretçiyi geçersiz kılmaz. 
+`data`**const** aşırı yüklemesiyle döndürülen dizenin içeriğini değiştirirseniz, davranış tanımsızdır. Ayrıca, Terminal null karakteri başka bir değerle değiştirilirse tanımsız bir davranış alırsınız. Dizeye yönelik const olmayan bir başvuru standart kitaplık işlevine geçirilmezse döndürülen işaretçi geçersiz kılınabilir. Ayrıca, const olmayan bir üye işlevine yapılan bir çağrı tarafından geçersiz kılınabilir. `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`ve `operator[]` üye çağrıları, işaretçiyi geçersiz kılmaz.
 
 C++ 11 ' den önce, döndürülen dizenin null sonlandırılmış olduğunu garantilemez `data`. C++ 11 ' den itibaren `data` ve `c_str` her ikisi de null ile sonlandırılmış bir dize döndürür ve bunlar etkin şekilde aynı.
 
@@ -1725,7 +1725,7 @@ The C-style string c_str1 is: Hello world
 The length of C-style string str1 = 11
 ```
 
-## <a name="difference_type"></a>basic_string::d ifference_type
+## <a name="basic_stringdifference_type"></a><a name="difference_type"></a>basic_string::d ifference_type
 
 Aynı dize içindeki öğelere başvuran iki yineleyiciler arasındaki farkı sağlayan bir tür.
 
@@ -1773,7 +1773,7 @@ The last character i is at position: 8.
 The difference is: 6.
 ```
 
-## <a name="empty"></a>basic_string:: boş
+## <a name="basic_stringempty"></a><a name="empty"></a>basic_string:: boş
 
 Dizenin karakter içerip içermediğini test eder.
 
@@ -1821,7 +1821,7 @@ int main() {
 }
 ```
 
-## <a name="end"></a>basic_string:: End
+## <a name="basic_stringend"></a><a name="end"></a>basic_string:: End
 
 Dizedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -1894,7 +1894,7 @@ The modified string str1 is now: No way ouT.
 The string str2 is empty.
 ```
 
-## <a name="erase"></a>basic_string:: Erase
+## <a name="basic_stringerase"></a><a name="erase"></a>basic_string:: Erase
 
 Bir dizedeki bir öğeyi veya öğe aralığını belirtilen konumdan kaldırır.
 
@@ -1997,7 +1997,7 @@ The original string object str3 is: Hello computer.
 The modified string object str3m is: Hello .
 ```
 
-## <a name="find"></a>basic_string:: Find
+## <a name="basic_stringfind"></a><a name="find"></a>basic_string:: Find
 
 Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi ileriye doğru yönde arar.
 
@@ -2172,7 +2172,7 @@ the 5th position in str4 is: 25
 The index of the 1st element of 'clear' in str4 is: 0
 ```
 
-## <a name="find_first_not_of"></a>basic_string:: find_first_not_of
+## <a name="basic_stringfind_first_not_of"></a><a name="find_first_not_of"></a>basic_string:: find_first_not_of
 
 Belirtilen dizenin bir öğesi olmayan ilk karakter için bir dizeyi arar.
 
@@ -2360,7 +2360,7 @@ The index of the 1st non occurrence of an element of '12' in str4 after
 the 0th position is: 2
 ```
 
-## <a name="find_first_of"></a>basic_string:: find_first_of
+## <a name="basic_stringfind_first_of"></a><a name="find_first_of"></a>basic_string:: find_first_of
 
 Belirtilen dizenin herhangi bir öğesiyle eşleşen ilk karakter için bir dizeyi arar.
 
@@ -2547,7 +2547,7 @@ The index of the 1st occurrence of an element of 'a2' in str4 after
 the 0th position is: 1
 ```
 
-## <a name="find_last_not_of"></a>basic_string:: find_last_not_of
+## <a name="basic_stringfind_last_not_of"></a><a name="find_last_not_of"></a>basic_string:: find_last_not_of
 
 Belirli bir dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.
 
@@ -2736,7 +2736,7 @@ The index of the last occurrence of an element not in '12'
 in str4 before the end position is: 10
 ```
 
-## <a name="find_last_of"></a>basic_string:: find_last_of
+## <a name="basic_stringfind_last_of"></a><a name="find_last_of"></a>basic_string:: find_last_of
 
 Belirtilen dizenin herhangi bir öğesiyle eşleşen son karakter için bir dizeyi arar.
 
@@ -2910,7 +2910,7 @@ The index of the last occurrence of an element of 'a2' in str4 before
 the 0th position is: 9
 ```
 
-## <a name="front"></a>basic_string:: Front
+## <a name="basic_stringfront"></a><a name="front"></a>basic_string:: Front
 
 Dizedeki ilk öğeye bir başvuru döndürür.
 
@@ -2926,7 +2926,7 @@ Dizenin, boş olmamalı olması gereken ilk öğesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="get_allocator"></a>basic_string:: get_allocator
+## <a name="basic_stringget_allocator"></a><a name="get_allocator"></a>basic_string:: get_allocator
 
 Dizeyi oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -2969,7 +2969,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>basic_string:: INSERT
+## <a name="basic_stringinsert"></a><a name="insert"></a>basic_string:: INSERT
 
 Belirli bir konumdaki dizeye bir öğe veya dizi öğe veya öğe aralığı ekler.
 
@@ -3148,7 +3148,7 @@ The string with a character inserted from a range is: ABCDefgHIJ
 The string with a character inserted from a range is: ABCDeeeHIJ
 ```
 
-## <a name="iterator"></a>basic_string:: Yineleyici
+## <a name="basic_stringiterator"></a><a name="iterator"></a>basic_string:: Yineleyici
 
 Dizedeki **const** bir öğeye erişebilen ve okuyabilen bir rastgele erişim yineleyici sağlayan bir tür.
 
@@ -3164,7 +3164,7 @@ Bir tür `iterator`, bir karakterin değerini değiştirmek için kullanılabili
 
 `iterator`bildirme ve kullanma hakkında bir [örnek için bkz](#begin) . örnek.
 
-## <a name="length"></a>basic_string:: length
+## <a name="basic_stringlength"></a><a name="length"></a>basic_string:: length
 
 Dizedeki geçerli öğe sayısını döndürür.
 
@@ -3230,7 +3230,7 @@ int main( )
 }
 ```
 
-## <a name="max_size"></a>basic_string:: max_size
+## <a name="basic_stringmax_size"></a><a name="max_size"></a>basic_string:: max_size
 
 Bir dizenin içerebileceği en fazla karakter sayısını döndürür.
 
@@ -3300,7 +3300,7 @@ int main( )
 }
 ```
 
-## <a name="npos"></a>basic_string:: nPos
+## <a name="basic_stringnpos"></a><a name="npos"></a>basic_string:: nPos
 
 Bir arama işlevi başarısız olduğunda "bulunamadı" veya "tüm kalan karakterler" i gösteren-1 ' e başlatılan işaretsiz bir tamsayı değeri.
 
@@ -3316,7 +3316,7 @@ Dönüş değeri `npos` değeri için denetlendiğinde, dönüş değeri **int**
 
 `npos`bildirme ve kullanma hakkında bir [örnek için bkz](#find) . örneğin.
 
-## <a name="op_add_eq"></a>basic_string:: operator + =
+## <a name="basic_stringoperator"></a><a name="op_add_eq"></a>basic_string:: operator + =
 
 Bir dizeye karakter ekler.
 
@@ -3405,7 +3405,7 @@ The appended string str1d is: Hello Wide .
 The doubly appended strig str1 is: Hello Wide World.
 ```
 
-## <a name="op_eq"></a>basic_string:: operator =
+## <a name="basic_stringoperator"></a><a name="op_eq"></a>basic_string:: operator =
 
 Bir dizenin içeriğine yeni karakter değerleri atar.
 
@@ -3499,7 +3499,7 @@ The string str3c is: World.
 The string str1 reassigned with string str3c is: World.
 ```
 
-## <a name="op_at"></a>basic_string:: operator []
+## <a name="basic_stringoperator"></a><a name="op_at"></a>basic_string:: operator []
 
 Bir dizedeki belirtilen dizine sahip karaktere bir başvuru sağlar.
 
@@ -3568,7 +3568,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>basic_string::p oınter
+## <a name="basic_stringpointer"></a><a name="pointer"></a>basic_string::p oınter
 
 Bir dize veya karakter dizisinde bir karakter öğesi işaretçisi sağlayan bir tür.
 
@@ -3605,7 +3605,7 @@ The string pstr1a is: In Here.
 The C-string cstr1b is: Out There.
 ```
 
-## <a name="pop_back"></a>basic_string::p op_back
+## <a name="basic_stringpop_back"></a><a name="pop_back"></a>basic_string::p op_back
 
 Dizenin son öğesini siler.
 
@@ -3617,7 +3617,7 @@ void pop_back();
 
 Bu üye işlevi, dizinin boş olması gereken son öğeyi silmek için `erase(size() - 1)` etkin bir şekilde çağırır.
 
-## <a name="push_back"></a>basic_string::p ush_back
+## <a name="basic_stringpush_back"></a><a name="push_back"></a>basic_string::p ush_back
 
 Dizenin sonuna bir öğesi ekler.
 
@@ -3672,7 +3672,7 @@ The last character-letter of the modified str1 is now: c
 The modified string str1 is: abc
 ```
 
-## <a name="rbegin"></a>basic_string:: rbegin
+## <a name="basic_stringrbegin"></a><a name="rbegin"></a>basic_string:: rbegin
 
 Ters çevrilen dizedeki ilk öğeye bir yineleyici döndürür.
 
@@ -3748,7 +3748,7 @@ AblE was I ere I saw elbA
 The string str2 is empty.
 ```
 
-## <a name="reference"></a>basic_string:: Reference
+## <a name="basic_stringreference"></a><a name="reference"></a>basic_string:: Reference
 
 Bir dizede depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -3768,7 +3768,7 @@ Tür `string`için `chr&`eşdeğerdir.
 
 `reference`bildirme ve kullanma hakkında bir [örnek için bkz](#at) .
 
-## <a name="rend"></a>basic_string:: rend
+## <a name="basic_stringrend"></a><a name="rend"></a>basic_string:: rend
 
 Ters çevrilen dizedeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
@@ -3846,7 +3846,7 @@ ablE was I ere I saw elbo
 The string str2 is empty.
 ```
 
-## <a name="replace"></a>basic_string:: Replace
+## <a name="basic_stringreplace"></a><a name="replace"></a>basic_string:: Replace
 
 Belirli bir konumdaki bir dizedeki öğeleri, belirtilen karakterlerle veya diğer aralıklardan ya da dizelerle veya C dizelerinden kopyalanmış karakterlerle değiştirir.
 
@@ -4143,7 +4143,7 @@ The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)
 is the string: OPPOOOO.
 ```
 
-## <a name="reserve"></a>basic_string:: reserve
+## <a name="basic_stringreserve"></a><a name="reserve"></a>basic_string:: reserve
 
 Dizenin kapasitesini, belirtilen sayı kadar en az bir sayı olarak ayarlar.
 
@@ -4233,7 +4233,7 @@ The current size of string str1 is: 11.
 The reduced capacity of string str1 is: 47.
 ```
 
-## <a name="resize"></a>basic_string:: Resize
+## <a name="basic_stringresize"></a><a name="resize"></a>basic_string:: Resize
 
 Bir dize için yeni bir boyut belirtir, gerektiğinde öğeleri ekleme veya silme.
 
@@ -4343,7 +4343,7 @@ The current size of downsized string str1 is: 5.
 The capacity of downsized string str1 is: 47.
 ```
 
-## <a name="reverse_iterator"></a>basic_string:: reverse_iterator
+## <a name="basic_stringreverse_iterator"></a><a name="reverse_iterator"></a>basic_string:: reverse_iterator
 
 Bir dizede depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -4359,7 +4359,7 @@ Bir tür `reverse_iterator`, bir karakterin değerini değiştirmek için kullan
 
 `reverse_iterator`bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
 
-## <a name="rfind"></a>basic_string:: rfind
+## <a name="basic_stringrfind"></a><a name="rfind"></a>basic_string:: rfind
 
 Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi geriye doğru yönde arar.
 
@@ -4534,7 +4534,7 @@ The substring 'clear' was not found in str4 before the 15th position.
 The index of the 1st element of 'clear' in str4 is: 17
 ```
 
-## <a name="shrink_to_fit"></a>basic_string:: shrink_to_fit
+## <a name="basic_stringshrink_to_fit"></a><a name="shrink_to_fit"></a>basic_string:: shrink_to_fit
 
 Dizenin fazla kapasitesini atar.
 
@@ -4546,7 +4546,7 @@ void shrink_to_fit();
 
 Bu üye işlevi, kapsayıcıda gereksiz depolamayı ortadan kaldırır.
 
-## <a name="size"></a>basic_string:: size
+## <a name="basic_stringsize"></a><a name="size"></a>basic_string:: size
 
 Dizedeki geçerli öğe sayısını döndürür.
 
@@ -4612,7 +4612,7 @@ int main( )
 }
 ```
 
-## <a name="size_type"></a>basic_string:: size_type
+## <a name="basic_stringsize_type"></a><a name="size_type"></a>basic_string:: size_type
 
 Bir dizedeki öğe ve dizin sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -4655,7 +4655,7 @@ The current size of string str1 is: 11.
 The capacity of string str1 is: 15.
 ```
 
-## <a name="substr"></a>basic_string:: substr
+## <a name="basic_stringsubstr"></a><a name="substr"></a>basic_string:: substr
 
 Belirli bir konumdan başlayarak bir dizeden en fazla sayıda karakter alt dizesini kopyalar.
 
@@ -4714,7 +4714,7 @@ Heterological paradoxes are persistent.
 which is the entire original string.
 ```
 
-## <a name="swap"></a>basic_string:: swap
+## <a name="basic_stringswap"></a><a name="swap"></a>basic_string:: swap
 
 İki dizenin içeriğini değiş tokuş edin.
 
@@ -4775,7 +4775,7 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.
 ```
 
-## <a name="traits_type"></a>basic_string:: traits_type
+## <a name="basic_stringtraits_type"></a><a name="traits_type"></a>basic_string:: traits_type
 
 Bir dizede depolanan öğelerin karakter nitelikleri için bir tür.
 
@@ -4793,7 +4793,7 @@ Tür `string`için **char_traits\<char >** eşdeğerdir.
 
 `traits_type`bildirme ve kullanma hakkında bir örnek için bkz. [kopya](../standard-library/char-traits-struct.md#copy) örneği.
 
-## <a name="value_type"></a>basic_string:: value_type
+## <a name="basic_stringvalue_type"></a><a name="value_type"></a>basic_string:: value_type
 
 Bir dizede depolanan karakterlerin türünü temsil eden bir tür.
 
