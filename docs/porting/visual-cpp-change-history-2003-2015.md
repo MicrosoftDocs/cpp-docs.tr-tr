@@ -4,12 +4,12 @@ ms.date: 10/21/2019
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: d9e8778e970b6b672d6198770ad0c7ab5a4674b9
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 6dd14bf9f53030920bb5114fb3a52499444ff10a
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076863"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150767"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003 - 2015
 
@@ -2883,7 +2883,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, `/W3` derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın ve uyarı C4370 ' ı açın. Örnek:
+   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, `/W3` derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın ve uyarı C4370 ' ı açın. Örneğin:
 
     ```cpp
     #pragma warning(default:4370)
@@ -2952,7 +2952,7 @@ Visual Studio 2013 C++ derleyici, Visual Studio 2010 ' de uygulanan _ITERATOR_DE
 
    Bu değişikliğin yan etkisi olarak, kimlik durumu artık çalışmaz (common_type\<T > her zaman T türünde sonuç vermez). Bu davranış önerilen çözünürlüğe uyar, ancak önceki davranışa bağlı olan tüm kodları keser.
 
-   Bir kimlik türü nitelik gerekliyse, \<void > için çalışmadığı için, \<type_traits > tanımlanmış standart olmayan `std::identity` kullanmayın. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Bir örneği aşağıda verilmiştir:
+   Bir kimlik türü nitelik gerekliyse, \<void > için çalışmadığı için, \<type_traits > tanımlanmış standart olmayan `std::identity` kullanmayın. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Örnek buradadır:
 
     ```cpp
     template < typename T> struct Identity {
@@ -3040,7 +3040,7 @@ Visual Studio 2013 C++ derleyici, Visual Studio 2010 ' de uygulanan _ITERATOR_DE
 
 ### <a name="standard-library"></a>Standart Kitaplık
 
-- C++ 98/03 ve C++ 11 standartları arasında önemli bir değişikliği takip etmek, `make_pair()` çağırmak için açık şablon bağımsız değişkenlerini kullanmak — `make_pair<int, int>(x, y)` gibi, genellikle Visual Studio 2012 ' C++ de Visual 'te derlenmiyor. Çözüm, `make_pair(x, y)`gibi açık şablon bağımsız değişkenleri olmadan `make_pair() `her zaman çağırlamadır. Açık şablon bağımsız değişkenlerinin sağlanması işlevin amacını erteler. Elde edilen tür üzerinde kesin denetim istiyorsanız, `pair<short, short>(int1, int2)`gibi `make_pair` yerine `pair` kullanın.
+- C++ 98/03 ve C++ 11 standartları arasında önemli bir değişikliği takip etmek, `make_pair()` çağırmak için açık şablon bağımsız değişkenlerini kullanmak — `make_pair<int, int>(x, y)` gibi, genellikle Visual Studio 2012 ' C++ de Visual 'te derlenmiyor. Çözüm, `make_pair(x, y)`gibi açık şablon bağımsız değişkenleri olmadan `make_pair()` her zaman çağırlamadır. Açık şablon bağımsız değişkenlerinin sağlanması işlevin amacını erteler. Elde edilen tür üzerinde kesin denetim istiyorsanız, `pair<short, short>(int1, int2)`gibi `make_pair` yerine `pair` kullanın.
 
 - C++ 98/03 ve C++ 11 standartları arasında başka bir önemli değişiklik: A örtük olarak B 'ye dönüştürülebilir ve B, c 'ye örtük olarak dönüştürülebilir ancak C, C++ 98/03 ve Visual Studio 2010 'e örtülü olarak dönüştürülebilir `pair<A, X>` (örtük olarak veya açıkça) `pair<C, X>`. (Diğer tür olan X, burada ilgilenmez ve çiftin ilk türüne özgü değildir.) Visual C++ Studio 2012 ' deki derleyici, bir A 'nın örtülü olarak C 'ye dönüştürümediğini algılar ve aşırı yükleme çözünürlüğünden çift dönüştürmeyi kaldırır. Bu değişiklik birçok senaryo için pozitif bir değer. Örneğin, `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`aşırı yükleme ve `pair<const char *, const char *>` ile `func()` çağırma bu değişiklik ile derlenir. Ancak, bu değişiklik ısrarlı çift Dönüştürmelere bağlı kodu keser. Bu tür kodlar genellikle dönüştürmenin bir parçası açıkça gerçekleştirilebililerek (örneğin, `pair<C, X>`bekleyen bir işleve `make_pair(static_cast<B>(a), x)` geçirerek düzeltilebilir.
 

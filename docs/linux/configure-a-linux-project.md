@@ -2,12 +2,12 @@
 title: Visual Studio C++ 'da Linux projesi yapılandırma
 ms.date: 06/11/2019
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 853afc39412ecd07f3ec6c9ad42d0ab599bfe17e
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 50d5df0e25e82238297458ec7fedb955654e525b
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077734"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150972"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -17,7 +17,7 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-Bu konu başlığında [, Visual Studio 'da yeni C++ bir Linux projesi oluşturma](create-a-new-linux-project.md)bölümünde açıklandığı gibi bir C++ Linux projesinin nasıl yapılandırılacağı açıklanmaktadır. CMake Linux projeleri için bkz. [Linux CMake projesini yapılandırma ](cmake-linux-project.md).
+Bu konu başlığında [, Visual Studio 'da yeni C++ bir Linux projesi oluşturma](create-a-new-linux-project.md)bölümünde açıklandığı gibi bir C++ Linux projesinin nasıl yapılandırılacağı açıklanmaktadır. CMake Linux projeleri için bkz. [Linux CMake projesini yapılandırma](cmake-linux-project.md).
 
 Bir Linux projesini fiziksel bir Linux makinesini, sanal makineyi veya [Linux Için Windows alt sistemini](/windows/wsl/about) (WSL) hedeflemek üzere yapılandırabilirsiniz.
 

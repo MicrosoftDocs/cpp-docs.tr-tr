@@ -29,12 +29,12 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-ms.openlocfilehash: 546d8c61e875dd7c295e892359e39fa5a76867b4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: d5a1b0d106774ede13b0e23d4bacb8fbbc47d28f
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421802"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150686"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;işlevsel&gt; işlevleri
 
@@ -51,7 +51,7 @@ Bu işlevler C++ 17 ' de kullanımdan kaldırılmıştır:
 |-|-|
 |[Not1](#not1)|[NOT2](#not2)|
 
-## <a name="bind"></a>bağladığınızda
+## <a name="bind"></a><a name="bind"></a>bağladığınızda
 
 Bağımsız değişkenleri çağrılabilir bir nesneye bağlar.
 
@@ -81,7 +81,7 @@ Nth Call bağımsız değişkeni.
 
 `FT, T1, T2, ..., TN` türler kopya oluşturulabilir olmalı ve `INVOKE(fn, t1, ..., tN)` bazı değerler `w1, w2, ..., wN`geçerli bir ifade olmalıdır.
 
-İlk şablon işlevi, zayıf sonuç türü ile `g` bir iletme çağrısı sarmalayıcı döndürür. `g(u1, u2, ..., uM)` etkisi `INVOKE(f, v1, v2, ..., vN, `[invoke_result](../standard-library/invoke-result-class.md)`<FT cv (V1, V2, ..., VN)>::type)`; burada `cv`, `g` CV niteleyicileri ve `v1, v2, ..., vN` bağlantılı bağımsız değişkenlerin değerleri ve türleri aşağıda belirtildiği gibi belirlenir. Çağrılabilir bir nesne, özel bir bağımsız değişken listesiyle çağrılabilir bir nesne yapmak için bağımsız değişkenleri bir çağrılabilir nesneye bağlamak için kullanılır.
+İlk şablon işlevi, zayıf sonuç türü ile `g` bir iletme çağrısı sarmalayıcı döndürür. `g(u1, u2, ..., uM)` etkisi `INVOKE(f, v1, v2, ..., vN,` [invoke_result](../standard-library/invoke-result-class.md)`<FT cv (V1, V2, ..., VN)>::type)`; burada `cv`, `g` CV niteleyicileri ve `v1, v2, ..., vN` bağlantılı bağımsız değişkenlerin değerleri ve türleri aşağıda belirtildiği gibi belirlenir. Çağrılabilir bir nesne, özel bir bağımsız değişken listesiyle çağrılabilir bir nesne yapmak için bağımsız değişkenleri bir çağrılabilir nesneye bağlamak için kullanılır.
 
 İkinci şablon işlevi, `RTy`için bir eş anlamlı olan `result_type` iç içe bir tür içeren bir iletme Çağrı sarmalayıcısı `g` döndürür. `g(u1, u2, ..., uM)` etkisi `INVOKE(f, v1, v2, ..., vN, RTy)`, burada `cv`, `g` CV niteleyicileri ve `v1, v2, ..., vN` bağlantılı bağımsız değişkenlerin değerleri ve türleri aşağıda belirtildiği gibi belirlenir. Çağrılabilir bir nesne ve belirli bir dönüş türü ile çağrılabilir bir nesne oluşturmak için bağımsız değişkenleri çağrılabilir bir nesneye bağlamak için kullanın.
 
@@ -152,7 +152,7 @@ int main()
 3^2 == 9
 ```
 
-## <a name="bind1st"></a>bind1st
+## <a name="bind1st"></a><a name="bind1st"></a>bind1st
 
 Bir ikili işlev nesnesini birli işlev nesnesine dönüştürmek için bir bağdaştırıcı oluşturan bir yardımcı şablon işlevi. İkili işlevin ilk bağımsız değişkenini belirtilen bir değere bağlar. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
@@ -246,7 +246,7 @@ The number of elements in v1 greater than 5 is: 4.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bind2nd"></a>bind2nd
+## <a name="bind2nd"></a><a name="bind2nd"></a>bind2nd
 
 Bir ikili işlev nesnesini birli işlev nesnesine dönüştürmek için bir bağdaştırıcı oluşturan bir yardımcı şablon işlevi. İkili işlevin ikinci bağımsız değişkenini belirtilen bir değere bağlar. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
@@ -340,7 +340,7 @@ The number of elements in v1 greater than 15 is: 2.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bit_and"></a>bit_and
+## <a name="bit_and"></a><a name="bit_and"></a>bit_and
 
 Bağımsız değişkenlerinde bit düzeyinde ve işlem (ikili `operator&`) yapan önceden tanımlanmış bir işlev nesnesi.
 
@@ -381,7 +381,7 @@ Bit düzeyinde ve işlemin sağ işleneni. Özelleştirilmemiş şablon *tür t�
 
 `bit_and` functor, temel veri türleri veya ikili `operator&`uygulayan kullanıcı tanımlı türler için tamsayı türleriyle kısıtlıdır.
 
-## <a name="bit_not"></a>bit_not
+## <a name="bit_not"></a><a name="bit_not"></a>bit_not
 
 Bağımsız değişkeninde bir bit düzeyinde tamamlama (DEĞIL) işlemi (birli `operator~`) yapan önceden tanımlanmış bir işlev nesnesi. C++ 14 ' te eklendi.
 
@@ -417,7 +417,7 @@ Bit düzeyinde tamamlama işleminin işleneni. Özelleştirilmemiş şablon *tü
 
 `bit_not` functor, temel veri türleri veya ikili `operator~`uygulayan kullanıcı tanımlı türler için tamsayı türleriyle kısıtlıdır.
 
-## <a name="bit_or"></a>bit_or
+## <a name="bit_or"></a><a name="bit_or"></a>bit_or
 
 Bağımsız değişkenlerinde bit düzeyinde OR işlemi (`operator|`) yapan önceden tanımlanmış bir işlev nesnesi.
 
@@ -458,7 +458,7 @@ Bit düzeyinde veya işlemin sağ işleneni. Özelleştirilmemiş şablon *tür 
 
 `bit_or` functor, temel veri türleri veya `operator|`uygulayan kullanıcı tanımlı türler için tamsayı türleriyle kısıtlıdır.
 
-## <a name="bit_xor"></a>bit_xor
+## <a name="bit_xor"></a><a name="bit_xor"></a>bit_xor
 
 Bağımsız değişkenlerinde bit düzeyinde XOR işlemi (ikili `operator^`) yapan önceden tanımlanmış bir işlev nesnesi.
 
@@ -499,7 +499,7 @@ Bit düzeyinde XOR işleminin sağ işleneni. Özelleştirilmemiş şablon *tür
 
 `bit_xor` functor, temel veri türleri veya ikili `operator^`uygulayan kullanıcı tanımlı türler için tamsayı türleriyle kısıtlıdır.
 
-## <a name="cref"></a>cref
+## <a name="cref"></a><a name="cref"></a>cref
 
 Bir bağımsız değişkenden const `reference_wrapper` oluşturur.
 
@@ -555,7 +555,7 @@ cref(i) = 1
 cref(neg)(i) = -1
 ```
 
-## <a name="invoke"></a>Resync
+## <a name="invoke"></a><a name="invoke"></a>Resync
 
 Belirtilen bağımsız değişkenlerle çağrılabilir tüm nesneleri çağırır. C++ 17 ' ye eklenmiştir.
 
@@ -676,7 +676,7 @@ pd->n_: 42
 42 is divisible by 7.
 ```
 
-## <a name="mem_fn"></a>mem_fn
+## <a name="mem_fn"></a><a name="mem_fn"></a>mem_fn
 
 Basit bir çağrı sarmalayıcısı üretir.
 
@@ -739,7 +739,7 @@ int main()
 3*2 == 6
 ```
 
-## <a name="mem_fun"></a>mem_fun
+## <a name="mem_fun"></a><a name="mem_fun"></a>mem_fun
 
 İşaretçi bağımsız değişkenleriyle başlatıldığında üye işlevleri için işlev nesne bağdaştırıcıları oluşturmak için kullanılan yardımcı Şablon işlevleri. [Mem_fn](#mem_fn) ve [BIND](#bind)için c++ 11 ' de kullanımdan kaldırılmıştır ve c++ 17 ' de kaldırılır.
 
@@ -826,7 +826,7 @@ int main( )
 }
 ```
 
-## <a name="mem_fun_ref"></a>mem_fun_ref
+## <a name="mem_fun_ref"></a><a name="mem_fun_ref"></a>mem_fun_ref
 
 Başvuru bağımsız değişkenleri kullanılarak başlatıldığında üye işlevleri için işlev nesne bağdaştırıcıları oluşturmak için kullanılan yardımcı Şablon işlevleri. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
@@ -931,7 +931,7 @@ The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13
 With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
 ```
 
-## <a name="not1"></a>Not1
+## <a name="not1"></a><a name="not1"></a>Not1
 
 Birli koşulun tamamlayıcısını döndürür. C++ 17 ' de [not_fn](#not_fn) için kullanım dışı.
 
@@ -1003,7 +1003,7 @@ The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.
 ```
 
-## <a name="not2"></a>NOT2
+## <a name="not2"></a><a name="not2"></a>NOT2
 
 İkili koşulun tamamlayıcısını döndürür. C++ 17 ' de [not_fn](#not_fn) için kullanım dışı.
 
@@ -1079,7 +1079,7 @@ Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
 Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 ```
 
-## <a name="not_fn"></a>not_fn
+## <a name="not_fn"></a><a name="not_fn"></a>not_fn
 
 `not_fn` işlev şablonu çağrılabilir bir nesne alır ve çağrılabilir bir nesne döndürür. Döndürülen çağrılabilir nesne daha sonra bazı bağımsız değişkenlerle çağrıldığında, bunları özgün çağrılabilir nesnesine geçirir ve sonucu mantıksal olarak geçersiz kılar. Sarmalanmış çağrılabilir nesnenin const nitelemesini ve değer kategorisi davranışını korur. `not_fn` C++ 17 ' de yenidir ve kullanım dışı `std::not1`, `std::not2`, `std::unary_negate`ve `std::binary_negate`yerini alır.
 
@@ -1179,7 +1179,7 @@ Elements divisible by three: 2
 Elements not divisible by three: 5
 ```
 
-## <a name="ptr_fun"></a>ptr_fun
+## <a name="ptr_fun"></a><a name="ptr_fun"></a>ptr_fun
 
 Sırasıyla birli ve ikili işlev işaretçilerini tekil ve ikili Uyarlamalı tablo işlevlerine dönüştürmek için kullanılan yardımcı Şablon işlevleri. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
@@ -1210,7 +1210,7 @@ Bir utable işlevine dönüştürülecek birli veya ikili işlev işaretçisi.
 
 [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]
 
-## <a name="ref"></a>ref
+## <a name="ref"></a><a name="ref"></a>ref
 
 Bağımsız değişkenden bir `reference_wrapper` oluşturur.
 
@@ -1302,7 +1302,7 @@ tiger lion cougar
 tiger cougar
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Kur
 
 İki `function` nesnesini değiştirir.
 

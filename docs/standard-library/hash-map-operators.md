@@ -5,12 +5,12 @@ f1_keywords:
 - hash_map/std::operator!=
 - hash_map/std::operator==
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: c4cc73feb3c8163a2be9f0122f57eaa0fb8ab3b8
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 50a6c2784b4c861f7cf3bbb4d1e1c8ebd0eea72d
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419016"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150751"
 ---
 # <a name="lthash_mapgt-operators"></a>&lt;hash_map&gt; işleçleri
 
@@ -19,10 +19,10 @@ ms.locfileid: "79419016"
 |[operator!=](#op_neq)|[işleç! = (multimap)](#op_neq_mm)|
 |[işleç = =](#op_eq_eq)|[işleç = = (multimap)](#op_eq_eq_mm)|
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
 
 İşlecin sol tarafındaki hash_map nesnesinin sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
 
@@ -88,10 +88,10 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
 
 İşlecin sol tarafındaki hash_map nesnesinin sağ taraftaki hash_map nesnesine eşit olup olmadığını sınar.
 
@@ -155,10 +155,10 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-## <a name="op_neq_mm"></a>işleç! = (hash_multimap)
+## <a name="operator-hash_multimap"></a><a name="op_neq_mm"></a>işleç! = (hash_multimap)
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
 
 İşlecin sol tarafındaki hash_multimap nesnesinin sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
 
@@ -222,10 +222,10 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.
 ```
 
-## <a name="op_eq_eq_mm"></a>işleç = = (hash_multimap)
+## <a name="operator--hash_multimap"></a><a name="op_eq_eq_mm"></a>işleç = = (hash_multimap)
 
 > [!NOTE]
-> {1&gt;Bu API artık kullanılmıyor.&lt;1} Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
 
 İşlecin sol tarafındaki hash_multimap nesnesinin sağ taraftaki hash_multimap nesnesine eşit olup olmadığını sınar.
 

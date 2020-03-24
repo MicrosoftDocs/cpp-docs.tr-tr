@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::to_string [C++]
 - std::to_wstring [C++]
-ms.openlocfilehash: 828aeb975178850f5c0a7ea3b7e982bbadd6e7c4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 459e46f6aa144c591173a159c282658b120b1af3
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419492"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150609"
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize&gt; işlevleri
 
@@ -44,7 +44,7 @@ ms.locfileid: "79419492"
 |[Stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|
 |[Kur](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|
 
-## <a name="getline"></a>getline
+## <a name="getline"></a><a name="getline"></a>getline
 
 Giriş akışı satır satırından dizeleri ayıkla.
 
@@ -156,7 +156,7 @@ int main()
 }
 ```
 
-## <a name="stod"></a>stod
+## <a name="stod"></a><a name="stod"></a>stod
 
 Bir karakter dizisini **Double**'a dönüştürür.
 
@@ -184,9 +184,9 @@ double stod(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe dizisini, `strtod( str.c_str(), _Eptr)`çağırarak, `_Eptr` bir işlevin dahili bir nesne olduğu, **Bu türdeki bir** değer `val` bir değere dönüştürür. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe dizisini, `strtod( str.c_str(), _Eptr)`çağırarak, `_Eptr` bir işlevin dahili bir nesne olduğu, **Bu türdeki bir** değer `val` bir değere dönüştürür. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="stof"></a>stof
+## <a name="stof"></a><a name="stof"></a>stof
 
 Bir karakter dizisini float öğesine dönüştürür.
 
@@ -213,9 +213,9 @@ Float değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe sırasını, `strtof( str.c_str(), _Eptr)`çağırarak, `_Eptr` işlevin dahili bir nesnesi olduğu gibi **float** türünde bir değer `val` dönüştürür. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe sırasını, `strtof( str.c_str(), _Eptr)`çağırarak, `_Eptr` işlevin dahili bir nesnesi olduğu gibi **float** türünde bir değer `val` dönüştürür. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="stoi"></a>Stoi
+## <a name="stoi"></a><a name="stoi"></a>Stoi
 
 Bir karakter dizisini tamsayıya dönüştürür.
 
@@ -251,7 +251,7 @@ Tamsayı değeri.
 
 `str.c_str() == *_Eptr`, `stoi` `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa veya döndürülen değer **int**türünde bir nesne olarak temsil edimiyorsa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx``*_Eptr - str.c_str()` depolar.
 
-## <a name="stol"></a>STOL
+## <a name="stol"></a><a name="stol"></a>STOL
 
 Bir karakter dizisini **Long**değerine dönüştürür.
 
@@ -281,9 +281,9 @@ Uzun tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe dizisini, `strtol( str.c_str(), _Eptr, idx)`çağırarak `_Eptr` bir nesne olan bir nesne olduğu **gibi,** `val` bir değere dönüştürür. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe dizisini, `strtol( str.c_str(), _Eptr, idx)`çağırarak `_Eptr` bir nesne olan bir nesne olduğu **gibi,** `val` bir değere dönüştürür. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="stold"></a>stold
+## <a name="stold"></a><a name="stold"></a>stold
 
 Bir karakter dizisini **Long Double**'a dönüştürür.
 
@@ -310,9 +310,9 @@ double stold(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe dizisini, `strtold( str.c_str(), _Eptr)`çağırarak, `_Eptr` bir nesne olan bir nesne olduğu gibi **Long Double** türünde bir değer `val` dönüştürür. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe dizisini, `strtold( str.c_str(), _Eptr)`çağırarak, `_Eptr` bir nesne olan bir nesne olduğu gibi **Long Double** türünde bir değer `val` dönüştürür. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="stoll"></a>Stoll
+## <a name="stoll"></a><a name="stoll"></a>Stoll
 
 Bir karakter dizisini **uzun bir uzunluğa**dönüştürür.
 
@@ -342,9 +342,9 @@ long long stoll(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe dizisini, `strtoll( str.c_str(), _Eptr, idx)`çağırarak, `_Eptr` bir nesne olan bir nesne olduğu gibi **uzun uzun** `val` bir değere dönüştürür. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe dizisini, `strtoll( str.c_str(), _Eptr, idx)`çağırarak, `_Eptr` bir nesne olan bir nesne olduğu gibi **uzun uzun** `val` bir değere dönüştürür. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="stoul"></a>stoul
+## <a name="stoul"></a><a name="stoul"></a>stoul
 
 Bir karakter dizisini işaretsiz bir Long değerine dönüştürür.
 
@@ -374,9 +374,9 @@ unsigned long stoul(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe dizisini `strtoul( str.c_str(), _Eptr, idx)`çağırarak **işaretsiz Long** türünde bir değer `val` bir değere dönüştürür; burada `_Eptr`, işlevin dahili bir nesnesidir. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe dizisini `strtoul( str.c_str(), _Eptr, idx)`çağırarak **işaretsiz Long** türünde bir değer `val` bir değere dönüştürür; burada `_Eptr`, işlevin dahili bir nesnesidir. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="stoull"></a>stoull
+## <a name="stoull"></a><a name="stoull"></a>stoull
 
 Bir karakter dizisini **işaretsiz Long**Long değerine dönüştürür.
 
@@ -406,9 +406,9 @@ unsigned long long stoull(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi *Str* içindeki öğe dizisini, `strtoull( str.c_str(), _Eptr, idx)`çağırarak, `_Eptr` bir nesne iç olarak bir nesne olduğu gibi **işaretsiz Long** Long türünde bir `val` değere dönüştürür. ` str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
+İşlevi *Str* içindeki öğe dizisini, `strtoull( str.c_str(), _Eptr, idx)`çağırarak, `_Eptr` bir nesne iç olarak bir nesne olduğu gibi **işaretsiz Long** Long türünde bir `val` değere dönüştürür. `str.c_str() == *_Eptr`, `invalid_argument`türünde bir nesne oluşturur. Böyle bir çağrı `errno`ayarlandıysa, `out_of_range`türünde bir nesne oluşturur. Aksi halde, *idx* null bir işaretçi değilse, işlev `*idx` `*_Eptr -  str.c_str()` depolar ve `val`döndürür.
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Kur
 
 İki dizenin karakter dizilerini değiş tokuş eder.
 
@@ -464,7 +464,7 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.
 ```
 
-## <a name="to_string"></a>to_string
+## <a name="to_string"></a><a name="to_string"></a>to_string
 
 Bir değeri `string`dönüştürür.
 
@@ -512,7 +512,7 @@ Değeri temsil eden `string`.
 
 İşlev `string(Buf)`döndürür.
 
-## <a name="to_wstring"></a>to_wstring
+## <a name="to_wstring"></a><a name="to_wstring"></a>to_wstring
 
 Bir değeri geniş dizeye dönüştürür.
 

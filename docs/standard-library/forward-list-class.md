@@ -79,12 +79,12 @@ helpviewer_keywords:
 - std::forward_list::splice_after
 - std::forward_list::swap
 - std::forward_list::unique
-ms.openlocfilehash: e13242aa41cc99cdd01a6f16b607ef568195d659
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 55c870263fdf6bd96cf8a137308adb329866c9e5
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419107"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150673"
 ---
 # <a name="forward_list-class"></a>forward_list Sınıfı
 
@@ -178,7 +178,7 @@ Denetlenen diziye eklemeler, Oluşturucu `Type(const  T&)`çağıran tek üye i�
 |-|-|
 |[işleç =](#op_eq)|İleri listesinin öğelerini başka bir iletme listesinin kopyasıyla değiştirir.|
 
-## <a name="allocator_type"></a>allocator_type
+## <a name="allocator_type"></a><a name="allocator_type"></a>allocator_type
 
 İleri liste nesnesi için ayırıcı sınıfını temsil eden bir tür.
 
@@ -190,7 +190,7 @@ typedef Allocator allocator_type;
 
 `allocator_type`, şablon parametre ayırıcısı için bir eş anlamlı.
 
-## <a name="assign"></a>ata
+## <a name="assign"></a><a name="assign"></a>ata
 
 İleri listesinden öğeleri siler ve yeni bir öğe kümesini hedef ileri listesine kopyalar.
 
@@ -234,7 +234,7 @@ Forward_list bir tamsayı türüdür, ilk üye işlevi `assign((size_type)First,
 
 Üçüncü üye işlevi, initializer_list öğelerini forward_list kopyalar.
 
-## <a name="before_begin"></a>before_begin
+## <a name="before_begin"></a><a name="before_begin"></a>before_begin
 
 İleri listesindeki ilk öğeden önceki konumu adresleyen bir yineleyici döndürür.
 
@@ -249,7 +249,7 @@ Dizinin ilk öğesinden hemen önce (veya boş bir dizinin sonundan önce) işar
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a>başladı
 
 İleri listesindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -264,7 +264,7 @@ Dizinin ilk öğesine (veya boş bir sıranın sonuna kadar) işaret eden bir il
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cbefore_begin"></a>cbefore_begin
+## <a name="cbefore_begin"></a><a name="cbefore_begin"></a>cbefore_begin
 
 İleri listesindeki ilk öğeden önceki konumu adresleyen bir const yineleyici döndürür.
 
@@ -278,7 +278,7 @@ Dizinin ilk öğesinden hemen önce (veya boş bir dizinin sonundan önce) işar
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a>cbegin
 
 Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
 
@@ -303,7 +303,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a>cend
 
 Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir **const** yineleyici döndürür.
 
@@ -331,7 +331,7 @@ auto i2 = Container.cend();
 
 `cend` tarafından döndürülen değer başvurulmamalıdır.
 
-## <a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a>lediğiniz
 
 İleri listesinin tüm öğelerini siler.
 
@@ -343,7 +343,7 @@ void clear();
 
 Bu üye işlevi `erase_after(before_begin(), end()).` çağırır
 
-## <a name="const_iterator"></a>const_iterator
+## <a name="const_iterator"></a><a name="const_iterator"></a>const_iterator
 
 İleri listesi için sabit bir yineleyici sağlayan bir tür.
 
@@ -355,7 +355,7 @@ typedef implementation-defined const_iterator;
 
 `const_iterator` denetimli sıra için sabit bir ileri Yineleyici işlevi görebilecek bir nesne açıklar. Burada uygulama tanımlı bir tür için bir eş anlamlı olarak açıklanmaktadır.
 
-## <a name="const_pointer"></a>const_pointer
+## <a name="const_pointer"></a><a name="const_pointer"></a>const_pointer
 
 İleri listesindeki bir **const** öğesine işaretçi sağlayan bir tür.
 
@@ -366,7 +366,7 @@ typedef typename Allocator::const_pointer
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="const_reference"></a>const_reference
+## <a name="const_reference"></a><a name="const_reference"></a>const_reference
 
 İleri listesindeki bir öğeye sabit başvuru sağlayan bir tür.
 
@@ -376,7 +376,7 @@ typedef typename Allocator::const_reference const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="difference_type"></a>difference_type
+## <a name="difference_type"></a><a name="difference_type"></a>difference_type
 
 Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki ileri listesinin öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
@@ -388,7 +388,7 @@ typedef typename Allocator::difference_type difference_type;
 
 `difference_type`, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar.
 
-## <a name="emplace_after"></a>emplace_after
+## <a name="emplace_after"></a><a name="emplace_after"></a>emplace_after
 
 Taşı belirtilen konumdan sonra yeni bir öğe oluşturur.
 
@@ -413,7 +413,7 @@ Yeni eklenen öğeyi atayan bir yineleyici.
 
 Bu üye işlevi, öğesinin denetimli dizide *olduğu yere* işaret eden *öğesinden hemen sonra* Oluşturucu bağımsız değişkenlerini içeren bir öğe ekler. Aksi halde, [forward_list:: insert_after](#insert_after)ile aynı durum.
 
-## <a name="emplace_front"></a>emplace_front
+## <a name="emplace_front"></a><a name="emplace_front"></a>emplace_front
 
 Listenin başına yerinde oluşturulmuş bir öğe ekler.
 
@@ -433,7 +433,7 @@ Bu üye işlevi, denetlenen sıranın sonunda `_ val` Oluşturucu bağımsız de
 
 Bir özel durum oluşturulursa, kapsayıcı değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
 
-## <a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a>olmamalıdır
 
 Bir iletme listesinin boş olup olmadığını sınar.
 
@@ -445,7 +445,7 @@ bool empty() const;
 
 İleri listesi boşsa **doğru** ; Aksi takdirde, **false**.
 
-## <a name="end"></a>erer
+## <a name="end"></a><a name="end"></a>erer
 
 İleri listesindeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -458,7 +458,7 @@ iterator end();
 
 Dizinin sonunun hemen ötesinde işaret eden bir ileri Yineleyici.
 
-## <a name="erase_after"></a>erase_after
+## <a name="erase_after"></a><a name="erase_after"></a>erase_after
 
 Belirli bir konumdan sonra öğeleri ileri listesinden kaldırır.
 
@@ -492,7 +492,7 @@ Kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici v
 
 Üye işlevleri hiçbir şekilde özel durum oluşturmaz.
 
-## <a name="forward_list"></a>forward_list
+## <a name="forward_list"></a><a name="forward_list"></a>forward_list
 
 `forward_list`türünde bir nesne oluşturur.
 
@@ -538,7 +538,7 @@ Kopyalanacak initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular bir [ayırıcıyı](../standard-library/allocator-class.md) depolar ve denetimli sırayı başlatır. Ayırıcı nesnesi varsa, *Al*bağımsız değişkenidir. Kopya Oluşturucu için ` right.get_allocator()`. Aksi takdirde, `Allocator()`.
+Tüm oluşturucular bir [ayırıcıyı](../standard-library/allocator-class.md) depolar ve denetimli sırayı başlatır. Ayırıcı nesnesi varsa, *Al*bağımsız değişkenidir. Kopya Oluşturucu için `right.get_allocator()`. Aksi takdirde, `Allocator()`.
 
 İlk iki Oluşturucu boş bir ilk denetimli sıra belirtir.
 
@@ -552,7 +552,7 @@ Dokuzuncu ve onuncu oluşturucular, altıncı ile aynı, ancak [rvalue](../cpp/r
 
 Son Oluşturucu, `initializer_list<Type>`sınıfının bir nesnesi ile ilk denetlenen sırayı belirtir.
 
-## <a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a>yapılan
 
 İleri listesindeki ilk öğeye bir başvuru döndürür.
 
@@ -565,7 +565,7 @@ const_reference front() const;
 
 Denetlenen sıranın ilk öğesine başvuru, bu, boş olmamalıdır.
 
-## <a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
 
 Bir iletme listesi oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -577,7 +577,7 @@ allocator_type get_allocator() const;
 
 Depolanan [ayırıcı](../standard-library/allocator-class.md) nesnesi.
 
-## <a name="insert_after"></a>insert_after
+## <a name="insert_after"></a><a name="insert_after"></a>insert_after
 
 Belirli bir konumdan sonra ileri listesine öğe ekler.
 
@@ -632,7 +632,7 @@ Son üye işlevi ilki ile aynıdır, ancak [rvalue](../cpp/rvalue-reference-decl
 
 Bir veya daha fazla öğenin eklenmesi sırasında bir özel durum oluşursa, kapsayıcı değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
 
-## <a name="iterator"></a>iden
+## <a name="iterator"></a><a name="iterator"></a>iden
 
 İleri listesi için Yineleyici sağlayan bir tür.
 
@@ -644,7 +644,7 @@ typedef implementation-defined iterator;
 
 `iterator` denetlenen sıra için ileriye doğru yineleyici olarak kullanılabilecek bir nesneyi açıklar. Burada uygulama tanımlı bir tür için bir eş anlamlı olarak açıklanmaktadır.
 
-## <a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a>max_size
 
 Bir iletme listesinin maksimum uzunluğunu döndürür.
 
@@ -658,7 +658,7 @@ Nesnenin denetleyecan en uzun sırasının uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="merge"></a>birleþtirmek
+## <a name="merge"></a><a name="merge"></a>birleþtirmek
 
 İki sıralanmış diziyi doğrusal zamanda tek bir sıralanmış sırayla birleştirir. Bağımsız değişken listesinden öğeleri kaldırır ve bu `forward_list`ekler. `merge`çağrısından önce, iki liste aynı karşılaştırma işlevi nesnesine göre sıralanmalıdır. Birleştirilmiş liste, karşılaştırma işlevi nesnesine göre sıralanır.
 
@@ -686,7 +686,7 @@ Orijinal denetimli dizide hiçbir öğe çifti, sonuçta elde edilen denetimli s
 
 Özel durum yalnızca `comp` bir özel durum oluşturursa oluşur. Bu durumda, denetlenen sıra belirtilmemiş sırayla bırakılır ve özel durum yeniden oluşturulur.
 
-## <a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a>işleç =
 
 İleri listesinin öğelerini başka bir iletme listesinin kopyasıyla değiştirir.
 
@@ -712,7 +712,7 @@ Yalnızca `Type`türünde bir dizi öğe gibi davranan, küme ayracı içine al�
 
 Üçüncü üye işleci ilki, ancak [rvalue](../cpp/rvalue-reference-declarator-amp-amp.md) başvurusuyla aynıdır.
 
-## <a name="pointer"></a>çağrısı
+## <a name="pointer"></a><a name="pointer"></a>çağrısı
 
 İleri listesindeki bir öğeye işaretçi sağlayan bir tür.
 
@@ -720,7 +720,7 @@ Yalnızca `Type`türünde bir dizi öğe gibi davranan, küme ayracı içine al�
 typedef typename Allocator::pointer pointer;
 ```
 
-## <a name="pop_front"></a>pop_front
+## <a name="pop_front"></a><a name="pop_front"></a>pop_front
 
 Bir ileriye doğru listenin başındaki öğeyi siler.
 
@@ -734,7 +734,7 @@ void pop_front();
 
 Üye işlevi hiçbir şekilde özel durum oluşturmaz.
 
-## <a name="push_front"></a>push_front
+## <a name="push_front"></a><a name="push_front"></a>push_front
 
 İleri listesinin başlangıcına bir öğesi ekler.
 
@@ -752,7 +752,7 @@ void push_front(Type&& val);
 
 Bir özel durum oluşturulursa, kapsayıcı değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
 
-## <a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a>başvurunun
 
 İleri listesindeki bir öğeye başvuru sağlayan bir tür.
 
@@ -760,7 +760,7 @@ Bir özel durum oluşturulursa, kapsayıcı değiştirilmemiş olarak kalır ve 
 typedef typename Allocator::reference reference;
 ```
 
-## <a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a>temizlenmesine
 
 İleri listesinde belirtilen bir değerle eşleşen öğeleri siler.
 
@@ -779,7 +779,7 @@ Bir öğe tarafından tutuluyorsa, bu öğenin listeden kaldırılmasına neden 
 
 Üye işlevi hiçbir şekilde özel durum oluşturmaz.
 
-## <a name="remove_if"></a>remove_if
+## <a name="remove_if"></a><a name="remove_if"></a>remove_if
 
 Belirtilen koşulun karşılanmasını sağlayan ileri listesinden öğeleri siler.
 
@@ -795,11 +795,11 @@ Bir öğe tarafından karşılanmadığı birli koşul, bu öğenin listeden sil
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ` pred(*P)` doğru olması için, yineleyici `P`tarafından belirlenen, denetlenen dizi tüm öğelerinden kaldırır.
+Üye işlevi, `pred(*P)` doğru olması için, yineleyici `P`tarafından belirlenen, denetlenen dizi tüm öğelerinden kaldırır.
 
 Özel durum yalnızca *Pred* bir özel durum oluşturursa oluşur. Bu durumda, denetlenen sıra belirtilmemiş bir durumda bırakılır ve özel durum yeniden oluşturulur.
 
-## <a name="resize"></a>yeniden boyutlandırma
+## <a name="resize"></a><a name="resize"></a>yeniden boyutlandırma
 
 İleri liste için yeni bir boyut belirtir.
 
@@ -820,7 +820,7 @@ Doldurma için kullanılacak değer.
 
 Üye işlevleri her ikisi de listedeki öğelerin sayısının *_Newsize*olduğundan emin olur. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi `Type()`değeri olan öğeleri ekler, ikinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi `erase_after(begin() + _Newsize - 1, end())`etkin bir şekilde çağırır.
 
-## <a name="reverse"></a>tersini
+## <a name="reverse"></a><a name="reverse"></a>tersini
 
 Öğelerin bir iletme listesinde oluştuğu sırayı tersine çevirir.
 
@@ -828,7 +828,7 @@ Doldurma için kullanılacak değer.
 void reverse();
 ```
 
-## <a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a>size_type
 
 İki öğe arasındaki işaretsiz mesafeyi temsil eden bir tür.
 
@@ -840,7 +840,7 @@ typedef typename Allocator::size_type size_type;
 
 İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar.
 
-## <a name="sort"></a>düzenine
+## <a name="sort"></a><a name="sort"></a>düzenine
 
 Öğeleri artan düzende veya bir koşul tarafından belirtilen bir sırayla düzenler.
 
@@ -863,7 +863,7 @@ Yineleyiciler `Pi` ve `Pj` öğeleri `i` ve `j`atamak için, ilk üye işlevi `!
 
 Özel durum yalnızca *Pred* bir özel durum oluşturursa oluşur. Bu durumda, denetlenen sıra belirtilmemiş sırayla bırakılır ve özel durum yeniden oluşturulur.
 
-## <a name="splice_after"></a>splice_after
+## <a name="splice_after"></a><a name="splice_after"></a>splice_after
 
 Bir kaynak forward_list öğeleri kaldırır ve bir hedef forward_list ekler.
 
@@ -992,7 +992,7 @@ int main()
 Beginning state of lists:c1 = (10) (11)c2 = (20) (21) (22)c3 = (30) (31)c4 = (40) (41) (42) (43)After splicing c1 into c2:c1 =c2 = (20) (21) (10) (11) (22)After splicing the first element of c3 into c2:c3 = (30)c2 = (20) (21) (31) (10) (11) (22)After splicing a range of c4 into c2:c4 = (40) (41)c2 = (20) (21) (42) (43) (31) (10) (11) (22)
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Kur
 
 İki ileri listenin öğelerini değiş tokuş eder.
 
@@ -1009,7 +1009,7 @@ Değiş tokuş edilecek öğeleri sağlayan ileri liste.
 
 Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. `get_allocator() ==  right.get_allocator()`, bu durumda sabit bir zaman, özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
 
-## <a name="unique"></a>eşi
+## <a name="unique"></a><a name="unique"></a>eşi
 
 Eşit öğelerin her ardışık grubundaki ilk öğe hariç tümünü ortadan kaldırır.
 
@@ -1030,11 +1030,11 @@ Her benzersiz öğenin birincisini tutar ve REST 'yi kaldırır. Öğelerin, eş
 
 İlk üye işlevi, bir önceki öğesiyle eşit olarak karşılaştırıldığı her öğe denetimli diziden kaldırılır. Yineleyiciler `Pi` ve `Pj` öğeleri `i` ve `j`atamak için ikinci üye işlevi, `i + 1 == j &&  comp(*Pi, *Pj)`için her öğeyi kaldırır.
 
-Denetlenen bir uzunluk `N` (> 0) için, koşul ` comp(*Pi, *Pj)` `N - 1` kez değerlendirilir.
+Denetlenen bir uzunluk `N` (> 0) için, koşul `comp(*Pi, *Pj)` `N - 1` kez değerlendirilir.
 
 Özel durum yalnızca `comp` bir özel durum oluşturursa oluşur. Bu durumda, denetlenen sıra belirtilmemiş bir durumda bırakılır ve özel durum yeniden oluşturulur.
 
-## <a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a>value_type
 
 İleri listesinde depolanan öğe türünü temsil eden bir tür.
 

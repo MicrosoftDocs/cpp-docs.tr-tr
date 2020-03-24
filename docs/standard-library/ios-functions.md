@@ -56,16 +56,16 @@ helpviewer_keywords:
 - std::skipws [C++]
 - std::unitbuf [C++]
 - std::uppercase [C++]
-ms.openlocfilehash: c3b1e2350d0923cbfddf95492842ae126859e29f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 3ba2ba463bbd59bd8febccb73c37cc3b79a4c75b
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421613"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150636"
 ---
 # <a name="ltiosgt-functions"></a>&lt;iOS&gt; işlevleri
 
-## <a name="boolalpha"></a>boolalpha
+## <a name="boolalpha"></a><a name="boolalpha"></a>boolalpha
 
 [Bool](../cpp/bool-cpp.md) türündeki değişkenlerin akışta **doğru** veya **yanlış** olarak göründüğünü belirtir.
 
@@ -117,7 +117,7 @@ true
 true
 ```
 
-## <a name="dec"></a>Dec
+## <a name="dec"></a><a name="dec"></a>Dec
 
 Tamsayı değişkenlerinin taban 10 gösteriminde göründüğünü belirtir.
 
@@ -170,7 +170,7 @@ int main( )
 100
 ```
 
-## <a name="ios_defaultfloat"></a>&lt;iOS&gt; defaultfloat
+## <a name="ltiosgt-defaultfloat"></a><a name="ios_defaultfloat"></a>&lt;iOS&gt; defaultfloat
 
 Bir `ios_base` nesnesinin bayraklarını, float değerleri için varsayılan bir görüntüleme biçimi kullanacak şekilde yapılandırır.
 
@@ -187,7 +187,7 @@ Bir `ios_base` nesnesi.
 
 İşleici etkin bir şekilde `iosbase.`[ios_base:: unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`çağırır ve sonra *ıosbase*öğesini döndürüyor.
 
-## <a name="fixed"></a>Düzenle
+## <a name="fixed"></a><a name="fixed"></a>Düzenle
 
 Sabit ondalık gösterimde bir kayan noktalı sayının görüntülendiğini belirtir.
 
@@ -235,7 +235,7 @@ int main( )
 1.1
 ```
 
-## <a name="hex"></a>eşlenecek
+## <a name="hex"></a><a name="hex"></a>eşlenecek
 
 Tamsayı değişkenlerinin temel 16 gösterimde görüneceğini belirtir.
 
@@ -262,13 +262,13 @@ Varsayılan olarak, tamsayı değişkenleri taban 10 gösteriminde görüntülen
 
 `hex`nasıl kullanacağınızı gösteren bir [örnek için bkz](../standard-library/ios-functions.md#dec) .
 
-## <a name="hexfloat"></a>onaltıdan kayan
+## <a name="hexfloat"></a><a name="hexfloat"></a>onaltıdan kayan
 
 ```cpp
 ios_base& hexfloat (ios_base& str);
 ```
 
-## <a name="io_errc"></a>io_errc
+## <a name="io_errc"></a><a name="io_errc"></a>io_errc
 
 ```cpp
 enum class io_errc {
@@ -276,7 +276,7 @@ enum class io_errc {
 };
 ```
 
-## <a name="internal"></a>iç
+## <a name="internal"></a><a name="internal"></a>iç
 
 Bir sayının işaretinin hizalı olarak sola ve sağa yaslanmasına neden olur.
 
@@ -297,7 +297,7 @@ ios_base& internal(ios_base& str);
 
 [showpos](../standard-library/ios-functions.md#showpos) , işaretin pozitif sayılar için görüntülenmesine neden olur.
 
-İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: iç](../standard-library/ios-base-class.md#fmtflags)`, `[ios_base:: adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve *Str*döndürüyor.
+İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: iç](../standard-library/ios-base-class.md#fmtflags)`,` [ios_base:: adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve *Str*döndürüyor.
 
 ### <a name="example"></a>Örnek
 
@@ -322,19 +322,19 @@ int main( void )
 -..123.456
 ```
 
-## <a name="is_error_code_enum"></a>is_error_code_enum
+## <a name="is_error_code_enum"></a><a name="is_error_code_enum"></a>is_error_code_enum
 
 ```cpp
 template <> struct is_error_code_enum<io_errc> : public true_type { };
 ```
 
-## <a name="iostream_category"></a>iostream_category
+## <a name="iostream_category"></a><a name="iostream_category"></a>iostream_category
 
 ```cpp
 const error_category& iostream_category() noexcept;
 ```
 
-## <a name="left"></a>tarafta
+## <a name="left"></a><a name="left"></a>tarafta
 
 Çıktı genişliği, sol kenar boşluğu ile boşaltımın üzerinde görünmesini sağlayan metnin geniş olmasına neden olur.
 
@@ -377,19 +377,19 @@ int main( )
         5
 ```
 
-## <a name="make_error_code"></a>make_error_code
+## <a name="make_error_code"></a><a name="make_error_code"></a>make_error_code
 
 ```cpp
 error_code make_error_code(io_errc e) noexcept;
 ```
 
-## <a name="make_error_condition"></a>make_error_condition
+## <a name="make_error_condition"></a><a name="make_error_condition"></a>make_error_condition
 
 ```cpp
 error_condition make_error_condition(io_errc e) noexcept;
 ```
 
-## <a name="noboolalpha"></a>noboolalpha
+## <a name="noboolalpha"></a><a name="noboolalpha"></a>noboolalpha
 
 [Bool](../cpp/bool-cpp.md) türündeki değişkenlerin akışta 1 veya 0 olarak göründüğünü belirtir.
 
@@ -418,7 +418,7 @@ Varsayılan olarak `noboolalpha` etkindir.
 
 `noboolalpha`kullanımı örneği için bkz. [boolalpha](../standard-library/ios-functions.md#boolalpha) .
 
-## <a name="noshowbase"></a>noshowbase
+## <a name="noshowbase"></a><a name="noshowbase"></a>noshowbase
 
 Bir sayının gösterildiği notational temelini belirtir.
 
@@ -445,7 +445,7 @@ Varsayılan olarak `noshowbase`. Sayıların notational temelini göstermek içi
 
 `noshowbase`nasıl kullanacağınızı gösteren bir örnek için bkz. [showbase](../standard-library/ios-functions.md#showbase) .
 
-## <a name="noshowpoint"></a>noshowpoint
+## <a name="noshowpoint"></a><a name="noshowpoint"></a>noshowpoint
 
 Kısmi bölümü sıfır olan kayan noktalı sayıların yalnızca tam sayı kısmını görüntüler.
 
@@ -492,7 +492,7 @@ int main( )
 5
 ```
 
-## <a name="noshowpos"></a>noshowpos
+## <a name="noshowpos"></a><a name="noshowpos"></a>noshowpos
 
 Pozitif sayıların açıkça imzalanmamasını sağlar.
 
@@ -519,7 +519,7 @@ Varsayılan olarak `noshowpos`.
 
 `noshowpos`kullanımı örneği için bkz. [showpos](../standard-library/ios-functions.md#showpos) .
 
-## <a name="noskipws"></a>noskipws
+## <a name="noskipws"></a><a name="noskipws"></a>noskipws
 
 Giriş akışı tarafından boşlukların okunmasına neden olur.
 
@@ -561,7 +561,7 @@ int main() {
 }
 ```
 
-## <a name="nounitbuf"></a>nounitbuf
+## <a name="nounitbuf"></a><a name="nounitbuf"></a>nounitbuf
 
 Arabellek dolduğunda çıktının arabelleğe alınıp işlenmesine neden olur.
 
@@ -584,7 +584,7 @@ ios_base& nounitbuf(ios_base& str);
 
 İşleici etkin bir şekilde `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::unitbuf)`çağırır ve *Str*döndürüyor.
 
-## <a name="nouppercase"></a>nouppercase
+## <a name="nouppercase"></a><a name="nouppercase"></a>nouppercase
 
 Bilimsel gösterimdeki onaltılık basamakların ve üs harflerin küçük harf olarak göründüğünü belirtir.
 
@@ -609,7 +609,7 @@ ios_base& nouppercase(ios_base& str);
 
 `nouppercase`kullanımı örneği için [büyük harfe](../standard-library/ios-functions.md#uppercase) bakın.
 
-## <a name="oct"></a>Oct
+## <a name="oct"></a><a name="oct"></a>Oct
 
 Tamsayı değişkenlerinin taban 8 gösteriminde göründüğünü belirtir.
 
@@ -636,7 +636,7 @@ Varsayılan olarak, tamsayı değişkenleri taban 10 gösteriminde görüntülen
 
 `oct`nasıl kullanacağınızı gösteren bir [örnek için bkz](../standard-library/ios-functions.md#dec) .
 
-## <a name="right"></a>Right
+## <a name="right"></a><a name="right"></a>Right
 
 Çıktı genişliği doğru olmayan metnin akış temizlemesi durumunda sağ kenar boşluğu ile görünmesini sağlar.
 
@@ -693,7 +693,7 @@ int main( )
                    5
 ```
 
-## <a name="scientific"></a>bilimsel
+## <a name="scientific"></a><a name="scientific"></a>bilimsel
 
 , Kayan nokta numaralarının bilimsel gösterim kullanılarak görüntülenmesine neden olur.
 
@@ -738,7 +738,7 @@ int main( )
 1.002300e+002
 ```
 
-## <a name="showbase"></a>showbase
+## <a name="showbase"></a><a name="showbase"></a>showbase
 
 Bir sayının gösterileceği notational tabanını gösterir.
 
@@ -792,7 +792,7 @@ int main( )
 144
 ```
 
-## <a name="showpoint"></a>showpoint
+## <a name="showpoint"></a><a name="showpoint"></a>showpoint
 
 Kesirli bölüm sıfır olduğunda bile ondalık noktanın sağ tarafındaki bir kayan nokta sayısı ve rakamların tam sayı kısmını görüntüler.
 
@@ -819,7 +819,7 @@ Varsayılan olarak, [noshowpoint](../standard-library/ios-functions.md#noshowpoi
 
 `showpoint`kullanımı örneği için bkz. [noshowpoint](../standard-library/ios-functions.md#noshowpoint) .
 
-## <a name="showpos"></a>showpos
+## <a name="showpos"></a><a name="showpos"></a>showpos
 
 Pozitif sayıların açıkça imzalanmasına neden olur.
 
@@ -864,7 +864,7 @@ int main( )
 +1
 ```
 
-## <a name="skipws"></a>skipws
+## <a name="skipws"></a><a name="skipws"></a>skipws
 
 Giriş akışı tarafından okunmamasına neden olan boşluk.
 
@@ -916,7 +916,7 @@ Enter three characters: 1 2 3
 .3.
 ```
 
-## <a name="unitbuf"></a>unitbuf
+## <a name="unitbuf"></a><a name="unitbuf"></a>unitbuf
 
 Arabellek boş olmadığında çıktının işlenmesine neden olur.
 
@@ -941,7 +941,7 @@ ios_base& unitbuf(ios_base& str);
 
 İşleici etkin bir şekilde `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base:: unitarabelleğe](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve *Str*döndürüyor.
 
-## <a name="uppercase"></a>İngiliz
+## <a name="uppercase"></a><a name="uppercase"></a>İngiliz
 
 Bilimsel gösterimdeki onaltılık basamakların ve üs 'ın büyük harfle göründüğünü belirtir.
 

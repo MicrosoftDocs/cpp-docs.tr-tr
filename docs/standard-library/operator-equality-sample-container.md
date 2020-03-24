@@ -1,5 +1,5 @@
 ---
-title: operator = = (&lt;sample kapsayıcı &gt;)
+title: operator = = (&lt;örnek kapsayıcı&gt;)
 ms.date: 11/04/2016
 f1_keywords:
 - std.==
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - operator==, containers
 - == operator, with specific standard C++ objects
 ms.assetid: d3d8754e-5157-4b8b-bf9c-da41856f5eed
-ms.openlocfilehash: 3f84e8e5f7d0c09a865fe47d7493daecf68cf60c
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 08adfcc770551d3050daa46c870b950e468c95b3
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689199"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150648"
 ---
-# <a name="operator-ltsample-containergt"></a>operator = = (&lt;sample kapsayıcı &gt;)
+# <a name="operator-ltsample-containergt"></a>operator = = (&lt;örnek kapsayıcı&gt;)
 
 > [!NOTE]
 > Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
@@ -38,8 +38,8 @@ bool operator==(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0[boyutunu](../standard-library/container-class-size.md) döndürür ` == right.size && equal(left.`[End](../standard-library/container-class-end.md) `, right.begin)` `, left.`[başlar](../standard-library/container-class-begin.md) .
+`left.`[boyutunu](../standard-library/container-class-size.md) döndürür `== right.size && equal(left.`[End](../standard-library/container-class-end.md)`, right.begin)``, left.`[başlar](../standard-library/container-class-begin.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[kapsayıcı > \<sample](../standard-library/sample-container.md)
+[\<örnek kapsayıcısı >](../standard-library/sample-container.md)

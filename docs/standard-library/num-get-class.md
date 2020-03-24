@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-ms.openlocfilehash: bf6623bb61e7a217fcc18a268a583a7ecea4931d
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: 58ff645a381fd55c591a2566b2e698f0e9821935
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889986"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150622"
 ---
 # <a name="num_get-class"></a>num_get Sınıfı
 
@@ -34,10 +34,10 @@ class num_get : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* \
+*CharType*\
 Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
-*InputIterator* \
+*InputIterator*\
 Sayısal alma işlevlerinin kendi girişlerini okuyacağı yineleyicinin türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -66,11 +66,11 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>num_get::char_type
+## <a name="num_getchar_type"></a><a name="char_type"></a>num_get:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -82,7 +82,7 @@ typedef CharType char_type;
 
 Tür, **CharType**şablon parametresi için bir eş anlamlı.
 
-## <a name="do_get"></a>num_get::d o_get
+## <a name="num_getdo_get"></a><a name="do_get"></a>num_get::d o_get
 
 Bir karakter dizisinden sayısal veya Boolean değeri ayıklamak için çağrılan sanal işlev.
 
@@ -167,19 +167,19 @@ virtual iter_type do_get(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Sayının okunacağı karakter aralığının başlangıcı.
 
-*son* \
+*son*\
 Sayının okunacağı karakter aralığının sonu.
 
-*iosbase* \
+*iosbase*\
 Bayrakları dönüştürme tarafından kullanılan [ios_base](../standard-library/ios-base-class.md) .
 
-*durum* \
+*durum*\
 Failbit durumu (bkz. [ios_base:: ıostate](../standard-library/ios-base-class.md#iostate)) hata üzerine eklenir.
 
-*val* \
+*val*\
 Okunan değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -203,7 +203,7 @@ bir tam, boş olmayan tamsayı giriş alanı kabul edene kadar, sıradaki *ilk* 
 
 Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki **karakter** öğelerinin serisini eşleştirmek ve dönüştürmek için kullanılan kurallara göre dönüştürülür. (Böyle bir **char** öğesi, basit, bire-tek, eşleme tarafından `Elem` türünde bir eşdeğer öğeyle eşlenecek varsayılır.) Eşdeğer tarama dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
-`iosbase.`[ios_base:: Flags](../standard-library/ios-base-class.md#flags) [Eki](../standard-library/ios-functions.md#oct)`() & ios_base::basefield == ios_base::`, dönüştürme belirtimi `lo`.
+`iosbase.`[ios_base:: flags](../standard-library/ios-base-class.md#flags)`() & ios_base::basefield == ios_base::`[Eki](../standard-library/ios-functions.md#oct), dönüştürme belirtimi `lo`.
 
 `iosbase.flags() & ios_base::basefield == ios_base::`[onaltılı](../standard-library/ios-functions.md#hex)ise, dönüştürme belirtimi `lx`.
 
@@ -211,11 +211,11 @@ Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki **karakter*
 
 Aksi takdirde, dönüştürme belirtimi `ld`.
 
-Bir tamsayı girişi alanının biçimi, Call `<`[use_facet](../standard-library/locale-functions.md#use_facet) tarafından döndürülen [yerel ayar esası](../standard-library/locale-class.md#facet_class)`fac` tarafından [belirlenir`<Elem>(iosbase.`](../standard-library/numpunct-class.md) [ios_base:: getloc](../standard-library/ios-base-class.md#getloc)`())`. Engelle
+Bir tamsayı girişi alanının biçimi, çağrı tarafından döndürülen`fac` [yerel ayar modeli](../standard-library/locale-class.md#facet_class) tarafından daha da belirlenir `<``<Elem>(iosbase.`[tuş takımı](../standard-library/numpunct-class.md) [use_facet](../standard-library/locale-functions.md#use_facet) [ios_base:: getloc](../standard-library/ios-base-class.md#getloc)`())`. Daha ayrıntılı şekilde belirtmek gerekirse:
 
 `fac.`[tuş takımı:: gruplandırma](../standard-library/numpunct-class.md#grouping)`()`, basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler
 
-`fac.`[tuş takımı:: thousands_sep](../standard-library/numpunct-class.md#thousands_sep)`()`, basamak gruplarını herhangi bir ondalık noktanın soluna ayıran Sırayı belirler.
+`fac.`[tuş takımı:: thousands_sep](../standard-library/numpunct-class.md#thousands_sep)`()` herhangi bir ondalık noktanın solundaki basamak gruplarını ayıran Sırayı belirler.
 
 Sayısal giriş alanında `fac.thousands_sep()` örneği yoksa, gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, `fac.grouping()` tarafından uygulanan gruplandırma kısıtlamaları zorlanır ve bu, tarama dönüştürme gerçekleşmeden önce ayırıcılar kaldırılır.
 
@@ -230,7 +230,7 @@ virtual iter_type do_get(
     unsigned long& val) const;
 ```
 
-, `ld` dönüştürme belirtimini `lu` ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **işaretsiz Long** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
+, `ld` dönüştürme belirtimini `lu`ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **işaretsiz Long** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
 
 Beşinci sanal korumalı üye işlevi:
 
@@ -243,7 +243,7 @@ virtual iter_type do_get(
     long long& val) const;
 ```
 
-, `ld` dönüştürme belirtimini `lld` ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **Long Long** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
+, `ld` dönüştürme belirtimini `lld`ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **Long Long** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
 
 Altıncı sanal korumalı üye işlevi:
 
@@ -256,7 +256,7 @@ virtual iter_type do_get(
     unsigned long long& val) const;
 ```
 
-, `ld` dönüştürme belirtimini `llu` ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **işaretsiz Long** Long türünde bir değere dönüştürür ve bu değeri *Val*içinde depolar.
+, `ld` dönüştürme belirtimini `llu`ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **işaretsiz Long** Long türünde bir değere dönüştürür ve bu değeri *Val*içinde depolar.
 
 Yedinci sanal korumalı üye işlevi:
 
@@ -295,7 +295,7 @@ virtual iter_type do_get(
     long double& val) const;
 ```
 
-, eşdeğer tarama dönüştürme tanımlayıcısının `Lf` olması dışında, sekizinci ile aynı şekilde davranır.
+, eşdeğer tarama dönüştürme tanımlayıcısının `Lf`olması dışında, sekizinci ile aynı şekilde davranır.
 
 Onuncu sanal korumalı üye işlevi:
 
@@ -308,7 +308,7 @@ virtual iter_type do_get(
     void *& val) const;
 ```
 
-, eşdeğer tarama dönüştürme belirticisi `p` dışında, ilki aynı şekilde davranır.
+, eşdeğer tarama dönüştürme belirticisi `p`dışında, ilki aynı şekilde davranır.
 
 Son (Eleventh) sanal korumalı üye işlevi:
 
@@ -323,13 +323,13 @@ virtual iter_type do_get(
 
 , tüm endeavors, boş olmayan bir Boole girişi alanıyla eşleşmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, Boole giriş alanını **bool** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
 
-Boole girişi alanı iki formdan birini alır. `iosbase.flags() & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) false ise, dönüştürülmüş değerin 0 (false için) veya 1 (true için) olması dışında bir tamsayı girişi alanı ile aynıdır. Aksi takdirde, dizi `fac.` bir[sayısal tuş takımı:: falsename](../standard-library/numpunct-class.md#falsename) `()` (false için) veya `fac.`[sayısal tuş takımı:: truename](../standard-library/numpunct-class.md#truename) `()` (true için) ile aynı olmalıdır.
+Boole girişi alanı iki formdan birini alır. `iosbase.flags() & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) false ise, dönüştürülmüş değerin 0 (false için) veya 1 (true için) olması dışında bir tamsayı girişi alanı ile aynıdır. Aksi takdirde, dizi `fac.`bir [sayısal tuş takımı:: falsename](../standard-library/numpunct-class.md#falsename)`()` (false için) veya `fac.`[sayısal tuş takımı:: truename](../standard-library/numpunct-class.md#truename)`()` (true için) ile aynı olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 Sanal üye işlevinin `do_get`tarafından çağrıldığı [Get](#get)için örneğe bakın.
 
-## <a name="get"></a>num_get:: Get
+## <a name="num_getget"></a><a name="get"></a>num_get:: Get
 
 Bir karakter dizisinden sayısal veya Boolean değeri ayıklar.
 
@@ -414,19 +414,19 @@ iter_type get(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk* \
+*ilk*\
 Sayının okunacağı karakter aralığının başlangıcı.
 
-*son* \
+*son*\
 Sayının okunacağı karakter aralığının sonu.
 
-*iosbase* \
+*iosbase*\
 Bayrakları dönüştürme tarafından kullanılan [ios_base](../standard-library/ios-base-class.md) .
 
-*durum* \
+*durum*\
 Failbit durumu (bkz. [ios_base:: ıostate](../standard-library/ios-base-class.md#iostate)) hata üzerine eklenir.
 
-*val* \
+*val*\
 Okunan değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -441,7 +441,7 @@ Tüm üye işlevleri [do_get](#do_get)`( first, last, iosbase, state, val)`dönd
 
 Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki **karakter** öğelerinin serisini eşleştirmek ve dönüştürmek için kullanılan kurallara göre dönüştürülür. Her bir **char** öğesi, basit, bire bir eşleme tarafından `CharType` türünde eşdeğer bir öğeyle eşlenecek varsayılır. Eşdeğer tarama dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
-- ` & ios_base::basefield == ios_base::``iosbase.`[bayrak](../standard-library/ios-base-class.md#flags) , [dönüştürme](../standard-library/ios-functions.md#oct)belirtimi `lo`olur.
+- `& ios_base::basefield == ios_base::``iosbase.`[bayrak](../standard-library/ios-base-class.md#flags) , [dönüştürme](../standard-library/ios-functions.md#oct)belirtimi `lo`olur.
 
 - `iosbase.flags & ios_base::basefield == ios_base::`[onaltılı](../standard-library/ios-functions.md#hex)ise, dönüştürme belirtimi `lx`.
 
@@ -449,7 +449,7 @@ Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki **karakter*
 
 - Aksi takdirde, dönüştürme belirtimi `ld`.
 
-Bir tamsayı girişi alanının biçimi,`<Elem>(iosbase.`[getloc](../standard-library/ios-base-class.md#getloc)`())`çağrısı [use_facet](../standard-library/locale-functions.md#use_facet) [`numpunct`](../standard-library/numpunct-class.md)`<`tarafından döndürülen [yerel ayar modeli](../standard-library/locale-class.md#facet_class) `fac` tarafından belirlenir. Engelle
+Bir tamsayı girişi alanının biçimi, çağrı [use_facet](../standard-library/locale-functions.md#use_facet) tarafından döndürülen `fac` [yerel ayar modeli](../standard-library/locale-class.md#facet_class) tarafından daha fazla belirlenir`<`[`numpunct`](../standard-library/numpunct-class.md)`<Elem>(iosbase.`[getloc](../standard-library/ios-base-class.md#getloc)`())`. Daha ayrıntılı şekilde belirtmek gerekirse:
 
 - `fac.`[Gruplandırma](../standard-library/numpunct-class.md#grouping) , basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler.
 
@@ -467,7 +467,7 @@ virtual iter_type do_get(iter_type first,
     unsigned long& val) const;
 ```
 
-, `ld` dönüştürme belirtimini `lu` ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **işaretsiz Long** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
+, `ld` dönüştürme belirtimini `lu`ile değiştirmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, sayısal giriş alanını **işaretsiz Long** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
 
 Üçüncü sanal korumalı üye işlevi:
 
@@ -491,7 +491,7 @@ virtual iter_type do_get(iter_type first,
     long double& val) const;
 ```
 
-eşdeğer tarama dönüştürme belirticisi `Lf` dışında, üçüncüsü aynı şekilde davranır.
+eşdeğer tarama dönüştürme belirticisi `Lf`dışında, üçüncüsü aynı şekilde davranır.
 
 Beşinci sanal korumalı üye işlevi:
 
@@ -503,7 +503,7 @@ virtual iter_type do_get(iter_type first,
     void *& val) const;
 ```
 
-, eşdeğer tarama dönüştürme belirticisi `p` dışında, ilki aynı şekilde davranır.
+, eşdeğer tarama dönüştürme belirticisi `p`dışında, ilki aynı şekilde davranır.
 
 Altıncı sanal korumalı üye işlevi:
 
@@ -551,7 +551,7 @@ int main( )
 }
 ```
 
-## <a name="iter_type"></a>num_get::iter_type
+## <a name="num_getiter_type"></a><a name="iter_type"></a>num_get:: iter_type
 
 Bir giriş yineleyiciyi açıklayan tür.
 
@@ -561,9 +561,9 @@ typedef InputIterator iter_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `InputIterator` şablon parametresi için bir eş anlamlı.
+Tür, `InputIterator`şablon parametresi için bir eş anlamlı.
 
-## <a name="num_get"></a>num_get::num_get
+## <a name="num_getnum_get"></a><a name="num_get"></a>num_get:: num_get
 
 Dizilerden sayısal değerler ayıklamak için kullanılan `num_get` türündeki nesneler için Oluşturucu.
 
@@ -573,7 +573,7 @@ explicit num_get(size_t refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*refs* \
+*refs*\
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -592,6 +592,6 @@ Oluşturucu, temel nesnesini `locale::`[modeli](../standard-library/locale-class
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
-[model sınıfı](../standard-library/locale-class.md#facet_class) \
+[\<yerel ayar >](../standard-library/locale.md)\
+[model sınıfı](../standard-library/locale-class.md#facet_class)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

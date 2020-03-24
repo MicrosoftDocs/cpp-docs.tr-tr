@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: 944834e40a399622b5c85d95100d4ca3c3c2da93
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 7fd523dc9184ae613cf8a52969a497b6b4761cf6
+ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421641"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80150829"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanıp&gt; işlevleri
 
@@ -42,7 +42,7 @@ ms.locfileid: "79421641"
 |[setbase](#setbase)|[setfill](#setfill)|[setiosflags](#setiosflags)|
 |[setprecision](#setprecision)|[setw](#setw)|
 
-## <a name="iomanip_get_money"></a>get_money
+## <a name="get_money"></a><a name="iomanip_get_money"></a>get_money
 
 İstenen biçimi kullanarak bir akıştan parasal bir değer ayıklar ve bir parametresindeki değeri döndürür.
 
@@ -65,7 +65,7 @@ Ayıklanan parasal değer.
 
 `Money`, `str`ile aynı öğe ve nitelikler parametrelerine sahip `basic_string` `long double` türünde veya bir örneklemede olmalıdır.
 
-## <a name="iomanip_get_time"></a>get_time
+## <a name="get_time"></a><a name="iomanip_get_time"></a>get_time
 
 İstenen biçimi kullanarak bir akıştan zaman değeri ayıklar. Bir parametre içindeki değeri zaman yapısı olarak döndürür.
 
@@ -86,7 +86,7 @@ Saat değerini elde etmek için kullanılacak biçim.
 
 İşleici, Stream `str`ayıklandığında, `str`ile ilişkili yerel ayar `time_get` modeli için `get` üye işlevini çağıran bir `formatted input function` olarak davranır ve null sonlandırılmış bir biçim dizesinin başlangıcını göstermek için `tptr` kullanarak zaman yapısını ve `fmt` gösterir. Başarılı olursa, çağrı, ayıklanan zaman alanları ile ilişkili değerleri zaman yapısında depolar. Ardından, işleleyici `str`döndürür.
 
-## <a name="iomanip_put_money"></a>put_money
+## <a name="put_money"></a><a name="iomanip_put_money"></a>put_money
 
 İstenen biçimi bir akışa kullanarak parasal bir miktar ekler.
 
@@ -113,7 +113,7 @@ Akışa eklenecek parasal miktar.
 
 `Money`, `str`ile aynı öğe ve nitelikler parametrelerine sahip `basic_string` `long double` türünde veya bir örneklemede olmalıdır.
 
-## <a name="iomanip_put_time"></a>put_time
+## <a name="put_time"></a><a name="iomanip_put_time"></a>put_time
 
 Belirtilen biçimi kullanarak bir zaman yapısından bir zaman değerini akışa yazar.
 
@@ -134,7 +134,7 @@ Saat değerini yazmak için istenen biçim.
 
 İşleici, akışa eklenen `str``formatted output function`olarak davrandığı bir nesne döndürür. Output işlevi, `str`ilişkili yerel ayar modeli `time_put` için `put` üye işlevini çağırır. Output işlevi, zaman yapısını belirtmek için *time_ptr* kullanır ve null sonlandırılmış bir biçim dizesinin başlangıcını göstermek için *time_format* . Başarılı olursa, çağrı, biçim dizesinden sabit metin ve zaman yapısından dönüştürülen değerleri ekler. Ardından, işleleyici `str`döndürür.
 
-## <a name="quoted"></a>tırnak işaretli
+## <a name="quoted"></a><a name="quoted"></a>tırnak işaretli
 
 **(C++ 14 ' te yeni)** > > Ve < < işleçlerini kullanarak, dizelerin kolayca ve dışı olmasına izin veren bir ıostream işleleyicisi.
 
@@ -301,7 +301,7 @@ Press Enter to exit
 */
 ```
 
-## <a name="resetiosflags"></a>resetiosflags
+## <a name="resetiosflags"></a><a name="resetiosflags"></a>resetiosflags
 
 Belirtilen bayrakları temizler.
 
@@ -322,7 +322,7 @@ Temizlenecek bayraklar.
 
 `resetiosflags`kullanımı örneği için bkz. [setw](../standard-library/iomanip-functions.md#setw) .
 
-## <a name="setbase"></a>setbase
+## <a name="setbase"></a><a name="setbase"></a>setbase
 
 Tamsayılar için taban ayarla.
 
@@ -337,7 +337,7 @@ Sayı tabanı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleici `str`Stream 'den ayıklandığında veya akışa eklenen bir nesne döndürür, `str.setf(mask, `[ios_base:: basefield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve ardından `str`döndürür. Burada `mask` aşağıdaki şekilde belirlenir:
+İşleici `str`Stream 'den ayıklandığında veya akışa eklenen bir nesne döndürür, `str.setf(mask,` [ios_base:: basefield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve ardından `str`döndürür. Burada `mask` aşağıdaki şekilde belirlenir:
 
 - *Taban* 8 ise, [`mask` `ios_base::`.](../standard-library/ios-functions.md#oct)
 
@@ -351,7 +351,7 @@ Sayı tabanı.
 
 `setbase`kullanımı örneği için bkz. [setw](../standard-library/iomanip-functions.md#setw) .
 
-## <a name="setfill"></a>setfill
+## <a name="setfill"></a><a name="setfill"></a>setfill
 
 Sağa hizalanmış bir ekranda boşlukları doldur, kullanılacak karakteri ayarlar.
 
@@ -373,7 +373,7 @@ Bu şablon, öğesinden ayıklandığında veya akışa eklenen `str`, `str.`[fi
 
 `setfill`kullanımı örneği için bkz. [setw](../standard-library/iomanip-functions.md#setw) .
 
-## <a name="setiosflags"></a>setiosflags
+## <a name="setiosflags"></a><a name="setiosflags"></a>setiosflags
 
 Belirtilen bayrakları ayarlar.
 
@@ -394,7 +394,7 @@ Ayarlanacak bayraklar.
 
 `setiosflags`kullanımı örneği için bkz. [setw](../standard-library/iomanip-functions.md#setw) .
 
-## <a name="setprecision"></a>setprecision
+## <a name="setprecision"></a><a name="setprecision"></a>setprecision
 
 Kayan nokta değerleri için duyarlığı ayarlar.
 
@@ -415,7 +415,7 @@ Kayan nokta değerleri için duyarlık.
 
 `setprecision`kullanımı örneği için bkz. [setw](../standard-library/iomanip-functions.md#setw) .
 
-## <a name="setw"></a>setw
+## <a name="setw"></a><a name="setw"></a>setw
 
 Akıştaki sonraki öğe için görüntüleme alanının genişliğini belirtir.
 
