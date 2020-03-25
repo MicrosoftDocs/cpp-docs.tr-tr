@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2004
 ms.assetid: 07645371-e67b-4a2c-b0e0-dde24c94ef7e
-ms.openlocfilehash: 8088494106aa702fda0497fa431e48267167a185
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d26ab12c5b82d52b7dcbb176d9bfa033d7ddfee
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160425"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194843"
 ---
 # <a name="linker-tools-error-lnk2004"></a>Bağlayıcı Araçları Hatası LNK2004
 
-gp göreli düzeltme taşması 'hedeflemek için '; kısa bölüm 'bölümü' çok büyük veya aralığın dışında.
+' Target ' için GP göreli düzeltme taşması; ' section ' kısa bölümü çok büyük veya aralığın dışında.
 
-Bölümde çok büyük.
+Bölüm çok büyüktü.
 
-Bu hatayı gidermek için ya da açıkça uzun bölümlerde #pragma bölümü (".sectionname", okuma, yazma, uzun) aracılığıyla veri yerleştirme ve kullanarak kısa bölüm boyutunu `__declspec(allocate(".sectionname"))` veri tanımları ve bildirimleri.  Örneğin,
+Bu hatayı çözmek için, kısa bölümün boyutunu küçültün; bu durumda, verileri uzun bölümlere (". sectionname", okuma, yazma, uzun) #pragma yoluyla açık bir şekilde yerleştirerek veri tanımlarında ve bildirimlerinde `__declspec(allocate(".sectionname"))` kullanın.  Örneğin,
 
 ```
 #pragma section(".data$mylong", read, write, long)
@@ -32,7 +32,7 @@ char    rg4[16] = { 1 };
 char    rg5[32] = { 1 };
 ```
 
-Ayrıca, derleyici bir uzun veri bölümünde tahsis 8 bayt daha büyük veri koleksiyonu olacak kendi yapısında verileri mantıksal olarak gruplanmış taşıyabilirsiniz.  Örneğin,
+Ayrıca, derleyicinin uzun bir veri bölümünde ayıracağı 8 bayttan büyük bir veri koleksiyonu olacak şekilde mantıksal olarak gruplanmış verileri kendi yapısına taşıyabilirsiniz.  Örneğin,
 
 ```
 // from this...
@@ -50,4 +50,4 @@ struct X {
 } x  = { 23, 23*2, 23*3, 23*4 };
 ```
 
-Bu hata, önemli hata tarafından izlenir `LNK1165`.
+Bu hatanın ardından önemli hata `LNK1165`.

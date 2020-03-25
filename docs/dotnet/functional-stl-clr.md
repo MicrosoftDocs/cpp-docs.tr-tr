@@ -63,16 +63,16 @@ helpviewer_keywords:
 - unary_delegate_noreturn function [STL/CLR]
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-ms.openlocfilehash: f4a99ea972c6d2ea9b9721664cc75dec257fd7b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d06a92fea9a702633216e3244879687b66f97d6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393759"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208734"
 ---
 # <a name="functional-stlclr"></a>işlevsel (STL/CLR)
 
-STL/CLR üstbilgisini `<cliext/functional>` tanımlamak için şablon sınıfları, ilgili şablon Temsilciler ve İşlevler bir sayı.
+Bir dizi şablon sınıfı ve ilgili şablon temsilcileri ve işlevleri tanımlamak için STL/CLR üst bilgi `<cliext/functional>` ekleyin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,53 +82,53 @@ STL/CLR üstbilgisini `<cliext/functional>` tanımlamak için şablon sınıflar
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<cliext/işlev >
+**Üst bilgi:** \<clienext/işlevsel >
 
-**Namespace:** cliext
+**Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
 |Temsilci|Açıklama|
 |--------------|-----------------|
-|[binary_delegate (STL/CLR)](#binary_delegate)|İki bağımsız temsilcisi.|
-|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|İki bağımsız temsilci döndüren **void**.|
-|[unary_delegate (STL/CLR)](#unary_delegate)|Tek bağımsız değişkenli temsilcisi.|
-|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|Döndüren tek bağımsız değişkenli temsilci **void**.|
+|[binary_delegate (STL/CLR)](#binary_delegate)|İki bağımsız değişken temsilcisi.|
+|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|İki bağımsız değişken temsilcisi **void**döndürüyor.|
+|[unary_delegate (STL/CLR)](#unary_delegate)|Bir bağımsız değişken temsilcisi.|
+|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|Bir bağımsız değişken temsilcisi **void**döndürüyor.|
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|[binary_negate (STL/CLR)](#binary_negate)|İki bağımsız functor negatif yapılacak functor.|
-|[binder1st (STL/CLR)](#binder1st)|İlk bağımsız değişken için bir iki bağımsız functor bağlamak için functor.|
-|[binder2nd (STL/CLR)](#binder2nd)|İkinci bağımsız değişkeni için bir iki bağımsız functor bağlamak için functor.|
-|[divides (STL/CLR)](#divides)|Functor bölün.|
-|[equal_to (STL/CLR)](#equal_to)|Karşılaştırma functor eşit.|
-|[greater (STL/CLR)](#greater)|Büyük karşılaştırma functor.|
-|[greater_equal (STL/CLR)](#greater_equal)|Büyük veya buna eşit karşılaştırma functor.|
+|[binary_negate (STL/CLR)](#binary_negate)|İki bağımsız değişkenli functor ile Negate 'e kadar functor.|
+|[binder1st (STL/CLR)](#binder1st)|Birinci bağımsız değişkeni bir iki bağımsız değişken olan functor 'a bağlamak için functor.|
+|[binder2nd (STL/CLR)](#binder2nd)|İkinci bağımsız değişkeni bir iki bağımsız değişken olan functor 'a bağlamak için functor.|
+|[divides (STL/CLR)](#divides)|Functor 'ı bölün.|
+|[equal_to (STL/CLR)](#equal_to)|Eşit karşılaştırma functor.|
+|[greater (STL/CLR)](#greater)|Daha fazla karşılaştırma functor.|
+|[greater_equal (STL/CLR)](#greater_equal)|Daha büyük veya eşit karşılaştırma functor.|
 |[less (STL/CLR)](#less)|Daha az karşılaştırma functor.|
-|[less_equal (STL/CLR)](#less_equal)|Küçük veya buna eşit karşılaştırma functor.|
-|[logical_and (STL/CLR)](#logical_and)|Mantıksal AND functor.|
-|[logical_not (STL/CLR)](#logical_not)|Mantıksal functor değil.|
-|[logical_or (STL/CLR)](#logical_or)|Mantıksal OR functor.|
-|[minus (STL/CLR)](#minus)|Functor çıkarın.|
-|[modulus (STL/CLR)](#modulus)|Modulus functor.|
-|[multiplies (STL/CLR)](#multiplies)|Functor çarpın.|
-|[negate (STL/CLR)](#negate)|Değilleme kendi bağımsız değişkenini döndürmesine izin functor.|
-|[not_equal_to (STL/CLR)](#not_equal_to)|Eşit değildir karşılaştırma functor.|
+|[less_equal (STL/CLR)](#less_equal)|Daha az veya eşit karşılaştırma functor.|
+|[logical_and (STL/CLR)](#logical_and)|Mantıksal ve functor.|
+|[logical_not (STL/CLR)](#logical_not)|Mantıksal DEĞIL, functor.|
+|[logical_or (STL/CLR)](#logical_or)|Mantıksal veya functor.|
+|[minus (STL/CLR)](#minus)|Functor 'u çıkarın.|
+|[modulus (STL/CLR)](#modulus)|Mod, functor.|
+|[multiplies (STL/CLR)](#multiplies)|Functor 'ı çarpın.|
+|[negate (STL/CLR)](#negate)|Bağımsız değişkenini döndürmek için functor.|
+|[not_equal_to (STL/CLR)](#not_equal_to)|Eşit karşılaştırma functor.|
 |[plus (STL/CLR)](#plus)|Functor ekleyin.|
-|[unary_negate (STL/CLR)](#unary_negate)|Tek bağımsız değişkenli functor negatif yapılacak functor.|
+|[unary_negate (STL/CLR)](#unary_negate)|Bir bağımsız değişken olan functor ile Negate 'e kadar functor.|
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|[bind1st (STL/CLR)](#bind1st)|Bir bağımsız değişken ve functor bir binder1st oluşturur.|
-|[bind2nd (STL/CLR)](#bind2nd)|Bir bağımsız değişken ve functor bir binder2nd oluşturur.|
-|[not1 (STL/CLR)](#not1)|Bir functor için bir unary_negate oluşturur.|
-|[not2 (STL/CLR)](#not2)|Bir functor için bir binary_negate oluşturur.|
+|[bind1st (STL/CLR)](#bind1st)|Bağımsız değişken ve functor için bir binder1st oluşturur.|
+|[bind2nd (STL/CLR)](#bind2nd)|Bağımsız değişken ve functor için bir binder2nd oluşturur.|
+|[not1 (STL/CLR)](#not1)|Functor için bir unary_negate oluşturur.|
+|[not2 (STL/CLR)](#not2)|Functor için bir binary_negate oluşturur.|
 
 ## <a name="members"></a>Üyeler
 
-## <a name="binary_delegate"></a> binary_delegate (STL/CLR)
+## <a name="binary_delegate-stlclr"></a><a name="binary_delegate"></a>binary_delegate (STL/CLR)
 
-İki bağımsız temsilci genereic sınıfı açıklar. Bunu bir temsilci, bağımsız değişkenin ve dönüş türleri açısından belirtin.
+Genereic sınıfı iki bağımsız değişkenli bir temsilciyi açıklar. Bağımsız değişkeni ve dönüş türleri bakımından bir temsilci belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -141,32 +141,32 @@ generic<typename Arg1,
 
 #### <a name="parameters"></a>Parametreler
 
-*arg1*<br/>
-İlk bağımsız değişken türü.
+*Arg1*<br/>
+İlk bağımsız değişkenin türü.
 
-*arg2*<br/>
-İkinci bağımsız değişken türü.
+*Arg2*<br/>
+İkinci bağımsız değişkenin türü.
 
-*Sonuç*<br/>
+*Kaynaklanan*<br/>
 Dönüş türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki bağımsız işlevi genereic temsilci açıklar.
+Genereic temsilcisi iki bağımsız değişkenli bir işlevi tanımlar.
 
-Unutmayın:
+Şunları unutmayın:
 
 `binary_delegate<int, int, int> Fun1;`
 
 `binary_delegate<int, int, int> Fun2;`
 
-türleri `Fun1` ve `Fun2` eşanlamlıdır, while için:
+`Fun1` ve `Fun2` türleri eş anlamlılar, ancak için:
 
 `delegate int Fun1(int, int);`
 
 `delegate int Fun2(int, int);`
 
-Bunlar aynı türde değil.
+aynı türde değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -202,9 +202,9 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="binary_delegate_noreturn"></a> binary_delegate_noreturn (STL/CLR)
+## <a name="binary_delegate_noreturn-stlclr"></a><a name="binary_delegate_noreturn"></a>binary_delegate_noreturn (STL/CLR)
 
-Döndüren iki bağımsız temsilci genereic sınıfı açıklar **void**. Bunu bir temsilcinin bağımsız değişkenini açısından belirtin.
+Genereic sınıfı, **void**döndüren iki bağımsız değişkenli bir temsilciyi açıklar. Bağımsız değişkeni olarak bir temsilci belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -216,29 +216,29 @@ generic<typename Arg1,
 
 #### <a name="parameters"></a>Parametreler
 
-*arg1*<br/>
-İlk bağımsız değişken türü.
+*Arg1*<br/>
+İlk bağımsız değişkenin türü.
 
-*arg2*<br/>
-İkinci bağımsız değişken türü.
+*Arg2*<br/>
+İkinci bağımsız değişkenin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndüren bir işlev iki bağımsız genereic temsilci açıklar **void**.
+Genereic temsilcisi, **void**döndüren bir iki bağımsız değişken işlevini tanımlar.
 
-Unutmayın:
+Şunları unutmayın:
 
 `binary_delegate_noreturn<int, int> Fun1;`
 
 `binary_delegate_noreturn<int, int> Fun2;`
 
-türleri `Fun1` ve `Fun2` eşanlamlıdır, while için:
+`Fun1` ve `Fun2` türleri eş anlamlılar, ancak için:
 
 `delegate void Fun1(int, int);`
 
 `delegate void Fun2(int, int);`
 
-Bunlar aynı türde değil.
+aynı türde değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -272,9 +272,9 @@ compare(a, b) = True
 compare(b, a) = False
 ```
 
-## <a name="binary_negate"></a> binary_negate (STL/CLR)
+## <a name="binary_negate-stlclr"></a><a name="binary_negate"></a>binary_negate (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, mantıksal döndürür, depolanan iki bağımsız functor, değil. Bunu kendi saklı functor açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, depolanan iki bağımsız değişkenli functor mantıksal DEĞIL ' i döndüren bir functor tanımlar. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -302,33 +302,33 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*Eğlence*<br/>
-Saklı functor türü.
+*Keyifli*<br/>
+Depolanan functor türü.
 
 ## <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
-|stored_function_type|Bir functor türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
+|stored_function_type|Functor türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|binary_negate|İşlev nesnesini oluşturur.|
+|binary_negate|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^()|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^ ()|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, başka bir iki bağımsız functor depolayan bir iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, mantıksal döndürür değil saklı functor iki bağımsız değişkenlerle çağrılır.
+Şablon sınıfı, başka bir iki bağımsız değişken olan farklı bir iki bağımsız değişkeni depolayan bir iki bağımsız değişkenli functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında, iki bağımsız değişkenle çağrılan depolanan functor 'un mantıksal değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -386,9 +386,9 @@ int main()
 1 0
 ```
 
-## <a name="bind1st"></a> bind1st (STL/CLR)
+## <a name="bind1st-stlclr"></a><a name="bind1st"></a>bind1st (STL/CLR)
 
-Oluşturur bir `binder1st` bir bağımsız değişken ve functor.
+Bağımsız değişken ve functor için bir `binder1st` oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -401,23 +401,23 @@ template<typename Fun,
 
 #### <a name="template-parameters"></a>Şablon Parametreleri
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenin türü.
 
-*Eğlence*<br/>
-Bir functor türü.
+*Keyifli*<br/>
+Functor türü.
 
 #### <a name="function-parameters"></a>İşlev parametreleri
 
 *functor*<br/>
-Sarılacak functor.
+Kaydırmak için functor.
 
-*Sol*<br/>
-Kaydırmak için ilk bağımsız değişken.
+*tarafta*<br/>
+Kaydıramanın ilk bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü [binder1st (STL/CLR)](../dotnet/binder1st-stl-clr.md)`<Fun>(functor, left)`. İki bağımsız functor ve ilk bağımsız değişken bir ikinci bağımsız değişkeni ile çağıran bir tek bağımsız değişkenli functor içine almanız için kullanışlı bir yol olarak kullanın.
+Şablon işlevi, [binder1st (STL/CLR)](../dotnet/binder1st-stl-clr.md)`<Fun>(functor, left)`döndürür. İki bağımsız değişkenli bir functor ve ilk bağımsız değişkenini ikinci bir bağımsız değişkenle çağıran bir tek değişkenli functor 'da sarmanın kolay bir yolu olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -467,9 +467,9 @@ int main()
 -1 0
 ```
 
-## <a name="bind2nd"></a> bind2nd (STL/CLR)
+## <a name="bind2nd-stlclr"></a><a name="bind2nd"></a>bind2nd (STL/CLR)
 
-Oluşturur bir `binder2nd` bir bağımsız değişken ve functor.
+Bağımsız değişken ve functor için bir `binder2nd` oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -482,23 +482,23 @@ template<typename Fun,
 
 #### <a name="template-parameters"></a>Şablon Parametreleri
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenin türü.
 
-*Eğlence*<br/>
-Bir functor türü.
+*Keyifli*<br/>
+Functor türü.
 
 #### <a name="function-parameters"></a>İşlev parametreleri
 
 *functor*<br/>
-Sarılacak functor.
+Kaydırmak için functor.
 
-*sağ*<br/>
-Kaydırmak için ikinci bağımsız değişkeni.
+*Right*<br/>
+Sarılacağı ikinci bağımsız değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü [binder2nd (STL/CLR)](../dotnet/binder2nd-stl-clr.md)`<Fun>(functor, right)`. İki bağımsız functor ve ikinci bağımsız değişkeni, ilk bağımsız değişkenle çağıran bir tek bağımsız değişkenli işlev içinde sarmalamak için kullanışlı bir yol olarak kullanın.
+Şablon işlevi, [binder2nd (STL/CLR)](../dotnet/binder2nd-stl-clr.md)`<Fun>(functor, right)`döndürür. İki bağımsız değişken değerli bir functor ve ikinci bağımsız değişkenini bir ilk bağımsız değişkenle çağıran bir tek değişkenli functor 'da sarmanın kolay bir yolu olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -548,9 +548,9 @@ int main()
 0 -1
 ```
 
-## <a name="binder1st"></a> binder1st (STL/CLR)
+## <a name="binder1st-stlclr"></a><a name="binder1st"></a>binder1st (STL/CLR)
 
-Şablon sınıfı bir tek bağımsız değişkenli functor tanımlar, çağrıldığında, depolanan ilk bağımsız değişkeni ile belirtilen ikinci bağımsız değişken adında kendi saklı iki bağımsız functor döndürür. Bunu kendi saklı functor açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında bir bağımsız değişken functor tanımlar, bu, çağrıldığında, depolanan ilk bağımsız değişkeni ve sağlanan ikinci bağımsız değişkeni ile çağrılan, depolanan iki bağımsız değişkenli functor 'u döndürür. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -577,33 +577,33 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*Eğlence*<br/>
-Saklı functor türü.
+*Keyifli*<br/>
+Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
-|stored_function_type|Bir functor türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
+|stored_function_type|Functor türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|binder1st|İşlev nesnesini oluşturur.|
+|binder1st|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^()|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^ ()|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor ve bir ilk bağımsız değişken depolayan bir tek bağımsız değişkenli functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, saklı functor saklı ilk bağımsız değişken ve belirtilen ikinci bağımsız değişkeni ile arama sonucunu döndürür.
+Şablon sınıfı, iki bağımsız değişkenli bir functor ve ilk bağımsız değişkeni depolayan bir bağımsız değişken functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında, depolanan functor 'u depolanan ilk bağımsız değişkenle ve sağlanan ikinci bağımsız değişkenle çağırma sonucunu döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -653,9 +653,9 @@ int main()
 -1 0
 ```
 
-## <a name="binder2nd"></a> binder2nd (STL/CLR)
+## <a name="binder2nd-stlclr"></a><a name="binder2nd"></a>binder2nd (STL/CLR)
 
-Şablon sınıfı bir tek bağımsız değişkenli functor tanımlar, çağrıldığında, sağlanan ilk bağımsız değişken ve depolanan ikinci bağımsız değişkeni ile adlı depolanan, iki bağımsız functor döndürür. Bunu kendi saklı functor açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında bir bağımsız değişken functor tanımlar, çağrıldığında, sağlanan ilk bağımsız değişkeni ve depolanan ikinci bağımsız değişkeni ile çağrılan, depolanan iki bağımsız değişkenli functor ' ı döndürür. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -682,33 +682,33 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*Eğlence*<br/>
-Saklı functor türü.
+*Keyifli*<br/>
+Depolanan functor türü.
 
 ## <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
-|stored_function_type|Bir functor türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
+|stored_function_type|Functor türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|binder2nd|İşlev nesnesini oluşturur.|
+|binder2nd|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^()|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^ ()|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor ve ikinci bir bağımsız değişken depolayan bir tek bağımsız değişkenli functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, sağlanan ilk bağımsız değişken ve depolanan ikinci bağımsız değişkeni ile saklı functor arama sonucunu döndürür.
+Şablon sınıfı, iki bağımsız değişkenli bir functor ve ikinci bir bağımsız değişken depolayan bir bağımsız değişken functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında, depolanan functor 'un sağlanan ilk bağımsız değişkenle ve depolanan ikinci bağımsız değişkenle çağrılması sonucunu döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -758,9 +758,9 @@ int main()
 0 -1
 ```
 
-## <a name="divides"></a> böler (STL/CLR)
+## <a name="divides-stlclr"></a><a name="divides"></a>böler (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, ilk bağımsız değişken ikinciye göre bölünmüş döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, ikinciden bölünen ilk bağımsız değişkeni döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -787,32 +787,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişkenler ve dönüş değeri türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|böler|İşlev nesnesini oluşturur.|
+|böler|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^()|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^ ()|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, ikinciye göre bölünmüş ilk bağımsız değişkeni döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında, ikinciden bölünen ilk bağımsız değişkeni döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -859,9 +859,9 @@ int main()
 2 3
 ```
 
-## <a name="equal_to"></a> equal_to (STL/CLR)
+## <a name="equal_to-stlclr"></a><a name="equal_to"></a>equal_to (STL/CLR)
 
-Şablon sınıfı bir functor açıklar. yalnızca ilk bağımsız değişken ikinci eşittir, çağrıldığında, true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciye eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -888,32 +888,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|equal_to|İşlev nesnesini oluşturur.|
+|equal_to|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^()|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^ ()|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken ikinci eşitse true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ikinciye eşitse true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -960,9 +960,9 @@ int main()
 1 0
 ```
 
-## <a name="greater"></a> büyük (STL/CLR)
+## <a name="greater-stlclr"></a><a name="greater"></a>daha büyük (STL/CLR)
 
-Şablon sınıfı bir functor açıklar. yalnızca ilk bağımsız değişken ikinciden büyükse, çağrıldığında, true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden büyükse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -989,32 +989,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|büyüktür|İşlev nesnesini oluşturur.|
+|büyüktür|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca, ilk bağımsız değişken ikinciden büyükse true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ikinciden büyükse true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1061,9 +1061,9 @@ int main()
 1 0
 ```
 
-## <a name="greater_equal"></a> greater_equal (STL/CLR)
+## <a name="greater_equal-stlclr"></a><a name="greater_equal"></a>greater_equal (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, yalnızca ilk bağımsız değişken büyük veya ikincisine eşitse true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden büyük veya buna eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1090,32 +1090,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|greater_equal|İşlev nesnesini oluşturur.|
+|greater_equal|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken büyük veya ikincisine eşitse true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ikinciden büyük veya buna eşitse true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1162,9 +1162,9 @@ int main()
 1 0
 ```
 
-## <a name="less"></a> daha az (STL/CLR)
+## <a name="less-stlclr"></a><a name="less"></a>daha az (STL/CLR)
 
-Şablon sınıfı bir functor açıklar. yalnızca ilk bağımsız değişken ikinciden küçükse, çağrıldığında, true değerini döndürür, ikinci daha. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçükse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1191,32 +1191,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|daha az|İşlev nesnesini oluşturur.|
+|daha az|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken ikinciden küçükse varsa true değerini döndürür ikinciden.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ikinciden küçükse true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1263,9 +1263,9 @@ int main()
 0 1
 ```
 
-## <a name="less_equal"></a> less_equal (STL/CLR)
+## <a name="less_equal-stlclr"></a><a name="less_equal"></a>less_equal (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçük veya eşit ise true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçük veya ona eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1292,32 +1292,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|less_equal|İşlev nesnesini oluşturur.|
+|less_equal|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken ikinciden küçük veya eşit ise true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ikinciden küçükse true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1364,9 +1364,9 @@ int main()
 0 1
 ```
 
-## <a name="logical_and"></a> logical_and (STL/CLR)
+## <a name="logical_and-stlclr"></a><a name="logical_and"></a>logical_and (STL/CLR)
 
-Şablon sınıfı bir functor açıklar. yalnızca ilk bağımsız değişken hem de ikinci test olarak true, çağrıldığında, true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ve ikinci test doğru olduğunda true değeri döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1393,32 +1393,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|logical_and|İşlev nesnesini oluşturur.|
+|logical_and|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken hem de ikinci test olarak true ise true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ve ikinci test doğru olarak döndürülür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1465,9 +1465,9 @@ int main()
 1 0
 ```
 
-## <a name="logical_not"></a> logical_not (STL/CLR)
+## <a name="logical_not-stlclr"></a><a name="logical_not"></a>logical_not (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar çağrıldığında, ya da yalnızca doğru değerini döndürür, bağımsız değişkeninin değerini false sınar. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca bağımsız değişkeninin yanlış olarak test edildiğinde true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1492,31 +1492,31 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|argument_type|Functor bağımsız değişken türü.|
-|delegate_type|Genel temsilci türü.|
-|result_type|Functor sonuç türü.|
+|argument_type|Functor bağımsız değişkeninin türü.|
+|delegate_type|Genel temsilcinin türü.|
+|result_type|Functor sonucunun türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|logical_not|İşlev nesnesini oluşturur.|
+|logical_not|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir tek bağımsız değişkenli functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca bağımsız değişkeninin değerini false test varsa true değerini döndürür.
+Şablon sınıfı, bir bağımsız değişken functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca bağımsız değişkeni false olarak test edildiğinde true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1555,9 +1555,9 @@ int main()
 0 1
 ```
 
-## <a name="logical_or"></a> logical_or (STL/CLR)
+## <a name="logical_or-stlclr"></a><a name="logical_or"></a>logical_or (STL/CLR)
 
-Şablon sınıfı bir functor açıklar. yalnızca ilk bağımsız değişken ya da ikinci testler true, çağrıldığında, true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ya da ikinci testlerin true olması durumunda true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1584,32 +1584,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|logical_or|İşlev nesnesini oluşturur.|
+|logical_or|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken ya da ikinci testler true ise true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ya da ikinci sınamadır, doğru değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1656,9 +1656,9 @@ int main()
 1 0
 ```
 
-## <a name="minus"></a> (STL/CLR)
+## <a name="minus-stlclr"></a><a name="minus"></a>eksi (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, ilk bağımsız değişken ikinci eksi döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni ikinci kez döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1685,32 +1685,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişkenler ve dönüş değeri türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|eksi|İşlev nesnesini oluşturur.|
+|eksi|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, ilk bağımsız değişken ikinci eksi döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında ilk bağımsız değişkeni ikinci kez döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1757,9 +1757,9 @@ int main()
 2 2
 ```
 
-## <a name="modulus"></a> mod (STL/CLR)
+## <a name="modulus-stlclr"></a><a name="modulus"></a>mod (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, ilk bağımsız değişken ikinci modül döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni döndürür bir, çağrıldığında bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1786,32 +1786,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişkenler ve dönüş değeri türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|mod|İşlev nesnesini oluşturur.|
+|mod|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, ilk bağımsız değişken ikinci modül döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında ilk bağımsız değişkeni ikinci kez döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1858,9 +1858,9 @@ int main()
 1 0
 ```
 
-## <a name="multiplies"></a> çarpar (STL/CLR)
+## <a name="multiplies-stlclr"></a><a name="multiplies"></a>çarpar (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, ilk bağımsız değişken ikinci kez döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni ikinci kez döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1887,32 +1887,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişkenler ve dönüş değeri türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|çarpar|İşlev nesnesini oluşturur.|
+|çarpar|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, ilk bağımsız değişken ikinci kez döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında ilk bağımsız değişkeni ikinci kez döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -1959,9 +1959,9 @@ int main()
 8 3
 ```
 
-## <a name="negate"></a> negate (STL/CLR)
+## <a name="negate-stlclr"></a><a name="negate"></a>Negate (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, bağımsız değişken negatif döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında bağımsız değişkenini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1986,31 +1986,31 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|argument_type|Functor bağımsız değişken türü.|
-|delegate_type|Genel temsilci türü.|
-|result_type|Functor sonuç türü.|
+|argument_type|Functor bağımsız değişkeninin türü.|
+|delegate_type|Genel temsilcinin türü.|
+|result_type|Functor sonucunun türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|olumsuzlaştırma|İşlev nesnesini oluşturur.|
+|olumsuzlaştırma|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir tek bağımsız değişkenli functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, tasarruflarını bağımsız değişkenini döndürür.
+Şablon sınıfı, bir bağımsız değişken functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında, bağımsız değişkenini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -2049,9 +2049,9 @@ int main()
 -4 3
 ```
 
-## <a name="not_equal_to"></a> not_equal_to (STL/CLR)
+## <a name="not_equal_to-stlclr"></a><a name="not_equal_to"></a>not_equal_to (STL/CLR)
 
-Şablon sınıfı bir functor açıklar. yalnızca ilk bağımsız değişken ikinci eşit değil, çağrıldığında, true değerini döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciye eşit değilse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2078,32 +2078,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|not_equal_to|İşlev nesnesini oluşturur.|
+|not_equal_to|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, yalnızca ilk bağımsız değişken ikinci eşit değilse true değerini döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında true, yalnızca ilk bağımsız değişken ikinciye eşit değilse true değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -2150,9 +2150,9 @@ int main()
 0 1
 ```
 
-## <a name="not1"></a> Not1 (STL/CLR)
+## <a name="not1-stlclr"></a><a name="not1"></a>Not1 (STL/CLR)
 
-Oluşturur bir `unary_negate` bir functor için.
+Functor için bir `unary_negate` oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2163,17 +2163,17 @@ template<typename Fun>
 
 #### <a name="template-parameters"></a>Şablon Parametreleri
 
-*Eğlence*<br/>
-Bir functor türü.
+*Keyifli*<br/>
+Functor türü.
 
 #### <a name="function-parameters"></a>İşlev parametreleri
 
 *functor*<br/>
-Sarılacak functor.
+Kaydırmak için functor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<Fun>(functor)`. Tek bağımsız değişkenli functor, mantıksal değil sunan bir functor içinde sarmalamak için kullanışlı bir yol olarak kullanın.
+Şablon işlevi [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<Fun>(functor)`döndürür. Bu değeri, mantıksal olmayan bir functor 'da tek değişkenli bir functor 'ı sarmanın kolay bir yolu olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2222,9 +2222,9 @@ int main()
 1 0
 ```
 
-## <a name="not2"></a> not2 (STL/CLR)
+## <a name="not2-stlclr"></a><a name="not2"></a>NOT2 (STL/CLR)
 
-Oluşturur bir `binary_negate` bir functor için.
+Functor için bir `binary_negate` oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2235,17 +2235,17 @@ template<typename Fun>
 
 #### <a name="template-parameters"></a>Şablon Parametreleri
 
-*Eğlence*<br/>
-Bir functor türü.
+*Keyifli*<br/>
+Functor türü.
 
 #### <a name="function-parameters"></a>İşlev parametreleri
 
 *functor*<br/>
-Sarılacak functor.
+Kaydırmak için functor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü [binary_negate (STL/CLR)](../dotnet/binary-negate-stl-clr.md)`<Fun>(functor)`. İki bağımsız functor, mantıksal değil sunan bir functor içinde sarmalamak için kullanışlı bir yol olarak kullanın.
+Şablon işlevi [binary_negate (STL/CLR)](../dotnet/binary-negate-stl-clr.md)`<Fun>(functor)`döndürür. Bunu, mantıksal olmayan bir komik bir ctor 'da iki bağımsız değişkenli bir functor sarmak için kullanışlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2303,9 +2303,9 @@ int main()
 1 0
 ```
 
-## <a name="plus"></a> artı (STL/CLR)
+## <a name="plus-stlclr"></a><a name="plus"></a>Plus (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, ilk bağımsız değişken artı saniyeyi döndürür. Bunu, bağımsız değişken türü açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni artı ikinci değeri döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2332,32 +2332,32 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişkenler ve dönüş değeri türü.
+*Değişkeni*<br/>
+Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|delegate_type|Genel temsilci türü.|
-|first_argument_type|Functor ilk bağımsız değişken türü.|
-|result_type|Functor sonuç türü.|
-|second_argument_type|Functor ikinci bağımsız değişken türü.|
+|delegate_type|Genel temsilcinin türü.|
+|first_argument_type|Functor ilk bağımsız değişkeninin türü.|
+|result_type|Functor sonucunun türü.|
+|second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|artı|İşlev nesnesini oluşturur.|
+|artı|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|operator delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|işleç delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, iki bağımsız functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, ilk bağımsız değişken artı saniyeyi döndürür.
+Şablon sınıfı, bir iki bağımsız değişken olan functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında ilk bağımsız değişkeni artı ikincisini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -2404,9 +2404,9 @@ int main()
 6 4
 ```
 
-## <a name="unary_delegate"></a> unary_delegate (STL/CLR)
+## <a name="unary_delegate-stlclr"></a><a name="unary_delegate"></a>unary_delegate (STL/CLR)
 
-Tek bağımsız değişkenli temsilci genereic sınıfı açıklar. Bunu bir temsilci, bağımsız değişkenin ve dönüş türleri açısından belirtin.
+Genereic sınıfı, tek değişkenli bir temsilciyi açıklar. Bağımsız değişkeni ve dönüş türleri bakımından bir temsilci belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2418,29 +2418,29 @@ generic<typename Arg,
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenin türü.
 
-*Sonuç*<br/>
+*Kaynaklanan*<br/>
 Dönüş türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genereic temsilci tek bağımsız değişkenli işlev açıklar.
+Genereic temsilcisi bir bağımsız değişken işlevini tanımlar.
 
-Unutmayın:
+Şunları unutmayın:
 
 `unary_delegare<int, int> Fun1;`
 
 `unary_delegare<int, int> Fun2;`
 
-türleri `Fun1` ve `Fun2` eşanlamlıdır, while için:
+`Fun1` ve `Fun2` türleri eş anlamlılar, ancak için:
 
 `delegate int Fun1(int);`
 
 `delegate int Fun2(int);`
 
-Bunlar aynı türde değil.
+aynı türde değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -2470,9 +2470,9 @@ hash(L'a') = 5
 hash(L'b') = 22
 ```
 
-## <a name="unary_delegate_noreturn"></a> unary_delegate_noreturn (STL/CLR)
+## <a name="unary_delegate_noreturn-stlclr"></a><a name="unary_delegate_noreturn"></a>unary_delegate_noreturn (STL/CLR)
 
-Döndüren tek bağımsız değişkenli temsilci genereic sınıfı açıklar **void**. Kullanmanız açısından, bağımsız değişken türü temsilci belirtin.
+Genereic sınıfı, **void**döndüren tek değişkenli bir temsilciyi açıklar. Bağımsız değişken türü açısından bir temsilci belirtin.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2483,26 +2483,26 @@ generic<typename Arg>
 
 #### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*<br/>
-Bağımsız değişken türü.
+*Değişkeni*<br/>
+Bağımsız değişkenin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndüren tek bağımsız değişkenli işlev genereic temsilci açıklar **void**.
+Genereic temsilcisi, **void**döndüren bir bağımsız değişken işlevi tanımlar.
 
-Unutmayın:
+Şunları unutmayın:
 
 `unary_delegare_noreturn<int> Fun1;`
 
 `unary_delegare_noreturn<int> Fun2;`
 
-türleri `Fun1` ve `Fun2` eşanlamlıdır, while için:
+`Fun1` ve `Fun2` türleri eş anlamlılar, ancak için:
 
 `delegate void Fun1(int);`
 
 `delegate void Fun2(int);`
 
-Bunlar aynı türde değil.
+aynı türde değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -2533,9 +2533,9 @@ hash(a) = 5
 hash(b) = 22
 ```
 
-## <a name="unary_negate"></a> unary_negate (STL/CLR)
+## <a name="unary_negate-stlclr"></a><a name="unary_negate"></a>unary_negate (STL/CLR)
 
-Şablon sınıfı bir functor tanımlar, çağrıldığında, mantıksal döndürür, saklı tek bağımsız değişkenli functor, değil. Bunu kendi saklı functor açısından bir işlev nesnesi belirtin.
+Şablon sınıfı, çağrıldığında, depolanan tek değişkenli functor mantıksal DEĞIL ' i döndüren bir functor tanımlar. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2561,31 +2561,31 @@ public:
 
 #### <a name="parameters"></a>Parametreler
 
-*Eğlence*<br/>
-Saklı functor türü.
+*Keyifli*<br/>
+Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
 |Tür Tanımlaması|Açıklama|
 |---------------------|-----------------|
-|argument_type|Functor bağımsız değişken türü.|
-|delegate_type|Genel temsilci türü.|
-|result_type|Functor sonuç türü.|
+|argument_type|Functor bağımsız değişkeninin türü.|
+|delegate_type|Genel temsilcinin türü.|
+|result_type|Functor sonucunun türü.|
 
 |Üye|Açıklama|
 |------------|-----------------|
-|unary_negate|İşlev nesnesini oluşturur.|
+|unary_negate|Functor 'ı oluşturur.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|operator()|İstenen işlev hesaplar.|
-|delegate_type^|Bir temsilci functor çevirir.|
+|operator ()|İstenen işlevi hesaplar.|
+|delegate_type ^|Bir temsilciye functor yayınlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, başka bir tek bağımsız değişkenli functor depolayan bir tek bağımsız değişkenli functor açıklar. Üye işleci tanımlar `operator()` nesne bir işlev olarak ne zaman çağrıldığını böylece, mantıksal döndürür saklı functor değil bağımsız değişkeniyle çağrılır.
+Şablon sınıfı, farklı bir bağımsız değişken olan functor 'u depolayan bir bağımsız değişken functor tanımlar. Üye işleci `operator()` tanımlar, böylece nesne bir işlev olarak çağrıldığında, bağımsız değişkeniyle çağrılan depolanan functor 'un mantıksal değerini döndürür.
 
-Nesne türü olan bir işlev bağımsız değişkeni geçirebilirsiniz `delegate_type^` ve uygun şekilde dönüştürülür.
+Ayrıca nesneyi, türü `delegate_type^` olan bir işlev bağımsız değişkeni olarak geçirebilir ve uygun şekilde dönüştürülecektir.
 
 ### <a name="example"></a>Örnek
 

@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: 85e95afa92c8a968865d9a3031e1a309e68ae7d3
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: fff4146681e31f0f1fea9fbaa559de7c722740d2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630756"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211464"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>Sihirbaz Kullanmadan bir Tüketici Oluşturma
 
@@ -17,7 +17,7 @@ Aşağıdaki örnek, varolan bir ATL projesine OLE DB tüketici desteği ekledi�
 
 **ATL OLE DB Tüketici Sihirbazı 'nı**kullanmadan OLE DB tüketici desteği eklemek için:
 
-- *Pch. h* dosyanızda aşağıdaki `#include` deyimleri ekleyin:
+- *Pch. h* dosyanızda aşağıdaki `#include` deyimlerini ekleyin:
 
     ```cpp
     #include <atlbase.h>
@@ -40,7 +40,7 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
     class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>
     ```
 
-- COM `CoInitialize` başlatma çağrısı. Bu, ana kodda çağırılır. Örneğin:
+- COM başlatmak için `CoInitialize` çağırın. Bu, ana kodda çağırılır. Örneğin:
 
     ```cpp
     HRESULT hr = CoInitialize(NULL);
@@ -56,7 +56,7 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
     hr = rs.Open();            // (Open also executes the command)
     ```
 
-- İsteğe bağlı olarak, kullanarak `CDBPropSet::AddProperty` satır kümesi özelliklerini ayarlayın ve bunları `rs.Open`parametresi olarak geçirin. Bunun nasıl yapıldığını gösteren bir örnek için, bkz `GetRowsetProperties` . [Tüketici Sihirbazı tarafından oluşturulan Yöntemler](../../data/oledb/consumer-wizard-generated-methods.md).
+- İsteğe bağlı olarak, `CDBPropSet::AddProperty` kullanarak satır kümesi özelliklerini ayarlayın ve `rs.Open`bir parametre olarak geçirin. Bunun nasıl yapıldığını gösteren bir örnek için bkz. [Tüketici Sihirbazı tarafından oluşturulan yöntemler](../../data/oledb/consumer-wizard-generated-methods.md)`GetRowsetProperties`.
 
 - Artık verileri almak/işlemek için satır kümesini kullanabilirsiniz.
 
@@ -68,9 +68,9 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
     ds.Close();
     ```
 
-   Bir komut kullanıyorsanız, daha sonra `ReleaseCommand` `Close`çağırmak isteyebilirsiniz. [CCommand:: Close](../../data/oledb/ccommand-close.md) içindeki kod örneği, ve ' `Close` `ReleaseCommand`nin nasıl çağrılacağını gösterir.
+   Bir komut kullanıyorsanız, `Close`sonra `ReleaseCommand` çağırmak isteyebilirsiniz. [CCommand:: Close](../../data/oledb/ccommand-close.md) içindeki kod örneği, `Close` ve `ReleaseCommand`nasıl çağrılacağını gösterir.
 
-- Uninitialize `CoUnInitialize` com öğesine çağrı. Bu, ana kodda çağırılır.
+- Uninitialize COM 'a `CoUnInitialize` çağırın. Bu, ana kodda çağırılır.
 
     ```cpp
     CoUninitialize();

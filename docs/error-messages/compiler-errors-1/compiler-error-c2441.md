@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C2441
+title: Derleyici hatası C2441
 ms.date: 11/04/2016
 f1_keywords:
 - C2441
 helpviewer_keywords:
 - C2441
 ms.assetid: ffbd6573-777a-48dd-892f-5cf4a758dcab
-ms.openlocfilehash: 7fcf333f62253eb676c0f0ada1c927ab962ae1ca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e5d5335717ec77c61069ad08e209f9e1851dc2f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338928"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80205315"
 ---
-# <a name="compiler-error-c2441"></a>Derleyici Hatası C2441
+# <a name="compiler-error-c2441"></a>Derleyici hatası C2441
 
-> '*değişkeni*': __declspec(Process) ile bir simge const/CLR: pure modunda
+> '*değişken*': __declspec (Process) ile belirtilen bir simge/clr: Pure modunda const olmalıdır
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-Varsayılan olarak, her uygulama etki alanı altında değişkenlerdir **/CLR: pure**. Bir değişken olarak işaretlenmiş `__declspec(process)` altında **/CLR: pure** değiştiren bir uygulama etki alanında ve diğer okuma hataları yatkındır.
+Varsayılan olarak, değişkenler **/clr: Pure**altında uygulama etki alanına göre yapılır. **/Clr: Pure** altında `__declspec(process)` işaretli bir değişken, bir uygulama etki alanında değiştirildiyse ve başka bir uygulamada okunduğu hatalara açıktır.
 
-Bu nedenle, derleyici her işlem değişkenleri olması zorunlu kılar `const` altında **/CLR: pure**, yalnızca tüm uygulama etki alanlarında yapma bunları okuyun.
+Bu nedenle, derleyici işlem başına, **/clr: Pure**altında `const` ve yalnızca tüm uygulama etki alanlarında salt okunurdur.
 
-Daha fazla bilgi için [işlem](../../cpp/process.md) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+Daha fazla bilgi için bkz. [Process](../../cpp/process.md) and [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2441 oluşturur.
+Aşağıdaki örnek C2441 oluşturur.
 
 ```cpp
 // C2441.cpp

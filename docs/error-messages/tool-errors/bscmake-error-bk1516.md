@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - BK1516
 ms.assetid: 7f4a8391-f857-4ee8-8e26-34868ca84e29
-ms.openlocfilehash: 07c59d6f70d4e5ab3ecaecda2791293f89479b9e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4edfbdbb070add0c77faefeb77c8db627c260c98
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325318"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197555"
 ---
 # <a name="bscmake-error-bk1516"></a>BSCMAKE Hatası BK1516
 
 bscfile bozuk; artımlı olarak güncelleştirilemiyor
 
-.Bsc dosyası, büyük olasılıkla derleme sırasında bir sistem hatası nedeniyle bozulmuş. .Bsc dosyasını silmek, tüm .sbr dosyalarını yeniden oluşturun ve ardından .bsc dosyasını yeniden oluşturun.
+. Bsc dosyası, büyük olasılıkla derleme sırasında bir sistem hatası nedeniyle bozuldu. . Bsc dosyasını silin, tüm. sbr dosyalarını yeniden derleyin ve ardından. bsc dosyasını yeniden derleyin.

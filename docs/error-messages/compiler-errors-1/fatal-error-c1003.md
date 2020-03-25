@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1003
 ms.assetid: 27d2d009-2e0f-41fb-8bfc-372752fbe920
-ms.openlocfilehash: 385fcc5831ecede8fb4aed2403cee8f7b6c6b9b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 438eafd04fe56a3484fbab5c9b7dbfcc6c40ba73
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364252"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204925"
 ---
 # <a name="fatal-error-c1003"></a>Önemli hata C1003
 
-hata sayısı aşıyor; derleme durduruluyor
+hata sayısı sayıyı aşıyor; derleme durduruluyor
 
-Program hataları kurtarılabilmesi için fazladır. Derleyici sonlandırmanız gerekir.
+Programdaki hatalar, kurtarmaya izin veren çok fazla sayıda. Derleyicinin sonlandırılması gerekir.

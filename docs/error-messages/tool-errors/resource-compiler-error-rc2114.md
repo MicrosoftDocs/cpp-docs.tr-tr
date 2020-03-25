@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - RC2114
 ms.assetid: abdfdc46-6601-451f-8e81-81e92bcd2208
-ms.openlocfilehash: 0939319b363a36e534d6910a72c07d6f432c2112
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b748d6224b56cbfe893348cf156f9922b50f3046
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220093"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191463"
 ---
 # <a name="resource-compiler-error-rc2114"></a>Kaynak Derleyicisi Hatası RC2114
 
-Beklenen denetim sınıfı adı
+beklenen denetim sınıfı adı
 
-`class` Alan bir denetim deyiminin **iletişim** deyimi aşağıdaki türlerden biri olmalıdır: DÜĞME, COMBOBOX, düzenleme, liste kutusu, kaydırma çubuğu, statik veya kullanıcı tanımlı. Sınıf doğru yazıldığından emin olun.
+**İletişim** DEYIMINDEKI bir denetim ifadesinin `class` alanı şu türlerden biri OLMALıDıR: düğme, ComboBox, düzenleme, LISTBOX, kaydırma çubuğu, statik veya Kullanıcı tanımlı. Sınıfın doğru yazıldığından emin olun.

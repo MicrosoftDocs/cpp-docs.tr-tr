@@ -7,19 +7,19 @@ helpviewer_keywords:
 - CXX0029
 - CAN0029
 ms.assetid: 562b2132-e9cb-4591-a5bf-bc7179a7f40e
-ms.openlocfilehash: 4d6fbeaeb2524fd1e4ef2c8e79846003d916b357
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 205e0e0ceb0cfdadce612dd02819467542185264
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359858"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195636"
 ---
 # <a name="expression-evaluator-error-cxx0029"></a>İfade Değerlendirici Hatası CXX0029
 
-yapısı işaretçisi değil
+struct işaretçisi değil
 
-Üye seçme işleci (**->**) bir yapıya bir işaretçi olmayan bir ifade uygulandı.
+Üye seçim işleci ( **->** ), yapıya işaretçi olmayan bir ifadeye uygulandı.
 
-Tüm ifadeyi parantez içine alınmış doğru olduğundan veya türü adres ifadesine uygun yapı işaretçi türüne dönüştürme kontrol edin.
+İfadenin tamamının parantez içinde doğru olduğundan emin olun veya adres ifadesini uygun yapı işaretçisi türüne yayınla yazın.
 
-Bu hata için CAN0029 aynıdır.
+Bu hata CAN0029 ile aynıdır.

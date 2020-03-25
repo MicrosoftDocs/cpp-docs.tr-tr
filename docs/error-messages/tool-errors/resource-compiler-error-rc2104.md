@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - RC2104
 ms.assetid: 792a3bd8-cb4c-4817-b288-4ce37082b582
-ms.openlocfilehash: 6ac1786e795c0c8ed57af2d341f43b8ba39229c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4a06f88e4a73da6b711d108a1f79c14fae0907c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346567"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191645"
 ---
 # <a name="resource-compiler-error-rc2104"></a>Kaynak Derleyicisi Hatası RC2104
 
-tanımlanmamış anahtar veya anahtar adı: anahtar
+tanımsız anahtar sözcük veya anahtar adı: anahtar
 
-Belirtilen anahtar veya anahtar adı tanımlı değil.
+Belirtilen anahtar sözcük veya anahtar adı tanımlı değil.
 
-Bu hata genellikle kaynak tanımı'ndaki veya dahil edilen üstbilgi dosyasında bir yazım yanlışı kaynaklanır. Eksik bir üstbilgi dosyası tarafından da kaynaklanabilir.
+Bu hata genellikle kaynak tanımındaki bir yazım hatası veya eklenen üst bilgi dosyasında oluşur. Ayrıca, eksik bir üst bilgi dosyası olabilir.
 
-Bu sorunu düzeltmek için kaynak dosyasına dahil edilir ve anahtar veya anahtar adının doğru yazıldığından emin olun ve tanımlanmış bir anahtar veya anahtar adını içeren üstbilgi dosyasını bulun. Önceden derlenmiş üstbilgiyle projeniz oluşturuldu ve daha sonra kaldırmak, emin olun, kaynak dosyası hala gerekli üst bilgileri içerir.
+Sorunu düzeltemedi, tanımlanmış anahtar sözcüğü veya anahtar adını içermesi gereken başlık dosyasını bulun ve kaynak dosyanıza dahil olduğunu ve anahtar sözcüğünün ya da anahtar adının doğru yazıldığından emin olun. Projeniz önceden derlenmiş bir üstbilgiyle oluşturulmuşsa ve daha sonra kaldırırsanız, kaynak dosyasında gerekli tüm üstbilgileri hala içerdiğinden emin olun.
 
-Visual Studio'da, kaynak dosyanızdaki anahtar adlarını ve tanımlı anahtar sözcükler doğrulamak için açık **kaynak görünümü** penceresi — menü çubuğunda, **görünümü**, **kaynak görünümü**— ve Ardından, bir .rc dosyası için kısayol menüsünü açın ve seçin **kaynak sembolleri** tanımlanmış sembol listesini görüntülemek için. Dahil edilen üst bilgileri değiştirmek için bir .rc dosyası için kısayol menüsünü açın ve seçin **kaynak içerikleri**.
+Kaynak dosyanızdaki tanımlı anahtar sözcükleri ve anahtar adlarını doğrulamak için, Visual Studio 'da **kaynak görünümü** penceresini açın — menü çubuğunda **görüntüle**, **kaynak görünümü**— öğesini seçin ve ardından. rc dosyasının kısayol menüsünü açın ve **kaynak sembolleri** ' yi seçerek tanımlı simgelerin listesini görüntüleyin. Dahil edilen üst bilgileri değiştirmek için. rc dosyasının kısayol menüsünü açın ve **kaynak içerme**' yi seçin.
 
-Bu iletisiyle karşılaşırsanız:
+Bu iletiyle karşılaşırsanız:
 
 ```
 undefined keyword or key name: MFT_STRING
 ```
 
-\MCL\MFC\Include\AfxRes.h açın ve bunu ekleyin yönergesi:
+\MCL\MFC\Include\AfxRes.h dosyasını açın ve bu ekleme yönergesini ekleyin:
 
 ```
 #include <winresrc.h>

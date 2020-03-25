@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2089
+title: Derleyici hatası C2089
 ms.date: 11/04/2016
 f1_keywords:
 - C2089
 helpviewer_keywords:
 - C2089
 ms.assetid: 7c777775-5535-4eea-b6a2-340b71af9560
-ms.openlocfilehash: 0705d9a47dd5574f8a134ae5021d35ecd6f15597
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a188f68717805bf17b473916183ee1bb24964e2e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257679"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80207707"
 ---
-# <a name="compiler-error-c2089"></a>Derleyici Hatası C2089
+# <a name="compiler-error-c2089"></a>Derleyici hatası C2089
 
-'identifier': 'sınıf anahtarı' çok büyük
+' tanımlayıcı ': ' sınıf-anahtar ' çok büyük
 
-Belirtilen yapı veya birleşim 4 GB sınırını aşıyor.
+Belirtilen yapı veya birleşim, 4 GB sınırını aşıyor.

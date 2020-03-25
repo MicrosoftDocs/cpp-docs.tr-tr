@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - C4651
 ms.assetid: f1ea82aa-4dc1-4972-b55a-57fdb962f0dd
-ms.openlocfilehash: 01e2472a547e73eda5fcc56952949a0d9611029f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc8131665c970c3b86bb1e84e39636ae8f93897b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393525"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80199548"
 ---
 # <a name="compiler-warning-level-1-c4651"></a>Derleyici Uyarısı (düzey 1) C4651
 
-'Ön derlenmiş üstbilgi için geçerli derleme ancak belirtilen tanım'
+ön derlenmiş üst bilgi için ' tanım ' belirtildi, ancak geçerli derleme için yok
 
-Ön derlenmiş üstbilgi oluşturulduğunda, ancak bu derleme tanımı belirtilmedi.
+Tanım, ön derlenmiş üstbilgi oluşturulduğunda belirtildi, ancak bu derlemede belirtilmedi.
 
-Tanımı içinde önceden derlenmiş üst bilgi, ancak kodun geri kalanını uygulanmaz.
+Tanım, ön derlenmiş üstbilginin içinde geçerli olur, ancak kodun geri kalanında kullanılamaz.
 
-Önceden derlenmiş üstbilgi /DSYMBOL ile oluşturulduysa, derleyici /Yu derleme /DSYMBOL sahip değilse bu uyarı oluşturur.  /Yu komut satırına /DSYMBOL ekleme, bu uyarıyı çözümler.
+Ön derlenmiş bir üst bilgi/DSYMBOL ile oluşturulduysa,/Yu derlemesi/dsymboliçermiyorsa derleyici bu uyarıyı oluşturur.  /DSYMBOL komutunu/Yu komut satırına eklemek bu uyarıyı çözer.

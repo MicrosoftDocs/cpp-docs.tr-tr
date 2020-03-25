@@ -6,28 +6,28 @@ helpviewer_keywords:
 - operators [C++], casting
 - casting operators [C++]
 ms.assetid: 16240348-26bc-4f77-8eab-57253f00ce52
-ms.openlocfilehash: e2ac8e9079b1d30dca077363bbb6cef35960902e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: eac274a0207be675b8d13532c3110c6e71bd55c9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345094"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190111"
 ---
 # <a name="casting-operators"></a>Atama İşleçleri
 
 C++ diline özgü birkaç atama işleci vardır. Bu işleçler, eski stil C dili atamalarında bulunan belirsizliğin ve tehlikenin bir kısmının giderilmesini amaçlar. Bu işleçler şunlardır:
 
-- [dynamic_cast](../cpp/dynamic-cast-operator.md) çok biçimli türlerin dönüştürülmesi için kullanılır.
+- [dynamic_cast](../cpp/dynamic-cast-operator.md) Polimorfik türlerin dönüştürülmesi için kullanılır.
 
-- [static_cast](../cpp/static-cast-operator.md) dönüştürme olmayan türlerin dönüştürülmesi için kullanılır.
+- [static_cast](../cpp/static-cast-operator.md) Polimorfik olmayan türlerin dönüştürülmesi için kullanılır.
 
-- [const_cast](../cpp/const-cast-operator.md) kaldırmak için kullanılan **const**, **geçici**, ve **__unaligned** öznitelikleri.
+- [const_cast](../cpp/const-cast-operator.md) **Const**, **volatile**ve **__unaligned** özniteliklerini kaldırmak için kullanılır.
 
-- [reinterpret_cast](../cpp/reinterpret-cast-operator.md) bitlerin basit reinterpretation için kullanılır.
+- [reinterpret_cast](../cpp/reinterpret-cast-operator.md) Bitlerin basit yeniden yorumu için kullanılır.
 
-- [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) kullanılan C++/CLI doğrulanabilir MSIL oluşturmak için.
+- [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) /CLI içinde C++doğrulanabilir MSIL oluşturmak için kullanılır.
 
-Kullanım **const_cast** ve **reinterpret_cast** bu işleçler eski stil atamaları olarak aynı tehlikeleri arz ettiği atamalarla son çare olarak. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.
+**Const_cast** ve **reinterpret_cast** son çare olarak kullanın, çünkü bu işleçler eski stil yayınları ile aynı tehlikeleri sunar. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

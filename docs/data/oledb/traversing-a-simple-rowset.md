@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - accessors [C++], rowsets
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
-ms.openlocfilehash: 874c8372074838cd614d1fe17727871ca6e5f21a
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: a6b2ebf918f42e274c372d1dda1e277f7fd49cd5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127646"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209475"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
 

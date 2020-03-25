@@ -4,12 +4,12 @@ ms.date: 10/19/2018
 helpviewer_keywords:
 - parameter queries, running using CCommand class
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
-ms.openlocfilehash: 4964d63846e14c0eaf4ff7c7fc80e14237673f69
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bb8b879d08595150b2db61f4840131e3ccc500a2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127639"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210177"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
 

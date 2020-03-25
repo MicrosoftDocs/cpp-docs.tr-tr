@@ -5,20 +5,20 @@ helpviewer_keywords:
 - global constants
 - constants, global
 ms.assetid: df5a9bd4-d0a8-4c1c-956e-b481d0bded7d
-ms.openlocfilehash: 2f0621f52fe445f8f2058ef902824ddc1f5e2bb5
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: cabe5e92a496181d60536d7274eca388aba5c068
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856100"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195480"
 ---
 # <a name="global-constants-in-c"></a>C++'da Global Sabitler
 
-C++ global sabitler statik bağlantısı vardır. Bu c farklı. Genel bir kullanmayı denerseniz c++ birden çok dosya içindeki sabit çözülmemiş dış hata alırsınız. Derleyici global sabitler, değişken için ayrılmış boşluk bırakarak iyileştirir.
+C++Genel sabitler statik bağlantıya sahiptir. Bu, C 'den farklıdır. Birden çok dosyada içinde C++ genel bir sabit kullanmayı denerseniz, çözümlenmemiş bir dış hata alırsınız. Derleyici, genel sabitleri en iyi duruma getirir ve değişken için ayrılan alan yok bırakır.
 
-Bu hatayı gidermek için bir const başlatmalar bir üstbilgi dosyasına eklenecek ve gerektiğinde, yalnızca işlev prototipi olduğu gibi CPP dosyalarınızda bu üstbilgisini yoludur. Diğer bir olasılık değişkeni sabit olmayan yapın ve sabit bir başvuru da değerlendirirken kullanmaktır.
+Bu hatayı çözmek için bir yol, bir üstbilgi dosyasına const başlatmaları dahil etmek ve gerekli olduğunda bu üstbilgiyi, prototip dosyalarınıza dahil etmek olacaktır. Diğer bir olasılık ise değişkeni sabit olmayan bir hale getirmek ve değerlendirmek için sabit bir başvuru kullanmaktır.
 
-Aşağıdaki örnek, C2019 oluşturur:
+Aşağıdaki örnek C2019 oluşturur:
 
 ```cpp
 // global_constants.cpp
@@ -31,7 +31,7 @@ int main() {
 }
 ```
 
-Ardından,
+ardından,
 
 ```cpp
 // global_constants_2.cpp

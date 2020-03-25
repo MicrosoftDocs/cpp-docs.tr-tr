@@ -7,32 +7,32 @@ helpviewer_keywords:
 - Visual C++ debugger, debugging providers
 - Visual C++ debugger
 ms.assetid: 90d4e7db-06ea-4de0-a7f4-4f3751d50d93
-ms.openlocfilehash: 21d4cb455413c3f7cbcbed02cdd4c364a469426d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f80ce5dc82dd2baeefe3410a488a5fefda0e9bf0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176154"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211100"
 ---
 # <a name="debugging-your-provider"></a>Sağlayıcınızda Hata Ayıklama
 
-Sağlayıcınızda hata ayıklamanın iki yolu vardır:
+Sağlayıcınızdaki hata ayıklamanın iki yolu vardır:
 
-- Sağlayıcıları işlemde oluşturulduğundan, normalde sağlayıcı içine adımlama ve OLE DB Tüketici Şablonları kullanarak bazı tüketici kodu oluşturabilirsiniz.
+- Sağlayıcılar işlem içinde oluşturulduğundan, tüketici şablonlarını OLE DB kullanarak bir tüketici kodu oluşturabilir ve normal olarak sağlayıcıya adım adım ekleyebilirsiniz.
 
-- Visual C++ ile gelen çeşitli yardımcı programlar kullanabilirsiniz.
+- Görselle C++birlikte gelen çeşitli yardımcı programları kullanabilirsiniz.
 
-## <a name="to-use-debugging"></a>Hata ayıklama kullanmak için
+## <a name="to-use-debugging"></a>Hata ayıklamayı kullanmak için
 
 1. Sağlayıcı projesini açın.
 
-1. Üzerinde **projeleri** menüsünde tıklatın **özellikleri**.
+1. **Projeler** menüsünde, **Özellikler**' e tıklayın.
 
-1. İçinde **özellik sayfaları** iletişim kutusu, tıklayın **hata ayıklama** sekmesi.
+1. **Özellik sayfaları** Iletişim kutusunda **hata ayıklama** sekmesine tıklayın.
 
-1. Seçenekleri gerekli seçmek **Tamam**.
+1. Gerekli seçenekleri belirleyin, **Tamam**' a tıklayın.
 
-1. Kesme noktaları ayarlayın ve her zaman olduğu gibi hata ayıklama.
+1. Kesme noktaları ayarlayın ve ardından her zamanki gibi hata ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

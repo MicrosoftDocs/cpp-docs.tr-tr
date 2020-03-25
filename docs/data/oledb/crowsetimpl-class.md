@@ -33,12 +33,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: 956648babf987d156cac753f8373518a83362013
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 97a79dee826dfba4b42053bbeba8c65e4d2b429c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079684"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211191"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl Sınıfı
 

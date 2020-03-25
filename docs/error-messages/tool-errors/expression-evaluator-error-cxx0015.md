@@ -7,23 +7,23 @@ helpviewer_keywords:
 - CXX0015
 - CAN0015
 ms.assetid: 35efaf77-d578-48d8-bfc5-fdeb2a46a8b5
-ms.openlocfilehash: f73aef18563426d28a81b92b3c37d1b7e345d0d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19cf47d6b7b718eb19b987bcc16854af3266069b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397152"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196072"
 ---
 # <a name="expression-evaluator-error-cxx0015"></a>İfade Değerlendirici Hatası CXX0015
 
 ifade çok karmaşık (yığın taşması)
 
-Girdiğiniz ifade çok karmaşık veya C ifade değerlendiricisi için kullanılabilir depolama alanı miktarı çok derin iç içe geçmiş.
+Girilen ifade çok karmaşıktı veya C ifadesi değerlendiricisi tarafından kullanılabilen depolama miktarı için çok derin iç içe geçmiş.
 
-Taşma genellikle çok fazla bekleyen hesaplamalar nedeniyle oluşur.
+Taşma genellikle çok fazla bekleyen hesaplama nedeniyle oluşur.
 
-Hesaplanacak ifade diğer bölümleri için beklemek zorunda yerine ifade, karşılaştığından ifade'nın her bileşeninin değerlendirilebilir böylece bunları yeniden düzenleme.
+İfadenin her bileşeni, ifadenin diğer bölümlerinin hesaplanmasını beklemek zorunda kalmak yerine, ifadenin her bileşeninin karşılaştığı şekilde değerlendirilebilmesi için ifadeyi yeniden düzenleyin.
 
-İfade birden çok komutlarına bölün.
+İfadeyi birden çok komuta bölün.
 
-Bu hata için CAN0015 aynıdır.
+Bu hata CAN0015 ile aynıdır.

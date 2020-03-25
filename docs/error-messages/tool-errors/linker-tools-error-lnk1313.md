@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1313
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
-ms.openlocfilehash: 380df2bff305acc47e423d69ea702d77c4eafdfd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2314f160dc6add45547082c7804ec5e2c8f2349
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160438"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194869"
 ---
 # <a name="linker-tools-error-lnk1313"></a>Bağlayıcı Araçları Hatası LNK1313
 
-> IJW/yerel modülü algılandı; saf modülleri ile bağlanamıyor
+> IJW/yerel modül algılandı; saf modüllerle bağlanamaz
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual C++'ın geçerli sürümü ile derlenmiş .obj dosyaları ile yerel veya karma yönetilen/yerel .obj dosyalarını bağlama desteklemiyor **/CLR: pure**.
+Visual C++ 'ın geçerli sürümü, yerel veya karma yönetilen/yerel. obj dosyalarını **/clr: Pure**ile derlenen. obj dosyalarıyla bağlamayı desteklemez.
 
-**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
 ## <a name="example"></a>Örnek
 
@@ -43,7 +43,7 @@ void test(){}
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek LNK1313 oluşturur.
+Aşağıdaki örnek LNK1313 oluşturacaktır.
 
 ```cpp
 // LNK1313_c.cpp

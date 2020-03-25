@@ -6,33 +6,33 @@ f1_keywords:
 helpviewer_keywords:
 - R6009
 ms.assetid: edfb1f8b-3807-48f4-a994-318923b747ae
-ms.openlocfilehash: 5e1914d5d2f665609cfc24c2db3dc8a123d7e83f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64391f8ec05a99bb85a9d6cd00d6488a945fdb62
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299757"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197359"
 ---
 # <a name="c-runtime-error-r6009"></a>C Çalışma Zamanı Hatası R6009
 
 ortam için yeterli alan yok
 
 > [!NOTE]
-> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle bir son derece düşük bellek durumu, ortam değişkenleri ya da hata programı tarafından gerçekleştirilecek çok fazla bellek tarafından kaynaklanır.
+> Bir uygulamayı çalıştırırken bu hata iletisiyle karşılaşırsanız, bir iç bellek sorunu olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle son derece düşük bellek koşulu, ortam değişkenleri tarafından çok fazla bellek alınması veya programdaki bir hata nedeniyle oluşur.
 >
 > Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
 > - Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
-> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Programı onarmak ya da yeniden yüklemek için **Denetim Masası** 'ndaki **uygulamalar ve Özellikler** veya **Programlar ve Özellikler** sayfasını kullanın.
+> - Yazılım güncelleştirmeleri için **Denetim Masası** 'ndaki **Windows Update** kontrol edin.
 > - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
-**Programcıları için bilgi**
+**Programcılar için bilgiler**
 
-Programı yüklemek için yeterli bellek, ancak oluşturmak için yeterli bellek yoktu **envp** dizisi.  Bu, olağan dışı derecede büyük bir ortam değişken kullanımı veya son derece düşük bellek koşullarını neden olabilir. Aşağıdaki çözümlerden birini göz önünde bulundurun:
+Programı yüklemek için yeterli bellek yoktu, ancak **envp** dizisinin oluşturulması için yeterli bellek yok.  Bunun nedeni son derece düşük bellek koşullarından veya alışılmadık büyük ortam değişkeni kullanımıyla kaynaklanıyor olabilir. Aşağıdaki çözümlerden birini göz önünde bulundurun:
 
-- Program için kullanılabilir bellek miktarını artırın.
+- Programın kullanabileceği bellek miktarını artırın.
 
-- Sayı ve komut satırı bağımsız değişkenleri boyutunu azaltın.
+- Komut satırı bağımsız değişkenlerinin sayısını ve boyutunu küçültün.
 
-- Gereksiz değişkenleri kaldırarak ortam boyutunu azaltın.
+- Gereksiz değişkenleri kaldırarak ortam boyutunu küçültün.

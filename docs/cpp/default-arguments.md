@@ -10,16 +10,16 @@ helpviewer_keywords:
 - arguments [C++], default
 - defaults [C++], arguments
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
-ms.openlocfilehash: 5ffc0301e7a89a379a2ea1eda9a113276df7a88e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0202aaca47964f8923aa57d84515dc70ae8c8a2d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154522"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189552"
 ---
 # <a name="default-arguments"></a>Varsayılan Bağımsız Değişkenler
 
-Çoğu durumda işlevlerin, varsayılan bir değerin yeterli olmasını sağlayacak kadar sık kullanılan bağımsız değişkenleri vardır. Bunu çözmek için varsayılan bağımsız değişken özelliği, bir işlev için yalnızca belirli bir çağrıda anlamlı olan bağımsız değişkenleri belirtmeye izin verir. Bu kavramı anlamak için de sunulan örneği göz önünde bulundurun. [işlev aşırı yüklemesi](../cpp/function-overloading.md).
+Çoğu durumda işlevlerin, varsayılan bir değerin yeterli olmasını sağlayacak kadar sık kullanılan bağımsız değişkenleri vardır. Bunu çözmek için varsayılan bağımsız değişken özelliği, bir işlev için yalnızca belirli bir çağrıda anlamlı olan bağımsız değişkenleri belirtmeye izin verir. Bu kavramı göstermek için [Işlev aşırı yüklemesi](../cpp/function-overloading.md)içinde sunulan örneği göz önünde bulundurun.
 
 ```cpp
 // Prototype three print functions.
@@ -38,7 +38,7 @@ int print( double dvalue, int prec=2 );  // Print a double with a
 //  given precision.
 ```
 
-Uygulamasını `print` işlevi değiştirildiğinde biraz yalnızca bir işlev türü için mevcut olgu yansıtacak şekilde **çift**:
+`print` işlevinin uygulanması, **Double**türü için yalnızca bir işlevin var olduğunu göstermek için biraz değiştirilmiştir:
 
 ```cpp
 // default_arguments.cpp

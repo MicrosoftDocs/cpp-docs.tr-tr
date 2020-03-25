@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - C4650
 ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
-ms.openlocfilehash: ea3f1b6e792239692960e74c8360c6c3a1323815
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e57f1d9acba4a8734339f3b8e538120abe542efc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393538"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80199574"
 ---
 # <a name="compiler-warning-level-1-c4650"></a>Derleyici Uyarısı (düzey 1) C4650
 
-hata ayıklama bilgileri önceden derlenmiş üstbilgide değil; yalnızca üstbilgideki genel simgeler kullanılabilecek
+hata ayıklama bilgileri önceden derlenmiş üstbilgide değil; Başlıktaki yalnızca genel semboller kullanılabilir olacaktır
 
 Ön derlenmiş üstbilgi dosyası Microsoft sembolik hata ayıklama bilgileri ile derlenmedi.
 
-Bağlı olduğunda, elde edilen çalıştırılabilir veya dinamik bağlantı kitaplığı dosyası için önceden derlenmiş üst bilgisinde yer alan yerel semboller hata ayıklama bilgisi içermez.
+Bağlandığında, sonuçta elde edilen yürütülebilir veya dinamik bağlantı kitaplığı dosyası, ön derlenmiş üst bilgide yer alan yerel simgelere yönelik hata ayıklama bilgilerini içermez.
 
-Bu uyarı, önceden derlenmiş üst bilgi dosyası ile derleyerek önlenebilir [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) komut satırı seçeneği.
+Ön derlenmiş üst bilgi dosyasını [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) komut satırı seçeneğiyle yeniden derleyerek Bu uyarının önlenebilir olması önlenmiş olabilir.

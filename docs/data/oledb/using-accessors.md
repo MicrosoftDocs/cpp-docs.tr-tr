@@ -6,18 +6,18 @@ helpviewer_keywords:
 - OLE DB consumer templates, accessors
 - rowsets [C++], accessors
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283
-ms.openlocfilehash: 4eaedfca0c93aca89cbfd985c1de0f57306e470c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e35318fd1b5a245eaed982674d69484e34f9dac
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389144"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209345"
 ---
 # <a name="using-accessors"></a>Erişimcileri Kullanma
 
-Aşağıdaki konularda açıklanır ne tür erişimci için verilerinizi en iyi olduğunu belirlemek nasıl uygulama ve farklı türde kullanılabilir erişimcileri kullanma:
+Aşağıdaki konularda, veri uygulamanız için hangi erişimci türünün en iyisi ve daha sonra kullanılabilir farklı tür erişimcileri kullanımı açıklanmaktadır:
 
-- [Hangi erişimci kullanacağınızı belirleme](../../data/oledb/determining-which-type-of-accessor-to-use.md)
+- [Hangi erişimcinin kullanılacağını belirleme](../../data/oledb/determining-which-type-of-accessor-to-use.md)
 
 - [Satır Kümesinde Çoklu Erişimci Kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md)
 

@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - U4010
 ms.assetid: 99d8eb9a-ae31-40d1-b8c5-8c66732127d3
-ms.openlocfilehash: aa4d2355b18a3c6cc6fc3151c7662fbbbaa665d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f68da1893eec6325ccccfd0e2e2dd0e612f28eb9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298119"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193140"
 ---
 # <a name="nmake-warning-u4010"></a>NMAKE Uyarısı U4010
 
-'target': derleme başarısız oldu; /K belirtildi, devam etmeden...
+' Target ': derleme başarısız oldu; /K belirtildi, devam ediyor...
 
-Bir komut komutları blok için belirtilen hedef sıfır olmayan çıkış kodu döndürdü. NMAKE derleme ilgisiz bölümleri işleme devam etmek ve NMAKE oturumu sona erdiğinde bir çıkış kodu 1 verecek /K seçeneği söyledik.
+Belirtilen hedef için komut bloğunda bir komut sıfır dışında bir çıkış kodu döndürdü. /K seçeneği, derleme işleminin ilişkisiz parçalarını işlemeye devam etmeyi ve NMAKE oturumu bittiğinde çıkış kodu 1 ' i vermesini söyyordu.
 
-Kendisine bağımlı bir başka bir hedef için belirtilen hedef, ise, NMAKE uyarısı sorunları [U4011](../../error-messages/tool-errors/nmake-warning-u4011.md) bu uyarıyı sonra.
+Verilen hedef, başka bir hedef için bağımlıysa, NBU uyarıdan sonra sorun [U4011](../../error-messages/tool-errors/nmake-warning-u4011.md) uyarısı alın.

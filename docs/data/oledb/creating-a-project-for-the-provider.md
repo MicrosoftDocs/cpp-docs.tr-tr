@@ -6,33 +6,33 @@ helpviewer_keywords:
 - OLE DB providers, projects
 - projects [C++], creating
 ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2
-ms.openlocfilehash: dc085b1f663369033947ed2a5577f334dd79c0aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2ff42ba8a2e908f672db7e96fc9f24f51a1fd9b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362015"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211412"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
 
-## <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcısı içinde yer alacağını bir proje oluşturmak için
+## <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcının bulunacağı bir proje oluşturmak için
 
 1. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.
 
    **Yeni Proje** iletişim kutusu görünür.
 
-1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **Visual C++** > **MFC/ATL** klasör. İçinde **şablonları** bölmesinde tıklayın **ATL projesi**.
+1. **Proje türleri** bölmesinde, **yüklü** > **Visual C++**  > **MFC/ATL** klasörü ' ne tıklayın. **Şablonlar** bölmesinde, **ATL projesi**' ne tıklayın.
 
     > [!NOTE]
-    > Visual Studio'nun önceki sürümlerinde, altında proje türünü bulma **yüklü** > **şablonları** > **Visual C++**  >  **ATL**.
+    > Visual Studio 'nun önceki sürümlerinde, **Visual C++**  > **ATL** > **yüklü** > **Şablonlar** altında proje türünü bulun.
 
-1. İçinde **adı** kutusuna proje için bir ad girin ve ardından **Tamam**.
+1. **Ad** kutusuna proje için bir ad girin ve ardından **Tamam**' a tıklayın.
 
-   **ATL projesi Sihirbazı** görünür.
+   **ATL Projesi Sihirbazı** görüntülenir.
 
-1. İçinde **ATL projesi Sihirbazı**, seçin **dinamik bağlantı kitaplığı (DLL)** için **uygulama türü**.
+1. **Atl proje sihirbazında**, **uygulama türü**için **dinamik bağlantı kitaplığı (dll)** öğesini seçin.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

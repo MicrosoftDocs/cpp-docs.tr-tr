@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2026
+title: Derleyici hatası C2026
 ms.date: 11/04/2016
 f1_keywords:
 - C2026
 helpviewer_keywords:
 - C2026
 ms.assetid: 8e64b6e1-b967-479b-be97-d12dc4a8e389
-ms.openlocfilehash: da4c03c681f95efaa5edb159869315b41d027e99
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9747b1edadc76ceeb502b2c6fd03496b91769f5a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62303534"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208071"
 ---
-# <a name="compiler-error-c2026"></a>Derleyici Hatası C2026
+# <a name="compiler-error-c2026"></a>Derleyici hatası C2026
 
 dize çok büyük, sondaki karakterler kesildi
 
-Dize 16380 tek baytlık karakter sınırından daha uzun.
+Dize, 16380 tek baytlık karakter sınırından daha uzun.
 
-Birleştirilmiş bitişik dize önce bir dize 16380 tek baytlık karakterden uzun olamaz.
+Art arda eklenen dizelerin öncesinde, bir dize 16380 tek baytlı karakterden daha uzun olamaz.
 
-Bu süre yaklaşık yarım Unicode dizesi de bu hata oluşturur.
+Bu uzunlukta bir yarısı yaklaşık bir Unicode dizesi de bu hatayı oluşturur.
 
-Şu şekilde tanımlanmış bir dize varsa C2026 oluşturur:
+Aşağıdaki şekilde tanımlanmış bir dizeniz varsa, C2026 oluşturur:
 
 ```
 char sz[] =
@@ -33,7 +33,7 @@ long string here\
 ";
 ```
 
-Bunu şu şekilde bölmek:
+Bunu aşağıdaki gibi kesebilirsiniz:
 
 ```
 char sz[] =
@@ -43,4 +43,4 @@ imagine a really, really "
 ";
 ```
 
-Olağanüstü bir geniş dize değişmez değerleri (32 bin veya daha fazlası) depolamak özel bir kaynak veya bir dış dosya isteyebilirsiniz. Bkz: [yeni özel veya veri kaynağı oluşturma](../../windows/creating-a-new-custom-or-data-resource.md) daha fazla bilgi için.
+Özel bir kaynakta veya harici bir dosyada, hariç tutulan büyük dize sabit değerlerini (32K veya daha fazla) depolamak isteyebilirsiniz. Daha fazla bilgi için bkz. [Yeni bir özel veya veri kaynağı oluşturma](../../windows/creating-a-new-custom-or-data-resource.md) .

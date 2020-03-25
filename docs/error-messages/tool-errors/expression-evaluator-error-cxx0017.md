@@ -7,27 +7,27 @@ helpviewer_keywords:
 - CAN0017
 - CXX0017
 ms.assetid: af74db02-a64d-49ca-8363-3e044a107580
-ms.openlocfilehash: bbf16ae9a503a8525edb42d6bf1fc4336c3f5267
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64ebce0161d67c298d55095f6bc409820120c34a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397139"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196020"
 ---
 # <a name="expression-evaluator-error-cxx0017"></a>İfade Değerlendirici Hatası CXX0017
 
-Sembol bulunamadı
+sembol bulunamadı
 
-Belirtilen bir ifadede bir sembolü bulunamadı.
+İfadede belirtilen bir sembol bulunamadı.
 
-Bu hatanın olası nedenlerinden biri, sembol adı büyük/küçük harf uyuşmazlık olmasıdır. C ve C++ dilleri büyük küçük harfe duyarlı olduğundan, kaynak olarak tanımlandığı tam durumda bir sembol adı verilmesi gerekir.
+Bu hatanın olası nedenlerinden biri, sembol adında bir büyük/küçük harf uyumsuzluğu olabilir. C ve C++ büyük/küçük harfe duyarlı diller olduğundan, kaynak üzerinde tanımlandığı tam durumda bir sembol adı verilmelidir.
 
-Bu hata, hata ayıklama sırasında değişkeni izlemek için bir değişken türü atayarak çalışırken ortaya çıkabilir. `typedef` Bir türü için yeni bir ad bildirir ancak yeni bir tür tanımlamıyor. Hata ayıklayıcıda çalıştı typecast tanımlanan bir tür adı gerektirir.
+Bu hata, hata ayıklama sırasında değişkeni izlemek için bir değişkeni oluşturmaya çalışırken ortaya çıkabilir. `typedef`, bir tür için yeni bir ad bildirir, ancak yeni bir tür tanımlamaz. Hata ayıklayıcıda denenen typecast, tanımlı bir tür adı gerektiriyor.
 
-Bu hata için CAN0017 aynıdır.
+Bu hata CAN0017 ile aynıdır.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
-1. Sembol zaten kullanıldığı yerin programda bir noktada bildirildiğinden emin olun.
+1. Simgenin kullanıldığı programdaki noktada zaten tanımlanmış olduğundan emin olun.
 
-1. Gerçek tür adı hata ayıklayıcıda değişkenler olarak kullanmak yerine `typedef`-tanımlanan adı.
+1. `typedef`tanımlı bir ad yerine, hata ayıklayıcıdaki değişkenleri dönüştürmek için gerçek tür adı kullanın.

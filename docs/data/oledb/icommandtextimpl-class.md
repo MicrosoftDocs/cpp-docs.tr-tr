@@ -22,16 +22,16 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: de9e930056db7b91968ca1ce471a87809693376a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d91221dd509122ebbd6490c2de7fab1ce51eb2f8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408985"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210736"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandText](/previous-versions/windows/desktop/ms714914(v=vs.85)) arabirimi.
+[ICommandText](/previous-versions/windows/desktop/ms714914(v=vs.85)) arabirimi için bir uygulama sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,12 +43,12 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Komut sınıfı türetilen `ICommandTextImpl`.
+*Şı*<br/>
+`ICommandTextImpl`türetilen komut sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** altdb.h
+**Üstbilgi:** altdb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -56,22 +56,22 @@ Komut sınıfı türetilen `ICommandTextImpl`.
 
 |||
 |-|-|
-|[GetCommandText](#getcommandtext)|Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).|
-|[SetCommandText](#setcommandtext)|Mevcut komut metni değiştirme komut metni, ayarlar.|
+|[GetCommandText](#getcommandtext)|[SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.|
+|[SetCommandText](#setcommandtext)|Komut metnini ayarlar ve varolan komut metnini değiştirir.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |||
 |-|-|
-|[m_strCommandText](#strcommandtext)|Komut metni depolar.|
+|[m_strCommandText](#strcommandtext)|Komut metnini depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zorunlu bir arabirim açma komutları.
+Komutlarda zorunlu arabirim.
 
-## <a name="getcommandtext"></a> Icommandtextımpl::getcommandtext
+## <a name="icommandtextimplgetcommandtext"></a><a name="getcommandtext"></a>ICommandTextImpl:: GetCommandText
 
-Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).
+[SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -82,11 +82,11 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.
+*OLE DB Programcı başvurusunda* [ICommandText:: GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) ' i inceleyin. *PguidDialect* parametresi varsayılan olarak yok sayılır.
 
-## <a name="setcommandtext"></a> Icommandtextımpl::setCommandText
+## <a name="icommandtextimplsetcommandtext"></a><a name="setcommandtext"></a>ICommandTextImpl:: SetCommandText
 
-Mevcut komut metni değiştirme komut metni, ayarlar.
+Komut metnini ayarlar ve varolan komut metnini değiştirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -97,11 +97,11 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ICommandText:: setCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) ' i inceleyin.
 
-## <a name="strcommandtext"></a> Icommandtextımpl::m_strCommandText
+## <a name="icommandtextimplm_strcommandtext"></a><a name="strcommandtext"></a>ICommandTextImpl:: m_strCommandText
 
-Komut metni dizesi depolar.
+Komut metni dizesini depolar.
 
 ### <a name="syntax"></a>Sözdizimi
 

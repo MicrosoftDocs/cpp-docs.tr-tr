@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3365
+title: Derleyici hatası C3365
 ms.date: 11/04/2016
 f1_keywords:
 - C3365
 helpviewer_keywords:
 - C3365
 ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
-ms.openlocfilehash: fa11ac57205574da29c55344fedb0e996ab30557
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 355c4530fffa89470ac495aff8bc2822278e2da3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300576"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201201"
 ---
-# <a name="compiler-error-c3365"></a>Derleyici Hatası C3365
+# <a name="compiler-error-c3365"></a>Derleyici hatası C3365
 
-işleç 'operator': 'type1' ve 'type2' farklı işlenenler
+işleç ' operator ': ' type1 ' ve ' type2 ' türünde farklı işlenenler
 
-Farklı türler ile temsilci oluşturma için girişimde bulunuldu.  Bkz: [nasıl yapılır: Tanımlama ve temsilciler kullanın (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) temsilciler hakkında daha fazla bilgi için.
+Farklı türlerde temsilciler oluşturmak için bir girişimde bulunuldu.  Temsilciler hakkında daha fazla bilgi için bkz. [nasılC++yapılır: temsilcileri tanımlama ve kullanma (/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3365 oluşturur:
+Aşağıdaki örnek C3365 oluşturur:
 
 ```cpp
 // C3365.cpp

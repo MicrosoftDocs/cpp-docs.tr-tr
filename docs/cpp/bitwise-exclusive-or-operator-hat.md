@@ -10,12 +10,12 @@ helpviewer_keywords:
 - OR operator [C++], bitwise exclusive
 - operators [C++], logical
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
-ms.openlocfilehash: 07af1b507cf256b84ac2f0f2db4061790a23555a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a44dc60a985729aae79ed0e2e48c44adace647b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232020"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190722"
 ---
 # <a name="bitwise-exclusive-or-operator-"></a>Bit Düzeyinde Özel OR İşleci: ^
 
@@ -27,13 +27,13 @@ expression ^ expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde özel OR işleci (**^**) karşılık gelen bit ikinci işlenenin ilk işlenenin her bitini karşılaştırır. Bir bit 0'dır ve 1 diğer bit ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.
+Bit düzeyinde dışlamalı OR işleci ( **^** ), ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine karşılaştırır. Bir bit 0 ise ve diğer bit 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.
 
-Bit düzeyinde dışlamalı OR işlecinin her iki işlenen, integral türde olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md) işlenenlere uygulanır.
+Bit düzeyinde dışlamalı veya işlecin her iki işleneni de İntegral türünde olmalıdır. [Standart dönüştürmelerde](standard-conversions.md) ele alınan Olağan aritmetik dönüştürmeler işlenenlere uygulanır.
 
-## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü ^
+## <a name="operator-keyword-for-"></a>^ İçin işleç anahtar sözcüğü
 
-**Xor** işlecidir öğesinin metin eşdeğeridir **^**. Erişmenin iki yöntemi vardır **xor** programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.
+**Xor** işleci **^** metin eşdeğeridir. Programlarınızda **Xor** işlecine erişmenin iki yolu vardır: `iso646.h`üst bilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
 
 ## <a name="example"></a>Örnek
 

@@ -1,23 +1,23 @@
 ---
-title: Derleyici Hatası C3550
+title: Derleyici hatası C3550
 ms.date: 11/04/2016
 f1_keywords:
 - C3550
 helpviewer_keywords:
 - C3550
 ms.assetid: 9f2d5ffc-e429-41a1-89e3-7acc4fd47e14
-ms.openlocfilehash: 106ac93496eebb25ee603251d84680053e1310b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 17c90aa68b29c9490deb8d49895162e8a6bdefec
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375918"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200778"
 ---
-# <a name="compiler-error-c3550"></a>Derleyici Hatası C3550
+# <a name="compiler-error-c3550"></a>Derleyici hatası C3550
 
-Bu bağlamda yalnızca düz 'decltype(auto)' kullanılabilir
+Bu bağlamda yalnızca düz ' decltype (Auto) ' kullanılabilir
 
-Varsa `decltype(auto)` kullanılan işlevin dönüş türü için bir yer tutucu olarak, kendisi tarafından kullanılmalıdır. Bir işaretçi bildirimi bir parçası olarak kullanılamaz (`decltype(auto*)`), bir başvuru bildirimi (`decltype(auto&)`), veya tüm diğer tür nitelemesini.
+Bir işlevin dönüş türü için bir yer tutucu olarak `decltype(auto)` kullanılırsa, kendisi tarafından kullanılmalıdır. Bir işaretçi bildiriminin (`decltype(auto*)`) bir parçası olarak, bir başvuru bildirimi (`decltype(auto&)`) veya başka bir nitelik gibi kullanılamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

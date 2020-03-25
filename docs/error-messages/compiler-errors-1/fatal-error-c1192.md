@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1192
 ms.assetid: 54cff717-a3eb-471d-9bd4-1c2e673dbbef
-ms.openlocfilehash: 5fc5e0a17fb3fedca5719065ae426ac8c05db61f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a15a808c1aff46ba6e63b3e86c0745c8ed7711a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228962"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203677"
 ---
 # <a name="fatal-error-c1192"></a>Önemli hata C1192
 
-\#'dosya ' başarısız oldu
+' File ' üzerinde başarısız \#kullanımı
 
-Yalnızca bir dosyayı Microsoft Ara dil (MSIL) biçiminde geçirilebilir bir [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesi. [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, bir MSIL çıkış dosyası oluşturmanıza olanak tanır. Diğer Visual Studio dilleri de MSIL dosyaları oluşturur.
+Yalnızca Microsoft ara dili (MSIL) biçimindeki bir dosya [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesine geçirilebilir. [/Clr](../../build/reference/clr-common-language-runtime-compilation.md) derleyici SEÇENEĞI bir MSIL çıkış dosyası oluşturmanıza olanak sağlar. Diğer Visual Studio dilleri de MSIL dosyaları oluşturur.

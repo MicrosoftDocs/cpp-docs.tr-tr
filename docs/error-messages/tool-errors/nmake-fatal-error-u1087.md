@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - U1087
 ms.assetid: 5236ab54-e117-484d-99c3-852b061fd3d0
-ms.openlocfilehash: 47015443114404de2e5f9edfdb1100c324d5e18b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad6f422f42b2ba284a2886065b6181b879e7c7fc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298457"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193518"
 ---
 # <a name="nmake-fatal-error-u1087"></a>NMAKE Önemli Hatası U1087
 
-sahip olamaz: ve:: aynı hedef için bağımlılıklar
+: ve:: bağımlıları aynı hedefe ait olamaz
 
-Bir hedef hem tek-iki nokta belirtilemez (**:**) ve bir çift iki nokta (`::`) bağımlılık.
+Bir hedef hem tek iki nokta ( **:** ) hem de çift iki nokta (`::`) bağımlılığında belirtilemez.
 
-Bir hedef içinde birden çok açıklama blokları belirtmek için kullanın `::` her bağımlılık satırda.
+Birden çok açıklama bloklarında bir hedef belirtmek için her bir bağımlılık satırındaki `::` kullanın.

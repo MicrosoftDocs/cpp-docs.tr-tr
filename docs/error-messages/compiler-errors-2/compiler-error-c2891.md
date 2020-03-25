@@ -1,32 +1,32 @@
 ---
-title: Derleyici Hatası C2891
+title: Derleyici hatası C2891
 ms.date: 11/04/2016
 f1_keywords:
 - C2891
 helpviewer_keywords:
 - C2891
 ms.assetid: e12cfb2d-df45-4b0d-b155-c51d17e812fa
-ms.openlocfilehash: d9a1cdafdf7d3a2843aee4a20f71c7e6a4693150
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2544cfc9e8cff283a7c3e0ace499408bb84cd046
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366374"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201649"
 ---
-# <a name="compiler-error-c2891"></a>Derleyici Hatası C2891
+# <a name="compiler-error-c2891"></a>Derleyici hatası C2891
 
-'parameter': bir şablon parametresinin adresi alınamaz
+' Parameter ': bir şablon parametresinin adresi alınamaz
 
-Lvalue olmadığı sürece bir şablon parametresinin adresi alınamaz. Tür parametrelerine sahip oldukları herhangi bir adres lvalues değildir. Türü olmayan değerleri lvalues olmayan şablon parametre listeleri de bir adresi yok. Şablon parametre olarak geçirilen değer şablon bağımsız değişkeni derleyici tarafından oluşturulan bir kopyasını derleyici hatası C2891 neden bir kod örneğini olmasıdır.
+Bir lvalue olmadığı takdirde şablon parametresinin adresini alamazsınız. Tür parametreleri hiçbir adresi olmadığı için lvalues değildir. Lvalues olmayan şablon parametresi listelerindeki tür olmayan değerler de bir adrese sahip değil. Bu, parametre parametresi olarak geçirilen değer şablon bağımsız değişkeninin derleyicinin ürettiği bir kopyası olduğundan, derleyici hatası C2891 neden olan kodun bir örneğidir.
 
 ```
 template <int i> int* f() { return &i; }
 ```
 
-Lvalues, başvuru türleri gibi bir şablon parametreleri alınan kendi adresi.
+Başvuru türleri gibi lvalues olan şablon parametrelerinin adresleri alınmış olabilir.
 
 ```
 template <int& r> int* f() { return &r; }
 ```
 
-Bu hatayı düzeltmek için bir lvalue olmadığı sürece bir şablon parametresinin adresi almaz.
+Bu hatayı düzeltmek için, bir lvalue olmadığı takdirde şablon parametresinin adresini kullanmayın.

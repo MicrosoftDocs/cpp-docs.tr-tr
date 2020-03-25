@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C4536
 ms.assetid: ab4d0686-f813-4e88-a264-b40d3630ed6c
-ms.openlocfilehash: ac651b7cf6ea3e3f5e7e68d5f6097af78accff77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d3c81282f7299317eef8bd69e340076a3a3fc96
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220959"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198373"
 ---
 # <a name="compiler-warning-level-4-c4536"></a>Derleyici Uyarısı (düzey 4) C4536
 
-'type name': tür adı 'limit' karakter olan meta veri sınırını aşıyor
+' tür adı ': tür adı ' limit ' karakter olan meta veri sınırını aşıyor
 
-Yönetilen bir tür ise bir tür adı meta veriler kesilecektir. Bkz: [C3180](../../error-messages/compiler-errors-2/compiler-error-c3180.md) daha fazla bilgi için.
+Bir tür adı, yönetilen bir tür ise meta verilerde kesilebilir. Daha fazla bilgi için bkz. [C3180](../../error-messages/compiler-errors-2/compiler-error-c3180.md) .
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .

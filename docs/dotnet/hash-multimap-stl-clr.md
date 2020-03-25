@@ -98,26 +98,26 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: cd78687b-8a05-48e0-9d22-8b8194ae3b0b
-ms.openlocfilehash: 2e3cd31ada54d1569cb7e5344ab471108b625558
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 815ec8c51bf4a446d5ff92c443f1086c1b2d0eca
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222968"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208721"
 ---
-# <a name="hashmultimap-stlclr"></a>hash_multimap (STL/CLR)
+# <a name="hash_multimap-stlclr"></a>hash_multimap (STL/CLR)
 
-Şablon sınıfı, iki yönlü erişime sahip öğelerin değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlar. Kapsayıcı kullandığınız `hash_multimap` öğeleri dizisi olarak bir karma tablo yönetmek için iki yönlü bir depolama her bir tablo girişi bağlı düğümleri ve bir öğe depolama her düğüm listesi. Bir öğe dizisi ve için kılma gider bir eşlenen değer sıralama için bir anahtar oluşur.
+Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Bir dizi öğeyi karma tablo olarak yönetmek için kapsayıcı `hash_multimap`, çift yönlü bağlantılı düğümlerin bir listesini depolayan her tablo girişini ve bir öğeyi depolayan her bir düğümü kullanın. Bir öğesi, sırası sıralamak için bir anahtardan ve Ride için bir eşlenen değer içerir.
 
-Aşağıdaki açıklamada `GValue` aynıdır:
+Aşağıdaki açıklamada `GValue` şöyle olur:
 
 `Microsoft::VisualC::StlClr::GenericPair<GKey, GMapped>`
 
 burada:
 
-`GKey` aynı *anahtar* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Key^`
+`GKey`, ikinci değer bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda `Key^`
 
-`GMapped` aynı *eşlenen* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Mapped^`
+`GMapped`, ikincisi bir başvuru türü olmadığı sürece *eşlenir* ile aynıdır, bu durumda `Mapped^`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -138,17 +138,17 @@ template<typename Key,
 
 ### <a name="parameters"></a>Parametreler
 
-*Key*<br/>
-Denetlenen sıradaki öğenin anahtar bileşen türü.
+*Anahtar*<br/>
+Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
-*Eşlenen*<br/>
-Ek bileşen denetlenen sıradaki öğenin türü.
+*Eşlendiği*<br/>
+Denetlenen dizideki bir öğenin ek bileşen türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<cliext/hash_map >
+**Üstbilgi:** \<cliext/hash_map >
 
-**Namespace:** cliext
+**Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
@@ -156,27 +156,27 @@ Ek bileşen denetlenen sıradaki öğenin türü.
 |---------------------|-----------------|
 |[hash_multimap::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[hash_multimap::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
-|[hash_multimap::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenen dizi için bir sabit ters yineleyici türü.|
-|[hash_multimap::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki (büyük olasılıkla işaretli) mesafenin türü.|
-|[hash_multimap::generic_container (STL/CLR)](#generic_container)|Kapsayıcı için genel arabirim türü.|
-|[hash_multimap::generic_iterator (STL/CLR)](#generic_iterator)|Kapsayıcı için genel arabirimi için bir yineleyici türü.|
-|[hash_multimap::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcı için genel arabirimi için ters yineleyici türü.|
-|[hash_multimap::generic_value (STL/CLR)](#generic_value)|Kapsayıcı için genel arabirimi için bir öğe türü.|
-|[hash_multimap::hasher (STL/CLR)](#hasher)|Bir anahtarı karma temsilcisi.|
+|[hash_multimap::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenen sıra için bir sabit ters yineleyicinin türü.|
+|[hash_multimap::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki mesafe (muhtemelen imzalı) türü.|
+|[hash_multimap::generic_container (STL/CLR)](#generic_container)|Kapsayıcının genel arabiriminin türü.|
+|[hash_multimap::generic_iterator (STL/CLR)](#generic_iterator)|Kapsayıcının genel arabirimi için bir yineleyici türü.|
+|[hash_multimap::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcının genel arabirimi için ters yineleyicinin türü.|
+|[hash_multimap::generic_value (STL/CLR)](#generic_value)|Kapsayıcının genel arabirimi için bir öğenin türü.|
+|[hash_multimap::hasher (STL/CLR)](#hasher)|Bir anahtar için karma temsilcisi.|
 |[hash_multimap::iterator (STL/CLR)](#iterator)|Denetlenen dizi için bir yineleyici türü.|
-|[hash_multimap::key_compare (STL/CLR)](#key_compare)|İki anahtar sıralama temsilcisi.|
+|[hash_multimap::key_compare (STL/CLR)](#key_compare)|İki anahtar için sıralama temsilcisi.|
 |[hash_multimap::key_type (STL/CLR)](#key_type)|Bir sıralama anahtarının türü.|
-|[hash_multimap::mapped_type (STL/CLR)](#mapped_type)|Her bir anahtar ile ilişkili bir eşlenen değer türü.|
+|[hash_multimap::mapped_type (STL/CLR)](#mapped_type)|Her anahtarla ilişkili eşlenen değerin türü.|
 |[hash_multimap::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|
-|[hash_multimap::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen dizi için bir ters yineleyici türü.|
-|[hash_multimap::size_type (STL/CLR)](#size_type)|İki öğe arasındaki bir (negatif) mesafenin türü.|
-|[hash_multimap::value_compare (STL/CLR)](#value_compare)|İki öğenin değerlerini sıralama temsilcisi.|
+|[hash_multimap::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen sıra için ters yineleyicinin türü.|
+|[hash_multimap::size_type (STL/CLR)](#size_type)|İki öğe arasındaki (negatif olmayan) bir mesafe türü.|
+|[hash_multimap::value_compare (STL/CLR)](#value_compare)|İki öğe değeri için sıralama temsilcisi.|
 |[hash_multimap::value_type (STL/CLR)](#value_type)|Öğenin türü.|
 
 |Üye İşlevi|Açıklama|
 |---------------------|-----------------|
 |[hash_multimap::begin (STL/CLR)](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[hash_multimap::bucket_count (STL/CLR)](#bucket_count)|Demet sayısını sayar.|
+|[hash_multimap::bucket_count (STL/CLR)](#bucket_count)|Demetlerin sayısını sayar.|
 |[hash_multimap::clear (STL/CLR)](#clear)|Tüm öğeleri kaldırır.|
 |[hash_multimap::count (STL/CLR)](#count)|Belirtilen bir anahtarla eşleşen öğeleri sayar.|
 |[hash_multimap::empty (STL/CLR)](#empty)|Bir öğe olup olmadığını sınar.|
@@ -184,75 +184,75 @@ Ek bileşen denetlenen sıradaki öğenin türü.
 |[hash_multimap::equal_range (STL/CLR)](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|
 |[hash_multimap::erase (STL/CLR)](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
 |[hash_multimap::find (STL/CLR)](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
-|[hash_multimap::hash_delegate (STL/CLR)](#hash_delegate)|Bir anahtarı karma temsilcisi kopyalar.|
+|[hash_multimap::hash_delegate (STL/CLR)](#hash_delegate)|Bir anahtar için karma temsilciyi kopyalar.|
 |[hash_multimap::hash_multimap (STL/CLR)](#hash_multimap)|Bir kapsayıcı nesnesi oluşturur.|
 |[hash_multimap::insert (STL/CLR)](#insert)|Öğeleri ekler.|
-|[hash_multimap::key_comp (STL/CLR)](#key_comp)|İki anahtar sıralama temsilcisi kopyalar.|
+|[hash_multimap::key_comp (STL/CLR)](#key_comp)|Sıralama temsilcisini iki anahtar için kopyalar.|
 |[hash_multimap::load_factor (STL/CLR)](#load_factor)|Demet başına ortalama öğeyi sayar.|
-|[hash_multimap::lower_bound (STL/CLR)](#lower_bound)|Belirtilen bir anahtarla eşleşen aralığı başlangıcını bulur.|
-|[hash_multimap::make_value (STL/CLR)](#make_value)|Değer bir nesne oluşturur.|
+|[hash_multimap::lower_bound (STL/CLR)](#lower_bound)|Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.|
+|[hash_multimap::make_value (STL/CLR)](#make_value)|Değer nesnesi oluşturur.|
 |[hash_multimap::max_load_factor (STL/CLR)](#max_load_factor)|Demet başına en yüksek öğe sayısını alır veya ayarlar.|
-|[hash_multimap::rbegin (STL/CLR)](#rbegin)|Ters çevrilen denetlenen dizinin başlangıç belirler.|
+|[hash_multimap::rbegin (STL/CLR)](#rbegin)|Ters denetlenen sıranın başlangıcını belirtir.|
 |[hash_multimap::rehash (STL/CLR)](#rehash)|Karma tabloyu yeniden oluşturur.|
-|[hash_multimap::rend (STL/CLR)](#rend)|Ters çevrilen denetlenen dizinin sonuna belirler.|
+|[hash_multimap::rend (STL/CLR)](#rend)|Ters denetlenen sıranın sonunu belirtir.|
 |[hash_multimap::size (STL/CLR)](#size)|Öğe sayısını sayar.|
 |[hash_multimap::swap (STL/CLR)](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
-|[hash_multimap::to_array (STL/CLR)](#to_array)|Denetlenen dizideki, yeni bir diziye kopyalar.|
-|[hash_multimap::upper_bound (STL/CLR)](#upper_bound)|Belirtilen bir anahtarla eşleşen aralığı sonu bulur.|
-|[hash_multimap::value_comp (STL/CLR)](#value_comp)|İki öğenin değerlerini sıralama temsilcisi kopyalar.|
+|[hash_multimap::to_array (STL/CLR)](#to_array)|Denetimli sırayı yeni bir diziye kopyalar.|
+|[hash_multimap::upper_bound (STL/CLR)](#upper_bound)|Belirtilen anahtarla eşleşen aralığın sonunu bulur.|
+|[hash_multimap::value_comp (STL/CLR)](#value_comp)|İki öğe değeri için sıralama temsilcisini kopyalar.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|[hash_multimap::operator= (STL/CLR)](#op)|Denetlenen dizi değiştirir.|
+|[hash_multimap::operator= (STL/CLR)](#op)|Denetlenen sırayı değiştirir.|
 
 ## <a name="interfaces"></a>Arabirimler
 
 |Arabirim|Açıklama|
 |---------------|-----------------|
-|<xref:System.ICloneable>|Bir nesne çoğaltın.|
-|<xref:System.Collections.IEnumerable>|Öğeleri dizisi.|
-|<xref:System.Collections.ICollection>|Öğe grubunu koruyun.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Türü belirtilmiş öğelerini dizisi.|
-|<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş bir öğe grubunu koruyun.|
-|IHash\<anahtar, değer >|Genel kapsayıcı korur.|
+|<xref:System.ICloneable>|Bir nesneyi çoğaltın.|
+|<xref:System.Collections.IEnumerable>|Öğeler aracılığıyla sıralama.|
+|<xref:System.Collections.ICollection>|Öğe grubunu saklayın.|
+|<xref:System.Collections.Generic.IEnumerable%601>|Yazılı öğeler aracılığıyla sıralama.|
+|<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş öğelerin grubunu koruyun.|
+|IHash\<anahtarı, değer >|Genel kapsayıcıyı koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne ayırır ve depolama için bağlı bir çift yönlü bir liste içinde tek tek düğümleri olarak diziyi serbest bırakır. Erişim hızlandırmak için nesne de listesinin tümünü alt listelerin, bir dizi etkin şekilde yönetme işaretçileri (karma tablosu), listeye bir değişen uzunluktaki dizisini korur veya demetlerine. Sıralı tutan bir düğüm içeriğini diğerine kopyalama tarafından hiçbir zaman düğümleri arasındaki bağlantıları değiştirerek bir demet öğeleri ekler. Bu, ekleyin ve özgürce rahatsız edici kalan öğeleri olmadan öğeleri kaldırın anlamına gelir.
+Nesnesi, çift yönlü bağlantılı bir listede ayrı düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Bu nesne, erişimi hızlandırmak için aynı zamanda listeye (karma tablo) farklı bir işaretçiler dizisi tutar ve tüm listeyi bir alt liste dizisi veya demetler olarak bir dizi olarak yönetir. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı tutan bir sepete öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesne türünde bir saklı temsilci nesnesi çağırarak denetlediği her bir demete siparişleri [hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md). Hash_set oluştururken saklı temsilci nesnesi belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<=(key_type, key_type)`.
+Nesne, [hash_set:: key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesini çağırarak Denetim yaptığı her sepete sahiptir. Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırma `operator<=(key_type, key_type)`.
 
-Üye işlevini çağırarak depolanan temsilci nesneye erişim [hash_set::key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)`()`. Bu tür bir temsilci nesnesinin anahtarları türünde arasında eşdeğer sıralamaya tanımlamalıdır [hash_set::key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md). Anlamına gelir, için iki anahtar `X` ve `Y`:
+Saklı temsilci nesnesine, [hash_set:: key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)`()`üye işlevini çağırarak erişirsiniz. Bu tür bir temsilci nesnesi [hash_set:: key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)türü anahtarlar arasında denk sıralama tanımlamalıdır. Yani, her iki anahtar için `X` ve `Y`:
 
-`key_comp()(X, Y)` Her çağrıda aynı Boolean sonucu döndürür.
+`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
 
-Varsa `key_comp()(X, Y) && key_comp()(Y, X)` true ise `X` ve `Y` eşdeğer sıralamaya olduğu söylenir.
+`key_comp()(X, Y) && key_comp()(Y, X)` true ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
 
-Gibi davranan bir sıralama kuralı `operator<=(key_type, key_type)`, `operator>=(key_type, key_type)` veya `operator==(key_type, key_type)` eqivalent sıralamasını tanımlar.
+`operator<=(key_type, key_type)`, `operator>=(key_type, key_type)` veya `operator==(key_type, key_type)` gibi davranan herhangi bir sıralama kuralı, eqivalent sıralamasını tanımlar.
 
-Kapsayıcı yalnızca öğeleri anahtarları, eşdeğer sıralamaya sahip (ve hangi karma aynı tam sayı değerine) bir demette bitişik olmasını sağlar, unutmayın. Şablon sınıfının aksine [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md), şablon sınıfın bir nesnesi `hash_multimap` tüm öğeler için anahtarlarının benzersiz olduğundan emin olması gerekmez. (İki veya daha fazla anahtarı eşdeğer sıralamaya sahip olabilir.)
+Kapsayıcının yalnızca, anahtarları eşdeğer sıralama (ve aynı tamsayı değeri ile aynı karma değer) olan öğelerin bir demet içinde bitişik olduğunu garanti edin. Şablon sınıfının [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md)aksine, şablon sınıfının `hash_multimap` bir nesnesi tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
 
-Hangi demet türü depolanan bir temsilci nesnesinin çağırarak belirli bir sıralama anahtarı içermelidir nesneyi belirleyen [hash_set::hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md). Üye işlevini çağırarak depolanan bu nesne erişim [hash_set::hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) `()` anahtar değerine bağlı bir tamsayı değeri elde edilir. Hash_set oluştururken saklı temsilci nesnesi belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, varsayılan işlevi olduğu `System::Object::hash_value(key_type)`. Anlamına gelir, herhangi bir anahtarı `X` ve `Y`:
+Nesnesi, [hash_set:: hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)türünde depolanan bir temsilci nesnesini çağırarak, hangi demetini belirli bir sıralama anahtarı içermesi gerektiğini belirler. Bu saklı nesneye, anahtar değerine bağlı bir tamsayı değer elde etmek için [hash_set:: hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md)`()` üye işlevini çağırarak erişirsiniz. Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan olarak `System::Object::hash_value(key_type)`işlevdir. Yani, `X` ve `Y`her anahtar için:
 
-`hash_delegate()(X)` Her çağrıda aynı tamsayı sonuç döndürür.
+`hash_delegate()(X)` her çağrıda aynı tamsayı sonucunu döndürür.
 
-Varsa `X` ve `Y` eşdeğer, ardından sıralamaya sahip `hash_delegate()(X)` aynı tamsayı sonucu döndürmelidir `hash_delegate()(Y)`.
+`X` ve `Y` denk sıralama içeriyorsa, `hash_delegate()(X)` aynı tamsayı sonucunu `hash_delegate()(Y)`döndürmelidir.
 
-Her öğe ayrı bir anahtar ve eşleşen bir değer içerir. Sıra, arama, ekleme ve kaldırma örneklerinin en iyisi, (sabit zaman)--dizideki öğelerin sayısından bağımsız olan en az bir dizi işlemi ile rastgele bir öğenin izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
+Her öğe ayrı bir anahtar ve eşlenmiş bir değer içerir. Sıra, dizi içindeki öğe sayısından (Sabit saat) bağımsız olan ve en iyi durumda en az sayıda işlem içeren, rastgele bir öğenin arama, ekleme ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Karma değerler aynı şekilde dağıtılmaz, ancak bir karma tablo bozuk. Extreme--her zaman aynı değer döndüren bir karma işlevi için arama, ekleme ve kaldırma orantılı dizideki (doğrusal zaman) öğelerin sayısı. Makul bir karma işlevi, ortalama kova boyutu seçmek kapsayıcı endeavors ve karma tablo boyutu (toplam demet sayısı), ancak bu seçenek bir bölümünü veya tamamını geçersiz kılabilirsiniz. Örneğin, işlevleri görmek [hash_set::max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) ve [hash_set::rehash (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md).
+Karma değerler her ikisi de dağıtılmadığından, karma bir tablo oluşturabilir. Extreme 'de, her zaman aynı değeri döndüren bir karma işlevi için--arama, ekleme ve kaldırma dizideki öğelerin sayısıyla orantılıdır (doğrusal saat). Kapsayıcı endeavors, makul bir karma işlevi, ortalama demet boyutu ve karma tablo boyutu (Toplam demet sayısı) seçmek için, ancak bu seçimlerin herhangi birini veya tümünü geçersiz kılabilirsiniz. Bkz. Örneğin, [hash_set:: max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) ve [hash_set:: REHASH (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md)işlevleri.
 
-Denetlenen dizideki bir öğeyi belirleyen bir yineleyici verilen bitişik öğelere adım anlamına gelir. bir hash_multimap, çift yönlü yineleyiciler destekler. Özel bir baş düğüm tarafından döndürülen yineleyici karşılık gelen [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`. Denetlenen dizi içindeki son öğeden ulaşmak için bu yineleyici varsa azaltma. Baş düğüm ulaşmaya hash_multimap yineleyici artırabilirsiniz ve bu sonra eşittir karşılaştıracağız `end()`. Ancak tarafından döndürülen yineleyici başvurulamıyor `end()`.
+Hash_multimap çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [hash_multimap:: End (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`tarafından döndürülen Yineleyici öğesine karşılık gelir. Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir hash_multimap yineleyicisini artırabilirsiniz ve daha sonra, `end()`eşit olarak karşılaştırırsınız. Ancak `end()`tarafından döndürülen yineleyici başvurusu oluşturamazsınız.
 
-Doğrudan bir rastgele erişim yineleyici gerektiren sayısal konumunu--verilen hash_multimap öğesine başvuramaz unutmayın.
+Bir hash_multimap öğesine, bir rastgele erişim Yineleyici gerektiren sayısal konumuna doğrudan başvurmayacağınızı unutmayın.
 
-Sırayla ilişkilendirilmiş kapsayıcısı için bir tanıtıcı depolar, ilişkili hash_multimap düğümü için bir tanıtıcı hash_multimap yineleyici depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleri ile kullanabilirsiniz. Hash_multimap Yineleyici, onun ilişkili hash_multimap düğümü bazı hash_multimap ile ilişkili olduğu sürece geçerli kalır. Ayrıca, geçerli bir yineleyici yineleyicisine--erişmek veya eşit değildir sürece bu atayan--öğe değeri değiştirmek için kullanabilirsiniz `end()`.
+Hash_multimap Yineleyici, ilişkili kapsayıcısına bir tutamacı depolayan bir tutamacı ilişkili hash_multimap düğümüne depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Hash_multimap Yineleyici, ilişkili hash_multimap düğümü bazı hash_multimap ilişkili olduğu sürece geçerli kalır. Ayrıca, geçerli bir yineleyici bir şekilde başvurulmasını sağlar--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. `end()`eşit olmadığı sürece.
 
-Silme veya bir öğenin kaldırılması için depolanan değerine yıkıcı çağırır. Kapsayıcı yok etme tüm öğelerini siler. Bu nedenle, hiçbir öğe'nin kapsayıcı daha uzun sürmesi başvuru sınıfı, öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı tutamaçlarından yaptığı unutmayın *değil* öğelerini yok edin.
+Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının *öğelerini yok ettiğini* unutmayın.
 
 ## <a name="members"></a>Üyeler
 
-## <a name="begin"></a> hash_multimap::Begin (STL/CLR)
+## <a name="hash_multimapbegin-stlclr"></a><a name="begin"></a>hash_multimap:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -264,7 +264,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen dizinin ya da boş bir dizi bitiminin ötesinde yalnızca ilk öğeyi belirleyen çift yönlü bir yineleyici döndürür. Gösteren bir yineleyici almak için kullandığınız `current` denetlenen dizideki ancak durumu başına denetlenen dizinin uzunluğu değişirse değiştirebilirsiniz.
+Üye işlevi, denetimli sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir çift yönlü yineleyiciyi döndürür. Denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -303,9 +303,9 @@ int main()
 *++begin() = [b 2]
 ```
 
-## <a name="bucket_count"></a> hash_multimap::bucket_count (STL/CLR)
+## <a name="hash_multimapbucket_count-stlclr"></a><a name="bucket_count"></a>hash_multimap:: bucket_count (STL/CLR)
 
-Demet sayısını sayar.
+Demetlerin sayısını sayar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -315,7 +315,7 @@ int bucket_count();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, geçerli demet sayısını döndürür. Karma tablo boyutunu belirlemek için kullanın.
+Üye işlevleri, geçerli demet sayısını döndürür. Karma tablonun boyutunu öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -377,7 +377,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="clear"></a> hash_multimap::Clear (STL/CLR)
+## <a name="hash_multimapclear-stlclr"></a><a name="clear"></a>hash_multimap:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -389,7 +389,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi etkili bir şekilde çağıran [hash_multimap::erase (STL/CLR)](../dotnet/hash-multimap-erase-stl-clr.md) `(` [hash_multimap::begin (STL/CLR)](../dotnet/hash-multimap-begin-stl-clr.md) `(),` [hash_multimap::end (STL/CLR) ](../dotnet/hash-multimap-end-stl-clr.md)`())`. Denetlenen dizi boş olduğundan emin olmak için kullanın.
+Üye işlevi etkin bir şekilde [hash_multimap:: Erase](../dotnet/hash-multimap-erase-stl-clr.md) (stl/clr)`(` [hash_multimap:: BEGIN (STL/](../dotnet/hash-multimap-begin-stl-clr.md) clr)`(),` [HASH_MULTIMAP:: End (STL/CLR](../dotnet/hash-multimap-end-stl-clr.md) )`())`çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -435,7 +435,7 @@ size() = 0
 size() = 0
 ```
 
-## <a name="const_iterator"></a> hash_multimap::const_iterator (STL/CLR)
+## <a name="hash_multimapconst_iterator-stlclr"></a><a name="const_iterator"></a>hash_multimap:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -447,7 +447,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilinmeyen türde bir nesne tanımlayan bir tür `T2` denetlenen dizi için sabit bir çift yönlü bir yineleyici olarak verebilir.
+Türü, denetlenen dizi için bir sabit çift yönlü Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T2`.
 
 ### <a name="example"></a>Örnek
 
@@ -477,7 +477,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="const_reference"></a> hash_multimap::const_reference (STL/CLR)
+## <a name="hash_multimapconst_reference-stlclr"></a><a name="const_reference"></a>hash_multimap:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -489,7 +489,7 @@ typedef value_type% const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe için sabit bir başvuru türü açıklar.
+Türü bir öğeye sabit bir başvuru tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -522,9 +522,9 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="const_reverse_iterator"></a> hash_multimap::const_reverse_iterator (STL/CLR)
+## <a name="hash_multimapconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>hash_multimap:: const_reverse_iterator (STL/CLR)
 
-Denetlenen dizi için bir sabit ters yineleyici türü...
+Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -534,7 +534,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilinmeyen türde bir nesne tanımlayan bir tür `T4` denetlenen dizi için bir sabit ters yineleyici olarak verebilir.
+Türü, denetimli sıra için sabit bir ters Yineleyici olarak kullanılabilecek belirtilmemiş türde `T4` bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -564,7 +564,7 @@ int main()
 [c 3] [b 2] [a 1]
 ```
 
-## <a name="count"></a> hash_multimap::Count (STL/CLR)
+## <a name="hash_multimapcount-stlclr"></a><a name="count"></a>hash_multimap:: Count (STL/CLR)
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -577,11 +577,11 @@ size_type count(key_type key);
 #### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Aranacak anahtar değeri.
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi ile eşdeğer sıralamaya sahip denetlenen dizideki öğelerin sayısını döndürür. *anahtar*. Belirtilen bir anahtarla eşleşen şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın.
+Member işlevi, *anahtar*ile eşdeğer sıralamaya sahip olan denetimli dizideki öğe sayısını döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan öğe sayısını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -617,9 +617,9 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="difference_type"></a> hash_multimap::difference_type (STL/CLR)
+## <a name="hash_multimapdifference_type-stlclr"></a><a name="difference_type"></a>hash_multimap::d ifference_type (STL/CLR)
 
-İki öğe arasındaki işaretli mesafenin türü.
+İki öğe arasındaki işaretli bir mesafe türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -629,7 +629,7 @@ typedef int difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Büyük olasılıkla negatif öğe sayısını tanımlayan bir tür.
+Tür, büyük olasılıkla negatif bir öğe sayısını tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -672,7 +672,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="empty"></a> hash_multimap::Empty (STL/CLR)
+## <a name="hash_multimapempty-stlclr"></a><a name="empty"></a>hash_multimap:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -684,7 +684,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenmiş dizi için true değerini döndürür. Eşdeğerdir [hash_multimap::size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md)`() == 0`. Hash_multimap boş olup olmadığını sınamak için kullanın.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Hash_multimap:: size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md)`() == 0`eşdeğerdir. Hash_multimap boş olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -724,7 +724,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="end"></a> hash_multimap::End (STL/CLR)
+## <a name="hash_multimapend-stlclr"></a><a name="end"></a>hash_multimap:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -736,7 +736,7 @@ iterator end();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen dizinin sonuna hemen ötesine işaret eden çift yönlü bir yineleyici döndürür. Denetlenen dizinin sonuna belirten bir yineleyici almak için kullanın. kendi durum eklenmemişse denetlenen dizinin uzunluğu değişirse değiştiremezsiniz.
+Üye işlevi, denetimli dizinin sonunun hemen ötesinde işaret eden çift yönlü bir yineleyici döndürür. Denetlenen dizinin sonunu atayan bir yineleyici elde etmek için bunu kullanırsınız; denetlenen sıranın uzunluğu değişirse, durumu değişmez.
 
 ### <a name="example"></a>Örnek
 
@@ -777,7 +777,7 @@ int main()
 *--end() = [c 3]
 ```
 
-## <a name="equal_range"></a> hash_multimap::equal_range (STL/CLR)
+## <a name="hash_multimapequal_range-stlclr"></a><a name="equal_range"></a>hash_multimap:: equal_range (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
@@ -790,11 +790,11 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 #### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Aranacak anahtar değeri.
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi Yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [hash_multimap::lower_bound (STL/CLR)](../dotnet/hash-multimap-lower-bound-stl-clr.md) `(key),` [hash_multimap::upper_bound (STL/CLR)](../dotnet/hash-multimap-upper-bound-stl-clr.md)`(key))`. Belirtilen bir anahtarla eşleşen öğeleri şu anda denetlenen dizideki aralığı belirlemek için kullanın.
+Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [hash_multimap:: lower_bound (STL/CLR)](../dotnet/hash-multimap-lower-bound-stl-clr.md)`(key),` [hash_multimap:: upper_bound (STL/CLR)](../dotnet/hash-multimap-upper-bound-stl-clr.md)`(key))`. Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -838,7 +838,7 @@ equal_range(L'x') empty = True
 [b 2]
 ```
 
-## <a name="erase"></a> hash_multimap::ERASE (STL/CLR)
+## <a name="hash_multimaperase-stlclr"></a><a name="erase"></a>hash_multimap:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
@@ -852,27 +852,27 @@ bool erase(key_type key)
 
 #### <a name="parameters"></a>Parametreler
 
-*ilk*<br/>
-Silme aralığını başlangıcı.
+*adı*<br/>
+Silinecek aralığın başlangıcı.
 
 *anahtar*<br/>
 Silinecek anahtar değer.
 
-*Son*<br/>
-Silinecek aralığı sonu.
+*soyadına*<br/>
+Silinecek aralığın sonu.
 
-*Burada*<br/>
+*olmadığı*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi tarafından denetlenen dizinin öğeyi kaldırır *burada*ve kaldırıldı, öğenin dışında kalan ilk öğeyi belirleyen bir yineleyici döndürür veya [hash_multimap::end () STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md) `()` böyle bir öğe varsa. Tek bir öğe kaldırmak için kullanın.
+İlk üye *işlevi, öğesinin*işaret ettiği denetimli sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_multimap:: End (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
-İkinci üye işlevi öğeleri denetlenen dizinin aralıktaki kaldırır. [`first`, `last`) ve kaldırılan tüm öğelerin ötesindeki ilk öğeyi belirleyen bir yineleyici döndürür veya `end()` böyle bir öğe varsa var... Sıfır veya daha fazla ardışık öğeleri kaldırmak için kullanın.
+İkinci üye işlevi, [`first`, `last`) aralığındaki denetimli sıranın öğelerini kaldırır ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa `end()`. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
-Üçüncü üye işlevi olan anahtara sahip eşdeğer sıralamaya denetlenen dizideki herhangi bir öğe kaldırır için *anahtarı*ve kaldırılan öğelerin sayısını döndürür. Kaldırın ve belirtilen bir anahtarla eşleşen tüm öğeleri saymak için kullanın.
+Üçüncü üye işlevi, anahtarı *anahtara*denk sıralama değerine sahip denetimli dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Bu anahtarı, belirtilen bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
 
-Her öğe silinme için öğelerin sayısını logaritmasını orantılı zaman denetlenen dizide alır.
+Her bir öğe, denetlenen dizideki öğelerin sayısının logaritması ile orantılı bir zaman alır.
 
 ### <a name="example"></a>Örnek
 
@@ -931,7 +931,7 @@ erase(L'x') = 0
 erase(L'e') = 1
 ```
 
-## <a name="find"></a> hash_multimap::Find (STL/CLR)
+## <a name="hash_multimapfind-stlclr"></a><a name="find"></a>hash_multimap:: Find (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -944,11 +944,11 @@ iterator find(key_type key);
 #### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Aranacak anahtar değeri.
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizideki en az bir öğe ile eşdeğer sıralamaya sahipse *anahtarı*, üye işlevi biri bu öğeleri gösteren bir yineleyici döndürür; Aksi halde döndürür [hash_multimap::end (STL/CLR) ](../dotnet/hash-multimap-end-stl-clr.md)`()`. Bir öğe şu anda belirtilen bir anahtarla eşleşen denetlenen dizide bulmak için kullanın.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_multimap:: End (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -990,9 +990,9 @@ find b = [b 2]
 find C = False
 ```
 
-## <a name="generic_container"></a> hash_multimap::generic_container (STL/CLR)
+## <a name="hash_multimapgeneric_container-stlclr"></a><a name="generic_container"></a>hash_multimap:: generic_container (STL/CLR)
 
-Kapsayıcı için genel arabirim türü.
+Kapsayıcının genel arabiriminin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1004,7 +1004,7 @@ typedef Microsoft::VisualC::StlClr::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon kapsayıcı sınıfı için genel arabirim tanımlayan bir tür.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirimi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1054,9 +1054,9 @@ int main()
 [a 1] [b 2] [c 3] [d 4] [e 5]
 ```
 
-## <a name="generic_iterator"></a> hash_multimap::generic_iterator (STL/CLR)
+## <a name="hash_multimapgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>hash_multimap:: generic_iterator (STL/CLR)
 
-Kapsayıcı için genel arabirimi ile kullanmak için bir yineleyici türü.
+Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1068,7 +1068,7 @@ typedef Microsoft::VisualC::StlClr::Generic::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genel arabirim ile bu şablon kapsayıcı sınıfı için kullanılabilecek genel bir yineleyici türü açıklar.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirim ile kullanılabilen genel bir yineleyiciyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1111,9 +1111,9 @@ int main()
 [a 1]
 ```
 
-## <a name="generic_reverse_iterator"></a> hash_multimap::generic_reverse_iterator (STL/CLR)
+## <a name="hash_multimapgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>hash_multimap:: generic_reverse_iterator (STL/CLR)
 
-Kapsayıcı için genel arabirimi ile kullanmak için bir ters yineleyici türü.
+Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1125,7 +1125,7 @@ typedef Microsoft::VisualC::StlClr::Generic::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genel arabirim ile bu şablon kapsayıcı sınıfı için kullanılabilecek genel bir ters yineleyici türü açıklar.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılabilecek bir genel ters yineleyici tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1167,9 +1167,9 @@ int main()
 [c 3]
 ```
 
-## <a name="generic_value"></a> hash_multimap::generic_value (STL/CLR)
+## <a name="hash_multimapgeneric_value-stlclr"></a><a name="generic_value"></a>hash_multimap:: generic_value (STL/CLR)
 
-Kapsayıcı için genel arabirimi ile kullanmak için bir öğe türü.
+Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1179,7 +1179,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türünde bir nesneyi tanımlayan bir tür `GValue` açıklayan yönelik genel arabirimi için bu şablonu kapsayıcı sınıfı ile kullanmak için depolanan öğenin değeri.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1221,7 +1221,7 @@ int main()
 [a 1]
 ```
 
-## <a name="hash_delegate"></a> hash_multimap::hash_delegate (STL/CLR)
+## <a name="hash_multimaphash_delegate-stlclr"></a><a name="hash_delegate"></a>hash_multimap:: hash_delegate (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -1233,7 +1233,7 @@ hasher^ hash_delegate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bir anahtar değeri bir tamsayıya dönüştürmek için kullanılan temsilci döndürür. Bir anahtar karması için kullanın.
+Üye işlevi bir anahtar değerini bir tamsayıya dönüştürmek için kullanılan temsilciyi döndürür. Bir anahtarı karma hale almak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1259,7 +1259,7 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="hash_multimap"></a> hash_multimap::hash_multimap (STL/CLR)
+## <a name="hash_multimaphash_multimap-stlclr"></a><a name="hash_multimap"></a>hash_multimap:: hash_multimap (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -1288,20 +1288,20 @@ hash_multimap(System::Collections::Generic::IEnumerable<GValue>^ right,
 
 #### <a name="parameters"></a>Parametreler
 
-*ilk*<br/>
-Eklenecek Aralık başlangıcı.
+*adı*<br/>
+Eklenecek aralığın başlangıcı.
 
-*hashfn*<br/>
-İşlev eşleme anahtarlarını demet için karma.
+*diyez FN*<br/>
+Anahtarları demetlere eşlemek için karma işlev.
 
-*Son*<br/>
-Eklenecek aralık sonu.
+*soyadına*<br/>
+Eklenecek aralığın sonu.
 
-*Pred*<br/>
-Denetlenen dizi için koşul sıralaması.
+*pred*<br/>
+Denetlenen sıra için sıralama koşulu.
 
-*sağ*<br/>
-Nesne veya eklenecek aralık.
+*Right*<br/>
+Eklenecek nesne veya Aralık.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1309,67 +1309,67 @@ Oluşturucu:
 
 `hash_multimap();`
 
-Varsayılan karşılaştırma sıralama ile denetlenen dizideki herhangi bir öğesi ile başlatır `key_compare()`ve varsayılan karma işlevi ile. Varsayılan sıralama koşulu ve karma işlevi ile bir boş ilk denetlenen sıra belirtmek için kullanın.
+denetlenen sırayı, varsayılan sıralama koşulu `key_compare()`ve varsayılan karma işlevi ile hiçbir öğe olmadan başlatır. Varsayılan sıralama koşulu ve karma işlevi ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `explicit hash_multimap(key_compare^ pred);`
 
-Denetlenen dizi sıralama koşul ile hiçbir öğe ile başlatır *pred*ve varsayılan karma işlevi ile. Belirtilen sıralama önerme ve varsayılan karma işlevi ile bir boş ilk denetlenen sıra belirtmek için kullanın.
+denetlenen sırayı, sıralama koşulu *Pred*ve varsayılan karma işlevi ile hiçbir öğe olmadan başlatır. Bu işlemi, belirtilen sıralama koşulu ve varsayılan karma işlevi ile birlikte boş bir ilk denetimli sıra belirtmek için kullanırsınız.
 
 Oluşturucu:
 
 `hash_multimap(key_compare^ pred, hasher^ hashfn);`
 
-Denetlenen dizi sıralama koşul ile hiçbir öğe ile başlatır *pred*ve karma işlevi ile *hashfn*. Belirtilen sıralama koşulu ve karma işlevi ile bir boş ilk denetlenen sıra belirtmek için kullanın.
+denetlenen sırayı, sıralama koşulu *Pred*ile ve *hashfn*karma işlevi ile birlikte hiçbir öğe olmadan başlatır. Belirtilen sıralama koşulu ve karma işleviyle birlikte boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `hash_multimap(hash_multimap<Key, Mapped>% right);`
 
-Denetlenen dizi sırası başlatır [`right.begin()`, `right.end()`), koşul sıralama varsayılan ve varsayılan karma işlevi ile. Hash_multimap nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*, karma işlevi ve varsayılan sıralama koşul.
+denetlenen sırayı, varsayılan sıralama koşulu ile ve varsayılan karma işlevi ile [`right.begin()`, `right.end()`) sırasıyla başlatır. Bu, varsayılan sıralama koşulu ve karma işlevi ile *hash_multimap nesnesi tarafından*denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için kullanılır.
 
 Oluşturucu:
 
 `hash_multimap(hash_multimap<Key, Mapped>^ right);`
 
-Denetlenen dizi sırası başlatır [`right->begin()`, `right->end()`), koşul sıralama varsayılan ve varsayılan karma işlevi ile. Hash_multimap nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*, karma işlevi ve varsayılan sıralama koşul.
+denetlenen sırayı, varsayılan sıralama koşulu ile ve varsayılan karma işlevi ile [`right->begin()`, `right->end()`) sırasıyla başlatır. Bu, varsayılan sıralama koşulu ve karma işlevi ile *hash_multimap nesnesi tarafından*denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için kullanılır.
 
 Oluşturucu:
 
 `template<typename InIter> hash_multimap(InIter first, InIter last);`
 
-Denetlenen dizi sırası başlatır [`first`, `last`), koşul sıralama varsayılan ve varsayılan karma işlevi ile. Denetlenen dizi başka bir dizinin bir kopyasını varsayılan karşılaştırma ve karma işlevi sıralama yapmak için kullanın.
+denetlenen sırayı, varsayılan sıralama koşulu ile ve varsayılan karma işlevi ile [`first`, `last`) sırasıyla başlatır. Varsayılan sıralama koşulu ve karma işlevi ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
 `template<typename InIter> hash_multimap(InIter first, InIter last, key_compare^ pred);`
 
-Denetlenen dizi sırası başlatır [`first`, `last`), sıralama koşul ile *pred*ve varsayılan karma işlevi ile. Denetlenen dizi belirtilen sıralama önerme ve varsayılan karma işlevi ile başka bir sıralı bir kopyasını kullanın.
+[`first`, `last`) sırası ile denetimli sırayı, sıralama koşulu *Pred*ve varsayılan karma işlevi ile başlatır. Bu işlemi, denetimli diziyi, belirtilen sıralama koşulu ve varsayılan karma işlevi ile başka bir dizinin bir kopyası yapmak için kullanırsınız.
 
 Oluşturucu:
 
 `template<typename InIter> hash_multimap(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`
 
-Denetlenen dizi sırası başlatır [`first`, `last`), sıralama koşul ile *pred*ve karma işlevi ile *hashfn*. Denetlenen dizi belirtilen sıralama koşulu ve karma işlevi ile başka bir sıralı bir kopyasını kullanın.
+[`first`, `last`) sırası ile denetimli sırayı, sıralama koşulu *Pred*ve *diyez*= karma işlevi ile başlatır. Belirtilen sıralama koşulu ve karma işlevi ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
 `hash_multimap(System::Collections::Generic::IEnumerable<Key>^ right);`
 
-Denetlenen dizi numaralandırıcı tarafından belirtilen sıra başlatır *doğru*, koşul sıralama varsayılan ve varsayılan karma işlevi ile. Denetlenen dizi başka bir sıralı karşılaştırma ve karma işlevi sıralama varsayılan bir numaralandırıcı tarafından açıklanan bir kopyasını kullanın.
+denetlenen sırayı, varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte Numaralandırıcı *hakkı*tarafından belirlenen sırayla başlatır. Denetim, varsayılan sıralama koşulu ve karma işlevi ile, bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
 
 Oluşturucu:
 
 `hash_multimap(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`
 
-Denetlenen dizi numaralandırıcı tarafından belirtilen sıra başlatır *doğru*, sıralama koşul ile *pred*ve varsayılan karma işlevi ile. Denetlenen dizi, başka bir dizisi tarafından belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir numaralandırıcı açıklanan kopyasını kullanın.
+denetlenen diziyi, Numaralandırıcı *hakkı*ile, sıralama koşulu *Pred*ve varsayılan karma işlevi ile belirlenen sırayla başlatır. Denetim, belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
 
 Oluşturucu:
 
 `hash_multimap(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`
 
-Denetlenen dizi numaralandırıcı tarafından belirtilen sıra başlatır *doğru*, sıralama koşul ile *pred*ve karma işlevi ile *hashfn*. Denetlenen dizi, başka bir dizisi tarafından belirtilen sıralama koşulu ve karma işlevi ile bir numaralandırıcı açıklanan kopyasını kullanın.
+denetlenen diziyi, Numaralandırıcı *hakkı*ile, sıralama koşulu *Pred*ve *diyez FN*karma işlevi ile belirlenen sırayla başlatır. Denetim, belirtilen sıralama koşulu ve karma işlevi ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1502,9 +1502,9 @@ size() = 0
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="hasher"></a> hash_multimap::hasher (STL/CLR)
+## <a name="hash_multimaphasher-stlclr"></a><a name="hasher"></a>hash_multimap:: hasher (STL/CLR)
 
-Bir anahtarı karma temsilcisi.
+Bir anahtar için karma temsilcisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1515,7 +1515,7 @@ Microsoft::VisualC::StlClr::UnaryDelegate<GKey, int>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir anahtar değeri bir tamsayıya dönüştürür bir temsilci türü açıklar.
+Türü bir anahtar değerini bir tamsayıya dönüştüren bir temsilciyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1541,7 +1541,7 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="insert"></a> hash_multimap::insert (STL/CLR)
+## <a name="hash_multimapinsert-stlclr"></a><a name="insert"></a>hash_multimap:: Insert (STL/CLR)
 
 Öğeleri ekler.
 
@@ -1557,34 +1557,34 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*ilk*<br/>
-Eklenecek Aralık başlangıcı.
+*adı*<br/>
+Eklenecek aralığın başlangıcı.
 
-*Son*<br/>
-Eklenecek aralık sonu.
+*soyadına*<br/>
+Eklenecek aralığın sonu.
 
-*sağ*<br/>
-Eklemek için sabit listesi.
+*Right*<br/>
+Eklenecek sabit listesi.
 
-*VAL*<br/>
-Eklenecek anahtar değeri.
+*Acil*<br/>
+Eklenecek anahtar değer.
 
-*Burada*<br/>
-WHERE (yalnızca ipucu) eklemek için kapsayıcı.
+*olmadığı*<br/>
+Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevlerin her biri, diğer işlenen tarafından belirtilen bir dizisi ekler.
+Üye işlevlerinin her biri, kalan işlenenler tarafından belirtilen bir sıra ekler.
 
-İlk üye işlevi değere sahip bir öğe ekler *val*ve yeni eklenen öğeyi belirleyen bir yineleyici döndürür. Tek bir öğe eklemek için kullanın.
+İlk üye işlevi *, value değeri*olan bir öğe ekler ve yeni eklenen öğeyi atayan bir yineleyici döndürür. Tek bir öğe eklemek için bunu kullanırsınız.
 
-İkinci üye işlevi değere sahip bir öğe ekler *val*kullanarak *burada* (performansını artırmak için) bir ipucu olarak ve yeni eklenen öğeyi belirleyen bir yineleyici döndürür. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için kullanın.
+İkinci üye işlevi, bir ipucu olarak *WHERE* (performansı artırmak için) ve yeni eklenen öğeyi atayan bir yineleyici döndüren bir *değer değeri olan*bir öğe ekler. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için bunu kullanırsınız.
 
-Üçüncü üye işlevi ekler dizisi [`first`, `last`). Başka bir diziden kopyalanan sıfır veya daha fazla öğe eklemek için kullanın.
+Üçüncü üye işlevi [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
 
-Dördüncü üye işlevi tarafından belirlenen dizisi ekler *doğru*. Bir numaralandırıcı tarafından açıklanan bir dizi eklemek için kullanın.
+Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
-Her öğe ekleme, denetlenen dizide öğe sayısı için logaritmasını orantılı zaman alır. Ekleme, ekleme noktasını bitişik bir öğeyi belirleyen bir ipucu verilen amorti edilmiş sabit sürede bir ancak ortaya çıkabilir.
+Her öğe ekleme, denetlenen dizideki öğelerin sayısının logaritması ile orantılı bir zaman alır. Ekleme noktası, ekleme noktasına bitişik bir öğe atayan bir ipucu verildiğinde, sabit zamanlı olarak ekleme yapılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1659,7 +1659,7 @@ insert(begin(), [L'y' 25]) = [y 25]
 [a 1] [b 2] [b 2] [c 3] [x 24] [y 25]
 ```
 
-## <a name="iterator"></a> hash_multimap::iterator (STL/CLR)
+## <a name="hash_multimapiterator-stlclr"></a><a name="iterator"></a>hash_multimap:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1671,7 +1671,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilinmeyen türde bir nesne tanımlayan bir tür `T1` denetlenen dizi için çift yönlü bir yineleyici olarak verebilir.
+Türü, denetimli sıra için çift yönlü bir yineleyici olarak kullanılabilecek belirtilmemiş türde `T1` bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1701,9 +1701,9 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="key_comp"></a> hash_multimap::key_comp (STL/CLR)
+## <a name="hash_multimapkey_comp-stlclr"></a><a name="key_comp"></a>hash_multimap:: key_comp (STL/CLR)
 
-İki anahtar sıralama temsilcisi kopyalar.
+Sıralama temsilcisini iki anahtar için kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1713,7 +1713,7 @@ key_compare^key_comp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen diziyi sıralamak için kullanılan sıralama temsilci döndürür. İki anahtar karşılaştırmak için kullanın.
+Üye işlevi, denetimli sırayı sıralamak için kullanılan sıralama temsilcisini döndürür. İki anahtarı karşılaştırmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1760,9 +1760,9 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="key_compare"></a> hash_multimap::key_compare (STL/CLR)
+## <a name="hash_multimapkey_compare-stlclr"></a><a name="key_compare"></a>hash_multimap:: key_compare (STL/CLR)
 
-İki anahtar sıralama temsilcisi.
+İki anahtar için sıralama temsilcisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1773,7 +1773,7 @@ Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, sıralama anahtarı, bağımsız değişkenleri belirler temsilci eşanlamlıdır.
+Tür, anahtar bağımsız değişkenlerinin sıralamasını belirleyen temsilcinin eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1820,7 +1820,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="key_type"></a> hash_multimap::key_type (STL/CLR)
+## <a name="hash_multimapkey_type-stlclr"></a><a name="key_type"></a>hash_multimap:: key_type (STL/CLR)
 
 Bir sıralama anahtarının türü.
 
@@ -1832,7 +1832,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür *anahtar*.
+Tür, şablon parametre *anahtarı*için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1865,7 +1865,7 @@ int main()
 a b c
 ```
 
-## <a name="load_factor"></a> hash_multimap::load_factor (STL/CLR)
+## <a name="hash_multimapload_factor-stlclr"></a><a name="load_factor"></a>hash_multimap:: load_factor (STL/CLR)
 
 Demet başına ortalama öğeyi sayar.
 
@@ -1877,7 +1877,7 @@ float load_factor();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü `(float)` [hash_multimap::size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md) `() /` [hash_multimap::bucket_count (STL/CLR)](../dotnet/hash-multimap-bucket-count-stl-clr.md)`()`. Ortalama demet boyutunu belirlemek için kullanın.
+Üye işlevi `(float)`[hash_multimap:: size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md)`() /` [hash_multimap:: bucket_count (STL/CLR)](../dotnet/hash-multimap-bucket-count-stl-clr.md)`()`döndürür. Bu, ortalama demet boyutunu bulmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1939,9 +1939,9 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="lower_bound"></a> hash_multimap::lower_bound (STL/CLR)
+## <a name="hash_multimaplower_bound-stlclr"></a><a name="lower_bound"></a>hash_multimap:: lower_bound (STL/CLR)
 
-Belirtilen bir anahtarla eşleşen aralığı başlangıcını bulur.
+Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1952,11 +1952,11 @@ iterator lower_bound(key_type key);
 #### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Aranacak anahtar değeri.
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi ilk öğeyi belirleyen `X` aynı Demetin karıştırır denetlenen dizideki *anahtarı* ve için eşdeğer sıralamaya sahip *anahtar*. Böyle bir öğe var olup olmadığını döndürür [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`; Aksi halde gösteren bir yineleyici döndürür `X`. Bir dizi öğe başına şu anda belirtilen bir anahtarla eşleşen denetlenen dizide bulmak için kullanın.
+Üye işlevi, *anahtar* ile aynı demetini karma hale uygulayan denetimli dizideki ilk öğeyi `X` belirler ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa, [hash_multimap:: End (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`; döndürür Aksi takdirde, `X`atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1998,9 +1998,9 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = [b 2]
 ```
 
-## <a name="make_value"></a> hash_multimap::make_value (STL/CLR)
+## <a name="hash_multimapmake_value-stlclr"></a><a name="make_value"></a>hash_multimap:: make_value (STL/CLR)
 
-Değer bir nesne oluşturur.
+Değer nesnesi oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2011,14 +2011,14 @@ static value_type make_value(key_type key, mapped_type mapped);
 #### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Kullanılacak anahtar değeri.
+Kullanılacak anahtar değer.
 
-*Eşlenen*<br/>
+*eşlendiği*<br/>
 Aranacak eşlenen değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür bir `value_type` nesne anahtarı *anahtarı* ve eşlenen değeri *eşlenen*. Çeşitli üye işlevleri ile kullanım için uygun bir nesne oluşturmak için kullanın.
+Üye işlevi, anahtarı *anahtar* olan ve eşlenmiş değeri *eşlenmiş*bir `value_type` nesnesi döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2047,7 +2047,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapped_type"></a> hash_multimap::mapped_type (STL/CLR)
+## <a name="hash_multimapmapped_type-stlclr"></a><a name="mapped_type"></a>hash_multimap:: mapped_type (STL/CLR)
 
 Her bir anahtar ile ilişkili bir eşlenen değer türü.
 
@@ -2059,7 +2059,7 @@ typedef Mapped mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür *eşlenen*.
+Tür, *eşlenen*şablon parametresinin bir eş anlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2092,7 +2092,7 @@ int main()
 1 2 3
 ```
 
-## <a name="max_load_factor"></a> hash_multimap::max_load_factor (STL/CLR)
+## <a name="hash_multimapmax_load_factor-stlclr"></a><a name="max_load_factor"></a>hash_multimap:: max_load_factor (STL/CLR)
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
@@ -2106,13 +2106,13 @@ void max_load_factor(float new_factor);
 #### <a name="parameters"></a>Parametreler
 
 *new_factor*<br/>
-Yeni en büyük faktör depolamak için yükleyin.
+Depolanacak yeni en fazla yük faktörü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, geçerli depolanan en yüksek yük faktörünün döndürür. En yüksek ortalama demet boyutunu belirlemek için kullanın.
+İlk üye işlevi, geçerli saklı maksimum yük faktörünü döndürür. En büyük ortalama demet boyutunu bulmak için bunu kullanırsınız.
 
-İkinci üye işlevi ile mağaza en yüksek yük faktörünün değiştirir *new_factor*. Hiçbir otomatik rehashing kadar bir sonraki INSERT gerçekleşir.
+İkinci üye işlevi, mağaza en fazla yük faktörünü *new_factor*ile değiştirir. Sonraki bir ekleme yapılıncaya kadar otomatik yeniden karma gerçekleşmez.
 
 ### <a name="example"></a>Örnek
 
@@ -2174,9 +2174,9 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="op"></a> hash_multimap::operator (STL/CLR) =
+## <a name="hash_multimapoperator-stlclr"></a><a name="op"></a>hash_multimap:: operator = (STL/CLR)
 
-Denetlenen dizi değiştirir.
+Denetlenen sırayı değiştirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2186,12 +2186,12 @@ hash_multimap<Key, Mapped>% operator=(hash_multimap<Key, Mapped>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*Right*<br/>
 Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci kopyaları *doğru* ardından nesneye döndürür `*this`. Denetlenen dizi denetlenen dizide bir kopyasını değiştirmek için kullandığınız *doğru*.
+Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -2229,9 +2229,9 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="rbegin"></a> hash_multimap::rbegin (STL/CLR)
+## <a name="hash_multimaprbegin-stlclr"></a><a name="rbegin"></a>hash_multimap:: rbegin (STL/CLR)
 
-Ters çevrilen denetlenen dizinin başlangıç belirler.
+Ters denetlenen sıranın başlangıcını belirtir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2241,7 +2241,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen dizinin ya da boş bir dizi başlangıcı hemen ötesinde son öğeyi belirleyen bir ters yineleyici döndürür. Bu nedenle, atayan `beginning` ters dizisi. Gösteren bir yineleyici almak için kullandığınız `current` denetlenen dizinin uzunluğu değişirse başlangıcına ters sırada görülen denetlenen dizideki ancak durumunu değiştirebilirsiniz.
+Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2280,7 +2280,7 @@ int main()
 *++rbegin() = [b 2]
 ```
 
-## <a name="reference"></a> hash_multimap::Reference (STL/CLR)
+## <a name="hash_multimapreference-stlclr"></a><a name="reference"></a>hash_multimap:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -2292,7 +2292,7 @@ typedef value_type% reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğeye bir başvuru türü açıklar.
+Türü bir öğesi başvurusunu tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2325,7 +2325,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="rehash"></a> hash_multimap::rehash (STL/CLR)
+## <a name="hash_multimaprehash-stlclr"></a><a name="rehash"></a>hash_multimap:: rehash (STL/CLR)
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2337,7 +2337,7 @@ void rehash();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi sağlanarak, bir karma tabloyu yeniden oluşturur [hash_multimap::load_factor (STL/CLR)](../dotnet/hash-multimap-load-factor-stl-clr.md) `() <=` [hash_multimap::max_load_factor (STL/CLR)](../dotnet/hash-multimap-max-load-factor-stl-clr.md). Aksi takdirde, karma tablo yalnızca bir ekleme sonra gerektiği şekilde boyutu artar. (Hiçbir zaman otomatik olarak boyutundaki azalır.) Karma tablo boyutunu ayarlamak için kullanın.
+Üye işlevi karma tabloyu yeniden oluşturur; [hash_multimap:: load_factor (STL/CLR)](../dotnet/hash-multimap-load-factor-stl-clr.md)`() <=` [hash_multimap:: max_load_factor (STL/CLR)](../dotnet/hash-multimap-max-load-factor-stl-clr.md). Aksi takdirde, karma tablo, bir ekleme işleminden sonra gerektiğinde yalnızca boyut artar. (Boyut olarak hiçbir şekilde azalmayın.) Karma tablonun boyutunu ayarlamak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2399,9 +2399,9 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="rend"></a> hash_multimap::rend (STL/CLR)
+## <a name="hash_multimaprend-stlclr"></a><a name="rend"></a>hash_multimap:: rend (STL/CLR)
 
-Ters çevrilen denetlenen dizinin sonuna belirler.
+Ters denetlenen sıranın sonunu belirtir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2411,7 +2411,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi hemen ötesine işaret eden bir başlangıç değerinin denetlenen dizideki ters yineleyici döndürür. Bu nedenle, atayan `end` ters dizisi. Gösteren bir yineleyici almak için kullandığınız `current` denetlenen dizinin uzunluğu değişirse sonuna ters sırada görülen denetlenen dizideki ancak durumunu değiştirebilirsiniz.
+Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2452,9 +2452,9 @@ int main()
 *--rend() = [a 1]
 ```
 
-## <a name="reverse_iterator"></a> hash_multimap::reverse_iterator (STL/CLR)
+## <a name="hash_multimapreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>hash_multimap:: reverse_iterator (STL/CLR)
 
-Denetlenen dizi için bir ters yineleyici türü.
+Denetlenen sıra için ters yineleyicinin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2464,7 +2464,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilinmeyen türde bir nesne tanımlayan bir tür `T3` denetlenen dizi için bir ters yineleyici olarak verebilir.
+Tür, denetlenen sıra için ters Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T3`.
 
 ### <a name="example"></a>Örnek
 
@@ -2494,7 +2494,7 @@ int main()
 [c 3] [b 2] [a 1]
 ```
 
-## <a name="size"></a> hash_multimap::size (STL/CLR)
+## <a name="hash_multimapsize-stlclr"></a><a name="size"></a>hash_multimap:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -2506,7 +2506,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen dizinin uzunluğunu döndürür. Şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın. Tümü, önem verdiğiniz ise dizisi bakın, sıfır olmayan boyutu olup [hash_multimap::empty (STL/CLR)](../dotnet/hash-multimap-empty-stl-clr.md)`()`.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı hakkında bilgi için bkz. [hash_multimap:: Empty (STL/CLR)](../dotnet/hash-multimap-empty-stl-clr.md)`()`.
 
 ### <a name="example"></a>Örnek
 
@@ -2546,9 +2546,9 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="size_type"></a> hash_multimap::size_type (STL/CLR)
+## <a name="hash_multimapsize_type-stlclr"></a><a name="size_type"></a>hash_multimap:: size_type (STL/CLR)
 
-İki öğe arasındaki işaretli mesafenin türü.
+İki öğe arasındaki işaretli bir mesafe türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2558,7 +2558,7 @@ typedef int size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir negatif olmayan öğe sayısını tanımlayan bir tür.
+Tür, negatif olmayan bir öğe sayısını tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2594,7 +2594,7 @@ int main()
 end()-begin() = 3
 ```
 
-## <a name="swap"></a> hash_multimap::Swap (STL/CLR)
+## <a name="hash_multimapswap-stlclr"></a><a name="swap"></a>hash_multimap:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2606,12 +2606,12 @@ void swap(hash_multimap<Key, Mapped>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Kapsayıcı içeriğini değiştirmek için.
+*Right*<br/>
+İçeriği takas eden kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen diziyi üye işlevi değiştirir `this` ve *doğru*. Bunu Sabit sürede yapar ve hiçbir özel durum oluşturur. İki kapsayıcının içeriğinin değişimi için hızlı bir şekilde kullanırsınız.
+Üye işlevi, `this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2662,9 +2662,9 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="to_array"></a> hash_multimap::to_array (STL/CLR)
+## <a name="hash_multimapto_array-stlclr"></a><a name="to_array"></a>hash_multimap:: to_array (STL/CLR)
 
-Denetlenen dizideki, yeni bir diziye kopyalar.
+Denetimli sırayı yeni bir diziye kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2674,7 +2674,7 @@ cli::array<value_type>^ to_array();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen bir dizi içeren bir dizi döndürür. Dizi formunda denetlenen dizinin bir kopyasını almak için kullanın.
+Üye işlevi denetlenen sırayı içeren bir dizi döndürür. Dizi biçiminde denetlenen sıranın bir kopyasını almak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2712,9 +2712,9 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="upper_bound"></a> hash_multimap::upper_bound (STL/CLR)
+## <a name="hash_multimapupper_bound-stlclr"></a><a name="upper_bound"></a>hash_multimap:: upper_bound (STL/CLR)
 
-Belirtilen bir anahtarla eşleşen aralığı sonu bulur.
+Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2725,11 +2725,11 @@ iterator upper_bound(key_type key);
 #### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Aranacak anahtar değeri.
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi son öğeyi belirler `X` aynı Demetin karıştırır denetlenen dizideki *anahtarı* ve için eşdeğer sıralamaya sahip *anahtar*. Böyle bir öğe varsa veya `X` denetlenen dizideki son öğeyi döndürür olan [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`; Aksi halde ötesindeki ilk öğeyi belirleyen bir yineleyici döndürür. `X`. Bir dizi öğe sonuna şu anda belirtilen bir anahtarla eşleşen denetlenen dizide bulmak için kullanın.
+Üye işlevi, *anahtar* ile aynı demetini karma hale uygulayan denetimli dizideki son öğeyi `X` belirler ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa veya denetlenen dizideki son öğe `X`, [hash_multimap:: End (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`döndürür. Aksi takdirde, `X`ötesinde ilk öğeyi atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2771,9 +2771,9 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = [c 3]
 ```
 
-## <a name="value_comp"></a> hash_multimap::value_comp (STL/CLR)
+## <a name="hash_multimapvalue_comp-stlclr"></a><a name="value_comp"></a>hash_multimap:: value_comp (STL/CLR)
 
-İki öğenin değerlerini sıralama temsilcisi kopyalar.
+İki öğe değeri için sıralama temsilcisini kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2783,7 +2783,7 @@ value_compare^ value_comp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen diziyi sıralamak için kullanılan sıralama temsilci döndürür. İki öğenin değerlerini karşılaştırmak için kullanın.
+Üye işlevi, denetimli sırayı sıralamak için kullanılan sıralama temsilcisini döndürür. İki öğe değerini karşılaştırmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2818,9 +2818,9 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False
 ```
 
-## <a name="value_compare"></a> hash_multimap::value_compare (STL/CLR)
+## <a name="hash_multimapvalue_compare-stlclr"></a><a name="value_compare"></a>hash_multimap:: value_compare (STL/CLR)
 
-İki öğenin değerlerini sıralama temsilcisi.
+İki öğe değeri için sıralama temsilcisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2831,7 +2831,7 @@ Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, değer bağımsız değişkenleri sıralama belirleyen temsilci eşanlamlıdır.
+Tür, değer bağımsız değişkenlerinin sıralamasını belirleyen temsilcinin eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2866,7 +2866,7 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False
 ```
 
-## <a name="value_type"></a> hash_multimap::value_type (STL/CLR)
+## <a name="hash_multimapvalue_type-stlclr"></a><a name="value_type"></a>hash_multimap:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -2878,7 +2878,7 @@ typedef generic_value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü eşanlamlıdır `generic_value`.
+Tür `generic_value`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 

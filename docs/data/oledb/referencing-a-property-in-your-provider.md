@@ -6,26 +6,26 @@ helpviewer_keywords:
 - references, to properties in providers
 - referencing properties in providers
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-ms.openlocfilehash: c3e620cd760aa04df7d7d2209ef009a606675276
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d70a1901c457d9fbdbe8712d84999e256a54d0c2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282926"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209805"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>Sağlayıcınızdaki Bir Özelliğe Başvurma
 
-Özellik kimliği ve özellik grubu istediğiniz özelliği bulun. Daha fazla bilgi için [OLE DB özellikleri](/previous-versions/windows/desktop/ms722734(v=vs.85)) içinde **OLE DB Programcının Başvurusu**.
+İstediğiniz özelliğin özellik grubunu ve özellik KIMLIĞINI bulun. Daha fazla bilgi için, **OLE DB Programcı başvurusunda** [OLE DB Özellikler](/previous-versions/windows/desktop/ms722734(v=vs.85)) ' i inceleyin.
 
-Aşağıdaki örnekte, satır kümesinden bir özellik get yapılmaya çalışılırken varsayılır. Oturum ya da komutu kullanmak için kodu, benzer ancak farklı bir arabirim kullanır.
+Aşağıdaki örnek, satır kümesinden bir özelliği almaya çalıştığımız varsayılmaktadır. Oturumu veya komutu kullanmanın kodu benzerdir, ancak farklı bir arabirim kullanır.
 
-Oluşturma bir [CDBPropSet](../../data/oledb/cdbpropset-class.md) oluşturucusuna parametre olarak özellik grubunu kullanarak nesne. Örneğin:
+Oluşturucuya parametre olarak özellik grubunu kullanarak bir [CDBPropSet](../../data/oledb/cdbpropset-class.md) nesnesi oluşturun. Örneğin:
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
 ```
 
-Çağrı [AddProperty](../../data/oledb/cdbpropset-addproperty.md), özellik kimliği ve bir değer özelliğe atanacak geçirme. Değerin türü, kullanmakta olduğunuz özelliğine bağlıdır.
+Özellik KIMLIĞI ve özelliğe atanacak bir değer geçirerek [AddProperty](../../data/oledb/cdbpropset-addproperty.md)çağrısı yapın. Değerin türü, kullanmakta olduğunuz özelliğe bağlıdır.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
@@ -35,7 +35,7 @@ propset.AddProperty(DBPROP_IRowsetChange, true);
 propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);
 ```
 
-Kullanım `IRowset` çağrılacak arabirimi `GetProperties`. Bir parametre özelliği geçirin. Son kod aşağıdaki gibidir:
+`GetProperties`çağırmak için `IRowset` arabirimini kullanın. Özellik kümesini parametre olarak geçirin. Son kod şu şekildedir:
 
 ```cpp
 CAgentRowset<CCustomCommand>* pRowset = (CAgentRowset<CCustomCommand>*) pThis;

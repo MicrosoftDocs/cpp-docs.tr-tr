@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1188
 ms.assetid: 4af574b0-5b41-4580-9a37-52a634add995
-ms.openlocfilehash: 69ac20522aebb7391319c0de210e06b305f3fd0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b18a93c7434ee3d66f42829f373bd916a65369bd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226484"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195181"
 ---
 # <a name="linker-tools-error-lnk1188"></a>Bağlayıcı Araçları Hatası LNK1188
 
-BADFIXUPSECTION:: Geçersiz düzeltme hedefi 'symbol'; olası sıfır uzunluk bölümü
+BADFIXUPSECTION:: geçersiz düzeltme hedefi ' sembol '; olası sıfır uzunluk bölümü
 
-VxD bağlantı sırasında bir konum değiştirme hedefi bir bölümü yok. LINK386 ile (eski bir sürümü), bir OMF Grup kaydı (MASM grubu yönergesi tarafından oluşturulan) sıfır uzunluk bölümü başka bir sıfır uzunluk bölümü ile birleştirmek için kullanılmış olabilir. COFF biçimi GROUP yönergesi ve sıfır uzunluklu bölümlerin desteklemez. BAĞLANTI otomatik olarak bu tür bir OMF nesnelerini COFF dönüştürülürken, bu hata oluşabilir.
+Bir VxD bağlantısı sırasında, bir yeniden konumlandırma hedefinin bir bölümü yoktu. LINK386 (daha eski bir sürüm) ile, bir OMF grup kaydı (MASı GROUP Direktifi tarafından oluşturulan), sıfır uzunluklu bölümü sıfır olmayan bir uzunluk bölümüyle birleştirmek için kullanılmış olabilir. COFF biçimi, Grup yönergesini ve sıfır uzunluklu bölümleri desteklemez. BAĞLANTı, bu tür OMF nesnelerini COFF 'ye otomatik olarak dönüştürdüğünde, bu hata ortaya çıkabilir.

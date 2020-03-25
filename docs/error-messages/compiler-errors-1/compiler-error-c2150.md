@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2150
+title: Derleyici hatası C2150
 ms.date: 11/04/2016
 f1_keywords:
 - C2150
 helpviewer_keywords:
 - C2150
 ms.assetid: 21e82a10-c1d4-4c0d-9dc6-c5d92ea42a31
-ms.openlocfilehash: a9c6465ef87c12135ad4e6709741f0027d8ea3c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57c21f7ee9435220a9ca0b50bb85567506b6ad3e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175153"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80207226"
 ---
-# <a name="compiler-error-c2150"></a>Derleyici Hatası C2150
+# <a name="compiler-error-c2150"></a>Derleyici hatası C2150
 
-> '*tanımlayıcı*': bit alanının türü 'int', 'signed int' veya 'unsigned int' olmalıdır
+> '*tanımlayıcı*': bit alanının türü ' int ', ' signed int ' veya ' unsigned int ' olmalıdır
 
-Bir bit alanına yönelik temel türü olmasını gerekli `int`, `signed int`, veya `unsigned int`.
+Bit alanı için temel türün `int`, `signed int`veya `unsigned int`olması gerekir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek nasıl C2150 karşılaşabileceğiniz ve nasıl düzeltebilirsiniz gösterir:
+Bu örnekte C2150 ile nasıl karşılaşacağınız ve nasıl gidereceğiniz gösterilmektedir:
 
 ```cpp
 // C2150.cpp

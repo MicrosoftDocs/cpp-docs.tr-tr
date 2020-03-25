@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::marshal_context class [C++]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
-ms.openlocfilehash: 7fb22754248e66d7a20292af41a8e1b8ba050451
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 146a0f7a7cc1402f7c28e6bf09fead1914c7c6be
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80080026"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208539"
 ---
 # <a name="marshal_context-class"></a>marshal_context Sınıfı
 
@@ -35,14 +35,14 @@ Aynı `marshal_context` çok sayıda veri dönüştürmesi için de kullanılabi
 
 ### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
 |[marshal_context::marshal_context](#marshal-context)|Yönetilen ve yerel veri türleri arasında veri dönüştürme için kullanılacak bir `marshal_context` nesnesi oluşturur.|
 |[marshal_context::~marshal_context](#tilde-marshal-context)|`marshal_context` nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
 |[marshal_context::marshal_as](#marshal-as)|Yönetilen ve yerel bir veri türü arasında dönüştürmek için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.|
 

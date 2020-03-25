@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2188
+title: Derleyici hatası C2188
 ms.date: 11/04/2016
 f1_keywords:
 - C2188
 helpviewer_keywords:
 - C2188
 ms.assetid: 2223147f-e487-4090-acdf-75ba4e1114f6
-ms.openlocfilehash: 75c9e7b982fb1b7d9ecbd9e9aaf61bf5ac5d004b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 87c20c6f8c4b947f5dcc8aabe7c1f0bcbe97d5e6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62303131"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206745"
 ---
-# <a name="compiler-error-c2188"></a>Derleyici Hatası C2188
+# <a name="compiler-error-c2188"></a>Derleyici hatası C2188
 
-'number': geniş karakter için çok büyük
+' number ': geniş karakter için çok büyük
 
-Geniş karakter türü için boyut sınırını aşıyor. Daha büyük bir türü seçin.
+Sayı, geniş karakter türü için boyut sınırını aşıyor. Daha büyük bir tür seçin.

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE DB consumer templates, classes
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
-ms.openlocfilehash: 52fe3df7e872c257aa8802f84c548ad57d21be27
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 13805ab1dc2c2b4792fd05c9140006c610b42f75
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447407"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210112"
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB Tüketici Şablonları Başvurusu
 

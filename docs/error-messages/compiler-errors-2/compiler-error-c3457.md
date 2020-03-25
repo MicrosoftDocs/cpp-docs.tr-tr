@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3457
+title: Derleyici hatası C3457
 ms.date: 11/04/2016
 f1_keywords:
 - C3457
 helpviewer_keywords:
 - C3457
 ms.assetid: 5c1e366a-fa75-4cca-b9a3-86d4ebe4090e
-ms.openlocfilehash: 813b1c085cb0464880cb400b6200f9574220bd71
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1481bd1d430aff74bff8140941b0ab218acbe364
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363732"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200892"
 ---
-# <a name="compiler-error-c3457"></a>Derleyici Hatası C3457
+# <a name="compiler-error-c3457"></a>Derleyici hatası C3457
 
-'attribute': öznitelik adsız bağımsız değişkenleri desteklemiyor
+' Attribute ': öznitelik adlandırılmamış bağımsız değişkenleri desteklemiyor
 
-CLR özel öznitelik veya derleyici öznitelikleri farklı kaynak ek açıklama öznitelikleri yalnızca adlandırılmış bağımsız değişkenler de destekler.
+Kaynak ek açıklama öznitelikleri, CLR özel özniteliği veya derleyici özniteliklerinin aksine, yalnızca adlandırılmış bağımsız değişkenleri destekler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3457 oluşturur.
+Aşağıdaki örnek C3457 oluşturur.
 
 ```
 #include "SourceAnnotations.h"

@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0033
 ms.assetid: 84d4a052-0586-4b78-9315-81c1e8386c1e
-ms.openlocfilehash: e074ee18508271b56686aa16f9012085ed3bd77d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 141355ac49ec4722e85b5d4c25240e8048a72c9a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346927"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192204"
 ---
 # <a name="project-build-error-prj0033"></a>Proje Derleme Hatası PRJ0033
 
-'Ek bağımlılıklar' özelliği için özel yapı adımı 'out değerlendiren dosya 'yer alan dosya' makro' için 'macro_expansion için'.
+' File ' dosyası için özel derleme adımının ' ek bağımlılıklar ' özelliği ' macro_expansion ' olarak değerlendirilen ' Macro ' içeriyor.
 
-Özel derleme adımı bir dosyada ek bağımlılık büyük olasılıkla bir makro değerlendirmesi sorun nedeniyle bir hata içeriyordu. Bu hata, da yolu yanlış, karakter veya bir dosya yolunda geçersiz karakter birleşimlerinin içeren biçimlendirildiğini anlamına gelebilir.
+Bir dosya üzerinde özel derleme adımı, büyük olasılıkla bir makro değerlendirmesi sorunu nedeniyle ek bağımlılığında hata içeriyordu. Bu hata, yolun hatalı biçimlendirildiğini, bir dosya yolunda geçersiz olan karakterler veya karakter bileşimleri içeriyor anlamına da gelir.
 
-Bu hatayı gidermek için makro düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.
+Bu hatayı çözmek için, makroyu çözün veya yol belirtimini giderin. Değerlendirilen yol, proje dizininden mutlak bir yoldur.

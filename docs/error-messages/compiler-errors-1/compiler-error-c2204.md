@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2204
+title: Derleyici hatası C2204
 ms.date: 11/04/2016
 f1_keywords:
 - C2204
 helpviewer_keywords:
 - C2204
 ms.assetid: bbe506d4-7863-44af-8709-161881c4b4ba
-ms.openlocfilehash: 2192e184afc8d1bc21f752e9586c3dc2d23987bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae0b93ec9db4471b0a23f8413d05fd72f647e19e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368506"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206758"
 ---
-# <a name="compiler-error-c2204"></a>Derleyici Hatası C2204
+# <a name="compiler-error-c2204"></a>Derleyici hatası C2204
 
-'type': tür tanımına parantez içinde bulunamadı
+' Type ': parantez içinde tür tanımı bulundu
 
-Türü, prototip kapsamı veya bir işlenen olarak tanımlanır.
+Tür bir işlenen veya prototip kapsamında tanımlanır.

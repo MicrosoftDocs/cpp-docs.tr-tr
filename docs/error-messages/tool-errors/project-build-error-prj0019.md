@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0019
 ms.assetid: 5390a62b-aacf-4bc8-b9d7-08f1e0233423
-ms.openlocfilehash: e97d9488df0eeb666cb78354d0363c2a359a159d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3aed7ca5dcf5803305d8765f50430520a5b73d2d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359403"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192542"
 ---
 # <a name="project-build-error-prj0019"></a>Proje Derleme Hatası PRJ0019
 
-Bir aracı bir hata kodu döndürdü
+Bir araç, öğesinden bir hata kodu döndürdü
 
-Özel derleme adımının veya derleme olayının için sıfır olmayan bir hata düzeyi.
+Özel derleme adımı veya derleme olayı için bir hata düzeyi sıfır değil.
 
-Bir aracı bir hata kodu, ancak hiçbir hata iletisi döndürüldüğünde PRJ0019 de görürsünüz. NUL için MIDL çıktı yeniden yönlendirme, örneğin, oluşabilir.
+Ayrıca, bir araç bir hata kodu döndürmediğinde, ancak hata iletisi PRJ0019 görürsünüz. Bu durum, örneğin MıDL çıkışını NUL olarak yeniden yönlendirirseniz olabilir.
 
-Bkz: [sorun giderme özel derleme adımlarını ve derleme olayları](../../build/troubleshooting-build-customizations.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [özel derleme adımları ve derleme olayları sorunlarını giderme](../../build/troubleshooting-build-customizations.md) .
 
-Bu hata, kullanıcılar grubunun bir üyesi olarak çalıştırıyorsanız ve yönetimsel erişimi gerekli olduğunda da meydana gelebilir. Daha fazla bilgi için [kullanıcılar grubunun bir üyesi olarak çalıştırma](../../security/running-as-a-member-of-the-users-group.md).
+Bu hata, kullanıcılar grubunun bir üyesi olarak çalışırken da oluşabilir ve yönetici erişimi gerekliyse meydana gelir. Daha fazla bilgi için, bkz. [Kullanıcılar grubunun üyesi olarak çalıştırma](../../security/running-as-a-member-of-the-users-group.md).

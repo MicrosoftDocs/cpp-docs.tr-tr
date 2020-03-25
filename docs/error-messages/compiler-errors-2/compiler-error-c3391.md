@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3391
 ms.assetid: c32532b9-7db4-4ccd-84b9-479e5a1a19d1
-ms.openlocfilehash: 7590ba9431892c07a32c27fdc97604c8b005fe33
-ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
+ms.openlocfilehash: 98c4bf43883d15cd17877d7146edf16a73c7ce46
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912852"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201110"
 ---
 # <a name="compiler-error-c3391"></a>Derleyici hatası C3391
 

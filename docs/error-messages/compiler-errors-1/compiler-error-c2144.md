@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C2144
+title: Derleyici hatası C2144
 ms.date: 11/04/2016
 f1_keywords:
 - C2144
 helpviewer_keywords:
 - C2144
 ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
-ms.openlocfilehash: a75330d26b0924e60f7e46d10d617341709d7e23
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b917c0a2c15aeb70222c948bce9a6fb275c91068
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353501"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80207252"
 ---
-# <a name="compiler-error-c2144"></a>Derleyici Hatası C2144
+# <a name="compiler-error-c2144"></a>Derleyici hatası C2144
 
-> sözdizimi hatası: '*türü*'tarafından gelmelidir'*belirteci*'
+> sözdizimi hatası: '*Type*' öncesinde '*token*' gelmelidir
 
-Beklenen derleyici *belirteci* ve *türü* yerine.
+Derleyici *belirteç* bekliyordu ve bunun yerine *tür* buldu.
 
-Bu hata, bir eksik kapanış ayracı, sağ parantez veya noktalı virgül tarafından kaynaklanabilir.
+Bu hata, eksik bir kapatma ayracı, sağ parantez veya noktalı virgülden kaynaklanıyor olabilir.
 
-C2144, boşluk karakterini içeren bir CLR anahtar sözcüğü bir makro oluşturmaya çalışırken de oluşabilir.
+C2144, boşluk karakteri içeren bir CLR anahtar sözcüğünden makro oluşturmaya çalışırken da oluşabilir.
 
-Tür iletme çalışıyorsanız C2144 de görebilirsiniz. Bkz: [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) daha fazla bilgi için.
+Tür iletme yapmaya çalışıyorsanız C2144 de görebilirsiniz. Daha fazla bilgi için bkz. [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) .
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, C2144 oluşturur ve bunu düzeltmek için bir yol gösterir:
+Aşağıdaki örnek C2144 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```cpp
 // C2144.cpp
@@ -40,7 +40,7 @@ REF struct MyStruct0;   // C2144
 REF1 MyStruct1;
 ```
 
-Aşağıdaki örnek, C2144 oluşturur ve bunu düzeltmek için bir yol gösterir:
+Aşağıdaki örnek C2144 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```cpp
 // C2144_2.cpp

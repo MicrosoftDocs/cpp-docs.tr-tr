@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - RC2147
 ms.assetid: 09974f06-1731-4e70-b373-f9218e0ee8d9
-ms.openlocfilehash: 9b4555d819bfcf30debc6a4dc9261999648e3e95
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f76c61ace4e0e1d8eea9a33669b66021861c36f9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399895"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191151"
 ---
 # <a name="resource-compiler-error-rc2147"></a>Kaynak Derleyicisi Hatası RC2147
 
-Alt dili kimliği bir sayı değil
+ALT DIL KIMLIĞI bir sayı değil
 
-Alt dili kimliği değeri bir sayı olmalıdır.
+ALT DIL KIMLIK değeri bir sayı olmalıdır.
 
-**Dil** deyimi aşağıdaki sözdizimini kullanın:
+**Language** ifadesinin aşağıdaki sözdizimini kullanması gerekir:
 
 **Dil** *primary_language_ID*,*secondary_language_ID*
 
-Geçerli bir alt dili kimlikleri olarak tanımlanan **SUBLANG_** WINNT.h dosyasındaki sabitler.
+Geçerli alt DIL kimlikleri, WINNT. h dosyasında **SUBLANG_** sabitler olarak tanımlanmıştır.

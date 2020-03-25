@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2174
+title: Derleyici hatası C2174
 ms.date: 11/04/2016
 f1_keywords:
 - C2174
 helpviewer_keywords:
 - C2174
 ms.assetid: 161d563c-76e9-47e9-9142-7812e9ea169e
-ms.openlocfilehash: c9634dea7a29df55612c2f20e70c94601881af57
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a951cc6e31c8cc25a728e9fc1599ea9303060f0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174607"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80207005"
 ---
-# <a name="compiler-error-c2174"></a>Derleyici Hatası C2174
+# <a name="compiler-error-c2174"></a>Derleyici hatası C2174
 
-'function': Gerçek parametrenin türü 'void': parametre Sayı1, parametre listesi sayı2
+' function ': gerçek parametrenin türü ' void ': parametre Sayı1, parametre listesi sayı2
 
-Parametre `number1` geçirilen parametre listesine `number2` olduğu bir `void` parametresi. Tür parametreleri olamaz `void`. Bunun yerine `void*` kullanın.
+Parametre listesine geçirilen parametre `number1` `number2` bir `void` parametresidir. Parametrelerin türü `void`olamaz. Bunun yerine `void*` kullanın.

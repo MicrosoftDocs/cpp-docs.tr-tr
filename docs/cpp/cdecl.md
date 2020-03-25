@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - __cdecl keyword [C++]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
-ms.openlocfilehash: f4cca797c0bff94a54b0f3302c6c475908870a99
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 8f2b2b0cea8ff30cc450aae534fbff0d7b77f457
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857625"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190109"
 ---
 # <a name="__cdecl"></a>__cdecl
 
@@ -58,7 +58,7 @@ void __cdecl CMyClass::mymethod() { return; }
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, derleyicinin C adlandırmasını kullanması ve `system` işlevi için çağrı kurallarını kullanması talimat verilmiştir.
+Aşağıdaki örnekte, derleyicinin `system` işlevi için C adlandırma ve çağırma kuralları kullanması talimatı verilmiştir.
 
 ```cpp
 // Example of the __cdecl keyword on function

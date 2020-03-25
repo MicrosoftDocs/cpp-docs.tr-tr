@@ -6,36 +6,36 @@ f1_keywords:
 helpviewer_keywords:
 - C1060
 ms.assetid: feaf305c-c84c-4160-b974-50e283412849
-ms.openlocfilehash: 876ae7a368d2d1a1ee94a04fc9ecf50d0f4b8d78
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1a7c3ccab716a9281d4520f4c5fce2afff60187
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364239"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204444"
 ---
 # <a name="fatal-error-c1060"></a>Önemli hata C1060
 
-Derleyicinin yığın alanı yetersiz olduğu
+Derleyicinin yığın alanı kalmadı
 
-İşletim sistemi ya da çalışma zamanı kitaplığı, bellek isteği doldurun olamaz.
+İşletim sistemi veya çalışma zamanı kitaplığı bir bellek isteğini dolduramaz.
 
-### <a name="to-fix-this-error-try-the-following-possible-solutions"></a>Bu hatayı düzeltmek için aşağıdaki olası çözümleri deneyin
+### <a name="to-fix-this-error-try-the-following-possible-solutions"></a>Bu hatayı onarmak için aşağıdaki olası çözümleri deneyin
 
-1. Derleyici hataları yayımlıyorsa [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md) ve [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md), kullanın [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) daha düşük bellek ayırma sınırı derleyici seçeneği. Daha fazla yığın alanı, kalan bellek ayırma düşürürseniz, uygulamanız için kullanılabilir.
+1. Derleyici Ayrıca [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md) ve [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md)hatalarını da kullanıyorsa, bellek ayırma sınırını düşürmek için [/ZD](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) derleyici seçeneğini kullanın. Kalan bellek ayırmayı düşürürseniz, uygulamanız için daha fazla yığın alanı kullanılabilir.
 
-   Varsa [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği zaten ayarlanmışsa, bu kaldırmayı deneyin. Seçeneğinde belirtilen bellek ayırma sınırını çok yüksek olduğu için yığın alanı tüketilebilir. Kaldırırsanız derleyici varsayılan bir sınırı kullanır [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği.
+   [/Zı](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği zaten ayarlandıysa, kaldırmayı deneyin. Seçeneğinde belirtilen bellek ayırma sınırı çok yüksek olduğu için yığın alanı tükeniyor olabilir. [/ZD](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneğini kaldırırsanız, derleyici varsayılan sınırı kullanır.
 
-1. 64-bit bir platform üzerinde derleme yapıyorsanız, 64 bit derleyici araç setini kullanın. Bilgi için [nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
+1. 64 bitlik bir platformda derlerken, 64 bit derleyici araç takımını kullanın. Bilgi için bkz. [nasıl yapılır: 64 bitlik görsel C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
 
-1. 32 bit Windows üzerinde kullanmayı deneyin [3 GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) boot.ini anahtarı.
+1. 32 bit Windows üzerinde [/3GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) Boot. ini anahtarını kullanmayı deneyin.
 
-1. Windows takas dosyası boyutunu artırın.
+1. Windows takas dosyasının boyutunu artırın.
 
-1. Diğer çalışan programları kapatın.
+1. Çalışan diğer programları kapatın.
 
 1. Gereksiz ekleme dosyalarını silin.
 
-1. Gereksiz genel değişkenleri, örneğin, büyük bir diziyi bildirmek yerine dinamik bellek ayırma tarafından da ortadan kaldırır.
+1. Örneğin, büyük bir dizi bildirmek yerine, dinamik olarak bellek ayırarak gereksiz genel değişkenleri kaldırın.
 
 1. Kullanılmayan bildirimleri ortadan kaldırın.
 

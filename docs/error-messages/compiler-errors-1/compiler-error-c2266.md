@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2266
+title: Derleyici hatası C2266
 ms.date: 11/04/2016
 f1_keywords:
 - C2266
 helpviewer_keywords:
 - C2266
 ms.assetid: 5c267a67-d5a1-4ad7-b6f7-a156510aee35
-ms.openlocfilehash: 65ad25a64e7e35dfc06f7310324625aec6da8fb8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1806e822324fd4592efb62e0adf795a73bbb883
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152897"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206530"
 ---
-# <a name="compiler-error-c2266"></a>Derleyici Hatası C2266
+# <a name="compiler-error-c2266"></a>Derleyici hatası C2266
 
-'identifier': Sabit olmayan sınırlı bir diziye başvuru geçersizdir
+' tanımlayıcı ': sabit olmayan sınırlı bir diziye başvuru geçersizdir
 
-Başvuru için bir dizi bağlı bir nonconstant ile bildirilir. Dizi sabit sınırları olması gerekir.
+Sabit olmayan bir ilişkili dizi için bir başvuru bildirilmiştir. Dizi sabit sınırlara sahip olmalıdır.

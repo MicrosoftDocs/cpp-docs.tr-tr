@@ -5,28 +5,28 @@ helpviewer_keywords:
 - Universal Data Access
 - OLE DB, about OLE DB
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df
-ms.openlocfilehash: 68ada06514defe0f7f5332288ad8e91a7d8d9351
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b855e0917ba9cdbdaa38a92473d7bddb4279101
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361925"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210082"
 ---
 # <a name="ole-db-programming-overview"></a>OLE DB Programlamaya Genel Bakış
 
-OLE DB yüksek performanslı, COM tabanlı veritabanı teknolojisidir. Verileri, depolandığı biçiminde bağımsız erişmek için ortak bir yol sunar. Tipik iş durumunda, çok büyük miktarda bilgi Kurumsal veritabanlarında depolanmaz. Bu bilgiler (örneğin, FAT veya NTFS), dosya sisteminde dizinli sıralı dosyaları, kişisel veritabanları (örneğin, erişimi), elektronik tablolar (Excel gibi) proje planlama uygulamaları (örneğin, Proje) ve e-posta (örneğin, Outlook) bulunur. OLE DB, bir OLE DB Sağlayıcı veri deposunda sahip olduğu sürece, aynı şekilde, herhangi bir türden veri deposuna erişim sağlar.
+OLE DB, yüksek performanslı, COM tabanlı bir veritabanı teknolojisidir. Verilerin depolandığı formdan bağımsız olarak erişmek için ortak bir yol sağlar. Tipik bir iş durumunda kurumsal veritabanlarında büyük miktarda bilgi depolanmaz. Bu bilgiler dosya sistemlerinde (FAT veya NTFS gibi), dizinli sıralı dosyalar, kişisel veritabanları (erişim gibi), elektronik tablolar (Excel gibi), proje planlama uygulamaları (proje gibi) ve e-posta (Outlook gibi) içinde bulunur. OLE DB, veri deposu bir OLE DB sağlayıcısına sahip olduğu sürece her türlü veri deposuna aynı şekilde erişmenizi sağlar.
 
-OLE DB, bunlar DBMS veya ister çeşitli veri kaynaklarına erişen uygulamalar geliştirmenize olanak sağlar. OLE DB, sağlanan veri kaynağı için uygun DBMS işlevselliğini destekleyen COM arabirimleri kullanarak evrensel erişim mümkün kılar. COM gereksiz çoğaltma hizmetlerinin azaltır ve yalnızca veri kaynakları arasında aynı zamanda diğer uygulamalar arasında birlikte çalışabilirlik ekranı.
+OLE DB, DBMS olmasına bakılmaksızın farklı veri kaynaklarına erişen uygulamalar geliştirmenize olanak tanır. OLE DB, belirli bir veri kaynağı için uygun DBMS işlevlerini destekleyen COM arabirimlerini kullanarak evrensel erişimi mümkün hale getirir. COM, yalnızca veri kaynakları ve aynı zamanda diğer uygulamalar arasında değil, hizmetlerin gereksiz şekilde çoğaltılmasını ve büyütülmüş birlikte çalışabilirliğini azaltır.
 
-## <a name="benefits-of-com"></a>COM avantajları
+## <a name="benefits-of-com"></a>COM 'un avantajları
 
-Bu, COM burada devreye girer. OLE DB, COM arabirimleri kümesidir. Veri kümesi arabirimleri erişerek bir veritabanı bileşenler Matrisine matris düzenleyebilirsiniz.
+Bu, COM 'un geldiği yerdir. OLE DB bir COM arabirimleri kümesidir. Tek bir arabirim kümesi üzerinden verilere erişerek bir veritabanını birlikte çalışan bileşenler matrisine düzenleyebilirsiniz.
 
-COM belirtimine göre OLE DB katan ve tutarlı, yeniden kullanılabilir bölümlerini DBMS işlevi kapsülleyen arabirimleri genişletilebilir ve sürdürülebilir bir koleksiyonunu tanımlar. Bu arabirimler satır kapsayıcıları, sorgu işlemci ve çok çeşitli bilgi kaynakları işlem Tekdüzen erişim sağlayan işlem düzenleyicileri gibi DBMS bileşenleri sınırlarını tanımlayın.
+OLE DB, COM belirtimine göre, DBMS işlevselliğinin tutarlı, yeniden kullanılabilir kısımlarını çarpanlara kattan ve kapsülleyen genişletilebilir ve sürdürülebilir arabirimlerin bir koleksiyonunu tanımlar. Bu arabirimler, farklı bilgi kaynaklarına Tekdüzen işlem erişimini etkinleştiren satır kapsayıcıları, sorgu işlemcileri ve işlem koordinatörleri gibi DBMS bileşenlerinin sınırlarını tanımlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Şablonları](../../data/oledb/ole-db-templates.md)

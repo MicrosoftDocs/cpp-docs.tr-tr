@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0026
 ms.assetid: c52bc9b5-8b22-4015-b477-8645ae56c489
-ms.openlocfilehash: 7450d655e4cc8cc073940ef13f8bd57db2ad5219
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9193d91d6abd3b1c9a4fbac1e3c50c045658ddff
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384040"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192282"
 ---
 # <a name="project-build-error-prj0026"></a>Proje Derleme Hatası PRJ0026
 
-> Yanıt dosyası '*dosya*' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe sahip.
+> '*Dosya*' yanıt dosyası, kullanıcının ANSI kod sayfasına çevrilemeyen Unicode içerikleri içeriyor.
 >
-> *UNICODE dosya içeriği*
+> *Dosyanın UNICODE içeriği*
 
-Proje sistemi bir yanıt dosyasında doğru kullanıcının geçerli ANSI kod sayfasına çevrilemeyen Unicode içeriğe bulundu.
+Proje sistemi, kullanıcının geçerli ANSI kod sayfasına doğru çevrilemeyen bir yanıt dosyasında Unicode içeriği buldu.
 
-Bu hata için çözüm ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için yanıt dosyasının içeriğini güncelleştirmektir.
+Bu hatanın çözümü, ANSI kullanmak için yanıt dosyasının içeriğini güncelleştirmek veya kod sayfasını bilgisayarınıza yüklemek ve sistem varsayılanı olarak ayarlamak içindir.

@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1008
 ms.assetid: 7de729e3-b2ca-4a68-95ab-8a1c920f3f2c
-ms.openlocfilehash: 0c0d0311189c71439ad75ed16c07b188732e7a4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 614fbcd0fe938ecb845112f07357040f5084e59f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364304"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204847"
 ---
 # <a name="fatal-error-c1008"></a>Önemli hata C1008
 
-Giriş dosyası belirtilmedi
+giriş dosyası belirtilmedi
 
-Derleyici, derleme için bir C veya C++ kaynak dosyası verilmedi. Denetleme **CL** komut satırı ve ortam değişkenini Dosya belirtimleri için.
+Derleyiciye derlemek için bir C veya C++ kaynak dosyası sağlanmadı. Dosya adı belirtimleri için **CL** komut satırını ve ortam değişkenini kontrol edin.

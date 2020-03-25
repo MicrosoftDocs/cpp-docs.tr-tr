@@ -548,12 +548,12 @@ helpviewer_keywords:
 - TABLE_NAME
 - TABLE_SCHEMA
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: 2c47b167f12cd98a752806369df6281d5b20c696
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 82401ae88ea95d0e05659fa662a3621a27ef4531
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444140"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209709"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 
@@ -598,7 +598,7 @@ Aşağıdaki tabloda her bir OLE DB şeması satır kümesi ve karşılık gelen
 |[Görünümler](/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[Cviewınfo](#view)|
 |[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[Cviewtableınfo](#viewtable)|
 
-## <a name="assertion"></a>CAssertions, CAssertionInfo
+## <a name="cassertions-cassertioninfo"></a><a name="assertion"></a>CAssertions, CAssertionInfo
 
 Parametre sınıfını `CAssertionInfo`uygulamak için `CAssertions` typedef sınıfını çağırın.
 
@@ -619,7 +619,7 @@ Aşağıdaki tabloda `CAssertionInfo` için sınıf veri üyeleri ve bunlara kar
 |m_bInitiallyDeferred|INITIALLY_DEFERRED|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="catalog"></a>CCatalogs, CCatalogInfo
+## <a name="ccatalogs-ccataloginfo"></a><a name="catalog"></a>CCatalogs, CCatalogInfo
 
 Parametre sınıfını `CCatalogInfo`uygulamak için `CCatalogs` typedef sınıfını çağırın.
 
@@ -636,7 +636,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szName|CATALOG_NAME|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="characterset"></a>Ckarakterkümeleri, Ckaraktersetınfo
+## <a name="ccharactersets-ccharactersetinfo"></a><a name="characterset"></a>Ckarakterkümeleri, Ckaraktersetınfo
 
 Parametre sınıfını `CCharacterSetInfo`uygulamak için `CCharacterSets` typedef sınıfını çağırın.
 
@@ -659,7 +659,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szCollateSchema|DEFAULT_COLLATE_SCHEMA|
 |m_szCollateName|DEFAULT_COLLATE_NAME|
 
-## <a name="checkconstraint"></a>Ccheckkısıtlamalar, Ccheckconstraintınfo
+## <a name="ccheckconstraints-ccheckconstraintinfo"></a><a name="checkconstraint"></a>Ccheckkısıtlamalar, Ccheckconstraintınfo
 
 Parametre sınıfını `CCheckConstraintInfo`uygulamak için `CCheckConstraints` typedef sınıfını çağırın.
 
@@ -679,7 +679,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szCheckClause|CHECK_CLAUSE|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="collation"></a>Charmanlamalar, Ccollationınfo
+## <a name="ccollations-ccollationinfo"></a><a name="collation"></a>Charmanlamalar, Ccollationınfo
 
 Parametre sınıfını `CCollationInfo`uygulamak için `CCollations` typedef sınıfını çağırın.
 
@@ -701,7 +701,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szCharSetName|CHARACTER_SET_NAME|
 |m_szPadAttribute|PAD_ATTRIBUTE|
 
-## <a name="columndomainusage"></a>CColumnDomainUsage, Ccolumndomainusageınfo
+## <a name="ccolumndomainusage-ccolumndomainusageinfo"></a><a name="columndomainusage"></a>CColumnDomainUsage, Ccolumndomainusageınfo
 
 Parametre sınıfını `CColumnDomainUsageInfo`uygulamak için `CColumnDomainUsage` typedef sınıfını çağırın.
 
@@ -725,7 +725,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_guidColumn|COLUMN_GUID|
 |m_nColumnPropID|COLUMN_PROPID|
 
-## <a name="columnprivilege"></a>CColumnPrivileges, Ccolumnprivilegeınfo
+## <a name="ccolumnprivileges-ccolumnprivilegeinfo"></a><a name="columnprivilege"></a>CColumnPrivileges, Ccolumnprivilegeınfo
 
 Parametre sınıfını `CColumnPrivilegeInfo`uygulamak için `CColumnPrivileges` typedef sınıfını çağırın.
 
@@ -750,7 +750,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szPrivilegeType|PRIVILEGE_TYPE|
 |m_bIsGrantable|IS_GRANTABLE|
 
-## <a name="columns"></a>CColumns, CColumnsInfo
+## <a name="ccolumns-ccolumnsinfo"></a><a name="columns"></a>CColumns, CColumnsInfo
 
 Parametre sınıfını `CColumnsInfo`uygulamak için `CColumns` typedef sınıfını çağırın.
 
@@ -793,7 +793,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szDomainName|DOMAIN_NAME|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="constraintcolumnusage"></a>CConstraintColumnUsage, Cconstraintcolumnusageınfo
+## <a name="cconstraintcolumnusage-cconstraintcolumnusageinfo"></a><a name="constraintcolumnusage"></a>CConstraintColumnUsage, Cconstraintcolumnusageınfo
 
 Parametre sınıfını `CConstraintColumnUsageInfo`uygulamak için `CConstraintColumnUsage` typedef sınıfını çağırın.
 
@@ -817,7 +817,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szConstraintSchema|CONSTRAINT_SCHEMA|
 |m_szConstraintName|CONSTRAINT_NAME|
 
-## <a name="constrainttableusage"></a>CConstraintTableUsage, Cconstrainttableusageınfo
+## <a name="cconstrainttableusage-cconstrainttableusageinfo"></a><a name="constrainttableusage"></a>CConstraintTableUsage, Cconstrainttableusageınfo
 
 Parametre sınıfını `CConstraintTableUsageInfo`uygulamak için `CConstraintTableUsage` typedef sınıfını çağırın.
 
@@ -838,7 +838,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szConstraintSchema|CONSTRAINT_SCHEMA|
 |m_szConstraintName|CONSTRAINT_NAME|
 
-## <a name="foreignkeys"></a>CForeignKeys, Cforeignkeysınfo
+## <a name="cforeignkeys-cforeignkeysinfo"></a><a name="foreignkeys"></a>CForeignKeys, Cforeignkeysınfo
 
 Parametre sınıfını `CForeignKeysInfo`uygulamak için `CForeignKeys` typedef sınıfını çağırın.
 
@@ -868,7 +868,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szUpdateRule|UPDATE_RULE|
 |m_szDeleteRule|DELETE_RULE|
 
-## <a name="index"></a>Cındexes, Cındexınfo
+## <a name="cindexes-cindexinfo"></a><a name="index"></a>Cındexes, Cındexınfo
 
 Parametre sınıfını `CIndexInfo`uygulamak için `CIndexes` typedef sınıfını çağırın.
 
@@ -907,7 +907,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_nPages|SAYFALARı|
 |m_szFilterCondition|FILTER_CONDITION|
 
-## <a name="keycolumn"></a>CKeyColumns, Ckeycolumnınfo
+## <a name="ckeycolumns-ckeycolumninfo"></a><a name="keycolumn"></a>CKeyColumns, Ckeycolumnınfo
 
 Parametre sınıfını `CKeyColumnInfo`uygulamak için `CKeyColumns` typedef sınıfını çağırın.
 
@@ -932,7 +932,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_nColumnPropID|COLUMN_PROPID|
 |m_nOrdinalPosition|ORDINAL_POSITION|
 
-## <a name="primarykey"></a>CPrimaryKeys, Cprimarykeyınfo
+## <a name="cprimarykeys-cprimarykeyinfo"></a><a name="primarykey"></a>CPrimaryKeys, Cprimarykeyınfo
 
 Parametre sınıfını `CPrimaryKeyInfo`uygulamak için `CPrimaryKeys` typedef sınıfını çağırın.
 
@@ -954,7 +954,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_nColumnPropID|COLUMN_PROPID|
 |m_nOrdinal|NUMARASıNı|
 
-## <a name="procedurecolumn"></a>CProcedureColumns, Cprocedurecolumnınfo
+## <a name="cprocedurecolumns-cprocedurecolumninfo"></a><a name="procedurecolumn"></a>CProcedureColumns, Cprocedurecolumnınfo
 
 Parametre sınıfını `CProcedureColumnInfo`uygulamak için `CProcedureColumns` typedef sınıfını çağırın.
 
@@ -985,7 +985,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_nScale|NUMERIC_SCALE|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="procedureparam"></a>CProcedureParameters Cprocedureparamınfo
+## <a name="cprocedureparameters-cprocedureparaminfo"></a><a name="procedureparam"></a>CProcedureParameters Cprocedureparamınfo
 
 Parametre sınıfını `CProcedureParamInfo`uygulamak için `CProcedureParameters` typedef sınıfını çağırın.
 
@@ -1015,7 +1015,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_nScale|NUMERIC_SCALE|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="procedure"></a>CProcedures, Cprocedureınfo
+## <a name="cprocedures-cprocedureinfo"></a><a name="procedure"></a>CProcedures, Cprocedureınfo
 
 Parametre sınıfını `CProcedureInfo`uygulamak için `CProcedures` typedef sınıfını çağırın.
 
@@ -1036,7 +1036,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szDefinition|PROCEDURE_DEFINITION|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="provider"></a>CProviderTypes, Cproviderınfo
+## <a name="cprovidertypes-cproviderinfo"></a><a name="provider"></a>CProviderTypes, Cproviderınfo
 
 Parametre sınıfını `CProviderInfo`uygulamak için `CProviderTypes` typedef sınıfını çağırın.
 
@@ -1071,7 +1071,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_bIsLong|IS_LONG|
 |m_bBestMatch|BEST_MATCH|
 
-## <a name="referentialconstraint"></a>Creferentialkýsýtlamalarý, Creferentialconstraintınfo
+## <a name="creferentialconstraints-creferentialconstraintinfo"></a><a name="referentialconstraint"></a>Creferentialkýsýtlamalarý, Creferentialconstraintınfo
 
 Parametre sınıfını `CReferentialConstraintInfo`uygulamak için `CReferentialConstraints` typedef sınıfını çağırın.
 
@@ -1096,7 +1096,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szDeleteRule|DELETE_RULE|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="schemata"></a>CSchemata, Cschemataınfo
+## <a name="cschemata-cschematainfo"></a><a name="schemata"></a>CSchemata, Cschemataınfo
 
 Parametre sınıfını `CSchemataInfo`uygulamak için `CSchemata` typedef sınıfını çağırın.
 
@@ -1117,7 +1117,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szCharSchema|DEFAULT_CHARACTER_SET_SCHEMA|
 |m_szCharName|DEFAULT_CHARACTER_SET_NAME|
 
-## <a name="sqllanguage"></a>CSQLLanguages, Csqllanguageınfo
+## <a name="csqllanguages-csqllanguageinfo"></a><a name="sqllanguage"></a>CSQLLanguages, Csqllanguageınfo
 
 Parametre sınıfını `CSQLLanguageInfo`uygulamak için `CSQLLanguages` typedef sınıfını çağırın.
 
@@ -1139,7 +1139,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szBindingStyle|SQL_LANGUAGE_BINDING_STYLE|
 |m_szProgrammingLanguage|SQL_LANGUAGE_PROGRAMMING_LANGUAGE|
 
-## <a name="statistic"></a>CStatistics, Cstatisticınfo
+## <a name="cstatistics-cstatisticinfo"></a><a name="statistic"></a>CStatistics, Cstatisticınfo
 
 Parametre sınıfını `CStatisticInfo`uygulamak için `CStatistics` typedef sınıfını çağırın.
 
@@ -1158,7 +1158,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szTableName|TABLE_NAME|
 |m_nCardinality|ITE|
 
-## <a name="tableconstraint"></a>Ctablekısıtlamalarına, Ctableconstraintınfo
+## <a name="ctableconstraints-ctableconstraintinfo"></a><a name="tableconstraint"></a>Ctablekısıtlamalarına, Ctableconstraintınfo
 
 Parametre sınıfını `CTableConstraintInfo`uygulamak için `CTableConstraints` typedef sınıfını çağırın.
 
@@ -1183,7 +1183,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_bInitiallyDeferred|INITIALLY_DEFERRED|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="tableprivilege"></a>CTablePrivileges, Ctableprivilegeınfo
+## <a name="ctableprivileges-ctableprivilegeinfo"></a><a name="tableprivilege"></a>CTablePrivileges, Ctableprivilegeınfo
 
 Parametre sınıfını `CTablePrivilegeInfo`uygulamak için `CTablePrivileges` typedef sınıfını çağırın.
 
@@ -1205,7 +1205,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szType|PRIVILEGE_TYPE|
 |m_bIsGrantable|IS_GRANTABLE|
 
-## <a name="table"></a>CTables, Ctableınfo
+## <a name="ctables-ctableinfo"></a><a name="table"></a>CTables, Ctableınfo
 
 Parametre sınıfını `CTableInfo`uygulamak için `CTables` typedef sınıfını çağırın.
 
@@ -1226,7 +1226,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_guidTable|TABLE_GUID|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="translation"></a>Cçeviriler, Ctranslationınfo
+## <a name="ctranslations-ctranslationinfo"></a><a name="translation"></a>Cçeviriler, Ctranslationınfo
 
 Parametre sınıfını `CTranslationInfo`uygulamak için `CTranslations` typedef sınıfını çağırın.
 
@@ -1250,7 +1250,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szTargetSchema|TARGET_CHARACTER_SET_SCHEMA|
 |m_szTargetName|TARGET_CHARACTER_SET_NAME|
 
-## <a name="usageprivilege"></a>CUsagePrivileges, Cusageprivilegeınfo
+## <a name="cusageprivileges-cusageprivilegeinfo"></a><a name="usageprivilege"></a>CUsagePrivileges, Cusageprivilegeınfo
 
 Parametre sınıfını `CUsagePrivilegeInfo`uygulamak için `CUsagePrivileges` typedef sınıfını çağırın.
 
@@ -1273,7 +1273,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_szPrivilegeType|PRIVILEGE_TYPE|
 |m_bIsGrantable|IS_GRANTABLE|
 
-## <a name="viewcolumn"></a>CViewColumnUsage, Cviewcolumnınfo
+## <a name="cviewcolumnusage-cviewcolumninfo"></a><a name="viewcolumn"></a>CViewColumnUsage, Cviewcolumnınfo
 
 Parametre sınıfını `CViewColumnInfo`uygulamak için `CViewColumnUsage` typedef sınıfını çağırın.
 
@@ -1297,7 +1297,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_guidColumn|COLUMN_GUID|
 |m_nColumnPropID|COLUMN_PROPID|
 
-## <a name="view"></a>CViews, Cviewwınınfo
+## <a name="cviews-cviewinfo"></a><a name="view"></a>CViews, Cviewwınınfo
 
 Parametre sınıfını `CViewInfo`uygulamak için `CViews` typedef sınıfını çağırın.
 
@@ -1319,7 +1319,7 @@ Aşağıdaki tabloda, sınıf veri üyeleri ve bunlara karşılık gelen OLE DB 
 |m_bIsUpdatable|IS_UPDATABLE|
 |m_szDescription|AÇIKLAMA|
 
-## <a name="viewtable"></a>CViewTableUsage, Cviewtableınfo
+## <a name="cviewtableusage-cviewtableinfo"></a><a name="viewtable"></a>CViewTableUsage, Cviewtableınfo
 
 Parametre sınıfını `CViewTableInfo`uygulamak için `CViewTableUsage` typedef sınıfını çağırın.
 

@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2207
+title: Derleyici hatası C2207
 ms.date: 11/04/2016
 f1_keywords:
 - C2207
 helpviewer_keywords:
 - C2207
 ms.assetid: d7d7b537-68f1-420a-9835-b5b6f2cb5cfd
-ms.openlocfilehash: cbb5c099243e6aafd9ad050c8da1436eb2d71603
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f5bea563ae91df0e641af3911aa246b1f813336
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400467"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206706"
 ---
-# <a name="compiler-error-c2207"></a>Derleyici Hatası C2207
+# <a name="compiler-error-c2207"></a>Derleyici hatası C2207
 
-'member': bir sınıf şablonunun üyesi bir işlev türü alamaz
+' üye ': bir sınıf şablonunun üyesi bir işlev türü alamaz
 
-`member` Sınıfının şablon daha önce statik olmayan veri üyesi olarak ayrıştırıldı. Bir üye işlev tanımlanamaz.
+Sınıf şablonunun `member` daha önce statik olmayan bir veri üyesi olarak ayrıştırıldı. Bir üye işlev olarak yeniden tanımlanamaz.

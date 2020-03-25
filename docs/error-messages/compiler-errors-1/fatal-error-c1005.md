@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1005
 ms.assetid: 150daf8e-a38a-4669-9c1a-a05b5a1f65ef
-ms.openlocfilehash: a84791367656729b1cbd50ca180368f6c01531a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8b0fe71dcfb6253327de247d24ef9d90c59181d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383197"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204873"
 ---
 # <a name="fatal-error-c1005"></a>Önemli hata C1005
 
-dize için arabellek çok büyük
+dize arabellek için çok büyük
 
-Derleyici Ara dosyası bir dizedeki bir arabellek taşma oluştu.
+Derleyici ara dosyasındaki bir dize bir arabelleğin taştığından.
 
-Bu hatayı alabilir, ya da geçirdiğiniz parametre [/Fd](../../build/reference/fd-program-database-file-name.md) veya [/Yl](../../build/reference/yl-inject-pch-reference-for-debug-library.md) derleyici seçenekleri, 256 bayt değerinden büyüktür.
+[/FD](../../build/reference/fd-program-database-file-name.md) veya [/yl](../../build/reference/yl-inject-pch-reference-for-debug-library.md) derleyici seçeneklerine geçirdiğiniz parametre 256 bayttan fazla olduğunda bu hatayı alabilirsiniz.

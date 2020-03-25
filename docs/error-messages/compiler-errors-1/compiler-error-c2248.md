@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2248
+title: Derleyici hatası C2248
 ms.date: 11/04/2016
 f1_keywords:
 - C2248
 helpviewer_keywords:
 - C2248
 ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
-ms.openlocfilehash: d9b9a6c04e7e9a5d88df516125280b6b23894a01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 843676638037aab9544f1fbd8c5c6d56d351e485
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302560"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206565"
 ---
-# <a name="compiler-error-c2248"></a>Derleyici Hatası C2248
+# <a name="compiler-error-c2248"></a>Derleyici hatası C2248
 
-'*üye*': erişemiyor '*access_level*'üyesi, sınıfta bildirilen'*sınıfı*'
+'*üye*': '*Class*' sınıfında belirtilen '*access_level*' üyesine erişilemiyor
 
-Türetilmiş bir sınıf üyelerine erişemez `private` bir taban sınıfı üyeleri. Erişemiyorsanız `private` veya `protected` üyeleri sınıf örneği.
+Türetilmiş bir sınıfın üyeleri bir temel sınıfın `private` üyelerine erişemez. Sınıf örneklerinin `private` veya `protected` üyelerine erişemezsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, özel durumlarda C2248 oluşturur veya bir sınıfın korumalı üyeleri sınıf erişilen. Bu sorunu gidermek için bu üyeleri sınıf dışındaki doğrudan erişemez. Sınıf ile etkileşim kurmak için ortak üye verileri ve üye işlevleri kullanın.
+Aşağıdaki örnek, bir sınıfın özel veya korumalı üyelerine sınıfının dışından erişildiğinde C2248 oluşturur. Bu sorunu düzeltemedi, bu üyelere doğrudan sınıf dışından erişmeyin. Sınıfla etkileşim kurmak için ortak üye verilerini ve üye işlevlerini kullanın.
 
 ```cpp
 // C2248_access.cpp
@@ -51,7 +51,7 @@ int main() {
 }
 ```
 
-Şablon arkadaşları ve uzmanlık C2248 sunan başka bir uyumluluk sorunu tabidir. Bu sorunu gidermek için bir boş şablon parametre listesi <> veya belirli bir şablon parametreleri kullanarak arkadaş şablon işlevleri bildirin.
+C2248 sunan başka bir uyumluluk sorunu, şablon arkadaşları ve özelleştirmesi 'nın kullanımı. Bu sorunu onarmak için, < > veya belirli şablon parametrelerini boş bir şablon parametre listesi kullanarak arkadaş şablon işlevleri bildirin.
 
 ```cpp
 // C2248_template.cpp
@@ -79,7 +79,7 @@ int main() {
 }
 ```
 
-C2248 sunan başka bir uyumluluk sorunu ve sınıfın sınıf kapsamı içinde friend bildirimi için görünür değil, bir sınıfın arkadaş bildirme girişimi andır. Bu sorunu gidermek için Arkadaşlık kapsayan sınıfa verin.
+Bir sınıfın arkadaşını bildirmeye çalıştığınızda ve sınıf, sınıf kapsamındaki arkadaş bildirimine görünür olmadığında, C2248 sunan başka bir uyumluluk sorunu. Bu sorunu düzeltemedi, kapsayan sınıfa arkadaşlık verin.
 
 ```cpp
 // C2248_enclose.cpp

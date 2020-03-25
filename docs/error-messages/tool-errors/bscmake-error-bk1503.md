@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - BK1503
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
-ms.openlocfilehash: c81e955b912e03b322c0429097410fae74713b9d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e0f05b3979024cb053394c51fa9337197b5de7bf
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280145"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197866"
 ---
 # <a name="bscmake-error-bk1503"></a>BSCMAKE Hatası BK1503
 
-'filename' dosyasına yazılamıyor [: neden]
+' filename ' dosyasına yazılamıyor [: Reason]
 
-Bir tarayıcı veritabanına derleme sırasında oluşturulan .sbr dosyaları BSCMAKE birleştirir. Sonuçta elde edilen tarayıcı veritabanı 64 MB'ı aşarsa veya 4092 giriş (.sbr) dosyalarının sayısını aşarsa, bu hata yayılan.
+BSCMAKE, derleme sırasında oluşturulan. sbr dosyalarını tek bir tarayıcı veritabanında birleştirir. Elde edilen tarayıcı veritabanı 64 MB 'yi aşarsa veya giriş (. sbr) dosyaları sayısı 4092 ' i aşarsa, bu hata yayınlanır.
 
-Sorun birden fazla 4092 .sbr dosyaları tarafından neden oluyorsa, giriş dosyalarının sayısını azaltmanız gerekir. Visual Studio içinden bu tarafından gerçekleştirilebilir [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) rojeyi sonra dosyası tarafından temelinde tekrar kontrol edin.
+Sorun 4092. sbr dosyalarından kaynaklanmasından kaynaklanıyorsa, giriş dosyalarının sayısını azaltmanız gerekir. Visual Studio 'Nun içinden bu, tüm projenizde [/fr](../../build/reference/fr-fr-create-dot-sbr-file.md) tarafından gerçekleştirilebilir ve sonra dosya temelinde bir dosya üzerinde yeniden denetim elde edilebilir.
 
-.Bsc dosyası 64 MB'tan büyük sorun nedeniyle, giriş olarak .sbr dosyaları sayısını azaltmayı elde edilen .bsc dosyası boyutunu azaltın. Ayrıca, göz atma bilgisi miktarı /Em (makro genişletilmiş semboller hariç), /El (yerel değişkenler hariç) ve /Es (sistem dosyaları hariç) kullanılarak azaltılabilir.
+Soruna 64MB 'den büyük bir. bsc dosyası neden olduysa, giriş olarak. sbr dosyalarının sayısını azaltmak elde edilen. bsc dosyasının boyutunu düşürür. Ayrıca, göz at bilgisi miktarı/em (makro genişletilmiş sembolleri hariç tut),/el (yerel değişkenleri hariç tut) ve/es (sistem dosyalarını hariç tut) kullanılarak azaltılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

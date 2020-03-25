@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0035
 ms.assetid: 0667116d-338c-40a4-972c-da875f778cb5
-ms.openlocfilehash: e221fd85f1260ed04d49b43dea3d13407f504847
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 8486c4f62f637f6f7e9826a289c21f8f194eb9f3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345290"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192184"
 ---
 # <a name="project-build-error-prj0035"></a>Proje Derleme Hatası PRJ0035
 
-> XML dosyası '*dosya*' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe sahip.
+> '*File*' XML dosyası, kullanıcının ANSI kod sayfasına çevrilemeyen Unicode içerikleri içeriyor.
 >
-> *UNICODE dosya içeriği*
+> *Dosyanın UNICODE içeriği*
 
-*Dosya* Web dağıtım aracı için komut satırı olarak oluşturulmuş XML dosyası.
+*Dosya* , Web Dağıtım aracına komut satırı olarak oluşturulan XML dosyasıdır.
 
-Proje sistemi için ANSI düzgün çevrilemez Web dağıtımı özellik sayfasında bazı özelliğini Unicode karakterler bulundu.
+Proje sistemi, Web dağıtımı Özellik sayfasında, ANSI 'ye doğru çevrilemeyen bazı özellikte Unicode karakterler buldu.
 
-Bu hata için çözüm ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için özellik içeriğini güncelleştirmektir.
+Bu hatanın çözümü, özelliğin içeriğini ANSI kullanacak şekilde güncelleştirmek veya kod sayfasını bilgisayarınıza yüklemek ve sistem varsayılanı olarak ayarlamak içindir.

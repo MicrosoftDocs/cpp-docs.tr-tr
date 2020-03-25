@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC2135
 ms.assetid: 1509a0fa-1cb7-4654-bcb3-ad5ac973e659
-ms.openlocfilehash: 0ceb6e4207142fc1f8a374ab8669475c9867a000
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2cc1f431618cd4cf20df76f2012a212eaf63d23
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347983"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191255"
 ---
 # <a name="resource-compiler-error-rc2135"></a>Kaynak Derleyicisi Hatası RC2135
 
-Soubor nebyl nalezen: dosya adı
+Dosya bulunamadı: dosya adı
 
-Kaynak derleyici komut satırında belirtilen dosya bulunamadı. Dosya başka bir dizine taşınmış olan ve dosya adını ve yolunu olup doğru yazıldığından olmadığını kontrol edin.
+Kaynak derleyicisi komut satırında belirtilen dosya bulunamadı. Dosyanın başka bir dizine taşınıp taşınmadığını ve dosya adı ve yolunun doğru yazıldığından emin olun.
 
-Dosyaları kullanmak için aranır **INCLUDE** ortam değişkenine ya da Visual C++ **INCLUDE** ayarı.
+Dosyalar, **Include** ortam değişkeni veya görsel C++ **dahil etme** ayarı kullanılarak aranır.

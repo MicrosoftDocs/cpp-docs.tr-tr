@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2368
+title: Derleyici hatası C2368
 ms.date: 11/04/2016
 f1_keywords:
 - C2368
 helpviewer_keywords:
 - C2368
 ms.assetid: a824626f-9fb5-453b-a3a4-da89d1e32218
-ms.openlocfilehash: 02291612b695567ad7355e617cdf25f592dfa0ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50d93fd37bbc78f1c2c47f61e24e72e2b028cdcc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208886"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206069"
 ---
-# <a name="compiler-error-c2368"></a>Derleyici Hatası C2368
+# <a name="compiler-error-c2368"></a>Derleyici hatası C2368
 
-'identifier': yeniden tanımlama; ayırma belirticileri farklı
+' tanımlayıcı ': yeniden tanımlama; farklı ayırma tanımlayıcıları
 
-Sembol tanımını ve bildirimini farklı belirtin `__declspec` öznitelikleri.
+Simgenin bildirimi ve tanımı farklı `__declspec` öznitelikleri belirtir.

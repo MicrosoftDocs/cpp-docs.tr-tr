@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - BK1506
 ms.assetid: f51f8cea-f8fc-4323-bcf2-b7bd119792ee
-ms.openlocfilehash: d1f74a90657985a87accc13bc2b576c1d7fd5a4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b272a12e1d729e33794b550c911fd2e56f1af006
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279820"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197801"
 ---
 # <a name="bscmake-error-bk1506"></a>BSCMAKE Hatası BK1506
 
-'dosyaadı' dosyası açılamıyor [: neden]
+Dosya ' filename ' [: Reason] açılamıyor
 
-BSCMAKE dosyası açılamıyor.
+BSCMAKE dosyayı açamıyor.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Dosya başka bir işlem tarafından kilitli. Varsa `reason` diyor **izin reddedildi**, tarayıcı dosyayı kullanıyor olabilir. Göz atma pencereyi kapatın ve derlemeyi yeniden deneyin.
+1. Dosya başka bir işlem tarafından kilitlendi. **İzin reddedildiğini**`reason`, tarayıcı dosyayı kullanıyor olabilir. Tarayıcı penceresini kapatın ve derlemeyi yeniden deneyin.
 
 1. Tam disk.
 
 1. Bir donanım hatası.
 
-1. Belirtilen çıkış dosyası var olan bir alt dizini ile aynı ada sahip.
+1. Belirtilen çıkış dosyası var olan bir alt dizin ile aynı ada sahip.

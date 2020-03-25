@@ -14,16 +14,16 @@ helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-ms.openlocfilehash: 2056b93fd6c1d32b72996970352e87670ff406de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 596dd2ea7f65040ae526662974d210c1f99a0cf2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408946"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210619"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
 
-Bir uygulamasını sağlar [IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) nesne.
+[IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) nesnesinin bir uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,12 +34,12 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IGetDataSourceImpl`.
+*Şı*<br/>
+Sınıfınız `IGetDataSourceImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -47,15 +47,15 @@ Sınıfınız, türetilen `IGetDataSourceImpl`.
 
 |||
 |-|-|
-|[GetDataSource](#getdatasource)|Bir arabirim işaretçisi oturum oluşturduğunuz veri kaynağı nesnesi döndürür.|
+|[GetDataSource](#getdatasource)|Oturumu oluşturan veri kaynağı nesnesinde bir arabirim işaretçisi döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesnesi için bir arabirim işaretçisini almak için oturum zorunlu bir arabirim budur.
+Bu, veri kaynağı nesnesine bir arabirim işaretçisi almak için oturumdaki zorunlu bir arabirimdir.
 
-## <a name="getdatasource"></a> Igetdatasourceımpl::getdatasource
+## <a name="igetdatasourceimplgetdatasource"></a><a name="getdatasource"></a>IGetDataSourceImpl:: GetDataSource
 
-Bir arabirim işaretçisi oturum oluşturduğunuz veri kaynağı nesnesi döndürür.
+Oturumu oluşturan veri kaynağı nesnesinde bir arabirim işaretçisi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -66,11 +66,11 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda*bkz. [IGetDataSource:: GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesnesinin özelliklerine erişmek istiyorsanız kullanışlıdır.
+Veri kaynağı nesnesindeki özelliklere erişmeniz gerekiyorsa yararlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

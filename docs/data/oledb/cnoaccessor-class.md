@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CNoAccessor class
 ms.assetid: eb669ae5-0a56-49a3-9646-c4ae6239da31
-ms.openlocfilehash: 0cf1b47cc03d1839ae5c547393c3c193dab439d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c82d756690c6c2a719cb03f458c471aa44e3d5b5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230470"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211737"
 ---
 # <a name="cnoaccessor-class"></a>CNoAccessor Sınıfı
 
-Bir şablon bağımsız değişkeni kullanılabilir (`TAccessor`) için şablon sınıfları gibi `CCommand` ve `CTable`, bir erişimci sınıfında bağımsız değişken gerektirir.
+, Bir erişimci sınıfı bağımsız değişkeni gerektiren `CCommand` ve `CTable`gibi şablon sınıfları için şablon bağımsız değişkeni (`TAccessor`) olarak kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,39 +27,39 @@ class CNoAccessor
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım `CNoAccessor` parametrelerini veya sütunlarını çıkış desteklemeye sınıfı istemediğinizde bir şablon bağımsız değişkeni olarak.
+Sınıfın parametreleri veya çıkış sütunlarını desteklemesini istemediğiniz durumlarda `CNoAccessor` şablon bağımsız değişkeni olarak kullanın.
 
-`CNoAccessor` karşılık gelen her biri için diğer erişimcisi sınıf yöntemleri aşağıdaki saptama yöntemleri uygular:
+`CNoAccessor`, her biri diğer erişimci sınıfı yöntemlerine karşılık gelen aşağıdaki saplama yöntemlerini uygular:
 
-- `BindColumns` -Sütunları için erişimciler bağlar.
+- `BindColumns`-sütunları erişimcilere bağlar.
 
-- `BindParameters` -Sütun oluşturulan parametreleri bağlar.
+- `BindParameters`-oluşturulan parametreleri sütunlara bağlar.
 
-- `Bind` -Bağlamaları oluşturur.
+- `Bind`-bağlamalar oluşturur.
 
-- `Close` -Erişimci kapatır.
+- `Close`-erişimciyi kapatır.
 
-- `ReleaseAccessors` -Sınıfı tarafından oluşturulan erişimcileri serbest bırakır.
+- `ReleaseAccessors`-sınıfı tarafından oluşturulan erişimcileri yayınlar.
 
-- `FreeRecordMemory` -Boşaltılması için gereken geçerli kayıt tüm sütunları bırakır.
+- `FreeRecordMemory` serbest olması gereken geçerli kayıttaki tüm sütunları serbest bırakır.
 
-- `GetColumnInfo` -Açık satır kümesinden sütun bilgileri alır.
+- `GetColumnInfo`-açılan satır kümesinden sütun bilgilerini alır.
 
-- `GetNumAccessors` -Sınıfı tarafından oluşturulan erişimcileri sayısını alır.
+- `GetNumAccessors`-sınıf tarafından oluşturulan erişimcilerinin sayısını alır.
 
-- `IsAutoAccessor` -Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır true değerini döndürür.
+- `IsAutoAccessor`-bir taşıma işlemi sırasında erişimci için veriler otomatik olarak alınırsa true döndürür.
 
-- `GetHAccessor` -Belirtilen bir erişimci erişimci tanıtıcısı alır.
+- `GetHAccessor`-belirtilen erişimcinin erişimci tanıtıcısını alır.
 
-- `GetBuffer` -Yer işareti arabellek için işaretçi alır.
+- `GetBuffer`-işaretçiyi yer işareti arabelleğine alır.
 
-- `NoBindOnNullRowset` -Boş satır kümeleri üzerinde veri bağlamasını engeller.
+- `NoBindOnNullRowset`-boş satır kümelerinde veri bağlamayı önler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

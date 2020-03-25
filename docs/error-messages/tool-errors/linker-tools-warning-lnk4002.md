@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4002
 ms.assetid: 09f81af5-e51c-496c-a6eb-2863e85375c3
-ms.openlocfilehash: aef73971c4f39b6e063e84d3e86001b9137aec30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 40b2d60b6ce64703e34e3ec3c9b61f9b96bd0856
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298626"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194388"
 ---
 # <a name="linker-tools-warning-lnk4002"></a>Bağlayıcı Araçları Uyarısı LNK4002
 
-nesnesinde tanımlanan simgesi
+nesnede tanımlanan sembol
 
-Düzenlenmiş hâli içinde görüntülenen bir simge ve hâli içinde belirtilen `object`, ancak düzenlenmiş bir sembol için benzersiz bir eşleşme bulunamadı. Bu uyarı uyarı tarafından her zaman önünde [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) ve önemli bir hata tarafından izlenen [LNK1152](../../error-messages/tool-errors/linker-tools-error-lnk1152.md).
+Kendi kendine düzenlenmiş biçiminde görünen simge, `object`içinde açıklanmayan biçimde belirtildi, ancak düzenlenmiş bir sembolle benzersiz bir eşleşme bulunamadı. Bu uyarı, her zaman önce uyarı [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) ve ardından önemli hata [LNK1152](../../error-messages/tool-errors/linker-tools-error-lnk1152.md)tarafından gerçekleştirilir.

@@ -5,22 +5,22 @@ helpviewer_keywords:
 - operators [C++], assignment
 - assignment operators [C++], overloaded
 ms.assetid: d87e4f89-f8f5-42c1-9d3c-184bca9d0e15
-ms.openlocfilehash: 1e6d715011cfaab7e250e23a9a31bb3f0c83f36a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1697a8de3dff6c46de01db6bbff5447c03b6282
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184345"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190709"
 ---
 # <a name="assignment"></a>Atama
 
-Atama işleci (**=**), NET olarak söylemek gerekirse, ikili bir işleçtir. Aşağıdaki istisnalar herhangi diğer ikili işlecine bildiriminden aynıdır:
+Atama işleci ( **=** ), tam olarak bir ikili işleçtir. Bildirimi, aşağıdaki özel durumlarla, diğer herhangi bir ikili işleçle aynıdır:
 
-- Statik olmayan üye işlevi olmalıdır. Hayır **işleç =** değiştiricilere işlevi olarak bildirilebilir.
-- Türetilmiş sınıflar tarafından alınmadı.
-- Varsayılan **işleç =** işlevi oluşturulabilir sınıf türleri için derleyici tarafından yoksa.
+- Bu, statik olmayan bir üye işlevi olmalıdır. Hiçbir **işleç =** üye olmayan bir işlev olarak bildirilemez.
+- Türetilmiş sınıflar tarafından devralınmaz.
+- Bir varsayılan **operator =** işlevi, hiçbiri yoksa sınıf türleri için derleyici tarafından oluşturulabilir.
 
-Aşağıdaki örnek, bir atama işleci bildirmek verilmektedir:
+Aşağıdaki örnek, bir atama işlecinin nasıl bildirileceğini göstermektedir:
 
 ```cpp
 class Point
@@ -49,13 +49,13 @@ int main()
 }
 ```
 
-Sağlanan bağımsız değişken ifadesinin sağ tarafı ' dir. İşleci atama işlemi tamamlandıktan sonra sol tarafındaki değerini döndüren bir atama işleci davranışı korumak için nesneyi döndürür. Bu Atamalar, aşağıdaki gibi zincirleme sağlar:
+Sağlanan bağımsız değişken ifadenin sağ tarafındadır. İşleci, atama işlemi tamamlandıktan sonra sol taraftaki değeri döndüren atama işlecinin davranışını korumak için nesnesini döndürür. Bu, aşağıdaki gibi atamaların zincirlemesini sağlar:
 
 ```cpp
 pt1 = pt2 = pt3;
 ```
 
-Kopya atama işleci, kopya Oluşturucu ile karıştırılmamalıdır sağlamaktır. İkinci yeni bir nesne oluşturma sırasında var olan bir çağrılır:
+Kopya atama işleci, kopya Oluşturucusu ile karıştırılmamalıdır. İkincisi, var olan bir nesneden yeni bir nesne oluşturma sırasında çağrılır:
 
 ```cpp
 // Copy constructor is called--not overloaded copy assignment operator!
@@ -66,7 +66,7 @@ Point pt4(pt1); // Copy constructor call.
 ```
 
 > [!NOTE]
-> İzlemeniz önerilir [üç kural](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) kopya atama işlecine tanımlayan bir sınıf kopya oluşturucusunu da açıkça tanımlamanız gerekir, yok edici ve C ++ 11 ile başlayarak oluşturucusunu ve taşıma atama taşıma işleci.
+> Bir kopya atama işleci tanımlayan bir sınıfın, kopya oluşturucuyu, yıkıcıyı ve C++ 11 ' den başlayarak, oluşturucuyu taşıma ve taşıma atama işlecinden de açıkça tanımlanacağını belirten [üç kural](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) izlemeniz önerilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

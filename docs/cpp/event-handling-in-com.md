@@ -16,35 +16,35 @@ helpviewer_keywords:
 - declaring events, in COM
 - declaring events, event handling in COM
 ms.assetid: 6b4617d4-a58e-440c-a8a6-1ad1c715b2bb
-ms.openlocfilehash: da255da9fb9ff7a652fa1af796568a8e50759dc4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d54470bdf4b2555b01993582a74f65505858f94b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392186"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189240"
 ---
 # <a name="event-handling-in-com"></a>COM'da Olay İşleme
 
-COM olay işlemede, ayarladığınız kullanarak bir olay kaynağı ve olay alıcı [event_source](../windows/attributes/event-source.md) ve [event_receiver](../windows/attributes/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `com`. Bu öznitelikler uygulandıkları sınıfların olayları tetiklemesine ve olayları COM bağlantı noktalarıyla işlemesine olanak vermek için özel, dağılma ve ikili arabirimler için uygun kodu eklerler.
+COM olay işlemede, [event_source](../windows/attributes/event-source.md) ve [event_receiver](../windows/attributes/event-receiver.md) özniteliklerini kullanarak, sırasıyla `type`=`com`belirterek bir olay kaynağı ve olay alıcısı ayarlarsınız. Bu öznitelikler uygulandıkları sınıfların olayları tetiklemesine ve olayları COM bağlantı noktalarıyla işlemesine olanak vermek için özel, dağılma ve ikili arabirimler için uygun kodu eklerler.
 
 ## <a name="declaring-events"></a>Olayları Bildirme
 
-Bir olay kaynağı sınıfında kullanın [__event](../cpp/event.md) anahtar sözcüğü, bu arabirimin yöntemlerini olaylar olarak bildirmek için bir arabirim bildirimi. Söz konusu arabirimin olayları, siz onları arabirim yöntemleri olarak çağırdığınızda tetiklenir. Olay arabirimlerindeki yöntemler, sıfır veya daha fazla parametre içerebilir (tümü olacağı *içinde* parametreleri). Dönüş türü void veya herhangi bir tamsayı türü olabilir.
+Bir olay kaynak sınıfında, bu arabirimin yöntemlerini olay olarak bildirmek için arabirim bildiriminde [__event](../cpp/event.md) anahtar sözcüğünü kullanın. Söz konusu arabirimin olayları, siz onları arabirim yöntemleri olarak çağırdığınızda tetiklenir. Olay arabirimlerindeki yöntemlerin sıfır veya daha fazla *parametresi olabilir (bunların hepsi parametrelerde olması* gerekir). Dönüş türü void veya herhangi bir tamsayı türü olabilir.
 
-## <a name="defining-event-handlers"></a>Olay işleyicisi tanımlama
+## <a name="defining-event-handlers"></a>Olay Işleyicilerini tanımlama
 
-Bir olay alıcısı sınıfında, işleyecekleri olayla eşleşen imzalı yöntemler (dönüş türleri, çağrı kuralları ve bağımsız değişkenler) olan olay işleyicilerini tanımlarsınız. COM olayları için çağırma kuralları eşleşmesi gerekmez; bkz: [düzene bağımlı COM olayları](#vcconeventhandlingincomanchorlayoutdependentcomevents) altındaki ayrıntılar için.
+Bir olay alıcısı sınıfında, işleyecekleri olayla eşleşen imzalı yöntemler (dönüş türleri, çağrı kuralları ve bağımsız değişkenler) olan olay işleyicilerini tanımlarsınız. COM olayları için çağırma kurallarının eşleşmesi gerekmez; Ayrıntılar için aşağıdaki [Düzen BAĞıMLı com olaylarına](#vcconeventhandlingincomanchorlayoutdependentcomevents) bakın.
 
 ## <a name="hooking-event-handlers-to-events"></a>Olay İşleyicilerini Olaylara Takma
 
-Ayrıca bir olay alıcısı sınıfında, iç işlevini [__hook](../cpp/hook.md) olayları olay işleyicileriyle ilişkilendirmek için ve [__unhook](../cpp/unhook.md) olayları olay işleyicileri'öğesinin ilişkilendirmesini kaldırmak. Bir olay işleyicisine birden fazla olay veya bir olaya birden fazla olay işleyicisi takabilirsiniz.
+Ayrıca, olay işleyicilerindeki olayların ilişkilendirmesini kaldırmak için olayları olay işleyicileri ve [__unhook](../cpp/unhook.md) ilişkilendirmek üzere [__hook](../cpp/hook.md) iç işlev bir olay alıcısı sınıfında kullanılır. Bir olay işleyicisine birden fazla olay veya bir olaya birden fazla olay işleyicisi takabilirsiniz.
 
 > [!NOTE]
->  Genellikle, bir COM olay alıcısının olay kaynağı arabirim tanımlarına erişmesine izin vermek için iki teknik vardır. Birinci olarak, aşağıda gösterildiği gibi genel bir başlık dosyası paylaşmaktır. İkinci kullanmaktır [#import](../preprocessor/hash-import-directive-cpp.md) ile `embedded_idl` böylece öznitelik tarafından oluşturulan kod korunarak olay kaynağı tür kitaplığı .tlh dosyasına yazılan, içe aktarma niteleyicisi.
+>  Genellikle, bir COM olay alıcısının olay kaynağı arabirim tanımlarına erişmesine izin vermek için iki teknik vardır. Birinci olarak, aşağıda gösterildiği gibi genel bir başlık dosyası paylaşmaktır. İkincisi, `embedded_idl` içeri aktarma niteleyicisi ile [#import](../preprocessor/hash-import-directive-cpp.md) kullanmaktır, böylece olay kaynak türü kitaplığı, öznitelik tarafından oluşturulan kodla korunan. tlh dosyasına yazılır.
 
 ## <a name="firing-events"></a>Olayları Tetikleme
 
-Bir olay harekete geçirmek için yalnızca bir yöntem ile bildirilen arabirimde çağrı **__event** olay kaynağı sınıfında anahtar sözcüğü. Olaya olay işleyicileri takılmışsa, işleyiciler çağırılır.
+Bir olayı tetiklemesi için, arabirim kaynak sınıfında **__event** anahtar sözcüğüyle belirtilen arabirimdeki bir yöntemi çağırmanız yeterlidir. Olaya olay işleyicileri takılmışsa, işleyiciler çağırılır.
 
 ### <a name="com-event-code"></a>COM Olay Kodu
 
@@ -150,20 +150,20 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 MyHandler1 was called with value 123.
 MyHandler2 was called with value 123.
 ```
 
-##  <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Düzene bağımlı COM olayları
+##  <a name="layout-dependent-com-events"></a><a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a>Düzene bağımlı COM olayları
 
 Düzen bağımlılığı yalnızca COM programlamasında görülen bir sorundur. Yerli ve yönetilen olay işlemede, işleyicilerin imzaları (dönüş türü, çağrı kuralı ve bağımsız değişkenler) olaylarıyla eşleşmelidir, ancak işleyici adlarının olaylarla eşleşmesi gerekmez.
 
-Ayarladığınızda ancak, COM olay işlemede, *layout_dependent* parametresinin `event_receiver` için **true**, ad ve imzanın eşleşmesi zorlanır. Bu, olay alıcısındaki işleyicilerin adlarının ve imzalarının takıldıkları olayların adları ve imzalarıyla tam olarak eşleşmesi gerektiği anlamına gelir.
+Ancak, COM olay işlemede, `event_receiver` *layout_dependent* parametresi **true**olarak ayarlandığında, ad ve imza eşleştirme zorlanır. Bu, olay alıcısındaki işleyicilerin adlarının ve imzalarının takıldıkları olayların adları ve imzalarıyla tam olarak eşleşmesi gerektiği anlamına gelir.
 
-Zaman *layout_dependent* ayarlanır **false**, çağırma kuralı ve depolama sınıfı (sanal, statik vb.) karışık olarak kullanılabilir ve eşleştirilebilir arasında eşleşen bir olay yöntemi ve takma yöntemleri (kendi Temsilciler). İçin biraz daha verimlidir *layout_dependent*=**true**.
+*Layout_dependent* **false**olarak ayarlandığında, çağırma kuralı ve depolama sınıfı (sanal, statik, vb.), tetikleme olayı yöntemi ile birleştirme yöntemleri (temsilcileri) arasında karışık ve eşleştirilebilir. *Layout_dependent*=**doğru**olması biraz daha etkilidir.
 
 Örneğin, `IEventSource` aşağıdaki yöntemlere sahip olacak şekilde tanımlanır:
 

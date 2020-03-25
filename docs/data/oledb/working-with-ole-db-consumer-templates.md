@@ -5,16 +5,16 @@ helpviewer_keywords:
 - sample applications [C++], OLE DB Templates
 - OLE DB consumer templates, about consumer templates
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
-ms.openlocfilehash: 81bb80446ef3df09eaed7a8728e789de67c27122
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1cc18d2192a42d22e31ee346f1e233cd7615ac0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395553"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209267"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonlarıyla Çalışma
 
-Aşağıdaki konular, bazı yaygın senaryolarda OLE DB Tüketici şablonları kullanma örnekleri sağlar:
+Aşağıdaki konularda, yaygın senaryolarda OLE DB tüketici şablonlarının kullanımına ilişkin bazı örnekler verilmiştir:
 
 - [Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme](../../data/oledb/simplifying-data-access-with-database-attributes.md)
 
@@ -48,16 +48,16 @@ Aşağıdaki konular, bazı yaygın senaryolarda OLE DB Tüketici şablonları k
 
 - [Bildirimleri Alma](../../data/oledb/receiving-notifications.md)
 
-Oluşturma ve OLE DB tüketici uygulama örneği için bkz: [Basit Tüketici oluşturma](../../data/oledb/creating-an-ole-db-consumer.md).
+OLE DB tüketicisi oluşturma ve uygulama örneği için bkz. [basit tüketici oluşturma](../../data/oledb/creating-an-ole-db-consumer.md).
 
-Aşağıdaki örnekler, OLE DB Tüketici şablonları kullanma örnekleri de bulabilirsiniz:
+Aşağıdaki örneklerde OLE DB tüketici şablonlarının nasıl kullanılacağına ilişkin örnekler de bulabilirsiniz:
 
-- [CatDB](https://github.com/Microsoft/VCSamples)
+- [CatDB](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
-- [DBViewer](https://github.com/Microsoft/VCSamples)
+- [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
-- [MultiRead](https://github.com/Microsoft/VCSamples)
+- [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)

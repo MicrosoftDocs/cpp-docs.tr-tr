@@ -9,16 +9,16 @@ helpviewer_keywords:
 - do keyword [C++]
 - while keyword [C++], do-while
 ms.assetid: e01e6f7c-7da1-4591-87f9-c26ff848e7b0
-ms.openlocfilehash: d930c1884975288ff11f4d4e5cf2728e717e17d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f52c065210a8861dc065508248a506770b039b1d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392264"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189279"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 
-Yürüten bir *deyimi* belirtilen sonlandırma koşulu kadar sürekli olarak ( *ifade*) sıfır olarak değerlendirilir.
+Belirtilen sonlandırma koşulu ( *ifade*) sıfıra değerlendirilene kadar bir *deyimi* sürekli olarak yürütür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,17 +30,17 @@ while ( expression ) ;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonlandırma koşulunun testi döngünün her yürütülmesi yapılır; Bu nedenle, bir **yapın-sırada** sonlandırma ifadesinin değerine bağlı olarak bir veya daha fazla kez döngü yürütür. **Yapın-sırada** deyimi de sonlandırılabilir bir [sonu](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), veya [dönüş](../cpp/return-statement-cpp.md) deyimi, deyim gövdesi içinde yürütülür.
+Sonlandırma koşulunun testi, döngünün her yürütülmesinden sonra yapılır; Bu nedenle, sonlandırma ifadesinin değerine bağlı olarak bir **do-while** döngüsü bir veya daha fazla kez yürütülür. Deyimdeki bir [Break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md)veya [Return](../cpp/return-statement-cpp.md) deyimleri yürütüldüğünde **do-while** ifadesini de sonlandırabilirsiniz.
 
-*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:
+*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi devam eder:
 
 1. İfade gövdesi yürütülür.
 
-1. Ardından, *ifade* değerlendirilir. Varsa *ifade* false ise **yapın-sırada** deyimi sonlanır ve denetim geçer programdaki sonraki deyime. Varsa *ifade* (sıfırdan farklı) işlem tekrarlanır, adım 1'den itibaren geçerlidir.
+1. Sonra *ifade* değerlendirilir. *İfade* false ise **do-while** deyimi sonlanır ve denetim programdaki sonraki deyime geçer. *İfade* true (sıfır dışında) ise işlem, 1. adımdan itibaren yinelenir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte **yapın-sırada** deyimi:
+Aşağıdaki örnek **do-while** ifadesini göstermektedir:
 
 ```cpp
 // do_while_statement.cpp

@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - BK1504
 ms.assetid: e6d1a171-1472-4b7e-a04b-1a68a561675f
-ms.openlocfilehash: b213944f26932ec3b3934e82953573c1b8050532
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38cbc3173cbb9436a9b2e7f0d0c38af0b2caf4e2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226763"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197840"
 ---
 # <a name="bscmake-error-bk1504"></a>BSCMAKE Hatası BK1504
 
-'filename' dosyasında konumlandırılamıyor [: neden]
+' filename ' [: Reason] dosyasında konum yapılamıyor
 
-BSCMAKE dosyasındaki bir konuma taşınamadı.
+BSCMAKE dosyadaki bir konuma taşınamadı.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
 1. Tam disk.
 
 1. Bir donanım hatası.
 
-1. Yetersiz disk alanı veya .sbr dosyası oluşturma sırasında derleyici kesinti nedeniyle dosya kesilme.
+1. . Sbr dosyası oluşturulurken yetersiz disk alanı veya derleyicinin kesintiye uğraması nedeniyle dosya kesilmesi.

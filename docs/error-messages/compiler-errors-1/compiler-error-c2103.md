@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2103
+title: Derleyici hatası C2103
 ms.date: 11/04/2016
 f1_keywords:
 - C2103
 helpviewer_keywords:
 - C2103
 ms.assetid: dfe95972-35e9-469a-b8a8-52c849d4e4e4
-ms.openlocfilehash: ec95eee2b909658b006172bc68f9373cd70be1d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6bbdf582b589b3cd372408ea855a531f6eb2258f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165963"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80207486"
 ---
-# <a name="compiler-error-c2103"></a>Derleyici Hatası C2103
+# <a name="compiler-error-c2103"></a>Derleyici hatası C2103
 
-' &' değişkeni kaydedebilirsiniz
+yazmaç değişkeninde ' & '
 
-Bir kayıt adresi alınamaz.
+Bir kaydın adresini alamaz.

@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C3500
+title: Derleyici hatası C3500
 ms.date: 11/04/2016
 f1_keywords:
 - C3500
 helpviewer_keywords:
 - C3500
 ms.assetid: 77336f16-04f5-4943-bfc0-faba4cd8bb51
-ms.openlocfilehash: 5dd969ae3fdc54e9ae65ee86532a3fc51116a272
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf09381f36731a4c8eda125699f473616ef4cf11
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62215246"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200846"
 ---
-# <a name="compiler-error-c3500"></a>Derleyici Hatası C3500
+# <a name="compiler-error-c3500"></a>Derleyici hatası C3500
 
-Geçersiz Program Kimliği 'Program Kimliği'
+Geçersiz ProgID ' ProgID '
 
-Geçersiz program kimliği ile belirtilen `#import` deyimi. Geçerli bir belirtiyorsanız emin olmak için Windows kayıt defteri denetleme program kimliği.
+`#import` ifadesiyle geçersiz bir ProgID belirtildi. Geçerli bir ProgID belirtdiğinizden emin olmak için Windows kayıt defteri 'ni denetleyin.

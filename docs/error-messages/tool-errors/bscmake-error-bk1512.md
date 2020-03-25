@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - BK1512
 ms.assetid: 0a626ff3-63db-4797-abe4-31545ce2c2c1
-ms.openlocfilehash: 46a6a144e5820e243cf4bdeecf13f2b851b4bf75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3fed3d0de6a96f49df8bd8fdeed1c0148b1fe24
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279379"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197658"
 ---
 # <a name="bscmake-error-bk1512"></a>BSCMAKE Hatası BK1512
 
-filename: kapasitesi aşıldı
+dosya adı: kapasite aşıldı
 
-BSCMAKE, tanımları, başvurular, modüller ve diğer bilgileri sayısı üst sınırını aştığı için gözatma bilgisi dosyası oluşturulamıyor.
+Tanımlar, başvurular, modüller veya diğer bilgilerin sayısı sınırı aştığından BSCMAKE bir tarama bilgisi dosyası oluşturamıyor.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
-1. /EM, /Es veya /Ei kullanarak bazı bilgiler hariç tutun.
+1. /Em,/es veya/Eikullanarak bazı bilgileri hariç tutun.
 
-1. /IU seçeneği atlayın.
+1. /IU seçeneğini atlayın.

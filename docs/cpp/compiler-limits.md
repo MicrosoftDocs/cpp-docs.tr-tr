@@ -4,34 +4,34 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler, limits for language constructs
 ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
-ms.openlocfilehash: 9663da06c97886ef1cd20ca2928944795b39dc18
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 9e61cae1638c87f03b6fa775552408961bde6859
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222200"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189588"
 ---
 # <a name="compiler-limits"></a>Derleyici Sınırları
 
-C++ standartı, çeşitli dil yapıları için sınırlar önerir. Aşağıdaki durumlarda listesidir burada Microsoft C++ derleyici önerilen sınırları uygulamıyor. ISO belirlenen sınırı ilk sayıdır C++ 11 standart (INCITS/ISO/IEC 14882-2011 [2012] Annex B) ve ikinci sayı Microsoft tarafından uygulanan sınır C++ derleyici:
+C++ Standart çeşitli dil yapıları için sınırlar önerir. Aşağıda, Microsoft C++ derleyicisinin önerilen sınırları uygulamayan durumların bir listesi verilmiştir. İlk sayı ISO C++ 11 standardında (ıNITS/ISO/IEC 14882-2011 [2012], ek B) ve Ikinci sayının Microsoft C++ derleyicisi tarafından uygulanan sınırın üzerinde kurulduğu limidir:
 
-- Bileşik deyimler, yineleme kontrol yapılarını ve seçim denetim yapıları - iç içe geçme düzeyi C++ standart: 256, Microsoft C++ derleyici: birleşimi iç içe geçmiş deyimler ancak genellikle 110 ile 100 arasındaki bağlıdır.
+- Bileşik deyimlerin, yineleme denetim yapılarının ve seçim denetimi yapılarının iç içe geçirilmesi- C++ standart: 256, Microsoft C++ derleyicisi: iç içe geçmiş deyimlerin birleşimine bağlıdır, ancak genellikle 100 ve 110 arasındadır.
 
-- Parametreleri bir Makro tanımında - C++ standart: 256, Microsoft C++ derleyici: 127.
+- Tek bir makro tanımındaki parametreler- C++ standart: 256, Microsoft C++ derleyicisi: 127.
 
-- Bir makro çağrısı - değişkenlerinde C++ standart: 256, Microsoft C++ derleyici 127.
+- Tek makro çağrısı içindeki bağımsız değişkenler C++ -standart: 256, C++ Microsoft derleyicisi 127.
 
-- Bir karakterin karakter dize sabit değeri veya geniş dize değişmez değeri (birleştirmesi sonra) - C++ standart: 65536, Microsoft C++ derleyici: NULL sonlandırıcıyı da dahil olmak üzere, 65535 tek baytlık karakter ve NULL Sonlandırıcı dahil olmak üzere, 32767 çift baytlık karakterler.
+- Karakter dizesi değişmez değeri veya geniş dize sabit değerindeki karakterler (birleştirme sonrasında)- C++ standart: 65536, Microsoft C++ derleyicisi: 65535 tek baytlık karakterler, null SONLANDıRıCı dahil, ve null sonlandırıcı dahil olmak üzere 32767 çift baytlık karakterler.
 
-- İç içe geçmiş sınıf, yapı veya birleşim tanımlarına tek bir düzeyde `struct-declaration-list` - C++ standart: 256, Microsoft C++ derleyici: 16.
+- Tek bir `struct-declaration-list` C++ standart: 256, Microsoft C++ derleyicisi: 16 içinde iç içe sınıf, yapı veya birleşim tanımlarının düzeyleri.
 
-- Bir oluşturucu tanımı - üyesi başlatıcıları C++ standart: 6144, Microsoft C++ derleyici: en az 6144.
+- Oluşturucu tanımında üye başlatıcıları- C++ standart: 6144, Microsoft C++ derleyicisi: en az 6144.
 
-- Bir tanımlayıcının - nitelikleri kapsam C++ standart: 256, Microsoft C++ derleyici: 127.
+- Bir tanımlayıcının kapsam nitelikleri- C++ standart: 256, Microsoft C++ derleyicisi: 127.
 
-- İç içe geçmiş **extern** belirtimleri - C++ standart: 1024, Microsoft C++ derleyici: 9 (örtük sayılmaz **extern** belirtimi genel kapsamda veya 10 örtük sayısı, **extern** belirtimi genel kapsamda..
+- İç **extern** içe olmayan dış C++ özellikler-standart: 1024 C++ , Microsoft derleyicisi: 9 (genel **kapsamda örtük** **extern** belirtimini saymanız ya da 10.
 
-- Şablon bağımsız değişkenleri bir şablon bildiriminde - C++ standart: 1024, Microsoft C++ derleyici: 2046.
+- Şablon bildiriminde şablon bağımsız değişkenleri- C++ standart: 1024, Microsoft C++ derleyicisi: 2046.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

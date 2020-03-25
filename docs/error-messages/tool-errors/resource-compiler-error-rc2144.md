@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC2144
 ms.assetid: 1b3ff39a-92cd-4a04-b1a3-b1fa6a805813
-ms.openlocfilehash: deabd639e04d5b78b398cda9245e9726e2124740
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1b080916642fc1be4b22820668c4cb4137675425
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173476"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191203"
 ---
 # <a name="resource-compiler-error-rc2144"></a>Kaynak Derleyicisi Hatası RC2144
 
-BİRİNCİL dil kimliği bir sayı değil
+BIRINCIL DIL KIMLIĞI bir sayı değil
 
-BİRİNCİL dil kimliği bir onaltılık dil kimliği olmalıdır Bkz: [dil ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md) içinde *çalışma zamanı kitaplığı başvurusu* geçerli dil kimlikleri listesi.
+BIRINCIL DIL KIMLIĞI, onaltılı bir dil KIMLIĞI olmalıdır. Geçerli dil kimliklerinin listesi için *çalışma zamanı kitaplığı başvurusunda* bulunan [dil ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md) bölümüne bakın.
 
-Kaynaklar eklediyseniz ve silindiği de bu hata oluşabilir. RC dosyası bir araç kullanarak. Bu sorunu gidermek için açın. RC dosyası bir metin düzenleyicisinde ve kullanılmayan tüm kaynakları temizlemek el ile.
+Bu hata, kaynakları eklendiğinde ve öğesinden silindiğinde de oluşabilir. Bir araç kullanarak RC dosyası. Bu sorunu giderecek şekilde açın. Bir metin düzenleyicisinde RC dosyası ve kullanılmayan tüm kaynakları el ile temizleyin.

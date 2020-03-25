@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1215
 ms.assetid: 0774d8e6-f0c1-4efb-8723-7e1be6863d81
-ms.openlocfilehash: cc9763771778118a823d8c54f922026215b534f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d35279d9f47735489902fde284314a2c94f7a682
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242779"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195077"
 ---
 # <a name="linker-tools-error-lnk1215"></a>Bağlayıcı Araçları Hatası LNK1215
 
 meta veri işlemi başarısız oldu (HRESULT): hata
 
-Bağlayıcı, .NET çalışma zamanını şuradan .NET çalışma zamanı aracılığıyla bir meta veri güncelleştirme girişimi sırasında bir hata aldı.
+Bağlayıcı .NET çalışma zamanı aracılığıyla meta veri güncelleştirmesi gerçekleştirmeye çalışırken .NET çalışma zamanından bir hata aldı.
 
-`HRESULT` .NET çalışma zamanı yöntemi HRESULT ' dir. `error` olduğu. NET olarak sağlanan metni.
+`HRESULT`, .NET çalışma zamanı yönteminden HRESULT 'dir. `error`. NET tarafından sağlanan metin.
 
-Büyük olasılıkla eşleşmeyen bağlayıcı ve .NET çalışma zamanı vardır; Visual C++ yeniden yükleyin.
+Muhtemelen uyumsuz bir bağlayıcı ve .NET çalışma zamanına sahipsiniz; Görseli C++yeniden yükleyin.

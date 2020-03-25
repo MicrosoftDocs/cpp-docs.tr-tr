@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - R6017
 ms.assetid: df3ec5f5-6771-4648-ba06-0e26c6a1cc6a
-ms.openlocfilehash: 45f3b07f540cb72a955b19420130a5a806b750d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d868939425c11f13dffd84e28c1afee45e3b11a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299666"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197308"
 ---
 # <a name="c-runtime-error-r6017"></a>C Çalışma Zamanı Hatası R6017
 
-Çoklu iş parçacığı beklenmeyen kilitleme hatası
+beklenmeyen çoklu iş parçacığı kilit hatası
 
 > [!NOTE]
-> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle, uygulamanın koddaki bir hata nedeniyle oluşur.
+> Bir uygulamayı çalıştırırken bu hata iletisiyle karşılaşırsanız, bir iç sorun olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle uygulamanın kodundaki bir hata nedeniyle oluşur.
 >
 > Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
-> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Programı onarmak ya da yeniden yüklemek için **Denetim Masası** 'ndaki **uygulamalar ve Özellikler** veya **Programlar ve Özellikler** sayfasını kullanın.
+> - Yazılım güncelleştirmeleri için **Denetim Masası** 'ndaki **Windows Update** kontrol edin.
 > - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
-**Programcıları için bilgi**
+**Programcılar için bilgiler**
 
-İşlem, C çalışma zamanı çoklu iş parçacığı kilit sistem kaynağına erişmeye çalışılırken beklenmeyen bir hata aldı. Bu hata genellikle işlemi çalışma zamanı yığın verileri yanlışlıkla değiştirirse oluşur. Ancak, bu da çalışma zamanı kitaplığı veya işletim sistemi kod içinde bir iç hata neden olabilir.
+İşlem, bir sistem kaynağında C Runtime çoklu iş parçacığı kilidine erişmeye çalışırken beklenmeyen bir hata aldı. Bu hata genellikle işlem, çalışma zamanı yığın verilerini yanlışlıkla değiştirirse oluşur. Bununla birlikte, çalışma zamanı kitaplığındaki veya işletim sistemi kodundaki bir iç hata da oluşabilir.
 
-Bu sorunu düzeltmek için kodunuzu yığın bozulması hataları kontrol edin. Daha fazla bilgi ve örnekler için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ardından, uygulama dağıtımınız için en son yeniden dağıtılabilir dosyaları kullandığınızdan emin olun. Bilgi için [Visual C++ üzerinde dağıtım](../../windows/deployment-in-visual-cpp.md).
+Bu sorunu onarmak için kodunuzda yığın bozulması hatalarını kontrol edin. Daha fazla bilgi ve örnek için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Sonra, uygulama dağıtımınız için en son yeniden dağıtılabilir kullandığınızı kontrol edin. Bilgi için bkz. [Visual C++'te dağıtım ](../../windows/deployment-in-visual-cpp.md).

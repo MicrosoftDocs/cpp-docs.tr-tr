@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1087
 ms.assetid: 2fb4c14e-c6ea-45e4-8ce5-a51d15811a01
-ms.openlocfilehash: f682cc12b85fab9710eea0c8a67c1cb4154a0aed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69797f56d03913b7db6a584f13a066bbf2bad129
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208844"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203937"
 ---
 # <a name="fatal-error-c1087"></a>Önemli hata C1087
 
-FileType dosyasına Bildirilemiyor: 'file': ileti
+Dosya türü: ' dosya ': ileti
 
-Derleyici, bir g/ç işlemi tamamlanamıyor.
+Derleyici bir g/ç işlemini tamamlayamıyor.

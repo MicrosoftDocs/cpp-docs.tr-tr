@@ -7,24 +7,24 @@ helpviewer_keywords:
 - stored procedures, defining
 - stored procedures, OLE DB
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-ms.openlocfilehash: 0f4c4ad84abf2a5de2cdf09e7064396ea01eeebe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9bab086bf6982eae5779d3199cfd2ac2c8efe77f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176401"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211010"
 ---
 # <a name="defining-stored-procedures"></a>Saklı Yordamları Tanımlama
 
-Bir saklı yordam çağırmadan önce öncelikle, kullanarak tanımlamalısınız [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosu. Komut tanımladığınızda, soru işareti (?) parametreleriyle parametre işaretçisi olarak gösterin:
+Saklı yordam çağrılmadan önce, [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosunu kullanarak, önce onu tanımlamanız gerekir. Komutu tanımlarken parametre işaretçisi olarak bir soru işareti (?) ile parametreleri belirtin:
 
 ```cpp
 DEFINE_COMMAND_EX(CMySProcAccessor, _T("{INSERT {name, phone} INTO shippers (?,?)}"))
 ```
 
-Kod örnekleri bu konuda kullanılan söz dizimi (kullanımı küme ayraçları, vb.), SQL Server için özeldir. Saklı yordamlar kullandığınız sözdizimi, sağlayıcı göre değişebilir.
+Bu konudaki kod örneklerinde kullanılan sözdizimi (küme ayraçlarının kullanımı vb.) SQL Server özeldir. Saklı yordamlarınızda kullandığınız sözdizimi, kullandığınız sağlayıcıya göre değişiklik gösterebilir.
 
-Ardından, parametre eşlemesinde komutta gerçekleştikleri sırada parametreleri listeleme komutta kullanılan parametreleri belirtin:
+Ardından, parametre eşlemesinde, komutta kullanılan parametreleri belirtin ve parametreleri komutta gerçekleşdikleri sırada listeleme:
 
 ```cpp
 BEGIN_PARAM_MAP(CMySProcAccessor)
@@ -35,20 +35,20 @@ BEGIN_PARAM_MAP(CMySProcAccessor)
 END_PARAM_MAP()
 ```
 
-Önceki örnekte, olduğu bir saklı yordam tanımlar. Genellikle, için etkili bir biçimde yeniden kod bir veritabanı kümesini adlara sahip önceden tanımlı saklı yordamlar gibi içeren `Sales by Year` veya `dt_adduserobject`. SQL Server Enterprise Manager'ı kullanarak tanımlarını görüntüleyebilirsiniz. Şu şekilde çağırın (yerleşimini *?* parametreleri saklı yordamın arabirimde bağlıdır):
+Önceki örnekte olduğu gibi bir saklı yordam tanımlanmaktadır. Genellikle kodun verimli bir şekilde yeniden kullanılması için bir veritabanı `Sales by Year` veya `dt_adduserobject`gibi adlara sahip önceden tanımlanmış bir saklı yordamlar kümesi içerir. Tanımlarını SQL Server Enterprise Manager kullanarak görüntüleyebilirsiniz. Bunları şu şekilde çağırabilirsiniz (öğesinin yerleşimi *?* Parametreler, saklı yordamın arabirimine bağlıdır):
 
 ```cpp
 DEFINE_COMMAND_EX(CMySProcAccessor, _T("{CALL \"Sales by Year\" (?,?) }"))
 DEFINE_COMMAND_EX(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }"))
 ```
 
-Ardından, komut sınıfı bildirin:
+Ardından komut sınıfını bildirin:
 
 ```cpp
 class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>
 ```
 
-Son olarak, saklı yordam çağırmak `OpenRowset` gibi:
+Son olarak, aşağıdaki gibi `OpenRowset` saklı yordamını çağırın:
 
 ```cpp
 CSession m_session;
@@ -59,7 +59,7 @@ HRESULT OpenRowset()
 }
 ```
 
-Ayrıca veritabanı özniteliğini kullanarak bir saklı yordam tanımlayabilirsiniz unutmayın [db_command](../../windows/db-command.md) gibi:
+Ayrıca, veritabanı özniteliğini kullanarak [db_command](../../windows/db-command.md) aşağıdaki gibi bir saklı yordam tanımlayabileceğinizi unutmayın:
 
 ```cpp
 db_command("{ ? = CALL dbo.dt_adduserobject }")

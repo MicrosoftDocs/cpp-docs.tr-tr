@@ -38,12 +38,12 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: 1fc60db6db341d0667e24a81ae0f1394f54497ff
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: ff74ae93f01c7e8588a0eff1f48d3f6f0e6d5e81
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447374"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210775"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 
@@ -91,7 +91,7 @@ Sınıfınız `IDBInitializeImpl`türetilir.
 
 Veri kaynağı nesnelerinde zorunlu arabirim ve numaralandırıcılara yönelik isteğe bağlı arabirim.
 
-## <a name="idbinitializeimpl"></a>IDBInitializeImpl:: IDBInitializeImpl
+## <a name="idbinitializeimplidbinitializeimpl"></a><a name="idbinitializeimpl"></a>IDBInitializeImpl:: IDBInitializeImpl
 
 Oluşturucu.
 
@@ -105,7 +105,7 @@ IDBInitializeImpl();
 
 Tüm veri üyelerini başlatır.
 
-## <a name="initialize"></a>Idbinitializeımpl:: Initialize
+## <a name="idbinitializeimplinitialize"></a><a name="initialize"></a>Idbinitializeımpl:: Initialize
 
 Özellik desteğini hazırlarken veri kaynağı nesnesini başlatır.
 
@@ -119,7 +119,7 @@ STDMETHOD(Initialize)(void);
 
 *OLE DB Programcı başvurusunda* [ıdbınitiınitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) öğesine bakın.
 
-## <a name="uninitialize"></a>IDBInitializeImpl:: Uninitialize
+## <a name="idbinitializeimpluninitialize"></a><a name="uninitialize"></a>IDBInitializeImpl:: Uninitialize
 
 Özellik desteği gibi iç kaynakları boşaltarak veri kaynağı nesnesini başlatılmamış bir duruma koyar.
 
@@ -133,7 +133,7 @@ STDMETHOD(Uninitialize)(void);
 
 *OLE DB Programcı başvurusunda* [ıdbınitiınitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648(v=vs.85)) konusuna bakın.
 
-## <a name="dwstatus"></a>IDBInitializeImpl:: m_dwStatus
+## <a name="idbinitializeimplm_dwstatus"></a><a name="dwstatus"></a>IDBInitializeImpl:: m_dwStatus
 
 Veri kaynağı bayrakları.
 
@@ -161,7 +161,7 @@ enum DATASOURCE_FLAGS {
 |`DSF_PERSIST_DIRTY`|Veri kaynağı nesnesi kalıcılığı gerektiriyorsa (yani değişiklikler varsa) ayarlayın.|
 |`DSF_INITIALIZED`|Veri kaynağı başlatılmışsa ayarlanır.|
 
-## <a name="pcutlpropinfo"></a>IDBInitializeImpl:: m_pCUtlPropInfo
+## <a name="idbinitializeimplm_pcutlpropinfo"></a><a name="pcutlpropinfo"></a>IDBInitializeImpl:: m_pCUtlPropInfo
 
 DB özellikleri bilgileri için uygulama nesnesi işaretçisi.
 

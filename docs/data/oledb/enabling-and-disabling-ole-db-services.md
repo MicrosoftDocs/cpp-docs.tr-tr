@@ -5,18 +5,18 @@ helpviewer_keywords:
 - OLE DB services [OLE DB], enabling and disabling
 - service providers [OLE DB]
 ms.assetid: 445f97eb-32a8-41c2-ad26-1169f78a074f
-ms.openlocfilehash: df17a55950b03d4d63dea2199e3bc19bedb8a7e3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3016126d09b39ec74f4acb758a2176be05052648
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175348"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210970"
 ---
 # <a name="enabling-and-disabling-ole-db-services"></a>OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma
 
-OLE DB hizmet bileşeni Yöneticisi, bireysel hizmet bileşenlerinin genişletilmiş işlevselliği tüketici tarafından istenen karşılamak için kullanılabilir olup olmadığını belirlemek için sağlayıcı tarafından desteklenen özellikler tüketiciye tarafından belirtilen özellikleri karşılaştırır. Örneğin, kaydırılabilir bir imleç bir uygulama ister ve sağlayıcı yalnızca yalnızca ileri yönlü bir imleç destekliyorsa, hizmet bileşeni Yöneticisi istemci imleci altyapısı hizmet bileşeni kaydırılabilir işlevselliği sağlamak için kullanır. Uygulama işlevselliği varsayılan sağlayıcının satır kümesi tarafından desteklenen bağlı ve uygulamayı açıkça değil işlevleri, işlevlerini istemci tarafından döndürülen satır görünmeyebilir olduğunu istemek için özelliklerini ayarlayın İmleç Altyapısı. Kullanılabilmelidir, uygulamalar her zaman genişletilmiş işlevselliği açıkça isteyecek şekilde ayarlamanız gerekir gerektiğinde.
+OLE DB Service Component Manager, tüketici tarafından belirtilen özellikleri, tüketici tarafından istenen genişletilmiş işlevselliği karşılamak için bağımsız hizmet bileşenlerinin kullanılıp kullanılamayacağını öğrenmek için sağlayıcı tarafından desteklenen özelliklerle karşılaştırır. Örneğin, bir uygulama kaydırılabilir bir imleç isterse ve sağlayıcı yalnızca bir salt iletme imlecini destekliyorsa, hizmet Bileşen Yöneticisi kaydırılabilir işlevselliği sağlamak için Istemci Imleç altyapısı hizmeti bileşenini kullanır. Uygulamanın, sağlayıcının satır kümesinde varsayılan olarak desteklenen genişletilmiş işlevlere bağlı olması ve uygulamanın özelliği bu işlevselliği isteyecek şekilde açıkça ayarlanmamışsa, bu işlev Istemcinin döndürdüğü satır kümesinde görünmeyebilir İmleç altyapısı. Uygulamalar, birlikte kullanılabilmek üzere her zaman gerekli olan yerlerde Genişletilmiş işlevselliği isteyecek şekilde özelliklerinin ayarlanmış olması gerekir.
 
-Bazı durumlarda, sağlayıcı özellikleri hakkında varsayımlar de var olan uygulamalarla birlikte çalışmak için tek tek OLE DB hizmetleri devre dışı bırakmak gerekli olabilir. OLE DB hizmetleri bireysel hizmetlerin veya bağlantı tarafından bağlantı olarak veya tek bir sağlayıcıyı kullanan tüm uygulamalar için tüm hizmetleri devre dışı bırakma olanağı sağlar.
+Bazı durumlarda, bireysel OLE DB hizmetlerinin bir sağlayıcının özellikleri hakkında varsayımlar yapan mevcut uygulamalarla düzgün çalışmasını sağlamak gerekebilir. OLE DB hizmetler tek tek Hizmetleri veya tüm hizmetleri, tek bir sağlayıcı kullanan bağlantı ya da tüm uygulamalar için devre dışı bırakma yeteneği sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

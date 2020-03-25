@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C2410
+title: Derleyici hatası C2410
 ms.date: 11/04/2016
 f1_keywords:
 - C2410
 helpviewer_keywords:
 - C2410
 ms.assetid: b69b2de1-56f3-4ebc-8913-04ac57ffe8a1
-ms.openlocfilehash: 8b01a2f7b9c55fb57c880df5033538f4e45f76b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4d30ff0fbca7428fb1dcf252bcad50bd53488d7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282332"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80205733"
 ---
-# <a name="compiler-error-c2410"></a>Derleyici Hatası C2410
+# <a name="compiler-error-c2410"></a>Derleyici hatası C2410
 
-'identifier': 'context' içinde belirsiz üye adı
+' Identifier ': ' Context ' içinde belirsiz üye adı
 
-Tanımlayıcı, birden fazla yapı veya birleşim bu bağlamda bir üyesidir.
+Tanımlayıcı, bu bağlamda birden fazla yapının veya birleşimin üyesi.
 
-Bir yapı veya birleşim belirleyici bir hataya yol açmayan işlenen üzerinde kullanın. Bir yapı veya birleşim belirticisi türünde bir tanımlayıcıdır `struct` veya `union` (bir `typedef` adı veya yapı veya birleşim başvurulan aynı türden bir değişkene). İşlenen kullanılacak ilk (.) üye seçme işlecinin sol işleneni tanımlayıcısı olmalıdır.
+Hataya neden olan işlenen üzerinde bir yapı veya birleşim belirleyicisi kullanın. Bir yapı veya birleşim Belirleyicisi, `struct` veya `union` türünde bir tanıtıcıdır (`typedef` ad veya başvurulan yapı veya birleşim ile aynı türde bir değişken). Belirtici, işleneni kullanmak için ilk üye seçim işlecinin (.) sol işleneni olmalıdır.

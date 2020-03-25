@@ -4,18 +4,18 @@ ms.date: 10/29/2018
 helpviewer_keywords:
 - OLE DB provider templates, unsupported data types
 ms.assetid: f495e50f-530a-4fab-ab54-e0c359785845
-ms.openlocfilehash: e60f6cd4f7dca1ed3e176cabefc42f69946436a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e87aebc4d6f23343af9a2f966d2c522e95b304ea
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409076"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211503"
 ---
 # <a name="converting-data-not-supported-by-the-provider"></a>Sağlayıcı Tarafından Desteklenmeyen Veriyi Dönüştürme
 
-OLE DB sağlayıcı şablonu tüketici sağlayıcı tarafından desteklenmeyen bir veri türü istediğinde, kod `IRowsetImpl::GetData` veri türüne dönüştürmek için Msdadc.dll çağırır.
+Tüketici, sağlayıcı tarafından desteklenmeyen bir veri türü istediğinde, `IRowsetImpl::GetData` için OLE DB sağlayıcısı şablon kodu, veri türünü dönüştürmek için Msdadc. dll ' yi çağırır.
 
-Bir arabirim uygularsanız `IRowsetChange` veri dönüştürme gerektiren, dönüştürme yapmak için Msdaenum.dll çağırabilirsiniz. Kullanım `GetData`Atldb.h, örnek olarak içinde tanımlanmış.
+Veri dönüştürme gerektiren `IRowsetChange` gibi bir arabirim uygularsanız, dönüştürmeyi yapmak için Msdaenum. dll ' yi çağırabilirsiniz. Atldb. h içinde tanımlanan `GetData`, örnek olarak kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

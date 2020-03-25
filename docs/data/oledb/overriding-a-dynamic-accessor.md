@@ -6,18 +6,18 @@ helpviewer_keywords:
 - dynamic accessors
 - overriding, dynamic accessors
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
-ms.openlocfilehash: 01beab80fb8574e0caa4ad3054d174c60106ce94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d46531f2d4075df98081886dfdfd1f2cf65d9948
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282942"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209852"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>Dinamik Erişimciyi Geçersiz Kılma
 
-Kullandığınızda, dinamik erişimciyi gibi `CDynamicAccessor`, komut `Open` açık satır kümesi sütunu bilgilere göre otomatik olarak temel için erişimci yöntemi oluşturur. Sütunları tam olarak nasıl ilişkili denetlemek için dinamik erişimciyi geçersiz kılabilirsiniz.
+`CDynamicAccessor`gibi bir dinamik erişimci kullandığınızda, komut `Open` yöntemi, açılan satır kümesinin sütun bilgilerine göre sizin için otomatik olarak bir erişimci oluşturur. Sütunların nasıl bağlandığını tam olarak denetlemek için Dinamik erişimciyi geçersiz kılabilirsiniz.
 
-Dinamik erişimciyi geçersiz kılma için geçirin **false** son parametre olarak `CCommand::Open` yöntemi. Bu engeller `Open` erişimci otomatik olarak oluşturmasını. Ardından çağırabilirsiniz `GetColumnInfo` ve çağrı `AddBindEntry` bağlamak istediğiniz her bir sütun için. Aşağıdaki kod nasıl yapılacağını gösterir:
+Dinamik erişimciyi geçersiz kılmak için `CCommand::Open` metoduna son parametre olarak **false** geçirin. Bu, `Open` erişimci otomatik olarak oluşturmasını engeller. Daha sonra `GetColumnInfo` çağırıp, bağlamak istediğiniz her sütun için `AddBindEntry` çağırabilirsiniz. Aşağıdaki kod nasıl yapılacağını göstermektedir:
 
 ```cpp
 USES_CONVERSION;

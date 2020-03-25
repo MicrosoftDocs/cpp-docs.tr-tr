@@ -5,20 +5,20 @@ helpviewer_keywords:
 - Koenig lookup
 - argument-dependent lookup [C++]
 ms.assetid: c0928401-da2c-4658-942d-9ba4df149c35
-ms.openlocfilehash: d979b79c0f712ed35a42a44047dd1091010c72bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88811e8070fdfe398bc12734221dee772515d8bc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184486"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190544"
 ---
 # <a name="argument-dependent-name-koenig-lookup-on-functions"></a>İşlevlerde Bağımsız Değişkene Bağlı Ad (Koenig) Arama
 
-Derleyici bağımsız değişkene bağlı ad arama, nitelenmemiş bir işleve tanımını bulmak için kullanabilirsiniz. Bağımsız değişkene bağlı ad arama, Koenig araması olarak da adlandırılır. Bir işlev çağrısındaki her bağımsız değişken türünü hiyerarşisini ad alanları, sınıflar, yapılar, birleşimler veya şablonları içinde tanımlanır. Nitelenmemiş bir belirttiğinizde [sonek](../cpp/postfix-expressions.md) işlev çağrısı, derleyici her bağımsız değişken türü ile ilişkilendirilmiş hiyerarşi işlev tanımında arar.
+Derleyici, bağımsız değişkene bağlı ad aramasını, nitelenmemiş bir işlev çağrısının tanımını bulmak için kullanabilir. Bağımsız değişkene bağlı ad aramasına, KOENIG araması da denir. Bir işlev çağrısındaki her bağımsız değişkenin türü bir ad alanı, sınıf, yapı, birleşim veya şablon hiyerarşisi içinde tanımlanır. Nitelenmemiş bir [sonek](../cpp/postfix-expressions.md) işlev çağrısı belirttiğinizde, derleyici her bağımsız değişken türüyle ilişkili hiyerarşide işlev tanımını arar.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, bu işlevi derleyici notları `f()` bir bağımsız değişken `x`. Bağımsız değişken `x` türünde `A::X`, ad alanında tanımlı `A`. Derleyici, ad alanı arar `A` ve işlevi için bir tanım bulduğunda `f()` türünde bir bağımsız değişken almayan `A::X`.
+Örnekte, derleyici `f()` işlev `x`bir bağımsız değişken alır. Bağımsız değişken `x`, ad alanı `A`tanımlanmış `A::X`türüdür. Derleyici ad alanı `A` arar ve `A::X`türünde bir bağımsız değişken alan bir işlev `f()` tanımı bulur.
 
 ```cpp
 // argument_dependent_name_koenig_lookup_on_functions.cpp

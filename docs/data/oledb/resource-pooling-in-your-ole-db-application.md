@@ -7,24 +7,24 @@ helpviewer_keywords:
 - OLE DB, resource pooling
 - OLE DB providers, resource pooling
 ms.assetid: 2ead1bcf-bbd4-43ea-a307-bb694b992fc1
-ms.openlocfilehash: 786c2b31bb93b0691d80885c86377e2afba8c1dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3604f6eaaf0f34a0ff7e54826923c2aa92eef4a2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62243971"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209806"
 ---
 # <a name="resource-pooling-in-your-ole-db-application"></a>OLE DB Uygulamanızda Kaynak Havuzu
 
-Uygulamanızda havuzu yararlanmak için OLE DB hizmetleri, veri kaynağınızın alarak çağrılır emin olmalısınız `IDataInitialize` veya `IDBPromptInitialize`. Doğrudan kullanırsanız `CoCreateInstance` OLE DB hizmet sağlayıcısının CLSID tabanlı sağlayıcı çağırmak için çağrılır.
+Uygulamanızda havuzlamayı kullanabilmek için, `IDataInitialize` veya `IDBPromptInitialize`aracılığıyla veri kaynağınızı alarak OLE DB hizmetlerinin çağrıldığından emin olmanız gerekir. Sağlayıcıyı sağlayıcının CLSID 'SINE göre çağırmak için doğrudan `CoCreateInstance` kullanıyorsanız, hiçbir OLE DB hizmeti çağrılmaz.
 
-OLE DB hizmetleri bağlı veri kaynakları için bir başvuru olarak uzun havuzlarını sürdürür `IDataInitialize` veya `IDBPromptInitialize` tutulan ya da bağlantı kullanımda olduğundan uzun. Havuzları bir COM + 1.0 Hizmetleri veya Internet Information Services (IIS) ortamında otomatik olarak korunur. Uygulamanızın bir COM + 1.0 Hizmetleri veya IIS ortamına havuz dış avantajlarından yararlanır, başvuru tutmalısınız `IDataInitialize` veya `IDBPromptInitialize` veya en az bir bağlantı tutun. Son bağlantı uygulama tarafından serbest bırakıldığında havuzu yok değil emin emin olmak için başvurusunu korumanız veya bağlantı için uygulamanızın yaşam ömrü tutun.
+OLE DB Hizmetleri, `IDataInitialize` veya `IDBPromptInitialize` bir başvuru olduğu ve kullanımda olan bir bağlantı olduğu sürece bağlı veri kaynakları havuzlarını korur. Havuzlar Ayrıca bir COM+ 1,0 hizmetleri veya Internet Information Services (IIS) ortamı içinde otomatik olarak korunur. Uygulamanız bir COM+ 1,0 hizmetleri veya IIS ortamına ait havuzdan yararlanıyorsa, `IDataInitialize` veya `IDBPromptInitialize` bir başvuru tutmanız ya da en az bir bağlantıyı tutmanız gerekir. Son bağlantı uygulama tarafından serbest bırakıldığında havuzun yok edilmediğinden emin olmak için, uygulamanızın kullanım ömrü boyunca başvuruyu saklayın veya bağlantı üzerinde tutun.
 
-OLE DB hizmetleri içinden bağlantı zamanında çizilmez havuzunu tanımlamak, `Initialize` çağrılır. Bağlantı havuzundan çekildikten sonra başka bir havuza taşınamaz. Bu nedenle, arama gibi başlatma bilgileri değiştirmek şeyler uygulamanızdaki önlemek `UnInitialize` veya çağırma `QueryInterface` çağırmadan önce bir sağlayıcıya özgü arabirimi `Initialize`. Ayrıca bir istem değeri DBPROMPT_NOPROMPT ile kurulan bağlantıları havuza değildir. Ancak, isteyen aracılığıyla kurulan bir bağlantı alınan başlatma dizesi aynı veri kaynağına ek havuza alınmış bağlantıları kurmak için kullanılabilir.
+OLE DB Hizmetleri, `Initialize` çağrıldığı sırada bağlantının çizildiği havuzu belirler. Bağlantı havuzdan çizildikten sonra, farklı bir havuza taşınamaz. Bu nedenle, uygulamanızda `Initialize`çağrılmadan önce `QueryInterface` `UnInitialize` çağırma veya sağlayıcıya özgü bir arabirim için çağrı yapma gibi başlatma bilgilerini değiştiren bir şeyler yapmaktan kaçının. Ayrıca, DBPROMPT_NOPROMPT dışında bir istem değeriyle kurulan bağlantılar havuza alınmamış. Ancak, istem aracılığıyla kurulan bir bağlantıdan alınan başlatma dizesi, aynı veri kaynağına havuza alınmış ek bağlantılar oluşturmak için kullanılabilir.
 
-Bazı sağlayıcıların her oturum için ayrı bir bağlantı yapmanız gerekir. Varsa, bu ek bağlantılar dağıtılmış işlemde ayrı olarak listelenmesi gerekir. OLE DB hizmetleri önbellekler ve veri kaynağı başına tek bir oturumda kullanır, ancak uygulama, tek bir veri kaynağından aynı anda birden fazla oturum isterse, sağlayıcı ek bağlantılar ve ek işlem kayıtlar yapılması yukarı sonunda, Havuzda değil. Havuza alınmış bir ortamda tek bir veri kaynağından birden çok oturumu oluşturmak için daha her oturum için ayrı bir veri kaynağı oluşturmak için daha verimlidir.
+Bazı sağlayıcıların her oturum için ayrı bir bağlantı yapması gerekir. Bu ek bağlantılar, varsa, dağıtılmış işlemde ayrı olarak listeye alınmalıdır. OLE DB Hizmetleri, veri kaynağı başına tek bir oturumu önbelleğe alır ve yeniden kullanır, ancak uygulama tek bir veri kaynağından aynı anda birden fazla oturum istiyorsa, sağlayıcı ek bağlantılar yapıyor ve bu, ek işlem kayıtlar yapıyor havuza alınmamış. Tek bir veri kaynağından birden çok oturum oluşturmak yerine, havuza alınmış bir ortamdaki her oturum için ayrı bir veri kaynağı oluşturmak daha etkilidir.
 
-Son olarak, ADO otomatik olarak OLE DB kullandığından Hizmetleri ADO bağlantılar kurmak için kullanabileceğiniz ve havuzu ve kaydı otomatik olarak gerçekleşir.
+Son olarak, ADO OLE DB hizmetlerini otomatik olarak kullandığından, bağlantı kurmak için ADO 'YU kullanabilirsiniz ve havuz oluşturma ve kayıt otomatik olarak gerçekleşir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

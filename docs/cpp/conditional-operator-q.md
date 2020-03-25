@@ -8,12 +8,12 @@ helpviewer_keywords:
 - conditional operators [C++]
 - '? : operator'
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
-ms.openlocfilehash: 0a66b82682f90345518a2d520945e3aff1f78f89
-ms.sourcegitcommit: 170f5de63b0fec8e38c252b6afdc08343f4243a6
+ms.openlocfilehash: 8c00db06ed5c0347cb9c720e35bd3e517df2a13c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72276811"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189591"
 ---
 # <a name="conditional-operator-quest-"></a>Koşullu Işleç: &quest;:
 
@@ -25,17 +25,17 @@ expression ? expression : expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-Koşullu işleç ( **?:** ) üçlü bir işleçtir (üç işlenen alır). Koşullu işleç aşağıdaki gibi çalışmaktadır:
+Koşullu işleç ( **?:** ) üçlü bir işleçtir (üç işlenen alır). Koşullu işleç aşağıdaki gibi çalışır:
 
-- İlk işlenen örtük olarak **bool**değerine dönüştürülür. Değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlanır.
+- İlk işlenen örtük olarak **bool**değerine dönüştürülür. Değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlanır.
 
 - İlk işlenen **true** (1) olarak değerlendirilirse, ikinci işlenen değerlendirilir.
 
 - İlk işlenen **yanlış** (0) olarak değerlendirilirse, üçüncü işlenen değerlendirilir.
 
-Koşullu işlecin sonucu, ikinci veya üçüncü bir işlenenin değerlendirildiği bir sonucudur. Bir koşullu ifadede yalnızca son iki işlenenden yalnızca biri değerlendirilir.
+Koşullu işlecin sonucu, değerlendirilen işlenenin sonucudur — ikinci veya üçüncü. Son iki işlenenden yalnızca biri bir koşullu ifade içinde değerlendirilir.
 
-Koşullu ifadeler sağdan sola ilişkilendiriledir. İlk işlenen integral veya işaretçi türünde olmalıdır. Aşağıdaki kurallar ikinci ve üçüncü işlenenler için geçerlidir:
+Koşullu ifadeler sağdan sola birleşme özelliği içindedir. Birinci işlenen bir entegral veya işaretçi türü olmalıdır. Aşağıdaki kurallar ikinci ve üçüncü işlenenler için geçerlidir:
 
 - Her iki işlenen de aynı türde ise, sonuç o tür olur.
 
@@ -51,7 +51,7 @@ Koşullu ifadeler sağdan sola ilişkilendiriledir. İlk işlenen integral veya 
 
 - İşlenenler farklı türlere sahipse ve işlenenlerinden en az birinde Kullanıcı tanımlı tür varsa, ortak türü belirlemede dil kuralları kullanılır. (Aşağıdaki uyarıya bakın.)
 
-Önceki listede olmayan ikinci ve üçüncü işlenenlerin birleşimleri geçersizdir. Sonucun türü ortak türdür ve ikinci ve üçüncü işlenenleri aynı türde ve her ikisi de l-Values olduğunda bir l değeri olur.
+Yukarıdaki listede bulunmayan ikinci ve üçüncü işlenenlerin birleşimleri geçersizdir. Hem ikinci hem de üçüncü işlenen aynı türdeyse ve her ikisi de l-değeri ise, sonucun türü ortak türdür ve bir l-değerdir.
 
 > [!WARNING]
 >  İkinci ve üçüncü işlenenlerinin türleri özdeş değilse, C++ standart olarak belirtilen şekilde, karmaşık tür dönüştürme kuralları çağrılır. Bu dönüşümler, geçici nesnelerin oluşturulması ve yok edilmesi gibi beklenmeyen davranışlara neden olabilir. Bu nedenle, Kullanıcı tanımlı türleri koşullu işleçle (1) işlenen olarak kullanmaktan kaçının veya (2) Kullanıcı tanımlı türleri kullanıyorsanız, her işleneni açıkça ortak bir türe atamalısınız.
@@ -72,5 +72,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Yerleşik Işleçler, öncelik ve Ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Koşullu Ifade Işleci](../c-language/conditional-expression-operator.md)
+[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Koşullu İfade İşleci](../c-language/conditional-expression-operator.md)

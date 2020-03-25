@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C2095
 ms.assetid: 44f8ada1-974f-4e81-a408-33ac6695aa53
-ms.openlocfilehash: 192e6b4de596ddffb39ba20f60217904cd335c9f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 327f4406be241f3aff89fd357fc103398401ea8f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377039"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80207668"
 ---
 # <a name="compiler-error-c2095"></a>Derleyici Hatası C2095
 
-'function': Gerçek parametrenin türü 'void': 'number' parametresi
+' function ': gerçek parametrenin türü ' void ': parametre ' number '
 
-İşleve geçirilen parametre `void`, hangi izin verilmiyor. Void bir işaretçi kullanın ( `void *`) bunun yerine.
+İşleve geçirilen parametre tür `void`, buna izin verilmez. Bunun yerine void (`void *`) işaretçisi kullanın.
 
-`number` Hangi parametresi gösterir `void`.
+`number`, hangi parametrenin `void`olduğunu gösterir.

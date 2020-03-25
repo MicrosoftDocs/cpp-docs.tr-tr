@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C3552
+title: Derleyici hatası C3552
 ms.date: 11/04/2016
 f1_keywords:
 - C3552
 helpviewer_keywords:
 - C3552
 ms.assetid: 83401524-1bf1-44c0-8aca-a6eb35c4224c
-ms.openlocfilehash: 27c4707097f43266a3be57ad6dc9591ab6f34e97
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 567c92ddabbe2517700e4c67ef2c1ba899baada8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375944"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200674"
 ---
-# <a name="compiler-error-c3552"></a>Derleyici Hatası C3552
+# <a name="compiler-error-c3552"></a>Derleyici hatası C3552
 
-'typename': bir sonradan belirtilen dönüş türü, 'auto' içeremez
+' TypeName ': bir geç belirtilen dönüş türü ' Auto ' içeremez
 
-Kullanırsanız `auto` anahtar sözcüğü bir işlevin dönüş türü için yer tutucu olarak sonradan belirtilmiş dönüş türü sağlamanız gerekir. Ancak, başka bir kullanamazsınız `auto` sonradan belirtilen dönüş türü belirtmek için anahtar sözcüğü. Örneğin, aşağıdaki kod parçası hatası C3552 verir.
+`auto` anahtar sözcüğünü bir işlevin dönüş türü için yer tutucu olarak kullanırsanız, bir geç belirtilen dönüş türü belirtmeniz gerekir. Ancak, geç belirtilen dönüş türünü belirtmek için başka bir `auto` anahtar sözcük kullanamazsınız. Örneğin, aşağıdaki kod parçası hata C3552 verir.
 
 `auto myFunction->auto; // C3552`

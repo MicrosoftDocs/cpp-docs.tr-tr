@@ -6,63 +6,63 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t class
 ms.assetid: 3753a8a0-03d4-4cfd-8a9a-74872ea53971
-ms.openlocfilehash: ce19dbc5f55460bb4bdbdee17f4fbbbcc8c6fd60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eeaab22ded537cbbb211a79596b8383251af3ab7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154909"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189916"
 ---
-# <a name="comptrt-class"></a>_com_ptr_t Sınıfı
+# <a name="_com_ptr_t-class"></a>_com_ptr_t Sınıfı
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-A **_com_ptr_t** nesne bir COM arabirimi işaretçisini kapsüller ve "Akıllı" bir işaretçi olarak adlandırılır. Bu şablon sınıfının kaynak ayırmayı ve ayırmayı kaldırma işlev çağrılarıyla yönetir `IUnknown` üye işlevleri: `QueryInterface`, `AddRef`, ve `Release`.
+Bir **_com_ptr_t** NESNESI bir com arabirim işaretçisini kapsüller ve "Smart" işaretçisi olarak adlandırılır. Bu şablon sınıfı, `IUnknown` üye işlevlerine işlev çağrıları aracılığıyla kaynak ayırmayı ve ayırmayı yönetir: `QueryInterface`, `AddRef`ve `Release`.
 
-Akıllı bir işaretçi, genellikle _COM_SMARTPTR_TYPEDEF makro tarafından sağlanan typedef tanımı tarafından başvuruluyor. Bu makro bir arabirim adı ve IID alır ve bir alt uzmanlaşması bildirir **_com_ptr_t** arabirimi yanı sıra son eki adıyla `Ptr`. Örneğin:
+Akıllı işaretçiye genellikle _COM_SMARTPTR_TYPEDEF makrosu tarafından verilen typedef tanımının başvurduğu. Bu makro bir arabirim adı ve IID alır ve arabirimin adı artı bir `Ptr`sonekini içeren **_com_ptr_t** bir özelleştirmesi bildirir. Örneğin:
 
 ```cpp
 _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
 ```
 
-bildirir **_com_ptr_t** özelleştirmesi `IMyInterfacePtr`.
+**_com_ptr_t** özelleştirme `IMyInterfacePtr`bildirir.
 
-Bir dizi [işlev şablonları](../cpp/relational-function-templates.md), bu şablon üyeleri sınıf, akıllı bir işaretçi karşılaştırma işlecinin sağ tarafında destek karşılaştırmalar.
+Bu şablon sınıfının üyesi olmayan bir dizi [işlev şablonu](../cpp/relational-function-templates.md), karşılaştırma işlecinin sağ tarafında bir akıllı işaretçiyle karşılaştırmaları destekler.
 
-### <a name="construction"></a>Oluşturma
-
-|||
-|-|-|
-|[_com_ptr_t](../cpp/com-ptr-t-com-ptr-t.md)|Oluşturur bir **_com_ptr_t** nesne.|
-
-### <a name="low-level-operations"></a>Düşük düzey işlemler
+### <a name="construction"></a>İnşaat
 
 |||
 |-|-|
-|[AddRef](../cpp/com-ptr-t-addref.md)|Çağrıları `AddRef` üye işlevinin `IUnknown` kapsüllenmiş arabirim işaretçisini üzerinde.|
-|[Attach](../cpp/com-ptr-t-attach.md)|Bu akıllı işaretçinin türü ham arabirim işaretçisi kapsüller.|
-|[CreateInstance](../cpp/com-ptr-t-createinstance.md)|Verilen nesne yeni bir örneğini oluşturur bir `CLSID` veya `ProgID`.|
+|[_com_ptr_t](../cpp/com-ptr-t-com-ptr-t.md)|**_Com_ptr_t** nesnesi oluşturur.|
+
+### <a name="low-level-operations"></a>Düşük düzey Işlemler
+
+|||
+|-|-|
+|[AddRef](../cpp/com-ptr-t-addref.md)|Kapsüllenmiş arabirim İşaretçisinde `IUnknown` `AddRef` üye işlevini çağırır.|
+|[Attach](../cpp/com-ptr-t-attach.md)|Bu akıllı işaretçinin türünün ham arabirim işaretçisini kapsüller.|
+|[CreateInstance](../cpp/com-ptr-t-createinstance.md)|`CLSID` veya `ProgID`verilen bir nesnenin yeni bir örneğini oluşturur.|
 |[Detach](../cpp/com-ptr-t-detach.md)|Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.|
-|[GetActiveObject](../cpp/com-ptr-t-getactiveobject.md)|Verilen bir nesnenin varolan örneğine için bir `CLSID` veya `ProgID`.|
+|[GetActiveObject](../cpp/com-ptr-t-getactiveobject.md)|`CLSID` veya `ProgID`verilen bir nesnenin var olan örneğine iliştirir.|
 |[GetInterfacePtr](../cpp/com-ptr-t-getinterfaceptr.md)|Kapsüllenmiş arabirim işaretçisini döndürür.|
-|[QueryInterface](../cpp/com-ptr-t-queryinterface.md)|Çağrıları `QueryInterface` üye işlevinin `IUnknown` kapsüllenmiş arabirim işaretçisini üzerinde.|
-|[Sürüm](../cpp/com-ptr-t-release.md)|Çağrıları `Release` üye işlevinin `IUnknown` kapsüllenmiş arabirim işaretçisini üzerinde.|
+|[QueryInterface](../cpp/com-ptr-t-queryinterface.md)|Kapsüllenmiş arabirim İşaretçisinde `IUnknown` `QueryInterface` üye işlevini çağırır.|
+|[Sürüm](../cpp/com-ptr-t-release.md)|Kapsüllenmiş arabirim İşaretçisinde `IUnknown` `Release` üye işlevini çağırır.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](../cpp/com-ptr-t-operator-equal.md)|Mevcut bir yeni bir değer atar **_com_ptr_t** nesne.|
-|[işleçler ==,! =, \<, >, \<=, > =](../cpp/com-ptr-t-relational-operators.md)|NULL veya başka bir akıllı işaretçinin, ham arabirim işaretçisi için akıllı işaretçi nesnesinin karşılaştırın.|
+|[işleç =](../cpp/com-ptr-t-operator-equal.md)|Varolan bir **_com_ptr_t** nesnesine yeni bir değer atar.|
+|[işleçler = =,! =, \<, >, \<=, > =](../cpp/com-ptr-t-relational-operators.md)|Akıllı işaretçi nesnesini başka bir akıllı işaretçi, ham arabirim işaretçisi veya NULL ile karşılaştırın.|
 |[Ayıklayıcıları](../cpp/com-ptr-t-extractors.md)|Kapsüllenmiş COM arabirimi işaretçisini ayıklayın.|
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<comip.h >
+**Üstbilgi:** \<comıp. h >
 
-**Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)
+**Lib:** comsuppw. lib veya comsuppwd. lib (daha fazla bilgi için bkz. [/zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

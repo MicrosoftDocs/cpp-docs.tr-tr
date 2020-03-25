@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2397
+title: Derleyici hatası C2397
 ms.date: 11/04/2016
 f1_keywords:
 - C2397
 ms.assetid: b418cf5a-d50d-4a6c-98a7-994ae35046d1
-ms.openlocfilehash: 61f23269e0b6ed65a485f11e49e492d2248b8a42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02a8bb09e0b22619bd61e6c4675057263a62a9d5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378940"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206021"
 ---
-# <a name="compiler-error-c2397"></a>Derleyici Hatası C2397
+# <a name="compiler-error-c2397"></a>Derleyici hatası C2397
 
-'type_1' öğesinden 'type_2' öğesine dönüştürme bir daraltma dönüşümü gerektirir
+' type_1 ' değerinden ' type_2 ' öğesine dönüştürme bir daraltma dönüştürmesi gerektirir
 
-Örtük bir daraltma dönüşümü Tekdüzen başlatma kullanırken bulunamadı.
+Tekdüzen başlatma kullanılırken örtük bir daraltma dönüştürmesi bulundu.
 
-C dili atama ve başlatma örtük daraltma dönüştürmelerini verir ve beklenmeyen daraltma bir birçok kod hatalarının nedenini olsa da C++ cins izler. Kodu daha güvenli hale getirmek için bir daraltma dönüşümü bir başlatma listesi oluştuğunda C++ standardı bir tanılama iletisi gerektirir. Visual C++'da tanılama derleyici hatası C2397 Tekdüzen başlatma desteklenen söz dizimleri başına Visual Studio 2015'te kullanıldığında. Derleyicinin oluşturduğu [Derleyici Uyarısı (düzey 1) C4838](../../error-messages/compiler-warnings/compiler-warning-level-1-c4838.md) kullanırken listesi veya Visual Studio 2013 tarafından desteklenen toplu başlatma söz dizimi.
+C dili, atamalar ve başlatma içindeki örtük daraltma dönüştürmelerine izin verir C++ ve beklenmeyen daraltma birçok kod hatasının nedeni olsa da bu şekilde ayarlanır. Kodu daha güvenli hale getirmek için C++ , bir başlatma listesinde daraltma dönüştürmesi gerçekleştiğinde standart bir tanılama iletisi gerektirir. Visual Studio C++2015 ' de başlangıçta desteklenen Tekdüzen başlatma sözdizimi kullanılırken, Visual Studio 'Da tanılama derleyici hatası C2397. Derleyici, Visual Studio 2013 tarafından desteklenen liste veya toplama başlatma sözdizimini kullanırken [Derleyici Uyarısı (düzey 1) C4838](../../error-messages/compiler-warnings/compiler-warning-level-1-c4838.md) oluşturur.
 
-Dönüştürülen değerler aralığı olası hedef sığabilen bildiğiniz bir daraltma dönüşümü uygun olabilir. Bu durumda, derleyici sağladığından daha fazla bilgi edinmek. Bir daraltma dönüşümü kasıtlı olarak yaparsanız, amacınızı açık bir statik dönüştürme kullanarak yapın. Aksi takdirde, bu hata iletisini neredeyse her zaman kodunuzda hata sahip gösterir. Bu nesneleri başlatır girişleri işleyebilecek büyüklükte türlere olmasını sağlayarak düzeltebilirsiniz.
+Bir daraltma dönüştürmesi, olası dönüştürülen değer aralığının hedefe uyabileceklerini bildiğiniz durumlarda uygulanabilir. Bu durumda, derleyicisinden daha fazlasını öğrenmiş olursunuz. Özellikle bir daraltma dönüştürmesi yaparsanız, bir statik atama kullanarak amaclarınızı açık hale getirin. Aksi takdirde, bu hata iletisi neredeyse her zaman kodunuzda bir hata olduğunu gösterir. Başlattığınız nesnelerin girdileri işlemek için yeterince büyük türlere sahip olduğundan emin olarak bu çözümü çözebilirsiniz.
 
-Aşağıdaki örnek, C2397 oluşturur ve bunu çözmenin yollarından biri gösterilmektedir:
+Aşağıdaki örnek C2397 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```
 // C2397.cpp -- C++ narrowing conversion diagnostics

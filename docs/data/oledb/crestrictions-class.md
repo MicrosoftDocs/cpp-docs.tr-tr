@@ -13,16 +13,16 @@ helpviewer_keywords:
 - CRestrictions class
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-ms.openlocfilehash: 309bb7e707d649cf78528f3d0df6cf8e43201823
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a4c86987ceff0f04986d32011ba941e0d2319fe
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361886"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211308"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 
-Şema satır kümeleri için kısıtlamaları belirlemenizi sağlayan genel bir sınıf.
+Şema satır kümeleri için kısıtlamalar belirtmenize olanak sağlayan bir genel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,18 +34,18 @@ class CRestrictions :
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Erişimci için kullanılan sınıf.
 
-*nRestrictions*<br/>
-Şema satır kümesi için kısıtlama sütun sayısı.
+*Nkısıtlamalar*<br/>
+Şema satır kümesi için kısıtlama sütunlarının sayısı.
 
-*pguid*<br/>
-GUID şema için bir işaretçi.
+*PGUID*<br/>
+Şemanın GUID 'sine yönelik bir işaretçi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbsch.h
+**Üstbilgi:** Atldbsch. h
 
 ## <a name="members"></a>Üyeler
 
@@ -53,11 +53,11 @@ GUID şema için bir işaretçi.
 
 |||
 |-|-|
-|[açın](#open)|Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.|
+|[Açın](#open)|Kullanıcı tarafından sağlanan kısıtlamalara göre bir sonuç kümesi döndürür.|
 
-## <a name="open"></a> CRestrictions::Open
+## <a name="crestrictionsopen"></a><a name="open"></a>CRestrictions:: Open
 
-Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.
+Kullanıcı tarafından sağlanan kısıtlamalara göre bir sonuç kümesi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -75,14 +75,14 @@ HRESULT Open(const CSession& session,
 
 #### <a name="parameters"></a>Parametreler
 
-*Oturumu*<br/>
-[in] Veri kaynağına bağlanmak için kullanılan var olan bir oturum nesnesi olarak belirtir.
+*oturumuna*<br/>
+'ndaki Veri kaynağına bağlanmak için kullanılan mevcut bir oturum nesnesini belirtir.
 
 *lpszParam*<br/>
-[in] Şema satır kümesi kısıtlamaları belirtir.
+'ndaki Şema satır kümesi üzerindeki kısıtlamaları belirtir.
 
 *bBind*<br/>
-[in] Sütun eşlemesi otomatik olarak bağlamak belirtir. Varsayılan değer **true**, otomatik olarak bağlanacak sütun eşlemesi neden olur. Ayarı *bBind* için **false** el ile bağlayabilirsiniz böylece sütun eşlemesi otomatik bağlama engeller. (El ile OLAP kullanıcılara belirli ilgilenilen bağlamadır.)
+'ndaki Sütun eşlemesinin otomatik olarak bağlanıp bağlanmayacağını belirtir. Varsayılan değer **true**'dur, bu da sütun eşlemesinin otomatik olarak bağlanmasına neden olur. *BBind* öğesinin **false** olarak ayarlanması, el ile bağlayabilmeniz için sütun eşlemesinin otomatik bağlamasını engeller. (El ile bağlama, OLAP kullanıcılarına özellikle ilgi çekici bir şekilde yapılır.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -90,12 +90,12 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şema satır kümesinde en fazla yedi kısıtlamaları belirtebilirsiniz.
+Bir şema satır kümesinde en fazla yedi kısıtlama belirtebilirsiniz.
 
-Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.
+Her şema satır kümesinde tanımlı kısıtlamalar hakkında bilgi için bkz. [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [Şema Satır Kümesi Sınıfları ve Typedef Sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)

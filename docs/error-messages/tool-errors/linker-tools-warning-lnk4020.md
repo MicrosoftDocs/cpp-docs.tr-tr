@@ -5,17 +5,17 @@ f1_keywords:
 - LNK4020
 helpviewer_keywords:
 - LNK4020
-ms.openlocfilehash: 7810fd9a97a8f6e22ad362819a024358a9f4b07c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e818909cc0b590b0f7727846cfd7b469e8bc0e3f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298587"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194232"
 ---
 # <a name="linker-tools-warning-lnk4020"></a>Bağlayıcı Araçları Uyarısı LNK4020
 
-> tür kaydı '*filename*' bozuk; bazı sembollere ve türlere hata ayıklayıcısından erişilemeyebilir
+> '*filename*' içindeki bir tür kaydı bozuk; Bazı simgelere ve türlere hata ayıklayıcısından erişilemeyebilir
 
-PDB dosyası *filename* bozuk tür kaydı yok.
+PDB dosya *dosya adında* bozuk bir tür kaydı vardır.
 
-Bu sorun genellikle diğer derleme sorunlarına ikincil; Bu ilk bildirilen derleme sorun olmadığı sürece diğer hatalar ve uyarılarla ilgili ilk. Bu ilk bildirilen sorunu ise, yapı dizinlerinizi temizleyin ve projenizi yeniden derleyin gerekebilir. Paralel derleme süreçlerini kullanmaya derleme serileştirme sırasında hata devam ederse görürsünüz.
+Bu sorun genellikle diğer derleme sorunları için ikincildir; Bu ilk bildirilen derleme sorunu değilse, önce diğer hatalar ve uyarılarla başa çıkın. Bu ilk bildirilen sorun ise, derleme dizinlerinizi temizlemeniz ve projenizi yeniden oluşturmanız gerekebilir. Paralel derleme süreçlerini kullanıyorsanız, derlemenizi serileştirdiğiniz zaman hatanın devam edip etmediğini inceleyin.

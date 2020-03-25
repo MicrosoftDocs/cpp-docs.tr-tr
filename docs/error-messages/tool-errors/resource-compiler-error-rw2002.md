@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-ms.openlocfilehash: 1726e6ce74dfd7b6b0c6e4b69771a826cdf07774
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.openlocfilehash: 9c5c2824778a679627bd3008276849890f43ac7e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71230415"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190696"
 ---
 # <a name="resource-compiler-error-rw2002"></a>Kaynak Derleyicisi Hatası RW2002
 
@@ -21,7 +21,7 @@ Ayrıştırma hatası
 
 1. **Hızlandırıcı türü gerekli (ASCII veya VIRTKEY)**
 
-   `type` **Hızlandırıcılar** deyimindeki alan, ASCII ya da virtkey değerini içermelidir.
+   **Hızlandırıcılar** deyimindeki `type` alanı ASCII ya da VIRTKEY değerini içermelidir.
 
 1. **Hızlandırıcı tablosunda başlatma bekleniyor**
 
@@ -49,7 +49,7 @@ Ayrıştırma hatası
 
 1. **Denetim karakteri Aralık dışında [^ A-^ Z]**
 
-   **Hızlandırıcılar** deyimindeki bir denetim karakteri geçersiz. Şapka işaretini () izleyen karakter **^** ve Z (dahil) arasında olmalıdır.
+   **Hızlandırıcılar** deyimindeki bir denetim karakteri geçersiz. Giriş işaretini ( **^** ) Izleyen karakter bir ile Z (dahil) arasında olmalıdır.
 
 1. **Boş menülere izin verilmiyor**
 
@@ -65,11 +65,11 @@ Ayrıştırma hatası
 
 1. **Hızlandırıcı tablosunda virgül bekleniyor**
 
-   Kaynak derleyicisi, `event` **Hızlandırıcılar** deyimindeki ve *ıdvalue* alanları arasında virgül gerektirir.
+   Kaynak derleyicisi, **Hızlandırıcılar** deyimindeki `event` ve *ıdvalue* alanları arasında bir virgül gerektirir.
 
 1. **Beklenen denetim sınıfı adı**
 
-   **İletişim deyimindeki** bir **Denetim** ifadesinin alanıaşağıdakitürlerdenbiriolmalıdır:`class` DÜĞME, AÇıLAN kutusu, düzenleme, LISTBOX, KAYDıRMA çubuğu, STATIK veya Kullanıcı tanımlı. Sınıfın doğru yazıldığından emin olun.
+   **İletişim** deyimindeki bir **Denetim** ifadesinin `class` alanı şu TÜRLERDEN biri OLMALıDıR: düğme, ComboBox, düzenleme, LISTBOX, kaydırma çubuğu, statik veya Kullanıcı tanımlı. Sınıfın doğru yazıldığından emin olun.
 
 1. **Beklenen yazı tipi yüzü adı**
 
@@ -85,11 +85,11 @@ Ayrıştırma hatası
 
 1. **Beklenen sayısal komut değeri**
 
-   Kaynak derleyicisi, **Hızlandırıcılar** bildiriminde bir sayısal *ıdvalue* alanı bekliyordu. Değeri belirtmek için bir `#define` sabit kullandıysanız ve sabitin doğru yazıldığından emin olun.
+   Kaynak derleyicisi, **Hızlandırıcılar** bildiriminde bir sayısal *ıdvalue* alanı bekliyordu. Değeri belirtmek için `#define` sabiti kullandığınızdan ve sabitin doğru yazıldığından emin olun.
 
 1. **Dize tablosunda sayısal sabit bekleniyor**
 
-   Bir `#define` ifadede tanımlanan sayısal bir sabit, bir **StringTable** deyimindeki **BEGIN** anahtar sözcüğünü hemen izlemelidir.
+   Bir `#define` ifadesinde tanımlanan sayısal bir sabit, bir **StringTable** deyimindeki **BEGIN** anahtar sözcüğünü hemen izlemelidir.
 
 1. **Beklenen sayısal nokta boyutu**
 
@@ -105,19 +105,19 @@ Ayrıştırma hatası
 
 1. **Beklenen dize veya sabit Hızlandırıcı komutu**
 
-   Kaynak derleyicisi hızlandırıcı için ne tür bir anahtar ayarlanmakta olduğunu saptayamadı. `event` **Hızlandırıcılar** deyimindeki alan geçersiz olabilir.
+   Kaynak derleyicisi hızlandırıcı için ne tür bir anahtar ayarlanmakta olduğunu saptayamadı. **Hızlandırıcılar** deyimindeki `event` alanı geçersiz olabilir.
 
 1. **KIMLIK için sayı bekleniyor**
 
-   **İletişim** deyimindeki bir denetim ifadesinin `id` alanı için bir sayı bekleniyor. Denetim kimliği için bir sayı veya `#define` deyiminiz olduğundan emin olun.
+   **İletişim** deyimindeki bir denetim ifadesinin `id` alanı için bir sayı bekleniyor. Denetim KIMLIĞI için bir sayı veya `#define` deyiminiz olduğundan emin olun.
 
 1. **İletişim sınıfında tırnak içinde dize bekleniyor**
 
-   **DIALOG deyimindeki** Class seçeneğinin alanı,çifttırnakişaretiiçinealınmışbirtamsayıveyadize`class` olmalıdır.
+   **Iletişim KUTUSUNDAKI** sınıf seçeneğinin `class` alanı, çift tırnak işareti içine alınmış bir tamsayı veya dize olmalıdır.
 
 1. **İletişim kutusunda tırnak işaretli dize bekleniyor**
 
-   DIALOG `captiontext` deyimindeki CAPTION seçeneğinin alanı, çift tırnak işareti içine alınmış bir ASCII karakter dizesi olmalıdır.
+   **Iletişim KUTUSUNDAKI** CAPTION seçeneğinin `captiontext` alanı, çift tırnak işareti içine alınmış bir ASCII karakter dizesi olmalıdır.
 
 1. **Dosya bulunamadı: dosya adı**
 
@@ -129,11 +129,11 @@ Ayrıştırma hatası
 
 1. **Geçersiz Hızlandırıcı**
 
-   Hızlandırıcılar `event` deyimindeki bir alan tanınmıyor veya en fazla iki karakter uzunluğunda.
+   **Hızlandırıcılar** deyimindeki bir `event` alanı tanınmıyor veya en fazla iki karakter uzunluğunda.
 
 1. **Geçersiz Hızlandırıcı türü (ASCII veya VIRTKEY)**
 
-   `type` **Hızlandırıcılar** deyimindeki alan, ASCII ya da virtkey değerini içermelidir.
+   **Hızlandırıcılar** deyimindeki `type` alanı ASCII ya da VIRTKEY değerini içermelidir.
 
 1. **Geçersiz denetim karakteri**
 
@@ -141,7 +141,7 @@ Ayrıştırma hatası
 
 1. **Geçersiz denetim türü**
 
-   Bir **Iletişim kutusundaki** her denetim ifadesinin aşağıdakilerden biri olması gerekir: CHECKBOX, COMBOBOX, CONTROL, CTEXT, DEFBASMA, EDITTEXT, GROUPBOX, ICON, LISTBOX, LTEXT, BASMCON, RADIOBUTTON, RTEXT, KAYDIRMA ÇUBUĞU. Bu denetim deyimlerinin doğru yazıldığından emin olun.
+   Bir **Iletişim kutusundaki** her denetim ifadesinin aşağıdakilerden biri olması gerekır: CheckBox, ComboBox, Control, ctext, DEFBASMA, EDITTEXT, GroupBox, ıCON, LISTBOX, LTEXT, BASMCON, RADIOBUTTON, RTEXT, kaydırma çubuğu. Bu denetim deyimlerinin doğru yazıldığından emin olun.
 
 1. **Geçersiz tür**
 
@@ -149,7 +149,7 @@ Ayrıştırma hatası
 
 1. **Denetimde beklenen metin dizesi veya sıra sayısı**
 
-   **İletişim** deyimindeki bir **Denetim** ifadesinin *metin* alanı, denetim türüne bir metin dizesi veya bir sıralı başvuru olmalıdır. Sıra kullanılıyorsa, denetim için bir `#define` deyiminiz olduğundan emin olun.
+   **İletişim** deyimindeki bir **Denetim** ifadesinin *metin* alanı, denetim türüne bir metin dizesi veya bir sıralı başvuru olmalıdır. Sıra kullanılıyorsa, denetim için bir `#define` bildirimine sahip olduğunuzdan emin olun.
 
 1. **Eşleşmeyen parantezler**
 

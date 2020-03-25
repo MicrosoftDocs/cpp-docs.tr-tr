@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - U1086
 ms.assetid: 6d3cd68a-ead6-4a6d-a205-01324785de7e
-ms.openlocfilehash: 2b0768697821b732a918403fedb463bdb127c54b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 166e5b49f765bef4145fe966577dfbaac228ca39
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399921"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193362"
 ---
 # <a name="nmake-fatal-error-u1086"></a>NMAKE Önemli Hatası U1086
 
 **çıkarım kuralı bağımlılara sahip olamaz**
 
-İki nokta üst üste (**:**) içinde bir çıkarma kuralı bunlardan birini gelmelidir:
+Bir çıkarım kuralında iki nokta üst üste ( **:** ) aşağıdakilerden biri gelmelidir:
 
 - Yeni satır karakteri
 
-- Noktalı virgül (**;**), hangi sonrasında bir komut tarafından
+- Bir komut tarafından izlenen noktalı virgül ( **;** )
 
-- Numara işareti (**#**), hangi sonrasında bir açıklamaya göre
+- Bir açıklama tarafından izlenen numara işareti ( **#** )

@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1121
 ms.assetid: d16e51c5-4c50-4303-a028-ca60f7a3273c
-ms.openlocfilehash: 9022879124517f231bf7f88cfabe813c4eb3e58d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 785c2219b4357ad422b598c2ed8a71cd07204dd1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182671"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203611"
 ---
 # <a name="fatal-error-c1121"></a>Önemli hata C1121
 
-CryptoAPI'ye kopyalama başarısız oldu
+CryptoAPI 'ye çağrı başarısız oldu
 
-Derleyici, bir çağrı CryptoAPI ve çağrısı başarısız hale. Visual Studio'yu yeniden yükleyin ve büyük olasılıkla işletim sistemini yükleyin.
+Derleyici CryptoAPI 'ye bir çağrı yaptı ve çağrı başarısız oldu. Visual Studio 'Yu yeniden yükleyin ve işletim sistemini büyük olasılıkla yeniden yükleyin.

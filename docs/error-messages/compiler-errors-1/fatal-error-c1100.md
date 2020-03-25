@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1100
 ms.assetid: d4d877ea-acd6-4ec7-961e-55e460d98820
-ms.openlocfilehash: 50ff0319e111d30ff93a39a728c19287e16511a0
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a730e46f3af8e5472a2702741e6362b601f8afaa
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501051"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203871"
 ---
 # <a name="fatal-error-c1100"></a>Önemli hata c1100
 

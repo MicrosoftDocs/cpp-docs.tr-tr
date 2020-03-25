@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0041
 ms.assetid: dc9f4cf9-6bd5-4222-89e8-7802a59bb96b
-ms.openlocfilehash: b0fceff05ffe35515965b7e0a880c8b4c941b07e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb6469b1daf193223a9b3361cc3e4bfb96d0c751
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297729"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191944"
 ---
 # <a name="project-build-warning-prj0041"></a>Proje Derleme Uyarısı PRJ0041
 
-Eksik bulunamıyor bağımlılık 'dosya' dosyası için ' bağımlılığı'. Projeniz derlenmeye devam edebilir, ancak bu dosya bulunana kadar proje güncel sayılmayabilir devam edebilir.
+' File ' dosyası için eksik ' Dependency ' bağımlılığı bulunamıyor. Projeniz yine de oluşturulabilir, ancak bu dosya bulunana kadar güncel görülmeye devam edebilir.
 
-Bir dosya (kaynak dosya veya.idl/.odl dosyası gibi yer alan, proje sistemi değil çözümlenemiyor INCLUDE deyimi.
+Bir dosya (örneğin, kaynak dosyası veya. IDL/. odl dosyası), proje sisteminin çözemediği bir içerme ifadesini içeriyordu.
 
-Proje sistemi önişlemci deyimleri (örneğin, #if) işlemez olduğundan, soruna neden olan deyim aslında yapının bir parçası olmayabilir.
+Proje sistemi önişlemci deyimlerini (örneğin #if) işlemediğinden, sorunlu deyim gerçekte derleme kapsamında olmayabilir.
 
-Bu uyarıyı çözmek için tüm gereksiz kodda .rc dosyaları silin veya uygun bir ad yer tutucusu dosyaları ekleyin.
+Bu uyarıyı çözmek için,. RC dosyalarındaki tüm gereksiz kodu silin veya uygun adın yer tutucu dosyalarını ekleyin.

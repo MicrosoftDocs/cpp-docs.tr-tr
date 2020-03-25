@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0025
 ms.assetid: 57725c78-bc63-44f3-9667-2969b2d7c41d
-ms.openlocfilehash: 5f3699dce75a20b9cc6e1d712bc5702543ab7b6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30445a3abc2a6ad05c983448f57ed5b93df6e61f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383957"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192360"
 ---
 # <a name="project-build-error-prj0025"></a>Proje Derleme Hatası PRJ0025
 
-> Toplu iş dosyası '*dosya*' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe sahip.
+> Toplu iş dosyası '*Dosya*', kullanıcının ANSI kod sayfasına çevrilemeyen Unicode içerikleri içeriyor.
 >
-> *UNICODE dosya içeriği*
+> *Dosyanın UNICODE içeriği*
 
-Proje sistemi Unicode içeriğe özel bir kural oluşturun veya derleme kullanıcının geçerli ANSI kod sayfasına doğru çevrilemez olay bulunamadı.
+Proje sistemi, kullanıcının geçerli ANSI kod sayfasına doğru çevrilemeyen özel bir yapı kuralında veya derleme olayında Unicode içerikleri buldu.
 
-Bu hata için çözüm derleme kuralı içeriğini güncelleştirmek veya derleme ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için olay sağlamaktır.
+Bu hatanın çözümü, ANSI kullanmak üzere derleme kuralı veya derleme olayının içeriğini güncelleştirmek ya da kod sayfasını bilgisayarınıza yüklemek ve sistem varsayılanı olarak ayarlamak içindir.
 
-Özel hakkında daha fazla bilgi için derleme adımları ve derleme olayları, bkz: [anlama özel derleme adımlarını ve derleme olayları](../../build/understanding-custom-build-steps-and-build-events.md).
+Özel derleme adımları ve derleme olayları hakkında daha fazla bilgi için bkz. [özel derleme adımlarını anlama ve olayları oluşturma](../../build/understanding-custom-build-steps-and-build-events.md).

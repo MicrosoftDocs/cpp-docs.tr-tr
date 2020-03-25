@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - U1077
 ms.assetid: 70d989f8-ef34-4ad7-8fe0-5b800556b2a1
-ms.openlocfilehash: 6b0e7b13628c9f38231f4a8772e9babadaf90636
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da50af5a1dc0fc6086629d1f26ebe949a25d6faf
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366959"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193505"
 ---
 # <a name="nmake-fatal-error-u1077"></a>NMAKE Önemli Hatası U1077
 
-'program': dönüş kodu 'value'
+' program ': dönüş kodu ' Value '
 
-Söz konusu komut veya program başarısız oldu ve belirtilen çıkış kodu döndürdü NMAKE tarafından çağrılır.
+NMAKE tarafından çağrılan belirtilen komut veya program başarısız oldu ve verilen çıkış kodunu döndürdü.
 
-Bu hata gösterme ve NMAKE oturumu devam etmek için /ı seçeneği kullanmak **. Yoksay** yönergesi nokta veya tire (**-**) komut değiştiricisi. Bağımlılık ağacı ilgisiz bölümlerinin NMAKE oturuma devam etmek için /K seçeneğini kullanın.
+Bu hatayı bastırın ve NMAKE oturumuna devam etmek için,/I seçeneğini kullanın **.** Nokta yönergesini veya Dash ( **-** ) komut değiştiricisini yoksayın. Bağımlılık ağacının ilişkisiz bölümleri için NMAKE oturumuna devam etmek için/K seçeneğini kullanın.

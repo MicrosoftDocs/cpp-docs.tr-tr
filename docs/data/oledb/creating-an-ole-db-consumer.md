@@ -4,33 +4,33 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: 652309d3-7736-4354-89ec-28ec80a83f9a
-ms.openlocfilehash: a221aa98f5d4011bb310e056f4c2c8b04d847af6
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 0e084b5f25d713424217af5a2f4517ca73a27b39
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707588"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211451"
 ---
 # <a name="creating-an-ole-db-consumer"></a>OLE DB Tüketicisi Oluşturma
 
 ::: moniker range="vs-2019"
 
-ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
+ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-OLE DB Şablonları tüketici içeren veya içermeyen oluşturabilirsiniz **ATL OLE DB Tüketicisi Sihirbazı**, ancak Sihirbazı'nı kullanarak önerilen yöntemdir. ATL destekleyen herhangi bir uygulamada bir tüketici çalışabilir
+**ATL OLE DB tüketicisi Sihirbazı**ile veya olmadan bir OLE DB Şablonları tüketicisi oluşturabilirsiniz, ancak sihirbaz kullanılması önerilen yöntemdir. Bir tüketici, ATL 'yi destekleyen herhangi bir uygulamada çalışabilir.
 
-Bu bölümde aşağıdaki konuları içerir:
+Bu bölümde aşağıdaki konular ele alınmaktadır:
 
 - [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
 
-- [Sihirbaz kullanmadan bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)
+- [Sihirbaz kullanmadan OLE DB tüketicisi oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)

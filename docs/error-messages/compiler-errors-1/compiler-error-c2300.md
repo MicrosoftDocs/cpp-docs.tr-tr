@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2300
+title: Derleyici hatası C2300
 ms.date: 11/04/2016
 f1_keywords:
 - C2300
 helpviewer_keywords:
 - C2300
 ms.assetid: bb8fed56-feb0-412b-ae7b-04d48b202b78
-ms.openlocfilehash: c2028f13dc9ec12ced085e097202c4ae3cf940c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf9bac71d3a4bd1d87ef59be512807e0ba02d1da
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302442"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206342"
 ---
-# <a name="compiler-error-c2300"></a>Derleyici Hatası C2300
+# <a name="compiler-error-c2300"></a>Derleyici hatası C2300
 
-'identifier': sınıf adında bir yok edici yok ' ~ tanımlayıcısı '
+' tanımlayıcı ': sınıfta ' ~ Identifier ' adlı bir yıkıcı yok
 
-Gerekli ada sahip bir yıkıcı sınıfı yok.
+Sınıfta gerekli ada sahip bir yıkıcı yok.

@@ -8,27 +8,27 @@ helpviewer_keywords:
 - conformance testing [OLE DB]
 - OLE DB providers, testing
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
-ms.openlocfilehash: 9f78b16bc30651560137a39286460a8e5ceccd40
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eda4dccda147ddd4776bb56e649f539a7550abd1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282822"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209809"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB Uygunluk Testlerini Geçme
 
-Sağlayıcıları daha tutarlı hale getirmek için veri erişim SDK'sı bir OLE DB uygunluk testlerini sunmaktadır. Testleri sağlayıcınız tüm yönlerini denetleme ve sağlayıcı beklendiği gibi makul güvence verir. OLE DB uygunluk testlerini Microsoft Data Access SDK üzerinde bulabilirsiniz. Bu bölüm, uygunluk testleri geçirmek için yapmanız gerekenler üzerinde odaklanır. OLE DB uygunluk testlerini çalıştırma hakkında daha fazla bilgi için bkz.
+Sağlayıcıları daha tutarlı hale getirmek için, veri erişim SDK 'Sı bir OLE DB uygunluk testi kümesi sağlar. Testler sağlayıcınızın tüm yönlerini denetler ve sağlayıcınızın beklendiği gibi işlev görür. OLE DB uyumluluk testlerini Microsoft veri erişimi SDK 'sında bulabilirsiniz. Bu bölüm, uyumluluk testlerini geçirmek için yapmanız gereken şeylere odaklanmaktadır. OLE DB uygunluk testlerini çalıştırma hakkında daha fazla bilgi için bkz. SDK.
 
 ## <a name="running-the-conformance-tests"></a>Uygunluk testlerini çalıştırma
 
-Visual C++ 6.0, çok sayıda takma işlev değerleri ve özellikleri denetlemenizi izin vermek için OLE DB sağlayıcı şablonları eklendi. Bu işlevlerin çoğunu yanıt uygunluk testlerini olarak eklendi.
+Visual C++ 6,0 ' de OLE DB sağlayıcısı şablonları, değerleri ve özellikleri kontrol etmek için bir dizi ekleme işlevi eklemiştir. Bu işlevlerin çoğu, uygunluk testlerine yanıt olarak eklenmiştir.
 
 > [!NOTE]
-> OLE DB uygunluk testlerini geçirilecek sağlayıcınız için çeşitli doğrulama işlevler eklemenize gerek.
+> Sağlayıcınızın OLE DB uygunluk testlerini geçirmesi için birkaç doğrulama işlevi eklemeniz gerekir.
 
-Bu sağlayıcı iki doğrulama rutinleri gerektirir. İlk yordam `CRowsetImpl::ValidateCommandID`, satır kümesi sınıfının bir parçasıdır. Bu satır kümesi oluşturma sırasında sağlayıcı şablonları tarafından çağırılır. Örnek, dizinleri desteklemeyen tüketiciler bildirmek için bu yordamı kullanır. İlk çağrı `CRowsetImpl::ValidateCommandID` (sağlayıcısı kullanan Not `_RowsetBaseClass` ilişkin arabirim eşlemesini eklenen typedef `CCustomRowset` içinde [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md), uzun bir satır şablonunun yazmanız gerekmez bağımsız değişkenler). Ardından, dizin parametresi (Bu tüketici dizin bizi kullanmak istediği gösterir) NULL değilse DB_E_NOINDEX döndürür. Komut kimlikleri hakkında daha fazla bilgi için OLE DB belirtimine bakın ve Ara `IOpenRowset::OpenRowset`.
+Bu sağlayıcı iki doğrulama yordamı gerektirir. İlk yordam `CRowsetImpl::ValidateCommandID`, satır kümesi sınıfınızın bir parçasıdır. Sağlayıcı şablonları tarafından satır kümesi oluşturma sırasında çağrılır. Örnek, tüketicilere dizinleri desteklemediğini söylemek için bu yordamı kullanır. İlk çağrı `CRowsetImpl::ValidateCommandID`. (sağlayıcının, [yer işaretleri Için sağlayıcı desteğinin](../../data/oledb/provider-support-for-bookmarks.md)`CCustomRowset` için arabirim eşlemesinde eklenen `_RowsetBaseClass` typedef 'i kullandığını unutmayın. bu nedenle, bu uzun şablon bağımsız değişkenlerinin uzun satırını yazmanız gerekmez). Sonra, Index parametresi NULL değilse DB_E_NOINDEX döndürün (Bu, tüketicinin ABD 'de bir dizin kullanmasını istediğini gösterir). Komut kimlikleri hakkında daha fazla bilgi için OLE DB belirtimine bakın ve `IOpenRowset::OpenRowset`bakın.
 
-Aşağıdaki kod `ValidateCommandID` doğrulama yordamına:
+Aşağıdaki kod `ValidateCommandID` doğrulama yordamdır:
 
 ```cpp
 /////////////////////////////////////////////////////////////////////
@@ -48,11 +48,11 @@ HRESULT ValidateCommandID(DBID* pTableID, DBID* pIndexID)
 }
 ```
 
-Sağlayıcı şablonları çağrı `OnPropertyChanged` birisi DBPROPSET_ROWSET grubu üzerindeki bir özellik değiştiğinde yöntemi. Diğer grupların özellikleri işlemek isterseniz, bunları uygun nesnesine eklediğiniz (diğer bir deyişle, DBPROPSET_SESSION denetimleri Git `CCustomSession` sınıfı).
+Sağlayıcı şablonları, birisi DBPROPSET_ROWSET grubundaki bir özelliği her değiştirdiğinde `OnPropertyChanged` yöntemini çağırır. Diğer grupların özelliklerini işlemek istiyorsanız, bunları uygun nesneye eklersiniz (yani DBPROPSET_SESSION denetimleri `CCustomSession` sınıfında olur).
 
-Kod, ilk önce özelliğin diğerine bağlı olup olmadığını görmek için denetler. Özellik zincirlendiğini değilse, DBPROP_BOOKMARKS özelliğini ayarlar `True`. OLE DB belirtiminin ek C özellikleri hakkında bilgi içerir. Bu bilgileri ayrıca, özellik için başka bir zincir olup olmadığını bildirir.
+Kod, özelliğin diğer ile bağlantılı olup olmadığını kontrol eder. Özellik zincirleme ise, DBPROP_BOOKMARKS özelliğini `True`olarak ayarlar. OLE DB belirtiminin ek C özellikleri hakkında bilgi içerir. Bu bilgiler ayrıca, özelliğin başka birine zincirlendiği konusunda da size bildirir.
 
-Eklemek isteyebilirsiniz `IsValidValue` kodunuzda rutin. Şablonları çağrı `IsValidValue` bir özelliğini ayarlamaya çalışırken. Bir özellik değerini ayarlarken ek işleme gerekiyorsa bu yöntemi geçersiz kılarsınız. Her bir özellik kümesi için aşağıdaki yöntemlerden birini olabilir.
+Ayrıca `IsValidValue` yordamını kodunuza eklemek isteyebilirsiniz. Şablonlar, bir özelliği ayarlamaya çalışırken `IsValidValue` çağırır. Bir özellik değeri ayarlanırken ek işlem yapmanız gerekiyorsa, bu yöntemi geçersiz kılabilirsiniz. Her özellik kümesi için bu yöntemlerden birini kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

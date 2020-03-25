@@ -7,12 +7,12 @@ helpviewer_keywords:
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-ms.openlocfilehash: 05ece23e6d79fc399085099deebcde0aa4a92c64
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 8b22f3aaf706fa096f6c25ab8e9fdab6dc512cd8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630842"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208819"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf ara dile dönüştürme
 
@@ -27,7 +27,7 @@ Tüm Visual C++ clr projeleri varsayılan olarak C çalışma zamanı kitaplıkl
 
 1. [C çalışma zamanı kitaplıklarının](../c-runtime-library/crt-library-features.md) (CRT) bağlantılarını kaldırma:
 
-   1. Uygulamanızın giriş noktasını tanımlayan. cpp dosyasında, giriş noktasını olarak `Main()`değiştirin. Kullanarak `Main()` , projenizin CRT ile bağlantı olmadığını gösterir.
+   1. Uygulamanızın giriş noktasını tanımlayan. cpp dosyasında, giriş noktasını `Main()`değiştirin. `Main()` kullanmak, projenizin CRT ile bağlantı olmadığını gösterir.
 
    2. Çözüm Gezgini, projenize sağ tıklayın ve uygulamanızın özellik sayfalarını açmak için kısayol menüsünde **Özellikler** ' i seçin.
 
@@ -38,7 +38,7 @@ Tüm Visual C++ clr projeleri varsayılan olarak C çalışma zamanı kitaplıkl
       > [!NOTE]
       > **Alt sistem** alanı varsayılan olarak **Windows (/Subsystem: Windows)** olarak ayarlandığından, bu özelliği Windows Forms uygulamalar için ayarlamanız gerekmez.
 
-   5. *Stbafx. h*içinde, tüm `#include` deyimlerini açıklama olarak inceleyin. Örneğin, konsol uygulamalarında:
+   5. *Stbafx. h*'de tüm `#include` deyimlerini açıklama olarak inceleyin. Örneğin, konsol uygulamalarında:
 
       ```cpp
       // #include <iostream>
@@ -56,7 +56,7 @@ Tüm Visual C++ clr projeleri varsayılan olarak C çalışma zamanı kitaplıkl
       // #include <tchar.h>
       ```
 
-   6. Windows Forms uygulamalar için, Form1. cpp içinde, Windows. h `#include` 'e başvuran ifadeyi açıklama olarak yapın. Örneğin:
+   6. Windows Forms uygulamalar için, Form1. cpp ' de, Windows. h 'ye başvuran `#include` ifadesini açıklama olarak ekleyin. Örneğin:
 
       ```cpp
       // #include <windows.h>
@@ -77,7 +77,7 @@ Tüm Visual C++ clr projeleri varsayılan olarak C çalışma zamanı kitaplıkl
 
    |Yapı|Açıklama|
    |---------------|-----------------|
-   |[Boole değeri](/dotnet/api/system.boolean)|Bir Boolean değeri temsil eder.|
+   |[Boolean](/dotnet/api/system.boolean)|Bir Boolean değeri temsil eder.|
    |[Bayt](/dotnet/api/system.byte)|8 bit işaretsiz tamsayıyı temsil eder.|
    |[Char](/dotnet/api/system.char)|Bir Unicode karakteri temsil eder.|
    |[Hem](/dotnet/api/system.datetime)|Genellikle günün tarih ve saati olarak ifade edilen bir anlık zamanı temsil eder.|
@@ -87,7 +87,7 @@ Tüm Visual C++ clr projeleri varsayılan olarak C çalışma zamanı kitaplıkl
    |[Int16](/dotnet/api/system.int16)|16 bit işaretli tamsayıyı temsil eder.|
    |[Int32](/dotnet/api/system.int32)|32 bitlik işaretli bir tamsayıyı temsil eder.|
    |[Tutulamaz](/dotnet/api/system.int64)|64 bitlik işaretli bir tamsayıyı temsil eder.|
-   |[IntPtr](/dotnet/api/system.intptr)|Bir işaretçiyi veya tanıtıcıyı temsil etmek için kullanılan platforma özgü bir tür.|
+   |[Serisi](/dotnet/api/system.intptr)|Bir işaretçiyi veya tanıtıcıyı temsil etmek için kullanılan platforma özgü bir tür.|
    |[SByte](/dotnet/api/system.byte)|8 bit işaretli tamsayıyı temsil eder.|
    |[Sunuculu](/dotnet/api/system.single)|Tek duyarlıklı kayan noktalı sayıyı temsil eder.|
    |[TimeSpan](/dotnet/api/system.timespan)|Bir zaman aralığını temsil eder.|

@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2818
+title: Derleyici hatası C2818
 ms.date: 11/04/2016
 f1_keywords:
 - C2818
 helpviewer_keywords:
 - C2818
 ms.assetid: 715fc7c9-0c6d-452b-b7f5-1682cea5e907
-ms.openlocfilehash: f6e33d0e0ee139138df7d8e11357100b3ec3a1a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 00952e55f1b732bd9af3733f5c0ec575a39116fe
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388702"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202118"
 ---
-# <a name="compiler-error-c2818"></a>Derleyici Hatası C2818
+# <a name="compiler-error-c2818"></a>Derleyici hatası C2818
 
-Uygulama, aşırı yüklenmiş 'operator ->' 'type' türü aracılığıyla özyinelemelidir
+aşırı yüklenmiş ' operator-> ' uygulaması ' Type ' türü aracılığıyla özyinelemeli
 
-Bir şemadaki sınıf üye erişimi işleci bir özyinelemeli içeren `return` deyimi. Yeniden tanımlanacak `->` özyineleme işleç, işleç adlı ayrı bir işlev özyinelemeli yordamına geçersiz kılma işlevi konumsa.
+Sınıf üyesi erişim işlecinin yeniden tanımlanması özyinelemeli bir `return` ifadesini içerir. `->` işlecini özyineleme ile yeniden tanımlamak için özyinelemeli yordamı işleç geçersiz kılma işlevinden çağrılan ayrı bir işleve taşımanız gerekir.

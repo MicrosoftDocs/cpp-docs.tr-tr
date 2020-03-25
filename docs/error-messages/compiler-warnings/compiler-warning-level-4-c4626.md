@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4626
 ms.assetid: 7f822ff4-a4a3-4f17-b45b-e8b7b4659a14
-ms.openlocfilehash: cb00365d12a60885a86a42417bf1c1052a5c6d6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 665a21d9f0221b2cf3db111142576669a3b5d728
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349610"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198270"
 ---
 # <a name="compiler-warning-level-4-c4626"></a>Derleyici Uyarısı (düzey 4) C4626
 
-'derived class': atama işleci örtük bir şekilde bir taban sınıf atama işlecine erişilemez veya silinmiş olduğundan silindi olarak tanımlandı
+' derived class ': bir taban sınıf atama işlecine erişilemediğinden veya silindiğinden atama işleci örtük olarak silindi olarak tanımlandı
 
-Atama işleci, silinmiş veya taban sınıfında erişilebilir değil ve bir türetilmiş sınıf için oluşturulmadı. Bu tür nesneler atamak için her türlü girişim, bir derleyici hatasına neden olur.
+Bir atama işleci bir temel sınıfta silindi veya erişilebilir değil ve bu nedenle türetilmiş bir sınıf için üretilmedi. Bu türden nesneleri atama girişimi, bir derleyici hatasına neden olur.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4626 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4626 oluşturur ve nasıl düzeltileceğini gösterir:
 
 ```
 // C4626

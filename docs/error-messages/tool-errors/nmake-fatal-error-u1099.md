@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - U1099
 ms.assetid: 6688a805-43e6-4247-a2d0-14be082f0b13
-ms.openlocfilehash: 395f25d8d27bc5e9b6132c87390c8c3bc19b6cc4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c963180059a48d9aa0b09103df1ed54f82b8a2f1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298249"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193401"
 ---
 # <a name="nmake-fatal-error-u1099"></a>NMAKE Önemli Hatası U1099
 
 yığın taşması
 
-NMAKE içindeki geçerli yığın ayırma için çok karmaşık işlenmekte olan derleme görevleri dosyası. NMAKE 0x3000 (12 K) ayırma vardır.
+İşlenmekte olan derleme görevleri dosyası NMAKE içindeki geçerli yığın ayırması için çok karmaşıktı. NMAKE, 0x3000 (12K) ayırmayı içerir.
 
-NMAKE'ün yığın ayırma artırmak için çalıştırma [editbin /stack](../../build/reference/stack.md) yardımcı programı ile daha büyük bir yığın seçeneği:
+NMAKE 'in yığın ayırmayı artırmak için, [editbin/Stack](../../build/reference/stack.md) yardımcı programını daha büyük bir yığın seçeneğiyle çalıştırın:
 
-**edıtbın /STACK:reserve NMAKE. EXE**
+**Editbin/STACK: yedek NMAKE. EXE**
 
-Burada *rezerve* geçerli yığın ayırma NMAKE içindeki daha büyük bir sayıdır.
+Burada *ayrılan* , NMAKE içindeki geçerli yığın ayırmadan daha büyük bir sayıdır.
