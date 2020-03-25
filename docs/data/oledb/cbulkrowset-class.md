@@ -95,12 +95,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: a235a38531141f306b33093ac2546ae232830f0e
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e66a183c7bbafa16b3aefea8da1472255b507468
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446058"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212129"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 
@@ -145,7 +145,7 @@ Aşağıdaki örnek `CBulkRowset` sınıfının kullanımını gösterir.
 
 [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]
 
-## <a name="addrefrows"></a>CBulkRowset:: AddRefRows
+## <a name="cbulkrowsetaddrefrows"></a><a name="addrefrows"></a>CBulkRowset:: AddRefRows
 
 Toplu satır kümesinden alınmış olan tüm satırların başvuru sayısını artırmak için [IRowset:: AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) çağırır.
 
@@ -159,7 +159,7 @@ HRESULT AddRefRows() throw();
 
 Standart HRESULT.
 
-## <a name="cbulkrowset"></a>CBulkRowset:: CBulkRowset
+## <a name="cbulkrowsetcbulkrowset"></a><a name="cbulkrowset"></a>CBulkRowset:: CBulkRowset
 
 Yeni bir `CBulkRowset` nesnesi oluşturur ve varsayılan satır sayısını 10 olarak ayarlar.
 
@@ -169,7 +169,7 @@ Yeni bir `CBulkRowset` nesnesi oluşturur ve varsayılan satır sayısını 10 o
 CBulkRowset();
 ```
 
-## <a name="movefirst"></a>CBulkRowset:: MoveFirst
+## <a name="cbulkrowsetmovefirst"></a><a name="movefirst"></a>CBulkRowset:: MoveFirst
 
 İlk veri satırını alır.
 
@@ -183,7 +183,7 @@ HRESULT MoveFirst() throw();
 
 Standart HRESULT.
 
-## <a name="movelast"></a>CBulkRowset:: MoveLast
+## <a name="cbulkrowsetmovelast"></a><a name="movelast"></a>CBulkRowset:: MoveLast
 
 Son satıra gider.
 
@@ -197,7 +197,7 @@ HRESULT MoveLast() throw();
 
 Standart HRESULT.
 
-## <a name="movenext"></a>CBulkRowset:: MoveNext
+## <a name="cbulkrowsetmovenext"></a><a name="movenext"></a>CBulkRowset:: MoveNext
 
 Sonraki veri satırını alır.
 
@@ -211,7 +211,7 @@ HRESULT MoveNext() throw();
 
 Standart HRESULT. Satır kümesinin sonuna ulaşıldığında DB_S_ENDOFROWSET döndürür.
 
-## <a name="moveprev"></a>CBulkRowset:: Moveöncekini
+## <a name="cbulkrowsetmoveprev"></a><a name="moveprev"></a>CBulkRowset:: Moveöncekini
 
 Önceki satıra gider.
 
@@ -225,7 +225,7 @@ HRESULT MovePrev() throw();
 
 Standart HRESULT.
 
-## <a name="movetobookmark"></a>CBulkRowset:: MoveToBookmark
+## <a name="cbulkrowsetmovetobookmark"></a><a name="movetobookmark"></a>CBulkRowset:: MoveToBookmark
 
 Yer işaretiyle işaretlenmiş satırı veya belirtilen bir uzaklığında (*lSkip*) satırı bu yer işaretinden getirir.
 
@@ -248,7 +248,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 *OLE DB Programcı başvurusunda* [IRowset:: GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) ' na bakın.
 
-## <a name="movetoratio"></a>CBulkRowset:: MoveToRatio
+## <a name="cbulkrowsetmovetoratio"></a><a name="movetoratio"></a>CBulkRowset:: MoveToRatio
 
 Satır kümesindeki kesirli konumdan başlayarak satırları getirir.
 
@@ -279,7 +279,7 @@ Standart HRESULT.
 
 Burada `RowsetSize`, satır içinde ölçülen satır kümesinin boyutudur. Bu formülün doğruluğu, belirli sağlayıcıya bağlıdır. Ayrıntılar için *OLE DB Programcı başvurusunda* [IRowsetScroll:: GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) bölümüne bakın.
 
-## <a name="releaserows"></a>CBulkRowset:: ReleaseRows
+## <a name="cbulkrowsetreleaserows"></a><a name="releaserows"></a>CBulkRowset:: ReleaseRows
 
 Toplu satır kümesinden alınmış olan tüm satırların başvuru sayısını azaltmak için [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) çağırır.
 
@@ -293,7 +293,7 @@ HRESULT ReleaseRows() throw();
 
 Standart HRESULT.
 
-## <a name="setrows"></a>CBulkRowset:: SetRows
+## <a name="cbulkrowsetsetrows"></a><a name="setrows"></a>CBulkRowset:: SetRows
 
 Her çağrının aldığı satır tanıtıcılarının sayısını ayarlar.
 

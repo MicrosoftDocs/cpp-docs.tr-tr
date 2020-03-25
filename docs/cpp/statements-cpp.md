@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - statements [C++], C++
 ms.assetid: 7028fddf-0d47-469a-a7df-f8576423e066
-ms.openlocfilehash: 4cb4dc9b718e0e6b183df62ddd056da1e0ed398f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59eb1ef2cbb9046a8ed9ea134a0c37aba6c37ba3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267199"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178619"
 ---
 # <a name="statements-c"></a>Deyimler (C++)
 
 C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen program öğelerdir. Bu bölüm şunları içerir:
 
-- [Genel bakış](../cpp/overview-of-cpp-statements.md)
+- [Genel Bakış](../cpp/overview-of-cpp-statements.md)
 
 - [Etiketli Deyimler](../cpp/labeled-statements.md)
 
@@ -24,7 +24,7 @@ C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen pro
 
    - [İfade deyimleri](../cpp/expression-statement.md). Bu deyimler, yan etkileri ya da dönüş değerleri için bir ifade değerlendirir.
 
-   - [Boş deyimler](../cpp/null-statement.md). Bu deyimler, C++ sözdiziminin bir deyim gerektirdiği ancak herhangi bir işlemin yapılmayacağı durumlarda sağlanabilir.
+   - [Null deyimler](../cpp/null-statement.md). Bu deyimler, C++ sözdiziminin bir deyim gerektirdiği ancak herhangi bir işlemin yapılmayacağı durumlarda sağlanabilir.
 
    - [Bileşik deyimler](../cpp/compound-statements-blocks.md). Bu deyimler küme ayracı ({}) içine alınmış deyim gruplarıdır. Tek bir deyimin kullanılabileceği her yerde kullanılabilirler.
 
@@ -32,7 +32,7 @@ C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen pro
 
    - [Yineleme deyimleri](../cpp/iteration-statements-cpp.md). Belirtilen sonlandırma ölçütü karşılanana kadar bu deyimler bir kod bloğunun yinelenen şekilde yürütülmesini sağlar.
 
-   - [Atlama deyimleri](../cpp/jump-statements-cpp.md). Bu deyimler hemen işlevdeki başka bir konuma denetim aktarır ya da işlevden denetim döndürür.
+   - [Atma deyimleri](../cpp/jump-statements-cpp.md). Bu deyimler hemen işlevdeki başka bir konuma denetim aktarır ya da işlevden denetim döndürür.
 
    - [Bildirim deyimleri](declarations-and-definitions-cpp.md). Bildirimler, bir programa bir ad tanıtır.
 

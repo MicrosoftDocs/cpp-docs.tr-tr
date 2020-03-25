@@ -3,12 +3,12 @@ title: Microsoft::WRL::Details Ad Alanı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: fce6e620600164e73d3708d98d8a7fa979e8ab42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e8d2e5a2c7e6655674c4e965cd7222d930dff9a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392043"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213791"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details Ad Alanı
 
@@ -26,62 +26,62 @@ namespace Microsoft::WRL::Details;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ComPtrRef Sınıfı](comptrref-class.md)|ComPtr türünde bir nesne bir başvuruyu temsil eder\<T >.|
-|[ComPtrRefBase Sınıfı](comptrrefbase-class.md)|Temel sınıfı temsil eder [ComPtrRef](comptrref-class.md) sınıfı.|
-|[DontUseNewUseMake Sınıfı](dontusenewusemake-class.md)|İşleç engel `new` içinde `RuntimeClass`. Sonuç olarak, kullanmanız gereken [olun işlevi](make-function.md) yerine.|
-|[EventTargetArray Sınıfı](eventtargetarray-class.md)|Olay işleyicileri dizisini temsil eder.|
-|[MakeAllocator Sınıfı](makeallocator-class.md)|İle veya zayıf başvuru desteği olmayan bir etkinleştirilebilir sınıf için bellek ayırır.|
-|[ModuleBase Sınıfı](modulebase-class.md)|Temel sınıfını temsil eden [Modülü](module-class.md) sınıfları.|
-|[RemoveIUnknown Sınıfı](removeiunknown-class.md)|Eşdeğer olan bir tür yapar bir `IUnknown`-tabanlı ancak türünde sanal olmayan `QueryInterface`, `AddRef`, ve `Release` yöntemleri.|
-|[WeakReference Sınıfı](weakreference-class.md)|Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|
+|[ComPtrRef Sınıfı](comptrref-class.md)|ComPtr\<T > türünde bir nesne başvurusunu temsil eder.|
+|[ComPtrRefBase Sınıfı](comptrrefbase-class.md)|[ComPtrRef](comptrref-class.md) sınıfının temel sınıfını temsil eder.|
+|[DontUseNewUseMake Sınıfı](dontusenewusemake-class.md)|`RuntimeClass`işlecinin `new` kullanımını engeller. Sonuç olarak, bunun yerine [Make işlevini](make-function.md) kullanmanız gerekir.|
+|[EventTargetArray Sınıfı](eventtargetarray-class.md)|Bir olay işleyicileri dizisini temsil eder.|
+|[MakeAllocator Sınıfı](makeallocator-class.md)|Zayıf başvuru desteği olan veya olmayan bir etkinleştirilebilir sınıfı için bellek ayırır.|
+|[ModuleBase Sınıfı](modulebase-class.md)|[Modül](module-class.md) sınıflarının taban sınıfını temsil eder.|
+|[RemoveIUnknown Sınıfı](removeiunknown-class.md)|`IUnknown`tabanlı bir türe eşdeğer, ancak sanal olmayan `QueryInterface`, `AddRef`ve `Release` yöntemlerine sahip bir tür yapar.|
+|[WeakReference Sınıfı](weakreference-class.md)|Windows Çalışma Zamanı veya klasik COM ile kullanılabilen *zayıf bir başvuruyu* temsil eder. Zayıf başvuru, erişilebilir olabilecek veya erişilemeyen bir nesneyi temsil eder.|
 
 ### <a name="structures"></a>Yapılar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ArgTraits Yapısı](argtraits-structure.md)|Belirtilen bir temsilci arabirimi ve belirtilen bir dizi parametre içeren bir anonim üye işlevini bildirir.|
-|[ArgTraitsHelper Yapısı](argtraitshelper-structure.md)|Yardımcı olur, temsilci bağımsız değişkenleri genel özelliklerini tanımlayın.|
-|[BoolStruct Yapısı](boolstruct-structure.md)|Tanımlar olup olmadığını bir `ComPtr` bir arabirimin nesne ömrü yönetimi. `BoolStruct` tarafından dahili olarak kullanılan [BoolType()](comptr-class.md#operator-microsoft-wrl-details-booltype) işleci.|
-|[CreatorMap Yapısı](creatormap-structure.md)|Nesneleri kaydını başlatmak ve kaydetme hakkında bilgi içerir.|
-|[DerefHelper Yapısı](derefhelper-structure.md)|Başvurusu kaldırılmış bir işaretçi temsil `T*` şablon parametresi.|
-|[EnableIf Yapısı](enableif-structure.md)|İlk şablon parametresi değerlendirilirse ikinci şablon parametresi tarafından belirtilen türde bir veri üyesi tanımlar `true`.|
-|[FactoryCache Yapısı](factorycache-structure.md)|Bir sınıf üreteci ve kayıtlı Windows çalışma zamanı veya COM sınıf nesnesini tanımlayan bir değer konumunu içerir.|
-|[ImplementsBase Yapısı](implementsbase-structure.md)|Şablon parametre türleri doğrulamak için kullanılan [Implements yapısı](implements-structure.md).|
-|[ImplementsHelper Yapısı](implementshelper-structure.md)|Uygulama yardımcı [uygular](implements-structure.md) yapısı.|
-|[InterfaceList Yapısı](interfacelist-structure.md)|Arabirimleri özyinelemeli listesini oluşturmak için kullanılır.|
-|[InterfaceListHelper Yapısı](interfacelisthelper-structure.md)|Oluşturur bir `InterfaceList` yinelemeli olarak belirtilen şablon parametre bağımsız uygulama tarafından türü.|
-|[InterfaceTraits Yapısı](interfacetraits-structure.md)|Genel özelliklerini bir arabirim uygular.|
-|[InvokeHelper Yapısı](invokehelper-structure.md)|Bir uygulamasını sağlar `Invoke()` tabanlı yöntemini belirtilen sayı ve bağımsız değişken türü.|
-|[IsBaseOfStrict Yapısı](isbaseofstrict-structure.md)|Başka bir taban bir türü olup olmadığını sınar.|
-|[IsSame Yapısı](issame-structure.md)|Belirtilen türü testleri bir türü belirtilmiş olup olmadığını başka aynıdır.|
-|[Nil Yapısı](nil-structure.md)|Belirtilmeyen, isteğe bağlı şablon parametre göstermek için kullanılır.|
-|[RemoveReference Yapısı](removereference-structure.md)|Belirtilen sınıf şablonu parametre başvurusunu veya rvalue başvurusunu nitelik kaldırır.|
-|[RuntimeClassBase Yapısı](runtimeclassbase-structure.md)|Algılamak için kullanılan `RuntimeClass` içinde [olun](make-function.md) işlevi.|
-|[RuntimeClassBaseT Yapısı](runtimeclassbaset-structure.md)|İçin yardımcı yöntemleri sağlar `QueryInterface` işlemler ve başlangıç arabirim kimliği.|
-|[VerifyInheritanceHelper Yapısı](verifyinheritancehelper-structure.md)|Başka bir arabirimden türetilmiş bir arabirim olup olmadığını sınar.|
-|[VerifyInterfaceHelper Yapısı](verifyinterfacehelper-structure.md)|Şablon parametresi tarafından belirtilen arabirim belirli gereksinimleri karşıladığını doğrular.|
+|[ArgTraits Yapısı](argtraits-structure.md)|Belirtilen bir temsilci arabirimi ve belirtilen sayıda parametreye sahip anonim bir üye işlevi bildirir.|
+|[ArgTraitsHelper Yapısı](argtraitshelper-structure.md)|Temsilci bağımsız değişkenlerinin ortak özelliklerini tanımlamaya yardımcı olur.|
+|[BoolStruct Yapısı](boolstruct-structure.md)|Bir `ComPtr` arabirimin nesne ömrünü yönetip yönetmediğini tanımlar. `BoolStruct`, [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) işleci tarafından dahili olarak kullanılır.|
+|[CreatorMap Yapısı](creatormap-structure.md)|Nesneleri başlatma, kaydetme ve kaydını silme hakkında bilgiler içerir.|
+|[DerefHelper Yapısı](derefhelper-structure.md)|`T*` Template parametresine başvuru yapılan bir işaretçiyi temsil eder.|
+|[EnableIf Yapısı](enableif-structure.md)|İlk şablon parametresi `true`olarak değerlendirilirse ikinci şablon parametresi tarafından belirtilen türün veri üyesini tanımlar.|
+|[FactoryCache Yapısı](factorycache-structure.md)|Bir sınıf fabrikasının konumunu ve kayıtlı bir Windows Çalışma Zamanı ya da COM sınıfı nesnesini tanımlayan bir değeri içerir.|
+|[ImplementsBase Yapısı](implementsbase-structure.md)|[Uygulayan yapıda](implements-structure.md)şablon parametre türlerini doğrulamak için kullanılır.|
+|[ImplementsHelper Yapısı](implementshelper-structure.md)|, [Uygulayan](implements-structure.md) yapıyı uygulamaya yardımcı olur.|
+|[InterfaceList Yapısı](interfacelist-structure.md)|Bir arabirim özyinelemeli listesini oluşturmak için kullanılır.|
+|[InterfaceListHelper Yapısı](interfacelisthelper-structure.md)|Belirtilen şablon parametresi bağımsız değişkenlerini yinelemeli olarak uygulayarak bir `InterfaceList` türü oluşturur.|
+|[InterfaceTraits Yapısı](interfacetraits-structure.md)|Bir arabirimin ortak karakteristiklerini uygular.|
+|[InvokeHelper Yapısı](invokehelper-structure.md)|`Invoke()` yönteminin, belirtilen sayı ve bağımsız değişken türüne göre uygulanmasını sağlar.|
+|[IsBaseOfStrict Yapısı](isbaseofstrict-structure.md)|Bir türün diğerinin temeli olup olmadığını test eder.|
+|[IsSame Yapısı](issame-structure.md)|Belirtilen bir türün, belirtilen başka bir türle aynı olup olmadığını test eder.|
+|[Nil Yapısı](nil-structure.md)|Belirtilmeyen, isteğe bağlı bir şablon parametresini göstermek için kullanılır.|
+|[RemoveReference Yapısı](removereference-structure.md)|Belirtilen sınıf şablonu parametresinden başvuruyu veya rvalue-Reference nitelik öğesini şeritler.|
+|[RuntimeClassBase Yapısı](runtimeclassbase-structure.md)|[Make](make-function.md) işlevindeki `RuntimeClass` algılamak için kullanılır.|
+|[RuntimeClassBaseT Yapısı](runtimeclassbaset-structure.md)|`QueryInterface` işlemler ve arabirim kimliklerini almak için yardımcı yöntemler sağlar.|
+|[VerifyInheritanceHelper Yapısı](verifyinheritancehelper-structure.md)|Bir arabirimin başka bir arabirimden türetilip türetilmediğini sınar.|
+|[VerifyInterfaceHelper Yapısı](verifyinterfacehelper-structure.md)|Şablon parametresi tarafından belirtilen arabirimin belirli gereksinimleri karşıladığını doğrular.|
 
 ### <a name="enumerations"></a>Numaralandırmalar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AsyncStatusInternal Sabit Listesi](asyncstatusinternal-enumeration.md)|Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.|
+|[AsyncStatusInternal Sabit Listesi](asyncstatusinternal-enumeration.md)|Zaman uyumsuz işlemlerin durumu ve `Windows::Foundation::AsyncStatus` numaralandırması arasındaki iç numaralandırmalar arasındaki eşlemeyi belirtir.|
 
 ### <a name="functions"></a>İşlevler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ActivationFactoryCallback İşlevi](activationfactorycallback-function.md)|Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır|
-|[Move İşlevi](move-function.md)|Belirtilen bağımsız değişken bir konumdan diğerine taşır.|
+|[ActivationFactoryCallback İşlevi](activationfactorycallback-function.md)|Belirtilen etkinleştirme KIMLIĞI için etkinleştirme fabrikasını alır.|
+|[Move İşlevi](move-function.md)|Belirtilen bağımsız değişkeni bir konumdan diğerine kaydırır.|
 |[RaiseException İşlevi](raiseexception-function.md)|Çağıran iş parçacığında bir özel durum oluşturur.|
-|[Swap İşlevi (WRL)](swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
-|[TerminateMap İşlevi](terminatemap-function.md)|Belirtilen modül sınıfı Fabrikalar kapatır.|
+|[Swap İşlevi (WRL)](swap-function-wrl.md)|Belirtilen iki bağımsız değişkenin değerlerini değiş tokuş eder.|
+|[TerminateMap İşlevi](terminatemap-function.md)|Belirtilen modüldeki sınıf fabrikalarını kapatır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** async.h, client.h, corewrappers.h, event.h, ftm.h, implements.h, internal.h, module.h
+**Üst bilgi:** Async. h, Client. h, corewrapper. h, Event. h, FTM. h, Implements. h, iç. h, modül. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

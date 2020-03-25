@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4958
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-ms.openlocfilehash: 96b73975f391493340dd01d85ad30a8c888b44c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 63371d91367902c1eab539cb370e55440fcbf917
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208078"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164891"
 ---
 # <a name="compiler-warning-c4958"></a>Derleyici Uyarısı C4958
 
-> '*işlemi*': işaretçi aritmetik doğrulanabilir değil
+> '*Operation*': işaretçi aritmetiği doğrulanabilir değil
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretçi aritmetiği kullanma, doğrulanamayan bir görüntü oluşturur.
+İşaretçi aritmetiği kullanmak doğrulanamayan bir görüntü oluşturur.
 
-Daha fazla bilgi için [saf ve doğrulanabilen kod (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Daha fazla bilgi için bkz. [saf ve Doğrulanabilen kodC++(/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
-**/CLR: safe** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Safe** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-Bu uyarı hata olarak verilir ve ile devre dışı bırakılabilir [uyarı](../../preprocessor/warning.md) pragma veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+Bu uyarı bir hata olarak verilir ve [Uyarı](../../preprocessor/warning.md) pragması veya [/WD](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği ile devre dışı bırakılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte C4958 oluşturur:
+Aşağıdaki örnek C4958 oluşturur:
 
 ```cpp
 // C4958.cpp
@@ -44,9 +44,9 @@ int main( ) {
 }
 ```
 
-Derleyicinin dizi işaretçi aritmetik işlemlerle uygular. Bu nedenle, yerel dizi doğrulanabilir değildir; CLR dizisi kullanın. Daha fazla bilgi için [dizi](../../extensions/arrays-cpp-component-extensions.md).
+Derleyici, işaretçi aritmetiği ile dizi işlemlerini uygular. Bu nedenle, yerel diziler doğrulanabilir değildir; Bunun yerine bir CLR dizisi kullanın. Daha fazla bilgi için bkz. [dizi](../../extensions/arrays-cpp-component-extensions.md).
 
-Aşağıdaki örnekte C4958 oluşturur:
+Aşağıdaki örnek C4958 oluşturur:
 
 ```cpp
 // C4958b.cpp

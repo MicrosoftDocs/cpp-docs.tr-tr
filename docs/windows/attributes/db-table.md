@@ -1,21 +1,21 @@
 ---
-title: db_table (C++ COM özniteliği)
+title: db_table (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_table
 helpviewer_keywords:
 - db_table attribute
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-ms.openlocfilehash: 3ab548261d6ebcb9d3d7f7e352c8afe3b33db06f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b3be55a4ea118ef3441d3ea93f63e19ebdb3d79
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148126"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167257"
 ---
-# <a name="dbtable"></a>db_table
+# <a name="db_table"></a>db_table
 
-Bir OLE DB tablosu açılır.
+Bir OLE DB tablosu açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,29 +23,29 @@ Bir OLE DB tablosu açılır.
 [ db_table(db_table, name, source_name, hresult) ]
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *db_table*<br/>
-Bir veritabanı tablosu (örneğin, "Ürünler") adını belirten dize.
+Bir veritabanı tablosunun adını belirten bir dize (örneğin, "Ürünler").
 
-*Adı*<br/>
-(İsteğe bağlı) Tablo ile çalışmak için kullandığınız işleyici adı. Birden fazla satır sonuçlarını döndürmek istiyorsanız bu parametreyi belirtmelisiniz. **db_table** belirtilen sahip bir değişken oluşturur *adı* çapraz satır kümesi veya birden çok eylem sorguları yürütmek için kullanılabilir.
+*ada*<br/>
+Seçim Tabloyla çalışmak için kullandığınız tanıtıcının adı. Birden fazla sonuç satırı döndürmek istiyorsanız bu parametreyi belirtmeniz gerekir. **db_table** , satır kümesinde çapraz geçiş yapmak veya birden çok eylem sorgusu yürütmek için kullanılabilecek belirtilen *ada* sahip bir değişken oluşturur.
 
 *source_name*<br/>
-(İsteğe bağlı) `CSession` Değişkeni veya bir sınıf örneğini `db_source` özniteliği uygulanmış komutu yürütür. Bkz: [db_source](db-source.md).
+Seçim Komutun yürütüldüğü öğesine uygulanmış `db_source` özniteliği olan bir sınıfın `CSession` değişkeni veya örneği. Bkz. [db_source](db-source.md).
 
 *HRESULT*<br/>
-(İsteğe bağlı) Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.
+Seçim Bu veritabanı komutunun HRESULT 'sini alacak değişkeni tanımlar. Değişken yoksa, özniteliği tarafından otomatik olarak eklenir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_table** oluşturur bir [CTable](../../data/oledb/ctable-class.md) tablo açmak için bir OLE DB Tüketicisi tarafından kullanılan nesne. Bu öznitelik yalnızca sınıf düzeyinde kullanabilirsiniz; Satır içi kullanamazsınız. Kullanma `db_column` tablo sütunları değişkenlere; bağlamak için kullanın `db_param` sınırlandırmak için (parametre türü ve dolayısıyla parametrelerini ayarlayın).
+**db_table** , bir OLE DB tüketicisi tarafından tablo açmak için kullanılan bir [CTable](../../data/oledb/ctable-class.md) nesnesi oluşturur. Bu özniteliği yalnızca sınıf düzeyinde kullanabilirsiniz; satır içi kullanamazsınız. Tablo sütunlarını değişkenlere bağlamak için `db_column` kullanın; parametreleri sınırlandırmak için `db_param` kullanın (parametre türünü ve bu şekilde ayarlayın).
 
-Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uygulandığında, derleyici sınıf için yeniden adlandıracağını \_ *YourClassName*erişimci burada *YourClassName* verdiğiniz addır sınıf ve derleyici adlı bir sınıf oluşturur ayrıca *YourClassName*, öğesinden türetildiğini \_ *YourClassName*erişimcisi.  Sınıf Görünümü'nde, hem sınıflarını görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek Ürünler tablosu tarafından kullanılmak üzere açılır `CProducts`.
+Aşağıdaki örnek, `CProducts`tarafından kullanılacak Ürünler tablosunu açar.
 
 ```cpp
 // db_table.cpp
@@ -60,7 +60,7 @@ class CProducts {
 };
 ```
 
-Bu öznitelik, bir uygulamada kullanılan bir örnek için örneklere bakın [AtlAgent](https://github.com/Microsoft/VCSamples) ve [MultiRead](https://github.com/Microsoft/VCSamples).
+Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -68,12 +68,12 @@ Bu öznitelik, bir uygulamada kullanılan bir örnek için örneklere bakın [At
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

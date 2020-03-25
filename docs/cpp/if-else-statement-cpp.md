@@ -9,12 +9,12 @@ helpviewer_keywords:
 - if keyword [C++]
 - else keyword [C++]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
-ms.openlocfilehash: 0e9de2d39e09e148c7e4f3ea82c3dadb173c2d0c
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: fd2736d80d68249773c9aa6cf7cb9edffdaadac4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418470"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178437"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 
@@ -111,7 +111,7 @@ int main()
 }
 ```
 
-## <a name="if_with_init"></a>Başlatıcı ile IF deyimleri
+## <a name="if-statement-with-an-initializer"></a><a name="if_with_init"></a>Başlatıcı ile IF deyimleri
 
 **Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)Ile kullanılabilir): bir **IF** deyimi, adlandırılmış bir değişkeni bildiren ve Başlatan bir ifade de içerebilir. Değişken yalnızca If-Block kapsamında gerektiğinde If-ifadesinin bu formunu kullanın.
 

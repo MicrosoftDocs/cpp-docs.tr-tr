@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - C4485
 ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
-ms.openlocfilehash: 896fca6c6b257c90ccdf813a9c6cb6bc27ad9e96
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: c92f805eb2960336ed34f5da93b6c13f46bf15ac
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623619"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165151"
 ---
 # <a name="compiler-warning-c4485"></a>Derleyici Uyarısı C4485
 
-' override_function ': ' base_class_function ' taban başvuru sınıfı yöntemiyle eşleşiyor, ancak ' New ' veya ' override ' olarak işaretlenmemiş; ' New ' (ve ' Virtual ') varsayıldı
+' override_function ': ' base_class_function ' temel başvuru sınıfı yöntemiyle eşleşiyor, ancak ' New ' veya ' override ' olarak işaretlenmemiş; ' New ' (ve ' Virtual ') varsayıldı
 
 Bir erişimci, bir temel sınıf erişimci işlevi olan `virtual` anahtar sözcüğüyle veya olmadan geçersiz kılar, ancak `override` veya `new` belirticisi geçersiz kılma işlevi imzasının bir parçası değildi. Bu uyarıyı çözmek için `new` veya `override` belirticisi ekleyin.
 

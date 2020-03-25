@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - ErrorInfo method [C++]
 ms.assetid: 071b446c-4395-4fb8-bd3d-300a8b25f5cd
-ms.openlocfilehash: 59ada8a7e098e57cca5641a439365851bbae2485
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cedb9ccadc63166c43d980333d93a195254700d8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155078"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180712"
 ---
-# <a name="comerrorerrorinfo"></a>_com_error::ErrorInfo
+# <a name="_com_errorerrorinfo"></a>_com_error::ErrorInfo
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Alır `IErrorInfo` oluşturucuya nesnesi geçirildi.
+Oluşturucuya geçirilen `IErrorInfo` nesnesini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ IErrorInfo * ErrorInfo( ) const throw( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ham `IErrorInfo` öğesi oluşturucuya geçirilen.
+Oluşturucuya geçirilen ham `IErrorInfo` öğesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsüllenmiş alır `IErrorInfo` öğesi bir `_com_error` nesne veya hiç yoksa NULL `IErrorInfo` öğesi kaydedilir. Çağıranın çağırmalıdır `Release` bittiğinde, döndürülen nesneyi kullanmayı.
+Bir `_com_error` nesnesindeki kapsüllenmiş `IErrorInfo` öğeyi alır veya `IErrorInfo` öğe kaydediltiyse NULL olur. Çağıran, tarafından kullanılırken döndürülen nesne üzerinde `Release` çağırmalıdır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

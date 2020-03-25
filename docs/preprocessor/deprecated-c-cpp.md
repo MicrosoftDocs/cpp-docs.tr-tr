@@ -7,12 +7,12 @@ helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-ms.openlocfilehash: 5694c5175ff23952c601884243b428a842278b7d
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 6caf5283aea848186c8bd6f9dd2009bb8d8ee8b5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446479"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167634"
 ---
 # <a name="deprecated-pragma"></a>kullanım dışı pragma
 

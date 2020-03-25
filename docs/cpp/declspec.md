@@ -7,82 +7,82 @@ f1_keywords:
 - _declspec
 helpviewer_keywords:
 - __declspec keyword [C++]
-ms.openlocfilehash: e924f3e4a038f900e084dbf84d85430d815c8e8f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e0c99ea9379aa6e29096250e8bd36ce3d4f183e8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154509"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180231"
 ---
-# <a name="declspec"></a>__declspec
+# <a name="__declspec"></a>__declspec
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Depolama sınıfı bilgilerini kullanan belirtmek için genişletilmiş öznitelik söz dizimi **__declspec** anahtar sözcük belirli bir türün bir örneği aşağıda listelenen Microsoft'a özgü depolama sınıfı özniteliğiyle depolanması gerektiğini belirtir. Diğer depolama sınıfı değiştiricilere ait örnekler **statik** ve **extern** anahtar sözcükleri. Ancak bu anahtar sözcükler C ve C++ dillerinin ANSI belirtiminin bir parçasıdır ve genişletilmiş öznitelik söz dizimi kapsamında değildir. Genişletilmiş söz dizimi özniteliği Microsoft'a özel C ve C++ dilleri genişletmelerini basitleştirir ve standartlaştırır.
+Depolama sınıfı bilgilerini belirtmek için genişletilmiş öznitelik sözdizimi, belirli bir türün örneğinin aşağıda listelenen Microsoft 'a özgü bir depolama sınıfı özniteliğiyle depolanabileceğini belirten **__declspec** anahtar sözcüğünü kullanır. Diğer depolama sınıfı değiştiricilerine örnekler **statik** ve **extern** anahtar sözcüklerini içerir. Ancak bu anahtar sözcükler C ve C++ dillerinin ANSI belirtiminin bir parçasıdır ve genişletilmiş öznitelik söz dizimi kapsamında değildir. Genişletilmiş söz dizimi özniteliği Microsoft'a özel C ve C++ dilleri genişletmelerini basitleştirir ve standartlaştırır.
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*Decl-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (***genişletilmiş-decl-değiştirici-seq***)** 
+*decl-belirleyicisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**
 
-*extended-decl-modifier-seq*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier* *extended-decl-modifier-seq*
+*Genişletilmiş-decl-Modifier-Seq*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-Modifier*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-Modifier* *Genişletilmiş-decl-Modifier-Seq*
 
-*Genişletilmiş-decl-değiştirici*:<br/>
+*Extended-decl-değiştirici*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Hizalama (** *#* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ayırın ("** *segname* **")**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Ayırıcı**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ayır ("** *segname* **")**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ayırıcısı**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**AppDomain**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**code_seg ("** *segname* **")**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kullanım dışı**<br/>
+&nbsp;&nbsp;&nbsp;**kullanım dışı** &nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllexport**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**jitintrinsic**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**naked**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**jiç**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Naked**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**noalias**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**noinline**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**noline**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**noreturn**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**nothrow**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**novtable**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**İşlem**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**property(** { **get=**_get_func_name_ &#124; **,put=**_put_func_name_ } **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kısıtlama**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**işlem**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Özelliği (** { **Get =** _get_func_name_ &#124; **, put =** _put_func_name_ } **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**kısıtla**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**safebuffers**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**selectany**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**spectre(nomitigation)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Spectre (noazaltma)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**uuid("** *ComObjectGUID* **")**
+&nbsp;&nbsp;&nbsp;&nbsp;**UUID ("** *comobjectguid* **")**
 
 Beyaz boşluk, bildirim değiştirici sırasını ayırır. Örnekler sonraki bölümlerde gösterilir.
 
-Genişletilmiş öznitelik dilbilgisi bu Microsoft'a özgü depolama sınıfı öznitelikler destekler: [hizalama](../cpp/align-cpp.md), [tahsis](../cpp/allocate.md), [ayırıcı](../cpp/allocator.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [kullanım dışı](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md), [işlem](../cpp/process.md), [kısıtlama](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), ve [iş parçacığı](../cpp/thread.md). Ayrıca bu COM nesnesi özniteliklerini de destekler: [özelliği](../cpp/property-cpp.md) ve [UUID](../cpp/uuid-cpp.md).
+Genişletilmiş öznitelik dilbilgisi, Microsoft 'a özgü bu depolama sınıfı özniteliklerini destekler: [align](../cpp/align-cpp.md), [allocate](../cpp/allocate.md), [ayırıcı](../cpp/allocator.md), [AppDomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [kullanım dışı](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jic](../cpp/jitintrinsic.md), [Naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md), [işlem](../cpp/process.md), [kısıtlama](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [ Spectre](../cpp/spectre.md)ve [iş parçacığı](../cpp/thread.md). Ayrıca, bu COM nesnesi özniteliklerini de destekler: [özellik](../cpp/property-cpp.md) ve [UUID](../cpp/uuid-cpp.md).
 
-**Code_seg**, **dllexport**, **dllimport**, **naked**, **noalias**, **nothrow** , **özelliği**, **kısıtlama**, **selectany**, **iş parçacığı**, ve **UUID**depolama sınıfı öznitelikleri yalnızca nesne veya işlev için bunlar uygulandığı bildirimin özellikleridir. **İş parçacığı** özniteliği yalnızca nesneleri ve verileri etkiler. **Naked** ve **spectre** öznitelikleri yalnızca işlevleri etkiler. **Dllimport** ve **dllexport** öznitelikleri işlevleri, verileri ve nesneleri etkiler. **Özelliği**, **selectany**, ve **UUID** öznitelikleri COM nesnelerini etkiler.
+**Code_seg**, **dllexport**, **dllimport**, **Naked**, **noalias**, **nothrow**, **Property**, **kısıtlamalı**, **selectany**, **thread**ve **UUID** depolama sınıfı öznitelikleri yalnızca uygulandıkları nesne veya işlev bildiriminin özellikleridir. **Thread** özniteliği yalnızca verileri ve nesneleri etkiler. **Naked** ve **Spectre** öznitelikleri yalnızca işlevleri etkiler. **Dllimport** ve **dllexport** öznitelikleri işlevleri, verileri ve nesneleri etkiler. **Özelliği**, **selectany**ve **UUID** öznitelikleri com nesnelerini etkiler.
 
-Önceki sürümlerle uyumluluk için **_declspec** eşanlamlıdır **__declspec** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
+Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_declspec** **__declspec** için bir eş anlamlı.
 
-**__Declspec** anahtar sözcükleri basit bir bildirimin başlangıcına yerleştirilmelidir. Uyarı derleyicinin yoksaydığı **__declspec** anahtar sözcükleri yerleştirilen sonra * veya & ve bir bildirimde değişken tanımlayıcının önündeki.
+**__Declspec** anahtar sözcükleri basit bir bildirimin başlangıcına yerleştirilmelidir. Derleyici, uyarı olmadan, * veya & sonra ve bir bildirimde değişken tanımlayıcısının önüne yerleştirilmiş tüm **__declspec** anahtar sözcüklerini yok sayar.
 
-A **__declspec** kullanıcı tanımlı tür bildiriminin başında belirtilen özniteliği bu türün değişkenlerine uygulanır. Örneğin:
+Kullanıcı tanımlı tür bildiriminin başlangıcında belirtilen bir **__declspec** özniteliği, bu tür değişkeni için geçerlidir. Örneğin:
 
 ```cpp
 __declspec(dllimport) class X {} varX;
 ```
 
-Öznitelik uygulandığı bu durumda, `varX`. A **__declspec** özniteliği yerleştirilen sonra **sınıfı** veya **yapı** anahtar sözcüğü kullanıcı tanımlı türe uygulanır. Örneğin:
+Bu durumda, öznitelik `varX`için geçerlidir. **Sınıf** veya **Yapı** anahtar sözcüğünden sonra konulan **__declspec** özniteliği Kullanıcı tanımlı tür için geçerlidir. Örneğin:
 
 ```cpp
 class __declspec(dllimport) X {};
 ```
 
-Öznitelik uygulandığı bu durumda, `X`.
+Bu durumda, öznitelik `X`için geçerlidir.
 
-Kullanmaya yönelik genel yönerge **__declspec** basit bildirimler için öznitelik şu şekildedir:
+Basit bildirimlerin **__declspec** özniteliğini kullanmanın genel Kılavuzu aşağıdaki gibidir:
 
-*decl-specifier-seq* *init-declarator-list*;
+*decl-belirleyicisi-Seq* *init-declarator-list*;
 
-*Decl-specifier-seq* , diğerlerinin yanı sıra bir taban türü içermelidir (örneğin **int**, **float**, **typedef**, veya bir sınıf adı), depolama sınıfı (örn **statik**, **extern**), veya **__declspec** uzantısı. *İnit-declarator-list* , diğerlerinin yanında bildirimlerin işaretçi bölümünü de içermelidir. Örneğin:
+*Decl-belirleyicisi-Seq* , diğer şeyleri (örneğin, **int**, **float**, bir **typedef**veya bir sınıf adı), bir depolama sınıfı (örn. **statik**, **extern**) veya **__declspec** uzantısını içermelidir. *İnit-declarator-list* , diğer şeyleri, bildirimlerin işaretçi parçasını içermelidir. Örneğin:
 
 ```cpp
 __declspec(selectany) int * pi1 = 0;   //Recommended, selectany & int both part of decl-specifier
@@ -97,7 +97,7 @@ Aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bu
 __declspec( thread ) int tls_i = 1;
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

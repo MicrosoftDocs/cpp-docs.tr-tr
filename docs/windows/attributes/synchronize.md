@@ -1,21 +1,21 @@
 ---
-title: synchronize (C++ COM özniteliği)
+title: Synchronize (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.synchronize
 helpviewer_keywords:
 - synchronize attribute
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
-ms.openlocfilehash: ea5236b887fb0df2a0acdd1e4050c66a4719072b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0f4702de4cfde8586cc573f9ff5a6195984d207
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407139"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214519"
 ---
 # <a name="synchronize"></a>eşitle
 
-Hedef yöntemin erişimi eşitler.
+Hedef yönteme erişimi eşitler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,15 +25,15 @@ Hedef yöntemin erişimi eşitler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Eşitleme** C++ özniteliği hedef yöntemin bir nesnenin eşitlemek için destek uygular. Hedef yöntemin erişim denetleyerek ortak bir kaynak (örneğin, bir sınıfın yöntemini) kullanmak birden çok nesne eşitlenmesine izin verir.
+**Synchronize** C++ özniteliği bir nesnenin Target metodunu eşitleme desteğini uygular. Eşitleme, hedef yöntemin erişimini denetleyerek birden fazla nesnenin ortak bir kaynak (örneğin bir sınıf yöntemi) kullanmasına izin verir.
 
-Bu öznitelik tarafından eklenen kod uygun çağırır `Lock` hedef yöntemin başında yöntemi (iş parçacığı modeli tarafından belirlenir). Yönteminden çıkıldı, `Unlock` otomatik olarak çağrılır. Bu işlevler hakkında daha fazla bilgi için bkz. [CComAutoThreadModule::Lock](../../atl/reference/ccomautothreadmodule-class.md#lock)
+Bu öznitelik tarafından yerleştirilen kod, hedef yöntemin başındaki uygun `Lock` yöntemini (iş parçacığı modeli tarafından belirlenir) çağırır. Metodun çıkış yapıldığında `Unlock` otomatik olarak çağrılır. Bu işlevler hakkında daha fazla bilgi için bkz [. CComAutoThreadModule:: Lock](../../atl/reference/ccomautothreadmodule-class.md#lock)
 
-Bu öznitelik gerektiren [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi_progid](vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` uygulanmışsa `vi_progid` ve `coclass` de uygulanır.
 
 ## <a name="example"></a>Örnek
 
-Eşitleme için aşağıdaki kodu sağlar `UpdateBalance` yöntemi `CMyClass` nesne.
+Aşağıdaki kod, `CMyClass` nesnesinin `UpdateBalance` yöntemi için eşitleme sağlar.
 
 ```cpp
 // cpp_attr_ref_synchronize.cpp
@@ -66,12 +66,12 @@ class CMyClass {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Sınıf yöntemi yöntemi|
+|**Uygulama hedefi**|Class yöntemi, yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

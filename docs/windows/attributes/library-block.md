@@ -1,21 +1,21 @@
 ---
-title: library_block (C++ COM özniteliği)
+title: library_block (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.library_block
 helpviewer_keywords:
 - library_block attribute
 ms.assetid: ae7a7ebe-5e1a-4eda-a058-11bbd058ece8
-ms.openlocfilehash: 219f6a89dd7f80246e0337c2ef3bcad43540b165
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 405cc1cd5af7dcd689e833764f3da2fdc6d5f703
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409258"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214779"
 ---
-# <a name="libraryblock"></a>library_block
+# <a name="library_block"></a>library_block
 
-IDL kitaplığı bloğu içinde bir yapısı yerleştirir.
+IDL kitaplık bloğunun içine bir yapı koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ IDL kitaplığı bloğu içinde bir yapısı yerleştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kitaplık bloğu içinde bir yapısı yerleştirdiğinizde, başvurulan olup bağımsız olarak tür kitaplığına geçirilecek emin olun. Varsayılan olarak, yalnızca yapıları tarafından değiştirildi [coclass'ı](coclass.md), [dispinterface](dispinterface.md), ve [idl_module](idl-module.md) öznitelikleri kitaplığı bloğunda yerleştirilir.
+Kitaplık bloğunun içine bir yapı yerleştirdiğinizde, başvurulduğuna bakılmaksızın bunun tür kitaplığına geçirilmesini de sağlayabilirsiniz. Varsayılan olarak, yalnızca [coclass](coclass.md), [dispınterface](dispinterface.md)ve [idl_module](idl-module.md) öznitelikleri tarafından değiştirilen yapılar kitaplık bloğuna yerleştirilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodda, özel arabirim kitaplığı bloğunun içine yerleştirilir.
+Aşağıdaki kodda, kitaplık bloğunun içine özel bir arabirim yerleştirilir.
 
 ```cpp
 // cpp_attr_ref_library_block.cpp
@@ -48,12 +48,12 @@ __interface IMyInterface {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

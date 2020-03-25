@@ -1,21 +1,21 @@
 ---
-title: registration_script (C++ COM özniteliği)
+title: registration_script (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.registration_script
 helpviewer_keywords:
 - registration_script attribute
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
-ms.openlocfilehash: 0b2c4d576a699dea7772821b5635944b2663c57c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 780f3d41676d01458f47542d6f0862a278edff6a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407321"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214584"
 ---
-# <a name="registrationscript"></a>registration_script
+# <a name="registration_script"></a>registration_script
 
-Belirtilen özel kayıt betiği çalıştırır.
+Belirtilen özel kayıt betiğini yürütür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,18 +25,18 @@ Belirtilen özel kayıt betiği çalıştırır.
 
 ### <a name="parameters"></a>Parametreler
 
-*komut dosyası*<br/>
-Özel kayıt betiği (.rgs) dosyasının tam yolu. Değerini **hiçbiri**, gibi `script = "none"`, coclass'ı hiçbir kayıt gereksinimleri sahip olduğunu gösterir.
+*SCRIPT*<br/>
+Özel bir kayıt betiği (. RGS) dosyasının tam yolu. `script = "none"`gibi **none**değeri, coclass 'ın kayıt gereksinimlerini içermediğini gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Registration_script** C++ özniteliği tarafından belirtilen özel kayıt betiği yürüten *betik*. Bu öznitelik belirtilmezse (Bileşen kaydetmeye yönelik bilgileri içeren) bir standart .rgs dosyası kullanılır. .Rgs dosyaları hakkında daha fazla bilgi için bkz. [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
+**Registration_script** C++ özniteliği, *komut dosyası*tarafından belirtilen özel kayıt betiğini yürütür. Bu öznitelik belirtilmemişse, standart bir. rgs dosyası (bileşeni kaydetmek için bilgi içeren) kullanılır. . Rgs dosyaları hakkında daha fazla bilgi için bkz. [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md).
 
-Bu öznitelik gerektiren [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi_progid](vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bileşen cpp_attr_ref_registration_script.rgs adlı bir kayıt defteri betik sahip olduğunu belirtir.
+Aşağıdaki kod, bileşenin cpp_attr_ref_registration_script. rgs adlı bir kayıt defteri betiğinin bulunduğunu belirtir.
 
 ```cpp
 // cpp_attr_ref_registration_script.cpp
@@ -63,12 +63,12 @@ class CMyClass:public IFace {};
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

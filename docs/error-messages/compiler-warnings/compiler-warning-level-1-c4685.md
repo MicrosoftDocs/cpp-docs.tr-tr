@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4685
 ms.assetid: 16e859b8-a8e8-4a0d-a1d0-37ec4e59a9d7
-ms.openlocfilehash: 84add93eaa1ba7ad68ad82698627663f94abba17
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8cd822c8c3f14dcbf1dda1aee54121fd4edda385
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374423"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175421"
 ---
 # <a name="compiler-warning-level-1-c4685"></a>Derleyici Uyarısı (düzey 1) C4685
 
-bekleniyor ' >> ' bulundu ' >> ' şablon parametreleri ayrıştırılırken
+şablon parametreleri ayrıştırılırken ' > > ' beklenirken ' > > ' bulundu
 
-Bir şablon tanımı doğru bir şekilde sonlandırıldı değil.
+Şablon tanımı doğru şekilde sonlandırılmadı.

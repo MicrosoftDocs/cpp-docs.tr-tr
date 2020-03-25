@@ -5,20 +5,20 @@ helpviewer_keywords:
 - OLE DB providers, multithreaded
 - threading [C++], providers
 ms.assetid: a91270dc-cdf9-4855-88e7-88a54be7cbe8
-ms.openlocfilehash: a2afb7354dd0447375ee6205b7c5d9a4755aa4b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50e05b70a782dd343031443540790697e980c994
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404500"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209564"
 ---
 # <a name="supporting-free-threading-in-your-provider"></a>Sağlayıcınızda Serbest İş Parçacığı Oluşturmayı Destekleme
 
-Tüm OLE DB sağlayıcısı sınıfları iş parçacığı bakımından güvenlidir ve kayıt defteri girdileri uygun şekilde ayarlanır. Yüksek düzeyde performans, çok kullanıcılı durumlarda sağlanmasına yardımcı olmak amacıyla ücretsiz iş parçacıklı desteklemek için iyi bir fikirdir. Sağlayıcınız iş parçacığı açısından güvenli olmasını sağlamak için kodunuzu düzgün bir şekilde engellendi doğrulamanız gerekir. Her yazma veya veri deposu kritik bölümler erişimle engellemeniz gerekir.
+Tüm OLE DB sağlayıcı sınıfları iş parçacığı açısından güvenlidir ve kayıt defteri girdileri buna göre ayarlanır. Çok kullanıcılı durumlarda yüksek düzeyde performans sağlamaya yardımcı olmak için ücretsiz iş parçacığı oluşturmayı desteklemek iyi bir fikirdir. Sağlayıcınızın iş parçacığını güvenli tutmaya yardımcı olmak için, kodunuzun düzgün şekilde engellendiğini doğrulamanız gerekir. Veri yazdığınızda veya depoladığınız zaman, kritik bölümlerle erişimi engellemeniz gerekir.
 
-Her bir OLE DB sağlayıcı şablonu nesnesi kendi kritik bölümü vardır. Engellemeyi kolaylaştırmak için oluşturduğunuz her yeni sınıfı üst sınıfın alan bir şablon sınıfı olmalıdır bağımsız değişken olarak adı.
+Her bir OLE DB sağlayıcısı şablonu nesnesinin kendi kritik bölümü vardır. Engellemeyi kolaylaştırmak için oluşturduğunuz her yeni sınıf, üst sınıf adını bağımsız değişken olarak alan bir şablon sınıfı olmalıdır.
 
-Aşağıdaki örnek, kodunuzu engellemek gösterilmektedir:
+Aşağıdaki örnek, kodunuzun nasıl engelleneceğini göstermektedir:
 
 ```cpp
 template <class T>
@@ -37,9 +37,9 @@ HRESULT MyObject::MyMethod(void)
 }
 ```
 
-Kritik bölümler koruma hakkında daha fazla bilgi için `Lock` ve `Unlock`, bkz: [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+`Lock` ve `Unlock`ile önemli bölümleri koruma hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
-Doğrulama yöntemleri, geçersiz kılın (gibi `Execute`) iş parçacığı bakımından güvenlidir.
+Geçersiz kıldığınız tüm yöntemlerin (örneğin `Execute`) iş parçacığı açısından güvenli olduğunu doğrulayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

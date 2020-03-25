@@ -1,24 +1,24 @@
 ---
-title: Önemli hata C1853
+title: Önemli Hata C1853
 ms.date: 11/04/2016
 f1_keywords:
 - C1853
 helpviewer_keywords:
 - C1853
 ms.assetid: ceb9b4a5-92bf-4573-8a9f-3109cc7743ce
-ms.openlocfilehash: ec2d6bf6bac46cca8bdc2e3b8fe7cc6b7799d78a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 056db975fecef4e101dbbba7e2084236489498c7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165924"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202871"
 ---
-# <a name="fatal-error-c1853"></a>Önemli hata C1853
+# <a name="fatal-error-c1853"></a>Önemli Hata C1853
 
-> '*filename*' Ön derlenmiş üstbilgi dosyası derleyicinin önceki bir sürümünden olduğu veya önceden derlenmiş üstbilgi C++ ve c (veya tersi) kullanıyorsanız
+> '*filename*' ön derlenmiş üstbilgi dosyası derleyicinin önceki bir sürümünden veya ön derlenmiş üstbilgi C++ ve C 'den kullanıyorsunuz (veya tersi)
 
 Olası nedenler:
 
-- Önceden derlenmiş üst bilgi, önceki bir derleyici sürümü ile derlendi. Geçerli derleme üstbilgiyle yeniden derlemeden deneyin.
+- Ön derlenmiş üstbilgi önceki bir derleyici sürümü ile derlendi. Üstbilgiyi geçerli derleyiciyle yeniden derleme yapmayı deneyin.
 
-- Önceden derlenmiş üstbilgi C++ ve c üstbilgi C ile kullanmak için aşağıdakilerden birini belirterek yeniden derlemeden deneyin kullanıyorsanız [/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçenekleri veya "c" soneki kaynak dosyasının değiştirme. Daha fazla bilgi için [kodu önceden derlemek için iki seçeneğiniz](../../build/creating-precompiled-header-files.md#two-choices-for-precompiling-code).
+- Ön derlenmiş üst bilgi C++ ve c 'den kullanıyorsunuz. [/TC](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçeneklerinden birini belirterek veya kaynak dosyanın sonekini "C" olarak değiştirerek c ile kullanmak için üstbilgiyi yeniden derleme. Daha fazla bilgi için bkz. [önceden derleme kodu Için Iki seçenek](../../build/creating-precompiled-header-files.md#two-choices-for-precompiling-code).

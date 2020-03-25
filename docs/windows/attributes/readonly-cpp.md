@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - readonly attribute
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
-ms.openlocfilehash: 93f7393f76596766e841dfc25f6d12e20e3db618
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 415ad5e33de3132e055e53178e6e65d411f169f3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514126"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214610"
 ---
 # <a name="readonly-c"></a>readonly (C++)
 
@@ -55,8 +55,8 @@ __interface IFireTabCtrl
 |-|-|
 |**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

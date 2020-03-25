@@ -10,66 +10,66 @@ helpviewer_keywords:
 - recordsets [C++], dynasets
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-ms.openlocfilehash: 21c47546d14d9a121bdd0698fe96eb133dbc44a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed7098600126005978c8b017e7db378fca4c1a68
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395891"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213245"
 ---
 # <a name="dynaset"></a>Dynaset
 
-Bu konuda dinamik kümeler ve anlatılmaktadır kendi [kullanılabilirlik](#_core_availability_of_dynasets).
+Bu konuda, dinamik kümeler açıklanmakta ve [kullanılabilirlikleri](#_core_availability_of_dynasets)anlatılmaktadır.
 
 > [!NOTE]
->  Bu konu MFC ODBC sınıfları da dahil olmak üzere, geçerlidir [CRecordset](../../mfc/reference/crecordset-class.md). DAO sınıflardaki hakkında daha fazla bilgi için bkz. [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md). DAO ile dinamik türü kayıt kümeleri açabilirsiniz.
+>  Bu konu, [CRecordset](../../mfc/reference/crecordset-class.md)dahil olmak üzere MFC ODBC sınıfları için geçerlidir. DAO sınıflarında dinamik kümeler hakkında daha fazla bilgi için bkz. [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md). DAO ile, değişken tür kayıt kümelerini açabilirsiniz.
 
-Bir dinamik kayıt ile dinamik özellikler kümesidir. Yaşam süresi boyunca dynaset modunda (genellikle bir dinamik olarak da adlandırılır) bir kayıt kümesi nesnesi aşağıdaki şekilde veri kaynağı ile eşitlenmiş durumda kalır. Çok kullanıcılı bir ortamda, diğer kullanıcılar veya kümenize kayıtları düzenleyemeyeceğiniz veya kayıt kümenize gösteren tabloya ekleyin. Uygulamanızı ekler veya kayıt kümesinden siler kayıt kümenize yansıtılır. Tabloya diğer kullanıcı ekleme kayıtları yansıtılmaz kümenize çağırarak dinamik yeniden kadar kendi `Requery` üye işlevi. Diğer kullanıcıların kayıt sildiğinizde, silme işlemlerini kümenizde MFC kodu atlar. Etkilenen kayda kaydırma hemen sonra var olan kayıtların düzenleme değişiklikleri diğer kullanıcıların kümenize yansıtılır.
+DYNASET, dinamik özelliklere sahip bir kayıt kümesidir. Bağımsız değişken modundaki (genellikle Dynaset olarak adlandırılır) bir kayıt kümesi nesnesi, veri kaynağıyla aşağıdaki şekilde eşitlenmiş olarak kalır. Çok kullanıcılı bir ortamda, diğer kullanıcılar, dinamik kümenize ait kayıtları düzenleyebilir veya silebilir ya da Dynaset 'in gösterdiği tabloya kayıt ekleyebilirsiniz. Uygulamanızın kayıt kümesine eklediği veya kümeden sildiği kayıtlar, dinamik kümenize yansıtılır. Diğer kullanıcıların tabloya ekleyen kayıtlar, `Requery` üye işlevini çağırarak dinamik küme yeniden derlenene kadar dinamik kümenize yansıtılmayacaktır. Diğer kullanıcılar kayıtları sildiği zaman, MFC kodu kayıt kümenizde silmeleri atlar. Diğer kullanıcıların, var olan kayıtlarda değişiklik düzenlemesi, etkilenen kayda doğru kaydırdığınızda, dinamik kümenize yansıtılır.
 
-Benzer şekilde, dinamik küme kayıtları yaptığınız düzenlemeleri dynaset'ler kullanımda diğer kullanıcılar tarafından yansıtılır. Bunlar kendi dynaset'ler requery kadar kayıtları eklediğiniz diğer kullanıcıların dynaset'ler içinde yansıtılmaz. Kayıt silme, "diğer kullanıcıların kayıt kümeleri içinde silinen"olarak işaretlenir. Aynı veritabanının birden çok bağlantı varsa (birden çok `CDatabase` nesneleri), bu bağlantıları ile ilişkili kayıt kümelerinde, diğer kullanıcıların kayıt kümeleri aynı duruma sahip.
+Benzer şekilde, bir Dynaset içindeki kayıtlarda yaptığınız düzenlemeler, diğer kullanıcılar tarafından kullanılan dinamik kümeler halinde yansıtılır. Eklediğiniz kayıtlar, dinamik kümeleri yeniden sorgulanana kadar diğer kullanıcıların dinamik kümeleri ' ne yansıtılmaz. Sildiğiniz kayıtlar, diğer kullanıcıların kayıt kümelerinde "silindi" olarak işaretlenir. Aynı veritabanına (birden çok `CDatabase` nesnesi) birden çok bağlantınız varsa, bu bağlantılarla ilişkili kayıt kümeleri, diğer kullanıcıların kayıt kümeleriyle aynı duruma sahiptir.
 
-Dynaset'ler en değerli alındığında veri içinde bir hava yolu rezervasyon sistemini (örneğin olarak) dinamik olması gerekir.
-
-> [!NOTE]
-> ODBC imleç kitaplığı yüklenmesi gereken ve dynaset'ler kullanmak için dynaset'ler destekleyen ve veri kaynağı bir ODBC sürücüsü gerekir. Daha fazla bilgi için [, kullanılabilirlik Dynaset'ler](#_core_availability_of_dynasets).
-
-Bir kayıt kümesi bir dinamik olduğunu belirtmek için geçirmek `CRecordset::dynaset` ilk parametresi olarak `Open` kayıt nesnenizin üye işlevi.
+Veri kümeleri, bir hava yolu ayırma sisteminde (örneğin) verilerin dinamik olması gerektiğinde en değerlidir.
 
 > [!NOTE]
-> Güncelleştirilebilir dynaset'ler için ODBC sürücüsünün ya da konumlandırılmış update ifadeleriyle desteklemesi gerekir veya `::SQLSetPos` ODBC API işlevi. Her ikisi de desteklenir, MFC kullanıyorsa `::SQLSetPos` verimlilik için.
+> Dinamik kümeleri kullanmak için, veri kaynağınız için dinamik kümeleri destekleyen bir ODBC sürücünüz olmalıdır ve ODBC imleç kitaplığı yüklenmemelidir. Daha fazla bilgi için bkz. [Dinamik kümeler kullanılabilirliği](#_core_availability_of_dynasets).
 
-##  <a name="_core_availability_of_dynasets"></a> Dynaset'ler kullanılabilirliği
-
-Aşağıdaki gereksinimler karşılanırsa dynaset'ler MFC veritabanı sınıflarını destekler:
-
-- ODBC imleç kitaplığı DLL bu veri kaynağı için kullanımda olmamalıdır.
-
-   İmleç Kitaplığı kullandıysanız, bazı işlevler dynaset desteği için gerekli olan temel alınan ODBC sürücüsünün maskeler. Dynaset'ler kullanmak istediğiniz (ve bu bölümün geri kalanında açıklanan dynasets için gereken işlevselliği ODBC sürücünüz sahip varsa), MFC oluşturduğunuzda, imleç kitaplığı yüklenmemesine neden olabilir bir `CDatabase` nesne. Daha fazla bilgi için [ODBC](../../data/odbc/odbc-basics.md) ve [OpenEx](../../mfc/reference/cdatabase-class.md#openex) veya [açık](../../mfc/reference/cdatabase-class.md#open) sınıfının üye işlevinde `CDatabase`.
-
-   ODBC terminolojisinde, dinamik kümeler ve anlık görüntüleri için işaretçiler olarak adlandırılır. Bir İmleç konumuna kayıt izlemek için kullanılan bir mekanizmadır.
-
-- Veri kaynağınız için ODBC sürücüsünden anahtar kümesi temelli imleçler desteklemesi gerekir.
-
-   Anahtar kümesi temelli imleçler bir tablodan veri alma ve bir anahtar kümesini depolama yönetin. Anahtarlar, kullanıcının belirli bir kayda kaydırdığında tablosundan geçerli verileri almak için kullanılır. Sürücünüzün Bu destek sağlayıp sağlamadığını belirlemek için çağrı `::SQLGetInfo` ODBC API işlevini *çağırın* parametresi.
-
-   Anahtar kümesi desteği olmadan bir dinamik açmaya çalışırsanız, size bir `CDBException` AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED dönüş kodu ile değeri.
-
-- Veri kaynağınız için ODBC sürücüsü, genişletilmiş getirilirken desteklemesi gerekir.
-
-   Genişletilmiş yakalamanın yanı sıra geriye doğru kaydırın, SQL sorgunuzun elde edilen kayıtları iletmek için yeteneğidir. Sürücünüzün bu yeteneği destekleyip desteklemediğini belirlemek için çağrı `::SQLGetFunctions` ODBC API işlevini *çağırın* parametresi.
-
-Güncelleştirilebilir dynaset'ler (veya anlık görüntüleri, sorgunuzun) istiyorsanız, ODBC sürücüsünün de ya da desteklemelidir `::SQLSetPos` ODBC API işlevini veya konumlandırılmış güncelleştirmeler. `::SQLSetPos` İşlevi SQL deyimleri göndermeden veri kaynağını güncelleştirmek MFC sağlar. Bu destek varsa, MFC SQL kullanarak güncelleştirmeleri yapmak yerine kullanır. Sürücünüzün destekleyip desteklemediğini belirlemek için `::SQLSetPos`, çağrı `::SQLGetInfo` ile *öğesini* parametresi.
-
-Konumlandırılmış güncelleştirmeler SQL söz dizimini kullanın (form **WHERE CURRENT OF** \<imleçadı >) veri kaynağında tablodaki belirli bir satırı tanımlamak için. Sürücünüzün konumlandırılmış güncelleştirmeler destekleyip desteklemediğini belirlemek için çağrı `::SQLGetInfo` ile *SQL_POSITIONED_STATEMENTS* parametresi.
-
-Genellikle, MFC dynaset'ler (ancak değil salt iletme kayıt kümeleri) bir düzey 2 API uygunluğu ODBC sürücüsüyle gerektirir. Veri kaynağınız için bir sürücü için düzey 1 API kümesi uyuyorsa, hem güncelleştirilebilir ve salt okunur anlık görüntüler ve salt iletme kayıt kümeleri, ancak dinamik kümeleri kullanmaya devam edebilirsiniz. Ancak, düzey 1 sürücü genişletilmiş getirme destekleyip desteklemediğini dinamik kümeler ve anahtar kümesi temelli imleçler destekleyebilir. ODBC Uyumluluk düzeyleri hakkında daha fazla bilgi için bkz: [ODBC](../../data/odbc/odbc-basics.md).
+Bir kayıt kümesinin bir Dynaset olduğunu belirtmek için, `CRecordset::dynaset` kayıt kümesi nesnenizin `Open` üye işlevine ilk parametre olarak geçirin.
 
 > [!NOTE]
-> Anlık görüntüleri hem dynaset'ler kullanmak isterseniz, bunları iki farklı temel gerekir `CDatabase` nesneleri (iki farklı bağlantı).
+> Güncelleştirilebilir dinamik kümeler için, ODBC sürücünüzün konumlandırılmış Update deyimlerini veya `::SQLSetPos` ODBC API işlevini desteklemesi gerekir. Her ikisi de destekleniyorsa, MFC verimlilik için `::SQLSetPos` kullanır.
 
-İçin kaydırma hemen sonra ODBC imleç kitaplığı tarafından tutulan Ara depolama kullanan anlık görüntüler bir kaydı dynaset'ler doğrudan veri kaynağından getirin. Bu veri kaynağı ile eşitlenmiş dinamik başlangıçta seçtiği kayıtları tutar.
+##  <a name="availability-of-dynasets"></a><a name="_core_availability_of_dynasets"></a>Dinamik kümeler kullanılabilirliği
 
-Visual C++'ın bu sürümünde bulunan ODBC sürücülerinin listesini ve ek sürücüler hakkında bilgi için bkz: [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
+MFC veritabanı sınıfları, aşağıdaki gereksinimler karşılandığında dinamik kümeleri destekler:
+
+- ODBC imleç kitaplığı DLL dosyası bu veri kaynağı için kullanımda olmamalıdır.
+
+   İmleç kitaplığı kullanılıyorsa, küme kümesi desteği için gerekli olan temel ODBC sürücüsünün bazı işlevlerini maskeler. Dinamik kümeleri kullanmak istiyorsanız (ve ODBC sürücünüz, bu bölümün geri kalanında açıklandığı gibi, dinamik kümeler için gereken işlevlere sahipse), `CDatabase` nesnesi oluştururken MFC 'nin imleç kitaplığını yükleyememesine neden olabilirsiniz. Daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve [openex](../../mfc/reference/cdatabase-class.md#openex) veya `CDatabase`sınıfının [Açık](../../mfc/reference/cdatabase-class.md#open) üye işlevi.
+
+   ODBC terminolojisinde, dinamik kümeler ve anlık görüntüler imleçler olarak adlandırılır. İmleç bir kayıt kümesindeki konumunu izlemek için kullanılan bir mekanizmadır.
+
+- Veri kaynağınız için ODBC sürücüsü, anahtar kümesi temelli imleçleri desteklemelidir.
+
+   Anahtar kümesi temelli imleçler bir anahtarlar kümesini alarak ve depolayarak bir tablodaki verileri yönetir. Anahtarlar, Kullanıcı belirli bir kayıt üzerinde kaydırıldığında tablodaki geçerli verileri almak için kullanılır. Sürücünüzün bu desteği sağladığını öğrenmek için, *SQL_SCROLL_OPTIONS* PARAMETRESIYLE `::SQLGetInfo` ODBC API işlevini çağırın.
+
+   Anahtar kümesi desteği olmadan bir Dynaset açmaya çalışırsanız, dönüş kodu değeri AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED bir `CDBException` alırsınız.
+
+- Veri kaynağınız için ODBC sürücüsünün genişletilmiş getirme desteği gerekir.
+
+   Genişletilmiş getirme, geriye doğru kaymanın yanı sıra SQL sorgunuzun sonuç kayıtlarını ileriye doğru kaydırabilme olanağıdır. Sürücünüzün bu özelliği destekleyip desteklemediğini anlamak için, *SQL_API_SQLEXTENDEDFETCH* PARAMETRESIYLE `::SQLGetFunctions` ODBC API işlevini çağırın.
+
+Güncelleştirilebilir dinamik kümeleri (veya anlık görüntüleri) istiyorsanız, ODBC sürücünüz `::SQLSetPos` ODBC API işlevini veya konumlandırılmış güncelleştirmeleri de desteklemelidir. `::SQLSetPos` işlevi, MFC 'nin SQL deyimleri göndermeden veri kaynağını güncelleştirmesine izin verir. Bu destek varsa, MFC SQL kullanarak güncelleştirme yapmak için bunu tercih altında kullanır. Sürücünüzün `::SQLSetPos`destekleyip desteklemediğini öğrenmek için *SQL_POS_OPERATIONS* parametresiyle `::SQLGetInfo` çağırın.
+
+Konumlandırılmış **güncelleştirmeler, veri** kaynağındaki tablodaki belirli bir satırı BELIRLEMEK için SQL söz dizimini (\<cursorname >) kullanır. Sürücünüzün konumlandırılmış güncelleştirmeleri destekleyip desteklemediğini öğrenmek için *SQL_POSITIONED_STATEMENTS* parametresiyle `::SQLGetInfo` çağırın.
+
+Genellikle MFC dinamik kümeleri (yalnızca iletme kayıt kümeleri), düzey 2 API uyumluluğu olan bir ODBC sürücüsü gerektirir. Veri kaynağınıza ait sürücü düzey 1 API kümesine uygunsa, yalnızca güncelleştirilebilir ve salt okunurdur ve salt-kayıt kümelerini ve yalnızca yukarı kayıt kümelerini kullanmaya devam edebilirsiniz. Ancak, düzey 1 bir sürücü genişletilmiş getirme ve anahtar kümesi temelli imleçler destekliyorsa dinamik kümeleri destekleyebilir. ODBC Uyumluluk düzeyleri hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md).
+
+> [!NOTE]
+> Hem anlık görüntüleri hem de dinamik kümeleri kullanmak istiyorsanız, bunları iki farklı `CDatabase` nesnesine dayandırmalısınız (iki farklı bağlantı).
+
+ODBC imleç kitaplığı tarafından tutulan ara depolamayı kullanan anlık görüntülerin aksine, dinamik kümeler, doğrudan veri kaynağından, ona doğru bir kayıt getirir. Bu, özgün değişken tarafından seçilen kayıtları veri kaynağıyla eşitlenmiş halde tutar.
+
+Visual C++ 'in bu sürümünde yer alan ODBC sürücülerinin bir listesi ve ek sürücü alma hakkında bilgi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

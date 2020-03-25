@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - D9028
 ms.assetid: 03852b51-fa59-4114-ab1f-2af0509119af
-ms.openlocfilehash: 007c0a9e9a0f51740b1d6b668905fa20d7ef2964
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e65881159176ba0d144a8abc5f395ce1b96402f0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214057"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196657"
 ---
 # <a name="command-line-warning-d9028"></a>Komut Satırı Uyarısı D9028
 
-> en az yeniden derleme hatası, normal yapıma döndürülüyor
+> en az yeniden oluşturma hatası, normal yapıya geri dönme
 
-Proje .idb dosyası bozuk. Dosyayı silin ve yeniden oluşturun.
+Project. IDB dosyası bozuk. Dosyayı silin ve yeniden derleyin.
 
-En az yeniden oluşturmayı ve .idb dosya hakkında daha fazla bilgi için bkz: kullanım dışı [/Gm derleyici seçeneği](../../build/reference/gm-enable-minimal-rebuild.md).
+En az yeniden derleme ve. IDB dosyası hakkında daha fazla bilgi için, kullanım dışı kalan [/GM derleyici seçeneğine](../../build/reference/gm-enable-minimal-rebuild.md)bakın.

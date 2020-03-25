@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C2919
+title: Derleyici hatası C2919
 ms.date: 11/04/2016
 f1_keywords:
 - C2919
 helpviewer_keywords:
 - C2919
 ms.assetid: 140a6db9-eb48-4c5e-84a7-a09d2653605b
-ms.openlocfilehash: ab11226c8cc4629a265dd182d5f882f6b3be7e5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 624b3ab47ccb1c934b612ec8648b5eee0d233690
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160865"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176981"
 ---
-# <a name="compiler-error-c2919"></a>Derleyici Hatası C2919
+# <a name="compiler-error-c2919"></a>Derleyici hatası C2919
 
-'type': İşleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz
+' Type ': Işleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz
 
-Windows çalışma zamanı tür sistemi türünün yayımlanmış yüzeyinde işleci üye işlevlerini desteklemez. Tüm diller, işleç üye işlevleri tüketebildiğinden budur. Aynı sınıf ya da derleme biriminde C++ koddan çağrılabilir üye işlevleri, özel veya iç işleci oluşturabilirsiniz.
+Windows Çalışma Zamanı tür sistemi, bir türün yayınlanan yüzeyinde işleç üye işlevlerini desteklemez. Bunun nedeni, tüm dillerin işleç üye işlevlerini tüketebileceği değildir. Aynı sınıf veya derleme birimi içindeki C++ koddan çağrılabilen özel veya iç işleç üye işlevleri oluşturabilirsiniz.
 
-Bu sorunu gidermek için işleç üye işlevini ortak arabirimden kaldırın veya adlandırılmış üyesinin işleve değiştirin. Örneğin, yerine, `operator==`, üye işlev adı `Equals`.
+Bu sorunu onarmak için, işleç üye işlevini ortak arabirimden kaldırın veya adlandırılmış bir üye işlevi ile değiştirin. Örneğin, `operator==`yerine üye işlevi `Equals`olarak adlandırın.

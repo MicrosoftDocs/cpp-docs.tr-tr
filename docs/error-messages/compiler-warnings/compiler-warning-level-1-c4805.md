@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4805
 ms.assetid: 99c7b7e2-272e-4ab5-8580-17c42e62e2ef
-ms.openlocfilehash: 129bff79b35fb14136cbf8127a3cfb77fc0d2a40
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: c724af59b0654ae0f212eea038c48cb57f991aa3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051299"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175070"
 ---
 # <a name="compiler-warning-level-1-c4805"></a>Derleyici Uyarısı (düzey 1) C4805
 

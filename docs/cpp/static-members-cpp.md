@@ -13,18 +13,18 @@ helpviewer_keywords:
 - instance constructors, shared members
 - class instances [C++], static members
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
-ms.openlocfilehash: 708f78c09db263584d478d16863999d4428e4891
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c18b29cf69c2f899fbf06c7cb75ebbd2242ab427
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266952"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178567"
 ---
 # <a name="static-members-c"></a>Statik Üyeler [C++]
 
-Sınıflar, statik üye verileri ve üye işlevleri içerebilir. Ne zaman veri üyesi olarak bildirilen **statik**, sınıfın tüm nesneleri için verileri yalnızca bir kopyası saklanır.
+Sınıflar statik üye verisi ve üye işlevleri içerebilir. Bir veri üyesi **statik**olarak bildirildiğinde, sınıfın tüm nesneleri için verilerin yalnızca bir kopyası korunur.
 
-Statik veri üyeleri, belirli bir sınıf türü nesneleri bir parçası değildir. Sonuç olarak, bir statik veri üyesi bildirimi bir tanım dikkate alınmaz. Veri üyesi, sınıf kapsamında bildirilen, ancak tanımı dosya kapsamında gerçekleştirilir. Bu statik üyeleri dış bağlantısı vardır. Aşağıdaki örnek bunu göstermektedir:
+Statik veri üyeleri, belirli bir sınıf türünün nesnelerinin bir parçası değildir. Sonuç olarak, bir statik veri üyesinin bildirimi tanım olarak kabul edilmez. Veri üyesi sınıf kapsamında bildiriliyor, ancak tanım dosya kapsamında yapılır. Bu statik üyelerin dış bağlantısı vardır. Aşağıdaki örnekte bu gösterilmektedir:
 
 ```cpp
 // static_data_members.cpp
@@ -55,15 +55,15 @@ int main()
 }
 ```
 
-Önceki kodda, üye `bytecount` sınıfta bildirilen `BufferedOutput`, ancak sınıf bildirimi dışında tanımlanmış olması gerekir.
+Yukarıdaki kodda, üye `bytecount` sınıf `BufferedOutput`olarak bildirildiği halde sınıf bildiriminin dışında tanımlanmalıdır.
 
-Statik veri üyeleri, sınıf türünden bir nesneye başvuruda bulunmadan bulunulabilir. Kullanılarak yazılan bayt sayısı `BufferedOutput` nesneleri gibi edinilebilir:
+Statik veri üyelerine, sınıf türündeki bir nesneye başvurulmadan başvurulabilir. `BufferedOutput` nesneleri kullanılarak yazılan bayt sayısı aşağıdaki şekilde elde edilebilir:
 
 ```cpp
 long nBytes = BufferedOutput::bytecount;
 ```
 
-Statik üye var sınıf türünün herhangi bir nesne bulunduğunu gerekli değildir. Statik üyeleri de erişilebilir kullanarak üye seçimi (**.** ve **->**) işleçleri. Örneğin:
+Statik üyenin mevcut olması için, sınıf türündeki nesnelerin mevcut olması gerekmez. Statik üyelere Ayrıca üye seçimi ( **.** ve **->** ) işleçleri. Örneğin:
 
 ```cpp
 BufferedOutput Console;
@@ -71,11 +71,11 @@ BufferedOutput Console;
 long nBytes = Console.bytecount;
 ```
 
-Yukarıdaki durumda, bir nesneye başvuru (`Console`) değerlendirilmez; döndürülen değer statik nesne olan `bytecount`.
+Önceki durumda, nesnesine başvuru (`Console`) değerlendirilmez; döndürülen değer `bytecount`statik nesne.
 
-Statik veri üyeleri sınıf üyesine erişim kurallarına tabidir olduğundan statik veri üyeleri için özel erişim yalnızca sınıf üyesi işlevleri ve arkadaş için izin verilir. Bu kurallar, şurada açıklanan [üye erişim denetimi](../cpp/member-access-control-cpp.md). Bu statik veri üyeleri kendi erişim kısıtlamaları bağımsız olarak dosya kapsamı tanımlanmalıdır istisnadır. Açıkça başlatılması için veri üyesi ise, bir başlatıcı tanımıyla sağlanmalıdır.
+Statik veri üyeleri sınıf üye erişim kurallarına tabidir, bu nedenle statik veri üyelerine özel erişime yalnızca sınıf üyesi işlevleri ve arkadaşlar için izin verilir. Bu kurallar [üye Access Control](../cpp/member-access-control-cpp.md)açıklanmaktadır. Özel durum, statik veri üyelerinin, erişim kısıtlamalarından bağımsız olarak dosya kapsamında tanımlanması gerekir. Veri üyesinin Açık olarak başlatılması gerekiyorsa, tanımıyla birlikte bir başlatıcısının sağlanması gerekir.
 
-Statik bir üyenin türü ve sınıf adıyla yeterli değil. Bu nedenle, türü `BufferedOutput::bytecount` olduğu **uzun**.
+Statik üyenin türü, sınıf adı tarafından nitelendirilmez. Bu nedenle `BufferedOutput::bytecount` türü **uzun**olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,62 +8,62 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: e14f5d051b9684cd79a34f5fb50feeb785d2f927
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 042b1ce6d12e4f4a2be57c0e2e8e01d9750f5357
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395800"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213219"
 ---
 # <a name="odbc-basics"></a>ODBC Temelleri
 
-Bu konu, açık veritabanı bağlantısı (ODBC) hakkındaki temel bilgileri sağlar:
+Bu konu, açık veritabanı bağlantısı (ODBC) hakkında temel bilgileri sağlar:
 
-- [ODBC veritabanı sınıfları ile nasıl çalışır?](../../data/odbc/odbc-and-the-database-classes.md)
+- [ODBC 'nin veritabanı sınıflarıyla nasıl çalıştığı](../../data/odbc/odbc-and-the-database-classes.md)
 
-- [ODBC sürücüleri kümelerle nasıl çalışır?](../../data/odbc/odbc-driver-requirements-for-dynasets.md)
+- [ODBC sürücüleri dinamik kümeler ile nasıl çalışır?](../../data/odbc/odbc-driver-requirements-for-dynasets.md)
 
-- [Hangi ODBC bileşenleri ile uygulamalarınızı yeniden dağıtmanız gerekir](../../data/odbc/redistributing-odbc-components-to-your-customers.md)
+- [Uygulamalarınızla birlikte dağıtmanız gereken ODBC bileşenleri](../../data/odbc/redistributing-odbc-components-to-your-customers.md)
 
-İlgili konu okumak isteyeceksiniz [ODBC: ODBC İmleç Kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md).
-
-> [!NOTE]
-> ODBC veri kaynakları, veri erişim nesnesi (DAO) MFC sınıfları veya bu konuda açıklandığı gibi MFC ODBC sınıfları aracılığıyla erişilebilir.
+Ayrıca, ODBC [Imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)olan ilişkili konu başlığını da okumak isteyeceksiniz.
 
 > [!NOTE]
-> MFC ODBC sınıfları Unicode desteği ve çoklu iş parçacığı kullanımı. Çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz. [ODBC sınıfları ve iş parçacıkları](../../data/odbc/odbc-classes-and-threads.md)
+> ODBC veri kaynaklarına, bu konuda açıklandığı gibi MFC ODBC sınıfları aracılığıyla veya MFC veri erişim nesnesi (DAO) sınıfları aracılığıyla erişilebilir.
 
-ODBC uygulamaları ODBC sürücüsü tüm veritabanı verilere erişmek izin veren bir çağrı düzeyi arabirimidir. ODBC kullanarak, son kullanıcınızın bir ODBC sürücüsüne sahip olan herhangi bir veritabanına erişim ile veritabanı uygulamaları oluşturabilirsiniz. ODBC, uygulamanızın kaynak veritabanı yönetim sistemi (DBMS) bağımsız olmasını sağlayan bir API sağlar.
+> [!NOTE]
+> MFC ODBC sınıfları Unicode ve çoklu iş parçacığı oluşturmayı destekler. Çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz. [ODBC sınıfları ve Iş parçacıkları](../../data/odbc/odbc-classes-and-threads.md)
 
-ODBC veritabanı, Microsoft Windows açık Hizmetleri mimarisi (WOSA), her platform için uygulama yeniden yazma olmadan birden çok bilgi işlem ortamları için bağlanmak masaüstü uygulamalarının Windows tabanlı bir arabirimi olan bölümüdür.
+ODBC, uygulamaların bir ODBC sürücüsü olan herhangi bir veritabanındaki verilere erişmesine olanak tanıyan bir çağrı düzeyi arabirimidir. ODBC kullanarak, son kullanıcılarınızın bir ODBC sürücüsüne sahip olduğu herhangi bir veritabanına erişimi olan veritabanı uygulamaları oluşturabilirsiniz. ODBC, uygulamanızın kaynak veritabanı yönetim sistemi 'nden (DBMS) bağımsız olmasını sağlayan bir API sağlar.
 
-ODBC bileşenleri şunlardır:
+ODBC, Windows tabanlı masaüstü uygulamalarının her platform için uygulamayı yeniden yazmadan birden çok bilgi işlem ortamına bağlanmasına izin veren bir arabirim olan Microsoft Windows açık hizmetler mimarisinin (WOSA) veritabanı bölümüdür.
 
-- ODBC API
+ODBC bileşenleri aşağıda verilmiştir:
 
-   Bir işlev kitaplığının çağrıları, bir dizi hata kodları ve standart [SQL](../../data/odbc/sql.md) DBMS şirket verilerine erişmek için söz dizimi.
+- ODBC APı 'SI
+
+   İşlev çağrılarının bir kitaplığı, bir hata kodları kümesi ve DBMS 'ler üzerindeki verilere erişmek için standart bir [SQL](../../data/odbc/sql.md) söz dizimi.
 
 - ODBC Sürücü Yöneticisi
 
-   ODBC veritabanı sürücülerini yükleyen bir uygulama adına bir dinamik bağlantı kitaplığı (Odbc32.dll). Bu DLL, uygulamanız için saydamdır.
+   ODBC veritabanı sürücülerini uygulama adına yükleyen bir dinamik bağlantı kitaplığı (Odbc32. dll). Bu DLL, uygulamanız için saydamdır.
 
 - ODBC veritabanı sürücüleri
 
-   Belirli DBMS için ODBC işlev çağrılarını işleyen bir veya daha fazla dll dosyaları. Sağlanan sürücülerin bir listesi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
+   Belirli DBMS 'Ler için ODBC işlev çağrılarını işleyen bir veya daha fazla dll. Sağlanan sürücülerin listesi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
 
-- [ODBC imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)
+- [ODBC Imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-   ODBC Sürücü Yöneticisi ve sürücüleri arasında bulunan ve verilerine kaydırma işleyen bir dinamik bağlantı kitaplığı (Odbccr32.dll).
+   ODBC Sürücü Yöneticisi ve sürücüler arasında bulunan dinamik bağlantı kitaplığı (ODBCCR32. dll) ve veriler arasında kaydırma gerçekleştirir.
 
 - [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md)
 
-   Bir uygulama için veri kaynağı olarak kullanılabilir hale getirmek için DBMS yapılandırmak için kullanılan araç.
+   Bir uygulama için veri kaynağı olarak kullanılabilir hale getirmek üzere bir DBMS yapılandırmak için kullanılan bir araç.
 
-Bir uygulama DBMS ile doğrudan çalışmak yerine, özellikle DBMS için yazılmış bir ODBC sürücüsü ile çalışma alanından DBMS bağımsızlığı elde eder. Sürücü Geliştirici iş basitleştirme ve çok çeşitli veri kaynakları için kullanılabilir hale getirme kendi DBMS kullanabilirsiniz komutları çağırıyor çevirir.
+Uygulama, doğrudan DBMS ile çalışmak yerine DBMS için yazılmış bir ODBC sürücüsü üzerinden çalışarak, DBMS 'lerden bağımsız bir şekilde erişir. Sürücü, DBMS 'nin kullanabileceği komutlara çağrı yapar, geliştirici işini basitleştirir ve çok çeşitli veri kaynakları için kullanılabilir hale getirir.
 
-Veritabanı sınıfları için ODBC sürücüsü olan herhangi bir veri kaynağını destekler. Bu örneğin, bir ilişkisel veritabanı, dizinli sıralı erişim yöntemi (ISAM) veritabanı, Microsoft Excel elektronik tablosu veya bir metin dosyası içerebilir. ODBC sürücüleri veri kaynağı bağlantılarını yönetmek ve SQL veritabanından kayıtları seçmek için kullanılır.
+Veritabanı sınıfları, ODBC sürücünüze sahip olduğunuz tüm veri kaynaklarını destekler. Bu, örneğin, ilişkisel bir veritabanı, dizinli sıralı erişim yöntemi (ISAM) veritabanı, Microsoft Excel elektronik tablosu veya metin dosyası içerebilir. ODBC sürücüleri veri kaynağıyla bağlantıları yönetir ve SQL, veritabanından kayıtları seçmek için kullanılır.
 
-Visual C++'ın bu sürümünde bulunan ODBC sürücülerinin listesini ve ek sürücüler hakkında bilgi için bkz: [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
+Visual C++ 'in bu sürümünde yer alan ODBC sürücülerinin bir listesi ve ek sürücü alma hakkında bilgi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

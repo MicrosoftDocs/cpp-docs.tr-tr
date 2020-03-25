@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4178
 ms.assetid: 2c2c8f97-a5c4-47cd-8dd2-beea172613f3
-ms.openlocfilehash: 00cd451ba2e7a50ebeaa260c3466e5889d22125e
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 031f0f06c1ad7471aa7ca440b32de38de51a235a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626253"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176084"
 ---
 # <a name="compiler-warning-level-1-c4178"></a>Derleyici Uyarısı (düzey 1) C4178
 

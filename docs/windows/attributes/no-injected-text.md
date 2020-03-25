@@ -1,21 +1,21 @@
 ---
-title: no_injected_text (C++ COM özniteliği)
+title: no_injected_text (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.no_injected_text
 helpviewer_keywords:
 - no_injected_text attribute
 ms.assetid: 5256f808-e41e-4f4a-9ea5-e447919f5696
-ms.openlocfilehash: 354643020e704a87daa2e56e923b6a0a704bf0b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f98be3478b2e1eeb4b464f1784f3f4ece22d8a4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409297"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166620"
 ---
-# <a name="noinjectedtext"></a>no_injected_text
+# <a name="no_injected_text"></a>no_injected_text
 
-Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.
+Öznitelik kullanımı sonucu olarak derleyicinin ekleme kodundan yapılmasını engeller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,12 +25,12 @@ Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.
 
 ### <a name="parameters"></a>Parametreler
 
-*Boole değeri*<br/>
-(İsteğe bağlı) **true** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.
+*Boolean*<br/>
+Seçim kod eklemek istiyorsanız **true** , kodun eklenmesine izin vermek için **false** . Varsayılan değer **true** 'dur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-En yaygın kullanımı **no_injected_text** C++ özniteliktir tarafından [/Fx](../../build/reference/fx-merge-injected-code.md) ekleyen derleyici seçeneği **no_injected_text** .mrg dosyasına özniteliği.
+**No_injected_text** C++ özniteliğinin en yaygın kullanımı, **no_injected_text** özniteliğini. mrg dosyasına ekleyen [/FX](../../build/reference/fx-merge-injected-code.md) derleyici seçeneğidir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -38,12 +38,12 @@ En yaygın kullanımı **no_injected_text** C++ özniteliktir tarafından [/Fx](
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

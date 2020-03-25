@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl yapılır: Sabitleme işaretçileri ve değer türleri'
+title: 'Nasıl yapılır: Sabitleme İşaretçileri ve Değer Türlerini Bildirme'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - value types, declaring
 - pinning pointers
 ms.assetid: 57c5ec8a-f85a-48c4-ba8b-a81268bcede0
-ms.openlocfilehash: 901980c76aac5dd364f2fa2fae0e007f5d25f3d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88ef7e82161703a272a571392fd66e6055371c61
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254871"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181973"
 ---
-# <a name="how-to-declare-pinning-pointers-and-value-types"></a>Nasıl yapılır: Sabitleme işaretçileri ve değer türleri
+# <a name="how-to-declare-pinning-pointers-and-value-types"></a>Nasıl yapılır: Sabitleme İşaretçileri ve Değer Türlerini Bildirme
 
-Örtük olarak bir değer türü kutulanabilir. Değer türü nesne bir sabitleme işaretçisine kendisi ve kullanım ardından bildirebilirsiniz bir **pin_ptr** kutulanmış değer türü.
+Değer türü örtük olarak kutulanabilir. Daha sonra değer türü nesnesine sabitleme işaretçisi bildirebilir ve kutulanmış değer türünde bir **pin_ptr** kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 

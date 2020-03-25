@@ -6,33 +6,33 @@ helpviewer_keywords:
 - symbols [C++], Win32 predefined
 - Windows API [C++], predefined symbols
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
-ms.openlocfilehash: 8a238021f255da30a132755a297a471dd1f51246
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae79b4c1a4021b32f631c694b376d2202b345415
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387688"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165931"
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 
-Bu simgeler Win32 üstbilgi dosyalarında tanımlanır ve standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler, sık kullanılan UI öğeleri ile ağırlıklı olarak kullanılır. Kaynak düzenleyicileri denetimleri ile çalışırken, bu simgeler görünür [Özellikler penceresi](/visualstudio/ide/reference/properties-window) ortak denetimleri ile ilişkili. Uygulama simgesi, araç çubuğu görüntülenmelidir örneği için simge IDI_SMALL simgesiyle ilişkili olacaktır, **özelliği** penceresi.
+Bu semboller Win32 üst bilgi dosyalarında tanımlanmıştır ve standart Windows uygulama işlevlerini ve eylemlerini destekler. Bu semboller genellikle ortak kullanıcı arabirimi öğeleriyle kullanılır. Kaynak düzenleyicilerde denetimlerle çalışırken, bu semboller ortak denetimlerle ilişkili [Özellikler penceresi](/visualstudio/ide/reference/properties-window) görüntülenir. Örneğin, araç çubuğun uygulama simgesini görüntülemesi gerekiyorsa, simge **özellik** penceresindeki sembol IDI_SMALL ilişkilendirilir.
 
 |||
 |-|-|
-|IDABORT|(Denetim) İletişim kutusunda İptal düğmesi|
-|IDC_STATIC|(Denetim) İletişim kutusunda statik metin|
-|IDCANCEL|(Denetim) İletişim kutusunda İptal düğmesi|
-|IDD_ABOUTBOX|(iletişim) Ürün hakkında iletişim kutusu|
-|IDI_PROJECTNAME|(simge) Geçerli proje simgesi|
-|IDI_SMALL|(simge) Geçerli proje küçük simge|
-|IDIGNORE|(Denetim) İletişim kutuları yoksay düğmesi ile kullanılan|
-|IDM_ABOUT|(menü öğesi) Yardım ile kullanılan... Hakkında...|
-|IDM_EXIT|(menü öğesi) Dosya ile kullanılan... Çıkış...|
-|IDNO|(Denetim) İletişim kutusu, düğmesi yok|
-|IDOK|(Denetim) İletişim kutusunda Tamam düğmesi|
-|IDRETRY|(Denetim) İletişim kutusu, yeniden deneme düğmesi|
-|IDS_APP_TITLE|(dize) Geçerli uygulama adı|
-|IDYES|(Denetim) İletişim kutusu, Evet düğmesi|
+|IDABORT|denetimle İletişim kutusu, durdur düğmesi|
+|IDC_STATIC|denetimle İletişim kutusunda statik metin|
+|IDCANCEL|denetimle İletişim kutusu, Iptal düğmesi|
+|IDD_ABOUTBOX|iletişim Ürün hakkında iletişim kutusu|
+|IDI_PROJECTNAME|simg Geçerli proje simgesi|
+|IDI_SMALL|simg Geçerli proje küçük simgesi|
+|IDıGNORE|denetimle İletişim kutularında yoksayma düğmesiyle kullanılır|
+|IDM_ABOUT|(menü öğesi) Yardım ile kullanılıyor... Hakkında...|
+|IDM_EXIT|(menü öğesi) Dosya ile kullanılıyor... Çıkış...|
+|IDNO|denetimle İletişim kutusu, düğme yok|
+|IDOK|denetimle İletişim kutusu, Tamam düğmesi|
+|IDRETRY|denetimle İletişim kutusu, yeniden dene düğmesi|
+|IDS_APP_TITLE|dizisinde Geçerli uygulama adı|
+|IDYES|denetimle İletişim kutusu, Evet düğmesi|
 
 ## <a name="requirements"></a>Gereksinimler
 

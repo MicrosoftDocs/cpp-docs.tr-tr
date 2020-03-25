@@ -1,22 +1,22 @@
 ---
-title: Önemli hata C1902
+title: Önemli Hata C1902
 ms.date: 11/04/2016
 f1_keywords:
 - C1902
 helpviewer_keywords:
 - C1902
 ms.assetid: 2dc066cc-fcb1-4725-8bcb-9f44dd0905b7
-ms.openlocfilehash: c425430a6d08ae8a97c4dcd0f5764f44dee43e5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10a411dfc942498a98959d9a23cb42dfb93cf2ae
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165872"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202832"
 ---
-# <a name="fatal-error-c1902"></a>Önemli hata C1902
+# <a name="fatal-error-c1902"></a>Önemli Hata C1902
 
 Program veritabanı yöneticisi uyuşmazlığı; Lütfen yüklemenizi denetleyin
 
-Program veritabanı dosyası (.pdb) mspdb daha yeni bir sürümü kullanılarak oluşturulmuş olan*XXX*derleyici sisteminizde bulunan bir .dll. Bu hata genellikle mspdbsrv.exe veya mspdbcore.dll eksik veya mspdb farklı sürümlerine sahip gösterir*XXX*.dll. ( *XXX* mspdb yer tutucu*XXX*her ürün sürümüyle .dll dosya adı değişiyor. Örneğin, Visual Studio 2015'te dosya mspdb140.dll adıdır.)
+Bir program veritabanı dosyası (. pdb), bir mspdb*XXX*. dll ' nin sisteminizde bulunan derleyicisinden daha yeni bir sürümü kullanılarak oluşturulmuştur. Bu hata genellikle mspdbsrv. exe veya mspdbcore. dll dosyasının eksik olduğunu veya mspdb*XXX*. dll ' den farklı sürümlere sahip olduğunu gösterir. (Mspdb*XXX*. dll dosya adı içindeki *XXX* yer tutucusu her ürün sürümüyle birlikte değişir. Örneğin, Visual Studio 2015 ' de dosya adı mspdb140. dll ' dir.)
 
-Eşleşen sürümlerini mspdbsrv.exe mspdbcore.dll ve mspdb olun*XXX*.dll, sisteminize yüklenir. Eşleşmeyen sürümler hedef platform için derleyici ve bağlantı araçlarını içeren dizine kopyalanmadı emin olun. Derleyici veya bağlantı aracı komut isteminde ayarlamadan çağırabilirsiniz böylece Örneğin, dosyalar kopyaladığınız **yolu** ortam değişkeni buna göre.
+System üzerinde mspdbsrv. exe, mspdbcore. dll ve mspdb*XXX*. dll ' nin eşleşen sürümlerinin yüklü olduğundan emin olun. Eşleşmeyen sürümlerin, hedef platformunuzun derleyicisini ve bağlantı araçlarını içeren dizine kopyalanmadığından emin olun. Örneğin, dosyaları kopyalanmış olabilirsiniz. bu sayede, **Path** ortam değişkenini uygun şekilde ayarlamadan derleyici veya bağlantı aracını komut isteminden çağırabilirsiniz.

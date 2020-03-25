@@ -1,5 +1,5 @@
 ---
-title: işleç &lt; (&lt;sample kapsayıcı &gt;)
+title: işleç&lt; (&lt;örnek kapsayıcısı&gt;)
 ms.date: 11/04/2016
 f1_keywords:
 - std::operator<
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - < operator
 - operator <, valarrays
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
-ms.openlocfilehash: fc2a14d882b5ccfbfdaae543c76ca673f9018a59
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 6ef43fb762c4da71062fc846048f21c0112bfafc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687333"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215273"
 ---
-# <a name="operatorlt-ltsample-containergt"></a>işleç &lt; (&lt;sample kapsayıcı &gt;)
+# <a name="operatorlt-ltsample-containergt"></a>işleç&lt; (&lt;örnek kapsayıcısı&gt;)
 
 > [!NOTE]
 > Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
@@ -39,10 +39,10 @@ bool operator<(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0 döndürür.
+`lexicographical_compare(left.begin, left.end, right.begin, right.end)` döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<sample kapsayıcı >](../standard-library/sample-container.md) \
+[\<örnek kapsayıcı >](../standard-library/sample-container.md)\
 \ [başla](../standard-library/container-class-begin.md)
 [erer](../standard-library/container-class-end.md)

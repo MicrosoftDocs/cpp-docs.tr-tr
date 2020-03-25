@@ -6,12 +6,12 @@ helpviewer_keywords:
 - templates, function
 - function templates, about function templates
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
-ms.openlocfilehash: d430ad7650ffa47f0d6334a827b416cfb05ae6c2
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: f2caf70dd90e76c7bc4f20ea4bf34845b343efc2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894369"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179750"
 ---
 # <a name="function-templates"></a>İşlev Şablonları
 
@@ -28,9 +28,9 @@ int main() {
 }
 ```
 
-Bu kod, bir bağımsız değişkenlerin değerlerini birbirleriyle değiştiren bir işlevler ailesini tanımlar. Bu şablondan birbirleriyle değiştirecek işlevler oluşturabilirsiniz **int** ve **uzun** türleri ve ayrıca kullanıcı tanımlı türler. `MySwap`, sınıfın kopya oluşturucu ve atama işleci düzgün bir şekilde tanımlanmışsa sınıfları bile birbirleriyle değiştirecektir.
+Bu kod, bir bağımsız değişkenlerin değerlerini birbirleriyle değiştiren bir işlevler ailesini tanımlar. Bu şablondan, **int** ve **Long** türlerini ve ayrıca Kullanıcı tanımlı türleri takas edecek işlevler oluşturabilirsiniz. `MySwap`, sınıfın kopya oluşturucu ve atama işleci düzgün bir şekilde tanımlanmışsa sınıfları bile birbirleriyle değiştirecektir.
 
-Derleyici türlerini bildiği için ek olarak, işlev şablonu, farklı türden nesneleri önleyecektir *bir* ve *b* derleme zamanında parametreleri.
+Buna ek olarak, derleyici derleme zamanında *a* ve *b* parametrelerinin türlerini bildiğinden, işlev şablonu farklı türlerdeki nesneleri değiştirmeyi engeller.
 
 Bu işlev şablonu oluşturulmamış bir işlev tarafından gerçekleştirilebilse de, şablon sürümü void işaretçileri kullanılırsa typesafe olabilir. Aşağıdaki çağrıları göz önünde bulundurun:
 
@@ -55,7 +55,7 @@ int main(int j) {
 }
 ```
 
-Şablon bağımsız değişkenini açıkça belirtildiğinde, işlev bağımsız değişkenini ilgili işlev şablonu parametrelerine dönüştürmek için normal örtük dönüştürmeler gerçekleştirilir. Yukarıdaki örnekte, derleyicinin dönüştürecek `j` türüne **char**.
+Şablon bağımsız değişkenini açıkça belirtildiğinde, işlev bağımsız değişkenini ilgili işlev şablonu parametrelerine dönüştürmek için normal örtük dönüştürmeler gerçekleştirilir. Yukarıdaki örnekte, derleyici `j` **char**türüne dönüştürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

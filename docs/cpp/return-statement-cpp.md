@@ -7,16 +7,16 @@ helpviewer_keywords:
 - return keyword [C++], syntax
 - return keyword [C++]
 ms.assetid: a498903a-056a-4df0-a6cf-72f633a62210
-ms.openlocfilehash: 47bf9c50a2da039b0ffa074796a768290b732bb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c8ea796ab40a2090ed9853377f7c9415914bc0e8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268544"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178988"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C++)
 
-Bir işlevin yürütülmesini sonlandırır ve denetim çağırma işlevine döndürür (veya işletim sistemine denetiminden aktarırsanız `main` işlevi). Çağıran işlevin çağrının hemen ardından bir noktada yürütmeyi devam ettirir.
+Bir işlevin yürütülmesini sonlandırır ve denetimi çağıran işleve (veya `main` işlevinden denetim aktarırsanız işletim sistemine) döndürür. Yürütme, çağrının hemen ardından gelen noktada çağırma işlevinde sürdürülür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ return [expression];
 
 ## <a name="remarks"></a>Açıklamalar
 
-`expression` Yan tümcesi varsa, dönüştürülür işlevi bildiriminde belirtilen türe alacağı bir başlatma gerçekleştirildi. İfade türü dönüştürme **dönüş** işlevin türünü, geçici nesneler oluşturabilir. Nasıl ve ne zaman türünü kopyalamıyorsa oluşturulur hakkında daha fazla bilgi için bkz. [geçici nesneler](../cpp/temporary-objects.md).
+Varsa `expression` yan tümcesi, başlatma gerçekleştirilmiş gibi işlev bildiriminde belirtilen türe dönüştürülür. İfadenin türünden **dönüş** türüne dönüştürme geçici nesneler oluşturabilir. Geçiciler nasıl ve ne zaman oluşturulduğu hakkında daha fazla bilgi için bkz. [geçici nesneler](../cpp/temporary-objects.md).
 
-Değerini `expression` yan tümcesi, çağırma işlevine döndürülür. İfade atlanırsa, işlev dönüş değeri tanımsızdır. Oluşturucular ve Yıkıcılar ve işlevleri türü **void**, bir ifadede belirtemezsiniz **dönüş** deyimi. Diğer tüm türlerin işlevleri, bir ifadede belirtmelisiniz **dönüş** deyimi.
+`expression` yan tümcesinin değeri, çağırma işlevine döndürülür. İfade atlanırsa, işlevin dönüş değeri tanımsızdır. Oluşturucular ve Yıkıcılar ve **void**türündeki işlevler, **Return** deyiminde bir ifade belirtemez. Diğer tüm türlerin işlevleri, **Return** deyiminde bir ifade belirtmelidir.
 
-Denetim akışı işlev tanımı kapsayan blok çıktığında, olduğu gibi aynı sonucudur varsa bir **dönüş** deyimi bir ifade olmadan yürütülen. Bu, bir değer döndüren olarak bildirilen işlevler için geçersiz.
+Denetim akışı, işlev tanımını kapsayan bloğundan çıkıldığında, bir ifade olmayan bir **Return** deyimi yürütülürse, sonuç, bu durum aynı olur. Bu, değer döndüren olarak belirtilen işlevler için geçersizdir.
 
-Herhangi bir sayıda bir işlev bulunabilir **dönüş** deyimleri.
+Bir işlevde herhangi bir sayıda **dönüş** ifadesi olabilir.
 
-Aşağıdaki örnek, bir ifade ile kullanır. bir **dönüş** deyimi iki tamsayının en büyük elde edilir.
+Aşağıdaki örnek, iki tamsayının en büyüğünü elde etmek için **Return** ifadesiyle bir ifade kullanır.
 
 ## <a name="example"></a>Örnek
 

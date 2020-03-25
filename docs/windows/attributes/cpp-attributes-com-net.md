@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: 4885edf57988d5f83b56ba6a71da85877354d3ce
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 734d82a30df3e143a6f47cb1b3eca2cd778830bd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421319"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214935"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM ve .NET için C++ öznitelikleri
 
@@ -78,7 +78,7 @@ Bazı projeler birden çok bağımsız. IDL dosyası içerir. Bunlar iki veya da
 
 Ayrıca görsel C++ BAĞLAYıCı, IDL ile ilgili tüm öznitelik bilgilerini tek BIR MIDL dosyasına çıktı. Tek bir projeden iki tür kitaplığı oluşturmanın bir yolu olmayacaktır.
 
-## <a name="contexts"></a>Öznitelik bağlamları
+## <a name="attribute-contexts"></a><a name="contexts"></a>Öznitelik bağlamları
 
 C++öznitelikler dört temel alan kullanılarak açıklanabilir: (**Için geçerlidir**), tekrarlanabilir veya yoksa (**yinelenebilir**), diğer özniteliklerin gerekli varlığı (**gerekli öznitelikler**) ve diğer özniteliklerle uyumsuzluklar (**geçersiz öznitelikler**). Bu alanlar, her bir özniteliğin başvuru konusunun birlikte bulunan bir tabloda listelenir. Bu alanların her biri aşağıda açıklanmıştır.
 

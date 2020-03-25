@@ -39,12 +39,12 @@ helpviewer_keywords:
 - commands [C++], deleting from menus
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-ms.openlocfilehash: a21ff3ba736bd345e4b8399a761b5a8d9db531ac
-ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
+ms.openlocfilehash: 3671dbe33b2d6e373e2df3d54267c6aac5bbf20d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72444979"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214454"
 ---
 # <a name="menu-editor-c"></a>Menü Düzenleyicisi (C++)
 
@@ -53,13 +53,13 @@ Menüler, komutları mantıksal ve kolay bir biçimde düzenlemenizi sağlar. **
 > [!TIP]
 > Birçok örnekte **menü düzenleyicisini**kullanırken, sık kullanılan komutların açılır menüsünü göstermek için sağ tıklayabilirsiniz. Kullanılabilir komutlar, işaretçinin işaret ettiği işe bağlıdır.
 
-## <a name="how-to"></a>Nasıl Yapılır
+## <a name="how-to"></a>Nasıl yapılır
 
 **Menü Düzenleyicisi** şunları yapmanızı mümkün:
 
 ### <a name="to-create-a-standard-menu"></a>Standart bir menü oluşturmak için
 
-1. Menü '  > **diğer Windows** > **kaynak görünümü** **görüntüleyin**ve **menü** başlığına sağ tıklayın. **Kaynak Ekle**' yi ve ardından **menüyü**seçin.
+1. Menü **görünümü** ' ne > **diğer Windows** > **kaynak görünümü** ' e gidin ve **menü** başlığına sağ tıklayın. **Kaynak Ekle**' yi ve ardından **menüyü**seçin.
 
 1. Menü çubuğunda **Yeni öğe** kutusunu ( *burada türü*içeren dikdörtgen) seçin.
 
@@ -104,7 +104,7 @@ Mevcut bir menü adı seçin ve **Ekle** tuşuna basın veya menü çubuğuna sa
    > Yazdığınız metin, hem **menü düzenleyicisinde** hem de [Özellikler penceresindeki](/visualstudio/ide/reference/properties-window) **başlık** kutusunda görünür. Yeni menünüzün özelliklerini her iki konumdan de düzenleyebilirsiniz.
 
    > [!TIP]
-   > Kullanıcının menü komutunu seçmesini sağlayan bir anımsatıcı anahtar (kısayol tuşu) tanımlayabilirsiniz. Anımsatıcı olarak belirtmek için bir harfin önüne bir ampersan (`&`) yazın. Kullanıcı bu harfi yazarak menü komutunu seçebilir.
+   > Kullanıcının menü komutunu seçmesini sağlayan bir anımsatıcı anahtar (kısayol tuşu) tanımlayabilirsiniz. Anımsatıcı olarak belirtmek için bir harfin önüne bir ve işareti (`&`) yazın. Kullanıcı bu harfi yazarak menü komutunu seçebilir.
 
 1. **Özellikler** penceresinde, uygulanan menü komutu özelliklerini seçin. Ayrıntılar için bkz. [menü komut özellikleri](../windows/menu-command-properties.md).
 
@@ -168,7 +168,7 @@ Menü kaynağını oluşturduktan sonra, uygulama kodunuzun menü kaynağını y
 
    Açılır menüdeki diğer menü komutları için bu işlemi tekrarlayın ve menü kaynağını kaydettiğinizden emin olun.
 
-- Uygulamanıza bir açılır menü bağlamak için örneğin, WM_CONTEXTMENU için bir ileti işleyicisi ekleyin ve ileti işleyicisine aşağıdaki kodu ekleyin:
+- Uygulamanıza bir açılır menü bağlamak için örneğin, WM_CONTEXTMENU için bir ileti işleyicisi ekleyin ve ardından aşağıdaki kodu ileti işleyicisine ekleyin:
 
     ```cpp
     CMenu menu;

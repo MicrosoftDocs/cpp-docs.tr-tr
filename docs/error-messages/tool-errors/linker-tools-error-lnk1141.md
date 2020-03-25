@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1141
 ms.assetid: 83b78606-6dd3-43a7-88e2-152f5359cbd8
-ms.openlocfilehash: e2e3ae2462919a8261e450460370a46f0022bb1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2564cbb557f818aa3ef06e0032335b534daf7188
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255033"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184209"
 ---
 # <a name="linker-tools-error-lnk1141"></a>Bağlayıcı Araçları Hatası LNK1141
 
-dışarı aktarmalar dosyasının derleme sırasında hata oluştu
+dışarı aktarmalar dosyasının oluşturulması sırasında hata oluştu
 
-[Bağlantı](../../build/reference/linking.md) dışarı aktarma (.exp) dosyası oluşturulamadı.
+[Bağlantı](../../build/reference/linking.md) , dışarı aktarmalar (. exp) dosyası oluşturamadı.
 
-Bu hatanın nedenleri sistem sorunlarını yetersiz bellek ve söz dizimi hataları gibi seçenekler veya modül tanımlama deyimleri ekleyin.
+Bu hatanın nedeni, seçenekler veya modül tanımı deyimlerinde yetersiz bellek ve sözdizimi hataları gibi sistem sorunları içerir.
 
-Bu hata, ek bilgiler sunan başka bir hata tarafından takip eder.
+Bu hatanın öncesinde daha fazla bilgi veren başka bir hata vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

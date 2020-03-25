@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-ms.openlocfilehash: d644f59ac92bf4e39f191c291dd4fef626411c3d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c507a9ae42afc5081c290d38464aa7f24c277d15
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514944"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166126"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
 
@@ -52,8 +52,8 @@ ATL kullanmayan bir projede kullanıldığında, **UUID** özniteliği belirtild
 |-|-|
 |**Uygulama hedefi**|**sınıf**, **Yapı**, **arabirim**, **birleşim**, **enum**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

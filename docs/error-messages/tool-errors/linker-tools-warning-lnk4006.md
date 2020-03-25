@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4006
 ms.assetid: 3a637d17-1676-4ea6-bd8b-290137d28d3b
-ms.openlocfilehash: c81c93a6df8c7eef809f243e3dc56164ea548371
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d949ba259de8e131f6191e757119b4c42effc3d4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187147"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194323"
 ---
 # <a name="linker-tools-warning-lnk4006"></a>Bağlayıcı Araçları Uyarısı LNK4006
 
-nesnesinde zaten tanımlanmış sembol; İkinci tanımlama yoksayıldı
+sembol nesnede zaten tanımlandı; İkinci tanım yoksayıldı
 
-Verilen `symbol`, düzenlenmiş hâli içinde görüntülenen, birden çok kez tanımlanmış. Bu uyarıyla karşılaşıldığında `symbol` iki kez eklenir ancak yalnızca ilk hâli kullanılır.
+Kendi kendine düzenlenmiş biçimde görünen verilen `symbol`, çarptıklandı. Bu uyarıyla karşılaşıldığında `symbol` iki kez eklenir, ancak yalnızca ilk formu kullanılacaktır.
 
-İki alma libs birleştirmek çalışırsanız, bu uyarı alabilirsiniz.
+İki içeri aktarmayı bir tane ile birleştirmeye çalışırsanız bu uyarıyı alabilirsiniz.
 
-C çalışma zamanı kitaplığı yeniden, bu iletiyi yoksayabilirsiniz.
+C çalışma zamanı kitaplığını yeniden oluşturuyorsanız bu iletiyi yoksayabilirsiniz.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
-1. Verilen `symbol` ile derleme tarafından oluşturulan bir paket işlevi olabilir [/Gy](../../build/reference/gy-enable-function-level-linking.md). Bu sembol birden fazla dosyasında bulunan ancak derlemeler arasında değiştirildi. İçeren tüm dosyaları derleyin `symbol`.
+1. Verilen `symbol`, [/GY](../../build/reference/gy-enable-function-level-linking.md)ile derlenerek oluşturulmuş bir paketlenmiş işlev olabilir. Bu sembol birden fazla dosyaya dahil edildi ancak derlemeler arasında değiştirildi. `symbol`içeren tüm dosyaları yeniden derleyin.
 
-1. Verilen `symbol` farklı farklı kitaplıklarındaki iki üye nesneleri olarak tanımlanmış olabilir.
+1. Verilen `symbol` farklı kitaplıklarda iki üye nesnesi içinde farklı tanımlanmış olabilir.
 
-1. Mutlak iki kez, her tanımındaki farklı bir değerle tanımlanmış olabilir.
+1. Mutlak, her tanımda farklı bir değer ile iki kez tanımlanmış olabilir.
 
-1. Kitaplıklar birleştirilirken hata iletisini aldığında, `symbol` eklenmesini Kitaplığı'nda zaten mevcut.
+1. Kitaplıklar birleştirilirken hata iletisi alınmışsa `symbol`, eklenen kitaplıkta zaten var.

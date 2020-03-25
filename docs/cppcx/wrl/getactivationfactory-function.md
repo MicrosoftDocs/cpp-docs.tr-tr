@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - GetActivationFactory function
 ms.assetid: 5736d285-6beb-42aa-8788-e261c0010afe
-ms.openlocfilehash: 3e138eee9e5bc02971cd1eb34c78f2be4ad5c9a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 430b4ed3f6a02fd3db2bcab05fbb7f21f5367b5c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398426"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213986"
 ---
 # <a name="getactivationfactory-function"></a>GetActivationFactory İşlevi
 
-Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.
+Şablon parametresi tarafından belirtilen tür için bir etkinleştirme fabrikası alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,24 +32,24 @@ inline HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Şablon parametresi etkinleştirme fabrikası türünü belirtir.
+*Şı*<br/>
+Etkinleştirme fabrikası türünü belirten bir şablon parametresi.
 
-*activatableClassId*<br/>
-Etkinleştirme üretecin üretebileceği sınıfı adı.
+*Activatableclassıd*<br/>
+Etkinleştirme fabrikasının üretediği sınıfın adı.
 
-*Fabrika*<br/>
-Bu işlem tamamlandığında, bir başvuru türü için etkinleştirme fabrikası *T*.
+*Çar*<br/>
+Bu işlem tamamlandığında, *T*türü için etkinleştirme fabrikasına bir başvuru.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, bu işlem başarısız olmasının gösteren HRESULT hatası.
+Başarılı olursa S_OK; Aksi takdirde, bu işlemin neden başarısız olduğunu belirten bir HRESULT hatası.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** client.h
+**Üstbilgi:** Client. h
 
-**Namespace:** Windows::Foundation
+**Ad alanı:** Windows:: Foundation
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

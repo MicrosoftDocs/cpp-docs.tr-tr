@@ -22,16 +22,16 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: 23467caf46d38175a74dab061f60e11009f1f481
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0fa5f381dba4f67934007d59dbdaf4450bcfb60
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230846"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211802"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
 
-Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.
+Tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) arabirimini kullanıma sunan OLE DB Numaralandırıcı nesnesini kullanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,7 +42,7 @@ class CEnumerator :
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -50,17 +50,17 @@ class CEnumerator :
 
 |||
 |-|-|
-|[Bul](#find)|Belirtilen ada sahip bir arayan yok sağlayıcıları (veri kaynakları) arar.|
-|[GetMoniker](#getmoniker)|Alır `IMoniker` geçerli kayıt için arabirim.|
-|[açın](#open)|Numaralandırıcı açılır.|
+|[Bul](#find)|Belirtilen ada sahip bir tane arayan kullanılabilir sağlayıcılarda (veri kaynakları) arar.|
+|[GetMoniker](#getmoniker)|Geçerli kayıt için `IMoniker` arabirimini alır.|
+|[Açın](#open)|Numaralandırıcı öğesini açar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Alabileceğiniz `ISourcesRowset` dolaylı olarak bu sınıftaki veri.
+`ISourcesRowset` verilerini bu sınıftan dolaylı olarak alabilirsiniz.
 
-## <a name="find"></a> CEnumerator::Find
+## <a name="cenumeratorfind"></a><a name="find"></a>CEnumerator:: Find
 
-Belirtilen bir adı yok sağlayıcıları arasında arar.
+Kullanılabilir sağlayıcılar arasında belirtilen adı arar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -71,19 +71,19 @@ bool Find(TCHAR* szSearchName) throw();
 #### <a name="parameters"></a>Parametreler
 
 *szSearchName*<br/>
-[in] Aranacak ad.
+'ndaki Aranacak ad.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** adı bulunursa. Aksi takdirde, **false**.
+ad bulunursa **true** . Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) arabirimi.
+Bu ad, [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) arabiriminin `SOURCES_NAME` üyesine eşlenir.
 
-## <a name="getmoniker"></a> CEnumerator::GetMoniker
+## <a name="cenumeratorgetmoniker"></a><a name="getmoniker"></a>CEnumerator:: Getbilinen ad
 
-Görünen ad, bilinen adı dönüştürülebilir dize bileşeninin ayıklanacağı ayrıştırır.
+Bir ada dönüştürülebileceği dizenin bileşenini ayıklamak için görünen adı ayrıştırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -96,19 +96,19 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
 
 #### <a name="parameters"></a>Parametreler
 
-*ppMoniker*<br/>
-[out] Adı görünen adı ayrıştırıldı ([CEnumeratorAccessor::m_szParseName](../../data/oledb/cenumeratoraccessor-m-szparsename.md)) geçerli satır.
+*Ppbilinen adı*<br/>
+dışı Bilinen ad, geçerli satırın görünen adından ([CEnumeratorAccessor:: m_szParseName](../../data/oledb/cenumeratoraccessor-m-szparsename.md)) ayrıştırıldı.
 
 *lpszDisplayName*<br/>
-[in] Ayrıştırılacak görünen adı.
+'ndaki Ayrıştırılacak görünen ad.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="open"></a> CEnumerator::Open
+## <a name="cenumeratoropen"></a><a name="open"></a>CEnumerator:: Open
 
-Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)).
+, Bir tane belirtilmişse, Numaralandırıcı için bilinen adı bağlar, ardından [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85))öğesini çağırarak Numaralandırıcı için satır kümesini alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -122,21 +122,21 @@ HRESULT Open(const CEnumerator& enumerator) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*pMoniker*<br/>
-[in] Bir işaretçi için bir numaralandırıcı için bir bilinen ad.
+*Pbilinen*<br/>
+'ndaki Numaralandırıcı için bilinen ad işaretçisi.
 
-*pClsid*<br/>
-[in] Bir işaretçi `CLSID` Numaralayıcı.
+*pCLSID*<br/>
+'ndaki Numaralandırıcı `CLSID` için bir işaretçi.
 
-*Numaralandırıcı*<br/>
-[in] Bir başvuru için bir numaralandırıcı.
+*sının*<br/>
+'ndaki Bir Numaralandırıcı başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

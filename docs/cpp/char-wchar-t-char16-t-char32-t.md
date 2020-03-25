@@ -2,12 +2,12 @@
 title: char, wchar_t, char16_t, char32_t
 ms.date: 02/14/2018
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
-ms.openlocfilehash: a518f24973aaddff59b97f104d9d912e4a2bedce
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8d109ec452df33b774848229837ed3e2eae80dc4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447161"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181024"
 ---
 # <a name="char-wchar_t-char16_t-char32_t"></a>char, wchar_t, char16_t, char32_t
 

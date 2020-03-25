@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - HandleTraits namespace
 ms.assetid: 2fb5c6d1-bfc2-4e09-91eb-31705064ffb3
-ms.openlocfilehash: 6ed8156b6a0e71d40d1579fc9a33912f698e1773
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b19cc426fc7c1b4fc6ec0638730d59998f8c108a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391978"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213739"
 ---
 # <a name="microsoftwrlwrappershandletraits-namespace"></a>Microsoft::WRL::Wrappers::HandleTraits Ad Alanı
 
-Genel işleyici tabanlı kaynak türleri özelliklerini açıklar.
+Ortak tanıtıcı tabanlı kaynak türlerinin özelliklerini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,21 +30,21 @@ namespace Microsoft::WRL::Wrappers::HandleTraits;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CriticalSectionTraits Yapısı](criticalsectiontraits-structure.md)|Uzmanlaşmış bir `CriticalSection` geçersiz bir kritik bölüm veya kritik bir bölüm serbest bırakmak için bir işlevi desteklemek için nesne.|
-|[EventTraits Yapısı](eventtraits-structure.md)|Özelliklerini tanımlayan bir `Event` sınıfı işleyici.|
-|[FileHandleTraits Yapısı](filehandletraits-structure.md)|Bir dosya tanıtıcısı özelliklerini tanımlar.|
-|[HANDLENullTraits Yapısı](handlenulltraits-structure.md)|Başlatılmamış bir tanıtıcı genel özelliklerini tanımlar.|
-|[HANDLETraits Yapısı](handletraits-structure.md)|Bir tanıtıcı genel özelliklerini tanımlar.|
-|[MutexTraits Yapısı](mutextraits-structure.md)|Ortak özelliklerini tanımlayan [Mutex](mutex-class.md) sınıfı.|
-|[SemaphoreTraits Yapısı](semaphoretraits-structure.md)|Semafor nesne genel özelliklerini tanımlar.|
-|[SRWLockExclusiveTraits Yapısı](srwlockexclusivetraits-structure.md)|Genel özelliklerini açıklayan `SRWLock` sınıfında özel bir kilit modu.|
-|[SRWLockSharedTraits Yapısı](srwlocksharedtraits-structure.md)|Genel özelliklerini açıklayan `SRWLock` paylaşılan kilit modu sınıfta.|
+|[CriticalSectionTraits Yapısı](criticalsectiontraits-structure.md)|, Kritik bir bölümü serbest bırakmak için geçersiz bir kritik bölümü ya da bir işlevi desteklemek üzere bir `CriticalSection` nesnesini uzmanlaşmış hale getirir.|
+|[EventTraits Yapısı](eventtraits-structure.md)|`Event` Sınıf tanıtıcısının özelliklerini tanımlar.|
+|[FileHandleTraits Yapısı](filehandletraits-structure.md)|Bir dosya tanıtıcısının özelliklerini tanımlar.|
+|[HANDLENullTraits Yapısı](handlenulltraits-structure.md)|Başlatılmamış tanıtıcının ortak özelliklerini tanımlar.|
+|[HANDLETraits Yapısı](handletraits-structure.md)|Bir tanıtıcının ortak özelliklerini tanımlar.|
+|[MutexTraits Yapısı](mutextraits-structure.md)|[Mutex](mutex-class.md) sınıfının ortak özelliklerini tanımlar.|
+|[SemaphoreTraits Yapısı](semaphoretraits-structure.md)|Semafor nesnesinin ortak özelliklerini tanımlar.|
+|[SRWLockExclusiveTraits Yapısı](srwlockexclusivetraits-structure.md)|Özel kilit modundaki `SRWLock` sınıfının ortak özelliklerini açıklar.|
+|[SRWLockSharedTraits Yapısı](srwlocksharedtraits-structure.md)|Paylaşılan kilit modundaki `SRWLock` sınıfının ortak özelliklerini açıklar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

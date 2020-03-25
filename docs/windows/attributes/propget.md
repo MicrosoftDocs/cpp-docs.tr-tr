@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - propget attribute
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-ms.openlocfilehash: 044562ba870d6e36ddfcec0c7e84253b111a9eea
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d2c0ebab1630634ddd4fc81e7c9c8364f7fad46f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514213"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166465"
 ---
 # <a name="propget"></a>propget
 
@@ -39,7 +39,7 @@ Bir özellik erişimcisi işlevi belirtir.
 |-|-|
 |**Uygulama hedefi**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|`propput`, `propputref`|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

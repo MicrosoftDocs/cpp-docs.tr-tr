@@ -1,5 +1,5 @@
 ---
-title: event_source (C++ COM özniteliği)
+title: event_source (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.event_source
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - event sources
 - event handling, creating event source
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
-ms.openlocfilehash: 81eba3c032a3556d1c69ad02652455ebc07ab6be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e187e57f21e9c94068c0b3396b93deed617fef2a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409648"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167075"
 ---
-# <a name="eventsource"></a>event_source
+# <a name="event_source"></a>event_source
 
-Olay kaynağı oluşturur.
+Bir olay kaynağı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,11 +31,11 @@ Olay kaynağı oluşturur.
 ### <a name="parameters"></a>Parametreler
 
 *type*<br/>
-Sabit listesi aşağıdaki değerlerden biri:
+Aşağıdaki değerlerden birini numaralandırma:
 
-- `native` Yönetilmeyen C/C++ kodu için (yönetilmeyen sınıflar için varsayılan).
+- yönetilmeyen C/C++ kod için `native` (yönetilmeyen sınıflar için varsayılan).
 
-- `com` COM kodu için. Kullanmalısınız `coclass` olduğunda `type` = `com`. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:
+- COM kodu için `com`. =`com``type``coclass` kullanmanız gerekir. Bu değer, aşağıdaki üst bilgi dosyalarını dahil etmeniz gerekir:
 
     ```cpp
     #define _ATL_ATTRIBUTES
@@ -44,16 +44,16 @@ Sabit listesi aşağıdaki değerlerden biri:
     ```
 
 *optimize*<br/>
-Zaman *türü* olduğu `native`, belirtebilirsiniz `optimize=size`olduğunu depolamanın 4 bayt (en az) için tüm olayları bir sınıfta belirtmek için veya `optimize=speed` (4 olduğunu göstermek için varsayılan) * (olay sayısı) depolama baytı.
+*Tür* `native`olduğunda, bir sınıftaki tüm olaylar için 4 baytlık depolama alanı (minimum) (en düşük) `optimize=speed` ve 4 * (olay sayısı) depolama baytlarının olduğunu göstermek için `optimize=size`belirtebilirsiniz.
 
-*İşaretleme*<br/>
-Zaman *türü* olduğu `native`, belirtebileceğiniz `decorate=false`, birleştirilmiş (.mrg) dosyasında genişletilmiş adının kapsayan sınıf adını içermemelidir belirtmek için. [/FX](../../build/reference/fx-merge-injected-code.md) .mrg dosyaları oluşturmanıza olanak tanır. `decorate=false`, varsayılan değer, tam olarak nitelenmiş tür adlarını birleştirilmiş dosya sonuçlanıyor.
+*donatmak*<br/>
+*Tür* `native`olduğunda, birleştirilmiş (. MRG) dosyasındaki genişletilmiş adın kapsayan sınıf adını içermemesi gerektiğini göstermek için `decorate=false`belirtebilirsiniz. [/FX](../../build/reference/fx-merge-injected-code.md) . MRG dosyaları oluşturmanıza olanak tanır. Varsayılan olan `decorate=false`, birleştirilmiş dosyada tam nitelikli tür adlarıyla sonuçlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Event_source** C++ özniteliği, sınıf veya yapı, uygulandığı bir olay kaynağı olacağını belirtir.
+**Event_source** C++ özniteliği, uygulandığı sınıf veya yapının bir olay kaynağı olacağını belirtir.
 
-**event_source** ile birlikte kullanılan [event_receiver](event-receiver.md) özniteliği ve [__event](../../cpp/event.md) anahtar sözcüğü. Kullanım `event_receiver` Olay alıcıları oluşturmak için. Kullanım **__event** olaylar olarak söz konusu yöntemleri belirtmek için olay kaynağı içindeki yöntemlerde.
+**event_source** , [event_receiver](event-receiver.md) özniteliğiyle ve [__event](../../cpp/event.md) anahtar sözcüğüyle birlikte kullanılır. Olay alıcıları oluşturmak için `event_receiver` kullanın. Bu yöntemleri olay olarak belirtmek için olay kaynağı içindeki yöntemlerle **__event** kullanın.
 
 > [!NOTE]
 > Şablonlu bir alan veya yapı, olay içeremez.
@@ -64,12 +64,12 @@ Zaman *türü* olduğu `native`, belirtebileceğiniz `decorate=false`, birleşti
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**coclass'ı** olduğunda `type`=`com`|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|`type`=için **coclass** `com`|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

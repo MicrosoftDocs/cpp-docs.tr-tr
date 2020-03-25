@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceList structure
 ms.assetid: 6ec3228d-eb3e-4b7e-aef1-7dcf17bdf61a
-ms.openlocfilehash: 745348e81888b5a87c57fbb99d397fcd423c3ee1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fd06f71bc4d8097366dc0e87d7ff92c5a12a790
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398218"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213869"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList Yapısı
 
@@ -27,24 +27,24 @@ struct InterfaceList;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Arabirim adı; özyinelemeli listedeki ilk arabirim.
 
-*U*<br/>
-Arabirim adı; özyinelemeli listesinde kalan arabirimler.
+*Larınız*<br/>
+Arabirim adı; özyinelemeli listede kalan arabirimler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Arabirimleri özyinelemeli listesini oluşturmak için kullanılır.
+Bir arabirim özyinelemeli listesini oluşturmak için kullanılır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`FirstT`|Şablon parametresi için eş anlamlı *T*.|
-|`RestT`|Şablon parametresi için eş anlamlı *U*.|
+|`FirstT`|Şablon parametresi *T*için eş anlamlı.|
+|`RestT`|Şablon parametresi *U*için eş anlamlı.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -52,9 +52,9 @@ Arabirimleri özyinelemeli listesini oluşturmak için kullanılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

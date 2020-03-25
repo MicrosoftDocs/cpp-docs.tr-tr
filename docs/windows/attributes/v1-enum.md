@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - v1_enum attribute
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
-ms.openlocfilehash: c67f6303e73da42db5efd006bd6cdf3ded5bb8cf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1a189f6f1c5ef9d4ae77df9f1eda3f3671ddaf52
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513862"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166113"
 ---
 # <a name="v1_enum"></a>v1_enum
 
@@ -25,11 +25,11 @@ Belirtilen numaralandırılmış türün 16 bit varsayılan yerine 32 bitlik bir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**V1_enum** C++ özniteliği, [v1_enum](/windows/win32/Midl/v1-enum) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**V1_enum** C++ özniteliği [v1_enum](/windows/win32/Midl/v1-enum) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **v1_enum**kullanımını gösterir:
+Aşağıdaki kod **v1_enum**kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_v1_enum.cpp
@@ -50,8 +50,8 @@ enum eList {
 |-|-|
 |**Uygulama hedefi**|Numaralandırılmış tür|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

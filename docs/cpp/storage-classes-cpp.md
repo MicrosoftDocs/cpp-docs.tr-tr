@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-ms.openlocfilehash: 5b30fe7bc6665da9172f093f8ea6a2130cb900b2
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d4fe1e7f14ef2a11e5e7ac32b4ffb0247aab3c84
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447325"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178554"
 ---
 # <a name="storage-classes"></a>Depolama sınıfları
 
@@ -30,7 +30,7 @@ Değişken bildirimleri bağlamındaki bir *depolama sınıfı* , nesnelerin öm
    register int val; // warning C5033: 'register' is no longer a supported storage class
 ```
 
-## <a name="static"></a>se
+## <a name="static"></a><a name="static"></a>se
 
 **Static** anahtar sözcüğü, genel kapsam, ad alanı kapsamı ve sınıf kapsamındaki değişkenleri ve işlevleri bildirmek için kullanılabilir. Statik değişkenler, yerel kapsamda de bildirilemez.
 
@@ -155,11 +155,11 @@ var == value
 
 C++ 11 ' den başlayarak statik bir yerel değişken başlatmanın iş parçacığı güvenli olduğu garanti edilir. Bu özellik bazen *sihirli statiği*olarak adlandırılır. Ancak, çok iş parçacıklı bir uygulamada, sonraki tüm atamaların eşitlenmesi gerekir. İş parçacığı güvenli statik başlatma özelliği, CRT üzerinde bir bağımlılık almayı önlemek için [/Zc: threadSafeInit-](../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) Flag kullanılarak devre dışı bırakılabilir.
 
-## <a name="extern"></a>Dış
+## <a name="extern"></a><a name="extern"></a>Dış
 
 **Extern** olarak belirtilen nesneler ve değişkenler, başka bir çeviri biriminde veya dış bağlantıya sahip olan bir kapsayan kapsamda tanımlanan bir nesneyi bildirir. Daha fazla bilgi için bkz. [extern](extern-cpp.md) ve [çeviri birimleri ve bağlantısı](program-and-linkage-cpp.md).
 
-## <a name="thread_local"></a>thread_local (C++ 11)
+## <a name="thread_local-c11"></a><a name="thread_local"></a>thread_local (C++ 11)
 
 **Thread_local** belirticisiyle belirtilen bir değişken yalnızca oluşturulduğu iş parçacığında erişilebilir. Değişkeni, iş parçacığı oluşturulduğunda oluşturulur ve iş parçacığı yok edildiğinde yok edilir. Her iş parçacığının kendi kendine ait bir kopyası vardır. Windows 'da **thread_local** , Microsoft 'a özgü [__declspec (thread)](../cpp/thread.md) özniteliğiyle işlevsel olarak eşdeğerdir.
 
@@ -194,7 +194,7 @@ void DoSomething()
 
 Windows 'da, bir tür tanımına **__declspec (iş parçacığı)** uygulanamadığından ve C kodunda geçerliyse, **thread_local** işlevsel olarak [__declspec (iş parçacığı)](../cpp/thread.md) ile eşdeğerdir. Mümkün olduğunda, C++ standart bir parçası olduğundan ve bu nedenle daha taşınabilir olduğundan **thread_local** kullanın.
 
-##  <a name="register"></a>kaydolunamadı
+##  <a name="register"></a><a name="register"></a>kaydolunamadı
 
 **Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): **register** anahtar sözcüğü artık desteklenen bir depolama sınıfı değil. Anahtar sözcüğü, daha sonra kullanılmak üzere hala standart olarak ayrılmıştır.
 

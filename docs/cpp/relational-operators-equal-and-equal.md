@@ -1,5 +1,5 @@
 ---
-title: 'İlişkisel işleçler: &lt;, &gt;, &lt;=, ve &gt;='
+title: 'İlişkisel Işleçler: &lt;, &gt;, &lt;= ve &gt;='
 ms.date: 11/04/2016
 f1_keywords:
 - <
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - less than or equal to operator
 - <= operator
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
-ms.openlocfilehash: 52a3c10e6da42f6c181d3f93de13168e22141bec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38e05b78d334ca690d9523797f7ca1813834c5d3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404760"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179126"
 ---
-# <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel işleçler: &lt;, &gt;, &lt;=, ve &gt;=
+# <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel Işleçler: &lt;, &gt;, &lt;= ve &gt;=
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,17 +35,17 @@ expression >= expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili ilişkisel işleçleri aşağıdaki ilişkileri belirler:
+İkili ilişkisel işleçler aşağıdaki ilişkileri belirlenir:
 
-- Küçüktür (**\<**)
+- Küçüktür ( **\<** )
 
-- Büyüktür (**>**)
+- Büyüktür ( **>** )
 
-- Küçük veya eşittir (**\<=**)
+- Küçüktür veya eşittir ( **\<=** )
 
-- Büyüktür veya eşittir (**>=**)
+- Büyük veya eşittir ( **>=** )
 
-İlişkisel işleçler, soldan sağa ilişkilendirilebilirlik vardır. Her iki işleneni de operatörler olmalıdır aritmetik veya işaretçi türü. Bunlar türü değerlerinin yield **bool**. Döndürülen değer **false** (0) ifade ilişkide Aksi takdirde false ise, döndürülen değer **true** (1).
+İlişkisel işleçler soldan sağa ilişkilendiriledir. Her iki ilişkisel işleç işleneni de aritmetik veya işaretçi türünde olmalıdır. Bunlar **bool**türünde değerler verir. İfadedeki ilişki false olduğunda döndürülen değer **false** 'dur (0). Aksi takdirde döndürülen değer **true** 'dur (1).
 
 ## <a name="example"></a>Örnek
 
@@ -64,33 +64,33 @@ int main() {
 }
 ```
 
-Önceki örnekte yer alan ifadeleri parantez içinde olduğundan alınmalıdır akış ekleme operatörü (**<<**) ilişkisel işleçler daha yüksek bir önceliğe sahiptir. Bu nedenle, ilk ifade parantezler olmadan olarak değerlendirilmesi:
+Önceki örnekteki ifadeler parantez içine alınmalıdır, çünkü Stream ekleme işleci ( **<<** ), ilişkisel işleçlerden daha yüksek önceliğe sahiptir. Bu nedenle, parantezler olmadan ilk ifade şöyle değerlendirilir:
 
 ```cpp
 (cout << "The true expression 3 > 2 yields: " << 3) < (2 << "\n");
 ```
 
-Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md) aritmetik türlerin işlenenlerini için uygulanır.
+[Standart dönüştürmelerde](standard-conversions.md) ele alınan Olağan aritmetik dönüştürmeler aritmetik türlerin işlenenlerine uygulanır.
 
-## <a name="comparing-pointers"></a>İşaretçileri Kıyaslama
+## <a name="comparing-pointers"></a>İşaretçileri karşılaştırma
 
-Nesneleri aynı türde iki işaretçileri karşılaştırıldığında sonucu programın adres alanında işaret nesnelerin konumu tarafından belirlenir. İşaretçileri de karşılaştırılabilir 0 veya türünde bir işaretçi döndüren bir sabit ifadesine `void *`. İşaretçi karşılaştırması karşı türünde bir işaretçi yapılması durumunda `void *`, diğer bir işaretçi türüne örtük olarak dönüştürülür `void *`. Ardından karşılaştırma yapılır.
+Aynı türden nesnelerin iki işaretçisi karşılaştırıldığı zaman, sonuç programın adres alanında işaret edilen nesnelerin konumuyla belirlenir. İşaretçiler Ayrıca 0 veya `void *`türünde bir işaretçiye değerlendirilen bir sabit ifadeyle karşılaştırılabilir. `void *`türünde bir işaretçiye yönelik bir işaretçi karşılaştırması yapılırsa, diğer işaretçi örtülü olarak `void *`türüne dönüştürülür. Ardından karşılaştırma yapılır.
 
-Sürece farklı türden iki işaretçisi karşılaştırılamaz:
+Farklı türlerin iki işaretçisi şu durumlar dışında karşılaştırılamaz:
 
-- Bir tür diğer türden türetilmiş bir sınıf türüdür.
+- Bir tür, diğer türden türetilmiş bir sınıf türüdür.
 
-- En az bir işaretçi açıkça dönüştürülür (tür dönüştürme) `void *`. (Diğer bir işaretçi türüne örtük olarak dönüştürülür `void *` dönüştürme için.)
+- İşaretçilerden en az biri açık olarak `void *`türüne dönüştürüldü (atama). (Diğer işaretçi dönüştürme için `void *` türüne örtülü olarak dönüştürülür.)
 
-Karşılaştırılacak aynı nesneye işaret eden iki işaretçi aynı türden eşit garanti edilir. İki nesnenin statik olmayan üye işaretçileri karşılaştırıldığında, aşağıdaki kurallar geçerlidir:
+Aynı nesneye işaret eden aynı türden iki işaretçinin eşit olarak karşılaştırılacağı garanti edilir. Bir nesnenin statik olmayan üyelerine yönelik iki işaretçi karşılaştırılabiliyorsanız, aşağıdaki kurallar geçerlidir:
 
-- Sınıf türü değilse bir **birleşim**, ve iki üyesi tarafından ayrılmış değil ise bir *erişim belirticisi*, gibi **genel**, **korumalı**, veya **özel**, bildirilen üye işaretçisinin son değerinden daha önce bildirilen bir üye işaretçisinin karşılaştıracağız.
+- Sınıf türü bir **birleşim**değilse ve iki üye, **genel**, **korumalı**veya **özel**gibi bir *erişim belirticisi*tarafından ayrılmadığında, son olarak belirtilen üyenin işaretçisi, daha önce belirtilen üyenin işaretçisinden daha büyük bir değer karşılaştırır.
 
-- İki üyesi tarafından ayrılmış ise bir *erişim belirticisi*, sonuçlar tanımsızdır.
+- İki üye bir *erişim belirticisi*ile ayrılırsa, sonuçlar tanımsızdır.
 
-- Sınıf türü ise bir **birleşim**, farklı veri üyeleri için işaretçiler **birleşim** karşılaştırma eşittir.
+- Sınıf türü bir **Union**ise, bu **birleşim** karşılaştırıldığı farklı veri üyelerine işaretçiler eşittir.
 
-İki dizinin aynı öğeleri ya da dizinin sonundan öğesi bir işaret ederseniz, daha yüksek alt simge olan nesneye işaretçi yüksek karşılaştırır. Yalnızca işaretçiler aynı dizisindeki nesnelere veya konuma bir dizinin bitişini geçen başvurduğunuzda işaretçileri karşılaştırma geçerli garanti edilir.
+İki işaretçi, aynı dizideki öğeleri veya dizi sonunun ötesinde olan öğeye işaret ederseniz, daha yüksek alt indisi olan nesneye yönelik işaretçi daha yüksek bir şekilde karşılaştırılır. İşaretçilerin karşılaştırılması, yalnızca işaretçiler aynı dizideki nesnelere ya da dizinin sonundan geçmiş bir konuma başvurduğunuzda geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

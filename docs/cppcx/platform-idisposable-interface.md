@@ -1,5 +1,5 @@
 ---
-title: Platform::IDisposable arabirimi
+title: 'Platform:: IDisposable arabirimi'
 ms.date: 02/03/2017
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IDisposable Interface
 ms.assetid: f4344056-7030-42ed-bc98-b140edffddcd
-ms.openlocfilehash: f114959321c0ed3879a089b944a5ff1b19843118
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0024edbad0bb3311a0497be67fc8bcfc954602e1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257835"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214246"
 ---
-# <a name="platformidisposable-interface"></a>Platform::IDisposable arabirimi
+# <a name="platformidisposable-interface"></a>Platform:: IDisposable arabirimi
 
 Yönetilmeyen kaynakları serbest bırakmak için kullanılır.
 
@@ -32,20 +32,20 @@ public interface class IDisposable
 
 ### <a name="members"></a>Üyeler
 
-IDisposable arayüzünü IUnknown arabirimden devralır. IDisposable ayrıca aşağıdaki türde üyeleri vardır:
+IDisposable arabirimi IUnknown arabiriminden devralır. IDisposable Ayrıca aşağıdaki üye türlerine sahiptir:
 
 **Yöntemler**
 
-IDisposable arayüzünü aşağıdaki yöntemleri içerir.
+IDisposable arabiriminde aşağıdaki yöntemler bulunur.
 
 |Yöntem|Açıklama|
 |------------|-----------------|
-|Dispose|Yönetilmeyen kaynakları serbest bırakmak için kullanılır.|
+|'U|Yönetilmeyen kaynakları serbest bırakmak için kullanılır.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun

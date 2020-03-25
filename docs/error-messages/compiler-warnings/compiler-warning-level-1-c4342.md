@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4342
 ms.assetid: 47d4d5ab-069f-4cdc-98c3-10d649577a37
-ms.openlocfilehash: 439c4976f25688fd9220c3f58ceb933266b5f15c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ac00d3d57f8cf7d6c85f3106dbe9b8c3cb9adf0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187515"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80162926"
 ---
 # <a name="compiler-warning-level-1-c4342"></a>Derleyici Uyarısı (düzey 1) C4342
 
-davranış değişikliği: '*işlevi*' çağrıldı, ancak önceki sürümlerde bir üye işleç çağrılıyordu
+davranış değişikliği: '*Function*' çağrıldı, ancak önceki sürümlerde bir üye işleci çağrıldı
 
-Visual Studio 2002 önce Visual C++ sürümlerinde, üye çağrıldı, ancak bu davranışı değiştirildi ve derleyici artık ad alanı kapsamında en iyi eşleşme bulur.
+Visual Studio 2002 ' C++ den önceki Visual sürümlerinde bir üye çağrıldı, ancak bu davranış değiştirilmiştir ve derleyici artık ad uzayı kapsamında en iyi eşleşmeyi buluyor.
 
-Bir üye işleç bulunamazsa derleyici daha önce herhangi bir ad alanı kapsamı işleçleri göz önünde. Ad alanı kapsamında daha iyi bir eşleşme varsa, önceki derleyiciler düşünün mıydı ise geçerli derleyici doğru çağırır.
+Bir üye operatörü bulunursa, derleyici daha önce herhangi bir ad alanı kapsam işlecini kabul etmez. Ad alanı kapsamında daha iyi bir eşleşme varsa, geçerli derleyici bunu doğru şekilde çağırır, ancak önceki derleyiciler bunu dikkate alınmaz.
 
-Kodunuzu geçerli sürüme başarıyla bağlantı noktası sonra bu uyarıyı devre dışı.  Derleyici, bu uyarı için kod oluşturma, hatalı pozitif sonuçları verebilir davranışı değişiklik olduğunda.
+Kodunuzun geçerli sürüme başarıyla bağlantı kurulduktan sonra bu uyarı devre dışı bırakılmalıdır.  Derleyici, hiçbir davranış değişikliğinin olmadığı kod için bu uyarıyı oluşturmak için hatalı pozitif sonuçlar verebilir.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-Aşağıdaki örnek, C4342 oluşturur:
+Aşağıdaki örnek C4342 oluşturur:
 
 ```cpp
 // C4342.cpp

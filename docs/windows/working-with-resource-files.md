@@ -6,19 +6,19 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: d9f6c6b9798bc708bb5334eafc0585471f25c059
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 142a9120e0b6b95e659fcb47c275653fbefd8cbe
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513583"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165892"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
 > [!WARNING]
 > Bu bölüm, içinde C++yazılmış Windows Masaüstü uygulamaları için geçerlidir.
 >
-> İçinde C++yazılan Evrensel Windows platformu uygulamalardaki kaynaklarla ilgili bilgiler için bkz. [uygulama kaynaklarını tanımlama](/windows/uwp/app-resources/)veya C++/CLI (yönetilen) projelerine kaynak ekleme hakkında bilgi için, bkz. .NET Framework Geliştirici 's [Masaüstü uygulamalarındaki kaynaklar](/dotnet/framework/resources/index) Rehberi.
+> İçinde C++yazılan Evrensel Windows platformu uygulamalardaki kaynaklarla ilgili bilgiler için bkz. [uygulama kaynaklarını tanımlama](/windows/uwp/app-resources/)veya C++/CLI (yönetilen) projelerine kaynak ekleme hakkında bilgi Için, bkz. .NET Framework Geliştirici Kılavuzu 'ndaki [masaüstü uygulamalarında kaynaklar](/dotnet/framework/resources/index) .
 
 Kaynaklar, şunun gibi geniş bir dizi öğeden oluşabilir:
 

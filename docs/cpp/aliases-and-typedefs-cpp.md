@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 f1_keywords:
 - typedef_cpp
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
-ms.openlocfilehash: 155f1868123514dfec89ab448ef22f2da225c4d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a45c4570341aca056b9d4c30ea496317a1ac96f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155296"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181570"
 ---
 # <a name="aliases-and-typedefs-c"></a>Diğer adlar ve tür tanımları (C++)
 
-Kullanabileceğiniz bir *diğer ad bildirimi* eşanlamlısı olarak kullanmak için daha önce bildirilen bir tür için bir ad bildirmek için. (Bu mekanizma resmi olmayan adı olarak da adlandırılan bir *tür diğer adı*). Oluşturmak için bu mekanizma kullanabilirsiniz bir *diğer ad şablonu*, hangi özel ayırıcılar için özellikle yararlı olabilir.
+Daha önce tanımlanan bir tür için eş anlamlı olarak kullanılacak bir ad bildirmek üzere bir *diğer ad bildirimi* kullanabilirsiniz. (Bu mekanizma bir *tür diğer adı*olarak da bilinir). Bu mekanizmayı Ayrıca, özel ayrıcılar için özellikle yararlı olabilecek bir *diğer ad şablonu*oluşturmak için de kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,15 +23,15 @@ using identifier = type;
 
 ## <a name="remarks"></a>Açıklamalar
 
-*tanımlayıcı*<br/>
-Diğer adı.
+*Tanımlayıcısını*<br/>
+Diğer adın adı.
 
 *type*<br/>
-İçin bir diğer ad oluşturmakta olduğunuz tür tanımlayıcısı.
+İçin bir diğer ad oluşturduğunuz tür tanımlayıcısı.
 
-Bir diğer ad, yeni bir tür sunmaz ve var olan bir tür adı anlamını değiştiremezsiniz.
+Diğer ad yeni bir tür sunmaz ve var olan bir tür adının anlamını değiştiremezler.
 
-En basit bir diğer ad biçimi eşdeğerdir **typedef** C ++ 03 düzeneğinden:
+Diğer adın en basit biçimi, C++ 03 ' den **typedef** mekanizmasına eşdeğerdir:
 
 ```cpp
 // C++11
@@ -41,7 +41,7 @@ using counter = long;
 // typedef long counter;
 ```
 
-Bunların her ikisi de "sayaç" türündeki değişkenler oluşturulmasını sağlar. Bir tür diğer adı için bunun gibi bir şey daha kullanışlı olacaktır `std::ios_base::fmtflags`:
+Her ikisi de "Counter" türünde değişkenlerin oluşturulmasını etkinleştirir. Daha kullanışlı bir şey, `std::ios_base::fmtflags`için bunun gibi bir tür diğer adı olacaktır:
 
 ```cpp
 // C++11
@@ -56,7 +56,7 @@ fmtfl fl_hex = (fl_orig & ~std::cout.basefield) | std::cout.showbase | std::cout
 std::cout.flags(fl_hex);
 ```
 
-Diğer adlar da sahip işlev işaretçilerine çalışır, ancak eşdeğer typedef çok daha okunabilir:
+Diğer adlar işlev işaretçileriyle de çalışır, ancak eşdeğer typedef öğesinden çok daha okunabilir:
 
 ```cpp
 // C++11
@@ -70,7 +70,7 @@ void actual_function(int arg) { /* some code */ }
 func fptr = &actual_function;
 ```
 
-Sınırlama **typedef** mekanizmadır şablonları ile çalışmaz. Ancak, türü diğer ad sözdizimi C ++ 11'de, diğer ad şablonları oluşturulmasını sağlar:
+**Typedef** mekanizmasıyla ilgili bir sınırlama, şablonlarla çalışmamasıdır. Ancak, C++ 11 ' de tür diğer adı sözdizimi diğer ad şablonlarının oluşturulmasını mümkün değildir:
 
 ```cpp
 template<typename T> using ptr = T*;
@@ -81,7 +81,7 @@ ptr<int> ptr_int;
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir özel bellek ayırıcısı ile bir diğer ad şablonu kullanmayı gösterir; bu durumda, bir tamsayı vektör türü. Herhangi bir türü için değiştirebildiği **int** karmaşık parametre gizlemek için kullanışlı bir diğer ad oluşturmak için ana işlev kodunuzda listeler. Özel bellek ayırıcısı, tüm kodunuzda kullanarak okunabilirliği geliştirmek ve hataları tarafından yazım hatası nedeniyle giriş riskini azaltmak.
+Aşağıdaki örnek, bir diğer ad şablonunun özel bir ayırıcıyla nasıl kullanıldığını gösterir — Bu örnekte, bir tamsayı vektör türüdür. Ana işlevsel kodunuzda karmaşık parametre listelerini gizlemek için uygun bir diğer ad oluşturmak üzere **int** için herhangi bir türü kullanabilirsiniz. Kodunuzun tamamında özel ayırıcıyı kullanarak okunabilirliği iyileştirebilir ve yazım hataları nedeniyle oluşan hataları tanıtma riskini azaltabilirsiniz.
 
 ```cpp
 #include <stdlib.h>
@@ -141,13 +141,13 @@ int main ()
 
 ## <a name="typedefs"></a>Tür tanımları
 
-A **typedef** bildirimi tarafından verilen türe ilişkin bir eşanlam kapsamında, duruma bir ad tanıtır *tür-bildirimi* bildirimi kısmı.
+Bir **typedef** bildirimi, kapsamında, bildirimin *tür bildirimi* bölümü tarafından verilen tür için bir eş anlamlı haline gelir.
 
-Typedef bildirimleri bildirilen türleri veya zaten dili tarafından tanımlanan türler için daha kısa ya da daha anlamlı adlar oluşturmak için kullanabilirsiniz. TypeDef adları değişebilir uygulama ayrıntılarını kapsüllemek olanak sağlar.
+Zaten dil veya bildirdiğiniz türler için tanımlanmış olan türler için daha kısa veya daha anlamlı adlar oluşturmak üzere typedef bildirimlerini kullanabilirsiniz. Typedef adları, değişebilir uygulama ayrıntılarını kapsüllemek için izin verir.
 
-Tersine **sınıfı**, **yapı**, **birleşim**, ve **enum** bildirimleri, **typedef** bildirimleri yeni türlerini tanıtır değildir — bunlar varolan türler için yeni adlar sunar.
+**Sınıf**, **Yapı**, **birleşim**ve **numaralandırma** bildirimlerinin aksine, **typedef** bildirimleri yeni türler sunmaz; var olan türler için yeni adlar getirir.
 
-Kullanılarak bildirilen adların **typedef** diğer tanımlayıcılarla (deyim etiketleri dışında) aynı ad alanını kaplar. Bu nedenle, sınıf türü bildirim dışında daha önce bildirilen bir adla aynı tanımlayıcıyı kullanamazlar. Aşağıdaki örnek göz önünde bulundurun:
+**Typedef** kullanılarak belirtilen adlar, diğer tanımlayıcılarla aynı ad alanını kaplar (ifade etiketleri hariç). Bu nedenle, sınıf türü bildirim dışında daha önce bildirilen bir adla aynı tanımlayıcıyı kullanamazlar. Aşağıdaki örnek göz önünde bulundurun:
 
 ```cpp
 // typedef_names1.cpp
@@ -156,7 +156,7 @@ typedef unsigned long UL;   // Declare a typedef name, UL.
 int UL;                     // C2377: redefined.
 ```
 
-Diğer tanımlayıcılarla ilgili ad gizleme kuralları kullanılarak bildirilen adların görünürlüğünü de yönetir **typedef**. Bu nedenle, aşağıdaki örnek C++'da geçerlidir:
+Diğer Tanımlayıcılarla ilgili ad gizleme kuralları, **typedef**kullanılarak belirtilen adların görünürlüğünü de yönetir. Bu nedenle, aşağıdaki örnek C++'da geçerlidir:
 
 ```cpp
 // typedef_names2.cpp
@@ -183,36 +183,36 @@ void myproc( int )
 }
 ```
 
-Bir yerel kapsamı tanımlayıcısı için bir typedef ile aynı adla bildirirken veya bir yapı veya birleşim iç kapsamda veya aynı kapsamda üyesi bildirdiğinizde, tür tanımlayıcısı belirtilmelidir. Örneğin:
+Bir typedef ile aynı ad ile bir yerel kapsam tanımlayıcısı bildirirken veya aynı kapsamda veya bir iç kapsamda bir yapının veya birleşimin üyesini bildirirken tür belirleyicisi belirtilmelidir. Örneğin:
 
 ```cpp
 typedef char FlagType;
 const FlagType x;
 ```
 
-Yeniden `FlagType` bir tanımlayıcı, bir yapı üyesinin veya birleşim üyesi, tür için ad sağlanmalıdır:
+Tanımlayıcı, yapı üyesi veya birleşim üyesi için `FlagType` adını yeniden kullanmak için, tür sağlanmalıdır:
 
 ```cpp
 const int FlagType;  // Type specifier required
 ```
 
-Söyleyin için yeterli değil
+Söylemek yeterli değildir
 
 ```cpp
 const FlagType;      // Incomplete specification
 ```
 
-çünkü `FlagType` türü değil bildiriliyor tanımlayıcının bir parçası olarak alınır. Bu bildirim gibi bildirimi geçersiz olacak şekilde alınır
+`FlagType`, yeniden bildirilebilecek bir tanımlayıcı değil türün parçası olacak şekilde alındığından. Bu bildirim, şunun gibi geçersiz bir bildirim olacak şekilde alınır
 
 ```cpp
 int;  // Illegal declaration
 ```
 
-Typedef, işaretçi, işlevi ve dizi türleri dahil olan her türlü bildirebilirsiniz. Yapı veya birleşim türü tanımlamadan önce bildirimiyle aynı görünürlük tanımını sahip olduğu sürece bir yapı veya birleşim türü işaretçisi için bir typedef adı bildirebilirsiniz.
+İşaretçi, işlev ve dizi türleri dahil olmak üzere typedef ile herhangi bir tür bildirebilirsiniz. Tanımın bildirimle aynı görünürlüğe sahip olduğu sürece yapıyı veya birleşim türünü tanımladıktan önce bir yapı veya birleşim türü işaretçisi için bir typedef adı bildirebilirsiniz.
 
 ### <a name="examples"></a>Örnekler
 
-Bir kullanımını **typedef** bildirimleri olan daha tekdüzen ve compact bildirimleri yapma. Örneğin:
+**Typedef** bildirimlerinin bir kullanımı, bildirimlerin daha Tekdüzen ve kompakt olmasını sağlar. Örneğin:
 
 ```cpp
 typedef char CHAR;          // Character type.
@@ -222,31 +222,31 @@ typedef unsigned long ulong;
 ulong ul;     // Equivalent to "unsigned long ul;"
 ```
 
-Kullanılacak **typedef** aynı bildirimde temel ve türetilmiş türleri belirtmek için Bildirimciler virgülle ayırabilirsiniz. Örneğin:
+Aynı bildirimde temel ve türetilmiş türleri belirtmek üzere **typedef** kullanmak için, bildirimcilerin virgülle ayırabilirsiniz. Örneğin:
 
 ```cpp
 typedef char CHAR, *PSTR;
 ```
 
-Aşağıdaki örnek türü sağlar `DRAWF` hiçbir değer döndürerek ve iki tamsayı bağımsız değişken alan bir işlev için:
+Aşağıdaki örnek, bir değer döndüren ve iki int bağımsız değişken alan bir işlev için tür `DRAWF` sağlar:
 
 ```cpp
 typedef void DRAWF( int, int );
 ```
 
-Yukarıdaki sonra **typedef** deyimi, bildirimi
+Yukarıdaki **typedef** ifadesinden sonra bildirim
 
 ```cpp
 DRAWF box;
 ```
 
-bildirime eşdeğer olacaktır
+Bildirime eşdeğerdir
 
 ```cpp
 void box( int, int );
 ```
 
-**TypeDef** ile birlikte **yapı** bildirmeyi ve kullanıcı tanımlı türler adlandırın:
+**typedef** , Kullanıcı tanımlı türleri bildirmek ve adlandırmak için genellikle **struct** ile birleştirilir:
 
 ```cpp
 // typedef_specifier2.cpp
@@ -271,9 +271,9 @@ int main()
 10   0.990000
 ```
 
-### <a name="re-declaration-of-typedefs"></a>Tür tanımları yeniden bildirimi
+### <a name="re-declaration-of-typedefs"></a>Tür tanımları öğesinin yeniden bildirimi
 
-**Typedef** bildirimi, aynı türe başvurmak amacıyla aynı adı yeniden bildirmek için kullanılabilir. Örneğin:
+**Typedef** bildirimi aynı türü belirtmek için aynı adı yeniden bildirmek üzere kullanılabilir. Örneğin:
 
 ```cpp
 // FILE1.H
@@ -287,9 +287,9 @@ typedef char CHAR;
 #include "file2.h"   // OK
 ```
 
-Program *PROG. CPP* içeren iki üstbilgi dosyalarını içeren **typedef** adı için bildirimleri `CHAR`. Her iki bildirim de aynı türe başvurduğu sürece, böyle bir yeniden bildirim kabul edilebilir.
+Program program programı *. CPP* , her ikisi de `CHAR`ad için **typedef** bildirimleri içeren iki üst bilgi dosyası içerir. Her iki bildirim de aynı türe başvurduğu sürece, böyle bir yeniden bildirim kabul edilebilir.
 
-A **typedef** daha önceden farklı bir tür olarak bildirilen bir adı yeniden tanımlayamaz. Bu nedenle, *Dosya2. H* içerir
+Bir **typedef** daha önce farklı bir tür olarak belirtilen adı yeniden tanımlanamaz. Bu nedenle, *dosya2. H* şunu içerir
 
 ```cpp
 // FILE2.H
@@ -309,9 +309,9 @@ typedef union REGS      // OK: name REGS redeclared
 } REGS;
 ```
 
-### <a name="typedefs-in-c-vs-c"></a>tür tanımları C++ vs. C
+### <a name="typedefs-in-c-vs-c"></a>vs. C C++ 'de tür tanımları
 
-Kullanım **typedef** tanımlayıcısı sınıf türleri ile desteklenen adlandırılmamış yapılarda bildirme büyük ölçüde ANSI C uygulaması nedeniyle **typedef** bildirimleri. Örneğin, birçok C Programcı aşağıdakini kullanın:
+**Typedef bildiriminde** adlandırılmamış yapıları bildirmek IÇIN kullanılan ANSI C uygulaması nedeniyle, sınıf türleri ile **typedef** belirleyicisi kullanılması büyük ölçüde desteklenir. Örneğin, birçok C programcısı şunları kullanır:
 
 ```cpp
 // typedef_with_class_types1.cpp
@@ -323,7 +323,7 @@ typedef struct {   // Declare an unnamed structure and give it the
 } POINT;
 ```
 
-Böyle bir bildirim avantajlarından bildirimleri gibi sunmasıdır:
+Böyle bir bildirimin avantajı, şunun gibi bildirimlerin kullanılmasına izin verebilir:
 
 ```cpp
 POINT ptOrigin;
@@ -335,7 +335,7 @@ Onun yerine:
 struct point_t ptOrigin;
 ```
 
-C++'da arasındaki farkı **typedef** adları ve gerçek türler (ile bildirilen **sınıfı**, **yapı**, **birleşim**ve **enum** anahtar sözcükleri) daha farklıdır. Ancak adsız bir yapıda bildirme C uygulaması bir **typedef** deyimi çalışmaya devam ettiğinden, c dilinde olduğu gibi hiçbir notational avantajlar sağlar.
+' C++De, **typedef** adları ve gerçek türler arasındaki fark ( **sınıf**, **Yapı**, **birleşim**ve **enum** anahtar sözcükleriyle belirtilen), daha farklıdır. Bir **typedef** ifadesinde isimsiz bir yapı bildirmenin c uygulaması hala işe yaramazsa, c içinde olduğu gibi notational avantajlarına sahip değildir.
 
 ```cpp
 // typedef_with_class_types2.cpp
@@ -347,10 +347,10 @@ typedef struct {
 } POINT;
 ```
 
-Yukarıdaki örnekte adlı bir sınıfı bildirir `POINT` adsız sınıf kullanarak **typedef** söz dizimi. `POINT` sınıf adı olarak kabul edilir; Ancak, bu şekilde bildirilen adlar için aşağıdaki kısıtlamalar uygulanır:
+Önceki örnek adlandırılmamış sınıf **typedef** sözdizimini kullanarak `POINT` adlı bir sınıf bildirir. `POINT`, sınıf adı olarak değerlendirilir; Ancak, aşağıdaki kısıtlamalar bu şekilde tanıtılan adlara uygulanır:
 
-- ' % S'adı (eş anlamlı) sonra yer alamaz bir **sınıfı**, **yapı**, veya **birleşim** önek.
+- Ad (eş anlamlı) bir **sınıf**, **Yapı**veya **birleşim** öneki öğesinden sonra yer alamaz.
 
-- Ad, sınıf bildirimi içinde oluşturucu veya yıkıcı adları olarak kullanılamaz.
+- Ad, sınıf bildiriminde Oluşturucu veya yıkıcı adları olarak kullanılamaz.
 
-Özet olarak, bu sözdizimi, devralma, oluşturma veya yok etme için herhangi bir mekanizma sağlamaz.
+Özet olarak, bu sözdizimi devralma, oluşturma veya yok etme için herhangi bir mekanizma sağlamaz.

@@ -8,46 +8,46 @@ helpviewer_keywords:
 - data [MFC]
 - ODBC [C++], RFX
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
-ms.openlocfilehash: 8630fab11728b0c0cd16eee5035df028a8382706
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1ba9f29ebf2cb3b1f94620e815882c850bbc7cc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395722"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213063"
 ---
 # <a name="record-field-exchange-rfx"></a>Kayıt Alanı Değişimi (RFX)
 
-MFC ODBC veritabanı sınıfları veri kaynağındaki veri taşımayı otomatikleştirin ve [kayıt](../../data/odbc/recordset-odbc.md) nesne. Türetilen bir sınıftan zaman [CRecordset](../../mfc/reference/crecordset-class.md) ve toplu satır getirme kullanmayın, verileri kayıt alanı değişimi (RFX) mekanizması tarafından aktarılır.
+MFC ODBC veritabanı sınıfları veri kaynağı ve bir [kayıt kümesi](../../data/odbc/recordset-odbc.md) nesnesi arasında veri taşımayı otomatik hale getirir. [CRecordset](../../mfc/reference/crecordset-class.md) 'den bir sınıf türetirsiniz ve toplu satır getirmeyi kullanmazsanız, veriler kayıt alanı DEĞIŞIMI (RFX) mekanizması tarafından aktarılır.
 
 > [!NOTE]
->  Bir türetilmiş toplu satır getirme uyguladıysanız `CRecordset` sınıfı framework toplu kayıt alanı değişimi (Bulk RFX) mekanizması veri aktarımı için kullanır. Daha fazla bilgi için [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Türetilmiş bir `CRecordset` sınıfında toplu satır getirme uyguladıysanız, çerçeve verileri aktarmak için toplu kayıt alanı değişimi (toplu RFX) mekanizmasını kullanır. Daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-RFX iletişim kutusu veri değişimi (DDX) için benzer. Bir veri kaynağını ve bir kayıt kümesi alan veri üyeleri arasında veri taşıma, kayıt kümesinin birden çok çağrı gerektirir [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) framework arasındaki işlev ve önemli etkileşim ve [ODBC](../../data/odbc/odbc-basics.md). RFX mekanizması tür bakımından güvenlidir ve ODBC işlevleri gibi çağırma iş kaydeder `::SQLBindCol`. DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
+RFX, iletişim kutusu veri değişimi (DDX) ile benzerdir. Veri kaynağı ve bir kayıt kümesinin alan veri üyeleri arasında veri taşımak, kayıt kümesinin [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) işlevine birden çok çağrı ve çerçeve ve [ODBC](../../data/odbc/odbc-basics.md)arasında önemli bir etkileşim gerektirir. RFX mekanizması tür açısından güvenlidir ve `::SQLBindCol`gibi ODBC işlevlerini çağırma işini kaydeder. DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
-RFX çoğunlukla için saydamdır. MFC Uygulama Sihirbazı kayıt kümesi sınıflarını bildirirseniz veya **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)), RFX oluşturulan bunları otomatik olarak. Kayıt kümesi sınıfı, temel sınıftan türetilmelidir `CRecordset` framework tarafından sağlanan. MFC Uygulama Sihirbazı, ilk kayıt kümesi sınıfı oluşturmanızı sağlar. **Sınıf ekleme** gerek duydukça başka kayıt kümesi sınıfları eklemenizi sağlar. Daha fazla bilgi ve örnekler için bkz. [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
+RFX çoğunlukla sizin için saydamdır. MFC Uygulama Sihirbazı veya **Sınıf Ekle** ( [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)bölümünde açıklandığı gibi) kayıt kümesi sınıflarınızı bildirirseniz, RFX otomatik olarak bunlara yerleşiktir. Kayıt kümesi sınıfınızın, Framework tarafından sağlanan `CRecordset` taban sınıftan türetilmiş olması gerekir. MFC Uygulama Sihirbazı, ilk kayıt kümesi sınıfı oluşturmanızı sağlar. **Sınıf Ekle** , sizin için gerekli olan diğer kayıt kümesi sınıflarını eklemenize olanak sağlar. Daha fazla bilgi ve örnek için bkz. [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
 
-Aşağıdakileri yapmak istediğinizde üç durumda RFX kod az miktarda el ile eklemeniz gerekir:
+Şunları yapmak istediğinizde, üç durumda, az miktarda RFX kodu eklemeniz gerekir:
 
-- Parametreli sorgular kullanma. Daha fazla bilgi için [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+- Parametreli sorgular kullanın. Daha fazla bilgi için bkz. [kayıt kümesi: bir kayıt kümesini parametrize (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-- (İki veya daha fazla tablodan sütun için bir kayıt kümesini kullanma) birleştirmeler gerçekleştirme. Daha fazla bilgi için [kayıt kümesi: Birleşim gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
+- Birleşimler gerçekleştirin (iki veya daha fazla tablodan sütunlar için bir kayıt kümesi kullanarak). Daha fazla bilgi için bkz. [kayıt kümesi: JOIN gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
 
-- Veri sütunlarını dinamik olarak bağlayın. Bu Parametreleştirme daha az yaygındır. Daha fazla bilgi için [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
+- Veri sütunlarını dinamik olarak bağlayın. Bu, Parametreleştirme özelliğinden daha az yaygındır. Daha fazla bilgi için bkz. [kayıt kümesi: dinamik olarak veri sütunlarını bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 
-RFX daha gelişmiş bir bilgiye ihtiyacınız varsa bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
+RFX 'in daha gelişmiş bir şekilde anlaşılmasına ihtiyacınız varsa [kayıt alanı değişimi: RFX 'In nasıl çalıştığını](../../data/odbc/record-field-exchange-how-rfx-works.md)görün.
 
-Aşağıdaki konularda, kayıt kümesi nesnelerini kullanarak ayrıntılarını açıklanır:
+Aşağıdaki konularda, kayıt kümesi nesnelerinin kullanımıyla ilgili ayrıntılar açıklanmaktadır:
 
-- [Kayıt Alanı Değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md)
+- [Kayıt Alanı Değişimi: RFX Kullanma](../../data/odbc/record-field-exchange-using-rfx.md)
 
-- [Kayıt Alanı Değişimi: RFX İşlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)
+- [Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)
 
-- [Kayıt Alanı Değişimi: RFX’in çalışma biçimi](../../data/odbc/record-field-exchange-how-rfx-works.md)
+- [Kayıt Alanı Değişimi: RFX'in Çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[MFC ODBC tüketici](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
+[MFC ODBC tüketme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [Veritabanı Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)<br/>
 [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

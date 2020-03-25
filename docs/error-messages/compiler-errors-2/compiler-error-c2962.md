@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C2962
+title: Derleyici hatası C2962
 ms.date: 11/04/2016
 f1_keywords:
 - C2962
 helpviewer_keywords:
 - C2962
 ms.assetid: 6f966aec-4eea-4221-8e1b-fe66808c6f5c
-ms.openlocfilehash: 69832de73a0b421f68b6f3e5b7db4f54b32a2db3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa2be36af056aecc234fedb8bd8e7011aa44fba3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257016"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176747"
 ---
-# <a name="compiler-error-c2962"></a>Derleyici Hatası C2962
+# <a name="compiler-error-c2962"></a>Derleyici hatası C2962
 
-sözdizimi hatası: 'belirteci': Şablon sınıfı üye işlev tanımının'ile bitmesi bekleniyor '}'
+sözdizimi hatası: ' token ': şablon sınıfı üye işlev tanımının '} ' ile bitmesi bekleniyor
 
-Belirteç, bir şablon bildiriminde bir söz dizimi hatası neden oldu.
+Belirteç, şablon bildiriminde bir sözdizimi hatasına neden oldu.
 
-Eşleşmeyen sınırlayıcılar bu hata oluşabilir
+Bu hata, eşleşmeyen sınırlayıcılardan kaynaklanabilir

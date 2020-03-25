@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceListHelper structure
 ms.assetid: 4297e419-c96b-45df-8a00-7568062125ba
-ms.openlocfilehash: 03bfed00147daef22fe91e6f061ea6720834090f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a7b4c19bbcdd4161e9078274f18f96a48f9e7d7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396055"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213856"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper Yapısı
 
@@ -42,48 +42,48 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 ### <a name="parameters"></a>Parametreler
 
 *T0*<br/>
-Gerekli şablon parametresi, 0.
+Şablon parametresi 0, gerekli.
 
 *T1*<br/>
-Belirtilmezse, varsayılan şablon parametresi 1.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 1.
 
 *T2*<br/>
-Belirtilmezse, varsayılan şablon parametresi 2 '. Üçüncü şablon parametresi.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 2. Üçüncü şablon parametresi.
 
 *T3*<br/>
-Belirtilmezse, varsayılan şablon parametresi, 3.
+Varsayılan olarak belirtilmeyen şablon parametresi 3.
 
 *T4*<br/>
-Belirtilmezse, varsayılan şablon parametresi, 4.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 4.
 
 *T5*<br/>
-Belirtilmezse, varsayılan şablon parametresi, 5.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 5.
 
 *T6*<br/>
-Belirtilmezse, varsayılan şablon parametresi, 6.
+Şablon parametresi 6, varsayılan olarak belirtilmemiş.
 
 *T7*<br/>
-Belirtilmezse, varsayılan şablon parametresi, 7.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 7.
 
 *T8*<br/>
-Belirtilmezse, varsayılan şablon parametresi 8.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 8.
 
 *T9*<br/>
-Belirtilmezse, varsayılan şablon parametresi 9.
+Varsayılan olarak belirtilmemiş olan şablon parametresi 9.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Oluşturur bir `InterfaceList` yinelemeli olarak belirtilen şablon parametre bağımsız uygulama tarafından türü.
+Belirtilen şablon parametresi bağımsız değişkenlerini yinelemeli olarak uygulayarak bir `InterfaceList` türü oluşturur.
 
-**Interfacelisthelper** şablon parametresi şablonu kullanan *T0* ilk veri üyesi tanımlamak için bir `InterfaceList` yapısı ve yinelemeli olarak geçerlidir  **Interfacelisthelper** kalan herhangi bir şablon parametre şablonu. **Interfacelisthelper** kalan şablon parametre bulunmadığında durdurur.
+**InterfaceListHelper** şablonu, bir `InterfaceList` yapısındaki ilk veri üyesini tanımlamak için *T0* şablon parametresini kullanır ve ardından, geri kalan tüm şablon parametrelerine **InterfaceListHelper** şablonunu yinelemeli olarak uygular. **InterfaceListHelper** , kalan şablon parametreleri olmadığında durduruluyor.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`TypeT`|Interfacelist türe ilişkin bir eşanlam.|
+|`TypeT`|InterfaceList türü için bir eş anlamlı.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -91,9 +91,9 @@ Oluşturur bir `InterfaceList` yinelemeli olarak belirtilen şablon parametre ba
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

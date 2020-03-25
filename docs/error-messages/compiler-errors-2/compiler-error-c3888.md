@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3888
+title: Derleyici hatası C3888
 ms.date: 11/04/2016
 f1_keywords:
 - C3888
 helpviewer_keywords:
 - C3888
 ms.assetid: 40820812-79c5-4dcd-a19d-b4164d25fc8a
-ms.openlocfilehash: e4d52946126e7be6c6f2aef34b5eb5a93a0babad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 40156dfaad5965d30a32d3aa2ac574a5f91999ba
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187385"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176410"
 ---
-# <a name="compiler-error-c3888"></a>Derleyici Hatası C3888
+# <a name="compiler-error-c3888"></a>Derleyici hatası C3888
 
-'name': Bu sabit değerli veri üyesiyle ilişkili const ifadesi C + tarafından desteklenmiyor +/ CLI
+' name ': Bu sabit değerli veri üyesiyle ilişkili const ifadesi/CLI tarafından C++desteklenmiyor
 
-*Adı* ile bildirilen veri üyesi [değişmez değer](../../extensions/literal-cpp-component-extensions.md) anahtar sözcüğü, derleyici desteği olmayan bir değer ile başlatılır. Derleyici, yalnızca sabit integral, enum veya dize türleri destekler. Olası nedeni **C3888** hatadır veri üyesi bir bayt dizisi ile başlatılır.
+[Literal](../../extensions/literal-cpp-component-extensions.md) anahtar sözcüğüyle belirtilen *ad* veri üyesi derleyicinin desteklemediği bir değer ile başlatılır. Derleyici yalnızca sabit integral, Enum veya dize türlerini destekler. **C3888** hatasının olası nedeni, veri üyesinin bir bayt dizisiyle başlatılmasından kaynaklanıyor olabilir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Desteklenen bir türde bildirilen sabit değerli veri üyesi olduğundan emin olun.
+1. Belirtilen sabit değerli veri üyesinin desteklenen bir tür olup olmadığını denetleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

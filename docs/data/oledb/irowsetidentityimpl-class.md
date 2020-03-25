@@ -13,12 +13,12 @@ helpviewer_keywords:
 - IRowsetIdentityImpl class
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-ms.openlocfilehash: 3e8c976fcb23bf41d88d88be3887db4dde52379d
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 20f558099c02d7de8a20b3cf631812b44a742a48
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446318"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210413"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl Sınıfı
 
@@ -52,7 +52,7 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 |-|-|
 |[IsSameRow](#issamerow)|Aynı satıra başvurduklarında, bunları görmek için iki satır tutamaçlarını karşılaştırır.|
 
-## <a name="issamerow"></a>IRowsetIdentityImpl:: IsSameRow
+## <a name="irowsetidentityimplissamerow"></a><a name="issamerow"></a>IRowsetIdentityImpl:: IsSameRow
 
 Aynı satıra başvurduklarında, bunları görmek için iki satır tutamaçlarını karşılaştırır.
 

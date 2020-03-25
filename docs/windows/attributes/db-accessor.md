@@ -1,21 +1,21 @@
 ---
-title: db_accessor (C++ COM özniteliği)
+title: db_accessor (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_accessor
 helpviewer_keywords:
 - db_accessor attribute
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-ms.openlocfilehash: bfb287261fce4ebf189801c308f57513f2c9f113
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e9725dad39974b828d87bd8b4cdeac623f4e12f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148256"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214870"
 ---
-# <a name="dbaccessor"></a>db_accessor
+# <a name="db_accessor"></a>db_accessor
 
-Grupları `db_column` katılmak öznitelikleri `IAccessor`-bağlama dayalı.
+Gruplar, `IAccessor`tabanlı bağlamaya katılan öznitelikleri `db_column`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,25 +25,25 @@ Grupları `db_column` katılmak öznitelikleri `IAccessor`-bağlama dayalı.
 
 #### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Erişimci (bir tamsayı sıfır tabanlı dizini) belirtir. Artan erişimci sayıları tamsayı kullanarak azalan veya tanımlı değerler belirtmeniz gerekir.
+*numaraları*<br/>
+Erişimci numarasını belirtir (sıfır tabanlı bir tamsayı dizini). Erişimci numaralarını, tamsayılar veya tanımlanmış değerler kullanarak artan sırada belirtmeniz gerekir.
 
 *auto*<br/>
-Erişimci otomatik olarak alınır (TRUE) veya (FALSE) alınmamış olduğunu belirten bir Boole değeri.
+Erişimcinin otomatik olarak alınıp alınmayacağını (TRUE) veya alınmadığını belirten bir Boole değeri (FALSE).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_accessor** tanımlar için temel alınan OLE DB erişimci sonraki `db_column` ve `db_param` öznitelikleri aynı sınıfın veya işlevin içinde. **db_accessor** üye düzeyinde kullanılabilir ve kullanılan grubuna `db_column` OLE DB içinde yer alan öznitelikleri `IAccessor`-bağlama dayalı. Ya da birlikte kullanılan `db_table` veya `db_command` öznitelikleri. Bu öznitelik çağırmak için arama benzer [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları.
+**db_accessor** , sonraki `db_column` ve `db_param` öznitelikleri için temel OLE DB erişimcisini aynı sınıf veya işlev içinde tanımlar. **db_accessor** , üye düzeyinde kullanılabilir ve OLE DB `IAccessor`tabanlı bağlamaya katılan `db_column` özniteliklerini gruplandırmak için kullanılır. `db_table` ya da `db_command` öznitelikleriyle birlikte kullanılır. Bu özniteliği çağırmak, [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makrolarını çağırmaya benzerdir.
 
-**db_accessor** bir satır kümesi oluşturur ve karşılık gelen erişimci eşlenir bağlar. Değil çağırırsanız **db_accessor**erişimci 0 otomatik olarak oluşturulur ve tüm sütun bağlamaları için bu erişimci bloğu eşlenir.
+**db_accessor** bir satır kümesi oluşturur ve ilgili erişimci haritalarını bağlar. **Db_accessor**çağırmayın, erişimci 0 otomatik olarak oluşturulur ve tüm sütun bağlamaları bu erişimci bloğuna eşlenir.
 
-**db_accessor** grupları veritabanı sütun bağlamaları içine bir veya daha fazla erişimcileri. Gerektiği çoklu erişimci kullanılacak senaryolarda bir tartışma için bkz [üzerinde bir satır kümesinde çoklu erişimci kullanarak](../../data/oledb/using-multiple-accessors-on-a-rowset.md). Ayrıca, "Kullanıcı kaydı desteği için çoklu erişimci" bkz [kullanıcı kayıtlarını](../../data/oledb/user-records.md).
+**db_accessor** veritabanı sütun bağlamalarını bir veya daha fazla erişimcilere gruplandırır. Birden çok erişimci kullanmanız gereken senaryolara ilişkin bir tartışma için bkz. [bir satır kümesinde birden çok erişimci kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md). Ayrıca, [Kullanıcı kayıtlarında](../../data/oledb/user-records.md)"birden çok erişimci Için Kullanıcı kaydı desteği" bölümüne bakın.
 
-Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uygulandığında, derleyici sınıf için yeniden adlandıracağını \_ *YourClassName*erişimci burada *YourClassName* verdiğiniz addır sınıf ve derleyici adlı bir sınıf oluşturur ayrıca *YourClassName*, öğesinden türetildiğini \_ *YourClassName*erişimcisi.  Sınıf Görünümü'nde, hem sınıflarını görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte **db_accessor** Northwind'deki Siparişler tablosunda iki erişimci Northwind veritabanına Grup sütunları için. Otomatik erişimci erişimci 0 olduğu ve erişimcisi 1 değil.
+Aşağıdaki örnek, Northwind veritabanından Orders tablosundaki sütunları iki erişimcide gruplamak için **db_accessor** kullanır. Erişimci 0 bir otomatik erişimdir ve erişimci 1 değildir.
 
 ```cpp
 // cpp_attr_ref_db_accessor.cpp
@@ -71,12 +71,12 @@ public:
 
 |||
 |-|-|
-|**İçin geçerlidir**|Öznitelik blokları|
+|**Uygulama hedefi**|Öznitelik blokları|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

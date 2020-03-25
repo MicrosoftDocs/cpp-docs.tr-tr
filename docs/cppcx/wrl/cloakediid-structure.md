@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CloakedIid structure
 ms.assetid: 82e0e377-ca3a-46bc-b850-ae2c46c15bb5
-ms.openlocfilehash: 10dc2af1897147045382e8463b6602fa015fc899
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1cc9e79384bbf4aae44199c2f35331e3afd8fd8f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398725"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214116"
 ---
 # <a name="cloakediid-structure"></a>CloakedIid Yapısı
 
-Gösterir `RuntimeClass`, `Implements` ve `ChainInterfaces` şablonları belirtilen arabirim IID'si listesinde erişilebilir değil.
+`RuntimeClass`, `Implements` ve `ChainInterfaces` şablonlarına, belirtilen arabirimin IID listesinde erişilebilir olmadığını gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct CloakedIid : T;
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-(Gizlenmiş) gizlenen arabirim.
+*Şı*<br/>
+Gizli (gizlenmiş) arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlişkin bir örnek verilmiştir **Cloakedıid** kullanılır: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.
+Aşağıda, **CloakedIid** 'ın nasıl kullanıldığına ilişkin bir örnek verilmiştir: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -42,9 +42,9 @@ struct CloakedIid : T;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

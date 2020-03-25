@@ -1,21 +1,21 @@
 ---
-title: RDX (C++ COM özniteliği)
+title: RDX (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.rdx
 helpviewer_keywords:
 - rdx attribute
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
-ms.openlocfilehash: 2790c3de01d21242daee73fc442ad22d88739355
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0140b759b1d78eb1284213a0dc47d9600b2a83b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407503"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214636"
 ---
 # <a name="rdx"></a>rdx
 
-Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı değiştirir.
+Bir kayıt defteri anahtarı oluşturur veya var olan bir kayıt defteri anahtarını değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,19 +26,19 @@ Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Açılan veya oluşturulacak anahtar adı.
+Oluşturulacak veya açılacak anahtarın adı.
 
-*değer adı*<br/>
-(İsteğe bağlı) Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
+*ValueName*<br/>
+Seçim Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarda zaten yoksa, eklenir.
 
 *regtype*<br/>
-Eklenen kayıt defteri anahtarı türü. Aşağıdakilerden biri olabilir: `text`, `dword`, `binary`, veya `CString`.
+Eklenmekte olan kayıt defteri anahtarının türü. Aşağıdakilerden biri olabilir: `text`, `dword`, `binary`veya `CString`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rdx** C++ öznitelik oluşturur veya mevcut bir kayıt defteri anahtarı bir COM bileşeni için değiştirir. Öznitelik BEGIN_RDX_MAP makrosu hedef üye uygulayan nesneye ekler. `RegistryDataExchange`, BEGIN_RDX_MAP makronun sonucu olarak, eklenen bir işlev, kayıt defteri ve veri üyeleri arasında veri aktarmak için kullanılabilir
+**RDX** C++ özniteliği bir com bileşeni için var olan bir kayıt defteri anahtarı oluşturur veya değiştirir. Özniteliği, hedef üyeyi uygulayan nesnesine bir BEGIN_RDX_MAP makrosu ekler. `RegistryDataExchange`, BEGIN_RDX_MAP makrosunun bir sonucu olarak eklenen bir işlev, kayıt defteri ve veri üyeleri arasında veri aktarmak için kullanılabilir
 
-Bu öznitelik ile birlikte kullanılabilir [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi_progid](vi-progid.md) öznitelikleri veya bunlardan birini gelir diğer öznitelikleri.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) öznitelikleri ya da bunlardan birini belirten diğer özniteliklerle birlikte kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -46,16 +46,16 @@ Bu öznitelik ile birlikte kullanılabilir [coclass'ı](coclass.md), [ProgID](pr
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf** veya **yapı** üyesi|
+|**Uygulama hedefi**|**sınıf** veya **Yapı** üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, MyValue CMyClass COM bileşeni açıklayan sisteme adlı bir kayıt defteri anahtarı ekler.
+Aşağıdaki kod, CMyClass COM bileşenini açıklayan sisteme MyValue adlı bir kayıt defteri anahtarı ekler.
 
 ```cpp
 // cpp_attr_ref_rdx.cpp

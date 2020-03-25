@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4152
 ms.assetid: 6025ab70-d7cf-4730-913a-3ca0b1186a3a
-ms.openlocfilehash: 598e1c084a14e98e5e3809e79ce9c21980102826
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f23026ea911c87498c148efbdcb6abb12ec215d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401299"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174069"
 ---
 # <a name="compiler-warning-level-4-c4152"></a>Derleyici Uyarısı (düzey 4) C4152
 
-Standart olmayan uzantı, ifadede işlev/veri ptr dönüştürme
+ifadede standart olmayan uzantı, işlev/veri PTR dönüştürmesi
 
-Bir işlev işaretçisi için veya veri işaretçisine dönüştürülür. Bu dönüştürme Microsoft Uzatmaları (/Ze) altında ancak ANSI c altında izin verilir
+Bir işlev işaretçisi, veri işaretçisinden veya bir işaretçiye dönüştürülür. Bu dönüştürmeye Microsoft uzantıları (/Ze) altında izin verilir, ancak ANSI C altında değildir.

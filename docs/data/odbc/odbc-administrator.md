@@ -11,44 +11,44 @@ helpviewer_keywords:
 - ODBC Administrator [C++]
 - drivers [C++], ODBC
 ms.assetid: b8652790-3437-4e7d-bc83-6ea6981f008b
-ms.openlocfilehash: ac893981ff8c697dc090f1e6ad5ac61886a69f99
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e88492919eac80a4f3db2f94202d49011aa69de
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395852"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213206"
 ---
 # <a name="odbc-administrator"></a>ODBC Yöneticisi
 
-ODBC Yöneticisi kaydeder ve yapılandırır [veri kaynakları](../../data/odbc/data-source-odbc.md) , kullanılabilir yerel olarak ya da bir ağ üzerinden. Sihirbazlar, kullanıcılarınızın veri kaynaklarına bağlanır, uygulamalarınızda kod oluşturmak için ODBC Yöneticisi tarafından sağlanan bilgileri kullanın.
+ODBC Yöneticisi, yerel olarak ya da bir ağ üzerinden kullanabileceğiniz [veri kaynaklarını](../../data/odbc/data-source-odbc.md) kaydeder ve yapılandırır. Sihirbazlar, uygulamalarınızda kullanıcılarınızı veri kaynaklarına bağlayan kod oluşturmak için ODBC Yöneticisi tarafından sağlanan bilgileri kullanır.
 
-MFC ODBC sınıfları veya MFC veri erişim nesnesi (DAO) sınıfları ile kullanmak için ODBC veri kaynağı ayarlamak için öncelikle kaydetmeniz ve veri kaynağını yapılandırın. Eklemek ve veri kaynakları kaldırmak için ODBC Yöneticisi'ni kullanın. ODBC sürücüsü bağlı olarak, yeni veri kaynakları oluşturabilirsiniz.
+MFC ODBC sınıfları veya MFC veri erişim nesnesi (DAO) sınıfları ile kullanmak üzere bir ODBC veri kaynağı ayarlamak için, önce veri kaynağını kaydetmeniz ve yapılandırmanız gerekir. Veri kaynaklarını eklemek ve kaldırmak için ODBC Yöneticisi 'ni kullanın. ODBC sürücüsüne bağlı olarak, yeni veri kaynakları da oluşturabilirsiniz.
 
-ODBC Yöneticisi, Kurulum sırasında yüklenir. Seçerseniz, **özel** yükleme ve herhangi bir ODBC sürücüsünü seçmediyseniz **veritabanı seçenekleri** iletişim kutusunda, gerekli dosyaları yeniden yüklemek için kurulumu çalıştırmanız gerekir.
+ODBC Yöneticisi kurulum sırasında yüklenir. **Özel** yükleme ' yi seçer ve **veritabanı seçenekleri** ILETIŞIM kutusunda herhangi bir ODBC sürücüsü seçmediyseniz, gerekli dosyaları yüklemek için kurulum 'u yeniden çalıştırmanız gerekir.
 
-Kurulum sırasında yüklemek istediğiniz ODBC sürücüleri seçin. Visual C++ Kurulum programını kullanarak Visual C++ ile birlikte gelen ek sürücüler daha sonra yükleyebilirsiniz.
+Kurulum sırasında, yüklemek istediğiniz ODBC sürücülerini seçersiniz. Daha sonra Visual C++ C++ Kurulum programını kullanarak görsele gönderilen ek sürücüleri yükleyebilirsiniz.
 
-Visual C++ ile gönderilen ODBC sürücüleri yüklemek istiyorsanız, sürücüyle Kurulum programını çalıştırmanız gerekir.
+Görsele C++teslım olmayan ODBC sürücülerini yüklemek istiyorsanız, sürücüye eşlik eden Kurulum programını çalıştırmanız gerekir.
 
-#### <a name="to-install-odbc-drivers-that-ship-with-visual-c"></a>Visual C++ ile birlikte gelen ODBC sürücülerini yüklemek için
+#### <a name="to-install-odbc-drivers-that-ship-with-visual-c"></a>Görsele gönderilen ODBC sürücülerini yüklemek içinC++
 
-1. Kurulum, Visual C++ dağıtım CD'SİNDEN çalıştırın.
+1. Kurulum 'U görsel C++ dağıtım CD 'nizden çalıştırın.
 
-   Açılış Kurulum programının iletişim kutusu görüntülenir.
+   Kurulum programındaki açma iletişim kutusu görüntülenir.
 
-1. Tıklayın **sonraki** ulaşana kadar her iletişim kutusunda **yükleme seçenekleri** iletişim kutusu. Seçin **özel**ve ardından **sonraki**.
+1. **Yükleme seçenekleri** iletişim kutusuna ulaşana kadar her Iletişim kutusunda **İleri** ' ye tıklayın. **Özel**' i seçin ve ardından **İleri**' ye tıklayın.
 
-1. Tüm onay kutularını temizleyin **Microsoft Visual C++ Kurulumu** iletişim kutusu dışındaki **veritabanı seçenekleri** onay kutusunu işaretleyin ve ardından **ayrıntıları** görüntülenecek**Veritabanı seçenekleri** iletişim kutusu.
+1. **Veritabanı seçenekleri** onay kutusu dışında **Microsoft görsel C++ kurulum** iletişim kutusundaki tüm onay kutularını temizleyin ve ardından **veritabanı seçenekleri** iletişim kutusunu göstermek için **Ayrıntılar** ' a tıklayın.
 
-1. NET **Microsoft Veri erişim nesneleri** onay kutusunu seçin **Microsoft ODBC sürücüleri** onay kutusunu işaretleyin ve ardından **ayrıntıları**.
+1. **Microsoft veri erişim nesneleri** onay kutusunu temizleyin, **Microsoft ODBC sürücüleri** onay kutusunu seçin ve ardından **Ayrıntılar**' a tıklayın.
 
-   **Microsoft ODBC sürücüleri** iletişim kutusu görüntülenir.
+   **MICROSOFT ODBC sürücüleri** iletişim kutusu görüntülenir.
 
-1. Yükleyin ve ardından istediğiniz sürücüleri seçin **Tamam** iki kez.
+1. Yüklemek istediğiniz sürücüleri seçin ve ardından iki kez **Tamam** ' a tıklayın.
 
-1. Tıklayın **sonraki** yüklemeyi başlatmak için kalan iletişim kutularında. Kurulum, yükleme tamamlandığında size bildirir.
+1. Yüklemeyi başlatmak için kalan iletişim kutularında **İleri** ' ye tıklayın. Yükleme tamamlandığında kurulum size bildirir.
 
-Sürücüleri yüklü olduğunda, ODBC Yöneticisi'ni kullanarak veri kaynağı yapılandırabilirsiniz. ODBC simgesi Denetim Masası'nda bulabilirsiniz.
+Sürücüler yüklendiğinde, ODBC Yöneticisi 'ni kullanarak veri kaynağını yapılandırabilirsiniz. ODBC simgesini Denetim Masası 'nda bulabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

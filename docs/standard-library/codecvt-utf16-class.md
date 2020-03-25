@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_utf16 class
 ms.assetid: a9897f98-f84d-4db6-90ad-858b2727570c
-ms.openlocfilehash: a84ca6da22825ca3fa7ab43e43a574fb05caa1a8
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 73177985727f4da5cf3ca4eb9e3cc3fb5976f76d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689832"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215286"
 ---
 # <a name="codecvt_utf16"></a>codecvt_utf16
 
@@ -24,23 +24,23 @@ class codecvt_utf16 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="parameters"></a>Parametreler
 
-*Eled* \
+*Eled*\
 Geniş karakterli öğe türü.
 
-*Maxcode* \
+*Maxcode*\
 Yerel ayar modeli için en fazla karakter sayısı.
 
-*Mod* \
+*Mod*\
 Yerel ayar modeli için yapılandırma bilgileri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf şablonu, UCS-2 veya UCS-4 olarak kodlanan geniş karakterler arasında ve UTF-16LE olarak kodlanmış bir bayt akışı, Eğer mod & little_endian veya UTF-16, aksi durumda dönüştürür.
+Bu sınıf şablonu, UCS-2 veya UCS-4 olarak kodlanan geniş karakterler arasında ve UTF-16LE olarak kodlanmış bir bayt akışı, mod & little_endian veya UTF-16' i değilse
 
 Bayt akışı ikili bir dosyaya yazılmalıdır; bir metin dosyasına yazılmışsa bozulmuş olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üst bilgi: \<codecvt >
+Üstbilgi: \<codecvt >
 
 Ad alanı: std

@@ -1,19 +1,19 @@
 ---
-title: __FUNC__
+title: __func__
 ms.date: 10/19/2017
 f1_keywords:
 - __func__
 ms.assetid: a5299b8d-f0ee-4af2-91dd-8fb165e68798
-ms.openlocfilehash: eecd3efea6239c92a8bc81c0ed13a9563e5b87d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e94caffe120c325478d8b4f24c1915a516d69f4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154301"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179828"
 ---
-# <a name="func"></a>__FUNC__
+# <a name="__func__"></a>__func__
 
-**(C ++ 11)**  Önceden tanımlanmış tanımlayıcının &#95; &#95;func&#95; &#95; açıkça, çevreleyen işlevin nitelenmemiş ve eksiz adını içeren bir dize olarak tanımlanır. &#95;&#95;FUNC&#95; &#95; C++ standardına göre uygulanan ve bir Microsoft uzantısı değil.
+**(C++ 11)** Önceden tanımlanmış tanımlayıcı &#95; &#95;Func&#95; &#95; , kapsayan işlevin nitelenmemiş ve donatımış adını içeren bir dize olarak tanımlanır. &#95;&#95;Func&#95; &#95; , C++ standart tarafından uygulanan ve bir Microsoft uzantısı değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,7 +23,7 @@ __func__
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev adı içeren döndürür null ile sonlandırılmış const char dizisi karakter.
+İşlev adını içeren, null ile sonlandırılmış bir sabit karakter dizisi döndürür.
 
 ## <a name="example"></a>Örnek
 

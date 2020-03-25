@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C3762
+title: Derleyici hatası C3762
 ms.date: 11/04/2016
 f1_keywords:
 - C3762
 helpviewer_keywords:
 - C3762
 ms.assetid: b79b6506-2cea-44a0-855a-5fdcb9fd7ad9
-ms.openlocfilehash: 108d0ae2e864ee569d8a1138d057bbc7d310229f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af6894b72fe66bff9dca1a8dd6b67f4e3751705f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391952"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165853"
 ---
-# <a name="compiler-error-c3762"></a>Derleyici Hatası C3762
+# <a name="compiler-error-c3762"></a>Derleyici hatası C3762
 
-'öznitelik' özniteliği işlenemiyor
+' Attribute ' özniteliği işlenemiyor
 
-Devralınan kullanıcı tanımlı bir öznitelik `System.Security.Permissions.SecurityAttribute` güvenlik özniteliği tanımlamak için kullanılır. Böyle bir öznitelik tanımlandığı aynı bütünleştirilmiş kodda kullanılamaz.
+`System.Security.Permissions.SecurityAttribute` devralan Kullanıcı tanımlı bir öznitelik, bir güvenlik özniteliği tanımlamak için kullanılıyor. Bu tür bir öznitelik, tanımlandığı derlemede kullanılamaz.

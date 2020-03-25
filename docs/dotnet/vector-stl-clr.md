@@ -91,12 +91,12 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-ms.openlocfilehash: 5b16319c17b5f5681f6417d8732931da1974b66b
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bbd4d7b6e7e7668100b2694fdcf3b785d7681ca3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445550"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208279"
 ---
 # <a name="vector-stlclr"></a>vektör (STL/CLR)
 
@@ -215,7 +215,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="assign"></a>vector:: Assign (STL/CLR)
+## <a name="vectorassign-stlclr"></a><a name="assign"></a>vector:: Assign (STL/CLR)
 
 Tüm öğeleri değiştirir.
 
@@ -296,7 +296,7 @@ a b
 a b c
 ```
 
-## <a name="at"></a>vector:: at (STL/CLR)
+## <a name="vectorat-stlclr"></a><a name="at"></a>vector:: at (STL/CLR)
 
 Belirtilen konumdaki bir öğeye erişir.
 
@@ -348,7 +348,7 @@ a b c
 a x c
 ```
 
-## <a name="back"></a>vector:: Back (STL/CLR)
+## <a name="vectorback-stlclr"></a><a name="back"></a>vector:: Back (STL/CLR)
 
 Son öğeye erişir.
 
@@ -399,7 +399,7 @@ back() = c
 a b x
 ```
 
-## <a name="back_item"></a>vector:: back_item (STL/CLR)
+## <a name="vectorback_item-stlclr"></a><a name="back_item"></a>vector:: back_item (STL/CLR)
 
 Son öğeye erişir.
 
@@ -450,7 +450,7 @@ back_item = c
 a b x
 ```
 
-## <a name="begin"></a>vector:: Begin (STL/CLR)
+## <a name="vectorbegin-stlclr"></a><a name="begin"></a>vector:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -505,7 +505,7 @@ a b c
 x y c
 ```
 
-## <a name="capacity"></a>vector:: Capacity (STL/CLR)
+## <a name="vectorcapacity-stlclr"></a><a name="capacity"></a>vector:: Capacity (STL/CLR)
 
 Kapsayıcı için ayrılan depolamanın boyutunu raporlar.
 
@@ -555,7 +555,7 @@ capacity() = 4, ok = True
 capacity() = 9, ok = True
 ```
 
-## <a name="clear"></a>vector:: Clear (STL/CLR)
+## <a name="vectorclear-stlclr"></a><a name="clear"></a>vector:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -612,7 +612,7 @@ a b
 size() = 0
 ```
 
-## <a name="const_iterator"></a>vector:: const_iterator (STL/CLR)
+## <a name="vectorconst_iterator-stlclr"></a><a name="const_iterator"></a>vector:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -653,7 +653,7 @@ int main()
 a b c
 ```
 
-## <a name="const_reference"></a>vector:: const_reference (STL/CLR)
+## <a name="vectorconst_reference-stlclr"></a><a name="const_reference"></a>vector:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -697,7 +697,7 @@ int main()
 a b c
 ```
 
-## <a name="const_reverse_iterator"></a>vector:: const_reverse_iterator (STL/CLR)
+## <a name="vectorconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>vector:: const_reverse_iterator (STL/CLR)
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
@@ -739,7 +739,7 @@ int main()
 c b a
 ```
 
-## <a name="difference_type"></a>vektör::d ifference_type (STL/CLR)
+## <a name="vectordifference_type-stlclr"></a><a name="difference_type"></a>vektör::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -793,7 +793,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="empty"></a>vector:: Empty (STL/CLR)
+## <a name="vectorempty-stlclr"></a><a name="empty"></a>vector:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -844,7 +844,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="end"></a>vector:: End (STL/CLR)
+## <a name="vectorend-stlclr"></a><a name="end"></a>vector:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -900,7 +900,7 @@ a b c
 a x y
 ```
 
-## <a name="erase"></a>vector:: Erase (STL/CLR)
+## <a name="vectorerase-stlclr"></a><a name="erase"></a>vector:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
@@ -979,7 +979,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="front"></a>vector:: Front (STL/CLR)
+## <a name="vectorfront-stlclr"></a><a name="front"></a>vector:: Front (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -1030,7 +1030,7 @@ front() = a
 x b c
 ```
 
-## <a name="front_item"></a>vector:: front_item (STL/CLR)
+## <a name="vectorfront_item-stlclr"></a><a name="front_item"></a>vector:: front_item (STL/CLR)
 İlk öğeye erişir.
 
 ### <a name="syntax"></a>Sözdizimi
@@ -1080,7 +1080,7 @@ front_item = a
 x b c
 ```
 
-## <a name="generic_container"></a>vector:: generic_container (STL/CLR)
+## <a name="vectorgeneric_container-stlclr"></a><a name="generic_container"></a>vector:: generic_container (STL/CLR)
 Kapsayıcının genel arabiriminin türü.
 
 ### <a name="syntax"></a>Sözdizimi
@@ -1145,7 +1145,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="generic_iterator"></a>vector:: generic_iterator (STL/CLR)
+## <a name="vectorgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>vector:: generic_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
@@ -1203,7 +1203,7 @@ a b c
 a a c
 ```
 
-## <a name="generic_reverse_iterator"></a>vector:: generic_reverse_iterator (STL/CLR)
+## <a name="vectorgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>vector:: generic_reverse_iterator (STL/CLR)
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
 ### <a name="syntax"></a>Sözdizimi
@@ -1259,7 +1259,7 @@ a b c
 a c c
 ```
 
-## <a name="generic_value"></a>vector:: generic_value (STL/CLR)
+## <a name="vectorgeneric_value-stlclr"></a><a name="generic_value"></a>vector:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -1315,7 +1315,7 @@ a b c
 a a c
 ```
 
-## <a name="insert"></a>vector:: insert (STL/CLR)
+## <a name="vectorinsert-stlclr"></a><a name="insert"></a>vector:: insert (STL/CLR)
 
 Belirtilen konumdaki öğeleri ekler.
 
@@ -1424,7 +1424,7 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="iterator"></a>vector:: yineleyici (STL/CLR)
+## <a name="vectoriterator-stlclr"></a><a name="iterator"></a>vector:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1473,7 +1473,7 @@ a b c
 x b c
 ```
 
-## <a name="op_as"></a>vector:: operator = (STL/CLR)
+## <a name="vectoroperator-stlclr"></a><a name="op_as"></a>vector:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
@@ -1526,7 +1526,7 @@ a b c
 a b c
 ```
 
-## <a name="op"></a>vector:: operator (STL/CLR)
+## <a name="vectoroperatorstlclr"></a><a name="op"></a>vector:: operator (STL/CLR)
 
 Belirtilen konumdaki bir öğeye erişir.
 
@@ -1578,7 +1578,7 @@ a b c
 a x c
 ```
 
-## <a name="pop_back"></a>vektör::p op_back (STL/CLR)
+## <a name="vectorpop_back-stlclr"></a><a name="pop_back"></a>vektör::p op_back (STL/CLR)
 
 Son öğeyi kaldırır.
 
@@ -1625,7 +1625,7 @@ a b c
 a b
 ```
 
-## <a name="push_back"></a>vektör::p ush_back (STL/CLR)
+## <a name="vectorpush_back-stlclr"></a><a name="push_back"></a>vektör::p ush_back (STL/CLR)
 
 Yeni bir son öğe ekler.
 
@@ -1665,7 +1665,7 @@ int main()
 a b c
 ```
 
-## <a name="rbegin"></a>vector:: rbegin (STL/CLR)
+## <a name="vectorrbegin-stlclr"></a><a name="rbegin"></a>vector:: rbegin (STL/CLR)
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
@@ -1720,7 +1720,7 @@ a b c
 a y x
 ```
 
-## <a name="reference"></a>vector:: Reference (STL/CLR)
+## <a name="vectorreference-stlclr"></a><a name="reference"></a>vector:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -1775,7 +1775,7 @@ a b c
 A B C
 ```
 
-## <a name="rend"></a>vector:: rend (STL/CLR)
+## <a name="vectorrend-stlclr"></a><a name="rend"></a>vector:: rend (STL/CLR)
 
 Ters denetlenen sıranın sonunu belirtir.
 
@@ -1831,7 +1831,7 @@ a b c
 y x c
 ```
 
-## <a name="reserve"></a>vector:: Reserve (STL/CLR)
+## <a name="vectorreserve-stlclr"></a><a name="reserve"></a>vector:: Reserve (STL/CLR)
 
 Kapsayıcı için en düşük büyüme kapasitesini sağlar.
 
@@ -1886,7 +1886,7 @@ capacity() = 4, ok = True
 capacity() = 9, ok = True
 ```
 
-## <a name="resize"></a>vector:: Resize (STL/CLR)
+## <a name="vectorresize-stlclr"></a><a name="resize"></a>vector:: Resize (STL/CLR)
 
 Öğe sayısını değiştirir.
 
@@ -1946,7 +1946,7 @@ size() = 0
 x x x x x
 ```
 
-## <a name="reverse_iterator"></a>vector:: reverse_iterator (STL/CLR)
+## <a name="vectorreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>vector:: reverse_iterator (STL/CLR)
 
 Denetlenen sıra için ters yineleyicinin türü.
 
@@ -1995,7 +1995,7 @@ c b a
 x b a
 ```
 
-## <a name="size"></a>vector:: size (STL/CLR)
+## <a name="vectorsize-stlclr"></a><a name="size"></a>vector:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -2048,7 +2048,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="size_type"></a>vector:: size_type (STL/CLR)
+## <a name="vectorsize_type-stlclr"></a><a name="size_type"></a>vector:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -2093,7 +2093,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="swap"></a>vector:: swap (STL/CLR)
+## <a name="vectorswap-stlclr"></a><a name="swap"></a>vector:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2157,7 +2157,7 @@ x x x x x
 a b c
 ```
 
-## <a name="to_array"></a>vector:: to_array (STL/CLR)
+## <a name="vectorto_array-stlclr"></a><a name="to_array"></a>vector:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -2206,7 +2206,7 @@ a b c d
 a b c
 ```
 
-## <a name="value_type"></a>vector:: value_type (STL/CLR)
+## <a name="vectorvalue_type-stlclr"></a><a name="value_type"></a>vector:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -2251,7 +2251,7 @@ int main()
 a b c
 ```
 
-## <a name="vector"></a>vector:: vector (STL/CLR)
+## <a name="vectorvector-stlclr"></a><a name="vector"></a>vector:: vector (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -2396,7 +2396,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="op_neq"></a>operator! = (vektör) (STL/CLR)
+## <a name="operator-vector-stlclr"></a><a name="op_neq"></a>operator! = (vektör) (STL/CLR)
 
 Vektör eşit değildir karşılaştırması.
 
@@ -2465,7 +2465,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a>işleç&lt; (vektör) (STL/CLR)
+## <a name="operatorlt-vector-stlclr"></a><a name="op_lt"></a>işleç&lt; (vektör) (STL/CLR)
 
 Vektör kıyasla küçüktür.
 
@@ -2534,7 +2534,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a>işleç&lt;= (vektör) (STL/CLR)
+## <a name="operatorlt-vector-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (vektör) (STL/CLR)
 
 Vektör küçüktür veya eşittir karşılaştırması.
 
@@ -2603,7 +2603,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="op_eq"></a>operator = = (vector) (STL/CLR)
+## <a name="operator-vector-stlclr"></a><a name="op_eq"></a>operator = = (vector) (STL/CLR)
 
 Vektör eşit karşılaştırması.
 
@@ -2672,7 +2672,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a>işleç&gt; (vektör) (STL/CLR)
+## <a name="operatorgt-vector-stlclr"></a><a name="op_gt"></a>işleç&gt; (vektör) (STL/CLR)
 
 Vektör, karşılaştırmadan daha büyük.
 
@@ -2741,7 +2741,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a>işleç&gt;= (vektör) (STL/CLR)
+## <a name="operatorgt-vector-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (vektör) (STL/CLR)
 
 Vektör büyük veya eşit karşılaştırması.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - first_is attribute
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
-ms.openlocfilehash: 9d06435caaeb53beb76bd145c92c470446cae3a7
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4ac7142ed4f81d6011894681311e1aa5f129380b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501564"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167023"
 ---
 # <a name="first_is"></a>first_is
 
@@ -30,7 +30,7 @@ Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**First_is** C++ özniteliği, [first_is](/windows/win32/Midl/first-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**First_is** C++ özniteliği [first_is](/windows/win32/Midl/first-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -64,8 +64,8 @@ requestedit] HRESULT get_I([out, retval]long *i);
 |-|-|
 |**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

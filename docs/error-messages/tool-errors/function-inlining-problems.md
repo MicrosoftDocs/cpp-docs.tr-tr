@@ -9,20 +9,20 @@ helpviewer_keywords:
 - -Ob2 C++ compiler option
 - function inlining problems
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
-ms.openlocfilehash: f088b0f3ec94ad59c9c5576e6090a895bb88c3ad
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: cb4653bd2f03683b9abad1eea0e9ffa88222090e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856881"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184248"
 ---
 # <a name="function-inlining-problems"></a>İşlev Satır İçi Kullanım Sorunları
 
-İşlev satır içi kullanım kullanıyorsanız yapmanız gerekenler şunlardır:
+İşlev satır içi kullanıyorsanız, şunları yapmanız gerekir:
 
-- Eklediğiniz üstbilgi dosyasında uygulanan satır içi işlevleri vardır.
+- Satır içi işlevlerin dahil ettiğiniz başlık dosyasında uygulanıp uygulanmamalıdır.
 
-- Sahip satır içi kullanım ON üstbilgi dosyasında açık.
+- Üst bilgi dosyasında giriş açık.
 
 ```cpp
 // LNK2019_function_inline.cpp
@@ -37,7 +37,7 @@ struct _load_config_used {
 void _load_config_used::Test() { printf("in Test\n"); }
 ```
 
-Ardından,
+ardından,
 
 ```cpp
 // LNK2019_function_inline_2.cpp
@@ -54,11 +54,11 @@ int main() {
 }
 ```
 
-Kullanıyorsanız `#pragma inline_depth` derleyici yönergesi emin 2 veya daha büyük kümesi değerine sahip. Sıfır değeri kapanır satır içi kullanım. Ayrıca kullandığınızdan emin olun **/Ob1** veya **/ob2** derleyici seçenekleri.
+`#pragma inline_depth` derleyici yönergesini kullanıyorsanız, 2 veya daha büyük bir değer ayarlamış olduğunuzdan emin olun. Sıfır değeri satır içine alınır. Ayrıca, **/OB1** veya **/Ob2** derleyici seçeneklerini kullandığınızdan emin olun.
 
-Satır içi hem de satır içi derleme seçenekleri farklı modülleri karıştırma bazen sorunlara neden olabilir. Bir C++ Kitaplığı satır içi işlev açık olarak oluşturulursa ([/Ob1](../../build/reference/ob-inline-function-expansion.md) veya [/ob2](../../build/reference/ob-inline-function-expansion.md)) ancak (seçeneği devre dışı) işlevlerini açıklayan ilgili başlık dosyası inlining'i sahip, hata LNK2001 alırsınız. İşlevleri üstbilgi dosyasından kodun içine satır içine almaz ancak bunlar kitaplık dosyasında olmadığından başvurusunu adresine yoktur.
+Farklı modüllerde satır içi ve satır içi derleme seçeneklerini karıştırma bazen soruna neden olabilir. Bir C++ kitaplık, ([/OB1](../../build/reference/ob-inline-function-expansion.md) veya [/Ob2](../../build/reference/ob-inline-function-expansion.md)) işleviyle birlikte oluşturulduysa, ancak işlevleri açıklayan ilgili üstbilgi dosyası satır içine alınır (hiçbir seçenek yoksa), LNK2001 hatasıyla karşılaşacaktır. İşlevler, üstbilgi dosyasındaki koda satır içine alınmaz, ancak kitaplık dosyasında olmadıklarından başvuruyu çözecek bir adres yoktur.
 
-Benzer şekilde, üst bilgi dosyası ayrıca LNK2019 alırsınız yerine satır içi işlevi kullanan bir proje henüz işlevleri bir .cpp dosyasında tanımlar. Her yerde varsaydığı üstbilgi dosyası eklenmiştir, ancak yalnızca işlevlerdir satır içine alınmış .cpp dosyası derleyici; başarılı olduğunda Bu nedenle, bağlayıcı diğer modüllerde kullanıldığında çözülmemiş dış öğeleri olarak işlev görür.
+Benzer şekilde, işlev ıntıl kullanan bir proje henüz, başlık dosyası yerine bir. cpp dosyasındaki işlevleri tanımlar LNK2019 de alır. Üst bilgi dosyası, uygun kabul edilen her yerde dahil edilir, ancak işlevler yalnızca. cpp dosyası derleyicide geçtiğinde satır içine alınır; Bu nedenle, bağlayıcı, diğer modüllerde kullanıldığında, işlevleri çözümlenmemiş dışlar olarak görür.
 
 ```cpp
 // LNK2019_FIP.h
@@ -67,7 +67,7 @@ struct testclass {
 };
 ```
 
-Ardından,
+ardından,
 
 ```cpp
 // LNK2019_FIP.cpp
@@ -76,7 +76,7 @@ Ardından,
 inline void testclass::PublicStatMemFunc1(void) {}
 ```
 
-Ardından,
+ardından,
 
 ```cpp
 // LNK2019_FIP_2.cpp

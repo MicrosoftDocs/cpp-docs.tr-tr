@@ -2,12 +2,12 @@
 title: Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: 2b310760b1a6623a18a00e36e3bd5378d2ebb76e
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: ef088f4881dfbd9967f90a009e4a8e397a70b134
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627246"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214987"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 
@@ -182,7 +182,7 @@ Ayrıca, işaretçi boyutu, zaman ve boyut değerleriyle ilgili olası derleme z
 
 Unicode, standartlaştırılmış olmadan önce, ASCII karakter kümesinde bulunmayan karakterleri temsil etmek için çok baytlı karakter kümesi (MBCS) kullandı. Daha eski MFC projelerinde, MBCS varsayılan ayardır ve böyle bir programı yükselttiğinizde, bunun yerine Unicode kullanmaya yönelik uyarılar görürsünüz. Unicode 'a dönüştürmeye karar verirseniz geliştirme maliyetine değer vermez, uyarıyı devre dışı bırakmayı veya yoksayabilirsiniz. Çözümünüzdeki tüm projeler için bunu devre dışı bırakmak için, **görünüm** > **Özellik Yöneticisi**açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** ' **C++ ni > ** **Gelişmiş** > ' i seçin. **Belirli uyarıları devre dışı bırak** özelliğinde, açılan oku açın ve ardından **Düzenle**' yi seçin. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Özelliği kaydetmek için **Tamam** ' ı seçin ve ardından değişikliklerinizi kaydetmek için **Tamam** ' ı seçin.
 
-Daha fazla bilgi için bkz. [MBCS 'Den Unicode 'A taşıma](porting-guide-spy-increment.md#porting_to_unicode). MBCS ile Unicode hakkında genel bilgi için bkz. [](../c-runtime-library/internationalization.md) görsel [ C++ ve uluslararası hale getirme içindeki metin ve dizeler](../text/text-and-strings-in-visual-cpp.md) .
+Daha fazla bilgi için bkz. [MBCS 'Den Unicode 'A taşıma](porting-guide-spy-increment.md#porting_to_unicode). MBCS ile Unicode hakkında genel bilgi için bkz. [Internationalization](../c-runtime-library/internationalization.md) görsel [ C++ ve uluslararası hale getirme içindeki metin ve dizeler](../text/text-and-strings-in-visual-cpp.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

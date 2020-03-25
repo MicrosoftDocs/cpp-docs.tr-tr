@@ -12,16 +12,16 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: 6ba56143beb3411734899839a46ab42992dfa4d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0590bc015c5487315b8cbd38f0baf91eb3082cc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62231001"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211879"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
 
-Veritabanı şeması (veritabanı yapılarını) hiçbir bilgiye sahip olduğunda bir veri kaynağına erişim sağlar.
+Veritabanı şeması (veritabanının temel yapısı) hakkında bilginiz olmadığında bir veri kaynağına erişmenizi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +32,7 @@ class CDynamicStringAccessorT : public CDynamicAccessor
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: atldbcli.h
+**Üstbilgi**: atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -40,24 +40,24 @@ class CDynamicStringAccessorT : public CDynamicAccessor
 
 |||
 |-|-|
-|[GetString](#getstring)|Belirtilen sütun verileri dize olarak alır.|
-|[SetString](#setstring)|Belirtilen sütun verileri dize olarak ayarlar.|
+|[GetString](#getstring)|Belirtilen sütun verilerini bir dize olarak alır.|
+|[SetString](#setstring)|Belirtilen sütun verisini bir dize olarak ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sırada [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sağlayıcı tarafından bildirilen yerel biçiminde veri istekleri `CDynamicStringAccessor` sağlayıcı dize verileri veri deposundan erişilen tüm verileri getirme ister. Bu, özellikle görüntüleme veya veri deposunun içeriği yazdırma gibi veri deposundaki değerleri hesaplama gerektirmeyen basit görevler için kullanışlıdır.
+[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) , sağlayıcı tarafından bildirilen yerel biçimdeki verileri istediğinde, sağlayıcının veri deposundan erişilen tüm verileri dize verileri olarak getirip `CDynamicStringAccessor`. Bu, veri deposunun içeriğini görüntüleme veya yazdırma gibi veri deposundaki değerlerin hesaplanmasını gerektirmeyen basit görevler için özellikle yararlıdır.
 
-Yerel veri deposundaki sütunun veri türünü önemli değildir; Sağlayıcı veri dönüştürme destekleyebilir sürece, bu verileri dize biçiminde kullanacaksınız. Sağlayıcı (ortak değil) bir dizeyi yerel veri türünden dönüştürme desteklemiyorsa, istekte bulunan çağrı DB_S_ERRORSOCCURED başarı değeri döndürür ve dönüştürme sorun karşılık gelen sütununu durumunu gösterir DBSTATUS_E_CANTCONVERTVALUE.
+Veri deposundaki sütun verilerinin yerel türü önemi değildir; sağlayıcı veri dönüştürmeyi destekledikleri sürece, verileri dize biçiminde sağlar. Sağlayıcı yerel veri türünden bir dizeye (yaygın olmayan) dönüştürme işlemi desteklemiyorsa, istenen çağrı başarı değeri DB_S_ERRORSOCCURED döndürür ve karşılık gelen sütunun durumu, şu ile bir dönüştürme sorunu olduğunu gösterir DBSTATUS_E_CANTCONVERTVALUE.
 
-Kullanım `CDynamicStringAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.
+Sütun bilgilerini almak için `CDynamicStringAccessor` yöntemler kullanın. Bu sütun bilgilerini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız.
 
-Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Veri arabelleği kullanımından elde [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md), veya arabelleği kullanarak mağaza [SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).
+Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md)kullanarak arabellekteki verileri alın veya [SetString](../../data/oledb/cdynamicstringaccessor-setstring.md)kullanarak arabelleğe saklayın.
 
-Bir tartışma ve dinamik erişimciyi sınıfları kullanma örnekleri için bkz: [Dinamik Erişimcileri Kullanma](../../data/oledb/using-dynamic-accessors.md).
+Bir tartışma ve dinamik erişimci sınıflarını kullanma örnekleri için bkz. [dinamik erişimcileri kullanma](../../data/oledb/using-dynamic-accessors.md).
 
-## <a name="getstring"></a> CDynamicStringAccessor::GetString
+## <a name="cdynamicstringaccessorgetstring"></a><a name="getstring"></a>CDynamicStringAccessor:: GetString
 
-Belirtilen sütun verileri dize olarak alır.
+Belirtilen sütun verilerini bir dize olarak alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -71,23 +71,23 @@ BaseType* GetString(const WCHAR* pColumnName) const throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*nColumn*<br/>
-[in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.
+*Nsütun*<br/>
+'ndaki Sütun numarası. Sütun numaraları 1 ile başlar. 0 değeri, varsa yer işareti sütununa başvurur.
 
 *pColumnName*<br/>
-[in] Sütun adı içeren bir karakter dizesine bir işaretçi.
+'ndaki Sütun adını içeren bir karakter dizesinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize işaretçisine belirtilen sütunundan alınır. Değer türünde `BaseType`, olacak **CHAR** veya **WCHAR** _UNICODE veya tanımlı olup olmadığı bağlı olarak. Belirtilen sütun bulunamazsa NULL değer döndürür.
+Belirtilen sütundan alınan dize değerine yönelik bir işaretçi. Değer, _UNICODE tanımlanıp tanımlanmayacağı ile ilgili olarak **char** veya **wchar** olacak `BaseType`türündedir. Belirtilen sütun bulunmazsa NULL değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci sütun adı formu alır bir ANSI dizesine geçersiz. Üçüncü bir Unicode dize olarak sütun adı formu alır geçersiz.
+İkinci geçersiz kılma formu, sütun adını bir ANSI dizesi olarak alır. Üçüncü geçersiz kılma formu sütun adını bir Unicode dizesi olarak alır.
 
-## <a name="setstring"></a> CDynamicStringAccessor::SetString
+## <a name="cdynamicstringaccessorsetstring"></a><a name="setstring"></a>CDynamicStringAccessor:: SetString
 
-Belirtilen sütun verileri dize olarak ayarlar.
+Belirtilen sütun verisini bir dize olarak ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -104,28 +104,28 @@ HRESULT SetString(const WCHAR* pColumnName,
 
 #### <a name="parameters"></a>Parametreler
 
-*nColumn*<br/>
-[in] Sütun numarası. Sütun numaraları 1 ile başlayın. Özel değeri 0 için yer işareti sütunu, varsa ifade eder.
+*Nsütun*<br/>
+'ndaki Sütun numarası. Sütun numaraları 1 ile başlar. Özel 0 değeri, varsa yer işareti sütununa başvurur.
 
 *pColumnName*<br/>
-[in] Sütun adı içeren bir karakter dizesine bir işaretçi.
+'ndaki Sütun adını içeren bir karakter dizesinin işaretçisi.
 
-*Veri*<br/>
-[in] Belirtilen sütuna yazılacak dize verileri için bir işaretçi.
+*verileri*<br/>
+'ndaki Belirtilen sütuna yazılacak dize verilerine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen sütun kümesi dize değeri için bir işaretçi. Değer türünde `BaseType`, olacak **CHAR** veya **WCHAR** _UNICODE veya tanımlı olup olmadığı bağlı olarak.
+Belirtilen sütunun ayarlanacağı dize değerine yönelik bir işaretçi. Değer, _UNICODE tanımlanıp tanımlanmayacağı ile ilgili olarak **char** veya **wchar** olacak `BaseType`türündedir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci form alır sütun adı olarak bir ANSI dizesine geçersiz kılma ve üçüncü bir Unicode dize olarak sütun adı formu alır geçersiz kılın.
+İkinci geçersiz kılma formu, sütun adını bir ANSI dizesi olarak alır ve üçüncü geçersiz kılma formu sütun adını bir Unicode dizesi olarak alır.
 
-Sıfır olmayan bir değer olmasını _SECURE_ATL tanımlanırsa, bir çalışma zamanı onaylama işlemi hatası oluşturulur giriş *veri* dizedir başvurulan veri sütununun maksimum izin verilen uzunluktan daha uzun. Aksi takdirde, giriş dizesi, izin verilen uzunluk üst sınırından daha uzun olması durumunda kesilecek.
+_SECURE_ATL sıfır dışında bir değere sahip olacak şekilde tanımlanmışsa, giriş *veri* dizesi başvurulan veri sütununun izin verilen uzunluk üst sınırından daha uzunsa bir çalışma zamanı onaylama hatası oluşturulur. Aksi takdirde, giriş dizesi izin verilen en fazla uzunluktan daha uzunsa kesilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>
 [CDynamicParameterAccessor Sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>

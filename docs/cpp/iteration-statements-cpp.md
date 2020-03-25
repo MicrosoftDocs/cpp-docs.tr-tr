@@ -5,29 +5,29 @@ helpviewer_keywords:
 - iteration statements
 - loop structures, iteration statements
 ms.assetid: bf6d75f7-ead2-426a-9c47-33847f59b8c7
-ms.openlocfilehash: 72f81e2fc58a31db0c4cd3f77ba182bd8b8152a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e8f064fd19e69de2819673f48a7f14e26d60b87e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366582"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178269"
 ---
 # <a name="iteration-statements-c"></a>Yineleme Deyimleri (C++)
 
-Yineleme deyimleri neden: Bazı döngü sonlandırma ölçütünü tabi sıfır veya daha fazla kez yürütülecek deyimler (veya bileşik deyimlerin). Bu deyimler bileşik deyimler olduğunda bunlar, aşağıdakiler haricinde sırayla yürütülür ya da [sonu](../cpp/break-statement-cpp.md) deyimi veya [devam](../cpp/continue-statement-cpp.md) deyimi karşılaştı.
+Yineleme deyimleri, bazı döngü sonlandırma ölçütlerine tabi olarak deyimlerin (veya bileşik deyimlerin) sıfır veya daha fazla kez yürütülmesine neden olur. Bu deyimler bileşik deyimler olduğunda, [Break](../cpp/break-statement-cpp.md) deyimi veya [Continue](../cpp/continue-statement-cpp.md) deyimi ile karşılaşılması dışında, bunlar sırayla yürütülür.
 
-C++, dört yineleme deyimleri sağlar — [sırada](../cpp/while-statement-cpp.md), [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), ve [aralık tabanlı for](../cpp/range-based-for-statement-cpp.md). Bunların her biri sıfır (false), sonlandırma ifade sonucunu verene kadar veya döngü sonlandırma ile zorlamalı kadar yinelenir bir **sonu** deyimi. Aşağıdaki tabloda, bu deyimler ve eylemlerinin özetlenmiştir; her ayrıntılı olarak bölümlerde ele alınmıştır.
+C++dört yineleme deyimi sağlar — [while](../cpp/while-statement-cpp.md), [Do](../cpp/do-while-statement-cpp.md), [,](../cpp/for-statement-cpp.md)ve [Aralık tabanlı](../cpp/range-based-for-statement-cpp.md). Bunların her biri sonlandırma ifadesi sıfıra (false) hesaplanana kadar veya döngü sonlandırmasına kadar bir **Break** deyimi zorlanana kadar yinelenir. Aşağıdaki tabloda bu deyimler ve eylemleri özetlenmektedir; her biri, izleyen bölümlerde ayrıntılı olarak ele alınmıştır.
 
 ### <a name="iteration-statements"></a>Yineleme Deyimleri
 
-|Deyim|Sırasında değerlendirilen|Başlatma|Artırma|
+|Deyim|Değerlendirilen:|Başlatma|Ilamadı|
 |---------------|------------------|--------------------|---------------|
-|**while**|Döngü en üstüne|Hayır|Hayır|
-|**do**|Alt döngüsü|Hayır|Hayır|
-|**for**|Döngü en üstüne|Evet|Evet|
-|**Aralık tabanlı for**|Döngü en üstüne|Evet|Evet|
+|**while**|Döngünün başı|Hayır|Hayır|
+|**do**|Döngünün altı|Hayır|Hayır|
+|**for**|Döngünün başı|Yes|Yes|
+|**Aralık tabanlı**|Döngünün başı|Yes|Yes|
 
-Bir bildirim deyimi bir yineleme deyiminin bir parçası olamaz. Ancak, bir bildirimi içeren bir bileşik deyim olabilir.
+Yineleme ifadesinin ifade bölümü bir bildirim olamaz. Ancak, bildirim içeren bir bileşik ifade olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

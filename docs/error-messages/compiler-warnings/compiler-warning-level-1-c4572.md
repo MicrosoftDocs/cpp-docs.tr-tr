@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4572
 ms.assetid: 482dee5a-29bd-4fc3-b769-9dfd4cd2a964
-ms.openlocfilehash: 52285f391af0a8028307cbbc320af33f9cb1fca5
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 4a1931032f6d1f8db0679dd782ff2f0ce7ff428c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965953"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80162211"
 ---
 # <a name="compiler-warning-level-1-c4572"></a>Derleyici Uyarısı (düzey 1) C4572
 

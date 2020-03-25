@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - C4049
 ms.assetid: d11c1870-bcfc-4d71-8945-b87ec6ec3514
-ms.openlocfilehash: a4958bb446b5f7e80ef2eef92b52a0f86cf6a134
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 214ccae5d9835bc4a3b66bbbe1cd5ded4bc651cb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388769"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164150"
 ---
 # <a name="compiler-warning-level-1-c4049"></a>Derleyici Uyarısı (düzey 1) C4049
 
-Derleyici sınırı: satır numarası verme sonlandırılıyor
+Derleyici sınırı: satır numarası egörevi sonlandırılıyor
 
-16.777.215'den fazla dosyayı içeren (2<sup>24</sup>-1) kaynak satırlar. Derleyici 16.777.215 numaralandırma durdurur.
+Dosya 16.777.215 'den fazla (2<sup>24</sup>-1) kaynak satırı içeriyor. Derleyici 16.777.215 ' de numaralandırmayı durduruyor.
 
-İçin bir kod satırı 16.777.215 sonra:
+16.777.215 satırından sonra kod için:
 
-- Görüntü satır numaraları için hiçbir hata ayıklama bilgileri içerir.
+- Resim, satır numaraları için hata ayıklama bilgisi içermez.
 
-- Bazı tanılama yanlış satır numaraları ile bildirilebilir.
+- Bazı tanılamalar, yanlış satır numaralarıyla bildirilebilir.
 
-- .asm listelerini (/ FAs) yanlış satır numaraları olabilir.
+- . asm listeleri (/FAs) yanlış satır numaralarına sahip olabilir.

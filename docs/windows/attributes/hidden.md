@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - hidden attribute
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-ms.openlocfilehash: 75b03877b1204d6e1c4770f5ba9c8c88338b3394
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6b420e8f50bd217de460a81f5faaf9583c701376
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501457"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168102"
 ---
 # <a name="hidden"></a>gizli
 
@@ -29,7 +29,7 @@ ms.locfileid: "69501457"
 
 ## <a name="example"></a>Örnek
 
-**Gizli**dizi kullanımıyla ilgili [](bindable.md) bir örnek için bkz.
+**Gizli**dizi [kullanımıyla ilgili bir örnek için bkz](bindable.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -40,7 +40,7 @@ ms.locfileid: "69501457"
 |**Uygulama hedefi**|**arabirim**, **sınıf**, **Yapı**, yöntem, Özellik|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass** ( **sınıfa** veya **yapıya**uygulandığında)|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

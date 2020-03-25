@@ -5,12 +5,12 @@ ms.date: 07/02/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
-ms.openlocfilehash: 0a4093860c7d06e8240e03b1487546f80da24b88
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 1e567f2264fe40e6b386bf8d1758ed866d8f3f38
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416097"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215078"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -65,7 +65,7 @@ C++ hakkında bilgi edinin, Modern C++ hakkında genel bilgileri alın ve kitapl
 [Görseli öğreninC++](../build/vscpp-step-1-create.md)<br/>
 C++ öğrenmeye başlayın.
 
-[Visual C++ Örnekleri](visual-cpp-samples.md)<br/>
+[Visual Studio C++ örnekleri](visual-cpp-samples.md)<br/>
 Örnekler hakkında bilgi.
 
 ## <a name="c-development-tools"></a>C++geliştirme araçları

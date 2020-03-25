@@ -1,21 +1,21 @@
 ---
-title: Genel temsilciler (C++/CLI)
+title: Genel Temsilciler (C++/CLI)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-ms.openlocfilehash: 449659126f52997d548ebd7785a78c1200038ee6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c579d0c0ab39a2ddcadfd116bdfed8ba9da2863
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254929"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182038"
 ---
-# <a name="generic-delegates-ccli"></a>Genel temsilciler (C++/CLI)
+# <a name="generic-delegates-ccli"></a>Genel Temsilciler (C++/CLI)
 
-Genel tür parametreleri ile temsilciler kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [temsilci (C++/CLI ve C++/CX)](delegate-cpp-component-extensions.md).
+Temsilcilerle genel tür parametreleri kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [DelegateC++(/CLI C++ve/CX)](delegate-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,30 +29,30 @@ generic < [class | typename] type-parameter-identifiers>
 
 ### <a name="parameters"></a>Parametreler
 
-*Öznitelikleri*<br/>
-(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
+*özelliklerine*<br/>
+Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. öznitelikler.
 
-*tür-parametresi-tanımlayıcıları*<br/>
-Virgülle ayrılmış tanımlayıcılar tür parametrelerinin listesi.
+*tür-parametre tanımlayıcıları*<br/>
+Tür parametrelerine yönelik tanımlayıcıların virgülle ayrılmış listesi.
 
-*tür parametresi kısıtlamaları tümceleri*<br/>
-Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
+*tür-parametre-kısıtlamalar-yan tümceler*<br/>
+[Genel tür parametrelerindeki (C++/CLI) kısıtlamalarda](constraints-on-generic-type-parameters-cpp-cli.md) belirtilen formu alır
 
-*erişilebilirlik değiştiricileri*<br/>
-(İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel**, **özel**).
+*Erişilebilirlik-değiştiriciler*<br/>
+Seçim Erişilebilirlik değiştiricileri (örn. **genel**, **özel**).
 
 *Sonuç türü*<br/>
 Temsilcinin dönüş türü.
 
-*tanımlayıcı*<br/>
-Metot temsilcisinin adı.
+*Tanımlayıcısını*<br/>
+Temsilcinin adı.
 
-*Resmi-Parametreler*<br/>
-(İsteğe bağlı) Metot temsilcisinin parametre listesi.
+*biçimsel-parametreler*<br/>
+Seçim Temsilcinin parametre listesi.
 
 ## <a name="example"></a>Örnek
 
-Bir temsilci nesnesinin oluşturulduğu noktada temsilci tür parametreleri belirtilmiş. Temsilci ve onunla ilişkili yöntemi aynı imzaya sahip olmalıdır. Genel temsilci bildirimi bir örnek verilmiştir.
+Temsilci türü parametreleri, temsilci nesnesinin oluşturulduğu noktada belirtilir. Hem temsilci hem de ile ilişkili Yöntem aynı imzaya sahip olmalıdır. Aşağıda genel temsilci bildirimine bir örnek verilmiştir.
 
 ```cpp
 // generics_generic_delegate1.cpp
@@ -63,13 +63,13 @@ delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, gösterir.
+Aşağıdaki örnek şunu gösterir
 
-- Aynı temsilci nesne farklı oluşturulan türler ile kullanamazsınız. Nesneler farklı türleri için farklı bir temsilci oluşturun.
+- Aynı temsilci nesnesini farklı oluşturulmuş türlerle kullanamazsınız. Farklı türler için farklı temsilci nesneleri oluşturun.
 
-- Temsilci ile genel yöntem ilişkilendirilebilir.
+- Genel bir temsilci, genel bir yöntemle ilişkilendirilebilir.
 
-- Tür bağımsız değişkenleri belirtmeden bir genel yöntem çağrıldığında, derleyici, tür bağımsız değişkenlerini çağrısı için tanım Çıkarsama dener.
+- Genel bir yöntem tür bağımsız değişkenleri belirtilmeden çağrıldığında, derleyici, çağrının tür bağımsız değişkenlerini çıkarmaya çalışır.
 
 ```cpp
 // generics_generic_delegate2.cpp
@@ -107,7 +107,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, Genel temsilci bildirir `GenDelegate<ItemType>`ve yönteme ilişkilendirerek başlatır `MyMethod` tür parametresi kullanan `ItemType`. Metot temsilcisinin (bir tamsayı ve bir çift) iki örneği oluşturulur ve çağrılır.
+Aşağıdaki örnek, `GenDelegate<ItemType>`bir genel temsilci bildirir ve ardından onu `ItemType`tür parametresini kullanan `MyMethod` yöntemiyle ilişkilendirerek onu başlatır. Temsilcinin iki örneği (tamsayı ve çift) oluşturulup çağrılır.
 
 ```cpp
 // generics_generic_delegate.cpp

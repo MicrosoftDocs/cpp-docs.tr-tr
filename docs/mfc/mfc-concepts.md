@@ -3,12 +3,12 @@ title: MFC Kavramları
 ms.date: 01/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: 5617051dc700bb1dd594a13627c9e3d01ef9caa9
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 3273538e4fdffbf68fbe01c7f912584380505d1b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927913"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178528"
 ---
 # <a name="mfc-concepts"></a>MFC Kavramları
 
@@ -20,7 +20,7 @@ Bu bölümde, Microsoft Foundation Class (MFC) kitaplığı 'nı kullanarak prog
 MFC kitaplığının teknik ayrıntılarını açıklar.
 
 [CObject Kullanma](../mfc/using-cobject.md)<br/>
-MFC 'deki çoğu sınıf `CObject`için temel sınıf olan öğesini kullanarak bağlantı sağlar.
+MFC 'deki çoğu sınıf için temel sınıf olan `CObject`kullanarak bağlantı sağlar.
 
 [Koleksiyonlar](../mfc/collections.md)<br/>
 Uygulamasından oluşturulan ve C++ şablonlardan oluşturulmamış koleksiyon sınıflarını açıklar.
@@ -29,7 +29,7 @@ Uygulamasından oluşturulan ve C++ şablonlardan oluşturulmamış koleksiyon s
 MFC ile tarih ve saat kullanarak tartışan konuların bağlantılarını sağlar.
 
 [Dosyalar](../mfc/files-in-mfc.md)<br/>
-Ve `CFile` MFC 'de dosyaların nasıl işleneceğini açıklar.
+`CFile` ve MFC 'de dosyaların nasıl işleneceğini açıklar.
 
 [Bellek yönetimi (MFC)](../mfc/memory-management.md)<br/>
 Bellek yönetimiyle ilgili genel amaçlı hizmetlerden nasıl yararlanılacağını açıklar.
@@ -66,5 +66,5 @@ Windows Sockets MFC uygulamasını ele alır.
 [MFC başvurusu](../mfc/mfc-desktop-applications.md)<br/>
 Windows API 'si için yazılmış bir uygulamanın çerçevesi olan bir uygulama çerçevesini oluşturan bir sınıf kümesi olan MFC kitaplığı için başvuru malzemeleri sağlar.
 
-[MFC örnekleri](../overview/visual-cpp-samples.md)<br/>
+[MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples)<br/>
 MFC 'nin masaüstü uygulamalarında, dll 'Lerde, veritabanı uygulamalarında, denetimlerde, Web uygulamalarında ve daha birçok konuda nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.

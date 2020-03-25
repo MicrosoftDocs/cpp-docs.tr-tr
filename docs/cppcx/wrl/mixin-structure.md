@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-ms.openlocfilehash: 16fd6b46d616df7163a304afa7f32ac3c095d398
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b302d6e08e401a24b465508d5ddabcae8b16bd8f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325364"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213701"
 ---
 # <a name="mixin-structure"></a>MixIn Yapısı
 
-Bir çalışma zamanı sınıf varsa Windows çalışma zamanı arabirimleri ve ardından klasik COM arabirimleri türetilen sağlar.
+Çalışma zamanı sınıfının, varsa ve klasik COM arabirimlerinden Windows Çalışma Zamanı arabirimlerinden türemesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,18 +31,18 @@ struct MixIn;
 
 ### <a name="parameters"></a>Parametreler
 
-*Türetilmiş*<br/>
-Türetilmiş bir tür [uygular](implements-structure.md) yapısı.
+*Miþ*<br/>
+[Uygulayan](implements-structure.md) yapıdan türetilmiş bir tür.
 
 *MixInType*<br/>
-Bir taban türü.
+Temel tür.
 
 *hasImplements*<br/>
-**doğru** varsa *MixInType* olan geçerli uygulamasından türetilmiş temel tür; **false** Aksi takdirde.
+*Mixintype* , geçerli uygulamadan türetildiyse **true** , temel türü; Aksi takdirde **false** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Windows çalışma zamanı hem sınıf COM arabirimleri türetilmiş bir sınıf, sınıf bildirimi listesi Windows çalışma zamanı arabirimlerden önce listelemesi gerekir ve ardından tüm klasik COM arabirimleri. **MixIn** arabirimler doğru sırada belirtilir sağlar.
+Bir sınıf hem Windows Çalışma Zamanı hem de sınıf COM arabirimlerinden türetildiyse, sınıf bildirim listesi öncelikle tüm Windows Çalışma Zamanı arabirimlerini ve ardından klasik tüm COM arabirimlerini listemelidir. **Mixin** , arabirimlerin doğru sırada belirtilmesini sağlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,9 +50,9 @@ Windows çalışma zamanı hem sınıf COM arabirimleri türetilmiş bir sınıf
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -5,16 +5,16 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::GetModuleBase
 ms.assetid: 123d3b14-2eaf-4e02-8dcd-b6567917c6a6
-ms.openlocfilehash: 4d8c8467b7aeb9c21bf5f4ee19c60e6e60880688
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d130fffa9fad9ae327d03eaa01d84742094cc67
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398400"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213973"
 ---
 # <a name="getmodulebase-function"></a>GetModuleBase işlevi
 
-Alır bir [ModuleBase](modulebase-class.md) işaretçi başvuru sayısını artırma ve azaltma için sağlayan bir [RuntimeClass](runtimeclass-class.md) nesne.
+Bir [RuntimeClass](runtimeclass-class.md) nesnesinin başvuru sayısını artırma ve azaltma için izin veren bir [ModuleBase](modulebase-class.md) işaretçisi alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -24,19 +24,19 @@ inline Details::ModuleBase* GetModuleBase() throw()
 
 ## <a name="return-value"></a>Dönüş değeri
 
-Bir işaretçi bir `ModuleBase` nesne.
+`ModuleBase` nesnesine yönelik bir işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev artırmak ve azaltma için dahili olarak kullanılır Nesne başvurusu sayar.
+Bu işlev, nesne başvuru sayılarını artırmak ve azaltmak için dahili olarak kullanılır.
 
-Bu işlev çağırarak başvuru sayısı denetlemek için kullanabileceğiniz [Modulebase::ıncrementobjectcount](modulebase-class.md#incrementobjectcount) ve [ModuleBase::DecrementObjectCount](modulebase-class.md#decrementobjectcount).
+Bu işlevi, [ModuleBase:: IncrementObjectCount](modulebase-class.md#incrementobjectcount) ve [modulebase::D ecrementObjectCount](modulebase-class.md#decrementobjectcount)' u çağırarak başvuru sayılarını denetlemek için kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

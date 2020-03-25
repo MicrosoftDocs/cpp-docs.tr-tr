@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: 16dbbc4a3b2e8927643d3612bec034f9f5da8d9c
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: f0d0287c9914bbefc2c5659e5f5d4386ab566c1a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077521"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215143"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 

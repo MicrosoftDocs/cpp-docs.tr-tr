@@ -7,12 +7,12 @@ helpviewer_keywords:
 - novtable __declspec keyword
 - __declspec keyword [C++], novtable
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-ms.openlocfilehash: a147af8f536923082df3a2d6d332150a57d6af1b
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: d101e73f2f8d476c50b1b80b8daa7994151d43af
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857391"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177839"
 ---
 # <a name="novtable"></a>novtable
 

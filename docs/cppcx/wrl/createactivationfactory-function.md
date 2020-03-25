@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CreateActivationFactory function
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
-ms.openlocfilehash: ca3469128cf3d412138d5d39a1587cbc20150699
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ab03b15a968c6aba3fa6df8c975fb98e873f8e23
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398634"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214077"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory İşlevi
 
-Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.
+Windows Çalışma Zamanı tarafından etkinleştirilenebilir belirtilen sınıfın örneklerini üreten bir fabrika oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,31 +30,31 @@ template<typename Factory>
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*<br/>
-Bir veya daha fazla birleşimi [RuntimeClassType](runtimeclasstype-enumeration.md) sabit listesi değerleri.
+*larına*<br/>
+Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değerinin birleşimi.
 
 *entry*<br/>
-İşaretçi bir [CreatorMap](creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren *riid*.
+Başlatma *ve parametreli parametre*hakkında bilgi Içeren bir [CreatorMap](creatormap-structure.md) işaretçisi.
 
-*riid*<br/>
-Başvuru için bir arabirim kimliği.
+*riıd*<br/>
+Arabirim KIMLIĞINE başvuru.
 
 *ppFactory*<br/>
-Bu işlem bir etkinleştirme fabrikası için bir işaretçi başarıyla tamamlanırsa.
+Bu işlem başarıyla tamamlanırsa, bir etkinleştirme fabrikası işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Assert hata durumunda yayıldığını şablon parametresi *Fabrika* arabiriminden türetilen değil `IActivationFactory`.
+Şablon parametre *fabrikası* `IActivationFactory`arabiriminden türetilmezse bir onaylama hatası yayınlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** Module. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

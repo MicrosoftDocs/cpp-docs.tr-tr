@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - __interface keyword [C++]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-ms.openlocfilehash: 7c95e3700b4124c4793e0214ed3b06ecfeee72f1
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 9b265dcbaca9f8fa836795cca990804371813647
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222084"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178217"
 ---
-# <a name="interface"></a>__interface
+# <a name="__interface"></a>__interface
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
 Bir Microsoft C++ arabirimi aşağıdaki gibi tanımlanabilir:
 
-- Sıfır veya daha fazla temel Ara birimden devralınabilir.
+- , Sıfır veya daha fazla taban arabiriminden devralınabilir.
 
-- Bir temel sınıfından devralamaz.
+- Temel sınıftan devralma yapılamaz.
 
-- Yalnızca genel, saf sanal yöntemler içerebilir.
+- Yalnızca genel, saf sanal yöntemlere sahip olabilir.
 
 - Oluşturucular, Yıkıcılar veya işleçler içeremez.
 
@@ -39,9 +39,9 @@ modifier __interface interface-name {interface-definition};
 
 ## <a name="remarks"></a>Açıklamalar
 
-A C++ [sınıfı](../cpp/class-cpp.md) veya [yapı](../cpp/struct-cpp.md) bu kurallar ile uygulanabilir ancak **__interface** bunları zorlar.
+Bu C++ kurallarla bir [sınıf](../cpp/class-cpp.md) veya [Yapı](../cpp/struct-cpp.md) uygulanabilir, ancak **__interface** uygular.
 
-Örneğin, aşağıdaki örnek bir arabirim tanımı şöyledir:
+Örneğin, aşağıdaki örnek bir arabirim tanımıdır:
 
 ```cpp
 __interface IMyInterface {
@@ -50,19 +50,19 @@ __interface IMyInterface {
 };
 ```
 
-Yönetilen arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](../extensions/interface-class-cpp-component-extensions.md).
+Yönetilen arabirimler hakkında daha fazla bilgi için bkz. [interface class](../extensions/interface-class-cpp-component-extensions.md).
 
-Açıkça belirtmek gerekmez bildirimi `CommitX` ve `get_X` işlevleri saf sanal. İlk işlev için eşdeğer bir bildirim olacaktır:
+`CommitX` ve `get_X` işlevlerinin saf sanal olduğunu açıkça belirtmeniz gerekmediğine dikkat edin. İlk işlev için eşdeğer bir bildirim şöyle olacaktır:
 
 ```cpp
 virtual HRESULT CommitX() = 0;
 ```
 
-**__interface** gelir [novtable](../cpp/novtable.md) **__declspec** değiştiricisi.
+**__interface** [novtable](../cpp/novtable.md) **__declspec** değiştiricisini gerektirir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir arabirimde bildirilen özelliklerinin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, bir arabirimde tanımlanan özelliklerin nasıl kullanılacağını gösterir.
 
 ```cpp
 // deriv_interface.cpp
@@ -142,7 +142,7 @@ p->int_data = 100
 bstr_data = Testing
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

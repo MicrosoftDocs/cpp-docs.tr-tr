@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-ms.openlocfilehash: e1067b74191dcde98dd9c85a246db2acd26eff9c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0bf6b2ab353b8ad8866de5b2c7c79959306ee954
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514855"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215234"
 ---
 # <a name="wire_marshal"></a>wire_marshal
 
@@ -25,11 +25,11 @@ Uygulamaya özgü veri türü yerine iletim için kullanılacak bir veri türü 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wire_marshal** C++ özniteliği, [wire_marshal](/windows/win32/Midl/wire-marshal) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Wire_marshal** C++ özniteliği [wire_marshal](/windows/win32/Midl/wire-marshal) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **wire_marshal**kullanımını gösterir:
+Aşağıdaki kod **wire_marshal**kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_wire_marshal.cpp
@@ -55,8 +55,8 @@ Aşağıdaki kod, **wire_marshal**kullanımını gösterir:
 |-|-|
 |**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

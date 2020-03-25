@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2557
+title: Derleyici hatası C2557
 ms.date: 11/04/2016
 f1_keywords:
 - C2557
 helpviewer_keywords:
 - C2557
 ms.assetid: 48a33d82-aa16-4658-b346-2311fcb39864
-ms.openlocfilehash: 851ee704fbac85db9173d4fa3d13aa5c53e902e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e1103c6ec2db311bbbf8dbaf918ca966a102e5c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353039"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177553"
 ---
-# <a name="compiler-error-c2557"></a>Derleyici Hatası C2557
+# <a name="compiler-error-c2557"></a>Derleyici hatası C2557
 
-'identifier': özel ve korumalı üyeler bir oluşturucu olmadan başlatılamaz
+' tanımlayıcı ': özel ve korunan Üyeler bir Oluşturucu olmadan başlatılamaz
 
-Yalnızca üyeleri ve arkadaşları özel veya korumalı üye için bir değer atayabilirsiniz. Ortak olmayan üyeler sınıf oluşturucuda başlatılmalıdır.
+Yalnızca Üyeler ve arkadaşlar, özel veya korumalı bir üyeye değer atayabilir. Ortak üyeler sınıf oluşturucusunda başlatılmalıdır.

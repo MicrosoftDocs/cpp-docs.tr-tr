@@ -10,12 +10,12 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 67b03256390d5447ae5accc28dd450a7f60f485c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418456"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180192"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 
@@ -143,7 +143,7 @@ namespace ScopedEnumConversions
 
 Satır `hand = account_num;`, daha önce gösterildiği gibi kapsamlı numaralandırmalar ile oluşan hataya hala neden olduğuna dikkat edin. Açık bir tür dönüştürme ile buna izin verilir. Ancak, kapsamlı numaralandırmalar ile, `account_num = Suit::Hearts;`sonraki deyimdeki dönüştürmeye izin verilmez.
 
-## <a name="no_enumerators"></a>Numaralandırıcılar olmayan numaralandırmalar
+## <a name="enums-with-no-enumerators"></a><a name="no_enumerators"></a>Numaralandırıcılar olmayan numaralandırmalar
 
 **Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): açık bir temel alınan türe ve numaralandırıcılara sahip bir sabit listesi (normal veya kapsamlı) tanımlayarak, başka bir türe örtük dönüştürme olmayan yeni bir integral türü ortaya çıkarabilir. Yerleşik temel alınan türü yerine bu türü kullanarak, yanlışlıkla örtük dönüşümlerden kaynaklanan hafif hatalara karşı olası sorunları ortadan kaldırabilirsiniz.
 

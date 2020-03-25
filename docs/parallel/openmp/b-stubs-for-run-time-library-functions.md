@@ -2,19 +2,19 @@
 title: B. Çalışma zamanı kitaplık işlevleri için saplamalar
 ms.date: 01/22/2019
 ms.assetid: fdfdabe0-f678-4551-80d5-827b62354427
-ms.openlocfilehash: 1e8d439eefad005c673cfb6c4ea12399b8236fb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9089bd6ef1f0a8f2f2ed94a7c496943c9bdd5e64
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362991"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215065"
 ---
 # <a name="b-stubs-for-run-time-library-functions"></a>B. Çalışma zamanı kitaplık işlevleri için saplamalar
 
-Bu bölümde, OpenMP C ve C++ API tanımlanmış çalışma zamanı kitaplık işlevleri için saplamalar sağlar. Saptamalar OpenMP C ve C++ API desteklemeyen platformlara taşınabilirlik etkinleştirmek için sağlanır. Bu platformlarda OpenMP programlar bu saplama işlevler içeren bir kitaplık ile bağlanmalıdır. Saplama işlevleri OpenMP program yönergelerinde göz ardı edilir varsayılır. Bu nedenle, seri semantiği taklit.
+Bu bölüm, OpenMP C ve C++ API 'de tanımlanan çalışma zamanı kitaplık işlevleri için saplamalar sağlar. Saplamalar, OpenMP C ve C++ API 'yi desteklemeyen platformlar için taşınabilirliği sağlamak üzere sağlanır. Bu platformlarda, OpenMP programları bu saplama işlevlerini içeren bir kitaplıkla bağlantılı olmalıdır. Saplama işlevleri, OpenMP programındaki yönergelerin yoksayıldığını varsayar. Bu nedenle, seri semantiğini benzetir.
 
 > [!NOTE]
-> Kilit işlevleri görünen kilit değişkeni özel olarak bu işlevleri aracılığıyla erişilmelidir. Bunu başlatılmamış veya aksi takdirde kullanıcı programı değiştirdi. Kullanıcılar, saplama işlevleri tarafından kullanılan şema temel kilitleri uygulamak için OpenMP C ve C++ uygulamaları tarafından kullanılan mekanizmaları hakkında varsayımlar yapmamanız gerekir.
+> Kilit işlevlerinde görüntülenen kilit değişkenine, Bu işlevlerle özel olarak erişilmelidir. Başlatılmamalıdır veya Kullanıcı programında başka bir şekilde değiştirilmemelidir. Kullanıcılar, kalıntı işlevleri tarafından kullanılan düzene göre kilit uygulamak için OpenMP C++ C ve uygulamaları tarafından kullanılan mekanizmalar hakkında varsayımlar gerçekleştirmemelidir.
 
 ## <a name="code"></a>Kod
 

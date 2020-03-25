@@ -31,12 +31,12 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: e2fced2ed0e32af15e75c7290733fdc2b4b34dc9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a52d7443ab335e8546a4bcce03cf68c3b1d60e3d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447459"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212047"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 
@@ -72,7 +72,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 OLE DB tüketicileri, tüketicinin Özellik bilgilerini almak istediği özellik kimliklerinin bir dizisini iletmek için `DBPROPIDSET` yapılarını kullanır. Tek bir [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısında tanımlanan özellikler bir özellik kümesine aittir.
 
-## <a name="addpropertyid"></a>CDBPropIDSet:: Addpropertyıd
+## <a name="cdbpropidsetaddpropertyid"></a><a name="addpropertyid"></a>CDBPropIDSet:: Addpropertyıd
 
 Özellik KIMLIĞI kümesine özellik KIMLIĞI ekler.
 
@@ -87,7 +87,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 *PROPID*<br/>
 'ndaki Özellik KIMLIĞI kümesine eklenecek özellik KIMLIĞI.
 
-## <a name="cdbpropidset"></a>CDBPropIDSet:: CDBPropIDSet
+## <a name="cdbpropidsetcdbpropidset"></a><a name="cdbpropidset"></a>CDBPropIDSet:: CDBPropIDSet
 
 Oluşturucu. [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısının `rgProperties`, `cProperties`ve (isteğe bağlı) `guidPropertySet` alanlarını başlatır.
 
@@ -109,7 +109,7 @@ CDBPropIDSet();
 *propidset*<br/>
 'ndaki Kopya oluşturma için başka bir `CDBPropIDSet` nesnesi.
 
-## <a name="setguid"></a>CDBPropIDSet:: Setguıd
+## <a name="cdbpropidsetsetguid"></a><a name="setguid"></a>CDBPropIDSet:: Setguıd
 
 `DBPROPIDSET` yapısındaki GUID alanını ayarlar.
 
@@ -128,7 +128,7 @@ void SetGUID(const GUID& guid) throw();
 
 Bu alan, [Oluşturucu](../../data/oledb/cdbpropidset-cdbpropidset.md) tarafından da ayarlanabilir. Bu sınıf için varsayılan oluşturucuyu kullanıyorsanız bu işlevi çağırın.
 
-## <a name="op_equal"></a>CDBPropIDSet:: operator =
+## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a>CDBPropIDSet:: operator =
 
 Bir özellik KIMLIĞI kümesinin içeriğini başka bir ID özellik kümesine atar.
 

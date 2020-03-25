@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 19f28963a18abf42c6f629ac0f6491628387aa6d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f51b0210fff4db5be359fa94237f4d7c77b4fef2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491007"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214896"
 ---
 # <a name="custom-c"></a>özel (C++)
 
@@ -46,10 +46,10 @@ Bir varyanta koyabileceğiniz bir değer.
 
 |||
 |-|-|
-|**Uygulama hedefi**|COM dışı **arabirim**, **sınıf**, **enum** `idl_module` s, Yöntemler, arabirim üyeleri, arabirim parametreleri, **typedef**, **birleşim**s, **Yapı**s|
-|**Tekrarlanabilir**|Evet|
+|**Uygulama hedefi**|COM dışı **arabirim**, **sınıf**, **enum**s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametreleri, **typedef**, **birleşim**s, **Yapı**s|
+|**Tekrarlanabilir**|Yes|
 |**Gerekli öznitelikler**|**coclass** (sınıfında kullanıldığında)|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

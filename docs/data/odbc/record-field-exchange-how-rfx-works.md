@@ -1,5 +1,5 @@
 ---
-title: "Kayıt Alanı Değişimi: RFX'in çalışması"
+title: "Kayıt Alanı Değişimi: RFX'in Çalışması"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - record editing [C++], using RFX
@@ -10,120 +10,120 @@ helpviewer_keywords:
 - scrolling [C++], RFX
 - RFX (ODBC) [C++], binding fields and parameters
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
-ms.openlocfilehash: 7da9d480f16dcb6bc5ded0a1dff559b1b1ac4b38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0661e61bceeedc0dd049ef47f5a0a0b71a8d82ed
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395709"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213076"
 ---
-# <a name="record-field-exchange-how-rfx-works"></a>Kayıt Alanı Değişimi: RFX'in çalışması
+# <a name="record-field-exchange-how-rfx-works"></a>Kayıt Alanı Değişimi: RFX'in Çalışması
 
-Bu konuda RFX işlemi açıklanmaktadır. Bu gelişmiş bir, konuyu kapsayan:
+Bu konuda RFX işlemi açıklanmaktadır. Bu, kapsayan gelişmiş bir konudur:
 
-- [RFX ve kayıt](#_core_rfx_and_the_recordset)
+- [RFX ve kayıt kümesi](#_core_rfx_and_the_recordset)
 
 - [RFX işlemi](#_core_the_record_field_exchange_process)
 
 > [!NOTE]
->  Bu konu, türetilen sınıflar için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (Bulk RFX) uygulanır. Toplu RFX RFX için benzerdir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen sınıflar için geçerlidir. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (toplu RFX) uygulanır. Toplu RFX, RFX 'e benzerdir. Farkları anlamak için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="_core_rfx_and_the_recordset"></a> RFX ve kayıt
+##  <a name="rfx-and-the-recordset"></a><a name="_core_rfx_and_the_recordset"></a>RFX ve kayıt kümesi
 
-Kayıt kümesi nesnenin alan veri üyeleri birlikte, bir kaydın Seçili sütunları tutan düzenleme arabelleği oluşturur. Kayıt kümesini ilk açıldığında ve ilk kaydı hakkında okunacak olduğunda RFX bağlar (ilişkilendirir her) sütun uygun alan veri üyesi adresine seçili. Kayıt bir kaydı güncelleştirir, RFX SQL göndermek için ODBC API işlevlerini çağıran **güncelleştirme** veya **Ekle** sürücü deyimi. RFX bildiğini alan veri üyeleri yazmak için sütunları belirlemek için kullanır.
+Kayıt kümesi nesnesinin alan veri üyeleri, birlikte alınan bir kayıt için seçili sütunları tutan bir düzenleme arabelleği oluşturur. Kayıt kümesi ilk açıldığında ve ilk kaydı okumak üzere olduğunda, RFX her seçili sütunu ilgili alan veri üyesinin adresine bağlar (ilişkilendirir). Kayıt kümesi bir kaydı güncelleştirdiğinde, RFX, sürücüye bir SQL **Update** veya **Insert** DEYIMLERI göndermek için ODBC API işlevlerini çağırır. RFX, yazılacak sütunları belirtmek için alan veri üyelerinin bilgisini kullanır.
 
-Bu içeriği gerekirse geri yükleyebilmek framework düzenleme arabelleğini belirli aşamalarda yedekler. RFX düzenleme arabelleğini yeni kayıt ekleme ve varolan bir kaydı düzenleme önce yedekler. Bazı durumlarda, örneğin, Düzen arabellek sonra yükler bir `Update` çağrı aşağıdaki `AddNew`. Düzenleme arabelleği, yeni değiştirilen düzenleme arabellek, örneğin, başka bir kayda çağırmadan önce taşıma iptal durumunda geri yüklenmez `Update`.
+Çerçeve, gerektiğinde içeriğini geri yükleyebilmek için belirli aşamalardaki düzenleme arabelleğini yedekler. RFX, yeni bir kayıt eklemeden önce ve var olan bir kaydı düzenlemeden önce düzenleme arabelleğini yedekler. Bazı durumlarda düzenleme arabelleğini geri yükler, örneğin, `AddNew`aşağıdaki `Update` çağrısından sonra. Yeni değiştirilen bir düzenleme arabelleğini, örneğin `Update`çağrılmadan önce başka bir kayda geçiş yaparak iptal ederseniz düzenleme arabelleği geri yüklenmez.
 
-RFX veri kümesinin alan veri üyeleri veri kaynağı arasındaki değişimi yanı sıra, bağlama parametreleri yönetir. Kayıt kümesi açıldığında, herhangi bir parametre veri üyesi sırasıyla ilişkili "?" SQL deyimi içindeki yer tutucuları, `CRecordset::Open` oluşturur. Daha fazla bilgi için [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+Veri kaynağı ve kayıt kümesi alan veri üyeleri arasında veri değişimi yanında, RFX bağlama parametrelerini yönetir. Kayıt kümesi açıldığında, tüm parametre veri üyeleri, `CRecordset::Open` yapılarını SQL deyimindeki "?" yer tutucuları sırasıyla bağlanır. Daha fazla bilgi için bkz. [kayıt kümesi: bir kayıt kümesini parametrize (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-Kayıt kümesi sınıfınızın geçersiz kılmak `DoFieldExchange` her iki yönde veri taşıma tüm işi yapar. İletişim kutusu veri değişimi (DDX) gibi sınıf veri üyeleri hakkında bilgi RFX gerekir. Sihirbaz bir kayıt kümesi özel uygulanışı yazarak gerekli bilgileri sağlar. `DoFieldExchange` sizin için Sihirbazı'nı kullanarak belirttiğiniz üye adları ve veri türleri alan verileri temel alan.
+Kayıt kümesi sınıfınızın `DoFieldExchange` geçersiz kılması tüm işleri yapar ve her iki yönde de verileri taşır. İletişim kutusu veri değişimi (DDX) gibi, RFX 'in sınıfınızın veri üyeleri hakkında bilgi ihtiyacı vardır. Sihirbaz, sihirbazla belirttiğiniz alan verileri üye adlarına ve veri türlerine bağlı olarak, `DoFieldExchange` için kayıt kümesine özgü bir uygulama yazarak gerekli bilgileri sağlar.
 
-##  <a name="_core_the_record_field_exchange_process"></a> Kayıt alanı değişim işlemi
+##  <a name="record-field-exchange-process"></a><a name="_core_the_record_field_exchange_process"></a>Kayıt alanı değişim Işlemi
 
-Bu bölümde bir kayıt kümesi nesnesi açıldığında RFX olayların sırasını açıklanmaktadır ve ekledikçe, güncelleştirme ve kayıt silme. Tablo [dizisi, RFX işlemleri sırasında kayıt açık](#_core_sequence_of_rfx_operations_during_recordset_open) ve tablo [dizisi, kaydırma sırasında RFX işlemlerinin](#_core_sequence_of_rfx_operations_during_scrolling) bu konudaki işlemi RFX işlemleri olarak göster. bir `Move` komutunu kayıt kümesi ve bir güncelleştirme RFX yönetir. Bu işlemler sırasında [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) birçok farklı işlemler gerçekleştirmek üzere çağırılır. `m_nOperation` Veri üyesi [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesne, istenen hangi işlem belirler. Okunacak yararlı bulabileceğiniz [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) ve [kayıt kümesi: Nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) bu okumadan önce.
+Bu bölümde, kayıt kümesi nesnesi açıldığı ve kayıt eklediğinizde, güncelleştirdiğinizde ve silerken RFX olaylarının sırası açıklanmaktadır. [Kayıt kümesi açma SıRASıNDA RFX işlemlerinin tablo sırası](#_core_sequence_of_rfx_operations_during_recordset_open) ve bu konuda [kaydırma sırasında RFX işlemleri tablo sırası](#_core_sequence_of_rfx_operations_during_scrolling) , rfx kayıt kümesindeki bir `Move` komutunu işleyen ve RFX 'in bir güncelleştirmeyi yönettiği bir işlemi gösterir. Bu işlemler sırasında, [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) birçok farklı işlem gerçekleştirecek şekilde çağırılır. [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesinin `m_nOperation` veri üyesi, hangi işlemin istendiğini belirler. Kayıt [kümelerinin kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) ve [kayıt kümesi: kayıt KÜMELERININ kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) , bu malzemeyi okuyabilmeniz için nasıl güncelleştirdiğiniz hakkında bilgi edinebilirsiniz.
 
-###  <a name="_mfc_rfx.3a_.initial_binding_of_columns_and_parameters"></a> RFX: Sütun ve parametre ilk bağlama
+###  <a name="rfx-initial-binding-of-columns-and-parameters"></a><a name="_mfc_rfx.3a_.initial_binding_of_columns_and_parameters"></a>RFX: sütunların ve parametrelerin Ilk bağlaması
 
-Kayıt kümesi nesnesinin çağırdığınızda gösterilen sırada aşağıdaki RFX etkinlikleri ortaya [açık](../../mfc/reference/crecordset-class.md#open) üye işlevi:
+Aşağıdaki RFX etkinlikleri, bir kayıt kümesi nesnesinin [Open](../../mfc/reference/crecordset-class.md#open) üye işlevini çağırdığınızda gösterilen sırayla gerçekleşir:
 
-- Kayıt kümesi parametre veri üyeleri varsa, framework çağırır `DoFieldExchange` parametreleri kayıt kümenizin SQL deyimini dize parametresi yer tutucuları bağlanamıyor. Bulunan türe bağımlı gösterimini parametresinin değeri her bir yer tutucu için kullanılan bir veri **seçin** deyimi. SQL deyimi hazırlandıktan sonra fakat bunu yürütülmeden önce gerçekleşir. Deyim hazırlama hakkında daha fazla bilgi için bkz: `::SQLPrepare` ODBC işlevinde *Programcının Başvurusu*.
+- Kayıt kümesinde parametre veri üyeleri varsa, çerçeve, parametreleri kayıt kümesinin SQL deyimindeki parametre yer tutucularına bağlamak için `DoFieldExchange` çağırır. Parametre değerinin bir veri türüne bağımlı temsili, **Select** ifadesinde bulunan her yer tutucu için kullanılır. Bu, SQL ifadesinin hazırlanmasından, ancak yürütülmeden önce oluşur. Deyimin hazırlanması hakkında daha fazla bilgi için, bkz. ODBC *Programcı başvurusu*içindeki `::SQLPrepare` işlevi.
 
-- Framework çağrıları `DoFieldExchange` kümesinde karşılık gelen alan veri üyeleri, seçili sütunların değerlerini bağlamak için ikinci bir kez. Bu, ilk kayıt sütunlarını içeren bir düzen arabellek olarak kayıt kümesi nesnesi oluşturur.
+- Çerçeve, Seçili sütunların değerlerini kayıt kümesindeki ilgili alan veri üyelerine bağlamak için ikinci kez `DoFieldExchange` çağırır. Bu, kayıt kümesi nesnesini, ilk kaydın sütunlarını içeren bir düzenleme arabelleği olarak oluşturur.
 
-- Kayıt kümesi SQL deyimini yürütür ve veri kaynağının ilk kaydı seçer. Kaydın sütun kümesinin alan veri üyeleri yüklenir.
+- Kayıt kümesi SQL ifadesini yürütür ve veri kaynağı ilk kaydı seçer. Kaydın sütunları, kayıt kümesinin alan veri üyelerine yüklenir.
 
-Aşağıdaki tabloda, bir kayıt kümesi açtığınızda RFX işlemlerin sırasını gösterir.
+Aşağıdaki tabloda bir kayıt kümesini açtığınızda RFX işlemlerinin sırası gösterilmektedir.
 
-### <a name="_core_sequence_of_rfx_operations_during_recordset_open"></a> Kayıt kümesi açma sırasında RFX işlem dizisi
+### <a name="sequence-of-rfx-operations-during-recordset-open"></a><a name="_core_sequence_of_rfx_operations_during_recordset_open"></a>Kayıt kümesi açıkken RFX Işlemlerinin sırası
 
-|İşlemi|DoFieldExchange işlemi|Veritabanı/SQL işlemi|
+|Bu|DoFieldExchange işlemi|Veritabanı/SQL işlemi|
 |--------------------|-------------------------------|-----------------------------|
-|1. Kayıt kümesi açın.|||
-||2. Bir SQL deyimi oluşturun.||
-|||3. SQL gönderin.|
-||4. Parametre veri üyeleri bağlayın.||
-||5. Alan veri üyeleri, sütun bağlayın.||
-|||6. ODBC hareket eder ve verileri doldurur.|
-||7. Verileri yedeklemek için C++ düzeltin.||
+|1. kayıt kümesini açın.|||
+||2. bir SQL açıklaması oluşturun.||
+|||3. SQL 'i gönderin.|
+||4. parametre veri üyelerini bağlayın.||
+||5. alan veri üyelerini sütunlara bağlayın.||
+|||6. ODBC taşı ve verileri doldurur.|
+||7. verileri onarın C++.||
 
-Kayıt kümeleri ODBC hazırlanan yürütme hızlı aynı SQL deyimi ile kümesinde yeniden sorgulama için izin vermek için kullanın. Hazırlanan yürütme hakkında daha fazla bilgi için bkz: ODBC SDK *Programcının Başvurusu* MSDN Kitaplığı'nda.
+Kayıt kümeleri ODBC 'nin hazırlanan yürütmesini, aynı SQL ifadesiyle hızlı yeniden sorgulama sağlamak için kullanır. Hazırlanan yürütme hakkında daha fazla bilgi için, MSDN Kitaplığı 'ndaki ODBC SDK *Programmer 's başvurusuna* bakın.
 
-###  <a name="_mfc_rfx.3a_.scrolling"></a> RFX: Kaydırma
+###  <a name="rfx-scrolling"></a><a name="_mfc_rfx.3a_.scrolling"></a>RFX: kaydırma
 
-Başka bir kayıttan kaydırma framework çağırır `DoFieldExchange` alan veri üyeleri için yeni kayıt değerlerle daha önce depolanan değerleri değiştirmek için.
+Bir kayıttan diğerine kaydırma yaptığınızda çerçeve, alan veri üyelerinde daha önce depolanan değerleri yeni kayıt değerleriyle değiştirmek için `DoFieldExchange` çağırır.
 
-Aşağıdaki tabloda, kullanıcı kaydı başka bir kayıt hareket ettirdiğinde RFX işlemlerin sırasını gösterir.
+Aşağıdaki tabloda, kullanıcı kayıttan kayda kaymışken RFX işlemlerinin sırası gösterilmektedir.
 
-### <a name="_core_sequence_of_rfx_operations_during_scrolling"></a> Kaydırma sırasında RFX işlem dizisi
+### <a name="sequence-of-rfx-operations-during-scrolling"></a><a name="_core_sequence_of_rfx_operations_during_scrolling"></a>Kaydırma sırasında RFX Işlemlerinin sırası
 
-|İşlemi|DoFieldExchange işlemi|Veritabanı/SQL işlemi|
+|Bu|DoFieldExchange işlemi|Veritabanı/SQL işlemi|
 |--------------------|-------------------------------|-----------------------------|
-|1. Çağrı `MoveNext` veya diğer taşıma işlevlerinden biri.|||
-|||2. ODBC hareket eder ve verileri doldurur.|
-||3. Verileri yedeklemek için C++ düzeltin.||
+|1. `MoveNext` veya diğer taşıma işlevlerinden birini çağırın.|||
+|||2. ODBC taşı ve verileri doldurur.|
+||3. verileri onarın C++.||
 
-###  <a name="_mfc_rfx.3a_.adding_new_records_and_editing_existing_records"></a> RFX: Yeni kayıtlar ekleyerek ve var olan kayıtların düzenleme
+###  <a name="rfx-adding-new-records-and-editing-existing-records"></a><a name="_mfc_rfx.3a_.adding_new_records_and_editing_existing_records"></a>RFX: yeni kayıtlar ekleme ve var olan kayıtları düzenlemeyle
 
-Yeni bir kayıt eklemek, kayıt yeni bir kaydın içeriğini oluşturmak için bir düzen arabellek olarak çalışır. Kayıtları olarak ekleme ile kayıtlarının düzenlenmesi kümesinin alan veri üyelerinin değerlerini değiştirilmesini kapsar. RFX açısından bakıldığında, sırası aşağıdaki gibidir:
+Yeni bir kayıt eklerseniz, kayıt kümesi yeni kaydın içeriğini oluşturmak için bir düzenleme arabelleği olarak çalışır. Kayıt ekleme ile birlikte kayıtları düzenlemede, kayıt kümesinin alan veri üyelerinin değerlerinin değiştirilmesi gerekir. RFX perspektifinden, sırası aşağıdaki gibidir:
 
-1. Çağrınız kümesinin [AddNew](../../mfc/reference/crecordset-class.md#addnew) veya [Düzenle](../../mfc/reference/crecordset-class.md#edit) üye işlevini, daha sonra geri yüklenebilmesi için geçerli düzenleme arabelleğini depolamak RFX neden olur.
+1. Kayıt kümenizin [AddNew](../../mfc/reference/crecordset-class.md#addnew) veya [Edit](../../mfc/reference/crecordset-class.md#edit) üye IŞLEVINE yapılan çağrı, RFX 'in geçerli düzenleme arabelleğini depolamasına ve bu sayede daha sonra geri yüklenebilmesini sağlar.
 
-1. `AddNew` veya `Edit` alanları düzenleme arabelleğindeki RFX değiştirilen alan veri üyeleri algılayabilmesi için hazırlar.
+1. `AddNew` veya `Edit`, bir düzenleme arabelleğindeki alanları, RFX 'in değiştirilen alan veri üyelerini algılayabilmesi için hazırlar.
 
-   Yeni bir kayıt yenilerini ile Karşılaştırılacak önceki değer olmadığından `AddNew` PSEUDO_NULL değerine her alan veri üyesinin değerini ayarlar. Daha sonra çağırdığınızda `Update`, RFX her veri üyesinin değerini PSEUDO_NULL değerle karşılaştırır. Bir fark varsa, veri üyesi olarak ayarlandı. (PSEUDO_NULL true Null değerine sahip bir kayıt sütunu aynı değildir veya bunların ya da aynı C++ NULL.)
+   Yeni bir kaydın, yenilerini karşılaştırmak için önceki değerleri olmadığından, `AddNew` her bir alan veri üyesinin değerini bir PSEUDO_NULL değerine ayarlar. Daha sonra, `Update`çağırdığınızda, RFX her bir veri üyesinin değerini PSEUDO_NULL değeriyle karşılaştırır. Fark varsa, veri üyesi ayarlanmıştır. (PSEUDO_NULL, doğru null değeri olan bir kayıt sütunuyla aynı veya ikisi de C++ null ile aynı olamaz.)
 
-   Farklı `Update` çağrısı `AddNew`, `Update` çağrısı `Edit` karşılaştırır, daha önce depolanan değerleri ile PSEUDO_NULL kullanmak yerine değerler güncelleştirildi. Fark `AddNew` hiçbir daha önce depolanan değerleri karşılaştırma için vardır.
+   `AddNew``Update` çağrısının aksine, `Edit` `Update` çağrısı, güncelleştirilmiş değerleri PSEUDO_NULL kullanmak yerine önceden depolanmış değerlerle karşılaştırır. Fark, `AddNew` karşılaştırma için önceden depolanmış değerler içermez.
 
-1. Düzenlemek istediğiniz değerleri için yeni bir kayıt doldurulmuş istediğiniz veya doğrudan alan veri üyelerinin değerlerini ayarlayın. Bu arama içerebilir `SetFieldNull`.
+1. Değerlerini düzenlemek istediğiniz veya yeni bir kayıt için doldurulmasını istediğiniz alan veri üyelerinin değerlerini doğrudan ayarlarsınız. Bu, çağırma `SetFieldNull`içerebilir.
 
-1. Çağrınız [güncelleştirme](../../mfc/reference/crecordset-class.md#update) değiştirilen alan veri üyeleri için 2. adımda açıklandığı gibi denetler (tabloya bakın [dizisi, kaydırma sırasında RFX işlemlerinin](#_core_sequence_of_rfx_operations_during_scrolling)). Değiştirdiyseniz, `Update` 0 döndürür. Bazı alan veri üyeleri değişip değişmediğini `Update` hazırlar ve bir SQL yürütür **Ekle** kayıttaki tüm güncelleştirilmiş alanları için değerleri içeren ifade.
+1. 2\. adım ( [kaydırma SıRASıNDA RFX işlemlerinin tablo dizisine](#_core_sequence_of_rfx_operations_during_scrolling)bakın) bölümünde açıklandığı gibi, değiştirilen alan veri üyelerini [güncelleştirme](../../mfc/reference/crecordset-class.md#update) için yapılan çağrılarınız. Hiçbiri değiştirilmişse `Update` 0 döndürür. Bazı alan veri üyeleri değiştiyse, `Update` kayıttaki tüm güncelleştirilmiş alanlar için değerler içeren bir SQL **Insert** ifadesini hazırlar ve yürütür.
 
-1. İçin `AddNew`, `Update` önce geçerli kaydın daha önce depolanan değerlerin geri yükleyerek sonucuna `AddNew` çağırın. İçin `Edit`, yeni ve düzenlenen değerleri değiştirilmez.
+1. `AddNew`için, `Update` `AddNew` çağrısından önce geçerli olan kaydın önceden depolanmış değerlerini geri yükleyerek sonlanır. `Edit`için, yeni ve düzenlenmiş değerler yerinde kalır.
 
-Aşağıdaki tabloda yeni bir kayıt eklemek ya da varolan bir kaydı düzenlemek RFX işlemlerin sırasını gösterir.
+Aşağıdaki tabloda, yeni bir kayıt eklediğinizde veya var olan bir kaydı düzenlerken RFX işlemlerinin sırası gösterilmektedir.
 
-### <a name="sequence-of-rfx-operations-during-addnew-and-edit"></a>Ekleme ve düzenleme sırasında RFX işlem dizisi
+### <a name="sequence-of-rfx-operations-during-addnew-and-edit"></a>AddNew ve Edit sırasında RFX Işlemlerinin sırası
 
-|İşlemi|DoFieldExchange işlemi|Veritabanı/SQL işlemi|
+|Bu|DoFieldExchange işlemi|Veritabanı/SQL işlemi|
 |--------------------|-------------------------------|-----------------------------|
-|1. Çağrı `AddNew` veya `Edit`.|||
-||2. Düzenleme arabelleğini yedekleyin.||
-||3. İçin `AddNew`, alan veri üyeleri "temiz" olarak işaretler ve Null.||
-|4. Kayıt kümesi alan veri üyeleri için değerler atayın.|||
-|5. Çağrı `Update`.|||
-||6. Değiştirilen alanları kontrol edin.||
-||7. SQL derleme **Ekle** bildirimi `AddNew` veya **güncelleştirme** bildirimi `Edit`.||
-|||8. SQL gönderin.|
-||9. İçin `AddNew`, düzenleme arabellek yedeklenen içeriğini geri yükleme. İçin `Edit`, yedek silme.||
+|1. `AddNew` veya `Edit`çağırın.|||
+||2. düzenleme arabelleğini yedekleyin.||
+||3. `AddNew`için alan veri üyelerini "temiz" ve null olarak işaretleyin.||
+|4. değerleri kayıt kümesi alan veri üyelerine atayın.|||
+|5. `Update`çağırın.|||
+||6. değiştirilen alanları kontrol edin.||
+||7. `Edit`için `AddNew` veya **güncelleştirme** bildiriminde SQL **Insert** ifadesini derleyin.||
+|||8. SQL 'i gönderin.|
+||9. `AddNew`için düzenleme arabelleğini yedeklenen içeriğe geri yükleyin. `Edit`için yedeklemeyi silin.||
 
-### <a name="rfx-deleting-existing-records"></a>RFX: Var olan kayıtların siliniyor
+### <a name="rfx-deleting-existing-records"></a>RFX: mevcut kayıtları silme
 
-Kaydı sildiğinizde RFX tüm alanları kaydı silinir ve devre dışı taşımanız bir anımsatıcı olarak NULL olarak ayarlar. Diğer bir RFX sıralama bilgisi gerekmez.
+Bir kaydı sildiğinizde, RFX, kaydın silindiğini belirten bir anımsatıcı olarak tüm alanları NULL olarak ayarlar. Başka bir RFX sırası bilgisine ihtiyacınız yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[MFC ODBC tüketici](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[Makrolar, genel işlevler ve genel değişkenler](../../mfc/reference/mfc-macros-and-globals.md)<br/>
+[MFC ODBC tüketme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
+[Makrolar, genel Işlevler ve genel değişkenler](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
-[CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange)
+[CRecordset::D oFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange)

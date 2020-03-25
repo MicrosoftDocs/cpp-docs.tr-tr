@@ -1,21 +1,21 @@
 ---
-title: requires_category (C++ COM özniteliği)
+title: requires_category (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.requires_category
 helpviewer_keywords:
 - requires_category attribute
 ms.assetid: a645fdc6-1ef5-414d-8c56-5fe2686d4687
-ms.openlocfilehash: ec35a1958d9fbcf77fef7f498c6c0dba3ab17df9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19a454a8bfc959d7d97959d765dbf68d0f766ca1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407373"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214558"
 ---
-# <a name="requirescategory"></a>requires_category
+# <a name="requires_category"></a>requires_category
 
-Hedef sınıfın gerekli bileşen kategorilerini belirler.
+Hedef sınıfın gerekli bileşen kategorilerini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,17 +27,17 @@ Hedef sınıfın gerekli bileşen kategorilerini belirler.
 ### <a name="parameters"></a>Parametreler
 
 *requires_category*<br/>
-Gerekli bir kategori kimliği.
+Gerekli kategorinin KIMLIĞI.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Requires_category** C++ özniteliği hedef sınıfı tarafından gerekli bileşen kategorileri belirtir. Daha fazla bilgi için [REQUIRED_CATEGORY](../../atl/reference/category-macros.md#required_category).
+**Requires_category** C++ özniteliği, hedef sınıf için gereken bileşen kategorilerini belirtir. Daha fazla bilgi için bkz. [REQUIRED_CATEGORY](../../atl/reference/category-macros.md#required_category).
 
-Bu öznitelik gerektiren [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi_progid](vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, nesneyi Denetim kategorisi uygulamak gerektirir.
+Aşağıdaki kod nesnenin denetim kategorisini uygulamasını gerektirir.
 
 ```cpp
 // cpp_attr_ref_requires_category.cpp
@@ -59,12 +59,12 @@ class CMyClass {};
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

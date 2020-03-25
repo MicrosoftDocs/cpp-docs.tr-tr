@@ -12,16 +12,16 @@ helpviewer_keywords:
 - IDBCreateSessionImpl class
 - CreateSession method
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-ms.openlocfilehash: ae59abc542a4599d289c099801fc34d56b2b13d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cff1ca374c9489cb9c5df0dad153c4bf7a4cbc9e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409167"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210788"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
 
-Bir uygulamasını sağlar [IDBCreateSession](/previous-versions/windows/desktop/ms724076(v=vs.85)) arabirimi.
+[IDBCreateSession](/previous-versions/windows/desktop/ms724076(v=vs.85)) arabirimi için bir uygulama sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,15 +33,15 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-TÜRETİLMİŞ SINIFINIZIN
+*Şı*<br/>
+SıNıFıNDAN TÜRETILMIŞ
 
 *SessionClass*<br/>
 Oturum nesnesi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -49,15 +49,15 @@ Oturum nesnesi.
 
 |||
 |-|-|
-|[CreateSession](#createsession)|Veri kaynağı nesnesinin yeni bir oturum oluşturur ve yeni oluşturulan oturum istenen arabirim döndürür.|
+|[CreateSession](#createsession)|Veri kaynağı nesnesinden yeni bir oturum oluşturur ve yeni oluşturulan oturumdaki istenen arabirimi döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesneleri üzerinde zorunlu bir arabirim.
+Veri kaynağı nesnelerinde zorunlu arabirim.
 
-## <a name="createsession"></a> Idbcreatesessionımpl::createsession
+## <a name="idbcreatesessionimplcreatesession"></a><a name="createsession"></a>IDBCreateSessionImpl:: CreateSession
 
-Veri kaynağı nesnesinin yeni bir oturum oluşturur ve yeni oluşturulan oturum istenen arabirim döndürür.
+Veri kaynağı nesnesinden yeni bir oturum oluşturur ve yeni oluşturulan oturumdaki istenen arabirimi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -69,7 +69,7 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IDBCreateSession:: CreateSession](/previous-versions/windows/desktop/ms714942(v=vs.85)) öğesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

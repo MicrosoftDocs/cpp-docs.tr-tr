@@ -1,21 +1,21 @@
 ---
-title: satype (C++ COM özniteliği)
+title: Satype (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.satype
 helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
-ms.openlocfilehash: 7588e8d855d648309c46d981898cfbbf7888f4c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4619deec6d5e4e9083fbc7bcab53caee0101285c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407308"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166282"
 ---
 # <a name="satype"></a>satype
 
-Veri türü belirtir `SAFEARRAY` yapısı.
+`SAFEARRAY` yapısının veri türünü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,7 +26,7 @@ Veri türü belirtir `SAFEARRAY` yapısı.
 ### <a name="parameters"></a>Parametreler
 
 *data_type*<br/>
-Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirilen veri yapısı.
+Bir arabirim yöntemine parametre olarak geçirilmekte olan `SAFEARRAY` veri yapısına yönelik veri türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -34,17 +34,17 @@ Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirile
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|
+|**Uygulama hedefi**|Arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Satype** C++ öznitelik veri türü belirtir `SAFEARRAY`.
+**Satype** C++ özniteliği `SAFEARRAY`veri türünü belirtir.
 
 > [!NOTE]
-> Yöneltme düzeyi düşürülmüştür `SAFEARRAY` nasıl .cpp dosyasında bildirilen öğesinden oluşturulan .idl dosyasındaki bir işaretçi.
+> Bir yöneltme düzeyi, oluşturulan. IDL dosyasındaki `SAFEARRAY` işaretçisinden. cpp dosyasında bildirildiği şekilde bırakılır.
 
 ## <a name="example"></a>Örnek
 

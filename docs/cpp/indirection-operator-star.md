@@ -7,12 +7,12 @@ helpviewer_keywords:
 - operators [C++], indirection
 - indirection operator [C++], syntax
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
-ms.openlocfilehash: a35d8cb28baaee37ad64a61cbcb9d4c76a5aad06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f27cfd943455d52b04c41ef2d2d83e6e03a84c0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183589"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178292"
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 
@@ -24,11 +24,11 @@ ms.locfileid: "62183589"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birli yöneltme işleci (<strong>\*</strong>) bir; işaretçiye başka bir deyişle, bir işaretçi değeri bir l-değerine dönüştürür. Yöneltme işlecinin işleneni, bir tür için bir işaretçi olması gerekir. Yöneltme ifadenin sonucu işaretçi türünün türetildiği türüdür. Kullanımını <strong>\*</strong> işleci bu bağlamda anlamını çarpma bir ikili işleç olarak farklıdır.
+Birli yöneltme işleci (<strong>\*</strong>) bir işaretçiye başvurur; Yani, bir işaretçi değerini bir l değerine dönüştürür. Yöneltme işlecinin işleneni, bir tür işaretçisi olmalıdır. Yöneltme ifadesinin sonucu, işaretçi türünün türetildiği türüdür. <strong>\*</strong> işlecinin bu bağlamda kullanımı, çarpının, çarpma olan bir ikili işleç olarak farklıdır.
 
 İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir depolama konumuna işaret ediyorsa, sonuç depolama konumunu gösteren l değeridir.
 
-Yöneltme işleci üst üste işaretçilerin işaretçileri başvuru için kullanılabilir. Örneğin:
+Yöneltme işleci, işaretçilere yönelik işaretçileri başvurusu için üst üste kullanılabilir. Örneğin:
 
 ```cpp
 // expre_Indirection_Operator.cpp
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-İşaretçi değeri geçersizse sonuç tanımsızdır. Aşağıdaki liste, işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını içermektedir.
+İşaretçi değeri geçersizse, sonuç tanımsızdır. Aşağıdaki liste, işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını içermektedir.
 
 - İşaretçi, bir null işaretçidir.
 

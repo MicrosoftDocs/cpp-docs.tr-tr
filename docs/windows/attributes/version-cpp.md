@@ -7,12 +7,12 @@ helpviewer_keywords:
 - version attribute
 - version information, version attribute
 ms.assetid: db6ce5d8-82c2-4329-b1a8-8ca2f67342cb
-ms.openlocfilehash: 9a432267632b1f2a716a833a485b182cd93a27e2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e5fcf80ef753a869b8798d6ab9c8e9f8ecff16fd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514880"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165996"
 ---
 # <a name="version-c"></a>sürüm (C++)
 
@@ -27,7 +27,7 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümü tanımlar.
 ### <a name="parameters"></a>Parametreler
 
 *version*<br/>
-Öğesinin sürüm numarası `coclass`. Belirtilmemişse, 1,0. IDL dosyasına yerleştirilir.
+`coclass`sürüm numarası. Belirtilmemişse, 1,0. IDL dosyasına yerleştirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -46,7 +46,7 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümü tanımlar.
 |**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

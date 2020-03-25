@@ -14,12 +14,12 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: 165f7124657cbaf0c0f94171eaf9394011796aea
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: cbf2e6d7241d019a00132c10638993d60d78beac
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447051"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210814"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 
@@ -58,7 +58,7 @@ Sınıfından türetilmiş
 
 Bu, komutlarda zorunludur. Uygulama, [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) makrosu tarafından tanımlanan statik bir işlev tarafından sağlanır.
 
-## <a name="getproperties"></a>ICommandPropertiesImpl:: GetProperties
+## <a name="icommandpropertiesimplgetproperties"></a><a name="getproperties"></a>ICommandPropertiesImpl:: GetProperties
 
 Komutun Özellik eşlemesini kullanarak istenen tüm özellik kümelerini döndürür.
 
@@ -79,7 +79,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-## <a name="setproperties"></a>ICommandPropertiesImpl:: SetProperties
+## <a name="icommandpropertiesimplsetproperties"></a><a name="setproperties"></a>ICommandPropertiesImpl:: SetProperties
 
 Komut nesnesi için özellikleri ayarlar.
 

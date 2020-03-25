@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C4116
 ms.assetid: 25434ef3-061e-4252-91a5-0fe2a4b2ffb3
-ms.openlocfilehash: 93b207bc01a725e721001c15fa69c0da1a4bb86c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e43bc352ed23e38c1d0eb583685629f56ede910
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299977"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80163722"
 ---
 # <a name="compiler-warning-level-1-c4116"></a>Derleyici Uyarısı (düzey 1) C4116
 
-parantez içinde adsız tür tanımı
+parantez içinde adlandırılmamış tür tanımı
 
-Bir yapı, birlik veya numaralandırılmış tür adı olmayan bir parantez ifadesinde tanımlanır. Tür tanımını anlamsız hale gelir.
+Parantez içinde adı olmayan bir yapı, birleşim veya numaralandırılmış tür tanımlanmış. Tür tanımı anlamlı değildir.
 
-C işlev çağrısında tanımı genel kapsam vardır. C++ işlev çağrısında, çağrılan işlevin aynı kapsama tanımı içeriyor.
+C işlev çağrısında, tanım genel kapsama sahip. Bir C++ işlev çağrısında, tanım çağrılan işlevle aynı kapsama sahip.

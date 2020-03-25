@@ -1,21 +1,21 @@
 ---
-title: Durum (C++ COM özniteliği)
+title: Case (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.case
 helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-ms.openlocfilehash: b3058f2fe6f35e1b11d4790780cb0fcdcaada706
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da72fff3bb600b5db2fba0ecdfe9c6a768836f3c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148452"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167348"
 ---
 # <a name="case-c"></a>durum (C++)
 
-İle kullanılan [switch_type](switch-type.md) özniteliğini bir **birleşim**.
+Bir **birleşimdeki** [switch_type](switch-type.md) özniteliğiyle birlikte kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,7 +26,7 @@ ms.locfileid: "62148452"
 #### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-Olası bir işleme sağlamak istediğiniz değeri girin. Türünü **değer** şu türlerden biri olabilir:
+İşleme sağlamak istediğiniz olası bir giriş değeri. **Değer** türü aşağıdaki türlerden biri olabilir:
 
 - `int`
 
@@ -36,15 +36,15 @@ Olası bir işleme sağlamak istediğiniz değeri girin. Türünü **değer** ş
 
 - `enum`
 
-veya böyle bir türü bir tanımlayıcı.
+ya da böyle bir tür tanımlayıcı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Çalışması** C++ özniteliği ile aynı işlevlere sahip **çalışması** MIDL özniteliği. Bu öznitelik yalnızca birlikte kullanılan [switch_type](switch-type.md) özniteliği.
+**Case** C++ özniteliği **Case** MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bu öznitelik yalnızca [switch_type](switch-type.md) özniteliğiyle birlikte kullanılır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir kullanımını göstermektedir. **çalışması** özniteliği:
+Aşağıdaki kod **Case** özniteliğinin bir kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_case.cpp
@@ -69,12 +69,12 @@ struct SizedValue2 {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Üye bir **sınıfı** veya **yapısı**|
+|**Uygulama hedefi**|Bir **sınıfın** veya **yapının** üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -25,16 +25,16 @@ helpviewer_keywords:
 - IsAutoAccessor method
 - ReleaseAccessors method
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
-ms.openlocfilehash: 34c92f9057f2273d57b69bdb42c49a81923c3d2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8aef8a04d7adff903e21491a91014d55aab769da
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284065"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212298"
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase Sınıfı
 
-OLE DB Şablonları tüm erişenler sınıfından türetilir. `CAccessorBase` Çoklu Erişimci yönetmek bir satır kümesi sağlar. Ayrıca parametreleri ve çıkış sütunları için bağlama sağlar.
+OLE DB şablonlarındaki tüm erişimciler bu sınıftan türetilir. `CAccessorBase`, bir satır kümesinin birden çok erişimciyi yönetmesine izin verir. Ayrıca, hem parametreler hem de çıkış sütunları için bağlama sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,19 +48,19 @@ OLE DB Şablonları tüm erişenler sınıfından türetilir. `CAccessorBase` Ç
 
 |||
 |-|-|
-|[Kapat](#close)|Erişimciler kapatır.|
-|[GetHAccessor](#geth)|Erişimci tanıtıcısı alır.|
-|[GetNumAccessors](#getnum)|Sınıfı tarafından oluşturulan erişimcileri sayısını alır.|
-|[Isautoaccessor](#isauto)|Belirtilen erişimci erişimcinin olup olmadığını sınar.|
-|[ReleaseAccessors](#release)|Erişimciler serbest bırakır.|
+|[~Eksik](#close)|Erişimcileri kapatır.|
+|[GetHAccessor](#geth)|Erişimci tanıtıcısını alır.|
+|[GetNumAccessors](#getnum)|Sınıfı tarafından oluşturulan erişimcilerinin sayısını alır.|
+|[IsAutoAccessor](#isauto)|Belirtilen erişimcinin bir oto erişimcisi olup olmadığını sınar.|
+|[Releaseerişimcileri](#release)|Erişimcileri yayınlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
-## <a name="close"></a> CAccessorBase::Close
+## <a name="caccessorbaseclose"></a><a name="close"></a>CAccessorBase:: Close
 
-Erişimciler kapatır.
+Erişimcileri kapatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -70,11 +70,11 @@ void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) ilk.
+Önce [Releaseerişimcileri](../../data/oledb/caccessorbase-releaseaccessors.md) 'i çağırmanız gerekir.
 
-## <a name="geth"></a> CAccessorBase::GetHAccessor
+## <a name="caccessorbasegethaccessor"></a><a name="geth"></a>CAccessorBase:: GetHAccessor
 
-Belirtilen bir erişimci erişimci tanıtıcısı alır.
+Belirtilen erişimcinin erişimci tanıtıcısını alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -85,15 +85,15 @@ HACCESSOR GetHAccessor(ULONG nAccessor) const;
 #### <a name="parameters"></a>Parametreler
 
 *nAccessor*<br/>
-[in] Erişimci sıfır uzaklığı numarası.
+'ndaki Erişimcinin sıfır-fark numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Erişimci tanıtıcısı.
 
-## <a name="getnum"></a> CAccessorBase::GetNumAccessors
+## <a name="caccessorbasegetnumaccessors"></a><a name="getnum"></a>CAccessorBase:: GetNumAccessors
 
-Sınıfı tarafından oluşturulan erişimcileri sayısını alır.
+Sınıfı tarafından oluşturulan erişimcilerinin sayısını alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -103,11 +103,11 @@ ULONG GetNumAccessors() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sınıfı tarafından oluşturulan erişimcileri sayısı.
+Sınıfı tarafından oluşturulan erişimcilerinin sayısı.
 
-## <a name="isauto"></a> CAccessorBase::ısautoaccessor
+## <a name="caccessorbaseisautoaccessor"></a><a name="isauto"></a>CAccessorBase:: ısoto erişimcisi
 
-Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır true değeri döndürür.
+Taşıma işlemi sırasında erişimci için veriler otomatik olarak alınırsa true döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -118,15 +118,15 @@ bool IsAutoAccessor(ULONG nAccessor) const;
 #### <a name="parameters"></a>Parametreler
 
 *nAccessor*<br/>
-[in] Erişimci sıfır uzaklığı numarası.
+'ndaki Erişimcinin sıfır-fark numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür **true** erişimci erişimcinin ise. Aksi halde **false**.
+Erişimci bir oto erişimcisi ise, **true** döndürür. Aksi takdirde, **false**döndürür.
 
-## <a name="release"></a> CAccessorBase::ReleaseAccessors
+## <a name="caccessorbasereleaseaccessors"></a><a name="release"></a>CAccessorBase:: Releaseerişimcileri
 
-Sınıfı tarafından oluşturulan erişimcileri serbest bırakır.
+Sınıfı tarafından oluşturulan erişimcileri yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -136,19 +136,19 @@ HRESULT ReleaseAccessors(IUnknown* pUnk);
 
 #### <a name="parameters"></a>Parametreler
 
-*pUnk*<br/>
-[in] Bir işaretçi bir `IUnknown` erişimci oluşturuldu COM nesnesi için arabirim.
+*pUnk dili*<br/>
+'ndaki Erişimcilerinin oluşturulduğu COM nesnesi için `IUnknown` arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrılabilir [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md).
+[CAccessorRowset:: Close](../../data/oledb/caccessorrowset-close.md)öğesinden çağırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessorBase Sınıfı](../../data/oledb/caccessorbase-class.md)

@@ -1,5 +1,5 @@
 ---
-title: (MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
+title: Ikinci bir kayıt kümesinden liste kutusu doldurma (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - record views, filling list boxes
@@ -10,33 +10,33 @@ helpviewer_keywords:
 - combo boxes [C++], filling from second recordset
 - CListCtrl class, filling from second recordset
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-ms.openlocfilehash: 9428f8a59dca021a1bd0e00a7970f4d19bab46be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8eb2525ef8b749f58303cae13b87b21d7df73d1b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397932"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213414"
 ---
-# <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>(MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
+# <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>Ikinci bir kayıt kümesinden liste kutusu doldurma (MFC veri erişimi)
 
-Varsayılan olarak, kayıt görünümü alanları kayıt görünümünün denetimlere eşlenmiş bir tek bir kayıt kümesi nesnesi ile ilişkilidir. Bazen, bir liste kutusu koymak isteyebilirsiniz veya birleşik giriş kutusu kayıt görünümünüzde denetlemek ve ikinci bir kayıt kümesi nesnesi değerlerle doldurun. Kullanıcı, kaydı görüntülemek için bilgileri yeni bir kategori seçmek için liste kutusunu kullanabilirsiniz. Bu konu nasıl ve ne zaman açıklar. Bunu yapmak için.
+Varsayılan olarak, bir kayıt görünümü, alanları kayıt görünümü denetimleriyle eşlenen tek bir kayıt kümesi nesnesi ile ilişkilendirilir. Bazen, kayıt görünümünüzde bir liste kutusu veya Birleşik giriş kutusu denetimi koymak ve ikinci bir kayıt kümesi nesnesinden değerler ile doldurmanız gerekebilir. Kullanıcı, kayıt görünümünde görüntülenecek yeni bir bilgi kategorisi seçmek için liste kutusunu kullanabilir. Bu konu, bunun nasıl ve ne zaman yapılacağını açıklamaktadır.
 
 > [!TIP]
->  Birleşik giriş kutusu veya bir veri kaynağı kümesinden liste kutusunu doldurma yavaş olabileceğini unutmayın. Çok sayıda kayıt kayıt kümesinden bir denetimi doldurmak çalışırken karşı önlem alın.
+>  Bir Birleşik giriş kutusu veya liste kutusunun bir veri kaynağından doldurulması yavaş olabilir. Çok sayıda kayıt içeren bir kayıt kümesinden denetimi doldurmaya çalışırken önlem alın.
 
-Bu konu için bir model, form denetimlerini ikincil bir kayıt kümesini bir liste kutusu veya açılan kutu doldururken dolduran birincil bir kayıt kümesi içerir. Liste kutusundan bir dize seçerek programınızı ne seçili olduğuna bağlı birincil bir kayıt sorgulayacak neden olur. Aşağıdaki yordam bir birleşik giriş kutusu kullanır, ancak liste kutusu için eşit oranda geçerlidir.
+Bu konunun modeli, formunuzun denetimlerini dolduran birincil bir kayıt kümesinden oluşur, ancak ikincil bir kayıt kümesi bir liste kutusu veya Birleşik giriş kutusunu doldurur. Liste kutusundan bir dize seçilmesi, programınızın seçili olan öğeleri temel alarak birincil kayıt kümesini yeniden sorgulamasına neden olur. Aşağıdaki yordam bir açılan kutu kullanır, ancak bir liste kutusuna eşit olarak uygulanır.
 
-#### <a name="to-fill-a-combo-box-or-list-box-from-a-second-recordset"></a>Birleşik giriş kutusu ya da ikinci kayıt kümesinden liste kutusunu doldurmak için
+#### <a name="to-fill-a-combo-box-or-list-box-from-a-second-recordset"></a>İkinci bir kayıt kümesinden açılan bir kutuyu veya liste kutusunu dolduracak şekilde
 
-1. Kayıt kümesi nesnesi oluşturun ([CRecordset](../mfc/reference/crecordset-class.md).
+1. Kayıt kümesi nesnesini oluşturun ([CRecordset](../mfc/reference/crecordset-class.md).
 
-1. Bir işaretçi alma [CComboBox](../mfc/reference/ccombobox-class.md) birleşik giriş kutusu denetimi için nesne.
+1. Birleşik giriş kutusu denetimi için [CComboBox](../mfc/reference/ccombobox-class.md) nesnesine bir işaretçi alın.
 
-1. Önceki tüm İçindekiler birleşik giriş kutusu boş.
+1. Önceki içeriklerin Birleşik giriş kutusunu boşaltın.
 
-1. Kayıt kümesindeki tüm kayıtlar arasında taşıma çağırma [CComboBox::AddString](../mfc/reference/ccombobox-class.md#addstring) geçerli kayıttan birleşik giriş kutusuna eklemek istediğiniz her bir dizenin için.
+1. Birleşik giriş kutusuna eklemek istediğiniz geçerli kayıttaki her bir dize için [CComboBox:: AddString](../mfc/reference/ccombobox-class.md#addstring) ' i çağırarak, kayıt kümesindeki tüm kayıtlar arasında geçiş yapın.
 
-1. Seçimi birleşik giriş kutusundaki başlatın.
+1. Açılan kutuda seçimi başlatın.
 
 ```cpp
 void CSectionForm::OnInitialUpdate()
@@ -64,9 +64,9 @@ void CSectionForm::OnInitialUpdate()
 }
 ```
 
-Bu işlev, ikinci kayıt kullanır `m_courseSet`, sunulan her ders için kayıt içeren ve bir `CComboBox` denetimi `m_ctlCourseList`, kayıt görünümü sınıfta depolanır.
+Bu işlev, sunulan her kurs için bir kayıt içeren `m_courseSet`ikinci bir kayıt kümesini ve kayıt görünümü sınıfında depolanan `m_ctlCourseList``CComboBox` denetimini kullanır.
 
-İşlev alır `m_courseSet` belgeden ve onu açar. Bu ardından `m_ctlCourseList` ve aracılığıyla kaydırır `m_courseSet`. Her kayıt için açılan kutunun işlev çağrıları `AddString` kayıttan kurs kimliği değeri eklemek için üye işlevi. Son olarak, kod birleşik giriş kutusunun seçimi ayarlar.
+İşlev belgeden `m_courseSet` alır ve açar. Sonra `m_ctlCourseList` boşaltır ve `m_courseSet`üzerinden kayar. Her kayıt için işlev, kayıttaki kurs KIMLIĞI değerini eklemek için Birleşik giriş kutusunun `AddString` üye işlevini çağırır. Son olarak, kod Birleşik giriş kutusunun seçimini ayarlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4067
 ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
-ms.openlocfilehash: 012866e328433ec9511782c26a39265481ff4940
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8bdd16f5c3182e4217e195475bdb4a9a0f60fa6f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386518"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164124"
 ---
 # <a name="compiler-warning-level-1-c4067"></a>Derleyici Uyarısı (düzey 1) C4067
 
-> Beklenmeyen belirteçler aşağıdaki önişlemci yönergesi - satır sonu bekleniyordu
+> Önişlemci yönergesinin izleyen beklenmeyen belirteçler-bir yeni satır bekleniyordu
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici bulundu ve ön işlemci yönergesinden sonra ek karakterler yoksayılır. Yaygın bir nedeni yönergesinden sonra noktalı virgüldür olsa bu beklenmeyen bir karakterleriyle kaynaklanabilir. Açıklamalar bu uyarıyı neden olmaz. **/Za** derleyici seçeneği, bu uyarı için varsayılan ayar'den daha çok önişlemci yönergeleri sağlar.
+Derleyici, Önişlemci yönergesinin ardından ek karakterler buldu ve yoksaydı. Bu, beklenmeyen karakterlerden kaynaklanabilir, ancak yaygın bir neden, yönergesinden sonra bir çok noktalı virgüldür. Açıklamalar bu uyarıya neden olmaz. **/Za** derleyici seçeneği, varsayılan ayardan daha fazla Önişlemci yönergesi için bu uyarıya izin vermez.
 
 ## <a name="example"></a>Örnek
 
@@ -39,7 +39,7 @@ int main()
 }
 ```
 
-Bu uyarıyı çözmek için geçirilmeyen karakterleri silin veya açıklama bloğu içine taşıyabilirsiniz. Belirli C4067 uyarıları kaldırarak devre dışı bırakılabilir **/Za** derleyici seçeneği.
+Bu uyarıyı çözmek için, boş karakterleri silin veya bir açıklama bloğuna taşıyın. **/Za** derleyici seçeneği kaldırılarak bazı C4067 uyarıları devre dışı bırakılabilir.
 
 ```cpp
 // C4067b.cpp

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - string attribute
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
-ms.openlocfilehash: 978f1f546c0df8de4ff167ddf5ddf724feb31b6e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 96d5e609130b34a4a5f35109ce691c2de470e537
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514012"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166172"
 ---
 # <a name="string-c"></a>string (C++)
 
-Tek boyutlu bir **char**, **wchar_t**, `byte` (veya eşdeğeri) dizisinin veya bu dizi işaretçisinin bir dize olarak değerlendirilmesinin gerektiği anlamına gelir.
+Tek boyutlu bir **char**, **wchar_t**, `byte` (veya eşdeğeri) dizisinin veya bu dizi işaretçisinin bir dize olarak değerlendirilmesinin gerektiğini gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Tek boyutlu bir **char**, **wchar_t**, `byte` (veya eşdeğeri) dizisinin veya b
 
 ## <a name="remarks"></a>Açıklamalar
 
-**String** C++ özniteliği, MIDL özniteliğiyle aynı işlevselliğe sahiptir [](/windows/win32/Midl/string) .
+**String** C++ özniteliği [, MIDL](/windows/win32/Midl/string) özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -52,8 +52,8 @@ __interface IFireTabCtrl
 |-|-|
 |**Uygulama hedefi**|Array, Interface parametresi, Interface yöntemi için dizi veya işaretçi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

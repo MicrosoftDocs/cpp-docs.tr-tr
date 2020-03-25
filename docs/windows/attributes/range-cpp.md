@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-ms.openlocfilehash: d1221192eb1813d759f293fe5555d7aaa5b367ab
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 380f7c9e15a3682b486217c842f00c944251e631
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514147"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214623"
 ---
 # <a name="range-c"></a>aralık (C++)
 
@@ -33,7 +33,7 @@ Yüksek Aralık değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Range** C++ özniteliği, MIDL özniteliğiyle aynı işlevselliğe sahiptir [](/windows/win32/Midl/range) .
+**Range** C++ özniteliği [, MIDL](/windows/win32/Midl/range) özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -59,8 +59,8 @@ __interface ICustom {
 |-|-|
 |**Uygulama hedefi**|Arabirim yöntemi, arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

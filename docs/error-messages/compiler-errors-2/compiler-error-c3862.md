@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3862
+title: Derleyici hatası C3862
 ms.date: 11/04/2016
 f1_keywords:
 - C3862
 helpviewer_keywords:
 - C3862
 ms.assetid: ba547366-4189-4077-8c00-ab45e08a9533
-ms.openlocfilehash: 2ba130862b1debbe2991ca7cbcae50192f900cd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b9c1e1213949d7d700094caa6687232df881ce6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302320"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165489"
 ---
-# <a name="compiler-error-c3862"></a>Derleyici Hatası C3862
+# <a name="compiler-error-c3862"></a>Derleyici hatası C3862
 
-> '*işlevi*': / CLR ile yönetilmeyen bir işlev olarak derlenemez: pure veya/CLR: safe
+> '*Function*': yönetilmeyen bir işlev/clr: pure veya/clr: Safe ile derlenemez
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-Bir derleme ile **/CLR: pure** veya **/CLR: safe** MSIL yalnızca görüntü, görüntünün yerel (yönetilmeyen) kod olmadan üretecektir.  Bu nedenle, kullanamazsınız `unmanaged` pragması yerleştirebilirsiniz bir **/CLR: pure** veya **/CLR: safe** derleme.
+**/Clr: Pure** veya **/clr: Safe** ile bir derleme, yerel (yönetilmeyen) kod içermeyen BIR görüntü olan yalnızca MSIL görüntüsü oluşturur.  Bu nedenle, **/clr: Pure** veya **/clr: Safe** derlemesinde `unmanaged` pragma kullanamazsınız.
 
-Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).
+Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3862 oluşturur:
+Aşağıdaki örnek C3862 oluşturur:
 
 ```cpp
 // C3862.cpp

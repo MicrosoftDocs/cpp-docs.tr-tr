@@ -9,28 +9,28 @@ helpviewer_keywords:
 - rowsets [C++], retrieving XML data
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-ms.openlocfilehash: b5704c10393026a14ac66b632559fc376f008f8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be4225003211449a98d3fbe5fd686b9b8058a651
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284524"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212283"
 ---
 # <a name="accessing-xml-data"></a>XML Verilerine Erişme
 
-XML verileri bir veri kaynağından veri almak için iki ayrı yöntem vardır: biri [CStreamRowset](../../data/oledb/cstreamrowset-class.md) ve diğer kullanımları [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).
+Bir veri kaynağından XML verilerini almanın iki ayrı yöntemi vardır: biri [CStreamRowset](../../data/oledb/cstreamrowset-class.md) kullanır ve diğeri [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md)kullanır.
 
-|İşlevi|CStreamRowset|CXMLAccessor|
+|İşlev|CStreamRowset|CXMLAccessor|
 |-------------------|-------------------|------------------|
-|Aktarılan veri miktarı|Verileri tek seferde tüm sütunları ve satırları alır.|Tüm sütunları verilerden ancak aynı anda yalnızca bir satır alır. Satırlar gibi yöntemlerle gitmeniz gerekir `MoveNext`.|
-|Biçimlendirme dizesi|SQL Server XML dizesi olarak biçimlendirir ve tüketiciye gönderir.|Satır kümesi verileri yerel biçiminde (sağlayıcı Unicode dize olarak gönderin isteği) alır ve ardından verileri tutan XML biçiminde bir dize oluşturur.|
-|Biçimlendirme denetimi|Belirli bir düzeyde bazı SQL Server 2000 özgü özelliklerini ayarlayarak XML dizesi nasıl biçimlendirildiğini denetim var.|Oluşturulan XML dizesi biçimi üzerinde denetiminiz yoktur.|
+|Aktarılan veri miktarı|Tüm sütunlardan ve satırlardaki verileri aynı anda alır.|Tek seferde yalnızca bir satır olmak üzere tüm sütunlardan verileri alır. `MoveNext`gibi yöntemleri kullanarak satırlarda gezinmeniz gerekir.|
+|Dizeyi biçimlendirme|SQL Server, XML dizesini biçimlendirir ve tüketiciye gönderir.|Satır kümesi verilerini yerel biçiminde alır (sağlayıcının bunu Unicode dizeleri olarak göndermesini ister) ve sonra verileri XML biçiminde tutan dizeyi oluşturur.|
+|Biçimlendirme üzerinde denetim|Bazı SQL Server 2000 özgü özellikleri ayarlayarak XML dizesinin nasıl biçimlendirildiğine ilişkin bir denetim düzeyindedir.|Oluşturulan XML dizesinin biçimi üzerinde denetiminiz yok.|
 
-Sırada `CStreamRowset` XML biçiminde veri alma, daha fazla bir genel etkili yöntem, yalnızca desteklenen SQL Server 2000 tarafından sağlar.
+`CStreamRowset`, verileri XML biçiminde almanın daha genel verimli bir yolunu sağladığından, yalnızca SQL Server 2000 tarafından desteklenir.
 
 ## <a name="retrieving-xml-data-using-cstreamrowset"></a>CStreamRowset kullanarak XML verilerini alma
 
-Belirttiğiniz [CStreamRowset](../../data/oledb/cstreamrowset-class.md) satır kümesi türü olarak sizin `CCommand` veya `CTable` bildirimi. Bunu kendi erişimci veya erişimci, örneğin kullanabilirsiniz:
+`CCommand` veya `CTable` bildiriminde [CStreamRowset](../../data/oledb/cstreamrowset-class.md) satır kümesi türü olarak belirtirsiniz. Bunu kendi erişimci veya erişimci olmadan kullanabilirsiniz, örneğin:
 
 ```cpp
 CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;
@@ -42,32 +42,32 @@ CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;
 CCommand<CNoAccessor, CStreamRowset> myCmd;
 ```
 
-Normalde çağırdığınızda `CCommand::Open` (belirterek, örneğin, `CRowset` olarak `TRowset` sınıfı), alır bir `IRowset` işaretçi. `ICommand::Execute` döndürür bir `IRowset` depolanan işaretçi `m_spRowset` üyesi `CRowset` nesne. Yöntemler gibi `MoveFirst`, `MoveNext`, ve `GetData` verilerini almak için bu işaretçiyi kullanın.
+Genellikle `CCommand::Open` çağırdığınızda (örneğin, `TRowset` sınıfı olarak `CRowset` belirterek), bir `IRowset` işaretçisi alır. `ICommand::Execute`, `CRowset` nesnesinin `m_spRowset` üyesinde depolanan `IRowset` bir işaretçi döndürür. `MoveFirst`, `MoveNext`ve `GetData` gibi yöntemler, verileri almak için bu işaretçiyi kullanır.
 
-Bunun aksine, çağırdığınızda `CCommand::Open` (ancak `CStreamRowset` olarak `TRowset` sınıfı), `ICommand::Execute` döndürür bir `ISequentialStream` depolanan işaretçi `m_spStream` veri üyesi [CStreamRowset](../../data/oledb/cstreamrowset-class.md). Daha sonra `Read` XML biçiminde (Unicode dize) veri almak için yöntemi. Örneğin:
+Buna karşılık, `CCommand::Open` çağırdığınızda (ancak `TRowset` sınıfı olarak `CStreamRowset` belirtirseniz), `ICommand::Execute` [CStreamRowset](../../data/oledb/cstreamrowset-class.md)'in `ISequentialStream` veri üyesinde depolanan bir `m_spStream` işaretçisi döndürür. Daha sonra, (Unicode dize) verilerini XML biçiminde almak için `Read` yöntemini kullanırsınız. Örneğin:
 
 ```cpp
 myCmd.m_spStream->Read()
 ```
 
-SQL Server 2000, XML biçimlendirmesi yapar ve tüm sütun ve satır kümesinin bir XML dizesi olarak tüm satırları döndürür.
+SQL Server 2000, XML biçimlendirmesini yapar ve tüm sütunları ve satır kümesinin tüm satırlarını tek bir XML dizesi olarak döndürür.
 
-Bir örnek için `Read` yöntemi bkz **tüketici XML desteği ekleme** içinde [basit tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md).
+`Read` yöntemi kullanan bir örnek için, bkz. [basit bir tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md)bölümünde **tüketiciye XML desteği ekleme** .
 
 > [!NOTE]
-> XML desteği kullanarak `CStreamRowset` yalnızca çalışan SQL Server 2000 ve SQL Server 2000 (MDAC yüklü) için bir OLE DB sağlayıcısı sahip olmasını gerektirir.
+> `CStreamRowset` kullanarak XML desteği yalnızca SQL Server 2000 ile çalışmaktadır ve SQL Server 2000 için OLE DB sağlayıcısına sahip olmanızı gerektirir (MDAC ile yüklenir).
 
 ## <a name="retrieving-xml-data-using-cxmlaccessor"></a>CXMLAccessor kullanarak XML verilerini alma
 
-[CXMLAccessor](../../data/oledb/cxmlaccessor-class.md) olanağıyla veri deposunun şeması olduğunda veri dize verileri bir veri kaynağından erişmenize olanak sağlar. `CXMLAccessor` gibi çalışır `CDynamicStringAccessorW` dışında önceki XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür. XML etiket adları veri deposunun sütun adları mümkün olduğunca eşleştirin.
+[CXMLAccessor](../../data/oledb/cxmlaccessor-class.md) , veri deposunun şeması hakkında bilginiz olmadığında veri kaynağındaki verilere dize verileri olarak erişmenizi sağlar. `CXMLAccessor` `CDynamicStringAccessorW` gibi çalışarak, ilki veri deposundan erişilen tüm verileri XML biçimli (etiketli) veriler olarak dönüştürür. XML etiketi adları, veri deposunun sütun adlarıyla mümkün olduğunca yakından eşleşir.
 
-Kullanım `CXMLAccessor` başka bir erişimci sınıfı gibi bir şablon parametresi olarak geçirerek `CCommand` veya `CTable`:
+`CCommand` veya `CTable`şablon parametresi olarak geçirerek başka bir erişimci sınıfı gibi `CXMLAccessor` kullanın:
 
 ```cpp
 CTable<CXMLAccessor, CRowset> rs;
 ```
 
-Kullanım [GetXMLRowData](../../data/oledb/cxmlaccessor-getxmlrowdata.md) aynı anda tablo bir satırdaki verileri almak ve satırlar gibi yöntemlerle gitmek için `MoveNext`, örneğin:
+Tek seferde tablodaki bir satırdan verileri almak için [GetXMLRowData](../../data/oledb/cxmlaccessor-getxmlrowdata.md) kullanın ve `MoveNext`gibi yöntemleri kullanarak satırlarda gezinme yapın, örneğin:
 
 ```cpp
 // Open data source, session, and rowset
@@ -84,7 +84,7 @@ while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )
 }
 ```
 
-Kullanabileceğiniz [GetXMLColumnData](../../data/oledb/cxmlaccessor-getxmlcolumndata.md) XML biçimli dize verileri olarak sütun (veri türü) bilgileri alınamıyor.
+[GetXMLColumnData](../../data/oledb/cxmlaccessor-getxmlcolumndata.md) kullanarak sütun (veri türü) bilgilerini xml biçimli dize verileri olarak alabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

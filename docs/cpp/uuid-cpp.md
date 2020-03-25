@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], uuid
 - uuid __declspec keyword
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
-ms.openlocfilehash: c121ad99dfbe0021a263f324ccdb9a95441bba33
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 09e40d38382bea0f902fda03d15d24e0cf1a627d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740457"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187810"
 ---
 # <a name="uuid-c"></a>uuid (C++)
 
@@ -35,9 +35,9 @@ struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;
 struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;
 ```
 
-Bu öznitelik bir yeniden bildirimde uygulanabilir. Bu, sistem üstbilgilerinin gibi arabirimlerin `IUnknown`tanımlarını sağlamasına ve diğer bir başlıktaki ( \<Comdef. h > gibi) yeniden bildirime GUID sağlamak için izin verir.
+Bu öznitelik bir yeniden bildirimde uygulanabilir. Bu, sistem üstbilgilerinin `IUnknown`gibi arabirimlerin tanımlarını sağlamasına izin verir ve diğer bir başlıktaki (örneğin \<Comdef. h >) bir yeniden bildirimi GUID sağlar.
 
-[__Uuidof](../cpp/uuidof-operator.md) anahtar sözcüğü, Kullanıcı tanımlı bir türe eklenen sabit GUID 'yi almak için uygulanabilir.
+Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) , Kullanıcı tanımlı bir türe eklenen sabit GUID 'i almak için uygulanabilir.
 
 **SON Microsoft 'a özgü**
 

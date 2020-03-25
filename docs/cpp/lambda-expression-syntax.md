@@ -4,28 +4,28 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
-ms.openlocfilehash: 37e4a512678bf276b5244fd54945f49a37ff8d01
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 9ac2fdea1a8fc8dcf2b03059455c3141daf86aa8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222394"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179659"
 ---
 # <a name="lambda-expression-syntax"></a>Lambda İfadesi Sözdizimi
 
-Bu makalede, söz dizimi ve lambda ifadelerinin yapısal öğelerini gösterir. Lambda ifadeleri bir açıklaması için bkz: [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
+Bu makalede lambda ifadelerinin sözdizimi ve yapısal öğeleri gösterilmektedir. Lambda ifadelerinin açıklaması için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
 
-## <a name="function-objects-vs-lambdas"></a>İşlev nesneleri vs. Lambda ifadeleri
+## <a name="function-objects-vs-lambdas"></a>İşlev Nesneleri ile Lambdaların Karşılaştırılması
 
-Kod yazdığınızda, büyük olasılıkla işlev işaretçilerini ve işlev nesneleri problemleri çözmenize ve özellikle kullandığınızda hesaplamaları gerçekleştirmek için kullandığınız [standart C++ Kitaplığı algoritmaları](../cpp/algorithms-modern-cpp.md). İşlev işaretçileri ve işlev nesnelerinin avantajları ve dezavantajları vardır; örneğin, işlev işaretçilerinin söz dizimsel az yükü vardır ancak bir kapsam içindeki durumu korumaz ve işlev nesneleri durumunu koruyabilir ancak söz dizimsel getirdiği ek yüke gerek bir sınıf tanımı.
+Kod yazdığınızda, özellikle [ C++ standart kitaplık algoritmaları](../cpp/algorithms-modern-cpp.md)kullandığınızda sorunları çözümlemek ve hesaplamalar gerçekleştirmek için işlev işaretçilerini ve işlev nesnelerini kullanırsınız. İşlev işaretçilerinin ve işlev nesnelerinin avantajları ve dezavantajları vardır — örneğin, işlev işaretçileri en az sözdizimsel yüke sahiptir, ancak bir kapsamda durumu korumaz ve işlev nesneleri durum durumunu koruyabilir ancak sınıf tanımı.
 
-Bir lambda, işlev işaretçilerinin ve işlev nesnelerinin avantajlarını bir araya getirirken dezavantajlarını ortadan kaldırır. Bir işlev nesnesi gibi bir lambda esnektir ve durumu koruyabilir, ancak bir işlev nesnesinin aksine onun sıkıştırılmış söz dizimi bir açık sınıf tanımı gerektirmez. Lambdaları kullanarak, bir işlev nesnesine eşdeğer koda göre daha az hantal ve hataya daha az eğilimli kod yazabilirsiniz.
+Bir lambda, işlev işaretçilerinin ve işlev nesnelerinin avantajlarını bir araya getirirken dezavantajlarını ortadan kaldırır. İşlev nesneleri gibi bir lambda esnektir ve durumu koruyabilir, ancak bir işlev nesnesinden farklı olarak, Compact sözdizimi açık bir sınıf tanımı gerektirmez. Lambdaları kullanarak, bir işlev nesnesine eşdeğer koda göre daha az hantal ve hataya daha az eğilimli kod yazabilirsiniz.
 
-Aşağıdaki örnekler, lambda kullanımını işlevi nesnesi kullanımıyla karşılaştırır. İlk örnek konsola yazdırmak için bir lambda kullanır olup olmadığını her öğe bir `vector` çift veya tek nesne. İkinci örnek aynı görevi başarmak için bir işlev nesnesi kullanır.
+Aşağıdaki örnekler, lambda kullanımını işlevi nesnesi kullanımıyla karşılaştırır. İlk örnek, `vector` nesnesindeki her öğenin çift veya tek olup olmadığını konsola yazdırmak için bir lambda kullanır. İkinci örnek aynı görevi başarmak için bir işlev nesnesi kullanır.
 
-## <a name="example-1-using-a-lambda"></a>Örnek 1: Bir Lambda kullanma
+## <a name="example-1-using-a-lambda"></a>Örnek 1: Bir Lambda Kullanma
 
-Bu örnek için bir lambda geçirir **for_each** işlevi. Lambda bildiren bir sonucu yazdırmaya olup olmadığını her öğe bir `vector` çift veya tek nesne.
+Bu örnek **for_each** işlevine bir lambda geçirir. Lambda, `vector` nesnesindeki her öğenin çift mi yoksa tek mi olduğunu belirten bir sonuç yazdırır.
 
 ### <a name="code"></a>Kod
 
@@ -77,15 +77,15 @@ int main()
 There are 4 even numbers in the vector.
 ```
 
-### <a name="comments"></a>Açıklamalar
+### <a name="comments"></a>Yorumlar
 
-Örnekte, üçüncü bağımsız değişkeni **for_each** işlevi bir lambdadır. `[&evenCount]` Kısmı belirtir ifadesinin yakalama yan tümcesi `(int n)` parametre listesi ve kalan bölümü ifadesinin gövdesi belirtir.
+Örnekte, **for_each** işlevinin üçüncü bağımsız değişkeni bir lambda 'dir. `[&evenCount]` bölümü, ifadenin yakalama yan tümcesini belirtir, `(int n)` parametre listesini belirtir ve kalan bölüm, ifadenin gövdesini belirtir.
 
-## <a name="example-2-using-a-function-object"></a>Örnek 2: Bir işlev nesnesi kullanma
+## <a name="example-2-using-a-function-object"></a>Örnek 2: Bir İşlev Nesnesi Kullanma
 
-Bazen bir lambda önceki örnekten daha fazla genişletmek için çok kullanışsız olur. Sonraki örnek ile birlikte bir işlev nesnesi bir lambda yerine kullanır **for_each** örnek 1'dekiyle aynı sonucu elde etmek. Örneklerin her ikisi de çift sayıların sayısını depolar bir `vector` nesne. İşlemin durumunu korumak üzere `FunctorClass` sınıfı depoları `m_evenCount` bir üye değişkeni başvurusuna göre. İşlemi gerçekleştirmek için `FunctorClass` işlev çağrısı işlecini uygular **operator()**. Microsoft C++ derleyici, boyut ve performans örnek 1'deki lambda koduyla karşılaştırılabilir kodu oluşturur. Bu makaledeki gibi temel bir sorun için, daha basit bir lambda tasarımı işlev nesnesi tasarımından genellikle daha iyi bir tasarımdır. Ancak ilerde işlevsellik için önemli bir genişletme gerekeceğini düşünüyorsanız, kodu korumayı kolaylaştıracak işlev nesnesi tasarımını kullanabilirsiniz.
+Bazen bir lambda önceki örnekten daha fazla genişletmek için çok kullanışsız olur. Sonraki örnek, örnek 1 ile aynı sonuçları üretmek için **for_each** işleviyle birlikte lambda yerine bir işlev nesnesi kullanır. Her iki örnek de bir `vector` nesnesindeki çift sayı sayısını depolar. İşlemin durumunu korumak için `FunctorClass` sınıfı, `m_evenCount` değişkenini bir üye değişkeni olarak başvuruya göre depolar. İşlemi gerçekleştirmek için `FunctorClass`, **işleç ()** işlev çağrısı işlecini uygular. Microsoft C++ derleyicisi, örnek 1 ' deki lambda koduna boyut ve performansa benzer bir kod oluşturur. Bu makaledeki gibi temel bir sorun için, daha basit bir lambda tasarımı işlev nesnesi tasarımından genellikle daha iyi bir tasarımdır. Ancak ilerde işlevsellik için önemli bir genişletme gerekeceğini düşünüyorsanız, kodu korumayı kolaylaştıracak işlev nesnesi tasarımını kullanabilirsiniz.
 
-Hakkında daha fazla bilgi için **operator()**, bkz: [işlevi çağrısı](../cpp/function-call-cpp.md). Hakkında daha fazla bilgi için **for_each** çalışması için bkz: [for_each](../standard-library/algorithm-functions.md#for_each).
+**İşleci ()** hakkında daha fazla bilgi için bkz. [işlev çağrısı](../cpp/function-call-cpp.md). **For_each** işlevi hakkında daha fazla bilgi için bkz. [for_each](../standard-library/algorithm-functions.md#for_each).
 
 ### <a name="code"></a>Kod
 
@@ -161,7 +161,7 @@ There are 4 even numbers in the vector.
 
 [Lambda İfadeleri](../cpp/lambda-expressions-in-cpp.md)<br/>
 [Lambda İfadeleri Örnekleri](../cpp/examples-of-lambda-expressions.md)<br/>
-[Oluştur](../standard-library/algorithm-functions.md#generate)<br/>
+[üretecek](../standard-library/algorithm-functions.md#generate)<br/>
 [generate_n](../standard-library/algorithm-functions.md#generate_n)<br/>
 [for_each](../standard-library/algorithm-functions.md#for_each)<br/>
 [Özel Durum Belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md)<br/>

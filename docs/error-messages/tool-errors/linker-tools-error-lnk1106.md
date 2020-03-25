@@ -6,33 +6,33 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1106
 ms.assetid: 528f7e65-04be-4966-b8af-9276837c7cda
-ms.openlocfilehash: 7551e2f3f1efc90913981feb674f48aadb9ace51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 091d4e173bfb2eff8ffee2b5c30647f4d5e3bc04
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255325"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195376"
 ---
 # <a name="linker-tools-error-lnk1106"></a>Bağlayıcı Araçları Hatası LNK1106
 
-dosya geçersiz veya disk dolu: konumuna aranamıyor
+Geçersiz dosya veya disk dolu: konum aranamıyor
 
-Aracı yüklenemedi okuma veya yazma `location` bellek eşlemeli dosya olarak.
+Araç, bellek eşlemeli bir dosyada `location` okuyamadı veya yazamadı.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
 1. Disk dolu.
 
-   Biraz alan boşaltın ve yeniden bağlayın.
+   Biraz alan boşaltın ve yeniden bağlantı kurun.
 
-1. Bir ağ üzerinden bağlantı çalışılıyor.
+1. Bir ağ üzerinden bağlantı kurmaya çalışılıyor.
 
-   Bazı ağlar bağlayıcı tarafından kullanılan bellek eşlemeli dosyalar tam olarak desteklemez. Yerel diskinizde bağlamayı deneyin.
+   Bazı ağlar, bağlayıcı tarafından kullanılan bellek eşlemeli dosyaları tam olarak desteklemez. Yerel diskinize bağlanmayı deneyin.
 
 1. Diskinizde bozuk blok.
 
-   Disk donanım ve işletim sistemi gibi bir hata algılandı olsa da, bir disk denetleme programı çalıştırmak isteyebilirsiniz.
+   İşletim sistemi ve disk donanımında böyle bir hata algılanırsa, ancak bir disk denetleme programı çalıştırmak isteyebilirsiniz.
 
-1. Yığın alanı kalmadı.
+1. Yığın alanı yetersiz.
 
-   Bkz: [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) daha fazla bilgi için.
+   Daha fazla bilgi için bkz. [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) .

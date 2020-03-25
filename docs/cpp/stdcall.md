@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - __stdcall keyword [C++]
 ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
-ms.openlocfilehash: df753241c093db75202a10b106631ce36cf73379
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 3abd1d020e4181a42a7bc38319e5e17e69ef0507
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857287"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178550"
 ---
 # <a name="__stdcall"></a>__stdcall
 
-**__Stdcall** çağırma kuralı, Win32 API işlevleri çağırmak için kullanılır. Çağıran, yığın temizler, bu nedenle derleyici `vararg` işlevleri **__cdecl**hale getirir. Bu çağrı kuralını kullanan işlevler bir işlev prototipi gerektirir. **__Stdcall** değiştiricisi Microsoft 'a özgüdür.
+**__Stdcall** çağırma kuralı, Win32 API işlevleri çağırmak için kullanılır. Çağıran, yığın temizler, bu nedenle derleyici `vararg` işlevleri **__cdecl**hale getirir. Bu çağırma kuralını kullanan işlevler, bir işlev prototipi gerektirir. **__Stdcall** değiştiricisi Microsoft 'a özgüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,10 +30,10 @@ Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
 |Öğe|Uygulama|
 |-------------|--------------------|
 |Bağımsız değişken geçirme sırası|Sağdan sola.|
-|Bağımsız değişken geçirme kuralı|Bir işaretçi veya başvuru türü geçirilmezse değer olarak.|
-|Yığın bakımı sorumluluğu|Çağırılan işlev, yığından bağımsız kendi değişkenlerini açar.|
-|Ad düzenleme kuralı|Alt çizgi (_) adın önekidir. Adın ardından at işareti (@) ve bağımsız değişken listesindeki bayt sayısı gelir (ondalık olarak). Bu nedenle, `int func( int a, double b )` olarak bildirilen işlev şu şekilde sunulur: `_func@12`|
-|Durum çevirisi kuralları|Yok.|
+|Bağımsız değişken geçirme kuralı|Bir işaretçi veya başvuru türü geçirilmemişse değere göre.|
+|Yığın bakımı sorumluluğu|Çağrılan işlev, kendi bağımsız değişkenlerini yığından çıkarır.|
+|Ad düzenleme kuralı|Adın önüne bir alt çizgi (_) eklenir. Adından sonra gelen işareti (@) ve ardından bağımsız değişken listesindeki bayt sayısı (ondalık olarak) gelir. Bu nedenle, `int func( int a, double b )` olarak belirtilen işlev şu şekilde tasarlanmıştır: `_func@12`|
+|Durum çevirisi kuralları|Hiçbiri|
 
 [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği, farklı bir çağırma kuralıyla açıkça bildirilmeyen tüm işlevler için **__stdcall** belirtir.
 
@@ -51,13 +51,13 @@ struct CMyClass {
 };
 ```
 
-this
+bu
 
 ```cpp
 void CMyClass::mymethod() { return; }
 ```
 
-şuna eşdeğerdir:
+Buna eşdeğerdir
 
 ```cpp
 void __stdcall CMyClass::mymethod() { return; }

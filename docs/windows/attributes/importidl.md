@@ -1,21 +1,21 @@
 ---
-title: importidl (C++ COM özniteliği)
+title: ımportıdl (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importidl
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-ms.openlocfilehash: 9db62d4f2a36b8cc0592c924b113077a758915c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e41a98bef079c92b6df6e7eff203301aa9ceae4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409440"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166828"
 ---
 # <a name="importidl"></a>importidl
 
-Belirtilen .idl dosyası oluşturulan .idl dosyasına ekler.
+Belirtilen. IDL dosyasını oluşturulan. IDL dosyasına ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,13 +26,13 @@ Belirtilen .idl dosyası oluşturulan .idl dosyasına ekler.
 ### <a name="parameters"></a>Parametreler
 
 *idl_file*<br/>
-Uygulamanız için oluşturulacak .idl dosyası ile birleştirmek istediğiniz .idl dosyasının adını tanımlar.
+Uygulamanız için oluşturulacak. IDL dosyası ile birleştirmek istediğiniz. IDL dosyasının adını tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmportidl** C++ özniteliği yerleştirir kitaplığı bloğu dışında bölümü (içinde *idl_file*) programınızın oluşturulan .idl dosyasının ve kitaplık bölümü (içinde *idl_file*) kitaplığa programınızın bölümünü .idl dosyası oluşturuldu.
+**Importıdl** C++ özniteliği, *idl_file*bölümü, programınızın üretilen. IDL dosyasına ve kitaplık bölümüne ( *idl_file*) programınızın oluşturulan. IDL dosyasının Kitaplık bölümüne koyar.
 
-Kullanmak istediğiniz **importidl**, örneğin, bir .idl el kodlanmış ile oluşturulan .idl dosyası kullanmak istiyorsanız.
+Örneğin, üretilen. IDL dosyanıza birlikte kodlanmış bir. IDL dosyası kullanmak istiyorsanız, **ımportidl**kullanmak isteyebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
@@ -49,12 +49,12 @@ Kullanmak istediğiniz **importidl**, örneğin, bir .idl el kodlanmış ile olu
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

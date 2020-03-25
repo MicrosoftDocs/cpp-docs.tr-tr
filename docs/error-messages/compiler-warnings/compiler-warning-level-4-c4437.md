@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4437
 ms.assetid: dc07e350-20eb-474c-a7ad-f841ae7ec339
-ms.openlocfilehash: 6cd50d5c4d79b82c135ab4e84ec390dee9e906ef
-ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
+ms.openlocfilehash: 84c6e8d09495d871b8c490a92558aaba14b0574c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810647"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185340"
 ---
 # <a name="compiler-warning-level-4-c4437"></a>Derleyici Uyarısı (düzey 4) C4437
 

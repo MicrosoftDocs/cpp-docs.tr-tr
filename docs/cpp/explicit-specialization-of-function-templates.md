@@ -8,22 +8,22 @@ helpviewer_keywords:
 - declaring functions [C++], specialization of function template
 - specialization of function templates
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
-ms.openlocfilehash: 3d91383f895f1a8be983efe42f685419ca988823
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9d77cef790bdd0a65651ffb7246e685175482b1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184282"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179997"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>İşlev Şablonlarının Açık Alt Uzmanlaşması
 
-Bir işlev şablonu ile bu tür için işlev şablonunun açık uzmanlığı (geçersiz kılma) sağlayarak, belirli bir tür için özel bir davranış tanımlayabilirsiniz. Örneğin:
+Bir işlev şablonuyla, bu tür için işlev şablonunun açık bir özelleştirmesi (geçersiz kılma) sağlayarak belirli bir tür için özel davranış tanımlayabilirsiniz. Örneğin:
 
 ```cpp
 template<> void MySwap(double a, double b);
 ```
 
-Bu bildirim için farklı bir işlev tanımlamanızı sağlayan **çift** değişkenleri. Gibi şablon olmayan işlevlere, standart tür dönüştürmeleri (türünde bir değişken yükseltme gibi **float** için **çift**) uygulanır.
+Bu bildirim, **çift** değişkenler için farklı bir işlev tanımlamanıza olanak sağlar. Şablon olmayan işlevler gibi standart tür dönüştürmeleri ( **float** türündeki bir değişkeni **ikiye**yükseltmek gibi) uygulanır.
 
 ## <a name="example"></a>Örnek
 

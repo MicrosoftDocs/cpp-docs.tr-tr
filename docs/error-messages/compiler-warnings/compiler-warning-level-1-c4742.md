@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4742
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
-ms.openlocfilehash: 11663a9b8672e2f91feb59e275181dbe645484e9
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: af97c72f496177d2e94cf18f9685ac33c5e62404
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051305"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185665"
 ---
 # <a name="compiler-warning-level-1-c4742"></a>Derleyici Uyarısı (düzey 1) C4742
 

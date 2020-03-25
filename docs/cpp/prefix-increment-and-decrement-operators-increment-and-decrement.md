@@ -13,12 +13,12 @@ helpviewer_keywords:
 - decrement operators [C++], syntax
 - decrement operators [C++]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
-ms.openlocfilehash: deb8acc6c6a68c9a97f2f0efbdc4084b4937df46
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 32c210961c4966bb7b2cbcc597bd3c99f0d6ed24
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392108"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177670"
 ---
 # <a name="prefix-increment-and-decrement-operators--and---"></a>Önek Arttırma ve Azaltma İşleçleri: ++ ve --
 
@@ -31,13 +31,13 @@ ms.locfileid: "62392108"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önek artırma işleci (**++**) ekler; işleneni bir ifadenin sonucu artan değerdir. İşlenen türü l değeri olmalıdır **const**. İşlenen aynı türden bir l değeri sonucudur.
+Ön ek artırma işleci ( **++** ), işleneninin bir tane ekler; Bu arttırılan değer, ifadenin sonucudur. İşlenen **const**türünde olmayan bir l değeri olmalıdır. Sonuç, işleneniyle aynı türdeki bir l değeridir.
 
-Önek azaltma işleci (**--**) önek artırma işleci için işlenen bir azaltılır ve sonuç indirildiği bu değer dışında benzerdir.
+Önek azaltma işleci ( **--** ) önek artışı işlecine benzerdir, bu da işlenenin bir tane tarafından azaltılmasının yanı sıra bu değerin azalmasını sağlar.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir artırma veya azaltma işlecinin işleneni türü olmayabilir **bool**.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): artırma veya azaltma işlecinin işleneni **bool**türünde olamaz.
 
-Önek ve sonek artırma ve azaltma işleçleri işlenenleri etkiler. Aralarındaki temel fark, artırma veya azaltma ifade değerlendirme işlemi gerçekleştirilir sırasıdır. (Daha fazla bilgi için [sonek arttırma ve azaltma işleçleri](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) İfadenin değerine işlenenin değerinden farklı olacak şekilde değeri ifade değerlendirmesinde kullanılmadan önce ön eki biçiminde artırma veya azaltma yerini alır. İfadenin değerine işlenenin değerini aynı olacak şekilde değeri ifade değerlendirmesinde kullanıldıktan sonra sonek formda artırma veya azaltma gerçekleşir. Örneğin, aşağıdaki yazdırır program "`++i = 6`":
+Ön ek ve sonek artırma ve azaltma işleçleri işlenenlerini etkiler. Aralarındaki temel fark, bir ifadenin değerlendirmesinde artış veya azalış gerçekleştiği sıradır. (Daha fazla bilgi için bkz. [sonek artırma ve azaltma işleçleri](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) Önek formunda, değer ifade değerlendirmesinde kullanılmadan önce artış veya azaltma gerçekleştirilir, bu nedenle ifadenin değeri işlenenin değerinden farklı olur. Sonek formunda, değer ifade değerlendirmesinde kullanıldıktan sonra artırma veya azaltma gerçekleştirilir, bu nedenle ifadenin değeri işlenenin değeri ile aynıdır. Örneğin, aşağıdaki program "`++i = 6`" yazdırır:
 
 ```cpp
 // expre_Increment_and_Decrement_Operators.cpp
@@ -52,9 +52,9 @@ int main() {
 }
 ```
 
-Tamsayı veya kayan türünde bir işlenen, tamsayı değeri 1 artırılması veya azaltılması. Sonuç türü, işlenenin türü ile aynıdır. İşaretçi türünde bir işlenen sıra nesnesi tarafından artırılması veya azaltılması boyutudur. Artan bir işaretçi sonraki nesneye işaret eder; indirildiği işaretçi önceki nesneye işaret eder.
+İntegral veya kayan türün işleneni, 1 tamsayı değeri tarafından artırılır veya azaltılır. Sonucun türü, işlenen türüyle aynıdır. İşaretçi türündeki bir işlenen, adreslenen nesnenin boyutuyla artırılır veya azaltılır. Artan bir işaretçi sonraki nesneye işaret eder; azaltma işaretçisi önceki nesneye işaret eder.
 
-Çünkü artırma ve azaltma işleçleri, artırma veya azaltma işleçleri ifadeleri kullanarak yan etkileri olan bir [önişlemci makrosu](../preprocessor/macros-c-cpp.md) istenmeyen sonuçları olabilir. Bu örneği göz önünde bulundurun:
+Artırma ve azaltma işleçleri yan etkilere sahip olduğundan, bir [Önişlemci makrosunda](../preprocessor/macros-c-cpp.md) artırma veya azaltma işleçleri olan ifadelerin kullanılması istenmeyen sonuçlara neden olabilir. Şu örneği göz önünde bulundurun:
 
 ```cpp
 // expre_Increment_and_Decrement_Operators2.cpp
@@ -67,16 +67,16 @@ int main()
 }
 ```
 
-Makro genişletir:
+Makro şu şekilde genişletilir:
 
 ```cpp
 k = ((++i)<(j))?(j):(++i);
 ```
 
-Varsa `i` büyüktür veya eşittir `j` veya küçüktür `j` 1 ile iki kez artırılacaktır.
+`i`, `j` veya daha büyük bir değere eşit veya `j` sıfırdan küçükse, iki kez artacaktır.
 
 > [!NOTE]
->  C++ satır içi işlevler, bunlar burada açıklananlar gibi yan etkileri ortadan kaldırdığı için çoğu durumda makroları tercih edilir ve dil daha eksiksiz tür denetimi gerçekleştirmek izin.
+>  C++Burada açıklananlar gibi yan etkileri ortadan kaldırdıklarından ve dilin daha kapsamlı bir tür denetimi gerçekleştirmesine izin verdiklerinden, satır içi işlevler birçok durumda makrolara tercih edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal
 ms.assetid: ffa997fd-8cd7-40a5-b9e7-f55d40b072f4
-ms.openlocfilehash: a1ac0576bdd374daa5cbd445af480e7652b61e45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1291084395b02602b7a3de9013df6720d2e237fc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398712"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214103"
 ---
 # <a name="comparestringordinal-method"></a>CompareStringOrdinal Yöntemi
 
@@ -26,29 +26,29 @@ inline INT32 CompareStringOrdinal(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*<br/>
-Karşılaştırılacak ilk HSTRING.
+*Point*<br/>
+Karşılaştırılacak ilk HSTRıNG.
 
-*Sol*<br/>
+*sağ taraftan*<br/>
 Karşılaştırılacak ikinci HSTRING.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 |Değer|Koşul|
 |-----------|---------------|
-|-1|*lhs* olduğu küçüktür *sol*.|
-|0|*lhs* eşittir *sol*.|
-|1.|*lhs* büyüktür *sol*.|
+|-1|*LHS* , *RHS*'den küçük.|
+|0|*LHS* eşittir *RHS*.|
+|1|*LHS* , *RHS*'den büyük.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki belirtilen HSTRING nesneyi karşılaştırır ve bir sıralama düzeni kendi göreli konumunu belirten bir tamsayı döndürür.
+Belirtilen iki HSTRıNG nesnesini karşılaştırır ve göreli konumunu bir sıralama düzeninde gösteren bir tamsayı döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Namespace:** Microsoft::WRL::Wrappers::details
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - last_is attribute
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-ms.openlocfilehash: 4745d4eb59fd2adb79937b34184081dbbd0814fb
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 62377415dc0809033fcdcb8bd4e7997f667c1691
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514512"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214818"
 ---
 # <a name="last_is"></a>last_is
 
@@ -30,7 +30,7 @@ Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Last_is** C++ özniteliği, [last_is](/windows/win32/Midl/last-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Last_is** C++ özniteliği [last_is](/windows/win32/Midl/last-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -44,8 +44,8 @@ Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) .
 |-|-|
 |**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

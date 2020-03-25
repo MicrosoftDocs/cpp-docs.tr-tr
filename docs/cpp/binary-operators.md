@@ -6,12 +6,12 @@ helpviewer_keywords:
 - operators [C++], binary
 - binary operators [C++]
 ms.assetid: c0e7fbff-bc87-4708-8333-504ac09ee83e
-ms.openlocfilehash: 700d8fd784862c3e9f81fcde839063ff0a4696bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 030ae71fec7a0d1572804f30d09f6f9b2749e436
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176661"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181310"
 ---
 # <a name="binary-operators"></a>İkili İşleçler
 
@@ -22,8 +22,8 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 |İşleç|Ad|
 |--------------|----------|
 |**,**|Virgül|
-|**\!=**|Eşitsizlik|
-|**%**|Mod|
+|**!=**|Eşitsizlik|
+|**%**|Modulus|
 |**%=**|Mod/atama|
 |**&**|Bit düzeyinde AND|
 |**&&**|Mantıksal VE|
@@ -35,7 +35,7 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 |**-**|Çıkarma|
 |**-=**|Çıkarma/atama|
 |**->**|Üye seçimi|
-|**->&#42;**|İşaretçi-üye seçimi|
+|**->&#42;**|Üye işaretçisi seçimi|
 |**/**|Bölme|
 |**/=**|Bölme/atama|
 |**<**|Küçüktür|
@@ -48,7 +48,7 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 |**>=**|Büyüktür veya eşittir|
 |**>>**|Sağa kaydırma|
 |**>>=**|Sağa kaydırma/atama|
-|**^**|Dışlamalı OR|
+|**^**|Dışlamalı veya|
 |**^=**|Özel VEYA/atama|
 |**&#124;**|Bit düzeyinde kapsamalı OR|
 |**&#124;=**|Bit düzeyinde kapsamlı VEYA/atama|
@@ -56,15 +56,15 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 
 İkili işleç işlevini statik olmayan bir üye olarak bildirmek için şu biçimde bildirmeniz gerekir:
 
-> *ret-type* **işleci** *op* **(** *arg* **)**
+> *ret türü* **işleç işleci** *op* **(** *arg* **)**
 
-Burada *ret-type* dönüş türü *op* yukarıdaki tabloda listelenen işleçlerden biridir ve *arg* herhangi bir türde bir bağımsız değişken.
+Burada *ret-Type* dönüş türü, *op* , yukarıdaki tabloda listelenen işleçlerden *biridir ve bağımsız değişken herhangi* bir türde bağımsız değişkendir.
 
 İkili bir işleç işlevini genel bir işlev olarak bildirmek için şu biçimde bildirmeniz gerekir:
 
-> *ret-type* **işleci** *op* **(** _arg1_**,** _arg2_ **)**
+> *ret türü* **işleç işleci** *op* **(** _arg1_ **,** _arg2_ **)**
 
-Burada *ret-type* ve *op* üye işleci işlevleri için tanımlanmıştır ve *arg1* ve *arg2* bağımsız değişkenler. Bağımsız değişkenlerden en az biri sınıf türünde olmalıdır.
+Burada *ret-Type* ve *op* , Üye operatörü işlevleri ve *arg1* ve *arg2* bağımsız değişkenleri için açıklanmıştır. Bağımsız değişkenlerden en az biri sınıf türünde olmalıdır.
 
 > [!NOTE]
 > İkili işleçlerin dönüş türlerinde herhangi bir sınırlama yoktur; ancak, kullanıcı tanımlı ikili işleçlerin çoğu bir sınıf türü veya sınıf türü başvurusu döndürür.

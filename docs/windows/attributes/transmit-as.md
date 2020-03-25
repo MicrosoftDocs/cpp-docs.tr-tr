@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-ms.openlocfilehash: 939013e43f08aeda788e468c995f1736cf6b6928
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: cf89be12672ac77a67617b6b222f27d739db9261
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513917"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214493"
 ---
 # <a name="transmit_as"></a>transmit_as
 
@@ -30,11 +30,11 @@ Derleyiciye, iletilen bir tür ile istemci ve sunucu uygulamalarının işlemekt
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Transmit_as** C++ özniteliği, [transmit_as](/windows/win32/Midl/transmit-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Transmit_as** C++ özniteliği [transmit_as](/windows/win32/Midl/transmit-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod **transmit_as** özniteliğinin kullanımını gösterir:
+Aşağıdaki kod **transmit_as** özniteliği kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_transmit_as.cpp
@@ -72,8 +72,8 @@ struct _TREE_NODE_TYPE * right;
 |-|-|
 |**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -66,12 +66,12 @@ helpviewer_keywords:
 - operator =, bookmarks
 - operator=, bookmarks
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-ms.openlocfilehash: 89c7e62e51adbe96bee870b4baa8a35784b61ac0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e15be3342b32b432c438b65ec57765cb135f5316
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447254"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212244"
 ---
 # <a name="cbookmark-class"></a>CBookmark Sınıfı
 
@@ -117,7 +117,7 @@ Yer işareti arabelleğinin bayt cinsinden boyutu. *NSize* sıfır olduğunda, y
 
 `CBookmark<0>`, `CBookmark`şablon özelleştirmesi; arabelleği, çalışma zamanında dinamik olarak oluşturulur.
 
-## <a name="cbookmark"></a>CBookmark:: CBookmark
+## <a name="cbookmarkcbookmark"></a><a name="cbookmark"></a>CBookmark:: CBookmark
 
 Oluşturucu.
 
@@ -140,7 +140,7 @@ CBookmark(DBLENGTH nSize);
 > [!NOTE]
 >  Bu işlev yalnızca `CBookmark<0>`kullanılabilir.
 
-## <a name="getbuffer"></a>CBookmark:: GetBuffer
+## <a name="cbookmarkgetbuffer"></a><a name="getbuffer"></a>CBookmark:: GetBuffer
 
 Yer işareti arabelleğinin işaretçisini alır.
 
@@ -154,7 +154,7 @@ virtual BYTE* GetBuffer() const throw();
 
 Yer işareti arabelleğine yönelik bir işaretçi.
 
-## <a name="getsize"></a>CBookmark:: GetSize
+## <a name="cbookmarkgetsize"></a><a name="getsize"></a>CBookmark:: GetSize
 
 Yer işareti arabelleğinin boyutunu alır.
 
@@ -168,7 +168,7 @@ virtual DBLENGTH GetSize() const throw();
 
 Arabelleğin bayt cinsinden boyutu.
 
-## <a name="setbookmark"></a>CBookmark:: SetBookmark
+## <a name="cbookmarksetbookmark"></a><a name="setbookmark"></a>CBookmark:: SetBookmark
 
 *PBuffer* tarafından başvurulan yer işareti değerini `CBookmark` arabelleğine kopyalar ve arabellek boyutunu *nSize*olarak ayarlar.
 
@@ -194,7 +194,7 @@ Standart HRESULT.
 
 Bu işlev yalnızca `CBookmark<0>`kullanılabilir.
 
-## <a name="operator"></a>CBookmark:: operator =
+## <a name="cbookmarkoperator-"></a><a name="operator"></a>CBookmark:: operator =
 
 Başka bir `CBookmark` nesnesi atar.
 

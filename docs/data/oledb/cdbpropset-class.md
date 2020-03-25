@@ -32,12 +32,12 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: 08cab967fbfbd4b3207e96a4fdbd2d2dbc6da793
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e2bb01e6acb9298b08fddc3117ec93dd7c0c2417
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447454"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212048"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
@@ -73,7 +73,7 @@ class CDBPropSet : public tagDBPROPSET
 
 OLE DB sağlayıcıları ve tüketicileri `DBPROP` yapıların dizilerini iletmek için `DBPROPSET` yapılarını kullanır. Her `DBPROP` yapısı, ayarlanabilir tek bir özelliği temsil eder.
 
-## <a name="addproperty"></a>CDBPropSet:: AddProperty
+## <a name="cdbpropsetaddproperty"></a><a name="addproperty"></a>CDBPropSet:: AddProperty
 
 Özellik kümesine bir özellik ekler.
 
@@ -124,7 +124,7 @@ bool AddProperty(DWORD dwPropertyID,
 
 Özellik başarıyla eklendiyse **true** . Aksi takdirde, **false**.
 
-## <a name="cdbpropset"></a>CDBPropSet:: CDBPropSet
+## <a name="cdbpropsetcdbpropset"></a><a name="cdbpropset"></a>CDBPropSet:: CDBPropSet
 
 Oluşturucu. [Dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısının `rgProperties`, `cProperties`ve `guidPropertySet` alanlarını başlatır.
 
@@ -146,7 +146,7 @@ CDBPropSet();
 *PropSet*<br/>
 'ndaki Kopya oluşturma için başka bir `CDBPropSet` nesnesi.
 
-## <a name="setguid"></a>CDBPropSet:: Setguıd
+## <a name="cdbpropsetsetguid"></a><a name="setguid"></a>CDBPropSet:: Setguıd
 
 `DBPROPSET` yapısındaki `guidPropertySet` alanını ayarlar.
 
@@ -165,7 +165,7 @@ void SetGUID(const GUID& guid) throw();
 
 Bu alan, [Oluşturucu](../../data/oledb/cdbpropset-cdbpropset.md) tarafından da ayarlanabilir.
 
-## <a name="op_equal"></a>CDBPropSet:: operator =
+## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a>CDBPropSet:: operator =
 
 Bir özellik kümesinin içeriğini başka bir özellik kümesine atar.
 

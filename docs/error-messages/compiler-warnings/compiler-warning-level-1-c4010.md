@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4010
 ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
-ms.openlocfilehash: 045b3f6e615e11c24caa9a088baf6ea9f6448efb
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 6045d49ee34f837ad9f22bac5b2b43b75a998f7c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627324"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164696"
 ---
 # <a name="compiler-warning-level-1-c4010"></a>Derleyici Uyarısı (düzey 1) C4010
 

@@ -9,22 +9,22 @@ helpviewer_keywords:
 - OR operator
 - logical OR operator
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
-ms.openlocfilehash: 5db1af870644d1552aeac813edce0985a31d95b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94b2bc024dd7223ac7adacc72924f5ee289bab37
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368688"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178086"
 ---
 # <a name="logical-or-operator-"></a>Mantıksal OR işleci: ||
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *mantıksal-veya-expression* **||** *mantıksal-ve-ifadesi*
+> mantıksal *or* -ifadesi **||** *mantıksal and ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mantıksal OR işlecinin (**||**) boolean TRUE değerini döndürür veya her iki işlenen de TRUE ise ve aksi takdirde FALSE döndürür. İşlenen örtülü olarak türüne dönüştürülür **bool** önceki değerlendirme ve sonuç türüdür **bool**. Mantıksal OR'un ilişkilendirilebilirliği soldan sağadır.
+Mantıksal OR işleci ( **||** ), her iki IŞLENEN de TRUE ise true Boole değerini döndürür ve aksı takdirde false döndürür. İşlenenler, değerlendirmeden önce örtük olarak **bool** türüne dönüştürülür ve sonuç **bool**türündedir. Mantıksal OR'un ilişkilendirilebilirliği soldan sağadır.
 
 Mantıksal OR işlecinin işlenenlerinin aynı türden olmasına gerek yoktur, ancak integral veya işaretçi türünde olmaları gerekir. İşlenenler, genel olarak ilişkisel veya eşitlik ifadeleridir.
 
@@ -36,11 +36,11 @@ Mantıksal OR işlecinin işlenenlerinin aynı türden olmasına gerek yoktur, a
 printf( "%d" , (x == w || x == y || x == z) );
 ```
 
-Yukarıdaki örnekte, `x``w`, `y` veya `z`'ye eşitse, `printf` işlevinin ikinci bağımsız değişkeni doğru olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde yanlış değerini ve 0 değeri yazdırılır. Bir koşulun true olarak değerlendirilen hemen sonra değerlendirme olmaktan çıkar.
+Yukarıdaki örnekte, `x``w`, `y` veya `z`'ye eşitse, `printf` işlevinin ikinci bağımsız değişkeni doğru olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde, false olarak değerlendirilir ve 0 değeri yazdırılır. Koşullardan biri doğru olarak değerlendirildiğinde değerlendirme sona erer.
 
 ## <a name="operator-keyword-for-124124"></a>İçin işleç anahtar sözcüğü&#124;&#124;
 
-**Veya** işlecidir öğesinin metin eşdeğeridir **||**. Erişmenin iki yöntemi vardır **veya** programlarınızda işleci: üstbilgi dosyasını dahil \<iso646.h >, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.
+**Or** işleci **||** metin eşdeğeridir. Programlarınızda **or** işlecine erişmenin iki yolu vardır: \<iso646. h > üstbilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
 
 ## <a name="example"></a>Örnek
 
@@ -64,6 +64,6 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ yerleşik işleçler öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++Yerleşik operatörler öncelik ve birleşim](cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C Mantıksal İşleçleri](../c-language/c-logical-operators.md)

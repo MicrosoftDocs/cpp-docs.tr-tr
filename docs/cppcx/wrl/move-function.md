@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Move function
 ms.assetid: c9525426-97e8-4d8c-9877-b689d8a0dc67
-ms.openlocfilehash: 8d7c959ecb2d3c06872871ba062d2be603489141
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65fe85e95453165430c7ef3cfd4c4bb2babd9868
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398179"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213713"
 ---
 # <a name="move-function"></a>Move İşlevi
 
@@ -29,27 +29,27 @@ inline typename RemoveReference<T>::Type&& Move(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Bağımsız değişken türü.
+*Şı*<br/>
+Bağımsız değişkenin türü.
 
-*bağımsız değişken*<br/>
-Taşımak için bir bağımsız değişken.
+*değişkeni*<br/>
+Taşınacak bir bağımsız değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Parametre *arg* başvurusunu veya rvalue başvurusunu nitelikler sonra varsa kaldırıldı.
+Başvuru veya rvalue-başvuru nitelikleri sonrasında parametre *arg* , varsa, kaldırılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen bağımsız değişken bir konumdan diğerine taşır.
+Belirtilen bağımsız değişkeni bir konumdan diğerine kaydırır.
 
-Daha fazla bilgi için **taşıma semantiği** bölümünü [Rvalue başvuru Bildirimcisi: & &](../../cpp/rvalue-reference-declarator-amp-amp.md).
+Daha fazla bilgi için, [rvalue başvuru bildirimci: & &](../../cpp/rvalue-reference-declarator-amp-amp.md)' nin **taşıma semantiğini** bölümüne bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** internal.h
+**Üst bilgi:** iç. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

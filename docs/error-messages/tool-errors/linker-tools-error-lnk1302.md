@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1302
 ms.assetid: aea3c753-c2c4-4249-bbc3-f2d4f0164b5e
-ms.openlocfilehash: c3b1117b31db4759b385943323a581da7a58f0c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8323fa234851ce3ba12083adb74d5ee0fba0ac69
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160451"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194934"
 ---
 # <a name="linker-tools-error-lnk1302"></a>Bağlayıcı Araçları Hatası LNK1302
 
-yalnızca güvenli. netmodule'leri bağlamayı destekle; dosya .netmodule bağlanamıyor
+yalnızca güvenli. netmodules bağlamayı destekle; File. netmodule bağlantısı kurulamıyor
 
-.Netmodule (ile derlenmiş **/LN**) bağlayıcıya MSIL bağlantılandırma çağırmak için bir kullanıcı girişimi geçirildi.  MSIL ile derlenmişse bağlamak için geçerli bir C++ modülünün **/CLR: safe**.
+Bir. netmodule ( **/ln**ile derlenen), BIR kullanıcı MSIL bağlamayı çağırma girişiminde bir bağlayıcıya geçildi.  C++ **/Clr: Safe**ile derlenirse, bir modül MSIL bağlama için geçerlidir.
 
-Bu hatayı düzeltmek için derlemek **/CLR: safe** MSIL bağlamayı etkinleştir veya geçirmek için **/CLR** veya **/CLR: pure** modül yerine bağlayıcı .obj dosyasına.
+Bu hatayı düzeltmek için, MSIL bağlamayı etkinleştirmek üzere **/clr: Safe** ile derleyin veya **/clr** veya **/clr: Pure** . obj dosyasını modül yerine bağlayıcıya geçirin.
 
 Daha fazla bilgi için bkz.
 

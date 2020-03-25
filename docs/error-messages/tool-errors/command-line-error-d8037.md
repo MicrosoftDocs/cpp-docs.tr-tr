@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - D8037
 ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
-ms.openlocfilehash: f9f099d1abb8529620c1b3a0bc14705463ca5cd0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed6778861c89bb9755087c4d58f094a57d5f760f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214148"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196865"
 ---
 # <a name="command-line-error-d8037"></a>Komut Satırı Hatası D8037
 
-Geçici il dosyası oluşturulamıyor; eski il dosyalarının temiz geçici dizin
+geçici Il dosyası oluşturulamıyor; Eski Il dosyalarının geçici dizinini temizle
 
-Geçici derleyici Ara dosyaları oluşturmak için yeterli alanı yok. Bu hatayı düzeltmek için tarafından belirtilen dizindeki tüm eski MSIL dosyalarını kaldırma **TMP** ortam değişkeni. Bu dosyalar burada h rastgele onaltılık ve ss IL dosyası türünü temsil eder form _CL_hhhhhhhh.ss, olacaktır. Ayrıca, en son işletim sistemi düzeltme ekleri makinenize güncelleştirdiğinizden emin olun.
+Geçici derleyici ara dosyaları oluşturmak için yeterli alan yok. Bu hatayı çözmek için, **tmp** ortam değişkeni tarafından belirtilen DIZINDEKI eski MSIL dosyalarını kaldırın. Bu dosyalar _CL_hhhhhhhh. ss biçiminde olacaktır; burada h, rastgele bir onaltılı basamağı temsil eder ve SS Il dosyasının türünü temsil eder. Ayrıca, makinenizi en son işletim sistemi düzeltme ekleriyle güncelleştirdiğinizden emin olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,35 +1,35 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4412
+title: Derleyici Uyarısı (düzey 2) C4412
 ms.date: 11/04/2016
 f1_keywords:
 - C4412
 helpviewer_keywords:
 - C4412
 ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
-ms.openlocfilehash: 2c9d50fc3433321c0ca92366a512892212545754
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 601b99eec4625e9b598ece4cbb74d0039ad04bf0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402443"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80161795"
 ---
-# <a name="compiler-warning-level-2-c4412"></a>Derleyici Uyarısı (Düzey 2) C4412
+# <a name="compiler-warning-level-2-c4412"></a>Derleyici Uyarısı (düzey 2) C4412
 
-> '*işlevi*': işlev imzası içeren tür '*türü*'; C++ nesnelerinin saf kod arasında geçirilmesi güvenli değildir ve karma veya yerel.
+> '*Function*': işlev imzası '*Type*' türünü içeriyor; C++ nesneler saf kod ile karma veya yerel arasında geçiş için güvenli değildir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. Saf olması gereken bir kodunuz varsa, kendisine bağlantı öneririz C#.
+**/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez. Saf olması gereken kodunuz varsa, bağlantı noktası oluşturmanız önerilir C#.
 
-Derleyici bir çalışma zamanı hatasına neden, güvensiz olabilecek bir durum algılandı: gelen bir arama yapılıyor bir **/CLR: pure** dllimport ve işlev imzası içeri aktarılan işleve derlenecek güvenli olmayan bir tür içeriyor . Üye işlevi içeriyor ya da güvenli olmayan bir türü veya bir yöneltme güvenli olmayan bir tür için bir veri üyesine sahip bir tür güvenli değildir.
+Derleyici, bir çalışma zamanı hatasına neden olabilecek güvensiz olabilecek bir durum algıladı: **/clr: Pure** compiland öğesinden dllimport ile içeri aktarılan bir işleve çağrı yapılıyor ve işlev imzası güvenli olmayan bir tür içeriyor. Bir üye işlevi içeriyorsa veya güvenli olmayan bir tür veya güvenli olmayan bir türe yöneltme olan bir veri üyesine sahipse tür güvenli değildir.
 
-Bu fark için varsayılan çağırma kuralları saf ve yerel kod arasında nedeniyle güvenli değildir (veya yerel ve yönetilen karışık). İçeri aktarılırken (aracılığıyla `dllimport`) bir işleve bir **/CLR: pure** derlenecek, her tür imzası bildirimleri (özellikle hakkında dikkatli işlevi dışarı aktarır derlenecek ortamınızdakilerle olduğundan emin olun farkları örtük çağırma kuralları).
+Bu, saf ve yerel kod (ya da karma yerel ve yönetilen) arasındaki varsayılan çağırma kuraldaki fark nedeniyle güvenli değildir. **/Clr: saf** compiland içine bir işlev (`dllimport`aracılığıyla) içeri aktarırken, İmzadaki her bir türdeki bildirimlerin, işlevi dışarı aktaran compiland 'dakilerle özdeş olduğundan emin olun (özellikle örtülü çağırma kuralları farklılıkları hakkında dikkatli olun).
 
-Bir sanal üye işlevi, beklenmedik sonuçlar özellikle yatkındır.  Ancak, sanal olmayan bir işlev doğru sonuçları aldığınızdan emin olmak için test edilmelidir. Doğru sonuçları elde edeceğinizi eminseniz bu uyarıyı yoksayabilirsiniz.
+Bir sanal üye işlevi özellikle beklenmedik sonuçlara neden olacak şekilde açıktır.  Ancak, doğru sonuçları aldığınızdan emin olmak için sanal olmayan bir işlev de test edilmelidir. Doğru sonuçları aldığınızdan emin değilseniz, bu uyarıyı yoksayabilirsiniz.
 
-Varsayılan olarak C4412 kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) ve [dllexport, dllimport](../../cpp/dllexport-dllimport.md) daha fazla bilgi için.
+C4412 varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. varsayılan ve [dllexport, dllimport](../../cpp/dllexport-dllimport.md) Için [kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Bu uyarıyı çözmek için tüm işlevleri türünden kaldırın.
+Bu uyarıyı çözmek için, türden tüm işlevleri kaldırın.
 
 ## <a name="example"></a>Örnek
 
@@ -61,7 +61,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iki tür bildiren bir üstbilgi dosyasıdır. `Unsafe` Türüdür güvenli olmayan bir üye işlev olduğundan.
+Aşağıdaki örnek, iki tür bildiren bir üst bilgi dosyasıdır. Üye işlevi olduğundan `Unsafe` türü güvenli değil.
 
 ```cpp
 // C4412.h
@@ -81,7 +81,7 @@ struct Safe {
 
 ## <a name="example"></a>Örnek
 
-Bu örnek üstbilgi dosyasında tanımlanan türleri ile işlevleri dışa aktarır.
+Bu örnek, üst bilgi dosyasında tanımlanan türlerle işlevleri dışa aktarır.
 
 ```cpp
 // C4412_2.cpp
@@ -98,7 +98,7 @@ __declspec(dllexport) Safe * __cdecl func2() { return new Safe; }
 
 ## <a name="example"></a>Örnek
 
-İçin varsayılan çağırma kuralını bir **/CLR: pure** derleme, yerel bir derlemeden farklıdır.  C4412.h eklendiğinde `Test` varsayılan olarak `__clrcall`. Derleme ve bu programı çalıştır (kullanmayın **/c**), programın bir özel durum oluşturur.
+**/Clr: Pure** derlemesinde varsayılan çağırma kuralı yerel bir derlemeden farklıdır.  C4412. h dahil edildiğinde `Test` varsayılan olarak `__clrcall`. Bu programı derleyip çalıştırırsanız ( **/c**kullanmayın), program bir özel durum oluşturur.
 
 Aşağıdaki örnek C4412 oluşturur.
 

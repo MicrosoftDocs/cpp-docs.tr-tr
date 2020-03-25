@@ -7,12 +7,12 @@ helpviewer_keywords:
 - protected keyword [C++], member access
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
-ms.openlocfilehash: 1cbe88a80b83caa78972d1e2799c1e0d87d1cb0a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29f57eac7201ac0647275c70c539f9b2f28eb81b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244534"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179256"
 ---
 # <a name="protected-c"></a>protected (C++)
 
@@ -26,7 +26,7 @@ protected base-class
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Korumalı** anahtar sözcüğü belirtir sınıf üyelerine erişimi *üye listesi* kadar sonraki erişim belirticisi (**genel** veya **özel**) veya sınıf tanımının son. Olarak bildirilen sınıf üyeleri **korumalı** yalnızca aşağıdakiler tarafından kullanılabilir:
+**Protected** anahtar sözcüğü, *üye listesindeki* sınıf üyelerine bir sonraki erişim tanımlayıcısına (**genel** veya **özel**) veya sınıf tanımının sonuna kadar erişimi belirtir. **Korumalı** olarak belirtilen sınıf üyeleri yalnızca şunlar tarafından kullanılabilir:
 
 - Başlangıçta bu üyeleri bildiren sınıfın üye işlevleri.
 
@@ -36,20 +36,20 @@ protected base-class
 
 - Korumalı üyelere özel erişimi de olan, doğrudan özel olarak türetilmiş sınıflar.
 
-Bir temel sınıfın adından önce zaman **korumalı** anahtar sözcüğü, temel sınıfın genel ve korumalı üyelerinin kendi türetilmiş sınıfın korumalı üyeleri olduğunu belirtir.
+Bir temel sınıfın adından önce, **Protected** anahtar sözcüğü, temel sınıfın ortak ve korunan üyelerinin, türetilmiş sınıflarının korunan üyeleri olduğunu belirtir.
 
-Korumalı üyeler gibi özel olmayan **özel** yalnızca bildirildikleri ancak kadar genel de değildir bu sınıfın üyeleri tarafından erişilebilir olan üyelerin **genel** içinde erişilebilir üyeler herhangi bir işlev.
+Korunan Üyeler, yalnızca bildirildiği sınıfın üyeleri tarafından erişilebilen **özel** Üyeler olarak özel değildir, ancak bu, herhangi bir işlevde erişilebilen **ortak** Üyeler olarak genel olarak değildir.
 
-Korumalı olarak da bildirilen üyeler **statik** türetilmiş bir sınıfın tüm arkadaş veya üye işleve erişilebilir. Korumalı olarak bildirilmemiş olan üyelere **statik** arkadaşlar ve üye işlevleri türetilen bir sınıfta yalnızca bir işaretçi başvurusu veya türetilmiş sınıfın nesnesi aracılığıyla erişilebilir.
+**Statik** olarak da belirtilen korumalı üyelere, türetilmiş bir sınıfın herhangi bir arkadaşınız veya member işlevi erişebilir. **Statik** olarak bildirilmeyen Korunan üyelere, türetilmiş bir sınıftaki arkadaş ve üye işlevleri yalnızca türetilmiş sınıfın işaretçisi, başvuru veya nesne aracılığıyla erişilebilir.
 
-İlgili bilgiler için bkz. [arkadaş](../cpp/friend-cpp.md), [genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md)ve üye erişimi tablosu [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) .
+İlgili bilgiler için, [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md)içindeki [arkadaş](../cpp/friend-cpp.md), [genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md)ve üye erişim tablosuna bakın.
 
 ## <a name="clr-specific"></a>/clr Özel
 
-CLR türlerinde, C++ erişim belirtici anahtar sözcükleri (**genel**, **özel**, ve **korumalı**) türler ve Derlemelerle yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için [üye erişim denetimi](member-access-control-cpp.md).
+C++ CLR türlerinde, erişim belirleyicisi anahtar sözcükleri (**genel**, **özel**ve **korumalı**) derlemelerle ilgili olarak türlerin ve yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için bkz. [üye Access Control](member-access-control-cpp.md).
 
 > [!NOTE]
->  İle derlenmiş dosyalar [/LN](../build/reference/ln-create-msil-module.md) Bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.
+>  [/Ln](../build/reference/ln-create-msil-module.md) ile derlenen dosyalar bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.
 
 ## <a name="end-clr-specific"></a>END /clr Özel
 

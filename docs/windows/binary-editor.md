@@ -1,5 +1,5 @@
 ---
-title: Binary Editor (C++)
+title: İkili Düzenleyici (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.binary.F1
@@ -21,109 +21,109 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 832dbf711307b81527bcaff0d1e1b8138f208e46
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 591a6714f1adabb30fda446cad0e79e2c28c30ad
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407043"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215247"
 ---
-# <a name="binary-editor-c"></a>Binary Editor (C++)
+# <a name="binary-editor-c"></a>İkili Düzenleyici (C++)
 
 > [!CAUTION]
-> İletişim kutuları, resimler veya menülerde gibi kaynakları düzenleme **ikili düzenleyici** tehlikelidir. Yanlış düzenleme, kendi yerel düzenleyicisinde okunmaz hale gelir bir kaynak bozuk olabilir.
+> **Ikili düzenleyicideki** iletişim kutuları, görüntüler veya menüler gibi kaynakları düzenleme tehlikeli olur. Hatalı düzenleme, kaynağı bozmadan yerel düzenleyicide okunamaz hale getirir.
 
-**İkili düzenleyici** onaltılık veya ASCII biçiminde ikili düzeyde herhangi bir kaynağa düzenlemenizi sağlar. Ayrıca [Bul komut](/visualstudio/ide/reference/find-command) ASCII dizelerinde veya onaltılık baytlar için aranacak. Kullanım **ikili düzenleyici** yalnızca özel kaynaklar veya kaynak türleri Visual Studio ortamı tarafından desteklenmeyen görüntülemek veya küçük gerektiğinde değiştirir. **İkili düzenleyici** Express sürümlerinde kullanılamaz.
+**Ikili düzenleyici** , herhangi bir kaynağı, ONALTıLı veya ASCII biçiminde ikili düzeyde düzenlemenizi sağlar. [Find komutunu](/visualstudio/ide/reference/find-command) , ASCII dizelerini veya onaltılı baytları aramak için de kullanabilirsiniz. **Ikili düzenleyiciyi** yalnızca, Visual Studio ortamı tarafından desteklenmeyen özel kaynaklarda veya kaynak türlerinde küçük değişiklikler yapmanız veya bunları görüntülemeniz gerektiğinde kullanın. **Ikili düzenleyici** Express sürümlerinde kullanılamaz.
 
-- Açmak için **ikili düzenleyici** yeni bir dosya menüsüne gidin **dosya** > **yeni** > **dosya**, türünü seçin Dosya düzenleme ardından yanındaki açılan oku seçerek **açık** düğmesini ve ardından **birlikte Aç** > **ikili düzenleyici**.
+- **Ikili düzenleyiciyi** yeni bir dosyada açmak için, menü **dosyası** > **Yeni** > **dosyası**' na gidin, düzenlemek istediğiniz dosya türünü seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve > **ikili Düzenleyicisi** **ile aç** ' ı seçin.
 
-- Açmak için **ikili düzenleyici** varolan bir dosyanın, menüsüne gidin **dosya** > **açın** > **dosya**seçin Dosya düzenleme ardından yanındaki açılan oku seçerek **açık** düğmesini ve ardından **birlikte Aç** > **ikili düzenleyici**.
+- **Ikili düzenleyiciyi** mevcut bir dosyada açmak için, menü **dosyası** >  > **dosyayı** **Aç** ' a gidin, düzenlemek istediğiniz dosyayı seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve > **ikili Düzenleyicisi** **ile aç** ' ı seçin.
 
-   ![İkili Düzenleyici](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
-   Görüntülenen iletişim kutusu için ikili verileri **İkili Düzenleyici**
+   ![İkili Düzenleyicisi](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+   **Ikili düzenleyicide** gösterildiği bir iletişim kutusu için ikili veriler
 
-Yalnızca belirli ASCII değerleri temsil edildiğini **ikili düzenleyici** (0x20 0x7E aracılığıyla). Genişletilmiş karakterler, nokta sağ panelde ASCII değeri bölümünde görüntülenir **ikili düzenleyici**. Yazdırılabilir karakter ASCII 32 126-değerlerdir.
+**Ikili düzenleyicide** yalnızca belirli ASCII değerleri temsil edilir (0x20 ile 0x7E). Genişletilmiş karakterler, **Ikili düzenleyicinin**sağ panel ASCII değeri bölümünde nokta olarak görüntülenir. Yazdırılabilir karakterler 32 ile 126 arasında ASCII değerlerdir.
 
 > [!TIP]
-> Kullanırken **ikili düzenleyici**, çoğu durumda bir kaynağa özgü komutların kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Kullanılabilir komutlar ne imlecinizi işaret ettiği üzerinde bağlıdır. Örneğin işaret ederken sağ tıklayın, **ikili düzenleyici** ile seçilen onaltılı değerler, kısayol menüsünü gösterir **Kes**, **kopyalama**ve **Yapıştır** komutları.
+> **Ikili düzenleyiciyi**kullanırken, birçok örnekte kaynağa özgü komutların kısayol menüsünü göstermek için sağ tıklayabilirsiniz. Kullanılabilir komutlar, imlecinizin ne olduğuna bağlıdır. Örneğin, seçili onaltılık değerlerle **Ikili düzenleyiciyi** işaret ederken sağ tıkladığınızda, kısayol menüsü **Kes**, **Kopyala**ve **Yapıştır** komutlarını gösterir.
 
-## <a name="how-to"></a>Nasıl Yapılır
+## <a name="how-to"></a>Nasıl yapılır
 
-**İkili düzenleyici** sağlar:
+**Ikili düzenleyici** şunları yapmanızı mümkün:
 
-### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili düzenleme için bir Windows Masaüstü kaynağını açmak için
+### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili dosya düzenlemesi için bir Windows Masaüstü kaynağını açmak için
 
-1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), düzenlemek istediğiniz belirli bir kaynak dosyasını seçin.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), düzenlemek istediğiniz belirli kaynak dosyasını seçin.
 
-1. Kaynak sağ tıklayıp **açık ikili veri**.
-
-> [!NOTE]
-> Kullanırsanız **kaynak görünümü** tanımadığı Visual Studio, bir biçime bir kaynak penceresini RCDATA veya özel bir kaynak gibi kaynak otomatik olarak açılır **ikili düzenleyici**.
-
-### <a name="to-open-a-managed-resource-for-binary-editing"></a>İkili düzenleme için bir yönetilen kaynak açmak için
-
-1. İçinde **Çözüm Gezgini**, düzenlemek istediğiniz belirli bir kaynak dosyasını seçin.
-
-1. Kaynak sağ tıklayıp **birlikte Aç**.
-
-1. İçinde **birlikte Aç** iletişim kutusunda **ikili düzenleyici**.
+1. Kaynağa sağ tıklayın ve **Ikili verileri aç**' ı seçin.
 
 > [!NOTE]
-> Kullanabileceğiniz [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve **ikili düzenleyici** yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
+> Bir kaynağı, RCDATA veya özel bir kaynak gibi Visual Studio 'Nun tanımadığı bir biçimde açmak için **kaynak görünümü** penceresini kullanırsanız, kaynak **ikili düzenleyicide**otomatik olarak açılır.
 
-### <a name="to-edit-a-resource"></a>Bir kaynak düzenlemek için
+### <a name="to-open-a-managed-resource-for-binary-editing"></a>Bir yönetilen kaynağı ikili düzenlemeyle açmak için
 
-Kullanmak istiyorsanız **ikili düzenleyici** zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta önce diğer düzenleyici penceresini kapatın.
+1. **Çözüm Gezgini**, düzenlemek istediğiniz belirli kaynak dosyasını seçin.
 
-1. Düzenlemek istediğiniz bayt seçin.
+1. Kaynağa sağ tıklayın ve **birlikte Aç**' ı seçin.
 
-   **Sekmesini** anahtar onaltılık ve ASCII bölümleri arasında odağı taşır **ikili düzenleyici**. Kullanabileceğiniz **Page Up** ve **Page Down** anahtarları kaynak bir ekran ilerlemek için.
-
-1. Yeni bir değer girin.
-
-   Hem onaltılık hem de ASCII bölümleri hemen değeri değiştirir ve sonraki satır değeri kaydırır.
+1. **Birlikte Aç** Iletişim kutusunda **ikili düzenleyici**' yi seçin.
 
 > [!NOTE]
-> **İkili düzenleyici** düzenleyicisini kapatırken değişiklikleri otomatik olarak kabul eder.
+> Yönetilen projelerde kaynak dosyalarıyla çalışmak için [resim düzenleyicisini](../windows/image-editor-for-icons.md) ve **ikili düzenleyiciyi** kullanabilirsiniz. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
+
+### <a name="to-edit-a-resource"></a>Bir kaynağı düzenlemek için
+
+Zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta **Ikili düzenleyiciyi** kullanmak istiyorsanız, önce diğer düzenleyici penceresini kapatın.
+
+1. Düzenlemek istediğiniz baytı seçin.
+
+   **Tab** tuşu, odağı **ikili DÜZENLEYICININ**onaltılı ve ASCII bölümleri arasında taşınır. Tek seferde bir ekran arasında ilerlemek için, **sayfa yukarı** ve **sayfa aşağı** tuşlarını kullanabilirsiniz.
+
+1. Yeni değeri yazın.
+
+   Değer hem onaltılık hem de ASCII bölümlerinde hemen değişir ve odak satırdaki sonraki değere kayar.
+
+> [!NOTE]
+> Düzenleyiciyi kapattığınızda **Ikili düzenleyici** değişiklikleri otomatik olarak kabul eder.
 
 ### <a name="to-find-binary-data"></a>İkili verileri bulmak için
 
-ASCII dizelerinde veya onaltılık baytlar için arama yapabilirsiniz. Örneğin, bulma için *Hello*, için ya da dize arama yapabilirsiniz *Hello* ya da onaltılık değerini *48 65 6C 6 C 6F*.
+ASCII dizeleri veya onaltılı baytlar için arama yapabilirsiniz. Örneğin, *Hello*'yu bulmak Için, *Hello* dize veya on altılı değeri olan *48 65 6c 6c 6F*için arama yapabilirsiniz.
 
-1. Menü Git **Düzenle** > [Bul](/visualstudio/ide/reference/find-command).
+1. Menü **düzenle** > [bul](/visualstudio/ide/reference/find-command)' a gidin.
 
-1. İçinde **Aranan** kutusunda aşağı açılan listeden önceki bir arama dizesi seçin veya bulmak istediğiniz veri türü.
+1. **Aranan kutusunda,** açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz verileri yazın.
 
-1. Herhangi bir **Bul** seçenekleri ve seçin **Sonrakini Bul**.
+1. **Bul** seçeneklerinden birini belirleyin ve **Sonrakini Bul**' u seçin.
 
 ### <a name="to-create-a-new-custom-or-data-resource"></a>Yeni bir özel veya veri kaynağı oluşturmak için
 
-Kaynak normal kaynak betiği (.rc) dosyası sözdizimi kullanılarak ayrı bir dosyada ve bu dosyayı içeren projenize sağ tıklayarak girerek yeni bir özel veya veri kaynağı oluşturabilirsiniz **Çözüm Gezgini** ve seçme **Kaynak içerikleri**.
+Kaynağı normal kaynak betiği (. RC) dosya söz dizimini kullanarak ayrı bir dosyaya yerleştirerek ve sonra **Çözüm Gezgini** ve **kaynak içermeler**' i seçerek bu dosyayı içeren yeni bir özel veya veri kaynağı oluşturabilirsiniz.
 
-1. [Bir .rc dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md) , özel veya veri kaynağı içeriyor.
+1. Özel veya veri kaynağını içeren [bir. rc dosyası oluşturun](../windows/how-to-create-a-resource-script-file.md) .
 
-   Null ile sonlandırılmış tırnak içine alınmış dizeler veya ondalık, onaltılık veya sekizlik biçimde tamsayılar olarak bir .rc dosyasında özel veri yazabilirsiniz.
+   Bir. rc dosyasında, null ile sonlandırılmış alıntılanmış dizeler veya ondalık, onaltılık veya sekizlik biçimde tamsayı olarak özel veri yazabilirsiniz.
 
-1. İçinde **Çözüm Gezgini**, projenizin .rc dosyasını sağ tıklatın ve seçin **kaynak içerikleri**.
+1. **Çözüm Gezgini**, projenizin. rc dosyasına sağ tıklayın ve **kaynak içermeler**' i seçin.
 
-1. İçinde **derleme zamanı yönergeleri** kutusuna bir `#include` özel kaynağınızın örneğin içeren dosyanın adını verir deyimi:
+1. **Derleme zamanı yönergeleri** kutusuna özel kaynağınızı içeren dosyanın adını veren bir `#include` ifadesini yazın, örneğin:
 
     ```cpp
     #include mydata.rc
     ```
 
-   Ne tür, yazım ve söz dizimi doğru olduğundan emin olun. İçeriğini **derleme zamanı yönergeleri** kutusunu tam olarak yazdığınız sırada kaynak betik dosyasına eklenir.
+   Yazımın sözdiziminin ve yazımın doğru olduğundan emin olun. **Derleme zamanı yönergeleri** kutusunun içeriği, tam olarak siz yazarken kaynak betik dosyasına eklenir.
 
-1. Seçin **Tamam** yaptığınız değişiklikleri kaydetmek için.
+1. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
-Özel bir kaynak oluşturmak için başka bir yolu ise özel kaynak olarak bir dış dosya içeri aktarmak için bkz: [nasıl yapılır: Kaynakları yönetmek](../windows/how-to-import-and-export-resources.md).
+Özel bir kaynak oluşturmanın başka bir yolu da bir dış dosyayı özel kaynak olarak içeri aktarmanız, bkz. [nasıl yapılır: kaynakları yönetme](../windows/how-to-import-and-export-resources.md).
 
 > [!NOTE]
-> Yeni özel veya veri kaynakları oluşturmak için Win32 gerekir.
+> Yeni özel veya veri kaynakları oluşturmak Win32 gerektirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

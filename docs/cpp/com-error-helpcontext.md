@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - HelpContext method [C++]
 ms.assetid: 160d6443-9b68-4cf5-a540-50da951a5b2b
-ms.openlocfilehash: a421a7fd7fa0817c74dac66946e28928b2ad82dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3c79bb069ef504680e83359d6ec90c803f16d9d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155091"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180595"
 ---
-# <a name="comerrorhelpcontext"></a>_com_error::HelpContext
+# <a name="_com_errorhelpcontext"></a>_com_error::HelpContext
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Çağrıları `IErrorInfo::GetHelpContext` işlevi.
+`IErrorInfo::GetHelpContext` işlevini çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ DWORD HelpContext( ) const throw( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucunu döndürür `IErrorInfo::GetHelpContext` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Hayır ise `IErrorInfo` nesnesi kaydedilmezse, sıfır döndürür.
+`_com_error` nesnesi içinde kaydedilen `IErrorInfo` nesnesi için `IErrorInfo::GetHelpContext` sonucunu döndürür. `IErrorInfo` nesne kaydedilmez, sıfır döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağrılırken `IErrorInfo::GetHelpContext` yöntemi göz ardı edilir.
+`IErrorInfo::GetHelpContext` yöntemi çağrılırken herhangi bir hata yoksayıldı.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

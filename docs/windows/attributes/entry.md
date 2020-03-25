@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-ms.openlocfilehash: 71abf4f183255fa137b43ac9cabd88d15c3fc85d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9bdfc64506f26ee4e9876920821883a0fa12bc7e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490897"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167101"
 ---
 # <a name="entry"></a>giriş
 
@@ -30,11 +30,11 @@ Giriş noktasının KIMLIĞI.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Entry** C++ özniteliği, MIDL özniteliğiyle aynı işlevselliğe sahiptir [](/windows/win32/Midl/entry) .
+**Entry** C++ özniteliği [, MIDL](/windows/win32/Midl/entry) özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-**Girişin**örnek kullanımı için bkz. [idl_module](idl-module.md) .
+**Girişin**örnek kullanımı için [idl_module](idl-module.md) örneğe bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,10 +42,10 @@ Giriş noktasının KIMLIĞI.
 
 |||
 |-|-|
-|**Uygulama hedefi**|`idl_module`özniteliğe|
+|**Uygulama hedefi**|`idl_module` özniteliği|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

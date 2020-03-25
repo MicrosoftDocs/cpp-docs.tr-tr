@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncResultType enumeration
 ms.assetid: 4195d234-3f3f-4363-9118-6ad2a7551cf2
-ms.openlocfilehash: d3f99fa85a777ae8361ed6f7cb82fe97ddd8d667
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8a2a9ec803fba1be0012fcb58bf3b42e78f9071
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398803"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214168"
 ---
 # <a name="asyncresulttype-enumeration"></a>AsyncResultType Numaralandırması
 
-Tarafından döndürülen sonuç türü belirtir `GetResults()` yöntemi.
+`GetResults()` yöntemi tarafından döndürülen sonuç türünü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,14 +30,14 @@ enum AsyncResultType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`MultipleResults`|Bir aşamalı olarak arasında sunulan birden çok sonuç kümesi `Start` durumu ve önce `Close()` çağrılır.|
-|`SingleResult`|Sonra sunulan tek bir sonuç `Complete` olayı oluşur.|
+|`MultipleResults`|`Start` durumu ve `Close()` çağrılmadan önce aşamalı olarak sunulan birden çok sonuç kümesi.|
+|`SingleResult`|`Complete` olayı oluştuktan sonra sunulan tek bir sonuç.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** async.h
+**Üst bilgi:** Async. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

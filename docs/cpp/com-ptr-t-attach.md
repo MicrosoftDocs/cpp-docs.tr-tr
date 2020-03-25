@@ -7,18 +7,18 @@ helpviewer_keywords:
 - COM interfaces, attach pointer
 - Attach method [C++]
 ms.assetid: 94c18e0a-06be-4ca7-bdaf-cd54ec0a645e
-ms.openlocfilehash: 4b4b7a21d12cc645c486dd93d555510c1e716563
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 870e3580ed23ce994d832f7c59b951680d725e41
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154896"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180504"
 ---
-# <a name="comptrtattach"></a>_com_ptr_t::Attach
+# <a name="_com_ptr_tattach"></a>_com_ptr_t::Attach
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bu akıllı işaretçinin türü ham arabirim işaretçisi kapsüller.
+Bu akıllı işaretçinin türünün ham arabirim işaretçisini kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,19 +29,19 @@ void Attach( Interface* pInterface, bool fAddRef ) throw( );
 
 #### <a name="parameters"></a>Parametreler
 
-*pInterface*<br/>
+*Pınterface*<br/>
 Ham arabirim işaretçisi.
 
 *fAddRef*<br/>
-TRUE ise, `AddRef` çağrılır. FALSE ise `_com_ptr_t` Nesne sahipliği çağırmadan ham arabirim işaretçisi alır `AddRef`.
+DOĞRU ise `AddRef` çağrılır. YANLıŞ ise `_com_ptr_t` nesnesi, `AddRef`çağrılmadan ham arabirim işaretçisinin sahipliğini alır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-- **Ekleme (** *pInterface* **)** `AddRef` çağrılmaz. Arabirim sahipliğinin için geçirilen `_com_ptr_t` nesne. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.
+- **Attach (**  *pınterface*  **)** `AddRef` çağrılmadı. Arabirimin sahipliği bu `_com_ptr_t` nesnesine geçirilir. `Release`, daha önce kapsüllenmiş işaretçinin başvuru sayısını azaltmak için çağrılır.
 
-- **Ekleme (** *pInterface* **,** *fAddRef* **)** varsa *fAddRef* TRUE ise `AddRef`kapsüllenmiş arabirim işaretçisini için başvuru sayısını artırmak için çağrılır. Varsa *fAddRef* yanlış, bu `_com_ptr_t` Nesne sahipliği çağırmadan ham arabirim işaretçisi alır `AddRef`. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.
+- **Attach (**  *pınterface* **,**  *fAddRef*  **)** *FAddRef* true ise, kapsüllenmiş arabirim işaretçisinin başvuru sayısını artırmak için `AddRef` çağırılır. *FAddRef* yanlış ise, bu `_com_ptr_t` nesnesi, `AddRef`çağrılmadan ham arabirim işaretçisinin sahipliğini alır. `Release`, daha önce kapsüllenmiş işaretçinin başvuru sayısını azaltmak için çağrılır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - numerical limits
 ms.assetid: 5ebc9837-e273-4ea6-ac7d-14b3c2c974c7
-ms.openlocfilehash: 54854150b484e2caf66b8e9bc0cb97597d693b49
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 591a8d8b3e8f251ef952d4b8f85bbc3690672454
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245082"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177735"
 ---
 # <a name="numerical-limits-c"></a>Sayısal Sınırlar (C++)
 
-İki standart içerme dosyaları, \<lımıts.h > ve \<float.h >, sayısal sınırlamaları veya verilen bir türde bir değişken içerebileceği minimum ve maksimum değerleri tanımlar. Bu en düşük ve en yüksek değerler, ANSI c gibi aynı veri temsili kullanan herhangi bir C++ derleyicisi için taşınabilir olması garanti edilir \<Lımıts.h > dahil dosyası tanımlar [tam sayı türleri için sayısal sınırlar](../cpp/integer-limits.md), ve \<float.h > tanımlar [kayan türler için sayısal sınırlar](../cpp/floating-limits.md).
+İki standart içerme dosyası \<limit. h > ve \<float. h >, sayı sınırlarını veya verilen türdeki bir değişkenin tutabileceğiniz en düşük ve en yüksek değerleri tanımlar. Bu alt sınır ve en az UMS, ANSI C ile aynı veri C++ gösterimini kullanan herhangi bir derleyiciye taşınabilir olarak garanti edilir. \<limit. h > içerme dosyası [integral türleri için sayısal sınırları](../cpp/integer-limits.md)tanımlar \<ve float. h > [kayan türler için sayısal sınırları](../cpp/floating-limits.md)tanımlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

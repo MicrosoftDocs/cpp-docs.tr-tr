@@ -1,21 +1,21 @@
 ---
-title: db_column (C++ COM özniteliği)
+title: db_column (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_column
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: e0e2c873452884275e97663ae2d9d6df2f790ffd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ce57443480e35e7a4c7b9e872e41777662ddc20
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148191"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167296"
 ---
-# <a name="dbcolumn"></a>db_column
+# <a name="db_column"></a>db_column
 
-Belirtilen sütun, satır kümesindeki bir değişkene bağlar.
+Belirtilen bir sütunu satır kümesindeki bir değişkene bağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,10 +23,10 @@ Belirtilen sütun, satır kümesindeki bir değişkene bağlar.
 [ db_column(ordinal, dbtype, precision, scale, status, length) ]
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Sıra*<br/>
-Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağlanacak bir alana karşılık gelen sütun adı (ANSI veya Unicode dize). Sayı kullanıyorsanız, ardışık sıra sayıları atlayabilirsiniz (örneğin: 1, 2, 3, 5). OLE DB sağlayıcı destekliyorsa ad boşluk içeremez. Örneğin, aşağıdaki biçimlerden birini kullanabilirsiniz:
+*numarasını*<br/>
+Verilerin bağlanacağı satır kümesindeki bir alana karşılık gelen sıralı sütun numarası (`DBCOLUMNINFO` sıra sayısı) veya sütun adı (ANSI veya Unicode dizesi). Sayı kullanırsanız, ardışık sıra sayısını atlayabilirsiniz (örneğin: 1, 2, 3, 5). Kullandığınız OLE DB sağlayıcı destekliyorsa, ad boşluk içerebilir. Örneğin, aşağıdaki biçimlerden birini kullanabilirsiniz:
 
 ```cpp
 [db_column("2")] TCHAR szCity[30];
@@ -34,33 +34,33 @@ Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağ
 ```
 
 *DbType*<br/>
-(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) sütun girişi.
+Seçim Sütun girişi için OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) .
 
-*Duyarlık*<br/>
-(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
+*duyarlılık*<br/>
+Seçim Sütun girişi için kullanılacak duyarlık. Ayrıntılar için bkz. [Dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) `bPrecision` öğesinin açıklaması.
 
-*Ölçek*<br/>
-(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
+*ölçek*<br/>
+Seçim Sütun girişi için kullanılacak ölçek. Ayrıntılar için bkz. [Dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) `bScale` öğesi açıklaması
 
-*Durumu*<br/>
-(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*durumlarına*<br/>
+Seçim Bu sütunun durumunu tutmak için kullanılan bir üye değişkeni. Durum, sütun değerinin bir veri değeri mi yoksa NULL gibi başka bir değer mi olduğunu gösterir. Olası değerler için *OLE DB Programcı başvurusunda* [durum](/previous-versions/windows/desktop/ms722617(v=vs.85)) ' a bakın.
 
-*Uzunluğu*<br/>
-(İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
+*uzunluklu*<br/>
+Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_column** satır kümesindeki bir değişken için belirtilen tablo sütunu bağlar. OLE DB içinde yer alabilirler üye verileri sınırlandırır `IAccessor`-bağlama dayalı. Bu öznitelik normalde OLE DB Tüketici makroları kullanarak tanımlanan sütun eşlemesi ayarlar [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../../data/oledb/end-column-map.md), ve [COLUMN_ENTRY](../../data/oledb/column-entry.md). Bunlar OLE DB işlemek [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85)) belirtilen sütun bağlamak için. Her üye ile işaretle **db_column** biçiminde bir sütunu giriş sütun eşlemesi içinde bir giriş özniteliği dolduracaktır. Bu nedenle, bu öznitelik Burada, sütun eşleme, diğer bir deyişle, komut veya tablo sınıfında koyabilirsiniz çağırın.
+**db_column** , belirtilen tablo sütununu satır kümesindeki bir değişkene bağlar. OLE DB `IAccessor`tabanlı bağlamaya katılabileceğiniz üye verilerini ayırır. Bu öznitelik, normalde OLE DB tüketici makroları [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [end_column_map](../../data/oledb/end-column-map.md)ve [COLUMN_ENTRY](../../data/oledb/column-entry.md)kullanılarak tanımlanan sütun eşlemesini ayarlar. Bu, belirtilen sütunu bağlamak için OLE DB [Dbbinding yapısını](/previous-versions/windows/desktop/ms716845(v=vs.85)) işleyebilir. **Db_column** özniteliğiyle işaretlediğiniz her üye, sütun haritasında sütun girişi biçiminde bir giriş kaplayacaktır. Bu nedenle, bu özniteliği komut veya tablo sınıfında sütun haritasını yerleştireceğiniz yerde çağırabilirsiniz.
 
-Kullanım **db_column** ya da birlikte [db_table](db-table.md) veya [db_command](db-command.md) öznitelikleri.
+[Db_table](db-table.md) veya [db_command](db-command.md) öznitelikleriyle birlikte **db_column** kullanın.
 
-Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uygulandığında, derleyici sınıf için yeniden adlandıracağını \_ *YourClassName*erişimci burada *YourClassName* verdiğiniz addır sınıf ve derleyici adlı bir sınıf oluşturur ayrıca *YourClassName*, öğesinden türetildiğini \_ *YourClassName*erişimcisi.  Sınıf Görünümü'nde, hem sınıflarını görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
-Bu öznitelik, bir uygulamada kullanılan örneklerini görmek için örnekleri [AtlAgent](https://github.com/Microsoft/VCSamples), ve [MultiRead](https://github.com/Microsoft/VCSamples).
+Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, bir tablodaki bir sütun bağlar. bir **uzun** veri üyesi ve durum ve uzunluğu alanlarını belirtir.
+Bu örnek, bir tablodaki sütunu **Long** veri üyesine bağlar ve durum ve uzunluk alanlarını belirtir.
 
 ```cpp
 // db_column_1.cpp
@@ -80,7 +80,7 @@ class CProducts {
 
 ## <a name="example"></a>Örnek
 
-Bu örnek için dört sütun bağlayan bir **uzun**, bir karakter dizesi, bir zaman damgası ve `DB_NUMERIC` o sırada bir tamsayı.
+Bu örnek dört sütunu bir **Long**, bir karakter dizesi, bir zaman damgası ve bir `DB_NUMERIC` tamsayı ile bu sırayla bağlar.
 
 ```cpp
 // db_column_2.cpp
@@ -104,12 +104,12 @@ class CProducts {
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntemi|
+|**Uygulama hedefi**|**sınıf**, **Yapı**, üye, Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

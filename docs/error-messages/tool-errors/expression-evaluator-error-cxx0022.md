@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CXX0022
 - CAN0022
 ms.assetid: f6b299ac-a4ee-492c-bd9f-6fff005bc537
-ms.openlocfilehash: ac726c60d30a13d6458636d31dda6a8fb2cbd02d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5858ce936acfb8b949351c9263f3a9379c73648e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359871"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195831"
 ---
 # <a name="expression-evaluator-error-cxx0022"></a>İfade Değerlendirici Hatası CXX0022
 
-_ana önceki işlev çağrısında
+_main önce işlev çağrısı
 
-Hata ayıklayıcı işlevi geçtiğini önce C ifade değerlendiricisi bir funkci nejde vyhodnotit **_ana**. Program kadar düzgün başlatılmadı **_ana** çağrıldı.
+C ifade değerlendirici, hata ayıklayıcı işlevi **_main**girmeden önce bir işlevi değerlendiremez. **_Main** çağrılana kadar program düzgün başlatılmadı.
 
-Bu hata için CAN0022 aynıdır.
+Bu hata CAN0022 ile aynıdır.

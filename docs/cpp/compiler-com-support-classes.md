@@ -5,12 +5,12 @@ helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 6d800d9b-b902-4033-9639-740a30b06f88
-ms.openlocfilehash: 1a9ff7c57965c9ba00881d5fe48501a6138b31d1
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a8b0845fdfa96c1cb4b8b67e9d39169d9f4d3737
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444425"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189708"
 ---
 # <a name="compiler-com-support-classes"></a>Derleyici COM Desteği Sınıfları
 

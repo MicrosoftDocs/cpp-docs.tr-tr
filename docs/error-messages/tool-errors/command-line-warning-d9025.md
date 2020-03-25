@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - D9025
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
-ms.openlocfilehash: e7090dda72868ad7ee4d5f8e4f1ba6a0ad121c98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4afd4d4dc07ffaae6038c025ee371278ebbebea6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214128"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196722"
 ---
 # <a name="command-line-warning-d9025"></a>Komut Satırı Uyarısı D9025
 
-'Seçenek2' ile ' Seçenek1' geçersiz kılma
+' Seçenek1 ', ' Seçenek2 ' ile geçersiz kılınıyor
 
-*Seçenek1* seçeneği belirtildi ancak ardından tarafından geçersiz kılınmıştır *Seçenek2*. *Seçenek2* seçeneği kullanıldı.
+*Seçenek1* seçeneği belirtildi, ancak daha sonra *Seçenek2*tarafından geçersiz kılındı. *Seçenek2* seçeneği kullanıldı.
 
-İki seçenek çelişkili ya da uyumsuz yönergeleri belirtirseniz, belirtilen veya komut satırında sağa görselinin seçeneğinde kapsanan yönergesi kullanılır.
+İki seçenek çelişkili veya uyumsuz yönergeler belirtiyorsa, komut satırında en sağdaki seçenekte belirtilen veya belirtilen yönerge kullanılır.
 
-Bu uyarı geliştirme ortamından derlenirken alın ve gelen çakışan seçenekler nereden geldiğini emin değilseniz, aşağıdakileri göz önünde bulundurun:
+Geliştirme ortamından derlerken bu uyarıyı alırsanız ve çakışan seçeneklerin nereden geldiği konusunda emin değilseniz, aşağıdakileri göz önünde bulundurun:
 
-- Bir seçenek, kod veya projenin proje ayarlarında belirtilebilir. Derleyicinin bakarsanız [komut satırı özellik sayfaları](../../build/reference/command-line-property-pages.md) ve çakışan seçenekleri görürseniz **tüm seçenekleri** seçenekleri, projenin özellik sayfalarında, aksi takdirde seçenekleri ayarlanmıştır alan kaynak kodunda ayarlanır.
+- Bir seçenek, kodda ya da projenin proje ayarlarında belirtilebilir. Derleyicinin [komut satırı özellik sayfalarına](../../build/reference/command-line-property-pages.md) baktığınızda ve **tüm seçenekler** alanında çakışan seçenekleri görürseniz, seçenekler projenin özellik sayfalarında ayarlanır, aksi takdirde Seçenekler kaynak kodunda ayarlanır.
 
-   Seçenekler projenin özellik sayfalarındaki ayarlarsanız, derleyicinin önişlemci özellik sayfasında (Çözüm Gezgini'nde Seçili proje düğümü) arayın.  Burada ayarlayın, emin olmak için her kaynak kodu dosyası (Çözüm Gezgini'nde) önişlemci özellik sayfası ayarları denetle seçeneğini görmüyorsanız var. eklenmez.
+   Seçenekler projenin özellik sayfalarında ayarlandıysa, derleyicinin Önişlemci Özellik sayfasına bakın (Çözüm Gezgini proje düğümü seçili olarak).  Burada set seçeneğini görmüyorsanız, bu dosyanın bulunmadığından emin olmak için her kaynak kodu dosyası için Önişlemci Özellik sayfası ayarlarını (Çözüm Gezgini) denetleyin.
 
-   Seçenekler, kod içinde ayarlarsanız kodda veya windows üstbilgileri ayarlayabilirsiniz.  Önceden işlenmiş dosya oluşturma deneyebilirsiniz ([/P](../../build/reference/p-preprocess-to-a-file.md)) ve sembolü aratın.
+   Seçenekler kodda ayarlandıysa, kodda veya Windows üst bilgilerinde ayarlanabilir.  Önceden işlenmiş bir dosya ([/p](../../build/reference/p-preprocess-to-a-file.md)) oluşturmayı ve bunu simge için aramayı deneyebilirsiniz.

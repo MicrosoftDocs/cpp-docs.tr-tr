@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - C4274
 ms.assetid: 5a948680-7ed1-469f-978d-ae99d154e161
-ms.openlocfilehash: f73fa8e09baab127e7755ebe3def69c2fb585744
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f2350f275f883e7bf18aa1621d08b34132e8dfb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207213"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175852"
 ---
 # <a name="compiler-warning-level-1-c4274"></a>Derleyici Uyarısı (düzey 1) C4274
 
-\#ident; yoksayıldı #pragma comment (exestr, 'string') için belgelere bakın
+\#Ida yoksayıldı; #pragma yorumu için belgelere bakın (exestr, ' dize ')
 
-`#ident` Kullanıcı tanımlı bir dize, nesne veya yürütülebilir dosya ekler, yönergesi, kullanım dışı bırakılmıştır. Sonuç olarak, derleyici yönergesi yok sayar.
+Nesne veya yürütülebilir dosyaya Kullanıcı tarafından belirtilen bir dize ekleyen `#ident` yönergesi kullanım dışıdır. Sonuç olarak, derleyici yönergesini yoksayar.
 
 > [!CAUTION]
->  Uyarı C4274 kullanmanızı önerir [#pragma comment (exestr, 'string')](../../preprocessor/comment-c-cpp.md) yönergesi. Ancak, bu önerileri kullanım dışıdır ve derleyici gelecek bir sürümünde düzenlendi. Kullanırsanız `#pragma` yönergesi (LINK.exe) bağlayıcı aracı yönergesi tarafından üretilen yorum kaydı yoksayar ve sorunları uyarı [LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md). Yerine `#ident` yönergesi, bir dosya sürümü kaynak dizesi, uygulamanızda kullanmanızı öneririz.
+>  Uyarı C4274, [#pragma yorumu (exestr, ' String ')](../../preprocessor/comment-c-cpp.md) yönergesini kullanmanızı önerir. Ancak, bu öneri kullanım dışıdır ve derleyicinin gelecek bir sürümünde düzeltilecektir. `#pragma` yönergesini kullanırsanız, bağlayıcı aracı (LINK. exe), yönerge ve sorunlar Uyarı [LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)tarafından üretilen yorum kaydını yoksayar. `#ident` yönergesi yerine, uygulamanızda bir dosya sürümü kaynak dizesi kullanmanızı öneririz.
 
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Kaldırma `#ident "` *dize* `"` yönergesi.
+- `#ident "`*dize*`"` yönergesini kaldırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

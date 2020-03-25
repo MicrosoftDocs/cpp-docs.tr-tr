@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: 80c8f94a417c700f86159de53bd53e4011f78d71
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4d9fb79bbf5203fa959672faec8c3b076c17f1ca
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447379"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211854"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 
@@ -66,7 +66,7 @@ class CManualAccessor : public CAccessorBase
 
 `CManualAccessor`kullanarak, çalışma zamanı işlev çağrılarının parametresini ve çıkış sütunu bağlamayı belirtebilirsiniz.
 
-## <a name="addbindentry"></a>CManualAccessor:: AddBindEntry
+## <a name="cmanualaccessoraddbindentry"></a><a name="addbindentry"></a>CManualAccessor:: AddBindEntry
 
 Çıkış sütunlarına bir bağlama girişi ekler.
 
@@ -106,7 +106,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 Bu işlevi kullanmak için, önce [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md)öğesini çağırmanız gerekir. `CreateAccessor`belirtilen sütun sayısından daha fazla giriş ekleyemezsiniz.
 
-## <a name="addparameterentry"></a>CManualAccessor:: AddParameterEntry
+## <a name="cmanualaccessoraddparameterentry"></a><a name="addparameterentry"></a>CManualAccessor:: AddParameterEntry
 
 Parametre girişi yapılarına bir parametre girişi ekler.
 
@@ -150,7 +150,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 Bu işlevi kullanmak için, ilk olarak [CreateParameterAccessor yöntemini](../../data/oledb/cmanualaccessor-createparameteraccessor.md)çağırmanız gerekir.
 
-## <a name="createaccessor"></a>CManualAccessor:: CreateAccessor
+## <a name="cmanualaccessorcreateaccessor"></a><a name="createaccessor"></a>CManualAccessor:: CreateAccessor
 
 Sütun bağlama yapıları için bellek ayırır ve sütun veri üyelerini başlatır.
 
@@ -181,7 +181,7 @@ Standart HRESULT değerlerinden biri.
 
 `CManualAccessor::AddBindEntry` işlevini çağırmadan önce bu işlevi çağırın.
 
-## <a name="createparameteraccessor"></a>CManualAccessor:: CreateParameterAccessor
+## <a name="cmanualaccessorcreateparameteraccessor"></a><a name="createparameteraccessor"></a>CManualAccessor:: CreateParameterAccessor
 
 Parametre bağlama yapıları için bellek ayırır ve parametre veri üyelerini başlatır.
 

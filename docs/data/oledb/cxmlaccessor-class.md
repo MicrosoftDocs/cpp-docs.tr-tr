@@ -20,16 +20,16 @@ helpviewer_keywords:
 - GetXMLColumnData method
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-ms.openlocfilehash: 85fddb9b77cfc089b2236f2ff82944fec6ef9632
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f25fb3635f70ee9a0e38ddcdbcf373fe6b1b84c8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176076"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211048"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 
-Veri deposunun şeması (temelindeki) olanağıyla olduğunda dize verileri veri kaynaklarına erişim sağlar.
+Veri deposunun şeması (temel yapı) hakkında bilginiz olmadığında veri kaynaklarına dize verileri olarak erişmenizi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,7 +39,7 @@ class CXMLAccessor : public CDynamicStringAccessorW
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: atldbcli.h
+**Üstbilgi**: atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -47,24 +47,24 @@ class CXMLAccessor : public CDynamicStringAccessorW
 
 |||
 |-|-|
-|[GetXMLColumnData](#getxmlcolumndata)|Sütun bilgileri alır.|
-|[GetXMLRowData](#getxmlrowdata)|Bir tablonun tüm içeriğini satırlara göre alır.|
+|[GetXMLColumnData](#getxmlcolumndata)|Sütun bilgisini alır.|
+|[GetXMLRowData](#getxmlrowdata)|Tablonun tüm içeriğini satırlara göre alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ancak, `CXMLAccessor` farklıdır `CDynamicStringAccessorW` içeren XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür. Bu çıkış XML kullanan Web sayfaları için özellikle kullanışlıdır. XML etiket adları veri deposunun sütun adları mümkün olduğunca yakın eşleşir.
+Ancak `CXMLAccessor`, veri deposundan erişilen tüm verileri XML biçimli (etiketli) veriler olarak dönüştürdüğü için `CDynamicStringAccessorW` farklıdır. Bu, özellikle XML kullanan Web sayfalarına çıkış için yararlıdır. XML etiketi adları, veri deposunun sütun adlarıyla mümkün olduğunca yakından eşleştirecektir.
 
-Kullanım `CDynamicAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.
+Sütun bilgilerini almak için `CDynamicAccessor` yöntemler kullanın. Bu sütun bilgilerini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız.
 
-Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Sütun bilgileri kullanarak elde [GetXMLColumnData](#getxmlcolumndata) veya sütun verileri kullanarak satır elde [GetXMLRowData](#getxmlrowdata).
+Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetXMLColumnData](#getxmlcolumndata) kullanarak sütun bilgilerini alın veya [GetXMLRowData](#getxmlrowdata)kullanarak sütun verilerini satırlara göre alın.
 
 ## <a name="example"></a>Örnek
 
 [!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/cpp/cxmlaccessor-class_1.cpp)]
 
-## <a name="getxmlcolumndata"></a> CXMLAccessor::GetXMLColumnData
+## <a name="cxmlaccessorgetxmlcolumndata"></a><a name="getxmlcolumndata"></a>CXMLAccessor:: GetXMLColumnData
 
-Sütunu örneğe göre olarak XML biçimli dize verileri, bir tablonun sütun türü bilgisini alır.
+Bir tablonun sütun türü bilgilerini XML biçimli dize verileri olarak sütuna göre alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -75,7 +75,7 @@ HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();
 #### <a name="parameters"></a>Parametreler
 
 *strOutput*<br/>
-[out] Alınacak sütun türü bilgilerini içeren bir dize arabelleğine başvuru. Dize veri deposunun sütun adları eşleşen XML etiket adları ile biçimlendirilir.
+dışı Alınacak sütun türü bilgilerini içeren bir dize arabelleğine başvuru. Dize, veri deposunun sütun adlarıyla eşleşen XML etiketi adlarıyla biçimlendirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -83,7 +83,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki XML sütun türü bilgisini nasıl biçimlendirildiğini gösterir. `type` sütunun veri türünü belirtir. OLE DB veri türlerini, erişilen veritabanı, veri türleri temel unutmayın.
+Aşağıda sütun türü bilgisinin XML biçiminde nasıl biçimlendirildiği gösterilmektedir. `type` sütunun veri türünü belirtir. Veri türlerinin erişilmekte olan veritabanına değil OLE DB veri türlerini temel alan olduğunu unutmayın.
 
 `<columninfo>`
 
@@ -91,9 +91,9 @@ Aşağıdaki XML sütun türü bilgisini nasıl biçimlendirildiğini gösterir.
 
 `</columninfo>`
 
-## <a name="getxmlrowdata"></a> CXMLAccessor::GetXMLRowData
+## <a name="cxmlaccessorgetxmlrowdata"></a><a name="getxmlrowdata"></a>CXMLAccessor:: GetXMLRowData
 
-Tüm içeriğini tablo XML biçimli dize verileri, satır alır.
+Bir tablonun tüm içeriğini XML biçimli dize verileri olarak satıra göre alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -105,10 +105,10 @@ HRESULT GetXMLRowData(CSimpleStringW& strOutput,
 #### <a name="parameters"></a>Parametreler
 
 *strOutput*<br/>
-[out] Alınacak tablo verilerini içeren bir arabelleği başvuru. Veriler, dize verileri veri deposunun sütun adlarının eşleşmesi XML etiket adlarına sahip olarak biçimlendirilir.
+dışı Alınacak tablo verilerini içeren bir arabelleğe başvuru. Veriler, veri deposunun sütun adlarıyla eşleşen XML etiketi adlarıyla dize verileri olarak biçimlendirilir.
 
 *bAppend*<br/>
-[in] Bir dize çıktı verilerini sonuna belirten bir Boole değeri.
+'ndaki Çıktı verilerinin sonuna bir dize eklenip eklenmeyeceğini belirten bir Boole değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -116,7 +116,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` Aşağıdaki satır verisini temsil eder. Kullanmak istediğiniz satıra taşımak için yöntemleri taşıyın.
+Aşağıda satır verilerinin XML biçiminde nasıl biçimlendirildiği gösterilmektedir. Aşağıdaki `DATA` satır verilerini temsil eder. İstenen satıra gitmek için Move yöntemlerini kullanın.
 
 `<row>`
 
@@ -126,7 +126,7 @@ Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>
 [CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)<br/>

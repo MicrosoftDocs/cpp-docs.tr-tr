@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: daa0ae4aea5ff2a1a3312efcf3c39f43b541abf6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e93073a1728063038ddd4e28dbb313854ee3c8c5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514919"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166698"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -28,15 +28,15 @@ ms.locfileid: "69514919"
 *type*<br/>
 Seçim Aşağıdakilerden biri olabilir:
 
-- `dll`Sonuçta ortaya çıkan DLL 'nin işlem içi COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler. Varsayılan değer budur.
+- `dll`, sonuçta elde edilen DLL 'nin işlem içi COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler. Varsayılan değer budur.
 
-- `exe`Sonuçta elde edilen yürütülebilir dosyanın işlem dışı COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler.
+- `exe`, sonuçta elde edilen yürütülebilir dosyanın işlem dışı COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler.
 
-- `service`Ortaya çıkan yürütülebilir dosyanın bir NT hizmeti olarak çalışmasına izin veren işlevler ve sınıflar ekler.
+- `service`, sonuçta elde edilen yürütülebilir dosyanın bir NT hizmeti olarak çalışmasına izin veren işlevler ve sınıflar ekler.
 
-- `unspecified`Modül özniteliğiyle ilgili ATL kodu ekleme işlemini devre dışı bırakır: ATL modül sınıfının, genel örnek _AtlModule ve giriş noktası işlevlerinin ekleme. , Projedeki diğer öznitelikler nedeniyle ATL kodunun eklenmesine izin vermez.
+- `unspecified`, Module özniteliğiyle ilgili ATL kodunun eklenmesine devre dışı bırakır: ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri ekleme. , Projedeki diğer öznitelikler nedeniyle ATL kodunun eklenmesine izin vermez.
 
-*name*<br/>
+*ada*<br/>
 Seçim Kitaplık bloğunun adı.
 
 *version*<br/>
@@ -93,21 +93,21 @@ DLL, çalıştırılabilir veya hizmetin uygulama KIMLIĞINI kaydetmek için kul
 
 Bir. IDL dosyasında bir kitaplık bloğuna izin verilir. Kaynak kodundaki birden çok modül girişi, uygulanan en son parametre değerleriyle birleştirilir.
 
-Bu öznitelik, ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışı değişir. Yukarıdaki davranışa ek olarak öznitelik, doğru türdeki (adlı `_AtlModule`) genel bir nesne ve ek destek kodu da ekler. Özniteliği tek başına ise doğru modül türünden türetilmiş bir sınıf ekler. Özniteliği bir sınıfa uygulanırsa doğru modül türünün bir Taban sınıfını ekler. Doğru tür, *tür* parametresinin değeri tarafından belirlenir:
+Bu öznitelik, ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışı değişir. Yukarıdaki davranışa ek olarak öznitelik, doğru türdeki (`_AtlModule`olarak adlandırılır) ve ek destek kodunun genel bir nesnesini de ekler. Özniteliği tek başına ise doğru modül türünden türetilmiş bir sınıf ekler. Özniteliği bir sınıfa uygulanırsa doğru modül türünün bir Taban sınıfını ekler. Doğru tür, *tür* parametresinin değeri tarafından belirlenir:
 
-- `type` = **dosyasını**
+- `type` = **DLL**
 
    [Catldllmodület](../../atl/reference/catldllmodulet-class.md) , temel sınıf olarak ve bir com sunucusu için gereken standart dll giriş noktaları olarak kullanılır. Bu giriş noktaları [DllMain](/windows/win32/Dlls/dllmain), [DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver), [DllUnregisterServer](/windows/win32/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow)ve [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\)).
 
 - `type` = **exe**
 
-   [Catlexemodület](../../atl/reference/catlexemodulet-class.md) , temel sınıf olarak ve standart çalıştırılabilir giriş noktası olarak kullanılır. [](/windows/win32/api/winbase/nf-winbase-winmain)
+   [Catlexemodület](../../atl/reference/catlexemodulet-class.md) , temel sınıf olarak ve standart çalıştırılabilir [giriş noktası olarak](/windows/win32/api/winbase/nf-winbase-winmain)kullanılır.
 
-- `type` = **hizmetle**
+- `type` = **hizmeti**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) , temel sınıf olarak ve standart çalıştırılabilir giriş noktası olarak kullanılır. [](/windows/win32/api/winbase/nf-winbase-winmain)
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) , temel sınıf olarak ve standart çalıştırılabilir [giriş noktası olarak](/windows/win32/api/winbase/nf-winbase-winmain)kullanılır.
 
-- `type` = **Memesi**
+- `type` = **belirtilmemiş**
 
    Module özniteliğiyle ilgili ATL kodu ekleme işlemini devre dışı bırakır.
 
@@ -154,8 +154,8 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 |-|-|
 |**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -1,17 +1,17 @@
 ---
-title: Nesne (C++ COM özniteliği)
+title: nesne (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.object
 helpviewer_keywords:
 - object attribute
 ms.assetid: f2d3c231-630d-4b4c-bd15-b1c30df362dd
-ms.openlocfilehash: c0f544e84e5110761dfd01e25abef4352f055ff5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4545d899c13a1eabf8ea5fb6fe3918fb5f05b626
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407542"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214715"
 ---
 # <a name="object-c"></a>nesne (C++)
 
@@ -25,13 +25,13 @@ ms.locfileid: "62407542"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir arabirim tanımı önce geldiği zaman **nesne** C++ özniteliği arabirimi .idl dosyası özel bir arabirim olarak yerleştirilmesini neden olur.
+Bir arabirim tanımından önce, **nesne** C++ özniteliği arabirimin. IDL dosyasına özel bir arabirim olarak yerleştirilmesine neden olur.
 
-Nesne ile işaretlenen herhangi bir arabirimde devralmalıdır `IUnknown`. Devralınan taban arabirimlerin herhangi, bu koşul sağlanana `IUnknown`. Temel arabirim devralır, `IUnknown`, derleyici ile işaretlenen arabirim neden olacak **nesne** türetmek için `IUnknown`.
+Nesne ile işaretlenen herhangi bir arabirim `IUnknown`devralması gerekir. Temel arabirimlerin herhangi biri `IUnknown`devraldığı takdirde bu durum karşılanır. `IUnknown`hiçbir temel arabirim devralmadıysanız, derleyici **nesne** ile işaretlenen arabirimin `IUnknown`türetmesine neden olur.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [nonbrowsable](nonbrowsable.md) nasıl kullanılacağına ilişkin bir örnek **nesne**.
+**Nesnenin**nasıl kullanılacağına ilişkin bir örnek için bkz. [gözatılabilir](nonbrowsable.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -39,12 +39,12 @@ Bkz: [nonbrowsable](nonbrowsable.md) nasıl kullanılacağına ilişkin bir örn
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

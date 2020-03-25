@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4561
 ms.assetid: 3a10c12c-601b-4b6c-9861-331fd022e021
-ms.openlocfilehash: b0fd27142f0404a53fa2fee87fb2309e2f54d2c2
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 11a1bcdc8396b1eb74121c27154b8c6c24fa92a6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965973"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80162289"
 ---
 # <a name="compiler-warning-level-1-c4561"></a>Derleyici Uyarısı (düzey 1) C4561
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: 6e0036b7008b67a1e21bcbe64977f4703bbdf3be
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: dd55c7474a0a8a273ddfab212b3ebcaa6e3b4a65
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514639"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166868"
 ---
 # <a name="implements_category"></a>implements_category
 
@@ -30,13 +30,13 @@ Uygulanan kategorinin KIMLIĞI.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmplements_category** C++ özniteliği, hedef sınıf tarafından uygulanan bileşen kategorilerini belirtir. Bu, bir KATEGORI Haritası oluşturarak ve **implements_category** özniteliği tarafından belirtilen ayrı girdileri ekleyerek yapılır. Daha fazla bilgi için bkz. [Bileşen kategorileri ve bunların nasıl çalıştıkları](/windows/win32/com/component-categories-and-how-they-work).
+**İmplements_category** C++ özniteliği, hedef sınıf tarafından uygulanan bileşen kategorilerini belirtir. Bu, bir KATEGORI Haritası oluşturup **implements_category** özniteliği tarafından belirtilen ayrı girdileri ekleyerek yapılır. Daha fazla bilgi için bkz. [Bileşen kategorileri ve bunların nasıl çalıştıkları](/windows/win32/com/component-categories-and-how-they-work).
 
-Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` `vi_progid` uygulanmışsa ve`coclass` de uygulanır.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` uygulanmışsa `vi_progid` ve `coclass` de uygulanır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, aşağıdaki nesnenin `Control` kategoriyi uyguladığını belirtir.
+Aşağıdaki kod, aşağıdaki nesnenin `Control` kategorisini uyguladığını belirtir.
 
 ```cpp
 // cpp_attr_ref_implements_category.cpp
@@ -58,9 +58,9 @@ class CMyClass {};
 |||
 |-|-|
 |**Uygulama hedefi**|**sınıf**, **Yapı**|
-|**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass`, `progid`veya`vi_progid`|
-|**Geçersiz öznitelikler**|Yok.|
+|**Tekrarlanabilir**|Yes|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass`, `progid`veya `vi_progid`|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

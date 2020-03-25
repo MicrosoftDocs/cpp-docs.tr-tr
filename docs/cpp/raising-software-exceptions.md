@@ -13,12 +13,12 @@ helpviewer_keywords:
 - software exceptions [C++]
 - formats [C++], exception codes
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
-ms.openlocfilehash: 7c58ae2e2b6635345a162d11d2b75a9865d37751
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: f50d84bd034cc6eeb00dc17cb3b7272a988b6731
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246401"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179139"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım özel durumlarını oluşturma
 
@@ -39,7 +39,7 @@ Yapılandırılmış özel durum işlemeyi hatalarla birlikte kullanmak için:
 |Bits|Önerilen ikili ayar|Açıklama|
 |----------|--------------------------------|-----------------|
 |31-30|11|Bu iki bit kodun temel durumunu Açıklama: 11 = Error, 00 = Success, 01 = bilgilendirici, 10 = Warning.|
-|29|1\.|İstemci bit. Kullanıcı tanımlı kodlar için 1 olarak ayarlayın.|
+|29|1|İstemci bit. Kullanıcı tanımlı kodlar için 1 olarak ayarlayın.|
 |28|0|Ayrılmış bit. (0 olarak ayarlı bırakın.)|
 
 "Hata" ayarı çok sayıda özel durum için uygun olsa da, ilk iki biti isterseniz 11 ikili dışında bir ayara ayarlayabilirsiniz. Anımsanması gereken önemli şey, önceki tabloda gösterildiği gibi BITS 29 ve 28 ' i ayarlamanıza olanak sağlar.

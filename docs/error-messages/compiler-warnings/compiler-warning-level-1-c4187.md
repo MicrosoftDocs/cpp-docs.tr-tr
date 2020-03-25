@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4187
 ms.assetid: 2443d948-ab7b-472c-af43-5d81e09af677
-ms.openlocfilehash: 1f0f513c21be344a02c26afbaf06fcd9eda19222
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b264664b28fd2dd1d43133caecd1675931b18d0e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391601"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80163316"
 ---
 # <a name="compiler-warning-level-1-c4187"></a>Derleyici Uyarısı (düzey 1) C4187
 
-\#içeri aktarma öznitelikleri 'öznitelik1' ve 'öznitelik2' uyumsuz; her ikisi de yoksayıldı
+\#içeri aktarma öznitelikleri ' Attribute1 ' ve ' attribute2 ' uyumsuz; her ikisi de yoksayıldı
 
-A [#import](../../preprocessor/hash-import-directive-cpp.md) belirtilen deyimi `no_implementation` ve `implementation_only` öznitelikleri. İki göz ardı edilir.
+[#İmport](../../preprocessor/hash-import-directive-cpp.md) bir ifade `no_implementation` ve `implementation_only` özniteliklerini belirtti. Her ikisi de yok sayılır.

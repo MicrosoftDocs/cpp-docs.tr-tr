@@ -2,22 +2,22 @@
 title: Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler
 ms.date: 11/04/2016
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
-ms.openlocfilehash: aa03ca826eebe467e45e2bb7e0bc47537d40f366
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b43588aac1d246c83f5281456625eeb0ff36b94d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184332"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179984"
 ---
 # <a name="explicitly-defaulted-and-deleted-functions"></a>Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler
 
-C ++ 11'de, varsayılan haline getirilen ve Silinen İşlevler, özel üye işlevlerinin otomatik olarak oluşturulan üzerinde kesin denetim verir. Silinen işlevler, bağımsız değişkenlerde her türden işleve (özel üye işlevleri, normal üye işlevleri ve üye olmayan işlevler) sorunlu tür yükseltmelerini önlemenizi sağlayacak basit dil de sağlar. Böyle yükseltmeler önlenmezse, istenmeyen işlev çağrıları ortaya çıkabilir.
+C++ 11 ' de, varsayılan ve silinmiş işlevler özel üye işlevlerinin otomatik olarak oluşturulup oluşturulmayacağı üzerinde açık denetim sağlar. Silinen işlevler, bağımsız değişkenlerde her türden işleve (özel üye işlevleri, normal üye işlevleri ve üye olmayan işlevler) sorunlu tür yükseltmelerini önlemenizi sağlayacak basit dil de sağlar. Böyle yükseltmeler önlenmezse, istenmeyen işlev çağrıları ortaya çıkabilir.
 
-## <a name="benefits-of-explicitly-defaulted-and-deleted-functions"></a>Açıkça varsayılan ve silinmiş işlevlerin avantajları
+## <a name="benefits-of-explicitly-defaulted-and-deleted-functions"></a>Açıkça varsayılan olarak ayarlanmış ve silinen işlevlerin avantajları
 
-C ++'da, derleyici varsayılan oluşturucuyu, kopya oluşturucuyu, kopya atama işlecini ve yıkıcıyı bunları bildirmeyen bir tür için otomatik olarak atar. Bu işlevler olarak bilinir *özel üye işlevleri*, ve bunlar ne C'deki yapılar gibi davranmasını basit kullanıcı tanımlı türler c++ sağlar. Diğer bir deyişle, oluşturma, kopyalama ve herhangi ek bir kodlama çabası göstermeden onları yok. C++11, dil için daha fazla semantik sağlar ve taşıma oluşturucuyu ve taşıma atama oluşturucusunu derleyicinin otomatik olarak oluşturabileceği özel üye işlevleri listesine ekler.
+C ++'da, derleyici varsayılan oluşturucuyu, kopya oluşturucuyu, kopya atama işlecini ve yıkıcıyı bunları bildirmeyen bir tür için otomatik olarak atar. Bu işlevler, *özel üye işlevleri*olarak bilinir ve yapılar gibi C++ davranan basit kullanıcı tanımlı türlerin C 'de yaptığı şeydir. Diğer bir deyişle, ek kodlama çabaları olmadan bunları oluşturabilir, kopyalayabilir ve yok edebilirsiniz. C++11, dil için daha fazla semantik sağlar ve taşıma oluşturucuyu ve taşıma atama oluşturucusunu derleyicinin otomatik olarak oluşturabileceği özel üye işlevleri listesine ekler.
 
-Bu basit türler için uygundur, ancak karmaşık türler genellikle bir veya daha fazla özel üye işlevleri tanımlayın ve bu diğer özel üye işlevlerinin otomatik olarak oluşturulmasını engelleyebilir. Pratikte:
+Bu basit türler için uygundur, ancak karmaşık türler genellikle bir veya daha fazla özel üye işlevi tanımlar ve bu, diğer özel üye işlevlerinin otomatik olarak oluşturulmasını engelleyebilir. Uygulamada:
 
 - Herhangi bir oluşturucu açıkça bildirilirse, hiçbir varsayılan oluşturucu otomatik olarak oluşturulmaz.
 
@@ -25,15 +25,15 @@ Bu basit türler için uygundur, ancak karmaşık türler genellikle bir veya da
 
 - Bir taşıma oluşturucu veya taşıma atama işleci açıkça bildirilirse, bu durumda:
 
-   - Hiçbir kopya Oluşturucusu otomatik olarak oluşturulur.
+   - Hiçbir kopya Oluşturucu otomatik olarak oluşturulmaz.
 
-   - Hiçbir kopya atama işleci otomatik olarak oluşturulur.
+   - Hiçbir kopyalama atama işleci otomatik olarak oluşturulmaz.
 
 - Bir kopya oluşturucu, kopya atama işleci, taşıma oluşturucu, taşıma atama işleci veya yıkıcı açıkça bildirilirse, bu durumda:
 
-   - Hiçbir taşıma Oluşturucusu otomatik olarak oluşturulur.
+   - Hiçbir taşıma Oluşturucusu otomatik olarak oluşturulmaz.
 
-   - Hiçbir taşıma atama işleci otomatik olarak oluşturulur.
+   - Hiçbir Move-atama işleci otomatik olarak oluşturulmaz.
 
 > [!NOTE]
 > Buna ek olarak, C ++ 11 standardı aşağıdaki ek kuralları belirtir:
@@ -43,9 +43,9 @@ Bu basit türler için uygundur, ancak karmaşık türler genellikle bir veya da
 >
 > Visual Studio, her iki durumda da gerekli işlevleri otomatik olarak örtük bir şekilde oluşturmaya devam eder ve bir uyarı vermez.
 
-Bu kuralların sonuçları, nesne hiyerarşilerine de sızabilir. Örneğin, türetilen bir sınıftan çağrılabilir olduğu bir varsayılan oluşturucuya sahip bir temel sınıf herhangi bir nedenle başarısız olursa — diğer bir deyişle, bir **genel** veya **korumalı** herhangi bir parametre olarak alan oluşturucu — bir sınıf türetilen kendi varsayılan oluşturucusunu otomatik olarak oluşturulamıyor.
+Bu kuralların sonuçları, nesne hiyerarşilerine de sızabilir. Örneğin, herhangi bir nedenden dolayı bir temel sınıf, türetilen bir sınıftan çağrılabilir bir varsayılan oluşturucuya sahip olmaz — yani, hiçbir parametre içermeyen bir **ortak** veya **korumalı** Oluşturucu — bundan türetilen bir sınıf kendi varsayılan oluşturucusunu otomatik olarak üretemiyor.
 
-Bu kurallar, hangi rahatça, kullanıcı tanımlı türleri ve sık kullanılan C++ deyimlerinin olması gerektiği uygulanmasını karmaşık hale getirebilir — Örneğin, kullanıcı tarafından tanımlanan bir türü kopyalanamaz özel ve değil kopya oluşturucu ve kopya atama işleci bildirerek yapma bunları tanımlama.
+Bu kurallar, Kullanıcı tanımlı tür ve yaygın deyimler gibi ne kadar basit bir şekilde, Kullanıcı tanımlı türler ve ortak C++ Ise OMS 'nin uygulanmasını karmaşıklaştırır. Örneğin, kopya Oluşturucusu ve kopya atama işlecini özel olarak bildirerek ve bunları tanımlamamadan, Kullanıcı tanımlı tür kopyalanabilir olmayan bir tür oluşturma.
 
 ```cpp
 struct noncopyable
@@ -58,15 +58,15 @@ private:
 };
 ```
 
-C ++ 11'den önce bu kod parçacığı kopyalanamaz türlerin deyimsel form oluştu. Ancak, bazı sorunlar vardır:
+C++ 11 ' den önce, bu kod parçacığı kopyalanabilir olmayan türlerin ıdimatik biçimidir. Ancak, çeşitli sorunlar vardır:
 
-- Kopya Oluşturucu, gizlemek için özel olarak bildirilmesi gerekir, ancak hiç bildirildiğinden, varsayılan oluşturucunun otomatik oluşturulması engellenir. İsterseniz, hiçbir şey yapmasa bile açıkça varsayılan oluşturucuyu tanımlamak zorunda.
+- Kopya oluşturucunun gizlenmesi için özel olarak bildirilmesini gerekir, ancak her birinde bildirildiği için, varsayılan oluşturucunun otomatik olarak oluşturulması engellenir. Herhangi bir şey yapmasa bile, bir tane istiyorsanız, varsayılan oluşturucuyu açıkça tanımlamanız gerekir.
 
-- Açıkça tanımlanmış varsayılan oluşturucular hiçbir şey yapmaz olsa bile, Önemsiz olmayan derleyici tarafından kabul edilir. Bu, otomatik olarak oluşturulan varsayılan oluşturucudan daha az verimlidir ve `noncopyable` öğesinin gerçek bir POD türü olmasını önler.
+- Açıkça tanımlanmış varsayılan Oluşturucu hiçbir şey yapmasa bile, derleyici tarafından önemsiz olmayan kabul edilir. Bu, otomatik olarak oluşturulan varsayılan oluşturucudan daha az verimlidir ve `noncopyable` öğesinin gerçek bir POD türü olmasını önler.
 
-- Kopya oluşturucu ve kopya atama işleci dış koddan gizlense de, `noncopyable` öğesinin üye işlevleri ve arkadaşları onu görmeye ve çağırmaya devam edebilir. Bildirilir ancak tanımlanmazsa bunların çağrılması bir bağlayıcı hatasına neden olur.
+- Kopya oluşturucu ve kopya atama işleci dış koddan gizlense de, `noncopyable` öğesinin üye işlevleri ve arkadaşları onu görmeye ve çağırmaya devam edebilir. Bunlar, tanımlarsa ve tanımlanmazsa, çağrı bir bağlayıcı hatasına neden olur.
 
-- Bu yaygın olarak kabul edilen bir deyim olmasına rağmen özel üye işlevleri otomatik oluşturulması için tüm kurallar anlamadan amaç açık değildir.
+- Bu, yaygın olarak kabul edilen bir deyim olsa da, özel üye işlevlerinin otomatik olarak oluşturulmasına yönelik tüm kuralları anlamadığınız müddetçe amaç net değildir.
 
 C ++ 11'de, kopyalanamayan deyim daha basit bir yolla uygulanabilir.
 
@@ -79,23 +79,23 @@ struct noncopyable
 };
 ```
 
-Bildirim nasıl öncesi sorunların-C ++ 11 giderildiğine:
+Pre-C + + 11 deyimciyle ilgili sorunların çözümlendiğine dikkat edin:
 
 - Varsayılan oluşturucunun oluşturulması, kopya oluşturucu bildirilerek önlenmeye devam eder, ancak bunu açıkça varsayılan haline getirerek geri alabilirsiniz.
 
 - Açıkça varsayılan haline getirilen özel üye işlevleri önemsiz olarak sayılmaya devam eder, bu nedenle performans cezası olmaz ve `noncopyable` öğesinin gerçek bir POD türü olması engellenmez.
 
-- Kopya oluşturucu ve kopya atama işleci geneldir ancak silinmiştir. Bunu tanımlamak veya silinmiş bir işlevi çağırmak için bir derleme zamanı hatasıdır.
+- Kopya Oluşturucu ve kopya atama işleci herkese açıktır, ancak silinir. Silinen bir işlevi tanımlamak veya çağırmak için derleme zamanı hatası.
 
-- Amaç, `=default` ve `=delete`'i anlayan herkes için açıktır. İçin özel üye işlevleri otomatik oluşturulması kurallarını anlamak zorunda değilsiniz.
+- Amaç, `=default` ve `=delete`'i anlayan herkes için açıktır. Özel üye işlevlerinin otomatik olarak oluşturulmasına ilişkin kuralları anlamanız gerekmez.
 
-Benzer deyimleri, taşınabilir olmayan, yalnızca dinamik olarak ayrılabilen veya dinamik olarak ayrılamaz kullanıcı tanımlı türler yapmak için mevcut. Her biri bu deyimleri sahip öncesi-benzer sorunlara ve çözümlenen C ++ 11'de aşısından bunları uygulayarak C ++ 11 uygulamalarına varsayılan ve silinmiş özel üye işlevleri.
+Taşınabilir olmayan, yalnızca dinamik olarak ayrılabilen ya da dinamik olarak ayrılamaz Kullanıcı tanımlı türler oluşturmak için benzer bir ıoms vardır. Bu deyimlerin her biri, benzer sorunları çözen ve aynı şekilde C++ 11 ' de, varsayılan olarak ayarlanmış ve silinen özel üye işlevlerini uygulayarak benzer şekilde çözümlenen önceden C + + 11 uygulamalarına sahiptir.
 
-## <a name="explicitly-defaulted-functions"></a>Açıkça varsayılan İşlevler
+## <a name="explicitly-defaulted-functions"></a>Açıkça varsayılan işlevler
 
-Herhangi bir özel üye işlevlerini varsayılan — açıkça özel üye işlevini bir ortak olmayan erişim niteleyicisiyle tanımlamak veya yeniden devreye sokmak için özel üye işlevini varsayılan uygulamayı kullanan durum için özel bir üye işlev ayarlanmış başka koşullar nedeniyle otomatik oluşturma engellendi.
+Özel üye işlevinin varsayılan uygulamayı kullanacağını, özel üye işlevini genel olmayan bir erişim niteleyicisi ile tanımlamak veya bir özel üye işlevini yeniden devreye sokmak için özel üye işlevlerinden herhangi birini varsayılan olarak kullanabilirsiniz. otomatik oluşturma diğer durumlar tarafından engellendi.
 
-Bu örnekte olduğu gibi bildirerek özel üye işlevini varsayılan edebilirsiniz:
+Bu örnekte olduğu gibi bildirerek özel bir üye işlevini varsayılan olarak görürsünüz:
 
 ```cpp
 struct widget
@@ -108,13 +108,13 @@ struct widget
 inline widget& widget::operator=(const widget&) =default;
 ```
 
-Satır içine alınabilir olduğu sürece bir sınıfın gövdesi dışındaki özel üye işlevini varsayılan yapabileceğinize dikkat edin.
+Özel bir üye işlevini, bir sınıfın gövdesi dışında, geçersiz olduğu sürece varsayılan olarak belirleyebildiğinize dikkat edin.
 
-Önemsiz özel üye işlevlerinin performans avantajları nedeniyle varsayılan davranışı istediğinizde boş işlev gövdeleri üzerinden otomatik olarak oluşturulan özel üye işlevleri tercih öneririz. Açıkça özel üye işlevini varsayarak veya bunu bildirmeyerek (ve aynı zamanda otomatik olarak oluşturulmasını önleyen diğer özel üye işlevlerini bildirmeyerek.) ile bunu yapabilirsiniz
+Önemsiz özel üye işlevlerinin performans avantajları nedeniyle, varsayılan davranışı istediğinizde boş işlev gövdeleri üzerinden otomatik olarak oluşturulan özel üye işlevleri tercih etmenizi öneririz. Bu işlemi, özel üye işlevini açıkça değiştirerek ya da bildirmiyorsanız (ve ayrıca otomatik olarak oluşturulmasını engelleyecek diğer özel üye işlevleri bildirmiyorsanız) yapabilirsiniz.
 
 ## <a name="deleted-functions"></a>Silinen İşlevler
 
-Özel üye işlevlerinin yanı sıra normal üye işlevleri ve bunları tanımlanan tanımlanmalarını veya adlandırılmalarını önlemek için üye olmayan işlevleri silebilirsiniz. Özel üye işlevlerini silme, derleyicinin istemediğiniz özel üye işlevleri oluşturmasını daha temiz bir yol sağlar. İşlev bildirildiği sırada silinmelidir; daha sonra işlevin bildirilebileceği ve varsayılan haline getirilebileceği şekilde silinemez.
+Tanımlanmalarını veya çağrılmasına engel olmak için, özel üye işlevlerini, normal üye işlevlerini ve üye olmayan işlevleri de silebilirsiniz. Özel üye işlevlerinin silinmesi, derleyicinin istemediğiniz özel üye işlevleri oluşturmasını engelleyen bir temizleyici yol sağlar. İşlev bildirildiği sırada silinmelidir; daha sonra işlevin bildirilebileceği ve varsayılan haline getirilebileceği şekilde silinemez.
 
 ```cpp
 struct widget
@@ -124,7 +124,7 @@ struct widget
 };
 ```
 
-Normal üye işlevini veya üye olmayan işlevleri silme, sorunlu tür yükseltmelerini istenmeden bir işlevin çağrılmasına neden öğesinden engeller. Silinen işlevler yine aşırı yükleme çözünürlüğüne ve türler yükseltildikten sonra çağrılabilen işlevi daha iyi bir eşleşme sağlamak için bu çalışır. İşlev çağrısı, daha belirgin, ancak silinmiş bir işleve çözümlenir ve bir derleyici hatasına neden olur.
+Normal üye işlev veya üye olmayan işlevlerin silinmesi, sorunlu tür yükseltmelerin istenmeden işlevin çağrılmasına neden olmasını engeller. Silinen İşlevler hala aşırı yükleme çözümüne katıldığından ve türler yükseltildikten sonra çağrılabilecek işlevle daha iyi bir eşleşme sağladığından bu çalışır. İşlev çağrısı, daha belirgin, ancak silinmiş bir işleve çözümlenir ve bir derleyici hatasına neden olur.
 
 ```cpp
 // deleted overload prevents call through type promotion of float to double from succeeding.
@@ -132,7 +132,7 @@ void call_with_true_double_only(float) =delete;
 void call_with_true_double_only(double param) { return; }
 ```
 
-Yukarıdaki örnekte, dikkat edin `call_with_true_double_only` kullanarak bir **float** bağımsız değişkeni, bir derleyici hatasına neden ancak arama `call_with_true_double_only` kullanarak bir **int** olmadığına; **int** durumda, bağımsız değişken yükseltilecek gelen **int** için **çift** ve başarıyla **çift** işlevi sürümü olsa bile, amaçlanan olmayabilir. Çift olmayan bir bağımsız değişken kullanılarak bu işleve yapılan tüm çağrıların bir derleyici hatası oluşturduğundan emin olmak için silinen işlevin şablon sürümünü bildirebilirsiniz.
+Yukarıdaki örnekte bir **float** bağımsız değişkeni kullanarak `call_with_true_double_only` çağıran bir derleyici hatasına neden olur, ancak bir **int** bağımsız değişkeni kullanılarak `call_with_true_double_only` çağırmak gerekmez; **int** durumunda, bağımsız değişkeni **int** 'ten **Double** 'a yükseltilir ve bu, amaçlanan gibi olmasa bile işlevin **çift** sürümünü başarıyla çağırır. Çift olmayan bir bağımsız değişken kullanılarak bu işleve yapılan tüm çağrıların bir derleyici hatası oluşturduğundan emin olmak için silinen işlevin şablon sürümünü bildirebilirsiniz.
 
 ```cpp
 template < typename T >

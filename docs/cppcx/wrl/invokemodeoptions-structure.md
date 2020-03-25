@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - InvokeModeOptions structure
 - InvokeMode enum
-ms.openlocfilehash: 0e5b45042c9959b87ad5db97ab755e49de469149
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9bca49479d97ee371f6728f90a9aa96da0387f54
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386050"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213843"
 ---
 # <a name="invokemodeoptions-structure"></a>Invokemodeoptions yapısı
 
-Temsilci sırasındaki tüm olaylarını başlatmak için ya da bir hata oluştuktan sonra tetikleme durdurmak için belirtir. İzin verilen değerler belirtilen `InvokeMode` sabit listesi.
+Temsilci sırasındaki tüm olayların mi tetikleneceği yoksa bir hata olduktan sonra tetiklenmesi mi durdurulacağı belirtir. `InvokeMode` numaralandırmasında izin verilen değerler belirtilmiştir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,11 +35,11 @@ struct InvokeModeOptions
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** Event. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)<br/>
-[Microsoft::WRL::AgileEventSource sınıfı](agileeventsource-class.md)
+[Microsoft:: WRL:: AgileEventSource sınıfı](agileeventsource-class.md)

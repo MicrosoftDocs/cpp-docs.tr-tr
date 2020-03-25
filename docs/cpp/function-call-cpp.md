@@ -11,12 +11,12 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - function call operator ()
 ms.assetid: 5094254a-045b-46f7-8653-69bc91e80dce
-ms.openlocfilehash: 0064b17f0adf5cadf732321fbb62403a1da5db76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c7326b0f9c9592cb2b3be973a5ba1747a2015a0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154236"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179815"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C++)
 
@@ -30,7 +30,7 @@ primary-expression ( expression-list )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu bağlamda `primary-expression` ilk işlenen, ve `expression-list`, büyük olasılıkla boş bağımsız değişken listesini ise ikinci işlenendir. İşlev çağrısı işleci, birkaç parametre gerektiren işlemler için kullanılır. Bunun çalışmasının nedeni `expression-list` tek bir işlenen yerine bir listedir. İşlev çağrısı işleci, statik olmayan bir üye işlevi olmalıdır.
+Bu bağlamda, ilk işlenen `primary-expression` ve muhtemelen boş bir bağımsız değişken listesi olan `expression-list`ikinci işlenendir. İşlev çağrısı işleci, birkaç parametre gerektiren işlemler için kullanılır. `expression-list`, tek bir işlenen yerine bir liste olduğundan bu işe yarar. İşlev çağrısı işleci, statik olmayan bir üye işlevi olmalıdır.
 
 İşlev çağrısı işleci, aşırı yüklendiğinde işlevlerin çağrılma biçimini değiştirmez; bunun yerine, işlecin belirli bir sınıf türünden nesnelere uygulandığında nasıl yorumlanacağını değiştirir. Örneğin, aşağıdaki kod genellikle anlamsız olacaktır:
 
@@ -39,7 +39,7 @@ Point pt;
 pt( 3, 2 );
 ```
 
-Uygun aşırı yüklenmiş işlev çağrısı işleci göz önünde bulundurulduğunda, ancak bu sözdizimi kaydırmak için kullanılabilir `x` koordinatını 3 birim ve `y` koordinatını 2 birim. Aşağıdaki kod, bu tür bir tanımı göstermektedir:
+Ancak uygun bir aşırı yüklenmiş işlev çağrısı işleci verildiğinde, bu söz dizimi `x` koordinatı 3 birimlerinin ve `y` koordinat 2 birimlerinin kaymasını sağlamak için kullanılabilir. Aşağıdaki kod, bu tür bir tanımı göstermektedir:
 
 ```cpp
 // function_call.cpp
@@ -62,7 +62,7 @@ int main()
 
 İşlev çağrısı işlecinin bir işlevin adına değil, bir nesnenin adına uygulandığını unutmayın.
 
-Ayrıca, bir işlev (işlevin kendisi yerine) için bir işaretçi kullanarak işlev çağrısı işleci aşırı yüklenebilir.
+İşlev çağrısı işlecini bir işlev işaretçisi (işlevin kendisi yerine) kullanarak da aşırı yükleyebilirsiniz.
 
 ```cpp
 typedef void(*ptf)();

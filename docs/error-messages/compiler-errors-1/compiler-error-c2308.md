@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2308
+title: Derleyici hatası C2308
 ms.date: 11/04/2016
 f1_keywords:
 - C2308
 helpviewer_keywords:
 - C2308
 ms.assetid: d1eaf101-077d-4c43-97ac-410efd5b6fc9
-ms.openlocfilehash: f5744509f89337d2fe22af785b9af6a48446997c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d586a04fd132f412dd6fb3750982cdf4c6a82a7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302221"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206272"
 ---
-# <a name="compiler-error-c2308"></a>Derleyici Hatası C2308
+# <a name="compiler-error-c2308"></a>Derleyici hatası C2308
 
-uyumsuz dizeler birleştiriliyor
+eşleşmeyen dizeler birleştiriliyor
 
-Her iki geniş ve geniş olmayan karakter dizeleri için birleştirme belirtildi. Bir geniş karakter dizesi ve olmayan geniş karakter dizesi birleştirilemez.
+Birleştirme için hem geniş hem de geniş olmayan karakter dizeleri belirtildi. Geniş bir karakter dizesini ve geniş olmayan karakter dizesini birleştirebilirsiniz.

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - immediatebind attribute
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
-ms.openlocfilehash: 8c659f23d6828616c4a48522b61330336e994cbb
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d0fb85a3f5642bc5fffcad29892ca15bb13a1ce0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514644"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166920"
 ---
 # <a name="immediatebind"></a>immediatebind
 
@@ -29,7 +29,7 @@ Veritabanına, veri bağlantılı nesnenin bir özelliğindeki tüm değişiklik
 
 ## <a name="example"></a>Örnek
 
-İmmediatebind [](bindable.md) 'in nasıl kullanılacağına ilişkin bir örnek için bkz.bağlanabilir.
+**İmmediatebind**'in nasıl kullanılacağına ilişkin bir örnek [için bkz. bağlanabilir.](bindable.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -39,8 +39,8 @@ Veritabanına, veri bağlantılı nesnenin bir özelliğindeki tüm değişiklik
 |-|-|
 |**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

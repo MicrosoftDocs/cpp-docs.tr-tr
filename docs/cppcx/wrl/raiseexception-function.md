@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
-ms.openlocfilehash: 08305c5d59d7e272aac87ad9aa183c8e82588632
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3270057bf5b1b27a98bef1ab236291eab15d27ab
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62231359"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213635"
 ---
 # <a name="raiseexception-function"></a>RaiseException İşlevi
 
@@ -28,11 +28,11 @@ inline void __declspec(noreturn)   RaiseException(
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*<br/>
-Özel durum kodu gerçekleştirilen özel durum; diğer bir deyişle, başarısız bir işlemin HRESULT.
+*HR*<br/>
+Yükseltilen özel durumun özel durum kodu; diğer bir deyişle, başarısız bir işlemin HRESULT.
 
 *dwExceptionFlags*<br/>
-(Bayrak değeri sıfırdır) devam ettirilebilir özel durum ya da (bayrak değeri sıfır dışında) noncontinuable özel durumu gösteren bir bayrak. Varsayılan olarak, özel durum oluştuktan ' dir.
+Sürekliliği olmayan bir özel durumu (bayrak değeri sıfır) veya kalıcı olmayan özel durum (bayrak değeri sıfır dışında) gösteren bayrak. Varsayılan olarak, özel durum devam ettirilebilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -42,9 +42,9 @@ Daha fazla bilgi için bkz. Windows `RaiseException` işlevi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** internal.h
+**Üst bilgi:** iç. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

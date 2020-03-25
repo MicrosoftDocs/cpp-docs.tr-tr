@@ -12,12 +12,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 88acba8d6e2541b3c9f7707b4dd9c03b13067dda
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a68cc85062f9ca711c453ef98f69a7c5ea114d94
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445356"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214363"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 
@@ -27,7 +27,7 @@ Bu makalede, mevcut kapsayıcı uygulamalarına isteğe bağlı gelişmiş özel
 
 - [Katıştırılmış nesneye OLE bağlantısı](#_core_links_to_embedded_objects)
 
-##  <a name="_core_creating_a_container_server_application"></a>Kapsayıcı/sunucu uygulaması oluşturma
+##  <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a>Kapsayıcı/sunucu uygulaması oluşturma
 
 Kapsayıcı/sunucu uygulaması, hem kapsayıcı hem de sunucu olarak davranan bir uygulamadır. Windows için Microsoft Word buna bir örnektir. Windows belgelerini Word 'e başka uygulamalara ekleyebilirsiniz ve ayrıca Windows belgeleri için Word 'e öğe ekleyebilirsiniz. Kapsayıcı uygulamanızı hem kapsayıcı hem de tam sunucu olarak değiştirme işlemi (bir bileşim kapsayıcı veya minıver uygulaması oluşturamazsınız) tam sunucu oluşturma işlemine benzerdir.
 
@@ -41,11 +41,11 @@ Makale [sunucuları: sunucu](../mfc/servers-implementing-a-server.md) uygulama, 
 
    Örneğin, MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md) , Kapsayıcınız/sunucu uygulamanız tarafından oluşturulan bir öğeyi katıştırmıştır. OCLIENT uygulamasını açarsınız ve kapsayıcı/sunucu uygulamanız tarafından oluşturulan öğeyi yerinde düzenleyebilirsiniz. Uygulamanızın öğesini düzenlenirken, MFC OLE örnek [Hiersvr](../overview/visual-cpp-samples.md)tarafından oluşturulan bir öğeyi eklemek istediğinize karar verirsiniz. Bunu yapmak için yerinde etkinleştirme kullanamazsınız. Bu öğeyi etkinleştirmek için HIERSVR 'yi tamamen açmanız gerekir. Microsoft Foundation Class Kitaplığı bu OLE özelliğini desteklemediğinden, `COleClientItem::CanActivate` geçersiz kılmak bu durumu denetlemenizi ve uygulamanızda olası bir çalışma zamanı hatasını önlemenize olanak sağlar.
 
-Yeni bir uygulama oluşturuyorsanız ve bir kapsayıcı/sunucu uygulaması olarak çalışmasını istiyorsanız, uygulama Sihirbazı 'ndaki OLE seçenekleri iletişim kutusunda bu seçeneği belirleyin ve bu destek otomatik olarak oluşturulur. Daha fazla bilgi için bkz. [genel bakış: ActiveX Denetim kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri hakkında daha fazla bilgi için bkz. MFC örnekleri.
+Yeni bir uygulama oluşturuyorsanız ve bir kapsayıcı/sunucu uygulaması olarak çalışmasını istiyorsanız, uygulama Sihirbazı 'ndaki OLE seçenekleri iletişim kutusunda bu seçeneği belirleyin ve bu destek otomatik olarak oluşturulur. Daha fazla bilgi için bkz. [genel bakış: ActiveX Denetim kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri hakkında daha fazla bilgi için bkz. [MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples).
 
 MDI uygulamasını kendi içine ekleyemeyeceğinize unutmayın. Bir SDI uygulaması olmadığı müddetçe kapsayıcı/sunucu olan bir uygulama kendi kendine eklenemez.
 
-##  <a name="_core_links_to_embedded_objects"></a>Katıştırılmış nesne bağlantıları
+##  <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a>Katıştırılmış nesne bağlantıları
 
 Katıştırılmış nesne bağlantıları özelliği, bir kullanıcının kapsayıcı uygulamanızın içindeki katıştırılmış bir nesneye OLE bağlantısı olan bir belge oluşturmasını sağlar. Örneğin, bir Word işlemcisinde ekli bir elektronik tablo içeren bir belge oluşturun. Uygulamanız gömülü nesnelere bağlantıları destekliyorsa, Word işlemcinin belgesinde yer alan elektronik tabloya bir bağlantı yapıştırabilir. Bu özellik, uygulamanızın elektronik tabloda bulunan bilgileri, sözcük işlemcisinin ilk olarak aldığı yeri bilmeden kullanmasına izin verir.
 

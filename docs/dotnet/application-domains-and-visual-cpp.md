@@ -8,18 +8,18 @@ helpviewer_keywords:
 - interoperability [C++], application domains
 - mixed assemblies [C++], application domains
 ms.assetid: 75a08efc-9b02-40ba-99b7-dcbd71010bbf
-ms.openlocfilehash: 2296654e6935bc40f301226b184cf34f77cb126d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16c02bb58681ecb241d3552f57e0b05f2d6711b4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223039"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208815"
 ---
 # <a name="application-domains-and-visual-c"></a>Uygulama etki alanları ve Visual C++
 
-Varsa bir `__clrcall` sanal işlev vtable uygulama etki alanı (appdomain) başına olacaktır. Bir appdomain içinde bir nesne oluşturursanız, yalnızca sanal işleve, appdomain içinde çağırabilirsiniz. Karma modda (**/CLR**) türünüz Hayır, işlem içi vtable varsa `__clrcall` sanal işlevler. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+`__clrcall` sanal işleviniz varsa, vtable uygulama etki alanı (AppDomain) başına olur. Bir uygulama etki alanında bir nesne oluşturursanız, sanal işlevi yalnızca bu AppDomain içinden çağırabilirsiniz. Karma modda ( **/clr**), türü `__clrcall` sanal işlevler yoksa işlem başına vtables ' a sahip olursunuz. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
 - [appdomain](../cpp/appdomain.md)
 

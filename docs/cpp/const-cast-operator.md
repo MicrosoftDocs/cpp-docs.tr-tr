@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - const_cast keyword [C++]
 ms.assetid: 4d8bb203-ef33-4a10-9f9f-c64d4fbc1687
-ms.openlocfilehash: 389ef84149031fd602ff9ded15d34869258ffd52
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d2711142e4aa73cc0119949876e7e593067cd45d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399115"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180348"
 ---
-# <a name="constcast-operator"></a>const_cast İşleci
+# <a name="const_cast-operator"></a>const_cast İşleci
 
-Kaldırır **const**, **geçici**, ve **__unaligned** bir sınıftan öznitelikleri.
+**Const**, **volatile**ve **__unaligned** özniteliklerini bir sınıftan kaldırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ const_cast <type-id> (expression)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir nesne türünün işaretçisi veya bir veri üyesine bir işaretçi açıkça dışında aynı olan bir türe dönüştürülebilir **const**, **geçici**, ve **__unaligned** niteleyiciler. İşaretçiler ve başvurular için sonuç orijinal nesneye başvuracaktır. Veri üyelerinin işaretçileri için sonuç, veri üyesinin orijinal (atanmamış) işaretçisiyle aynı üyeye başvuracaktır. Başvurulan nesnenin türüne bağlı olarak, elde edilen işaretçi, başvuru veya üye verisinin işaretçisi kullanılarak yapılan yazma işlemi tanımlanmamış davranış oluşturabilir.
+Herhangi bir nesne türü işaretçisi veya veri üyesine yönelik bir işaretçi, **const**, **volatile**ve **__unaligned** niteleyicileri dışında özdeş olan bir türe açıkça dönüştürülebilir. İşaretçiler ve başvurular için sonuç orijinal nesneye başvuracaktır. Veri üyelerinin işaretçileri için sonuç, veri üyesinin orijinal (atanmamış) işaretçisiyle aynı üyeye başvuracaktır. Başvurulan nesnenin türüne bağlı olarak, elde edilen işaretçi, başvuru veya üye verisinin işaretçisi kullanılarak yapılan yazma işlemi tanımlanmamış davranış oluşturabilir.
 
-Kullanamazsınız **const_cast** sabit değişkenin sabit durumunu doğrudan geçersiz kılmak için işleci.
+Sabit bir değişkenin sabit durumunu doğrudan geçersiz kılmak için **const_cast** işlecini kullanamazsınız.
 
-**Const_cast** işlecini bir null işaretçi değeri hedef türünün boş işaretçi değerine dönüştürür.
+**Const_cast** işleci, null işaretçi değerini hedef türün null işaretçi değerine dönüştürür.
 
 ## <a name="example"></a>Örnek
 
@@ -62,7 +62,7 @@ int main() {
 }
 ```
 
-İçeren satırda **const_cast**, veri türü **bu** işaretçisi `const CCTest *`. **Const_cast** işleci veri türünü değiştirir **bu** işaretçisine `CCTest *`, üyesinin değiştirilmesini `number` değiştirilecek. Atama, yalnızca deyimin geri kalanında göründüğü kadar sürer.
+**Const_cast**içeren satırda, **Bu** işaretçinin veri türü `const CCTest *`. **Const_cast** işleci, Bu işaretçinin veri türünü `CCTest *`olarak değiştirir, **bu** da üye `number` değiştirilmesine izin verir. Atama, yalnızca deyimin geri kalanında göründüğü kadar sürer.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

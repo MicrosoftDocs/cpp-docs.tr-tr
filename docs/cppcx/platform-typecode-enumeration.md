@@ -1,5 +1,5 @@
 ---
-title: Platform::TypeCode numaralandırması
+title: 'Platform:: TypeCode numaralandırması'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::TypeCode Enumeration
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-ms.openlocfilehash: ac3e0fda473cf50c8adc10e603d9b6c3beee05be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86bc17c45f36a5a72b089340e166df11e9a4334d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183048"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214295"
 ---
-# <a name="platformtypecode-enumeration"></a>Platform::TypeCode numaralandırması
+# <a name="platformtypecode-enumeration"></a>Platform:: TypeCode numaralandırması
 
-Yerleşik türünü temsil eden sayısal bir kategorisini belirtir.
+Yerleşik bir türü temsil eden sayısal bir kategori belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,32 +26,32 @@ enum class TypeCode {};
 
 ### <a name="members"></a>Üyeler
 
-|Türü kodu|Açıklama|
+|Tür kodu|Açıklama|
 |---------------|-----------------|
-|Boole değeri|Platform::Boolean türü.|
-|char16|Default::char16 türü.|
-|DateTime|Bir DateTime türü.|
-|Ondalık|Bir sayısal tür.|
-|Çift|Default::float64 türü.|
-|boş|Geçersiz kılma|
-|Int16|Default::int16 türü.|
-|Int32|Default::int32 türü.|
-|Int64|Default::int64 türü.|
-|Int8|Default::int8 türü.|
-|Nesne|Platform::Object türü.|
-|Tek|Default::float32 türü.|
-|Dize|Platform::String türü.|
-|UInt16|Default::uint16 türü.|
-|UInt32|Default::uint32 türü.|
-|UInt64|Default::uint64 türü.|
-|UInt8|Default::uint8 türü.|
+|Boole|Platform:: Boolean türü.|
+|Char16|Default:: Char16 türü.|
+|DateTime|Bir tarih saat türü.|
+|Ondalık|Sayısal bir tür.|
+|Çift|Default:: float64 türü.|
+|Boş|Kağıt|
+|Int16|Varsayılan:: int16 türü.|
+|Int32|Varsayılan:: Int32 türü.|
+|Int64|Default:: int64 türü.|
+|Int8|Default:: int8 türü.|
+|Nesne|Platform:: Object türü.|
+|Tek|Varsayılan:: float32 türü.|
+|Dize|Platform:: String türü.|
+|UInt16|Varsayılan:: uint16 türü.|
+|UInt32|Varsayılan:: uint32 türü.|
+|UInt64|Varsayılan:: uint64 türü.|
+|UInt8|Default:: Uint8 türü.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd

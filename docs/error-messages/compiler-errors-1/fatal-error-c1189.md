@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C1189
 ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
-ms.openlocfilehash: 06d42316a0109ac063bba43cefebd9aab71c2e72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2217b865109cc48151e4e96b2d38b88764c0c64f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62229065"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203662"
 ---
 # <a name="fatal-error-c1189"></a>Önemli hata C1189
 
-> **\#Hata:** *kullanıcı tarafından sağlanan hata iletisi*
+> **\#hatası:** *Kullanıcı tarafından sağlanan hata iletisi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından oluşturulan C1189 `#error` yönergesi. Yönerge kodları geliştiriciye hata iletisinin metni belirtir. Daha fazla bilgi için [#error yönergesi (C/C++)](../../preprocessor/hash-error-directive-c-cpp.md).
+C1189, `#error` yönergesi tarafından oluşturulur. Yönergeyi kodlayan geliştirici hata iletisinin metnini belirtir. Daha fazla bilgi için bkz. [#error yönergesi (CC++/)](../../preprocessor/hash-error-directive-c-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C1189 oluşturur. Aşağıdaki örnekte, çünkü Geliştirici özel hata iletisi sorunlarını `_WIN32` tanımlayıcı tanımlı değil:
+Aşağıdaki örnek C1189 oluşturur. Örnekte, geliştirici özel bir hata iletisi yayınlar çünkü `_WIN32` tanımlayıcısı tanımlı değil:
 
 ```cpp
 // C1189.cpp

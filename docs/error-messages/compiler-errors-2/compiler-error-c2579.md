@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2579
 ms.assetid: ab090a8d-5462-4046-a1a6-8007e354dedb
-ms.openlocfilehash: 905a0b1841246ca4a714ed99635e332b62538f2e
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 0fac9713a8efc6336afcc0637e1d7ab5683a99a3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446122"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177410"
 ---
 # <a name="compiler-error-c2579"></a>Derleyici hatası C2579
 

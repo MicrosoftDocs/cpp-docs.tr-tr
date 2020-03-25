@@ -17,12 +17,12 @@ helpviewer_keywords:
 - mnemonics [C++], uniqueness checking
 - Check Mnemonics command
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-ms.openlocfilehash: 972478923a7c4c60d8ff949c5532b00a1de1efc0
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 33b1260d088008a94d935f7e4fd7c18b0dd249e3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075497"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167946"
 ---
 # <a name="menu-commands-c"></a>Menü komutları (C++)
 

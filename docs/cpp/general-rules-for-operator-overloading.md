@@ -4,22 +4,22 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - operator overloading [C++], rules
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
-ms.openlocfilehash: 1eceb26a244bc6dd2d5243e54f5e3b8391d88ed1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c8cbea3411acd50be376ae0853a143af57458f3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153768"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188617"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 
-Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygulanır. Ancak, bunlar için geçerli değildir [yeni](../cpp/new-operator-cpp.md) ve [Sil](../cpp/delete-operator-cpp.md) işleçler, ayrı ayrı ele alınmaktadır.
+Aşağıdaki kurallar, aşırı yüklenmiş işleçlerin nasıl uygulandığını kısıtlar. Ancak, bunlar ayrı olarak ele alınan [New](../cpp/new-operator-cpp.md) ve [Delete](../cpp/delete-operator-cpp.md) işleçleri için de geçerlidir.
 
-- Yeni işleçleri gibi tanımlanamaz **.**.
+- Gibi yeni işleçler tanımlayamazsınız **.** ..
 
-- Anlamı yerleşik veri türlerine uygulandığında işleçleri yeniden tanımlanamaz.
+- Yerleşik veri türlerine uygulandığında işleçlerin anlamını yeniden tanımlayamazsınız.
 
-- Aşırı yüklenmiş işleçler, ya da statik olmayan sınıf üyesi işlevi veya genel bir işlev olmalıdır. Özel veya korumalı sınıf üyelerine erişimi gerektiren bir genel işlev, söz konusu sınıfın arkadaş bildirilmelidir. Genel bir işlev sınıfı veya numaralandırılmış tür olan veya bir sınıf başvurusu veya listelenmiş türü en az bir bağımsız değişken almalıdır. Örneğin:
+- Aşırı yüklenmiş işleçler, statik olmayan bir sınıf üyesi işlevi ya da genel bir işlev olmalıdır. Özel veya korumalı sınıf üyelerine erişmesi gereken genel bir işlev, bu sınıfın bir arkadaşınız olarak bildirilmelidir. Genel bir işlev, sınıf veya numaralandırılmış tür olan veya bir sınıfa veya numaralandırılmış türe başvuru olan en az bir bağımsız değişken almalıdır. Örneğin:
 
     ```cpp
     // rules_for_operator_overloading.cpp
@@ -38,23 +38,23 @@ Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygu
     }
     ```
 
-   Yukarıdaki kod örneğinde daha az bildirir-işleci bir üye işlev; olarak Ancak, toplama işleçleri öğesine friend erişimi olan genel işlevleri bildirilir. Birden fazla uygulama için belirli bir işleç sağlanabileceğini unutmayın. Önceki Toplama işleci söz konusu olduğunda iki uygulamaları commutativity kolaylaştırmak için sağlanır. Eklediğiniz yalnızca büyük olasılıkla bu işleçleri olan bir `Point` için bir `Point`, **int** için bir `Point`ve benzeri uygulanabilir.
+   Yukarıdaki kod örneği, bir üye işlevi olarak küçüktür işlecini bildirir; Ancak, ekleme işleçleri arkadaş erişimi olan genel işlevler olarak bildirilmiştir. Belirli bir operatör için birden fazla uygulamanın sağlandığını unutmayın. Önceki ekleme operatörü söz konusu olduğunda, commutativity 'yi kolaylaştırmak için iki uygulama sağlanır. Bu, bir `Point`, **int** 'e bir `Point`ve benzeri bir `Point` ekleyen operatörlerin uygulanmasından kaynaklanıyor olabilir.
 
-- Gruplandırma işleçleri, öncelik uyma ve işlenenleri sayısı ile yerleşik türleri tipik kullanımları tarafından dikte. Bu nedenle, bir kavramı hızlı bir yolu yoktur "2 ve 3 türünde bir nesne eklemek `Point`," eklenecek 2 bekleniyor *x* koordinat ve 3 eklenecek *y* koordine edin.
+- İşleçler, yerleşik türlerle tipik kullanımları tarafından dikte edilen değer, gruplama ve işlenenlerin sayısına uyar. Bu nedenle, "Add 2 ve 3" kavramının ' `Point`türünde bir nesneye eklenmesi, " *x* koordinatına 2 ve *y* koordinamına eklenmek üzere 3 ' ün eklenmesi bekleniyor.
 
-- Birli işleçler üye işlevleri bildirilen bağımsız değişken almaz; Genel işlevleri bildirilen, bunlar bir bağımsız değişken alın.
+- Üye işlevleri olarak belirtilen Birli İşleçler bağımsız değişken almaz; genel işlevler olarak bildirilirse, bir bağımsız değişken alırlar.
 
-- İkili işleçler üye işlevleri bildirilen bir bağımsız değişkenini alabilir; Genel işlevleri bildirilen, bunlar iki bağımsız değişken almaz.
+- Üye işlevleri olarak belirtilen ikili işleçler bir bağımsız değişken alır; genel işlevler olarak bildirilirse, iki bağımsız değişken alırlar.
 
-- Bir işleç bir birli veya ikili işleç olarak kullanılıp kullanılamayacağını (__&__, __*__, __+__, ve __-__), ayrı ayrı her kullanım aşırı yükleyebilirler.
+- Bir işleç birli veya ikili işleç ( __&__ , __*__ , __+__ ve __-__ ) olarak kullanılıyorsa her bir kullanımı ayrı olarak aşırı yükleyebilirsiniz.
 
-- Aşırı yüklenmiş işleçler, varsayılan bağımsız değişkenlere sahip olamaz.
+- Aşırı yüklenmiş işleçler varsayılan bağımsız değişkenlere sahip olamaz.
 
-- Tüm aşırı dışında atama işleçleri (**işleç =**) türetilmiş sınıflar tarafından devralınır.
+- Atama (**operator =** ) hariç tüm aşırı yüklenmiş işleçler türetilmiş sınıflar tarafından devralınır.
 
-- Her zaman için nesnenin sınıf türünün üye işlev aşırı yüklenmiş işleçler için ilk bağımsız değişken olduğundan, işleç (işleç bildirilen veya bu sınıftan türetilmiş bir sınıf sınıf) çağrılır. Hiçbir dönüştürme için ilk bağımsız değişken sağlanır.
+- Üye işlevi aşırı yüklenmiş işleçleri için ilk bağımsız değişken, her zaman işlecinin çağrıldığı nesnenin sınıf türüdür (işlecin bildirildiği sınıf veya bu sınıftan türetilmiş bir sınıf). İlk bağımsız değişken için hiçbir dönüştürme sağlanmaz.
 
-Herhangi bir işleci anlamı tümüyle değiştirilebilir unutmayın. Address-of anlamını içeren (**&**), atama (**=**) ve işleç çağrısı işleçleri. Ayrıca, İşleç aşırı yüklemesi kullanarak temel yerleşik türler için dayanan kimlikleri değiştirilebilir. Örneğin, aşağıdaki dört ifade değerlendirildiğinde tamamen genellikle eşdeğerdir:
+Operatörlerin herhangi birinin anlamı tamamen değişebileceğini unutmayın. Bu, adresin ( **&** ), atamanın ( **=** ) ve işlev çağrısı işleçlerinin anlamını içerir. Ayrıca, yerleşik türler için güvenilede bir kimlik, işleç aşırı yüklemesi kullanılarak değiştirilebilir. Örneğin, aşağıdaki dört deyim genellikle tamamen değerlendirildikleri zaman eşdeğerdir:
 
 ```cpp
 var = var + 1;
@@ -63,10 +63,10 @@ var++;
 ++var;
 ```
 
-Bu kimliği üzerinde aşırı yükleme işleçleri olan sınıf türleri için dayanan olamaz. Ayrıca, bazı temel türler için bu işleçlerin kullanımda örtük gereksinimleri için aşırı yüklenmiş işleçler esnek. Örneğin, toplama/atama işlecini **+=**, sol işlenen bir l-; temel türlerine uygulandığında bir değer olmasını gerektirir işleci aşırı yüklendiğinde bu tür bir gereksinim değildir.
+Bu kimlik, işleçleri aşırı yükleyen sınıf türleri için güvenilelemez. Üstelik, temel türler için bu işleçleri kullanan bazı gereksinimler, aşırı yüklenmiş işleçler için rahat bir şekilde indirgenir. Örneğin, toplama/atama işleci **+=** , sol işlenenin temel türlere uygulandığında l değeri olmasını gerektirir; operatör aşırı yüklendiğinde böyle bir gereksinim yoktur.
 
 > [!NOTE]
-> Tutarlılık sağlamak için yerleşik türler modelini tanımlama işleçler aşırı yüklendiğinde izlemek idealdir. Aşırı yüklenmiş bir işleç semantiği anlamını diğer bağlamlarda önemli ölçüde farklılık, daha faydalı daha kafa karıştırıcı olabilir.
+> Tutarlılık açısından, aşırı yüklenmiş işleçleri tanımlarken yerleşik türlerin modelini izlemek genellikle en iyisidir. Aşırı yüklenmiş bir işlecin semantiği diğer bağlamlardaki anlamından önemli ölçüde farklıysa, faydalı olandan daha karmaşık olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - C++ Support Library
 - Visual C++ Support Library
 ms.assetid: fe6246eb-9ac7-478d-a272-dc9b09b14788
-ms.openlocfilehash: 88b7112962e003d825bac85112224130b5827b9c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6fb61eb871df91dd7fe308c7f9ab103f8a7a915
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209141"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208868"
 ---
 # <a name="c-support-library"></a>C++ Destek Kitaplığı
 
-C++ destek kitaplığı, C++'da yönetilen programlamayı destekleyen sınıflar sağlar.
+Destek C++ kitaplığı, içinde C++yönetilen programlamayı destekleyen sınıflar sağlar.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

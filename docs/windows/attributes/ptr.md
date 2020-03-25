@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ptr attribute
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
-ms.openlocfilehash: e5f2d694f3525f27e4a8371f04efa28940f21bba
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e56d4e56135c0f32a1796ac98565a990c7225705
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514159"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166425"
 ---
 # <a name="ptr"></a>ptr
 
@@ -39,8 +39,8 @@ Bir işaretçiyi tam bir işaretçi olarak belirler.
 |-|-|
 |**Uygulama hedefi**|Arabirim parametresi, arabirim yöntemi, **typedef**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - MFC [C++], ODBC and
 - database connections [C++], MFC ODBC classes
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-ms.openlocfilehash: 9b7d04e2eb8bbb1adf96e05282861ef33e20434a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94a3455324a52b789bcfcf192b698a3c42b37c00
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395878"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213208"
 ---
 # <a name="odbc-and-mfc"></a>ODBC ve MFC
 
 > [!NOTE]
->  MFC veritabanı sınıflarını kullanmak için uygun ODBC sürücüsünü ve veri kaynağı olmalıdır. SQL Server için en son Microsoft ODBC sürücüsü [SQL Server için Microsoft ODBC sürücüsü 13](https://www.microsoft.com/download/details.aspx?id=50420). Çoğu veritabanı satıcıları, Windows için ODBC sürücüsü sağlar.
+>  MFC veritabanı sınıflarını kullanmak için, veri kaynağınız için uygun ODBC sürücüsüne sahip olmanız gerekir. SQL Server için olan son Microsoft ODBC sürücüsü, [SQL Server için Microsoft ODBC sürücüsü 13](https://www.microsoft.com/download/details.aspx?id=50420)' dir. Çoğu veritabanı satıcısı, Windows için bir ODBC sürücüsü sağlar.
 
-Bu konu, Microsoft Foundation Classes (MFC) Kitaplığı'nızın ODBC tabanlı veritabanı sınıflarını temel konseptlerini tanıtan ve sınıfları birlikte nasıl çalıştığını genel bir bakış sağlar. ODBC ve MFC hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+Bu konu, Microsoft Foundation Sınıfları (MFC) kitaplığının ODBC tabanlı veritabanı sınıflarının ana kavramlarını tanıtır ve sınıfların birlikte nasıl çalışabileceğine ilişkin bir genel bakış sağlar. ODBC ve MFC hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
 - [Veri Kaynağına Bağlanma](connecting-to-a-data-source.md)
 
@@ -36,7 +36,7 @@ Bu konu, Microsoft Foundation Classes (MFC) Kitaplığı'nızın ODBC tabanlı v
 
 - [MFC ODBC Sınıfları Hakkında Daha Fazla Okuma](further-reading-about-the-mfc-odbc-classes.md)
 
-ODBC tabanlı MFC veritabanı sınıfları, ODBC sürücüsü kullanılabilir herhangi bir veritabanına erişim sağlamak için tasarlanmıştır. ODBC sınıfları kullanması için uygulama birçok farklı veri biçimlerini ve farklı yerel/uzak yapılandırmaları olan verilere erişebilir. Farklı veritabanı yönetim sistemi (DBMS) işlemek için özel durum kod yazmanız gerekmez. Kullanıcılarınızın erişmek istediğiniz veriler için uygun bir ODBC sürücüsüne sahip olduğu sürece, tablolarda depolanan verileri işlemek için programınızı kullanabilirsiniz.
+ODBC tabanlı MFC veritabanı sınıfları, ODBC sürücüsünün kullanılabildiği herhangi bir veritabanına erişim sağlamak için tasarlanmıştır. Sınıflar ODBC kullandığından, uygulamanız birçok farklı veri biçiminde ve farklı yerel/uzak yapılandırmalarda verilere erişebilir. Farklı veritabanı yönetim sistemlerini (DBMS) işlemek için özel durum kodu yazmanız gerekmez. Kullanıcılarınız erişmek istedikleri veriler için uygun bir ODBC sürücüsüne sahip olduğu sürece, burada depolanan tablolardaki verileri işlemek için programınızı kullanabilirler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

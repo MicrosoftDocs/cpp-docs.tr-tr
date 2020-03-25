@@ -1,24 +1,24 @@
 ---
-title: sabit listesi sınıfı (C++/CLI ve C++/CX)
+title: enum sınıfı (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: da9097a02de08fd1615f5401d08c438c5f64c139
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6305d41febfe4d55b2b84062e76ff62c3ea2b18a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380331"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182142"
 ---
-# <a name="enum-class--ccli-and-ccx"></a>sabit listesi sınıfı (C++/CLI ve C++/CX)
+# <a name="enum-class--ccli-and-ccx"></a>enum sınıfı (C++/CLI ve C++/CX)
 
-Numaralandırıcı olarak adlandırılan sabitler kümesinden oluşan kullanıcı tanımlı türü olan ad alanı kapsamında bir sabit listesi bildirir.
+Ad alanı kapsamında, Numaralandırıcılar adlı adlandırılmış sabitler kümesinden oluşan bir dizi Kullanıcı tanımlı tür olan bir sabit listesi bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++/CX ve C++/CLI desteği **genel sabit listesi sınıfı** ve **özel enum sınıfı** standart benzer olan C++ **sabit listesi sınıfı** ancak ek olarak Erişilebilirlik tanımlayıcısı. Altında **/CLR**, C ++ 11 **sabit listesi sınıfı** tür izin verilir, ancak gerçekten ISO sabit listesi türü istediğinizden emin olmak için tasarlanmıştır C4472 uyarısı oluşturur ve C++/CX ve C++/CLI türü. ISO Standard C++ hakkında daha fazla bilgi için **enum** anahtar sözcüğü, bkz: [numaralandırmalar](../cpp/enumerations-cpp.md).
+C++/CX ve C++/CLI C++ **, standart sabit listesi sınıfına benzer** ancak erişilebilirlik belirticisinin eklenmesiyle birlikte **ortak sabit** listesi sınıfını ve **özel sabit listesi sınıfını** destekler. **/Clr**' ın altında, c++ 11 **enum sınıf** türüne izin verılır, ancak yalnızca ISO numaralandırma türünü gerçekten istediğinizi ve C++/CX ve C++/CLI türünü olmamasını sağlamak için tasarlanan uyarı C4472 oluşturur. ISO standart C++ **enum** anahtar sözcüğü hakkında daha fazla bilgi için bkz. [numaralandırmalar](../cpp/enumerations-cpp.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -34,36 +34,36 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*<br/>
-Erişilebilirlik olabilir numaralandırma **genel** veya **özel**.
+*erişmesini*<br/>
+**Genel** veya **özel**olabilen numaralandırmanın erişilebilirliği.
 
-*Numaralandırma tanımlayıcı*<br/>
+*Sabit Listesi-tanımlayıcı*<br/>
 Sabit listesinin adı.
 
-*temel alınan türü*<br/>
-(İsteğe bağlı) Sabit listesinin temel alınan türü.
+*temel alınan tür*<br/>
+Seçim Sabit listesinin temel alınan türü.
 
-(İsteğe bağlı. Yalnızca Windows Runtime) olabilir sabit listesi türünü temel **bool**, **char**, `char16`, `int16`, `uint16`, **int**, `uint32`, `int64`, veya `uint64`.
+Seçim. Yalnızca Windows Çalışma Zamanı), **bool**, **char**, `char16`, `int16`, `uint16`, **int**, `uint32`, `int64`veya `uint64`olabilecek numaralandırmanın temel alınan türü.
 
-*Numaralandırıcı-listesi*<br/>
-Numaralandırıcı adları virgülle ayrılmış listesi.
+*Numaralandırıcı-liste*<br/>
+Numaralandırıcı adlarının virgülle ayrılmış listesi.
 
-Her Numaralayıcı ya da örtük olarak derleyici tarafından veya açık olarak gösterimi tarafından tanımlanan sabit bir ifade değeri *Numaralandırıcı*`=`*sabit-ifade*. Örtük tanımlanırsa, varsayılan olarak, ilk Numaralandırıcı değeri sıfırdır. Örtük olarak tanımlı sonraki her Numaralandırıcı değerini, önceki numaralandırıcıların + 1 değerdir.
+Her bir Numaralandırıcının değeri, derleyici tarafından örtük olarak tanımlanan veya açıkça gösterim, *numaralandırıcı*`=`*sabit ifadesi*tarafından tanımlanan sabit bir ifadedir. Varsayılan olarak, ilk Numaralandırıcının değeri örtük olarak tanımlanmışsa sıfırdır. Her bir sonraki örtük tanımlanmış Numaralandırıcı değeri, önceki Numaralandırıcı + 1 değeridir.
 
 *var*<br/>
-(İsteğe bağlı) Sabit listesi türünde bir değişken adı.
+Seçim Sabit listesi türü değişkeninin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi ve örnekler için bkz. [numaralandırmalar](../cppcx/enums-c-cx.md).
+Daha fazla bilgi ve örnekler için bkz. [enum](../cppcx/enums-c-cx.md).
 
-Numaralayıcı değeri tanımlayan sabit ifade tarafından temsil edilemiyorsa derleyici bir hata iletilerini gösterir Not *temel alınan türü*.  Ancak, derleyici temel alınan türü için uygun olmayan bir değer için bir hata bildirmez. Örneğin:
+Bir Numaralandırıcı değerini tanımlayan sabit ifade *temeldeki türle*temsil edilemez derleyici hata iletileri yayar.  Ancak derleyici, temel alınan tür için uygun olmayan bir değer için hata raporlamaz. Örneğin:
 
-- Varsa *temel alınan türü* sayısaldır ve maksimum değer türü için bir numaralandırıcı belirtir, sonraki örtük olarak tanımlanan enumeratoin değerini temsil edilemez.
+- *Temeldeki tür* sayısal ise ve bir Numaralandırıcı bu türün en büyük değerini belirtiyorsa, bir sonraki örtük olarak tanımlanmış enumeratoı değeri temsil edilemez.
 
-- Varsa *temel alınan türü* olduğu **bool**, ve ikiden fazla numaralandırıcılar örtük olarak tanımlı, ilk iki gösterilemez sonra numaralandırıcıların.
+- *Temeldeki tür* **bool**ise ve ikiden fazla numaralandırıcı örtük olarak tanımlanmışsa, ilk iki numaralandırıcıdan sonraki Numaralandırıcılar temsil edilemez.
 
-- Varsa *temel alınan türü* olduğu `char16`ve sabit listesi değeri 0xD800 ile 0xDFFF aralıkları, değeri temsil edilebilir. Ancak, bir Unicode yarım temsil ettiğinden mantıksal olarak yanlış değer vekil çifti ve yalıtım modunda görünmemelidir.
+- *Temel alınan tür* `char16`ve numaralandırma değeri 0xD800 Ila 0xDFFF aralığında ise değer gösterilebilir. Ancak, değeri mantıksal olarak yanlış bir Unicode vekil çifti temsil ettiğinden ve yalıtımda görünmemelidir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -82,34 +82,34 @@ accessenum structname [:type] { enumerator-list } var;
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*<br/>
-Sabit listesinin erişilebilirlik. Olabilir **genel** veya **özel**.
+*erişmesini*<br/>
+Sabit listesinin erişilebilirliği. **Genel** veya **özel**olabilir.
 
-*Numaralandırıcı-listesi*<br/>
-Sabit tanımlayıcıları (Numaralandırıcı) virgülle ayrılmış listesi.
+*Numaralandırıcı-liste*<br/>
+Numaralandırmadaki tanımlayıcıların (Numaralandırıcılar) virgülle ayrılmış listesi.
 
-*Adı*<br/>
-Sabit listesinin adı. Anonim yönetilen numaralandırmalar izin verilmez.
+*ada*<br/>
+Sabit listesinin adı. Anonim yönetilen numaralandırmalara izin verilmez.
 
 *type*<br/>
-(İsteğe bağlı) Temel alınan türü *tanımlayıcıları*. Bu imzalı veya imzasız sürümleri gibi herhangi bir skalar türü olabilir **int**, **kısa**, veya **uzun**.  **bool** veya **char** da izin verilir.
+Seçim *Tanımlayıcıların*temel alınan türü. Bu, **int**, **Short**veya **Long**'un imzalı veya imzasız sürümleri gibi herhangi bir skalar tür olabilir.  **bool** veya **char** öğesine de izin verilir.
 
 *var*<br/>
-(İsteğe bağlı) Sabit listesi türünde bir değişken adı.
+Seçim Sabit listesi türü değişkeninin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**sabit listesi sınıfı** ve **enum struct** eşdeğer bildirimlerdir.
+**enum sınıfı** ve **enum yapısı** eşdeğer bildirimlerdir.
 
-Numaralandırmalar iki tür vardır: yönetilen veya C++/CX ve standart.
+İki tür numaralandırmalar vardır: yönetilen veya C++/CX ve standart.
 
-Yönetilen veya C++/CX sabit listesi aşağıdaki gibi tanımlanabilir
+Yönetilen veya C++/CX numaralandırması aşağıdaki şekilde tanımlanabilir.
 
 ```cpp
 public enum class day {sun, mon };
 ```
 
-ve anlam olarak eşdeğerdir:
+ve anlamsal olarak eşdeğerdir:
 
 ```cpp
 ref class day {
@@ -125,24 +125,24 @@ Standart bir sabit listesi aşağıdaki gibi tanımlanabilir:
 enum day2 { sun, mon };
 ```
 
-ve anlam olarak eşdeğerdir:
+ve anlamsal olarak eşdeğerdir:
 
 ```cpp
 static const int sun = 0;
 static const int mon = 1;
 ```
 
-Yönetilen Numaralandırıcı adları (*tanımlayıcıları*) burada numaralandırma tanımlanır; numaralandırıcıların tüm başvurularını tam olarak nitelenmiş olmalıdır kapsama eklenen değil (*adı* `::` *tanımlayıcı*).  Bu nedenle, anonim bir yönetilen Numaralandırıcı tanımlayamazsınız.
+Yönetilen Numaralandırıcı adları (*tanımlayıcılar*), numaralandırmanın tanımlandığı kapsama eklenmiş değildir; numaralandırıcılara yapılan tüm başvurular tam olarak nitelenmiş olmalıdır (*ad*`::`*tanımlayıcısı*).  Bu nedenle, anonim olarak yönetilen bir sabit listesi tanımlayamazsınız.
 
-Standart numaralandırıcısının numaralandırıcıların türü kesin kapsayan kapsamın içine eklenmiş.  Diğer bir deyişle, bir numaralandırıcı kapsayan kapsamda aynı ada sahip başka bir simge varsa, derleyici bir hata oluşturur.
+Standart bir sabit listesinin numaralandırıcıları kapsayan kapsama kesin bir şekilde eklenir.  Diğer bir deyişle, kapsayan kapsamda Numaralandırıcı ile aynı ada sahip başka bir sembol varsa, derleyici bir hata oluşturur.
 
-Visual Studio 2002 ve Visual Studio 2003'te numaralandırıcılar zayıf (görülebilir kapsayan kapsamda aynı ada sahip başka bir tanımlayıcı değilse) eklenmiş.
+Visual Studio 2002 ve Visual Studio 2003 ' de, Numaralandırıcılar zayıf olarak eklendi (aynı ada sahip başka bir tanımlayıcı olmadıkça kapsayan kapsamda görünür).
 
-Standart bir C++ numaralandırma tanımlanmazsa (olmadan **sınıfı** veya **yapı**), derleme ile `/clr` numaralandırması yönetilen bir sabit derlenmesine neden olur.  Numaralandırma hala yönetilmeyen bir numaralandırma semantiği vardır.  Unutmayın, derleyicinin eklediği bir öznitelik `Microsoft::VisualC::NativeEnumAttribute` yerel bir numaralandırma olması sabit bir programcı hedefini belirlemek için.  Diğer derleyiciler, yalnızca standart sabit listesi yönetilen bir sabit listesi görürsünüz.
+Standart C++ bir Enum tanımlanmışsa ( **Class** veya **struct**olmadan), `/clr` ile derleme, numaralandırmanın yönetilen bir Enum olarak derlenmesine neden olur.  Numaralandırma yine de yönetilmeyen bir numaralandırmanın semantiklerine sahiptir.  Derleyicinin, bir programcının enum 'ın doğal bir sabit listesi olması amacıyla bir özelliğin amacını tanımlamak için `Microsoft::VisualC::NativeEnumAttribute` bir özniteliği çıkartır.  Diğer derleyiciler yalnızca, standart sabit listesini yönetilen bir numaralandırma olarak görürler.
 
-Adlı bir, standart sabit listesi ile derlenmiş `/clr` derlemedeki yönetilen bir sabit listesi olarak görünür ve diğer yönetilen derleyici tarafından tüketilebilir.   Ancak, adlandırılmamış bir standart enum derlemeden herkese görünür olmayacaktır.
+`/clr` ile derlenen bir adlandırılmış, standart Enum, derleme içinde yönetilen bir sabit listesi olarak görünür ve başka bir yönetilen derleyici tarafından tüketilebilir.   Ancak, adlandırılmamış standart enum derlemeden herkese açık olmayacaktır.
 
-Visual Studio 2002 ve Visual Studio 2003 ' türü bir işlev parametresi olarak kullanılan standart bir sabit listesi:
+Visual Studio 2002 ve Visual Studio 2003 ' de, bir işlev parametresinde tür olarak kullanılan standart bir sabit listesi:
 
 ```cpp
 // mcppv2_enum.cpp
@@ -156,23 +156,23 @@ int main() {
 }
 ```
 
-işlev imzası için MSIL aşağıdaki yayması:
+işlev imzası için aşağıdaki işlemi MSIL 'de yayar:
 
 ```cpp
 void f(int32);
 ```
 
-Ancak, geçerli derleyici sürümlerinde, standart sabit listesi [NativeEnumAttribute] ve işlev imzası için MSIL aşağıdaki ile yönetilen bir sabit listesi olarak yayılır:
+Ancak, derleyicinin geçerli sürümlerinde standart Enum, işlev imzası için bir [Nativetrmattribute] ile yönetilen bir sabit listesi ve MSIL 'de aşağıdakiler olarak yayılır:
 
 ```cpp
 void f(E)
 ```
 
-Yerel numaralandırmalar hakkında daha fazla bilgi için bkz. [C++ numaralandırma bildirimleri](../cpp/enumerations-cpp.md).
+Yerel Numaralandırmalar hakkında daha fazla bilgi için bkz [ C++ . numaralandırma bildirimleri](../cpp/enumerations-cpp.md).
 
-CLR numaralandırmaları hakkında daha fazla bilgi için bkz:
+CLR numaralandırmaları hakkında daha fazla bilgi için bkz.
 
-- [Bir sabit listesinin temel alınan türü](../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md)
+- [Sabit listesinin temel alınan türü](../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md)
 
 ### <a name="requirements"></a>Gereksinimler
 

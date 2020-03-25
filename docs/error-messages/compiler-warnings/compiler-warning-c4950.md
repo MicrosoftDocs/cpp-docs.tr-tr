@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4950
 ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
-ms.openlocfilehash: 784179af68ff55ba70c61255c88688105ecb1738
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52c4de94dfe087b4dcf407295e556c9350b2cb8b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208102"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164995"
 ---
 # <a name="compiler-warning-c4950"></a>Derleyici Uyarısı C4950
 
-'type_or_member': eski olarak işaretlendi
+' type_or_member ': eski olarak işaretlendi
 
-Bir üyenin veya türün ile eski olarak işaretlendi <xref:System.ObsoleteAttribute> özniteliği.
+Üye veya tür, <xref:System.ObsoleteAttribute> özniteliğiyle kullanılmıyor olarak işaretlendi.
 
-C4950 her zaman hata olarak verilir. Bu uyarıyı devre dışı kullanarak açabilirsiniz [uyarı](../../preprocessor/warning.md) pragma yönergesi veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+C4950 her zaman bir hata olarak verilir. [Uyarı](../../preprocessor/warning.md) pragma yönergesini veya [/WD](../../build/reference/compiler-option-warning-level.md) derleyici seçeneğini kullanarak bu uyarıyı kapatabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4950 oluşturur:
+Aşağıdaki örnek C4950 oluşturur:
 
 ```cpp
 // C4950.cpp

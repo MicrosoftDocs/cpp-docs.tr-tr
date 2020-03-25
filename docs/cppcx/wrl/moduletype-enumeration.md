@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - ModuleType enumeration
 ms.assetid: 61a763af-a5a4-451d-8b40-815af507fcde
-ms.openlocfilehash: 3c7486cbc761975dd133f229f23dcf0b70e7e3ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8425a15d594f7b8b30027d3576ee86015b656130
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403236"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213726"
 ---
 # <a name="moduletype-enumeration"></a>ModuleType Numaralandırması
 
-Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.
+Modülün işlem içi bir sunucuyu mı yoksa işlem dışı bir sunucuyu mı desteklemesi gerektiğini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,17 +30,17 @@ enum ModuleType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`InProc`|Bir işlem sunucusu.|
-|`OutOfProc`|Bir işlem dışı sunucu.|
-|`DisableCaching`|Önbelleğe alma mekanizması modül devre dışı bırakın.|
-|`InProcDisableCaching`|Birleşimi `InProc` ve `DisableCaching`.|
-|`OutOfProcDisableCaching`|Birleşimi `OutOfProc` ve `DisableCaching`.|
+|`InProc`|İşlem içi sunucu.|
+|`OutOfProc`|İşlem dışı bir sunucu.|
+|`DisableCaching`|Modül üzerinde önbelleğe alma mekanizmasını devre dışı bırakın.|
+|`InProcDisableCaching`|`InProc` ve `DisableCaching`birleşimi.|
+|`OutOfProcDisableCaching`|`OutOfProc` ve `DisableCaching`birleşimi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** Module. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

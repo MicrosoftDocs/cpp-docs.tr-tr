@@ -5,22 +5,22 @@ helpviewer_keywords:
 - custom attributes
 - custom attributes, defining
 ms.assetid: af9998a5-aa12-4b94-9a43-97ce99026e29
-ms.openlocfilehash: fbb1c629f23c5d70a78d62db2a3634cbfc489967
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7053917ebb3cebfe298e9d89f28e357dc7fdbd83
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148217"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214909"
 ---
 # <a name="custom-attributes-c"></a>Özel Öznitelikler (C++)
 
-Özel bir öznitelik meta verileri genişletmek kullanıcıya izin veren bir türü kesin belirlenmiş bir tekniktir. Bu konuda, öznitelikleri kullanma ile ilgilenen: parametreleri ve hedefleri belirtin.
+Özel öznitelik, kullanıcının meta verileri genişlemesine izin veren türü kesin belirlenmiş bir tekniktir. Bu konu, öznitelikleri kullanmayla ilgilidir: parametreleri ve hedefleri belirtme.
 
-Yeni özel öznitelikler tanımlama hakkında daha fazla bilgi için bkz:
+Yeni özel öznitelikler tanımlama hakkında daha fazla bilgi için bkz.
 
 - [Kullanıcı Tanımlı Öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md)
 
-- [öznitelik](attribute.md) (söz dizimi kullanım dışı).
+- [öznitelik](attribute.md) (kullanım dışı sözdizimi).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,18 +1,18 @@
 ---
-title: Swap işlevi (WRL)
+title: Swap Işlevi (WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::Swap
 ms.assetid: ed134a08-ceb7-4279-aa02-a183c3a426ea
-ms.openlocfilehash: 97d24f1f4453e948c621651e029254db1b0de712
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e665dbca025da56ba81c3fdf1749b2d653b78c00
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398153"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213570"
 ---
-# <a name="swap-function-wrl"></a>Swap işlevi (WRL)
+# <a name="swap-function-wrl"></a>Swap Işlevi (WRL)
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -27,23 +27,23 @@ WRL_NOTHROW inline void Swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*tarafta*<br/>
 İlk bağımsız değişken.
 
-*sağ*<br/>
-İkinci bağımsız değişkeni.
+*Right*<br/>
+İkinci bağımsız değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.
+Belirtilen iki bağımsız değişkenin değerlerini değiş tokuş eder.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** internal.h
+**Üst bilgi:** iç. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

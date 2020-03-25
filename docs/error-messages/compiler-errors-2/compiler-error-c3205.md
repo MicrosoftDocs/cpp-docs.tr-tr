@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3205
+title: Derleyici hatası C3205
 ms.date: 11/04/2016
 f1_keywords:
 - C3205
 helpviewer_keywords:
 - C3205
 ms.assetid: 802d306e-5ff3-4491-8a22-c5f1c072d005
-ms.openlocfilehash: bd4d17ff2b6a0197db730a53c5846806335c9fd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7cb38a687daed93f72655337cd7cd3f25aaa08d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402703"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176435"
 ---
-# <a name="compiler-error-c3205"></a>Derleyici Hatası C3205
+# <a name="compiler-error-c3205"></a>Derleyici hatası C3205
 
-'parameter' şablon parametresi için bağımsız değişken listesi eksik
+' Parameter ' şablon parametresi için bağımsız değişken listesi eksik
 
-A [şablon](../../cpp/templates-cpp.md) parametresi eksik.
+[Şablon](../../cpp/templates-cpp.md) parametresi eksik.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3205 oluşturur:
+Aşağıdaki örnek C3205 oluşturur:
 
 ```cpp
 // C3205.cpp

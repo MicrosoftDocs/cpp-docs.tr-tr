@@ -1,5 +1,5 @@
 ---
-title: Değişken bağımsız değişken işlevleri listeler (C++)
+title: Değişken bağımsız değişken listeleriyle işlevler (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arguments [C++], variable number of
@@ -9,34 +9,34 @@ helpviewer_keywords:
 - declaring functions [C++], variables
 - function calls, variable number of arguments
 ms.assetid: 27c2f83a-21dd-44c6-913c-2834cb944703
-ms.openlocfilehash: 1f366af6f4058ffb8356017d59a7c176a978b860
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f456f31dec631f7d9340563a93dfafeea49a72b5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153859"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178450"
 ---
-# <a name="functions-with-variable-argument-lists--c"></a>Değişken bağımsız değişken işlevleri listeler (C++)
+# <a name="functions-with-variable-argument-lists--c"></a>Değişken bağımsız değişken listeleriyle işlevler (C++)
 
-İşlev bildirimi üç nokta (...) can son üyesi olduğu, değişken sayıda bağımsız değişken alır. Bu durumlarda, C++ tür açıkça bildirilen bağımsız değişkenleri yalnızca denetlemesini sağlar. Bir işlev bağımsız değişkenlerinin türlerine ve sayı bile genel değişebilir şekilde yapmanız gerektiğinde, değişken bağımsız değişken listeleri kullanabilirsiniz. Değişken bağımsız değişken listeleri kullanan işlevler örneği işlevleri ailesidir. `printf` *bağımsız değişken bildirim listesi*
+Son üyesinin üç nokta (...) olduğu işlev bildirimleri, değişken sayıda bağımsız değişken alabilir. Bu durumlarda, C++ yalnızca açıkça belirtilen bağımsız değişkenler için tür denetimi sağlar. Bağımsız değişkenlerin sayısı ve türleri farklılık gösterebileceğinden, bir işlevi yapmanız gerektiğinde değişken bağımsız değişken listelerini kullanabilirsiniz. İşlev ailesi, değişken bağımsız değişken listelerini kullanan işlevlere bir örnektir.`printf`*bağımsız değişkeni-bildirim-liste*
 
-## <a name="functions-with-variable-arguments"></a>Değişken bağımsız değişken işlevleri
+## <a name="functions-with-variable-arguments"></a>Değişken bağımsız değişkenleri olan işlevler
 
-Bu sonra bildirilen bağımsız değişkenlerine erişmek için standart içerme dosyasında yer alan makroları \<stdarg.h > aşağıda açıklandığı gibi.
+Bildirenlerden sonra bağımsız değişkenlere erişmek için, aşağıda açıklandığı gibi, \<stdarg. h > Standart içerme dosyasında bulunan makroları kullanın.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Microsoft C++, üç nokta son bağımsız değişken ise ve üç nokta, virgül tarafından öncesinde bir bağımsız değişken olarak belirtilmesi için üç noktaya izin verir. Bu nedenle, bildirimi `int Func( int i, ... );` geçerli, ancak `int Func( int i ... );` değil.
+Üç C++ nokta en son bağımsız değişkense ve üç nokta daha önce bir virgül kullanıyorsa Microsoft üç noktanın bağımsız değişken olarak belirtilmesini sağlar. Bu nedenle bildirim `int Func( int i, ... );` geçerlidir ancak `int Func( int i ... );` değildir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Kullanılmadığını bile en az bir yer tutucu bağımsız değişkeni, değişken sayıda bağımsız değişken alan bir işlev bildirimi gerektirir. Bu yer tutucu bağımsız değişken sağlanmazsa, kalan bağımsız değişkenleri erişmenin hiçbir yolu yoktur.
+Değişken sayıda bağımsız değişken alan bir işlevin bildirimi, kullanılmasa bile en az bir yer tutucu bağımsız değişkeni gerektirir. Bu yer tutucu bağımsız değişkeni sağlanmazsa, kalan bağımsız değişkenlere erişmenin bir yolu yoktur.
 
-Zaman türü bağımsız değişkenleri **char** geçirilir değişken bağımsız değişkenler olarak, bunlar türüne dönüştürülür **int**. Benzer şekilde, tür bağımsız değişkenleri **float** geçirilir değişken bağımsız değişkenler olarak, bunlar türüne dönüştürülür **çift**. Diğer tür bağımsız değişkenleri her zamanki integral ve kayan nokta yükseltmeler tabi olan. Bkz: [standart dönüştürmeler](standard-conversions.md) daha fazla bilgi için.
+**Char** türündeki bağımsız değişkenler değişken bağımsız değişken olarak geçirildiğinde, **int**türüne dönüştürülür. Benzer şekilde, **float** türündeki bağımsız değişkenler değişken bağımsız değişken olarak geçirildiğinde, **Double**türüne dönüştürülür. Diğer türlerin bağımsız değişkenleri, her zamanki integral ve kayan nokta promosyonlara tabidir. Daha fazla bilgi için bkz. [Standart dönüştürmeler](standard-conversions.md) .
 
-Değişken listeleri gerektiren İşlevler, bağımsız değişken listesinde üç nokta (...) kullanarak bildirilir. Türleri ve şurada açıklanan makroları kullanın \<stdarg.h > bir değişken listesi tarafından geçirilen erişim bağımsız bir dosyaya ekleyin. Bu makrolar hakkında daha fazla bilgi için bkz: [va_copy, olan va_arg, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). C çalışma zamanı kitaplığı belgeleri.
+Değişken listeleri gerektiren işlevler, bağımsız değişken listesindeki üç nokta (...) kullanılarak belirtilir. Bir değişken listesi tarafından geçirilen bağımsız değişkenlere erişmek için \<stdarg. h > içerme dosyasında açıklanan türleri ve makroları kullanın. Bu makrolar hakkında daha fazla bilgi için bkz. [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). C çalışma zamanı kitaplığının belgelerinde.
 
-Aşağıdaki örnek, makroları türü ile birlikte nasıl çalıştığını gösterir (bildirilen \<stdarg.h >):
+Aşağıdaki örnek, makroların (\<stdarg. h > içinde belirtilen) ile birlikte nasıl çalıştığını gösterir:
 
 ```cpp
 // variable_argument_lists.cpp
@@ -120,4 +120,4 @@ Yukarıdaki örnekte, bu önemli kavramlar gösterilmektedir:
 
 1. Elde edilen sonucu `va_arg` makrosunu kullanarak istediğiniz türe açıkça atamanız gerekir.
 
-Değişken bağımsız değişken işlemesini sonlandırmak için makro çağırmanız gerekir.`va_end`
+Değişken bağımsız değişken işlemeyi sonlandırmak için makroyu çağırmanız gerekir.`va_end`

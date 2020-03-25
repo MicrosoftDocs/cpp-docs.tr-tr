@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4286
 ms.assetid: 93eadd6c-6f36-413b-ba91-c9aa2314685a
-ms.openlocfilehash: ed2e6c10e35e53c6a67de9fecfce5da5ae429b93
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 27e7765c68b0bb6fb8c289260b16af1f3fe27054
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626666"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175811"
 ---
 # <a name="compiler-warning-level-1-c4286"></a>Derleyici Uyarısı (düzey 1) C4286
 

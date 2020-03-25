@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::Details::RemoveIUnknown
 ms.assetid: 998e711a-7d1a-44c6-a016-e6167aa40863
-ms.openlocfilehash: 3b54f6a3072d82d40db4ac698503f0939e745472
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cfcdefbb8d7cd12d2ebf99710f595fdd2fc16f76
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62231437"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213622"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown Sınıfı
 
@@ -28,22 +28,22 @@ class RemoveIUnknown : public T;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Bir sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Eşdeğer olan bir tür yapar bir `IUnknown`-tabanlı ancak türünde sanal olmayan `QueryInterface`, `AddRef`, ve `Release` üye işlevleri.
+`IUnknown`tabanlı bir türe eşdeğer, ancak sanal olmayan `QueryInterface`, `AddRef`ve `Release` üye işlevleri içeren bir tür yapar.
 
-Varsayılan olarak, COM yöntemleri sanal sağlamak `QueryInterface`, `AddRef`, ve `Release` yöntemleri. Ancak, `ComPtr` sanal yöntemler getirdiği ek yüke gerek kalmaz. `RemoveIUnknown` özel, sanal olmayan sağlayarak bu ek yükü ortadan kalkar `QueryInterface`, `AddRef`, ve `Release` yöntemleri.
+Varsayılan olarak, COM yöntemleri sanal `QueryInterface`, `AddRef`ve `Release` yöntemler sağlar. Ancak, `ComPtr` Sanal yöntemlerin ek yükünü gerektirmez. `RemoveIUnknown`, özel, sanal olmayan `QueryInterface`, `AddRef`ve `Release` yöntemleri sunarak bu ek yükü ortadan kaldırır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`ReturnType`|Şablon parametresine eşdeğerdir bir türe ilişkin bir eşanlam *T* ancak sanal olmayan `IUnknown` üyeleri.|
+|`ReturnType`|Şablon parametresi *T* , ancak sanal olmayan `IUnknown` üyelerine denk gelen bir tür için eş anlamlı.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -53,9 +53,9 @@ Varsayılan olarak, COM yöntemleri sanal sağlamak `QueryInterface`, `AddRef`, 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** client.h
+**Üstbilgi:** Client. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

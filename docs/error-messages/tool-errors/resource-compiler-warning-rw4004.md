@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - RW4004
 ms.assetid: 596b6a89-9ce7-4ba7-bdcb-e8054c7efafa
-ms.openlocfilehash: bafd1084a665fc656fe184064a48e5fffc61c957
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca0fb271a5ab43994ec37cc8d59c33877903f6e8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346086"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182350"
 ---
 # <a name="resource-compiler-warning-rw4004"></a>Kaynak Derleyicisi Uyarısı RW4004
 
-ASCII karakter için sanal anahtar kodu eşdeğer değil
+ASCII karakteri sanal anahtar koduna eşit değil
 
-Bir dize sabit değeri, sanal anahtar VIRTKEY'e Türü Hızlandırıcı kodunu kullanıldı.
+Bir VIRTKEY türü hızlandırıcısında sanal anahtar kodu için bir dize sabit değeri kullanıldı.
 
-Bu uyarı, devam etmek, ancak oluşturulan kısayol tuşları belirttiğiniz dizesi eşleşmeyebilir unutmayın olanak tanır. (VIRTKEYs ASCII Hızlandırıcıları değerinden farklı anahtar kodlarını kullanın.)
+Bu uyarı devam etmenizi sağlar, ancak oluşturulan Hızlandırıcı anahtarlarının belirttiğiniz dizeyle eşleşmeyebilir farkında olabilirsiniz. (VIRTKEYs ASCII hızlandırıcılardan farklı temel kodlar kullanır.)
 
-Dize değişmez değerleri sözdizimsel açıdan geçerli olsa da, yalnızca istediğiniz kullanarak Hızlandırıcı alma sağlayabilirsiniz **VK_\* #define** WINDOWS.h değerleri.
+Dize sabit değerleri sözdizimsel olarak geçerli olsa da, yalnızca WINDOWS. h 'deki **VK_\* #define** değerlerini kullanarak istediğiniz hızlandırıcıyı almanızı sağlayabilirsiniz.

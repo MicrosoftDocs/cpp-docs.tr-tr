@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - usesgetlasterror attribute
 ms.assetid: d149e33d-35a7-46cb-9137-ae6883d86122
-ms.openlocfilehash: b14316bd929f4b41b13a76c41e94b31b7534e9d8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f58929db01a1710e811a973c0559ad29b242b4eb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513886"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166139"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 
-Çağrıyı yapana, bu işlevi çağırırken bir hata oluşursa, çağıran daha sonra hata kodunu almak için çağırabilirler `GetLastError` .
+Çağrıyı yapana, bu işlevi çağırırken bir hata oluşursa, çağıran daha sonra hata kodunu almak için `GetLastError` çağırabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,7 +29,7 @@ ms.locfileid: "69513886"
 
 ## <a name="example"></a>Örnek
 
-**Uısesgetlasterror**kullanımı örneği için [idl_module](idl-module.md) örneğine bakın.
+**Uısesgetlasterror**'un nasıl kullanılacağına ilişkin bir örnek için [idl_module](idl-module.md) örneğe bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -39,8 +39,8 @@ ms.locfileid: "69513886"
 |-|-|
 |**Uygulama hedefi**|**module** özniteliği|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

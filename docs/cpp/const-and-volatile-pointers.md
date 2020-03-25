@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointers, and volatile
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-ms.openlocfilehash: c0aafde9070275abcb270710e2d4a7a8d9806267
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 10dd3de05c5dd0b8de7399eaf36834ea22cd208a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246624"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180400"
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile işaretçiler
 

@@ -3,12 +3,12 @@ title: MFC ve ATL
 ms.date: 01/24/2018
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
 ms.topic: overview
-ms.openlocfilehash: 87f4a9deb40d7c35498f5cbd66efb6bd976547c2
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: 3a58e68925fd77d002400bfe9d1f2bd28c60f78c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274660"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214337"
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 

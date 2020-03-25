@@ -1,5 +1,5 @@
 ---
-title: Kayıt görünümleri (MFC veri erişimi) için veri değişimi
+title: Kayıt görünümleri için veri değişimi (MFC veri erişimi)
 ms.date: 11/19/2018
 helpviewer_keywords:
 - RFX (record field exchange), data exchange mechanism
@@ -8,25 +8,25 @@ helpviewer_keywords:
 - DDX (dialog data exchange), record views
 - RFX (record field exchange)
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
-ms.openlocfilehash: a7c6714218b5891e078e750a974faed274e113c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9f460305b55a2313b64effdf4d1dbbfd9823def
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397992"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213479"
 ---
-# <a name="data-exchange-for-record-views---mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için veri değişimi
+# <a name="data-exchange-for-record-views---mfc-data-access"></a>Kayıt görünümleri için veri değişimi (MFC veri erişimi)
 
-Kullandığınızda [sınıfı Ekle](../mfc/reference/adding-an-mfc-odbc-consumer.md) kayıt görünümünün iletişim şablon kaynağı denetimlerinde kümesinin alanları eşleştirmek için çift yönlü veri değişimi framework yönetir; denetimleri için kayıt ve kayıt kümesine denetimleri. DDX mekanizması kullanarak kendiniz geri ve İleri veri aktarımı için kod yazmanız gerekmez anlamına gelir.
+Bir kayıt görünümünün iletişim şablonu kaynağındaki denetimleri bir kayıt kümesine eşlemek için [Sınıf Ekle](../mfc/reference/adding-an-mfc-odbc-consumer.md) ' yi kullandığınızda, çerçeve veri değişimini her iki yönde yönetir: kayıt kümesinden denetimlere ve denetimlerden kayıt kümesine. DDX mekanizmasının kullanılması, verileri geri ve İleri aktarmak için kodu yazmanız gerekmediği anlamına gelir.
 
-Kayıt görünümleri için DDX çalışır birlikte [RFX](../data/odbc/record-field-exchange-rfx.md) sınıfın kayıt kümeleri için `CRecordset` (ODBC).  RFX veri kaynağının geçerli kayıt ve kayıt kümesi nesnesi alan veri üyeleri arasında verileri taşır. DDX veri alan veri üyeleri ' form denetimlerinde taşır. Bu birleşim, başlangıçta ve kullanıcı kayıttan kayda form denetimlerini doldurur. Bu da güncelleştirilmiş verileri geri kayıt ve ardından veri kaynağını taşıyabilirsiniz.
+Kayıt görünümleri için DDX, `CRecordset` (ODBC) sınıf kayıt kümeleri için [RFX](../data/odbc/record-field-exchange-rfx.md) ile birlikte çalışabilir.  RFX verileri veri kaynağının geçerli kaydı ve bir kayıt kümesi nesnesinin alan veri üyeleri arasında taşıır. DDX, verileri alan verileri üyelerinden form içindeki denetimlere taşıdıkça. Bu birleşim, form denetimlerini başlangıçta ve kullanıcı kayıttan kayda taşırken doldurur. Ayrıca, güncelleştirilmiş verileri kayıt kümesine ve ardından veri kaynağına geri taşıyabilir.
 
-Aşağıdaki şekil, kayıt görünümleri için DDX RFX arasındaki ilişkiyi gösterir.
+Aşağıdaki şekilde, kayıt görünümleri için DDX ve RFX arasındaki ilişki gösterilmektedir.
 
-![İletişim&#45;veri değişimi ve kayıt&#45;alan exchange](../data/media/vc37xt1.gif "iletişim&#45;veri değişimi ve kayıt&#45;exchange alan")<br/>
+![İletişim&#45;kutusu veri değişimi ve&#45;kayıt alanı değişimi](../data/media/vc37xt1.gif "İletişim&#45;kutusu veri değişimi ve&#45;kayıt alanı değişimi")<br/>
 İletişim kutusu veri değişimi ve kayıt alanı değişimi
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). RFX hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

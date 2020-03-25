@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4074
 ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
-ms.openlocfilehash: 1c84bbf436354ed672cedf13358837e298c7e4a5
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 7a11112962872788df855bfc63b869193188fab9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626914"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164085"
 ---
 # <a name="compiler-warning-level-1-c4074"></a>Derleyici Uyarısı (düzey 1) C4074
 

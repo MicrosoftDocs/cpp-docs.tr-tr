@@ -23,26 +23,26 @@ helpviewer_keywords:
 - GetFileVersionInfo
 - version information
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-ms.openlocfilehash: e68e1480d2cd9a8d8a4d862252e6eb4384a5cd68
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b083ed27b6b1f471dbec9b96e7be7a6165f8d125
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513647"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214376"
 ---
 # <a name="version-information-editor-c"></a>Sürüm bilgileri Düzenleyicisi (C++)
 
 Sürüm bilgileri şirket ve ürün kimliği, ürün sürüm numarası ve telif hakkı ve ticari marka bildirimiyle oluşur. **Sürüm bilgileri Düzenleyicisi**ile, sürüm bilgileri kaynağında saklanan bu verileri oluşturur ve korursunuz. Sürüm bilgisi kaynağı bir uygulama için gerekli değildir, ancak uygulamayı tanımlayan bilgileri toplamak yararlı bir yerdir. Sürüm bilgileri, kurulum API 'Leri tarafından da kullanılır.
 
 > [!NOTE]
-> Windows Standard 'ın, VS_VERSION_INFO adlı yalnızca bir sürüm kaynağı vardır.
+> Windows Standard 'da, VS_VERSION_INFO adlı yalnızca bir sürüm kaynağı vardır.
 
 Sürüm bilgileri kaynağında bir üst blok ve bir veya daha fazla alt blok bulunur: en üstteki tek bir sabit bilgi bloğu ve en altta bir veya daha fazla sürüm bilgisi bloğu (diğer diller ve/veya karakter kümeleri için). En üstteki bloktaki düzenlenebilir sayısal kutular ve seçilebilir açılan listeler bulunur. Alt bloklar yalnızca düzenlenebilir metin kutularına sahiptir.
 
 > [!NOTE]
 > **Sürüm bilgileri düzenleyicisini**kullanırken, birçok örnekte kaynağa özgü komutların kısayol menüsünü göstermek için sağ tıklayabilirsiniz. Örneğin, bir blok üst bilgi girişine işaret ederken ' yi seçerseniz, kısayol menüsü **Yeni sürüm engelleme bilgilerini** gösterir ve **Sürüm engelleme bilgisi komutlarını siler** .
 
-## <a name="how-to"></a>Nasıl Yapılır
+## <a name="how-to"></a>Nasıl yapılır
 
 **Sürüm bilgileri Düzenleyicisi** şunları yapmanızı mümkün:
 
@@ -50,11 +50,11 @@ Sürüm bilgileri kaynağında bir üst blok ve bir veya daha fazla alt blok bul
 
 Öğeyi seçmek için bir kez seçtikten sonra yeniden oluşturmaya başlayın. Doğrudan **sürüm bilgileri** tablosunda veya [Özellikler penceresi](/visualstudio/ide/reference/properties-window)değişiklikler yapın. Yaptığınız değişiklikler her iki yerde de yansıtılacaktır.
 
-`FILEFLAGS` **Sürüm bilgileri düzenleyicisinde**anahtar düzenlenirken,. RC dosyaları için **Özellikler** penceresinde **hata ayıklama**, **özel derleme**veya **özel derleme** özelliklerini ayarlayamıyorum:
+**Sürüm bilgileri düzenleyicisinde**`FILEFLAGS` anahtarı düzenlenirken,. RC dosyaları için **Özellikler** penceresinde **hata ayıklama**, **özel derleme**veya **özel derleme** özelliklerini ayarlayamıyorum:
 
-   - **Sürüm bilgileri Düzenleyicisi** , `_DEBUG` derleme bayrağını temel alarak, kaynak `#ifdef` betikteki bir ile **hata ayıklama** özelliğini ayarlar.
+- **Sürüm bilgileri Düzenleyicisi** , **hata ayıklama** özelliğini `_DEBUG` derleme bayrağına göre kaynak betikteki bir `#ifdef` ayarlar.
 
-  - `FILEFLAGS` Anahtarın sürüm bilgileri tablosunda ayarlanmış bir değeri varsa, anahtarın Özellikler penceresindeki karşılık gelen özel yapı özelliği doğru olacaktır. `Private Build` **Değer** boşsa, özelliği **false**olur. Benzer şekilde, **sürüm bilgileri** tablosundaki **özel derleme** anahtarı, `FILEFLAGS` anahtarın **özel derleme** özelliğine bağlıdır.
+- `Private Build` anahtarının **sürüm bilgileri** tablosunda ayarlanmış bir **değeri** varsa, `FILEFLAGS` anahtarın **Özellikler** penceresindeki karşılık gelen **özel yapı** özelliği **true**olur. **Değer** boşsa, özelliği **false**olur. Benzer şekilde, **sürüm bilgileri** tablosundaki **özel derleme** anahtarı, `FILEFLAGS` anahtarı için **özel derleme** özelliğine bağlıdır.
 
 Dize bloğunun bilgi sırasını, **anahtar** ya da **değer** sütun başlıklarını seçerek sıralayabilirsiniz. Bu başlıklar, bilgileri seçilen sırayla otomatik olarak yeniden düzenler.
 

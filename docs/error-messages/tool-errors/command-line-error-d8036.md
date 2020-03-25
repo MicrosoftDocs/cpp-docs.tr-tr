@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - D8036
 ms.assetid: 420a8daf-1873-49cd-95ea-a603d77b9410
-ms.openlocfilehash: b5c8fce07b9149189ee875e2b0bcfed42ab3d1a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 209d0ea3f9fa3fd2e311506d3e03162c639f4a6e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395163"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196878"
 ---
 # <a name="command-line-error-d8036"></a>Komut Satırı Hatası D8036
 
-'/ seçenek' birden çok kaynak dosyasıyla izin verilmiyor
+birden çok kaynak dosyası ile '/Option ' kullanımına izin verilmiyor
 
-Bu derleyici seçeneklerinin birden çok kaynak dosyasıyla birlikte kullanılamaz:
+Bu derleyici seçenekleri birden çok kaynak dosya ile kullanılamaz:
 
-- Ad derleme dosyası listesi (/ Fa)
+- Ad derleme dosyası listeleme (/FA)
 
-- Nesne dosyası yeniden adlandır (/ Fo)
+- Nesne dosyasını yeniden adlandır (/FO)
 
-- Kaynak tarayıcı bilgileri olmadan yerel değişkenleri oluşturun (/ Fr)
+- Yerel değişkenler olmadan kaynak tarayıcı bilgileri oluştur (/fr)
 
-- Yerel değişkenler içeren kaynak tarayıcı bilgisi oluştur (/ FR)
+- Yerel değişkenler içeren kaynak tarayıcı bilgileri oluştur (/FR)

@@ -7,18 +7,18 @@ helpviewer_keywords:
 - operator = [C++], bstr
 - operator= [C++], bstr
 ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
-ms.openlocfilehash: 97f0100d8a34253f3a1375d34b887d3d31a77f43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b7f499dd84a67020232aab84966647378daadad
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350877"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181076"
 ---
-# <a name="bstrtoperator-"></a>_bstr_t::operator =
+# <a name="_bstr_toperator-"></a>_bstr_t::operator =
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Mevcut bir yeni bir değer atar `_bstr_t` nesne.
+Varolan bir `_bstr_t` nesnesine yeni bir değer atar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,23 +31,23 @@ _bstr_t& operator=(const _variant_t& var);
 
 #### <a name="parameters"></a>Parametreler
 
-*s1*<br/>
-A `_bstr_t` varolan atanacak nesne `_bstr_t` nesne.
+*S1*<br/>
+Var olan bir `_bstr_t` nesnesine atanacak `_bstr_t` nesnesi.
 
-*s2*<br/>
-Mevcut bir atanacak çok baytlı bir dize `_bstr_t` nesne.
+*S2*<br/>
+Mevcut bir `_bstr_t` nesnesine atanacak çok baytlı bir dize.
 
-*S3*<br/>
-Mevcut bir atanacak bir Unicode dize `_bstr_t` nesne.
+*bekletmeden*<br/>
+Varolan bir `_bstr_t` nesnesine atanacak Unicode dizesi.
 
 *var*<br/>
-A `_variant_t` varolan atanacak nesne `_bstr_t` nesne.
+Var olan bir `_bstr_t` nesnesine atanacak `_variant_t` nesnesi.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="example"></a>Örnek
 
-Bkz: [_bstr_t::Assign](../cpp/bstr-t-assign.md) kullanma örneği için **işleç =**.
+Bkz. [_bstr_t:: Assign](../cpp/bstr-t-assign.md) **işleç =** kullanma örneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

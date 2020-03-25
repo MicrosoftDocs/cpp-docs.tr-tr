@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0013
 ms.assetid: 95e7bafd-63c8-4b2d-b778-f19cdf9ba36c
-ms.openlocfilehash: c78f029a3fb0e89913ce9b5ce221569e67d8faf6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d769899faa940f2754db4d2428a4d7c416b49fa4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509934"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192737"
 ---
 # <a name="project-build-error-prj0013"></a>Proje Derleme Hatası PRJ0013
 

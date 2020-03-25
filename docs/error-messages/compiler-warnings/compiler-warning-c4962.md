@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C4962
 ms.assetid: 62b156fe-04e5-4a6e-9339-6ab148185f87
-ms.openlocfilehash: e3f7b715da3774d8289fdd526cf1fa0b5bdddba6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a600c1875040e1076978bb80c467e6232303cd82
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280808"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164852"
 ---
 # <a name="compiler-warning-c4962"></a>Derleyici Uyarısı C4962
 
-'function': Profil temelli iyileştirmeler"iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı bırakıldı
+' function ': iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için profil temelli iyileştirmeler devre dışı bırakıldı "
 
-Bir işlev, işlev sayısı (Profil) verileri güvenilmez olduğundan /LTCG:PGO ile derlenmedi. Bu işlev için güvenilir profil verilerini içeren .pgc dosyası yeniden oluşturmak için profil oluşturma yineler.
+İşlevin Count (profil) verisi güvenilir olmadığından, bir işlev/LTCG: PGO ile derlenmedi. Bu işleve yönelik güvenilir olmayan profil verilerini içeren. pgc dosyasını yeniden oluşturmak için profil oluşturmayı yineleyin.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).

@@ -11,38 +11,38 @@ helpviewer_keywords:
 - paint messages in view class [MFC]
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-ms.openlocfilehash: bc461347b56379976cdf62014507e3a15529f081
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 227c4614bad42706893301c69882c3f40af12e2f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408034"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214350"
 ---
 # <a name="drawing-in-a-view"></a>Bir Görünümde Çizim Yapma
 
-Görünümün neredeyse tüm çizim uygulamanızda gerçekleşir `OnDraw` görünümü sınıfınızda geçersiz kılmanız gerekir üye işlevi. (Çizim, ele fare istisnadır [yorumlama kullanıcı girişi aracılığıyla bir görünümü](../mfc/interpreting-user-input-through-a-view.md).) `OnDraw` Geçersiz kıl:
+Uygulamanızdaki neredeyse tüm çizimler görünümün `OnDraw` üye işlevinde meydana gelir ve bu, görünüm sınıfınıza geçersiz kılmanız gerekir. (Özel durum, [bir görünüm aracılığıyla Kullanıcı girişini yorumlama](../mfc/interpreting-user-input-through-a-view.md)bölümünde ele alınan fare çizimi olur.) `OnDraw` geçersiz kıl:
 
-1. Belge sağladığınız üye işlevlerini çağırarak verileri alır.
+1. Sağladığınız belge üye işlevlerini çağırarak verileri alır.
 
-1. Framework geçirir bir cihaz bağlamı nesnesinin üye işlevlerini çağırarak verileri görüntüler `OnDraw`.
+1. Çerçevenin `OnDraw`aktardığı bir cihaz bağlamı nesnesinin üye işlevlerini çağırarak verileri görüntüler.
 
-Bir belgenin verilerinin herhangi bir şekilde değiştiğinde görünüm değişiklikleri yansıtacak şekilde yeniden gerekir. Bu genellikle kullanıcının belgeye bir görünüm aracılığıyla bir değişiklik yaptığında gerçekleşir. Bu durumda, belgenin görünümü çağrıları [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) kendilerini güncelleştirmek için aynı belgedeki tüm görünümlerde bildirmek için üye işlevi. `UpdateAllViews` Her görünüm çağırır [OnUpdate](../mfc/reference/cview-class.md#onupdate) üye işlevi. Varsayılan uygulaması `OnUpdate` görünümün tüm istemci alanını geçersiz kılar. Bu yalnızca istemci alanını eşlemek için belgenin değiştirilmiş bölümleri bölgeleri geçersiz kılabilirsiniz.
+Belgenin verileri bir şekilde değiştiğinde, görünümün değişiklikleri yansıtacak şekilde yeniden çizilmelidir. Genellikle, bu durum Kullanıcı belgedeki bir görünümden değişiklik yaptığında meydana gelir. Bu durumda, Görünüm belgenin [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) üye işlevini çağırarak aynı belgedeki tüm görünümlere onları güncelleştirebilir. `UpdateAllViews` her bir görünümün [OnUpdate](../mfc/reference/cview-class.md#onupdate) üye işlevini çağırır. `OnUpdate` varsayılan uygulama, görünümün tüm istemci alanını geçersiz kılar. Yalnızca belgenin değiştirilen bölümlerine eşlenen istemci alanının bölgelerini geçersiz kılmak için bunu geçersiz kılabilirsiniz.
 
-`UpdateAllViews` Sınıfının üye işlevinde `CDocument` ve `OnUpdate` sınıfının üye işlevinde `CView` belgenin hangi bölümlerinin değiştirilmiş açıklayan bilgileri geçirdiğiniz sağlar. Bu "İpucu" mekanizması görünümü yeniden çizmeniz gerekir alan kısıtlamanıza olanak tanır. `OnUpdate` iki "İpucu" bağımsız değişkeni alır. Birincisi, *lHint*, türü **LPARAM**, istediğiniz gibi ikinci olmakla birlikte, tüm verileri sağlar *pHint*, türü `CObject`*, türetilmiş herhangi bir nesne, geçirdiğiniz bir işaretçi sağlar gelen `CObject`.
+Sınıf `CDocument` `UpdateAllViews` üye işlevi ve `CView` `OnUpdate` üye işlevi, belgenin hangi bölümlerinin değiştirildiğini açıklayan bilgileri geçirmenize olanak sağlar. Bu "ipucu" mekanizması, görünümün yeniden çizilemesinin gereken alanı sınırlamanıza olanak tanır. `OnUpdate` iki "ipucu" bağımsız değişkeni alır. **LParam**türünde birinci, *lipucu*, istediğiniz herhangi bir veriyi geçirmenize olanak sağlar, ancak `CObject`* türünde, ikinci, *pHint*, `CObject`türetilmiş herhangi bir nesneye bir işaretçi geçirmenize olanak sağlar.
 
-Görünüm geçersiz hale geldiğinde, Windows, gönderdiği bir **WM_PAINT** ileti. Görünümün [OnPaint](../mfc/reference/cwnd-class.md#onpaint) işleyici işlevi, bir cihaz bağlamındaki nesne sınıfı oluşturarak iletiye yanıt [CPaintDC](../mfc/reference/cpaintdc-class.md) ve görünümünüzün çağırır `OnDraw` üye işlevi. Normalde bir geçersiz kılma yazma gerekmez `OnPaint` işleyicisi işlevi.
+Bir görünüm geçersiz olduğunda, Windows bunu bir **WM_PAINT** mesajı gönderir. Görünümün [OnPaint](../mfc/reference/cwnd-class.md#onpaint) Handler Işlevi, [CPaintDC](../mfc/reference/cpaintdc-class.md) sınıfının bir cihaz bağlamı nesnesi oluşturarak ve görünüminizin `OnDraw` üye işlevini çağırarak iletiye yanıt verir. Normalde bir geçersiz kılma `OnPaint` işleyici işlevi yazmanız gerekmez.
 
-A [cihaz bağlamı](../mfc/device-contexts.md) bir cihazın bir görüntü veya yazıcı gibi çizim öznitelikleri hakkında bilgi içeren bir Windows veri yapısıdır. Tüm çizim çağrıları, bir cihaz bağlamındaki nesne ile yapılır. Ekranda çizim `OnDraw` geçirilen bir `CPaintDC` nesne. Yazıcı çizmek için geçirilen bir [CDC](../mfc/reference/cdc-class.md) nesne geçerli yazıcıyı ayarlayın.
+[Cihaz bağlamı](../mfc/device-contexts.md) , bir cihazın görüntü veya yazıcı gibi çizim öznitelikleri hakkında bilgi Içeren bir Windows veri yapısıdır. Tüm çizim çağrıları bir cihaz bağlamı nesnesi aracılığıyla yapılır. Ekranda çizim için `OnDraw` `CPaintDC` bir nesne geçirilir. Bir yazıcıda çizim için, geçerli yazıcı için ayarlanmış bir [CDC](../mfc/reference/cdc-class.md) nesnesi geçirilir.
 
-Görünümü çizmek için kodunuzu ilk belgeye bir işaretçi alır, ardından cihaz bağlamı aracılığıyla çizim çağrısı yapar. Aşağıdaki basit `OnDraw` örnek işlemini gösterir:
+Görünümde çizim için kodunuz önce belgeye bir işaretçi alır, sonra da cihaz bağlamı aracılığıyla çizim çağrısı yapar. Aşağıdaki basit `OnDraw` örneği süreci göstermektedir:
 
 [!code-cpp[NVC_MFCDocView#1](../mfc/codesnippet/cpp/drawing-in-a-view_1.cpp)]
 
-Bu örnekte tanımlayın `GetData` belge türetilmiş sınıfınızın bir üye olarak işlev.
+Bu örnekte, `GetData` işlevini türetilen belge sınıfınızın bir üyesi olarak tanımlayacaksınız.
 
-Örnek Görünümü'nde ortalanmış belgeden alır herhangi bir dize yazdırır. Varsa `OnDraw` çağrıdır ekran çizim için `CDC` geçirilen nesne *pDC* olduğu bir `CPaintDC` , Oluşturucusu zaten adlı sahiptir `BeginPaint`. İşlevleri çizim çağrıları, cihaz bağlam işaretçiyle yapılır. Cihaz bağlamları ve çizim çağrıları hakkında daha fazla bilgi için bkz. [CDC](../mfc/reference/cdc-class.md) içinde *MFC başvurusu* ve [pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md).
+Örnek, görünümde ortalanan ve belgeden aldığı dizeyi yazdırır. `OnDraw` çağrısı ekran çizimi için ise, *PDC* 'de geçirilen `CDC` nesnesi, oluşturucu zaten `BeginPaint`olarak çağrılmış olan bir `CPaintDC`. Çizim işlevlerine yapılan çağrılar, cihaz bağlamı işaretçisi aracılığıyla yapılır. Cihaz bağlamları ve çizim çağrıları hakkında daha fazla bilgi için bkz. *MFC başvurusunda* [CDC](../mfc/reference/cdc-class.md) sınıfı ve [pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md).
 
-Yazma konusunda daha fazla örnek için `OnDraw`, bkz: [MFC örnekleri](../overview/visual-cpp-samples.md).
+`OnDraw`yazma hakkında daha fazla örnek için bkz. [MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

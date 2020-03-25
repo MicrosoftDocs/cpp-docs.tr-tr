@@ -9,18 +9,18 @@ helpviewer_keywords:
 - declaring classes [C++]
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-ms.openlocfilehash: 0ffe1077da76d7524ce99d825e97f68a031ca315
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1464ce9ca8349550160c768265c1c4eada93209
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301558"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80161171"
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 
-Bir sınıf başka bir sınıf kapsamında bildirilebilir. Bu tür bir sınıfının bir "sınıfı iç içe geçmiş." olarak adlandırılır İç içe geçmiş sınıflar, kapsayan sınıf kapsamında değerlendirilir ve bu kapsam içinde kullanılabilir. İç içe geçmiş bir sınıf için hemen kapsayan kapsamı dışında bir kapsamdan başvurmak için bir tam adı kullanmanız gerekir.
+Bir sınıf, başka bir sınıfın kapsamı içinde bildirilebilecek. Böyle bir sınıfa "Nested Class" adı verilir. İç içe geçmiş sınıflar kapsayan sınıfın kapsamı içinde olduğu kabul edilir ve bu kapsam içinde kullanılabilir. Kendi kendine kapsayan kapsamı dışında bir kapsamdaki iç içe bir sınıfa başvurmak için, tam nitelikli bir ad kullanmanız gerekir.
 
-Aşağıdaki örnekte, iç içe geçmiş sınıflar bildirmeniz gösterilmektedir:
+Aşağıdaki örnek, iç içe sınıfların nasıl bildirilemeyeceğini göstermektedir:
 
 ```cpp
 // nested_class_declarations.cpp
@@ -54,16 +54,16 @@ int main()
 }
 ```
 
-`BufferedIO::BufferedInput` ve `BufferedIO::BufferedOutput` içinde bildirilen `BufferedIO`. Bu sınıf adları sınıf kapsamı dışında görünür değildir `BufferedIO`. Ancak, bir nesne türü `BufferedIO` türlerinin herhangi bir nesne içermiyor `BufferedInput` veya `BufferedOutput`.
+`BufferedIO::BufferedInput` ve `BufferedIO::BufferedOutput` `BufferedIO`içinde bildirilmiştir. Bu sınıf adları, `BufferedIO`sınıfının kapsamı dışında görünür değildir. Ancak, `BufferedIO` türünde bir nesne `BufferedInput` veya `BufferedOutput`türde herhangi bir nesne içermez.
 
-İç içe geçmiş sınıflar doğrudan adları, tür adları, statik üyeleri ve yalnızca kapsayan sınıfından numaralandırıcıların adları kullanabilirsiniz. Diğer sınıf üyelerinin adları kullanmak için işaretçiler, başvurular veya nesne adlarını kullanmanız gerekir.
+İç içe geçmiş sınıflar adları, tür adlarını, statik üyelerin adlarını ve yalnızca kapsayan sınıftan bulunan numaralandırıcıları doğrudan kullanabilir. Diğer sınıf üyelerinin adlarını kullanmak için işaretçiler, başvurular veya nesne adları kullanmanız gerekir.
 
-Önceki içinde `BufferedIO` örneği, numaralandırma `IOError` doğrudan iç içe geçmiş sınıflardaki üye işlevleri tarafından erişilebilir `BufferedIO::BufferedInput` veya `BufferedIO::BufferedOutput`işlevinde görüldüğü gibi `good`.
+Önceki `BufferedIO` örneğinde, numaralandırma `IOError` doğrudan iç içe sınıflarda, `BufferedIO::BufferedInput` veya `BufferedIO::BufferedOutput`işlev `good`gösterildiği gibi üye işlevlerle erişilebilir.
 
 > [!NOTE]
->  İç içe geçmiş sınıflar, yalnızca sınıf kapsamı içinde türlerini bildirir. Bunlar, iç içe geçmiş sınıf oluşturulacak neden yer alan nesneleri yapın. Yukarıdaki örnekte, iç içe iki sınıf bildirdiyse ama tüm bu sınıf türü nesneleri bildirmiyor.
+>  İç içe sınıflar yalnızca sınıf kapsamı içindeki türleri bildirir. İç içe yerleştirilmiş sınıfın içerilen nesnelerinin oluşturulmasına neden olmaz. Yukarıdaki örnek, iki iç içe sınıf bildirir ancak bu sınıf türlerindeki herhangi bir nesne bildirmiyor.
 
-Bir tür adı ile birlikte İleri dönük bildiriminin bildirildiğinde bir kapsam görünürlük iç içe geçmiş sınıf bildiriminin istisnadır.  Bu durumda, İleri dönük bildirimi tarafından bildirilen sınıf adı kapsamı ile en küçük kapsayan sınıf olmayan kapsamı tanımlanmış kapsayan sınıfa dışında görülebilir.  Örneğin:
+Bir iç içe sınıf bildiriminin kapsam görünürlüğü için bir özel durum, bir tür adının bir iletme bildirimiyle birlikte bildirildiği durumdur.  Bu durumda, iletme bildirimi tarafından belirtilen sınıf adı kapsayan sınıfın dışında görünür ve kapsamı, en küçük kapsayan sınıf olmayan kapsam olarak tanımlanır.  Örneğin:
 
 ```cpp
 // nested_class_declarations_2.cpp
@@ -90,13 +90,13 @@ int main()
 }
 ```
 
-## <a name="access-privilege-in-nested-classes"></a>İç içe geçmiş sınıflardaki erişim ayrıcalığı
+## <a name="access-privilege-in-nested-classes"></a>İç içe sınıflarda erişim ayrıcalığı
 
 Bir sınıfı başka bir sınıf içinde iç içe geçirmek, iç içe geçmiş sınıfın üye işlevlerine özel erişim ayrıcalıkları vermez. Benzer şekilde, çevreleyen sınıfın üye işlevlerinin iç içe geçmiş sınıf üyeleri için özel erişimi yoktur.
 
-## <a name="member-functions-in-nested-classes"></a>İç içe geçmiş sınıflardaki üye işlevleri
+## <a name="member-functions-in-nested-classes"></a>İç içe sınıflarda üye işlevleri
 
-İç içe geçmiş sınıflarda bildirilen üye işlevleri, dosya kapsamı içinde tanımlanabilir. Yukarıdaki örnekte yazılmış:
+İç içe sınıflarda belirtilen üye işlevleri, dosya kapsamında tanımlanabilir. Yukarıdaki örnek yazılmış olabilir:
 
 ```cpp
 // member_functions_in_nested_classes.cpp
@@ -134,13 +134,13 @@ int main()
 }
 ```
 
-Önceki örnekte *nitelikli tür adı* söz dizimi, işlev adını bildirmek için kullanılır. Bildirim:
+Önceki örnekte, *tam tür adı* sözdizimi işlev adını bildirmek için kullanılır. Bildirim:
 
 ```cpp
 BufferedIO::BufferedInput::read()
 ```
 
-anlamına gelir " `read` üyesi işlevi `BufferedInput` kapsamında sınıfı `BufferedIO` sınıfı." Bu bildirim kullandığından *nitelikli tür adı* söz dizimi yapıları aşağıdaki biçime mümkündür:
+, `BufferedIO` sınıfının kapsamındaki `BufferedInput` sınıfının bir üyesi olan `read` işlevi anlamına gelir. " Bu bildirim *tam tür adı* sözdizimini kullandığından, aşağıdaki formun yapıları olasıdır:
 
 ```cpp
 typedef BufferedIO::BufferedInput BIO_INPUT;
@@ -148,11 +148,11 @@ typedef BufferedIO::BufferedInput BIO_INPUT;
 int BIO_INPUT::read()
 ```
 
-Yukarıdaki bildirim, Öncekine eşdeğerdir, ancak bunu kullanan bir **typedef** sınıf adları yerine adı.
+Önceki bildirim öncekiyle eşdeğerdir, ancak sınıf adlarının yerine bir **typedef** adı kullanır.
 
-## <a name="friend-functions-in-nested-classes"></a>Arkadaş işlevleri iç içe geçmiş sınıflardaki
+## <a name="friend-functions-in-nested-classes"></a>İç içe sınıflarda arkadaş işlevleri
 
-İç içe geçmiş bir sınıfta bildirilen arkadaş işlevleri iç içe geçmiş sınıf, kapsayan sınıf kapsamı içinde olarak değerlendirilir. Bu nedenle, arkadaş işlev üyeleri veya kapsayan sınıfın üye işlevleri için hiçbir özel erişim ayrıcalıkları elde edin. İç içe geçmiş bir sınıf bir arkadaş işlev içinde bildirilen bir ad kullanmak istediğiniz ve dosya kapsamında tanımlanan arkadaş işlevi, nitelenmiş tür adlarını şu şekilde kullanın:
+İç içe yerleştirilmiş bir sınıfta belirtilen arkadaş işlevleri, kapsayan sınıfın değil, iç içe yerleştirilmiş sınıfın kapsamında olduğu kabul edilir. Bu nedenle arkadaş işlevleri, kapsayan sınıfın üyeleri veya üye işlevleri için özel erişim ayrıcalıklarına sahip olmaz. Bir Friend işlevindeki iç içe yerleştirilmiş bir sınıfta belirtilen bir ad kullanmak istiyorsanız ve arkadaş işlevi dosya kapsamında tanımlanmışsa, tam tür adlarını aşağıdaki gibi kullanın:
 
 ```cpp
 // friend_functions_and_nested_classes.cpp
@@ -198,13 +198,13 @@ int main()
 }
 ```
 
-Aşağıdaki kod, işlev göstermektedir `GetExtendedErrorStatus` bir arkadaş işlev bildirilir. Dosya kapsamında tanımlanan işlevinde bir ileti sınıfı üyesi bir statik dizisinden kopyalanır. Unutmayın, daha iyi bir uygulama `GetExtendedErrorStatus` olarak bildirmek için:
+Aşağıdaki kod, bir Friend işlevi olarak bildirildiği `GetExtendedErrorStatus` işlevi gösterir. Dosya kapsamında tanımlanan işlevde bir ileti bir statik diziden sınıf üyesine kopyalanır. `GetExtendedErrorStatus` daha iyi bir uygulamanın bunu şöyle bildirdiğine unutmayın:
 
 ```cpp
 int GetExtendedErrorStatus( char *message )
 ```
 
-Önceki arabirimiyle birkaç sınıfı bir bellek konumuna kopyalanan hata iletisi istedikleri geçirerek Hizmetleri bu işlevi kullanabilirsiniz.
+Önceki arabirim ile, birkaç sınıf, hata iletisinin kopyalanmasını istedikleri bir bellek konumunu geçirerek bu işlevin hizmetlerini kullanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

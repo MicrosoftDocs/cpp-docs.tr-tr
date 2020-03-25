@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CXX0058
 - CAN0058
 ms.assetid: b6246c6e-5845-4ad5-ac2a-e6c4faf8f3f9
-ms.openlocfilehash: 9727c4cbbef0594e30d19f816eb855a61f0b2e92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 032d3447cdf569c107cdb8f7a92f1fd02df35f40
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299562"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184638"
 ---
 # <a name="expression-evaluator-error-cxx0058"></a>İfade Değerlendirici Hatası CXX0058
 
-Aşırı yüklenmiş işleç bulunamadı
+aşırı yüklenmiş işleç bulunamadı
 
-Bir sınıf türünün bir ifadede sol işlenenle belirtildi ancak sınıf için aşırı yüklenmiş bir işleç tanımlı değil.
+Bir ifadede sol işlenen olarak bir sınıf türü belirtildi, ancak sınıf için aşırı yüklenmiş bir işleç tanımlanmadı.
 
-Bu hata için CAN0058 aynıdır.
+Bu hata CAN0058 ile aynıdır.

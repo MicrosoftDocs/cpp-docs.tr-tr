@@ -51,12 +51,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: 6e095e01d3131f98b44935705b2564291fb13844
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f04885ef61841ac20f87ab07ce73d3c9342fe39c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447054"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212168"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
@@ -75,7 +75,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 Sınıfınız `ICommandImpl`türetilir.
 
 *CommandBase*<br/>
-Bir komut arabirimi. Varsayılan değer: `ICommand`.
+Bir komut arabirimi. Varsayılan: `ICommand`.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -106,7 +106,7 @@ Bir komut arabirimi. Varsayılan değer: `ICommand`.
 
 Komut nesnesinde zorunlu arabirim.
 
-## <a name="cancel"></a>Iommandimpl:: Cancel
+## <a name="icommandimplcancel"></a><a name="cancel"></a>Iommandimpl:: Cancel
 
 Geçerli komut yürütmesini iptal eder.
 
@@ -120,7 +120,7 @@ STDMETHOD(Cancel)();
 
 *OLE DB Programcı başvurusunda*bkz. [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) .
 
-## <a name="cancelexecution"></a>Iommandimpl:: iptal Lexecution
+## <a name="icommandimplcancelexecution"></a><a name="cancelexecution"></a>Iommandimpl:: iptal Lexecution
 
 Geçerli komut yürütmesini iptal eder.
 
@@ -130,7 +130,7 @@ Geçerli komut yürütmesini iptal eder.
 HRESULT CancelExecution();
 ```
 
-## <a name="createrowset"></a>Iommandimpl:: CreateRowset
+## <a name="icommandimplcreaterowset"></a><a name="createrowset"></a>Iommandimpl:: CreateRowset
 
 Tek bir satır kümesi oluşturmak için [Execute](../../data/oledb/icommandimpl-execute.md) tarafından çağırılır.
 
@@ -179,7 +179,7 @@ Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturma
 
 *OLE DB Programcı başvurusunda bkz.* [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
 
-## <a name="execute"></a>Icommandimpl:: Execute
+## <a name="icommandimplexecute"></a><a name="execute"></a>Icommandimpl:: Execute
 
 Komutunu yürütür.
 
@@ -203,7 +203,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 `Execute` [CreateRowset](../../data/oledb/icommandimpl-createrowset.md)çağırır. Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak üzere varsayılan uygulamayı geçersiz kılın.
 
-## <a name="getdbsession"></a>Iommandimpl:: GetDBSession
+## <a name="icommandimplgetdbsession"></a><a name="getdbsession"></a>Iommandimpl:: GetDBSession
 
 Komutu oluşturan oturuma bir arabirim işaretçisi döndürür.
 
@@ -222,7 +222,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 Oturumdan özellikleri almak için faydalıdır.
 
-## <a name="icommandimpl"></a>Iommandimpl:: ıommandimpl
+## <a name="icommandimplicommandimpl"></a><a name="icommandimpl"></a>Iommandimpl:: ıommandimpl
 
 Oluşturucu.
 
@@ -232,7 +232,7 @@ Oluşturucu.
 ICommandImpl();
 ```
 
-## <a name="bcancel"></a>Iommandimpl:: m_bCancel
+## <a name="icommandimplm_bcancel"></a><a name="bcancel"></a>Iommandimpl:: m_bCancel
 
 Komutun iptal edilip edilmeyeceğini gösterir.
 
@@ -246,7 +246,7 @@ unsigned m_bCancel:1;
 
 Bu değişkeni komut sınıfınızın `Execute` yönteminde alabilir ve uygun şekilde iptal edebilirsiniz.
 
-## <a name="bcancelwhenexecuting"></a>Iommandimpl:: m_bCancelWhenExecuting
+## <a name="icommandimplm_bcancelwhenexecuting"></a><a name="bcancelwhenexecuting"></a>Iommandimpl:: m_bCancelWhenExecuting
 
 Yürütme sırasında komutun iptal edilip edilmeyeceğini gösterir.
 
@@ -260,7 +260,7 @@ unsigned m_bCancelWhenExecuting:1;
 
 Varsayılan değer **true 'dur** (iptal edilebilir).
 
-## <a name="bisexecuting"></a>Iommandimpl:: m_bIsExecuting
+## <a name="icommandimplm_bisexecuting"></a><a name="bisexecuting"></a>Iommandimpl:: m_bIsExecuting
 
 Komutun Şu anda yürütülmekte olup olmadığını gösterir.
 

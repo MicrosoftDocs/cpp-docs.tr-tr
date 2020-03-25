@@ -6,16 +6,16 @@ helpviewer_keywords:
 - ODBC drivers, list of
 - drivers, ODBC
 ms.assetid: 4e12c832-39fe-44f7-9230-5c8d37203f11
-ms.openlocfilehash: 479c30717d645d511e06651e36f73bb1188f0d21
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 619aae452b0657e552baa54445dd38457fa32319
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395774"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213128"
 ---
 # <a name="odbc-driver-list"></a>ODBC Sürücü Listesi
 
-Visual C++, aşağıdaki veritabanlarını ODBC sürücüleri sağlar:
+Visual C++ , aşağıdaki VERITABANLARı için ODBC sürücüleri sağlar:
 
 - SQL Server
 
@@ -31,7 +31,7 @@ Visual C++, aşağıdaki veritabanlarını ODBC sürücüleri sağlar:
 
 - Metin dosyaları
 
-Microsoft ve ODBC sürücü paketi dahil olmak üzere, diğer şirketlerin sunduğu ODBC sürücüleri hakkında daha fazla bilgi için Microsoft Ürün Destek Hizmetleri'ne başvurun.
+Microsoft 'tan ve diğer şirketlerin ODBC sürücü paketi de dahil olmak üzere bulunan ODBC sürücüleri hakkında bilgi için Microsoft Ürün Destek Hizmetleri 'ne başvurun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

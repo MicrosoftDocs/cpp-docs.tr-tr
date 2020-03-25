@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-ms.openlocfilehash: 342980ac9a7cae8a98ffd0f367c666487e34e5de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7753c1ad41f12fa8c14d2f10c9e2f91e043a5846
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62231316"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213609"
 ---
 # <a name="removereference-structure"></a>RemoveReference Yapısı
 
@@ -33,20 +33,20 @@ struct RemoveReference<T&&>;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Bir sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen sınıf şablonu parametre başvurusunu veya rvalue başvurusunu nitelik kaldırır.
+Belirtilen sınıf şablonu parametresinden başvuruyu veya rvalue-Reference nitelik öğesini şeritler.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`Type`|Sınıf şablon parametresi için eş anlamlıdır.|
+|`Type`|Sınıf şablonu parametresi için eş anlamlı.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -54,9 +54,9 @@ Belirtilen sınıf şablonu parametre başvurusunu veya rvalue başvurusunu nite
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** internal.h
+**Üst bilgi:** iç. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

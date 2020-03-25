@@ -1,21 +1,21 @@
 ---
-title: Uygulama Sihirbazı (MFC veri erişimi)'ın oluşturduğu kayıt görünümü kodu
+title: Uygulama Sihirbazı tarafından oluşturulan kayıt görünümü kodu (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - application wizards [C++], record view code
 - record views, refreshing controls
 - record views, application wizard code
 ms.assetid: 18fd4703-5939-491d-b759-985f767b951f
-ms.openlocfilehash: e25ca9cad1390dd11ab7328ffefed31badf6fc0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69bebe978d03e5777f20765ac0bcf9a344f69320
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152689"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80209163"
 ---
-# <a name="record-view-code-created-by-application-wizard--mfc-data-access"></a>Uygulama Sihirbazı (MFC veri erişimi)'ın oluşturduğu kayıt görünümü kodu
+# <a name="record-view-code-created-by-application-wizard--mfc-data-access"></a>Uygulama Sihirbazı tarafından oluşturulan kayıt görünümü kodu (MFC veri erişimi)
 
-[MFC Uygulama Sihirbazı](../mfc/reference/database-support-mfc-application-wizard.md) görünüm geçersiz kılmaları `OnInitialUpdate` ve `OnGetRecordset` üye işlevleri. Çerçeve penceresi, belge ve görünüm framework oluşturduktan sonra çağırdığı `OnInitialUpdate` görünümü başlatılamadı. `OnInitialUpdate` bir işaretçi kayıt kümesine belgeden alır. Temel sınıf için bir çağrı [CView::OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) işlevi kayıt açar. Bu işlem için aşağıdaki kodda gösterildiği bir `CRecordView`:
+[MFC Uygulama Sihirbazı](../mfc/reference/database-support-mfc-application-wizard.md) , görünümün `OnInitialUpdate` ve `OnGetRecordset` üye işlevlerini geçersiz kılar. Çerçeve penceresini, belgeyi ve görünümünü oluşturduktan sonra, görünümü başlatmak için `OnInitialUpdate` çağırır. `OnInitialUpdate`, belgeden kayıt kümesine bir işaretçi alır. Temel sınıf [CView:: OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) işlevine yapılan bir çağrı, kayıt kümesini açar. Aşağıdaki kod `CRecordView`için bu işlemi gösterir:
 
 ```cpp
 void CSectionForm::OnInitialUpdate()
@@ -25,11 +25,11 @@ void CSectionForm::OnInitialUpdate()
 }
 ```
 
-Kayıt kümesi açıldığında kayıt seçer. [CRecordset::Open](../mfc/reference/crecordset-class.md#open) geçerli kayıt ve form denetimi Görünümü'nde ilgili DDX taşır verilerden kümesinin alan veri üyeleri ilk kaydı yapar. RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md). DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). Belge/görünüm oluşturma işlemi hakkında daha fazla bilgi için bkz. [yazma uygulamaları için Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).
+Kayıt kümesi açıldığında kayıtları seçer. [CRecordset:: Open](../mfc/reference/crecordset-class.md#open) , ilk kaydı geçerli kayıt yapar ve DDX kayıt kümesinin alan verileri üyelerinden verileri görünümdeki ilgili form denetimlerine taşıır. RFX hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md). DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). Belge/görünüm oluşturma işlemi hakkında daha fazla bilgi için bkz. [Windows Için uygulama yazmak Için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).
 
 > [!NOTE]
->  Son kullanıcılarınızı kayıt kümesindeki kayıt görüntüleme denetimlerini Yenile olanağı vermesi gerekir. Bir kullanıcı için geçersiz bir değer, bir denetimin değeri değişirse bu yetenek olmadan kullanıcı kalıcı olarak geçerli kayıt için takılabilir. Denetimleri yenilemek için çağrı `CWnd` üye işlevi [UpdateData](../mfc/reference/cwnd-class.md#updatedata) parametresi yanlış.
+>  Son kullanıcılarınıza kayıt kümesi denetimlerini kayıt kümesinden yenileme özelliği sağlamanız gerekir. Bu özellik olmadan, bir Kullanıcı bir denetimin değerini geçersiz bir değere değiştirirse, Kullanıcı kalıcı olarak geçerli kayıt üzerinde kalmış olabilir. Denetimleri yenilemek için, [UpdateData](../mfc/reference/cwnd-class.md#updatedata) `CWnd` üye işlevini yanlış parametresiyle çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)
+[Kayıt görünümü kullanma](../data/using-a-record-view-mfc-data-access.md)

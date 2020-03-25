@@ -23,18 +23,18 @@ helpviewer_keywords:
 - Dialog Editor [C++], switching between controls and code
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-ms.openlocfilehash: 40b5d8c8390c638b70bc2c0860ccf3c17872719c
-ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
+ms.openlocfilehash: 9d0f9993d81c499f67a08e5401c5e56dba7b281c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445003"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215260"
 ---
 # <a name="dialog-editor-c"></a>İletişim kutusu DüzenleyicisiC++()
 
 **İletişim kutusu Düzenleyicisi** , iletişim kutusu kaynakları oluşturmanıza veya düzenlemenize olanak tanır.
 
-- Düzenleyiciyi açmak için **kaynak görünümü** penceresinde bir iletişim kutusunun. rc dosyasına çift tıklayın veya menü **görünümü** > **diğer Windows** > **kaynak görünümü**' e gidin.
+- Düzenleyiciyi açmak için **kaynak görünümü** penceresinde bir iletişim kutusunun. rc dosyasına çift tıklayın veya menü **görünümü** ' ne > **diğer Windows** > **kaynak görünümü**gidin.
 
 Yeni bir iletişim kutusu veya iletişim kutusu şablonu oluşturmak için ilk adımlardan biri denetimleri ekliyor. Iletişim kutusu **düzenleyicisinde**, denetimleri belirli bir boyut, şekil veya hizalamayı sığacak şekilde düzenleyebilir veya iletişim kutusunda çalışmak için bu öğeleri etrafında taşıyabilirsiniz. Ayrıca, bir denetimi silmek de kolaydır.
 
@@ -55,10 +55,10 @@ Kaynaklar hakkında daha fazla bilgi için bkz. [Iletişim kutusu](../windows/cr
 
 **İletişim kutusu düzenleyici** araç çubuğu, iletişim kutusundaki denetimlerin yerleşimini düzenlemek için düğmeler içerir, örneğin boyut ve hizalama. **Iletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri **Biçim** menüsündeki komutlara karşılık gelir.
 
-|Simge|Açıklama|Simge|Açıklama|
+|Simge|Anlamı|Simge|Anlamı|
 |----------|-------------|----------|-------------|
 |![Test Iletişim düğmesi](../mfc/media/vcdialogeditortestdialog.png "Vcdialogedıtortestdialog")|Test Iletişim kutusu|![Çapraz boşluk düğmesi](../mfc/media/vcdialogeditoracross.png "Vcdialogedıtorat")|Yönlendirilmesine|
-|![Sola Hizala düğmesi](../mfc/media/vcdialogeditoralignlefts.png "Vcdialogeditorhizalaması solları")|Solları Hizala|![Boşluk aşağı düğmesi](../mfc/media/vcdialogeditordown.png "Vcdialogedıtori")|Kapatılıp|
+|![Sola Hizala düğmesi](../mfc/media/vcdialogeditoralignlefts.png "Vcdialogeditorhizalaması solları")|Solları Hizala|![Boşluk aşağı düğmesi](../mfc/media/vcdialogeditordown.png "Vcdialogedıtori")|Aşağı|
 |![Sağa Hizala düğmesi](../mfc/media/vcdialogeditoralignrights.png "Vcdialogeditorhizalaması hakları")|Hakları Hizala|![Aynı genişliğe getir düğmesi](../mfc/media/vcdialogeditorsamewidth.png "vcDialogEditorSameWidth")|Aynı genişliğe getir|
 |![Üste Hizala düğmesi](../mfc/media/vcdialogeditoraligntops.png "Vcdialogeditorhizalaması")|Üste Hizala|![Aynı yüksekliğe getir düğmesi](../mfc/media/vcdialogeditormakesameheight.png "vcDialogEditorMakeSameHeight")|Aynı yüksekliğe getir|
 |![Botlar düğmesini Hizala](../mfc/media/vcdialogeditoralignbottoms.png "Vcdialogeditorhizalaması botları")|Botları Hizala|![Aynı boyuta getir düğmesi](../mfc/media/vcdialogeditorsamesize.png "vcDialogEditorSameSize")|Aynı boyuta getir|
@@ -67,7 +67,7 @@ Kaynaklar hakkında daha fazla bilgi için bkz. [Iletişim kutusu](../windows/cr
 
 - **Iletişim kutusu Düzenleyicisi** araç çubuğunu göstermek veya gizlemek Için menü **görünümü** > **araç çubukları** > **iletişim kutusu Düzenleyicisi**' ne gidin.
 
-**İletişim kutusu düzenleyicisini** bir C++ projede açtığınızda, **iletişim kutusu düzenleyici** araç çubuğu çözümünüzün en üstünde otomatik olarak görünür, ancak araç çubuğunu açık olarak kapatırsanız, **iletişim kutusu düzenleyicisini bir sonraki açışınızda çağırmanız gerekir** . Kullanılabilir araç çubukları ve pencereler listesinden seçerek görüntülenmesini sağlayabilirsiniz.
+**İletişim kutusu düzenleyicisini** C++ bir projede açtığınızda, iletişim kutusu **Düzenleyici** araç çubuğu çözümünüzün en üstünde otomatik olarak görünür, ancak araç çubuğunu açıkça kapatırsanız, **iletişim kutusu düzenleyicisini**bir sonraki açışınızda çağırmanız gerekir. Kullanılabilir araç çubukları ve pencereler listesinden seçerek görüntülenmesini sağlayabilirsiniz.
 
 ## <a name="switch-between-dialog-box-controls-and-code"></a>Iletişim kutusu denetimleri ile kod arasında geçiş yapma
 
@@ -92,7 +92,7 @@ Seçilen bir denetim seçiliyken seçili öğe için mevcut olan Windows iletile
 
 **Iletişim kutusu Düzenleyicisi** komutları için varsayılan hızlandırıcı tuşları aşağıda verilmiştir.  
 
-|Komut|Belirlenmesine|Açıklama|
+|Komut|Anahtarlar|Açıklama|
 |-------------|----------|-----------------|
 |Format.AlignBottoms|**Ctrl** + **SHIFT** + **aşağı ok**|Baskın denetim ile seçili denetimlerin alt kenarlarını hizalar.|
 |Format.AlignCenters|**Shıft** + **F9**|Seçilen denetimlerin dikey merkezlerini baskın denetimle hizalar.|
@@ -104,7 +104,7 @@ Seçilen bir denetim seçiliyken seçili öğe için mevcut olan Windows iletile
 |Format.ButtonRight|**Ctrl** + **R**|Seçili düğmeleri iletişim kutusunun sağ üst köşesine koyar.|
 |Format.CenterHorizontal|**Ctrl** + **SHIFT** + **F9**|Denetimleri iletişim kutusu içinde yatay olarak ortalar.|
 |Format.CenterVertical|**Ctrl** + **F9**|Denetimleri iletişim kutusu içinde dikey olarak ortalar.|
-|Format.CheckMnemonics|**Ctrl** + **milyon**|Anımsatıcıları benzersiz denetler.|
+|Format.CheckMnemonics|**Ctrl** + **a**|Anımsatıcıları benzersiz denetler.|
 |Format. SizeToContent|**Shıft** + **F7**|Seçili denetimleri, açıklamalı alt yazı metnine sığacak şekilde yeniden boyutlandırır.|
 |Format.SpaceAcross|**Alt** + **sol ok**|Seçili denetimleri yatay olarak eşit boşluklar.|
 |Format.SpaceDown|**Alt** + **aşağı ok**|Seçili denetimleri dikey olarak eşit boşluklar.|
@@ -112,11 +112,11 @@ Seçilen bir denetim seçiliyken seçili öğe için mevcut olan Windows iletile
 |Format.TestDialog|**Ctrl** + **t**|Görünümü ve davranışı test etmek için iletişim kutusunu çalıştırır.|
 |Format.ToggleGuides|**Ctrl** + **G**|İletişim kutusu düzenlemesi için kılavuz, yönergeler ve kılavuz yok.|
 
-- Kısayol tuşlarını değiştirmek için menü **araçları** > **seçenekleri**' ne gidin ve **ortam** klasörü altında **klavye** ' yi seçin.
+- Kısayol tuşlarını değiştirmek için menü **araçları** > **Seçenekler**' e gidin ve **ortam** klasörünün altında **klavye** ' yi seçin.
 
    Daha fazla bilgi için bkz. [klavye kısayollarını tanımlama ve özelleştirme](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
 
-- Ayarlarınızı değiştirmek için menü **araçları** > **Içeri ve dışarı aktarma ayarları**' na gidin.
+- Ayarlarınızı değiştirmek için, **Ayarları içeri ve dışarı aktarma** > menü **araçları** ' na gidin.
 
    İletişim kutularında kullanılabilen seçenekler ve gördüğünüz menü komutlarının adları ve konumları, etkin ayarlarınıza veya sürümüne bağlı olarak **Yardım** altında açıklananlar arasından farklılık gösterebilir.  Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
 

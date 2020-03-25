@@ -16,12 +16,12 @@ helpviewer_keywords:
 - _ptr64 keyword [C++]
 - __ptr32 keyword [C++]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
-ms.openlocfilehash: 957e0deba31552777ef5e738afef13d74a640a18
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: c3ebe642284c6ee269dbfc39985630b7d949435f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301333"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179217"
 ---
 # <a name="__ptr32-__ptr64"></a>__ptr32, __ptr64
 

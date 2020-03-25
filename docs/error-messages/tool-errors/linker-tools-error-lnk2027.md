@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2027
 ms.assetid: e2f857a8-8e8a-4697-bbff-12ccb84a35c1
-ms.openlocfilehash: e74912780bab3056ead36ae3705f0910805228e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c531f70f98a017e8b75cceddc684f99d33bc554
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299016"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194608"
 ---
 # <a name="linker-tools-error-lnk2027"></a>Bağlayıcı Araçları Hatası LNK2027
 
-Çözümlenmemiş modül başvurusu 'module'
+çözümlenmemiş modül başvurusu ' Module '
 
-Bağlayıcı için geçirilen dosya tipleri ile belirtilen bir modülde bağımlılığa sahip **assemblymodule** ya da doğrudan bağlayıcıya geçirildi.
+Bağlayıcıya geçirilen bir dosya, **/ASSEMBLYMODULE** ile belirtilmeyen veya doğrudan bağlayıcıya geçilen bir modüle bağımlılığı vardır.
 
 LNK2027 çözümlemek için aşağıdakilerden birini yapın:
 
-- Bağlayıcı için modül bağımlılığının dosya geçirmeyin.
+- Modül bağımlılığı olan dosyayı bağlayıcıya geçirmeyin.
 
-- Modülüyle belirtin **assemblymodule**.
+- **/ASSEMBLYMODULE**ile modülü belirtin.
 
-- Güvenli bir .netmodule modülü ise modülü bağlayıcıya doğrudan geçirin.
+- Modül güvenli bir. netmodule ise, modülü doğrudan bağlayıcıya geçirin.
 
-Daha fazla bilgi için [assemblymodule (derlemeye MSIL Modülü Ekle)](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md) ve [bağlayıcı girişi olarak .netmodule dosyaları](../../build/reference/netmodule-files-as-linker-input.md).
+Daha fazla bilgi için, bkz. [/ASSEMBLYMODULE (DERLEMEYE MSIL Modülü ekleme)](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md) ve [. netmodule dosyaları bağlayıcı girişi olarak](../../build/reference/netmodule-files-as-linker-input.md).

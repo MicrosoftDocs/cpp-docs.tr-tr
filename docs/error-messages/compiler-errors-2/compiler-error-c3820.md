@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3820
+title: Derleyici hatası C3820
 ms.date: 11/04/2016
 f1_keywords:
 - C3820
 helpviewer_keywords:
 - C3820
 ms.assetid: 98638838-068f-4a62-b8d5-1068368a0ff1
-ms.openlocfilehash: 9472c080f9cb63198843e774ffb450f5f67d7e58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b6af6b665f3b9bc7d5aa12e7aa2096e17a158be
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384276"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165606"
 ---
-# <a name="compiler-error-c3820"></a>Derleyici Hatası C3820
+# <a name="compiler-error-c3820"></a>Derleyici hatası C3820
 
-'name': başlatıcıların yönetilmesi gerekir
+' name ': başlatıcıların yönetilmesi gerekir
 
-*Adı* yönetilen bir tür için Başlatıcı ayrıca yönetilmelidir.
+Yönetilen bir tür için *ad* başlatıcısı da yönetilmelidir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Yönetilen Başlatıcı yöntemini belirtin.
+1. Yönetilen bir başlatıcı yöntemi belirtin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -29,12 +29,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: bbeae4faad4d650d8dc44a61a22b1fcc63a0bc15
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 3498ec1250d9443007acb3b12ec25983a71587d0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441038"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211113"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
@@ -76,7 +76,7 @@ Bu sınıfın çoğu bir uygulama ayrıntısıyla yapılır.
 
 Özellik kümesi eşlemesinde kullanılan makrolar hakkında daha fazla bilgi için bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) ve [END_PROPSET_MAP](../../data/oledb/end-propset-map.md).
 
-## <a name="getpropvalue"></a>CUtlProps:: GetPropValue
+## <a name="cutlpropsgetpropvalue"></a><a name="getpropvalue"></a>CUtlProps:: GetPropValue
 
 Özellik kümesinden bir özellik alır.
 
@@ -103,7 +103,7 @@ dışı Yeni özellik değerini içeren bir varyant işaretçisi.
 
 hata `Failure` ve başarılı olursa S_OK.
 
-## <a name="isvalidvalue"></a>CUtlProps:: IsValidValue
+## <a name="cutlpropsisvalidvalue"></a><a name="isvalidvalue"></a>CUtlProps:: IsValidValue
 
 Bir özelliği ayarlamadan önce bir değeri doğrulamak için kullanılır.
 
@@ -130,7 +130,7 @@ Standart HRESULT. Varsayılan dönüş değeri S_OK.
 
 Bir özelliği ayarlamak için kullanmak üzere olduğunuz bir değer üzerinde çalıştırmak istediğiniz doğrulama yordamlarınızın varsa, bu işlevi geçersiz kılmanız gerekir. Örneğin, geçerli bir değeri belirleyebilmek için parola tablosuna karşı DBPROP_AUTH_PASSWORD doğrulayabilirsiniz.
 
-## <a name="oninterfacerequested"></a>CUtlProps:: Onınterfacerequyilmiş
+## <a name="cutlpropsoninterfacerequested"></a><a name="oninterfacerequested"></a>CUtlProps:: Onınterfacerequyilmiş
 
 Bir tüketici nesne oluşturma arabirimlerinden birindeki bir yöntemi çağırdığında isteğe bağlı bir arabirim için istekleri işler.
 
@@ -165,7 +165,7 @@ Bir tüketici bir nesne açarsa ve isteğe bağlı bir arabirim isterse, sağlay
 
 Diğer arabirimleri işlemek istiyorsanız, işlevleri işlemek için veri kaynağınız, oturum, komut veya satır kümesi sınıfınıza bu işlevi geçersiz kılın. Geçersiz kılma özelliği, ayar özelliklerinin aynı zamanda zincirleme özellikleri de ayarlayadiğinden emin olmak için normal set/Get özellikleri arabirimlerini almalıdır (bkz. [OnPropertyChanged](../../data/oledb/cutlprops-onpropertychanged.md)).
 
-## <a name="onpropertychanged"></a>CUtlProps:: OnPropertyChanged
+## <a name="cutlpropsonpropertychanged"></a><a name="onpropertychanged"></a>CUtlProps:: OnPropertyChanged
 
 Zincirleme özelliklerini işlemek için bir özellik ayarlandıktan sonra çağırılır.
 
@@ -198,7 +198,7 @@ Bu işlevde, Kullanıcı `DBPROP*` parametresindeki Özellik KIMLIĞINI alır. �
 
 [!code-cpp[NVC_OLEDB_Provider#2](../../data/oledb/codesnippet/cpp/cutlprops-onpropertychanged_1.h)]
 
-## <a name="setpropvalue"></a>CUtlProps:: SetPropValue
+## <a name="cutlpropssetpropvalue"></a><a name="setpropvalue"></a>CUtlProps:: SetPropValue
 
 Özellik kümesindeki bir özelliği ayarlar.
 

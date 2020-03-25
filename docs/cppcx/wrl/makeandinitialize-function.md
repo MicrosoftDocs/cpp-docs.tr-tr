@@ -5,16 +5,16 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAndInitialize
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
-ms.openlocfilehash: 14ae5117194748748ceecf97ac83fc8813bba2d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28d9e586a766a131e7ab6280859845810c1d9814
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223111"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213804"
 ---
 # <a name="makeandinitialize-function"></a>MakeAndInitialize İşlevi
 
-Belirtilen Windows çalışma zamanı sınıf başlatır. Aynı modülde tanımlanmış bir bileşeni oluşturmak için bu işlevi kullanın.
+Belirtilen Windows Çalışma Zamanı sınıfını başlatır. Aynı modülde tanımlanmış bir bileşeni örneklemek için bu işlevi kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,35 +46,35 @@ HRESULT MakeAndInitialize(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Devralınan bir kullanıcı tarafından belirtilen sınıf `WRL::RuntimeClass`.
+*Şı*<br/>
+`WRL::RuntimeClass`devralan Kullanıcı tarafından belirtilen bir sınıf.
 
 *TArg1*<br/>
-1 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1 türü.
 
 *TArg2*<br/>
-2 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 2 türü.
 
 *TArg3*<br/>
-3 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 3 bağımsız değişkeninin türü.
 
 *TArg4*<br/>
-4 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 4 bağımsız değişkeninin türü.
 
 *TArg5*<br/>
-5 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 5 bağımsız değişkeninin türü.
 
 *TArg6*<br/>
-6 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 6 bağımsız değişkeninin türü.
 
 *TArg7*<br/>
-7 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 7 bağımsız değişkeninin türü.
 
 *TArg8*<br/>
-8 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 8 bağımsız değişkeninin türü.
 
 *TArg9*<br/>
-9 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
+Belirtilen çalışma zamanı sınıfına geçirilen 9 bağımsız değişkeninin türü.
 
 *arg1*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1.
@@ -82,17 +82,17 @@ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1.
 *arg2*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 2.
 
-*Arg3*<br/>
+*arg3*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 3.
 
-*Arg4*<br/>
-Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 4.
+*arg4*<br/>
+Belirtilen çalışma zamanı sınıfına geçirilen 4 bağımsız değişkeni.
 
 *arg5*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 5.
 
 *arg6*<br/>
-Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 6.
+Belirtilen çalışma zamanı sınıfına geçirilen 6 bağımsız değişkeni.
 
 *arg7*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 7.
@@ -105,17 +105,17 @@ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 9.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-HRESULT değerini.
+HRESULT değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [nasıl yapılır: Doğrudan WRL bileşenlerinin örneğini oluşturma](how-to-instantiate-wrl-components-directly.md) bu işlevi arasındaki farkları öğrenin ve [Microsoft::wrl:: Make](make-function.md)ve bir örnek.
+Bu işlev ile [Microsoft:: WRL:: Make](make-function.md)arasındaki farklılıkları öğrenmek için bkz. [nasıl yapılır: WRL bileşenlerini doğrudan örnek oluşturma](how-to-instantiate-wrl-components-directly.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - arithmetic operators [C++], additive operators
 - '- operator [C++], additive operators in C++'
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
-ms.openlocfilehash: be9e1830ea44223aa46ad9a7f5c6cee6734fa9e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 739132ce1889b7e73b7ae19f5072a1dfec9c066d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385056"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181674"
 ---
 # <a name="additive-operators--and--"></a>Ek İşleçler: + and -
 
@@ -30,41 +30,41 @@ expression - expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ek işleçler şunlardır:
+Toplama işleçleri şunlardır:
 
-- Toplama (**+**)
+- Ekleme ( **+** )
 
-- Çıkarma (**-**)
+- Çıkarma ( **-** )
 
 Bu ikili işleçlerde soldan sağa ilişkilendirilebilirlik vardır.
 
-Ek işleçler işlenenlerin aritmetik veya işaretçi türü yararlanın. Toplamın sonucunu (**+**) işleci işlenenler toplamıdır. Çıkarma işleminin sonucu (**-**) işlecinin işlenenleri arasındaki fark olarak. Bir veya iki işlenen de işaretçiyse, nesneler için değil, işlev işaretçileri olmaları gerekir. Her iki işlenen de işaretçiyse, her ikisi de aynı dizide nesne işaretçileri olmadığı sürece sonuç anlamlı değildir.
+Adal işleçleri aritmetik veya işaretçi türündeki işlenenleri alır. Toplama ( **+** ) işlecinin sonucu, işlenenlerinin toplamıdır. Çıkarma ( **-** ) işlecinin sonucu işlenen arasındaki farktır. İşlenenlerinin bir veya her ikisi işaretçiler ise, işlevlere değil, nesnelere işaretçiler olmalıdır. Her iki işlenen de işaretçiler ise, her ikisi de aynı dizideki nesnelere işaretçiler olmadığı takdirde sonuçlar anlamlı değildir.
 
-Toplama işleçleri ele işleneni *aritmetik*, *integral*, ve *skaler* türleri. Bunlar aşağıdaki tabloda tanımlanır.
+Toplama işleçleri *Aritmetik*, *integral*ve *skaler* türlerin işlenenlerini alır. Bunlar aşağıdaki tabloda tanımlanmıştır.
 
-### <a name="types-used-with-additive-operators"></a>Toplama işleçleri ile kullanılan türler
+### <a name="types-used-with-additive-operators"></a>Toplamalı Işleçlerle kullanılan türler
 
-|Tür|Açıklama|
+|Tür|Anlamı|
 |----------|-------------|
-|*Aritmetik*|İntegral ve kayan türler topluca "aritmetik" türleri adı verilir.|
-|*tam sayı*|Tür char ve tüm boyutları (uzun, kısa) ve numaralandırmalar int "tümleşik" türleridir.|
-|*skaler*|Skaler işlenen, aritmetik veya işaretçi türünde işlenenler ' dir.|
+|*tiğinin*|Integral ve kayan türler topluca "aritmetik" türler olarak adlandırılır.|
+|*tam*|Her boyuttaki char ve int (Long, short) ve numaralandırmalar türleri "integral" türleridir.|
+|*ler*|Skalar işlenenler, aritmetik ya da işaretçi türünün işlenenleri.|
 
-Bu işleçler için yasal birleşimleridir:
+Bu işleçler için yasal birleşimler şunlardır:
 
-*aritmetik* + *aritmetik*
+*aritmetik* + *Aritmetik*
 
-*skaler* + *tamsayı*
+*skaler* + *integrali*
 
 *integral* + *skaler*
 
-*aritmetik* - *aritmetik*
+*aritmetik* - *Aritmetik*
 
 *skaler* - *skaler*
 
-Toplama ve çıkarma eşdeğer operations olmadığına dikkat edin.
+Toplama ve çıkarma işlemlerinin eşdeğer işlemler olmadığına unutmayın.
 
-Her iki işlenen de aritmetik türde ise, içinde kapsanan dönüştürmeler [standart dönüştürmeler](standard-conversions.md) işlenenlere uygulanır ve sonuç dönüştürülmüş türü verir.
+Her iki işlenen de aritmetik bir tür ise, [Standart dönüştürmelerde](standard-conversions.md) kapsanan dönüştürmeler işlenenlere uygulanır ve sonuç, dönüştürülmüş tür olur.
 
 ## <a name="example"></a>Örnek
 
@@ -86,7 +86,7 @@ int main() {
 }
 ```
 
-## <a name="pointer-addition"></a>İşaretçi toplama
+## <a name="pointer-addition"></a>İşaretçi ekleme
 
 Ek bir işlem içinde, işlenenlerden biri nesneleri içeren bir dizinin işaretçisi ise, diğeri tamsayı türünde olmalıdır. Sonuç, özgün işaretçi ile aynı türde ve başka bir dizi öğesine işaret eden bir işaretçidir. Aşağıdaki kod parçası bu kavramı gösterir:
 
@@ -109,9 +109,9 @@ for( int i = 0; i < 10; ++i )
 
 ## <a name="pointer-subtraction"></a>İşaretçi çıkarması
 
-Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi türü işaretli integral sonucunu verir `ptrdiff_t` (standart içerme dosyasında tanımlanan \<stddef.h >).
+Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi `ptrdiff_t` türünde imzalı bir integral sonucu verir (Standart içerme dosyasında \<stddef. h >).
 
-İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Bir işaretçi çıkarma değeri (*n* - *miyim*) dizi öğesinin, burada *n* öğe için veorijinalişaretçitarafındanişaretedilen*miyim* ikinci işleneni integral değeridir.
+İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma değeri, (*n* - *i*). Array öğesinin bir işaretçisidir; burada *n* , özgün işaretçinin gösterdiği öğe ve ikinci işlenenin *integral değeridir.*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - licensed attribute
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
-ms.openlocfilehash: 0c637f9e3f6d99b9f197474f49a1a9843744f38b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 49585a697c7880da27357ebcafce9c5cefd89fd2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514457"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214766"
 ---
 # <a name="licensed"></a>lisanslı
 
-Geçerli olduğu COM nesnesinin lisanslandığını ve kullanılarak `IClassFactory2`örneğinin oluşturulması gerektiğini gösterir.
+Geçerli olduğu COM nesnesinin lisanslandığını ve `IClassFactory2`kullanılarak oluşturulması gerektiğini gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,7 +57,7 @@ public:
 |**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|`coclass`|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

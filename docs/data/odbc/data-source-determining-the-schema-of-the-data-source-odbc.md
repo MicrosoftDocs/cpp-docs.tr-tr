@@ -1,23 +1,23 @@
 ---
-title: 'Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme'
+title: 'Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC data sources [C++], schema
 - schemas [C++], data sources
 - data sources [C++], determining schema
 ms.assetid: 17284acb-eb10-4f27-9944-ad1d973c0b05
-ms.openlocfilehash: c419a3ac2d870e6a85675492ee6c9b726427a0e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60ed77ec8870ba80832d4f8c73a8362062dc9c2a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395982"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213323"
 ---
-# <a name="data-source-determining-the-schema-of-the-data-source-odbc"></a>Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme
+# <a name="data-source-determining-the-schema-of-the-data-source-odbc"></a>Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Veri üyeleri ayarlamak için `CRecordset` nesnelerini bağlanmakta veri kaynağının şemasını bilmeniz gerekir. Bir veri kaynağının şemasını belirleme, alma veri kaynağındaki tabloların bir listesini, her tablo sütunları, her bir sütunun veri türünü listesini ve tüm dizinlerin varlığını içerir.
+`CRecordset` nesnelerinizin veri üyelerini ayarlamak için, bağlanmakta olduğunuz veri kaynağının şemasını bilmeniz gerekir. Bir veri kaynağının şemasını belirlemek, veri kaynağındaki tabloların bir listesini, her bir tablodaki sütunların listesini, her bir sütunun veri türünü ve tüm dizinlerin varlığını içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

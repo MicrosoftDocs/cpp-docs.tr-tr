@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4936
 ms.assetid: 6676de35-bf1b-4d0b-a70f-b5734130336c
-ms.openlocfilehash: bbb69cccbf93be6e97d13db5008780f57e63f9da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6d54cf8b6704eec2a9e6af890c5c80c67106995
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280860"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165008"
 ---
 # <a name="compiler-warning-c4936"></a>Derleyici Uyarısı C4936
 
-> Bu __declspec yalnızca/CLR veya/CLR ile derlendiğinde desteklenir: Saf
+> Bu __declspec yalnızca/CLR veya/clr: Pure ile derlendiğinde desteklenir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-A `__declspec` değiştiricisi, ancak kullanıldı `__declspec` değiştiricisi geçerlidir yalnızca biri ile derlendiğinde [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) seçenekleri.
+`__declspec` değiştiricisi kullanıldı, ancak bu `__declspec` değiştirici yalnızca [/clr](../../build/reference/clr-common-language-runtime-compilation.md) seçeneklerinden biri ile derlendiğinde geçerlidir.
 
-Daha fazla bilgi için [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).
+Daha fazla bilgi için bkz. [AppDomain](../../cpp/appdomain.md) ve [Process](../../cpp/process.md).
 
-C4936 her zaman hata olarak verilir.  İle C4936 devre dışı bırakabilirsiniz [uyarı](../../preprocessor/warning.md) pragması.
+C4936 her zaman bir hata olarak verilir.  C4936 [Uyarı](../../preprocessor/warning.md) pragması ile devre dışı bırakabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4936 oluşturur:
+Aşağıdaki örnek C4936 oluşturur:
 
 ```cpp
 // C4936.cpp

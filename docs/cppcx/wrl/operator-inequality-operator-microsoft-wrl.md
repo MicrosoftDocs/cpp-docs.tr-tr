@@ -5,16 +5,16 @@ ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator!=
 ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
-ms.openlocfilehash: 6068a7ddad78e3347f6987b30cc2884dc3f648fd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7780ecd8d03be6fea4ffe3c0be17ed6e995e3f90
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232266"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213664"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator!= İşleç (Microsoft::WRL)
 
-Eşitsizlik işleci için [ComPtr](comptr-class.md) ve [ComPtrRef](comptrref-class.md) nesneleri.
+[ComPtr](comptr-class.md) ve [ComPtrRef](comptrref-class.md) nesneleri için eşitsizlik işleci.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,18 +58,18 @@ WRL_NOTHROW bool operator!=(
 *a*<br/>
 Sol nesne.
 
-*b*<br/>
+*kenarı*<br/>
 Doğru nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneleri değilse, eşit; Aksi takdirde **false**.
+Nesneler eşit değilse **true** ; Aksi takdirde, **false**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** client.h
+**Üstbilgi:** Client. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - C4683
 ms.assetid: e6e77364-dba1-46dd-ae1d-03da23070bce
-ms.openlocfilehash: 264753ece6cbabded21df8e6b9dbb463f811e8a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f86cf8f6d894d6efaa1b49977634956dc1979a98
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375164"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175435"
 ---
 # <a name="compiler-warning-level-1-c4683"></a>Derleyici Uyarısı (düzey 1) C4683
 
-> '*işlevi*': olay kaynağı olan bir 'out'-parametre; birden çok olay işleyicisi yakalarken dikkatli olun
+> '*Function*': olay kaynağında ' out' parametresi vardır; birden çok olay işleyicisini gönderirken dikkatli olun
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birden fazla olay havuz bir COM Olay kaynağına dinliyorsa, out parametresi değerini yoksayılabilir.
+Birden fazla olay havuzu bir COM olay kaynağını dinliyorsa, bir out parametresinin değeri yoksayılabilir.
 
-Bir bellek sızıntısı aşağıdaki durumlarda oluşur dikkat edin:
+Aşağıdaki durumlarda bir bellek sızıntısı oluşması gerektiğini unutmayın:
 
-1. Bir yöntemi dahili olarak, örneğin bir BSTR ayrılan out parametresi varsa *.
+1. Bir yöntemde iç ayrılmış bir out parametresi varsa, örneğin bir BSTR *.
 
-2. Olay işleyicisine birden fazla varsa (bir çok noktaya yayın olay değer).
+2. Olayda birden fazla işleyici varsa (çok noktaya yayın olayıdır).
 
-Out parametresi birden fazla işleyici tarafından ayarlanmış, ancak çağrı sitesine yalnızca son işleyici tarafından döndürülen, sızıntı nedeni.
+Sızıntı nedeni Out parametresinin birden fazla işleyici tarafından ayarlanmasının, ancak yalnızca son işleyicinin çağrı sitesine döndürüldüğünden olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4683 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4683 oluşturur ve nasıl düzeltileceğini gösterir:
 
 ```cpp
 // C4683.cpp

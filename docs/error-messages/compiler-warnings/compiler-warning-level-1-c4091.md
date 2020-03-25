@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-ms.openlocfilehash: ce6dd980ef70f129a0dbae474b8f717f7573f861
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 8c373ad1eba07337dc970cb84202370c147560dd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626747"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80163916"
 ---
 # <a name="compiler-warning-level-1-c4091"></a>Derleyici Uyarısı (düzey 1) C4091
 

@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::RuntimeClassBase
 ms.assetid: 6ada4f81-a857-488a-ad56-8d0b11ccbfcc
-ms.openlocfilehash: 80762a7a2cfdc5c630a42627b8cfd8323f3567eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29bcf37ce9bd524dfe09823e00fda4d41eedaf52
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403184"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213596"
 ---
 # <a name="runtimeclassbase-structure"></a>RuntimeClassBase Yapısı
 
@@ -24,7 +24,7 @@ struct RuntimeClassBase;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Algılamak için kullanılan `RuntimeClass` içinde [olun](make-function.md) işlevi.
+[Make](make-function.md) işlevindeki `RuntimeClass` algılamak için kullanılır.
 
 **RuntimeClassBase** boş bir yapıdır.
 
@@ -34,9 +34,9 @@ Algılamak için kullanılan `RuntimeClass` içinde [olun](make-function.md) iş
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,31 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - D9024
 ms.assetid: daf4896d-223d-4af0-9b6d-89109cf3d1bb
-ms.openlocfilehash: c577aceacef748045f867a6bc253a1dd6c84aafe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5de051b9ca5c09af74b94be4b75616bce6fadf2c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214161"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196766"
 ---
 # <a name="command-line-warning-d9024"></a>Komut Satırı Uyarısı D9024
 
-Tanınmayan kaynak dosyası türü 'filename', nesne dosyası varsayıldı
+Tanınmayan kaynak dosyası türü ' filename ', nesne dosyası varsayıldı
 
-Belirtilen dosya uzantısı tanınmıyor. Dosya bir nesne dosyası varsayıldı ve bağlayıcıya geçirildi.
+Belirtilen dosyanın uzantısı tanınmadı. Dosyanın bir nesne dosyası olduğu varsayılır ve bağlayıcıya geçildi.
 
-Aşağıdaki uzantılar tanınmaktadır:
+Aşağıdaki uzantılar tanınıyor:
 
-- .c (C kaynak dosyası)
+- . c (C kaynak dosyası)
 
-- .cxx (C++ kaynak dosyası)
+- . cxx (C++ kaynak dosyası)
 
-- .cpp (C++ kaynak dosyası)
+- . cpp (C++ kaynak dosyası)
 
-- .obj (nesne dosya)
+- . obj (nesne dosyası)
 
-- .lib (kitaplık dosyası)
+- . lib (kitaplık dosyası)
 
-- .def (modül tanım dosyası)
+- . def (modül tanım dosyası)
 
-- .exp (bağlantı/lib tarafından oluşturulan dosya, bağlayıcı dışarı aktarır)
+- . exp (bağlayıcı dışa aktarma dosyası, bağlantı/LIB tarafından oluşturulur)

@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4089
 ms.assetid: 7c8f929b-9bf9-4063-9b7e-4affd98c1acc
-ms.openlocfilehash: 62dc060876145e7d2f8652fefe1738d149d1cf4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3758326ef6e3574b54c858031b8041d8f57cd350
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280535"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80163955"
 ---
 # <a name="compiler-warning-level-1-c4089"></a>Derleyici Uyarısı (düzey 1) C4089
 
-'function': Gerçek parametre 'number', 'number' biçimsel parametresi içinde farklı türler
+' function ': gerçek parametre ' number ' içinde farklı türler, biçimsel parametre ' number '
 
-Karşılık gelen biçimsel ve fiili parametreleri farklı türlere sahip. Gerçek parametre değişmeden geçirilir. İşlevin gerçek parametre işlev tanımında belirtilen türe çevirir.
+Karşılık gelen biçimsel ve gerçek parametrelerin türleri farklı. Gerçek parametre değişiklik olmadan geçirilir. İşlevi, gerçek parametreyi işlev tanımında belirtilen türe yayınlar.

@@ -3,12 +3,12 @@ title: Evrensel Windows Uygulamaları (C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.topic: overview
-ms.openlocfilehash: cd90f76cf2ee9b4ca9cb2ceea970cd24b0bf24cf
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 500aa5337382cfb5aca4d4c8d1774d256498d0a0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079907"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214296"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 

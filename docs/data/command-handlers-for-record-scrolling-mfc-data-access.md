@@ -1,21 +1,21 @@
 ---
-title: Kayıt (MFC veri erişimi) kaydırma için komut işleyicileri
+title: Kayıt kaydırma için komut Işleyicileri (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - record views [C++], scrolling
 - record scrolling [C++]
 - scrolling records
 ms.assetid: f8b13477-2a37-459e-a30c-806fb78165ac
-ms.openlocfilehash: 66944221910dbd23d78a78fc951030efbee86bd0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8bbacd6625e846381d2bafc8133e8b36efe51b1a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398052"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213453"
 ---
-# <a name="command-handlers-for-record-scrolling--mfc-data-access"></a>Kayıt (MFC veri erişimi) kaydırma için komut işleyicileri
+# <a name="command-handlers-for-record-scrolling--mfc-data-access"></a>Kayıt kaydırma için komut Işleyicileri (MFC veri erişimi)
 
-[CRecordView](../mfc/reference/crecordview-class.md) sınıf varsayılan komut işleme için standart aşağıdakileri sağlar:
+[CRecordView](../mfc/reference/crecordview-class.md) sınıfı aşağıdaki standart komutlar için varsayılan komut işleme sağlar:
 
 - ID_RECORD_MOVE_FIRST
 
@@ -25,11 +25,11 @@ ms.locfileid: "62398052"
 
 - ID_RECORD_MOVE_PREV
 
-`OnMove` Üye işlevini varsayılan komut kayda gelen tüm dört komutları için işleme sağlar. Bu komutları verildiğinde RFX (veya DFX) yeni bir kayıt kümesinin alanlarına yükler ve DDX kayıt formun denetimlere değerlerini taşır. RFX hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md).
+`OnMove` member işlevi, kayıttan kayda geçiş yapılan dört komut için varsayılan komut işleme sağlar. Bu komutlar verildiğinde, RFX (veya DFX) kayıt kümesinin alanlarına yeni kaydı yükler ve DDX değerleri kayıt formu denetimlerine taşıır. RFX hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md).
 
 > [!NOTE]
->  Standart kayıt gezinti komutları ile ilişkili herhangi bir kullanıcı arabirimi nesneleri için bu standart komut kimlikleri kullandığınızdan emin olun.
+>  Standart kayıt gezintisi komutlarıyla ilişkili kullanıcı arabirimi nesneleri için bu standart komut kimliklerini kullandığınızdan emin olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayıt Görünümünde Gezintiyi Destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)
+[Bir kayıt görünümünde Gezintiyi Destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)

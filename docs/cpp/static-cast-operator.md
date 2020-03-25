@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-ms.openlocfilehash: dca6d5297379e6ddc1c70dba80f35f2f55672e49
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37708bf50b28eb120af8e8a79e770c3121e6f509
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267134"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178593"
 ---
-# <a name="staticcast-operator"></a>static_cast İşleci
+# <a name="static_cast-operator"></a>static_cast İşleci
 
-Dönüştürür bir *ifade* türüne *tür kimliği* yalnızca ifadede bulunan türlere göre.
+*İfadeyi* yalnızca ifadede bulunan türlere göre *tür kimliği* türüne dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,13 +25,13 @@ static_cast <type-id> ( expression )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart C++ kapsamında, dönüştürmenin güvenliğini sağlamaya yardımcı olmak için bir çalışma zamanı tür denetimi yapılmaz. C++/CX kapsamında, derleme zamanı ve çalışma zamanı denetimi gerçekleştirilir. Daha fazla bilgi için [atama](casting.md).
+Standart C++ kapsamında, dönüştürmenin güvenliğini sağlamaya yardımcı olmak için bir çalışma zamanı tür denetimi yapılmaz. C++/CX kapsamında, derleme zamanı ve çalışma zamanı denetimi gerçekleştirilir. Daha fazla bilgi için bkz. [atama](casting.md).
 
-**Static_cast** işleci, bir temel sınıftan türetilmiş bir sınıf işaretçisine dönüştürme gibi işlemler için kullanılabilir. Bu tür dönüştürmeler her zaman güvenli değildir.
+**Static_cast** işleci, bir işaretçiyi taban sınıfına türetilmiş bir sınıfa bir işaretçiye dönüştürme gibi işlemler için kullanılabilir. Bu tür dönüştürmeler her zaman güvenli değildir.
 
-Genel olarak kullandığınız **static_cast** tamsayılara ya da tamsayıları kayanlara float'ların ve numaralandırmalar gibi sayısal veri türlerini dönüştürmek istediğinizde belirli veri türlerinin ve dönüştürmeye dahil. **static_cast** dönüştürmeleri kadar güvenli olmayan **dynamic_cast** dönüştürmeler, çünkü **static_cast** hiçbir çalışma zamanı tür denetimi yapmadığından **dynamic_cast** yapar. A **dynamic_cast** belirsiz bir işaretçiye başarısız olur, ancak bir **static_cast** hiçbir şey yanlış; bu tehlikeli olabilir değilmiş gibi döndürülürken. Ancak **dynamic_cast** dönüştürmeleri daha güvenli, **dynamic_cast** yalnızca çalışır işaretçiler veya başvurular ve çalışma zamanı tür denetimi bir ek yüktür. Daha fazla bilgi için [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).
+Genel olarak, numaralandırmalar gibi sayısal veri türlerini yukarı ve aşağı kaylar halinde dönüştürmek istediğinizde **static_cast** kullanırsınız ve dönüştürmeye dahil olan veri türlerinden emin olursunuz. **static_cast** dönüştürmeleri **dynamic_cast** dönüştürmeleri kadar güvenli değildir, çünkü **static_cast** hiçbir çalışma zamanı tür denetimi yapmaz, **dynamic_cast** sırasında. Belirsiz bir işaretçiye **dynamic_cast** başarısız olur, ancak bir **static_cast** yanlış bir değer olmadığı gibi döndürülür; Bu tehlikeli olabilir. **Dynamic_cast** dönüştürmeleri daha güvenli olsa da, **dynamic_cast** yalnızca işaretçiler veya başvurular üzerinde çalışır ve çalışma zamanı tür denetimi bir ek yüktür. Daha fazla bilgi için bkz. [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).
 
-Satırın aşağıdaki örnekteki `D* pd2 = static_cast<D*>(pb);` güvenli değildir çünkü `D` alanları ve olmayan yöntemleri olabilir `B`. Ancak, satır `B* pb2 = static_cast<B*>(pd);` güvenli bir dönüştürmedir `D` her zaman tüm içeren `B`.
+Aşağıdaki örnekte satır `D* pd2 = static_cast<D*>(pb);` güvenli değildir, çünkü `D` `B`olmayan alanlar ve yöntemlere sahip olabilir. Ancak, `D` her zaman tüm `B`içerdiği için satır `B* pb2 = static_cast<B*>(pd);` güvenli bir dönüştürmedir.
 
 ```cpp
 // static_cast_Operator.cpp
@@ -49,9 +49,9 @@ void f(B* pb, D* pd) {
 }
 ```
 
-Tersine [dynamic_cast](../cpp/dynamic-cast-operator.md), hiçbir çalışma zamanı denetimi yapılmaz **static_cast** dönüştürülmesi `pb`. Nesne tarafından işaret edilen `pb` türünde bir nesne olmayabilir `D`, bu durumda kullanımını `*pd2` çok kötü sonuçlar doğurabilir. Örneğin, bir üyesi olan bir işlevi çağırmak `D` sınıfının değil, `B` sınıfı, bir erişim ihlali ile sonuçlanabilir.
+[Dynamic_cast](../cpp/dynamic-cast-operator.md)aksine, `pb`**static_cast** dönüştürmesi üzerinde hiçbir çalışma zamanı denetimi yapılmaz. `pb` tarafından işaret edilen nesne `D`türünde bir nesne olmayabilir, bu durumda `*pd2` kullanımı felaket olabilir. Örneğin, `D` sınıfının üyesi olan, ancak `B` sınıfı olmayan bir işlevi çağırmak, erişim ihlaline neden olabilir.
 
-**Dynamic_cast** ve **static_cast** işleçleri bir işaretçiyi bir sınıf hiyerarşisi boyunca taşır. Ancak, **static_cast** özellikle cast deyiminde sağlanan bilgilere dayanır ve bu nedenle güvenli olmayabilir. Örneğin:
+**Dynamic_cast** ve **static_cast** işleçleri bir işaretçiyi bir sınıf hiyerarşisi boyunca taşır. Ancak **static_cast** , özel olarak cast ifadesinde belirtilen bilgilere bağımlıdır ve bu nedenle güvenli olmayabilir. Örneğin:
 
 ```cpp
 // static_cast_Operator_2.cpp
@@ -68,15 +68,15 @@ void f(B* pb) {
 }
 ```
 
-Varsa `pb` gerçekten, türü bir nesneye işaret `D`, ardından `pd1` ve `pd2` aynı değeri alacaktır. Bunlar ayrıca aynı değeri alırsa `pb == 0`.
+`pb` gerçekten `D`türündeki bir nesneye işaret ediyorsa, `pd1` ve `pd2` aynı değeri alır. `pb == 0`aynı değeri de alır.
 
-Varsa `pb` türündeki bir nesneye işaret `B` tam `D` sınıfını **dynamic_cast** öğesi sıfır döndürmek yeterince bilgi sahibi olacaktır. Ancak, **static_cast** Programcı onayına güvenir, `pb` türündeki bir nesneye işaret `D` ve konusu yalnızca işaretçi döndüren `D` nesne.
+`pb`, tüm `D` sınıfına değil `B` türünde bir nesneye işaret ediyorsa, **dynamic_cast** sıfır döndürmek için yeterince haberdar olur. Ancak, **static_cast** `pb` programcı onayını kullanır ve bu, `D` türünde bir nesneye işaret eder ve yalnızca bu beklenen `D` nesnesine bir işaretçi döndürür.
 
-Sonuç olarak, **static_cast** örtük dönüştürmelerin tersini yapabilir, bu durumda sonuçlar tanımsızdır. Sonuçları olduğunu doğrulamak programcıya bırakılır bir **static_cast** güvenli.
+Sonuç olarak, **static_cast** örtük dönüştürmelerin tersini yapabilir, bu durumda sonuçlar tanımsız olur. **Static_cast** dönüştürmenin sonuçlarının güvenli olduğunu doğrulamak için programcıya kalmıştır.
 
-Bu davranış, sınıf türleri dışındaki türler için de geçerlidir. Örneğin, **static_cast** int'e dönüştürmek için kullanılan bir **char**. Ancak, elde edilen **char** tamamını tutmak için yeterli bite sahip olmayabilir **int** değeri. Bu sonuçları olduğunu doğrulamak programcıya yeniden bırakılır bir **static_cast** güvenli.
+Bu davranış, sınıf türleri dışındaki türler için de geçerlidir. Örneğin, **static_cast** bir int 'ten **char**'a dönüştürmek için kullanılabilir. Ancak, sonuçta elde edilen **char** , tüm **int** değerini tutacak kadar bitmeyebilir. Ayrıca, bir **static_cast** dönüştürmenin sonuçlarının güvenli olduğunu doğrulamak için programcıda kalır.
 
-**Static_cast** işleci ayrıca standart dönüştürmeler veya kullanıcı tanımlı dönüştürmeler de dahil olmak üzere herhangi bir örtük dönüştürmeyi gerçekleştirmek için kullanılabilir. Örneğin:
+**Static_cast** işleci, standart dönüşümler ve Kullanıcı tanımlı dönüştürmeler de dahil olmak üzere herhangi bir örtük dönüştürmeyi gerçekleştirmek için de kullanılabilir. Örneğin:
 
 ```cpp
 // static_cast_Operator_3.cpp
@@ -95,15 +95,15 @@ void f() {
 }
 ```
 
-**Static_cast** işleci bir tamsayı değeri açıkça bir sayma türüne dönüştürebilir. Tamsayı türünün değeri, numaralandırma değerleri aralığı içinde kalmıyorsa, sonuç olarak elde edilen numaralandırma değeri tanımsızdır.
+**Static_cast** işleci, tam olarak bir integral değeri bir numaralandırma türüne dönüştürebilir. Tamsayı türünün değeri, numaralandırma değerleri aralığı içinde kalmıyorsa, sonuç olarak elde edilen numaralandırma değeri tanımsızdır.
 
-**Static_cast** işlecini bir null işaretçi değeri hedef türünün boş işaretçi değerine dönüştürür.
+**Static_cast** işleci, null işaretçi değerini hedef türün null işaretçi değerine dönüştürür.
 
-Herhangi bir ifade tarafından void türüne açıkça dönüştürülebilir **static_cast** işleci. Hedef void türü isteğe bağlı olarak içerebilir **const**, **geçici**, veya **__unaligned** özniteliği.
+Herhangi bir ifade, **static_cast** işleci tarafından void türüne açıkça dönüştürülebilir. Hedef void türü, isteğe bağlı olarak **const**, **volatile**veya **__unaligned** özniteliğini içerebilir.
 
-**Static_cast** işleci beklenmedik şekilde atayamaz **const**, **geçici**, veya **__unaligned** öznitelikleri. Bkz: [const_cast işleci](../cpp/const-cast-operator.md) bu öznitelikleri kaldırma hakkında bilgi için.
+**Static_cast** işleci **const**, **volatile**veya **__unaligned** özniteliklerinin üzerine atanamaz. Bu öznitelikleri kaldırma hakkında bilgi için bkz. [Const_cast işleci](../cpp/const-cast-operator.md) .
 
-**C++/CLI:** Yeniden konumlandırma atık Toplayıcıya, kullanımını üstte denetlenmeyen yayınlar gerçekleştirme tehlikesi nedeniyle **static_cast** düzgün çalışır emin olduğunuzda yalnızca performans açısından kritik kodda olmalıdır. Kullanmanız gerekirse **static_cast** yayın modunda ile yerine [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) başarı sağlamak için hata ayıklama yapılarınızda.
+**C++/CLI:** Bir yeniden konumlandırma Atık toplayıcısının üzerinde denetlenmeyen kayıtları gerçekleştirmeye yönelik tehlike, **static_cast** kullanımı, doğru şekilde çalışacağından emin olduğunuzda yalnızca performans açısından kritik kodda olmalıdır. Yayın modunda **static_cast** kullanmanız gerekiyorsa, başarılı olduğundan emin olmak için hata ayıklama derlemelerinizi [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) ile değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

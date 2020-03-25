@@ -6,29 +6,29 @@ helpviewer_keywords:
 - explicit parallelization
 - explicit parallelization, OpenMP in Visual C++
 ms.assetid: 54d8d0da-1f47-4312-9f25-5875c7dc08ed
-ms.openlocfilehash: 0aff645ce9b0edd3976abf8dd77fff8a79d3c545
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c792f94e675ba3f83b4aad8c180ede46770c6856
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362653"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215013"
 ---
 # <a name="openmp-in-visual-c"></a>Visual C++'da OpenMP
 
-OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden fazla işlemci kullanan uygulamalar yazmanıza olanak sağlar. Visual C++, OpenMP 2.0 standart destekler.
+OpenMP C ve C++ uygulama programı arabirimi, birden çok işlemciyi etkin bir şekilde kullanan uygulamalar yazmanızı sağlar. Görsel C++ , OpenMP 2,0 standardını destekler.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Kitaplık Başvurusu](../../parallel/openmp/reference/openmp-library-reference.md)<br/>
-OpenMP API çağrısında kullanılan yapıları bağlantılar sağlar.
+[Kitaplık başvurusu](../../parallel/openmp/reference/openmp-library-reference.md)<br/>
+OpenMP API 'sinde kullanılan yapıların bağlantılarını sağlar.
 
-[C ve C++ uygulaması Program arabirimi](../../parallel/openmp/openmp-c-and-cpp-application-program-interface.md)<br/>
-OpenMP C ve C++ API sürüm 2.0 belirtimi OpenMP mimarisini gözden geçirme panosundan açıklandığı gibi ele alınmaktadır.
+[C ve C++ uygulama programı arabirimi](../../parallel/openmp/openmp-c-and-cpp-application-program-interface.md)<br/>
+OpenMP mimarisi Inceleme panosundaki sürüm C++ 2,0 belirtiminde belgelendiği gibi, OpenMP C ve API 'sini açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [/openmp (OpenMP 2.0 Desteğini Etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)<br/>
-İşlenecek derleyicinin `#pragma omp`.
+Derleyicinin `#pragma omp`işlemesini sağlar.
 
 [Önceden Tanımlanmış Makrolar](../../preprocessor/predefined-macros.md)<br/>
-Önceden tanımlanmış ANSI C ve Microsoft C++ uygulama makrolarını adları. _OPENMP makrosu bakın.
+Önceden tanımlanmış ANSI C ve Microsoft C++ uygulama makrolarını adlandırır. _OPENMP makroya bakın.

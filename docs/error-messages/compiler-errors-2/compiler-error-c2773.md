@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2773
+title: Derleyici hatası C2773
 ms.date: 11/04/2016
 f1_keywords:
 - C2773
 helpviewer_keywords:
 - C2773
 ms.assetid: 8d564b26-1623-4d92-aabc-dff33f7b1145
-ms.openlocfilehash: dc4ff7174f6a801f0e1759ce8b4b306e74ec798a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 661c607183697b0ace12291d9d1305b262a80c6f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257211"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176994"
 ---
-# <a name="compiler-error-c2773"></a>Derleyici Hatası C2773
+# <a name="compiler-error-c2773"></a>Derleyici hatası C2773
 
-\#içeri aktarma ve #using yalnızca C++ derleyicisinde kullanılabilir
+\#içeri ve #using yalnızca C++ derleyicide kullanılabilir
 
-C Derleyici tanımadığı `#import` önişlemci yönergesi. Kaynak C++ derleyin. Kullanım [/TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) gerekirse.
+C derleyicisi `#import` Önişlemci yönergesini tanımıyor. Kaynağı olarak C++derleyin. Gerekirse [/TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) 'ı kullanın.

@@ -35,12 +35,12 @@ helpviewer_keywords:
 - resources [C++], templates
 - .rct files [C++]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
-ms.openlocfilehash: 93bee6319d356128f56c1886d395cf25db372e80
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 5527b7c46b728a4a009a56fca3fea52bf5ef9bf3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443877"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214428"
 ---
 # <a name="how-to-create-resources-c"></a>Nasıl yapılır: kaynak oluşturma (C++)
 

@@ -5,15 +5,15 @@ f1_keywords:
 - LNK1248
 helpviewer_keywords:
 - LNK1248
-ms.openlocfilehash: ec042251ef7cf6da5035d3d713927a46c87e3ac5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee399a50be129c8d471bd044ff338fb0950dce9e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160646"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183780"
 ---
 # <a name="linker-tools-error-lnk1248"></a>Bağlayıcı Araçları Hatası LNK1248
 
-> görüntü boyutu ('*boyutu*') (80000000) izin verilen boyut sınırını aşıyor
+> görüntü boyutu ('*Boyut*') izin verilen en büyük boyutu aşıyor (80000000)
 
-Bağlayıcı, çıkış dosyasının boyutu 32 bit program görüntüsü olası en büyük boyutunu aşacak belirledi. Birden çok DLL'lere programınızı yapmak isteyebilirsiniz.
+Bağlayıcı, çıkış dosyasının boyutunun 32 bitlik bir program görüntüsü için olası en büyük boyutu aşılacağından emin olduğunu belirledi. Programınızı birden çok dll 'ye yapmak isteyebilirsiniz.

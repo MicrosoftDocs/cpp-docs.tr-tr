@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)'
+title: 'Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - BLOB (binary large object), recordsets
@@ -8,59 +8,59 @@ helpviewer_keywords:
 - binary large objects
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
-ms.openlocfilehash: 3ba8d4af5b0781c425dd3b1223e2208b279f055e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b84365461ce6d45fccdf1922974feff5af93f99f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230988"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212764"
 ---
-# <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)
+# <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)
 
-Bu konuda, hem MFC ODBC sınıfları ve MFC DAO sınıflarına uygulanır.
+Bu konu, hem MFC ODBC sınıfları hem de MFC DAO sınıfları için geçerlidir.
 
 > [!NOTE]
->  MFC DAO sınıflarına kullanıyorsanız, büyük veri öğeleri sınıfı ile yönetme [CByteArray](../../mfc/reference/cbytearray-class.md) sınıfı yerine [CLongBinary](../../mfc/reference/clongbinary-class.md). MFC ODBC sınıfları toplu satır getirme ile kullanıyorsanız, `CLongBinary` yerine `CByteArray`. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  MFC DAO sınıflarını kullanıyorsanız, büyük veri öğelerinizi, [CLongBinary](../../mfc/reference/clongbinary-class.md)sınıfı yerine [CByteArray](../../mfc/reference/cbytearray-class.md) sınıfı ile yönetin. Toplu satır getirme ile MFC ODBC sınıfları kullanıyorsanız, `CByteArray`yerine `CLongBinary` kullanın. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Veritabanınızın büyük bit eşlemler (çalışan fotoğrafları, haritalar, resimler ürünleri, OLE nesneleri, vb.) gibi veri parçalarını depolayabilirsiniz varsayalım. Bu tür verilerin genellikle bir ikili büyük nesne (veya BLOB) çünkü adlandırılır:
+Veritabanınızın bit eşlemler (çalışan fotoğrafları, Haritalar, ürünlerin resimleri, OLE nesneleri vb.) gibi büyük miktarda veriyi depolayabildiğini varsayalım. Bu tür veriler genellikle Ikili büyük nesne (veya BLOB) olarak adlandırılır, çünkü:
 
-- Her bir alanın değeri büyük/küçük harf büyüktür.
+- Her alan değeri büyük.
 
-- Sayı ve diğer basit veri türleri farklı olarak, hiçbir öngörülebilir boyutu vardır.
+- Sayıların ve diğer basit veri türlerinin aksine, tahmin edilebilir bir boyuta sahip değildir.
 
-- Programınızı perspektifinden formless verilerdir.
+- Veri, programınızın perspektifinden formsuz.
 
-Bu konuda, bu tür nesneler ile çalışma için veritabanı sınıfları sağlar. hangi Destek Hizmetleri açıklanmaktadır.
+Bu konu, veritabanı sınıflarının bu tür nesnelerle çalışma sağladığı desteği açıklar.
 
-##  <a name="_core_managing_large_objects"></a> Büyük nesneler yönetme
+##  <a name="managing-large-objects"></a><a name="_core_managing_large_objects"></a>Büyük nesneleri yönetme
 
-Kayıt kümelerini yönetme ikili büyük nesneler özel zorluğunu çözmek için iki yolu vardır. Sınıf kullanabileceğiniz [CByteArray](../../mfc/reference/cbytearray-class.md) veya sınıf kullanabileceğiniz [CLongBinary](../../mfc/reference/clongbinary-class.md). Genel olarak, `CByteArray` büyük ikili verileri yönetmek için tercih edilen yoludur.
+Kayıt kümelerinin, ikili büyük nesneleri yönetmenin özel zorluğunu çözmenin iki yolu vardır. Sınıf [CByteArray](../../mfc/reference/cbytearray-class.md) ' i kullanabilir veya bir [CLongBinary](../../mfc/reference/clongbinary-class.md)sınıfı kullanabilirsiniz. Genel olarak, büyük ikili verileri yönetmek için tercih edilen yol `CByteArray`.
 
-`CByteArray` değerinden daha fazla ek yük gerektirir `CLongBinary` ancak açıklandığı gibi daha yetenekli [CByteArray sınıfı](#_core_the_cbytearray_class). `CLongBinary` kısa bir süre içinde açıklanan [CLongBinary sınıfı](#_core_the_clongbinary_class).
+`CByteArray`, `CLongBinary` daha fazla yük gerektirir ancak [CByteArray sınıfında](#_core_the_cbytearray_class)açıklandığı gibi daha yetenekli olur. `CLongBinary`, [CLongBinary sınıfında](#_core_the_clongbinary_class)kısaca açıklanmıştır.
 
-Kullanma hakkında ayrıntılı bilgi için `CByteArray` büyük veri öğeleri ile çalışmak için bkz [Teknik Not 45](../../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md).
+Büyük veri öğeleriyle çalışmak üzere `CByteArray` kullanma hakkında ayrıntılı bilgi için bkz. [teknik notta 45](../../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md).
 
-##  <a name="_core_the_cbytearray_class"></a> CByteArray sınıfı
+##  <a name="cbytearray-class"></a><a name="_core_the_cbytearray_class"></a>CByteArray sınıfı
 
-`CByteArray` MFC koleksiyon sınıfları biridir. A `CByteArray` nesnesini depolar dinamik bir bayt dizisi — dizi gerektiğinde büyüyebilir. Sınıfı, yerleşik C++ dizileri içeren dizine göre hızlı erişim sağlar. `CByteArray` nesneleri seri hale getirilmiş ve tanılama amacıyla yazılan. Sınıfı, alma ve belirtilen baytları, ekleme ve bayt ekleme ve bir bayt ya da tüm baytlar kaldırma için üye işlevlerini sağlar. Şu tesisler ikili veriyi ayrıştırmayı kolaylaştırır. Örneğin, ikili nesne bir OLE nesne ise, gerçek nesneye erişmek için üstbilgi baytlarıyla çalışmak gerekebilir.
+`CByteArray` MFC koleksiyon sınıflarından biridir. Bir `CByteArray` nesnesi dinamik bir bayt dizisini depolar — dizi gerektiğinde büyüyebilir. Sınıfı, yerleşik C++ diziler ile olduğu gibi, dizin tarafından hızlı erişim sağlar. `CByteArray` nesneler, tanılama amacıyla sıralanabilir ve dökülebilir. Sınıfı, belirtilen baytları alma ve ayarlama, bayt ekleme ve ekleme ve bir bayt ya da tüm baytları kaldırma için üye işlevleri sağlar. Bu tesisler, ikili verileri ayrıştırmayı daha kolay hale getirir. Örneğin, ikili nesne bir OLE nesneseniz, gerçek nesneye ulaşmak için bazı üst bilgi baytlarıyla çalışmanız gerekebilir.
 
-##  <a name="_core_using_cbytearray_in_recordsets"></a> CByteArray kayıt kümeleri içinde kullanma
+##  <a name="using-cbytearray-in-recordsets"></a><a name="_core_using_cbytearray_in_recordsets"></a>Kayıt kümelerinde CByteArray Kullanma
 
-Kümenizin alan veri üyesi tür vererek `CByteArray`, bir sabit temelden sağladığınız [RFX](../../data/odbc/record-field-exchange-rfx.md) aktarımını böyle bir nesnenin kümenizin ve veri kaynağı arasında ve değiştirebileceğiniz aracılığıyla yönetebilirsiniz veri nesnesi içinde. RFX belirli bir site için veri alındı gerekir ve temel alınan verilere erişmek için bir yönteme ihtiyacınız vardır.
+Kayıt kümenizin bir alan veri üyesini `CByteArray`türüne vererek, bu nesnenin kayıt kümeniz ile veri kaynağı arasında veya nesne içindeki verileri işleyebileceğiniz bir nesne aktarımını [yönetebileceği bir](../../data/odbc/record-field-exchange-rfx.md) sabit taban sağlarsınız. RFX alınan veriler için belirli bir siteye ihtiyaç duyar ve temel alınan verilere erişmeniz için bir yol gerekir.
 
-Kullanma hakkında ayrıntılı bilgi için `CByteArray` büyük veri öğeleri ile çalışmak için bkz [Teknik Not 45](../../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md).
+Büyük veri öğeleriyle çalışmak üzere `CByteArray` kullanma hakkında ayrıntılı bilgi için bkz. [teknik notta 45](../../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md).
 
-##  <a name="_core_the_clongbinary_class"></a> CLongBinary sınıfı
+##  <a name="clongbinary-class"></a><a name="_core_the_clongbinary_class"></a>CLongBinary sınıfı
 
-A [CLongBinary](../../mfc/reference/clongbinary-class.md) nesnedir, basit bir kabuk etrafında bir `HGLOBAL` işlemek için yığın üzerinde ayrılan depolama bloğu. İkili büyük nesne içeren bir tablo sütunu bağlar, RFX ayırır `HGLOBAL` kayıt kümesine veri aktarması ve tutamacın depolar işlemek `CLongBinary` alan kümesi.
+Bir [CLongBinary](../../mfc/reference/clongbinary-class.md) nesnesi, yığın üzerinde ayrılmış bir depolama bloğuna `HGLOBAL` tanıtıcısı etrafında basit bir kabuktur. İkili büyük nesne içeren bir tablo sütununu bağladığında, RFX, verileri kayıt kümesine aktarması gerektiğinde `HGLOBAL` tanıtıcıyı ayırır ve tanıtıcıyı kayıt kümesinin `CLongBinary` alanında depolar.
 
-Buna karşılık, kullandığınız `HGLOBAL` tutamacını `m_hData`herhangi verileri işlemek şekilde üzerinde çalışan verilerle kendisini çalışmak için. Burada [CByteArray](../../mfc/reference/cbytearray-class.md) özellikleri ekler.
+Sırasıyla, `m_hData`, verileri herhangi bir tanıtıcı veri üzerinde olduğu gibi çalıştırmak için `HGLOBAL` tanıtıcısını kullanırsınız. Bu, [CByteArray](../../mfc/reference/cbytearray-class.md) 'nin Özellik eklediği yerdir.
 
 > [!CAUTION]
->  CLongBinary nesneleri, işlev çağrıları parametre olarak kullanılamaz. Ek olarak, `::SQLGetData`, kaydırılabilir bir anlık görüntü için kayan performansı yavaşlatabilir. Kullandığınızda da doğru olabilir bir `::SQLGetData` çağrısını kendiniz dinamik şema sütunları alınamıyor.
+>  CLongBinary nesneleri işlev çağrılarında parametre olarak kullanılamaz. Ayrıca, `::SQLGetData`çağıran uygulama, kaydırılabilir bir anlık görüntü için kaydırma performansını yavaşlatır. Bu, dinamik şema sütunlarını almak için bir `::SQLGetData` çağrısı kullandığınızda da doğru olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

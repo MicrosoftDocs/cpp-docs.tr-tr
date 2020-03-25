@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-ms.openlocfilehash: 996e5f132e5cfa33c39c4cc3ddbeb692f41925bc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1f9b21893bd361d02b3446360b24a97f4d1d1365
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514723"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214415"
 ---
 # <a name="string-editor-c"></a>Dize Düzenleyicisi (C++)
 
@@ -50,7 +50,7 @@ Dize tabloları, uygulamanızı farklı dillere yerelleştirmek kolaylaştırır
 > [!NOTE]
 > Windows boş dize tablolarının oluşturulmasına izin vermez. Girişi olmayan bir dize tablosu oluşturursanız, kaynak dosyasını kaydettiğinizde bu otomatik olarak silinir.
 
-## <a name="how-to"></a>Nasıl Yapılır
+## <a name="how-to"></a>Nasıl yapılır
 
 **Dize düzenleyici** şunları yapmanızı mümkün:
 
@@ -58,24 +58,24 @@ Dize tabloları, uygulamanızı farklı dillere yerelleştirmek kolaylaştırır
 
 1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources)' de simgesine çift tıklayarak dize tablosunu açın.
 
-1. Menü **Düzenle** > **Bul ve Değiştir** ' e gidin ve **bul**' ı seçin.
+1. Menü **düzenle** > **Bul ve Değiştir** ' e gidin ve **bul**' ı seçin.
 
-1. Aranan kutusunda , açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz dizenin başlık metnini veya kaynak tanımlayıcısını yazın.
+1. **Aranan kutusunda,** açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz dizenin başlık metnini veya kaynak tanımlayıcısını yazın.
 
 1. **Bul** seçeneklerinden birini belirleyin ve **Sonrakini Bul**' u seçin.
 
 > [!TIP]
 > Dosyaları ararken [Normal ifadeleri](/visualstudio/ide/using-regular-expressions-in-visual-studio) kullanmak Için, **düzenleme** menüsündeki **dosyaları bul** komutunu kullanın.
 >
-> Bir Düzenle eşleştirmek için normal bir ifade yazın veya normal arama ifadelerinin listesini göstermek için **Aranan** kutusunun sağındaki düğmeyi seçin. Bu listeden bir ifade seçtiğinizde, Aranan kutusunda arama metni olarak değiştirilir.
+> Bir Düzenle eşleştirmek için normal bir ifade yazın veya normal arama ifadelerinin listesini göstermek için **Aranan** kutusunun sağındaki düğmeyi seçin. Bu listeden bir ifade seçtiğinizde, **Aranan kutusunda arama** metni olarak değiştirilir.
 >
-> Normal ifadeler kullanıyorsanız, şunu **kullanın: Normal ifadeler** onay kutusu seçilidir.
+> Normal ifadeler kullanırsanız, şunu **kullanın: normal ifadeler** onay kutusunun seçili olduğundan emin olun.
 
 ### <a name="to-add-or-delete-a-string-resource"></a>Bir dize kaynağı ekleme veya silme
 
 Dize **düzenleyicisini**kullanarak String tablosuna hızlıca girdi ekleyebilir veya silebilirsiniz. Yeni dizeler tablonun sonuna yerleştirilir ve bir sonraki kullanılabilir tanımlayıcı verilir. [Özellikler penceresi](/visualstudio/ide/reference/properties-window) **kimliği**, **değeri**veya **açıklamalı alt yazı** özelliklerini gerektiği gibi düzenleyebilirsiniz.
 
-**Dize Düzenleyicisi** , zaten kullanımda olan bir kimliği kullanmanıza olanak sağlar. Zaten kullanımda olan bir KIMLIĞI seçerseniz, **Dize Düzenleyicisi** sizi bilgilendirir ve örneğin `IDS_STRING58113`bir genel benzersiz kimlik atar.
+**Dize Düzenleyicisi** , zaten kullanımda olan bir kimliği kullanmanıza olanak sağlar. Zaten kullanımda olan bir KIMLIK seçerseniz, **Dize Düzenleyicisi** sizi bilgilendirir ve örneğin `IDS_STRING58113`bir genel benzersiz kimlik atar.
 
 #### <a name="to-add-a-string-table-entry"></a>Bir dize tablosu girdisi eklemek için
 
@@ -96,7 +96,7 @@ Dize **düzenleyicisini**kullanarak String tablosuna hızlıca girdi ekleyebilir
 
 Silmek istediğiniz girişi seçin ve aşağıdakilerden birini yapın:
 
-- Menü **Düzenle** > **Sil**' e gidin.
+- Menü **düzenle** > **Sil**' e gidin.
 
 - Silmek istediğiniz dizeye sağ tıklayın ve **Sil**' i seçin.
 
@@ -142,7 +142,7 @@ Silmek istediğiniz girişi seçin ve aşağıdakilerden birini yapın:
 
 1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window)değiştirmek istediğiniz özellik için yeni bir değer yazın.
 
-1. Tuşuna **girin**.
+1. **Enter**'a basın.
 
 ### <a name="to-add-formatting-or-special-characters-to-a-string-resource"></a>Bir dize kaynağına biçimlendirme veya özel karakterler eklemek için
 
@@ -154,10 +154,10 @@ Silmek istediğiniz girişi seçin ve aşağıdakilerden birini yapın:
 
    |Bunu almak için...|Şunu yazın...|
    |-----------------|---------------|
-   | Yeni satır | \\No |
-   | Satır başı | \\sağ |
-   | Tab | \\şı |
-   | Ters eğik\\çizgi () | \\\\ |
+   | Yeni satır | \\n |
+   | Satır başı | \\r |
+   | Tab | \\t |
+   | Ters eğik çizgi (\\) | \\\\ |
    | ASCII karakteri | \\ddd (sekizlik Gösterim) |
    | Uyarı (zil) | \\a |
 

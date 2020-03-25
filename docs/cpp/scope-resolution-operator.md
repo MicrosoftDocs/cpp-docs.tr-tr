@@ -9,16 +9,16 @@ helpviewer_keywords:
 - scope resolution operator
 - ':: operator'
 ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
-ms.openlocfilehash: e601bed976009a72a43545d8d38a38d75e93a137
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07c2884ed0ba114c22a0c71bbaf7268d6f6931a4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267400"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178892"
 ---
 # <a name="scope-resolution-operator-"></a>Kapsam Çözümü İşleci: ::
 
-Kapsam çözümleme işleci **::** belirlemek ve farklı kapsamlarda kullanılan tanımlayıcıları ayırt etmek için kullanılır. Kapsamı hakkında daha fazla bilgi için bkz. [kapsam](../cpp/scope-visual-cpp.md).
+Kapsam çözümleme işleci **::** farklı kapsamlarda kullanılan tanımlayıcıları tanımlamak ve belirsizliğini belirlemek için kullanılır. Kapsam hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,11 +32,11 @@ enum struct :: identifier
 
 ## <a name="remarks"></a>Açıklamalar
 
-`identifier` Bir değişken, işlev veya bir sabit listesi değeri olabilir.
+`identifier` bir değişken, bir işlev veya bir numaralandırma değeri olabilir.
 
-## <a name="with-classes-and-namespaces"></a>Ad alanlarını ve sınıfları ile
+## <a name="with-classes-and-namespaces"></a>Sınıflar ve ad alanları
 
-Aşağıdaki örnek, kapsam çözümleme işleci ad alanlarını ve sınıfları ile nasıl kullanıldığını gösterir:
+Aşağıdaki örnek, kapsam çözümleme işlecinin ad alanları ve sınıflarla nasıl kullanıldığını göstermektedir:
 
 ```cpp
 namespace NamespaceA{
@@ -58,7 +58,7 @@ int main() {
 }
 ```
 
-Kapsam niteleyicisi olmayan bir kapsam çözümleme işleci genel isim uzayına başvuruyor.
+Kapsam niteleyicisi olmayan bir kapsam çözümleme işleci, genel ad alanına başvurur.
 
 ```cpp
 namespace NamespaceA{
@@ -80,7 +80,7 @@ int main() {
 }
 ```
 
-Kapsam çözümleme işleci bir isim uzayı üyesi tanımlamak veya üyenin ad alanı kullanarak yönergesinde nominates bir ad alanı tanımlamak için kullanabilirsiniz. Aşağıdaki örnekte, kullandığınız `NamespaceC` nitelemek için `ClassB`rağmen `ClassB` ad alanında bildirilen `NamespaceB`, çünkü `NamespaceB` , aday `NamespaceC` bir kullanarak yönergesi.
+Bir ad alanının üyesini tanımlamak veya bir using yönergesinde üyenin ad alanını gösteren bir ad alanını tanımlamak için kapsam çözümleme işlecini kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceB`, bir using yönergesi tarafından `NamespaceC` aday olduğundan, `ClassB` ad alanı `NamespaceB`içinde bildirildiği halde `ClassB`nitelemek için `NamespaceC` kullanabilirsiniz.
 
 ```cpp
 namespace NamespaceB {
@@ -102,7 +102,7 @@ int main() {
 }
 ```
 
-Kapsam çözümleme işleci zincirleri kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceD::NamespaceD1` iç içe geçmiş ad alanını tanımlayan `NamespaceD1`, ve `NamespaceE::ClassE::ClassE1` iç içe geçmiş sınıf tanımlar `ClassE1`.
+Kapsam çözümleme işleçlerinin zincirlerini kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceD::NamespaceD1` iç içe geçmiş ad alanını `NamespaceD1`tanımlar ve `NamespaceE::ClassE::ClassE1` iç içe sınıf `ClassE1`tanımlar.
 
 ```cpp
 namespace NamespaceD{
@@ -128,9 +128,9 @@ int main() {
 }
 ```
 
-## <a name="with-static-members"></a>Statik üyeleri ile
+## <a name="with-static-members"></a>Statik üyelere sahip
 
-Statik sınıf üyeleri çağırmak için kapsam çözünürlük işlecini kullanmanız gerekir.
+Sınıfların statik üyelerini çağırmak için kapsam çözümleme işlecini kullanmanız gerekir.
 
 ```cpp
 class ClassG {
@@ -148,9 +148,9 @@ int main() {
 }
 ```
 
-## <a name="with-scoped-enumerations"></a>Kapsamlı numaralandırmalar ile
+## <a name="with-scoped-enumerations"></a>Kapsamlı numaralandırmalar
 
-Kapsamlı çözümleme işleci ayrıca kapsamlı numaralandırma değerlerinin kullanılan [numaralandırma bildirimleri](../cpp/enumerations-cpp.md), aşağıdaki örnekte olduğu gibi:
+Kapsamlı çözümleme işleci, aşağıdaki örnekte olduğu gibi kapsamlı numaralandırma [Listeleme bildirimlerinin](../cpp/enumerations-cpp.md)değerleriyle de kullanılır:
 
 ```cpp
 enum class EnumA{

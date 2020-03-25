@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - Description method [C++]
 ms.assetid: 88191e24-4ee8-44a6-8c4c-3758e22e0548
-ms.openlocfilehash: a517c40e9adfbda2d790ce41a48ccf8658bcd3e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de2275f096fe2fde96e64cbc3034602a1fde5e88
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155117"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180777"
 ---
-# <a name="comerrordescription"></a>_com_error::Description
+# <a name="_com_errordescription"></a>_com_error::Description
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Çağrıları `IErrorInfo::GetDescription` işlevi.
+`IErrorInfo::GetDescription` işlevini çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ _bstr_t Description( ) const;
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucunu döndürür `IErrorInfo::GetDescription` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Ortaya çıkan `BSTR` içinde kapsüllenir bir `_bstr_t` nesne. Hayır ise `IErrorInfo` olan kaydedilmemişse, boş bir döndürür `_bstr_t`.
+`_com_error` nesnesi içinde kaydedilen `IErrorInfo` nesnesi için `IErrorInfo::GetDescription` sonucunu döndürür. Elde edilen `BSTR`, bir `_bstr_t` nesnesi içinde kapsüllenir. Kayıtlı `IErrorInfo` yoksa boş bir `_bstr_t`döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağrıları `IErrorInfo::GetDescription` işlevi ve alır `IErrorInfo` içinde kaydedilen `_com_error` nesne. Çağrılırken `IErrorInfo::GetDescription` yöntemi göz ardı edilir.
+`IErrorInfo::GetDescription` işlevini çağırır ve `_com_error` nesne içinde kaydedilen `IErrorInfo` alır. `IErrorInfo::GetDescription` yöntemi çağrılırken herhangi bir hata yoksayıldı.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - Wrappers namespace
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
-ms.openlocfilehash: 4b88ad0da31321a696c1238f1c9838d3b3a1c927
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ece26b3f9928d44a593de830cf8a25c57e4c2d89
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392004"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213752"
 ---
 # <a name="microsoftwrlwrappers-namespace"></a>Microsoft::WRL::Wrappers Ad Alanı
 
-Nesneler, dizeler ve tanıtıcıları ömrü yönetimini basitleştirmek kaynak edinme olan başlatma (RAII) sarmalayıcı türlerini tanımlar.
+Nesnelerin, dizelerin ve tanıtıcıların ömür yönetimini kolaylaştıran kaynak alımı başlatma (SII) sarmalayıcı türlerini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,21 +36,21 @@ namespace Microsoft::WRL::Wrappers;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CriticalSection Sınıfı](criticalsection-class.md)|Kritik bölüm nesneyi temsil eder.|
+|[CriticalSection Sınıfı](criticalsection-class.md)|Kritik bir bölüm nesnesini temsil eder.|
 |[Event Sınıfı (WRL)](event-class-wrl.md)|Bir olayı temsil eder.|
-|[HandleT Sınıfı](handlet-class.md)|Bir tutamacı nesneyi temsil eder.|
-|[HString Sınıfı](hstring-class.md)|HSTRING tutamaçları düzenlenmesi için destek sağlar.|
-|[HStringReference Sınıfı](hstringreference-class.md)|Varolan bir dizeden oluşturulan bir HSTRING temsil eder.|
-|[Mutex sınıfı](mutex-class.md)|Paylaşılan bir kaynağa özel olarak denetleyen bir eşitleme nesnesi temsil eder.|
-|[RoInitializeWrapper Sınıfı](roinitializewrapper-class.md)|Windows çalışma zamanı'nı başlatır.|
-|[Semafor Sınıfı](semaphore-class.md)|Sınırlı sayıda kullanıcıları destekleyen bir paylaşılan kaynak denetleyen bir eşitleme nesnesi temsil eder.|
-|[SRWLock Sınıfı](srwlock-class.md)|Bir ince Okuyucu/Yazıcı kilidi temsil eder.|
+|[HandleT Sınıfı](handlet-class.md)|Bir nesneye olan tanıtıcıyı temsil eder.|
+|[HString Sınıfı](hstring-class.md)|HSTRıNG tutamaçlarını işlemek için destek sağlar.|
+|[HStringReference Sınıfı](hstringreference-class.md)|Varolan bir dizeden oluşturulan bir HSTRıNG temsil eder.|
+|[Mutex sınıfı](mutex-class.md)|Paylaşılan bir kaynağı özel olarak denetleyen bir eşitleme nesnesini temsil eder.|
+|[RoInitializeWrapper Sınıfı](roinitializewrapper-class.md)|Windows Çalışma Zamanı başlatır.|
+|[Semafor Sınıfı](semaphore-class.md)|Sınırlı sayıda kullanıcıyı destekleyebilen, paylaşılan bir kaynağı denetleyen bir eşitleme nesnesini temsil eder.|
+|[SRWLock Sınıfı](srwlock-class.md)|İnce bir okuyucu/yazıcı kilidini temsil eder.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

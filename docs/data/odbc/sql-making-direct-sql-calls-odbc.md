@@ -1,5 +1,5 @@
 ---
-title: 'SQL: Doğrudan SQL çağrıları yapma (ODBC)'
+title: 'SQL: Doğrudan SQL Çağrıları Yapma (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - SQL, direct calls from ODBC
@@ -8,33 +8,33 @@ helpviewer_keywords:
 - SQL calls
 - direct SQL calls from ODBC
 ms.assetid: 091988d2-f5a5-4c2d-aa09-8779a9fb9607
-ms.openlocfilehash: fd528e7abb713e4b3eb2bd5388a29958a1bb006c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9240a227cdc4004d1e6e2b7ac26946ca233b71ec
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329978"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212634"
 ---
-# <a name="sql-making-direct-sql-calls-odbc"></a>SQL: Doğrudan SQL çağrıları yapma (ODBC)
+# <a name="sql-making-direct-sql-calls-odbc"></a>SQL: Doğrudan SQL Çağrıları Yapma (ODBC)
 
-Bu konu şunları açıklar:
+Bu konuda aşağıdakiler açıklanmaktadır:
 
-- Doğrudan SQL kullanmak ne zaman çağırır.
+- Doğrudan SQL çağrılarının ne zaman kullanılacağı.
 
-- [Çağıran veri kaynağına nasıl SQL doğrudan yaptığınız](#_core_making_direct_sql_function_calls).
+- [Veri kaynağına doğrudan SQL çağrıları yapma](#_core_making_direct_sql_function_calls).
 
 > [!NOTE]
->  Bu bilgiler, MFC ODBC sınıflarına uygulanır. MFC DAO sınıflarına ile çalışıyorsanız, "Karşılaştırma, Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL" DAO Yardım konusuna bakın.
+>  Bu bilgiler MFC ODBC sınıfları için geçerlidir. MFC DAO sınıflarıyla çalışıyorsanız, DAO yardımı 'nda "Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL karşılaştırması" konusuna bakın.
 
-##  <a name="_core_when_to_call_sql_directly"></a> SQL'i doğrudan çağırmak ne zaman
+##  <a name="when-to-call-sql-directly"></a><a name="_core_when_to_call_sql_directly"></a>SQL 'i doğrudan çağırma
 
-Yeni tablolar oluşturmak için (Sil) tabloları kaldırın, varolan tablolarda alter, dizinler oluşturma ve değiştirme diğer SQL işlevleri gerçekleştirmek [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md) şema gerekir dağıttığınız bir SQL deyimi kullanarak veritabanı doğrudan veri kaynağına Tanım Dili (DDL). (Tasarım zamanında) bir tablo için bir kayıt kümesi oluşturmak için bir sihirbaz kullandığınızda, kümenize temsil etmek için tablonun hangi sütunlarının seçebilirsiniz. Bu, siz veya başka bir kullanıcı veri kaynağının tablosuna ekleme daha sonra programınızı derlendikten sonra sütunlar için izin vermez. Veritabanı sınıfları DDL doğrudan desteklemez, ancak yine de yeni bir sütun kümenize çalışma zamanında dinamik olarak bağlama için kod yazabilirsiniz. Bu bağlama yapma hakkında daha fazla bilgi için bkz: [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
+Yeni tablolar oluşturmak, tabloları bırakmak, var olan tabloları değiştirmek, dizinler oluşturmak ve [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md) şemasını DEĞIŞTIREN diğer SQL işlevlerini gerçekleştirmek Için, veritabanı tanım DILI (ddl) kullanarak doğrudan veri KAYNAĞıNA bir SQL ifadesi vermelisiniz. Bir tablo için bir kayıt kümesi oluşturmak üzere bir sihirbaz kullandığınızda (tasarım zamanında), tablodaki hangi sütunların kayıt kümesinde temsil edileceğini seçebilirsiniz. Bu, siz veya veri kaynağı için başka bir kullanıcının tabloya daha sonra, programınız derlendikten sonra eklemesini sağlar. Veritabanı sınıfları doğrudan DDL 'yi desteklemez, ancak çalışma zamanında kayıt kümenize dinamik olarak yeni bir sütun bağlamak için kod yazmaya devam edebilirsiniz. Bu bağlamanın nasıl yapılacağı hakkında bilgi için bkz. [Recordset: dinamik olarak veri sütunlarını bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 
-DBMS, şema veya DDL işlevlerini gerçekleştirmenize olanak tanıyan başka bir aracı değiştirmek için kullanabilirsiniz. ODBC işlev çağrıları kayıtları döndürmeyen önceden tanımlanmış sorgu (saklı yordam) arama gibi SQL deyimleri göndermek için de kullanabilirsiniz.
+Şemayı veya DDL işlevleri gerçekleştirmenize olanak sağlayan başka bir aracı değiştirmek için DBMS 'yi kullanabilirsiniz. Ayrıca, kayıt döndürmeyen önceden tanımlanmış bir sorgu (saklı yordam) çağırma gibi SQL deyimlerini göndermek için ODBC işlev çağrılarını da kullanabilirsiniz.
 
-##  <a name="_core_making_direct_sql_function_calls"></a> Doğrudan SQL işlev çağrıları yapma
+##  <a name="making-direct-sql-function-calls"></a><a name="_core_making_direct_sql_function_calls"></a>Doğrudan SQL Işlev çağrıları yapma
 
-Doğrudan kullanarak bir SQL çağrı yürütebilir bir [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md) nesne. SQL deyimi dizenizi ayarlayın (genellikle bir `CString`) ve geçirin [CDatabase:: Executesql'den](../../mfc/reference/cdatabase-class.md#executesql) üye işlevini, `CDatabase` nesne. Normalde kayıtlar döndüren bir SQL deyimi göndermek için ODBC işlev çağrıları kullanırsanız, kayıtlara göz ardı edilir.
+Bir [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md) nesnesi kullanarak doğrudan bir SQL çağrısı yürütebilirsiniz. SQL ifade dizenizi ayarlayın (genellikle bir `CString`) ve `CDatabase` nesnenizin [CDatabase:: ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) üye işlevine geçirin. Normalde kayıtları döndüren bir SQL ifadesini göndermek için ODBC işlev çağrıları kullanırsanız, kayıtlar yok sayılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

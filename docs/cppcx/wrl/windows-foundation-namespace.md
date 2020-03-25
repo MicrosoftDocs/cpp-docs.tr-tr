@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Foundation namespace
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
-ms.openlocfilehash: cd16a888594e928214ef45cbdddb1e0fdac7c82a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c8bc578fd9657fb964bc6148e3acc24b0cb5328
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396060"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213531"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
 
-Nesne ve Fabrika oluşturma gibi temel Windows çalışma zamanı işlevleri sağlar.
+Nesne ve fabrika oluşturma gibi temel Windows Çalışma Zamanı işlevselliğine izin vermez.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,14 +31,14 @@ namespace Windows::Foundation;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ActivateInstance İşlevi](activateinstance-function.md)|Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.|
-|[GetActivationFactory İşlevi](getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.|
+|[ActivateInstance İşlevi](activateinstance-function.md)|Belirtilen bir sınıf KIMLIĞINDE tanımlanan belirli bir türün bir örneğini kaydeder ve alır.|
+|[GetActivationFactory İşlevi](getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme fabrikası alır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** client.h
+**Üstbilgi:** Client. h
 
-**Namespace:** Windows
+**Ad alanı:** Pencerelerin
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

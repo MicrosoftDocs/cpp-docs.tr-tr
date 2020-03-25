@@ -6,18 +6,18 @@ helpviewer_keywords:
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-ms.openlocfilehash: 467300501ffbbf8063e203d4c7395af34a954ed0
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 21685af5fc4f2dcf042698e054430e50531163b7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301372"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177748"
 ---
 # <a name="numeric-boolean-and-pointer-literals"></a>Sayısal, Boole ve işaretçi değişmez değerleri
 
 Değişmez değer, doğrudan bir değeri temsil eden bir program öğesidir. Bu makale Integer, kayan nokta, Boolean ve işaretçi türündeki sabit değerleri içerir. Dize ve karakter değişmez değerleri hakkında daha fazla bilgi için bkz. [dize veC++karakter değişmez değerleri ()](../cpp/string-and-character-literals-cpp.md). Ayrıca, bu kategorilerden herhangi birine göre kendi sabit değerlerini de tanımlayabilirsiniz; daha fazla bilgi için bkz. [Kullanıcı tanımlı değişmezC++değerler ()](../cpp/user-defined-literals-cpp.md)
 
-. Birden çok bağlamdaki sabit değerleri kullanabilirsiniz, ancak çoğunlukla adlandırılmış değişkenleri başlatabilir ve bağımsız değişkenleri işlevlere geçirebilirsiniz:
+ziyaret edin. Birden çok bağlamdaki sabit değerleri kullanabilirsiniz, ancak çoğunlukla adlandırılmış değişkenleri başlatabilir ve bağımsız değişkenleri işlevlere geçirebilirsiniz:
 
 ```cpp
 const int answer = 42; // integer literal
@@ -103,7 +103,7 @@ Kayan nokta değişmez değerleri **Double**türüne varsayılan değer. Son ek 
 void func( double );
 ```
 
-and
+ile
 
 ```cpp
 void func( long double );

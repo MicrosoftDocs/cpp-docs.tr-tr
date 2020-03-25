@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4484
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-ms.openlocfilehash: 4d3f72ddf7675ea7ad73022dc55a60fdc74d4390
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: c168c91f8259b744ed10dd72701d34fd60b98681
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623625"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165164"
 ---
 # <a name="compiler-warning-c4484"></a>Derleyici Uyarısı C4484
 
-' override_function ': ' base_class_function ' taban başvuru sınıfı yöntemiyle eşleşiyor, ancak ' Virtual ', ' New ' veya ' override ' olarak işaretlenmemiş; ' New ' (' Virtual ' değil) varsayıldı
+' override_function ': ' base_class_function ' temel başvuru sınıfı yöntemiyle eşleşiyor, ancak ' Virtual ', ' New ' veya ' override ' olarak işaretlenmemiş; ' New ' (' Virtual ' değil) varsayıldı
 
 **/Clr**ile derlerken, derleyici bir temel sınıf işlevini örtülü olarak geçersiz kılmaz, bu da işlevin vtable 'da yeni bir yuva alabileceği anlamına gelir. Çözümlemek için, bir işlevin geçersiz kılma olup olmadığını açıkça belirtin.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
 - [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
 

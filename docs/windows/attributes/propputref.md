@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - propputref attribute
 ms.assetid: 9b0aed74-fdc7-4e59-9117-949bea4f86dd
-ms.openlocfilehash: 9dc21494886f80890bcfde7f29bb3d6c86b4a51b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a9c4413e9bb8c7faa332bb842700dfcf84d6666a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514187"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166438"
 ---
 # <a name="propputref"></a>propputref
 
@@ -39,7 +39,7 @@ Değer yerine başvuru kullanan bir özellik ayarı işlevi belirtir.
 |-|-|
 |**Uygulama hedefi**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|`propget`, `propput`|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

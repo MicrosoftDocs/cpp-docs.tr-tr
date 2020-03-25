@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4959
 ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
-ms.openlocfilehash: 646347dec7bc2bac7fa73c8f754d2f9549cb2ba6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13d2ed705bff7b42eb3c348692a5829bd54158b0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388673"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164878"
 ---
 # <a name="compiler-warning-c4959"></a>Derleyici Uyarısı C4959
 
-> Yönetilmeyen yapı tanımlayamazsınız '*türü*' / CLR: safe, üyelerine erişilmesi doğrulanamayan bir koda neden olduğu
+> '*Type*' yönetilmeyen yapısı, üyelerine erişim doğrulanamayan kodu sağladığından/clr: Safe içinde tanımlanamaz
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilmeyen bir türün bir üyeye erişilmesi doğrulanamayan (peverify.exe) görüntü oluşturur.
+Yönetilmeyen bir türün üyesine erişmek doğrulanamayan bir (Peverify. exe) görüntüsü oluşturur.
 
-Daha fazla bilgi için [saf ve doğrulanabilen kod (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Daha fazla bilgi için bkz. [saf ve Doğrulanabilen kodC++(/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
-**/CLR: safe** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Safe** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-Bu uyarı hata olarak verilir ve ile devre dışı bırakılabilir [uyarı](../../preprocessor/warning.md) pragma veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+Bu uyarı bir hata olarak verilir ve [Uyarı](../../preprocessor/warning.md) pragması veya [/WD](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği ile devre dışı bırakılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4959 oluşturur:
+Aşağıdaki örnek C4959 oluşturur:
 
 ```cpp
 // C4959.cpp

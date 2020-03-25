@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-ms.openlocfilehash: b2ae1be31233e55aa34d6f3046d90fb2127348c0
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: c8056146998443f4e24169a4464b834d8eff29b0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80080037"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208538"
 ---
 # <a name="lock-class"></a>lock Sınıfı
 
@@ -41,14 +41,14 @@ Dahili olarak, Lock sınıfı erişimi eşleştirmek için <xref:System.Threadin
 
 ### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
 |[lock::lock](#lock)|İsteğe bağlı olarak, belirli bir süre boyunca kilit almayı bekleyen veya hiç değil, bir `lock` nesnesi oluşturur.|
 |[lock::~lock](#tilde-lock)|`lock` nesne yapılarını kaldırır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
 |[lock::acquire](#acquire)|Bir nesne üzerinde bir kilit alır, isteğe bağlı olarak, belirli bir süre boyunca kilidi sonsuza kadar almayı bekler veya hiç değil.|
 |[lock::is_locked](#is-locked)|Bir kilidin tutulmakta olup olmadığını gösterir.|
@@ -57,7 +57,7 @@ Dahili olarak, Lock sınıfı erişimi eşleştirmek için <xref:System.Threadin
 
 ### <a name="public-operators"></a>Ortak işleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
 |[Lock:: operator&nbsp;bool](#operator-bool)|Koşullu ifadede `lock` kullanmak için işleç.|
 |[lock::operator==](#operator-equality)|Eşitlik işleci.|

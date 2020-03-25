@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-ms.openlocfilehash: b2057658b5881efd0c3ff095d51e5ee88c9c533e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: aaa2290c871df3a2482294794461e53afe00568d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490926"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214857"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
@@ -26,7 +26,7 @@ Türü belirtilmiş bir isteğe bağlı parametre için varsayılan değer belir
 ### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-Parametresi için varsayılan değer.
+Parametrenin varsayılan değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -62,8 +62,8 @@ __interface IFireTabCtrl : IDispatch {
 |-|-|
 |**Uygulama hedefi**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

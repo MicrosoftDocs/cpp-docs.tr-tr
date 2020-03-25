@@ -1,21 +1,21 @@
 ---
-title: idl_quote (C++ COM özniteliği)
+title: idl_quote (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.idl_quote
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: 3fbec210d973926a312d3e750e806dd9ef13f5f9
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 4b05da6d237d71e0cc645ad0f626f75ecd85c827
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448539"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168035"
 ---
-# <a name="idlquote"></a>idl_quote
+# <a name="idl_quote"></a>idl_quote
 
-Visual C++'ın geçerli sürümünde desteklenmeyen IDL yapıları kullanmanıza olanak tanır ve bunları oluşturulan .idl dosyasına geçirir.
+Geçerli Visual C++ sürümünde desteklenmeyen IDL yapılarını kullanmanıza ve bunların oluşturulan. IDL dosyasına geçmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Visual C++'ın geçerli sürümünde desteklenmeyen IDL yapıları kullanmanıza
 
 ### <a name="parameters"></a>Parametreler
 
-*text*<br/>
-Microsoft düşündüğünüz öznitelik adı C++ aracılığıyla oluşturulan .idl dosyasına bir derleyici hatası dönmeden iletmek için derleyici.
+*metinleri*<br/>
+Microsoft C++ derleyicisini bir derleyici hatası döndürmeden oluşturulan. IDL dosyasına geçireplanladığınız öznitelik adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **idl_quote** C++ özniteliği kullanılır (noktalı sağ köşeli ayraç sonra), bir tek başına öznitelik olarak ardından *metin* olduğu gibi birleştirilmiş bir .idl dosyasında yer alır. Varsa **idl_quote** üzerinde bir sembol, kullanılan *metin* sembolün için öznitelik bloğu içinde yer alır.
+**İdl_quote** C++ özniteliği tek başına bir öznitelik olarak kullanılırsa (kapatma parantezinden sonra noktalı virgül ile), *metin* birleştirilmiş. IDL dosyasına olduğu gibi yerleştirilir. Bir sembol üzerinde **İdl_quote** kullanılırsa, *metin* söz konusu simgenin öznitelik bloğunun içine yerleştirilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl desteklenmeyen bir öznitelik belirtebilirsiniz gösterir (kullanarak **içinde**, desteklendiği) ve nasıl tanımlanacağını ve bir tanımsız .idl yapısı kullanın:
+Aşağıdaki kod, desteklenmeyen bir özniteliği (desteklenen ' **de**kullanarak) ve tanımsız bir. IDL yapısını nasıl tanımlanacağını ve kullanacağınızı gösterir:
 
 ```cpp
 // cpp_attr_ref_idl_quote.cpp
@@ -69,7 +69,7 @@ __interface IStatic{
 };
 ```
 
-Bu kod neden `MYFLOT` ve `MYDUB` ve *metin* oluşturulan .idl dosyasında yerleştirilecek girişi. *Adı* parametresi zorlar *metin* başvuran hiçbir şey önce yerleştirilecek *adı* oluşturulan .idl dosyasındaki. *Bağımlılıkları* parametre zorlar önce yerleştirilecek bağımlılık liste tanımları *metin* oluşturulan .idl dosyasındaki.
+Bu kod, `MYFLOT` ve `MYDUB` ve *metin* girişinin oluşturulan. IDL dosyasına yerleştirilmesini sağlar. *Name* parametresi, oluşturulan. IDL dosyasındaki *adı* başvuruda bulunan her şeyin önüne konacak *metni* zorlar. *Dependencies* parametresi, bağımlılık listesi tanımlarını oluşturulan. IDL dosyasındaki *metinden* önce yerleştirilecek şekilde zorlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -77,12 +77,12 @@ Bu kod neden `MYFLOT` ve `MYDUB` ve *metin* oluşturulan .idl dosyasında yerle�
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

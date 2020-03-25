@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: 8bfa20f55afd85019795fdd40548158c2f49e126
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 627ecff4835386dc70a9f3dfac0500404a84eefe
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514663"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167998"
 ---
 # <a name="iid_is"></a>iid_is
 
@@ -30,11 +30,11 @@ Bir arabirim işaretçisi tarafından işaret edilen bir COM arabiriminin IID ö
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İid_is** C++ özniteliği, [iid_is](/windows/win32/Midl/iid-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**İid_is** C++ özniteliği [iid_is](/windows/win32/Midl/iid-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **iid_is**kullanımını gösterir:
+Aşağıdaki kod **iid_is**kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_iid_is.cpp
@@ -59,8 +59,8 @@ __interface IFireTabCtrl : IDispatch
 |-|-|
 |**Uygulama hedefi**|Arabirim parametresi, veri üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

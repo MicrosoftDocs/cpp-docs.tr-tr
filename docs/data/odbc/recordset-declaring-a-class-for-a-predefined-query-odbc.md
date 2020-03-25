@@ -8,12 +8,12 @@ helpviewer_keywords:
 - recordsets, predefined queries
 - recordsets, stored procedures
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-ms.openlocfilehash: 6338de99bf9c3e19e6e15ffbe0bcf5caab066ed8
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 9d19328fb82503519fd8eca083e0dd11e10883ea
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079832"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212959"
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)
 
@@ -56,7 +56,7 @@ Veritabanı sınıfları, önceden tanımlanmış sorguların güncelleştirilme
 
 1. Kayıt kümesi sınıf oluşturucusunda yeni alan veri üyeleri için başlatmaları el ile ekleyin.
 
-   Ayrıca, [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesinin başlatma değerini de artırmanız gerekir. Sihirbaz başlatmayı yazar, ancak yalnızca sizin için eklediği alan veri üyelerini ele alır. Örnek:
+   Ayrıca, [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesinin başlatma değerini de artırmanız gerekir. Sihirbaz başlatmayı yazar, ancak yalnızca sizin için eklediği alan veri üyelerini ele alır. Örneğin:
 
     ```cpp
     m_nFields += 6;

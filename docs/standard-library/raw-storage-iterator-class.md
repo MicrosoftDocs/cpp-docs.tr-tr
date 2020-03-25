@@ -10,14 +10,14 @@ helpviewer_keywords:
 - std::raw_storage_iterator [C++], element_type
 - std::raw_storage_iterator [C++], iter_type
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
-ms.openlocfilehash: eb32d1846c4e94fbd275dcc416de4f37d9bb53f1
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 9372fa884d75e10c1a0f2ec92d6cca9caa65808e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240372"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167621"
 ---
-# <a name="rawstorageiterator-class"></a>raw_storage_iterator Sınıfı
+# <a name="raw_storage_iterator-class"></a>raw_storage_iterator Sınıfı
 
 Algoritmaların başlatılmamış belleğe sonuçları depolamasını sağlamak üzere oluşturulmuş bağdaştırıcı sınıfı.
 
@@ -30,17 +30,17 @@ template <class OutputIterator, class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*Outputıterator*\
-Çıkış yineleyici depolanmakta olan nesne için belirtir.
+*OutputIterator*\
+Saklanacak nesne için çıkış yineleyicisini belirtir.
 
-*Türü*\
-Kendisi için ayrılan depolama nesnenin türü.
+*Tür*\
+Depolamanın ayrıldığı nesnenin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf türü nesneleri oluşturan bir çıkış yineleyiciyi açıklayan `Type` sırada bu oluşturur. Sınıfın bir nesnesi `raw_storage_iterator` \< **ForwardIterator**, **türü**> sınıfın bir ileriye doğru yineleyici nesnesi, depolama alanına erişen `ForwardIterator`, ne zaman belirtin, nesnesi oluşturun. Bir nesne için birinci sınıf `ForwardIterator`, ifade  **& \*ilk** sonraki nesne için unconstructed depolama belirlemeniz gerekir (tür `Type`) oluşturulan sıralı.
+Sınıfı, oluşturduğu dizide `Type` türünde nesneler oluşturan bir çıkış yineleyicisini açıklar. `raw_storage_iterator`\< **ForwardIterator**sınıfının bir nesnesi **, > nesne**oluştururken belirttiğiniz bir ileri Yineleyici `ForwardIterator`nesnesi aracılığıyla depolama alanına erişir. `ForwardIterator`sınıfının ilk bir nesnesi için, **&\*ifadesi ilk** olarak oluşturulan dizideki bir sonraki nesne (tür `Type`) için oluşturulmamış depolamayı belirlemelidir.
 
-Bellek ayırma ve nesne oluşturmayı ayırmak gerekli olduğunda bu bağdaştırıcı sınıf kullanılır. `raw_storage_iterator` Nesneleri kullanılarak ayrılmış bellek gibi başlatılmamış depolamaya kopyalamak için kullanılan `malloc` işlevi.
+Bu bağdaştırıcı sınıfı, bellek ayırmayı ve nesne oluşturmayı ayırmak için gerekliyse kullanılır. `raw_storage_iterator`, `malloc` işlevi kullanılarak ayrılan bellek gibi başlatılmamış depolamaya nesneleri kopyalamak için kullanılabilir.
 
 ## <a name="members"></a>Üyeler
 
@@ -48,26 +48,26 @@ Bellek ayırma ve nesne oluşturmayı ayırmak gerekli olduğunda bu bağdaştı
 
 |||
 |-|-|
-|[raw_storage_iterator](#raw_storage_iterator)|Belirtilen temel alınan bir çıkış yineleyici ile bir ham depolama yineleyici oluşturur.|
+|[raw_storage_iterator](#raw_storage_iterator)|Belirtilen temel alınan çıkış yineleyicisini içeren bir ham depolama yineleyici oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[element_type](#element_type)|Ham depolama yineleyici olarak bir öğeyi tanımlayan tür depolanan sağlar.|
-|[iter_type](#iter_type)|Ham depolama yineleyici altını çizen bir yineleyiciyi açıklayan tür sağlar.|
+|[element_type](#element_type)|Ham depolama yineleyici depolanacak bir öğeyi açıklayan bir tür sağlar.|
+|[iter_type](#iter_type)|Ham depolama yineleyici içeren bir yineleyiciyi açıklayan bir tür sağlar.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* `ii`  =  `x`.|
-|[operator=](#op_eq)|Ham depolama yineleyici ifadesini uygulamak için kullanılan bir atama işleci \* `i`  =  `x` bellekte depolamak için.|
-|[operator ++](#op_add_add)|Ham depolama yineleyiciler preincrement ve postincrement işleçler.|
+|[işlecinde](#op_star)|\* `ii` = `x`çıkış yineleyici ifadesini uygulamak için kullanılan bir başvuru kaldırma işleci.|
+|[işleç =](#op_eq)|Bellekte depolamada `i` = `x` ham depolama yineleyici ifadesini uygulamak için kullanılan atama işleci \*.|
+|[işleç + +](#op_add_add)|Ham depolama yineleyiciler için preıncrement ve postıncrement işleçleri.|
 
-### <a name="element_type"></a> ELEMENT_TYPE
+### <a name="element_type"></a><a name="element_type"></a>element_type
 
-Ham depolama yineleyici olarak bir öğeyi tanımlayan tür depolanan sağlar.
+Ham depolama yineleyici depolanacak bir öğeyi açıklayan bir tür sağlar.
 
 ```cpp
 typedef Type element_type;
@@ -75,11 +75,11 @@ typedef Type element_type;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Raw_storage_iterator sınıfı şablon parametresi için bir eşanlamlı türüdür `Type`.
+Tür, `Type`raw_storage_iterator sınıf şablonu parametresinin bir eş anlamlısıdır.
 
-### <a name="iter_type"></a> iter_type
+### <a name="iter_type"></a><a name="iter_type"></a>iter_type
 
-Ham depolama yineleyici altını çizen bir yineleyiciyi açıklayan tür sağlar.
+Ham depolama yineleyici içeren bir yineleyiciyi açıklayan bir tür sağlar.
 
 ```cpp
 typedef ForwardIterator iter_type;
@@ -87,11 +87,11 @@ typedef ForwardIterator iter_type;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `ForwardIterator`.
+Tür, `ForwardIterator`şablon parametresi için bir eş anlamlı.
 
-### <a name="op_star"></a> İşleci\*
+### <a name="operator"></a><a name="op_star"></a>işleç\*
 
-Ham depolama yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* *II* = *x*.
+\* *ıı* = *x*ham depolama yineleyici ifadesini uygulamak için kullanılan bir başvuru kaldırma işleci.
 
 ```cpp
 raw_storage_iterator<ForwardIterator, Type>& operator*();
@@ -103,7 +103,7 @@ Ham depolama yineleyici başvurusu
 
 #### <a name="remarks"></a>Açıklamalar
 
-Gereksinimleri bir `ForwardIterator` ham olan depolama yineleyici gerektiren yalnızca ifade karşılaması gerekir \* *II* = *t* geçerli olması ve hiçbir şey hakkında söylüyor **işleci** veya `operator=` kendi. Bu uygulamada üye işleçleri döndürür  **\*bu**, böylece [işleç =](#op_eq)(**constType**&) gerçek deponun bir ifadede gerçekleştirebilirsiniz. gibi \* *ptr* = `val`.
+Bir `ForwardIterator` için gereksinimler, ham depolama yineleyicisinin yalnızca Expression \* *ıı* = *t* 'nin geçerli olması ve **işleç** ya da kendi üzerinde `operator=` herhangi bir şey yazmadığını belirtir. Bu uygulamadaki üye işleçleri **\*** döndürür, böylece [operator =](#op_eq)(**constType**&), gerçek mağazayı \* *PTR* = `val`gibi bir ifadede gerçekleştirebilir.
 
 #### <a name="example"></a>Örnek
 
@@ -157,9 +157,9 @@ Copying 5
 Constructing 5
 ```
 
-### <a name="op_eq"></a> işleç =
+### <a name="operator"></a><a name="op_eq"></a>işleç =
 
-Ham depolama yineleyici ifadesini uygulamak için kullanılan atama işleci \* *miyim* = *x* bellekte depolamak için.
+Ham depolama yineleyici ifadesini uygulamak için kullanılan atama işleci, bellekte depolamak için *ı* = *x* \*.
 
 ```cpp
 raw_storage_iterator<ForwardIterator, Type>& operator=(
@@ -168,18 +168,18 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 #### <a name="parameters"></a>Parametreler
 
-*VAL*\
-Nesne türü değeri `Type` belleğe eklenecek.
+*val*\
+Belleğe eklenecek `Type` türündeki nesnenin değeri.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-İşleç ekler `val` belleğe ve ardından ham depolama yineleyici için bir başvuru döndürür.
+İşleci belleğe `val` ekler ve sonra ham depolama yineleyici için bir başvuru döndürür.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Gereksinimleri bir `ForwardIterator` ham depolama yineleyici karşılamalıdır durumu yalnızca ifade gerektiren \* *II* = *t* geçerli olması ve hiçbir şey hakkında söylüyor **işleci** veya `operator=` kendi. Bu üye işleçleri dönüş  **\*bu**.
+Ham depolama yineleyicisinin karşılaması gereken `ForwardIterator` bir durum için gereksinimler yalnızca Expression \* *ıı* = *t* 'nin geçerli olması ve **işleç** ya da kendi üzerinde `operator=` herhangi bir şey söymesini gerektirir. Bu üye işleçleri **\*** döndürür.
 
-Atama işleci depolanmış yineleyiciyi değerini, ilk olarak, yerleştirme yeni ifadesinin değerlendirilmesi kullanarak çıkış dizisinde sonraki nesne oluşturan **yeni** (( `void` \*) &\* **ilk**) **türü**( `val`).
+Atama işleci ilk olarak, **yeni ifade (** (`void` \*) &\* **ilk**) **türü**(`val`) olarak hesaplanarak, önce depolanan yineleyici değerini kullanarak çıkış dizisinde bir sonraki nesneyi oluşturur.
 
 #### <a name="example"></a>Örnek
 
@@ -231,9 +231,9 @@ Copying 5
 Constructing 5
 ```
 
-### <a name="op_add_add"></a> operator ++
+### <a name="operator"></a><a name="op_add_add"></a>işleç + +
 
-Ham depolama yineleyiciler preincrement ve postincrement işleçler.
+Ham depolama yineleyiciler için preıncrement ve postıncrement işleçleri.
 
 ```cpp
 raw_storage_iterator<ForwardIterator, Type>& operator++();
@@ -247,13 +247,13 @@ Ham depolama yineleyici veya ham depolama yineleyici başvurusu.
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk işleç sonunda ayıklayın ve türünde bir nesne depolamayı dener `CharType` ilişkili giriş akışından. İkinci işleç, nesnenin bir kopyasını oluşturur, nesne artırır ve kopyayı döndürür.
+İlk operatör sonunda, ilişkili giriş akışından `CharType` türünde bir nesneyi ayıklamaya ve depolamaya çalışır. İkinci işleç nesnenin bir kopyasını yapar, nesneyi artırır ve sonra kopyayı döndürür.
 
-İlk preincrement işleci depolanan çıkış yineleyici nesnesini artırır ve döndürür  **\*bu**.
+İlk preıncrement işleci, depolanan çıkış yineleyici nesnesini artırır ve sonra **\*** döndürür.
 
-İkinci postincrement işleci bir kopyasını oluşturur  **\*bu**, depolanan çıkış yineleyici nesnesini artırır ve kopyayı döndürür.
+İkinci postıncrement işleci **bunun\*** bir kopyasını yapar, depolanan çıkış yineleyici nesnesini artırır ve sonra kopyayı döndürür.
 
-Oluşturucu depoları `first` çıkış yineleyici nesnesi olarak.
+Oluşturucu, `first` çıkış yineleyici nesnesi olarak depolar.
 
 #### <a name="example"></a>Örnek
 
@@ -288,9 +288,9 @@ array 3 = 6
 array 4 = 8
 ```
 
-### <a name="raw_storage_iterator"></a> raw_storage_iterator
+### <a name="raw_storage_iterator"></a><a name="raw_storage_iterator"></a>raw_storage_iterator
 
-Belirtilen temel alınan bir çıkış yineleyici ile bir ham depolama yineleyici oluşturur.
+Belirtilen temel alınan çıkış yineleyicisini içeren bir ham depolama yineleyici oluşturur.
 
 ```cpp
 explicit raw_storage_iterator(ForwardIterator first);
@@ -299,7 +299,7 @@ explicit raw_storage_iterator(ForwardIterator first);
 #### <a name="parameters"></a>Parametreler
 
 *ilk*\
-Temelini oluşturan için ileriye doğru yineleyici `raw_storage_iterator` yapılandırılan bir nesne.
+Oluşturulan `raw_storage_iterator` nesnesini yetersiz duruma getirmek için kullanılan ileri Yineleyici.
 
 #### <a name="example"></a>Örnek
 

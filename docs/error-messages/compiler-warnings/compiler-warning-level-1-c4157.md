@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4157
 ms.assetid: 6dabc303-eba1-4a8e-a124-a6e1dc84f4bd
-ms.openlocfilehash: 0d411756278cd8def2999eedddeb5921d09341ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 45ac28a2dd9442f7b8f012abcae22c7c4a1676ed
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391874"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176201"
 ---
 # <a name="compiler-warning-level-1-c4157"></a>Derleyici Uyarısı (düzey 1) C4157
 
-pragma C derleyicisi tarafından yoksayıldı
+pragma, C derleyicisi tarafından yoksayıldı
 
-Yalnızca C++ derleyici tanır **init_seg()**.
+Yalnızca C++ derleyici **init_seg ()** tanır.

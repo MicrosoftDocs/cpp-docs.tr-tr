@@ -10,28 +10,28 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
-ms.openlocfilehash: 1740a34036798dac69ffc8b486e03bf6439845a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 712910aca2622f2678b8b9d06b18a2fdbf9157e4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395995"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213349"
 ---
 # <a name="connecting-to-a-data-source"></a>Veri Kaynağına Bağlanma
 
-ODBC veri kaynağında verileri, verilerin yanı sıra, bir veri kaynağı adını kullanarak açıklanan veri kaynağının konumu erişmek için gereken bilgileri belirli bir kümesidir. Programınızın açısından bakıldığında, verileri, DBMS, ağ (varsa) ve ODBC veri kaynağını içerir.
+ODBC veri kaynağı, belirli bir veri kümesidir, bu verilere erişmek için gereken bilgiler ve veri kaynağının konumu veri kaynağı adı kullanılarak açıklanabilir. Programınızın bakış noktasından veri kaynağı, verileri, DBMS 'yi, ağı (varsa) ve ODBC 'yi içerir.
 
-Bir veri kaynağı tarafından sağlanan verilere erişmek için programınızı ilk veri kaynağı bağlantısı oluşturmanız gerekir. Tüm veri erişimi, bu bağlantı üzerinden yönetilir.
+Bir veri kaynağı tarafından sunulan verilere erişmek için, programınızın öncelikle veri kaynağıyla bağlantı kurması gerekir. Tüm veri erişimleri Bu bağlantı üzerinden yönetilir.
 
-Veri kaynağı bağlantıları sınıfı tarafından Kapsüllenen [CDatabase](../../mfc/reference/cdatabase-class.md). Olduğunda bir `CDatabase` nesnesi, bir veri kaynağına bağlı olduğundan, aşağıdakileri yapabilirsiniz:
+Veri kaynağı bağlantıları, [CDatabase](../../mfc/reference/cdatabase-class.md)sınıfına göre kapsüllenir. Bir `CDatabase` nesnesi bir veri kaynağına bağlandığında şunları yapabilirsiniz:
 
-- Oluşturmak [kayıt kümeleri](../../mfc/reference/crecordset-class.md), tablolar veya sorguların kayıtları seçin.
+- Tablolardan veya sorgulardan kayıtları seçmek için [kayıt kümeleri](../../mfc/reference/crecordset-class.md)oluşturun.
 
-- Yönetme [işlemleri](../../data/odbc/transaction-odbc.md), toplu güncelleştirmeler tüm veri kaynağına teslim tek seferde (veya veri kaynağına geri değişmeden, bu nedenle tüm işlem alınır) — veri kaynağı işlemleri gerekli düzeyi destekliyorsa.
+- [İşlemleri](../../data/odbc/transaction-odbc.md)yönetin, tüm güncelleştirmeler toplu olarak veri kaynağına uygulanır. veri kaynağı gerekli işlem düzeyini destekliyorsa, tüm işlem, veri kaynağı değiştirilmeden geri alınır.
 
-- Doğrudan yürütme [SQL](../../data/odbc/sql.md) deyimleri.
+- Doğrudan [SQL](../../data/odbc/sql.md) deyimlerini yürütün.
 
-Veri kaynağı bağlantısı ile çalışmayı bitirdiğinizde, siz kapatana `CDatabase` nesne ve onu yok veya yeniden kullanmak için yeni bir bağlantı. Veri kaynağı bağlantıları hakkında daha fazla bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).
+Bir veri kaynağı bağlantısıyla çalışmayı bitirdiğinizde `CDatabase` nesnesini kapatır ve bunu yok edin ya da yeni bir bağlantı için yeniden kullanın. Veri kaynağı bağlantıları hakkında daha fazla bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -39,12 +39,12 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: 6d973ad444f719b905af5a33e47ef28f4895111f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 9324e3dc5c6691a7b50f137da1fad446b416e968
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447295"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167855"
 ---
 # <a name="how-to-edit-an-image"></a>Nasıl yapılır: görüntü düzenleme
 
@@ -55,7 +55,7 @@ Bir görüntünün kesmek, kopyalamak, temizlemek, yeniden boyutlandırmak, ters
 
 Ayrıca, bir seçimden özel bir fırça da oluşturabilirsiniz. Daha fazla bilgi için bkz. [özel fırça oluşturma](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-## <a name="how-to"></a>Nasıl yapılır?
+## <a name="how-to"></a>Nasıl yapılır
 
 Bir görüntüyü düzenlemek için bkz. nasıl yapılır:
 
@@ -216,7 +216,7 @@ Geliştirme ortamındaki görüntüleri, tıpkı herhangi bir grafik uygulaması
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

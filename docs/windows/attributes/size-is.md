@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-ms.openlocfilehash: 504f1bf72b8ffa15e8df50bb00c86ef909688f1e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c511901b3da03d14b1a09e178b70e8f78cd00f8c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514031"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166256"
 ---
 # <a name="size_is"></a>size_is
 
@@ -30,11 +30,11 @@ Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Size_is** C++ özniteliği, [size_is](/windows/win32/Midl/size-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Size_is** C++ özniteliği [size_is](/windows/win32/Midl/size-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) örneği.
+Dizinin bir bölümünü belirtme örneği için [first_is](first-is.md) örneğe bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -44,7 +44,7 @@ Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) ö
 |-|-|
 |**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|`max_is`|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

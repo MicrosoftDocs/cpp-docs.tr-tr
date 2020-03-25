@@ -9,32 +9,32 @@ helpviewer_keywords:
 - type information, run-time type checking
 - run-time checks, type checking
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
-ms.openlocfilehash: 1d11ee3ea472f935120c59f0faefee905361ee97
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 195274d7bcef0ff4d82383a8ec828ca9267573b0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267408"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178944"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
 
-Çalışma zamanı tür bilgisini (RTTI) program yürütme sırasında belirlenmesi için bir nesne türünü izin veren mekanizmadır. Sınıf kitaplıklarının birçok satıcı bu işlevselliği kendilerini uygulama çünkü RTTI C++ dil eklendi. Bu kitaplıklar arasında uyumsuzluk nedeniyle. Bu nedenle, belirgin hale için dil düzeyinde gerekli bir çalışma zamanı türü bilgileri destekler.
+Çalışma zamanı türü bilgileri (RTTı), program yürütme sırasında bir nesne türünün belirlenmesine izin veren bir mekanizmadır. RTTı, C++ sınıf kitaplıklarının birçok satıcısı bu işlevin kendilerini uyguladığı için dile eklendi. Bu, kitaplıklar arasındaki uyumsuzluklara neden oldu. Bu nedenle, dil düzeyinde çalışma zamanı tür bilgileri desteğinin gerekli olduğu belirgin hale gelmiştir.
 
-Netlik sağlamak, bu tartışma RTTI işaretçileri neredeyse tamamen büyük/küçük harf sınırlıdır. Bununla birlikte, açıklanan kavramları başvurular için de geçerlidir.
+Netliği sağlamak için RTTı 'nin bu tartışması, işaretçilerle neredeyse tamamen kısıtlıdır. Ancak, tartışılan kavramlar da başvurular için de geçerlidir.
 
-Çalışma zamanı türü bilgileri için üç ana C++ dil öğeleri şunlardır:
+Çalışma zamanı türü bilgileri C++ için üç ana dil öğesi vardır:
 
 - [Dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.
 
-   Çok biçimli türlerin dönüştürülmesi için kullanılır.
+   Polimorfik türlerin dönüştürülmesi için kullanılır.
 
-- [TypeID](../cpp/typeid-operator.md) işleci.
+- [TypeId](../cpp/typeid-operator.md) işleci.
 
-   Bir nesnenin tam tür tanımlamak için kullanılır.
+   Bir nesnenin tam türünü belirlemek için kullanılır.
 
 - [Type_info](../cpp/type-info-class.md) sınıfı.
 
-   Tarafından döndürülen tür bilgileri tutmak için kullanılan **TypeID** işleci.
+   **TypeId** işlecinin döndürdüğü tür bilgilerini tutmak için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

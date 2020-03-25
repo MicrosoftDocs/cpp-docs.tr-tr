@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CreateClassFactory function
 ms.assetid: 772d5d1b-8872-4745-81ca-521a39564713
-ms.openlocfilehash: 323fce053707d6d00d1e17b641613d15607ab6f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0467a9a1341e29a61a3b32d999769b01385f641f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398660"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214064"
 ---
 # <a name="createclassfactory-function"></a>CreateClassFactory İşlevi
 
-Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.
+Belirtilen sınıfın örneklerini üreten bir fabrika oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,31 +32,31 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*<br/>
-Bir veya daha fazla birleşimi [RuntimeClassType](runtimeclasstype-enumeration.md) sabit listesi değerleri.
+*larına*<br/>
+Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değerinin birleşimi.
 
 *entry*<br/>
-İşaretçi bir [CreatorMap](creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren *riid*.
+Başlatma *ve parametreli parametre*hakkında bilgi Içeren bir [CreatorMap](creatormap-structure.md) işaretçisi.
 
-*riid*<br/>
-Başvuru için bir arabirim kimliği.
+*riıd*<br/>
+Arabirim KIMLIĞINE başvuru.
 
 *ppFactory*<br/>
-Bu işlem bir sınıf üreteci için bir işaretçi başarıyla tamamlanırsa.
+Bu işlem başarıyla tamamlanırsa, bir sınıf fabrikası işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Assert hata durumunda yayıldığını şablon parametresi *Fabrika* arabiriminden türetilen değil `IClassFactory`.
+Şablon parametre *fabrikası* `IClassFactory`arabiriminden türetilmezse bir onaylama hatası yayınlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** Module. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

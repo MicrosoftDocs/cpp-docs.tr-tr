@@ -10,12 +10,12 @@ helpviewer_keywords:
 - based pointers
 - pointers, based
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
-ms.openlocfilehash: 393fe8f8d12266650740942d0605152b6548d146
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: f16e9f6582ae846c0c19fc1dcbd86f09baba713e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857703"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181401"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C++)
 

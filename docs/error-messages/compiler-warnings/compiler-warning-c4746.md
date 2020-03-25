@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4746
 ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
-ms.openlocfilehash: 9e761deb1b8c1b00e025f49775a845d07985fd2c
-ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
+ms.openlocfilehash: 7179e2e6d4ec44355e7338ffc4e9ba36f5de47e4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810575"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165112"
 ---
 # <a name="compiler-warning-c4746"></a>Derleyici Uyarısı C4746
 

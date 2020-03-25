@@ -8,12 +8,12 @@ helpviewer_keywords:
 - functions [C++], void
 - pointers, void
 ms.assetid: d203edba-38e6-4056-8b89-011437351057
-ms.openlocfilehash: 8a2c74e9ace77e38587209a0ad6fdc03b07cc3ad
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 2de019f908942a58b232877fcd9eebc4689d8e22
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301762"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187485"
 ---
 # <a name="void-c"></a>void (C++)
 

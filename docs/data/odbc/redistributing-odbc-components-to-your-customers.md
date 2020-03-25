@@ -9,22 +9,22 @@ helpviewer_keywords:
 - components [C++]
 - components [C++], redistributing
 ms.assetid: 17b065b4-a307-4b89-99ac-d05831cfab87
-ms.openlocfilehash: 1a6ec6f5fdd3c32080d357ca58d31ccea271b7a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d4d3948add665c54be3d3b0596a7a6fc0e414f5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330082"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212738"
 ---
 # <a name="redistributing-odbc-components-to-your-customers"></a>ODBC Bileşenlerini Müşterilerinize Yeniden Dağıtma
 
-ODBC Yöneticisi programları işlevselliğini uygulamanıza eklemenize, kullanıcılarınıza bu programları çalıştırmak dosyaları da dağıtmanız gerekir. Bu ODBC dosyaları Visual C++ CD-ROM \OS\System dizininde bulunur. Redistrb.wri dosya ve lisans sözleşmesini aynı dizinde yeniden dağıtabilirsiniz ODBC dosyaların bir listesini içerir.
+ODBC Yöneticisi programlarının işlevselliğini uygulamanıza eklerseniz, bu programları çalıştıran dosyaları kullanıcılarınıza da dağıtmanız gerekir. Bu ODBC dosyaları, Visual C++ CD-ROM ' un \OS\System dizininde bulunur. Redistrb. wri dosyası ve lisans sözleşmesi aynı dizinde yeniden dağılayabilmeniz için bir ODBC dosyaları listesi içerir.
 
-Dağıtmayı planladığınız herhangi bir ODBC sürücüleri için belgelerine bakın. Hangi DLL'lerin ve diğer dosyaları göndermeye belirlemeniz gerekir. Ayrıca okumalıdır [ODBC bileşenlerini müşterilerinize yeniden dağıtma](../../data/odbc/redistributing-odbc-components-to-your-customers.md), ODBC bileşenleri yeniden dağıtma açıklanır.
+Teslim etmek istediğiniz tüm ODBC sürücüleri için belgelere başvurun. Hangi dll 'Lerin ve diğer dosyaların sevk edilecek olduğunu belirlemeniz gerekir. Ayrıca, ODBC bileşenlerinin nasıl yeniden dağıtılacağını açıklayan, [MÜŞTERILERINIZE ODBC bileşenlerini yeniden dağıtma](../../data/odbc/redistributing-odbc-components-to-your-customers.md)konusunu da okumalısınız.
 
-Ayrıca, çoğu durumda başka bir dosya eklemek gerekir. ODBC imleç kitaplığı Odbccr32.dll var. Bu kitaplık, düzey 1 sürücüleri İleri ve geri gezinme özelliği sağlar. Ayrıca, anlık görüntüleri destekleme yeteneği sağlar. ODBC İmleç Kitaplığı hakkında daha fazla bilgi için bkz: [ODBC: ODBC İmleç Kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md).
+Ayrıca, çoğu durumda başka bir dosya dahil etmeniz gerekir. ODBCCR32. dll, ODBC Imleç kitaplığı. Bu kitaplık, 1. düzey sürücülere ileri ve geri kaydırma özelliği verir. Ayrıca, anlık görüntüleri destekleme özelliği de sağlar. ODBC Imleç kitaplığı hakkında daha fazla bilgi için bkz. [ODBC: ODBC Imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md).
 
-Aşağıdaki konular, ODBC ile veritabanı sınıflarını kullanma hakkında daha fazla bilgi sağlar:
+Aşağıdaki konularda, veritabanı sınıflarıyla ODBC kullanma hakkında daha fazla bilgi sağlanmaktadır:
 
 - [ODBC: ODBC İmleç Kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)
 

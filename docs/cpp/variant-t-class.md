@@ -10,50 +10,50 @@ helpviewer_keywords:
 - VARIANT object
 - VARIANT object [C++], COM encapsulation
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
-ms.openlocfilehash: 69976cab9caed653a8278f80821569b613f690eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e11d31904fd8e54049f69ee4f6530d511c8c7f4e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165958"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187758"
 ---
-# <a name="variantt-class"></a>_variant_t Sınıfı
+# <a name="_variant_t-class"></a>_variant_t Sınıfı
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-A **_variant_t** kapsülleyen nesne `VARIANT` veri türü. Sınıf kaynak ayırmayı ve ayırmayı yönetir ve işlev çağrıları yapan `VariantInit` ve `VariantClear` uygun şekilde.
+**_Variant_t** nesne `VARIANT` veri türünü kapsüller. Sınıfı, kaynak ayırmayı ve ayırmayı yönetir ve uygun şekilde `VariantInit` ve `VariantClear` işlev çağrıları yapar.
 
-### <a name="construction"></a>Oluşturma
+### <a name="construction"></a>İnşaat
 
 |||
 |-|-|
-|[_variant_t](../cpp/variant-t-variant-t.md)|Oluşturur bir **_variant_t** nesne.|
+|[_variant_t](../cpp/variant-t-variant-t.md)|**_Variant_t** nesnesi oluşturur.|
 
 ### <a name="operations"></a>İşlemler
 
 |||
 |-|-|
-|[Attach](../cpp/variant-t-attach.md)|Bağlanan bir `VARIANT` içine nesne **_variant_t** nesne.|
-|[Temizle](../cpp/variant-t-clear.md)|Kapsüllenmiş temizler `VARIANT` nesne.|
-|[ChangeType](../cpp/variant-t-changetype.md)|Değişiklikleri türde **_variant_t** belirtilen nesneye `VARTYPE`.|
-|[Detach](../cpp/variant-t-detach.md)|Kapsüllenmiş ayırır `VARIANT` bu nesneden **_variant_t** nesne.|
-|[SetString](../cpp/variant-t-setstring.md)|Bir dize için atar **_variant_t** nesne.|
+|[Attach](../cpp/variant-t-attach.md)|**_Variant_t** nesnesine bir `VARIANT` nesnesi ekler.|
+|[Lediğiniz](../cpp/variant-t-clear.md)|Encapsulated `VARIANT` nesnesini temizler.|
+|[ChangeType](../cpp/variant-t-changetype.md)|**_Variant_t** nesnesinin türünü belirtilen `VARTYPE`değiştirir.|
+|[Detach](../cpp/variant-t-detach.md)|Bu **_variant_t** nesnesinden kapsüllenmiş `VARIANT` nesnesini ayırır.|
+|[SetString](../cpp/variant-t-setstring.md)|Bu **_variant_t** nesnesine bir dize atar.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](../cpp/variant-t-operator-equal.md)|Mevcut bir yeni bir değer atar **_variant_t** nesne.|
-|[işleç ==,! =](../cpp/variant-t-relational-operators.md)|Karşılaştırabilirsiniz **_variant_t** eşitlik ve eşitsizlik için nesneleri.|
-|[Ayıklayıcıları](../cpp/variant-t-extractors.md)|Kapsüllenmiş verileri ayıklamak `VARIANT` nesne.|
+|[İşleç =](../cpp/variant-t-operator-equal.md)|Varolan bir **_variant_t** nesnesine yeni bir değer atar.|
+|[işleç = =,! =](../cpp/variant-t-relational-operators.md)|Eşitlik veya eşitsizlik için iki **_variant_t** nesnesini karşılaştırın.|
+|[Ayıklayıcıları](../cpp/variant-t-extractors.md)|Encapsulated `VARIANT` nesnesinden veri ayıklayın.|
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<comutil.h >
+**Üstbilgi:** \<comutil. h >
 
-**Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)
+**Lib:** comsuppw. lib veya comsuppwd. lib (daha fazla bilgi için bkz. [/zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

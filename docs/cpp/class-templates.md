@@ -6,16 +6,16 @@ helpviewer_keywords:
 - class templates
 - templates, class templates
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
-ms.openlocfilehash: 1bf384967af9d6d639e11df882751bbdaf1b0aa6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36c5263213b5ef348bb341a83da097db7dbb1d9d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188401"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180920"
 ---
 # <a name="class-templates"></a>Sınıf Şablonları
 
-Bu konuda, C++ sınıf şablonları için özel kurallar açıklanmaktadır.
+Bu konuda, C++ sınıf şablonlarına özgü kurallar açıklanmaktadır.
 
 ## <a name="member-functions-of-class-templates"></a>Sınıf şablonlarının üye işlevleri
 
@@ -75,13 +75,13 @@ int main()
 }
 ```
 
-## <a name="nested-class-templates"></a>İç içe geçmiş sınıf şablonları
+## <a name="nested-class-templates"></a>İç içe sınıf şablonları
 
-Şablonları sınıflar veya sınıf şablonları içinde tanımlanan, bu durumda bunlar için üye şablonları adlandırılır. Sınıf üye şablonları, iç içe geçmiş sınıf şablonları adlandırılır. İşlevleri, üye şablonları açıklanmıştır [üye işlev şablonları](../cpp/member-function-templates.md).
+Şablonlar, sınıflar veya sınıf şablonları içinde tanımlanabilir, bu durumda üye şablonları olarak adlandırılır. Sınıf olan üye şablonları, iç içe sınıf şablonları olarak adlandırılır. İşlev olan üye şablonları [üye Işlev şablonlarında](../cpp/member-function-templates.md)ele alınmıştır.
 
-İç içe geçmiş sınıf şablonları, dış sınıf kapsamı içinde sınıf şablonları olarak bildirilir. Bunlar, içinde veya kapsayan sınıfa dışında tanımlanabilir.
+İç içe sınıf şablonları, dış sınıfın kapsamı içinde sınıf şablonları olarak bildirilmiştir. Bunlar kapsayan sınıfın içinde veya dışında tanımlanabilir.
 
-Aşağıdaki kodda, sıradan bir sınıf içinde iç içe geçmiş sınıf şablonu gösterilmektedir.
+Aşağıdaki kod, sıradan bir sınıf içinde iç içe yerleştirilmiş sınıf şablonunu gösterir.
 
 ```cpp
 // nested_class_template1.cpp
@@ -195,7 +195,7 @@ Yerel sınıfların üye şablonlarına sahip olmasına izin verilmez.
 
 ## <a name="template-friends"></a>Şablon arkadaşları
 
-Sınıf şablonları olabilir [arkadaş](friend-cpp.md). Bir sınıf veya sınıf şablonu, işlev ya da işlev şablonu şablon sınıfının arkadaşı olabilir. Arkadaşlar, sınıf şablonunun veya işlev şablonunun da uzmanlıkları olabilir, ancak kısmi uzmanlıklar olamaz.
+Sınıf şablonlarının [arkadaşları](friend-cpp.md)olabilir. Bir sınıf veya sınıf şablonu, işlev ya da işlev şablonu şablon sınıfının arkadaşı olabilir. Arkadaşlar, sınıf şablonunun veya işlev şablonunun da uzmanlıkları olabilir, ancak kısmi uzmanlıklar olamaz.
 
 Aşağıdaki örnekte, bir arkadaş işlevi sınıf şablonu içinde işlev şablonu olarak tanımlanır. Bu kod, şablonun her örneği için arkadaş işlevinin sürümünü oluşturur. Bu yapı, arkadaş işleviniz sınıfla aynı şablon parametrelerine bağlıysa yararlı olur.
 
@@ -411,9 +411,9 @@ A
 a
 ```
 
-## <a name="reuse-of-template-parameters"></a>Şablon parametrelerinin yeniden kullanımı
+## <a name="reuse-of-template-parameters"></a>Şablon parametrelerinin yeniden kullanılması
 
-Şablon parametreleri şablon parametre listesinde yeniden kullanılabilir. Örneğin, aşağıdaki koda izin verilir:
+Şablon parametreleri, şablon parametre listesinde yeniden kullanılabilir. Örneğin, aşağıdaki koda izin verilir:
 
 ```cpp
 // template_specifications2.cpp

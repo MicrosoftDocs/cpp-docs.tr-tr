@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C4502
 ms.assetid: d8d43153-a40c-4b96-bc11-64028a144d70
-ms.openlocfilehash: 2aa436ffc7a74392d71fe854c93f8bd5ff5e0563
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: afec782b72f9b779430ab7cb30f22fbadda90d73
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160880"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186588"
 ---
 # <a name="compiler-warning-level-1-c4502"></a>Derleyici Uyarısı (düzey 1) C4502
 
-'linkage specification' 'extern' anahtar sözcüğünün kullanılmasını gerektirir ve diğer tüm belirticilerden önce gelmelidir
+' bağlantı belirtimi ' ' extern ' anahtar sözcüğünün kullanılmasını gerektirir ve diğer tüm belirticilerden önce gelmelidir
 
-Bir bağlantı olmadan belirtildi `extern` anahtar sözcüğü. Bağlantı extern olmayan türleri için geçerli değildir.
+`extern` anahtar sözcüğü olmadan bir bağlantı belirtildi. Bağlantı, extern olmayan türlerle ilgili değildir.
 
-Kabul derleyici `extern` anahtar sözcüğü.
+Derleyici `extern` anahtar sözcüğünü kabul edildi.

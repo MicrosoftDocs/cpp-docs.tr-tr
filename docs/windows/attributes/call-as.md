@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: f36cf8d1be589cc614a6def583b00af00aabdb61
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 755741faec6c0ba702d372ca8dee486edcb72ef3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501801"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167347"
 ---
 # <a name="call_as"></a>call_as
 
@@ -30,11 +30,11 @@ Uzak bir işlev çağrıldığında çağrılmasını istediğiniz yerel işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Call_as** C++ özniteliği, [call_as](/windows/win32/Midl/call-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Call_as** C++ özniteliği [call_as](/windows/win32/Midl/call-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, Uzaktan erişilebilir olmayan bir işlevi (`f1`) uzaktan erişilebilen bir işleve`Remf1`() eşlemek için call_as 'i nasıl kullanabileceğinizi gösterir:
+Aşağıdaki kod, Uzaktan erişilebilir olmayan bir işlevi (`f1`) uzaktan erişilebilen bir işleve (`Remf1`) eşlemek için **call_as** nasıl kullanabileceğinizi gösterir:
 
 ```cpp
 // cpp_attr_ref_call_as.cpp
@@ -56,8 +56,8 @@ __interface IMInterface {
 |-|-|
 |**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

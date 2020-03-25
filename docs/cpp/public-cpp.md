@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - public keyword [C++]
 ms.assetid: f3e10a59-39f6-4bcd-827e-3e99f8f89497
-ms.openlocfilehash: 24cc4dd3cd7e0c893664339e7ad83383839b0b11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dd45430543ead7258096be8f3d8cef0141f27b4e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244482"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179198"
 ---
 # <a name="public-c"></a>public (C++)
 
@@ -25,22 +25,22 @@ public base-class
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf üyeleri listesi önce geldiği zaman **genel** anahtar sözcüğü, bu üyeler herhangi bir işlevden erişilebilir olduğunu belirtir. Bu, sonraki erişim belirticisi veya sınıf sonuna kadar bildirilen tüm üyeleri için geçerlidir.
+Sınıf üyeleri listesinden önce, **Public** anahtar sözcüğü, bu üyelerin herhangi bir işlevden erişilebilir olduğunu belirtir. Bu, bir sonraki erişim tanımlayıcısına veya sınıfın sonuna kadar belirtilen tüm Üyeler için geçerlidir.
 
-Bir temel sınıfın adından önce zaman **genel** anahtar sözcüğü, temel sınıfın genel ve korumalı üyelerinin genel olduğunu belirtir ve korumalı üyeler, sırasıyla türetilmiş sınıf.
+Bir temel sınıfın adından önce, **Public** anahtar sözcüğü, temel sınıfın ortak ve korunan üyelerinin, türetilmiş sınıfın sırasıyla ortak ve korumalı Üyeler olduğunu belirtir.
 
-Bir sınıf içinde üyelerin varsayılan erişimi özeldir. Bir yapı veya birleşim üyelerin varsayılan erişimi geneldir.
+Bir sınıftaki üyelerin varsayılan erişimi özeldir. Bir yapıda veya birleşimde üyelerin varsayılan erişimi geneldir.
 
-Özel sınıfları ve yapıları için ortak bir taban sınıfın varsayılan erişim. Birleşimlerin temel sınıfları olamaz.
+Temel sınıfa varsayılan erişim sınıflar için özeldir ve yapılar için geneldir. Birleşimler temel sınıflara sahip olamaz.
 
-Daha fazla bilgi için [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md), [arkadaş](../cpp/friend-cpp.md)ve üye erişimi tablosu [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) .
+Daha fazla bilgi için bkz. [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md)içindeki [özel](../cpp/private-cpp.md), [korunan](../cpp/protected-cpp.md), [arkadaş](../cpp/friend-cpp.md)ve üye erişim tablosu.
 
 ## <a name="clr-specific"></a>/clr Özel
 
-CLR türlerinde, C++ erişim belirtici anahtar sözcükleri (**genel**, **özel**, ve **korumalı**) türler ve Derlemelerle yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için [üye erişim denetimi](member-access-control-cpp.md).
+C++ CLR türlerinde, erişim belirleyicisi anahtar sözcükleri (**genel**, **özel**ve **korumalı**) derlemelerle ilgili olarak türlerin ve yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için bkz. [üye Access Control](member-access-control-cpp.md).
 
 > [!NOTE]
->  İle derlenmiş dosyalar [/LN](../build/reference/ln-create-msil-module.md) Bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.
+>  [/Ln](../build/reference/ln-create-msil-module.md) ile derlenen dosyalar bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.
 
 ## <a name="end-clr-specific"></a>END /clr Özel
 

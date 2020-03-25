@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - U1056
 ms.assetid: da855728-b69e-413c-83ed-df912126215e
-ms.openlocfilehash: b15b14c04dd91ae648ea4311612c122f04f90477
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10131e518fa608292fff58672ede36390bcd665b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367271"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182909"
 ---
 # <a name="nmake-fatal-error-u1056"></a>NMAKE Önemli Hatası U1056
 
-Komut işlemcisi bulunamıyor
+komut işlemcisi bulunamıyor
 
-Komut işleyicisi, belirtilen yolu değildi **COMSPEC** veya **yolu** ortam değişkenleri.
+Komut işlemcisi **ComSpec** veya **Path** ortam değişkenlerinde belirtilen yolda değil.
 
-NMAKE Command.COM'DUR veya CMD'yi kullanır. EXE komutları yürütülürken bir komut işlemcisini olarak. Komut işleyici için ilk kümesinde yolunda görünüyor **COMSPEC**. Varsa **COMSPEC** yok, dizinleri belirtilen NMAKE aramaları **yolu**.
+NMAKE, COMMAND.COM veya CMD kullanır. Komutları yürütürken komut işlemcisi olarak EXE. **ComSpec**'te ayarlanan yol içinde ilk olarak komut işlemcisini arar. **ComSpec** yoksa, NMAKE **yolda**belirtilen dizinleri arar.

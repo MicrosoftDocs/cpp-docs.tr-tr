@@ -1,19 +1,19 @@
 ---
-title: C++'ta constexpr lambda ifadeleri
+title: içinde constexpr lambda ifadeleriC++
 ms.date: 04/08/2019
 helpviewer_keywords:
 - lambda expressions [C++], constexpr
 ms.assetid: b56346cd-fbff-475f-aeaa-ed2010c6d6f7
-ms.openlocfilehash: d1bc60a6da813e54c857da38b0164f544216be00
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9467d9e404204012df6461adacd5dc4cdbdfe71d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368701"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179581"
 ---
-# <a name="constexpr-lambda-expressions-in-c"></a>C++'ta constexpr lambda ifadeleri
+# <a name="constexpr-lambda-expressions-in-c"></a>içinde constexpr lambda ifadeleriC++
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir lambda ifadesi olarak bildirilebilir **constexpr** veya sabit bir ifade içinde yakalayan veya tanıtır her bir veri üyesinin başlatılması izin verildiğinde sabit bir ifadede kullanılamaz.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)Ile kullanılabilir): bir lambda ifadesi, yakalanan veya tanıtan her bir veri üyesinin başlatılmasına bir sabit ifade dahilinde izin verildiğinde, **constexpr** olarak veya sabit bir ifadede kullanılıyor olabilir.
 
 ```cpp
     int y = 32;
@@ -29,7 +29,7 @@ ms.locfileid: "62368701"
     }
 ```
 
-Bir lambda örtülü olarak başvuruluyor **constexpr** sonucunu gereksinimlerini karşılayıp karşılamadığını bir **constexpr** işlevi:
+Lambda, sonucu bir **constexpr** işlevinin gereksinimlerini karşılıyorsa, dolaylı olarak **constexpr** olur:
 
 ```cpp
     auto answer = [](int n)
@@ -40,7 +40,7 @@ Bir lambda örtülü olarak başvuruluyor **constexpr** sonucunu gereksinimlerin
     constexpr int response = answer(10);
 ```
 
-Bir lambda, örtük veya açık ise **constexpr**ve bir işlev işaretçisine dönüştürme, elde edilen işlevi ayrıca **constexpr**:
+Lambda örtük veya açık bir şekilde **constexpr**ise ve bunu bir işlev işaretçisine dönüştürürseniz, sonuçta elde edilen işlev da **constexpr**olur:
 
 ```cpp
     auto Increment = [](int n)

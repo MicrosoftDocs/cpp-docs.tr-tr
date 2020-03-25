@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - WCodeToHRESULT method [C++]
 ms.assetid: 0ec43a4b-ca91-42d5-b270-3fde9c8412ea
-ms.openlocfilehash: f2fc84be53d95754d21c30eaea8dd981447453d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2194e0e54a93d3227b84d893f9d3f208d972d09
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154935"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180517"
 ---
-# <a name="comerrorwcodetohresult"></a>_com_error::WCodeToHRESULT
+# <a name="_com_errorwcodetohresult"></a>_com_error::WCodeToHRESULT
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-16-bit eşler *wCode* 32 bitlik HRESULT için.
+16 bit *wCode* 'u 32-bit HRESULT 'e eşler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,18 +29,18 @@ static HRESULT WCodeToHRESULT(
 
 #### <a name="parameters"></a>Parametreler
 
-*WCode*<br/>
-16 bit *wCode* 32 bitlik HRESULT eşlendi.
+*wCode*<br/>
+32-bit HRESULT ile eşlenecek 16 bit *wCode* .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-16-bit eşleştirilmiş 32 bitlik HRESULT *wCode*.
+32-bit HRESULT, 16 bit *wCode*'dan eşlendi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [WCode](../cpp/com-error-wcode.md) üye işlevi.
+Bkz. [wCode](../cpp/com-error-wcode.md) üye işlevi.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

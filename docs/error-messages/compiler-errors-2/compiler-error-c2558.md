@@ -1,30 +1,30 @@
 ---
-title: Derleyici Hatası C2558
+title: Derleyici hatası C2558
 ms.date: 11/04/2016
 f1_keywords:
 - C2558
 helpviewer_keywords:
 - C2558
 ms.assetid: 822b701e-dcae-423a-b21f-47f36aff9c90
-ms.openlocfilehash: b0dca0b19d427cf83238c824739d288a1cfd54d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93b6e414f26c56702a1c7ac12863cbcd5063b570
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353020"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177501"
 ---
-# <a name="compiler-error-c2558"></a>Derleyici Hatası C2558
+# <a name="compiler-error-c2558"></a>Derleyici hatası C2558
 
 'tanımlayıcı' : kullanılabilir kopya oluşturucu yok ya da kopya oluşturucu 'açık' olarak belirtildi
 
-Kopya oluşturucusu, bir nesneyi aynı türde başka bir nesneden başlatır. (Nesnenin bir kopyasını alır.) Derleyici, herhangi bir oluşturucu tanımlamazsanız, varsayılan bir kopya oluşturucu yaratır.
+Kopya oluşturucusu, bir nesneyi aynı türde başka bir nesneden başlatır. (Nesnenin bir kopyasını oluşturur.) Herhangi bir Oluşturucu tanımlamadıysanız, derleyici varsayılan bir kopya Oluşturucu oluşturur.
 
 ### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için
 
-1. Kopya Oluşturucusu olan bir sınıfı kopyalama denemesi yapıldığında sorun oluşabilir `private`. Çoğu durumda, bir sınıf olan bir `private` kopya Oluşturucu kopyalanması gerekmez. Yaygın bir programlama tekniği bildiren bir `private` bir sınıfın doğrudan kullanımını önlemek için kopya Oluşturucu. Sınıf kendisi tarafından kullanılamayabilir ya da düzgün şekilde çalışması için başka bir sınıf gerektirebilir.
+1. Bu sorun, kopya Oluşturucusu `private`olan bir sınıfı kopyalamak için bir girişim yapıldığında oluşabilir. Çoğu durumda, `private` kopya oluşturucusuna sahip bir sınıf kopyalanmamalıdır. Ortak programlama tekniği, bir sınıfın doğrudan kullanımını engellemek için `private` kopya Oluşturucu bildirir. Sınıf kendisi tarafından kullanılamayabilir ya da düzgün şekilde çalışması için başka bir sınıf gerektirebilir.
 
-   Sahip bir sınıfı kullanmanın güvenli olduğunu belirlerseniz bir `private` kopya oluşturucusuna, sahip yeni bir sınıf türetin `private` oluşturucusu ve marka bir `public` veya `protected` Yeni sınıfta kullanılabilir kopya Oluşturucusu. Türetilen sınıfı orijinalinin yerine kullanın.
+   `private` kopya oluşturucusuna sahip bir sınıfın kullanılması güvenli olduğunu belirlerseniz, `private` oluşturucusuna sahip olan sınıftan yeni bir sınıf türetirsiniz ve yeni sınıfta bir `public` veya `protected` kopya Oluşturucusu kullanılabilir hale getirin. Türetilen sınıfı orijinalinin yerine kullanın.
 
-1. Kopya Oluşturucusu açık olan bir sınıfı kopyalamak için denemesi yapıldığında sorun oluşabilir. Olarak bir kopya Oluşturucu bildirilerek `explicit` geçişini/dönüşünü bir sınıfın işlevlere/işlevlerden engeller. Açık oluşturucular hakkında daha fazla bilgi için bkz: [kullanıcı tanımlı tür dönüşümleri](../../cpp/user-defined-type-conversions-cpp.md).
+1. Bu sorun, kopya Oluşturucusu açık olan bir sınıfı kopyalamak için bir girişim yapıldığında meydana gelebilir. `explicit` olarak bir kopya Oluşturucu bildirmek, bir sınıfın içindeki/from işlevlerine/döndürmeden nesneleri geçirmeyi/döndürmeyi önler. Açık oluşturucular hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı tür dönüştürmeleri](../../cpp/user-defined-type-conversions-cpp.md).
 
-1. Bildirilen bir sınıf örneği kopyalamak için bir deneme yapıldığında sorun oluşabilir `const` görüntüsünü bir kopya oluşturucu kullanılarak bir `const` parametre başvurusu. İle kopya Oluşturucu bildirin bir `const` başvurusu const olmayan tür başvurusu yerine yazın.
+1. Bu sorun, `const` başvuru parametresi olmayan bir kopya Oluşturucu kullanılarak `const` olarak belirtilen bir sınıf örneğini kopyalamaya yönelik bir girişim yapıldığında ortaya çıkabilir. Kopya oluşturucuyu const olmayan bir tür başvurusu yerine bir `const` tür başvurusuyla bildirin.

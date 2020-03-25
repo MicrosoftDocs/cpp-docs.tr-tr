@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C4711
 ms.assetid: 270506ab-fead-4328-b714-2978113be238
-ms.openlocfilehash: c10b19b39fcb40527c9e9276f47ecff42ca5a643
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e2adf3583012a670f936c2b86a9ddc393fe53c6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280392"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175343"
 ---
 # <a name="compiler-warning-level-1-c4711"></a>Derleyici Uyarısı (düzey 1) C4711
 
-Satır içi genişletme için seçilen'function ' işlevi
+satır içi genişletme için seçilen ' function ' işlevi
 
-İçin işaretlenmedi rağmen derleyici inlining'i verilen işlevi üzerinde gerçekleştirilen satır içi kullanım.
+Derleyici, belirtilen işlev üzerinde satır içine alındı, ancak satır içi olarak işaretlenmemiş.
 
-C4711 etkin olup [/ob2](../../build/reference/ob-inline-function-expansion.md) belirtilir.
+[/Ob2](../../build/reference/ob-inline-function-expansion.md) belirtilmişse C4711 etkinleştirilir.
 
-Satır içi kullanım derleyicinin denetiminde gerçekleştirilir. Bu uyarı, bilgi amaçlıdır.
+İç hat kullanımı derleyicinin kararına göre yapılır. Bu uyarı bilgilendirme amaçlıdır.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bir uyarı etkinleştirmek için [#pragma Uyarısı](../../preprocessor/warning.md). Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Bir uyarıyı etkinleştirmek için [#pragma uyarı](../../preprocessor/warning.md)kullanın. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .

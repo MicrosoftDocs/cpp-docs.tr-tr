@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1010
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
-ms.openlocfilehash: 0315af63e9fdbbb0b136a85a23cb28936dee6836
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: 40a2828ce6b21384ec49c371f23e506d816f1284
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273559"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204795"
 ---
 # <a name="fatal-error-c1010"></a>Önemli hata C1010
 
@@ -37,13 +37,13 @@ Bir projede önceden derlenmiş üst bilgi kullanımını devre dışı bırakma
 
 1. **Yapılandırma** açılır penceresinde **tüm yapılandırmalar**' ı seçin.
 
-1. **Yapılandırma özellikleri** > **C/C++** ön > **derlenmiş üstbilgiler** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri** > **C/C++**  > **önceden derlenmiş üstbilgiler** özellik sayfasını seçin.
 
 1. Özellik listesinde, **önceden derlenmiş üst bilgi** özelliği için açılan listeyi seçin ve ardından **önceden derlenmiş üst bilgileri kullanmayın**' ı seçin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 1. **Çözüm Gezgini** penceresinde, projenizdeki *pch. cpp* kaynak dosyasına sağ tıklayın. (Eski projelerde, dosya *stbafx. cpp*olarak adlandırılmış olabilir.) Derlemeden kaldırmak için **projeden hariç tut** ' ı seçin.
 
-1. Oluşturduğunuz her yapılandırma için **Yapı** > **Temizleme çözümü** menü komutunu kullanın, ara derleme dizinlerinizde *Project_Name. pch* dosyalarını silebilirsiniz.
+1. Oluşturduğunuz her yapılandırma için **derleme** > **Temizleme çözümü** menü komutunu kullanın, ara derleme dizinlerinizde *Project_Name. pch* dosyalarını silebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

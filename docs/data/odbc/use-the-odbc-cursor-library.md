@@ -5,16 +5,16 @@ helpviewer_keywords:
 - cursor library [ODBC], disabling
 - ODBC cursor library [ODBC], disabling
 ms.assetid: e89e41c4-78fd-4cb6-821f-4fb090f4b08b
-ms.openlocfilehash: 2bd762e64d9f742ade789e3c9571eb02d6f0ef2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84f3233bf6e12b4820a5b356d1c103307ccb7342
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393811"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212584"
 ---
 # <a name="use-the-odbc-cursor-library"></a>ODBC İmleç Kitaplığını Kullanma
 
-ODBC imleç kitaplığı aracılığıyla kayıt kümeleri aracılığıyla kaydırma yönetir. Bu konular imleç kitaplığı ile çalışmaya nasıl açıklar.
+ODBC, Imleç kitaplığı aracılığıyla kayıt kümelerinde kaydırmayı yönetir. Bu konularda, Imleç kitaplığıyla nasıl çalışılacağı açıklanmaktadır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

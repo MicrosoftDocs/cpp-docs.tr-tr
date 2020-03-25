@@ -9,16 +9,16 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: e9e4f9f62a3004e171eea9e3552d8a0f58923075
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76279b24002460b51bc2f67d4395ff271752d964
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376465"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215182"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 
-MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları içerir. Bunlar aracılığıyla eklenen `#include` deyimlerinde `StdAfx.h` dosyası:
+MFC projeleri her zaman Windows 'un desteklediği birkaç başlık dosyasını içerir. Bunlar `StdAfx.h` dosyasında `#include` deyimleri aracılığıyla eklenir:
 
 ```cpp
 #include <afxwin.h>      //MFC core and standard components
@@ -28,7 +28,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 #include <afxcmn.h>      //MFC support for Windows common controls.
 ```
 
-Üst bilgi dosyaları, MFC ortak değerleri için Sembol kimliği değerlerini içerir. Bu simgeleri, yalnızca bir MFC projesinde çalışırken kullanılabilir. `AFX_` Önek standart sembol adı önekleri tarafından izlenen.
+Üst bilgi dosyaları, MFC ortak değerlerinin sembol KIMLIĞI değerlerini içerir. Bu semboller yalnızca bir MFC projesinde çalışırken kullanılabilir. `AFX_` ön eki, standart sembol adı önekleri tarafından izlenir.
 
 |||
 |-|-|
@@ -85,7 +85,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDP_ASK_TO_SAVE|AFX_IDP_ASK_TO_UPDATE|
 |AFX_IDP_BAD_VERB|AFX_IDP_COMMAND_FAILURE|
 |AFX_IDP_DAO_BADBINDINFO|AFX_IDP_DAO_COLUMNUNAVAILABLE|
-|AFX_IDP_DAO_DFX_BIND|AFX_IDP_DAO_ENGINE_ INITIALIZATION|
+|AFX_IDP_DAO_DFX_BIND|AFX_IDP_DAO_ENGINE_ BAŞLATMA|
 |AFX_IDP_DAO_OBJECT_NOT_OPEN|AFX_IDP_DAO_ROWTOOSHORT|
 |AFX_IDP_DLL_BAD_VERSION|AFX_IDP_DLL_LOAD_FAILED|
 |AFX_IDP_E_BADFILEMODE|AFX_IDP_E_BADFILENAME|
@@ -96,11 +96,11 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDP_E_DIVISIONBYZERO|AFX_IDP_E_FILEALREADYEXISTS|
 |AFX_IDP_E_FILEALREADYOPEN|AFX_IDP_E_FILENOTFOUND|
 |AFX_IDP_E_GETNOTSUPPORTED|AFX_IDP_E_ GETNOTSUPPORTEDATRUNTIME|
-|AFX_IDP_E_ILLEGALFUNCTIONCALL|AFX_IDP_E_ INVALIDCLIPBOARDFORMAT|
+|AFX_IDP_E_ILLEGALFUNCTIONCALL|AFX_IDP_E_ ıNVALIDCLIPBOARDFORMAT|
 |AFX_IDP_E_INVALIDFILEFORMAT|AFX_IDP_E_INVALIDPATTERNSTRING|
-|AFX_IDP_E_INVALIDPICTURE|AFX_IDP_E_ INVALIDPROPERTYARRAYINDEX|
+|AFX_IDP_E_INVALIDPICTURE|AFX_IDP_E_ ıNVALIDPROPERTYARRAYıNDEX|
 |AFX_IDP_E_INVALIDPROPERTYVALUE|AFX_IDP_E_INVALIDUSEOFNULL|
-|AFX_IDP_E_ NEEDPROPERTYARRAYINDEX|AFX_IDP_E_OUTOFMEMORY|
+|AFX_IDP_E_ GEREKSIZ PROPERTYARRAYıNDEX|AFX_IDP_E_OUTOFMEMORY|
 |AFX_IDP_E_OUTOFSTACKSPACE|AFX_IDP_E_OVERFLOW|
 |AFX_IDP_E_PATHFILEACCESSERROR|AFX_IDP_E_PATHNOTTFOUND|
 |AFX_IDP_E_PERMISSIONDENIED|AFX_IDP_E_PRINTERERROR|
@@ -152,7 +152,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDS_BOLD|AFX_IDS_BOLDITALIC|
 |AFX_IDS_BORDERSTYLE_0|AFX_IDS_BORDERSTYLE_1|
 |AFX_IDS_CHANGE_LINK|AFX_IDS_CHECKLISTBOX_CHECK|
-|AFX_IDS_CHECKLISTBOX_MIXED|AFX_IDS_CHECKLISTBOX_ İŞARETİNİ KALDIRIN|
+|AFX_IDS_CHECKLISTBOX_MIXED|AFX_IDS_CHECKLISTBOX_ IŞARETINI KALDıR|
 |AFX_IDS_COLOR_ACTIVEBAR|AFX_IDS_COLOR_ACTIVEBORDER|
 |AFX_IDS_COLOR_ACTIVETEXT|AFX_IDS_COLOR_APPWORKSPACE|
 |AFX_IDS_COLOR_BTNFACE|AFX_IDS_COLOR_BTNHIGHLIGHT|
@@ -180,8 +180,8 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDS_INVALID_DATETIMESPAN|AFX_IDS_ITALIC|
 |AFX_IDS_LINKSOURCE_FORMAT|AFX_IDS_MANUAL|
 |AFX_IDS_MDICHILD|AFX_IDS_MEMORY_EXCEPTION|
-|AFX_IDS_METAFILE_FORMAT|AFX_IDS_MINI YAZI TİPİ|
-|AFX_IDS_NOT_DOCOBJECT|AFX_IDS_NOT_SUPPORTED_ EXCEPTION|
+|AFX_IDS_METAFILE_FORMAT|AFX_IDS_MINI-YAZı TIPI|
+|AFX_IDS_NOT_DOCOBJECT|AFX_IDS_NOT_SUPPORTED_ ÖZEL DURUMU|
 |AFX_IDS_OBJ_TITLE_INPLACE|AFX_IDS_OBJECT_MENUITEM|
 |AFX_IDS_OCC_SCALEUNITS_PIXELS|AFX_IDS_ONEPAGE|
 |AFX_IDS_OPENFILE|AFX_IDS_PASTELINKEDTYPE|
@@ -213,7 +213,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 
 ## <a name="mfc-database-programming"></a>MFC veritabanı programlama
 
-Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projesinde görünür. Bunlar, SQL sunucuları ve veritabanı programlama MFC bağlantıyı destekler.
+Bu tablodaki semboller, veritabanı desteği eklendiğinde yalnızca bir MFC projesinde görüntülenir. Bunlar, SQL Server ve veritabanı programlamaya MFC bağlantısını destekler.
 
 |||
 |-|-|
@@ -221,7 +221,7 @@ Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projes
 |AFX_IDP_SQL_BOOKMARKS_ NOT_SUPPORTED|AFX_IDP_SQL_CONNECT_FAIL|
 |AFX_IDP_SQL_DATA_TRUNCATED|AFX_IDP_SQL_DYNAMIC_CURSOR_ NOT_SUPPORTED|
 |AFX_IDP_SQL_DYNASET_ NOT_SUPPORTED|AFX_IDP_SQL_EMPTY_COLUMN_LIST|
-|AFX_IDP_SQL_FIELD_NOT_FOUND|AFX_IDP_SQL_FILED_SCHEMA_ MISMATCH|
+|AFX_IDP_SQL_FIELD_NOT_FOUND|AFX_IDP_SQL_FILED_SCHEMA_ UYUMSUZLUĞU|
 |AFX_IDP_SQL_ILLEGAL_MODE|AFX_IDP_SQL_INCORRECT_ODBC|
 |AFX_IDP_SQL_LOCK_MODE_ NOT_SUPPORTED|AFX_IDP_SQL_MULTIPLE_ ROWS_AFFECTED|
 |AFX_IDP_SQL_NO_CURRENT_RECORD|AFX_IDP_SQL_NO_DATA_FOUND|
@@ -234,9 +234,9 @@ Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projes
 
 ## <a name="mfc-windows-programming"></a>MFC Windows programlama
 
-Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler menülerle kullanılır.
+Bu semboller Ayrıca MFC destek dosyalarının bir parçasıdır, ancak standart Windows uygulama işlevlerini ve eylemlerini destekler. Bu semboller menülerde kullanılır.
 
-Çalışırken menülerde ile **Menü Düzenleyici**, bu simgeler görünür **özelliği** ortak menü komutları ile ilişkili penceresi. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+**Menü düzenleyicisinde**menülerle çalışırken, bu semboller ortak menü komutlarıyla ilişkili **özellik** penceresinde görünür. Örneğin, uygulamanızın **Çıkış** komutuyla bir **Dosya** menüsü varsa, bu komut [Özellikler penceresi](/visualstudio/ide/reference/properties-window)ID_APP_EXIT simgesiyle ilişkilendirilir.
 
 ||||
 |-|-|-|
@@ -258,7 +258,7 @@ Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Wi
 |ID_FILE_SAVE|ID_FILE_SAVE_AS|ID_FILE_SAVE_COPY_AS|
 |ID_FILE_SEND_MAIL|ID_FILE_UPDATE|ID_FORMAT_FONT|
 |ID_HELP|ID_HELP_FINDER|ID_HELP_INDEX|
-|ID_HELP+USING|ID_INDICATOR_CAPS|ID_INDICATOR_EXT|
+|ID_HELP + KULLANMA|ID_INDICATOR_CAPS|ID_INDICATOR_EXT|
 |ID_INDICATOR_KANA|ID_INDICATOR_NUM|ID_INDICATOR_OVR|
 |ID_INDICATOR_REC|ID_INDICATOR_SCRL|ID_NEXT_PANE|
 |ID_OLE_EDIT_CHANGE_ICON|ID_OLE_EDIT_CONVERT|ID_OLE_EDIT_LINKS|
@@ -272,7 +272,7 @@ Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Wi
 |ID_WINDOW_NEW|ID_WINDOW_SPLIT|ID_WINDOW_TILE_HORIZ|
 |ID_WINDOW_TILE_VERT|ID_WIZBACK|ID_WIZFINISH|
 |ID_WIZNEXT|IDABORT|IDC_STATIC|
-|IDCANCEL|IDD_ABOUTBOX|IDIGNORE|
+|IDCANCEL|IDD_ABOUTBOX|IDıGNORE|
 |IDNO|IDOK|IDP_OLE_INIT_FAILED|
 |IDRETRY|IDYES||
 

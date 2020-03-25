@@ -7,20 +7,20 @@ helpviewer_keywords:
 - inline functions [C++], treating member functions as
 - member functions [C++], definition in class declaration
 ms.assetid: 9f77a438-500e-40bb-a6c6-544678f3f4c8
-ms.openlocfilehash: faa7d016c8f48e9a5ee57c8efa4ce3dfd3f3eb01
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: d1c3e069325363276e58a617d6ba21cb0b6e4ff0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345849"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188473"
 ---
 # <a name="overview-of-member-functions"></a>Üye İşlevlerine Genel Bakış
 
-Statik veya statik olmayan üye işlevleri. Statik üye işlevleri Hayır örtük sahip diğer üye işlevleri statik üye işlevleri davranışını farklıdır **bu** bağımsız değişken. Statik olmayan üye işlevleri bir **bu** işaretçi. Üye işlevleri, statik veya statik olmayan, içinde ya da sınıf bildirimi dışında tanımlanabilir.
+Üye işlevleri statik veya statik olarak statiktir. Statik üye işlevlerinin örtük **Bu** bağımsız değişkeni olmadığından, statik üye işlevlerinin davranışı diğer üye işlevlerinden farklıdır. Statik olmayan üye işlevleri **Bu** işaretçiye sahiptir. Statik veya statik olmayan üye işlevleri, sınıf bildiriminin içinde veya dışında tanımlanabilir.
 
-Üye işlevi bir sınıf bildirimi içinde tanımlanmış olması durumunda, satır içi işlev kabul edilir ve sınıf adını işlevi adıyla nitelemeniz gerek yoktur. Sınıf bildirimi içinde tanımlanmış işlevler zaten satır içi işlevleri kabul edilir olsa da, kullanabileceğiniz **satır içi** belge koda anahtar sözcüğü.
+Bir üye işlevi bir sınıf bildiriminde tanımlanmışsa, bir satır içi işlev olarak değerlendirilir ve işlev adını sınıf adıyla nitelemeniz gerekmez. Sınıf bildirimlerinin içinde tanımlanan işlevler zaten satır içi işlev olarak kabul edilse de, kodu belgelemek için **satır içi** anahtar sözcüğünü kullanabilirsiniz.
 
-Bir sınıf bildirimi içinde bir işlevi bildirmek, bir örnek aşağıda verilmiştir:
+Bir sınıf bildirimi içindeki bir işlevi bildirme örneği aşağıdadır:
 
 ```cpp
 // overview_of_member_functions1.cpp
@@ -43,9 +43,9 @@ int main()
 }
 ```
 
-Sınıf bildirimi dışında bir üye işlevin tanımı ise yalnızca onu açıkça olarak bildirilirse, satır içi işlev kabul edilir **satır içi**. Ayrıca, tanımında işlev adı kapsam çözümleme işlecini kullanarak, bir sınıf adı ile nitelenmelidir (`::`).
+Bir üye işlevin tanımı sınıf bildiriminin dışındaysa, yalnızca **satır içi**olarak açıkça bildirilirse, satır içi işlev olarak değerlendirilir. Ayrıca, tanımdaki işlev adı, kapsam çözümleme işleci (`::`) kullanılarak sınıf adı ile nitelenmelidir.
 
-Aşağıdaki örnek, önceki sınıfının bildirimi için aynıdır `Account`dışında `Deposit` işlevleri sınıf bildirimi dışında tanımlanır:
+Aşağıdaki örnek, `Account`sınıfının önceki bildirimiyle aynıdır, ancak `Deposit` işlevi sınıf bildiriminin dışında tanımlanmalıdır:
 
 ```cpp
 // overview_of_member_functions2.cpp
@@ -70,6 +70,6 @@ int main()
 ```
 
 > [!NOTE]
->  Üye işlevleri sınıf bildirimi içinde veya ayrı ayrı tanımlanabiliyor olsa da, sınıf tanımlandıktan sonra hiçbir üye işlevi bir sınıfa eklenebilir.
+>  Üye işlevleri bir sınıf bildiriminde ya da ayrı ayrı tanımlanabilse de, sınıf tanımlandıktan sonra bir sınıfa hiçbir üye işlev eklenemez.
 
-Üye işlevleri içeren sınıflar birçok bildirimleri olabilir, ancak üye işlevleri bir programa sadece bir tanım olmalıdır. Birden çok tanım bağlantı zamanında bir hata iletisine neden olur. İşlev tanımları, satır içi işlev tanımları bir sınıf içeriyorsa, bu "bir tanımı" kuralı gözlemlemek için aynı olmalıdır.
+Üye işlevlerini içeren sınıflar birçok bildirime sahip olabilir, ancak üye işlevleri bir programda yalnızca bir tanıma sahip olmalıdır. Bağlantı zamanında birden çok tanım hata iletisine neden olur. Bir sınıf satır içi işlev tanımları içeriyorsa, bu "bir tanım" kuralını gözlemlemek için işlev tanımlarının aynı olması gerekir.

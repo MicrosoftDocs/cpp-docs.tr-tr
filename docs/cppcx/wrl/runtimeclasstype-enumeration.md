@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - RuntimeClassType enumeration
 ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
-ms.openlocfilehash: 80e8a120f7e3666721ff839a2a696388a64d734e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 53f0172968c28762bb1305e274bbd47494cdaf4c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403144"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213583"
 ---
 # <a name="runtimeclasstype-enumeration"></a>RuntimeClassType Numaralandırması
 
-Türünü belirten [RuntimeClass](runtimeclass-class.md) desteklenen örneği.
+Desteklenen [RuntimeClass](runtimeclass-class.md) örneğinin türünü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,18 +30,18 @@ enum RuntimeClassType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`ClassicCom`|Klasik COM çalışma zamanı sınıf.|
-|`Delegate`|Eşdeğer `ClassicCom`.|
-|`InhibitFtmBase`|Devre dışı bırakır `FtmBase` sırasında Destek `__WRL_CONFIGURATION_LEGACY__` tanımlı değil.|
-|`InhibitWeakReference`|Zayıf başvuru desteği devre dışı bırakır.|
-|`WinRt`|Bir Windows çalışma zamanı sınıf.|
-|`WinRtClassicComMix`|Bir birleşimi `WinRt` ve `ClassicCom`.|
+|`ClassicCom`|Klasik bir COM çalışma zamanı sınıfı.|
+|`Delegate`|`ClassicCom`eşdeğerdir.|
+|`InhibitFtmBase`|`__WRL_CONFIGURATION_LEGACY__` tanımlanmadığı sırada `FtmBase` desteğini devre dışı bırakır.|
+|`InhibitWeakReference`|Zayıf başvuru desteğini devre dışı bırakır.|
+|`WinRt`|Windows Çalışma Zamanı sınıfı.|
+|`WinRtClassicComMix`|`WinRt` ve `ClassicCom`birleşimi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

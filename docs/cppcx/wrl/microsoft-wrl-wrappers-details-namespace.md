@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - Details namespace
 ms.assetid: 6d3f04ac-9b53-4a82-a188-a85309ec34a4
-ms.openlocfilehash: deccd4519b2ddf18725dca5af13b94ac79d6e280
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 005fa79d413708f630b0a6aebbc06782086c81b3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392017"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213765"
 ---
 # <a name="microsoftwrlwrappersdetails-namespace"></a>Microsoft::WRL::Wrappers::Details Ad Alanı
 
@@ -36,20 +36,20 @@ namespace Microsoft::WRL::Wrappers::Details;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[SyncLockT Sınıfı](synclockt-class.md)|Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.|
-|[SyncLockWithStatusT Sınıfı](synclockwithstatust-class.md)|Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.|
+|[SyncLockT Sınıfı](synclockt-class.md)|Bir kaynağın özel veya paylaşılan sahipliğini alabileceği bir türü temsil eder.|
+|[SyncLockWithStatusT Sınıfı](synclockwithstatust-class.md)|Bir kaynağın özel veya paylaşılan sahipliğini alabileceği bir türü temsil eder.|
 
 ### <a name="methods"></a>Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CompareStringOrdinal Metodu](comparestringordinal-method.md)|Belirtilen iki karşılaştırır `HSTRING` nesneleri ve bir sıralama düzeni kendi göreli konumunu belirten bir tamsayı döndürür.|
+|[CompareStringOrdinal Metodu](comparestringordinal-method.md)|Belirtilen iki `HSTRING` nesnesini karşılaştırır ve göreli konumunu bir sıralama düzeninde gösteren bir tamsayı döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Namespace:** Microsoft::WRL::Wrappers::details
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 980cdc1c4ac82015cab61133a64fa54fbd030843
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b0a6d000309a709c528822870f910521f51100df
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68821112"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208317"
 ---
 > [!IMPORTANT]
 > Visual Studio derleyicileri ve derleme araçları birçok hata ve uyarı türünü rapor edebilir. Bir hata veya uyarı bulduktan sonra, derleme araçları kod hedefi hakkında varsayımlar yapabilir ve devam etmeyi dener. bu sayede, aynı anda daha fazla sorun bildirilebilir. Araçlar yanlış varsayımına sahip olursa, sonraki hatalar veya uyarılar projenize uygulanmayabilir. Projenizdeki sorunları düzeltirken, her zaman bildirilen ilk hata veya uyarıyla başlayın ve sık sık yeniden derleyin. Bir düzelme, sonraki birçok hata oluşmasına devam edebilir.

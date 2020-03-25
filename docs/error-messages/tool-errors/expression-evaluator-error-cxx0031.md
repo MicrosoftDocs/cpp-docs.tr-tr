@@ -7,19 +7,19 @@ helpviewer_keywords:
 - CAN0031
 - CXX0031
 ms.assetid: adafbcb7-982f-495f-a34d-72e95d7e54c7
-ms.openlocfilehash: 29bd4959c7bdd20b25279ca5d0e18814d1b23039
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd4b0d744f9fc101ec4a7bc3a2a01f1d14cfbf7b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397100"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195597"
 ---
 # <a name="expression-evaluator-error-cxx0031"></a>İfade Değerlendirici Hatası CXX0031
 
-ifade genişletilemez
+ifade genişletilebilir değil
 
-İfade değerlendirici, bir iç hatayla karşılaştı.
+İfade değerlendirici bir iç hatayla karşılaştı.
 
-Doğru değerlendirilebilir eşdeğer ifade yazma mümkün olabilir.
+Doğru değerlendirilebilecek bir eşdeğer ifade yazabilirsiniz.
 
-Bu hata için CAN0031 aynıdır.
+Bu hata CAN0031 ile aynıdır.

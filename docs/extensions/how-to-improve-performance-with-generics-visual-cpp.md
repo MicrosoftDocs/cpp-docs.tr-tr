@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Türlerle performansı artırma (C++/CLI)'
+title: 'Nasıl yapılır: genel türler ile performansı IyileştirmeC++(/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -8,28 +8,28 @@ helpviewer_keywords:
 - C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-ms.openlocfilehash: 958da08716022bedaa8d0fe217814fa2bd86c065
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a460456a383fcb3eb81e17c1ad5817f790f3c399
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254582"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181947"
 ---
-# <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: Türlerle performansı artırma (C++/CLI)
+# <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: genel türler ile performansı IyileştirmeC++(/CLI)
 
-Genel türler ile bir tür parametresine bağlı yeniden kullanılabilir kod oluşturabilirsiniz. Gerçek türü tür parametresi, istemci kodu tarafından çağrılan kadar ertelenir. Genel türler hakkında daha fazla bilgi için bkz. [genel türler](generics-cpp-component-extensions.md).
+Genel türler ile, bir tür parametresine bağlı olarak yeniden kullanılabilir kod oluşturabilirsiniz. Tür parametresinin gerçek türü, istemci kodu tarafından çağrılana kadar ertelenir. Genel türler hakkında daha fazla bilgi için bkz. [Genel türler](generics-cpp-component-extensions.md).
 
-Bu makalede, genel türler koleksiyonları kullanan bir uygulama performansını artırmaya nasıl yardımcı olabileceğini ele alınacaktır.
+Bu makalede, genel türlerin koleksiyonlar kullanan bir uygulamanın performansını artırmaya nasıl yardımcı olduğu ele alınmaktadır.
 
 ## <a name="example"></a>Örnek
 
-.NET Framework, pek çok koleksiyon sınıflarını birlikte <xref:System.Collections?displayProperty=fullName> ad alanı. Bu koleksiyonların çoğu türündeki nesneler üzerinde çalışan <xref:System.Object?displayProperty=fullName>. Herhangi bir türü türetilen tüm türler bile değer türleri, .NET Framework'teki bu yana depolamak koleksiyon böylece <xref:System.Object?displayProperty=fullName>. Ancak, bu yaklaşımın iki dezavantajları vardır.
+.NET Framework, <xref:System.Collections?displayProperty=fullName> ad alanındaki birçok koleksiyon sınıfıyla birlikte gelir. Bu koleksiyonların çoğu <xref:System.Object?displayProperty=fullName>türündeki nesneler üzerinde çalışır. Bu, koleksiyonların her türlü türü .NET Framework, hatta değer türlerindeki tüm türler <xref:System.Object?displayProperty=fullName>türeten bu yana bir tür depolamasına izin verir. Ancak, bu yaklaşımın iki Sakıncaı vardır.
 
-İlk olarak, tamsayılar gibi değer türleri koleksiyonu depolanıyorsa, değer koleksiyona eklenmeden önce Kutulu ve gerekir değeri koleksiyondan alındığında kutudan çıkarılır. Bu pahalı işlemlerdir.
+İlk olarak, koleksiyon tamsayılar gibi değer türlerini depoladığında, değer koleksiyona eklenmeden önce paketlenmeli ve değer koleksiyondan alındıktan sonra kutulanmamış olmalıdır. Bunlar pahalı işlemlerdir.
 
-İkinci olarak, hangi türlerin bir koleksiyona eklenebilir denetlemek için hiçbir yolu yoktur. Bu büyük olasılıkla ne hedeflenen olsa bile bir dize ve tamsayı aynı koleksiyona eklemek için mükemmel bir şekilde daha uygundur. Bu nedenle, kod tür bakımından güvenli olması için sırada koleksiyondan alınan tür gerçekten beklenen olup olmadığını denetleyin sahip.
+İkincisi, bir koleksiyona hangi türlerin eklenebileceği kontrol etmenin bir yolu yoktur. Büyük olasılıkla amaçlanan gibi olmasa da, aynı koleksiyona bir tamsayı ve bir dize eklemek mükemmel bir şeydir. Bu nedenle, kodunuzun güvenli olması için, koleksiyondan alınan türün gerçekten beklenen şeydir olduğunu denetlemeniz gerekir.
 
-Aşağıdaki kod örneği, genel türler önce .NET Framework koleksiyonları iki ana dezavantajları gösterilmektedir.
+Aşağıdaki kod örneği, genel türler öncesinde .NET Framework koleksiyonlarının iki ana dezavantajın gösterir.
 
 ```cpp
 // perf_pre_generics.cpp
@@ -80,9 +80,9 @@ Popped an int: 7
 
 ## <a name="example"></a>Örnek
 
-Yeni <xref:System.Collections.Generic?displayProperty=fullName> ad alanı bulunan aynı koleksiyonları birçoğunu içerir <xref:System.Collections?displayProperty=fullName> genel tür parametreleri kabul etmek için ad alanı, ancak değiştirilmiş. Bu iki genel olmayan koleksiyon dezavantajları ortadan kaldırır: kutulama ve değer türleri ve türlerini belirtmek için yükleyememesine koleksiyonlarında depolanacak kutudan çıkarma. İki koleksiyon üzerinde işlemler aynıdır; Bunlar yalnızca nasıl bunlar örneği oluşturulur farklı.
+Yeni <xref:System.Collections.Generic?displayProperty=fullName> ad alanı, <xref:System.Collections?displayProperty=fullName> ad alanında bulunan aynı koleksiyonların birçoğunu içerir, ancak genel tür parametrelerini kabul edecek şekilde değiştirilmiştir. Bu, genel olmayan koleksiyonların iki dezavantajunu ortadan kaldırır: değer türlerinin kutulama ve kutudan çıkarma ve koleksiyonlarda depolanacak türleri belirtmeme. İki koleksiyon üzerindeki işlemler aynıdır; Bunlar yalnızca nasıl örneklendikleri gibi farklılık gösterir.
 
-Yukarıdaki genel kullanan bu örnek ile yazılmış örnek karşılaştırma <xref:System.Collections.Generic.Stack%601> koleksiyonu. Bu örnek performansını sık erişilen büyük koleksiyonlarda önceki örnekte önemli ölçüde daha büyük olacaktır.
+Yukarıda yazılmış örneği, genel bir <xref:System.Collections.Generic.Stack%601> koleksiyonu kullanan bu örnekle karşılaştırın. Sık erişilen büyük koleksiyonlarda, bu örneğin performansı önceki örnekten önemli ölçüde daha büyük olacaktır.
 
 ```cpp
 // perf_post_generics.cpp

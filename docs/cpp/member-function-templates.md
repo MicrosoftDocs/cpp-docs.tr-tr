@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - function templates, member functions
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
-ms.openlocfilehash: 6955d755897d326479d2b3789edb02ff66806175
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: ee36d4f33f3e4216e2ad9c434ac1da4ca3aa83e8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345968"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177987"
 ---
 # <a name="member-function-templates"></a>Üye İşlev Şablonları
 
@@ -85,7 +85,7 @@ Yerel sınıfların üye şablonlarına sahip olmasına izin verilmez.
 
 Üye şablonu işlevleri sanal işlevler olamaz ve bir temel sınıf sanal işlevi olarak aynı adla bildirildiklerinde bir temel sınıftan olan sanal işlevleri geçersiz kılamaz.
 
-Aşağıdaki örnekte, şablonlu kullanıcı tanımlı dönüştürme gösterilmektedir:
+Aşağıdaki örnekte, şablonlu kullanıcı tanımlı bir dönüştürme gösterilmektedir:
 
 ```cpp
 // templated_user_defined_conversions.cpp

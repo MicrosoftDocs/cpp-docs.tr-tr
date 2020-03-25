@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ActivationFactoryCallback function
 ms.assetid: dd40c79b-1273-4f2a-8c24-ae9926fb4fd9
-ms.openlocfilehash: 4743e7724c5aba4171cb017654267afaac676f24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0be4bebcc561cdf1df3f2502c8cc1927bdc65564
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62303883"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214220"
 ---
 # <a name="activationfactorycallback-function"></a>ActivationFactoryCallback İşlevi
 
@@ -29,27 +29,27 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 
 ### <a name="parameters"></a>Parametreler
 
-*Activationıd*<br/>
-Bir çalışma zamanı sınıfı adının belirten bir dize için işler.
+*activationId*<br/>
+Çalışma zamanı sınıf adını belirten bir dizeye işleyin.
 
 *ppFactory*<br/>
-Bu işlem tamamlandığında, parametresine karşılık geldiği bir etkinleştirme fabrikası *Activationıd*.
+Bu işlem tamamlandığında, *activationId*parametresine karşılık gelen bir etkinleştirme fabrikası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. Büyük olasılıkla başarısız HRESULTs, CLASS_E_CLASSNOTAVAILABLE ve E_INVALIDARG verilmiştir.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. Olası Hata HRESULTs CLASS_E_CLASSNOTAVAILABLE ve E_INVALIDARG.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır
+Belirtilen etkinleştirme KIMLIĞI için etkinleştirme fabrikasını alır.
 
-Windows çalışma zamanı ve çalışma zamanı sınıf adıyla belirtilen bir nesne istemek için bu geri çağırma işlevini çağırır.
+Windows Çalışma Zamanı, bu geri çağırma işlevini, çalışma zamanı sınıf adı tarafından belirtilen bir nesne isteyecek şekilde çağırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** Module. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

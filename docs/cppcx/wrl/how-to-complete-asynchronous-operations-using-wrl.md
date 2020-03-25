@@ -1,123 +1,123 @@
 ---
-title: 'Nasıl yapılır: WRL kullanarak zaman uyumsuz işlemleri tamamlama'
+title: 'Nasıl Yapılır: WRL Kullanarak Zaman Uyumsuz İşlemleri Tamamlama'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 02173eae-731b-49bc-b412-f1f69388b99d
-ms.openlocfilehash: 09c341e5e3d4f6007d5d5f66b7c06e1f0af5a65c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e7e52342cf73a56c6c33d4d1f998f446d632ddd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398348"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213947"
 ---
-# <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl yapılır: WRL kullanarak zaman uyumsuz işlemleri tamamlama
+# <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Zaman Uyumsuz İşlemleri Tamamlama
 
-Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz işlemler başlatmak ve işlemler tamamlandığında iş gerçekleştirmek için nasıl kullanılacağını gösterir.
+Bu belgede, Windows Çalışma Zamanı C++ şablon kitaplığı 'NıN (WRL), zaman uyumsuz işlemleri başlatmak ve işlemler tamamlandığında iş gerçekleştirmek için nasıl kullanılacağı gösterilmektedir.
 
-Bu belge, iki örnek gösterir. İlk örnek, zaman uyumsuz bir süreölçer başlatır ve Zamanlayıcı süresi dolacak şekilde bekler. Zamanlayıcı nesne oluşturduğunuzda, bu örnekte, zaman uyumsuz eylem belirtin. İkinci örnek, bir arka plan iş parçacığı çalıştırır. Bu örnek döndüren bir Windows çalışma zamanı yöntemi ile çalışmaya nasıl gösterir bir `IAsyncInfo` arabirimi. [Geri çağırma](callback-function-wrl.md) işlev örneklerin her ikisi de önemli bir parçası, çünkü bunları zaman uyumsuz işlemlerin sonuçları işlemek için bir olay işleyicisi belirtmenizi sağlar.
+Bu belgede iki örnek gösterilmektedir. İlk örnek, zaman uyumsuz bir Zamanlayıcı başlatır ve zamanlayıcının kullanım süresini bekler. Bu örnekte, Zamanlayıcı nesnesini oluştururken zaman uyumsuz eylemi belirtirsiniz. İkinci örnek bir arka plan çalışan iş parçacığı çalıştırır. Bu örnek, bir `IAsyncInfo` arabirimi döndüren Windows Çalışma Zamanı yöntemiyle nasıl çalışalınacağını gösterir. [Geri çağırma](callback-function-wrl.md) işlevi, zaman uyumsuz işlemlerin sonuçlarını işlemek üzere bir olay işleyicisi belirtmesini sağladığından, her iki örneğin önemli bir bölümüdür.
 
-Bir bileşenin bir örneğini oluşturur ve bir özellik değeri alan daha temel bir örnek için bkz [nasıl yapılır: Bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).
+Bir bileşenin örneğini oluşturan ve bir özellik değeri alan daha basit bir örnek için bkz. [nasıl yapılır: etkinleştirme ve Windows çalışma zamanı bileşeni kullanma](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).
 
 > [!TIP]
-> Bu örnekler, lambda ifadeleri geri çağırmaları tanımlamak için kullanın. İşlev nesneleri (işlev nesneleri), işlev işaretçileri de kullanabilirsiniz veya [std::function](../../standard-library/function-class.md) nesneleri. C++ lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
+> Bu örnekler, geri çağırmaları tanımlamak için lambda ifadeleri kullanır. İşlev nesnelerini (funörler), işlev işaretçilerini veya [std:: Function](../../standard-library/function-class.md) nesnelerini de kullanabilirsiniz. Lambda ifadeleri hakkında C++ daha fazla bilgi için bkz. [lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
 
-## <a name="example-working-with-a-timer"></a>Örnek: Zamanlayıcı ile çalışma
+## <a name="example-working-with-a-timer"></a>Örnek: bir zamanlayıcı ile çalışma
 
-Aşağıdaki adımlar, bir zaman uyumsuz zamanlayıcıyı başlatmak ve Zamanlayıcı sona bekleyin. Eksiksiz bir örnek aşağıda verilmiştir.
+Aşağıdaki adımlarda zaman uyumsuz bir Zamanlayıcı başlatılır ve zamanlayıcının kullanım süresini dolacaktır. Tüm örnek aşağıda verilmiştir.
 
 > [!WARNING]
-> Genellikle bir evrensel Windows Platformu (UWP) uygulaması Windows çalışma zamanı C++ Şablon kitaplığı kullanırsınız, ancak bu örnek bir konsol uygulaması çizim için kullanılır. Gibi işlevler `wprintf_s` bir UWP uygulaması kullanılabilir değil. Bir UWP uygulamasında kullanabileceğiniz işlevleri ve türleri hakkında daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamaları için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).
+> Windows Çalışma Zamanı C++ şablon kitaplığını genellikle bir evrensel WINDOWS platformu (UWP) uygulamasında kullanmanıza rağmen bu örnek, çizim için bir konsol uygulaması kullanır. `wprintf_s` gibi işlevler UWP uygulamasında kullanılamaz. UWP uygulamasında kullanabileceğiniz türler ve işlevler hakkında daha fazla bilgi için bkz. Evrensel Windows Platformu uygulamalar ve [Win32 ve com IÇIN UWP uygulamalarında](/uwp/win32-and-com/win32-and-com-for-uwp-apps) [Desteklenmeyen crt işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) .
 
-1. İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ve standart C++ Kitaplığı üstbilgilerini gerekli.
+1. Gerekli Windows Çalışma Zamanı, Windows Çalışma Zamanı C++ şablon kitaplığı veya C++ standart kitaplık üstbilgilerini dahil edin (`#include`).
 
    [!code-cpp[wrl-consume-async#2](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]
 
-   `Windows.System.Threading.h` zaman uyumsuz bir zamanlayıcı kullanmak için gerekli türleri bildirir.
+   `Windows.System.Threading.h`, zaman uyumsuz bir zamanlayıcı kullanmak için gerekli olan türleri bildirir.
 
-   Öneririz, makineler'den `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.
+   Kodu daha okunabilir hale getirmek için. cpp dosyanızdaki `using namespace` yönergesini kullanmanızı öneririz.
 
-2. Windows çalışma zamanı başlatılamıyor.
+2. Windows Çalışma Zamanı başlatın.
 
    [!code-cpp[wrl-consume-async#3](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_2.cpp)]
 
-3. Bir etkinleştirme fabrikası için oluşturma `ABI::Windows::System::Threading::IThreadPoolTimer` arabirimi.
+3. `ABI::Windows::System::Threading::IThreadPoolTimer` arabirimi için bir etkinleştirme fabrikası oluşturun.
 
    [!code-cpp[wrl-consume-async#4](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_3.cpp)]
 
-   Windows çalışma zamanı türlerini tanımlamak üzere tam olarak nitelenmiş adlar kullanır. `RuntimeClass_Windows_System_Threading_ThreadPoolTimer` Parametredir, Windows çalışma zamanı tarafından sağlanan ve gerekli çalışma zamanı sınıf adı içeren bir dize.
+   Windows Çalışma Zamanı, türleri tanımlamak için tam nitelikli adlar kullanır. `RuntimeClass_Windows_System_Threading_ThreadPoolTimer` parametresi, Windows Çalışma Zamanı tarafından sunulan ve gerekli çalışma zamanı sınıf adını içeren bir dizedir.
 
-4. Oluşturma bir [olay](event-class-wrl.md) nesnesini ana uygulama için Zamanlayıcı geri eşitler.
+4. Süreölçer geri aramasını ana uygulamayla eşitleyen bir [olay](event-class-wrl.md) nesnesi oluşturun.
 
    [!code-cpp[wrl-consume-async#5](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_4.cpp)]
 
    > [!NOTE]
-   > Bu olay, bir konsol uygulaması bir parçası olarak yalnızca tanıtım içindir. Bu örnek, olayın zaman uyumsuz bir işlemi uygulama çıkışından önce tamamlanmasını sağlamak için kullanır. Çoğu uygulamada genellikle zaman uyumsuz işlemleri için beklemeyin.
+   > Bu olay yalnızca konsol uygulamasının bir parçası olarak tanıtım amaçlıdır. Bu örnek, uygulamanın uygulamadan önce zaman uyumsuz bir işlemin tamamlanmasını sağlamak için olayını kullanır. Çoğu uygulama için genellikle zaman uyumsuz işlemlerin tamamlanmasını beklememeniz gerekmez.
 
-5. Oluşturma bir `IThreadPoolTimer` nesnesini iki saniye sonra süresi dolar. Kullanım `Callback` olay işleyicisi oluşturmak için işlevi (bir `ABI::Windows::System::Threading::ITimerElapsedHandler` nesne).
+5. İki saniyeden sonra süresi dolacak bir `IThreadPoolTimer` nesnesi oluşturun. Olay işleyicisini (bir `ABI::Windows::System::Threading::ITimerElapsedHandler` nesnesi) oluşturmak için `Callback` işlevini kullanın.
 
    [!code-cpp[wrl-consume-async#6](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_5.cpp)]
 
-6. Konsoluna bir ileti Yazdır ve Zamanlayıcı geri çağırma tamamlanmasını bekleyin. Tüm `ComPtr` ve RAII nesneleri kapsam bırakın ve otomatik olarak yayımlanır.
+6. Konsola bir ileti yazdırın ve zamanlayıcı geri çağrısının tamamlanmasını bekleyin. Tüm `ComPtr` ve OYıı nesneleri kapsamdan kalır ve otomatik olarak serbest bırakılır.
 
    [!code-cpp[wrl-consume-async#7](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_6.cpp)]
 
-Tam bir örnek aşağıda verilmiştir:
+İşte örnek:
 
 [!code-cpp[wrl-consume-async#1](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_7.cpp)]
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-async.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya `wrl-consume-async.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
 
 `cl.exe wrl-consume-async.cpp runtimeobject.lib`
 
-## <a name="example-working-with-a-background-thread"></a>Örnek: Bir arka plan iş parçacığı ile çalışma
+## <a name="example-working-with-a-background-thread"></a>Örnek: bir arka plan Iş parçacığıyla çalışma
 
-Aşağıdaki adımlar, bir çalışan iş parçacığı ve iş parçacığı tarafından gerçekleştirilen bir eylem tanımlayın. Eksiksiz bir örnek aşağıda verilmiştir.
+Aşağıdaki adımlar bir çalışan iş parçacığı başlatır ve bu iş parçacığı tarafından gerçekleştirilen eylemi tanımlar. Tüm örnek aşağıda verilmiştir.
 
 > [!TIP]
-> Bu örnek ile nasıl çalışılacağını gösterir `ABI::Windows::Foundation::IAsyncAction` arabirimi. Bu düzen uygulayan herhangi bir arabirimde uygulayabilirsiniz `IAsyncInfo`: `IAsyncAction`, `IAsyncActionWithProgress`, `IAsyncOperation`, ve `IAsyncOperationWithProgress`.
+> Bu örnek, `ABI::Windows::Foundation::IAsyncAction` arabirimiyle nasıl çalışabileceğinizi gösterir. Bu kalıbı `IAsyncInfo`uygulayan tüm arayüze uygulayabilirsiniz: `IAsyncAction`, `IAsyncActionWithProgress`, `IAsyncOperation`ve `IAsyncOperationWithProgress`.
 
-1. İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ve standart C++ Kitaplığı üstbilgilerini gerekli.
+1. Gerekli Windows Çalışma Zamanı, Windows Çalışma Zamanı C++ şablon kitaplığı veya C++ standart kitaplık üstbilgilerini dahil edin (`#include`).
 
    [!code-cpp[wrl-consume-asyncOp#2](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_8.cpp)]
 
-   İş parçacığı kullanmak için gerekli türleri Windows.System.Threading.h bildirir.
+   Windows. System. Threading. h, bir çalışan iş parçacığı kullanmak için gerekli olan türleri bildirir.
 
-   Kullanmanızı öneririz `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.
+   Kodu daha okunabilir hale getirmek için. cpp dosyanızda `using namespace` yönergesini kullanmanızı öneririz.
 
-2. Windows çalışma zamanı başlatılamıyor.
+2. Windows Çalışma Zamanı başlatın.
 
    [!code-cpp[wrl-consume-asyncOp#3](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_9.cpp)]
 
-3. Bir etkinleştirme fabrikası için oluşturma `ABI::Windows::System::Threading::IThreadPoolStatics` arabirimi.
+3. `ABI::Windows::System::Threading::IThreadPoolStatics` arabirimi için bir etkinleştirme fabrikası oluşturun.
 
    [!code-cpp[wrl-consume-asyncOp#4](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_10.cpp)]
 
-4. Oluşturma bir [olay](event-class-wrl.md) ana uygulama iş parçacığı tamamlanmasından eşitler nesne.
+4. Çalışan iş parçacığının tamamlanmasını ana uygulamaya eşitleyen bir [olay](event-class-wrl.md) nesnesi oluşturun.
 
    [!code-cpp[wrl-consume-asyncOp#5](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_11.cpp)]
 
    > [!NOTE]
-   > Bu olay, bir konsol uygulaması bir parçası olarak yalnızca tanıtım içindir. Bu örnek, olayın zaman uyumsuz bir işlemi uygulama çıkışından önce tamamlanmasını sağlamak için kullanır. Çoğu uygulamada genellikle zaman uyumsuz işlemleri için beklemeyin.
+   > Bu olay yalnızca konsol uygulamasının bir parçası olarak tanıtım amaçlıdır. Bu örnek, uygulamanın uygulamadan önce zaman uyumsuz bir işlemin tamamlanmasını sağlamak için olayını kullanır. Çoğu uygulama için genellikle zaman uyumsuz işlemlerin tamamlanmasını beklememeniz gerekmez.
 
-5. Çağrı `IThreadPoolStatics::RunAsync` çalışan iş parçacığı oluşturmak için yöntemi. Kullanım `Callback` eylemi tanımlamak için işlevi.
+5. Bir çalışan iş parçacığı oluşturmak için `IThreadPoolStatics::RunAsync` yöntemini çağırın. Eylemi tanımlamak için `Callback` işlevini kullanın.
 
    [!code-cpp[wrl-consume-asyncOp#6](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_12.cpp)]
 
-   `IsPrime` İşlevi izleyen tam bir örnek tanımlanır.
+   `IsPrime` işlevi, aşağıdaki örnek olarak tanımlanır.
 
-6. Konsoluna bir ileti Yazdır ve tamamlamak iş parçacığı için bekleyin. Tüm `ComPtr` ve RAII nesneleri kapsam bırakın ve otomatik olarak yayımlanır.
+6. Konsola bir ileti yazdırın ve iş parçacığının tamamlanmasını bekleyin. Tüm `ComPtr` ve OYıı nesneleri kapsamdan kalır ve otomatik olarak serbest bırakılır.
 
    [!code-cpp[wrl-consume-asyncOp#7](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_13.cpp)]
 
-Tam bir örnek aşağıda verilmiştir:
+İşte örnek:
 
 [!code-cpp[wrl-consume-asyncOp#1](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_14.cpp)]
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-asyncOp.cpp` ve ardından aşağıdaki komutu çalıştırın bir **Visual Studio komut istemi** penceresi.
+Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya `wrl-consume-asyncOp.cpp` adlı bir dosyaya yapıştırın ve sonra bir **Visual Studio komut istemi** penceresinde aşağıdaki komutu çalıştırın.
 
 `cl.exe wrl-consume-asyncOp.cpp runtimeobject.lib`
 

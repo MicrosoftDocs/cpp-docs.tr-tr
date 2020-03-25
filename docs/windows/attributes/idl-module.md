@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_module attribute
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-ms.openlocfilehash: 8838a833552ae7066dbcf17b4f676d6626c069f8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6dd0a34d5d957838613bde2c9e05d5ef26a1f678
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514678"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168050"
 ---
 # <a name="idl_module"></a>idl_module
 
@@ -26,7 +26,7 @@ function declaration
 
 ### <a name="parameters"></a>Parametreler
 
-*name*<br/>
+*ada*<br/>
 Kod bloğu için. IDL dosyasında görünecek Kullanıcı tanımlı bir ad.
 
 *dll*<br/>
@@ -55,13 +55,13 @@ Tanımlayacağınızı belirten işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İdl_module** C++ özniteliği, bir. dll dosyasından içeri aktarmanızı sağlayan bir. dll dosyasında giriş noktasını belirtmenize olanak tanır.
+**İdl_module** C++ özniteliği, giriş noktasını bir. dll dosyasından almanızı sağlayan bir. dll dosyasında belirtmenize olanak tanır.
 
-**İdl_module** özniteliği, MIDL özniteliğine benzer işlevlere [](/windows/win32/Midl/module) sahiptir.
+**İdl_module** özniteliği [, MIDL](/windows/win32/Midl/module) özniteliğine benzer işlevlere sahiptir.
 
 Bir. DL dosyasının Kitaplık bloğuna DLL giriş noktası koyarak bir. dll dosyasından dışarı aktarmak için bir COM nesnesinden herhangi bir şeyi dışarı aktarabilirsiniz.
 
-İki adımda **idl_module** kullanmanız gerekir. İlk olarak, bir ad/DLL çifti tanımlamanız gerekir. Ardından, bir giriş noktası belirtmek için **idl_module** kullandığınızda, adı ve ek öznitelikleri belirtin.
+**İdl_module** iki adımda kullanmanız gerekir. İlk olarak, bir ad/DLL çifti tanımlamanız gerekir. Ardından, bir giriş noktası belirtmek için **idl_module** kullandığınızda, adı ve ek öznitelikleri belirtin.
 
 ## <a name="example"></a>Örnek
 
@@ -84,8 +84,8 @@ void FuncName(int i);
 |-|-|
 |**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

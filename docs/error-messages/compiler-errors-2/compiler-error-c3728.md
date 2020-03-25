@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C3728
+title: Derleyici hatası C3728
 ms.date: 11/04/2016
 f1_keywords:
 - C3728
 helpviewer_keywords:
 - C3728
 ms.assetid: 6b510cb1-887f-4fcd-9a1f-3bb720417ed1
-ms.openlocfilehash: 68aa23843b0470f15f409b6f3b58624f979ccfae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8aec3ae1ff629ef7fa000182cde29e306a471315
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328113"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80165882"
 ---
-# <a name="compiler-error-c3728"></a>Derleyici Hatası C3728
+# <a name="compiler-error-c3728"></a>Derleyici hatası C3728
 
-'event': olay bir raise yöntemi yok
+' Event ': olayda bir Raise yöntemi yok
 
-Meta verileri oluşturan bir dille gibi C#, bu izin vermiyor gelen sınıfı, bu tanımlandı, içerdiği dışında oluşturulması için bir olay [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesi ve bir görsel C++ CLR programlama kullanarak programlama olayı çalışıldı.
+Bir olayın tanımlandıkları sınıfın dışından tetiklememe gibi bir dille C#oluşturulan meta veriler, [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesine ve CLR programlama kullanan bir görsel C++ programa da olay oluşturmaya çalıştı.
 
-C# gibi dillerde geliştirilen bir programda bir olayı yükseltmek için de olayını genel bir yöntemi tanımlamak olay içeren sınıfın gerekir.
+Gibi bir dilde geliştirilen bir programda bir olayı yükseltmek için C#, olayı içeren sınıfın, olayı oluşturan bir ortak yöntem de tanımlanması gerekir.

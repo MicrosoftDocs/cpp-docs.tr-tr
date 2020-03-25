@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0015
 ms.assetid: 2096c8f1-e96c-49a4-a690-1cb893a8bf6f
-ms.openlocfilehash: b83c8f6ba7dac5b4af44cb03d941750fb0092df4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d88a3c2c25542cf492f374fb9857e709697c865d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359442"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192581"
 ---
 # <a name="project-build-error-prj0015"></a>Proje Derleme Hatası PRJ0015
 
-NULL cihazı sisteminizde eksik. Bir derlemeyi başlatmak belirleyemiyoruz.
+Sisteminizde NULL cihaz yok. Bir derlemeyi başlatamıyoruz.
 
-Bu hata, sistem kaynaklarının yetersizliği neden olabilir. Bazı uygulamaları kapatın veya yeniden başlatın.
+Bu hata, düşük sistem kaynaklarından kaynaklanabilir. Bazı uygulamaları kapatın veya yeniden başlatın.
 
-NULL cihazı için yeterli ayrıcalıkları bilgisayarda yoksa da kaynaklanabilir.
+Ayrıca, bilgisayardaki NULL cihaz için yeterli ayrıcalıklara sahip değilseniz de buna neden olabilir.

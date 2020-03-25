@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4075
 ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
-ms.openlocfilehash: bf22e7c78dce6949c357d7ad4a0c76209c88eef3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4a385b9559e2f54e81bda76e6dd13505e978a74
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186911"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183494"
 ---
 # <a name="linker-tools-warning-lnk4075"></a>Bağlayıcı Araçları Uyarısı LNK4075
 
 "Seçenek2" belirtimi nedeniyle "Seçenek1" yoksayılıyor
 
-İkinci seçenek, ilk geçersiz kılar.
+İkinci seçenek birincisini geçersiz kılar.
 
-Birbirini dışlayan bağlayıcı seçenekleri belirtilir.  Bağlayıcı seçenekleri inceleyin.  Bağlayıcı seçenekleri Burada belirtilen nasıl projenizi oluşturma bağlıdır.
+Birbirini dışlayan bağlayıcı seçenekleri belirtilmekte.  Bağlayıcı seçeneklerinizi inceleyin.  Bağlayıcı seçeneklerinin belirtildiği yer, projenizi oluşturma şeklinize bağlıdır.
 
-- Geliştirme ortamında geliştiriyorsanız, projeniz için bağlayıcı özellik sayfaları bakın ve hem bağlayıcı seçenekleri Burada belirtilen bakın.  Bkz: [derleyici ayarlayın ve derleme özellikleri](../../build/working-with-project-properties.md) daha fazla bilgi için.
+- Geliştirme ortamında oluşturuyorsanız, projeniz için bağlayıcı özelliği sayfalarına bakın ve her iki bağlayıcı seçeneğinin nerede belirtilmekte olduğunu görün.  Daha fazla bilgi için bkz. [derleyici ve derleme özelliklerini ayarlama](../../build/working-with-project-properties.md) .
 
-- Komut satırında derleme yaparsanız, var. belirtilen bağlayıcı seçeneklerine bakın.
+- Komut satırında derleme yaparsanız, burada belirtilen bağlayıcı seçeneklerine bakın.
 
-- Derleme betikleri ile yapılandırdıysanız, bu bağlayıcı seçenekleri Burada belirtilen görmek için betiklerinizi arayın.
+- Derleme betikleri ile derleme yaparsanız, bu bağlayıcı seçeneklerinin nerede belirtilmekte olduğunu görmek için betiklerinizde arama yapın.
 
-Birbirini dışlayan bağlayıcı seçenekleri Burada belirtilen bulduğunuzda, bağlayıcı seçenekleri birini kaldırın.
+Birbirini dışlayan bağlayıcı seçeneklerinin belirtildiği yeri bulduğunuzda, bağlayıcı seçeneklerinden birini kaldırın.
 
-Belirli bazı örnekler:
+Bazı özel örnekler:
 
-- İle derlenmiş bir modül bağlarsanız **/zi**, bir iç bağlayıcı seçeneği olduğu anlamına gelir/edıtandcontınue ve/OPT: ref, / OPT: ICF veya/Incremental: No, derlenen bir modül yok/edıtandcontınue yaptığından çağrılır, olur LNK4075 alın.  Bkz: [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md) daha fazla bilgi için.
+- /EDITANDCONTINUE adlı bir iç bağlayıcı seçeneğinin yanı sıra/DıDıTEM: REF,/OPT: ICF veya/ıNCRELADıAL: NO ile derlenen bir modül olan **/Zi**ile derlenen bir modülü BAĞLARSANıZ, LNK4075 alırsınız.  Daha fazla bilgi için bkz. [/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md) .

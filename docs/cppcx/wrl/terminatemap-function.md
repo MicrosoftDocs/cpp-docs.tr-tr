@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - TerminateMap function
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-ms.openlocfilehash: 2a451bf68bfb543ee5e82a9a48097cac7e8a9821
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 560f563e43fc8b818b04cd0bda6b01fbc916cb84
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398127"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213557"
 ---
 # <a name="terminatemap-function"></a>TerminateMap İşlevi
 
@@ -30,27 +30,27 @@ inline bool TerminateMap(
 ### <a name="parameters"></a>Parametreler
 
 *module*<br/>
-A [Modülü](module-class.md).
+[Modül](module-class.md).
 
-*SunucuAdı*<br/>
-Sınıf üreteçlerini parametresi tarafından belirtilen modüldeki bir alt kümesi adını *Modülü*.
+*serverName*<br/>
+Parametre *modülü*tarafından belirtilen modüldeki sınıf fabrikalarının bir alt kümesinin adı.
 
 *forceTerminate*<br/>
-**doğru** sınıfı sonlandırmak için bunlar bağımsız olarak fabrikaları; etkindir **false** herhangi bir Fabrika etkinse sınıf üreteçlerini sona erdirmek.
+etkin olduklarından bağımsız olarak sınıf fabrikalarını sonlandırmak için **true** ; herhangi bir fabrika etkin ise, sınıf fabrikalarını sonlandırmak için **false** .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**doğru** tüm sınıf üreteçlerini, sonlandırılmış; Aksi takdirde **false**.
+Tüm sınıf fabrikaları sonlandırılırsa **doğru** . Aksi takdirde, **false**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen modül sınıfı Fabrikalar kapatır.
+Belirtilen modüldeki sınıf fabrikalarını kapatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** Module. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

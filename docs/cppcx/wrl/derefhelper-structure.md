@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - DerefHelper structure
 ms.assetid: 86ded58b-c3ee-4a4f-bb86-4f67b895d427
-ms.openlocfilehash: 96b7e83a854765fb872b87d062928311731cfd26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43453d3162de697fa1cfcf0581953c91bbe3934f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398569"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214051"
 ---
 # <a name="derefhelper-structure"></a>DerefHelper Yapısı
 
@@ -30,22 +30,22 @@ struct DerefHelper<T*>;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*Şı*<br/>
 Şablon parametresi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başvurusu kaldırılmış bir işaretçi temsil `T*` şablon parametresi.
+`T*` Template parametresine başvuru yapılan bir işaretçiyi temsil eder.
 
-**DerefHelper** bir ifadede gibi kullanılır: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.
+**DerefHelper** , şöyle bir ifade içinde kullanılır: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`DerefType`|Başvurusu kaldırılmış bir şablon parametresi için tanımlayıcı `T*`.|
+|`DerefType`|Başvurusu kaldırılmış şablon parametresi için tanımlayıcı `T*`.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -53,9 +53,9 @@ Başvurusu kaldırılmış bir işaretçi temsil `T*` şablon parametresi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** async.h
+**Üst bilgi:** Async. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

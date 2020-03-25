@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: c3a4187c629238fa464a607c0b653f857fa44b6a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b4264681a55f45c8a4a2696e8cebbbd0eb12a4ed
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513956"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214532"
 ---
 # <a name="switch_type"></a>switch_type
 
@@ -32,7 +32,7 @@ Anahtar türü, bir tamsayı, karakter, Boole veya numaralandırma türü olabil
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Switch_type** C++ özniteliği, [switch_type](/windows/win32/Midl/switch-type) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Switch_type** C++ özniteliği [switch_type](/windows/win32/Midl/switch-type) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 C++Öznitelikler, [kapsüllenmiş birleşimleri](/windows/win32/Midl/encapsulated-unions)desteklemez. [Kapsüllenmiş olmayan birleşimler](/windows/win32/Midl/nonencapsulated-unions) yalnızca aşağıdaki biçimde desteklenir:
 
@@ -55,7 +55,7 @@ struct SizedValue2 {
 
 ## <a name="example"></a>Örnek
 
-Örnek switch_type [](case-cpp.md) örnek kullanımı için bkz. örnek örneği.
+**Switch_type**örnek bir kullanımı için bkz. [durum](case-cpp.md) örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -65,8 +65,8 @@ struct SizedValue2 {
 |-|-|
 |**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

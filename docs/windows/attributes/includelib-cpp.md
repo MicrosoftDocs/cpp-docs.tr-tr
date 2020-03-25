@@ -1,21 +1,21 @@
 ---
-title: ıncludelıb (C++ COM özniteliği)
+title: ıncludelib (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.includelib
 helpviewer_keywords:
 - includelib attribute
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
-ms.openlocfilehash: 57f039eeae527dd03884b12e7d9eb424d87f597f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4022a3f1f2d4ccaabe65c24065be8e1c846d604d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409362"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214856"
 ---
 # <a name="includelib-c"></a>includelib (C++)
 
-Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.
+Oluşturulan. IDL dosyasına bir. IDL veya. h dosyasının eklenmesine neden olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.
 
 ### <a name="parameters"></a>Parametreler
 
-*Name.idl*<br/>
-Oluşturulan .idl dosyasının bir parçası olarak dahil istediğiniz .idl dosyasının adı.
+*Name. IDL*<br/>
+Üretilen. IDL dosyasının bir parçası olarak dahil etmek istediğiniz. IDL dosyasının adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İncludelib** C++ öznitelik neden olur, sonra oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası `importlib` deyimi.
+**Includelib** C++ özniteliği, `importlib` deyimden sonra oluşturulan. IDL dosyasına bir. IDL veya. h dosyasının eklenmesine neden olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodu, .cpp dosyasında gösterilir:
+Aşağıdaki kod bir. cpp dosyasında gösterilmiştir:
 
 ```cpp
 // cpp_attr_ref_includelib.cpp
@@ -49,12 +49,12 @@ Aşağıdaki kodu, .cpp dosyasında gösterilir:
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
-|**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Uygulama hedefi**|Yerdeki|
+|**Tekrarlanabilir**|Yes|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

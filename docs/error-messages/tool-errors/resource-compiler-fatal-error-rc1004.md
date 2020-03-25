@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1004
 ms.assetid: f9b703d4-6767-4721-9450-37079bcc7152
-ms.openlocfilehash: 2c3792b7d6f266efd239cd693750a3c1a6b747c5
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 4634fd3308613ca0357103183e3b4386edc893e9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375899"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173185"
 ---
 # <a name="resource-compiler-fatal-error-rc1004"></a>Kaynak Derleyicisi Önemli Hatası RC1004
 

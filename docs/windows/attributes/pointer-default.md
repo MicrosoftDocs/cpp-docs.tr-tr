@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-ms.openlocfilehash: c70c372e5f1c3a9c2f620a1fa3505fb9d0436e79
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d0c5832623c1e418f4c6e8bdb606d1d363503483
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514261"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166542"
 ---
 # <a name="pointer_default"></a>pointer_default
 
@@ -30,11 +30,11 @@ Parametre listelerinde görünen en üst düzey işaretçiler hariç olmak üzer
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Pointer_default** C++ özniteliği, [pointer_default](/windows/win32/Midl/pointer-default) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Pointer_default** C++ özniteliği [pointer_default](/windows/win32/Midl/pointer-default) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örnek bir **pointer_default**kullanımı için [DefaultValue](defaultvalue.md) örneğine bakın.
+**Pointer_default**örnek bir kullanımı için [DefaultValue](defaultvalue.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -44,8 +44,8 @@ Parametre listelerinde görünen en üst düzey işaretçiler hariç olmak üzer
 |-|-|
 |**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

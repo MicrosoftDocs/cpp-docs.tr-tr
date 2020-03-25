@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4025
 ms.assetid: c4f6a651-0641-4446-973e-8290065e49ad
-ms.openlocfilehash: 50e5ad586a754723cbb66685a14de2e23f0bdb7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4dd54f1fd41fc405abb419b118154fe51b57af30
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151779"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164527"
 ---
 # <a name="compiler-warning-level-1-c4025"></a>Derleyici Uyarısı (düzey 1) C4025
 
-'number': değişken bağımsız değişkenleri olan işleve based işaretçi geçirildi: parametre numarası
+' number ': değişken bağımsız değişkenleri olan işleve based işaretçi geçirildi: parametre numarası
 
-Değişken bağımsız değişkenleri olan işleve based işaretçi geçirme işaretçiyi, beklenmeyen sonuçlarla normalleştirilmesine neden olur. Tabanlı işaretçiler değişken bağımsız değişkenleri olan işlevler geçirmeyin.
+Değişken bağımsız değişkenlerle bir işleve tabanlı bir işaretçi geçirmek, işaretçinin öngörülemeyen sonuçlarla normalleştirilmesine neden olur. Değişken bağımsız değişkenlerle işlevlere tabanlı işaretçileri geçirmeyin.

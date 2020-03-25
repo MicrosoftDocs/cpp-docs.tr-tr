@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C3130
+title: Derleyici hatası C3130
 ms.date: 11/04/2016
 f1_keywords:
 - C3130
 helpviewer_keywords:
 - C3130
 ms.assetid: c1462f33-434f-41f0-937e-392864916850
-ms.openlocfilehash: 2ff9debaa0c8b1ed52f775ddd60111aa916fe7c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f6ec01f9f427c992014fc992909bda0417d0fbf
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349990"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176643"
 ---
-# <a name="compiler-error-c3130"></a>Derleyici Hatası C3130
+# <a name="compiler-error-c3130"></a>Derleyici hatası C3130
 
-Derleyici iç hatası: eklenen kod bloğu PDB'ye yazılamadı
+İç derleyici hatası: eklenen kod bloğu PDB 'ye yazılamadı
 
-Derleyici .pdb dosyasına eklenen kod bloğu yazılamadı, bu hata meydana gelir. Hatanın en yaygın nedeni, yetersiz disk alanı olmasıdır.
+Derleyici eklenen bir kod bloğunu. pdb dosyasına yazamadı bu hata oluşur. Hatanın en yaygın nedeni, disk alanının olmamasıdır.

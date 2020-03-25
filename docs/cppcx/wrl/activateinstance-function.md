@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - ActivateInstance function
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
-ms.openlocfilehash: 43aa34153f0e71dd665090243ff2288bff704404
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1109e769352d412df8348822e05b66063159ee8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62303985"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214233"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance İşlevi
 
-Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.
+Belirtilen bir sınıf KIMLIĞINDE tanımlanan belirli bir türün bir örneğini kaydeder ve alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,24 +31,24 @@ inline HRESULT ActivateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Etkinleştirmek için bir tür.
+*Şı*<br/>
+Etkinleştirilecek bir tür.
 
-*activatableClassId*<br/>
-Parametre tanımlayan sınıf kimliği adını *T*.
+*Activatableclassıd*<br/>
+*T*parametresini TANıMLAYAN sınıf kimliğinin adı.
 
-*örneği*<br/>
-Bu işlem tamamlandığında, bir başvuru örneğine *T*.
+*Instance*<br/>
+Bu işlem tamamlandığında *T*örneğine bir başvuru.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatanın nedenini gösteren HRESULT hatası.
+Başarılı olursa S_OK; Aksi takdirde, hatanın nedenini gösteren bir HRESULT hatası.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** client.h
+**Üstbilgi:** Client. h
 
-**Namespace:** Windows::Foundation
+**Ad alanı:** Windows:: Foundation
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

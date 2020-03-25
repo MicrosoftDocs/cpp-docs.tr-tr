@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 893ddf3b4d030384572baf77647e09d4d2a9d719
-ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
+ms.openlocfilehash: 5f12b126db7c0e040f06640d3ecd201007d73968
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72444998"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167894"
 ---
 # <a name="resource-editors-c"></a>Kaynak Düzenleyicileri (C++)
 
@@ -73,13 +73,13 @@ Kaynaklar proje açık olmadan proje dışında da düzenlenebilir, bkz. [nasıl
 
 #### <a name="to-view-a-win32-resource-in-a-resource-editor"></a>Bir kaynak düzenleyicisinde Win32 kaynağını görüntülemek için
 
-1. @No__t-1**diğer Windows** > **kaynak görünümü**menü **görünümü**' ne gidin.
+1.  > **diğer Windows** > **kaynak görünümü**menü **görünümü** ' ne gidin.
 
 1. **Kaynak görünümü** pencere en üstteki pencere değilse, en üste getirmek için **kaynak görünümü** sekmesini seçin.
 
 1. **Kaynak görünümü**, görüntülemek istediğiniz kaynakları içeren proje için klasörü genişletin. Örneğin, bir iletişim kaynağı görüntülemek istiyorsanız **Iletişim kutusu** klasörünü genişletin.
 
-1. Kaynağa çift tıklayın, örneğin, **IDD_ABOUTBOX**.
+1. Kaynağa çift tıklayın, örneğin **IDD_ABOUTBOX**.
 
    Kaynak uygun düzenleyicide açılır. Örneğin, iletişim kutusu kaynakları için, kaynak **Iletişim kutusu Düzenleyicisi**içinde açılır.
 
@@ -113,18 +113,18 @@ Aşağıdaki kaynaklar görsel önizleme sağlamaz: Hızlandırıcı, bildirim, 
 
 ### <a name="to-preview-resources"></a>Kaynakları önizlemek için
 
-1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) veya belge penceresinde, kaynağı seçin, örneğin, **IDD_ABOUTBOX**.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) veya belge penceresinde, kaynağı seçin, örneğin **IDD_ABOUTBOX**.
 
 1. [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **Özellik sayfaları** düğmesini seçin.
 
    > [!TIP]
-   > Kısayol kullan menü  > **özellik sayfalarını** **görüntüle**' ye gidin.
+   > Kısayol kullan menü **görünümü** > **Özellik sayfaları**' na gidin.
 
    Kaynak için **özellik** sayfası, bu kaynağın önizlemesini görüntüleyen açılır. **Kaynak görünümü** veya belge penceresinde ağaç denetiminde gezinmek için **yukarı** ve **aşağı** ok tuşlarını kullanabilirsiniz. **Özellik** sayfası açık kalır ve odaklanmış olan ve önizlenebilir tüm kaynakları gösterir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

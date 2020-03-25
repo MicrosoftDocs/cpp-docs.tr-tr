@@ -1,5 +1,5 @@
 ---
-title: Platform::CallbackContext numaralandırması
+title: 'Platform:: CallbackContext numaralandırması'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::CallbackContext Enumeration
 ms.assetid: 60e0c7cb-5d8f-482a-bdca-ca9335ae4899
-ms.openlocfilehash: 7f4e020ab0b1e377456c27d3b4666e15b5a4f7a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1daa3988fcb985dab9d3083233a3703a20cc2fdb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161686"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214298"
 ---
-# <a name="platformcallbackcontext-enumeration"></a>Platform::CallbackContext numaralandırması
+# <a name="platformcallbackcontext-enumeration"></a>Platform:: CallbackContext numaralandırması
 
-Bir geri çağırma işlevi (olay işleyicisi) yürütür iş parçacığı bağlamını belirtir.
+Geri çağırma işlevinin (olay işleyicisi) çalıştırıldığı iş parçacığı bağlamını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,17 +26,17 @@ enum class CallbackContext {};
 
 ### <a name="members"></a>Üyeler
 
-|Türü kodu|Açıklama|
+|Tür kodu|Açıklama|
 |---------------|-----------------|
-|Tüm|Geri çağırma işlevi, her iş parçacığı bağlam üzerinde çalıştırabilirsiniz.|
-|Aynı|Zaman uyumsuz işlem başlatılan iş parçacığı bağlamı geri çağırma işlevi yürütebilir.|
+|Herhangi biri|Geri çağırma işlevi herhangi bir iş parçacığı bağlamında çalıştırılabilir.|
+|Naklettiğiniz|Geri çağırma işlevi, yalnızca zaman uyumsuz işlemi başlatan iş parçacığı bağlamında çalıştırılabilir.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd

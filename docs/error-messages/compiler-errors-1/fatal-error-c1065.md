@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1065
 ms.assetid: 80a27e13-696d-4199-a284-0d6b07446ff3
-ms.openlocfilehash: ad4617dca5740149b0fda288065b4843532441e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b611ad9be03b04ef45aa4c0ef5068fe75f3d2180
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166600"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204366"
 ---
 # <a name="fatal-error-c1065"></a>Önemli hata C1065
 
-Derleyici sınırı: Etiket kalmadı
+Derleyici sınırı: etiket kalmadı
 
-Kaynak dosyası birden fazla 65,523 sınıflar, yapılar, birleşimler, ad alanları veya sabit listeleri içerir.
+Kaynak dosyada 65.523 ' den fazla sınıf, yapı, birleşim, ad alanı veya Enum bulunur.
 
-Dosya, daha küçük dosyalara bölün.
+Dosyayı daha küçük dosyalara Böl.

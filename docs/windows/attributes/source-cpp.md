@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: 79614a345e6c07b03df351da93a847fe12e4b110
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5f961513b948c3195aea864d97313ac09e97344e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514029"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166230"
 ---
 # <a name="source-c"></a>kaynak (C++)
 
@@ -76,8 +76,8 @@ class NN : public b
 |-|-|
 |**Uygulama hedefi**|**sınıf**, **Yapı**, **arabirim**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|`coclass`(sınıfa veya yapıya uygulandığında)|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|`coclass` (sınıfa veya yapıya uygulandığında)|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

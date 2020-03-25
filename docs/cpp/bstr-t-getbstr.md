@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - GetBSTR method [C++]
 ms.assetid: 0c62ff16-4433-4183-a03c-d5a0a9b731ef
-ms.openlocfilehash: cea3404e0732cb0e16b3fa9199ce95e3dfcc23f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da438c65256d9a7e5bf5b02e108fee1385171d2d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386154"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181219"
 ---
-# <a name="bstrtgetbstr"></a>_bstr_t::GetBSTR
+# <a name="_bstr_tgetbstr"></a>_bstr_t::GetBSTR
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Başlangıcına işaret `BSTR` tarafından Sarmalanan `_bstr_t`.
+`_bstr_t`kaydırılan `BSTR` başlangıcını işaret eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,17 +27,17 @@ BSTR& GetBSTR( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başlangıcı `BSTR` tarafından Sarmalanan `_bstr_t`.
+`_bstr_t`kaydırılan `BSTR` başlangıcı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**GetBSTR** tüm etkiler `_bstr_t` nesneleri paylaşan bir `BSTR`. Birden fazla `_bstr_t` paylaşabileceğiniz bir `BSTR` kopya oluşturucu kullanılarak ve **işleç =**.
+**GetBSTR** , bir `BSTR`paylaşan tüm `_bstr_t` nesnelerini etkiler. Birden fazla `_bstr_t`, kopya Oluşturucusu ve **işleç =** kullanımı aracılığıyla bir `BSTR` paylaşabilir.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [_bstr_t::Assign](../cpp/bstr-t-assign.md) bir örnek için **GetBSTR**.
+**GetBSTR**kullanarak bir örnek için bkz. [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

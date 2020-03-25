@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 718de310bc4fb0cb0072065bc4e7b7adadb182aa
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 0af4e8faeb3d8606fb351b193364a2748fbc944e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421200"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215221"
 ---
 # <a name="how-to-manage-resources-c"></a>Nasıl yapılır: kaynakları yönetme (C++)
 
@@ -46,7 +46,7 @@ Kaynakları değiştirmeden bir dosyadan diğerine kopyalayabilir veya bir kayna
 Kaynakları var olan bir kaynaktan veya yürütülebilir dosyadan geçerli kaynak dosyanıza kolayca kopyalayabilirsiniz. Kaynakları kopyalamak için, her iki dosyayı aynı anda açar ve öğeleri bir dosyadan diğerine sürükleyin veya iki Dosya arasında kopyalayıp yapıştırın. Bu yöntem, kaynak betiği (. RC) dosyaları ve kaynak şablonu (. rct) dosyaları ve yürütülebilir (. exe) dosyaları için geçerlidir.
 
 > [!NOTE]
-> Görsel C++ , kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz. [CLIPART: Common Resources](https://github.com/Microsoft/VCSamples).
+> Görsel C++ , kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz. [CLIPART: Common Resources](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general).
 
 Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyaları arasında sürükleyip bırakamazsınız, kopyalayamaz, kesebilir veya yapıştıramazsınız. Bunu ürünün önceki sürümlerinde yapabilirsiniz. Yalnızca proje dışında açık olan. RC dosyaları arasında sürükle ve bırak yöntemini kullanın.
 
@@ -130,4 +130,4 @@ Win32
 
 [Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
 [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource-script-file.md)<br/>
-[Nasıl yapılır: Derleme Sırasında Kaynak Ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>
+[Nasıl yapılır: Derleme Sırasında Kaynak Ekleme](../windows/how-to-include-resources-at-compile-time.md)

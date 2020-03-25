@@ -8,22 +8,22 @@ helpviewer_keywords:
 - configuring ODBC data sources
 - ODBC data sources, represented by CDatabase
 ms.assetid: b246721f-b9e1-49bd-a6c7-f348b8c3d537
-ms.openlocfilehash: b435c65bab565e109d37e1dd24e051993cbb30c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed9eeb8f5ef0d53846761062cf2c6575d2eaf9e6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397919"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213310"
 ---
 # <a name="data-source-odbc"></a>Veri Kaynağı (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Veritabanı bağlamında, bir özel veri kümesi, verileri ve bir veri kaynağı adını kullanarak açıklanan veri kaynağının konumunu erişmek için gereken bilgileri bir veri kaynağıdır. Sınıf ile çalışmak için [CDatabase](../../mfc/reference/cdatabase-class.md), veri kaynağı aracılığıyla açık veritabanı bağlantısı (ODBC) yönetici yapılandırılmış olması gerekir. Yerel bir dizinde bir Microsoft Access dosyası ya da ağ üzerinden Microsoft SQL Server çalıştıran uzak bir veritabanı veri kaynakları örnekleridir. Uygulamanızda herhangi bir veri kaynağı bir ODBC sürücüsüne sahip erişebilir.
+Veritabanı koşullarında, veri kaynağı belirli bir veri kümesidir, bu verilere erişmek için gereken bilgiler ve veri kaynağının konumu veri kaynağı adı kullanılarak açıklanabilir. [CDatabase](../../mfc/reference/cdatabase-class.md)sınıfı ile çalışmak için veri kaynağı, açık veritabanı BAĞLANTıSı (ODBC) Yöneticisi aracılığıyla yapılandırdığınız bir olmalıdır. Veri kaynaklarına örnek olarak, bir ağ üzerinde Microsoft SQL Server çalıştıran uzak bir veritabanı veya yerel bir dizindeki Microsoft Access dosyası sayılabilir. Uygulamanızdan, ODBC sürücünüze sahip olduğunuz herhangi bir veri kaynağına erişebilirsiniz.
 
-Bir veya daha fazla veri kaynağı tek seferde uygulamanızda etkin olabilir, her tarafından temsil edilen bir `CDatabase` nesne. Birden fazla bağlantı herhangi bir veri kaynağına da sahip olabilirsiniz. Yüklediğiniz sürücüleri ve, ODBC sürücüleri özelliklerine bağlı olarak yerel veri kaynakları için de uzaktan bağlanabilirsiniz. Veri kaynakları ve ODBC Yöneticisi hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md).
+Uygulamanızda tek seferde etkin bir veya daha fazla veri kaynağınız olabilir, her biri bir `CDatabase` nesnesi tarafından temsil edilir. Ayrıca, herhangi bir veri kaynağına yönelik birden çok eş zamanlı bağlantınız olabilir. Yüklemiş olduğunuz sürücülere ve ODBC sürücülerinizin özelliklerine bağlı olarak, uzak sunucuya ve yerel veri kaynaklarına da bağlanabilirsiniz. Veri kaynakları ve ODBC Yöneticisi hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md).
 
-Aşağıdaki konularda, veri kaynakları hakkında daha fazla açıklanır:
+Aşağıdaki konularda veri kaynakları hakkında daha fazla bilgi açıklanmaktadır:
 
 - [Veri Kaynağı: Bağlantıları Yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
 

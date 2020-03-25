@@ -6,30 +6,30 @@ helpviewer_keywords:
 - database classes [C++], OLE DB
 - database classes [C++], ATL
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-ms.openlocfilehash: dc016a5e1e1d9652f6a69f73b5760f42dec5e889
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 76e9f49d4b394d0c807ca1f3d103ff325ded8a09
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222562"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80213505"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL Veritabanı Sınıfları (OLE DB Şablonları)
 
-Microsoft, OLE DB, verilere çok çeşitli bilgi kaynakları ve biçimler Tekdüzen erişim sağlayan COM arabirimleri kümesi çeşitli uygulamalarını sağlar.
+Microsoft, farklı bilgi kaynaklarındaki ve biçimlerdeki verilere tek biçimli erişim sağlayan bir COM arabirimleri kümesi olan OLE DB çeşitli uygulamaları sağlar.
 
-ATL OLE DB veritabanı teknoloji birçok yaygın olarak kullanılan bir OLE DB arabirimlerini uygulayan sınıflar sağlayarak kullanımını kolaylaştırmak şablonlarında C++ OLE DB Şablonları var.
+OLE DB şablonları, yaygın C++ olarak kullanılan OLE DB arabirimlerinin çoğunu uygulayan sınıflar sağlayarak OLE DB veritabanı teknolojisinin daha kolay KULLANıLMASıNı sağlayan ATL 'deki şablonlardır.
 
-Bu şablon kitaplığı iki bölümden oluşur:
+Bu şablon kitaplığı iki bölüm içerir:
 
-- [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-cpp.md) OLE DB (tüketici) istemci uygulamalarını uygulamak için kullanılır.
+- [OLE DB tüketici şablonları](../data/oledb/ole-db-consumer-templates-cpp.md) OLE DB istemcisi (tüketici) uygulaması uygulamak için kullanılır.
 
-- [OLE DB sağlayıcı şablonları](../data/oledb/ole-db-provider-templates-cpp.md) bir OLE DB sunucusu (sağlayıcı) uygulama uygulamak için kullanılır.
+- [OLE DB sağlayıcı şablonları](../data/oledb/ole-db-provider-templates-cpp.md) OLE DB sunucusu (sağlayıcı) uygulamasını uygulamak için kullanılır.
 
-Ayrıca, [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md) OLE DB tüketicileri oluşturmak için kullanışlı bir yol sağlar. OLE DB öznitelikleri çalışan OLE DB tüketicileri oluşturmak için OLE DB Tüketici şablonları temel alan kod yerleştirir.
+Ayrıca, [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md) , OLE DB tüketicileri oluşturmak için kullanışlı bir yol sağlar. OLE DB öznitelikleri, çalışan OLE DB tüketicileri oluşturmak için OLE DB tüketici şablonlarına göre kod ekler.
 
-MFC Kitaplığı sınıfını içeren Not [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), denetimlerde veritabanı kayıtlarını görüntüleyen. Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesne.
+MFC kitaplığı, denetimler içindeki veritabanı kayıtlarını görüntüleyen bir sınıf olan [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)sınıfı içerdiğini unutmayın. Görünüm bir `CRowset` nesnesine doğrudan bağlı bir form görünümüdür ve iletişim kutusu şablonunun denetimlerinde `CRowset` nesnesinin alanlarını görüntüler.
 
-Daha fazla bilgi için [OLE DB programlama](../data/oledb/ole-db-programming.md) ve [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming).
+Daha fazla bilgi için bkz. [OLE DB Programlama](../data/oledb/ole-db-programming.md) ve [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -37,4 +37,4 @@ Daha fazla bilgi için [OLE DB programlama](../data/oledb/ole-db-programming.md)
 [OLE DB Sağlayıcısı Oluşturma](../data/oledb/creating-an-ole-db-provider.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [OLE DB Sağlayıcı Şablonları Başvurusu](../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB Şablon örnekleri](https://github.com/Microsoft/VCSamples)
+[OLE DB şablonları örnekleri](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB)

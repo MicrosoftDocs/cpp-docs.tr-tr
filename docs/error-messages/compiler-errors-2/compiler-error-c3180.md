@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C3180
+title: Derleyici hatası C3180
 ms.date: 11/04/2016
 f1_keywords:
 - C3180
 helpviewer_keywords:
 - C3180
 ms.assetid: 5281f583-7df7-418a-8507-d4da67ed6572
-ms.openlocfilehash: bfe2699ce448aa879f0c93aa431a17dbc1334274
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c94019bf7a58492fcbb27c4f092a6e5f7e36ca25
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382449"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176461"
 ---
-# <a name="compiler-error-c3180"></a>Derleyici Hatası C3180
+# <a name="compiler-error-c3180"></a>Derleyici hatası C3180
 
-'type name': ad 'limit' karakter olan meta veri sınırını aşıyor
+' tür adı ': ad, ' limit ' karakter olan meta veri sınırını aşıyor
 
-Derleyici, yönetilen bir meta veri türü için ad kesildi. Kesilmenin türü ile kullanılamaz hale getirir `#using` yönergesi (veya başka bir dilde eşdeğeri).
+Derleyici meta verilerde yönetilen bir türün adını kesti. Kesme, türü `#using` yönergesi (veya başka bir dildeki eşdeğer) ile kullanılamaz hale getirir.
 
-Tür adı sınır, herhangi bir ad alanı nitelikleri içerir.
+Tür adı sınırı, ad alanı niteliklerinizi içerir.

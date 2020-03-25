@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0007
 ms.assetid: d923948b-acc9-498f-bf3b-f14e41bed61a
-ms.openlocfilehash: 83cb02f4d9d5232eda45b3bdbb591dd819fa12d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96d1b5655fc2c3f78efc04e1dc11c45f7b4ccee9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359598"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192984"
 ---
 # <a name="project-build-error-prj0007"></a>Proje Derleme Hatası PRJ0007
 
-Çıkış dizini 'dizin' oluşturulamadı.
+Çıkış dizini ' Dizin ' oluşturulamadı.
 
-Visual C++ bir çıktı dizini oluşturulamadı. Olası nedenler şunlardır:
+Görsel C++ bir çıkış dizini oluşturamadı. Olası nedenler şunlardır:
 
-- Çıkış dizinine oluşturulacak olan dizin salt okunur.
+- Çıktı dizininin oluşturulduğu dizin salt okunurdur.
 
-- Disk alanı yetersiz bilgisayardır.
+- Bilgisayarda disk alanı kalmadı.
 
-- Geçersiz dizin yolu belirttiğiniz.
+- Geçersiz bir dizin yolu belirttiniz.
 
-- Kullanıcı izinleri dizini oluşturmak için yeterli değildir.
+- Kullanıcı izinleri dizini oluşturmak için yeterli değil.

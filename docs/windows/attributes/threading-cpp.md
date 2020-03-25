@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: db2940ec3536ae8ea29ba40db84ea869ecb3d0ac
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b249eaf61266ed9964e44f6f0ad1c2f12a1b1067
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513925"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214506"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 
@@ -28,25 +28,25 @@ COM nesnesi için iş parçacığı modelini belirtir.
 *modelinizi*<br/>
 Seçim Aşağıdaki iş parçacığı modellerden biri:
 
-- `apartment`(Apartman iş parçacığı)
+- `apartment` (Apartman iş parçacığı)
 
-- `neutral`(Kullanıcı arabirimi olmayan .NET Framework bileşenleri)
+- `neutral` (Kullanıcı arabirimi olmayan bileşenleri .NET Framework)
 
-- `single`(basit iş parçacığı)
+- `single` (basit iş parçacığı)
 
-- `free`(serbest iş parçacığı)
+- `free` (serbest iş parçacığı)
 
-- `both`(Apartman ve serbest iş parçacığı)
+- `both` (Apartman ve serbest iş parçacığı)
 
-Varsayılan değer `apartment` şeklindedir.
+Varsayılan değer: `apartment`.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **Threading** C++ özniteliği oluşturulan. IDL dosyasında görünmez, ancak com nesnenizin uygulamasında kullanılacaktır.
 
-ATL projelerinde, [coclass](coclass.md) özniteliği de varsa, *model* tarafından belirtilen iş parçacığı modeli [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) `coclass` sınıfına öznitelik tarafından yerleştirilen şablon parametresi olarak geçirilir.
+ATL projelerinde, [coclass](coclass.md) özniteliği de varsa *model* tarafından belirtilen Iş parçacığı modeli [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) sınıfına, `coclass` özniteliği tarafından eklenir.
 
-**İş parçacığı** özniteliği bir [event_source](event-source.md)erişimini de korur.
+**İş parçacığı** özniteliği bir [event_source](event-source.md)erişimi de korur.
 
 ## <a name="example"></a>Örnek
 
@@ -61,7 +61,7 @@ ATL projelerinde, [coclass](coclass.md) özniteliği de varsa, *model* tarafınd
 |**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C2030
 ms.assetid: 5806cead-64df-4eff-92de-52c9a3f5ee62
-ms.openlocfilehash: 217f97d205e1da075277b8b0bc22ff3baab13482
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3f3936e6fd37da16c923cb482f45cec11833b3c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400532"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208038"
 ---
 # <a name="compiler-error-c2030"></a>Derleyici Hatası C2030
 
-erişebilirliği 'protected private' olan bir yok edici 'sealed' olarak bildirilmiş bir sınıfın üyesi olamaz
+' protected private ' erişilebilirliği olan yıkıcı, ' Sealed ' olarak tanımlanan bir sınıfın üyesi olamaz
 
-Bir Windows çalışma zamanı sınıf olarak bildirilen `sealed` özel korumalı bir yok Edicisi olamaz. Yalnızca genel sanal ve özel sanal olmayan yok ediciler sealed türlerde izin verilir. Daha fazla bilgi için [başvuru sınıfları ve yapıları](../../cppcx/ref-classes-and-structs-c-cx.md).
+`sealed` olarak belirtilen bir Windows Çalışma Zamanı sınıfı korunan özel yıkıcıya sahip olamaz. Sealed türlerde yalnızca ortak sanal ve özel sanal olmayan yıkıcılarda izin verilir. Daha fazla bilgi için bkz. [başvuru sınıfları ve yapıları](../../cppcx/ref-classes-and-structs-c-cx.md).
 
-Bu hatayı düzeltmek için yok edici erişilebilirliğini değiştirin.
+Bu hatayı düzeltemedi, yok edicinin erişilebilirliğini değiştirin.

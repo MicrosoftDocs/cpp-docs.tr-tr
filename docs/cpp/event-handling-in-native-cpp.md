@@ -4,36 +4,36 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - event handling [C++]
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
-ms.openlocfilehash: 9eb0334e3633921842fcc06155ba0300ff6192e1
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: cc9265cd3f9f400e2880405019e4d2c9a934f10a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222179"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180088"
 ---
 # <a name="event-handling-in-native-c"></a>Yerel C++'da Olay İşleme
 
-Yerel C++ olay işleme, kullanarak bir olay kaynağı ve olay alıcı [event_source](../windows/attributes/event-source.md) ve [event_receiver](../windows/attributes/event-receiver.md) sırasıyla belirten öznitelikleri `type` =`native`. Bu öznitelikler, sınıfların olayları tetiklemesine ve olayları yerel, COM olmayan bir bağlamda işlemek için uygulanmadan izin verin.
+Yerel C++ olay işlemede, sırasıyla [event_source](../windows/attributes/event-source.md) ve [event_receiver](../windows/attributes/event-receiver.md) özniteliklerini kullanarak bir olay kaynağı ve olay alıcısı ayarlarsınız `type`=`native`belirtin. Bu öznitelikler, olayları harekete geçirme ve yerel, COM dışı bağlamdaki olayları işlemek için uygulanan sınıflara izin verir.
 
 ## <a name="declaring-events"></a>Olayları Bildirme
 
-Bir olay kaynağı sınıfında kullanın [__event](../cpp/event.md) yöntem bildiriminde yöntemi bir olay olarak bildirmek için anahtar sözcüğü. Yöntem bildirdiğinizden emin olun, ancak bunu tanımlamaz; Bunu yapmak için bir olayı yapıldığında derleyici yöntemi örtük olarak tanımlıyor çünkü bir derleyici hatası oluşturur. Yerel olayları, sıfır veya daha fazla parametrelere sahip yöntemleri olabilir. Dönüş türü void veya herhangi bir tamsayı türü olabilir.
+Bir olay kaynak sınıfında yöntemi bir olay olarak bildirmek için yöntem bildiriminde [__event](../cpp/event.md) anahtar sözcüğünü kullanın. Yöntemi bildirdiğinizden, ancak tanımlamadığınızdan emin olun; Bunu yapmak için derleyici hatası oluşturur, çünkü derleyici bir olaya yapıldığında yöntemi örtük olarak tanımlar. Yerel olaylar sıfır veya daha fazla parametreye sahip Yöntemler olabilir. Dönüş türü void veya herhangi bir tamsayı türü olabilir.
 
-## <a name="defining-event-handlers"></a>Olay işleyicisi tanımlama
+## <a name="defining-event-handlers"></a>Olay Işleyicilerini tanımlama
 
 Bir olay alıcısı sınıfında, işleyecekleri olayla eşleşen imzalı yöntemler (dönüş türleri, çağrı kuralları ve bağımsız değişkenler) olan olay işleyicilerini tanımlarsınız.
 
 ## <a name="hooking-event-handlers-to-events"></a>Olay İşleyicilerini Olaylara Takma
 
-Ayrıca bir olay alıcısı sınıfında, iç işlevini [__hook](../cpp/hook.md) olayları olay işleyicileriyle ilişkilendirmek için ve [__unhook](../cpp/unhook.md) olayları olay işleyicileri'öğesinin ilişkilendirmesini kaldırmak. Bir olay işleyicisine birden fazla olay veya bir olaya birden fazla olay işleyicisi takabilirsiniz.
+Ayrıca, olay işleyicilerindeki olayların ilişkilendirmesini kaldırmak için olayları olay işleyicileri ve [__unhook](../cpp/unhook.md) ilişkilendirmek üzere [__hook](../cpp/hook.md) iç işlev bir olay alıcısı sınıfında kullanılır. Bir olay işleyicisine birden fazla olay veya bir olaya birden fazla olay işleyicisi takabilirsiniz.
 
 ## <a name="firing-events"></a>Olayları Tetikleme
 
-Bir olay harekete geçirmek için yalnızca bir olay olarak olay kaynağı sınıfı bildirilen yöntemi çağırın. Olaya olay işleyicileri takılmışsa, işleyiciler çağırılır.
+Bir olayı tetiklemesi için olay kaynak sınıfında bir olay olarak belirtilen yöntemi çağırmanız yeterlidir. Olaya olay işleyicileri takılmışsa, işleyiciler çağırılır.
 
 ### <a name="native-c-event-code"></a>Yerel C++ olay kodu
 
-Aşağıdaki örnek, yerel C++'ta bir olay harekete gösterilmektedir. Örneği derlemek ve çalıştırmak için koddaki açıklamalara bakın.
+Aşağıdaki örnek, yerel C++olarak bir olayın nasıl tetikleneceği gösterilmektedir. Örneği derlemek ve çalıştırmak için koddaki açıklamalara bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 MyHandler2 was called with value 123.

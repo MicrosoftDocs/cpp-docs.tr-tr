@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
-ms.openlocfilehash: f12bf4aafc87e44a6e2fb15ba79de4a9744bea58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0eadd1e3a287feecd36b00b231b42c31218352c1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398790"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80214155"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal Numaralandırması
 
@@ -26,30 +26,30 @@ enum AsyncStatusInternal;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.
+Zaman uyumsuz işlemlerin durumu ve `Windows::Foundation::AsyncStatus` numaralandırması arasındaki iç numaralandırmalar arasındaki eşlemeyi belirtir.
 
 ## <a name="members"></a>Üyeler
 
 `_Created`<br/>
-Eşdeğerdir `::Windows::Foundation::AsyncStatus::Created`
+`::Windows::Foundation::AsyncStatus::Created` eşdeğerdir
 
 `_Started`<br/>
-Eşdeğerdir `::Windows::Foundation::AsyncStatus::Started`
+`::Windows::Foundation::AsyncStatus::Started` eşdeğerdir
 
 `_Completed`<br/>
-Eşdeğerdir `::Windows::Foundation::AsyncStatus::Completed`
+`::Windows::Foundation::AsyncStatus::Completed` eşdeğerdir
 
 `_Cancelled`<br/>
-Eşdeğerdir `::Windows::Foundation::AsyncStatus::Cancelled`
+`::Windows::Foundation::AsyncStatus::Cancelled` eşdeğerdir
 
 `_Error`<br/>
-Eşdeğerdir `::Windows::Foundation::AsyncStatus::Error`
+`::Windows::Foundation::AsyncStatus::Error` eşdeğerdir
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** async.h
+**Üst bilgi:** Async. h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4033
 ms.assetid: 189a9ec3-ff6d-49dd-b9b2-530b28bbb7c9
-ms.openlocfilehash: 740be5fa45d0cd332cc7ac6b62a983ce00d05a8f
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: d5bee2eb874b965ff99e3dc0038d63d65b346318
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623739"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164358"
 ---
 # <a name="compiler-warning-level-1-c4033"></a>Derleyici Uyarısı (düzey 1) C4033
 

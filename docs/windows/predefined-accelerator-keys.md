@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 6753545b711ff45f79b3140b30a2edbcea81c39c
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: beb4e878138da3dc2905c86e18fedc658d7ceecf
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445405"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215156"
 ---
 # <a name="accelerator-keys-c"></a>Hızlandırıcı tuşları (C++)
 

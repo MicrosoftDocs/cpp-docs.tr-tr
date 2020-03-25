@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - D8022
 ms.assetid: eb18ec34-d32d-4636-a852-abf2063e886b
-ms.openlocfilehash: 2ad64e726a247da0291c98ada5398371a13c37d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59e917f008e528debca3d5237a520cab92a2574a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395137"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196904"
 ---
 # <a name="command-line-error-d8022"></a>Komut Satırı Hatası D8022
 
-'messagefile' açılamıyor
+' messageFile ' açılamıyor
 
-Söz konusu dosyanın geçerli dizin veya yol ortam değişkeninde belirtilen dizinde oluştu. İleti dosyası derleyici komut satırı sözdizimi ve seçenekleri kısa bir özetini içerir.
+Verilen dosya geçerli dizinde veya PATH ortam değişkeninde belirtilen bir dizinde değildi. İleti dosyası, derleyici komut satırı sözdizimi ve seçeneklerinin kısa bir özetini içerir.
 
-Bu dosya geçerli dizinde veya geçerli yolda dizin taşıyın. Bu dosya bulunamazsa, dağıtım disklerden kopyalamak için Kurulum programını çalıştırın.
+Bu dosyayı geçerli dizine veya geçerli yoldaki bir dizine taşıyın. Bu dosya bulunamazsa, dağıtım disklerinden kopyalamak için Kurulum programını çalıştırın.

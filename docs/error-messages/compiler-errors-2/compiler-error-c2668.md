@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2668
+title: Derleyici hatası C2668
 ms.date: 03/28/2017
 f1_keywords:
 - C2668
 helpviewer_keywords:
 - C2668
 ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
-ms.openlocfilehash: 1920af8873578c63ab768dae4bcdf4d91fe7cd57
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f59cb33bed15847ed1a7a2dbe99ea030babf3337
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164819"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80177163"
 ---
-# <a name="compiler-error-c2668"></a>Derleyici Hatası C2668
+# <a name="compiler-error-c2668"></a>Derleyici hatası C2668
 
-'function': aşırı yüklenmiş işleve belirsiz çağrı
+' function ': aşırı yüklenmiş işleve belirsiz çağrı
 
-Belirtilen aşırı yüklenmiş işlev çağrısı çözümlenemedi. Açıkça bir veya daha fazla gerçek parametre dönüştürme yapmak isteyebilirsiniz.
+Belirtilen aşırı yüklenmiş işlev çağrısı çözümlenemedi. Bir veya daha fazla gerçek parametreyi açıkça dönüştürmek isteyebilirsiniz.
 
-Ayrıca, şablonu kullanarak bu hatayı alabilirsiniz. Aynı sınıf içinde normal üye işlevini ve bir şablonlu üye işlevini ve aynı imzaya sahip, şablonlu bir ilk sırada olması gerekir. Bu, Visual C++'ın geçerli uygulama kısıtlamasıdır.
+Bu hatayı şablon kullanımı aracılığıyla da alabilirsiniz. Aynı sınıfta, aynı imzaya sahip bir normal üye işleviniz ve şablonlu bir üye işleviniz varsa, öncelikle şablonlu bir tane gelmelidir. Bu, geçerli görsel C++uygulamasının bir kısıtlamasıdır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2668 oluşturur:
+Aşağıdaki örnek C2668 oluşturur:
 
 ```cpp
 // C2668.cpp
@@ -43,7 +43,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bu hatayı gidermek için başka bir yöntem, bir [using bildirimi](../../cpp/using-declaration.md):
+Bu hatayı çözmek için bir diğer yol ise [using bildirimiyle](../../cpp/using-declaration.md)birlikte:
 
 ```cpp
 // C2668b.cpp
@@ -86,9 +86,9 @@ class MyTestCase : public AppTestCase {
 
 ## <a name="example"></a>Örnek
 
-Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: 0 sabiti, tür dönüştürme belirsiz dönüştürme.
+Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak da oluşturulabilir: 0 sabiti dönüştürmesinde belirsiz dönüştürme.
 
-İnt, uzun ve void * için dönüştürme hem gerektirdiğinden sabit 0'ı kullanarak bir yayın dönüştürme belirsiz. Bu hatayı gidermek için 0 hiçbir dönüştürmeler (Bu kod Visual C++ Visual Studio .NET 2003 ve Visual Studio sürümlerinde geçerli olacaktır) gerçekleşmesi gerekir böylece için kullanıldığını işlev parametresi tam türüne dönüştürün.
+İnt 'in hem Long hem de void * olarak dönüştürülmesi gerektiğinden, sabit 0 kullanan bir cast üzerinde dönüştürme belirsizdir. Bu hatayı çözmek için 0 ' ı, bir dönüştürme gerçekleşmeyecek şekilde, için kullanıldığı işlev parametresinin tam türüne atayın (Bu kod Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde geçerli olur C++).
 
 ```cpp
 // C2668c.cpp
@@ -110,7 +110,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Kayan ve tüm matematik işlevlerinin çift forms CRT artık sahip olduğundan, bu hata oluşabilir.
+Bu hata, CRT 'nin artık tüm matematik işlevlerinin float ve Double biçimleri içerdiğinden meydana gelebilir.
 
 ```cpp
 // C2668d.cpp
@@ -125,7 +125,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Pow (int, int) CRT'deki math.h kaldırıldı çünkü bu hata oluşabilir.
+POW (int, int), CRT içindeki Math. h öğesinden kaldırıldığı için bu hata ortaya çıkabilir.
 
 ```cpp
 // C2668e.cpp
@@ -138,7 +138,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bu kod, Visual Studio 2015'te başarılı olur ancak Visual Studio 2017 ve sonraki C2668 başarısız olur. Visual Studio 2015'te derleyici deneyebileceğinizi kopya listesi başlatması normal kopya başlatma aynı şekilde ele; yalnızca oluşturucu aşırı yükleme çözümlemesi için dönüştürme kabul.
+Bu kod Visual Studio 2015 ' de başarılı olur, ancak Visual Studio 2017 ve sonraki sürümlerinde C2668 ile başarısız olur. Visual Studio 2015 ' de, derleyici yanlışlıkla kopyalama-liste başlatmasını düzenli kopya başlatma ile aynı şekilde kabul ediyor; yalnızca aşırı yükleme çözümlemesi için Oluşturucu dönüştürmekte sayılır.
 
 ```cpp
 struct A {

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - continue keyword [C++]
 ms.assetid: 3c94ee57-f732-4c1d-8537-d0ce5382bfd4
-ms.openlocfilehash: 6fbc4af6a9a56f3406582ea9ba59f4d5759b88a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3790ecfde0af958b3244cfdaa61524ba78d6267
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154639"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180283"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C++)
 
-En küçük kapsayan denetleme ifade için Denetim aktarımı zorlar [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), veya [sırada](../cpp/while-statement-cpp.md) döngü.
+Denetimin, en küçük kapsayan [Do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md)veya [while](../cpp/while-statement-cpp.md) döngüsünün denetim ifadesine aktarılmasını zorlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,13 +25,13 @@ continue;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kalan tüm geçerli yineleme deyimlerinde yürütülmedi. Döngünün sonraki yinelemesine şu şekilde belirlenir:
+Geçerli yinelemedeki kalan deyimler yürütülmedi. Döngünün sonraki yinelemesi şöyle belirlenir:
 
-- İçinde bir **yapmak** veya **sırada** döngü, sonraki yineleme başlatır, denetleme ifadesiyle reevaluating tarafından **yapmak** veya **sırada** deyimi.
+- **Do** **veya while döngüsünde,** sonraki yineleme **Do** veya **while** deyiminin denetim ifadesini yeniden değerlendirerek başlar.
 
-- İçinde bir **için** döngü (söz dizimi kullanılarak `for`(`init-expr`; `cond-expr`; `loop-expr`)), `loop-expr` yan tümcesi yürütülür. Ardından `cond-expr` yan tümcesi yeniden değerlendirimiş ve sonucuna bağlı olarak, döngü ya da sona erer veya başka bir yineleme gerçekleşir.
+- Bir **for** döngüsünde (`for`sözdizimini kullanarak (`init-expr`; `cond-expr`; `loop-expr`)), `loop-expr` yan tümcesi yürütülür. Sonra `cond-expr` yan tümcesi yeniden değerlendirilerek, sonuca bağlı olarak döngü sonlanır ya da başka bir yineleme meydana gelir.
 
-Aşağıdaki örnekte gösterildiği nasıl **devam** deyimi, kod bölümlerini atlayabilir ve bir döngünün sonraki yinelemesine başlatmak için kullanılabilir.
+Aşağıdaki örnek, **Continue** ifadesinin kod bölümlerini atlamak ve bir sonraki yinelemeye başlamak için nasıl kullanılabileceğini gösterir.
 
 ## <a name="example"></a>Örnek
 

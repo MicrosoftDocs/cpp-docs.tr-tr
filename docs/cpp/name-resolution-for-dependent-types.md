@@ -2,16 +2,16 @@
 title: Bağımlı Türleri Ad Çözme
 ms.date: 11/04/2016
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-ms.openlocfilehash: 798cc7067967e8992c32d7c0ced9f647e4877110
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: e9954eab2793f9adf0de75775563df0ae6f063f3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222409"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80161164"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Bağımlı Türleri Ad Çözme
 
-Kullanım **typename** derleyiciye belirtilen tam adın bir türü tanımladığını bildirmek üzere şablon tanımlarında tam adlar için. Daha fazla bilgi için [typename](../cpp/typename.md).
+Derleyiciye verilen nitelenmiş adın bir tür tanımladığından emin olmak için şablon tanımlarındaki nitelenmiş adlar için **TypeName** kullanın. Daha fazla bilgi için bkz. [TypeName](../cpp/typename.md).
 
 ```cpp
 // template_name_resolution1.cpp
@@ -40,7 +40,7 @@ int main()
 Name resolved by using typename keyword.
 ```
 
-Bağımlı adlara yönelik ad araması, adları hem şablon tanımının bağlamı denetler — aşağıdaki örnekte, bu bağlamda bulacağından `myFunction(char)`— ve Şablon örneğinin bağlamı. Aşağıdaki örnekte, ana şablon örneği; Bu nedenle, `MyNamespace::myFunction` örnek oluşturma noktasında görülebilir ve daha iyi bir eşleşme olarak seçilir. `MyNamespace::myFunction` yeniden adlandırılırsa, bunun yerine `myFunction(char)` çağrılır.
+Bağımlı adlar için ad arama, hem şablon tanımının bağlamlarından adları inceler — aşağıdaki örnekte, bu bağlam `myFunction(char)`ve şablon örneği oluşturma bağlamını bulur. Aşağıdaki örnekte, şablon Main içinde oluşturulur; Bu nedenle `MyNamespace::myFunction`, örnekleme noktasından görünür ve daha iyi eşleşme olarak çekilir. `MyNamespace::myFunction` yeniden adlandırılırsa, bunun yerine `myFunction(char)` çağrılır.
 
 Tüm adlar, bağımsız adlar gibi çözümlenir. Bununla birlikte, olası bir çakışma varsa tam adlar kullanmanızı öneririz.
 
@@ -82,7 +82,7 @@ int main()
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Int MyNamespace::myFunction
@@ -90,7 +90,7 @@ Int MyNamespace::myFunction
 
 ### <a name="template-disambiguation"></a>Şablon Kesinleştirme
 
-Visual Studio 2012, C ++ 98/03/11 standart kurallarını "Şablon" anahtar sözcüğü ile Kesinleştirme için zorlar. Aşağıdaki örnekte, Visual Studio 2010 hem uyumsuz satırları hem de uyumlu satırları kabul eder.  Visual Studio 2012, yalnızca uyumlu satırları kabul eder.
+Visual Studio 2012, "Template" anahtar sözcüğüyle Kesinleştirme için C++ 98/03/11 standart kurallarını uygular. Aşağıdaki örnekte, Visual Studio 2010, uyumlu olmayan satırları ve uygun satırları kabul eder.  Visual Studio 2012 yalnızca uyumlu satırları kabul eder.
 
 ```cpp
 #include <iostream>

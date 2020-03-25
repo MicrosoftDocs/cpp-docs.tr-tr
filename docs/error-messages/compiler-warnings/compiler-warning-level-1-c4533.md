@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4533
 ms.assetid: 359fecda-d540-46e5-b214-dbabe9ef50d2
-ms.openlocfilehash: 6ee88af66238497216d7e5dab497394a58a55805
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 20637dc23e13031b4199298a3374825062ce40da
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965758"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186432"
 ---
 # <a name="compiler-warning-level-1-c4533"></a>Derleyici Uyarısı (düzey 1) C4533
 

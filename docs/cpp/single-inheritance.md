@@ -10,18 +10,18 @@ helpviewer_keywords:
 - derived classes [C++], single base class
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-ms.openlocfilehash: 96af0c42a32f14280fd8c208a3e4eaec38a8ca3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f8f08bcea1a44199d15da82b3ddbd37b676b347
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331135"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178801"
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 
 Sık kullanılan bir devralma biçimi olan "tek devralma"da, sınıflarda yalnızca bir temel sınıfı vardır. Aşağıdaki şekilde gösterilen ilişkiyi göz önünde bulundurun.
 
-![Temel tek&#45;Devralma Grafiği](../cpp/media/vc38xj1.gif "temel tek&#45;Devralma Grafiği") <br/>
+![Temel tek&#45;devralma grafiği](../cpp/media/vc38xj1.gif "Temel tek&#45;devralma grafiği") <br/>
 Basit Tek Devralma Grafiği
 
 Şekildeki ilerlemenin genelden özele olduğuna dikkat edin. Çoğu sınıf hiyerarşisinin tasarımında bulunan diğer bir genel öznitelik ise türetilen sınıfın temel sınıf ile bir "türü" ilişkisi olmasıdır. Şekilde, `Book` bir `PrintedDocument` türü, `PaperbackBook` ise bir `book` türüdür.
@@ -44,11 +44,11 @@ class PaperbackBook : public Book {};
 
 Her sınıfın türetildiği temel sınıf, türetilen sınıfın bildiriminden önce bildirilir. Temel sınıf için ileri başvuran bir bildirim sağlamak yeterli değildir; tam bir bildirim olması gerekir.
 
-Yukarıdaki örnekte, bir erişim belirticisi **genel** kullanılır. Genel, korumalı ve özel Devralmanın anlamı açıklanan [üye erişim denetimi.](../cpp/member-access-control-cpp.md)
+Yukarıdaki örnekte, erişim belirticisi **genel** kullanılır. Ortak, korumalı ve özel devralmanın anlamı [üye Access Control açıklanmıştır.](../cpp/member-access-control-cpp.md)
 
 Bir sınıf, aşağıdaki şekilde gösterildiği gibi birçok özel sınıf için temel sınıf olarak kullanılabilir.
 
-![Yönlendirilmiş Çevrimsiz grafik](../cpp/media/vc38xj2.gif "yönlendirilmiş Çevrimsiz grafik") <br/>
+![Yönlendirilmiş çevrimsiz grafik](../cpp/media/vc38xj2.gif "Yönlendirilmiş çevrimsiz grafik") <br/>
 Yönlendirilmiş Çevrimsiz Grafik Örneği
 
 Yukarıda gösterilen "yönlendirilmiş çevrimsiz graf" (veya "DAG") adlı diyagramda, sınıfların bazıları birden fazla türetilmiş sınıfa yönelik temel sınıflardır. Ancak bunun tersi doğru değildir: türetilmiş herhangi bir sınıfa yönelik yalnızca bir doğrudan temel sınıf vardır. Şekildeki grafikte "tek devralma" yapısı gösterilmiştir.
@@ -56,7 +56,7 @@ Yukarıda gösterilen "yönlendirilmiş çevrimsiz graf" (veya "DAG") adlı diya
 > [!NOTE]
 > Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar.
 
-Devralma işleminde, türetilen sınıf temel sınıfın üyelerini ve eklediğiniz tüm yeni üyeleri içerir. Sonuç olarak, türetilen bir sınıf temel sınıfın üyelerine başvurabilir (bu üyeler türetilen sınıfta yeniden tanımlanmadıkça). Kapsam çözümleme işleci (`::`), bu sınıflar türetilen sınıfta yeniden tanımlandığında doğrudan veya dolaylı temel sınıfların üyelerine başvurmak için kullanılabilir. Bu örneği göz önünde bulundurun:
+Devralma işleminde, türetilen sınıf temel sınıfın üyelerini ve eklediğiniz tüm yeni üyeleri içerir. Sonuç olarak, türetilen bir sınıf temel sınıfın üyelerine başvurabilir (bu üyeler türetilen sınıfta yeniden tanımlanmadıkça). Kapsam çözümleme işleci (`::`), bu sınıflar türetilen sınıfta yeniden tanımlandığında doğrudan veya dolaylı temel sınıfların üyelerine başvurmak için kullanılabilir. Şu örneği göz önünde bulundurun:
 
 ```cpp
 // deriv_SingleInheritance2.cpp
@@ -154,4 +154,4 @@ Yukarıdaki örnekte, farklı türler oluşturulur. Ancak, bu türlerin tümü `
 `Document` sınıfında `PrintNameOf` işlevi olduğu için belgenin türüne özgü bilgilerin bazılarını atlasa da (`Book` için sayfa sayısı, `HelpFile` için bayt sayısı, vb.), kitaplıktaki her kitabın adını yazdırabilir.
 
 > [!NOTE]
->  Temel sınıfı `PrintNameOf` gibi bir işlevi uygulamaya zorlamak, genellikle iyi bir tasarım uygulaması değildir. [Sanal işlevler](../cpp/virtual-functions.md) başka tasarım alternatifleri sunar.
+>  Temel sınıfı `PrintNameOf` gibi bir işlevi uygulamaya zorlamak, genellikle iyi bir tasarım uygulaması değildir. [Sanal işlevler](../cpp/virtual-functions.md) diğer tasarım alternatifleri sunar.

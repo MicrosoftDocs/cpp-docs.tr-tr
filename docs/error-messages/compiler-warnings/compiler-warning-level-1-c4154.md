@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4154
 ms.assetid: 4511afeb-e893-4cc6-83b6-4c7a0477f76b
-ms.openlocfilehash: 3f0d56f6ae4b4ca92bc330d72176266e3196ea6a
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 07b4c6e0821c925e70ce1bce1d910f184d658982
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73625017"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80163618"
 ---
 # <a name="compiler-warning-level-1-c4154"></a>Derleyici Uyarısı (düzey 1) C4154
 

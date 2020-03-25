@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC4093
 ms.assetid: 3c61b4a4-b418-465b-a4fd-cb1ff0adb8dd
-ms.openlocfilehash: 23bf436e6e8338f89bc576564181c84715028332
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29d24f1e380f5c531e170e5dc23cf5c77eefb874
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346216"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182298"
 ---
 # <a name="resource-compiler-warning-rc4093"></a>Kaynak Derleyicisi Uyarısı RC4093
 
-Etkin olmayan kod karakter sabitindeki atlanmayan yeni satır
+etkin olmayan koddaki karakter sabitinde kaçışsız yeni satır
 
-Sabit ifadesi, bir `#if`, `#elif`, **#ifdef**, veya **#ifndef** etkin olmayan kod yapmak sıfır olarak değerlendirilen önişlemci yönergesi izler. Bu etkin olmayan kod içinde bir dizi tek veya çift tırnak işaretleri içinde bir yeni satır karakteri görüldü.
+`#if`, `#elif`, **#ifdef**veya **#ifndef** Önişlemci yönergesinin sabit ifadesi sıfır olarak değerlendirilir ve aşağıdaki kod etkin değil. Bu etkin olmayan kodda, tek veya çift tırnak işareti kümesi içinde yeni satır karakteri görünüyor.
 
-Sonraki çift tırnak işareti içinde bir karakter sabiti olarak kabul kadar tüm metni.
+Sonraki çift tırnak işareti, bir karakter sabiti içinde olacak şekilde değerlendirilene kadar tüm metinler.

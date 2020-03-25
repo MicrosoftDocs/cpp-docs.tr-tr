@@ -7,19 +7,19 @@ helpviewer_keywords:
 - CAN0055
 - CXX0055
 ms.assetid: bb2a81f9-35ea-4b02-a49e-6b2c7023aebd
-ms.openlocfilehash: 7584516f55af51107f2765b57986cf6ea4700fc5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62197741ada96240e628b95b520bf94396bba5f7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299523"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184716"
 ---
 # <a name="expression-evaluator-error-cxx0055"></a>İfade Değerlendirici Hatası CXX0055
 
 bağlam işlecinde belirsiz simge
 
-Bağlam işlecinde bir simge (**{}**) programda birden fazla sembol göstermektedir.
+Bağlam işlecinde ( **{}** ) bir sembol, programda birden fazla simgeye başvuruda bulunulacaktır.
 
-Kapsam çözümleme işleci (`::`) belirsizliği çözmek mümkün olabilir.
+Kapsam çözümleme işleci (`::`) belirsizliğe çözüm verebilir.
 
-Bu hata için CAN0055 aynıdır.
+Bu hata CAN0055 ile aynıdır.

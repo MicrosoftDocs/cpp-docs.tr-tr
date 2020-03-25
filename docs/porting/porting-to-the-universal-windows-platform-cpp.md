@@ -2,12 +2,12 @@
 title: Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 ms.date: 10/23/2019
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-ms.openlocfilehash: 0013d85ad8c27c06560c9f9e541691f4335252d1
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 7663fbac62687562f09a3a1ed66b8c09b75c51fd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076844"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167647"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 

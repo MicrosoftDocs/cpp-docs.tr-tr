@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4393
 ms.assetid: 353a0539-d1ea-4c1b-8849-c9b321ec9842
-ms.openlocfilehash: 92cb9a063a2f6e4660c3f84516527c1417c55e46
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: edc09bd48614abe3ea06d4365cb55110f8b9956b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73966144"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80162718"
 ---
 # <a name="compiler-warning-level-1-c4393"></a>Derleyici Uyarısı (düzey 1) C4393
 

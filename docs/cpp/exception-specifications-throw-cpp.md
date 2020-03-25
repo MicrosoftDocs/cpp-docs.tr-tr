@@ -8,12 +8,12 @@ helpviewer_keywords:
 - throw keyword [C++]
 - noexcept keyword [C++]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-ms.openlocfilehash: 4c7cc6027a3af4c300b88389cb29e3ccf091514e
-ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
+ms.openlocfilehash: 6f8f9466b867603738919c6210055d02d3c579ae
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79509424"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80180049"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept)C++()
 

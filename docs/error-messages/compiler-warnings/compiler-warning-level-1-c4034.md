@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4034
 ms.assetid: 1d2f598d-bdfc-4a95-9617-424b591ed3e8
-ms.openlocfilehash: d3f5ae40316ea0e21868dabb72142c937b03707e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91fd3ece376a3bc1c121a9422e0f73eb1c6f23fb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390535"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80164321"
 ---
 # <a name="compiler-warning-level-1-c4034"></a>Derleyici Uyarısı (düzey 1) C4034
 
-sizeof 0 döndürdü
+sizeof 0 döndürüyor
 
-`sizeof` İşleci, işleneni boyutu sıfır uygulanır (boş yapıya, birleşim, sınıf veya numaralandırılmış tür veya tür `void`).
+`sizeof` işleci, sıfır boyutundaki bir işlenene uygulanır (boş bir yapı, birleşim, sınıf veya numaralandırılmış tür ya da `void`tür).

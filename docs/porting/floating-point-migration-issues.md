@@ -2,12 +2,12 @@
 title: Kayan nokta geçiş sorunları
 ms.date: 05/17/2017
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
-ms.openlocfilehash: 0a84b764d395063f38cae299cff75437318b024e
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 40eb08e4f9c7058d6b11700535e1c25f86548a22
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626988"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80215026"
 ---
 # <a name="floating-point-migration-issues"></a>Kayan nokta geçiş sorunları
 
@@ -17,7 +17,7 @@ Bazen projelerinizi Visual Studio 'nun daha yeni bir sürümüne yükselttiğini
 
 Çoğu CRT matematik işlevi, Visual Studio 'da yıl için sunulmaktadır, ancak Visual Studio 2013 başlayarak ISO C99 için gereken tüm işlevler dahil edilmiştir. Bu işlevler, performansı doğruluk altına alacak şekilde uygulanır. Her durumda doğru bir şekilde yuvarlanmış sonucun üretilmesi, canlı bir şekilde elde edilebilir hale gelebilir, bu işlevler doğru bir şekilde yuvarlanmış sonuca yakın bir şekilde bir kapatma sağlamak üzere tasarlanmıştır. Çoğu durumda, üretilen sonuç, doğru bir şekilde yuvarlanmış en az duyarlık veya *ULP*birimi olmak üzere, doğru yuvarlatılmış sonucun içinde, ancak daha fazla doğruluk olduğu durumlar olabilir. Bu işlevleri daha önce almak için farklı bir matematik kitaplığı kullanıyorsanız, sonuçlarınızda değişiklik yapmaktan uygulama farklılıkları sorumlu olabilir.
 
-Matematik işlevleri Visual Studio 2015 ' de Universal CRT 'a taşındığında, bazı yeni algoritmalar kullanılmıştır ve Visual Studio 2013 yeni olan işlevlerin uygulanmasında birkaç hata düzeltildi. Bu değişiklikler, bu işlevleri kullanan kayan nokta hesaplamaları sonuçlarında algılanabilir farklılıklara yol açabilir. Hata sorunları olan işlevler HATAİŞLEV, exp2, geri kalan, remquo, scalbln ve scalbümn ve bu kişilerin float ve uzun çift çeşitleri vardı.  Visual Studio 2015 ' deki diğer değişiklikler, kayan nokta durum sözcüğünü ve özel durum bilgilerini _clear87, _clearfp, fegetenv, fesetenv ve feholdexcept işlevlerinde koruyan sorunlar düzeltildi.
+Matematik işlevleri Visual Studio 2015 ' de Universal CRT 'a taşındığında, bazı yeni algoritmalar kullanılmıştır ve Visual Studio 2013 yeni olan işlevlerin uygulanmasında birkaç hata düzeltildi. Bu değişiklikler, bu işlevleri kullanan kayan nokta hesaplamaları sonuçlarında algılanabilir farklılıklara yol açabilir. Hata sorunları olan işlevler HATAİŞLEV, exp2, geri kalan, remquo, scalbln ve scalbümn ve bu kişilerin float ve uzun çift çeşitleri vardı.  Visual Studio 2015 ' deki diğer değişiklikler _clear87, _clearfp, fegetenv, fesetenv ve feholdexcept işlevlerinde kayan nokta durum sözcüğünü ve özel durum bilgilerini koruma konusunda sorun düzeltildi.
 
 ## <a name="processor-differences-and-compiler-flags"></a>İşlemci farklılıkları ve derleyici bayrakları
 

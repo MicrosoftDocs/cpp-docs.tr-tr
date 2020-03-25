@@ -8,18 +8,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: c38bfca4c1b93d373c86bbc710ccb30c43dafd4f
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 4f105558d7795210e1edb2470af4e50326f49de6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857459"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182207"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör haline getirici ve paralel hale getirici iletileri
 
-Microsoft kullanabileceğiniz C++ derleyici seçenekleri [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlanacak [otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış nedeni kodları ve kendi etkinliğiyle ilgili bilgi iletileri. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
+Otomatik paralelleştirme ve otomatik C++ vektörleştirme için Microsoft derleyici seçenekleri [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ' u kullanarak, etkinliğinizi ve etkinlikleriyle ilgili bilgilendirme iletilerini [Otomatik paralelleştirme ve otomatik vektörleştirmeyi](../../parallel/auto-parallelization-and-auto-vectorization.md) ayarlayabilirsiniz. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
 
-## <a name="BKMK_InformationalMessages"></a> Bilgilendirme iletileri
+## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a>Bilgilendirici iletiler
 
 Belirttiğiniz raporlama düzeyine bağlı olarak, aşağıdaki bilgi iletilerinin biri her döngü için görünür.
 
@@ -33,15 +33,15 @@ Neden kodları hakkında daha fazla bilgi için bu makalenin sonraki bölümüne
 |5012|`Loop not parallelized due to reason '*description*'.`|
 |5021|`Unable to associate loop with pragma.`|
 
-Aşağıdaki bölümlerde, vektör yapıcı ve paralel hale getirici için olası neden kodları listelenmiştir.
+Aşağıdaki bölümlerde paralelleştirme ve Vektörleştirici için olası neden kodları listelenmektedir.
 
-## <a name="BKMK_ReasonCode50x"></a> 5XX neden kodları
+## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a>5xx neden kodları
 
-5*xx* neden kodları, hem paralel hale getirici hem de vektör hale getirici için geçerlidir.
+5*xx* neden kodları paralelleştirme ve Vektörleştirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|500|Bu bazı durumları kapsayan genel bir ileti — Örneğin, döngü birden fazla çıkış içeriyor ya da döngü üstbilgisi endüksiyon değişkeninin artışıyla bitmiyor.|
+|500|Birkaç durumu kapsayan genel bir ileti — Örneğin, döngü birden çok çıkış içerir veya döngü üst bilgisi, endüksiyon değişkeninin arttırılarak bitmez.|
 |501|`Induction variable is not local; or upper bound is not loop-invariant.`|
 |502|`Induction variable is stepped in some manner other than a simple +1.`|
 |503|`Loop includes exception-handling or switch statements.`|
@@ -198,9 +198,9 @@ void code_504(int *A) {
 }
 ```
 
-## <a name="BKMK_ReasonCode100x"></a> 10xx neden kodları
+## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a>10xx neden kodları
 
-10*xx* neden kodları paralel hale getirici için geçerlidir.
+10*xx* neden kodları paralelleştirme için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -407,9 +407,9 @@ void code_1010()
 }
 ```
 
-## <a name="BKMK_ReasonCode110x"></a> 11xx neden kodları
+## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a>11xx neden kodları
 
-11*xx* neden kodları vektör hale getirici için geçerlidir.
+11*xx* neden kodları Vektörleştirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -555,9 +555,9 @@ void code_1106(int *A)
 }
 ```
 
-## <a name="BKMK_ReasonCode120x"></a> 12xx neden kodları
+## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a>12XX neden kodları
 
-12*xx* neden kodları vektör hale getirici için geçerlidir.
+12*xx* neden kodları vektörleştiriciye uygulanır.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -630,9 +630,9 @@ void code_1203(int *A)
 }
 ```
 
-## <a name="BKMK_ReasonCode130x"></a> 13xx neden kodları
+## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a>13xx neden kodları
 
-13*xx* neden kodları vektör hale getirici için geçerlidir.
+13*xx* neden kodları Vektörleştirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -762,9 +762,9 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-## <a name="BKMK_ReasonCode140x"></a> 14xx neden kodları
+## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a>14xx neden kodları
 
-14*xx* neden kodları vektörleştirme ile uyumlu olmayan bazı seçeneği belirtildiğinde oluşur.
+Vektörleştirme ile uyumsuz bir seçenek belirtildiğinde 14*xx* neden kodları oluşur.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -834,9 +834,9 @@ void code_1404(int *A)
 }
 ```
 
-## <a name="BKMK_ReasonCode150x"></a> 15xx neden kodları
+## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a>15xx neden kodları
 
-15*xx* neden kodları yumuşatma için geçerlidir. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.
+15*xx* neden kodları diğer ad için geçerlidir. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -964,10 +964,10 @@ void code_1505(int *A, int *B)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md)
-[otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) \
-[Otomatik vektör hale getirici Visual Studio 2012 – genel bakış](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
-[#pragma loop()](../../preprocessor/loop.md) \
-[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md) \
-[/ Qpar-(otomatik paralel hale getirici report raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \
+[C++ ](../compiler-errors-1/c-cpp-build-errors.md) [Otomatik paralelleştirme ve otomatik vektör haline getirme](../../parallel/auto-parallelization-and-auto-vectorization.md)
+C/derleyici ve derleme araçları hataları ve uyarıları \
+[Visual Studio 2012 'de otomatik Vektörleştirici: genel bakış](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
+[#pragma döngüsü ()](../../preprocessor/loop.md) \
+[/Q seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md) \
+[/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \
 [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

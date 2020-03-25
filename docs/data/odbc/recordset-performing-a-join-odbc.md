@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Birleşim gerçekleştirme (ODBC)'
+title: 'Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - joins [C++], in recordsets
@@ -10,34 +10,34 @@ helpviewer_keywords:
 - ODBC recordsets [C++], joins
 - recordsets [C++], joining tables
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
-ms.openlocfilehash: 9e589f00ec0512794d14accc6bb33c0e7adbd378
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e8d42f2b96911cd57aca7c132b53ed7c10162be
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397737"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212803"
 ---
-# <a name="recordset-performing-a-join-odbc"></a>Kayıt kümesi: Birleşim gerçekleştirme (ODBC)
+# <a name="recordset-performing-a-join-odbc"></a>Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-## <a name="what-a-join-is"></a>Ne bir birleşim
+## <a name="what-a-join-is"></a>JOIN ne olur?
 
-Birleştirme işlemi, genel bir veri erişim görev tek bir kayıt kümesi nesnesi kullanarak birden fazla tabloyu verilerle çalışmanıza olanak tanır. İki veya daha fazla tabloları birleştirme, her bir tablodaki sütunları içerebilir ancak uygulamanız için tek bir tablo olarak görünen bir kayıt kümesi üretir. Bazen birleştirme tüm sütunlardan tüm tabloları, ancak bazen SQL kullanan **seçin** JOIN yan tümcesinde her tablodaki sütunların yalnızca bir bölümünü kullanır. Veritabanı sınıfları salt okunur birleştirmeler güncellenebilir birleştirmeler destekler.
+Ortak bir veri erişim görevi olan JOIN işlemi, tek bir kayıt kümesi nesnesi kullanarak birden fazla tablodan verilerle çalışmanıza olanak sağlar. İki veya daha fazla tablonun katılması, her tablodan sütun içerebilen, ancak uygulamanızda tek bir tablo olarak görünen bir kayıt kümesi oluşturur. Bazen JOIN tüm tablolardaki tüm sütunları kullanır, ancak bazen bir birleşimdeki SQL **Select** yan tümcesi her tablodaki sütunlardan yalnızca bazılarını kullanır. Veritabanı sınıfları Salt-okunabilir birleştirmeleri destekler ancak güncelleştirilemez birleştirmeleri destekler.
 
-Birleştirilmiş bir tablodan sütun içeren kayıtları seçmek için aşağıdaki öğeler gerekir:
+Birleştirilmiş tablolardan sütun içeren kayıtları seçmek için aşağıdaki öğeler gereklidir:
 
-- Birleştirilen tüm tabloların adlarını içeren bir tablo listesi.
+- Katılmakta olan tüm tabloların adlarını içeren bir tablo listesi.
 
-- Tüm katılımcı sütunlarının adlarını içeren bir sütun listesi. Aynı adı taşıyan ancak farklı tablolardan gelen sütunlar tablo adı tarafından yetkili olan.
+- Tüm katılan sütunların adlarını içeren bir sütun listesi. Farklı tablolardan aynı ada sahip sütunlar, tablo adı tarafından nitelenir.
 
-- Bir filtre (SQL **burada** yan tümcesi) tabloları birleştirilir sütunları belirtir. Bu filtreyi alır "Table1.KeyCol Table2.KeyCol =" ve gerçekten birleşim gerçekleştirir.
+- Tabloların katıldığı sütunları belirten bir filtre (SQL **WHERE** yan tümcesi). Bu filtre, "Table1. KeyCol = Table2. KeyCol" formunu alır ve katılmayı gerçekten gerçekleştirir.
 
-İkiden fazla tabloları eşitleyerek birden çok çiftlerini sütunları, SQL anahtar sözcüğüyle birleştirilmiş her bir çifti tarafından aynı şekilde birleştirebilirsiniz **ve**.
+Birden çok sütun çifti elde ederek, her bir çiftin SQL anahtar sözcüğüne **ve ve '** a katılmış şekilde, ikiden fazla tablonun aynı şekilde katılmasını sağlayabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Önceden Tanımlanmış Sorgu için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[Kayıt kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[Kayıt kümesi: Kayıt Kümesini Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+[Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)

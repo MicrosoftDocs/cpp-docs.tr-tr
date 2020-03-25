@@ -1,21 +1,21 @@
 ---
-title: support_error_info (C++ COM özniteliği)
+title: support_error_info (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.support_error_info
 helpviewer_keywords:
 - support_error_info attribute
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
-ms.openlocfilehash: c05b6735c5c29e44f3cc190a150a5efe02025519
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e61ef2efbdc4039f496d7ffbcccc37cc8d111935
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407295"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80166152"
 ---
-# <a name="supporterrorinfo"></a>support_error_info
+# <a name="support_error_info"></a>support_error_info
 
-Uygular, ayrıntılı hatalar döndürmek için destek.
+Ayrıntılı hataları döndürmek için destek uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,17 +26,17 @@ Uygular, ayrıntılı hatalar döndürmek için destek.
 ### <a name="parameters"></a>Parametreler
 
 *error_interface*<br/>
-Arabirimi uygulama tanımlayıcısını `IErrorInfo`.
+`IErrorInfo`uygulayan arabirimin tanımlayıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Support_error_info** C++ özniteliği hedef nesnesi istemci tarafından karşılaşılan ayrıntılı ve bağlamsal hataları döndürmek için destek uygular. Hata, yöntemlerini desteklemek nesne için `IErrorInfo` arabirimi nesne tarafından uygulanan gerekir. Daha fazla bilgi için [destekleyen IDispatch ve IErrorInfo](../../atl/supporting-idispatch-and-ierrorinfo.md).
+**Support_error_info** C++ özniteliği, hedef nesnenin istemciye karşılaştığı ayrıntılı, bağlamsal hataları döndürmek için destek uygular. Nesnenin hataları desteklemesi için, `IErrorInfo` arabirimi yöntemlerinin nesne tarafından uygulanması gerekir. Daha fazla bilgi için bkz. [IDispatch ve IErrorInfo destekleme](../../atl/supporting-idispatch-and-ierrorinfo.md).
 
-Bu öznitelik ekler [Isupporterrorınfoımpl](../../atl/reference/isupporterrorinfoimpl-class.md) hedef nesneye bir temel sınıf olarak sınıf. Bu varsayılan uygulamasında sonuçları `ISupportErrorInfo` ve tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
+Bu öznitelik, [ıupporterrorınfoımpl](../../atl/reference/isupporterrorinfoimpl-class.md) sınıfını hedef nesnesine bir temel sınıf olarak ekler. Bu, varsayılan `ISupportErrorInfo` bir uygulamayla sonuçlanır ve tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, varsayılan desteği ekler `ISupportErrorInfo` arabirimini `CMyClass` nesne.
+Aşağıdaki kod, `CMyClass` nesnesine `ISupportErrorInfo` arabirimi için varsayılan destek ekler.
 
 ```cpp
 // cpp_attr_ref_support_error_info.cpp
@@ -64,12 +64,12 @@ class CMyClass
 
 |||
 |-|-|
-|**İçin geçerlidir**|**class**|
-|**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Uygulama hedefi**|**class**|
+|**Tekrarlanabilir**|Yes|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

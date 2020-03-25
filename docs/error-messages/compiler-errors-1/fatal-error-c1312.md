@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1312
 ms.assetid: 1aa7cd0e-d45f-4ae7-a85d-015ebb962eaf
-ms.openlocfilehash: a9f4173971a4211c94e389e9bbc7e41176e0a04a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9dea37a518bfe6881c36cad495754d902452fcac
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266419"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203209"
 ---
 # <a name="fatal-error-c1312"></a>Önemli hata C1312
 
-İşlevi çok fazla sayıda koşullu dallanma. Basitleştirin veya kaynak kodu yeniden düzenleyin.
+İşlevde çok fazla koşullu dal. Kaynak kodunu kolaylaştırın veya yeniden düzenleyin.
 
-Kod çok karmaşık derleyicinin yığın bellek bitmesi olmadan işlem.  Kodunuzu basitleştirin.
+Kod, derleyicinin yığın belleği tükenmeden işlemesi için çok karmaşık.  Kodunuzu kolaylaştırın.
