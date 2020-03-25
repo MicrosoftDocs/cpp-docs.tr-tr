@@ -42,12 +42,12 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-ms.openlocfilehash: 66b7607eb28392196f6b7d3790aee976a861f2b6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 0c5159ac5b834c7c31d980a412f28f8129e15b45
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441718"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212270"
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset Sınıfı
 
@@ -92,7 +92,7 @@ Satır kümesinin kullanmasını istediğiniz erişimci sınıfının türü.
 |-|-|
 |[CArrayRowset::m_nRowsRead](#nrowsread)|Zaten okunan satır sayısı.|
 
-## <a name="carrayrowset"></a>CArrayRowset:: CArrayRowset
+## <a name="carrayrowsetcarrayrowset"></a><a name="carrayrowset"></a>CArrayRowset:: CArrayRowset
 
 Yeni bir `CArrayRowset` nesnesi oluşturur.
 
@@ -107,7 +107,7 @@ CArrayRowset(int nMax = 100000);
 *Ngünde en çok*<br/>
 'ndaki Satır kümesindeki en fazla satır sayısı.
 
-## <a name="snapshot"></a>CArrayRowset:: Snapshot
+## <a name="carrayrowsetsnapshot"></a><a name="snapshot"></a>CArrayRowset:: Snapshot
 
 Tüm satır kümesini belleğe okur, görüntünün görüntüsünü veya anlık görüntüsünü oluşturur.
 
@@ -117,7 +117,7 @@ Tüm satır kümesini belleğe okur, görüntünün görüntüsünü veya anlık
 HRESULT Snapshot() throw();
 ```
 
-## <a name="operator"></a>CArrayRowset:: işleci
+## <a name="carrayrowsetoperator"></a><a name="operator"></a>CArrayRowset:: işleci
 
 Satır kümesindeki bir satıra erişmek için dizi benzeri sözdizimi sağlar.
 
@@ -143,7 +143,7 @@ Satır kümesinde depolanan erişimci türünü belirten şablonlu bir parametre
 
 *NRow* , satır kümesindeki satır sayısını aşarsa, bir özel durum oluşturulur.
 
-## <a name="nrowsread"></a>CArrayRowset:: m_nRowsRead
+## <a name="carrayrowsetm_nrowsread"></a><a name="nrowsread"></a>CArrayRowset:: m_nRowsRead
 
 Satır kümesindeki, zaten okunmuş olan satır sayısını içerir.
 

@@ -6,31 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - U1035
 ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
-ms.openlocfilehash: 9c4055bb99243f7d20c1da90aef7b916c46c2749
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3eda424574dfa48901cf4dc6aea3b28beb739dc0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324343"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193725"
 ---
 # <a name="nmake-fatal-error-u1035"></a>NMAKE Önemli Hatası U1035
 
-sözdizimi hatası: beklenen ':' veya '=' ayracı
+sözdizimi hatası: ': ' veya ' = ' ayırıcısı bekleniyor
 
-Her iki iki nokta (**:**) ya da eşittir işaretini (**=**) bekleniyordu.
+İki nokta üst üste ( **:** ) veya eşittir işareti ( **=** ) bekleniyordu.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Bir iki nokta üst üste bir hedef izleyin değil.
+1. İki nokta üst üste bir hedefi izmedi.
 
-1. Tek harfli hedef ardından, bir virgül ve boşluk (örneğin, c:). NMAKE sürücü belirtimi olarak yorumlanır.
+1. İki nokta üst üste ve boşluk (örneğin:) Tek harflik bir hedef izlenir. NMAKE onu bir sürücü belirtimi olarak yorumlanmış.
 
-1. Bir iki nokta üst üste çıkarım kuralı izleyin değil.
+1. İki nokta üst üste bir çıkarım kuralı izmedi.
 
-1. Makro tanımı, bir eşittir işareti izlenmeyen.
+1. Makro tanımının ardından eşittir işareti yoktu.
 
-1. Bir karakteri ve ardından bir eğik çizgi (**\\**) yeni bir satır komutuna devam etmek için kullanıldı.
+1. Bir karakter, bir komutun yeni bir satıra devam etmesi için kullanılan bir ters eğik çizgi ( **\\** ) izler.
 
-1. NMAKE söz dizimi kuralların izleyin değil, bir dize görüntülenmektedir.
+1. Hiçbir NMAKE sözdizimi kuralını izlemeyen bir dize görüntülendi.
 
 1. Derleme görevleri dosyası bir sözcük işlemcisi tarafından biçimlendirildi.

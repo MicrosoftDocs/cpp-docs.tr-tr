@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1179
 ms.assetid: 4b1536d7-0d3d-4f29-a9c1-6fa5cf6cb665
-ms.openlocfilehash: 71aba1f20cfaf5b6b9ec33d43ebde594e381921f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a267019f1be08cc8dcffdff3b4ba0b73357cccd4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391419"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183963"
 ---
 # <a name="linker-tools-error-lnk1179"></a>Bağlayıcı Araçları Hatası LNK1179
 
-dosya geçersiz veya bozuk: Yinelenen COMDAT 'filename'
+dosya geçersiz veya bozuk: yinelenen COMDAT ' filename '
 
-İki veya daha fazla comdat'ları aynı ada sahip bir nesne modülü içerir.
+Bir nesne modülü aynı ada sahip iki veya daha fazla Comtts içeriyor.
 
-Kullanarak bu hata oluşabilir [/H](../../build/reference/h-restrict-length-of-external-names.md), dış adların uzunluğunu kısıtlar ve [/Gy](../../build/reference/gy-enable-function-level-linking.md), comdat'ları işlevlerde paketler.
+Bu hata, dış adların uzunluğunu sınırlayan ve [/GY](../../build/reference/gy-enable-function-level-linking.md)' nin, Comcts 'de işlev gören [/h](../../build/reference/h-restrict-length-of-external-names.md)kullanılarak kaynaklanıyor olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodda, `function1` ve `function2` ilk sekiz karakterini içinde aynıdır. İle derlerken **/Gy** ve **/H8** bir bağlantı hatası oluşturur.
+Aşağıdaki kodda, `function1` ve `function2` ilk sekiz karakterle aynıdır. **/GY** ve **/H8** ile derleme bir bağlantı hatası oluşturur.
 
 ```
 void function1(void);

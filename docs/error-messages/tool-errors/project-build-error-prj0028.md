@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0028
 ms.assetid: 0a6e0da7-cb3d-40b6-81a6-6196a9c2526b
-ms.openlocfilehash: 9b74c64cee2b5734beab2bf30475b129160e67ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 34cfe15d1f2a8f767dfecb11adae362778b3898d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265418"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192269"
 ---
 # <a name="project-build-error-prj0028"></a>Proje Derleme Hatası PRJ0028
 
-Geçici dosya 'dosyası' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe içerir.
+Geçici dosya ' dosya ', kullanıcının ANSI kod sayfasına çevrilemeyen Unicode içerikleri içeriyor.
 
-Bir değer ile belirtilen [/MIDL (MIDL komut satırı seçeneklerini belirtin)](../../build/reference/midl-specify-midl-command-line-options.md) sistem kod sayfası tarafından çözümlenemedi bağlayıcı seçeneği.
+[/MIDL (MIDL komut satırı seçenekleri belirtin)](../../build/reference/midl-specify-midl-command-line-options.md) , sistem kodu sayfası tarafından çözümlenemeyecek bağlayıcı seçeneğini içeren bir değer belirtildi.
 
-MIDL komut (giriş kod sayfası) belirtirken kullanılan kod sayfasına sistem kod sayfası ile aynı olmalıdır.
+MıDL komutunu (giriş kodu sayfası) belirttiğinizde kullanılan kod sayfası, sistem kodu sayfasıyla aynı olmalıdır.

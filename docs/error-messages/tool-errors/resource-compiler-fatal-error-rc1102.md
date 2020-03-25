@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - RC1102
 ms.assetid: bd2091f8-ef5e-4151-a8d6-98043e9422b6
-ms.openlocfilehash: 7e322b96d32e6d531de4081386702767d45f0837
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e614a7e85f508a452f42588fe40054dfcc8a7089
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374312"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182486"
 ---
 # <a name="resource-compiler-fatal-error-rc1102"></a>Kaynak Derleyicisi Önemli Hatası RC1102
 
-İç hata: RCPP için çok fazla bağımsız değişken
+iç hata: RCPP için çok fazla bağımsız değişken var
 
-Kaynak Derleyicisi ön çok fazla bağımsız değişken geçirildi. Tanımlama simgeleri ile tanımlanan sembolleri sayısını azaltmak (/ d) kaynak tanımlayarak seçeneği. Bu hata ayrıca arama yolu Ekle seçeneğini kullanarak dosya arama yollarını dahil birçok çok belirterek oluşabilir (/ i).
+Kaynak derleyicisi Önişlemci 'ye çok fazla sayıda bağımsız değişken geçirildi. Bunları kaynağınızda tanımlayarak, sembolleri tanımla (/d) seçeneğiyle tanımlanan simgelerin sayısını azaltın. Bu hata, arama yolu Ekle seçeneği (/i) kullanılarak çok fazla sayıda içerme dosyası arama yolu belirtilerek da oluşabilir.

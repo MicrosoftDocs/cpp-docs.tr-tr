@@ -9,16 +9,16 @@ helpviewer_keywords:
 - databases [C++], connecting to
 - ODBC connections [C++], databases
 ms.assetid: f41a67c7-168d-4657-9999-257535e44c87
-ms.openlocfilehash: 3dc6706f945a5a7b0aa21c9ced8017d0a9905fb1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29626d9ce98ac5bcd3889ee9417298ddfe3d7f1d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329770"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212491"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC Veritabanı Bağlantılarıyla Çalışma
 
-Aşağıdaki konularda, ODBC veri kaynaklarına bağlanma açıklanır.
+Aşağıdaki konularda, ODBC veri kaynaklarına nasıl bağlanabileceğiniz açıklanmıştır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

@@ -124,12 +124,12 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: a2dcb946b4161c03fe34f02608cfb3dbbca21695
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 160e5b6d8eb4b45850dc071299413d9ad2cfcee9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075836"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212075"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 

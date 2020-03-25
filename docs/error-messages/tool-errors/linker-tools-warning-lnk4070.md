@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4070
 ms.assetid: f95f179a-fff9-427e-bd51-466b3934517f
-ms.openlocfilehash: e7139b21f053ea8633356c7194cd719a6a4aef35
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 391a477625b51fd37eacc5d455801ce90d2abbc2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410271"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194011"
 ---
 # <a name="linker-tools-warning-lnk4070"></a>Bağlayıcı Araçları Uyarısı LNK4070
 
-/ Out: filename yönergesi. EXP farklı çıkış dosya 'filename'; yönerge yoksayılıyor
+/OUT: filename yönergesi içinde. EXP, ' filename ' çıkış dosya adından farklı; yönerge yoksayılıyor
 
-`filename` Belirtilen [adı](../../build/reference/name-c-cpp.md) veya [Kitaplığı](../../build/reference/library.md) .exp dosyası oluşturulurken deyimi farklı çıktısı `filename` , varsayılan olarak veya ilebelirtilen[/OUT](../../build/reference/out-output-file-name.md) seçeneği.
+. Exp dosyası oluşturulduğu sırada [ad](../../build/reference/name-c-cpp.md) veya [kitaplık](../../build/reference/library.md) ifadesinde belirtilen `filename`, varsayılan olarak kabul edilen veya [/out](../../build/reference/out-output-file-name.md) seçeneği ile belirtilen çıkış `filename` farklıdır.
 
-Geliştirme ortamındaki ve burada projenin .def dosyasında güncelleştirilmedi bir çıktı dosyası adını değiştirirseniz, bu uyarıyı görürsünüz. Bu uyarıyı çözümlemek için .def dosyasının el ile güncelleştirin.
+Geliştirme ortamında bir çıkış dosyasının adını değiştirirseniz ve projenin. def dosyasının güncel olmadığı durumlarda bu uyarıyı görürsünüz. Bu uyarıyı çözmek için. def dosyasını el ile güncelleştirin.
 
-Ortaya çıkan DLL'yi kullanan bir istemci programı sorunlarla karşılaşabilirsiniz.
+Ortaya çıkan DLL 'yi kullanan bir istemci program sorunlarla karşılaşabilir.

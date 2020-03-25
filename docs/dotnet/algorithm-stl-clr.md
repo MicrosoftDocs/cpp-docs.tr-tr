@@ -141,16 +141,16 @@ helpviewer_keywords:
 - unique_copy function [STL/CLR]
 - upper_bound function [STL/CLR]
 ms.assetid: ee2718dc-a98d-40b8-8341-593fe7d2ac15
-ms.openlocfilehash: 6011aad0ef86bc0e633687a6d8e017e9b12771c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4abd7eaa640bb89fd97c1787bf2fd692610212fb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350838"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208957"
 ---
 # <a name="algorithm-stlclr"></a>algoritma (STL/CLR)
 
-Algoritmalar gerçekleştiren STL/CLR kapsayıcı şablon işlevini tanımlar.
+Algoritmaları gerçekleştiren STL/CLR kapsayıcı şablonu işlevlerini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -160,62 +160,62 @@ Algoritmalar gerçekleştiren STL/CLR kapsayıcı şablon işlevini tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<cliext/algoritma >
+**Üstbilgi:** \<clienext/Algorithm >
 
-**Namespace:** cliext
+**Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
 |İşlev|Açıklama|
 |--------------|-----------------|
 |[adjacent_find (STL/CLR)](#adjacent_find)|Eşit olan iki bitişik öğeyi arar.|
-|[binary_search (STL/CLR)](#binary_search)|Sıralı bir dizi belirli bir değeri içerip içermediğini test eder.|
-|[copy (STL/CLR)](#copy)|Yineleme İleri yönde bir hedef aralığına kopyalar değerleri bir kaynak aralıktan.|
-|[copy_backward (STL/CLR)](#copy_backward)|Yineleme geri yönde bir hedef aralığına kopyalar değerleri bir kaynak aralıktan.|
+|[binary_search (STL/CLR)](#binary_search)|Sıralanmış bir sıranın verilen değeri içerip içermediğini sınar.|
+|[copy (STL/CLR)](#copy)|Değerleri bir kaynak aralığından hedef aralığa kopyalar, ileri yönde yineleme.|
+|[copy_backward (STL/CLR)](#copy_backward)|Bir kaynak aralığındaki değerleri bir hedef aralığa kopyalar ve geriye doğru yönde yineleme yapın.|
 |[count (STL/CLR)](#count)|Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.|
 |[count_if (STL/CLR)](#count_if)|Değerleri belirtilen bir koşulla eşleşen bir aralıktaki öğelerin sayısını döndürür.|
-|[equal (STL/CLR)](#equal)|İki aralığı, öğe öğe karşılaştırır.|
-|[equal_range (STL/CLR)](#equal_range)|Sıralı değerler arar ve belirli bir öğeye eşit tüm değerlerin bir alt dizi sınırlandırmak iki konumlarını döndürür.|
+|[equal (STL/CLR)](#equal)|İki aralığı, öğe öğesi ile karşılaştırır.|
+|[equal_range (STL/CLR)](#equal_range)|Sıralı bir değer dizisini arar ve bir alt diziyi belirtilen öğeye eşit olan bir alt diziyi sınırlandıran iki konum döndürür.|
 |[fill (STL/CLR)](#fill)|Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.|
-|[fill_n (STL/CLR)](#fill_n)|Belirli bir öğeyle başlayan bir aralıktaki öğeleri belirtilen sayıda yeni bir değer atar.|
-|[find (STL/CLR)](#find)|Belirli bir değerin ilk geçtiği konumu döndürür.|
-|[find_end (STL/CLR)](#find_end)|Belirtilen bir diziye özdeş bir aralıktaki son dizi döndürür.|
-|[find_first_of (STL/CLR)](#find_first_of)|Bir aralık öğelerin belirli bir aralığını herhangi birinin ilk geçtiği yeri arar.|
-|[find_if (STL/CLR)](#find_if)|İlk öğenin konumunu burada öğe belirtilen bir koşulu karşılayan değerler dizisi döndürür.|
-|[for_each (STL/CLR)](#for_each)|Değerlerin bir dizideki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.|
-|[generate (STL/CLR)](#generate)|Değerlerin bir dizideki her öğe için bir işlev nesnesi tarafından oluşturulan değerleri atar.|
-|[generate_n (STL/CLR)](#generate_n)|Belirtilen sayıda öğeyi bir işlev nesnesi tarafından oluşturulan değerleri atar.|
-|[includes (STL/CLR)](#includes)|Sıralanmış bir aralığın ikinci bir sıralanmış aralıktaki tüm öğeleri içerip içermediğini test eder.|
-|[inplace_merge (STL/CLR)](#inplace_merge)|Ardışık iki sıralanmış aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir.|
+|[fill_n (STL/CLR)](#fill_n)|Belirli bir öğeyle başlayan bir aralıktaki belirli öğe sayısına yeni bir değer atar.|
+|[find (STL/CLR)](#find)|Belirtilen değerin ilk oluşum konumunu döndürür.|
+|[find_end (STL/CLR)](#find_end)|Belirli bir diziyle özdeş olan bir aralıktaki son alt diziyi döndürür.|
+|[find_first_of (STL/CLR)](#find_first_of)|Belirli bir öğe aralığının ilk geçtiği bir aralığı arar.|
+|[find_if (STL/CLR)](#find_if)|Öğenin belirtilen bir koşulu karşılayan bir değer dizisindeki ilk öğenin konumunu döndürür.|
+|[for_each (STL/CLR)](#for_each)|Belirli bir işlev nesnesini bir değer dizisindeki her öğeye uygular ve işlev nesnesini döndürür.|
+|[generate (STL/CLR)](#generate)|Bir işlev nesnesi tarafından oluşturulan değerleri bir değer dizisindeki her öğeye atar.|
+|[generate_n (STL/CLR)](#generate_n)|Bir işlev nesnesi tarafından oluşturulan değerleri belirtilen sayıda öğeye atar.|
+|[includes (STL/CLR)](#includes)|Bir sıralanmış aralığın ikinci bir sıralı aralıktaki tüm öğeleri içerip içermediğini test eder.|
+|[inplace_merge (STL/CLR)](#inplace_merge)|Birbirini izleyen iki sıralı aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir.|
 |[iter_swap (STL/CLR)](#iter_swap)|Belirtilen yineleyicilerin bir çifti tarafından başvurulan iki değeri birbiriyle değiştirir.|
-|[lexicographical_compare (STL/CLR)](#lexicographical_compare)|İki sıranın, hangi ikisinden küçük olanı sırasıdır tanımlayan öğeye göre karşılaştırır.|
-|[lower_bound (STL/CLR)](#lower_bound)|Belirtilen bir değerine eşit veya daha büyük bir değere sahip sıralı bir dizi değer ilk öğenin konumunu bulur.|
-|[make_heap (STL/CLR)](#make_heap)|Öğeleri belirtilen bir aralıktaki ilk öğeyi yığındaki en büyük olduğu bir yığına dönüştürür.|
-|[en fazla (STL/CLR)](#max))|İki nesneyi karşılaştırır ve iki büyük döndürür.|
-|[max_element (STL/CLR)](#max_element)|Değerlerin belirtilen sırada en büyük öğeyi bulur.|
-|[Merge (STL/CLR)](#merge))|İki sıralanmış kaynak aralıktaki tüm öğeleri tek, sıralanmış bir aralığa birleştirir.|
-|[min (STL/CLR)](#min)|İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür.|
-|[min_element (STL/CLR)](#min_element)|Değerlerin belirtilen sırada en küçük öğeyi bulur.|
-|[mismatch (STL/CLR)](#mismatch)|İki aralığı öğe öğe karşılaştırır ve farkın oluştuğu ilk konumunu döndürür.|
-|[next_permutation (STL/CLR)](#next_permutation)|Bir aralıktaki öğeleri yeniden sıralar, böylece varsa özgün sıralama sözlüksel sonraki permütasyon ile değiştirilir.|
-|[nth_element (STL/CLR)](#nth_element)|Doğru şekilde bularak öğelerin bir dizisi bölümleri `n`öğedeki sırası önündeki tüm öğeler değerden küçük veya eşit olacak ve bunu izleyen tüm öğeler büyüktür veya ona eşittir.|
-|[partial_sort (STL/CLR)](#partial_sort)|Bir aralıktaki daha küçük öğelerin belirtilen sayıda azalmayan düzenler.|
-|[partial_sort_copy (STL/CLR)](#partial_sort_copy)|Sağlayacak şekilde kaynak aralığındaki öğelerin öğelerini bir kaynak aralıktan bir hedef aralığına kopyalar.|
-|[partition (STL/CLR)](#partition)|Bir aralıktaki öğeleri, karşılamada birli koşulu karşılayan bu öğelerin önünde gibi ayarlar.|
-|[pop_heap (STL/CLR)](#pop_heap)|En büyük öğeyi bir yığının önünden sonuna taşır ve ardından kalan öğelerden yeni bir yığın oluşturur.|
-|[prev_permutation (STL/CLR)](#prev_permutation)|Varsa özgün sıralama sözlüksel önceki permütasyon ile değiştirilir, böylece bir dizi öğeleri yeniden sıralar.|
+|[lexicographical_compare (STL/CLR)](#lexicographical_compare)|İki diziyi, öğesini öğesi ile karşılaştırır.|
+|[lower_bound (STL/CLR)](#lower_bound)|Belirtilen değere eşit veya ondan daha büyük bir değere sahip olan sıralanmış bir değer dizisindeki ilk öğenin konumunu bulur.|
+|[make_heap (STL/CLR)](#make_heap)|Belirtilen aralıktaki öğeleri, yığındaki ilk öğenin en büyük olduğu yığına dönüştürür.|
+|[Max (STL/CLR)](#max))|İki nesneyi karşılaştırır ve ikinin üstünü döndürür.|
+|[max_element (STL/CLR)](#max_element)|Belirtilen değer dizisindeki en büyük öğeyi bulur.|
+|[Birleştir (STL/CLR)](#merge))|İki sıralanmış kaynak aralıktaki tüm öğeleri tek, sıralanmış bir hedef aralıkla birleştirir.|
+|[min (STL/CLR)](#min)|İki nesneyi karşılaştırır ve ikinin ne kadar küçük olduğunu döndürür.|
+|[min_element (STL/CLR)](#min_element)|Belirtilen değer dizisindeki en küçük öğeyi bulur.|
+|[mismatch (STL/CLR)](#mismatch)|İki Aralık öğesini öğesiyle karşılaştırır ve bir farkın gerçekleştiği ilk konumu döndürür.|
+|[next_permutation (STL/CLR)](#next_permutation)|Bir aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama, varsa sözcüıgrafiksel sonraki daha büyük permütasyon ile değiştirilmelidir.|
+|[nth_element (STL/CLR)](#nth_element)|Bir dizi öğeyi bölümler, en önünde bulunan tüm öğelerin bundan küçük veya ona eşit olması ve bunu izleyen tüm öğelerin bu değerden büyük veya ona eşit olması için, sıranın `n`. öğesini doğru bir şekilde bulur.|
+|[partial_sort (STL/CLR)](#partial_sort)|Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalan sıra olarak düzenler.|
+|[partial_sort_copy (STL/CLR)](#partial_sort_copy)|Kaynak aralıktaki öğelerin sıralanabilmesi için bir kaynak aralıktaki öğeleri bir hedef aralığa kopyalar.|
+|[partition (STL/CLR)](#partition)|Bir aralıktaki öğeleri, birli bir koşulu karşılayan öğelerin yerine getirmeyecek olan öğelerden önce yerleştirir.|
+|[pop_heap (STL/CLR)](#pop_heap)|En büyük öğeyi yığının önünden sonuna, ardından kalan öğelerden yeni bir yığın oluşturur.|
+|[prev_permutation (STL/CLR)](#prev_permutation)|Bir dizi öğeyi yeniden sıralayın, böylece özgün sıralama, varsa sözcüıgrafik önceki daha büyük permütasyon ile değiştirilmelidir.|
 |[push_heap (STL/CLR)](#push_heap)|Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.|
-|[random_shuffle (STL/CLR)](#random_shuffle)|Bir dizi düzenlemelerinin `N` birine bir aralıktaki öğeleri `N`! olası düzenlemeleri rastgele seçilmiş.|
-|[remove (STL/CLR)](#remove)|Kalan öğelerin sırasını bozmadan belirtilen bir değeri belirtilen bir aralıktan siler ve yeni bir aralık için belirtilen değer boş sonunu döndürür.|
-|[remove_copy (STL/CLR)](#remove_copy)|Belirtilen değerin, kalan öğelerin sırasını bozmadan kopyalanmaz dışında öğeleri bir kaynak aralıktan bir hedef aralığına kopyalar.|
-|[remove_copy_if (STL/CLR)](#remove_copy_if)|Öğeleri bir kaynak aralıktan hariç, kalan öğelerin sırasını bozmadan bir koşulu karşılayan bir hedef aralığına kopyalar.|
-|[remove_if (STL/CLR)](#remove_if)|Kalan öğelerin sırasını bozmadan verili aralıktaki bir koşulu karşılayan öğeleri siler. biçimindeki telefon numarasıdır.|
-|[replace (STL/CLR)](#replace)|Yeni bir değer belirli bir değerle eşleşen bir aralıktaki öğeleri değiştirir.|
-|[replace_copy (STL/CLR)](#replace_copy)|Yeni bir değer belirli bir değerle eşleşen öğeleri değiştirerek bir hedef aralığına kopyalar öğeleri bir kaynak aralıktan.|
+|[random_shuffle (STL/CLR)](#random_shuffle)|Bir aralıktaki `N` öğelerinin dizisini `N`birine yeniden düzenler! Rastgele seçilen olası düzenlemeler.|
+|[remove (STL/CLR)](#remove)|Verilen aralıktaki belirli bir değeri, kalan öğelerin sırasını bozmadan siler ve belirtilen değerin boş olduğu yeni aralığın sonunu döndürür.|
+|[remove_copy (STL/CLR)](#remove_copy)|Bir kaynak aralıktaki öğeleri bir hedef aralığa kopyalar, ancak belirtilen değerin öğeleri, kalan öğelerin sırasını bozmadan kopyalanmaz.|
+|[remove_copy_if (STL/CLR)](#remove_copy_if)|Bir kaynak aralıktaki öğeleri, bir koşulu karşılaanlar hariç, kalan öğelerin sırasını bozmadan bir hedef aralığa kopyalar.|
+|[remove_if (STL/CLR)](#remove_if)|Kalan öğelerin sırasını bozmadan verilen aralıktaki bir koşula uyan öğeleri siler. ziyaret edin.|
+|[replace (STL/CLR)](#replace)|Belirli bir değerle eşleşen bir aralıktaki öğeleri yeni bir değerle değiştirir.|
+|[replace_copy (STL/CLR)](#replace_copy)|Bir kaynak aralıktaki öğeleri bir hedef aralığa kopyalar, belirtilen bir değerle eşleşen öğeleri yeni bir değerle değiştirir.|
 |[replace_copy_if (STL/CLR)](#replace_copy_if)|Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen bir koşulu karşılıyorsa, onu değiştirir.|
 |[replace_if (STL/CLR)](#replace_if)|Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa değiştirir.|
 |[reverse (STL/CLR)](#reverse)|Bir aralık içindeki öğelerin sırasını tersine çevirir.|
-|[reverse_copy (STL/CLR)](#reverse_copy)|Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sırasını tersine.|
+|[reverse_copy (STL/CLR)](#reverse_copy)|Bir kaynak aralıktaki öğelerin sırasını bir hedef aralığa kopyalarken tersine çevirir.|
 |[rotate (STL/CLR)](#rotate)|İki bitişik aralık içindeki öğeleri birbiriyle değiştirir.|
 |[rotate_copy (STL/CLR)](#rotate_copy)|Bir kaynak aralık içindeki iki bitişik aralıktaki öğeleri birbiriyle değiştirir ve sonucu bir hedef aralığına kopyalar.|
 |[search (STL/CLR)](#search_)|Öğeleri verili bir öğe dizisi içindekilerle eşit olan veya öğeleri verili bir dizi öğe için ikili bir koşula göre belirtildiği şekilde denk olan bir hedef aralığındaki dizinin ilk geçtiği yeri arar.|
@@ -237,7 +237,7 @@ Algoritmalar gerçekleştiren STL/CLR kapsayıcı şablon işlevini tanımlar.
 
 ## <a name="members"></a>Üyeler
 
-## <a name="adjacent_find"></a> adjacent_find (STL/CLR)
+## <a name="adjacent_find-stlclr"></a><a name="adjacent_find"></a>adjacent_find (STL/CLR)
 
 Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.
 
@@ -252,9 +252,9 @@ template<class _FwdIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `adjacent_find`. Daha fazla bilgi için [adjacent_find](../standard-library/algorithm-functions.md#adjacent_find).
+Bu işlev, `adjacent_find`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [adjacent_find](../standard-library/algorithm-functions.md#adjacent_find).
 
-## <a name="binary_search"></a> binary_search (STL/CLR)
+## <a name="binary_search-stlclr"></a><a name="binary_search"></a>binary_search (STL/CLR)
 
 Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığını ya da bir ikili koşula göre belirtilen anlamda ona eşdeğer bir öğe olup olmadığını sınar.
 
@@ -270,9 +270,9 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `binary_search`. Daha fazla bilgi için [binary_search](../standard-library/algorithm-functions.md#binary_search).
+Bu işlev, `binary_search`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [binary_search](../standard-library/algorithm-functions.md#binary_search).
 
-## <a name="copy"></a> Kopyala (STL/CLR)
+## <a name="copy-stlclr"></a><a name="copy"></a>Kopyala (STL/CLR)
 
 Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.
 
@@ -285,9 +285,9 @@ template<class _InIt, class _OutIt> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `copy`. Daha fazla bilgi için [kopyalama](../standard-library/algorithm-functions.md#copy).
+Bu işlev, `copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için, bkz. [kopyalama](../standard-library/algorithm-functions.md#copy).
 
-## <a name="copy_backward"></a> copy_backward (STL/CLR)
+## <a name="copy_backward-stlclr"></a><a name="copy_backward"></a>copy_backward (STL/CLR)
 
 Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.
 
@@ -301,9 +301,9 @@ template<class _BidIt1, class _BidIt2> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `copy_backward`. Daha fazla bilgi için [copy_backward](../standard-library/algorithm-functions.md#copy_backward).
+Bu işlev, `copy_backward`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [copy_backward](../standard-library/algorithm-functions.md#copy_backward).
 
-## <a name="count"></a> Count (STL/CLR)
+## <a name="count-stlclr"></a><a name="count"></a>sayı (STL/CLR)
 
 Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.
 
@@ -317,9 +317,9 @@ template<class _InIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `count`. Daha fazla bilgi için [sayısı](../standard-library/algorithm-functions.md#count).
+Bu işlev, `count`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Count](../standard-library/algorithm-functions.md#count).
 
-## <a name="count_if"></a> count_if (STL/CLR)
+## <a name="count_if-stlclr"></a><a name="count_if"></a>count_if (STL/CLR)
 
 Değerleri belirtilen bir koşulla eşleşen bir aralıktaki öğelerin sayısını döndürür.
 
@@ -333,9 +333,9 @@ template<class _InIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `count_if`. Daha fazla bilgi için [count_if](../standard-library/algorithm-functions.md#count_if).
+Bu işlev, `count_if`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [count_if](../standard-library/algorithm-functions.md#count_if).
 
-## <a name="equal"></a> eşit (STL/CLR)
+## <a name="equal-stlclr"></a><a name="equal"></a>eşittir (STL/CLR)
 
 Bir ikili koşula göre belirtilen anlamda eşitlik ya da denklik için iki aralık öğesini öğeye göre karşılaştırır.
 
@@ -351,9 +351,9 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `equal`. Daha fazla bilgi için [eşit](../standard-library/algorithm-functions.md#equal).
+Bu işlev, `equal`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [eşittir](../standard-library/algorithm-functions.md#equal).
 
-## <a name="equal_range"></a> equal_range (STL/CLR)
+## <a name="equal_range-stlclr"></a><a name="equal_range"></a>equal_range (STL/CLR)
 
 Sıralanmış aralıktaki konumların çiftini bulur, birinci belirtilen bir öğenin konumundan küçük veya ona eşittir ve ikinci öğenin konumundan büyüktür, burada dizideki konumlar oluşturmak için kullanılan denkliğin veya sıralamanın anlamı bir ikili koşula göre belirtilebilir.
 
@@ -370,9 +370,9 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `equal_range`. Daha fazla bilgi için [equal_range](../standard-library/algorithm-functions.md#equal_range).
+Bu işlev, `equal_range`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [equal_range](../standard-library/algorithm-functions.md#equal_range).
 
-## <a name="fill"></a> Doldur (STL/CLR)
+## <a name="fill-stlclr"></a><a name="fill"></a>Fill (STL/CLR)
 
 Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.
 
@@ -385,11 +385,11 @@ template<class _FwdIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `fill`. Daha fazla bilgi için [dolgu](../standard-library/algorithm-functions.md#fill).
+Bu işlev, `fill`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Fill](../standard-library/algorithm-functions.md#fill).
 
-## <a name="fill_n"></a> fill_n (STL/CLR)
+## <a name="fill_n-stlclr"></a><a name="fill_n"></a>fill_n (STL/CLR)
 
-Belirli bir öğeyle başlayan bir aralıktaki öğeleri belirtilen sayıda yeni bir değer atar.
+Belirli bir öğeyle başlayan bir aralıktaki belirli öğe sayısına yeni bir değer atar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -400,9 +400,9 @@ template<class _OutIt, class _Diff, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `fill_n`. Daha fazla bilgi için [fill_n](../standard-library/algorithm-functions.md#fill_n).
+Bu işlev, `fill_n`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [fill_n](../standard-library/algorithm-functions.md#fill_n).
 
-## <a name="find"></a> Bul (STL/CLR)
+## <a name="find-stlclr"></a><a name="find"></a>bul (STL/CLR)
 
 Bir öğenin belirli bir değere sahip olan aralıktaki ilk geçtiği konumu bulur.
 
@@ -415,9 +415,9 @@ template<class _InIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `find`. Daha fazla bilgi için [Bul](../standard-library/algorithm-functions.md#find).
+Bu işlev, `find`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [bulma](../standard-library/algorithm-functions.md#find).
 
-## <a name="find_end"></a> find_end (STL/CLR)
+## <a name="find_end-stlclr"></a><a name="find_end"></a>find_end (STL/CLR)
 
 Belirli bir diziye özdeş veya bir ikili koşula göre belirtildiği şekilde denk olan son dizi için bir aralık arar.
 
@@ -434,9 +434,9 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `find_end`. Daha fazla bilgi için [find_end](../standard-library/algorithm-functions.md#find_end).
+Bu işlev, `find_end`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [find_end](../standard-library/algorithm-functions.md#find_end).
 
-## <a name="find_first_of"></a> find_first_of (STL/CLR)
+## <a name="find_first_of-stlclr"></a><a name="find_first_of"></a>find_first_of (STL/CLR)
 
 Bir hedef aralığındaki çeşitli değerlerden herhangi birinin ilk geçtiği yeri veya bir ikili koşula göre belirtilen bir öğeler kümesine belirtildiği şekilde denk olan çeşitli öğelerin geçtiği ilk yeri arar.
 
@@ -453,9 +453,9 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `find_first_of`. Daha fazla bilgi için [find_first_of](../standard-library/algorithm-functions.md#find_first_of).
+Bu işlev, `find_first_of`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [find_first_of](../standard-library/algorithm-functions.md#find_first_of).
 
-## <a name="find_if"></a> find_if (STL/CLR)
+## <a name="find_if-stlclr"></a><a name="find_if"></a>find_if (STL/CLR)
 
 Bir öğenin belirli bir koşulu karşıladığı aralıktaki ilk geçtiği konumu bulur.
 
@@ -468,9 +468,9 @@ template<class _InIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `find_if`. Daha fazla bilgi için [find_if](../standard-library/algorithm-functions.md#find_if).
+Bu işlev, `find_if`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
 
-## <a name="for_each"></a> for_each (STL/CLR)
+## <a name="for_each-stlclr"></a><a name="for_each"></a>for_each (STL/CLR)
 
 Bir aralıktaki ileriye doğru sıradaki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.
 
@@ -483,9 +483,9 @@ template<class _InIt, class _Fn1> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `for_each`. Daha fazla bilgi için [for_each](../standard-library/algorithm-functions.md#for_each).
+Bu işlev, `for_each`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [for_each](../standard-library/algorithm-functions.md#for_each).
 
-## <a name="generate"></a> (STL/CLR) oluştur
+## <a name="generate-stlclr"></a><a name="generate"></a>oluştur (STL/CLR)
 
 Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.
 
@@ -498,9 +498,9 @@ template<class _FwdIt, class _Fn0> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `generate`. Daha fazla bilgi için [oluşturmak](../standard-library/algorithm-functions.md#generate).
+Bu işlev, `generate`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [oluşturma](../standard-library/algorithm-functions.md#generate).
 
-## <a name="generate_n"></a> generate_n (STL/CLR)
+## <a name="generate_n-stlclr"></a><a name="generate_n"></a>generate_n (STL/CLR)
 
 Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki belirtilen öğe sayısına atar ve birinin son atanan değere geçirdiği konuma döner.
 
@@ -513,9 +513,9 @@ template<class _OutIt, class _Diff, class _Fn0> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `generate_n`. Daha fazla bilgi için [generate_n](../standard-library/algorithm-functions.md#generate_n).
+Bu işlev, `generate_n`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [generate_n](../standard-library/algorithm-functions.md#generate_n).
 
-## <a name="includes"></a> içerir (STL/CLR)
+## <a name="includes-stlclr"></a><a name="includes"></a>içerir (STL/CLR)
 
 Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.
 
@@ -532,9 +532,9 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `includes`. Daha fazla bilgi için [içerir](../standard-library/algorithm-functions.md#includes).
+Bu işlev, `includes`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [içerme](../standard-library/algorithm-functions.md#includes).
 
-## <a name="inplace_merge"></a> inplace_merge (STL/CLR)
+## <a name="inplace_merge-stlclr"></a><a name="inplace_merge"></a>inplace_merge (STL/CLR)
 
 Ardışık iki sıralanmış aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -550,9 +550,9 @@ template<class _BidIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev gibi davranır C++ standart kitaplığı işlevi `inplace_merge` daha fazla bilgi için [inplace_merge](../standard-library/algorithm-functions.md#inplace_merge).
+Bu işlev, C++ standart kitaplık işleviyle aynı şekilde davranır `inplace_merge` daha fazla bilgi için bkz. [inplace_merge](../standard-library/algorithm-functions.md#inplace_merge).
 
-## <a name="iter_swap"></a> iter_swap (STL/CLR)
+## <a name="iter_swap-stlclr"></a><a name="iter_swap"></a>iter_swap (STL/CLR)
 
 Belirtilen yineleyicilerin bir çifti tarafından başvurulan iki değeri birbiriyle değiştirir.
 
@@ -565,9 +565,9 @@ template<class _FwdIt1, class _FwdIt2> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `iter_swap`. Daha fazla bilgi için [iter_swap](../standard-library/algorithm-functions.md#iter_swap).
+Bu işlev, `iter_swap`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [İter_swap](../standard-library/algorithm-functions.md#iter_swap).
 
-## <a name="lexicographical_compare"></a> lexicographical_compare (STL/CLR)
+## <a name="lexicographical_compare-stlclr"></a><a name="lexicographical_compare"></a>lexicographical_compare (STL/CLR)
 
 Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.
 
@@ -584,11 +584,11 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `lexicographical_compare`. Daha fazla bilgi için [lexicographical_compare](../standard-library/algorithm-functions.md#lexicographical_compare).
+Bu işlev, `lexicographical_compare`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [lexicographical_compare](../standard-library/algorithm-functions.md#lexicographical_compare).
 
-## <a name="lower_bound"></a> lower_bound (STL/CLR)
+## <a name="lower_bound-stlclr"></a><a name="lower_bound"></a>lower_bound (STL/CLR)
 
-Belirtilen değere, burada sıralama ölçütü bir ikili koşula göre belirtilebilir küçük veya buna eşdeğer bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur.
+Sıralı bir aralıktaki, belirtilen değere eşit veya daha küçük bir değere sahip olan, sıralama ölçütünün bir ikili koşula göre belirtilebileceği ilk öğenin konumunu bulur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -602,9 +602,9 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `lower_bound`. Daha fazla bilgi için [lower_bound](../standard-library/algorithm-functions.md#lower_bound).
+Bu işlev, `lower_bound`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [lower_bound](../standard-library/algorithm-functions.md#lower_bound).
 
-## <a name="make_heap"></a> make_heap (STL/CLR)
+## <a name="make_heap-stlclr"></a><a name="make_heap"></a>make_heap (STL/CLR)
 
 Belirtilen bir aralıktaki öğeleri ilk öğenin en büyük olduğu ve onun için bir ikili koşula sahip bir sıralama ölçütünün belirtilebildiği bir yığına dönüştürür.
 
@@ -619,9 +619,9 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `make_heap`. Daha fazla bilgi için [make_heap](../standard-library/algorithm-functions.md#make_heap).
+Bu işlev, `make_heap`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [make_heap](../standard-library/algorithm-functions.md#make_heap).
 
-## <a name="max"></a> en fazla (STL/CLR)
+## <a name="max-stlclr"></a><a name="max"></a>Max (STL/CLR)
 
 İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -636,9 +636,9 @@ template<class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `max`. Daha fazla bilgi için [max](../standard-library/algorithm-functions.md#max).
+Bu işlev, `max`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Max](../standard-library/algorithm-functions.md#max).
 
-## <a name="max_element"></a> max_element (STL/CLR)
+## <a name="max_element-stlclr"></a><a name="max_element"></a>max_element (STL/CLR)
 
 Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -653,9 +653,9 @@ template<class _FwdIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `max_element`. Daha fazla bilgi için [max_element](../standard-library/algorithm-functions.md#max_element).
+Bu işlev, `max_element`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [max_element](../standard-library/algorithm-functions.md#max_element).
 
-## <a name="merge"></a> Merge (STL/CLR)
+## <a name="merge-stlclr"></a><a name="merge"></a>Birleştir (STL/CLR)
 
 İki sıralanmış kaynak aralıktaki tüm öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -672,9 +672,9 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `merge`. Daha fazla bilgi için [birleştirme](../standard-library/algorithm-functions.md#merge).
+Bu işlev, `merge`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [birleştirme](../standard-library/algorithm-functions.md#merge).
 
-## <a name="min"></a> Min (STL/CLR)
+## <a name="min-stlclr"></a><a name="min"></a>Min (STL/CLR)
 
 İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -689,9 +689,9 @@ template<class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `min`. Daha fazla bilgi için [min](../standard-library/algorithm-functions.md#min).
+Bu işlev, `min`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Min](../standard-library/algorithm-functions.md#min).
 
-## <a name="min_element"></a> min_element (STL/CLR)
+## <a name="min_element-stlclr"></a><a name="min_element"></a>min_element (STL/CLR)
 
 Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -706,9 +706,9 @@ template<class _FwdIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `min_element`. Daha fazla bilgi için [min_element](../standard-library/algorithm-functions.md#min_element).
+Bu işlev, `min_element`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [min_element](../standard-library/algorithm-functions.md#min_element).
 
-## <a name="mismatch"></a> Uyumsuzluk (STL/CLR)
+## <a name="mismatch-stlclr"></a><a name="mismatch"></a>uyuşmazlık (STL/CLR)
 
 Eşitlik ya da denklik için ikili bir koşul tarafından belirtildiği şekilde iki aralığı öğe öğe karşılaştırır ve farkın oluştuğu ilk yeri bulur.
 
@@ -726,9 +726,9 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `mismatch`. Daha fazla bilgi için [uyuşmazlığı](../standard-library/algorithm-functions.md#mismatch).
+Bu işlev, `mismatch`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [uyuşmazlık](../standard-library/algorithm-functions.md#mismatch).
 
-## <a name="next_permutation"></a> next_permutation (STL/CLR)
+## <a name="next_permutation-stlclr"></a><a name="next_permutation"></a>next_permutation (STL/CLR)
 
 Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.
 
@@ -743,11 +743,11 @@ template<class _BidIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `next_permutation`. Daha fazla bilgi için [next_permutation](../standard-library/algorithm-functions.md#next_permutation).
+Bu işlev, `next_permutation`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [next_permutation](../standard-library/algorithm-functions.md#next_permutation).
 
-## <a name="nth_element"></a> nth_element (STL/CLR)
+## <a name="nth_element-stlclr"></a><a name="nth_element"></a>nth_element (STL/CLR)
 
-Doğru şekilde bularak öğelerin bir aralığını bölümler `n`öğedeki aralığındaki dizinin önündeki tüm öğeler ona eşit veya ve sırayla izleyen tüm öğeler, böylece büyük veya ona eşittir.
+Her bir öğe aralığını `n`doğru bir şekilde bulur, bu sayede, önündeki tüm öğelerin bu değerden küçük veya ona eşit olması ve dizide izleyen tüm öğelerin bu değere eşit veya ondan büyük olması.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -761,9 +761,9 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `nth_element`. Daha fazla bilgi için [nth_element](../standard-library/algorithm-functions.md#nth_element).
+Bu işlev, `nth_element`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [nth_element](../standard-library/algorithm-functions.md#nth_element).
 
-## <a name="partial_sort"></a> partial_sort (STL/CLR)
+## <a name="partial_sort-stlclr"></a><a name="partial_sort"></a>partial_sort (STL/CLR)
 
 Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -779,9 +779,9 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `partial_sort`. Daha fazla bilgi için [partial_sort](../standard-library/algorithm-functions.md#partial_sort).
+Bu işlev, `partial_sort`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [partial_sort](../standard-library/algorithm-functions.md#partial_sort).
 
-## <a name="partial_sort_copy"></a> partial_sort_copy (STL/CLR)
+## <a name="partial_sort_copy-stlclr"></a><a name="partial_sort_copy"></a>partial_sort_copy (STL/CLR)
 
 Öğeleri bir kaynak aralığından bir hedef aralığa kopyalar, burada kaynak öğeleri daha küçük olana ya da belirtilen başka bir ikili koşula göre sıralanır.
 
@@ -798,9 +798,9 @@ template<class _InIt, class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `partial_sort_copy`. Daha fazla bilgi için [partial_sort_copy](../standard-library/algorithm-functions.md#partial_sort_copy).
+Bu işlev, `partial_sort_copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [partial_sort_copy](../standard-library/algorithm-functions.md#partial_sort_copy).
 
-## <a name="partition"></a> Bölüm (STL/CLR)
+## <a name="partition-stlclr"></a><a name="partition"></a>Bölüm (STL/CLR)
 
 Bir aralıktaki öğeleri, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.
 
@@ -813,9 +813,9 @@ template<class _BidIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `partition`. Daha fazla bilgi için [bölüm](../standard-library/algorithm-functions.md#partition).
+Bu işlev, `partition`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [bölüm](../standard-library/algorithm-functions.md#partition).
 
-## <a name="pop_heap"></a> pop_heap (STL/CLR)
+## <a name="pop_heap-stlclr"></a><a name="pop_heap"></a>pop_heap (STL/CLR)
 
 En büyük öğeyi bir yığının önünden aralıktaki bir sonraki son konuma kaldırır ve ardından kalan öğelerden yeni bir yığın oluşturur.
 
@@ -830,9 +830,9 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `pop_heap`. Daha fazla bilgi için [pop_heap](../standard-library/algorithm-functions.md#pop_heap).
+Bu işlev, `pop_heap`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [pop_heap](../standard-library/algorithm-functions.md#pop_heap).
 
-## <a name="prev_permutation"></a> prev_permutation (STL/CLR)
+## <a name="prev_permutation-stlclr"></a><a name="prev_permutation"></a>prev_permutation (STL/CLR)
 
 Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.
 
@@ -847,9 +847,9 @@ template<class _BidIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `prev_permutation`. Daha fazla bilgi için [prev_permutation](../standard-library/algorithm-functions.md#prev_permutation).
+Bu işlev, `prev_permutation`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [prev_permutation](../standard-library/algorithm-functions.md#prev_permutation).
 
-## <a name="push_heap"></a> push_heap (STL/CLR)
+## <a name="push_heap-stlclr"></a><a name="push_heap"></a>push_heap (STL/CLR)
 
 Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.
 
@@ -864,11 +864,11 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `push_heap`. Daha fazla bilgi için [push_heap](../standard-library/algorithm-functions.md#push_heap).
+Bu işlev, `push_heap`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Push_heap](../standard-library/algorithm-functions.md#push_heap).
 
-## <a name="random_shuffle"></a> random_shuffle (STL/CLR)
+## <a name="random_shuffle-stlclr"></a><a name="random_shuffle"></a>random_shuffle (STL/CLR)
 
-Bir dizi düzenlemelerinin `N` birine bir aralıktaki öğeleri `N`! olası düzenlemeleri rastgele seçilmiş.
+Bir aralıktaki `N` öğelerinin dizisini `N`birine yeniden düzenler! Rastgele seçilen olası düzenlemeler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -881,9 +881,9 @@ template<class _RanIt, class _Fn1> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `random_shuffle`. Daha fazla bilgi için [random_shuffle](../standard-library/algorithm-functions.md#random_shuffle).
+Bu işlev, `random_shuffle`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [random_shuffle](../standard-library/algorithm-functions.md#random_shuffle).
 
-## <a name="remove"></a> Kaldır (STL/CLR)
+## <a name="remove-stlclr"></a><a name="remove"></a>Kaldır (STL/CLR)
 
 Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.
 
@@ -896,9 +896,9 @@ template<class _FwdIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `remove`. Daha fazla bilgi için [Kaldır](../standard-library/algorithm-functions.md#remove).
+Bu işlev, `remove`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Remove](../standard-library/algorithm-functions.md#remove).
 
-## <a name="remove_copy"></a> remove_copy (STL/CLR)
+## <a name="remove_copy-stlclr"></a><a name="remove_copy"></a>remove_copy (STL/CLR)
 
 Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.
 
@@ -912,9 +912,9 @@ template<class _InIt, class _OutIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `remove_copy`. Daha fazla bilgi için [remove_copy](../standard-library/algorithm-functions.md#remove_copy).
+Bu işlev, `remove_copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [remove_copy](../standard-library/algorithm-functions.md#remove_copy).
 
-## <a name="remove_copy_if"></a> remove_copy_if (STL/CLR)
+## <a name="remove_copy_if-stlclr"></a><a name="remove_copy_if"></a>remove_copy_if (STL/CLR)
 
 Öğeleri, bir koşulu karşılayan kopyalanmayan öğeler hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.
 
@@ -928,9 +928,9 @@ template<class _InIt, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `remove_copy_if`. Daha fazla bilgi için [remove_copy_if](../standard-library/algorithm-functions.md#remove_copy_if).
+Bu işlev, `remove_copy_if`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [remove_copy_if](../standard-library/algorithm-functions.md#remove_copy_if).
 
-## <a name="remove_if"></a> remove_if (STL/CLR)
+## <a name="remove_if-stlclr"></a><a name="remove_if"></a>remove_if (STL/CLR)
 
 Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki bir koşulu karşılayan öğeleri ortadan kaldırır.
 
@@ -943,9 +943,9 @@ template<class _FwdIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `remove_if`. Daha fazla bilgi için [remove_if](../standard-library/algorithm-functions.md#remove_if).
+Bu işlev, `remove_if`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [remove_if](../standard-library/algorithm-functions.md#remove_if).
 
-## <a name="replace"></a> replace (STL/CLR)
+## <a name="replace-stlclr"></a><a name="replace"></a>Değiştir (STL/CLR)
 
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.
 
@@ -959,9 +959,9 @@ template<class _FwdIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `replace`. Daha fazla bilgi için [değiştirin](../standard-library/algorithm-functions.md#replace).
+Bu işlev, `replace`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Replace](../standard-library/algorithm-functions.md#replace).
 
-## <a name="replace_copy"></a> replace_copy (STL/CLR)
+## <a name="replace_copy-stlclr"></a><a name="replace_copy"></a>replace_copy (STL/CLR)
 
 Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen değerle eşleşiyorsa, onu değiştirir.
 
@@ -975,9 +975,9 @@ template<class _InIt, class _OutIt, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `replace_copy`. Daha fazla bilgi için [replace_copy](../standard-library/algorithm-functions.md#replace_copy).
+Bu işlev, `replace_copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [replace_copy](../standard-library/algorithm-functions.md#replace_copy).
 
-## <a name="replace_copy_if"></a> replace_copy_if (STL/CLR)
+## <a name="replace_copy_if-stlclr"></a><a name="replace_copy_if"></a>replace_copy_if (STL/CLR)
 
 Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen bir koşulu karşılıyorsa, onu değiştirir.
 
@@ -991,9 +991,9 @@ template<class _InIt, class _OutIt, class _Pr, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `replace_copy_if`. Daha fazla bilgi için [replace_copy_if](../standard-library/algorithm-functions.md#replace_copy_if).
+Bu işlev, `replace_copy_if`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [replace_copy_if](../standard-library/algorithm-functions.md#replace_copy_if).
 
-## <a name="replace_if"></a> replace_if (STL/CLR)
+## <a name="replace_if-stlclr"></a><a name="replace_if"></a>replace_if (STL/CLR)
 
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa değiştirir.
 
@@ -1007,9 +1007,9 @@ template<class _FwdIt, class _Pr, class _Ty> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `replace_if`. Daha fazla bilgi için [replace_if](../standard-library/algorithm-functions.md#replace_if).
+Bu işlev, `replace_if`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [replace_if](../standard-library/algorithm-functions.md#replace_if).
 
-## <a name="reverse"></a> reverse (STL/CLR)
+## <a name="reverse-stlclr"></a><a name="reverse"></a>ters (STL/CLR)
 
 Bir aralık içindeki öğelerin sırasını tersine çevirir.
 
@@ -1022,11 +1022,11 @@ template<class _BidIt> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `reverse`. Daha fazla bilgi için [ters](../standard-library/algorithm-functions.md#reverse).
+Bu işlev, `reverse`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [ters](../standard-library/algorithm-functions.md#reverse).
 
-## <a name="reverse_copy"></a> reverse_copy (STL/CLR)
+## <a name="reverse_copy-stlclr"></a><a name="reverse_copy"></a>reverse_copy (STL/CLR)
 
-Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sırasını tersine.
+Bir kaynak aralıktaki öğelerin sırasını bir hedef aralığa kopyalarken tersine çevirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1037,9 +1037,9 @@ template<class _BidIt, class _OutIt> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `reverse_copy`. Daha fazla bilgi için [reverse_copy](../standard-library/algorithm-functions.md#reverse_copy).
+Bu işlev, `reverse_copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [reverse_copy](../standard-library/algorithm-functions.md#reverse_copy).
 
-## <a name="rotate"></a> Döndür (STL/CLR)
+## <a name="rotate-stlclr"></a><a name="rotate"></a>Döndür (STL/CLR)
 
 İki bitişik aralık içindeki öğeleri birbiriyle değiştirir.
 
@@ -1052,9 +1052,9 @@ template<class _FwdIt> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `rotate`. Daha fazla bilgi için [döndürme](../standard-library/algorithm-functions.md#rotate).
+Bu işlev, `rotate`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [döndürme](../standard-library/algorithm-functions.md#rotate).
 
-## <a name="rotate_copy"></a> rotate_copy (STL/CLR)
+## <a name="rotate_copy-stlclr"></a><a name="rotate_copy"></a>rotate_copy (STL/CLR)
 
 Bir kaynak aralık içindeki iki bitişik aralıktaki öğeleri birbiriyle değiştirir ve sonucu bir hedef aralığına kopyalar.
 
@@ -1068,9 +1068,9 @@ template<class _FwdIt, class _OutIt> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `rotate_copy`. Daha fazla bilgi için [rotate_copy](../standard-library/algorithm-functions.md#rotate_copy).
+Bu işlev, `rotate_copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [rotate_copy](../standard-library/algorithm-functions.md#rotate_copy).
 
-## <a name="search_"></a> Arama (STL/CLR)
+## <a name="search-stlclr"></a><a name="search_"></a>ara (STL/CLR)
 
 Öğeleri verili bir öğe dizisi içindekilerle eşit olan veya öğeleri verili bir dizi öğe için ikili bir koşula göre belirtildiği şekilde denk olan bir hedef aralığındaki dizinin ilk geçtiği yeri arar.
 
@@ -1087,9 +1087,9 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `search`. Daha fazla bilgi için [arama](../standard-library/algorithm-functions.md#search).
+Bu işlev, `search`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [arama](../standard-library/algorithm-functions.md#search).
 
-## <a name="search_n"></a> search_n (STL/CLR)
+## <a name="search_n-stlclr"></a><a name="search_n"></a>search_n (STL/CLR)
 
 Belirli bir değere veya ikili bir koşula göre belirtilen değerle bir ilişkiye sahip olan öğelerin belirli bir sayısının aralığındaki ilk diziyi arar.
 
@@ -1106,9 +1106,9 @@ template<class _FwdIt1, class _Diff2, class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `search_n`. Daha fazla bilgi için [search_n](../standard-library/algorithm-functions.md#search_n).
+Bu işlev, `search_n`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [search_n](../standard-library/algorithm-functions.md#search_n).
 
-## <a name="set_difference"></a> set_difference (STL/CLR)
+## <a name="set_difference-stlclr"></a><a name="set_difference"></a>set_difference (STL/CLR)
 
 Sıralanmış ikinci bir kaynak aralığına sahip olanları değil, sıralanmış bir kaynak aralığına sahip öğelerin tümünü tek, sıralanmış bir hedef aralığı içinde birleştirir, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -1125,9 +1125,9 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `set_difference`. Daha fazla bilgi için [set_difference](../standard-library/algorithm-functions.md#set_difference).
+Bu işlev, `set_difference`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [set_difference](../standard-library/algorithm-functions.md#set_difference).
 
-## <a name="set_intersection"></a> set_intersection (STL/CLR)
+## <a name="set_intersection-stlclr"></a><a name="set_intersection"></a>set_intersection (STL/CLR)
 
 Her iki sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -1144,9 +1144,9 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `set_intersection`. Daha fazla bilgi için [set_intersection](../standard-library/algorithm-functions.md#set_intersection).
+Bu işlev, `set_intersection`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [set_intersection](../standard-library/algorithm-functions.md#set_intersection).
 
-## <a name="set_symmetric_difference"></a> set_symmetric_difference (STL/CLR)
+## <a name="set_symmetric_difference-stlclr"></a><a name="set_symmetric_difference"></a>set_symmetric_difference (STL/CLR)
 
 İki değil, tek bir sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -1163,9 +1163,9 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `set_symmetric_difference`. Daha fazla bilgi için [set_symmetric_difference](../standard-library/algorithm-functions.md#set_symmetric_difference).
+Bu işlev, `set_symmetric_difference`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [set_symmetric_difference](../standard-library/algorithm-functions.md#set_symmetric_difference).
 
-## <a name="set_union"></a> set_union (STL/CLR)
+## <a name="set_union-stlclr"></a><a name="set_union"></a>set_union (STL/CLR)
 
 İki sıralanmış kaynak aralığından en az birine sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -1182,9 +1182,9 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `set_union`. Daha fazla bilgi için [set_union](../standard-library/algorithm-functions.md#set_union).
+Bu işlev, `set_union`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [set_union](../standard-library/algorithm-functions.md#set_union).
 
-## <a name="sort"></a> Sırala (STL/CLR)
+## <a name="sort-stlclr"></a><a name="sort"></a>Sırala (STL/CLR)
 
 Belirtilen bir aralıktaki öğeleri azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -1199,9 +1199,9 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `sort`. Daha fazla bilgi için [sıralama](../mfc/reference/cmfclistctrl-class.md#sort).
+Bu işlev, `sort`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [sıralama](../mfc/reference/cmfclistctrl-class.md#sort).
 
-## <a name="sort_heap"></a> sort_heap (STL/CLR)
+## <a name="sort_heap-stlclr"></a><a name="sort_heap"></a>sort_heap (STL/CLR)
 
 Bir yığını sıralanmış bir aralığa dönüştürür.
 
@@ -1216,9 +1216,9 @@ template<class _RanIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `sort_heap`. Daha fazla bilgi için [sort_heap](../standard-library/algorithm-functions.md#sort_heap).
+Bu işlev, `sort_heap`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Sort_heap](../standard-library/algorithm-functions.md#sort_heap).
 
-## <a name="stable_partition"></a> stable_partition (STL/CLR)
+## <a name="stable_partition-stlclr"></a><a name="stable_partition"></a>stable_partition (STL/CLR)
 
 Bir aralıktaki öğeleri, eşdeğer öğelerin göreli sırasını koruyaraktan, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.
 
@@ -1231,9 +1231,9 @@ template<class _BidIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `stable_partition`. Daha fazla bilgi için [stable_partition](../standard-library/algorithm-functions.md#stable_partition).
+Bu işlev, `stable_partition`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [stable_partition](../standard-library/algorithm-functions.md#stable_partition).
 
-## <a name="stable_sort"></a> stable_sort (STL/CLR)
+## <a name="stable_sort-stlclr"></a><a name="stable_sort"></a>stable_sort (STL/CLR)
 
 Belirtilen bir aralıktaki öğeleri, eşdeğer öğelerin göreli sıralamasını koruyaraktan, azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -1248,9 +1248,9 @@ template<class _BidIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `stable_sort`. Daha fazla bilgi için [stable_sort](../standard-library/algorithm-functions.md#stable_sort).
+Bu işlev, `stable_sort`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [stable_sort](../standard-library/algorithm-functions.md#stable_sort).
 
-## <a name="swap"></a> takas (STL/CLR)
+## <a name="swap-stlclr"></a><a name="swap"></a>takas (STL/CLR)
 
 İlk nesnenin içeriğini ikinci nesneye ve ikinci nesneni içeriğini birinciye atayarak, nesnelerin iki türü arasındaki öğelerin değerlerini birbiriyle değiştirir.
 
@@ -1263,9 +1263,9 @@ Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `stable_sort`. Daha f
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `swap`. Daha fazla bilgi için [takas](../standard-library/algorithm-functions.md#swap).
+Bu işlev, `swap`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Swap](../standard-library/algorithm-functions.md#swap).
 
-## <a name="swap_ranges"></a> swap_ranges (STL/CLR)
+## <a name="swap_ranges-stlclr"></a><a name="swap_ranges"></a>swap_ranges (STL/CLR)
 
 Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.
 
@@ -1279,9 +1279,9 @@ template<class _FwdIt1, class _FwdIt2> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `swap_ranges`. Daha fazla bilgi için [swap_ranges](../standard-library/algorithm-functions.md#swap_ranges).
+Bu işlev, `swap_ranges`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [swap_ranges](../standard-library/algorithm-functions.md#swap_ranges).
 
-## <a name="transform"></a> Dönüşüm (STL/CLR)
+## <a name="transform-stlclr"></a><a name="transform"></a>dönüştürme (STL/CLR)
 
 Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.
 
@@ -1298,9 +1298,9 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Fn2> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `transform`. Daha fazla bilgi için [dönüştürme](../standard-library/algorithm-functions.md#transform).
+Bu işlev, `transform`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Transform](../standard-library/algorithm-functions.md#transform).
 
-## <a name="unique"></a> benzersiz (STL/CLR)
+## <a name="unique-stlclr"></a><a name="unique"></a>benzersiz (STL/CLR)
 
 Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.
 
@@ -1315,9 +1315,9 @@ template<class _FwdIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `unique`. Daha fazla bilgi için [benzersiz](../standard-library/algorithm-functions.md#unique).
+Bu işlev, `unique`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [Unique](../standard-library/algorithm-functions.md#unique).
 
-## <a name="unique_copy"></a> unique_copy (STL/CLR)
+## <a name="unique_copy-stlclr"></a><a name="unique_copy"></a>unique_copy (STL/CLR)
 
 Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.
 
@@ -1333,9 +1333,9 @@ template<class _InIt, class _OutIt, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `unique_copy`. Daha fazla bilgi için [unique_copy](../standard-library/algorithm-functions.md#unique_copy).
+Bu işlev, `unique_copy`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [unique_copy](../standard-library/algorithm-functions.md#unique_copy).
 
-## <a name="upper_bound"></a> upper_bound (STL/CLR)
+## <a name="upper_bound-stlclr"></a><a name="upper_bound"></a>upper_bound (STL/CLR)
 
 Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -1351,4 +1351,4 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev C++ Standart Kitaplığı işlevi gibi davranır `upper_bound`. Daha fazla bilgi için [upper_bound](../standard-library/algorithm-functions.md#upper_bound).
+Bu işlev, `upper_bound`C++ standart kitaplık işleviyle aynı şekilde davranır. Daha fazla bilgi için bkz. [upper_bound](../standard-library/algorithm-functions.md#upper_bound).

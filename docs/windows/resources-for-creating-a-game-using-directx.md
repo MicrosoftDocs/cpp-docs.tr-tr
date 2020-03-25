@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], games
 - DirectX [C++]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
-ms.openlocfilehash: c3d2f43764feb20919a282ac21e062a721ce5f84
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a965320281f9435307f32f5d1b0c581073c7cebe
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514735"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167829"
 ---
 # <a name="resources-for-creating-a-c-game-using-directx"></a>DirectX kullanarak C++ oyun oluşturmak için kaynaklar
 

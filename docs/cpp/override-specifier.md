@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - override Identifier
 ms.assetid: b286fb46-9374-4ad8-b2e7-4607119b6133
-ms.openlocfilehash: 71505f8b9b4dc2800e80a78a64f0ca6984af1349
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 82837ae34ab786e607df54038493b14350574a15
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345863"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188486"
 ---
 # <a name="override-specifier"></a>override Tanımlayıcısı
 
-Kullanabileceğiniz **geçersiz kılma** üye bir temel sınıf sanal işlevi geçersiz kılan işlevleri tanımlamak için anahtar sözcüğü.
+Bir temel sınıftaki sanal işlevi geçersiz kılan üye işlevlerini belirlemek için **override** anahtar sözcüğünü kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,11 +23,11 @@ function-declaration override;
 
 ## <a name="remarks"></a>Açıklamalar
 
-**geçersiz kılma** duyarlıdır ve yalnızca kullanıldığında özel anlamı olan bir üye işlev bildiriminden sonra kullanılır; Aksi takdirde, ayrılmış bir anahtar değil.
+**geçersiz kılma** bağlam duyarlıdır ve yalnızca bir üye işlev bildiriminden sonra kullanıldığında özel anlamı vardır; Aksi takdirde, ayrılmış bir anahtar sözcük değildir.
 
 ## <a name="example"></a>Örnek
 
-Kullanım **geçersiz kılma** kodunuzda yanlışlıkla kalıtım davranışını önlemeye yardımcı olmak için. Aşağıdaki örnek, kullanmadan where gösterir **geçersiz kılma**, türetilen sınıfın üye işlev davranışının aktarmayı şablonlarınızı. Derleyici bu kod için herhangi bir hata vermez.
+Kodunuzda yanlışlıkla devralma davranışını önlemeye yardımcı olması için **geçersiz kılma** kullanın. Aşağıdaki örnek, **geçersiz kılma**kullanılmadan, türetilen sınıfın üye işlev davranışının amaçlanmadığını gösterir. Derleyici bu kod için herhangi bir hata oluşturmaz.
 
 ```cpp
 class BaseClass
@@ -51,7 +51,7 @@ class DerivedClass: public BaseClass
 };
 ```
 
-Kullanırken **geçersiz kılma**, derleyici sessiz bir şekilde yeni üye işlevleri oluşturmak yerine hatalar üretir.
+**Override**kullandığınızda, derleyici sessizce yeni üye işlevleri oluşturmak yerine hatalar oluşturur.
 
 ```cpp
 class BaseClass
@@ -78,7 +78,7 @@ class DerivedClass: public BaseClass
 };
 ```
 
-İşlevlerin geçersiz kılınamaz ve sınıfların devralınamaz olduğunu belirtmek için kullanın [son](../cpp/final-specifier.md) anahtar sözcüğü.
+İşlevlerin geçersiz kılınamayacağını ve sınıfların devralınamayacağını belirtmek için [final](../cpp/final-specifier.md) anahtar sözcüğünü kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

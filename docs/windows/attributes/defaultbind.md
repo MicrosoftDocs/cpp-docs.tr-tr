@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - defaultbind attribute
 ms.assetid: b20a8437-24e6-4b6d-a2df-09fe5e1006e0
-ms.openlocfilehash: a2f612c4869a62a84a6a2af99057ced365f875f2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 72d1f5a5720466bf7abf08aaad4acdbab05c408f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490986"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167166"
 ---
 # <a name="defaultbind"></a>defaultbind
 
@@ -39,8 +39,8 @@ Nesneyi en iyi şekilde temsil eden tek ve bağlanabilir özelliği gösterir.
 |-|-|
 |**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

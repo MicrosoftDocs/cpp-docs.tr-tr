@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - RC2148
 ms.assetid: 0290065c-35d3-4815-80c5-40bf7132ae1d
-ms.openlocfilehash: 6d9946c20705fa14046823104455c2819fac353f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2394dbb93dd2d203d65760d805e09f60a692ba4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173216"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191333"
 ---
 # <a name="resource-compiler-error-rc2148"></a>Kaynak Derleyicisi Hatası RC2148
 
-Çok büyük bir alt dili kimliği
+ALT DIL KIMLIĞI çok büyük
 
-Alt dili kimlik değerini byl mimo platný.
+ALT DIL KIMLIĞI değeri Aralık dışındaydı.
 
-**Dil** deyimi aşağıdaki sözdizimini kullanın:
+**Language** ifadesinin aşağıdaki sözdizimini kullanması gerekir:
 
 **Dil** *primary_language_ID*,*secondary_language_ID*
 
-Geçerli bir alt dili kimlikleri olarak tanımlanan **SUBLANG_** WINNT.h dosyasındaki sabitler.
+Geçerli alt DIL kimlikleri, WINNT. h dosyasında **SUBLANG_** sabitler olarak tanımlanmıştır.

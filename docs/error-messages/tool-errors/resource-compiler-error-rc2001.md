@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - RC2001
 ms.assetid: 92bfb4c0-1879-4606-bb9f-ef7368707b4a
-ms.openlocfilehash: f4755e04a744d94636b4b37aaf727e0d733008ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35042687b798b53857becdedba57861bd4f41a05
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346697"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191735"
 ---
 # <a name="resource-compiler-error-rc2001"></a>Kaynak Derleyicisi Hatası RC2001
 
-Sabitte
+Sabitte yeni satır
 
-Bir dize sabitine olmadan ya da ikinci satırında bir ters eğik çizgi devam edildi (**\\**) veya kapatma ve açma çift tırnak (**"**).
+Bir dize sabiti, ters eğik çizgi ( **\\** ) veya kapatma ve çift tırnak işareti ( **"** ) olmadan ikinci bir satır üzerinde devam ettirildi.
 
-Kaynak dosyada iki satıra olan bir dize sabitine ayırmak için aşağıdakilerden birini yapın:
+Kaynak dosyada iki satırlık bir dize sabitini bölmek için aşağıdakilerden birini yapın:
 
-- İlk satır satır devamlılığı karakteri olan ters eğik çizgi ile bitmelidir.
+- İlk satırı satır devamlılık karakteriyle ve ters eğik çizgiyle sonlandırın.
 
-- Çift tırnak işareti ile ilk satırdaki dize kapatın ve başka bir tırnak işareti ile dizeyi sonraki satıra açın.
+- İlk satırdaki dizeyi çift tırnak işaretiyle kapatın ve sonraki satırda dizeyi başka bir tırnak işaretiyle açın.
 
-\N, yeni satır karakteri bir dize sabiti ekleme için çıkış dizisi ile ilk satırın sonunda için yeterli değil.
+Bir dize sabitinde yeni satır karakteri katıştırmak için, \n ile ilk satırı bitirmek yeterli değildir.

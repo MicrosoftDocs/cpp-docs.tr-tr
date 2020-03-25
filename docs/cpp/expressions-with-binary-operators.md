@@ -6,12 +6,12 @@ helpviewer_keywords:
 - binary operators [C++]
 - expressions [C++], binary operators
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
-ms.openlocfilehash: d3a966a7922c1888defbebf970ac409872fe18ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2dbda1759dcb37a1f2a8cbe87f24adbb979ca085
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154314"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188993"
 ---
 # <a name="expressions-with-binary-operators"></a>İkili İşleçli İfadeler
 
@@ -33,9 +33,9 @@ ms.locfileid: "62154314"
 
 - [Kaydırma işleçleri](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
 
-   - Sağa kaydırma (>>)
+   - Sağa kaydırma (> >)
 
-   - Sola kaydırma (<<)
+   - Sola kaydırma (< <)
 
 - [İlişkisel ve eşitlik işleçleri](../cpp/relational-operators-equal-and-equal.md)
 
@@ -43,9 +43,9 @@ ms.locfileid: "62154314"
 
    - Büyüktür (>)
 
-   - Küçük veya eşittir (\<=)
+   - Küçüktür veya eşittir (\<=)
 
-   - Büyüktür veya eşittir (> =)
+   - Büyük veya eşittir (> =)
 
    - Eşittir (==)
 
@@ -55,9 +55,9 @@ ms.locfileid: "62154314"
 
    - [Bit düzeyinde AND (&)](../cpp/bitwise-and-operator-amp.md)
 
-   - [Bit düzeyinde dışlamalı OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
+   - [Bit düzeyinde dışlamalı veya (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
 
-   - [Bit düzeyinde kapsamalı OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
+   - [Bit düzeyinde kapsamlı OR&#124;()](../cpp/bitwise-inclusive-or-operator-pipe.md)
 
 - Mantıksal işleçler
 
@@ -65,13 +65,13 @@ ms.locfileid: "62154314"
 
    - [Mantıksal OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
 
-- [Atama İşleçleri](../cpp/assignment-operators.md)
+- [Atama işleçleri](../cpp/assignment-operators.md)
 
    - Atama (=)
 
    - Toplama ataması (+=)
 
-   - Çıkarma Ataması (-)
+   - Çıkarma ataması (-=)
 
    - Çarpma ataması (*=)
 
@@ -81,13 +81,13 @@ ms.locfileid: "62154314"
 
    - Sola kaydırma ataması (<\<=)
 
-   - Sağa kaydırma ataması (>> =)
+   - Sağa kaydırma ataması (> > =)
 
-   - Bit düzeyinde AND ataması (& =)
+   - Bit düzeyinde AND atama (& =)
 
    - Bit düzeyinde dışlamalı OR ataması (^=)
 
-   - Bit düzeyinde kapsamalı OR Ataması (&#124;=)
+   - Bit düzeyinde kapsamlı veya atama&#124;(=)
 
 - [Virgül işleci](../cpp/comma-operator.md) (,)
 

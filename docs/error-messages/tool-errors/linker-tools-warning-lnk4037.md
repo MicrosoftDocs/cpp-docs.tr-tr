@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4037
 ms.assetid: 9ba02fd3-b04f-4679-bab9-26fa82cf09bb
-ms.openlocfilehash: 9a8121617e622fc12efe5bd26aac23faf2530f24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43fae7d0f19f96998d2e1a1739bc3e596bbd9ea9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410310"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194206"
 ---
 # <a name="linker-tools-warning-lnk4037"></a>Bağlayıcı Araçları Uyarısı LNK4037
 
->'*sembol*' yok; yoksayıldı
+>'*symbol*' yok; LIP
 
-Düzenlenmiş adı *sembol* kullanarak sıralanması değil [/sipariş](../../build/reference/order-put-functions-in-order.md) seçeneğini program bulunamadı. Belirtimi denetleyin *sembol* sipariş yanıt dosyasında. Daha fazla bilgi için [/order (işlevleri Sırala Put)](../../build/reference/order-put-functions-in-order.md) bağlayıcı seçeneği.
+Düzenlenmiş ad *sembolü* , programda bulunamadığı için [/Order](../../build/reference/order-put-functions-in-order.md) seçeneği kullanılarak sıralanamıyor. Sıra yanıt dosyasındaki *sembolün* belirtimini denetleyin. Daha fazla bilgi için bkz. [/Order (Işlevleri yerleştirme)](../../build/reference/order-put-functions-in-order.md) bağlayıcı seçeneği.
 
 > [!NOTE]
-> Ortak sembol adları statik işlev adlarını değil olduğundan bağlantı statik işlevler düzenlenemiyor. Zaman **/sipariş** belirtilen uyarı bu bağlayıcı için ya da statik olan sipariş yanıt dosyasındaki her bir simge oluşturulur veya bulunamadı.
+> Statik işlev adları ortak sembol adları olmadığından, bağlantı statik işlevleri sıralamadığından bağlantı yapılamıyor. **/Order** belirtildiğinde, bu bağlayıcı uyarısı, statik veya bulunmayan sıra yanıt dosyasındaki her bir sembol için oluşturulur.

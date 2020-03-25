@@ -6,33 +6,33 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0006
 ms.assetid: ce092be4-1652-414f-8cb5-b97ef5841f89
-ms.openlocfilehash: d62c774411fda80a3e94044b3272567177328ff5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 816355276a203adba1401841ce02eb94a18085b6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359663"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192789"
 ---
 # <a name="project-build-error-prj0006"></a>Proje Derleme Hatası PRJ0006
 
-Geçici dosya 'dosyası açılamadı. Dosyanın varolduğundan ve dizinin değil yazma korumalı emin olun.
+Geçici dosya ' dosya ' açılamadı. Dosyanın var olduğundan ve dizinin yazma korumalı olmadığından emin olun.
 
-Visual C++ derleme işlemi sırasında geçici dosya oluşturulamadı. Buna ilişkin nedenler:
+Visual C++ , derleme işlemi sırasında geçici bir dosya oluşturamadı. Buna ilişkin nedenler:
 
 - Geçici dizin yok.
 
-- Geçici dizin salt okunur.
+- Salt okuma geçici dizini.
 
 - Disk alanı yetersiz.
 
-- $(Intdir) ya da klasördür salt okunur veya salt okunur geçici dosyalar içeriyor.
+- $ (IntDir) klasörü salt okunurdur veya salt okunan geçici dosyaları içerir.
 
-Bu hata ayrıca şu hatayı PRJ0007 meydana gelir: Çıkış dizini 'dizin' oluşturulamadı. Hatası PRJ0007 $(ıntdir) dizini oluşturulamadı, geçici olarak dosyalarının oluşturulmasını olduğunu belirtmek de başarısız olur anlamına gelir.
+Bu hata şu hata durumunda da PRJ0007: ' Dizin ' çıkış dizini oluşturulamadı. Error PRJ0007, $ (Int32) dizininin oluşturulamadığını, geçici olarak dosyaların oluşturulmasını da başarısız olacağını belirtir.
 
-Belirttiğiniz her geçici dosyalar oluşturulur:
+Geçici dosyalar her belirttiğinizde oluşturulur:
 
-- Bir yanıt dosyası.
+- Yanıt dosyası.
 
-- Özel derleme adımı.
+- Özel bir yapı adımı.
 
-- Bir derleme olay.
+- Derleme olayı.

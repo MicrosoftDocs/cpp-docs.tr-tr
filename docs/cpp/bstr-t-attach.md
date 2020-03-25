@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - Attach method [C++]
 ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
-ms.openlocfilehash: 8601ebbea6a9ab837c07518b018e83e8c0df226d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b52661097ca1feab4c8045be240e4138a0c0f21
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385069"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190670"
 ---
-# <a name="bstrtattach"></a>_bstr_t::Attach
+# <a name="_bstr_tattach"></a>_bstr_t::Attach
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bağlantılar bir `_bstr_t` sarmalayıcısını bir `BSTR`.
+`_bstr_t` sarmalayıcısı bir `BSTR`bağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,7 +29,7 @@ void Attach(
 
 #### <a name="parameters"></a>Parametreler
 
-*s*<br/>
+*malar*<br/>
 `BSTR` değişkeniyle ilişkilendirilecek veya ona atanacak bir `_bstr_t`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -38,9 +38,9 @@ void Attach(
 
 ## <a name="example"></a>Örnek
 
-Bkz: [_bstr_t::Assign](../cpp/bstr-t-assign.md) bir örnek için **iliştirme**.
+Bkz. [_bstr_t:: atama](../cpp/bstr-t-assign.md) kullanarak bir örnek **Attach**için atama.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

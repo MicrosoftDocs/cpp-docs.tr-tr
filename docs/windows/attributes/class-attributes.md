@@ -1,56 +1,56 @@
 ---
-title: Sınıf öznitelikleri (C++ COM)
+title: Sınıf öznitelikleri (C++ com)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], class attributes
 ms.assetid: fad04ea1-d8ff-46d4-bb42-2b4500a6ab60
-ms.openlocfilehash: d0913d09c51734f5255271c0d06e639810e0cb58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e10b7831e59211b73ce947ac21e43bc1a8af1c9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148425"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167322"
 ---
 # <a name="class-attributes"></a>Sınıf Öznitelikleri
 
-Aşağıdaki öznitelikler uygulamak [sınıfı](../../cpp/class-cpp.md) C++ anahtar sözcüğü.
+Aşağıdaki öznitelikler [Class](../../cpp/class-cpp.md) C++ anahtar sözcüğü için geçerlidir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[toplanabilir](aggregatable.md)|Sınıf toplama desteklediğini belirtir.|
-|[toplamlar](aggregates.md)|Bir denetim için hedef sınıf toplayan gösterir.|
-|[appobject](appobject.md)|Coclass'ı bir tam .exe uygulamayla ilişkili olan ve bu tür kitaplığında coclass'ı özellikleri ve işlevleri genel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak tanımlar.|
-|[case](case-cpp.md)|İle kullanılan [switch_type](switch-type.md) UNION özniteliği.|
+|[toplanabilir](aggregatable.md)|Sınıfın toplamayı desteklediğini gösterir.|
+|[toplamlar](aggregates.md)|Bir denetimin hedef sınıfı topladığını gösterir.|
+|[appobject](appobject.md)|Bir tam. exe uygulamasıyla ilişkili bir uygulama nesnesi olarak coclass 'ı tanımlar ve coclass 'ın işlevlerinin ve özelliklerinin bu tür kitaplığında genel olarak kullanılabildiğini gösterir.|
+|[case](case-cpp.md)|Bir birleşimdeki [switch_type](switch-type.md) özniteliğiyle birlikte kullanılır.|
 |[coclass](coclass.md)|Bir ActiveX denetimi oluşturur.|
-|[com_interface_entry](com-interface-entry-cpp.md)|Bir arabirim giriş için bir COM eşlemesi ekler.|
-|[control](control.md)|Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.|
-|[custom](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
-|[db_command](db-command.md)|OLE DB komut oluşturur.|
-|[db_param](db-param.md)|Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|
-|[db_source](db-source.md)|Bir veri kaynağı için bir bağlantı oluşturur.|
-|[db_table](db-table.md)|Bir OLE DB tablosu açılır.|
-|[default](default-cpp.md)|Özel veya dispinterface coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.|
-|[defaultvtable](defaultvtable.md)|Bir denetim için varsayılan vtable arabirimi olarak bir arabirim tanımlar.|
+|[com_interface_entry](com-interface-entry-cpp.md)|COM eşlemesine bir arabirim girişi ekler.|
+|[control](control.md)|Kullanıcı tanımlı türün bir denetim olduğunu belirtir.|
+|[custom](custom-cpp.md)|Kendi öznitelemenizi tanımlamanızı sağlar.|
+|[db_command](db-command.md)|Bir OLE DB komutu oluşturur.|
+|[db_param](db-param.md)|Belirtilen üye değişkenini bir giriş veya çıkış parametresiyle ilişkilendirir ve değişkeni ayırır.|
+|[db_source](db-source.md)|Bir veri kaynağına bir bağlantı oluşturur.|
+|[db_table](db-table.md)|Bir OLE DB tablosu açar.|
+|[default](default-cpp.md)|Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan programlama arabirimini temsil ettiğini belirtir.|
+|[defaultvtable](defaultvtable.md)|Bir denetim için varsayılan vtable arabirimi olarak bir arabirimi tanımlar.|
 |[event_receiver](event-receiver.md)|Bir olay alıcısı oluşturur.|
-|[event_source](event-source.md)|Olay kaynağı oluşturur.|
-|[helpcontext](helpcontext.md)|Bu öğe ile ilgili kullanıcı bilgilerini görüntüle sağlayan bir bağlam kimliği belirtir **yardımcı** dosya.|
-|[helpfile](helpfile.md)|Bir tür kitaplığı için Yardım dosyasına adını ayarlar.|
-|[helpstringcontext](helpstringcontext.md)|Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.|
-|[helpstring](helpstring.md)|Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.|
-|[hidden](hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|
-|[implements](implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|
-|[implements_category](implements-category.md)|Sınıfı için uygulanan bir bileşen kategorilerini belirtir.|
-|[module](module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|
-|[noncreatable](noncreatable.md)|Tek başına oluşturulamaz bir nesneyi tanımlar.|
-|[progid](progid.md)|Bir denetimin program kimliği tanımlar.|
-|[registration_script](registration-script.md)|Belirtilen kayıt betiği çalıştırır.|
-|[requestedit](requestedit.md)|Özelliğin desteklediğini belirtir `OnRequestEdit` bildirim.|
-|[source](source-cpp.md)|Denetimin kaynak arabirimleri bağlantı noktaları için bir sınıf üzerinde belirtir. Bir özellik veya yöntem `source` özniteliği gösterir üyesi bir nesne döndürür veya `VARIANT` diğer bir deyişle bir olay kaynağı.|
-|[support_error_info](support-error-info.md)|Hata raporlama için hedef nesne destekler.|
+|[event_source](event-source.md)|Bir olay kaynağı oluşturur.|
+|[helpcontext](helpcontext.md)|Kullanıcının **Yardım** dosyasında bu öğeyle ilgili bilgileri görüntülemesine imkan tanıyan BIR bağlam kimliği belirtir.|
+|[helpfile](helpfile.md)|Bir tür kitaplığı için yardım dosyasının adını ayarlar.|
+|[helpstringcontext](helpstringcontext.md)|Bir. hlp veya. chm dosyasındaki Yardım konusunun KIMLIĞINI belirtir.|
+|[helpstring](helpstring.md)|Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir.|
+|[hidden](hidden.md)|Öğenin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemelidir.|
+|[implements](implements-cpp.md)|IDL coclass 'ın üyeleri olmaya zorlanan dağıtım arabirimlerini belirtir.|
+|[implements_category](implements-category.md)|Sınıf için uygulanan bileşen kategorilerini belirtir.|
+|[module](module-cpp.md)|. IDL dosyasında kitaplık bloğunu tanımlar.|
+|[noncreatable](noncreatable.md)|Kendisi tarafından örneklenemez bir nesne tanımlar.|
+|[progid](progid.md)|Bir denetim için ProgID tanımlar.|
+|[registration_script](registration-script.md)|Belirtilen kayıt betiğini yürütür.|
+|[requestedit](requestedit.md)|Özelliğin `OnRequestEdit` bildirimini desteklediğini belirtir.|
+|[source](source-cpp.md)|Bir sınıftaki bağlantı noktaları için denetimin kaynak arabirimlerini belirtir. Bir özellik veya yöntemde `source` özniteliği, üyenin bir olay kaynağı olan bir nesne veya `VARIANT` döndürdüğünü gösterir.|
+|[support_error_info](support-error-info.md)|Hedef nesne için hata raporlamayı destekler.|
 |[threading](threading-cpp.md)|Bir denetim için iş parçacığı modelini belirtir.|
-|[uuid](uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.|
-|[version](version-cpp.md)|Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.|
-|[vi_progid](vi-progid.md)|ProgID sürümden bağımsız biçimi belirtir.|
+|[uuid](uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz KIMLIĞI belirtir.|
+|[version](version-cpp.md)|Bir sınıfın birden çok sürümü arasında belirli bir sürümü tanımlar.|
+|[vi_progid](vi-progid.md)|ProgID 'nin sürümden bağımsız bir biçimini belirtir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

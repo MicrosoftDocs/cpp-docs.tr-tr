@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları'
+title: 'Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records, updating
@@ -8,69 +8,69 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
-ms.openlocfilehash: bf71f562714e2dacfe75540e1e532219b3eb307f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 578b3b39d90b3beb80dbd201d4982fee30dc6bce
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397815"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80212881"
 ---
-# <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları
+# <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.
+Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bir veri kaynağındaki kayıtları seçmek için kendi yeteneği yanı sıra kayıt kümeleri (isteğe bağlı) güncelleştirmesi veya seçili kayıtları silebilir veya yeni kayıt ekleme. Bir kayıt kümesinin güncellenebilirliğini üç faktör belirler: bağlı veri kaynağına güncelleştirilebilir olup, bir kayıt kümesi nesnesi ve oluşturulan SQL oluştururken belirttiğiniz seçenekleri.
-
-> [!NOTE]
->  SQL, `CRecordset` nesnesi kümenizin güncellenebilirliğini etkileyebilir. Örneğin, SQL birleştirme içeriyorsa veya **GROUP BY** yan tümcesi, MFC ayarlar güncellenebilirliğini FALSE.
+Bir veri kaynağından kayıtları seçme yeteneğinin yanı sıra, kayıt kümeleri (isteğe bağlı olarak) seçili kayıtları güncelleştirebilir veya silebilir veya yeni kayıtlar ekleyebilir. Bir kayıt kümesinin updateözelliği olan üç faktör belirlenir: bağlı veri kaynağının güncelleştirilebilir olup olmadığı, bir kayıt kümesi nesnesi oluştururken belirttiğiniz seçenekler ve oluşturulan SQL.
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  `CRecordset` nesnenizin temel aldığı SQL, kayıt kümenizin güncelleyebilme özelliğini etkileyebilir. Örneğin, SQL 'niz bir JOIN veya **Group By** yan tümcesi IÇERIYORSA, MFC UPDATEÖZELLIĞINI false olarak ayarlar.
 
-Bu konu şunları açıklar:
+> [!NOTE]
+>  Bu konu, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen nesneler için geçerlidir. Toplu satır getirme kullanıyorsanız, bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-- [Kayıt kümesi güncellemede rolünüz](#_core_your_role_in_recordset_updating) ve framework sizin için yapar.
+Bu konuda aşağıdakiler açıklanmaktadır:
 
-- [Kayıt düzenleme arabelleği olarak](#_core_the_edit_buffer) ve [dinamik kümeler ve anlık görüntüler arasındaki farklar](#_core_dynasets_and_snapshots).
+- [Kayıt kümesi güncellemede](#_core_your_role_in_recordset_updating) ve Framework 'ün sizin için yaptığı roldür.
 
-[Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md) açısından kayıt kümesinin bu işlevlerin eylemleri açıklar.
+- [Kayıt kümesi bir düzenleme arabelleği](#_core_the_edit_buffer) ve [Dinamik kümeler ile anlık görüntüler arasındaki farklılıklar](#_core_dynasets_and_snapshots).
 
-[Kayıt kümesi: Daha fazla ilgili güncelleştirmeleri (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) güncelleştirmelerinizi diğer kullanıcıların güncelleştirmeleri ile nasıl etkileşime işlemlerin güncelleştirmeleri etkilemesi ve güncelleştirme işlemleri sürüyor kayıt kapatma veya kaydırma nasıl etkilediğini açıklayarak kayıt güncelleştirme hikayesi tamamlar.
+[Kayıt kümesi: AddNew, düzenleme ve silme işi (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md) , kayıt kümesinin görünüm noktasından bu işlevlerin eylemlerini açıklar.
 
-##  <a name="_core_your_role_in_recordset_updating"></a> Kayıt kümesi güncelleştiriliyor sizin rolünüz
+[Kayıt kümesi: güncelleştirmeler hakkında daha fazla bilgi (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) , işlemlerin güncelleştirmeleri nasıl etkilediğini, bir kayıt kümesinin veya kaydırmanın sürmekte olan güncelleştirmeleri nasıl etkilediğini ve diğer kullanıcıların güncelleştirmeleriyle nasıl etkileşim kuracağını açıklayarak kayıt kümesi güncelleştirme hikayesini tamamlar.
 
-Aşağıdaki tablo, eklemek, düzenlemek veya framework sizin için ne yaptığını birlikte kayıtları silmek için kayıt kümeleri kullanarak rolünüz gösterir.
+##  <a name="your-role-in-recordset-updating"></a><a name="_core_your_role_in_recordset_updating"></a>Kayıt kümesi güncellemede rolünüz
 
-### <a name="recordset-updating-you-and-the-framework"></a>Kayıt kümesi güncelleştiriliyor: Siz ve Framework
+Aşağıdaki tabloda, kayıt kümelerini kullanarak kayıtları ekleme, düzenleme veya silme, çerçevenin sizin için ne yaptığı hakkında daha fazla yer verilmiştir.
+
+### <a name="recordset-updating-you-and-the-framework"></a>Kayıt kümesi güncelleştirme: siz ve Framework
 
 |Bunun için,|Framework|
 |---------|-------------------|
-|Veri kaynağı güncellenebilir (veya eklenebilir) olup olmadığını belirler.|Kaynakları [CDatabase](../../mfc/reference/cdatabase-class.md) üye işlevleri veri kaynağının güncellenebilirliği veya eklenebilirliğini denetlemek için.|
-|Güncelleştirilebilir bir kayıt kümesi (herhangi bir türde) açın.||
-|Çağırarak kayıt güncelleştirilebilir olup olmadığını `CRecordset` işlevleri gibi güncelleştirme `CanUpdate` veya `CanAppend`.||
-|Kayıt kümesi ekleme, düzenleme ve kayıtları silmek için üye işlevlerini çağırın.|Veri kaynağı, kayıt kümesi nesnesi arasındaki veri değişimi mekanizması yönetir.|
-|Güncelleştirme işlemini denetlemek için isteğe bağlı olarak işlem kullanın.|Kaynakları `CDatabase` işlemleri desteklemek için üye işlevleri.|
+|Veri kaynağının güncelleştirilebilir olup olmadığını (veya appdable) belirleme.|Veri kaynağının updateyetenekleri veya appenmaliyet testi için [CDatabase](../../mfc/reference/cdatabase-class.md) üye işlevlerini sağlar.|
+|Güncelleştirilebilir bir kayıt kümesi açın (herhangi bir tür).||
+|`CanUpdate` veya `CanAppend`gibi `CRecordset` güncelleştirme işlevlerini çağırarak kayıt kümesinin güncelleştirilebilir olup olmadığını belirleme.||
+|Kayıt eklemek, düzenlemek ve silmek için kayıt kümesi üye işlevlerini çağırın.|Kayıt kümesi nesneniz ve veri kaynağı arasında veri alışverişi yapmak için olan mekanizması yönetir.|
+|İsteğe bağlı olarak, güncelleştirme işlemini denetlemek için işlemleri kullanın.|İşlemleri desteklemek için `CDatabase` üye işlevlerini sağlar.|
 
 İşlemler hakkında daha fazla bilgi için bkz. [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
 
-##  <a name="_core_the_edit_buffer"></a> Düzenleme ara
+##  <a name="the-edit-buffer"></a><a name="_core_the_edit_buffer"></a>Düzenleme arabelleği
 
-Topluca alındığında, bir kayıt kümesi alan veri üyeleri bir kayıt içeren bir düzen arabellek olarak hizmet — geçerli kayıt. Güncelleştirme işlemleri bu arabelleği geçerli kayıt üzerinde çalışmak için kullanın.
+Toplu olarak alınan bir kayıt kümesinin alan veri üyeleri, geçerli kayıt olan bir kayıt içeren bir düzenleme arabelleği olarak görev yapar. Güncelleştirme işlemleri bu arabelleği geçerli kayıt üzerinde çalışacak şekilde kullanır.
 
-- Bir kayıt eklemek, düzenleme arabelleği yeni bir kayıt oluşturmak için kullanılır. Kayıt eklemeyi bitirdikten sonra daha önce geçerli kayıt yeniden geçerli olur.
+- Bir kayıt eklediğinizde, düzenleme arabelleği yeni bir kayıt oluşturmak için kullanılır. Kayıt eklemeyi bitirdiğinizde, daha önce geçerli olan kayıt yeniden geçerli olur.
 
-- Güncelleştirdiğinizde, bağlantı (edit) bir kaydı düzenleme arabellek alan veri üyeleri kayıt kümesinin yeni değerlere ayarlamak için kullanılır. Güncelleştirme işiniz bittiğinde, güncelleştirilen kaydı hala geçerli olur.
+- Bir kaydı güncelleştirdiğinizde (düzenlerken), kayıt kümesinin alan veri üyelerini yeni değerlere ayarlamak için düzenleme arabelleği kullanılır. Güncelleştirme tamamlandığında, güncelleştirilmiş kayıt hala geçerli olur.
 
-Çağırdığınızda [AddNew](../../mfc/reference/crecordset-class.md#addnew) veya [Düzenle](../../mfc/reference/crecordset-class.md#edit), daha sonra gerektiğinde geri yüklenebilmesi için geçerli kayıt depolanır. Çağırdığınızda [Sil](../../mfc/reference/crecordset-class.md#delete), geçerli kayıt depolanmaz, ancak silindi olarak işaretlendi ve başka bir kayıtla kaydırma gerekir.
+[AddNew](../../mfc/reference/crecordset-class.md#addnew) veya [Edit](../../mfc/reference/crecordset-class.md#edit)'i çağırdığınızda, geçerli kayıt depolanır, böylece daha sonra gerektiğinde geri yüklenebilir. [Sil](../../mfc/reference/crecordset-class.md#delete)' i çağırdığınızda geçerli kayıt depolanmaz, ancak silindi olarak işaretlenir ve başka bir kayda kaydırmanız gerekir.
 
 > [!NOTE]
->  Düzenleme arabellek kayıt silmeyi herhangi bir rol oynar. Geçerli kayıt sildiğinizde, kaydı silinmiş olarak işaretlenmiş ve başka bir kayıda kaydırma kadar kayıt "kaydında değil" olur.
+>  Düzenleme arabelleğinin kayıt silme bölümünde hiçbir rol yok. Geçerli kaydı sildiğinizde, kayıt silindi olarak işaretlenir ve farklı bir kayda kayana kadar kayıt kümesi "kayıt üzerinde değil" olur.
 
-##  <a name="_core_dynasets_and_snapshots"></a> Dinamik kümeler ve anlık görüntüleri
+##  <a name="dynasets-and-snapshots"></a><a name="_core_dynasets_and_snapshots"></a>Dinamik kümeler ve anlık görüntüler
 
-[Dynaset'ler](../../data/odbc/dynaset.md) kayda gezinirken bir kaydın içeriğini yenileyin. [Anlık görüntüleri](../../data/odbc/snapshot.md) kayıtları statik temsillerini olduğundan, çağırmadığınız sürece bir kaydın içeriğini yenilenmedi [Requery](../../mfc/reference/crecordset-class.md#requery). Dynaset'ler tüm işlevlerini kullanmak için doğru düzeyini ODBC API desteği için uygun bir ODBC sürücüsü ile çalışmalısınız. Daha fazla bilgi için [ODBC](../../data/odbc/odbc-basics.md) ve [Dynaset](../../data/odbc/dynaset.md).
+[Dinamik kümeler](../../data/odbc/dynaset.md) , kayda kaydırma yaparken bir kaydın içeriğini yeniler. [Anlık görüntüler](../../data/odbc/snapshot.md) kayıtların statik temsilleridir, bu nedenle yeniden [sorgulama](../../mfc/reference/crecordset-class.md#requery)çağrısı yapmadığınız takdirde bir kaydın içeriği yenilenmez. Dinamik kümeler 'ın tüm işlevlerini kullanmak için, doğru ODBC API desteğinin düzeyine uyan bir ODBC sürücüsü ile çalışmanız gerekir. Daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve [Dynaset](../../data/odbc/dynaset.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: AddNew, Düzenleme ve Silmenin Çalışma Biçimi (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)
+[Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)

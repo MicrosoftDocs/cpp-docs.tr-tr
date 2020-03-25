@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - dispinterface attribute
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
-ms.openlocfilehash: 6360c5e97eae19d7b2d74b3b43d4feae07d4b091
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 66567b0a1b043136e0a754e3a52bbdd7c463e178
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501621"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168245"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -27,7 +27,7 @@ Bir arabirimi. IDL dosyasına bir dağıtım arabirimi olarak koyar.
 
 **Dispınterface** C++ özniteliği bir arabirimden önce olduğunda, arabirimin oluşturulan. IDL dosyasındaki kitaplık bloğunun içine yerleştirilmesine neden olur.
 
-Bir temel sınıf belirtmediğiniz takdirde, bir dağıtım arabirimi öğesinden `IDispatch`türetilir. Dağıtım arabiriminin üyeleri için bir [kimlik](id.md) belirtmeniz gerekir.
+Bir temel sınıf belirtmediğiniz takdirde, bir dağıtım arabirimi `IDispatch`türetilir. Dağıtım arabiriminin üyeleri için bir [kimlik](id.md) belirtmeniz gerekir.
 
 MıDL belgelerindeki [dispınterface](/windows/win32/Midl/dispinterface) için kullanım örneği:
 
@@ -40,7 +40,7 @@ dispinterface helloPro
 
 ## <a name="example"></a>Örnek
 
-**Dispınterface**'in nasıl [](bindable.md) kullanılacağına ilişkin örnek için bkz.
+**Dispınterface**'in nasıl [kullanılacağına ilişkin örnek için bkz](bindable.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -50,7 +50,7 @@ dispinterface helloPro
 |-|-|
 |**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

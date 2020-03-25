@@ -2,12 +2,12 @@
 title: Çeviri birimleri ve bağlantı (C++)
 ms.date: 12/11/2019
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-ms.openlocfilehash: dcd66b454da3758996fe827581fe4a73a641407f
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: e4e86dc15280bc7aa079f552014975b7ddc68e51
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301359"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188330"
 ---
 # <a name="translation-units-and-linkage"></a>Çeviri birimleri ve bağlantı
 

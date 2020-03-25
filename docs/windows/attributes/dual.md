@@ -1,21 +1,21 @@
 ---
-title: çift (C++ COM özniteliği)
+title: Dual (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.dual
 helpviewer_keywords:
 - dual attribute
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-ms.openlocfilehash: 8f02f6b69b31f10b41d5c920cfc2ad62dfa1cef2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66cd6eb9141244397609cc6421ead74d1eb8547e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409687"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168219"
 ---
 # <a name="dual"></a>çift
 
-Bir arabirim çift arabirim .idl dosyasına yerleştirir.
+. IDL dosyasına bir arabirimi çift arabirim olarak koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir arabirim çift arabirim .idl dosyasına yerleştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **çift** C++ özniteliği önündeki bir arabirim, oluşturulan .idl dosyasındaki kitaplığı bloğunun yerleştirilecek arabirimi neden olur.
+**Dual** C++ özniteliği bir arabirimden önceyse, arabirimin oluşturulan. IDL dosyasındaki kitaplık bloğunun içine yerleştirilmesine neden olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodu kullanan bir öznitelik bloğudur **çift** arabirimi tanımından önce:
+Aşağıdaki kod, bir arabirim tanımından önce **çift** kullanan bir öznitelik bloğuna sahiptir:
 
 ```cpp
 // cpp_attr_ref_dual.cpp
@@ -59,12 +59,12 @@ __interface IStatic : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|`dispinterface`|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

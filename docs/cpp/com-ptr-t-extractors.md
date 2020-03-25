@@ -20,16 +20,16 @@ helpviewer_keywords:
 - extractors, _com_ptr_t class
 - extractors [C++]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
-ms.openlocfilehash: bac1f9a139d2fb0092ef0869587ae8b54342fe82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31ac39104c041d1d119f6cd06de5f9c4a620dac0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399336"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190033"
 ---
-# <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
+# <a name="_com_ptr_t-extractors"></a>_com_ptr_t Ayıklayıcıları
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
 Kapsüllenmiş COM arabirimi işaretçisini ayıklayın.
 
@@ -46,19 +46,19 @@ operator bool( ) const throw( );
 
 ## <a name="remarks"></a>Açıklamalar
 
-- **işleç arabirimi** <strong>\*</strong> NULL olabilecek kapsüllenmiş arabirim işaretçisini döndürür.
+- **Işleç arabirimi** <strong>\*</strong> , kapsüllenmiş arabirim IŞARETÇISINI döndürür ve bu null olabilir.
 
-- **işleç arabirimi &** kapsüllenmiş arabirim işaretçisini bir başvuru döndürür ve işaretçi NULL ise, bir hata verir.
+- **operatör arabirimi &** Kapsüllenmiş arabirim işaretçisine bir başvuru döndürür ve işaretçi NULL ise bir hata verir.
 
-- **İşleç** <strong>\*</strong> akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.
+- **işleç** <strong>\*</strong> , bir akıllı işaretçi nesnesinin, başvura başvurulması sırasında gerçek kapsüllenmiş arabirimiymiş gibi davranmasını sağlar.
 
-- **operator ->** akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.
+- **operator->** Bir akıllı işaretçi nesnesinin, başvura başvurulması halinde gerçek kapsüllenmiş arabirimiymiş gibi davranmasını sağlar.
 
-- **işleç &** NULL'ile değiştirerek, herhangi bir kapsüllenmiş arabirim işaretçisini serbest bırakır ve kapsüllenmiş işaretçiye adresini döndürür. Bu akıllı işaretçinin sahip bir işleve adres tarafından geçirilecek sağlar bir *kullanıma* bir arabirim işaretçisi döndürmesini parametresi.
+- **işleç &** Herhangi bir kapsüllenmiş arabirim işaretçisini serbest bırakır, NULL ile değiştirir ve kapsüllenmiş işaretçinin adresini döndürür. Bu, akıllı işaretçinin, bir arabirim işaretçisi döndürdüğü bir *Out* parametresi olan bir işleve adres ile geçirilmesini sağlar.
 
-- **işleç bool değeri** akıllı işaretçi nesnesinin koşullu ifadede kullanılmasını sağlar. Bu işleç, işaretçi NULL değilse, TRUE döndürür.
+- **işleç bool** Bir koşullu ifadede akıllı işaretçi nesnesinin kullanılmasına izin verir. İşaretçi NULL değilse bu işleç TRUE değerini döndürür.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

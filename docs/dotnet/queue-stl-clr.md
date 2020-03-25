@@ -57,12 +57,12 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-ms.openlocfilehash: 08f90ef6be7a5eeb560add9c60a6578057fbb310
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 5339472574bced99d833a0b60e8b72b10b0fa989
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447518"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80208370"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 
@@ -150,7 +150,7 @@ Nesnesi, `Value` öğelerini depolayan ve isteğe bağlı olarak büyüdüğü `
 
 ## <a name="members"></a>Üyeler
 
-## <a name="assign"></a>Queue:: Assign (STL/CLR)
+## <a name="queueassign-stlclr"></a><a name="assign"></a>Queue:: Assign (STL/CLR)
 
 Tüm öğeleri değiştirir.
 
@@ -204,7 +204,7 @@ a b c
 a b c
 ```
 
-## <a name="back"></a>Queue:: Back (STL/CLR)
+## <a name="queueback-stlclr"></a><a name="back"></a>Queue:: Back (STL/CLR)
 
 Son öğeye erişir.
 
@@ -256,7 +256,7 @@ back() = c
 a b x
 ```
 
-## <a name="back_item"></a>Queue:: back_item (STL/CLR)
+## <a name="queueback_item-stlclr"></a><a name="back_item"></a>Queue:: back_item (STL/CLR)
 
 Son öğeye erişir.
 
@@ -308,7 +308,7 @@ back_item = c
 a b x
 ```
 
-## <a name="const_reference"></a>Queue:: const_reference (STL/CLR)
+## <a name="queueconst_reference-stlclr"></a><a name="const_reference"></a>Queue:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -352,7 +352,7 @@ int main()
 a b c
 ```
 
-## <a name="container_type"></a>Queue:: container_type (STL/CLR)
+## <a name="queuecontainer_type-stlclr"></a><a name="container_type"></a>Queue:: container_type (STL/CLR)
 
 Temel alınan kapsayıcının türü.
 
@@ -394,7 +394,7 @@ int main()
 a b c
 ```
 
-## <a name="difference_type"></a>sıra::d ifference_type (STL/CLR)
+## <a name="queuedifference_type-stlclr"></a><a name="difference_type"></a>sıra::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -452,7 +452,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="empty"></a>Queue:: Empty (STL/CLR)
+## <a name="queueempty-stlclr"></a><a name="empty"></a>Queue:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -506,7 +506,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="front"></a>Queue:: Front (STL/CLR)
+## <a name="queuefront-stlclr"></a><a name="front"></a>Queue:: Front (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -558,7 +558,7 @@ front() = a
 x b c
 ```
 
-## <a name="front_item"></a>Queue:: front_item (STL/CLR)
+## <a name="queuefront_item-stlclr"></a><a name="front_item"></a>Queue:: front_item (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -610,7 +610,7 @@ front_item = a
 x b c
 ```
 
-## <a name="generic_container"></a>Queue:: generic_container (STL/CLR)
+## <a name="queuegeneric_container-stlclr"></a><a name="generic_container"></a>Queue:: generic_container (STL/CLR)
 
 Kapsayıcı bağdaştırıcısının genel arabiriminin türü.
 
@@ -673,7 +673,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="generic_value"></a>Queue:: generic_value (STL/CLR)
+## <a name="queuegeneric_value-stlclr"></a><a name="generic_value"></a>Queue:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -731,7 +731,7 @@ a b c
 a b c
 ```
 
-## <a name="get_container"></a>Queue:: get_container (STL/CLR)
+## <a name="queueget_container-stlclr"></a><a name="get_container"></a>Queue:: get_container (STL/CLR)
 
 Temel alınan kapsayıcıya erişir.
 
@@ -772,7 +772,7 @@ int main()
 a b c
 ```
 
-## <a name="op_as"></a>Queue:: operator = (STL/CLR)
+## <a name="queueoperator-stlclr"></a><a name="op_as"></a>Queue:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
@@ -826,7 +826,7 @@ a b c
 a b c
 ```
 
-## <a name="pop"></a>sıra::p op (STL/CLR)
+## <a name="queuepop-stlclr"></a><a name="pop"></a>sıra::p op (STL/CLR)
 
 Son öğeyi kaldırır.
 
@@ -874,7 +874,7 @@ a b c
 b c
 ```
 
-## <a name="push"></a>sıra::p USH (STL/CLR)
+## <a name="queuepush-stlclr"></a><a name="push"></a>sıra::p USH (STL/CLR)
 
 Yeni bir son öğe ekler.
 
@@ -915,7 +915,7 @@ int main()
 a b c
 ```
 
-## <a name="queue"></a>Queue:: Queue (STL/CLR)
+## <a name="queuequeue-stlclr"></a><a name="queue"></a>Queue:: Queue (STL/CLR)
 
 Kapsayıcı bağdaştırıcı nesnesi oluşturur.
 
@@ -1008,7 +1008,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="reference"></a>Queue:: Reference (STL/CLR)
+## <a name="queuereference-stlclr"></a><a name="reference"></a>Queue:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -1057,7 +1057,7 @@ a b c
 a b x
 ```
 
-## <a name="size"></a>Queue:: size (STL/CLR)
+## <a name="queuesize-stlclr"></a><a name="size"></a>Queue:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -1111,7 +1111,7 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="size_type"></a>Queue:: size_type (STL/CLR)
+## <a name="queuesize_type-stlclr"></a><a name="size_type"></a>Queue:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -1160,7 +1160,7 @@ a b c
 size difference = 2
 ```
 
-## <a name="to_array"></a>Queue:: to_array (STL/CLR)
+## <a name="queueto_array-stlclr"></a><a name="to_array"></a>Queue:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -1210,7 +1210,7 @@ a b c d
 a b c
 ```
 
-## <a name="value_type"></a>Queue:: value_type (STL/CLR)
+## <a name="queuevalue_type-stlclr"></a><a name="value_type"></a>Queue:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -1255,7 +1255,7 @@ int main()
 a b c
 ```
 
-## <a name="op_neq"></a>işleç! = (kuyruk) (STL/CLR)
+## <a name="operator-queue-stlclr"></a><a name="op_neq"></a>işleç! = (kuyruk) (STL/CLR)
 
 Kuyruk eşit değil karşılaştırması.
 
@@ -1326,7 +1326,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a>işleç&lt; (kuyruk) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a>işleç&lt; (kuyruk) (STL/CLR)
 
 Sıra karşılaştırmadan daha az.
 
@@ -1397,7 +1397,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a>işleç&lt;= (kuyruk) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (kuyruk) (STL/CLR)
 
 Kuyruk küçüktür veya eşittir karşılaştırması.
 
@@ -1468,7 +1468,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="op_eq"></a>operator = = (Queue) (STL/CLR)
+## <a name="operator-queue-stlclr"></a><a name="op_eq"></a>operator = = (Queue) (STL/CLR)
 
 Kuyruk eşit karşılaştırması.
 
@@ -1539,7 +1539,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a>işleç&gt; (kuyruk) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a>işleç&gt; (kuyruk) (STL/CLR)
 
 Sıra karşılaştırmadan daha büyük.
 
@@ -1610,7 +1610,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a>işleç&gt;= (kuyruk) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (kuyruk) (STL/CLR)
 
 Sıra daha büyük veya eşit karşılaştırması.
 

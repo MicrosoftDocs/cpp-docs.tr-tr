@@ -1,35 +1,35 @@
 ---
-title: Derleyici öznitelikleri (C++ COM)
+title: Derleyici öznitelikleri (C++ com)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - cl.exe compiler, attributes
 - attributes [C++/CLI], compiler
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
-ms.openlocfilehash: ea4d3119a640c0642664210384c297e011104411
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8eb15645049085acc047e41d0a4ea769d359871
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148308"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168285"
 ---
 # <a name="compiler-attributes"></a>Derleyici Öznitelikleri
 
-Derleyici öznitelikleri işlevleri çeşitli sağlar.
+Derleyici öznitelikleri çeşitli işlevler sağlar.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[emitidl](emitidl.md)|Tüm sonraki IDL öznitelikleri işlem görüp oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirler.|
+|[emitidl](emitidl.md)|Sonraki tüm IDL özniteliklerinin işlenip işlenmeyeceğini ve oluşturulan. IDL dosyasına yerleştirilip yerleştirilmeyeceğini belirler.|
 |[event_receiver](event-receiver.md)|Bir olay alıcısı oluşturur.|
-|[event_source](event-source.md)|Olay kaynağı oluşturur.|
-|[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
-|[implements](implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|
-|[importidl](importidl.md)|Belirtilen .idl dosyası oluşturulan .idl dosyasına ekler.|
-|[importlib](importlib.md)|Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.|
-|[includelib](includelib-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.|
-|[library_block](library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
-|[no_injected_text](no-injected-text.md)|Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.|
-|[satype](satype.md)|Veri türü belirtir `SAFEARRAY`.|
-|[version](version-cpp.md)|Belirli bir sürüm arasında bir arabirim veya sınıf birden çok sürümünü tanımlar.|
+|[event_source](event-source.md)|Bir olay kaynağı oluşturur.|
+|[export](export.md)|Veri yapısının. IDL dosyasına yerleştirilmesine neden olur.|
+|[implements](implements-cpp.md)|IDL coclass 'ın üyeleri olmaya zorlanan dağıtım arabirimlerini belirtir.|
+|[importidl](importidl.md)|Belirtilen. IDL dosyasını oluşturulan. IDL dosyasına ekler.|
+|[importlib](importlib.md)|Oluşturulan tür kitaplığı için kullanılabilir başka bir tür kitaplığına derlenmiş olan türleri oluşturur.|
+|[includelib](includelib-cpp.md)|Oluşturulan. IDL dosyasına bir. IDL veya. h dosyasının eklenmesine neden olur.|
+|[library_block](library-block.md)|. IDL dosyasının Kitaplık bloğunun içine bir yapı koyar.|
+|[no_injected_text](no-injected-text.md)|Öznitelik kullanımı sonucu olarak derleyicinin ekleme kodundan yapılmasını engeller.|
+|[satype](satype.md)|`SAFEARRAY`veri türünü belirtir.|
+|[version](version-cpp.md)|Bir arabirimin veya sınıfın birden çok sürümü arasında belirli bir sürümü tanımlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
