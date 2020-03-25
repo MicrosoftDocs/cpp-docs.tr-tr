@@ -1,43 +1,43 @@
 ---
-title: Derleyici Hatası C3409
+title: Derleyici hatası C3409
 ms.date: 11/06/2018
 f1_keywords:
 - C3409
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: 24f107e0c1f74f95afc521c8a4c888a26a35c13a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ab2e0d152e4c123fa23512bc0111cebd070b3ee
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173398"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200870"
 ---
-# <a name="compiler-error-c3409"></a>Derleyici Hatası C3409
+# <a name="compiler-error-c3409"></a>Derleyici hatası C3409
 
 > boş öznitelik bloğuna izin verilmiyor
 
 ## <a name="remarks"></a>Açıklamalar
 
-Köşeli ayraç derleyici tarafından yorumlanan bir [özniteliği](../../windows/attributes-alphabetical-reference.md) blok, ancak hiç öznitelik bulunamadı.
+Köşeli parantezler, derleyici tarafından [öznitelik](../../windows/attributes-alphabetical-reference.md) bloğu olarak yorumlanmıştı, ancak hiç öznitelik bulunamadı.
 
-Köşeli ayraçlar bir lambda ifadesinin tanımının bir parçası kullandığınızda, derleyici bu hatayı oluşturabilir. Derleyici köşeli ayraç bir lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemiyor. Bu hata oluşur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
+Bir lambda ifadesinin tanımının bir parçası olarak köşeli parantezleri kullandığınızda derleyici bu hatayı oluşturabilir. Derleyici köşeli ayracın bir lambda ifadesinin veya bir öznitelik bloğunun tanımının bir parçası olup olmadığını belirleyemediğinde bu hata oluşur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Köşeli ayraç öznitelik bloğuna parçası ise:
+1. Köşeli parantezler bir öznitelik bloğunun parçasıysa:
 
-   1. Öznitelikler, bir veya daha fazla öznitelik bloğunda sağlar.
+   1. Öznitelik bloğunda bir veya daha fazla öznitelik sağlayın.
 
    1. Öznitelik bloğunu kaldırın.
 
-1. Köşeli ayraç bir lambda ifadesinin parçası ise lambda ifadesi geçerli sözdizimi kurallarına uyduğundan emin olun.
+1. Köşeli parantezler bir lambda ifadesinin parçasıysa, lambda ifadesinin geçerli sözdizimi kurallarına uyduğundan emin olun.
 
-   Lambda ifadesi söz dizimi hakkında daha fazla bilgi için bkz: [Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md).
+   Lambda ifade sözdizimi hakkında daha fazla bilgi için bkz. [lambda Ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3409 oluşturur.
+Aşağıdaki örnek C3409 oluşturur.
 
 ```cpp
 // C3409.cpp
@@ -56,7 +56,7 @@ class b : public x {};
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir lambda ifadesi kullandığından C3409 oluşturur `mutable` belirtimi, ancak parametre listesini sağlamaz. Derleyici, köşeli ayraç bir lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemiyor.
+Aşağıdaki örnek C3409 oluşturur çünkü bir lambda ifadesi `mutable` belirtimini kullandığından, ancak bir parametre listesi sağlamıyor. Derleyici, köşeli ayracın bir lambda ifadesinin veya bir öznitelik bloğunun tanımının bir parçası olup olmadığını belirleyemiyor.
 
 ```cpp
 // C3409b.cpp

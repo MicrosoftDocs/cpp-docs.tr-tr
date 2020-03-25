@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C1209
 ms.assetid: aa9ee10f-abe3-4683-9792-adca4cbbabb5
-ms.openlocfilehash: 8b23ae3459178937c6af7ccb5c8ee882dd508c93
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0948debc2573ace269419641ca8facd495792341
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375073"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203443"
 ---
 # <a name="fatal-error-c1209"></a>Önemli hata C1209
 
-Arkadaş derlemeler yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
+Friend derlemeleri yüklü çalışma zamanının sürümü tarafından desteklenmiyor
 
-Geçerli sürümde, ancak bir ortak dil çalışma zamanının önceki bir sürümden bir derleyici olduğunda C1208 gerçekleşir.
+C1208, geçerli sürüm için bir derleyicisini, ancak önceki sürümden ortak dil çalışma zamanını kullandığınızda oluşur.
 
-Bazı işlevler derleyicinin önceki bir çalışma zamanı sürümünü çalışmayabilir.
+Derleyicinin bazı işlevleri çalışma zamanının önceki bir sürümünde çalışmayabilir.
 
-C1209 gidermek için kullanmakta olduğunuz derleyici ile birlikte ortak dil çalışma zamanı yükleyin.
+C1209 çözümlemek için, kullandığınız derleyiciyle birlikte gelen ortak dil çalışma zamanını yükleyebilirsiniz.
 
-Daha fazla bilgi için [arkadaş derlemeler (C++)](../../dotnet/friend-assemblies-cpp.md).
+Daha fazla bilgi için bkz. [arkadaş derlemelerC++()](../../dotnet/friend-assemblies-cpp.md).

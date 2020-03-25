@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C4057
 ms.assetid: e75d0645-84c9-4bef-a812-942ed9879aa3
-ms.openlocfilehash: 234223ee7b6a031dd9e2c0fc88ccbbdba05beb3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 45d2db56a7b0fc871de60743954012faf0f5c366
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401442"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185392"
 ---
 # <a name="compiler-warning-level-4-c4057"></a>Derleyici Uyarısı (düzey 4) C4057
 
-'operator': 'identifier2' öğesinden 'ıdentifier1' yöneltme için biraz farklı taban türlerden farklı
+' operator ': ' Identifier1 ', ' identifier2 ' öğesinden biraz farklı temel türlere yöneltme
 
-İşaretçi ifadeleri iki farklı temel türlere başvurur. İfadeler, dönüştürme olmadan kullanılır.
+İki işaretçi ifadesi farklı temel türlere başvurur. İfadeler dönüştürme olmadan kullanılır.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. İmzalı ve imzasız türlerini karıştırmak.
+1. İmzalanmış ve imzasız türleri karıştırın.
 
-1. Karıştırma **kısa** ve **uzun** türleri.
+1. **Kısa** ve **uzun** türleri karıştırma.

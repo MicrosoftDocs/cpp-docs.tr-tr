@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - D9036
 ms.assetid: 68276e84-8d4e-4d4a-a9db-2874c81dfe66
-ms.openlocfilehash: 2dd6cd528f6a3799176c77435ebd62d103303806
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16e97819c7e3752285b8f8caa69517d5a06a4701
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62213802"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196631"
 ---
 # <a name="command-line-warning-d9036"></a>Komut Satırı Uyarısı D9036
 
-> '*seçeneği\_2*'veya'*seçeneği\_1*'
+> ' Option *\_1*' yerine '*Option\_2*'
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uyarısı D9036 devamı olan [komut satırı uyarısı D9035](../../error-messages/tool-errors/command-line-warning-d9035.md). Bir derleyici seçeneği kullanım dışı seçeneği yerine tercih edilir, burada listelenir. Daha fazla bilgi için bağlantılar için bkz: [kullanım dışı ve kaldırılan derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options).
+Uyarı D9036, [komut satırı uyarısının D9035](../../error-messages/tool-errors/command-line-warning-d9035.md)bir devamıdır. Kullanım dışı seçeneği yerine bir derleyici seçeneği tercih edilirse, burada listelenir. Daha fazla bilgi için bkz. [kullanım dışı ve kaldırılmış derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanım dışı ve kaldırılan derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)<br/>
+[Kullanım dışı ve kaldırılmış derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)<br/>
 [Komut Satırı Uyarısı D9035](command-line-warning-d9035.md)

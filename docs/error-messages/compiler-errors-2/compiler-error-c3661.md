@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C3661
+title: Derleyici hatası C3661
 ms.date: 11/04/2016
 f1_keywords:
 - C3661
 helpviewer_keywords:
 - C3661
 ms.assetid: 50793fd1-1829-4b29-ad0d-094ef2068b43
-ms.openlocfilehash: e171914bcfd6c59d45a21ca2c005cd41f9a071a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5edda7eaf50dc4fca60f47128dc97de5d3a1a395
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397347"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200383"
 ---
-# <a name="compiler-error-c3661"></a>Derleyici Hatası C3661
+# <a name="compiler-error-c3661"></a>Derleyici hatası C3661
 
-açık geçersiz kılma listesi geçersiz kılmak için herhangi bir yöntem bulamadı
+Açık geçersiz kılma listesi geçersiz kılınacak herhangi bir yöntem bulamadı
 
-Açık bir geçersiz kılma bir veya daha fazla tür adları belirtildi.  Ancak, gerekli imza geçersiz kılma işlev imzası eşleşen türleri olan hiçbir işlev vardı.  Tür adına bağlı geçersiz kılma girişiminde bulunursanız, geçersiz kılma işlev imzası eşleşen belirtilen türleri bir veya daha fazla sanal işlevi olmalıdır.
+Açık bir geçersiz kılma bir veya daha fazla tür adı belirtti.  Ancak, geçersiz kılan işlevin imzasıyla eşleşen tür (ler) de gerekli imzaya sahip bir işlev yoktu.  Tür adına göre geçersiz kılmaya çalışırsanız, belirtilen tür (ler) de geçersiz kılma işlevinin imzasıyla eşleşen bir veya daha fazla sanal işlev olmalıdır.
 
-Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).

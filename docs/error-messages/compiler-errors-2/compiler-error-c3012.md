@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3012
+title: Derleyici hatası C3012
 ms.date: 11/04/2016
 f1_keywords:
 - C3012
 helpviewer_keywords:
 - C3012
 ms.assetid: cc7040b1-b3fb-4da6-a474-877914d30332
-ms.openlocfilehash: 9fe0ac7d3637cad3a5571c4631345dac1a0021bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69f0544815804e9827631be81bf9735a95bd1a22
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386739"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176708"
 ---
-# <a name="compiler-error-c3012"></a>Derleyici Hatası C3012
+# <a name="compiler-error-c3012"></a>Derleyici hatası C3012
 
-> '*iç*': iç işlev doğrudan bir paralel bölgenin içinde izin verilmiyor
+> '*Intrinsic*': doğrudan bir paralel bölgenin içinde iç işleve izin verilmiyor
 
-A [iç derleyici](../../intrinsics/compiler-intrinsics.md) işlevine izin verilmiyor bir `omp parallel` bölge. Bu sorunu gidermek için yapı içleri bölgesinin dışına taşıyın veya bunları iç olmayan eşdeğerleriyle değiştirin.
+Bir `omp parallel` bölgesinde [derleyici iç](../../intrinsics/compiler-intrinsics.md) işlevine izin verilmez. Bu sorunu onarmak için, iç öğeleri bölgenin dışına taşıyın veya gerçek olmayan eşdeğerleriyle değiştirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3012 oluşturur ve bunu çözmenin yollarından biri gösterilmektedir:
+Aşağıdaki örnek C3012 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```cpp
 // C3012.cpp

@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4199
 ms.assetid: 724f1ca8-ee9a-4ca3-b5c6-c0284a5195e7
-ms.openlocfilehash: 8d6967d47f63399b881674a09ef3a7c400aa46aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dac6659ec03c4e64b1dc6f21db35fc23560dbde5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396956"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193920"
 ---
 # <a name="linker-tools-warning-lnk4199"></a>Bağlayıcı Araçları Uyarısı LNK4199
 
-/DELAYLOAD:dllname; yoksayıldı içeri aktarma dll bulunamadı
+/DELAYLOAD: DLLAdı yoksayıldı; DLL adı içinden içeri aktarma bulunamadı
 
-Bağlayıcı yok sayar `dllname` işlevlerden herhangi birinin gerekmediği için `dllname` dışarı aktarır.
+Bağlayıcı, `dllname` dışarı aktardığı işlevlerden herhangi birine ihtiyaç duymadığı için `dllname` yoksayar.

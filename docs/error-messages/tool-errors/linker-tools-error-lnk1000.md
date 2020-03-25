@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1000
 ms.assetid: 86421b9a-460a-4285-8dce-9b8257d78122
-ms.openlocfilehash: b0e6eb3ba44216e9300506eb84adb61a6529903d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48b976f6e996d0e076849dc9b20b4cedd47dfbcd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255479"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195428"
 ---
 # <a name="linker-tools-error-lnk1000"></a>Bağlayıcı Araçları Hatası LNK1000
 
-> Bilinmeyen hata; Teknik destek seçenekleri için belgelere bakın
+> Bilinmeyen hata; Teknik destek seçenekleri için belgelere danışın
 
-Hatanın koşullara dikkat edin ve yalıtmak ve tekrarlanabilir bir test çalışması oluşturmak deneyin. Araştırmak ve bu hata raporu hakkında daha fazla bilgi için bkz: [belgeleri ve Visual C++ araç takımı ile ilgili bir sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+Hatanın durumunu göz önünde tutun, ardından sorunu yalıtmak ve tekrarlanabilir bir test çalışması oluşturmak için deneyin. Bu hataları araştırmak ve raporlamak hakkında daha fazla bilgi için bkz. [Visual C++ araç takımı veya belgelerde sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
-Standart üst bilgi dosyaları (örneğin, Windows.h) ve kendi dosyaları karışımı varsa bu hatayı alabilirsiniz. Kendi üst bilgi dosyaları tarafından izlediyseniz herhangi, ilk sonra standart üstbilgileri önceden derlenmiş üst bilgi içerir.
+Standart üst bilgi dosyalarını (örneğin, Windows. h) ve kendi dosyalarınızı karıştırırsanız bu hatayı alabilirsiniz. Önceden derlenmiş bir üst bilgi (varsa), ardından standart üstbilgiler ve ardından kendi başlık dosyalarınız ekleyin.

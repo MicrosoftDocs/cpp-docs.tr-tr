@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - U1051
 ms.assetid: fede5cd5-dac3-47b7-b86d-e1acfb78699f
-ms.openlocfilehash: ddf1d262fb8dfc6e63b0bf5cc098b7b140539310
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c6b939c97f993e42049677292374377d825d474
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367206"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193686"
 ---
 # <a name="nmake-fatal-error-u1051"></a>NMAKE Önemli Hatası U1051
 
-Bellek yetersiz
+yetersiz bellek
 
-NMAKE derleme görevleri dosyası çok büyük veya karmaşık olduğundan, sanal bellek dahil olmak üzere, bellek yetersiz kaldı.
+Derleme görevleri dosyası çok büyük veya karmaşık olduğundan, sanal bellek dahil olmak üzere NMAKE belleği tükendi.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
-1. Disk üzerinde biraz alan boşaltın.
+1. Diskte boş alan boşaltın.
 
-1. Windows NT disk belleği dosyası ya da Windows takas dosyası boyutunu artırın.
+1. Windows NT disk belleği dosyasının veya Windows takas dosyasının boyutunu artırın.
 
-1. Yalnızca derleme görevleri dosyası parçası kullanılan derleme görevleri dosyası ayrı dosyalara bölün veya kullanın **! Eğer** ön işleme NMAKE işlemelisiniz tutarını sınırlamak için yönergeleri. **! Eğer** yönergelerinde **! Eğer**, `!IFDEF`, **! IFNDEF**, **! ELSE IF**, **! BAŞKA** `IFDEF`, ve **! BAŞKA** `IFNDEF`.
+1. Derleme görevleri dosyasının yalnızca bir kısmı kullanılıyorsa, derleme görevleri dosyasını ayrı dosyalara bölün veya kullanın **! Eğer** , NMAKE 'in işlemesi gereken miktarı sınırlamak için ön işleme yönergeleri. **! Yönergeler IÇERIYORSA** **! Eğer**, `!IFDEF`, **! IFNDEF**, **! AKSI TAKDIRDE**, **! ELSE** `IFDEF`ve **! ELSE** `IFNDEF`.

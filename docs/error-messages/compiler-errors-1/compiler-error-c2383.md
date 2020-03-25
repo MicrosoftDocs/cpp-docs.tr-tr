@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2383
+title: Derleyici hatası C2383
 ms.date: 11/04/2016
 f1_keywords:
 - C2383
 helpviewer_keywords:
 - C2383
 ms.assetid: 6696221d-879c-477a-a0f3-a6edc15fd3d7
-ms.openlocfilehash: e9c1774fe7cd4a6883aa79f384cc64521a57ed17
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 2aa922ebeadb374a7eac73a0f452376472b00984
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448011"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80206034"
 ---
-# <a name="compiler-error-c2383"></a>Derleyici Hatası C2383
+# <a name="compiler-error-c2383"></a>Derleyici hatası C2383
 
-'*sembol*': Bu Simgede varsayılan bağımsız değişkenlere izin verilmez
+'*symbol*': Bu sembolde varsayılan bağımsız değişkenlere izin verilmiyor
 
-C++ derleyicisi işlev işaretçileri varsayılan bağımsız değişkenler görülmez.
+Derleyici C++ , işlevlere yönelik işaretçilerde varsayılan bağımsız değişkenlere izin vermez.
 
-Bu kod, Microsoft tarafından kabul edildi C++ derleyici Visual Studio 2005 öncesi sürümlerinde, ancak şimdi bir hata verir. Visual C++'ın tüm sürümlerinde çalışan kod için bir işaretçi işlevi bağımsız değişkeni için varsayılan bir değer atamayın.
+Bu kod, Visual Studio 2005 ' C++ den önceki sürümlerde Microsoft derleyicisi tarafından kabul edildi, ancak şimdi bir hata veriyor. Tüm görsellerde C++çalışır olan kod için, bir işaretçiden işleve bağımsız değişkenine varsayılan değer atamayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2383 oluşturur ve olası bir çözüm gösterilmektedir:
+Aşağıdaki örnek C2383 oluşturur ve olası bir çözümü gösterir:
 
 ```cpp
 // C2383.cpp

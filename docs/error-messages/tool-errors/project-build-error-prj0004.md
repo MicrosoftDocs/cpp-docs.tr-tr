@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0004
 ms.assetid: 1858769f-0be4-40ed-ab70-2cee550488c7
-ms.openlocfilehash: ad11e5b81ec31e1ac8a47a0a0ffa31a443f1a107
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66fccc0d5095373d44b823334402f3188dd1777e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359767"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192919"
 ---
 # <a name="project-build-error-prj0004"></a>Proje Derleme Hatası PRJ0004
 
-> Komut satırı oluşturulamadı. '*aracı*' aracı.
+> '*Araç*' aracı için komut satırı üretilemedi.
 
-Bir veya daha fazla özellik çağırma söz dizimi olun şekilde belirtilmiş *aracı* geçersiz:
+Bu tür bir veya daha fazla özellik, bir *Aracı* çağrısının sözdizimini geçersiz hale getirmek için bir şekilde belirtilmiştir:
 
 - Hatalı biçimlendirilmiş veya bilinmeyen makrolar belirtmiş olabilirsiniz.
 
-- Bilgisayarınızı boş disk alanı yetersiz olabilir.
+- Bilgisayarınızda boş disk alanı azalmış olabilir.
 
-Bakarak aracı için ayarları gözden geçirmek isteyebileceğiniz [komut satırı özellik sayfası](../../build/reference/command-line-property-pages.md).
+[Komut satırı özellik sayfasına](../../build/reference/command-line-property-pages.md)bakarak aracın ayarlarını gözden geçirmek isteyebilirsiniz.

@@ -40,16 +40,16 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: b34a6300473db94621360f1d04fd73ddd7e8bd69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72797411b100480a06e27b71b000264070e57e32
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366465"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211139"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 
-Bir tek veritabanı erişim oturumu temsil eder.
+Tek bir veritabanı erişim oturumunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,7 +59,7 @@ class CSession
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -67,20 +67,20 @@ class CSession
 
 |||
 |-|-|
-|[Abort](#abort)|İptal (sonlandırır) işlem.|
-|[Kapat](#close)|Bir oturumu kapatır.|
-|[İşleme](#commit)|hareketi tamamlar.|
-|[GetTransactionInfo](#gettransactioninfo)|Bir işlem ile ilgili bilgileri döndürür.|
-|[açın](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
-|[StartTransaction](#starttransaction)|Bu oturum için yeni bir işlem başlar.|
+|[Abort](#abort)|İşlemi iptal eder (sonlandırır).|
+|[~Eksik](#close)|Oturumu kapatır.|
+|[Uygulayın](#commit)|İşlemi kaydeder.|
+|[GetTransactionInfo](#gettransactioninfo)|Bir işlemle ilgili bilgileri döndürür.|
+|[Açın](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
+|[StartTransaction](#starttransaction)|Bu oturum için yeni bir işlem başlatır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazla oturum ilişkilendirilebilir tarafından temsil edilen her sağlayıcı bağlantısı (veri kaynağı) ile bir [CDataSource](../../data/oledb/cdatasource-class.md) nesne. Yeni bir `CSession` için bir `CDataSource`, çağrı [CSession::Open](../../data/oledb/csession-open.md). Bir veritabanı işlemi başlatamadığı için `CSession` sağlar `StartTransaction` yöntemi. Bir işlem başlatıldıktan sonra onu kullanarak yürütülemez `Commit` yöntemi kullanarak iptal `Abort` yöntemi.
+Bir veya daha fazla oturum, bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi tarafından temsil edilen her bir sağlayıcı bağlantısıyla (veri kaynağı) ilişkilendirilebilir. Bir `CDataSource`için yeni bir `CSession` oluşturmak için [CSession:: Open](../../data/oledb/csession-open.md)çağırın. Bir veritabanı işlemine başlamak için `CSession` `StartTransaction` yöntemi sağlar. Bir işlem başlatıldıktan sonra, `Commit` metodunu kullanarak bu işleme veya `Abort` metodunu kullanarak iptal edebilirsiniz.
 
-## <a name="abort"></a> CSession::Abort
+## <a name="csessionabort"></a><a name="abort"></a>CSession:: Abort
 
-İşlem sona erer.
+İşlemi sonlandırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -92,15 +92,15 @@ HRESULT Abort(BOID* pboidReason = NULL,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda*bkz. [ITransaction:: Abort](/previous-versions/windows/desktop/ms709833(v=vs.85)) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
-## <a name="close"></a> CSession::Close
+## <a name="csessionclose"></a><a name="close"></a>CSession:: Close
 
-Tarafından açılmış oturumu [CSession::Open](../../data/oledb/csession-open.md).
+[CSession:: Open](../../data/oledb/csession-open.md)tarafından açılan oturumu kapatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -110,11 +110,11 @@ void Close() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yayınları `m_spOpenRowset` işaretçi.
+`m_spOpenRowset` işaretçisini serbest bırakır.
 
-## <a name="commit"></a> CSession::Commit
+## <a name="csessioncommit"></a><a name="commit"></a>CSession:: COMMIT
 
-hareketi tamamlar.
+İşlemi kaydeder.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -126,19 +126,19 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ITransaction::Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ITransaction:: COMMIT](/previous-versions/windows/desktop/ms713008(v=vs.85)) öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [ITransaction::Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)).
+Daha fazla bilgi için bkz. [ITransaction:: COMMIT](/previous-versions/windows/desktop/ms713008(v=vs.85)).
 
-## <a name="gettransactioninfo"></a> CSession::gettransactionınfo
+## <a name="csessiongettransactioninfo"></a><a name="gettransactioninfo"></a>CSession:: GetTransactionInfo
 
-Bir işlem ile ilgili bilgileri döndürür.
+Bir işlemle ilgili bilgileri döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -148,17 +148,17 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ITransaction:: GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Daha fazla bilgi için *OLE DB Programcı başvurusunda* [ITransaction:: GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) bölümüne bakın.
 
-## <a name="open"></a> CSession::Open
+## <a name="csessionopen"></a><a name="open"></a>CSession:: Open
 
 Veri kaynağı nesnesi için yeni bir oturum açar.
 
@@ -172,26 +172,26 @@ HRESULT Open(const CDataSource& ds,
 
 #### <a name="parameters"></a>Parametreler
 
-*DS*<br/>
-[in] Oturum açılacak olan veri kaynağı.
+*FID*<br/>
+'ndaki Oturumun açıldığı veri kaynağı.
 
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın.
 
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
+'ndaki *PPropset* bağımsız değişkeninde geçirilen [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapılarının sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesnesi kullanılarak açmalısınız [CDataSource::Open](../../data/oledb/cdatasource-open.md) öğesine iletmeden önce `CSession::Open`.
+Veri kaynağı nesnesini `CSession::Open`geçirmeden önce [CDataSource:: Open](../../data/oledb/cdatasource-open.md) kullanarak açmanız gerekir.
 
-## <a name="starttransaction"></a> CSession::StartTransaction
+## <a name="csessionstarttransaction"></a><a name="starttransaction"></a>CSession:: StartTransaction
 
-Bu oturum için yeni bir işlem başlar.
+Bu oturum için yeni bir işlem başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -204,18 +204,18 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [ıctionlocal:: StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Daha fazla bilgi için, *OLE DB Programcı başvurusunda* [ıctionlocal:: StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CatDB](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

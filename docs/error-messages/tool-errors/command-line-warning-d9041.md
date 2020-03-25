@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - D9041
 ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
-ms.openlocfilehash: d9a32fbf961e980633635f277a76955a706a4b0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c685a1ca3195ad4ab52bab8b5d32b1a51534b24
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62213789"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196581"
 ---
 # <a name="command-line-warning-d9041"></a>Komut Satırı Uyarısı D9041
 
-geçersiz değer 'value' için '/ seçenek'; ' değeri '; Ekle ' / analyze' Bu uyarıyı belirtirken komut satırı seçenekleri
+'/Option ' için geçersiz değer ' Value '; ' Value ' varsayılıyor; Bu uyarıyı belirtirken komut satırı seçeneklerine '/Analyze ' ekleyin
 
-Kod Analizi uyarı numarası için eklenen **/wd**, **/we**, **/wo**, veya **/wl** dabelirtilmedenkomutsatırıseçeneği **/ analyze** komut satırı seçeneği. Bu hatayı düzeltmek için ya da ekleme **/ analyze** komut satırı seçeneği veya geçersiz bir uyarı numarası uygun kaldırmak **/w** komut satırı seçeneği.
+**/WD**, **/we**, **/Wo**veya **/WL** komut satırı seçeneğine de **/Analyze** komut satırı seçeneği belirtilmeden bir kod analizi uyarı numarası eklendi. Bu hatayı çözmek için, **/Analyze** komut satırı seçeneğini ekleyin veya uygun **/w** komut satırı seçeneğinden geçersiz uyarı numarasını kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek komut satırı uyarısı D9041 oluşturur:
+Aşağıdaki komut satırı örneği, D9041 uyarısını üretir:
 
 ```
 cl /EHsc /LD /wd6001 filename.cpp
 ```
 
-Uyarıyı çözmek için ekleme **/ analyze** komut satırı seçeneği. Varsa **/ analyze** olduğundan derleyici sürümünüze desteklenmiyor, Kaldır geçersiz uyarı numarasını **/wd** seçeneği.
+Uyarıyı onarmak için **/Analyze** komut satırı seçeneğini ekleyin. Derleyici sürümünüzde **/Analyze** desteklenmiyorsa, **/WD** seçeneğinden geçersiz uyarı numarasını kaldırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

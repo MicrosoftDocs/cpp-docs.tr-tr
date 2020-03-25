@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4204
 ms.assetid: 14adda20-0cbe-407b-90f6-9f81c93530e2
-ms.openlocfilehash: 790b0fa25bbf41c38b843e1a2ea757fdc0d10b9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98c53c9b998e9bd544c1cc72bd2b0c3fd2b0a418
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395111"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193868"
 ---
 # <a name="linker-tools-warning-lnk4204"></a>Bağlayıcı Araçları Uyarısı LNK4204
 
-'filename', hata ayıklama başvuru modülü için bilgileri eksik; Nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+' filename ' öğesine başvuran modül için hata ayıklama bilgileri eksik; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 
-.pdb dosyası hatalı imza içeriyor. Bağlayıcı hata ayıklama bilgileri olmadan nesneyi bağlamak devam eder. Nesne dosyası kullanarak derleyin isteyebilirsiniz [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği.
+. Pdb dosyasının imzası hatalı. Bağlayıcı, hata ayıklama bilgileri olmadan nesneyi bağlantılandırmasına devam edecektir. [/Zı](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneğini kullanarak nesne dosyasını yeniden derlemek isteyebilirsiniz.
 
-Bazı nesneler Kitaplığı'nda artık mevcut bir dosyaya başvuruda bulunuyorsa LNK4204 ortaya çıkabilir. Bu çözümün yeniden derlenmesi, örneğin oluşabilir; bir nesne dosyası silindi ve bir derleme hatası nedeniyle yeniden değil. Bu durumda, ya da ile derleme **/z7**, veya **/Fd**, nesneleri bir tek dosya başına (yani varsayılan .pdb dosyası adı değil) Kitaplığı'na başvurmak için güncelleştirilecek.  Daha fazla bilgi için [/Fd (Program veritabanı dosya adı)](../../build/reference/fd-program-database-file-name.md).  Kaynak denetim sistemi güncelleştirildiğinde her kitaplıkla .pdb kaydedildiğinden emin olun.
+Kitaplıktaki nesnelerden bazıları artık mevcut olmayan bir dosyaya LNK4204, bu durum oluşabilir. Çözüm yeniden oluşturulurken bu durum oluşabilir; Örneğin, bir derleme hatası nedeniyle bir nesne dosyası silinebilir ve yeniden oluşturulamaz. Bu durumda, nesneleri kitaplık başına tek bir dosyaya (varsayılan. pdb dosya adı değil) başvuracak şekilde güncelleştirmek için **/Z7**ya da **/FD**ile derleyin.  Daha fazla bilgi için bkz. [/FD (program veritabanı dosya adı)](../../build/reference/fd-program-database-file-name.md).  Kaynak denetim sisteminde her güncelleştirildiği sırada. pdb 'nin kitaplıkla birlikte kaydedildiğinden emin olun.

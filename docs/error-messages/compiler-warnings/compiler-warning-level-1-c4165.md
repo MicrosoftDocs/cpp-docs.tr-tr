@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4165
 ms.assetid: f5bed515-2290-4f88-8dab-b45d95fe26ef
-ms.openlocfilehash: 4d6377730e262efafb38f5e714989e9075a77a04
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb036f7672a074e859d3e19083e256bd80c93578
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391744"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80176110"
 ---
 # <a name="compiler-warning-level-1-c4165"></a>Derleyici Uyarısı (düzey 1) C4165
 
-'HRESULT' 'bool'; dönüştürülüyor budur başlatmak için istediğinize emin misiniz?
+' HRESULT ' ' bool ' olarak dönüştürülüyor; Bunun istediğiniz durum olduğundan emin misiniz?
 
-HRESULT kullanırken bir [varsa](../../cpp/if-else-statement-cpp.md) deyimi, HRESULT dönüştürülecek bir [bool](../../cpp/bool-cpp.md) açıkça değişken olarak bir HRESULT için test sürece. Varsayılan olarak bu uyarıyı kapalıdır.
+Bir [if](../../cpp/if-else-statement-cpp.md) ifadesinde HRESULT kullanırken, DEĞIŞKENI bir hresult olarak açıkça test ETMEDIĞINIZ sürece HRESULT [bool](../../cpp/bool-cpp.md) değerine dönüştürülür. Bu uyarı varsayılan olarak kapalıdır.
 
 ## <a name="example"></a>Örnek
 

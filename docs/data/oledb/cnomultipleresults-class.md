@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CNoMultipleResults class
 ms.assetid: 343e77c4-b319-476e-b592-901ab9b2f34e
-ms.openlocfilehash: 59b7b35c350a37f13e1f253bc1430d69521e4fa8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 793b820264d001fbfbf7920fd322a55b98e90f0d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230392"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211724"
 ---
 # <a name="cnomultipleresults-class"></a>CNoMultipleResults Sınıfı
 
-Bir şablon bağımsız değişken olarak kullanılan (*TMultiple*) için [CCommand](../../data/oledb/ccommand-class.md) tek bir sonuç işler en iyi duruma getirilmiş bir komut oluşturmak için ayarlayın.
+Tek bir sonuç kümesini işleyen iyileştirilmiş bir komut oluşturmak için, [CCommand](../../data/oledb/ccommand-class.md) için bir şablon bağımsız değişkeni (*TMultiple*) olarak kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ class CNoMultipleResults
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birden çok sonuç kümesi işlemek için bir komut istiyorsanız kullanın [CMultipleResults](../../data/oledb/cmultipleresults-class.md) yerine.
+Bir komutun birden çok sonuç kümesini işlemesini istiyorsanız bunun yerine [CMultipleResults](../../data/oledb/cmultipleresults-class.md) kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

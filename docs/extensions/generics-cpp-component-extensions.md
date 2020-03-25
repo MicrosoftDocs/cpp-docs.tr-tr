@@ -1,5 +1,5 @@
 ---
-title: Genel türler (C++/CLI ve C++/CX)
+title: Genel türlerC++(/CLI C++ve/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,51 +8,51 @@ f1_keywords:
 helpviewer_keywords:
 - generics [C++]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
-ms.openlocfilehash: 31998cf77e3f3cfdc6bc19ad2fc57a50da77e0f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29c6b22189ea1f644c0fa52ec0f4d605604361ba
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349497"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181999"
 ---
-# <a name="generics--ccli-and-ccx"></a>Genel türler (C++/CLI ve C++/CX)
+# <a name="generics--ccli-and-ccx"></a>Genel türlerC++(/CLI C++ve/CX)
 
-Genel türler parametreli türler ve yöntemlerin ' dir. Bu bölümde, Windows çalışma zamanı ve ortak dil çalışma zamanı tarafından desteklenen genel hangi özellikler ve hangi yalnızca ortak dil çalışma zamanı tarafından desteklenen öğrenin. Ayrıca, kendi genel yöntemleri ve türleri C + yazmak nasıl kaydolacağınızı +/ CLI ve C + bir .NET Framework dilde yazılan genel türleri kullanmayı +/ CLI. Son olarak, bu bölümde, genel türler ve C++ şablonları karşılaştırması sağlar.
+Genel türler parametreli türlerdir ve yöntemlerdir. Bu bölümde, hem Windows Çalışma Zamanı hem de ortak dil çalışma zamanı tarafından desteklenen ve yalnızca ortak dil çalışma zamanı tarafından desteklenen genel özelliklerin hangilerinin olduğunu öğrenin. Ayrıca, C++/CLI ' da kendi genel yöntemlerinizi ve türlerinizi nasıl yazacağınızı ve/clide C++.NET Framework dilde yazılmış genel türleri nasıl kullanacağınızı öğrenin. Son olarak, bu bölüm, genel türler ve C++ şablonlar karşılaştırması sağlar.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-### <a name="supported-by-the-windows-runtime-and-the-common-language-runtime"></a>Windows çalışma zamanı ve ortak dil çalışma zamanı tarafından desteklenen
+### <a name="supported-by-the-windows-runtime-and-the-common-language-runtime"></a>Windows Çalışma Zamanı ve ortak dil çalışma zamanı tarafından desteklenir
 
-[' De genel türlere genel bakış C++/CLI](overview-of-generics-in-visual-cpp.md)<br/>
-Genel türler hakkında bilgi olan, dil özelliği, genel türler ve kullanımı hakkında genel türler için tür parametreleri olarak bilgi başvuru türleri ve değer türleri tanımlamak için kullanılan terimlerin tanımları için motivasyon.
+[/CLI içindeki C++Genel türlere genel bakış](overview-of-generics-in-visual-cpp.md)<br/>
+Genel türler hakkında bilgi, dil özelliği için mosyon, genel türleri tanımlamakta kullanılan koşulların tanımları, başvuru türlerinin ve değer türlerinin kullanımı hakkındaki bilgiler, genel türler için tür parametreleri olarak.
 
 [Genel Arabirimler (C++/CLI)](generic-interfaces-visual-cpp.md)<br/>
-Genel arabirimleri tanımlama ve kullanma hakkında bilgiler.
+Genel Arabirimleri tanımlama ve kullanma hakkında bilgiler.
 
 [Genel Temsilciler (C++/CLI)](generic-delegates-visual-cpp.md)<br/>
-Tanımlama ve genel temsilcileri kullanma hakkında bilgiler.
+Genel Temsilciler tanımlama ve kullanmayla ilgili bilgiler.
 
 [Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)<br/>
-Sınırlamalar genel türleri kullanma hakkında bilgiler.
+Genel türlerde kısıtlamaları kullanmayla ilgili bilgiler.
 
 [Genel Türleri Kullanma (C++/CLI)](consuming-generics-cpp-cli.md)<br/>
-.NET derlemeleri, büyük olasılıkla C + diğer dillerde yazılmış tanımlanan genel türler kullanma hakkında bilgi +/ CLI.
+.NET derlemelerinde tanımlanan genel türleri kullanma hakkında bilgiler, büyük olasılıkla diğer dillerde yazılmış, C++/cli.
 
 [Genel Türler ve Şablonlar (C++/CLI)](generics-and-templates-visual-cpp.md)<br/>
-Genel türler ve Temsilciler, her ve nasıl usefully birleştirileceğini olduğunda karşılaştırması.
+Genel türler ve şablonlar karşılaştırması, her birinin ne zaman kullanılacağı ve bunları nasıl birleştirebileceğiniz.
 
-### <a name="supported-by-the-common-language-runtime"></a>Ortak dil çalışma zamanı tarafından desteklenen
+### <a name="supported-by-the-common-language-runtime"></a>Ortak dil çalışma zamanı tarafından desteklenir
 
 [Genel İşlevler (C++/CLI)](generic-functions-cpp-cli.md)<br/>
-Tanımlama ve genel işlevler ve yöntemler kullanma hakkında bilgiler.
+Genel işlevleri ve yöntemleri tanımlama ve kullanma hakkında bilgiler.
 
 [Genel Sınıflar (C++/CLI)](generic-classes-cpp-cli.md)<br/>
-Tanımlama ve Genel sınıflar kullanma hakkında bilgiler.
+Genel sınıfları tanımlama ve kullanma hakkında bilgi.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Nasıl yapılır: İle bir genel koleksiyon üzerinden foreach yineleme yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
-Kullanarak [her, içinde](../dotnet/for-each-in.md) anahtar sözcüğü, bir genel koleksiyon.
+[Nasıl yapılır: foreach ile Bir Genel Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
+Bir genel koleksiyonda [for each, ın](../dotnet/for-each-in.md) anahtar sözcüğü kullanılıyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

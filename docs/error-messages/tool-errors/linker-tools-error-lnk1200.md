@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1200
 ms.assetid: 55771145-915e-4006-ac6c-ac702041eb2f
-ms.openlocfilehash: c99b25a83836f1ee0bc6ba622e42ea382c377172
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9dcc37bd74a25e29726529346b1578bb8b18ac3e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62213556"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195142"
 ---
 # <a name="linker-tools-error-lnk1200"></a>Bağlayıcı Araçları Hatası LNK1200
 
-Program Veritabanı 'filename' okunurken hata oluştu
+' filename ' program veritabanı okunurken hata oluştu
 
 Program veritabanı (PDB) okunamadı.
 
-Dosya bozulması nedeniyle bu hatayı neden olabilir.
+Bu hata dosya bozulmasından kaynaklanıyor olabilir.
 
-Varsa `filename` PDB olan nesne dosyası kullanarak bir nesne dosyası için derlemeniz [/zi](../../build/reference/z7-zi-zi-debug-information-format.md).
+Bir nesne dosyası için PDB `filename`, [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md)kullanarak nesne dosyasını yeniden derleyin.
 
-Varsa `filename` ana çıkış dosyası için PDB olduğu ve bir artımlı bağlantı sırasında bu hata oluştu, PDB silip yeniden bağlayın.
+Ana çıkış dosyası için PDB `filename` ve bu hata bir artımlı bağlantı sırasında oluştuysa, PDB 'yi silin ve yeniden bağlayın.

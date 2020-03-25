@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C1211
 ms.assetid: df0ca70d-ec6e-4400-926a-b877e2599978
-ms.openlocfilehash: f39ab027d8d81762ae1cf8f38405f3e21524da2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e01f75877169225d0e6c20b8a36ce55e3c15c4c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397516"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203378"
 ---
 # <a name="fatal-error-c1211"></a>Önemli hata C1211
 
 TypeForwardedTo özel özniteliği yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
 
-Geçerli sürümde, ancak bir ortak dil çalışma zamanının önceki bir sürümden bir derleyici olduğunda C1211 gerçekleşir.
+C1211, geçerli sürüm için bir derleyicisini, ancak önceki sürümden ortak dil çalışma zamanını kullandığınızda oluşur.
 
-Bazı işlevler derleyicinin önceki bir çalışma zamanı sürümünü çalışmayabilir.
+Derleyicinin bazı işlevleri çalışma zamanının önceki bir sürümünde çalışmayabilir.
 
-Derleyici ile birlikte gelen ortak dil çalışma zamanı C1211 çözmek için kullandığınız.
+C1211 'yi çözümlemek için, kullandığınız derleyiciyle birlikte gelen ortak dil çalışma zamanını yükleyebilirsiniz.
 
-Daha fazla bilgi için [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için bkz. [tür iletmeC++(/CLI)](../../extensions/type-forwarding-cpp-cli.md).

@@ -1,20 +1,20 @@
 ---
-title: Derleyici Hatası C2407
+title: Derleyici hatası C2407
 ms.date: 11/04/2016
 f1_keywords:
 - C2407
 helpviewer_keywords:
 - C2407
 ms.assetid: faf38041-cf0f-4624-b6f8-30ce0e1efc1e
-ms.openlocfilehash: 05fcc9556a4e06e652594fc2fc97871c21fd74cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96f7a54f1833489e00c43550f93d9c0a3502c4ad
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282671"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80205755"
 ---
-# <a name="compiler-error-c2407"></a>Derleyici Hatası C2407
+# <a name="compiler-error-c2407"></a>Derleyici hatası C2407
 
-Geçersiz 'float' Kaydet 'bağlamında'
+' Context ' içinde geçersiz ' float ' kaydı
 
-Bir `NDP` kaydı, geçersiz bir bağlamda belirtildi.
+Geçersiz bir bağlamda `NDP` kaydı belirtildi.

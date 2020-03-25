@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - D9026
 ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
-ms.openlocfilehash: 3fd8d442dfabaf2f03d8b564c9fdfb1537f6ff28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59dfcdc97fb9caf60a018cb20583ee6fca3dcb27
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214213"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196709"
 ---
 # <a name="command-line-warning-d9026"></a>Komut Satırı Uyarısı D9026
 
-Seçenekler tüm komut satırına uygulanır
+seçenekler tüm komut satırına uygulanır
 
-Bir dosya adı belirtildi sonra komutu bir seçenek belirtildi. Seçeneği, onu öncesinde bir dosyaya uygulandı.
+Bir dosya adı belirtilmişse komut üzerinde bir seçenek belirtildi. Bu seçenek, önce gelen dosyasına uygulandı.
 
-Örneğin, komut
+Örneğin, komutunda
 
 ```
 CL verdi.c /G5 puccini.c
 ```
 
-' % s'dosyası VERDI.c /G4 varsayılan /G5 seçeneği kullanılarak derlenir.
+VERDI. c dosyası/G4 varsayılan değer değil,/G5 seçeneği kullanılarak derlenir.
 
-Bu davranış, uygulanan VERDI.c bunun sonucunda dosya önce belirtilen seçenekleri kullanarak derlenen/G4 ve PUCCINI.c /G5 kullanarak derlenen yalnızca önceki bazı sürümlerinde farklılık gösterir.
+Bu davranış, yalnızca dosya adından önce belirtilen seçenekleri uygulayan, VERDI. c ' nin,/G4 ve PUCCINI. c kullanılarak derlenmesi 5 kullanılarak Derlenmekte olan önceki sürümlerden farklıdır.

@@ -7,35 +7,35 @@ helpviewer_keywords:
 - CXX0036
 - CAN0036
 ms.assetid: 383404be-df5b-4eec-b113-df21bb5d269d
-ms.openlocfilehash: d7961d92760cc5ac325b4bc9f187d4ee2298479a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 164fd9ee00071e218e5bb4f3ab00febc618725a7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397035"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195506"
 ---
 # <a name="expression-evaluator-error-cxx0036"></a>İfade Değerlendirici Hatası CXX0036
 
-hatalı bağlam {...} belirtim
+Hatalı bağlam {...} belirtim
 
-Bu ileti, şu içerik işlecini kullanımında çeşitli hatalardan birini tarafından oluşturulabilir (**{}**).
+Bu ileti, bağlam işlecinin ( **{}** ) kullanımıyla ilgili birkaç hata ile oluşturulabilir.
 
-- İçerik işleci sözdizimini (**{}**) hatalı durumda verildi.
+- Bağlam işlecinin sözdizimi ( **{}** ) yanlış olarak verildi.
 
-   Şu içerik işlecini sözdizimi aşağıdaki gibidir:
+   Bağlam işlecinin sözdizimi şöyledir:
 
-     {*işlevi*,*Modülü*,*dll*}*ifadesi*
+     {*Function*,*module*,*DLL*} *ifade*
 
-   Bu bağlamı belirtir *ifade*. Şu içerik işlecini bir cast türünü aynı öncelik ve kullanım vardır.
+   Bu, *ifadesinin*bağlamını belirtir. Bağlam operatörü, tür atama ile aynı önceliğe ve kullanıma sahiptir.
 
-   Virgül sondaki atlanabilir. Varsa *işlevi*, *Modülü*, veya *dll* sabit bir virgül içeren tüm adı parantez içine almalısınız.
+   Sondaki virgüller atlanabilir. Herhangi bir *işlev*, *Modül*veya *DLL* , sabit bir virgül içeriyorsa, tüm adı parantez içine almalısınız.
 
-- İşlev adı yanlış yazılmış veya belirtilen modül veya dinamik bağlantı kitaplığı yok.
+- İşlev adı yanlış yazılmış veya belirtilen modülde veya dinamik bağlantı kitaplığında yok.
 
-   C büyük küçük harfe duyarlı bir dil olduğundan *işlevi* kaynağında tanımlanan tam durumda verilmelidir.
+   C, büyük/küçük harfe duyarlı bir dil olduğundan, kaynak üzerinde tanımlandığı için *işlevin* tam büyük/küçük harf olarak verilmesi gerekir.
 
 - Modül veya DLL bulunamadı.
 
-   Belirtilen modül veya DLL tam yol adını kontrol edin.
+   Belirtilen modülün veya DLL dosyasının tam yol adını denetleyin.
 
-Bu hata için CAN0036 aynıdır.
+Bu hata CAN0036 ile aynıdır.

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - symbols, testing for existence
 - __if_exists keyword [C++]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
-ms.openlocfilehash: 9d5a0b24bb08a9485b2d212058fa8f0bd82e5842
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea136ac0312b78519fe2d8ea88ace4d8b0d69946
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183680"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178424"
 ---
-# <a name="ifexists-statement"></a>__if_exists Deyimi
+# <a name="__if_exists-statement"></a>__if_exists Deyimi
 
-**__İf_exists** deyimi belirtilen tanımlayıcı var olup olmadığını test eder. Tanımlayıcısı varsa, belirtilen deyim bloğu yürütülür.
+**__İf_exists** ifade, belirtilen tanımlayıcının mevcut olup olmadığını test eder. Tanımlayıcı varsa, belirtilen ifade bloğu yürütülür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,27 +31,27 @@ statements
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*tanımlayıcı*|Test etmek istediğiniz varlığı tanımlayıcısı.|
-|*Deyimleri*|Bir veya daha fazla deyimlerini *tanımlayıcı* bulunmaktadır.|
+|*Tanımlayıcısını*|Varlığını test etmek istediğiniz tanımlayıcı.|
+|*deyimler*|*Tanımlayıcı* varsa yürütülecek bir veya daha fazla deyim.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
->  En güvenilir sonuçlar elde etmek için kullanın **__if_exists** deyiminin altında aşağıdaki kısıtlamalar geçerlidir.
+>  En güvenilir sonuçlara ulaşmak için aşağıdaki kısıtlamalarda **__if_exists** ifadesini kullanın.
 
-- Uygulama **__if_exists** deyimi yalnızca basit türlere, şablon yok.
+- **__İf_exists** deyiminizi şablonlara değil yalnızca basit türlere uygulayın.
 
-- Uygulama **__if_exists** deyimi içinde veya dışında bir sınıf tanımlayıcıları. Geçerli **__if_exists** yerel değişkenlere deyimi.
+- **__İf_exists** ifadesini, bir sınıfın içindeki veya dışındaki tanımlayıcılara uygulayın. **__İf_exists** ifadesini yerel değişkenlere uygulamayın.
 
-- Kullanım **__if_exists** deyimi yalnızca bir işlev gövdesinin içinde. Bir işlev gövdesinin dışında **__if_exists** deyimi tam olarak tanımlanmamış türlerden yalnızca test edebilirsiniz.
+- **__İf_exists** ifadesini yalnızca bir işlevin gövdesinde kullanın. Bir işlevin gövdesi dışında, **__if_exists** deyimleri yalnızca tam olarak tanımlanmış türleri test edebilir.
 
-- Aşırı yüklenmiş işlevler için test ettiğinizde, belirli bir aşırı yükleme form için test edilemez.
+- Aşırı yüklenmiş işlevler için test ettiğinizde, belirli bir aşırı yükleme formu için test edilemez.
 
-Tamamlayan **__if_exists** deyimi [__if_not_exists](../cpp/if-not-exists-statement.md) deyimi.
+**__İf_exists** deyimin tamamlaması [__if_not_exists](../cpp/if-not-exists-statement.md) deyimidir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, değil önerilir şablonları kullandığına dikkat edin.
+Bu örnekte tavsiye edilen şablonları kullanan bir uyarı vardır.
 
 ```cpp
 // the__if_exists_statement.cpp
@@ -110,7 +110,7 @@ int main() {
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 In X<T>::Dump()

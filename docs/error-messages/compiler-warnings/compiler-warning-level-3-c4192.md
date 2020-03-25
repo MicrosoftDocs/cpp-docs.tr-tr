@@ -1,22 +1,22 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4192
+title: Derleyici Uyarısı (düzey 3) C4192
 ms.date: 11/04/2016
 f1_keywords:
 - C4192
 helpviewer_keywords:
 - C4192
 ms.assetid: ea5f91fa-8c96-4f3f-ac42-0c8a86d4e5df
-ms.openlocfilehash: 56b27596296b87edcc6de406e7b6621d5723815d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38b346e0a90729bda431b9cb578a03806be1ea4c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402235"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198984"
 ---
-# <a name="compiler-warning-level-3-c4192"></a>Derleyici Uyarısı (Düzey 3) C4192
+# <a name="compiler-warning-level-3-c4192"></a>Derleyici Uyarısı (düzey 3) C4192
 
-otomatik olarak 'library' tür kitaplığı içeri aktarılırken 'name' hariç
+' Library ' tür kitaplığı içeri aktarılırken ' name ' otomatik olarak hariç tutulanıyor
 
-A `#import` kitaplığı içeren bir öğe *adı*, yani de Win32 sistem üstbilgisinde tanımlanır. Tür kitaplıkları sınırlamaları nedeniyle, gibi adlar **IUnknown** veya GUID genellikle tanımlanmış bir tür kitaplığı sistem üstbilgileri tanımından çoğaltma. `#import` Bu öğeleri algılar ve bunları .tlh ve .tli üst bilgi dosyalarını birleştirmek reddeder.
+`#import` kitaplığı, Win32 sistem üst bilgilerinde de tanımlanan bir öğe *adı*içerir. Tür kitaplıklarının sınırlamaları nedeniyle, **IUnknown** veya GUID gibi adlar genellikle bir tür kitaplığında tanımlanmıştır ve bu da tanımı sistem başlıklarından çoğaltma. `#import`, bu öğeleri algılayacak ve. tlh ve. TLI üst bilgi dosyalarında dahil etmek için reddedecek.
 
-Bu davranışı geçersiz kılmak için kullanın `#import` öznitelikleri [no_auto_exclude](../../preprocessor/no-auto-exclude.md) ve [include()](../../preprocessor/include-parens.md).
+Bu davranışı geçersiz kılmak için, `#import` öznitelikleri [no_auto_exclude](../../preprocessor/no-auto-exclude.md) ve [dahil et ()](../../preprocessor/include-parens.md)kullanın.

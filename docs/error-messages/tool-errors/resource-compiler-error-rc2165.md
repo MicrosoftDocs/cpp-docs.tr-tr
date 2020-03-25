@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - RC2165
 ms.assetid: bf7d4630-9355-47e3-87fa-6693fcf0ef0d
-ms.openlocfilehash: dee1e3539a734ccb59a7e13218ea47b94287ffd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c8686a83bcdffc39b6573cbeb97e4da04fbab39
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399882"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190982"
 ---
 # <a name="resource-compiler-error-rc2165"></a>Kaynak Derleyicisi Hatası RC2165
 
-dize DLGINCLUDE deyiminde bulunamadı
+DLıNCLUDE ifadesinde dize bulunamadı
 
-Deyim geçerli içerme dosyası belirtilmedi.
+İfade geçerli bir içerme dosyası belirtmedi.
 
-**DLGINCLUDE** deyimi aşağıdaki sözdizimini kullanın:
+**Dlınclude** ifadesinin aşağıdaki sözdizimini kullanması gerekir:
 
-**DLGINCLUDE "**<em>filename</em>**.h"**
+**Tımınclude "** <em>filename</em> **. h"**

@@ -1,23 +1,23 @@
 ---
-title: typeid (C++/CLI ve C++/CX)
+title: TypeId (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-ms.openlocfilehash: ec64388d5f71cff01207129e337cf20bb151db1a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b22481fecb4b7de5106921fec1c3a43fab81a48
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265133"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181752"
 ---
-# <a name="typeid--ccli-and-ccx"></a>typeid (C++/CLI ve C++/CX)
+# <a name="typeid--ccli-and-ccx"></a>TypeId (C++/CLI ve C++/CX)
 
-Bir nesne türünü gösteren bir değer alır.
+Bir nesnenin türünü gösteren bir değer alır.
 
 > [!NOTE]
-> Bu konuda TypeID C++ bileşen uzantıları sürümünü gösterir. Bu anahtar sözcük ISO C++ sürümü için bkz: [typeid işleci](../cpp/typeid-operator.md).
+> Bu konu, C++ typeid 'Nin bileşen uzantıları sürümüne başvurur. Bu anahtar sözcüğünün C++ ISO sürümü için bkz. [TypeId işleci](../cpp/typeid-operator.md).
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -29,8 +29,8 @@ T::typeid
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Tür adı.
+*Şı*<br/>
+Bir tür adı.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -42,12 +42,12 @@ Platform::Type^ type = T::typeid;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Tür adı.
+*Şı*<br/>
+Bir tür adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçinde C++/TypeID CX, returns bir [Platform::Type](../cppcx/platform-type-class.md) çalışma zamanı türü bilgileri oluşturulur.
+/CX C++içinde TypeId, çalışma zamanı türü bilgilerden oluşturulan bir [Platform:: Type](../cppcx/platform-type-class.md) döndürür.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -64,19 +64,19 @@ type::typeid
 ### <a name="parameters"></a>Parametreler
 
 *type*<br/>
-İstediğiniz bir türün (soyut bildirimci) adını `System::Type` nesne.
+`System::Type` nesnesini istediğiniz bir türün (soyut bildirimci) adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`typeid` almak için kullanılan <xref:System.Type> için derleme zamanında bir tür.
+`typeid`, derleme zamanında bir tür için <xref:System.Type> almak için kullanılır.
 
-`typeid` çalışma zamanı'nı kullanarak bir tür System::Type edinilmesi benzer <xref:System.Type.GetType%2A> veya <xref:System.Object.GetType%2A>. Ancak, typeid yalnızca bir tür adı bir parametre olarak kabul eder.  GetType System::Type adını almak için bir türün bir örneğini kullanmak istiyorsanız, kullanın.
+`typeid`, <xref:System.Type.GetType%2A> veya <xref:System.Object.GetType%2A>kullanarak çalışma zamanında bir tür için System:: Type almaya benzer. Ancak TypeId yalnızca bir parametre olarak bir tür adı kabul eder.  Sistem:: tür adını almak için bir türün örneğini kullanmak istiyorsanız, GetType kullanın.
 
-`typeid` GetType çalışma zamanında döndürülecek tür değerlendirir ise, bir tür adı (tür) derleme zamanında değerlendirilmesi mümkün olması gerekir.
+`typeid`, derleme zamanında bir tür adı değerlendirebilmelidir, ancak GetType türü çalışma zamanında döndürülecek şekilde değerlendirir.
 
-`typeid` bir yerel tür adı veya yerel bir tür adı için ortak dil çalışma zamanı diğer adı alabilir; bkz: [.NET Framework eşdeğerleri C++ yerel türler (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) daha fazla bilgi için.
+`typeid` yerel tür adı için yerel bir tür adı veya ortak dil çalışma zamanı diğer adı alabilir; daha fazla bilgi için bkz. [ C++ yerelC++türlere .NET Framework eşdeğerleri (/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) .
 
-`typeid` hala bir System::Type döndürür ancak yerel türler ile de çalışır.  Type_info yapısı almak için kullanın [typeid işleci](../cpp/typeid-operator.md).
+`typeid`, yerel türlerle de çalışır, ancak yine de bir System:: Type döndürür.  Type_info yapısı almak için [TypeId işleci](../cpp/typeid-operator.md)kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -84,7 +84,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek typeid anahtar karşılaştırır `GetType()` üyesi.
+Aşağıdaki örnek, TypeId anahtar sözcüğünü `GetType()` üyesine karşılaştırır.
 
 ```cpp
 // keyword__typeid.cpp
@@ -116,7 +116,7 @@ G
 System.Single*
 ```
 
-Aşağıdaki örnek, türü System::Type türe göre öznitelikleri almak için kullanılan bir değişken gösterir.  Ayrıca bazı türleri için kullanmak için bir typedef oluşturmak olacağını gösterir `typeid`.
+Aşağıdaki örnek, bir tür üzerinde öznitelikleri almak için System:: Type türünde bir değişkenin kullanılabileceğini gösterir.  Ayrıca, bazı türler için `typeid`kullanmak için bir typedef oluşturmanız gerektiğini gösterir.
 
 ```cpp
 // keyword__typeid_2.cpp

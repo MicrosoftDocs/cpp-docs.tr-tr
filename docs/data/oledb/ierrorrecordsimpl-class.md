@@ -63,12 +63,12 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: dd9e1f39d30dc8289b0236bf655c87da04b14de6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 40ac0b248e1e90dae29a787d59f6ded9581aca70
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447365"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210606"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl Sınıfı
 
@@ -122,7 +122,7 @@ OLE DB Error nesnesini temsil eden bir sınıf.
 |-|-|
 |[m_rgErrors](#rgerrors)|Bir hata kaydı dizisi.|
 
-## <a name="geterrordescriptionstring"></a>Ierrorrecordsimpl:: GetErrorDescriptionString
+## <a name="ierrorrecordsimplgeterrordescriptionstring"></a><a name="geterrordescriptionstring"></a>Ierrorrecordsimpl:: GetErrorDescriptionString
 
 Hata kaydından hata açıklaması dizesini alır.
 
@@ -141,7 +141,7 @@ Bir `IErrorInfo` arabirimindeki `ERRORINFO` kaydı.
 
 Hatayı açıklayan bir dizeye yönelik bir işaretçi.
 
-## <a name="geterrorguid"></a>Ierrorrecordsimpl:: GetErrorGUID
+## <a name="ierrorrecordsimplgeterrorguid"></a><a name="geterrorguid"></a>Ierrorrecordsimpl:: GetErrorGUID
 
 Hata kaydından hata GUID 'sini alır.
 
@@ -160,7 +160,7 @@ Bir `IErrorInfo` arabirimindeki `ERRORINFO` kaydı.
 
 Hata için bir GUID başvurusu.
 
-## <a name="geterrorhelpcontext"></a>Ierrorrecordsimpl:: GetErrorHelpContext
+## <a name="ierrorrecordsimplgeterrorhelpcontext"></a><a name="geterrorhelpcontext"></a>Ierrorrecordsimpl:: GetErrorHelpContext
 
 Bir hata kaydından yardım bağlamı KIMLIĞINI alır.
 
@@ -179,7 +179,7 @@ Bir `IErrorInfo` arabirimindeki `ERRORINFO` kaydı.
 
 Hatanın yardım bağlamı KIMLIĞI.
 
-## <a name="geterrorhelpfile"></a>Ierrorrecordsimpl:: GetErrorHelpFile
+## <a name="ierrorrecordsimplgeterrorhelpfile"></a><a name="geterrorhelpfile"></a>Ierrorrecordsimpl:: GetErrorHelpFile
 
 Bir hata kaydındaki yardım dosyasının yol adını alır.
 
@@ -198,7 +198,7 @@ Bir `IErrorInfo` arabirimindeki `ERRORINFO` kaydı.
 
 Hata için yardım dosyasının yol adını içeren bir dize işaretçisi.
 
-## <a name="geterrorsource"></a>Ierrorrecordsimpl:: GetErrorSource
+## <a name="ierrorrecordsimplgeterrorsource"></a><a name="geterrorsource"></a>Ierrorrecordsimpl:: GetErrorSource
 
 Hata kaydından hataya neden olan kaynak kodunu alır.
 
@@ -217,7 +217,7 @@ Bir `IErrorInfo` arabirimindeki `ERRORINFO` kaydı.
 
 Hata için kaynak kodu içeren bir dize işaretçisi.
 
-## <a name="adderrorrecord"></a>Ierrorrecordsimpl:: AddErrorRecord
+## <a name="ierrorrecordsimpladderrorrecord"></a><a name="adderrorrecord"></a>Ierrorrecordsimpl:: AddErrorRecord
 
 OLE DB Error nesnesine bir kayıt ekler.
 
@@ -235,7 +235,7 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 
 *OLE DB Programcı başvurusunda* [IErrorRecords:: adderrorrecord](/previous-versions/windows/desktop/ms725362(v=vs.85)) öğesine bakın.
 
-## <a name="getbasicerrorinfo"></a>Ierrorrecordsimpl:: GetBasicErrorInfo
+## <a name="ierrorrecordsimplgetbasicerrorinfo"></a><a name="getbasicerrorinfo"></a>Ierrorrecordsimpl:: GetBasicErrorInfo
 
 Hata hakkında, dönüş kodu ve sağlayıcıya özgü hata numarası gibi temel bilgileri döndürür.
 
@@ -250,7 +250,7 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 
 *OLE DB Programcı başvurusunda* [IErrorRecords:: GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) bölümüne bakın.
 
-## <a name="getcustomerrorobject"></a>Ierrorrecordsimpl:: GetCustomErrorObject
+## <a name="ierrorrecordsimplgetcustomerrorobject"></a><a name="getcustomerrorobject"></a>Ierrorrecordsimpl:: GetCustomErrorObject
 
 Özel bir hata nesnesindeki arabirime yönelik bir işaretçi döndürür.
 
@@ -266,7 +266,7 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 
 *OLE DB Programcı başvurusunda* [IErrorRecords:: GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) bölümüne bakın.
 
-## <a name="geterrorinfo"></a>Ierrorrecordsimpl:: GetErrorInfo
+## <a name="ierrorrecordsimplgeterrorinfo"></a><a name="geterrorinfo"></a>Ierrorrecordsimpl:: GetErrorInfo
 
 Belirtilen kayıt üzerinde bir [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimi işaretçisi döndürür.
 
@@ -282,7 +282,7 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 
 *OLE DB Programcı başvurusunda* [IErrorRecords:: GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) bölümüne bakın.
 
-## <a name="geterrorparameters"></a>Ierrorrecordsimpl:: GetErrorParameters
+## <a name="ierrorrecordsimplgeterrorparameters"></a><a name="geterrorparameters"></a>Ierrorrecordsimpl:: GetErrorParameters
 
 Hata parametrelerini döndürür.
 
@@ -297,7 +297,7 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 
 *OLE DB Programcı başvurusunda* [IErrorRecords:: GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) bölümüne bakın.
 
-## <a name="getrecordcount"></a>Ierrorrecordsimpl:: GetRecordCount
+## <a name="ierrorrecordsimplgetrecordcount"></a><a name="getrecordcount"></a>Ierrorrecordsimpl:: GetRecordCount
 
 OLE DB kaydı nesnesindeki kayıt sayısını döndürür.
 
@@ -311,7 +311,7 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 
 *OLE DB Programcı başvurusunda* [IErrorRecords:: GetRecordCount](/previous-versions/windows/desktop/ms722724(v=vs.85)) öğesine bakın.
 
-## <a name="rgerrors"></a>Ierrorrecordsimpl:: m_rgErrors
+## <a name="ierrorrecordsimplm_rgerrors"></a><a name="rgerrors"></a>Ierrorrecordsimpl:: m_rgErrors
 
 Bir hata kaydı dizisi.
 

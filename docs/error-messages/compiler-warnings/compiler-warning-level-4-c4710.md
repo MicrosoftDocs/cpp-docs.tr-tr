@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C4710
 ms.assetid: 76381ec7-3fc1-4bee-9a0a-c2c8307b92e2
-ms.openlocfilehash: 0f8e66982192f8af6498c9151d32a44226e0560a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c39848b9b3e94e35c4d0c0937a0974b717c6bd8d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395202"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198182"
 ---
 # <a name="compiler-warning-level-4-c4710"></a>Derleyici Uyarısı (düzey 4) C4710
 
-'function': işlev alınmadı
+' function ': işlev satır içine alınmadı
 
-Verilen işlevin satır içi genişletme için seçildi, ancak derleyicinin kullanılmayacak satır içi kullanım.
+Verilen işlev satır içi genişletme için seçildi, ancak derleyici satır içinde gerçekleştirmedi.
 
-Satır içi kullanım derleyicinin denetiminde gerçekleştirilir. **Satır içi** anahtar sözcüğü gibi **kaydetme** için derleyicinin anahtar sözcüğü, bir ipucu olarak kullanılır. Derleyici, kod hızı için derleme yaparken hızlandırmak için belirli bir işlevi satır içi gerekir veya kod yazabileceğiniz derlenirken küçültmek için belirli bir işlevi satır içi gerektiğini belirlemek için buluşsal yöntemler kullanır. Derleyici olur yalnızca satır içi çok küçük işlevler için alan derlenirken.
+İç hat kullanımı derleyicinin kararına göre yapılır. **Register** anahtar sözcüğü gibi **satır içi** anahtar sözcük, derleyici için bir ipucu olarak kullanılır. Derleyici, hız için derleme yaparken kodun hızlandırılmasına veya belirli bir işlevin boş alana göre daha küçük olmasını sağlamak için belirli bir işlevi satır içi olarak kullanıp kullanmadığını anlamak için buluşsal yöntemler kullanır. Derleyici, alan için derleme yaparken yalnızca satır içi çok küçük işlevlere sahip olur.
 
-Bazı durumlarda, derleyicinin olur satır belirli bir işlev mekanik nedenleri. Bkz: [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) nedenleri olabilir değil bir işlevi satır içi derleyici listesi.
+Bazı durumlarda, derleyici, mekanik nedenlerle belirli bir işlevi satır içi olarak içermez. Derleyicinin bir işlevi satır içi olarak görmemesinin nedenleri listesi için bkz. [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) .
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .

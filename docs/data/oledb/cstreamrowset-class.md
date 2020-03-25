@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: 4a0e67ff1e800ff0f838b863eaaf839d4456ed82
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 300933fd6d10f5da39d9276db746ab789851a9a1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441081"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80211178"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset Sınıfı
 
@@ -68,11 +68,11 @@ Erişimci sınıfı.
 
 [!code-cpp[NVC_OLEDB_Consumer#11](../../data/oledb/codesnippet/cpp/cstreamrowset-class_1.cpp)]
 
-or
+veya
 
 [!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]
 
-`ICommand::Execute`, `m_spStream`depolanan `ISequentialStream` bir işaretçi döndürür. Daha sonra, (Unicode dize) verilerini XML biçiminde almak için `Read` yöntemini kullanırsınız. Örnek:
+`ICommand::Execute`, `m_spStream`depolanan `ISequentialStream` bir işaretçi döndürür. Daha sonra, (Unicode dize) verilerini XML biçiminde almak için `Read` yöntemini kullanırsınız. Örneğin:
 
 [!code-cpp[NVC_OLEDB_Consumer#13](../../data/oledb/codesnippet/cpp/cstreamrowset-class_3.cpp)]
 
@@ -81,7 +81,7 @@ SQL Server 2000, XML biçimlendirmesini gerçekleştirir ve tüm sütunları ve 
 > [!NOTE]
 >  Bu özellik yalnızca SQL Server 2000 ile birlikte kullanılabilir.
 
-## <a name="cstreamrowset"></a>CStreamRowset:: CStreamRowset
+## <a name="cstreamrowsetcstreamrowset"></a><a name="cstreamrowset"></a>CStreamRowset:: CStreamRowset
 
 `CStreamRowset` nesnesini başlatır ve başlatır.
 
@@ -91,7 +91,7 @@ SQL Server 2000, XML biçimlendirmesini gerçekleştirir ve tüm sütunları ve 
 CStreamRowset();
 ```
 
-## <a name="close"></a>CStreamRowset:: Close
+## <a name="cstreamrowsetclose"></a><a name="close"></a>CStreamRowset:: Close
 
 Sınıfında [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) arabirim işaretçisini yayınlar.
 

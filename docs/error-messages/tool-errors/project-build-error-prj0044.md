@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0044
 ms.assetid: 5d78c45a-f9e9-4d2b-a3b6-5a5d1421ab84
-ms.openlocfilehash: 3d9fd25dc5b39de69735c7d3d5cf0a6bb64c0482
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ab2fd5f6562ac85c9c86cafc851315c21cd28da3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346794"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192113"
 ---
 # <a name="project-build-error-prj0044"></a>Proje Derleme Hatası PRJ0044
 
-Özel derleme kuralının 'Kuralı 'dosya' dosyasına atanan' 'Ek bağımlılıklar' özelliği geçersiz. 'İçerir 'değerine' string' özelliği içeriyor.
+' Dosya ' dosyasına atanan ' Rule ' özel derleme kuralı için ' ek bağımlılıklar ' özelliği geçersiz. Özelliği ' Value ' olarak değerlendirilen ' String ' içeriyor.
 
-**Ek bağımlılıklar** özelliği boş bir dize veya geçersiz karakter (bir dosya veya dizin adı olabilir değil herhangi bir karakterle) içeren bir dize için değerlendirilir. Özel derleme eylemi çıktısını gereksinim kuralları oluşturun.
+**Ek bağımlılıklar** özelliği boş bir dize veya geçersiz karakterler (bir dosya veya dizin adında yer alan bir karakter) içeren bir dize olarak değerlendirilir. Özel yapı kuralları derleme eyleminin çıktısına gerek duyar.
 
-Daha fazla bilgi için [belirterek özel derleme Araçları](../../build/specifying-custom-build-tools.md).
+Daha fazla bilgi için bkz. [özel derleme araçları belirtme](../../build/specifying-custom-build-tools.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

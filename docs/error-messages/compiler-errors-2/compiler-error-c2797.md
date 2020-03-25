@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2797
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
-ms.openlocfilehash: ccd007bf193bd6529748004a96745fafcb9f3226
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 9973ddcccc69e85bdf79e0623fa4bcc1d6689032
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447829"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202096"
 ---
 # <a name="compiler-error-c2797"></a>Derleyici Hatası C2797
 
-(Eski) Liste başlatması üye başlatıcı listesi veya statik olmayan veri üyesi başlatıcısı uygulanmadı.
+Dışı Üye başlatıcısı listesinin veya statik olmayan veri üyesi başlatıcısının içindeki liste başlatması uygulanmadı.
 
-Bu uyarı, Visual Studio 2015'te kullanılmıyor. Visual Studio 2013 ve önceki sürümlerinde, Microsoft C++ derleyici liste başlatması veya bir üye başlatıcı listesi, hem de statik olmayan veri üyesi başlatıcısı uygulamıyor. Visual Studio 2013 güncelleştirme 3 önce bu sessiz hatalı kod oluşturma için yol açabilecek bir işlev çağrısı için dönüştürüldü. Visual Studio 2013 güncelleştirme 3'ü bu hata olarak bildirir.
+Bu uyarı, Visual Studio 2015 ' de kullanılmıyor. Visual Studio 2013 ve önceki sürümlerde, Microsoft C++ derleyicisi, bir üye Başlatıcı listesinde veya statik olmayan bir veri üyesi başlatıcısında liste başlatma uygulamaz. Güncelleştirme 3 ' ü Visual Studio 2013 önce, bu, hatalı kod oluşturmaya yol açabilecek şekilde sessizce bir işlev çağrısına dönüştürüldü. Visual Studio 2013 güncelleştirme 3, bunu hata olarak raporlar.
 
 Bu örnek C2797 oluşturur:
 
@@ -31,7 +31,7 @@ struct S {
 };
 ```
 
-Bu örnek ayrıca C2797 oluşturur:
+Bu örnek ayrıca C2797 üretir:
 
 ```
 struct S1 {
@@ -45,7 +45,7 @@ struct S2 {
 };
 ```
 
-Bu sorunu gidermek için açık yapımı iç listeleri kullanabilirsiniz. Örneğin:
+Bu sorunu düzeltemedi, iç listelerin açık olarak oluşturulmasını kullanabilirsiniz. Örneğin:
 
 ```
 #include <vector>
@@ -58,7 +58,7 @@ struct S {
 };
 ```
 
-Liste başlatma gerekmiyorsa:
+Liste başlatma gerektirmeyin:
 
 ```
 struct S {
@@ -69,4 +69,4 @@ struct S {
 };
 ```
 
-(Visual Studio 2013'teki derleyici bu örtülü olarak önce Visual Studio 2013 güncelleştirme 3 desteklemez.)
+(Visual Studio 2013 derleyici, bunu Visual Studio 2013 güncelleştirme 3 ' ten önce örtülü olarak yapar.)

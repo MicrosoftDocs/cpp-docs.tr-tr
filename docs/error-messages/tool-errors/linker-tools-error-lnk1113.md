@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1113
 ms.assetid: 269ff166-b143-48e9-bdf7-db6a0db59fe4
-ms.openlocfilehash: 7303e5d9d990edd3208c0194f6c13a6ef5a33860
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f56279ef9616b2bb07170096607174bb2dd804c6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255351"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195350"
 ---
 # <a name="linker-tools-error-lnk1113"></a>Bağlayıcı Araçları Hatası LNK1113
 
-Geçersiz makine türü
+geçersiz makine türü türü
 
-Nesnenin üst bilgisinde belirtilen makine türü geçerli değil.
+Nesne üstbilgisinde belirtilen makine türü geçerli değil.
 
-Dosya bozuk, bu hata oluşabilir. Bir nesneyi yeniden oluşturun.
+Dosya bozuksa bu hataya neden olmuş olabilir. Nesneyi yeniden derleyin.

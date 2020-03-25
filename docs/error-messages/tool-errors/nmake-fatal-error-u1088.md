@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - U1088
 ms.assetid: 75f3527b-9923-408b-a66e-701322c63803
-ms.openlocfilehash: 99d2ac2f2e3a75166ca338e890757ec40c2bd231
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b1f5e18fb9a225b5713264e6f12451889828fd6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298444"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193348"
 ---
 # <a name="nmake-fatal-error-u1088"></a>NMAKE Önemli Hatası U1088
 
-Geçersiz ayırıcı '::' çıkarım kuralında
+çıkarım kuralında geçersiz ayırıcı ':: '
 
-Çıkarım kuralı tek üste gelmelidir (**:**).
+Bir çıkarım kuralı arkasından tek bir iki nokta ( **:** ) gelmeli.

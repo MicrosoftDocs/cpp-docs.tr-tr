@@ -6,20 +6,20 @@ helpviewer_keywords:
 - function templates, instantiation
 - instantiation, function templates
 ms.assetid: f22a07c7-3ad1-465a-84f5-8737e274bd47
-ms.openlocfilehash: c4667f5ae625468cdab428706ddaff92a1c1af33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6917448af067542fffb13aa043720bf8a26f7ba3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154184"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80179763"
 ---
 # <a name="function-template-instantiation"></a>İşlev Şablonu Örneklemesi
 
-Bir işlev şablonu her türü için ilk kez çağrıldığında, derleyici örneklemesi oluşturur. Şablonlu bir sürümünü her örneklemesi olan işlev türü için özelleştirilmiş. Bu örnek oluşturma, işlev türü için kullanılan her zaman çağrılır. Birden fazla özdeş örneklemeleri, hatta farklı modülde varsa, yalnızca bir kopyasını örneklemesinin yürütülebilir dosyada elde edebilirsiniz.
+Her tür için bir işlev şablonu ilk kez çağrıldığında, derleyici bir örnek oluşturur. Her örnekleme, türü için özelleştirilmiş şablonlu işlevin bir sürümüdür. Bu örnek oluşturma, her bir işlev türü için kullanıldığında çağrılacaktır. Farklı modüllerde bile birden fazla özdeş örneklemeiniz varsa, örnek olarak yalnızca bir kopyasının tek bir kopyası çalıştırılabilir dosyada sona alınacaktır.
 
-İşlev bağımsız değişkenlerinin dönüştürme işlevi şablonlarında burada parametresi bir şablon bağımsız değişkenine bağımlı değildir bağımsız değişken ve parametre çifti için izin verilir.
+İşlev bağımsız değişkenlerinin dönüştürülmesine, parametrenin bir şablon bağımsız değişkenine bağlı olmadığı bağımsız değişkenler ve parametre çifti için işlev şablonlarında izin verilir.
 
-İşlev şablonlarının açık şablon bağımsız değişken olarak belirli bir tür ile bildirerek oluşturulabilir. Örneğin, aşağıdaki koda izin verilir:
+İşlev şablonları, bir bağımsız değişken olarak belirli bir türe sahip şablon bildirerek açıkça oluşturulabilir. Örneğin, aşağıdaki koda izin verilir:
 
 ```cpp
 // function_template_instantiation.cpp

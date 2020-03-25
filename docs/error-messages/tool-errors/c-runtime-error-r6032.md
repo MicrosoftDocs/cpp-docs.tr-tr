@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - R6032
 ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
-ms.openlocfilehash: e0ae3acc491658840d74e262f3ab2719e613d60e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b29b946d08cff903cf0ca398ba0d7589cb5d54ea
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399999"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197099"
 ---
 # <a name="c-runtime-error-r6032"></a>C Çalışma Zamanı Hatası R6032
 
 Yerel ayar bilgileri için yeterli alan yok
 
 > [!NOTE]
-> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak son derece düşük bellek durumu veya bir programın hata genellikle neden olur.
+> Bir uygulamayı çalıştırırken bu hata iletisiyle karşılaşırsanız, bir iç bellek sorunu olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle son derece düşük bellek koşulunun veya programdaki bir hata nedeniyle oluşur.
 >
 > Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
 > - Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
-> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Programı onarmak ya da yeniden yüklemek için **Denetim Masası** 'ndaki **uygulamalar ve Özellikler** veya **Programlar ve Özellikler** sayfasını kullanın.
+> - Yazılım güncelleştirmeleri için **Denetim Masası** 'ndaki **Windows Update** kontrol edin.
 > - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
-**Programcıları için bilgi**
+**Programcılar için bilgiler**
 
-Yerel ayar duyarlı işlevleri çağrıları işleyebilmesi çalışma zamanı, her iş parçacığı yerel ayarı hakkında bilgi tutar. Bu bilgiler için bellek ayırma başarısız olursa, çalışma zamanı temel kendi tesislerinde çok fazla ona bağımlı olduğundan işleme devam edilemiyor.
+Çalışma zamanı, her iş parçacığında yerel ayar ile ilgili bilgileri saklar, böylece yerel ayara duyarlı işlevlere çağrıları işleyebilir. Bu bilgiler için bellek ayırma başarısız olursa, temel tesislerinin çok fazla olması buna bağlı olduğundan çalışma zamanı devam edemiyor.

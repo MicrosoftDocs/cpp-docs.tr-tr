@@ -7,30 +7,30 @@ helpviewer_keywords:
 - appdomain __declspec keyword
 - __declspec keyword [C++], appdomain
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
-ms.openlocfilehash: 3f83841565eb6a097f306129fe8f6d121f837c27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ac74e8774204b316712a15975f7af3fb8835a9e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184502"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181492"
 ---
 # <a name="appdomain"></a>appdomain
 
-Her uygulama etki alanı, yönetilen uygulamanızın bir belirli genel değişken veya statik üye değişkeni kendine ait kopyasını olması gerektiğini belirtir. Bkz: [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md) daha fazla bilgi için.
+Yönetilen uygulamanızın her bir uygulama etki alanının belirli bir genel değişkenin veya statik üye değişkeninin kendi kopyasına sahip olması gerektiğini belirtir. Daha fazla bilgi için bkz. [uygulama etki alanları ve görsel C++ ](../dotnet/application-domains-and-visual-cpp.md) .
 
-Her uygulama etki alanı, kendi başına appdomain değişken kopyasına sahip olur. Appdomain değişkeninin bir oluşturucu, bir derleme bir uygulama etki alanına yüklenir ve uygulama etki alanı kaldırıldığında yıkıcı yürütülür yürütülür.
+Her uygulama etki alanının kendi AppDomain bağımsız değişkeninin kendi kopyası vardır. Bir uygulama etki alanına bir derleme yüklendiğinde bir AppDomain değişkeninin Oluşturucusu yürütülür ve uygulama etki alanı kaldırıldığında yıkıcı yürütülür.
 
-Genel değişken paylaşmak için ortak dil çalışma zamanı bir işlemdeki tüm uygulama etki alanları istiyorsanız kullanın `__declspec(process)` değiştiricisi. `__declspec(process)` Varsayılan olarak etkin olan [/CLR](../build/reference/clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+Ortak dil çalışma zamanındaki bir işlem içindeki tüm uygulama etki alanlarının genel bir değişkeni paylaşmasına istiyorsanız `__declspec(process)` değiştiricisini kullanın. `__declspec(process)`, [/clr](../build/reference/clr-common-language-runtime-compilation.md)altında varsayılan olarak etkindir. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-`__declspec(appdomain)` yalnızca geçerli olduğunda birini **/CLR** derleyici seçenekleri kullanılır. Genel bir değişkenin, statik üye değişkeninin veya statik bir yerel değişken ile işaretlenebilir `__declspec(appdomain)`. Uygulamak için bir hata olduğunu `__declspec(appdomain)` statik üyeleri için her zaman bu davranışı olduğundan yönetilen türleri.
+`__declspec(appdomain)` yalnızca **/clr** derleyici seçeneklerinden biri kullanıldığında geçerlidir. Yalnızca bir genel değişken, statik üye değişkeni veya statik bir yerel değişken `__declspec(appdomain)`ile işaretlenebilir. Bu davranışa her zaman sahip olduklarından, yönetilen türlerin statik üyelerine `__declspec(appdomain)` uygulamak bir hatadır.
 
-Kullanarak `__declspec(appdomain)` kullanmaya benzer [iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md). Uygulama etki alanları gibi iş parçacığı kendi depolama sahip. Kullanarak `__declspec(appdomain)` genel değişkeni, bu uygulama için oluşturulan her uygulama etki alanında kendi depolama sahip olmasını sağlar.
+`__declspec(appdomain)` kullanmak, [Iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md)ile benzerdir. İş parçacıklarının, uygulama etki alanları olarak kendi depolama alanları vardır. `__declspec(appdomain)` kullanmak, genel değişkenin bu uygulama için oluşturulan her uygulama etki alanında kendi depolama alanı olmasını sağlar.
 
-Appdomain değişkenleri ve işlem başına kullanımını karıştırma sınırlama vardır; bkz: [işlem](../cpp/process.md) daha fazla bilgi için.
+İşlem başına ve AppDomain değişkenleri başına kullanımını karıştırma sınırlamaları vardır; daha fazla bilgi için [işleme](../cpp/process.md) bakın.
 
-Örneğin, program başlangıç, tüm işlem içi değişkenler başlatılır ve ardından tüm appdomain başına değişkenleri başlatılır. Bu nedenle bir işlem içi değişken başlatılır, herhangi bir uygulama başına etki alanı değişkeninin değerine bağımlı olamaz. Kullanımı (atama) ve işleme değişkenleri uygulama etki alanı başına karıştırmak için hatalı bir uygulamadır.
+Örneğin, program başlangıcında, tüm işlem başına değişkenler başlatılır, sonra tüm AppDomain değişkenleri başlatılır. Bu nedenle, işlem başına değişken başlatıldığında, uygulama başına etki alanı değişkeninin değerine bağlı olamaz. AppDomain başına ve işlem değişkenleri başına kullanımını (atamayı) karıştırmak hatalı bir uygulamadır.
 
-Belirli uygulama etki alanında bir işlevi çağırmak nasıl daha fazla bilgi için bkz: [call_in_appdomain işlevi](../dotnet/call-in-appdomain-function.md).
+Belirli bir uygulama etki alanında bir işlevi çağırma hakkında daha fazla bilgi için bkz. [Call_in_appdomain işlevi](../dotnet/call-in-appdomain-function.md).
 
 ## <a name="example"></a>Örnek
 

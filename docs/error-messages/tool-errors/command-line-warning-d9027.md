@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - D9027
 ms.assetid: 2a29edc5-5649-48f2-9058-2057c747284c
-ms.openlocfilehash: f89e7416efe7a0069ee2dae8df921933bbe76bcf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46ed5750bd1f315f20658ace9b83fac532fbbabb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214134"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196684"
 ---
 # <a name="command-line-warning-d9027"></a>Komut Satırı Uyarısı D9027
 
-Kaynak dosya '\<dosya adı >' yoksayıldı
+'\<filename > ' kaynak dosyası yoksayıldı
 
-CL.exe giriş kaynağı dosyası yoksayıldı.
+CL. exe giriş kaynak dosyasını yoksaydı.
 
-Bu uyarı /Fo seçeneği ve /c seçeneği ile bir komut satırında bir çıkış dosyası adı arasında boşluk neden olabilir. Örneğin:
+Bu uyarı,/FO seçeneği ile bir komut satırındaki bir çıkış dosya adı arasındaki bir boşluk,/c seçeneği ile kaynaklanıyor olabilir. Örneğin:
 
 ```
 cl /c /Fo output.obj input.c
 ```
 
-/Fo arasında boşluk olmadığından ve `output.obj`, CL.exe alır `output.obj` giriş dosyasının adı. Sorunu gidermek için alanı kaldırın:
+/Fo ve `output.obj`arasında bir boşluk olduğundan, CL. exe giriş dosyasının adı olarak `output.obj` alır. Sorunu gidermek için, alanı kaldırın:
 
 ```
 cl /c /Fooutput.obj input.c

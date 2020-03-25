@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - BK1517
 ms.assetid: 24391f42-0a3e-40a9-9991-c8b9a6a7b1c7
-ms.openlocfilehash: 455e028a72cce132c49e0d0d778628ee21bf3a0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47c99d21828512c063703edf541c017843708da5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380532"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197529"
 ---
 # <a name="bscmake-error-bk1517"></a>BSCMAKE Hatası BK1517
 
-kaynak dosyası /Yc ve /Yu ile derlendi sbrfile
+sbrfile için kaynak dosyası/Yc ve/Yu ile derlendi
 
-.Sbr dosyası kendine başvuruyor. /Yc ile derledikten sonra /Yu ile büyük olasılıkla derlendiğini. Derleyici seçeneği için kaynak dosyası /Yc için sıfırlama ve ardından **yeniden** yeni .sbr dosyaları oluşturmak için. Kaynak dosya /Yu ile derlemeniz yok.
+. Sbr dosyası kendi kendine başvurur. /YC. ile derleme sonrasında/Yu ile büyük olasılıkla yeniden derlenir Kaynak dosyanın derleyici seçeneğini/YC olarak sıfırlayın, sonra yeni. sbr dosyaları oluşturmak için **yeniden oluştur** ' u seçin. Kaynak dosyayı/Yuile yeniden derleyin.

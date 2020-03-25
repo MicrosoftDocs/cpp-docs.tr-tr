@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0032
 ms.assetid: bc6acbea-4041-4237-8b5a-f0434705d89f
-ms.openlocfilehash: f1f292f3979c993a8fa8cb8ff44653ac7124b121
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 62efa0e72c6fbe4bd38983ff0507923392427c04
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344355"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192490"
 ---
 # <a name="project-build-error-prj0032"></a>Proje Derleme Hatası PRJ0032
 
-Proje düzeyindeki özel derleme adımı için 'Outputs' özelliğini 'out 'için macro_expansion' sonucunu veren makrosu' içeriyor.
+Proje düzeyi özel derleme adımının ' çıktılar ' özelliği ' macro_expansion ' olarak değerlendirilen ' Macro ' içeriyor.
 
-Özel derleme adımı bir proje üzerinde büyük olasılıkla bir makro değerlendirme sorunu nedeniyle hatalı çıkış vardı. Bu hata, da yolu yanlış, karakter veya bir dosya yolunda geçersiz karakter birleşimlerinin içeren biçimlendirildiğini anlamına gelebilir.
+Bir projede özel derleme adımı muhtemelen bir makro değerlendirmesi sorunu nedeniyle hatalı çıktıya sahipti. Bu hata, yolun hatalı biçimlendirildiğini, bir dosya yolunda geçersiz olan karakterler veya karakter bileşimleri içeriyor anlamına da gelir.
 
-Bu hatayı gidermek için makro düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.
+Bu hatayı çözmek için, makroyu çözün veya yol belirtimini giderin. Değerlendirilen yol, proje dizininden mutlak bir yoldur.

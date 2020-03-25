@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-ms.openlocfilehash: e30a63ba48434196478b52283880864d3e4ae6ea
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 59028c6d886630ef7db115a2ea93327669b2fcfd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450761"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192932"
 ---
 # <a name="project-build-error-prj0003"></a>Proje Derleme Hatası PRJ0003
 
-> Hata UNICODE '*komut satırı*'.
+> '*Komut satırı*' üretilirken hata oluştu.
 
-*Komut satırı* komut biçimlendirilmiş girişinde gelen **özellik sayfaları** iletişim kutusu, bir hata kodu döndürdü, ancak içinde hiçbir bilgi görünmüyor **çıkış** penceresi.
+**Özellik sayfaları** iletişim kutusundaki girişten oluşturulan *komut satırı* komutu bir hata kodu döndürdü, ancak **Çıkış** penceresinde bilgi görünmüyor.
 
-Bu hata için olası nedenler şunlardır:
+Bu hatanın olası nedenleri şunlardır:
 
-- Projenize ATL sunucu üzerinde bağlıdır. Visual Studio 2008'de başlayarak, ATL Sunucu artık Visual Studio'nun bir parçası olarak dahil edilir, ancak CodePlex projesi bir paylaşılan kaynak olarak yayımlanmıştır. ATL Sunucu kaynak kodu ve Araçları'nı indirmek için Git [ATL Sunucu kitaplığının ve araçları](https://go.microsoft.com/fwlink/p/?linkid=81979).
+- Projeniz ATL sunucusuna bağlıdır. Visual Studio 2008 ' den başlayarak, ATL Server artık Visual Studio 'nun bir parçası olarak dahil değildir, ancak CodePlex 'te paylaşılan kaynak proje olarak yayımlanmıştır. ATL sunucusu kaynak kodunu ve araçlarını indirmek için, [ATL sunucu kitaplığı ve araçları](https://go.microsoft.com/fwlink/p/?linkid=81979)' na gidin.
 
 - Düşük sistem kaynakları. Bu sorunu çözmek için bazı uygulamaları kapatın.
 
-- Yeterli güvenlik ayrıcalıkları. Yeterli ayrıcalıklara sahip olduğunuzu doğrulayın.
+- Yetersiz güvenlik ayrıcalıkları. Yeterli güvenlik ayrıcalıklarına sahip olduğunuzu doğrulayın.
 
-- Belirtilen çalıştırılabilir yolu **VC ++ dizinleri** çalıştırmayı denediğiniz araç için yolu içermiyor. Bilgi için [derleyici ayarlayın ve derleme özellikleri](../../build/working-with-project-properties.md)
+- **VC + + dizinlerinde** belirtilen yürütülebilir yollar, çalıştırmayı denediğiniz aracın yolunu içermez. Bilgi için bkz. [derleyici ve derleme özelliklerini ayarlama](../../build/working-with-project-properties.md)
 
-- Derleme görevleri dosyası projeleri için üzerinde çalışacak bir komut eksik **derleme komut satırı** veya **yeniden komut satırı**.
+- Derleme görevleri dosyası projeleri için, **derleme komut satırı** veya **yeniden oluşturma komut satırı**üzerinde çalıştırılacak bir komutun eksik olması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

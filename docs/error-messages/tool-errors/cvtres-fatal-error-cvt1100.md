@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - CVT1100
 ms.assetid: 886e88dd-5818-4b5f-84f2-d2a3d75f0aaf
-ms.openlocfilehash: c7e65ccc79852ec99dd2406398fe1b3cdecacde7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b7e67df24d41b1e8826673146fcc27fd93d143fd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406281"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196553"
 ---
 # <a name="cvtres-fatal-error-cvt1100"></a>CVTRES Önemli Hatası CVT1100
 
-Yinelenen kaynak — türü:, ad: ad, dil: dil, bayraklar: bayrakları, boyut: boyut
+yinelenen kaynak — tür: tür, ad: ad, dil: Language, Flags: Flags, SIZE: size
 
-Belirtilen kaynağa birden çok kez belirtildi.
+Verilen kaynak birden çok kez belirtildi.
 
-Bağlayıcı, bir tür kitaplığı oluşturma ve sizin belirtmediğiniz bu hatayı alabilir [/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md) ve projenize bir kaynak zaten 1 kullanır. Bu durumda, /TLBID belirtin ve 65535'e kadar başka bir sayı belirtin.
+Bağlayıcı bir tür kitaplığı oluşturuyor ve [/Tldeklarasyon](../../build/reference/tlbid-specify-resource-id-for-typelib.md) belirtmediyseniz ve projenizde bir kaynak zaten 1 kullanıyorsa bu hatayı alabilirsiniz. Bu durumda,/TLDEKLARASYON belirtin ve 65535 kadar bir sayı belirtin.

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2821
+title: Derleyici hatası C2821
 ms.date: 11/04/2016
 f1_keywords:
 - C2821
 helpviewer_keywords:
 - C2821
 ms.assetid: e8d71988-a968-4484-94db-e8c3bad74a4a
-ms.openlocfilehash: 5c725d9648a7800c68a2fbff20e594a400c296c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d099c4a0f6e1ea77a25213e3873b8a0814e28dcd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208197"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202001"
 ---
-# <a name="compiler-error-c2821"></a>Derleyici Hatası C2821
+# <a name="compiler-error-c2821"></a>Derleyici hatası C2821
 
-'operator new' için ilk biçimsel parametre 'unsigned int' olmalıdır
+' operator New ' için ilk biçimsel parametre ' unsigned int ' olmalıdır
 
-İlk biçimsel parametresi [new işleci](../../standard-library/new-operators.md#op_new) imzasız olmalıdır `int`.
+[New işlecinin](../../standard-library/new-operators.md#op_new) ilk biçimsel parametresi işaretsiz bir `int`olmalıdır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2821 oluşturur:
+Aşağıdaki örnek C2821 oluşturur:
 
 ```cpp
 // C2821.cpp

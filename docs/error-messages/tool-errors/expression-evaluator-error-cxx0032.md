@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CXX0032
 - CAN0032
 ms.assetid: 78f56977-6b6d-42e2-b71d-c392525bb18b
-ms.openlocfilehash: 77e17b7a758ea2892115b75a626b6d796ad42234
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 509a9a70eca076fd232901bd9c1cbbb545f98304
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397048"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195559"
 ---
 # <a name="expression-evaluator-error-cxx0032"></a>İfade Değerlendirici Hatası CXX0032
 
-0 ile bölme
+0 ile Böl
 
-Geçersiz sıfır, bir bölen ifade içeriyor. Bu bölen değişmez değer sıfır sayı olabilir veya sıfır olarak değerlendirilen bir ifade olabilir.
+İfade, sıfır böleni içeriyor, bu geçersizdir. Bu bölen, sıfırdan bir sayı olabilir veya sıfır sonucunu veren bir ifade olabilir.
 
-Bu hata için CAN0032 aynıdır.
+Bu hata CAN0032 ile aynıdır.

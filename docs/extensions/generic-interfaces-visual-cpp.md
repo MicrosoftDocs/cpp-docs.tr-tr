@@ -6,22 +6,22 @@ helpviewer_keywords:
 - generic interfaces
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
-ms.openlocfilehash: 035636f2723cd949f5a1852b3d5500a20f5fb493
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35dba37f1441144a3f7276388be1f61bebc84139
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350630"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182025"
 ---
 # <a name="generic-interfaces-ccli"></a>Genel arabirimler (C++/CLI)
 
-Sınıflarında tür parametreleri için kısıtlamalar arabirimleri üzerinde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C++/CLI)](generic-classes-cpp-cli.md)).
+Sınıflarda tür parametrelerine uygulanan kısıtlamalar, arabirimlerde tür parametrelerine uygulananlarla aynıdır (bkz. [genel sınıflar (C++/CLI)](generic-classes-cpp-cli.md)).
 
-İşlev aşırı yüklemesi denetleyen kuralları işlevleri Genel sınıflar veya genel arabirimler için aynıdır.
+İşlev aşırı yüklemesini denetleyen kurallar, genel sınıflar veya genel arabirimler içindeki işlevler için aynıdır.
 
-Açık arabirim üyesi uygulamalarını oluşturulmuş arabirimi türleriyle (aşağıdaki örneklere bakın) basit arabirim türleri ile aynı şekilde çalışır.
+Açık arabirim üyesi uygulamalar, basit arabirim türleriyle aynı şekilde oluşturulmuş arabirim türleriyle çalışır (aşağıdaki örneklere bakın).
 
-Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](interface-class-cpp-component-extensions.md).
+Arabirimler hakkında daha fazla bilgi için bkz. [interface class](interface-class-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,36 +32,36 @@ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](interfac
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Öznitelikleri*<br/>
-(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.
+*özelliklerine*<br/>
+Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikler**.
 
 *sınıf anahtarı*<br/>
-**sınıf** veya **typename**
+**Class** veya **TypeName**
 
-*tür-parametresi-tanımlayıcıları*<br/>
-Tanımlayıcıları virgülle ayrılmış listesi.
+*tür-parametre tanımlayıcıları*<br/>
+Virgülle ayrılmış tanımlayıcılar listesi.
 
-*tür parametresi kısıtlamaları tümceleri*<br/>
-Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
+*tür-parametre-kısıtlamalar-yan tümceler*<br/>
+[Genel tür parametrelerindeki (C++/CLI) kısıtlamalarda](constraints-on-generic-type-parameters-cpp-cli.md) belirtilen formu alır
 
-*erişilebilirlik değiştiricileri*<br/>
-(İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel ve özel**).
+*Erişilebilirlik-değiştiriciler*<br/>
+Seçim Erişilebilirlik değiştiricileri (örn. **Genel, özel**).
 
-*tanımlayıcı*<br/>
+*Tanımlayıcısını*<br/>
 Arabirim adı.
 
-*temel-liste*<br/>
-(İsteğe bağlı) Virgülle ayırarak bir veya daha fazla açık temel arabirimlerini içeren liste.
+*temel liste*<br/>
+Seçim Virgülle ayrılmış bir veya daha fazla açık temel arabirim içeren bir liste.
 
-*Arabirim-gövdesi*<br/>
+*arabirim-gövde*<br/>
 Arabirim üyelerinin bildirimleri.
 
 *Bildirimciler*<br/>
-(İsteğe bağlı) Bu türe dayanan değişkenlerin bildirimleri.
+Seçim Bu türe göre değişkenlerin bildirimleri.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bildirin ve genel bir arabirim örneği gösterilmektedir. Örnekte, genel arabirim `IList<ItemType>` bildirilir. Ardından iki genel sınıfları tarafından uygulanan `List1<ItemType>` ve `List2<ItemType>`, farklı uygulamaları.
+Aşağıdaki örnekte, genel bir arabirimin nasıl bildirildiği ve örneklendirileceğini gösterilmektedir. Örnekte, genel arabirim `IList<ItemType>` bildirilmiştir. Daha sonra, farklı uygulamalarla `List1<ItemType>` ve `List2<ItemType>`iki genel sınıf tarafından uygulanır.
 
 ```cpp
 // generic_interface.cpp
@@ -238,7 +238,7 @@ List2
 
 ## <a name="example"></a>Örnek
 
-Bu örnek bir genel arabirim bildirir `IMyGenIface`ve iki genel olmayan arabirimleri `IMySpecializedInt` ve `ImySpecializedString`, specialize `IMyGenIface`. İki özel arabirimler ardından iki sınıf tarafından uygulanan `MyIntClass` ve `MyStringClass`. Örnek genel arabirimler uzmanlaşmış, genel ve genel olmayan arabirimleri oluşturma ve arabirimleri üzerinde açıkça uygulanan üyeleri çağırmak nasıl gösterir.
+Bu örnek, `IMyGenIface`özelleştirecek genel bir arabirim, `IMyGenIface`ve genel olmayan iki arabirim `IMySpecializedInt` ve `ImySpecializedString`bildirir. Bu iki özel arabirim daha sonra iki sınıf tarafından uygulanır, `MyIntClass` ve `MyStringClass`. Örnek, genel arabirimlerin nasıl özelleştirilecek, genel ve genel olmayan arabirimlerin nasıl oluşturulacağı ve arabirimlerde açıkça uygulanan üyelerin nasıl çağrılacağını gösterir.
 
 ```cpp
 // generic_interface2.cpp

@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - R6030
 ms.assetid: 0238a6c3-a033-4046-8adc-f8f99d961153
-ms.openlocfilehash: 7f5c61d9b39b1d655bcbf3d42ea870370ddf2842
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d7160623d4e1eb83240c09e637c780fefc0d43d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400025"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197125"
 ---
 # <a name="c-runtime-error-r6030"></a>C Çalışma Zamanı Hatası R6030
 
 CRT başlatılmadı
 
 > [!NOTE]
-> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu sorun genellikle belirli güvenlik yazılım programları veya nadiren de olsa bir programın hata neden olur.
+> Bir uygulamayı çalıştırırken bu hata iletisiyle karşılaşırsanız, bir iç sorun olduğundan uygulama kapatıldı. Bu sorun genellikle belirli güvenlik yazılımı programlarından veya nadiren, programdaki bir hata nedeniyle oluşur.
 >
 > Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
-> - Bu sorunu giderme için yönergeler güvenlik yazılımının olabilir. Ayrıntılar için güvenlik yazılım satıcısının Web sitesine bakın. Alternatif olarak, güvenlik yazılımının güncelleştirilmiş sürümlerini denetlemek ya da farklı güvenlik yazılımı deneyin.
-> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Güvenlik yazılımınız bu sorunu azaltmaya yönelik belirli yönergelere sahip olabilir. Ayrıntılar için güvenlik yazılımı satıcınızın Web sitesine bakın. Alternatif olarak, güvenlik yazılımınızın güncelleştirilmiş sürümlerini denetleyin veya farklı güvenlik yazılımlarını deneyin.
+> - Programı onarmak ya da yeniden yüklemek için **Denetim Masası** 'ndaki **uygulamalar ve Özellikler** veya **Programlar ve Özellikler** sayfasını kullanın.
+> - Yazılım güncelleştirmeleri için **Denetim Masası** 'ndaki **Windows Update** kontrol edin.
 > - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
-**Programcıları için bilgi**
+**Programcılar için bilgiler**
 
-C çalışma zamanı (CRT) kullanıyorsanız, ancak CRT başlatma kodunu yürütülmedi bu hata oluşur. Bağlayıcı geçiş yaparsanız, bu hatayı almak olası [/Entry](../../build/reference/entry-entry-point-symbol.md) başlangıç adresi, genellikle varsayılan geçersiz kılmak için kullanılan **mainCRTStartup**, **wmainCRTStartup** için bir Konsol EXE **WinMainCRTStartup** veya **wWinMainCRTStartup** için bir Windows EXE veya **_DllMainCRTStartup** bir DLL için. Yukarıdaki işlevlerden birini başlangıç olarak adlandırılan sürece, C çalışma zamanı başlatılmayacak. C Çalışma Zamanı Kitaplığı'na bağlamak ve normal kullandığınızda varsayılan olarak bu başlangıç İşlevler normalde çağrılır **ana**, **wmain**, **WinMain**, veya  **DllMain** giriş noktaları.
+Bu hata, C çalışma zamanı (CRT) kullanıyorsanız oluşur, ancak CRT başlangıç kodu yürütülmedi. Varsayılan başlangıç adresini (genellikle **mainCRTStartup**, BIR konsol exe için **wmainCRTStartup** , bir Windows exe Için **WinMainCRTStartup** veya **wwinmaincrtstartup** veya bir dll için **_DllMainCRTStartup** geçersiz kılmak için kullanılan bağlayıcı anahtarı [/Entry](../../build/reference/entry-entry-point-symbol.md) kullanılırsa bu hatayı almak mümkündür. Yukarıdaki işlevlerden biri başlangıçta çağrılmamışsa, C çalışma zamanı başlatılmayacak. Bu başlangıç işlevleri genellikle C çalışma zamanı kitaplığı ' na bağlantı oluşturduğunuzda ve normal **Main**, **wmain**, **wınmain**veya **DllMain** giriş noktalarını kullandığınızda varsayılan olarak çağrılır.
 
-Başka bir program, bazı DLL Kitaplığı çağrıları yakalamak için kod ekleme teknikleri kullanır. Bu hatayı almak mümkündür. Bazı müdahale eden güvenlik programlarını bu tekniği kullanın. Önce Visual Studio 2015 Visual C++ sürümlerinde, sorunu gidermek için bir statik olarak bağlanan CRT kitaplığı kullanmak da mümkündür, ancak bu güvenlik ve uygulama güncelleştirmelerini nedenleriyle önerilmez. Bu sorunu düzeltmek için son kullanıcı eylem gerektirebilir.
+Başka bir program belirli DLL kitaplığı çağrılarını yakalamak için kod ekleme tekniklerini kullandığında bu hatayı almak da mümkündür. Bazı güvenlik programları bu tekniği kullanır. Visual Studio 2015 ' C++ den önceki Visual sürümlerinde, sorunu gidermek için statik olarak BAĞLANMıŞ bir CRT kitaplığı kullanmak mümkündür, ancak bu, güvenlik ve uygulama güncelleştirmelerinin nedenleri için önerilmez. Bu sorunu düzeltmek için son kullanıcı eylemi gerekebilir.

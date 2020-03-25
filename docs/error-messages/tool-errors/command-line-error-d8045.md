@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - D8045
 ms.assetid: 01c8808c-bac1-4b4d-8a90-b595f95e9318
-ms.openlocfilehash: 7964c2539b5358d2d946e530c4ee75110857446d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 05a2d3851e58062e1e326781a223e2f4b0346620
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214202"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196852"
 ---
 # <a name="command-line-error-d8045"></a>Komut Satırı Hatası D8045
 
-/ CLR seçeneğiyle ' dosya' C dosyası derlenemiyor
+' File ' C dosyası/clr seçeneğiyle derlenemiyor
 
-Yalnızca C++ kaynak kodu dosyaları kullanan derleme için geçirilebilir **/CLR**.  Kullanım **/TP** bir .c dosyası .cpp dosyası; olarak derlemek için bkz: [/Tc, /Tp, /TC, /TP (kaynak dosya türünü belirtin)](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) daha fazla bilgi için.
+C++ **/Clr**kullanan bir derlemeye yalnızca kaynak kodu dosyaları geçirilebilir.  . C dosyasını. cpp dosyası olarak derlemek için **/TP** kullanın; daha fazla bilgi için bkz. [/TC,/TP,/TC,/TP (kaynak dosya türünü belirtin)](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) .
 
-Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
-ATL uygulamasını Visual C++ kullanarak derleme yaparsanız D8045 da meydana gelebilir. Bkz: [nasıl yapılır: / CLR'ye geçiş](../../dotnet/how-to-migrate-to-clr.md) daha fazla bilgi için.
+Ayrıca, Visual C++kullanarak atl uygulaması derlerseniz de D8045 oluşabilir. Daha fazla bilgi için bkz. [nasıl yapılır:/clr 'e geçiş](../../dotnet/how-to-migrate-to-clr.md) .

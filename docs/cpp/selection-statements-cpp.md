@@ -6,18 +6,18 @@ helpviewer_keywords:
 - selection statements [C++], syntax
 - selection statements
 ms.assetid: 2ce662fc-5e62-461b-ac31-2c159d8ef33b
-ms.openlocfilehash: 51165a4fa609f79c19b81b7660a23127a7520358
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35ae97c23b802faaa2cfafe74940ea6a22d52e8b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267251"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80178841"
 ---
 # <a name="selection-statements-c"></a>Seçim Deyimleri (C++)
 
-C++ seçme deyimleri [varsa](../cpp/if-else-statement-cpp.md) ve [geçiş](../cpp/switch-statement-cpp.md), kodun bölümlerini koşullu olarak yürütme yöntemi sağlar.
+Ve C++ [Switch](../cpp/switch-statement-cpp.md)seçim deyimleri [, kod](../cpp/if-else-statement-cpp.md) bölümlerini koşullu olarak yürütmek için bir yol sağlar.
 
-[__İf_exists](../cpp/if-exists-statement.md) ve [__if_not_exists](../cpp/if-not-exists-statement.md) deyimleri bir simgenin kodu koşullu olarak dahil etmenize imkan sağlar.
+[__İf_exists](../cpp/if-exists-statement.md) ve [__if_not_exists](../cpp/if-not-exists-statement.md) deyimleri, bir simgenin varlığına bağlı olarak kodu koşullu olarak eklemenize olanak tanır.
 
 Her deyimin sözdizimi için tek tek ilgili konulara bakın.
 

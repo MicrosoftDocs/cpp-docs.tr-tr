@@ -36,12 +36,12 @@ helpviewer_keywords:
 - GetBindings method
 - ReleaseAccessor method
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-ms.openlocfilehash: f1865089100ac7f60e8c011e72eedb3d0a3f8470
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 6b9830ac2b6f1eacedd1b59184292f2148087093
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447067"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80210875"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
 
@@ -92,7 +92,7 @@ Sütun bilgileri için depolama birimi. Varsayılan değer, anahtar öğesinin b
 
 Bu, satır kümelerinde ve komutlarda zorunludur. OLE DB, sağlayıcıların bir [Dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) yapıları dizisine bir etiket olan BIR HACCESSOR uygulaması olmasını gerektirir. `IAccessorImpl` tarafından sunulan Herişimcileri `BindType` yapıların adresleridir. Varsayılan olarak `BindType`, `IAccessorImpl`şablon tanımında bir `ATLBINDINGS` olarak tanımlanır. `BindType`, `DBBINDING` dizisindeki öğelerin sayısını ve bir başvuru sayısı ve erişimci bayraklarını izlemek için `IAccessorImpl` tarafından kullanılan bir mekanizma sağlar.
 
-## <a name="iaccessorimpl"></a>IAccessorImpl:: IAccessorImpl
+## <a name="iaccessorimpliaccessorimpl"></a><a name="iaccessorimpl"></a>IAccessorImpl:: IAccessorImpl
 
 Oluşturucu.
 
@@ -102,7 +102,7 @@ Oluşturucu.
 IAccessorImpl();
 ```
 
-## <a name="addrefaccessor"></a>IAccessorImpl:: AddRefAccessor
+## <a name="iaccessorimpladdrefaccessor"></a><a name="addrefaccessor"></a>IAccessorImpl:: AddRefAccessor
 
 Varolan bir erişimciye bir başvuru sayısı ekler.
 
@@ -117,7 +117,7 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 
 *OLE DB Programcı başvurusunda* [IAccessor:: AddRefAccessor](/previous-versions/windows/desktop/ms714978(v=vs.85)) öğesine bakın.
 
-## <a name="createaccessor"></a>IAccessorImpl:: CreateAccessor
+## <a name="iaccessorimplcreateaccessor"></a><a name="createaccessor"></a>IAccessorImpl:: CreateAccessor
 
 Bir bağlama kümesinden erişimci oluşturur.
 
@@ -136,7 +136,7 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 
 *OLE DB Programcı başvurusunda* [IAccessor:: CreateAccessor](/previous-versions/windows/desktop/ms720969(v=vs.85)) öğesine bakın.
 
-## <a name="getbindings"></a>IAccessorImpl:: GetBindings
+## <a name="iaccessorimplgetbindings"></a><a name="getbindings"></a>IAccessorImpl:: GetBindings
 
 Bir erişimcideki tüketiciden temel sütun bağlamalarını döndürür.
 
@@ -153,7 +153,7 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 
 *OLE DB Programcı başvurusunda* [IAccessor:: GetBindings](/previous-versions/windows/desktop/ms721253(v=vs.85)) öğesine bakın.
 
-## <a name="releaseaccessor"></a>IAccessorImpl:: ReleaseAccessor
+## <a name="iaccessorimplreleaseaccessor"></a><a name="releaseaccessor"></a>IAccessorImpl:: ReleaseAccessor
 
 Bir erişimci yayınlar.
 

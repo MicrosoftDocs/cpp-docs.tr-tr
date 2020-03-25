@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4102
 ms.assetid: 349f308a-daf3-48c6-bd53-6c38b73f8880
-ms.openlocfilehash: 1a0c5389a5f8f6f2dc885fccecf34313308bf769
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 53a68c476e307143d30f3bdbec88c0edb7d1bbd7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051887"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80199090"
 ---
 # <a name="compiler-warning-level-3-c4102"></a>Derleyici Uyarısı (düzey 3) C4102
 

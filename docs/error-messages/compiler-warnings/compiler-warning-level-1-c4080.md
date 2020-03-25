@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4080
 ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
-ms.openlocfilehash: 5ecc50d4f967826cca691fae4f119c1dee2efef5
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: a4e216ff455404514e1cd5f76b820111dba83a6d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626887"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200323"
 ---
 # <a name="compiler-warning-level-1-c4080"></a>Derleyici Uyarısı (düzey 1) C4080
 
 kesim adı için tanımlayıcı bekleniyordu; ' symbol ' bulundu
 
-[#Pragma alloc_text](../../preprocessor/alloc-text.md) içindeki segmentin adı bir dize veya tanımlayıcı olmalıdır. Geçerli bir tanımlayıcı bulunamazsa derleyici pragma öğesini yoksayar.
+[#Pragma alloc_text](../../preprocessor/alloc-text.md) segmentinin adı bir dize veya tanımlayıcı olmalıdır. Geçerli bir tanımlayıcı bulunamazsa derleyici pragma öğesini yoksayar.
 
 Aşağıdaki örnek C4080 oluşturur:
 

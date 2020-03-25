@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4101
 ms.assetid: d98563cd-9dce-4aae-8f12-bd552a4ea677
-ms.openlocfilehash: 5effdbb4c7e83999655641a248c389c7c4d260d0
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 0ac34fbaf4cbb54583394dff5b8645fe56b8b9cd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051897"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80199052"
 ---
 # <a name="compiler-warning-level-3-c4101"></a>Derleyici Uyarısı (düzey 3) C4101
 

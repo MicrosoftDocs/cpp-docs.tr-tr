@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1127
 ms.assetid: 45404700-1420-4f24-97e1-efb7252ffd8f
-ms.openlocfilehash: 4144e95261df9a16d6cbb094a2785121b3bdfd92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4fa060eae944b090bfc49144ddcb03bc133b5be0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255085"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195337"
 ---
 # <a name="linker-tools-error-lnk1127"></a>Bağlayıcı Araçları Hatası LNK1127
 
-Kitaplık bozuk
+kitaplık bozuk
 
-Kitaplık dosyası bozuk. Kitaplığı yeniden oluşturun.
+Kitaplık dosyası bozuk. Kitaplığı yeniden derleyin.

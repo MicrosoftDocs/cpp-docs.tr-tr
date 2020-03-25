@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - U4006
 ms.assetid: 830ad63c-d454-47a3-840c-c272f29ef3d2
-ms.openlocfilehash: 6e60c0e09e13e16d2b79256b93b9d6a9d24d9ce0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 217126d0946579780fd7c4acc971fd2cc32610c6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298145"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193192"
 ---
 # <a name="nmake-warning-u4006"></a>NMAKE Uyarısı U4006
 
-Özel makro tanımsız: 'makroadı'
+özel makro tanımsız: ' makroadı '
 
-Belirtilen özel makro adı tanımlı değildir ve hiçbir öğeye genişletilmez.
+Verilen özel makro adı tanımsız ve hiçbir öğeye genişletilmez.

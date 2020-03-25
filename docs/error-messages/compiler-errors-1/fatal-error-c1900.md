@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1900
 ms.assetid: 3aaa583b-4c1a-45de-aa34-527d806f2cb5
-ms.openlocfilehash: c4622dd4552f7bfcc822a3aab4d5783146d68ac7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a802928315126b72397ba6e8cc61b66f46deb41
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165729"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202846"
 ---
 # <a name="fatal-error-c1900"></a>Önemli hata C1900
 
-> Arasında IL uyuşmazlığı '*tool1*'version'*Sayı1*'ve'*tool2*'version'*sayı2*'
+> '*Tool1*' sürümü '*Sayı1*' ve '*Tool2*' sürümü '*sayı2*' arasında Il uyuşmazlığı
 
-Araçlar çeşitli derleyici geçişlerinde çalıştırma eşleşmiyor. *Sayı1* ve *sayı2* dosyalarda tarihleri bakın. Örneğin, 1. geçiş, derleyici ön uç çalıştırmalar (c1.dll) ve 2. geçiş, son çalıştırmalar (c2.dll) derleyici yedekleyin. Dosyaları tarihlerinde eşleşmesi gerekir.
+Derleyicinin çeşitli geçişlerinde çalıştırılan araçlar eşleşmez. *Sayı1* ve *sayı2* dosyalardaki tarihlere başvurur. Örneğin, 1. geçişte, derleyici ön ucu (C1. dll) ve pass 2 ' de, derleyici arka ucu (C2. dll) çalıştırılır. Dosyalardaki tarihlerin eşleşmesi gerekir.
 
-Bu sorunu gidermek için Visual Studio için tüm güncelleştirmelerin uygulandığından emin emin olun. Sorun devam ederse **programlar ve Özellikler** Visual Studio'yu yeniden yükleyin veya onarmak için Windows Denetim Masası'nda.
+Bu sorunu onarmak için tüm güncelleştirmelerin Visual Studio 'ya uygulandığından emin olun. Sorun devam ederse, Visual Studio 'Yu onarmak veya yeniden yüklemek için Windows Denetim Masası 'ndaki **Programlar ve Özellikler** ' i kullanın.

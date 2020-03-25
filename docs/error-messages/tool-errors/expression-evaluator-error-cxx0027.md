@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CAN0027
 - CXX0027
 ms.assetid: 0127cfc0-c292-4923-a58b-25542343cdad
-ms.openlocfilehash: 3d67ba9acaea62573c7ec8583116c922ca3b1b9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e68a0236145203bd37906e7f4645b1828d803779
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359793"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195740"
 ---
 # <a name="expression-evaluator-error-cxx0027"></a>İfade Değerlendirici Hatası CXX0027
 
-TP addr l-değeri
+TP addr l değeri değil
 
-İfade sözdizimini denetleyin.
+İfadenin söz dizimini denetleyin.
 
-Bu hata için CAN0027 aynıdır.
+Bu hata CAN0027 ile aynıdır.

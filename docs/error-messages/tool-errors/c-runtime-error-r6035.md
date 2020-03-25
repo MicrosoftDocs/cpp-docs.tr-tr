@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-ms.openlocfilehash: cbade3ce8686c8c293b8d40a73c546805e42215d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c497347689bcfc5528280bd22aa5183d5fafd61
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399986"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80197010"
 ---
 # <a name="c-runtime-error-r6035"></a>C Çalışma Zamanı Hatası R6035
 
-Bu güvenlik tanımlama bilgisinde bağlı olan bir işlev etkin durumdayken Microsoft Visual C++ çalışma zamanı kitaplığı, hatası R6035 - Bu uygulamadaki bir modül modülün genel güvenlik tanımlama bilgisi başlatılıyor.  __Security_init_cookie önceki çağırın.
+Microsoft Visual C++ çalışma zamanı kitaplığı, Error R6035-bu uygulamadaki bir modül, bu güvenlik tanımlama bilgisine bağlı bir işlev etkinken modülün genel güvenlik tanımlama bilgisini başlatıyor.  Daha önce __security_init_cookie çağırın.
 
-[__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md) genel güvenlik tanımlama bilgisi ilk kullanımından önce çağrılmalıdır.
+[__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md) , genel güvenlik tanımlama bilgisinin ilk kullanılmadan önce çağrılmalıdır.
 
-Genel güvenlik tanımlama bilgisi ile derlenmiş kodda arabellek taşması koruma için kullanılan [/GS (arabellek güvenlik denetimi)](../../build/reference/gs-buffer-security-check.md) ve yapılandırılmış özel durum işleme kullanan kod. Esas olarak, giriş taşması korumalı bir işleve tanımlama bilgisi yığına yerleştirilir ve Çıkışta, yığında değeri genel tanımlama bilgisinin karşı karşılaştırılır. Aralarındaki fark, bir arabellek taşması oluştu ve programı hemen sonlandırılması sonuçları gösterir.
+Genel güvenlik tanımlama bilgisi, [/GS (arabellek güvenlik denetimi)](../../build/reference/gs-buffer-security-check.md) ile derlenen kodda ve yapılandırılmış özel durum işleme kullanan kodda arabellek taşma koruması için kullanılır. Temelde, taşma korumalı bir işleve girişte, tanımlama bilgisi yığına konur ve çıkışta, yığındaki değer genel tanımlama bilgisine göre karşılaştırılır. Aralarında herhangi bir farklılık, bir arabellek taşmasının gerçekleştiğini ve programın anında sonlandırmasına neden olduğunu gösterir.
 
-Hatası R6035 gösteren bir çağrı `__security_init_cookie` korumalı bir işlev girilen sonra yapıldı. Yürütme devam etmek için varsa, yığın tanımlama bilgisinde, artık genel tanımlama bilgisi eşleşir çünkü sahte bir arabellek taşması algılanır.
+Hata R6035, korunan bir işlev girildikten sonra `__security_init_cookie` çağrısının yapıldığını gösterir. Yürütmenin devam etmesi gerekiyorsa, yığındaki tanımlama bilgisi artık genel tanımlama bilgisiyle eşleşmediğinden, bir Spur, arabellek taşması algılanır.
 
-Aşağıdaki örnek DLL göz önünde bulundurun. DLL giriş noktası için DllEntryPoint bağlayıcı ayarlanır [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) seçeneği. Bu DLL çağırmanız gerekir böylece hangi genel güvenlik tanımlama bilgisi, normalde başlatmak CRT'ın başlatma atlar `__security_init_cookie`.
+Aşağıdaki DLL örneğini göz önünde bulundurun. DLL giriş noktası, bağlayıcı [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) seçeneği aracılığıyla DllEntryPoint olarak ayarlanır. Bu, genellikle genel güvenlik tanımlama bilgisini başlatacak olan CRT başlatmasını atlar, bu yüzden DLL 'in kendisi `__security_init_cookie`çağırmalıdır.
 
 ```
 // Wrong way to call __security_init_cookie
@@ -42,9 +42,9 @@ void DllInitialize() {
 }
 ```
 
-Bu örnekte DllEntryPoint yapılandırılmış özel durum işleme ve bu yüzden arabellek taşmalarına algılamak için güvenlik tanımlama bilgisi kullanır çünkü hatası R6035 oluşturur. Zaman DllInitialize çağrılır, genel güvenlik tanımlama bilgisi zaten yığında alındığından.
+Bu örnek, R6035 hatasını üretir çünkü DllEntryPoint yapılandırılmış özel durum işlemeyi kullanır ve bu nedenle arabellek taşmalarını algılamak için güvenlik tanımlama bilgisini kullanır. DLCI 'nin çağrılışında, genel güvenlik tanımlama bilgisi yığına zaten konur.
 
-Doğru yolu; Bu örnekte gösterilmiştir:
+Bu örnekte doğru şekilde gösterilmiştir:
 
 ```
 // Correct way to call __security_init_cookie
@@ -63,11 +63,11 @@ void DllEntryHelper() {
 }
 ```
 
-Bu durumda, DllEntryPoint arabellek taşmalarına karşı korumalı değildir (yerel dize arabellek yok sahiptir ve yapılandırılmış özel durum işleme kullanmaz); Bu nedenle güvenle çağırabilirsiniz `__security_init_cookie`. Ardından, korumalı bir yardımcı işlevini çağırır.
+Bu durumda, DllEntryPoint arabellek taşmalarına karşı korunmaz (yerel dize arabellekleri yoktur ve yapılandırılmış özel durum işleme kullanmaz); Bu nedenle, `__security_init_cookie`güvenle çağırabilir. Ardından, korunan bir yardımcı işlevi çağırır.
 
 > [!NOTE]
->  Hata iletisi R6035 x86 tarafından oluşturulan yalnızca CRT hata ayıklama ve yapılandırılmış özel durum işleme, ancak bir koşul için bir hata özel durum biçimlerinin yanı sıra, tüm platformlarda, C++ EH gibi işleyen.
+>  Hata iletisi R6035 yalnızca x86 hata ayıklama CRT ve yalnızca yapılandırılmış özel durum işleme tarafından oluşturulur, ancak koşul tüm platformlarda bir hata ve C++ Eh gibi özel durum işleme biçimleri için bir hatadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC güvenlik özellikleri](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)
+[MSVC 'deki güvenlik özellikleri](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)

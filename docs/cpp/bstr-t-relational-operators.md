@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - _bstr_t [C++]
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
-ms.openlocfilehash: 57a9379be6d90cfb574ea0dcc033692762c47990
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a4126eb7771e17db5fb813898d6fa4917f6983bb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222240"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190319"
 ---
-# <a name="bstrt-relational-operators"></a>_bstr_t İlişkisel İşleçleri
+# <a name="_bstr_t-relational-operators"></a>_bstr_t İlişkisel İşleçleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İki karşılaştırır `_bstr_t` nesneleri.
+İki `_bstr_t` nesnesini karşılaştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +39,9 @@ bool operator>=(const _bstr_t& str) const throw( );
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işleçler karşılaştırabilirsiniz `_bstr_t` sözlüksel nesnelerini. İşleçler TRUE döndürür. karşılaştırmayı tutarsanız, aksi takdirde false değerini döndürür.
+Bu işleçler iki `_bstr_t` nesne lexıgrafik ' i karşılaştırır. Karşılaştırmalar, karşılaştırma içeriyorsa TRUE, aksi takdirde FALSE döndürür.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

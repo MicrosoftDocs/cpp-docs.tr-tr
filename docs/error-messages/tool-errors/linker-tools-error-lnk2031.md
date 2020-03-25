@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2031
 ms.assetid: 18ed4b6e-3e75-443c-bbd8-2f6030dc89ee
-ms.openlocfilehash: 003b9a58bfb08130f034530f59e2de27efa2ae8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 096ccb7ff443d24e0d53e73a5950faa1e85aeae6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298925"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80194570"
 ---
 # <a name="linker-tools-error-lnk2031"></a>Bağlayıcı Araçları Hatası LNK2031
 
-> için p/invoke üretilemiyor "*function_declaration*" *decorated_name*; çağırma kuralı meta veriler eksik
+> "*function_declaration*" için p/ınvoke oluşturulamıyor *decorated_name*; meta verilerde çağırma kuralı eksik
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yerel bir işlevin saf bir görüntüye alınmaya çalışılırken örtük çağırma kuralları yerel ve saf derlemeler farkı olduğunu unutmayın. Saf görüntüleri hakkında daha fazla bilgi için bkz. [saf ve doğrulanabilen kod (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Yerel bir işlevi saf bir görüntüye aktarmaya çalışırken, örtük çağırma kurallarının yerel ve saf derlemeler arasında farklı olduğunu unutmayın. Saf görüntüler hakkında daha fazla bilgi için bkz. [saf ve Doğrulanabilen kodC++(/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
-**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
 ## <a name="example"></a>Örnek
 
-Bu kod örneği, çağırma kuralı olduğunu örtük olarak dışarı aktarılan, yerel, işlevi içeren bir bileşen oluşturur [__cdecl](../../cpp/cdecl.md).
+Bu kod örneği,, çağıran kuralı örtük olarak [__cdecl](../../cpp/cdecl.md), dışarıya aktarılmış, yerel, işlevi olan bir bileşen oluşturur.
 
 ```cpp
 // LNK2031.cpp
@@ -37,7 +37,7 @@ extern "C" {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yerel işlev tüketen saf bir istemci oluşturur. Ancak, çağırma kuralı altında **/CLR: pure** olduğu [__clrcall](../../cpp/clrcall.md). Aşağıdaki örnek, LNK2031 oluşturur.
+Aşağıdaki örnek, yerel işlevi tüketen bir saf istemci oluşturur. Ancak, **/clr: Pure** altındaki çağırma kuralı [__clrcall](../../cpp/clrcall.md). Aşağıdaki örnek LNK2031 oluşturur.
 
 ```cpp
 // LNK2031_b.cpp
@@ -52,7 +52,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yerel işlev saf bir görüntüden kullanma işlemi gösterilmektedir. Açıkça Not **__cdecl** çağırma kuralı tanımlayıcısı.
+Aşağıdaki örnek, bir saf görüntüden yerel işlevin nasıl kullanıldığını gösterir. Açık **__cdecl** çağırma kuralı belirticisi.
 
 ```cpp
 // LNK2031_c.cpp

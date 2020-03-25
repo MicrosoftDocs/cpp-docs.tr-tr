@@ -9,12 +9,12 @@ helpviewer_keywords:
 - lang namespace
 - cli namespace
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
-ms.openlocfilehash: db6c73d6c52bf97aea5d0fbeeeebdeef87f692cc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: aedb8b7954eaa4bb1cf1060725103cd725c3f180
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509762"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80181830"
 ---
 # <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, Default ve CLI ad alanları (C++/CLI ve C++/CX)
 
@@ -30,7 +30,7 @@ Daha fazla bilgi için bkz. [ad alanları ve türC++görünürlüğü (/CX)](../
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -42,7 +42,7 @@ using namespace cli;
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++/CLI, **CLI** ad alanını destekler. İle `/clr`derlerken, söz dizimi bölümünde **using** deyimleri kapsanır.
+C++/CLI, **CLI** ad alanını destekler. `/clr`ile derlerken, söz dizimi bölümünde **using** deyimleri kapsanır.
 
 Aşağıdaki dil özellikleri **CLI** ad alanında bulunur:
 
@@ -56,7 +56,7 @@ Aşağıdaki dil özellikleri **CLI** ad alanında bulunur:
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
