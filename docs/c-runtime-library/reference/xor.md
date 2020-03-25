@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - xor function
 ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
-ms.openlocfilehash: a1a1fb677087da173ef490b1a533f4c62d463702
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a9b3c393f481f083dcf476ae95cc30541a01ad28
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444188"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170104"
 ---
 # <a name="xor"></a>xor
 

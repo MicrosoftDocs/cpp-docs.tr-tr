@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: a8cd13e27859d09bcaaca1f5f6f1c2750b908fe6
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: c7facb82054eed4ef28c52830b8a3079eecb7fdc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078779"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169961"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıkları ve bileşenleri kullanma
 

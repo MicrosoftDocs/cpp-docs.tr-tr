@@ -5,31 +5,31 @@ helpviewer_keywords:
 - symbols [C++], ATL predefined
 - ATL symbols
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
-ms.openlocfilehash: 6e876fe27bd57194513f637fda90845ca68c59ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e0661dbf3dd02bef5f5f056c5f09b39e33d17364
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390977"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168557"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
 
-Bu simgeleri ATL üstbilgi dosyalarında tanımlanır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler, iletişim kutuları ağırlıklı olarak kullanılır.
+Bu semboller, ATL üstbilgi dosyalarında tanımlanmıştır, ancak standart Windows uygulama işlevlerini ve eylemlerini destekler. Bu semboller genellikle iletişim kutularıyla birlikte kullanılır.
 
-Çalışırken iletişim kutuları ve denetimleri ile de [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bu simgeler görünür [Özellikler penceresi](/visualstudio/ide/reference/properties-window) ortak denetimleri ile ilişkili. Örneği için iletişim kutusu varsa bir **iptal** düğmesini komut IDCANCEL sembolü ile ilişkilendirilmesi, **özellikleri** penceresi.
+[Iletişim kutusu düzenleyicisinde iletişim](../windows/dialog-editor.md)kutuları ve denetimlerle çalışırken, bu semboller ortak denetimlerle ilişkili [Özellikler penceresi](/visualstudio/ide/reference/properties-window) görüntülenir. Örneğin, iletişim kutusunda bir **iptal** düğmesi varsa, bu komut **ÖZELLIKLER** penceresinde IDCANCEL simgesiyle ilişkilendirilir.
 
 |||
 |-|-|
-|IDABORT|(Denetim) İletişim kutusunda İptal düğmesi|
-|IDC_STATIC|(Denetim) Statik denetim|
-|IDCANCEL|(Denetim) İletişim kutusunda İptal düğmesi|
-|IDIGNORE|(Denetim) İletişim kutusu, Yoksay düğmesi|
-|IDNO|(Denetim) İletişim kutusu, düğmesi yok|
-|IDOK|(Denetim) İletişim kutusunda Tamam düğmesi|
-|IDR_ACCELERATOR1|(kaynak) Hızlandırıcı tablosu|
-|IDRETRY|(Denetim) İletişim kutusu, yeniden deneme düğmesi|
-|IDS_PROJNAME|(dize) Geçerli uygulama adı|
-|IDYES|(Denetim) İletişim kutusu, Evet düğmesi|
+|IDABORT|denetimle İletişim kutusu, durdur düğmesi|
+|IDC_STATIC|denetimle Statik denetim|
+|IDCANCEL|denetimle İletişim kutusu, Iptal düğmesi|
+|IDıGNORE|denetimle İletişim kutusu, Yoksay düğmesi|
+|IDNO|denetimle İletişim kutusu, düğme yok|
+|IDOK|denetimle İletişim kutusu, Tamam düğmesi|
+|IDR_ACCELERATOR1|Kaynak Hızlandırıcı tablosu|
+|IDRETRY|denetimle İletişim kutusu, yeniden dene düğmesi|
+|IDS_PROJNAME|dizisinde Geçerli uygulama adı|
+|IDYES|denetimle İletişim kutusu, Evet düğmesi|
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,39 +1,39 @@
 ---
-title: Belge açıklamaları (C++ belgeleri açıklamaları) için önerilen etiketler
+title: Belge açıklamaları için önerilen Etiketler (C++ belge açıklamaları)
 ms.date: 11/04/2016
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
-ms.openlocfilehash: 2a6a2c3983c10579a6cd96b69be81aa7df8b8ee7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e0937b79012f65ba136e18ac81f014be23688f8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319154"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168869"
 ---
 # <a name="recommended-tags-for-documentation-comments"></a>Belge Açıklamaları için Önerilen Etiketler
 
-MSVC derleyicisi, kodunuzda belge açıklamalarını işle ve her derlenecek bir .xdc dosyasını oluşturur ve xdcmake.exe'yi .xdc dosyalarına bir .xml dosyası işleme. Belgeleri oluşturmak için .xml dosyası işleme sitenizde uygulanması gereken bir ayrıntı olur.
+MSVC derleyicisi kodunuzda belge açıklamalarını işleyecek ve her compiland için bir. xdc dosyası oluşturduğunda ve xdcmake. exe. xdc dosyalarını bir. xml dosyasına işleyecek. Belge oluşturmak için. xml dosyasının işlenmesi, sitenizde uygulanması gereken ayrıntıdır.
 
-Etiketler, yapıları türleri gibi işlenir ve tür üyelerini.
+Etiketler türler ve tür üyeleri gibi yapılar üzerinde işlenir.
 
-Etiketler, tür veya üyeler hemen gelmelidir.
+Etiketler, türlerin veya üyelerin hemen önüne gelmelidir.
 
 > [!NOTE]
->  Belge açıklamaları özellikler ve olaylar için satır tanımı dışında bir ad alanına veya uygulanamaz; Belge açıklamaları-sınıf bildirimlerinde gerekir.
+>  Belge açıklamaları, Özellikler ve olaylar için bir ad alanına veya satır dışı tanıma uygulanamaz; Belge açıklamaları sınıf içi bildirimlerde olmalıdır.
 
-Derleyici, geçerli bir XML değil herhangi bir etiket işleyecektir. Aşağıdaki kullanıcı belgeleri, yaygın olarak kullanılan işlevsellik sağlar:
+Derleyici geçerli XML olan herhangi bir etiketi işleyecek. Aşağıdaki Etiketler kullanıcı belgelerinde yaygın olarak kullanılan işlevleri sağlar:
 
 ||||
 |-|-|-|
-|[\<c >](c-visual-cpp.md)|[\<kod >](code-visual-cpp.md)|[\<Örnek >](example-visual-cpp.md)|
-|[\<Özel Durum >](exception-visual-cpp.md)1|[\<Ekle >](include-visual-cpp.md)1|[\<listesi >](list-visual-cpp.md)|
-|[\<para >](para-visual-cpp.md)|[\<param >](param-visual-cpp.md)1|[\<paramref >](paramref-visual-cpp.md)1|
-|[\<izni >](permission-visual-cpp.md)1|[\<REMARKS >](remarks-visual-cpp.md)|[\<returns>](returns-visual-cpp.md)|
-|[\<bkz: >](see-visual-cpp.md)1|[\<SeeAlso >](seealso-visual-cpp.md)1|[\<summary>](summary-visual-cpp.md)|
+|[\<c >](c-visual-cpp.md)|[\<kodu >](code-visual-cpp.md)|[\<örnek >](example-visual-cpp.md)|
+|[\<özel durum >](exception-visual-cpp.md)1|[\<içerme >](include-visual-cpp.md)1|[\<listesi >](list-visual-cpp.md)|
+|[\<paragraf >](para-visual-cpp.md)|[\<param >](param-visual-cpp.md)1|[\<paramref >](paramref-visual-cpp.md)1|
+|[\<izin >](permission-visual-cpp.md)1|[\<açıklamalar >](remarks-visual-cpp.md)|[\<returns>](returns-visual-cpp.md)|
+|[\<bkz. >](see-visual-cpp.md)1|[\<seede >](seealso-visual-cpp.md)1|[\<summary>](summary-visual-cpp.md)|
 |[\<value>](value-visual-cpp.md)|||
 
-1. Derleyici sözdizimini doğrular.
+1. Derleyici söz dizimini doğrular.
 
-Geçerli sürümde MSVC derleyicisi desteklemediği `<paramref>`, diğer Visual Studio derleyicileri tarafından desteklenen bir etiket. Visual C++ destekleyebilir `<paramref>` gelecek sürümlerden birinde.
+Geçerli sürümde, MSVC derleyicisi diğer Visual Studio derleyicileri tarafından desteklenen bir etiketi `<paramref>`desteklemez. Visual C++ , gelecekteki sürümlerde `<paramref>` destekleyebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

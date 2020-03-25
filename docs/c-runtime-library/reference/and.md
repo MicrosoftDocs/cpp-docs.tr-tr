@@ -1,5 +1,5 @@
 ---
-title: and
+title: ile
 ms.date: 11/04/2016
 api_location:
 - msvcrt.dll
@@ -23,14 +23,14 @@ f1_keywords:
 helpviewer_keywords:
 - and macro
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
-ms.openlocfilehash: 5940cd9c9cf7bb37b7731f62b1d3ff9d0101f748
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1318139610cd99d22fa709a0ce8ad11c22775be1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939683"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170910"
 ---
-# <a name="and"></a>and
+# <a name="and"></a>ile
 
 & & İşlecine bir alternatifi.
 
@@ -75,4 +75,4 @@ false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<iso646. h >
+**Üstbilgi:** \<iso646. h >

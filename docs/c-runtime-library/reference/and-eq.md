@@ -23,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - and_eq macro
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
-ms.openlocfilehash: cf54087459f4d2af054b0409c4cfcfcb05572db1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f505faa561dafc5ba0f929f94676e0ee81a32199
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943683"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170923"
 ---
 # <a name="and_eq"></a>and_eq
 
@@ -72,4 +72,4 @@ int main( )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<iso646. h >
+**Üstbilgi:** \<iso646. h >

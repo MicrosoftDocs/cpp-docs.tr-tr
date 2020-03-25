@@ -6,54 +6,54 @@ helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-ms.openlocfilehash: 05aaaa8a0d0056e0f5318f5e9329d90824760728
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02da716959deb7fcffa7a63a8308279a765c4569
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254448"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172120"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr (C++/CLI ve C++/CX)
 
-**Nullptr** anahtar sözcüğü temsil eden bir *null işaretçi değeri*. Bir null işaretçi değeri bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor belirtmek için kullanın.
+**Nullptr** anahtar sözcüğü bir *null işaretçi değeri*temsil eder. Bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türünün bir nesneyi işaret etmez olduğunu göstermek için null işaretçi değeri kullanın.
 
-Kullanım **nullptr** yönetilen veya yerel kod ile. Yönetilen ve yerel bir null işaretçi değerleri için uygun ancak farklı yönergeleri derleyici gösterir. Bu anahtar sözcük ISO standard C++ sürümü kullanma hakkında daha fazla bilgi için bkz: [nullptr](../cpp/nullptr.md).
+Yönetilen ya da yerel kodla **nullptr** kullanın. Derleyici, yönetilen ve yerel null işaretçi değerleri için uygun ancak farklı yönergeler yayar. Bu anahtar sözcüğünün ISO standart C++ sürümünü kullanma hakkında daha fazla bilgi için bkz. [nullptr](../cpp/nullptr.md).
 
-**__Nullptr** anahtar sözcüğü, aynı anlama sahiptir Microsoft'a özgü anahtar sözcük **nullptr**, ancak yalnızca yerel kod için geçerlidir. Kullanırsanız **nullptr** ile yerel C/C++ kod ve ardından derleme [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, derleyicinin belirleyemiyor olmadığını **nullptr** yerel gösterir veya boş işaretçi değerini yönetilen. Amacınız derleyicinin Temizle yapmak için **nullptr** yönetilen bir değeri belirtmek için veya **__nullptr** yerel bir değer belirtebilirsiniz.
+**__Nullptr** anahtar sözcüğü, **nullptr**ile aynı anlamı olan, ancak yalnızca yerel koda uygulanan Microsoft 'a özgü bir anahtar sözcüktür. Yerel C/ **nullptr** C++ Code ile nullptr kullanarak ve sonra [/clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ile derlerseniz, derleyici **nullptr** 'nin yerel veya yönetilen bir null işaretçi değeri içerip içermediğini belirleyemez. Derleyicisini derleyiciye eklemek için, bir yönetilen değer belirtmek için **nullptr** kullanın veya yerel bir değer belirtmek için **__nullptr** .
 
-**Nullptr** anahtar sözcüğü, eşdeğer **hiçbir şey** Visual Basic'te ve **null** C#.
+**Nullptr** anahtar sözcüğü Visual Basic ' de **Nothing** ve içinde C# **null** değeri ile eşdeğerdir.
 
 ## <a name="usage"></a>Kullanım
 
-**Nullptr** anahtar sözcüğü bir tanıtıcı, yerel işaretçisi veya işlev bağımsız değişkeni kullanılabilir her yerde kullanılabilir.
+**Nullptr** anahtar sözcüğü, bir tutamaç, yerel işaretçi veya işlev bağımsız değişkeninin kullanılabileceği her yerde kullanılabilir.
 
-**Nullptr** anahtar sözcüğü bir tür değil ve ile kullanım için desteklenmez:
+**Nullptr** anahtar sözcüğü bir tür değil ve ile kullanım için desteklenmiyor:
 
 - [sizeof](../cpp/sizeof-operator.md)
 
 - [typeid](../cpp/typeid-operator.md)
 
-- `throw nullptr` (ancak `throw (Object^)nullptr;` çalışır)
+- `throw nullptr` (`throw (Object^)nullptr;` çalışacaktır ancak)
 
-**Nullptr** anahtar sözcüğü aşağıdaki işaretçi türleri başlatma içinde kullanılabilir:
+**Nullptr** anahtar sözcüğü aşağıdaki işaretçi türlerinin başlatılmasında kullanılabilir:
 
 - Yerel işaretçi
 
-- Windows çalışma zamanı tanıtıcısı
+- Windows Çalışma Zamanı tanıtıcısı
 
-- Yönetilen işleyici
+- Yönetilen tanıtıcı
 
-- İç işaretçi yönetilen
+- Yönetilen iç işaretçi
 
-**Nullptr** anahtar sözcüğü, başvuru kullanılmadan önce bir işaretçi veya işleç başvuru null ise, test etmek için kullanılabilir.
+Başvuru kullanılmadan önce bir işaretçi veya tanıtıcı başvurusunun null olup olmadığını test etmek için **nullptr** anahtar sözcüğü kullanılabilir.
 
-İşlev çağrıları hata denetimi için null işaretçi değerleri kullanan diller arasında doğru yorumlanması gerektiğini.
+Hata denetimi için null işaretçi değerlerini kullanan diller arasındaki işlev çağrıları doğru şekilde yorumlanmalıdır.
 
-Sıfırdan bir tanıtıcı başlatılamıyor; yalnızca **nullptr** kullanılabilir. Bir nesne tanıtıcısına sabit 0 atama üretir bir kutu `Int32` ve bir atamanın `Object^`.
+Bir tanıtıcıyı sıfıra başlatamıyor; yalnızca **nullptr** kullanılabilir. Bir nesne tanıtıcısına 0 sabiti ataması, kutulanmış `Int32` ve `Object^`bir tür üretir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **nullptr** anahtar sözcüğü bir tanıtıcı her yerde kullanılabilir, yerel işaretçisi veya işlev bağımsız değişkeni kullanılabilir. Bu örnek, gösterir **nullptr** anahtar sözcüğü, kullanılmadan önce bir başvuru denetlemek için kullanılabilir.
+Aşağıdaki kod örneği, bir tanıtıcı, yerel işaretçi veya işlev bağımsız değişkeninin kullanılabileceği her yerde **nullptr** anahtar sözcüğünün kullanılabileceğini gösterir. Örnek, bir başvuruyu kullanılmadan önce denetlemek için **nullptr** anahtar sözcüğünün kullanılabileceğini gösterir.
 
 ```cpp
 // mcpp_nullptr.cpp
@@ -82,7 +82,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **nullptr** ve sıfır kullanılabilir birbirinin yerine yerel işaretçilerde.
+Aşağıdaki kod örneği, **nullptr** ve sıfır 'nin yerel işaretçilerde birbirinin yerine kullanılabileceğini gösterir.
 
 ```cpp
 // mcpp_nullptr_1.cpp
@@ -121,7 +121,7 @@ pMyClass == 0
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **nullptr** herhangi bir tür için bir tanıtıcı veya herhangi bir tür için yerel bir işaretçi olarak yorumlanır. İşlev farklı türlere sahip olması durumunda aşırı yüklemesi, bir belirsizlik hata oluşturulur. **Nullptr** açıkça bir türe yayınlanması gerekir.
+Aşağıdaki kod örneği, **nullptr** türünün herhangi bir tür için bir tanıtıcı veya herhangi bir yerel işaretçi olarak yorumlandığını gösterir. Farklı türlere yönelik tanıtıcılarla işlev aşırı yüklemesi söz konusu olduğunda bir belirsizlik hatası oluşturulur. **Nullptr** 'nin açıkça bir türe dönüştürülmesi gerekir.
 
 ```cpp
 // mcpp_nullptr_2.cpp
@@ -139,7 +139,7 @@ void f_null() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, atama gösterir **nullptr** izin verilir ve bir işaretçi veya işleç içeren bir atama türü döndürür **nullptr** değeri.
+Aşağıdaki kod örneği, tür, **nullptr** öğesine izin verildiğini gösterir ve bu tür bir işaretçi veya tanıtıcıyı, **nullptr** değerini içeren atama türüne döndürür.
 
 ```cpp
 // mcpp_nullptr_3.cpp
@@ -160,7 +160,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **nullptr** işlevi parametre olarak kullanılabilir.
+Aşağıdaki kod örneği, **nullptr** 'nin bir işlev parametresi olarak kullanılabileceğini gösterir.
 
 ```cpp
 // mcpp_nullptr_4.cpp
@@ -181,7 +181,7 @@ test
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği tanıtıcıları bildirildi ve açıkça başlatılır, bunlar için varsayılan olduğunu gösteren **nullptr**.
+Aşağıdaki kod örneği, tanıtıcıların bildirildiği ve açık olarak başlamadığı durumlarda, varsayılan olarak **nullptr**'nin varsayılan olarak başlatıldığını gösterir.
 
 ```cpp
 // mcpp_nullptr_5.cpp
@@ -208,7 +208,7 @@ NULL
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **nullptr** ile derleme yaparken yerel bir işaretçiye atanabilir `/clr`.
+Aşağıdaki kod örneği, `/clr`ile derlerken, yerel işaretçiye **nullptr** 'nin atanabileceği gösterilmektedir.
 
 ```cpp
 // mcpp_nullptr_6.cpp
@@ -221,7 +221,7 @@ int main() {
 
 ## <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: (Gerekli; dahil olmak üzere tüm kod oluşturma seçenekleri tarafından desteklenen `/ZW` ve `/clr`)
+Derleyici seçeneği: (gerekli değildir; `/ZW` ve `/clr`dahil olmak üzere tüm kod oluşturma seçenekleri tarafından desteklenir)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

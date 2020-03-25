@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C1852
 ms.assetid: fa011004-b8d6-46f1-ba80-4785e4ce137f
-ms.openlocfilehash: 895c2fc988c9566f9e50b1ac1a18eb4dc1c6661a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 540febabc8f2947f11b58cf7eadee53d47f7bef3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165742"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202884"
 ---
 # <a name="fatal-error-c1852"></a>Önemli hata C1852
 
-'filename' geçerli önceden derlenmiş üst bilgi dosyası değil.
+' filename ' geçerli bir ön derlenmiş üstbilgi dosyası değil
 
-Ön derlenmiş üstbilgi dosyası değil.
+Dosya önceden derlenmiş bir üst bilgi değil.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Belirtilen geçersiz dosya **/Yu** veya **#pragma hdrstop**.
+1. **/Yu** veya **#pragma hdrstop**ile geçersiz dosya belirtildi.
 
-1. Aksi takdirde belirtmezseniz, derleyici bir dosya uzantısı .pch varsayar.
+1. Aksi takdirde, derleyici bir. pch dosya uzantısını varsayar.

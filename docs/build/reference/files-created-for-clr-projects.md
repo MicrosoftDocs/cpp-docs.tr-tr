@@ -5,25 +5,25 @@ helpviewer_keywords:
 - Visual Studio C++ projects, CLR programming
 - .NET applications, C++
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
-ms.openlocfilehash: e41544adb040175fc8e53ab0e6bc4f8275891580
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 45295a3395f19d32dbf29948e1cbd15cd844adb4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446321"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169012"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR Projeleri için Oluşturulan Dosyalar
 
-Projelerinizi oluşturmak için Visual C++ şablonları kullandığınızda, kullandığınız hangi şablonuna bağlı olarak çeşitli dosyalar oluşturulur. Aşağıdaki tablo, .NET Framework projeleri için proje şablonları tarafından oluşturulan tüm dosyaları listeler.
+Projelerinizi oluşturmak için görsel C++ Şablonlar kullandığınızda, kullandığınız şablona bağlı olarak birkaç dosya oluşturulur. Aşağıdaki tabloda, .NET Framework projeleri için proje şablonları tarafından oluşturulan tüm dosyalar listelenmektedir.
 
 |Dosya adı|Dosya açıklaması|
 |---------------|----------------------|
-|AssemblyInfo.cpp|Proje derleme meta verileri değiştirme (diğer bir deyişle, öznitelikleri, dosyaları, kaynaklar, türleri, sürüm oluşturma bilgilerini, imza bilgilerini ve benzeri) bilgilerini içeren dosya. Daha fazla bilgi için [derleme kavramları](/dotnet/framework/app-domains/assembly-contents).|
-|*PROJNAME*.asmx|Bir metin dosyası başvuruları, XML Web hizmeti işlevi kapsülleyen sınıfları yönetilen.|
-|*PROJNAME*.cpp|Ana kaynak dosya ve giriş sizin için oluşturulan Visual Studio uygulamaya gelin. Proje .dll dosyası ve proje ad alanı tanımlar. Bu dosyadaki kendi kodunu sağlayın.|
-|*PROJNAME*.vsdisco|XML Web hizmeti açıklayan diğer kaynakların bağlantılarını içeren bir XML dağıtım dosyası.|
-|*PROJNAME*.h|Tüm bildirimleri, genel simge içeren, proje için ana içerme dosyası ve `#include` yönergeleri için diğer üst bilgi dosyaları.|
-|*PROJNAME*.sln|Geliştirme ortamında projenizin tüm öğeleri tek bir çözümde düzenlemek için kullanılan çözüm dosyası.|
-|*PROJNAME*.suo|Çözüm seçenekleri geliştirme ortamında kullanılan dosya.|
-|*PROJNAME*.vcxproj|Proje dosyası bu projeye özgü bilgileri depolayan geliştirme ortamında kullanılır.|
-|ReadMe.txt|Şablon tarafından oluşturulan gerçek dosya adlarını kullanarak, projenizdeki her dosyasını tanımlayan bir dosya.|
+|AssemblyInfo. cpp|Projenin derleme meta verilerini değiştirmek için bilgi (yani, öznitelikler, dosyalar, kaynaklar, türler, sürüm oluşturma bilgileri, imzalama bilgileri vb.) içeren dosya. Daha fazla bilgi için bkz. [derleme kavramları](/dotnet/framework/app-domains/assembly-contents).|
+|*ProjName*. asmx|XML Web hizmetinin işlevselliğini kapsülleyen yönetilen sınıflara başvuran bir metin dosyası.|
+|*ProjName*. cpp|Ana kaynak dosya ve giriş noktası, Visual Studio 'nun sizin için oluşturduğu uygulamada yer alan bir uygulamadır. Project. dll dosyasını ve proje ad alanını tanımlar. Bu dosyada kendi kodunuzu girin.|
+|*ProjName*. vsdisco|XML Web hizmetini tanımlayan diğer kaynakların bağlantılarını içeren bir XML dağıtım dosyası.|
+|*ProjName*. h|Diğer üstbilgi dosyaları için tüm bildirimleri, genel sembolleri ve `#include` yönergelerini içeren proje için ana ekleme dosyası.|
+|*ProjName*. sln|Projenizin tüm öğelerini tek bir çözümde düzenlemek için geliştirme ortamında kullanılan çözüm dosyası.|
+|*ProjName*. suo|Geliştirme ortamı içinde kullanılan çözüm seçenekleri dosyası.|
+|*ProjName*. vcxproj|Bu projeye özgü bilgileri depolayan geliştirme ortamı içinde kullanılan proje dosyası.|
+|ReadMe. txt|Şablon tarafından oluşturulan gerçek dosya adlarını kullanarak projenizdeki her dosyayı açıklayan bir dosya.|

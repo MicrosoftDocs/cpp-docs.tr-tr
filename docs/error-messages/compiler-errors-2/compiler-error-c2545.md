@@ -1,24 +1,24 @@
 ---
-title: Derleyici Hatası C2545
+title: Derleyici hatası C2545
 ms.date: 11/04/2016
 f1_keywords:
 - C2545
 helpviewer_keywords:
 - C2545
 ms.assetid: 51598eb9-0c57-4306-a0cd-3862980f3672
-ms.openlocfilehash: 7f43ecfa74667c8cc6562bf1feaf4e8d0927f690
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c5150bbf36813ad7319830736b25cc55bec21f33
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397477"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80202477"
 ---
-# <a name="compiler-error-c2545"></a>Derleyici Hatası C2545
+# <a name="compiler-error-c2545"></a>Derleyici hatası C2545
 
-'operator': Aşırı yüklenen işleç bulunamadı oluşturulamıyor
+' operator ': aşırı yüklenmiş işleç bulunamıyor
 
-Sağlanan işlenen işleci kullanılamaz. Aşırı yüklenmiş bir işleç gerekli işlenenler ile sağlamanız gerekir.
+İşleç, belirtilen işlenenlerle birlikte kullanılamaz. Gerekli işlenenlerin bulunduğu aşırı yüklenmiş bir işleç sağlamalısınız.
 
-İşlenen türü yanlış varsa bu hataya neden olabilir.
+İşlenenler yanlış türde olduğunda bu hataya neden olmuş olabilir.
 
-Bu hata, bir dönüştürme işleci veya tek bir parametre olarak alan oluşturucu tanımlarsanız çözülebilir.
+Bu hata, tek bir parametre alan bir dönüştürme işleci veya Oluşturucu tanımlarsanız düzeltilebilir.

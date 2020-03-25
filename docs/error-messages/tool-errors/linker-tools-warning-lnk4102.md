@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4102
 ms.assetid: bfd1b17e-05c7-4bc2-80d6-2888b1a425b2
-ms.openlocfilehash: 0f9c8649988dd3056e98730ac4b02022a8c9dd51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fda1fdb03a7629894f846bb20ed84df519239327
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327268"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183312"
 ---
 # <a name="linker-tools-warning-lnk4102"></a>Bağlayıcı Araçları Uyarısı LNK4102
 
-silme yıkıcısı 'name';'ın dışarı aktarma Görüntü düzgün çalışmayabilir
+' name ' yok edicisini silme dışarı aktarma görüntü düzgün çalışmayabilir
 
-Program silme yıkıcısı aktarmaya çalıştı. Bir işlem ait olmayan belleği boşaltabilir, sonuçta elde edilen silme DLL sınırında ortaya çıkabilir. Belirtilen simge, .def dosyasında listelenmeyen ve sembol bağımsız değişken olarak listelenmediğinden emin olun **/İÇE** veya **/dışarı aktarma** bağlayıcı komut satırı seçeneği.
+Program, silme yıkıcısını dışarı aktarmaya çalıştı. Ortaya çıkan silme işlemi, bir işlemin sahip olmadığı belleği serbest bir şekilde bir DLL sınırında gerçekleşebilir. Verilen sembolün. def dosyanızda listelenmediğinden ve simgenin bağlayıcı komut satırındaki **/import** veya **/Export** seçeneğinin bağımsız değişkeni olarak listelenmediğinden emin olun.
 
-C çalışma zamanı kitaplığı yeniden, bu iletiyi yoksayabilirsiniz.
+C çalışma zamanı kitaplığını yeniden oluşturuyorsanız bu iletiyi yoksayabilirsiniz.

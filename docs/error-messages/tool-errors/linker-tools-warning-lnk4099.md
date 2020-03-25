@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4099
 ms.assetid: 358170a4-07cd-43fe-918f-82c32757ffc5
-ms.openlocfilehash: dcf4d44c3a0b5b10035af763040c2912afc8c6f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1f330924b8e47e0649268142106a050c83cb20a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310896"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183325"
 ---
 # <a name="linker-tools-warning-lnk4099"></a>Bağlayıcı Araçları Uyarısı LNK4099
 
-PDB 'filename', 'nesne/Kitaplık' veya 'path';'konumunda bulunamadı Nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+PDB ' filename ', ' Object/Library ' veya ' Path ' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 
-Bağlayıcı, .pdb dosyasını bulamadı. Dosyayı içeren dizine kopyalayın `object/library`.
+Bağlayıcı,. pdb dosyanızı bulamadı. `object/library`içeren dizine kopyalayın.
 
-Nesne dosyası ile ilişkili .pdb dosyasının adını bulmak için:
+Nesne dosyasıyla ilişkili. pdb dosyasının adını bulmak için:
 
-1. Bir nesne dosyası kitaplığı ile ayıklamak [LIB](../../build/reference/lib-reference.md) **/ayıklayın:**`objectname`**.obj** `xyz` **.lib**.
+1. Kitaplıktan bir nesne dosyasını [LIB](../../build/reference/lib-reference.md) **/Extract:** `objectname` **. obj** `xyz` **. lib**ile ayıklayın.
 
-1. İle .pdb dosyasının yolunu denetleyin **dumpbin /section:.debug$ T /rawdata** `objectname` **.obj**.
+1. . Pdb dosyasının yolunu **dumpbin/Section:. Debug $ T/rawData** `objectname` **. obj**ile denetleyin.
 
-İle derleme [/z7](../../build/reference/z7-zi-zi-debug-information-format.md), pdb kaldırın veya kullanılabilir gerekmez [/DEBUG](../../build/reference/debug-generate-debug-info.md) bağlandığınız nesneler için .pdb dosyası yoksa bağlayıcı seçeneği.
+Ayrıca, [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md)ile derleyebilir, bu nedenle pdb kullanılması gerekmez veya bağlanmakta olduğunuz nesneler için. pdb dosyalarınız yoksa [/Debug](../../build/reference/debug-generate-debug-info.md) bağlayıcı seçeneğini kaldırın.

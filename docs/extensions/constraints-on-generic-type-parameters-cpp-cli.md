@@ -8,18 +8,18 @@ helpviewer_keywords:
 - where keyword [C++]
 - constraints, C++
 ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
-ms.openlocfilehash: 6eefb6a7d888a031f6ff7f88d08da4d67a4dc8c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be5af8f6b2edaa8f93fef7ae06b2175b54b25396
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345957"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172484"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 
-Genel tür veya yöntem bildirimi bir tür parametresi kısıtlamalarına sahip kazanabilir. Kısıtlama türü bağımsız değişken olarak kullanılan türler karşılaması gereken bir gereksinimdir. Örneğin, bir kısıtlaması tür bağımsız değişkeni belirli bir arabirim gerekir veya belirli bir sınıftan olabilir.
+Genel tür veya yöntem bildirimlerinde, bir tür parametresini kısıtlamalarla niteleyebilirsiniz. Kısıtlama, tür bağımsız değişkenleri olarak kullanılan türlerin karşılaması gereken gereksinimdir. Örneğin, bir kısıtlama, tür bağımsız değişkeninin belirli bir arabirimi uygulaması veya belirli bir sınıftan devralması olması olabilir.
 
-İsteğe bağlı kısıtlamaları; bir kısıtlama bir parametre belirtmeden bu parametreye sınırlamak için eşdeğer <xref:System.Object>.
+Kısıtlamalar isteğe bağlıdır; bir parametre üzerinde kısıtlama belirtilmemelidir, bu parametreyi <xref:System.Object>olarak kısıtlayan eşdeğerdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,27 +29,27 @@ where type-parameter: constraint list
 
 ### <a name="parameters"></a>Parametreler
 
-*tür-parametresi*<br/>
-Kısıtlı için tür parametrelerinden biri.
+*tür parametresi*<br/>
+Kısıtlanmış olacak tür parametrelerinden biri.
 
-*sınırlama listesi*<br/>
-*sınırlama listesi* kısıtlaması belirtimleri, virgülle ayrılmış listesidir. Liste türü parametresi tarafından uygulanacak arabirim içerebilir.
+*kısıtlama listesi*<br/>
+*kısıtlama listesi* , kısıtlama belirtimlerinin virgülle ayrılmış listesidir. Listede tür parametresi tarafından uygulanacak arabirimler bulunabilir.
 
-Listeden bir sınıf de içerebilir. Bir taban sınıfı kısıtlamasını karşılamak tür bağımsız değişkeni, kısıtlama aynı sınıfta olması veya kısıtlamasından türetilen olmalıdır.
+Liste ayrıca bir sınıf içerebilir. Bir temel sınıf kısıtlamasını karşılamak için tür bağımsız değişkeninin, kısıtlamayla aynı sınıf olması veya kısıtlamadan türetmeniz gerekir.
 
-Ayrıca belirtebileceğiniz **gcnew()** tür bağımsız değişkeni, genel bir parametresiz oluşturucusu; olmalıdır belirtmek için veya **başvuru sınıfı** tür bağımsız değişkeni, herhangi bir sınıf içeren bir başvuru türü olmalıdır belirtmek için arabirim, temsilci veya dizi türü; veya **değer sınıfının** türü belirtmek için bağımsız değişken bir değer türü olması gerekir. Herhangi bir değer türü boş değer dışında\<T > belirtilebilir.
+Ayrıca, tür bağımsız değişkeninin Ortak parametresiz oluşturucuya sahip olması gerektiğini belirtmek için **gcnew ()** belirtebilirsiniz; ya da tür bağımsız değişkenini belirten başvuru **sınıfı** , herhangi bir sınıf, arabirim, temsilci veya dizi türü dahil olmak üzere bir başvuru türü olmalıdır; ya da tür bağımsız değişkenini belirten **değer sınıfı** bir değer türü olmalıdır. Nullable\<T > hariç herhangi bir değer türü belirtilebilir.
 
-Genel parametre kısıtlama olarak belirtebilirsiniz. Sınırlama türü için sağlanan tür bağımsız değişkeni olması veya kısıtlama türünden türetilmesi gerekir. Bu, bir çıplak tür kısıtlaması olarak adlandırılır.
+Ayrıca, kısıtlama olarak genel bir parametre belirtebilirsiniz. Kısıtlayan tür için sağlanan tür bağımsız değişkeni, kısıtlama türünden olmalı veya türetilmelidir. Bu, naked tür kısıtlaması olarak adlandırılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kısıtlama yan tümcesi oluşan **burada** bir tür parametresi ile bir iki nokta üst üste ve ardından (**:**) hem de kısıtlaması tür parametresi kısıtlaması yapısını belirtir. **Burada** bir bağlama duyarlı anahtar sözcük; bkz [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için. Birden çok ayrı **burada** yan tümceleri bir alana sahip.
+Kısıtlama yan tümcesi, tür parametresindeki kısıtlamanın yapısını belirten bir tür parametresi, iki nokta üst üste ( **:** ) ve kısıtlama olan **WHERE** işaretinden oluşur. **, bağlama** duyarlı bir anahtar sözcüktür; daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md) . Birden çok **WHERE** yan tümcesini bir boşluk ile ayırın.
 
-Tür parametreleri sınırlamalar genel tür veya yöntem bağımsız değişkenleri olarak kullanılan türler yerleştirmek için kısıtlamalar uygulanır.
+Kısıtlamalar, genel bir tür veya yöntem için bağımsız değişken olarak kullanılabilecek türlere sınırlamalar yerleştirmek için tür parametrelerine uygulanır.
 
-Bağımsız değişken türleri veya belirtilen bir sınıftan veya gereken belirtilen bir arabirim, sınıf ve arabirim kısıtlamalarını belirtin.
+Sınıf ve arabirim kısıtlamaları bağımsız değişken türlerinin belirtilen bir sınıftan olması veya bu sınıftan devralması veya belirtilen bir arabirimi uygulaması gerektiğini belirtir.
 
-Bir genel tür veya yöntemin kısıtlamaları uygulamaya kodunda bu tür veya yöntem kısıtlanmış türdeki bilinen özelliklerden yararlanmak için sağlar. Örneğin, tür parametresi uygular, genel bir sınıf bildirebilirsiniz `IComparable<T>` arabirimi:
+Kısıtlamaların genel bir tür veya yönteme uygulanması, kısıtlanmış türlerin bilinen özelliklerinden yararlanmak için bu tür veya yöntemdeki kodun kullanılmasına izin verir. Örneğin, tür parametresi `IComparable<T>` arabirimini uygulayan genel bir sınıf bildirebilirsiniz:
 
 ```cpp
 // generics_constraints_1.cpp
@@ -60,15 +60,15 @@ where T : IComparable<T>
 ref class List {};
 ```
 
-Bu kısıtlama için kullanılan bir tür bağımsız değişkeni gerektirir `T` uygulayan `IComparable<T>` derleme zamanında. Ayrıca, arabirim yöntemleri gibi sağlar `CompareTo`, çağrılabilir. Atama türü parametresinin bir örneğinde arabirim yöntemleri çağırmak için gereklidir.
+Bu kısıtlama, `T` için kullanılan bir tür bağımsız değişkeninin derleme zamanında `IComparable<T>` uygular. Ayrıca, `CompareTo`gibi Arabirim yöntemlerinin çağrılmasına izin verir. Arabirim yöntemlerini çağırmak için tür parametresinin bir örneğinde atama gerekmez.
 
-Tür bağımsız değişkenin sınıfında statik yöntemler tür parametresi ile çağrılamaz; yalnızca gerçek adlandırılmış tür çağrılabilir.
+Tür bağımsız değişkeninin sınıfındaki statik yöntemler tür parametresi aracılığıyla çağrılamaz; Bunlar yalnızca gerçek adlandırılmış tür aracılığıyla çağrılabilir.
 
-Bir kısıtlama gibi yerleşik türleri dahil olmak üzere bir değer türü olamaz **int** veya **çift**. Türetilmiş sınıflar değer türleri olamaz, yalnızca bir sınıf her zamankinden kısıtlamasını çalıştırılabilmesi. Bu durumda, belirli bir değer türü tarafından değiştirilen tür parametresi ile genel yazılabilir.
+Bir kısıtlama, **int** veya **Double**gibi yerleşik türler dahil olmak üzere bir değer türü olamaz. Değer türlerinin türetilmiş sınıfları olmadığından, kısıtlamayı yalnızca bir sınıf karşılayamaz. Bu durumda, genel olarak tür parametresi, belirli değer türü ile değiştirilmiş olabilir.
 
-Bilinmeyen tür yöntemleri veya arabirimi desteklediğini kısıtlamaları yaptığından sürece derleyici yöntemlerden birini kullanın veya diğer özellikleri bilinmeyen bir türde izin vermez beri kısıtlamaları bazı durumlarda gereklidir.
+Bir yöntem, bilinmeyen türün yöntemleri veya arabirimleri desteklediğini belirtmediği takdirde, bazı durumlarda derleyici yöntemlerin veya bilinmeyen bir türün diğer özelliklerinin kullanılmasına izin vermediğinden, bu kısıtlamalar gereklidir.
 
-Virgülle ayrılmış bir listede birden çok aynı tür parametresi kısıtlamaları belirtilebilir.
+Aynı tür parametresi için birden çok kısıtlama, virgülle ayrılmış bir listede belirtilebilir
 
 ```cpp
 // generics_constraints_2.cpp
@@ -80,7 +80,7 @@ where T : List<T>, IComparable<T>
 ref class List {};
 ```
 
-Birden çok tür parametreleriyle kullanın **burada** her tür parametresi için yan tümcesi. Örneğin:
+Birden çok tür parametresiyle, her tür parametresi için bir **WHERE** yan tümcesi kullanın. Örneğin:
 
 ```cpp
 // generics_constraints_3.cpp
@@ -94,13 +94,13 @@ generic <typename K, typename V>
 ref class Dictionary {};
 ```
 
-Özetlemek gerekirse, aşağıdaki kurallara göre kodunuzda kısıtlamaları kullanın:
+Özetlemek gerekirse, aşağıdaki kurallara göre kodunuzda kısıtlamalar kullanın:
 
-- Birden fazla kısıtlama listede yoksa, herhangi bir sırada kısıtlamaları listelenebilir.
+- Birden çok kısıtlama listeleniyorsa, kısıtlamalar herhangi bir sırada listelenebilir.
 
-- Kısıtlama da soyut temel sınıflar gibi sınıf türleri olabilir. Ancak, kısıtlamaları değer türleri veya sealed sınıfları olamaz.
+- Kısıtlamalar, soyut temel sınıflar gibi sınıf türleri de olabilir. Ancak, kısıtlamalar değer türleri veya mühürlü sınıflar olamaz.
 
-- Tür parametrelerinin kendilerini kısıtlamaları olamaz, ancak bunlar açık bir oluşturulmuş tür tür parametrelerinde içerebilir. Örneğin:
+- Kısıtlamalar tür parametreleri olamaz, ancak tür parametrelerini açık oluşturulmuş bir tür içinde içerebilir. Örneğin:
 
     ```cpp
     // generics_constraints_4.cpp
@@ -115,7 +115,7 @@ ref class Dictionary {};
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, tür parametrelerinde örnek yöntemleri çağırmak için kısıtlamalar kullanmayı gösterir.
+Aşağıdaki örnek, tür parametrelerinde örnek yöntemleri çağırmak için kısıtlamaları kullanmayı gösterir.
 
 ```cpp
 // generics_constraints_5.cpp
@@ -177,11 +177,11 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Genel tür parametresi kısıtlaması olarak kullanıldığında, çıplak tür kısıtlaması olarak adlandırılır. Çıplak tür kısıtlamaları kendi tür parametresi olan bir üye işlev bu tür parametresi kapsayan tür parametresi sınırlamak gerektiğinde kullanışlıdır.
+Bir genel tür parametresi kısıtlama olarak kullanıldığında, naked tür kısıtlaması olarak adlandırılır. Çıplak tür kısıtlamaları, kendi tür parametresine sahip bir üye işlevin bu parametreyi kapsayan türün tür parametresiyle kısıtması gerektiğinde faydalıdır.
 
-Aşağıdaki örnekte, `T` bağlamında bir çıplak tür kısıtlaması `Add` yöntemi.
+Aşağıdaki örnekte, `T` `Add` yöntemi bağlamında çıplak bir tür kısıtlamadır.
 
-Çıplak tür kısıtlamaları genel sınıfı tanımlarında da kullanılabilir. Öğesinden türetilen dışında derleyici bir çıplak tür kısıtlaması hakkında hiçbir şey kabul edilebilir olduğundan çıplak tür kısıtlamaları genel sınıflarla kullanışlılığını sınırlıdır <xref:System.Object>. Genel sınıflar çıplak tür kısıtlamaları, iki tür parametreleri arasında bir devralma ilişkisi uygulamak istediğiniz senaryolarda kullanın.
+Naked tür kısıtlamaları, genel sınıf tanımlarında da kullanılabilir. Derleyici, bir çıplak tür kısıtlaması hakkında <xref:System.Object>türetildiğinden, genel sınıflarla çıplak tür kısıtlamalarının kullanışlılığı sınırlıdır. İki tür parametresi arasında bir devralma ilişkisi uygulamak istediğiniz senaryolarda genel sınıflarda çıplak tür kısıtlamalarını kullanın.
 
 ```cpp
 // generics_constraints_6.cpp

@@ -1,23 +1,23 @@
 ---
-title: Derleyici Hatası C2829
+title: Derleyici hatası C2829
 ms.date: 11/04/2016
 f1_keywords:
 - C2829
 helpviewer_keywords:
 - C2829
 ms.assetid: b3bfecb8-c8c1-45fd-bb85-4b42a6b8ed2b
-ms.openlocfilehash: 5fe1703fe6239b414903dbcc714d9402a900c06d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 358d60b11a4c26cd3d7374853921f03a82bab76b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227948"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201920"
 ---
-# <a name="compiler-error-c2829"></a>Derleyici Hatası C2829
+# <a name="compiler-error-c2829"></a>Derleyici hatası C2829
 
-'operator işleci' değişken parametre listesine sahip olamaz
+' işleç işleci ' bir değişken parametre listesine sahip olamaz
 
-Değişken parametre listeleri yalnızca iki işleç gerçekleştirebilirsiniz:
+Değişken parametre listelerini yalnızca iki işleç alabilir:
 
 - İşlev çağrısı `()`
 

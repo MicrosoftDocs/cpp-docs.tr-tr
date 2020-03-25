@@ -6,26 +6,26 @@ helpviewer_keywords:
 - Visual C, macros
 - __asm keyword [C++], as C macros
 ms.assetid: 677ba11c-21c8-4609-bba7-cd47312243b0
-ms.openlocfilehash: c48298cf802600995dbbf68885896b6feccb807d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46f0a23fcfd949843e3548354f52970b10b6d63b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167032"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169493"
 ---
-# <a name="defining-asm-blocks-as-c-macros"></a>__asm Bloklarını C Makroları olarak tanımlama
+# <a name="defining-__asm-blocks-as-c-macros"></a>__asm Bloklarını C Makroları olarak tanımlama
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-C makroları kaynak kodunuza bütünleştirilmiş kodu eklemek için kullanışlı bir yol sunar, ancak bir makro tek bir mantıksal satıra genişlettiğinden, çok dikkatli talep. Makrolar sorunsuz oluşturmak için bu kuralları izleyin:
+C makroları, kaynak kodunuza derleme kodu eklemek için kullanışlı bir yol sunar, ancak bir makro tek bir mantıksal satıra genişletiğinden ek bir değer talep ederler. Sorun içermeyen makrolar oluşturmak için bu kuralları izleyin:
 
-- İçine `__asm` bloğunu ayraç içinde.
+- `__asm` bloğunu ayraç içine alın.
 
-- PUT `__asm` her bir derleme yönergesinin önüne anahtar sözcüğü.
+- `__asm` anahtar sözcüğünü her derleme yönergesinin önüne koyun.
 
-- Eski stil C açıklamaları kullanın ( `/* comment */`) yerine derleme stili açıklamaları ( `; comment`) veya tek satırlık C açıklamaları ( `// comment`).
+- Bütünleştirilmiş kod stili açıklamaları (`; comment`) veya tek satırlık C açıklamaları (`// comment`) yerine eski stil C açıklamalarını (`/* comment */`) kullanın.
 
-Aşağıdaki örnek, göstermek için basit bir makro tanımlar:
+Göstermek için aşağıdaki örnekte basit bir makro tanımlanmaktadır:
 
 ```cpp
 #define PORTIO __asm      \
@@ -37,23 +37,23 @@ Aşağıdaki örnek, göstermek için basit bir makro tanımlar:
 }
 ```
 
-İlk bakışta son üç `__asm` anahtar sözcükleri gereksiz görünüyor. Tek bir satıra makro genişler çünkü bunlar, ancak gereklidir:
+İlk bakışta, son üç `__asm` anahtar sözcüğü gereksiz görünür. Ancak, makro tek bir satıra genişletiğinden, bunlar gereklidir:
 
 ```cpp
 __asm /* Port output */ { __asm mov al, 2  __asm mov dx, 0xD007 __asm out dx, al }
 ```
 
-Üçüncü ve dördüncü `__asm` anahtar sözcükler, deyim ayırıcısı olarak gereklidir. İçinde yalnızca bir deyim ayırıcısı tanınan `__asm` taşlarıdır yeni satır karakteri ve `__asm` anahtar sözcüğü. Makro olarak tanımlanan bir blok mantıksal bir satır olduğundan, her yönerge ile ayrı `__asm`.
+Üçüncü ve dördüncü `__asm` anahtar sözcükleri, ifade ayırıcıları olarak gereklidir. `__asm` bloklarından tanınan tek deyimli ayırıcı, yeni satır karakteri ve `__asm` anahtar kelimedir. Makro olarak tanımlanan bir blok tek bir mantıksal satır olduğundan, her yönergeyi `__asm`ayırmanız gerekir.
 
-Küme ayraçları de gereklidir. Bunları atlarsanız, derleyici C veya C++ deyimlerinin makro çağrısı sağındaki aynı satırda çakışabilir. Kapanış ayracı derleyici burada bütünleştirilmiş kodu durdurur ve bu bildiremez C veya C++ deyimlerinin görür `__asm` blok olarak derleme yönergeleri.
+Küme ayraçları da temel öneme sahiptir. Bunları atlarsanız, derleyici, makro çağrısının sağında aynı satırdaki C veya C++ deyimler tarafından karışıyor olabilir. Kapanış küme ayracı olmadan derleyici, derleme kodunun nerede durdurduğunu söyleyebilir ve derleme yönergeleri olarak `__asm` bloğundan sonra C++ C veya deyimlerini görür.
 
-Noktalı virgül ile başlayan açıklamaları bütünleştirilmiş kod stili (**;**) satırın sonuna kadar devam edin. Her şeyi yoksayar derleyici yorumundan mantıksal satırın sonuna kadar çünkü bu makrolar sorunlara neden olur. C veya C++ tek satırlı yorumlar aynı geçerlidir ( `// comment`). Hataları önlemek için eski stil C açıklamaları kullanın ( `/* comment */`) içinde `__asm` blokları makrolar tanımlanır.
+Noktalı virgül ( **;** ) ile başlayan derleme stili açıklamalar satırın sonuna kadar devam eder. Bu, derleyici açıklamadan sonra, mantıksal satırın sonuna kadar olan her şeyi yok saydığı için makrolarda sorunlara yol açar. Aynı, tek satırlık C veya C++ yorumların (`// comment`) de doğrudur. Hataları engellemek için, makro olarak tanımlanan `__asm` bloklarda eski stil C açıklamalarını (`/* comment */`) kullanın.
 
-Bir `__asm` C makro bağımsız değişken alabilir olarak yazılmış bir blok. Bir normal C makrosu, ancak farklı bir `__asm` makrosu değer döndüremez. Bu nedenle, C veya C++ ifadelerinde bu tür makroları kullanamazsınız.
+C makrosu olarak yazılan `__asm` bloğu bağımsız değişkenler alabilir. Ancak sıradan bir C makrosunun aksine, bir `__asm` makrosu bir değer döndüremez. Bu nedenle, bu makroları C veya C++ ifadelerinde kullanamazsınız.
 
-Bu tür makroları incelemelerin çağırma kullanılamaz dikkat edin. Örneğin, bir derleme dili makro bir işlev Çağırma ile bildirilen `__fastcall` kuralı, beklenmeyen sonuçlara neden olabilir. (Bkz [satır içi bütünleştirilmiş kodda kayıtları kullanma ve koruma](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md).)
+Bu tür sayısının fark gözetmeden makroları çağırmamaya dikkat edin. Örneğin, bir derleme dili makrosunu `__fastcall` kuralına göre belirtilen bir işlevde çağırmak beklenmedik sonuçlara neden olabilir. (Bkz. [satır Içi derlemede kayıtları kullanma ve koruma](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md).)
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

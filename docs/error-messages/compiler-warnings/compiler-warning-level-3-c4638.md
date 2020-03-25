@@ -1,29 +1,29 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4638
+title: Derleyici Uyarısı (düzey 3) C4638
 ms.date: 08/27/2018
 f1_keywords:
 - C4638
 helpviewer_keywords:
 - C4638
 ms.assetid: 2c07923a-e103-4e40-bd11-fdfed428a5ec
-ms.openlocfilehash: 1bdd7541e16f5c02756678ae78a777094b5fe588
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3662116359f906ef6f0a004fada8efd6771d0a0a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401664"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174134"
 ---
-# <a name="compiler-warning-level-3-c4638"></a>Derleyici Uyarısı (Düzey 3) C4638
+# <a name="compiler-warning-level-3-c4638"></a>Derleyici Uyarısı (düzey 3) C4638
 
-> XML belgesi yorum hedef: Bilinmeyen sembole başvuru '*sembol*'
+> XML belgesi Açıklama hedefi: bilinmeyen '*symbol*' simgesine başvuru
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici bir sembol çözümleyemedi (*sembol*). Simgenin derlemede geçerli olmalıdır.
+Derleyici bir sembolü (*sembol*) çözümleyemedi. Simgenin derlemede geçerli olması gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4638 oluşturur:
+Aşağıdaki örnek C4638 oluşturur:
 
 ```cpp
 // C4638.cpp

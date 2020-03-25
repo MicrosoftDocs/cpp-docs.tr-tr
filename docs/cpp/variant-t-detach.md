@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Detach method [C++]
 - VARIANT object
 ms.assetid: c348ac08-62cf-4657-a16f-974a79c12158
-ms.openlocfilehash: 8426c80af04b2c0906af150ea3e91304335e9f69
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9737db6b77483fa55e1dad90b9464752cd8537a5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500555"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187745"
 ---
 # <a name="_variant_tdetach"></a>_variant_t::Detach
 
 **Microsoft 'a özgü**
 
-`VARIANT` Bu`_variant_t` nesneden kapsüllenmiş nesneyi ayırır.
+Bu `_variant_t` nesnesinden kapsüllenmiş `VARIANT` nesnesini ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +34,7 @@ Encapsulated `VARIANT`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsülleri `VARIANT`ayıklar ve döndürür, sonra bu `_variant_t` nesneyi yok etmeden temizler. Bu üye işlevi, `VARIANT` ' `VARTYPE` ın kapsüllemesini kaldırır ve bu `_variant_t` nesnenin öğesini VT_EMPTY olarak ayarlar. Bu, `VARIANT` [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) işlevini çağırarak döndürülen öğesini serbest bırakmanız gerekir.
+Kapsüllenmiş `VARIANT`ayıklar ve döndürür, sonra bu `_variant_t` nesnesini yok etmeden temizler. Bu üye işlevi, `VARIANT` kapsülden kaldırır ve bu `_variant_t` nesnesinin `VARTYPE` VT_EMPTY olarak ayarlar. Burada, [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) işlevini çağırarak döndürülen `VARIANT` serbest bırakmanız gerekir.
 
 **SON Microsoft 'a özgü**
 

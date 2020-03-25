@@ -20,12 +20,12 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 8ebd8d48b68581bf00215b4ca14f5ac0a543a3c0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e782788832063e210356864e074c15e9ba3555f4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443901"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160326"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: denetim erişimini ve değerlerini tanımlama (C++)
 

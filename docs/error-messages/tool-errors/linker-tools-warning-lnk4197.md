@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4197
 ms.assetid: 8a976fd7-a74b-4c83-ab66-a9e7d7073c4a
-ms.openlocfilehash: 0abad1b98ff4782f077312752603ec17fd611c12
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92702864a00455e4b70f00dfc9988bfb754e2e64
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390366"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183286"
 ---
 # <a name="linker-tools-warning-lnk4197"></a>Bağlayıcı Araçları Uyarısı LNK4197
 
-> dışarı aktarma '*exportname*' belirtilmiş birden çok kez; ilk belirtim kullanılıyor
+> '*exportname*' dışarı aktarma işlemi birden çok kez belirtildi; ilk belirtim kullanılıyor
 
-Bir dışarı aktarma, birden çok belirtilen ve farklı yolları. Bağlayıcı ilk belirtimi kullanır ve kalan yok sayar.
+Dışarı aktarma birden çok ve farklı şekilde belirtilir. Bağlayıcı ilk belirtimi kullanır ve REST 'yi yoksayar.
 
-C çalışma zamanı kitaplığı yeniden, bu iletiyi yoksayabilirsiniz.
+C çalışma zamanı kitaplığını yeniden oluşturuyorsanız bu iletiyi yoksayabilirsiniz.
 
-Bir dışarı aktarma, birden çok kez tamamen aynı şekilde belirtilirse, bağlayıcı bir uyarı veremez.
+Bir dışarı aktarma işlemi aynı şekilde birden çok kez belirtilirse bağlayıcı bir uyarı vermez.
 
-Örneğin, aşağıdaki .def dosyası içeriğini, bu uyarı vermesine neden olur:
+Örneğin, bir. def dosyasının aşağıdaki içeriği bu uyarıya neden olur:
 
 ```
 EXPORTS
@@ -31,8 +31,8 @@ EXPORTS
    functioname      @10
 ```
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Aynı dışarı aktarma belirtilen komut satırında hem de (dışarı aktarma ile:) ve .def dosyasında.
+1. Aynı dışa aktarma hem komut satırında (Export:) aracılığıyla) belirtilir ve. def dosyasında.
 
-2. Aynı dışarı aktarma, farklı öznitelikleri .def dosyasında iki kez listelenir.
+2. Aynı dışa aktarma,. def dosyasında farklı özniteliklere sahip iki kez listelenir.

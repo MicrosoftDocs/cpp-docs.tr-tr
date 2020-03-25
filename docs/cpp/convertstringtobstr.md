@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - ConvertStringToBSTR function
 ms.assetid: 071f9b3b-9643-4e06-a1e5-de96ed15bab2
-ms.openlocfilehash: 5e7d8abd29033fc88dae1e83fcc6467fb0ace46f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2065011ee6bbf98ce2c83be494f1e6631af9f7cf
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154626"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170715"
 ---
 # <a name="convertstringtobstr"></a>ConvertStringToBSTR
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Dönüştürür bir `char *` değerini bir `BSTR`.
+Bir `char *` değerini `BSTR`dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,7 +28,7 @@ BSTR __stdcall ConvertStringToBSTR(const char* pSrc)
 #### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-A `char *` değişkeni.
+`char *` değişken.
 
 ## <a name="example"></a>Örnek
 
@@ -56,13 +56,13 @@ char * text: Test
 BSTR text: Test
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<comutil.h >
+**Üstbilgi:** \<comutil. h >
 
-**Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)
+**Lib:** comsuppw. lib veya comsuppwd. lib (daha fazla bilgi için bkz. [/zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

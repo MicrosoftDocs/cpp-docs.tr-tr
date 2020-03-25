@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - __set_app_type
 ms.assetid: f0ac0f4d-70e6-4e96-9e43-eb9d1515490c
-ms.openlocfilehash: 4d72eecd454e6c01e88c6869c96b628902690383
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8efe2159618f728cfaad33493dd482fbdd5375f7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940235"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171495"
 ---
 # <a name="__set_app_type"></a>__set_app_type
 
@@ -50,7 +50,7 @@ Uygulama türünü gösteren bir değer. Olası değerler şunlardır:
 |-----------|-----------------|
 |_UNKNOWN_APP|Bilinmeyen uygulama türü.|
 |_CONSOLE_APP|Konsol (komut satırı) uygulaması.|
-|_GU_APP|GUI (Windows) uygulaması.|
+|_GUI_APP|GUI (Windows) uygulaması.|
 
 ## <a name="remarks"></a>Açıklamalar
 

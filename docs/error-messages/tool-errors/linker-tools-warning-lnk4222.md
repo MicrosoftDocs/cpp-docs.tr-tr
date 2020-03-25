@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4222
 ms.assetid: b7bb1794-41fb-4c83-b9b0-59c0d786a7da
-ms.openlocfilehash: 52a4fee532eb9997dcf013f95246b27fdffc4c20
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f74379861ad04142fd78a8e307af165072c9cadd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160412"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183039"
 ---
 # <a name="linker-tools-warning-lnk4222"></a>Bağlayıcı Araçları Uyarısı LNK4222
 
-dışarı aktarılan Sembol 'symbol' sembolüne sıra atanmamalıdır
+' symbol ' içe aktarılmış simgesine sıra atanmamalıdır
 
-Aşağıdaki simgeleri sıra tarafından verilebilir:
+Aşağıdaki semboller sıra sayısına göre aktarılmamalıdır:
 
 - `DllCanUnloadNow`
 
@@ -33,7 +33,7 @@ Aşağıdaki simgeleri sıra tarafından verilebilir:
 
 - `DllUnregisterServer`
 
-Bu işlevlerin her zaman adıyla bulunan kullanarak `GetProcAddress`. Bağlayıcı bu konuda uyaran daha büyük bir görüntüde neden olabileceğinden dışarı aktarma türüdür. Bu durum, sıralı dışarı aktarmalar aralığını nispeten daha az sayıda dışarı aktarma ile büyük olması durumunda gerçekleşebilir. Örneğin,
+Bu işlevler `GetProcAddress`kullanılarak her zaman ada göre bulunur. Bağlayıcı, bu tür bir dışarı aktarma hakkında sizi uyarır çünkü daha büyük bir görüntüyle sonuçlanabilir. Bu durum, sıra dışarı aktarmaların aralığı nispeten daha az dışarı aktarma ile büyükse meydana gelebilir. Örneğin,
 
 ```
 EXPORTS
@@ -41,7 +41,7 @@ EXPORTS
    MyOtherAPI      @100
 ```
 
-100 ile bunların 98 dışa aktarma adres tablosunda (2-99) yalnızca filler yuvası gerektirir. Diğer yandan
+, dışa aktarma adresi tablosunda 98 (2-99), yalnızca filler ile 100 yuva gerektirir. Gel gelelim
 
 ```
 EXPORTS
@@ -49,4 +49,4 @@ EXPORTS
    MyOtherAPI      @100
 ```
 
-iki yuvası gerektirir. (Ayrıca ile aktarabilirsiniz olduğunu unutmayın [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlayıcı seçeneği.)
+iki yuva gerekecektir. ( [/Export](../../build/reference/export-exports-a-function.md) bağlayıcı seçeneğiyle de verebilin farkında olun.)

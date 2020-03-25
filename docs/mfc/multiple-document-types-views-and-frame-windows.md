@@ -15,75 +15,75 @@ helpviewer_keywords:
 - multiple frame windows [MFC]
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-ms.openlocfilehash: 154fc67dc35d5e5633c72c27100da9be56c0c68c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2948564b9008f9a89c89d58e3249b20b3dc2ffd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238599"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168648"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
 
-Bir belge, kendi Görünüm ve çerçeve penceresi standart ilişkiyi açıklanan [belge/görünüm oluşturma](../mfc/document-view-creation.md). Birçok uygulama destekleyen tek bir belge türü (ancak büyük olasılıkla bu türdeki birden çok açık belgeler) tek bir görünümde belge başına yalnızca bir çerçeve penceresi ve belge. Ancak, bazı uygulamalar bir veya daha fazla bu varsayılan değerleri değiştirmek gerekebilir.
+Bir belge, görünümü ve çerçeve penceresi arasındaki standart ilişki [belge/görünüm oluşturma](../mfc/document-view-creation.md)bölümünde açıklanmaktadır. Birçok uygulama, belgede tek bir görünüm ve belge başına yalnızca bir çerçeve penceresi ile tek bir belge türünü destekler (ancak bu türden birden çok açık belge olabilir). Ancak bazı uygulamaların bu varsayılandan bir veya birkaçını değiştirmek gerekebilir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Birden çok belge türleri](#_core_multiple_document_types)
+- [Birden çok belge türü](#_core_multiple_document_types)
 
 - [Birden çok görünüm](#_core_multiple_views)
 
 - [Birden çok çerçeve penceresi](#_core_multiple_frame_windows)
 
-- [Bölümlendirici pencereler](#_core_splitter_windows)
+- [Bölümlendirici pencereleri](#_core_splitter_windows)
 
-##  <a name="_core_multiple_document_types"></a> Birden çok belge türleri
+##  <a name="multiple-document-types"></a><a name="_core_multiple_document_types"></a>Birden çok belge türü
 
-MFC Uygulama Sihirbazı, bir tek belge sınıfı oluşturur. Ancak, bazı durumlarda, birden fazla belge türü desteği gerekebilir. Örneğin, uygulamanızın çalışma sayfası ve grafik belgeleri gerekebilir. Her bir belge türü kendi belge sınıfı ve belki de kendi görünüm sınıfı tarafından temsil edilir. Kullanıcı dosya yeni komutunun seçtiğinde framework desteklenen belge türlerini listeleyen bir iletişim kutusu görüntüler. Daha sonra kullanıcı türü bir belgeyi oluşturur. Her bir belge türü kendi belge şablonu nesnesi tarafından yönetilir.
+MFC Uygulama Sihirbazı sizin için tek bir belge sınıfı oluşturur. Bazı durumlarda, ancak birden fazla belge türünü desteklemeniz gerekebilir. Örneğin, uygulamanızın çalışma sayfası ve grafik belgeleri olması gerekebilir. Her belge türü kendi belge sınıfı ve muhtemelen kendi görünüm sınıfı tarafından temsil edilir. Kullanıcı dosya yeni komutunu seçtiğinde, çerçeve desteklenen belge türlerini listeleyen bir iletişim kutusu görüntüler. Daha sonra kullanıcının seçtiği türün bir belgesini oluşturur. Her belge türü kendi belge şablonu nesnesi tarafından yönetilir.
 
-Ek belge sınıfları oluşturmak için bkz [sınıf ekleme](../ide/adding-a-class-visual-cpp.md). Seçin [CDocument](../mfc/reference/cdocument-class.md) belge istenen bilgileri sağlayın ve türetilen sınıf türü olarak. Ardından yeni sınıfın veri uygulayın.
+Ek belge sınıfları oluşturmak için bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md). Türetebilirsiniz ve istenen belge bilgilerini sağlamak için sınıf türü olarak [CDocument](../mfc/reference/cdocument-class.md) ' ı seçin. Ardından yeni sınıfın verilerini uygulayın.
 
-Ek belge sınıfınıza hakkında bilmeniz framework izin vermek için ikinci bir çağrı ekleyin [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) uygulama sınıfın içinde [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) geçersiz kılar. Daha fazla bilgi için [belge şablonları](../mfc/document-templates-and-the-document-view-creation-process.md).
+Framework 'ün ek belge sınıfınız hakkında bilgi sahibi olmak için, uygulama sınıfınızın [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) geçersiz kılmasına Ikinci bir [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) çağrısı eklemeniz gerekir. Daha fazla bilgi için bkz. [Belge şablonları](../mfc/document-templates-and-the-document-view-creation-process.md).
 
-##  <a name="_core_multiple_views"></a> Birden çok görünüm
+##  <a name="multiple-views"></a><a name="_core_multiple_views"></a>Birden çok görünüm
 
-Yalnızca tek bir görünümde birçok belgeler gerektirir, ancak tek bir belgenin birden fazla görünümünü desteklemek mümkündür. Birden çok görünüm uygulamanıza yardımcı olmak için bir belge nesnesi görünümlerini listesini tutar, ekleme ve kaldırma görünümleri için işlevleri sağlar ve kaynakları [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) birden çok görünüm ne zaman bilmeniz izin vermek için üye işlevi Belgenin verilerini değişti.
+Birçok belge yalnızca tek bir görünüm gerektirir, ancak tek bir belgenin birden fazla görünümünü desteklemek mümkündür. Birden çok görünüm uygulamanıza yardımcı olması için bir belge nesnesi görünümlerinin listesini tutar, görünümler ekleme ve kaldırma için üye işlevleri sağlar ve belge verilerinin ne zaman değiştiğini birden çok görünüme izin vermek için [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) üye işlevini sağlar.
 
-MFC aynı belgede birden çok görünüm gerektiren üç yaygın kullanıcı arabirimi destekler. Bu model şunlardır:
+MFC, aynı belgede birden çok görünüm gerektiren üç ortak kullanıcı arabirimini destekler. Bu modeller şunlardır:
 
-- Aynı sınıfın her bir ayrı MDI belge çerçevesi penceresinin nesneleri görüntüle.
+- Her biri ayrı bir MDI belge çerçevesi penceresinde aynı sınıfın nesnelerini görüntüleyin.
 
-   Belge üzerinde ikinci bir çerçeve penceresi oluşturma desteği isteyebilirsiniz. Kullanıcı ikinci bir çerçeve aynı belgede bir görünümünü açın ve ardından iki çerçeve belgenin farklı bölümleri aynı anda görüntülemek için bir yeni pencere komutunu seçebilir. Framework ilk çerçeve penceresi ve belgeye eklenen görünüm çoğaltarak Pencere menüsünden MDI uygulamaları için yeni pencere komutunu destekler.
+   Belge üzerinde ikinci bir çerçeve penceresi oluşturmayı desteklemek isteyebilirsiniz. Kullanıcı, aynı belgenin görünümü ile ikinci bir çerçeveyi açmak için yeni bir pencere komutu seçebilir ve sonra belgenin farklı bölümlerini aynı anda görüntülemek için iki kareyi de kullanabilir. Framework, başlangıç çerçevesi penceresini çoğaltarak ve belgeye ekli görünüm olan MDI uygulamaları için pencere menüsündeki yeni pencere komutunu destekler.
 
-- Aynı belge çerçeve penceresindeki aynı sınıfın nesneleri görüntüle.
+- Aynı belge çerçevesi penceresindeki aynı sınıfın nesnelerini görüntüleyin.
 
-   Bölümlendirici pencereler, belgenin birden çok ayrı görünümlere bir tek belge penceresini görüntüleme alanının bölün. Framework aynı görünüm sınıfı birden çok görünüm nesneleri oluşturur. Daha fazla bilgi için [Bölümlendirici Windows](#_core_splitter_windows).
+   Ayırıcı Windows, tek bir belge penceresinin görünüm alanını belgenin birden çok ayrı görünümüne ayırır. Çerçeve aynı görünüm sınıfından birden çok görünüm nesnesi oluşturur. Daha fazla bilgi için bkz. [bölünmüş pencereler](#_core_splitter_windows).
 
-- Tek bir çerçeve penceresinde farklı sınıfların nesneleri görüntüle.
+- Tek bir kare penceresinde farklı sınıfların nesnelerini görüntüleyin.
 
-   Bu modelde, ayırıcı penceresi çeşitlemesi birden çok görünüm tek çerçeve penceresi paylaşın. Görünümleri farklı sınıflardan aynı belgeyi görüntülemek için farklı bir yol sağlayarak her görünüm oluşturulur. Örneğin, isteğe bağlı olarak diğer görünümdeki anahat modunda gösterir ancak tek bir görünümde bir sözcük belge normal modda gösterebilir. Bölümlendirici denetimi görünüm göreli boyutlarını ayarlamak kullanıcının sağlar.
+   Bu modelde, ayırıcı penceresinin bir çeşitlemesi olan birden çok görünüm tek bir çerçeve penceresi paylaşır. Görünümler farklı sınıflardan oluşturulur, her görünüm aynı belgeyi görüntülemenin farklı bir yolunu sağlar. Örneğin, bir görünüm bir sözcük işleme belgesini normal modda gösterebilir ve diğer görünüm bunu ana hat modunda gösterir. Bölümlendirici denetimi, kullanıcının görünümlerin göreli boyutlarını ayarlamasına olanak tanır.
 
-Aşağıdaki şekilde bölümlere ayrılmış üç kullanıcı arabirimi model yukarıda gösterilen sırayla a, b ve c gösterir.
+Aşağıdaki şekil a, b ve c bölümlerine bölünmüştür, üç kullanıcı arabirimi modelini yukarıda sunulan sırayla gösterir.
 
-![Birden çok&#45;kullanıcı arabirimlerini görüntülemek](../mfc/media/vc37a71.gif "birden çok&#45;kullanıcı arabirimleri görüntüleme") <br/>
-Birden çok görünüm kullanıcı arabirimleri
+![Birden&#45;çok görünüm kullanıcı arabirimi](../mfc/media/vc37a71.gif "Birden&#45;çok görünüm kullanıcı arabirimi") <br/>
+Birden çok görüntüleme Kullanıcı arabirimleri
 
-Yeni Pencere komutunu uygulama ve sınıfı sağlayarak bu modeller çerçevesini sağlar [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)bölümünde açıklandığı gibi [Bölümlendirici Windows](#_core_splitter_windows). Bu, başlangıç noktası olarak kullanmak diğer model uygulayabilir. Ayırıcılar, görünümler ve çerçeve pencereleri bakın farklı yapılandırmaları gösteren örnek programlar için [MFC örnekleri](../overview/visual-cpp-samples.md).
+Framework, yeni pencere komutunu uygulayarak ve [Splitter Windows](#_core_splitter_windows)' da anlatıldığı gibi [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)sınıfı sağlayarak bu modelleri sağlar. Bunları Başlangıç noktanız olarak kullanarak başka modeller uygulayabilirsiniz. Görünümler, çerçeve pencereleri ve bölümlendiricileri farklı yapılandırma sürümlerini gösteren örnek programlar için bkz. [MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples).
 
-Hakkında daha fazla bilgi için `UpdateAllViews`, sınıfına bakın [CView](../mfc/reference/cview-class.md) içinde *MFC başvurusu* ve [Scribble örneğinin](../overview/visual-cpp-samples.md).
+`UpdateAllViews`hakkında daha fazla bilgi için *MFC başvurusu* ve [karalama örneğinde](../overview/visual-cpp-samples.md)sınıf [CView](../mfc/reference/cview-class.md) bölümüne bakın.
 
-##  <a name="_core_multiple_frame_windows"></a> Birden çok çerçeve Windows
+##  <a name="multiple-frame-windows"></a><a name="_core_multiple_frame_windows"></a>Birden çok çerçeve penceresi
 
-İkinci bir çerçeve penceresi aynı belgede oluşturmak için Pencere menüsünden MDI uygulamaları için yeni pencere komutunu kullanabilirsiniz. Daha fazla bilgi için şekilde birden çok görünüm kullanıcı arabirimleri birinci modelin bakın.
+Aynı belgede ikinci bir çerçeve penceresi oluşturmak için MDI uygulamalarının pencere menüsündeki yeni pencere komutunu kullanabilirsiniz. Daha fazla bilgi için bkz. şekil birden çok görüntüleme Kullanıcı arabirimindeki ilk model.
 
-##  <a name="_core_splitter_windows"></a> Bölümlendirici Windows
+##  <a name="splitter-windows"></a><a name="_core_splitter_windows"></a>Bölümlendirici pencereleri
 
-Ayırıcı penceresi, pencere olan veya, iki veya daha fazla kaydırılabilir Bölmelere ayrılmış olabilir. Bölmelerin göreli boyutlarını ayarlamak kullanıcının, bir ayırıcı denetimi (veya "kutusunu bölme") kaydırma çubukları yanındaki pencere çerçevesi sağlar. Her bölmede aynı belgede bir görünümüdür. "Dinamik" Ayırıcılar içinde aynı sınıfı, birden çok görünüm kullanıcı arabirimleri şekil bölümü b'dedir gösterildiği görünümleridir. "Statik" Ayırıcılar farklı sınıflardaki görünümleri olabilir. Her iki tür Bölümlendirici pencereler sınıfı tarafından desteklenen [CSplitterWnd](../mfc/reference/csplitterwnd-class.md).
+Bölümlendirici penceresinde pencere veya, iki veya daha fazla kaydırılabilir bölmeye ayrılabilir. Kaydırma çubuklarının yanındaki pencere çerçevesindeki bir ayırıcı denetimi (veya "Bölünmüş kutu"), kullanıcının bölmelerin göreli boyutlarını ayarlamasına olanak tanır. Her bölme aynı belge üzerindeki bir görünümüdür. "Dinamik" bölümlendiricileri içinde, şekil birden çok görüntüleme kullanıcı arabirimlerinin b bölümünde gösterildiği gibi, görünümler aynı sınıfta bulunur. "Statik" bölümlendiricileri içinde, görünümler farklı sınıflarda olabilir. Her iki türden de Splitter pencereleri, [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)sınıfı tarafından desteklenir.
 
-Dinamik Bölümlendirici pencereler, aynı sınıfın görünümlere sahip bir pencere sağlar, birden fazla bölme bölün ve ardından farklı belge parçalarını görmek için farklı bölmeler gidin izin verin. Kullanıcı ayrıca ek görünümler kaldırmak için pencerenin sayfanın toplamında. Eklenen Bölümlendirici pencereler [Scribble örneğinin](../overview/visual-cpp-samples.md) buna örnek verilebilir. Bu konuda dinamik Bölümlendirici pencereler oluşturmak için yöntem açıklanmaktadır. Dinamik Bölümlendirici pencere birden çok görünüm kullanıcı arabirimleri şekil b bölümünde gösterilir.
+Aynı sınıfın görünümleriyle dinamik Bölümlendirici pencereleri, kullanıcının bir pencereyi ' de birden çok bölmeye bölmesine izin verir ve sonra belgenin farklı parçalarını görmek için farklı bölmeleri kaydıracaktır. Kullanıcı ayrıca ek görünümleri kaldırmak için pencereyi bölebilir. [Karalama örneğine](../overview/visual-cpp-samples.md) eklenen Bölümlendirici pencereler bir örnektir. Bu konuda, dinamik Bölümlendirici pencereleri oluşturma tekniği açıklanmaktadır. Dinamik Bölümlendirici penceresi, şekil birden çok görüntüleme kullanıcı arabirimlerinin b bölümünde gösterilir.
 
-Birden çok Bölmelere ayrılmış penceresi her biri farklı bir amaç görünümlerle farklı sınıfların statik Bölümlendirici pencereler başlayın. Örneğin, Visual C++ bit eşlem Düzenleyicisi'nde yan yana iki bölme görüntü penceresini gösterir. Sol bölmede life-sized bir bit eşlem görüntüsünü görüntüler. Sağ bölmede, aynı bit eşlemin yakınlaştırılmış veya büyütülmüş görüntüsünü görüntüler. Bölmeleri "bölmelerin göreli boyutlarını değiştirmek için kullanıcı sürükleyebilirsiniz bir bölme çubuğu tarafından" ayrılır. Statik Bölümlendirici pencere birden çok görünüm kullanıcı arabirimleri şekil bölümü c dilinde gösterilir.
+Farklı sınıfların görünümleriyle statik Bölümlendirici pencereleri, her biri farklı bir amaca kadar birden çok bölmeye bölünmeye başlar. Örneğin, görsel C++ bit eşlem düzenleyicisinde, görüntü penceresi yan yana iki bölme gösterir. Sol bölmede, bit eşlemin yaşam boyutunda bir görüntüsü görüntülenir. Sağ bölmede aynı bit eşlemin yakınlaştırılmış veya büyütülmüş bir görüntüsü görüntülenir. Bölmeler, kullanıcının bölmelerin göreli boyutlarını değiştirmek için sürükleyemeyeceği bir "ayırıcı çubukla" ile ayrılır. Bir statik ayırıcı pencere, şekil birden çok görüntüleme kullanıcı arabirimlerinin c. bölümünde gösterilir.
 
-Daha fazla bilgi için bkz. [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) içinde *MFC başvurusu* ve [MFC örnekleri](../overview/visual-cpp-samples.md).
+Daha fazla bilgi için bkz. *MFC başvurusu* ve [MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples)Içindeki [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) sınıfı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

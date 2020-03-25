@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4900
 ms.assetid: 826997ec-0803-4794-ad35-bb463f679658
-ms.openlocfilehash: 9066210327c932e66286bb4bd138b97af2dba7f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 55ce73339cbea43de731835a1b5b5cc3918f164c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380831"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174849"
 ---
 # <a name="compiler-warning-level-1-c4900"></a>Derleyici Uyarısı (düzey 1) C4900
 
-'tool1' Sürüm 'version1' ve 'tool2' Sürüm 'version2' arasında uyuşmazlık Ara dil
+' Tool1 ' sürümü ' Version1 ' ve ' Tool2 ' sürümü ' Version2 ' arasında ara dil uyumsuzluğu
 
-Kullanılan ara dil *tool1* ve *tool2* eşleşmedi. Her aracı en güncel sürümünün yüklü olduğunu denetleyin.
+*Tool1* ve *Tool2* ' de kullanılan ara dil eşleşmedi. Her aracın en güncel sürümünün yüklendiğinden emin olun.

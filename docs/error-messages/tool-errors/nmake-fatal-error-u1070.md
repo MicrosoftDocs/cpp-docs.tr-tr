@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - U1070
 ms.assetid: 8639fc39-b4b1-48f5-ac91-0e9fb61680fd
-ms.openlocfilehash: 35bea47f6626dfe283a537d3d96340921c37f3f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 008d49df3460cb7cf760e4b278db20da444555fe
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367245"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182779"
 ---
 # <a name="nmake-fatal-error-u1070"></a>NMAKE Önemli Hatası U1070
 
-'makroadı' Makro tanımında döngü
+' makroadı ' makro tanımında döngüye
 
-Belirli bir Makro tanımında belirtilen Makro tanımında yer alan bir makro içeriyordu. Döngüsel makro tanımları geçersizdir.
+Verilen makro tanımı, tanımı verilen makroyu içeren bir makro içeriyordu. Döngüsel makro tanımları geçersiz.
 
 ## <a name="example"></a>Örnek
 
@@ -28,7 +28,7 @@ ONE=$(TWO)
 TWO=$(ONE)
 ```
 
-Aşağıdaki hata neden:
+Şu hataya neden olur:
 
 ```
 cycle in macro definition 'TWO'

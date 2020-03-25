@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3646
+title: Derleyici hatası C3646
 ms.date: 06/14/2018
 f1_keywords:
 - C3646
 helpviewer_keywords:
 - C3646
 ms.assetid: 4391ead2-9637-4ca3-aeda-5a991b18d66d
-ms.openlocfilehash: 04ff1d026c97c56611f8b786d8a7254db711e4a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13a3ebeb6e7783687abc73cd0dcc018abe827809
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385595"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200479"
 ---
-# <a name="compiler-error-c3646"></a>Derleyici Hatası C3646
+# <a name="compiler-error-c3646"></a>Derleyici hatası C3646
 
-> 'belirticisi': Bilinmeyen geçersiz kılma belirticisi
+> ' belirtici ': bilinmeyen geçersiz kılma belirticisi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici, burada, bir geçersiz kılma tanımlayıcısı bekleniyordu, ancak belirteç derleyici tarafından tanınmadı konumda bir belirteci bulundu.
+Derleyici, bir geçersiz kılma belirticisi bulmak beklenen konumda bir belirteç buldu, ancak belirteç derleyici tarafından tanınmadı.
 
-Örneğin, tanınmayan *belirticisi* olduğu **_NOEXCEPT**, anahtar sözcüğüyle değiştirin **noexcept**.
+Örneğin, tanınmayan *belirleyici* **_NOEXCEPT**, bunu **NOEXCEPT**anahtar sözcüğüyle değiştirin.
 
-Daha fazla bilgi için [geçersiz kılma tanımlayıcıları](../../extensions/override-specifiers-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [geçersiz kılma belirticileri](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3646 oluşturur ve bunu düzeltmek için bir yol gösterir:
+Aşağıdaki örnek C3646 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```cpp
 // C3646.cpp

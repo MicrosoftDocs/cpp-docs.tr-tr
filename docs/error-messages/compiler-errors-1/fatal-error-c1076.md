@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C1076
 ms.assetid: 84ac1180-3e8a-48e8-9f77-7f18a778b964
-ms.openlocfilehash: 91753a49498548b4e523cd8564ee7a7ca7a3b373
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca5117342d406983e8cba675c2589d2431d09d38
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406957"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204184"
 ---
 # <a name="fatal-error-c1076"></a>Önemli hata C1076
 
 > derleyici sınırı: iç yığın sınırı aşıldı; daha yüksek bir sınır belirtmek için /Zm kullanın
 
-Bu hata, çok fazla sembol veya çok fazla sayıda şablon örneklenmesi nedeniyle meydana gelir. Visual Studio 2015'ten başlayarak, bu ileti gelen çok fazla paralel derleme işlemler tarafından neden Windows sanal bellek baskısı neden olabilir. Bu durumda, kullanılacak öneri **/Zm** seçeneği yoksayılan kullanmakta olduğunuz sürece bir `#pragma hdrstop` yönergesi.
+Bu hata, çok fazla sembol veya çok fazla sayıda şablon örneklenmesi nedeniyle meydana gelir. Visual Studio 2015 ' den itibaren, bu ileti çok fazla paralel derleme işlemi nedeniyle Windows sanal belleği basıncına neden olabilir. Bu durumda, bir `#pragma hdrstop` yönergesi kullanmadığınız sürece **/ze** seçeneğinin kullanılması önerisi göz ardı edilmelidir.
 
 Bu hatayı gidermek için:
 
-1. Önceden derlenmiş üst bilgi kullanıyorsa bir `#pragma hdrstop` yönergesi, kullanım [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) derleyici bellek sınırını belirtilen değere ayarlamak için seçeneği [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md) hata iletisi. Visual Studio'da bu değeri ayarlamak nasıl içeren daha fazla bilgi için bkz açıklamalar bölümünde [/Zm (belirtin önceden derlenmiş üst bilgi bellek ayırma sınırını)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
+1. Önceden derlenmiş üstbilgileriniz bir `#pragma hdrstop` yönergesi kullanıyorsa, derleyici belleği sınırını [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md) hata iletisinde belirtilen değere ayarlamak için [/zı](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneğini kullanın. Visual Studio 'da bu değerin nasıl ayarlanacağını içeren daha fazla bilgi için/ZD içindeki açıklamalar bölümüne bakın [(önceden derlenmiş üst bilgi bellek ayırma sınırını belirtin)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
 
-1. Kullanılarak belirtilen paralel işlem sayısını azaltmayı deneyin **/maxcpucount** MSBUILD seçeneği. EXE birlikte **/MP** CL seçeneği. EXE. Daha fazla bilgi için [önceden derlenmiş üst bilgi (PCH) sorunları ve önerilerini](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/).
+1. MSBUILD için **/maxcpucount** seçeneğini kullanarak belirtilen paralel işlem sayısını azaltmayı göz önünde bulundurun. Öğesini CL ile birlikte kullanarak **/MP** exe. EXE. Daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi (pch) sorunları ve önerileri](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/).
 
-1. 64-bit işletim sisteminde 32-bit barındırılan derleyiciler kullanıyorsanız, bunun yerine 64-bit barındırılan derleyiciler kullanın. Daha fazla bilgi için [nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
+1. 64-bit işletim sisteminde 32-bit barındırılan derleyiciler kullanıyorsanız, bunun yerine 64-bit barındırılan derleyiciler kullanın. Daha fazla bilgi için, bkz. [nasıl yapılır: 64 bitlik görsel C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
 
 1. Gereksiz ekleme dosyalarını silin.
 
@@ -33,4 +33,4 @@ Bu hatayı gidermek için:
 
 1. Kullanılmayan bildirimleri ortadan kaldırın.
 
-İçin belirtilen değer derleme başladıktan hemen C1076 oluşursa **/Zm** muhtemelen programınız için çok yüksektir. Azaltma **/Zm** değeri.
+C1076, derleme başladıktan hemen sonra gerçekleşirse, **/ZD** için belirtilen değer, programınız için büyük olasılıkla çok yüksektir. **/ZD** değerini azaltın.

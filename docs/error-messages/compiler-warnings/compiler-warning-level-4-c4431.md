@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4431
 ms.assetid: 58434ab6-dd8d-427b-953a-602fb7453ae6
-ms.openlocfilehash: 102e9bdb2804988875d8c535eb8c266bd8fb03df
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: d4d803ef003f2c8367c750cf6d6aef07e4032140
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683077"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185366"
 ---
 # <a name="compiler-warning-level-4-c4431"></a>Derleyici Uyarısı (düzey 4) C4431
 

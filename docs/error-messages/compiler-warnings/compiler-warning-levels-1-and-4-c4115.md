@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C4115
 ms.assetid: f3f94e72-fc49-4d09-b3e7-23d68e61152f
-ms.openlocfilehash: 20e44eba3b6f6079e6f37b7cf33fa530a996e829
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e39e8c837d94776a804da2bf38643b453edb949
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360027"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198048"
 ---
 # <a name="compiler-warning-levels-1-and-4-c4115"></a>Derleyici Uyarısı (düzey 1 ve 4) C4115
 
-'type': parantez içinde tür tanımı adı
+' Type ': parantez içinde adlandırılmış tür tanımı
 
-Belirtilen simge, yapı, birleşim veya numaralandırılmış tür parantez içinde bir ifade içinde tanımlamak için kullanılır. Tanımı kapsamı beklenmeyen olabilir.
+Verilen sembol bir parantez, birleşim veya numaralandırılmış türü parantez içinde bir ifade içinde tanımlamak için kullanılır. Tanımın kapsamı beklenmeyen bir durum olabilir.
 
-C işlev çağrısında tanımı genel kapsam vardır. Bir C++ çağrısında, çağrılan işlevin aynı kapsama tanımı içeriyor.
+C işlev çağrısında, tanım genel kapsama sahip. Bir C++ çağrıda, tanım çağrılan işlevle aynı kapsama sahip.
 
-Bu uyarı ayrıca Bildirimciler parantezlerinin parantez ifadeleri olmayan (örneğin, prototipler) neden olabilir.
+Bu uyarı, parantez içinde olmayan deyimlerden (örneğin Prototiplerde) de neden olabilir.
 
-Bu, C++ ve C programlar ANSI uyumluluğu (/Za) altında derlenmiş ile 1. düzey bir uyarıdır. Aksi takdirde Düzey 3 olur.
+Bu, ANSI uyumluluğu (/Za) C++ altında derlenen programlar ve C programlarıyla bir düzey 1 uyarıdır. Aksi takdirde, düzey 3 ' dir.

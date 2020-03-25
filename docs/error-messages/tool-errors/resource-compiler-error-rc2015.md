@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - RC2015
 ms.assetid: 99691683-fb9e-4e61-beb1-12e484858570
-ms.openlocfilehash: 182bc6636ae9d7811824f3f700c6b86811221b5b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21c83ae2c1cbd3d9a285e1eec98d0a7b9680d460
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346632"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191736"
 ---
 # <a name="resource-compiler-error-rc2015"></a>Kaynak Derleyicisi Hatası RC2015
 
-çok fazla karakter sabitindeki
+Sabitte çok fazla karakter
 
-Bir karakter sabiti, ikiden fazla karakter içeriyor.
+Bir karakter sabiti ikiden fazla karakter içeriyordu.
 
-Karakter sabitleri, bir karakter (standart karakter sabitleri) veya iki karakter (uzun karakter sabitleri) sınırlıdır.
+Karakter sabitleri bir karakterle (Standart karakter sabitleri) veya iki karakterle (uzun karakter sabitleri) sınırlıdır.
 
-Bir kaçış dizisi (örneğin, \t sekme) için tek bir karakter dönüştürülür unutmayın.
+Bir kaçış sırasının (örneğin, sekme için \t) tek bir karaktere dönüştürüleceğini unutmayın.

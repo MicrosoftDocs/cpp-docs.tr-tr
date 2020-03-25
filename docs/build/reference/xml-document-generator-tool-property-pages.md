@@ -8,38 +8,38 @@ f1_keywords:
 - VC.Project.VCXDCMakeTool.OutputDocumentFile
 - VC.Project.VCXDCMakeTool.AdditionalDocumentFiles
 ms.assetid: 645912b5-197a-4c36-ba58-64df09444ca0
-ms.openlocfilehash: c99677d7fc53ae3343e15e54997fe0101322fbcf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f10ddf98c238120750e72644779a6ad74af2d1e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316164"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171638"
 ---
 # <a name="xml-document-generator-tool-property-pages"></a>XML Belgesi Oluşturma Aracı Özellik Sayfaları
 
-XML belgesi oluşturma aracı özellik sayfası xdcmake.exe'yi işlevini gösterir. xdcmake.exe'yi kaynak kodunuzu belge açıklamaları içerdiğinde bu .xdc dosyalarının bir .xml dosyasına birleştirir ve [/doc (işlem belgeleri açıklamaları) (C/C++)](doc-process-documentation-comments-c-cpp.md) belirtilirse,. Bkz: [belge açıklamaları için önerilen etiketler](recommended-tags-for-documentation-comments-visual-cpp.md) belge açıklamaları için kaynak kodu ekleme hakkında bilgi için.
+XML belgesi Oluşturucu aracı özellik sayfası xdcmake. exe ' nin işlevlerini gösterir. kaynak kodunuz belge açıklamalarını içerdiğinde ve [/doc (işlem belgeleri açıklamaları) (C/C++)](doc-process-documentation-comments-c-cpp.md) belirtildiğinde xdcmake. exe. xdc dosyalarını bir. xml dosyasına birleştirir. Kaynak koduna belge açıklamaları ekleme hakkında bilgi için bkz. [belge açıklamaları Için önerilen Etiketler](recommended-tags-for-documentation-comments-visual-cpp.md) .
 
 > [!NOTE]
->  Komut satırında xdcmake.exe'yi kullanıldığında xdcmake.exe'yi seçenekleri geliştirme ortamında (özellik sayfaları) seçeneklerden farklıdır. Komut satırında xdcmake.exe'yi kullanma hakkında daha fazla bilgi için bkz: [XDCMake başvurusu](xdcmake-reference.md).
+>  geliştirme ortamındaki xdcmake. exe seçenekleri (Özellik sayfaları), xdcmake. exe komut satırında kullanıldığında seçeneklerinizden farklıdır. Komut satırında xdcmake. exe kullanma hakkında bilgi için bkz. [XDCMake başvurusu](xdcmake-reference.md).
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
 - **Başlangıç başlığını gösterme**
 
-   Telif hakkı iletisini bastır.
+   Telif hakkı iletisini gizleyin.
 
 - **Ek belge dosyaları**
 
-   Proje sisteminin .xdc dosyaları aramak istediğiniz ek dizinler. xdcmake .xdc dosyalarının proje tarafından oluşturulan her zaman arar. Birden çok dizin belirtilebilir.
+   Proje sisteminin. xdc dosyalarını arayacağını istediğiniz ek dizinler. XDCMake, proje tarafından oluşturulan. xdc dosyalarını her zaman arayacaktır. Birden çok dizin belirtilebilir.
 
 - **Çıkış belgesi dosyası**
 
-   .Xml çıkış dosyasının adını ve dizin konumu. Bkz: [derleme komutları ve özellikler için ortak makroları](common-macros-for-build-commands-and-properties.md) dizin konumları belirtmek için makroları kullanma hakkında bilgi için.
+   . Xml çıkış dosyasının adı ve dizin konumu. Dizin konumlarını belirtmek için makroları kullanma hakkında bilgi için bkz. [derleme komutları ve özellikleri Için ortak makrolar](common-macros-for-build-commands-and-properties.md) .
 
 - **Belge kitaplığı bağımlılıkları**
 
-   Projenizin çözümde bir .lib proje üzerinde bir bağımlılık varsa, geçerli proje için .xml dosyalarına .xdc dosyalarının .lib projeden işleyebilir.
+   Projeniz çözümdeki bir. lib projesine bağımlılığı varsa,. xdc dosyalarını. lib projesinden geçerli proje için. xml dosyalarına işleyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md)
+[C++Proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

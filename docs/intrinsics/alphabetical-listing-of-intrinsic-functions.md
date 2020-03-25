@@ -6,12 +6,12 @@ helpviewer_keywords:
 - intrinsics, alphabetical list
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-ms.openlocfilehash: 56aad4c0b39a7a4bd2d425907023cbc8c9b335c4
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+ms.openlocfilehash: ac2f005554cb8548c24368c2a0b245906bd1ca45
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163458"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171703"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>İç işlevlerin alfabetik listesi
 

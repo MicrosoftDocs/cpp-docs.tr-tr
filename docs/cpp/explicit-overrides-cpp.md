@@ -8,26 +8,26 @@ helpviewer_keywords:
 - explicit virtual function overrides
 - explicit override of virtual function
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-ms.openlocfilehash: dbaf8b0d78093df522cfbc63bf20dd0acb6c477c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3bf48b3dac9f23fd3894d7d3cdd41b7ec000ba4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184260"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189032"
 ---
 # <a name="explicit-overrides-c"></a>Açık Geçersiz Kılmalar (C++)
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İki veya daha fazla aynı sanal işlevi olarak tanımlanıp tanımlanmadığını [arabirimleri](../cpp/interface.md) ve bu arabirimden türetilmiş bir sınıf, her bir sanal işlev açıkça geçersiz kılabilirsiniz.
+Aynı sanal işlev iki veya daha fazla [arabirimde](../cpp/interface.md) bildirilirse ve bir sınıf bu arabirimlerden türetilirse, her bir sanal işlevi açıkça geçersiz kılabilirsiniz.
 
-Yönetilen kod kullanarak açık geçersiz kılmalar hakkında bilgi için C++/CLI, bkz: [açık geçersiz kılmalar](../extensions/explicit-overrides-cpp-component-extensions.md).
+/CLI kullanarak C++yönetilen kodda açık geçersiz kılmalar hakkında daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../extensions/explicit-overrides-cpp-component-extensions.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, açık geçersiz kılmalar kullanma işlemini gösterir:
+Aşağıdaki kod örneği, açık geçersiz kılmaların nasıl kullanılacağını göstermektedir:
 
 ```cpp
 // deriv_ExplicitOverrides.cpp

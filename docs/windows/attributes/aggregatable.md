@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-ms.openlocfilehash: aa70c2417b3262e98118b5e717ce39d0147024de
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d929543f699dcd20471ff9a9b45f54119f82a40a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491009"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168531"
 ---
 # <a name="aggregatable"></a>toplanabilir
 
@@ -28,17 +28,17 @@ Sınıfın toplamayı desteklediğini gösterir.
 *value*<br/>
 Seçim COM nesnesinin toplanabileceği zaman gösteren bir parametre:
 
-- `never`COM nesnesi toplanamıyor.
+- COM nesnesi `never` toplanamıyor.
 
-- `allowed`COM nesnesi doğrudan oluşturulabilir veya toplanabilir. Bu varsayılandır.
+- COM nesnesinin doğrudan oluşturulabilmesi veya toplanabilecek `allowed`. Bu varsayılandır.
 
-- `always`COM nesnesi doğrudan oluşturulamaz ve yalnızca toplanabilir. Bu nesne için `CoCreateInstance` çağırdığınızda, toplanan `IUnknown` nesnenin arabirimini (Denetim `IUnknown`) belirtmeniz gerekir.
+- `always` COM nesnesi doğrudan oluşturulamaz ve yalnızca toplanabilir. Bu nesne için `CoCreateInstance` çağırdığınızda, toplanan nesnenin `IUnknown` arabirimini (denetim `IUnknown`) belirtmeniz gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **Toplanamayan** C++ öznitelik, [toplanabilir](/windows/win32/Midl/aggregatable) MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bu, derleyicinin **toplanabilir** özniteliğini oluşturulan. IDL dosyasına geçimeyeceği anlamına gelir.
 
-Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` `vi_progid` uygulanmışsa ve`coclass` de uygulanır.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` uygulanmışsa `vi_progid` ve `coclass` de uygulanır.
 
 ### <a name="atl-projects"></a>ATL projeleri
 
@@ -74,8 +74,8 @@ class CMyClass {};
 |-|-|
 |**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`, veya `vi_progid`.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

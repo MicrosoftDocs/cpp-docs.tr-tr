@@ -17,43 +17,43 @@ helpviewer_keywords:
 - linker [C++], reserved words
 - reserved words [C++]
 ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
-ms.openlocfilehash: 7d51f599dfb81dfa860e1bdba86c4372e80379fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16caacb77e052eebc8e2cd101990ee373535bd6e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319427"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171157"
 ---
 # <a name="reserved-words"></a>Ayrılmış sözcükler
 
-Bağlayıcı tarafından aşağıdaki sözcükler ayrılmıştır. Bu adlar, bağımsız değişkenleri olarak kullanılabilir [modül tanımlama deyimleri](module-definition-dot-def-files.md) yalnızca adı çift tırnak işaretleri arasına alınmışsa ("").
+Aşağıdaki sözcükler bağlayıcı tarafından ayrılmıştır. Bu adlar, yalnızca ad çift tırnak işareti ("") içine alınsa, [modül tanımı deyimlerinde](module-definition-dot-def-files.md) bağımsız değişken olarak kullanılabilir.
 
 ||||
 |-|-|-|
-|**APPLOADER**<sup>1</sup>|**INİTINSTANCE**<sup>2</sup>|**PRELOAD**|
-|**TEMEL**|**IOPL**|**ÖZEL**|
-|**KOD**|**KİTAPLIK**<sup>1</sup>|**PROTMODE**<sup>2</sup>|
-|**UYGUN**|**LOADONCALL**<sup>1</sup>|**SAF**<sup>1</sup>|
-|**VERİ**|**LONGNAMES**<sup>2</sup>|**SALT OKUNUR**|
-|**AÇIKLAMASI**|**TAŞINABİLİR**<sup>1</sup>|**READWRITE**|
-|**DEV386**|**TAŞINABİLİR**<sup>1</sup>|**REALMODE**<sup>1</sup>|
-|**DISCARDABLE**|**BİRDEN ÇOK**|**YERLEŞİK**|
-|**DİNAMİK**|**ADI**|**RESIDENTNAME**<sup>1</sup>|
-|**EXECUTE-ONLY**|**NEWFILES**<sup>2</sup>|**BÖLÜMLERİ**|
-|**EXECUTEONLY**|**NODATA**<sup>1</sup>|**PARÇALARI**|
-|**EXECUTEREAD**|**NOIOPL**<sup>1</sup>|**PAYLAŞILAN**|
-|**EXETYPE**|**NONAME**|**TEK**|
-|**EXPORTS**|**UYUMSUZ**<sup>1</sup>|**STACKSIZE**|
-|**SABİT**<sup>1</sup>|**NONDISCARDABLE**|**STUB**|
-|**İŞLEVLERİ**<sup>2</sup>|**YOK**|**SÜRÜM**|
-|**HEAPSIZE**|**PAYLAŞILMAYAN**|**WINDOWAPI**|
-|**İÇERİ AKTARMALAR**|**NOTWINDOWCOMPAT**<sup>1</sup>|**WINDOWCOMPAT**|
-|**HANUKA**<sup>1</sup>|**NESNELERİ**|**WINDOWS**|
-|**DAHİL**<sup>2</sup>|**ESKİ**<sup>1</sup>||
+|**AppLoader**<sup>1</sup>|**InitInstance**<sup>2</sup>|**PRELOAD**|
+|**TEMEL**|**IOPL**|**ÖZELLEŞTIRME**|
+|**KODUDUR**|**Kitaplık**<sup>1</sup>|**PROTMODE**<sup>2</sup>|
+|**UYGUN**|**LOADONCALL**<sup>1</sup>|**Saf**<sup>1</sup>|
+|**VERILERI**|**Longnames**<sup>2</sup>|**ÖZELLIĞININ**|
+|**AÇıKLAMASı**|**Taşınabilir**<sup>1</sup>|**READWRITE**|
+|**DEV386**|**Taşınabilir**<sup>1</sup>|**Realmode**<sup>1</sup>|
+|**DISCARDABLE**|**Çoklu**|**KALAN**|
+|**TIR**|**ADA**|**Resdentname**<sup>1</sup>|
+|**YALNıZCA YÜRÜTME**|**Newfiles**<sup>2</sup>|**BAŞLıKLı**|
+|**Yalnızca Execute**|**NoData**<sup>1</sup>|**LARDA**|
+|**EXECUTEREAD**|**Noıopl**<sup>1</sup>|**PAYLAŞıLAN**|
+|**EXETYPE**|**NONAME**|**SUNUCULU**|
+|**EXPORTS**|**Uyumsuz**<sup>1</sup>|**STACKSIZE**|
+|**FIXED**<sup>1</sup> düzeltildi|**NONDISCARDABLE**|**STUB**|
+|**İşlevler**<sup>2</sup>|**SEÇIM**|**Sürüm**|
+|**HEAPSIZE**|**PAYLAŞıLMAYAN**|**WINDOWAPı**|
+|**IŞLEMLERININ**|**Notwindowcompat**<sup>1</sup>|**WINDOWCOMPAT**|
+|**Impure**<sup>1</sup>|**NESNEYI**|**PENCERELERIN**|
+|**Dahil**<sup>2</sup>|**Eski**<sup>1</sup>||
 
-<sup>1</sup> bu terim karşılaştığında bağlayıcı ("yoksayıldı") bir uyarı verir. Ancak, yine de ayrılmış bir sözcüktür.
+<sup>1</sup> bağlayıcı bu terimle karşılaştığında bir uyarı ("yoksayıldı") yayar. Ancak, sözcük hala ayrıldı.
 
-<sup>2</sup> bağlayıcı Bu word gözardı eder, ancak hiçbir uyarı verir.
+<sup>2</sup> bağlayıcı bu sözcüğü yoksayar, ancak hiçbir uyarı yayar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

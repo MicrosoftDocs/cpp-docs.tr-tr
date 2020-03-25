@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3390
 ms.assetid: 84800a87-c8e6-45aa-82ae-02f816dc8d97
-ms.openlocfilehash: c624d3b0379d057b0ed566deffc2a0efcc324f88
-ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
+ms.openlocfilehash: 4c0544df55fc71ace697d7e0a53ba303706e1378
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912870"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201129"
 ---
 # <a name="compiler-error-c3390"></a>Derleyici hatası C3390
 

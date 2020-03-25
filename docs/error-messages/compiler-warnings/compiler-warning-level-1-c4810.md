@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4810
 ms.assetid: 39e2cae0-9c1c-4ac1-aaa0-5f661d06085b
-ms.openlocfilehash: b1f62b744547dc91923b397f3715c09659433a05
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: bdeb4dd28587635a391e7b776ccd88b637a7769f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74052340"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174940"
 ---
 # <a name="compiler-warning-level-1-c4810"></a>Derleyici Uyarısı (düzey 1) C4810
 

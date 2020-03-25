@@ -1,22 +1,22 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4622
+title: Derleyici Uyarısı (düzey 3) C4622
 ms.date: 11/04/2016
 f1_keywords:
 - C4622
 helpviewer_keywords:
 - C4622
 ms.assetid: d3c879f0-4492-4f4b-b26d-230993f3a933
-ms.openlocfilehash: 88a41c7f9edb1d2a9f6d4547336a77bd5e362882
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 295a183afb24121a2abefd336f6ea92110220155
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401754"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185510"
 ---
-# <a name="compiler-warning-level-3-c4622"></a>Derleyici Uyarısı (Düzey 3) C4622
+# <a name="compiler-warning-level-3-c4622"></a>Derleyici Uyarısı (düzey 3) C4622
 
-hata ayıklama bilgileri üzerine oluşturulmuş nesne dosyasındaki Ön derlenmiş üstbilginin oluşturulması sırasında: 'dosya'
+nesne dosyasındaki ön derlenmiş üstbilginin oluşturulması sırasında oluşan hata ayıklama bilgilerinin üzerine yazılıyor: ' File '
 
-Belirtilen dosya CodeView bilgilerinde, ile derlendiğinde kesildi [/Yu](../../build/reference/yu-use-precompiled-header-file.md) (önceden derlenmiş üst bilgi kullan) seçeneği.
+Belirtilen dosyadaki CodeView bilgileri, [/yu](../../build/reference/yu-use-precompiled-header-file.md) (önceden derlenmiş üstbilgiler kullanın) seçeneğiyle derlendikten sonra kayboldu.
 
-Nesne dosyayı yeniden adlandırın (kullanarak [/Fo](../../build/reference/fo-object-file-name.md)) oluştururken veya önceden derlenmiş üst bilgi kullanarak dosya ve yeni nesne dosyası kullanarak bağlayın.
+Önceden derlenmiş üstbilgi dosyasını oluştururken veya kullanırken ve yeni nesne dosyasını kullanarak bağlantı yaparken nesne dosyasını ( [/fo](../../build/reference/fo-object-file-name.md)kullanarak) yeniden adlandırın.

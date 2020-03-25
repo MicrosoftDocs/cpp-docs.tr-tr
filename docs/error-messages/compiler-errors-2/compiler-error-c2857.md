@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C2857
+title: Derleyici hatası C2857
 ms.date: 09/13/2018
 f1_keywords:
 - C2857
 helpviewer_keywords:
 - C2857
 ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
-ms.openlocfilehash: 10c0ea3b54ded29bf80f83713cea33428dca6ca0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 11b620f9748ac85e731d79b0652c0392375b2ea4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350445"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201857"
 ---
-# <a name="compiler-error-c2857"></a>Derleyici Hatası C2857
+# <a name="compiler-error-c2857"></a>Derleyici hatası C2857
 
-> ' #include ' ifade /Yc ile belirtilen*filename* komut satırı seçeneği kaynak dosyasında bulunamadı
+> /I*filename* komut satırı seçeneğiyle belirtilen ' #include ' ifadesiyle kaynak dosyada bulunamadı
 
-[/Yc](../../build/reference/yc-create-precompiled-header-file.md) seçeneği derlenmiş kaynak dosyada yer almayan bir dahil etme dosyasının adını belirtir.
+[/Yıc](../../build/reference/yc-create-precompiled-header-file.md) seçeneği, derlenen kaynak dosyasında bulunmayan bir içerme dosyasının adını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanırken **/Yc**<em>filename</em> kaynak dosyasını (PCH) önceden derlenmiş üst bilgi dosyası, oluşturma seçeneği bir kaynak dosyaya dahil etmelisiniz *filename* üst bilgi dosyası. En fazla ve belirtilen kaynak dosya tarafından eklenen her dosya *filename*, PCH dosyasına dahil edilir. Diğer kaynak dosyalarındaki kullanılarak derlenmiş **/Yu**<em>filename</em> PCH kullanmak için seçeneği dosya, bir dahil etme, *filename* dosyadaki ilk yorum olmayan satır olması gerekir. Derleyici bu önce kaynak dosyadaki her şeyi yoksayar.
+Ön derlenmiş üst bilgi (PCH) dosyası oluşturmak için kaynak dosyada **/Yıc**<em>filename</em> seçeneğini kullandığınızda, bu kaynak dosya dosya *adı* üst bilgi dosyasını içermelidir. Belirtilen *dosya adı*dahil olmak üzere kaynak dosyanın içerdiği her dosya, PCH dosyasına dahildir. PCH dosyasını kullanmak için **/yu**<em>filename</em> seçeneği kullanılarak derlenen diğer kaynak dosyalarında dosya *adı* ekleme, dosyadaki ilk açıklama olmayan satır olmalıdır. Derleyici, kaynak dosyasındaki bu dahil etmeden önce herhangi bir şeyi yoksayar.
 
-Bu hataya neden olabilir bir `#include "filename"` bir koşullu derleme bloğundaki PCH kaynak dosyanıza derlenmedi.
+Bu hata, PCH kaynak dosyanızda derlenmemiş koşullu derleme bloğunda bir `#include "filename"` ifadesiyle kaynaklanabilir.
 
 ## <a name="example"></a>Örnek
 
-Tipik kullanım PCH kaynak dosyayı farklı bir kaynak dosyayı projenize atanır ve bir üst bilgi dosyası PCH üstbilgi dosyası olarak kullanılır. Tipik bir PCH üstbilgi dosyası tüm projenizde kullanılan kitaplığı üstbilgileri, ancak hala geliştirilmektedir yerel üstbilgiler vardır. Bu örnekte, PCH üstbilgi dosyası adlı *my_pch.h*.
+Tipik kullanımda, projenizdeki bir kaynak dosya, PCH kaynak dosyası olarak atanır ve bir üst bilgi dosyası, PCH üstbilgi dosyası olarak kullanılır. Tipik bir PCH üstbilgi dosyası projenizde kullanılan tüm kitaplık üst bilgilerine sahiptir, ancak hala geliştirme aşamasında olan yerel üstbilgiler değildir. Bu örnekte, PCH üstbilgi dosyası *my_pch. h*olarak adlandırılır.
 
 ```cpp
 // my_pch.h
@@ -35,7 +35,7 @@ Tipik kullanım PCH kaynak dosyayı farklı bir kaynak dosyayı projenize atanı
 #include <stdio.h>
 ```
 
-PCH kaynak dosyası kullanılarak derlenmiş **/Yc**<em>my_pch.h</em> seçeneği. Derleyici bu PCH üstbilgi dosyasının bir içerme bulamazsa C2857 oluşturur:
+PCH kaynak dosyası, **/YC**<em>my_pch. h</em> seçeneği kullanılarak derlenir. Derleyici bu PCH üstbilgi dosyasını içeren bir içerme bulamazsa, C2857 oluşturur:
 
 ```cpp
 // my_pch.cpp
@@ -46,7 +46,7 @@ PCH kaynak dosyası kullanılarak derlenmiş **/Yc**<em>my_pch.h</em> seçeneği
 #endif
 ```
 
-Bu PCH dosyası kullanmak için kaynak dosyaları kullanarak derlenmelidir **/Yu**<em>my_pch.h</em> seçeneği. PCH üstbilgi dosyası PCH kullanan kaynak dosyalarında ilk dahil edilmelidir:
+Bu PCH dosyasını kullanmak için, kaynak dosyaların **/yu**<em>my_pch. h</em> seçeneği kullanılarak derlenmesi gerekir. PCH üstbilgi dosyası, önce PCH 'yi kullanan kaynak dosyalarında yer almalıdır:
 
 ```cpp
 // C2857.cpp

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Simgeler (C++) oluştur'
+title: 'Nasıl yapılır: semboller oluşturma (C++)'
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.creating
@@ -19,66 +19,66 @@ helpviewer_keywords:
 - View Use button
 - resource editors [C++], resource symbols
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-ms.openlocfilehash: d03246d2c701961c824b55fb0cbb781ee3f65028
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: 1c69e8878885acd80c285691fb0861a476af03ea
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344195"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160521"
 ---
-# <a name="how-to-create-symbols-c"></a>Nasıl yapılır: Simgeler (C++) oluştur
+# <a name="how-to-create-symbols-c"></a>Nasıl yapılır: semboller oluşturma (C++)
 
-Yeni bir proje başlıyor olun ister, atanmış oldukları kaynakları oluşturmadan önce ihtiyacınız sembol adları kullanıma eşleştirmek kullanışlı bulabilirsiniz.
+Yeni bir proje başladığınızda, atanacak kaynakları oluşturmadan önce ihtiyacınız olan sembol adlarını eşlemeyi uygun bulabilirsiniz.
 
 > [!NOTE]
-> Projenize bir .rc dosyası yoksa, bkz. [nasıl yapılır: Kaynakları oluşturma](../windows/how-to-create-a-resource-script-file.md).
+> Projeniz zaten bir. rc dosyası içermiyorsa bkz. [nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
-**Kaynak sembolleri** iletişim kutusu, yeni kaynak sembolleri eklemek için görüntülenen ya da sembol kullanımda olduğu konumda kaynak kodu atlamak simgeleri değiştirme tanır.
+**Kaynak sembolleri** iletişim kutusu, yeni kaynak sembolleri eklemenize, görüntülenen sembolleri değiştirmenize veya bir simgenin kullanımda olduğu kaynak kodundaki konuma atlamanızı sağlar.
 
-İletişim kutusunda, aşağıdaki özellikleri içerir:
+İletişim kutusu aşağıdaki özellikleri içerir:
 
 |Özellik|Açıklama|
 |--------------------------|------------------------------------------|
-|**Ad**|Simgenin adını görüntüler.<br/><br/>Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md).|
-|**Değer**|Sembolün sayısal değerini görüntüler.<br/><br/>Daha fazla bilgi için [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).|
-|**Kullanımda**|Bu onay kutusu seçildiğinde, simge bir veya daha fazla kaynak tarafından kullanılmakta olduğunu belirtir.<br/><br/>Kaynak veya kaynak listelenen **tarafından kullanılan** kutusu.|
-|**Salt okunur sembolleri Göster**|Bu onay kutusu seçildiğinde, salt okunur kaynakları görüntüler.<br/><br/>Varsayılan olarak, **kaynak sembolü** iletişim kutusu, kaynak kod dosyanıza yalnızca değiştirilebilir kaynakları görüntüler ancak bu seçenek belirtilmişse, değiştirilebilir kaynakları kalın metin olarak görüntülenir ve salt okunur kaynaklar düz metin olarak görünür.|
-|**Tarafından kullanılan**|Kaynak veya kaynak sembolleri listede seçilen sembolünü kullanarak görüntüler.<br/><br/>Belirli bir kaynak için düzenleyici taşımak için kaynağı seçin **tarafından kullanılan** seçin ve kutusunda **görünüm kullanımı**.|
-|**Yeni**|Açılır **yeni sembol** adını tanımlamak sağlayan bir iletişim kutusu ve gerekirse, yeni bir sembolik kaynak tanımlayıcısı için bir değer.|
-|**Değişiklik**|Açılır **sembol değiştirme** adı ya da bir sembolün değerini değiştirmek izin veren bir iletişim kutusu.<br/><br/>Simge bir denetim veya kaynağı için ise, simge yalnızca ilgili kaynak Düzenleyicisi'nden değiştirilebilir. Daha fazla bilgi için [yönetme sembolleri](../windows/changing-unassigned-symbols.md).|
-|**Görünüm kullanımı**|Karşılık gelen kaynak Düzenleyicisi sembolü içeren kaynak açılır.|
+|**Ad**|Simgenin adını görüntüler.<br/><br/>Daha fazla bilgi için bkz. [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md).|
+|**Değer**|Simgenin sayısal değerini görüntüler.<br/><br/>Daha fazla bilgi için bkz. [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).|
+|**Kullanımda**|Seçildiğinde, simgenin bir veya daha fazla kaynak tarafından kullanıldığını belirtir.<br/><br/>Kaynak veya kaynaklar, **tarafından kullanılan** kutusunda listelenir.|
+|**Salt okunurdur sembolleri göster**|Seçildiğinde, salt okunurdur kaynakları görüntüler.<br/><br/>Varsayılan olarak, **kaynak sembolü** iletişim kutusu yalnızca kaynak betik dosyanızdaki değiştirilebilir kaynakları görüntüler, ancak bu seçenek belirlendiğinde, değiştirilebilir kaynaklar kalın metin ve salt okuma kaynakları düz metin halinde görünür.|
+|**Kullanan**|Semboller listesinde seçilen simgeyi kullanarak kaynağı veya kaynakları görüntüler.<br/><br/>Belirli bir kaynak için düzenleyiciye gitmek üzere, **kullanılan** kutusunda kaynağı seçin ve **Görünüm kullan**' ı seçin.|
+|**Yeni**|Adı ve gerekirse yeni bir sembolik kaynak tanımlayıcısı için bir değer tanımlamanızı sağlayan **yeni sembol** iletişim kutusunu açar.|
+|**Değişebilir**|Bir simgenin adını veya değerini değiştirmenize olanak sağlayan **sembolü Değiştir** iletişim kutusunu açar.<br/><br/>Sembol, kullanımda olan bir denetim veya kaynak için ise, simge yalnızca ilgili kaynak düzenleyiciden değiştirilebilir. Daha fazla bilgi için bkz. [sembolleri yönetme](../windows/changing-unassigned-symbols.md).|
+|**Kullanımı görüntüle**|Karşılık gelen kaynak düzenleyicisinde sembolünü içeren kaynağı açar.|
 
-## <a name="create-symbols"></a>Semboller oluşturma
+## <a name="create-symbols"></a>Sembol oluştur
 
-### <a name="to-create-a-new-symbol"></a>Yeni bir sembolü oluşturmak için
+### <a name="to-create-a-new-symbol"></a>Yeni bir sembol oluşturmak için
 
-1. İçinde **kaynak sembolleri** iletişim kutusunda **yeni**.
+1. **Kaynak sembolleri** Iletişim kutusunda **Yeni**' yi seçin.
 
-1. İçinde **adı** sembol adını yazın.
+1. **Ad** kutusuna bir sembol adı yazın.
 
-1. Atanan sembol değeri kabul edin veya yeni bir değer yazın **değer** kutusu.
+1. Atanan sembol değerini kabul edin veya **değer** kutusuna yeni bir değer yazın.
 
-1. Seçin **Tamam** yeni sembolü sembol listesine eklenecek.
+1. Sembol listesine yeni sembolünü eklemek için **Tamam ' ı** seçin.
 
 > [!NOTE]
-> Zaten bir sembol adı yazarsanız, bu ada sahip bir simge zaten tanımlandı belirten bir ileti kutusu görünür. Aynı ada sahip iki veya daha fazla sembolleri tanımlanamaz, ancak aynı sayısal değere sahip farklı bir simge tanımlayabilirsiniz.
+> Zaten var olan bir sembol adı yazarsanız, bu ada sahip bir simgenin zaten tanımlandığını belirten bir ileti kutusu görünür. Aynı ada sahip iki veya daha fazla sembol tanımlayamazsınız, ancak aynı sayısal değere sahip farklı semboller tanımlayabilirsiniz.
 
 ## <a name="to-view-resource-symbols"></a>Kaynak sembolleri görüntülemek için
 
-İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), sağ tıklayın, *.rc* seçin ve dosya **kaynak sembolleri** kaynak sembolü tabloda görüntülemek için **kaynak sembolleri**iletişim kutusu.
+[Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp kaynak **sembolleri** ' ni seçerek kaynak **sembolleri** iletişim kutusunda bir kaynak sembol tablosu görüntüleyin.
 
 > [!NOTE]
-> Önceden tanımlanmış semboller görmek için **salt okunur sembolleri Göster** onay kutusu.
+> Önceden tanımlanmış sembolleri görmek için **salt okunurdur sembolleri göster** onay kutusunu işaretleyin.
 
-### <a name="to-open-the-resource-editor-for-a-given-symbol"></a>Belirli bir sembol için kaynak düzenleyicisini açmak için
+### <a name="to-open-the-resource-editor-for-a-given-symbol"></a>Belirli bir simgenin kaynak düzenleyicisini açmak için
 
-Ne zaman, tarama sembolleri **kaynak sembolleri**, belirli bir sembolle nasıl kullanıldığı hakkında daha fazla bilgi isteyebilirsiniz. **Görünüm kullanımı** düğmesi, bu bilgileri almak için hızlı bir yol sağlar.
+**Kaynak sembollerinde**simgelere göz atarken, belirli bir simgenin nasıl kullanıldığı hakkında daha fazla bilgi isteyebilirsiniz. **Kullanımı görüntüle** düğmesi, bu bilgileri almanın hızlı bir yolunu sağlar.
 
-1. İçinde **kaynak sembolleri** iletişim kutusunda **adı** kutusunda, bir simge seçin.
+1. **Ad** kutusunda **kaynak sembolleri** iletişim kutusunda bir sembol seçin.
 
-1. İçinde **kullanılan tarafından** kutusunda, ilginizi çeken kaynak türü seçin.
+1. **Kullanılan** kutusunda, ilgilendiğiniz kaynak türünü seçin.
 
-1. Seçin **görünüm kullanımı** düğmesi.
+1. **Kullanımı görüntüle** düğmesini seçin.
 
    Kaynak uygun düzenleyici penceresinde görünür.
 
@@ -89,5 +89,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
-[Nasıl yapılır: Sembolleri Yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[Nasıl yapılır: sembolleri yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>

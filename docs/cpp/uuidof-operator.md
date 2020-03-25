@@ -10,18 +10,18 @@ helpviewer_keywords:
 - __uuidof keyword [C++]
 - __LIBID_ keyword [C++]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
-ms.openlocfilehash: a14ef9043ec2196ff930a37d0eff95e90024d3d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09348d061fde4cb09eb6eb351f146404f355e184
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244167"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187797"
 ---
-# <a name="uuidof-operator"></a>__uuidof İşleci
+# <a name="__uuidof-operator"></a>__uuidof İşleci
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İfade iliştirilen GUID alır.
+İfadeye eklenmiş GUID 'YI alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,24 +31,24 @@ __uuidof (expression)
 
 ## <a name="remarks"></a>Açıklamalar
 
-*İfade* , bu tür veya bu tür bir değişken şablon özel bir tür adı, işaretçi, başvuru veya dizi türünde olabilir. Derleyici iliştirilen GUID bulmak için kullanabileceğiniz sürece bağımsız değişken geçerli değil.
+*İfade* bir tür adı, işaretçi, başvuru veya bu türün dizisi, bu türlerde özelleştirilmiş bir şablon veya bu türlerin bir değişkeni olabilir. Bağımsız değişken, derleyicinin ekli GUID 'yi bulmak için kullanabileceği sürece geçerli olur.
 
-Bu iç özel bir durum olduğunda ya da **0** veya NULL bağımsız değişken olarak sağlanır. Bu durumda, **__uuidof** sıfırlardan oluşan bir GUID değerini döndürür.
+Bu iç özel durum, bağımsız değişken olarak **0** veya null sağlanmalıdır. Bu durumda **__uuidof** , sıfırlardan oluşan bir GUID döndürür.
 
-Bağlı GUID ayıklamak için bu anahtar sözcük kullanın:
+Bu anahtar sözcüğü kullanarak iliştirilmiş GUID 'yi ayıklayın:
 
-- Bir nesne tarafından [UUID](../cpp/uuid-cpp.md) genişletilmiş öznitelik.
+- [UUID](../cpp/uuid-cpp.md) genişletilmiş özniteliği tarafından bir nesne.
 
-- Bir kitaplık bloğu ile oluşturulan [Modülü](../windows/attributes/module-cpp.md) özniteliği.
+- [Modül](../windows/attributes/module-cpp.md) özniteliğiyle oluşturulmuş bir kitaplık bloğu.
 
 > [!NOTE]
-> Hata ayıklama derlemesinde **__uuidof** her zaman zamanında dinamik olarak () bir nesneyi başlatır. Derleme, **__uuidof** statik (derleme zamanında) nesneyi başlatabilirsiniz.
+> Bir hata ayıklama derlemesinde **__uuidof** her zaman bir nesneyi dinamik olarak başlatır (çalışma zamanında). Bir yayın derlemesinde, **__uuidof** statik olarak (derleme zamanında) bir nesne başlatabilir.
 
-Önceki sürümlerle uyumluluk için **_uuidof** eşanlamlıdır **__uuidof** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
+Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_uuidof** **__uuidof** için bir eş anlamlı.
 
 ## <a name="example"></a>Örnek
 
-Modül özniteliği ile oluşturulan bir kitaplığı blok UUID'si (ole32.lib ile derlenmiş) aşağıdaki kodu görüntüler:
+Aşağıdaki kod (Ole32. lib ile derlenen), Module özniteliğiyle oluşturulan bir kitaplık bloğunun UUID 'sini görüntüler:
 
 ```cpp
 // expre_uuidof.cpp
@@ -71,15 +71,15 @@ int main() {
 }
 ```
 
-## <a name="comments"></a>Açıklamalar
+## <a name="comments"></a>Yorumlar
 
-Kitaplık adı olduğu artık kapsamda durumlarda kullanabilirsiniz `__LIBID_` yerine **__uuidof**. Örneğin:
+Kitaplık adının artık kapsamda olmadığı durumlarda, **__uuidof**yerine `__LIBID_` kullanabilirsiniz. Örneğin:
 
 ```cpp
 StringFromCLSID(__LIBID_, &lpolestr);
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - C1207
 ms.assetid: cd31b410-9523-47db-883c-e69a9351ffa2
-ms.openlocfilehash: 5a477bcf2ad50bf02b2a7caf7488d21c4ebb75e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23f8285907ba633ca25d0b71918025df2f9700ac
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228776"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203417"
 ---
 # <a name="fatal-error-c1207"></a>Önemli hata C1207
 
 Yönetilen şablonlar yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
 
-Geçerli sürümde, ancak bir ortak dil çalışma zamanının önceki bir sürümden bir derleyici olduğunda C1207 gerçekleşir.
+C1207, geçerli sürüm için bir derleyicisini, ancak önceki sürümden ortak dil çalışma zamanını kullandığınızda oluşur.
 
-Bazı işlevler derleyicinin önceki bir çalışma zamanı sürümünü çalışmayabilir.
+Derleyicinin bazı işlevleri çalışma zamanının önceki bir sürümünde çalışmayabilir.
 
-C1207 gidermek için derleyicinizin ile kullanıma yöneliktir ortak dil çalışma zamanı sürümünü yükleyin.
+C1207 çözümlemek için, derleyicinizle birlikte kullanılmak üzere tasarlanan ortak dil çalışma zamanı sürümünü yüklemek için.

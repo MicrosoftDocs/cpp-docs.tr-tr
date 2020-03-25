@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - dynamic_cast keyword [C++]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
-ms.openlocfilehash: 0073aaa886bba33a0ec6c07fb89d6eee032765c8
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: d12b338b4b52d81b01097a1e1f5c83ec10eac774
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972228"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189500"
 ---
 # <a name="dynamic_cast-operator"></a>dynamic_cast İşleci
 

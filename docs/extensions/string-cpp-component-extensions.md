@@ -6,20 +6,20 @@ helpviewer_keywords:
 - string support with /clr
 - /clr compiler option [C++], string support
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
-ms.openlocfilehash: 8440ddf510f99618c28a6b6d585c8628df85f9cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9da900ffbfff34dc596d8981095d8285bf37208
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265272"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171950"
 ---
 # <a name="string--ccli-and-ccx"></a>Dize (C++/CLI ve C++/CX)
 
-Windows çalışma zamanı ve ortak dil çalışma zamanı dizeleri, ayrılan bellek otomatik olarak yönetilen nesneler olarak temsil eder. Diğer bir deyişle, kapsamdan dize değişkeni çıktığında veya uygulamanızı sona erdiğinde bir dize için belleği açıkça iptal gerekmez. Bir dize nesnesi ömrü otomatik olarak yönetilecek olduğunu belirtmek için ile dize türü bildirin [tanıtıcı nesnesi (^)](handle-to-object-operator-hat-cpp-component-extensions.md) değiştiricisi.
+Windows Çalışma Zamanı ve ortak dil çalışma zamanı, ayrılan bellek otomatik olarak yönetilen nesneler olarak dizeleri temsil eder. Diğer bir deyişle, dize değişkeni kapsam dışına geçtiğinde veya uygulamanız sona erdiğinde bir dizenin belleğini açıkça atmak zorunda değilsiniz. Bir dize nesnesinin yaşam süresinin otomatik olarak yönetileceğini göstermek için, dize türünü [Handle-to-Object (^)](handle-to-object-operator-hat-cpp-component-extensions.md) değiştiricisi ile bildirin.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Windows çalışma zamanı mimarisi gerektiren `String` veri türü bulunması `Platform` ad alanı. Kolaylık olması için de Visual C++ sağlar `string` veri türü, bu değer için bir eşanlamlı `Platform::String`, `default` ad alanı.
+Windows Çalışma Zamanı mimarisi, `String` veri türünün `Platform` ad alanında bulunmasını gerektirir. Görsel C++ sizin rahatınız için, `default` ad alanındaki `Platform::String`için bir eş anlamlı olan `string` veri türü de sağlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -38,34 +38,34 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-İle derlerken `/clr`, derleyici dize sabit değerleri türü dizeye dönüştürür <xref:System.String>. Varolan kodu ile geriye dönük uyumluluk korumak için bu iki özel durumlar şunlardır:
+`/clr`ile derlerken, derleyici dize değişmez değerlerini <xref:System.String>türündeki dizelere dönüştürür. Mevcut kodla geriye dönük uyumluluğu korumak için bunun iki özel durumu vardır:
 
-- Özel durum işleme. Derleyici bir dize sabit değeri oluştuğunda, bir dize sabit değeri olarak yakalar.
+- Özel durum işleme. Bir dize sabit değeri oluşturulduğunda, derleyici onu bir dize sabit değeri olarak yakalayacak.
 
-- Şablon kesintisi. Bir şablon bağımsız değişken olarak geçirilen bir dize sabit değeri, derleyici için dönüştürmez. bir <xref:System.String>. Unutmayın, genel bir bağımsız değişken olarak geçirilen bir dize değişmez değerleri için yükseltilecek <xref:System.String>.
+- Şablon kesintisi. Bir dize sabit değeri bir şablon bağımsız değişkeni olarak geçirildiğinde, derleyici onu bir <xref:System.String>dönüştürmeyecektir. Genel bir bağımsız değişken olarak geçirilen dize sabit değerleri <xref:System.String>yükseltilecek.
 
-Derleyici, bunların davranışını özelleştirmek için geçersiz kılabilirsiniz üç işleçleri için yerleşik destek de vardır:
+Derleyici Ayrıca, davranışlarını özelleştirmek için geçersiz kılabileceğiniz üç işleç için yerleşik desteğe sahiptir:
 
-- System::String ^ işleci + (System:: String'i, System::String);
+- System:: String ^ işleç + (System:: String, System:: String);
 
-- System::String ^ + işleci (System::Object, System::String);
+- System:: String ^ işleç + (System:: Object, System:: String);
 
-- System::String ^ + işleci (System::String, System::Object);
+- System:: String ^ işleç + (System:: String, System:: Object);
 
-Geçirildiğinde bir <xref:System.String>, derleyici kutusuna, gerekirse ve ardından nesne (ToString) dizesi ile birleştirin.
+Bir <xref:System.String>geçirildiğinde derleyici, gerekirse, sonra da nesneyi (ToString ile) dize ile birleştirir.
 
 > [!NOTE]
-> Giriş işaretini ("^") bildirilmiş bir değişken için bir tanıtıcı olduğunu belirten bir C++/CLI yönetilen nesne.
+> Şapka işareti ("^"), belirtilen değişkenin bir C++/CLI yönetilen nesnesine yönelik bir tanıtıcı olduğunu gösterir.
 
-Daha fazla bilgi için [dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md).
+Daha fazla bilgi için bkz. [dize ve karakter sabit değerleri](../cpp/string-and-character-literals-cpp.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:   **/CLR**
+Derleyici seçeneği: **/clr**
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, birleştirme ve dizeleri karşılaştırma gösterir.
+Aşağıdaki kod örneği dizeleri birleştirerek ve karşılaştırmayı gösterir.
 
 ```cpp
 // string_operators.cpp
@@ -152,7 +152,7 @@ abc
 n is empty
 ```
 
-Aşağıdaki örnek, derleyici tarafından sağlanan işleçleri Aşırı yüklenme olabilir ve derleyicinin temel işlev aşırı yüklemesi bulabilirsiniz gösterir <xref:System.String> türü.
+Aşağıdaki örnek, derleyicinin sunduğu işleçleri aşırı yükleyebilir ve derleyicinin <xref:System.String> türüne göre bir işlev aşırı yüklemesi bulabileceğinizi gösterir.
 
 ```cpp
 // string_operators_2.cpp
@@ -210,7 +210,7 @@ String^ a
 const char * a
 ```
 
-Aşağıdaki örnek, derleyici yerel dizeler arasında ayıran gösterir ve <xref:System.String> dizeleri.
+Aşağıdaki örnek, derleyicinin yerel dizeler ve <xref:System.String> dizeleri arasında ayrım gösterdiğini gösterir.
 
 ```cpp
 // string_operators_3.cpp

@@ -5,12 +5,12 @@ f1_keywords:
 - VC.Project.VCFileConfiguration.ExcludedFromBuild
 - VC.Project.VCFileConfiguration.Tool
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
-ms.openlocfilehash: 41366e2eae479c3d00f79cc47da9100b22129d50
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: a9281a0ea02bd9b1fd529453cb9a67e54e4ddda7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218186"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168986"
 ---
 # <a name="general-property-page-file"></a>Genel Özellik Sayfası (Dosya)
 
@@ -22,17 +22,17 @@ Bu konu, Windows projeleri için geçerlidir. Windows dışı projeler için bkz
 
    Dosyanın geçerli yapılandırma için yapıda olması gerekip gerekmediğini belirtir.
 
-   Bu özelliğe programlı bir şekilde erişmek için <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>bkz.
+   Bu özelliğe programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.
 
-- **İçerik** (Yalnızca UWP uygulamaları için geçerlidir.) Dosyanın uygulama paketine dahil edilecek içerik içerip içermediğini belirtir.
+- **İçerik** (yalnızca UWP uygulamaları için geçerlidir.) Dosyanın uygulama paketine dahil edilecek içerik içerip içermediğini belirtir.
 
 - **Öğe türü**
 
    **Öğe türü** , derleme işlemi sırasında dosyayı işlemek için kullanılacak aracı belirtir. [Uzantısı Visual Studio tarafından bilinen dosyaların](/visualstudio/extensibility/visual-cpp-project-extensibility?view=vs-2019#project-items) bu özellikte varsayılan bir değeri vardır. Özel bir dosya türüne sahipseniz veya bilinen bir dosya türü için varsayılan aracı geçersiz kılmak istiyorsanız burada özel bir araç belirtebilirsiniz. Daha fazla bilgi için bkz. [özel derleme araçları belirtme](../specifying-custom-build-tools.md) . Bu özellik sayfasını, bir dosyanın yapı sürecinin bir parçası olmadığı belirtmek için de kullanabilirsiniz.
 
-   Aşağıdaki çizimde bir *. cpp* dosyası için özellik sayfası gösterilmektedir. Bu dosya türü için varsayılan **öğe türü** **C/C++ derleyicidir** (*CL. exe*) ve özellik sayfası yalnızca bu dosyaya uygulanabilen çeşitli derleyici ayarlarını gösterir.
+   Aşağıdaki çizimde bir *. cpp* dosyası için özellik sayfası gösterilmektedir. Bu dosya türü için varsayılan **öğe türü** **CC++ /derleyicidir** (*CL. exe*) ve özellik sayfası yalnızca bu dosyaya uygulanabilen çeşitli derleyici ayarlarını gösterir.
 
-   ![Proje öğesi Için genel özellik sayfası](media/file-general-item-type.png "Öğe türü seçenekleri")
+   ![Proje öğesi için genel özellik sayfası](media/file-general-item-type.png "Öğe türü seçenekleri")
 
     Aşağıdaki tabloda varsayılan öğe türleri listelenmektedir:
 
@@ -60,7 +60,7 @@ Bu konu, Windows projeleri için geçerlidir. Windows dışı projeler için bkz
     |. jpg,. bmp,. ico, vb.|Görüntü|Uygulama türünü temel alan kaynak derleyicisi.|
     |. cpp|C/C++ derleyici|CL. exe|
 
-   Bu özelliğe programlı bir şekilde erişmek için <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>bkz.
+   Bu özelliğe programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
 
 **Yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfasına erişme hakkında daha fazla bilgi Için bkz. [Visual Studio 'Da C++ derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 

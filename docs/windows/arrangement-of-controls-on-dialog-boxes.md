@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Düzen denetimleri (C++) | Microsoft Docs'
+title: 'Nasıl yapılır: düzen denetimleri (C++) | Microsoft Docs'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.grouping
@@ -80,204 +80,204 @@ helpviewer_keywords:
 - CListBox class, scroll bar width
 - scroll bars [C++], width
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
-ms.openlocfilehash: 878b7371dfa77880d68f1001444ed44b84d7240c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee732cfb414f011e95edbbb57b218d81179d44f3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391081"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168583"
 ---
-# <a name="how-to-layout-controls-c"></a>Nasıl yapılır: Düzen denetimleri (C++)
+# <a name="how-to-layout-controls-c"></a>Nasıl yapılır: düzen denetimleri (C++)
 
-**İletişim kutusu Düzenleyicisi** hizalama ve denetimleri boyut otomatik düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm **iletişim kutusu Düzenleyicisi** araç çubuğu komutlarını kullanılabilir ayrıca **biçimi** menü ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).
+**Iletişim kutusu Düzenleyicisi** , denetimleri otomatik olarak hizalamakta ve boyutlandırmakta olan Düzen araçları sağlar. Çoğu görev için [Iletişim kutusu Düzenleyici araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)kullanabilirsiniz. Tüm **Iletişim kutusu düzenleyici** komutları **Biçim** menüsünde de bulunur ve çoğu [kısayol tuşlarına](../windows/accelerator-keys-for-the-dialog-editor.md)sahiptir.
 
-İletişim kutuları için Düzen komutların çoğu yalnızca birden fazla denetim seçildiğinde kullanılabilir. Tek bir denetim veya birden çok denetim seçin ve birden fazla denetim seçildiğinde, seçtiğiniz birinci varsayılan olarak baskın denetimidir.
+İletişim kutuları için birçok düzen komutu yalnızca birden fazla denetim seçildiğinde kullanılabilir. Tek bir denetim veya birden çok denetim seçebilirsiniz ve birden fazla denetim seçildiğinde, seçtiğiniz ilk, varsayılan olarak baskın denetim olur.
 
-Konum, yükseklik ve genişlik geçerli denetimin durum çubuğunun sağ alt köşesinde görüntülenir. Tüm iletişim kutusu seçildiğinde durum çubuğunda bir bütün ve yüksekliğini ve genişliğini iletişim kutusunun konumunu görüntüler.
+Geçerli denetimin konumu, yüksekliği ve genişliği durum çubuğunun sağ alt köşesinde görüntülenir. İletişim kutusunun tamamı seçildiğinde durum çubuğu, iletişim kutusunun bir bütün olarak konumunu ve yüksekliğini ve genişliğini görüntüler.
 
-## <a name="arrange-controls"></a>Denetimleri düzenleme
+## <a name="arrange-controls"></a>Denetimleri Düzenle
 
-Denetimler ile iletişim kutularında düzenleyebilirsiniz **iletişim kutusu Düzenleyicisi** üç farklı durumu:
+İletişim kutularındaki denetimleri, üç farklı durumdan birinde **iletişim kutusu Düzenleyicisi** ile düzenleyebilirsiniz:
 
-- Kılavuzlar ve kenar, varsayılan olarak ayarlayın.
+- Kılavuzlar ve kenar boşlukları ile, varsayılan olarak ayarlanır.
 
-- Düzen Kılavuzu'nun ile.
+- Üzerine düzen kılavuzu ile.
 
-- Tüm ek veya hizalama özellikleri olmadan.
+- Herhangi bir yaslama veya hizalama özelliği olmadan.
 
-[İletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) durumunu denetle düğmeleri içerir.
+[Iletişim kutusu Düzenleyici araç çubuğu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) , durumu denetleyen düğmeleri içerir.
 
-- Durumu değiştirmek için uygun simgeyi seçin veya menüsüne gidin **biçimi** > **Kılavuz ayarları**.
+- Durumu değiştirmek için, uygun simgeyi seçin veya menü **biçimi** > **Kılavuz ayarları**' na gidin.
 
-**Kılavuz ayarları** iletişim kutusunda, aşağıdaki özelliklere sahiptir:
+**Kılavuz ayarları** iletişim kutusu aşağıdaki özelliklere sahiptir:
 
 |Özellik|Açıklama|
 |---|---|
-|**Düzen kılavuzları**|Düzen kılavuzları ayarlarını görüntüler.|
-|**Yok.**|Düzen Araçları gizler.|
-|**Cetveller ve Kılavuzlar**|Etkin olduğunda, düzeni araçları Cetveller ekler ve kılavuzları cetvellerin yerleştirilmesini sağlar. Varsayılan, kenar boşlukları kılavuzlardır.|
-|**Kılavuz**|Düzen kılavuzunu oluşturur. Yeni denetimler kılavuza otomatik olarak uyum sağlar.|
-|**Kılavuz aralığı**|Kılavuz aralığı Ayarları iletişim kutusu birimleri (Dlu'lar) görüntüler.|
-|**Genişlik: Dlu'lar**|Düzen kılavuzunu genişliğini Dlu'lar ayarlar. Yatay DLU bölü 4 iletişim kutusu yazı tipinin ortalama genişliğidir.|
-|**Yükseklik: Dlu'lar**|Düzen kılavuzunu yüksekliğini Dlu'lar ayarlar. Dikey DLU 8 tarafından ayrılmış iletişim kutusu yazı tipi ortalama yüksekliği olur.|
+|**Düzen kılavuzu**|Düzen kılavuzlarının ayarlarını görüntüler.|
+|**Seçim**|Düzen araçlarını gizler.|
+|**Cetveller ve kılavuzlar**|Etkinleştirildiğinde, düzen araçlarına cetveller ekler ve kılavuzların cetvellere yerleştirilmesini sağlar. Varsayılan kılavuzlar kenar boşluklardır.|
+|**Kılavuz**|Düzen kılavuzu oluşturur. Yeni denetimler otomatik olarak kılavuza hizalanır.|
+|**Izgara aralığı**|İletişim kutusu birimlerindeki (DLUs) kılavuz aralıklarının ayarlarını görüntüler.|
+|**Genişlik: DLUs**|DLUs 'teki Düzen kılavuzunun genişliğini ayarlar. Yatay bir DLU, iletişim kutusu yazı tipinin 4 ' ü bölü ortalama genişliğidir.|
+|**Yükseklik: DLUs**|DLUs 'teki Düzen kılavuzunun yüksekliğini ayarlar. Dikey bir DLU, iletişim kutusu yazı tipinin 8 ' i bölü ortalama yüksekliğidir.|
 
 ### <a name="guides-and-margins"></a>Kılavuzlar ve kenar boşlukları
 
-Denetimleri ekleme denetimleri, Taşımakta olduğunuz ya da geçerli düzenini yeniden düzenleme, Kılavuzlar ve kenar boşlukları yardımcı olabilecek denetimleri bir iletişim kutusu içinde doğru bir şekilde hizalayın.
+Denetimleri taşıyor, denetim ekleme veya geçerli düzeni yeniden düzenleme, kılavuzlar ve kenar boşlukları, denetimleri bir iletişim kutusu içinde doğru bir şekilde hizalamanıza yardımcı olabilir.
 
-Bir iletişim kutusu oluşturduğunuzda, kenar boşlukları adlı dört değiştirilmiş kılavuzları sağlanır ve mavi noktalı çizgilerin görünür.
+Bir iletişim kutusu oluşturduğunuzda, kenar boşlukları olarak adlandırılan dört değiştirme Kılavuzu sağlanır ve mavi noktalı çizgiler olarak görünür.
 
-- Kenar boşlukları taşımak için kenar yeni konumuna sürükleyin.
+- Kenar boşluklarını taşımak için kenar boşluğunu yeni konuma sürükleyin.
 
-- Bir kenar boşluğu kaybolmasını sağlamak için kenar sıfır bir konuma taşıyın.
+- Kenar boşluğunu ortadan kaldıralmak için, kenar boşluğunu sıfır bir konuma taşıyın.
 
-- Kenar boşluğu geri getirmek için işaretçiyi kenar ait sıfır konumuna getirin ve kenar boşluğu konumuna taşıyın.
+- Kenar boşluğunu geri getirmek için, işaretçiyi kenar boşluğunun sıfır konumunun üzerine getirin ve kenar boşluğunu konuma taşıyın.
 
-Kılavuzlar arasında Düzenleyicisi'ni ve karşılık gelen okları Cetveller üst ve sol tarafında görüntülenen iletişim kutusunda olarak mavi noktalı çizgilerin görünür **iletişim kutusu Düzenleyicisi**. Boyutlandırma denetimleri denetimleri taşınır ve daha önce Kılavuzu yaslanmış denetimler yoksa kılavuzları denetimlere Yasla Kılavuzlara Daya. Bir kılavuz taşındığında, kendisine tutturulduğunu denetimleri de taşıyın. Bir kılavuz taşındığında birden fazla Kılavuzu yaslanmış denetimleri yeniden boyutlandırılır.
+Kılavuzlar, düzenleyicide görüntülenen iletişim kutusunda ve **iletişim kutusu düzenleyicisinin**sol tarafında ve sol tarafındaki cetvellerdeki ilgili oklarda mavi noktalı çizgiler olarak görünür. Denetimlerin boyutlandırma tutamaçları denetimler taşındığında kılavuzlara yaslanırlar ve daha önce kılavuza daha önce bir denetim yoksa kılavuzlar denetimlere yaslanırlar. Bir kılavuz taşındığında, bu denetime eklenen denetimler de taşınır. Kılavuzlardan biri taşındığında birden fazla kılavuza yapışmış denetimler yeniden boyutlandırılır.
 
-- Cetvel içinde bir kılavuz oluşturmak için bir kılavuz oluşturmak için bir kez seçtiğinizde veya başlatmak için çift **Kılavuz ayarları** Kılavuz ayarları belirtebileceğiniz iletişim kutusu.
+- Cetvel içinde bir kılavuz oluşturmak için bir kılavuz oluşturmak üzere bir kez seçin ya da kılavuz ayarlarını belirtebileceğiniz **Kılavuz ayarları** iletişim kutusunu başlatmak için çift tıklayın.
 
-- İletişim kutusunda bir kılavuz ayarlamak için kılavuz'u seçin ve yeni bir konuma sürükleyin veya cetvelin ilişkili Kılavuzu sürüklemek için oku seçin.
+- İletişim kutusunda bir kılavuz ayarlamak için Kılavuzu seçin ve yeni bir konuma sürükleyin ya da ilişkili Kılavuzu sürüklemek için cetveldeki oku seçin.
 
-   Kılavuzu koordinatlarını cetvel ve pencerenin altındaki durum çubuğunda görüntülenen veya işaretçiyi cetvel tam Kılavuzu konumunu görüntülemek için oka üzerine.
+   Kılavuzun koordinatları pencerenin alt kısmındaki durum çubuğunda ve cetvelde görüntülenir ya da kılavuzun tam konumunu göstermek için işaretçiyi cetveldeki okun üzerine taşıyın.
 
-- Bir kılavuz silmek için cetvelin karşılık gelen oku sürükleyin veya iletişim kutusunu kılavuzu sürükleyin.
+- Bir Kılavuzu silmek için Kılavuzu iletişim kutusunun dışına sürükleyin veya ilgili oku cetvelin dışına sürükleyin.
 
-Değer çizgilerinin kılavuzları ve denetimlerin aralığı belirlemek Cetveller içinde iletişim kutusu birimleri (Dlu'lar) tarafından tanımlanır. Bir DLU iletişim kutusu yazı tipi, normalde 8 noktası MS Shell Dlg boyutuna bağlıdır. Yatay DLU dört tarafından ayrılmış iletişim kutusu yazı tipinin ortalama genişliğidir. Dikey DLU 8 tarafından ayrılmış yazı tipi ortalama yüksekliği olur.
+Cetvellerdeki değer çizgileri, kılavuz ve denetimlerin boşluklarını belirler iletişim kutusu birimleri (DLUs) tarafından tanımlanır. Bir DLU, iletişim kutusu yazı tipinin boyutunu temel alır, normalde 8 noktalı MS kabuğu DLG. Yatay bir DLU, iletişim kutusu yazı tipinin dört bölü ortalama genişliğidir. Dikey bir DLU, yazı tipinin 8 ' den bölünen ortalama yüksekliğidir.
 
-- Değer çizgilerinin aralıklarına değiştirmek için menüsüne gidin **biçimi** > **Kılavuz ayarları**, ardından **ızgara Aralama** alanında, yeni genişliği ve yüksekliği içinde Dlu'lar belirtin.
+- Değer çizgilerinin aralıklarını değiştirmek için menü **biçimi** > **Kılavuzu ayarları**' na gidin ve ardından **kılavuz aralığı** alanında DLUS ' de yeni bir genişlik ve yükseklik belirtin.
 
 ### <a name="layout-grid"></a>Düzen kılavuzu
 
-Ne zaman yerleştirme ya da iletişim kutusunda denetimleri düzenleme, daha kesin konumlandırma Düzen kılavuzunu kullanın. Kılavuz açıldığında, denetimleri manyetik hale getirme gibi kılavuz noktalı satırlarını yaslanacak.
+Bir iletişim kutusuna denetimleri yerleştirirken veya düzenleme yaparken, daha kesin konumlandırma için Düzen kılavuzunu kullanın. Izgara açık olduğunda, denetimler, manyetik hale getirilme gibi kılavuzun noktalı çizgilere yaslamayı sağlar.
 
-- Düzen kılavuzunu açıp kapatmak için menüsüne gidin **biçimi** > **Kılavuz ayarları** ve seçin veya temizleyin **kılavuz** düğmesi.
+- Düzen Kılavuzunu açmak veya kapatmak için menü **biçimi** > **Kılavuzu ayarları** ' na gidin ve **kılavuz** düğmesini seçin veya temizleyin.
 
-   Tek tek kılavuz yine de denetleyebilirsiniz **iletişim kutusu Düzenleyicisi** kullanarak windows **Kılavuzu Aç/Kapat** düğmesini [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+   Kılavuzu, [Iletişim kutusu Düzenleyicisi araç çubuğundaki](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) **kılavuzu aç** düğmesini kullanarak, tek bir **iletişim kutusu Düzenleyicisi** penceresinde yine de denetleyebilirsiniz.
 
-- Düzen kılavuzunu boyutunu değiştirmek için menüsüne gidin **biçimi** > **Kılavuz ayarları** ve yüksekliğini ve genişliğini kılavuzdaki hücreleri Dlu'lar içinde yazın. Minimum yükseklik veya genişlik 4 ' dir.
+- Düzen kılavuzunun boyutunu değiştirmek için menü **biçimi** > **Kılavuz ayarları** ' na gidin ve kılavuzdaki hücreler için DLUS yükseklik ve genişlik değerlerini yazın. En küçük yükseklik veya Genişlik 4 ' ün altında.
 
-### <a name="disable-guides"></a>Kılavuzları devre dışı bırak
+### <a name="disable-guides"></a>Kılavuzu devre dışı bırak
 
-Özel anahtarları Yaslanma etkisini kılavuzları devre dışı bırakmak için fare ile birlikte kullanabilirsiniz. Kullanarak **Alt** anahtarı, seçilen Kılavuzu Yaslanma etkilerini devre dışı bırakır. Taşıma Kılavuzu ile **Shift** anahtar yaslanan denetimlerin kılavuzla taşınmasını engeller.
+Kılavuzların yapışma efektini devre dışı bırakmak için fare ile birlikte özel anahtarlar kullanabilirsiniz. **Alt** tuşu kullanmak, kılavuzun yapışma etkilerinin seçili olduğunu devre dışı bırakır. Bir kılavuzun **SHIFT** tuşuyla taşınması, denetimsiz denetimlerin kılavuz ile taşınmasını önler.
 
-- Yaslanma etkisini kılavuzları devre dışı bırakmak için tutarken denetimi sürükleyin **Alt** anahtarı.
+- Kılavuzların yapışma efektini devre dışı bırakmak için, **alt** tuşunu basılı tutarken denetimi sürükleyin.
 
-- Yaslanan denetimlerin taşımadan kılavuzları taşımak için tutarken kılavuzu sürükleyin **Shift** anahtarı.
+- Denetimleri, denetimsiz denetimleri taşımadan taşımak için **SHIFT** tuşunu basılı tutarken kılavuzu sürükleyin.
 
-- Kılavuzları devre dışı bırakmak için menüsüne gidin **biçimi** > **Kılavuz ayarları**. Ardından, altında **düzeni kılavuzları**seçin **hiçbiri**.
+- Kılavuzlarını kapatmak için menü **biçimi** > **Kılavuz ayarları**' na gidin. Ardından, **Düzen kılavuzlarındaki** **hiçbiri**' ni seçin.
 
    > [!TIP]
-   > Kısayol menüsünde kullanabilirsiniz **biçimi** > **rehberi Aç/Kapat**.
+   > Kısayol **tuşu > geçiş kılavuzlarındaki**menü **biçimini** de kullanabilirsiniz.
 
-## <a name="select-controls"></a>Denetimleri seçin
+## <a name="select-controls"></a>Denetimleri Seç
 
-Boyuta denetimleri seçin, hizalama, taşıyın, kopyalayın, veya silin ve ardından istediğiniz işlemi tamamlayın. Çoğu durumda, boyutu ve hizalama araçları kullanmak üzere birden fazla denetim seçmeniz gerekir [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+Bunları boyutuna getirmek, hizalamak, taşımak, kopyalamak veya silmek için denetimler ' i seçin ve ardından istediğiniz işlemi doldurun. Çoğu durumda, [Iletişim kutusu Düzenleyici araç çubuğunda](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)boyutlandırma ve hizalama araçlarını kullanmak için birden fazla denetim seçmeniz gerekir.
 
-Bir Denetim seçildiğinde, düz (etkin) ile veya boş (etkin olmayan), seçim kenarlığı içinde görünen küçük kareler boyutlandırma etrafında gölgeli bir kenarlık vardır. Birden çok Denetim seçildiğinde, baskın denetimi düz boyutlandırma ve diğer seçilen tüm denetimleri boş boyutlandırma tutamaçlarını sahip olduğunuz.
+Bir denetim seçildiğinde, düz (etkin) veya boş (etkin) boyutlandırma tutamaçları (seçim kenarlığında görünen küçük kareler) etrafında gölgeli bir kenarlığı vardır. Birden çok denetim seçildiğinde, baskın denetimin katı boyutlandırma tutamaçları ve tüm seçili denetimlerin boş boyutlandırma tutamaçları vardır.
 
-- Denetimler, seçmek için [araç penceresi](/visualstudio/ide/reference/toolbox)seçin **işaretçi** aracı ve seçiminizi yapın için aşağıdaki adımlardan birini kullanın:
+- Denetimleri seçmek için [araç kutusu penceresinde](/visualstudio/ide/reference/toolbox) **işaretçi** aracını seçin ve seçiminizi yapmak için aşağıdaki adımlardan birini kullanın:
 
-  - İletişim kutusunda istediğiniz denetimlerin çevresinde bir seçim kutusu çizmek için işaretçiyi sürükleyin. Fare düğmesini bıraktığınızda, tüm denetimleri iç ve seçim kutusu seçili kesişen.
+  - İletişim kutusunda seçmek istediğiniz denetimlerin çevresinde bir seçim kutusu çizmek için işaretçiyi sürükleyin. Fare düğmesini serbest bırakırsanız, seçim kutusu içindeki ve kesişmekte olan tüm denetimler seçilidir.
 
-  - Basılı **Shift** anahtar ve seçime dahil etmek istediğiniz denetimleri seçin.
+  - **SHIFT** tuşunu basılı tutarak seçime dahil etmek istediğiniz denetimleri seçin.
 
-  - Basılı **Ctrl** anahtar ve seçime dahil etmek istediğiniz denetimleri seçin.
+  - **CTRL** tuşunu basılı tutarak seçime dahil etmek istediğiniz denetimleri seçin.
 
-- Ekleme veya bir denetim Seçili denetimleri grubundan kaldırmak için basılı **Shift** anahtar ve eklemek veya kaldırmak istediğiniz denetimi seçin.
+- Seçili denetimler grubundan bir denetim eklemek veya kaldırmak için, **SHIFT** tuşunu basılı tutun ve eklemek veya kaldırmak istediğiniz denetimi seçin.
 
 ### <a name="dominant-controls"></a>Baskın denetimler
 
-Boyutlandırma ya da birden çok denetimi hizalama **iletişim kutusu Düzenleyicisi** baskın denetimi diğer denetimlerin nasıl boyutlandırılmış veya hizalı belirlemek için kullanır. Varsayılan olarak, baskın denetim seçili ilk bir denetimdir.
+Birden çok denetimi boyutlandırdığınızda veya hizaladığınızda, **Iletişim kutusu Düzenleyicisi** diğer denetimlerin nasıl boyutlandırıldığını veya hizalandığını anlamak için baskın denetimi kullanır. Varsayılan olarak, baskın denetim, seçilen ilk denetimdir.
 
-- Baskın denetimi belirtmek için basılı **Ctrl** boyutu ve diğer denetimlerin konumu etkilemek için kullanmak istediğiniz denetimi seçin ve anahtar *ilk*. Basılı **Ctrl** anahtarı ve bir seçim içindeki bir kontrolü seçme ayrıca hale getirir, bu seçimdeki baskın denetim.
+- Baskın denetimi belirtmek için **CTRL** tuşunu basılı tutun ve *önce*diğer denetimlerin boyutunu veya konumunu etkilemek için kullanmak istediğiniz denetimi seçin. **CTRL** tuşunu basılı tutarak ve seçim içinde bir denetim seçtiğinizde, bu denetimin bu seçimde de baskın denetim olması gerekir.
 
-- Baskın denetimi değiştirmek için şu anda seçili tüm denetimlerin dışındaki seçerek geçerli seçimi temizleyin ve farklı bir denetimi seçip yukarıdaki yordamı yineleyin *ilk*.
+- Baskın denetimi değiştirmek için, seçili olan tüm denetimlerin dışında seçim yaparak geçerli seçimi temizleyin ve *önce*farklı bir denetim seçerek yukarıdaki yordamı tekrarlayın.
 
 > [!NOTE]
-> Bağımlı denetimlerin tutamaçları boş baskın denetimi boyutlandırma tutamaçlarını düz bağlıdır. Baskın denetimi tüm daha fazla yeniden boyutlandırma veya hizalama temel alır.
+> Baskın denetimin boyutlandırma tutamaçları, alt denetimlerin tutamaçları boş olduğu sürece Solid ' dir. Daha fazla yeniden boyutlandırma veya hizalama, baskın denetimi temel alır.
 
 ## <a name="size-controls"></a>Boyut denetimleri
 
-Bir denetimi yeniden boyutlandırmak için boyutlandırma tutamaçlarını kullanın. İşaretçi boyutlandırma tutamacı konumlandırıldığında Şekil Denetimi boyutlandırılabilir yönergeleri belirtmek için değiştirir. Etkin boyutlandırma tutamaçlarını düz ve boyutlandırma tutamacı boş ise, bu eksen boyunca denetimi yeniden boyutlandırılamıyor.
+Bir denetimi yeniden boyutlandırmak için boyutlandırma tutamaçlarını kullanın. İşaretçi bir boyutlandırma tutamacı üzerine konumlandırıldığında, denetimin yeniden boyutlandırılabileceği yönergeleri belirtmek için şekli değiştirir. Etkin boyutlandırma tutamaçları Solid ve boyutlandırma tutamacı boş ise, denetim bu eksen üzerinde yeniden boyutlandırılamaz.
 
-- Bir denetimi boyutlandırmak için denetimi seçin ve boyutunu değiştirmek için boyutlandırma sürükleyin.
+- Bir denetimi boyutlandırmak için denetimi seçin ve boyutlandırma tutamaçlarını sürükleyerek boyutu değiştirin.
 
-  - Boyutu tanıtıcıları üstünde ve kenarlar, yatay veya dikey boyutunu değiştirin.
+  - Üstteki ve kenarlarda bulunan boyut tutamaçları, yatay veya dikey boyutunu değiştirir.
 
-  - Boyutu tanıtıcıları köşelere yatay ve dikey boyutunu değiştirin.
+  - Köşelerde bulunan boyut tutamaçları hem yatay hem de dikey boyutunu değiştirir.
 
    > [!TIP]
-   > Basılı tutarak bir kerede denetimi bir iletişim birim (DLU) boyutlandırabilirsiniz **Shift** anahtar ve kullanarak **sağ** ve **aşağı** ok tuşları.
+   > **Shift** tuşunu basılı tutarak ve **sağ** ve **aşağı** ok tuşlarını kullanarak bir iletişim kutusu birimini (dlu) tek seferde yeniden boyutlandırabilirsiniz.
 
-- Denetim içindeki metnin sığması için otomatik boyut için menüsüne gidin **biçimi** veya denetime sağ tıklayın ve seçin **içerik boyutu**.
+- Bir denetimin içindeki metne sığması için otomatik olarak boyutunu belirlemek için, menü **biçimi** ' ne gidin veya denetime sağ tıklayın ve **içeriğe göre boyutlandır**' ı seçin.
 
-- Denetimleri aynı boyuta getirmek için menüsüne gidin ve yeniden boyutlandırmak istediğiniz denetimleri seçin **biçimi** > **aynı boyutta yapın**, ya da seçin **hem**, **Yükseklik**, veya **genişliği**.
+- Denetimleri aynı boyutta yapmak için, yeniden boyutlandırmak istediğiniz denetimleri seçin ve **aynı boyuta getirmek** > menü **biçimine** gidin ve **her Ikisini de**, **yüksekliği**veya **genişliği**seçin.
 
-   Denetim dizideki ilk Seçili denetim baskın denetimi boyutuna göre grubunun yeniden boyutlandırma. Grup denetimleri son boyutu baskın denetimi boyutuna bağlıdır.
+   Bir denetim grubunu, serinin ilk bölümünde seçilen denetim olan baskın denetimin boyutuna göre yeniden boyutlandırır. Gruptaki denetimlerin son boyutu, baskın denetimin boyutuna bağlıdır.
 
-- Denetim grubunun kılavuzlarıyla boyutlandırmak için denetimin (veya denetimleri) bir yan bir kılavuza yaslama ve diğer tarafında denetimin (veya denetimleri) için bir kılavuz sürükleyin. Şimdi, denetimin (veya denetimleri) boyutlandırmak için iki Kılavuzu taşıyabilirsiniz.
+- Bir denetim grubunu kılavuzlarla boyutlandırma, denetimin bir tarafını (veya denetimleri) bir kılavuza Yaslama, ardından bir Kılavuzu denetimin diğer tarafına sürükleyin (veya denetimleri). Artık, denetimin (veya denetimlerin) boyutunu göstermek için iki kılavuzu da taşıyabilirsiniz.
 
-   Gerekirse birden çok denetimlerle her ikinci kılavuza uydurmayı boyutu.
+   Birden çok denetim ile gerekirse, ikinci kılavuza yasla her biri için boyut.
 
-### <a name="other-controls"></a>Diğer denetimleri
+### <a name="other-controls"></a>Diğer denetimler
 
-İletişim kutusuna eklediğinizde bir birleşik giriş kutusu boyutlandırabilirsiniz. Aşağı açılan liste kutusunda boyutunu belirtebilirsiniz. Daha fazla bilgi için [değerleri birleşik giriş kutusu denetimi ekleme](../windows/adding-values-to-a-combo-box-control.md).
+İletişim kutusuna eklediğinizde bir açılan kutunun boyutunu değiştirebilirsiniz. Açılır liste kutusunun boyutunu da belirtebilirsiniz. Daha fazla bilgi için bkz. [Birleşik giriş kutusu denetimine değer ekleme](../windows/adding-values-to-a-combo-box-control.md).
 
-1. Birleşik giriş kutusunun sağındaki açılan ok düğmesini seçin.
+1. Birleşik giriş kutusunun sağ tarafındaki aşağı açılan ok düğmesini seçin.
 
-   ![Bir MFC projesinde bir birleşik giriş kutusu oku](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")
+   ![MFC projesindeki Birleşik giriş kutusunda bulunan ok](../mfc/media/vccomboboxarrow.gif "Vccomboboxok")
 
-   Genişletilmiş açılır listede alanı ile birleşik giriş kutusunun boyutunu göstermek için Denetim değişikliklerin anahattı.
+   Denetimin ana hattı, açılan liste alanı genişletilmiş olan Birleşik giriş kutusunun boyutunu gösterecek şekilde değişir.
 
-1. Alt boyutlandırma tutamacı açılır listede alanın başlangıç boyutunu değiştirmek için kullanın.
+1. Aşağı doğru boyutlandırma tutamacını kullanarak aşağı açılan liste alanının başlangıç boyutunu değiştirin.
 
-   ![Birleşik giriş&#45;kutusu boyutlandırma MFC projesinde](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")
+   ![MFC&#45;projesinde Birleşik giriş kutusu boyutlandırması](../mfc/media/vccomboboxsizing.gif "vccomboboxs")
 
-1. Birleşik giriş kutusundaki açılır listede bölümünü yeniden kapatmak için açılan oku seçin.
+1. Açılan kutunun aşağı açılan liste bölümünü kapatmak için açılır oku yeniden seçin.
 
 > [!NOTE]
-> MFC kullanarak iletişim kutusuna bir yatay kaydırma çubuğu içeren bir liste kutusu eklediğinizde, kaydırma çubuğu uygulamanızı otomatik olarak görünmez.
+> MFC kullanarak bir iletişim kutusuna yatay kaydırma çubuğu içeren bir liste kutusu eklediğinizde, kaydırma çubuğu uygulamanızda otomatik olarak görünmez.
 >
-> Çağırarak geniş öğesi için bir maksimum genişliğini ayarlamak [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) kodunuzda. Bu değer kümesi kaydırma çubuğu görünmez, hatta öğeleri liste kutusunda kutudan daha geniş olduğunda.
+> Kodunuzda [Clienstbox:: SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) çağırarak en geniş öğe için bir maksimum genişlik ayarlayın. Bu değer kümesi olmadan, liste kutusundaki öğeler kutudan daha geniş olduğunda bile kaydırma çubuğu görünmez.
 
-## <a name="align-controls"></a>Denetimleri hizalama
+## <a name="align-controls"></a>Denetimleri Hizala
 
-- Denetimleri hizalama için hizalamak için istediğiniz denetimleri seçin. Menü Git **biçimi** > **Hizala** ve aşağıdaki hizalamaları birini seçin:
+- Denetimleri hizalamak için, hizalamak istediğiniz denetimleri seçin. Menü **biçimine** gidin > **hizalayın** ve aşağıdaki hizalamalara birini seçin:
 
    |Hizalama|Açıklama|
    |-----|-----------|
-   |**Hizala**|Seçili denetimleri, sol kenarı boyunca hizalar.|
-   |**Merkezleri**|Seçili denetimleri yatay olarak kendi center noktalarını boyunca hizalar.|
-   |**Hakları**|Seçili denetimleri kendi sağ kenarı boyunca hizalar.|
-   |**Kırpın**|Seçili denetimleri üst kenarları boyunca hizalar.|
-   |**Ortaları**|Seçili denetimleri dikey olarak kendi orta noktaları boyunca hizalar.|
-   |**Alta**|Seçili denetimleri alt kenarları boyunca hizalar.|
+   |**Hizala**|Seçili denetimleri sol taraflarıyla hizalar.|
+   |**Merkeziyle**|Seçili denetimleri orta noktaları üzerinde yatay olarak hizalar.|
+   |**Haklarını**|Seçili denetimleri sağ taraflarıyla hizalar.|
+   |**Arşivlerinizin başından**|Seçili denetimleri üst kenarları üzerinde hizalar.|
+   |**Ortaları**|Seçili denetimleri orta noktaları üzerinde dikey olarak hizalar.|
+   |**Alt kenarlar**|Seçili denetimleri alt kenarları üzerinde hizalar.|
 
-   İlk baskın olmasını istediğiniz denetim seçtiğinizden emin olun veya hizalama yürütme ya da komut son denetim grubunun konumunu baskın denetimi konumuna olarak boyutlandırma önce baskın denetimi olacak şekilde ayarlayın.
+   Önce baskın olmasını istediğiniz denetimi seçtiğinizden emin olun veya denetim grubunun son konumu baskın denetimin konumuna bağlı olarak hizalama veya boyutlandırma komutunu yürütmeden önce baskın denetim olarak ayarlayın.
 
-- Eşit alanı denetimleri yeniden düzenlemek istediğiniz denetimleri seçin. Menü Git **biçimi** > **eşit** ve aşağıdaki aralığı hizalamaları birini seçin:
+- Denetimleri eşit aralıklı olarak belirlemek için yeniden düzenlemek istediğiniz denetimleri seçin. Menü **biçimi** > **alanı eşit** olarak gidin ve aşağıdaki Aralık hizalamalarının birini seçin:
 
    |Aralığı|Açıklama|
    |---|---|
-   |**Arasında**|En soldaki ve sağdaki denetimi seçili arasında eşit alanı denetler.|
-   |**Aşağı**|Üstteki ve alttaki denetimi seçili arasında eşit alanı denetler.|
+   |**Yönlendirilmesine**|Sol ve en sağdaki denetimin seçildiği boşluk denetimleri.|
+   |**Kapatılıp**|Boşluk denetimleri, en üstteki ve en altta bulunan denetim arasında eşit olarak seçilir.|
 
-- Denetim merkezi için denetimi veya denetimleri yeniden düzenlemek istediğiniz'ı seçin. Menü Git **biçimi** > **Merkezi iletişim** ve aşağıdaki düzenlemeleri birini seçin:
+- Denetimleri ortalamak için, yeniden düzenlemek istediğiniz denetimi veya denetimleri seçin. Menü **biçimlendir** > **Center iletişim kutusuna** gidin ve aşağıdaki düzenlemeden birini seçin:
 
-   |Düzenleme|Açıklama|
+   |Sidir|Açıklama|
    |---|---|
-   |**Dikey**|İletişim kutusu denetimleri dikey olarak ortalayın.|
-   |**Yatay**|Denetimleri yatay olarak iletişim kutusunda ortalayın.|
+   |**Matema**|İletişim kutusunda denetimleri dikey olarak ortalayın.|
+   |**Yatay**|İletişim kutusunda denetimleri yatay olarak ortalayın.|
 
-- Basma düğmelerini hizalamak için bir veya daha fazla basma düğmelerini seçin. Menü Git **biçimi** > **Düzenle düğmeler**, aşağıdaki düzenlemeleri birini seçin:
+- Basma düğmelerini hizalamak için bir veya daha fazla gönderme düğmesi seçin. Menü **biçimi** > düzenleme düğmeleri ' ne gidin ve ardından aşağıdaki **düzenlemelerde**birini seçin:
 
-   |Düzenleme|Açıklama|
+   |Sidir|Açıklama|
    |---|---|
-   |**sağ**|Basma düğmelerini iletişim kutusunun sağ kenarı hizalar.|
-   |**alt**|Basma düğmelerini iletişim kutusunun alt kenarı hizalar.|
+   |**Right**|İletişim kutusunun sağ kenarında basma düğmelerini hizalar.|
+   |**Aşağıya**|İletişim kutusunun alt kenarı üzerinde basma düğmelerini hizalar.|
 
-   Bir denetimin bir itme düğmesi dışında seçerseniz konumuna etkilenmez.
+   Bir Gönder düğmesi dışında bir denetim seçerseniz, konumu etkilenmez.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -285,6 +285,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim kutusu denetimleri yönetme](controls-in-dialog-boxes.md)<br/>
-[Nasıl yapılır: Denetimleri Ekleme, Düzenleme veya Silme](adding-editing-or-deleting-controls.md)<br/>
-[Nasıl yapılır: Denetim Erişimini ve Değerlerini Tanımlama](defining-mnemonics-access-keys.md)<br/>
+[Iletişim kutusu denetimlerini Yönet](controls-in-dialog-boxes.md)<br/>
+[Nasıl yapılır: denetimleri ekleme, düzenleme veya silme](adding-editing-or-deleting-controls.md)<br/>
+[Nasıl yapılır: denetim erişimini ve değerlerini tanımlama](defining-mnemonics-access-keys.md)<br/>

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - U1001
 ms.assetid: 5d7da559-6cbd-44d6-848c-aaf54cae0d1a
-ms.openlocfilehash: bfe2edf9c57eda073826a8c161ae0c358f3a6232
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb39d9080fdceb1ab26c32e9aedc654323581eb5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378459"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173458"
 ---
 # <a name="nmake-fatal-error-u1001"></a>NMAKE Önemli Hatası U1001
 
-sözdizimi hatası: makroda ' character' geçersiz bir karakter
+söz dizimi hatası: makroda geçersiz karakter ' character '
 
-Verilen karakterin bir makroda görünür, ancak bir harf, sayı veya alt çizgi değildir.
+Verilen karakter makroda görünür, ancak bir harf, sayı veya alt çizgi değildir.
 
-Bu hatanın nedeni eksik iki nokta makro genişletmesinde:
+Bu hatanın nedeni makro genişletmesinde eksik bir iki nokta olabilir:
 
 ```
 syntax error : illegal character '=' in macro

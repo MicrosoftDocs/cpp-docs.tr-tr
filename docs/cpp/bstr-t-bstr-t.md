@@ -8,18 +8,18 @@ helpviewer_keywords:
 - _bstr_t method [C++]
 - _bstr_t class
 ms.assetid: 116d994e-5a72-4351-afbe-866c80b4c165
-ms.openlocfilehash: 44a301b8b2a1c53636c27be6f59f61aa0dcd46b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3384da733586c828496a8728a0f5855f92eeec35
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385017"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190475"
 ---
-# <a name="bstrtbstrt"></a>_bstr_t::_bstr_t
+# <a name="_bstr_t_bstr_t"></a>_bstr_t::_bstr_t
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur bir `_bstr_t` nesne.
+`_bstr_t` nesnesi oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,38 +45,38 @@ _bstr_t(
 
 #### <a name="parameters"></a>Parametreler
 
-*s1*<br/>
-A `_bstr_t` kopyalanacak nesne.
+*S1*<br/>
+Kopyalanacak `_bstr_t` nesne.
 
-*s2*<br/>
+*S2*<br/>
 Çok baytlı bir dize.
 
-*S3*<br/>
+*bekletmeden*<br/>
 Unicode dizesi
 
 *var*<br/>
-A [_variant_t](../cpp/variant-t-class.md) nesne.
+[_Variant_t](../cpp/variant-t-class.md) nesnesi.
 
 *BSTR*<br/>
 Varolan bir `BSTR` nesnesi.
 
 *fCopy*<br/>
-FALSE ise *bstr* bağımsız değişkeni, yeni nesneye çağırarak bir kopyası oluşturmadan takılı `SysAllocString`.
+FALSE ise, *BSTR* bağımsız değişkeni, `SysAllocString`çağırarak bir kopya oluşturmadan yeni nesneye iliştirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki tabloda açıklanmıştır `_bstr_t` oluşturucular.
+Aşağıdaki tablo `_bstr_t` oluşturucularını açıklar.
 
 |Oluşturucu|Açıklama|
 |-----------------|-----------------|
-|`_bstr_t( )`|Varsayılan yapıları `_bstr_t` null yalıtan nesne `BSTR` nesne.|
-|`_bstr_t( _bstr_t&`  `s1`  `)`|Oluşturur bir `_bstr_t` başka bir kopya olarak nesnesi.<br /><br /> Bu bir *yüzeysel* kapsüllenmiş başvuru sayısını artırır kopya `BSTR` yeni bir tane oluşturmak yerine nesne.|
-|`_bstr_t( char*`  `s2`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.<br /><br /> Bu oluşturucu, ilk çok baytlı Unicode dönüştürme gerçekleştirir.|
-|`_bstr_t( wchar_t*`  `s3`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.|
-|`_bstr_t( _variant_t&`  `var`  `)`|Oluşturur bir `_bstr_t` nesnesinden bir `_variant_t` ilk alarak nesne bir `BSTR` kapsüllenmiş değişken nesnesinden nesne.|
-|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturur bir `_bstr_t` mevcut bir nesne `BSTR` (başlangıcı yerine sonundan bir `wchar_t*` dize). Varsa *fCopy* yanlışsa, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye iliştirilmiş `SysAllocString`.<br /><br /> Bu oluşturucu şifreleyebilir ve sahipliğini almak için tür kitaplığı üstbilgi sarmalayıcı işlevleri tarafından kullanılır bir `BSTR` bir arabirim yöntemi tarafından döndürülür.|
+|`_bstr_t( )`|Null `BSTR` nesnesini kapsülleyen varsayılan bir `_bstr_t` nesnesi oluşturur.|
+|`_bstr_t( _bstr_t&`  `s1`  `)`|Bir `_bstr_t` nesnesini diğerinin bir kopyası olarak oluşturur.<br /><br /> Bu, yeni bir tane oluşturmak yerine, kapsüllenmiş `BSTR` nesnesinin başvuru sayısını artıran *basit* bir kopyadır.|
+|`_bstr_t( char*`  `s2`  `)`|Yeni bir `BSTR` nesnesi oluşturmak için `SysAllocString` çağırarak ve sonra bunu kapsülleyen bir `_bstr_t` nesnesi oluşturur.<br /><br /> Bu Oluşturucu öncelikle Unicode dönüşümü çok baytlı bir biçimde gerçekleştirir.|
+|`_bstr_t( wchar_t*`  `s3`  `)`|Yeni bir `BSTR` nesnesi oluşturmak için `SysAllocString` çağırarak ve sonra bunu kapsülleyen bir `_bstr_t` nesnesi oluşturur.|
+|`_bstr_t( _variant_t&`  `var`  `)`|Önce kapsüllenmiş VARIANT nesnesinden bir `BSTR` nesnesi alarak `_variant_t` nesnesinden bir `_bstr_t` nesnesi oluşturur.|
+|`_bstr_t( BSTR``bstr` `, bool``fCopy``)`|Varolan bir `BSTR` (`wchar_t*` bir dizenin aksine) bir `_bstr_t` nesnesi oluşturur. *FCopy* yanlış ise, sağlanan `BSTR` yeni bir kopyasını `SysAllocString`ile yeni bir kopya oluşturmadan eklenir.<br /><br /> Bu Oluşturucu, tür kitaplığı başlıklarındaki sarmalayıcı işlevleri tarafından, bir arabirim yöntemi tarafından döndürülen bir `BSTR` kapsüllemek ve sahipliğini almak için kullanılır.|
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

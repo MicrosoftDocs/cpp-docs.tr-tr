@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C1081
 ms.assetid: e58adf17-cbe1-4955-a5c7-80622bbba249
-ms.openlocfilehash: f3c9f9bde5da7fb120accbb9a8d72e5715ab9d2b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8630a26d14c68a5f1abe45bb0b8d0141d0dedbb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62229425"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204197"
 ---
 # <a name="fatal-error-c1081"></a>Önemli hata C1081
 
-'symbol': dosya adı çok uzun
+' symbol ': dosya adı çok uzun
 
-Bir dosya yol uzunluğunu aşıyor `_MAX_PATH` (260 karakter olarak Stdlıb.h tarafından tanımlanır). Dosya adını kısaltın.
+Bir dosya yol adının uzunluğu `_MAX_PATH` (STDLIB. h tarafından 260 karakter olarak tanımlanır) aşıyor. Dosyanın adını kısaltın.
 
-Kısa bir adla CL.exe çağırırsanız, derleyici bir tam yol üretmek gerekebilir. Örneğin, `cl -c myfile.cpp` derleyicinin neden olabilir:
+CL. exe ' yi kısa bir dosya adıyla çağırırsanız, derleyicinin tam bir yol adı oluşturması gerekebilir. Örneğin, `cl -c myfile.cpp` derleyicinin oluşturmasına neden olabilir:
 
 ```
 D:\<very-long-directory-path>\myfile.cpp

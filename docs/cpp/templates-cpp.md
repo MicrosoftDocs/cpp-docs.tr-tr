@@ -7,12 +7,12 @@ helpviewer_keywords:
 - templates, C++
 - templates [C++]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-ms.openlocfilehash: 36ada3cc3b933e99e9b29b3b58463f6bc526fc7d
-ms.sourcegitcommit: 00f50ff242031d6069aa63c81bc013e432cae0cd
+ms.openlocfilehash: 5f8322d850084ca53e946dcff1b67dc81b493fe3
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75546412"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160781"
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 
@@ -57,7 +57,7 @@ int minimum(const int& lhs, const int& rhs)
 
 Derleyici, işlev şablonlarında tür kesintilerini nasıl gerçekleştirdiğine ilişkin kurallar, normal işlevlerin kurallarını temel alır. Daha fazla bilgi için bkz. [Işlev şablonu çağrılarının aşırı yükleme çözünürlüğü](../cpp/overload-resolution-of-function-template-calls.md).
 
-## <a id="type_parameters"></a>Tür parametreleri
+## <a name="type-parameters"></a><a id="type_parameters"></a>Tür parametreleri
 
 Yukarıdaki `minimum` şablonunda, *t* türü parametresinin, const ve başvuru niteleyicilerinin eklendiği işlev çağrısı parametrelerinde kullanılana kadar hiçbir şekilde nitelenmediğini unutmayın.
 
@@ -151,7 +151,7 @@ auto v2 = constant<true>;   // v2 == true, decltype(v2) is bool
 auto v3 = constant<'a'>;    // v3 == 'a', decltype(v3) is char
 ```
 
-## <a id="template_parameters"></a>Şablon parametreleri olarak şablonlar
+## <a name="templates-as-template-parameters"></a><a id="template_parameters"></a>Şablon parametreleri olarak şablonlar
 
 Şablon bir şablon parametresi olabilir. Bu örnekte, MyClass2 iki şablon parametresine sahiptir: bir typeName parametresi *T* ve bir şablon parametresi *ARR*:
 

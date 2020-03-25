@@ -34,12 +34,12 @@ helpviewer_keywords:
 - trigonometric functions
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
-ms.openlocfilehash: 4d07a8636aabc4973c7beb9725a39e98c229a098
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9ec612aa9f8c6eaf1731d62b654d45841cdfa159
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942830"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170261"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
@@ -60,17 +60,17 @@ long double cos( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 *X*'in kosinüsü. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|yok|**_ETKI ALANI**|
-|± INF|**GEÇERSİZ**|**_ETKI ALANI**|
+|± QNAN, IND|yok|**_DOMAIN**|
+|± INF|**Geçersiz**|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 

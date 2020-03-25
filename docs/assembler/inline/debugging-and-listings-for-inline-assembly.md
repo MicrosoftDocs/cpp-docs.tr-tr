@@ -9,26 +9,26 @@ helpviewer_keywords:
 - debugging [C++], inline assembly code
 - inline assembly, debugging
 ms.assetid: 69266930-6f9a-433d-b704-f4f44e7b2583
-ms.openlocfilehash: 1b2ec146daf450c4302be9fea8fdd117ec6398da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3254fb6b750466de0a38230c5e1cfa067c476f5e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167212"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169519"
 ---
 # <a name="debugging-and-listings-for-inline-assembly"></a>Satır İçi Derleme için Hata Ayıklama ve Listeleme
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Satır içi derleme kodu içeren programlar ile derleme yaparsanız bir kaynak düzey hata ayıklayıcı ile ayıklanabilir [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği.
+Satır içi derleme kodu içeren programlar, [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneğiyle derlerseniz kaynak düzeyinde bir hata ayıklayıcı ile hata ayıklanabilir.
 
-Hata ayıklayıcısı içinde C veya C++ ve derleme dili satırlarda kesme noktaları ayarlayabilirsiniz. Karışık derleme ve kaynak modu etkinleştirirseniz, hem kaynak hem de ayrıştırılmış form derleme kodu görüntüleyebilirsiniz.
+Hata ayıklayıcı içinde, hem C C++ hem de derleme dili satırlarında kesme noktaları ayarlayabilirsiniz. Karışık derleme ve kaynak modunu etkinleştirirseniz, derleme kodunun hem kaynak hem de ayrıştırılmış formunu görüntüleyebilirsiniz.
 
-Birden çok derleme yönergeleri veya kaynak dili ifadelerini bir satıra koyarak hata ayıklama engel olabilir olduğunu unutmayın. Kaynak modunda hata ayıklayıcı, tek bir satırda ancak ayrı deyimler aynı satıra bir kesme noktası ayarlamak için kullanabilirsiniz. İçin de aynı ilke geçerlidir bir `__asm` bloğu tek bir mantıksal satırına genişletir C makro olarak tanımlanır.
+Birden çok derleme yönergelerinin veya kaynak dili deyimlerinin tek bir satıra yerleştirilmesi, hata ayıklamanın ayıklanmadığını unutmayın. Kaynak modunda, hata ayıklayıcıyı, tek bir satırda kesme noktaları ayarlamak için kullanabilirsiniz, ancak aynı satırdaki tek tek deyimlerde kullanılamaz. Aynı prensibi, tek bir mantıksal satıra genişleyen C makrosu olarak tanımlanan bir `__asm` bloğu için geçerlidir.
 
-Karışık kaynak ve derleme ile listeleme oluşturursanız [/Fas](../../build/reference/fa-fa-listing-file.md) derleyici seçeneği, listenin her derleme dili satırın hem kaynak hem de derleme formları içerir. Makrolar listelerinde genişletilir değil, ancak derleme sırasında genişletilmiş.
+[/Fas](../../build/reference/fa-fa-listing-file.md) derleyici seçeneğiyle bir karma kaynak ve derleme listesi oluşturursanız, listede her derleme dili satırının hem kaynak hem de derleme formları bulunur. Makrolar listelerde genişletilmez, ancak derleme sırasında genişletilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

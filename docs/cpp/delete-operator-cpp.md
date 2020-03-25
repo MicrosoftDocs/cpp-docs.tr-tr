@@ -8,12 +8,12 @@ helpviewer_keywords:
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-ms.openlocfilehash: 3b00bf78d286ba530dee85240236a2a9ea171113
-ms.sourcegitcommit: a146b169664c001406a0cccc7fbda1b8d7be5078
+ms.openlocfilehash: 2ffb307aa3eb6bb8d253129a550c95342ad497bc
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024642"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189474"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 
@@ -36,7 +36,7 @@ delete MyDialog;
 
 **Yeni** ile ayrılmamış bir nesnenin işaretçisi üzerinde **Delete** kullanılması öngörülemeyen sonuçlara neden olur. Ancak, 0 değeriyle bir işaretçi üzerinde **Delete** kullanabilirsiniz. Bu sağlama, **Yeni** hata durumunda 0 döndürdüğünde, başarısız olan **Yeni** bir işlemin sonucunun silinmesinin zararsız olduğu anlamına gelir. Daha fazla bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
-**New** ve **Delete** işleçleri diziler dahil yerleşik türler için de kullanılabilir. Bir diziye `pointer`başvuruyorsa, önüne boş köşeli ayraçlar (`[]`) yerleştirin: `pointer`
+**New** ve **Delete** işleçleri diziler dahil yerleşik türler için de kullanılabilir. `pointer` bir diziye başvuruyorsa, `pointer`önce boş köşeli ayraçlar (`[]`) yerleştirin:
 
 ```cpp
 int* set = new int[100];
@@ -46,7 +46,7 @@ delete [] set;
 
 Bir nesne üzerinde **Delete** işlecinin kullanılması belleği ayırır. Nesne silindikten sonra bir işaretçinin başvurusunu kaldıran bir program öngörülemeyen sonuçlara veya çökmeye neden olabilir.
 
-Bir C++ sınıf nesnesi için belleği serbest bırakmak için silme kullanıldığında, nesnenin yıkıcısı, nesne bellekten serbest bırakılmadan önce çağrılır (nesne bir yıkıcı içeriyorsa).
+Bir **delete** C++ sınıf nesnesi için belleği serbest bırakmak için silme kullanıldığında, nesnenin yıkıcısı, nesne bellekten serbest bırakılmadan önce çağrılır (nesne bir yıkıcı içeriyorsa).
 
 **Delete** işlecinin işleneni değiştirilebilir bir l-değeri ise, nesne silindikten sonra değeri tanımsız olur.
 
@@ -80,7 +80,7 @@ int main()
 }
 ```
 
-Aşağıdaki iki durum tanımsız sonuçlar üretir: bir nesnede Delete () dizi formunu kullanarak`delete []`ve dizi üzerinde Delete () dizi olmayan formunu kullanarak.
+Aşağıdaki iki durum tanımsız sonuçlar üretir: bir nesnede Delete (`delete []`) dizi formunu kullanarak ve dizideki Delete dizi olmayan formunu kullanarak.
 
 ## <a name="example"></a>Örnek
 
@@ -94,6 +94,6 @@ Sınıf türü olmayan nesneler için ([Class](../cpp/class-cpp.md), [struct](..
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)\
-[Lerimi](../cpp/keywords-cpp.md)\
+[Birli işleçlere sahip ifadeler](../cpp/expressions-with-unary-operators.md)\
+[Anahtar sözcükler](../cpp/keywords-cpp.md)\
 [new ve delete İşleçleri](../cpp/new-and-delete-operators.md)

@@ -1,40 +1,40 @@
 ---
-title: -Clr ile C stili yayınlar (C++/CLI)
+title: -Clr (C++/CLI) Ile C stili atamalar
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - C-style casts and /clr
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
-ms.openlocfilehash: d9544e3002cfa489e9700b83367b15b164e9b513
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b7e492c62047e3b38224637f842d8a7fcbae84f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346768"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172600"
 ---
 # <a name="c-style-casts-with-clr-ccli"></a>/clr ile C Türü Atamalar (C++/CLI)
 
-Aşağıdaki konu, yalnızca ortak dil çalışma zamanı için geçerlidir.
+Aşağıdaki konu yalnızca ortak dil çalışma zamanı için geçerlidir.
 
-CLR Türleri ile kullanıldığında, derleyici C tarzı dönüştürme şu sırayla aşağıda listelenen yayınları birine eşlemeye çalışır:
+CLR türleriyle kullanıldığında, derleyici C stili tür dönüştürme 'yı aşağıda listelenen atamalardan birine eşlemeyi dener, aşağıdaki sırayla:
 
 1. const_cast
 
 2. safe_cast
 
-3. safe_cast artı const_cast
+3. safe_cast Plus const_cast
 
 4. static_cast
 
-5. static_cast artı const_cast
+5. static_cast Plus const_cast
 
-Yukarıda listelenen yayınları hiçbiri geçerli olup olmadığını ve ifade türü ve hedef türü CLR başvuru türleri ise, bir çalışma zamanı denetimi için (castclass MSIL yönergesi) C stili tür dönüştürme eşler. Aksi takdirde, C stili tür dönüştürme geçersiz olarak kabul edilir ve derleyici bir hata verir.
+Yukarıda listelenen türlerden hiçbiri geçerli değilse ve ifadenin türü ve hedef türü CLR başvuru türleridir, C stili tür dönüştürme işlemi bir çalışma zamanı denetimi (roclass MSIL yönergesi) ile eşleşir. Aksi halde, C stili bir tür dönüştürme geçersiz olarak değerlendirilir ve derleyici bir hata verir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C stili tür dönüştürme önerilmez. İle derlerken [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), kullanın [safe_cast](safe-cast-cpp-component-extensions.md).
+C stili tür dönüştürme önerilmez. [/Clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlerken [safe_cast](safe-cast-cpp-component-extensions.md)kullanın.
 
-Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **const_cast**.
+Aşağıdaki örnek, bir **const_cast**eşlenen C stili bir tür dönüştürmeyi gösterir.
 
 ```cpp
 // cstyle_casts_1.cpp
@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **safe_cast**.
+Aşağıdaki örnek, bir **safe_cast**eşlenen C stili bir tür dönüştürmeyi gösterir.
 
 ```cpp
 // cstyle_casts_2.cpp
@@ -60,7 +60,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **safe_cast** yanı sıra **const_cast**.
+Aşağıdaki örnek, bir **safe_cast** ve **Const_cast**eşleyen bir C stili tür dönüştürme gösterir.
 
 ```cpp
 // cstyle_casts_3.cpp
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **static_cast**.
+Aşağıdaki örnek, bir **static_cast**eşlenen C stili bir tür dönüştürmeyi gösterir.
 
 ```cpp
 // cstyle_casts_4.cpp
@@ -102,7 +102,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **static_cast** yanı sıra **const_cast**.
+Aşağıdaki örnek, bir **static_cast** ve **Const_cast**eşleyen bir C stili tür dönüştürme gösterir.
 
 ```cpp
 // cstyle_casts_5.cpp
@@ -123,7 +123,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir C çalışma zamanı denetlemek için eşlenen tarzı dönüştürme gösterir.
+Aşağıdaki örnekte, bir çalışma zamanı denetimi ile eşleşen bir C stili tür dönüştürme gösterilmektedir.
 
 ```cpp
 // cstyle_casts_6.cpp
@@ -144,7 +144,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir geçersiz C, derleyici neden olan hata verecek tarzı dönüştürme gösterir.
+Aşağıdaki örnekte, derleyicinin bir hata vermesine neden olan geçersiz bir C stili atama gösterilmektedir.
 
 ```cpp
 // cstyle_casts_7.cpp

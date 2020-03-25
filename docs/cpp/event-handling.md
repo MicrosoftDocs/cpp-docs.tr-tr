@@ -4,31 +4,31 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - event handling [C++]
 ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
-ms.openlocfilehash: bd74ba0b20e2058f0b04d0d0d3c22c9d526157a0
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: cf16ea0e6e14981f1105456a5f17d68c05a9c3fa
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222115"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189214"
 ---
 # <a name="event-handling"></a>Olay İşleme
 
-Olay işleme, COM sınıfları için öncelikle desteklenir (genellikle ATL sınıfları kullanarak, COM nesneleri uygulayan C++ sınıflar veya [coclass'ı](../windows/coclass.md) özniteliği). Daha fazla bilgi için [com'da olay işleme](../cpp/event-handling-in-com.md).
+Olay işleme öncelikle COM sınıfları (C++ genellikle atl sınıfları veya [COCLASS](../windows/coclass.md) özniteliği kullanarak com nesneleri uygulayan sınıflar) için desteklenir. Daha fazla bilgi için bkz. [com 'Da olay işleme](../cpp/event-handling-in-com.md).
 
-Olay işleme de yerel C++ sınıfları için (COM nesneleri uygulamayan C++ sınıfları), ancak desteği kullanım dışıdır ve gelecek sürümde kaldırılacak desteklenir.  Daha fazla bilgi için [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md).
+Olay işleme, yerel C++ SıNıFLAR (C++ com nesneleri uygulamayan sınıflar) için de desteklenir, ancak bu destek kullanım dışıdır ve gelecek sürümlerde kaldırılır.  Daha fazla bilgi için bkz. [yerel C++olarak olay işleme ](../cpp/event-handling-in-native-cpp.md).
 
-Olay işleme, tek ve birden çok iş parçacıklı kullanım destekler ve aynı anda çoklu iş parçacığı erişimine karşı verileri korur. Ayrıca, alt sınıfların olay kaynağından alabilmesine olanak sağlar veya alıcı sınıfları ve Destek, olay kaynağını belirleme/alma türetilmiş sınıftaki genişletilmiş.
+Olay işleme tek ve çok iş parçacıklı kullanımı destekler ve eşzamanlı çoklu iş parçacığı erişiminizden verileri korur. Ayrıca, olay kaynağı veya alıcı sınıflarından alt sınıfları türetebilir ve türetilmiş sınıfta genişletilmiş olay kaynağını/almayı destekletmeniz de sağlar.
 
-Microsoft C++ derleyici öznitelikleri ve olayları ve olay işleyicileri bildirme anahtar sözcükler içerir. Anahtar sözcükler ve olay öznitelikleri CLR programlarda ve yerel C++ programlarında kullanılabilir.
+Microsoft C++ derleyicisi olayları ve olay işleyicilerini bildirmek için öznitelikler ve anahtar sözcükler içerir. Olay öznitelikleri ve anahtar sözcükler, CLR programlarında ve yerel C++ programlarda kullanılabilir.
 
 |Konu|Açıklama|
 |-----------|-----------------|
-|[event_source](../windows/attributes/event-source.md)|Olay kaynağı oluşturur.|
+|[event_source](../windows/attributes/event-source.md)|Bir olay kaynağı oluşturur.|
 |[event_receiver](../windows/attributes/event-receiver.md)|Bir olay alıcısı (havuz) oluşturur.|
 |[__event](../cpp/event.md)|Bir olayı bildirir.|
 |[__raise](../cpp/raise.md)|Bir olayın çağrı sitesini vurgular.|
-|[__hook](../cpp/hook.md)|İle bir olay işleyicisi yöntemi ilişkilendirir.|
-|[__unhook](../cpp/unhook.md)|Bir olay işleyicisi yöntemi dissociates.|
+|[__hook](../cpp/hook.md)|Bir işleyici yöntemini bir olayla ilişkilendirir.|
+|[__unhook](../cpp/unhook.md)|Bir olaydan bir işleyici yönteminin ilişkilendirmesini kaldırın.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

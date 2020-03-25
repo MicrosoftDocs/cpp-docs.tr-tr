@@ -5,22 +5,22 @@ ms.topic: reference
 helpviewer_keywords:
 - custom attributes, targets
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
-ms.openlocfilehash: 502f5ba2e5bbb5bd5a5fcceca16acaa3987db4bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe2c1d27042b51300d01ba70b951b7601d87701e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346064"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172626"
 ---
 # <a name="attribute-targets-ccli-and-ccx"></a>Öznitelik hedefleri (C++/CLI ve C++/CX)
 
-Öznitelik kullanımı tanımlayıcıları öznitelik hedefleri belirtmenizi sağlar.  Her öznitelik için belirli dil öğelerini uygulamak için tanımlanır. Örneğin, yalnızca sınıflar ve yapılar için uygulanacak bir öznitelik tanımlanabilir.  Aşağıdaki liste, özel bir öznitelik kullanılabilir olası söz dizimi öğeleri gösterir. Bu değerleri birleşimlerini (kullanarak mantıksal veya) kullanılabilir.
+Öznitelik kullanım belirticileri, öznitelik hedeflerini belirtmenizi sağlar.  Her öznitelik belirli dil öğelerine uygulamak için tanımlanır. Örneğin, bir öznitelik yalnızca sınıflar ve yapılar için uygulanacak şekilde tanımlanabilir.  Aşağıdaki liste, özel bir özniteliğin kullanılabileceği olası sözdizimsel öğeleri gösterir. Bu değerlerin birleşimleri (mantıksal OR kullanılarak) kullanılabilir.
 
-Öznitelik hedefi, bir veya daha fazla geçirilecek belirtmek için <xref:System.AttributeTargets> numaralandırıcılar için <xref:System.AttributeUsageAttribute> öznitelik tanımlarken.
+Öznitelik hedefini belirtmek için, özniteliği tanımlarken bir veya daha fazla <xref:System.AttributeTargets> numaralandırıcıyı <xref:System.AttributeUsageAttribute> geçirin.
 
-Geçerli bir öznitelik hedefleri listesi verilmiştir:
+Geçerli öznitelik hedeflerinin listesi aşağıda verilmiştir:
 
-- `All` (tüm yapıları için geçerlidir)
+- `All` (tüm yapılar için geçerlidir)
 
     ```cpp
     using namespace System;
@@ -30,7 +30,7 @@ Geçerli bir öznitelik hedefleri listesi verilmiştir:
     [assembly:Attr];
     ```
 
-- `Assembly` (derleme bir bütün olarak geçerlidir)
+- `Assembly` (bir derleme için bir bütün olarak geçerlidir)
 
     ```cpp
     using namespace System;
@@ -40,7 +40,7 @@ Geçerli bir öznitelik hedefleri listesi verilmiştir:
     [assembly:Attr];
     ```
 
-- `Module` (bir modül için bir bütün olarak uygular)
+- `Module` (bir modül için bir bütün olarak geçerlidir)
 
     ```cpp
     using namespace System;
@@ -193,23 +193,23 @@ Geçerli bir öznitelik hedefleri listesi verilmiştir:
     };
     ```
 
-Genellikle, bir öznitelik doğrudan uygulandığı dil öğesi önce gelir. Bazı durumlarda, ancak bir öznitelik konumu özniteliğin hedef belirlemek yeterli değil. Bu örneği göz önünde bulundurun:
+Genellikle, bir öznitelik, uygulandığı dil öğesinden hemen önce gelir. Ancak bazı durumlarda, bir özniteliğin konumu özniteliğin hedeflenen hedefini belirlemede yeterli değildir. Şu örneği göz önünde bulundurun:
 
 ```cpp
 [Attr] int MyFn(double x)...
 ```
 
-Sözdizimi, öznitelik yönteme ve yöntemin dönüş değerini uygulamak için tasarlanmıştır, anlaşılır bir yolu yoktur (Bu durumda, yönteme Varsayılanları). Bu gibi durumlarda, bir öznitelik kullanım tanımlayıcısı kullanılabilir. Örneğin, dönüş değeri için geçerli öznitelik yapmak için kullanın `returnvalue` aşağıdaki gibi belirticisi:
+Sözdizimsel olarak, özniteliğin yönteme veya metodun dönüş değerine uygulanması amaçlandığını söylemek için bir yol yoktur (Bu durumda, varsayılan olarak yöntemine ayarlanır). Böyle durumlarda, bir öznitelik kullanım belirleyicisi kullanılabilir. Örneğin, özniteliği dönüş değeri için uygulanabilir yapmak için, `returnvalue` belirticisini aşağıdaki gibi kullanın:
 
 ```cpp
 [returnvalue:Attr] int MyFn(double x)... // applies to return value
 ```
 
-Öznitelik kullanımı tanımlayıcıları aşağıdaki durumlarda gereklidir:
+Aşağıdaki durumlarda öznitelik kullanım belirticileri gereklidir:
 
-- Bir derleme veya modül düzeyi özniteliğini belirtmek için.
+- Bütünleştirilmiş kod veya modül düzeyi bir öznitelik belirtmek için.
 
-- Bir öznitelik, bir yöntemin dönüş değeri için yöntem geçerli olduğunu belirtmek için:
+- Bir özniteliğin yöntemin dönüş değerine uygulanacağını belirtmek için, yöntemi değil:
 
     ```cpp
     [method:Attr] int MyFn(double x)...     // Attr applies to method
@@ -217,7 +217,7 @@ Sözdizimi, öznitelik yönteme ve yöntemin dönüş değerini uygulamak için 
     [Attr] int MyFn(double x)...            // default: method
     ```
 
-- Öznitelik bir özelliğin erişimci özelliği için geçerli olduğunu belirtmek için:
+- Bir özniteliğin özelliği değil, özelliğin erişimcisine uygulanacağını belirtmek için:
 
     ```cpp
     [method:MyAttr(123)] property int Property()
@@ -225,7 +225,7 @@ Sözdizimi, öznitelik yönteme ve yöntemin dönüş değerini uygulamak için 
     [MyAttr(123)] property int get_MyPropy() // default: property
     ```
 
-- Bir öznitelik olay olay erişimcisi için geçerli olduğunu belirtmek için:
+- Bir özniteliğin olaya değil, bir olayın erişimcisine uygulanacağını belirtmek için:
 
     ```cpp
     delegate void MyDel();
@@ -236,13 +236,13 @@ Sözdizimi, öznitelik yönteme ve yöntemin dönüş değerini uygulamak için 
     }
     ```
 
-Hemen takip eden özniteliği bir öznitelik kullanım belirticisi geçerlidir; Yani
+Öznitelik kullanım belirticisi yalnızca hemen takip eden özniteliği için geçerlidir; Yani
 
 ```cpp
 [returnvalue:Attr1, Attr2]
 ```
 
-farklıdır
+farklı
 
 ```cpp
 [returnvalue:Attr1, returnvalue:Attr2]
@@ -252,7 +252,7 @@ farklıdır
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, birden çok hedef belirtmek gösterilmektedir.
+Bu örnek, birden çok hedefin nasıl belirtilmeyeceğini gösterir.
 
 ### <a name="code"></a>Kod
 

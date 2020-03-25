@@ -9,24 +9,24 @@ f1_keywords:
 helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-ms.openlocfilehash: 0fba04efeaa634f5e21600768297aee0d999d1c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 264ac0a56996b0dcbeeb64246623eca1a3fc73ff
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254483"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172158"
 ---
-# <a name="interiorptr-ccli"></a>interior_ptr (C++/CLI)
+# <a name="interior_ptr-ccli"></a>interior_ptr (C++/CLI)
 
-Bir *işaretçiye* bir başvuru türü içinde ancak nesnenin kendisi için bir işaretçiyi bildirir. İç işaretçi, başvuru tanıtıcı, değer türü, Kutulu tür tanıtıcı, bir yönetilen türün üye veya yönetilen bir dizinin bir öğesine işaret edebilir.
+*İç işaretçi* bir başvuru türünün içinde bir işaretçi bildirir ancak nesnenin kendisi için değildir. İç işaretçi bir başvuru tanıtıcısı, değer türü, paketlenmiş tür tanıtıcısı, yönetilen bir türün üyesi veya yönetilen bir dizinin bir öğesi ile işaret edebilir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-(Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için tüm çalışma zamanları için uygulanan bir açıklama yoktur.)
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-(Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için yalnızca Windows Çalışma Zamanı uygulanan bir açıklama yoktur.)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -34,7 +34,7 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Aşağıdaki sözdizimi örneği iç işaretçiye gösterir.
+Aşağıdaki sözdizimi örneği iç işaretçiyi gösterir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -45,32 +45,32 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 ### <a name="parameters"></a>Parametreler
 
 *cv_qualifier*<br/>
-**const** veya **geçici** niteleyicileri.
+**const** veya **volatile** niteleyicileri.
 
 *type*<br/>
-Türünü *Başlatıcı*.
+*Başlatıcı*türü.
 
 *var*<br/>
-Adını **interior_ptr** değişkeni.
+**İnterior_ptr** değişkeninin adı.
 
-*Başlatıcı*<br/>
-Bir başvuru türü, yönetilen bir diziyi veya yerel bir işaretçiye atayabilirsiniz herhangi bir nesne öğesi üyesi.
+*izer*<br/>
+Bir başvuru türünün üyesi, yönetilen bir dizinin öğesi ya da yerel bir işaretçiye atayabileceğiniz başka herhangi bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe, konum değiştikçe, sonuçları bir nesnenin örneklerini çöp toplayıcı yönetilen yığında izlemek yerel bir işaretçi kuramıyor. Doğru örneğine başvurmak bir işaretçi için çalışma zamanı konumlandırılmış yeni nesneye işaretçi güncelleştirmek gerekir.
+Yerel bir işaretçi, yönetilen yığında konum değişiklikleri olarak bir nesneyi takip edemeyebilir, bu da nesnenin çöp toplayıcı hareketli örneklerinin sonucunu elde etmez. Bir işaretçinin örneğe doğru bir şekilde başvurması için, çalışma zamanının işaretçiyi yeni konumlandırılmış nesneye güncelleştirmesi gerekir.
 
-Bir **interior_ptr** yerel bir işaretçi bir işlevselliğin temsil eder.  Bu nedenle, yerel bir işaretçiye atanabilir herhangi bir şey de atanabilir bir **interior_ptr**.  İç işaretçiye karşılaştırma ve işaretçi aritmetiğini dahil olmak üzere, yerel işaretçiler olarak aynı işlemleri kümesini gerçekleştirmek için izin verilir.
+**İnterior_ptr** , yerel işaretçinin işlevselliğinin bir üst kümesini temsil eder.  Bu nedenle, yerel bir işaretçiye atanabilecek her türlü şey bir **interior_ptr**da atanabilir.  İç işaretçiye karşılaştırma ve işaretçi aritmetiği dahil olmak üzere yerel işaretçilerle aynı işlem kümesi gerçekleştirmesine izin verilir.
 
-İç işaretçiye yalnızca yığında bildirilebilir.  İç işaretçiye bir sınıf üyesi olarak bildirilemez.
+İç işaretçi yalnızca yığında bildirilebilecek.  İç işaretçi bir sınıfın üyesi olarak bildirilemez.
 
-Yalnızca yığında iç işaretçiler mevcut olduğundan, iç işaretçiye adresinin alınmasına bir yönetilmeyen işaretçi verir.
+İç işaretçiler yalnızca yığında olduğundan, iç işaretçinin adresini almak yönetilmeyen bir işaretçi verir.
 
-**interior_ptr** örtük dönüştürmeleri vardır **bool**, veren kullanımını koşullu ifadeler için.
+**interior_ptr** , **bool**'a örtük dönüştürmeye sahiptir ve bu, Koşullu deyimlerde kullanılmasına olanak tanır.
 
-Atık toplanan yığında taşınamaz bir nesneye işaret eden bir işaretçiye bildirme hakkında daha fazla bilgi için bkz: [pin_ptr](pin-ptr-cpp-cli.md).
+Atık toplanmış yığında taşınamayan bir nesneye işaret eden iç işaretçiyi bildirme hakkında daha fazla bilgi için bkz. [pin_ptr](pin-ptr-cpp-cli.md).
 
-**interior_ptr** CLI ad alanındadır.  Bkz: [Platform, varsayılan ve cli ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.
+**interior_ptr** CLI ad alanıdır.  Daha fazla bilgi için bkz. [Platform, varsayılan ve CLI ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md) .
 
 İç işaretçiler hakkında daha fazla bilgi için bkz.
 
@@ -88,7 +88,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, bildirme ve bir başvuru türü iç işaretçiye kullanma işlemi gösterilmektedir.
+Aşağıdaki örnek, bir iç işaretçinin bir başvuru türü içinde nasıl bildirilemeyeceğini ve kullanılacağını göstermektedir.
 
 ```cpp
 // interior_ptr.cpp

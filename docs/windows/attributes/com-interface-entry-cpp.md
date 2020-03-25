@@ -1,21 +1,21 @@
 ---
-title: com_interface_entry (C++ COM özniteliği)
+title: com_interface_entry (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.com_interface_entry
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: 65d174679f851613e064568b071cfcbdad8f0f06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d7b378baedd3f8c2720c7ab17698e8b416304061
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148269"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168310"
 ---
-# <a name="cominterfaceentry-c"></a>com_interface_entry (C++)
+# <a name="com_interface_entry-c"></a>com_interface_entry (C++)
 
-COM eşlemesi hedef sınıfın arabirim giriş ekler.
+Hedef sınıfın COM eşlemesine bir arabirim girişi ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,15 +27,15 @@ COM eşlemesi hedef sınıfın arabirim giriş ekler.
 ### <a name="parameters"></a>Parametreler
 
 *com_interface_entry*<br/>
-Girişinin gerçek metni içeren bir dize. Olası değerler listesi için bkz. [COM_INTERFACE_ENTRY makroları](../../atl/reference/com-interface-entry-macros.md).
+Girişin gerçek metnini içeren bir dize. Olası değerler listesi için bkz. [COM_INTERFACE_ENTRY makroları](../../atl/reference/com-interface-entry-macros.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Com_interface_entry** C++ özniteliği hedef nesnenin COM arabirimi haritayı unabridged içeriğini bir karakter dizesi ekler. Öznitelik bir kez hedef nesneye uygulanırsa, giriş varolan bir arabirim eşlemesini başına içine eklenir. Öznitelik tekrar tekrar aynı hedef nesneye uygulanırsa, girişleri alındıkları sırayla arabirim eşlemesi başına eklenir.
+**Com_interface_entry** C++ özniteliği, bir karakter dizesinin bilinişsiz içeriğini hedef nesnenin com arabirim eşlemesine ekler. Öznitelik hedef nesneye bir kez uygulanırsa, giriş varolan arabirim eşlemesinin başlangıcına eklenir. Özniteliği aynı hedef nesneye tekrar tekrar uygulanırsa, girdiler alındıkları sırada arabirim eşlemesinin başına eklenir.
 
-Bu öznitelik gerektiren [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi_progid](vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` uygulanmışsa `vi_progid` ve `coclass` de uygulanır.
 
-Çünkü ilk kullanımını **com_interface_entry** arabirim eşlemesi başında eklenecek yeni arabirim neden şu COM_INTERFACE_ENTRY türlerden biri olmalıdır:
+**Com_interface_entry** ilk kullanımı yeni arabirimin arabirim eşlemesinin başına eklenmesine neden olduğundan, aşağıdaki COM_INTERFACE_ENTRY türlerinden biri olmalıdır:
 
 - COM_INTERFACE_ENTRY
 
@@ -45,9 +45,9 @@ Bu öznitelik gerektiren [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi
 
 - COM_INTERFACE_ENTRY2_IID
 
-İlave kullanımlar **com_interface_entry** özniteliği, desteklenen tüm COM_INTERFACE_ENTRY türleri kullanabilirsiniz.
+**Com_interface_entry** özniteliğin ek kullanımları desteklenen tüm COM_INTERFACE_ENTRY türlerini kullanabilir.
 
-ATL ilk giriş kimliği olarak arabirim eşlemesine kullandığından bu kısıtlama gereklidir `IUnknown`; bu nedenle, giriş geçerli bir arabirimi olmalıdır. Örneğin, aşağıdaki kod örneği arabirim eşlemesi ilk giriş gerçek bir COM arabirimi belirtmediğinden geçersiz.
+Bu kısıtlama gereklidir çünkü ATL, arabirim eşlemesindeki ilk girdiyi kimlik `IUnknown`olarak kullanıyor. Bu nedenle, giriş geçerli bir arabirim olmalıdır. Örneğin, arabirim eşlemesindeki ilk giriş gerçek bir COM arabirimi belirtmediğinden aşağıdaki kod örneği geçersizdir.
 
 ```cpp
 [ coclass, com_interface_entry =
@@ -60,7 +60,7 @@ ATL ilk giriş kimliği olarak arabirim eşlemesine kullandığından bu kısıt
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, iki girişe mevcut COM arabirimi haritaya ekler `CMyBaseClass`. İlk standart bir arabirimdir ve ikinci gizler `IDebugTest` arabirimi.
+Aşağıdaki kod, `CMyBaseClass`mevcut COM arabirimi eşlemesine iki giriş ekler. Birincisi standart bir arabirimdir ve ikincisi `IDebugTest` arabirimini gizler.
 
 ```cpp
 // cpp_attr_ref_com_interface_entry.cpp
@@ -90,7 +90,7 @@ class CMyClass: public IMyClass, public IDebugTest
 };
 ```
 
-Elde edilen COM Nesne eşleme için `CMyBaseClass` aşağıdaki gibidir:
+`CMyBaseClass` için elde edilen COM nesne eşlemesi aşağıdaki gibidir:
 
 ```cpp
 BEGIN_COM_MAP(CMyClass)
@@ -109,12 +109,12 @@ END_COM_MAP()
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
-|**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Tekrarlanabilir**|Yes|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

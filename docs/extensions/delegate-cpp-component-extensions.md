@@ -8,30 +8,30 @@ f1_keywords:
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-ms.openlocfilehash: 29bf305ed5e4845437b90ed672d1ab0c0de9ced6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 388ccb28c9311b4727199e6b7324771c24c2906d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374209"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172444"
 ---
 # <a name="delegate--ccli-and-ccx"></a>Temsilci (C++/CLI ve C++/CX)
 
-Bir işlev işaretçisi temsil eden bir tür bildirir.
+Bir işlev işaretçisini temsil eden bir tür bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-Windows çalışma zamanı ve ortak dil çalışma zamanı temsilcileri destekler.
+Hem Windows Çalışma Zamanı hem de ortak dil çalışma zamanı temsilcileri destekler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Temsilci** bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md).
+**temsilci** , bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md).
 
-Bir tür bir delegate ise derleme zamanında algılamak için kullanmak `__is_delegate()` türü niteliğine. Daha fazla bilgi için [tür özellikleri için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Tür bir temsilciyise, derleme zamanında algılamak için, nitelik türü `__is_delegate()` kullanın. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-C++/CX temsilciler aşağıdaki sözdizimini destekler.
+C++/CX, aşağıdaki söz dizimine sahip temsilcileri destekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -47,21 +47,21 @@ delegate-type-identifier
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*<br/>
-(isteğe bağlı) Olabilir temsilci erişilebilirliğini **genel** (varsayılan) veya **özel**. İşlev prototipi ile de nitelendirilmesi **const** veya **geçici** anahtar sözcükleri.
+*erişmesini*<br/>
+seçim Temsilcinin **erişilebilirliği (varsayılan** ) veya **özel**olabilir. İşlev prototipi de **const** veya **volatile** anahtar sözcükleriyle nitelenme olabilir.
 
 *dönüş türü*<br/>
-İşlev prototipi dönüş türü.
+İşlev prototipinin dönüş türü.
 
-*temsilci türü tanımlayıcısı*<br/>
-Bildirilen temsilci türünün adı.
+*temsilci türü tanımlayıcı*<br/>
+Belirtilen temsilci türünün adı.
 
 *parametreler*<br/>
-(İsteğe bağlı) Türleri ve işlev prototipi tanımlayıcıları.
+Seçim İşlev prototipinin türleri ve tanımlayıcıları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım *temsilci türü tanımlayıcısı* temsilci olarak aynı prototipe sahip bir olay bildirmek için. Daha fazla bilgi için [temsilciler (C++/CX)](../cppcx/delegates-c-cx.md).
+Temsilci ile aynı prototipi içeren bir olay bildirmek için *Delegate-Type-Identifier* kullanın. Daha fazla bilgi için bkz. [TemsilcilerC++(/CX)](../cppcx/delegates-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -69,7 +69,7 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Ortak dil çalışma zamanı, aşağıdaki sözdizimi ile temsilciler destekler.
+Ortak dil çalışma zamanı, aşağıdaki söz dizimine sahip temsilcileri destekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -81,41 +81,41 @@ function_declaration
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*<br/>
-(isteğe bağlı) Derlemenin dışında temsilci erişilebilirliğini genel veya özel olabilir.  Varsayılan büyük/küçük harf özeldir.  Bir sınıf içinde bir temsilci, herhangi bir erişilebilirlik sahip olabilir.
+*erişmesini*<br/>
+seçim Temsilcinin dışındaki temsilci erişilebilirliği herkese açık veya özel olabilir.  Varsayılan değer özeldir.  Bir sınıfın içinde, bir temsilcinin herhangi bir erişilebilirliği olabilir.
 
 *function_declaration*<br/>
-Temsilciye bağlanabilir işlev imzası. Bir temsilcinin dönüş türü, herhangi bir yönetilen türü olabilir. Birlikte çalışabilirlik nedeniyle, bir temsilcinin dönüş türü CLS türü olması önerilir.
+Temsilciye bağlanabilen işlevin imzası. Bir temsilcinin dönüş türü herhangi bir yönetilen tür olabilir. Birlikte çalışabilirlik nedenleriyle, bir temsilcinin dönüş türünün CLS türü olması önerilir.
 
-Bağlanmamış bir temsilci, ilk parametreyi tanımlamak için *function_declaration* türünde olmalıdır **bu** nesne işaretçisi.
+İlişkisiz bir temsilci tanımlamak için, *function_declaration* ilk parametresi nesnenin **Bu** işaretçisinin türü olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok noktaya yayın temsilcileri: "işlev işaretçisi" yönetilen bir sınıf içinde bir veya daha fazla yöntemlere bağlı olabilir. **Temsilci** anahtar sözcük belirli bir yöntem imzasını bir çok noktaya yayın temsilci türüyle tanımlar.
+Temsilciler çok noktaya yayın: "işlev işaretçisi" yönetilen bir sınıf içindeki bir veya daha fazla yönteme bağlanabilir. **Delegate** anahtar sözcüğü, belirli bir yöntem imzasıyla bir çok noktaya yayın temsilci türünü tanımlar.
 
-Bir temsilci için statik bir yöntemi gibi bir değer sınıfının bir yöntemi de bağlı olabilir.
+Bir temsilci, statik bir yöntem gibi bir değer sınıfının bir yöntemine de bağlanabilir.
 
-Bir temsilci, aşağıdaki özelliklere sahiptir:
+Bir temsilci aşağıdaki özelliklere sahiptir:
 
-- Devraldığı `System::MulticastDelegate`.
+- `System::MulticastDelegate`devralır.
 
-- İki bağımsız değişken alan bir oluşturucu vardır: yönetilen bir sınıf veya NULL (durumunda, bağlama için bir statik yöntem) ve tam yöntemi belirtilen türe ait bir işaretçi.
+- İki bağımsız değişken alan bir oluşturucuya sahiptir: yönetilen sınıfa veya NULL 'a (statik bir metoda bağlama durumunda) ve belirtilen türdeki tam bir yönteme yönelik bir işaretçi.
 
-- Adında bir yöntemi vardır `Invoke`, bildirilen metot temsilcisinin imzası imzası eşleşir.
+- İmzası, temsilcinin belirtilen imzasıyla eşleşen `Invoke`adlı bir yöntemi vardır.
 
-Temsilci çağrıldığında, işlevlere bağlı sırayla denir.
+Bir temsilci çağrıldığında, bu işlevin işlevleri eklendiği sırada çağırılır.
 
-Bir temsilcinin dönüş değeri, son eklenen üye işlevinin dönüş değeridir.
+Temsilcinin dönüş değeri, son ekli üye işlevinin dönüş değeridir.
 
 Temsilciler aşırı yüklenemez.
 
-Temsilciler bağlı veya kesildi.
+Temsilciler bağlanabilir veya ilişkisiz olabilir.
 
-İlişkili bir temsilci, ilk bağımsız değişkeni bir nesne başvurusu olmalıdır. Bir temsilci örneğini oluşturmada ikinci bağımsız değişkeni ya da adresi bir yönetilen sınıf nesnesi veya bir işaretçi bir yöntemin bir yönteme bir değer türü olması gerekir. Bir temsilci örneğini oluşturmada ikinci bağımsız değişkeni, tam sınıf kapsamı sözdizimi ile yöntem adı ve address-of işlecini uygulayın.
+Bir bağlantılı temsilciyi örneklediğinizde, ilk bağımsız değişken bir nesne başvurusu olacaktır. Bir temsilci örneklemesinin ikinci bağımsız değişkeni, yönetilen sınıf nesnesinin bir yönteminin adresi ya da bir değer türü yöntemine yönelik bir işaretçi olacaktır. Bir temsilci örneklemesinin ikinci bağımsız değişkeni, yöntemi tam sınıf kapsamı sözdizimiyle ve adres işlecini uygulayacak şekilde vermelidir.
 
-Bağlanmamış bir temsilci örneğini oluştururken, ilk bağımsız değişken ya da bir yöntem bir yönetilen sınıf nesnesi veya bir yönteme bir değer türünün işaretçisi adresi olmalıdır. Bağımsız değişken, tam sınıf kapsamı sözdizimi ile yöntem adı ve address-of işlecini uygulayın.
+İlişkisiz bir temsilciyi örneklediğinizde, ilk bağımsız değişken yönetilen sınıf nesnesinin bir yönteminin adresi ya da bir değer türü yöntemine yönelik bir işaretçi olacaktır. Bağımsız değişkeni, tam sınıf kapsamı söz dizimine sahip yöntemi vermelidir ve adres işlecini uygular.
 
-Statik veya genel bir işlev bir temsilciye oluştururken, yalnızca bir parametresi gerekli değildir: ' % s'işlevi (isteğe bağlı olarak, bir işlevin adresi).
+Statik veya genel işleve bir temsilci oluştururken, yalnızca bir parametre gereklidir: işlev (isteğe bağlı olarak, işlevin adresi).
 
 Temsilciler hakkında daha fazla bilgi için bkz.
 
@@ -129,7 +129,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, temsilciler çağırma bildirmek ve başlatmak gösterilmektedir.
+Aşağıdaki örnek, temsilcilerin nasıl bildirilemeyeceğini, başlatılacağını ve çağıralınacağını gösterir.
 
 ```cpp
 // mcppv2_delegate.cpp

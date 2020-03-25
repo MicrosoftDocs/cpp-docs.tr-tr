@@ -7,21 +7,21 @@ helpviewer_keywords:
 - CAN0065
 - CXX0065
 ms.assetid: aac68f87-0b90-4c19-afa6-1c587625a5fd
-ms.openlocfilehash: 7b62e42da2a74d910e2dc56ce2dfcb5cb38f2bfa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4120deec3c8e7ce14e381f782904cf83a588e43
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299328"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184430"
 ---
 # <a name="expression-evaluator-error-cxx0065"></a>İfade Değerlendirici Hatası CXX0065
 
-yığın çerçevesi değişkeni gerekiyor
+değişken, yığın çerçevesine ihtiyaç duyuyor
 
-Bir ifade geçerli kapsamda var, ancak henüz oluşturulmadıysa bir değişken içeriyor.
+Bir ifade, geçerli kapsam içinde bulunan ancak henüz oluşturulmamış bir değişken içeriyordu.
 
-Giriş işlevi ancak henüz yığın çerçevesinin işlev ayarlama içine girdiğiniz olduğunda veya işlevi için çıkış kodu içine girdiğiniz değilse bu hata oluşabilir.
+Bu hata, bir işlevin giriş sayfasına bir sözcük eklediğinizde ancak işlev için yığın çerçevesini ayarlamanıza veya işlev için çıkış koduna busaydıysanız oluşabilir.
 
-Yığın çerçevesini ifade değerlendirmeden önce ayarlandığını gösterdiğinde kadar giriş kodda adım adım.
+İfadeyi değerlendirmeden önce yığın çerçevesi ayarlanana kadar giriş kodunu adım adım yapın.
 
-Bu hata için CAN0065 aynıdır.
+Bu hata CAN0065 ile aynıdır.

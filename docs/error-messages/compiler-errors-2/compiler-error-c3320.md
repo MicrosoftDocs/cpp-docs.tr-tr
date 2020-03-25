@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3320
+title: Derleyici hatası C3320
 ms.date: 11/04/2016
 f1_keywords:
 - C3320
 helpviewer_keywords:
 - C3320
 ms.assetid: 2ef72d9a-1f1d-4b2e-b244-9fd3f3e70cb6
-ms.openlocfilehash: 622e7366dda4cd6693d9b6128855fa0966e07952
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0289d49ebbb0e30153beb6b0b2bc758bff5ef118
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222485"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201311"
 ---
-# <a name="compiler-error-c3320"></a>Derleyici Hatası C3320
+# <a name="compiler-error-c3320"></a>Derleyici hatası C3320
 
-'type': tür Modül 'name' özelliği aynı ada sahip olamaz
+' Type ': tür modül ' name ' özelliğiyle aynı ada sahip olamaz
 
-Geçirilen parametre olarak bir yapı, sınıf, enum veya birleşim olabilir, bir verilen kullanıcı tanımlı tür (UDT) aynı ada sahip olamaz [Modülü](../../windows/module-cpp.md) özniteliğin adı özelliği.
+Bir struct, Class, Enum veya Union olabilecek, verilen bir Kullanıcı tanımlı tür (UDT), [Modül](../../windows/module-cpp.md) özniteliğinin Name özelliğine geçirilen parametreyle aynı ada sahip olamaz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3320 oluşturur:
+Aşağıdaki örnek C3320 oluşturur:
 
 ```cpp
 // C3320.cpp

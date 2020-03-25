@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0029
 ms.assetid: f02c09c6-09f3-4d44-8cd4-9a25336be1ea
-ms.openlocfilehash: 1daac3435bc8f1b4bd4ed8462caf3b8eaa397e22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16a9e7dd31f3aa80cdb73f48c37215deca45113d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298042"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191957"
 ---
 # <a name="project-build-warning-prj0029"></a>Proje Derleme Uyarısı PRJ0029
 
-Proje düzeyindeki özel derleme adımı için 'Çıkışlar' özelliği ayarlanmadı. Özel derleme aşaması atlanacak.
+Proje düzeyi özel derleme adımının ' çıktılar ' özelliği ayarlanmadı. Özel derleme adımı atlanacak.
 
-Hiçbir çıkış belirtilmiş olduğundan, özel derleme adımı yürütülmedi.
+Bir çıkış belirtilmediğinden özel derleme adımı yürütülmedi.
 
-Bu hatayı gidermek için aşağıdakilerden birini yapın:
+Bu hatayı çözmek için aşağıdakilerden birini yapın:
 
-- Özel derleme adımı derlemeden hariç tutma.
+- Derlemeden özel yapı adımını hariç tutun.
 
-- Bir çıktı ekleyin.
+- Çıkış ekleyin.
 
-- Özel derleme adımının komut içeriğini silin.
+- Özel derleme adımının komutunun içeriğini silin.

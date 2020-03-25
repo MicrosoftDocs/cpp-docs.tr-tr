@@ -33,12 +33,12 @@ helpviewer_keywords:
 - crealf function
 - creall function
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
-ms.openlocfilehash: ebd52a23765177d74f2bff5660f806ee5c4a9573
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4dcdf60fee6d57b5561b72b477aa1a8bb31f35f4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942595"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171222"
 ---
 # <a name="creal-crealf-creall"></a>creal, crealf, creall
 
@@ -59,7 +59,7 @@ long double creal( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,15 +68,15 @@ Karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** veya **_lcomplex** değerlerini alan ve **float** ya da **Long Double** değerlerini döndüren **creal** 'ın aşırı yüklerini çağırabilirsiniz. C programında, **creal** her zaman **_dcomplex** değeri alır ve bir **Double** değeri döndürür.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** veya **_Lcomplex** değerlerini alan ve **float** veya **Long Double** değerlerini döndüren **creal** 'ın aşırı yüklerini çağırabilirsiniz. C programında, **creal** her zaman bir **_Dcomplex** değeri alır ve bir **Double** değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**creal**, **crealf**, **Creall**|\<karmaşık. h >|\<ccomplex >|
+|**creal**, **crealf**, **Creall**|\<Complex. h >|\<ccomplex >|
 
-**_Fcomplex**, **_Dcomplex**ve **_lcomplex** türleri, uygulanmayan yerel C99 türlerinin, sırasıyla **float _complex**, **Double _complex**ve **Long Double _complex**değerlerinin Microsoft 'a özgü eşdeğerlerine sahiptir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Fcomplex**, **_Dcomplex**ve **_Lcomplex** türler, uygulanmayan yerel C99 türlerinin (sırasıyla **float _Complex**, **çift _Complex**ve **uzun çift _Complex**) Microsoft 'a özgü eşdeğerlerine sahiptir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

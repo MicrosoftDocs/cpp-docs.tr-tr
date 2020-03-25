@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - M6205
 ms.assetid: fd28e7c9-a463-4a9c-a863-cc9e75315550
-ms.openlocfilehash: cdcaa714836f77d6238cc790457a5422cc825889
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eb9c646329a4db224b853bea91e69576bee04be6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393213"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173640"
 ---
 # <a name="math-error-m6205"></a>Matematik Hatası M6205
 
-'function': _TLOSS hata
+' function ': _TLOSS hatası
 
-Kaybedilmesi önemi (duyarlık) oluştu.
+Toplam anlam kaybı (duyarlık) oluştu.
 
-Bu hata, çok büyük bir sayı sinüs, işleneni vererek cos neden olabilir veya 0 ile 2 arasında bir sayı işlenen düşürülmesi gerekir çünkü tan * pi.
+Bu hata, işlenenin 0 ile 2 * pi arasında bir sayıya düşürülmesi gerektiğinden sin, cos veya tan işleneni olarak çok büyük bir sayı verilmesi nedeniyle olabilir.

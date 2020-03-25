@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CXX0063
 - CAN0063
 ms.assetid: 2e131b7a-9c8f-4aa1-acac-8d87f602c24c
-ms.openlocfilehash: 24dee4f6a98f7216fb76bb3b35e9feb5c5eeccba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 53df00014bf6c864f6b0848a1c32fd9128293734
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299419"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184482"
 ---
 # <a name="expression-evaluator-error-cxx0063"></a>İfade Değerlendirici Hatası CXX0063
 
-Aşırı yüklenmiş operator -> desteklenen
+aşırı yüklenmiş işleç-> desteklenmiyor
 
-İfade kullanılan bir sınıfı aşırı yüklenmiş üye erişimi işleci (**->**).
+İfade, aşırı yüklenmiş bir sınıf üye erişim işleci ( **->** ) kullandı.
 
-Bu hata için CAN0063 aynıdır.
+Bu hata CAN0063 ile aynıdır.

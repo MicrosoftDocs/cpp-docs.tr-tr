@@ -9,20 +9,20 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - subscript operator
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
-ms.openlocfilehash: 376cacc3f70995c271a29b741ad266049da45785
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8974f6619af462050fc8a02798fe44007ea928e4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330558"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160898"
 ---
 # <a name="subscripting"></a>Alt Simge Oluşturma
 
-Alt simge işleci (**[]**) gibi işlev çağrısı işleci, ikili işleç olarak kabul edilir. Alt simge işleci, tek bir bağımsız değişken alan bir statik olmayan üye işlev olmalıdır. Bu bağımsız değişken, herhangi bir türde olabilir ve istenen bir dizi alt simge belirtir.
+İşlev çağrısı işleci gibi alt simge işleci ( **[]** ) bir ikili işleç olarak kabul edilir. Alt simge işleci, tek bir bağımsız değişken alan, statik olmayan bir üye işlevi olmalıdır. Bu bağımsız değişken herhangi bir türde olabilir ve istenen dizi alt indisi belirler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir vektör türü oluşturmak gösterilmiştir **int** sınır denetimi uygular:
+Aşağıdaki örnek, sınır denetimi uygulayan **int** türünde bir Vector öğesinin nasıl oluşturulacağını gösterir:
 
 ```cpp
 // subscripting.cpp
@@ -89,11 +89,11 @@ Array bounds violation.
 Element: [10] = 10
 ```
 
-## <a name="comments"></a>Açıklamalar
+## <a name="comments"></a>Yorumlar
 
-Zaman `i` önceki program 10 ulaştığında **operator []** işlemleri indis kullanılıyor ve bir hata iletisi sorunları algılar.
+`i` önceki programda 10 ' a ulaştığında, **operator []** sınırların dışı bir alt simge kullanıldığını algılar ve bir hata mesajı yayınlar.
 
-Unutmayın işlevi **operator []** bir başvuru türü döndürür. Bu da simgeli ifade atama işleçleri her iki tarafında kullanmanıza olanak sağlayan lvalue, olmasını neden olur.
+**[] İşlev işlecinin** bir başvuru türü döndürdüğünü unutmayın. Bu, bir l değeri olmasına neden olur ve bu da atama işleçlerinin her tarafında alt simge olarak kullanılan ifadeleri kullanmanıza olanak sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4440
 ms.assetid: 78b9642a-a93e-401e-9d92-372f6451bc5d
-ms.openlocfilehash: a2d4bf160cbbabacc1dc3d747a8e4ddb37c6ad46
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: dbb10a83e619af04334af268381b2286b037257a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73966035"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186783"
 ---
 # <a name="compiler-warning-level-1-c4440"></a>Derleyici Uyarısı (düzey 1) C4440
 

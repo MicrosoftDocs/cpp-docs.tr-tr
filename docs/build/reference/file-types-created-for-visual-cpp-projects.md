@@ -14,12 +14,12 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 078c83a9c95c1b143af2037240d5cc0a16211827
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 27e15f8dec693c6b7e70f3e03f274dcbc4f04677
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492879"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169025"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio C++ projeleri için oluşturulan dosya türleri
 
@@ -49,17 +49,17 @@ Aşağıdaki tabloda bir Visual Studio projesindeki ortak dosyalar gösterilmekt
 
 |Dosya Uzantısı|Tür|İçindekiler|
 |--------------------|----------|--------------|
-|.asmx|Source|Dağıtım dosyası.|
-|.asp|Source|Active Server sayfa dosyası.|
+|.asmx|Kaynak|Dağıtım dosyası.|
+|.asp|Kaynak|Active Server sayfa dosyası.|
 |. ATP|Project|Uygulama şablonu proje dosyası.|
 |. bmp,. dib,. gif,. jpg,. jpe,. png|Kaynak|Genel resim dosyaları.|
 |. bsc|Derlen|Tarayıcı kodu dosyası.|
-|. cpp,. c|Source|Uygulamanız için ana kaynak kodu dosyaları.|
+|. cpp,. c|Kaynak|Uygulamanız için ana kaynak kodu dosyaları.|
 |. cur|Kaynak|İmleç bit eşlem grafik dosyası.|
 |. DBP|Project|Veritabanı proje dosyası.|
-|. disco|Source|Dinamik bulgu belge dosyası. XML Web hizmeti bulmayı işler.|
+|. disco|Kaynak|Dinamik bulgu belge dosyası. XML Web hizmeti bulmayı işler.|
 |. exe,. dll|Project|Yürütülebilir veya dinamik bağlantı kitaplığı dosyaları.|
-|. h|Source|Üst bilgi (dahil) dosyası.|
+|. h|Kaynak|Üst bilgi (dahil) dosyası.|
 |. htm,. html,. XSP,. asp,. HTC,. hta,. xml|Kaynak|Ortak Web dosyaları.|
 |. HxC|Project|Yardım proje dosyası.|
 |. ico|Kaynak|Simge bit eşlem grafik dosyası.|

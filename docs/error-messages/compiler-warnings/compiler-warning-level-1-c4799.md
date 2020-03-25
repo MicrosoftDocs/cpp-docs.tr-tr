@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - C4799
 ms.assetid: 8ecbd06f-c778-4371-a2fb-c690b6743ec8
-ms.openlocfilehash: 475451b47d461e7ea1428eb715a876fb023694d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec92da425718cd5ddc579d1d733a0bc4e56dc04a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152222"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175109"
 ---
 # <a name="compiler-warning-level-1-c4799"></a>Derleyici Uyarısı (düzey 1) C4799
 
-> Hiçbir EMMS işlevi sonunda '*işlevi*'
+> '*Function*' işlevinin sonunda EMMS yok
 
-İşlevi en az bir MMX yönerge, ancak sahip olmadığı bir `EMMS` yönergesi. Bir multimedya yönergesi kullanıldığında, bir `EMMS` yönerge veya `_mm_empty` iç ayrıca MMX kod sonunda multimedya etiketi word temizlemek için kullanılmalıdır.
+İşlevde en az bir MMX yönergesi var, ancak bir `EMMS` yönergesi yok. Bir multimedya yönergesi kullanıldığında, MMX kodunun sonundaki çoklu ortam etiketi sözcüğünü temizlemek için bir `EMMS` yönergesi veya `_mm_empty` iç sürümü de kullanılmalıdır.
 
-Kodu düzgün kullanmaz belirten ivec.h, kullanarak yürütme, dönmeden önce EMMS yönergesi C4799 alabilirsiniz. Bu, bu üst bilgileri için yanlış bir uyarıdır. Bunlar içinde ivec.h _SILENCE_IVEC_C4799 tanımlayarak dışı. Ancak, bu da derleyici bu tür doğru uyarı vermesini tutacağını unutmayın.
+İvec. h kullanırken, kodun döndürmeden önce EMMS yönergesini doğru şekilde yürütümeyeceğini belirten C4799 alabilirsiniz. Bu üst bilgiler için bu yanlış bir uyarıdır. Bunu, IVEC. h içinde _SILENCE_IVEC_C4799 tanımlayarak kapatabilirsiniz. Bununla birlikte, derleyicinin bu türden doğru uyarıları vermekten de haberdar olacağını unutmayın.
 
-İlgili bilgiler için bkz. [Intel'in MMX yönerge kümesi](../../assembler/inline/intel-s-mmx-instruction-set.md).
+İlgili bilgiler için bkz. [Intel 'ın MMX yönerge kümesi](../../assembler/inline/intel-s-mmx-instruction-set.md).

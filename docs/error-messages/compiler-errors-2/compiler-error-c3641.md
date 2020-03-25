@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3641
+title: Derleyici hatası C3641
 ms.date: 11/04/2016
 f1_keywords:
 - C3641
 helpviewer_keywords:
 - C3641
 ms.assetid: e8d3613e-5e8d-46fe-a516-eb7d1de7cd21
-ms.openlocfilehash: f6c27067e4f07c89b4226cf4d26adf2afb0b07ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44356fb1a1818a02102d23e6b308457f2f39506b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385660"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200518"
 ---
-# <a name="compiler-error-c3641"></a>Derleyici Hatası C3641
+# <a name="compiler-error-c3641"></a>Derleyici hatası C3641
 
-> '*işlevi*': işlev/CLR ile derlenmiş 'calling_convention' çağırma kuralını geçersiz: pure veya/CLR: safe
+> '*Function*':/clr: pure veya/clr: Safe ile derlenen işlev için geçersiz çağrı kuralı ' calling_convention '
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-Yalnızca [__clrcall](../../cpp/clrcall.md) çağırma kuralı ile verilir [/CLR: pure](../../build/reference/clr-common-language-runtime-compilation.md).
+[/Clr: Pure](../../build/reference/clr-common-language-runtime-compilation.md)ile yalnızca [__clrcall](../../cpp/clrcall.md) çağırma kuralına izin verilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3641 oluşturur:
+Aşağıdaki örnek C3641 oluşturur:
 
 ```cpp
 // C3641.cpp

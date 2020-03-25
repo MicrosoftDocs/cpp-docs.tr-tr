@@ -1,72 +1,72 @@
 ---
-title: İmzayı Değiştir
+title: Imzayı Değiştir
 ms.date: 11/16/2016
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
-ms.openlocfilehash: ec42fd00ecf48fb700042f02543e3fe194fe6975
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1599a7900e33db61994ea75581f9d87b1aee83f9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265258"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171911"
 ---
-# <a name="change-signature"></a>İmzayı Değiştir
+# <a name="change-signature"></a>Imzayı Değiştir
 
-**Ne:** Bir işlevin parametreleri değiştirmenize olanak tanır.
+**Ne:** Bir işlevin parametrelerini değiştirmenize izin verir.
 
-**ne zaman:** Yeniden düzenlemek, eklemek, kaldırmak veya çeşitli konumlarda kullanılmakta olan bir işlevin parametreleri değiştirmek istiyorsunuz.
+**Ne zaman:** Çeşitli konumlarda kullanılmakta olan bir işlevin parametrelerini yeniden sıralamak, eklemek, kaldırmak veya değiştirmek isteyebilirsiniz.
 
-**Neden:** El ile kendiniz, bu parametreleri değiştirmek ve daha sonra bu işleve yapılan tüm çağrılar bulun ve bunları tek tek değiştirmek, ancak hatalarına neden.  Bu yeniden düzenleme aracı görevi otomatik olarak gerçekleştirir.
+**Neden:** Bu parametreleri kendiniz el ile değiştirebilir ve sonra bu işleve yapılan tüm çağrıları bulabilir ve bunları tek tek değiştirebilir ancak bu hatalara neden olabilir.  Bu yeniden düzenleme aracı görevi otomatik olarak gerçekleştirir.
 
-**Nasıl:**
+**Oluşturulacağı**
 
-1. Adı değiştirmek için yöntemi veya kendi kullanımlarından metin veya fare imleci yerleştirin:
+1. Metin veya fare imlecini değiştirmek için yöntemin adının içine veya kullanımlarından birine yerleştirin:
 
-   ![Vurgulanmış kodu](images/changesignature_highlight.png)
+   ![Vurgulanan kod](images/changesignature_highlight.png)
 
 1. Ardından, aşağıdakilerden birini yapın:
-   * **Klavye**
-     * Tuşuna **Ctrl + R**, ardından **Ctrl + O**.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
-     * Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **değişiklik imzası** bağlam menüsünden.
-   * **Fare**
-     * Seçin **Düzenle > Yeniden Düzenle > parametreleri yeniden Sırala**.
-     * Kod sağ tıklayın, **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **değişiklik imzası** bağlam menüsünden.
+   * **Klavyenizdeki**
+     * **CTRL + R**, ardından **CTRL + O**tuşlarına basın.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
+     * **CTRL +** tuşlarına basın. **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü tetiklemek ve bağlam menüsünden **imzayı Değiştir** ' i seçin.
+   * **Tığında**
+     * **Düzenle > yeniden düzenleme > parametreleri yeniden**düzenleyin ' i seçin.
+     * Koda sağ tıklayın, **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü seçin ve bağlam menüsünde **imzayı Değiştir** ' i seçin.
 
-1. İçinde **değişiklik imzası** , açılan iletişim yöntem imzası değiştirmek için sağ tarafındaki düğmeleri kullanabilirsiniz:
+1. Açılan **Imza Değiştir** iletişim kutusunda, yöntem imzasını değiştirmek için sağ taraftaki düğmeleri kullanabilirsiniz:
 
    ![Değişiklik imzası iletişim](images/changesignature_dialog.png)
 
    | Düğme | Açıklama
    | ------ | ---
-   | **Yukarı/Aşağı**    | Seçili parametreyi listede yukarı ve Aşağı Taşı
-   | **Add**        | Listeye yeni bir parametre ekleyin
+   | **Yukarı/aşağı**    | Seçili parametreyi listede yukarı ve Aşağı Taşı
+   | **Add**        | Listeye yeni bir parametre Ekle
    | **Kaldır**     | Seçili parametreyi listeden kaldırın
-   | **Değiştirme**     | Seçili parametre türünü değiştirerek değiştirme ad ve isteğe bağlıdır ve eklenen değeri olması
-   | **Geri Al**     | Seçili parametreyi özgün durumuna geri yükleme
-   | **Tümünü Geri Al** | Tüm parametreler için özgün durumuna geri yükleme
+   | **Değiştirebilirler**     | Seçilen parametreyi türünü, adını ve isteğe bağlı olup olmadığını ve eklenen değerin ne olacağını değiştirin
+   | **Döndürülemiyor**     | Seçilen parametreyi özgün durumuna geri yükle
+   | **Tümünü dön** | Tüm parametreleri özgün durumlarına geri yükle
 
    > [!TIP]
-   > Kullanım **Atla Önizleme başvuru değişiklikleri tüm başvurular onaylanırsa** ilk pencerelerinin Önizleme penceresini olmadan hemen değişiklikleri yapmak için onay kutusu.
+   > Önizleme penceresi ilk kez kullanıma açmadan değişiklikleri hemen yapmak için **tüm başvurular onaylanırsa, önizleme başvurusunu atla** onay kutusunu kullanın.
 
-   Ekliyor veya değiştiriyorsanız bir parametre, göreceğiniz **parametresi Ekle** veya **Düzenle parametresi** penceresi.
+   Bir parametre eklerken veya değiştirirken parametre **Ekle** veya **parametreyi Düzenle** penceresi görüntülenir.
 
    ![Parametre Ekle/Değiştir](images/changesignature_addmodify.png)
 
-   Burada, aşağıdakileri yapabilirsiniz:
+   Burada, şunları yapabilirsiniz:
 
-   | Giriş | Açıklama
+   | Girdi | Açıklama
    | ----- | ---
-   | **Tür**               | Parametre türü (int, çift, float, vs.)
+   | **Tür**               | Parametrenin türü (int, Double, float, vb.)
    | **Ad**               | Parametrenin adı
-   | **İsteğe bağlı parametre** | İsteğe bağlı olarak belirtilen parametre sağlar
-   | **Eklenen değer**     | Burada parametre belirtilmediyse işlev çağrıları eklenen değer (yalnızca geçerli **Ekle**)
-   | **Varsayılan değer**      | Arayan bir belirtmiyorsa işlev tarafından kullanılan değer (yalnızca geçerli **isteğe bağlı parametreler**)
+   | **İsteğe bağlı parametre** | İsteğe bağlı olarak belirtilen parametreyi yapar
+   | **Eklenen değer**     | Parametrenin belirtilmediği, işleve yapılan herhangi bir çağrıya yerleştirilen değer (yalnızca **ekleme**için geçerlidir)
+   | **Varsayılan değer**      | Çağıran bir tane belirtmezse işlev tarafından kullanılan değer (yalnızca **Isteğe bağlı parametreler**için geçerlidir)
 
-1. Kullanım **arama kapsamı** değişiklikleri proje veya çözümün tamamını için geçerli olacaksa, seçmek için açılır.
+1. Değişikliklerin projeye mi yoksa tüm çözüme mı uygulanacağını seçmek için **arama kapsamı** açılan öğesini kullanın.
 
-1. İşlemi tamamladığınızda, basın **Tamam** değişiklik yapmak için düğme.  İstediğiniz değişiklikleri yapılan uygun şekilde emin olun.  Onay kutularını penceresinin üst yarısında etkinleştirmek veya devre dışı herhangi bir öğesinin yeniden adlandırılması için kullanın.
+1. İşiniz bittiğinde, değişiklikleri yapmak için **Tamam** düğmesine basın.  İstediğiniz değişikliklerin uygun şekilde yapıldığından emin olun.  Herhangi bir öğenin yeniden adlandırılmasını etkinleştirmek veya devre dışı bırakmak için pencerenin üst yarısında bulunan onay kutularını kullanın.
 
-   ![Değişiklik imzası Önizleme](images/changesignature_preview.png)
+   ![Imza önizlemesini Değiştir](images/changesignature_preview.png)
 
-1. Her şey iyi görünüyor, tıklayın **Uygula** düğmesi ve işlev, kaynak kodunuzu değiştirilir.
+1. Her şey iyi göründüğünde **Uygula** düğmesine tıklayın ve işlev kaynak kodunuzda değiştirilir.
 
-   ![Değişiklik imzası sonucu](images/changesignature_result.png)
+   ![Imza sonucunu Değiştir](images/changesignature_result.png)

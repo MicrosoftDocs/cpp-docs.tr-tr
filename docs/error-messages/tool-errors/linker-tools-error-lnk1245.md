@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1245
 ms.assetid: 179c8165-ffbb-44cd-9f24-5250f29577cc
-ms.openlocfilehash: 4cf9a6c4356872b727a10a360396e51e38928b29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19e3f820b5bd7fdd8eac2f7b5a96fb5923ae0b92
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160568"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183806"
 ---
 # <a name="linker-tools-error-lnk1245"></a>Bağlayıcı Araçları Hatası LNK1245
 
-Geçersiz 'alt sistem belirtilmedi;' alt sistemi / SUBSYSTEM WINDOWS, WINDOWSCE veya KONSOL olmalıdır
+geçersiz ' alt sistem ' alt sistemi belirtildi; /SUBSYSTEM WINDOWS, WINDOWSCE veya CONSOLE olmalıdır
 
-[/ CLR](../../build/reference/clr-common-language-runtime-compilation.md) nesne derlemek için kullanılan ve aşağıdaki koşullar doğru:
+[/clr](../../build/reference/clr-common-language-runtime-compilation.md) nesnesini derlemek için kullanıldı ve şu koşullardan biri doğru:
 
-- Özel giriş noktası tanımlanmış ([/Entry](../../build/reference/entry-entry-point-symbol.md)), yani bir subsystem bağlayıcı çıkarılamadı.
+- Özel bir giriş noktası tanımlandı ([/Entry](../../build/reference/entry-entry-point-symbol.md)), bu şekilde bağlayıcı bir alt sistemi çıkarmıyor.
 
-- Bir değer geçildi [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneği, / CLR nesneler için geçerli değil.
+- [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneğine/clr nesneleri için geçerli olmayan bir değer geçirildi.
 
-Her iki durum için çözüm/Subsystem bağlayıcı seçeneği için geçerli bir değer belirtmek içindir.
+Her iki durumda da çözüm,/SUBSYSTEM bağlayıcı seçeneğinde geçerli bir değer belirtmektir.

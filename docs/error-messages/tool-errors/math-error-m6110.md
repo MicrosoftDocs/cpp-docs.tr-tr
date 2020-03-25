@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - M6110
 ms.assetid: aac9ae37-6a6d-46e9-85d4-dfe03f1c3e11
-ms.openlocfilehash: d56326c0daa326ef832eb81024850d6ef06f5649
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7302ce1d8b715dfcceb638958fef4c6db8af375e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393265"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173718"
 ---
 # <a name="math-error-m6110"></a>Matematik Hatası M6110
 
 yığın taşması
 
-Bir kayan nokta ifadesi, bir kayan nokta yığın taşmasına neden oldu.
+Kayan nokta ifadesi kayan nokta yığınında taşma hatasına neden oldu.
 
-Yığın taşması kayan nokta özel durumlarını yedi düzey sekiz düzeyleri genellikle 8087/287/387 işlemcisi tarafından desteklenen ek olarak bir sınıra kadar yakalanır.
+Yığın taşması kayan nokta özel durumları, genellikle 8087/287/387 Coprocessor tarafından desteklenen sekiz düzeyin yanı sıra yedi düzeyli bir sınıra kadar bindirmelidir.
 
-Program çıkış kodu ile 138 sonlandırır.
+Program 138 çıkış koduyla sona eriyor.

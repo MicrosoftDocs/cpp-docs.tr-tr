@@ -12,12 +12,12 @@ helpviewer_keywords:
 - __fortran keyword [C++]
 - calling conventions, obsolete
 ms.assetid: a91fc665-034a-48ce-b6bd-d27125f308a7
-ms.openlocfilehash: 7f059afe02cbbad77920fd8c4a0e6cb7c958e992
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 156482a395c7dfc8711e273141a09a37ea3e135d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857365"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188564"
 ---
 # <a name="obsolete-calling-conventions"></a>Kullanılmayan Çağırma Kuralları
 

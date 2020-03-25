@@ -35,16 +35,16 @@ f1_keywords:
 - VC.Project.IVCWebSvcDebugPageObject.HttpUrl
 - VC.Project.IVCWebSvcDebugPageObject.DebuggerType
 - VC.Project.IVCWebSvcDebugPageObject.SQLDebugging
-ms.openlocfilehash: 5f7a7bc0e2c696365daa38696fde6f1a480644b4
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: c2190c4406e165cfec1915234b688c598f228777
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927730"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169714"
 ---
 # <a name="c-debugging-property-pages"></a>C++Özellik sayfalarında hata ayıklama
 
-Bu özellik sayfaları **Proje** > **özellikleri** > **yapılandırma özellikleri** > **hata ayıklama**altında bulunur. Açılan denetimde hata ayıklayıcı türünü seçin. Hata ayıklama C++ kodu hakkında daha fazla bilgi için [bkz. Öğretici: Visual Studio](/visualstudio/debugger/getting-started-with-the-debugger-cpp) kullanarak C++ kodun hata [ayıklamasını ve yerel kod hatalarını ayıklamayı](/visualstudio/debugger/debugging-native-code)öğrenin.
+Bu özellik sayfaları, **hata ayıklama** > **yapılandırma özellikleri** > **Proje** > **özellikleri** altında bulunur. Açılan denetimde hata ayıklayıcı türünü seçin. Hata ayıklama C++ kodu hakkında daha fazla bilgi için bkz. [öğretici: Visual C++ Studio kullanarak kod hata ayıklamayı öğrenin](/visualstudio/debugger/getting-started-with-the-debugger-cpp) ve [yerel kod hatalarını](/visualstudio/debugger/debugging-native-code)ayıklayın.
 
 ## <a name="local-windows-debugger-property-page"></a>Yerel Windows hata ayıklayıcısı Özellik sayfası
 
@@ -56,7 +56,7 @@ Yürütülecek hata ayıklama komutu.
 
 Uygulamaya geçirilecek komut satırı bağımsız değişkenleri.
 
-### <a name="working-directory"></a>Çalışma dizini
+### <a name="working-directory"></a>Çalışma Dizini
 
 Uygulamanın çalışma dizini. Varsayılan olarak, proje dosyasını içeren dizin.
 
@@ -118,7 +118,7 @@ Yürütülecek hata ayıklama komutu.
 
 Uygulamaya geçirilecek komut satırı bağımsız değişkenleri.
 
-### <a name="working-directory"></a>Çalışma dizini
+### <a name="working-directory"></a>Çalışma Dizini
 
 Uygulamanın çalışma dizini. Varsayılan olarak, proje dosyasını içeren dizin.
 

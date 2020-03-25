@@ -5,31 +5,31 @@ f1_keywords:
 - LNK1318
 helpviewer_keywords:
 - LNK1318
-ms.openlocfilehash: 8ed6489a27d4c0e117f7f18281ff188f40936e0a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a61c11a9cbb25fea6fddc0bf1c5c4c2a7af1cf4f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160997"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183585"
 ---
 # <a name="linker-tools-error-lnk1318"></a>Bağlayıcı Araçları Hatası LNK1318
 
-> Beklenmeyen PDB hatası; *neden* '*ayrıntıları*'
+> Beklenmeyen PDB hatası; *neden* '*Ayrıntılar*'
 
-Bağlayıcı açarken, okuma veya bir PDB dosyasına yazılırken beklenmeyen bir hatayla karşılaştı.
+Bağlayıcı, bir PDB dosyasını açarken, okurken veya yazarken beklenmeyen bir hatayla karşılaştı.
 
-Bu hata iletisi, PDB dosyalarında genel olmayan sorunlar için oluşturulur. *Neden* ve *ayrıntıları* hatanın oluştuğu andaki kullanılabilir bilgi bağlayıcıya temsil eder. Bu ayrı, daha açıklayıcı hata iletileri PDB dosyaları uğraşmanızı olduğunda genel hata olarak çok yararlı olmayabilir.
+Bu hata iletisi PDB dosyalarındaki yaygın olmayan sorunlar için oluşturulur. *Nedeni* ve *ayrıntıları* , hata oluştuğunda bağlayıcının kullanabildiği bilgileri temsil eder. Bu çok yararlı olmayabilir, çünkü PDB dosyalarıyla ilgilenirken sık karşılaşılan hatalar ayrı, daha bilgilendirici hata iletileri vardır.
 
-Hatanın kaynağını seyrek olduğundan yalnızca genel öneriler bu sorunu çözümlemek için kullanılabilir:
+Hatanın kaynağı seyrek olduğundan, bu sorunu çözmek için yalnızca genel öneri mevcuttur:
 
-- Derleme dizinlerinizde temizleme işlemi gerçekleştirin ve sonra çözümünüzün tam bir derleme yapın.
+- Yapı dizinlerinizde temiz bir işlem gerçekleştirin ve ardından çözümünüzün tam bir derlemesini yapın.
 
-- Bilgisayarınızı yeniden başlatmanız veya gereksiz veya askıda mspdbsrv.exe işlemleri için denetleyin ve bunları Görev Yöneticisi ' sonlandırılır.
+- Bilgisayarınızı yeniden başlatın veya başıya veya askıda bir mspdbsrv. exe işlemini denetleyip TaskManager 'da sonlandırın.
 
-- Proje dizinlerinizi virüsten koruma denetimlerini devre dışı bırakın.
+- Proje dizinlerinizde virüsten koruma denetimlerini devre dışı bırakın.
 
-- Kullanım [/Zf](../../build/reference/zf.md) kullanıyorsanız derleyici seçeneği [/MP](../../build/reference/mp-build-with-multiple-processes.md) MSBuild veya başka bir paralel derleme işlemi.
+- MSBuild ile [/MP](../../build/reference/mp-build-with-multiple-processes.md) ya da başka bir paralel yapı işlemi kullanıyorsanız [/ZF](../../build/reference/zf.md) derleyici seçeneğini kullanın.
 
-- Yapı, 64 bitlik barındırılan araç takımını kullanarak deneyin.
+- 64 bitlik barındırılan araç takımını kullanarak oluşturmayı deneyin.
 
-- Gerekirse paralel bağlantı sorunlarını gidermek için bağlama serileştirir. Mspdbsrv.exe bağlantı bir örneği tarafından başlatılır ve başka bir örneğinin bağlantı yapılmadan önce kapatıldığında bu hataya neden olabilir, kullanarak. Bu düzeltme dezavantajı, proje derlemelerinizi tamamlanması oldukça uzun sürebilir ' dir.
+- Gerektiğinde paralel bağlantı sorunlarını azaltmak için bağlamayı serileştirme. Bu hata, mspdbsrv. exe ' nin bir bağlantı örneği tarafından başlatılmasının ve başka bir bağlantı örneği kullanılarak yapılmasından önce kapatılmasından kaynaklanabilir. Bu düzeltmeyle ilgili dezavantajı, proje derlemelerinizin tamamlanması önemli ölçüde uzun sürebilir.

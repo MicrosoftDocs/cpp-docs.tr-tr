@@ -6,12 +6,12 @@ helpviewer_keywords:
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-ms.openlocfilehash: c51a5ea5aaabb27babb9e4cd355721742088d31e
-ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
+ms.openlocfilehash: 41ad348b7109451f519c44f685cea0a271f71925
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998903"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80161016"
 ---
 # <a name="standard-conversions"></a>Standart dönüşümler
 
@@ -189,7 +189,7 @@ Bir sınıfa yönelik işaretçinin, temel sınıfa olan işaretçiye dönüşt�
 
 Temel bir sınıfa erişilebilir olup olmadığı, türetmede kullanılan devralmanın türüne bağlıdır. Aşağıdaki şekilde gösterilen devralmayı göz önünde bulundurun.
 
-![Temel sınıf erişilebilirliğini gösteren&#45;](../cpp/media/vc38xa1.gif "&#45;") temel sınıf erişilebilirlik devralma grafiğini gösteren devralma grafiği <br/>
+![Temel&#45;sınıf erişilebilirliğini gösteren devralma grafiği](../cpp/media/vc38xa1.gif "Temel&#45;sınıf erişilebilirliğini gösteren devralma grafiği") <br/>
 Temel sınıf erişilebilirliği çizimi için devralma grafiği
 
 Aşağıdaki tabloda, şekilde gösterildiği durumlar için temel sınıf erişilebilirliği gösterilmektedir.
@@ -198,13 +198,13 @@ Aşağıdaki tabloda, şekilde gösterildiği durumlar için temel sınıf eriş
 |----------------------|----------------|-------------------------------------------|
 |Dış (sınıf kapsamlı değil) işlevi|Özel|Hayır|
 ||Korumalı|Hayır|
-||Genel|Evet|
-|B üye işlevi (B kapsamında)|Özel|Evet|
-||Korumalı|Evet|
-||Genel|Evet|
+||Genel|Yes|
+|B üye işlevi (B kapsamında)|Özel|Yes|
+||Korumalı|Yes|
+||Genel|Yes|
 |C üye işlevi (C kapsamında)|Özel|Hayır|
-||Korumalı|Evet|
-||Genel|Evet|
+||Korumalı|Yes|
+||Genel|Yes|
 
 Bir sınıfa yönelik işaretçinin bir taban sınıfına bir işaretçiye dönüştürülebileceği ikinci durum, açık bir tür dönüştürmesi kullandığınız durumdur. Açık tür dönüştürmeleri hakkında daha fazla bilgi için bkz. [Açık tür dönüştürme işleci](explicit-type-conversion-operator-parens.md).
 

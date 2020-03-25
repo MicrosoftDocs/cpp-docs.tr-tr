@@ -7,18 +7,18 @@ helpviewer_keywords:
 - assembler [C++], writing functions
 - __asm keyword [C++], in functions
 ms.assetid: b5df8a04-fdc7-4622-8c9e-e4b618927497
-ms.openlocfilehash: 7848a8f071f50f8d809a999a96a9c0f8193c480e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5416a29477651c496d83e6ee215a2cb88ba26e3b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166860"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169064"
 ---
 # <a name="writing-functions-with-inline-assembly"></a>Satır İçi Derlemeyle İşlevler Yazma
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir işlevi satır içi derleme kodu yazarsanız, işleve bağımsız değişkenleri geçirmek ve bir değer döndürürler daha kolaydır. Aşağıdaki örnekler için ayrı bir derleyici önce yazılmış ve satır içi assembler için sonra yeniden yazan bir işlev karşılaştırın. Çağrılan işlev `power2`, ikinci parametresinin değerini 2 olarak ilk parametre çarparak, iki parametre alır. Ayrı bir derleyici için yazılan, işlev şuna benzeyebilir:
+Satır içi derleme kodu içeren bir işlev yazarsanız, bağımsız değişkenleri işleve geçirmek ve bundan bir değer döndürmek kolaydır. Aşağıdaki örneklerde, ilk olarak ayrı bir birleştirici için yazılan bir işlev karşılaştırılmaktadır ve sonra satır içi assembler için yeniden yazılır. `power2`adlı işlev iki parametre alır, ilk parametreyi 2 ile ikinci parametrenin gücünden çarpar. Ayrı bir birleştirici için yazılan işlev şöyle görünebilir:
 
 ```asm
 ; POWER.ASM
@@ -42,11 +42,11 @@ _TEXT   ENDS
         END
 ```
 
-İşlevi, ayrı bir derleyici için yazılır olduğundan, ayrı bir kaynak dosya, derleme ve bağlantı adımları gerektirir. C ve C++ işlev bağımsız değişkenleri genellikle Kalanlar yığın üzerinde bu nedenle bu sürümünü `power2` işlevi, bağımsız değişkenler yığında konumlarına göre erişir. (Unutmayın **modeli** yönergesi, MASM ve bazı diğer birleştiricileri kullanılabilir ayrıca yığın bağımsız değişkenleri ve yerel yığın değişkenleri adıyla erişmek olanak tanır.)
+Ayrı bir birleştirici için yazıldığı için, işlev ayrı bir kaynak dosya ve derleme ve bağlantı adımları gerektirir. C ve C++ işlev bağımsız değişkenleri genellikle yığına geçirilir, bu nedenle `power2` işlevinin bu sürümü, bağımsız değişkenlerine yığındaki konumlarına göre erişir. (Masd ve diğer bazı birleştiriciler için kullanılabilen **model** yönergesinin Ayrıca, yığın bağımsız değişkenlerine ve yerel yığın değişkenlerine ada göre erişmenizi de sağlar.)
 
 ## <a name="example"></a>Örnek
 
-Bu program Yazar `power2` işlevi satır içi derleme kodu ile:
+Bu program `power2` işlevini satır içi derleme kodu ile Yazar:
 
 ```cpp
 // Power2_inline_asm.c
@@ -74,11 +74,11 @@ int power2( int num, int power )
 }
 ```
 
-Satır içi sürümü `power2` işlevi için bağımsız değişkenlerinden adıyla başvuran ve aynı kaynak dosyada programın geri kalanını olarak görünür. Bu sürüm, daha az sayıda derleme yönergelerini de gerektirir.
+`power2` işlevin satır içi sürümü, bağımsız değişkenlerine ad ile başvurur ve programın geri kalanı ile aynı kaynak dosyasında görünür. Bu sürüm, daha az derleme yönergesi de gerektirir.
 
-Çünkü satır içi sürümü `power2` C yürütülmez `return` deyimi, zararsız bir uyarı uyarı düzeyi 2 veya üzeri derlerseniz olur. İşlev bir değer döndürür, ancak derleyici, içinde olmaması bildiremez bir `return` deyimi. Kullanabileceğiniz [#pragma Uyarısı](../../preprocessor/warning.md) bu uyarı oluşturulmasını devre dışı bırakmak için.
+`power2` 'nin satır içi sürümü bir C `return` bildirisini yürütülemediğinden, uyarı düzeyi 2 veya daha yüksek bir sürümde derlerseniz zararsız bir uyarıya neden olur. İşlev bir değer döndürür, ancak derleyici bir `return` deyimin yokluğunda bunu söyleyebilir. Bu uyarının oluşturulmasını devre dışı bırakmak için [#pragma uyarısı](../../preprocessor/warning.md) kullanabilirsiniz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

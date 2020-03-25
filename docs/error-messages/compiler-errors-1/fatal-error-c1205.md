@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1205
 ms.assetid: f855c145-8cf7-4dd1-bb19-257ee38b8382
-ms.openlocfilehash: c6e1fb545af0a069ac7d79957b967eba7659f825
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c37a1ece324971a3c0c68d584c04d78803212476
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166432"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203482"
 ---
 # <a name="fatal-error-c1205"></a>Önemli hata C1205
 
 Genel türler yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
 
-Derleyici kullanarak ortak dil çalışma zamanı sürümü geçerli derleyici tarafından desteklenen çalışma zamanı sürümü değil.  Örneğin, genel türler özelliğini derleyici için eşleşen bir çalışma zamanı gerektirir.
+Derleyicinin kullandığı ortak dil çalışma zamanının sürümü, geçerli derleyicinin desteklediği çalışma zamanının bir sürümü değil.  Örneğin, genel türler özelliği, derleyici ile eşleşen bir çalışma zamanı gerektirir.
 
-Yol belirtimi değiştirilmesi gerekebilir.
+Yol belirtimin değiştirilmesi gerekebilir.

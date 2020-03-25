@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - M6111
 ms.assetid: c0fc13f8-33c8-4e3f-a440-126cc623441b
-ms.openlocfilehash: 44f406881d64d13e23ca2c0911ee278c864a2c11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e8abedf6a326a826d0c8ac513b15037c8bf89bce
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393414"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173697"
 ---
 # <a name="math-error-m6111"></a>Matematik Hatası M6111
 
-Yığında
+yığın yetersiz
 
-Bir yığın underflow 8087/287/387 eşişlemcisi veya öykünücü, kayan noktalı bir işlemin sonuçlandı.
+Kayan nokta işlemi 8087/287/387 Eşişlemcisi veya öykünücü üzerinde bir yığın üzerinde yetersizlik ile sonuçlandı.
 
-Bu hata genellikle bir çağrı tarafından neden bir `long double` işlev bir değer döndürmez. Örneğin, aşağıdaki bu hatayı derlenmiş ve çalışma oluşturur:
+Bu hata genellikle değer döndürmeyen bir `long double` işlevine yapılan çağrıdan kaynaklanır. Örneğin, aşağıdakiler derlendiğinde ve çalıştırıldığında bu hatayı üretir:
 
 ```
 long double ld() {};
@@ -29,4 +29,4 @@ main ()
 }
 ```
 
-Program çıkış kodu ile 139 sonlandırır.
+Program 139 çıkış koduyla sona eriyor.

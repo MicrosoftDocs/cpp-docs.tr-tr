@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4200
 ms.assetid: 0d335e69-8766-455b-beb5-a3ba6247274e
-ms.openlocfilehash: e5811f22b5659e22491a00360ce1dafa70c1ba80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec7664d66c8a382244b982da7c573accff8fc4a6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395098"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183221"
 ---
 # <a name="linker-tools-warning-lnk4200"></a>Bağlayıcı Araçları Uyarısı LNK4200
 
-Nesne dosyasında bozuk satır numarası bilgileri; yoksayıldı
+nesne dosyasında bozuk satır numarası bilgileri; LIP
 
-Satır numarası bilgisi nesne dosyasında bozuk. Yeniden oluşturun.
+Nesne dosyasındaki satır numarası bilgisi bozuk. Derlemesine.

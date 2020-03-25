@@ -5,18 +5,18 @@ helpviewer_keywords:
 - control flow, branching
 - control flow, transferring control
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
-ms.openlocfilehash: 1fc487628f26dcac097109bc71fa960e501d0797
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9a46ccb1cf519080c5105855e41ecd3ebc23f77
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266822"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188057"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 
-Kullanabilirsiniz **goto** deyimi veya bir **çalışması** etiketi bir **geçiş** deyimini bir başlatıcı dallar bir program belirtin. Başlatıcı içeren bildirimi blok tarafından alınmış bir blok içinde olmadığı sürece bu tür kod geçersiz atlama deyimi oluştuğu içinde.
+Bir başlatıcı geçmiş bir program belirtmek için bir **Switch** deyimindeki **goto** ifadesini veya **Case** etiketini kullanabilirsiniz. Bu kod, başlatıcıyı içeren bildirim, sıçrama ifadesinin gerçekleştiği bloğa ait bir blokta değilse geçersizdir.
 
-Aşağıdaki örnek, bir döngüyü bildirir ve nesneleri başlatır gösterir `total`, `ch`, ve `i`. De mevcuttur bir hatalı **goto** aktaran bir başlatıcı son denetim ifadesi.
+Aşağıdaki örnek, `total`, `ch`ve `i`nesneleri bildiren ve Başlatan bir döngüyü gösterir. Ayrıca, denetimi bir başlatıcıyı geçen hatalı bir **goto** bildirisi de vardır.
 
 ```cpp
 // transfers_of_control.cpp
@@ -48,6 +48,6 @@ int main()
 }
 ```
 
-Önceki örnekte **goto** deyimi son başlatma denetimi aktarım dener `i`. Ancak, varsa `i` bildirildi ancak başlatılmadı, aktarımı geçerli olacaktır.
+Önceki örnekte, **goto** ifadesinin `i`başlatmayı geçmiş denetimi aktarmaya çalışır. Ancak, `i` bildirilirse ancak başlatılmamışsa, aktarım yasal olur.
 
-Nesneleri `total` ve `ch`görevi gören bir blok içinde bildirilen *deyimi* , **sırada** deyimini kullanarak o blok çıkıldı zaman yok  **Kesme** deyimi.
+**While** ifadesinin bir *ifadesidir* olarak işlev gören blokta belirtilen `total` ve `ch`nesneleri, bu blok **Break** ifadesini kullanarak çıkıldığında yok edilir.

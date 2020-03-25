@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CXX0054
 - CAN0054
 ms.assetid: d5d4a093-6a7a-45c0-8aa7-e555023353ef
-ms.openlocfilehash: d44d576509b4e84582a437aae5ce99c3b187845b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3709757a79a01f95c004ce2449a5cc07dfdb92fa
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299601"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184781"
 ---
 # <a name="expression-evaluator-error-cxx0054"></a>İfade Değerlendirici Hatası CXX0054
 
-Geçersiz Kesme noktası ifadesi kaydetme
+kesme noktası ifadesinde kaydolma geçersizdir
 
-Bir kasa içinde bir kesme noktası ifadesi kullanılamaz.
+Bir kayıt kesme noktası ifadesinde kullanılamaz.
 
-Bu hata için CAN0054 aynıdır.
+Bu hata CAN0054 ile aynıdır.

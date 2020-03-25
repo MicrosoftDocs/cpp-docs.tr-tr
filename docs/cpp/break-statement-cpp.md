@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C++]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
-ms.openlocfilehash: 3dda0b19fffaaf725ab363a0c4fe70d2ca54e3f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23d31e1456106d5f82c4a13079c72c231b8477bd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267721"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190488"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C++)
 
-**Sonu** deyimi en yakın kapsayan yürütme sona erer döngü ya da içinde göründüğü koşullu deyimin. Denetim, varsa, deyimin sonunu takip eden deyime geçer.
+**Break** ifadesi, göründüğü en yakın kapsayan döngünün veya koşullu deyimin yürütmesini sonlandırır. Denetim, varsa, deyimin sonunu takip eden deyime geçer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,17 +25,17 @@ break;
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sonu** deyimi koşullu kullanılır [geçiş](../cpp/switch-statement-cpp.md) deyimi ile [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), ve [oluştu](../cpp/while-statement-cpp.md) döngü deyimleriyle.
+**Break** deyimi, koşullu [anahtar](../cpp/switch-statement-cpp.md) ifadesiyle ve [Do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), ve [while](../cpp/while-statement-cpp.md) Loop deyimleriyle birlikte kullanılır.
 
-İçinde bir **geçiş** deyimi **sonu** deyimi, programın dışındaki bir sonraki deyimin yürütmesine neden olur **geçiş** deyimi. Olmadan bir **sonu** deyimi, eşleşen her deyim **çalışması** sonuna etiket **geçiş** deyimi de dahil olmak üzere **varsayılan**yan tümcesi yürütülür.
+**Switch** ifadesinde, **Break** deyimleri programın **Switch** ifadesinin dışında bir sonraki ifadeyi yürütmesine neden olur. **Break** deyimi olmadan, **varsayılan** yan tümcesi dahil olmak üzere, eşleşen **Case** etiketinden **Switch** ifadesinin sonuna kadar her bir deyimi yürütülür.
 
-Döngülerde, **sonu** deyimi, en yakın kapsayan yürütülmesini sonlandırır **yapmak**, **için**, veya **sırada** deyimi. Denetim, varsa, sonlandırılmış deyimi takip eden deyime geçirilir.
+Döngülerde **Break** ifadesinin en yakın kapsayan **Do**, **for**veya **while** deyimlerinin yürütülmesi sonlanır. Denetim, varsa, sonlandırılmış deyimi takip eden deyime geçirilir.
 
-İç içe geçmiş deyimler içinde **sonu** deyimini sonlandırır yalnızca **yapmak**, **için**, **geçiş**, veya **çalışırken**hemen kendisini kapsayan deyimi. Kullanabileceğiniz bir **dönüş** veya **goto** denetimi daha derin bir şekilde aktarmak için deyimi iç içe yapılar.
+İç içe geçmiş deyimler içinde, **Break** deyimi yalnızca hemen kendisini kapsayan **Do**, **for**, **Switch**veya **while** deyimini sonlandırır. Daha derin iç içe yapıların denetimini aktarmak için **Return** veya **goto** ifadesini kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanılacağını gösterir **sonu** deyiminde bir **için** döngü.
+Aşağıdaki kod, **for** döngüsünde **Break** ifadesinin nasıl kullanılacağını gösterir.
 
 ```cpp
 #include <iostream>
@@ -71,7 +71,7 @@ In each case:
 3
 ```
 
-Aşağıdaki kod nasıl kullanılacağını gösterir **sonu** içinde bir **sırada** döngü ve **yapmak** döngü.
+Aşağıdaki kod, bir **while** döngüsünde ve **Do** döngüsünde **Break** 'in nasıl kullanılacağını gösterir.
 
 ```cpp
 #include <iostream>
@@ -104,7 +104,7 @@ In each case:
 0123
 ```
 
-Aşağıdaki kod nasıl kullanılacağını gösterir **sonu** switch deyiminde. Kullanmalısınız **sonu** değil kullanırsanız, her durumda ayrı olarak; işlemek isterseniz, her durumda **sonu**, kod yürütme sonraki duruma geçer.
+Aşağıdaki kod, bir switch ifadesinde **Break** 'in nasıl kullanılacağını gösterir. Her bir durumu ayrı olarak işlemek istiyorsanız, her durumda **Break** kullanmanız gerekir; **Break**kullanmıyorsanız, kod yürütmesi bir sonraki durumda geçer.
 
 ```cpp
 #include <iostream>

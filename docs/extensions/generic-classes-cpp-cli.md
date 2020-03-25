@@ -9,16 +9,16 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-ms.openlocfilehash: 71850807f6332f31195ef9bafbd9468f48cb6fb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78f4bf3abb98aab5e626e8ada538a22bdbca2912
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349555"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172366"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 
-Genel bir sınıf, aşağıdaki biçimi kullanarak bildirilir:
+Genel bir sınıf aşağıdaki form kullanılarak bildirilmiştir:
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,43 +35,43 @@ class-body
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yukarıdaki söz diziminde aşağıdaki terimler kullanılır:
+Yukarıdaki sözdiziminde, aşağıdaki terimler kullanılır:
 
-*Öznitelikleri*<br/>
-(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
+*özelliklerine*<br/>
+Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. öznitelikler.
 
 *sınıf anahtarı*<br/>
-Her iki **sınıfı** veya **typename**
+Ya **Class** ya da **TypeName**
 
-*tür-parametresi-tanımlayıcıları*, tür parametrelerinin adlarını belirten tanımlayıcıları virgülle ayrılmış listesi.
+tür parametrelerinin adlarını belirten, *tür-parametre*tanımlayıcıları, virgülle ayrılmış bir liste.
 
-*kısıtlama yan tümceleri*<br/>
-(Değil virgülle ayrılmış) listesi **burada** yan tümceleri tür parametreleri için kısıtlamalar belirtme. Şu biçimi alır:
+*kısıtlama-yan tümceler*<br/>
+Tür parametrelerinin kısıtlamalarını belirten **WHERE** yan tümcelerinin listesi (virgülle ayrılmamış). Şu formu alır:
 
-> **Burada** *türü parametre tanımlayıcısı* **:** *sınırlama listesi***...**
+> **burada** *tür-parametre-tanımlayıcı* **:** *kısıtlama-liste*  **...**
 
-*sınırlama listesi*<br/>
-*sınıf veya arabirim*[`,` *...* ]
+*kısıtlama-liste*<br/>
+*sınıf-or-arabirim*[`,` *...* ]
 
-*erişilebilirlik değiştiricileri*<br/>
-Genel bir sınıf için erişilebilirlik değiştiricileri. Windows çalışma zamanı için yalnızca izin verilen değiştiricidir **özel**. Ortak dil çalışma zamanı için izin verilen değiştiricilerdir **özel** ve **genel**.
+*Erişilebilirlik-değiştiriciler*<br/>
+Genel sınıf için erişilebilirlik değiştiricileri. Windows Çalışma Zamanı için, yalnızca izin verilen değiştirici **özeldir**. Ortak dil çalışma zamanı için, izin verilen değiştiriciler **Private** ve **Public**' dir.
 
-*tanımlayıcı*<br/>
-Geçerli bir C++ tanımlayıcısı genel sınıfın adı.
+*Tanımlayıcısını*<br/>
+Genel sınıfın adı, geçerli C++ bir tanımlayıcı.
 
-*Değiştiriciler*<br/>
-(İsteğe bağlı) Değiştiriciler dahil izin **korumalı** ve **soyut**.
+*ilerine*<br/>
+Seçim İzin verilen değiştiriciler **Sealed** ve **abstract**içerir.
 
-*temel-liste*<br/>
-Virgülle ayrılmış tüm arabirimleri ve herhangi bir temel sınıf içeren bir liste uygulanır.
+*temel liste*<br/>
+Tek bir temel sınıfı ve uygulanan tüm arabirimleri içeren bir liste, tümü virgülle ayrılır.
 
-*sınıf-gövdesi*<br/>
-Alanlar, üye işlevleri, vb. içeren sınıfın gövdesi.
+*sınıf-gövde*<br/>
+Alanları, üye işlevlerini vb. içeren sınıfın gövdesi.
 
 *Bildirimciler*<br/>
-Bu türün tüm değişkenlerin bildirimleri. Örneğin: `^` *tanımlayıcı*[`,` ...]
+Bu türdeki değişkenlerin bildirimleri. Örneğin: `^`*tanımlayıcı*[`,`...]
 
-Genel sınıflar şunlar gibi bildirebilirsiniz (unutmayın anahtar sözcüğü **sınıfı** yerine kullanılabilir **typename**). Bu örnekte, `ItemType`, `KeyType` ve `ValueType` noktada belirtilen bilinmeyen türleri burada türü. `HashTable<int, int>` genel tür bir oluşturulmuş tür `HashTable<KeyType, ValueType>`. Tek bir genel türü bir dizi farklı oluşturulan türler oluşturulabilir. Oluşturulan türler genel sınıflardan oluşturulmuş gibi başka bir başvuru sınıfı türü kabul edilir.
+Bunlar gibi genel sınıflar bildirebilirsiniz (anahtar sözcük **sınıfının** **TypeName**yerine kullanılabileceğini unutmayın). Bu örnekte, `ItemType``KeyType` ve `ValueType`, türün bulunduğu noktada belirtilen bilinmeyen türlerdir. `HashTable<int, int>`, genel tür `HashTable<KeyType, ValueType>`oluşturulmuş bir türüdür. Tek bir genel türden birçok farklı oluşturulmuş tür oluşturulabilir. Genel sınıflardan oluşturulan oluşturulmuş türler, diğer herhangi bir başvuru sınıfı türü gibi işlenir.
 
 ```cpp
 // generic_classes_1.cpp
@@ -95,9 +95,9 @@ int main() {
 }
 ```
 
-Her ikisi de değer türleri (ya da yerleşik türleri gibi **int** veya **çift**, veya kullanıcı tanımlı değer türleri) ve başvuru türleri bir genel tür bağımsız değişkeni kullanılır. Söz dizimi genel tanımındaki bağımsız olarak aynıdır. Sözdizimi, bir başvuru türü değilmiş gibi bilinmeyen tür kabul edilir. Ancak, çalışma zamanı gerçekten kullanılan türü bir değer türü olup olmadığını belirleyebilir ve doğrudan erişim üyeleri için uygun oluşturulan kodu değiştirin. Genel tür bağımsız değişkenleri kullanılan değer türleri Kutulu değil ve bu nedenle kutulama ile ilişkili performans cezası karşılaşmaz. Genel gövdesinde kullanılan sözdizimi olmalıdır `T^` ve `->` yerine `.`. Kullanımı [yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md) tür bağımsız değişkeni bir değer türü ise türü için parametre uygun şekilde çalışma zamanı tarafından basit oluşturulmasını bir değer türü yorumlanacaktır.
+Her iki değer türü ( **int** veya **Double**gibi yerleşik türler ya da Kullanıcı tanımlı değer türleri) ve başvuru türleri genel tür bağımsız değişkeni olarak kullanılabilir. Genel tanım içindeki sözdizimi, ne olursa olsun aynıdır. Sözdizimi, bilinmeyen tür bir başvuru türü gibi değerlendirilir. Ancak çalışma zamanı, gerçekten kullanılan tür bir değer türüdür ve üyelere doğrudan erişim için uygun oluşturulan kodu yerine koyun. Genel tür bağımsız değişkenleri olarak kullanılan değer türleri kutulanmış değildir ve bu nedenle kutulama ile ilişkili performans cezası devam etmez. Genel gövdesinin içinde kullanılan sözdizimi, `.`yerine `T^` ve `->` olmalıdır. Tür bağımsız değişkeni bir değer türünde ise, tür parametresi için [gcnew New, gcnew](ref-new-gcnew-cpp-component-extensions.md) , bir değer türünün basit oluşturma çalışma zamanı tarafından uygun şekilde yorumlanır.
 
-Genel bir sınıf ile aynı zamanda bildirebilirsiniz [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md) türlerinde tür parametresi için kullanılabilir. Aşağıdaki örnekte herhangi bir türü kullanılan `ItemType` uygulamalıdır `IItem` arabirimi. Kullanılmaya çalışılıyor **int**, örneğin, hangi uygulamıyor `IItem`, tür bağımsız değişkeni kısıtlamasını karşılamaz çünkü bir derleme zamanı hatası oluşturur.
+Ayrıca, tür parametresi için kullanılabilecek türler üzerinde [genel tür parametreleri (C++/CLI) üzerinde kısıtlamalar](constraints-on-generic-type-parameters-cpp-cli.md) içeren bir genel sınıf da bildirebilirsiniz. Aşağıdaki örnekte `ItemType` için kullanılan herhangi bir tür `IItem` arabirimini uygulamalıdır. Örneğin, `IItem`uygulamayan **int**'i kullanma girişimi, tür bağımsız değişkeni kısıtlamayı karşılamadığı için derleme zamanı hatası oluşturur.
 
 ```cpp
 // generic_classes_2.cpp
@@ -108,7 +108,7 @@ where ItemType : IItem
 ref class Stack {};
 ```
 
-Genel sınıflar aynı ad alanında, sayı veya tür parametrelerinin türleri yalnızca değiştirerek aşırı yüklenemez. Her sınıf, farklı bir ad alanında yaşıyorsa, ancak bunlar aşırı yüklenebilir. Örneğin, aşağıdaki iki sınıf düşünün `MyClass` ve `MyClass<ItemType>`, ad alanlarında `A` ve `B`. İki sınıf ardından üçüncü bir ad alanında C: aşırı yüklenebilir
+Aynı ad alanındaki genel sınıflar yalnızca sayı veya tür parametrelerinin türleri değiştirilerek aşırı yüklenemez. Ancak, her bir sınıf farklı bir ad alanında yer alıyorsa, aşırı yüklenebilir. Örneğin, `MyClass` ve `MyClass<ItemType>`ad alanları `A` ve `B`olmak üzere aşağıdaki iki sınıfı göz önünde bulundurun. Bu iki sınıf daha sonra C. üçüncü bir ad alanında aşırı yüklenebilir:
 
 ```cpp
 // generic_classes_3.cpp
@@ -135,7 +135,7 @@ namespace C {
 }
 ```
 
-Taban sınıfı ve temel arabirimleri tür parametreleri olamaz. Ancak, temel sınıf tür parametresi, aşağıdaki durumda olduğu gibi bir bağımsız değişken olarak içerebilir:
+Temel sınıf ve temel arabirimler tür parametreleri olamaz. Ancak, temel sınıf aşağıdaki örnekte olduğu gibi tür parametresini bağımsız değişken olarak içerebilir:
 
 ```cpp
 // generic_classes_4.cpp
@@ -147,19 +147,19 @@ generic <typename ItemType>
 ref class MyClass : IInterface<ItemType> {};
 ```
 
-Oluşturucular ve Yıkıcılar kez her bir nesne örneği için (zamanki); yürütülür statik Oluşturucular, oluşturulan her tür için bir kez yürütülür.
+Oluşturucular ve Yıkıcılar her nesne örneği için bir kez yürütülür (her zamanki gibi); statik oluşturucular, oluşturulan her tür için bir kez yürütülür.
 
-## <a name="fields-in-generic-classes"></a>Genel sınıflar alanları
+## <a name="fields-in-generic-classes"></a>Genel sınıflardaki alanlar
 
-Bu bölümde, örnek ve Genel sınıflar statik alanları kullanımını gösterir.
+Bu bölüm, genel sınıflarda örnek ve statik alanların kullanımını gösterir.
 
 ### <a name="instance-variables"></a>Örnek değişkenleri
 
-Bir genel sınıfın örneği değişkenleri türleri ve kapsayan sınıftaki herhangi bir tür parametreleri içeren değişken başlatıcılar olabilir.
+Bir genel sınıfın örnek değişkenlerinin, kapsayan sınıftan herhangi bir tür parametresi içeren türler ve değişken başlatıcıları olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, üç farklı örnekleri MyClass genel sınıfın\<Itemtype >, uygun tür bağımsız değişkeni kullanılarak oluşturulur (**int**, **çift**ve **dize**).
+Aşağıdaki örnekte, MyClass\<ItemType > Genel sınıfının üç farklı örneği, uygun tür bağımsız değişkenleri (**int**, **Double**ve **String**) kullanılarak oluşturulur.
 
 ```cpp
 // generics_instance_fields1.cpp
@@ -201,13 +201,13 @@ String field = ABC
 
 ## <a name="static-variables"></a>Statik değişkenler
 
-Yeni bir genel tür oluşturma, tüm statik değişkenler, yeni örneklerini oluşturulur ve herhangi bir statik Oluşturucu türüne yürütülür.
+Yeni bir genel tür oluştururken, statik değişkenlerin yeni örnekleri oluşturulur ve bu tür için herhangi bir statik Oluşturucu yürütülür.
 
-Statik değişkenler kapsayan sınıftaki herhangi bir tür parametreleri kullanabilirsiniz.
+Statik değişkenler kapsayan sınıftan herhangi bir tür parametresini kullanabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, statik alanları ve genel bir sınıf içinde statik Oluşturucu kullanmayı gösterir.
+Aşağıdaki örnek, genel bir sınıf içindeki statik alanların ve statik oluşturucunun kullanımını gösterir.
 
 ```cpp
 // generics_static2.cpp
@@ -262,29 +262,29 @@ Static constructor called.
 Test1
 ```
 
-## <a name="methods-in-generic-classes"></a>Genel sınıflar yöntemleri
+## <a name="methods-in-generic-classes"></a>Genel sınıflardaki Yöntemler
 
-Genel sınıflar, yöntemler, genel olabilir; kendilerini Genel olmayan yöntemler sınıf türü parametresi tarafından örtük olarak parametreli.
+Genel sınıflardaki yöntemler genel olabilir; Genel olmayan yöntemler, sınıf türü parametresi tarafından örtük olarak parametreleştirilecektir.
 
-Genel sınıflar yöntemlerinde aşağıdaki özel kurallar geçerlidir:
+Aşağıdaki özel kurallar genel sınıfların içindeki yöntemlere uygulanır:
 
-- Genel sınıflar, yöntemler tür parametreleri, parametre, dönüş türleri veya yerel değişkenler kullanabilirsiniz.
+- Genel sınıflardaki Yöntemler tür parametrelerini parametreler, dönüş türleri veya yerel değişkenler olarak kullanabilir.
 
-- Genel sınıflar yöntemleri açık veya kapalı oluşturulan türler parametre, dönüş türleri veya yerel değişkenler kullanabilirsiniz.
+- Genel sınıflardaki Yöntemler parametreler, dönüş türleri veya yerel değişkenler olarak açık veya kapalı oluşturulmuş türler kullanabilir.
 
-### <a name="non-generic-methods-in-generic-classes"></a>Genel sınıflar genel olmayan yöntemleri
+### <a name="non-generic-methods-in-generic-classes"></a>Genel sınıflarda genel olmayan Yöntemler
 
-Örtük olarak kapsayan genel bir sınıf tarafından parametreli ancak hiçbir ek tür parametrelerine sahip genel sınıflardaki yöntemler genellikle için genel olmayan adlandırılır.
+Ek tür parametrelerine sahip olmayan genel sınıflardaki metotlar genellikle genel olmayan olarak adlandırılır ancak kapsayan genel sınıf tarafından örtülü olarak parametrelenir.
 
-Genel olmayan yöntemin imzası kapsayan sınıfın, bir veya daha fazla tür parametreleri, doğrudan ya da açık bir oluşturulmuş tür içerebilir. Örneğin:
+Genel olmayan bir metodun imzası, kapsayan sınıfın bir veya daha fazla tür parametresini doğrudan ya da açık bir oluşturulmuş türde içerebilir. Örneğin:
 
 `void MyMethod(MyClass<ItemType> x) {}`
 
-Bu tür yöntemler gövdesi, bu tür parametreleri olarak da kullanabilirsiniz.
+Bu tür yöntemlerin gövdesi bu tür parametrelerini de kullanabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir genel olmayan yöntemin bildirir `ProtectData`, genel bir sınıf içinde `MyClass<ItemType>`. Sınıf türü parametresini kullanmaktadır `ItemType` imzası açık bir oluşturulmuş tür içinde.
+Aşağıdaki örnek genel olmayan bir yöntem `ProtectData`, genel bir sınıf içinde `MyClass<ItemType>`bildirir. Yöntemi, bir açık oluşturulmuş tür içindeki imzasında `ItemType` sınıf türü parametresini kullanır.
 
 ```cpp
 // generics_non_generic_methods1.cpp
@@ -339,9 +339,9 @@ Name: Jeff Smith
 Amount: $123.00**
 ```
 
-## <a name="generic-methods-in-generic-classes"></a>Genel sınıflar genel yöntemleri
+## <a name="generic-methods-in-generic-classes"></a>Genel sınıflarda genel metotlar
 
-Genel yöntemler hem genel hem de genel olmayan sınıflarda bildirebilirsiniz. Örneğin:
+Genel ve genel olmayan sınıflarda genel yöntemler bildirebilirsiniz. Örneğin:
 
 ## <a name="example"></a>Örnek
 
@@ -365,13 +365,13 @@ public:
 };
 ```
 
-Genel olmayan yöntemin sınıfın tür parametresi ile parametreli olup, ancak hiçbir ek tür parametreleri olan algılama içinde hala geneldir.
+Genel olmayan yöntem, sınıfın tür parametresine göre parametreleştirildiği, ancak ek tür parametrelerine sahip olmadığı için hala geneldir.
 
-Genel sınıflar yöntemleri tüm türleri genel de dahil olmak üzere statik, örnek ve sanal yöntemleri olabilir.
+Genel sınıflardaki tüm yöntem türleri, statik, örnek ve sanal yöntemler dahil genel olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bildirme ve genel yöntemlerle genel sınıflardaki gösterir:
+Aşağıdaki örnek genel sınıflar içinde genel yöntemleri bildirme ve kullanma gösterir:
 
 ```cpp
 // generics_generic_method2.cpp
@@ -418,9 +418,9 @@ MyMethod returned: Hello #1
 MyMethod returned: Hello World!
 ```
 
-## <a name="using-nested-types-in-generic-classes"></a>İç içe geçmiş türler genel sınıflarında kullanma
+## <a name="using-nested-types-in-generic-classes"></a>Genel sınıflarda Iç Içe türler kullanma
 
-Gibi sıradan sınıflarıyla genel bir sınıf içindeki diğer türlere bildirebilirsiniz. İç içe geçmiş sınıf bildirimi, dış sınıf bildiriminde tür parametreleri tarafından örtük olarak parametreli. Bu nedenle, farklı bir iç içe geçmiş sınıf, oluşturulan her dış tür için tanımlanır. Örneğin, bildirimi
+Sıradan sınıflarda olduğu gibi, bir genel sınıf içinde başka türler de bildirebilirsiniz. İç içe geçmiş sınıf bildirimi, dış sınıf bildiriminin tür parametreleri tarafından örtük olarak parametrelenir. Bu nedenle, oluşturulan her bir dış tür için ayrı bir iç içe sınıf tanımlanmıştır. Örneğin, bildiriminde,
 
 ```cpp
 // generic_classes_5.cpp
@@ -431,9 +431,9 @@ ref struct Outer {
 };
 ```
 
-Türü `Outer<int>::Inner` türü ile aynı değil `Outer<double>::Inner`.
+Tür `Outer<int>::Inner` `Outer<double>::Inner`türü ile aynı değil.
 
-Gibi genel yöntemler genel sınıflardaki ek tür parametreleri için iç içe türü tanımlanabilir. İç ve dış sınıfında aynı tür parametresi adlarına kullanırsanız, iç tür parametresi dış tür parametresi gizler.
+Genel sınıflarda genel metotlarda olduğu gibi, iç içe geçmiş türü için ek tür parametreleri de tanımlanabilir. İç ve dış sınıfta aynı tür parametre adlarını kullanırsanız, iç tür parametresi dıştaki tür parametresini gizler.
 
 ```cpp
 // generic_classes_6.cpp
@@ -449,11 +449,11 @@ ref class Outer {
 };
 ```
 
-Derleyici, dış tür parametresine başvuran mümkün olduğundan, bu durumda bir uyarı üretecektir.
+Dış tür parametresine başvurmanız mümkün olmadığından, derleyici bu durumda bir uyarı oluşturur.
 
-Oluşturulan iç içe geçmiş genel türler adlı, iç türü örtük olarak dış türün tür parametresi ile parametreli olsa bile dış türün tür parametresi iç türü için tür parametre listesinde bulunmaz. Yukarıdaki durumda oluşturulan tür adını olacaktır `Outer<int>::Inner<string>`.
+Oluşturulan iç içe genel türler adlandırılmışsa, dış türün tür parametresi iç türün tür parametresi listesine eklenmez, ancak iç tür dış türün tür parametresiyle örtük olarak parametrelendirilir. Yukarıdaki örnekte, oluşturulmuş bir türün adı `Outer<int>::Inner<string>`.
 
-Aşağıdaki örnek, oluşturma ve iç içe geçmiş türler genel sınıfları kullanarak bağlantılı liste okuma gösterir.
+Aşağıdaki örnek, genel sınıflarda iç içe türler kullanılarak bağlantılı bir listeyi oluşturmayı ve okumayı gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -546,19 +546,19 @@ Reading nodes:
 0.1
 ```
 
-## <a name="properties-events-indexers-and-operators-in-generic-classes"></a>Özellikleri, olayları, dizin oluşturucular ve Genel sınıflar işleçleri
+## <a name="properties-events-indexers-and-operators-in-generic-classes"></a>Genel sınıflardaki özellikler, olaylar, Dizin oluşturucular ve Işleçler
 
-- Özellikleri, olayları, dizin oluşturucular ve işleçler kullanabileceğiniz kapsayan sınıfa genel tür parametrelerini dönüş değerleri, parametre veya ne zaman gibi yerel değişkenler olarak `ItemType` bir sınıfın bir tür parametresi:
+- Özellikler, olaylar, Dizin oluşturucular ve işleçler kapsayan genel sınıfın tür parametrelerini dönüş değerleri, parametreler veya yerel değişkenler olarak kullanabilir, örneğin `ItemType` bir sınıfın tür parametresidir.
 
     ```cpp
     public ItemType MyProperty {}
     ```
 
-- Özellikleri, olayları, dizin oluşturucular ve işleçler kendilerini parametreleştirilemez.
+- Özellikler, olaylar, Dizin oluşturucular ve işleçler parametreleştirilemez.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, genel bir sınıf içinde bir Instance özelliği bildirimlerini gösterir.
+Bu örnek, bir genel sınıf içindeki bir örnek özelliğinin bildirimlerini gösterir.
 
 ```cpp
 // generics_generic_properties1.cpp
@@ -598,7 +598,7 @@ John, 234
 
 ## <a name="example"></a>Örnek
 
-Sonraki örnek, bir olay ile genel bir sınıf gösterir.
+Sonraki örnekte, bir olayı olan genel bir sınıf gösterilmektedir.
 
 ```cpp
 // generics_generic_with_event.cpp
@@ -661,11 +661,11 @@ int main() {
 
 ## <a name="generic-structs"></a>Genel yapılar
 
-Bildirme ve genel yapıları kullanma kuralları Visual C++ dil başvurusunda belirtildiği farklılıklar dışında Genel sınıflar için aynıdır.
+Genel yapıları bildirme ve kullanma kuralları, görsel C++ dil başvurusunda belirtilen farklar dışında genel sınıflarla aynıdır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, genel bir struct bildirir `MyGenStruct`, bir alan `myField`ve farklı türlerde değerler atar (**int**, **çift**, `String^`) Bu alan için.
+Aşağıdaki örnek, bir alan, `myField`ve farklı türlerin (**int**, **Double**, `String^`) değerlerini bu alana atayan bir genel struct `MyGenStruct`bildirir.
 
 ```cpp
 // generics_generic_struct1.cpp

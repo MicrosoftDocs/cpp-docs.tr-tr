@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2975
+title: Derleyici hatası C2975
 ms.date: 11/04/2016
 f1_keywords:
 - C2975
 helpviewer_keywords:
 - C2975
 ms.assetid: 526f6b9d-6c76-4c12-9252-1b1d7c1e06c7
-ms.openlocfilehash: 66b7c0d61cbc8141b9ed3e5f6eb329b68eb00477
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 70fc648de8bcf4f1e85edf3a12cc0b7d3d70625f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344697"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201571"
 ---
-# <a name="compiler-error-c2975"></a>Derleyici Hatası C2975
+# <a name="compiler-error-c2975"></a>Derleyici hatası C2975
 
-> '*bağımsız değişken*': Geçersiz şablon bağımsız değişkeni için '*türü*', derleme zamanı sabit ifadesi bekleniyor
+> '*Argument*': '*Type*' için geçersiz şablon bağımsız değişkeni; derleme zamanı sabit ifadesi bekleniyor
 
-Şablon bağımsız değişkeni, şablon bildirimindeki eşleşmiyor; sabit bir ifade, açılı ayraçlar içinde görüntülenmesi gerekir. Şablon gerçek bağımsız değişkenlere izin verilmiyor. Doğru tür bulmak için şablon tanımı kontrol edin.
+Şablon bağımsız değişkeni şablon bildirimiyle eşleşmiyor; bir sabit ifade, açılı ayraç içinde görünmelidir. Gerçek şablon bağımsız değişkenleri olarak değişkenlere izin verilmez. Doğru türleri bulmak için şablon tanımını denetleyin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2975 oluşturur ve ayrıca doğru kullanımını gösterir:
+Aşağıdaki örnek C2975 oluşturur ve ayrıca doğru kullanımı gösterir:
 
 ```cpp
 // C2975.cpp
@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-C2975 de gerçekleşir kullandığınızda &#95; &#95;satırı&#95; &#95; ile bir derleme zamanı sabiti olarak [/zi](../../build/reference/z7-zi-zi-debug-information-format.md). Tek bir çözüm ile derlemek için olacak [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) yerine **/zi**.
+&#95; &#95;Ayrıca, [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md)ile bir derleme&#95; &#95; zamanı sabiti olarak çizgi kullandığınızda da C2975 oluşur. Bir çözüm, **/Zi**yerine [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) ile derlenmelidir.
 
 ```cpp
 // C2975b.cpp

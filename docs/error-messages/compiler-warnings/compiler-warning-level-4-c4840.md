@@ -5,26 +5,26 @@ f1_keywords:
 - C4840
 helpviewer_keywords:
 - C4840
-ms.openlocfilehash: a757004659c1a9d2ce858cfae5ddfbc6c024d782
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 649083d66d0c7a0ef11c742e56cbfb70e2e9b75f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360014"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185210"
 ---
 # <a name="compiler-warning-level-4-c4840"></a>Derleyici Uyarısı (düzey 4) C4840
 
-> sınıfının taşınabilir olmayan kullanımı*türü*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
+> '*Type*' sınıfının, değişen sayıda bağımsız değişken işleve bağımsız değişken olarak taşınabilir olmayan kullanımı
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf ya da bir bağımsız değişken içeren işleve geçirilen yapının artık önemsiz olarak kopyalanabilir olmalıdır. Bu tür nesneleri geçirirken, derleyici, basit bit düzeyinde bir kopya oluşturur ve oluşturucu veya yıkıcı çağırmaz.
+Değişen bir bağımsız değişken işleve geçirilen sınıflar veya yapılar, daha düşük bir kopyalanabilir olmalıdır. Bu tür nesneler geçirilirken, derleyici yalnızca bit düzeyinde bir kopya yapar ve oluşturucuyu veya yıkıcıyı çağırmaz.
 
-Bu uyarı, Visual Studio 2017'de kullanılabilir başlangıcıdır.
+Bu uyarı, Visual Studio 2017 ' den başlayarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4840 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4840 oluşturur ve nasıl düzeltileceğini gösterir:
 
 ```cpp
 // C4840.cpp
@@ -49,7 +49,7 @@ int main()
 }
 ```
 
-Oluşturulan ve yönetilen kullanarak dizeleri `CStringW`, sağlanan `operator LPCWSTR()` dönüştürme için kullanılması gereken bir `CStringW` biçim dizesi tarafından beklenen C stili dize işaretçisine nesnesi:
+`CStringW`kullanılarak oluşturulan ve yönetilen dizeler için, `CStringW` nesnesini biçim dizesi tarafından beklenen C stili dize işaretçisine dönüştürmek için, belirtilen `operator LPCWSTR()` kullanılmalıdır:
 
 ```cpp
     CStringW str1;

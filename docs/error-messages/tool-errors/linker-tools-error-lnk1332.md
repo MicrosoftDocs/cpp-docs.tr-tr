@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1332
 ms.assetid: b31d5ca0-c27f-4177-896b-2637dccbde24
-ms.openlocfilehash: 3c071ae8ac8c212b5bf3cd3eba8b082d790f7d58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 681a1d723d7a50e04fa2bf57706d61fa995f9789
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161075"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183572"
 ---
 # <a name="linker-tools-error-lnk1332"></a>Bağlayıcı Araçları Hatası LNK1332
 
-Algılanan\<sayısı > Windows çalışma zamanı türleri bir modülde içeri aktarıldı ve diğer bir modülde tanımlandı
+bir modülde içeri aktarılan ve başka bir modülde tanımlanan\<sayısı > Windows Çalışma Zamanı türler algılandı
 
-Geçerli hedef üretilen, bağlayıcı algılandı <`count`> Windows çalışma zamanı türlerinin her biri bir modülde içeri aktarıldı ve aynı zamanda diğer bir modülde tanımlandı.
+Geçerli hedef üretildiğinde bağlayıcı, her biri bir modülde içeri aktarılan ve aynı zamanda başka bir modülde tanımlanan Windows Çalışma Zamanı türler > <`count`algıladı.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Her yapı hata iletisi önerisine göre LNK2039 hataları düzeltin.
+- Hata iletisindeki öneriye göre derlemedeki LNK2039 hatalarının her birini düzeltin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

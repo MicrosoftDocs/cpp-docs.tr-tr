@@ -9,53 +9,53 @@ helpviewer_keywords:
 - __asm keyword [C++], vs. asm blocks
 - __asm keyword [C++]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-ms.openlocfilehash: 43c7ae02e465ce8de2871d78e7ba604221aa7426
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: de28e4c0fad6b89a62b4479c5c32f0b8606cf3af
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65445905"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169637"
 ---
-# <a name="asm"></a>__asm
+# <a name="__asm"></a>__asm
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-`__asm` Anahtar sözcüğü satır içi assembler çağırır ve her yerde bir C veya C++ deyiminin geçerli olduğu durumda görünebilir. Kendisi tarafından bulunamaz. Derleme yönergesinde, köşeli ayraçlar veya en azından içine yönergeler grubu tarafından gelmelidir bir çift boş tırnak işaretinin izlemesi. Terim "`__asm` blok" burada herhangi bir yönerge ya da küme ayraçları içinde olsun veya olmasın yönergeler grubu anlamına gelir.
+`__asm` anahtar sözcüğü satır içi assembler çağırır ve bir C ya da C++ deyimin yasal olduğu her yerde görünebilir. Kendisi tarafından bulunamaz. Ardından, bir derleme yönergesi, küme ayracı içine alınmış bir dizi yönerge veya en azından boş bir küme ayracı olmalıdır. Burada "`__asm` Block" terimi, ayraç içinde olsun veya etmeksizin herhangi bir yönergeyi veya yönerge grubunu ifade eder.
 
 > [!NOTE]
-> Visual C++ desteği için standart C++ `asm` anahtar sözcüğü, derleyicinin anahtar sözcükle bir hata oluşturmaz olgu sınırlıdır. Ancak, bir `asm` blok herhangi bir anlamlı kod üretmez. Kullanım `__asm` yerine `asm`.
+> Standart C++ C++ `asm` anahtar sözcüğü için görsel destek, derleyicinin anahtar sözcüğü üzerinde bir hata üretmeyeceği olgusuna sınırlıdır. Ancak, `asm` bloğu anlamlı bir kod oluşturmaz. `asm`yerine `__asm` kullanın.
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*asm bloğu*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__asm** *derleme yönergesinin* **;** <sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__asm {** *derleme yönerge listesi* **}** **;** <sub>iyileştirilmiş</sub>
+*asm-engelle*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__asm** *derleme-yönerge* **;** <sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__asm {** *Assembly-instruction-List* **}** **;** <sub>opt</sub>
 
-*derleme yönerge listesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*derleme yönergesinin* **;** <sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*derleme yönergesinin* **;** *derleme yönerge listesi* **;** <sub>iyileştirilmiş</sub>
+*Assembly-instruction-List*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*derlemesi-yönerge* **;** <sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Assembly-yönerge* **;** *Assembly-instruction-List* **;** <sub>opt</sub>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Küme ayraçları olmadan kullanılırsa `__asm` anahtar sözcüğü, satırın geri kalanını bir çevirici dil ifadesi olduğu anlamına gelir. Ayraçlarıyla kullanıldıysa, küme ayraçları arasındaki her satır bir çevirici dil ifadesi olduğu anlamına gelir. Önceki sürümlerle uyumluluk için `_asm` eşanlamlıdır `__asm`.
+Küme ayracı olmadan kullanılırsa, `__asm` anahtar sözcüğü, satırın geri kalanının derleme dili bir ifade olduğu anlamına gelir. Küme ayraçlarıyla birlikte kullanılırsa, küme ayraçları arasındaki her bir satır bir derleme dili deyimidir. Önceki sürümlerle uyumluluk için, `_asm` `__asm`eşanlamlısıdır.
 
-Bu yana `__asm` anahtar sözcüğü bir deyim ayırıcısı olduğundan, derleme yönergelerini aynı satıra koyabilirsiniz.
+`__asm` anahtar sözcüğü bir ifade ayırıcısı olduğundan, derleme yönergelerini aynı satıra koyabilirsiniz.
 
-Visual Studio 2005'ten önce yönerge
+Visual Studio 2005 öncesi yönergeleri
 
 ```cpp
 __asm int 3
 ```
 
-Yerel kod ile derlendiğinde oluşturulmasına neden olmadı **/CLR**; derleyici yönergeyi bir CLR kesme yönergesine çevrilir.
+**/clr**ile derlendiğinde yerel kodun oluşturulmasına neden olmadı; Derleyici, yönergeyi bir CLR kesme yönergesine çevirdi.
 
-`__asm int 3` artık işlev için yerel kod oluşturmayla sonuçlanır. Bir işlevin kodunuzda bir kesme noktası neden ve bu işlevin MSIL olarak derlenmiş istiyorsanız kullanmak istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md).
+`__asm int 3` artık işlev için yerel kod oluşturmaya neden olur. Bir işlevin kodunuzda bir kesme noktasına neden olmasını istiyorsanız ve bu işlevin MSIL 'e derlendiğini istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md)kullanın.
 
-Önceki sürümlerle uyumluluk için **_asm** eşanlamlıdır **__asm** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../../build/reference/za-ze-disable-language-extensions.md) belirtilir.
+Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_asm** **__asm** için bir eş anlamlı.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod parçası, basit bir `__asm` blok küme ayraçları içine alınmış:
+Aşağıdaki kod parçası, küme ayraçları içine alınmış basit bir `__asm` bloğudur:
 
 ```cpp
 __asm {
@@ -65,7 +65,7 @@ __asm {
 }
 ```
 
-Alternatif olarak, koyabilirsiniz `__asm` her bir derleme yönergesinin önüne:
+Alternatif olarak, her derleme yönergesinin önüne `__asm` koyabilirsiniz:
 
 ```cpp
 __asm mov al, 2
@@ -73,17 +73,17 @@ __asm mov dx, 0xD007
 __asm out dx, al
 ```
 
-Çünkü `__asm` anahtar sözcüğü bir deyim ayırıcısı olduğundan, derleme yönergelerini aynı satıra koyabilirsiniz:
+`__asm` anahtar sözcüğü bir ifade ayırıcısı olduğundan, aynı satıra derleme yönergeleri de koyabilirsiniz:
 
 ```cpp
 __asm mov al, 2   __asm mov dx, 0xD007   __asm out dx, al
 ```
 
-Üç örneğin hepsi aynı kodu, ancak ilk stil oluşturma (kapsayan `__asm` bloğunu ayraç içinde) bazı avantajlar içerir. Küme ayraçları açıkça derleme kodu C veya C++ kodundan ayırın ve tekrarından kaçınır `__asm` anahtar sözcüğü. Küme ayraçları ayrıca belirsizlikleri de engeller. Aynı satıra bir C veya C++ ifadesi koymak istiyorsanız bir `__asm` bloğu, bloğun tırnak içine almalısınız. Parantezler olmadan derleyici, derleme kodunun durduğu ve C veya C++ deyimlerinin nerede başlaması bildiremez. Son olarak, ayraç içindeki metin normal MASM metniyle aynı biçimde olduğundan, kolayca kesebilir ve metni mevcut MASM kaynak dosyalarından yapıştırın.
+Üç örnek de aynı kodu oluşturur, ancak ilk stil (`__asm` bloğunu ayraç içine alarak) bazı avantajları vardır. Küme ayraçları, derleme kodunu C veya C++ koddan açıkça ayırır ve `__asm` anahtar sözcüğünün gereksiz tekrarından kaçınılmasını önler. Küme ayraçları, belirsizlikleri de engelleyebilir. Bir C veya C++ ifadesini `__asm` bloğu ile aynı satıra koymak istiyorsanız, bloğu küme ayraçları içine almalısınız. Küme ayraçları olmadan derleyici, derleme kodunun durdurduğunu ve C veya C++ deyimleri başlamasını söylemez. Son olarak, küme ayracdaki metin sıradan MASı metniyle aynı biçimde olduğundan, varolan MASı kaynak dosyalarından metin kolayca kesip yapıştırabilirsiniz.
 
-C ve C++, çevreleyen parantezler içindeki küme ayraçlarından farklı olarak bir `__asm` blok değişken kapsamını etkilemez. Ayrıca yuvalayabilirsiniz `__asm` blokları; değişken kapsamını etkilemez.
+C ve C++içindeki ayraçların aksine, bir `__asm` bloğunu kapsayan küme ayraçları değişken kapsamını etkilemez. Ayrıca, `__asm` blokları iç içe geçirebilirsiniz; iç içe geçme değişken kapsamını etkilemez.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

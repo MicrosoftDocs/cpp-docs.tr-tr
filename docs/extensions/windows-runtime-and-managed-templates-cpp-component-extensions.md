@@ -1,30 +1,30 @@
 ---
-title: Windows çalışma zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
+title: Windows Çalışma Zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - templates, with CLR types
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
-ms.openlocfilehash: a8cc429763d042ba262d5543f4a2d85bbf8aa29a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce30133d9a2d1ce5a6e446093a617f3a108055c4
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264893"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171833"
 ---
-# <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows çalışma zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
+# <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows Çalışma Zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
 
-Şablonları, bir Windows çalışma zamanı veya ortak dil çalışma zamanı türü prototipin tanımlamanıza olanak sağlar ve ardından farklı bir şablon türü parametreleri kullanarak bu tür çeşidi örneği.
+Şablonlar, Windows Çalışma Zamanı veya ortak dil çalışma zamanı türünün bir prototipini tanımlamanızı ve sonra farklı şablon türü parametrelerini kullanarak bu türün çeşitlemelerini örneklemeyi sağlar.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-Değer veya başvuru türleri şablonları oluşturabilirsiniz.  Değer veya başvuru türleri oluşturma hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](classes-and-structs-cpp-component-extensions.md).
+Değer veya başvuru türlerinden şablonlar oluşturabilirsiniz.  Değer veya başvuru türleri oluşturma hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
 
-Standart C++ sınıf şablonları hakkında daha fazla bilgi için bkz: [sınıf şablonlarının](../cpp/class-templates.md).
+Standart C++ sınıf şablonları hakkında daha fazla bilgi için bkz. [sınıf şablonları](../cpp/class-templates.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-(Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için yalnızca Windows Çalışma Zamanı uygulanan bir açıklama yoktur.)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -32,7 +32,7 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Aşağıdaki kod örneklerinde gösterilmektedir yönetilen türlerinden sınıf şablonları oluşturmak için bazı sınırlamalar vardır.
+Aşağıdaki kod örneklerinde gösterilen yönetilen türlerden sınıf şablonları oluşturmaya yönelik bazı sınırlamalar vardır.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -40,7 +40,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor. Genel türler çalışma zamanında çözümlenir olmasıdır. Daha fazla bilgi için [genel türler ve temsilciler (C++/CLI)](generics-and-templates-visual-cpp.md).
+Yönetilen tür şablonu parametresiyle genel bir tür oluşturmak mümkündür, ancak bir genel tür şablonu parametresiyle yönetilen bir şablon örneği oluşturamazsınız. Bunun nedeni genel türlerin çalışma zamanında çözümlenme türüdür. Daha fazla bilgi için bkz. [Genel türler veC++şablonlar (/CLI)](generics-and-templates-visual-cpp.md).
 
 ```cpp
 // managed_templates.cpp
@@ -62,7 +62,7 @@ ref class R {
 };
 ```
 
-Bir genel tür veya işlev yönetilen bir şablonda iç içe olamaz.
+Genel tür veya işlev, yönetilen bir şablonda iç içe geçirilemez.
 
 ```cpp
 // managed_templates_2.cpp
@@ -73,7 +73,7 @@ template<class T> public ref class R {
 };
 ```
 
-C + ile başvurulan bir derlemede tanımlanan şablonları erişemiyor +/ CLI dili söz dizimi, ancak yansıma kullanabilirsiniz. Bir şablon örneği değil, meta verilerde yayıldığını değil. Bir şablon örneği varsa, yalnızca başvurulan üye işlevleri meta verilerde görüntülenir.
+İlişkili bir derlemede,/CLI dil sözdizimi ile C++tanımlı şablonlara erişemezsiniz, ancak yansıma kullanabilirsiniz. Şablon örneği yoksa meta verilerde yer verilmez. Şablon örneği oluşturulduğunda, yalnızca başvurulan üye işlevleri meta verilerde görüntülenir.
 
 ```cpp
 // managed_templates_3.cpp
@@ -103,7 +103,7 @@ int main() {
 }
 ```
 
-Kısmi özelleştirme veya bir sınıf şablonunun açık özelleştirme bir sınıfın yönetilen değiştiricisi değiştirebilirsiniz.
+Bir sınıfın yönetilen değiştiricisini, bir sınıf şablonunun kısmi özelleşmesi veya açık özelleştirmesi içinde değiştirebilirsiniz.
 
 ```cpp
 // managed_templates_4.cpp

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4997
 ms.assetid: d39678fd-0c1a-4104-8a45-9e3f20de0407
-ms.openlocfilehash: 7f531374a0aaa06372b811d25e1ce45bee10656f
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: ba5b2ec48c29b40ecb690cf9d222e518f91d219f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74052224"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174407"
 ---
 # <a name="compiler-warning-level-1-c4997"></a>Derleyici Uyarısı (düzey 1) C4997
 

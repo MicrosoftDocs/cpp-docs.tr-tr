@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - function templates overload resolution
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
-ms.openlocfilehash: a736e89565bb7ab6bc49c3c0f65d12fc9508200c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d96046c629e812e342ce86b850b6d52a57094997
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379135"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188447"
 ---
 # <a name="overload-resolution-of-function-template-calls"></a>İşlev Şablonu Çağrılarının Aşırı Yük Çözümü
 
-Şablon Olmayandan işlevleri aynı ada sahip bir işlev şablonu aşırı yüklenebilir. Bu senaryoda, işlev çağrıları ilk tarafından çözümlenir benzersiz bir özelleştirmesi ile işlev şablonu oluşturmak için şablon bağımsız değişkeni kesintisi kullanarak. Şablon bağımsız değişkeni kesintisi başarısız olursa, diğer bir işlev aşırı yüklemelerinin çağrıyı çözümlemek için olarak kabul edilir. Aday kümesi olarak da bilinen bu diğer aşırı yüklemeler, şablon Olmayandan işlevleri ve diğer örneklenmiş işlev şablonları içerir. Şablon bağımsız değişkeni kesintisi başarılı olursa, oluşturulan işlev aşırı yükleme çözümlemesi için kuralları aşağıdaki en iyi eşleşmeyi belirlemek için diğer işlevler ile karşılaştırılır. Daha fazla bilgi için [işlev aşırı yüklemesi](function-overloading.md).
+Bir işlev şablonu aynı adda şablon olmayan işlevleri aşırı yükleyebilir. Bu senaryoda, işlev çağrıları öncelikle, benzersiz bir özelleşmeye sahip işlev şablonunu örneklemek için şablon bağımsız değişken kesintisi kullanılarak çözümlenir. Şablon bağımsız değişkeni kesintisi başarısız olursa, diğer işlev aşırı yüklemeleri çağrıyı çözümlemek için kabul edilir. Aday kümesi olarak da bilinen bu diğer aşırı yüklemeler, şablon olmayan işlevleri ve diğer örneklenmiş işlev şablonlarını içerir. Şablon bağımsız değişkeni kesintisi başarılı olursa oluşturulan işlev, en iyi eşleşmeyi tespit etmek için diğer işlevlerle karşılaştırılır ve aşırı yükleme çözümlemesi kurallarını takip edin. Daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](function-overloading.md).
 
 ## <a name="example"></a>Örnek
 
-Şablon Olmayandan işlevi bir şablon işlevine eşit derecede iyi bir eşleşme varsa (şablon bağımsız değişkenleri açıkça belirtilen sürece) sınıflarındaki işlevi, bir çağrıda olarak seçilen `f(1, 1)` aşağıdaki örnekte.
+Şablon olmayan bir işlev, bir şablon işlevi ile eşit derecede iyi bir eşleşmedir, aşağıdaki örnekte `f(1, 1)` olduğu gibi şablon olmayan işlev seçilir (şablon bağımsız değişkenleri açıkça belirtilmediği sürece).
 
 ```cpp
 // template_name_resolution9.cpp
@@ -50,7 +50,7 @@ void f(T1, T2)
 
 ## <a name="example"></a>Örnek
 
-Sonraki örnekte, şablon Olmayandan işlevi bir dönüştürme gerektiriyorsa, tam olarak eşleşen şablon işlevi tercih edilir gösterilmektedir.
+Sonraki örnekte, şablon olmayan işlev bir dönüştürme gerektiriyorsa, tam olarak eşleşen şablon işlevinin tercih edildiği gösterilmektedir.
 
 ```cpp
 // template_name_resolution10.cpp

@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - RC1120
 ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
-ms.openlocfilehash: eff46ddee118c3355e548c73220b407db0561e36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 855a76ff63145695a7063944701d7acc684e0084
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374266"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173016"
 ---
 # <a name="resource-compiler-fatal-error-rc1120"></a>Kaynak Derleyicisi Önemli Hatası RC1120
 
-bellek yetersiz bayt sayısı gerekli
+bellek yetersiz, gereken sayıda bayt
 
-Kaynak derleyicisi, depolama, yığında depolayan öğeler için yetersiz. Genellikle bu çok fazla sembol olmasının sonucudur.
+Kaynak derleyicisi, yığınında sakladığı öğeler için depolama alanını tüketti. Genellikle bu, çok fazla sembol olmasının sonucudur.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
-1. Windows takas dosyası alanı artırın. Takas dosyası alanı artırma hakkında daha fazla bilgi için Windows Yardım sanal bellekte bakın.
+1. Windows takas dosyası alanını arttırın. Takas dosyası alanını artırma hakkında daha fazla bilgi için bkz. Windows yardımında sanal bellek.
 
-1. Gereksiz ekleme dosyaları, özellikle gereksiz `#define`s ve işlev prototipleri.
+1. Gereksiz içerme dosyalarını, özellikle de gereksiz `#define`s ve işlev prototiplerini kaldırın.
 
-1. Geçerli dosya iki veya daha fazla dosyalara bölün ve ayrı olarak derleyin.
+1. Geçerli dosyayı iki veya daha fazla dosyaya bölmek ve ayrı olarak derlemek.
 
-1. Diğer programları veya önemli miktarda bellek kullanan sistemde çalışan sürücüleri kaldırın.
+1. Sistemde çalışan diğer programları veya sürücüleri kaldırın ve bu, önemli miktarda bellek tüketiyor olabilir.

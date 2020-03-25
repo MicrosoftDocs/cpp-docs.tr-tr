@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1277
 ms.assetid: afca3de0-50cc-4140-af7a-13493a170835
-ms.openlocfilehash: 137aa15dd9dad4b08d52af55da60a9cdf8b58055
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c00fb32e4b36eff119195efbb34d536d80df6a9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160555"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183663"
 ---
 # <a name="linker-tools-error-lnk1277"></a>Bağlayıcı Araçları Hatası LNK1277
 
-Nesne kaydı pgd'de (dosya adı) bulunamadı
+nesne kaydı PGD 'de bulunamadı (dosya adı)
 
-Kullanırken [/LTCG:PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md), giriş .lib, def veya .obj dosyaları birinin yolu, bunlar bulundu /LTCG:PGINSTRUMENT sırasında yolundan farklı. Bu değişikliği LIB ortam değişkeni sonra /LTCG:PGINSTRUMENT açıklanması. Giriş dosyalarının tam yolunu .pgd dosyasında depolanır.
+[/LTCG: PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md)kullanılırken, Input. lib, def veya. obj dosyalarından birinin yolu,/LTCG: PGINSTRUMENT sırasında bulundukları yoldan farklıdır. Bu,/LTCG: PGıNSTRUMAFTER LIB ortam değişkeninde bir değişiklik tarafından açıklanabilir. Giriş dosyalarının tam yolu. pgd dosyasında depolanır.
 
-/LTCG:PGOPTIMIZE girişleri /LTCG:PGINSTRUMENT aşaması için aynı olmasını gerektirir.
+/LTCG: PGOPTIMIZE, girişlerin/LTCG: PGıNSTRUMENT aşamasına özdeş olmasını gerektirir.
 
-Bu uyarıyı çözmek için şunlardan birini yapın:
+Bu uyarıyı çözmek için aşağıdakilerden birini yapın:
 
-- /LTCG:PGINSTRUMENT çalıştırın, tüm test çalışmalarını Yinele ve /LTCG:PGOPTIMIZE çalıştırın.
+- /LTCG: PGıNSTRUMRUN, tüm test çalıştırmalarını Yinele ve/LTCG: PGOPTIMIZE ' i çalıştırın.
 
-- LIB ortam değişkeni /LTCG:PGINSTRUMENT çalıştırdığınızda neler olduğu için değiştirin.
+- LIB ortam değişkenini,/LTCG: PGıNSTRUMI çalıştırdığınızda olduğu gibi değiştirin.
 
-Geçici bir çözüm LNK1277 /LTCG:PGUPDATE kullanarak iş önerilmez.
+/LTCG: PGUPDATE kullanarak LNK1277 'te geçici bir çözüm yapmanız önerilmez.

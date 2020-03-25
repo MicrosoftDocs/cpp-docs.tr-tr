@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC1021
 ms.assetid: 9bc8858c-aa50-4b94-b60e-daf75ab45d77
-ms.openlocfilehash: 33d2a14888a0f7de807509e2494eba5cafa73a16
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9480ea1d8fff7867a591db7abd73c5481035353
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297348"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182675"
 ---
 # <a name="resource-compiler-fatal-error-rc1021"></a>Kaynak Derleyicisi Önemli Hatası RC1021
 
-Geçersiz önişlemci komutu 'string'
+geçersiz önişlemci komutu ' String '
 
-Sayı işareti aşağıdaki karakterleri (**#**) geçerli bir önişlemci yönergesine oluşturamadı.
+Numara işareti ( **#** ) izleyen karakterler geçerli bir Önişlemci yönergesi oluşturmuyor.
 
-Sayı işareti, bir tanımlayıcının ilk karakteri olarak kullanılamaz.
+Numara işareti, bir Tanımlayıcıdaki ilk karakter olarak kullanılamaz.

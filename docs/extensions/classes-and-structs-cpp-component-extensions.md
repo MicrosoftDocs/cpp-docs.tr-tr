@@ -13,12 +13,12 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: dd58f32d031068785cd6020549f9eea4b2182786
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 78cf7cf16c4ccf29f72038fd79c5d7a1689c05ac
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509812"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172574"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve başvuru yapısı (C++/CLI ve C++/CX)
 
@@ -41,16 +41,16 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 ### <a name="parameters"></a>Parametreler
 
 *class_access*<br/>
-Seçim Sınıf veya yapının derleme dışındaki erişilebilirliği. Olası değerler **genel** ve **özeldir** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapıların bir *class_access* belirleyicisi olamaz.
+Seçim Sınıf veya yapının derleme dışındaki erişilebilirliği. Olası değerler **genel** ve **özeldir** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar *class_access* tanımlayıcısına sahip olamaz.
 
-*name*<br/>
+*ada*<br/>
 Sınıf veya yapının adı.
 
 *icisi*<br/>
 Seçim [abstract](abstract-cpp-component-extensions.md) ve [Sealed](sealed-cpp-component-extensions.md) geçerli değiştiriciler.
 
 *inherit_access*<br/>
-Seçim *Base_type*'in erişilebilirliği. İzin verilen tek erişilebilirlik **geneldir** (**genel** varsayılandır).
+Seçim *Base_type*erişilebilirliği. İzin verilen tek erişilebilirlik **geneldir** (**genel** varsayılandır).
 
 *base_type*<br/>
 Seçim Temel tür. Ancak, bir değer türü temel tür olarak çalışamaz.
@@ -63,7 +63,7 @@ Daha fazla bilgi için, Windows Çalışma Zamanı ve ortak dil çalışma zaman
 
 Bir başvuru türü başka bir başvuru türünden devralırsa, taban sınıftaki sanal işlevlerin açıkça geçersiz kılınabilmesi gerekir ( [geçersiz kılma](override-cpp-component-extensions.md)ile) veya gizli ( [Yeni (vtable 'da yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)). Türetilmiş sınıf işlevlerinin de açıkça **sanal**olarak işaretlenmesi gerekir.
 
-Bir türün **başvuru sınıfı** veya **başvuru yapısı**, ya da bir **değer sınıfı** veya **değer yapısı**olup olmadığı derleme zamanında algılamak için, veya `__is_ref_class (type)` `__is_simple_value_class (type)`kullanın `__is_value_class (type)`. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir türün **başvuru sınıfı** veya **başvuru yapısı**ya da bir **değer sınıfı** veya **değer yapısı**olup olmadığı derleme zamanında algılamak için `__is_ref_class (type)`, `__is_value_class (type)`veya `__is_simple_value_class (type)`kullanın. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 Sınıflar ve yapılar hakkında daha fazla bilgi için bkz.
 
@@ -73,7 +73,7 @@ Sınıflar ve yapılar hakkında daha fazla bilgi için bkz.
 
 - [Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)
 
-- [Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
+- [Nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C++/CLI) içinde yok ediciler ve sonlandırıcılar](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
 
 - [Kullanıcı Tanımlı İşleçler (C++/CLI)](../dotnet/user-defined-operators-cpp-cli.md)
 
@@ -100,7 +100,7 @@ Seçim Temel tür. Bir **başvuru sınıfı** veya **başvuru yapısı** sıfır
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -119,7 +119,7 @@ Seçim Temel tür. Bir **başvuru sınıfı** veya **başvuru yapısı** , sıf�
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

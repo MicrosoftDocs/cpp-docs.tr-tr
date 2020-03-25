@@ -7,19 +7,19 @@ helpviewer_keywords:
 - CAN0004
 - CXX0004
 ms.assetid: a4063eda-0335-4ae7-9595-29cf10669376
-ms.openlocfilehash: 0913fd814c980362c696ecadcfd1c230f0edbb1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98c3301d0ee8e45fb114458f88fd7a9b2403d3b8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406125"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80196371"
 ---
 # <a name="expression-evaluator-error-cxx0004"></a>İfade Değerlendirici Hatası CXX0004
 
-Sözdizimi hatası
+söz dizimi hatası
 
 İfadenin sözdizimi yanlış.
 
-İfade doğru sözdizimi ile yeniden yazın.
+İfadeyi doğru sözdizimiyle yeniden yazın.
 
-Bu hata için CAN0004 aynıdır.
+Bu hata CAN0004 ile aynıdır.

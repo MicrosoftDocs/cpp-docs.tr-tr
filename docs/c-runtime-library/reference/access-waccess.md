@@ -34,12 +34,12 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-ms.openlocfilehash: 90092b5d1c250fd79be107b0c36ee5641f70b30c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 54e112db1e0d7d4ec5495d02cf56a62b51607140
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943933"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170390"
 ---
 # <a name="_access-_waccess"></a>_access, _waccess
 
@@ -60,7 +60,7 @@ int _waccess(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yolu*<br/>
+*Yolun*<br/>
 Dosya veya dizin yolu.
 
 *modundaysa*<br/>
@@ -68,7 +68,7 @@ Okuma/yazma özniteliği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen moda sahip değilse, işlev-1 değerini döndürür; Bu durumda, `errno` aşağıdaki tabloda gösterildiği gibi ayarlanır.
+Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen moda sahip değilse, işlev-1 değerini döndürür; Bu durumda, aşağıdaki tabloda gösterildiği gibi `errno` ayarlanır.
 
 |||
 |-|-|
@@ -80,33 +80,33 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosyalarla birlikte kullanıldığında, **_access** işlevi belirtilen dosya veya dizinin var olduğunu ve *mod*değeri tarafından belirtilen özniteliklere sahip olup olmadığını belirler. Dizinler ile kullanıldığında, **_access** yalnızca belirtilen dizinin mevcut olup olmadığını belirler; Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinlerin okuma ve yazma erişimi vardır.
+Dosyalarla birlikte kullanıldığında, **_access** işlevi, belirtilen dosya veya dizinin var olduğunu ve *mod*değeri tarafından belirtilen özniteliklere sahip olup olmadığını belirler. Dizinler ile kullanıldığında **_access** yalnızca belirtilen dizinin mevcut olup olmadığını belirler; Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinlerin okuma ve yazma erişimi vardır.
 
 |*mod* değeri|İçin dosyayı denetler|
 |------------------|---------------------|
 |0|Yalnızca varlık|
 |02|Salt yazılır|
-|04|Salt okunurdur|
+|04|salt okunurdur|
 |06|Okuma ve yazma|
 
 Bu işlev yalnızca dosya ve dizinin salt okunurdur olup olmadığını denetler, dosya sistemi güvenlik ayarlarını denetlemez. İçin bir erişim belirtecine ihtiyacınız vardır. Dosya sistemi güvenliği hakkında daha fazla bilgi için bkz. [erişim belirteçleri](/windows/win32/SecAuthZ/access-tokens). Bu işlevi sağlamak için ATL sınıfı vardır; bkz. [CAccessToken sınıfı](../../atl/reference/caccesstoken-class.md).
 
-**_waccess** , **_access**'in geniş karakterli bir sürümüdür; **_waccess** 'in *yol* bağımsız değişkeni, geniş karakterli bir dizedir. **_waccess** ve **_access** aynı şekilde davranır.
+**_waccess** , **_access**geniş karakterli bir sürümüdür; _waccess *yol* bağımsız değişkeni **_waccess** , geniş karakterli bir dizedir. **_waccess** ve **_access** aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev öğesini olarak `errno` `EINVAL` ayarlar ve-1 döndürür.
+Bu işlev, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev `EINVAL` `errno` ayarlar ve-1 döndürür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_taccess`|**_erişim**|**_erişim**|**_waccess**|
+|`_taccess`|**_access**|**_access**|**_waccess**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_erişim**|\<GÇ. h >|\<errno. h >|
-|**_waccess**|\<wchar. h > veya \<GÇ. h >|\<errno. h >|
+|**_access**|\<IO. h >|\<errno. h >|
+|**_waccess**|\<wchar. h > veya \<io. h >|\<errno. h >|
 
 ## <a name="example"></a>Örnek
 

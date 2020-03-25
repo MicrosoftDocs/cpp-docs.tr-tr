@@ -33,16 +33,16 @@ helpviewer_keywords:
 - _access_s function
 - _waccess_s function
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
-ms.openlocfilehash: 0550b8fb42cb62d1a175960d6b0d4ed4dbecdcac
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e7e61369635a1a59ef16aa6262650d9648277eb0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939900"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171326"
 ---
 # <a name="_access_s-_waccess_s"></a>_access_s, _waccess_s
 
-Dosya okuma/yazma izinlerini belirler. Bu, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [, _access, _waccess](access-waccess.md) 'in bir sürümüdür.
+Dosya okuma/yazma izinlerini belirler. Bu, _access bir sürümüdür [ve](access-waccess.md) [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan güvenlik geliştirmeleriyle _waccess.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,7 +59,7 @@ errno_t _waccess_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yolu*<br/>
+*Yolun*<br/>
 Dosya veya dizin yolu.
 
 *modundaysa*<br/>
@@ -67,7 +67,7 @@ Dosya veya dizin yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen modda erişilebilir değilse işlev bir hata kodu döndürür. Bu durumda, işlev kümeden aşağıdaki gibi bir hata kodu döndürür ve ayrıca aynı değere ayarlanır `errno` .
+Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen modda erişilebilir değilse işlev bir hata kodu döndürür. Bu durumda, işlev kümeden aşağıdaki gibi bir hata kodu döndürür ve ayrıca aynı değere `errno` ayarlanır.
 
 |errno değeri|Koşul|
 |-|-|
@@ -88,11 +88,11 @@ Dosyalarla birlikte kullanıldığında, **_access_s** işlevi belirtilen dosyan
 |04|Okuma izni.|
 |06|Okuma ve yazma izni.|
 
-Dosyayı okuma veya yazma izni, bir dosyayı açabildiğinizden emin olmak için yeterli değil. Örneğin, bir dosya başka bir işlem tarafından kilitliyse, **_access_s** 0 döndürürse bile bu, erişilebilir olmayabilir.
+Dosyayı okuma veya yazma izni, bir dosyayı açabildiğinizden emin olmak için yeterli değil. Örneğin, bir dosya başka bir işlem tarafından kilitlenmişse, **_access_s** 0 döndürdüğünden bile erişilebilir olmayabilir.
 
-**_waccess_s** , _access_s 'ın *yol* bağımsız değişkeninin geniş karakterli bir **dize olduğu**'ın geniş karakterli bir sürümüdür. Aksi halde, **_waccess_s** ve **_access_s** aynı şekilde davranır.
+**_waccess_s** , **_waccess_s** *yol* bağımsız değişkeninin geniş karakterli bir dize olduğu **_access_s**geniş karakterli bir sürümüdür. Aksi takdirde, **_waccess_s** ve **_access_s** aynı şekilde davranır.
 
-Bu işlevler, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler öğesini olarak `errno` `EINVAL` ayarlar ve döndürür `EINVAL`.
+Bu işlevler, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler `EINVAL` ve `EINVAL`döndürecek şekilde `errno` ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -104,12 +104,12 @@ Bu işlevler, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod 
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_access_s**|\<GÇ. h >|\<errno. h >|
-|**_waccess_s**|\<wchar. h > veya \<GÇ. h >|\<errno. h >|
+|**_access_s**|\<IO. h >|\<errno. h >|
+|**_waccess_s**|\<wchar. h > veya \<io. h >|\<errno. h >|
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, var olup olmadığını ve yazmaya izin verilip verilmeyeceğini görmek için crt_access_s. c adlı dosyayı denetlemek üzere **_access_s** kullanır.
+Bu örnek, varolup olmadığını ve yazmaya izin verilip verilmeyeceğini görmek için crt_access_s. c adlı dosyayı denetlemek üzere **_access_s** kullanır.
 
 ```C
 // crt_access_s.c

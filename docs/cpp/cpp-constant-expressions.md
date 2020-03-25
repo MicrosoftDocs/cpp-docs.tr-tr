@@ -6,45 +6,45 @@ helpviewer_keywords:
 - constant expressions
 - expressions [C++], constant
 ms.assetid: b07245a5-4c21-4589-b503-e6ffd631996f
-ms.openlocfilehash: 97059066adadc3a7897cbd2c4c747e2a673e7201
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4d9803c7f80caba3c33d011e4df433491b9b591
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154678"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170585"
 ---
 # <a name="c-constant-expressions"></a>C++ Sabit İfadeleri
 
-A *sabit* değeri olan bir değişikliğe neden olmaz. C++ iki anahtar sözcüğü bir nesne değiştirilecek ve o hedefi zorlamak için tasarlanmamıştır hedefi express olanak sağlar.
+Değişmeyen *bir değer değişmez* . C++, bir nesnenin değiştirilme amacını ifade etmek ve bu amacı zorlamak için iki anahtar sözcük sağlar.
 
-C++ sabit ifadeleri gerekir — bir sabit ifadeler — bildirimleri için:
+C++' in bildirimleri için sabit ifadeler (bir sabiti değerlendiren ifadeler) gerektirir:
 
 - Dizi sınırları
 
-- Case deyimleri Seçici
+- Case deyimlerine yönelik seçiciler
 
-- Bit alanı uzunluğu belirtimi
+- Bit alanı uzunluk belirtimi
 
-- Sabit listesi başlatıcıları
+- Sabit Listesi başlatıcıları
 
-Sabit ifadelerde yasal yalnızca işlenen şunlardır:
+Sabit deyimlerde geçerli olan tek işlenenler şunlardır:
 
 - Sabit değerler
 
-- Numaralandırma sabitlerini
+- Sabit Listesi sabitleri
 
-- Değerleri, sabit ifadeler başlatılır const olarak bildirildi
+- Sabit ifadelerle başlatılan const olarak belirtilen değerler
 
 - **sizeof** ifadeleri
 
-Nonintegral Sabitleri (açıkça veya dolaylı olarak) sabit bir ifadede meşru integral türlerine dönüştürülmesi gerekir. Bu nedenle, aşağıdaki kod geçerlidir:
+İntegral olmayan sabitlerin sabit bir ifadede yasal olması için integral türlerine dönüştürülmesi gerekir (açıkça veya örtük olarak). Bu nedenle, aşağıdaki kod geçerlidir:
 
 ```cpp
 const double Size = 11.0;
 char chArray[(int)Size];
 ```
 
-Açık dönüştürmeler integral türleri sabit ifadelerde geçerli; diğer tüm türleri ve türetilen türler için işlenen olarak kullanılması dışında geçersiz **sizeof** işleci.
+Tamsayı türlerine açık dönüştürmeler sabit ifadelerde geçerlidir; Tüm diğer türler ve türetilmiş türler, bir **sizeof** işleci için işlenen olarak kullanılması dışında geçersizdir.
 
 Virgül işleci ve atama işleçleri sabit ifadelerde kullanılamaz.
 

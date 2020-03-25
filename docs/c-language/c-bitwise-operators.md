@@ -12,38 +12,38 @@ helpviewer_keywords:
 - ^ operator
 - '& operator, bitwise operators'
 ms.assetid: e22127b1-9a2d-4876-b01d-c8f72cec3317
-ms.openlocfilehash: 2133aaa5faa0f4bef7391fb5c0e7e0eb51fd4e69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50be8ae38f21d0a9f46c180abf179e1358b707cd
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325799"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168779"
 ---
 # <a name="c-bitwise-operators"></a>C Bit Düzeyinde İşleçler
 
-Bit düzeyinde işleçler bit düzeyinde gerçekleştirmek- ve (**&**), bit düzeyinde dışlamalı OR (**^**) ve bit düzeyinde kapsamalı OR (**&#124;**) işlemler.
+Bit düzeyinde işleçler bit düzeyinde AND ( **&** ), bit düzeyinde dışlamalı veya ( **^** ) ve bit düzeyinde kapsamlı veya ( **&#124;** ) işlemleri gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*VE ifade*: &nbsp; &nbsp; *eşitlik ifade* &nbsp; &nbsp; *ve ifade* **&** *eşitlik ifadesi*
+*Ve-ifadesi*: &nbsp;&nbsp;*eşitlik Ifadesi* &nbsp;&nbsp;*ve-Expression* **&** *eşitlik* ifadesi
 
-*dışlamalı OR ifadesi*: &nbsp;&nbsp;*VE ifade* &nbsp; &nbsp; *dışlamalı OR ifadesi* **^** *ve ifade*
+*DıŞLAMALı or ifadesi*: &nbsp;&nbsp;*ve-Expression* &nbsp;&nbsp;*dışlamalı* -ifadesi **^** *ve-* ifadesi
 
-*OR ifadesi kapsamlı*: &nbsp; &nbsp; *dışlamalı OR ifadesi* &nbsp; &nbsp; *OR ifadesi kapsamlı* &#124; *dışlamalı OR ifadesi*
+*kapsamlı or ifadesi*: &nbsp;&nbsp;*dışlamalı* ya da-Expression &nbsp;&nbsp;*kapsamlı or* &#124; ifadesi *dışlamalı-OR-ifadesi*
 
-Bit düzeyinde işleçler işleneni integral türleri olması gerekir, ancak bunların türlerini farklı olabilir. Bu işleçlerden her zamanki aritmetik dönüşümleri gerçekleştirir; Sonuç türü dönüştürme işleminden sonra işlenenler türüdür.
+Bit düzeyinde işleçlerin işlenenleri integral türlerine sahip olmalıdır, ancak türleri farklı olabilir. Bu işleçler, her zamanki aritmetik dönüştürmeleri gerçekleştirir; sonucun türü, dönüştürmeden sonra işlenen türüdür.
 
 C bit düzeyinde işleçler aşağıda açıklanmıştır:
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|**&**|Bitwise- ve karşılık gelen bit ikinci işlenenin ilk işlenenin her bitini işleci karşılaştırır. Her iki bit 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.|
-|**^**|Bit düzeyinde dışlamalı OR işleci, ikinci işlenenin karşılık gelen bit ilk işlenenin her bitini karşılaştırır. Bir bit 0'dır ve 1 diğer bit ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.|
-|**&#124;**|Bit düzeyinde kapsamalı OR işleci, ikinci işlenenin karşılık gelen bit ilk işlenenin her bitini karşılaştırır. Her iki bit 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.|
+|**&**|Bit düzeyinde AND işleci, ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine karşılaştırır. Her iki bit de 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.|
+|**^**|Bit düzeyinde dışlamalı OR işleci, ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine göre karşılaştırır. Bir bit 0 ise ve diğer bit 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.|
+|**&#124;**|Bit düzeyinde kapsamlı OR işleci, ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine göre karşılaştırır. Her iki bit de 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.|
 
 ## <a name="examples"></a>Örnekler
 
-Bu bildirimler, aşağıdaki üç örnekleri için kullanılır:
+Bu bildirimler aşağıdaki üç örnek için kullanılır:
 
 ```C
 short i = 0xAB00;
@@ -53,7 +53,7 @@ short n;
 n = i & j;
 ```
 
-Atanan sonucu `n` bu ilk örnekte aynıdır `i` (onaltılık 0xAB00).
+Bu ilk örnekte `n` atanan sonuç, `i` (0xAB00 onaltılık) ile aynıdır.
 
 ```C
 n = i | j;
@@ -61,11 +61,11 @@ n = i | j;
 n = i ^ j;
 ```
 
-Bit düzeyinde özel veya üçüncü örnek 0xCD (onaltılık düzende) üretir ancak ikinci örnekte bit düzeyinde kapsamalı OR değeri (onaltılı) 0xABCD sonuçlanır.
+Bit düzeyinde kapsamlı veya ikinci örnekte, 0xABCD (onaltılı) değeri, bit düzeyinde dışlamalı veya üçüncü örnekte 0xCD (onaltılı) üretilirken oluşur.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İmzalı tamsayılar üzerinde bit düzeyinde işlem sonuçlarını ANSI C standardı göre uygulama tanımlı. Microsoft C derleyicisi için işaretsiz tamsayılarda bit düzeyinde işlemler aynı işaretli tamsayılarda bit düzeyinde çalışır. Örneğin, `-16 & 99` ikili olarak ifade edilebilir
+İşaretli tamsayılar üzerinde bit düzeyinde işlemin sonuçları, ANSI C standardına göre uygulama tarafından tanımlanır. Microsoft C derleyicisi için, işaretli tamsayıların bit düzeyinde işlemleri işaretsiz tamsayılar üzerinde bit tabanlı işlemlerle aynı şekilde çalışır. Örneğin, `-16 & 99` ikili dosyada şu şekilde ifade edilebilir
 
 ```Expression
   11111111 11110000
@@ -74,12 +74,12 @@ Bit düzeyinde özel veya üçüncü örnek 0xCD (onaltılık düzende) üretir 
   00000000 01100000
 ```
 
-Bit düzeyinde AND'in sonucu 96 ondalık ' dir.
+Bit düzeyinde ve 96 Decimal 'in sonucu.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bit Düzeyinde AND İşleci: &](../cpp/bitwise-and-operator-amp.md)<br/>
 [Bit Düzeyinde Özel OR İşleci: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
-[Bit düzeyinde kapsamlı OR işleci:&#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)
+[Bit düzeyinde kapsamlı OR Işleci:&#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)

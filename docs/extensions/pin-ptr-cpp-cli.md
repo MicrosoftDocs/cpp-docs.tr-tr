@@ -10,28 +10,28 @@ helpviewer_keywords:
 - pinning pointers
 - pin_ptr keyword [C++]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
-ms.openlocfilehash: a8c6733a9f6e5c9650333f96a92ff18eedb9c356
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 920135943c9dfb46b00ee6ceb2535fde128dffb0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374212"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172041"
 ---
-# <a name="pinptr-ccli"></a>pin_ptr (C++/CLI)
+# <a name="pin_ptr-ccli"></a>pin_ptr (C++/CLI)
 
-Bildiren bir *sabitleme işaretçisi*, yalnızca ortak dil çalışma zamanı ile kullanılır.
+Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini*bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-(Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için tüm çalışma zamanları için uygulanan bir açıklama yoktur.)
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-(Bu dil özelliği, Windows çalışma zamanı'nda desteklenmiyor.)
+(Bu dil özelliği Windows Çalışma Zamanı desteklenmez.)
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-A *sabitleme işaretçisi* nesne engelleyen bir işaretçiye atık toplanan yığında taşınmasını verilir. Diğer bir deyişle, bir sabitleme işaretçisi değeri, ortak dil çalışma zamanı tarafından değiştirilmez. Adresi yönetilmeyen bir işlev çağrısının bir Çözümleme sırasında beklenmedik bir şekilde değiştirmez, yönetilen bir sınıf adresi yönetilmeyen bir işleve geçirdiğinizde, bu gereklidir.
+*Sabitleme işaretçisi* , nesne işaret eden atık toplanan yığında taşınmasını engelleyen iç bir işaretçidir. Diğer bir deyişle, Sabitleme işaretçisinin değeri ortak dil çalışma zamanı tarafından değiştirilmez. Yönetilmeyen işlev çağrısının çözümlenmesi sırasında adresin beklenmedik şekilde değişmemesi için, yönetilen bir sınıfın adresini yönetilmeyen bir işleve geçirdiğinizde bu gereklidir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -42,54 +42,54 @@ A *sabitleme işaretçisi* nesne engelleyen bir işaretçiye atık toplanan yı�
 ### <a name="parameters"></a>Parametreler
 
 *cv_qualifier*<br/>
-**const** veya **geçici** niteleyicileri. Varsayılan olarak, bir sabitleme işaretçisi olan **geçici**. Bir sabitleme işaretçisi bildirmek için bir hatayı değil gereksizdir **geçici**.
+**const** veya **volatile** niteleyicileri. Varsayılan olarak sabitleme işaretçisi **geçici**olur. Yok ancak Sabitleme işaretçisinin **geçici**bir şekilde bildirildiği bir hata değildir.
 
 *type*<br/>
-Türünü *Başlatıcı*.
+*Başlatıcı*türü.
 
 *var*<br/>
-Adını **pin_ptr** değişkeni.
+**Pin_ptr** değişkeninin adı.
 
-*Başlatıcı*<br/>
-Bir başvuru türü, yönetilen bir diziyi veya yerel bir işaretçiye atayabilirsiniz herhangi bir nesne öğesi üyesi.
+*izer*<br/>
+Bir başvuru türünün üyesi, yönetilen bir dizinin öğesi ya da yerel bir işaretçiye atayabileceğiniz başka herhangi bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-A **pin_ptr** yerel bir işaretçi bir işlevselliğin temsil eder. Bu nedenle, yerel bir işaretçiye atanabilir herhangi bir şey de atanabilir bir **pin_ptr**. İç işaretçiye karşılaştırma ve işaretçi aritmetiğini dahil olmak üzere, yerel işaretçiler olarak aynı işlemleri kümesini gerçekleştirmek için izin verilir.
+**Pin_ptr** , yerel işaretçinin işlevselliğinin bir üst kümesini temsil eder. Bu nedenle, yerel bir işaretçiye atanabilecek her türlü şey bir **pin_ptr**da atanabilir. İç işaretçiye karşılaştırma ve işaretçi aritmetiği dahil olmak üzere yerel işaretçilerle aynı işlem kümesi gerçekleştirmesine izin verilir.
 
-Bir nesne veya alt nesne bir yönetilen sınıfın durumda ortak dil çalışma zamanı, çöp toplama sırasında taşımaz sabitlenebilir. Bu asıl kullanımı, yönetilmeyen işlev çağrısının gerçek bir parametre olarak yönetilen verileri bir işaretçi geçirmektir. Bir toplama döngüsü sırasında çalışma zamanı için sabitleme işaretçisi oluşturulan meta verileri incelemek ve işaret öğe taşınmaz.
+Yönetilen bir sınıfın bir nesnesi veya alt nesnesi sabitlenebilir ve bu durumda ortak dil çalışma zamanı atık toplama sırasında taşınamaz. Bunun asıl kullanımı, yönetilmeyen bir işlev çağrısının gerçek parametresi olarak yönetilen verilere bir işaretçi geçirmektir. Bir koleksiyon çevrimi sırasında, çalışma zamanı sabitleme işaretçisi için oluşturulan meta verileri inceler ve işaret ettiği öğeyi taşımaz.
 
-Bir nesneyi sabitleme değeri alanlarını sabitler; diğer bir deyişle, temel alanlarını veya değer türü. Ancak, alanlar bildirilen izleme işleyicisi tarafından (`%`) değil sabitlenir.
+Bir nesnenin sabitlenmesi Ayrıca değer alanlarını da sabitler; diğer bir deyişle, ilkel veya değer türünün alanları. Ancak, izleme tutamacı (`%`) tarafından tanımlanan alanlar sabitlenmez.
 
-Yönetilen bir nesnenin içinde tanımlanmış bir alt nesneyi sabitleme tüm nesne sabitlenmesi etkisi vardır.
+Yönetilen bir nesnede tanımlanan bir alt nesnenin sabitlenmesi, tüm nesnenin sabitlenmesini etkiler.
 
-Sabitleme işaretçisi için yeni bir değer işaret edecek şekilde yeniden atandı, işaret önceki örneği artık değerlendirilir sabitlenebilir.
+Sabitleme işaretçisi yeni bir değere işaret etmek için yeniden atandığında, işaret edilen önceki örnek artık sabitlenmiş olarak kabul edilmez.
 
-Bir nesne sabitlenmiş ancak bir **pin_ptr** kendisine işaret eder. Nesne artık onun sabitleme işaretçisi kapsamın dışına çıkıncaya ya da ayarlanmış sabitlenmiş [nullptr](nullptr-cpp-component-extensions.md). Sonra **pin_ptr** sabitlenmiş nesne kapsam dışına gider taşınabilir yığınında çöp toplayıcısı tarafından. Hala nesneye işaret eden herhangi bir yerel işaretçilerle güncelleştirilmez ve bunlardan birinin XML'deki başvuran kurtarılamaz bir özel durum oluşturabilen.
+Bir nesne yalnızca bir **pin_ptr** işaret edilirken sabitlenmiştir. Sabitleme işaretçisi kapsam dışına geçtiğinde nesne artık sabitlenemez veya [nullptr](nullptr-cpp-component-extensions.md)olarak ayarlanır. **Pin_ptr** kapsam dışına çıktıktan sonra, sabitlenmiş nesne çöp toplayıcı tarafından yığında taşınabilir. Hala nesneyi işaret eden yerel işaretçiler güncellenmez ve bunlardan birine başvurulmaz kurtarılamaz bir özel durum oluşturabilir.
 
-Hiçbir sabitleme işaretçileri nesneye gelirseniz (kapsam dışına oluştu, diğer nesnelere işaret edecek şekilde yeniden veya atanmış olan tüm sabitleme işaretçileri [nullptr](nullptr-cpp-component-extensions.md)), nesne olmayan sabitlenmiş garanti edilir.
+Nesneye sabitleme işaretçileri yoksa (tüm sabitleme işaretçileri kapsam dışına çıktı, diğer nesneleri işaret etmek için [yeniden atandı, ya da kendisine atandı](nullptr-cpp-component-extensions.md)), nesnenin sabitlenmiş olmaması garanti edilir.
 
-Bir sabitleme işaretçisi bir başvuru tanıtıcı, değer türü veya kutulu tür tanıtıcı, bir yönetilen türün üye veya yönetilen bir dizi öğesi işaret edebilir. Bu, bir başvuru türüne işaret edemez.
+Sabitleme işaretçisi bir başvuru tanıtıcısı, değer türü veya paketlenmiş tür tanıtıcısı, yönetilen bir türün üyesi veya yönetilen dizinin bir öğesi ile işaret edebilir. Başvuru türüne işaret edemez.
 
-Adresinin alınmasına bir **pin_ptr** yerel nesnesini noktalarına tanımsız davranışa neden.
+Yerel bir nesneye işaret eden bir **pin_ptr** adresini almak tanımsız davranışlara neden olur.
 
-Sabitleme işaretçileri yığında yalnızca statik olmayan yerel değişkenleri olarak bildirilebilir.
+Sabitleme işaretçileri yığında yalnızca statik olmayan yerel değişkenler olarak bildirilemez.
 
-Sabitleme işaretçileri olarak kullanılamaz:
+Sabitleme işaretçileri şu şekilde kullanılamaz:
 
 - işlev parametreleri
 
 - bir işlevin dönüş türü
 
-- bir sınıf üyesi
+- bir sınıfın üyesi
 
-- bir yayın hedef türü.
+- bir tür dönüştürmenin hedef türü.
 
-**pin_ptr** bulunduğu `cli` ad alanı. Daha fazla bilgi için [Platform, varsayılan ve cli ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md).
+**pin_ptr** , `cli` ad alanıdır. Daha fazla bilgi için bkz. [Platform, Default ve CLI ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md).
 
-İç işaretçiler hakkında daha fazla bilgi için bkz: [interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md).
+İç işaretçiler hakkında daha fazla bilgi için bkz. [interior_ptrC++(/CLI)](interior-ptr-cpp-cli.md).
 
-İşaretçileri sabitleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: İşaretçiler ve dizileri sabitleme](how-to-pin-pointers-and-arrays.md) ve [nasıl yapılır: Sabitleme işaretçileri ve değer türlerini](how-to-declare-pinning-pointers-and-value-types.md).
+İşaretçileri sabitleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: işaretçi ve dizileri sabitleme](how-to-pin-pointers-and-arrays.md) ve [nasıl yapılır: sabitleme Işaretçileri ve değer türleri bildirme](how-to-declare-pinning-pointers-and-value-types.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -97,7 +97,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekte **pin_ptr** kısıtlayan bir dizinin ilk öğenin konumu.
+Aşağıdaki örnek, bir dizinin ilk öğesinin konumunu kısıtlamak için **pin_ptr** kullanır.
 
 ```cpp
 // pin_ptr_1.cpp
@@ -147,7 +147,7 @@ int main() {
 45
 ```
 
-Aşağıdaki örnek, iç işaretçiye bir sabitleme işaretçisine dönüştürülebilir ve sonuç address-of işlecini türü gösterir (`&`) işlenen yönetilen yığında iç işaretçiye olur.
+Aşağıdaki örnek bir iç işaretçinin sabitleme işaretçisine dönüştürüleceğini ve adres işlecinin (`&`) dönüş türünün, işlenen yönetilen yığında olduğunda iç işaretçi olduğunu gösterir.
 
 ```cpp
 // pin_ptr_2.cpp
@@ -181,7 +181,7 @@ int main() {
 1
 ```
 
-Aşağıdaki örnek, bir sabitleme işaretçisi başka bir türüne dönüştürülebilen gösterir.
+Aşağıdaki örnek, Sabitleme işaretçisinin başka bir türe yayınlanacağını göstermektedir.
 
 ```cpp
 // pin_ptr_3.cpp

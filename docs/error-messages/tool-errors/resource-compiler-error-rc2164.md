@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - RC2164
 ms.assetid: 23d7691d-80f3-4979-a519-378e5498d2d1
-ms.openlocfilehash: d9da84f6f59782f93d7a13d0e9aa46b1a88cc064
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6e01dabb2f6b13ea38de833fcd0a3e271e05c76
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396914"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191216"
 ---
 # <a name="resource-compiler-error-rc2164"></a>Kaynak Derleyicisi Hatası RC2164
 
-RCDATA beklenmeyen değer
+RCDATA içinde beklenmeyen değer
 
-*Ham verileri* değerler **RCDATA** deyimi bir tamsayı veya dize olmalıdır, her bir virgülle ayrılmış. Değil virgül bırakın veya bir dize etrafında tırnak işareti kullanıma bırakın emin olun.
+**Rcdata** deyimindeki *ham veri* değerleri, her biri virgülle ayrılmış tamsayılar veya dizeler olmalıdır. Bir dize etrafında bir virgül bırakmadığınızdan veya tırnak işareti bırakmadığınızdan emin olun.

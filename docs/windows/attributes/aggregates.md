@@ -9,12 +9,12 @@ helpviewer_keywords:
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-ms.openlocfilehash: c9e3f84fbc781bd5187ae0c3461a6c8d68a29aa0
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 08e623d84553f9fcf556c9cf480c1816c7300460
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501878"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168505"
 ---
 # <a name="aggregates"></a>toplamlar
 
@@ -32,13 +32,13 @@ Nesnenin CLSID tarafından belirtilen nesneyi topladığını gösterir.
 Toplanamayan nesnenin CLSID değerini belirtir.
 
 *variable_name*<br/>
-Eklenecek değişkenin adı. Bu değişken, `IUnknown` toplanmakta olan nesneyi içerir.
+Eklenecek değişkenin adı. Bu değişken, toplanan nesnenin `IUnknown` içerir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir nesneye uygulandığında, **toplamalar** C++ özniteliği toplanmış nesne (tarafından `clsid`belirtilen) için bir dış sarmalayıcı uygular.
+Bir nesneye uygulandığında, **toplamalar** C++ özniteliği toplanmış nesne için bir dış sarmalayıcı uygular (`clsid`tarafından belirtilir).
 
-Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` `vi_progid` uygulanmışsa ve`coclass` de uygulanır.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` uygulanmışsa `vi_progid` ve `coclass` de uygulanır.
 
 ### <a name="atl-projects"></a>ATL projeleri
 
@@ -48,7 +48,7 @@ Bu öznitelik, ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davra
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)
 ```
 
-İkincisi, [DECLARE_GET_CONTROLLING_UNKNOWN](../../atl/reference/aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makrosu da eklenir.
+İkinci olarak, [DECLARE_GET_CONTROLLING_UNKNOWN](../../atl/reference/aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makro da eklenir.
 
 ## <a name="example"></a>Örnek
 
@@ -84,9 +84,9 @@ struct CObject : IObject
 |||
 |-|-|
 |**Uygulama hedefi**|**sınıf**, **Yapı**|
-|**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`, veya `vi_progid`.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Tekrarlanabilir**|Yes|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

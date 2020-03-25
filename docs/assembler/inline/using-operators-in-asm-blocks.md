@@ -9,18 +9,18 @@ helpviewer_keywords:
 - operators [C++], using in __asm blocks
 - square brackets [ ]
 ms.assetid: a26ccfd4-40ae-4a61-952f-c417982aa8dd
-ms.openlocfilehash: a871c19942252bf6a1a4901f8854b7b759700cd9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6ac9f7174baf1e0ebe41181c6a6f43e7bb3f5d1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166509"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169103"
 ---
-# <a name="using-operators-in-asm-blocks"></a>__asm Bloklarında İşleçler Kullanma
+# <a name="using-operators-in-__asm-blocks"></a>__asm Bloklarında İşleçler Kullanma
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir `__asm` blok kullanamaz belirli işleçleri, C veya C++ gibi **<<** işleci. Bununla birlikte, işleçler paylaşılan MASM, C ile gibi \* işleci, derleme dili işletmenler olarak yorumlanır. Örneğin dışında bir `__asm` engelleme, köşeli ayraç (**[]**) olarak C, dizideki bir öğe için otomatik olarak ölçeklenen, dizi indisi kapsayan olarak yorumlanır. İçinde bir `__asm` blok, herhangi bir veri nesnesi veya etiket (yalnızca bir dizi) bir ölçeklendirilmemiş bayt uzaklığı verir MASM dizin işleci olarak görülür. Aşağıdaki kod, farkı göstermektedir:
+`__asm` bloğu, **<<** Işleci gibi C C++ veya özel işleçleri kullanamaz. Ancak, C ve MASM tarafından paylaşılan işleçler, \* işleci gibi, derleme dili işleçleri olarak yorumlanır. Örneğin, bir `__asm` bloğunun dışında köşeli ayraçlar ( **[]** ) kapsayan dizi alt simgeleri olarak yorumlanır ve C, dizideki bir öğenin boyutuna otomatik olarak ölçeklendirilir. `__asm` bloğu içinde, hiçbir veri nesnesinden veya etiketten (yalnızca bir dizi değil) ölçeklendirilmemiş bir bayt boşluğu veren MASM Dizin işleci olarak görülür. Aşağıdaki kod farkı göstermektedir:
 
 ```cpp
 int array[10];
@@ -30,7 +30,7 @@ __asm mov array[6], bx ;  Store BX at array+6 (not scaled)
 array[6] = 0;         /* Store 0 at array+24 (scaled) */
 ```
 
-Olan ilk başvurunun `array` ölçeklenmez, ancak saniyedir. Kullanabileceğiniz Not **türü** işleci ölçeklendirme elde etmek için temel bir sabit üzerinde. Örneğin, aşağıdaki ifadeleri eşdeğerdir:
+`array` ilk başvurusu ölçeklendirilmez, ikincisi ise. Bir sabiti temel alarak ölçeklendirmeyi elde etmek için **tür** işlecini kullanabileceğinizi unutmayın. Örneğin, aşağıdaki deyimler eşdeğerdir:
 
 ```cpp
 __asm mov array[6 * TYPE int], 0 ; Store 0 at array + 24
@@ -38,7 +38,7 @@ __asm mov array[6 * TYPE int], 0 ; Store 0 at array + 24
 array[6] = 0;                   /* Store 0 at array + 24 */
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

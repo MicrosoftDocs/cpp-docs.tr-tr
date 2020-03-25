@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4414
 ms.assetid: bc81d3ad-55dc-4a6b-a6f2-ec0ef38347df
-ms.openlocfilehash: 43570cd43ca6e9d4f892dc577f615e9fa980e561
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 4625f6bdb4aa6fe86ca881a8e36e5673e55ccb87
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051579"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185600"
 ---
 # <a name="compiler-warning-level-3-c4414"></a>Derleyici Uyarısı (düzey 3) C4414
 

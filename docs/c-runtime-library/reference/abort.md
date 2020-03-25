@@ -25,12 +25,12 @@ helpviewer_keywords:
 - aborting current process
 - abort function
 - processes, aborting
-ms.openlocfilehash: 3f183d6fbf9d7bce7f638e44cdc3f3b450def57b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 46c8e25483799df3211a5022be6c4338f2c4732a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943985"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170403"
 ---
 # <a name="abort"></a>durdur
 
@@ -47,13 +47,13 @@ void abort( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Abort** , çağırma işlemine denetim döndürmüyor. Varsayılan olarak, bir durdurma sinyali işleyicisini denetler ve bir ayarlanırsa, `SIGABRT` yükseltir. Ardından **iptal** , geçerli işlemi sonlandırır ve üst işleme bir çıkış kodu döndürür.
+**Abort** , çağırma işlemine denetim döndürmüyor. Varsayılan olarak, bir durdurma sinyali işleyicisini denetler ve eğer ayarlandıysa `SIGABRT` yükseltir. Ardından **iptal** , geçerli işlemi sonlandırır ve üst işleme bir çıkış kodu döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **Microsoft 'a özgü**
 
-Varsayılan olarak, bir uygulama hata ayıklama çalışma zamanı kitaplığıyla oluşturulduğunda, **durdurma** yordamı oluşturulmadan önce `SIGABRT` bir hata mesajı görüntüler. Konsol modunda çalışan konsol uygulamaları için ileti gönderilir `STDERR`. Pencereli modda çalışan Windows Masaüstü uygulamaları ve konsol uygulamaları iletiyi bir ileti kutusunda görüntüler. İletiyi bastırmak için, `_WRITE_ABORT_MSG` bayrağı temizlemek için [_set_abort_behavior](set-abort-behavior.md) kullanın. Görünen ileti, kullanılan çalışma zamanı ortamının sürümüne bağlıdır. Visual C++'ın en son sürümleri kullanılarak oluşturulan uygulamalar için, ileti şuna benzer:
+Varsayılan olarak, bir uygulama hata ayıklama çalışma zamanı kitaplığıyla oluşturulduğunda, **iptal** yordamı `SIGABRT` oluşturulmadan önce bir hata mesajı görüntüler. Konsol modunda çalışan konsol uygulamaları için ileti `STDERR`gönderilir. Pencereli modda çalışan Windows Masaüstü uygulamaları ve konsol uygulamaları iletiyi bir ileti kutusunda görüntüler. İletiyi bastırmak için, `_WRITE_ABORT_MSG` bayrağını temizlemek için [_set_abort_behavior](set-abort-behavior.md) kullanın. Görünen ileti, kullanılan çalışma zamanı ortamının sürümüne bağlıdır. Visual C++'ın en son sürümleri kullanılarak oluşturulan uygulamalar için, ileti şuna benzer:
 
 > R6010-Abort () çağrıldı
 
@@ -63,11 +63,11 @@ C çalışma zamanı kitaplığı 'nın önceki sürümlerinde bu ileti görünt
 
 Program hata ayıklama modunda derlendiğinde, ileti kutusu **iptal**etme, **yeniden deneme**veya **yoksayma**seçeneklerini görüntüler. Kullanıcı **iptal**' i seçerse program hemen sonlanır ve 3 çıkış kodu döndürür. Kullanıcı **yeniden dene**' yi seçerse, varsa, tam zamanında hata ayıklama için bir hata ayıklayıcı çağırılır. Kullanıcı **Yoksay**' ı seçerse, **Durdur** normal işlemeye devam eder.
 
-Hem perakende hem de hata ayıklama yapılarında, **iptal** etme sinyali işleyicisinin ayarlanmış olup olmadığını denetler. Varsayılan olmayan bir sinyal işleyicisi ayarlandıysa, çağrıları `raise(SIGABRT)` **iptal** edin. Bir durdurma [](signal.md) sinyali işleyicisi işlevini `SIGABRT` sinyalle ilişkilendirmek için sinyal işlevini kullanın. Özel eylemleri gerçekleştirebilir — Örneğin, kaynakları veya günlük bilgilerini temizleyebilir — ve uygulamayı işleyici işlevindeki kendi hata kodunuzla sonlandırabilirsiniz. Özel bir sinyal işleyicisi tanımlanmamışsa, **Abort** , `SIGABRT` sinyali oluşturmaz.
+Hem perakende hem de hata ayıklama yapılarında, **iptal** etme sinyali işleyicisinin ayarlanmış olup olmadığını denetler. Varsayılan olmayan bir sinyal işleyicisi ayarlandıysa, `raise(SIGABRT)`çağrıları **iptal** edin. Bir durdurma sinyali işleyicisi işlevini `SIGABRT` sinyaliyle ilişkilendirmek için [sinyal](signal.md) işlevini kullanın. Özel eylemleri gerçekleştirebilir — Örneğin, kaynakları veya günlük bilgilerini temizleyebilir — ve uygulamayı işleyici işlevindeki kendi hata kodunuzla sonlandırabilirsiniz. Özel bir sinyal işleyicisi tanımlanmazsa, **abort** `SIGABRT` sinyalini oluşturmaz.
 
-Varsayılan olarak, masaüstü veya konsol uygulamalarının hata ayıklama olmayan yapılarında, **Durdur** Işlemi Windows hata bildirimi hizmet mekanizmasını (eski adıyla Dr) çağırır. Watson) sorunları Microsoft 'a bildirin. Bu davranış, `_set_abort_behavior` `_CALL_REPORTFAULT` bayrağı çağırarak veya maskeleyerek etkinleştirilebilir veya devre dışı bırakılabilir. Bayrak ayarlandığında, Windows "bir sorun" programın düzgün çalışmayı durdurmasına neden oldu "gibi metin içeren bir ileti kutusu görüntüler. Kullanıcı hata **ayıklama** düğmesi ile bir hata ayıklayıcı çağırmayı seçebilir veya uygulamayı işletim sistemi tarafından tanımlanan bir hata koduyla sonlandırmak Için **programı kapat** düğmesini seçebilirsiniz.
+Varsayılan olarak, masaüstü veya konsol uygulamalarının hata ayıklama olmayan Derlemeleriyle, **Durdur** ' u daha sonra hataları Microsoft 'a bildirmek Için Windows hata bildirimi hizmet mekanizmasını (eskiden Dr. Watson olarak biliniyordu) çağırır. Bu davranış, `_set_abort_behavior` çağırarak ve `_CALL_REPORTFAULT` bayrağı ayarlanarak veya maskelemeden etkinleştirilebilir veya devre dışı bırakılabilir. Bayrak ayarlandığında, Windows "bir sorun" programın düzgün çalışmayı durdurmasına neden oldu "gibi metin içeren bir ileti kutusu görüntüler. Kullanıcı hata **ayıklama** düğmesi ile bir hata ayıklayıcı çağırmayı seçebilir veya uygulamayı işletim sistemi tarafından tanımlanan bir hata koduyla sonlandırmak Için **programı kapat** düğmesini seçebilirsiniz.
 
-Windows hata bildirimi işleyicisi çağrımıyorsa, çıkış kodu 3 ile işlemi sonlandırmak için [_exit](exit-exit-exit.md) çağrılarını **iptal** edin ve denetimi üst işleme veya işletim sistemine döndürür. `_exit`akış arabelleklerini temizlemez veya `atexit` / `_onexit` işleme yapmaz.
+Windows hata bildirimi işleyicisi çağrılmadığından, çıkış kodu 3 ile işlemi sonlandırmak için [_exit](exit-exit-exit.md) çağrıları **iptal** edin ve denetimi üst işleme veya işletim sistemine döndürür. `_exit` akış arabelleklerini temizlemez veya /`_onexit` işleme `atexit`.
 
 CRT hata ayıklama hakkında daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 

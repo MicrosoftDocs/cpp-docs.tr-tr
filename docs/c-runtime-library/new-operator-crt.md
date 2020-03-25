@@ -18,12 +18,12 @@ helpviewer_keywords:
 - operator new[]
 - vector new
 ms.assetid: 79682f85-6889-40f6-b8f7-9eed5176ea35
-ms.openlocfilehash: 6a940088856afe6cc23629c91d1449ffcbd2f79f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d5a339ad842c46ce4f0ee708464adf8300bb6c59
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940131"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171508"
 ---
 # <a name="operator-newcrt"></a>işleç new(CRT)
 

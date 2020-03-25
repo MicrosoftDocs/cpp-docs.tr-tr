@@ -5,24 +5,24 @@ ms.topic: reference
 helpviewer_keywords:
 - type forwarding, C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-ms.openlocfilehash: c5148c05e5580942d885b310e35f3b629224a654
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0803ecc2ffb2da2748b1ef063481aa2571f27f50
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265171"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171937"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 
-*Tür iletme* şekilde derleme A'ya kullanan istemcileri yeniden derlemenize gerek yoktur, bir tür başka bir derlemeye (derleme B), bir derlemeye (a derlemesi) taşımanızı sağlar
+*Tür iletme* bir türü bir derlemeden (derleme a) başka bir derlemeye (derleme B) taşımanızı sağlar. bu şekilde, derleme a kullanan istemcileri yeniden derlemek gerekli değildir.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Bu özellik, Windows çalışma zamanı'nda desteklenmiyor.
+Bu özellik Windows Çalışma Zamanı desteklenmez.
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Aşağıdaki kod örneği, tür iletme kullanma işlemini gösterir.
+Aşağıdaki kod örneği, tür iletmenin nasıl kullanılacağını göstermektedir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -37,21 +37,21 @@ Aşağıdaki kod örneği, tür iletme kullanma işlemini gösterir.
 Tür tanımını taşıdığınız derleme.
 
 *type*<br/>
-Türü tanımı başka bir derlemeye taşıyor.
+Tanımını başka bir derlemeye taşıdığınız tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bileşen (derleme) gelir ve sonra istemci uygulamalar tarafından kullanılan, tür iletme türü başka bir derlemeye (derleme) bileşeninden taşımak, güncelleştirilen bileşenin (ve gereken ek bütünleştirilmiş kodları) gönderin ve istemci kullanabilirsiniz uygulamaları yeniden derlenen olmadan çalışmaya devam eder.
+Bir bileşen (derleme) gönderdikten ve istemci uygulamaları tarafından kullanıldıktan sonra, bir türü bileşenden (bütünleştirilmiş kod) başka bir derlemeye taşımak için tür iletmeyi kullanabilirsiniz, güncelleştirilmiş bileşeni (ve gerekli tüm ek derlemeleri) ve istemcisini gönderebilirsiniz. uygulamalar yeniden derlenmeden çalışmaya devam edecektir.
 
-Tür iletme yalnızca var olan uygulamalar tarafından başvurulan bileşen için çalışır. Bir uygulamayı yeniden derlediğinizde, uygulamada kullanılan türler için uygun derleme başvurularını olmalıdır.
+Tür iletme yalnızca mevcut uygulamalar tarafından başvurulan bileşenler için geçerlidir. Bir uygulamayı yeniden yapılandırdığınızda, uygulamada kullanılan herhangi bir tür için uygun derleme başvuruları olmalıdır.
 
-Bir derlemeden bir tür (tür A) iletirken eklemelisiniz `TypeForwardedTo` bir bütünleştirilmiş kod başvurusu yanı sıra, bu tür için özniteliği. Başvuru bütünleştirilmiş kod, aşağıdakilerden birini içermelidir:
+Bir derlemeden bir tür (tür A) iletirken, bu tür için `TypeForwardedTo` özniteliği ve bir derleme başvurusu eklemeniz gerekir. Başvurduğunuz derleme aşağıdakilerden birini içermelidir:
 
-- Tür a tanımı
+- A türü için tanım.
 
-- A `TypeForwardedTo` özniteliği için bir bütünleştirilmiş kod başvurusu yanı sıra yazın.
+- A türü için bir `TypeForwardedTo` özniteliği ve bir derleme başvurusu.
 
-İletilebilir türleri şunlardır:
+İletilebileceği türlerin örnekleri şunlardır:
 
 - başvuru sınıfları
 
@@ -61,32 +61,32 @@ Bir derlemeden bir tür (tür A) iletirken eklemelisiniz `TypeForwardedTo` bir b
 
 - arabirimler
 
-Aşağıdaki türleri iletilemiyor:
+Aşağıdaki türleri iletemezsiniz:
 
 - Genel türler
 
 - Yerel türler
 
-- İç içe türleri (iç içe geçmiş bir tür iletmek istiyorsanız, kapsayan tür iletme)
+- İç içe türler (iç içe geçmiş bir türü iletmek istiyorsanız kapsayan türü iletmelisiniz)
 
-Bir tür, ortak dil çalışma zamanını hedefleyen herhangi bir dilde yazılmış bir derlemeye iletebilirsiniz.
+Bir türü, ortak dil çalışma zamanını hedefleyen herhangi bir dilde yazılmış bir derlemeye iletebilirsiniz.
 
-Bunu, bir tür tanımı A.dll derlemesi oluşturmak için kullanılan bir kaynak kodu dosyası içeriyorsa (`ref class MyClass`), ve bu tür taşımak istiyordu B.dll derleme tanımına yaptığınız:
+Bu nedenle, bir. dll derlemesi oluşturmak için kullanılan bir kaynak kodu dosyası bir tür tanımı (`ref class MyClass`) içeriyorsa ve bu tür tanımını derleme B. dll ' ye taşımak istiyordunuz:
 
-1. Taşıma `MyClass` B.dll oluşturmak için kullanılan bir kaynak kodu dosyası için tanım yazın.
+1. `MyClass` tür tanımını B. dll derlemek için kullanılan bir kaynak kod dosyasına taşıyın.
 
-2. B.dll derleme
+2. Derleme derlemesi B. dll
 
-3. Silme `MyClass` tanımından A.dll oluşturup aşağıdakiyle değiştirin kullanılan kaynak kodu yazın:
+3. Bir. dll dosyası oluşturmak için kullanılan kaynak kodundan `MyClass` tür tanımını silin ve aşağıdaki ile değiştirin:
 
     ```cpp
     #using "B.dll"
     [assembly:TypeForwardedTo(MyClass::typeid)];
     ```
 
-4. Bütünleştirilmiş kod A.dll oluşturun.
+4. Derleme A. dll.
 
-5. İstemci uygulamalarını yeniden derlemeye gerek kalmadan A.dll kullanın.
+5. İstemci uygulamalarını yeniden derlemeden bir. dll kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 

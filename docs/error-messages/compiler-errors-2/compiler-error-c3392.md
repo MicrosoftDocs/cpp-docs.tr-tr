@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3392
 ms.assetid: e4757596-e2aa-4314-b01e-5c4bfd2110e9
-ms.openlocfilehash: 4109a59f093740c9e0865cef6a31f3b09127c747
-ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
+ms.openlocfilehash: 31975d39d67697573af7f9142326660acc4f7226
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912815"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80201051"
 ---
 # <a name="compiler-error-c3392"></a>Derleyici hatası C3392
 

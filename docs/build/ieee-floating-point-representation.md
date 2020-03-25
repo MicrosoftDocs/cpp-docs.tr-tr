@@ -11,16 +11,16 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-ms.openlocfilehash: de132dcf28747cd866229cff8972e2aed271a047
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: bb8523256c05479b303dec66ca79caa28e7cda03
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630350"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169818"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 
-Microsoft C++ (MSVC), IEEE sayısal standartlarla tutarlıdır. IEEE-754 standardı, kayan nokta biçimlerini, donanımda gerçek sayıları göstermenin bir yolunu açıklar. MSVC derleyicisi tarafından hedeflenen donanımda gösterilebilir olan kayan noktalı sayılar için en az beş iç biçim vardır ancak derleyici yalnızca ikisini de kullanır. *Tek duyarlıklı* (4 baytlık) ve *çift duyarlıklı* (8 baytlık) biçimler MSVC içinde kullanılır. Tek duyarlık, **float**anahtar sözcüğü kullanılarak bildirilmiştir. Çift duyarlık, **Double**anahtar sözcüğü kullanılarak bildirilmiştir. IEEE standart Ayrıca, bazı C ve C++ derleyicilerin uzun süre içinde çalıştığı, *çift genişletilmiş duyarlık* (10 baytlık) ve *dörtlü duyarlık* (16 baytlık) biçimlerini de belirtir.  **Double** veri türü. MSVC derleyicisinde, **Long Double** veri türü farklı bir tür olarak değerlendirilir, ancak depolama türü **Double**ile eşlenir. Ancak, donanım tarafından desteklenen çift genişletilmiş duyarlık (10 baytlık) biçimi de dahil olmak üzere diğer biçimleri kullanan hesaplamalar için iç ve derleme dili desteği vardır.
+Microsoft C++ (MSVC), IEEE sayısal standartlarla tutarlıdır. IEEE-754 standardı, kayan nokta biçimlerini, donanımda gerçek sayıları göstermenin bir yolunu açıklar. MSVC derleyicisi tarafından hedeflenen donanımda gösterilebilir olan kayan noktalı sayılar için en az beş iç biçim vardır ancak derleyici yalnızca ikisini de kullanır. *Tek duyarlıklı* (4 baytlık) ve *çift duyarlıklı* (8 baytlık) biçimler MSVC içinde kullanılır. Tek duyarlık, **float**anahtar sözcüğü kullanılarak bildirilmiştir. Çift duyarlık, **Double**anahtar sözcüğü kullanılarak bildirilmiştir. IEEE standart Ayrıca, bazı C C++ ve derleyiciler **uzun Double** veri türü olarak uygulandığı bir *çift genişletilmiş duyarlık* (10-bayt) ve *dörtlü duyarlık* (16 baytlık) biçimi de belirtir. *half-precision* MSVC derleyicisinde, **Long Double** veri türü farklı bir tür olarak değerlendirilir, ancak depolama türü **Double**ile eşlenir. Ancak, donanım tarafından desteklenen çift genişletilmiş duyarlık (10 baytlık) biçimi de dahil olmak üzere diğer biçimleri kullanan hesaplamalar için iç ve derleme dili desteği vardır.
 
 Değerler aşağıdaki gibi depolanır:
 
@@ -30,7 +30,7 @@ Değerler aşağıdaki gibi depolanır:
 |Çift duyarlıklı|imza biti, 11 bit üs, 52-bit mantisinin|
 |Çift genişletilmiş duyarlık|imza biti, 15 bit üs, 64 bit mantisinin|
 
-Tek duyarlıklı ve çift duyarlıklı biçimlerde, kesir bölümünde *mantisinin* (ve bazen *Mantis*olarak adlandırılır) olarak adlandırılan ve bu durumda katsayılar aslında 24 veya 53 olacak şekilde bilinen bir 1. yalnızca 23 veya 52 bit depolansa da BITS. Çift genişletilmiş duyarlık biçimi aslında bu biti depolar.
+Tek duyarlıklı ve çift duyarlıklı biçimlerde, kesir bölümünde *mantisinin* (ve bazen *Mantis*olarak adlandırılır) olarak adlandırılan, belleğin yalnızca 23 veya 52 bit depolansa bile gerçekten 24 veya 53 bit olduğu kabul edilir. Çift genişletilmiş duyarlık biçimi aslında bu biti depolar.
 
 Üsler, olası değerinin yarısını altına alınır. Bu, gerçek üs değeri almak için bu farkı depolanan üsden çıkarsettiğiniz anlamına gelir. Depolanan üs, sapma değerinden küçükse, aslında negatif bir üs olur.
 
@@ -48,13 +48,13 @@ Mantisinin 1.XXX... biçiminin ikili bir kesri olarak depolanır. Bu kesir 1 ' d
 
 Böylece, çeşitli boyutlar için aşağıdaki şekildedir:
 
-|Biçimi|bayt 1|Byte 2|byte 3|bayt 4|...|bayt n|
+|Biçimlendir|bayt 1|Byte 2|byte 3|bayt 4|...|bayt n|
 |------------|------------|------------|------------|------------|---------|------------|
 |tek duyarlıklı| `SXXXXXXX`|`XMMMMMMM`|`MMMMMMMM`|`MMMMMMMM`|||
 |Çift duyarlıklı|`SXXXXXXX`|`XXXXMMMM`|`MMMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
 |Çift genişletilmiş duyarlık|`SXXXXXXX`|`XXXXXXXX`|`1MMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
 
-`S`işaret bitini temsil eder, bu `X`, ' nin taraflı üs bitleridir `M`ve mantisinin bitleridir. En soldaki bit tek duyarlıklı ve çift duyarlıklı biçimlerde varsayılır, ancak çift genişletilmiş duyarlık biçiminin byte 3 ' de "1" olarak mevcuttur.
+`S`, işaret bitini temsil eder, `X`, taraflı üs bitleridir ve `M`mantisinin bittir. En soldaki bit tek duyarlıklı ve çift duyarlıklı biçimlerde varsayılır, ancak çift genişletilmiş duyarlık biçiminin byte 3 ' de "1" olarak mevcuttur.
 
 İkili noktayı düzgün bir şekilde kaydırmak için, öncelikle üs değeri kaldırır ve ardından ikili noktayı sağ veya uygun bit sayısının soluna taşıyın.
 
@@ -82,7 +82,7 @@ IEEE kayan nokta biçiminde 0/0 gibi gerçek sayı olmayan değerleri temsil etm
 
 Aşağıda, tek duyarlıklı biçimdeki bazı örnekler verilmiştir:
 
-- 2 değeri için, işaret biti sıfırdır ve depolanan üs, 128 veya 1000 0000 ' dir. Bu, 127 ve 1 ' dir. Depolanan ikili mantisinin (1). önde gelen 1 ve ikili noktası olan 000 0000 0000 0000 0000 0000, yani gerçek mantisinin bir tane olur.
+- 2 değeri için, işaret biti sıfırdır ve depolanan üs, 128 veya 1000 0000 ' dir. Bu, 127 ve 1 ' dir. Depolanan ikili mantisinin, örtük 1 ve ikili noktası olan (1.) 000 0000 0000 0000 0000 0000, bu nedenle gerçek mantisinin bir tane olur.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
@@ -100,7 +100,7 @@ Aşağıda, tek duyarlıklı biçimdeki bazı örnekler verilmiştir:
    |-|-|-|-|
    |4|1 * 2<sup>2</sup>|0100 0000 1000 0000 0000 0000 0000 0000|0x40800000|
 
-- 6 değeri. Aynı üs, mantisinin daha büyük; (1). 100 0000 ... 0000 0000, bu ikili bir kesir olduğundan, kesirli basamakların değerleri 1/2, 1/4, 1/8 ve benzeri olduğundan 1 1/2 ' dir.
+- 6 değeri. Aynı üs, mantisinin daha büyük; (1.) 100 0000... 0000 0000, bu ikili bir kesir olduğundan, kesirli basamakların değerleri 1/2, 1/4, 1/8 ve benzeri olduğundan 1 1/2 ' dir.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
@@ -110,9 +110,9 @@ Aşağıda, tek duyarlıklı biçimdeki bazı örnekler verilmiştir:
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
-   |1\.|1 * 2<sup>0</sup>|0011 1111 1000 0000 0000 0000 0000 0000|0x3F800000|
+   |1|1 * 2<sup>0</sup>|0011 1111 1000 0000 0000 0000 0000 0000|0x3F800000|
 
-- 0,75 değeri. Taraflı üs değeri 126, 011 1111 0 binary ve mantisinin (1). 100 0000 ... 0000 0000, 1 1/2 ' dir.
+- 0,75 değeri. Taraflı üs değeri 126, 011 1111 0 binary ve mantisinin (1.) 100 0000... 0000 0000, 1 1/2 ' dir.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|

@@ -5,30 +5,30 @@ ms.topic: reference
 helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-ms.openlocfilehash: fbb2bd68f589630608e341b944b4201c12d67211
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8cb222af2d5b25a90f35d8d32688567bb3fb1d8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346073"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172652"
 ---
 # <a name="attribute-parameter-types--ccli-and-ccx"></a>Öznitelik parametre türleri (C++/CLI ve C++/CX)
 
-Öznitelikler için geçirilen değer derleyiciye derleme zamanında bilinen gerekir.  Öznitelik parametreleri aşağıdaki türde olabilir:
+Özniteliklere geçirilen değerler derleme zamanında derleyici tarafından bilinmelidir.  Öznitelik parametreleri aşağıdaki türlerde olabilir:
 
 - **bool**
 
 - **char**, **işaretsiz karakter**
 
-- **kısa**, **işaretsiz**
+- **kısa**, **işaretsiz kısa**
 
 - **int**, **işaretsiz int**
 
-- **uzun**, **işaretsiz uzun**
+- **Long**, **imzasız Long**
 
-- **__int64**, **unsigned __int64**
+- **__int64**, **İmzasız __int64**
 
-- **float**, **çift**
+- **float**, **Double**
 
 - **wchar_t**
 
@@ -69,7 +69,7 @@ ref struct MyStruct {
 
 ### <a name="description"></a>Açıklama
 
-Öznitelikleri belirtirken, tüm adlandırılmamış (konumsal) bağımsız değişkenler adlandırılmış bağımsız değişkenler gelmelidir.
+Öznitelikleri belirtirken, adlandırılmamış (konumsal) bağımsız değişkenlerin tümü adlandırılmış bağımsız değişkenlerden önce gelmelidir.
 
 ### <a name="code"></a>Kod
 
@@ -103,7 +103,7 @@ ref class ClassD {};   // Positional and named
 
 ### <a name="description"></a>Açıklama
 
-Öznitelik parametreleri önceki türlerinin tek boyutlu diziler olabilir.
+Öznitelik parametreleri, önceki türlerin tek boyutlu dizileri olabilir.
 
 ### <a name="code"></a>Kod
 

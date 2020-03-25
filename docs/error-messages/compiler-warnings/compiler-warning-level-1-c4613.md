@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4613
 ms.assetid: 399f521b-651c-4997-bc91-f40198e9a4d4
-ms.openlocfilehash: 3eaea39f49b985334247da41fa8f3499d3697815
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb3883d318ccd885d19469e7722362485f782144
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327307"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185951"
 ---
 # <a name="compiler-warning-level-1-c4613"></a>Derleyici Uyarısı (düzey 1) C4613
 
-'segmenti': kesimin sınıfı değiştirilemez
+' segment ': kesimin sınıfı değiştirilemez
 
-Derleyici tarafından kullanılan bir segment ile aynı sınıf adıyla bir segment oluşturmayı denedi. Yeni bir segment sınıf oluşturuldu.
+Derleyici tarafından kullanılan kesimle aynı sınıf adına sahip bir segment oluşturmaya çalıştınız. Yeni segment sınıfı oluşturulmadı.

@@ -10,21 +10,21 @@ helpviewer_keywords:
 - copying objects
 - assigning values to copy objects
 ms.assetid: a94fe1f9-0289-4fb9-8633-77c654002c0d
-ms.openlocfilehash: 59f463d103e233a1d9b25da3243a16f67263c815
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: beabe4c6219975d33c7af98a94498188c9abfa55
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392303"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189539"
 ---
 # <a name="copy-constructors-and-copy-assignment-operators-c"></a>Kopya Oluşturucuları ve Kopya Atama İşleçleri (C++)
 
 > [!NOTE]
-> C ++ 11'de başlayarak, iki tür ataması dilinde desteklenir: *kopyalama ataması* ve *atama taşıma*. Bu makalede "atama" açıkça aksi belirtilmediği sürece kopyalama ataması anlamına gelir. Taşıma ataması hakkında daha fazla bilgi için bkz: [taşıma oluşturucuları ve taşıma atama işleçleri (C++)](move-constructors-and-move-assignment-operators-cpp.md).
+> C++ 11 ' den başlayarak, dilde iki tür atama desteklenir: *kopyalama ataması* ve *taşıma ataması*. Bu makalede, "atama" açıkça belirtilmediği takdirde kopya atama anlamına gelir. Taşıma ataması hakkında daha fazla bilgi için bkz. [Taşıma Oluşturucuları ve taşıma atamaC++işleçleri ()](move-constructors-and-move-assignment-operators-cpp.md).
 >
-> Hem atama işlemi hem de başlatma işlemi kopyalanacak nesneleri neden.
+> Atama işleminin ve başlatma işleminin her ikisi de nesnelerin kopyalanmasına neden olur.
 
-- **Atama**: Bir nesnenin değerini başka bir nesneye atandığında, ilk nesnenin ikinci nesneyi kopyalanır. Bu nedenle,
+- **Atama**: bir nesnenin değeri başka bir nesneye atandığında, ilk nesne ikinci nesneye kopyalanır. Bu nedenle,
 
     ```cpp
     Point a, b;
@@ -32,11 +32,11 @@ ms.locfileid: "62392303"
     a = b;
     ```
 
-   değerini neden `b` kopyalanacağı `a`.
+   `b` değerinin `a`kopyalanmasına neden olur.
 
-- **Başlatma**: Yeni bir nesne bildirildiğinde bağımsız değişkenleri değere göre işleve geçirildiğinde ya da değerler işlevlerden değer tarafından döndürülür başlatma gerçekleşir.
+- **Başlatma**: başlatma, yeni bir nesne bildirildiğinde, bağımsız değişkenler değere göre işlevlere geçirildiğinde veya değerlere göre işlevlerden değer döndürüldüğünde oluşur.
 
-Sınıf türü nesneler için "Kopyala" semantiği tanımlayabilirsiniz. Örneğin, aşağıdaki kodu düşünün:
+Sınıf türündeki nesneler için "Kopyala" semantiğini tanımlayabilirsiniz. Örneğin, aşağıdaki kodu düşünün:
 
 ```cpp
 TextFile a, b;
@@ -45,15 +45,15 @@ b.Open( "FILE2.DAT" );
 b = a;
 ```
 
-Yukarıdaki kod, "fıle1'de, içeriğini kopyalayın. gelebilir DAT dosya2 için. DAT"veya"dosya2 yoksayın. gelebilir DAT ve `b` FILE1.DAT için ikinci bir tanıtıcı. " Şu şekilde her sınıf için uygun kopyalama semantiği eklemeniz gerekir.
+Yukarıdaki kod "FıLE1 içeriğini Kopyala" anlamına gelebilir. DAT to DOSYA2. DAT "veya" Ignore DOSYA2 "anlamına gelebilir. DAT ve FıLE1. DAT için ikinci bir tanıtıcı `b` yapın. " Aşağıdaki gibi, her sınıfa uygun kopyalama semantiğini iliştirmelidir.
 
-- Atama işleci kullanarak **işleç =** dönüş türü tarafından geçirilen parametre olarak sınıf türüne yapılan başvuru birlikte **const** başvuru — örneğin `ClassName& operator=(const ClassName& x);`.
+- Atama işleci **işlecini** kullanarak, dönüş türü olarak sınıf türüne başvuru ve **const** başvurusu tarafından geçirilen parametre (örneğin `ClassName& operator=(const ClassName& x);`) ile birlikte.
 
-- Kopya Oluşturucusu kullanarak.
+- Kopya oluşturucuyu kullanarak.
 
-Kopya Oluşturucu bildirmeyin, derleyici member-wise kopya Oluşturucu oluşturur.  Kopya atama işlecine bildirmeyin, derleyici member-wise kopya atama işlecine sizin için oluşturur. Bir kopya Oluşturucu bildirilerek derleyici tarafından üretilen kopya atama işleci gizlemiyor ya da tam tersi. Tek uygularsanız, böylece kodun anlamı açıktır, ayrıca diğeri uygulamanız önerilir.
+Bir kopya Oluşturucu bildirmezsiniz, derleyici sizin için üye Wise bir kopya Oluşturucu oluşturur.  Bir kopya atama işleci bildirmezsiniz, derleyici sizin için üye odaklı bir kopya atama işleci oluşturur. Bir kopya Oluşturucu bildirmek derleyicinin ürettiği kopya atama işlecini göstermez, tersi de geçerlidir. Bunlardan birini uygularsanız, kodun anlamının açık olması için diğerini de uygulamanızı öneririz.
 
-Kopya Oluşturucu türünde bir bağımsız değişken alan <em>sınıf adı</em><strong>&</strong>burada *sınıf adı* Oluşturucu tanımlanır sınıf adıdır. Örneğin:
+Kopya Oluşturucu, Class <em>-</em> Name<strong>&</strong>türünde bir bağımsız değişken alır; burada *sınıf adı* , oluşturucunun tanımlandığı sınıfın adıdır. Örneğin:
 
 ```cpp
 // spec1_copying_class_objects.cpp
@@ -70,19 +70,19 @@ int main()
 ```
 
 > [!NOTE]
-> Kopya Oluşturucunun bağımsız değişken türünü olun **const** <em>sınıf adı</em> <strong>&</strong> mümkün olduğunda. Bu, kopya Oluşturucu içinden kopyalıyor nesne yanlışlıkla değiştirmesini engeller. Ayrıca, kopyalama sağlar **const** nesneleri.
+> Kopya oluşturucunun bağımsız değişkeninin **const** <em>sınıf-adı</em> <strong>&</strong> türünü mümkün olduğunca yapın. Bu, kopya oluşturucunun kopyalama yaptığı nesneyi yanlışlıkla değiştirmesini engeller. Ayrıca **const** nesnelerinden kopyalamayı da mümkün kılar.
 
-## <a name="compiler-generated-copy-constructors"></a>Derleyicinin ürettiği kopya oluşturucuları
+## <a name="compiler-generated-copy-constructors"></a>Derleyicinin oluşturduğu kopya oluşturucuları
 
-Kullanıcı tanımlı kopya oluşturucuları gibi derleyici tarafından üretilen kopya oluşturucuları sahip tek bir bağımsız değişken türü "başvurusu *sınıf adı*." Tüm temel sınıflar ve üye sınıfların türünde tek bir bağımsız değişken alacağı bildirilen kopya oluşturucuları olması durumudur bir istisnası **const** <em>sınıf adı</em><strong>&</strong>. Böyle bir durumda, derleyici tarafından üretilen kopya Oluşturucunun bağımsız değişkeni de olan **const**.
+Kullanıcı tanımlı kopya oluşturucuları gibi derleyicinin ürettiği kopya oluşturucuları, " *sınıf-adı*başvurusu" türünde tek bir bağımsız değişkene sahiptir. Tüm temel sınıfların ve üye sınıfların, **const** <em>class-name</em> <strong>&</strong>türünde tek bir bağımsız değişken alan olarak bildirildiği kopya oluşturucuları olduğunda bir özel durum oluşur. Böyle bir durumda, derleyici tarafından oluşturulan kopya oluşturucusunun bağımsız değişkeni de **const**olur.
 
-Kopya oluşturucusunun bağımsız değişken türü olmadığında **const**, kopyalayarak yapılan başlatma bir **const** hata nesnesi oluşturur. Tersi doğru değildir: Bağımsız değişken ise **const**, olmayan bir nesneyi kopyalayarak başlatabilirsiniz **const**.
+Kopya oluşturucusuna bağımsız değişken türü **const**olmadığında, bir **const** nesnesi kopyalayarak başlatma bir hata oluşturur. Ters doğru değil: bağımsız değişken **const**ise, **const**olmayan bir nesneyi kopyalayarak başlatabilirsiniz.
 
-Derleyici tarafından üretilen atama işleçleri ile aynı deseni takip **const.** Tek bir bağımsız değişken türü aldıkları <em>sınıf adı</em> <strong>&</strong> tüm temel ve üye sınıflardaki atama işleçleri türünde bağımsız değişken almadıkları sürece **const** <em>sınıf adı</em><strong>&</strong>. Atama işleci alır bu durumda, sınıfın üretilmiş bir **const** bağımsız değişken.
+Derleyici tarafından oluşturulan atama işleçleri, const ile ilgili olarak aynı kalıbı izler **.** Tüm taban ve üye sınıflardaki atama işleçleri **const** <em>class-name</em> <strong>&</strong>türünde bağımsız değişkenler alıp etmediği müddetçe, <em>class-name</em> <strong>&</strong> türünde tek bir bağımsız değişken alırlar. Bu durumda, sınıfın oluşturulan atama işleci bir **const** bağımsız değişkeni alır.
 
 > [!NOTE]
 > Sanal temel sınıflar, derleyici tarafından oluşturulan veya kullanıcı tanımlı kopya oluşturucular tarafından başlatıldığında, yalnızca bir kez başlatılırlar: Oluşturuldukları noktada.
 
-Etkileri, kopya oluşturucusununkine benzer. Bağımsız değişken türü olmadığında **const**, atamadan bir **const** hata nesnesi oluşturur. Tersi doğru değildir: Varsa bir **const** değeri olmayan bir değer atanır **const**, ataması başarılı olur.
+Etkileri, kopya oluşturucusununkine benzer. Bağımsız değişken türü **const**olmadığında, bir **const** nesnesinden atama bir hata oluşturur. Ters değer **doğru değil: const olmayan bir**değere **const** değeri atanırsa atama başarılı olur.
 
-Aşırı yüklenmiş atama işleçleri hakkında daha fazla bilgi için bkz: [atama](../cpp/assignment.md).
+Aşırı yüklenmiş atama işleçleri hakkında daha fazla bilgi için bkz. [atama](../cpp/assignment.md).

@@ -1,5 +1,5 @@
 ---
-title: İşaretçi-üye işleçleri:. * ve -&gt;*
+title: Üye işaretçisi Işleçleri:. * ve-&gt;*
 ms.date: 11/04/2016
 f1_keywords:
 - .*
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - expressions [C++], operators
 - ->* operator
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
-ms.openlocfilehash: 60dad0e3134662957ee21396d330af795e80918e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1ff7dd26f36f10948dac42783ad61d16f5feda09
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267669"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188343"
 ---
-# <a name="pointer-to-member-operators--and--gt"></a>İşaretçi-üye işleçleri:. * ve -&gt;*
+# <a name="pointer-to-member-operators--and--gt"></a>Üye işaretçisi Işleçleri:. * ve-&gt;*
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,7 +29,7 @@ expression ->* expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretçi-üye işleçleri. * ve ->\*, ifadenin sol tarafında belirtilen nesne için belirli bir sınıf üyesinin değerini döndürür.  Sağ tarafta sınıfın bir üyesi belirtilmelidir.  Aşağıdaki örnekte, bu işleçlerin nasıl kullanılacağı gösterilmektedir.
+Üye işaretçisi işleçleri,. * ve->\*, ifadenin sol tarafında belirtilen nesne için belirli bir sınıf üyesinin değerini döndürür.  Sağ tarafta sınıfın bir üyesi belirtilmelidir.  Aşağıdaki örnekte, bu işleçlerin nasıl kullanılacağı gösterilmektedir.
 
 ```cpp
 // expre_Expressions_with_Pointer_Member_Operators.cpp
@@ -69,7 +69,7 @@ int main() {
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 m_func1
@@ -82,11 +82,11 @@ Yukarıdaki örnekte bir üye işaretçisi olan `pmfn`, `m_func1` üye işlevini
 
 . * ikili işleci, sınıf türünden bir nesne olması gereken ilk işlenenini, üye işleci türünde olması gereken ikinci işleneniyle birleştirir.
 
-İkili işleç -> *, sınıf türünden bir nesneye bir işaretçi olması gereken ilk işleneni, ile bir üye işaretçisi türü olması gereken ikinci işleneniyle birleştirir.
+> * İkili işleci, birinci işleneni birleştirir ve bu, ikinci işleneni olan, bir üye işaretçisi türü olması gereken ikinci işleneniyle birlikte sınıf türünde bir nesne işaretçisi olmalıdır.
 
 .* işlecini içeren bir ifadede, ilk işlenen ikinci işlenende belirtilen üyenin işaretçisinin sınıf türünde olmalı ve bu işaretçi tarafından erişilebilmelidir veya bu sınıftan belirsiz bir şekilde yürütülen ve bu sınıf tarafından erişilebilen bir türde olmalıdır.
 
--> İçeren bir ifadede * işleci, ilk işlenen ikinci işlenende türü türün "sınıf türü işaretçisi" belirtilmelidir veya bu türü kesin bir şekilde bu sınıftan türetilmelidir.
+-> * İşlecini içeren bir ifadede, ilk işlenen ikinci işlenende belirtilen türün "sınıf türünün işaretçisi" türünde olmalıdır veya bu sınıftan belirsiz bir şekilde türetilmiş bir türde olmalıdır.
 
 ## <a name="example"></a>Örnek
 
@@ -128,7 +128,7 @@ int main() {
 }
 ```
 
-Sonucu. * veya ->\* işaretçi-üye işleçleri olan nesne veya işlev üye işaretçisinin bildiriminde belirtilen türde. Bu nedenle, yukarıdaki örnekte `ADerived.*pmfnFunc1()` ifadesinin sonucu void döndüren bir işlev işaretçisidir. Bu, ikinci işlenen l değerindeyse bir l değeridir.
+. * Veya->\* işaretçiden üyeye işleçlerinin sonuçları, üyeye işaretçisinin bildiriminde belirtilen türde bir nesne veya işlevdir. Bu nedenle, yukarıdaki örnekte `ADerived.*pmfnFunc1()` ifadesinin sonucu void döndüren bir işlev işaretçisidir. Bu, ikinci işlenen l değerindeyse bir l değeridir.
 
 > [!NOTE]
 >  Üye işleçleri işaretçilerinden birinin sonucu işlevse, sonuç yalnızca işlev çağrısı işlecinin işleneni olarak kullanılabilir.

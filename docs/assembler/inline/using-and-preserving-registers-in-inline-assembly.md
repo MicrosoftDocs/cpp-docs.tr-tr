@@ -7,33 +7,33 @@ helpviewer_keywords:
 - registers, inline assembly
 - preserving registers
 ms.assetid: dbcd7360-6f3e-4b22-9ee2-9f65ca6f2543
-ms.openlocfilehash: 30b2f9ca8c658b65819709bb2e536b5aaecad676
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51147a217ec56c525fc01e1b36a9381b9356ba4d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166678"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169161"
 ---
 # <a name="using-and-preserving-registers-in-inline-assembly"></a>Bir Satır İçi Derlemede Kayıtları Kullanma ve Koruma
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Genel olarak, size bir kayıt belirli bir değeri olduğunu varsayın değil, bir `__asm` blok başlar. YAZMAÇ değerlerini arasında ayrı korunması garanti edilmez `__asm` engeller. Satır içi kod bloğunu sonlandırmak ve başka başlamak, kayıtlara ilk bloğunun kendi değerlerini korumak için ikinci blok üzerinde güvenemezsiniz. Bir `__asm` blok devralan ne olursa olsun, denetiminin normal akışı sonuçtan değerleri kaydedin.
+Genel olarak, bir `__asm` bloğu başladığında bir kaydın verilen değere sahip olacağını varsaymamalıdır. Kayıt değerlerinin ayrı `__asm` blokları genelinde korunması garanti edilmez. Satır içi kod bloğunu sonlandırdıysanız ve başka bir başlangıç yaparsanız, ilk bloğundan değerlerini sürdürmek için ikinci bloktaki yazmaçlara güvenebilirsiniz. `__asm` bloğu, normal denetim akışından hangi yazmaç değerlerinin sonucunu devralır.
 
-Kullanırsanız `__fastcall` çağırma kuralı, derleyici işlev bağımsız değişkenleri yerine yazmaçlarında yığında geçirir. Bu sorunları işlevleriyle oluşturabilirsiniz `__asm` bir işlevin hangi kayıttaki parametredir bildirmek için hiçbir yolu yoktur çünkü engeller. İşlev EAX bir parametre almaya olur ve hemen EAX başka bir şey depolar, özgün parametresi kaybolur. Ayrıca, ECX kasa ile bildirilen işlevde korumak `__fastcall`.
+`__fastcall` çağırma kuralını kullanırsanız, derleyici yığın yerine kayıt sırasında işlev bağımsız değişkenlerini geçirir. Bu, bir işlevin hangi parametreye kayıt olduğunu söylemesinin bir yolu olmadığından `__asm` blokları olan işlevlerde sorunlar oluşturabilir. İşlev EAX 'te bir parametre almak ve EAX 'te başka bir şeyi hemen depoladığında, orijinal parametre kaybedilir. Ayrıca, `__fastcall`ile belirtilen herhangi bir işlevde ECX kaydını korumanız gerekir.
 
-Bu tür kaydı çakışmaları önlemek için kullanmayın `__fastcall` kuralı içeren işlevler için bir `__asm` blok. Belirtirseniz `__fastcall` kuralı genel Gr derleyici seçeneği ile birlikte bildirin her işlevi içeren bir `__asm` ile block `__cdecl` veya `__stdcall`. ( `__cdecl` Özniteliği için bu işlev C çağırma kuralı kullanmak için derleyiciye.) Gr ile derleme değil, işlev ile bildirme kaçının `__fastcall` özniteliği.
+Bu tür kayıt çakışmalarını önlemek için, `__asm` bloğunu içeren işlevler için `__fastcall` kuralını kullanmayın. /Gr derleyici seçeneğiyle genel olarak `__fastcall` kuralı belirtirseniz, `__cdecl` veya `__stdcall`ile `__asm` bloğu içeren her işlevi bildirin. (`__cdecl` özniteliği derleyiciye bu işlev için C çağırma kuralını kullanmasını söyler.) /Gr ile derlerken, işlevi `__fastcall` özniteliğiyle bildirmemeye özen gösterin.
 
-Kullanırken `__asm` derleme dili C/C++ işlevleri yazmak için EAX, EBX, ECX, EDX, ESI veya EDI Yazmaçları koruma gerekmez. Örneğin, POWER2 içinde. C örnekte [satır içi derlemeyle işlevler yazma](../../assembler/inline/writing-functions-with-inline-assembly.md), `power2` işlevi kaydına değeri korumak değil. Kayıt ayırıcı bunları arasında değerleri depolamak için kullanamazsınız çünkü ancak bu kayıtları kullanarak kod kalitesini etkiler `__asm` engeller. Ayrıca, EBX, ESI veya EDI satır içi derleme kodu kullanarak, kaydetme ve geri yükleme işlevi prolog ve epilog bu kayıtlara derleyicinin zorlar.
+C/C++ işlevlerde derleme dilini yazmak için `__asm` kullanırken EAX, EBX, ecx, EDX, ESI veya EDI yazmaçlarını korumanız gerekmez. Örneğin, POWER2. C örnek [satır Içi derleme Ile yazma işlevleri](../../assembler/inline/writing-functions-with-inline-assembly.md), `power2` işlevi EAX kaydındaki değeri korumaz. Ancak, bu yazmaçların kullanılması kod kalitesini etkiler çünkü kayıt ayırıcısı bu değerleri `__asm` blokları genelinde depolamak için kullanamaz. Ayrıca, satır içi bütünleştirilmiş kod kodunda EBX, ESI veya EDI kullanarak, derleyicinin bu kayıtları kaydetme ve geri yükleme işlemleri için bir kayıt ve başlangıç durumuna zorlarsınız.
 
-Kapsamını (DS, SS, SP, BP ve bayrakları kayıtları gibi) kullandığınız diğer kayıtlara koruması gerektiğini `__asm` blok. (Yığınları, örneğin geçmek için) değiştirileceğini herhangi bir nedenle olmadığı sürece ESP ve EBP Yazmaçları koruma. Ayrıca bkz: [satır içi derlemeyi en iyi duruma getirme](../../assembler/inline/optimizing-inline-assembly.md).
+`__asm` bloğunun kapsamı için kullandığınız diğer kayıtları (DS, SS, SP, BP ve bayraklar Yazmaçları gibi) korumanız gerekir. Değişiklik yapmak için bir nedeniniz yoksa, ESP ve EBP yazmaçlarını korumanız gerekir (örneğin, yığınları değiştirmek için). Ayrıca bkz. [satır Içi derlemeyi iyileştirme](../../assembler/inline/optimizing-inline-assembly.md).
 
-Bazı SSE türleri dinamik yığın hizalamasını kod dönüştüğünde derleyicinin zorlama sekiz bayt yığın hizalama gerektirir. Hem yerel değişkenleri ve işlev parametrelerini sonra hizalama erişebilmesi için derleyici iki çerçeve işaretçilerini tutar.  Derleyicinin çerçeve işaretçisi atlamayı (FPO) gerçekleştiriyorsa EBP ve ESP kullanır.  Derleyici FPO yapmazsa, EBX ve EBP kullanır. Kod çalışmalarını doğru emin olmak için çerçeve işaretçisini değiştirebilir gibi işlev dinamik yığını gerektiriyorsa, EBX asm kodunda değiştirmeyin. Sekiz bayt hizalanmış türlere işlevi dışına taşıyın ya da EBX kullanmaktan kaçının.
+Bazı SSE türleri sekiz baytlık yığın hizalaması gerektirir ve derleyicinin dinamik yığın hizalama kodunu yaymasına zorlanır. Hizalamadan sonra hem yerel değişkenlere hem de işlev parametrelerine erişebilmek için, derleyici iki çerçeve işaretçisi tutar.  Derleyici çerçeve işaretçisi atlama (!) işlemini gerçekleştiriyorsa, EBP ve ESP kullanır.  Derleyici, bu işlemi gerçekleştirmezse EBX ve EBP kullanacaktır. Kodun doğru şekilde çalıştığından emin olmak için, çerçeve işaretçisini değiştirebildiğinden, işlev dinamik yığın hizalaması gerektiriyorsa asm kodunda EBX 'i değiştirmeyin. Sekiz baytlık hizalanmış türleri işlevin dışına taşıyın ya da EBX kullanmaktan kaçının.
 
 > [!NOTE]
->  Yön bayrağı STD veya CLD yönergeleri kullanarak, satır içi derleme kodu değişirse, bayrağı özgün değerine geri yüklemeniz gerekir.
+>  Satır içi derleme kodunuz STD veya CLD yönergelerini kullanarak yön bayrağını değiştirirse, bayrağını özgün değerine geri yüklemeniz gerekir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

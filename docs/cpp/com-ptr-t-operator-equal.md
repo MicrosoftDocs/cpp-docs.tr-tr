@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t [C++]
 ms.assetid: 46849455-371c-4d0f-bae4-c1f737d2ca4a
-ms.openlocfilehash: e951e79c9cfc12401b6ee14ce623dc2434a18a6b
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 489d2a3f098d5d1bf1df56cca7eaf6ac8ae776b1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079480"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170702"
 ---
 # <a name="_com_ptr_toperator-"></a>_com_ptr_t::operator =
 

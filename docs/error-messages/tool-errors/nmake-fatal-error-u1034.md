@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - U1034
 ms.assetid: 27e678c2-23e2-4247-87f7-66493784af33
-ms.openlocfilehash: 275a7f95dd2e5b6b0a05059c06422514a52a4b80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a6792a697b679c6ace1f9e921129f1ef8a0ca32
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324382"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173355"
 ---
 # <a name="nmake-fatal-error-u1034"></a>NMAKE Önemli Hatası U1034
 
-sözdizimi hatası: ayraç eksik
+sözdizimi hatası: ayırıcı eksik
 
-İki nokta üst üste (**:**), hedefleri ayırır ve bağımlılıklar eksik.
+Hedefleri ve bağımlıları ayıran iki nokta ( **:** ) eksik.

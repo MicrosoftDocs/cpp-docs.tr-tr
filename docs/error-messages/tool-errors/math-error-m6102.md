@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - M6102
 ms.assetid: dbd2241f-6595-431e-9597-d9dbdb3a0ca2
-ms.openlocfilehash: 73c4b48819937ed4b49c80969c18701c8820956e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 146ca1f51b15ee87475bc2007d63259d70450f38
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383899"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173770"
 ---
 # <a name="math-error-m6102"></a>Matematik Hatası M6102
 
-normal dışı
+denormal
 
-Bir işlem nedeniyle geçersiz çok küçük bir kayan noktalı sayı oluşturulan anlam kaybına. Denormal kayan nokta özel durumları genellikle maskelenmiş, bunları yakalanan ve üzerinde işlem neden olur.
+Bir işlem çok küçük bir kayan noktalı sayı oluşturdu, bu, geçersiz anlam kaybı nedeniyle geçersizdir. Denormal kayan nokta özel durumları genellikle maskelenir ve üzerinde yakalanmasına ve üzerinde işletilemelerine neden olur.
 
-Program çıkış kodu ile 130 sonlandırır.
+Program 130 çıkış koduyla sona eriyor.

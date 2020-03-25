@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - ConvertBSTRToString function
 ms.assetid: ab6ce555-3d75-4e9c-9cb8-ada6d8ce43b1
-ms.openlocfilehash: df123dc218aa770a67536bf1bad7d8bafcf4c318
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d0ad8727dd4d5ec06a45ec26c67dd3ad268f524
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392329"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189536"
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Dönüştürür bir `BSTR` değerini bir `char *`.
+Bir `BSTR` değerini `char *`dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,11 +28,11 @@ char* __stdcall ConvertBSTRToString(BSTR pSrc);
 #### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-BSTR değişken.
+Bir BSTR değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**ConvertBSTRToString** silmelisiniz bir dize ayırır.
+**Convertbstrtostring** , silmeniz gereken bir dize ayırır.
 
 ## <a name="example"></a>Örnek
 
@@ -60,13 +60,13 @@ BSTR text: Test
 char * text: Test
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<comutil.h >
+**Üstbilgi:** \<comutil. h >
 
-**Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)
+**Lib:** comsuppw. lib veya comsuppwd. lib (daha fazla bilgi için bkz. [/zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

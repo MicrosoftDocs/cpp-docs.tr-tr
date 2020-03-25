@@ -21,16 +21,16 @@ f1_keywords:
 helpviewer_keywords:
 - __p__fmode
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
-ms.openlocfilehash: 6f7676fc5c9958be3d0567e6bf22a11367094150
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2364a22d52c5bc418e4499a4a639c8e06559063a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939979"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171456"
 ---
 # <a name="__p__fmode"></a>__p__fmode
 
-Dosya g/ç işlemleri için varsayılan *Dosya çevirisi modunu* belirten geneldeğişkeneişareteder.`_fmode`
+Dosya g/ç işlemleri için varsayılan *Dosya çevirisi modunu* belirten `_fmode` genel değişkenine işaret eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,13 +41,13 @@ int* __p__fmode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_fmode` Genel değişkene yönelik işaretçi.
+`_fmode` genel değişkenine yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__p__fmode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+`__p__fmode` işlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
 
-Dosya çevirisi modu, `binary` [_open](../c-runtime-library/reference/open-wopen.md) ve [_pipe](../c-runtime-library/reference/pipe.md) g/ç işlemleri için ya da `text` çevirisini belirtir. Daha fazla bilgi için bkz. [_fmode](../c-runtime-library/fmode.md).
+Dosya çevirisi modu [_open](../c-runtime-library/reference/open-wopen.md) ve [_Pipe](../c-runtime-library/reference/pipe.md) g/ç işlemleri için `binary` ya da `text` çevirisini belirtir. Daha fazla bilgi için bkz. [_fmode](../c-runtime-library/fmode.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

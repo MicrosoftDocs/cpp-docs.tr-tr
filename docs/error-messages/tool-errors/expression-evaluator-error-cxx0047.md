@@ -7,19 +7,19 @@ helpviewer_keywords:
 - CAN0047
 - CXX0047
 ms.assetid: db23d0db-fce2-4d86-b391-6e1d6ad13fd4
-ms.openlocfilehash: ecc2ca4061f01cfa3ef868ed2916ceaeb5513116
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b5a8ebaaac351833970b10336f4f71940082114
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160802"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184911"
 ---
 # <a name="expression-evaluator-error-cxx0047"></a>İfade Değerlendirici Hatası CXX0047
 
-bir işlev bağımsız değişken listesiyle eşleşmiyor
+bağımsız değişken listesi bir işlevle eşleşmiyor
 
-Bir ifade çağrılan bir işlev bir gerçek parametre listesiyle programda tanımlanmış aynı ada sahip bir işlevin biçimsel parametre listesi eşleşmedi.
+Programda tanımlanmış aynı ada sahip herhangi bir işlevin biçimsel parametre listesiyle eşleşmeyen gerçek bir parametre listesi olan bir ifade.
 
-Aşırı yüklenmiş işlevler yalnızca, bir tam parametre eşleştirme veya bir nesnenin yapımı gerektirmeyen bir eşleşme yoksa çağrılabilir.
+Aşırı yüklenmiş işlevler yalnızca tam bir parametre eşleşmesi veya bir nesnenin oluşturulmasını gerektirmeyen bir eşleşme varsa çağrılabilir.
 
-Bu hata için CAN0047 aynıdır.
+Bu hata CAN0047 ile aynıdır.

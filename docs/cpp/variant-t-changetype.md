@@ -9,18 +9,18 @@ helpviewer_keywords:
 - VARIANT object [C++], ChangeType
 - VARIANT object
 ms.assetid: 829d2eeb-3338-4a88-9dce-0ca145f47aac
-ms.openlocfilehash: 319c4fde808932e86021ee59b051261c43ca2edd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0692c9befaa6b7e787ada624dcbb56b074c9f9d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166210"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160469"
 ---
-# <a name="varianttchangetype"></a>_variant_t::ChangeType
+# <a name="_variant_tchangetype"></a>_variant_t::ChangeType
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Değişiklikleri türde `_variant_t` belirtilen nesneye `VARTYPE`.
+`_variant_t` nesnesinin türünü belirtilen `VARTYPE`değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,17 +33,17 @@ void ChangeType(
 
 #### <a name="parameters"></a>Parametreler
 
-*VarType*<br/>
-`VARTYPE` Bu `_variant_t` nesne.
+*vartype*<br/>
+Bu `_variant_t` nesnesinin `VARTYPE`.
 
 *pSrc*<br/>
-Bir işaretçi `_variant_t` dönüştürülecek nesne. Bu değer NULL ise, yerinde dönüştürme yapılır.
+Dönüştürülecek `_variant_t` nesnesine yönelik bir işaretçi. Bu değer NULL ise, dönüştürme yerinde yapılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi dönüştürür bir `_variant_t` belirtilen nesnede `VARTYPE`. Varsa *pSrc* NULL ise dönüştürme yerine, aksi takdirde bu yapılır `_variant_t` nesne kopyalandığına *pSrc* ve sonra dönüştürülür.
+Bu üye işlevi bir `_variant_t` nesnesini belirtilen `VARTYPE`dönüştürür. *PSrc* null ise, dönüştürme yerinde yapılır, aksi takdirde bu `_variant_t` nesnesi *pSrc* 'den kopyalanır ve sonra dönüştürülür.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

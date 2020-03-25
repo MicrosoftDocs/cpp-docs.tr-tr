@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4630
 ms.assetid: d8926376-7acc-4fc7-8438-6f0de3468870
-ms.openlocfilehash: 893364183594782b825377f57fa4e525338d62d8
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 414388fc1b9c6a7425d45e2ba92546960cadf404
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74052553"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80199621"
 ---
 # <a name="compiler-warning-level-1-c4630"></a>Derleyici Uyarısı (düzey 1) C4630
 

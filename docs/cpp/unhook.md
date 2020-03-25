@@ -8,16 +8,16 @@ helpviewer_keywords:
 - event handlers [C++], dissociating events
 - __unhook keyword [C++]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
-ms.openlocfilehash: e8f42c35024995c026ae10fc7f0ab3db77d1e5dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a259b80b941e37e0c3040ad55894c114fe4bc82
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312160"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160534"
 ---
-# <a name="unhook"></a>__unhook
+# <a name="__unhook"></a>__unhook
 
-Bir olay işleyicisi yöntemi dissociates.
+Bir olaydan bir işleyici yönteminin ilişkilendirmesini kaldırın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,64 +39,64 @@ long  __unhook(
 
 #### <a name="parameters"></a>Parametreler
 
-**&** *SourceClass* `::` *oluşur* içinden, tutulabilir olay işleyicisi yöntemi olay yöntemi için bir işaretçi:
+**&** *SourceClass* `::` *eventmethod* olay işleyicisi yönteminin üstünden geri yüklediğiniz olay yöntemine yönelik bir işaretçi:
 
-- Yerel C++ olayları: *SourceClass* olay kaynak sınıfı ve *oluşur* etkinliğidir.
+- Yerel C++ olaylar: *SourceClass* olay kaynak sınıfıdır ve *eventmethod* olaydır.
 
-- COM olayları: *SourceClass* olay kaynağı arabirim ve *oluşur* yöntemlerinden biridir.
+- COM olayları: *SourceClass* olay kaynağı arabirimidir ve *eventmethod* , yöntemlerinden biridir.
 
-- Yönetilen olaylar: *SourceClass* olay kaynak sınıfı ve *oluşur* etkinliğidir.
+- Yönetilen olaylar: *SourceClass* olay kaynak sınıfıdır ve *eventmethod* olaydır.
 
 *interface*<br/>
-Gelen unhooked arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/attributes/event-receiver.md) özniteliktir **true**.
+Arabirim adı *alıcıdan*takılmış olan, yalnızca [event_receiver](../windows/attributes/event-receiver.md) özniteliğinin *layout_dependent* parametresinin **true**olduğu com olay alıcıları için.
 
 *source*<br/>
-Olay kaynağının bir örneği için bir işaretçi. Kod bağlı olarak `type` belirtilen `event_receiver`, *kaynak* aşağıdakilerden biri olabilir:
+Olay kaynağı örneğine yönelik bir işaretçi. `event_receiver`belirtilen kod `type` bağlı olarak, *kaynak* aşağıdakilerden biri olabilir:
 
-- Yerel olay kaynak nesne işaretçisi.
+- Yerel bir olay kaynağı nesne işaretçisi.
 
-- Bir `IUnknown`-işaretçi (COM kaynak) bağlı.
+- `IUnknown`tabanlı işaretçi (COM kaynağı).
 
-- Bir yönetilen nesne işaretçisi (yönetilen olaylar).
+- Yönetilen bir nesne işaretçisi (yönetilen olaylar için).
 
-**&** *ReceiverClass* `::` `HandlerMethod` bir olaydan unhooked olmasını olay işleyicisi yöntemi için bir işaretçi. İşleyici, bir sınıf ya da aynı başvuru yöntemi olarak belirtilir; sınıf adı belirtmezseniz, **__unhook** sınıfı, bunu çağrılır olmasını varsayar.
+**&** *ReceiverClass* `::`, bir olaydan geri dönmek için olay işleyicisi yöntemine yönelik bir işaretçi `HandlerMethod`. İşleyici bir sınıfın yöntemi veya aynı başvuru olarak belirtilir; sınıf adını belirtmezseniz **__unhook** , sınıfın çağrıldığı sınıfı kabul eder.
 
-- Yerel C++ olayları: *ReceiverClass* olay alıcısı sınıfına olduğu ve `HandlerMethod` işleyicidir.
+- Yerel C++ olaylar: *ReceiverClass* , olay alıcı sınıfıdır ve `HandlerMethod` işleyicidir.
 
-- COM olayları: *ReceiverClass* olay alıcısı arabirim ve `HandlerMethod` ona ait işleyiciyi biridir.
+- COM olayları: *ReceiverClass* olay alıcı arabirimidir ve `HandlerMethod` işleyicilerinden biridir.
 
-- Yönetilen olaylar: *ReceiverClass* olay alıcısı sınıfına olduğu ve `HandlerMethod` işleyicidir.
+- Yönetilen olaylar: *ReceiverClass* , olay alıcı sınıfıdır ve `HandlerMethod` işleyicidir.
 
-*Alıcı*(isteğe bağlı) olay alıcısı sınıfına örneğine bir işaretçi. Bir alıcı belirtmezseniz, alıcı sınıfın veya yapının, varsayılan değer **__unhook** çağrılır.
+*alıcı*(isteğe bağlı) olay alıcısı sınıfının bir örneğine yönelik bir işaretçi. Alıcı belirtmezseniz, varsayılan olarak **__unhook** çağrıldığı alıcı sınıfı veya yapısıdır.
 
 ## <a name="usage"></a>Kullanım
 
-Ana olay alıcısı sınıfına dışında da dahil olmak üzere, herhangi bir işlev kapsamı kullanımda olabilir.
+, Olay alıcı sınıfının dışında, Main dahil herhangi bir işlev kapsamında kullanılabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İç işlevini **__unhook** ilişkisini kaldırın veya "olay yöntemi bir işleyici yöntemi tutulabilir" için olay alıcısı'nda.
+Bir olay yöntemindeki bir işleyici yönteminin ilişkilendirmesini kaldırmak veya "unhook" için bir olay alıcısında iç işlev **__unhook** kullanın.
 
-Üç tür vardır **__unhook**. Çoğu durumda, ilk (dört bağımsız değişken) biçimini kullanabilirsiniz. İkinci (iki bağımsız) biçiminde kullanabileceğiniz **__unhook** yalnızca bir COM olay alıcısının için; bu, tüm olay arabirimi unhooks. Belirtilen kaynaktan tüm temsilciler tutulabilir için üçüncü (tek bağımsız değişkenli) formu kullanabilirsiniz.
+Üç **__unhook**biçimi vardır. Çoğu durumda ilk (dört bağımsız değişken) formunu kullanabilirsiniz. Yalnızca bir COM olay alıcısı için **__unhook** ikinci (iki bağımsız değişken) biçimini kullanabilirsiniz; Bu, tüm olay arabiriminin kancalarını kaldırır. Belirtilen kaynaktaki tüm temsilcilerin kancasını kaldırmak için üçüncü (bir bağımsız değişken) formu kullanabilirsiniz.
 
-Sıfır dışında bir dönüş değeri bir hata oluştuğunu gösterir (bir özel durum yönetilen olaylar oluşturur).
+Sıfır olmayan bir dönüş değeri, bir hata oluştuğunu belirtir (yönetilen olaylar bir özel durum oluşturur).
 
-Eğer **__unhook** bir olay ve değil zaten kancalandı olay işleyicisi, hiçbir etkisi olmaz.
+Önceden bağlanmayan bir olay ve olay işleyicide **__unhook** çağırırsanız, hiçbir etkisi olmayacaktır.
 
-Derleme zamanında derleyici olay var ve parametre türü ile belirtilen işleyici denetimi yapar doğrular.
+Derleme zamanında, derleyici olayın varolduğunu doğrular ve belirtilen işleyiciyle parametre türü denetimi yapar.
 
-COM olayları hariç **__hook** ve **__unhook** olay alıcısı çağrılabilir.
+COM olaylarının dışında, **__hook** ve **__unhook** olay alıcısının dışında çağrılabilir.
 
-Kullanmaya alternatif **__unhook** -= işleci kullanmaktır.
+**__Unhook** kullanmanın alternatifi-= işlecini kullanmaktır.
 
-Yeni sözdiziminde yönetilen olaylar kodlama hakkında daha fazla bilgi için bkz: [olay](../extensions/event-cpp-component-extensions.md).
+Yeni sözdiziminde yönetilen olayları kodlama hakkında daha fazla bilgi için bkz. [olayı](../extensions/event-cpp-component-extensions.md).
 
 > [!NOTE]
 >  Şablonlu bir alan veya yapı, olay içeremez.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) ve [com'da olay işleme](../cpp/event-handling-in-com.md) örnekleri için.
+Örnekler için bkz. [com 'da](../cpp/event-handling-in-com.md) [yerel C++ ](../cpp/event-handling-in-native-cpp.md) ve olay İşlemede olay işleme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

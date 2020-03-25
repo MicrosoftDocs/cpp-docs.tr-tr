@@ -12,12 +12,12 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 380cf58180913f538c1c326d6aaf49947b694063
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 3eae1aca53c40a33b8d120b02fdde8f68d58b723
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445421"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160431"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Iletişim kutusu oluşturma (C++)
 
@@ -26,7 +26,7 @@ Bir C++ iletişim kutusunun konumu ve boyutu ve içindeki denetimlerin konumu ve
 > [!NOTE]
 > Projeniz zaten bir. rc dosyası içermiyorsa, bkz. [Yeni kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
-## <a name="how-to"></a>Nasıl yapılır?
+## <a name="how-to"></a>Nasıl yapılır
 
 **Iletişim kutusu Düzenleyicisi** şunları yapmanızı mümkün:
 

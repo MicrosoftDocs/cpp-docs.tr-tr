@@ -6,12 +6,12 @@ helpviewer_keywords:
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-ms.openlocfilehash: 5f4c75e3f8bd8f7d32109cf92465dfa6e5aba6ed
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 571be8300f46ceecdc65df92d35c731bec96a92a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095862"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169991"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 
@@ -23,7 +23,7 @@ MFC çerçevesi, Windows için uzman programcıların çalışmasına olanak tan
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-`MFC Samples`[görsel C++ örneklerde](../overview/visual-cpp-samples.md) sağlanan
+[MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples)
 
 [MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)
 

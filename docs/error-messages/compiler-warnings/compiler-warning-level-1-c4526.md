@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4526
 ms.assetid: 490f8916-5fdc-4cad-b412-76c3382a5976
-ms.openlocfilehash: 60ac01d6a118f37a22b39ab41fa60252866f3360
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: d4d772f3e505979a6ea5c3e7923fefa621601370
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73966279"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186510"
 ---
 # <a name="compiler-warning-level-1-c4526"></a>Derleyici Uyarısı (düzey 1) C4526
 

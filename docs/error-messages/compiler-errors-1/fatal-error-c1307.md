@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1307
 ms.assetid: 6f77d3d4-ba8a-476c-b540-aff19eb4efc4
-ms.openlocfilehash: 1acdda77ac9cbf8d99752de3b78ab9c32bbb4cbc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c7eb90c8e17408f6898ef7ff1a9d9e5efcafb4fa
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338538"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203352"
 ---
 # <a name="fatal-error-c1307"></a>Önemli hata C1307
 
-Profil verileri toplandıktan sonra program düzenlenmiş
+profil verileri toplandıktan sonra program düzenlendi
 
-Kullanırken [/LTCG:PGOPTIMIZE](../../build/reference/ltcg-link-time-code-generation.md), bağlayıcı sonra /LTCG:PGINSTRUMENT derlendiğini bir giriş modülü algılandı ve modül profil verilerini mevcut olduğu artık ilgili noktasına değiştirildi. Örneğin, çağrı grafı yeniden derlenmiş bir modülde değiştirdiyseniz, derleyici C1307 oluşturur.
+[/LTCG: PGOPTIMIZE](../../build/reference/ltcg-link-time-code-generation.md)kullanılırken bağlayıcı,/LTCG: pgınstrumafter ve modülün var olan profil verilerinin artık alakalı olduğu noktaya değiştiği bir giriş modülü algıladı. Örneğin, yeniden derlenen modülde çağrı grafı değiştiyse, derleyici C1307 oluşturacaktır.
 
-Bu hatayı gidermek için /LTCG:PGINSTRUMENT çalıştırın ve tüm test çalışmalarını Yinele /LTCG:PGOPTIMIZE çalıştırın. /LTCG:PGUPDATE yerine /LTCG:PGOPTIMIZE /LTCG:PGINSTRUMENT ve yineleme tüm test çalışmalarını çalıştıramıyorsanız, iyileştirilmiş görüntü oluşturmak için kullanın.
+Bu hatayı çözmek için/LTCG: PGıNSTRUMRUN, tüm test çalıştırmalarını Yinele ve/LTCG: PGOPTIMIZE ' i çalıştırın. /LTCG: PGıNSTRUMRUN ve tüm test çalıştırmalarını yinelemek istiyorsanız, iyileştirilmiş görüntüyü oluşturmak için/LTCG: PGOPTIMIZE yerine/LTCG: PGUPDATE kullanın.

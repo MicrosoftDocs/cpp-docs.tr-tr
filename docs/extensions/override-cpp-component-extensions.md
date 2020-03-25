@@ -1,33 +1,33 @@
 ---
-title: geçersiz kılma (C++/CLI ve C++/CX)
+title: override (C++/CLI ve C++/CX)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - overriding, override keyword [C++]
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-ms.openlocfilehash: 8dc7a0a0e6cf759d956fd701d033bd773e572af3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 32c825539efe670528eab7416afefe07d4cb1b6c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254480"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172106"
 ---
-# <a name="override--ccli-and-ccx"></a>geçersiz kılma (C++/CLI ve C++/CX)
+# <a name="override--ccli-and-ccx"></a>override (C++/CLI ve C++/CX)
 
-**Geçersiz kılma** bağlama duyarlı anahtar sözcüğü bir tür üyesi bir temel sınıf veya temel arabirim üyesi kıldığını gösterir.
+**Geçersiz kılma** bağlamı duyarlı anahtar sözcüğü, bir türün bir üyesinin temel sınıfı veya temel arabirim üyesini geçersiz kıldığını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Geçersiz kılma** (varsayılan derleyici seçeneği), yerel hedefler için derleme yaparken anahtar sözcüğü geçerli Windows çalışma zamanı hedefleri (`/ZW` derleyici seçeneği), veya ortak dil çalışma zamanı hedefleri (`/clr` derleyici seçeneği).
+**Override** anahtar sözcüğü, yerel hedefler (varsayılan derleyici seçeneği), Windows çalışma zamanı hedefler (`/ZW` derleyici seçeneği) veya ortak dil çalışma zamanı hedefleri (`/clr` derleyici seçeneği) için derlenirken geçerlidir.
 
-Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz. [geçersiz kılma belirticisi](../cpp/override-specifier.md) ve [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+Geçersiz kılma belirticileri hakkında daha fazla bilgi için bkz. [geçersiz kılma belirticisi](../cpp/override-specifier.md) ve [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
-Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz. [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md).
+Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md).
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği gösteren **geçersiz kılma** yerel derlemelerde de kullanılabilir.
+Aşağıdaki kod örneği, **geçersiz kılma** 'nın yerel derlemelerde da kullanılabilir olduğunu gösterir.
 
 ```cpp
 // override_keyword_1.cpp
@@ -43,7 +43,7 @@ struct X : public I1 {
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **geçersiz kılma** Windows çalışma zamanı derlemeleri kullanılabilir.
+Aşağıdaki kod örneği, **geçersiz kılmanın** Windows çalışma zamanı derlemelerinde kullanılabileceğini gösterir.
 
 ```cpp
 // override_keyword_2.cpp
@@ -63,7 +63,7 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği gösteren **geçersiz kılma** ortak dil çalışma zamanı derlemeleri kullanılabilir.
+Aşağıdaki kod örneği, **geçersiz kılma** 'nın ortak dil çalışma zamanı derlemelerinde kullanılabileceğini gösterir.
 
 ```cpp
 // override_keyword_3.cpp

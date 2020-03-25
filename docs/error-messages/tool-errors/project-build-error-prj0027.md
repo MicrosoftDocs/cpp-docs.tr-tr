@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0027
 ms.assetid: 85d73a78-4b9e-4553-9f5d-2d76c48a790a
-ms.openlocfilehash: bc87ec33e78b9d45625432bd379b4ec7aeeecb52
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc69f34dd291f2af241edae51bda9f09aeb9916d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265363"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80192256"
 ---
 # <a name="project-build-error-prj0027"></a>Proje Derleme Hatası PRJ0027
 
-Unicode günlük iletisi 'içeriğe' kullanıcının ANSI kodlu sayfasına çevrilemeyen içeriğe sahip.
+Unicode günlük iletisi ' Contents ', kullanıcının ANSI kod sayfasına çevrilemeyen içeriğe sahip.
 
-Batch ve/veya yanıt dosyaları oluşturulurken hata ile birlikte bu uyarı genellikle yalnızca görürsünüz.
+Bu uyarıyı genellikle toplu işlem ve/veya yanıt dosyaları oluştururken hatalarla birlikte görürsünüz.
 
-Bu hata için çözüm ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için derleme günlük dosyasının içeriğini güncelleştirmektir.
+Bu hatanın çözümü, derleme günlüğünün içeriğini ANSI kullanacak şekilde güncelleştirmek ya da kod sayfasını bilgisayarınıza yüklemek ve sistem varsayılanı olarak ayarlamak içindir.

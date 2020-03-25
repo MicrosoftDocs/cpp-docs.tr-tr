@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4813
 ms.assetid: c30bf877-ab04-4fe4-897e-8162092426f0
-ms.openlocfilehash: 517349dacc9081d2d34a861bb55ba734089124e2
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: c63539b14041a8615b0a5ad99932c0d44a4942b8
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051267"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174901"
 ---
 # <a name="compiler-warning-level-1-c4813"></a>Derleyici Uyarısı (düzey 1) C4813
 

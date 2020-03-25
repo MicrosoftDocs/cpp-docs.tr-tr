@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data type conversion [C++], explicit
 - type conversion [C++], explicit conversions
 ms.assetid: 54272006-5ffb-45ed-8283-27152ab97529
-ms.openlocfilehash: 9dc9440db9ea1ff7285ff9b682f6be9900c2a1ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 079a3390df56ba55bd4d71a320faa249266abb54
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184319"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189019"
 ---
 # <a name="explicit-type-conversion-operator-"></a>Açık Tür Dönüştürme İşleci: ()
 
@@ -27,13 +27,13 @@ simple-type-name ( expression-list )
 
 ## <a name="remarks"></a>Açıklamalar
 
-A *basit tür adı* arkasından bir *ifade listesi* parantez yapılardan içine belirtilen ifadeleri kullanarak belirtilen türde bir nesne. Aşağıdaki örnekte, int türüne yapılan açık tür dönüştürme gösterilmektedir:
+Bir *basit-tür adı* ve ardından ayraç içine alınmış bir *liste* , belirtilen ifadeleri kullanarak belirtilen türde bir nesne oluşturur. Aşağıdaki örnekte, int türüne yapılan açık tür dönüştürme gösterilmektedir:
 
 ```cpp
 int i = int( d );
 ```
 
-Aşağıdaki örnekte gösterildiği bir `Point` sınıfı.
+Aşağıdaki örnek bir `Point` sınıfını gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -81,7 +81,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 x = 20, y = 10
@@ -116,14 +116,14 @@ struct Point
 Point pt = Point( 3, 10 );
 ```
 
-İşlev tarzı dönüştürme kullanan yukarıdaki örnekte, iki değerlerini dönüştürmek gösterilmektedir (biri *x* , diğeri *y*) kullanıcı tanımlı türe `Point`.
+İşlev stili dönüştürme kullanan önceki örnek, iki değerin ( *x* için bir ve *y*için) Kullanıcı tanımlı türe `Point`nasıl dönüştürüleceğini gösterir.
 
 > [!CAUTION]
 >  C++ derleyicisinin yerleşik tür denetimini geçersiz kıldıkları için açık tür dönüştürmelerini dikkatlice kullanın.
 
-[Atama](../cpp/cast-operator-parens.md) gösterimi sahip olmadığınız türlere dönüştürmeler için kullanılması gereken bir *basit tür adı* (işaretçi veya başvuru türleri gibi). İle ifade edilebilen türlere dönüşüm için bir *basit tür adı* iki biçimden biriyle yazılabilir.
+[Atama](../cpp/cast-operator-parens.md) gösterimi *basit tür adı* olmayan türlere Dönüştürmelere (örneğin, işaretçi veya başvuru türleri) sahip olmak için kullanılmalıdır. *Basit tür adı* ile ifade edilebilir türlere dönüştürme, herhangi bir biçimde yazılabilir.
 
-Atamalar içinde tür tanımı geçersiz.
+Atamalar içindeki tür tanımı geçersiz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,18 +6,18 @@ helpviewer_keywords:
 - assembly language [C++]
 - __asm keyword [C++], assembly language in
 ms.assetid: ad699356-1d16-4984-871f-c5fd7797c1fb
-ms.openlocfilehash: e2da242bf22b8b01a315d5bb09498764b54e1504
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5c7c9274ab5b75efa007fd96fc00d80bd53426e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166574"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169129"
 ---
-# <a name="using-assembly-language-in-asm-blocks"></a>__asm Bloklarında Derleme Dili Kullanma
+# <a name="using-assembly-language-in-__asm-blocks"></a>__asm Bloklarında Derleme Dili Kullanma
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Satır içi assembler çok diğer birleştiricileri ortak sahiptir. Örneğin, yasal MASM herhangi bir ifade kabul eder. Bu bölümde derleme dili özellikleri açıklanmaktadır `__asm` engeller.
+Satır içi assembler, diğer birleştiriciler ile çok yaygın olarak bulunur. Örneğin, Masd 'de geçerli olan herhangi bir ifadeyi kabul eder. Bu bölümde `__asm` bloklarında derleme dili özelliklerinin kullanımı açıklanmaktadır.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
@@ -43,7 +43,7 @@ Satır içi assembler çok diğer birleştiricileri ortak sahiptir. Örneğin, y
 
 - [Intel'in MMX Yönerge Kümesi](../../assembler/inline/intel-s-mmx-instruction-set.md)
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - U4004
 ms.assetid: 5086bbcb-42d7-4677-a877-1a02202a86a2
-ms.openlocfilehash: 882f6c98b31d23d283f5e8b32b46a46c543b1a76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d59b5656d76025fa56bfc76bad800659f25acf53
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298158"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80193205"
 ---
 # <a name="nmake-warning-u4004"></a>NMAKE Uyarısı U4004
 
-Hedef 'targetname' için çok fazla kural
+' TargetName ' hedefi için çok fazla kural
 
-Birden fazla açıklama bloğu tek iki nokta üst üste kullanarak belirtilen hedef için belirtilen (**:**) ayırıcı olarak. NMAKE ilk açıklama bloğunda komutları yürütülürken ve sonraki blokları yoksayıldı.
+Belirtilen hedef için birden fazla açıklama bloğu ayırıcı olarak tek iki nokta ( **:** ) kullanılarak belirtildi. NMAKE ilk açıklama bloğunda komutları çalıştırdı ve sonraki blokları yoksaydı.
 
-Aynı hedefe birden çok bağımlılık belirtmek için çift iki nokta üst üste kullanın (`::`) her bir bağımlılık satır ayırıcı olarak.
+Aynı hedefi birden çok bağımlılıkda belirtmek için, her bir bağımlılık satırında ayırıcı olarak çift iki nokta (`::`) kullanın.

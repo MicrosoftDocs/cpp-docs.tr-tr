@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC1020
 ms.assetid: 3e073ebf-9136-4bf8-ac6a-3c642ed64594
-ms.openlocfilehash: ac4a9d521728b22966f6d8824479d13cc7394601
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff4cc5564f59d0adf74ae86149130dd5d017a9ae
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297352"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182688"
 ---
 # <a name="resource-compiler-fatal-error-rc1020"></a>Kaynak Derleyicisi Önemli Hatası RC1020
 
-Beklenmeyen '#endif'
+beklenmeyen ' #endif '
 
-Bir `#endif` yönergesi görünen eşleşmeyen `#if`, **#ifdef**, veya **#ifndef** yönergesi.
+Bir `#endif` yönergesi, eşleşen bir `#if`, **#ifdef**veya **#ifndef** yönergesi olmadan görüntülendi.
 
-Eşleşen bir olduğundan emin olun `#endif` her `#if`, **#ifdef**, ve **#ifndef** deyimi.
+Her `#if`, **#ifdef**ve **#ifndef** ifadesiyle eşleşen bir `#endif` olduğundan emin olun.

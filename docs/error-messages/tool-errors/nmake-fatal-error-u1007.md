@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - U1007
 ms.assetid: 64fd78a6-5b27-4aa8-92ea-f1c55e6e5edd
-ms.openlocfilehash: 6984c0b573ae43275dc58d41b711cb88d96ec545
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 810eab6edec231918023451b4518ab439ab55b2c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378394"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173432"
 ---
 # <a name="nmake-fatal-error-u1007"></a>NMAKE Önemli Hatası U1007
 
-adında izin verilmeyen çift tırnak işareti
+adda çift tırnak işaretine izin verilmez
 
-Belirtilen hedef adı veya dosya adı çift tırnak işareti bulunan (**"**).
+Belirtilen hedef adı veya dosya adı çift tırnak işareti ( **"** ) içeriyordu.
 
-Çift tırnak işareti, bir dosya adı çevreleyebilirsiniz ancak içinde kapsayamaz.
+Çift tırnak işaretleri bir dosya adını çevreliyor, ancak içinde yer alamaz.

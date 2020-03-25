@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4537
 ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
-ms.openlocfilehash: 2f97be4e1aaa5143df685cb95935d350e6f02534
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81058f153228d3d8fbf4097c140962d0cb9677e5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161088"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186367"
 ---
 # <a name="compiler-warning-level-1-c4537"></a>Derleyici Uyarısı (düzey 1) C4537
 
-> '*nesne*': '*işleci*' UDT olmayan türe uygulandı
+> '*Object*': '*operator*', udt olmayan türe uygulandı
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başvuru (kullanıcı tanımlı tür) bir nesne beklenirken geçirildi. Bir başvuru, bir nesne değil, ancak satır içi derleme kodu ayrım yapmak mümkün değildir. Derleyici kod olarak yine de oluşturur *nesne* olan bir örneği.
+Bir nesne (Kullanıcı tanımlı tür) beklenirken bir başvuru geçirildi. Başvuru bir nesne değil, ancak satır içi assembler kodu ayrım yapamaz. Derleyici, *nesne* bir örnek olmasına rağmen kodu oluşturur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4537 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4537 oluşturur ve nasıl düzeltileceğini gösterir:
 
 ```cpp
 // C4537.cpp

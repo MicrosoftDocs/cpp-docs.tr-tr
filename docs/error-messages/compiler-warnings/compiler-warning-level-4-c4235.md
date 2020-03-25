@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4235
 ms.assetid: d4214799-d62c-4674-b4e2-9e201c303303
-ms.openlocfilehash: 3e3cb2e40ed42b24ee52252003b26ec09cd86710
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: df80bec2294929be463425d74d4bf00421b368e6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541755"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198438"
 ---
 # <a name="compiler-warning-level-4-c4235"></a>Derleyici Uyarısı (düzey 4) C4235
 

@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4513
 ms.assetid: 6877334a-f30a-4184-9483-dac3348737a4
-ms.openlocfilehash: cbde035a988e5f6ac64303b2ed159b885ece8684
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f5f25465beb04c6f91d290d4c119d07d75dd8f54
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221069"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80185223"
 ---
 # <a name="compiler-warning-level-4-c4513"></a>Derleyici Uyarısı (düzey 4) C4513
 
-'class': yok edici üretilemedi
+' class ': yıkıcı üretilemedi
 
-Derleyici, belirtilen sınıfın bir varsayılan yıkıcı oluşturulamıyor; hiçbir yok edici oluşturuldu. Türetilmiş sınıf için erişilebilir değil bir temel sınıf yok Edicisi kullanılıyor. Temel sınıf özel bir yok Edicisi varsa, ortak veya korumalı olun.
+Derleyici verilen sınıf için varsayılan yıkıcıyı oluşturamıyor; yok edicisi oluşturulmadı. Yıkıcı, türetilmiş sınıf tarafından erişilemeyen bir temel sınıfta. Taban sınıfın özel bir yıkıcısı varsa, bunu ortak veya korumalı hale getirin.

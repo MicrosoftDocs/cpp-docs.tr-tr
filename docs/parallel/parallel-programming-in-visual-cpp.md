@@ -3,12 +3,12 @@ title: Visual C++'ta Paralel Programlama
 ms.date: 11/04/2016
 ms.assetid: f5c28ab6-a1d9-492f-b207-05e8aee73e96
 ms.topic: overview
-ms.openlocfilehash: 3aa6e248f34293f6564f0b98c524f07535dbb20e
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: bc7abf7f378085160312c370552ff966e4ce0a1e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274771"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160404"
 ---
 # <a name="parallel-programming-in-visual-c"></a>Visual C++'ta Paralel Programlama
 

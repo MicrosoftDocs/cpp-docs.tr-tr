@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - comma operator
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-ms.openlocfilehash: 8c6757f402cc7422824f1b701d3d1e4ae2566074
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ea2bd5c0e7653ba7f81531a5c39df2da41662a9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399219"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80189773"
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 
@@ -25,11 +25,11 @@ expression , expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-Virgül işleci soldan sağa ilişkilendirilebilirlik vardır. Virgülle ayrılmış iki ifade, soldan sağa doğru değerlendirilir. Sol işlenen her zaman değerlendirilir ve tüm yan etkileri sağ işlenen değerlendirilmeden önce tamamlanır.
+Virgül işleci soldan sağa ilişkilendiriledir. Virgülle ayrılmış iki ifade, soldan sağa doğru değerlendirilir. Sol işlenen her zaman değerlendirilir ve tüm yan etkileri sağ işlenen değerlendirilmeden önce tamamlanır.
 
 Virgüller, işlev bağımsız değişken listeleri gibi bazı bağlamlarda ayırıcılar olarak kullanılabilir. Ayırıcı olarak virgül kullanımını işleç olarak kullanımıyla karıştırmayın; iki kullanım birbirinden tamamen farklıdır.
 
-`e1, e2` ifadesini göz önünde bulundurun. Tür ve ifade değeri türü ve değeri olan *e2*; değerlendirme sonucu *e1* atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.
+`e1, e2` ifadesini göz önünde bulundurun. İfadenin türü ve değeri, *E2*türü ve değeridir; *E1* 'ın değerlendirilme sonucu atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.
 
 Virgülün normalde bir ayırıcı olarak kullanıldığı yerlerde (örneğin, işlevlerin veya toplama başlatıcılarının gerçek bağımsız değişkenlerinde), virgül işleci ve işlenenleri parantez içine alınmalıdır. Örneğin:
 

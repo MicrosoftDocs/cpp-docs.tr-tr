@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1007
 ms.assetid: 224f7e2c-4522-4e09-b455-8d293bdb799d
-ms.openlocfilehash: 311f829d3424e2ac77cd78fd7a7a719751d958c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f85a79b02d8b44cb28cf03a0b6bc60dfb7094ce
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216294"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204860"
 ---
 # <a name="fatal-error-c1007"></a>Önemli hata C1007
 
-Tanınmayan bayrak dizesinde seçeneği
+seçeneğinde Tanınmayan bayrak dizesi
 
-Komut satırı seçeneğini geçersiz bir dize içeriyor. Denetleme **CL** komut satırı ve hatalar için ortam değişkeni.
+Komut satırı seçeneği geçersiz bir dize içeriyor. Hata için **CL** komut satırını ve ortam değişkenini denetleyin.

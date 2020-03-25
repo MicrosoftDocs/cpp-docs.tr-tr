@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC2111
 ms.assetid: 118cba57-82a4-4199-acf4-9d9561946218
-ms.openlocfilehash: bf8cce125920e6506c2c37a6e840acfecd80bc5a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 3f8626b22b10e9d1180eae2b16a9be538354978c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344397"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80191528"
 ---
 # <a name="resource-compiler-error-rc2111"></a>Kaynak Derleyicisi Hatası RC2111
 
 Geçersiz denetim türü
 
-Her denetim deyiminde bir **iletişim** deyimi aşağıdakilerden biri olmalıdır: 3STATE, AUTO3, AUTOCHECK, AUTORADIO, BDÜZEN, ONAY KUTUSUNU, COMBOBOX, DENETİM, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, HEDIT, SİMGE, IEDIT, LİSTE KUTUSU, LTEXT, PUSHBOX, BASMA DÜĞMESİ, RADIOBUTTON, RTEXT, KAYDIRMA ÇUBUĞU, USERBUTTON.
+Bir **iletişim** DEYIMINDEKI her denetim ifadesinin aşağıdakilerden biri olması gerekır: 3STATE, AUTO3, reccheck, RECRADIO, BEDıT, CheckBox, ComboBox, Control, ctext, DEFBASMA, EDITTEXT, GroupBox, HEDıT, ıCON, IEDIT, LISTBOX, LTEXT, pushbox, BASMALı, RADIOBUTTON, RTEXT, SCROLLBAR, UserButton.
 
-Bu denetim ifadeleri doğru yazıldığından emin olun.
+Bu DENETIM deyimlerinin doğru yazıldığından emin olun.

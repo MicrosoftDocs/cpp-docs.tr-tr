@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C1068
 ms.assetid: 3b4abd16-4552-4900-84be-54f6ebb6c785
-ms.openlocfilehash: bbf001472c81da4b52deda620eab2b59ef600090
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2cea6e059737d245a216c33418e60e9040e4f9c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165820"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204340"
 ---
 # <a name="fatal-error-c1068"></a>Önemli hata C1068
 
-'dosya' dosyası açılamıyor
+' dosya ' dosyası açılamıyor
 
-Emin `file` başka bir program tarafından kullanımda değil.
+`file` başka bir program tarafından kullanılmadığından emin olun.

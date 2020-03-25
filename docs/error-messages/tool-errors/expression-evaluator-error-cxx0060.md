@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CAN0060
 - CXX0060
 ms.assetid: 40c0ff02-ca6b-4232-b1e3-1f3a213ee2a3
-ms.openlocfilehash: 30e44be23a84e9f14f194f9baaaba1eda6c7a097
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 32bee6d51368eb74ca0856607cf44bf902d202a2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299510"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184573"
 ---
 # <a name="expression-evaluator-error-cxx0060"></a>İfade Değerlendirici Hatası CXX0060
 
 Kayıt kullanılamıyor
 
-Bir ifade kullanılamaz bir kayıt belirtildi. Bu hata çalıştıran makinede mevcut olmayan bir kayıt erişmeye tarafından neden olabilir.
+Bir ifade, kullanılamayan bir kayıt belirtti. Bu hata, çalıştıran makinede mevcut olmayan bir kayda erişme girişimi nedeniyle oluşabilir.
 
-Bu hata için CAN0060 aynıdır.
+Bu hata CAN0060 ile aynıdır.

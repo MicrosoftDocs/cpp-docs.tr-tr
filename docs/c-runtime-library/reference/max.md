@@ -26,12 +26,12 @@ helpviewer_keywords:
 - maximum macro
 - __max macro
 ms.assetid: 05c936f6-0e22-45d6-a58d-4bc102e9dae2
-ms.openlocfilehash: dac82ecd1c96d1edf9175a29797d93c65bc19c99
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4cdfd99ec344cd357900d76dfc7f9400046e448a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952745"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170195"
 ---
 # <a name="__max"></a>__max
 
@@ -50,13 +50,13 @@ Karşılaştırılacak herhangi bir sayısal tür değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**__max** , bağımsız değişkenlerinin büyük bir bölümünü döndürür.
+**__max** bağımsız değişkenlerinden daha büyük bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**__Max** makrosu iki değeri karşılaştırır ve daha büyük bir değeri döndürür. Bağımsız değişkenler, imzalanmış veya imzasız herhangi bir sayısal veri türü olabilir. Bağımsız değişkenlerin ve dönüş değerinin her ikisi de aynı veri türünde olmalıdır.
+**__Max** makro iki değeri karşılaştırır ve daha büyük bir değeri döndürür. Bağımsız değişkenler, imzalanmış veya imzasız herhangi bir sayısal veri türü olabilir. Bağımsız değişkenlerin ve dönüş değerinin her ikisi de aynı veri türünde olmalıdır.
 
-Döndürülen bağımsız değişken makro tarafından iki kez değerlendirilir. Bağımsız değişken, değerlendiriliyorsa değeri değiştiren bir ifadesiyse, `*p++`bu beklenmeyen sonuçlara yol açabilir.
+Döndürülen bağımsız değişken makro tarafından iki kez değerlendirilir. Bağımsız değişken, `*p++`gibi değerlendiriliyorsa değeri değiştiren bir ifadesiyse bu beklenmeyen sonuçlara neden olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

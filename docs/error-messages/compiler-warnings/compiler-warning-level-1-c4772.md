@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
-ms.openlocfilehash: 95243ab66d5d0296e1c316ff8dde7add75a030cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89156b2f29fd21160e6abddc3ecb21efaee6dde1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385465"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80175144"
 ---
 # <a name="compiler-warning-level-1-c4772"></a>Derleyici Uyarısı (düzey 1) C4772
 
-> \#içeri aktarma, bir eksik tür kitaplığından bir tür başvurulan; '*eksik tür*' yer tutucu olarak kullanılan
+> \#içeri aktarmaya eksik tür kitaplığından bir tür başvuruluyor; '*eksik-tür*' yer tutucu olarak kullanıldı
 
-Bir tür kitaplığı ile başvuruldu [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi. Ancak, tür kitaplığı ile başvurulmadı başka bir tür kitaplığına bir başvuruyu bulunan `#import`. Bu bir .tlb dosyasının derleyici tarafından nebyl nalezen.
+[#İmport](../../preprocessor/hash-import-directive-cpp.md) yönergesiyle bir tür kitaplığına başvuruldu. Ancak, tür kitaplığı `#import`ile başvurulmayan başka bir tür kitaplığına başvuru içeriyordu. Bu diğer. tlb dosyası derleyici tarafından bulunamadı.
 
-Kullanırsanız, derleyicinin tür kitaplıklarını farklı dizinlerde bulmaz olduğunu unutmayın [/ı (ek içeren dizinler)](../../build/reference/i-additional-include-directories.md) bu dizinlerin belirtmek için derleyici seçeneği. Derleyicinin tür kitaplıklarını farklı dizinlerde bulmak istiyorsanız, bu dizinler için yol ortam değişkenine ekleyin.
+Bu dizinleri belirtmek için [/ı (ek Içerme dizinleri)](../../build/reference/i-additional-include-directories.md) derleyici seçeneğini kullanırsanız, derleyicinin farklı dizinlerde tür kitaplıklarını bulamayacağını unutmayın. Derleyicinin farklı dizinlerde tür kitaplıklarını bulmasını istiyorsanız, bu dizinleri PATH ortam değişkenine ekleyin.
 
-Varsayılan olarak, bu uyarıyı hata olarak verilir. C4772 /W0 ile atlanması olamaz.
+Varsayılan olarak bu uyarı hata olarak verilir. C4772/W0ile bastırılamaz.
 
 ## <a name="example"></a>Örnek
 
-İlk tür kitaplığı C4772 üretmek için gereken budur.
+Bu, C4772 yeniden üretmek için gereken ilk tür kitaplığıdır.
 
 ```IDL
 // c4772a.idl
@@ -40,7 +40,7 @@ library C4772aLib
 };
 ```
 
-İkinci tür kitaplığı C4772 üretmek için gereken budur.
+Bu, C4772 yeniden üretmek için gereken ikinci tür kitaplığıdır.
 
 ```IDL
 // c4772b.idl
@@ -58,7 +58,7 @@ library C4772bLib
 };
 ```
 
-Aşağıdaki örnek, C4772 oluşturur:
+Aşağıdaki örnek C4772 oluşturur:
 
 ```cpp
 // C4772.cpp

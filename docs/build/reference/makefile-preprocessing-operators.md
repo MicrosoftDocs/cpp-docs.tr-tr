@@ -9,64 +9,64 @@ helpviewer_keywords:
 - DEFINED operator
 - makefiles, preprocessing operators
 ms.assetid: a46e4d39-afdb-43c1-ac3b-025d33e6ebdb
-ms.openlocfilehash: 4101c2fe30bcba44e9b69ed4d6d022845e6e8904
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2276f6a3c28c6f2fac509ef0e4bc14cce9932582
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321585"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170469"
 ---
 # <a name="makefile-preprocessing-operators"></a>Derleme Görevleri Dosyası Önişleme İşleçleri
 
-Derleme görevleri dosyası önişleme ifadeler sabit değerler, çıkış kodlarından komutları, dizeler, makroları ve dosya sistemi yolları gibi davranan işleçleri kullanabilirsiniz. İfadeyi değerlendirmek için önişlemci ilk makroları genişletir ve ardından komutları yürütür ve ardından işlemleri gerçekleştirir. İşlem açık gruplandırma parantez içinde sırasına göre ve İşleç önceliği sırasına göre değerlendirilir. Sonuç sabit bir değerdir.
+Derleme görevleri dosyası ön işleme ifadeleri sabit değerler, komut, dizeler, makrolar ve dosya sistemi yollarından çıkış kodları üzerinde işlem yapan işleçleri kullanabilir. İfadeyi değerlendirmek için, önişlemci önce makroları genişletir, sonra komutları yürütür ve sonra işlemleri gerçekleştirir. İşlemler, parantez içinde açık gruplandırma sırasıyla ve sonra işleç önceliği sırasına göre değerlendirilir. Sonuç sabit bir değerdir.
 
-**TANIMLANAN** işleci, bir makro adı işlevi gören bir mantıksal işleç. İfade **TANIMLANAN (**_makroadı_**)** true ise *makroadı* tanımlanır, bile atanan bir değer yok. **TANIMLANAN** birlikte **! Eğer** veya **! ELSE IF** eşdeğerdir **! IFDEF** veya **! BAŞKA IFDEF**. Ancak, bu yönergeler aksine **TANIMLANAN** karmaşık ifadelerde kullanılabilir.
+**Tanımlı** işleç, makro adı üzerinde davranan mantıksal bir işleçtir. Atanan bir değere sahip olmasa bile, *makroadı* tanımlanmışsa **(** _makroadı_ **)** ifade true olur. Birlikte **tanımlanır** **!** Veya varsa **! AKSI TAKDIRDE** , öğesine eşdeğerdir **! IDEF** veya **! ELSE IFDEF**. Ancak, bu yönergelerin aksine, **tanımlanan** karmaşık ifadelerde bu şekilde kullanılabilir.
 
-**Mevcut** işleci, bir dosya sistemi yolu işlevi gören bir mantıksal işleç. **Mevcut (**_yolu_**)** true ise *yolu* bulunmaktadır. Sonuç **mevcut** ikili ifadelerde kullanılabilir. Varsa *yolu* boşluklar içeriyorsa çift tırnak işaretleri içine alın.
+**EXIST** işleci, bir dosya sistemi yolu üzerinde davranan mantıksal bir işleçtir. *Yol* varsa, **mevcut (** _Path_ **)** değeri true 'dur. **Var** olan sonucu ikili ifadelerde kullanılabilir. *Yol* boşluk içeriyorsa, çift tırnak işaretleri içine alın.
 
-İki dizeleri karşılaştırmak için eşitlik kullanın (**==**) işleci ve eşitsizlik (**! =**) işleci. Dize, çift tırnak içine alın.
+İki dizeyi karşılaştırmak için eşitlik ( **==** ) işlecini veya eşitsizlik ( **! =** ) işlecini kullanın. Dizeleri çift tırnak işaretleri içine alın.
 
-Tamsayı sabitleri, birli işleçler için sayısal olumsuzlama kullanabilirsiniz (**-**), bir kullanıcının tamamlar (**~**) ve mantıksal olumsuzlama (**!**).
+Tamsayı sabitleri birli işleçleri ( **-** ), bir tane tamamlama ( **~** ) ve mantıksal değilleme ( **!** ) için kullanabilir.
 
-İfadeleri, aşağıdaki işleçleri kullanabilirsiniz. Eşit önceliğe sahip işleçler birlikte gruplanır ve öncelik sırasına göre azalan düzende gruplar listelenir. Birli işleçler, sağ işlenen ile ilişkilendirin. İkili işleçler eşit önceliğe sahip işlenenlerini soldan sağa ilişkilendirilir.
+İfadeler aşağıdaki işleçleri kullanabilir. Eşit önceliğe sahip işleçler birlikte gruplandırılır ve gruplar azalan öncelik sırasıyla listelenir. Birli İşleçler, işleneni sağ ile ilişkilendirir. Eşit önceliğe sahip ikili işleçler, işlenenleri soldan sağa ilişkilendirir.
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|**TANIMLANAN (** *makroadı* **)**|Geçerli tanım durumu için mantıksal bir değer üreten *makroadı*.|
-|**Mevcut (** *yolu* **)**|Bir dosyaya varlığı için mantıksal bir değer üreten *yolu*.|
+|**Tanımlı (** *makroadı* **)**|*Makroadı*öğesinin geçerli tanım durumu için bir mantıksal değer üretir.|
+|**Var (** *yol* **)**|*Yoldaki*bir dosyanın varlığı için bir mantıksal değer üretir.|
 |||
-|**\!**|Birli mantıksal değil.|
-|**~**|Birli birinin tamamlayıcısı.|
-|**-**|Tekli olumsuzlama.|
+|**!**|Birli mantıksal DEĞIL.|
+|**~**|Birli bir tamamlayıcı.|
+|**-**|Birli olumsuzlama.|
 |||
 |**&#42;**|Çarpma.|
 |**/**|Bölme.|
-|**%**|Modunu (kalanını).|
+|**%**|Mod (geri kalan).|
 |||
 |**+**|Ayrıca.|
 |**-**|Çıkarma.|
 |||
-|**\<\<**|Sola bit tabanlı kaydırma.|
-|**>>**|Bit düzeyinde kaydırma doğru.|
+|**\<\<**|Bit düzeyinde kaydırma sola.|
+|**>>**|Bit düzeyinde kaydırma hakkı.|
 |||
 |**\<=**|Küçüktür veya eşittir.|
-|**>=**|Büyüktür veya eşittir.|
+|**>=**|Büyük veya eşittir.|
 |**\<**|Küçüktür.|
 |**>**|Büyüktür.|
 |||
-|**==**|Eşitlik.|
-|**\!=**|Eşitsizlik.|
+|**==**|Eþit.|
+|**!=**|Olmama.|
 |||
 |**&**|Bit düzeyinde and|
 |**^**|Bit düzeyinde XOR.|
 |**&#124;**|Bit düzeyinde OR.|
 |||
-|**&&**|Mantıksal and|
+|**&&**|Mantıksal AND.|
 |||
 |**&#124;&#124;**|Mantıksal OR.|
 
 > [!NOTE]
-> Bit düzeyinde XOR işleci (**^**) kaçış karakteri ile aynıdır ve kaçış karakterleri eklenmelidir (olarak **^^**) bir ifadede kullanıldığında.
+> Bit düzeyinde XOR işleci ( **^** ) kaçış karakteriyle aynıdır ve bir ifadede kullanıldığı zaman kaçışın ( **^^** olarak) olması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

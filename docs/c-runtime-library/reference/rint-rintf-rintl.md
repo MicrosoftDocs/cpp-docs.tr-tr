@@ -30,12 +30,12 @@ helpviewer_keywords:
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-ms.openlocfilehash: 57c4dc60d6b4d29e5c46fa6f1d03d0710ed44309
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ac9db3ee5a50bb334754a8a1191638a319829b97
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949263"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170897"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
@@ -56,14 +56,14 @@ long double rint( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Rint** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Yarı çift değerler kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır ve bu da, bir değer olarak, daha önce, bir **tamsayı** işlevleriyle aynıdır. Değer, bağımsız değişkenden değere farklıysa, **FE_INEXACT** kayan **nokta işlevlerinin aksine** **rint** işlevleri, Hata döndürme yok.
+**Rint** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Yarı çift değerler kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır ve bu da, bir değer olarak, daha önce, bir **tamsayı** işlevleriyle aynıdır. Bir sonuç, bağımsız değişkenden değerde farklıysa,,,,, bir **FE_INEXACT** kayan **nokta işlevlerinin aksine** , **rint** işlevleri kayan nokta özel durumunu oluşturabilir. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|**_matherr** Duruma|
+|Girdi|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|yok|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|yok|

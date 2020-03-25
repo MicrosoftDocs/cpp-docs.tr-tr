@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - RC2171
 ms.assetid: 0c959938-e744-43f3-b460-f05547ffea2a
-ms.openlocfilehash: b9d597b824091e42cf87e2096dd4d27f0777f2e3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: faccce9be82af97858653222475c5ec26bbd9c5c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396827"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80190995"
 ---
 # <a name="resource-compiler-error-rc2171"></a>Kaynak Derleyicisi Hatası RC2171
 
-Bilinmeyen DIB üstbilgi biçimi
+bilinmeyen DIB üst bilgi biçimi
 
-Bit eşlem üst bilgisi değil bir **BITMAPCOREHEADER** veya **BITMAPINFOHEADER** yapısı.
+Bit eşlem üstbilgisi bir **Bitmapcoreheader** veya **bitmapınfoheader** yapısı değil.

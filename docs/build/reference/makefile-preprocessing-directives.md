@@ -39,50 +39,50 @@ helpviewer_keywords:
 - ELSE directive
 - ELSEIFDEF directive
 ms.assetid: bcedeccb-d981-469d-b9e8-ab5d097fd8c2
-ms.openlocfilehash: 4825ca180cb1b419a9ffa5232575ba1a24f8805d
-ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
+ms.openlocfilehash: 1dd30c8e338343626d8a8cc3157d118e44f0ea18
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980521"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170494"
 ---
 # <a name="makefile-preprocessing-directives"></a>Derleme Görevleri Dosyası Önişleme Yönergeleri
 
 Ön işleme yönergeleri büyük/küçük harfe duyarlı değildir. İlk ünlem işareti (!) satırın başlangıcında görünmelidir. Girintileme için, ünlem işaretiyle sıfır veya daha fazla boşluk veya sekme görünebilir.
 
-- `!CMDSWITCHES`{`+` &#124; } seçeneği... `-`
+- {`+` &#124; `-`}*seçeneği* `!CMDSWITCHES`...
 
-   Üzerinde listelenen her *seçeneği* kapatır veya kapatır. Boşluk veya sekmeler `+` veya `-` işleçten önce gelmelidir; işleç ve [seçenek harfleri](running-nmake.md#nmake-options)arasında hiçbiri görünmeyebilir. Harfler büyük küçük harfe duyarlı değildir ve eğik çizgi (`/`) olmadan belirtilir. Bazı seçenekleri açıp diğerlerini devre dışı bırakmak için, ayrı belirtimlerini `!CMDSWITCHES`kullanın.
+   Üzerinde listelenen her *seçeneği* kapatır veya kapatır. Boşluk veya sekmeler `+` veya `-` işlecinden önce gelmelidir; işleç ve [seçenek harfleri](running-nmake.md#nmake-options)arasında hiçbiri görünmeyebilir. Harfler büyük/küçük harfe duyarlı değildir ve eğik çizgi olmadan belirtilir (`/`). Bazı seçenekleri açıp diğerlerini devre dışı bırakmak için `!CMDSWITCHES`ayrı belirtimlerini kullanın.
 
    Derleme görevleri dosyası içinde yalnızca/D,/I,/N ve/S kullanılabilir. Tools. ini dosyasında/F,/HELP,/NOLOGO,/X ve/? dışında tüm seçeneklere izin verilir. Açıklama bloğunda belirtilen değişiklikler bir sonraki açıklama bloğuna kadar etkili olmaz. Bu yönerge **makeflags**'i güncelleştirir; **makeflags** belirtilmişse, değişiklikler özyineleme sırasında devralınır.
 
-- `!ERROR`*metin*
+- `!ERROR` *metin*
 
-   /K ,/ı, `.IGNORE`, `!CMDSWITCHES`, veya Dash (`-`) komut değiştiricisi kullanılıyorsa, U1050 Error, ardından durursa NMAKE şeklinde metin görüntüler. *Metinden* önce boşluklar veya sekmeler yok sayılır.
+   /K,/ı, `.IGNORE`, `!CMDSWITCHES`veya Dash (`-`) komut değiştiricisi kullanılırsa bile hata U1050 ve ardından durursa NMAKE içinde *metin* görüntüler. *Metinden* önce boşluklar veya sekmeler yok sayılır.
 
-- `!MESSAGE`*metin*
+- `!MESSAGE` *metin*
 
    Standart çıktıya *metin* görüntüler. *Metinden* önce boşluklar veya sekmeler yok sayılır.
 
-- `!INCLUDE`[ `<` ] *filename* [ `>` ]
+- `!INCLUDE` [`<`] *filename* [`>`]
 
-   *Dosya adını* derleme görevleri dosyası olarak okur, ardından geçerli derleme görevleri dosyası ile devam eder. NMAKE, belirtilen veya geçerli dizinde önce *dosya adını* arar, sonra herhangi bir üst makefiles dizininden özyinelemeli olarak, *dosya adı* açılı ayraç (`< >`) içine alınmış ve **Bu, tarafından belirtilen dizinlerde** BAŞLANGıÇTA INCLUDE ortam değişkenine ayarlanan MAKROYU ekleyin. Özyinelemeli makefiles `.SUFFIXES` 'a ayarları `.PRECIOUS`, ve çıkarım kurallarını geçirmek için kullanışlıdır.
+   *Dosya adını* derleme görevleri dosyası olarak okur, ardından geçerli derleme görevleri dosyası ile devam eder. NMAKE, belirtilen veya geçerli dizinde önce *dosya adını* arar, ardından herhangi bir üst makefiles dizininde özyinelemeli olarak, *dosya adı* açılı ayraçlar (`< >`) tarafından **, dahil etme makrosu tarafından** BELIRTILEN dizinlerde, bu, başlangıçta dahil olan ortam değişkenine ayarlanır. `.SUFFIXES` ayarları, `.PRECIOUS`ve çıkarım kurallarının özyinelemeli makefiles 'a iletilmesi yararlı olur.
 
-- `!IF`*constant_expression*
+- `!IF` *constant_expression*
 
-   `!IF` İle Next `!ELSE` veya IF`!ENDIF` *constant_expression* arasındaki işler deyimleri sıfır dışında bir değere değerlendirir.
+   *Constant_expression* sıfır dışında bir değere değerlendirilirse, `!IF` ve sonraki `!ELSE` veya `!ENDIF` arasındaki deyimleri işler.
 
-- `!IFDEF`*makroadı*
+- `!IFDEF` *makroadı*
 
-   `!IFDEF` Ve sonraki `!ELSE` ya da`!ENDIF` *makroadı* arasında işlem deyimleri tanımlanmıştır. Null bir makronun tanımlanması kabul edilir.
+   `!IFDEF` ve bir sonraki `!ELSE` veya *makroadı* tanımlanmışsa `!ENDIF` arasında deyimlerini işler. Null bir makronun tanımlanması kabul edilir.
 
-- `!IFNDEF`*makroadı*
+- `!IFNDEF` *makroadı*
 
-   `!IFNDEF` Ve sonraki `!ELSE` ya da`!ENDIF` *makroadı* arasında işlem deyimleri tanımlı değildir.
+   `!IFNDEF` ve sonraki `!ELSE` ya da *makroadı* tanımlanmamışsa, `!ENDIF` deyimlerini işler.
 
-- `!ELSE`[`IF` &#124; *constant_expression* &#124; *makroadı* makroadı] `IFDEF` `IFNDEF`
+- `!ELSE` [`IF` *constant_expression* &#124; `IFDEF` *makroadı* &#124; `IFNDEF` *makroadı*]
 
-   Using `!ELSE` `!IF`, `!ENDIF` ,veya`!IFNDEF` deyimi sıfır olarak değerlendiriliyorsa, ve ileri arasındaki deyimleri işler. `!IFDEF` İsteğe bağlı anahtar sözcükler, ön işleme için daha fazla denetim sağlar.
+   Önceki `!IF`, `!IFDEF`veya `!IFNDEF` deyimi sıfıra değerlendirilirse, `!ELSE` ve sonraki `!ENDIF` arasındaki deyimleri işler. İsteğe bağlı anahtar sözcükler, ön işleme için daha fazla denetim sağlar.
 
 - `!ELSEIF`
 
@@ -98,9 +98,9 @@ ms.locfileid: "68980521"
 
 - `!ENDIF`
 
-   `!IF` ,`!IFDEF`Veya bloğunun`!IFNDEF` sonunu işaretler. Aynı satırdan sonra `!ENDIF` herhangi bir metin yok sayılır.
+   `!IF`, `!IFDEF`veya `!IFNDEF` bloğunun sonunu işaretler. Aynı satırdaki `!ENDIF` sonra herhangi bir metin yok sayılır.
 
-- `!UNDEF`*makroadı*
+- `!UNDEF` *makroadı*
 
    *Makroadı*öğesini kaldır.
 

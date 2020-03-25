@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - SetString method [C++]
 ms.assetid: 816b08e5-6830-46ca-b3d7-7689308b3be3
-ms.openlocfilehash: d07e995be0ecd99974356a7516e7c4deee677637
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cd300a09c29668c496d93109d1bc862947e948c
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403275"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187563"
 ---
-# <a name="varianttsetstring"></a>_variant_t::SetString
+# <a name="_variant_tsetstring"></a>_variant_t::SetString
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir dize için atar `_variant_t` nesne.
+Bu `_variant_t` nesnesine bir dize atar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,13 +28,13 @@ void SetString(const char* pSrc);
 #### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-Karakter dizesine yönelik işaretçi.
+Karakter dizesinin işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir Unicode bir ANSI karakter dizesine dönüştürür `BSTR` dize ve bunun için atar `_variant_t` nesne.
+Bir ANSI karakter dizesini Unicode `BSTR` dizesine dönüştürür ve bu `_variant_t` nesnesine atar.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

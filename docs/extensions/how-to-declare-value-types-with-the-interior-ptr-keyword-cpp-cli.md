@@ -1,30 +1,30 @@
 ---
-title: 'Nasıl yapılır: İnterior_ptr anahtar sözcüğü ile değer türleri bildirme (C++/CLI)'
+title: 'Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - _ptr keyword
 - value types, declaring
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-ms.openlocfilehash: 2b75f6c4763ddd7d3fd2d802371e21c40d506b16
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22c0fe4424e4df81ebb0355dfac2168af725b971
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254855"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172288"
 ---
-# <a name="how-to-declare-value-types-with-the-interiorptr-keyword-ccli"></a>Nasıl yapılır: İnterior_ptr anahtar sözcüğü ile değer türleri bildirme (C++/CLI)
+# <a name="how-to-declare-value-types-with-the-interior_ptr-keyword-ccli"></a>Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)
 
-Bir **interior_ptr** bir değer türü ile kullanılabilir.
+Bir **interior_ptr** , bir değer türü ile kullanılabilir.
 
 > [!IMPORTANT]
-> Bu dil özelliği tarafından desteklenen `/clr` derleyici seçeneği, ancak tarafından `/ZW` derleyici seçeneği.
+> Bu dil özelliği `/clr` derleyici seçeneği tarafından desteklenir, ancak `/ZW` derleyici seçeneği tarafından desteklenmez.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki C++/CLI örnek nasıl kullanılacağını gösteren bir **interior_ptr** bir değer türü.
+Aşağıdaki C++/CLI örneği, bir **interior_ptr** değer türüyle nasıl kullanacağınızı gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -69,9 +69,9 @@ int main() {
 
 ### <a name="description"></a>Açıklama
 
-Bir değer türünde **bu** işaretçi interior_ptr için değerlendirir.
+Değer türünde, **Bu** işaretçi bir interior_ptr değerlendirir.
 
-Statik olmayan üye işlevi bir değer türü gövdesinde `V`, **bu** türündeki bir ifade `interior_ptr<V>` değeri işlevin çağrıldığı nesneye adresidir.
+Değer türü `V`statik olmayan bir üye işlevi gövdesinde, **Bu** , değeri işlevin çağrıldığı nesnenin adresi olan `interior_ptr<V>` türünde bir ifadedir.
 
 ### <a name="code"></a>Kod
 
@@ -91,9 +91,9 @@ value struct V {
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, statik üyelerle address-of işlecini kullanmayı gösterir.
+Aşağıdaki örnek, statik üyelerle adres işlecinin nasıl kullanılacağını göstermektedir.
 
-Yerel bir işaretçi bir statik Visual C++ tür üyesinin adresini verir.  Değer türü üyesine çalışma zamanı yığınına ayrılmış ve çöp toplayıcısı tarafından taşınabilir olduğundan statik değer türü üyesine adresi yönetilen bir işaretçisidir.
+Statik görsel C++ türü üyesinin adresi yerel bir işaretçi verir.  Değer türü üyesi çalışma zamanı yığınına ayrıldığından ve çöp toplayıcı tarafından taşınabildiğinden, statik değer türü üyesinin adresi yönetilen bir işaretçidir.
 
 ### <a name="code"></a>Kod
 

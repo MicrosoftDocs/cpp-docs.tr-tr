@@ -8,20 +8,20 @@ helpviewer_keywords:
 - optimizing performance, inline assembly
 - __asm keyword [C++], optimizing
 ms.assetid: 52a7ec83-9782-4d96-94c1-53bb2ac9e8c8
-ms.openlocfilehash: d4956ba12e0bc268d78a895e6cb1ec6e2059262a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0051b16ddc19e233cfac2688c0b77e1e023f0833
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166886"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169272"
 ---
 # <a name="optimizing-inline-assembly"></a>Satır İçi Derlemeyi En İyi Duruma Getirme
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Varlığı bir `__asm` bir işlev bloğunda iyileştirme çeşitli şekillerde etkiler. İlk olarak, derleyici en iyi duruma getirme dener `__asm` kendisini engelleyin. Derleme dilinde yazma, tam olarak ne devreye girer. İkincisi, varlığı bir `__asm` kaydetme değişken depolama blok etkiler. Derleyici, kayıt değişkenleri arasında önler bir `__asm` kaydın içeriğini tarafından değiştirilmesi bloke `__asm` blok. Son olarak, diğer bir işlevi genelinde iyileştirmeler eklenmesi, bir işlevde derleme dili tarafından etkilenir.
+Bir işlevde `__asm` bloğunun varlığı, iyileştirmeyi birkaç şekilde etkiler. İlk olarak, derleyici `__asm` bloğunun kendisini iyileştirmenize çalışır. Derleme dilinde yazdığınız özellikler tam olarak sizin alacağınız şeydir. İkincisi, bir `__asm` bloğunun varlığı, YAZMAÇ değişkeni depolamayı etkiler. Derleyici, kayıt içerikleri `__asm` bloğu tarafından değiştirilebiliyorsa, `__asm` bir blok genelinde değişkenlerin kaydedilmesini önler. Son olarak, diğer işlev genelindeki bazı iyileştirmeler, derleme dilinin bir işleve dahil edilmesini etkiler.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

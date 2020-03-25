@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4382
 ms.assetid: 34be9ad3-bae6-411a-8f80-0c8fd0d2c092
-ms.openlocfilehash: cca2f8cc13cc8317bac3736e142ef58e126ed994
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b8dbf77defab2a711ad931057c740193908474b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390496"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186978"
 ---
 # <a name="compiler-warning-level-1-c4382"></a>Derleyici Uyarısı (düzey 1) C4382
 
-> özel durum atma '*türü*': __clrcall yok Edicisi veya kopya Oluşturucusu olan bir tür yalnızca/CLR yakalanabilir: pure modülünde
+> '*Type*' oluşturuluyor: __clrcall yok edicisi veya kopya Oluşturucusu olan bir tür yalnızca/clr: Pure modülünde yakalanabilir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-İle derlendiğinde **/CLR** (değil **/CLR: pure**), özel durum işleme üye işlevleri bir yerel türe olmasını bekliyor [__cdecl](../../cpp/cdecl.md) ve [__clrcall](../../cpp/clrcall.md). Üye işlevlerini kullanarak ile yerel türler `__clrcall` çağırma kuralı olamaz yakalandı ile derlenmiş bir modülde **/CLR**.
+**/Clr** ( **/clr: Pure**değil) ile derlendiğinde, özel durum işleme yerel bir türdeki üye işlevlerinin [__clrcall](../../cpp/clrcall.md)değil [__cdecl](../../cpp/cdecl.md) olmasını bekler. `__clrcall` çağırma kuralı kullanan üye işlevleri olan yerel türler **/clr**ile derlenen bir modülde yakalanamaz.
 
-Özel durum ile derlenmiş bir modülde yakalandı, **/CLR: pure**, bu uyarıyı yoksayabilirsiniz.
+Özel durum **/clr: Pure**ile derlenen bir modülde yakalanacaktır, bu uyarıyı yoksayabilirsiniz.
 
-Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4382 oluşturur.
+Aşağıdaki örnek C4382 oluşturur.
 
 ```cpp
 // C4382.cpp

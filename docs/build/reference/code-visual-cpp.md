@@ -7,12 +7,12 @@ helpviewer_keywords:
 - <code> C++ XML tag
 - code C++ XML tag
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
-ms.openlocfilehash: bacd95f9c93a439e5bab7a556ac2724a042411b8
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f4bc28c4615a4aab3076940806f54c699ec1ee0e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440159"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169936"
 ---
 # <a name="ltcodegt"></a>&lt;kodu&gt;
 

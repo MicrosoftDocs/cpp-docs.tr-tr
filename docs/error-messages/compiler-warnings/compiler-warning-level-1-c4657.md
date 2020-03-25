@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - C4657
 ms.assetid: eb750050-cea6-4ead-b80c-d5dcd4971cfc
-ms.openlocfilehash: 92415d1d17c3342dbb721aa850f37f4dfabd1406
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6cc049d99339a6f19ca86cd5c7a10f062a1451a9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375697"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80199507"
 ---
 # <a name="compiler-warning-level-1-c4657"></a>Derleyici Uyarısı (düzey 1) C4657
 
-ifade en son yapımdan beri yeni olan bir veri türü gerektirir.
+ifade, son derlemeden beri yeni olan bir veri türü içeriyor
 
-Eklediyseniz veya son başarılı yapıdan beri kaynak kodunuz için yeni yapmadan bir veri türü değiştirildi. Düzenle ve devam et, var olan veri türleri için değişiklikleri desteklemez.
+Son başarılı derlemeden bu yana kaynak kodunuzla yeni hale getirerek bir veri türü eklediniz veya değiştirdiniz. Düzenle ve devam et, varolan veri türlerinde yapılan değişiklikleri desteklemez.
 
-Bu uyarı tarafından her zaman izlenir [önemli hata C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). Daha fazla bilgi için bkz: [desteklenen kod değişiklikleri](/visualstudio/debugger/supported-code-changes-cpp).
+Bu uyarı, her zaman [önemli hata C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md)tarafından izlenir. Daha fazla bilgi için [desteklenen kod değişikliklerine](/visualstudio/debugger/supported-code-changes-cpp)bakın.
 
-### <a name="to-remove-this-warning-without-ending-the-current-debug-session"></a>Geçerli hata ayıklama oturumu sona erdirmeden bu uyarıyı kaldırmak için
+### <a name="to-remove-this-warning-without-ending-the-current-debug-session"></a>Geçerli hata ayıklama oturumunu sonlandırmadan bu uyarıyı kaldırmak için
 
-1. Hata öncesinde durumuna geri dön veri türünü değiştirin.
+1. Veri türünü hatadan önceki durumuna geri çevirin.
 
-1. Gelen **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulama**.
+1. **Hata Ayıkla** menüsünde, **kod değişikliklerini Uygula**' yı seçin.
 
-### <a name="to-remove-this-error-without-changing-your-source-code"></a>Bu hata, kaynak kodunuzda değişiklik yapmadan kaldırmak için
+### <a name="to-remove-this-error-without-changing-your-source-code"></a>Kaynak kodunuzu değiştirmeden bu hatayı kaldırmak için
 
-1. Gelen **hata ayıklama** menüsünde seçin **hata ayıklamayı Durdur**.
+1. **Hata Ayıkla** menüsünden **hata ayıklamayı Durdur**' u seçin.
 
-1. Gelen **derleme** menüsünde seçin **yapı**.
+1. **Yapı** menüsünden **Oluştur**' u seçin.

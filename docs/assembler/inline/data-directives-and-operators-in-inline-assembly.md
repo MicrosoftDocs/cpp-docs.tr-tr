@@ -13,20 +13,20 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), operators
 - structures [C++], MASM
 ms.assetid: fb7410c7-156a-4131-bcfc-211aa70533e3
-ms.openlocfilehash: 52e20c37f3066122a062e3fc9c64ced576b6c302
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 916dce0346bebfc5ff65ca558ae75317a187660a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167237"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169545"
 ---
 # <a name="data-directives-and-operators-in-inline-assembly"></a>Satır İçi Derlemede Veri Yönergeleri ve İşleçler
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Ancak bir `__asm` blok, C veya C++ veri türleri ve nesneleri başvurabilir, veri nesneleriyle MASM yönergeleri veya işleçleri tanımlanamaz. Özellikle, tanımı yönergeleri kullanamazsınız **DB**, `DW`, **GG**, `DQ`, `DT`, ve `DF`, ya da işleçler `DUP` veya  **Bu**. MASM yapıları ve kayıtları da kullanılamaz. Satır içi assembler yönergeleri kabul etmez `STRUC`, `RECORD`, **genişliği**, veya **maskesi**.
+`__asm` bloğu C veya C++ veri türlerine ve nesnelerine başvurabilir, ancak MASM yönergeleri veya işleçleri ile veri nesneleri tanımlanamaz. Özellikle, **veritabanı**, `DW`, **dd**, `DQ`, `DT`ve `DF`ya da işleçlerini `DUP` veya **Bu**tanımlama yönergelerini kullanamazsınız. Masa yapıları ve kayıtları da kullanılamaz. Satır içi assembler yönergeleri `STRUC`, `RECORD`, **genişliği**veya **maskesini**kabul etmez.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,24 +7,24 @@ helpviewer_keywords:
 - invoking inline assembler
 - inline assembly, inline assembler
 ms.assetid: d990331a-0e33-4760-8d7a-b720b0288335
-ms.openlocfilehash: 21e0d9ca0e64922b83518eb79c19d2f2e67813bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6233e07e115c21a0a173f094079dc9c1753533b6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167017"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169403"
 ---
 # <a name="inline-assembler-overview"></a>Satır İçi Derleyiciye Genel Bakış
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Satır içi derleyici, derleme dili talimatlarını ek derleme ve bağlama adımı olmadan C ve C++ kaynak programlarınıza katıştırmak sağlar. Satır içi derleyici, derleyici içine eklenmiştir içinde yerleşik olarak bulunur, böylece Microsoft Macro Assembler (MASM) gibi ayrı bir derleyici gerekmez.
+Satır içi derleyici, ek derleme ve bağlantı adımları olmadan C ve C++ kaynak programlarınıza derleme dili yönergeleri eklemenize olanak tanır. Satır içi derleyici, derleyici içine eklenmiştir içinde yerleşik olarak bulunur, böylece Microsoft Macro Assembler (MASM) gibi ayrı bir derleyici gerekmez.
 
-Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, programınızın C ve C++ kodu ile tümleştirmek de kolaydır, böylece kapsam içinde olan tüm C veya C++ değişken veya işlev adı kullanabilirsiniz. Ve derleme kodu C ve C++ deyimleri ile karma olabilir çünkü hantal ya da C veya C++ tek başına olanaksız olan görevleri yapabilirsiniz.
+Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, kapsamda olan herhangi C++ bir C veya değişken ya da işlev adını kullanabilir, bu sayede programınızın C ve C++ kodu ile tümleştirilebilen kolay bir işlemdir. Derleme kodu C ve C++ deyimleri ile karışabileceğinden, c veya C++ tek başına bir veya imkansız olan görevleri yapabilir.
 
-[__Asm](../../assembler/inline/asm.md) anahtar sözcüğü satır içi assembler çağırır ve bir C her yerde görünebilir veya C++ deyimi geçerli. Kendisi tarafından bulunamaz. Derleme yönergesinde, köşeli ayraçlar veya en azından içine yönergeler grubu tarafından gelmelidir bir çift boş tırnak işaretinin izlemesi. Terim "`__asm` blok" burada herhangi bir yönerge ya da küme ayraçları içinde olsun veya olmasın yönergeler grubu anlamına gelir.
+[__Asm](../../assembler/inline/asm.md) anahtar sözcüğü satır içi assembler çağırır ve bir C ya da C++ deyimin yasal olduğu her yerde görünebilir. Kendisi tarafından bulunamaz. Ardından, bir derleme yönergesi, küme ayracı içine alınmış bir dizi yönerge veya en azından boş bir küme ayracı olmalıdır. Burada "`__asm` Block" terimi, ayraç içinde olsun veya etmeksizin herhangi bir yönergeyi veya yönerge grubunu ifade eder.
 
-Aşağıdaki kod, basit bir `__asm` blok küme ayraçları içine alınmış. (Kod, bir özel işlev giriş sırasıdır.)
+Aşağıdaki kod, küme ayraçları içine alınmış basit bir `__asm` bloğudur. (Kod, bir özel işlev giriş sırasıdır.)
 
 ```cpp
 // asm_overview.cpp
@@ -46,7 +46,7 @@ void __declspec(naked) main()
 }
 ```
 
-Alternatif olarak, koyabilirsiniz `__asm` her bir derleme yönergesinin önüne:
+Alternatif olarak, her derleme yönergesinin önüne `__asm` koyabilirsiniz:
 
 ```cpp
 __asm push ebp
@@ -60,7 +60,7 @@ __asm sub  esp, __LOCAL_SIZE
 __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

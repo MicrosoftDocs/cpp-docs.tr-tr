@@ -7,21 +7,21 @@ helpviewer_keywords:
 - CXX0021
 - CAN0021
 ms.assetid: d6c0c35a-16c2-42c0-a7d2-e910350a47f0
-ms.openlocfilehash: 373829e7200a556b3f832b1da127b4e33aa75749
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a800deb6bacbcae8666a3abad08b87d4f027790f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359884"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80195845"
 ---
 # <a name="expression-evaluator-error-cxx0021"></a>İfade Değerlendirici Hatası CXX0021
 
-struct veya union skaler olarak kullanılmış
+skalar olarak kullanılan struct veya Union
 
-Bir yapı veya birleşim bir ifade kullanıldı, ancak hiçbir öğe belirtildi.
+Bir ifadede bir yapı veya birleşim kullanıldı, ancak hiçbir öğe belirtilmedi.
 
-Değişkenin adını yapı veya birleşim değişkenini işlenirken kendisi tarafından bir alan niteleyici olmadan görünebilir. Bir yapı veya birleşim bir ifadede kullanılırsa, istenen belirli bir öğe ile nitelenmelidir.
+Bir yapıyı veya birleşim değişkenini düzenleme sırasında, değişkenin adı, alan niteleyicisi olmadan kendisi tarafından görünebilir. Bir deyimde bir yapı veya birleşim kullanılıyorsa, istenen özel öğe ile nitelenmiş olmalıdır.
 
-İfadede kullanılacak değeri olan öğesi belirtin.
+İfadesinde kullanılacak olan öğeyi belirtin.
 
-Bu hata için CAN0021 aynıdır.
+Bu hata CAN0021 ile aynıdır.

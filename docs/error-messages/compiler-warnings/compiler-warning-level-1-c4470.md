@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4470
 ms.assetid: f52a3eaa-a235-4747-a47d-9ec4ad4cb0ea
-ms.openlocfilehash: dc1efad7f18310727e2fdb756e49b95294357c4d
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 164bc1fa85466b80ee66a22a1a1679a40b89ce2e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965403"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186731"
 ---
 # <a name="compiler-warning-level-1-c4470"></a>Derleyici Uyarısı (düzey 1) C4470
 

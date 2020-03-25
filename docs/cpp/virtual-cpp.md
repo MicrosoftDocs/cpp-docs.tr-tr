@@ -10,16 +10,16 @@ helpviewer_keywords:
 - virtual functions [C++], declaring
 - virtual keyword [C++]
 ms.assetid: c2eb987d-6cf3-43b6-aa0c-29a6f561b1ae
-ms.openlocfilehash: f68bd2e500ebe16c43ef6c3d7a5aede26421b27d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8948594bade940834e041adc73d56cc7847acc0
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393915"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187511"
 ---
 # <a name="virtual-c"></a>virtual (C++)
 
-**Sanal** anahtar sözcüğü, bir sanal işlev ya da sanal bir temel sınıf bildirir.
+**Sanal** anahtar sözcüğü bir sanal işlev veya bir sanal temel sınıf bildirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,23 +30,23 @@ virtual [access-specifier] base-class-name
 
 #### <a name="parameters"></a>Parametreler
 
-*tür tanımlayıcıları*<br/>
-Sanal üye işlevi dönüş türünü belirtir.
+*tür belirticileri*<br/>
+Sanal üye işlevinin dönüş türünü belirtir.
 
-*üye işlevinin bildirimcisi*<br/>
-Bir üye işlev bildirir.
+*üye-işlev-bildirimci*<br/>
+Bir üye işlevi bildirir.
 
-*erişim belirticisi*<br/>
-Temel sınıf için erişim düzeyini tanımlar **genel**, **korumalı** veya **özel**. Önce veya sonra görünebilir **sanal** anahtar sözcüğü.
+*erişim Belirleyicisi*<br/>
+Taban sınıfına, **genel**, **korumalı** veya **özel**erişim düzeyini tanımlar. **Sanal** anahtar sözcüğünden önce veya sonra görünebilir.
 
-*temel sınıf adı*<br/>
-Daha önce bildirilen sınıf türü tanımlar.
+*taban sınıfı adı*<br/>
+Önceden tanımlanmış bir sınıf türünü tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [sanal işlevler](../cpp/virtual-functions.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [sanal işlevler](../cpp/virtual-functions.md) .
 
-Aşağıdaki anahtar sözcükler Ayrıca bkz: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [genel](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).
+Ayrıca şu anahtar sözcüklere bakın: [sınıf](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [genel](../cpp/public-cpp.md)ve [korumalı](../cpp/protected-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

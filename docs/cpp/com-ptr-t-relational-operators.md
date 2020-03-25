@@ -28,12 +28,12 @@ helpviewer_keywords:
 - operator< [C++], pointers
 - == operator [C++], with specific Visual C++ objects
 ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
-ms.openlocfilehash: 4c2c3dccb93f8e2475cdf2c7494bf4af11b65aa2
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 95d1e7a1e4322eb497a2d7ed410065bb92f17e09
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079939"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170658"
 ---
 # <a name="_com_ptr_t-relational-operators"></a>_com_ptr_t İlişkisel İşleçleri
 

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3556
+title: Derleyici hatası C3556
 ms.date: 11/04/2016
 f1_keywords:
 - C3556
 helpviewer_keywords:
 - C3556
 ms.assetid: 9b002dcc-494e-414f-9587-20c2a0a39333
-ms.openlocfilehash: 7b87f8c57b0d871a577793936ea3cb7dbab7e58d
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: bc5eae58ac453182fd25853edd45e2c45093f5e5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344546"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200583"
 ---
-# <a name="compiler-error-c3556"></a>Derleyici Hatası C3556
+# <a name="compiler-error-c3556"></a>Derleyici hatası C3556
 
-> '*ifade*': 'decltype' için geçersiz bağımsız değişken
+> '*Expression*': ' decltype ' için geçersiz bağımsız değişken
 
-Derleyici bağımsız değişkeni için olan ifade türü çıkarılamıyor `decltype(` *ifade* `)` tür tanımlayıcısı.
+Derleyici, `decltype(`*expression*`)` tür belirleyicisi olan bağımsız değişken olan ifadenin türünü çıkarılamıyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde, derleyicinin türü çıkarılamıyor `myFunction` bağımsız değişken olduğundan `myFunction` aşırı yüklendi. Bu sorunu gidermek için kullanabileceğinizi `static_cast` işlevi belirtmek için bir işaretçi belirli bir örneğini oluşturmak için aşırı `decltype` ifade.
+Aşağıdaki kod örneğinde, `myFunction` aşırı yüklendiği için derleyici `myFunction` bağımsız değişkeninin türünü çıkarılamıyor. Bu sorunu onarmak için, `decltype` ifadesinde belirtmek üzere belirli bir aşırı yüklenmiş işleve işaretçinin bir örneğini oluşturmak için `static_cast` kullanabilirsiniz.
 
 ```cpp
 // C3556.cpp

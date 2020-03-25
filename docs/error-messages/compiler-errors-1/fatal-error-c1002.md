@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - C1002
 ms.assetid: bd6d274a-c7b4-43af-8bf2-23c5e442aa22
-ms.openlocfilehash: 0588da99994be547742cc530ba435002a2d73359
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 78edf886f34665f996497abe323a0ea5d3800c2d
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344829"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204938"
 ---
 # <a name="fatal-error-c1002"></a>Önemli hata C1002
 
-2. geçiş yığın tükendi derleyicisidir
+2\. geçişte derleyicinin yığın alanı kalmadı
 
-Derleyici, büyük olasılıkla çok fazla sembol veya karmaşık ifadeleri bir programla nedeniyle, ikinci geçişi sırasında dinamik bellek alanı yetersiz kaldı.
+Büyük olasılıkla çok fazla sembol veya karmaşık ifade içeren bir program nedeniyle derleyicinin ikinci geçişi sırasında dinamik bellek alanı kalmadı.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
-1. Kaynak dosyası birden çok daha küçük dosyalara bölün.
+1. Kaynak dosyayı birkaç küçük dosyaya bölün.
 
-1. İfadeler, daha küçük alt ifadelere bölün.
+1. İfadeleri daha küçük bir alt ifadeye bölün.
 
-1. Diğer programları veya bellek kullanan sürücüleri kaldırın.
+1. Belleği kullanan diğer programları veya sürücüleri kaldırın.

@@ -35,12 +35,12 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: c79c56555e04c865b70d52a6b1a6e3da1ce94c87
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9fc1a75bdc6fddb5134b9db17961ba3c4550bc79
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946896"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168713"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
@@ -61,17 +61,17 @@ long double tan( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*<br/>
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
 **Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Girdi|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
 |± QNAN, IND|yok|_DOMAIN|
-|± INF|**GEÇERSİZ**|_DOMAIN|
+|± INF|**Geçersiz**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 

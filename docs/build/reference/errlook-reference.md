@@ -5,34 +5,34 @@ helpviewer_keywords:
 - ErrLook tool
 - Error lookup tool
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
-ms.openlocfilehash: c8afcafa7d1b8cd666eb5b02f09a14782f8621ca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d005f37af0c406c45ef2da52fce2b578c6e864a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271781"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169038"
 ---
 # <a name="errlook-reference"></a>ERRLOOK Başvurusu
 
-ERRLOOK yardımcı programı, Araçlar menüsünden kullanılabilir **hata arama**, girilen değer temel bir sistem hatası iletisi veya modülü hata iletisi alır. Sürükleyip Visual Studio hata ayıklayıcısında bir onaltılık veya ondalık değeri açılan ERRLOOK hata iletisi metni otomatik olarak alır. **değer** düzenleme denetimi. Ayrıca bir değer yazmak ya da girebilirsiniz **değer** düzenleme denetimi veya göre panodan yapıştırma ve tıklayarak **Ara**.
+Araçlar menüsünde **hata arama**olarak bulunan ERRLOOK yardımcı programı, girilen değere göre bir sistem hata iletisi veya modül hata iletisi alır. ERRLOOK, Visual Studio hata ayıklayıcısından bir onaltılı veya ondalık değeri bir **değer** düzenleme denetimine sürükleyip bıraktığınızda hata iletisi metnini otomatik olarak alır. **Değer düzenleme denetimine** yazarak veya Panodan yapıştırarak ve **Ara**' ya tıklayarak da bir değer girebilirsiniz.
 
-Hızlandırıcı tuşları kopyala (CTRL + C), Kes (CTRL + X) ve Yapıştır (CTRL + V) iş hem de **değer** ve **hata iletisi** ilk metni vurgulayın denetimleri düzenleyebilir.
+Metni ilk kez vurguladığınızda, Kopyala için hızlandırıcı tuşları (CTRL + C), kes (CTRL + X) ve Yapıştır (CTRL + V), hem **değer** hem de **hata mesajı** düzenleme denetimleri için çalışır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [Değer Düzenleme Denetimi](value-edit-control.md)<br/>
-ERRLOOK değer düzenleme denetimi açıklar.
+ERRLOOK içindeki değer düzenleme denetimini açıklar.
 
 [Hata İletisi Düzenleme Denetimi](error-message-edit-control.md)<br/>
-ERRLOOK hata iletisi düzenleme denetimi açıklar.
+ERRLOOK 'de hata Iletisi düzenleme denetimini açıklar.
 
 [Modüller Düğmesi](modules-button.md)<br/>
-Modüller düğmesi ERRLOOK açıklar.
+ERRLOOK içindeki modüller düğmesini açıklar.
 
 [Ara Düğmesi](look-up-button.md)<br/>
-ERRLOOK Ara düğmesine açıklar.
+ERRLOOK 'da ara düğmesini açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
-Derleme araçları Visual C++'da sağlanan C/C++ açıklayan konulara bağlantılar sağlar.
+VisualC++ C++'te sağlanan C/Build araçlarını tartışan konuların bağlantılarını sağlar.

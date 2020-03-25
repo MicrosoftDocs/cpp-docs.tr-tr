@@ -8,12 +8,12 @@ helpviewer_keywords:
 - NOP (no operation instruction)
 - ALIGN directive
 ms.assetid: 7357ab2d-4a5c-43ca-accb-a5f21cdfcde5
-ms.openlocfilehash: 63fa73988b9b9433a988035789a923ac73936214
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: b191ce0942d7596090bfd7948a37a5c9e6aac15e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441583"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169441"
 ---
 # <a name="even-and-align-directives"></a>EVEN ve ALIGN Yönergeleri
 

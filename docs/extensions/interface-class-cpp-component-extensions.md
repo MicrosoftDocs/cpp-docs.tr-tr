@@ -8,16 +8,16 @@ helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-ms.openlocfilehash: 60e8965e3ef2538554d8c664b35bd0849bd5e69e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb4566a0094db6d9e0cc97d81718a18a6df5cf18
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254566"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172171"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>arabirim sınıfı (C++/CLI ve C++/CX)
 
-Bir arabirim bildirir.  Yerel arabirimleri hakkında daha fazla bilgi için bkz: [__interface](../cpp/interface.md).
+Bir arabirim bildirir.  Yerel arabirimler hakkında daha fazla bilgi için bkz. [__interface](../cpp/interface.md).
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -32,44 +32,44 @@ name :  inherit_accessbase_interface{};interface_accessinterface structname :  i
 ### <a name="parameters"></a>Parametreler
 
 *interface_access*<br/>
-Bir arabirimin derleme dışından erişilebilirlik.  Olası değerler **genel** ve **özel**.  **özel** varsayılandır. İç içe geçmiş arabirimleri sahip bir *interface_access* tanımlayıcısı.
+Derlemenin dışında bir arabirimin erişilebilirliği.  Olası değerler **genel** ve **özeldir**.  **özel** varsayılan değer. İç içe arabirimler *interface_access* tanımlayıcısına sahip olamaz.
 
-*Adı*<br/>
+*ada*<br/>
 Arabirimin adı.
 
 *inherit_access*<br/>
-Erişilebilirliğini *base_interface*.  Yalnızca izin verilen erişilebilirlik için temel arabirim **genel** (varsayılan).
+*Base_interface*erişilebilirliği.  Temel arabirim için izin verilen tek erişilebilirlik **geneldir** (varsayılan).
 
 *base_interface*<br/>
-(İsteğe bağlı) Arabirim için temel bir arabirim *adı*.
+Seçim Arabirim *adı*için temel arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Arabirim yapı birimi** eşdeğerdir **arabirim sınıfı**.
+**Interface struct** , **Interface sınıfına**eşdeğerdir.
 
-Bir arabirim bildirimi işlevleri, olayları ve özellikler içerebilir.  Tüm arabirim üyeleri genel erişilebilirlik sahiptir. Bir arabirim statik veri üyeleri, İşlevler, olayları ve özellikleri de içerebilir ve bu statik üyeleri arabiriminde tanımlanması gerekir.
+Arabirim, işlevler, olaylar ve özellikler için bildirimler içerebilir.  Tüm arabirim üyelerinin genel erişilebilirliği vardır. Arabirim ayrıca statik veri üyeleri, işlevler, olaylar ve özellikler içerebilir ve bu statik üyelerin arabirimde tanımlanması gerekir.
 
-Nasıl bir sınıf uygulanabilir bir arabirim tanımlar. Bir arabirim bir sınıf değil ve sınıfları yalnızca arabirim uygulayabilir. Bir arabirimde bildirilen bir işlevi bir sınıf tanımlar, geçersiz işlevi uygulanır. Bu nedenle, ad arama, arabirim üyeleri içermez.
+Arabirim, bir sınıfın nasıl uygulanabileceğini tanımlar. Arabirim bir sınıf değildir ve sınıflar yalnızca arabirimler uygulayabilir. Bir sınıf, bir arabirimde bildirildiği bir işlevi tanımladığında işlev uygulanır, geçersiz kılınmaz. Bu nedenle, ad arama arabirim üyelerini içermez.
 
-Bir sınıf veya yapı arabiriminden türetilen arabirimin tüm üyelerini uygulamalıdır. Arabirimi uygulanırken *adı* arabirimleri de uygulamalıdır `base_interface` listesi.
+Bir arabirimden türetilen bir sınıf veya yapının, arabirimin tüm üyelerini uygulaması gerekir. Arabirim *adı* uygularken, `base_interface` listesindeki arabirimleri de uygulamalısınız.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
 - [Arabirim statik Oluşturucusu](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
 - [Genel Arabirimler (C++/CLI)](generic-interfaces-visual-cpp.md)
 
-Diğer CLR türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](classes-and-structs-cpp-component-extensions.md).
+Diğer CLR türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
 
-Bir türü bir arabirim ile ise derleme zamanında algılayabilir `__is_interface_class(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir tür arabirim `__is_interface_class(type)`, derleme zamanında tespit edebilirsiniz. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
-Geliştirme ortamında F1 Yardım bu anahtar sözcükler üzerinde anahtar sözcüğü vurgulayarak alabilirsiniz (`interface class`, örneğin) ve F1 tuşuna basın.
+Geliştirme ortamında, (örneğin`interface class`) anahtar sözcüğünü vurgulayarak ve F1 tuşuna basarak bu anahtar sözcükler hakkında F1 yardımı edinebilirsiniz.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için yalnızca Windows Çalışma Zamanı uygulanan bir açıklama yoktur.)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -79,7 +79,7 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Bu dil özelliğinin yalnızca ortak dil çalışma zamanı için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için yalnızca ortak dil çalışma zamanına uygulanan bir açıklama yoktur.)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -87,7 +87,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, bir arabirim bir saat işlevin davranışını nasıl tanımlayabilirsiniz gösterir.
+Aşağıdaki kod örneği, bir arabirimin bir Clock işlevinin davranışını nasıl tanımlayabileceğinizi gösterir.
 
 ```cpp
 // mcppv2_interface_class.cpp
@@ -193,7 +193,7 @@ OnClick: 7, 3.14159
 in Function_1
 ```
 
-Aşağıdaki kod örneği, birden çok arabirimlerde ve bu arabirimler kullanıldığı bir sınıf tarafından bildirilen aynı imzaya sahip işlevler uygulamak için iki yolunu gösterir.
+Aşağıdaki kod örneğinde, birden fazla arabirimde ve bu arabirimlerin bir sınıf tarafından kullanıldığı aynı imzayla işlevleri uygulamak için iki yol gösterilmektedir.
 
 ```cpp
 // mcppv2_interface_class_2.cpp

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - __super keyword [C++]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-ms.openlocfilehash: a69d177bb83ce404a18d50c8f966be5d81f5fa72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6f6a7e108224ab4c97893104c5d6c38d325fa42
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330537"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160833"
 ---
-# <a name="super"></a>__super
+# <a name="__super"></a>__super
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Açıkça geçersiz kılma bir işlev için bir temel sınıf uygulamasını çağırma durumunu sağlar.
+Geçersiz kılmamanız gereken bir işlev için temel sınıf uygulamasını çağırmamayı açıkça belirtmenize olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ __super::member_function();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tüm erişilebilir temel sınıf yöntemleri aşırı yükleme çözünürlüğü aşamasında olarak kabul edilir ve en iyi eşleşmeyi sağlar çağrılan bir işlevdir.
+Tüm erişilebilir temel sınıf yöntemleri, aşırı yükleme çözümleme aşamasında değerlendirilir ve en iyi eşleşmeyi sağlayan işlev çağrılan biridir.
 
-**__super** yalnızca bir üye işlevinin gövdesi içinde görünebilir.
+**__super** yalnızca bir üye işlevinin gövdesinde bulunabilir.
 
-**__super** kullanarak bir kullanılamaz bildirimi. Bkz: [using bildirimi](../cpp/using-declaration.md) daha fazla bilgi için.
+**__super** , using bildirimiyle birlikte kullanılamaz. Daha fazla bilgi için bkz. [bildirimi kullanma](../cpp/using-declaration.md) .
 
-Sunulmasıyla birlikte [öznitelikleri](../windows/attributes/attributes-alphabetical-reference.md) kod ekleme, kodunuzu bilginiz, ancak adları çağırmak istediğiniz yöntemi içeren bir veya daha fazla temel sınıfları içerebilir.
+Kod eklenen [özniteliklerin](../windows/attributes/attributes-alphabetical-reference.md) tanıtılmasıyla birlikte kodunuz, bilinen adlara sahip ancak çağırmak istediğiniz yöntemleri içeren bir veya daha fazla temel sınıf içerebilir.
 
 ## <a name="example"></a>Örnek
 
@@ -58,7 +58,7 @@ struct D : B1, B2 {
 };
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

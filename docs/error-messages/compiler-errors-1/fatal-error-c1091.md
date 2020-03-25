@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1091
 ms.assetid: 812d4201-9154-48b0-b9af-5959c082ca33
-ms.openlocfilehash: 9758d4b779f4727012041da60632bcea8ce18d42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76492be7abab6deb740f1670b85274b8c296c783
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208545"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203899"
 ---
 # <a name="fatal-error-c1091"></a>Önemli hata C1091
 
-Derleyici sınırı: dize uzunluğu 'length' baytı aşıyor
+Derleyici sınırı: dize uzunluğu ' length ' baytı aşıyor
 
-Bir dize sabitine geçerli dize uzunluğu sınırı aştı.
+Dize sabiti, dizelerin uzunluğu için geçerli sınırı aştı.
 
-İki (veya daha fazla) değişkenlere statik dize bölme ve kullanmak isteyebilirsiniz [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) sonucu bildirimin veya çalışma zamanı sırasında bir parçası olarak katılmaya.
+Statik dizeyi iki (veya daha fazla) değişkene bölmek ve [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) kullanarak sonucu bildirimin bir parçası olarak veya çalışma zamanında birleştirmek isteyebilirsiniz.

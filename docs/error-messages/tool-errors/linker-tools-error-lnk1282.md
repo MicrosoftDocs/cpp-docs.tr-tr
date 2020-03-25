@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1282
 ms.assetid: 99c13f52-eb80-46ce-a5b9-4537583e32a9
-ms.openlocfilehash: 79bfdd9920cbd17af85705530e819316017b0db1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfe4edc95eb08e23d8acd0cab5acee4b4dde5683
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160542"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183637"
 ---
 # <a name="linker-tools-error-lnk1282"></a>Bağlayıcı Araçları Hatası LNK1282
 
-/REBASE dosyası açılamıyor; imzalanmış
+dosya/yeniden temellendirilecek; imzalanmış
 
-İmzalı bir derleme için /REBASE seçeneğiyle temel adresini değiştirmeye çalıştığınız [editbin](../../build/reference/editbin-reference.md). Bunu yapmak için önce temel adresini değiştirin ve ardından derlemeyi imzalamayı.
+İşaretli bir derlemenin temel adresini [editbin](../../build/reference/editbin-reference.md)için/YENIDEN temellendir seçeneğiyle değiştirmeye çalıştınız. Bunu yapmak için önce temel adresi değiştirin ve derlemeyi imzalayın.

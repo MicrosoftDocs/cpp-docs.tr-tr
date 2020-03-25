@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Clear method [C++]
 - VARIANT object
 ms.assetid: 844d43fa-9628-4643-a877-c1e129838b4e
-ms.openlocfilehash: 698dbfe77c82ac2f0425ed1c1bff4d917ed86f4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd6a9ebc58845e88e5e82a4e29f5ccc2a46bebfb
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165900"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160482"
 ---
-# <a name="varianttclear"></a>_variant_t::Clear
+# <a name="_variant_tclear"></a>_variant_t::Clear
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Kapsüllenmiş temizler `VARIANT` nesne.
+Encapsulated `VARIANT` nesnesini temizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,9 +30,9 @@ void Clear( );
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağrıları `VariantClear` kapsüllenmiş üzerinde `VARIANT` nesne.
+Encapsulated `VARIANT` nesnesinde `VariantClear` çağırır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

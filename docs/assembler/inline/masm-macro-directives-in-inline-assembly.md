@@ -7,20 +7,20 @@ helpviewer_keywords:
 - macros, directives
 - MASM (Microsoft Macro Assembler), inline assembly macro directives
 ms.assetid: 83643a09-1699-40a8-8ef2-13502bc4ac2c
-ms.openlocfilehash: 7e1bed782d28a5bf7c934c3f57f50aae70038578
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38b73346fc52f6b5efe478f8eb960ad049fae924
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167263"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169285"
 ---
 # <a name="masm-macro-directives-in-inline-assembly"></a>Satır İçi Derlemedeki MASM Makro Yönergeleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Satır içi assembler macro derleyicisi değil. MASM makro yönergeleri kullanamazsınız (**MAKROSU**, `REPT`, **IRC**, `IRP`, ve `ENDM`) veya makro işleçleri (**<>**, **!** , **&**, `%`, ve `.TYPE`). Bir `__asm` blok kullanabileceğiniz ön işlemci yönergelerini C, ancak. Bkz: [C kullanarak veya C++ __asm bloklarındaki](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md) daha fazla bilgi için.
+Satır içi assembler bir makro birleştirici değil. Ması makro yönergelerini (**makro**, `REPT`, **IRC**, `IRP`ve `ENDM`) veya makro işleçlerini ( **<>** , **!** , **&** , `%`ve `.TYPE`) kullanamazsınız. Bir `__asm` bloğu C önişlemci yönergelerini kullanabilir, ancak. Daha fazla bilgi için bkz. [C veya C++ __asm bloklarıyla kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

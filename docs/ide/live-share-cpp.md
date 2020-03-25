@@ -2,12 +2,12 @@
 title: Visual Studio 'da için C++ Live Share işbirliği yapın
 description: İşbirliği yapmak ve C++ kodu gerçek zamanlı olarak paylaşmak Için Visual Studio 'da için Live Share kullanın.
 ms.date: 05/24/2019
-ms.openlocfilehash: e6e983c6acb56dffd12756d8bbaccef32dd57f38
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: e8202cefb7f7d762e2736edcd5fa3c6127b4affa
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077776"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171924"
 ---
 # <a name="collaborate-using-live-share-for-c"></a>C++ için Live Share kullanarak işbirliği yapma
 

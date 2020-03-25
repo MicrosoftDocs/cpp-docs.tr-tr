@@ -1,23 +1,23 @@
 ---
-title: Derleyici Hatası C3554
+title: Derleyici hatası C3554
 ms.date: 11/04/2016
 f1_keywords:
 - C3554
 helpviewer_keywords:
 - C3554
 ms.assetid: aede18d5-fefc-4da9-9b69-adfe90bfa742
-ms.openlocfilehash: 8bc9c465d16aea4714916fa6aa2942eb81c19015
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: ecdb90e845714e046ed21cf5a200ef4548487df6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344563"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200609"
 ---
-# <a name="compiler-error-c3554"></a>Derleyici Hatası C3554
+# <a name="compiler-error-c3554"></a>Derleyici hatası C3554
 
-'decltype' herhangi başka bir tür tanımlayıcısı ile birleştirilemez
+' decltype ' başka bir tür belirticiyle birleştirilemez
 
-Uygun olamaz `decltype()` herhangi bir tür tanımlayıcısı ile anahtar sözcüğü. Örneğin, aşağıdaki kod parçası hatası C3554 verir.
+`decltype()` anahtar sözcüğünü herhangi bir tür belirticisiyle niteleyemezsiniz. Örneğin, aşağıdaki kod parçası hata C3554 verir.
 
 ```
 int x;

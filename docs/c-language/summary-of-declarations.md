@@ -2,12 +2,12 @@
 title: Bildirimlerin Özeti
 ms.date: 11/04/2016
 ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
-ms.openlocfilehash: 88cfc78089e0efd4765a40ab0d9c6dc333deb125
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: e553f4bdfffcd4bba6a39b2d37af6ba25a3d65d9
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857027"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170442"
 ---
 # <a name="summary-of-declarations"></a>Bildirimlerin Özeti
 
@@ -31,7 +31,7 @@ ms.locfileid: "74857027"
 
 *init-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*  / \* skaler başlatma \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *başlatıcısı* /skaler başlatma \* \*    /
 
 *depolama sınıfı Belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
@@ -70,8 +70,8 @@ ms.locfileid: "74857027"
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **(** *bildirimci* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **[** *sabit ifade*<sub>katılımı</sub> **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre-türü-listesi* **)**  /yeni stil bildirimci \* \*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>opt</sub> **)**  /eski stil bildirimci \* \*
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre-türü-listesi* **)**  /yeni stil bildirimci \* \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>opt</sub> **)**  /eski stil bildirimci \* \*/
 
 *işaretçi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *tür niteleyicisi-List*<sub>opt</sub><br/>
@@ -131,7 +131,7 @@ sabit *listesi-sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimci*<sub>opt</sub> **:** *sabit ifadesi*
 
 *parametre bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *bildirimci* /adlandırılmış bildirimci \* \*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *bildirimci* /adlandırılmış bildirimci \* \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *soyut-bildirimci*<sub>opt</sub> /\* anonim bildirimci \*/
 
 *tanımlayıcı listesi*: eski stil bildirimci \*için/\* /<br/>
@@ -149,7 +149,7 @@ sabit *listesi-sabit*:<br/>
 
 *Başlatıcı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **{** *Başlatıcı-listesi* **}**  /toplu başlatma \* \*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **{** *Başlatıcı-listesi* **}**  /toplu başlatma \* \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **{** *Başlatıcı-listesi* **,}**
 
 *Başlatıcı-Liste*:<br/>

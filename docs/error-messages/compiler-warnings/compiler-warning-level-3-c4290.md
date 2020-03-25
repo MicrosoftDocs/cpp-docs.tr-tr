@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4290
 ms.assetid: d1c6d85b-28e0-4a1f-9d48-23593337a6fb
-ms.openlocfilehash: 5ccacd7d5f4dfd2e9ad8de3958d7aa43571091fe
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 5970aa439a450bda4c1a2036da299d5c3cfbdb7a
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74051657"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80198906"
 ---
 # <a name="compiler-warning-level-3-c4290"></a>Derleyici Uyarısı (düzey 3) C4290
 

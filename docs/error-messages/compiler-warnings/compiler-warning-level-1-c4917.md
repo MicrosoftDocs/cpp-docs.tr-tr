@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4917
 ms.assetid: c05e2610-4a5d-4f4b-a99b-c15fd7f1d5f1
-ms.openlocfilehash: 97f6f0a08c8ef292d81471cb5d0d94e359466933
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c7a2d72b429f762e476286093c7f273a9a546cb6
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393499"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174680"
 ---
 # <a name="compiler-warning-level-1-c4917"></a>Derleyici Uyarısı (düzey 1) C4917
 
-'declarator': bir GUID yalnızca bir sınıf, arabirim veya ad alanı ile ilişkilendirilebilir.
+' bildirimci ': bir GUID yalnızca bir sınıf, arabirim veya ad alanıyla ilişkilendirilebilir
 
-Kullanıcı tanımlı bir yapı dışındaki [sınıfı](../../cpp/class-cpp.md), [arabirimi](../../cpp/interface.md), veya [ad alanı](../../cpp/namespaces-cpp.md) bir GUID olamaz.
+[Class](../../cpp/class-cpp.md), [Interface](../../cpp/interface.md)veya [Namespace](../../cpp/namespaces-cpp.md) dışında Kullanıcı tanımlı bir yapının GUID 'i olamaz.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
 ## <a name="example"></a>Örnek
 

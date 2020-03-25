@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - event keyword [C++]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
-ms.openlocfilehash: 8b34a4f146cc7961ee1176580def6319185693e9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 90682ba699f6316cb6b38a3b78c44e853cd5473f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509761"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172392"
 ---
 # <a name="event--ccli-and-ccx"></a>Olay (C++/CLI ve C++/CX)
 
@@ -21,7 +21,7 @@ ms.locfileid: "69509761"
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-C++/CX bir *olay üyesinin* veya bir *olay bloğunun*bildirimini destekler. Olay üyesi bir olay bloğunu bildirmek için toplu bir özelliktir. Varsayılan olarak, bir olay üyesi, `add()` `remove()`, ve `raise()` bir olay bloğunda açıkça belirtilen işlevleri bildirir. Bir olay üyesinde işlevleri özelleştirmek için, bunun yerine bir olay bloğu bildirin ve ardından ihtiyacınız olan işlevleri geçersiz kılın.
+C++/CX bir *olay üyesinin* veya bir *olay bloğunun*bildirimini destekler. Olay üyesi bir olay bloğunu bildirmek için toplu bir özelliktir. Varsayılan olarak, bir olay üyesi, bir olay bloğunda açıkça bildirildiği `add()`, `remove()`ve `raise()` işlevlerini bildirir. Bir olay üyesinde işlevleri özelleştirmek için, bunun yerine bir olay bloğu bildirin ve ardından ihtiyacınız olan işlevleri geçersiz kılın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -52,8 +52,8 @@ Olayın adı.
 *return_value*<br/>
 Olay erişimci yönteminin dönüş değeri.  Doğrulanabilir olması için, dönüş türünün **void**olması gerekir.
 
-*parameters*<br/>
-seçim `raise` Metot için *temsilci* parametresinin imzasıyla eşleşen parametreler.
+*parametreler*<br/>
+seçim *Temsilci* parametresinin imzasıyla eşleşen `raise` yöntemi için parametreler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -62,12 +62,12 @@ Bir olay, bir temsilci ile olayın tetiklenmesine yanıt veren bir üye işlev (
 İki tür olay bildirimi vardır:
 
 *Olay veri üyesi*<br/>
-Derleyici, temsilci türünün bir üyesi olan olay için otomatik olarak depolama oluşturur ve iç `add()`, `remove()`ve `raise()` üye işlevleri oluşturur. Bir olay veri üyesinin bir sınıf içinde bildirilmelidir olması gerekir. Temsilcinin dönüş türünün dönüş türü, olay işleyicisinin dönüş türü ile aynı olmalıdır.
+Derleyici, temsilci türünün bir üyesi olan olay için otomatik olarak depolama oluşturur ve dahili `add()`, `remove()`ve `raise()` üye işlevleri oluşturur. Bir olay veri üyesinin bir sınıf içinde bildirilmelidir olması gerekir. Temsilcinin dönüş türünün dönüş türü, olay işleyicisinin dönüş türü ile aynı olmalıdır.
 
 *olay bloğu*<br/>
-Bir olay bloğu `add()`, `remove()`, ve `raise()` yöntemlerinin davranışını açık bir şekilde bildirmenize ve özelleştirmenize olanak sağlar.
+Bir olay bloğu `add()`, `remove()`ve `raise()` yöntemlerinin davranışını açık bir şekilde bildirmenize ve özelleştirmenize olanak sağlar.
 
-Bir olay işleyicisi eklemek ve kaldırmak için **işleçlerini + =** ve **operator-=** kullanabilirsiniz `add()` ya da ve `remove()` yöntemlerini açıkça çağırabilirsiniz.
+Bir olay işleyicisi eklemek ve kaldırmak için **işleç + =** ve **operator-=** kullanabilirsiniz veya `add()` ve `remove()` yöntemlerini açık olarak çağırabilirsiniz.
 
 **olay** , bağlama duyarlı bir anahtar sözcüktür; daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md) .
 
@@ -81,7 +81,7 @@ Bir olay işleyicisini eklemek ve kaldırmak istiyorsanız, ekleme işlemi taraf
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -116,8 +116,8 @@ Olayın adı.
 *return_value*<br/>
 Olay erişimci yönteminin dönüş değeri.  Doğrulanabilir olması için, dönüş türünün **void**olması gerekir.
 
-*parameters*<br/>
-seçim `raise` Metot için *temsilci* parametresinin imzasıyla eşleşen parametreler.
+*parametreler*<br/>
+seçim *Temsilci* parametresinin imzasıyla eşleşen `raise` yöntemi için parametreler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -135,7 +135,7 @@ Olay blokları, Add, Remove ve raise yöntemlerini uygulayarak ekleme, kaldırma
 
 Olay işleyicisinin dönüş türü, temsilcinin dönüş türüyle aynı olmalıdır.
 
-.NET Framework, bir veri üyesini bir yöntemin kendisi (yani, `Invoke` karşılık gelen temsilcinin yöntemi) gibi kabul edebilirsiniz. Yönetilen bir olay veri üyesini bildirmek için temsilci türünü önceden tanımlamanız gerekir. Bunun aksine, yönetilen bir olay yöntemi zaten tanımlı değilse karşılık gelen yönetilen temsilciyi örtülü olarak tanımlar.  Örnek için bu konunun sonundaki kod örneğine bakın.
+.NET Framework, bir veri üyesini bir yöntemin kendisi gibi (yani, karşılık gelen temsilcinin `Invoke` yöntemi) olarak kabul edebilirsiniz. Yönetilen bir olay veri üyesini bildirmek için temsilci türünü önceden tanımlamanız gerekir. Bunun aksine, yönetilen bir olay yöntemi zaten tanımlı değilse karşılık gelen yönetilen temsilciyi örtülü olarak tanımlar.  Örnek için bu konunun sonundaki kod örneğine bakın.
 
 Yönetilen bir olay bildirirken, işleç + = ve-= kullanılarak olay işleyicileri eklendiğinde veya kaldırıldığında çağrılacak ekleme ve kaldırma erişimcileri belirtebilirsiniz. Ekle, kaldır ve Yükselt yöntemleri açıkça çağrılabilir.
 
@@ -167,7 +167,7 @@ Visual C++üzerinde olay oluşturmak ve kullanmak için aşağıdaki adımlar ge
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
@@ -230,7 +230,7 @@ OnClick: 7, 3.14159
 OnDblClick: Hello
 ```
 
-Aşağıdaki kod örneği, önemsiz bir olay `raise` yöntemini oluşturmak için kullanılan mantığı göstermektedir: Olayda bir veya daha fazla abone varsa, `raise` yöntemi örtük olarak çağırmak veya temsilciyi açıkça çağırır. Temsilcinin dönüş türü **void** değilse ve sıfır olay aboneleri varsa, `raise` yöntem temsilci türü için varsayılan değeri döndürür. Hiçbir olay abonesi yoksa, `raise` yöntemini çağırmak yalnızca döndürür ve hiçbir özel durum oluşturulmaz. Temsilci dönüş türü **void**değilse, temsilci türü döndürülür.
+Aşağıdaki kod örneği, önemsiz bir olayın `raise` yöntemini oluşturmak için kullanılan mantığı gösterir: olayda bir veya daha fazla abone varsa, `raise` yöntemi örtülü olarak çağırarak veya açıkça temsilciyi çağıran. Temsilcinin dönüş türü **void** değilse ve sıfır olay aboneleri varsa, `raise` yöntemi temsilci türü için varsayılan değeri döndürür. Hiçbir olay abonesi yoksa `raise` yöntemini çağırmak yalnızca döndürür ve hiçbir özel durum oluşturulmaz. Temsilci dönüş türü **void**değilse, temsilci türü döndürülür.
 
 ```cpp
 // trivial_events.cpp

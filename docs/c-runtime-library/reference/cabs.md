@@ -27,12 +27,12 @@ helpviewer_keywords:
 - _cabs function
 - calculating absolute values
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
-ms.openlocfilehash: ba24b10fb267c9b54ec4944704de988128b4b419
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 2c2bd6b3f097095514e47b757306b4d83a990e45
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443056"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80170347"
 ---
 # <a name="_cabs"></a>_cabs
 

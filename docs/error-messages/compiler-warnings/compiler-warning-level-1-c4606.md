@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4606
 ms.assetid: c1b45fb6-672b-42eb-9e1c-c67b3e4150d3
-ms.openlocfilehash: d36031aa9a831d4669d796d8a40292e2d6ba15a8
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 9b38e9670157fd15dc7c4b6a96ced7ad40c43e34
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73964972"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186003"
 ---
 # <a name="compiler-warning-level-1-c4606"></a>Derleyici Uyarısı (düzey 1) C4606
 

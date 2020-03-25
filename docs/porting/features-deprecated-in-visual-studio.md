@@ -1,16 +1,16 @@
 ---
-title: C++Visual Studio 2019 ' de kullanım dışı Özellikler
+title: Visual Studio 2019’da kullanım dışı bırakılan C++ özellikleri
 ms.date: 07/30/2019
 helpviewer_keywords:
 - Features deprecated in Visual Studio 2019
-ms.openlocfilehash: d5a925d1319f942f08b34ba0e22c1567ed38f9ee
-ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
+ms.openlocfilehash: ff73c3b3b989ae9e94ab3896889d988e7b9f4941
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68682552"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160352"
 ---
-# <a name="c-features-deprecated-in-visual-studio-2019"></a>C++Visual Studio 2019 ' de kullanım dışı Özellikler
+# <a name="c-features-deprecated-in-visual-studio-2019"></a>Visual Studio 2019’da kullanım dışı bırakılan C++ özellikleri
 
 - Windows XP geliştirme desteği
 

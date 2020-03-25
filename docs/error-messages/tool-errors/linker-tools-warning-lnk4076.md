@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4076
 ms.assetid: c424d43b-abb3-4df4-be66-8907b859a555
-ms.openlocfilehash: 05a05c63b9b63aafc52854aa9dcdcccbdc6f8d70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f5c5f6bd33fd0e43ccf3c7b55ab54a3cc25ba68
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182313"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183442"
 ---
 # <a name="linker-tools-warning-lnk4076"></a>Bağlayıcı Araçları Uyarısı LNK4076
 
-Artımlı durum dosyası 'filename'; artımsız olarak bağlanıyor
+geçersiz artımlı durum dosyası ' filename '; Artımlı olmayan şekilde bağlama
 
-BAĞLANTI için artımlı durum (.ilk) dosyası yazılamıyor. Her iki `filename` bozuk veya bir artımlı bağlama veritabanı değil. Yeniden Bağla ve dosyayı kaldırın.
+BAĞLANTı, artımlı durum (. Ilk) dosyasına yazamıyor. `filename` bozulmuş ya da artımlı bir bağlantı veritabanı değil. Dosyayı kaldırın ve yeniden bağlayın.

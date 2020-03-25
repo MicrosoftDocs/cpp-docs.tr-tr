@@ -6,34 +6,34 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4227
 ms.assetid: 941a0414-9964-4e02-8487-f9daa42ef7f9
-ms.openlocfilehash: fb657719c69445ce23d36ccf04ac4a14db0955e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b75cff4f03370951245bde1b485d538ffdb4007
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352749"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182948"
 ---
 # <a name="linker-tools-warning-lnk4227"></a>Bağlayıcı Araçları Uyarısı LNK4227
 
 > meta veri işlemi Uyarısı (*HRESULT*): *warning_message*
 
-Bağlayıcı birleştirilirken meta verileri farklılıklar algılandı:
+Bağlayıcı birleştirilirken meta veri farklılıkları algıladı:
 
-- Bir veya daha fazla başvurulan derlemeleri şu anda yerleşik derlemeyi ile.
+- Şu anda oluşturulmakta olan bütünleştirilmiş koda sahip bir veya daha fazla başvurulan derleme.
 
-- Bir veya daha fazla kaynak kodu dosyalarını bir derleme.
+- Bir derlemedeki bir veya daha fazla kaynak kodu dosyası.
 
-İki genel işlevleri ile aynı ada ancak farklı bildirilen parametre bilgileri varsa, örneğin, LNK4227 neden olabilir (diğer bir deyişle, bildirimleri tüm derleme içinde tutarlı değil). İldasm.exe/Text kullanın metadata *object_file* türleri farkı görmek için her .obj dosyası üzerinde.
+Örneğin, LNK4227 aynı ada sahip iki genel işlevleriniz varsa, ancak parametre bilgileri farklı şekilde bildirilirse (yani, bildirimler tüm uygulamalarda tutarlı değildir) olabilir. Türlerin nasıl farklı olduğunu görmek için her. obj dosyasında ıldadsm. exe/TEXT/METADATA *object_file* kullanın.
 
-LNK4227 de başka bir araçla kaynaklanan sorunları bildirmek için kullanılır. Daha fazla bilgi için uyarı iletisi arayın.
+LNK4227, başka bir araçla kaynaklanan sorunları raporlamak için de kullanılır. Daha fazla bilgi için uyarı iletisini arayın.
 
-Uyarıyı çözmek için meta verileri sorunların düzeltilmesi gerekir.
+Uyarı çözümlemek için meta veri sorunları düzeltilmelidir.
 
 ## <a name="example"></a>Örnek
 
-Başvurulan derlemeyi başvuran derlemenin farklı imzalandığında LNK4227 oluşturulur.
+Başvurulan bir derleme kendisine başvuran derlemeden farklı şekilde imzalanmışsa, LNK4227 oluşturulur.
 
-Aşağıdaki örnek, LNK4227 oluşturur:
+Aşağıdaki örnek LNK4227 oluşturur:
 
 ```cpp
 // LNK4227.cpp
@@ -45,7 +45,7 @@ using namespace System::Reflection;
 int main() {}
 ```
 
-Ardından,
+ardından,
 
 ```cpp
 // LNK4227b.cpp
@@ -64,9 +64,9 @@ ref class MyClass
 
 ## <a name="example"></a>Örnek
 
-Yanlış biçimde sürüm numaraları için derleme özniteliklerini geçirildiğinde LNK4227 de meydana gelebilir.  ' *' Gösterimi için belirli `AssemblyVersionAttribute`.  Bu uyarıyı çözmek için kullanım yalnızca sürüm öznitelikleri dışında sayı `AssemblyVersionAttribute`.
+Ayrıca, yanlış biçimdeki sürüm numaraları derleme özniteliklerine geçirildiğinde de LNK4227 oluşturulabilir.  ' * ' Gösterimi `AssemblyVersionAttribute`özeldir.  Bu uyarıyı çözmek için yalnızca sürüm özniteliklerinde `AssemblyVersionAttribute`dışındaki sayıları kullanın.
 
-Aşağıdaki örnek, LNK4227 oluşturur:
+Aşağıdaki örnek LNK4227 oluşturur:
 
 ```cpp
 // LNK4227e.cpp

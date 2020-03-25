@@ -9,20 +9,20 @@ helpviewer_keywords:
 - inline assembly, registers
 - registers, inline assembly
 ms.assetid: c63e6bb4-49d9-4fa1-bb22-eea21b5cbc0f
-ms.openlocfilehash: 5c07fa897da23a55f376a20e7588c8c8c269d1a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 865fc5fac5f46cdc8c55966e9989227d1d671d6f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167380"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169259"
 ---
 # <a name="segment-references-in-inline-assembly"></a>Satır İçi Derlemede Segment Başvurusu
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-YAZMAÇ yerine ada göre segmentlere başvurması gerekir (segment adı `_TEXT` örneği için geçersiz.). Kesim geçersiz kılmaları kullanmalıdır kayıt açıkça olduğu gibi ES: [BX].
+Ada (örneğin, segment adı `_TEXT`, örneğin, Bölüm adı), YAZMAÇ ile segmentlere başvurmanız gerekir. Kesim geçersiz kılmaları, kayıt işlemlerini sırasıyla, ES: [BX] olarak kullanmalıdır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

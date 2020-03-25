@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - C1128
 ms.assetid: 6f9580fd-ecef-48be-9780-dcf666704279
-ms.openlocfilehash: bb1d9af10084d6b3e75325450c7f13ea1683ee2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64671c9abe8ed1375df1e91ca7509e6a597366ee
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62229052"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203663"
 ---
 # <a name="fatal-error-c1128"></a>Önemli hata C1128
 
-bölüm sayısı nesne dosyası biçimi sınırını aştı: / bigobj ile derleyin
+Bölüm sayısı nesne dosyası biçimi sınırını aştı:/bigobj ile derle
 
-Bir .obj dosyası izin verilen bölüm, bir COFF nesne dosyası biçimi sınırlama sayısı aşıldı.
+Bir. obj dosyası, bir COFF nesne dosya biçimi sınırlaması olan, izin verilen bölüm sayısını aştı.
 
-Bu bölümde sınırlama ulaşmasını kullanmanın sonucu olabilir [/Gy](../../build/reference/gy-enable-function-level-linking.md) ve hata ayıklama derlemesi; **/Gy** işlevleri kendi COMDAT bölüme gitmek neden olur. Hata ayıklama yapısında, hata ayıklama bilgisi bölümünde her COMDAT işlevi yoktur.
+Bu bölüm sınırlamasından ulaşmak, [/GY](../../build/reference/gy-enable-function-level-linking.md) ve bir hata ayıklama derlemesi kullanmanın sonucu olabilir; **/GY** işlevlerin kendi COMDAT bölümlerine gitmesini sağlar. Bir hata ayıklama derlemesinde, her COMDAT işlevi için bir hata ayıklama bilgileri bölümü vardır.
 
-Çok fazla satır içi işlevleri olduğunda C1128 de neden olabilir.
+C1128, çok fazla satır içi işlev olduğunda da oluşabilir.
 
-Bu hatayı düzeltmek için kaynak dosyanızı çoklu kaynak kodu dosyalarına bölmek, olmadan derleme **/Gy**, ya da derleme  [ /bigobj (bölüm sayısını arttırma içinde. Obj dosyası)](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md).  İle derlenmiyor varsa **/Gy**, en iyi duruma getirme ayrı ayrı belirtmeniz gerekecektir beri **/O2** ve **/O1** hem de kapsıyor **/Gy**.
+Bu hatayı düzeltmek için, kaynak dosyanızı birden çok kaynak kodu dosyasına bölün, **/GY**olmadan derleyin veya [/bigobj ile derleyin (Içindeki bölüm sayısını artırın. Obj dosyası)](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md).  **/GY**ile derleme yapmazsanız, **/O2** ve **/O1** her ikisi de **/GY**olduğundan iyileştirmeleri tek tek belirtmeniz gerekecektir.
 
-Mümkünse, hata ayıklama bilgileri olmadan derleyin.
+Mümkünse, hata ayıklama bilgisi olmadan derleyin.
 
-Ayrı kaynak kodu dosyalarını belirli şablonları örneklemeleri olan gerekebilir yerine derleyici sahip, yayma bunları.
+Ayrıca, derleyicinin bunları yaymasına izin vermek yerine ayrı kaynak kodu dosyalarında şablonların belirli örneklemelerinden de sahip olmanız gerekebilir.
 
-Kod taşırken C1128 büyük olasılıkla ilk x64 kullanılırken görünür derleyici ve daha sonra çok x86 ile derleyici. x64 derlenen her bir işlev ile ilişkili en az 4 bölüme sahip olacak **/Gy** veya satır içine alınmış şablonları veya satır içi sınıfı: pdata, kodu ve hata ayıklama bilgisi ve büyük olasılıkla xdata.  X86 pdata olmaz.
+Kod taşıma sırasında, C1128 büyük olasılıkla x64 derleyicisini kullanırken ve daha sonra x86 derleyicisi ile görünür. x64, her bir işlevle derlenen **/GY** veya şablon ya da sınıf satır içi: kod, pveri ve hata ayıklama bilgileri ve muhtemelen XData 'dan satır içine alınmış olan en az 4 bölümden oluşur.  X86, PDATA olmayacak.

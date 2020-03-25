@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4083
 ms.assetid: e7d3344e-5645-4d56-8460-d1acc9145ada
-ms.openlocfilehash: c267d466b70242ebef837fbe01c91f2cf0f69c02
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 6376f6f67370b68f84cad1eadbf7f0ae40de7a16
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626875"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80200309"
 ---
 # <a name="compiler-warning-level-1-c4083"></a>Derleyici Uyarısı (düzey 1) C4083
 

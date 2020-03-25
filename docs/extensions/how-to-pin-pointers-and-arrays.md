@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl yapılır: PIN işaretçiler ve dizileri'
+title: 'Nasıl yapılır: İşaretçiler ve Dizileri Sabitleme'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - pointers, pinning
 - arrays [C++], pinning
 ms.assetid: ee783260-e676-46b8-a38e-11a06f1d57b0
-ms.openlocfilehash: ae8c1da79f41cf9209f2765ce5aa2f7ca3d34aea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8dc42690f0f56b97b2af3ed54dfb17d49b081695
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254560"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80172223"
 ---
-# <a name="how-to-pin-pointers-and-arrays"></a>Nasıl yapılır: PIN işaretçiler ve dizileri
+# <a name="how-to-pin-pointers-and-arrays"></a>Nasıl yapılır: İşaretçiler ve Dizileri Sabitleme
 
-Yönetilen bir nesnenin içinde tanımlanmış bir alt nesneyi sabitleme tüm nesnesi sabitleme etkisi vardır.  Bir dizideki her öğe sabitlenmiş değilse, örneğin, ardından tüm dizi ayrıca sabitlenir. Sabitlenmiş bir diziyi bildirmek için bir dil için hiçbir uzantı vardır. Bir dizi sabitlemek için öğe türü ve PIN öğelerinden biri bir sabitleme işaretçisine bildirin.
+Yönetilen bir nesnede tanımlanan bir alt nesnenin sabitlenmesi, tüm nesnenin sabitlenmesini etkiler.  Örneğin, bir dizinin herhangi bir öğesi sabitse, tüm dizi da sabitlenmiş olur. Bir sabitlenmiş diziyi bildirmek için dile yönelik uzantı yok. Bir diziyi sabitlemek için, öğe türüne sabitleme işaretçisi bildirin ve öğelerinden birini sabitleyin.
 
 ## <a name="example"></a>Örnek
 

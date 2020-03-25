@@ -6,16 +6,16 @@ helpviewer_keywords:
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: a85825eb49b1f8faab7862e902b226c1c1fb6d58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90767141337512b053bb06a40823c4a22a8a4823
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294713"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169753"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>Çağırma Kuralları, Parametreler ve Dönüş Türü
 
-Yardımcısı yordam 's prototip aşağıdaki gibidir:
+Yardımcı yordamın prototipi şunlardır:
 
 ```
 FARPROC WINAPI __delayLoadHelper2(
@@ -27,36 +27,36 @@ FARPROC WINAPI __delayLoadHelper2(
 ### <a name="parameters"></a>Parametreler
 
 *pidd*<br/>
-A `const` işaretçi bir `ImgDelayDescr` uzaklıklarını içeri aktarma ile ilgili çeşitli veri bağlama bilgileri için bir zaman damgası ve tanımlayıcı içerik hakkında daha fazla bilgi sağlayan öznitelikler kümesi içerir. Şu anda yalnızca bir öznitelik yoktur `dlattrRva`, adresleri tanımlayıcısındaki göreli sanal adreslerine olduğunu gösterir. Daha fazla bilgi için bkz: bildirimlerinde *delayimp.h*.
+İçeri aktarma ile ilgili çeşitli verilerin uzaklıklarını, bağlama bilgileri için zaman damgasını ve tanımlayıcı içeriği hakkında daha fazla bilgi sağlayan bir öznitelik kümesini içeren bir `ImgDelayDescr` `const` işaretçisi. Şu anda, Tanımlayıcıdaki adreslerin göreli sanal adresler olduğunu belirten `dlattrRva`yalnızca bir öznitelik vardır. Daha fazla bilgi için, *delayimp. h*içindeki bildirimlere bakın.
 
-Tanımını `PCImgDelayDescr` yapısı için bkz: [yapı ve sabit tanımları](structure-and-constant-definitions.md).
+`PCImgDelayDescr` yapısının tanımı için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md).
 
 *ppfnIATEntry*<br/>
-İçeri aktarılan bir işlevin adresini ile güncelleştirilen gecikme yük içeri aktarma adres tablosunda (IAT) yuva için bir işaretçi. Bu konuma döndürdüğü değerin depolanacağı Yardımcısı yordamı gerekir.
+Alınan işlevin adresiyle güncelleştirilmiş gecikmeli yük içeri aktarma adres tablosunda (ıAT) yuva işaretçisi. Yardımcı yordamının bu konuma döndürdüğü değeri aynı şekilde depolaması gerekir.
 
 ## <a name="expected-return-values"></a>Beklenen dönüş değerleri
 
-İşlev başarılı olursa, içeri aktarılan bir işlevin adresini döndürür.
+İşlev başarılı olursa, içeri aktarılan işlevin adresini döndürür.
 
-İşlev başarısız olursa bir özel durum oluşturur ve 0 döndürür. Üç tür özel durumlar yükseltilebilir:
+İşlev başarısız olursa, bir özel durum oluşturur ve 0 döndürür. Üç tür özel durum oluşturulabilir:
 
-- Olur geçersiz bir parametre öznitelikleri `pidd` doğru belirtildiğinden değildir.
+- `pidd` öznitelikleri doğru belirtilmediyse, geçersiz parametre.
 
-- `LoadLibrary` belirtilen DLL üzerinde başarısız oldu.
+- Belirtilen DLL 'de `LoadLibrary` başarısız oldu.
 
-- Hata `GetProcAddress`.
+- `GetProcAddress`hatası.
 
-Bu özel durumları işlemek için sizin sorumluluğunuzdur.
+Bu özel durumları işlemek sizin sorumluluğunuzdadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yardımcı işlevini çağırma kuralının olduğunu `__stdcall`. Bu nedenle FARPROC kullanılır dönüş değeri türünü ilgili değildir. Bu işlev, C bağlantısına sahip.
+Yardımcı işlevi için çağırma kuralı `__stdcall`. Dönüş değerinin türü ilgili değildir, bu nedenle FARPROC kullanılır. Bu işlevin C bağlantısı vardır.
 
-Bir bildirim kancası kullanılan yardımcı alışkanlık istemediğiniz sürece gecikme yük yardımcı dönüş değerini geçirilen işlev işaretçisi konumda depolanması gerekir. Bu durumda, geri dönmek için uygun bir işlev işaretçisi bulmak için kodunuzu sorumludur. Ardından bağlayıcı oluşturur dönüştürücü kod gerçek içeri aktarma hedefi olarak, dönüş değeri alır ve ona doğrudan atlar.
+Yardım yordamınızın bildirim kancası olarak kullanılmasını istemediğiniz sürece, gecikme yükü Yardımcısı 'nın dönüş değeri, geçirilen işlev işaretçisi konumunda depolanmalıdır. Bu durumda, döndürülecek uygun işlev işaretçisini bulmaktan kodunuz sorumludur. Bağlayıcının oluşturduğu dönüştürücü kodu, bu dönüş değerini içeri aktarmanın gerçek hedefi olarak alır ve doğrudan ona atlar.
 
 ## <a name="sample"></a>Örnek
 
-Aşağıdaki kod, bir basit kanca işlevini uygulamak gösterilmektedir.
+Aşağıdaki kod, bir basit kanca işlevinin nasıl uygulanacağını gösterir.
 
 ```C
 FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)

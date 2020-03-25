@@ -7,30 +7,30 @@ helpviewer_keywords:
 - __declspec keyword [C++], nothrow
 - nothrow __declspec keyword
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
-ms.openlocfilehash: 88041b374cc48ac31c8990aa7f867ba25b33e1d7
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 8164f47190267627bdaf7c7ee2f03f22f65c8f50
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345875"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80161067"
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-A **__declspec** işlevlerin bildiriminde kullanılabilen genişletilmiş öznitelik.
+İşlevlerin bildiriminde kullanılabilen bir genişletilmiş **__declspec** özniteliği.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *dönüş türü* __declspec(nothrow) [*çağrı kuralı*] *işlevi adı* ([*bağımsız değişken listesi*])
+> *dönüş türü* __declspec (nothrow) [*Call-Convention*] *işlev-adı* ([*Argument-List*])
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tüm yeni kod kullanmanızı öneririz [noexcept](noexcept-cpp.md) işleci yerine `__declspec(nothrow)`.
+Tüm yeni kodların `__declspec(nothrow)`yerine [noexcept](noexcept-cpp.md) işlecini kullanmasını öneririz.
 
-Bu öznitelik, derleyiciye bildirilen işlevlerin ve çağırdığı işlevlerin hiçbir zaman özel durum oluşturmayacağını bildirir. Ancak, yönergesi uygulamaz. Diğer bir deyişle, hiçbir zaman neden [std::terminate](../standard-library/exception-functions.md#terminate) çağrılacak, aksine `noexcept`, veya **Std: c ++ 17** modu (Visual Studio 2017 sürüm 15.5 ve üzeri), `throw()`.
+Bu öznitelik, derleyiciye bildirilen işlevlerin ve çağırdığı işlevlerin hiçbir zaman özel durum oluşturmayacağını bildirir. Ancak, yönergesini zorlamaz. Diğer bir deyişle, `noexcept`veya **std: c++ 17** modunda (Visual Studio 2017 sürüm 15,5 ve üzeri), `throw()`farklı olarak [std:: Terminate](../standard-library/exception-functions.md#terminate) çağrılmasına neden olmaz.
 
-Artık varsayılan olarak zaman uyumlu özel durum işleme modeliyle, derleyici böyle bir işlevde geriye doğru izlenemeyen nesnelerin kullanım süresini izleme mekaniklerini ortadan kaldırabilir ve kod boyutunu önemli ölçüde azaltabilir. Aşağıdaki önişlemci yönergesi dikkate alındığında, aşağıdaki üç işlev bildirimi denk **/Std: c ++ 14** modu:
+Artık varsayılan olarak zaman uyumlu özel durum işleme modeliyle, derleyici böyle bir işlevde geriye doğru izlenemeyen nesnelerin kullanım süresini izleme mekaniklerini ortadan kaldırabilir ve kod boyutunu önemli ölçüde azaltabilir. Aşağıdaki Önişlemci yönergesi verildiğinde, **/std: c++ 14** modunda aşağıdaki üç işlev bildirimi eşdeğerdir:
 
 ```cpp
 #define WINAPI __declspec(nothrow) __stdcall
@@ -40,11 +40,11 @@ void __declspec(nothrow) __stdcall f2();
 void __stdcall f3() throw();
 ```
 
-İçinde **/Std: c ++ 17** modu `throw()` başkalarına kullanan eşdeğer değildir `__declspec(nothrow)` olur çünkü `std::terminate` işlevden bir özel durum oluşturulursa çağrılacak.
+**/Std: c++ 17** modunda `throw()`, işlevden bir özel durum oluşturulursa `std::terminate` çağırmasına neden olduğu için `__declspec(nothrow)` kullanan diğer kişilerle eşdeğer değildir.
 
-`void __stdcall f3() throw();` Bildirimi C++ standardı tarafından tanımlanan sözdizimini kullanır. C ++ 17'de `throw()` anahtar sözcüğü kullanım dışı.
+`void __stdcall f3() throw();` bildirimi, C++ standart tarafından tanımlanan sözdizimini kullanır. C++ 17 ' de `throw()` anahtar sözcüğü kullanım dışıdır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

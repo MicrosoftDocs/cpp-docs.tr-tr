@@ -7,20 +7,20 @@ helpviewer_keywords:
 - inline assembly, MASM expressions
 - MASM (Microsoft Macro Assembler), expressions
 ms.assetid: c80e89e6-1084-4654-bb14-68c5f6ef2840
-ms.openlocfilehash: fdbb45b4b7ba1741ab9ab022b30fcd7edfa49e1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a78b0a07563fb7fb046b760db11c4875ab19ead
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166964"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169311"
 ---
 # <a name="masm-expressions-in-inline-assembly"></a>Satır İçi Derlemedeki MASM İfadeleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Satır içi derleme kodu, bir tek değer veya adres olarak değerlendirilen herhangi bir birleşimini işleçler ve işlenenleri olan herhangi bir MASM ifade kullanabilirsiniz.
+Satır içi derleme kodu, tek bir değer veya adres değerlendiren işlenen ve işleçlerin birleşimi olan herhangi bir MASı ifadesini kullanabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

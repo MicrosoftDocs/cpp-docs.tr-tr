@@ -11,12 +11,12 @@ helpviewer_keywords:
 - exception handling [C++], termination handlers
 - try-catch keyword [C++], termination handlers
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
-ms.openlocfilehash: f0b994075a8d59ce5d0955f10bf8c61d357d2db9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a243281e0d984a42cd4b4d9f249d867812d8bca
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209474"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187316"
 ---
 # <a name="writing-a-termination-handler"></a>Sonlandırma İşleyicisi Yazma
 
@@ -26,13 +26,13 @@ Sonlandırma işleyicileri, try-finally deyimini kullanır.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Try-finally deyimi](../cpp/try-finally-statement.md)
+- [Try-finally ekstresi](../cpp/try-finally-statement.md)
 
-- [Kaynakları temizleme](../cpp/cleaning-up-resources.md)
+- [Kaynakları Temizleme](../cpp/cleaning-up-resources.md)
 
-- [Özel Durum İşlemede eylemlerin zamanlaması](../cpp/timing-of-exception-handling-a-summary.md)
+- [Özel durum işlemede eylemlerin zamanlaması](../cpp/timing-of-exception-handling-a-summary.md)
 
-- [Sonlandırma işleyicileri kısıtlamaları](../cpp/restrictions-on-termination-handlers.md)
+- [Sonlandırma işleyicileriyle ilgili kısıtlamalar](../cpp/restrictions-on-termination-handlers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

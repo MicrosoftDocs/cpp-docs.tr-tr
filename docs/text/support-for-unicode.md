@@ -9,12 +9,12 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-ms.openlocfilehash: c30cb1fbfb1930b5e4b026e58c478f0099e8ecdf
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 0b61407920a0ce35a1c6a8466458736e983e271e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929914"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80168570"
 ---
 # <a name="support-for-unicode"></a>Unicode desteği
 
@@ -22,7 +22,7 @@ Unicode, tek bir bayt içinde temsil edileyenler dahil olmak üzere tüm karakte
 
 Geniş bir karakter 2 baytlık çok dilli karakter kodudur. Tüm dünyada modern bilgi işlem için kullanılan neredeyse tüm karakterlerden oluşan on binlerce karakter, teknik semboller ve özel yayımlama karakterleri de dahil olmak üzere, Unicode belirtimine göre kodlanmış tek bir geniş karakter olarak temsil edilebilir UTF-16 kullanımı. Yalnızca bir geniş karakter içinde gösterilemeyen karakterler Unicode vekil çifti özelliği kullanılarak Unicode çiftinde gösterilebilir. Yaygın olarak kullanılan her karakter tek bir 16 bit geniş karakterde UTF-16 olarak temsil edildiğinden, geniş karakterlerin kullanılması uluslararası karakter kümeleriyle programlamayı basitleştirir. UTF-16LE (little-endian için) kullanılarak kodlanan geniş karakterler Windows için yerel karakter biçimidir.
 
-Geniş karakterli bir dize, `wchar_t[]` dizi olarak temsil edilir ve bir `wchar_t*` işaretçi tarafından işaret edilir. Herhangi bir ASCII karakteri, z harfine harfe önek eklenerek geniş bir karakter olarak gösterilebilir. Örneğin, L ' \ 0 ', Sonlandırıcı geniş (16 bit) NULL karakterdir. Benzer şekilde, herhangi bir ASCII dize değişmez değeri, L harfinin ASCII değişmez değerine (L "Hello") eklenerek geniş karakterli bir dize sabit değeri olarak temsil edilebilir.
+Geniş karakterli bir dize `wchar_t[]` dizi olarak temsil edilir ve bir `wchar_t*` işaretçisi tarafından işaret edilir. Herhangi bir ASCII karakteri, z harfine harfe önek eklenerek geniş bir karakter olarak gösterilebilir. Örneğin, L ' \ 0 ', Sonlandırıcı geniş (16 bit) NULL karakterdir. Benzer şekilde, herhangi bir ASCII dize değişmez değeri, L harfinin ASCII değişmez değerine (L "Hello") eklenerek geniş karakterli bir dize sabit değeri olarak temsil edilebilir.
 
 Genellikle, geniş karakterler çok baytlı karakterlerden çok daha fazla alan kaplar, ancak işlemek daha hızlıdır. Ayrıca, çok baytlı kodlamada yalnızca bir yerel ayar gösterilebilir, ancak dünyanın tüm karakter kümeleri aynı anda Unicode temsili tarafından temsil edilir.
 
@@ -33,10 +33,10 @@ MFC çerçevesi genelinde Unicode özellikli etkindir ve MFC, aşağıdaki tablo
 |Taşınabilir olmayan veri türü|Bu makro ile değiştirilmiştir|
 |-----------------------------|----------------------------|
 |`char`, `wchar_t`|`_TCHAR`|
-|`char*`, `LPSTR` (Win32 veri türü),`LPWSTR`|`LPTSTR`|
-|`const char*`, `LPCSTR` (Win32 veri türü),`LPCWSTR`|`LPCTSTR`|
+|`char*`, `LPSTR` (Win32 veri türü), `LPWSTR`|`LPTSTR`|
+|`const char*`, `LPCSTR` (Win32 veri türü), `LPCWSTR`|`LPCTSTR`|
 
-Sınıfı `CString` , `_TCHAR` temeli olarak kullanılır ve kolay dönüştürmeler için oluşturucular ve işleçler sağlar. Unicode için dize işlemlerinin çoğu, Windows ANSI karakter kümesini işlemek için kullanılan mantığla kullanılarak yazılabilir, ancak temel işlem birimi 8 bitlik bir bayt yerine 16 bitlik bir karakter olabilir. Çok baytlı karakter kümeleriyle çalışmaktan farklı olarak, bir Unicode karakteri iki farklı bayt gibi kabul etmeniz gerekmez (ve kullanmamalısınız). Bununla birlikte, tek bir karakterin bir vekil çift karakter çifti tarafından temsil edildiği olasılığa karşı uğraşmanız gerekir. Genel olarak, bir dizenin uzunluğunu, dar veya geniş olan karakterlerin sayısı ile aynı olduğunu varsayan bir kod yazın.
+Sınıf `CString` temel olarak `_TCHAR` kullanır ve kolay dönüştürmeler için oluşturucular ve işleçler sağlar. Unicode için dize işlemlerinin çoğu, Windows ANSI karakter kümesini işlemek için kullanılan mantığla kullanılarak yazılabilir, ancak temel işlem birimi 8 bitlik bir bayt yerine 16 bitlik bir karakter olabilir. Çok baytlı karakter kümeleriyle çalışmaktan farklı olarak, bir Unicode karakteri iki farklı bayt gibi kabul etmeniz gerekmez (ve kullanmamalısınız). Bununla birlikte, tek bir karakterin bir vekil çift karakter çifti tarafından temsil edildiği olasılığa karşı uğraşmanız gerekir. Genel olarak, bir dizenin uzunluğunu, dar veya geniş olan karakterlerin sayısı ile aynı olduğunu varsayan bir kod yazın.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 

@@ -1,35 +1,35 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4503
+title: Derleyici Uyarısı (düzey 1) böylelikle C4503
 ms.date: 05/14/2018
 f1_keywords:
 - C4503
 helpviewer_keywords:
 - C4503
 ms.assetid: 7c5a98ae-5b6d-41d8-b881-12d3ffd5e392
-ms.openlocfilehash: 94c88511d87c3adf3cf5687a94948c83ebc5b3d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9077c448f3b5f1d70d18047b91dcf300e606c91f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160984"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186556"
 ---
-# <a name="compiler-warning-level-1-c4503"></a>Derleyici Uyarısı (düzey 1) C4503
+# <a name="compiler-warning-level-1-c4503"></a>Derleyici Uyarısı (düzey 1) böylelikle C4503
 
-> '*tanımlayıcı*': düzenlenmiş adı uzunluğu aşıldı, ad kesildi
+> '*tanımlayıcı*': düzenlenmiş ad uzunluğu aşıldı, ad kesildi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu derleyici uyarı artık kullanılmıyor ve Visual Studio 2017 ve sonraki derleyiciler oluşturulmaz.
+Bu derleyici uyarısı artık kullanılmıyor ve Visual Studio 2017 ve üzeri derleyicilerde oluşturulmamış.
 
-Düzenlenmiş adı (4096) derleyici sınırından daha uzun ve kesildi. Bu uyarı ve kesilmesini önlemek için bağımsız değişken sayısı veya kullanılan tanımlayıcı adı uzunluğu azaltın. Düzenlenmiş olan derleyici sınırı daha uzun olan uygulanan bir karma değer ve bir ad çakışması tehlikesi olmayan adları.
+Düzenlenmiş ad, derleyici sınırından (4096) daha uzun ve kesildi. Bu uyarıyı ve kesilmesini önlemek için, kullanılan tanımlayıcıların veya ad uzunluklarının sayısını azaltın. Derleyici sınırından daha uzun olan düzenlenmiş adların bir karması uygulanmış ve ad çarpışmanın tehlike altında olmadığı.
 
-Visual Studio'nun daha eski bir sürümü kullanırken, kodunuzu şablonları içerdiğinde bu uyarı verilebilir şablonlarındaki art arda özelleştirilmiş. Örneğin, bir haritasını haritaları (C++ Standart Kitaplığı). Bu durumda, bir tür, tür tanımları yapabilirsiniz (bir **yapı**, örneğin) map içeren.
+Visual Studio 'nun daha eski bir sürümünü kullanırken, kodunuz şablonlarda görsel olarak özelleştirilmiş şablonlar içerdiğinde bu uyarı verilebilir. Örneğin, haritalar Haritası ( C++ standart kitaplıktan). Bu durumda, tür tanımları ' nı eşlemeyi içeren bir tür (örneğin bir **Yapı**) yapabilirsiniz.
 
-Ancak, kodunuzu yeniden yapılandırmayı değil isteyebilirsiniz.  Böylece C4503 oluşturan bir uygulama göndermeye mümkündür, ancak kesilmiş bir sembol sunucusunda bağlantı zamanı hataları alırsanız, hata simgenin türünü belirlemek daha zor olabilir. Mayıs de hata ayıklama daha zor; hata ayıklayıcı sembol adı tür adına difficultly eşleme olabilir. Doğruluk programın ancak kesilmiş adı tarafından etkilenmez.
+Ancak, kodunuzu yeniden yapılandırmak istemediğinize karar verebilirsiniz.  Böylelikle C4503 üreten bir uygulama teslim etmek mümkündür, ancak kesilen bir sembolle bağlantı zamanı hataları alırsanız, hata içindeki sembolün türünü belirlemek daha zor olabilir. Hata ayıklama da daha zor olabilir; hata ayıklayıcının sembol adı tür adı ile difficultly eşlemesi olabilir. Ancak programın doğruluğu, kesilen adından etkilenmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek Visual Studio 2017 derleyicilerinde C4503 oluşturur:
+Aşağıdaki örnek, Visual Studio 2017 öncesi derleyicilerde böylelikle C4503 oluşturur:
 
 ```cpp
 // C4503.cpp
@@ -47,7 +47,7 @@ typedef std::map<std::string, WebAppTest> Hello;
 Hello MyWAT;
 ```
 
-Bu örnek, böylelikle C4503 çözümlemek için kodunuzu yeniden yazma yollarından biri gösterilmektedir:
+Bu örnek, böylelikle C4503 çözümlemek için kodunuzu yeniden yazmak için bir yol gösterir:
 
 ```cpp
 // C4503b.cpp

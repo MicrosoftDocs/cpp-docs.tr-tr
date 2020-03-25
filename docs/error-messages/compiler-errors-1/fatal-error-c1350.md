@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1350
 ms.assetid: 8bb47c23-ac9c-4a33-9ede-4d63ed9d4ba8
-ms.openlocfilehash: 292943d5c94673e265bb9cb3d1fe83a1a907d9a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57f2bcb4307195cc55a5b072b770f204c9dbbb00
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228764"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80203183"
 ---
 # <a name="fatal-error-c1350"></a>Önemli hata C1350
 
-DLL 'dll' yüklenirken hata oluştu: dll bulunamadı
+dll ' dll ' yüklenirken hata oluştu: dll bulunamadı
 
-Denenen işlem destekleyen knihovna DLL nebyla nalezena.
+Denenen işlemi destekleyen DLL bulunamadı.
 
-Bu yüklemenizle ilgili bir sorunu gösterir ve kendi ürün CD'SİNDEN DLL'yi yeniden yüklemeniz gerekir.
+Bu, yüklemenizde bir sorun olduğunu gösterir ve DLL 'yi ürün CD 'nizden yeniden yüklemeniz gerekir.

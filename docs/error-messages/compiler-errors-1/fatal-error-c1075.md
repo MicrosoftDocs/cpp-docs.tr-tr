@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C1075
 ms.assetid: 69a74e3d-b53f-4526-a440-2c94e6403355
-ms.openlocfilehash: 36dad542d6ff421ad227b09ebd58052b940b18a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2701cebb7c1da7d737930af11d6c6336fe4e9aa2
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166808"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80204171"
 ---
 # <a name="fatal-error-c1075"></a>Önemli hata C1075
 
-Soldaki simge dosyasının sonunda eşleşmeyen
+Sol belirteç dosyanın sonunda uyuşduk
 
-Derleyici beklenen eşleşen *belirteci* önce dosya sonuna ulaşıldı.
+Derleyici, dosyanın sonuna erişmeden önce eşleşen *belirteç* bekliyordu.
 
-Bu hata bir eşleşmeyen köşeli ayraç tarafından küme ayracı, kaynaklanabilir veya diğer eşleştirilmiş karakter.
+Bu hataya eşleşmeyen bir köşeli ayraç, küme ayracı veya eşleştirilmiş bir karakter neden olabilir.

@@ -9,42 +9,42 @@ helpviewer_keywords:
 - build steps [C++], output format
 - builds [C++], custom build steps
 ms.assetid: 92ad3e38-24d7-4b89-90e6-5a16f5f998da
-ms.openlocfilehash: b0e9a7514704742524f97e55c06ef47c7b36631b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09bf8485a352d6ec2c1297f8a1be508cb7476c31
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195374"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169831"
 ---
 # <a name="formatting-the-output-of-a-custom-build-step-or-build-event"></a>Özel Derleme Adımının veya Derleme Olayının Çıktısını Biçimlendirme
 
-Özel derleme adımının veya derleme olayının çıktısını doğru biçimlendirilmişse, kullanıcılar aşağıdaki avantajlardan yararlanabilirsiniz:
+Özel bir derleme adımının veya derleme olayının çıktısı doğru şekilde biçimlendirildiyse, kullanıcılar aşağıdaki avantajları alırlar:
 
-- Uyarıları ve hataları sayılır **çıkış** penceresi.
+- Uyarı ve hatalar **Çıkış** penceresinde sayılır.
 
-- Çıktı görünür **görev listesi** penceresi.
+- Çıktı **görev listesi** penceresinde görüntülenir.
 
-- Çıktıda tıklayarak **çıkış** penceresi ilgili konuya görüntüler.
+- **Çıkış** penceresindeki çıktıya tıkladığınızda ilgili konu başlığı görüntülenir.
 
-- F1 işlemleri etkinleştirilir **görev listesi** penceresi veya **çıkış** penceresi.
+- F1 işlemleri **görev listesi** penceresinde veya **Çıkış** penceresinde etkinleştirilir.
 
-Çıkış biçiminde olması:
+Çıkışın biçimi şu olmalıdır:
 
-> {<em>filename</em>**(**<em>satırı #</em> \[ **,** <em>sütun #</em>]**)** &#124; *toolname*} **:** \[ <em>herhangi bir metin</em> ] {**hata** &#124;  **Uyarı**} <em>kod + sayı</em>**:**<em>yerelleştirilebilir dize</em> \[ <em>herhangi bir metin</em> ]
+> {<em>filename</em> **(** <em>satır #</em> \[ **,** <em>sütun #</em>] **)** &#124; *ToolName*} **:** <em>herhangi bir metin</em> \[] **{hata** &#124; **uyarısı**} <em>Code + Number</em> **:** <em>yerelleştirilebilir dize</em> \[ <em>herhangi bir metin</em> ]
 
-Konum:
+Konumlar:
 
-- {*bir* &#124; *b*} bir seçimdir herhangi birinin *bir* veya *b*.
+- {*a* &#124; *b*}, *a* ya da *b*seçimdedir.
 
-- \[<em>öğe</em>] bir isteğe bağlı dize veya parametre.
+- \[<em>item</em>] isteğe bağlı bir dize veya parametredir.
 
-- **Kalın** bir sabit değer temsil eder.
+- **Kalın** , bir sabit değeri temsil eder.
 
 Örneğin:
 
-> C:\\*sourcefile.cpp*(134): hata C2143: söz dizimi hatası: eksik ';' önce '}'
+> C:\\*SourceFile. cpp*(134): hata C2143: sözdizimi hatası: '} ' öncesinde '; ' eksik
 >
-> BAĞLANTI: LNK1104 önemli hatası: dosya açılamıyor '*somelib.lib*'
+> BAĞLANTı: önemli hata LNK1104: '*SomeLib. lib*' dosyası açılamıyor
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -46,12 +46,12 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: e67d31e18ebbb6afd9d98542e4a6aa236b2d3e71
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 14d96453785a55f625b5467458f9cf79e6739acf
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445315"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80188627"
 ---
 # <a name="built-in-types-c"></a>Yerleşik türler (C++)
 

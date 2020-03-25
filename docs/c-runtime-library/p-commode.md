@@ -21,16 +21,16 @@ f1_keywords:
 helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
-ms.openlocfilehash: 930eb45e8069bdd71b5a7986e229b229318d0be8
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e3121c127c3ebf0f5fccdeb7ae0f67d0164d0965
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944110"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171482"
 ---
 # <a name="__p__commode"></a>__p__commode
 
-Dosya g/ç işlemleri için varsayılan *dosya kaydetme modunu* belirten geneldeğişkeneişareteder.`_commode`
+Dosya g/ç işlemleri için varsayılan *dosya kaydetme modunu* belirten `_commode` genel değişkenine işaret eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,11 +41,11 @@ int * __p__commode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_commode` Genel değişkene yönelik işaretçi.
+`_commode` genel değişkenine yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__p__commode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+`__p__commode` işlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
 
 Dosya tamamlama modu, kritik verilerin diske ne zaman yazıldığını belirtir. Daha fazla bilgi için bkz. [fflush](../c-runtime-library/reference/fflush.md).
 

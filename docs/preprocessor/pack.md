@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 4fa0990de25b624b670ababfd8e66f340e2fb8f3
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 335289802b6c370158fc655646b710914a07a3f5
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079972"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160339"
 ---
 # <a name="pack-pragma"></a>pack pragması
 

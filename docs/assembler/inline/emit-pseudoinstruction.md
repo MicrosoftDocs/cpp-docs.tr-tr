@@ -7,20 +7,20 @@ helpviewer_keywords:
 - byte defining (inline assembly)
 - _emit pseudoinstruction
 ms.assetid: 004c48f3-364c-4e82-9a51-e326f9cc7b2b
-ms.openlocfilehash: f2a7c9c4dab97bc1aba3147b5d75f6abbdac951f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8be250aadf20dc4a7dee6a0b565ece21840339d7
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167172"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169480"
 ---
-# <a name="emit-pseudoinstruction"></a>_emit Sözde Yönerge
+# <a name="_emit-pseudoinstruction"></a>_emit Sözde Yönerge
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-**_Emit** sözde yönerge geçerli metin segmentine geçerli konumda bir bayt tanımlar. **_Emit** sözde yönerge benzer [DB](../../assembler/masm/db.md) MASM, yönerge.
+**_Emit** sözde yönerge geçerli metin kesimindeki geçerli konumda bir bayt tanımlar. **_Emit** sözde yönerge, Masd 'nin [DB](../../assembler/masm/db.md) yönergesine benzer.
 
-Aşağıdaki parçası 0x4A 0x43 ve 0x4B bayt kodun içine yerleştirir:
+Aşağıdaki parça, 0x4A, 0x43 ve 0x4B baytlarını koda koyar:
 
 ```cpp
 #define randasm __asm _emit 0x4A __asm _emit 0x43 __asm _emit 0x4B
@@ -33,9 +33,9 @@ __asm {
 ```
 
 > [!CAUTION]
-> Varsa `_emit` yönergeler oluşturur kayıtları, değiştirmek ve en iyi duruma getirme ile uygulama derleme, derleyici hangi kayıtları etkilenen belirlenemiyor. Örneğin, varsa `_emit` değiştiren bir yönerge oluşturur **RAX'daki** Kaydet, derleyici olmadığı bilinmiyorsa, **RAX'daki** değişti. Derleyici, satır içi derleme kodu yürütüldükten sonra kaydetme yanlış bir varsayım, değeri hakkında daha sonra yapabilirsiniz. Sonuç olarak, uygulamanızın çalıştığında öngörülemeyen davranışları ortaya çıkabilir.
+> `_emit` kayıtları değiştiren yönergeler oluşturursa ve uygulamayı iyileştirmelere göre derlerseniz, derleyici hangi kayıtların etkilendiğini belirleyemez. Örneğin, `_emit`, **korx** kaydını değiştiren bir yönerge oluşturursa, bu, bu, **rampaın** değiştiğini bilmez. Derleyici daha sonra, satır içi assembler kodu yürütüldükten sonra o kayıttaki değer hakkında yanlış bir varsayımına sahip olabilirler. Sonuç olarak, uygulamanız çalıştırıldığında öngörülemeyen davranışları gösterebilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

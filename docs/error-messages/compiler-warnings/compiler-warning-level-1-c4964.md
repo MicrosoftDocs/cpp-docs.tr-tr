@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4964
 ms.assetid: b89c9274-8a92-4b7c-aa30-3fbb1b68ac73
-ms.openlocfilehash: 2a75a1b7d3738794046ac697113c3c746bb6fcff
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 7852340bc056e126238a2d9c7493887ef3caf93e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74052241"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80174498"
 ---
 # <a name="compiler-warning-level-1-c4964"></a>Derleyici Uyarısı (düzey 1) C4964
 

@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC1022
 ms.assetid: 30a0f3c7-08a8-4c40-b0de-46ee5feb789d
-ms.openlocfilehash: 6ee09105822ea7dd4243741ed00ce36978f09583
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db3e8522f132f9a65e39934ad95d2f9a9cb1b48f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297287"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80182623"
 ---
 # <a name="resource-compiler-fatal-error-rc1022"></a>Kaynak Derleyicisi Önemli Hatası RC1022
 
-'#endif' bekleniyor
+' #endif ' bekleniyor
 
-Bir `#if`, **#ifdef**, veya **#ifndef** yönergesi ile sonlandırılmamış bir `#endif` yönergesi.
+Bir `#if`, **#ifdef**veya **#ifndef** yönergesi bir `#endif` yönergesi ile sonlandırılmadı.
 
-Olduğundan emin olun. bir `#if`, **#ifdef**, veya **#ifndef** aslında bu deyiminden önce deyimi.
+Bu bildirimin önüne `#if`, **#ifdef**veya **#ifndef** deyimin geçerli olduğundan emin olun.

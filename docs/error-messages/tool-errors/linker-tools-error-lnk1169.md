@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1169
 ms.assetid: e079d518-f184-48cd-8b38-969bf137af54
-ms.openlocfilehash: f167c82c28834d1de82578735e5557d0e9d6b5f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19ac8bb8bd28f42b28fb86e64e72f4ea01f01ab1
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242727"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80184001"
 ---
 # <a name="linker-tools-error-lnk1169"></a>Bağlayıcı Araçları Hatası LNK1169
 
-bir veya daha fazla tanımlanmış sembol bulundu Çarp
+bir veya daha fazla çarpma tanımlanmış sembol bulundu
 
-Derleme, bir veya daha fazla simgeleri birden çok tanımı nedeniyle başarısız oldu. Bu hata, hata tarafından öncesinde [LNK2005](../../error-messages/tool-errors/linker-tools-error-lnk2005.md).
+Bir veya daha fazla simgenin birden çok tanımı nedeniyle derleme başarısız oldu. Bu hatanın önünde hata [LNK2005](../../error-messages/tool-errors/linker-tools-error-lnk2005.md).
 
-[/FORCE](../../build/reference/force-force-file-output.md) veya **/Force: multıple** seçeneği bu hatayı geçersiz kılar.
+[/Force](../../build/reference/force-force-file-output.md) veya **/Force: MULTIPLE** seçeneği bu hatayı geçersiz kılar.

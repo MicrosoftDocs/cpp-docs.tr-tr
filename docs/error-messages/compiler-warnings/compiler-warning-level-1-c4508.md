@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4508
 ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
-ms.openlocfilehash: 394a59a472100cc30476b5bb87f30c45d867f94b
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 54baf35eaeb5ef2c8add024f25c059480d60617b
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73966301"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186575"
 ---
 # <a name="compiler-warning-level-1-c4508"></a>Derleyici Uyarısı (düzey 1) C4508
 

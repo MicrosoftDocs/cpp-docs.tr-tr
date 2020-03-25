@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4399
 ms.assetid: f58d9ba7-71a0-4c3b-b26f-f946dda8af30
-ms.openlocfilehash: 56fe0f314142d873fc02136bc2c3fe65e71f4dda
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a556fbffad41d04b3eb0ea1acfd5e8739ddd5b68
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408348"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186809"
 ---
 # <a name="compiler-warning-level-1-c4399"></a>Derleyici Uyarısı (düzey 1) C4399
 
-> '*sembol*': işlem içi simge/CLR ile derlendiğinde __declspec(dllimport) ile işaretlenmemelidir: Saf
+> '*symbol*':/clr: Pure ile derlendiğinde işlem başına sembol __declspec (dllimport) ile işaretlenmemelidir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-Yerel bir görüntü veya görüntü ile yerel ve CLR yapıları saf bir görüntüye içeri aktarılamıyor. Bu uyarıyı çözmek için derleme **/CLR** (değil **/CLR: pure**) veya silme `__declspec(dllimport)`.
+Yerel bir görüntüden veya yerel ve CLR yapılarına sahip bir görüntüden alınan veriler, saf bir görüntüye aktarılamaz. Bu uyarıyı çözmek için **/clr** ( **/clr: Pure**) ile derleyin veya `__declspec(dllimport)`silin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4399 oluşturur.
+Aşağıdaki örnek C4399 oluşturur.
 
 ```cpp
 // C4399.cpp

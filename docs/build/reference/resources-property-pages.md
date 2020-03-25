@@ -14,12 +14,12 @@ f1_keywords:
 - VC.Project.VCResourceCompilerTool.ResourceOutputFileName
 - VC.Project.VCResourceCompilerTool.NullTerminateStrings
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 4f3688da4feb11f673e11372e5df086dc8c7e21a
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 16168e7eb5e27f4ec0380d53cf8a5c4b9586ec34
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078287"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80171144"
 ---
 # <a name="resources-property-page"></a>Kaynaklar özellik sayfası
 

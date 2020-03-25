@@ -48,18 +48,18 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-ms.openlocfilehash: ab97238cf13accf3db593b5c4a81550297a53d6d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 685df7285e58e0cf2ceeded5ac27641364897298
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403340"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80187706"
 ---
-# <a name="variantt-extractors"></a>_variant_t Ayıklayıcıları
+# <a name="_variant_t-extractors"></a>_variant_t Ayıklayıcıları
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Kapsüllenmiş verileri ayıklamak `VARIANT` nesne.
+Encapsulated `VARIANT` nesnesinden veri ayıklayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,31 +87,31 @@ operator unsigned __int64() const;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kapsüllenmiş ham verileri ayıklar `VARIANT`. Varsa `VARIANT` zaten uygun türde değil `VariantChangeType` bir dönüştürme denemek için kullanılır ve başarısızlık durumunda bir hata oluşturulur:
+Encapsulated `VARIANT`ham verileri ayıklar. `VARIANT` zaten uygun türde değilse, `VariantChangeType` dönüştürmeyi denemek için kullanılır ve hata sonrasında bir hata oluşturulur:
 
-- **kısa () işleci** ayıklar bir **kısa** tamsayı değeri.
+- **işleç Short ()** **Kısa** tamsayı değerini ayıklar.
 
-- **uzun () işleci** ayıklar bir **uzun** tamsayı değeri.
+- **Long işleci ()** **Uzun** bir tamsayı değeri ayıklar.
 
-- **float () işleci** ayıklar bir **float** sayısal değer.
+- **float () işleci** **Kayan** sayısal değer ayıklar.
 
-- **çift () işleci** ayıklar bir **çift** tamsayı değeri.
+- **Double işleci ()** **Çift** tamsayı değerini ayıklar.
 
-- **CY () işleci** ayıklar bir `CY` nesne.
+- **() işleci** `CY` nesnesini ayıklar.
 
-- **işleç bool (')** ayıklar bir **bool** değeri.
+- **operator bool ()** Bir **bool** değeri ayıklar.
 
-- **ONDALIK () işleci** ayıklar bir `DECIMAL` değeri.
+- **IŞLEÇ ondalık ()** `DECIMAL` değerini ayıklar.
 
-- **işleç (bayt)** ayıklar bir `BYTE` değeri.
+- **IŞLEÇ baytı ()** `BYTE` değerini ayıklar.
 
-- **işleç _bstr_t (')** bir dize içinde kapsüllenir ayıklar bir `_bstr_t` nesne.
+- **işleç _bstr_t ()** `_bstr_t` nesnesinde kapsüllenmiş bir dize ayıklar.
 
-- **IDispatch işleci\*()** dispinterface işaretçi kapsüllenmiş ayıklar `VARIANT`. `AddRef` Çağrı size, bu nedenle, elde edilen işaretçi üzerinde çağrılır `Release` ücretsiz için.
+- **operatör ıdispatch\*()** Kapsüllenmiş bir `VARIANT`bir dispınterface işaretçisi ayıklar. `AddRef`, sonuç İşaretçisinde çağrılır, bu nedenle onu serbest bırakmak için `Release` çağırmak sizin için kullanılır.
 
-- **IUnknown işleci\*()** bir kapsüllenmiş COM arabirimi işaretçisini ayıklar `VARIANT`. `AddRef` Çağrı size, bu nedenle, elde edilen işaretçi üzerinde çağrılır `Release` ücretsiz için.
+- **Işleç ıunknown\*()** Kapsüllenmiş bir `VARIANT`COM arabirim işaretçisini ayıklar. `AddRef`, sonuç İşaretçisinde çağrılır, bu nedenle onu serbest bırakmak için `Release` çağırmak sizin için kullanılır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

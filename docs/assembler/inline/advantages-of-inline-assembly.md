@@ -6,32 +6,32 @@ helpviewer_keywords:
 - inline assembly [C++], about inline assembly
 - inline assembly [C++], using
 ms.assetid: 94364d97-faa7-4bdf-8473-570956986c51
-ms.openlocfilehash: ecf1598ec90a8600e1fa9aae565724c254dc11e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e634f78eca753487cf122ac95df55828bb64625
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167406"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80169662"
 ---
 # <a name="advantages-of-inline-assembly"></a>Satır İçi Derleme Avantajları
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, kapsam içinde olan herhangi bir C değişkeni veya işlev adını kullanabilir; bu şekilde programınızın C kodu ile tümleştirmek de kolaydır. C veya C++ deyimleri ile satır içi derleme kodu karıştırılabilir olduğundan, onu kullanışsız ya da C veya C++ olanaksız olan görevleri yapabilirsiniz.
+Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, kapsam içinde olan herhangi bir C değişkeni veya işlev adını kullanabilir; bu şekilde programınızın C kodu ile tümleştirmek de kolaydır. Derleme kodu C veya C++ deyimleri ile satır içi olarak karışık olabileceğinden, c veya C++' de bir veya imkansız olan görevleri gerçekleştirebilir.
 
-Satır içi derlemenin kullanımları şunlardır:
+Satır içi derlemenin kullanımları şunları içerir:
 
-- Derleme dilinde işlevler yazma.
+- Derleme dilinde işlevler yazılıyor.
 
-- Nokta iyileştirme hızı açısından kritik kod bölümlerini.
+- Kodun en iyi duruma getirilmesi-kodun önemli bölümleri.
 
-- Doğrudan donanım erişimi için cihaz sürücüleri yapılıyor.
+- Cihaz sürücüleri için doğrudan donanım erişimi yapılıyor.
 
-- "Çıplak" çağrıları için prolog ve epilog kodu yazılıyor.
+- "Naked" çağrıları için giriş ve bitiş kodu yazma.
 
-Satır içi derleme özel amaçlı bir araçtır. Bir uygulama farklı makinelere bağlantı noktası planlıyorsanız, makineye özgü kod içinde ayrı bir modül yerleştirmek isteyebilirsiniz. Satır içi assembler tüm Microsoft Macro Assembler's (MASM) desteklemediğinden makrosu ve veri yönergeleri bulduğunuz bunu daha kolay MASM böyle modüller için kullanılacak.
+Satır içi derleme özel amaçlı bir araçtır. Bir uygulamanın bağlantı noktasını farklı makinelere göre planlıyorsanız, büyük olasılıkla makineye özgü kodu ayrı bir modüle yerleştirmek isteyeceksiniz. Satır içi derleyici tüm Microsoft Macro Assembler (MASı) makrosunu ve veri yönergelerini desteklemediğinden, bu tür modüller için Masd 'yi kullanmayı daha uygun bulabilirsiniz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - C4506
 ms.assetid: aa682869-65d1-4dad-ba32-198f10b44f91
-ms.openlocfilehash: ad18b8469b602d8e2aaa29087eac75e609fe6844
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10f3c01015dff11a0af40cbb2a4bb92ce33ea535
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160841"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80186571"
 ---
 # <a name="compiler-warning-level-1-c4506"></a>Derleyici Uyarısı (düzey 1) C4506
 
-'function' satır içi işlevinin tanımı yok
+' function ' satır içi işlevinin tanımı yok
 
-Verilen işlevi bildirildi ve satır içi kullanım ancak tanımlanmamış için işaretlenmiş.
+Verilen işlev, satır içi olarak bildirildi ve işaretlendi, ancak tanımlanmadı.
 
-Derleyici, işlev satır vermedi.
+Derleyici, işlevi satır içine almadı.
 
-Dış İşlevler, satır içine alınmayacak kadar ile bildirildiğinden emin olun `extern` anahtar sözcüğü.
+Satır içine alınmış dış işlevlerin `extern` anahtar sözcüğüyle bildirildiği emin olun.

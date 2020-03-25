@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4232
 ms.assetid: f92028a5-4ddd-43c1-97f5-4f724e5e14af
-ms.openlocfilehash: 9d328b1b5e4c3875f29b48eab77cd6f6d49d447f
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: c0e79dfa4564960a5660f0932b142b436370ac05
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541885"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173926"
 ---
 # <a name="compiler-warning-level-4-c4232"></a>Derleyici Uyarısı (düzey 4) C4232
 

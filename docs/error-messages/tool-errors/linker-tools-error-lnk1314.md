@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1314
 ms.assetid: 0b5cd599-61ea-4ac7-8f25-c6d3a8b14655
-ms.openlocfilehash: 6ff30ba92614983783395024ba2ee82a8f8b8b19
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe13bd65eb66ed553d93b30a85fa9bcecfda856f
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161062"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80183611"
 ---
 # <a name="linker-tools-error-lnk1314"></a>Bağlayıcı Araçları Hatası LNK1314
 
-(tanımlanmamış statik veya etiket sembolü) COFF sembol tablosu bozuk veya geçersiz
+COFF sembol tablosu bozuk veya geçersiz (tanımsız statik veya etiket sembolü)
 
-Bir bölümde verilen nesne için derleyici tarafından oluşturulan içerikleri bozuk gibi görünüyor.
+Verilen nesnedeki bir bölüm için derleyicinin ürettiği içerik bozuk gibi görünüyor.
 
-Bu hata, derleyici bir hata gösterebilir.
+Bu hata, derleyicisinin bir başarısızlığını temsil edebilir.

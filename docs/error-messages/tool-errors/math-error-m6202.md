@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - M6202
 ms.assetid: 4d17045f-c6dc-4705-9512-e9af12c35fb4
-ms.openlocfilehash: c216c4d01513868dd56f47c7d5ca7f8b734d1797
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8a3a4ab87a410c4cee8f7e4a1a0517c169d0364
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393239"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80173666"
 ---
 # <a name="math-error-m6202"></a>Matematik Hatası M6202
 
-'function': _sıng hata
+' function ': _SING hatası
 
-Verilen işlevin bağımsız değişkeni, bu işlev için singularity değerindeydi. İşlevi, bağımsız değişkeni tanımlanmadı.
+Verilen işlev için bir bağımsız değişken bu işlev için bir singularveriydi. İşlev, bu bağımsız değişken için tanımlı değil.
 
-Bu hata çağırır `_matherr` işlevi işlev adı, bağımsız ve hata türü. Yeniden yazabilirsiniz `_matherr` belirli çalışma zamanı kayan nokta matematik hataları işleme özelleştirmek için işlevi.
+Bu hata, işlev adı, bağımsız değişkenleri ve hata türü ile `_matherr` işlevini çağırır. Belirli çalışma zamanı kayan nokta matematik hatalarının işlenmesini özelleştirmek için `_matherr` işlevini yeniden yazabilirsiniz.
