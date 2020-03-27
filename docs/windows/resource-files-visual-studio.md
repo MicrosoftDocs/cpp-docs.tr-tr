@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: b66a207766962856cc4d7181607868c2a48ebe84
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 087cd613fa0dfd9cb6e07ac47a6a38d63bba004e
+ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513652"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80167881"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "69513652"
 
 - Tek başına dosya olarak bulunan tek bir kaynak. Bu tür bir. rc dosyasından başvurulan bir bit eşlem, simge veya imleç dosyası içerir.
 
-- Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu tür, `Resource.h`bir. rc dosyasından başvurulan, içerir.
+- Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu tür, bir. rc dosyasından başvurulan `Resource.h`içerir.
 
 . Exe,. dll ve. res dosyaları gibi diğer dosya türlerinde bulunan kaynaklar *kaynak*olarak adlandırılır.
 
@@ -108,7 +108,7 @@ C++ Masaüstü projelerinde, bildirim kaynakları, uygulamanın kullandığı BA
 </dependency>
 ```
 
-Bir Windows XP veya Windows Vista uygulaması için bildirim kaynağı, uygulamanın kullanması için en güncel Windows ortak denetimleri sürümünü belirtmelidir. Yukarıdaki örnek, `6.0.0.0` [Syslink denetimini](/windows/win32/Controls/syslink-overview)destekleyen sürümü kullanır.
+Bir Windows XP veya Windows Vista uygulaması için bildirim kaynağı, uygulamanın kullanması için en güncel Windows ortak denetimleri sürümünü belirtmelidir. Yukarıdaki örnek, [Syslink denetimini](/windows/win32/Controls/syslink-overview)destekleyen `6.0.0.0`sürümünü kullanır.
 
 > [!NOTE]
 > Modül başına yalnızca bir bildirim kaynağına sahip olabilirsiniz.
