@@ -1,9 +1,11 @@
 ---
 title: exit, _Exit, _exit
-ms.date: 01/02/2018
+ms.date: 4/2/2020
 api_name:
 - _exit
 - exit
+- _o__exit
+- _o_exit
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,19 +36,19 @@ helpviewer_keywords:
 - processes, terminating
 - function calls, terminating
 - process termination, calling
-ms.openlocfilehash: fd988ca6339c00b454d673d3bec6f137753ac83a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5bdb5ff5c8309e03a49f9518f65a45d5757e9bfa
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941664"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81347629"
 ---
 # <a name="exit-_exit-_exit"></a>exit, _Exit, _exit
 
-Çağıran işlemi sonlandırır. **Exit** işlevi, temizlik sonrasında onu sonlandırır; **_çık** ve **_çıkış** hemen sonlandır.
+Arama işlemini sonlandırır. **Çıkış** işlevi temizlendikten sonra sonlandırır; **_exit** ve **_Exit** derhal sonlandırır.
 
 > [!NOTE]
-> Test veya hata ayıklama senaryoları dışında Evrensel Windows Platformu (UWP) uygulamasını kapatmak için bu yöntemi kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle). Windows 10 uygulamaları hakkında daha fazla bilgi için bkz. [Windows 10 uygulamaları Için nasıl yapılır kılavuzlarında](https://developer.microsoft.com/windows/apps).
+> Bu yöntemi, test veya hata ayıklama senaryoları dışında evrensel windows platformu (UWP) uygulamasını kapatmak için kullanmayın. Bir Mağaza uygulamasını kapatmanın programlı veya uI yollarına [Microsoft Mağazası ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için [UWP App yaşam döngüsüne](/windows/uwp/launch-resume/app-lifecycle)bakın. Windows 10 uygulamaları hakkında daha fazla bilgi için [Windows 10 uygulamaları için Nasıl Yap'ın kılavuzlarına](https://developer.microsoft.com/windows/apps)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,27 +66,27 @@ void _exit(
 
 ### <a name="parameters"></a>Parametreler
 
-*status*<br/>
+*Durum*<br/>
 Çıkış durum kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Çıkış**, **_exit** ve **_exit** işlevleri çağıran işlemi sonlandırır. **Çıkış** işlevi, iş parçacığı yerel nesneleri için yıkıcıları çağırır, sonra (ilk kez çıkar (LIFO) sırada), bir **atexit** ve **_onexit**tarafından kaydedilen işlevler ve sonra tüm dosya arabelleğini işle. **_Exit** ve **_exit** işlevleri, iş parçacığı yerel nesnelerini yok etmeden veya **atexit** ya da **_onexit** işlevlerini işlemeden ve akış arabelleklerini temizlemeye gerek kalmadan işlemi sonlandırır.
+**Çıkış**, **_Exit** ve **_exit** işlevleri arama işlemini sonlandırır. **Çıkış** işlevi iş parçacığı yerel nesneler için destructors çağırır, sonra aramaları-son-in-ilk-out (LIFO) sırayla-atexit ve **_onexit**tarafından kayıtlı işlevleri , ve sonra işlem sona erdirilmeden önce tüm dosya arabellekleri temize. **atexit** **_Exit** ve **_exit** işlevleri iş parçacığı yerel nesneleri yok etmeden veya **çıkış** veya **_onexit** işlevlerini işlemeden ve akış arabelleklerini yıkamadan işlemi sonlandırır.
 
-**Çıkış**, **_çıkış** ve **_çıkış** çağrıları bir değer döndürmese de, *durum* değeri ana bilgisayar ortamında kullanılabilir hale getirilir veya bir varsa, işlem çıktıktan sonra işlemi çağırma işlemini bekliyor. Genellikle, çağıran bir hata belirtmek için normal bir çıkış veya başka bir değer belirtmek üzere *durum* değerini 0 olarak ayarlar. *Durum* değeri, işletim sistemi Batch komutu **ERRORLEVEL** tarafından kullanılabilir ve iki sabitden biri tarafından temsil edilir: 0 değerini temsil eden **EXIT_SUCCESS**, 1 değerini temsil eden **EXIT_FAILURE**.
+**Çıkış,** **_Exit** ve **_exit** çağrıları bir değer döndürmese de, *durum* daki değer, işlem çıktıktan sonra varsa, ana bilgisayar ortamına veya bekleme arama işlemine kullanılabilir hale getirilir. Genellikle, arayan normal bir çıkış belirtmek için *durum* değerini 0'a veya hata göstermek için başka bir değere ayarlar. *Durum* değeri işletim sistemi toplu **komutu ERRORLEVEL** için kullanılabilir ve iki sabitten biri tarafından temsil edilir: **EXIT_SUCCESS**, 0 veya **EXIT_FAILURE**değerini temsil eden , 1 değerini temsil eden.
 
-**Çıkış**, **_exit**, **_exit**, **quick_exit**, **_cexit**ve **_c_exit** işlevleri aşağıdaki gibi davranır.
+**Çıkış**, **_Exit**, **_exit**, **quick_exit**, **_cexit**, ve **_c_exit** fonksiyonları aşağıdaki gibi çalışır.
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|**çıkıp**|Tüm C Kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve konak ortamına sağlanan durum kodunu sağlar.|
-|**_Çıkış**|En az C Kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve konak ortamına sağlanan durum kodunu sağlar.|
-|**_çıkış**|En az C Kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve konak ortamına sağlanan durum kodunu sağlar.|
-|**quick_exit**|Hızlı C Kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve konak ortamına sağlanan durum kodunu sağlar.|
-|**_cexit**|Tüm C Kitaplığı sonlandırma yordamlarını gerçekleştirir ve çağırana döner. İşlemi sonlandırır.|
-|**_c_exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döner. İşlemi sonlandırır.|
+|**Çıkış**|C kitaplığı sonlandırma yordamlarını tamamlar, işlemi sonlandırır ve sağlanan durum kodunu ana bilgisayar ortamına sağlar.|
+|**_Exit**|En az C kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve sağlanan durum kodunu ana bilgisayar ortamına sağlar.|
+|**_exit**|En az C kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve sağlanan durum kodunu ana bilgisayar ortamına sağlar.|
+|**quick_exit**|Hızlı C kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamına sağlanan durum kodunu sağlar.|
+|**_cexit**|C kitaplığı sonlandırma yordamlarını tamamlar ve arayana geri döner. İşlemi sonlandırmaz.|
+|**_c_exit**|En az C kitaplığı sonlandırma yordamlarını gerçekleştirir ve arayana geri döner. İşlemi sonlandırmaz.|
 
-**Çıkış**, **_exit** veya **_exit** işlevini çağırdığınızda, çağrı sırasında mevcut olan geçici veya otomatik nesnelerin yıkıcıları çağrılmaz. Bir otomatik nesne, bir işlevde tanımlanan statik olmayan bir yerel nesnedir. Geçici bir nesne, bir işlev çağrısının döndürdüğü değer gibi derleyici tarafından oluşturulan bir nesnedir. **Çıkış**, **_exit**veya **_exit**çağrısı yapmadan önce otomatik bir nesneyi yok etmek için, burada gösterildiği gibi, nesne için yok ediciyi açıkça çağırın:
+**Çıkışı,** **_Exit** veya **_exit** işlevini çağırdığınızda, çağrı sırasında var olan geçici veya otomatik nesnelerin yıkıcıları çağrılmaz. Otomatik nesne, bir işlevde tanımlanan statik olmayan yerel nesnedir. Geçici nesne, işlev çağrısı yla döndürülen bir değer gibi derleyici tarafından oluşturulan bir nesnedir. Otomatik bir nesneyi, _Exit **veya** **_exit** **çağırmadan**önce yok etmek için, burada gösterildiği gibi nesnenin yıkıcısını açıkça arayın:
 
 ```cpp
 void last_fn() {}
@@ -94,15 +97,17 @@ void last_fn() {}
 }
 ```
 
-**DllMain**'den **Çıkış** çağırmak için **DLL_PROCESS_ATTACH** kullanmayın. **DllMain** işlevinden çıkmak için **DLL_PROCESS_ATTACH**adresinden **false** döndürün.
+**DllMain** **çıkış** aramak için **DLL_PROCESS_ATTACH** kullanmayın. **DLLMain** işlevinden çıkmak için **DLL_PROCESS_ATTACH** **FALSE** döndürün.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**Çıkış**, **_çıkış**, **_çıkış**|\<Process. h > veya \<Stdlib. h >|
+|**çıkış**, **_Exit**, **_exit**|\<process.h> \<veya stdlib.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -122,10 +127,10 @@ int main( void )
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
+[Iptal](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [_cexit, _c_exit](cexit-c-exit.md)<br/>
-[_exec, _wexec İşlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[_exec, _wexec Fonksiyonlar](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
 [quick_exit](quick-exit1.md)<br/>
 [_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>

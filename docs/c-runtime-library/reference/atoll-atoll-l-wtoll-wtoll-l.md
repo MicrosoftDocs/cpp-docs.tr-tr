@@ -1,11 +1,15 @@
 ---
 title: atoll, _atoll_l, _wtoll, _wtoll_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _wtoll
 - _atoll_l
 - _wtoll_l
 - atoll
+- _o__atoll_l
+- _o__wtoll
+- _o__wtoll_l
+- _o_atoll
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -36,16 +41,16 @@ helpviewer_keywords:
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-ms.openlocfilehash: f1b5fca9c3428bce26a8a40cf8271760fa97b10b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 34b7d0fdedb55241452f9a7f9937b64c58f7772c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939471"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348707"
 ---
 # <a name="atoll-_atoll_l-_wtoll-_wtoll_l"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 
-Bir dizeyi **uzun** **uzun** tamsayıya dönüştürür.
+Bir dizeyi **uzun** **bir** tamsayıya dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,54 +73,56 @@ long long _wtoll_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Dönüştürülecek dize.
+*Str*<br/>
+Dize dönüştürülecek.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **uzun** **uzun** değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **aücretli** için dönüş değeri 0 ' dır.
+Her işlev, giriş karakterlerini bir sayı olarak yorumlayarak üretilen **uzun** **uzun** değeri döndürür. Giriş bu tür bir değere dönüştürülemiyorsa **mercan adasının** dönüş değeri 0'dır.
 
-Büyük pozitif tamsayı değerleriyle taşma için **aücretli** , **LLONG_MAX**döndürür ve büyük negatif tamsayı değerleriyle taşma için **LLONG_MIN**döndürür.
+Büyük pozitif integral değerleri ile taşma için, **mercan** **LLONG_MAX**döndürür ve büyük negatif integral değerleri ile taşma **için, LLONG_MIN**döndürür.
 
-Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+Tüm kapsama alanı dışı durumlarda, **errno** **ERANGE**olarak ayarlanır. Geçirilen parametre **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** **için errno** ayarlayın ve 0 döndürün.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir karakter dizesini **uzun** **uzun** bir tamsayı değerine dönüştürür.
+Bu işlevler bir karakter dizesini **uzun** **bir** tamsayı değerine dönüştürür.
 
-Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
+Giriş dizesi, belirtilen türün sayısal değeri olarak yorumlanabilecek bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterdeki giriş dizesini okumayı durdurur. Bu karakter, dizeyi sonlandıran null karakter ('\0' veya L'\0') olabilir.
 
-**Aücretli** *dize* bağımsız değişkeni aşağıdaki biçimdedir:
+**Mercan adasıiçin** *str* bağımsız değişkeni aşağıdaki formu vardır:
 
-> [*boşluk*] [*imzala*] [*basamaklar*]
+> [*beyazuzay*] [*işaret*] [*rakamlar*]
 
-*Boşluk* , yoksayılan boşluk veya sekme karakterlerinden oluşur; *imza* artı (+) veya eksi (-); ve *rakamlar* bir veya daha fazla basamaktan oluşur.
+Bir *boşluk,* yoksayılan boşluk veya sekme karakterlerinden oluşur; *işareti* artı (+) veya eksi (-); ve *basamaklar* bir veya daha fazla basamakvardır.
 
-bir parametre olarak geniş bir karakter dizesi almak dışında, **_wücretli** , **aücretli** ile aynıdır.
+**_wtoll** bir parametre olarak geniş bir karakter dize alır dışında **mercan adası** ile aynıdır.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında, sahip olmayan sürümlerle aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_l** sonek olan bu işlevlerin sürümleri, geçerli yerel yerine geçirilen yerel parametreyi kullanmaları dışında, bu tür olmayan sürümlerle aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tstoll**|**Atoll**|**Atoll**|**_wücretli**|
+|**_tstoll**|**Atoll**|**Atoll**|**_wtoll**|
 |**_tstoll_l**|**_atoll_l**|**_atoll_l**|**_wtoll_l**|
-|**_tücretli**|**_aücretli**|**_aücretli**|**_wücretli**|
+|**_ttoll**|**_atoll**|**_atoll**|**_wtoll**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Çalıştırmasını|Gerekli başlık|
+|Rutin|Gerekli başlık|
 |--------------|---------------------|
-|**aücretli**, **_atoll_l**|\<Stdlib. h >|
-|**_wücretli**, **_wtoll_l**|\<Stdlib. h > veya \<wchar. h >|
+|**mercan adası**, **_atoll_l**|\<stdlib.h>|
+|**_wtoll**, **_wtoll_l**|\<stdlib.h> \<veya wchar.h>|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dize olarak depolanan sayıları sayısal değerlere dönüştürmek için **alü** işlevlerinin nasıl kullanılacağını gösterir.
+Bu program, dize olarak depolanan sayıları sayısal değerlere dönüştürmek için **mercan adası** işlevlerinin nasıl kullanılacağını gösterir.
 
 ```C
 // crt_atoll.c
@@ -167,7 +174,7 @@ Overflow condition occurred.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

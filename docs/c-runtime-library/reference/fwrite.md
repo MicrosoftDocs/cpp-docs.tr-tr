@@ -1,8 +1,9 @@
 ---
 title: fwrite
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - fwrite
+- _o_fwrite
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -25,16 +27,16 @@ helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-ms.openlocfilehash: 8149e0f2cbc84c2c28093d86fecd5ff2a9db7aba
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a5bd6da3c8d16189f7ff0db744901e03513acc21
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956190"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345403"
 ---
 # <a name="fwrite"></a>fwrite
 
-Verileri bir akışa yazar.
+Akışına veri yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,45 +51,47 @@ size_t fwrite(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
-Yazılacak veri işaretçisi.
+*Arabellek*<br/>
+Yazılacak verilere işaretçi.
 
-*boyutla*<br/>
-Öğe boyutu (bayt).
+*Boyutu*<br/>
+Madde boyutu, baytlar halinde.
 
-*biriktirme*<br/>
-Yazılacak en fazla öğe sayısı.
+*Sayısı*<br/>
+Yazılacak maksimum öğe sayısı.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fwrite** , gerçekten yazılmış olan tam öğe sayısını döndürür ve bir hata oluşursa *Count* 'tan daha az olabilir. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemez. *Stream* veya *buffer* bir null işaretçisiyse veya Unicode modunda yazılabilir tek sayıda bayt belirtilirse, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+**fwrite,** bir hata oluşursa *sayısı* daha az olabilir, gerçekten yazılmış tam öğelerin sayısını döndürür. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemez. *Akış* veya *arabellek* null işaretçisi ise veya yazılacak tek sayıda bayt Unicode modunda belirtiliyorsa, işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin verilirse, bu işlev **errno'u** **EINVAL'e** ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fwrite** işlevi, sayı *uzunluğunun her* biri, *arabelleğe* çıkış *akışına*kadar olan öğeleri *say* için yazar. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten yazılan bayt sayısıyla artırılır. *Akış* metin modunda açılırsa, her satır akışı bir satır başı satır besleme çiftiyle değiştirilmiştir. Değiştirme işleminin dönüş değeri üzerinde hiçbir etkisi yoktur.
+**Fwrite** işlevi, *arabellekten* çıkış *akışına*kadar her biri *boyut* uzunluğu olan öğeleri *saymak* için yazar. *Akışla* ilişkili dosya işaretçisi (varsa) gerçekte yazılan bayt sayısına göre artımlanır. *Akış* metin modunda açılırsa, her satır akışı bir satır satır satır besleme çifti ile değiştirilir. Değiştirmenin iade değeri üzerinde hiçbir etkisi yoktur.
 
-*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**, **CCS = UTF-16LE**, ya da **CCS = UTF-8**' i içeren bir mod parametresi kullanılarak açılırsa veya mod ise **_setmode** ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**— içeren bir mod parametresi kullanılarak bir Unicode çeviri moduna,*arabellek* **,** UTF-16 verileri. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+*Akış* Unicode çeviri modunda açıldığında-örneğin, *akış* **fopen'i** arayarak ve **ccs=UNICODE**, **ccs=UTF-16LE**veya **ccs=UTF-8**içeren bir mod parametresi kullanılarak açılırsa veya mod **_setmode** kullanılarak Unicode çeviri moduna değiştirilirse ve **_O_WTEXT**içeren bir mod parametresi , **_O_U16TEXT**, veya **_O_U8TEXT**-*arabellek* UTF 16 veri içeren bir dizi **wchar_t** için işaretçi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi parametre doğrulama hatasına neden olur.
 
-Bu işlev çağıran iş parçacığını kilitlediği için iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fwrite_nolock**.
+Bu işlev arama iş parçacığı kilitlediği için iş parçacığı güvenlidir. Kilitlenmeyen bir sürüm için **bkz. _fwrite_nolock.**
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fwrite**|\<stdio. h >|
+|**fwrite**|\<stdio.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-[Fread](fread.md)örneğine bakın.
+[Fread](fread.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_setmode](setmode.md)<br/>
 [fread](fread.md)<br/>
 [_fwrite_nolock](fwrite-nolock.md)<br/>

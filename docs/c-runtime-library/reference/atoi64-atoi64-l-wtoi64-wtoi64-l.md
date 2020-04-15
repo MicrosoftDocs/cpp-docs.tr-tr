@@ -1,11 +1,15 @@
 ---
 title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _atoi64_l
 - _wtoi64
 - _atoi64
 - _wtoi64_l
+- _o__atoi64
+- _o__atoi64_l
+- _o__wtoi64
+- _o__wtoi64_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -49,16 +54,16 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-ms.openlocfilehash: 950774e74462e8d1f301a1d5b933e57feaa9f840
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 103b100b293ff183dd89f3e7c2f291f9d49519e6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939492"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348827"
 ---
 # <a name="_atoi64-_atoi64_l-_wtoi64-_wtoi64_l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
-Bir dizeyi 64 bitlik bir tamsayıya dönüştürür.
+Bir dizeyi 64 bit tamsayıya dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,35 +86,37 @@ __int64 _wtoi64_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Dönüştürülecek dize.
+*Str*<br/>
+Dize dönüştürülecek.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak oluşturulan **__int64** değerini döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **_atoi64** için dönüş değeri 0 ' dır.
+Her işlev, giriş karakterlerini bir sayı olarak yorumlayarak üretilen **__int64** değerini döndürür. Giriş bu tür **_atoi64** bir değere dönüştürülemiyorsa, _atoi64 için dönüş değeri 0'dır.
 
-Büyük pozitif tamsayı değerleriyle taşma durumunda **_atoi64** , büyük negatif tamsayı değerleriyle taşma durumunda **I64_MAX** ve **I64_MIN** döndürür.
+Büyük pozitif integral değerleri ile taşma durumunda, **_atoi64** büyük negatif integral değerleri ile taşma durumunda **I64_MAX** ve **I64_MIN** döndürür.
 
-Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+Tüm kapsama alanı dışı durumlarda, **errno** **ERANGE**olarak ayarlanır. Geçirilen parametre **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** **için errno** ayarlayın ve 0 döndürün.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir karakter dizesini 64 bitlik bir tamsayı değerine dönüştürür.
+Bu işlevler bir karakter dizesini 64 bit tamsayı değerine dönüştürür.
 
-Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
+Giriş dizesi, belirtilen türün sayısal değeri olarak yorumlanabilecek bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterdeki giriş dizesini okumayı durdurur. Bu karakter, dizeyi sonlayan null karakter ('\0' veya L'\0') olabilir.
 
-**_Atoi64** için *Str* bağımsız değişkeni aşağıdaki biçimdedir:
+**_atoi64** str *bağımsız* değişkeni aşağıdaki biçime sahiptir:
 
-> [*boşluk*] [*imzala*] [*basamaklar*]
+> [*beyazuzay*] [*işaret*] [*rakamlar*]
 
-*Boşluk* , yoksayılan boşluk veya sekme karakterlerinden oluşur; *imza* artı (+) veya eksi (-); ve *rakamlar* bir veya daha fazla basamaktan oluşur.
+Bir *boşluk,* yoksayılan boşluk veya sekme karakterlerinden oluşur; *işareti* artı (+) veya eksi (-); ve *basamaklar* bir veya daha fazla basamakvardır.
 
-**_wtoi64** , bir parametre olarak geniş bir karakter dizesi alan hariç **_atoi64** ile aynıdır.
+**_wtoi64** parametre olarak geniş bir karakter dizesi alması dışında **_atoi64** ile aynıdır.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Bu işlevlerin **_l** soneki olan sürümleri, geçerli yerel alan yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -120,14 +127,14 @@ Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir 
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Çalıştırmasını|Gerekli başlık|
+|Rutin|Gerekli başlık|
 |--------------|---------------------|
-|**_atoi64**, **_atoi64_l**|\<Stdlib. h >|
-|**_wtoi64**, **_wtoi64_l**|\<Stdlib. h > veya \<wchar. h >|
+|**_atoi64**, **_atoi64_l**|\<stdlib.h>|
+|**_wtoi64**, **_wtoi64_l**|\<stdlib.h> \<veya wchar.h>|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dizeler olarak depolanan sayıların **_atoi64** işlevleri kullanılarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
+Bu program, dizeleri olarak depolanan **sayıların _atoi64** işlevleri ni kullanarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
 
 ```C
 // crt_atoi64.c
@@ -178,7 +185,7 @@ Overflow condition occurred.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

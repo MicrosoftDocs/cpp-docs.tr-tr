@@ -1,8 +1,9 @@
 ---
 title: _gcvt
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - _gcvt
+- _o__gcvt
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +33,16 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-ms.openlocfilehash: 3618f5571275783131c74c89f29218f89023f70e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f161256c6dc86a045f49111cde3651bea08ead11
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956096"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345315"
 ---
 # <a name="_gcvt"></a>_gcvt
 
-Bir kayan nokta değerini bir dizeye, arabelleğe depolayan bir dizeye dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [_gcvt_s](gcvt-s.md).
+Kayan nokta değerini arabellekte depoladığı bir dizeye dönüştürür. Bu işlevin daha güvenli bir sürümü mevcuttur; [bkz. _gcvt_s.](gcvt-s.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,34 +56,36 @@ char *_gcvt(
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
+*Değer*<br/>
 Dönüştürülecek değer.
 
-*54*<br/>
+*rakamlar*<br/>
 Depolanan önemli basamak sayısı.
 
-*arabelleğin*<br/>
+*Arabellek*<br/>
 Sonuç için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_gcvt** , basamak dizesine bir işaretçi döndürür.
+**_gcvt** bir işaretçiyi basamak dizesine döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gcvt** işlevi, bir kayan nokta *değerini* bir karakter dizesine (bir ondalık işaret ve olası bir işaret baytı içerir) dönüştürür ve dizeyi *arabelleğe*depolar. *Arabellek* , dönüştürülmüş değere ve otomatik olarak eklenen bir Sonlandırıcı null karaktere yetecek kadar büyük olmalıdır. Bir arabellek *boyutu + 1* kullanılırsa, işlev arabelleğin sonunu geçersiz kılar. Bunun nedeni, dönüştürülmüş dizenin bir ondalık basamak içermesi ve işaret ve üs bilgilerini içermesi olabilir. Taşma için bir sağlama yoktur. **_gcvt** ondalık biçimde *basamak* rakamları üretmeye çalışır. Yapamazsa, *sayı* rakamlarını üstel biçimde üretir. Sondaki sıfırlar, dönüştürmede gizlenebilir.
+**_gcvt** işlevi kayan nokta *değerini* bir karakter dizesine dönüştürür (ondalık sayı ve olası bir işaret baytını içerir) ve dizeyi *arabellekte*depolar. *Arabellek* dönüştürülen değeri artı otomatik olarak eklenen bir sonlandırıcı null karakter, karşılamak için yeterince büyük olmalıdır. *Basamak* + 1 arabellek boyutu kullanılırsa, işlev arabelleğenin sonuna yazar. Bunun nedeni, dönüştürülen dize ondalık bir nokta içerir ve imza ve üs bilgileri içerebilir. Taşma için bir hüküm yoktur. **_gcvt** ondalık biçimde *basamak* ları oluşturmaya çalışır. Yapamıyorsa, üstel biçimde *basamak basamakları* üretir. Sondaki sıfırlar dönüştürmede bastırılabilir.
 
-Her kayan nokta değeri için **_Cvtbufsize** uzunluğunda bir *arabellek* yeterlidir.
+Herhangi bir kayan nokta değeri için uzunluk **_CVTBUFSIZE** *arabelleği* yeterlidir.
 
-Bu işlev, parametrelerini doğrular. *Buffer* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
+Bu işlev parametrelerini doğrular. *Arabellek* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL** **için errno** ayarlar ve **NULL**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_gcvt**|\<Stdlib. h >|
+|**_gcvt**|\<stdlib.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

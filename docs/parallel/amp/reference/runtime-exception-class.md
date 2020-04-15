@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - runtime_exception class
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-ms.openlocfilehash: 6ad784720833d2ae5de7d653d132ba144aec2677
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: ff54357055d373db98f469b071edc75fce75e0b4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126389"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81336790"
 ---
 # <a name="runtime_exception-class"></a>runtime_exception Sınıfı
 
-C++ Hızlandırılmış çok büyük paralellik (amp) kitaplığındaki özel durumların temel türü.
+C++ Hızlandırılmış Kütleparalelliği (AMP) kitaplığındaki özel durumlar için temel tür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -30,22 +30,22 @@ class runtime_exception : public std::exception;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[runtime_exception Oluşturucusu](#ctor)|`runtime_exception` sınıfının yeni bir örneğini başlatır.|
-|[~ runtime_exception yok edici](#dtor)|`runtime_exception` nesnesini yok eder.|
+|[runtime_exception Yapıcı](#ctor)|`runtime_exception` sınıfının yeni bir örneğini başlatır.|
+|[~runtime_exception Yıkıcı](#dtor)|Nesneyi `runtime_exception` yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[get_error_code](#get_error_code)|Özel duruma neden olan hata kodunu döndürür.|
+|[get_error_code](#get_error_code)|Özel durum neden hata kodunu döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[işleç =](#operator_eq)|Belirtilen `runtime_exception` nesnesinin içeriğini buna kopyalar.|
+|[işleç=](#operator_eq)|Belirtilen `runtime_exception` nesnenin içeriğini buna kopyalar.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,13 +55,13 @@ class runtime_exception : public std::exception;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amprt. h
+**Üstbilgi:** amprt.h
 
-**Ad alanı:** Zamanlı
+**Ad alanı:** Eşzamanlılık
 
-## <a name="ctor"></a>runtime_exception Oluşturucusu
+## <a name="runtime_exception-constructor"></a><a name="ctor"></a>runtime_exception Yapıcı
 
-Sınıfının yeni bir örneğini başlatır.
+Sınıfın yeni bir örneğini başolarak adlandırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -80,19 +80,19 @@ runtime_exception(
 ### <a name="parameters"></a>Parametreler
 
 *_Message*<br/>
-Özel duruma neden olan hatanın açıklaması.
+Özel durum neden hata açıklaması.
 
 *_Hresult*<br/>
-Özel duruma neden olan hata HRESULT.
+Özel durum neden hata HRESULT.
 
 *_Other*<br/>
-Kopyalanacak `runtime_exception` nesnesi.
+Kopyalanması `runtime_exception` gereken nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 `runtime_exception` nesnesi.
 
-## <a name="dtor"></a>~ runtime_exception yok edici
+## <a name="runtime_exception-destructor"></a><a name="dtor"></a>~runtime_exception Yıkıcı
 
 Nesneyi yok eder.
 
@@ -102,9 +102,9 @@ Nesneyi yok eder.
 virtual ~runtime_exception() throw();
 ```
 
-## <a name="get_error_code"></a>get_error_code
+## <a name="get_error_code"></a><a name="get_error_code"></a>get_error_code
 
-Özel duruma neden olan hata kodunu döndürür.
+Özel durum neden hata kodunu döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -114,10 +114,11 @@ HRESULT get_error_code() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özel duruma neden olan hata HRESULT.
+Özel durum neden hata HRESULT.
 
-## <a name="operator_eq"></a>işleç =
-  Belirtilen `runtime_exception` nesnesinin içeriğini buna kopyalar.
+## <a name="operator"></a><a name="operator_eq"></a>işleç=
+
+Belirtilen `runtime_exception` nesnenin içeriğini buna kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -128,11 +129,11 @@ runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-Kopyalanacak `runtime_exception` nesnesi.
+Kopyalanması `runtime_exception` gereken nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `runtime_exception` nesnesine bir başvuru.
+Bu `runtime_exception` nesneye bir başvuru.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

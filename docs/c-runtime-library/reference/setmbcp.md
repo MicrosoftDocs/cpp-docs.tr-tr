@@ -1,8 +1,9 @@
 ---
 title: _setmbcp
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _setmbcp
+- _o__setmbcp
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +29,16 @@ helpviewer_keywords:
 - _setmbcp function
 - multibyte code pages
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
-ms.openlocfilehash: a3408f04eb60a33a84c628c989ebc9c4c4a261df
-ms.sourcegitcommit: f38f770bfda1c174d2b81fabda7c893b15bd83a1
+ms.openlocfilehash: 61086471c6194aaa8434d291647978bf891a8aea
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473871"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81337599"
 ---
 # <a name="_setmbcp"></a>_setmbcp
 
-Yeni bir çok baytlı kod sayfası ayarlar.
+Yeni bir çok bayt kod sayfası ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,48 +50,50 @@ int _setmbcp(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayfasının*<br/>
-Yerel ayarda bağımsız çok baytlı yordamlar için yeni kod sayfası ayarı.
+*Codepage*<br/>
+Yerel denbağımsız çok bayt yordamları için yeni kod sayfası ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kod sayfası başarıyla ayarlandıysa 0 döndürür. *Kod sayfası için geçersiz*bir kod sayfası değeri sağlanırsa,-1 döndürür ve kod sayfası ayarı değiştirilmez. Bir bellek ayırma hatası oluşursa, **errno** 'ı **EINVAL** olarak ayarlar.
+Kod sayfası başarıyla ayarlanırsa 0 döndürür. Geçersiz bir kod sayfası değeri kod sayfası için *sağlanırsa*, -1 döndürür ve kod sayfası ayarı değişmez. Bellek ayırma hatası oluşursa **errno'u** **EINVAL** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmbcp** işlevi yeni bir çok baytlı kod sayfasını belirtir. Varsayılan olarak, çalışma zamanı sistemi, çok baytlı kod sayfasını otomatik olarak sistem varsayılan ANSI kod sayfasına ayarlar. Çok baytlı kod sayfası ayarı, yerel ayara bağımlı olmayan tüm çok baytlı yordamları etkiler. Ancak, geçerli yerel ayar için tanımlanan kod sayfasını kullanmak üzere **_setmbcp** söylemek mümkündür (aşağıdaki bildirim sabitleri ve ilgili davranış sonuçları listesine bakın). Çok baytlı kod sayfası yerine yerel ayar kodu sayfasına bağımlı çok baytlı yordamların bir listesi için bkz. [çok baytlı karakter dizileri yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
+**_setmbcp** işlevi yeni bir çok bayt kod sayfası belirtir. Varsayılan olarak, çalışma zamanı sistemi otomatik olarak sistem varsayılan ANSI kod sayfasına çok bayt kod sayfasını ayarlar. Çok bayt kod sayfası ayarı, yerel olarak bağımlı olmayan tüm çok bayt yordamlarını etkiler. Ancak, **_setmbcp** geçerli yerel alan için tanımlanan kod sayfasını kullanmaları için talimat vermek mümkündür (aşağıdaki bildirim sabitleri ve ilişkili davranış sonuçları listesine bakın). Çok bayt kod sayfası yerine yerel kod sayfasına bağlı olan çok bayt [yordamlarının](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)listesi için bkz.
 
-Çok baytlı kod sayfası, aşağıdaki çalışma zamanı kitaplığı yordamlarına göre çok baytlı karakter işlemeyi da etkiler:
+Çok bayt kod sayfası, aşağıdaki çalışma zamanı kitaplığı yordamları tarafından çok bayt karakter işleme etkiler:
 
 ||||
 |-|-|-|
-|[_exec işlevleri](../../c-runtime-library/exec-wexec-functions.md)|[_mktemp](mktemp-wmktemp.md)|[_stat](stat-functions.md)|
-|[_fullpath](fullpath-wfullpath.md)|[_spawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
+|[_exec fonksiyonları](../../c-runtime-library/exec-wexec-functions.md)|[_mktemp](mktemp-wmktemp.md)|[_stat](stat-functions.md)|
+|[_fullpath](fullpath-wfullpath.md)|[_spawn fonksiyonları](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 |[_makepath](makepath-wmakepath.md)|[_splitpath](splitpath-wsplitpath.md)|[tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 
-Ayrıca, ( **_exec** ve **_spawn** aileleri gibi) çok baytlı karakter *argv* veya *envp* program bağımsız değişkenlerini parametre olarak alan tüm çalışma zamanı kitaplığı yordamları, bu dizeleri çok baytlı kod sayfasına göre işler. Bu nedenle bu yordamlar, çok baytlı kod sayfasını değiştiren **_setmbcp** çağrısıyla de etkilenir.
+Buna ek olarak, parametreler **(_exec** ve **_spawn** aileleri gibi) olarak multibayt *karaktera argv* veya *envp* programı bağımsız değişkenleri alan tüm çalışma zamanı kitaplık yordamları bu dizeleri çok bayt kod sayfasına göre işler. Bu nedenle, bu yordamlar da çok bayt kod sayfasını değiştiren **_setmbcp** için bir çağrı etkilenir.
 
-*CodePage* bağımsız değişkeni aşağıdaki değerlerden herhangi birine ayarlanabilir:
+Kod sayfası bağımsız *değişkeni* aşağıdaki değerlerden herhangi biri için ayarlanabilir:
 
-- **_MB_CP_ANSI** Program başlangıcında işletim sisteminden alınan ANSI kod sayfasını kullanın.
+- **_MB_CP_ANSI** Program başlatmada işletim sisteminden elde edilen ANSI kod sayfasını kullanın.
 
-- **_MB_CP_LOCALE** Önceki bir [setlocale](setlocale-wsetlocale.md)çağrısından elde edilen geçerli yerel ayarın kod sayfasını kullanın.
+- **_MB_CP_LOCALE** Önceki bir çağrıdan alınan geçerli yerel kodu sayfasını [kullanarak yerelliği ayarlayın.](setlocale-wsetlocale.md)
 
-- **_MB_CP_OEM** Program başlangıcında işletim sisteminden alınan OEM kod sayfasını kullanın.
+- **_MB_CP_OEM** Program başlatmada işletim sisteminden elde edilen OEM kod sayfasını kullanın.
 
-- **_MB_CP_SBCS** Tek baytlı kod sayfasını kullanın. Kod sayfası **_MB_CP_SBCS**olarak ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman false döndürür.
+- **_MB_CP_SBCS** Tek bayt kod sayfasını kullanın. Kod sayfası **_MB_CP_SBCS**ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman yanlış döndürür.
 
-- **_MB_CP_UTF8** UTF-8 kullanın.  Kod sayfası **_MB_CP_UTF8**olarak ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman false döndürür.
+- **_MB_CP_UTF8** UTF-8'i kullanın.  Kod sayfası **_MB_CP_UTF8**ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman yanlış döndürür.
 
-- Değerin bir ANSI, OEM veya diğer işletim sistemi tarafından desteklenen kod sayfası (desteklenmeyen UTF-7 hariç) olmasına bakılmaksızın herhangi bir diğer geçerli kod sayfası değeri.
+- Değerin ANSI, OEM veya işletim sistemi tarafından desteklenen diğer bir kod sayfası olup olmadığına bakılmaksızın diğer geçerli kod sayfa değeri (desteklenmeyen UTF-7 hariç).
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_setmbcp**|\<Mbctype. h >|
+|**_setmbcp**|\<mbctype.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: Giriş-bitiş kodu yazma konuları
+title: Prolog-Epilog Kodu Yazmak İçin Dikkat Edilecek Noktalar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - stack frame layout
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - __LOCAL_SIZE constant
 - stack, stack frame layout
 ms.assetid: c7814de2-bb5c-4f5f-96d0-bcfd2ad3b182
-ms.openlocfilehash: a598ddbdd1b5f91c97e32905202e264b444c05d0
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: cda6a6c82efcf30a916aced121024095d7ce8138
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988696"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81337106"
 ---
 # <a name="considerations-for-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazmada Dikkat Edilmesi Gerekenler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Kendi giriş ve bitiş kodu dizilerini yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. `__LOCAL_SIZE` sembolünü nasıl kullanacağınızı öğrenmek de yararlı olur.
+Kendi prolog ve epilog kod dizileri yazmadan önce, yığın çerçeve nasıl ortaya konulmuştur anlamak önemlidir. Sembolün nasıl kullanılacağını `__LOCAL_SIZE` bilmek de yararlıdır.
 
-##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a>Yığın çerçevesi düzeni
+## <a name="stack-frame-layout"></a><a name="_pluslang_c.2b2b_.stack_frame_layout"></a>Yığın Çerçeve Düzeni
 
 Bu örnekte, 32 bit işlevinde görünebilecek standart giriş kodu gösterilmektedir:
 
@@ -41,20 +41,20 @@ pop         ebp           ; Restore ebp
 ret                       ; Return from function
 ```
 
-Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yereller alanı `ebp-4`başlar. Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.
+Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel alan . `ebp-4` Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.
 
-##  <a name="_pluslang___local_size"></a>__LOCAL_SIZE
+## <a name="__local_size"></a><a name="_pluslang___local_size"></a>__LOCAL_SIZE
 
-Derleyici, işlev giriş kodunun satır içi assembler bloğunda kullanılmak üzere `__LOCAL_SIZE`bir sembol sağlar. Bu simge, özel giriş kodundaki yığın çerçevesindeki yerel değişkenler için alan ayırmak için kullanılır.
+Derleyici, `__LOCAL_SIZE`işlev prolog kodunun satır satır ara derleyici bloğunda kullanılmak üzere bir sembol sağlar. Bu sembol, özel prolog kodunda yığın çerçevesindeki yerel değişkenler için alan ayırmak için kullanılır.
 
-Derleyici `__LOCAL_SIZE`değerini belirler. Değeri, Kullanıcı tanımlı tüm yerel değişkenlerin ve derleyicinin ürettiği geçici değişkenlerin toplam bayt sayısıdır. `__LOCAL_SIZE`, yalnızca bir anında işlenen olarak kullanılabilir; bir ifadede kullanılamaz. Bu sembolün değerini değiştirmemelidir veya yeniden tanımlamanız gerekir. Örneğin:
+`__LOCAL_SIZE`Derleyici. Değeri, kullanıcı tarafından tanımlanan tüm yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam bayt sayısıdır. `__LOCAL_SIZE`sadece ani bir operand olarak kullanılabilir; bir ifadede kullanılamaz. Bu sembolün değerini değiştirmemeniz veya yeniden tanımlamamalısınız. Örneğin:
 
 ```
 mov        eax, __LOCAL_SIZE           ;Immediate operand--Okay
 mov        eax, [ebp - __LOCAL_SIZE]   ;Error
 ```
 
-Özel giriş ve bitiş dizileri içeren bir çıplak işlevin aşağıdaki örneği, giriş sırasındaki `__LOCAL_SIZE` sembolünü kullanır:
+Özel prolog ve epilog dizileri içeren çıplak bir `__LOCAL_SIZE` işlevaşağıdaki örnek prolog dizisinde sembolü kullanır:
 
 ```cpp
 // the__local_size_symbol.cpp
@@ -78,8 +78,8 @@ __declspec ( naked ) int main() {
 }
 ```
 
-**SON Microsoft 'a özgü**
+**END Microsoft Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Naked İşlevi Çağrıları](../cpp/naked-function-calls.md)
+[Çıplak İşlev Çağrıları](../cpp/naked-function-calls.md)

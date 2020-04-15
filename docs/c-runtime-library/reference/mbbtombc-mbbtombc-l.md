@@ -1,9 +1,11 @@
 ---
 title: _mbbtombc, _mbbtombc_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbbtombc_l
 - _mbbtombc
+- _o__mbbtombc
+- _o__mbbtombc_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -31,19 +34,19 @@ helpviewer_keywords:
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-ms.openlocfilehash: 244e603a3234b755d19a1c1d0738e8c22d74b8e2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5d26b06da1dcf8c53abda5d4ff2ee06ec3e7cd11
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952730"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81341425"
 ---
 # <a name="_mbbtombc-_mbbtombc_l"></a>_mbbtombc, _mbbtombc_l
 
-Tek baytlık çok baytlı bir karakteri karşılık gelen çift baytlık çok baytlı karaktere dönüştürür.
+Tek baytlık çok bayt karakterini karşılık gelen çift bayt lı çok bayt karaktere dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,32 +62,34 @@ unsigned int _mbbtombc_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Dönüştürülecek tek baytlık karakter.
+*C*<br/>
+Dönüştürmek için tek bayt karakter.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Mbbkaldırıldı c** başarıyla *c*'yi dönüştürdükten sonra çok baytlı bir karakter döndürür; Aksi takdirde, *c*döndürür.
+**_mbbtombc** c'yi başarıyla *dönüştürürse,* çok baytlık bir karakter döndürür; aksi takdirde, *c*döndürür .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbbkaldırıldı c** işlevi, verilen bir tek baytlık çok baytlı karakteri karşılık gelen çift baytlık çok baytlı karaktere dönüştürür. Karakterler, dönüştürülecek 0x20-0x7E veya 0xA1-0xDF aralığı içinde olmalıdır.
+**_mbbtombc** işlevi, belirli bir tek bayt çok bayt karakterini karşılık gelen çift bayt lı çok bayt karaktere dönüştürür. Karakterler dönüştürülecek 0x20 - 0x7E veya 0xA1 - 0xDF aralığında olmalıdır.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevin sürümleri aynıdır, ancak bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır ve bunun yerine **_mbbkaldırıldı c_l** , geçirilen yerel ayar **parametresini kullanır.** Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md) bakın. bu yerelliğe bağımlı davranış için geçerli yerel alanı **_mbbtombc** ve bunun yerine geçirilen yerel parametreyi **_mbbtombc_l** kullanması dışında, bu işlevin sürümleri aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-Önceki sürümlerde, **_mbbkaldırıldı c** , **hantozen**olarak adlandırılmıştır. Yeni kod için **_mbbkaldırıldı c**kullanın.
+Daha önceki **versiyonlarda, _mbbtombc** **hantozen**seçildi. Yeni kod için **_mbbtombc**kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbbtombc**|\<mbstring. h >|
-|**_mbbtombc_l**|\<mbstring. h >|
+|**_mbbtombc**|\<mbstring.h>|
+|**_mbbtombc_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

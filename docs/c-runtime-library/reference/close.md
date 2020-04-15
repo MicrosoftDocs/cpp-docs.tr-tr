@@ -1,8 +1,9 @@
 ---
 title: _close
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _close
+- _o__close
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,12 +28,12 @@ helpviewer_keywords:
 - close function
 - files [C++], closing
 ms.assetid: 4708a329-8acf-4cd9-b7b0-a952e1897247
-ms.openlocfilehash: e274cd45c42a5cf49430ecce69e111cbbf6fe88b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4d8b702a10624ae80629b4ce4644c428322500cb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942930"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348653"
 ---
 # <a name="_close"></a>_close
 
@@ -47,36 +49,38 @@ int _close(
 
 ### <a name="parameters"></a>Parametreler
 
-*FD*<br/>
-Açık dosyaya başvuran dosya tanımlayıcısı.
+*Fd*<br/>
+Açık dosyaya atıfta bulunan dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_close** dosya başarıyla kapatılmışsa 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir.
+dosya başarıyla kapatılırsa **_close** 0 döndürür. -1'in geri dönüş değeri bir hatayı gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Close** işlevi *FD*ile ilişkili dosyayı kapatır.
+**_close** işlevi *fd*ile ilişkili dosyayı kapatır.
 
-Dosya tanımlayıcısı ve temel alınan işletim sistemi dosya tanıtıcısı kapalıdır. Bu nedenle, dosya başlangıçta bir **Win32 işlevi kullanılarak** açıldıysa ve **_open_osfhandle**kullanarak bir dosya tanımlayıcısına dönüştürülürse, **CloseHandle** çağrısı yapmak gerekli değildir.
+Dosya tanımlayıcısı ve altta yatan işletim sistemi dosya tutamacı kapatılır. Bu nedenle, dosya win32 işlevi **CreateFile** kullanılarak ilk olarak açıldı ve **_open_osfhandle**kullanarak bir dosya tanımlayıcısına dönüştürüldüyse **CloseHandle'ı** aramak gerekli değildir.
 
-Bu işlev, parametrelerini doğrular. *FD* hatalı bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EBADF**olarak ayarlanır.
+Bu işlev parametrelerini doğrular. *fD* hatalı bir dosya tanımlayıcısı ise, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse, işlevleri -1 döndürür ve **errno** **EBADF**ayarlanır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı başlık|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
 |-------------|---------------------|---------------------|
-|**_close**|\<GÇ. h >|\<errno. h >|
+|**_close**|\<io.h>|\<errno.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-[_Open](open-wopen.md)için örneğe bakın.
+[_open](open-wopen.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chsize](chsize.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_dup, _dup2](dup-dup2.md)<br/>

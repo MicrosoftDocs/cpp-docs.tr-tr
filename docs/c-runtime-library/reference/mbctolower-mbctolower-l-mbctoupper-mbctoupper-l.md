@@ -1,11 +1,15 @@
 ---
 title: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbctolower_l
 - _mbctoupper_l
 - _mbctoupper
 - _mbctolower
+- _o__mbctolower
+- _o__mbctolower_l
+- _o__mbctoupper
+- _o__mbctoupper_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -45,19 +50,19 @@ helpviewer_keywords:
 - _totlower function
 - mbctoupper function
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
-ms.openlocfilehash: 75b3926ea294fd6fe66b4e6865ac0c7df6d1b596
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 49915a4017040200afca950cee5e1ac31184c589
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952534"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81341055"
 ---
 # <a name="_mbctolower-_mbctolower_l-_mbctoupper-_mbctoupper_l"></a>_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 
 Çok baytlı bir karakterin durumunu sınar ve dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,46 +85,48 @@ unsigned int _mbctoupper_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Dönüştürülecek çok baytlı karakter.
+*C*<br/>
+Dönüştürmek için çok bayt karakter.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, mümkünse, dönüştürülmüş karakter *c*'yi döndürür. Aksi takdirde, *c* karakterini değiştirilmemiş olarak döndürür.
+Bu işlevlerin her biri dönüştürülen karakter *c*döndürür , mümkünse. Aksi takdirde *c* karakterini değiştirmeden döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevler *c* karakterini test edin ve mümkünse aşağıdaki dönüşümlerden birini uygulayın.
+Işlevler *c* karakterini sınayır ve mümkünse aşağıdaki dönüşümlerden birini uygular.
 
-|Çalıştırmasını|Dönüştürür|
+|Rutin|Dönüştürür|
 |--------------|--------------|
-|**_mbctolower**, **_mbctoküçük_l**|Büyük harfli karakter-küçük harf karakter.|
-|**_mbctoupper**, **_mbctoüste_l**|Küçük harfli karakterden büyük harfe.|
+|**_mbctolower**, **_mbctolower_l**|Küçük karaktere büyük harf karakteri.|
+|**_mbctoupper**, **_mbctoupper_l**|Küçük karakterden büyük harf karakterine.|
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . Bu işlevin **_l** soneki olmadan sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevin **_l** soneki olmayan sürümü, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürüm, bunun yerine geçirilen yerel parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-Önceki sürümlerde, **_mbctolower** , **jtolower**olarak adlandırılmıştı ve **_mbctoupper** , **jtoupper**olarak çağrıldı. Yeni kod için, bunun yerine yeni adları kullanın.
+Önceki sürümlerde, **_mbctolower** **jtolower**denirdi , ve **_mbctoupper** **jtoupper**çağrıldı . Yeni kod için yeni adları kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_totlower**|**ToLower**|**_mbctolower**|**kasadan düşük**|
-|**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towal_t**|
-|**_totupper**|**ToUpper**|**_mbctoupper**|**kasaüstü**|
-|**_totupper_l**|**toupper_l**|**_mbctoupper_l**|**_towüste_l**|
+|**_totlower**|**Tolower**|**_mbctolower**|**çekici**|
+|**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_t**|
+|**_totupper**|**Toupper**|**_mbctoupper**|**çekme**|
+|**_totupper_l**|**toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Çalıştırmasını|Gerekli başlık|
+|Rutin|Gerekli başlık|
 |--------------|---------------------|
-|**_mbctolower**, **_mbctoküçük_l**|\<mbstring. h >|
-|**_mbctoupper**, **_mbctoüste_l**|\<mbstring. h >|
+|**_mbctolower**, **_mbctolower_l**|\<mbstring.h>|
+|**_mbctoupper**, **_mbctoupper_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

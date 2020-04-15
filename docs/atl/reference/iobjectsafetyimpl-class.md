@@ -1,5 +1,5 @@
 ---
-title: Iobjectsafetyımpl sınıfı
+title: IObjectSafetyImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IObjectSafetyImpl
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - IObjectSafety, ATL implementation
 - IObjectSafetyImpl class
 ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
-ms.openlocfilehash: 17a1b362f2cfe40be99c10298a780a6bf4f6419f
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 6eee7585bc3c5587e106ab6b0cefb4b7129df59f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503134"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329658"
 ---
-# <a name="iobjectsafetyimpl-class"></a>Iobjectsafetyımpl sınıfı
+# <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl Sınıfı
 
-Bu sınıfın bir varsayılan uygulamayı sağlar `IObjectSafety` almak ve bir nesnenin güvenlik düzeylerini ayarlamak bir istemci izin vermek için arabirim.
+Bu sınıf, istemcinin `IObjectSafety` nesnenin güvenlik düzeylerini alıp ayarlamasına izin vermek için arabirimin varsayılan uygulamasını sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,37 +37,37 @@ class IObjectSafetyImpl
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız, türetilen `IObjectSafetyImpl`.
+Sınıfınızdan `IObjectSafetyImpl`türetilmiştir.
 
-*dwSupportedSafety*<br/>
-Denetim için desteklenen güvenlik seçeneklerini belirtir. Aşağıdaki değerlerden biri olabilir:
+*dwDestekliGüvenlik*<br/>
+Kontrol için desteklenen güvenlik seçeneklerini belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- INTERFACESAFE_FOR_UNTRUSTED_CALLER tarafından tanımlanan arabirimi [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parametre `riid` komut dosyası için güvenli olarak yapılmalıdır.
+- INTERFACESAFE_FOR_UNTRUSTED_CALLER [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parametresi `riid` tarafından tanımlanan arabirim komut dosyası için güvenli hale getirilmelidir.
 
-- INTERFACESAFE_FOR_UNTRUSTED_DATA tarafından tanımlanan arabirimi `SetInterfaceSafetyOptions` parametre `riid` başlatma sırasında için güvenilir olmayan verileri güvenli olarak yapılmalıdır.
+- INTERFACESAFE_FOR_UNTRUSTED_DATA `SetInterfaceSafetyOptions` Parametre `riid` tarafından tanımlanan arabirim, başlatma sırasında güvenilmeyen veriler için güvenli hale getirilmelidir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IObjectSafetyImpl::GetInterfaceSafetyOptions](#getinterfacesafetyoptions)|Nesne için ayarlanmış güvenlik seçenekleri yanı sıra, nesne tarafından desteklenen güvenlik seçeneklerini alır.|
-|[IObjectSafetyImpl::SetInterfaceSafetyOptions](#setinterfacesafetyoptions)|Nesne başlatma veya komut dosyası için güvenli hale getirir.|
+|[IObjectSafetyImpl::GetInterfaceSafetyOptions](#getinterfacesafetyoptions)|Nesne tarafından desteklenen güvenlik seçeneklerinin yanı sıra nesne için şu anda ayarlanan güvenlik seçeneklerini de alır.|
+|[IObjectSafetyImpl::SetInterfaceSafetyOptions](#setinterfacesafetyoptions)|Nesneyi başlatma veya komut dosyası için güvenli hale getirir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IObjectSafetyImpl::m_dwCurrentSafety](#m_dwcurrentsafety)|Nesnenin geçerli güvenlik düzeyi depolar.|
+|[IObjectSafetyImpl::m_dwCurrentSafety](#m_dwcurrentsafety)|Nesnenin geçerli güvenlik düzeyini depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf `IObjectSafetyImpl` bir varsayılan uygulamayı sağlar `IObjectSafety`. `IObjectSafety` Almak ve bir nesnenin güvenlik düzeylerini ayarlamak bir istemci arabirimi sağlar. Örneğin, bir web tarayıcısı çağırabilirsiniz `IObjectSafety::SetInterfaceSafetyOptions` başlatma için güvenli veya komut dosyası için güvenli bir denetim yapmak için.
+Sınıf `IObjectSafetyImpl` varsayılan bir `IObjectSafety`uygulama sağlar. Arabirim, `IObjectSafety` istemcinin nesnenin güvenlik düzeylerini almasına ve ayarlamasına olanak tanır. Örneğin, bir web tarayıcısı, bir denetimi başlatma için güvenli veya komut dosyası için güvenli hale getirmek için arayabilir. `IObjectSafety::SetInterfaceSafetyOptions`
 
-Bu Not [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) makrosu CATID_SafeForScripting ve CATID_SafeForInitializing bileşen kategorileri ile bir bileşeni güvenli olduğunu belirtmek için alternatif bir yol sağlar.
+[IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) makroyu CATID_SafeForScripting ve CATID_SafeForInitializing bileşen kategorileriyle kullanmanın, bileşenin güvenli olduğunu belirtmenin alternatif bir yolu olduğunu unutmayın.
 
-**İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -77,11 +77,11 @@ Bu Not [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) makrosu C
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlctl.h
+**Üstbilgi:** atlctl.h
 
-##  <a name="getinterfacesafetyoptions"></a>  IObjectSafetyImpl::GetInterfaceSafetyOptions
+## <a name="iobjectsafetyimplgetinterfacesafetyoptions"></a><a name="getinterfacesafetyoptions"></a>IObjectSafetyImpl::GetInterfaceSafetyOptions
 
-Nesne için ayarlanmış güvenlik seçenekleri yanı sıra, nesne tarafından desteklenen güvenlik seçeneklerini alır.
+Nesne tarafından desteklenen güvenlik seçeneklerinin yanı sıra nesne için şu anda ayarlanan güvenlik seçeneklerini de alır.
 
 ```
 HRESULT GetInterfaceSafetyOptions(
@@ -92,24 +92,24 @@ HRESULT GetInterfaceSafetyOptions(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama nesnesinin uygulama tarafından desteklenen herhangi bir arabirimde için uygun değerleri döndürür `IUnknown::QueryInterface`.
+Uygulama, nesnenin uygulanması tarafından desteklenen herhangi bir arabirim `IUnknown::QueryInterface`için uygun değerleri döndürür.
 
 > [!IMPORTANT]
->  Destekleyen herhangi bir nesne `IObjectSafety` kendi güvenlik ve, herhangi bir nesnenin, temsilciler için sorumludur. Programcı gerekir kullanıcının bağlamında bir kod çalıştırmasını doğan hesabı sorunlarla alın, siteler arası betik oluşturma ve uygun alan denetimi gerçekleştirin.
+> Destekleyen `IObjectSafety` herhangi bir nesne kendi güvenliğinden ve devrettiği herhangi bir nesneden sorumludur. Programcı, kullanıcı bağlamında kod çalıştıran, site arası komut dosyası oluşturma dan kaynaklanan sorunları dikkate almak ve uygun bölge denetimi gerçekleştirmek gerekir.
 
-Bkz: [IObjectSafety::GetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) Windows SDK içinde.
+Bkz. [IObjectSafety::Windows](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) SDK'da GetInterfaceSafetyOptions.
 
-##  <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety
+## <a name="iobjectsafetyimplm_dwcurrentsafety"></a><a name="m_dwcurrentsafety"></a>IObjectSafetyImpl::m_dwCurrentSafety
 
-Nesnenin geçerli güvenlik düzeyi depolar.
+Nesnenin geçerli güvenlik düzeyini depolar.
 
 ```
 DWORD m_dwCurrentSafety;
 ```
 
-##  <a name="setinterfacesafetyoptions"></a>  IObjectSafetyImpl::SetInterfaceSafetyOptions
+## <a name="iobjectsafetyimplsetinterfacesafetyoptions"></a><a name="setinterfacesafetyoptions"></a>IObjectSafetyImpl::SetInterfaceSafetyOptions
 
-Nesne başlatma veya ayarlayarak komut dosyası için güvenli hale getirir [m_dwCurrentSafety](#m_dwcurrentsafety) uygun değere üyesi.
+[m_dwCurrentSafety](#m_dwcurrentsafety) üyeyi uygun değere ayarlayarak nesneyi başlatma veya komut dosyası oluşturma için güvenli hale getirir.
 
 ```
 HRESULT SetInterfaceSafetyOptions(
@@ -120,14 +120,14 @@ HRESULT SetInterfaceSafetyOptions(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnenin uygulaması tarafından desteklenmeyen herhangi bir arabirim için e_noınterface uygulamasını döndürür `IUnknown::QueryInterface`.
+Uygulama, nesnenin uygulanması tarafından desteklenmeyen herhangi bir `IUnknown::QueryInterface`arabirim için E_NOINTERFACE döndürür.
 
 > [!IMPORTANT]
->  Destekleyen herhangi bir nesne `IObjectSafety` kendi güvenlik ve, herhangi bir nesnenin, temsilciler için sorumludur. Programcı gerekir kullanıcının bağlamında bir kod çalıştırmasını doğan hesabı sorunlarla alın, siteler arası betik oluşturma ve uygun alan denetimi gerçekleştirin.
+> Destekleyen `IObjectSafety` herhangi bir nesne kendi güvenliğinden ve devrettiği herhangi bir nesneden sorumludur. Programcı, kullanıcı bağlamında kod çalıştıran, site arası komut dosyası oluşturma dan kaynaklanan sorunları dikkate almak ve uygun bölge denetimi gerçekleştirmek gerekir.
 
-Bkz: [IObjectSafety::SetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225\(v=vs.85\)) Windows SDK içinde.
+Bkz. [IObjectSafety::SetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225\(v=vs.85\)) Windows SDK içinde.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IObjectSafety arabirimi](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224\(v=vs.85\))<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[IObjectSafety Arayüzü](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224\(v=vs.85\))<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

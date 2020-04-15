@@ -1,5 +1,5 @@
 ---
-title: Iatlautothreadmodule sınıfı
+title: IAtlAutoThreadModule Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IAtlAutoThreadModule
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - IAtlAutoThreadModule class
 ms.assetid: fcb58cf9-a427-4be9-89eb-04e1ab5cc3a1
-ms.openlocfilehash: f65ce43f3e88e1bbff0d2fc012b4ca75d77efc80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4528ca4e4d72518f4da9f30e7aa71d951ddaf5b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276373"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330067"
 ---
-# <a name="iatlautothreadmodule-class"></a>Iatlautothreadmodule sınıfı
+# <a name="iatlautothreadmodule-class"></a>IAtlAutoThreadModule Sınıfı
 
-Bu sınıf için bir arabirimi temsil eder bir `CreateInstance` yöntemi.
+Bu sınıf bir `CreateInstance` yöntemiçin bir arabirimi temsil eder.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,12 +29,12 @@ __interface IAtlAutoThreadModule
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) türetildiği `IAtlAutoThreadModule`, nesne oluşturma ve bir arabirim işaretçisini almak için kod sağlamak için kullanma.
+[CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) `IAtlAutoThreadModule`sınıfı, bir nesne oluşturmak ve bir arabirim işaretçisi almak için kod sağlamak için kullanarak türetilmiştir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

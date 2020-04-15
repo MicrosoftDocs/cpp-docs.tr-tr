@@ -1,5 +1,5 @@
 ---
-title: Ccomqıptrelementtraits sınıfı
+title: CComQIPtrElementTraits Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComQIPtrElementTraits
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComQIPtrElementTraits class
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-ms.openlocfilehash: 42662a971f5d293cff404ca1eda161a3b87b13b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19f2669c157310be02f746672b22f6c0ed005075
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246175"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327405"
 ---
-# <a name="ccomqiptrelementtraits-class"></a>Ccomqıptrelementtraits sınıfı
+# <a name="ccomqiptrelementtraits-class"></a>CComQIPtrElementTraits Sınıfı
 
-Bu sınıf, yöntem, statik işlevler ve tür tanımları yararlı COM arabirim işaretçilerini koleksiyonları oluştururken sağlar.
+Bu sınıf yöntemleri, statik işlevleri sağlar ve COM arabirim işaretçileri koleksiyonları oluştururken yararlı typedefs.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,29 +29,29 @@ class CComQIPtrElementTraits :
 
 #### <a name="parameters"></a>Parametreler
 
-*I*<br/>
-Depolanacak işaretçi türü belirten bir COM arabirimi.
+*Ⅰ*<br/>
+Depolanacak işaretçi türünü belirten bir COM arabirimi.
 
 *piid*<br/>
-Laboratuvardaki işaretçisi *miyim*.
+*IID*için bir işaretçi .
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComQIPtrElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|
+|[CComQIPtrElementÖzellikleri::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf yöntemleri türetilir ve bir koleksiyon sınıfının oluştururken kullanışlı bir typedef sağlar [CComQIPtr](../../atl/reference/ccomqiptr-class.md) COM arabirimi işaretçisini nesneleri. Bu sınıf tarafından kullanılan [Cınterfacearray](../../atl/reference/cinterfacearray-class.md) ve [Cınterfacelist](../../atl/reference/cinterfacelist-class.md) sınıfları.
+Bu sınıf yöntemleri türetilmiştir ve [CComQIPtr](../../atl/reference/ccomqiptr-class.md) COM arabirim işaretçisi nesnelerinbir toplama sınıfı oluştururken yararlı bir typedef sağlar. Bu sınıf hem [CInterfaceArray](../../atl/reference/cinterfacearray-class.md) hem de [CInterfaceList](../../atl/reference/cinterfacelist-class.md) sınıfları tarafından kullanılır.
 
-Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
+[CDefaultCompareÖzellikler](../../atl/reference/cdefaultcomparetraits-class.md)
 
 [CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)
 
@@ -63,11 +63,11 @@ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-cl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="inargtype"></a>  CComQIPtrElementTraits::INARGTYPE
+## <a name="ccomqiptrelementtraitsinargtype"></a><a name="inargtype"></a>CComQIPtrElementÖzellikleri::INARGTYPE
 
-Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.
+Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.
 
 ```
 typedef I* INARGTYPE;
@@ -76,4 +76,4 @@ typedef I* INARGTYPE;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

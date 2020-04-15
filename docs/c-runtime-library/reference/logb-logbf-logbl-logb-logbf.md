@@ -1,12 +1,17 @@
 ---
 title: logb, logbf, logbl, _logb, _logbf
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - logb
 - _logb
 - _logbl
 - logbf
+- _logbf
 - logbl
+- _o__logb
+- _o_logb
+- _o_logbf
+- _o_logbl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,6 +24,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -41,16 +47,16 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-ms.openlocfilehash: c5fc59f786b00dcf4ab1056424d8442a03f3adbf
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1fe34a6661f768bbe22838eedb1914f7d21e31a7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81341678"
 ---
 # <a name="logb-logbf-logbl-_logb-_logbf"></a>logb, logbf, logbl, _logb, _logbf
 
-Kayan nokta bağımsız değişkeninin üs değerini ayıklar.
+Kayan nokta bağımsız değişkeninin üsdeğerini ayıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,36 +86,38 @@ float _logbf(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**logb** , kayan nokta değeri olarak temsil edilen işaretli bir tamsayı olarak *x* 'in taraflı olmayan üs değerini döndürür.
+**logb,** kayan nokta değeri olarak temsil edilen imzalı bir tamsayı olarak *x'in* tarafsız üs değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Logb** işlevleri, *x* sonsuz aralıkla gösterilse de kayan *nokta bağımsız değişkeninin*üstel değerini ayıklar. *X* bağımsız değişkeninin Normalleştirilmemiş olması halinde normalleştirilmiş gibi davranır.
+**Logb** işlevleri kayan nokta bağımsız değişkeni *x'in*üstel değerini, *sanki x* sonsuz aralıkla temsil edilmiş gibi ayıklar. *X* bağımsız değişkeni normale döndürürse, normalleştirilmiş gibi değerlendirilir.
 
-Aşırı C++ yüklemeye izin verdiğinden,, **float** veya **Long** **Double** değerleri alıp döndüren **logb** 'nin aşırı yüklerini çağırabilirsiniz. C programında **logb** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** değerleri alan ve döndüren **logb** aşırı yüklerini arayabilirsiniz. C programında, **logb** her zaman alır ve bir **çift**döndürür.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durum|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Yok.|_DOMAIN|
-|± 0|SIFIR BÖLME|_SING|
+|± QNAN,IND|None|_DOMAIN|
+|± 0|SIFIR BÖL|_SING|
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_logb**|\<float. h >|
-|**logb**, **logbf**, **logbl**, **_logbf**|\<Math. h >|
+|**_logb**|\<float.h>|
+|**logb**, **logbf**, **logbl**, **_logbf**|\<math.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

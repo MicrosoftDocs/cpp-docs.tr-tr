@@ -1,8 +1,9 @@
 ---
 title: rand
-ms.date: 01/02/2018
+ms.date: 4/2/2020
 api_name:
 - rand
+- _o_rand
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +17,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +31,16 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 6042ab917083cf4131c16012b84afbbe43a7d834
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 944c512d0102b459afc2924ef7515311e46cd43c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949548"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338156"
 ---
 # <a name="rand"></a>rand
 
-İyi bilinen ve tamamen tekrarlanabilir bir algoritma kullanarak bir pseudportaıdom numarası üretir. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz. [rand_s](rand-s.md). **S_SAYI_ÜRET** tarafından oluşturulan sayılar şifreli olarak güvenli değildir. Daha fazla şifreli rastgele sayı üretimi için, [rand_s](rand-s.md) veya C++ [ \<](../../standard-library/random.md)standart kitaplıkta belirtilen işlevleri rastgele > kullanın.
+Tanınmış ve tamamen tekrarlanabilir bir algoritma kullanarak pseudorandom bir sayı oluşturur. Bu işlevin daha programlı güvenli bir sürümü mevcuttur; [bkz. rand_s](rand-s.md). **Rand** tarafından oluşturulan sayılar şifreleme olarak güvenli değildir. Daha kriptografik olarak güvenli rasgele sayı üretimi için, [rand_s'ı](rand-s.md) veya [ \< ](../../standard-library/random.md)C++ Standart Kitaplığı'nda rasgele>olarak bildirilen işlevleri kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,21 +50,23 @@ int rand( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**S_SAYI_ÜRET** , yukarıda açıklandığı gibi pseudportaıdom numarasını döndürür. Hata döndürme yok.
+**rand** yukarıda açıklandığı gibi pseudorandom bir sayı döndürür. Hata iadesi yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**S_SAYI_ÜRET** işlevi, 0 ile **RAND_MAX** (32767) aralığında bir pseudportaıdom tamsayı döndürür. **S_SAYI_ÜRET**çağrılmadan önce pseudportadom-Number üreticisini temel almak için [srand](srand.md) işlevini kullanın.
+**Rand** işlevi 0 ile **RAND_MAX** aralığında bir psödorandom tamsayı döndürür (32767). Rand'i aramadan önce psödorastgele sayı **rand**üretecisini tohumlamak için [kum](srand.md) işlevini kullanın.
 
-**S_SAYI_ÜRET** işlevi iyi bilinen bir dizi oluşturur ve şifreleme işlevi olarak kullanım için uygun değildir. Daha fazla şifreli rastgele sayı üretimi için, [rand_s](rand-s.md) veya C++ [ \<](../../standard-library/random.md)standart kitaplıkta belirtilen işlevleri rastgele > kullanın. **S_SAYI_ÜRET** ile ilgili nelerin yanlış olduğu ve rastgele > Bu \<eksiklikleri nasıl ele aldığı hakkında bilgi için bkz. [S_SAYI_ÜRET 'in zararlı olduğu kabul edilen](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)bu video.
+**Rand** işlevi iyi bilinen bir sıra oluşturur ve şifreleme işlevi olarak kullanmak için uygun değildir. Daha kriptografik olarak güvenli rasgele sayı üretimi için, [rand_s'ı](rand-s.md) veya [ \< ](../../standard-library/random.md)C++ Standart Kitaplığı'nda rasgele>olarak bildirilen işlevleri kullanın. **Rand'in** nesi olduğu ve rasgele \<> bu eksiklikleri nasıl giderdi hakkında bilgi için [rand Considered Harmful](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)başlıklı bu videoya bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rand**|\<Stdlib. h >|
+|**Rand**|\<stdlib.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

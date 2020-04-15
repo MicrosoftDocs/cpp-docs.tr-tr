@@ -1,5 +1,5 @@
 ---
-title: CSimpleMapEqualHelperFalse sınıfı
+title: CSimpleMapEqualHelperFalse Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleMapEqualHelperFalse
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMapEqualHelperFalse class
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-ms.openlocfilehash: 9c4241049ad323047f06c0b29f946521f2c02167
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6bf1d4e3be849004e13e593fb5f4b5cb87f8123
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330742"
 ---
-# <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse sınıfı
+# <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse Sınıfı
 
-Bu sınıf için Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı.
+Bu sınıf [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı için bir yardımcıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,24 +31,24 @@ class CSimpleMapEqualHelperFalse
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleMapEqualHelperFalse::IsEqualKey](#isequalkey)|(Statik) İki anahtar eşitlik için test eder.|
-|[CSimpleMapEqualHelperFalse::IsEqualValue](#isequalvalue)|(Statik) Yanlış değerini döndürür.|
+|[CSimpleMapEqualHelperFalse::IsEqualKey](#isequalkey)|(Statik) Eşitlik için iki anahtar test ediyor.|
+|[CSimpleMapEqualHelperFalse::IsEqualValue](#isequalvalue)|(Statik) Yanlış döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu nitelikler sınıfı için bir ektir `CSimpleMap` sınıfı. İçindeki iki öğe karşılaştırmak için bir yöntem sağlar `CSimpleMap` nesne, özellikle iki değer öğe veya iki temel öğeleri.
+Bu özellikler sınıfı `CSimpleMap` sınıfın bir ekidir. Nesnede bulunan iki öğeyi, özellikle `CSimpleMap` iki değer öğesini veya iki anahtar öğeyi karşılaştırmak için bir yöntem sağlar.
 
-Değer karşılaştırma her zaman false döndürür ve ayrıca, çağıran `ATLASSERT` bağımsız hiç olmadığı kadar başvurulan yoksa false. Burada eşitlik testi yeterince tanımlı değil durumlarda, bu sınıf için çoğu yöntemleri doğru şekilde çalışmaz, ancak üzerinde karşılaştırmalar gibi bağlı yöntemler için iyi tanımlanmış bir şekilde başarısız için anahtar/değer çiftleri içeren bir eşleme sağlar. [CSimpleMap:: FindVal](../../atl/reference/csimplemap-class.md#findval).
+Değer karşılaştırması her zaman yanlış döndürecek `ATLASSERT` ve buna ek olarak, hiç başvurulmuşsa yanlış bir argüman ile çağırır. Eşitlik testinin yeterince tanımlanmamış olduğu durumlarda, bu sınıf anahtar/değer çiftleri içeren bir haritanın çoğu yöntem için doğru çalışmasına izin verir, ancak [CSimpleMap::FindVal](../../atl/reference/csimplemap-class.md#findval)gibi karşılaştırmalara bağlı yöntemler için iyi tanımlanmış bir şekilde başarısız olur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atlsimpcoll.h
 
-##  <a name="isequalkey"></a>  CSimpleMapEqualHelperFalse::IsEqualKey
+## <a name="csimplemapequalhelperfalseisequalkey"></a><a name="isequalkey"></a>CSimpleMapEqualHelperFalse::IsEqualKey
 
-İki anahtar eşitlik için test eder.
+Eşitlik için iki anahtar test ediyor.
 
 ```
 static bool IsEqualKey(const TKey& k1, const TKey& k2);
@@ -56,21 +56,21 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="parameters"></a>Parametreler
 
-*K1*<br/>
+*k1*<br/>
 İlk anahtar.
 
-*K2*<br/>
-İkinci anahtarı.
+*k2*<br/>
+İkinci anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtarları false, eşitse true döndürür.
+Anahtarlar eşitse doğru döndürür, aksi takdirde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md).
+Bu yöntem [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md)çağırır.
 
-##  <a name="isequalvalue"></a>  CSimpleMapEqualHelperFalse::IsEqualValue
+## <a name="csimplemapequalhelperfalseisequalvalue"></a><a name="isequalvalue"></a>CSimpleMapEqualHelperFalse::IsEqualValue
 
 Yanlış değerini döndürür.
 
@@ -84,9 +84,9 @@ Yanlış değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız hiç olmadığı kadar başvurulan yoksa false. Amacı `CSimpleMapEqualHelperFalse::IsEqualValue` yöntemleri karşılaştırmalar eşitliği testleri yeterince tanımlanmamış iyi tanımlanmış bir şekilde başarısız kullanmayı zorlamak için.
+Bu yöntem her zaman yanlış `ATLASSERT` döndürür ve hiç başvurulmuşsa false bağımsız değişkeni ile çağırır. Bunun `CSimpleMapEqualHelperFalse::IsEqualValue` amacı, eşitlik testleri yeterince tanımlanmamışken karşılaştırmaları kullanarak yöntemleri iyi tanımlanmış bir şekilde başarısız olmaya zorlamaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CSimpleMapEqualHelper Sınıfı](../../atl/reference/csimplemapequalhelper-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

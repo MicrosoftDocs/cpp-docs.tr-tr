@@ -1,8 +1,9 @@
 ---
 title: _getw
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _getw
+- _o__getw
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-ms.openlocfilehash: ad03c92ce90542ecae13609ee228ad094f64fc07
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: eddb68ae6108c8a66966472cebca60a9969b78d1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954884"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344158"
 ---
 # <a name="_getw"></a>_getw
 
-Akıştan bir tamsayı alır.
+Bir akıştan bir tamsayı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,24 +49,26 @@ int _getw(
 
 ### <a name="parameters"></a>Parametreler
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısına işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_getw** okunan tamsayı değerini döndürür. **EOF** dönüş değeri bir hata ya da dosya sonunu gösterir. Ancak, **EOF** değeri de yasal bir tamsayı değeri olduğundan, dosya sonu veya hata koşulunu doğrulamak için **feof** veya **ferror** kullanın. *Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EOF**döndürür.
+**_getw,** okunan tamsayı değerini döndürür. **EOF'nin** iade değeri bir hatayı veya dosya sonunu gösterir. Ancak, **EOF** değeri de yasal bir tamsayı değeri olduğundan, dosya sonu veya hata durumunu doğrulamak için **feof** veya **ferror** kullanın. *Akış* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev **EOF**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getw** işlevi, *Stream* ile ilişkili dosyadan **int** türünde bir sonraki ikili değeri okur ve sonraki okunmamış karakteri işaret eden ilişkili dosya işaretçisini (varsa) artırır. **_getw** akıştaki öğelerin herhangi bir özel hizalamasını varsaymaz. **İnt** türünün boyutu ve **int** türü içindeki bayt sıralaması sistemler arasında farklı olduğundan, taşıma ile ilgili sorunlar **_getw** ile oluşabilir.
+**_getw** *işlevi, akışla* ilişkili dosyadan tür **int'in** bir sonraki ikili değerini okur ve bir sonraki okunmamış karaktere işaret etmek için ilişkili dosya işaretçisini (varsa) artışlar. **_getw** akıştaki öğelerin özel bir hizalamasını kabul etmez. **Int** türündeki baytların boyutu ve bayt ların sıralanması sistemler arasında **int** farklılık gösterir. **_getw**
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getw**|\<stdio. h >|
+|**_getw**|\<stdio.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -101,14 +105,14 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_getwtxt"></a>Giriş: crt_getw. txt
+### <a name="input-crt_getwtxt"></a>Giriş: crt_getw.txt
 
 ```Input
 Line one.
 Line two.
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 First data word in file: 0x656e694c
@@ -116,5 +120,5 @@ First data word in file: 0x656e694c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_putw](putw.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CWin32Heap sınıfı
+title: CWin32Heap Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWin32Heap
@@ -16,19 +16,19 @@ f1_keywords:
 helpviewer_keywords:
 - CWin32Heap class
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
-ms.openlocfilehash: ce3585310198ee3e2d7b2b8b829f4202b1021284
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fbdb77e7f52e858401c87e1cd8782b59cc6ebcea
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496195"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330467"
 ---
-# <a name="cwin32heap-class"></a>CWin32Heap sınıfı
+# <a name="cwin32heap-class"></a>CWin32Heap Sınıfı
 
-Bu sınıf, Win32 yığın ayırma işlevlerini kullanarak [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) uygular.
+Bu sınıf Win32 yığın ayırma işlevlerini kullanarak [IAtlMemmgr](../../atl/reference/iatlmemmgr-class.md) uygular.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,36 +40,36 @@ class CWin32Heap : public IAtlMemMgr
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWin32Heap:: CWin32Heap](#cwin32heap)|Oluşturucu.|
-|[CWin32Heap:: ~ CWin32Heap](#dtor)|Yok edicisi.|
+|[CWin32Heap::CWin32Heap](#cwin32heap)|Oluşturucu.|
+|[CWin32Heap::~CWin32Heap](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWin32Heap:: allocate](#allocate)|Yığın nesnesinden bir bellek bloğu ayırır.|
-|[CWin32Heap:: Attach](#attach)|Yığın nesnesini var olan bir yığına iliştirir.|
-|[CWin32Heap::D etach](#detach)|Yığın nesnesini var olan bir yığından ayırır.|
-|[CWin32Heap:: Free](#free)|Daha önce yığından ayrılmış belleği serbest bırakır.|
-|[CWin32Heap:: GetSize](#getsize)|Yığın nesnesinden ayrılan bellek bloğunun boyutunu döndürür.|
-|[CWin32Heap:: yeniden tahsis](#reallocate)|Yığın nesnesinden bir bellek bloğunu yeniden konumlandırır.|
+|[CWin32Heap::Ayırma](#allocate)|Yığın nesnesinden bir bellek bloğu ayırır.|
+|[CWin32Heap::Ekle](#attach)|Yığın nesnesini varolan bir yığına bağlar.|
+|[CWin32Heap::Detach](#detach)|Yığın nesnesini varolan bir yığından ayırır.|
+|[CWin32Heap::Ücretsiz](#free)|Daha önce yığından ayrılan belleği boşaltıyor.|
+|[CWin32Heap::GetSize](#getsize)|Yığın nesnesinden ayrılan bellek bloğunun boyutunu döndürür.|
+|[CWin32Heap::Yer tahsisi](#reallocate)|Yığın nesnesinden bellek bloğunu yeniden tahsis eder.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWin32Heap:: m_bOwnHeap](#m_bownheap)|Yığın tanıtıcısının geçerli sahipliğini belirlemede kullanılan bayrak.|
-|[CWin32Heap:: m_hHeap](#m_hheap)|Yığın nesnesine işleyin.|
+|[CWin32Heap::m_bOwnHeap](#m_bownheap)|Yığın tutamacının geçerli sahipliğini belirlemek için kullanılan bir bayrak.|
+|[CWin32Heap::m_hHeap](#m_hheap)|Yığın nesnesine işle.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CWin32Heap`, Heapallocation ve [HeapFree](/windows/win32/api/heapapi/nf-heapapi-heapfree)dahil olmak üzere Win32 yığın ayırma [](/windows/win32/api/heapapi/nf-heapapi-heapalloc) işlevlerini kullanarak bellek ayırma yöntemlerini uygular. Diğer yığın sınıflarının aksine, `CWin32Heap` bellek ayrıönüne alınmadan önce geçerli bir yığın tanıtıcısının sağlanması gerekir: diğer sınıflar işlem yığınını kullanmak için varsayılan değer. Tanıtıcı oluşturucuya veya [CWin32Heap:: Attach](#attach) yöntemine sağlanabilir. Daha fazla ayrıntı için [CWin32Heap:: CWin32Heap](#cwin32heap) yöntemine bakın.
+`CWin32Heap`[HeapAlloc](/windows/win32/api/heapapi/nf-heapapi-heapalloc) ve [HeapFree](/windows/win32/api/heapapi/nf-heapapi-heapfree)dahil olmak üzere Win32 yığın ayırma işlevlerini kullanarak bellek ayırma yöntemleri uygular. Diğer Yığın sınıflarının `CWin32Heap` aksine, bellek ayrılmadan önce sağlanacak geçerli bir yığın tutamacı gerektirir: diğer sınıflar işlem yığınını kullanmaktan varsayılan olarak. Tutamaç oluşturucuya veya [CWin32Heap'a sağlanabilir::Ekle](#attach) yöntemi. Daha fazla bilgi için [CWin32Heap::CWin32Heap](#cwin32heap) yöntemine bakın.
 
 ## <a name="example"></a>Örnek
 
-[IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
+[IAtlMemmgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -79,9 +79,9 @@ class CWin32Heap : public IAtlMemMgr
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlmem. h
+**Üstbilgi:** atlmem.h
 
-##  <a name="allocate"></a>CWin32Heap:: allocate
+## <a name="cwin32heapallocate"></a><a name="allocate"></a>CWin32Heap::Ayırma
 
 Yığın nesnesinden bir bellek bloğu ayırır.
 
@@ -91,22 +91,22 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*<br/>
+*nBayt*<br/>
 Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğuna bir işaretçi döndürür.
+Bir işaretçiyi yeni ayrılan bellek bloğuna döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CWin32Heap:: Free](#free) veya [CWin32Heap::](#reallocate) Call olarak yeniden tahsis edin.
+[CWin32Heap'ı Arayın::Ücretsiz](#free) veya [CWin32Heap::Bu](#reallocate) yöntemle ayrılan belleği serbest etmek için yeniden bulunun.
 
-[Heapayırma](/windows/win32/api/heapapi/nf-heapapi-heapalloc)kullanılarak uygulanır.
+[HeapAlloc](/windows/win32/api/heapapi/nf-heapapi-heapalloc)kullanılarak uygulanır.
 
-##  <a name="attach"></a>CWin32Heap:: Attach
+## <a name="cwin32heapattach"></a><a name="attach"></a>CWin32Heap::Ekle
 
-Yığın nesnesini var olan bir yığına iliştirir.
+Yığın nesnesini varolan bir yığına bağlar.
 
 ```
 void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
@@ -115,16 +115,16 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 ### <a name="parameters"></a>Parametreler
 
 *hHeap*<br/>
-Var olan bir yığın tanıtıcısı.
+Varolan bir yığın tutamacı.
 
-*Btakesahiplik*<br/>
-`CWin32Heap` Nesnenin, yığının kaynakları üzerinde sahiplik alıp atlamadığını belirten bir bayrak.
+*bTakeOwnership*<br/>
+Nesnenin yığının `CWin32Heap` kaynakları üzerinde sahiplik almak olup olmadığını belirten bir bayrak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Btakesahiplik* true `CWin32Heap` ise nesne, yığın tanıtıcısının silinmesinden sorumludur.
+*bTakeOwnership* TRUE ise, `CWin32Heap` nesne yığın tutamacını silmesinden sorumludur.
 
-##  <a name="cwin32heap"></a>CWin32Heap:: CWin32Heap
+## <a name="cwin32heapcwin32heap"></a><a name="cwin32heap"></a>CWin32Heap::CWin32Heap
 
 Oluşturucu.
 
@@ -142,10 +142,10 @@ CWin32Heap(
 *hHeap*<br/>
 Varolan bir yığın nesnesi.
 
-*dwFlags*<br/>
+*Dwflags*<br/>
 Yığını oluşturmak için kullanılan bayraklar.
 
-*Nınitialsize*<br/>
+*nInitialSize*<br/>
 Yığının ilk boyutu.
 
 *nMaxSize*<br/>
@@ -153,25 +153,25 @@ Yığının maksimum boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belleği ayırmadan önce, `CWin32Heap` nesnenin geçerli bir yığın tanıtıcısı sağlaması gerekir. Bunu başarmanın en kolay yolu, işlem yığınını kullanmaktır:
+Belleği ayırmadan önce, `CWin32Heap` nesneye geçerli bir yığın tutamacı sağlamak gerekir. Bunu başarmanın en kolay yolu, işlem yığınını kullanmaktır:
 
 [!code-cpp[NVC_ATL_Utilities#92](../../atl/codesnippet/cpp/cwin32heap-class_1.cpp)]
 
-Oluşturucuya varolan bir yığın tanıtıcısını sağlamak da mümkündür, fakat bu durumda yeni nesne yığının sahipliğini üstlenmez. Özgün yığın tanıtıcısı, `CWin32Heap` nesne silindiğinde geçerli olmaya devam edecektir.
+Oluşturucuya varolan bir yığın tanıtıcısını sağlamak da mümkündür, fakat bu durumda yeni nesne yığının sahipliğini üstlenmez. `CWin32Heap` Nesne silindiğinde özgün yığın tutamacı yine de geçerli olacaktır.
 
-Var olan bir yığın, [CWin32Heap:: Attach](#attach)kullanılarak yeni nesneye de iliştirilebilir.
+Varolan bir yığın da [CWin32Heap](#attach)kullanarak, yeni nesneye eklenebilir::Ekle.
 
 Tüm işlemlerin tek bir iş parçacığından gerçekleştirildiği durumda yığın gerekliyse, nesneyi oluşturmanın en iyi yolu şudur:
 
 [!code-cpp[NVC_ATL_Utilities#93](../../atl/codesnippet/cpp/cwin32heap-class_2.cpp)]
 
-HEAP_NO_SERIALIZE parametresi, yığın işlevleri bellek ayırır ve serbest bırakıldığında, performansa göre bir artış olduğunda karşılıklı dışlamanın kullanılmayacağını belirtir.
+Parametre HEAP_NO_SERIALIZE, yığın işlevleri tahsis edildiğinde karşılıklı dışlamanın kullanılmayacağını ve performansta buna göre bir artış olacağını belirtir.
 
-Üçüncü parametre varsayılan olarak 0'a ayarlanır ve bu da yığının istenen şekilde büyümesine izin verir. Bellek boyutlarının ve bayrakların açıklaması için bkz. [HeapCreate](/windows/win32/api/heapapi/nf-heapapi-heapcreate) .
+Üçüncü parametre varsayılan olarak 0'a ayarlanır ve bu da yığının istenen şekilde büyümesine izin verir. Bellek boyutları ve bayraklarıhakkında bir açıklama için [HeapCreate'e](/windows/win32/api/heapapi/nf-heapapi-heapcreate) bakın.
 
-##  <a name="dtor"></a>CWin32Heap:: ~ CWin32Heap
+## <a name="cwin32heapcwin32heap"></a><a name="dtor"></a>CWin32Heap::~CWin32Heap
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CWin32Heap() throw();
@@ -179,11 +179,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CWin32Heap` Nesne yığının sahipliğini içeriyorsa yığın tanıtıcısını yok eder.
+Nesne yığının mülkiyetine `CWin32Heap` sahipse yığın tutamacını yok eder.
 
-##  <a name="detach"></a>CWin32Heap::D etach
+## <a name="cwin32heapdetach"></a><a name="detach"></a>CWin32Heap::Detach
 
-Yığın nesnesini var olan bir yığından ayırır.
+Yığın nesnesini varolan bir yığından ayırır.
 
 ```
 HANDLE Detach() throw();
@@ -191,11 +191,11 @@ HANDLE Detach() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenin daha önce eklendiği yığına olan tanıtıcıyı döndürür.
+Tutamacı nesnenin daha önce eklendiği yığına döndürür.
 
-##  <a name="free"></a>CWin32Heap:: Free
+## <a name="cwin32heapfree"></a><a name="free"></a>CWin32Heap::Ücretsiz
 
-[CWin32Heap:: allocate](#allocate) veya [CWin32Heap::](#reallocate)allocate tarafından yığından daha önce ayrılan belleği boşaltır.
+Daha önce [CWin32Heap](#allocate) tarafından yığın dan ayrılan belleği boşaltıyor::Allocate veya [CWin32Heap::Yer.](#reallocate)
 
 ```
 virtual void Free(void* p) throw();
@@ -203,10 +203,10 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Boşaltılacak bellek bloğunun işaretçisi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
+*P*<br/>
+Özgür bellek bloğuna işaretçi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
 
-##  <a name="getsize"></a>CWin32Heap:: GetSize
+## <a name="cwin32heapgetsize"></a><a name="getsize"></a>CWin32Heap::GetSize
 
 Yığın nesnesinden ayrılan bellek bloğunun boyutunu döndürür.
 
@@ -216,24 +216,24 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Yöntemi yöntemin elde edileceği bellek bloğunun işaretçisi. Bu, [CWin32Heap:: allocate](#allocate) veya [CWin32Heap:: yeniden tahsis](#reallocate)tarafından döndürülen bir işaretçisidir.
+*P*<br/>
+Yöntemin alacağı boyutu bellek bloğuna işaretçi. Bu [CWin32Heap](#allocate) tarafından döndürülen bir işaretçi::Allocate veya [CWin32Heap::Emlakçılık](#reallocate).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek bloğunun bayt cinsinden boyutunu döndürür.
+Ayrılan bellek bloğunun boyutunu baytolarak döndürür.
 
-##  <a name="m_bownheap"></a>CWin32Heap:: m_bOwnHeap
+## <a name="cwin32heapm_bownheap"></a><a name="m_bownheap"></a>CWin32Heap::m_bOwnHeap
 
-[M_hHeap](#m_hheap)içinde depolanan yığın tanıtıcısının geçerli sahipliğini belirlemede kullanılan bayrak.
+[m_hHeap](#m_hheap)depolanan yığın tutamacının geçerli sahipliğini belirlemek için kullanılan bir bayrak.
 
 ```
 bool m_bOwnHeap;
 ```
 
-##  <a name="m_hheap"></a>CWin32Heap:: m_hHeap
+## <a name="cwin32heapm_hheap"></a><a name="m_hheap"></a>CWin32Heap::m_hHeap
 
-Yığın nesnesine işleyin.
+Yığın nesnesine işle.
 
 ```
 HANDLE m_hHeap;
@@ -241,11 +241,11 @@ HANDLE m_hHeap;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığın nesnesine bir tutamacı depolamak için kullanılan değişken.
+Bir tutamacı yığın nesnesine depolamak için kullanılan bir değişken.
 
-##  <a name="reallocate"></a>CWin32Heap:: yeniden tahsis
+## <a name="cwin32heapreallocate"></a><a name="reallocate"></a>CWin32Heap::Yer tahsisi
 
-Yığın nesnesinden bir bellek bloğunu yeniden konumlandırır.
+Yığın nesnesinden bellek bloğunu yeniden tahsis eder.
 
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
@@ -253,23 +253,23 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Yeniden ayrılacak bellek bloğunun işaretçisi.
+*P*<br/>
+Yeniden tahsis etmek için bellek bloğuna işaretçi.
 
-*nBytes*<br/>
-Ayrılan bloğun bayt cinsinden yeni boyutu. Blok daha büyük veya daha küçük olabilir.
+*nBayt*<br/>
+Ayrılan bloğun baytlarında yeni boyut. Blok daha büyük veya daha küçük yapılabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğuna bir işaretçi döndürür.
+Bir işaretçiyi yeni ayrılan bellek bloğuna döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*P* null ise, bellek bloğunun henüz ayrılmadığı varsayılır ve [CWin32Heap:: allocate](#allocate) , *nBytes*bağımsız değişkeniyle birlikte çağırılır.
+*p* NULL ise, bellek bloğu henüz tahsis edilmemiştir ve [CWin32Heap varsayılır::Ayırma](#allocate) *nBytes*bir argüman ile çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [IAtlMemMgr Sınıfı](../../atl/reference/iatlmemmgr-class.md)<br/>
 [CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>
 [CGlobalHeap Sınıfı](../../atl/reference/cglobalheap-class.md)<br/>

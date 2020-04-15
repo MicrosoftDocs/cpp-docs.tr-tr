@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonBar sınıfı
+title: CMFCRibbonBar Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonBar
@@ -188,18 +188,18 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], ToggleMimimizeState
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
-ms.openlocfilehash: 3656b6a135757a4658f2ef08b80a54efffe89012
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: cf3cb7a6e4bc4bc6c79265eb5138aca9fb55ce21
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420262"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81361436"
 ---
-# <a name="cmfcribbonbar-class"></a>CMFCRibbonBar sınıfı
+# <a name="cmfcribbonbar-class"></a>CMFCRibbonBar Sınıfı
 
-`CMFCRibbonBar` sınıfı, Office 2007 ' de kullanılanlara benzer bir şerit çubuğu uygular.
+Sınıf, `CMFCRibbonBar` Office 2007'de kullanılana benzer bir şerit çubuğu uygular.
 
-Daha fazla ayrıntı için, Visual Studio yüklemenizin **VC\\atlmfc\\src\\MFC** klasöründe bulunan kaynak koduna bakın.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -211,137 +211,137 @@ class CMFCRibbonBar : public CPane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonBar::CMFCRibbonBar`|Varsayılan Oluşturucu.|
+|`CMFCRibbonBar::CMFCRibbonBar`|Varsayılan oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonBar:: ActivateContextCategory](#activatecontextcategory)|Zaten görünür olan bir bağlam kategorisini etkinleştirir.|
-|[CMFCRibbonBar:: AddCategory](#addcategory)|Şerite yeni bir Şerit kategorisi ekler.|
-|[CMFCRibbonBar:: AddContextCategory](#addcontextcategory)|Bağlam kategorisi ekler.|
-|[CMFCRibbonBar:: AddMainCategory](#addmaincategory)|Yeni bir ana şerit kategorisi ekler.|
-|[CMFCRibbonBar:: Addprintönizleme kategorisi](#addprintpreviewcategory)||
-|[CMFCRibbonBar:: AddQATOnlyCategory](#addqatonlycategory)||
-|[CMFCRibbonBar:: Addtosekmeleri](#addtotabs)|Şerit çubuğunun sağ tarafına bir şerit öğesi ekleyin.|
-|[CMFCRibbonBar:: CreateEx](#createex)|Bir denetim çubuğu oluşturur ve bunu [CPane](../../mfc/reference/cpane-class.md) nesnesine ekler. ( [CPane:: CreateEx](../../mfc/reference/cpane-class.md#createex)geçersiz kılar.)|
-|[CMFCRibbonBar:: Create](#create)|Bir şerit çubuğu denetimi oluşturur ve bunu bir şerit çubuğuna iliştirir.|
-|[CMFCRibbonBar::D eactivateKeyboardFocus](#deactivatekeyboardfocus)||
-|[CMFCRibbonBar::D Rawmenuımage](#drawmenuimage)||
-|[CMFCRibbonBar::D Wmkompozisyontionchanged](#dwmcompositionchanged)||
-|[CMFCRibbonBar:: EnableKeyTips](#enablekeytips)|Şerit denetimi için önemli ipuçlarını etkinleştirin veya devre dışı bırakın.|
-|[CMFCRibbonBar:: EnablePrintPreview](#enableprintpreview)|**Baskı Önizleme** sekmesini etkinleştirin.|
-|[CMFCRibbonBar:: Enabletooltip 'ler](#enabletooltips)|Şerit çubuğunda araç ipuçlarını ve araç ipucu açıklamalarını etkinleştirilir veya devre dışı bırakır.|
-|[CMFCRibbonBar:: FindByData](#findbydata)|Kullanıcının belirttiği verileri kullanarak bir şerit öğesi bulun.|
-|[CMFCRibbonBar:: Findbyıd](#findbyid)|Belirtilen komut kimliğine sahip bir şerit öğesi bulur.|
-|[CMFCRibbonBar:: Findcategoryındexbydata](#findcategoryindexbydata)|Kullanıcı tanımlı verileri içeren Şerit kategorisinin dizinini bulur.|
-|[CMFCRibbonBar:: ForceRecalcLayout](#forcerecalclayout)||
-|[CMFCRibbonBar:: GetActiveCategory](#getactivecategory)|Etkin bir kategoriye yönelik bir işaretçi alır.|
-|[CMFCRibbonBar:: GetCaptionHeight](#getcaptionheight)|Başlık yüksekliğini döndürür. ( [CBasePane:: GetCaptionHeight](../../mfc/reference/cbasepane-class.md#getcaptionheight)değerini geçersiz kılar.)|
-|[CMFCRibbonBar:: GetCategory](#getcategory)|Belirtilen dizinde bulunan bir kategorinin işaretçisini alır.|
-|[CMFCRibbonBar:: GetCategoryCount](#getcategorycount)|Şerit çubuğundaki şerit kategorilerinin sayısını alır.|
-|[CMFCRibbonBar:: GetCategoryHeight](#getcategoryheight)||
-|[CMFCRibbonBar:: Getcategoryındex](#getcategoryindex)|Şerit kategorisinin dizinini döndürür.|
-|[CMFCRibbonBar:: GetContextName](#getcontextname)|KIMLIĞI kullanarak belirttiğiniz bağlam kategorisi yazısının adını alır.|
-|[CMFCRibbonBar:: Getdroppedaşağı](#getdroppeddown)||
-|[CMFCRibbonBar:: GetElementsById](#getelementsbyid)|Belirtilen KIMLIĞE sahip tüm şerit öğelerinin işaretçilerini içeren bir dizi alır.|
-|[CMFCRibbonBar:: GetApplicationButton](#getapplicationbutton)|Şerit düğmesine bir işaretçi alır.|
-|[CMFCRibbonBar:: Getodaklanmış](#getfocused)|Odaklanmış bir öğe döndürür.|
-|[CMFCRibbonBar:: GetHideFlags](#gethideflags)||
-|[CMFCRibbonBar:: Getıtemıdslist](#getitemidslist)||
-|[CMFCRibbonBar:: GetKeyboardNavigationLevel](#getkeyboardnavigationlevel)||
-|[CMFCRibbonBar:: GetKeyboardNavLevelCurrent](#getkeyboardnavlevelcurrent)||
-|[CMFCRibbonBar:: GetKeyboardNavLevelParent](#getkeyboardnavlevelparent)||
-|[CMFCRibbonBar:: GetMainCategory](#getmaincategory)|Seçili olan şerit kategorisine yönelik bir işaretçi döndürür.|
-|[CMFCRibbonBar:: GetQATCommandsLocation](#getqatcommandslocation)||
-|[CMFCRibbonBar:: Getqatdroppedaşağı](#getqatdroppeddown)||
-|[CMFCRibbonBar:: GetQuickAccessCommands](#getquickaccesscommands)|Hızlı erişim araç çubuğunda görünen tüm öğelerin komut kimliklerini içeren bir listeyi doldurur.|
-|[CMFCRibbonBar:: GetQuickAccessToolbarLocation](#getquickaccesstoolbarlocation)||
-|[CMFCRibbonBar:: GetTabTrancateRatio](#gettabtrancateratio)||
-|[CMFCRibbonBar:: GetTooltipFixedWidthLargeImage](#gettooltipfixedwidthlargeimage)||
-|[CMFCRibbonBar:: GetTooltipFixedWidthRegular](#gettooltipfixedwidthregular)||
-|[CMFCRibbonBar:: GetVisibleCategoryCount](#getvisiblecategorycount)||
-|[CMFCRibbonBar:: HideAllContextCategories](#hideallcontextcategories)|Etkin ve görünür olan tüm kategorileri gizler.|
-|[CMFCRibbonBar:: HideKeyTips](#hidekeytips)||
-|[CMFCRibbonBar:: HitTest](#hittest)|Şerit çubuğunun istemci koordinatlarındaki belirtilen noktada bulunan şerit öğesine yönelik bir işaretçi bulur.|
-|[CMFCRibbonBar:: ıskeytipenabled](#iskeytipenabled)|KeyTips 'in etkinleştirilip etkinleştirilmeyeceğini belirler.|
-|[CMFCRibbonBar:: IsMainRibbonBar](#ismainribbonbar)||
-|[CMFCRibbonBar:: ısprintönizleme etkin](#isprintpreviewenabled)|**Baskı Önizleme** sekmesinin etkinleştirilip etkinleştirilmeyeceğini belirler.|
-|[CMFCRibbonBar:: ısqatempty](#isqatempty)||
-|[CMFCRibbonBar:: IsQuickAccessToolbarOnTop](#isquickaccesstoolbarontop)|Hızlı erişim araç çubuğunun şerit çubuğunun üzerinde olup olmadığını belirtir.|
-|[CMFCRibbonBar:: ısreplaceframecaption](#isreplaceframecaption)|Şerit çubuğunun ana kare yazısının yerini alıp almayacağını veya çerçeve açıklamalı alt yazısının altına eklenip eklenmeyeceğini belirler.|
-|[CMFCRibbonBar:: ısshowgroupborder](#isshowgroupborder)||
-|[CMFCRibbonBar:: IsToolTipDescrEnabled](#istooltipdescrenabled)|Araç ipucu açıklamalarının etkinleştirilip etkinleştirilmeyeceğini belirler.|
-|[CMFCRibbonBar:: ıstooltipenabled](#istooltipenabled)|Şerit çubuğu için araç ipuçlarının etkinleştirilip etkinleştirilmeyeceğini belirler.|
-|[CMFCRibbonBar:: IsTransparentCaption](#istransparentcaption)||
-|[CMFCRibbonBar:: IsWindows7Look](#iswindows7look)|Şeritte Windows 7 stili görünüme sahip olup olmadığını gösterir (küçük dikdörtgen uygulama düğmesi).|
-|[CMFCRibbonBar:: LoadFromResource](#loadfromresource)|Fazla Yüklendi. Uygulama kaynaklarından bir şerit çubuğu yükler.|
-|[CMFCRibbonBar:: OnClickButton](#onclickbutton)||
-|[CMFCRibbonBar:: OnEditContextMenu](#oneditcontextmenu)||
-|[CMFCRibbonBar:: OnRTLChanged](#onrtlchanged)|(`CPane::OnRTLChanged`geçersiz kılar.)|
-|[CMFCRibbonBar:: OnSetAccData](#onsetaccdata)|( [CBasePane:: OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|
-|[CMFCRibbonBar:: OnShowRibbonContextMenu](#onshowribboncontextmenu)||
-|[CMFCRibbonBar:: OnShowRibbonQATMenu](#onshowribbonqatmenu)||
-|[CMFCRibbonBar:: OnSysKeyDown](#onsyskeydown)||
-|[CMFCRibbonBar:: OnSysKeyUp](#onsyskeyup)||
-|[CMFCRibbonBar::P opTooltip](#poptooltip)||
-|[CMFCRibbonBar::P reTranslateMessage](#pretranslatemessage)|(`CBasePane::PreTranslateMessage`geçersiz kılar.)|
-|[CMFCRibbonBar:: RecalcLayout](#recalclayout)|( [CPane:: RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).) öğesini geçersiz kılar|
-|[CMFCRibbonBar:: RemoveAllCategories](#removeallcategories)|Şerit çubuğundan tüm şerit kategorilerini kaldırır.|
-|[CMFCRibbonBar:: Removeallfromsekmeleri](#removeallfromtabs)|Sekme alanından tüm Şerit öğelerini kaldırır.|
-|[CMFCRibbonBar:: RemoveCategory](#removecategory)|Belirtilen dizinde bulunan şerit kategorisini kaldırır.|
-|[CMFCRibbonBar:: SaveToXMLBuffer](#savetoxmlbuffer)|Şerit çubuğunu bir arabelleğe kaydeder.|
-|[CMFCRibbonBar:: SaveToXMLFile](#savetoxmlfile)|Şerit çubuğunu XML dosyasına kaydeder.|
-|[CMFCRibbonBar:: SetActiveCategory](#setactivecategory)|Belirtilen şerit kategorisini etkin olarak ayarlar.|
-|[CMFCRibbonBar:: SetActiveMDIChild](#setactivemdichild)||
-|[CMFCRibbonBar:: SetElementKeys](#setelementkeys)|Belirtilen komut KIMLIĞINE sahip tüm şerit öğeleri için belirtilen KeyTips 'ı ayarlar.|
-|[CMFCRibbonBar:: SetApplicationButton](#setapplicationbutton)|Şerit çubuğuna bir uygulama şeridi düğmesi atar.|
-|[CMFCRibbonBar:: SetKeyboardNavigationLevel](#setkeyboardnavigationlevel)||
-|[CMFCRibbonBar:: SetMaximizeMode](#setmaximizemode)||
-|[CMFCRibbonBar:: SetQuickAccessCommands](#setquickaccesscommands)|Hızlı erişim araç çubuğuna bir veya daha fazla şerit öğesi ekler.|
-|[CMFCRibbonBar:: SetQuickAccessDefaultState](#setquickaccessdefaultstate)|Hızlı erişim araç çubuğu için varsayılan durumu belirtir.|
-|[CMFCRibbonBar:: SetQuickAccessToolbarOnTop](#setquickaccesstoolbarontop)|Hızlı erişim araç çubuğunu (QAT) şerit çubuğunun üzerinde veya altına konumlandırır.|
-|[CMFCRibbonBar:: SetTooltipFixedWidth](#settooltipfixedwidth)||
-|[CMFCRibbonBar:: SetWindows7Look](#setwindows7look)|Şeridi etkinleştir/devre dışı bırak Windows 7 stili görünüm (küçük dikdörtgen uygulama düğmesi)|
-|[CMFCRibbonBar:: ShowCategory](#showcategory)|Belirtilen şerit kategorisini gösterir veya gizler.|
-|[CMFCRibbonBar:: ShowContextCategories](#showcontextcategories)|Belirtilen KIMLIĞE sahip olan bağlam kategorilerini gösterir veya gizler.|
-|[CMFCRibbonBar:: ShowKeyTips](#showkeytips)||
-|[CMFCRibbonBar:: Esyumimizmi](#togglemimimizestate)|Şerit çubuğuna küçültülmüş ve büyütülmüş durumlar arasında geçiş yapar.|
-|[CMFCRibbonBar:: TranslateChar](#translatechar)||
+|[CMFCRibbonBar::EtkinleştirbağlamKategorisi](#activatecontextcategory)|Zaten görünür olan bir bağlam kategoriyi etkinleştirir.|
+|[CMFCRibbonBar::AddCategory](#addcategory)|Şerite yeni bir şerit kategorisi ekler.|
+|[CMFCRibbonBar::AddContextCategory](#addcontextcategory)|Bağlam kategorisi ekler.|
+|[CMFCRibbonBar::AddMainCategory](#addmaincategory)|Yeni bir ana şerit kategorisi ekler.|
+|[CMFCRibbonBar::AddPrintPreviewKategori](#addprintpreviewcategory)||
+|[CMFCRibbonBar::AddQATOnlyCategory](#addqatonlycategory)||
+|[CMFCRibbonBar::AddToTabs](#addtotabs)|Şerit çubuğunun sağ tarafına bir şerit öğesi ekleyin.|
+|[CMFCRibbonBar::CreateEx](#createex)|Bir denetim çubuğu oluşturur ve [CPane](../../mfc/reference/cpane-class.md) nesnesine bağlar. [(CPane geçersiz kılar::CreateEx](../../mfc/reference/cpane-class.md#createex).)|
+|[CMFCRibbonBar::Oluştur](#create)|Bir şerit çubuğu denetimi oluşturur ve şerit çubuğuna bağlar.|
+|[CMFCRibbonBar::DeactivateKeyboardFocus](#deactivatekeyboardfocus)||
+|[CMFCRibbonBar::DrawMenuImage](#drawmenuimage)||
+|[CMFCRibbonBar::DWMCompositionChanged](#dwmcompositionchanged)||
+|[CMFCRibbonBar::EnableKeyTips](#enablekeytips)|Şerit denetimi için anahtar ipuçlarını etkinleştirin veya devre dışı.|
+|[CMFCRibbonBar::EtkinleştirbaskıÖnizleme](#enableprintpreview)|Yazdır **Önizleme** sekmesini etkinleştirin.|
+|[CMFCRibbonBar::EnableToolTips](#enabletooltips)|Şerit çubuğundaki araç ipuçlarını ve araç ipucu açıklamalarını etkinleştirir veya devre dışı kılabilir.|
+|[CMFCRibbonBar::FindbyData](#findbydata)|Kullanıcının belirttiği verileri kullanarak bir şerit öğesi bulun.|
+|[CMFCRibbonBar::FindByID](#findbyid)|Belirtilen komut kimliğine sahip bir şerit öğesi bulur.|
+|[CMFCRibbonBar::FindCategoryIndexbyData](#findcategoryindexbydata)|Kullanıcı tanımlı verileri içeren şerit kategorisinin dizinini bulur.|
+|[CMFCRibbonBar::ForceRecalcLayout](#forcerecalclayout)||
+|[CMFCRibbonBar::GetActiveKategori](#getactivecategory)|Etkin bir kategoriye işaretçi alır.|
+|[CMFCRibbonBar::GetCaptionHeight](#getcaptionheight)|Resim yazısı yüksekliğini döndürür. [(Overrides CBasePane::GetCaptionHeight](../../mfc/reference/cbasepane-class.md#getcaptionheight).)|
+|[CMFCRibbonBar::GetCategory](#getcategory)|İşaretçiyi belirli bir dizinte bulunan bir kategoriye alır.|
+|[CMFCRibbonBar::GetCategoryCount](#getcategorycount)|Şerit çubuğundaki şerit kategorilerinin numarasını alır.|
+|[CMFCRibbonBar::GetCategoryHeight](#getcategoryheight)||
+|[CMFCRibbonBar::GetCategoryIndex](#getcategoryindex)|Şerit kategorisinin dizinini döndürür.|
+|[CMFCRibbonBar::GetContextName](#getcontextname)|Bir kimlik kullanarak belirttiğiniz bağlam kategorisi alt yazısının adını alır.|
+|[CMFCRibbonBar::GetDroppedDown](#getdroppeddown)||
+|[CMFCRibbonBar::GetElementsByID](#getelementsbyid)|Belirtilen kimliği olan tüm şerit öğeleriiçin işaretçileri içeren bir dizi alır.|
+|[CMFCRibbonBar::Uygulama Düğmesi Alın](#getapplicationbutton)|Şerit düğmesine işaretçi alır.|
+|[CMFCRibbonBar::GetFocused](#getfocused)|Odaklanmış bir öğeyi döndürür.|
+|[CMFCRibbonBar::GetHideFlags](#gethideflags)||
+|[CMFCRibbonBar::GetItemIDsListesi](#getitemidslist)||
+|[CMFCRibbonBar::GetKeyboardNavigationLevel](#getkeyboardnavigationlevel)||
+|[CMFCRibbonBar::GetKeyboardNavLevelCurrent](#getkeyboardnavlevelcurrent)||
+|[CMFCRibbonBar::GetKeyboardNavLevelParent](#getkeyboardnavlevelparent)||
+|[CMFCRibbonBar::GetMainCategory](#getmaincategory)|İşaretçiyi şu anda seçili olan şerit kategorisine döndürür.|
+|[CMFCRibbonBar::GetQATCommandsLocation](#getqatcommandslocation)||
+|[CMFCRibbonBar::GetQATDroppedDown](#getqatdroppeddown)||
+|[CMFCRibbonBar::GetQuickAccessKomutları](#getquickaccesscommands)|Hızlı Erişim Araç Çubuğu'nda görünen tüm öğelerin komut idilerin komut larını içeren bir listeyi doldurur.|
+|[CMFCRibbonBar::GetQuickAccessToolbarLocation](#getquickaccesstoolbarlocation)||
+|[CMFCRibbonBar::GetTabTrancateRatio](#gettabtrancateratio)||
+|[CMFCRibbonBar::GetTooltipFixedWidthLargeImage](#gettooltipfixedwidthlargeimage)||
+|[CMFCRibbonBar::GetTooltipFixedWidthRegular](#gettooltipfixedwidthregular)||
+|[CMFCRibbonBar::GetVisibleCategoryCount](#getvisiblecategorycount)||
+|[CMFCRibbonBar::HideAllContextCategories](#hideallcontextcategories)|Etkin ve görünür tüm kategorileri gizler.|
+|[CMFCRibbonBar::HideKeyTips](#hidekeytips)||
+|[CMFCRibbonBar::HitTest](#hittest)|Şerit çubuğunun istemci koordinatlarında belirtilen noktada bulunan şerit öğesi için bir işaretçi bulur.|
+|[CMFCRibbonBar::IsKeyTipEnabled](#iskeytipenabled)|Anahtar uçlarının etkin olup olmadığını belirler.|
+|[CMFCRibbonBar::IsmainRibbonBar](#ismainribbonbar)||
+|[CMFCRibbonBar::IsprintPreviewEnabled](#isprintpreviewenabled)|**Yazdırma Önizleme** sekmesinin etkin olup olmadığını belirler.|
+|[CMFCRibbonBar::IsQATEmpty](#isqatempty)||
+|[CMFCRibbonBar::IsQuickAccessToolbarOnTop](#isquickaccesstoolbarontop)|Hızlı Erişim Araç Çubuğu'nun şerit çubuğunun üzerinde bulunup bulunmadığıbelirtilir.|
+|[CMFCRibbonBar::IsreplaceFrameCaption](#isreplaceframecaption)|Şerit çubuğunun ana çerçeve başlığının yerini alıp almayacağını veya çerçeve yazısının altına eklenip eklenmediğini belirler.|
+|[CMFCRibbonBar::IsShowGroupBorder](#isshowgroupborder)||
+|[CMFCRibbonBar::IsToolTipDescrEnabled](#istooltipdescrenabled)|Araç ipucu açıklamalarının etkin olup olmadığını belirler.|
+|[CMFCRibbonBar::IsToolTipEnabled](#istooltipenabled)|Şerit çubuğuiçin araç uçlarının etkin olup olmadığını belirler.|
+|[CMFCRibbonBar::IsTransparentCaption](#istransparentcaption)||
+|[CMFCRibbonBar::IsWindows7Look](#iswindows7look)|Şeridin Windows 7 stili görünümüne (küçük dikdörtgen uygulama düğmesi) sahip olup olmadığını gösterir.|
+|[CMFCRibbonBar::LoadFromResource](#loadfromresource)|Fazla Yüklendi. Uygulama kaynaklarından şerit çubuğu yükler.|
+|[CMFCRibbonBar::ClickButton](#onclickbutton)||
+|[CMFCRibbonBar::OnEditContextMenu](#oneditcontextmenu)||
+|[CMFCRibbonBar::OnRTLChanged](#onrtlchanged)|(Geçersiz `CPane::OnRTLChanged`kılar .)|
+|[CMFCRibbonBar::OnsetaccData](#onsetaccdata)|[(Overrides CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|
+|[CMFCRibbonBar::OnShowRibbonContextMenu](#onshowribboncontextmenu)||
+|[CMFCRibbonBar::OnShowRibbonQATMenu](#onshowribbonqatmenu)||
+|[CMFCRibbonBar::OnSysKeyDown](#onsyskeydown)||
+|[CMFCRibbonBar::OnSysKeyUp](#onsyskeyup)||
+|[CMFCRibbonBar::PopTooltip](#poptooltip)||
+|[CMFCRibbonBar::PreTranslateMessage](#pretranslatemessage)|(Geçersiz `CBasePane::PreTranslateMessage`kılar .)|
+|[CMFCRibbonBar::RecalcLayout](#recalclayout)|[(CPane geçersiz kılar::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|
+|[CMFCRibbonBar::RemoveAllCategories](#removeallcategories)|Şerit çubuğundan tüm şerit kategorileri kaldırır.|
+|[CMFCRibbonBar::RemoveAllFromTabs](#removeallfromtabs)|Sekme alanındaki tüm şerit öğelerini kaldırır.|
+|[CMFCRibbonBar::RemoveCategory](#removecategory)|Belirtilen dizinde bulunan şerit kategorisini kaldırır.|
+|[CMFCRibbonBar::SaveToXMLAraffer](#savetoxmlbuffer)|Şerit Çubuğu'nu arabelleğe kaydeder.|
+|[CMFCRibbonBar::SaveToXMLFile](#savetoxmlfile)|Şerit Çubuğu'nu XML dosyasına kaydeder.|
+|[CMFCRibbonBar::SetActiveKategori](#setactivecategory)|Etkin olarak belirli bir şerit kategorisi ayarlar.|
+|[CMFCRibbonBar::SetActiveMDIChild](#setactivemdichild)||
+|[CMFCRibbonBar::SetElementKeys](#setelementkeys)|Belirtilen komut kimliğine sahip tüm şerit öğeleri için belirtilen tuş uçlarını ayarlar.|
+|[CMFCRibbonBar::SetApplicationButton](#setapplicationbutton)|Şerit çubuğuna bir uygulama şeridi düğmesi atar.|
+|[CMFCRibbonBar::SetKeyboardNavigationLevel](#setkeyboardnavigationlevel)||
+|[CMFCRibbonBar::SetMaximizeMode](#setmaximizemode)||
+|[CMFCRibbonBar::SetQuickAccessKomutları](#setquickaccesscommands)|Hızlı Erişim Araç Çubuğu'na bir veya daha fazla şerit öğesi ekler.|
+|[CMFCRibbonBar::SetQuickAccessDefaultState](#setquickaccessdefaultstate)|Hızlı Erişim Araç Çubuğu için varsayılan durumu belirtir.|
+|[CMFCRibbonBar::SetQuickAccessToolbarOnTop](#setquickaccesstoolbarontop)|Hızlı Erişim Araç Çubuğu'nu (QAT) şerit çubuğunun altına veya altına konumlandırın.|
+|[CMFCRibbonBar::SetTooltipFixedWidth](#settooltipfixedwidth)||
+|[CMFCRibbonBar::SetWindows7Look](#setwindows7look)|Şerit Windows 7 stili görünümü etkinleştirme/devre dışı açma (küçük dikdörtgen uygulama düğmesi)|
+|[CMFCRibbonBar::ShowCategory](#showcategory)|Belirtilen şerit kategorisini gösterir veya gizler.|
+|[CMFCRibbonBar::ShowContextCategories](#showcontextcategories)|Belirtilen kimliği olan bağlam kategorilerini gösterir veya gizler.|
+|[CMFCRibbonBar::ShowKeyTips](#showkeytips)||
+|[CMFCRibbonBar::ToggleMimimizeDevlet](#togglemimimizestate)|En aza indirgenen ve en üst düzeye çıkarılan durumlar arasında şerit çubuğunu geçiş...|
+|[CMFCRibbonBar::TranslateChar](#translatechar)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-Microsoft, 2007 Microsoft Office eşzamanlı olarak yayımlandığında ofis akıcı şeridini sunmuştur. Bu şerit çubuğu yalnızca yeni bir denetim değildir. Yeni bir kullanıcı arabirimi paradigmasını temsil eder. Şerit, Kategoriler adlı bir sekmeler kümesi içeren bir bölmesidir. Her kategori mantıksal olarak şerit panellerine bölünür ve her panel çeşitli denetimler ve komut düğmeleri içerebilir.
+Microsoft, Aynı anda Microsoft Office 2007 yayımladı Office Fluent Ribbon tanıttı. Bu şerit çubuğu sadece yeni bir denetim değildir. Yeni bir kullanıcı arabirimi paradigması temsil eder. Şerit, kategoriler adı verilen bir sekme kümesi içeren bir bölmedir. Her kategori mantıksal olarak şerit panellerine bölünür ve her panel çeşitli denetimler ve komut düğmeleri içerebilir.
 
-Kullanılabilir alanın en iyi şekilde kullanılmasını sağlamak için Şerit çubuğunda görüntülenen öğeler genişletilir ve anlaşma sağlar. Örneğin, bir şerit panelinde öğelerini göstermek için yeterli alan yoksa, açılan menüde alt öğeleri görüntüleyen bir menü düğmesi haline gelir. Şerit çubuğu statik (kayan olmayan) denetim çubuğu olarak davranır ve bir çerçevenin en üstüne yerleştirilebilir.
+Şerit çubuğunda görünen öğeler, kullanılabilir alanı en iyi şekilde kullanmak için genişletir ve daraltılmış olur. Örneğin, bir şerit paneli öğelerini görüntülemek için yeterli alana sahipse, açılır menüde alt öğeleri görüntüleyen bir menü düğmesi olur. Şerit çubuğu statik (kayan olmayan) denetim çubuğu gibi olur ve bir çerçevenin üst kısmında sabitlenebilir.
 
-Office 2007 ' de kullanılan bir durum çubuğunu uygulamak için `CMFCRibbonStatusBar` sınıfını kullanabilirsiniz. Bir Şerit kategorisi, bir [şerit paneli](../../mfc/reference/cmfcribbonpanel-class.md)grubunu içerir (ve görüntüler). Her şerit paneli [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)öğesinden türetilen bir veya daha fazla şerit öğesi içerir.
+`CMFCRibbonStatusBar` Sınıfı, Office 2007'de kullanılana benzer bir durum çubuğu uygulamak için kullanabilirsiniz. Şerit kategorisi bir grup [şerit paneli](../../mfc/reference/cmfcribbonpanel-class.md)içerir (ve görüntüler). Her şerit [paneli, CMFCRibbonBaseElement'ten](../../mfc/reference/cmfcribbonbaseelement-class.md)türetilen bir veya daha fazla şerit öğesi içerir.
 
-Mevcut MFC uygulamanıza bir şerit çubuğu ekleme hakkında daha fazla bilgi için bkz. [Izlenecek yol: MFC karalama uygulamasını güncelleştirme](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md).
+Mevcut MFC uygulamanıza şerit çubuğu ekleme hakkında bilgi için Bkz. [Walkthrough: MFC Karalama Uygulamasını Güncelleştirme](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[CPane](../../mfc/reference/cpane-class.md)
+[Cpane](../../mfc/reference/cpane-class.md)
 
-[Cmfcribbonçubuğu](../../mfc/reference/cmfcribbonbar-class.md)
+[Cmfcribbonbar](../../mfc/reference/cmfcribbonbar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxRibbonBar. h
+**Üstbilgi:** afxribbonbar.h
 
-##  <a name="activatecontextcategory"></a>CMFCRibbonBar:: ActivateContextCategory
+## <a name="cmfcribbonbaractivatecontextcategory"></a><a name="activatecontextcategory"></a>CMFCRibbonBar::EtkinleştirbağlamKategorisi
 
-Zaten görünür olan bir bağlam kategorisini etkinleştirir.
+Zaten görünür olan bir bağlam kategoriyi etkinleştirir.
 
 ```
 BOOL ActivateContextCategory(UINT uiContextID);
@@ -349,16 +349,16 @@ BOOL ActivateContextCategory(UINT uiContextID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Uııtextıd*<br/>
-'ndaki Bağlam kategorisi KIMLIĞI.
+*uiContextID*<br/>
+[içinde] Bağlam kategorisi kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Uıicontextıd* içeren bir bağlam kategorisi bulunursa ve etkinleştirildiyse doğru; Aksi halde yanlış.
+*UiContextID* içeren bir bağlam kategorisi bulunur ve etkinleştirilirse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="addcategory"></a>CMFCRibbonBar:: AddCategory
+## <a name="cmfcribbonbaraddcategory"></a><a name="addcategory"></a>CMFCRibbonBar::AddCategory
 
-Şerit çubuğu için yeni bir Şerit kategorisi oluşturur ve başlatır.
+Şerit çubuğu için yeni bir şerit kategorisi oluşturur ve başharfe başlar.
 
 ```
 CMFCRibbonCategory* AddCategory(
@@ -375,44 +375,44 @@ CMFCRibbonCategory* AddCategory(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-'ndaki Şerit kategorisinin adı.
+*Lpszname*<br/>
+[içinde] Şerit kategorisinin adı.
 
 *uiSmallImagesResID*<br/>
-'ndaki Şerit kategorisi için küçük görüntü listesinin kaynak KIMLIĞI.
+[içinde] Şerit kategorisi için küçük resim listesinin kaynak kimliği.
 
-*Uılargeımaresd*<br/>
-'ndaki Şerit kategorisi için büyük görüntü listesinin kaynak KIMLIĞI.
+*uiLargeImagesResID*<br/>
+[içinde] Şerit kategorisi için büyük resim listesinin kaynak kimliği.
 
-*sizeSmallImage*<br/>
-'ndaki Şerit kategorisi için küçük görüntülerin boyutunu belirtir.
+*boyutSmallImage*<br/>
+[içinde] Şerit kategorisi için küçük resimlerin boyutunu belirtir.
 
-*Sizelargeımage*<br/>
-'ndaki Şerit kategorisi için büyük görüntülerin boyutunu belirtir.
+*boyutLargeImage*<br/>
+[içinde] Şerit kategorisi için büyük görüntülerin boyutunu belirtir.
 
-*Nınsertat*<br/>
-'ndaki Kategori konumunun sıfır tabanlı dizini.
+*nInsertAt*<br/>
+[içinde] Kategori konumunun sıfır tabanlı dizin.
 
 *pRTI*<br/>
-'ndaki Çalışma zamanında bir şerit kategorisini dinamik olarak oluşturmak için [CMFCRibbonCategory sınıfı](../../mfc/reference/cmfcribboncategory-class.md) çalışma zamanı sınıfına yönelik işaretçi.
+[içinde] Çalışma zamanında dinamik olarak bir şerit kategorisi oluşturmak için [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md) çalışma zamanı sınıfına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa, yeni şerit kategorisine yönelik bir işaretçi. Aksi takdirde, NULL.
+Yöntem başarılı olduysa, yeni şerit kategorisiiçin bir işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PRTI* parametresi null değilse, yeni Şerit kategorisi çalışma zamanı sınıfı kullanılarak dinamik olarak oluşturulur.
+*pRTI* parametresi NULL değilse, çalışma zamanı sınıfı kullanılarak yeni şerit kategorisi dinamik olarak oluşturulur.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBar` sınıfında `AddCategory` yönteminin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, yöntemin sınıfta `AddCategory` nasıl `CMFCRibbonBar` kullanılacağını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#5](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_1.cpp)]
 
-##  <a name="addcontextcategory"></a>CMFCRibbonBar:: AddContextCategory
+## <a name="cmfcribbonbaraddcontextcategory"></a><a name="addcontextcategory"></a>CMFCRibbonBar::AddContextCategory
 
-Şerit çubuğu için yeni bir bağlam kategorisi oluşturur ve başlatır.
+Şerit çubuğu için yeni bir bağlam kategorisi oluşturur ve başharfe başlar.
 
 ```
 CMFCRibbonCategory* AddContextCategory(
@@ -431,40 +431,40 @@ CMFCRibbonCategory* AddContextCategory(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-'ndaki Kategorinin adı.
+*Lpszname*<br/>
+[içinde] Kategorinin adı.
 
 *lpszContextName*<br/>
-'ndaki Bağlam kategorisi başlığının adı.
+[içinde] Bağlam kategorisi alt yazısının adı.
 
-*Uııtextıd*<br/>
-'ndaki Bağlam KIMLIĞI.
+*uiContextID*<br/>
+[içinde] Bağlam Kimliği.
 
-*clrContext*<br/>
-'ndaki Bağlam kategorisi açıklamalı alt yazısının rengi.
+*clrBağlam*<br/>
+[içinde] Bağlam kategorisi başlığının rengi.
 
 *uiSmallImagesResID*<br/>
-'ndaki Bağlam kategorisinin küçük görüntüsünün kaynak KIMLIĞI.
+[içinde] Bağlam kategorisinin küçük görüntüsünün kaynak kimliği.
 
-*Uılargeımaresd*<br/>
-'ndaki Bağlam kategorisindeki büyük görüntünün kaynak KIMLIĞI.
+*uiLargeImagesResID*<br/>
+[içinde] Bağlam kategorisinin büyük görüntüsünün kaynak kimliği.
 
-*sizeSmallImage*<br/>
-'ndaki Küçük bir görüntünün boyutu.
+*boyutSmallImage*<br/>
+[içinde] Küçük bir görüntü boyutu.
 
-*Sizelargeımage*<br/>
-'ndaki Büyük bir görüntünün boyutu.
+*boyutLargeImage*<br/>
+[içinde] Büyük bir görüntüboyutu.
 
 *pRTI*<br/>
-'ndaki Çalışma zamanı sınıfına yönelik işaretçi.
+[içinde] Çalışma zamanı sınıfına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan kategoriye yönelik bir işaretçi veya `CreateObject` yöntemi belirtilen kategoriyi *oluşturamadıysanız* null.
+`CreateObject` *PRTI* yöntemi belirtilen kategoriyi oluşturamıyorsa, yeni oluşturulan kategoriye işaretçi veya NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlam kategorisi eklemek için bu işlevi kullanın. Bağlam kategorileri, geçerli uygulama bağlamına bağlı olarak çalışma zamanında gösterilebilecek veya gizli olabilecek özel bir kategori türüdür. Örneğin, Kullanıcı bir nesne seçtiğinde, seçili nesneyi değiştirmek için kullandığınız bağlam kategorilerine sahip özel sekmeler görüntüleyebilirsiniz.
+Bağlam kategorisi eklemek için bu işlevi kullanın. Bağlam kategorileri, geçerli uygulama bağlamına bağlı olarak çalışma zamanında gösterilebilen veya gizlenebilen özel bir kategori türüdür. Örneğin, kullanıcı bir nesne seçtiğinde, seçili nesneyi değiştirmek için kullandığınız bağlam kategorileriyle özel sekmeleri görüntüleyebilirsiniz.
 
 Bağlam kategorisinin rengi aşağıdaki değerlerden biri olabilir:
 
@@ -484,7 +484,7 @@ Bağlam kategorisinin rengi aşağıdaki değerlerden biri olabilir:
 
 - AFX_CategoryColor_Violet
 
-##  <a name="addmaincategory"></a>CMFCRibbonBar:: AddMainCategory
+## <a name="cmfcribbonbaraddmaincategory"></a><a name="addmaincategory"></a>CMFCRibbonBar::AddMainCategory
 
 Şerit çubuğu için yeni bir ana şerit kategorisi oluşturur.
 
@@ -501,38 +501,38 @@ CMFCRibbonMainPanel* AddMainCategory(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-'ndaki Ana Şerit kategorisinin adı.
+*Lpszname*<br/>
+[içinde] Ana şerit kategorisinin adı.
 
 *uiSmallImagesResID*<br/>
-'ndaki Küçük görüntülerin kaynak KIMLIĞI.
+[içinde] Küçük resimlerin kaynak kimliği.
 
-*Uılargeımaresd*<br/>
-'ndaki Büyük görüntülerin kaynak KIMLIĞI.
+*uiLargeImagesResID*<br/>
+[içinde] Büyük görüntülerin kaynak kimliği.
 
-*sizeSmallImage*<br/>
-'ndaki Küçük görüntülerin boyutu.
+*boyutSmallImage*<br/>
+[içinde] Küçük görüntülerin boyutu.
 
-*Sizelargeımage*<br/>
-'ndaki Büyük görüntülerin boyutu.
+*boyutLargeImage*<br/>
+[içinde] Büyük görüntülerin boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa, yeni ana şerit kategorisine yönelik işaretçi. Aksi takdirde, NULL.
+Yöntem başarılı olduysa yeni ana şerit kategorisine işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaten bir ana şerit kategorisi varsa, bu kategori silinir.
+Ana şerit kategorisi zaten varsa, silinir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBar` sınıfında `AddMainCategory` yönteminin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, yöntemin sınıfta `AddMainCategory` nasıl `CMFCRibbonBar` kullanılacağını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#4](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_2.cpp)]
 
-##  <a name="addprintpreviewcategory"></a>CMFCRibbonBar:: Addprintönizleme kategorisi
+## <a name="cmfcribbonbaraddprintpreviewcategory"></a><a name="addprintpreviewcategory"></a>CMFCRibbonBar::AddPrintPreviewKategori
 
-Şerit çubuğunda bir baskı önizleme kategorisi oluşturur.
+Şerit çubuğunda yazdırma önizleme kategorisi oluşturur.
 
 ```
 CMFCRibbonCategory* AddPrintPreviewCategory();
@@ -540,15 +540,15 @@ CMFCRibbonCategory* AddPrintPreviewCategory();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa, yeni şerit kategorisine yönelik bir işaretçi. Aksi takdirde, NULL.
+Yöntem başarılı olduysa, yeni şerit kategorisiiçin bir işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir Şerit kategorisi ve baskı önizleme sağlamak için ihtiyacı olan denetimleri oluşturur.
+Bu yöntem, bir şerit kategorisi ve yazdırma önizlemesi sağlamak için gereken denetimleri oluşturur.
 
-##  <a name="addqatonlycategory"></a>CMFCRibbonBar:: AddQATOnlyCategory
+## <a name="cmfcribbonbaraddqatonlycategory"></a><a name="addqatonlycategory"></a>CMFCRibbonBar::AddQATOnlyCategory
 
-Hızlı erişim araç çubuğu Şerit kategorisi oluşturur.
+Hızlı erişim araç çubuğu şerit kategorisi oluşturur.
 
 ```
 CMFCRibbonCategory* AddQATOnlyCategory(
@@ -560,26 +560,26 @@ CMFCRibbonCategory* AddQATOnlyCategory(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-'ndaki Kategorinin adı.
+*Lpszname*<br/>
+[içinde] Kategorinin adı.
 
 *uiSmallImagesResID*<br/>
-'ndaki Kategori için görüntü listesinin kaynak KIMLIĞI.
+[içinde] Kategori için resim listesinin kaynak kimliği.
 
-*sizeSmallImage*<br/>
-'ndaki Kategorideki Şerit öğeleri için görüntülerin boyutu.
+*boyutSmallImage*<br/>
+[içinde] Kategorideki şerit öğeleri için görüntülerin boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa yeni kategoriye yönelik bir işaretçi. Aksi takdirde, NULL.
+Yöntem başarılı olduysa yeni kategoriiçin bir işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hızlı erişim araç çubuğu Şerit kategorisi yalnızca hızlı erişim araç çubuğu özelleştirmesi iletişim kutusunda kullanılır.
+Hızlı erişim araç çubuğu şerit kategorisi yalnızca hızlı erişim araç çubuğu özelleştirme iletişim kutusunda kullanılır.
 
-##  <a name="addtotabs"></a>CMFCRibbonBar:: Addtosekmeleri
+## <a name="cmfcribbonbaraddtotabs"></a><a name="addtotabs"></a>CMFCRibbonBar::AddToTabs
 
-Belirtilen şerit öğesini şerit çubuğunun sekmeler satırına ekler.
+Belirtilen şerit öğesini şerit çubuğunun sekme satırına ekler.
 
 ```
 void AddToTabs(CMFCRibbonBaseElement* pElement);
@@ -588,15 +588,15 @@ void AddToTabs(CMFCRibbonBaseElement* pElement);
 ### <a name="parameters"></a>Parametreler
 
 *pElement*<br/>
-'ndaki Şerit öğesi işaretçisi.
+[içinde] Şerit öğesiiçin işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şerit öğesi herhangi bir sistem düğmesinden önce konumlandırılır.
 
-##  <a name="cmfcribbonbar"></a>CMFCRibbonBar:: Cmfcribbonçubuğu
+## <a name="cmfcribbonbarcmfcribbonbar"></a><a name="cmfcribbonbar"></a>CMFCRibbonBar::CMFCRibbonBar
 
-Bir [CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) nesnesi oluşturur ve başlatır.
+[CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) nesnesi inşa eder ve başharflerini.
 
 ```
 CMFCRibbonBar(BOOL bReplaceFrameCaption = TRUE);
@@ -605,11 +605,11 @@ CMFCRibbonBar(BOOL bReplaceFrameCaption = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bReplaceFrameCaption*<br/>
-'ndaki Ana çerçeve penceresinin açıklamalı alt yazısının yerini alacak şerit çubuğu için TRUE; Ana çerçeve penceresinin alt yazısının altındaki şerit çubuğunu bulmak için FALSE.
+[içinde] Şerit çubuğunun ana çerçeve penceresinin alt yazısını değiştirmesi için DOĞRU; Ana çerçeve penceresinin alt yazısının altındaki şerit çubuğunu bulmak için YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="create"></a>CMFCRibbonBar:: Create
+## <a name="cmfcribbonbarcreate"></a><a name="create"></a>CMFCRibbonBar::Oluştur
 
 Şerit çubuğu için bir pencere oluşturur.
 
@@ -623,27 +623,27 @@ BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-'ndaki Şerit çubuğunun üst penceresine yönelik işaretçi.
+[içinde] Şerit çubuğunun üst penceresine işaretçi.
 
-*dwStyle*<br/>
-'ndaki Yeni pencerenin stillerinin mantıksal birleşimi.
+*Dwstyle*<br/>
+[içinde] Yeni pencere için stillerin mantıksal bir birleşimi.
 
-*NID*<br/>
-'ndaki Yeni pencerenin KIMLIĞI.
+*Nıd*<br/>
+[içinde] Yeni pencerenin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencere oluşturulduysa doğru; Aksi halde yanlış.
+Pencere oluşturulduysa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBar` sınıfının `Create` yönteminin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, sınıfın yönteminin `Create` nasıl `CMFCRibbonBar` kullanılacağını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#1](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_3.cpp)]
 
-##  <a name="createex"></a>CMFCRibbonBar:: CreateEx
+## <a name="cmfcribbonbarcreateex"></a><a name="createex"></a>CMFCRibbonBar::CreateEx
 
 Şerit çubuğu için bir pencere oluşturur.
 
@@ -658,26 +658,26 @@ BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-'ndaki Şerit çubuğunun üst penceresine yönelik işaretçi.
+[içinde] Şerit çubuğunun üst penceresine işaretçi.
 
 *dwCtrlStyle*<br/>
-'ndaki Bu parametre kullanılmaz.
+[içinde] Bu parametre kullanılmaz.
 
-*dwStyle*<br/>
-'ndaki Yeni pencerenin stillerinin mantıksal birleşimi.
+*Dwstyle*<br/>
+[içinde] Yeni pencere için stillerin mantıksal bir birleşimi.
 
-*NID*<br/>
-'ndaki Yeni pencerenin KIMLIĞI.
+*Nıd*<br/>
+[içinde] Yeni pencerenin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencere oluşturulduysa doğru; Aksi halde yanlış.
+Pencere oluşturulduysa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="deactivatekeyboardfocus"></a>CMFCRibbonBar::D eactivateKeyboardFocus
+## <a name="cmfcribbonbardeactivatekeyboardfocus"></a><a name="deactivatekeyboardfocus"></a>CMFCRibbonBar::DeactivateKeyboardFocus
 
-Şerit çubuğundaki tüm KeyTip denetimlerini kapatır.
+Şerit çubuğundaki tüm anahtar ucu denetimlerini kapatır.
 
 ```
 void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
@@ -686,13 +686,13 @@ void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bSetFocus*<br/>
-'ndaki Odağı, şerit çubuğunun üst penceresine ayarlamak için TRUE.
+[içinde] Odak noktasını şerit çubuğunun üst penceresine ayarlamak için DOĞRU.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="drawmenuimage"></a>CMFCRibbonBar::D Rawmenuımage
+## <a name="cmfcribbonbardrawmenuimage"></a><a name="drawmenuimage"></a>CMFCRibbonBar::DrawMenuImage
 
-Bir menü düğmesi için görüntüyü çizer.
+Menü düğmesi için görüntüyü çizer.
 
 ```
 BOOL DrawMenuImage(
@@ -703,24 +703,24 @@ BOOL DrawMenuImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Menü düğmesi için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Menü düğmesi için aygıt bağlamını işaretleyin.
 
-*Pmenuıtem*<br/>
-'ndaki Bir araç çubuğu menü düğmesine işaretçi.
+*pMenuItem*<br/>
+[içinde] Araç çubuğu menüsü düğmesine işaretçi.
 
 *rectImage*<br/>
-'ndaki Bir menü düğmesi için dikdörtgen görüntülenir.
+[içinde] Menü düğmesi için ekran dikdörtgeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Resim çizildiyse doğru; Aksi halde yanlış.
+Görüntü çizilmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dwmcompositionchanged"></a>CMFCRibbonBar::D Wmkompozisyontionchanged
+## <a name="cmfcribbonbardwmcompositionchanged"></a><a name="dwmcompositionchanged"></a>CMFCRibbonBar::DWMCompositionChanged
 
-Masaüstü Pencere Yöneticisi (DWM) bileşimi etkinleştirildiğinde veya devre dışı bırakıldığında şerit çubuğunun görüntülenmesini ayarlar.
+Masaüstü Pencere Yöneticisi (DWM) kompozisyonu etkinleştirildiğinde veya devre dışı bırakıldığında şerit çubuğunun ekranını ayarlar.
 
 ```
 virtual void DWMCompositionChanged();
@@ -728,9 +728,9 @@ virtual void DWMCompositionChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="enablekeytips"></a>CMFCRibbonBar:: EnableKeyTips
+## <a name="cmfcribbonbarenablekeytips"></a><a name="enablekeytips"></a>CMFCRibbonBar::EnableKeyTips
 
-Şerit çubuğu için keytıp özelliğini etkinleştirilir veya devre dışı bırakır.
+Şerit çubuğunun anahtar ucu özelliğini etkinleştirir veya devre dışı kılabilir.
 
 ```
 void EnableKeyTips(BOOL bEnable = TRUE);
@@ -738,16 +738,16 @@ void EnableKeyTips(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-'ndaki KeyTips özelliğini etkinleştirmek için TRUE; KeyTips özelliğini devre dışı bırakmak için FALSE.
+*bEtkinleştir*<br/>
+[içinde] Tuş ipuçları özelliğini etkinleştirmek için TRUE; Anahtar uçları özelliğini devre dışı kıtır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özelliği etkinleştirdiğinizde, Kullanıcı ALT veya F10 düğmesine bastığında ana ipuçları görüntülenir. Kullanıcı ALT tuşuna bastığında, önemli ipuçları 200 milisaniyelik gecikmeyle görüntülenir. Bu gecikme, basılan ALT anahtarın ALT tuşunu içeren diğer birleşimlerle karışmaması için kısayolların yürütülmesini sağlar.
+Bu özelliği etkinleştirdiğinizde, kullanıcı ALT veya F10 düğmesine bastığında tuş ipuçları görüntülenir. Kullanıcı ALT tuşuna bastığında, önemli ipuçları 200 milisaniyelik bir gecikmeyle görüntülenir. Bu gecikme, sıkıştırılan ALT tuşu alt tuşu içeren diğer kombinasyonları engellememesi için kısayolların yürütülmesine olanak tanır.
 
-##  <a name="enableprintpreview"></a>CMFCRibbonBar:: EnablePrintPreview
+## <a name="cmfcribbonbarenableprintpreview"></a><a name="enableprintpreview"></a>CMFCRibbonBar::EtkinleştirbaskıÖnizleme
 
-**Baskı Önizleme** özelliğini etkinleştirilir veya devre dışı bırakır.
+**Yazdırma Önizleme** özelliğini etkinleştirir veya devre dışı kılabilir.
 
 ```
 void EnablePrintPreview(BOOL bEnable = TRUE);
@@ -755,18 +755,18 @@ void EnablePrintPreview(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-'ndaki **Baskı Önizleme** özelliğini ETKINLEŞTIRMEK için true; **Baskı Önizleme** özelliğini devre dışı BıRAKMAK için false.
+*bEtkinleştir*<br/>
+[içinde] **Yazdırma Önizleme** özelliğini etkinleştirmek için TRUE; **Yazdırma Önizleme** özelliğini devre dışı kılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BEnable* yanlış ise ve bir baskı önizleme kategorisi varsa, silinir.
+*bEnable* FALSE ise ve bir yazdırma önizleme kategorisi varsa, silinir.
 
-Varsayılan olarak **Baskı Önizleme** özelliği etkinleştirilmiştir.
+Varsayılan olarak **Yazdırma Önizleme** özelliği etkinleştirilir.
 
-##  <a name="enabletooltips"></a>CMFCRibbonBar:: Enabletooltip 'ler
+## <a name="cmfcribbonbarenabletooltips"></a><a name="enabletooltips"></a>CMFCRibbonBar::EnableToolTips
 
-Şerit çubuğunda araç ipuçlarını ve isteğe bağlı araç ipucu açıklamalarını etkinleştirilir veya devre dışı bırakır.
+Şerit çubuğunda araç ipuçlarını ve isteğe bağlı araç ipucu açıklamalarını etkinleştirir veya devre dışı kılabilir.
 
 ```
 void EnableToolTips(
@@ -776,19 +776,19 @@ void EnableToolTips(
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-'ndaki Şerit çubuğunda araç ipuçlarını etkinleştirmek için TRUE; Şerit çubuğunda araç ipuçlarını devre dışı bırakmak için FALSE.
+*bEtkinleştir*<br/>
+[içinde] Şerit çubuğundaki araç ipuçlarını etkinleştirmek için TRUE; Şerit çubuğundaki araç ipuçlarını devre dışı etmek için FALSE.
 
 *bEnableDescr*<br/>
-'ndaki Araç ipucunda araç ipucu açıklamalarını etkinleştirmek için TRUE; Araç ipucunda araç ipucu açıklamalarını devre dışı bırakmak için FALSE.
+[içinde] Araç ipucuüzerinde araç ipucu açıklamalarını etkinleştirmek için TRUE; Araç ipucu ndaki araç ipucu açıklamalarını devre dışı bırakabilmek için YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BEnable* parametresi, fare bir şerit öğesinin üzerine geldiğinde araç ipuçlarının görüntülenip görüntülenmeyeceğini belirler. *BEnableDescr* parametresi, ToolTip metniyle birlikte ek açıklayıcı metnin görünüp görünmeyeceğini belirler.
+*bEnable* parametresi, fare bir şerit öğesinin üzerinde gezinirken araç uçlarının görüntülenip görüntülenmediğini belirler. *bEnableDescr* parametresi, araç ipucu metniyle ek açıklayıcı metin görünüp görünmediğini belirler.
 
-##  <a name="findbydata"></a>CMFCRibbonBar:: FindByData
+## <a name="cmfcribbonbarfindbydata"></a><a name="findbydata"></a>CMFCRibbonBar::FindbyData
 
-Belirtilen veriye ve görünürlüğe sahipse, şerit öğesi için bir işaretçi alır.
+Belirtilen veri ve görünürlüğe sahipse, bir işaretçiyi şerit öğesine alır.
 
 ```
 CMFCRibbonBaseElement* FindByData(
@@ -798,23 +798,23 @@ CMFCRibbonBaseElement* FindByData(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwData*<br/>
-'ndaki Şerit öğesiyle ilişkili veriler.
+*Dwdata*<br/>
+[içinde] Şerit öğesi ile ilişkili veriler.
 
-*yalnızca bvisible*<br/>
-'ndaki Yalnızca görünür Şerit öğelerini aramak için TRUE; Tüm Şerit öğelerini aramak için FALSE.
+*bVisibleOnly*<br/>
+[içinde] Yalnızca görünür şerit öğelerini aramak için TRUE; Tüm şerit öğelerini aramak için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen verilere ve görünürlüğe sahipse, Ribbon öğesine yönelik bir işaretçi; Aksi takdirde NULL.
+Belirtilen veri ve görünürlüğe sahipse şerit öğesiiçin bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesi, Şerit düğmesi veya Şerit kategorisi ya da şerit kaydırıcı gibi şerit 'e ekleyebileceğiniz herhangi bir denetimdir.
+Şerit öğesi, şerit düğmesi, şerit kategorisi veya şerit kaydırıcısı gibi şeritlere ekleyebileceğiniz herhangi bir denetimdir.
 
-##  <a name="findbyid"></a>CMFCRibbonBar:: Findbyıd
+## <a name="cmfcribbonbarfindbyid"></a><a name="findbyid"></a>CMFCRibbonBar::FindByID
 
-Belirtilen komut KIMLIĞINE ve arama değerlerine sahip şerit öğesi için bir işaretçi alır.
+Belirtilen komut kimliği ve arama değerlerine sahip şerit öğesi için bir işaretçi alır.
 
 ```
 CMFCRibbonBaseElement* FindByID(
@@ -825,28 +825,28 @@ CMFCRibbonBaseElement* FindByID(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıımıdıd*<br/>
-'ndaki Şerit öğesi için komut KIMLIĞI.
+*uiCmdID*<br/>
+[içinde] Şerit öğesi için komut kimliği.
 
-*yalnızca bvisible*<br/>
-'ndaki Yalnızca görünür Şerit öğelerini aramak için TRUE; Tüm Şerit öğelerini aramak için FALSE.
+*bVisibleOnly*<br/>
+[içinde] Yalnızca görünür şerit öğelerini aramak için TRUE; Tüm şerit öğelerini aramak için FALSE.
 
 *bExcludeQAT*<br/>
-'ndaki Hızlı erişim araç çubuğu öğelerini aramadan dışlamak için TRUE; Aksi takdirde, FALSE.
+[içinde] Hızlı erişim araç çubuğu öğelerini aramadan dışlamak için TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen komut KIMLIĞINE ve arama değerlerine sahipse, Ribbon öğesine yönelik bir işaretçi. Aksi takdirde, NULL.
+Belirtilen komut kimliği ve arama değerleri varsa bir şerit öğesi için bir işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesi, Şerit düğmesi veya Şerit kategorisi ya da şerit kaydırıcı gibi şerit 'e eklenebilen herhangi bir şerit denetimidir.
+Şerit öğesi, şerit düğmesi veya şerit kategorisi veya şerit kaydırıcısı gibi şerit lere eklenebilecek herhangi bir şerit denetimidir.
 
-Genel olarak, aynı komut KIMLIĞINE sahip birden fazla şerit öğesi olabilir. Belirtilen komut KIMLIĞINI kullanan tüm şerit öğelerine işaretçiler almak istiyorsanız [CMFCRibbonBar:: GetElementsById](#getelementsbyid) metodunu kullanın.
+Genel olarak, aynı komut kimliğine sahip birden fazla şerit öğesi olabilir. Belirli bir komut kimliği kullanan tüm şerit öğeleriiçin işaretçiler almak istiyorsanız, [CMFCRibbonBar kullanın::GetElementsByID](#getelementsbyid) yöntemi.
 
-##  <a name="findcategoryindexbydata"></a>CMFCRibbonBar:: Findcategoryındexbydata
+## <a name="cmfcribbonbarfindcategoryindexbydata"></a><a name="findcategoryindexbydata"></a>CMFCRibbonBar::FindCategoryIndexbyData
 
-Belirtilen verileri içeren Şerit kategorisinin dizinini alır.
+Belirtilen verileri içeren şerit kategorisinin dizinini alır.
 
 ```
 int FindCategoryIndexByData(DWORD dwData) const;
@@ -854,16 +854,16 @@ int FindCategoryIndexByData(DWORD dwData) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*dwData*<br/>
-'ndaki Şerit kategorisiyle ilişkili veriler.
+*Dwdata*<br/>
+[içinde] Şerit kategorisiile ilişkili veriler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa Şerit kategorisinin sıfır tabanlı dizini; Aksi takdirde-1.
+Yöntem başarılı olduysa şerit kategorisinin sıfır tabanlı dizin; aksi takdirde -1.
 
-##  <a name="forcerecalclayout"></a>CMFCRibbonBar:: ForceRecalcLayout
+## <a name="cmfcribbonbarforcerecalclayout"></a><a name="forcerecalclayout"></a>CMFCRibbonBar::ForceRecalcLayout
 
-Şerit çubuğu ve üst penceredeki tüm öğelerin yerleşimini ayarlar ve tüm pencereyi yeniden çizer.
+Şerit çubuğundaki ve üst penceredeki tüm öğelerin düzenini ayarlar ve tüm pencereyi yeniden çizer.
 
 ```
 void ForceRecalcLayout();
@@ -871,9 +871,9 @@ void ForceRecalcLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getactivecategory"></a>CMFCRibbonBar:: GetActiveCategory
+## <a name="cmfcribbonbargetactivecategory"></a><a name="getactivecategory"></a>CMFCRibbonBar::GetActiveKategori
 
-Etkin şerit kategorisine yönelik bir işaretçi alır.
+Etkin şerit kategorisiiçin bir işaretçi alır.
 
 ```
 CMFCRibbonCategory* GetActiveCategory() const;
@@ -881,15 +881,15 @@ CMFCRibbonCategory* GetActiveCategory() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Etkin şerit kategorisine yönelik bir işaretçi; ya da hiçbir kategori etkin değilse NULL.
+Etkin şerit kategorisiiçin bir işaretçi; veya hiçbir kategori etkin değilse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Odağa sahipse kategori etkin olur. Varsayılan olarak, etkin kategori, şerit çubuğunun sol tarafındaki ilk kategorisidir.
+Bir kategori, odak noktası varsa etkindir. Varsayılan olarak, etkin kategori şerit çubuğunun sol tarafındaki ilk kategoridir.
 
 Kullanıcı uygulama düğmesine bastığında ana kategori görüntülenir ve etkin kategori olamaz.
 
-##  <a name="getapplicationbutton"></a>CMFCRibbonBar:: GetApplicationButton
+## <a name="cmfcribbonbargetapplicationbutton"></a><a name="getapplicationbutton"></a>CMFCRibbonBar::Uygulama Düğmesi Alın
 
 Uygulama düğmesine bir işaretçi alır.
 
@@ -899,11 +899,11 @@ CMFCRibbonApplicationButton* GetApplicationButton() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulama düğmesine yönelik bir işaretçi; ya da düğme ayarlanmamışsa NULL.
+Uygulama düğmesine işaretçi; veya düğme ayarlanmadıysa NULL.
 
-##  <a name="getcaptionheight"></a>CMFCRibbonBar:: GetCaptionHeight
+## <a name="cmfcribbonbargetcaptionheight"></a><a name="getcaptionheight"></a>CMFCRibbonBar::GetCaptionHeight
 
-Şerit çubuğu için başlık alanının yüksekliğini alır.
+Şerit çubuğunun resim yazısı alanının yüksekliğini alır.
 
 ```
 int GetCaptionHeight() const;
@@ -911,13 +911,13 @@ int GetCaptionHeight() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit çubuğu için başlık alanının piksel cinsinden yüksekliği.
+Şerit çubuğunun resim yazısı alanının piksel olarak yüksekliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcategory"></a>CMFCRibbonBar:: GetCategory
+## <a name="cmfcribbonbargetcategory"></a><a name="getcategory"></a>CMFCRibbonBar::GetCategory
 
-Belirtilen dizindeki şerit kategorisine yönelik bir işaretçi alır.
+Belirtilen dizinde şerit kategorisine bir işaretçi alır.
 
 ```
 CMFCRibbonCategory* GetCategory(int nIndex) const;
@@ -925,16 +925,16 @@ CMFCRibbonCategory* GetCategory(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-'ndaki Şerit çubuğunda bulunan Şerit kategorileri listesindeki bir Şerit kategorisinin sıfır tabanlı dizini.
+*Nındex*<br/>
+[içinde] Şerit çubuğunda bulunan şerit kategorileri listesinde şerit kategorisinin sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizindeki şerit kategorisine yönelik bir işaretçi; Aksi takdirde, *nIndex* aralığın dışında ise null.
+Belirtilen dizinde şerit kategorisiiçin bir işaretçi; aksi takdirde, null eğer *nIndex* kapsama alanı dışında idi.
 
-##  <a name="getcategorycount"></a>CMFCRibbonBar:: GetCategoryCount
+## <a name="cmfcribbonbargetcategorycount"></a><a name="getcategorycount"></a>CMFCRibbonBar::GetCategoryCount
 
-Şerit çubuğundaki şerit kategorilerinin sayısını alır.
+Şerit çubuğundaki şerit kategorileri sayısını alır.
 
 ```
 int GetCategoryCount() const;
@@ -944,7 +944,7 @@ int GetCategoryCount() const;
 
 Şerit çubuğundaki şerit kategorilerinin sayısı.
 
-##  <a name="getcategoryheight"></a>CMFCRibbonBar:: GetCategoryHeight
+## <a name="cmfcribbonbargetcategoryheight"></a><a name="getcategoryheight"></a>CMFCRibbonBar::GetCategoryHeight
 
 Kategorinin yüksekliğini alır.
 
@@ -958,9 +958,9 @@ Kategorinin yüksekliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kategori yüksekliği Kategori sekmesinin yüksekliğini içerir.
+Kategori yüksekliği, kategori sekmesinin yüksekliğini içerir.
 
-##  <a name="getcategoryindex"></a>CMFCRibbonBar:: Getcategoryındex
+## <a name="cmfcribbonbargetcategoryindex"></a><a name="getcategoryindex"></a>CMFCRibbonBar::GetCategoryIndex
 
 Belirtilen şerit kategorisinin dizinini alır.
 
@@ -970,16 +970,16 @@ int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pCategory*<br/>
-'ndaki Şerit kategorisine yönelik işaretçi.
+*pKategori*<br/>
+[içinde] Şerit kategorisine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*PCategory*; tarafından belirtilen Şerit kategorisinin sıfır tabanlı dizini or-1 Şerit kategorisi bulunmazsa.
+*pCategory*tarafından belirtilen bir şerit kategorisinin sıfır tabanlı dizin; veya -1 şerit kategorisi bulunamazsa.
 
-##  <a name="getcontextname"></a>CMFCRibbonBar:: GetContextName
+## <a name="cmfcribbonbargetcontextname"></a><a name="getcontextname"></a>CMFCRibbonBar::GetContextName
 
-Bağlam KIMLIĞI tarafından belirtilen bağlam kategorisi yazısının adını alır.
+Bağlam kimliği yle belirtilen bağlam kategori alt yazısının adını alır.
 
 ```
 BOOL GetContextName(
@@ -989,19 +989,19 @@ BOOL GetContextName(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uııtextıd*<br/>
-'ndaki Şerit kategorisi bağlam KIMLIĞI.
+*uiContextID*<br/>
+[içinde] Şerit kategorisi bağlam kimliği.
 
 *strName*<br/>
-dışı Bağlam kategorisi yazısının adı.
+[çıkış] Bağlam kategorisi alt yazısının adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa doğru; Aksi takdirde, *Uııtextıd* sıfırsa veya bağlam kategorisi BAŞLıĞı bulunmazsa yanlış olur.
+Yöntem başarılı olsaydı DOĞRU; aksi takdirde, *uiContextID* sıfır veya bağlam kategori başlığı bulunamadı ise FALSE.
 
-##  <a name="getdroppeddown"></a>CMFCRibbonBar:: Getdroppedaşağı
+## <a name="cmfcribbonbargetdroppeddown"></a><a name="getdroppeddown"></a>CMFCRibbonBar::GetDroppedDown
 
-Şu anda açılmış olan Şerit öğesini alır.
+Şu anda bırakılan şerit öğesini alır.
 
 ```
 virtual CMFCRibbonBaseElement* GetDroppedDown();
@@ -1009,13 +1009,13 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda aşağı açılmış şerit öğesi; veya şu anda bir şerit öğesi bırakılmadığı takdirde NULL.
+Şu anda bırakılan şerit öğesi; veya null şu anda hiçbir şerit öğesi düştü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getelementsbyid"></a>CMFCRibbonBar:: GetElementsById
+## <a name="cmfcribbonbargetelementsbyid"></a><a name="getelementsbyid"></a>CMFCRibbonBar::GetElementsByID
 
-Belirli bir komut KIMLIĞINE sahip olan tüm şerit öğelerine bir işaretçiler dizisi alır.
+Belirli bir komut kimliğine sahip tüm şerit öğeleri için bir dizi işaretçi alır.
 
 ```
 void GetElementsByID(
@@ -1025,19 +1025,19 @@ void GetElementsByID(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıımıdıd*<br/>
-'ndaki Şerit öğesinin komut KIMLIĞI.
+*uiCmdID*<br/>
+[içinde] Şerit öğesinin komut kimliği.
 
-*Arbutton 'lar*<br/>
-dışı Şerit öğelerine işaretçiler dizisi.
+*arButtons*<br/>
+[çıkış] Şerit öğeleriiçin işaretçiler dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı Şerit öğeleri hızlı erişim araç çubuğuna kopyalanabileceğinden, birden çok şerit öğesi aynı komut KIMLIĞINE sahip olabilir.
+Bazı şerit öğeleri hızlı erişim araç çubuğuna kopyalanabileceğinden, birden çok şerit öğesi aynı komut kimliğine sahip olabilir.
 
-##  <a name="gethideflags"></a>CMFCRibbonBar:: GetHideFlags
+## <a name="cmfcribbonbargethideflags"></a><a name="gethideflags"></a>CMFCRibbonBar::GetHideFlags
 
-Şerit çubuğunun ne kadarının görünür olduğunu belirten bayrakları alır.
+Şerit çubuğunun ne kadarının görünür olduğunu gösteren bayrakları alır.
 
 ```
 DWORD GetHideFlags() const;
@@ -1045,20 +1045,20 @@ DWORD GetHideFlags() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit çubuğunun ne kadarının görünür olduğunu gösteren Bayraklar.
+Şerit çubuğunun ne kadarının görünür olduğunu gösteren bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki tabloda, dönüş değeri için olası bayrakların birleşimi listelenmektedir:
+Aşağıdaki tabloda, iade değeri için olası bayrak bileşimi listelenir:
 
 |||
 |-|-|
-|AFX_RIBBONBAR_HIDE_ELEMENTS|Şerit çubuğu dikey olarak küçültülür ve yalnızca kategori sekmeleri, Ana düğme ve hızlı erişim araç çubuğu görünür.  |
-|AFX_RIBBONBAR_HIDE_ALL|Şerit çubuğunun genişliği, en küçük genişlikden küçüktür ve tamamen gizlidir.  |
+|AFX_RIBBONBAR_HIDE_ELEMENTS|Şerit çubuğu dikey olarak en aza indirgenir ve yalnızca kategori sekmeleri, ana düğme ve hızlı erişim araç çubuğu görünür.  |
+|AFX_RIBBONBAR_HIDE_ALL|Şerit çubuğunun genişliği minimum genişlikinden daha azdır ve tamamen gizlidir.  |
 
-##  <a name="getitemidslist"></a>CMFCRibbonBar:: Getıtemıdslist
+## <a name="cmfcribbonbargetitemidslist"></a><a name="getitemidslist"></a>CMFCRibbonBar::GetItemIDsListesi
 
-Şerit çubuğunda belirtilen şerit öğeleri koleksiyonu için komut kimliklerini alır.
+Şerit çubuğunda belirtilen şerit öğeleri koleksiyonu için komut tanımlarını alır.
 
 ```
 void GetItemIDsList(CList<UINT, UINT>& lstItems,
@@ -1067,17 +1067,17 @@ void GetItemIDsList(CList<UINT, UINT>& lstItems,
 
 ### <a name="parameters"></a>Parametreler
 
-*Lstilıtems*<br/>
-dışı Şerit çubuğunda bulunan şerit öğeleri için komut kimliklerinin listesi.
+*lstÖğeler*<br/>
+[çıkış] Şerit çubuğunda bulunan şerit öğeleri için komut iT'leri listesi.
 
-*yalnızca bhidden*<br/>
-'ndaki Görüntülenen Şerit öğelerini dışlamak için TRUE; Şerit çubuğuna tüm Şerit öğelerini eklemek için FALSE.
+*bHiddenOnly*<br/>
+[içinde] Görüntülenen şerit öğelerini dışlamak için TRUE; Tüm şerit öğelerini şerit çubuğuna eklemek için YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getkeyboardnavigationlevel"></a>CMFCRibbonBar:: GetKeyboardNavigationLevel
+## <a name="cmfcribbonbargetkeyboardnavigationlevel"></a><a name="getkeyboardnavigationlevel"></a>CMFCRibbonBar::GetKeyboardNavigationLevel
 
-Kullanıcı Şerit çubuğunda bulunan KeyTips 'a bastığında geçerli gezinti düzeyini alır.
+Kullanıcı şerit çubuğunda bulunan anahtar uçlarına bastığında geçerli gezinti düzeyini alır.
 
 ```
 int GetKeyboardNavigationLevel() const;
@@ -1085,17 +1085,17 @@ int GetKeyboardNavigationLevel() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı olarak, Şerit çubuğunda bulunan KeyTips 'a bastığı geçerli gezinti düzeyi. Aşağıdaki tabloda olası dönüş değerleri listelenmektedir:
+Kullanıcı şerit çubuğunda bulunan anahtar uçlarını bastırırken geçerli gezinti düzeyi. Aşağıdaki tablo olası iade değerlerini listeler:
 
 |||
 |-|-|
-|-1|KeyTips gösterilmez.|
-|0|KeyTips görüntülenir.|
-|1\.|Kullanıcı, görüntülenmiş bir KeyTip 'e bastmış.|
+|-1|Anahtar uçları görüntülenmez.|
+|0|Anahtar uçları görüntülenir.|
+|1|Kullanıcı görüntülenen bir tuş ucuna bastı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getkeyboardnavlevelcurrent"></a>CMFCRibbonBar:: GetKeyboardNavLevelCurrent
+## <a name="cmfcribbonbargetkeyboardnavlevelcurrent"></a><a name="getkeyboardnavlevelcurrent"></a>CMFCRibbonBar::GetKeyboardNavLevelCurrent
 
 Şerit çubuğundaki geçerli klavye gezinti nesnesini alır.
 
@@ -1105,13 +1105,13 @@ CObject* GetKeyboardNavLevelCurrent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit çubuğundaki geçerli klavye gezinti nesnesi; Aksi halde hiçbir nesne şu anda KeyTips görüntülüyorsa NULL.
+Şerit çubuğundaki geçerli klavye gezinti nesnesi; aksi takdirde hiçbir nesne şu anda tuş ipuçlarını görüntüler null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda KeyTips görüntüleyen nesne, geçerli klavye gezintisi nesnesidir.
+Tuş uçlarını görüntüleyen nesne geçerli klavye gezinti nesnesidir.
 
-##  <a name="getkeyboardnavlevelparent"></a>CMFCRibbonBar:: GetKeyboardNavLevelParent
+## <a name="cmfcribbonbargetkeyboardnavlevelparent"></a><a name="getkeyboardnavlevelparent"></a>CMFCRibbonBar::GetKeyboardNavLevelParent
 
 Şerit çubuğundaki üst klavye gezinti nesnesini alır.
 
@@ -1121,15 +1121,15 @@ CObject* GetKeyboardNavLevelParent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit çubuğundaki üst klavye gezinti nesnesi; Aksi takdirde NULL.
+Şerit çubuğundaki üst klavye gezinti nesnesi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı Şerit çubuğundaki bir KeyTip tuşuna bastığında, geçerli klavye gezinti nesnesi üst klavye gezinti nesnesi haline gelir.
+Kullanıcı şerit çubuğunda bir tuş ucuna bastığında, geçerli klavye gezinti nesnesi üst klavye gezinti nesnesi olur.
 
-##  <a name="getmaincategory"></a>CMFCRibbonBar:: GetMainCategory
+## <a name="cmfcribbonbargetmaincategory"></a><a name="getmaincategory"></a>CMFCRibbonBar::GetMainCategory
 
-Ana şerit kategorisine bir işaretçi alır.
+Ana şerit kategorisiiçin bir işaretçi alır.
 
 ```
 CMFCRibbonCategory* GetMainCategory() const;
@@ -1137,15 +1137,15 @@ CMFCRibbonCategory* GetMainCategory() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ana şerit kategorisine yönelik bir işaretçi.
+Ana şerit kategorisiiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ana Şerit kategorisi, ana şerit panelini içerir.
+Ana şerit kategorisi ana şerit panelini içerir.
 
-##  <a name="getqatcommandslocation"></a>CMFCRibbonBar:: GetQATCommandsLocation
+## <a name="cmfcribbonbargetqatcommandslocation"></a><a name="getqatcommandslocation"></a>CMFCRibbonBar::GetQATCommandsLocation
 
-Hızlı erişim araç çubuğunun komutlar bölümünün görüntüleme dikdörtgenini alır.
+Hızlı erişim araç çubuğunun komutlar bölümü için ekran dikdörtgenini alır.
 
 ```
 CRect GetQATCommandsLocation() const;
@@ -1153,15 +1153,15 @@ CRect GetQATCommandsLocation() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlı erişim araç çubuğunun komutlar bölümü için dikdörtgen görüntülenir.
+Hızlı erişim araç çubuğunun komutlar bölümünün ekran dikdörtgeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görüntü dikdörtgeninin komutlar bölümü özelleştirme düğmesini içermez.
+Ekran dikdörtgeninin komutlar bölümünde özelleştirme düğmesi içermez.
 
-##  <a name="getqatdroppeddown"></a>CMFCRibbonBar:: Getqatdroppedaşağı
+## <a name="cmfcribbonbargetqatdroppeddown"></a><a name="getqatdroppeddown"></a>CMFCRibbonBar::GetQATDroppedDown
 
-Hızlı erişim araç çubuğunda, açılır menü açılan menüsünde şerit öğesine bir işaretçi alır.
+Açılır menüsüaşağı bırakılan hızlı erişim araç çubuğundaki şerit öğesiiçin bir işaretçi alır.
 
 ```
 CMFCRibbonBaseElement* GetQATDroppedDown();
@@ -1169,13 +1169,13 @@ CMFCRibbonBaseElement* GetQATDroppedDown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlı erişim araç çubuğunda, açılır menü açılan menüsünde şerit öğesine yönelik bir işaretçi.
+Açılır menüsünü kaldıran hızlı erişim araç çubuğundaki şerit öğesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getquickaccesscommands"></a>CMFCRibbonBar:: GetQuickAccessCommands
+## <a name="cmfcribbonbargetquickaccesscommands"></a><a name="getquickaccesscommands"></a>CMFCRibbonBar::GetQuickAccessKomutları
 
-Hızlı erişim araç çubuğundaki Şerit öğeleri için komut kimliklerinin bir listesini alır.
+Hızlı erişim araç çubuğundaki şerit öğeleri için komut iDiler listesini alır.
 
 ```
 void GetQuickAccessCommands(CList<UINT,UINT>& lstCommands);
@@ -1183,16 +1183,16 @@ void GetQuickAccessCommands(CList<UINT,UINT>& lstCommands);
 
 ### <a name="parameters"></a>Parametreler
 
-*lstCommands*<br/>
-dışı Hızlı erişim araç çubuğundaki Şerit öğeleri için komut kimliklerinin listesi.
+*lstKomutlar*<br/>
+[çıkış] Hızlı erişim araç çubuğundaki şerit öğeleriiçin komut iDiler listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste, denetim ayırıcılarına sahip şerit öğeleri içermez.
+Liste, denetim ayırıcıları olan şerit öğeleri içermez.
 
-##  <a name="getquickaccesstoolbarlocation"></a>CMFCRibbonBar:: GetQuickAccessToolbarLocation
+## <a name="cmfcribbonbargetquickaccesstoolbarlocation"></a><a name="getquickaccesstoolbarlocation"></a>CMFCRibbonBar::GetQuickAccessToolbarLocation
 
-Hızlı erişim araç çubuğu için görüntüleme dikdörtgenini alır.
+Hızlı erişim araç çubuğu için ekran dikdörtgenini alır.
 
 ```
 CRect GetQuickAccessToolbarLocation() const;
@@ -1200,13 +1200,13 @@ CRect GetQuickAccessToolbarLocation() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlı erişim araç çubuğu için görünür dikdörtgen.
+Hızlı erişim araç çubuğu için ekran dikdörtgeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gettabtrancateratio"></a>CMFCRibbonBar:: GetTabTrancateRatio
+## <a name="cmfcribbonbargettabtrancateratio"></a><a name="gettabtrancateratio"></a>CMFCRibbonBar::GetTabTrancateRatio
 
-Kategori sekmelerinin görüntü genişliğinin yüzde cinsinden boyutunu alır.
+Kategori sekmelerinin ekran genişliğindeki yüzde boyutu küçültmeyi alır.
 
 ```
 int GetTabTrancateRatio() const;
@@ -1214,15 +1214,15 @@ int GetTabTrancateRatio() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kategori sekmelerinin görüntü genişliğinin yüzde cinsinden azalma.
+Kategori sekmelerinin ekran genişliğindeki yüzde boyutu küçültme.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit çubuğunda yeterli genişlik yoksa kategori sekmeleri genişlik olarak azalır.
+Şerit çubuğunda yeterli genişlik olmadığında kategori sekmeleri genişlik olarak küçültülür.
 
-##  <a name="gettooltipfixedwidthlargeimage"></a>CMFCRibbonBar:: GetTooltipFixedWidthLargeImage
+## <a name="cmfcribbonbargettooltipfixedwidthlargeimage"></a><a name="gettooltipfixedwidthlargeimage"></a>CMFCRibbonBar::GetTooltipFixedWidthLargeImage
 
-Şerit çubuğu için araç ipucu genişliğinin büyük boyutunu alır.
+Şerit çubuğu için araç ucu genişliğinin büyük boyutunu alır.
 
 ```
 int GetTooltipFixedWidthLargeImage() const;
@@ -1230,15 +1230,15 @@ int GetTooltipFixedWidthLargeImage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucu genişliğinin piksel cinsinden büyük boyutu.
+Piksellerde araç ucu genişliğinin büyük boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipucu genişliğinin büyük boyutu 0 ise genişlik değişir.
+Takım ucu genişliğinin büyük boyutu 0 ise, genişlik değişir.
 
-##  <a name="gettooltipfixedwidthregular"></a>CMFCRibbonBar:: GetTooltipFixedWidthRegular
+## <a name="cmfcribbonbargettooltipfixedwidthregular"></a><a name="gettooltipfixedwidthregular"></a>CMFCRibbonBar::GetTooltipFixedWidthRegular
 
-Şerit çubuğu için araç ipucu genişliğinin normal boyutunu alır.
+Şerit çubuğu için araç ucu genişliğinin normal boyutunu alır.
 
 ```
 int GetTooltipFixedWidthRegular() const;
@@ -1246,15 +1246,15 @@ int GetTooltipFixedWidthRegular() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucu genişliğinin piksel cinsinden normal boyutu.
+Piksellerde araç ucu genişliğinin normal boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipucu genişliğinin normal boyutu 0 ise genişlik değişir.
+Takım ucu genişliğinin normal boyutu 0 ise, genişlik değişir.
 
-##  <a name="getvisiblecategorycount"></a>CMFCRibbonBar:: GetVisibleCategoryCount
+## <a name="cmfcribbonbargetvisiblecategorycount"></a><a name="getvisiblecategorycount"></a>CMFCRibbonBar::GetVisibleCategoryCount
 
-Şerit çubuğundaki görünür kategori sayısını alır.
+Şerit çubuğundaki görünür kategorilerin sayısını alır.
 
 ```
 int GetVisibleCategoryCount() const;
@@ -1262,11 +1262,11 @@ int GetVisibleCategoryCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit çubuğundaki görünür kategori sayısı.
+Şerit çubuğundaki görünür kategorilerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hideallcontextcategories"></a>CMFCRibbonBar:: HideAllContextCategories
+## <a name="cmfcribbonbarhideallcontextcategories"></a><a name="hideallcontextcategories"></a>CMFCRibbonBar::HideAllContextCategories
 
 Şerit çubuğundaki tüm bağlam kategorilerini gizler.
 
@@ -1276,15 +1276,15 @@ BOOL HideAllContextCategories();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En az bir bağlam kategorisi gizliyse TRUE; Aksi takdirde, FALSE.
+En az bir bağlam kategorisi gizliyse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bağlam kategorisi etkinse, etkin Kategori Kategori listesindeki ilk görünür kategoriye sıfırlanır.
+Bağlam kategorisi etkinse, etkin kategori kategori listesindeki ilk görünür kategoriye sıfırlanır.
 
-##  <a name="hidekeytips"></a>CMFCRibbonBar:: HideKeyTips
+## <a name="cmfcribbonbarhidekeytips"></a><a name="hidekeytips"></a>CMFCRibbonBar::HideKeyTips
 
-Şerit çubuğundaki tüm KeyTips ' i gizler.
+Şerit çubuğundaki tüm tuş uçlarını gizler.
 
 ```
 void HideKeyTips();
@@ -1292,9 +1292,9 @@ void HideKeyTips();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hittest"></a>CMFCRibbonBar:: HitTest
+## <a name="cmfcribbonbarhittest"></a><a name="hittest"></a>CMFCRibbonBar::HitTest
 
-Noktanın konumu tarafından belirtilen şerit öğesi için bir işaretçi alır.
+Noktanın konumuna göre belirtilen şerit öğesiiçin bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* HitTest(
@@ -1305,26 +1305,26 @@ virtual CMFCRibbonBaseElement* HitTest(
 
 ### <a name="parameters"></a>Parametreler
 
-*seçeneğinin*<br/>
-'ndaki Şerit çubuğu koordinatlarındaki noktanın konumu.
+*Nokta*<br/>
+[içinde] Şerit çubuğu koordinatlarında noktanın konumu.
 
-*bCheckActiveCategory*<br/>
-'ndaki Etkin kategoride arama yapmak için TRUE; Etkin kategoride arama yapmak için yanlış.
+*bCheckActiveKategori*<br/>
+[içinde] Etkin kategoride arama yapmak için DOĞRU; Etkin kategoride arama yapmak için FALSE değil.
 
 *bCheckPanelCaption*<br/>
-'ndaki Şerit panelinin başlığını içinde bulunan bir nokta ile test etmek için TRUE; Şerit panelinin açıklamalı alt yazısının bulunduğu nokta ile test etmek için yanlış. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+[içinde] Doğru içinde bulunan nokta ile şerit panelinin başlık test etmek için; YanLIŞ içinde bulunan nokta ile şerit panelinin başlık test etmek için değil. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen noktada şerit öğesi için bir işaretçi; Aksi takdirde, nokta bir şerit öğesinde yer alıyorsa NULL.
+Belirtilen noktada bulunan şerit öğesi için bir işaretçi; aksi takdirde nokta bir şerit öğesinde bulunmuyorsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Kcheckactivecategory* parametresi true olmadığı takdirde şerit panelinin başlık metni, içinde bulunan nokta ile test edilmez.
+*bCheckActiveCategory* parametresi DOĞRU olmadığı sürece içinde nokta bulunan şerit panelinin alt yazısı test edilmez.
 
-##  <a name="iskeytipenabled"></a>CMFCRibbonBar:: ıskeytipenabled
+## <a name="cmfcribbonbariskeytipenabled"></a><a name="iskeytipenabled"></a>CMFCRibbonBar::IsKeyTipEnabled
 
-KeyTips özelliğinin etkinleştirilip etkinleştirilmediğini gösterir.
+Anahtar uçları özelliğinin etkin olup olmadığını gösterir.
 
 ```
 BOOL IsKeyTipEnabled() const;
@@ -1332,9 +1332,9 @@ BOOL IsKeyTipEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-KeyTips özelliği etkinse doğru; Aksi halde yanlış.
+Tuş ipuçları özelliği etkinse TRUE; aksi takdirde YANLIŞ.
 
-##  <a name="ismainribbonbar"></a>CMFCRibbonBar:: IsMainRibbonBar
+## <a name="cmfcribbonbarismainribbonbar"></a><a name="ismainribbonbar"></a>CMFCRibbonBar::IsmainRibbonBar
 
 Şerit çubuğunun birincil şerit çubuğu olup olmadığını gösterir.
 
@@ -1348,11 +1348,11 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür. Şerit çubuğunun birincil şerit çubuğu olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman TRUE döndürür. Şerit çubuğunun birincil şerit çubuğu olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="isprintpreviewenabled"></a>CMFCRibbonBar:: ısprintönizleme etkin
+## <a name="cmfcribbonbarisprintpreviewenabled"></a><a name="isprintpreviewenabled"></a>CMFCRibbonBar::IsprintPreviewEnabled
 
-**Baskı Önizleme** özelliğinin etkin olup olmadığını gösterir.
+**Yazdırma Önizleme** özelliğinin etkin olup olmadığını gösterir.
 
 ```
 BOOL IsPrintPreviewEnabled() const;
@@ -1360,11 +1360,11 @@ BOOL IsPrintPreviewEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**Baskı Önizleme** ÖZELLIĞI etkinse doğru; Aksi halde yanlış.
+**Yazdırma Önizleme** özelliği etkinse TRUE; aksi takdirde YANLIŞ.
 
-##  <a name="isqatempty"></a>CMFCRibbonBar:: ısqatempty
+## <a name="cmfcribbonbarisqatempty"></a><a name="isqatempty"></a>CMFCRibbonBar::IsQATEmpty
 
-Hızlı erişim araç çubuğunun komut düğmelerini içerip içermediğini gösterir.
+Hızlı erişim araç çubuğunun komut düğmeleri bulunup içermediğini gösterir.
 
 ```
 BOOL IsQATEmpty() const;
@@ -1372,13 +1372,13 @@ BOOL IsQATEmpty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlı erişim araç çubuğu komut düğmelerini içeriyorsa, doğru. Aksi halde yanlış.
+Hızlı erişim araç çubuğu komut düğmeleri içeriyorsa TRUE; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isquickaccesstoolbarontop"></a>CMFCRibbonBar:: IsQuickAccessToolbarOnTop
+## <a name="cmfcribbonbarisquickaccesstoolbarontop"></a><a name="isquickaccesstoolbarontop"></a>CMFCRibbonBar::IsQuickAccessToolbarOnTop
 
-Hızlı erişim araç çubuğunun şerit çubuğunun üzerinde mi yoksa altında mı olduğunu gösterir.
+Hızlı erişim araç çubuğunun şerit çubuğunun üzerinde mi yoksa altında mı bulunduğunu gösterir.
 
 ```
 BOOL IsQuickAccessToolbarOnTop() const;
@@ -1386,11 +1386,11 @@ BOOL IsQuickAccessToolbarOnTop() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlı erişim araç çubuğu şerit çubuğu üzerinde bulunuyorsa TRUE; Hızlı erişim araç çubuğu şerit çubuğunun altında bulunuyorsa FALSE.
+Hızlı erişim araç çubuğu şerit çubuğunun üzerinde bulunuyorsa DOĞRU; Hızlı erişim araç çubuğu şerit çubuğunun altında bulunuyorsa FALSE.
 
-##  <a name="isreplaceframecaption"></a>CMFCRibbonBar:: ısreplaceframecaption
+## <a name="cmfcribbonbarisreplaceframecaption"></a><a name="isreplaceframecaption"></a>CMFCRibbonBar::IsreplaceFrameCaption
 
-Şerit çubuğunun, ana çerçeve penceresinin açıklamalı alt yazısının altında mi yoksa altında mı olduğunu gösterir.
+Şerit çubuğunun ana çerçeve penceresinin alt yazısının altında mı yoksa değiştirip değiştirmediğini gösterir.
 
 ```
 BOOL IsReplaceFrameCaption() const;
@@ -1398,11 +1398,11 @@ BOOL IsReplaceFrameCaption() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit çubuğu, ana çerçeve penceresinin açıklamalı alt yazısının yerini alıyorsa TRUE; Şerit çubuğu ana çerçeve penceresinin alt yazısının altındaysa yanlış.
+Şerit çubuğu ana çerçeve penceresinin alt yazısını değiştirirse DOĞRU; Şerit çubuğu ana çerçeve penceresinin alt yazısının altındaysa YANLIŞ.
 
-##  <a name="isshowgroupborder"></a>CMFCRibbonBar:: ısshowgroupborder
+## <a name="cmfcribbonbarisshowgroupborder"></a><a name="isshowgroupborder"></a>CMFCRibbonBar::IsShowGroupBorder
 
-Şerit çubuğunda bulunan düğme gruplarının bir grup kenarlığı görüntüleyip görüntülemediğini gösterir.
+Şerit çubuğunda bulunan düğme gruplarının bir grup kenarlığı gösterip göstermediğini gösterir.
 
 ```
 virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
@@ -1411,7 +1411,7 @@ virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-'ndaki Bu parametre kullanılmaz.
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1419,11 +1419,11 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Şerit çubuğunda bulunan düğme gruplarının bir grup kenarlığı görüntüleyip görüntülememeyeceğini belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Şerit çubuğunda bulunan düğme gruplarının bir grup kenarlığı gösterip göstermediğini belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="istooltipdescrenabled"></a>CMFCRibbonBar:: IsToolTipDescrEnabled
+## <a name="cmfcribbonbaristooltipdescrenabled"></a><a name="istooltipdescrenabled"></a>CMFCRibbonBar::IsToolTipDescrEnabled
 
-Araç ipucu açıklamalarının etkinleştirilip etkinleştirilmeyeceğini gösterir.
+Araç ipucu açıklamalarının etkin olup olmadığını gösterir.
 
 ```
 BOOL IsToolTipDescrEnabled() const;
@@ -1431,15 +1431,15 @@ BOOL IsToolTipDescrEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç İpucu açıklamaları etkinse doğru; Araç İpucu açıklamaları devre dışıysa FALSE.
+Araç ipucu açıklamaları etkinse DOĞRU; Araç ipucu açıklamaları devre dışı bırakılırsa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç İpucu açıklamaları, araç ipucu metniyle görüntülenen ek açıklayıcı metindir.
+Araç ipucu açıklamaları, araç ipucu metniyle birlikte görüntülenen ek açıklayıcı metindir.
 
-##  <a name="istooltipenabled"></a>CMFCRibbonBar:: ıstooltipenabled
+## <a name="cmfcribbonbaristooltipenabled"></a><a name="istooltipenabled"></a>CMFCRibbonBar::IsToolTipEnabled
 
-Şerit çubuğu için araç ipuçlarının etkin mi yoksa devre dışı mı olduğunu gösterir.
+Şerit çubuğu için araç uçlarının etkin veya devre dışı bırakıldığını gösterir.
 
 ```
 BOOL IsToolTipEnabled() const;
@@ -1447,11 +1447,11 @@ BOOL IsToolTipEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipuçları etkinse doğru; Araç ipuçları devre dışı bırakılmışsa FALSE.
+Araç uçları etkinse TRUE; Araç uçları devre dışı bırakılırsa YANLIŞ.
 
-##  <a name="istransparentcaption"></a>CMFCRibbonBar:: IsTransparentCaption
+## <a name="cmfcribbonbaristransparentcaption"></a><a name="istransparentcaption"></a>CMFCRibbonBar::IsTransparentCaption
 
-Ekran 'ın Windows Aero renk düzeni için ayarlanmış olup olmadığını gösterir.
+Ekranın Windows Aero renk düzeni için ayarlanıp ayarlmadığını gösterir.
 
 ```
 BOOL IsTransparentCaption() const;
@@ -1459,13 +1459,13 @@ BOOL IsTransparentCaption() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Renk düzeni Windows Aero ise doğru; Aksi halde yanlış.
+Renk düzeni Windows Aero ise DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onclickbutton"></a>CMFCRibbonBar:: OnClickButton
+## <a name="cmfcribbonbaronclickbutton"></a><a name="onclickbutton"></a>CMFCRibbonBar::ClickButton
 
-Bu yöntem, mevcut uygulamalarla geriye dönük uyumluluk için tutulur ve yeni geliştirme için kullanılmamalıdır.
+Bu yöntem, varolan uygulamalarla geriye doğru uyumluluk için korunur ve yeni geliştirme için kullanılmamalıdır.
 
 ```
 virtual void OnClickButton(
@@ -1475,15 +1475,15 @@ virtual void OnClickButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*pButton*<br/>
-'ndaki Tıklanan düğmeye yönelik işaretçi.
+*pDüğme*<br/>
+[içinde] Tıklanan düğmeye işaretleyin.
 
-*seçeneğinin*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Nokta*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="oneditcontextmenu"></a>CMFCRibbonBar:: OnEditContextMenu
+## <a name="cmfcribbonbaroneditcontextmenu"></a><a name="oneditcontextmenu"></a>CMFCRibbonBar::OnEditContextMenu
 
 ```
 virtual void OnEditContextMenu(
@@ -1493,14 +1493,14 @@ virtual void OnEditContextMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *pEdit*<br/>
-'ndaki *nokta*<br/>
+[içinde] *pEdit*<br/>
+[içinde] *nokta*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onrtlchanged"></a>CMFCRibbonBar:: OnRTLChanged
+## <a name="cmfcribbonbaronrtlchanged"></a><a name="onrtlchanged"></a>CMFCRibbonBar::OnRTLChanged
 
-Düzen yön değiştirdiğinde Framework tarafından çağırılır.
+Düzen yön değiştirdiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnRTLChanged(BOOL bIsRTL);
@@ -1509,15 +1509,15 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ### <a name="parameters"></a>Parametreler
 
 *bIsRTL*<br/>
-'ndaki Düzen sağdan sola ise doğru; Düzen soldan sağa ise FALSE.
+[içinde] Düzen sağdan sola doğruysa DOĞRU; Düzen soldan sağa ise YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, yeni düzen yönünün Şerit çubuğundaki tüm denetimlerin yerleşimini ayarlar.
+Bu yöntem, yeni düzen yönü için şerit çubuğundaki tüm denetimlerin düzenini ayarlar.
 
-##  <a name="onsetaccdata"></a>CMFCRibbonBar:: OnSetAccData
+## <a name="cmfcribbonbaronsetaccdata"></a><a name="onsetaccdata"></a>CMFCRibbonBar::OnsetaccData
 
-Bu yöntem Framework 'e yöneliktir ve kullanıcı kodundan çağrılması amaçlanmamıştır.
+Bu yöntem Çerçeve'nin dahilidir ve kullanıcı kodundan çağrılması amaçlanmamıştır.
 
 ```
 BOOL OnSetAccData(long lVal);
@@ -1525,15 +1525,15 @@ BOOL OnSetAccData(long lVal);
 
 ### <a name="parameters"></a>Parametreler
 
-uzun *lVal* erişilebilir nesnenin dizinini.
+uzun *lVal* Erişilebilir nesnenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde yanlış veya S_FALSE.
+S_OK başarılı olursa; aksi takdirde YANLIŞ veya S_FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshowribboncontextmenu"></a>CMFCRibbonBar:: OnShowRibbonContextMenu
+## <a name="cmfcribbonbaronshowribboncontextmenu"></a><a name="onshowribboncontextmenu"></a>CMFCRibbonBar::OnShowRibbonContextMenu
 
 ```
 virtual BOOL OnShowRibbonContextMenu(
@@ -1545,16 +1545,16 @@ virtual BOOL OnShowRibbonContextMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *pWnd*<br/>
-'ndaki *x*<br/>
-'ndaki *y*<br/>
-'ndaki *Phit*<br/>
+[içinde] *pWnd*<br/>
+[içinde] *x*<br/>
+[içinde] *y*<br/>
+[içinde] *pHit*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshowribbonqatmenu"></a>CMFCRibbonBar:: OnShowRibbonQATMenu
+## <a name="cmfcribbonbaronshowribbonqatmenu"></a><a name="onshowribbonqatmenu"></a>CMFCRibbonBar::OnShowRibbonQATMenu
 
 ```
 virtual BOOL OnShowRibbonQATMenu(
@@ -1566,18 +1566,18 @@ virtual BOOL OnShowRibbonQATMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *pWnd*<br/>
-'ndaki *x*<br/>
-'ndaki *y*<br/>
-'ndaki *Phit*<br/>
+[içinde] *pWnd*<br/>
+[içinde] *x*<br/>
+[içinde] *y*<br/>
+[içinde] *pHit*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsyskeydown"></a>CMFCRibbonBar:: OnSysKeyDown
+## <a name="cmfcribbonbaronsyskeydown"></a><a name="onsyskeydown"></a>CMFCRibbonBar::OnSysKeyDown
 
-Kullanıcı F10 tuşuna bastığında veya ALT tuşunu basılı tuttuğunda ve sonra başka bir tuşa bastığında Framework tarafından çağırılır.
+Kullanıcı F10 tuşuna bastığında veya ALT tuşuna bastığında ve başka bir tuşa bastığında çerçeve tarafından çağrılır.
 
 ```
 BOOL OnSysKeyDown(
@@ -1589,23 +1589,23 @@ BOOL OnSysKeyDown(
 ### <a name="parameters"></a>Parametreler
 
 *pFrameWnd*<br/>
-'ndaki Şerit çubuğunun üst ana çerçeve penceresine yönelik işaretçi.
+[içinde] Şerit çubuğunun ana ana çerçeve penceresine işaretçi.
 
-*wParam*<br/>
-'ndaki Basılan anahtarın sanal anahtar kodu.
+*Wparam*<br/>
+[içinde] Tuşun sanal anahtar kodu basılıyor.
 
-*lParam*<br/>
-'ndaki Anahtara basıldığında klavye durumu bayrakları.
+*Lparam*<br/>
+[içinde] Tuşa basıldığında klavye durumu bayrakları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tuş vuruşu olayı işlendiyse doğru; Aksi halde yanlış.
+Tuş vuruşu olayı işlenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsyskeyup"></a>CMFCRibbonBar:: OnSysKeyUp
+## <a name="cmfcribbonbaronsyskeyup"></a><a name="onsyskeyup"></a>CMFCRibbonBar::OnSysKeyUp
 
-Kullanıcı F10 tuşunu, ALT tuşunu veya ALT tuşu basılı tutulduğunda basılan bir anahtarı bıraktığında Framework tarafından çağırılır.
+Kullanıcı F10 tuşunu, ALT tuşunu veya ALT tuşu basılı tutulduğunda basıldığında basılan bir tuşu serbest bıraktıklarında çerçeve tarafından çağrılır.
 
 ```
 BOOL OnSysKeyUp(
@@ -1617,23 +1617,23 @@ BOOL OnSysKeyUp(
 ### <a name="parameters"></a>Parametreler
 
 *pFrameWnd*<br/>
-'ndaki Şerit çubuğunun üst ana çerçeve penceresine yönelik işaretçi.
+[içinde] Şerit çubuğunun ana ana çerçeve penceresine işaretçi.
 
-*wParam*<br/>
-'ndaki Serbest bırakılmakta olan anahtarın sanal anahtar kodu.
+*Wparam*<br/>
+[içinde] Anahtarın sanal anahtar kodu serbest bırakılıyor.
 
-*lParam*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Lparam*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tuş vuruşu olayı işlendiyse doğru; Aksi halde yanlış.
+Tuş vuruşu olayı işlenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="poptooltip"></a>CMFCRibbonBar::P opTooltip
+## <a name="cmfcribbonbarpoptooltip"></a><a name="poptooltip"></a>CMFCRibbonBar::PopTooltip
 
-Bir araç ipucunu görünümden kaldırır.
+Bir araç ucunu görünümden kaldırır.
 
 ```
 void PopTooltip();
@@ -1641,9 +1641,9 @@ void PopTooltip();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="pretranslatemessage"></a>CMFCRibbonBar::P reTranslateMessage
+## <a name="cmfcribbonbarpretranslatemessage"></a><a name="pretranslatemessage"></a>CMFCRibbonBar::PreTranslateMessage
 
-Belirtilen iletinin şerit çubuğu tarafından işlenip işlenmeyeceğini belirler.
+Belirtilen iletinin şerit çubuğu tarafından işlenmesini belirler.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1652,17 +1652,17 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-'ndaki İleti işaretçisi.
+[içinde] İletiiçin işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti şerit çubuğu tarafından işlendiyse doğru; Aksi halde yanlış.
+İleti şerit çubuğu tarafından işlenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="recalclayout"></a>CMFCRibbonBar:: RecalcLayout
+## <a name="cmfcribbonbarrecalclayout"></a><a name="recalclayout"></a>CMFCRibbonBar::RecalcLayout
 
-Şerit çubuğundaki tüm denetimlerin yerleşimini ayarlar.
+Şerit çubuğundaki tüm denetimlerin düzenini ayarlar.
 
 ```
 virtual void RecalcLayout();
@@ -1670,9 +1670,9 @@ virtual void RecalcLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düzen ayarından sonra, şerit çubuğunun görünümü güncellenir.
+Düzen ayarı ndan sonra şerit çubuğunun ekranı güncelleştirilir.
 
-##  <a name="removeallcategories"></a>CMFCRibbonBar:: RemoveAllCategories
+## <a name="cmfcribbonbarremoveallcategories"></a><a name="removeallcategories"></a>CMFCRibbonBar::RemoveAllCategories
 
 Şerit çubuğundan tüm şerit kategorilerini siler.
 
@@ -1682,11 +1682,11 @@ void RemoveAllCategories();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bellekten ve Kategori listesinden tüm şerit kategorilerini siler.
+Bu yöntem, tüm şerit kategorilerini bellekten ve kategori listesinden siler.
 
-##  <a name="removeallfromtabs"></a>CMFCRibbonBar:: Removeallfromsekmeleri
+## <a name="cmfcribbonbarremoveallfromtabs"></a><a name="removeallfromtabs"></a>CMFCRibbonBar::RemoveAllFromTabs
 
-Sekme alanından tüm Şerit öğelerini kaldırır.
+Sekme alanındaki tüm şerit öğelerini kaldırır.
 
 ```
 void RemoveAllFromTabs();
@@ -1694,11 +1694,11 @@ void RemoveAllFromTabs();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCRibbonBar:: Addtosekmeleri](#addtotabs) yöntemini kullanarak sekme alanına eklediğiniz tüm öğeleri kaldırmak istiyorsanız bu işlevi kullanın.
+[CMFCRibbonBar::AddToTabs](#addtotabs) yöntemini kullanarak sekme alanına eklediğiniz tüm öğeleri kaldırmak istiyorsanız bu işlevi kullanın.
 
-##  <a name="removecategory"></a>CMFCRibbonBar:: RemoveCategory
+## <a name="cmfcribbonbarremovecategory"></a><a name="removecategory"></a>CMFCRibbonBar::RemoveCategory
 
-Şerit çubuğundan belirtilen şerit kategorisini siler.
+Belirtilen şerit kategorisini şerit çubuğundan siler.
 
 ```
 BOOL RemoveCategory(int nIndex);
@@ -1706,18 +1706,18 @@ BOOL RemoveCategory(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-'ndaki Şerit çubuğunda bulunan Şerit kategorileri listesindeki bir kategorinin sıfır tabanlı dizini.
+*Nındex*<br/>
+[içinde] Şerit çubuğunda bulunan şerit kategorileri listesindeki bir kategorinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen şerit kategorisi silinmişse TRUE; Aksi halde yanlış.
+Belirtilen şerit kategorisi silinirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen şerit kategorisi bellekten ve Kategori listesinden silinir.
+Belirtilen şerit kategorisi bellekten ve kategori listesinden silinir.
 
-##  <a name="setactivecategory"></a>CMFCRibbonBar:: SetActiveCategory
+## <a name="cmfcribbonbarsetactivecategory"></a><a name="setactivecategory"></a>CMFCRibbonBar::SetActiveKategori
 
 Belirtilen şerit kategorisini etkin kategori olarak ayarlar.
 
@@ -1729,25 +1729,25 @@ BOOL SetActiveCategory(
 
 ### <a name="parameters"></a>Parametreler
 
-*pCategory*<br/>
-'ndaki Şerit çubuğunda bulunan Şerit kategorisi.
+*pKategori*<br/>
+[içinde] Şerit çubuğunda bulunan bir şerit kategorisi.
 
-*Kforceresbisi*<br/>
-'ndaki Simge durumuna küçültüldüğünde şerit çubuğunu en üst düzeye çıkarmak için TRUE; Şerit çubuğu simge durumuna küçültülmüş ise, etkin kategoriyi açılan pencerede göstermek için FALSE.
+*bForceRestore*<br/>
+[içinde] En aza indirgendiyse şerit çubuğunu en üst düzeye çıkarmak için TRUE; Şerit çubuğu en aza indirilmişse, etkin kategoriyi açılır pencerede görüntülemek için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen kategori etkin kategori olarak ayarlandıysa TRUE; Aksi halde yanlış.
+Belirtilen kategori etkin kategori olarak ayarlanmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ana Şerit kategorisi etkin kategori olamaz.
+Ana şerit kategorisi etkin kategori olamaz.
 
-*PCategory* tarafından belirtilen kategori görüntülenmiyorsa, etkin kategori olarak ayarlanamaz.
+*pCategory* tarafından belirtilen kategori görüntülenmiyorsa, etkin kategori olarak ayarlanamaz.
 
-##  <a name="setactivemdichild"></a>CMFCRibbonBar:: SetActiveMDIChild
+## <a name="cmfcribbonbarsetactivemdichild"></a><a name="setactivemdichild"></a>CMFCRibbonBar::SetActiveMDIChild
 
-Çoklu belge arabirimi (MDI) alt penceresine ait olan Şerit çubuğundaki sistem düğmelerini belirtilen MDI alt penceresine ilişkilendirir.
+Birden çok belgearabirimi (MDI) alt penceresine ait şerit çubuğundaki sistem düğmelerini belirtilen MDI alt penceresine bağlar.
 
 ```
 void SetActiveMDIChild(CWnd* pWnd);
@@ -1755,12 +1755,12 @@ void SetActiveMDIChild(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-'ndaki MDI alt penceresine yönelik işaretçi.
+*Pwnd*<br/>
+[içinde] Bir MDI alt penceresi için işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setapplicationbutton"></a>CMFCRibbonBar:: SetApplicationButton
+## <a name="cmfcribbonbarsetapplicationbutton"></a><a name="setapplicationbutton"></a>CMFCRibbonBar::SetApplicationButton
 
 Şerit çubuğuna bir uygulama şeridi düğmesi atar.
 
@@ -1772,25 +1772,25 @@ void SetApplicationButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*pButton*<br/>
-'ndaki Uygulama şeridi düğmesine yönelik bir işaretçi.
+*pDüğme*<br/>
+[içinde] Uygulama şeridi düğmesine işaretçi.
 
-*sizeButton*<br/>
-'ndaki Uygulama şeridi düğmesinin boyutu.
+*boyutDüğme*<br/>
+[içinde] Uygulama şeridi düğmesinin boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama şeridi düğmesi, şerit denetiminin sol üst köşesinde bulunan büyük bir yuvarlatılmış düğmedir.
+Uygulama şeridi düğmesi, Şerit denetiminin sol üst köşesinde bulunan büyük bir yuvarlak düğmedir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBar` sınıfında `SetApplicationButton` yönteminin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, yöntemin sınıfta `SetApplicationButton` nasıl `CMFCRibbonBar` kullanılacağını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#3](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_4.cpp)]
 
-##  <a name="setelementkeys"></a>CMFCRibbonBar:: SetElementKeys
+## <a name="cmfcribbonbarsetelementkeys"></a><a name="setelementkeys"></a>CMFCRibbonBar::SetElementKeys
 
-Belirtilen komut KIMLIĞINE sahip tüm şerit öğeleri için KeyTips belirler.
+Belirtilen komut kimliğine sahip tüm şerit öğeleri için anahtar uçlarını ayarlar.
 
 ```
 BOOL SetElementKeys(
@@ -1801,26 +1801,26 @@ BOOL SetElementKeys(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıımıdıd*<br/>
-'ndaki Şerit öğesinin komut KIMLIĞI.
+*uiCmdID*<br/>
+[içinde] Şerit öğesinin komut kimliği.
 
 *lpszKeys*<br/>
-'ndaki KeyTip.
+[içinde] Anahtar ucu.
 
 *lpszMenuKeys*<br/>
-'ndaki Menü keytip.
+[içinde] Menü anahtar ucu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En az bir şerit öğesinin KeyTips değeri ayarlandıysa TRUE; Aksi halde yanlış.
+En az bir şerit öğesinin tuş uçları ayarlanmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İsteğe bağlı menü keytip, açılan menüyü açan bir bölünmüş düğme içeren şerit öğelerine yöneliktir.
+İsteğe bağlı menü tuş ucu, açılır menüyü açan bölünmüş düğmeli şerit öğeleri içindir.
 
-##  <a name="setkeyboardnavigationlevel"></a>CMFCRibbonBar:: SetKeyboardNavigationLevel
+## <a name="cmfcribbonbarsetkeyboardnavigationlevel"></a><a name="setkeyboardnavigationlevel"></a>CMFCRibbonBar::SetKeyboardNavigationLevel
 
-Kullanıcı Şerit çubuğunda bulunan KeyTips tuşuna bastığında klavye gezinti düzeyini ayarlar.
+Kullanıcı şerit çubuğunda bulunan tuş uçlarına bastığında klavye gezinme düzeyini ayarlar.
 
 ```
 void SetKeyboardNavigationLevel(
@@ -1830,19 +1830,19 @@ void SetKeyboardNavigationLevel(
 
 ### <a name="parameters"></a>Parametreler
 
-*pLevel*<br/>
-'ndaki Geçerli klavye gezinti nesnesine yönelik işaretçi.
+*pDüzey*<br/>
+[içinde] Geçerli klavye gezinti nesnesine işaretçi.
 
 *bSetFocus*<br/>
-'ndaki Klavye odağını şerit çubuğuna ayarlamak için TRUE.
+[içinde] Klavye odağı şerit çubuğuna ayarlamak için DOĞRU.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit çubuğunun klavye gezintisi, Kullanıcı ALT veya F10 tuşuna bastığında başlar. Kullanıcı, Şerit çubuğundaki bir tuş ipucuna basarak bir sonraki gezinti düzeyini seçer. Kullanıcı kaçış tuşuna basarak önceki gezinti düzeyine dönebilir.
+Şerit çubuğunun klavye gezintisi, kullanıcı ALT veya F10 tuşuna bastığında başlar. Kullanıcı, şerit çubuğundaki bir tuş ucuna basarak bir sonraki gezinti düzeyini seçer. Kullanıcı kaçış tuşuna basarak önceki navigasyon düzeyine geri dönebilir.
 
-##  <a name="setmaximizemode"></a>CMFCRibbonBar:: SetMaximizeMode
+## <a name="cmfcribbonbarsetmaximizemode"></a><a name="setmaximizemode"></a>CMFCRibbonBar::SetMaximizeMode
 
-Çoklu belge arabirimi (MDI) alt penceresinin pencere boyutu, ekranı kaplayan duruma girdiğinde veya ayrıldığında şerit çubuğunu ayarlar.
+Birden çok belgeli arabirim (MDI) alt penceresinin pencere boyutu en üst düzey duruma girdiğinde veya ayrıldığında şerit çubuğunu ayarlar.
 
 ```
 void SetMaximizeMode(
@@ -1853,18 +1853,18 @@ void SetMaximizeMode(
 ### <a name="parameters"></a>Parametreler
 
 *bMax*<br/>
-'ndaki Şerit çubuğunda bir MDI alt penceresinin sistem düğmelerini göstermek için TRUE; Şerit çubuğundan bir MDI alt penceresinin sistem düğmelerini kaldırmak için FALSE.
+[içinde] Şerit çubuğunda bir MDI alt penceresi için sistem düğmelerini görüntülemek için TRUE; Bir MDI alt penceresi için sistem düğmelerini şerit çubuğundan kaldırmak için FALSE.
 
-*pWnd*<br/>
-'ndaki Şerit çubuğu için ana çerçeve penceresine yönelik işaretçi.
+*Pwnd*<br/>
+[içinde] Şerit çubuğunun ana çerçeve penceresine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit çubuğu, bir MDI alt penceresi ekranı kapladıktan sonra sekme satırında bir MDI alt penceresinin sistem düğmelerini görüntüler.
+Şerit çubuğu, bir MDI alt penceresi en üst düzeye çıkarıldığında sekme satırında bir MDI alt penceresi için sistem düğmelerini görüntüler.
 
-##  <a name="setquickaccesscommands"></a>CMFCRibbonBar:: SetQuickAccessCommands
+## <a name="cmfcribbonbarsetquickaccesscommands"></a><a name="setquickaccesscommands"></a>CMFCRibbonBar::SetQuickAccessKomutları
 
-Hızlı erişim araç çubuğuna bir veya daha fazla şerit öğesi ekler.
+Hızlı Erişim Araç Çubuğu'na bir veya daha fazla şerit öğesi ekler.
 
 ```
 void SetQuickAccessCommands(
@@ -1874,21 +1874,21 @@ void SetQuickAccessCommands(
 
 ### <a name="parameters"></a>Parametreler
 
-*lstCommands*<br/>
-'ndaki Hızlı erişim araç çubuğuna yerleştirilecek komutların listesi.
+*lstKomutlar*<br/>
+[içinde] Hızlı Erişim Araç Çubuğu'na yerleştirilecek komutların listesi.
 
 *bRecalcLayout*<br/>
-'ndaki Şerit öğelerini ekledikten sonra şeridi yeniden çizmek istiyorsanız TRUE; Aksi takdirde FALSE.
+[içinde] Şerit öğelerini ekledikten sonra şeridi yeniden çizmek istiyorsanız DOĞRU; YANLIŞ aksi takdirde.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBar` sınıfında `SetQuickAccessCommands` yönteminin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, yöntemin sınıfta `SetQuickAccessCommands` nasıl `CMFCRibbonBar` kullanılacağını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_5.cpp)]
 
-##  <a name="setquickaccessdefaultstate"></a>CMFCRibbonBar:: SetQuickAccessDefaultState
+## <a name="cmfcribbonbarsetquickaccessdefaultstate"></a><a name="setquickaccessdefaultstate"></a>CMFCRibbonBar::SetQuickAccessDefaultState
 
-Hızlı erişim araç çubuğunu varsayılan durumuna ayarlar.
+Hızlı erişim araç çubuğunu varsayılan duruma ayarlar.
 
 ```
 void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& state);
@@ -1896,22 +1896,22 @@ void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& 
 
 ### <a name="parameters"></a>Parametreler
 
-*durumunda*<br/>
-'ndaki Hızlı erişim araç çubuğu varsayılan durumu.
+*durum*<br/>
+[içinde] Hızlı erişim araç çubuğu varsayılan durumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hızlı erişim araç çubuğu durumu, komutların ve bunların görünürlüğünün bir listesini içerir.
+Hızlı erişim araç çubuğu durumu, komutların bir listesini ve bunların görünürlüğünü içerir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBar` sınıfında `SetQuickAccessDefaultState` yönteminin nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, yöntemin sınıfta `SetQuickAccessDefaultState` nasıl `CMFCRibbonBar` kullanılacağını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#9](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_6.cpp)]
 
-##  <a name="setquickaccesstoolbarontop"></a>CMFCRibbonBar:: SetQuickAccessToolbarOnTop
+## <a name="cmfcribbonbarsetquickaccesstoolbarontop"></a><a name="setquickaccesstoolbarontop"></a>CMFCRibbonBar::SetQuickAccessToolbarOnTop
 
-Hızlı erişim araç çubuğunu şerit çubuğunun üzerinde veya altında konumlandırır.
+Hızlı erişim araç çubuğunu şerit çubuğunun altına veya altına konumlandırın.
 
 ```
 void SetQuickAccessToolbarOnTop(BOOL bOnTop);
@@ -1920,11 +1920,11 @@ void SetQuickAccessToolbarOnTop(BOOL bOnTop);
 ### <a name="parameters"></a>Parametreler
 
 *bOnTop*<br/>
-'ndaki Hızlı erişim araç çubuğunu şerit çubuğunun üzerine konumlandırmak için TRUE; Hızlı erişim araç çubuğunu şerit çubuğunun altına yerleştirmek için yanlış.
+[içinde] Hızlı erişim araç çubuğunu şerit çubuğunun üzerine konumlandırmak için DOĞRU; Hızlı erişim araç çubuğunu şerit çubuğunun altına konumlandırmak için FALSE.
 
-##  <a name="settooltipfixedwidth"></a>CMFCRibbonBar:: SetTooltipFixedWidth
+## <a name="cmfcribbonbarsettooltipfixedwidth"></a><a name="settooltipfixedwidth"></a>CMFCRibbonBar::SetTooltipFixedWidth
 
-Şerit çubuğu için araç ipucu sabit genişliklerinin normal ve büyük boyutlarını ayarlar.
+Şerit çubuğu için alet ucu sabit genişliklerinin normal ve büyük boyutlarını ayarlar.
 
 ```
 void SetTooltipFixedWidth(
@@ -1935,16 +1935,16 @@ void SetTooltipFixedWidth(
 ### <a name="parameters"></a>Parametreler
 
 *nWidthRegular*<br/>
-'ndaki Normal sabit boyutlu bir araç ipucunun piksel cinsinden genişliği.
+[içinde] Normal bir sabit boyutlu araç ucunun piksel genişliği.
 
 *nWidthLargeImage*<br/>
-'ndaki Büyük sabit boyutlu bir araç ipucunun piksel cinsinden genişliği.
+[içinde] Büyük bir sabit boyutlu araç ucunun piksel genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre 0 olarak ayarlandığında karşılık gelen genişlik farklılık gösterir.
+Bir parametrenin 0'a ayarlanması, karşılık gelen genişliğin değişmesine neden olur.
 
-##  <a name="showcategory"></a>CMFCRibbonBar:: ShowCategory
+## <a name="cmfcribbonbarshowcategory"></a><a name="showcategory"></a>CMFCRibbonBar::ShowCategory
 
 Belirtilen şerit kategorisini gösterir veya gizler.
 
@@ -1956,15 +1956,15 @@ void ShowCategory(
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-'ndaki Şerit kategorisinin dizini.
+*Nındex*<br/>
+[içinde] Şerit kategorisinin dizini.
 
-*bShow*<br/>
-'ndaki TRUE ise şerit kategorisini göster; Aksi takdirde, şerit kategorisini gizleyin.
+*bGöster*<br/>
+[içinde] DOĞRUysa, şerit kategorisini göster; aksi takdirde, şerit kategorisini gizleyin.
 
-##  <a name="showcontextcategories"></a>CMFCRibbonBar:: ShowContextCategories
+## <a name="cmfcribbonbarshowcontextcategories"></a><a name="showcontextcategories"></a>CMFCRibbonBar::ShowContextCategories
 
-Belirtilen KIMLIĞE sahip olan bağlam kategorilerini gösterir veya gizler.
+Belirtilen kimliği olan bağlam kategorilerini gösterir veya gizler.
 
 ```
 void ShowContextCategories(
@@ -1974,15 +1974,15 @@ void ShowContextCategories(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uııtextıd*<br/>
-'ndaki Bağlam kategorisi KIMLIĞI.
+*uiContextID*<br/>
+[içinde] Bağlam kategorisi kimliği.
 
-*bShow*<br/>
-'ndaki TRUE ise, belirtilen KIMLIĞE sahip kategorileri göster; Aksi takdirde, belirtilen KIMLIĞE sahip kategorileri gizleyin.
+*bGöster*<br/>
+[içinde] DOĞRUysa, belirtilen kimliği olan kategorileri göster; aksi takdirde, belirtilen kimliği olan kategorileri gizleyin.
 
-##  <a name="showkeytips"></a>CMFCRibbonBar:: ShowKeyTips
+## <a name="cmfcribbonbarshowkeytips"></a><a name="showkeytips"></a>CMFCRibbonBar::ShowKeyTips
 
-Şerit çubuğundaki her şerit öğesi için KeyTips gösterir.
+Şerit çubuğundaki her şerit öğesinin anahtar uçlarını gösterir.
 
 ```
 void ShowKeyTips();
@@ -1990,9 +1990,9 @@ void ShowKeyTips();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="togglemimimizestate"></a>CMFCRibbonBar:: Esyumimizmi
+## <a name="cmfcribbonbartogglemimimizestate"></a><a name="togglemimimizestate"></a>CMFCRibbonBar::ToggleMimimizeDevlet
 
-Şerit çubuğuna küçültülmüş ve büyütülmüş durumlar arasında geçiş yapar.
+En aza indirgenen ve en üst düzeye çıkarılan durumlar arasında şerit çubuğunu geçişe bağlar.
 
 ```
 void ToggleMimimizeState();
@@ -2000,13 +2000,13 @@ void ToggleMimimizeState();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem adındaki hatalı yazma bilinen bir sorundur.
+Yöntem adındaki yazım hatası bilinen bir sorundur.
 
-Simge durumuna küçültülmüş durumda şerit denetimi gizlidir ve yalnızca sekmeler görüntülenir. Kullanıcı bir sekmeye tıkladığında Şerit denetimi bir açılan pencere olarak görüntülenir. Kullanıcı uzakta tıkladığında veya bir komut yürüttüğünde pencere kapanır.
+Simge durumuna göre, şerit denetimi gizlenir ve yalnızca sekmeler görüntülenir. Kullanıcı bir sekmeyi tıklattığında, şerit denetimi açılır pencere olarak görüntülenir. Kullanıcı tıkladığında veya bir komut u çalıştırdığında pencere kapanır.
 
-##  <a name="translatechar"></a>CMFCRibbonBar:: TranslateChar
+## <a name="cmfcribbonbartranslatechar"></a><a name="translatechar"></a>CMFCRibbonBar::TranslateChar
 
-Belirtilen tuş vuruşu karakter kodunun şerit çubuğu tarafından işlenip işlenmeyeceğini belirler.
+Belirtilen tuş vuruşu karakter kodunun şerit çubuğu tarafından işlenip işlenmediğini belirler.
 
 ```
 virtual BOOL TranslateChar(UINT nChar);
@@ -2014,20 +2014,20 @@ virtual BOOL TranslateChar(UINT nChar);
 
 ### <a name="parameters"></a>Parametreler
 
-*nChar*<br/>
-'ndaki Kullanıcı tuş vuruşu karakteri kodu.
+*Nchar*<br/>
+[içinde] Kullanıcı tuş vuruşu karakter kodu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karakter kodu şerit çubuğu tarafından işlendiyse, doğru. Aksi halde yanlış.
+Karakter kodu şerit çubuğu tarafından işlenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-KeyTips özelliği, kullanıcıların klavyeyi kullanarak Şerit çubuğunda gezinmesine olanak sağlar.
+Tuş uçları özelliği, kullanıcıların klavyeyi kullanarak şerit çubuğunda gezinmelerini sağlar.
 
-##  <a name="getfocused"></a>CMFCRibbonBar:: Getodaklanmış
+## <a name="cmfcribbonbargetfocused"></a><a name="getfocused"></a>CMFCRibbonBar::GetFocused
 
-Odaklanmış bir öğe döndürür.
+Odaklanmış bir öğeyi döndürür.
 
 ```
 virtual CMFCRibbonBaseElement* GetFocused();
@@ -2035,13 +2035,13 @@ virtual CMFCRibbonBaseElement* GetFocused();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Odaklanmış öğe veya NULL işaretçisi.
+Odaklanmış bir öğeveya NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="iswindows7look"></a>CMFCRibbonBar:: IsWindows7Look
+## <a name="cmfcribbonbariswindows7look"></a><a name="iswindows7look"></a>CMFCRibbonBar::IsWindows7Look
 
-Şeridin Windows 7 görünümüne sahip olup olmadığını gösterir (küçük dikdörtgen uygulama düğmesi).
+Şeridin Windows 7 görünümüne (küçük dikdörtgen uygulama düğmesi) sahip olup olmadığını gösterir.
 
 ```
 BOOL IsWindows7Look() const;
@@ -2049,13 +2049,13 @@ BOOL IsWindows7Look() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şeritte Windows 7 görünümü varsa doğru; Aksi halde yanlış.
+Şerit Windows 7 görünümüne sahipse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="loadfromresource"></a>CMFCRibbonBar:: LoadFromResource
+## <a name="cmfcribbonbarloadfromresource"></a><a name="loadfromresource"></a>CMFCRibbonBar::LoadFromResource
 
-Fazla Yüklendi. Uygulama kaynaklarından bir şerit çubuğu yükler.
+Fazla Yüklendi. Uygulama kaynaklarından şerit çubuğu yükler.
 
 ```
 virtual BOOL LoadFromResource(
@@ -2071,27 +2071,27 @@ virtual BOOL LoadFromResource(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıxmlresd*<br/>
-Şerit çubuğu bilgileriyle XML dizesinin kaynak KIMLIĞINI belirtir.
+*uiXMLResID*<br/>
+Şerit Çubuğu bilgileriyle XML dizesinin kaynak kimliğini belirtir.
 
 *lpszResType*<br/>
-*Uıxmlresd*konumunda bulunan kaynağın türünü belirtir.
+*uiXMLResID'de*bulunan kaynağın türünü belirtir.
 
-*HINSTANCE*<br/>
-Yürütülebilir dosyası kaynağı içeren modülün tanıtıcısı. *HINSTANCE* null ise, sistem geçerli işlemi oluşturmak için kullanılan modülden kaynağı yükler.
+*Hınstance*<br/>
+Yürütülebilir dosya kaynağı içeren modülü ele alın. *hInstance* NULL ise, sistem geçerli işlemi oluşturmak için kullanılan modülden kaynak yükler.
 
 *lpszXMLResID*<br/>
-Şerit çubuğu bilgileriyle kaynak KIMLIĞINI (dize biçiminde) belirtir.
+Şerit Çubuğu bilgileriyle kaynak kimliğini (dize biçiminde) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yükleme başarılı olursa doğru; Aksi halde yanlış.
+Yük başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="savetoxmlbuffer"></a>CMFCRibbonBar:: SaveToXMLBuffer
+## <a name="cmfcribbonbarsavetoxmlbuffer"></a><a name="savetoxmlbuffer"></a>CMFCRibbonBar::SaveToXMLAraffer
 
-Şerit çubuğunu bir arabelleğe kaydeder.
+Şerit Çubuğu'nu arabelleğe kaydeder.
 
 ```
 UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;
@@ -2099,18 +2099,18 @@ UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ppBuffer*<br/>
-Bu işlev döndüğünde, *ppBuffer* bu yöntem tarafından ayrılan bir arabelleğe işaret eder ve XML biçiminde şerit çubuğu bilgilerini içerir.
+*ppTampon*<br/>
+Bu işlev döndüğünde, *ppBuffer* bu yöntem tarafından ayrılan bir arabelleğe işaret eder ve XML biçiminde Şerit Çubuğu bilgilerini içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="savetoxmlfile"></a>CMFCRibbonBar:: SaveToXMLFile
+## <a name="cmfcribbonbarsavetoxmlfile"></a><a name="savetoxmlfile"></a>CMFCRibbonBar::SaveToXMLFile
 
-Şerit çubuğunu bir XML dosyasına kaydeder.
+Şerit Çubuğu'nu bir XML dosyasına kaydeder.
 
 ```
 BOOL SaveToXMLFile(LPCTSTR lpszFilePath) const;
@@ -2119,17 +2119,17 @@ BOOL SaveToXMLFile(LPCTSTR lpszFilePath) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilePath*<br/>
-Çıkış dosyasını belirtir.
+Çıktı dosyasını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setwindows7look"></a>CMFCRibbonBar:: SetWindows7Look
+## <a name="cmfcribbonbarsetwindows7look"></a><a name="setwindows7look"></a>CMFCRibbonBar::SetWindows7Look
 
-Şerit için Windows 7 görünümünü (küçük dikdörtgen uygulama düğmesi) etkinleştirilir veya devre dışı bırakır.
+Şerit için Windows 7 görünümünü (küçük dikdörtgen uygulama düğmesi) etkinleştirir veya devre dışı kılabilir.
 
 ```
 void SetWindows7Look(
@@ -2139,11 +2139,11 @@ void SetWindows7Look(
 
 ### <a name="parameters"></a>Parametreler
 
-*bWindows7Look*<br/>
-DOĞRU ayarlar Windows 7 görünüm; Aksi takdirde FALSE.
+*bWindows7Bak*<br/>
+TRUE, Windows 7 görünümünü ayarlar; YANLIŞ aksi takdirde.
 
-*bYeniden hesapla*<br/>
-DOĞRU, şerit yerleşimini yeniden hesaplar; Aksi takdirde FALSE.
+*bRecalc*<br/>
+TRUE şerit düzenini yeniden hesaplar; YANLIŞ aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2152,7 +2152,7 @@ DOĞRU, şerit yerleşimini yeniden hesaplar; Aksi takdirde FALSE.
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CPane Sınıfı](../../mfc/reference/cpane-class.md)<br/>
-[CMFCRibbonCategory Sınıfı](../../mfc/reference/cmfcribboncategory-class.md)<br/>
+[CMFCRibbonKategori Sınıfı](../../mfc/reference/cmfcribboncategory-class.md)<br/>
 [CMFCRibbonPanel Sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
 [CMFCRibbonBaseElement Sınıfı](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
-[İzlenecek yol: MFC karalama uygulamasını güncelleştirme](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
+[Walkthrough: MFC Karalama Uygulamasını Güncelleme](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

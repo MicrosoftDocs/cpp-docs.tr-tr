@@ -1,8 +1,9 @@
 ---
 title: rand_s
-ms.date: 01/02/2018
+ms.date: 4/2/2020
 api_name:
 - rand_s
+- _o_rand_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +32,16 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 652521ab472736783ba1b4498ca7d7c3f297e7ee
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b11a40dd9dc58964df77330767a55aa95a179319
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949650"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338199"
 ---
 # <a name="rand_s"></a>rand_s
 
-Pseudportaıdom numarası üretir. Bu, güvenlik geliştirmeleri olan [S_SAYI_ÜRET](rand.md)'in daha güvenli bir sürümüdür ve bu [özellik, CRT 'daki güvenlik özelliklerinde](../../c-runtime-library/security-features-in-the-crt.md)açıklanmıştır.
+Pseudorandom bir sayı oluşturur. Bu işlev [rand](rand.md)daha güvenli bir sürümüdür , [CRT Güvenlik Özellikleri](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmeleri ile.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,33 +51,35 @@ errno_t rand_s(unsigned int* randomValue);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rasgeledeğeri*<br/>
-Üretilen değeri tutacak bir tamsayıya yönelik bir işaretçi.
+*randomValue*<br/>
+Oluşturulan değeri tutmak için bir tamsayı için bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır, aksi takdirde bir hata kodu. Giriş işaretçisi _rastgele değeri_ null bir işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. İşlev başka bir nedenle başarısız olursa, *_Rasgelevalue_ 0 olarak ayarlanır.
+Sıfır başarılı, aksi takdirde, bir hata kodu. Giriş işaretçisi _randomValue_ null işaretçisi ise, işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisi çağırır. Yürütmedevam etmesine izin verilirse, işlev **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar. İşlev başka bir nedenle başarısız olursa, *_randomValue_ 0 olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rand_s** işlevi, giriş işaretçisine 0 ile **UINT_MAX** arasında bir pseudportadom tamsayıyı yazar. **Rand_s** işlevi, şifreleme güvenli rastgele sayılar oluşturmak için işletim sistemini kullanır. [SRVe](srand.md) işlevi tarafından oluşturulan çekirdeği kullanmaz ve [S_SAYI_ÜRET](rand.md)tarafından kullanılan rastgele sayı sırasını da etkilemez.
+**rand_s** işlevi, giriş işaretçisine 0 ile **UINT_MAX** aralığında bir psödorasgele tamsayı yazar. **rand_s** işlevi, şifreleme yle güvenli rasgele sayılar oluşturmak için işletim sistemini kullanır. Kum [fonksiyonu](srand.md) tarafından oluşturulan tohum kullanmaz, ne de [rand](rand.md)tarafından kullanılan rasgele sayı dizisi etkilemez.
 
-**Rand_s** işlevi, aşağıdaki örnekte olduğu gibi, işlevin dahil edilmesi için ekleme ifadesiyle önce sabit **_CRT_RAND_S** 'in tanımlanmasını gerektirir:
+**rand_s** işlevi, aşağıdaki örnekte olduğu gibi, işlevin bildirilmesi için dahil etme deyiminden önce sabit **_CRT_RAND_S** tanımlanmasını gerektirir:
 
 ```C
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```
 
-**rand_s** , yalnızca Windows XP ve üzeri sürümlerde bulunan [Rtlgenrandom](/windows/win32/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API 'sine bağlıdır.
+**rand_s** [RtlGenRandom](/windows/win32/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API bağlıdır, hangi sadece Windows XP ve daha sonra mevcuttur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rand_s**|\<Stdlib. h >|
+|**rand_s**|\<stdlib.h>|
 
-Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk'a](../../c-runtime-library/compatibility.md)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -156,5 +160,5 @@ int main( void )
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[rand](rand.md)<br/>
+[Rand](rand.md)<br/>
 [srand](srand.md)<br/>

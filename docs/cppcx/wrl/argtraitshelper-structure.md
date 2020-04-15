@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ArgTraitsHelper structure
 - Microsoft::WRL::Details::ArgTraitsHelper::args constant
 ms.assetid: e3f798da-0aef-4a57-95d3-d38c34c47d72
-ms.openlocfilehash: fbba6d96106cc95910ccd9d0029cb3e9c254d7d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4acbd9fa660f29bbaf209282ff0e90f43621574d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360777"
 ---
 # <a name="argtraitshelper-structure"></a>ArgTraitsHelper Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,27 +29,27 @@ struct ArgTraitsHelper;
 
 ### <a name="parameters"></a>Parametreler
 
-*TDelegateInterface*<br/>
-Bir temsilci arabirimi.
+*TDelegateArayüzü*<br/>
+Temsilci arabirimi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yardımcı olur, temsilci bağımsız değişkenleri genel özelliklerini tanımlayın.
+Temsilci bağımsız değişkenlerinin ortak özelliklerini tanımlamaya yardımcı olur.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-Ad         | Açıklama
+Adı         | Açıklama
 ------------ | ------------------------------------------------------
-`methodType` | İçin bir eşanlamlı `decltype(&TDelegateInterface::Invoke)`.
-`Traits`     | İçin bir eşanlamlı `ArgTraits<methodType>`.
+`methodType` | Bir eşanlamlı `decltype(&TDelegateInterface::Invoke)`.
+`Traits`     | Bir eşanlamlı `ArgTraits<methodType>`.
 
-### <a name="public-constants"></a>Genel sabitler
+### <a name="public-constants"></a>Genel Sabitler
 
-Ad                           | Açıklama
+Adı                           | Açıklama
 ------------------------------ | ---------------------------------------------------------------------------------------------------------------------
-[ArgTraitsHelper::args](#args) | Yardımcı [ArgTraits::args](#args) parametreleri sayısını takip edin `Invoke` yöntemi temsilci arabirimi.
+[ArgTraitsHelper::args](#args) | [ArgTraits yardımcı olur::args](#args) bir temsilci arabirimi `Invoke` yöntemi üzerinde parametre sayısını tutmak.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,13 +57,13 @@ Ad                           | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** event.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="args"></a>ArgTraitsHelper::args
+## <a name="argtraitshelperargs"></a><a name="args"></a>ArgTraitsHelper::args
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 static const int args = Traits::args;
@@ -71,4 +71,4 @@ static const int args = Traits::args;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yardımcı `ArgTraitsHelper::args` parametreleri sayısını takip edin `Invoke` yöntemi temsilci arabirimi.
+Temsilci `ArgTraitsHelper::args` arabirimi yöntemindeki parametre `Invoke` sayısının saytutulmasına yardımcı olur.

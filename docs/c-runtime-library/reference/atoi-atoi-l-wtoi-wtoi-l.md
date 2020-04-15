@@ -1,11 +1,15 @@
 ---
 title: atoi, _atoi_l, _wtoi, _wtoi_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _wtoi
 - _wtoi_l
 - atoi
 - _atoi_l
+- _o__atoi_l
+- _o__wtoi
+- _o__wtoi_l
+- _o_atoi
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,6 +23,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -44,16 +49,16 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-ms.openlocfilehash: 8d66a219aea1451e745e32f7affbfb59b73ff796
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ef65f8986cf02b6385cbce71e5e81fa690b38b2e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943743"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348862"
 ---
 # <a name="atoi-_atoi_l-_wtoi-_wtoi_l"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
-Dizeyi tamsayıya Dönüştür.
+Bir dizeyi tamsayıya dönüştürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,47 +81,49 @@ int _wtoi_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Dönüştürülecek dize.
+*Str*<br/>
+Dize dönüştürülecek.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **int** değeri döndürür. Dönüş değeri, **atoı** ve **_wtoı**için 0, giriş bu türden bir değere dönüştürülemiyorsa.
+Her işlev, giriş karakterlerini bir sayı olarak yorumlayarak üretilen **int** değerini döndürür. Giriş bu tür bir değere dönüştürülemiyorsa, **atoi** ve **_wtoi**için dönüş değeri 0'dır.
 
-Büyük negatif tamsayı değerleriyle taşma durumunda **LONG_MIN** döndürülür. **atoı** ve **_wtoı** bu koşullara **INT_MAX** ve **INT_MIN** döndürüyor. Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+Büyük negatif integral değerleri ile taşma durumunda, **LONG_MIN** döndürülür. **atoi** ve **_wtoi** bu koşullarda **INT_MAX** ve **INT_MIN** dönerler. Tüm kapsama alanı dışı durumlarda, **errno** **ERANGE**olarak ayarlanır. Geçirilen parametre **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** **için errno** ayarlayın ve 0 döndürün.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir karakter dizesini bir tamsayı değerine (**atoı** ve **_wtoı**) dönüştürür. Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
+Bu işlevler bir karakter dizesini tamsayı değerine **(atoi** ve **_wtoi)** dönüştürür. Giriş dizesi, belirtilen türün sayısal değeri olarak yorumlanabilecek bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterdeki giriş dizesini okumayı durdurur. Bu karakter, dizeyi sonlayan null karakter ('\0' veya L'\0') olabilir.
 
-**Atoı** ve **_wtoı** 'nin *Str* bağımsız değişkeni şu biçimdedir:
+**atoi** ve **_wtoi** *str* argümanı aşağıdaki formu vardır:
 
-> [*boşluk*] [*imzala*] [*basamaklar*]]
+> [*beyazuzay*] [*işaret*] [*basamak ]]*
 
-*Boşluk* , yoksayılan boşluk veya sekme karakterlerinden oluşur; *imza* artı (+) veya eksi (-); ve *rakamlar* bir veya daha fazla basamaktan oluşur.
+Bir *boşluk,* yoksayılan boşluk veya sekme karakterlerinden oluşur; *işareti* artı (+) veya eksi (-); ve *basamaklar* bir veya daha fazla basamakvardır.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Bu işlevlerin **_l** soneki olan sürümleri, geçerli yerel alan yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tstoı**|**atoı**|**atoı**|**_wtoi**|
-|**_ttoı**|**atoı**|**atoı**|**_wtoi**|
+|**_tstoi**|**atoi**|**atoi**|**_wtoi**|
+|**_ttoi**|**atoi**|**atoi**|**_wtoi**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Çalıştırmasını|Gerekli başlık|
+|Rutin|Gerekli başlık|
 |--------------|---------------------|
-|**atoı**|\<Stdlib. h >|
-|**_atoi_l**, **_wtoi**, **_wtoi_l**|\<Stdlib. h > veya \<wchar. h >|
+|**atoi**|\<stdlib.h>|
+|**_atoi_l**, **_wtoi**, **_wtoi_l**|\<stdlib.h> \<veya wchar.h>|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dizeler olarak depolanan sayıların **atoı** işlevleri kullanılarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
+Bu program, dizeleri olarak depolanan **sayıların atoi** işlevlerini kullanarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
 
 ```C
 // crt_atoi.c
@@ -166,7 +173,7 @@ Overflow condition occurred.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

@@ -1,10 +1,12 @@
 ---
 title: _create_locale, _wcreate_locale
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _create_locale
 - __create_locale
 - _wcreate_locale
+- _o__create_locale
+- _o__wcreate_locale
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-ms.openlocfilehash: 58274b63a09847fb8593247bd2777cfa19935510
-ms.sourcegitcommit: f38f770bfda1c174d2b81fabda7c893b15bd83a1
+ms.openlocfilehash: 611eaf342776b9a0f57c4f55c52a841c3fd13fb5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473841"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348263"
 ---
 # <a name="_create_locale-_wcreate_locale"></a>_create_locale, _wcreate_locale
 
-Yerel ayar nesnesi oluşturur.
+Yerel bir nesne oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,51 +60,53 @@ _locale_t _wcreate_locale(
 
 ### <a name="parameters"></a>Parametreler
 
-*alan*<br/>
-Alan.
+*Kategori*<br/>
+Kategori.
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Yerel ayar tanımlayıcı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir *yerel ayar* ve *kategori* verilirse, **_locale_t** nesne olarak belirtilen yerel ayar ayarlarını döndürür. Programın geçerli yerel ayarları değiştirilmez.
+Geçerli bir *yerel ayar* ve *kategori* verilirse, belirtilen yerel ayarlar **_locale_t** nesnesi olarak döndürür. Programın geçerli yerel ayarları değiştirilmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Create_locale** işlevi, çok sayıda CRT işlevinin ( **_l** sonekine sahip işlevler) yerel ayara özgü sürümlerinde kullanılmak üzere belirli bölgeye özgü ayarları temsil eden bir nesne oluşturmanıza olanak sağlar. Bu davranış, belirtilen yerel ayar ayarlarını geçerli ortama uygulamak yerine, **setlocale**ile benzerdir, ancak ayarlar döndürülen bir **_locale_t** yapısına kaydedilir. **_Locale_t** yapısı artık gerekli olmadığında [_free_locale](free-locale.md) kullanılarak serbest bırakılmalıdır.
+**_create_locale** işlevi, birçok CRT işlevinin **(_l** sonekli işlevler) yerele özgü sürümlerinde kullanılmak üzere belirli bölgeye özgü ayarları temsil eden bir nesne oluşturmanıza olanak tanır. Davranış, belirtilen yerel ayarlar ayarı geçerli ortama uygulamak yerine döndürülen **_locale_t** bir yapıya kaydedilse **de, ayaryerel'e**benzer. **_locale_t** yapısı artık ihtiyaç duyulmadığında [_free_locale](free-locale.md) kullanılarak serbest bırakılmalıdır.
 
-**_wcreate_locale** , **_create_locale**geniş karakterli bir sürümüdür; _wcreate_locale *yerel ayar* bağımsız değişkeni geniş karakterli bir dizedir. **_wcreate_locale** ve **_create_locale** aynı şekilde davranır.
+**_wcreate_locale** **_create_locale**geniş karakterli bir versiyonudur; **_wcreate_locale** için *yerel* değişken geniş karakterli bir dizedir. **_wcreate_locale** ve **_create_locale** aynı şekilde davranan.
 
-*Kategori* bağımsız değişkeni, yerel ayara özgü davranışın etkilenme parçalarını belirtir. *Kategori* için kullanılan bayraklar ve bunların etkilediği programın bölümleri bu tabloda gösterilmiştir:
+*Kategori* bağımsız değişkeni, etkilenen yerele özgü davranışın bölümlerini belirtir. *Kategori* için kullanılan bayraklar ve etkilediği programın bölümleri bu tabloda gösterildiği gibidir:
 
-| *Kategori* bayrağı | Ekranlarını |
+| *kategori* bayrağı | Etkiledi -ğini |
 |-----------------|---------|
-| **LC_ALL** |Aşağıda listelendiği gibi tüm kategoriler. |
-| **LC_COLLATE** |**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**ve **wcsxfrm** işlevleri. |
-| **LC_CTYPE** | Karakter işleme işlevleri (etkilenmeyen **IsDigit**, **ısxdigit**, **mbstowcs**ve **mbtowc**hariç). |
+| **LC_ALL** |Tüm kategoriler, aşağıda listelenen. |
+| **LC_COLLATE** |**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, ve **wcsxfrm** fonksiyonları. |
+| **LC_CTYPE** | Karakter işleme işlevleri **(isdigit**hariç , **isxdigit**, **mbstowcs**, ve **mbtowc**, etkilenmez). |
 | **LC_MONETARY** | **Localeconv** işlevi tarafından döndürülen parasal biçimlendirme bilgileri. |
-| **LC_NUMERIC** | Biçimlendirilmiş çıkış yordamları ( **printf**gibi) için, veri dönüştürme yordamları için ve **localeconv**tarafından döndürülen parasal olmayan biçimlendirme bilgileri için ondalık nokta karakteri. Ondalık noktalı karaktere ek olarak **LC_NUMERIC** , binlerce ayırıcıyı ve [localeconv](localeconv.md)tarafından döndürülen gruplama denetimi dizesini ayarlar. |
-| **LC_TIME** | **Strftime** ve **wcsftime** işlevleri. |
+| **LC_NUMERIC** | Biçimlendirilmiş çıktı yordamları **(printf**gibi), veri dönüştürme yordamları ve **localeconv**tarafından döndürülen parasal olmayan biçimlendirme bilgileri için ondalık nokta karakteri. Ondalık nokta karakterine ek olarak, **LC_NUMERIC** binlerce ayırıcıyı ve [localeconv](localeconv.md)tarafından döndürülen gruplandırma denetim dizesini ayarlar. |
+| **LC_TIME** | **Strftime** ve **wcsftime** fonksiyonları. |
 
-Bu işlev *Kategori* ve *yerel ayar* parametrelerini doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse veya *yerel ayar* **null**ise, işlev **null**değerini döndürür.
+Bu *işlev, kategori* ve *yerel parametreleri* doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse veya *yerel null* **ise,** işlev **NULL**döndürür.
 
-*Yerel ayar* bağımsız değişkeni, yerel ayarı belirten bir dizeye yönelik bir işaretçidir. *Yerel ayar* bağımsız değişkeninin biçimi hakkında daha fazla bilgi için bkz. [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md).
+*Yerel* değişken, yerel ile'yi belirten bir dize işaretçisidir. *Yerel* değişkenin biçimi hakkında bilgi için Bkz. [Yerel Adlar, Diller ve Ülke/Bölge Dizeleri.](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)
 
-*Yerel ayar* bağımsız değişkeni bir yerel ayar adı, bir dil dizesi, bir dil dizesi ve ülke/bölge kodu, kod sayfası veya dil dizesi, ülke/bölge kodu ve kod sayfası alabilir. Kullanılabilir yerel ayar adları, diller, ülke/bölge kodları ve kod sayfaları kümesi, Windows NLS API 'SI tarafından desteklenen tümünü içerir. **_Create_locale** tarafından desteklenen yerel ayar adları kümesi, [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)bölümünde açıklanmaktadır. **_Create_locale** tarafından desteklenen dil ve ülke/bölge dizeleri kümesi, [dil dizeleri](../../c-runtime-library/language-strings.md) ve [ülke/bölge dizelerinde](../../c-runtime-library/country-region-strings.md)listelenmiştir.
+*Yerel* değişken, yerel ad, dil dizesi, dil dizesi ve ülke/bölge kodu, kod sayfası veya dil dizesi, ülke/bölge kodu ve kod sayfası alabilir. Kullanılabilir yerel adlar, diller, ülke/bölge kodları ve kod sayfaları kümesi, Windows NLS API tarafından desteklenen tüm bunları içerir. **_create_locale** tarafından desteklenen yerel adlar kümesi [Yerel Adlar, Diller ve Ülke/Bölge Dizeleri'nde](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)açıklanmıştır. **_create_locale** tarafından desteklenen dil ve ülke/bölge dizeleri kümesi [Dil Dizeleri](../../c-runtime-library/language-strings.md) ve [Ülke/Bölge Dizeleri](../../c-runtime-library/country-region-strings.md)olarak listelenir.
 
-Yerel ayarlar hakkında daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md).
+Yerel ayarlar hakkında daha fazla bilgi için [setlocale, _wsetlocale'](setlocale-wsetlocale.md)e bakın.
 
-Bu işlevin önceki adı, **__create_locale** (iki önde gelen alt çizgi ile) kullanım dışıdır.
+Bu işlevin önceki adı, **__create_locale** (iki satır altı çizilmiştir), amortismana uğramış.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_create_locale**|\<locale. h >|
-|**_wcreate_locale**|\<locale. h > veya \<wchar. h >|
+|**_create_locale**|\<locale.h>|
+|**_wcreate_locale**|\<locale.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -167,13 +172,13 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
+[Yerel Adlar, Diller ve Ülke/Bölge Dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
 [Dil Dizeleri](../../c-runtime-library/language-strings.md)<br/>
-[Ülke/bölge dizeleri](../../c-runtime-library/country-region-strings.md)<br/>
+[Ülke/Bölge Dizeleri](../../c-runtime-library/country-region-strings.md)<br/>
 [_free_locale](free-locale.md)<br/>
 [_configthreadlocale](configthreadlocale.md)<br/>
 [setlocale](../../preprocessor/setlocale.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>

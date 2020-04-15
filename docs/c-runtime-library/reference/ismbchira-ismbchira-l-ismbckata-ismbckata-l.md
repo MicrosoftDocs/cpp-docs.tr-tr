@@ -1,11 +1,15 @@
 ---
 title: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _ismbckata
 - _ismbchira_l
 - _ismbchira
 - _ismbckata_l
+- _o__ismbchira
+- _o__ismbchira_l
+- _o__ismbckata
+- _o__ismbckata_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -43,19 +48,19 @@ helpviewer_keywords:
 - Hiragana
 - ismbckata function
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3
-ms.openlocfilehash: 13f66c7450e05240f8bad6034bd56f5da6de20c0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d450702ae41f404606cda1bea613f3d99fadd06f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953878"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81343209"
 ---
 # <a name="_ismbchira-_ismbchira_l-_ismbckata-_ismbckata_l"></a>_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 
-**Kod sayfasına özgü 932 işlevleri**
+**Kod Sayfa 932 Belirli fonksiyonlar**
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,46 +83,48 @@ int _ismbckata_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Sınanacak karakter.
+*C*<br/>
+Karakter test edilecek.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, karakter test koşulunu karşılıyorsa veya 0 değilse sıfır dışında bir değer döndürür. *C* < = 255 ise ve karşılık gelen bir **_ismbb** yordamı varsa (örneğin, **_ismbcalnum** , **_ismbbalnum**öğesine karşılık gelir), sonuç karşılık gelen **_ismbb** yordamının dönüş değeridir.
+Karakter test koşulunu karşılarsa, bu yordamların her biri sıfır olmayan bir değer döndürür. *C* <= 255 ve karşılık gelen bir **_ismbb** yordamı varsa (örneğin, **_ismbcalnum** **_ismbbalnum**karşılık geliyorsa), sonuç ilgili **_ismbb** yordamının dönüş değeridir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, belirli bir koşul için verilen bir çok baytlı karakteri sınar.
+Bu işlevlerin her biri belirli bir koşul için belirli bir çok bayt karakteri sınar.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**Bu işlevlerin _l** sonekli sürümleri, yerel liğe bağımlı davranışları için geçerli yerel alan yerine geçirilen yerel liği kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
 |Yordam|Test koşulu (yalnızca kod sayfası 932)|
 |-------------|-------------------------------------------|
-|**_ismbchira**|Çift baytlık Hiragana: 0x829F < =*c*< = 0x82F1.|
-|**_ismbchira_l**|Çift baytlık Hiragana: 0x829F < =*c*< = 0x82F1.|
-|**_ismbcküta**|Çift baytlık Katakana: 0x8340 < =*c*< = 0x8396.|
-|**_ismbckata_l**|Çift baytlık Katakana: 0x8340 < =*c*< = 0x8396.|
+|**_ismbchira**|Çift bayt Hiragana: 0x829F<=*c*<=0x82F1.|
+|**_ismbchira_l**|Çift bayt Hiragana: 0x829F<=*c*<=0x82F1.|
+|**_ismbckata**|Çift bayat katakana: 0x8340<=*c*<=0x8396.|
+|**_ismbckata_l**|Çift bayat katakana: 0x8340<=*c*<=0x8396.|
 
-**Son kod sayfası 932 özgü**
+**Bitiş Kodu Sayfa 932 Özel**
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbchira**|\<mbstring. h >|
-|**_ismbchira_l**|\<mbstring. h >|
-|**_ismbcküta**|\<mbstring. h >|
-|**_ismbckata_l**|\<mbstring. h >|
+|**_ismbchira**|\<mbstring.h>|
+|**_ismbchira_l**|\<mbstring.h>|
+|**_ismbckata**|\<mbstring.h>|
+|**_ismbckata_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Yordamları](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[_ismbc Rutinleri](../../c-runtime-library/ismbc-routines.md)<br/>
+[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

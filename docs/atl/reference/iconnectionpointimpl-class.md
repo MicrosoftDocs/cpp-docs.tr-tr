@@ -1,5 +1,5 @@
 ---
-title: Inewctionpointımpl sınıfı
+title: IConnectionPointImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IConnectionPointImpl
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - connection points [C++], implementing
 - IConnectionPointImpl class
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
-ms.openlocfilehash: bd88fd5d00df0347c0bd2161129b8cfa3ca35406
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c62ac3310a579379674674a7a9a517e3f2fd60e5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496087"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329848"
 ---
-# <a name="iconnectionpointimpl-class"></a>Inewctionpointımpl sınıfı
+# <a name="iconnectionpointimpl-class"></a>IConnectionPointImpl Sınıfı
 
 Bu sınıf bir bağlantı noktası uygular.
 
@@ -34,40 +34,40 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Sınıfınız, öğesinden `IConnectionPointImpl`türetilir.
+*T*<br/>
+Sınıfınızdan `IConnectionPointImpl`türetilmiştir.
 
-*piıd*<br/>
-Bağlantı noktası nesnesi tarafından temsil edilen arabirimin IID 'sine yönelik bir işaretçi.
+*piid*<br/>
+Bağlantı noktası nesnesi tarafından temsil edilen arabirimin IID'sine işaretçi.
 
-*CDV*<br/>
-Bağlantıları yöneten bir sınıf. Varsayılan değer, sınırsız bağlantılara izin veren [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)' dir. Ayrıca, sabit sayıda bağlantıyı belirten [CComUnkArray](../../atl/reference/ccomunkarray-class.md)' i de kullanabilirsiniz.
+*Cdv*<br/>
+Bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız bağlantı sağlar. Sabit sayıda bağlantı belirten [CComUnkArray'i](../../atl/reference/ccomunkarray-class.md)de kullanabilirsiniz.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Inewctionpointımpl:: Advise](#advise)|Bağlantı noktası ve havuz arasında bir bağlantı kurar.|
-|[Inewctionpointımpl:: EnumConnections](#enumconnections)|Bağlantı noktası bağlantılarında yinelemek için bir Numaralandırıcı oluşturur.|
-|[Inewctionpointımpl:: GetConnectionInterface](#getconnectioninterface)|Bağlantı noktası tarafından temsil edilen arabirimin IID 'sini alır.|
-|[Inewctionpointımpl:: GetConnectionPointContainer](#getconnectionpointcontainer)|Bağlanılabilir nesnesine bir arabirim işaretçisi alır.|
-|[Inewctionpointımpl:: Unadvise](#unadvise)|Daha önce tarafından `Advise`kurulan bir bağlantıyı sonlandırır.|
+|[IConnectionPointImpl::Tavsiye](#advise)|Bağlantı noktası ve lavabo arasında bir bağlantı kurar.|
+|[IConnectionPointImpl::EnumConnections](#enumconnections)|Bağlantı noktası nın bağlantıları aracılığıyla yinelemek için bir sayısallaştırıcı oluşturur.|
+|[IConnectionPointImpl::GetConnectionInterface](#getconnectioninterface)|Bağlantı noktası tarafından temsil edilen arabirimin IID'sini alır.|
+|[IConnectionPointImpl::GetConnectionPointContainer](#getconnectionpointcontainer)|Bağlanabilir nesneye bir arabirim işaretçisi alır.|
+|[IConnectionPointImpl::Tavsiye siz](#unadvise)|Daha önce kurulan bir bağlantıyı `Advise`sonlandırır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Inewctionpointımpl:: m_vec](#m_vec)|Bağlantı noktası için bağlantıları yönetir.|
+|[IConnectionPointImpl::m_vec](#m_vec)|Bağlantı noktasının bağlantılarını yönetir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IConnectionPointImpl`bir bağlantı noktası uygular ve bu, bir nesnenin istemciye giden bir arabirimi kullanıma almasına olanak tanır. İstemci bu arabirimi havuz adlı bir nesne üzerinde uygular.
+`IConnectionPointImpl`bir nesnenin giden arabirimi istemciye maruz bırakmasını sağlayan bir bağlantı noktası uygular. İstemci bu arabirimi lavabo adı verilen bir nesneye uygular.
 
-ATL, bağlanılabilir nesneyi uygulamak için [ınewctionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) kullanır. Bağlanılabilir nesne içindeki her bağlantı noktası, *pIID*tarafından tanımlanan bir giden arabirimi temsil eder. *CDV* sınıfı bağlantı noktası ve havuz arasındaki bağlantıları yönetir. Her bağlantı, "tanımlama bilgisi" tarafından benzersiz bir şekilde tanımlanır.
+ATL, bağlanabilir nesneyi uygulamak için [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) kullanır. Bağlanabilir nesne içindeki her bağlantı noktası *piid*tarafından tanımlanan giden bir arabirimi temsil eder. Sınıf *CDV* bağlantı noktası ve lavabo arasındaki bağlantıları yönetir. Her bağlantı benzersiz bir "çerez" ile tanımlanır.
 
-ATL 'de bağlantı noktalarını kullanma hakkında daha fazla bilgi için, [bağlantı noktaları](../../atl/atl-connection-points.md)makalesine bakın.
+ATL'de bağlantı noktalarını kullanma hakkında daha fazla bilgi için [Bağlantı Noktaları](../../atl/atl-connection-points.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -77,11 +77,11 @@ ATL 'de bağlantı noktalarını kullanma hakkında daha fazla bilgi için, [ba�
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="advise"></a>Inewctionpointımpl:: Advise
+## <a name="iconnectionpointimpladvise"></a><a name="advise"></a>IConnectionPointImpl::Tavsiye
 
-Bağlantı noktası ve havuz arasında bir bağlantı kurar.
+Bağlantı noktası ve lavabo arasında bir bağlantı kurar.
 
 ```
 STDMETHOD(Advise)(
@@ -91,13 +91,13 @@ STDMETHOD(Advise)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlantı çağrısını sonlandırmak için [Unadvise](#unadvise) kullanın.
+Bağlantı çağrısını sonlandırmak için [Unadvise'ı](#unadvise) kullanın.
 
-Windows SDK bkz. [ınewctionpoint:: Advise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) .
+Bkz. [IConnectionPoint::Windows](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) SDK'da tavsiye de bulunun.
 
-##  <a name="enumconnections"></a>Inewctionpointımpl:: EnumConnections
+## <a name="iconnectionpointimplenumconnections"></a><a name="enumconnections"></a>IConnectionPointImpl::EnumConnections
 
-Bağlantı noktası bağlantılarında yinelemek için bir Numaralandırıcı oluşturur.
+Bağlantı noktası nın bağlantıları aracılığıyla yinelemek için bir sayısallaştırıcı oluşturur.
 
 ```
 STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
@@ -105,11 +105,11 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [ınewctionpoint:: EnumConnections](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) .
+Bkz. [IConnectionPoint::Windows](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) SDK'daki EnumConnections.
 
-##  <a name="getconnectioninterface"></a>Inewctionpointımpl:: GetConnectionInterface
+## <a name="iconnectionpointimplgetconnectioninterface"></a><a name="getconnectioninterface"></a>IConnectionPointImpl::GetConnectionInterface
 
-Bağlantı noktası tarafından temsil edilen arabirimin IID 'sini alır.
+Bağlantı noktası tarafından temsil edilen arabirimin IID'sini alır.
 
 ```
 STDMETHOD(GetConnectionInterface)(IID* piid2);
@@ -117,11 +117,11 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK ' de [IConnectionPoint:: GetConnectionInterface](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) öğesine bakın.
+Bkz. [IConnectionPoint::Windows](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) SDK'da GetConnectionInterface.
 
-##  <a name="getconnectionpointcontainer"></a>Inewctionpointımpl:: GetConnectionPointContainer
+## <a name="iconnectionpointimplgetconnectionpointcontainer"></a><a name="getconnectionpointcontainer"></a>IConnectionPointImpl::GetConnectionPointContainer
 
-Bağlanılabilir nesnesine bir arabirim işaretçisi alır.
+Bağlanabilir nesneye bir arabirim işaretçisi alır.
 
 ```
 STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
@@ -129,11 +129,11 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [ınewctionpoint:: GetConnectionPointContainer](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) .
+Bkz. [IConnectionPoint::Windows](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) SDK'da GetConnectionPointContainer.
 
-##  <a name="m_vec"></a>Inewctionpointımpl:: m_vec
+## <a name="iconnectionpointimplm_vec"></a><a name="m_vec"></a>IConnectionPointImpl::m_vec
 
-Bağlantı noktası nesnesi ve havuz arasındaki bağlantıları yönetir.
+Bağlantı noktası nesnesi ile lavabo arasındaki bağlantıları yönetir.
 
 ```
 CDV m_vec;
@@ -141,11 +141,11 @@ CDV m_vec;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `m_vec` [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)türüdür.
+Varsayılan olarak, `m_vec` [ccomdynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)türüdür.
 
-##  <a name="unadvise"></a>Inewctionpointımpl:: Unadvise
+## <a name="iconnectionpointimplunadvise"></a><a name="unadvise"></a>IConnectionPointImpl::Tavsiye siz
 
-Daha önce [öneri](#advise)aracılığıyla kurulan bir bağlantıyı sonlandırır.
+Daha önce [Advise](#advise)aracılığıyla kurulan bağlantıyı sonlandırır.
 
 ```
 STDMETHOD(Unadvise)(DWORD dwCookie);
@@ -153,9 +153,9 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [ınewctionpoint:: Unadvise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) .
+Bkz. [IConnectionPoint::Windows](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) SDK'da tavsiye dışı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[ıconnectionpoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

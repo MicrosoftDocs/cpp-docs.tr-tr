@@ -1,8 +1,9 @@
 ---
 title: _getdrives
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _getdrives
+- _o__getdrives
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,19 +29,19 @@ helpviewer_keywords:
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-ms.openlocfilehash: 0733cc00523bb3a7bb019453cc94183a5c2b87e1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 82d9aaac99e901d4fbf2fd41dbe84aad77ec8a9e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344286"
 ---
 # <a name="_getdrives"></a>_getdrives
 
-Şu anda kullanılabilir disk sürücüleri temsil eden bir bit maskesi döndürür.
+Kullanılabilir disk sürücülerini temsil eden bir bitmaskesi döndürür.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,15 +51,19 @@ unsigned long _getdrives( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri şu anda kullanılabilir olan disk sürücülerinin temsil ettiği bir bit dır. Bit konumu 0 (en az-önemli bit) sürücü A, bit konumu 1 sürücü B, bit konumu 2 sürücü C 'dir ve bu şekilde devam eder. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için **GetLastError**çağrısı yapın.
+İşlev başarılı olursa, iade değeri şu anda kullanılabilir disk sürücülerini temsil eden bir bitmask'dir. Bit konumu 0 (en az önemli bit) Sürücü A, bit konumu 1 sürücü B, bit konumu 2 sürücü C, vb. İşlev başarısız olursa, geri dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için **GetLastError'ı**arayın.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdrives**|\<Direct. h >|
+|**_getdrives**|\<direct.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -107,4 +113,4 @@ E:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Denetimi](../../c-runtime-library/directory-control.md)<br/>
+[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>

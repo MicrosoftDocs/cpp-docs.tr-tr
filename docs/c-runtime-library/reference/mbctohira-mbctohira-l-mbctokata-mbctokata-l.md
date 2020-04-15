@@ -1,11 +1,15 @@
 ---
 title: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbctohira
 - _mbctohira_l
 - _mbctokata
 - _mbctokata_l
+- _o__mbctohira
+- _o__mbctohira_l
+- _o__mbctokata
+- _o__mbctokata_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -41,19 +46,19 @@ helpviewer_keywords:
 - _mbctohira function
 - mbctokata function
 ms.assetid: f949afd7-44d4-4f08-ac8f-1fef2c915a1c
-ms.openlocfilehash: 6e158e933442256b1d712ba42afc28b94e2b123c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 817f5598f6a7dddfd148b7d7023e260b7bddfa4b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952551"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81341101"
 ---
 # <a name="_mbctohira-_mbctohira_l-_mbctokata-_mbctokata_l"></a>_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 
 Hiragana ve katakana karakterleri arasında dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,39 +81,41 @@ unsigned int _mbctokata_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Dönüştürülecek çok baytlı karakter.
+*C*<br/>
+Dönüştürmek için çok bayt karakter.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, mümkünse, dönüştürülmüş karakter *c*'yi döndürür. Aksi takdirde, *c* karakterini değiştirilmemiş olarak döndürür.
+Bu işlevlerin her biri dönüştürülen karakter *c*döndürür , mümkünse. Aksi takdirde *c* karakterini değiştirmeden döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbctohira** ve **_mbctoküta** işlevleri *c* karakterini test edin ve mümkünse aşağıdaki dönüşümlerden birini uygulayın.
+**_mbctohira** ve **_mbctokata** işlevleri *c* karakterini test eder ve mümkünse aşağıdaki dönüşümlerden birini uygular.
 
-|Çalıştırmasını|Dönüştürür|
+|Rutin|Dönüştürür|
 |--------------|--------------|
-|**_mbctohira**, **_mbctohik_l**|Çok baytlı Hiragana için çok baytlı Katakana.|
-|**_mbctoküta**, **_mbctokata_l**|Çok baytlı Katakana için çok baytlı Hiragana.|
+|**_mbctohira**, **_mbctohira_l**|Multibayt hiragana multibyte katakana.|
+|**_mbctokata**, **_mbctokata_l**|Multibayt katakana multibayt hiragana.|
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . Bu işlevlerin sürümleri aynıdır, ancak **_l** sonekine sahip olmayan bu, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır ve bunun yerine **_l** sonekine sahip olanlar, geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevlerin sürümleri aynıdır, ancak **_l** soneki olmayanlar bu yerelliğe bağımlı davranış için geçerli yerel alanı kullanır ve **_l** soneki olanlar bunun yerine geçirilen yerel parametreyi kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-Önceki sürümlerde, **_mbctohira** adlı **jtohira** ve **_mbctoküta** adı **jtoküta**olarak adlandırılmıştır. Yeni kod için yeni adları kullanın.
+Daha önceki versiyonlarda **_mbctohira** **jtohira,** **_mbctokata** ise **jtokata**olarak adlandırılmıştır. Yeni kod için yeni adları kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbctohira**|\<mbstring. h >|
-|**_mbctohira_l**|\<mbstring. h >|
-|**_mbctokata**|\<mbstring. h >|
-|**_mbctokata_l**|\<mbstring. h >|
+|**_mbctohira**|\<mbstring.h>|
+|**_mbctohira_l**|\<mbstring.h>|
+|**_mbctokata**|\<mbstring.h>|
+|**_mbctokata_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

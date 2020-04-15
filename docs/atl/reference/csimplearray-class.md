@@ -1,5 +1,5 @@
 ---
-title: CSimpleArray sınıfı
+title: CSimpleArray Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleArray
@@ -16,16 +16,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArray class
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-ms.openlocfilehash: 8c050002549fc6b7a18acb34f0e4f9a2f278db82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e45c9b3fd778aacd3a3e2d5d3696661afa0c6fb0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278013"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330911"
 ---
-# <a name="csimplearray-class"></a>CSimpleArray sınıfı
+# <a name="csimplearray-class"></a>CSimpleArray Sınıfı
 
-Bu sınıf, bir Basit dizi yönetmek için yöntemler sağlar.
+Bu sınıf, basit bir dizi yönetmek için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,47 +37,47 @@ class CSimpleArray
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Dizide saklamak için veri türü.
+Dizide depolayabilmek için veri türü.
 
 *TEqual*<br/>
-Türü öğeler için eşitlik testi tanımlamak bir nitelik nesnesi *T*.
+*T*türündeki öğeler için eşitlik testini tanımlayan bir özellik nesnesi.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleArray::CSimpleArray](#csimplearray)|Basit dizi için oluşturucu.|
-|[CSimpleArray:: ~ CSimpleArray](#dtor)|Basit dizi yok Edicisi.|
+|[CSimpleArray::CSimpleArray](#csimplearray)|Basit dizi için yapıcı.|
+|[CSimpleArray::~CSimpleArray](#dtor)|Basit diziiçin yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleArray::Add](#add)|Diziye yeni bir öğe ekler.|
-|[CSimpleArray::Find](#find)|Dizide bir öğe bulur.|
-|[CSimpleArray::GetData](#getdata)|Dizide depolanan veriler için bir işaretçi döndürür.|
-|[CSimpleArray::GetSize](#getsize)|Dizide depolanan öğelerin sayısını döndürür.|
-|[CSimpleArray::Remove](#remove)|Diziden belirli bir öğeyi kaldırır.|
-|[CSimpleArray::RemoveAll](#removeall)|Dizinin tüm öğeleri kaldırır.|
-|[CSimpleArray::RemoveAt](#removeat)|Belirtilen öğe diziden kaldırır.|
-|[CSimpleArray::SetAtIndex](#setatindex)|Belirtilen öğe dizideki ayarlar.|
+|[CSimpleArray::Ekle](#add)|Diziye yeni bir öğe ekler.|
+|[CSimpleArray::Bul](#find)|Dizide bir öğe bulur.|
+|[CSimpleArray::Veri Get](#getdata)|Dizide depolanan verilere bir işaretçi döndürür.|
+|[CSimpleArray::Getsize](#getsize)|Dizide depolanan öğe sayısını verir.|
+|[CSimpleArray::Kaldır](#remove)|Belirli bir öğeyi diziden kaldırır.|
+|[CSimpleArray::RemoveAll](#removeall)|Dizideki tüm öğeleri kaldırır.|
+|[CSimpleArray::removeat](#removeat)|Belirtilen öğeyi diziden kaldırır.|
+|[CSimpleArray::Setatindex](#setatindex)|Dizide belirtilen öğeyi ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleArray::operator\[\]](#operator_at)|Öğe diziden alır.|
+|[CSimpleArray::operatör\[\]](#operator_at)|Diziden bir öğe alır.|
 |[CSimpleArray::operator =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CSimpleArray` oluşturma ve herhangi bir türü bir Basit dizi yönetmek için yöntemler sağlar `T`.
+`CSimpleArray`belirli bir türde `T`basit bir dizi oluşturmak ve yönetmek için yöntemler sağlar.
 
-Parametre `TEqual` tanımlamanın iki türü öğeler için bir eşitlik işlevi sağlar `T`. Bir sınıf benzer oluşturarak [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md), verilen herhangi bir dizi için eşitlik testi davranışını değiştirmek mümkündür. Örneğin, bir işaretçiler dizisi ile ilgilenirken, bu değerlerin işaretçileri başvuran bağlı olarak bir eşitlik tanımlamak yararlı olabilir. Varsayılan uygulama yararlanan **operator=()**.
+Parametre, `TEqual` türiki `T`öğe için bir eşitlik işlevi tanımlama aracı sağlar. [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md)benzer bir sınıf oluşturarak, herhangi bir dizi için eşitlik testi davranışını değiştirmek mümkündür. Örneğin, bir işaretçi dizisiyle uğraşırken, eşitliği işaretçilerin başvurulan değerlerine bağlı olarak tanımlamak yararlı olabilir. Varsayılan uygulama **işleci kullanır=()**.
 
-Her ikisi de `CSimpleArray` ve [CSimpleMap](../../atl/reference/csimplemap-class.md) küçük bir dizi öğe için tasarlanmıştır. [CAtlArray](../../atl/reference/catlarray-class.md) ve [CAtlMap](../../atl/reference/catlmap-class.md) dizi çok sayıda öğe içerdiğinde kullanılmalıdır.
+Hem `CSimpleArray` de [CSimpleMap](../../atl/reference/csimplemap-class.md) az sayıda öğe için tasarlanmıştır. Dizi çok sayıda öğe içerdiğinde [CAtlArray](../../atl/reference/catlarray-class.md) ve [CAtlMap](../../atl/reference/catlmap-class.md) kullanılmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -87,7 +87,7 @@ Her ikisi de `CSimpleArray` ve [CSimpleMap](../../atl/reference/csimplemap-class
 
 [!code-cpp[NVC_ATL_Utilities#86](../../atl/codesnippet/cpp/csimplearray-class_1.cpp)]
 
-##  <a name="add"></a>  CSimpleArray::Add
+## <a name="csimplearrayadd"></a><a name="add"></a>CSimpleArray::Ekle
 
 Diziye yeni bir öğe ekler.
 
@@ -102,15 +102,15 @@ Diziye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe başarıyla diziye FALSE Aksi durumda eklenir, TRUE döndürür.
+Öğe diziye başarıyla eklenirse TRUE döndürür, aksi takdirde FALSE.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#87](../../atl/codesnippet/cpp/csimplearray-class_2.cpp)]
 
-##  <a name="csimplearray"></a>  CSimpleArray::CSimpleArray
+## <a name="csimplearraycsimplearray"></a><a name="csimplearray"></a>CSimpleArray::CSimpleArray
 
-Dizi nesnesi için oluşturucu.
+Dizi nesnesinin oluşturucusu.
 
 ```
 CSimpleArray(const CSimpleArray<T, TEqual>& src);
@@ -124,9 +124,9 @@ Varolan bir `CSimpleArray` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni ve boş bir oluşturma, veri üyeleri başlatır `CSimpleArray` nesne veya varolan bir kopyasını `CSimpleArray` nesne.
+Yeni boş bir `CSimpleArray` nesne veya varolan `CSimpleArray` bir nesnenin kopyasını oluşturarak veri üyelerini başolarak adlandırır.
 
-##  <a name="dtor"></a>  CSimpleArray:: ~ CSimpleArray
+## <a name="csimplearraycsimplearray"></a><a name="dtor"></a>CSimpleArray::~CSimpleArray
 
 Yıkıcı.
 
@@ -136,9 +136,9 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır.
+Ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="find"></a>  CSimpleArray::Find
+## <a name="csimplearrayfind"></a><a name="find"></a>CSimpleArray::Bul
 
 Dizide bir öğe bulur.
 
@@ -153,15 +153,15 @@ Aranacak öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğenin bulunamaması durumunda bulunan öğe veya -1 dizinini döndürür.
+Öğe bulunmazsa, bulunan öğenin dizinini veya -1'i döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#88](../../atl/codesnippet/cpp/csimplearray-class_3.cpp)]
 
-##  <a name="getdata"></a>  CSimpleArray::GetData
+## <a name="csimplearraygetdata"></a><a name="getdata"></a>CSimpleArray::Veri Get
 
-Dizide depolanan veriler için bir işaretçi döndürür.
+Dizide depolanan verilere bir işaretçi döndürür.
 
 ```
 T* GetData() const;
@@ -169,11 +169,11 @@ T* GetData() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi içindeki verileri için bir işaretçi döndürür.
+Dizideki verilere bir işaretçi döndürür.
 
-##  <a name="getsize"></a>  CSimpleArray::GetSize
+## <a name="csimplearraygetsize"></a><a name="getsize"></a>CSimpleArray::Getsize
 
-Dizide depolanan öğelerin sayısını döndürür.
+Dizide depolanan öğe sayısını verir.
 
 ```
 int GetSize() const;
@@ -181,11 +181,11 @@ int GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizide depolanan öğelerin sayısını döndürür.
+Dizide depolanan öğe sayısını verir.
 
-##  <a name="operator_at"></a>  CSimpleArray::operator \[\]
+## <a name="csimplearrayoperator-"></a><a name="operator_at"></a>CSimpleArray::operatör\[\]
 
-Öğe diziden alır.
+Diziden bir öğe alır.
 
 ```
 T& operator[](int nindex);
@@ -193,18 +193,18 @@ T& operator[](int nindex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Öğenin dizini.
+*Nındex*<br/>
+Öğe dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından başvurulan dizinin bir öğesine döndürür *nIndex*.
+*nIndex*tarafından başvurulan dizi öğesini döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/cpp/csimplearray-class_4.cpp)]
 
-##  <a name="operator_eq"></a>  CSimpleArray::operator =
+## <a name="csimplearrayoperator-"></a><a name="operator_eq"></a>CSimpleArray::operator =
 
 Atama işleci.
 
@@ -217,23 +217,23 @@ CSimpleArray<T, TEqual>
 ### <a name="parameters"></a>Parametreler
 
 *src*<br/>
-Kopyalamak için dizi.
+Kopyalanması gereken dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş bir işaretçi döndürür `CSimpleArray` nesne.
+Güncelleştirilmiş nesneye `CSimpleArray` bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm öğeleri kopyalar `CSimpleArray` tarafından başvurulan nesne *src* geçerli dizi nesnesine tüm mevcut veriler değiştiriliyor.
+`CSimpleArray` *Src* tarafından başvurulan nesnedeki tüm öğeleri geçerli dizi nesnesine kopyalayarak varolan tüm verileri değiştirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#90](../../atl/codesnippet/cpp/csimplearray-class_5.cpp)]
 
-##  <a name="remove"></a>  CSimpleArray::Remove
+## <a name="csimplearrayremove"></a><a name="remove"></a>CSimpleArray::Kaldır
 
-Diziden belirli bir öğeyi kaldırır.
+Belirli bir öğeyi diziden kaldırır.
 
 ```
 BOOL Remove(const T& t);
@@ -246,15 +246,15 @@ Diziden kaldırılacak öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe Aksi halde bulunan ve kaldırılmış, FALSE ise TRUE döndürür.
+Öğe bulunur ve kaldırılırsa TRUE döndürür, aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe kaldırıldığında, dizinin kalan öğeleri boş alanı dolduracak şekilde numaralandırılır.
+Bir öğe kaldırıldığında, dizide kalan öğeler boş alanı doldurmak için yeniden numaralandırılır.
 
-##  <a name="removeall"></a>  CSimpleArray::RemoveAll
+## <a name="csimplearrayremoveall"></a><a name="removeall"></a>CSimpleArray::RemoveAll
 
-Dizinin tüm öğeleri kaldırır.
+Dizideki tüm öğeleri kaldırır.
 
 ```
 void RemoveAll();
@@ -262,11 +262,11 @@ void RemoveAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda dizide depolanan tüm öğeleri kaldırır.
+Dizide şu anda depolanan tüm öğeleri kaldırır.
 
-##  <a name="removeat"></a>  CSimpleArray::RemoveAt
+## <a name="csimplearrayremoveat"></a><a name="removeat"></a>CSimpleArray::removeat
 
-Belirtilen öğe diziden kaldırır.
+Belirtilen öğeyi diziden kaldırır.
 
 ```
 BOOL RemoveAtint nIndex);
@@ -274,20 +274,20 @@ BOOL RemoveAtint nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Kaldırmak için öğeyi işaret eden dizini.
+*Nındex*<br/>
+Kaldırılacak öğeyi gösteren dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğesi, varsa kaldırıldı, yanlış dizini geçersizdi TRUE döndürür.
+Öğe kaldırıldıysa TRUE döndürür, dizin geçersizse FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe kaldırıldığında, dizinin kalan öğeleri boş alanı dolduracak şekilde numaralandırılır.
+Bir öğe kaldırıldığında, dizide kalan öğeler boş alanı doldurmak için yeniden numaralandırılır.
 
-##  <a name="setatindex"></a>  CSimpleArray::SetAtIndex
+## <a name="csimplearraysetatindex"></a><a name="setatindex"></a>CSimpleArray::Setatindex
 
-Belirtilen öğe dizideki ayarlayın.
+Dizide belirtilen öğeyi ayarlayın.
 
 ```
 BOOL SetAtIndex(
@@ -297,16 +297,16 @@ BOOL SetAtIndex(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Değiştirilecek öğenin dizini.
+*Nındex*<br/>
+Değişecek öğenin dizini.
 
 *T*<br/>
-Belirtilen öğe için atanacak değer.
+Belirtilen öğeye atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU başarılı, yanlış dizini geçerli değil, döndürür.
+Dizin geçerli değilse doğru döndürür, FALSE.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

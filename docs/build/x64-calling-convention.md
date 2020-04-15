@@ -1,77 +1,77 @@
 ---
 title: x64 çağırma kuralı
-description: Varsayılan x64 ABı çağırma kuralının ayrıntıları.
+description: Varsayılan x64 ABI arama kuralının ayrıntıları.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: 5b9801eff6a9789313d083fdd6ed69c3076643ad
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: caf22172ea5e9c20280bce8e508d72fd30c00c5b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078076"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81335125"
 ---
 # <a name="x64-calling-convention"></a>x64 çağırma kuralı
 
-Bu bölümde, bir işlevin (çağıran) x64 kodundaki başka bir işleve (aranan) çağrı yapmak için kullandığı standart süreçler ve kurallar açıklanmaktadır.
+Bu bölümde, bir işlevin (arayan) x64 kodunda başka bir işleve (callee) çağrı yapmak için kullandığı standart işlemler ve kurallar açıklanmaktadır.
 
-## <a name="calling-convention-defaults"></a>Çağırma kuralı Varsayılanları
+## <a name="calling-convention-defaults"></a>Çağırma kuralı varsayılanları
 
-X64 uygulama Ikili arabirimi (ABı), varsayılan olarak dört yazmaç hızlı çağrı çağırma kuralını kullanır. Çağrı yığınında, bu kayıtları kaydetmek üzere Callet 'ler için bir gölge depolama alanı olarak tahsis edilir. Bir işlev çağrısının bağımsız değişkenleri ile bu bağımsız değişkenler için kullanılan yazmaçların katı bire bir yazışmaları vardır. 8 bayta uymayan veya 1, 2, 4 veya 8 bayt olmayan bağımsız değişkenler başvuruya göre geçirilmelidir. Tek bir bağımsız değişken hiçbir şekilde birden çok kayıt arasında yayılmaz. X87 kayıt yığını kullanılmıyor ve çağrılan tarafından kullanılabilir, ancak işlev çağrıları arasında geçici olarak düşünülmelidir. Tüm kayan nokta işlemleri 16 XMM Yazmaçları kullanılarak yapılır. Tamsayı bağımsız değişkenleri, RCX, RDX, R8 ve R9 yazmaçlarında geçirilir. Kayan nokta bağımsız değişkenleri XMM0L, XMM1L, XMM2L ve XMM3L içinde geçirilir. 16 baytlık bağımsız değişkenler başvuruya göre geçirilir. Parametre geçirme, [parametre geçirme](#parameter-passing)bölümünde ayrıntılı olarak açıklanmıştır. Bu yazmaçlara ek olarak, The KıX, R10, R11, XMM4 ve XMM5 geçici olarak değerlendirilir. Diğer tüm Yazmaçları geçici değildir. Kayıt kullanımı, kullanımı ve [arayan/çağrılan kaydedilmiş Yazmaçları](#callercallee-saved-registers) [kaydetme](../build/x64-software-conventions.md#register-usage) bölümünde ayrıntılı olarak belgelenmiştir.
+x64 Uygulama İkili Arabirimi (ABI), varsayılan olarak dört kayıtlı hızlı arama çağrı kuralı kullanır. Alan çağrı yığınına, bu kayıtları kaydetmek için çağrı verenler için gölge deposu olarak ayrılır. Bir işlev çağrısıiçin bağımsız değişkenler ve bu bağımsız değişkenler için kullanılan kayıtlar arasında sıkı birbire bir yazışma var. 8 bayta sığmayacak veya 1, 2, 4 veya 8 bayt olmayan tüm bağımsız değişkenler başvuru yla geçirilmelidir. Tek bir bağımsız değişken hiçbir zaman birden çok kayıt ta yayılmaz. x87 kayıt yığını kullanılmaz ve callee tarafından kullanılabilir, ancak işlev çağrıları arasında geçici olarak kabul edilmelidir. Tüm kayan nokta işlemleri 16 XMM kayıtları kullanılarak yapılır. Karşıcı bağımsız değişkenler RCX, RDX, R8 ve R9 kayıtlarında geçirilir. Kayan nokta bağımsız değişkenleri XMM0L, XMM1L, XMM2L ve XMM3L'de geçirilir. 16 bayt bağımsız değişkenler başvuru ile geçirilir. Parametre [geçişi, Parametre Geçişi'nde](#parameter-passing)ayrıntılı olarak açıklanmıştır. Bu kayıtlara ek olarak, RAX, R10, R11, XMM4 ve XMM5 geçici olarak kabul edilir. Diğer tüm kayıtlar geçici değildir. [Kayıt kullanımı, Register Kullanımı](../build/x64-software-conventions.md#register-usage) ve [Arayan/Callee Kayıtlı Kayıtlar'da](#callercallee-saved-registers)ayrıntılı olarak belgelenmiştir.
 
-Prototipi oluşturulmuş işlevlerde, geçirmeden önce tüm bağımsız değişkenler beklenen aranan türlerine dönüştürülür. Çağıran, çağrılan parametreler için alan ayırmaktan sorumludur ve aranan bu sayıda parametreyi almasa bile dört kayıt parametresini depolamak için her zaman yeterli alan ayırmalıdır. Bu kural, prototipi oluşturulmamış C dili işlevleri ve vararg C/C++ işlevleri için desteği basitleştirir. Vararg veya prototipi oluşturulmamış işlevlerde, tüm kayan nokta değerleri karşılık gelen genel amaçlı kasada yinelenmelidir. İlk dört dışındaki tüm parametrelerin, çağrıdan önce gölge depodan sonra yığına depolanması gerekir. Vararg işlev ayrıntıları [varargs](#varargs)içinde bulunabilir. Prototipi oluşturulmamış işlev bilgileri [prototipi oluşturulmamış işlevlerde](#unprototyped-functions)ayrıntılı olarak açıklanmıştır.
+Prototip işlevleri için, tüm bağımsız değişkenler geçmeden önce beklenen çağrı türlerine dönüştürülür. Arayan, parametreler için alan ayırmakla yükümlüdür ve callee bu kadar çok parametre almasa bile, her zaman dört kayıt parametresini depolamak için yeterli alan ayırmalıdır. Bu kural, prototiplenmemiş C dili işlevleri ve vararg C/C++ işlevleri için desteği basitleştirir. Vararg veya prototiplenmemiş işlevler için, kayan nokta değerlerinin ilgili genel amaçlı kayıtta çoğaltılması gerekir. İlk dört ötesindeki parametreler, aramadan önce gölge deposundan sonra yığında depolanmalıdır. Vararg fonksiyon ayrıntıları [Varargs](#varargs)bulunabilir. Prototipsiz işlev bilgileri [Prototipsiz Fonksiyonlar'da](#unprototyped-functions)ayrıntılı olarak açıklanır.
 
 ## <a name="alignment"></a>Hizalama
 
-Çoğu yapı doğal hizalamasına hizalanır. Birincil özel durumlar, performansa yardımcı olmak için 16 bayta hizalanmış yığın işaretçisi ve `malloc` ya da `alloca` bellektir. 16 baytın üzerinde hizalama el ile yapılmalıdır, ancak 16 bayt XMM işlemleri için ortak bir hizalama boyutu olduğundan, bu değer çoğu kod için çalışmalıdır. Yapı düzeni ve hizalama hakkında daha fazla bilgi için bkz. [türler ve depolama](../build/x64-software-conventions.md#types-and-storage). Yığın düzeni hakkında daha fazla bilgi için bkz. [x64 Stack kullanımı](../build/stack-usage.md).
+Çoğu yapı doğal hizalarına göre hizalanır. Birincil özel durumlar, performansa `malloc` `alloca` yardımcı olmak için 16 bayt'a hizalanmış yığın işaretçisi ve bellektir. 16 baytın üzerindeki hizalama el ile yapılmalıdır, ancak 16 bayt XMM işlemleri için ortak bir hizalama boyutu olduğundan, bu değer çoğu kod için çalışmalıdır. Yapı düzeni ve hizalama hakkında daha fazla bilgi için [Bkz. Türleri ve Depolama.](../build/x64-software-conventions.md#types-and-storage) Yığın düzeni hakkında bilgi için [bkz.](../build/stack-usage.md)
 
-## <a name="unwindability"></a>Unwınbir
+## <a name="unwindability"></a>Gevşeme
 
-Yaprak işlevleri, geçici olmayan kayıtları değiştirmeyen işlevlerdir. Yaprak olmayan bir işlev, örneğin bir işlev çağırarak veya yerel değişkenler için ek yığın alanı ayırarak geçici olmayan RSP 'yi değiştirebilir. Bir özel durum işlenirken geçici olmayan kayıtları kurtarmak için yaprak olmayan işlevlere, işlevin rastgele bir yönergede düzgün bir şekilde nasıl geri alınacağını açıklayan statik verilerle birlikte açıklanmalıdır. Bu veriler *pData*olarak, veri işleme verileri de *XData*' a karşılık gelen yordam verileri olarak depolanır. XData, geriye doğru izleme bilgilerini içerir ve ek PDATA veya bir özel durum işleyici işlevine işaret edebilir. Prologs 'lar ve epiteler, XData 'da doğru şekilde açıklanabilmeleri için yüksek oranda kısıtlıdır. Yığın işaretçisi, yaprak işlevleri dışında bir bitiş veya giriş bölümünün parçası olmayan herhangi bir kod bölgesinde 16 bayta hizalanmalıdır. Yaprak işlevleri bir dönüşün benzetimini yaparak, PDATA ve XData gerekli değildir. İşlev progünlükleri ve epıde 'ın doğru yapısı hakkında daha fazla bilgi için bkz. [x64 giriş ve bitiş](../build/prolog-and-epilog.md). Özel durum işleme hakkında daha fazla bilgi ve pData ve XData 'ların özel durum işleme ve geri alma hakkında daha fazla bilgi için bkz. [x64 özel durum işleme](../build/exception-handling-x64.md)
+Yaprak işlevleri, geçici olmayan kayıtları değiştirmeyen işlevlerdir. Yaprak sız bir işlev, örneğin, bir işlevi çağırarak veya yerel değişkenler için ek yığın alanı ayırarak geçici olmayan RSP'yi değiştirebilir. Bir özel durum işlendiğinde geçici olmayan kayıtları kurtarmak için, yaprak olmayan işlevler, rasgele bir yönergede işlevin nasıl düzgün bir şekilde gevşeteceğini açıklayan statik verilerle ek açıklama lı olmalıdır. Bu veriler *pdata*veya yordam verileri olarak depolanır, bu da *xdata*,özel durum işleme verileri anlamına gelir. Xdata gevşeme bilgilerini içerir ve ek pdata veya bir özel durum işleyicisi işlevine işaret edebilir. Prologs ve epilogs xdata düzgün açıklanabilir böylece son derece sınırlıdır. Yığın işaretçisi, yaprak işlevleri dışında, bir epilog veya prolog parçası olmayan herhangi bir kod bölgesinde 16 bayt olarak hizalanmalıdır. Yaprak işlevleri sadece bir dönüş simüle ederek çözülebilir, bu nedenle pdata ve xdata gerekli değildir. Fonksiyon prologları ve epilogların uygun yapısı hakkında ayrıntılı bilgi için [x64 prolog ve epilog'a](../build/prolog-and-epilog.md)bakın. Özel durum işleme ve pdata ve xdata'nın özel durum işleme ve gevşemesi hakkında daha fazla bilgi için [bkz.](../build/exception-handling-x64.md)
 
-## <a name="parameter-passing"></a>Parametre geçirme
+## <a name="parameter-passing"></a>Parametre geçişi
 
-İlk dört tamsayı bağımsız değişkeni yazmaçlara geçirilir. Tamsayı değerler, sırasıyla RCX, RDX, R8 ve R9 içinde soldan sağa sırada geçirilir. Beş ve üzeri bağımsız değişkenler yığına geçirilir. Tüm bağımsız değişkenlerin Yazmaçlarda sağa hizalanmış olması, bu yüzden çağrılan kaydın üst bitlerini yoksayabilir ve yalnızca kaydın gerekli kısmına erişebilir.
+İlk dört karşım bağımsız değişkeni kayıtlarda geçirilir. Tamsayı değerleri sırasıyla RCX, RDX, R8 ve R9'da soldan sağa sırayla geçirilir. Bağımsız değişkenler beş ve daha yüksek yığına aktarılır. Tüm bağımsız değişkenler kayıtlarda haklıdır, böylece callee kaydın üst bitlerini yoksayabilir ve yalnızca kaydın gerekli kısmına erişebilir.
 
-İlk dört parametrede herhangi bir kayan nokta ve çift duyarlıklı bağımsız değişken, konuma göre XMM0-XMM3 ile geçirilir. Bu konumlar için normalde kullanılacak olan RCX, RDX, R8 ve R9 tamsayı Yazmaçları, vararg bağımsız değişkenlerinin olması dışında yoksayılır. Ayrıntılar için bkz. [varargs](#varargs). Benzer şekilde, XMM0-XMM3 Yazmaçları karşılık gelen bağımsız değişken bir tamsayı veya işaretçi türü olduğunda yoksayılır.
+İlk dört parametredeki kayan nokta ve çift duyarlıklı bağımsız değişkenler konuma bağlı olarak XMM0 - XMM3'te geçirilir. Tamsayı, varargs bağımsız değişkenleri dışında normalde bu konumlar için kullanılacak olan RCX, RDX, R8 ve R9'u kaydeder. Ayrıntılar için Bkz. [Varargs.](#varargs) Benzer şekilde, karşılık gelen bağımsız değişken bir sonda veya işaretçi türü olduğunda XMM0 - XMM3 kayıtları yoksayılır.
 
-[__m128](../cpp/m128.md) türler, diziler ve dizeler hiçbir şekilde anında değer tarafından geçirilmez. Bunun yerine, çağıran tarafından ayrılan belleğe bir işaretçi geçirilir. 8, 16, 32 veya 64 bit ve __m64 türlerindeki yapılar ve birleşimler aynı boyutta tamsayılar gibi geçirilir. Diğer boyutlardaki yapılar veya birleşimler, çağıran tarafından ayrılan belleğe bir işaretçi olarak geçirilir. \__m128 dahil olmak üzere bir işaretçi olarak geçirilen bu toplama türleri için, arayan tarafından ayrılan geçici bellek 16 baytlık hizalı olmalıdır.
+[__m128](../cpp/m128.md) türleri, diziler ve dizeleri hemen değer tarafından geçirilir asla. Bunun yerine, bir işaretçi arayan tarafından ayrılan belleğe geçirilir. 8, 16, 32 veya 64 bit ve __m64 türdeki yapı ve birlikler, aynı boyuttaki tamsayılar gibi geçirilir. Diğer boyutlardaki structs veya birliş, arayan tarafından ayrılan belleğe işaretçi olarak geçirilir. _m128 da dahil \_olmak üzere işaretçi olarak geçirilen bu toplam türleri için, arayanın ayıran geçici belleği 16 bayt hizalanmış olmalıdır.
 
-Yığın alanı içermeyen ve diğer işlevleri çağırmadığı iç işlevler, bazen ek yazmaç bağımsız değişkenlerini geçirmek için diğer geçici Yazmaçları kullanır. Bu iyileştirme, derleyici ile iç işlev uygulamasıyla sıkı bağlama mümkün hale getirilir.
+Yığın alanı ayırmayen ve diğer işlevleri çağırmayen içsel işlevler, bazen ek kayıt bağımsız değişkenlerini geçmek için diğer geçici kayıtları kullanır. Bu optimizasyon derleyici ve içsel fonksiyon uygulaması arasındaki sıkı bağlama ile mümkün hale getirilir.
 
-Aranan, kayıt parametrelerini, gerekirse gölge alanına dökten sorumludur.
+Callee gerekirse kendi gölge uzaya kayıt parametreleri damping sorumludur.
 
-Aşağıdaki tabloda parametrelerin nasıl geçirildiği özetlenmektedir:
+Aşağıdaki tabloparametrelerin nasıl geçirildiğini özetler:
 
-|Parametre türü|Nasıl geçildi|
+|Parametre türü|Nasıl geçti|
 |--------------------|----------------|
-|Kayan nokta|İlk 4 parametre-XMM0 aracılığıyla XMM3. Yığın üzerine geçen diğerleri.|
-|Tamsayı|İlk 4 parametre-RCX, RDX, R8, R9. Yığın üzerine geçen diğerleri.|
-|Toplamlar (8, 16, 32 veya 64 bit) ve __m64|İlk 4 parametre-RCX, RDX, R8, R9. Yığın üzerine geçen diğerleri.|
-|Toplamlar (diğer)|İşaretçiye göre. RCX, RDX, R8 ve R9 içinde işaretçiler olarak ilk 4 parametre geçirildi|
-|__m128|İşaretçiye göre. RCX, RDX, R8 ve R9 içinde işaretçiler olarak ilk 4 parametre geçirildi|
+|Kayan nokta|İlk 4 parametre - XMM0 ile XMM3. Diğerleri yığın geçti.|
+|Tamsayı|İlk 4 parametre - RCX, RDX, R8, R9. Diğerleri yığın geçti.|
+|Toplamlar (8, 16, 32 veya 64 bit) ve __m64|İlk 4 parametre - RCX, RDX, R8, R9. Diğerleri yığın geçti.|
+|Toplamlar (diğer)|İşaretçiye göre. RCX, RDX, R8 ve R9'da işaretçi olarak geçirilen ilk 4 parametre|
+|__m128|İşaretçiye göre. RCX, RDX, R8 ve R9'da işaretçi olarak geçirilen ilk 4 parametre|
 
-### <a name="example-of-argument-passing-1---all-integers"></a>Bağımsız değişken geçen bir örnek 1-tüm tamsayılar
+### <a name="example-of-argument-passing-1---all-integers"></a>1 geçen bağımsız değişken örneği - tüm tüm tüm insalar
 
 ```cpp
 func1(int a, int b, int c, int d, int e);
 // a in RCX, b in RDX, c in R8, d in R9, e pushed on stack
 ```
 
-### <a name="example-of-argument-passing-2---all-floats"></a>Bağımsız değişken geçen 2-tüm float örnekleri
+### <a name="example-of-argument-passing-2---all-floats"></a>2 geçen argüman örneği - tüm yüzer
 
 ```cpp
 func2(float a, double b, float c, double d, float e);
 // a in XMM0, b in XMM1, c in XMM2, d in XMM3, e pushed on stack
 ```
 
-### <a name="example-of-argument-passing-3---mixed-ints-and-floats"></a>3-karışık litre ve float bağımsız değişken örneği
+### <a name="example-of-argument-passing-3---mixed-ints-and-floats"></a>3 geçen argüman örneği - karışık ints ve floats
 
 ```cpp
 func3(int a, double b, int c, float d);
 // a in RCX, b in XMM1, c in R8, d in XMM3
 ```
 
-### <a name="example-of-argument-passing-4--__m64-__m128-and-aggregates"></a>4-__m64, \__m128 ve toplamaları geçen bağımsız değişken örneği
+### <a name="example-of-argument-passing-4--__m64-__m128-and-aggregates"></a>4 -__m64, \__m128 ve toplamları geçen bağımsız değişken örneği
 
 ```cpp
 func4(__m64 a, _m128 b, struct c, float d);
@@ -80,11 +80,11 @@ func4(__m64 a, _m128 b, struct c, float d);
 
 ## <a name="varargs"></a>Varargs
 
-Parametreler varargs aracılığıyla (örneğin, üç nokta bağımsız değişkenleri) geçirilirse, normal kayıt parametre geçirme kuralı uygulanır, bu da, yığına beşinci ve sonraki bağımsız değişkenlerin atımı edilmesi dahildir. Adresinin alındığı bağımsız değişkenlerin dökümünü almak için aranan sorumluluğudur. Yalnızca kayan nokta değerleri için, çağrılan tamsayı Yazmaçlarda değeri beklediği durumlarda tamsayı kaydı ve kayan nokta kaydı değeri içermelidir.
+Parametreler varargs (örneğin, elips bağımsız değişkenleri) aracılığıyla aktarılırsa, beşinci ve sonraki bağımsız değişkenlerin yığına dökülmesi de dahil olmak üzere normal kayıt parametresi geçiş kuralı uygulanır. Adreslerini alan argümanları çöpe atmak callee'nin sorumluluğundadır. Yalnızca kayan nokta değerleri için, callee'nin sonda kayıtlarındaki değeri beklemesi durumunda, hem sonda kaydı hem de kayan nokta kaydının değeri içermesi gerekir.
 
-## <a name="unprototyped-functions"></a>Prototipi oluşturulmamış işlevler
+## <a name="unprototyped-functions"></a>Prototiplenmemiş işlevler
 
-Tam prototipi bulunmayan işlevler için, çağıran tam sayı değerlerini tamsayı ve kayan nokta değerleri olarak çift duyarlıklı geçirir. Yalnızca kayan nokta değerleri için, hem tamsayı kaydı hem de kayan nokta kaydı, çağrılan değerin tamsayı Yazmaçlarda değer beklediği durumda float değerini içerir.
+Tam olarak prototiplenmeyen işlevler için, arayan tamsayı değerlerini tamsayılar ve kayan nokta değerleri çift duyarlık olarak geçirir. Yalnızca kayan nokta değerleri için, callee'nin sonda kayıtlarındaki değeri beklemesi durumunda hem yüzer kaydı hem de kayan nokta kaydı float değerini içerir.
 
 ```cpp
 func1();
@@ -95,13 +95,13 @@ func2() {   // RCX = 2, RDX = XMM1 = 1.0, and R8 = 7
 
 ## <a name="return-values"></a>Döndürülen değerler
 
-64 bite uyaabilecek skaler bir dönüş değeri, KORX ile döndürülür; Bu __m64 türlerini içerir. [__M128](../cpp/m128.md), [__m128i](../cpp/m128i.md) [__m128d](../cpp/m128d.md) gibi float, Double değerleri ve vektör TÜRLERINI içeren skalar olmayan türler, XMM0 içinde döndürülür. IX veya XMM0 içinde döndürülen değer içindeki kullanılmayan bitlerin durumu tanımsız.
+64 bit sığabilecek skaler dönüş değeri RAX ile döndürülür; bu __m64 türleri içerir. Kayan, çift ve vektör türleri gibi [__m128,](../cpp/m128.md) [__m128i,](../cpp/m128i.md) [__m128d](../cpp/m128d.md) gibi skaler olmayan türler XMM0'da döndürülür. RAX veya XMM0'de döndürülen değerdeki kullanılmayan bitlerin durumu tanımsızdır.
 
-Kullanıcı tanımlı türler, genel işlevlerden ve statik üye işlevlerdeki değere göre döndürülebilir. Bir Kullanıcı tanımlı türü, bir GREX değerine göre döndürmek için, 1, 2, 4, 8, 16, 32 veya 64 bit uzunluğunda olmalıdır. Ayrıca, Kullanıcı tanımlı Oluşturucusu, yok edicisi veya kopya atama operatörünün olması gerekir; özel veya korumalı statik olmayan veri üyesi yok; başvuru türündeki statik olmayan veri üyesi yok; temel sınıf yok; sanal işlev yok; ve aynı zamanda bu gereksinimleri karşılamayan veri üyesi değildir. (Bu aslında bir C++ 03 POD türünün tanımıdır. Tanım C++ 11 standardında değiştiğinden, bu test için `std::is_pod` kullanmanızı önermiyoruz.) Aksi takdirde, çağıran, bellek ayırma ve dönüş değeri için bir işaretçiyi ilk bağımsız değişken olarak geçirme sorumluluğunu kabul eder. Ardından, sonraki bağımsız değişkenler sağa bir bağımsız değişken kaydıralınır. Aynı işaretçi, RAMPAIÇINDEKI çağrılan tarafından döndürülmelidir.
+Kullanıcı tanımlı türler, global işlevlerden ve statik üye işlevlerden değer olarak döndürülebilir. Kullanıcı tanımlı bir türü RAX'teki değere göre döndürmek için 1, 2, 4, 8, 16, 32 veya 64 bit uzunluğunda olması gerekir. Ayrıca kullanıcı tanımlı oluşturucu, yıkıcı veya kopya atama işleci olmamalıdır; özel veya korumalı statik olmayan veri üyeleri; referans türünden statik olmayan veri üyeleri yok; temel sınıf yok; sanal fonksiyonlar yok; ve bu gereksinimleri karşılamayan hiçbir veri üyesi. (Bu aslında c++03 POD tipinin tanımıdır. C++11 standardında tanım değiştiğinden, bu test için `std::is_pod` kullanmanızı önermiyoruz.) Aksi takdirde, arayan bellek ayırma ve ilk bağımsız değişken olarak döndürme değeri için bir işaretçi geçirme sorumluluğunu üstlenir. Sonraki bağımsız değişkenler daha sonra sağa bir bağımsız değişken kaydırılır. Aynı işaretçi RAX'taki callee tarafından döndürülmelidir.
 
-Bu örnekler, belirtilen bildirimlere sahip işlevler için parametrelerin ve dönüş değerlerinin nasıl geçtiğini gösterir:
+Bu örnekler, parametrelerin ve iade değerlerinin belirtilen bildirimlere sahip işlevler için nasıl geçirildiğini gösterir:
 
-### <a name="example-of-return-value-1---64-bit-result"></a>Dönüş değeri 1-64-bit sonucu örneği
+### <a name="example-of-return-value-1---64-bit-result"></a>İade değeri 1 - 64 bit sonuç örneği
 
 ```Output
 __int64 func1(int a, float b, int c, int d, int e);
@@ -109,7 +109,7 @@ __int64 func1(int a, float b, int c, int d, int e);
 // callee returns __int64 result in RAX.
 ```
 
-### <a name="example-of-return-value-2---128-bit-result"></a>Dönüş değeri 2-128-bit sonucu örneği
+### <a name="example-of-return-value-2---128-bit-result"></a>İade değeri 2 - 128 bitlik sonuç örneği
 
 ```Output
 __m128 func2(float a, double b, int c, __m64 d);
@@ -117,7 +117,7 @@ __m128 func2(float a, double b, int c, __m64 d);
 // callee returns __m128 result in XMM0.
 ```
 
-### <a name="example-of-return-value-3---user-type-result-by-pointer"></a>Dönüş değeri 3-işaretçiye göre Kullanıcı türü sonucu
+### <a name="example-of-return-value-3---user-type-result-by-pointer"></a>İade değeri örneği 3 - işaretçiye göre kullanıcı türü sonucu
 
 ```Output
 struct Struct1 {
@@ -129,7 +129,7 @@ Struct1 func3(int a, double b, int c, float d);
 // callee returns pointer to Struct1 result in RAX.
 ```
 
-### <a name="example-of-return-value-4---user-type-result-by-value"></a>Dönüş değeri 4-Kullanıcı türü sonucu değere göre örnek
+### <a name="example-of-return-value-4---user-type-result-by-value"></a>İade değeri örneği 4 - değere göre kullanıcı türü sonucu
 
 ```Output
 struct Struct2 {
@@ -140,70 +140,70 @@ Struct2 func4(int a, double b, int c, float d);
 // callee returns Struct2 result by value in RAX.
 ```
 
-## <a name="callercallee-saved-registers"></a>Çağıran/çağrılan kayıtlı Yazmaçları
+## <a name="callercallee-saved-registers"></a>Arayan/Callee kaydedilen kayıtları
 
-Kx, RCX, RDX, R8, R9, R10, R11, XMM0-5 ve YMM0 Ila-15 ve ZMM0-15 ' in üst bölümleri, geçici olarak değerlendirilir ve işlev çağrılarında yok edilmesi gerekir (Aksi takdirde, tüm program iyileştirmesi gibi analizler). AVX512VL 'de ZMM, YıMM ve XMM Yazmaçları 16-31 geçici bir durum değildir.
+RAX, RCX, RDX, R8, R9, R10, R11, XMM0-5 ve YMM0-15 ve ZMM0-15'in üst kısımları uçucu olarak kabul edilir ve işlev çağrılarında imha edilmiş olarak kabul edilmelidir (tüm program optimizasyonu gibi analizlerle aksi takdirde güvenlik kanıtlanamaz sayılmadığı sürece). AVX512VL'de ZMM, YMM ve XMM kayıtları 16-31 değişkendir.
 
-RBX, RBP, RDı, RSı, RSP, R12, R13, R14, R15 ve XMM6-15 kayıtları kalıcı olarak değerlendirilir ve bunları kullanan bir işlev tarafından kaydedilmesi ve geri yüklenmesi gerekir.
+RBX, RBP, RDI, RSI, RSP, R12, R13, R14, R15 ve XMM6-15 kayıtları geçici olmayan olarak kabul edilir ve bunları kullanan bir işlev tarafından kaydedilip geri yüklenmelidir.
 
 ## <a name="function-pointers"></a>İşlev işaretçileri
 
-İşlev işaretçileri, yalnızca ilgili işlevin etiketine yönelik işaretçilerdir. İşlev işaretçileri için içindekiler tablosu (TOC) gereksinimi yoktur.
+İşlev işaretçileri yalnızca ilgili işlevin etiketine işaretçilerdir. İşlev işaretçileri için içerik tablosu (TOC) gereksinimleri yoktur.
 
 ## <a name="floating-point-support-for-older-code"></a>Eski kod için kayan nokta desteği
 
-MMX ve kayan nokta yığın Yazmaçları (MM0-MM7/ST0-ST7) bağlam anahtarları arasında korunur. Bu Yazmaçları için açık bir çağırma kuralı yoktur. Bu yazmaçların kullanımı, çekirdek modu kodunda kesinlikle yasaktır.
+MMX ve kayan nokta lı yığın kayıtları (MM0-MM7/ST0-ST7) bağlam anahtarları arasında korunur. Bu kayıtlar için açık bir çağrı sözleşmesi yoktur. Çekirdek modu kodunda bu kayıtların kullanımı kesinlikle yasaktır.
 
 ## <a name="fpcsr"></a>FpCsr
 
-Kayıt durumu Ayrıca x87 FPU denetim sözcüğünü de içerir. Çağırma kuralı, bu kaydın kalıcı olmasını belirler.
+Kayıt durumu da x87 FPU denetim sözcüğü içerir. Arama sözleşmesi, bu kaydın geçici olmamasını emreder.
 
-X87 FPU denetimi sözcük kaydı, program yürütme başlangıcında aşağıdaki standart değerlere ayarlanır:
+x87 FPU denetim sözcük kaydı, program yürütmenin başlangıcında aşağıdaki standart değerlere ayarlanır:
 
-| \[bitleri Kaydet] | Ayar |
+| Bitleri kaydedin]\[ | Ayar |
 |-|-|
-| FPCSR\[0:6] | Özel durum maskeleri hepsi 1 ' dir (tüm özel durumlar maskelenir) |
-| FPCSR\[7] | Ayrılmış-0 |
-| FPCSR\[8:9] | Duyarlık denetimi-10B (çift duyarlık) |
-| FPCSR\[10:11] | Yuvarlama denetimi-0 (en yakın) |
-| FPCSR\[12] | Infinity denetimi-0 (kullanılmaz) |
+| FPCSR\[0:6] | Özel durum maskeleri tüm 1's (tüm özel durumlar maskeli) |
+| FPCSR\[7] | Ayrılmış - 0 |
+| FPCSR\[8:9] | Hassas Kontrol - 10B (çift hassasiyet) |
+| FPCSR\[10:11] | Yuvarlama kontrolü - 0 (en yakına yuvarlama) |
+| FPCSR\[12] | Sonsuzluk kontrolü - 0 (kullanılmaz) |
 
-FPCSR içindeki alanlardan herhangi birini değiştiren bir çağrılan, çağıranına dönmeden önce bunları geri yüklemesi gerekir. Ayrıca, bu alanlardan herhangi birini değiştiren bir çağıran, çağrı yapılmadan önce bu alanları standart değerlerine geri yükleyerek çağrılan, çağrılan değer bekler.
+FPCSR içindeki alanlardan herhangi birini değiştiren bir callee, arayana dönmeden önce bunları geri yüklemelidir. Ayrıca, bu alanlardan herhangi birini değiştiren bir arayanın, callee'nin değiştirilen değerleri beklemediği sürece, bir callee'yi çağırmadan önce bunları standart değerlerine geri yüklemesi gerekir.
 
-Denetim bayraklarının listesi oluşturulmamış kurallarla ilgili kuralların iki özel durumu vardır:
+Denetim bayraklarının oynaklığı olmamasıyla ilgili kuralların iki istisnası vardır:
 
-1. Verilen işlevin belgelenmiş amacının kalıcı FpCsr bayraklarını değiştirmesi durumunda olduğu işlevlerde.
+1. Verilen işlevin belgelenen amacının geçici olmayan FpCsr bayraklarını değiştirmek olduğu işlevlerde.
 
-1. Provably olduğunda, bu kuralların ihlali, bu kuralların ihlal olmadığı bir programla aynı şekilde davranan bir programla sonuçlanır. Örneğin, tam program analizi.
+1. Bu kuralların ihlalinin, örneğin tüm program çözümlemesi yoluyla, bu kuralların ihlal edilmediği bir programla aynı şekilde görünen bir programla sonuçlandığı kanıtlanabilir şekilde doğru olduğunda.
 
 ## <a name="mxcsr"></a>MxCsr
 
-Kayıt durumu MxCsr de içerir. Çağırma kuralı, bu kaydı geçici bir bölüme ve kalıcı bölüme böler. Geçici bölüm, MXCSR\[0:5] içindeki altı durum bayraklarından oluşur, ancak kaydın geri kalanı, MXCSR\[6:15] kalıcı olarak kabul edilir.
+Kayıt durumu da MxCsr içerir. Çağrı kuralı, bu kaydı geçici bir bölüme ve geçici olmayan bir bölüme böler. Geçici kısım, MXCSR\[0:5]'deki altı durum bayrağından oluşurken, kaydın geri\[kalanı, MXCSR 6:15] geçici olmayan olarak kabul edilir.
 
-Kalıcı olmayan bölüm, program yürütme başlangıcında aşağıdaki standart değerlere ayarlanır:
+Geçici olmayan kısım, program yürütmenin başlangıcında aşağıdaki standart değerlere ayarlanır:
 
-| \[bitleri Kaydet] | Ayar |
+| Bitleri kaydedin]\[ | Ayar |
 |-|-|
-| MXCSR\[6] | Denormaller sıfırlardır-0 |
-| MXCSR\[7:12] | Özel durum maskeleri hepsi 1 ' dir (tüm özel durumlar maskelenir) |
-| MXCSR\[13:14] | Yuvarlama denetimi-0 (en yakın) |
-| MXCSR\[15] | Maskelenmiş sınırın üzerinde sıfıra kadar temizle-0 (kapalı) |
+| MXCSR\[6] | Denormals sıfırlar - 0 |
+| MXCSR\[07:12] | Özel durum maskeleri tüm 1's (tüm özel durumlar maskeli) |
+| MXCSR\[13:14] | Yuvarlama kontrolü - 0 (en yakına yuvarlama) |
+| MXCSR\[15] | Maskeli alt akış için sıfıra flush - 0 (kapalı) |
 
-MXCSR içindeki kalıcı olmayan alanlardan herhangi birini değiştiren bir çağrılan, çağıranına dönmeden önce onları geri yüklemesi gerekir. Ayrıca, bu alanlardan herhangi birini değiştiren bir çağıran, çağrı yapılmadan önce bu alanları standart değerlerine geri yükleyerek çağrılan, çağrılan değer bekler.
+MXCSR içindeki geçici olmayan alanlardan herhangi birini değiştiren bir callee, arayana dönmeden önce bunları geri yüklemelidir. Ayrıca, bu alanlardan herhangi birini değiştiren bir arayanın, callee'nin değiştirilen değerleri beklemediği sürece, bir callee'yi çağırmadan önce bunları standart değerlerine geri yüklemesi gerekir.
 
-Denetim bayraklarının listesi oluşturulmamış kurallarla ilgili kuralların iki özel durumu vardır:
+Denetim bayraklarının oynaklığı olmamasıyla ilgili kuralların iki istisnası vardır:
 
-- Verilen işlevin belgelenmiş amacının, kalıcı MxCsr bayraklarını değiştirmek olduğu işlevlerde.
+- Verilen işlevin belgelenen amacının geçici olmayan MxCsr bayraklarını değiştirmek olduğu işlevlerde.
 
-- Provably olduğunda, bu kuralların ihlali, bu kuralların ihlal olmadığı bir programla aynı şekilde davranan bir programla sonuçlanır. Örneğin, tam program analizi.
+- Bu kuralların ihlalinin, örneğin tüm program çözümlemesi yoluyla, bu kuralların ihlal edilmediği bir programla aynı şekilde görünen bir programla sonuçlandığı kanıtlanabilir şekilde doğru olduğunda.
 
-Bir işlevin belgelerinde özellikle açıklanmadığı müddetçe, bir işlev sınırı genelinde MXCSR 'nin geçici kısmının durumu hakkında herhangi bir varsayım yapılamaz.
+Bir işlevin belgelerinde özel olarak belirtilmediği sürece, MXCSR'nin geçici bölümünün bir işlev sınırı boyunca durumu hakkında hiçbir varsayımda bulunulamaz.
 
 ## <a name="setjmplongjmp"></a>setjmp/longjmp
 
-Setjmpex. h veya setjmp. h dahil ettiğinizde, [setjmp](../c-runtime-library/reference/setjmp.md) veya [longjmp](../c-runtime-library/reference/longjmp.md) 'e yapılan tüm çağrılar, yıkıcıları ve `__finally` çağrılarını çağıran bir geriye doğru sonuçlanır.  Bu, setjmp. h dahil, `__finally` yan tümcelerinde ve yok edicilerin çağrılmayan x86 'dan farklıdır.
+Eğer setjmpex.h veya setjmp.h eklediğinizde, yıkıcılar ve `__finally` aramalar çağırır bir gevşeme [setjmp](../c-runtime-library/reference/setjmp.md) veya [longjmp](../c-runtime-library/reference/longjmp.md) sonuç tüm aramalar.  Bu x86 farklıdır, burada setjmp.h `__finally` yan tümceleri ve yıkıcılar çağrılmadı sonuçları da dahil olmak üzere.
 
-`setjmp` çağrısı geçerli yığın işaretçisini, geçici olmayan kayıtları ve MxCsr kayıtlarını korur.  `longjmp` çağrıları en son `setjmp` çağrı sitesine dönerek yığın işaretçisi, geçici olmayan Yazmaçları ve MxCsr yazmaçlarını en son `setjmp` çağrısıyla korunan duruma geri döndürür.
+Geçerli yığın `setjmp` işaretçisini, geçici olmayan kayıtları ve MxCsr kayıtları korur için bir çağrı.  En `longjmp` son `setjmp` arama sitesine dönmek için yapılan çağrılar ve yığın işaretçisini, geçici olmayan kayıtları ve MxCsr kayıtları sıfırlanır ve en son `setjmp` arama tarafından korunduğu şekilde duruma geri döner.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,6 @@
 ---
-title: Iregünlükçü sınıfı
-description: C++ Build Insights SDK 'Sı ıregünlükçü sınıfı başvurusu.
+title: IRelogger sınıfı
+description: C++ Build Insights SDK IRelogger sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: d0796cec3fe4ac6183279e8d8013a9550f18b61c
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 146377b2b44df43ed4b2f749efd9fb614a2a09c9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417434"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329152"
 ---
-# <a name="irelogger-class"></a>Iregünlükçü sınıfı
+# <a name="irelogger-class"></a>IRelogger sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`IRelogger` sınıfı, Windows için olay Izleme (ETW) izlemesini yeniden günlüğe kaydetmek için bir arabirim sağlar. [Makedynamicreloggergroup](../functions/make-dynamic-relogger-group.md) ve [Makestaticreloggergroup](../functions/make-static-analyzer-group.md) işlevleriyle birlikte kullanılır. Bir yeniden günlükçü grubunun parçası olabilecek kendi yeniden günlüklerinizi oluşturmak için `IRelogger` temel sınıf olarak kullanın.
+Sınıf, `IRelogger` Windows (ETW) izleme için olay izlemeyi yeniden günlüğe kaydetmeye yönelik bir arabirim sağlar. [MakeDynamicReloggerGroup](../functions/make-dynamic-relogger-group.md) ve [MakeStaticReloggerGroup](../functions/make-static-analyzer-group.md) işlevleri ile kullanılır. Bir `IRelogger` relogger grubunun parçası olabilir kendi relogger oluşturmak için bir taban sınıf olarak kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,36 +54,36 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılınamayan tüm işlevler için varsayılan dönüş değeri `AnalysisControl::CONTINUE`. Daha fazla bilgi için bkz. [Analysiscontrol](analysis-control-enum-class.md).
+Geçersiz kılınan tüm işlevler için varsayılan iade `AnalysisControl::CONTINUE`değeri. Daha fazla bilgi için [AnalysisControl'e](analysis-control-enum-class.md)bakın.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="destructor"></a>Yok edici
 
-[~ Iregünlükçü](#irelogger-destructor)
+[~IRelogger](#irelogger-destructor)
 
 ### <a name="functions"></a>İşlevler
 
-[Onbeginrelogging](#on-begin-relogging)\
-[Onbeginreloggingpass](#on-begin-relogging-pass)\
+[OnBeginRelogging](#on-begin-relogging)\
+[OnBeginReloggingPass](#on-begin-relogging-pass)\
 [OnEndRelogging](#on-end-relogging)\
 [OnEndReloggingPass](#on-end-relogging-pass)\
-[Onsimpleevent](#on-simple-event)\
-[Onstartactivity](#on-start-activity)\
-[Onstopactivity](#on-stop-activity)\
-[Ontraceınfo](#on-trace-info)
+[OnSimpleEvent](#on-simple-event)\
+[OnstartActivity](#on-start-activity)\
+[OnstopAktivite](#on-stop-activity)\
+[OnTraceInfo](#on-trace-info)
 
-## <a name="irelogger-destructor"></a>~ Iregünlükçü
+## <a name="irelogger"></a><a name="irelogger-destructor"></a>~IRelogger
 
-Iregünlükçü sınıfını yok eder.
+IRelogger sınıfını yok eder.
 
 ```cpp
 virtual ~IRelogger();
 ```
 
-## <a name="on-begin-relogging"></a>OnBeginRelogging
+## <a name="onbeginrelogging"></a><a name="on-begin-relogging"></a>OnBeginRelogging
 
-Bu işlev, yeniden günlük geçişi başlamadan önce çağrılır.
+Bu işlev, yeniden günlüğe kaydetme geçişi başlamadan önce çağrılır.
 
 ```cpp
 virtual AnalysisControl OnBeginRelogging();
@@ -91,11 +91,11 @@ virtual AnalysisControl OnBeginRelogging();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-begin-relogging-pass"></a>OnBeginReloggingPass
+## <a name="onbeginreloggingpass"></a><a name="on-begin-relogging-pass"></a>OnBeginReloggingPass
 
-Bu işlev, yeniden oturum açma geçişinin başlangıcında çağrılır.
+Bu işlev, yeniden günlüğe kaydetme geçişinin başında çağrılır.
 
 ```cpp
 virtual AnalysisControl OnBeginReloggingPass();
@@ -103,11 +103,11 @@ virtual AnalysisControl OnBeginReloggingPass();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-end-relogging"></a>OnEndRelogging
+## <a name="onendrelogging"></a><a name="on-end-relogging"></a>OnEndRelogging
 
-Bu işlev, yeniden oturum açma geçişi sona erdikten sonra çağrılır.
+Bu işlev, yeniden günlüğe kaydetme geçişi sona erdikten sonra çağrılır.
 
 ```cpp
 virtual AnalysisControl OnEndRelogging();
@@ -115,11 +115,11 @@ virtual AnalysisControl OnEndRelogging();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-end-relogging-pass"></a>OnEndReloggingPass
+## <a name="onendreloggingpass"></a><a name="on-end-relogging-pass"></a>OnEndReloggingPass
 
-Bu işlev, yeniden oturum açma geçişinin sonunda çağırılır.
+Bu işlev, yeniden günlüğe kaydetme geçişinin sonunda çağrılır.
 
 ```cpp
 virtual AnalysisControl OnEndReloggingPass();
@@ -127,45 +127,45 @@ virtual AnalysisControl OnEndReloggingPass();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-simple-event"></a>OnSimpleEvent
+## <a name="onsimpleevent"></a><a name="on-simple-event"></a>OnSimpleEvent
 
 ```cpp
 virtual AnalysisControl OnSimpleEvent(const EventStack& eventStack);
 ```
 
-Bu işlev, basit bir olay işlendiğinde çağrılır.
+Basit bir olay işlenirken bu işlev çağrılır.
 
 ### <a name="parameters"></a>Parametreler
 
-*Eventstack*\
-Bu basit olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
+*eventStack*\
+Bu basit olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-start-activity"></a>OnStartActivity
+## <a name="onstartactivity"></a><a name="on-start-activity"></a>OnstartActivity
 
 ```cpp
 virtual AnalysisControl OnStartActivity(const EventStack& eventStack);
 ```
 
-Bu işlev, etkinlik başlatma olayı işlendiğinde çağrılır.
+Bu işlev, bir etkinlik başlangıç olayı işlenirken çağrılır.
 
 ### <a name="parameters"></a>Parametreler
 
-*Eventstack*\
-Bu etkinlik başlangıç olayı için olay yığını. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
+*eventStack*\
+Bu etkinlik başlangıç olayı için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-stop-activity"></a>OnStopActivity
+## <a name="onstopactivity"></a><a name="on-stop-activity"></a>OnstopAktivite
 
-Bu işlev, etkinlik durdurma olayı işlendiğinde çağrılır.
+Bu işlev, bir etkinlik durdurma olayı işlenirken çağrılır.
 
 ```cpp
 virtual AnalysisControl OnStopActivity(const EventStack& eventStack);
@@ -173,28 +173,28 @@ virtual AnalysisControl OnStopActivity(const EventStack& eventStack);
 
 ### <a name="parameters"></a>Parametreler
 
-*Eventstack*\
-Bu etkinlik için olay yığını durdurma olayı. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
+*eventStack*\
+Bu etkinlik durdurma olayı için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
-## <a name="on-trace-info"></a>Ontraceınfo
+## <a name="ontraceinfo"></a><a name="on-trace-info"></a>OnTraceInfo
 
 ```cpp
 virtual AnalysisControl OnTraceInfo(const TraceInfo& traceInfo);
 ```
 
-Bu işlev, her analiz veya yeniden oturum açma geçişinin başlangıcında bir kez çağrılır.
+Bu işlev, her çözümleme nin veya yeniden günlüğe kaydetme geçişinin başında bir kez çağrılır.
 
 ### <a name="parameters"></a>Parametreler
 
-*TraceInfo*\
-Tüketilmekte olan izleme hakkında faydalı özellikler içeren bir [TraceInfo](../cpp-event-data-types/trace-info.md) nesnesi.
+*Traceınfo*\
+Tüketilen izleme yle ilgili yararlı özellikler içeren bir [TraceInfo](../cpp-event-data-types/trace-info.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
+Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
 
 ::: moniker-end

@@ -1,9 +1,11 @@
 ---
 title: _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _get_invalid_parameter_handler
 - _get_thread_local_invalid_parameter_handler
+- _o__get_invalid_parameter_handler
+- _o__get_thread_local_invalid_parameter_handler
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -29,12 +32,12 @@ helpviewer_keywords:
 - _get_thread_local_invalid_parameter_handler function
 - _get_invalid_parameter_handler function
 ms.assetid: a176da0e-38ca-4d99-92bb-b0e2b8072f53
-ms.openlocfilehash: 572d21696d38c47fe0f67d68af5eb249aeb94319
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 2465852b7bcc0251f218c68df14ff33930ad2378
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857818"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345069"
 ---
 # <a name="_get_invalid_parameter_handler-_get_thread_local_invalid_parameter_handler"></a>_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
 
@@ -49,13 +52,13 @@ _invalid_parameter_handler _get_thread_local_invalid_parameter_handler(void);
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Şu anda ayarlanmış geçersiz parametre işleyicisi işlevine veya hiçbiri ayarlanmamışsa boş bir işaretçiye yönelik bir işaretçi.
+Şu anda ayarlanmış geçersiz parametre işleyicisi işleviiçin bir işaretçi veya hiçbiri ayarlanmışsa null işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_invalid_parameter_handler** işlevi şu anda ayarlanmış olan genel geçersiz parametre işleyicisini alır. Genel geçersiz parametre işleyicisi ayarlanmamışsa null bir işaretçi döndürür. Benzer şekilde, **_get_thread_local_invalid_parameter_handler** , geçerli iş parçacığı yerel geçersiz parametre işleyicisini üzerinde çağrıldığı iş parçacığının veya hiçbir işleyici ayarlanmamışsa boş bir işaretçi alır. Genel ve iş parçacığı yerel geçersiz parametre işleyicilerini ayarlama hakkında daha fazla bilgi için bkz. [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).
+**_get_invalid_parameter_handler** işlevi, şu anda ayarlanmış genel geçersiz parametre işleyicisini alır. Genel geçersiz parametre işleyicisi ayarlı değilse, null işaretçisi döndürür. Benzer şekilde, **_get_thread_local_invalid_parameter_handler** çağrıldığı iş parçacığının geçerli yerel geçersiz parametre işleyicisini veya işleyici ayarlı değilse null işaretçisini alır. Genel ve iş parçacığı yerel geçersiz parametre işleyicileri ayarlamak hakkında bilgi için [bkz _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler.](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)
 
-Döndürülen geçersiz parametre işleyici işlev işaretçisi şu türe sahip:
+Döndürülen geçersiz parametre işleyicisi işlev işaretçisi aşağıdaki türe sahiptir:
 
 ```C
 typedef void (__cdecl* _invalid_parameter_handler)(
@@ -67,17 +70,19 @@ typedef void (__cdecl* _invalid_parameter_handler)(
     );
 ```
 
-Geçersiz parametre işleyicisi hakkında daha fazla bilgi için, [_set_invalid_parameter_handler _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)prototipi konusuna bakın.
+Geçersiz parametre işleyicisi hakkında ayrıntılı bilgi için, [_set_thread_local_invalid_parameter_handler _set_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)prototip bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C: \<Stdlib. h ><br /><br /> C++: \<cstdlib > veya \<Stdlib. h >|
+|**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib \<> veya stdlib.h>|
 
-**_Get_invalid_parameter_handler** ve **_get_thread_local_invalid_parameter_handler** işlevleri Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_get_invalid_parameter_handler** ve **_get_thread_local_invalid_parameter_handler** işlevleri Microsoft'a özgüdir. Uyumluluk bilgileri için [bkz.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)<br/>
-[CRT İşlevlerinin Gelişmiş Güvenlik Sürümleri](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>
+[CRT Fonksiyonlarının Güvenlikle Geliştirilmiş Sürümleri](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>

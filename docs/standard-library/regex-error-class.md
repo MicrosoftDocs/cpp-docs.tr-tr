@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - regex_error class
 ms.assetid: 3333a1a3-ca6f-4612-84b2-1b4c7e3db5a4
-ms.openlocfilehash: 52b6bfd74a08200f7d924d2601b85718a941dd85
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f8f3c88c1b203ed7fcea148843fa99590e27b888
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451650"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81331864"
 ---
-# <a name="regexerror-class"></a>regex_error Sınıfı
+# <a name="regex_error-class"></a>regex_error Sınıfı
 
-Hatalı bir basic_regex nesnesini raporlar.
+Kötü bir basic_regex nesnesi bildirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,23 +27,23 @@ class regex_error
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, bir `basic_regex` nesnesinin oluşturulması veya kullanımı sırasında hata raporlamak için oluşturulan bir özel durum nesnesini açıklar.
+Sınıf, bir `basic_regex` nesnenin yapısında veya kullanımında bir hatayı bildirmek için atılan bir özel durum nesnesini açıklar.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[regex_error](#regex_error)|Nesnesini oluşturur.|
+|[regex_error](#regex_error)|Nesneyi inşa eder.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
-|[kodudur](#code)|Hata kodunu döndürür.|
+|[Kod](#code)|Hata kodunu döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Regex >
+**Üstbilgi:** \<regex>
 
 **Ad alanı:** std
 
@@ -82,7 +82,7 @@ int main()
 regex error: unbalanced parentheses
 ```
 
-## <a name="code"></a>regex_error:: Code
+## <a name="regex_errorcode"></a><a name="code"></a>regex_error::kod
 
 Hata kodunu döndürür.
 
@@ -92,11 +92,11 @@ regex_constants::error_code code() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, nesnenin oluşturucusuna geçirilen değeri döndürür.
+Üye işlev, nesnenin oluşturucusuna geçirilen değeri döndürür.
 
-## <a name="regex_error"></a>regex_error::regex_error
+## <a name="regex_errorregex_error"></a><a name="regex_error"></a>regex_error:regex_error
 
-Nesnesini oluşturur.
+Nesneyi inşa eder.
 
 ```cpp
 regex_error(regex_constants::error_code error);
@@ -104,20 +104,20 @@ regex_error(regex_constants::error_code error);
 
 ### <a name="parameters"></a>Parametreler
 
-*hatayla*\
+*Hata*\
 Hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu, değer *hatasını*tutan bir nesne oluşturur.
+Kurucu değer *hatasını*tutan bir nesne inşa eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)\
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
-[\<Regex > işlevleri](../standard-library/regex-functions.md)\
+[\<regex>](../standard-library/regex.md)\
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)\
+[\<regex> fonksiyonları](../standard-library/regex-functions.md)\
 [regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<Regex > işleçleri](../standard-library/regex-operators.md)\
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
+[\<regex> operatörleri](../standard-library/regex-operators.md)\
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)\
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<tür tanımları > Regex](../standard-library/regex-typedefs.md)
+[\<regex> typedefs](../standard-library/regex-typedefs.md)

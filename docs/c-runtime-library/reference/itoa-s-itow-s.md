@@ -1,6 +1,6 @@
 ---
-title: _itoa_s, _itow_s işlevleri
-ms.date: 03/21/2018
+title: _itoa_s, _itow_s fonksiyonlar
+ms.date: 4/2/2020
 api_name:
 - _itoa_s
 - _ltoa_s
@@ -12,6 +12,16 @@ api_name:
 - _ultow_s
 - _i64tow_s
 - _ui64tow_s
+- _o__i64toa_s
+- _o__i64tow_s
+- _o__itoa_s
+- _o__itow_s
+- _o__ltoa_s
+- _o__ltow_s
+- _o__ui64toa_s
+- _o__ui64tow_s
+- _o__ultoa_s
+- _o__ultow_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -25,6 +35,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -79,16 +90,16 @@ helpviewer_keywords:
 - _ui64tot_s function
 - _i64toa_s function
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-ms.openlocfilehash: df7f3ec970e0205ab999d1a04299a22dcc422d42
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: f392bb1dbcafd1666d082163190c4e988c7f1ab1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73625074"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81342611"
 ---
 # <a name="_itoa_s-_ltoa_s-_ultoa_s-_i64toa_s-_ui64toa_s-_itow_s--_ltow_s--_ultow_s-_i64tow_s-_ui64tow_s"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s
 
-Bir tamsayıyı bir dizeye dönüştürür. Bu, [_itoa, _itow işlevlerinin](itoa-itow.md) , [CRT 'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri olan sürümleridir.
+Bir tamsayıyı dize dönüştürür. Bunlar, [CRT'deki](itoa-itow.md) Güvenlik Özellikleri'nde açıklandığı gibi güvenlik geliştirmeleriyle _itow işlevleri olan _itoa [sürümleridir.](../../c-runtime-library/security-features-in-the-crt.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -135,44 +146,46 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-Dönüştürülecek sayı.
+*Değer*<br/>
+Dönüştürülecek numara.
 
-*arabelleğin*<br/>
-Dönüştürmenin sonucunu tutan çıkış arabelleği.
+*Arabellek*<br/>
+Dönüştürme sonucunu tutan çıktı arabelleği.
 
-*boyutla*<br/>
-Karakter veya geniş karakterdeki *arabelleğin* boyutu.
+*Boyutu*<br/>
+Karakterlerdeki veya geniş karakterlerdeki *arabellek* boyutu.
 
-*taban*<br/>
-Değeri dönüştürmek için kullanılan taban veya sayısal temel *değer*2-36 aralığında olmalıdır.
+*Radix*<br/>
+Radix veya sayısal taban *değeri*dönüştürmek için kullanmak için , hangi aralık 2-36 olmalıdır.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Başarılıysa sıfır; hatada hata kodu. Aşağıdaki koşullardan herhangi biri geçerliyse, işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır.
+Başarılı olursa sıfır; hata bir hata kodu. Aşağıdaki koşullardan herhangi biri uygulanırsa, işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisi çağırır.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|value|Arabelleğin|size|taban|döndürülmesini|
+|value|Arabellek|size|Radix|Dönüş|
 |-----------|------------|----------------------|-----------|------------|
-|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|< = 0|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|< = gereken sonuç dizesinin uzunluğu|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|*taban* < 2 veya *taban* > 36|**EıNVAL**|
+|herhangi bir|**Null**|herhangi bir|herhangi bir|**Eınval**|
+|herhangi bir|herhangi bir|<=0|herhangi bir|**Eınval**|
+|herhangi bir|herhangi bir|<= gerekli sonuç dizesinin uzunluğu|herhangi bir|**Eınval**|
+|herhangi bir|herhangi bir|herhangi bir|*radix* < 2 veya *radix* > 36|**Eınval**|
 
 ### <a name="security-issues"></a>Güvenlik sorunları
 
-*Arabellek* geçerli belleğe işaret etmezse ve **null**değilse ya da arabelleğin uzunluğu sonuç dizesini tutabilecek kadar uzun değilse, bu işlevler erişim ihlali oluşturabilir.
+*Arabellek* geçerli belleğe işaret etmiyorsa ve **NULL**değilse veya arabellek uzunluğu sonuç dizesini tutmak için yeterince uzun değilse, bu işlevler bir erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Parametreler ve dönüş değeri hariç, **_itoa_s** ve **_itow_s** işlevi aileleri, karşılık gelen daha az güvenli **_itoa** ve **_itow** sürümleriyle aynı davranışa sahiptir.
+Parametreler ve geri dönüş değeri dışında, **_itoa_s** ve **_itow_s** işlev aileleri karşılık gelen daha az güvenli **_itoa** ve **_itow** sürümleri yle aynı davranışa sahiptir.
 
-' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir (boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir) ve eski, güvenli olmayan işlevleri yeni, güvenli karşılıklarıyla otomatik olarak değiştirebilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
 
-Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama kitaplığı sürümleri önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
 
-CRT, çeşitli genel tabanlara yönelik null Sonlandırıcı ve işaret karakteri de dahil olmak üzere her bir tamsayı türünün en uzun olası değerini dönüştürmek için gereken arabellek boyutunu tanımlamak üzere kullanışlı makrolar içerir. Daha fazla bilgi için bkz. [en fazla dönüştürme sayısı makroları](itoa-itow.md#maximum-conversion-count-macros).
+CRT, birkaç ortak taban için null sonlandırıcı ve işaret karakteri de dahil olmak üzere her bir veyasede türünün olası en uzun değerini dönüştürmek için gereken arabellek boyutunu tanımlamak için kullanışlı makrolar içerir. Bilgi için, [maksimum dönüşüm sayısı makrolarına](itoa-itow.md#maximum-conversion-count-macros)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -188,14 +201,14 @@ CRT, çeşitli genel tabanlara yönelik null Sonlandırıcı ve işaret karakter
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_itoa_s**, **_ltoa_s**, **_ultoa_s**, **_i64toa_s**, **_ui64toa_s**|\<Stdlib. h >|
-|**_itow_s**, **_ltow_s**, **_ultow_s**, **_i64tow_s**, **_ui64tow_s**|\<Stdlib. h > veya \<wchar. h >|
+|**_itoa_s**, **_ltoa_s**, **_ultoa_s**, **_i64toa_s**, **_ui64toa_s**|\<stdlib.h>|
+|**_itow_s**, **_ltow_s**, **_ultow_s**, **_i64tow_s**, **_ui64tow_s**|\<stdlib.h> \<veya wchar.h>|
 
-Bu işlevler, Microsoft 'a özgüdür. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler Microsoft'a özgütür. Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, birkaç tamsayı dönüştürme işlevinin kullanımını gösterir. [_Countof](countof-macro.md) makrosunun yalnızca dizi bildirimi derleyiciye görünür olduğunda arabellek boyutunu tespit etmek için, işaretçilere işaret eden parametreler için değil, kullanılır.
+Bu örnek, birkaç tamsayı dönüştürme işlevlerinin kullanımını gösterir. [_countof](countof-macro.md) makrosu yalnızca dizi bildirimi derleyici tarafından görünür olduğunda arabellek boyutunu belirlemek için çalıştığını ve işaretçilere dernmiş parametreler için çalışmadığını unutmayın.
 
 ```C
 // crt_itoa_s.c
@@ -266,4 +279,4 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[_itoa, _itow işlevleri](itoa-itow.md)<br/>
+[_itoa, _itow fonksiyonlar](itoa-itow.md)<br/>

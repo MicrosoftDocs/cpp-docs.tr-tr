@@ -11,32 +11,32 @@ helpviewer_keywords:
 - _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT
 - secure template overloads
 ms.assetid: 562741d0-39c0-485e-8529-73d740f29f8f
-ms.openlocfilehash: dfb13d5a48376efb72a845e2f5e2380407937f5b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6dba60b57616a1656b2791958e460f0268eaa7fe
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364538"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81361120"
 ---
 # <a name="secure-template-overloads"></a>Güvenli Şablon Aşırı Yüklemeleri
 
-Microsoft Gelişmiş Güvenlik sürümleri çok sayıda C çalışma zamanı kitaplığı (CRT) işlevler kullanım dışı. Örneğin, `strcpy_s` için daha güvenli yerini `strcpy`. Kullanım dışı bırakılan işlevler ortak kaynaklardan güvenlik hataların olduğu bellek üzerine yazıp operations engellemez. Bu işlevlerden birini kullandığınızda varsayılan olarak, derleyici kullanımdan kaldırılma uyarısı oluşturur. CRT C++ şablon aşırı yüklemeleri için kolaylaştırmak amacıyla, bu işlevlerin daha güvenli çeşitler geçiş sağlar.
+Microsoft, güvenlikle geliştirilmiş sürümler lehine birçok C Runtime kitaplığı (CRT) işlevlerini devre dışı kılmıştır. Örneğin, `strcpy_s` `strcpy`daha güvenli değiştirme. Amortismana alınan işlevler, belleğin üzerine yazabilen işlemleri engellemedikleri için, yaygın güvenlik hataları kaynaklarıdır. Varsayılan olarak, derleyici bu işlevlerden birini kullandığınızda bir amortisman uyarısı üretir. CRT, daha güvenli türevlerine geçişi kolaylaştırmak için bu işlevler için C++ şablonu aşırı yüklemesağlar.
 
-Örneğin, bu kod parçacığı bir uyarı oluşturur çünkü `strcpy` kullanım dışı bırakılmıştır:
+Örneğin, bu kod snippet bir `strcpy` uyarı oluşturur, çünkü amortismana hazırdır:
 
 ```cpp
 char szBuf[10];
 strcpy(szBuf, "test"); // warning: deprecated
 ```
 
-Kodunuzu olmayabilecek bildirmek için kullanımdan kaldırılma uyarısı yok. Kodunuzu bellek üzerine yazılamaz doğruladıysanız, birkaç seçeneğiniz vardır. Uyarıyı göz ardı etmeyi seçebilir, simge tanımlayabilir `_CRT_SECURE_NO_WARNINGS` dahil etme deyimlerini CRT için önce uyarıyı veya gizlemek için üstbilgileri kullanmak için kodunuzu güncelleştirebilirsiniz `strcpy_s`:
+Amortisman uyarısı, kodunuzu güvenli olmadığını söylemek için vardır. Kodunuzun belleğin üzerine yazadığını doğruladıysanız, birkaç seçeneğiniz vardır. Uyarıyı yoksaymayı seçebilir, uyarıyı `_CRT_SECURE_NO_WARNINGS` bastırmak için CRT üstbilgileri için ekstreeklemelerden önce sembolü tanımlayabilirsiniz veya kodunuzu kullanmak `strcpy_s`üzere güncelleştirebilirsiniz:
 
 ```cpp
 char szBuf[10];
 strcpy_s(szBuf, 10, "test"); // security-enhanced _s function
 ```
 
-Şablon aşırı yüklemeleri ek seçenekler sunar. Tanımlarsanız `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` 1, bu şablon aşırı yüklemeleri daha güvenli çeşitleri otomatik olarak çağıran standart CRT işlevleri sağlar. Varsa `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` kodunuzda hiçbir değişiklik gerekli olan 1 ' dir. Planda, çağrı `strcpy` çağrısı değiştirilecek `strcpy_s` otomatik olarak sağlanan boyut bağımsız değişkeni ile.
+Şablon aşırı yüklemeleri ek seçenekler sağlar. 1 olarak `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` tanımlarsanız, bu, daha güvenli varyantları otomatik olarak arayan standart CRT işlevlerinin şablon aşırı yüklerini sağlar. 1 `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` ise, kodunuzda değişiklik yapılmasına gerek yoktur. Arka planda, arama, `strcpy` otomatik olarak sağlanan `strcpy_s` boyut bağımsız değişkeni ile bir çağrıya değiştirilir.
 
 ```cpp
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1
@@ -47,12 +47,12 @@ char szBuf[10];
 strcpy(szBuf, "test"); // ==> strcpy_s(szBuf, 10, "test")
 ```
 
-Makro `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` bir sayısı gibi almayan işlevleri etkilemez `strncpy`. Şablon aşırı yüklemeleri sayısı işlevlerine yönelik etkinleştirmek için tanımlama `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` 1. Bunu yapmadan önce Bununla birlikte, kodunuzu (sıkça) arabellek boyutunu değil olan karakter sayısı geçtiğinden emin olun. Ayrıca, işlev çağrısı güvenli değişken çağrılırsa gereksizdir sonra kod açıkça bu arabelleğin sonuna bir null Sonlandırıcı yazar. Kesme davranışı gerekirse bkz [_TRUNCATE](../c-runtime-library/truncate.md).
+Makro, `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` sayma alan işlevleri etkilemez. `strncpy` Sayım işlevleri için şablon aşırı yüklemelerini etkinleştirmek için 1'e tanımlayın. `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` Ancak, bunu yapmadan önce, kodunuzu arabellek (yaygın bir hata) boyutu değil karakter sayısı geçer emin olun. Ayrıca, güvenli varyant çağrıldığında işlev çağrısından sonra arabelleğe açıkça bir null sonlandırıcı yazan kod gereksizdir. Kesilme davranışına ihtiyacınız varsa, [_TRUNCATE](../c-runtime-library/truncate.md)bakın.
 
 > [!NOTE]
->  Makro `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` gerektiren `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` de 1 tanımlanır. Varsa `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` 1 tanımlanır ve `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` tanımlanan 0 uygulama, tüm şablon aşırı yüklemeleri gerçekleştirmez.
+> Makro `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` da `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` 1 olarak tanımlanır gerektirir. `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` 1 olarak tanımlanır `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` ve 0 olarak tanımlanırsa, uygulama herhangi bir şablon aşırı yüklemeyapmaz.
 
-Tanımladığınızda `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` isteğe bağlı olarak 1'e ("_Yanları içinde" sonlanan adlara) güvenli çeşitler şablon aşırı yüklemeleri sağlar. Bu durumda, `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` sonra özgün koda küçük bir değişiklik yapılması gerekir, 1 ' dir:
+1 olarak `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` tanımladığınızda, güvenli türevlerinin şablon aşırı yüklerini ("_s" ile biten adlar) sağlar. Bu durumda, `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` 1 ise, özgün kodda küçük bir değişiklik yapılmalıdır:
 
 ```cpp
 #define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES 1
@@ -63,11 +63,11 @@ char szBuf[10];
 strcpy_s(szBuf, "test"); // ==> strcpy_s(szBuf, 10, "test")
 ```
 
-Yalnızca işlevin adını ("_Yanları" ekleyerek); değiştirilmesi gerekiyor Şablon aşırı yükleme bağımsız değişkenin boyutu sağlama üstlenir.
+Yalnızca işlevin adının değiştirilmesi gerekir ("_s" eklenerek); şablon aşırı boyutu bağımsız değişkeni sağlayan ilgilenir.
 
-Varsayılan olarak, `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` ve `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` 0 (devre dışı) tanımlanır ve `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` 1 (etkin) tanımlanır.
+Varsayılan olarak `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` ve 0 (devre dışı) olarak tanımlanır ve `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` 1 (etkin) olarak tanımlanır.
 
-Bu şablon statik diziler için yalnızca iş aşırı unutmayın. Dinamik olarak ayrılan arabellekler ek kaynak kodu değişiklikleri gerektirir. Yukarıdaki örneklerde hakkında yeniden değerlendirme:
+Bu şablonun aşırı yüklenmesinin yalnızca statik diziler için çalıştığını unutmayın. Dinamik olarak ayrılan arabellekler ek kaynak kodu değişiklikleri gerektirir. Yukarıdaki örnekleri yeniden ziyaret edin:
 
 ```cpp
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1

@@ -11,22 +11,22 @@ helpviewer_keywords:
 - std::fpos [C++], seekpos
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-ms.openlocfilehash: cdca7b961d9aedad841692160c8313f8a306dec2
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 7d60a31e69e8a1ad82086f715cac6dde064d1fac
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689669"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81359195"
 ---
 # <a name="fpos-class"></a>fpos Sınıfı
 
-Sınıf şablonu, herhangi bir akışta rastgele bir dosya konumu göstergesini geri yüklemek için gereken tüm bilgileri depolayabilen bir nesneyi tanımlar. Fpos \< **St**> sınıfının bir nesnesi, en az iki üye nesnesini etkin bir şekilde depolar:
+Sınıf şablonu, herhangi bir akış içinde rasgele bir dosya konumu göstergesi geri yüklemek için gereken tüm bilgileri depolayabilir bir nesne açıklar. Sınıf fpos\< **St**> bir nesne etkili en az iki üye nesneleri depolar:
 
-- [Streamoff](../standard-library/ios-typedefs.md#streamoff)türünde bir bayt kayması.
+- Bir bayt ofset, türü [streamoff.](../standard-library/ios-typedefs.md#streamoff)
 
-- @No__t_0 türünde bir basic_filebuf sınıfının bir nesnesi tarafından kullanılmak üzere bir dönüştürme durumu, genellikle `mbstate_t`.
+- Sınıf basic_filebuf bir nesne tarafından kullanılmak üzere bir `St`dönüşüm `mbstate_t`durumu, türü , genellikle .
 
-Ayrıca, `fpos_t` türündeki [basic_filebuf](../standard-library/basic-filebuf-class.md)sınıfının bir nesnesi tarafından kullanılmak üzere rastgele bir dosya konumunu da saklayabilir. Ancak, sınırlı dosya boyutu olan bir ortam için `streamoff` ve `fpos_t` bazen birbirlerinin yerine kullanılabilir. Duruma bağlı bir kodlamalı akışı olmayan bir ortamda, `mbstate_t` gerçekten kullanılmıyor olabilir. Bu nedenle, depolanan üye nesnelerinin sayısı farklılık gösterebilir.
+Ayrıca, sınıf [basic_filebuf](../standard-library/basic-filebuf-class.md)bir nesne tarafından kullanılmak üzere rasgele bir `fpos_t`dosya konumu depolayabilir. Ancak, dosya boyutu sınırlı olan `streamoff` `fpos_t` bir ortam için ve bazen birbirinin yerine kullanılabilir. Devlete bağımlı kodlaması olmayan akışları olmayan bir `mbstate_t` ortam için gerçekte kullanılmamış olabilir. Bu nedenle, depolanan üye nesnelerin sayısı değişebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,43 +37,43 @@ class fpos
 
 ### <a name="parameters"></a>Parametreler
 
-*StateType* \
-Durum bilgileri.
+*Statetype*\
+Eyalet bilgileri.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[fpos](#fpos)|Akıştaki bir konum (konum) hakkında bilgi içeren bir nesne oluşturun.|
+|[fpos](#fpos)|Akıştaki konum (ofset) hakkında bilgi içeren bir nesne oluşturun.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
-|[seekpos](#seekpos)|Yalnızca C++ standart kitaplık tarafından dahili olarak kullanılır. Bu yöntemi kodınızdan çağırmayın.|
-|[durumunda](#state)|Dönüştürme durumunu ayarlar veya döndürür.|
+|[seekpos](#seekpos)|Yalnızca C++ Standart Kitaplığı tarafından dahili olarak kullanılır. Bu yöntemi kodunuzdan aramayın.|
+|[durum](#state)|Dönüşüm durumunu ayarlar veya döndürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator!=](#op_neq)|Eşitsizlik için dosya konumu göstergelerini sınar.|
-|[işleç +](#op_add)|Bir dosya konumu göstergesini arttırır.|
-|[işleç + =](#op_add_eq)|Bir dosya konumu göstergesini arttırır.|
-|[işlecinde](#operator-)|Bir dosya konumu göstergesini azaltır.|
-|[işleç-=](#operator-_eq)|Bir dosya konumu göstergesini azaltır.|
-|[işleç = =](#op_eq_eq)|Eşitlik için dosya konumu göstergelerini sınar.|
-|[streamoff işleci](#op_streamoff)|@No__t_0 nesne `streamoff` türü nesne türüne yayınlar.|
+|[işleç!=](#op_neq)|Eşitsizlik için dosya konum göstergelerini sınar.|
+|[işleç+](#op_add)|Dosya konumu göstergesini açar.|
+|[işleç+=](#op_add_eq)|Dosya konumu göstergesini açar.|
+|[işleç-](#operator-)|Dosya konumu göstergesini karara erdirin.|
+|[işleç-=](#operator-_eq)|Dosya konumu göstergesini karara erdirin.|
+|[işleç==](#op_eq_eq)|Eşitlik için dosya konum göstergelerini sınar.|
+|[operatör streamoff](#op_streamoff)|Türünün nesnesine `fpos` türünün `streamoff`nesnesini atar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ios >
+**Üstbilgi:** \<ios>
 
 **Ad alanı:** std
 
-## <a name="fpos"></a>fpos:: fpos
+## <a name="fposfpos"></a><a name="fpos"></a>fpos::fpos
 
-Akıştaki bir konum (konum) hakkında bilgi içeren bir nesne oluşturun.
+Akıştaki konum (ofset) hakkında bilgi içeren bir nesne oluşturun.
 
 ```cpp
 fpos(streamoff _Off = 0);
@@ -83,24 +83,24 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma* \
-Akışa yönelik konum.
+*_off*\
+Akışa mahsup.
 
-*_Durum* \
-@No__t_0 nesnesinin başlangıç durumu.
+*_state*\
+Nesnenin `fpos` başlangıç durumu.
 
-*_Filepos* \
-Akışa yönelik konum.
+*_Filepos*\
+Akışa mahsup.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, dosyanın başlangıcına ve ilk dönüştürme durumunda (önemli olursa) göreli olarak, *_Off*konumunu depolar. *_Off* -1 ise, elde edilen nesne geçersiz bir akış konumunu temsil eder.
+İlk oluşturucu, dosyanın başına ve ilk dönüşüm durumuna göre (önemliyse) ofset *_Off*depolar. *_Off* -1 ise, ortaya çıkan nesne geçersiz bir akış konumunu temsil eder.
 
-İkinci oluşturucu sıfır sapmasını ve nesne *_Durumunu*depolar.
+İkinci oluşturucu sıfır ofset depolar ve nesne *_State.*
 
-## <a name="op_neq"></a>fpos:: operator! =
+## <a name="fposoperator"></a><a name="op_neq"></a>fpos::operatör!=
 
-Eşitsizlik için dosya konumu göstergelerini sınar.
+Eşitsizlik için dosya konum göstergelerini sınar.
 
 ```cpp
 bool operator!=(const fpos<Statetype>& right) const;
@@ -108,16 +108,16 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
-Karşılaştırılacak dosya konumu göstergesi.
+*Doğru*\
+Karşılaştırılabilen dosya konumu göstergesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-dosya konumu göstergeleri eşitse **true** , aksi takdirde **false**.
+dosya konumu göstergeleri eşit değilse **doğru,** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `!(*this == right)` döndürür.
+Üye işlev `!(*this == right)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -171,9 +171,9 @@ int main( )
 }
 ```
 
-## <a name="op_add"></a>fpos:: operator +
+## <a name="fposoperator"></a><a name="op_add"></a>fpos::operatör+
 
-Bir dosya konumu göstergesini arttırır.
+Dosya konumu göstergesini açar.
 
 ```cpp
 fpos<Statetype> operator+(streamoff _Off) const;
@@ -181,8 +181,8 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma* \
-Dosya konumu göstergesini artırmak istediğiniz fark.
+*_off*\
+Dosya konumu göstergesini artımlı olarak çıkarmak istediğiniz ofset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -190,15 +190,15 @@ Dosyadaki konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi **fpos (\*this) + =** `_Off` döndürür.
+Üye işlev **fpos\*(bu) +=** `_Off`döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanımı örneği için bkz. [operator! =](#op_neq) .
+Bkz. [işleç!=](#op_neq) kullanma `operator+`örneği için.
 
-## <a name="op_add_eq"></a>fpos:: operator + =
+## <a name="fposoperator"></a><a name="op_add_eq"></a>fpos::operator+=
 
-Bir dosya konumu göstergesini arttırır.
+Dosya konumu göstergesini açar.
 
 ```cpp
 fpos<Statetype>& operator+=(streamoff _Off);
@@ -206,8 +206,8 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma* \
-Dosya konumu göstergesini artırmak istediğiniz fark.
+*_off*\
+Dosya konumu göstergesini artımlı olarak çıkarmak istediğiniz ofset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -215,15 +215,15 @@ Dosyadaki konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, saklı fark üye nesnesine *_Off* ekler ve sonra **\*this**döndürür. Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca durum bağımlı kodlamalı olmayan ikili akışlar için geçerlidir.
+Üye işlev, depolanan ofset üye nesnesine *_Off* ekler ve bunu ** \*** döndürür. Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca duruma bağlı kodlaması olmayan ikili akışlar için geçerlidir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanımı örneği için bkz. [operator! =](#op_neq) .
+Bkz. [işleç!=](#op_neq) kullanma `operator+=`örneği için.
 
-## <a name="operator-"></a>fpos:: operator-
+## <a name="fposoperator-"></a><a name="operator-"></a>fpos::operatör-
 
-Bir dosya konumu göstergesini azaltır.
+Dosya konumu göstergesini karara erdirin.
 
 ```cpp
 streamoff operator-(const fpos<Statetype>& right) const;
@@ -233,23 +233,23 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*Doğru*\
 Dosya konumu.
 
-*_Kapatma* \
-Akış boşluğu.
+*_off*\
+Akış ofset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlevi `(streamoff)*this - (streamoff) right` döndürür. İkinci üye işlevi `fpos(*this) -= _Off` döndürür.
+İlk üye işlev `(streamoff)*this - (streamoff) right`döndürür. İkinci üye işlev `fpos(*this) -= _Off`döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanımı örneği için bkz. [operator! =](#op_neq) .
+Bkz. [işleç!=](#op_neq) kullanma `operator-`örneği için.
 
-## <a name="operator-_eq"></a>fpos:: operator-=
+## <a name="fposoperator-"></a><a name="operator-_eq"></a>fpos::operatör-=
 
-Bir dosya konumu göstergesini azaltır.
+Dosya konumu göstergesini karara erdirin.
 
 ```cpp
 fpos<Statetype>& operator-=(streamoff _Off);
@@ -257,24 +257,24 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma* \
-Akış boşluğu.
+*_off*\
+Akış ofset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi `fpos(*this) -= _Off` döndürür.
+Üye işlev `fpos(*this) -= _Off`döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca durum bağımlı kodlamalı olmayan ikili akışlar için geçerlidir.
+Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca duruma bağlı kodlaması olmayan ikili akışlar için geçerlidir.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanımı örneği için bkz. [operator! =](#op_neq) .
+Bkz. [işleç!=](#op_neq) kullanma `operator-=`örneği için.
 
-## <a name="op_eq_eq"></a>fpos:: operator = =
+## <a name="fposoperator"></a><a name="op_eq_eq"></a>fpos::operator==
 
-Eşitlik için dosya konumu göstergelerini sınar.
+Eşitlik için dosya konum göstergelerini sınar.
 
 ```cpp
 bool operator==(const fpos<Statetype>& right) const;
@@ -282,24 +282,24 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
-Karşılaştırılacak dosya konumu göstergesi.
+*Doğru*\
+Karşılaştırılabilen dosya konumu göstergesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-dosya konumu göstergeleri eşitse **true** ; Aksi halde **yanlış**.
+dosya konum göstergeleri eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `(streamoff)*this == (streamoff)right` döndürür.
+Üye işlev `(streamoff)*this == (streamoff)right`döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 kullanımı örneği için bkz. [operator! =](#op_neq) .
+Bkz. [işleç!=](#op_neq) kullanma `operator+=`örneği için.
 
-## <a name="op_streamoff"></a>fpos:: operator streamoff
+## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a>fpos::operatör streamoff
 
-@No__t_0 türündeki nesne `streamoff` türü nesneye dönüştürüldü.
+Türünün nesnesine `fpos` türün `streamoff`döküm nesnesi.
 
 ```cpp
 operator streamoff() const;
@@ -307,7 +307,7 @@ operator streamoff() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, depolanan fark üye nesnesini ve `fpos_t` üye nesnesinin bir parçası olarak depolanan ek sapmayı döndürür.
+Üye işlev, depolanan ofset üye nesnesini ve `fpos_t` üye nesnenin bir parçası olarak depolanan ek mahsupları döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -336,17 +336,17 @@ int main( )
 0
 ```
 
-## <a name="seekpos"></a>fpos:: seekpos
+## <a name="fposseekpos"></a><a name="seekpos"></a>fpos::seekpos
 
-Bu yöntem, yalnızca C++ standart kitaplık tarafından dahili olarak kullanılır. Bu yöntemi kodınızdan çağırmayın.
+Bu yöntem yalnızca C++ Standart Kitaplığı tarafından dahili olarak kullanılır. Bu yöntemi kodunuzdan aramayın.
 
 ```cpp
 fpos_t seekpos() const;
 ```
 
-## <a name="state"></a>fpos:: State
+## <a name="fposstate"></a><a name="state"></a>fpos::durum
 
-Dönüştürme durumunu ayarlar veya döndürür.
+Dönüşüm durumunu ayarlar veya döndürür.
 
 ```cpp
 Statetype state() const;
@@ -356,16 +356,16 @@ void state(Statetype _State);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
-Yeni dönüştürme durumu.
+*_state*\
+Yeni dönüşüm durumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüştürme durumu.
+Dönüşüm durumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi `St` üye nesnesinde depolanan değeri döndürür. İkinci üye işlevi, *_durumu* `St` üye nesnesinde depolar.
+İlk üye `St` işlev, üye nesnede depolanan değeri döndürür. İkinci üye `St` *işlev, üye* nesnede _State depolar.
 
 ### <a name="example"></a>Örnek
 
@@ -394,6 +394,6 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
-[iostream programlama](../standard-library/iostream-programming.md) \
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programlama](../standard-library/iostream-programming.md)\
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)

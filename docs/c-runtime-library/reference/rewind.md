@@ -1,8 +1,9 @@
 ---
 title: geri sar
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - rewind
+- _o_rewind
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +29,16 @@ helpviewer_keywords:
 - file pointers [C++], repositioning
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
-ms.openlocfilehash: 084a6f3d7e817498bffb510d865f4a32021e4ce8
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4b99dd1101727c3ba7d501dffc5abe22edf7f7ff
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949283"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338099"
 ---
 # <a name="rewind"></a>geri sar
 
-Dosya işaretçisini bir dosyanın başlangıcına konumlandırır.
+Dosya işaretçisini bir dosyanın başına yeniden konumlandırın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,34 +50,36 @@ void rewind(
 
 ### <a name="parameters"></a>Parametreler
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Geri sarma** işlevi, *akış* ile ilişkili dosya işaretçisini dosyanın başlangıcına göre konumlandırır. **Geri sarma** çağrısı şuna benzer
+Geri **sarma** *işlevi, akışla* ilişkili dosya işaretçisini dosyanın başına yeniden konumlandırDı. **Geri sarma** çağrısı,
 
-**(void) fseek (** _Stream_ **, 0l, SEEK_SET);**
+**(void) fseek(** _akarsu_**, 0L, SEEK_SET);**
 
-Ancak, [fseek](fseek-fseeki64.md)aksine **geri sarma** , akış için hata göstergelerini ve dosya sonu göstergesini temizler. Ayrıca, [fseek](fseek-fseeki64.md)'ın aksine, **geri sarma** , işaretçinin başarıyla taşındığını göstermek için bir değer döndürmez.
+Ancak, [fseek](fseek-fseeki64.md)aksine, **geri sarma** akışı için hata göstergeleri yanı sıra dosya sonu göstergesi temizler. Ayrıca, [fseek](fseek-fseeki64.md)aksine, **geri sarma** işaretçi başarıyla taşınmış olup olmadığını belirtmek için bir değer döndürmez.
 
-Klavye arabelleğini temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin**ile **geri sarma** kullanın.
+Klavye arabelleği temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin**ile **geri sarma** kullanın.
 
-Stream **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Akış bir **NULL** işaretçisiyse, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev döndürür ve **errno** **EINVAL**olarak ayarlanır.
 
-Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rewind**|\<stdio. h >|
+|**rewind**|\<stdio.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -110,7 +114,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 The values written are: 1 and -37
@@ -119,4 +123,4 @@ The values read are: 1 and -37
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>

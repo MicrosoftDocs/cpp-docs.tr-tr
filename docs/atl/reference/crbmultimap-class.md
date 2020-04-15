@@ -1,5 +1,5 @@
 ---
-title: CRBMultiMap sınıfı
+title: CRBMultiMap Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CRBMultiMap
@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
-ms.openlocfilehash: 03a9639e8b0b3d11a414e5db0ce874d7ca8f2d45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e36bc267b3a539d2d1d4bf370b9cdc33828c760
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278143"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81331428"
 ---
-# <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
+# <a name="crbmultimap-class"></a>CRBMultiMap Sınıfı
 
-Bu sınıf, her anahtar Red-siyah bir ikili Ağacı'nı kullanarak birden fazla değer ile ilişkilendirilebilir izin veren bir eşleme yapısını temsil eder.
+Bu sınıf, her anahtarın kırmızı-siyah ikili ağaç kullanarak birden fazla değerle ilişkilendirilemelerine olanak tanıyan bir eşleme yapısını temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,50 +36,50 @@ class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 
 #### <a name="parameters"></a>Parametreler
 
-*K*<br/>
+*Kahraman*<br/>
 Anahtar öğe türü.
 
 *V*<br/>
-Değer öğe türü.
+Değer öğesi türü.
 
 *KTraits*<br/>
-Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
+Anahtar öğeleri kopyalamak veya taşımak için kullanılan kod. Daha fazla bilgi için [CElementTraits Sınıfına](../../atl/reference/celementtraits-class.md) bakın.
 
 *VTraits*<br/>
-Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.
+Değer öğelerini kopyalamak veya taşımak için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CRBMultiMap::CRBMultiMap](#crbmultimap)|Oluşturucu.|
-|[CRBMultiMap:: ~ CRBMultiMap](#dtor)|Yıkıcı.|
+|[CRBMultiMap::~CRBMultiMap](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CRBMultiMap::FindFirstWithKey](#findfirstwithkey)|Verilen anahtarla ilk öğenin konumunu bulmak için bu yöntemi çağırın.|
-|[CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey)|Verilen anahtarla ilişkili değeri almak için bu yöntemi çağırın ve konum değerini güncelleştirin.|
-|[CRBMultiMap::GetNextWithKey](#getnextwithkey)|Verilen anahtarla ilişkili öğenin almak için bu yöntemi çağırın ve konum değerini güncelleştirin.|
-|[CRBMultiMap::Insert](#insert)|Haritayı bir öğe çifti eklemek için bu yöntemi çağırın.|
-|[CRBMultiMap::RemoveKey](#removekey)|Tüm belirli bir anahtarın anahtar/değer öğeleri kaldırmak için bu yöntemi çağırın.|
+|[CRBMultiMap::FindFirstWithKey](#findfirstwithkey)|Belirli bir anahtarla ilk öğenin konumunu bulmak için bu yöntemi arayın.|
+|[CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey)|Belirli bir anahtarla ilişkili değeri almak ve konum değerini güncelleştirmek için bu yöntemi arayın.|
+|[CRBMultiMap::GetNextWithKey](#getnextwithkey)|Belirli bir anahtarla ilişkili öğeyi almak ve konum değerini güncelleştirmek için bu yöntemi arayın.|
+|[CRBMultiMap::Ekle](#insert)|Eşmeye bir öğe çifti eklemek için bu yöntemi çağırın.|
+|[CRBMultiMap::RemoveKey](#removekey)|Belirli bir anahtar için tüm anahtar/değer öğelerini kaldırmak için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CRBMultiMap` sıralı bir dizi temel öğeleri ve değerleri yönetme, belirli bir türü, eşleme bir dizi için destek sağlar. Farklı [CRBMap](../../atl/reference/crbmap-class.md) sınıfı, her anahtar ilişkilendirilebilir ile birden fazla değer.
+`CRBMultiMap`herhangi bir türde bir eşleme dizisi için destek sağlar, anahtar öğeleri ve değerleri sıralı bir dizi yönetme. [CRBMap](../../atl/reference/crbmap-class.md) sınıfının aksine, her anahtar birden fazla değerle ilişkilendirilebilir.
 
-Öğeleri (bir anahtar ve değerden oluşan) bir ikili ağaç biçiminde depolanan kullanarak yapı [CRBMultiMap::Insert](#insert) yöntemi. Öğeleri kullanılarak kaldırılabilir [CRBMultiMap::RemoveKey](#removekey) yöntemi belirtilen bir anahtarla eşleşen tüm öğeleri siler.
+Öğeler (anahtar ve bir değerden oluşan) [CRBMultiMap](#insert) kullanılarak ikili ağaç yapısında depolanır::Ekle yöntemi. Öğeler [CRBMultiMap::RemoveKey](#removekey) yöntemi kullanılarak kaldırılabilir, verilen anahtarla eşleşen tüm öğeleri siler.
 
-Ağacının çapraz geçişi yapılan olası yöntemleriyle gibi [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), ve [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue). Erişim anahtarı başına büyük olasılıkla birden çok değer olası kullanarak [CRBMultiMap::FindFirstWithKey](#findfirstwithkey), [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), ve [CRBMultiMap::GetNextWithKey ](#getnextwithkey) yöntemleri. Örneğin bakın [CRBMultiMap::CRBMultiMap](#crbmultimap) uygulamada bunun bir gösterim.
+Ağacın geçişi [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext)ve [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue)gibi yöntemlerle mümkün olur. [CrBMultiMap::FindFirstWithKey](#findfirstwithkey), [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey)ve [CRBMultiMap::GetNextWithKey](#getnextwithkey) yöntemleri kullanılarak anahtar başına birden fazla değere erişmek mümkündür. CrBMultiMap için örneğe [bakın:CRBMultiMap](#crbmultimap) uygulamada bunun bir örneği için.
 
-*KTraits* ve *VTraits* kopyalama veya öğeleri taşımak için gerekli olan herhangi bir ek kod içeren nitelikleri sınıflar parametrelerdir.
+*KTraits* ve *VTraits* parametreleri öğeleri kopyalamak veya taşımak için gerekli herhangi bir ek kod içeren özellikler sınıflarıdır.
 
-`CRBMultiMap` türetilen [CRBTree](../../atl/reference/crbtree-class.md), kırmızı-siyah algoritmasını kullanarak bir ikili ağacı uygular. Alternatif `CRBMultiMap` ve `CRBMap` tarafından sunulan [CAtlMap](../../atl/reference/catlmap-class.md) sınıfı. Öğeleri yalnızca az sayıda depolanacak gerektiğinde kullanmayı [CSimpleMap](../../atl/reference/csimplemap-class.md) bunun yerine sınıf.
+`CRBMultiMap`Kırmızı-Siyah algoritmasını kullanarak ikili bir ağaç uygulayan [CRBTree'den](../../atl/reference/crbtree-class.md)türetilmiştir. `CRBMultiMap` [CAtlMap](../../atl/reference/catlmap-class.md) sınıfına alternatif olarak sunulur. `CRBMap` Yalnızca az sayıda öğenin depolanması gerektiğinde, bunun yerine [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfını kullanmayı düşünün.
 
-Çeşitli koleksiyon sınıflarını ve özelliklerini ve performans özelliklerini daha eksiksiz bir açıklaması için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Çeşitli toplama sınıfları ve özellikleri ve performans özellikleri hakkında daha eksiksiz bir tartışma için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -89,9 +89,9 @@ Ağacının çapraz geçişi yapılan olası yöntemleriyle gibi [CRBTree::GetHe
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="crbmultimap"></a>  CRBMultiMap::CRBMultiMap
+## <a name="crbmultimapcrbmultimap"></a><a name="crbmultimap"></a>CRBMultiMap::CRBMultiMap
 
 Oluşturucu.
 
@@ -106,15 +106,15 @@ Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*NBlockSize* parametre gerektiğinde yeni bir öğe ayrılan bellek miktarını ölçüsüdür. Büyük blok boyutları için bellek ayırma yordamlarını aramalarını azaltır, ancak daha fazla kaynağı kullanır. Varsayılan bir kerede 10 öğe için bir alan ayırın.
+*nBlockSize* parametresi, yeni bir öğe gerektiğinde ayrılan bellek miktarının ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır. Varsayılan değer, bir seferde 10 öğe için alan ayırır.
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/cpp/crbmultimap-class_1.cpp)]
 
-##  <a name="dtor"></a>  CRBMultiMap:: ~ CRBMultiMap
+## <a name="crbmultimapcrbmultimap"></a><a name="dtor"></a>CRBMultiMap::~CRBMultiMap
 
 Yıkıcı.
 
@@ -124,13 +124,13 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır.
+Ayrılan kaynakları serbest sağlar.
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
-##  <a name="findfirstwithkey"></a>  CRBMultiMap::FindFirstWithKey
+## <a name="crbmultimapfindfirstwithkey"></a><a name="findfirstwithkey"></a>CRBMultiMap::FindFirstWithKey
 
-Verilen anahtarla ilk öğenin konumunu bulmak için bu yöntemi çağırın.
+Belirli bir anahtarla ilk öğenin konumunu bulmak için bu yöntemi arayın.
 
 ```
 POSITION FindFirstWithKey(KINARGTYPE key) const throw();
@@ -139,25 +139,25 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Bulunacak öğe tanımlayan anahtar belirtir.
+Bulunacak öğeyi tanımlayan anahtarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa, NULL Aksi halde, anahtar/değer ilk öğenin KONUMUNU döndürür.
+Anahtar bulunursa ilk anahtar/değer öğesinin konumunu döndürür, aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir anahtar olarak `CRBMultiMap` bir veya daha fazla ilişkili değerlere sahip olabilir. Bu yöntem, belirli bir anahtar ile ilişkili konumu değerini (Bu aslında tek değer olabilir) ilk sağlar. Döndürülen konum değeri ile sonra kullanılabilir [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey) veya [CRBMultiMap::GetNextWithKey](#getnextwithkey) değeri elde etmek ve konumu güncelleştirin.
+Bir anahtar `CRBMultiMap` bir veya daha fazla ilişkili değerlere sahip olabilir. Bu yöntem, o anahtarla ilişkili ilk değerin konum değerini (aslında tek değer olabilir) sağlayacaktır. Döndürülen konum değeri daha sonra [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey) veya [CRBMultiMap::GetNextWithKey](#getnextwithkey) değeri elde etmek ve konumu güncellemek için kullanılabilir.
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CRBMultiMap::CRBMultiMap](#crbmultimap).
+[CRBMultiMap örneğine bakın:CRBMultiMap](#crbmultimap).
 
-##  <a name="getnextvaluewithkey"></a>  CRBMultiMap::GetNextValueWithKey
+## <a name="crbmultimapgetnextvaluewithkey"></a><a name="getnextvaluewithkey"></a>CRBMultiMap::GetNextValueWithKey
 
-Verilen anahtarla ilişkili değeri almak için bu yöntemi çağırın ve konum değerini güncelleştirin.
+Belirli bir anahtarla ilişkili değeri almak ve konum değerini güncelleştirmek için bu yöntemi arayın.
 
 ```
 const V& GetNextValueWithKey(
@@ -170,29 +170,29 @@ V& GetNextValueWithKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Ya da bir çağrı ile elde edilen konum değeri [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextWithKey](#getnextwithkey), veya önceki bir çağrı `GetNextValueWithKey`.
+*Pos*<br/>
+CRBMultiMap'e yapılan bir çağrıyla elde edilen konum [değeri::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextWithKey](#getnextwithkey), ya da önceki bir arama `GetNextValueWithKey`.
 
 *anahtar*<br/>
-Bulunacak öğe tanımlayan anahtar belirtir.
+Bulunacak öğeyi tanımlayan anahtarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen anahtarla ilişkili bir öğe çifti döndürür.
+Verilen anahtarla ilişkili öğe çiftini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Konum değerini sonraki anahtarıyla ilişkilendirilmiş değeri gösterecek şekilde güncelleştirilir. Daha fazla değer varsa, konum değeri NULL olarak ayarlanır.
+Konum değeri, anahtarla ilişkili bir sonraki değere işaret etmek için güncelleştirilir. Başka değer yoksa, konum değeri NULL olarak ayarlanır.
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CRBMultiMap::CRBMultiMap](#crbmultimap).
+[CRBMultiMap örneğine bakın:CRBMultiMap](#crbmultimap).
 
-##  <a name="getnextwithkey"></a>  CRBMultiMap::GetNextWithKey
+## <a name="crbmultimapgetnextwithkey"></a><a name="getnextwithkey"></a>CRBMultiMap::GetNextWithKey
 
-Verilen anahtarla ilişkili öğenin almak için bu yöntemi çağırın ve konum değerini güncelleştirin.
+Belirli bir anahtarla ilişkili öğeyi almak ve konum değerini güncelleştirmek için bu yöntemi arayın.
 
 ```
 const CPair* GetNextWithKey(
@@ -205,25 +205,25 @@ CPair* GetNextWithKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Ya da bir çağrı ile elde edilen konum değeri [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), veya önceki bir çağrı `GetNextWithKey`.
+*Pos*<br/>
+CRBMultiMap'e yapılan bir çağrıyla elde edilen konum [değeri::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), ya da önceki bir arama `GetNextWithKey`.
 
 *anahtar*<br/>
-Bulunacak öğe tanımlayan anahtar belirtir.
+Bulunacak öğeyi tanımlayan anahtarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonraki döndürür [CRBTree::CPair sınıfı](crbtree-class.md#cpair_class) verilen anahtarla ilişkili öğe.
+Verilen anahtarla ilişkili sonraki [CRBTree::CPair Class](crbtree-class.md#cpair_class) öğesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Konum değerini sonraki anahtarıyla ilişkilendirilmiş değeri gösterecek şekilde güncelleştirilir. Daha fazla değer varsa, konum değeri NULL olarak ayarlanır.
+Konum değeri, anahtarla ilişkili bir sonraki değere işaret etmek için güncelleştirilir. Başka değer yoksa, konum değeri NULL olarak ayarlanır.
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
-##  <a name="insert"></a>  CRBMultiMap::Insert
+## <a name="crbmultimapinsert"></a><a name="insert"></a>CRBMultiMap::Ekle
 
-Haritayı bir öğe çifti eklemek için bu yöntemi çağırın.
+Eşmeye bir öğe çifti eklemek için bu yöntemi çağırın.
 
 ```
 POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
@@ -232,26 +232,26 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Eklenecek anahtar değeri `CRBMultiMap` nesne.
+`CRBMultiMap` Nesneye eklenecek anahtar değer.
 
-*value*<br/>
-Eklenecek değer `CRBMultiMap` nesnesi ile ilişkili *anahtar*.
+*Değer*<br/>
+`CRBMultiMap` Nesneye eklenecek değer, *anahtarla*ilişkilidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar/değer öğe çiftinin konumunu döndürür `CRBMultiMap` nesne.
+Nesnedeki anahtar/değer öğesi çiftinin `CRBMultiMap` konumunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CRBMultiMap::CRBMultiMap](#crbmultimap).
+[CRBMultiMap örneğine bakın:CRBMultiMap](#crbmultimap).
 
-##  <a name="removekey"></a>  CRBMultiMap::RemoveKey
+## <a name="crbmultimapremovekey"></a><a name="removekey"></a>CRBMultiMap::RemoveKey
 
-Tüm belirli bir anahtarın anahtar/değer öğeleri kaldırmak için bu yöntemi çağırın.
+Belirli bir anahtar için tüm anahtar/değer öğelerini kaldırmak için bu yöntemi arayın.
 
 ```
 size_t RemoveKey(KINARGTYPE key) throw();
@@ -260,25 +260,25 @@ size_t RemoveKey(KINARGTYPE key) throw();
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Silinecek öğeyi/öğeleri tanımlayan anahtar belirtir.
+Silinecek öğe(ler)i tanımlayan anahtarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen anahtarla ilişkili değerler sayısını döndürür.
+Verilen anahtarla ilişkili değer sayısını verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`RemoveKey` eşleşen bir anahtara sahip tüm anahtar/değer öğeleri siler *anahtar*.
+`RemoveKey`*anahtarla*eşleşen bir anahtara sahip tüm anahtar/değer öğelerini siler.
 
-Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.
+Mevcut diğer yöntemler hakkında bilgi için taban sınıf [CRBTree](../../atl/reference/crbtree-class.md) için belgelere bakın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CRBMultiMap::CRBMultiMap](#crbmultimap).
+[CRBMultiMap örneğine bakın:CRBMultiMap](#crbmultimap).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CRBTree Sınıfı](../../atl/reference/crbtree-class.md)<br/>
 [CAtlMap Sınıfı](../../atl/reference/catlmap-class.md)<br/>
 [CRBMap Sınıfı](../../atl/reference/crbmap-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

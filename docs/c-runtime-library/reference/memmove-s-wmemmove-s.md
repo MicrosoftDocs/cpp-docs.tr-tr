@@ -1,9 +1,10 @@
 ---
 title: memmove_s, wmemmove_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - wmemmove_s
 - memmove_s
+- _o_wmemmove_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +18,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +30,16 @@ helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-ms.openlocfilehash: bc932bb0b13289349543d042e02ead884921d00a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: baec33046f891f64c04adeccf21f41d3eec7b814
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951789"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81333148"
 ---
 # <a name="memmove_s-wmemmove_s"></a>memmove_s, wmemmove_s
 
-Bir arabelleği diğerine gider. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [memmove](memmove-wmemmove.md) 'in sürümleridir.
+Bir arabelleği diğerine taşır. Bunlar [CRT](../../c-runtime-library/security-features-in-the-crt.md)Güvenlik Özellikleri açıklandığı gibi güvenlik geliştirmeleri ile [memmove, wmemmove](memmove-wmemmove.md) sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,44 +60,46 @@ errno_t wmemmove_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*HD*<br/>
-Hedef nesne.
+*Dest*<br/>
+Hedef nesnesi.
 
 *numberOfElements*<br/>
-Hedef arabelleğin boyutu.
+Hedef arabelleğe boyutu.
 
-*YN*<br/>
+*src*<br/>
 Kaynak nesne.
 
-*biriktirme*<br/>
-Kopyalanacak bayt sayısı (**memmove_s**) veya karakterler (**wmemmove_s**).
+*Sayısı*<br/>
+Kopyalanması gereken bayt **(memmove_s)** veya karakter **(wmemmove_s)** sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatada hata kodu
+Başarılı olursa sıfır; hata bir hata kodu
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|*HD*|*numberOfElements*|*YN*|Dönüş değeri|*Hedef* içeriği|
+|*Dest*|*numberOfElements*|*src*|Döndürülen değer|*Dest'in* içindekiler|
 |------------|------------------------|-----------|------------------|------------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|değiştirilmedi|
-|Kaydedilmemiş|< *biriktirme*|Kaydedilmemiş|**ERANGE**|değiştirilmedi|
+|**Null**|herhangi bir|herhangi bir|**Eınval**|değiştirilmemiş|
+|herhangi bir|herhangi bir|**Null**|**Eınval**|değiştirilmemiş|
+|herhangi bir|< *Sayısı*|herhangi bir|**Erange**|değiştirilmemiş|
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Src* 'den *hedefe*kadar olan karakter *sayısını* kopyalar. Kaynak alanın ve hedefin bazı bölgeleri çakışırsa **memmove_s** , çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını sağlar.
+Kopyalar *src* den *dest*karakter baytsayısı . *count* Kaynak alanın bazı bölgeleri ve hedef çakışıyorsa, **memmove_s** çakışan bölgedeki orijinal kaynak baytlarının üzerine yazılmadan önce kopyalanmasını sağlar.
 
-Hedef *veya* *kaynak* boş bir işaretçisiyse veya hedef dize çok küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Dest* veya *src* null işaretçisi ise veya hedef dize çok küçükse, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz bir parametre işleyicisi çağırır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** döndürün ve **EINVAL** **için errno** ayarlayın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memmove_s**|\<String. h >|
-|**wmemmove_s**|\<wchar. h >|
+|**memmove_s**|\<string.h>|
+|**wmemmove_s**|\<wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -126,7 +130,7 @@ int main()
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Before: 0123456789
@@ -135,7 +139,7 @@ After: 0012345789
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ara Bellek Düzenlemesi](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Manipülasyonu](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
 [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)<br/>

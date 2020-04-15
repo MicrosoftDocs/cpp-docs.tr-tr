@@ -1,9 +1,27 @@
 ---
 title: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
-- _wfindnext
 - _findnext
+- _findnext32
+- _findnext32i64
+- _findnext64
+- _findnext64i32
+- _findnexti64
+- _wfindnext
+- _wfindnext32
+- _wfindnext32i64
+- _wfindnext64
+- _wfindnext64i32
+- _wfindnexti64
+- _o__findnext32
+- _o__findnext32i64
+- _o__findnext64
+- _o__findnext64i32
+- _o__wfindnext32
+- _o__wfindnext32i64
+- _o__wfindnext64
+- _o__wfindnext64i32
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +34,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -95,16 +114,16 @@ helpviewer_keywords:
 - tfindnext32i64 function
 - _tfindnexti64 function
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
-ms.openlocfilehash: 083f0f1d383472c104a1e4fcb6f3139c7a9d9c88
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 38243b48a97c038f36ada85e3ca2cda814f43fa8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957242"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346734"
 ---
 # <a name="_findnext-_findnext32-_findnext32i64-_findnext64-_findnext64i32-_findnexti64-_wfindnext-_wfindnext32-_wfindnext32i64-_wfindnext64-_wfindnext64i32-_wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
-Bir sonraki adı (varsa), önceki [_findfirst](findfirst-functions.md)çağrısında *dosyabelirtimi* bağımsız değişkeniyle eşleşen ve ardından *Info* yapısı içeriğini uygun şekilde değiştirecek şekilde bulun.
+[_findfirst](findfirst-functions.md)için önceki bir çağrıda *filespec* bağımsız değişkeni eşleşen bir sonraki adı, varsa bulun ve sonra buna göre *fileinfo* yapı içeriğini değiştirin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -161,52 +180,54 @@ int _wfindnext64i32(
 
 ### <a name="parameters"></a>Parametreler
 
-*tutamaçlardan*<br/>
-Önceki **_findcall**çağrısı tarafından döndürülen arama tanıtıcısı.
+*Işlemek*<br/>
+**_findfirst**için önceki bir arama tarafından döndürülen arama tanıtıcısı.
 
-*bilgis*<br/>
-Dosya bilgileri arabelleği.
+*Fileınfo*<br/>
+Dosya bilgi arabelleği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür. Aksi takdirde,-1 döndürür ve hata doğasını gösteren bir değere **errno** değeri ayarlar. Olası hata kodları aşağıdaki tabloda gösterilmiştir.
+Başarılı olursa, 0 döndürür. Aksi takdirde, -1 döndürür ve hatanın doğasını gösteren bir **değere errno** ayarlar. Olası hata kodları aşağıdaki tabloda gösterilmiştir.
 
 |errno değeri|Koşul|
 |-|-|
-| **EINVAL** | Geçersiz parametre: *FileInfo* **null**. Ya da, işletim sistemi beklenmeyen bir hata döndürdü. |
-| **ENOENT** | Daha fazla eşleşen dosya bulunamadı. |
-| **ENOMEM** | Yeterli bellek yok veya dosya adının uzunluğu **MAX_PATH**değerini aştı. |
+| **Eınval** | Geçersiz parametre: *fileinfo* **NULL**oldu. Veya, işletim sistemi beklenmeyen bir hata döndürür. |
+| **Enoent** | Daha fazla eşleşen dosya bulunamadı. |
+| **ENOMEM** | Yeterli bellek veya dosya adının uzunluğu **MAX_PATH**aşıldı. |
 
-Geçersiz bir parametre geçirilirse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır.
+Geçersiz bir parametre geçirilirse, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Findfirst** veya **_sonrabul** işlevini (ya da herhangi bir varyantları) kullanmayı bitirdikten sonra [_findclose](findclose.md) öğesini çağırmanız gerekir. Bu, uygulamanızda bu işlevler tarafından kullanılan kaynakları serbest bırakır.
+**_findfirst** veya **_findnext** işlevini (veya herhangi bir türevlerini) kullanmayı bitirdikten sonra [_findclose](findclose.md) aramalısınız. Bu, uygulamanızda bu işlevler tarafından kullanılan kaynakları boşaltıyor.
 
-Bu işlevlerin **w** ön ekine sahip çeşitlemeleri, geniş karakter sürümleridir; Aksi takdirde, bunlara karşılık gelen tek baytlı işlevlerle aynıdır.
+W **öneki** ile bu işlevlerin varyasyonları geniş karaktersürümleri; aksi takdirde, bunlar karşılık gelen tek bayt işlevleri ile aynıdır.
 
-Bu işlevlerin çeşitlemeleri 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64-bit dosya boyutlarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**. Hangi sürümlerin 32-bit ve 64 bit zaman türlerini ve dosya boyutlarını desteklediği hakkında bilgi için aşağıdaki tabloya bakın. 64 bitlik bir zaman türü kullanan Çeşitlemeler, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC; ile belirtilmesine izin verir 32 bit zaman türlerini kullanan olanlar yalnızca tarihleri 23:59:59 Ocak 2038, UTC olarak temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
+Bu işlevlerin varyasyonları 32-bit veya 64-bit zaman türlerini ve 32-bit veya 64-bit dosya boyutlarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türünün boyutunu gösterir; ikinci sonek, dosya boyutunun 32 bit veya 64 bit tamsayı olarak temsil edilip edilmediğini belirten **i32** veya **i64'tür.** Hangi sürümlerin 32 bit ve 64 bit zaman türlerini ve dosya boyutlarını desteklediği hakkında bilgi için aşağıdaki tabloya bakın. 64 bit zaman türü kullanan varyasyonlar, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC' ye kadar ifade edilmesine olanak sağlar; 32 bit zaman türlerini kullananlar sadece 23:59:59 18 Ocak 2038, UTC tarihleri temsil ederken. Midnight, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırıdır.
 
-Zaman boyutunu açıkça belirten sürümleri kullanmak için özel bir nedeniniz yoksa, **_sonrabul** veya **_wsonrakiniya** veya 3 GB 'tan büyük dosya boyutlarını desteklemeniz gerekiyorsa **_findnexti64** veya **_wfindnexti64**kullanın. Tüm bu işlevler 64 bitlik saat türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullandı. Bu bir uygulama için önemli bir değişiklik ise, eski davranışı almak için **_Use_32bit_time_t** tanımlayabilirsiniz. **_Use_32bit_time_t** tanımlanmışsa, **_sonrabul**, **_finnexti64** ve karşılık gelen Unicode sürümleri 32 bitlik bir süre kullanır.
+Zaman boyutunu açıkça belirten sürümleri kullanmak için belirli bir nedeniniz yoksa, **_findnext** veya **_wfindnext** kullanın veya 3 GB'dan büyük dosya boyutlarını desteklemeniz **gerekiyorsa, _findnexti64** veya **_wfindnexti64**kullanın. Tüm bu işlevler 64 bit zaman türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullanmİş. Bu, bir uygulama için bir kesme değişikliğiyse, eski davranışı almak için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** **tanımlanırsa,** **_findnext,**_finnexti64 ve bunların karşılık gelen Unicode sürümleri 32 bit lik bir süre kullanır.
 
-### <a name="time-type-and-file-length-type-variations-of-_findnext"></a>Zaman türü ve dosya uzunluğu türü _sonrabul çeşitlemeleri
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
-|İşlevler|**_Use_32bit_time_t** tanımlandı mı?|Zaman türü|Dosya uzunluğu türü|
+### <a name="time-type-and-file-length-type-variations-of-_findnext"></a>_findnext Zaman Türü ve Dosya Uzunluğu Tür Varyasyonları
+
+|İşlevler|**tanımlanmış _USE_32BIT_TIME_T?**|Zaman türü|Dosya uzunluğu türü|
 |---------------|----------------------------------|---------------|----------------------|
-|**_sonrakinibul**, **_wsonra**|Tanımsız|64 bit|32 bit:|
-|**_sonrakinibul**, **_wsonra**|Tanımlı|32 bit:|32 bit:|
-|**_findnext32**, **_wfindnext32**|Makro tanımından etkilenmedi|32 bit:|32 bit:|
-|**_findnext64**, **_wfindnext64**|Makro tanımından etkilenmedi|64 bit|64 bit|
-|**_findnexti64**, **_wfindnexti64**|Tanımsız|64 bit|64 bit|
-|**_findnexti64**, **_wfindnexti64**|Tanımlı|32 bit:|64 bit|
-|**_findnext32i64**, **_wfindnext32i64**|Makro tanımından etkilenmedi|32 bit:|64 bit|
-|**_findnext64i32**, **_wfindnext64i32**|Makro tanımından etkilenmedi|64 bit|32 bit:|
+|**_findnext**, **_wfindnext**|Tanımlı değil|64 bit|32 bit|
+|**_findnext**, **_wfindnext**|Tanımlanan|32 bit|32 bit|
+|**_findnext32**, **_wfindnext32**|Makro tanımından etkilenmez|32 bit|32 bit|
+|**_findnext64**, **_wfindnext64**|Makro tanımından etkilenmez|64 bit|64 bit|
+|**_findnexti64**, **_wfindnexti64**|Tanımlı değil|64 bit|64 bit|
+|**_findnexti64**, **_wfindnexti64**|Tanımlanan|32 bit|64 bit|
+|**_findnext32i64**, **_wfindnext32i64**|Makro tanımından etkilenmez|32 bit|64 bit|
+|**_findnext64i32**, **_wfindnext64i32**|Makro tanımından etkilenmez|64 bit|32 bit|
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tsonrabul**|**_sonrakini bul**|**_sonrakini bul**|**_wsonrabul**|
+|**_tfindnext**|**_findnext**|**_findnext**|**_wfindnext**|
 |**_tfindnext32**|**_findnext32**|**_findnext32**|**_wfindnext32**|
 |**_tfindnext64**|**_findnext64**|**_findnext64**|**_wfindnext64**|
 |**_tfindnexti64**|**_findnexti64**|**_findnexti64**|**_wfindnexti64**|
@@ -217,26 +238,26 @@ Zaman boyutunu açıkça belirten sürümleri kullanmak için özel bir nedenini
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_sonrakini bul**|\<GÇ. h >|
-|**_findnext32**|\<GÇ. h >|
-|**_findnext64**|\<GÇ. h >|
-|**_findnexti64**|\<GÇ. h >|
-|**_findnext32i64**|\<GÇ. h >|
-|**_findnext64i32**|\<GÇ. h >|
-|**_wsonrabul**|\<GÇ. h > veya \<wchar. h >|
-|**_wfindnext32**|\<GÇ. h > veya \<wchar. h >|
-|**_wfindnext64**|\<GÇ. h > veya \<wchar. h >|
-|**_wfindnexti64**|\<GÇ. h > veya \<wchar. h >|
-|**_wfindnext32i64**|\<GÇ. h > veya \<wchar. h >|
-|**_wfindnext64i32**|\<GÇ. h > veya \<wchar. h >|
+|**_findnext**|\<io.h>|
+|**_findnext32**|\<io.h>|
+|**_findnext64**|\<io.h>|
+|**_findnexti64**|\<io.h>|
+|**_findnext32i64**|\<io.h>|
+|**_findnext64i32**|\<io.h>|
+|**_wfindnext**|\<io.h> \<veya wchar.h>|
+|**_wfindnext32**|\<io.h> \<veya wchar.h>|
+|**_wfindnext64**|\<io.h> \<veya wchar.h>|
+|**_wfindnexti64**|\<io.h> \<veya wchar.h>|
+|**_wfindnext32i64**|\<io.h> \<veya wchar.h>|
+|**_wfindnext64i32**|\<io.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sistem Çağrıları](../../c-runtime-library/system-calls.md)<br/>
-[fileName İşlevleri Ara](../../c-runtime-library/filename-search-functions.md)<br/>
+[Sistem Aramaları](../../c-runtime-library/system-calls.md)<br/>
+[Dosya Adı Arama Fonksiyonları](../../c-runtime-library/filename-search-functions.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CPathT sınıfı
+title: CPathT Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CPathT
@@ -49,19 +49,19 @@ f1_keywords:
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-ms.openlocfilehash: ba1c831d772deef34449d17adc2c8e7a6f90eaef
-ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
+ms.openlocfilehash: 13f46f549c7dd99852be0f322aef560cb454ed2a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69496611"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81331481"
 ---
-# <a name="cpatht-class"></a>CPathT sınıfı
+# <a name="cpatht-class"></a>CPathT Sınıfı
 
 Bu sınıf bir yolu temsil eder.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,84 +73,84 @@ class CPathT
 #### <a name="parameters"></a>Parametreler
 
 *StringType*<br/>
-Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)).
+Yol için kullanılacak ATL/MFC dize sınıfı [(Bkz. CStringT).](../../atl-mfc-shared/reference/cstringt-class.md)
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPathT::P CXSTR](#pcxstr)|Sabit bir dize türü.|
-|[CPathT::P XSTR](#pxstr)|Bir dize türü.|
-|[CPathT:: XCHAR](#xchar)|Bir karakter türü.|
+|[CPathT::PCXSTR](#pcxstr)|Sabit bir dize türü.|
+|[CPathT::PXSTR](#pxstr)|Bir dize türü.|
+|[CPathT::XCHAR](#xchar)|Bir karakter türü.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPathT:: CPathT](#cpatht)|Yol için Oluşturucu.|
+|[CPathT::CPathT](#cpatht)|Yolun yapıcısı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPathT:: Addters eğik çizgi](#addbackslash)|Bir yol için doğru sözdizimi oluşturmak üzere bir dizenin sonuna bir ters eğik çizgi eklemek için bu yöntemi çağırın.|
-|[CPathT:: Addexgeri](#addextension)|Bir yola dosya uzantısı eklemek için bu yöntemi çağırın.|
-|[CPathT:: Append](#append)|Geçerli yola bir dize eklemek için bu yöntemi çağırın.|
-|[CPathT:: BuildRoot](#buildroot)|Verilen bir sürücü numarasından bir kök yolu oluşturmak için bu yöntemi çağırın.|
-|[CPathT:: canonicalize](#canonicalize)|Yolu kurallı biçime dönüştürmek için bu yöntemi çağırın.|
-|[CPathT:: birleştirin](#combine)|Dizin adını temsil eden bir dizeyi ve dosya yolu adını tek bir yolda temsil eden dizeyi birleştirmek için bu yöntemi çağırın.|
-|[CPathT:: CommonPrefix](#commonprefix)|Belirtilen yolun geçerli yol ile ortak bir ön eki payanıp paylaşmadığını öğrenmek için bu yöntemi çağırın.|
-|[CPathT:: CompactPath](#compactpath)|Yol bileşenlerini üç noktayla değiştirerek bir dosya yolunu belirli bir piksel genişliğine sığacak şekilde kesmek için bu yöntemi çağırın.|
-|[CPathT:: CompactPathEx](#compactpathex)|Yol bileşenlerini üç noktayla değiştirerek, bir dosya yolunu belirli sayıda karakter içine sığacak şekilde kesmek için bu yöntemi çağırın.|
-|[CPathT:: FileExists](#fileexists)|Bu yol adında dosyanın mevcut olup olmadığını denetlemek için bu yöntemi çağırın.|
-|[CPathT:: Findexgeri](#findextension)|Yol içinde dosya uzantısının konumunu bulmak için bu yöntemi çağırın.|
-|[CPathT:: FindFileName](#findfilename)|Yolun içindeki dosya adının konumunu bulmak için bu yöntemi çağırın.|
-|[CPathT:: GetDriveNumber](#getdrivenumber)|' A '-' Z ' aralığı içindeki bir sürücü harfinin yolunu aramak ve karşılık gelen sürücü numarasını döndürmek için bu yöntemi çağırın.|
-|[CPathT:: GetExtension](#getextension)|Yoldan dosya uzantısını almak için bu yöntemi çağırın.|
-|[CPathT:: IsDirectory](#isdirectory)|Yolun geçerli bir dizin olup olmadığını denetlemek için bu yöntemi çağırın.|
-|[CPathT:: ısdosyabelirtimi](#isfilespec)|Yol sınırlayan karakterlerin yolunu aramak için bu yöntemi çağırın (örneğin, ': ' veya ' \\ '). Yol sınırlayan karakter yoksa, yol bir dosya belirtimi yolu olarak kabul edilir.|
-|[CPathT:: IsPrefix](#isprefix)|Bir yolun *pszPrefix*tarafından geçirilen türün geçerli bir önekini içerip içermediğini anlamak için bu yöntemi çağırın.|
-|[CPathT:: ısgöreli](#isrelative)|Yolun göreli olup olmadığını anlamak için bu yöntemi çağırın.|
-|[CPathT:: IsRoot](#isroot)|Yolun bir dizin kökü olup olmadığını anlamak için bu yöntemi çağırın.|
-|[CPathT:: IsSameRoot](#issameroot)|Başka bir yolun geçerli yol ile ortak bir kök bileşene sahip olup olmadığını anlamak için bu yöntemi çağırın.|
-|[CPathT:: IsUnc](#isunc)|Yolun bir sunucu ve paylaşma için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını öğrenmek için bu yöntemi çağırın.|
-|[CPathT:: ısuncserver](#isuncserver)|Yolun yalnızca bir sunucu için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını öğrenmek için bu yöntemi çağırın.|
-|[CPathT:: ısuncservershare](#isuncservershare)|Yolun geçerli bir UNC (evrensel adlandırma kuralı) paylaşma yolu olup olmadığını (\\ \ *server* \ *paylaşımının*mi olduğunu öğrenmek için bu yöntemi çağırın.|
-|[CPathT:: Makeoldukça](#makepretty)|Yolun tutarlı bir görünüm sağlamak için bir yolu tüm küçük harfli karakterlere dönüştürmek için bu yöntemi çağırın.|
-|[CPathT:: MatchSpec](#matchspec)|Joker karakter eşleşme türü içeren bir dizenin yolunu aramak için bu yöntemi çağırın.|
-|[CPathT:: QuoteSpaces](#quotespaces)|Herhangi bir boşluk içeriyorsa, yolu tırnak işaretleri içine almak için bu yöntemi çağırın.|
-|[CPathT:: RelativePathTo](#relativepathto)|Bir dosyadan veya klasörden diğerine göreli yol oluşturmak için bu yöntemi çağırın.|
-|[CPathT:: RemoveArgs](#removeargs)|Yoldaki komut satırı bağımsız değişkenlerini kaldırmak için bu yöntemi çağırın.|
-|[CPathT:: Removeters eğik çizgi](#removebackslash)|Yolun sonundaki ters eğik çizgiyi kaldırmak için bu yöntemi çağırın.|
-|[CPathT:: Removeboşlar](#removeblanks)|Yoldan baştaki ve sondaki boşlukları kaldırmak için bu yöntemi çağırın.|
-|[CPathT:: RemoveExtension](#removeextension)|Dosya uzantısını yoldan kaldırmak için bu yöntemi çağırın.|
-|[CPathT:: Removedosyabelirtimi](#removefilespec)|Bu yöntemi, varsa sonunda dosya adını ve ters eğik çizgiyi kaldırmak için çağırın.|
-|[CPathT:: RenameExtension](#renameextension)|Yoldaki dosya adı uzantısını yeni bir uzantıyla değiştirmek için bu yöntemi çağırın. Dosya adı bir uzantı içermiyorsa, uzantı dizenin sonuna iliştirilir.|
-|[CPathT:: SkipRoot](#skiproot)|Sürücü harfi veya UNC sunucu/paylaşma yolu parçalarını yoksayarak bir yolu ayrıştırmak için bu yöntemi çağırın.|
-|[CPathT:: StripPath](#strippath)|Tam nitelenmiş yolun ve dosya adının yol bölümünü kaldırmak için bu yöntemi çağırın.|
-|[CPathT:: StripToRoot](#striptoroot)|Kök bilgileri hariç yolun tüm bölümlerini kaldırmak için bu yöntemi çağırın.|
-|[CPathT:: UnquoteSpaces](#unquotespaces)|Yolun başındaki ve sonundaki tırnak işaretlerini kaldırmak için bu yöntemi çağırın.|
+|[CPathT::AddBackslash](#addbackslash)|Bir yol için doğru sözdizimini oluşturmak için dize sonuna ters eğik çizgi eklemek için bu yöntemi çağırın.|
+|[CPathT::AddExtension](#addextension)|Bir yola dosya uzantısı eklemek için bu yöntemi çağırın.|
+|[CPathT::Ek](#append)|Geçerli yola bir dize eklemek için bu yöntemi çağırın.|
+|[CPathT::BuildRoot](#buildroot)|Belirli bir sürücü numarasından kök yol oluşturmak için bu yöntemi çağırın.|
+|[CPathT::Canonicalize](#canonicalize)|Yolu kanonik forma dönüştürmek için bu yöntemi arayın.|
+|[CPathT::Birleştir](#combine)|Dizin adını ve dosya yolu adını temsil eden bir dizeyi tek bir yola dönüştürmek için bu yöntemi çağırın.|
+|[CPathT::CommonPrefix](#commonprefix)|Belirtilen yolun geçerli yolla ortak bir önek paylaşıp paylaşmadığını belirlemek için bu yöntemi çağırın.|
+|[CPathT::CompactPath](#compactpath)|Yol bileşenlerini elipslerle değiştirerek, belirli bir piksel genişliğine sığacak bir dosya yolunu parçalamak için bu yöntemi çağırın.|
+|[CPathT::CompactPathEx](#compactpathex)|Yol bileşenlerini elipslerle değiştirerek, belirli sayıda karaktere sığacak bir dosya yolunu truncate etmek için bu yöntemi çağırın.|
+|[CPathT::FileExists](#fileexists)|Bu yol adındaki dosyanın var olup olmadığını denetlemek için bu yöntemi arayın.|
+|[CPathT::FindExtension](#findextension)|Dosya uzantısının yol içindeki konumunu bulmak için bu yöntemi arayın.|
+|[CPathT::FindFilename](#findfilename)|Dosya adının yol içindeki konumunu bulmak için bu yöntemi arayın.|
+|[CPathT::GetDriveNumber](#getdrivenumber)|'A' ile 'Z' aralığında ki sürücü harfinin yolunu aramak ve ilgili sürücü numarasını döndürmek için bu yöntemi arayın.|
+|[CPatht::GetExtension](#getextension)|Dosya uzantısını yoldan almak için bu yöntemi arayın.|
+|[CPathT::İş Dizini](#isdirectory)|Yolun geçerli bir dizin olup olmadığını denetlemek için bu yöntemi arayın.|
+|[Cpatht::IsfileSpec](#isfilespec)|Herhangi bir yol-delisi karakterler (örneğin, ':' veya '\\' ) için bir yol aramak için bu yöntemi arayın. Yol-delisi karakter yoksa, yol bir Dosya Spec yolu olarak kabul edilir.|
+|[CPathT::Düzeltme](#isprefix)|Bir yolun *pszPrefix*tarafından geçirilen türün geçerli bir önekini içerip içermediğini belirlemek için bu yöntemi arayın.|
+|[CPathT::Göreli](#isrelative)|Yolun göreceli olup olmadığını belirlemek için bu yöntemi arayın.|
+|[CPathT::Kök](#isroot)|Yolun dizin kökü olup olmadığını belirlemek için bu yöntemi çağırın.|
+|[Cpatht::Issameroot](#issameroot)|Başka bir yolun geçerli yolla ortak bir kök bileşeni olup olmadığını belirlemek için bu yöntemi çağırın.|
+|[CPathT::IsUNC](#isunc)|Yolun bir sunucu ve paylaşım için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını belirlemek için bu yöntemi arayın.|
+|[CPathT::IsUNCServer](#isuncserver)|Yolun yalnızca bir sunucu için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını belirlemek için bu yöntemi arayın.|
+|[CPathT::IsUNCServerShare](#isuncservershare)|Yolun geçerli bir UNC (evrensel adlandırma kuralı) paylaşım yolu, \\ \  *sunucu*\ *paylaşımı*olup olmadığını belirlemek için bu yöntemi arayın.|
+|[CPatht::MakePretty](#makepretty)|Yola tutarlı bir görünüm kazandırmak için bir yolu tüm küçük karakterlere dönüştürmek için bu yöntemi çağırın.|
+|[Cpatht::MatchSpec](#matchspec)|Joker karakter eşleşmesi türü içeren bir dize için yolu aramak için bu yöntemi arayın.|
+|[CPathT::Alıntı Alanları](#quotespaces)|Herhangi bir boşluk içeriyorsa, yolu tırnak işaretlerine baramak için bu yöntemi arayın.|
+|[Cpatht::relativepathto](#relativepathto)|Bir dosya veya klasörden diğerine göreli bir yol oluşturmak için bu yöntemi çağırın.|
+|[CPathT::RemoveArgs](#removeargs)|Herhangi bir komut satırı bağımsız değişkenini yoldan kaldırmak için bu yöntemi çağırın.|
+|[CPathT::RemoveBackslash](#removebackslash)|Sondaki ters eğik çizgiyi yoldan kaldırmak için bu yöntemi arayın.|
+|[CPathT::Boşlukları Kaldırma](#removeblanks)|Yoldaki tüm öncü ve sondaki boşlukları kaldırmak için bu yöntemi arayın.|
+|[CPathT::RemoveExtension](#removeextension)|Varsa, dosya uzantısını yoldan kaldırmak için bu yöntemi arayın.|
+|[CPatht::RemoveFileSpec](#removefilespec)|Bu yöntemi, uzaktaki dosya adını ve geri tepmeyi yoldan kaldırmak için çağırın.|
+|[CPathT::RenameExtension](#renameextension)|Yoldaki dosya adı uzantısını yeni bir uzantıyla değiştirmek için bu yöntemi çağırın. Dosya adı bir uzantı içermiyorsa, uzantı dize sonuna eklenir.|
+|[CPathT::SkipRoot](#skiproot)|Sürücü harfini veya UNC sunucu/pay yol parçalarını yok sayarak yolu ayrışdırmak için bu yöntemi çağırın.|
+|[CPathT::StripPath](#strippath)|Tam nitelikli bir yolun ve dosya adının yol bölümünü kaldırmak için bu yöntemi arayın.|
+|[Cpatht::Striptoroot](#striptoroot)|Kök bilgileri dışında yolun tüm bölümlerini kaldırmak için bu yöntemi arayın.|
+|[CPathT::Alıntı Sızan Alanlar](#unquotespaces)|Bir yolun başından ve sonundan tırnak işaretlerini kaldırmak için bu yöntemi çağırın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPathT:: operator const StringType &](#operator_const_stringtype_amp)|Bu işleç nesnenin bir dize gibi işlenmesine izin verir.|
-|[CPathT:: operator CPathT::P CXSTR](#operator_cpatht__pcxstr)|Bu işleç nesnenin bir dize gibi işlenmesine izin verir.|
-|[CPathT:: operator StringType &](#operator_stringtype_amp)|Bu işleç nesnenin bir dize gibi işlenmesine izin verir.|
-|[CPathT:: operator + =](#operator_add_eq)|Bu işleç yola bir dize ekler.|
+|[CPathT::işleç const StringType &](#operator_const_stringtype_amp)|Bu işleç, nesnenin bir dize gibi ele alınmasına izin verir.|
+|[CPathT::operatör CPathT::PCXSTR](#operator_cpatht__pcxstr)|Bu işleç, nesnenin bir dize gibi ele alınmasına izin verir.|
+|[CPathT::operatör StringType &](#operator_stringtype_amp)|Bu işleç, nesnenin bir dize gibi ele alınmasına izin verir.|
+|[CPathT::operatör +=](#operator_add_eq)|Bu işleç yola bir dize ekler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPathT:: m_strPath](#m_strpath)|Yol.|
+|[CPathT::m_strPath](#m_strpath)|Yol.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPath`, `CPathA` ve `CPathW`, aşağıdaki gibi tanımlanan `CPathT` örneklemelerdir:
+`CPath`, `CPathA`, `CPathW` ve aşağıdaki `CPathT` gibi tanımlanan anlık vardır:
 
 `typedef CPathT< CString > CPath;`
 
@@ -160,11 +160,11 @@ Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-sh
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlpath. h
+**Üstbilgi:** atlpath.h
 
-##  <a name="addbackslash"></a>CPathT:: Addters eğik çizgi
+## <a name="cpathtaddbackslash"></a><a name="addbackslash"></a>CPathT::AddBackslash
 
-Bir yol için doğru sözdizimi oluşturmak üzere bir dizenin sonuna bir ters eğik çizgi eklemek için bu yöntemi çağırın. Yolun sonunda bir ters eğik çizgi varsa ters eğik çizgi eklenmez.
+Bir yol için doğru sözdizimini oluşturmak için dize sonuna ters eğik çizgi eklemek için bu yöntemi çağırın. Yol zaten bir geri dönüş varsa, hiçbir backslash eklenecektir.
 
 ```
 void AddBackslash();
@@ -172,9 +172,9 @@ void AddBackslash();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathaddters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw).
+Daha fazla bilgi için Bkz. [PathAddBackSlash.](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw)
 
-##  <a name="addextension"></a>CPathT:: Addexgeri
+## <a name="cpathtaddextension"></a><a name="addextension"></a>CPathT::AddExtension
 
 Bir yola dosya uzantısı eklemek için bu yöntemi çağırın.
 
@@ -184,18 +184,18 @@ BOOL AddExtension(PCXSTR pszExtension);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszExtension*<br/>
+*pszUzatma*<br/>
 Eklenecek dosya uzantısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathaddexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw).
+Daha fazla bilgi için [Bkz. PathAddExtension.](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw)
 
-##  <a name="append"></a>CPathT:: Append
+## <a name="cpathtappend"></a><a name="append"></a>CPathT::Ek
 
 Geçerli yola bir dize eklemek için bu yöntemi çağırın.
 
@@ -205,20 +205,20 @@ BOOL Append(PCXSTR pszMore);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszMore*<br/>
-Eklenecek dize.
+*pszDaha fazla*<br/>
+Eklemek için dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw).
+Daha fazla bilgi için [PathAppend'e](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw)bakın.
 
-##  <a name="buildroot"></a>CPathT:: BuildRoot
+## <a name="cpathtbuildroot"></a><a name="buildroot"></a>CPathT::BuildRoot
 
-Verilen bir sürücü numarasından bir kök yolu oluşturmak için bu yöntemi çağırın.
+Belirli bir sürücü numarasından kök yol oluşturmak için bu yöntemi çağırın.
 
 ```
 void BuildRoot(int iDrive);
@@ -226,16 +226,16 @@ void BuildRoot(int iDrive);
 
 ### <a name="parameters"></a>Parametreler
 
-*IDrive*<br/>
-Sürücü numarası (0:, 1, B:, vb.).
+*Idrive*<br/>
+Sürücü numarası (0, A:, 1 B:, vb.)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw).
+Daha fazla bilgi için [Bkz. PathBuildRoot.](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw)
 
-##  <a name="canonicalize"></a>CPathT:: canonicalize
+## <a name="cpathtcanonicalize"></a><a name="canonicalize"></a>CPathT::Canonicalize
 
-Yolu kurallı biçime dönüştürmek için bu yöntemi çağırın.
+Yolu kanonik forma dönüştürmek için bu yöntemi arayın.
 
 ```
 void Canonicalize();
@@ -243,11 +243,11 @@ void Canonicalize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew).
+Daha fazla bilgi için Bkz. [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew).
 
-##  <a name="combine"></a>CPathT:: birleştirin
+## <a name="cpathtcombine"></a><a name="combine"></a>CPathT::Birleştir
 
-Dizin adını temsil eden bir dizeyi ve dosya yolu adını tek bir yolda temsil eden dizeyi birleştirmek için bu yöntemi çağırın.
+Dizin adını ve dosya yolu adını temsil eden bir dizeyi tek bir yola dönüştürmek için bu yöntemi çağırın.
 
 ```
 void Combine(PCXSTR pszDir, PCXSTR  pszFile);
@@ -263,11 +263,11 @@ Dosya yolu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathbirleştirme](/windows/win32/api/shlwapi/nf-shlwapi-pathcombinew).
+Daha fazla bilgi için Bkz. [PathCombine.](/windows/win32/api/shlwapi/nf-shlwapi-pathcombinew)
 
-##  <a name="commonprefix"></a>CPathT:: CommonPrefix
+## <a name="cpathtcommonprefix"></a><a name="commonprefix"></a>CPathT::CommonPrefix
 
-Belirtilen yolun geçerli yol ile ortak bir ön eki payanıp paylaşmadığını öğrenmek için bu yöntemi çağırın.
+Belirtilen yolun geçerli yolla ortak bir önek paylaşıp paylaşmadığını belirlemek için bu yöntemi çağırın.
 
 ```
 CPathT<StringType> CommonPrefix(PCXSTR pszOther);
@@ -276,19 +276,19 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 ### <a name="parameters"></a>Parametreler
 
 *pszOther*<br/>
-Geçerli bir Karşılaştırılacak yol.
+Geçerli olanla karşılaştırma yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ortak ön eki döndürür.
+Ortak önek döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ön ek şu türlerden biridir: "C: \\ \\", ".", "..", ".. \\ \\ ". Daha fazla bilgi için bkz. [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw).
+Önek şu türlerden biridir: "C:\\\\", ",.,.,.... \\\\". Daha fazla bilgi için [Bkz. PathCommonPrefix.](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw)
 
-##  <a name="compactpath"></a>CPathT:: CompactPath
+## <a name="cpathtcompactpath"></a><a name="compactpath"></a>CPathT::CompactPath
 
-Yol bileşenlerini üç noktayla değiştirerek bir dosya yolunu belirli bir piksel genişliğine sığacak şekilde kesmek için bu yöntemi çağırın.
+Yol bileşenlerini elipslerle değiştirerek, belirli bir piksel genişliğine sığacak bir dosya yolunu parçalamak için bu yöntemi çağırın.
 
 ```
 BOOL CompactPath(HDC hDC, UINT nWidth);
@@ -296,23 +296,23 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*<br/>
-Yazı tipi ölçümleri için kullanılan cihaz bağlamı.
+*Hdc*<br/>
+Yazı tipi ölçümleri için kullanılan aygıt bağlamı.
 
-*nWidth*<br/>
-Dizenin sığması için zorlanacak Genişlik (piksel cinsinden).
+*Nwidth*<br/>
+Dize, piksel olarak, dize sığdırmak zorunda olacak genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathCompactPath](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw).
+Daha fazla bilgi için [PathCompactPath'e](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw)bakın.
 
-##  <a name="compactpathex"></a>CPathT:: CompactPathEx
+## <a name="cpathtcompactpathex"></a><a name="compactpathex"></a>CPathT::CompactPathEx
 
-Yol bileşenlerini üç noktayla değiştirerek, bir dosya yolunu belirli sayıda karakter içine sığacak şekilde kesmek için bu yöntemi çağırın.
+Yol bileşenlerini elipslerle değiştirerek, belirli sayıda karaktere sığacak bir dosya yolunu truncate etmek için bu yöntemi çağırın.
 
 ```
 BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
@@ -321,20 +321,20 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 ### <a name="parameters"></a>Parametreler
 
 *nMaxChars*<br/>
-Yeni dizede, Sonlandırıcı NULL karakteri dahil olmak üzere en fazla karakter sayısı.
+Null karakterini sonlandırma dahil olmak üzere yeni dizede yer alan maksimum karakter sayısı.
 
-*dwFlags*<br/>
-Ayrılamadı.
+*Dwflags*<br/>
+Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathCompactPathEx](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw).
+Daha fazla bilgi için [PathCompactPathEx'e](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw)bakın.
 
-##  <a name="cpatht"></a>CPathT:: CPathT
+## <a name="cpathtcpatht"></a><a name="cpatht"></a>CPathT::CPathT
 
 Oluşturucu.
 
@@ -347,14 +347,14 @@ CPathT() throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszPath*<br/>
-Yol dizesinin işaretçisi.
+Yol dizesine işaretçi.
 
-*Yolun*<br/>
+*Yolu*<br/>
 Yol dizesi.
 
-##  <a name="fileexists"></a>CPathT:: FileExists
+## <a name="cpathtfileexists"></a><a name="fileexists"></a>CPathT::FileExists
 
-Bu yol adında dosyanın mevcut olup olmadığını denetlemek için bu yöntemi çağırın.
+Bu yol adındaki dosyanın var olup olmadığını denetlemek için bu yöntemi arayın.
 
 ```
 BOOL FileExists() const;
@@ -362,15 +362,15 @@ BOOL FileExists() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya varsa TRUE, aksi takdirde FALSE döndürür.
+Dosya varsa TRUE döndürür, aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathFileExists](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw).
+Daha fazla bilgi için Bkz. [PathFileExists](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw).
 
-##  <a name="findextension"></a>CPathT:: Findexgeri
+## <a name="cpathtfindextension"></a><a name="findextension"></a>CPathT::FindExtension
 
-Yol içinde dosya uzantısının konumunu bulmak için bu yöntemi çağırın.
+Dosya uzantısının yol içindeki konumunu bulmak için bu yöntemi arayın.
 
 ```
 int FindExtension() const;
@@ -378,15 +378,15 @@ int FindExtension() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzantısından önceki "." konumunu döndürür. Uzantı bulunamazsa-1 döndürür.
+Uzantıdan önce "." konumunu döndürür. Uzantı bulunmazsa, -1 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathfındexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw).
+Daha fazla bilgi için [Bkz. PathFindExtension.](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw)
 
-##  <a name="findfilename"></a>CPathT:: FindFileName
+## <a name="cpathtfindfilename"></a><a name="findfilename"></a>CPathT::FindFilename
 
-Yolun içindeki dosya adının konumunu bulmak için bu yöntemi çağırın.
+Dosya adının yol içindeki konumunu bulmak için bu yöntemi arayın.
 
 ```
 int FindFileName() const;
@@ -394,15 +394,15 @@ int FindFileName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya adının konumunu döndürür. Dosya adı bulunmazsa-1 döndürür.
+Dosya adının konumunu döndürür. Dosya adı bulunmazsa ,1 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew).
+Daha fazla bilgi için [Bkz. PathFindFileName.](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew)
 
-##  <a name="getdrivenumber"></a>CPathT:: GetDriveNumber
+## <a name="cpathtgetdrivenumber"></a><a name="getdrivenumber"></a>CPathT::GetDriveNumber
 
-' A '-' Z ' aralığı içindeki bir sürücü harfinin yolunu aramak ve karşılık gelen sürücü numarasını döndürmek için bu yöntemi çağırın.
+'A' ile 'Z' aralığında ki sürücü harfinin yolunu aramak ve ilgili sürücü numarasını döndürmek için bu yöntemi arayın.
 
 ```
 int GetDriveNumber() const;
@@ -410,15 +410,15 @@ int GetDriveNumber() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yolun bir sürücü harfi varsa (' A '-' Z ' öğesine karşılık gelen) 0 ile 25 arasında bir tamsayı olarak sürücü numarasını döndürür.
+Sürücü numarasını 0'dan 25'e kadar tamsayı olarak döndürür (yolun bir sürücü harfi varsa 'A'dan 'Z'ye karşılık gelen) veya -1 aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw).
+Daha fazla bilgi için [Bkz. PathGetDriveNumber.](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw)
 
-##  <a name="getextension"></a>CPathT:: GetExtension
+## <a name="cpathtgetextension"></a><a name="getextension"></a>CPatht::GetExtension
 
-Yoldan dosya uzantısını almak için bu yöntemi çağırın.
+Dosya uzantısını yoldan almak için bu yöntemi arayın.
 
 ```
 StringType GetExtension() const;
@@ -428,9 +428,9 @@ StringType GetExtension() const;
 
 Dosya uzantısını döndürür.
 
-##  <a name="isdirectory"></a>CPathT:: IsDirectory
+## <a name="cpathtisdirectory"></a><a name="isdirectory"></a>CPathT::İş Dizini
 
-Yolun geçerli bir dizin olup olmadığını denetlemek için bu yöntemi çağırın.
+Yolun geçerli bir dizin olup olmadığını denetlemek için bu yöntemi arayın.
 
 ```
 BOOL IsDirectory() const;
@@ -438,15 +438,15 @@ BOOL IsDirectory() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol bir dizinse sıfır olmayan bir değer döndürür (16), aksi takdirde FALSE.
+Yol bir dizin ise sıfır olmayan bir değer (16) döndürür, aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisdirectory](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw).
+Daha fazla bilgi için [PathIsDirectory'ye](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw)bakın.
 
-##  <a name="isfilespec"></a>CPathT:: ısdosyabelirtimi
+## <a name="cpathtisfilespec"></a><a name="isfilespec"></a>Cpatht::IsfileSpec
 
-Yol sınırlayan karakterlerin yolunu aramak için bu yöntemi çağırın (örneğin, ': ' veya ' \\ '). Yol sınırlayan karakter yoksa, yol bir dosya belirtimi yolu olarak kabul edilir.
+Herhangi bir yol-delisi karakterler (örneğin, ':' veya '\\' ) için bir yol aramak için bu yöntemi arayın. Yol-delisi karakter yoksa, yol bir Dosya Spec yolu olarak kabul edilir.
 
 ```
 BOOL IsFileSpec() const;
@@ -454,15 +454,15 @@ BOOL IsFileSpec() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol içinde yol sınırlayan karakterler yoksa TRUE, yol sınırlandırma karakterler varsa FALSE döndürür.
+Yol içinde yol-delici karakter yoksa TRUE veya yol-delici karakterler varsa FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisdosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw).
+Daha fazla bilgi için [Bkz. PathIsFileSpec.](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw)
 
-##  <a name="isprefix"></a>CPathT:: IsPrefix
+## <a name="cpathtisprefix"></a><a name="isprefix"></a>CPathT::Düzeltme
 
-Bir yolun *pszPrefix*tarafından geçirilen türün geçerli bir önekini içerip içermediğini anlamak için bu yöntemi çağırın.
+Bir yolun *pszPrefix*tarafından geçirilen türün geçerli bir önekini içerip içermediğini belirlemek için bu yöntemi arayın.
 
 ```
 BOOL IsPrefix(PCXSTR pszPrefix) const;
@@ -471,19 +471,19 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 ### <a name="parameters"></a>Parametreler
 
 *pszPrefix*<br/>
-Aranacak ön ek. Ön ek şu türlerden biridir: "C: \\ \\", ".", "..", ".. \\ \\ ".
+Aranacak önek. Önek şu türlerden biridir: "C:\\\\", ",.,.,.... \\\\".
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol öneki içeriyorsa TRUE, aksi takdirde FALSE döndürür.
+Yol öneki içeriyorsa TRUE veya aksi takdirde FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisprefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw).
+Daha fazla bilgi için [Bkz. PathIsPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw).
 
-##  <a name="isrelative"></a>CPathT:: ısgöreli
+## <a name="cpathtisrelative"></a><a name="isrelative"></a>CPathT::Göreli
 
-Yolun göreli olup olmadığını anlamak için bu yöntemi çağırın.
+Yolun göreceli olup olmadığını belirlemek için bu yöntemi arayın.
 
 ```
 BOOL IsRelative() const;
@@ -491,15 +491,15 @@ BOOL IsRelative() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol göreli ise TRUE, mutlak ise FALSE değerini döndürür.
+Yol göreceliyse DOĞRU'yu döndürür veya mutlaksa FALSE'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathısgöreli](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew).
+Daha fazla bilgi için [Bkz. PathIsRelative](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew).
 
-##  <a name="isroot"></a>CPathT:: IsRoot
+## <a name="cpathtisroot"></a><a name="isroot"></a>CPathT::Kök
 
-Yolun bir dizin kökü olup olmadığını anlamak için bu yöntemi çağırın.
+Yolun dizin kökü olup olmadığını belirlemek için bu yöntemi çağırın.
 
 ```
 BOOL IsRoot() const;
@@ -507,15 +507,15 @@ BOOL IsRoot() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol bir kök ise TRUE, aksi takdirde FALSE döndürür.
+Yol bir kökse veya başka türlü FALSE ise TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisroot](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw).
+Daha fazla bilgi için [Bkz. PathIsRoot.](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw)
 
-##  <a name="issameroot"></a>CPathT:: IsSameRoot
+## <a name="cpathtissameroot"></a><a name="issameroot"></a>Cpatht::Issameroot
 
-Başka bir yolun geçerli yol ile ortak bir kök bileşene sahip olup olmadığını anlamak için bu yöntemi çağırın.
+Başka bir yolun geçerli yolla ortak bir kök bileşeni olup olmadığını belirlemek için bu yöntemi çağırın.
 
 ```
 BOOL IsSameRoot(PCXSTR pszOther) const;
@@ -528,15 +528,15 @@ Diğer yol.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her iki dize de aynı kök bileşene sahip olursa TRUE, aksi takdirde FALSE döndürür.
+Her iki dize de aynı kök bileşenine sahipse TRUE'yu döndürür veya başka türlü FALSE verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathissameroot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw).
+Daha fazla bilgi için [Bkz. PathIsSameRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw).
 
-##  <a name="isunc"></a>CPathT:: IsUnc
+## <a name="cpathtisunc"></a><a name="isunc"></a>CPathT::IsUNC
 
-Yolun bir sunucu ve paylaşma için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını öğrenmek için bu yöntemi çağırın.
+Yolun bir sunucu ve paylaşım için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını belirlemek için bu yöntemi arayın.
 
 ```
 BOOL IsUNC() const;
@@ -544,15 +544,15 @@ BOOL IsUNC() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol geçerli bir UNC yolu ise TRUE, aksi takdirde FALSE döndürür.
+Yol geçerli bir UNC yoluysa TRUE veya başka türlü FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisunc](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw).
+Daha fazla bilgi için [Bkz. PathIsUNC.](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw)
 
-##  <a name="isuncserver"></a>CPathT:: ısuncserver
+## <a name="cpathtisuncserver"></a><a name="isuncserver"></a>CPathT::IsUNCServer
 
-Yolun yalnızca bir sunucu için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını öğrenmek için bu yöntemi çağırın.
+Yolun yalnızca bir sunucu için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını belirlemek için bu yöntemi arayın.
 
 ```
 BOOL IsUNCServer() const;
@@ -560,15 +560,15 @@ BOOL IsUNCServer() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize yalnızca sunucu için geçerli bir UNC yolu (paylaşma adı yok) ise TRUE, aksi takdirde FALSE döndürür.
+Dize yalnızca bir sunucu için geçerli bir UNC yoluysa (paylaşım adı yok) veya başka türlü FALSE varsa TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisuncserver](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw).
+Daha fazla bilgi için [Bkz. PathIsUNCServer.](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw)
 
-##  <a name="isuncservershare"></a>CPathT:: ısuncservershare
+## <a name="cpathtisuncservershare"></a><a name="isuncservershare"></a>CPathT::IsUNCServerShare
 
-Yolun geçerli bir UNC (evrensel adlandırma kuralı) paylaşma yolu olup olmadığını (\\ \ *server* \ *paylaşımının*mi olduğunu öğrenmek için bu yöntemi çağırın.
+Yolun geçerli bir UNC (evrensel adlandırma kuralı) paylaşım yolu, \\ \  *sunucu*\ *paylaşımı*olup olmadığını belirlemek için bu yöntemi arayın.
 
 ```
 BOOL IsUNCServerShare() const;
@@ -576,13 +576,13 @@ BOOL IsUNCServerShare() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol \\ \ *server* \ *paylaşımında*ise true, aksi takdirde false döndürür.
+Yol \\ \ form *sunucu*\ paylaşımında ysa TRUE veya false yoksa TRUE'yu döndürür.*share*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathisuncservershare](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew).
+Daha fazla bilgi için [Bkz. PathIsUNCServerShare.](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew)
 
-##  <a name="m_strpath"></a>CPathT:: m_strPath
+## <a name="cpathtm_strpath"></a><a name="m_strpath"></a>CPathT::m_strPath
 
 Yol.
 
@@ -592,11 +592,11 @@ StringType m_strPath;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, `CPathT` şablon parametresidir.
+`StringType``CPathT`için şablon parametresi.
 
-##  <a name="makepretty"></a>CPathT:: Makeoldukça
+## <a name="cpathtmakepretty"></a><a name="makepretty"></a>CPatht::MakePretty
 
-Yolun tutarlı bir görünüm sağlamak için bir yolu tüm küçük harfli karakterlere dönüştürmek için bu yöntemi çağırın.
+Yola tutarlı bir görünüm kazandırmak için bir yolu tüm küçük karakterlere dönüştürmek için bu yöntemi çağırın.
 
 ```
 BOOL MakePretty();
@@ -604,15 +604,15 @@ BOOL MakePretty();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol dönüştürülürse TRUE, aksi takdirde FALSE döndürür.
+Yol dönüştürüldüyse DOĞRU veya başka türlü FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathmakeoldukça](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw).
+Daha fazla bilgi için [PathMakePretty'ye](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw)bakın.
 
-##  <a name="matchspec"></a>CPathT:: MatchSpec
+## <a name="cpathtmatchspec"></a><a name="matchspec"></a>Cpatht::MatchSpec
 
-Joker karakter eşleşme türü içeren bir dizenin yolunu aramak için bu yöntemi çağırın.
+Joker karakter eşleşmesi türü içeren bir dize için yolu aramak için bu yöntemi arayın.
 
 ```
 BOOL MatchSpec(PCXSTR pszSpec) const;
@@ -621,17 +621,17 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 ### <a name="parameters"></a>Parametreler
 
 *pszSpec*<br/>
-Aranacak dosya türüne sahip null ile sonlandırılmış bir dize işaretçisi. Örneğin, geçerli yoldaki dosyanın bir belge dosyası olup olmadığını test etmek için *pszSpec* "*. doc" olarak ayarlanmalıdır.
+Arama yapmak için dosya türüyle birlikte null-sonlandırılan bir dize işaretçi. Örneğin, geçerli yoldaki dosyanın DOC dosyası olup olmadığını sınamak için *pszSpec* "*.doc" olarak ayarlanmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize eşleşiyorsa TRUE, aksi takdirde FALSE döndürür.
+Dize eşleşirse TRUE veya başka türlü FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathMatchSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw).
+Daha fazla bilgi için [PathMatchSpec'e](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw)bakın.
 
-##  <a name="operator_add_eq"></a>CPathT:: operator + =
+## <a name="cpathtoperator-"></a><a name="operator_add_eq"></a>CPathT::operatör +=
 
 Bu işleç yola bir dize ekler.
 
@@ -641,16 +641,16 @@ CPathT<StringType>& operator+=(PCXSTR pszMore);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszMore*<br/>
-Eklenecek dize.
+*pszDaha fazla*<br/>
+Eklemek için dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş yolu döndürür.
 
-##  <a name="operator_const_stringtype_amp"></a>CPathT:: operator const StringType &amp;
+## <a name="cpathtoperator-const-stringtype-amp"></a><a name="operator_const_stringtype_amp"></a>CPathT::işleç const StringType&amp;
 
-Bu işleç nesnenin bir dize gibi işlenmesine izin verir.
+Bu işleç, nesnenin bir dize gibi ele alınmasına izin verir.
 
 ```
 operator const StringType&() const throw();
@@ -660,9 +660,9 @@ operator const StringType&() const throw();
 
 Bu nesne tarafından yönetilen geçerli yolu temsil eden bir dize döndürür.
 
-##  <a name="operator_cpatht__pcxstr"></a>CPathT:: operator CPathT::P CXSTR
+## <a name="cpathtoperator-cpathtpcxstr"></a><a name="operator_cpatht__pcxstr"></a>CPathT::operatör CPathT::PCXSTR
 
-Bu işleç nesnenin bir dize gibi işlenmesine izin verir.
+Bu işleç, nesnenin bir dize gibi ele alınmasına izin verir.
 
 ```
 operator PCXSTR() const throw();
@@ -672,9 +672,9 @@ operator PCXSTR() const throw();
 
 Bu nesne tarafından yönetilen geçerli yolu temsil eden bir dize döndürür.
 
-##  <a name="operator_stringtype_amp"></a>CPathT:: operator StringType &amp;
+## <a name="cpathtoperator-stringtype-amp"></a><a name="operator_stringtype_amp"></a>CPathT::operatör StringType&amp;
 
-Bu işleç nesnenin bir dize gibi işlenmesine izin verir.
+Bu işleç, nesnenin bir dize gibi ele alınmasına izin verir.
 
 ```
 operator StringType&() throw();
@@ -684,7 +684,7 @@ operator StringType&() throw();
 
 Bu nesne tarafından yönetilen geçerli yolu temsil eden bir dize döndürür.
 
-##  <a name="pcxstr"></a>CPathT::P CXSTR
+## <a name="cpathtpcxstr"></a><a name="pcxstr"></a>CPathT::PCXSTR
 
 Sabit bir dize türü.
 
@@ -694,9 +694,9 @@ typedef StringType::PCXSTR PCXSTR;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, `CPathT` şablon parametresidir.
+`StringType``CPathT`için şablon parametresi.
 
-##  <a name="pxstr"></a>CPathT::P XSTR
+## <a name="cpathtpxstr"></a><a name="pxstr"></a>CPathT::PXSTR
 
 Bir dize türü.
 
@@ -706,11 +706,11 @@ typedef StringType::PXSTR PXSTR;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, `CPathT` şablon parametresidir.
+`StringType``CPathT`için şablon parametresi.
 
-##  <a name="quotespaces"></a>CPathT:: QuoteSpaces
+## <a name="cpathtquotespaces"></a><a name="quotespaces"></a>CPathT::Alıntı Alanları
 
-Herhangi bir boşluk içeriyorsa, yolu tırnak işaretleri içine almak için bu yöntemi çağırın.
+Herhangi bir boşluk içeriyorsa, yolu tırnak işaretlerine baramak için bu yöntemi arayın.
 
 ```
 void QuoteSpaces();
@@ -718,11 +718,11 @@ void QuoteSpaces();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathQuoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw).
+Daha fazla bilgi için [Bkz. PathQuoteSpaces.](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw)
 
-##  <a name="relativepathto"></a>CPathT:: RelativePathTo
+## <a name="cpathtrelativepathto"></a><a name="relativepathto"></a>Cpatht::relativepathto
 
-Bir dosyadan veya klasörden diğerine göreli yol oluşturmak için bu yöntemi çağırın.
+Bir dosya veya klasörden diğerine göreli bir yol oluşturmak için bu yöntemi çağırın.
 
 ```
 BOOL RelativePathTo(
@@ -735,28 +735,28 @@ BOOL RelativePathTo(
 ### <a name="parameters"></a>Parametreler
 
 *pszFrom*<br/>
-Göreli yolun başlangıcı.
+Göreceli yolun başlangıcı.
 
 *dwAttrFrom*<br/>
-*PszFrom*dosya öznitelikleri. Bu değer FILE_ATTRIBUTE_DIRECTORY içeriyorsa, *pszFrom* 'un bir dizin olduğu varsayılır; Aksi takdirde, *pszFrom* 'un bir dosya olduğu varsayılır.
+*pszFrom*Dosya öznitelikleri . Bu değer FILE_ATTRIBUTE_DIRECTORY içeriyorsa, *pszFrom* bir dizin olarak kabul edilir; aksi takdirde, *pszFrom* bir dosya olarak kabul edilir.
 
 *pszTo*<br/>
 Göreli yolun bitiş noktası.
 
 *dwAttrTo*<br/>
-*PszTo*'nın dosya öznitelikleri. Bu değer FILE_ATTRIBUTE_DIRECTORY içeriyorsa, *pszTo* 'nun bir dizin olduğu varsayılır; Aksi takdirde, *pszTo* 'nın bir dosya olduğu varsayılır.
+*pszTo*Dosya öznitelikleri . Bu değer FILE_ATTRIBUTE_DIRECTORY içeriyorsa, *pszTo* bir dizin olarak kabul edilir; aksi takdirde, *pszTo* bir dosya olarak kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow).
+Daha fazla bilgi için Bkz. [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow).
 
-##  <a name="removeargs"></a>CPathT:: RemoveArgs
+## <a name="cpathtremoveargs"></a><a name="removeargs"></a>CPathT::RemoveArgs
 
-Yoldaki komut satırı bağımsız değişkenlerini kaldırmak için bu yöntemi çağırın.
+Herhangi bir komut satırı bağımsız değişkenini yoldan kaldırmak için bu yöntemi çağırın.
 
 ```
 void RemoveArgs();
@@ -764,11 +764,11 @@ void RemoveArgs();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathRemoveArgs](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw).
+Daha fazla bilgi için [PathRemoveArgs'a](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw)bakın.
 
-##  <a name="removebackslash"></a>CPathT:: Removeters eğik çizgi
+## <a name="cpathtremovebackslash"></a><a name="removebackslash"></a>CPathT::RemoveBackslash
 
-Yolun sonundaki ters eğik çizgiyi kaldırmak için bu yöntemi çağırın.
+Sondaki ters eğik çizgiyi yoldan kaldırmak için bu yöntemi arayın.
 
 ```
 void RemoveBackslash();
@@ -776,11 +776,11 @@ void RemoveBackslash();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathremoveters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw).
+Daha fazla bilgi için Bkz. [PathRemoveBackslash.](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw)
 
-##  <a name="removeblanks"></a>CPathT:: Removeboşlar
+## <a name="cpathtremoveblanks"></a><a name="removeblanks"></a>CPathT::Boşlukları Kaldırma
 
-Yoldan baştaki ve sondaki boşlukları kaldırmak için bu yöntemi çağırın.
+Yoldaki tüm öncü ve sondaki boşlukları kaldırmak için bu yöntemi arayın.
 
 ```
 void RemoveBlanks();
@@ -788,11 +788,11 @@ void RemoveBlanks();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathremoveboşlar](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw).
+Daha fazla bilgi için Bkz. [PathRemoveBlanks.](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw)
 
-##  <a name="removeextension"></a>CPathT:: RemoveExtension
+## <a name="cpathtremoveextension"></a><a name="removeextension"></a>CPathT::RemoveExtension
 
-Dosya uzantısını yoldan kaldırmak için bu yöntemi çağırın.
+Varsa, dosya uzantısını yoldan kaldırmak için bu yöntemi arayın.
 
 ```
 void RemoveExtension();
@@ -800,11 +800,11 @@ void RemoveExtension();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathRemoveExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw).
+Daha fazla bilgi için [Bkz. PathRemoveExtension.](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw)
 
-##  <a name="removefilespec"></a>CPathT:: Removedosyabelirtimi
+## <a name="cpathtremovefilespec"></a><a name="removefilespec"></a>CPatht::RemoveFileSpec
 
-Bu yöntemi, varsa sonunda dosya adını ve ters eğik çizgiyi kaldırmak için çağırın.
+Bu yöntemi, uzaktaki dosya adını ve geri tepmeyi yoldan kaldırmak için çağırın.
 
 ```
 BOOL RemoveFileSpec();
@@ -812,15 +812,15 @@ BOOL RemoveFileSpec();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Pathremovedosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw).
+Daha fazla bilgi için Bkz. [PathRemoveFileSpec.](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw)
 
-##  <a name="renameextension"></a>CPathT:: RenameExtension
+## <a name="cpathtrenameextension"></a><a name="renameextension"></a>CPathT::RenameExtension
 
-Yoldaki dosya adı uzantısını yeni bir uzantıyla değiştirmek için bu yöntemi çağırın. Dosya adı bir uzantı içermiyorsa, uzantı yolun sonuna iliştirilir.
+Yoldaki dosya adı uzantısını yeni bir uzantıyla değiştirmek için bu yöntemi çağırın. Dosya adı bir uzantı içermiyorsa, uzantı yolun sonuna eklenir.
 
 ```
 BOOL RenameExtension(PCXSTR pszExtension);
@@ -828,20 +828,20 @@ BOOL RenameExtension(PCXSTR pszExtension);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszExtension*<br/>
-Önce bir "." karakteri ile yeni dosya adı uzantısı.
+*pszUzatma*<br/>
+Yeni dosya adı uzantısı, bir "." karakteri öncesinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathRenameExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw).
+Daha fazla bilgi için [Bkz. PathRenameExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw).
 
-##  <a name="skiproot"></a>CPathT:: SkipRoot
+## <a name="cpathtskiproot"></a><a name="skiproot"></a>CPathT::SkipRoot
 
-Sürücü harfi veya UNC (evrensel adlandırma kuralı) sunucu/paylaşma yolu parçalarını yoksayarak bir yolu ayrıştırmak için bu yöntemi çağırın.
+Sürücü harfini veya UNC (evrensel adlandırma kuralı) sunucu/paylaşım yolu bölümlerini yoksayarak yolu ayrıştırmak için bu yöntemi çağırın.
 
 ```
 int SkipRoot() const;
@@ -849,15 +849,15 @@ int SkipRoot() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kökü izleyen alt yolun başlangıcının konumunu döndürür (sürücü harfi veya UNC sunucusu/paylaşma).
+Kökü izleyen alt yolun başlangıcının konumunu döndürür (sürücü harfi veya UNC sunucusu/paylaşımı).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathSkipRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw).
+Daha fazla bilgi için [Bkz. PathSkipRoot.](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw)
 
-##  <a name="strippath"></a>CPathT:: StripPath
+## <a name="cpathtstrippath"></a><a name="strippath"></a>CPathT::StripPath
 
-Tam nitelenmiş yolun ve dosya adının yol bölümünü kaldırmak için bu yöntemi çağırın.
+Tam nitelikli bir yolun ve dosya adının yol bölümünü kaldırmak için bu yöntemi arayın.
 
 ```
 void StripPath();
@@ -865,11 +865,11 @@ void StripPath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathStripPath](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw).
+Daha fazla bilgi için [PathStripPath'e](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw)bakın.
 
-##  <a name="striptoroot"></a>CPathT:: StripToRoot
+## <a name="cpathtstriptoroot"></a><a name="striptoroot"></a>Cpatht::Striptoroot
 
-Kök bilgileri hariç yolun tüm bölümlerini kaldırmak için bu yöntemi çağırın.
+Kök bilgileri dışında yolun tüm bölümlerini kaldırmak için bu yöntemi arayın.
 
 ```
 BOOL StripToRoot();
@@ -877,15 +877,15 @@ BOOL StripToRoot();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yolda geçerli bir sürücü harfi bulunursa TRUE, aksi takdirde FALSE döndürür.
+Yolda geçerli bir sürücü mektubu bulunursa TRUE veya başka bir şekilde FALSE bulunursa TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathStripToRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw).
+Daha fazla bilgi için [PathStripToRoot'a](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw)bakın.
 
-##  <a name="unquotespaces"></a>CPathT:: UnquoteSpaces
+## <a name="cpathtunquotespaces"></a><a name="unquotespaces"></a>CPathT::Alıntı Sızan Alanlar
 
-Yolun başındaki ve sonundaki tırnak işaretlerini kaldırmak için bu yöntemi çağırın.
+Bir yolun başından ve sonundan tırnak işaretlerini kaldırmak için bu yöntemi çağırın.
 
 ```
 void UnquoteSpaces();
@@ -893,9 +893,9 @@ void UnquoteSpaces();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [PathUnquoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw).
+Daha fazla bilgi için Bkz. [PathUnquoteSpaces.](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw)
 
-##  <a name="xchar"></a>CPathT:: XCHAR
+## <a name="cpathtxchar"></a><a name="xchar"></a>CPathT::XCHAR
 
 Bir karakter türü.
 
@@ -905,7 +905,7 @@ typedef StringType::XCHAR XCHAR;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, `CPathT` şablon parametresidir.
+`StringType``CPathT`için şablon parametresi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

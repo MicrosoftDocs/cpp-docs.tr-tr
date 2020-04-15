@@ -1,10 +1,13 @@
 ---
 title: exp2, exp2f, exp2l
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - exp2
 - exp2f
 - exp2l
+- _o_exp2
+- _o_exp2f
+- _o_exp2l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +37,16 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-ms.openlocfilehash: 89e0448501cbd423278607bb22959c6cd1ed9464
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a5df1a216b4565f013a4c42b4ef4369b5b7f9b04
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941566"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81347578"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
-2 ' nin belirtilen değere göre oluşturulan hesaplar.
+Belirtilen değere yükseltilen 2'yi hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,35 +74,37 @@ long double exp2l(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Üs değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, *x*'nin taban 2 üssün, yani 2<sup>x</sup>döndürür. Aksi takdirde, aşağıdaki değerlerden birini döndürür:
+Başarılı olursa, *x'in*baz-2 üslerini, yani 2<sup>x'i döndürür.</sup> Aksi takdirde, aşağıdaki değerlerden birini döndürür:
 
-|Sorun|döndürülmesini|
+|Sorun|Dönüş|
 |-----------|------------|
-|*x* = ±0|1\.|
-|*x* =-sonsuzluk|+0|
-|*x* = + sonsuzluk|\+ SONSUZLUK|
-|*x* = Nan|NaN|
-|Taşma aralığı hatası|\+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
-|Yetersiz yer aralığı hatası|Yuvarlama sonrasında doğru sonuç|
+|*x* = ±0|1|
+|*x* = -SONSUZLUK|+0|
+|*x* = +SONSUZLUK|+SONSUZLUK|
+|*x* = NaN|NaN|
+|Taşma aralığı hatası|+HUGE_VAL, +HUGE_VALF veya +HUGE_VALL|
+|Akış altı aralığı hatası|Doğru sonuç, yuvarlama sonra|
 
-Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
+Hatalar [_matherr](matherr.md)belirtildiği gibi bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long Double** türlerini alıp döndüren **exp2** aşırı yüklerini çağırabilirsiniz. C programında, **exp2** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun çift** türleri alan ve döndüren aşırı **exp2** yüklerini arayabilirsiniz. Bir C programında, **exp2** her zaman alır ve bir **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgi|C++ üstbilgi|
 |-------------|--------------|------------------|
-|**Exp**, **expf**, **expl**|\<Math. h >|\<cmath >|
+|**exp**, **expf**, **expl**|\<math.h>|\<cmath>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

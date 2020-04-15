@@ -1,9 +1,11 @@
 ---
 title: _fullpath, _wfullpath
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _fullpath
 - _wfullpath
+- _o__fullpath
+- _o__wfullpath
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,12 +36,12 @@ helpviewer_keywords:
 - _fullpath function
 - fullpath function
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9
-ms.openlocfilehash: 30e62716c496ebb1a39b53a420f372a6e743c2c0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0910cf4f39e00be84e683cd6f3b9afbeb3f2a749
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345492"
 ---
 # <a name="_fullpath-_wfullpath"></a>_fullpath, _wfullpath
 
@@ -62,37 +65,39 @@ wchar_t *_wfullpath(
 ### <a name="parameters"></a>Parametreler
 
 *absPath*<br/>
-Mutlak veya tam yol adı veya **null**içeren bir arabelleğin işaretçisi.
+Mutlak veya tam yol adını veya **NULL'u**içeren bir arabelleğe işaretçi.
 
 *relPath*<br/>
 Göreli yol adı.
 
-*'In*<br/>
-Mutlak yol adı arabelleğinin (*absPath*) uzunluk üst sınırı. Bu uzunluk **_fullpath** için bayt, ancak **_wfullpath**için de geniş karakterler (**wchar_t**) cinsinden.
+*Maxlength*<br/>
+Mutlak yol adı arabelleği *(absPath)* maksimum uzunluğu. Bu uzunluk **_fullpath** için bayt, **ancak**_wfullpath için geniş karakterler **(wchar_t)** olarak.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, mutlak yol adını (*absPath*) içeren bir arabelleğe yönelik bir işaretçi döndürür. Bir hata varsa (örneğin, *RelPath* içinde geçirilen değer geçerli olmayan veya bulunamayan bir sürücü harfi içeriyorsa veya oluşturulan mutlak yol adının (*absPath*) uzunluğu *MaxLength*'ten büyükse, işlev şunu döndürür **Null**.
+Bu işlevlerin her biri mutlak yol adı *(absPath)* içeren bir arabellek için bir işaretçi döndürür. Bir hata varsa (örneğin, *relPath'te* geçirilen değer geçerli olmayan veya bulunamayan bir sürücü harfi içeriyorsa veya oluşturulan mutlak yol adının uzunluğu *(absPath)* *maxLength'tan*büyükse ), işlev **NULL'u**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fullpath** Işlevi, *RelPath* 'teki göreli yol adını tam nitelikli veya mutlak yola genişletir ve bu adı *absPath*içinde depolar. *AbsPath* **null**ise, yol adını tutmak için yeterli uzunlukta bir arabellek ayırmak üzere **malloc** kullanılır. Bu arabelleği serbest bırakmak için çağıranın sorumluluğundadır. Göreli yol adı geçerli konumdan başka bir konumun yolunu belirtir (örneğin, geçerli çalışma dizini: "."). Mutlak yol adı, dosya sisteminin kökünden istenen konuma ulaşmak için gereken yolun tamamını belirten göreli bir yol adının genişletmesinin bir yoludur. **_Makepath**'in aksine, **_fullpath** , "./" veya "Içeren göreli yollar (*RelPath*) için mutlak yol adı elde etmek üzere kullanılabilir. /"adında.
+**_fullpath** işlevi *relPath'teki* göreli yol adını tam nitelikli veya mutlak yoluna genişletir ve bu adı *absPath'te*depolar. *absPath* **NULL**ise, **malloc** yol adını tutmak için yeterli uzunlukta bir arabellek ayırmak için kullanılır. Bu arabelleği serbest etmek arayan kişinin sorumluluğundadır. Göreli bir yol adı, geçerli konumdan başka bir konuma giden bir yol belirtir (geçerli çalışma dizini gibi: "."). Mutlak yol adı, dosya sisteminin kökünden istenen konuma ulaşmak için gereken tüm yolu belirten göreli bir yol adının genişlemesidir. **_makepath** **aksine, _fullpath** "./" veya "...*relPath* /" adlarında.
 
-Örneğin, C çalışma zamanı yordamlarını kullanmak için, uygulamanın, yordamlar için bildirimleri içeren üst bilgi dosyalarını içermesi gerekir. Her üstbilgi dosyası include deyimleri, dosyanın konumunu göreli bir şekilde (uygulamanın çalışma dizininden) başvurur:
+Örneğin, C çalışma zamanı yordamlarını kullanmak için uygulamanın yordamlar için bildirimleri içeren üstbilgi dosyalarını içermesi gerekir. Her üstbilgi dosyası, dosyanın konumunu göreceli bir şekilde (uygulamanın çalışma dizininden) referanslar içerir:
 
 ```C
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+
 #include <stdlib.h>
 ```
 
-dosyanın mutlak yolu (gerçek dosya sistemi konumu) şu şekilde olabilir:
+dosyanın mutlak yolu (gerçek dosya sistemi konumu) aşağıdakigibi olabilir:
 
 `\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h`
 
-**_fullpath** , çok baytlı karakter dize bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor. **_wfullpath** , **_fullpath**; öğesinin geniş karakterli bir sürümüdür. **_wfullpath** için dize bağımsız değişkenleri geniş karakterli dizelerdir. **_wfullpath** ve **_fullpath** aynı şekilde davranır çünkü **_wfullpath** çok baytlı karakter dizelerini işlemez.
+**_fullpath,** çok bayt karakterli dize bağımsız değişkenlerini uygun şekilde işleyerek, şu anda kullanılmakta olan çok bayt kod sayfasına göre çok bayt karakter dizilerini tanıyarak çalışır. **_wfullpath** **_fullpath**geniş karakterli bir versiyonudur; **_wfullpath** için dize bağımsız değişkenleri geniş karakterli dizeleri vardır. **_wfullpath** ve **_fullpath,** **_wfullpath** çok bayt karakterli dizeleri işlememesi dışında aynı şekilde çalışır.
 
-**_Debug** ve **_Crtdbg_map_ayırması** her ikisi de tanımlıysa, **_fullpath** ve **_wfullpath** çağrıları, **_fullpath_dbg** ve **_wfullpath_dbg** çağrılarıyla birlikte hata ayıklama için bellek ayırmaya izin verir. Daha fazla bilgi için bkz. [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
+**_DEBUG** ve **_CRTDBG_MAP_ALLOC** her ikisi de tanımlanırsa, **_fullpath** ve **_wfullpath** çağrıları, bellek ayırmalarının hata ayıklanmasına izin vermek için **_fullpath_dbg** ve **_wfullpath_dbg** çağrılarıyla değiştirilir. Daha fazla bilgi için [_fullpath_dbg _wfullpath_dbg.](fullpath-dbg-wfullpath-dbg.md)
 
-Bu işlev, *maxlen* değeri 0 ' dan küçük veya buna eşit Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
+Bu işlev, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır , *makslen* 0'dan küçük veya eşitse. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL** **için errno** ayarlar ve **NULL**döndürür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -100,16 +105,16 @@ Bu işlev, *maxlen* değeri 0 ' dan küçük veya buna eşit Ise, [parametre do�
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tfullpath**|**_fullpath**|**_fullpath**|**_wfullpath**|
 
-*AbsPath* arabelleği **null**ise, **_fullpath** bir arabellek ayırmak ve *MaxLength* bağımsız değişkenini yok saymaya yönelik [malloc](malloc.md) çağırır. Bu arabelleği serbest bırakma sorumluluğu ( [ücretsiz](free.md)kullanılarak) uygun şekilde. *RelPath* bağımsız değişkeni bir disk sürücüsü belirtiyorsa, bu sürücünün geçerli dizini yol ile birleştirilir.
+*absPath* arabelleği **NULL**ise, **_fullpath** bir arabellek ayırmak için [malloc](malloc.md) çağırır ve *maxLength* bağımsız değişkeni yoks. Bu arabelleği uygun şekilde [(ücretsiz](free.md)kullanarak) bulmak arayan kişinin sorumluluğundadır. *relPath* bağımsız değişkeni bir disk sürücüsü belirtse, bu sürücünün geçerli dizini yol ile birleştirilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fullpath**|\<Stdlib. h >|
-|**_wfullpath**|\<Stdlib. h > veya \<wchar. h >|
+|**_fullpath**|\<stdlib.h>|
+|**_wfullpath**|\<stdlib.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -148,7 +153,7 @@ Full path is: C:\Documents and Settings\user\test
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
 [_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
 [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
 [_makepath, _wmakepath](makepath-wmakepath.md)<br/>

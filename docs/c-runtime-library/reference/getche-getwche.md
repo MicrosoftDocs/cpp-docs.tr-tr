@@ -1,9 +1,11 @@
 ---
 title: _getche, _getwche
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _getwche
 - _getche
+- _o__getche
+- _o__getwche
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -32,19 +35,19 @@ helpviewer_keywords:
 - getwche function
 - _getche function
 ms.assetid: eac978a8-c43a-4130-938f-54f12e2a0fda
-ms.openlocfilehash: cf7aa10702dca5118d03d7ce2e2d4341941fc51c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 59af5360ed8d966629d5e46f77681631a521d502
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955323"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344535"
 ---
 # <a name="_getche-_getwche"></a>_getche, _getwche
 
-Konsolundan yankı içeren bir karakter alır.
+Yankı ile konsoldan bir karakter alır.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,13 +58,15 @@ wint_t _getwche( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Okunan karakteri döndürür. Hata döndürme yok.
+Okunan karakteri döndürür. Hata iadesi yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getche** ve **_getwche** işlevleri konsolundan tek bir karakter okur, yani karakter konsolda görüntülenir. Bu işlevlerden hiçbiri CTRL + C okumak için kullanılamaz. Bir işlev anahtarını veya bir ok tuşunu okurken her bir işlevin iki kez çağrılması gerekir; ilk çağrı 0 veya 0xE0 döndürür ve ikinci çağrı gerçek anahtar kodunu döndürür.
+**_getche** ve **_getwche** işlevleri, konsoldan yankı ile tek bir karakter okur, yani karakter konsolda görüntülenir. Bu işlevlerin hiçbiri CTRL+C okumak için kullanılamaz. Bir işlev tuşu veya ok tuşu okurken, her işlev iki kez çağrılmalıdır; ilk arama 0 veya 0xE0 döndürür ve ikinci arama gerçek anahtar kodunu döndürür.
 
-Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı sürümler için bkz. [_getche_nolock, _getwche_nolock](getche-nolock-getwche-nolock.md).
+Bu işlevler arama iş parçacığı kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitlenmeyen sürümler için [bkz. _getche_nolock, _getwche_nolock.](getche-nolock-getwche-nolock.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -73,10 +78,10 @@ Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçac�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getche**|\<conio. h >|
-|**_getwche**|\<conio. h > veya \<wchar. h >|
+|**_getche**|\<conio.h>|
+|**_getwche**|\<conio.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -116,7 +121,7 @@ Type 'Y' when finished typing keys: abcdefyY
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
 [_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>

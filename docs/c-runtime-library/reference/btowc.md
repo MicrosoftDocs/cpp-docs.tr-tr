@@ -1,8 +1,9 @@
 ---
 title: btowc
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - btowc
+- _o_btowc
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -24,16 +26,16 @@ f1_keywords:
 helpviewer_keywords:
 - btowc function
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
-ms.openlocfilehash: 1f03fce8686f919af85ee3751cb9a0a3fca1ede7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4262f31c95b5272e3917f58a6c945577d401f16
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943464"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81333770"
 ---
 # <a name="btowc"></a>btowc
 
-Bir tamsayının ilk kaydırma durumunda geçerli bir tek baytlık karakteri temsil edip etmediğini belirleme.
+Bir tamsedinin ilk kaydırma durumunda geçerli bir tek bayt karakterini temsil edip etmediğini belirleyin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,20 +47,24 @@ wint_t btowc(
 
 ### <a name="parameters"></a>Parametreler
 
-*inde*<br/>
-Sınanacak tamsayı.
+*Karakter*<br/>
+Test etmek için sonda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tamsayı, ilk kaydırma durumunda geçerli bir tek baytlık karakteri temsil ediyorsa karakterin geniş karakter gösterimini döndürür. Tamsayı EOF veya ilk kaydırma durumunda geçerli tek baytlık bir karakter değilse, WEOF döndürür. Bu işlevin çıktısı geçerli **LC_TYPE** yerel ayarından etkilenir.
+Tamsayı ilk kaydırma durumunda geçerli bir tek bayt karakterini temsil ederse karakterin geniş karaktertemsilini verir. Tamsede EOF veya ilk kaydırma durumunda geçerli bir tek bayt karakter değilse WEOF döndürür. Bu işlevin çıktısı geçerli **LC_TYPE** yerel tarafından etkilenir.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**btowc**|\<stdio. h > veya \<wchar. h >|
+|**btowc**|\<stdio.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

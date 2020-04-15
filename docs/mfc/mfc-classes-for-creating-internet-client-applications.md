@@ -8,46 +8,46 @@ helpviewer_keywords:
 - Internet client applications [MFC], MFC
 - Internet applications [MFC], MFC
 ms.assetid: 67d34117-9839-4f4b-8bb8-0e4a9471c606
-ms.openlocfilehash: 9201859c6a5d9fe2b31c3fc4348a42ff9566fc8c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 578fd5b72e6c04610aa862f1a6631895a32a9bfe
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239229"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81358212"
 ---
 # <a name="mfc-classes-for-creating-internet-client-applications"></a>Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları
 
-MFC Internet istemci uygulamaları yazmak için aşağıdaki sınıflar ve genel işlevler sağlar. Yukarıdaki girintisiz sınıfından türetilmiş bir sınıf girinti gösterir. `CGopherFile` ve `CHttpFile` öğesinden türetilen `CInternetFile`, örneğin. Bu sınıflar ve genel işlevler AFXINET bildirilir. H dışında `CFileFind`, AFX bildirilir. H
+MFC, Internet istemcisi uygulamaları yazmak için aşağıdaki sınıfları ve genel işlevleri sağlar. Girintisi, bir sınıfın üzerindeki girintili sınıftan türetildiğianlamına geliyor. `CGopherFile`ve `CHttpFile` türetilmiştir `CInternetFile`, örneğin. Bu sınıflar ve genel işlevler AFXINET'de bildirilir. H, `CFileFind`AFX'te beyan edilen ler hariç. H.
 
 ## <a name="classes"></a>Sınıflar
 
 - [Cınternetsession](../mfc/reference/cinternetsession-class.md)
 
-- [CInternetConnection](../mfc/reference/cinternetconnection-class.md)
+- [Cınternetconnection](../mfc/reference/cinternetconnection-class.md)
 
-   - [CFtpConnection](../mfc/reference/cftpconnection-class.md)
+  - [Cftpconnection](../mfc/reference/cftpconnection-class.md)
 
-   - [CGopherConnection](../mfc/reference/cgopherconnection-class.md)
+  - [Cgopherconnection](../mfc/reference/cgopherconnection-class.md)
 
-   - [CHttpConnection](../mfc/reference/chttpconnection-class.md)
+  - [CHttpBağlantı](../mfc/reference/chttpconnection-class.md)
 
 - [Cınternetfile](../mfc/reference/cinternetfile-class.md)
 
-   - [CGopherFile](../mfc/reference/cgopherfile-class.md)
+  - [Cgopherfile](../mfc/reference/cgopherfile-class.md)
 
-   - [CHttpFile](../mfc/reference/chttpfile-class.md)
+  - [Chttpfile](../mfc/reference/chttpfile-class.md)
 
-- [CFileFind](../mfc/reference/cfilefind-class.md)
+- [Cfilefind](../mfc/reference/cfilefind-class.md)
 
-   - [CFtpFileFind](../mfc/reference/cftpfilefind-class.md)
+  - [Cftpfilefind](../mfc/reference/cftpfilefind-class.md)
 
-   - [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)
+  - [Cgopherfilefind](../mfc/reference/cgopherfilefind-class.md)
 
-- [CGopherLocator](../mfc/reference/cgopherlocator-class.md)
+- [Cgopherlocator](../mfc/reference/cgopherlocator-class.md)
 
 - [Cınternetexception](../mfc/reference/cinternetexception-class.md)
 
-## <a name="global-functions"></a>Genel işlevleri
+## <a name="global-functions"></a>Küresel Fonksiyonlar
 
 - [AfxParseURL](reference/internet-url-parsing-globals.md#afxparseurl)
 
@@ -57,6 +57,6 @@ MFC Internet istemci uygulamaları yazmak için aşağıdaki sınıflar ve genel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
+[Win32 İnternet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[Internet İstemci Sınıfları için Ön Koşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
 [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

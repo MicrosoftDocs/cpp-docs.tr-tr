@@ -1,10 +1,11 @@
 ---
 title: floor, floorf, floorl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - floorf
 - floorl
 - floor
+- _o_floor
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -32,16 +34,16 @@ helpviewer_keywords:
 - calculating floors of values
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-ms.openlocfilehash: c646437b4a1d79ef79e53d79fcbc342e5360f3cd
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 67902c61cd6e6cebd1be5182601baedfa1639ea7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957151"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346667"
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 
-Bir değerin tabanını hesaplar.
+Bir değerin zeminini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,30 +67,32 @@ long double floorl(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Floor** işlevleri, *x*değerinden küçük veya buna eşit olan en büyük tamsayıyı temsil eden bir kayan nokta değeri döndürür. Hata döndürme yok.
+**Kat** fonksiyonları, *x'ten*küçük veya eşit olan en büyük tamsayıyı temsil eden kayan nokta değerini döndürer. Hata iadesi yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH Özel Durumu|Matherr İstisnası|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|yok|_DOMAIN|
+|± QNAN,IND|yok|_DOMAIN|
 
-**tabanda** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_Set_sse2_enable](set-sse2-enable.md).
+**katta** Streaming SIMD Uzantıları 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma yla ilgili bilgi ve kısıtlamalar için [_set_SSE2_enable](set-sse2-enable.md)bkz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++aşırı yüklemeye izin verir, böylece **float** ve **Long** **Double** değerlerini alan ve döndüren **zemin** yüklerini çağırabilirsiniz. C programında, **kat** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verir, böylece **float** ve **uzun** **çift** değerleri alan ve **döndüren** aşırı kat yüklerini arayabilirsiniz. Bir C programında, **zemin** her zaman alır ve bir **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**kat**, **floorf**, **floorl**|\<Math. h >|
+|**zemin**, **floorf**, **floorl**|\<math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

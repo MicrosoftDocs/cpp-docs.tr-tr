@@ -1,8 +1,9 @@
 ---
 title: _fread_nolock
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _fread_nolock
+- _o__fread_nolock
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +31,16 @@ helpviewer_keywords:
 - _fread_nolock function
 - streams [C++], reading data from
 ms.assetid: 60e4958b-1097-46f5-a77b-94af5e7dba40
-ms.openlocfilehash: 2d896e3809d22c0f2752ef67c89233652bdade19
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 97b37b4fee85a827faa4b309741afe56d8d0cbb9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346103"
 ---
 # <a name="_fread_nolock"></a>_fread_nolock
 
-Diğer iş parçacıklarını kilitlemeden bir akıştan verileri okur.
+Diğer iş parçacıklarını kilitlemeden bir akıştan gelen verileri okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,17 +55,17 @@ size_t _fread_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
+*Arabellek*<br/>
 Veriler için depolama konumu.
 
-*boyutla*<br/>
-Bayt cinsinden öğe boyutu.
+*Boyutu*<br/>
+Baytlarda madde boyutu.
 
-*biriktirme*<br/>
-Okunacak en fazla öğe sayısı.
+*Sayısı*<br/>
+Okunacak maksimum öğe sayısı.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısına işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -71,18 +73,20 @@ Bkz. [fread](fread.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, **fread**'in kilitleme olmayan bir sürümüdür. Diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında, **fread** ile özdeştir. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+Bu **işlev, fread'in**kilitlenmeyen bir sürümüdür. Diğer iş parçacıkları tarafından girişimden korunmadığı **dışında, fread** ile aynıdır. Diğer iş parçacığı kilitleme yükü ne bilgili değildir, çünkü daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fread_nolock**|\<stdio. h >|
+|**_fread_nolock**|\<stdio.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

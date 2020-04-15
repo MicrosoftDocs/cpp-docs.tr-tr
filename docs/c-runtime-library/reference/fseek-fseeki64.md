@@ -1,9 +1,11 @@
 ---
 title: fseek, _fseeki64
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _fseeki64
 - fseek
+- _o__fseeki64
+- _o_fseek
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-ms.openlocfilehash: e3da603c3c7f1b083ddb7f7f9577adae9be5e4f1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e8f6021a0b770f6b435653c190d5968f9ac50a57
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956571"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345760"
 ---
 # <a name="fseek-_fseeki64"></a>fseek, _fseeki64
 
-Dosya işaretçisini belirtilen konuma kaydırır.
+Dosya işaretçisini belirli bir konuma taşır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,53 +62,55 @@ int _fseeki64(
 
 ### <a name="parameters"></a>Parametreler
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
-*konumu*<br/>
-*Kaynaktan*gelen bayt sayısı.
+*Uzaklık*<br/>
+*Kaynaktan*bayt sayısı.
 
-*tıdır*<br/>
-Başlangıç konumu.
+*Kökenli*<br/>
+İlk pozisyon.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **fseek** ve **_fseeki64** 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür. Arama yeteneğine sahip olmayan cihazlarda, dönüş değeri tanımsızdır. *Stream* null bir işaretçisiyse veya *kaynak* , aşağıda açıklanan izin verilen değerlerden biri değilse, **fseek** ve **_fseeki64** [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
+Başarılı olursa, **fseek** ve **_fseeki64** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür. Arama yapamayan aygıtlarda iade değeri tanımsızdır. *Akış* null işaretçisi ise veya *kaynak* aşağıda açıklanan izin verilen değerlerden biri **değilse,** [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini arar ve **_fseeki64 çağırır.** Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** ve return -1 **için errno** ayarlayın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fseek** ve **_fseeki64** işlevleri, Stream ile ilişkili dosya işaretçisini (varsa) *kaynaktan*bayt *uzaklığa* yeni bir konuma *taşıtır* . Akıştaki bir sonraki işlem yeni konumda gerçekleşir. Güncelleştirme için açık bir akışta, sonraki işlem bir okuma veya yazma olabilir. Bağımsız değişken *kaynağı* , stdio 'da tanımlanan aşağıdaki sabitlerden biri olmalıdır. Olsun
+**Fseek** ve **_fseeki64** *işlevleri, akışla* ilişkili dosya işaretçisini (varsa) *kaynaktan*gelen baytları *mahsup* eden yeni bir konuma taşır. Akıştaki bir sonraki işlem yeni konumda gerçekleşir. Güncelleştirmeye açık bir akışta, bir sonraki işlem okuma veya yazma olabilir. Bağımsız değişken *in kaynağı,* STDIO'da tanımlanan aşağıdaki sabitlerden biri olmalıdır. H:
 
-|kaynak değeri|Açıklama|
+|menşe değeri|Anlamı|
 |-|-|
 | **SEEK_CUR** | Dosya işaretçisinin geçerli konumu. |
-| **SEEK_END** | Dosya sonu. |
-| **SEEK_SET** | Dosya başlangıcı. |
+| **SEEK_END** | Dosyanın sonu. |
+| **SEEK_SET** | Dosyanın başlangıcı. |
 
-Bir dosyanın herhangi bir yerinden işaretçiyi yeniden konumlandırmak için **fseek** ve **_fseeki64** kullanabilirsiniz. İşaretçi, dosyanın sonunun ötesinde de konumlandırılmış olabilir. **fseek** ve **_fseeki64** , dosya sonu göstergesini temizler ve *akışta*önceki tüm [ungetc](ungetc-ungetwc.md) çağrılarının etkisini geçersiz kılar.
+İşaretçiyi dosyanın herhangi bir yerinde yeniden konumlandırmak için **fseek** ve **_fseeki64** kullanabilirsiniz. İşaretçi, dosyanın sonuna da yerlebir edilebilir. **fseek** ve **_fseeki64** dosya sonu göstergesini temizler ve *akışa*karşı daha önce yapılan [tüm çağrılarüzerindeki](ungetc-ungetwc.md) etkiyi inkâr eder.
 
-Veri eklemek için bir dosya açıldığında, geçerli dosya konumu, sonraki yazmanın gerçekleştiği son g/ç işlemi tarafından belirlenir. Ekleme için açılmış bir dosya üzerinde bir g/ç işlemi henüz gerçekleşmediyse dosya konumu dosyanın başdır.
+Veri ekinde bir dosya açıldığında, geçerli dosya konumu bir sonraki yazmanın nerede gerçekleşeceğine göre değil, son G/Ç işlemiyle belirlenir. Ekolarak açılan bir dosyada henüz G/Ç işlemi gerçekleşmemişse, dosya konumu dosyanın başlangıcıdır.
 
-Metin modunda açılan akışlar için, **fseek** ve **_fseeki64** sınırlı bir kullanım, satır başı ve **_fseeki64** 'in beklenmedik sonuçlar **üretmesine neden** olabilir. Metin modunda açılan akışlar üzerinde çalışma garantisi verilen tek **fseek** ve **_fseeki64** işlemleri şunlardır:
+Metin modunda açılan akışlar için, taşıma döndürme satırı besleme çevirileri **fseek** ve **_fseeki64** beklenmeyen sonuçlar oluşturmasına neden olabileceğinden, **fseek** ve **_fseeki64** sınırlı kullanıma sahiptir. Metin modunda açılan akışlarda çalışması garanti edilen tek **fseek** ve **_fseeki64** işlemleri şunlardır:
 
-- Kaynak değerlerinden herhangi birine göre 0 uzaklığına sahip arama.
+- Kaynak değerlerinden herhangi biriyle 0 ofset ile arama.
 
-- **_Fseeki64**kullanırken **fseek** veya _ftelli64 kullanırken, dosyanın başından, [fseek](ftell-ftelli64.md) veya [](ftell-ftelli64.md) kullandığınızda bir Delta değeri ile arama.
+- Bir ofset değeri ile dosyanın başından itibaren arama [ftell](ftell-ftelli64.md) veya [_ftelli64](ftell-ftelli64.md) **kullanırken** **_fseeki64**.
 
-Ayrıca, metin modunda CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılan dosyalarda, [fopen](fopen-wfopen.md) ve tüm ilgili yordamlar, dosyanın sonunda bir CTRL + Z olup olmadığını kontrol edin ve mümkünse kaldırın. Bu, bir CTRL + Z ile biten bir dosya içinde hareket etmek için **fseek** ve [for](ftell-ftelli64.md) veya **_fseeki64** ve [_ftelli64](ftell-ftelli64.md)birleşimini kullanmanın, **fseek** veya **_fseeki64** öğesinin sonuna doğru şekilde davranmasına neden olabileceği için yapılır. dosyasýný.
+Ayrıca metin modunda, CTRL+Z girişte dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılan dosyalarda, [dosyanın](fopen-wfopen.md) sonunda ctrl+Z olup olmadığını kontrol edin ve mümkünse kaldırın. Bu, **fseek** ve [ftell](ftell-ftelli64.md) veya **_fseeki64** ve [_ftelli64](ftell-ftelli64.md)birleşimini kullanarak, CTRL+Z ile biten bir dosya içinde hareket etmek **fseek** veya **_fseeki64** dosyanın sonuna yakın uygunsuz şekilde hareket etmesinineden olabilir çünkü yapılır.
 
-CRT, bir bayt sırası Işaretiyle (BOM) başlayan bir dosya açtığında, dosya işaretçisi, ürün reçetesinden sonra konumlandırılır (yani, dosyanın gerçek içeriğinin başlangıcında). Dosyanın başlangıcına yönelik bir bilgi sahibi olmanız gerekirse, ilk konumu almak için [fsöyleyin](ftell-ftelli64.md) ' ı **kullanın ve 0** konumuna geçmek yerine bu konuma gidin.
+CRT, Byte Order Mark (BOM) ile başlayan bir dosyayı açtığında, dosya işaretçisi BOM'dan sonra (diğer bir şekilde dosyanın gerçek içeriğinin başında) konumlandırılır. Dosyanın başına ulaşmak için **fseek** gerekiyorsa, ilk konumu almak için [ftell](ftell-ftelli64.md) kullanın ve 0 konumu yerine onu **fseek.**
 
-Bu işlev, yürütme sırasında diğer iş parçacıklarını kilitler ve bu nedenle iş parçacığı açısından güvenlidir. Kilitleme dışı bir sürüm için bkz. [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md).
+Bu işlev yürütme sırasında diğer iş parçacıklarını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitsiz bir sürüm için [_fseek_nolock _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fseek**|\<stdio. h >|
-|**_fseeki64**|\<stdio. h >|
+|**Fseek**|\<stdio.h>|
+|**_fseeki64**|\<stdio.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -149,7 +154,7 @@ This is the file 'fseek.out'.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [ftell, _ftelli64](ftell-ftelli64.md)<br/>
 [_lseek, _lseeki64](lseek-lseeki64.md)<br/>

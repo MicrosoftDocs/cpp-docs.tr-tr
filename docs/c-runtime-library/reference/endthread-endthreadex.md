@@ -1,9 +1,11 @@
 ---
 title: _endthread, _endthreadex
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _endthread
 - _endthreadex
+- _o__endthread
+- _o__endthreadex
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - _endthreadex function
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
-ms.openlocfilehash: c9dd4a49e534e8fa3e0f5ac735faccb4b0f65af5
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c76f479255080400e07678ef5dbde572b7a9dffc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937730"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348033"
 ---
 # <a name="_endthread-_endthreadex"></a>_endthread, _endthreadex
 
-Bir iş parçacığını sonlandırır; **_endthread** , **_beginthread** ve **_endthreadex** tarafından oluşturulan bir iş parçacığını, **_beginthreadex**tarafından oluşturulan bir iş parçacığını sonlandırır.
+İş parçacığı sonlandırır; **_endthread,** **_beginthread** tarafından oluşturulan bir iş parçacığına son ve **_beginthreadex** **tarafından**oluşturulan bir iş parçacığının _endthreadex sonlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,34 +63,36 @@ void _endthreadex(
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir iş parçacığını sonlandırmak için **_endthread** veya **_endthreadex** öğesini açıkça çağırabilirsiniz; Ancak, iş parçacığı **_beginthread** veya **_beginthreadex**'e parametre olarak geçirilen yordamın döndürdüğü zaman **_endthread** veya **_endthreadex** otomatik olarak çağrılır. **Endthread** veya **_endthreadex** çağrısıyla bir iş parçacığını sonlandırmak, iş parçacığı için ayrılan kaynakların doğru şekilde kurtarılmasını sağlamaya yardımcı olur.
+İş parçacığına son vermek için **_endthread** veya **_endthreadex** açıkça arayabilirsiniz; ancak, iş parçacığı **_beginthread** veya **_beginthreadex**parametre olarak geçirildiğinde, **_endthread** veya **_endthreadex** otomatik olarak çağrılır. İş **parçacığının son iş parçacığı** veya **_endthreadex** için bir çağrıyla sonlandırması, iş parçacığı için ayrılan kaynakların düzgün kurtarılmasını sağlamaya yardımcı olur.
 
 > [!NOTE]
-> Libcmt. lib ile bağlantılı bir yürütülebilir dosya için Win32 [ExitThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API 'sini çağırmayın; Bu, çalışma zamanı sisteminin geri kazanma tarafından ayrılmış kaynaklardan yapılmasını önler. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanın ve sonra **ExitThread**'i çağırır.
+> Libcmt.lib ile bağlantılı çalıştırılabilir bir dosya için Win32 [ExitThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API'yi aramayın; bu, çalışma zamanı sisteminin ayrılan kaynakları geri geri almasını engeller. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri almak ve sonra **ExitThread**arayın.
 
-**_endthread** iş parçacığı tanıtıcısını otomatik olarak kapatır. (Bu davranış, Win32 **ExitThread** API 'sinden farklıdır.) Bu nedenle, **_beginthread** ve **_Endthread**kullandığınızda, Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) API 'sini çağırarak iş parçacığı tanıtıcısını açıkça kapatmayın.
+**_endthread** iş parçacığı tutamacını otomatik olarak kapatır. (Bu davranış Win32 **ExitThread** API farklıdır.) Bu nedenle, **_beginthread** ve **_endthread**kullandığınızda, Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) API'yi arayarak iş parçacığı tutamacını açıkça kapatmayın.
 
-Win32 **ExitThread** API 'si gibi, **_endthreadex** iş parçacığı tanıtıcısını kapatmaz. Bu nedenle, **_beginthreadex** ve **_Endthreadex**kullandığınızda, Win32 **CloseHandle** API 'sini çağırarak iş parçacığı tanıtıcısını kapatmanız gerekir.
+Win32 **ExitThread** API gibi, **_endthreadex** iş parçacığı tutamacını kapatmaz. Bu nedenle, **_beginthreadex** ve **_endthreadex**kullandığınızda, Win32 **CloseHandle** API'yi arayarak iş parçacığı tutamacını kapatmanız gerekir.
 
 > [!NOTE]
-> **_endthread** ve **_endthreadex** , C++ iş parçacığında bekleyen yok edicilerin çağrılmamasına neden oluyor.
+> **_endthread** ve **_endthreadex,** diş parçacığının çağrılmamasını bekleyen C++ yıkıcılarına neden olur.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_endthread**|\<Process. h >|
-|**_endthreadex**|\<Process. h >|
+|**_endthread**|\<process.h>|
+|**_endthreadex**|\<process.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) çok iş parçacıklı sürümleri.
+Yalnızca C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) çok iş parçacığı sürümleri.
 
 ## <a name="example"></a>Örnek
 
-[_Beginthread](beginthread-beginthreadex.md)örneğine bakın.
+[_beginthread](beginthread-beginthreadex.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

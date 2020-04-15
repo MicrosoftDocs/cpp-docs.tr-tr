@@ -1,5 +1,5 @@
 ---
-title: CWinTraits sınıfı
+title: CWinTraits Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWinTraits
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - CFrameWinTraits class
 - CControlWinTraits class
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-ms.openlocfilehash: 840433ffb325a4f181848371306607b62373e75a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd73f733e4eff21da92937d1e1b0cce21552a48c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276789"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330308"
 ---
-# <a name="cwintraits-class"></a>CWinTraits sınıfı
+# <a name="cwintraits-class"></a>CWinTraits Sınıfı
 
-Bu sınıf, bir pencere nesnesi oluşturulurken kullanılan stilleri Standartlaştırma için bir yöntem sağlar.
+Bu sınıf, bir pencere nesnesi oluştururken kullanılan stilleri standartlaştırmak için bir yöntem sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,46 +39,46 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 Varsayılan standart pencere stilleri.
 
 *t_dwExStyle*<br/>
-Genişletilmiş pencere stilleri varsayılan olarak.
+Varsayılan genişletilmiş pencere stilleri.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWinTraits::GetWndExStyle](#getwndexstyle)|(Statik) Genişletilmiş stillerini alır `CWinTraits` nesne.|
-|[CWinTraits::GetWndStyle](#getwndstyle)|(Statik) Standart stillerini alır `CWinTraits` nesne.|
+|[CWinTraits::GetWndExStyle](#getwndexstyle)|(Statik) `CWinTraits` Nesne için genişletilmiş stilleri alır.|
+|[CWinTraits::GetWndStyle](#getwndstyle)|(Statik) Nesnenin standart stillerini `CWinTraits` alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu [pencere özelliklerini](../../atl/understanding-window-traits.md) sınıfı bir ATL pencere nesnesi oluşturmak için kullanılan stilleri Standartlaştırma için basit bir yöntem sağlar. Bu sınıfın özelleştirmesi için bir şablon parametresi olarak kullanmak [Cwindowımpl](../../atl/reference/cwindowimpl-class.md) veya başka bir ATL pencere sınıfları için kullanılan varsayılan standart ve genişletilmiş stiller belirtmek için bu pencere sınıfının örneği.
+Bu [pencere özellikleri](../../atl/understanding-window-traits.md) sınıfı, Bir ATL pencere nesnesinin oluşturulması için kullanılan stilleri standartlaştırmak için basit bir yöntem sağlar. Bu sınıfın uzmanlık alanını, bu pencere sınıfının örnekleri için kullanılan varsayılan standardı ve genişletilmiş stilleri belirtmek için [CWindowImpl'e](../../atl/reference/cwindowimpl-class.md) veya ATL'nin pencere sınıflarından başka birsına şablon parametresi olarak kullanın.
 
-Diğer bir stilleri çağrısında belirtildiğinde, kullanılacak pencere stilleri varsayılan sağlamak istediğinizde bu şablonu kullanın [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#create).
+[CWindowImpl'e](../../atl/reference/cwindowimpl-class.md#create)yapılan çağrıda başka stil belirtilmediğinde kullanılacak varsayılan pencere stillerini sağlamak istediğinizde bu şablonu kullanın:Oluştur .
 
-ATL pencere stilleri yaygın olarak kullanılan birleşimleri için bu şablonun önceden tanımlanmış üç uzmanlıklar sağlar:
+ATL, pencere stillerinin yaygın olarak kullanılan kombinasyonları için bu şablonun önceden tanımlanmış üç uzmanlık özelliğini sağlar:
 
 - `CControlWinTraits`
 
-   Bir standart denetim penceresi için tasarlanmıştır. Aşağıdaki standart stilleri kullanılır: WS_CHILD, ws_vısıble, ws_clıpchıldren ve ws_clıpsıblıngs. Genişletilmiş Stil vardır.
+   Standart bir kontrol penceresi için tasarlanmıştır. Aşağıdaki standart stiller kullanılır: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN ve WS_CLIPSIBLINGS. Genişletilmiş stiller yoktur.
 
 - `CFrameWinTraits`
 
-   Standart bir çerçeve için tasarlanmıştır. Kullanılan standart stiller şunlardır: Ws_overlappedwındow ws_clıpchıldren ve ws_clıpsıblıngs. Kullanılan genişletilmiş stiller şunlardır: Ws_ex_appwındow ve ws_ex_wındowedge.
+   Standart çerçeve penceresi için tasarlanmıştır. Kullanılan standart stiller şunlardır: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN ve WS_CLIPSIBLINGS. Kullanılan genişletilmiş stilleri şunlardır: WS_EX_APPWINDOW ve WS_EX_WINDOWEDGE.
 
 - `CMDIChildWinTraits`
 
-   Standart bir MDI alt penceresi için tasarlanmıştır. Kullanılan standart stiller şunlardır: Ws_overlappedwındow, WS_CHILD, ws_vısıble, ws_clıpchıldren ve ws_clıpsıblıngs. Kullanılan genişletilmiş stiller şunlardır: WS_EX_MDICHILD.
+   Standart bir MDI alt penceresi için tasarlanmıştır. Kullanılan standart stiller şunlardır: WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN ve WS_CLIPSIBLINGS. Kullanılan genişletilmiş stilleri şunlardır: WS_EX_MDICHILD.
 
-Tek başına örnek temelinde ayarlamak için diğer stilleri erişimine izin verme sırasında penceresi sınıfın tüm örnekleri kullanmak için belirli stilleri ayarlandığından emin olmak istiyorsanız [CWinTraitsOR](../../atl/reference/cwintraitsor-class.md) yerine.
+Diğer stillerin her örnek te ayarlanmasına izin verirken, pencere sınıfının tüm örnekleri için belirli stillerin ayarlandığından emin olmak istiyorsanız, bunun yerine [CWinTraitsOR'u](../../atl/reference/cwintraitsor-class.md) kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin.h
 
-##  <a name="getwndstyle"></a>  CWinTraits::GetWndStyle
+## <a name="cwintraitsgetwndstyle"></a><a name="getwndstyle"></a>CWinTraits::GetWndStyle
 
-Standart stillerini almak için bu işlevi çağırın `CWinTraits` nesne.
+`CWinTraits` Nesnenin standart stillerini almak için bu işlevi arayın.
 
 ```
 static DWORD GetWndStyle(DWORD dwStyle);
@@ -86,16 +86,16 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyle*<br/>
-Bir pencere oluşturmak için kullanılan standart stilleri. Varsa *dwStyle* şablon stili değerleri 0'dır (`t_dwStyle`) döndürülür. Varsa *dwStyle* sıfır değilse, *dwStyle* döndürülür.
+*Dwstyle*<br/>
+Pencere oluşturmak için kullanılan standart stiller. *dwStyle* 0 ise, şablon stil`t_dwStyle`değerleri ( ) döndürülür. *dwStyle* sıfır değilse, *dwStyle* döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Nesnenin standart pencere stilleri.
 
-##  <a name="getwndexstyle"></a>  CWinTraits::GetWndExStyle
+## <a name="cwintraitsgetwndexstyle"></a><a name="getwndexstyle"></a>CWinTraits::GetWndExStyle
 
-Genişletilmiş stillerini almak için bu işlevi çağırın `CWinTraits` nesne.
+Nesnenin genişletilmiş stillerini almak için `CWinTraits` bu işlevi çağırın.
 
 ```
 static DWORD GetWndExStyle(DWORD dwExStyle);
@@ -104,13 +104,13 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Bir pencere oluşturmak için kullanılan genişletilmiş stiller. Varsa *dwExStyle* şablon stili değerleri 0'dır (`t_dwExStyle`) döndürülür. Varsa *dwExStyle* sıfır değilse, *dwExStyle* döndürülür.
+Pencere oluşturmak için kullanılan genişletilmiş stiller. *dwExStyle* 0 ise, şablon stil`t_dwExStyle`değerleri ( ) döndürülür. *dwExStyle* sıfır değilse, *dwExStyle* döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genişletilmiş pencere stilleri nesne.
+Nesnenin genişletilmiş pencere stilleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [Pencere Özelliklerini Anlama](../../atl/understanding-window-traits.md)

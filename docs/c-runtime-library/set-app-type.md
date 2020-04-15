@@ -1,10 +1,12 @@
 ---
 title: _set_app_type
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _set_app_type
+- _o__set_app_type
 api_location:
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -13,16 +15,16 @@ f1_keywords:
 - _set_app_type
 - corecrt_startup/_set_app_type
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-ms.openlocfilehash: 7e04d88d9e9981e35b7d4c80c11d27c868219f65
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9791cff55ccd55c32d124ab89cc43ab54c0f9c69
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957918"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360967"
 ---
 # <a name="_set_app_type"></a>_set_app_type
 
-Uygulamanın bir konsol uygulaması veya GUI uygulaması olup olmadığı CRT 'ye bildirmek için başlangıçta kullanılan bir iç işlev.
+Başlangıçta CRT'ye uygulamanın bir konsol uygulaması mı yoksa GUI uygulaması mı olduğunu söylemek için kullanılan dahili bir işlev.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,7 +43,7 @@ void __cdecl _set_app_type(
 
 ## <a name="parameters"></a>Parametreler
 
-*Uyg türü*<br/>
+*appType*<br/>
 Uygulama türünü gösteren bir değer. Olası değerler şunlardır:
 
 |Değer|Açıklama|
@@ -52,10 +54,12 @@ Uygulama türünü gösteren bir değer. Olası değerler şunlardır:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Normalde, bu işlevi çağırmanız gerekmez. Uygulamanızda çağrılmadan önce `main` yürüten C çalışma zamanı başlangıç kodunun bir parçasıdır.
+Normalde, bu işlevi aramanız gerekmez. Uygulamanızda çağrılmadan önce `main` yürüten C çalışma zamanı başlangıç kodunun bir parçasıdır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|_set_app_type|Process. h|
+|_set_app_type|process.h|

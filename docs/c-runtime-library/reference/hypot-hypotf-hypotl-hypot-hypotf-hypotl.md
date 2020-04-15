@@ -1,6 +1,6 @@
 ---
 title: hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - _hypotf
 - hypot
@@ -8,6 +8,9 @@ api_name:
 - _hypot
 - _hypotl
 - hypotl
+- _o__hypot
+- _o__hypotf
+- _o_hypot
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +23,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -40,16 +44,16 @@ helpviewer_keywords:
 - calculating hypotenuses
 - _hypot function
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
-ms.openlocfilehash: ac481366199023e4b45467599d2c66802ff65c23
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85f975dace6aa0c79356f85a8ece53b82413a7c3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168752"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81343951"
 ---
 # <a name="hypot-hypotf-hypotl-_hypot-_hypotf-_hypotl"></a>hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 
-Hipotenüsü hesaplar.
+Hipotenüs hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,23 +91,25 @@ Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa **hypot** , hipotenüsü uzunluğunu döndürür; taşma durumunda **hypot** , INF (Infinity) döndürür ve **errno** değişkeni **ERANGE**olarak ayarlanır. Hata işlemeyi değiştirmek için **_matherr** kullanabilirsiniz.
+Başarılı olursa, **hipot** hipotenüs uzunluğunu döndürür; taşma, **hipot** INF (sonsuz) döndürür ve **errno** **değişkene ERANGE**ayarlanır. hata işleme yi değiştirmek için **_matherr** kullanabilirsiniz.
 
-Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+İade kodları hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Hypot** işlevleri, iki tarafının *x* ve *y* uzunluğu (diğer bir deyişle, *x*<sup>2</sup> + *y*<sup>2</sup>' nin kare kökünü) verildiğinde sağ üçgenin hipotenüsü uzunluğunu hesaplar.
+**Hipot** fonksiyonları, iki tarafın *x* ve *y* uzunluğu (diğer bir deyişle, *x*<sup>2</sup> + *y*<sup>2</sup>kare kökü) verilen bir dik üçgenin hipotenüs uzunluğunu hesaplar.
 
-Önde gelen alt çizgileri olan işlevlerin sürümleri, önceki standartlarla uyumluluk için sağlanır. Davranışları, önde gelen alt çizgileri olmayan sürümlerle aynıdır. Yeni kod için önde gelen alt çizgiler olmadan sürümlerin kullanılması önerilir.
+Önde gelen alt çizilen işlevlerin sürümleri, önceki standartlarla uyumluluk için sağlanır. Davranışları, satır aralığı alt alt alt larına sahip olmayan sürümlerle aynıdır. Yeni kod için alt çizimeler olmadan sürümleri kullanmanızı öneririz.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf** **_hypotl**|\<Math. h >|
+|**hipot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

@@ -1,9 +1,11 @@
 ---
 title: mbstowcs, _mbstowcs_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - mbstowcs
 - _mbstowcs_l
+- _o__mbstowcs_l
+- _o_mbstowcs
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +20,7 @@ api_location:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - mbstowcs_l function
 - mbstowcs function
 ms.assetid: 96696b27-e068-4eeb-8006-3f7a0546ae6d
-ms.openlocfilehash: 3df851b08edfa9dfe5bf9b42b9abfd45a8939606
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 11ff6920ea5f1dad2925a8010c9202e012fad87a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952028"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338845"
 ---
 # <a name="mbstowcs-_mbstowcs_l"></a>mbstowcs, _mbstowcs_l
 
-Çok baytlı karakterlerden oluşan bir diziyi karşılık gelen geniş karakter dizisine dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md).
+Çok bayt karakter dizisini karşılık gelen geniş karakter dizisine dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,45 +74,47 @@ size_t _mbstowcs_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*wcstr*<br/>
+*Wcstr*<br/>
 Geniş karakter dizisinin adresi.
 
 *mbstr*<br/>
-Null ile sonlandırılmış çok baytlı karakterlerin bir dizisinin adresi.
+Null sonlandırılmış çok bayt karakter dizisinin adresi.
 
-*biriktirme*<br/>
-Dönüştürülecek çok baytlı karakter sayısı üst sınırı.
+*Sayısı*<br/>
+Dönüştürülecek maksimum çok bayt karakter sayısı.
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Mbstowcs** kaynak dizeyi başarıyla dönüştürdüyse, dönüştürülmüş çok baytlı karakterlerin sayısını döndürür. *Wcstr* bağımsız değişkeni **null**ise, işlev hedef dizenin gereken boyutunu (geniş karakterlerle) döndürür. **Mbstowcs** geçersiz bir çok baytlı karakterle karşılaşırsa,-1 döndürür. Dönüş değeri *sayımla*, geniş karakterli dize null ile sonlandırılmaz.
+**Mbstowcs** başarıyla kaynak dize dönüştürür, dönüştürülmüş çok bayt karakter sayısını döndürür. *Wcstr* bağımsız değişkeni **NULL**ise, işlev hedef dizesinin gerekli boyutunu (geniş karakterlerde) döndürür. **Mbstowcs** geçersiz bir çok bayt karakteriyle karşılaşırsa , -1 döndürür. İade değeri sayılsa, geniş karakterli dize null-sonlandırılmez. *count*
 
 > [!IMPORTANT]
-> *Wcstr* ve *mbstr* 'in çakışmadığından ve bu *sayının* dönüştürülecek çok baytlı karakterlerin sayısını doğru yansıttığından emin olun.
+> Wcstr ve *mbstr'nin* çakışmadığından ve bu *wcstr* *sayımda* dönüştürülecek çok bayt karakter sayısını doğru şekilde yansıttığından emin olun.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbstowcs** işlevi, *mbstr* tarafından işaret edilen en fazla sayıda *çok baytlı karakter* sayısını, geçerli yerel ayar tarafından belirlenen karşılık gelen geniş karakter dizesine dönüştürür. Elde edilen geniş karakterli dizeyi, *wcstr*tarafından temsil edilen adreste depolar. Sonuç [mbtowc](mbtowc-mbtowc-l.md)öğesine yapılan çağrı dizisine benzerdir. **Mbstowcs** tek baytlı null karakterle (' \ 0 ') karşılaşırsa, ya da bu *sayı* gerçekleştiğinde, null karakteri geniş karakterli bir null karaktere (L ' \ 0 ') dönüştürür ve duraklar. Bu nedenle, *wcstr* konumundaki geniş karakterli dize yalnızca dönüştürme sırasında null karakter ile karşılaşılırsa null olarak sonlandırılır. *Wcstr* ve *mbstr* tarafından işaret edilen diziler çakışırsa, davranış tanımsızdır.
+**Mbstowcs** işlevi, *mbstr* tarafından işaret edilen maksimum *sayı* çok bayt karakter sayısına kadar, geçerli yerel ayar tarafından belirlenen karşılık gelen geniş karakterler dizisine dönüştürür. Ortaya çıkan geniş karakterli dizeyi *wcstr*tarafından temsil edilen adreste depolar. Sonuç [mbtowc](mbtowc-mbtowc-l.md)aramaları bir dizi benzer. **Mbstowcs,** sayım gerçekleşmeden önce veya *sayıldığında* tek bayt null karakteriyle ('\0') karşılaşırsa, null karakterini geniş karakterli null karaktere (L'\0') dönüştürür ve durur. Böylece *wcstr'deki* geniş karakter dizesi, yalnızca dönüştürme sırasında null bir karakterle karşılaşılırsa geçersiz kılındı. *Wcstr* ve *mbstr* çakışan diziler işaret varsa, davranış tanımsız.
 
-*Wcstr* bağımsız değişkeni **null**ise, **mbstowcs** , null Sonlandırıcı dahil değil, dönüşümden kaynaklanan geniş karakter sayısını döndürür. Doğru değerin döndürülmesi için kaynak dize null ile sonlandırılmış olmalıdır. Sonuçta elde edilen geniş karakter dizesinin null sonlandırılmış olması gerekiyorsa, döndürülen değere bir tane ekleyin.
+*Wcstr* bağımsız değişkeni **NULL**ise, **mbstowcs** null terminator dahil değil, dönüştürme sonucu olacak geniş karakter sayısını döndürür. Doğru değerin döndürülmesi için kaynak dize geçersiz kılınmalıdır. Ortaya çıkan geniş karakter dizesinin geçersiz kılınması gerekiyorsa, döndürülen değere bir tane ekleyin.
 
-*Mbstr* bağımsız değişkeni **null**Ise veya *sayı* > **INT_MAX**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, errno **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
+*Mbstr* bağımsız değişkeni **NULL**ise veya *sayı* **> INT_MAX**ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md) açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, errno **EINVAL** olarak ayarlanır ve işlev -1 döndürür.
 
-**mbstowcs** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbstowcs_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**mbstowcs** herhangi bir yerel bağımlı davranış için geçerli yerel kullanır; **_mbstowcs_l,** bunun yerine geçirilen yerel liği kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevlerin daha yeni ve güvenli karşıtlarını çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbstowcs**|\<Stdlib. h >|
-|**_mbstowcs_l**|\<Stdlib. h >|
+|**mbstowcs**|\<stdlib.h>|
+|**_mbstowcs_l**|\<stdlib.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -209,7 +214,7 @@ Convert back to wide-character string:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

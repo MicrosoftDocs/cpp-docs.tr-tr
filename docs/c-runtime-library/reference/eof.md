@@ -1,8 +1,9 @@
 ---
 title: _eof
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _eof
+- _o__eof
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -29,12 +31,12 @@ helpviewer_keywords:
 - testing, for end-of-file
 - end of file
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
-ms.openlocfilehash: 5b5c27f1de3369369776dd030df21be05cf20b7a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3218969c603e771ee6d2cdbf9baeed1728934be6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941989"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81347928"
 ---
 # <a name="_eof"></a>_eof
 
@@ -50,24 +52,26 @@ int _eof(
 
 ### <a name="parameters"></a>Parametreler
 
-*FD*<br/>
-Açık dosyaya başvuran dosya tanımlayıcısı.
+*Fd*<br/>
+Açık dosyaya atıfta bulunan dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_eof** geçerli konum dosya sonu ise 1 veya değilse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir; Bu durumda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** , **EBADF**olarak ayarlanır, bu da geçersiz bir dosya tanımlayıcısını gösterir.
+**_eof** geçerli konum dosyanın sonu ysa 1, değilse 0 döndürür. -1'in geri dönüş değeri bir hatayı gösterir; Bu durumda, geçersiz parametre işleyicisi, [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, **errno** **EBADF**olarak ayarlanır, hangi geçersiz bir dosya tanımlayıcıgösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Eof** işlevi, *FD* ile ilişkili dosyanın sonuna ulaşılıp ulaşılmadığını belirler.
+**_eof** işlevi *fd* ile ilişkili dosyanın sonuna ulaşılıp ulaşılmadığını belirler.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı başlık|
+|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
 |--------------|---------------------|---------------------|
-|**_eof**|\<GÇ. h >|\<errno. h >|
+|**_eof**|\<io.h>|\<errno.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -109,13 +113,13 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_eoftxt"></a>Giriş: crt_eof. txt
+### <a name="input-crt_eoftxt"></a>Giriş: crt_eof.txt
 
 ```Input
 This file contains some text.
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Number of bytes read = 29
@@ -124,7 +128,7 @@ Number of bytes read = 29
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [feof](feof.md)<br/>
 [ferror](ferror.md)<br/>

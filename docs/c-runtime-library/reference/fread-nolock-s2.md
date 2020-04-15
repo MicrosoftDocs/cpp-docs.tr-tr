@@ -1,8 +1,9 @@
 ---
 title: _fread_nolock_s2
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _fread_nolock_s
+- _o__fread_nolock_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -23,16 +25,16 @@ f1_keywords:
 - _fread_nolock_s
 - stdio/_fread_nolock_s
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
-ms.openlocfilehash: e7fded9860b7a1364841d5f9b8a7e3aa478a8420
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3fb34a75a0281058a1d70ce41e1ce33b4b1bbb59
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956899"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346143"
 ---
 # <a name="_fread_nolock_s"></a>_fread_nolock_s
 
-Diğer iş parçacıklarını kilitlemeden bir akıştan verileri okur. Bu [fread_nolock](fread-nolock.md) sürümü, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
+Diğer iş parçacıklarını kilitlemeden bir akıştan gelen verileri okur. [fread_nolock](fread-nolock.md) bu sürümü, [CRT'deki Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmelerine sahiptir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,20 +50,20 @@ size_t _fread_nolock_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
+*Arabellek*<br/>
 Veriler için depolama konumu.
 
-*Boyutu*<br/>
-Hedef arabelleğin bayt cinsinden boyutu.
+*Buffersize*<br/>
+Baytlar'daki hedef arabelleği boyutu.
 
-*elementSize*<br/>
-Okunan öğenin bayt cinsinden boyutu.
+*elementBoyut*<br/>
+Baytokunacak öğenin boyutu.
 
 *elementCount*<br/>
-Okunacak en fazla öğe sayısı.
+Okunacak maksimum öğe sayısı.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -69,18 +71,20 @@ Bkz. [fread_s](fread-s.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, **fread_s**'in kilitleme dışı bir sürümüdür. **Fread_s** ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmamalıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+Bu **işlev, fread_s**kilitlenmeyen bir sürümüdür. Diğer iş parçacıkları tarafından girişime karşı korumalı olmaması dışında **fread_s** ile aynıdır. Diğer iş parçacığı kilitleme yükü ne bilgili değildir, çünkü daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fread_nolock_s**|C: \<stdio. h >; C++ :\<cstdio > veya \<stdio. h >|
+|**_fread_nolock_s**|C: \<stdio.h>; C++: \<cstdio \<> veya stdio.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

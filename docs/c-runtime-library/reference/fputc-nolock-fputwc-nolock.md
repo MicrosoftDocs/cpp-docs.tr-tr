@@ -1,9 +1,11 @@
 ---
 title: _fputc_nolock, _fputwc_nolock
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _fputwc_nolock
 - _fputc_nolock
+- _o__fputc_nolock
+- _o__fputwc_nolock
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -36,16 +39,16 @@ helpviewer_keywords:
 - _fputtc_nolock function
 - _fputwc_nolock function
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
-ms.openlocfilehash: e49191dfd6e4d360a8dd3123d6a84320b4de8a08
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f1ad79a1517783a48de887ccf2294d7a8018f70e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956950"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346250"
 ---
 # <a name="_fputc_nolock-_fputwc_nolock"></a>_fputc_nolock, _fputwc_nolock
 
-İş parçacığını kilitlemeden akışa bir karakter yazar.
+İş parçacığı kilitlemeden bir akışa karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,21 +65,23 @@ wint_t _fputwc_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
+*C*<br/>
 Yazılacak karakter.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısına işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri yazılan karakteri döndürür. Hata bilgileri için bkz. [fputc, fputwc](fputc-fputwc.md).
+Bu işlevlerin her biri yazılan karakteri döndürür. Hata bilgileri için [bkz: fputc, fputwc](fputc-fputwc.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_fputc_nolock** ve **_fputwc_nolock** , sırasıyla **fputc** ve **fputwc**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**_fputc_nolock** ve **_fputwc_nolock** **fputc** ve **fputwc**ile aynıdır , sırasıyla, diğer iş parçacıkları tarafından girişime karşı korumalı değildir dışında. Diğer iş parçacığı kilitleme yükü ne olursa olsun onlar daha hızlı olabilir. Bu işlevleri yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
 
-Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_fputc_nolock** Şu anda bir UNICODE akışına çıktıyı desteklemiyor.
+Akış ANSI modunda açıldığında iki işlev aynı şekilde çalışır. **_fputc_nolock** şu anda bir UNICODE akışına çıkışı desteklemiyor.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -88,10 +93,10 @@ Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_fputc_no
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fputc_nolock**|\<stdio. h >|
-|**_fputwc_nolock**|\<stdio. h > veya \<wchar. h >|
+|**_fputc_nolock**|\<stdio.h>|
+|**_fputwc_nolock**|\<stdio.h> \<veya wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol, Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Konsolla ilişkili standart akış kolları**stdin,** **stdout**ve **stderr,** C çalışma zamanı işlevleri UWP uygulamalarında kullanamadan önce yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -120,6 +125,6 @@ This is a test of _fputc_nolock!!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

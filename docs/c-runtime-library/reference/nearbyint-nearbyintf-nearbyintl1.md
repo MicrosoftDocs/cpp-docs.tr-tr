@@ -1,10 +1,13 @@
 ---
 title: nearbyint, nearbyintf, nearbyintl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - nearbyint
 - nearbyintf
 - nearbyintl
+- _o_nearbyint
+- _o_nearbyintf
+- _o_nearbyintl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +37,16 @@ helpviewer_keywords:
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-ms.openlocfilehash: cd0a7d00c5019dd1e483d555df6db8d9770e61c1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 92e3a744ef8069d45733c06b7a2681905c3eab55
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951401"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338582"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
-Belirtilen kayan nokta değerini bir tamsayıya yuvarlar ve bu değeri kayan noktalı bir biçimde döndürür.
+Belirtilen kayan nokta değerini bir tamsayıya yuvarlar ve bu değeri kayan nokta biçiminde döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,36 +63,38 @@ long double nearbyint( long double x ); //C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, [fegetround](fegetround-fesetround2.md)tarafından bildirilen geçerli yuvarlama biçimini kullanarak *x*döndürür ve en yakın tamsayıya yuvarlanır. Aksi takdirde, işlev aşağıdaki değerlerden birini döndürebilir:
+Başarılı olursa, [fegetround](fegetround-fesetround2.md)tarafından bildirilen geçerli yuvarlama biçimini kullanarak, en yakın tümseci yuvarlatılmış *x*döndürür. Aksi takdirde, işlev aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|döndürülmesini|
+|Sorun|Dönüş|
 |-----------|------------|
-|*x* = ± Infinity|± INFINITY, değiştirilmemiş|
-|*x* = ±0|± 0, değiştirilmemiş|
-|*x* = Nan|NaN|
+|*x* = ±SONSUZLUK|±INFINITY, değiştirilmemiş|
+|*x* = ±0|±0, değiştirilmemiş|
+|*x* = NaN|NaN|
 
-Hatalar [_matherr](matherr.md); aracılığıyla bildirilmedi Özellikle, bu işlev **FE_INEXACT** özel durumlarını raporlamaz.
+Hatalar [_matherr](matherr.md)yoluyla bildirilmemiştir; özellikle, bu işlev herhangi **bir FE_INEXACT** özel durum bildirmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev ve [rint](rint-rintf-rintl.md) arasındaki birincil fark, bu işlevin kayan nokta özel durumunu yükseltmediğinden emin değildir.
+Bu işlev ve [rint](rint-rintf-rintl.md) arasındaki birincil fark, bu işlevin tam olarak kayan nokta özel durum yükseltmemesidir.
 
-En büyük kayan nokta değerleri tam tamsayılar olduğundan, bu işlev kendi kendine hiçbir şekilde taşmayacaktır; Bunun yerine, çıktı, kullandığınız işlevin sürümüne bağlı olarak dönüş değerini taşrabilir.
+Maksimum kayan nokta değerleri tam tamsayılar olduğundan, bu işlev asla tek başına taşmaz; bunun yerine, çıktı kullandığınız işlevin hangi sürümüne bağlı olarak iade değerini taşabilir.
 
-C++aşırı yüklemeye izin verir, bu sayede **float** veya **Long** **Double** parametreleri alan ve **döndüren bir daha** fazla. C **programında, her** zaman iki çift değer alır ve bir Double değeri döndürür.
+C++ aşırı yüklemeye izin verir, böylece **float** veya **uzun** **çift** parametreleri alıp geri döndüren aşırı yakın **tarak** ları arayabilirsiniz. C programında, **yakındaki her** zaman iki çift değer alır ve bir çift değer döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|bir **tamsayı**, bir tam açıklama, bir **intf**, **yaklaştığında**|\<Math. h >|\<cmath > veya \<Math. h >|
+|**nearbyint**, **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> \<veya math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,8 +1,9 @@
 ---
 title: _lfind_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _lfind_s
+- _o__lfind_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +32,16 @@ helpviewer_keywords:
 - searching, linear
 - _lfind_s function
 ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
-ms.openlocfilehash: 69db97dc24b567714bda3e02f5f53ff381ae4911
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8f2983bee93c623eb936ed12422134281418076b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953447"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81342181"
 ---
 # <a name="_lfind_s"></a>_lfind_s
 
-Belirtilen anahtar için doğrusal bir arama gerçekleştirir. [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_lfind](lfind.md) 'ın bir sürümü.
+Belirtilen anahtar için doğrusal arama yapar. [CRT](../../c-runtime-library/security-features-in-the-crt.md)Güvenlik Özellikleri açıklandığı gibi güvenlik geliştirmeleri ile [_lfind](lfind.md) bir sürümü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,48 +62,50 @@ void *_lfind_s(
 Aranacak nesne.
 
 *base*<br/>
-Arama verileri tabanı işaretçisi.
+Arama verilerinin tabanına işaretçi.
 
-*sayısından*<br/>
+*number*<br/>
 Dizi öğelerinin sayısı.
 
-*boyutla*<br/>
-Dizi öğelerinin bayt cinsinden boyutu.
+*Boyutu*<br/>
+Baytlar dizi elemanlarının boyutu.
 
-*Karşılaştır*<br/>
-Karşılaştırma yordamının işaretçisi. İlk parametre *bağlam* işaretçisidir. İkinci parametre, arama için bir tuşa işaretçidir. Üçüncü parametre, anahtar ile Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
+*Karşılaştırmak*<br/>
+Karşılaştırma yordamı için işaretçi. İlk parametre *bağlam* işaretçisidir. İkinci parametre arama için anahtar için bir işaretçidir. Üçüncü parametre, anahtarla karşılaştırıldığında dizi öğesiiçin bir işaretçidir.
 
-*bağlam*<br/>
-Karşılaştırma işlevinde erişilebilir olabilecek bir nesne işaretçisi.
+*Bağlam*<br/>
+Karşılaştırma işlevinde erişilebilen bir nesneye işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa, **_lfind_s** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa, **_Lfind_s** **null**döndürür.
+Anahtar bulunursa, **_lfind_s** *anahtarla*eşleşen *tabandaki* dizi öğesine bir işaretçi döndürür. Anahtar bulunamazsa, **_lfind_s** **NULL döndürür.**
 
-İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
+Geçersiz parametreler işleve aktarılırsa, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev **NULL**döndürür.
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|anahtar|taban|compare|numaraları|size|errno|
+|anahtar|base|compare|sayı|size|Errno|
 |---------|----------|-------------|---------|----------|-----------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|!= 0|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|sıfır|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|Kızılötesi|Kaydedilmemiş|**EINVAL**|
+|**Null**|herhangi bir|herhangi bir|herhangi bir|herhangi bir|**Eınval**|
+|herhangi bir|**Null**|herhangi bir|!= 0|herhangi bir|**Eınval**|
+|herhangi bir|herhangi bir|herhangi bir|herhangi bir|sıfır|**Eınval**|
+|herhangi bir|herhangi bir|**Null**|a|herhangi bir|**Eınval**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lfind_s** işlevi, her bir *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch_s**aksine, **_lfind_s** öğesinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind_s** , arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır; *bağlam* işaretçisini ve işaretçileri her çağrıda iki dizi öğesine geçirme. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) veya 0 (öğeler özdeş) döndürür.
+**_lfind_s** işlevi, *her genişlik* baytı olan *bir dizi sayı* öğesindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **bsearch_s**aksine, **_lfind_s** dizi sıralanmış gerektirmez. *Temel* bağımsız değişken, aranacak dizi tabanına işaretçidir. *Karşılaştırma* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve sonra ilişkilerini belirten bir değer döndüren, kullanıcı tarafından sağlanan bir yordamın işaretçisidir. **_lfind_s,** her aramada *bağlam* işaretçisini ve işaretçileri iki dizi öğesine geçirerek, arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır. *Karşılaştırma* yordamı öğeleri karşılaştırmak gerekir sonra sıfırsız dönmek (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı anlamı).
 
-**_lfind_s** , karşılaştırma işlevinin bağımsız değişkenlerine ve işlevin parametre listesine *bağlam* işaretçisinin eklenmesi dışında **_lfind** ile benzerdir. Arama veri yapısı bir nesnenin parçasıysa ve *Compare* işlevinin nesnenin üyelerine erişmesi gerekiyorsa *bağlam* işaretçisi yararlı olabilir. *Compare* işlevi, void işaretçisini uygun nesne türüne ve bu nesnenin üyelerine ekleyebilir. *Bağlam* parametresinin eklenmesi, verileri *karşılaştırma* işlevine uygun hale getirmek için statik değişkenlerin kullanımıyla ilişkili hataların yeniden giriş oluşmasını önlemek için **_lfind_s** daha güvenli hale getirir.
+**_lfind_s,** karşılaştırma işlevinin bağımsız değişkenlerine bağlam *işaretçisinin* eklenmesi ve işlevin parametre listesi dışında **_lfind** benzer. Aranan veri yapısı bir nesnenin parçasıysa ve *karşılaştırma* işlevinin nesnenin üyelerine erişmesi gerekiyorsa *bağlam* işaretçisi yararlı olabilir. *Karşılaştırma* işlevi, geçersiz işaretçiyi uygun nesne türüne ve bu nesnenin üyelerine erişebilir. *Bağlam* parametresinin **eklenmesi,** verileri *karşılaştırma* işlevinde kullanılabilir hale getirmek için statik değişkenlerin kullanılmasıyla ilişkili yeniden canlandırma hatalarını önlemek için ek bağlam kullanılabildiği için _lfind_s daha güvenli hale getirir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lfind_s**|\<Search. h >|
+|**_lfind_s**|\<search.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

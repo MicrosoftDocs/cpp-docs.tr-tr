@@ -1,5 +1,5 @@
 ---
-title: Iserviceproviderımpl sınıfı
+title: IServiceProviderImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IServiceProviderImpl
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - IServiceProviderImpl class
 - IServiceProvider interface, ATL implementation
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-ms.openlocfilehash: e52c28d528e187713d2d0925fed23bd8cd4493d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ef0ee4f77441cb8d19ea2d6dcada1fed9faf2782
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329424"
 ---
-# <a name="iserviceproviderimpl-class"></a>Iserviceproviderımpl sınıfı
+# <a name="iserviceproviderimpl-class"></a>IServiceProviderImpl Sınıfı
 
-Bu sınıfın bir varsayılan uygulamayı sağlar `IServiceProvider` arabirimi.
+Bu `IServiceProvider` sınıf, arabirimin varsayılan bir uygulamasını sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,25 +30,25 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız, türetilen `IServiceProviderImpl`.
+Sınıfınızdan `IServiceProviderImpl`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IServiceProviderImpl::QueryService](#queryservice)|Oluşturur veya belirtilen hizmete erişen ve hizmet için belirtilen arabirim için bir arabirim işaretçisini döndürür.|
+|[IServiceProviderImpl::QueryService](#queryservice)|Belirtilen hizmeti oluşturur veya erişir ve bir arabirim işaretçisini hizmet için belirtilen arabirime döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IServiceProvider` Arabirimi GUID'sine tarafından belirtilen bir hizmeti bulur ve hizmette istenen arabirim için arabirim işaretçisini döndürür. Sınıf `IServiceProviderImpl` bu arabirimin bir varsayılan uygulamasını sağlar.
+Arabirim, `IServiceProvider` GUID tarafından belirtilen bir hizmeti bulur ve hizmette istenen arabirim için arabirim işaretçisini döndürür. Sınıf `IServiceProviderImpl` bu arabirimin varsayılan uygulamasını sağlar.
 
-`IServiceProviderImpl` bir yöntem belirtir: [QueryService](#queryservice), oluşturan veya belirtilen hizmete erişen ve hizmet için belirtilen arabirim için bir arabirim işaretçisini döndürür.
+`IServiceProviderImpl`bir yöntem belirtir: [QueryService](#queryservice), belirtilen hizmeti oluşturur veya erişir ve hizmet için belirtilen arabirime bir arabirim işaretçisi döndürür.
 
-`IServiceProviderImpl` ile başlayarak, bir hizmet eşlemesini kullanır [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) ve ile biten [END_SERVICE_MAP](service-map-macros.md#end_service_map).
+`IServiceProviderImpl`[BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) başlayıp [END_SERVICE_MAP](service-map-macros.md#end_service_map)ile biten bir hizmet haritası kullanır.
 
-Hizmet eşlemesi, iki giriş içerir: [SERVICE_ENTRY](service-map-macros.md#service_entry), nesne tarafından desteklenen bir belirtilen hizmet kimliği (SID) belirtir ve [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), çağıran `QueryService` zincirdeki başka bir nesne.
+Hizmet eşlemi iki giriş içerir: nesne tarafından desteklenen belirli bir hizmet id'sini `QueryService` (SID) gösteren [SERVICE_ENTRY](service-map-macros.md#service_entry)ve başka bir nesneye zincirleme çağıran [SERVICE_ENTRY_CHAIN.](service-map-macros.md#service_entry_chain)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -60,9 +60,9 @@ Hizmet eşlemesi, iki giriş içerir: [SERVICE_ENTRY](service-map-macros.md#serv
 
 **Başlık:** atlcom.h
 
-##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService
+## <a name="iserviceproviderimplqueryservice"></a><a name="queryservice"></a>IServiceProviderImpl::QueryService
 
-Oluşturur veya belirtilen hizmete erişen ve hizmet için belirtilen arabirim için bir arabirim işaretçisini döndürür.
+Belirtilen hizmeti oluşturur veya erişir ve bir arabirim işaretçisini hizmet için belirtilen arabirime döndürür.
 
 ```
 STDMETHOD(QueryService)(
@@ -74,42 +74,42 @@ STDMETHOD(QueryService)(
 ### <a name="parameters"></a>Parametreler
 
 *guidService*<br/>
-[in] Hizmet tanımlayıcısı (SID) yönelik işaretçi.
+[içinde] Bir hizmet tanımlayıcısı (SID) için işaretçi.
 
-*riid*<br/>
-[in] Arayan erişim elde etmek için arabirim tanımlayıcısı.
+*Riid*<br/>
+[içinde] Arayanın erişilen arabirimin tanımlayıcısı.
 
 *ppvObj*<br/>
-[out] Dolaylı istenen arabirim işaretçisi.
+[çıkış] İstenen arabirime dolaylı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürülen HRESULT değerini aşağıdakilerden biridir:
+Döndürülen HRESULT değeri aşağıdakilerden biridir:
 
-|Dönüş değeri|Açıklama|
+|Döndürülen değer|Anlamı|
 |------------------|-------------|
-|S_OK|Hizmet başarıyla oluşturuldu veya alınır.|
-|E_INVALIDARG|Bir veya daha fazla bağımsız değişken geçersiz.|
-|E_OUTOFMEMORY|Bir hizmet oluşturmak bellek yetersiz.|
-|E_UNEXPECTED|Bilinmeyen bir hata oluştu.|
-|E_NOINTERFACE|İstenen arabirim bu hizmetin bir parçası değil veya bilinmeyen bir hizmettir.|
+|S_OK|Hizmet başarıyla oluşturuldu veya alındı.|
+|E_ınvalıdarg|Bağımsız değişkenlerden biri veya birkaçı geçersizdir.|
+|E_outofmemory|Bellek hizmeti oluşturmak için yetersizdir.|
+|E_unexpected|Bilinmeyen bir hata oluştu.|
+|E_noınterface|İstenen arabirim bu hizmetin bir parçası değildir veya hizmet bilinmiyor.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`QueryService` Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Artık gerekli olmadığında, bu işaretçi serbest bırakma için çağıran sorumludur.
+`QueryService`belirtilen hizmette istenen arabirime dolaylı bir işaretçi döndürür. Arayan, artık gerekli olmadığında bu işaretçiyi serbest bırakmakla yükümlüdür.
 
-Çağırdığınızda `QueryService`, geçirdiğiniz her iki hizmet tanımlayıcısı (*guidService*) ve bir arabirim tanımlayıcısı (*riid*). *GuidService* erişim, istediğiniz hizmet belirtir ve *riid* hizmetin bir parçası olan bir arabirim tanımlar. Buna karşılık, dolaylı bir arabirim işaretçisi alır.
+`QueryService`Aradığınızda, hem bir hizmet tanımlayıcısı *(guidService)* hem de bir arayüz tanımlayıcısını *(riid)* geçersiniz. *GuidService,* erişmek istediğiniz hizmeti belirtir ve *riid* hizmetin bir parçası olan bir arabirimi tanımlar. Karşılığında, arabirime dolaylı bir işaretçi alırsınız.
 
-Arabirimini uygulayan nesnenin ayrıca diğer hizmetleri arabirimleri uygulayabilir. Aşağıdakileri göz önünde bulundurun:
+Arabirimi uygulayan nesne, diğer hizmetlerin parçası olan arabirimleri de uygulayabilir. Aşağıdaki topluluklara bir göz atın:
 
-- Bu arabirimlerin bazıları, isteğe bağlı olabilir. Hizmet açıklamasında tanımlanan tüm arabirimleri mutlaka hizmetinin her bir uygulama ya da her döndürülen nesne yok.
+- Bu arabirimlerden bazıları isteğe bağlı olabilir. Hizmet açıklamasında tanımlanan tüm arabirimler, hizmetin her uygulamasında veya döndürülen her nesnede mutlaka bulunmaz.
 
-- Çağrıları aksine `QueryInterface`, farklı hizmet tanımlayıcısı geçirme mutlaka gelmez farklı bir Bileşen Nesne Modeli (COM) nesne döndürülür.
+- Farklı bir `QueryInterface`hizmet tanımlayıcısı geçen aramalar aksine mutlaka farklı bir Bileşen Nesne Modeli (COM) nesne döndürülür anlamına gelmez.
 
-- Döndürülen nesne hizmet tanımının bir parçası olmayan ek arabirimleri olabilir.
+- Döndürülen nesne, hizmet tanımının bir parçası olmayan ek arabirimlere sahip olabilir.
 
-Hiçbir şey iki hizmet arasında ortak arabiriminin uygulamasını sahip olsanız bile SID_SMyService ve SID_SYourService, gibi iki farklı hizmet her ikisi de aynı arabirimi kullanımını belirtebilirsiniz. Bu, çalışır çünkü bir çağrı `QueryService` (SID_SMyService, IID_IDispatch) değerinden farklı bir nesne döndürebilir `QueryService` (SID_SYourService, IID_IDispatch). Farklı hizmet tanımlayıcısı belirttiğinizde nesne kimliğini kabul değil.
+arabirimin uygulanması iki hizmet arasında ortak bir şey olmayabilir olsa da, SID_SMyService ve SID_SYourService gibi iki farklı hizmet, her ikisi de aynı arabirimin kullanımını belirtebilir. (SID_SMyService, IID_IDispatch) `QueryService` için yapılan bir çağrı (SID_SYourService, `QueryService` IID_IDispatch) farklı bir nesne döndürebileceğinden, bu işe yarar. Farklı bir hizmet tanımlayıcısı belirttiğinizde nesne kimliği kabul edilmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

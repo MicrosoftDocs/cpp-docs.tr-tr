@@ -1,8 +1,9 @@
 ---
 title: _get_wpgmptr
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _get_wpgmptr
+- _o__get_wpgmptr
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +30,16 @@ helpviewer_keywords:
 - wpgmptr global variable
 - _get_wpgmptr function
 ms.assetid: a77cdd13-2303-4b7c-9a60-8debdbef2011
-ms.openlocfilehash: 0cd2dc9c2f82d3dc49a17dc438157233c50b3261
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1e54d3dbdc837c491f5b39d33a9b8197094ac60b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955567"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344860"
 ---
 # <a name="_get_wpgmptr"></a>_get_wpgmptr
 
-**_Wpgmptr** genel değişkeninin geçerli değerini alır.
+**_wpgmptr** global değişkenin geçerli değerini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,24 +51,26 @@ errno_t _get_wpgmptr(
 
 ### <a name="parameters"></a>Parametreler
 
-*pValue*<br/>
-**_Wpgmptr** değişkeninin geçerli değeriyle doldurulacak bir dizeye yönelik işaretçi.
+*pDeğer*<br/>
+**_wpgmptr** değişkeninin geçerli değeriyle doldurulacak bir dize işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+Başarılı olursa sıfır döndürür; hata bir hata kodu. *pValue* **NULL**ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca, **wmain ()** veya **wWinMain ()** gibi geniş bir giriş noktası varsa, yalnızca **_get_wpgmptr** çağrısı yapın. **_Wpgmptr** genel değişkeni, işlemle ilişkili yürütülebilir dosyanın tam yolunu geniş karakterli bir dize olarak içerir. Daha fazla bilgi için bkz. [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
+Yalnızca **_get_wpgmptr'ı** arayın, programınızda **wmain() veya wWinMain()** gibi geniş bir giriş noktası varsa. **wWinMain()** **_wpgmptr** genel değişkeni, geniş karakterli bir dize olarak işlemle ilişkili yürütülebilir yol içerir. Daha fazla bilgi için [_pgmptr _wpgmptr.](../../c-runtime-library/pgmptr-wpgmptr.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_wpgmptr**|\<Stdlib. h >|
+|**_get_wpgmptr**|\<stdlib.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

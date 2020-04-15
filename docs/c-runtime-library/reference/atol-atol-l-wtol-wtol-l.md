@@ -1,11 +1,15 @@
 ---
 title: atol, _atol_l, _wtol, _wtol_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - atol
 - _wtol_l
 - _wtol
 - _atol_l
+- _o__atol_l
+- _o__wtol
+- _o__wtol_l
+- _o_atol
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -46,16 +51,16 @@ helpviewer_keywords:
 - wtol function
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-ms.openlocfilehash: 04a2951a48e6dd2c3820551e0fc603ad4ed81086
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 30f8375814259cac8c3d7216c636b69acbc7e90a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943589"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348751"
 ---
 # <a name="atol-_atol_l-_wtol-_wtol_l"></a>atol, _atol_l, _wtol, _wtol_l
 
-Bir dizeyi uzun tamsayıya Dönüştür.
+Bir dizeyi uzun bir tamsayıya dönüştürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,51 +83,53 @@ long _wtol_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Dönüştürülecek dize.
+*Str*<br/>
+Dize dönüştürülecek.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **uzun** değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri **Atol** Için 0l olur.
+Her işlev, giriş karakterlerini bir sayı olarak yorumlayarak üretilen **uzun** değeri döndürür. Giriş bu tür bir değere dönüştürülemiyorsa, dönüş değeri **atol** için 0L'dir.
 
-Büyük pozitif tamsayı değerleriyle taşma durumunda, **Atol** , **LONG_MAX**döndürür. büyük negatif tamsayı değerleriyle taşma durumunda **LONG_MIN** döndürülür. Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+Büyük pozitif integral değerleri ile taşma durumunda, **atol** **LONG_MAX**döner; büyük negatif integral değerleri ile taşma durumunda, **LONG_MIN** döndürülür. Tüm kapsama alanı dışı durumlarda, **errno** **ERANGE**olarak ayarlanır. Geçirilen parametre **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** **için errno** ayarlayın ve 0 döndürün.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir karakter dizesini uzun tamsayı değerine (**Atol**) dönüştürür.
+Bu işlevler bir karakter dizesini uzun bir tamsayı değerine **(atol)** dönüştürür.
 
-Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
+Giriş dizesi, belirtilen türün sayısal değeri olarak yorumlanabilecek bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterdeki giriş dizesini okumayı durdurur. Bu karakter, dizeyi sonlayan null karakter ('\0' veya L'\0') olabilir.
 
-**Atol** 'nin *Str* bağımsız değişkeni aşağıdaki biçimdedir:
+**Atol** için *str* argümanaşağıdaki formu vardır:
 
-> [*boşluk*] [*imzala*] [*basamaklar*]]
+> [*beyazuzay*] [*işaret*] [*basamak ]]*
 
-*Boşluk* , yoksayılan boşluk veya sekme karakterlerinden oluşur; *imza* artı (+) veya eksi (-); ve *rakamlar* bir veya daha fazla basamaktan oluşur.
+Bir *boşluk,* yoksayılan boşluk veya sekme karakterlerinden oluşur; *işareti* artı (+) veya eksi (-); ve *basamaklar* bir veya daha fazla basamakvardır.
 
-**_wtol** , çok büyük bir karakter dizesi alan hariç **Atol** ile aynıdır.
+**_wtol** geniş bir karakter dize alır dışında **atol** aynıdır.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Bu işlevlerin **_l** soneki olan sürümleri, geçerli yerel alan yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tstol**|**Atol**|**Atol**|**_wtol**|
 |**_ttol**|**Atol**|**Atol**|**_wtol**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Çalıştırmasını|Gerekli başlık|
+|Rutin|Gerekli başlık|
 |--------------|---------------------|
-|**Atol**|\<Stdlib. h >|
-|**_atol_l**, **_wtol**, **_wtol_l**|\<Stdlib. h > ve \<wchar. h >|
+|**Atol**|\<stdlib.h>|
+|**_atol_l**, **_wtol**, **_wtol_l**|\<stdlib.h> \<ve wchar.h>|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dizeler olarak depolanan sayıların, **Atol** işlevi kullanılarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
+Bu program, dizeleri olarak depolanan sayıların **atol** işlevini kullanarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
 
 ```C
 // crt_atol.c
@@ -173,7 +180,7 @@ Overflow condition occurred.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

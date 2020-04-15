@@ -1,9 +1,11 @@
 ---
 title: fputs, fputws
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - fputs
 - fputws
+- _o_fputs
+- _o_fputws
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - fputs function
 - fputts function
 ms.assetid: d48c82b8-aa17-4830-8c7d-30442ddbb326
-ms.openlocfilehash: 7470901fda72e74caea12758bed4f23fcc087a33
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0a6ac7770e88975a60e1e4aef522dddf901206fb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346210"
 ---
 # <a name="fputs-fputws"></a>fputs, fputws
 
-Akışa bir dize yazar.
+Bir akışa dize yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,38 +60,40 @@ int fputws(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
+*Str*<br/>
 Çıkış dizesi.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarılı olursa negatif olmayan bir değer döndürür. Bir hatada, **ffıler** ve **fputws** , **EOF**döndürür. *Str* veya *Stream* null bir işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **sonra da** , **fputws** , **fıof**öğesini döndürür.
+Bu işlevlerin her biri başarılı olursa negatif olmayan bir değer döndürür. Bir hata **da,** **fputw'lar ve fputw'lar** **EOF'yi**döndürer. *Str* veya *akış* null işaretçisi ise, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütme devam etmesine izin verilirse, bu işlevler **EINVAL** **için errno** ayarlamak ve daha sonra **fputs** **EOF**döndürür ve **fputws** **WEOF**döndürür.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
+Bunlar ve diğer hata kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri *Str* geçerli konumdaki çıkış *akışına* kopyalar. **fputws** , geniş karakterli bağımsız değişken *Str* 'yi çok baytlı bir karakter dizesi olarak *akışa* veya bir geniş karakterli dizeyi sırasıyla metin modunda veya ikili *modda açılıp açılmayacağı şekilde* kopyalar. Ne işlevi, Sonlandırıcı null karakterini kopyalar.
+Bu işlevlerin her biri geçerli konumda çıkış *akışına* *str* kopyaları. **fputws,** *akış* metin modunda mı yoksa ikili modda mı açıldığına göre geniş karakterli bağımsız *değişkeni* çok bayt lı bir dize veya geniş karakter lisi dizesi olarak *akışa* kopyalar. Her iki işlev de sonlandırıcı null karakterini kopyalar.
 
-Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **fler** Şu anda bir UNICODE akışına çıktıyı desteklemez.
+Akış ANSI modunda açıldığında iki işlev aynı şekilde çalışır. **fputs** şu anda bir UNICODE akışına çıktı yı desteklemez.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_fputts**|**fkoyar**|**fkoyar**|**fputws**|
+|**_fputts**|**fputs**|**fputs**|**fputws**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fkoyar**|\<stdio. h >|
-|**fputws**|\<stdio. h > veya \<wchar. h >|
+|**fputs**|\<stdio.h>|
+|**fputws**|\<stdio.h> \<veya wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol, Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Konsolla ilişkili standart akış kolları**stdin,** **stdout**ve **stderr,** C çalışma zamanı işlevleri UWP uygulamalarında kullanamadan önce yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -111,7 +116,7 @@ Hello world from fputs.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [puts, _putws](puts-putws.md)<br/>

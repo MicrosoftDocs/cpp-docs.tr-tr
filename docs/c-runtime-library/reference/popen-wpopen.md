@@ -1,10 +1,12 @@
 ---
 title: _popen, _wpopen
-description: Microsoft C Runtime (CRT) kitaplık işlevlerine yönelik bir başvuru _popen ve _wpopen.
-ms.date: 01/28/2020
+description: Microsoft C çalışma zamanı (CRT) kitaplığı işlevleri _popen için bir başvuru ve. _wpopen
+ms.date: 4/2/2020
 api_name:
 - _popen
 - _wpopen
+- _o__popen
+- _o__wpopen
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -46,19 +49,19 @@ no-loc:
 - _sys_errlist
 - _sys_nerr
 - EINVAL
-ms.openlocfilehash: 68531256fd688b50b659c885635ffa17d17773a5
-ms.sourcegitcommit: 684181561490e0d1955cf601d222f67f09af6d00
+ms.openlocfilehash: 5b478893ef8f201f39cb63ecfc7ab174d16b86de
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894326"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338510"
 ---
 # <a name="_popen-_wpopen"></a>_popen, _wpopen
 
-Bir kanal oluşturur ve bir komut yürütür.
+Bir boru oluşturur ve bir komut yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,33 +78,35 @@ FILE *_wpopen(
 
 ### <a name="parameters"></a>Parametreler
 
-*komut*\
-Yürütülecek komut.
+*Komut*\
+İdam edilecek komut.
 
-*mod*\
+*Modu*\
 Döndürülen akışın modu.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Oluşturulan kanalın bir sonuyla ilişkili bir akış döndürür. Kanalın diğer ucu, oluşturulan komutun standart girişi veya standart çıkışıyla ilişkilendirilir. İşlevler bir hata üzerinde **null değeri** döndürür. Hata geçersiz bir parametre nedeniyle kaynaklanıyorsa, **errno** , **EINVAL**olarak ayarlanır. Geçerli modlar için açıklamalar bölümüne bakın.
+Oluşturulan borunun bir ucuyla ilişkili bir akışı döndürür. Borunun diğer ucu, oluşturulan komutun standart girişi veya standart çıktısıyla ilişkilidir. İşlevler bir hata da **NULL** döndürdü. Hata geçersiz bir parametreden kaynaklanıyorsa, **errno** **EINVAL**olarak ayarlanır. Geçerli modlar için Açıklamalar bölümüne bakın.
 
-Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Popen** işlevi bir kanal oluşturur. Ardından komut işlemcisinin üretilmiş bir kopyasını zaman uyumsuz olarak yürütür ve komut satırı olarak *komutunu* kullanır. Karakter dizesi *modu* , istenen erişim türünü aşağıdaki gibi belirtir.
+**_popen** işlevi bir boru oluşturur. Daha sonra eş senkronize komut işlemcisinin yumurtlanmış bir kopyasını yürütür ve komut satırı olarak *komutu* kullanır. Karakter dize *modu* aşağıdaki gibi istenen erişim türünü belirtir.
 
 |Erişim modu|Açıklama|
 |-|-|
-|**"r"**|Çağıran işlem, döndürülen akışı kullanarak, oluşturulan komutun standart çıkışını okuyabilir.|
-|**"w"**|Çağıran işlem, döndürülen akışı kullanarak, oluşturulan komutun standart girişine yazabilir.|
+|**"r"**|Arama işlemi, döndürülen akışı kullanarak oluşturulan komutun standart çıktısını okuyabilir.|
+|**"w"**|Arama işlemi, döndürülen akışı kullanarak oluşturulan komutun standart girişine yazılabilir.|
 |**"b"**|İkili modda açın.|
-|**şı**|Metin modunda açın.|
+|**"t"**|Metin modunda açın.|
 
 > [!NOTE]
-> Bir Windows programında kullanılırsa, **_popen** işlevi programın süresiz olarak yanıt vermemesine neden olan geçersiz bir dosya işaretçisi döndürür. **_popen** bir konsol uygulamasında düzgün şekilde çalışmaktadır. Girişi ve çıktıyı yeniden yönlendiren bir Windows uygulaması oluşturmak için, bkz. Windows SDK [yeniden yönlendirilen giriş ve çıkışlarla bir alt Işlem oluşturma](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) .
+> Bir Windows programında kullanılırsa, **_popen** işlevi, programın süresiz yanıt vermeyi durdurmasına neden olan geçersiz bir dosya işaretçisi döndürür. **_popen** konsol uygulamasında düzgün çalışır. Giriş ve çıktıyı yeniden yönlendiren bir Windows uygulaması oluşturmak için [bkz.](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output)
 
-**_wpopen** , **_popen**geniş karakterli bir sürümüdür; _wpopen *yol* bağımsız değişkeni , geniş karakterli bir dizedir. **_wpopen** ve **_popen** aynı şekilde davranır.
+**_wpopen** **_popen**geniş karakterli bir versiyonudur; **_wpopen** *yol* bağımsız değişkeni geniş karakterli bir dizedir. **_wpopen** ve **_popen** aynı şekilde davranan.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -113,14 +118,14 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_popen**|\<stdio. h >|
-|**_wpopen**|\<stdio. h > veya \<wchar. h >|
+|**_popen**|\<stdio.h>|
+|**_wpopen**|\<stdio.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -166,7 +171,7 @@ int main( void )
 }
 ```
 
-Bu çıktı, geçerli dizinde `.c` dosya adı uzantısına sahip yalnızca bir dosya olduğunu varsayar.
+Bu çıktı, geçerli dizinde dosya adı uzantısı olan `.c` yalnızca bir dosya olduğunu varsayar.
 
 ```Output
 Volume in drive C is CDRIVE
@@ -183,6 +188,6 @@ Process returned 0
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)\
+[Süreç ve çevre kontrolü](../../c-runtime-library/process-and-environment-control.md)\
 [_pclose](pclose.md)\
 [_pipe](pipe.md)
