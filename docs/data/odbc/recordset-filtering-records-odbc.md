@@ -8,28 +8,28 @@ helpviewer_keywords:
 - ODBC recordsets [C++], filtering records
 - filters [C++], recordset object
 ms.assetid: 5c075f37-c837-464d-90c1-d028a9d1c175
-ms.openlocfilehash: 2e742ee02e142fd87df3f149379d9971c4acd166
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 56b8c4f52ec294f58a760e1309d32aa81286ddec
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212920"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367011"
 ---
 # <a name="recordset-filtering-records-odbc"></a>Kayıt Kümesi: Kayıtları Filtreleme (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konu başlığı altında, kullanılabilir kayıtların yalnızca belirli bir alt kümesini seçecek şekilde bir kayıt kümesinin nasıl filtreleneceği açıklanmaktadır. Örneğin, MATH101 gibi belirli bir kurs için yalnızca sınıf bölümleri seçmek isteyebilirsiniz. Filtre, bir SQL **WHERE** yan tümcesinin içeriğiyle tanımlanan bir arama durumudur. Framework onu kayıt kümesinin SQL ifadesine eklerse **WHERE** yan tümcesi seçimi kısıtlar.
+Bu konu, kullanılabilir kayıtların yalnızca belirli bir alt kümesini seçerek bir kayıt kümesinin nasıl filtre uygulandığını açıklar. Örneğin, MATH101 gibi belirli bir kursun yalnızca sınıf bölümlerini seçmek isteyebilirsiniz. Filtre, SQL **WHERE** yan tümcesinin içeriğiyle tanımlanan bir arama koşuludur. Çerçeve, kaydedici nin SQL deyimine eklendiğinde, **WHERE** yan tümcesi seçimi kısıtlar.
 
-Nesnesini oluşturduktan sonra, ancak `Open` üye işlevini çağırmadan önce bir kayıt kümesi nesnesinin filtresini oluşturmanız gerekir (veya daha önce `Open` üye işlevi çağrılan mevcut bir kayıt kümesi nesnesi için `Requery` üye işlevini çağırmadan önce).
+Nesneyi oluşturduktan sonra ancak `Open` üye işlevini çağırmadan önce (veya `Requery` `Open` üye işlevi daha önce çağrılan varolan bir kayıt kümesi nesnesi için üye işlevi çağırmadan önce) bir kayıt kümesi nesnesinin filtresini oluşturmanız gerekir.
 
-#### <a name="to-specify-a-filter-for-a-recordset-object"></a>Bir kayıt kümesi nesnesi için filtre belirtmek için
+#### <a name="to-specify-a-filter-for-a-recordset-object"></a>Kayıt kümesi nesnesi için filtre belirtmek için
 
-1. Yeni bir kayıt kümesi nesnesi oluşturun (veya var olan bir nesne için `Requery` çağırmayı hazırlayın).
+1. Yeni bir kayıt kümesi nesnesi `Requery` oluşturma (veya varolan bir nesneyi aramaya hazırlanın).
 
 1. Nesnenin [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) veri üyesinin değerini ayarlayın.
 
-   Filtre, SQL **WHERE** yan tümcesinin içeriğini içeren, ancak **WHERE**anahtar sözcüğünü içermeyen null ile sonlandırılmış bir dizedir. Örneğin, aşağıdakileri kullanın:
+   Filtre, SQL **WHERE** yan tümcesinin içeriğini içeren, ancak **WHERE**anahtar kelimesini içermeyen null-sonlandırılmış bir dizedir. Örneğin, aşağıdakileri kullanın:
 
     ```
     m_pSet->m_strFilter = "CourseID = 'MATH101'";
@@ -42,19 +42,19 @@ Nesnesini oluşturduktan sonra, ancak `Open` üye işlevini çağırmadan önce 
     ```
 
     > [!NOTE]
-    >  "MATH101" değişmez dize, yukarıdaki tek tırnak işaretleriyle birlikte gösterilir. ODBC SQL belirtiminde, tek tırnak işareti bir karakter dizesi sabit değerini göstermek için kullanılır. Bu durumda DBMS 'nizin tırnak içine alma gereksinimleri için ODBC sürücüsü belgelerinize bakın. Bu söz dizimi Ayrıca bu konunun sonunda daha da ele alınmıştır.
+    >  "MATH101" dizeleri yukarıdaki tek tırnak işaretleri ile gösterilir. ODBC SQL belirtiminde, tek tırnak bir karakter dizesini harfiharfini belirtmek için kullanılır. Bu durumda DBMS'nizin teklif gereksinimleri için ODBC sürücü belgelerinizi kontrol edin. Bu sözdizimi de bu konunun sonuna yakın daha fazla ele alınmıştır.
 
-1. Sıralama düzeni, kilitleme modu veya parametreler gibi, ihtiyacınız olan diğer seçenekleri ayarlayın. Bir parametre belirtilmesi özellikle yararlıdır. Filtrenizi parametreleştiriyor hakkında daha fazla bilgi için bkz. [Recordset: bir kayıt kümesini Parametreleme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+1. Sıralama sırası, kilitleme modu veya parametreler gibi ihtiyacınız olan diğer seçenekleri ayarlayın. Bir parametre belirtme özellikle yararlıdır. Filtrenizi parametreleme hakkında bilgi için bkz: [Kayıt Kümesi: Bir Kayıt Kümesini Parametreleme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-1. Yeni nesne için `Open` çağırın (veya daha önce açılmış bir nesne için `Requery`).
-
-> [!TIP]
->  Filtreinizdeki parametrelerin kullanılması, kayıtları almak için büyük olasılıkla en verimli yöntemdir.
+1. Yeni `Open` nesneyi (veya `Requery` daha önce açılmış bir nesne için) arayın.
 
 > [!TIP]
->  Kayıt kümesi filtreleri, tabloları [birleştirmek](../../data/odbc/recordset-performing-a-join-odbc.md) ve çalışma zamanında alınan veya hesaplanan bilgilere göre [parametreleri](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) kullanmak için faydalıdır.
+> Filtrenizde parametreleri kullanmak, kayıtları almak için potansiyel olarak en etkili yöntemdir.
 
-Kayıt kümesi yalnızca belirttiğiniz arama koşulunu karşılayan kayıtları seçer. Örneğin, yukarıda açıklanan kurs filtresini belirtmek için (örneğin, şu anda ayarlanmış bir `strCourseID` değişken olduğu varsayılarak, örneğin, "MATH101" olarak) şunları yapın:
+> [!TIP]
+> Recordset filtreleri [tablolara katılmak](../../data/odbc/recordset-performing-a-join-odbc.md) ve çalışma zamanında elde edilen veya hesaplanan bilgilere dayalı [parametreleri](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) kullanmak için yararlıdır.
+
+Kayıt kümesi yalnızca belirttiğiniz arama koşulunu karşılayan kayıtları seçer. Örneğin, yukarıda açıklanan ders filtresini belirtmek `strCourseID` için (örneğin, "MATH101" için şu anda ayarlanmış bir değişken varsayarak), aşağıdakileri yapın:
 
 ```
 // Using the recordset pointed to by m_pSet
@@ -68,24 +68,24 @@ if ( m_pSet->Open( CRecordset::snapshot, NULL, CRecordset::readOnly ) )
 // Use the recordset
 ```
 
-Kayıt kümesi, MATH101 için tüm sınıf bölümlerine ait kayıtları içerir.
+Kayıt kümesi MATH101 için tüm sınıf bölümleriiçin kayıtları içerir.
 
-Yukarıdaki örnekte, bir dize değişkeni kullanılarak Filtre dizesinin nasıl ayarlandığı hakkında dikkat edin. Bu, tipik kullanımdır. Ancak kurs KIMLIĞI için 100 sabit değerini belirtmek istediğinizi varsayalım. Aşağıdaki kod, bir değişmez değerle Filtre dizesinin doğru şekilde nasıl ayarlanacağını gösterir:
+Filtre dizesinin bir dize değişkeni kullanarak yukarıdaki örnekte nasıl ayarlandığını öğrenin. Bu tipik bir kullanımdır. Ancak kurs kimliği için 100 değerini belirtmek istediğinizi varsayalım. Aşağıdaki kod, filtre dizesinin gerçek bir değerle nasıl doğru ayarlanır:
 
 ```
 m_strFilter = "StudentID = '100'";   // correct
 ```
 
-Tek tırnak karakterlerinin kullanımını aklınızda kullanın; Filtre dizesini doğrudan ayarlarsanız, filtre dizesi şu **değildir**:
+Tek tırnak karakterlerinin kullanımına dikkat edin; filtre dizesini doğrudan ayarlarsanız, filtre dizesi aşağıdaki gibi **değildir:**
 
 ```
 m_strFilter = "StudentID = 100";   // incorrect for some drivers
 ```
 
-Yukarıda gösterilen tırnak işareti ODBC belirtimine uyar, ancak bazı DBMS 'ler başka tırnak karakterleri gerektirebilir. Daha fazla bilgi için bkz. [SQL: kayıt KÜMENIZIN SQL Ifadesini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+Yukarıda gösterilen alıntı ODBC belirtimine uygundur, ancak bazı DBMS'ler başka alıntı karakterleri gerektirebilir. Daha fazla bilgi için [bkz: SQL: Recordset'inizin SQL Ekstresini (ODBC) özelleştirme.](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
 
 > [!NOTE]
->  Kendi SQL dizenizi `Open`geçirerek kayıt kümesinin varsayılan SQL dizesini geçersiz kılmayı tercih ederseniz, özel dizeniz **WHERE** yan tümcesi varsa bir filtre ayarlanmamalıdır. Varsayılan SQL 'i geçersiz kılma hakkında daha fazla bilgi için bkz. [SQL: kayıt KÜMENIZIN SQL Ifadesini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+> Kendi SQL dizenizi geçerek kayıt kümesinin varsayılan SQL dizesini geçersiz kılmayı `Open`seçerseniz, özel dizenizde **WHERE** yan tümcesi varsa filtre ayarlamamalısınız. Varsayılan SQL'i geçersiz kılma hakkında daha fazla bilgi için [bkz: SQL: Recordset'inizin SQL Ekstresini (ODBC) özelleştirme.](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonStatusBar sınıfı
+title: CMFCRibbonStatusBar Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonStatusBar
@@ -50,16 +50,16 @@ helpviewer_keywords:
 - CMFCRibbonStatusBar [MFC], SetInformation
 - CMFCRibbonStatusBar [MFC], OnDrawInformation
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
-ms.openlocfilehash: b927012f241c30b1beec23ff7e0bbc9e8302d8da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f76c2014cd3f6ed6e479fb66436224e675c69569
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296611"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368825"
 ---
-# <a name="cmfcribbonstatusbar-class"></a>CMFCRibbonStatusBar sınıfı
+# <a name="cmfcribbonstatusbar-class"></a>CMFCRibbonStatusBar Sınıfı
 
-`CMFCRibbonStatusBar` Sınıfı Şerit öğelerini görüntüleyebilen bir durum çubuğu denetimi uygular.
+Sınıf, `CMFCRibbonStatusBar` şerit öğelerini görüntüleyebilen bir durum çubuğu denetimi uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,72 +71,72 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonStatusBar::AddDynamicElement](#adddynamicelement)|Şerit durum çubuğuna dinamik bir öğe ekler.|
-|[CMFCRibbonStatusBar::AddElement](#addelement)|Şerit durum çubuğuna yeni bir Şerit öğesi ekler.|
-|[CMFCRibbonStatusBar::AddExtendedElement](#addextendedelement)|Şerit durum çubuğuna genişletilmiş bölgesine bir Şerit öğesi ekler.|
-|[CMFCRibbonStatusBar::AddSeparator](#addseparator)|Ayırıcı, Şerit durum çubuğuna ekler.|
-|[CMFCRibbonStatusBar::Create](#create)|Şerit durum çubuğuna oluşturur.|
-|[CMFCRibbonStatusBar::CreateEx](#createex)|Şerit durum çubuğuna bir genişletilmiş stili oluşturur.|
+|[CMFCRibbonStatusBar::AdddynamicElement](#adddynamicelement)|Şerit durum çubuğuna dinamik bir öğe ekler.|
+|[CMFCRibbonStatusBar::Addelement](#addelement)|Şerit durum çubuğuna yeni bir şerit öğesi ekler.|
+|[CMFCRibbonStatusBar::AddExtendedElement](#addextendedelement)|Şerit durum çubuğunun genişletilmiş alanına bir şerit öğesi ekler.|
+|[CMFCRibbonStatusBar::AddSeparator](#addseparator)|Şerit durum çubuğuna bir ayırıcı ekler.|
+|[CMFCRibbonStatusBar::Oluştur](#create)|Şerit durum çubuğu oluşturur.|
+|[CMFCRibbonStatusBar::CreateEx](#createex)|Genişletilmiş stili olan bir şerit durum çubuğu oluşturur.|
 |[CMFCRibbonStatusBar::FindByID](#findbyid)||
-|[CMFCRibbonStatusBar::FindElement](#findelement)|Belirtilen komut kimliği olan öğeye bir işaretçi döndürür|
-|[CMFCRibbonStatusBar::GetCount](#getcount)|Şerit durum çubuğuna ana alanda bulunan öğelerin sayısını döndürür.|
-|[CMFCRibbonStatusBar::GetElement](#getelement)|Belirtilen dizinde bulunan bir öğeye bir işaretçi döndürür.|
-|[CMFCRibbonStatusBar::GetExCount](#getexcount)|Şerit durum çubuğuna genişletilmiş alanda bulunan öğelerin sayısını döndürür.|
-|[CMFCRibbonStatusBar::GetExElement](#getexelement)|Şerit durum çubuğuna genişletilmiş alanında belirtilen bir dizinden konumundaki öğeye bir işaretçi döndürür.|
+|[CMFCRibbonStatusBar::FindElement](#findelement)|Belirtilen komut kimliğine sahip öğeye bir işaretçi döndürür.|
+|[CMFCRibbonStatusBar::GetCount](#getcount)|Şerit durum çubuğunun ana alanında bulunan öğe sayısını verir.|
+|[CMFCRibbonStatusBar::GetElement](#getelement)|İşaretçiyi belirtilen bir dizinte bulunan öğeye döndürür.|
+|[CMFCRibbonStatusBar::GetExCount](#getexcount)|Şerit durum çubuğunun genişletilmiş alanında bulunan öğe sayısını verir.|
+|[CMFCRibbonStatusBar::GetExElement](#getexelement)|Şerit durum çubuğunun genişletilmiş alanında belirtilen bir dizinte bulunan öğeyi işaretçisi döndürür.|
 |[CMFCRibbonStatusBar::GetExtendedArea](#getextendedarea)||
 |[CMFCRibbonStatusBar::GetSpace](#getspace)||
-|[CMFCRibbonStatusBar::IsBottomFrame](#isbottomframe)||
+|[CMFCRibbonStatusBar::IsbottomFrame](#isbottomframe)||
 |[CMFCRibbonStatusBar::IsExtendedElement](#isextendedelement)||
-|[CMFCRibbonStatusBar::IsInformationMode](#isinformationmode)|Bilgi modu için Şerit durum çubuğuna etkin olup olmadığını belirler.|
-|[CMFCRibbonStatusBar::RecalcLayout](#recalclayout)|(Geçersiz kılmaları [CMFCRibbonBar::RecalcLayout](../../mfc/reference/cmfcribbonbar-class.md#recalclayout).)|
-|[CMFCRibbonStatusBar::RemoveAll](#removeall)|Şerit durum çubuğunda tüm öğeleri kaldırır.|
-|[CMFCRibbonStatusBar::RemoveElement](#removeelement)|Bir Şerit durum çubuğuna belirtilen komut kimliği olan öğeyi kaldırır.|
-|[CMFCRibbonStatusBar::SetInformation](#setinformation)|Etkinleştirir veya Şerit durum çubuğuna bilgi modunu devre dışı bırakır.|
+|[CMFCRibbonStatusBar::IsInformationMode](#isinformationmode)|Şerit durum çubuğu için bilgi modunun etkin olup olmadığını belirler.|
+|[CMFCRibbonStatusBar::RecalcLayout](#recalclayout)|[(CMFCRibbonBar geçersiz kılar::RecalcLayout](../../mfc/reference/cmfcribbonbar-class.md#recalclayout).)|
+|[CMFCRibbonStatusBar::RemoveAll](#removeall)|Şerit durum çubuğundaki tüm öğeleri kaldırır.|
+|[CMFCRibbonStatusBar::RemoveElement](#removeelement)|Şerit durum çubuğundan belirli bir komut kimliğine sahip öğeyi kaldırır.|
+|[CMFCRibbonStatusBar::SetInformation](#setinformation)|Şerit durum çubuğunun bilgi modunu etkinleştirer veya devre dışı kılabilir.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonStatusBar::OnDrawInformation](#ondrawinformation)|Şerit durum bilgileri modu etkinleştirildiğinde çubuğunda görüntülenen bilgi dizesi görüntüler.|
+|[CMFCRibbonStatusBar::OnDrawInformation](#ondrawinformation)|Bilgi modu etkinleştirildiğinde şerit durum çubuğunda görünen bilgi dizesini görüntüler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcılar, Şerit durum çubuğuna, Şerit öğelerinin görünürlüğü için Şerit durum çubuğuna yerleşik bağlam menüsünü kullanarak değiştirebilirsiniz. Ekleme veya öğeleri dinamik olarak kaldırın.
+Kullanıcılar, şerit durum çubuğunun yerleşik bağlam menüsünü kullanarak şerit durum çubuğundaki şerit öğelerinin görünürlüğünü değiştirebilir. Öğeleri dinamik olarak ekleyebilir veya kaldırabilirsiniz.
 
-Şerit durum çubuğuna iki alan içerir: bir ana alan ve bir genişletilmiş alan. Genişletilmiş alan Şerit durum çubuğuna sağ tarafında görüntülenir ve ana alan gösterilenden farklı bir renkte görünür.
+Şerit durum çubuğunun iki alanı vardır: ana alan ve genişletilmiş alan. Genişletilmiş alan şerit durum çubuğunun sağ tarafında görüntülenir ve ana alandan farklı bir renkte görüntülenir.
 
-Genellikle, durum çubuğunun ana alan durum bildirimleri ve genişletilmiş alan görünüm denetimi görüntüler. Şerit durum çubuğuna kullanıcı yeniden boyutlandırdığında genişletilmiş alan olabildiğince uzun bir süre görünür kalır.
+Genellikle durum çubuğunun ana alanı durum bildirimlerini görüntüler ve genişletilmiş alan görünüm denetimlerini görüntüler. Genişletilmiş alan, kullanıcı şerit durum çubuğunu yeniden boyutlandırdığında mümkün olduğunca uzun süre görünür kalır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonStatusBar` sınıfı. Örnek yeni bir Şerit öğesi eklemek için Şerit durum çubuğuna, Şerit durum çubuğuna genişletilmiş bölgesine bir Şerit öğesi eklemek nasıl gösterir bir ayırıcı ekleyin ve Şerit durum çubuğuna normal modunu etkinleştirin.
+Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCRibbonStatusBar` nasıl kullanılacağını göstermektedir. Örnek, şerit durum çubuğuna yeni bir şerit öğesi nin nasıl ekleyeceğini, şerit durum çubuğunun genişletilmiş alanına şerit öğesi eklemeyi, ayırıcı eklemeyi ve şerit durum çubuğu için normal modu nasıl etkinleştireceklerini gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#15](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbar-class_1.cpp)]
 [!code-cpp[NVC_MFC_RibbonApp#16](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbar-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[CPane](../../mfc/reference/cpane-class.md)
+[Cpane](../../mfc/reference/cpane-class.md)
 
-[CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md)
+[Cmfcribbonbar](../../mfc/reference/cmfcribbonbar-class.md)
 
 [CMFCRibbonStatusBar](../../mfc/reference/cmfcribbonstatusbar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxribbonstatusbar.h
+**Üstbilgi:** afxribbonstatusbar.h
 
-##  <a name="adddynamicelement"></a>  CMFCRibbonStatusBar::AddDynamicElement
+## <a name="cmfcribbonstatusbaradddynamicelement"></a><a name="adddynamicelement"></a>CMFCRibbonStatusBar::AdddynamicElement
 
 Şerit durum çubuğuna dinamik bir öğe ekler.
 
@@ -147,15 +147,15 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 ### <a name="parameters"></a>Parametreler
 
 *pElement*<br/>
-[in] Dinamik bir öğe için bir işaretçi.
+[içinde] Dinamik bir öğeiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normal öğeleri aksine dinamik öğeleri özelleştirilebilir değildir ve durum çubuğu özelleştirme menüsünü bunları göstermez.
+Normal öğelerin aksine, dinamik öğeler özelleştirilebilir değildir ve durum çubuğunun özelleştir menüsü bunları görüntülemez.
 
-##  <a name="addelement"></a>  CMFCRibbonStatusBar::AddElement
+## <a name="cmfcribbonstatusbaraddelement"></a><a name="addelement"></a>CMFCRibbonStatusBar::Addelement
 
-Şerit durum çubuğuna yeni bir Şerit öğesi ekler.
+Şerit durum çubuğuna yeni bir şerit öğesi ekler.
 
 ```
 void AddElement(
@@ -167,17 +167,17 @@ void AddElement(
 ### <a name="parameters"></a>Parametreler
 
 *pElement*<br/>
-[in] Eklenen öğeye bir işaretçi.
+[içinde] Eklenen öğeiçin bir işaretçi.
 
-*lpszLabel*<br/>
-[in] Öğesinin metin etiketi.
+*lpszEtiket*<br/>
+[içinde] Öğenin metin etiketi.
 
 *bIsVisible*<br/>
-[in] Öğenin gizli olarak eklemek istiyorsanız öğe olarak görünür, yanlış eklemek istediğiniz TRUE.
+[içinde] Doğru öğeyi görünür olarak eklemek istiyorsanız, FALSE öğeyi gizli olarak eklemek istiyorsanız.
 
-##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement
+## <a name="cmfcribbonstatusbaraddextendedelement"></a><a name="addextendedelement"></a>CMFCRibbonStatusBar::AddExtendedElement
 
-Şerit durum çubuğuna genişletilmiş bölgesine bir Şerit öğesi ekler.
+Şerit durum çubuğunun genişletilmiş alanına bir şerit öğesi ekler.
 
 ```
 void AddExtendedElement(
@@ -189,21 +189,21 @@ void AddExtendedElement(
 ### <a name="parameters"></a>Parametreler
 
 *pElement*<br/>
-[in] Eklenen öğeye bir işaretçi.
+[içinde] Eklenen öğeiçin bir işaretçi.
 
-*lpszLabel*<br/>
-[in] Öğesinin metin etiketi.
+*lpszEtiket*<br/>
+[içinde] Öğenin metin etiketi.
 
 *bIsVisible*<br/>
-[in] Öğenin gizli olarak eklemek istiyorsanız öğe olarak görünür, yanlış eklemek istediğiniz TRUE.
+[içinde] Doğru öğeyi görünür olarak eklemek istiyorsanız, FALSE öğeyi gizli olarak eklemek istiyorsanız.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durum çubuğu denetiminin sağ tarafında genişletilmiş alanıdır.
+Genişletilmiş alan durum çubuğu denetiminin sağ tarafındadır.
 
-##  <a name="addseparator"></a>  CMFCRibbonStatusBar::AddSeparator
+## <a name="cmfcribbonstatusbaraddseparator"></a><a name="addseparator"></a>CMFCRibbonStatusBar::AddSeparator
 
-Ayırıcı, Şerit durum çubuğuna ekler.
+Şerit durum çubuğuna bir ayırıcı ekler.
 
 ```
 void AddSeparator();
@@ -211,11 +211,11 @@ void AddSeparator();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework ayırıcı sonra yöntem ekler [CMFCRibbonStatusBar::AddElement](#addelement). Son öğe ekler.
+Çerçeve, [CMFCRibbonStatusBar::AddElement](#addelement)yönteminden sonra bir ayırıcı ekler. son öğeyi ekler.
 
-##  <a name="create"></a>  CMFCRibbonStatusBar::Create
+## <a name="cmfcribbonstatusbarcreate"></a><a name="create"></a>CMFCRibbonStatusBar::Oluştur
 
-Şerit durum çubuğuna oluşturur.
+Şerit durum çubuğu oluşturur.
 
 ```
 BOOL Create(
@@ -227,21 +227,21 @@ BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-[in] Üst penceresine bir işaretçi.
+[içinde] Üst pencereiçin bir işaretçi.
 
-*dwStyle*<br/>
-[in] Mantıksal OR birleşimi denetim stilleri.
+*Dwstyle*<br/>
+[içinde] Denetim stillerinin mantıksal or kombinasyonu.
 
-*nID*<br/>
-[in] Durum çubuğu denetiminin kimliği.
+*Nıd*<br/>
+[içinde] Durum çubuğunun denetim kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durum çubuğu başarıyla FALSE aksi oluşturulursa TRUE.
+Durum çubuğu başarıyla oluşturulursa DOĞRU, aksi takdirde FALSE.
 
-##  <a name="createex"></a>  CMFCRibbonStatusBar::CreateEx
+## <a name="cmfcribbonstatusbarcreateex"></a><a name="createex"></a>CMFCRibbonStatusBar::CreateEx
 
-Genişletilmiş bir stilde bir Şerit durum çubuğuna oluşturur.
+Genişletilmiş stili olan bir şerit durum çubuğu oluşturur.
 
 ```
 BOOL CreateEx(
@@ -254,24 +254,24 @@ BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Üst penceresine bir işaretçi.
+Üst pencereiçin bir işaretçi.
 
 *dwCtrlStyle*<br/>
-Mantıksal OR birleşimi durum çubuğu nesnesini oluşturmak için ek stilleri.
+Durum çubuğu nesnesi oluşturmak için ek stilleri n için mantıksal bir OR bileşimi.
 
-*dwStyle*<br/>
-Durum çubuğu denetim stili.
+*Dwstyle*<br/>
+Durum çubuğunun denetim stili.
 
-*nID*<br/>
-Durum çubuğu denetiminin kimliği.
+*Nıd*<br/>
+Durum çubuğunun denetim kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durum çubuğu başarıyla FALSE aksi oluşturulursa TRUE.
+Durum çubuğu başarıyla oluşturulursa DOĞRU, aksi takdirde FALSE.
 
-##  <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID
+## <a name="cmfcribbonstatusbarfindbyid"></a><a name="findbyid"></a>CMFCRibbonStatusBar::FindByID
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
@@ -279,16 +279,16 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *uiCmdID*<br/>
-[in] *BOOL*<br/>
+[içinde] *uiCmdID*<br/>
+[içinde] *BOOL*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findelement"></a>  CMFCRibbonStatusBar::FindElement
+## <a name="cmfcribbonstatusbarfindelement"></a><a name="findelement"></a>CMFCRibbonStatusBar::FindElement
 
-Belirtilen komut kimliği olan öğeye bir işaretçi döndürür
+Belirtilen komut kimliğine sahip öğeye bir işaretçi döndürür.
 
 ```
 CMFCRibbonBaseElement* FindElement(UINT uiID);
@@ -297,15 +297,15 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 ### <a name="parameters"></a>Parametreler
 
 *uiID*<br/>
-[in] Öğe kimliği.
+[içinde] Öğenin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen komut kimliğine sahip öğe için bir işaretçi Böyle bir öğe yoksa NULL.
+Belirtilen komut kimliğine sahip öğenin işaretçisi. Böyle bir öğe yoksa NULL.
 
-##  <a name="getcount"></a>  CMFCRibbonStatusBar::GetCount
+## <a name="cmfcribbonstatusbargetcount"></a><a name="getcount"></a>CMFCRibbonStatusBar::GetCount
 
-Şerit durum çubuğuna ana alanda bulunan öğelerin sayısını döndürür.
+Şerit durum çubuğunun ana alanında bulunan öğe sayısını verir.
 
 ```
 int GetCount() const;
@@ -313,11 +313,11 @@ int GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit durum çubuğuna ana alanda bulunan öğe sayısı.
+Şerit durum çubuğunun ana alanında bulunan öğelerin sayısı.
 
-##  <a name="getelement"></a>  CMFCRibbonStatusBar::GetElement
+## <a name="cmfcribbonstatusbargetelement"></a><a name="getelement"></a>CMFCRibbonStatusBar::GetElement
 
-Belirtilen dizinde bulunan bir öğeye bir işaretçi döndürür.
+İşaretçiyi belirtilen bir dizinte bulunan öğeye döndürür.
 
 ```
 CMFCRibbonBaseElement* GetElement(int nIndex);
@@ -325,18 +325,18 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] Durum çubuğu denetimi ana alanında bulunan bir öğenin sıfır tabanlı bir dizini belirtir.
+*Nındex*<br/>
+[içinde] Durum çubuğu denetiminin ana alanında bulunan bir öğenin sıfır tabanlı dizinbelirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizinde bulunan öğesinin işaretçisi. Boş dizin negatiftir ya da durum çubuğunun içindeki öğelerin sayısını aşıyor.
+Belirtilen dizinde bulunan öğeiçin bir işaretçi. Dizin negatifse veya durum çubuğundaki öğe sayısını aşıyorsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getexcount"></a>  CMFCRibbonStatusBar::GetExCount
+## <a name="cmfcribbonstatusbargetexcount"></a><a name="getexcount"></a>CMFCRibbonStatusBar::GetExCount
 
-Şerit durum çubuğuna genişletilmiş alanda bulunan öğelerin sayısını döndürür.
+Şerit durum çubuğunun genişletilmiş alanında bulunan öğe sayısını verir.
 
 ```
 int GetExCount() const;
@@ -344,11 +344,11 @@ int GetExCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit durum çubuğuna genişletilmiş alanda bulunan öğe sayısı.
+Şerit durum çubuğunun genişletilmiş alanında bulunan öğelerin sayısı.
 
-##  <a name="getexelement"></a>  CMFCRibbonStatusBar::GetExElement
+## <a name="cmfcribbonstatusbargetexelement"></a><a name="getexelement"></a>CMFCRibbonStatusBar::GetExElement
 
-Şerit durum çubuğuna genişletilmiş alanında belirtilen bir dizinden konumundaki öğeye bir işaretçi döndürür. Durum çubuğu denetiminin sağ tarafında genişletilmiş alanıdır.
+Şerit durum çubuğunun genişletilmiş alanında belirtilen bir dizinte bulunan öğeyi işaretçisi döndürür. Genişletilmiş alan durum çubuğu denetiminin sağ tarafındadır.
 
 ```
 CMFCRibbonBaseElement* GetExElement(int nIndex);
@@ -356,18 +356,18 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] Durum çubuğu denetimi genişletilmiş alanında bulunan bir öğenin sıfır tabanlı dizinini belirtir.
+*Nındex*<br/>
+[içinde] Durum çubuğu denetiminin genişletilmiş alanında bulunan bir öğenin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit durum çubuğuna genişletilmiş alanında belirtilen bir dizinden konumundaki öğeye bir işaretçi. NULL ise *nIndex* negatif veya Şerit durum çubuğuna genişletilmiş alanındaki öğelerin sayısını aşıyor.
+Şerit durum çubuğunun genişletilmiş alanında belirtilen bir dizinte bulunan öğeiçin bir işaretçi. *nIndex* negatifse veya şerit durum çubuğunun genişletilmiş alanındaki öğe sayısını aşıyorsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea
+## <a name="cmfcribbonstatusbargetextendedarea"></a><a name="getextendedarea"></a>CMFCRibbonStatusBar::GetExtendedArea
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 virtual BOOL GetExtendedArea(CRect& rect) const;
@@ -375,15 +375,15 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dikdörtgen*<br/>
+[içinde] *rekt*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getspace"></a>  CMFCRibbonStatusBar::GetSpace
+## <a name="cmfcribbonstatusbargetspace"></a><a name="getspace"></a>CMFCRibbonStatusBar::GetSpace
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 int GetSpace() const;
@@ -393,9 +393,9 @@ int GetSpace() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame
+## <a name="cmfcribbonstatusbarisbottomframe"></a><a name="isbottomframe"></a>CMFCRibbonStatusBar::IsbottomFrame
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 BOOL IsBottomFrame() const;
@@ -405,9 +405,9 @@ BOOL IsBottomFrame() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement
+## <a name="cmfcribbonstatusbarisextendedelement"></a><a name="isextendedelement"></a>CMFCRibbonStatusBar::IsExtendedElement
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
@@ -415,15 +415,15 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pElement*<br/>
+[içinde] *pElement*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isinformationmode"></a>  CMFCRibbonStatusBar::IsInformationMode
+## <a name="cmfcribbonstatusbarisinformationmode"></a><a name="isinformationmode"></a>CMFCRibbonStatusBar::IsInformationMode
 
-Bilgi modu için Şerit durum çubuğuna etkin olup olmadığını belirler.
+Şerit durum çubuğu için bilgi modunun etkin olup olmadığını belirler.
 
 ```
 BOOL IsInformationMode() const;
@@ -431,15 +431,15 @@ BOOL IsInformationMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durum çubuğu bilgilerini modunda çalışabilmeniz için TRUE; Aksi durumda FALSE.
+Durum çubuğu bilgi modunda çalışabiliyorsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilgilerini modunda, durum çubuğu tüm normal bölmeleri gizler ve ileti dizesini görüntüler.
+Bilgi modunda, durum çubuğu tüm normal bölmeleri gizler ve bir ileti dizesini görüntüler.
 
-##  <a name="ondrawinformation"></a>  CMFCRibbonStatusBar::OnDrawInformation
+## <a name="cmfcribbonstatusbarondrawinformation"></a><a name="ondrawinformation"></a>CMFCRibbonStatusBar::OnDrawInformation
 
-Şerit durum bilgileri modu etkinleştirildiğinde çubuğunda görüntülenen dizeyi görüntüler.
+Bilgi modu etkinleştirildiğinde şerit durum çubuğunda görünen dizeyi görüntüler.
 
 ```
 virtual void OnDrawInformation(
@@ -450,22 +450,22 @@ virtual void OnDrawInformation(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *strInfo*<br/>
-[in] Bilgi dizesi.
+[içinde] Bilgi dizesi.
 
 *rectInfo*<br/>
-[in] Dikdörtgen.
+[içinde] Sınırlayıcı dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durum çubuğunda bilgi dizesi görünümünü özelleştirmek istiyorsanız türetilen bir sınıfta bu yöntemi yok sayın. Kullanım [CMFCRibbonStatusBar::SetInformation](#setinformation) durum çubuğu bilgilerini modunda koymak için yöntemi. Bu modda, durum çubuğu tüm bölmeleri gizler ve bilgi dizesi tarafından belirtilen görüntüler *strInfo*.
+Durum çubuğundaki bilgi dizesinin görünümünü özelleştirmek istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılın. Durum çubuğunu bilgi moduna koymak için [CMFCRibbonStatusBar::SetInformation](#setinformation) yöntemini kullanın. Bu modda, durum çubuğu tüm bölmeleri gizler ve *strInfo*tarafından belirtilen bilgi dizesini görüntüler.
 
-##  <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout
+## <a name="cmfcribbonstatusbarrecalclayout"></a><a name="recalclayout"></a>CMFCRibbonStatusBar::RecalcLayout
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 virtual void RecalcLayout();
@@ -473,17 +473,17 @@ virtual void RecalcLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removeall"></a>  CMFCRibbonStatusBar::RemoveAll
+## <a name="cmfcribbonstatusbarremoveall"></a><a name="removeall"></a>CMFCRibbonStatusBar::RemoveAll
 
-Şerit durum çubuğunda tüm öğeleri kaldırır.
+Şerit durum çubuğundaki tüm öğeleri kaldırır.
 
 ```
 void RemoveAll();
 ```
 
-##  <a name="removeelement"></a>  CMFCRibbonStatusBar::RemoveElement
+## <a name="cmfcribbonstatusbarremoveelement"></a><a name="removeelement"></a>CMFCRibbonStatusBar::RemoveElement
 
-Bir Şerit durum çubuğuna belirtilen komut kimliği olan öğeyi kaldırır.
+Şerit durum çubuğundan belirli bir komut kimliğine sahip öğeyi kaldırır.
 
 ```
 BOOL RemoveElement(UINT uiID);
@@ -492,15 +492,15 @@ BOOL RemoveElement(UINT uiID);
 ### <a name="parameters"></a>Parametreler
 
 *uiID*<br/>
-[in] Durum Çubuğu'ndan kaldırma öğesinin kimliği.
+[içinde] Durum çubuğundan kaldırılacak öğenin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir öğe, belirtilen TRUE *uiID* kaldırılır. FALSE Aksi takdirde.
+Belirtilen *uiID'ye* sahip bir öğe kaldırılırsa DOĞRU. YANLIŞ aksi takdirde.
 
-##  <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation
+## <a name="cmfcribbonstatusbarsetinformation"></a><a name="setinformation"></a>CMFCRibbonStatusBar::SetInformation
 
-Etkinleştirir veya Şerit durum çubuğuna bilgi modunu devre dışı bırakır.
+Şerit durum çubuğunun bilgi modunu etkinleştirer veya devre dışı kılabilir.
 
 ```
 void SetInformation(LPCTSTR lpszInfo);
@@ -509,13 +509,13 @@ void SetInformation(LPCTSTR lpszInfo);
 ### <a name="parameters"></a>Parametreler
 
 *lpszInfo*<br/>
-[in] Bilgi dizesi.
+[içinde] Bilgi dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durum çubuğu bilgilerini modunda yerleştirmek için bu yöntemi kullanın. Bu modda, durum çubuğu tüm bölmeleri gizler ve bilgi dizesi tarafından belirtilen görüntüler *lpszInfo*.
+Durum çubuğunu bilgi moduna koymak için bu yöntemi kullanın. Bu modda, durum çubuğu tüm bölmeleri gizler ve *lpszInfo*tarafından belirtilen bilgi dizesini görüntüler.
 
-LpszInfo NULL olduğunda, durum çubuğu, normal moduna geri döner.
+LPSZInfo NULL olduğunda, durum çubuğu normal moda döner.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

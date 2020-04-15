@@ -7,18 +7,18 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-ms.openlocfilehash: 38346e41c1e943e9bfda70668a163c630a0b9599
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e8ca82900ffd16264aca494950d4793029e55d9c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178879"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365595"
 ---
 # <a name="selectany"></a>selectany
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Derleyiciye, belirtilen genel veri öğesinin (değişken veya nesne) bir seçim-any COMDAT (paketlenmiş bir işlev) olduğunu söyler.
+Derleyiciye, bildirilen genel veri öğesinin (değişken veya nesne) herhangi bir comdat (paketlenmiş işlev) olduğunu söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,16 +28,16 @@ __declspec( selectany ) declarator
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlantı zamanında, bir COMDAT 'ın birden fazla tanımı görülebilecekse, bağlayıcı bir tane seçer ve geri kalanını atar. [/OPT: ref](../build/reference/opt-optimizations.md) (geri iyileştirmeler) bağlayıcı seçeneği işaretliyse, bağlayıcı çıkışındaki tüm başvurulmayan veri öğelerini kaldırmak için COMDAT eleme oluşur.
+Bağlantı zamanda, bir COMDAT'ın birden çok tanımı görülürse, bağlayıcı birini seçer ve geri kalanını atar. Bağlayıcı seçeneği [/OPT:REF](../build/reference/opt-optimizations.md) (Optimizasyonlar) seçilirse, bağlayıcı çıkışındaki tüm başvurulanamayan veri öğelerini kaldırmak için COMDAT eliminasyonu oluşur.
 
-Genel işlev veya bildirimdeki statik yöntemler tarafından oluşturucular ve atama bir başvuru oluşturmaz ve/OPT: REF eleme işlemini engellemez. Bu tür koddan yan etkileri, verilere yönelik başka bir başvuru yoksa bağımlı olmamalıdır.
+Bildirimdeki global işlev veya statik yöntemlerle oluşturucular ve atamalar bir referans oluşturmaz ve /OPT:REF ortadan kaldırılmasını engellemez. Bu tür koddan kaynaklanan yan etkiler, verilere başka başvuru bulunmadığında bağlı olmamalıdır.
 
-Dinamik olarak başlatılmış, genel nesneler, **selectany** , başvurulmayan nesnenin başlatma kodunu da atar.
+Dinamik olarak başlatılan, genel nesneler için **selectany,** başvurulmamış bir nesnenin başlatma kodunu da atar.
 
-Genel veri öğesi, normalde bir EXE veya DLL projesinde yalnızca bir kez başlatılabilir. **selectany** , aynı üst bilgi birden fazla kaynak dosyasında göründüğünde üstbilgiler tarafından tanımlanan genel verileri başlatırken kullanılabilir. **selectany** , hem C hem C++ de derleyicilerde kullanılabilir.
+Genel bir veri öğesi normalde bir EXE veya DLL projesinde yalnızca bir kez baş harfe çevrilebilir. **selectany,** aynı üstbilgi birden fazla kaynak dosyada göründüğünde, üstbilgiler tarafından tanımlanan genel verilerin başlatılmasında kullanılabilir. **selectany** hem C hem de C++ derleyicilerinde kullanılabilir.
 
 > [!NOTE]
->  **selectany** yalnızca dışarıdan görünen genel veri öğelerinin gerçek başlatmasına uygulanabilir.
+> **selectany** yalnızca dışarıdan görünen genel veri öğelerinin gerçek başlatılmasına uygulanabilir.
 
 ## <a name="example"></a>Örnek
 
@@ -75,7 +75,7 @@ __declspec(selectany) X x(1);
 
 ## <a name="example"></a>Örnek
 
-Bu kod, [/OPT: ICF](../build/reference/opt-optimizations.md) bağlayıcı seçeneğini de kullandığınızda veri COMDAT katlamasını sağlamak için **selectany** özniteliğini nasıl kullanacağınızı gösterir. Verilerin **selectany** ile işaretlenmiş ve **const** (ReadOnly) bölümüne yerleştirilmiş olması gerektiğini unutmayın. Salt okunurdur bölümünü açıkça belirtmeniz gerekir.
+Bu kod, [/OPT:ICF](../build/reference/opt-optimizations.md) bağlayıcı seçeneğini de kullandığınızda comdat verilerinin katlandığından emin olmak için **selectany** özniteliğinin nasıl kullanılacağını gösterir. Verilerin **selectany** ile işaretlenerek **const** (salt) bir bölüme yerleştirilmesi gerektiğini unutmayın. Salt okunur bölümünü açıkça belirtmeniz gerekir.
 
 ```cpp
 // selectany2.cpp
@@ -88,9 +88,9 @@ int main() {
 }
 ```
 
-**SON Microsoft 'a özgü**
+**END Microsoft Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__declspec](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

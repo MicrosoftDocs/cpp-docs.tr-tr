@@ -5,32 +5,32 @@ helpviewer_keywords:
 - registering OLE controls
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-ms.openlocfilehash: 9fcbc002913cc6cce86276796a371231ef0f32e1
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 2f2d7872e8b9369b5eef283e5b52a54c29afd563
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420759"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372966"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 
-Diğer OLE sunucusu nesneleri gibi OLE denetimlerine diğer OLE kullanan uygulamalar erişebilir. Bu, denetimin tür kitaplığı ve sınıfı kaydedilerek elde edilir.
+Diğer OLE sunucu nesneleri gibi OLE denetimlerine de Diğer OLE'ye duyarlı uygulamalar tarafından erişilebilir. Bu, denetimin tür kitaplığı ve sınıfı kaydedilerek elde edilir.
 
-Aşağıdaki işlevler, Windows kayıt veritabanına denetimin sınıfını, özellik sayfalarını ve tür kitaplığını eklemenize ve kaldırmanıza olanak tanır:
+Aşağıdaki işlevler, Denetimin sınıfını, özellik sayfalarını ve windows kayıt veritabanındaki kitaplığını eklemenize ve kaldırmanıza olanak tanır:
 
 ### <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 
 |||
 |-|-|
-|[AfxOleRegisterControlClass](#afxoleregistercontrolclass)|Kayıt veritabanına denetimin sınıfını ekler.|
+|[AfxOleRegisterControlClass](#afxoleregistercontrolclass)|Denetimin sınıfını kayıt veritabanına ekler.|
 |[AfxOleRegisterPropertyPageClass](#afxoleregisterpropertypageclass)|Kayıt veritabanına bir denetim özelliği sayfası ekler.|
 |[AfxOleRegisterTypeLib](#afxoleregistertypelib)|Denetimin tür kitaplığını kayıt veritabanına ekler.|
-|[AfxOleUnregisterClass](#afxoleunregisterclass)|Kayıt veritabanından bir denetim sınıfını veya özellik sayfası sınıfını kaldırır.|
-|[AfxOleUnregisterTypeLib](#afxoleunregistertypelib)|Kayıt veritabanından denetimin tür kitaplığını kaldırır.|
+|[AfxOleKayıt DışıSınıf](#afxoleunregisterclass)|Kayıt veritabanından bir denetim sınıfını veya özellik sayfası sınıfını kaldırır.|
+|[AfxOleKayıt DışıTypeLib](#afxoleunregistertypelib)|Denetimin tür kitaplığını kayıt veritabanından kaldırır.|
 
-`AfxOleRegisterTypeLib` tipik olarak bir denetim DLL 'inin `DllRegisterServer`uygulamasında çağırılır. Benzer şekilde, `AfxOleUnregisterTypeLib` `DllUnregisterServer`tarafından çağrılır. `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass`ve `AfxOleUnregisterClass` genellikle denetimin sınıf fabrikası veya özellik sayfasının `UpdateRegistry` member işlevi tarafından çağırılır.
+`AfxOleRegisterTypeLib`genellikle bir denetim DLL's uygulamasında `DllRegisterServer`denir. Benzer şekilde, `AfxOleUnregisterTypeLib` tarafından `DllUnregisterServer`çağrılır. `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass`ve `AfxOleUnregisterClass` genellikle bir denetimin sınıf fabrikası veya özellik sayfasının `UpdateRegistry` üye işlevi tarafından çağrılır.
 
-##  <a name="afxoleregistercontrolclass"></a>AfxOleRegisterControlClass
+## <a name="afxoleregistercontrolclass"></a><a name="afxoleregistercontrolclass"></a>AfxOleRegisterControlClass
 
 Denetim sınıfını Windows kayıt veritabanına kaydeder.
 
@@ -50,37 +50,37 @@ BOOL AFXAPI AfxOleRegisterControlClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*<br/>
-Denetim sınıfıyla ilişkili modülün örnek tanıtıcısı.
+*Hınstance*<br/>
+Denetim sınıfıyla ilişkili modülün örnek tutamacı.
 
-*in*<br/>
-Denetimin benzersiz sınıf KIMLIĞI.
+*Clsıd*<br/>
+Denetimin benzersiz sınıf kimliği.
 
-*Pszprogıd*<br/>
-Denetimin benzersiz program KIMLIĞI.
+*pszProgID*<br/>
+Denetimin benzersiz program kimliği.
 
-*ıdtypename*<br/>
-Denetim için Kullanıcı tarafından okunabilen bir tür adı içeren dizenin kaynak KIMLIĞI.
+*idTypeName*<br/>
+Denetim için kullanıcı tarafından okunabilen bir tür adı içeren dize kaynak kimliği.
 
-*ıdbit eşlem*<br/>
-Bir araç çubuğunda veya paletteki OLE denetimini temsil etmek için kullanılan bit eşlemin kaynak KIMLIĞI.
+*idBitmap*<br/>
+Araç çubuğunda veya palette OLE denetimini temsil etmek için kullanılan bit eşlesinin kaynak kimliği.
 
 *nRegFlags*<br/>
-Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
+Aşağıdaki bayraklardan birini veya birkaçını içerir:
 
-- `afxRegInsertable`, denetimin OLE nesneleri için nesne Ekle iletişim kutusunda görünmesine Izin verir.
+- `afxRegInsertable`Denetimin OLE nesneleri için Nesne Ekle iletişim kutusunda görünmesini sağlar.
 
-- `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading`İş parçacığı modelini threadingModel=Apartment olarak ayarlar.
 
-- `afxRegFreeThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
+- `afxRegFreeThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel=Free olarak ayarlar.
 
-   `afxRegApartmentThreading` iki bayrağı birleştirebilir ve `afxRegFreeThreading`, ThreadingModel = her Ikisi de ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
+   İki bayrağı `afxRegApartmentThreading` `afxRegFreeThreading` birleştirip ThreadingModel=Her ikisini de ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK'da [InprocServer32'ye](/windows/win32/com/inprocserver32) bakın.
 
 > [!NOTE]
->  MFC 4,2 ' den önceki MFC sürümlerinde, **int** *nregflags* parametresi, denetimin nesne Ekle iletişim kutusundan eklenmesine izin verilen veya izin verilmeyen bir bool parametresidir ( *binsertable*).
+> MFC 4.2'den önceki MFC sürümlerinde, **int** *nRegFlags* parametresi, nesne ekleme iletişim kutusundan denetimin eklenmesine izin veren veya izin verilmeyen bir BOOL parametresi, *bInsertable'dır.*
 
-*dwMiscStatus*<br/>
-Aşağıdaki durum bayraklarından birini veya daha fazlasını içerir (bayrakların açıklaması için, bkz. Windows SDK OLEMISC Enumeration):
+*dwMiscDurum*<br/>
+Aşağıdaki durum bayraklarından birini veya birkaçını içerir (bayrakların açıklaması için Windows SDK'daki OLEMISC numaralandırması'na bakın):
 
 - OLEMISC_RECOMPOSEONRESIZE
 
@@ -120,38 +120,38 @@ Aşağıdaki durum bayraklarından birini veya daha fazlasını içerir (bayrakl
 
 - OLEMISC_SETCLIENTSITEFIRST
 
-*tlıd*<br/>
-Denetim sınıfının benzersiz KIMLIĞI.
+*tlid*<br/>
+Denetim sınıfının benzersiz kimliği.
 
-*Wverana*<br/>
+*wVerMajor*<br/>
 Denetim sınıfının ana sürüm numarası.
 
 *wVerMinor*<br/>
-Denetim sınıfının ikincil sürüm numarası.
+Denetim sınıfının küçük sürüm numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim sınıfı kaydedilmişse sıfır dışı; Aksi takdirde 0.
+Denetim sınıfı kayıtlıysa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, denetimin OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterControlClass`, kayıt defterini sistemde denetim adı ve konumuyla güncelleştirir ve ayrıca denetimin desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
+Bu, denetimin OLE denetimi ne kadar bilinçli olan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterControlClass`kayıt defterini denetimin adı ve sistemdeki konumuyla güncelleştirir ve ayrıca denetimin kayıt defterinde desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için Teknik [Not 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE Denetimlerinde Daire-Model İş Parçacığı" ve Windows SDK'daki [İşlemler ve İş Parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) bilgi verildi.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/cpp/registering-ole-controls_1.cpp)]
 
-Yukarıdaki örnek, `AfxOleRegisterControlClass` eklenebilir bayrağıyla nasıl çağrılacağını ve altıncı parametre oluşturmak için Apartment model ORed bayrağını birlikte gösterir:
+Yukarıdaki örnek, altıncı `AfxOleRegisterControlClass` parametreyi oluşturmak için eklenen bayrak ve daire modeli ORed için bayrak ile birlikte nasıl çağrıldığını gösterir:
 
 [!code-cpp[NVC_MFCAxCtl#12](../../mfc/reference/codesnippet/cpp/registering-ole-controls_2.cpp)]
 
-Denetim, etkin kapsayıcılar için nesne Ekle iletişim kutusunda görünür ve Grup modeli kullanan bir işlem olur. Grup modeli kullanan denetimler, statik sınıf verilerinin kilitler tarafından korunduğundan emin olmalıdır; böylece bir grupta bulunan bir denetim statik verilere erişirken, bu, tamamlanmadan önce Zamanlayıcı tarafından devre dışı bırakılmadığından ve aynı sınıfın başka bir örneği kullanmaya başladıktan sonra aynı statik veri. Statik verilere olan erişimler, kritik bölüm kodu ile çevrelenebilir.
+Denetim, etkin kapsayıcılar için Nesne Ekle iletişim kutusunda görünür ve daire modeline duyarlı olur. Daire modeli nene denetimleri statik sınıf verilerinin kilitler tarafından korunduğundan emin olmalıdır, böylece bir dairedeki bir denetim statik verilere erişirken, tamamlanmadan önce zamanlayıcı tarafından devre dışı bırakılmaz ve aynı sınıfın başka bir örneği aynı statik verileri kullanmaya başlar. Statik verilere tüm erişimler kritik bölüm kodu ile çevrili olacaktır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="afxoleregisterpropertypageclass"></a>AfxOleRegisterPropertyPageClass
+## <a name="afxoleregisterpropertypageclass"></a><a name="afxoleregisterpropertypageclass"></a>AfxOleRegisterPropertyPageClass
 
 Özellik sayfası sınıfını Windows kayıt veritabanına kaydeder.
 
@@ -165,38 +165,38 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*<br/>
-Özellik sayfası sınıfıyla ilişkili modülün örnek tanıtıcısı.
+*Hınstance*<br/>
+Özellik sayfası sınıfıyla ilişkili modülün örnek tutamacı.
 
-*in*<br/>
-Özellik sayfasının benzersiz sınıf KIMLIĞI.
+*Clsıd*<br/>
+Özellik sayfasının benzersiz sınıf kimliği.
 
-*ıdtypename*<br/>
-Özellik sayfası için Kullanıcı tarafından okunabilen bir ad içeren dizenin kaynak KIMLIĞI.
+*idTypeName*<br/>
+Özellik sayfası için kullanıcı tarafından okunabilir bir ad içeren dize kaynak kimliği.
 
 *nRegFlags*<br/>
-Şu bayrağı içerebilir:
+Bayrağı içerebilir:
 
-- `afxRegApartmentThreading` kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading`İş parçacığı modelini threadingModel = Apartment olarak ayarlar.
 
 > [!NOTE]
->  MFC 4,2 ' den önceki MFC sürümlerinde, **int** *nregflags* parametresi kullanılabilir değildi. Ayrıca, `afxRegInsertable` bayrağının Özellik sayfaları için geçerli bir seçenek olmadığını ve ayarlandıysa MFC 'de bir onaylama yapılmasına neden olacağını unutmayın.
+> MFC 4.2'den önceki MFC sürümlerinde **int** *nRegFlags* parametresi kullanılamadı. Bayrağın `afxRegInsertable` özellik sayfaları için geçerli bir seçenek olmadığını ve ayarlanırsa MFC'de bir Assert'a neden olacağını da unutmayın
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim sınıfı kaydedilmişse sıfır dışı; Aksi takdirde 0.
+Denetim sınıfı kayıtlıysa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik sayfasının OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterPropertyPageClass`, kayıt defterini Özellik sayfası adı ve sistem üzerindeki konumuyla güncelleştirir ve ayrıca denetim kayıt defterinde desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
+Bu özellik sayfası ole-denetim farkında kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterPropertyPageClass`kayıt defterini özellik sayfası adı ve sistemdeki konumuyla güncelleştirir ve denetimin kayıt defterinde desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için Teknik [Not 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE Denetimlerinde Daire-Model İş Parçacığı" ve Windows SDK'daki [İşlemler ve İş Parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) bilgi verildi.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="afxoleregistertypelib"></a>AfxOleRegisterTypeLib
+## <a name="afxoleregistertypelib"></a><a name="afxoleregistertypelib"></a>AfxOleRegisterTypeLib
 
-Tür kitaplığını Windows kayıt veritabanına kaydeder ve tür kitaplığının OLE denetimi kullanan diğer kapsayıcılar tarafından kullanılmasına izin verir.
+Tür kitaplığını Windows kayıt veritabanına kaydeder ve tür kitaplığı ole denetimi farkında olan diğer kapsayıcılar tarafından kullanılmasına izin verir.
 
 ```
 BOOL AfxOleRegisterTypeLib(
@@ -208,25 +208,25 @@ BOOL AfxOleRegisterTypeLib(
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*<br/>
-Tür kitaplığıyla ilişkili uygulamanın örnek tanıtıcısı.
+*Hınstance*<br/>
+Tür kitaplığıyla ilişkili uygulamanın örnek tutamacı.
 
-*tlıd*<br/>
-Tür kitaplığının benzersiz KIMLIĞI.
+*tlid*<br/>
+Tür kitaplığın benzersiz kimliği.
 
 *pszFileName*<br/>
-Yerelleştirilmiş bir tür kitaplığının isteğe bağlı dosya adına işaret eder (. TLB) dosyasını denetleyin.
+Yerelleştirilmiş bir tür kitaplığın isteğe bağlı dosya adını (. TLB) denetim için dosya.
 
 *pszHelpDir*<br/>
-Tür kitaplığı için yardım dosyasının bulunabileceği dizinin adı. NULL ise, yardım dosyasının tür kitaplığının kendisiyle aynı dizinde olduğu varsayılır.
+Tür kitaplığı için yardım dosyasının bulunabileceği dizinin adı. NULL ise, yardım dosyasının tür kitaplığıyla aynı dizinde olduğu varsayılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tür kitaplığı kaydedilmişse sıfır dışı; Aksi takdirde 0.
+Tür kitaplığı kayıtlıysa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, kayıt defterini tür kitaplığı adı ve sistemdeki konumu ile güncelleştirir.
+Bu işlev, kayıt defterini tür kitaplığı adı ve sistemdeki konumuyla güncelleştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -236,11 +236,11 @@ Bu işlev, kayıt defterini tür kitaplığı adı ve sistemdeki konumu ile gün
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** AfxDisp. h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="afxoleunregisterclass"></a>AfxOleUnregisterClass
+## <a name="afxoleunregisterclass"></a><a name="afxoleunregisterclass"></a>AfxOleKayıt DışıSınıf
 
-Windows kayıt veritabanından denetim veya özellik sayfası sınıfı girdisini kaldırır.
+Denetim veya özellik sayfası sınıf girişini Windows kayıt veritabanından kaldırır.
 
 ```
 BOOL AFXAPI AfxOleUnregisterClass(REFCLSID clsID, LPCSTR pszProgID);
@@ -248,23 +248,23 @@ BOOL AFXAPI AfxOleUnregisterClass(REFCLSID clsID, LPCSTR pszProgID);
 
 ### <a name="parameters"></a>Parametreler
 
-*In*<br/>
-Denetim veya özellik sayfasının benzersiz sınıf KIMLIĞI.
+*Clsıd*<br/>
+Denetim veya özellik sayfasının benzersiz sınıf kimliği.
 
-*Pszprogıd*<br/>
-Denetim veya özellik sayfasının benzersiz program KIMLIĞI.
+*pszProgID*<br/>
+Denetim veya özellik sayfasının benzersiz program kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim veya özellik sayfası sınıfının kaydı başarıyla silindi ise sıfır dışında; Aksi takdirde 0.
+Denetim veya özellik sayfası sınıfı başarıyla kayıt dışı ysa sıfırsız; aksi takdirde 0.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="afxoleunregistertypelib"></a>AfxOleUnregisterTypeLib
+## <a name="afxoleunregistertypelib"></a><a name="afxoleunregistertypelib"></a>AfxOleKayıt DışıTypeLib
 
-Windows kayıt veritabanından tür kitaplığı girişini kaldırmak için bu işlevi çağırın.
+Tür kitaplığı girişini Windows kayıt veritabanından kaldırmak için bu işlevi arayın.
 
 ```
 BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
@@ -272,12 +272,12 @@ BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Tlıd*<br/>
-Tür kitaplığının benzersiz KIMLIĞI.
+*tlID*<br/>
+Tür kitaplığın benzersiz kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tür kitaplığının kaydı başarıyla silindi ise sıfır dışında; Aksi takdirde 0.
+Tür kitaplığı başarıyla kayıt dışıysa sıfırsız; aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
@@ -285,8 +285,8 @@ Tür kitaplığının kaydı başarıyla silindi ise sıfır dışında; Aksi ta
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** AfxDisp. h
+  **Üstbilgi** afxdisp.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

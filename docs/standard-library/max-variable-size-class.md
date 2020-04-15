@@ -16,16 +16,16 @@ helpviewer_keywords:
 - stdext::max_variable_size [C++], released
 - stdext::max_variable_size [C++], saved
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
-ms.openlocfilehash: f8b3c61676f784bf9369c22b5db97d7b251f7ac6
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 79e37d8c464a009e4a5196aeacc8d4a718e355b9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447289"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370966"
 ---
-# <a name="maxvariablesize-class"></a>max_variable_size Sınıfı
+# <a name="max_variable_size-class"></a>max_variable_size Sınıfı
 
-[Freelist](../standard-library/freelist-class.md) nesnesini ayrılan bellek bloklarının sayısıyla kabaca orantılı olan en büyük uzunluğa sınırlayan bir [Max Class](../standard-library/allocators-header.md) nesnesi tanımlar.
+[Freelist](../standard-library/freelist-class.md) nesnesini ayrılan bellek bloklarının sayısıyla kabaca orantılı olan en büyük uzunluğa sınırlayan [bir max sınıf](../standard-library/allocators-header.md) nesnesini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,27 +37,27 @@ class max_variable_size
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[max_variable_size](#max_variable_size)|Türünde `max_variable_size`bir nesne oluşturur.|
+|[max_variable_size](#max_variable_size)|Türünde `max_variable_size`bir nesne oluşturuyor.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
-|[ayrılabilir](#allocated)|Ayrılan bellek bloklarının sayısını artırır.|
-|[iptal](#deallocated)|Ayrılan bellek bloklarının sayısını azaltır.|
-|[tümünü](#full)|Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.|
-|[yayımlanacak](#released)|, Ücretsiz listedeki bellek bloklarının sayısını azaltır.|
-|[kaydedildiğini](#saved)|Ücretsiz listedeki bellek bloklarının sayısını artırır.|
+|[Ayrılan](#allocated)|Ayrılan bellek bloklarının sayısını artırım.|
+|[Kaldırıldı](#deallocated)|Ayrılan bellek bloklarının sayısını eriter.|
+|[Tam](#full)|Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer verir.|
+|[Yayım -lanan](#released)|Boş listedeki bellek bloklarının sayısını erteler.|
+|[Kaydedilmiş](#saved)|Boş listedeki bellek bloklarının sayısını da martılar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üstbilgi:** \<tahsisörler>
 
 **Ad alanı:** stdext
 
-## <a name="allocated"></a>max_variable_size:: ayrılmış
+## <a name="max_variable_sizeallocated"></a><a name="allocated"></a>max_variable_size::tahsis
 
-Ayrılan bellek bloklarının sayısını artırır.
+Ayrılan bellek bloklarının sayısını artırım.
 
 ```cpp
 void allocated(std::size_t _Nx = 1);
@@ -71,11 +71,11 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, saklı değere `_Nallocs` *_Nx* ekler. Bu üye işlevi, her başarılı çağrıdan `cache_freelist::allocate` sonra **New**işlecine kadar çağrılır. *_Nx* bağımsız değişkeni, **New**işlecine göre ayrılan öbekteki bellek bloklarının sayısıdır.
+Bu üye *_Nx* işlev depolanan değere `_Nallocs`_Nx ekler. Bu üye işlev, her başarılı `cache_freelist::allocate` aramadan sonra operatöre **yeni**olarak çağrılır. _Nx *bağımsız* değişken, işleç **tarafından**ayrılan yığındaki bellek bloklarının sayısıdır.
 
-## <a name="deallocated"></a>max_variable_size::d eayrılan
+## <a name="max_variable_sizedeallocated"></a><a name="deallocated"></a>max_variable_size::d tahsis edilmiş
 
-Ayrılan bellek bloklarının sayısını azaltır.
+Ayrılan bellek bloklarının sayısını eriter.
 
 ```cpp
 void deallocated(std::size_t _Nx = 1);
@@ -89,11 +89,11 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, saklı değerden `_Nallocs` *_Nx* 'i çıkartır. Bu üye işlevi, her çağrıdan `cache_freelist::deallocate` sonra işleç **Delete**'e kadar çağrılır. *_Nx* bağımsız değişkeni, işleç **silme**tarafından serbest bırakılmış öbek içindeki bellek bloklarının sayısıdır.
+Üye işlev depolanan *_Nx* değerden `_Nallocs`_Nx çıkarır. Bu üye işlev, operatör `cache_freelist::deallocate` **sililesin**tarafından her çağrıdan sonra çağrılır. _Nx *bağımsız* değişken, işleç **silme**tarafından ayrılan yığındaki bellek bloklarının sayısıdır.
 
-## <a name="full"></a>max_variable_size:: Full
+## <a name="max_variable_sizefull"></a><a name="full"></a>max_variable_size::tam
 
-Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.
+Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer verir.
 
 ```cpp
 bool full();
@@ -101,15 +101,15 @@ bool full();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ise`_Nallocs / 16 + 16 <= _Nblocks`true.
+**doğru** `_Nallocs / 16 + 16 <= _Nblocks`eğer .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi tarafından `cache_freelist::deallocate`çağrılır. Çağrı **true**döndürürse, `deallocate` bellek bloğunu ücretsiz listeye koyar; yanlış döndürürse, `deallocate` blok serbest bırakmak için işleç **silme** yöntemini çağırır.
+Bu üye işlev `cache_freelist::deallocate`tarafından çağrılır. Arama **doğru**döndürürse, `deallocate` bellek bloğunu boş listeye koyar; yanlış dönerse, `deallocate` bloğu bulmak için operatör **silme** çağırır.
 
-## <a name="max_variable_size"></a>max_variable_size::max_variable_size
+## <a name="max_variable_sizemax_variable_size"></a><a name="max_variable_size"></a>max_variable_size:max_variable_size
 
-Türünde `max_variable_size`bir nesne oluşturur.
+Türünde `max_variable_size`bir nesne oluşturuyor.
 
 ```cpp
 max_variable_size();
@@ -117,11 +117,11 @@ max_variable_size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu, depolanan değerleri `_Nblocks` ve `_Nallocs` sıfıra başlatır.
+Oluşturucu depolanan değerleri `_Nblocks` ve `_Nallocs` sıfıra başlanır.
 
-## <a name="released"></a>max_variable_size:: yayınlandı
+## <a name="max_variable_sizereleased"></a><a name="released"></a>max_variable_size::serbest bırakıldı
 
-, Ücretsiz listedeki bellek bloklarının sayısını azaltır.
+Boş listedeki bellek bloklarının sayısını erteler.
 
 ```cpp
 void released();
@@ -129,11 +129,11 @@ void released();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, depolanan değeri `_Nblocks`azaltır. Geçerli Max sınıfının `cache_freelist::allocate` üyeişlevi,boşlistedenbirbellekbloğunuher`released` kaldırdığında tarafından çağrılır.
+Bu üye işlev depolanan değeri `_Nblocks`üçer. Geçerli `released` max sınıfın üye işlevi, `cache_freelist::allocate` boş listeden bir bellek bloğunu kaldırdığında çağrılır.
 
-## <a name="saved"></a>max_variable_size:: kaydedildi
+## <a name="max_variable_sizesaved"></a><a name="saved"></a>max_variable_size::kaydedildi
 
-Ücretsiz listedeki bellek bloklarının sayısını artırır.
+Boş listedeki bellek bloklarının sayısını da martılar.
 
 ```cpp
 void saved();
@@ -141,8 +141,8 @@ void saved();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, depolanan değeri `_Nblocks`arttırır. Bu üye işlevi, her bir `cache_freelist::deallocate` bellek bloğunu ücretsiz listeye yerleştirdiğinde tarafından çağrılır.
+Bu üye işlev depolanan değeri `_Nblocks`artgetirir. Bu üye işlev, `cache_freelist::deallocate` boş listeye bir bellek bloğu koyduğunda çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<tahsisat>](../standard-library/allocators-header.md)

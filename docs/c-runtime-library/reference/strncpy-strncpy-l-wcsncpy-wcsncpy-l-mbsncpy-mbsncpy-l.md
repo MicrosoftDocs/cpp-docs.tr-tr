@@ -1,6 +1,6 @@
 ---
 title: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - strncpy
 - _strncpy_l
@@ -8,6 +8,8 @@ api_name:
 - wcsncpy
 - _mbsncpy_l
 - _wcsncpy_l
+- _o__mbsncpy
+- _o__mbsncpy_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -22,6 +24,7 @@ api_location:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -65,19 +68,19 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-ms.openlocfilehash: 82e88a48752cb96cca5cb636332fa477aef13d50
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5e5ab815e95c1b8ee03cac86d5c3355874f8860b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947207"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363827"
 ---
 # <a name="strncpy-_strncpy_l-wcsncpy-_wcsncpy_l-_mbsncpy-_mbsncpy_l"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 
-Bir dizenin karakterlerini diğerine kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strncpy_s, _strncpyı_s_l, wcsncpy_s, _wcsncpyı_s_l, _mbsncpy_s, _mbsncpyı_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md).
+Bir dizedeki karakterleri diğerine kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)bakın.
 
 > [!IMPORTANT]
-> **_mbsncpy** ve **_mbsncpyı_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncpy** ve **_mbsncpy_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -159,59 +162,61 @@ unsigned char *_mbsncpy_l(
 ### <a name="parameters"></a>Parametreler
 
 *strDest*<br/>
-Hedef dize.
+Hedef dizesi.
 
 *strSource*<br/>
 Kaynak dize.
 
-*biriktirme*<br/>
+*Sayısı*<br/>
 Kopyalanacak karakter sayısı.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*StrDest*döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
+*StrDest'i döndürür.* Bir hatayı belirtmek için hiçbir iade değeri ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncpy** Işlevi, *strSource* başlangıç *sayısı* karakterlerini *strDest* olarak kopyalar ve *strDest*değerini döndürür. *Count* , *strSource*'un uzunluğuna eşit veya daha küçükse, kopyalanmış dizeye bir null karakter otomatik olarak eklenmez. *Count* , *strSource*uzunluğundan büyükse, hedef dize, uzunluk *sayısına*kadar olan null karakterlerle doldurulur. Kaynak ve hedef dizeler çakıştığında, **strncpy** davranışı tanımsızdır.
+**Strncpy** işlevi strDest için *strSource* ilk *sayım* karakterleri kopyalar ve *strDest* döndürür. *strDest* *Sayım* *strSource'un*uzunluğundan daha az veya eşitse, null karakter kopyalanan dize otomatik olarak eklenmiyor. *Sayım* *strSource*uzunluğundan büyükse, hedef dize uzunluk *sayısına*kadar null karakterlerle yastıklanır. Kaynak ve hedef dizeleri çakışıyorsa **strncpy** davranışı tanımsız.
 
 > [!IMPORTANT]
-> **strncpy** , *strDest*içinde yeterli alanı denetlemez; Bu, arabellek taşmalarının olası bir nedenini sağlar. *Count* bağımsız değişkeni, kopyalanmış karakter sayısını sınırlar; Bu, *strDest*boyutu için bir sınır değildir. Aşağıdaki örnekte bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **strncpy** *strDest*yeterli alan için kontrol etmez ; bu arabellek taşmaları olası bir nedeni yapar. *Sayım* bağımsız değişkeni kopyalanan karakter sayısını sınırlar; *strDest*boyutunda bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
 
-*StrDest* veya *strSource* **null** bir işaretçisiyse veya *sayı* sıfıra eşit veya daha küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*strDest* veya *strSource* bir **NULL** işaretçisiyse veya *sayı* sıfırdan küçük veya eşitse, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler -1 döndürün ve **EINVAL** **için errno** ayarlayın.
 
-**wcsncpy** ve **_mbsncpy** , **strncpy**öğesinin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncpy** ve **_mbsncpy** bağımsız değişkenleri ve dönüş değeri buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
+**wcsncpy** ve **_mbsncpy** **strncpy**geniş karakterli ve multibayt karakterli sürümleridir. **Wcsncpy** ve **_mbsncpy** bağımsız değişkenleri ve getiri değeri buna göre değişir. Bu altı fonksiyon aynı şekilde çalışır.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**Bu işlevlerin _l** sonekli sürümleri, yerel liğe bağımlı davranışları için geçerli yerel alan yerine geçirilen yerel liği kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevlerin daha yeni ve güvenli karşıtlarını çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncpy**|**strncpy**|**_mbsnbcpy**|**wcsncpy**|
-|**_tcsncpyı_l**|**_strncpyı_l**|**_mbsnbcpy_l**|**_wcsncpy_l**|
+|**_tcsncpy_l**|**_strncpy_l**|**_mbsnbcpy_l**|**_wcsncpy_l**|
 
 > [!NOTE]
-> **_strncpyı_l** ve **_wcsncpyı_l** yerel ayar bağımlılığı yok; yalnızca **_tcsncpyı_l** için sağlanır ve doğrudan çağrılması amaçlanmamıştır.
+> **_strncpy_l** ve **_wcsncpy_l** yerel bağımlılık ları yoktur; sadece **_tcsncpy_l** için sağlanmaktadır ve doğrudan çağrılması amaçlanmamıştır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncpy**|\<String. h >|
-|**wcsncpy**|\<String. h > veya \<wchar. h >|
-|**_mbsncpy**, **_mbsncpyı_l**|\<mbstring. h >|
+|**strncpy**|\<string.h>|
+|**wcsncpy**|\<string.h> \<veya wchar.h>|
+|**_mbsncpy**, **_mbsncpy_l**|\<mbstring.h>|
 
-Ek platform uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek platform uyumluluk bilgileri için [Uyumluluk'a](../../c-runtime-library/compatibility.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, **strncpy** kullanımını ve program hataları ve güvenlik sorunlarına yol açabilecek şekilde nasıl kötüye kullanılacağını göstermektedir. Derleyici, crt_strncpy_x86. c (15) ile **benzer her **strncpy** çağrısı için bir uyarı oluşturur: Warning C4996: ' strncpy ': Bu işlev veya değişken güvenli olmayabilir. Bunun yerine strncpy_s kullanmayı düşünün. Kullanımdan kaldırmayı devre dışı bırakmak için _CRT_SECURE_NO_WARNINGS kullanın. Ayrıntılar için çevrimiçi yardıma bakın.**
+Aşağıdaki örnek, **strncpy** kullanımını ve program hataları ve güvenlik sorunlarına neden nasıl kötüye olabilir gösterir. Derleyici, crt_strncpy_x86.c(15) ile benzer **her** çağrı için bir uyarı **oluşturur: Uyarı C4996: 'strncpy': Bu işlev veya değişken güvenli olmayabilir. Bunun yerine strncpy_s kullanmayı düşünün. Amortismanı devre dışı kalmak için _CRT_SECURE_NO_WARNINGS kullanın. Ayrıntılar için çevrimiçi yardıma bakın.**
 
 ```C
 // crt_strncpy_x86.c
@@ -265,7 +270,7 @@ int main() {
 }
 ```
 
-Çıkış
+Çıktı
 
 ```Output
 ZZ
@@ -276,12 +281,12 @@ dogs like to chase cars.
 Buffer overrun: s = 'ars.' (should be 'test')
 ```
 
-Otomatik değişkenlerin yerleşimi ve hata algılama ve kod koruma düzeyi, değişen derleyici ayarları ile farklılık gösterebilir. Bu örnek, diğer derleme ortamlarında veya diğer derleyici seçenekleriyle oluşturulduğunda farklı sonuçlara sahip olabilir.
+Otomatik değişkenlerin düzeni ve hata algılama ve kod koruma düzeyi değiştirilen derleyici ayarlarına göre değişebilir. Bu örnek, diğer derleme ortamlarında veya diğer derleyici seçenekleriyle oluşturulmuş olduğunda farklı sonuçlar doğurabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

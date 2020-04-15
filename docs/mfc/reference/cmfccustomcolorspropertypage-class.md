@@ -1,5 +1,5 @@
 ---
-title: CMFCCustomColorsPropertyPage sınıfı
+title: CMFCCustomColorsPropertyPage Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCCustomColorsPropertyPage
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCCustomColorsPropertyPage [MFC], Setup
 ms.assetid: 46a45ba2-1fda-440d-8018-d4dcd44f5816
-ms.openlocfilehash: b28711991835dd14929e5387709046c3867c715e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01b73f44fcf26a820e43eb87a65e99c2ec186e64
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403704"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367658"
 ---
-# <a name="cmfccustomcolorspropertypage-class"></a>CMFCCustomColorsPropertyPage sınıfı
+# <a name="cmfccustomcolorspropertypage-class"></a>CMFCCustomColorsPropertyPage Sınıfı
 
-Özel renkler bir renk iletişim kutusunda seçim yapabileceğiniz bir özellik sayfasını temsil eder.
+Renk iletişim kutusunda özel renkleri seçebilen bir özellik sayfasını temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,49 +31,49 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 
 |||
 |-|-|
-|Ad|Açıklama|
-|`CMFCCustomColorsPropertyPage::CMFCCustomColorsPropertyPage`|Varsayılan Oluşturucu.|
+|Adı|Açıklama|
+|`CMFCCustomColorsPropertyPage::CMFCCustomColorsPropertyPage`|Varsayılan oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Ad|Açıklama|
-|`CMFCCustomColorsPropertyPage::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|`CMFCCustomColorsPropertyPage::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCCustomColorsPropertyPage::Setup](#setup)|Özellik sayfasını renk bileşenlerinin ayarlar.|
+|Adı|Açıklama|
+|`CMFCCustomColorsPropertyPage::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
+|`CMFCCustomColorsPropertyPage::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCCustomColorsÖzellik::Kurulum](#setup)|Özellik sayfasının renk bileşenlerini ayarlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCColorDialog` Sınıfı özel renk özellik sayfasını görüntülemek için bu sınıfı kullanır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).
+Sınıf, `CMFCColorDialog` özel renk özelliği sayfasını görüntülemek için bu sınıfı kullanır. Hakkında `CMFCColorDialog`daha fazla bilgi için [CMFCColorDialog Class'a](../../mfc/reference/cmfccolordialog-class.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCCustomColorsPropertyPage` nesne ve özellik sayfasının renk bileşenlerine ayarlayın.
+Aşağıdaki örnek, bir `CMFCCustomColorsPropertyPage` nesnenin nasıl oluşturup özellik sayfasının renk bileşenlerinin ayarlanıştını gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#35](../../mfc/reference/codesnippet/cpp/cmfccustomcolorspropertypage-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CDialog](../../mfc/reference/cdialog-class.md)
+[Cdialog](../../mfc/reference/cdialog-class.md)
 
-[CPropertyPage](../../mfc/reference/cpropertypage-class.md)
+[Cpropertypage](../../mfc/reference/cpropertypage-class.md)
 
 [CMFCCustomColorsPropertyPage](../../mfc/reference/cmfccustomcolorspropertypage-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcustomcolorspropertypage.h
+**Üstbilgi:** afxcustomcolorspropertypage.h
 
-##  <a name="setup"></a>  CMFCCustomColorsPropertyPage::Setup
+## <a name="cmfccustomcolorspropertypagesetup"></a><a name="setup"></a>CMFCCustomColorsÖzellik::Kurulum
 
-Özellik sayfasını renk bileşenlerinin ayarlar.
+Özellik sayfasının renk bileşenlerini ayarlar.
 
 ```
 void Setup(
@@ -87,13 +87,13 @@ void Setup(
 |||
 |-|-|
 |Parametre|Açıklama|
-|*R*|[in] Kırmızı bileşeni RGB değeri.|
-|*G*|[in] RGB değeri için yeşil bileşeni.|
-|*B*|[in] Mavi bileşeni RGB değeri.|
+|*R*|[içinde] RGB değerinin kırmızı bileşeni.|
+|*G*|[içinde] RGB değerinin yeşil bileşeni.|
+|*B*|[içinde] RGB değerinin mavi bileşeni.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, geçerli RGB ve ilişkili HLS (hue, açıklık ve Doygunluk) renk değerleri özellik sayfasının güncelleştirir. [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) yöntemi renk iletişim kutusu çerçevesi başlatır veya kullanıcının sol fare düğmesine bastığında bu yöntemi çağırır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).
+Bu yöntem, özellik sayfasının geçerli RGB ve ilişkili HLS (renk tonu, hafiflik ve doygunluk) renk değerlerini güncelleştirir. [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) yöntemi, çerçeve renk iletişim kutusunu açar veya kullanıcı sol fare düğmesine bastığında bu yöntemi çağırır. Hakkında `CMFCColorDialog`daha fazla bilgi için [CMFCColorDialog Class'a](../../mfc/reference/cmfccolordialog-class.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

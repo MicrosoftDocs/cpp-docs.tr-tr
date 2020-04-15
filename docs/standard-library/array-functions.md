@@ -1,5 +1,5 @@
 ---
-title: '&lt;dizi&gt; işlevleri'
+title: '&lt;dizi&gt; fonksiyonları'
 ms.date: 11/04/2016
 f1_keywords:
 - array/std::array::get
@@ -10,24 +10,24 @@ helpviewer_keywords:
 - std::array [C++], get
 - std::get [C++]
 - std::swap [C++]
-ms.openlocfilehash: 61b5404d0f22cd902e35f6bee680df3c719804f2
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: d54e430853959c77b4042092409a8640a169e4c8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364936"
 ---
-# <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
+# <a name="ltarraygt-functions"></a>&lt;dizi&gt; fonksiyonları
 
-\<dizi > üst bilgisi, **dizi** nesnelerinde çalışan, `get` ve `swap`üye olmayan iki işlev içerir.
+Dizi \<> üstbilgi, `get` üye olmayan iki `swap`işlev içerir ve **dizi** nesneleri üzerinde çalışan iki işlev içerir.
 
 |||
 |-|-|
-|[get](#get)|[Kur](#swap)|
+|[get](#get)|[Takas](#swap)|
 
-## <a name="get"></a>Al
+## <a name="get"></a><a name="get"></a>Al
 
-Dizinin belirtilen öğesine bir başvuru döndürür.
+Dizinin belirtilen öğesine bir başvuru verir.
 
 ```cpp
 template <int Index, class T, size_t N>
@@ -43,7 +43,7 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *Dizin*\
-Öğe boşluğu.
+Eleman ofset.
 
 *T*\
 Öğenin türü.
@@ -51,7 +51,7 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 *N*\
 Dizideki öğelerin sayısı
 
-*ARR*\
+*Arr*\
 Seçilecek dizi.
 
 ### <a name="example"></a>Örnek
@@ -86,9 +86,9 @@ int main()
 1 3
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Takas
 
-İki **dizi** nesnesini değiştiren `std::swap` üye olmayan şablon özelleştirmesi.
+Bu iki `std::swap` **dizi** nesnesi takas üye olmayan bir şablon uzmanlık.
 
 ```cpp
 template <class Ty, std::size_t N>
@@ -103,15 +103,15 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 *N*\
 Dizinin boyutu.
 
-*sol*\
-Takas edilecek ilk dizi.
+*Sol*\
+Takas için ilk dizi.
 
-*sağ*\
-Takas edilecek ikinci dizi.
+*Doğru*\
+Takas için ikinci dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.swap(right)`yürütür.
+Şablon işlevi yürütür. `left.swap(right)`
 
 ### <a name="example"></a>Örnek
 
@@ -161,4 +161,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi >](../standard-library/array.md)
+[\<dizi>](../standard-library/array.md)

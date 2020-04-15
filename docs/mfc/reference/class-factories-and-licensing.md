@@ -4,34 +4,34 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-ms.openlocfilehash: 18d86122e57af056a50a4d94bac89d65a7b71c7d
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: e3fed6520cdbe0fd964e4e80e7c9ed9b78296d16
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372305"
 ---
 # <a name="class-factories-and-licensing"></a>Sınıf Oluşturucular ve Lisanslama
 
-OLE denetiminizin bir örneğini oluşturmak için bir kapsayıcı uygulaması, denetimin sınıf fabrikasının üye işlevini çağırır. Denetiminiz gerçek bir OLE nesnesi olduğundan, bir sınıf fabrikası denetiminizin örneklerini oluşturmaktan sorumludur. Her OLE denetim sınıfının bir sınıf fabrikası olmalıdır.
+OLE denetiminizin bir örneğini oluşturmak için, bir kapsayıcı uygulaması denetimin sınıf fabrikasının bir üye işlevini çağırır. Denetiminiz gerçek bir OLE nesnesi olduğundan, sınıf fabrikası denetiminizin örneklerini oluşturmaktan sorumludur. Her OLE kontrol sınıfının bir sınıf fabrikası olmalıdır.
 
-OLE denetimlerinin başka bir önemli özelliği de lisans zorlayabilme yeteneğidir. ControlWizard, denetim projenizin oluşturulması sırasında lisanslama eklemenize olanak tanır. Denetim lisanslama hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: ActiveX denetimini lisanslama](../../mfc/mfc-activex-controls-licensing-an-activex-control.md).
+OLE denetimlerinin bir diğer önemli özelliği de lisans uygulama yetenekleridir. ControlWizard, denetim projenizin oluşturulması sırasında lisanslama yı dahil etmenizi sağlar. Denetim lisanslama hakkında daha fazla bilgi için [ActiveX Denetimleri makalesine bakın: ActiveX Denetimi Lisanslama.](../../mfc/mfc-activex-controls-licensing-an-activex-control.md)
 
-Aşağıdaki tabloda, denetiminizin sınıf fabrikasını bildirmek ve uygulamak ve denetiminizin lisanslamak için kullanılan çeşitli makrolar ve işlevler listelenmektedir.
+Aşağıdaki tablo, denetiminizin sınıf fabrikasını bildirmek ve uygulamak ve denetiminizi lisanslamak için kullanılan çeşitli makroları ve işlevleri listeler.
 
 ### <a name="class-factories-and-licensing"></a>Sınıf Oluşturucular ve Lisanslama
 
 |||
 |-|-|
-|[DECLARE_OLECREATE_EX](#declare_olecreate_ex)|OLE denetimi veya özellik sayfası için sınıf fabrikası bildirir.|
-|[IMPLEMENT_OLECREATE_EX](#implement_olecreate_ex)|Denetimin `GetClassID` işlevini uygular ve sınıf fabrikasının bir örneğini bildirir.|
-|[BEGIN_OLEFACTORY](#begin_olefactory)|Herhangi bir lisans işlevinin bildirimini başlatır.|
-|[END_OLEFACTORY](#end_olefactory)|Herhangi bir lisans işlevinin bildirimini sonlandırır.|
-|[AfxVerifyLicFile](#afxverifylicfile)|Bir denetimin belirli bir bilgisayarda kullanım için lisanslanmış olup olmadığını doğrular.|
+|[DECLARE_OLECREATE_EX](#declare_olecreate_ex)|Sınıf fabrikasını OLE denetimi veya özellik sayfası olarak bildirir.|
+|[IMPLEMENT_OLECREATE_EX](#implement_olecreate_ex)|Denetimişlevini `GetClassID` uygular ve sınıf fabrikasının bir örneğini bildirir.|
+|[BEGIN_OLEFACTORY](#begin_olefactory)|Herhangi bir lisans işlevlerinin bildirimini başlatın.|
+|[END_OLEFACTORY](#end_olefactory)|Herhangi bir lisans işlevlerinin bildirimini sona erdirer.|
+|[AfxVerifyLicFile](#afxverifylicfile)|Denetimin belirli bir bilgisayarda kullanılmak üzere lisanslı olup olmadığını doğrular.|
 
-##  <a name="declare_olecreate_ex"></a>DECLARE_OLECREATE_EX
+## <a name="declare_olecreate_ex"></a><a name="declare_olecreate_ex"></a>DECLARE_OLECREATE_EX
 
-Bir sınıf fabrikası ve denetim sınıfınızın `GetClassID` üye işlevini bildirir.
+Bir sınıf fabrikasını `GetClassID` ve denetim sınıfınızın üye işlevini bildirir.
 
 ```
 DECLARE_OLECREATE_EX(class_name)
@@ -40,23 +40,23 @@ DECLARE_OLECREATE_EX(class_name)
 ### <a name="parameters"></a>Parametreler
 
 *class_name*<br/>
-Denetim sınıfının adı.
+Kontrol sınıfının adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makroyu, lisansı desteklemeyen bir denetim için denetim sınıfı üstbilgi dosyasında kullanın.
+Lisanslamayı desteklemeyen bir denetim için bu makroyu denetim sınıfı üstbilgi dosyasında kullanın.
 
-Bu makronun aşağıdaki kod örneğiyle aynı amaca hizmet ettiği unutulmamalıdır:
+Bu makronun aşağıdaki kod örneğiyle aynı amaca hizmet ettiğini unutmayın:
 
 [!code-cpp[NVC_MFCAxCtl#14](../../mfc/reference/codesnippet/cpp/class-factories-and-licensing_1.h)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="implement_olecreate_ex"></a>IMPLEMENT_OLECREATE_EX
+## <a name="implement_olecreate_ex"></a><a name="implement_olecreate_ex"></a>IMPLEMENT_OLECREATE_EX
 
-Denetim sınıfınızın, denetimin sınıf fabrikasını ve [Getclassid](../../mfc/reference/colecontrol-class.md#getclassid) üye işlevini uygular.
+Denetiminizin sınıf fabrikasını ve denetim sınıfınızın [GetClassID](../../mfc/reference/colecontrol-class.md#getclassid) üye işlevini uygular.
 
 ```
 IMPLEMENT_OLECREATE_EX(
@@ -78,25 +78,25 @@ IMPLEMENT_OLECREATE_EX(
 ### <a name="parameters"></a>Parametreler
 
 *class_name*<br/>
-Denetim özelliği sayfa sınıfının adı.
+Denetim özelliği sayfası sınıfının adı.
 
 *external_name*<br/>
-Uygulamalara sunulan nesne adı.
+Uygulamalara maruz kalan nesne adı.
 
-*l, W1, W2, B1, B2, B3, B4, B5, B6, B7, B8*<br/>
-Sınıfın CLSID 'SI. Bu parametreler hakkında daha fazla bilgi için bkz. [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate)açıklamaları.
+*l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8*<br/>
+Sınıfın CLSID bileşenleri. Bu parametreler hakkında daha fazla bilgi [için, IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate)için Açıklamalar'a bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, DECLARE_OLECREATE_EX makrosunu veya BEGIN_OLEFACTORY ve END_OLEFACTORY makrolarını kullanan herhangi bir denetim sınıfı için uygulama dosyasında görünmelidir. Dış ad, diğer uygulamalara sunulan OLE denetiminin tanımlayıcısıdır. Kapsayıcılar bu denetim sınıfının bir nesnesini istemek için bu adı kullanır.
+Bu makro, DECLARE_OLECREATE_EX makroyu veya BEGIN_OLEFACTORY ve END_OLEFACTORY makrolarını kullanan herhangi bir denetim sınıfı için uygulama dosyasında görünmelidir. Dış ad, diğer uygulamalara maruz kalan OLE denetiminin tanımlayıcısýdýr. Kapsayıcılar bu denetim sınıfının bir nesnesini istemek için bu adı kullanır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="begin_olefactory"></a>BEGIN_OLEFACTORY
+## <a name="begin_olefactory"></a><a name="begin_olefactory"></a>BEGIN_OLEFACTORY
 
-Denetim sınıfınızın üstbilgi dosyasında sınıf fabrikanızın bildirimini başlatır.
+Denetim sınıfınızın üstbilgi dosyasında sınıf fabrikanızın bildirimibaşlar.
 
 ```
 BEGIN_OLEFACTORY(class_name)
@@ -109,15 +109,15 @@ Sınıf fabrikası bu olan denetim sınıfının adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf fabrikası lisanslama işlevlerinin bildirimleri BEGIN_OLEFACTORY hemen sonra başlamalıdır.
+Sınıf fabrika lisanslama işlevlerinin bildirimleri BEGIN_OLEFACTORY hemen sonra başlamalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="end_olefactory"></a>END_OLEFACTORY
+## <a name="end_olefactory"></a><a name="end_olefactory"></a>END_OLEFACTORY
 
-Denetiminizin sınıf fabrikasının bildirimini sonlandırır.
+Kontrolünüzün sınıf fabrikasının bildirimisona erer.
 
 ```
 END_OLEFACTORY(class_name)
@@ -126,15 +126,15 @@ END_OLEFACTORY(class_name)
 ### <a name="parameters"></a>Parametreler
 
 *class_name*<br/>
-Sınıf fabrikası olan denetim sınıfının adı.
+Sınıf fabrikası bu olan kontrol sınıfının adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
-##  <a name="afxverifylicfile"></a>AfxVerifyLicFile
+## <a name="afxverifylicfile"></a><a name="afxverifylicfile"></a>AfxVerifyLicFile
 
-`pszLicFileName` tarafından adlandırılan lisans dosyasının OLE denetimi için geçerli olduğunu doğrulamak için bu işlevi çağırın.
+Adlandırılmış lisans dosyasının OLE `pszLicFileName` denetimi için geçerli olduğunu doğrulamak için bu işlevi arayın.
 
 ```
 BOOL AFXAPI AfxVerifyLicFile(
@@ -146,32 +146,32 @@ BOOL AFXAPI AfxVerifyLicFile(
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*<br/>
-Lisanslı denetimle ilişkili DLL 'nin örnek tanıtıcısı.
+*Hınstance*<br/>
+Lisanslı denetimle ilişkili DLL'nin örnek tutamacı.
 
 *pszLicFileName*<br/>
-Lisans dosya adını içeren null ile sonlandırılmış bir karakter dizesini işaret eder.
+Lisans dosya adını içeren geçersiz sonlandırılmış karakter dizesini işaret eder.
 
 *pszLicFileContents*<br/>
-Lisans dosyasının başlangıcında bulunan sırayla eşleşmesi gereken bir bayt dizisine işaret eder.
+Lisans dosyasının başında bulunan sırayla eşleşmesi gereken bir bayt sırasına işaret eder.
 
-*CCH*<br/>
-*PszLicFileContents*içindeki karakter sayısı.
+*Cch*<br/>
+*pszLicFileContents*karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Lisans dosyası varsa sıfır dışında ve *pszLicFileContents*; karakter dizisiyle başlıyorsa Aksi takdirde 0.
+Lisans dosyası varsa ve *pszLicFileContents*karakter dizisi ile başlar Sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*CCH* -1 ise, bu işlev şunları kullanır:
+*Cch* -1 ise, bu işlev kullanır:
 
 [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxctl. h
+  **Üstbilgi** afxctl.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

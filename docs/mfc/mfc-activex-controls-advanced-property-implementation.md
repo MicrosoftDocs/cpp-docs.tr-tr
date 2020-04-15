@@ -1,79 +1,79 @@
 ---
-title: 'MFC ActiveX denetimleri: Gelişmiş özellik uygulama'
+title: 'MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], error codes
 - properties [MFC], ActiveX controls
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-ms.openlocfilehash: 438c95c56961cc587b64e494678ade191f18ab6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4f1265e6540e9f84bdb680e7948a4e308d31bb0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392810"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364645"
 ---
-# <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX denetimleri: Gelişmiş özellik uygulama
+# <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama
 
-Bu makalede, bir ActiveX denetimi özelliklerini Gelişmiş uygulama için ilgili konuları açıklanır.
+Bu makalede, activex denetiminde gelişmiş özelliklerin uygulanmasıyla ilgili konular açıklanmaktadır.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-- [Salt okunur ve salt yazılır Özellikler](#_core_read2donly_and_write2donly_properties)
+- [Salt okunur ve yalnızca yazma özellikleri](#_core_read2donly_and_write2donly_properties)
 
-- [Bir özellikten hata kodları döndürme](#_core_returning_error_codes_from_a_property)
+- [Bir özellikten hata kodlarını döndürme](#_core_returning_error_codes_from_a_property)
 
-##  <a name="_core_read2donly_and_write2donly_properties"></a> Salt okunur ve salt yazılır Özellikler
+## <a name="read-only-and-write-only-properties"></a><a name="_core_read2donly_and_write2donly_properties"></a>Salt Okunur ve Yalnızca Yazma Özellikleri
 
-Özellik Ekleme Sihirbazı'nı denetimi için salt okunur veya salt yazılır özellikler uygulamak için hızlı ve kolay bir yöntem sağlar.
+Özellik Ekle Sihirbazı, denetim için salt okunur veya yalnızca yazma özelliklerini uygulamak için hızlı ve kolay bir yöntem sağlar.
 
-#### <a name="to-implement-a-read-only-or-write-only-property"></a>Bir salt okunur veya salt yazılır özelliği uygulamak için
+#### <a name="to-implement-a-read-only-or-write-only-property"></a>Salt okunur veya yalnızca yazma özelliğini uygulamak için
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde denetim kitaplığı düğümünü genişletin.
+1. Sınıf Görünümü'nde, denetiminizin kitaplık düğümunu genişletin.
 
-1. Arabirim (ikinci düğüm kitaplığı düğümünün) denetlemek için kısayol menüsünü açmak için düğümü.
+1. Kısayol menüsünü açmak için denetiminiz için arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
 
-1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
+1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Özellik Ekle'yi**tıklatın.
 
-   Bu açılır [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md).
+   Bu Özellik [Ekle Sihirbazı'nı](../ide/names-add-property-wizard.md)açar.
 
-1. İçinde **özellik adı** , özelliğin adını yazın.
+1. Özellik **Adı** kutusuna, mülkünuzun adını yazın.
 
-1. İçin **uygulama türü**, tıklayın **Get/Set yöntemleri**.
+1. **Uygulama Türü** **için, Yöntemleri Al/Ayarla'yı**tıklatın.
 
-1. İçinde **özellik türü** kutusunda, uygun türde bir özellik için seçin.
+1. Özellik **Türü** kutusunda, özellik için uygun türü seçin.
 
-1. Salt okunur bir özellik kümesi işlevi adı temizleyin. Salt yazılır özellik Get işlev adı temizleyin.
+1. Salt okunur bir özellik istiyorsanız, Set işlev adını temizleyin. Yalnızca yazma özelliği istiyorsanız, İşlev adını al'ı temizleyin.
 
-9. **Son**'a tıklayın.
+1. **Son**'a tıklayın.
 
-Bunu yaptığınızda, Özellik Ekleme Sihirbazı'nı işlevi ekler `SetNotSupported` veya `GetNotSupported` yerine normal bir dağıtım eşleme girişi ayarlayın veya alın işlevi.
+Bunu yaptığınızda, Özellik Ekle Sihirbazı işlevi `SetNotSupported` `GetNotSupported` ekler veya normal bir Küme veya Get işlevi yerine sevk haritası girişine.
 
-Salt okunur veya sadece yazılabilir olması için var olan bir özelliği değiştirmek istiyorsanız, dağıtım eşlemesi el ile düzenlemeniz ve gereksiz ayarlama veya alma işlevi denetim sınıfından kaldırın.
+Varolan bir özelliği salt okunur veya yalnızca yazacak şekilde değiştirmek istiyorsanız, gönderim eşlebini el ile değiştirebilir ve gereksiz Ayar veya Al işlevini denetim sınıfından kaldırabilirsiniz.
 
-Bir özellik koşullu olarak salt okunur veya salt yazılır (örneğin, yalnızca belirli bir modunda denetiminiz çalışırken) olmasını istiyorsanız, normal, ayarlama veya alma işlevi sağlar ve çağrı `SetNotSupported` veya `GetNotSupported` uygun yerlerde işlev. Örneğin:
+Bir özelliğin koşullu olarak salt okunur veya yalnızca yazma olmasını istiyorsanız (örneğin, denetiminiz yalnızca belirli bir modda çalışıyorsa), Normal `SetNotSupported` olarak `GetNotSupported` Ayarla veya Al işlevini sağlayabilir ve uygun olduğu durumlarda veya işlevi arayabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_MFC_AxUI#29](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-property-implementation_1.cpp)]
 
-Bu kod örneği çağrıları `SetNotSupported` varsa `m_bReadOnlyMode` veri üyesi **TRUE**. Varsa **FALSE**, özelliği, yeni değere ayarlanır.
+Veri üyesi **TRUE**ise bu kod örneği çağırır. `SetNotSupported` `m_bReadOnlyMode` **FALSE**ise, özellik yeni değere ayarlanır.
 
-##  <a name="_core_returning_error_codes_from_a_property"></a> Bir özellikten hata kodları döndürme
+## <a name="returning-error-codes-from-a-property"></a><a name="_core_returning_error_codes_from_a_property"></a>Bir Özellikten Hata Kodlarını Döndürme
 
-Get veya özellik ayarlama girişimi sırasında bir hata oluştu belirtmek için kullanın `COleControl::ThrowError` işlevinin bir ' % s'SCODE (durum kodu) parametre olarak alır. Önceden tanımlanmış SCODE kullanabilir veya kendi tanımlayın. Önceden tanımlanmış SCODEs ve özel SCODEs tanımlamaya yönelik yönergeler listesi için bkz. [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makale ActiveX denetimleri: Gelişmiş Konular.
+Bir özelliği almaya veya ayarlamaya çalışırken bir hata oluştuğunu belirtmek `COleControl::ThrowError` için, parametre olarak Bir SCODE (durum kodu) alan işlevi kullanın. Önceden tanımlanmış bir SCODE kullanabilir veya kendi kodunuzu tanımlayabilirsiniz. Önceden tanımlanmış SCOD'ların listesi ve özel SCOD'ları tanımlama yönergeleri için ActiveX denetimleri: Gelişmiş Konular makalesinde [ActiveX Denetiminizdeki İşlem Hataları'na](../mfc/mfc-activex-controls-advanced-topics.md) bakın.
 
-Yardımcı işlevleri mevcut SCODEs, en yaygın gibi önceden tanımlanmış [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).
+Yardımcı işlevler [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported)ve [COleControl::SetNotAllowed](../mfc/reference/colecontrol-class.md#setnotpermitted)gibi en yaygın önceden tanımlanmış SCODEs için var .
 
 > [!NOTE]
->  `ThrowError` bir özelliğin Get veya Set içindeki bir hatadan döndüren yalnızca bir yol olarak kullanılmak üzere tasarlanmıştır işlevi veya Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyicisi olacak kez yığında sunar.
+> `ThrowError`yalnızca bir mülkün Get or Set işlevi veya bir otomasyon yöntemi içinden bir hatayı döndürmek için kullanılır. Bunlar, yığında uygun özel durum işleyicisinin bulunacağı tek zamanlardır.
 
-Diğer alanlarda özel durumları kodun Raporlama ile ilgili daha fazla bilgi için [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.
+Kodun diğer alanlarındaki özel durumları raporlama hakkında daha fazla bilgi için [Bkz.](../mfc/reference/colecontrol-class.md#fireerror) [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
 [MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

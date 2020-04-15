@@ -1,5 +1,5 @@
 ---
-title: CCubicTransition sınıfı
+title: CCubicTransition Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CCubicTransition
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - CCubicTransition [MFC], m_dblFinalVelocity
 - CCubicTransition [MFC], m_duration
 ms.assetid: 4fc30e9c-160c-45e1-bdbe-51adf8fee9c5
-ms.openlocfilehash: b6bb626f944ce87748809a5eb03a6f06f92c3de5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: de376503111dab157ca34744863fb1d35a58785e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507134"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369343"
 ---
-# <a name="ccubictransition-class"></a>CCubicTransition sınıfı
+# <a name="ccubictransition-class"></a>CCubicTransition Sınıfı
 
-Üçüncü dereceden geçişi kapsüller.
+Kübik geçişi kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,31 +37,31 @@ class CCubicTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCubicTransition:: CCubicTransition](#ccubictransition)|Bir geçiş nesnesi oluşturur ve parametrelerini başlatır.|
+|[CCubicTransition::CCubicTransition](#ccubictransition)|Bir geçiş nesnesi oluşturuyor ve parametrelerini başharfe doğru laştırır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCubicTransition:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
+|[CCubicTransition::Oluştur](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCubicTransition:: m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
-|[CCubicTransition:: m_dblFinalVelocity](#m_dblfinalvelocity)|Geçişin sonundaki değişkenin hızı.|
-|[CCubicTransition:: m_duration](#m_duration)|Geçişin süresi.|
+|[CCubicTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
+|[CCubicTransition::m_dblFinalVelocity](#m_dblfinalvelocity)|Geçiş sonundaki değişkenin hızı.|
+|[CCubicTransition::m_duration](#m_duration)|Geçiş süresi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Üçüncü dereceden geçiş sırasında animasyon değişkeninin değeri, belirtilen bir hızdan itibaren geçiş süresince ilk değerinden belirtilen bir son değere değişir. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
+Bir kübik geçiş sırasında, animasyon değişkeninin değeri, geçiş süresi boyunca başlangıç değerinden belirli bir son değere dönüşür ve belirli bir hızda sona erer. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
@@ -69,11 +69,11 @@ class CCubicTransition : public CBaseTransition;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="ccubictransition"></a>CCubicTransition:: CCubicTransition
+## <a name="ccubictransitionccubictransition"></a><a name="ccubictransition"></a>CCubicTransition::CCubicTransition
 
-Bir geçiş nesnesi oluşturur ve parametrelerini başlatır.
+Bir geçiş nesnesi oluşturuyor ve parametrelerini başharfe doğru laştırır.
 
 ```
 CCubicTransition(
@@ -84,18 +84,18 @@ CCubicTransition(
 
 ### <a name="parameters"></a>Parametreler
 
-*Süresi*<br/>
-Geçişin süresi.
+*Süre*<br/>
+Geçiş süresi.
 
-*Sonlandırdeğer*<br/>
+*finalValue*<br/>
 Geçişin sonundaki animasyon değişkeninin değeri.
 
-*Sonlandırım*<br/>
-Geçişin sonundaki değişkenin hızı.
+*finalVelocity*<br/>
+Geçiş sonundaki değişkenin hızı.
 
-##  <a name="create"></a>CCubicTransition:: Create
+## <a name="ccubictransitioncreate"></a><a name="create"></a>CCubicTransition::Oluştur
 
-Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
+Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -105,14 +105,14 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pLibrary*<br/>
-Standart geçişlerin kitaplığını tanımlayan [ıuıanimationgeçişli Tionlibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)yönelik bir işaretçi.
+*pKütüphane*<br/>
+Standart geçişler kitaplığını tanımlayan [IUIAnimationTransitionLibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
+Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_dblfinalvalue"></a>CCubicTransition:: m_dblFinalValue
+## <a name="ccubictransitionm_dblfinalvalue"></a><a name="m_dblfinalvalue"></a>CCubicTransition::m_dblFinalValue
 
 Geçişin sonundaki animasyon değişkeninin değeri.
 
@@ -120,17 +120,17 @@ Geçişin sonundaki animasyon değişkeninin değeri.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_dblfinalvelocity"></a>CCubicTransition:: m_dblFinalVelocity
+## <a name="ccubictransitionm_dblfinalvelocity"></a><a name="m_dblfinalvelocity"></a>CCubicTransition::m_dblFinalVelocity
 
-Geçişin sonundaki değişkenin hızı.
+Geçiş sonundaki değişkenin hızı.
 
 ```
 DOUBLE m_dblFinalVelocity;
 ```
 
-##  <a name="m_duration"></a>CCubicTransition:: m_duration
+## <a name="ccubictransitionm_duration"></a><a name="m_duration"></a>CCubicTransition::m_duration
 
-Geçişin süresi.
+Geçiş süresi.
 
 ```
 UI_ANIMATION_SECONDS m_duration;

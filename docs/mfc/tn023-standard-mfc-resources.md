@@ -1,101 +1,101 @@
 ---
-title: 'TN023: Standart MFC kaynakları'
+title: 'TN023: Standart MFC Kaynakları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - resources [MFC]
 - TN023
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-ms.openlocfilehash: b6a1978a92fcf53de7caacd41c01a91ff16a3fc3
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 90e7b9b7c354ba919c3dee279725b4498bea57ff
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611409"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370376"
 ---
-# <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC kaynakları
+# <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC Kaynakları
 
-Bu not ile sağlanan ve MFC kitaplık için gereken standart kaynakları açıklar.
+Bu not, MFC kitaplığı tarafından sağlanan ve gereken standart kaynakları açıklar.
 
-## <a name="standard-resources"></a>Standart kaynaklar
+## <a name="standard-resources"></a>Standart Kaynaklar
 
-MFC uygulamanızda kullanabileceğiniz önceden tanımlanmış kaynakları iki kategoriye sağlar: küçük resim kaynakları ve standart framework kaynakları.
+MFC, uygulamanızda kullanabileceğiniz iki önceden tanımlanmış kaynak kategorisi sunar: küçük resim kaynakları ve standart çerçeve kaynakları.
 
-Küçük resim, framework, bağlı değildir, ancak, uygulamanızın kullanıcı arabirimi eklemek isteyebileceğiniz ek kaynaklar kaynaklardır. Aşağıdaki küçük resim kaynakları MFC genel örnekte bulunan [küçük](../overview/visual-cpp-samples.md):
+Küçük resim kaynakları, çerçevenin bağlı olmadığı, ancak uygulamanızın kullanıcı arabirimine eklemek isteyebileceğin ek kaynaklardır. Aşağıdaki küçük-resim kaynakları MFC Genel örnek [CLIPART'ta](../overview/visual-cpp-samples.md)yer almaktadır:
 
-- Common.rc: Tek bir içeren dosyayı kaynak:
+- Common.rc: Aşağıdakileri içeren tek bir kaynak dosyası:
 
-   - Çeşitli iş ve veri işleme görevleri temsil eden simgeler, büyük bir koleksiyonu.
+  - Çeşitli iş ve veri işleme görevlerini temsil eden büyük bir simge koleksiyonu.
 
-   - Birçok ortak İmleçler (Ayrıca bkz: Afxres.rc).
+  - Birkaç ortak imleçler (ayrıca Afxres.rc bakınız).
 
-   - Birkaç araç çubuğu düğmeleri içeren bir araç çubuğu bit eşlem.
+  - Birkaç araç çubuğu düğmesi içeren bir araç çubuğu biteşlemi.
 
-   - Commdlg.dll tarafından kullanılan bit eşlem ve simge kaynaklar.
+  - Commdlg.dll tarafından kullanılan bit eşlemi ve simge kaynakları.
 
-- Indicate.rc: Durum çubuğu anahtar durumu göstergeleri Caps Lock "sınır" gibi için dize kaynakları içerir.
+- Indicate.rc: Caps Lock için "CAP" gibi durum çubuğu anahtar durumu göstergeleri için dize kaynakları içerir.
 
-- Prompts.rc: Id_fıle_new için "Yeni belge oluştur" gibi önceden tanımlanmış her komut istemi menü dize kaynakları içerir.
+- Prompts.rc: ID_FILE_NEW için "Yeni bir belge oluşturma" gibi önceden tanımlanmış her komut için menü istemi dize kaynaklarını içerir.
 
-- COMMDLG.rc: Standart COMMDLG iletişim kutusu şablonları içeren bir Visual C++ uyumlu bir .rc dosyası.
+- Commdlg.rc: Standart COMMDLG iletişim şablonlarını içeren Görsel C++ uyumlu .rc dosyası.
 
-Standart framework kaynakları ve iç uygulamaları framework bağımlı AFX tanımlı kimlikleri kaynaklardır. Nadiren bu AFX tarafından tanımlanan kaynakları değiştirmeniz de gerekecektir. Bunu yaparsanız, bu konunun ilerleyen bölümlerinde açıklanan yordamı izlemelisiniz.
+Standart çerçeve kaynakları, çerçevenin iç uygulamalar için bağlı olduğu AFX tanımlı iD'lere sahip kaynaklardır. Bu AFX tanımlı kaynakları nadiren değiştirmeniz gerekir. Bunu yaparsanız, bu konuda daha sonra özetlenen yordamı izlemeniz gerekir.
 
-Aşağıdaki framework kaynakları MFC\INCLUDE dizinde bulunur:
+Aşağıdaki çerçeve kaynakları MFC\INCLUDE dizininde yer alır:
 
-- Afxres.rc: Framework tarafından kullanılan ortak kaynaklar.
+- Afxres.rc: Çerçeve tarafından kullanılan ortak kaynaklar.
 
-- Afxprınt.rc: Yazdırmaya özel kaynaklar.
+- Afxprint.rc: Yazdırmaya özel kaynaklar.
 
-- Afxolecl.rc: OLE istemci uygulamaları için belirli kaynaklar.
+- Afxolecl.rc: OLE istemci uygulamalarına özgü kaynaklar.
 
-- Afxolev.rc: Tüm OLE sunucu uygulamaları için belirli kaynaklar.
+- Afxolev.rc: Tam OLE sunucu uygulamalarına özgü kaynaklar.
 
-## <a name="using-clip-art-resources"></a>Küçük resim kaynakları kullanma
+## <a name="using-clip-art-resources"></a>Küçük Resim Kaynaklarını Kullanma
 
-#### <a name="to-use-a-clip-art-binary-resource"></a>Bir küçük resim ikili kaynak kullanmak için
+#### <a name="to-use-a-clip-art-binary-resource"></a>Küçük resimli ikili kaynak kullanmak için
 
-1. Visual c++'ta, uygulamanızın kaynak dosyasını açın.
+1. Uygulamanızın kaynak dosyanı Visual C++'da açın.
 
-1. Common.rc açın. Bu dosya, tüm ikili küçük resim kaynakları içerir. Common.rc dosya derlendiğinden bu biraz zaman alabilir.
+1. Common.rc'yi açın. Bu dosya tüm ikili küçük resim kaynaklarını içerir. Common.rc dosyası derlenmiş olduğundan bu işlem biraz zaman alabilir.
 
-1. Uygulamanızın kaynak dosyasına Common.rc kullanmak istediğiniz kaynakları sürüklerken CTRL tuşunu basılı tutun.
+1. Kullanmak istediğiniz kaynakları Common.rc'den uygulamanızın kaynak dosyasına sürüklerken CTRL'yi basılı tutun.
 
-Diğer küçük resim kaynakları kullanmak için aynı adımları izleyin. Tek fark, Common.rc yerine uygun .rc dosyasını açar.
-
-> [!NOTE]
->  Yanlışlıkla Common.rc kaynakları kalıcı olarak taşıyamazsınız dikkat edin. Kaynakları sürüklerken CTRL tuşunu basılı tutun, bir kopyasını oluşturur. Sürüklerken CTRL basılı değil, kaynakları taşınır. Yanlışlıkla değişiklik Common.rc dosyaya yaptığınız endişeleriniz varsa, Common.rc için değişikliklerin kaydedilip edilmeyeceğini sorulduğunda "Hayır"'i tıklatın.
+Diğer küçük resim kaynaklarını kullanmak için aynı adımları izleyin. Tek fark, Common.rc yerine uygun .rc dosyasını açacağınızdır.
 
 > [!NOTE]
->  .Rc kaynak dosyası özel bir TEXTINCLUDE kaynak yanlışlıkla standart .rc dosyaları üzerine kaydetmesini engeller bunlara sahip.
+> Kaynakları istemeden Common.rc'den kalıcı olarak çıkarmamaya dikkat edin. Kaynakları sürüklerken CTRL tuşunu tutarsanız, bir kopyasını oluşturursunuz. Sürüklerken CTRL'yi basılı tutmazsanız, kaynaklar taşınır. Common.rc dosyasında yanlışlıkla değişiklik yapmış olabileceğiniz konusunda endişeleriniz varsa, değişiklikleri Common.rc'ye kaydedip kaydetmediğiniz sorulduğunda "Hayır"ı tıklayın.
 
-### <a name="customizing-standard-framework-resources"></a>Standart Framework kaynakları ve özelleştirme
+> [!NOTE]
+> .rc kaynak dosyaları, standart .rc dosyalarının üzerine yanlışlıkla kaydetmenizi engelleyecek özel bir TEXTINCLUDE kaynağına sahiptir.
 
-Standart framework kaynakları ve genellikle dahil edilecek bir uygulamada kullanarak # uygulama kaynak dosyasına komut include. AppWizard kaynak dosyası oluşturur. Bu dosya seçtiğiniz hangi AppWizard seçeneklere bağlı olarak uygun standart framework kaynakları içerir. Gözden geçirin, ekleyebilir veya derleme zamanı yönergeleri değiştirerek kaynakları dahil kaldırabilirsiniz. Bunu yapmak için açık **kaynak** menü ve select **dahil edilenleri Ayarla**. Öğeyi Düzenle "Derleme zamanı yönergeleri" bakın. Örneğin:
+### <a name="customizing-standard-framework-resources"></a>Standart Çerçeve Kaynaklarını Özelleştirme
+
+Standart çerçeve kaynakları genellikle bir uygulamanın kaynak dosyasındaki #include komutu kullanılarak bir uygulamaya dahil edilir. AppWizard bir kaynak dosyası oluşturur. Bu dosya, seçtiğiniz AppWizard seçeneklerine bağlı olarak uygun standart çerçeve kaynaklarını içerir. Derleme zamanı yönergelerini değiştirerek hangi kaynakların dahil edildiğini gözden geçirebilir, ekleyebilir veya kaldırabilirsiniz. Bunu yapmak için **Kaynak** menüsünü açın ve **Içerir'i seçin.** "Derleme-Zaman Yönergeleri" edit öğesine bakın. Örneğin:
 
 ```
 #include "afxres.rc"
 #include "afxprint.rc"
 ```
 
-Standart framework kaynakları özelleştirilmesine en sık karşılaşılan durum ekleyerek veya ek kaldırma içerir, yazdırma için OLE istemci ve OLE sunucusu desteği.
+Standart çerçeve kaynaklarını özelleştirmenin en yaygın örneği yazdırma, OLE Client ve OLE Server desteği için ek içerir ekleme veya kaldırmadır.
 
-Standart framework kaynakları ve belirli uygulamanızın içeriğini özelleştirmek için isteyebileceğiniz bazı nadir durumlarda yalnızca ekleyin ve dosyanın tamamını kaldırın. Aşağıdakilere adımları nasıl dahil olan kaynaklarla sınırlayabilirsiniz göster:
+Bazı nadir durumlarda, dosyanın tamamını eklemek ve kaldırmakla değil, belirli uygulamanız için standart çerçeve kaynaklarının içeriğini özelleştirmek isteyebilirsiniz. Aşağıdaki adımlar, dahil edilen kaynakları nasıl sınırlayabileceğinizi gösterir:
 
 ##### <a name="to-customize-the-contents-of-a-standard-resource-file"></a>Standart kaynak dosyasının içeriğini özelleştirmek için
 
-1. Visual C++'da kaynak dosyasını açın.
+1. Kaynak dosyasını Visual C++'da açın.
 
-1. Kaynak dahil edilenleri Ayarla komutunu kullanarak kaldırma `#include` özelleştirmek istediğiniz standart .rc dosyası için. Örneğin, Baskı Önizleme araç özelleştirmek için kaldırmak `#include "afxprint.rc"` satır.
+1. Kaynak Kümesi Içerir komutunu `#include` kullanarak, özelleştirmek istediğiniz standart .rc dosyasını kaldırın. Örneğin, yazdırma önizleme araç çubuğunu `#include "afxprint.rc"` özelleştirmek için satırı kaldırın.
 
-1. Uygun standart kaynak dosyaları içinde MFC\INCLUDE açın. Örnek bu konunun önceki kısımlarında, uygun MFC\Include\Aafxprint.rc dosyasıdır
+1. MFC\INCLUDE'da uygun standart kaynak dosyalarını açın. Bu konunun önceki örneklerini izleyerek, uygun dosya MFC\Include\Aafxprint.rc
 
-1. Tüm kaynakları standart .rc dosyasından uygulama kaynak dosyasına kopyalayın.
+1. Standart .rc dosyasındaki tüm kaynakları uygulama kaynak dosyanıza kopyalayın.
 
-1. Standart kaynakları uygulama kaynak dosyasının kopyasını değiştirin.
+1. Uygulama kaynak dosyanızdaki standart kaynakların kopyasını değiştirin.
 
 > [!NOTE]
->  Doğrudan standart .rc dosyalarındaki kaynaklar değiştirmeyin. Bunun yapılması her uygulamada, yalnızca üzerinde çalıştığınız bir kullanılabilir kaynakları değiştirir.
+> Kaynakları doğrudan standart .rc dosyalarında değiştirmeyin. Bunu yapmak, yalnızca üzerinde çalıştığınız uygulamada değil, her uygulamada bulunan kaynakları değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

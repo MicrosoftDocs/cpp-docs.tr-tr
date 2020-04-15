@@ -1,5 +1,5 @@
 ---
-title: CRgn sınıfı
+title: CRgn Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CRgn
@@ -46,16 +46,16 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 97266ac9e4f1885149ce521f554ad2f22daee6e0
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 72ab4027880285a3c4cd24d586e163e1e01b98f2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741496"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368302"
 ---
-# <a name="crgn-class"></a>CRgn sınıfı
+# <a name="crgn-class"></a>CRgn Sınıfı
 
-Bir Windows grafik cihaz arabirimi (GDI) bölgesini kapsüller.
+Bir Windows grafik aygıtı arabirimi (GDI) bölgesini kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,63 +67,63 @@ class CRgn : public CGdiObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CRgn:: CRgn](#crgn)|Bir `CRgn` nesnesi oluşturur.|
+|[CRgn::CRgn](#crgn)|Bir `CRgn` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CRgn:: CombineRgn](#combinergn)|Bir `CRgn` nesneyi belirtilen `CRgn` iki nesnenin birleşimi ile eşdeğer olacak şekilde ayarlar.|
-|[CRgn:: CopyRgn](#copyrgn)|Bir `CRgn` nesneyi belirtilen `CRgn` nesnenin kopyası olacak şekilde ayarlar.|
-|[CRgn:: CreateEllipticRgn](#createellipticrgn)|Elips bölge `CRgn` içeren bir nesnesi başlatır.|
-|[CRgn:: CreateEllipticRgnIndirect](#createellipticrgnindirect)|Bir Rect `CRgn` yapısı tarafından tanımlanan elips bölge ile bir nesne [](/windows/win32/api/windef/ns-windef-rect) başlatır.|
-|[CRgn:: CreateFromData](#createfromdata)|Verilen bölge ve dönüşüm verilerinden bir bölge oluşturur.|
-|[CRgn:: CreateFromPath](#createfrompath)|Verilen cihaz bağlamına seçili olan yoldan bir bölge oluşturur.|
-|[CRgn:: CreatePolygonRgn](#createpolygonrgn)|`CRgn` Bir nesneyi Çokgen bölge ile başlatır. Sistem, gerekirse, en son köşenin ilk köşesini bir çizgi çizerek otomatik olarak çokgeni kapatır.|
-|[CRgn:: CreatePolyPolygonRgn](#createpolypolygonrgn)|Kapalı çokgenlerin bulunduğu bir bölgeden oluşan bir nesneyibaşlatır.`CRgn` Çokgenler kopuk olabilir veya örtüşebilir.|
-|[CRgn:: CreateRectRgn](#createrectrgn)|Dikdörtgen bir `CRgn` bölgeyle bir nesne başlatır.|
-|[CRgn:: Createrectrgndolaylı](#createrectrgnindirect)|Dikdörtgen bölge tarafından tanımlanan bir [](/windows/win32/api/windef/ns-windef-rect) nesneyibirRectile`CRgn` başlatır.|
-|[CRgn:: CreateRoundRectRgn](#createroundrectrgn)|Yuvarlak köşeler `CRgn` içeren dikdörtgen bölge içeren bir nesneyi başlatır.|
-|[CRgn:: EqualRgn](#equalrgn)|Eşdeğer olup `CRgn` olmadığını anlamak için iki nesneyi denetler.|
-|[CRgn:: FromHandle](#fromhandle)|Bir Windows bölgesine bir tanıtıcı `CRgn` verildiğinde, nesne için bir işaretçi döndürür.|
-|[CRgn:: GetRegionData](#getregiondata)|Belirtilen bir bölgeyi tanımlayan verilerle belirtilen arabelleği doldurur.|
-|[CRgn:: GetRgnBox](#getrgnbox)|Bir `CRgn` nesnenin sınırlayıcı dikdörtgeninin koordinatlarını alır.|
-|[CRgn:: OffsetRgn](#offsetrgn)|Bir `CRgn` nesneyi belirtilen uzaklıklara göre kaydırır.|
-|[CRgn::P tInRegion](#ptinregion)|Belirtilen noktanın bölgede olup olmadığını belirler.|
-|[CRgn:: Recınregion](#rectinregion)|Belirtilen dikdörtgenin herhangi bir kısmının bölge sınırları içinde olup olmadığını belirler.|
-|[CRgn:: SetRectRgn](#setrectrgn)|`CRgn` Nesneyi belirtilen dikdörtgen bölgeye ayarlar.|
+|[CRgn::CombineRgn](#combinergn)|Bir `CRgn` nesneyi, belirtilen `CRgn` iki nesnenin birleşimine eşdeğer olacak şekilde ayarlar.|
+|[CRgn::CopyRgn](#copyrgn)|Nesneyi, `CRgn` belirtilen `CRgn` bir nesnenin kopyası olacak şekilde ayarlar.|
+|[CRgn::CreateEllipticRgn](#createellipticrgn)|Eliptik `CRgn` bir bölge ile bir nesne başharfleri.|
+|[CRgn::CreateEllipticRgnDolaylı](#createellipticrgnindirect)|[RECT](/windows/win32/api/windef/ns-windef-rect) yapısı `CRgn` tarafından tanımlanan eliptik bir bölge ile bir nesneyi başharfe çeker.|
+|[CRgn::CreateFromData](#createfromdata)|Verilen bölgeden ve dönüşüm verilerinden bir bölge oluşturur.|
+|[CRgn::CreateFromPath](#createfrompath)|Verilen aygıt bağlamına seçilen yoldan bir bölge oluşturur.|
+|[CRgn::CreatePolygonRgn](#createpolygonrgn)|Çokgen bir `CRgn` bölge ile bir nesne baş harfize eder. Sistem, gerekirse, son tepe noktasından ilk tepeye bir çizgi çizerek çokgeni otomatik olarak kapatır.|
+|[CRgn::CreatePolypolygonRgn](#createpolypolygonrgn)|Bir dizi `CRgn` kapalı çokgenden oluşan bir bölgeye sahip bir nesneyi başharfe ait hale. Çokgenler kopuk olabilir veya çakışabilir.|
+|[CRgn::CreateRectRgn](#createrectrgn)|Dikdörtgen bir `CRgn` bölge ile bir nesne başharfleri.|
+|[CRgn::CreateRectRgnDolaylı](#createrectrgnindirect)|`CRgn` [RECT](/windows/win32/api/windef/ns-windef-rect)tructure ile tanımlanan dikdörtgen bir bölge ile bir nesneyi başharfe çeker.|
+|[CRgn::CreateRoundRectRgn](#createroundrectrgn)|Yuvarlak köşeli `CRgn` dikdörtgen bir bölge ile bir nesne baş harfize eder.|
+|[CRgn::EqualRgn](#equalrgn)|Eşdeğer `CRgn` olup olmadıklarını belirlemek için iki nesneyi denetler.|
+|[CRgn::FromHandle](#fromhandle)|Bir Windows bölgesine tanıtıcı verildiğinde bir `CRgn` nesneye işaretçi döndürür.|
+|[CRgn::GetRegionData](#getregiondata)|Belirtilen arabelleği verilen bölgeyi açıklayan verilerle doldurur.|
+|[CRgn::GetRgnBox](#getrgnbox)|Bir `CRgn` nesnenin sınırlayıcı dikdörtgeninin koordinatlarını alır.|
+|[CRgn::OfsetRgn](#offsetrgn)|Nesneyi `CRgn` belirtilen uzaklıklara göre taşır.|
+|[CRgn::PtInRegion](#ptinregion)|Bölgede belirli bir nokta olup olmadığını belirler.|
+|[CRgn::RectInRegion](#rectinregion)|Belirtilen dikdörtgenin herhangi bir bölümünün bölge sınırları içinde olup olmadığını belirler.|
+|[CRgn::SetRectRgn](#setrectrgn)|Nesneyi `CRgn` belirtilen dikdörtgen bölgeye ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CRgn:: operator HRGN](#operator_hrgn)|`CRgn` Nesnesinde içerilen Windows işleyicisini döndürür.|
+|[CRgn::operatör HRGN](#operator_hrgn)|Nesnede bulunan Windows `CRgn` tutamacını döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bölge, bir pencere içindeki elips veya Çokgen bir alandır. Bölgeleri kullanmak için, sınıfının üye işlevlerini `CRgn` sınıfının `CDC`üyeleri olarak tanımlanan kırpma işlevleriyle birlikte kullanırsınız.
+Bölge, pencere içindeki eliptik veya çokgen bir alandır. Bölgeleri kullanmak için sınıfın üye işlevlerini, sınıfın `CRgn` `CDC`üyeleri olarak tanımlanan kırpma işlevleriyle kullanırsınız.
 
-Aranan bölge nesnesi hakkında `CRgn` bilgi oluşturma, değiştirme ve alma için üye işlevleri.
+Oluşturdukları, `CRgn` değiştirdikleri ve aldıkları bölge nesnesi hakkında bilgi almanın üye işlevleri.
 
-Kullanma `CRgn`hakkında daha fazla bilgi için bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
+Kullanma `CRgn`hakkında daha fazla bilgi için [Bkz. Grafik Nesneler.](../../mfc/graphic-objects.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CGdiObject](../../mfc/reference/cgdiobject-class.md)
+[Cgdiobject](../../mfc/reference/cgdiobject-class.md)
 
 `CRgn`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Afxwin. h
+**Üstbilgi:** afxwin.h
 
-##  <a name="combinergn"></a>CRgn:: CombineRgn
+## <a name="crgncombinergn"></a><a name="combinergn"></a>CRgn::CombineRgn
 
-Mevcut iki bölgeyi birleştirerek yeni bir GDI bölgesi oluşturur.
+Varolan iki bölgeyi birleştirerek yeni bir GDI bölgesi oluşturur.
 
 ```
 int CombineRgn(
@@ -135,53 +135,53 @@ int CombineRgn(
 ### <a name="parameters"></a>Parametreler
 
 *pRgn1*<br/>
-Mevcut bir bölgeyi tanımlar.
+Varolan bir bölgeyi tanımlar.
 
 *pRgn2*<br/>
-Mevcut bir bölgeyi tanımlar.
+Varolan bir bölgeyi tanımlar.
 
 *nCombineMode*<br/>
-İki kaynak bölge birleştirilirken gerçekleştirilecek işlemi belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
+İki kaynak bölgeyi birleştirirken gerçekleştirilecek işlemi belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- RGN_AND her iki bölgenin de örtüşen alanları kullanır (kesişme).
+- RGN_AND Her iki bölgenin çakışan alanlarını kullanır (kesişim).
 
-- RGN_COPY, bölge 1 ' in bir kopyasını oluşturur ( *pRgn1*tarafından tanımlanır).
+- RGN_COPY Bölge 1 'in bir kopyasını oluşturur *(pRgn1*ile tanımlanır).
 
-- RGN_DIFF, bölge 2 ' nin ( *pRgn2*tarafından tanımlanan) parçası olmayan bölge 1 ' ın ( *pRgn1*tarafından tanımlanan) alanlarından oluşan bir bölge oluşturur.
+- RGN_DIFF Bölge 1 *(pRgn1*ile tanımlanan) bölge 2 'nin parçası olmayan *(pRgn2*ile tanımlanan) alanlarından oluşan bir bölge oluşturur.
 
-- RGN_OR her iki bölgeyi de tamamen (UNION) birleştirir.
+- RGN_OR her iki bölgeyi de bütünüyle (birleşim) birleştirir.
 
-- RGN_XOR her iki bölgeyi de birleştirir, ancak çakışan alanları kaldırır.
+- RGN_XOR Her iki bölgeyi de birleştirir, ancak çakışan alanları kaldırır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Elde edilen bölgenin türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+Ortaya çıkan bölgenin türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- COMPLEXREGION yeni bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Yeni bölgenin üst üste binen sınırları vardır.
 
-- Yeni bölge oluşturma hatası.
+- HATA Yeni bölge oluşturulmama.
 
-- NULLREGION yeni bölgesi boş.
+- NULLREGION Yeni bölge boş.
 
-- Yeni bölgedeki SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Yeni bölgenin çakışan sınırları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölgeler, *nCombineMode*tarafından belirtilen şekilde birleştirilir.
+Bölgeler *nCombineMode*tarafından belirtildiği gibi birleştirilir.
 
-Belirtilen iki bölge birleştirilir ve sonuçta elde edilen bölge tutamacı `CRgn` nesnesinde depolanır. Bu nedenle, `CRgn` nesnesinde depolanan her bölge birleştirilmiş bölge ile değiştirilmiştir.
+Belirtilen iki bölge birleştirilir ve ortaya çıkan bölge tanıtıcısı `CRgn` nesnede depolanır. Böylece, `CRgn` nesnede depolanan bölge ne olursa olsun, birleştirilmiş bölge ile değiştirilir.
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-Yalnızca bir bölgeyi başka bir bölgeye kopyalamak için [CopyRgn](#copyrgn) komutunu kullanın.
+Bir bölgeyi başka bir bölgeye kopyalamak için [CopyRgn'i](#copyrgn) kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#144](../../mfc/codesnippet/cpp/crgn-class_1.cpp)]
 
-##  <a name="copyrgn"></a>CRgn:: CopyRgn
+## <a name="crgncopyrgn"></a><a name="copyrgn"></a>CRgn::CopyRgn
 
-*Prgnsrc* `CRgn` tarafından tanımlanan bölgeyi nesnesine kopyalar.
+*pRgnSrc* tarafından tanımlanan bölgeyi nesneye `CRgn` kopyalar.
 
 ```
 int CopyRgn(CRgn* pRgnSrc);
@@ -190,31 +190,31 @@ int CopyRgn(CRgn* pRgnSrc);
 ### <a name="parameters"></a>Parametreler
 
 *pRgnSrc*<br/>
-Mevcut bir bölgeyi tanımlar.
+Varolan bir bölgeyi tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Elde edilen bölgenin türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+Ortaya çıkan bölgenin türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- COMPLEXREGION yeni bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Yeni bölgenin üst üste binen sınırları vardır.
 
-- Yeni bölge oluşturma hatası.
+- HATA Yeni bölge oluşturulmama.
 
-- NULLREGION yeni bölgesi boş.
+- NULLREGION Yeni bölge boş.
 
-- Yeni bölgedeki SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Yeni bölgenin çakışan sınırları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bölge, daha önce `CRgn` nesnede depolanan bölgenin yerini alır. Bu işlev, [CombineRgn](#combinergn) member işlevinin özel bir durumdur.
+Yeni bölge, daha önce `CRgn` nesnede depolanan bölgenin yerini alır. Bu işlev [CombineRgn](#combinergn) üye işlevinin özel bir örneğidir.
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CreateEllipticRgn](#createellipticrgn)için örneğe bakın.
+  CRgn için örnek [bakın:CreateEllipticRgn](#createellipticrgn).
 
-##  <a name="createellipticrgn"></a>CRgn:: CreateEllipticRgn
+## <a name="crgncreateellipticrgn"></a><a name="createellipticrgn"></a>CRgn::CreateEllipticRgn
 
-Elips bölge oluşturur.
+Eliptik bir bölge oluşturur.
 
 ```
 BOOL CreateEllipticRgn(
@@ -227,36 +227,36 @@ BOOL CreateEllipticRgn(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Elipsin sınırlayıcı dikdörtgeninin sol üst köşesinin mantıksal x koordinatını belirtir.
+Elipsin sınırlayıcı dikdörtgeninin sol üst köşesindeki mantıksal x-koordinatını belirtir.
 
-*Y1*<br/>
-Elipsin sınırlayıcı dikdörtgeninin sol üst köşesinin mantıksal y koordinatını belirtir.
+*y1*<br/>
+Elipsin sınırlayıcı dikdörtgeninin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *x2*<br/>
-Elipsin sınırlayıcı dikdörtgeninin sağ alt köşesinin mantıksal x koordinatını belirtir.
+Elipsin sınırlayıcı dikdörtgeninin sağ alt köşesinin mantıksal x-koordinatını belirtir.
 
-*Y2*<br/>
-Elipsin sınırlayıcı dikdörtgeninin sağ alt köşesinin mantıksal y koordinatını belirtir.
+*y2*<br/>
+Elipsin sınırlayıcı dikdörtgeninin sağ alt köşesinin mantıksal y-koordinatını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölge, *x1*, *Y1*, *x2*ve *Y2*tarafından belirtilen sınırlayıcı dikdörtgen tarafından tanımlanır. Bölge, `CRgn` nesnesinde depolanır.
+Bölge *x1*, *y1*, *x2*, ve *y2*ile belirtilen sınırlayıcı dikdörtgen ile tanımlanır. Bölge `CRgn` nesnede depolanır.
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-`CreateEllipticRgn` İşlevi ile oluşturulmuş bir bölgeyi kullanmayı bitirdiğinde bir uygulama, cihaz bağlamından bölge seçip onu kaldırmak için `DeleteObject` fonksiyonunu kullanmalıdır.
+`CreateEllipticRgn` İşlevle oluşturulan bir bölgeyi kullanmayı bitirdiğinde, bir uygulama aygıtın bağlamının `DeleteObject` dışına bölge seçmeli ve işlevi kaldırmak için kullanmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#145](../../mfc/codesnippet/cpp/crgn-class_2.cpp)]
 
-##  <a name="createellipticrgnindirect"></a>CRgn:: CreateEllipticRgnIndirect
+## <a name="crgncreateellipticrgnindirect"></a><a name="createellipticrgnindirect"></a>CRgn::CreateEllipticRgnDolaylı
 
-Elips bölge oluşturur.
+Eliptik bir bölge oluşturur.
 
 ```
 BOOL CreateEllipticRgnIndirect(LPCRECT lpRect);
@@ -264,28 +264,28 @@ BOOL CreateEllipticRgnIndirect(LPCRECT lpRect);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Elipsin sınırlayıcı dikdörtgeninin `RECT` sol üst ve `CRect` sağ alt köşelerinden oluşan mantıksal koordinatları içeren bir yapıya veya nesneye işaret eder.
+*Lprect*<br/>
+Elipsin `RECT` sınırlayan `CRect` dikdörtgeninin sol üst ve alt-sağ köşelerinin mantıksal koordinatlarını içeren bir yapıya veya nesneye işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölge, *lpRect* tarafından işaret edilen yapı veya nesne tarafından tanımlanır ve `CRgn` nesnesinde depolanır.
+Bölge, *lpRect* tarafından işaret edilen yapı veya nesne tarafından `CRgn` tanımlanır ve nesnede depolanır.
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-`CreateEllipticRgnIndirect` İşlevi ile oluşturulmuş bir bölgeyi kullanmayı bitirdiğinde bir uygulama, cihaz bağlamından bölge seçip onu kaldırmak için `DeleteObject` fonksiyonunu kullanmalıdır.
+`CreateEllipticRgnIndirect` İşlevle oluşturulan bir bölgeyi kullanmayı bitirdiğinde, bir uygulama aygıtın bağlamının `DeleteObject` dışına bölge seçmeli ve işlevi kaldırmak için kullanmalıdır.
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CreateRectRgnIndirect](#createrectrgnindirect)için örneğe bakın.
+  CRgn için örnek [bakınız::CreateRectRgnDolaylı](#createrectrgnindirect).
 
-##  <a name="createfromdata"></a>CRgn:: CreateFromData
+## <a name="crgncreatefromdata"></a><a name="createfromdata"></a>CRgn::CreateFromData
 
-Verilen bölge ve dönüşüm verilerinden bir bölge oluşturur.
+Verilen bölgeden ve dönüşüm verilerinden bir bölge oluşturur.
 
 ```
 BOOL CreateFromData(
@@ -297,13 +297,13 @@ BOOL CreateFromData(
 ### <a name="parameters"></a>Parametreler
 
 *lpXForm*<br/>
-Bölgede gerçekleştirilecek dönüşümü tanımlayan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform)ata yapısına işaret eder. Bu işaretçi NULL ise, kimlik dönüştürmesi kullanılır.
+Bölgede yapılacak dönüşümü tanımlayan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform)ata yapısına işaret eder. Bu işaretçi NULL ise, kimlik dönüşümü kullanılır.
 
-*nCount*<br/>
-*PRgnData*tarafından işaret edilen bayt sayısını belirtir.
+*nSayısı*<br/>
+*pRgnData*tarafından işaret edilen bayt sayısını belirtir.
 
 *pRgnData*<br/>
-Bölge verilerini içeren bir [rgndata](/windows/win32/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret eder.
+Bölge verilerini içeren bir [RGNDATA](/windows/win32/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret ediyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -311,11 +311,11 @@ Bölge verilerini içeren bir [rgndata](/windows/win32/api/wingdi/ns-wingdi-rgnd
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, `CRgn::GetRegionData` işlevi çağırarak bir bölge için veri alabilir.
+Bir uygulama `CRgn::GetRegionData` işlevi çağırarak bir bölge için veri alabilir.
 
-##  <a name="createfrompath"></a>CRgn:: CreateFromPath
+## <a name="crgncreatefrompath"></a><a name="createfrompath"></a>CRgn::CreateFromPath
 
-Verilen cihaz bağlamına seçili olan yoldan bir bölge oluşturur.
+Verilen aygıt bağlamına seçilen yoldan bir bölge oluşturur.
 
 ```
 BOOL CreateFromPath(CDC* pDC);
@@ -323,8 +323,8 @@ BOOL CreateFromPath(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-Kapalı bir yol içeren bir cihaz bağlamını tanımlar.
+*Pdc*<br/>
+Kapalı yol içeren bir aygıt bağlamı tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -332,11 +332,11 @@ Kapalı bir yol içeren bir cihaz bağlamını tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PDC* parametresi tarafından tanımlanan cihaz bağlamı kapalı bir yol içermelidir. Bir `CreateFromPath` yolu bir bölgeye dönüştürdükten sonra, Windows kapalı yolu cihaz bağlamından atar.
+*pDC* parametresi tarafından tanımlanan aygıt bağlamı kapalı bir yol içermelidir. Bir `CreateFromPath` yolu bir bölgeye dönüştürdükten sonra, Windows kapalı yolu aygıt bağlamından atar.
 
-##  <a name="createpolygonrgn"></a>CRgn:: CreatePolygonRgn
+## <a name="crgncreatepolygonrgn"></a><a name="createpolygonrgn"></a>CRgn::CreatePolygonRgn
 
-Bir çokgen bölgesi oluşturur.
+Çokgen bir bölge oluşturur.
 
 ```
 BOOL CreatePolygonRgn(
@@ -347,8 +347,8 @@ BOOL CreatePolygonRgn(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Bir `POINT` yapı dizisine veya `CPoint` nesne dizisine işaret eder. Her yapı, çokgenin bir köşesinin x koordinatını ve y koordinatını belirtir. `POINT` Yapı aşağıdaki biçimdedir:
+*Lppoints*<br/>
+Bir dizi `POINT` yapıya veya bir `CPoint` nesne dizisini işaret eder. Her yapı, çokgenin bir tepe noktasının x-koordinatını ve y-koordinatını belirtir. Yapı `POINT` aşağıdaki forma sahiptir:
 
 ```cpp
 typedef struct tagPOINT {
@@ -357,35 +357,35 @@ typedef struct tagPOINT {
 } POINT;
 ```
 
-*nCount*<br/>
-Dizi içinde `POINT` *lpPoints*tarafından işaret `CPoint` edilen yapıların veya nesnelerin sayısını belirtir.
+*nSayısı*<br/>
+*LPPoints*tarafından işaret `POINT` edilen `CPoint` dizideki yapıların veya nesnelerin sayısını belirtir.
 
 *nMode*<br/>
-Bölgenin doldurma modunu belirtir. Bu parametre ALTERNATIF ya da SARGı olabilir.
+Bölge için dolum modunu belirtir. Bu parametre ALTERNATİf veya WINDING olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem, gerekirse, en son köşenin ilk köşesini bir çizgi çizerek otomatik olarak çokgeni kapatır. Elde edilen bölge, `CRgn` nesnesinde depolanır.
+Sistem, gerekirse, son tepe noktasından ilk tepeye bir çizgi çizerek çokgeni otomatik olarak kapatır. Ortaya çıkan bölge `CRgn` nesnede depolanır.
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-Çokgen doldurma modu ALTERNATIF olduğunda, sistem, her tarama satırındaki tek sayılı ve çift numaralı Çokgen kenarları arasında alanı doldurur. Diğer bir deyişle, sistem alanı birinci ve ikinci kenar arasında, üçüncü ve dördüncü taraf arasında doldurur ve bu şekilde devam eder.
+Çokgen doldurma modu ALTERNATE olduğunda, sistem her tetkik satırında tek numaralı ve çift numaralı çokgen kenarlar arasındaki alanı doldurur. Diğer bir tarihte, sistem birinci ve ikinci taraf arasındaki alanı, üçüncü ve dördüncü taraf arasındaki alanı doldurur, ve saire.
 
-Çokgen doldurma modu SARGı olduğunda, sistem bir alanın doldurulup doldurulmayacağını belirleyen yönü kullanır. Bir Çokgendeki her çizgi segmenti saat yönünde veya saatin tersi yönde çizilir. Kapalı bir alandan bir şeklin dışına çizilen bir sanal çizgi saat yönünde bir satır segmentinde geçtiğinde bir sayı artırılır. Satır saatin tersi bir satır segmentinden geçtiğinde, sayı azaltılır. Satır, şekil şeklin dışına ulaştığında sayı sıfır değilse, alan doldurulur.
+Çokgen doldurma modu SARMA olduğunda, sistem bir alanı doldurup doldurmayacağını belirlemek için bir şeklin çizildiği yönü kullanır. Çokgendeki her çizgi kesimi saat yönünde veya saat yönünün tersine çizilir. Kapalı bir alandan bir figürün dışına çizilen hayali bir çizgi saat yönünde bir çizgi parçasından geçse, bir sayı artımlanır. Hat saat yönünün tersine bir çizgi parçasından geçtiğinde, sayım azat edilir. Satır şeklin dışına ulaştığında sayım sıfır değilse alan doldurulur.
 
-Bir uygulama, `CreatePolygonRgn` işlevle oluşturulmuş bir bölgeyi kullanmayı bitirdiğinde, cihaz bağlamından bölgeyi seçip onu kaldırmak için `DeleteObject` işlevini kullanmalıdır.
+Bir uygulama `CreatePolygonRgn` işlevle oluşturulan bir bölge kullanmayı bitirdiğinde, aygıtın bağlamının dışına `DeleteObject` bölge seçmeli ve onu kaldırmak için işlevi kullanmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#146](../../mfc/codesnippet/cpp/crgn-class_3.cpp)]
 
-##  <a name="createpolypolygonrgn"></a>CRgn:: CreatePolyPolygonRgn
+## <a name="crgncreatepolypolygonrgn"></a><a name="createpolypolygonrgn"></a>CRgn::CreatePolypolygonRgn
 
-Kapalı çokgenlerin serisini içeren bir bölge oluşturur.
+Kapalı çokgenlerden oluşan bir bölge oluşturur.
 
 ```
 BOOL CreatePolyPolygonRgn(
@@ -397,8 +397,8 @@ BOOL CreatePolyPolygonRgn(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Bir `POINT` yapı dizisine veya poligonun köşelerini tanımlayan bir `CPoint` nesne dizisine işaret eder. Sistem onları otomatik olarak kapatmadığından her bir çokgen açıkça kapatılmalıdır. Çokgenler ardışık olarak belirtilir. `POINT` Yapı aşağıdaki biçimdedir:
+*Lppoints*<br/>
+Çokgenlerin `POINT` tepe noktalarını tanımlayan `CPoint` bir dizi yapıya veya nesnelere işaret eder. Sistem bunları otomatik olarak kapatmadığından, her çokgenin açıkça kapatılması gerekir. Çokgenler art arda belirtilir. Yapı `POINT` aşağıdaki forma sahiptir:
 
 ```cpp
 typedef struct tagPOINT {
@@ -408,35 +408,35 @@ typedef struct tagPOINT {
 ```
 
 *lpPolyCounts*<br/>
-Bir tamsayılar dizisine işaret eder. İlk tamsayı, *lpPoints* dizisindeki ilk Çokgen içindeki köşelerin sayısını belirtir, ikinci tamsayı ikinci Çokgendeki köşe sayısını belirtir ve bu şekilde devam eder.
+Bir dizi tümseci işaret eder. İlk tamsayı *lpPoints* dizisindeki ilk çokgendeki vertices sayısını, ikinci tamsayı ikinci çokgendeki vertices sayısını ve benzeri belirtir.
 
-*nCount*<br/>
-*LpPolyCounts* dizisindeki toplam tamsayı sayısını belirtir.
+*nSayısı*<br/>
+*lpPolyCounts* dizisindeki toplam tamsayı sayısını belirtir.
 
 *nPolyFillMode*<br/>
-Çokgen doldurma modunu belirtir. Bu değer ALTERNATIF ya da SARGı olabilir.
+Çokgen dolum modunu belirtir. Bu değer ALTERNATİf veya SARMA olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Elde edilen bölge, `CRgn` nesnesinde depolanır.
+Ortaya çıkan bölge `CRgn` nesnede depolanır.
 
-Çokgenler kopuk olabilir veya örtüşebilir.
+Çokgenler kopuk olabilir veya çakışabilir.
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-Çokgen doldurma modu ALTERNATIF olduğunda, sistem, her tarama satırındaki tek sayılı ve çift numaralı Çokgen kenarları arasında alanı doldurur. Diğer bir deyişle, sistem alanı birinci ve ikinci kenar arasında, üçüncü ve dördüncü taraf arasında doldurur ve bu şekilde devam eder.
+Çokgen doldurma modu ALTERNATE olduğunda, sistem her tetkik satırında tek numaralı ve çift numaralı çokgen kenarlar arasındaki alanı doldurur. Diğer bir tarihte, sistem birinci ve ikinci taraf arasındaki alanı, üçüncü ve dördüncü taraf arasındaki alanı doldurur, ve saire.
 
-Çokgen doldurma modu SARGı olduğunda, sistem bir alanın doldurulup doldurulmayacağını belirleyen yönü kullanır. Bir Çokgendeki her çizgi segmenti saat yönünde veya saatin tersi yönde çizilir. Kapalı bir alandan bir şeklin dışına çizilen bir sanal çizgi saat yönünde bir satır segmentinde geçtiğinde bir sayı artırılır. Satır saatin tersi bir satır segmentinden geçtiğinde, sayı azaltılır. Satır, şekil şeklin dışına ulaştığında sayı sıfır değilse, alan doldurulur.
+Çokgen doldurma modu SARMA olduğunda, sistem bir alanı doldurup doldurmayacağını belirlemek için bir şeklin çizildiği yönü kullanır. Çokgendeki her çizgi kesimi saat yönünde veya saat yönünün tersine çizilir. Kapalı bir alandan bir figürün dışına çizilen hayali bir çizgi saat yönünde bir çizgi parçasından geçse, bir sayı artımlanır. Hat saat yönünün tersine bir çizgi parçasından geçtiğinde, sayım azat edilir. Satır şeklin dışına ulaştığında sayım sıfır değilse alan doldurulur.
 
-Bir uygulama, `CreatePolyPolygonRgn` işlevle oluşturulmuş bir bölgeyi kullanmayı bitirdiğinde, cihaz bağlamından bölge seçin ve bunu kaldırmak için [CGdiObject::D eleteobject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevini kullanın.
+Bir uygulama `CreatePolyPolygonRgn` işlevle oluşturulan bir bölgeyi kullanmayı bitirdiğinde, aygıtın bağlamının dışına bölge seçmeli ve kaldırmak için [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevini kullanmalıdır.
 
-##  <a name="createrectrgn"></a>CRgn:: CreateRectRgn
+## <a name="crgncreaterectrgn"></a><a name="createrectrgn"></a>CRgn::CreateRectRgn
 
-`CRgn` Nesnesinde depolanan dikdörtgen bir bölge oluşturur.
+`CRgn` Nesnede depolanan dikdörtgen bir bölge oluşturur.
 
 ```
 BOOL CreateRectRgn(
@@ -449,36 +449,36 @@ BOOL CreateRectRgn(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Bölgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+Bölgenin sol üst köşesindeki mantıksal x-koordinatını belirtir.
 
-*Y1*<br/>
-Bölgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*y1*<br/>
+Bölgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *x2*<br/>
-Bölgenin sağ alt köşesinin mantıksal x koordinatını belirtir.
+Bölgenin sağ alt köşesinin mantıksal x-koordinatını belirtir.
 
-*Y2*<br/>
-Bölgenin sağ alt köşesinin mantıksal y koordinatını belirtir.
+*y2*<br/>
+Bölgenin sağ alt köşesinin mantıksal y-koordinatını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-Tarafından `CreateRectRgn`oluşturulan bir bölgeyi kullanmayı bitirdiğinde, bir uygulamanın, bölgeyi kaldırmak için [CGdiObject::D eleteobject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevini kullanması gerekir.
+Tarafından oluşturulan bir bölge kullanılarak `CreateRectRgn`tamamlandığında, bir uygulama [cgdiobject kullanmalıdır::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevi bölge kaldırmak için.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#147](../../mfc/codesnippet/cpp/crgn-class_4.cpp)]
 
-Ek bir örnek için bkz. [CRgn:: CombineRgn](#combinergn).
+Ek bir örnek için [crgn::CombineRgn'ye](#combinergn)bakın.
 
-##  <a name="createrectrgnindirect"></a>CRgn:: Createrectrgndolaylı
+## <a name="crgncreaterectrgnindirect"></a><a name="createrectrgnindirect"></a>CRgn::CreateRectRgnDolaylı
 
-`CRgn` Nesnesinde depolanan dikdörtgen bir bölge oluşturur.
+`CRgn` Nesnede depolanan dikdörtgen bir bölge oluşturur.
 
 ```
 BOOL CreateRectRgnIndirect(LPCRECT lpRect);
@@ -486,8 +486,8 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Bölgenin sol üst `RECT` ve sağ `CRect` alt köşelerinden oluşan mantıksal koordinatları içeren bir yapıya veya nesneye işaret eder. `RECT` Yapı aşağıdaki biçimdedir:
+*Lprect*<br/>
+Bölgenin sol `RECT` üst `CRect` ve alt sağ köşelerinin mantıksal koordinatlarını içeren bir yapıya veya nesneye işaret eder. Yapı `RECT` aşağıdaki forma sahiptir:
 
 ```cpp
 typedef struct tagRECT {
@@ -500,21 +500,21 @@ typedef struct tagRECT {
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-Tarafından `CreateRectRgnIndirect`oluşturulan bir bölgeyi kullanmayı bitirdiğinde, bir uygulamanın, bölgeyi kaldırmak için [CGdiObject::D eleteobject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevini kullanması gerekir.
+Tarafından oluşturulan bir bölge kullanılarak `CreateRectRgnIndirect`tamamlandığında, bir uygulama [cgdiobject kullanmalıdır::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevi bölge kaldırmak için.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#148](../../mfc/codesnippet/cpp/crgn-class_5.cpp)]
 
-##  <a name="createroundrectrgn"></a>CRgn:: CreateRoundRectRgn
+## <a name="crgncreateroundrectrgn"></a><a name="createroundrectrgn"></a>CRgn::CreateRoundRectRgn
 
-`CRgn` Nesnede depolanan yuvarlak köşeler içeren dikdörtgen bir bölge oluşturur.
+`CRgn` Nesnede depolanan yuvarlak köşeleri olan dikdörtgen bir bölge oluşturur.
 
 ```
 BOOL CreateRoundRectRgn(
@@ -529,40 +529,40 @@ BOOL CreateRoundRectRgn(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Bölgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+Bölgenin sol üst köşesindeki mantıksal x-koordinatını belirtir.
 
-*Y1*<br/>
-Bölgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*y1*<br/>
+Bölgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *x2*<br/>
-Bölgenin sağ alt köşesinin mantıksal x koordinatını belirtir.
+Bölgenin sağ alt köşesinin mantıksal x-koordinatını belirtir.
 
-*Y2*<br/>
-Bölgenin sağ alt köşesinin mantıksal y koordinatını belirtir.
+*y2*<br/>
+Bölgenin sağ alt köşesinin mantıksal y-koordinatını belirtir.
 
 *x3*<br/>
 Yuvarlatılmış köşeleri oluşturmak için kullanılan elipsin genişliğini belirtir.
 
-*Y3*<br/>
+*y3*<br/>
 Yuvarlatılmış köşeleri oluşturmak için kullanılan elipsin yüksekliğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
+İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölgenin boyutu, 32.767 mantıksal birim veya 64K bellek, hangisi daha küçükse, 32.767 ile sınırlıdır.
+Bir bölgenin boyutu 32.767 ile 32.767 mantıksal birim veya 64K bellek ile sınırlıdır( hangisi daha küçükse).
 
-Bir uygulama, `CreateRoundRectRgn` işlevle oluşturulmuş bir bölgeyi kullanmayı bitirdiğinde, cihaz bağlamından bölge seçin ve bunu kaldırmak için [CGdiObject::D eleteobject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevini kullanın.
+Bir uygulama `CreateRoundRectRgn` işlevle oluşturulan bir bölgeyi kullanmayı bitirdiğinde, aygıtın bağlamının dışına bölge seçmeli ve kaldırmak için [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlevini kullanmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#149](../../mfc/codesnippet/cpp/crgn-class_6.cpp)]
 
-##  <a name="crgn"></a>CRgn:: CRgn
+## <a name="crgncrgn"></a><a name="crgn"></a>CRgn::CRgn
 
-Bir `CRgn` nesnesi oluşturur.
+Bir `CRgn` nesne inşa eder.
 
 ```
 CRgn();
@@ -570,13 +570,13 @@ CRgn();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri üyesi, nesne başka `CRgn` bir veya daha fazla üye fonksiyonunda başlatılana kadar geçerli bir Windows GDI bölgesi içermez. `m_hObject`
+`m_hObject` Nesne diğer `CRgn` üye işlevlerden biri veya daha fazlası ile baş harfe çevrilene kadar veri üyesi geçerli bir Windows GDI bölgesi içermez.
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CreateRoundRectRgn](#createroundrectrgn)için örneğe bakın.
+  CRgn için örnek [bakınız::CreateRoundRectRgn](#createroundrectrgn).
 
-##  <a name="equalrgn"></a>CRgn:: EqualRgn
+## <a name="crgnequalrgn"></a><a name="equalrgn"></a>CRgn::EqualRgn
 
 Verilen bölgenin `CRgn` nesnede depolanan bölgeye eşdeğer olup olmadığını belirler.
 
@@ -591,15 +591,15 @@ Bir bölgeyi tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki bölge eşdeğer ise sıfır dışı; Aksi takdirde 0.
+İki bölge eşdeğerse sıfır olmayan; aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#150](../../mfc/codesnippet/cpp/crgn-class_7.cpp)]
 
-##  <a name="fromhandle"></a>CRgn:: FromHandle
+## <a name="crgnfromhandle"></a><a name="fromhandle"></a>CRgn::FromHandle
 
-Bir Windows bölgesine bir tanıtıcı `CRgn` verildiğinde, nesne için bir işaretçi döndürür.
+Bir Windows bölgesine tanıtıcı verildiğinde bir `CRgn` nesneye işaretçi döndürür.
 
 ```
 static CRgn* PASCAL FromHandle(HRGN hRgn);
@@ -608,17 +608,17 @@ static CRgn* PASCAL FromHandle(HRGN hRgn);
 ### <a name="parameters"></a>Parametreler
 
 *hRgn*<br/>
-Bir Windows bölgesine yönelik bir tanıtıcı belirtir.
+Bir Windows bölgesine bir tanıtıcı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CRgn` nesne işaretçisi. İşlev başarılı olmazsa, dönüş değeri NULL olur.
+Bir `CRgn` nesneye işaretçi. İşlev başarılı olmadıysa, iade değeri NULL'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CRgn` nesne zaten tanıtıcıya iliştirilmişse, geçici `CRgn` bir nesne oluşturulur ve eklenir. Bu geçici `CRgn` nesne yalnızca uygulamanın olay döngüsünde bir sonraki kez boşta kalması durumunda geçerlidir. bu süre, tüm geçici grafik nesneleri silinir. Bunun başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olduğu durumdur.
+Bir `CRgn` nesne tutamacına zaten eklenmiş değilse, geçici `CRgn` bir nesne oluşturulur ve eklenir. Bu `CRgn` geçici nesne yalnızca, uygulamanın olay döngüsünde boşta kalma süresine sahip olduğu ve tüm geçici grafik nesnelerinin silindiği bir sonraki zamana kadar geçerlidir. Bunu söylemenin başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olmasıdır.
 
-##  <a name="getregiondata"></a>CRgn:: GetRegionData
+## <a name="crgngetregiondata"></a><a name="getregiondata"></a>CRgn::GetRegionData
 
 Belirtilen arabelleği bölgeyi açıklayan verilerle doldurur.
 
@@ -631,20 +631,20 @@ int GetRegionData(
 ### <a name="parameters"></a>Parametreler
 
 *lpRgnData*<br/>
-Bilgileri alan bir [rgndata](/windows/win32/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret eder. Bu parametre NULL ise, dönüş değeri bölge verileri için gereken bayt sayısını içerir.
+Bilgileri alan [bir RGNDATA](/windows/win32/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret ediyor. Bu parametre NULL ise, iade değeri bölge verileri için gereken bayt sayısını içerir.
 
-*nCount*<br/>
-*LpRgnData* buffer boyutunu bayt cinsinden belirtir.
+*nSayısı*<br/>
+*lpRgnData* arabelleği boyutu, bayt, belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa ve *nCount* yeterli sayıda bayt belirtiyorsa, dönüş değeri her zaman *nsay*olur. İşlev başarısız olursa veya *nCount* , yeterli sayıda bayttan daha az bir değer belirtiyorsa, dönüş değeri 0 (hata) olur.
+İşlev başarılı olursa ve *nCount* yeterli sayıda bayt belirtirse, iade değeri her zaman *nCount'dir.* İşlev başarısız olursa veya *nCount* yeterli bayt sayısından daha az belirtirse, iade değeri 0'dır (hata).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu veriler, bölgeyi oluşturan dikdörtgenlerin boyutlarını içerir. Bu işlev, `CRgn::CreateFromData` işleviyle birlikte kullanılır.
+Bu veriler, bölgeyi oluşturan dikdörtgenlerin boyutlarını içerir. Bu işlev `CRgn::CreateFromData` işlevle birlikte kullanılır.
 
-##  <a name="getrgnbox"></a>CRgn:: GetRgnBox
+## <a name="crgngetrgnbox"></a><a name="getrgnbox"></a>CRgn::GetRgnBox
 
 `CRgn` Nesnenin sınırlayıcı dikdörtgeninin koordinatlarını alır.
 
@@ -654,8 +654,8 @@ int GetRgnBox(LPRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgenin koordinatlarını `RECT` almak için `CRect` bir yapıya veya nesneye işaret eder. `RECT` Yapı aşağıdaki biçimdedir:
+*Lprect*<br/>
+Sınırlayan `RECT` dikdörtgenin `CRect` koordinatlarını almak için bir yapıya veya nesneye işaret eder. Yapı `RECT` aşağıdaki forma sahiptir:
 
 `typedef struct tagRECT {`
 
@@ -673,21 +673,21 @@ Sınırlayıcı dikdörtgenin koordinatlarını `RECT` almak için `CRect` bir y
 
 Bölgenin türünü belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- COMPLEXREGION bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Bölge çakışan sınırları vardır.
 
-- NULLREGION bölgesi boş.
+- NULLREGION Bölgesi boş.
 
-- Hata `CRgn` nesnesi geçerli bir bölge belirtmiyor.
+- ERROR `CRgn` nesnesi geçerli bir bölge belirtmez.
 
-- SIMPLELEREGION bölgesinde çakışan kenarlık yok.
+- SIMPLEREGION Bölge çakışan kenarlıkları vardır.
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CreatePolygonRgn](#createpolygonrgn)için örneğe bakın.
+  CRgn için örnek [bakınız::CreatePolygonRgn](#createpolygonrgn).
 
-##  <a name="offsetrgn"></a>CRgn:: OffsetRgn
+## <a name="crgnoffsetrgn"></a><a name="offsetrgn"></a>CRgn::OfsetRgn
 
-`CRgn` Nesnede depolanan bölgeyi belirtilen uzaklıklara göre kaydırır.
+`CRgn` Nesnede depolanan bölgeyi belirtilen uzaklıklarla hareket ettirir.
 
 ```
 int OffsetRgn(
@@ -699,40 +699,40 @@ int OffsetRgn(POINT point);
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-Sol veya sağ taşınacak birim sayısını belirtir.
+*X*<br/>
+Sola veya sağa hareket ettirecek birim sayısını belirtir.
 
-*Iz*<br/>
-Yukarı veya aşağı taşınacak birim sayısını belirtir.
+*Y*<br/>
+Yukarı veya aşağı hareket etmek için birim sayısını belirtir.
 
-*seçeneğinin*<br/>
-*Noktanın* x koordinatı, sol veya sağ taşınacak birim sayısını belirtir. *Noktanın* y koordinatı, yukarı veya aşağı taşınacak birim sayısını belirtir. *Point* parametresi bir `POINT` yapı ya da bir `CPoint` nesne olabilir.
+*Nokta*<br/>
+*Noktanın* x-koordinatı sola veya sağa hareket etmek için birim sayısını belirtir. *Noktanın* y-koordinatı yukarı veya aşağı hareket etmek için birim sayısını belirtir. *Nokta* parametresi bir `POINT` yapı veya `CPoint` nesne olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Yeni bölgenin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- COMPLEXREGION bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Bölge çakışan sınırları vardır.
 
-- HATA bölgesi tanıtıcısı geçerli değil.
+- HATA Bölge işlaması geçerli değildir.
 
-- NULLREGION bölgesi boş.
+- NULLREGION Bölgesi boş.
 
-- SIMPLELEREGION bölgesinde çakışan kenarlık yok.
+- SIMPLEREGION Bölge çakışan kenarlıkları vardır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi x-ekseni ve *y* birimlerinin bölge *x* birimlerini y ekseni üzerinde taşır.
+İşlev, bölge *x* birimlerini x ekseni boyunca, *y* birimlerini ise y ekseni boyunca hareket ettirir.
 
-Bir bölgenin koordinat değerleri 32.767 ' e eşit veya daha küçük ve-32.768 ' e eşit veya daha büyük olmalıdır. Geçersiz bölge koordinatlarını engellemek için *x* ve *y* parametrelerinin dikkatle seçilmesi gerekir.
+Bir bölgenin koordinat değerleri 32.767'den az veya eşit ve -32.768'den büyük veya eşit olmalıdır. Geçersiz bölge koordinatlarını önlemek için *x* ve *y* parametreleri dikkatle seçilmelidir.
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CreateEllipticRgn](#createellipticrgn)için örneğe bakın.
+  CRgn için örnek [bakın:CreateEllipticRgn](#createellipticrgn).
 
-##  <a name="operator_hrgn"></a>CRgn:: operator HRGN
+## <a name="crgnoperator-hrgn"></a><a name="operator_hrgn"></a>CRgn::operatör HRGN
 
-`CRgn` Nesnenin ekli Windows GDI işleyicisini almak için bu işleci kullanın.
+`CRgn` Nesnenin ekli Windows GDI tutamacını almak için bu işleci kullanın.
 
 ```
 operator HRGN() const;
@@ -740,17 +740,17 @@ operator HRGN() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `CRgn` nesne tarafından temsil edilen Windows GDI nesnesine yönelik bir tanıtıcı; Aksi takdirde null.
+Başarılı olursa, nesne tarafından temsil edilen Windows `CRgn` GDI nesnesine bir tanıtıcı; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, bir HRGN nesnesinin doğrudan kullanımını destekleyen bir atama işleçtir.
+Bu işleç, bir HRGN nesnesinin doğrudan kullanımını destekleyen bir döküm operatörüdür.
 
-Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/win32/gdi/graphic-objects) makalesine bakın.
+Grafik nesneleri kullanma hakkında daha fazla bilgi için Windows SDK'daki [Grafik Nesneler](/windows/win32/gdi/graphic-objects) makalesine bakın.
 
-##  <a name="ptinregion"></a>CRgn::P tInRegion
+## <a name="crgnptinregion"></a><a name="ptinregion"></a>CRgn::PtInRegion
 
-*X* ve *y* tarafından verilen noktanın `CRgn` nesnesinde depolanan bölgede olup olmadığını denetler.
+*x* ve *y* tarafından verilen noktanın `CRgn` nesnede depolanan bölgede olup olmadığını denetler.
 
 ```
 BOOL PtInRegion(
@@ -762,22 +762,22 @@ BOOL PtInRegion(POINT point) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-Sınanacak noktanın mantıksal x koordinatını belirtir.
+*X*<br/>
+Test etmek için noktanın mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Sınanacak noktanın mantıksal y koordinatını belirtir.
+*Y*<br/>
+Test etmek için noktanın mantıksal y-koordinatını belirtir.
 
-*seçeneğinin*<br/>
-*Noktanın* x ve y koordinatları, değerini test etmek için noktanın x ve y koordinatlarını belirtir. *Nokta* parametresi bir `POINT` yapı ya `CPoint` da nesne olabilir.
+*Nokta*<br/>
+*Noktanın* x- ve y-koordinatları, noktanın değerini test etmek için noktanın x- ve y-koordinatlarını belirtir. *Nokta* parametresi bir `POINT` yapı veya `CPoint` nesne olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nokta bölgedeyse sıfır dışı; Aksi takdirde 0.
+Nokta bölgede ise sıfır değil; aksi takdirde 0.
 
-##  <a name="rectinregion"></a>CRgn:: Recınregion
+## <a name="crgnrectinregion"></a><a name="rectinregion"></a>CRgn::RectInRegion
 
-*LpRect* tarafından belirtilen dikdörtgenin herhangi bir kısmının `CRgn` nesnede depolanan bölgenin sınırları içinde olup olmadığını belirler.
+*lpRect* tarafından belirtilen dikdörtgenin herhangi bir bölümünün `CRgn` nesnede depolanan bölgenin sınırları içinde olup olmadığını belirler.
 
 ```
 BOOL RectInRegion(LPCRECT lpRect) const;
@@ -785,8 +785,8 @@ BOOL RectInRegion(LPCRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Bir `RECT` yapıya veya `CRect` nesneye işaret eder. `RECT` Yapı aşağıdaki biçimdedir:
+*Lprect*<br/>
+Bir `RECT` yapıyı `CRect` veya nesneyi işaret edin. Yapı `RECT` aşağıdaki forma sahiptir:
 
 ```cpp
 typedef struct tagRECT {
@@ -799,9 +799,9 @@ typedef struct tagRECT {
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dikdörtgenin herhangi bir bölümü bölgenin sınırları içinde yer alıyorsa sıfır dışı. Aksi takdirde 0.
+Belirtilen dikdörtgenin herhangi bir bölümü bölge sınırları içinde yatıyorsa sıfır olmayan; aksi takdirde 0.
 
-##  <a name="setrectrgn"></a>CRgn:: SetRectRgn
+## <a name="crgnsetrectrgn"></a><a name="setrectrgn"></a>CRgn::SetRectRgn
 
 Dikdörtgen bir bölge oluşturur.
 
@@ -818,25 +818,25 @@ void SetRectRgn(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Dikdörtgen bölgenin sol üst köşesinin x koordinatını belirtir.
+Dikdörtgen bölgenin sol üst köşesinin x-koordinatını belirtir.
 
-*Y1*<br/>
-Dikdörtgen bölgenin sol üst köşesinin y koordinatını belirtir.
+*y1*<br/>
+Dikdörtgen bölgenin sol üst köşesinin y-koordinatını belirtir.
 
 *x2*<br/>
-Dikdörtgen bölgenin sağ alt köşesinin x koordinatını belirtir.
+Dikdörtgen bölgenin sağ alt köşesinin x-koordinatını belirtir.
 
-*Y2*<br/>
-Dikdörtgen bölgenin sağ alt köşesinin y koordinatını belirtir.
+*y2*<br/>
+Dikdörtgen bölgenin sağ alt köşesinin y-koordinatını belirtir.
 
-*lpRect*<br/>
-Dikdörtgen bölgeyi belirtir. Bir `RECT` yapıya`CRect` ya da nesneye yönelik bir işaretçi olabilir.
+*Lprect*<br/>
+Dikdörtgen bölgeyi belirtir. Bir `RECT` yapıya veya `CRect` nesneye işaretçi olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ancak, [CreateRectRgn](#createrectrgn)aksine, yerel Windows uygulama yığınından ek bellek ayırmaz. Bunun yerine, `CRgn` nesnesinde depolanan bölge için ayrılan alanı kullanır. Bu, `CRgn` bir nesnenin çağrılmadan `SetRectRgn`önce geçerli bir Windows bölgesiyle zaten başlatılmış olması gerektiği anlamına gelir. *X1*, *Y1*, *x2*ve *Y2* tarafından verilen noktaları, ayrılan alanın en küçük boyutunu belirtir.
+[CreateRectRgn](#createrectrgn)aksine, ancak, yerel Windows uygulama yığınından herhangi bir ek bellek ayırmaz. Bunun yerine, `CRgn` nesnede depolanan bölge için ayrılan alanı kullanır. Bu, nesnenin `CRgn` aramadan `SetRectRgn`önce geçerli bir Windows bölgesiyle zaten baş harflere paralaştırılmış olması gerektiği anlamına gelir. *x1*, *y1*, *x2*ve *y2* tarafından verilen noktalar, ayrılan alanın minimum boyutunu belirtir.
 
-Yerel bellek yöneticisine yapılan çağrılardan `CreateRectRgn` kaçınmak için üye işlevi yerine bu işlevi kullanın.
+Yerel bellek yöneticisine `CreateRectRgn` yapılan çağrıları önlemek için üye işlev yerine bu işlevi kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

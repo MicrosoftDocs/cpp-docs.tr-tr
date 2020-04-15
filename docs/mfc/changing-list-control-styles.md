@@ -6,29 +6,29 @@ helpviewer_keywords:
 - CListCtrl class [MFC], styles
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-ms.openlocfilehash: b3cc65ce6ef0e84eaa2f6738cb18b6b862a6473a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5f45e0549c3fc0f5747f8dd12a6310fafd7dd7bb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509043"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370810"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 
-Bir liste denetiminin pencere stilini ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra istediğiniz zaman değiştirebilirsiniz. Pencere stilini değiştirerek, denetimin kullandığı görünüm türünü değiştirirsiniz. Örneğin, Gezgin 'e öykünmek için, farklı görünümler arasında denetimi değiştirmek için menü öğeleri veya araç çubuğu düğmeleri sağlayabilirsiniz: simge görünümü, liste görünümü vb.
+Bir liste denetiminin pencere stilini[(CListCtrl)](../mfc/reference/clistctrl-class.md)oluşturduktan sonra istediğiniz zaman değiştirebilirsiniz. Pencere stilini değiştirerek, denetimin kullandığı görünüm türünü değiştirirsiniz. Örneğin, Explorer'ı taklit etmek için, denetimi farklı görünümler arasında değiştirmek için menü öğeleri veya araç çubuğu düğmeleri sağlayabilirsiniz: simge görünümü, liste görünümü ve benzeri.
 
-Örneğin, Kullanıcı menü öğesini seçtiğinde, denetimin geçerli stilini almak için [GetWindowLong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) öğesine çağrı yapıp stili sıfırlamak Için [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) çağrısı yapabilirsiniz. Daha fazla bilgi için, bkz. Windows SDK [liste görünümü denetimlerini kullanma](/windows/win32/Controls/using-list-view-controls) .
+Örneğin, kullanıcı menü öğenizi seçtiğinde, denetimin geçerli stilini almak için [GetWindowLong'a](/windows/win32/api/winuser/nf-winuser-getwindowlongw) çağrı yapabilir ve stili sıfırlamak için [SetWindowLong'u](/windows/win32/api/winuser/nf-winuser-setwindowlongw) arayabilirsiniz. Daha fazla bilgi için Windows SDK'daki [Liste Görünümü Denetimlerini Kullanma'ya](/windows/win32/Controls/using-list-view-controls) bakın.
 
-Kullanılabilir stiller [oluşturma](../mfc/reference/clistctrl-class.md#create)bölümünde listelenmiştir. **Olduğumuzda komutu etkinleştir**, **LVS_SMALLICON**, **LVS_LIST**ve **LVS_REPORT** stillerinde dört liste denetim görünümü belirleyin.
+Kullanılabilir stiller [Oluştur'da](../mfc/reference/clistctrl-class.md#create)listelenir. Stilleri **LVS_ICON**, **LVS_SMALLICON**, **LVS_LIST**, ve **LVS_REPORT** dört liste denetim görünümleri belirlemek.
 
-## <a name="extended-styles"></a>Genişletilmiş stiller
+## <a name="extended-styles"></a>Genişletilmiş Stiller
 
-Bir liste denetimi için standart stillere ek olarak, genişletilmiş stiller olarak adlandırılan başka bir küme vardır. Windows SDK [Genişletilmiş liste görünümü stillerinde](/windows/win32/Controls/extended-list-view-styles) açıklanan bu stiller, liste denetiminizin davranışını özelleştiren çeşitli yararlı özellikler sağlar. Belirli bir stilin (örneğin, vurgulu seçim) davranışını uygulamak için, [Clienstctrl:: Seestdedstyle](../mfc/reference/clistctrl-class.md#setextendedstyle)öğesine bir çağrı yapıp gerekli stili geçirerek. Aşağıdaki örnek işlev çağrısını gösterir:
+Liste denetimi için standart stiller ek olarak, genişletilmiş stilleri olarak adlandırılan başka bir küme vardır. Windows SDK'da [Genişletilmiş Liste Görünümü Stilleri'nde](/windows/win32/Controls/extended-list-view-styles) tartışılan bu stiller, liste denetiminizin davranışını özelleştiren çeşitli yararlı özellikler sağlar. Belirli bir stilin davranışını (havada gezinme seçimi gibi) uygulamak için, Gerekli stili geçen [CListCtrl::SetExtendedStyle'ı](../mfc/reference/clistctrl-class.md#setextendedstyle)arayın. Aşağıdaki örnek, işlev çağrısını gösterir:
 
 [!code-cpp[NVC_MFCControlLadenDialog#22](../mfc/codesnippet/cpp/changing-list-control-styles_1.cpp)]
 
 > [!NOTE]
->  Üzerine gelme seçiminin çalışması için **LVS_EX_ONECLICKACTIVATE** veya **LVS_EX_TWOCLICKACTIVATE** özelliğinin açık olması gerekir.
+> Gezinme seçiminin işe yaraması **için, LVS_EX_ONECLICKACTIVATE** veya **LVS_EX_TWOCLICKACTIVATE** açık olması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

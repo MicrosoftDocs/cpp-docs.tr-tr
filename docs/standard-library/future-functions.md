@@ -1,5 +1,5 @@
 ---
-title: gelecekteki&gt; işlevleri &lt;
+title: '&lt;gelecekteki&gt; fonksiyonlar'
 ms.date: 11/04/2016
 f1_keywords:
 - future/std::async
@@ -14,23 +14,23 @@ helpviewer_keywords:
 - std::make_error_code [C++]
 - std::make_error_condition [C++]
 - std::swap [C++]
-ms.openlocfilehash: 5435c3b9e10f151fc77c72b58c93510b6a867ce1
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 16c26212cac13602e981f42d8333518da90615fc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370670"
 ---
-# <a name="ltfuturegt-functions"></a>gelecekteki&gt; işlevleri &lt;
+# <a name="ltfuturegt-functions"></a>&lt;gelecekteki&gt; fonksiyonlar
 
 ||||
 |-|-|-|
 |[async](#async)|[future_category](#future_category)|[make_error_code](#make_error_code)|
-|[make_error_condition](#make_error_condition)|[Kur](#swap)|
+|[make_error_condition](#make_error_condition)|[Takas](#swap)|
 
-## <a name="async"></a>eş
+## <a name="async"></a><a name="async"></a>Zaman uyumsuz
 
-*Zaman uyumsuz sağlayıcıyı*temsil eder.
+Bir *eşzamanlı sağlayıcıtemsil*eder.
 
 ```cpp
 template <class Fn, class... ArgTypes>
@@ -44,8 +44,8 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### <a name="parameters"></a>Parametreler
 
-*ilke*\
-Bir [başlatma](../standard-library/future-enums.md#launch) değeri.
+*Ilkesi*\
+[Fırlatma](../standard-library/future-enums.md#launch) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -53,38 +53,38 @@ Kısaltmaların tanımları:
 
 |||
 |-|-|
-|*DFN*|`decay_copy(forward<Fn>(fn))`çağırmanın sonucu.|
-|*darg 'ler*|Çağrıların sonuçları `decay_copy(forward<ArgsTypes>(args...))`.|
-|*Kalite*|Tür `result_of<Fn(ArgTypes...)>::type`.|
+|*dfn*|Aramanın `decay_copy(forward<Fn>(fn))`sonucu.|
+|*dargs*|Aramaların `decay_copy(forward<ArgsTypes>(args...))`sonuçları.|
+|*Ty*|Türü `result_of<Fn(ArgTypes...)>::type`.|
 
 İlk şablon işlevi `async(launch::any, fn, args...)`döndürür.
 
-İkinci işlev, bir yürütmenin ayrı bir iş parçacığını yönetmek için, *ilişkili zaman uyumsuz durumu* , *DFN* ve *darg* değerleri ve bir iş parçacığı nesnesi ile birlikte bir sonuç tutan bir `future<Ty>` nesnesi döndürür.
+İkinci işlev, `future<Ty>` ilişkili *asenkron durumu* *dfn* ve *dargs* değerleri ile birlikte bir sonuç tutan bir nesne ve yürütme ayrı bir iş parçacığı yönetmek için bir iş parçacığı nesnesi döndürür.
 
-`decay<Fn>::type`, başlatma haricinde bir tür değilse, ikinci işlev aşırı yükleme çözümüne katılmaz.
+Başlatma `decay<Fn>::type` dışında bir tür olmadığı sürece, ikinci işlev aşırı yük çözünürlüğüne katılmaz.
 
-Standart C++ , ilke başlatma:: Async olduğunda, işlev yeni bir iş parçacığı oluşturur. Ancak Microsoft Uygulama Şu anda uyumsuz. Bu işlem, bazı durumlarda yeni bir tane yerine geri dönüşümlü bir iş parçacığı sağlayabileceği Windows iş parçacığı ' ndan iş parçacıklarını edinir. Bu, `launch::async` ilkesinin aslında `launch::async|launch::deferred`olarak uygulandığı anlamına gelir.  İş parçacığı temelli uygulamanın diğer bir uygulaması, iş parçacığı tamamlandığında iş parçacığı yerel değişkenlerinin yok edileceği garantisi değildir. İş parçacığı geri dönüştürülüp `async`yeni bir çağrıya sağlanmışsa, eski değişkenler yine de mevcut olacaktır. Bu nedenle, `async`ile iş parçacığı yerel değişkenleri kullanmanıza tavsiye ederiz.
+C++ standardı, ilke başlatılırsa::async, işlevin yeni bir iş parçacığı oluşturduğunu belirtir. Ancak Microsoft uygulaması şu anda uygun değildir. İş parçacıklarını, bazı durumlarda yeni bir iş yerine geri dönüştürülmüş bir iş parçacığı sağlayabilecek olan Windows ThreadPool'dan edinir. Bu, ilkenin `launch::async` aslında `launch::async|launch::deferred`.  ThreadPool tabanlı uygulamanın bir diğer sonucu da iş parçacığı tamamlandığında iş parçacığı yerel değişkenlerinin yok olacağının garantisi olmamasıdır. İş parçacığı geri dönüştürülür ve yeni `async`bir çağrı sağlanırsa, eski değişkenler hala var olacaktır. Bu nedenle iş parçacığı yerel değişkenleri kullanmamanızı `async`öneririz.
 
-*İlke* `launch::deferred`ise, işlevi, *Ertelenen işlevi* tutarak ilişkili zaman uyumsuz durumunu işaretler ve döndürür. Zaman uyumsuz bir işlevin, ilişkili zaman uyumsuz durumunun etkin olması için bekleyeceği ilk çağrı, `INVOKE(dfn, dargs..., Ty)`değerlendirerek ertelenmiş işlevi çağırır.
+*İlke* `launch::deferred`ise, işlev ertelenmiş bir işlev tutarak ilişkili asynchronous durumunu işaretler ve *döndürür.* İlişkili asenkron durumunun etkin olarak hazır olmasını bekleyen zamansız işlevlere yapılan ilk çağrı, ertelenmiş `INVOKE(dfn, dargs..., Ty)`işlevi değerlendirerek çağırır.
 
-Her durumda, `future` nesnesinin ilişkili zaman uyumsuz durumu, `INVOKE(dfn, dargs..., Ty)` değerlendirmesi tamamlanana kadar, bir özel durum oluşturarak ya da normal şekilde döndürülünceye kadar, *hazırlık* olarak ayarlanmıştır. İlişkili zaman uyumsuz durumun sonucu, oluşturulursa bir özel durumdur veya değerlendirme tarafından döndürülen herhangi bir değerdir.
+Her durumda, nesnenin `future` ilişkili eşzamanlı durumu, bir özel durum atılarak veya normal olarak döndürülerek, değerlendirme `INVOKE(dfn, dargs..., Ty)` tamamlanana kadar *hazır* olarak ayarlanmaz. İlişkili eşzamanlı durum sonucu bir atıldığında veya değerlendirme tarafından döndürülen herhangi bir değer bir özel durumdur.
 
 > [!NOTE]
-> `std::async`ile başlatılan bir göreve eklenen bir `future`veya son [shared_future](../standard-library/shared-future-class.md)için, görev tamamlanmadığından yıkıcı engellenir; diğer bir deyişle, bu iş parçacığı henüz `.get()` veya `.wait()` çağırmadıysa ve görev hala çalışıyorsa engeller. `std::async` alınan bir `future` yerel kapsam dışına taşınırsa, onu kullanan diğer kod, yok edicinin paylaşılan durumun hazırlanabilmesi için engelleyebilen farkında olmalıdır.
+> Bir `future`—veya son [shared_future](../standard-library/shared-future-class.md)için (bu, görev tamamlanmadıysa yıkıcı bloklar) ile `std::async`başlatılan bir göreve eklenir; diğer bir şey, bu iş parçacığı `.get()` `.wait()` henüz aramadı veya görev hala çalışıyorsa engeller. Elde `future` edilen `std::async` bir yerel kapsam dışına taşınırsa, onu kullanan diğer kod, yıkıcının paylaşılan durumun hazır olması için engelolabileceğini bilmelidir.
 
-Sözde işlev `INVOKE` [\<işlevsel >](../standard-library/functional.md)tanımlanmıştır.
+Sözde fonksiyon `INVOKE` [ \<fonksiyonel>](../standard-library/functional.md)tanımlanır.
 
-## <a name="future_category"></a>future_category
+## <a name="future_category"></a><a name="future_category"></a>future_category
 
-`future` nesneleriyle ilişkili hataları karakterlendirir [error_category](../standard-library/error-category-class.md) nesnesine bir başvuru döndürür.
+Nesnelerle `future` ilişkili hataları karakterize eden [error_category](../standard-library/error-category-class.md) nesneye bir başvuru verir.
 
 ```cpp
 const error_category& future_category() noexcept;
 ```
 
-## <a name="make_error_code"></a>make_error_code
+## <a name="make_error_code"></a><a name="make_error_code"></a>make_error_code
 
-[Gelecekte](../standard-library/future-class.md) hatalara sahip [error_category](../standard-library/error-category-class.md) nesnesiyle birlikte bir [error_code](../standard-library/error-code-class.md) oluşturur.
+[Gelecekteki](../standard-library/future-class.md) hataları karakterize eden [error_category](../standard-library/error-category-class.md) nesneyle birlikte bir [error_code](../standard-library/error-code-class.md) oluşturur.
 
 ```cpp
 inline error_code make_error_code(future_errc Errno) noexcept;
@@ -93,15 +93,15 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *Errno*\
-Bildirilen hatayı tanımlayan bir [future_errc](../standard-library/future-enums.md#future_errc) değeri.
+Bildirilen hatayı tanımlayan [future_errc](../standard-library/future-enums.md#future_errc) değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 `error_code(static_cast<int>(Errno), future_category());`
 
-## <a name="make_error_condition"></a>make_error_condition
+## <a name="make_error_condition"></a><a name="make_error_condition"></a>make_error_condition
 
-[Gelecekte](../standard-library/future-class.md) hatalara sahip [error_category](../standard-library/error-category-class.md) nesnesiyle birlikte bir [error_condition](../standard-library/error-condition-class.md) oluşturur.
+[Gelecekteki](../standard-library/future-class.md) hataları karakterize eden [error_category](../standard-library/error-category-class.md) nesnesi ile birlikte bir [error_condition](../standard-library/error-condition-class.md) oluşturur.
 
 ```cpp
 inline error_condition make_error_condition(future_errc Errno) noexcept;
@@ -110,15 +110,15 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *Errno*\
-Bildirilen hatayı tanımlayan bir [future_errc](../standard-library/future-enums.md#future_errc) değeri.
+Bildirilen hatayı tanımlayan [future_errc](../standard-library/future-enums.md#future_errc) değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 `error_condition(static_cast<int>(Errno), future_category());`
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Takas
 
-Bir `promise` nesnesinin *ilişkili zaman uyumsuz durumunu* başka bir nesneyle değiştirir.
+Bir `promise` nesnenin *ilişkili eşzamanlı durumunu* diğerininkiyle değiştirir.
 
 ```cpp
 template <class Ty>
@@ -131,11 +131,11 @@ void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& 
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `promise` nesnesi.
+Sol `promise` nesne.
 
-*Sağ*\
-Doğru `promise` nesnesi.
+*Doğru*\
+Doğru `promise` nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[gelecekte \<>](../standard-library/future.md)
+[\<gelecek>](../standard-library/future.md)

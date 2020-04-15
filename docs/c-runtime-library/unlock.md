@@ -23,19 +23,19 @@ helpviewer_keywords:
 - unlock function
 - _unlock function
 ms.assetid: 2eda2507-a134-4997-aa12-f2f8cb319e14
-ms.openlocfilehash: 5535b19a2419bf58f22bc39d87fc615c19265cd4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 185cb1e5f582fd5eeb1dbcb337c402319ab78f00
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957254"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365694"
 ---
 # <a name="_unlock"></a>_unlock
 
-Çoklu iş parçacığı kilidi yayınlar.
+Çok iş parçacığı kilidi serbest bırakır.
 
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
+> Bu işlev geçersizdir. Visual Studio 2015'ten itibaren CRT'de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,11 +48,11 @@ void __cdecl _unlock(
 #### <a name="parameters"></a>Parametreler
 
 *locknum*<br/>
-'ndaki Yayın kilidinin tanıtıcısı.
+[içinde] Serbest bırakmak için kilidin tanımlayıcısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Kaynak:** MLOCK. c
+**Kaynak:** mlock.c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

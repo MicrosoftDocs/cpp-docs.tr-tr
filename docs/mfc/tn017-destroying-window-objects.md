@@ -8,90 +8,90 @@ helpviewer_keywords:
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-ms.openlocfilehash: 9e52112bed0f583a3f5652f9213bd5049d543a80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9802669468cbbba89f23b8ac127358d1fc15ec9f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306161"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370417"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: Pencere Nesnelerini Yok Etme
 
-Bu Not kullanımını açıklar [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) yöntemi. Özelleştirilmiş ayırma işlemi yapmak istiyorsanız bu yöntemi kullanın `CWnd`-türetilmiş nesneler. Bu Not, ayrıca neden kullanmanız gerektiğini açıklar [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) yerine bir C++ Windows nesneyi yok etmek için **Sil** işleci.
+Bu [not, CWnd kullanımını açıklar::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) yöntemi. Türetilmiş nesnelerin özelleştirilmiş tahsisini `CWnd`yapmak istiyorsanız bu yöntemi kullanın. Bu not, **silme** işleci yerine C++ Windows nesnesini yok etmek için neden [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) kullanmanız gerektiğini de açıklar.
 
-Bu konu başlığı altındaki yönergeleri izleyin, birkaç temizleme sorunları yüklemeniz gerekir. Bu sorunları gibi sistem kaynaklarını serbest unutmak C++ bellek silme/serbest unutmak gibi sorunlardan sonuçlanabilir `HWND`s veya çok fazla kez nesneleri serbest bırakma.
+Bu konudaki yönergeleri izlerseniz, birkaç temizleme sorununuz olacaktır. Bu sorunlar, C++ belleği silmeyi/boşaltmayı unutma, s gibi `HWND`özgür sistem kaynaklarını unutma veya nesneleri çok fazla serbest etme gibi sorunlardan kaynaklanabilir.
 
 ## <a name="the-problem"></a>Sorun
 
-Her windows nesnesi (sınıfından türetilen bir sınıfın nesne `CWnd`) hem bir C++ nesnesi temsil eder ve bir `HWND`. C++ nesneleri, uygulamanın yığında ayrılır ve `HWND`s sistem kaynakları Pencere Yöneticisi tarafından ayrılır. Pencere nesnesini yok etmek için çeşitli yollar olduğundan, sistem engelleyen kuralları kümesi sağlamanız gerekir kaynak veya bellek sızıntısı. Bu kurallar ayrıca nesneleri ve Windows tanıtıcıları birden fazla kez yok engellemelisiniz.
+Her windows nesnesi (türetilen bir sınıfın `CWnd`nesnesi) hem C++ nesnesini hem de . `HWND` C++ nesneleri uygulamanın yığınına ayrılır ve `HWND`s pencere yöneticisi tarafından sistem kaynaklarına ayrılır. Bir pencere nesnesini yok etmenin birkaç yolu olduğundan, sistem kaynağının veya bellek sızıntılarının önüne geçen bir dizi kural sağlamamız gerekir. Bu kurallar, nesnelerin ve Windows tutamaçlarının birden fazla kez yok olmasını da engellemelidir.
 
-## <a name="destroying-windows"></a>Windows yok etme
+## <a name="destroying-windows"></a>Windows'u Yok Etme
 
-Bir Windows nesneyi yok etmek için iki izin verilen yollar şunlardır:
+Bir Windows nesnesini yok etmenin iki izin verilen yolu şunlardır:
 
-- Çağırma `CWnd::DestroyWindow` ya da Windows API `DestroyWindow`.
+- Arama `CWnd::DestroyWindow` veya Windows `DestroyWindow`API.
 
-- İle açıkça silme **Sil** işleci.
+- **Silme** işleciyle açıkça silme.
 
-İlk şu ana kadar en yaygın bir durumdur. Bu durumda bile, kod arama geçerlidir `DestroyWindow` doğrudan. Kullanıcı doğrudan bir çerçeve penceresini kapatır, bu eylem WM_CLOSE iletisini oluşturur ve bu iletiye varsayılan yanıt çağırmaktır `DestroyWindow.` üst penceresine kaldırıldığında, bu Windows çağırır `DestroyWindow` tüm alt öğeleri için.
+İlk vaka açık ara en yaygın olanıdır. Bu durum, kodunuz doğrudan aramasa `DestroyWindow` bile geçerlidir. Kullanıcı bir çerçeve penceresini doğrudan kapattığında, bu eylem WM_CLOSE iletisini oluşturur ve `DestroyWindow.` bu iletiye varsayılan yanıt, `DestroyWindow` bir üst pencere yok edildiğinde, Windows tüm alt çocuklarını çağırır.
 
-İkinci durumda, kullanımını **Sil** Windows nesneler üzerinde operatör seyrek olmalıdır. Bazı durumlarda kullanıldığında aşağıdaki öğeler **Sil** doğru seçimdir.
+İkinci durumda, Windows nesneleri üzerinde **silme** işleci nin kullanımı, nadir olmalıdır. Sil'i **kullanmanın** doğru seçim olduğu bazı durumlar aşağıda veda edilebilgilidir.
 
-## <a name="auto-cleanup-with-cwndpostncdestroy"></a>Otomatik temizleme CWnd::PostNcDestroy ile
+## <a name="auto-cleanup-with-cwndpostncdestroy"></a>CWnd ile Otomatik Temizlik::PostNcDestroy
 
-Sistemin Windows penceresini yok eder penceresine gönderilen son Windows ileti WM_NCDESTROY olur. Varsayılan `CWnd` için ileti işleyicisi [CWnd::OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy). `OnNcDestroy` ayırma `HWND` C++'tan nesne ve sanal işlev çağrısı `PostNcDestroy`. Bazı sınıflar C++ nesneyi silmek için bu işlevi geçersiz.
+Sistem bir Windows penceresini yok ettiğinde, pencereye gönderilen son Windows iletisi WM_NCDESTROY. Bu `CWnd` ileti için varsayılan işleyici [CWnd::OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy)olduğunu. `OnNcDestroy`C++ `HWND` nesnesinden ayıracak ve sanal işlevi `PostNcDestroy`çağıracaktır. Bazı sınıflar C++ nesnesini silmek için bu işlevi geçersiz kılar.
 
-Varsayılan uygulaması `CWnd::PostNcDestroy` işlem, ayrılan yığın çerçevesini veya diğer nesneleri katıştırılmış pencere nesneleri için uygun olduğu gerçekleştirmez. Bu olmadan herhangi bir nesne yığını üzerindeki ayrılacak tasarlanan pencere nesneleri için uygun değildir. Diğer bir deyişle, diğer C++ nesneleri gömülü pencere nesneleri için uygun değil.
+Yığın çerçevesine `CWnd::PostNcDestroy` ayrılan veya diğer nesnelere katıştırılmış pencere nesneleri için uygun olan hiçbir şey yapmaz varsayılan uygulaması. Bu, başka nesneler olmadan yığına ayrılacak şekilde tasarlanmış pencere nesneleri için uygun değildir. Başka bir deyişle, diğer C++ nesnelerine katıştırılmış olmayan pencere nesneleri için uygun değildir.
 
-Tek başına yığında ayrılan için tasarlanan bu sınıfları geçersiz kılma `PostNcDestroy` gerçekleştirmek için yöntemi bir **bu silme**. Bu bildirimi, C++ nesneyle ilişkili herhangi bir bellek boşaltır. Olsa bile varsayılan `CWnd` yıkıcı çağrıları `DestroyWindow` varsa *m_hWnd* olan ayrılmış ve NULL temizleme aşamasında tanıtıcı olacağından NULL olmayan, bu sonsuz özyineleme durumuna yol neden olmaz.
+Yığınüzerinde tek başına tahsis edilecek şekilde tasarlanan bu `PostNcDestroy` **sınıflar, bunu silmek**için yöntemi geçersiz kılar. Bu bildirim, C++ nesnesi ile ilişkili herhangi bir bellek serbest olacaktır. Varsayılan `CWnd` yıkıcı *m_hWnd* NULL değilse `DestroyWindow` çağırır olsa da, bu sonsuz özyinelemeye yol açmaz, çünkü işlem temizleme aşamasında kopuk ve NULL olacaktır.
 
 > [!NOTE]
->  Sistem genellikle çağrıları `CWnd::PostNcDestroy` Windows WM_NCDESTROY iletisini işledikten sonra ve `HWND` ve C++ pencere nesnesi artık bağlı. Sistem ayrıca çağırma `CWnd::PostNcDestroy` çoğu uygulamada [CWnd::Create](../mfc/reference/cwnd-class.md#create) hata oluşması durumunda çağırır. Otomatik temizleme kuralları, bu konunun ilerleyen bölümlerinde açıklanmıştır.
+> Sistem genellikle `CWnd::PostNcDestroy` Windows WM_NCDESTROY iletisini işledikten sonra çağırır ve `HWND` C++ pencere nesnesi artık bağlı değildir. Sistem ayrıca çoğu `CWnd::PostNcDestroy` CWnd'nin uygulanmasında çağrıda [bulunacak::Hata](../mfc/reference/cwnd-class.md#create) oluşursa arama lar oluşturun. Otomatik temizleme kuralları daha sonra bu konuda açıklanmıştır.
 
-## <a name="auto-cleanup-classes"></a>Otomatik temizleme sınıfları
+## <a name="auto-cleanup-classes"></a>Otomatik Temizleme Sınıfları
 
-Aşağıdaki sınıflar, otomatik temizleme için tasarlanmamıştır. Diğer C++ nesnelerinin veya yığın katıştırılmış genellikle:
+Aşağıdaki sınıflar otomatik temizleme için tasarlanmaz. Genellikle diğer C++ nesnelerine veya yığına katıştirilirler:
 
-- Tüm standart Windows denetimler (`CStatic`, `CEdit`, `CListBox`, vb.).
+- Tüm standart Windows`CStatic` `CEdit`denetimleri ( , , `CListBox`, ve benzeri).
 
-- Tüm alt pencereleri doğrudan türetilmiş `CWnd` (örneğin, özel denetimler).
+- Doğrudan türetilen alt `CWnd` pencereler (örneğin, özel denetimler).
 
-- Bölümlendirici pencereler (`CSplitterWnd`).
+- Splitter pencereleri (`CSplitterWnd`).
 
-- Varsayılan Denetim çubukları (türetilen sınıflar `CControlBar`, bkz: [Teknik Not 31](../mfc/tn031-control-bars.md) denetim çubuğu nesneler için otomatik silme etkinleştirmek için).
+- Varsayılan denetim çubukları (denetim çubuğu nesneleri için otomatik silmeyi etkinleştirmek için Teknik Not `CControlBar` [31'den](../mfc/tn031-control-bars.md) türetilen sınıflar).
 
-- İletişim kutuları (`CDialog`) yığın çerçevesinde kalıcı iletişim kutuları için tasarlanmıştır.
+- Yığın çerçevesi`CDialog`üzerindeki modal iletişim kutuları için tasarlanmış diyaloglar .
 
-- Tüm standart iletişim kutuları dışında `CFindReplaceDialog`.
+- Hariç tüm standart iletişim `CFindReplaceDialog`
 
 - ClassWizard tarafından oluşturulan varsayılan iletişim kutuları.
 
-Aşağıdaki sınıflar, otomatik temizleme için tasarlanmıştır. Bunlar genellikle başlarına yığında ayrılır:
+Aşağıdaki sınıflar otomatik temizleme için tasarlanmıştır. Genellikle yığın üzerinde kendileri tarafından tahsis edilir:
 
-- Ana çerçeve pencereleri (doğrudan veya dolaylı olarak türetilmiş `CFrameWnd`).
+- Ana çerçeve pencereleri (doğrudan `CFrameWnd`veya dolaylı olarak türetilmiştir).
 
-- Windows görüntüleme (doğrudan veya dolaylı olarak türetilmiş `CView`).
+- Pencereleri görüntüleyin (doğrudan `CView`veya dolaylı olarak türetilmiştir).
 
-Bu kuralı ihlal istiyorsanız, geçersiz kılmanız gerekir `PostNcDestroy` türetilmiş sınıfınızın yöntemi. Sınıfınıza otomatik temizleme eklemek için taban sınıfını çağırın ve ardından yapın bir **bu silme**. Otomatik temizleme sizin sınıfınızdan kaldırmak için çağrı `CWnd::PostNcDestroy` doğrudan yerine, `PostNcDestroy` doğrudan temel sınıfının yöntemi.
+Bu kuralları kırmak istiyorsanız, türemiş `PostNcDestroy` sınıfınızdaki yöntemi geçersiz kılmanız gerekir. Sınıfınıza otomatik temizleme eklemek için taban sınıfınızı arayın ve sonra **bunu silin.** Sınıfınızdan otomatik temizlemeyi kaldırmak için, doğrudan `PostNcDestroy` taban sınıfınızın yöntemi yerine doğrudan arayın. `CWnd::PostNcDestroy`
 
-Otomatik temizleme davranışı değiştirmenin en yaygın kullanımı, yığında ayrılabilir modelsiz bir iletişim oluşturmaktır.
+Otomatik temizleme davranışını değiştirmenin en yaygın kullanımı, yığına ayrılabilecek biçimsiz bir iletişim oluşturmaktır.
 
-## <a name="when-to-call-delete"></a>Çağrı silinecek
+## <a name="when-to-call-delete"></a>Silme Ne Zaman Çağrı
 
-Çağırmanızı öneririz `DestroyWindow` C++ yöntemi veya genel bir Windows nesneyi yok etmek için `DestroyWindow` API.
+C++ yöntemi `DestroyWindow` veya genel `DestroyWindow` API gibi bir Windows nesnesini yok etmek için aramanızı öneririz.
 
-Genel çağırmayın `DestroyWindow` MDI alt penceresini yok etmek için API. Sanal yöntem `CWnd::DestroyWindow` yerine.
+Bir MDI `DestroyWindow` Child penceresini yok etmek için genel API'yi aramayın. Bunun yerine sanal `CWnd::DestroyWindow` yöntemi kullanmalısınız.
 
-Otomatik temizleme gerçekleştirmeyin C++ pencere nesneleri için kullanarak **Sil** işleci, bir bellek sızıntısı açabilir, çağırmaya çalıştığınızda `DestroyWindow` içinde `CWnd::~CWnd` VTBL doğru türetilmiş sınıfa işaret etmiyorsa yıkıcı. Bu durum, sistem uygun destroy metodu çağırmak için bulamıyor kaynaklanır. Kullanarak `DestroyWindow` yerine **Sil** bu sorunları ortadan kaldırır. Bu hafif bir hata oluştu Bu nedenle, risk altında olup olmadığını hata ayıklama modunda derleme aşağıdaki uyarı oluşturur.
+Otomatik temizleme yapmayan C++ Penceresi nesneleri için, **Silmek** işlecini kullanmak, VTBL `DestroyWindow` doğru `CWnd::~CWnd` türetilen sınıfı işaret etmiyorsa yıkıcıyı çağırmaya çalıştığınızda bellek sızıntısına neden olabilir. Sistem aramak için uygun yok etme yöntemini bulamıyor çünkü bu oluşur. Silme `DestroyWindow` yerine **delete** kullanmak bu sorunları önler. Bu ince bir hata olabileceğinden, hata ayıklama modunda derleme niz risk altındaysa aşağıdaki uyarıyı oluşturur.
 
 ```
 Warning: calling DestroyWindow in CWnd::~CWnd
     OnDestroy or PostNcDestroy in derived class will not be called
 ```
 
-Otomatik temizleme işlemleri yapma C++ Windows nesneleri söz konusu olduğunda, çağırmalısınız `DestroyWindow`. Kullanırsanız **Sil** işleci doğrudan MFC tanılama bellek ayırıcısı bildirim gönderilir, iki kez bellek boşaltma. İlk açık aramanız ve dolaylı çağrı iki oluşumlar: **bu silme** otomatik temizleme uygulamasında `PostNcDestroy`.
+Otomatik temizleme gerçekleştiren C++ Windows nesneleri söz konusu olduğunda, `DestroyWindow`. **Silme** işlecinin doğrudan kullanılması durumunda, MFC tanılama bellek ayırıcısı size belleği iki kez serbest yaptığınızı bildirir. İki olay ilk açık arama ve dolaylı çağrı otomatik temizleme uygulamasında **bu silmek** için `PostNcDestroy`.
 
-Arama sonra `DestroyWindow` otomatik temizleme nesnesinde C++ nesne çevresinde, hala olacaktır ancak *m_hWnd* NULL olacaktır. Arama sonra `DestroyWindow` otomatik temizleme nesnesinde bir C++ nesnesi otomatik temizleme uygulamalarında C++ delete işleci ile serbest, kaybolur `PostNcDestroy`.
+Otomatik `DestroyWindow` temizleme olmayan bir nesneyi çağırdıktan sonra, C++ nesnesi hala etrafta olacak, ancak *m_hWnd* NULL olacaktır. Otomatik `DestroyWindow` temizleme nesnesini `PostNcDestroy`aradıktan sonra, C++ nesnesi gitmiş olacak ve otomatik temizleme uygulamasında C++ silme işleci tarafından serbest bırakılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

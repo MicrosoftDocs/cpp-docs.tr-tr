@@ -1,5 +1,5 @@
 ---
-title: CMFCCaptionButton sınıfı
+title: CMFCCaptionButton Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCCaptionButton
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CMFCCaptionButton [MFC], OnDraw
 - CMFCCaptionButton [MFC], SetMiniFrameButton
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-ms.openlocfilehash: 2020f6cb2f0feec28996f69791899c648600b600
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fb47e4373bf53e66dd4af17c89fe2f761858fbfd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403821"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367747"
 ---
-# <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton sınıfı
+# <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton Sınıfı
 
-`CMFCCaptionButton` Sınıfı için yerleştirme bölmesinin veya mini çerçevenin başlık çubuğunda görüntülenen bir düğme uygular. Genellikle, framework resim yazılı düğmelerini otomatik olarak oluşturur.
+Sınıf, `CMFCCaptionButton` yerleştirme bölmesi veya mini çerçeve penceresi için resim yazısı çubuğunda görüntülenen bir düğme uygular. Genellikle, çerçeve otomatik olarak resim yazısı düğmeleri oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,52 +45,52 @@ class CMFCCaptionButton : public CObject
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCCaptionButton::CMFCCaptionButton](#cmfccaptionbutton)|CMFCCaptionButton bir nesne oluşturur.|
+|[CMFCCaptionButton::CMFCCaptionButton](#cmfccaptionbutton)|CMFCCaptionButton nesnesi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCCaptionButton::GetHit](#gethit)|Düğme tarafından temsil edilen komut döndürür.|
-|[CMFCCaptionButton::GetIconID](#geticonid)|Düğme ile ilişkili görüntü kimliği döndürür.|
-|[CMFCCaptionButton::GetRect](#getrect)|Düğme tarafından Dolu Dikdörtgen döndürür.|
-|[CMFCCaptionButton::GetSize](#getsize)|Genişlik ve yükseklik düğmenin döndürür.|
-|[CMFCCaptionButton::IsMiniFrameButton](#isminiframebutton)|Başlık çubuğu yüksekliği mini boyutuna ayarlanmış olup olmadığını gösterir.|
-|[CMFCCaptionButton::Move](#move)|Düğme çizim konumunu ve durumunu göster penceresi ayarlar.|
-|[CMFCCaptionButton::OnDraw](#ondraw)|Başlık düğmesi çizer.|
-|[CMFCCaptionButton::SetMiniFrameButton](#setminiframebutton)|Başlık çubuğunda mini boyutunu ayarlar.|
+|[CMFCCaptionButton::GetHit](#gethit)|Düğme tarafından temsil edilen komutu döndürür.|
+|[CMFCCaptionButton::GetIconID](#geticonid)|Düğmeyle ilişkili görüntü kimliğini döndürür.|
+|[CMFCCaptionButton::GetRect](#getrect)|Düğmetarafından işgal edilen dikdörtgeni döndürür.|
+|[CMFCCaptionButton::GetSize](#getsize)|Düğmenin genişliğini ve yüksekliğini verir.|
+|[CMFCCaptionButton::IsMiniFrameButton](#isminiframebutton)|Başlık çubuğu yüksekliğinin mini boyuta ayarlanıp ayarlmadığını gösterir.|
+|[CMFCCaptionButton::Taşı](#move)|Düğme çizim konumu ve pencere gösteri durumu ayarlar.|
+|[CMFCCaptionButton::OnDraw](#ondraw)|Resim yazısı düğmesini çizer.|
+|[CMFCCaptionButton::SetMiniFrameButton](#setminiframebutton)|Başlık çubuğunun mini boyutunu ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öğesinden bir sınıf türetebilirsiniz [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md) ve korumalı yöntem `AddButton`, resim yazılı düğmelerini bir mini çerçeve penceresine eklemek için.
+[CPaneFrameWnd Class'tan](../../mfc/reference/cpaneframewnd-class.md) bir sınıf türetebilir ve `AddButton`mini çerçeve penceresine resim yazısı düğmeleri eklemek için korumalı yöntemi kullanabilirsiniz.
 
-CPaneFrameWnd.h komut kimlikleri için resim yazılı düğmelerini iki tür tanımlar:
+CPaneFrameWnd.h, iki tür resim yazısı düğmesi için komut tanımlarını tanımlar:
 
-- Pin düğmesini yerleştirme bölmesi otomatik gizleme modu desteklediğinde görüntüleyen AFX_CAPTION_BTN_PIN.
+- AFX_CAPTION_BTN_PIN, yerleştirme bölmesi otomatik gizleme modunu desteklediğinde bir pin düğmesi görüntüler.
 
-- Görüntüleyen AFX_CAPTION_BTN_CLOSE bir **Kapat** düğme bölmesi kapalı veya gizli.
+- bölme kapatıldığında veya gizlendiğinde **Kapat** düğmesini görüntüleyen AFX_CAPTION_BTN_CLOSE.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCCaptionButton` nesne ve başlık çubuğunda mini boyutunu ayarlayın.
+Aşağıdaki örnek, bir `CMFCCaptionButton` nesnenin nasıl oluşturup başlık çubuğunun mini boyutunun ayarlanıştını gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#43](../../mfc/reference/codesnippet/cpp/cmfccaptionbutton-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCCaptionButton](../../mfc/reference/cmfccaptionbutton-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcaptionbutton.h
+**Üstbilgi:** afxcaptionbutton.h
 
-##  <a name="cmfccaptionbutton"></a>  CMFCCaptionButton::CMFCCaptionButton
+## <a name="cmfccaptionbuttoncmfccaptionbutton"></a><a name="cmfccaptionbutton"></a>CMFCCaptionButton::CMFCCaptionButton
 
-Oluşturur bir `CMFCCaptionButton` nesne.
+Bir `CMFCCaptionButton` nesne inşa eder.
 
 ```
 CMFCCaptionButton();
@@ -103,32 +103,32 @@ CMFCCaptionButton(
 ### <a name="parameters"></a>Parametreler
 
 *nHit*<br/>
-[in] İlişkili düğme komutu.
+[içinde] Düğmeyle ilişkili komut.
 
 *bLeftAlign*<br/>
-[in] Düğmenin soluna hizalanıp hizalanmayacağını belirtir.
+[içinde] Düğmenin sola hizalanıp hizalanmayacağını belirtir.
 
-İçin olası değerler aşağıdaki tabloda *nHit* parametresi.
+Aşağıdaki tabloda *nHit* parametresi için olası değerler listeleilmektedir.
 
 |Değer|Komut|
 |-----------|-------------|
-|AFX_HTCLOSE|Kapat düğmesi.|
-|HTMINBUTTON|Simge Durumuna Küçült düğmesi.|
-|HTMAXBUTTON|Ekranı Kapla düğmesi.|
-|AFX_HTLEFTBUTTON|Sol Ok düğmesi.|
-|AFX_HTRIGHTBUTTON|Sağ ok düğmesi.|
-|AFX_HTMENU|Aşağı ok menüsü düğmesi.|
-|HTNOWHERE|Varsayılan değer; herhangi bir komutu temsil eder.|
+|AFX_HTCLOSE|Düğmeyi kapat.|
+|HTMINBUTTON|Simge durumuna küçült düğmesi.|
+|HTMAXBUTTON|En üst düzeye çıkar düğmesi.|
+|AFX_HTLEFTBUTTON|Sol ok tuşu.|
+|AFX_HTRIGHTBUTTON|Sağ ok tuşu.|
+|AFX_HTMENU|Aşağı ok menü düğmesi.|
+|HTNOWHERE|Varsayılan değer; hiçbir komutu temsil etmez.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, resim yazılı düğmelerini bir komut ile ilişkili değildir.
+Varsayılan olarak, resim yazısı düğmeleri bir komutla ilişkili değildir.
 
-Resim yazılı düğmelerini sağa veya sola hizalanır.
+Resim yazısı düğmeleri sağda veya solda hizalanır.
 
-##  <a name="gethit"></a>  CMFCCaptionButton::GetHit
+## <a name="cmfccaptionbuttongethit"></a><a name="gethit"></a>CMFCCaptionButton::GetHit
 
-Düğme tarafından temsil edilen komut döndürür.
+Düğme tarafından temsil edilen komutu döndürür.
 
 ```
 UINT GetHit() const;
@@ -136,23 +136,23 @@ UINT GetHit() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme tarafından temsil edilen komutu.
+Düğme tarafından temsil edilen komut.
 
-Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.
+Aşağıdaki tabloda olası iade değerleri listelenilmektedir.
 
 |Değer|Komut|
 |-----------|-------------|
-|AFX_HTCLOSE|Kapat düğmesi.|
-|HTMINBUTTON|Simge Durumuna Küçült düğmesi.|
-|HTMAXBUTTON|Ekranı Kapla düğmesi.|
-|AFX_HTLEFTBUTTON|Sol Ok düğmesi.|
-|AFX_HTRIGHTBUTTON|Sağ ok düğmesi.|
-|AFX_HTMENU|Aşağı ok menüsü düğmesi.|
-|HTNOWHERE|Varsayılan değer; herhangi bir komutu temsil eder.|
+|AFX_HTCLOSE|Düğmeyi kapat.|
+|HTMINBUTTON|Simge durumuna küçült düğmesi.|
+|HTMAXBUTTON|En üst düzeye çıkar düğmesi.|
+|AFX_HTLEFTBUTTON|Sol ok tuşu.|
+|AFX_HTRIGHTBUTTON|Sağ ok tuşu.|
+|AFX_HTMENU|Aşağı ok menü düğmesi.|
+|HTNOWHERE|Varsayılan değer; hiçbir komutu temsil etmez.|
 
-##  <a name="geticonid"></a>  CMFCCaptionButton::GetIconID
+## <a name="cmfccaptionbuttongeticonid"></a><a name="geticonid"></a>CMFCCaptionButton::GetIconID
 
-Düğme ile ilişkili görüntü kimliği döndürür.
+Düğmeyle ilişkili görüntü kimliğini döndürür.
 
 ```
 virtual CMenuImages::IMAGES_IDS GetIconID(
@@ -163,22 +163,22 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ### <a name="parameters"></a>Parametreler
 
 *bHorz*<br/>
-[in] Sol veya sağ ok görüntü kimlikleri için TRUE; Yukarı veya aşağı ok görüntü kimliği yanlış için.
+[içinde] Sol veya sağ ok görüntü titremleri için DOĞRU; Yukarı veya aşağı ok görüntü titreşmeleri için YANLIŞ.
 
 *bMaximized*<br/>
-[in] Ekranı Kapla görüntü kimliği için TRUE; Bir simge durumuna küçült görüntüsü kimliği için FALSE
+[içinde] Görüntü kimliğini en üst düzeye çıkarmak için DOĞRU; En aza indirgenme görüntü kimliği için YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntü Kimliği
+Görüntü kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametreler için simge durumuna küçült görüntü kimliklerini belirtin veya resim yazılı düğmelerini en üst düzeye çıkarın.
+Parametreler, resim yazısı düğmelerini en aza indirmek veya en üst düzeye çıkarmak için resim eklerini belirtir.
 
-##  <a name="getrect"></a>  CMFCCaptionButton::GetRect
+## <a name="cmfccaptionbuttongetrect"></a><a name="getrect"></a>CMFCCaptionButton::GetRect
 
-Düğme tarafından Dolu Dikdörtgen döndürür.
+Düğmetarafından işgal edilen dikdörtgeni döndürür.
 
 ```
 virtual CRect GetRect() const;
@@ -186,15 +186,15 @@ virtual CRect GetRect() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmenin konumu temsil eden dikdörtgen.
+Düğmenin konumunu temsil eden dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düğmeyi göremiyorsanız, döndürülen boyutu 0'dır.
+Düğmeyi göremiyorsanız, döndürülen boyut 0'dır.
 
-##  <a name="getsize"></a>  CMFCCaptionButton::GetSize
+## <a name="cmfccaptionbuttongetsize"></a><a name="getsize"></a>CMFCCaptionButton::GetSize
 
-Genişlik ve yükseklik düğmenin döndürür.
+Düğmenin genişliğini ve yüksekliğini verir.
 
 ```
 static CSize GetSize();
@@ -206,11 +206,11 @@ Düğmenin dış boyutları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen boyutla düğmesi kenar boşluğu bırakma ve kenarlık içerir.
+Döndürülen boyut düğme kenar boşluğu ve kenarlık içerir.
 
-##  <a name="isminiframebutton"></a>  CMFCCaptionButton::IsMiniFrameButton
+## <a name="cmfccaptionbuttonisminiframebutton"></a><a name="isminiframebutton"></a>CMFCCaptionButton::IsMiniFrameButton
 
-Başlık çubuğu yüksekliği mini boyutuna ayarlanmış olup olmadığını gösterir.
+Başlık çubuğu yüksekliğinin mini boyuta ayarlanıp ayarlmadığını gösterir.
 
 ```
 BOOL IsMiniFrameButton() const;
@@ -218,13 +218,13 @@ BOOL IsMiniFrameButton() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Mini boyutuna açıklamalı alt yazı ayarlanmışsa TRUE; Aksi durumda FALSE.
+Resim yazısı mini boyuta ayarlanmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="move"></a>  CMFCCaptionButton::Move
+## <a name="cmfccaptionbuttonmove"></a><a name="move"></a>CMFCCaptionButton::Taşı
 
-Düğme çizim konumunu ve durumunu göster penceresi ayarlar.
+Düğme çizim konumu ve pencere gösteri durumu ayarlar.
 
 ```
 void Move(
@@ -235,14 +235,14 @@ void Move(
 ### <a name="parameters"></a>Parametreler
 
 *ptTo*<br/>
-[in] Yeni konumu.
+[içinde] Yeni yer.
 
 *bHide*<br/>
-[in] Düğme gösterilip gösterilmeyeceğini belirtir.
+[içinde] Düğmeyi gösterip göstermeyeceğim.
 
-##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw
+## <a name="cmfccaptionbuttonondraw"></a><a name="ondraw"></a>CMFCCaptionButton::OnDraw
 
-Başlık düğmesi çizer.
+Resim yazısı düğmesini çizer.
 
 ```
 virtual void OnDraw(
@@ -255,28 +255,28 @@ virtual void OnDraw(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Düğme için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Düğme için aygıt bağlamını işaretleyin.
 
-*bActive*<br/>
-[in] Etkin düğmesine görüntü çizme verilmeyeceğini belirtir.
+*bAktif*<br/>
+[içinde] Etkin bir düğme görüntüsü çizmek ister.
 
 *bHorz*<br/>
-[in] Türetilen bir sınıfta kullanılmak üzere ayrılmıştır.
+[içinde] Türemiş bir sınıfta kullanılmak üzere ayrılmıştır.
 
 *bMaximized*<br/>
-[in] Tam ekran düğmesi bir görüntü çizin verilmeyeceğini belirtir.
+[içinde] Maksimize bir düğme görüntüsü çizmek ister.
 
-*bDevre Dışı*<br/>
-[in] Etkinleştirildi düğmesi bir görüntü çizin verilmeyeceğini belirtir.
+*bDevre dışı*<br/>
+[içinde] Etkin bir düğme görüntüsü çizmek ister.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BMaximized* parametresi Simge Durumuna Küçült düğmesi veya bir Ekranı Kapla düğmesi olduğunda kullanılır.
+*bMaximized* parametresi, düğme en üst düzeye çıkarma veya en aza indirme düğmesi olduğunda kullanılır.
 
-##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton
+## <a name="cmfccaptionbuttonsetminiframebutton"></a><a name="setminiframebutton"></a>CMFCCaptionButton::SetMiniFrameButton
 
-Başlık çubuğunda mini boyutunu ayarlar.
+Başlık çubuğunun mini boyutunu ayarlar.
 
 ```
 void SetMiniFramebutton(BOOL bSet = TRUE);
@@ -284,12 +284,12 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bInternet*<br/>
-[in] Mini başlık çubuğu yüksekliği için TRUE; Varsayılan başlık çubuğu yüksekliği için FALSE.
+*bSet*<br/>
+[içinde] Mini başlık çubuğu yüksekliği için DOĞRU; Varsayılan başlık çubuğu yüksekliği için FALSE.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CPaneFrameWnd Sınıfı](../../mfc/reference/cpaneframewnd-class.md)<br/>
+[CPaneFrameWnd Sınıf](../../mfc/reference/cpaneframewnd-class.md)<br/>
 [CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)

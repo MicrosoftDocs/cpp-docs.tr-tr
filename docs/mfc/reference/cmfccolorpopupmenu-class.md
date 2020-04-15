@@ -1,5 +1,5 @@
 ---
-title: CMFCColorPopupMenu sınıfı
+title: CMFCColorPopupMenü Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCColorPopupMenu
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-ms.openlocfilehash: 0c2fed4aa239faa96abf692a46a27102ce9820a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bcdf60c974ecdc437b90891d2b46a5eec94859d1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403691"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367673"
 ---
-# <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
+# <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenü Sınıfı
 
-Kullanıcıların bir belge veya uygulamadaki renkleri seçmek için açılır menü temsil eder.
+Kullanıcıların belge veya uygulamada renkleri seçmek için kullandıkları açılır menüyü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,57 +37,57 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 |||
 |-|-|
-|Ad|Açıklama|
-|[CMFCColorPopupMenu::CMFCColorPopupMenu](#cmfccolorpopupmenu)|Oluşturur bir `CMFCColorPopupMenu` nesne.|
+|Adı|Açıklama|
+|[CMFCColorPopUpMenü::CMFCColorPopupMenü](#cmfccolorpopupmenu)|Bir `CMFCColorPopupMenu` nesne inşa eder.|
 |`CMFCColorPopupMenu::~CMFCColorPopupMenu`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Ad|Açıklama|
-|[CMFCColorPopupMenu::CreateTearOffBar](#createtearoffbar)|Bir yerleştirilebilir etkinleştiriliyorken renk çubuğu oluşturur. (Geçersiz kılmaları [CMFCPopupMenu::CreateTearOffBar](../../mfc/reference/cmfcpopupmenu-class.md#createtearoffbar).)|
-|[CMFCColorPopupMenu::GetMenuBar](#getmenubar)|Döndürür [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) içinde açılır menüde gömülü. (Geçersiz kılmaları [CMFCPopupMenu::GetMenuBar](../../mfc/reference/cmfcpopupmenu-class.md#getmenubar).)|
-|`CMFCColorPopupMenu::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCColorPopupMenu::SetPropList](#setproplist)|Özellik Kılavuzu denetimini nesnesi Embedded ayarlar `CMFCColorBar` nesne.|
+|Adı|Açıklama|
+|[CMFCColorPopupMenu::CreateTearOffBar](#createtearoffbar)|Sabitlenebilir bir yırtılma renk çubuğu oluşturur. [(CMFCPopUpMenu geçersiz kılar::CreateTearOffBar](../../mfc/reference/cmfcpopupmenu-class.md#createtearoffbar).)|
+|[CMFCColorPopupMenü::GetMenuBar](#getmenubar)|Açılır menüye katıştırılmış [CMFCPopUpMenuBar'ı](../../mfc/reference/cmfcpopupmenubar-class.md) döndürür. [(CMFCPopUpMenu geçersiz kılar::GetMenuBar](../../mfc/reference/cmfcpopupmenu-class.md#getmenubar).)|
+|`CMFCColorPopupMenu::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCColorPopUpMenu::SetPropList](#setproplist)|Katıştınesnenin `CMFCColorBar` özellik ızgara denetim nesnesini ayarlar.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
 |||
 |-|-|
-|Ad|Açıklama|
-|`m_bEnabledInCustomizeMode`|Renk çubuğu gösterilip gösterilmeyeceğini belirleyen bir Boole değeri.|
-|`m_wndColorBar`|`CMFCColorBar` Renk seçimi sağlayan nesne.|
+|Adı|Açıklama|
+|`m_bEnabledInCustomizeMode`|Renk çubuğunu gösterip göstermeyeceğini belirleyen boolean değeri.|
+|`m_wndColorBar`|Renk `CMFCColorBar` seçimi sağlayan nesne.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf açılır menü işlevselliğini devralır `CMFCPopupMenu` sınıfı ve yöneten bir `CMFCColorBar` renk seçimi sağlayan nesne. Araç çubuğu framework özelleştirme modunda olduğunda ve `m_bEnabledInCustomizeMode` üye yanlış olarak ayarlandığında, renk çubuğu nesne gösterilmez. Özelleştirme modu hakkında daha fazla bilgi için bkz: [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)
+Bu sınıf, `CMFCPopupMenu` sınıfın açılır menü işlevini devralır ve `CMFCColorBar` renk seçimi sağlayan bir nesneyi yönetir. Araç çubuğu çerçevesi özelleştirme modunda yken `m_bEnabledInCustomizeMode` ve üye FALSE olarak ayarlandığında, renk çubuğu nesnesi gösterilmez. Özelleştirme modu hakkında daha fazla bilgi için [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)
 
-Hakkında daha fazla bilgi için `CMFCColorBar`, bkz: [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md).
+Hakkında `CMFCColorBar`daha fazla bilgi için [CMFCColorBar Sınıfı'na](../../mfc/reference/cmfccolorbar-class.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CFrameWnd](../../mfc/reference/cframewnd-class.md)
 
 [CMiniFrameWnd](../../mfc/reference/cminiframewnd-class.md)
 
-[CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)
+[Cmfcpopupmenu](../../mfc/reference/cmfcpopupmenu-class.md)
 
-[CMFCColorPopupMenu](../../mfc/reference/cmfccolorpopupmenu-class.md)
+[CMFCColorPopupMenü](../../mfc/reference/cmfccolorpopupmenu-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcolorpopupmenu.h
+**Üstbilgi:** afxcolorpopupmenu.h
 
-##  <a name="cmfccolorpopupmenu"></a>  CMFCColorPopupMenu::CMFCColorPopupMenu
+## <a name="cmfccolorpopupmenucmfccolorpopupmenu"></a><a name="cmfccolorpopupmenu"></a>CMFCColorPopUpMenü::CMFCColorPopupMenü
 
-Oluşturur bir `CMFCColorPopupMenu` nesne.
+Bir `CMFCColorPopupMenu` nesne inşa eder.
 
 ```
 CMFCColorPopupMenu(
@@ -127,65 +127,65 @@ CMFCColorPopupMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*Renkleri*<br/>
-[in] Açılır menüde framework görüntüler renkleri dizisi.
-
 *Renk*<br/>
-[in] Varsayılan renk seçili.
+[içinde] Çerçevenin açılır menüde görüntülenebilen bir dizi renk.
+
+*color*<br/>
+[içinde] Varsayılan seçili renk.
 
 *lpszAutoColor*<br/>
-[in] Metin etiketini *otomatik* rengi düğmesi (varsayılan) ya da NULL.
+[içinde] *Otomatik* (varsayılan) renk düğmesinin metin etiketi veya NULL.
 
-Standart etiket otomatik düğmenin **otomatik**.
+Otomatik düğme için standart etiket **Otomatiktir.**
 
 *lpszOtherColor*<br/>
-[in] Metin etiketini *diğer* görüntüleyen daha rengi seçimleri veya NULL düğmesi.
+[içinde] Daha fazla renk seçeneği görüntüleyen *diğer* düğmenin metin etiketi veya NULL.
 
-Diğer düğme için standart etiket **daha fazla renk...** .
+Diğer düğme için standart etiket **Daha Fazla Renk...**.
 
 *lpszDocColors*<br/>
-[in] Belge renkleri düğmesinin metin etiketi. Belge renkler paleti belge şu anda kullandığı tüm renkleri listeler.
+[içinde] Belge renkleri düğmesinin metin etiketi. Belge renkleri paleti, belgenin şu anda kullandığı tüm renkleri listeler.
 
 *lstDocColors*<br/>
-[in] Belge şu anda kullandığı renkler listesi.
+[içinde] Belgenin şu anda kullandığı renklerin listesi.
 
-*nColumns*<br/>
-[in] Renkleri dizi sahip sütun sayısı.
+*nSütunlar*<br/>
+[içinde] Renk dizisinin sahip olduğu sütun sayısı.
 
 *nHorzDockRows*<br/>
-[in] Renk çubuğu yatay yerleştirildiğinde olan satır sayısı.
+[içinde] Renk çubuğuyatay olarak kenetlendiğinde sahip olduğu satır sayısı.
 
-*nVertDockColumns*<br/>
-[in] Renk Çubuğu dikey yerleştirildiğinde olan sütun sayısı.
+*nVertDockSütunlar*<br/>
+[içinde] Renk çubuğudikey olarak kenetlendiğinde sahip olduğu sütun sayısı.
 
-*colorAutomatic*<br/>
-[in] Otomatik düğmeyi tıklattığınızda, framework uygulanan varsayılan rengi.
+*Colorautomatic*<br/>
+[içinde] Otomatik düğmeyi tıklattığınızda çerçevenin uyguladığı varsayılan renk.
 
 *uiCommandID*<br/>
-[in] Renk çubuğu denetim komut kimliği.
+[içinde] Renk çubuğu denetim komut kimliği.
 
 *bStdColorDlg*<br/>
-[in] Standart sistem renk iletişim kutusu gösterilip gösterilmeyeceğini belirten bir Boole değeri veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu.
+[içinde] Standart sistem renk iletişim kutusunu veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusunu gösterip göstermeyeceğini belirten bir Boolean.
 
 *pParentBtn*<br/>
-[in] Bir üst düğme için bir işaretçi.
+[içinde] Üst düğmeye işaretçi.
 
-*nID*<br/>
-[in] Komut kimliği.
+*Nıd*<br/>
+[içinde] Komut kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her aşırı Oluşturucusu kümeleri `m_bEnabledInCustomizeMode` üye false.
+Aşırı yüklü her yapı `m_bEnabledInCustomizeMode` yapıcı üyeyi FALSE'a ayarlar.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCColorPopupMenu` nesne.
+Aşağıdaki örnek, bir `CMFCColorPopupMenu` nesnenin nasıl inşa edilebildiğini gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#34](../../mfc/reference/codesnippet/cpp/cmfccolorpopupmenu-class_1.cpp)]
 
-##  <a name="createtearoffbar"></a>  CMFCColorPopupMenu::CreateTearOffBar
+## <a name="cmfccolorpopupmenucreatetearoffbar"></a><a name="createtearoffbar"></a>CMFCColorPopupMenu::CreateTearOffBar
 
-Bir yerleştirilebilir etkinleştiriliyorken renk çubuğu oluşturur.
+Sabitlenebilir bir yırtılma renk çubuğu oluşturur.
 
 ```
 virtual CPane* CreateTearOffBar(
@@ -199,21 +199,21 @@ virtual CPane* CreateTearOffBar(
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pWndMain*|[in] Bölünmüş çubuğunun üst penceresine yönelik işaretçi.|
-|*uiID*|[in] Bölünmüş çubuk komut kimliği.|
-|*lpszName*|[in] Bölünmüş çubuk pencere metni.|
+|*pWndMain*|[içinde] Yırtılma çubuğunun üst penceresine işaretçi.|
+|*uiID*|[içinde] Yırtılma çubuğunun komut kimliği.|
+|*Lpszname*|[içinde] Yırtılma çubuğunun pencere metni.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni etiket denetim çubuğu nesnesine bir işaretçi.
+Yeni yırtılma denetim çubuğu nesnesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, oluşturur bir [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) nesne ve kendisine bıraktığı bir [CPane sınıfı](../../mfc/reference/cpane-class.md) işaretçi. Bu değer çevirebilirsiniz geri bir [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) açıklanan atama makroları birini kullanarak işaretçi [MFC sınıf nesnelerine, tür atama](../../mfc/reference/type-casting-of-mfc-class-objects.md).
+Bu yöntem bir [CMFCColorBar Sınıfı](../../mfc/reference/cmfccolorbar-class.md) nesnesi oluşturur ve [cpane sınıfı](../../mfc/reference/cpane-class.md) işaretçisine atar. [MFC Sınıf Nesnelerinin Tür](../../mfc/reference/type-casting-of-mfc-class-objects.md)Döküm'ünde açıklanan döküm makrolarından birini kullanarak bu değeri [CMFCColorBar Sınıfı](../../mfc/reference/cmfccolorbar-class.md) işaretçisine geri atabilirsiniz.
 
-##  <a name="getmenubar"></a>  CMFCColorPopupMenu::GetMenuBar
+## <a name="cmfccolorpopupmenugetmenubar"></a><a name="getmenubar"></a>CMFCColorPopupMenü::GetMenuBar
 
-Döndürür [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) içinde açılır menüde gömülü.
+Açılır menüye katıştırılmış [CMFCPopUpMenuBar'ı](../../mfc/reference/cmfcpopupmenubar-class.md) döndürür.
 
 ```
 virtual CMFCPopupMenuBar* GetMenuBar();
@@ -221,15 +221,15 @@ virtual CMFCPopupMenuBar* GetMenuBar();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Katıştırılmış bir işaretçiye `CMFCPopupMenuBar`.
+Katıştılmış `CMFCPopupMenuBar`bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk açılır menüsünü katıştırılmış sahip [CMFCPopupMenuBar sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md) nesne. Uygulamanızın kullandığı farklı bir ekli türü türetilen bir sınıfta bu yöntemi geçersiz kılın.
+Renk açılır menüsünde gömülü [cmfcpopupMenuBar Sınıf](../../mfc/reference/cmfcpopupmenubar-class.md) nesnesi vardır. Uygulamanız farklı bir katışma türü kullanıyorsa, türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="setproplist"></a>  CMFCColorPopupMenu::SetPropList
+## <a name="cmfccolorpopupmenusetproplist"></a><a name="setproplist"></a>CMFCColorPopUpMenu::SetPropList
 
-Özellik Kılavuzu denetimini nesnesi Embedded ayarlar `CMFCColorBar` nesne.
+Katıştınesnenin `CMFCColorBar` özellik ızgara denetim nesnesini ayarlar.
 
 ```
 void SetPropList(CMFCPropertyGridCtrl* pWndList);
@@ -238,7 +238,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ### <a name="parameters"></a>Parametreler
 
 *pWndList*<br/>
-[in] Bir özellik Kılavuzu denetimini nesnesi işaretçisi.
+[içinde] Özellik ızgara denetim nesnesine işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

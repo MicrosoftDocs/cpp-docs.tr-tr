@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSScheduler structure
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-ms.openlocfilehash: 45df744a9850510006e4bf887c8ed61b000a8e5c
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 70954906122c048e5199a801632626d35a8e3f18
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139990"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368090"
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler Yapısı
 
-Eşzamanlılık Çalışma Zamanı Kaynak Yöneticisi, Kullanıcı modu zamanlanabilen (UMS) iş parçacıklarını ele almak isteyen bir iş Zamanlayıcı soyutlaması için arabirim. Kaynak Yöneticisi, UMS iş parçacığı zamanlayıcılar ile iletişim kurmak için bu arabirimi kullanır. `IUMSScheduler` arabirimi `IScheduler` arabiriminden devralır.
+Eşzamanlı Çalışma Zamanı Kaynak Yöneticisi'nin kullanıcı modu zamanlanabilir (UMS) iş parçacıklarını teslim etmesini isteyen bir çalışma zamanlayıcısının soyutlanmasına yönelik bir arabirim. Kaynak Yöneticisi, UMS iş parçacığı zamanlayıcılarıyla iletişim kurmak için bu arabirimi kullanır. `IScheduler` Arabirim, `IUMSScheduler` arabirimden devralır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,33 +29,33 @@ struct IUMSScheduler : public IScheduler;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IUMSScheduler:: SetCompletionList](#setcompletionlist)|UMS iş parçacığı zamanlayıcısına bir `IUMSCompletionList` arabirimi atar.|
+|[IUMSScheduler::SetCompletionList](#setcompletionlist)|UMS `IUMSCompletionList` iş parçacığı zamanlayıcısına bir arabirim atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi ile iletişim kuran özel bir Zamanlayıcı uygulamadıysanız ve UMS iş parçacıklarının sıradan Win32 iş parçacıkları yerine Scheduler 'a devredilmesi istiyorsanız `IUMSScheduler` arabiriminin bir uygulamasını sağlamanız gerekir. Ayrıca Zamanlayıcı ilke anahtarı `SchedulerKind` için ilke değerini `UmsThreadDefault`olarak ayarlamanız gerekir. İlke UMS iş parçacığını belirtiyorsa, [IResourceManager:: RegisterScheduler](iresourcemanager-structure.md#registerscheduler) metoduna parametre olarak geçirilen `IScheduler` arabirimi bir `IUMSScheduler` arabirimi olmalıdır.
+Kaynak Yöneticisi ile iletişim kuran özel bir zamanlayıcı uyguluyorsanız ve UMS iş parçacıklarının sıradan Win32 iş parçacıkları yerine zamanlayıcınıza verilmesini `IUMSScheduler` istiyorsanız, arabirimin uygulanmasını sağlamanız gerekir. Buna ek olarak, zamanlayıcı ilkesi anahtarı `SchedulerKind` için ilke değerini ayarlamanız `UmsThreadDefault`gerekir. İlke UMS iş parçacığı belirtse, IResourceManager'a parametre olarak geçirilen `IScheduler` arabirim::RegisterScheduler yöntemi bir [IResourceManager::RegisterScheduler](iresourcemanager-structure.md#registerscheduler) `IUMSScheduler` arabirim olmalıdır.
 
-Kaynak Yöneticisi, yalnızca UMS özelliğine sahip işletim sistemlerinde UMS iş parçacıklarını ele alır. Windows 7 sürümü ve daha yüksek olan 64 bitlik işletim sistemleri, UMS iş parçacıklarını destekler. `SchedulerKind` anahtarı ile `UmsThreadDefault` değerine ayarlanmış bir Zamanlayıcı İlkesi oluşturursanız ve temel alınan platform UMS 'yi desteklemiyorsa, bu ilkedeki `SchedulerKind` anahtarının değeri `ThreadScheduler`olarak değiştirilir. UMS iş parçacıklarını almayı beklemeden önce Bu ilke değerini her zaman okumanız gerekir.
+Kaynak Yöneticisi size UMS iş parçacıklarını yalnızca UMS özelliğine sahip işletim sistemlerinde verebmektedir. Sürüm Windows 7 ve daha yüksek destek UMS iş parçacıkları ile 64-bit işletim sistemleri. `SchedulerKind` Anahtar `UmsThreadDefault` değerine ayarlanmış bir zamanlayıcı ilkesi oluşturursanız ve temel platform UMS'yi `SchedulerKind` desteklemiyorsa, bu ilkedeki anahtarın değeri değere `ThreadScheduler`değiştirilir. UMS iş parçacığı almayı beklemeden önce bu ilke değerini her zaman geri okumalısınız.
 
-`IUMSScheduler` arabirimi, bir Zamanlayıcı ve Kaynak Yöneticisi arasındaki iki yönlü bir kanalın bir bitişidir. Diğer son, Kaynak Yöneticisi tarafından uygulanan `IResourceManager` ve `ISchedulerProxy` arabirimleri tarafından temsil edilir.
+Arabirim, `IUMSScheduler` zamanlayıcı ile Kaynak Yöneticisi arasındaki iki yönlü iletişim kanalının bir sonudur. Diğer uç, Kaynak Yöneticisi `IResourceManager` `ISchedulerProxy` tarafından uygulanan ve arabirimler tarafından temsil edilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[IScheduler](ischeduler-structure.md)
+[ıscheduler](ischeduler-structure.md)
 
 `IUMSScheduler`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm. h
+**Üstbilgi:** concrtrm.h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="setcompletionlist"></a>IUMSScheduler:: SetCompletionList yöntemi
+## <a name="iumsschedulersetcompletionlist-method"></a><a name="setcompletionlist"></a>IUMSScheduler::SetCompletionList Yöntemi
 
-UMS iş parçacığı zamanlayıcısına bir `IUMSCompletionList` arabirimi atar.
+UMS `IUMSCompletionList` iş parçacığı zamanlayıcısına bir arabirim atar.
 
 ```cpp
 virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
@@ -64,15 +64,15 @@ virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *pCompletionList*<br/>
-Zamanlayıcı için tamamlanma listesi arabirimi. Zamanlayıcı başına tek bir liste vardır.
+Zamanlayıcıiçin tamamlanma listesi arabirimi. Zamanlayıcı başına tek bir liste vardır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi, Zamanlayıcı ilk kaynak ayırmayı istediğinde, bu yöntemi, UMS iş parçacıkları istediğini belirten bir Scheduler 'da çağıracaktır. Zamanlayıcı, UMS iş parçacığı proxy 'lerinin engellemesini nasıl engelleyeceğini öğrenmek için `IUMSCompletionList` arabirimini kullanabilir. Bu arabirime yalnızca, UMS Scheduler 'a atanmış sanal bir işlemci kökünde çalışan bir iş parçacığı proxy 'sinden erişim için geçerlidir.
+Kaynak Yöneticisi, zamanlayıcı kaynakların ilk tahsisini istedikten sonra UMS iş parçacığı istediğini belirten bir zamanlayıcıüzerinde bu yöntemi çağırır. Zamanlayıcı, UMS `IUMSCompletionList` iş parçacığı eklerinin ne zaman engellendiğini belirlemek için arabirimi kullanabilir. Bu arabirime yalnızca UMS zamanlayıcısına atanan sanal işlemci kökünde çalışan bir iş parçacığı proxy'sinden erişmek için geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[concurrency Ad Alanı](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [IScheduler Yapısı](ischeduler-structure.md)<br/>
 [IUMSCompletionList Yapısı](iumscompletionlist-structure.md)<br/>

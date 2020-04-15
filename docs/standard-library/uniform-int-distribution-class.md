@@ -26,16 +26,16 @@ helpviewer_keywords:
 - std::uniform_int_distribution [C++], param_type
 - std::uniform_int_distribution [C++], param_type
 ms.assetid: a1867dcd-3bd9-4787-afe3-4b62692c1d04
-ms.openlocfilehash: 7e24c320e909bb2d0471acdd275f89c43d3e44de
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 44121b6791d06768e51f425fc322ef78045fc0e7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684509"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367293"
 ---
 # <a name="uniform_int_distribution-class"></a>uniform_int_distribution Sınıfı
 
-Kapsamlı bir çıkış aralığında (her değer eşit ölçüde olası) tam sayı dağılımı üretir.
+Kapsayıcı bir çıktı aralığında tek tip (her değer eşit olasılıklı) tamsayı dağıtımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,29 +71,29 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*IntType* \
-Tamsayı sonuç türü, varsayılan olarak **int 'tir**. Olası türler için bkz. [\<random >](../standard-library/random.md).
+*IntType*\
+**İnt**varsayılan olarak, tümsedo sonuç türü. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, her değerin eşit olması için bir dağıtımla birlikte Kullanıcı tarafından belirtilen integral türünün değerlerini üreten kapsamlı bir dağılımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, her değerin eşit derecede olası olması için, kullanıcı tarafından belirtilen integral türüdeğerlerini bir dağılımla üreten kapsayıcı bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
 
 ||||
 |-|-|-|
 |[uniform_int_distribution](#uniform_int_distribution)|`uniform_int_distribution::a`|`uniform_int_distribution::param`|
 |`uniform_int_distribution::operator()`|`uniform_int_distribution::b`|[param_type](#param_type)|
 
-Özellik üyesi `a()`, dağıtımın Şu anda depolanmış en düşük ilişkisini döndürür, ancak `b()` Şu anda depolanan en büyük sınırı döndürür. Bu dağıtım sınıfı için, bu en küçük ve en büyük değerler, `min()` ve `max()` ortak özellik işlevleri tarafından Döndürülenler ile aynıdır.
+Mülk üyesi, `a()` şu anda depolanan minimum `b()` dağıtım sınırını döndürürken, şu anda depolanan maksimum sınırı döndürür. Bu dağıtım sınıfı için, bu minimum ve maksimum değerler ortak `min()` özellik `max()`işlevleri tarafından döndürülenlerle aynıdır ve.
 
-Özellik üyesi `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
 
-@No__t_0 ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
+`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
 
-@No__t_0 member işlevi, önbelleğe alınmış tüm değerleri atar, böylece `operator()` bir sonraki çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
+`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
 
-@No__t_0 üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
+Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -175,13 +175,13 @@ Distribution for 200 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<random >
+**Üstbilgi:** \<rastgele>
 
 **Ad alanı:** std
 
-## <a name="uniform_int_distribution"></a>uniform_int_distribution::uniform_int_distribution
+## <a name="uniform_int_distributionuniform_int_distribution"></a><a name="uniform_int_distribution"></a>uniform_int_distribution:uniform_int_distribution
 
-Dağıtımı oluşturur.
+Dağıtımı kurar.
 
 ```cpp
 explicit uniform_int_distribution(
@@ -191,26 +191,26 @@ explicit uniform_int_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*bir* \
-Rastgele değerler için alt sınır (dahil).
+*A*\
+Rasgele değerler için alt sınır, kapsayıcı.
 
-*b* \
-Rastgele değerler için üst sınır (dahil).
+*B*\
+Rasgele değerler için üst sınır, kapsayıcı.
 
-*para* \
-Dağıtımı oluşturmak için kullanılan `param_type` yapısı.
+*parm*\
+Dağılımı `param_type` oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `a ≤ b`
+**Ön koşul:**`a ≤ b`
 
-İlk Oluşturucu *, bir değeri depolanan bir* nesne *oluşturur ve depolanan* *b* değeri *b*değerini tutar.
+İlk oluşturucu, depolanan değeri *a* değerini tutan ve depolanan *b* değeri *b*değerini tutan *bir* nesne yi inşa eder.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>uniform_int_distribution::p aram_type
+## <a name="uniform_int_distributionparam_type"></a><a name="param_type"></a>uniform_int_distribution::param_type
 
-Dağıtımın parametrelerini depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -227,21 +227,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*bir* \
-Rastgele değerler için alt sınır (dahil).
+*A*\
+Rasgele değerler için alt sınır, kapsayıcı.
 
-*b* \
-Rastgele değerler için üst sınır (dahil).
+*B*\
+Rasgele değerler için üst sınır, kapsayıcı.
 
-*sağ* \
-Bu, Karşılaştırılacak `param_type` nesnesi.
+*Doğru*\
+Bununla `param_type` karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `a ≤ b`
+**Ön koşul:**`a ≤ b`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
+Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<random >](../standard-library/random.md)
+[\<rastgele>](../standard-library/random.md)

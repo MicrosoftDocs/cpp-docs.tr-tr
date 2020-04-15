@@ -1,5 +1,5 @@
 ---
-title: 'Özel durumlar: MFC özel durum makrolarından dönüştürme'
+title: 'Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme'
 ms.date: 08/27/2018
 helpviewer_keywords:
 - converting exceptions [MFC]
@@ -14,102 +14,102 @@ helpviewer_keywords:
 - catch blocks [MFC], delimiting
 - exception handling [MFC], converting exceptions
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
-ms.openlocfilehash: 59b83438d5341fd6a139af64a2f365a739438741
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 330f66b1f46542082637645ad53da016b434d4a2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394513"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372024"
 ---
-# <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel durumlar: MFC özel durum makrolarından dönüştürme
+# <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
 
 Bu gelişmiş bir konudur.
 
-Bu makalede, Microsoft Foundation Class makroları ile yazılan mevcut kod dönüştürmek açıklanmaktadır — **deneyin**, **CATCH**, **THROW**ve benzeri — C++ özel durum işleme kullanmak için anahtar sözcükler **deneyin**, **catch**, ve **throw**. Konular şunlardır:
+Bu makalede, Microsoft Foundation Class makroları ile yazılmış varolan kodun nasıl dönüştürülür - **TRY**, **CATCH**, **THROW**, ve benzeri — C++ özel durum işleme anahtar kelimelerini kullanmak için **deneyin,** **yakalayın**ve **atın**. Konu başlıkları şunlardır:
 
-- [Dönüştürme avantajları](#_core_advantages_of_converting)
+- [Dönüşüm avantajları](#_core_advantages_of_converting)
 
-- [Dönüştürme kodu ile C++ özel durumlarını kullanmak için özel durum makroları](#_core_doing_the_conversion)
+- [C++ özel durumlarını kullanmak için özel durum makroları ile kodu dönüştürme](#_core_doing_the_conversion)
 
-##  <a name="_core_advantages_of_converting"></a> Dönüştürme avantajları
+## <a name="advantages-of-converting"></a><a name="_core_advantages_of_converting"></a>Dönüştürmenin Avantajları
 
-MFC sürüm 3.0 makrosu uygulamalarında önceki sürümlerde uygulamaları arasındaki farkların farkında olmanız olsa da, büyük olasılıkla mevcut kodu dönüştürmek gerekmez. Bu farklılıklar ve sonraki kod davranışında değişiklik ele alınmıştır [özel durumlar: Sürüm 3. 0'da özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).
+MFC sürüm 3.0'daki makro uygulamaları ile önceki sürümdeki uygulamalar arasındaki farkların farkında olmanız gerekirken, büyük olasılıkla varolan kodu dönüştürmeniz gerekmez. Bu farklar ve kod davranışındaki sonraki değişiklikler [Özel Durumlar:Sürüm 3.0'daki Özel Durum Makrolarında Yapılan Değişiklikler.](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
 
-Dönüştürme asıl avantajları şunlardır:
+Dönüştürmenin başlıca avantajları şunlardır:
 
-- C++ özel durum işleme anahtar sözcükleri kullanan kod biraz daha küçük derler. EXE veya. DLL.
+- C++ özel durum işleme anahtar kelimelerini kullanan kod biraz daha küçük. EXE veya . Dll.
 
-- C++ Daha ayrıntılı özel durum işleme anahtar sözcükler: Bunlar kopyalanabilir herhangi bir veri türü özel durumları işleyebilir (**int**, **float**, **char**, vb.) makroları yalnızca sınıfın özel durumları işlemek bilgileriyse `CException` ve ondan türetilen sınıflar.
+- C++ özel durum işleme anahtar kelimeleri daha çok yönlüdür: Kopyalanabilen herhangi bir veri türünün özel durumlarını **(int,** **float,** `CException` **char,** vb.) işlerken, makrolar yalnızca sınıf ve ondan türetilen sınıfların özel durumlarını işler.
 
-Makrolar ve anahtar sözcükler arasındaki en önemli fark, özel durum kapsam dışına çıktığında "Otomatik" makroları kullanarak kod özel durum yakalandı siler ' dir. Özel durum yakalandı açıkça silmeniz gerekir böylece anahtar sözcükleri yok, kod kullanarak. Daha fazla bilgi için bkz [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Makrolar ve anahtar kelimeler arasındaki en büyük fark, makroları kullanan kodun özel durum kapsam dışına çıktığında yakalanan bir özel durumu "otomatik olarak" silmesidir. Anahtar kelimeleri kullanan kod kullanılmaz, bu nedenle yakalanan bir özel durumu açıkça silmeniz gerekir. Daha fazla bilgi için, [özel durumlar makalesine bakın: Özel Durumları Yakalama ve Silme.](../mfc/exceptions-catching-and-deleting-exceptions.md)
 
-Söz dizimi başka bir farktır. Makrolar ve anahtar sözcükler için söz dizimi üç yönden farklıdır:
+Başka bir fark sözdizimidir. Makrolar ve anahtar kelimeler için sözdizimi üç açıdan farklıdır:
 
-1. Makro bağımsız değişkenler ve özel durum bildirimi:
+1. Makro bağımsız değişkenleri ve özel durum bildirimleri:
 
-   A **CATCH** makro çağrısı sözdizimine sahiptir:
+   Catch **CATCH** makro çağırma aşağıdaki sözdizimi vardır:
 
-   **CATCH (** *exception_class*, *exception_object_pointer_name* **)**
+   **CATCH(** *exception_class*, *exception_object_pointer_name* **)**
 
-   Sınıf adı ve nesne işaretçisi adı arasında virgül dikkat edin.
+   Sınıf adı ve nesne işaretçiadı adı arasındaki virgüle dikkat edin.
 
-   Özel durum bildirimi **catch** anahtar sözcüğü, bu sözdizimini kullanır:
+   **Catch** anahtar sözcüğünün özel durum bildiriminde şu sözdizimi kullanır:
 
-   **catch (** *exception_type* *exception_name* **)**
+   **yakalamak (** *exception_type* *exception_name* **)**
 
-   Bu özel durum bildirimi deyimi catch özel durum türünü gösterir tanıtıcıları engelleyin.
+   Bu özel durum bildirimi bildirimi, catch bloğu işlemi özel durum türünü gösterir.
 
-2. Catch blokları ayırma:
+2. Catch bloklarının sınırlandırılması:
 
-   Makrolar ile **CATCH** makrosu (bağımsız değişkenlerinden ile) başlayan ilk catch bloğu; **AND_CATCH** makrosu sonraki catch blokları başlar ve **END_CATCH** makrosu catch blokları dizisini sonlandırır.
+   Makrolarla **CATCH** makrosu (bağımsız değişkenleriyle) ilk catch bloğunu başlatır; **AND_CATCH** makro sonraki catch blokları başlar ve **END_CATCH** makro catch blokları dizisini sona erdirir.
 
-   Anahtar sözcükleri içeren **catch** anahtar sözcüğü (ile kendi özel durum bildirimi) her bir catch bloğu başlar. İçin hiçbir karşılığı yoktur **END_CATCH** makrosu; yakalama, kapanış küme ayracı ile biter engelleyin.
+   Anahtar kelimelerle, **catch** anahtar kelimesi (özel durum bildirimi yle) her catch bloğunu başlatır. **END_CATCH** makronun muadili yoktur; catch bloğu kapanış ayracı ile sona erer.
 
-3. Throw ifadesi:
+3. Atma ifadesi:
 
-   Makroları kullanma **THROW_LAST** geçerli özel durumu yeniden harekete geçirerek. **Throw** anahtar sözcüğü, hiçbir bağımsız değişken ile aynı etkiye sahiptir.
+   Makrolar, geçerli özel durumu yeniden atmak için **THROW_LAST** kullanır. Hiçbir bağımsız değişken ile **throw** anahtar kelimesi, aynı etkiye sahiptir.
 
-##  <a name="_core_doing_the_conversion"></a> Dönüştürme yapmak
+## <a name="doing-the-conversion"></a><a name="_core_doing_the_conversion"></a>Dönüşüm yapma
 
-#### <a name="to-convert-code-using-macros-to-use-the-c-exception-handling-keywords"></a>C++ özel durum işleme anahtar kelimeler kullanmanız makroları kullanarak kod dönüştürmek için
+#### <a name="to-convert-code-using-macros-to-use-the-c-exception-handling-keywords"></a>C++ özel durum işleme anahtar kelimelerini kullanmak için makroları kullanarak kodu dönüştürmek için
 
-1. MFC makroları tüm oluşumlarını bulmak **deneyin**, **CATCH**, **AND_CATCH**, **END_CATCH**, **THROW**, ve **THROW_LAST**.
+1. MFC makrolarının tüm oluşumlarını bulun **TRY**, **CATCH**, **AND_CATCH**, **END_CATCH**, **THROW**, ve **THROW_LAST**.
 
-2. Aşağıdaki makroları tüm örneklerini silin veya değiştirin:
+2. Aşağıdaki makroların tüm oluşumlarını değiştirin veya silin:
 
-   **DENEYİN** (ile değiştirirsiniz **deneyin**)
+   **TRY** **(Try**ile değiştirin)
 
-   **CATCH** (ile değiştirirsiniz **catch**)
+   **CATCH** **(Catch**ile değiştirin )
 
-   **AND_CATCH** (ile değiştirirsiniz **catch**)
+   **AND_CATCH** **(Catch**ile değiştirin )
 
-   **END_CATCH** (Sil)
+   **END_CATCH** (Silin)
 
-   **THROW** (ile değiştirirsiniz **throw**)
+   **THROW** **(Throw**ile değiştirin )
 
-   **THROW_LAST** (ile değiştirirsiniz **throw**)
+   **THROW_LAST** **(atmak**ile değiştirin )
 
-3. Makro bağımsız değişkeni geçerli bir özel durum bildirimleri oluşturdukları şekilde değiştirin.
+3. Makro bağımsız değişkenlerini geçerli özel durum bildirimleri oluşturacak şekilde değiştirin.
 
-   Örneğin, değiştirme
+   Örneğin, değişiklik
 
    [!code-cpp[NVC_MFCExceptions#6](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_1.cpp)]
 
-   to
+   -
 
    [!code-cpp[NVC_MFCExceptions#7](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_2.cpp)]
 
-4. Catch blokları kodda özel durum nesneleri gerekirse siler şekilde değiştirin. Daha fazla bilgi için bkz [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
+4. Parolayı, özel durum nesnelerini gerektiği gibi silebilmek için değiştirin. Daha fazla bilgi için, [özel durumlar makalesine bakın: Özel Durumları Yakalama ve Silme.](../mfc/exceptions-catching-and-deleting-exceptions.md)
 
-MFC özel durum makroları kullanarak özel durum işleme kod örneği aşağıda verilmiştir. Aşağıdaki örnek kodda özel durum makroları kullandığından unutmayın `e` otomatik olarak silinir:
+Burada, MFC özel durum makrolarını kullanan özel durum işleme kodunun bir örneği verilmiştir. Aşağıdaki örnekteki kod makroları kullandığından, özel `e` durum otomatik olarak silinir:
 
 [!code-cpp[NVC_MFCExceptions#8](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_3.cpp)]
 
-Sonraki örnek kodda özel durum açıkça silinmelidir C++ özel durum anahtar sözcükleri kullanır:
+Sonraki örnekteki kod C++ özel durum anahtar kelimelerini kullanır, bu nedenle özel durum açıkça silinmelidir:
 
 [!code-cpp[NVC_MFCExceptions#9](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_4.cpp)]
 
-Daha fazla bilgi için [özel durumlar: MFC makroları ve C++ özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
+Daha fazla bilgi için [bkz: MFC Makroları ve C++ Özel Durumları kullanma.](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

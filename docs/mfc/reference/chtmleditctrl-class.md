@@ -1,5 +1,5 @@
 ---
-title: CHtmlEditCtrl sınıfı
+title: CHtmlEditCtrl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHtmlEditCtrl
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CHtmlEditCtrl [MFC], GetDHtmlDocument
 - CHtmlEditCtrl [MFC], GetStartDocument
 ms.assetid: 0fc4a238-b05f-4874-9edc-6a6701f064d9
-ms.openlocfilehash: 6f5c465a8ec9c8f54af5545e66fb849a08d241af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 05063c62e9f7a5d88d3fecde842f979725200f98
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389417"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366851"
 ---
-# <a name="chtmleditctrl-class"></a>CHtmlEditCtrl sınıfı
+# <a name="chtmleditctrl-class"></a>CHtmlEditCtrl Sınıfı
 
-Bir MFC penceresindeki WebBrowser ActiveX denetimi işlevlerini sağlar.
+MFC penceresinde WebBrowser ActiveX denetiminin işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,49 +36,49 @@ class CHtmlEditCtrl: public CWnd,
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHtmlEditCtrl::CHtmlEditCtrl](#chtmleditctrl)|Oluşturur bir `CHtmlEditCtrl` nesne.|
+|[CHtmlEditCtrl::CHtmlEditCtrl](#chtmleditctrl)|Bir `CHtmlEditCtrl` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHtmlEditCtrl::Create](#create)|WebBrowser ActiveX denetimi oluşturur ve ona ekler `CHtmlEditCtrl` nesne. Bu işlev, WebBrowser ActiveX denetimi otomatik olarak düzenleme moduna geçirir.|
-|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|Alır [Ihtmldocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) belge arabirimde kapsanan WebBrowser denetimi şu anda yüklü.|
-|[CHtmlEditCtrl::GetStartDocument](#getstartdocument)|Kapsanan WebBrowser denetimi yüklemek için varsayılan bir belge için URL alır.|
+|[CHtmlEditCtrl::Oluştur](#create)|Bir WebBrowser ActiveX denetimi oluşturur ve `CHtmlEditCtrl` nesneye bağlar. Bu işlev, WebBrowser ActiveX denetimini otomatik olarak edit moduna sokar.|
+|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|Şu anda içerdiği WebBrowser denetiminde yüklenen belgedeki [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) arabirimini alır.|
+|[CHtmlEditCtrl::GetStartDocument](#getstartdocument)|URL'yi, içerdiği WebBrowser denetimine yüklemek için varsayılan bir belgeye alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Oluşturulduktan sonra denetimi otomatik olarak yerleştirerek barındırılan WebBrowser düzenleme modunda.
+Barındırılan WebBrowser denetimi oluşturulduktan sonra otomatik olarak düzenle moduna geçirilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
 [CHtmlEditCtrlBase](../../mfc/reference/chtmleditctrlbase-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CHtmlEditCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxhtml.h
+**Üstbilgi:** afxhtml.h
 
-##  <a name="chtmleditctrl"></a>  CHtmlEditCtrl::CHtmlEditCtrl
+## <a name="chtmleditctrlchtmleditctrl"></a><a name="chtmleditctrl"></a>CHtmlEditCtrl::CHtmlEditCtrl
 
-Oluşturur bir `CHtmlEditCtrl` nesne.
+Bir `CHtmlEditCtrl` nesne inşa eder.
 
 ```
 CHtmlEditCtrl();
 ```
 
-##  <a name="create"></a>  CHtmlEditCtrl::Create
+## <a name="chtmleditctrlcreate"></a><a name="create"></a>CHtmlEditCtrl::Oluştur
 
-WebBrowser ActiveX denetimi oluşturur ve ona ekler `CHtmlEditCtrl` nesne. Bu işlev tarafından düzenleme modunda WebBrowser ActiveX denetimi için varsayılan bir belge otomatik olarak gider ve sonra yerleştirilir.
+Bir WebBrowser ActiveX denetimi oluşturur ve `CHtmlEditCtrl` nesneye bağlar. WebBrowser ActiveX denetimi otomatik olarak varsayılan bir belgeye yönlendirilir ve bu işlev tarafından düzenleme moduna geçer.
 
 ```
 virtual BOOL Create(
@@ -95,28 +95,28 @@ virtual BOOL Create(
 *lpszWindowName*<br/>
 Bu parametre kullanılmaz.
 
-*dwStyle*<br/>
+*Dwstyle*<br/>
 Bu parametre kullanılmaz.
 
 *Rect*<br/>
 Denetimin boyutunu ve konumunu belirtir.
 
 *pParentWnd*<br/>
-Denetiminin üst penceresine belirtir. NULL olmamalıdır.
+Denetimin üst penceresini belirtir. NULL olmamalıdır.
 
-*nID*<br/>
+*Nıd*<br/>
 Denetimin kimliğini belirtir.
 
-*pContext*<br/>
+*Pcontext*<br/>
 Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarı doğru döndürür, başarısızlık false.
 
-##  <a name="getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument
+## <a name="chtmleditctrlgetdhtmldocument"></a><a name="getdhtmldocument"></a>CHtmlEditCtrl::GetDHtmlDocument
 
-Alır [Ihtmldocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) belge arabirimi yüklü kapsanan WebBrowser denetimi
+Şu anda içerdiği WebBrowser denetiminde yüklenen belgedeki [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) arabirimini alır
 
 ```
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
@@ -124,12 +124,12 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ppDocument*<br/>
+*ppBelge*<br/>
 Belge arabirimi.
 
-##  <a name="getstartdocument"></a>  CHtmlEditCtrl::GetStartDocument
+## <a name="chtmleditctrlgetstartdocument"></a><a name="getstartdocument"></a>CHtmlEditCtrl::GetStartDocument
 
-Kapsanan WebBrowser denetimi yüklemek için varsayılan bir belge için URL alır.
+URL'yi, içerdiği WebBrowser denetimine yüklemek için varsayılan bir belgeye alır.
 
 ```
 virtual LPCTSTR GetStartDocument();

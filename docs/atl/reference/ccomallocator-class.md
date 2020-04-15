@@ -1,5 +1,5 @@
 ---
-title: Ccomayırıcı sınıfı
+title: CComAllocator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComAllocator
@@ -10,14 +10,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComAllocator class
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
-ms.openlocfilehash: de302c7a58bf1b15e63e7cd391621ed9558e5a70
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 165cdb8b0b16a4872214f4556c26ee141e6a4d89
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497592"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321146"
 ---
-# <a name="ccomallocator-class"></a>Ccomayırıcı sınıfı
+# <a name="ccomallocator-class"></a>CComAllocator Sınıfı
 
 Bu sınıf, COM bellek yordamlarını kullanarak belleği yönetmek için yöntemler sağlar.
 
@@ -31,23 +31,23 @@ class CComAllocator
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Ccomayırıcısı:: allocate](#allocate)|Bellek ayırmak için bu statik yöntemi çağırın.|
-|[Ccomayırıcısı:: Free](#free)|Ayrılmış belleği serbest bırakmak için bu statik yöntemi çağırın.|
-|[Ccomayırıcı:: yeniden tahsis](#reallocate)|Belleği yeniden ayırmak için bu statik yöntemi çağırın.|
+|[CComAllocator::Ayırma](#allocate)|Bellek ayırmak için bu statik yöntemi çağırın.|
+|[CComAllocator::Ücretsiz](#free)|Ayrılan belleği serbest yapmak için bu statik yöntemi çağırın.|
+|[CComAllocator::Yer tahsisi](#reallocate)|Belleği yeniden tahsis etmek için bu statik yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) tarafından com bellek ayırma yordamlarını sağlamak için kullanılır. Karşılık gelen Class, [CCRTAllocator](../../atl/reference/ccrtallocator-class.md), CRT yordamlarını kullanarak aynı yöntemleri sağlar.
+Bu sınıf, Com bellek ayırma yordamları sağlamak için [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) tarafından kullanılır. Muadili sınıf, [CCRTAllocator](../../atl/reference/ccrtallocator-class.md), CRT yordamları kullanarak aynı yöntemleri sağlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase. h
+**Üstbilgi:** atlbase.h
 
-##  <a name="allocate"></a>Ccomayırıcısı:: allocate
+## <a name="ccomallocatorallocate"></a><a name="allocate"></a>CComAllocator::Ayırma
 
-Bellek ayırmak için bu statik işlevi çağırın.
+Belleği ayırmak için bu statik işlevi çağırın.
 
 ```
 static void* Allocate(size_t nBytes) throw();
@@ -55,20 +55,20 @@ static void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*<br/>
-Ayrılacak bayt sayısı.
+*nBayt*<br/>
+Tahsis edilebilen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan alana void bir işaretçi döndürür ya da kullanılabilir bellek yetersizse boş değer yok.
+Boş bir işaretçiyi ayrılan alana döndürür veya boş bellek varsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belleği ayırır. Daha fazla ayrıntı için bkz. [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) .
+Belleği ayırır. Daha fazla bilgi için [CoTaskMemAlloc'a](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) bakın.
 
-##  <a name="free"></a>Ccomayırıcısı:: Free
+## <a name="ccomallocatorfree"></a><a name="free"></a>CComAllocator::Ücretsiz
 
-Ayrılmış belleği serbest bırakmak için bu statik işlevi çağırın.
+Bu statik işlevi serbest ayrılmış belleğe çağırın.
 
 ```
 static void Free(void* p) throw();
@@ -76,16 +76,16 @@ static void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Ayrılan belleğe yönelik işaretçi.
+*P*<br/>
+Ayrılan belleğe işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan belleği serbest bırakır. Daha fazla ayrıntı için bkz. [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) .
+Ayrılan belleği serbest eder. Daha fazla bilgi için [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) bakın.
 
-##  <a name="reallocate"></a>Ccomayırıcı:: yeniden tahsis
+## <a name="ccomallocatorreallocate"></a><a name="reallocate"></a>CComAllocator::Yer tahsisi
 
-Belleği yeniden ayırmak için bu statik işlevi çağırın.
+Belleği yeniden tahsis etmek için bu statik işlevi çağırın.
 
 ```
 static void* Reallocate(void* p, size_t nBytes) throw();
@@ -93,22 +93,22 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Ayrılan belleğe yönelik işaretçi.
+*P*<br/>
+Ayrılan belleğe işaretçi.
 
-*nBytes*<br/>
-Yeniden ayrılacak bayt sayısı.
+*nBayt*<br/>
+Tahsis etmek için bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan alana void bir işaretçi döndürür ya da bellek yetersizse NULL
+Boş bir işaretçiyi ayrılan alana döndürür veya yetersiz bellek varsa NULL
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan bellek miktarını yeniden boyutlandırır. Daha fazla ayrıntı için bkz. [CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc) .
+Ayrılan bellek miktarını yeniden boyutlandırır. Daha fazla bilgi için [CoTaskMemRealloc'a](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComHeapPtr Sınıfı](../../atl/reference/ccomheapptr-class.md)<br/>
 [CCRTAllocator Sınıfı](../../atl/reference/ccrtallocator-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

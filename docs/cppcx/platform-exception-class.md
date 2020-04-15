@@ -1,5 +1,5 @@
 ---
-title: Platform::Exception sınıfı
+title: Platform::Özel Durum Sınıfı
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-ms.openlocfilehash: d37d55c56e3c23d8d9129c985cb4272d2e3ee47a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4604769d9d1bc5fa848d15459327dc87d82f7016
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368740"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363775"
 ---
-# <a name="platformexception-class"></a>Platform::Exception sınıfı
+# <a name="platformexception-class"></a>Platform::Özel Durum Sınıfı
 
-Uygulama yürütme sırasında oluşan hataları temsil eder. Özel durum sınıfları öğesinden türetilemez `Platform::Exception`. Bir özel durum gerektiriyorsa, kullanabileceğiniz `Platform::COMException` ve uygulamaya özel HRESULT'ı belirtin.
+Uygulama yürütme sırasında oluşan hataları temsil eder. Özel özel durum sınıfları' `Platform::Exception`dan türetedilemez. Özel bir özel durum gerektiriyorsanız, uygulamaya özgü bir HRESULT kullanabilir `Platform::COMException` ve belirtebilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,46 +29,46 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 ### <a name="members"></a>Üyeler
 
-`Exception` Sınıfının devraldığı `Object` sınıfı ve `IException`, `IPrintable`, ve `IEquatable` arabirimleri.
+`Object` Sınıf, `Exception` sınıf ve `IException`, `IPrintable`ve `IEquatable` arabirimlerden devralır.
 
-`Exception` Sınıfı üyelerinin aşağıdaki türleri de vardır.
+Sınıfın `Exception` da aşağıdaki tür üyeleri vardır.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Üye|Açıklama|
 |------------|-----------------|
-|[Exception::Exception](#ctor)|Yeni bir örneğini başlatır `Exception` sınıfı.|
+|[Özel Durum::Özel Durum](#ctor)|`Exception` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="methods"></a>Yöntemler
 
-`Exception` Sınıfından devralan `Equals()`, `Finalize()`,`GetHashCode()`,`GetType()`,`MemberwiseClose()`, ve `ToString()` yöntemlerinden [Platform::Object sınıfı](../cppcx/platform-object-class.md). `Exception` Sınıfında aşağıdaki yöntemi de vardır.
+`Exception` Sınıf, `Equals()`, `Finalize()`,`GetHashCode()``GetType()`,`MemberwiseClose()`, `ToString()` ve yöntemleri [Platformdan devralır::Nesne Sınıfı](../cppcx/platform-object-class.md). Sınıf `Exception` da aşağıdaki yönteme sahiptir.
 
 |Üye|Açıklama|
 |------------|-----------------|
-|[Exception::CreateException](#createexception)|Belirtilen HRESULT değerini temsil eden bir özel durum oluşturur.|
+|[Özel Durum::Create Exception](#createexception)|Belirtilen HRESULT değerini temsil eden bir özel durum oluşturur.|
 
 ### <a name="properties"></a>Özellikler
 
-Özel durum sınıfı ayrıca aşağıdaki özelliklere sahiptir.
+Özel Durum sınıfı da aşağıdaki özelliklere sahiptir.
 
 |Üye|Açıklama|
 |------------|-----------------|
-|[Exception::HResult](#hresult)|Özel duruma karşılık gelen HRESULT.|
-|[Exception::Message](#message)|Özel durumu açıklayan bir ileti. Bu değer salt okunur ve sonra değiştirilemez `Exception` oluşturulur.|
+|[Özel Durum::HResult](#hresult)|Özel durum karşılık gelen HRESULT.|
+|[Özel Durum::İleti](#message)|Özel durumu açıklayan bir ileti. Bu değer salt okunur ve oluşturulduktan `Exception` sonra değiştirilemez.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Minimum desteklenen istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Minimum desteklenen sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platform
 
-**Meta veri:** platform.winmd
+**Meta veriler:** platform.winmd
 
-## <a name="createexception"></a> Exception::CreateException yöntemi
+## <a name="exceptioncreateexception-method"></a><a name="createexception"></a>Özel Durum::Create Exception Yöntemi
 
-Bir Platform::Exception oluşturur ^ belirtilen bir HRESULT değerinden.
+Belirli bir HRESULT değerinden bir Platform::Özel Durum^ oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -79,25 +79,25 @@ Exception^ CreateException(int32 hr, Platform::String^ message);
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*<br/>
-Normalde bir COM yöntem çağrısından alabilirsiniz HRESULT değerini. Değer için S_OK eşit olan 0 ise bu yöntemin oluşturduğu [Platform::ınvalidargumentexception](../cppcx/platform-invalidargumentexception-class.md) çünkü başarılı COM yöntemleri özel durum oluşturmamalıdır.
+*Hr*<br/>
+Genellikle bir çağrıdan COM yöntemine aldığınız bir HRESULT değeri. Değer S_OK eşit olan 0 ise, bu yöntem [Platform atar::GeçersizArgumentException](../cppcx/platform-invalidargumentexception-class.md) Çünkü başarılı COM yöntemleri özel durumlar atmamalıdır.
 
-*message*<br/>
+*İleti*<br/>
 Hatayı açıklayan bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HRESULT hatası temsil eden bir özel durum.
+Hata HRESULT temsil eden bir özel durum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum dışında Örneğin, bir COM arabirimi yöntemini çağrısından döndürülen HRESULT oluşturmak için bu yöntemi kullanın. Bir dizeyi alan aşırı yüklemesini kullanabilirsiniz ^ parametresini kullanarak özel bir ileti sağlayın.
+Bu yöntemi, örneğin bir çağrıdan COM arabirimi yöntemine döndürülen bir HRESULT'dan bir özel durum oluşturmak için kullanın. Özel bir ileti sağlamak için String^ parametresi alan aşırı yüklemeyi kullanabilirsiniz.
 
-Kesin türü kesin belirlenmiş bir özel durum oluşturmak için CreateException kullanılacak önerilen yerine oluşturma bir [Platform::COMException](../cppcx/platform-comexception-class.md) yalnızca HRESULT'ı içerir.
+Yalnızca HRESULT içeren bir [Platform::COMException](../cppcx/platform-comexception-class.md) oluşturmak yerine güçlü bir şekilde yazılan bir özel durum oluşturmak için CreateException'ı kullanmanız önerilir.
 
-## <a name="ctor"></a>  Exception::Exception Oluşturucusu
+## <a name="exceptionexception-constructor"></a><a name="ctor"></a>Özel Durum::Özel Durum Oluşturucusu
 
-Özel durum sınıfının yeni bir örneğini başlatır.
+Özel Durum sınıfının yeni bir örneğini intialize eder.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -108,15 +108,15 @@ Exception(int32 hresult, ::Platform::String^ message);
 
 ### <a name="parameters"></a>Parametreler
 
-*HRESULT*<br/>
-Özel durum tarafından temsil edilen HRESULT hatası.
+*Hresult*<br/>
+Özel durum tarafından temsil edilen hata HRESULT.
 
-*message*<br/>
-Düzenleyici metin gibi kullanıcı tanımlı bir ileti, şu özel durum ile ilişkilidir. Genel hata oluştu, nasıl ve neden hakkında mümkün olduğunca açıklayıcı bir iletisi sağlamak için ikinci aşırı yükleme tercih etmelisiniz.
+*İleti*<br/>
+Özel durumla ilişkili, önceden yazılmış metin gibi kullanıcı tarafından belirtilen ileti. Genel olarak, hatanın nasıl ve neden oluştuğu hakkında mümkün olduğunca spesifik açıklayıcı bir ileti sağlamak için ikinci aşırı yüklemeyi tercih etmeniz gerekir.
 
-## <a name="hresult"></a>  Exception::HResult özelliği
+## <a name="exceptionhresult-property"></a><a name="hresult"></a>Özel Durum::HResult Özelliği
 
-Özel duruma karşılık gelen HRESULT.
+Özel durum karşılık gelen HRESULT.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -127,13 +127,13 @@ public:
 
 ## <a name="property-value"></a>Özellik Değeri
 
-HRESULT değerini.
+Bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çoğu özel durumlar HRESULT değerleri döndüren COM hata olarak başlar. C++/CX Platform::Exception bu değerleri dönüştürür ^ nesneleri ve bu özellik, özgün hata kodu değerini depolar.
+Çoğu özel durum, HRESULT değerleri olarak döndürülen COM hataları olarak başlar. C++/CX bu değerleri Platform::Exception^ nesnelerine dönüştürür ve bu özellik özgün hata kodunun değerini depolar.
 
-## <a name="message"></a> Exception::Message özelliği
+## <a name="exceptionmessage-property"></a><a name="message"></a>Özel Durum::İleti Özelliği
 
 Hatayı açıklayan ileti.
 
@@ -145,11 +145,11 @@ public:property String^ Message;
 
 ## <a name="property-value"></a>Özellik Değeri
 
-Windows çalışma zamanı'nda kaynaklanan özel durumları, sistem tarafından sağlanmış bir hatanın açıklamasını budur.
+Windows Runtime kaynaklanan özel durumlar, bu hatanın sistem tarafından sağlanan bir açıklamasıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sürüm Windows çalışma zamanı özel durumları HRESULTS olarak yalnızca ABI üzerinden taşınan çünkü Windows 8'de, bu özellik salt okunur. Windows 8.1, daha zengin özel durum bilgilerini ABI arasında taşınır ve diğer bileşenleri programlı olarak erişmek için özel bir ileti sağlayabilir. Daha fazla bilgi için [özel durumlar (C++/CX)](../cppcx/exceptions-c-cx.md).
+Windows 8'de, Windows Runtime'ın bu sürümündeki özel durumlar ABI'de yalnızca HRESULTS olarak taşındığı için bu özellik salt okunur. Windows 8.1'de, daha zengin özel durum bilgileri ABI genelinde taşınır ve diğer bileşenlerin programlı olarak erişebileceği özel bir ileti sağlayabilirsiniz. Daha fazla bilgi için özel [durumlar (C++/CX)](../cppcx/exceptions-c-cx.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

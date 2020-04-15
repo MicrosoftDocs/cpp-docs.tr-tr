@@ -7,86 +7,86 @@ helpviewer_keywords:
 - ATL projects, adding objects
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-ms.openlocfilehash: e18c1848c55208b02026aba7684db928e0d6fc0a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd4c9eede16ed086020dd8f12d90876e50a0a341
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260902"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319211"
 ---
 # <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı
 
-Bu sihirbaz, projeye en az bir COM nesnesi ekler. Sihirbazın bu sayfası, nesnenizin ve COM işlevselliği için dosyaları ve C++ sınıfı tanımlayan adlarını belirtmek için kullanın.
+Bu sihirbaz projeye en az COM nesnesi ekler. Nesneniz ve COM işlevselliği için C++ sınıfını ve dosyalarını tanımlayan adları belirtmek için sihirbazın bu sayfasını kullanın.
 
-Kullanım [seçenekleri](../../atl/reference/options-atl-simple-object-wizard.md) nesnenin iş parçacığı modeli, kendi toplama belirtmek için bu sihirbazın destekler ve ikili arabirimler ve Otomasyon destekleyip. Hata bilgisi arabirimi, bağlantı noktaları, Internet Explorer desteği ve ücretsiz iş parçacıklı sıralama desteği de belirtebilir.
+Nesnenin iş parçacığı modelini, toplama desteğini ve çift arabirimleri ve Otomasyonu destekleyip desteklemediğini belirtmek için bu sihirbazın [Seçenekler](../../atl/reference/options-atl-simple-object-wizard.md) sayfasını kullanın. Ayrıca hata bilgi arabirimi, bağlantı noktaları, Internet Explorer desteği ve serbest iş parçacığı mareşalleme desteği ni de belirtebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2008'den itibaren bu sihirbaz tarafından üretilen kayıt betiği altında COM bileşenlerini kaydolacak **HKEY_CURRENT_USER** yerine **HKEY_LOCAL_MACHINE**. Bu davranışı değiştirmek için Ayarla **tüm kullanıcılar için kayıt bileşeni** ATL Sihirbazı seçeneği.
+Visual Studio 2008 ile başlayarak, bu sihirbaz tarafından üretilen kayıt komut dosyası **HKEY_LOCAL_MACHINE**yerine **HKEY_CURRENT_USER** altında COM bileşenleri kaydedecektir. Bu davranışı değiştirmek için, ATL Sihirbazı'nın tüm kullanıcılar için **Kayıt bileşenini** ayarlayın.
 
 ## <a name="names"></a>Adlar
 
-Nesne, arabirimi ve projenize eklenecek sınıfların adlarını belirtin. Dışında **kısa ad**, diğerlerinden bağımsız olarak tüm kutuları düzenlenebilir. Metni değiştirirseniz **kısa ad**, değişiklik bu sayfadaki tüm diğer kutularının adlarını olarak yansıtılır. Değiştirirseniz **coclass'ı** ad değişikliği COM bölümünde yansıtılır **türü** ve **ProgID** kutuları, ancak **arabirimi** adı değiştirmez. Bu adlandırma davranışı denetiminiz geliştirirken tüm adlarını kolayca tanımlanabilen yapmak için tasarlanmıştır.
+Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. Kısa **ad**dışında, diğer tüm kutular diğerlerinden bağımsız olarak düzenlenebilir. **Kısa ad**metnini değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarında yansıtılır. COM bölümündeki **Coclass** adını değiştirirseniz, değişiklik **Tür** ve **ProgID** kutularına yansıtılır, ancak **Arabirim** adı değişmez. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adları sizin için kolayca tanımlanabilir hale getirmek için tasarlanmıştır.
 
 > [!NOTE]
->  **Coclass'ı** nonattributed projelerine yalnızca düzenlenebilir. Projenizi öznitelikli, düzenleyemezsiniz **coclass'ı**.
+> **Coclass** yalnızca atfedilmeyen projelerde değiştirilebilir. Projeniz atfedilen, **Coclass'ı**kaldıramazsınız.
 
 ## <a name="c"></a>C++
 
-Nesne için oluşturulan C++ sınıfına ilişkin bilgi sağlar.
+Nesne için oluşturulan C++ sınıfı için bilgi sağlar.
 
 - **Kısa ad**
 
-   Nesnenin kısaltılmış adını ayarlar. Belirler, sağladığınız ada `Class` ve `Coclass` adları **.cpp dosyası** ve **.h dosyası** adları **arabirimi** adı, **Türü** adları ve **ProgID**, bu alanları ayrı ayrı değiştirmediğiniz sürece.
+   Nesnenin kısaltılmış adını ayarlar. Sağladığınız ad, bu `Class` alanları `Coclass` tek tek değiştirmediğiniz sürece, **.cpp dosyasını** ve **.h dosya** adlarını, **Arabirim** adını, **Tür** adlarını ve **ProgID'yi**belirler.
 
 - **.h dosyası**
 
-   Yeni nesne sınıfı için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız ada dayanır **kısa ad**. Dosya adı, tercih ettiğiniz bir konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesine tıklayın. Var olan bir dosya seçerseniz, sihirbaz, seçili konuma dek tıklatın kaydedilmeyecektir **son** Sihirbazı'nda.
+   Yeni nesnenin sınıfı için üstbilgi dosyasının adını ayarlar. Varsayılan olarak, bu ad **Kısa ad**da sağladığınız adı temel alır. Dosya adını seçtiğiniz konuma kaydetmek veya sınıf bildirimini varolan bir dosyaya eklemek için elips düğmesini tıklatın. Varolan bir dosyayı seçerseniz, sihirbaz, sihirbazda **Bitir'i** tıklatana kadar dosyayı seçili konuma kaydetmez.
 
-   Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf bildirimi dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+   Sihirbaz bir dosyanın üzerine yazmıyor. Varolan bir dosyanın adını seçerseniz, **Bitiş'i**tıklattığınızda, sihirbaz sınıf bildiriminin dosyanın içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Dosyayı eklemek için **Evet'i** tıklatın; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır'ı** tıklatın.
 
 - **Sınıfı**
 
-   Oluşturulacak sınıfın adını ayarlar. Bu ad, sağladığınız adına dayanarak **kısa ad**, 'C', tipik bir sınıf adı öneki öncesinde.
+   Oluşturulacak sınıfın adını ayarlar. Bu ad, bir sınıf adı için tipik önek olan 'C' öncesinde **Kısa adla**sağladığınız ada dayanır.
 
 - **.cpp dosyası**
 
-   Yeni nesne sınıfı için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız ada dayanır **kısa ad**. Dosya adı, tercih ettiğiniz bir konuma kaydetmek için üç nokta düğmesine tıklayın. ' A kadar dosyasını seçili konuma kaydedilmez **son** Sihirbazı'nda.
+   Yeni nesnesınıfının uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad **Kısa ad**da sağladığınız adı temel alır. Dosya adını seçtiğiniz konuma kaydetmek için elips düğmesini tıklatın. Sihirbazda **Bitir'i** tıklatın kadar dosya seçili konuma kaydedilmez.
 
-   Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf uygulaması dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+   Sihirbaz bir dosyanın üzerine yazmıyor. Varolan bir dosyanın adını seçerseniz, **Bitiş'i**tıklattığınızda, sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Dosyayı eklemek için **Evet'i** tıklatın; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır'ı** tıklatın.
 
-- **Öznitelikli**
+- **Yazarından**
 
-   Nesne öznitelikleri kullanıp kullanmadığını belirtir. Öznitelik atanmış ATL projesine nesne ekliyorsanız, bu seçenek, seçilen ve değiştirmek kullanılabilir. Diğer bir deyişle, yalnızca öznitelikli nesne özniteliği desteği ile oluşturulan bir projeye ekleyebilirsiniz.
+   Nesnenin öznitelikleri kullanıp kullanmadığını gösterir. Atfedilen bir ATL projesine bir nesne ekliyorsanız, bu seçenek seçilir ve değiştirilemez. Diğer bir tarihte, yalnızca öznitelik desteğiyle oluşturulan bir projeye atfedilen nesneleri ekleyebilirsiniz.
 
-   Öznitelikli nesneyi kullanan öznitelikleri yalnızca bir ATL projesine ekleyebilirsiniz. Destek özniteliğine sahip bir ATL projesi için bu seçeneği belirlerseniz, Sihirbazı özniteliği destek projeye eklemek isteyip istemediğinizi belirtmenizi ister.
+   Yalnızca öznitelikleri kullanan bir ATL projesine atfedilen bir nesne ekleyebilirsiniz. Öznitelik desteği olmayan bir ATL projesi için bu seçeneği seçerseniz, sihirbaz projeye öznitelik desteği eklemek isteyip istemediğinizbelirtilir.
 
-   Varsayılan olarak, bu seçeneği belirledikten sonra eklediğiniz herhangi bir nesne öznitelikli olarak atanan (onay kutusu seçilidir). Öznitelikleri kullanmayan nesne eklemek için bu kutusunu temizleyebilirsiniz.
+   Varsayılan olarak, bu seçeneği ayarladıktan sonra eklediğiniz nesneler atfedilen olarak belirlenir (onay kutusu seçilir). Öznitelikleri kullanmayan bir nesne eklemek için bu kutuyu temizleyebilirsiniz.
 
-   Bkz: [uygulama ayarları, ATL Proje Sihirbazı'nı](../../atl/reference/application-settings-atl-project-wizard.md) ve [öznitelikleri temel mekanizması](../../windows/basic-mechanics-of-attributes.md) daha fazla bilgi için.
+   Daha fazla bilgi için [Uygulama Ayarları, ATL Proje Sihirbazı](../../atl/reference/application-settings-atl-project-wizard.md) ve [Özniteliklerin Temel Mekaniği](../../windows/basic-mechanics-of-attributes.md) bölümüne bakın.
 
 ## <a name="com"></a>COM
 
-Nesne için COM işlevleri hakkında bilgi sağlar.
+Nesne için COM işlevi hakkında bilgi sağlar.
 
-- **Coclass'ı**
+- **Coclass**
 
-   Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfı adını ayarlar.
+   Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfının adını ayarlar.
 
    > [!NOTE]
-   > Öznitelikleri kullanarak projenizi oluşturmak ya da nesne öznitelikleri kullanır Bu sihirbaz sayfasındaki gösteriyorsa, ATL içermez çünkü bu seçeneği değiştiremezsiniz `coclass` özniteliği.
+   > Projenizi öznitelikleri kullanarak oluşturursanız veya bu sihirbaz sayfasında nesnenin öznitelikleri kullandığını belirtirseniz, ATL `coclass` özniteliği içermediği için bu seçeneği değiştiremezsiniz.
 
 - **Tür**
 
-   Ayarlar kayıt defterinde görünür nesne açıklaması
+   Kayıt defterinde görünecek nesne açıklamasını ayarlar
 
-- **Arabirimi**
+- **Arabirim**
 
-   Nesneniz için oluşturduğunuz arabirimi ayarlar. Bu arabirim, özel yöntemler içerir.
+   Nesneniz için oluşturduğunuz arabirimi ayarlar. Bu arabirim, özel yöntemlerinizi içerir.
 
-- **ProgID**
+- **Progıd**
 
-   Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
+   Nesnenin CLSID yerine kapsayıcıların kullanabileceği adı ayarlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

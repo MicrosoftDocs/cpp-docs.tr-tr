@@ -21,34 +21,34 @@ helpviewer_keywords:
 - GetBookmark method
 - SetAbsolutePosition method, bookmarks
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-ms.openlocfilehash: 9a25c0fe4c1f08d376824fbc02211d22c7c14435
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 77c8bbaf7c0bc21dab62c3785364e72656287815
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212972"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367061"
 ---
 # <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bir kayıt kümesi içinde gezinilirken, genellikle belirli bir kayda dönme yöntemine ihtiyacınız vardır. Bir kaydın yer işareti ve mutlak konumu iki tür yöntemi sağlar.
+Bir kayıt setinde gezinirken, genellikle belirli bir kayda geri dönmenin bir yolunu bulmanız gerekir. Bir kaydın yer imi ve mutlak konumu bu tür iki yöntem sağlar.
 
-Bu konuda aşağıdakiler açıklanmaktadır:
+Bu konu açıklar:
 
-- [Yer imlerini kullanma](#_core_bookmarks_in_mfc_odbc).
+- [Yer imleri nasıl kullanılır.](#_core_bookmarks_in_mfc_odbc)
 
-- [Mutlak konumları kullanarak geçerli kaydı ayarlama](#_core_absolute_positions_in_mfc_odbc).
+- [Mutlak pozisyonları kullanarak geçerli kayıt nasıl ayarlanan.](#_core_absolute_positions_in_mfc_odbc)
 
-##  <a name="bookmarks-in-mfc-odbc"></a><a name="_core_bookmarks_in_mfc_odbc"></a>MFC ODBC 'de yer işaretleri
+## <a name="bookmarks-in-mfc-odbc"></a><a name="_core_bookmarks_in_mfc_odbc"></a>MFC ODBC'de yer imleri
 
-Bir yer işareti, bir kaydı benzersiz şekilde tanımlar. Bir kayıt kümesinden gittiğinizde, kayıtlar kayıt kümesinden silinebildiğinden kaydın mutlak konumuna her zaman güvenebilirsiniz. Bir kaydın konumunu izlemenin güvenilir yolu, onun yer işaretini kullanmaktır. Sınıf `CRecordset` için üye işlevleri sağlar:
+Yer imi bir kaydı benzersiz olarak tanımlar. Bir kayıt kümesinde gezinirken, kayıtlar kayıt kümesinden silinebileceğinden, her zaman bir kaydın mutlak konumuna güvenemezsiniz. Bir kaydın konumunu izlemenin güvenilir yolu yer imi kullanmaktır. Sınıf `CRecordset` malzemeleri üye işlevleri için:
 
-- Geçerli kaydın yer işaretinin alınması, bu sayede bir değişkene ([GetBookmark](../../mfc/reference/crecordset-class.md#getbookmark)) kaydedebilirsiniz.
+- Geçerli kaydın yer işaretini alma, böylece bir değişken[(GetBookmark)](../../mfc/reference/crecordset-class.md#getbookmark)kaydedebilirsiniz.
 
-- Daha önce bir değişkende ([SetBookmark](../../mfc/reference/crecordset-class.md#setbookmark)) kaydettiğiniz yer işaretini belirterek, belirli bir kayda hızlıca geçiş yapın.
+- Daha önce bir değişkene kaydettiğiniz yer işaretini belirterek belirli bir kayda hızlı bir şekilde geçme[(SetBookmark).](../../mfc/reference/crecordset-class.md#setbookmark)
 
-Aşağıdaki örnek, geçerli kaydı işaretlemek ve daha sonra buna dönmek için bu üye işlevlerinin nasıl kullanılacağını gösterir:
+Aşağıdaki örnekte, geçerli kaydı işaretlemek ve daha sonra ona dönmek için bu üye işlevlerin nasıl kullanılacağı gösteriş verilmiştir:
 
 ```cpp
 // rs is a CRecordset or
@@ -63,24 +63,24 @@ rs.GetBookmark( varRecordToReturnTo );
 rs.SetBookmark( varRecordToReturnTo );
 ```
 
-[CDBVariant sınıfı](../../mfc/reference/cdbvariant-class.md) nesnesinden temel alınan veri türünü ayıklamaya gerek yoktur. Değeri `GetBookmark` atayın ve `SetBookmark`yer işaretine geri dönün.
+[CDBVariant Class](../../mfc/reference/cdbvariant-class.md) nesnesinden temel veri türünü ayıklamanız gerekmez. Değeri ile `GetBookmark` atayın ve yer işaretine '' ile `SetBookmark`geri dönün.
 
 > [!NOTE]
->  ODBC sürücünüze ve kayıt kümesi türüne bağlı olarak, yer işaretleri desteklenmeyebilir. Yalnızca [CRecordset:: CanBookmark](../../mfc/reference/crecordset-class.md#canbookmark)çağırarak yer işaretlerinin desteklenip desteklenmediğini kolayca belirleyebilirsiniz. Ayrıca, yer işaretleri destekleniyorsa, [CRecordset:: Open](../../mfc/reference/crecordset-class.md#open) üye işlevindeki `CRecordset::useBookmarks` seçeneğini belirterek açıkça onları uygulamayı tercih etmeniz gerekir. Ayrıca, belirli kayıt kümesi işlemlerinden sonra yer işaretlerinin kalıcılığını denetlemeniz gerekir. Örneğin, bir kayıt kümesi `Requery`, yer işaretleri artık geçerli olmayabilir. `SetBookmark`güvenli bir şekilde çağırıp çağıramayacağını denetlemek için [CDatabase:: Getbookmarkkalıcılığı](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) çağırın.
+> ODBC sürücünüze ve kayıt kümesi türünüze bağlı olarak yer imleri desteklenmeyebilir. Yer imlerinin [CRecordset::CanBookmark'ı](../../mfc/reference/crecordset-class.md#canbookmark)arayarak desteklenip desteklenmediğini kolayca belirleyebilirsiniz. Ayrıca, yer imleri desteklenirse, [CRecordset:Open](../../mfc/reference/crecordset-class.md#open) üye `CRecordset::useBookmarks` işlevinde seçeneği belirterek bunları uygulamayı açıkça seçmelisiniz. Ayrıca, belirli kayıt kümesi işlemlerinden sonra yer imlerinin kalıcılığını da kontrol etmelisiniz. Örneğin, bir `Requery` kayıt kümesiyseniz, yer imleri artık geçerli olmayabilir. CDatabase'i arayın::Güvenli bir şekilde arayıp arayamayacağınızı kontrol etmek için [GetBookmarkPersistence'](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) ı arayın. `SetBookmark`
 
-##  <a name="absolute-positions-in-mfc-odbc"></a><a name="_core_absolute_positions_in_mfc_odbc"></a>MFC ODBC 'de mutlak Pozisyonlar
+## <a name="absolute-positions-in-mfc-odbc"></a><a name="_core_absolute_positions_in_mfc_odbc"></a>MFC ODBC'de Mutlak Pozisyonlar
 
-Yer işaretlerinin yanı sıra, sınıf `CRecordset`, geçerli kaydı bir sıra konumu belirterek ayarlamanıza olanak sağlar. Bu mutlak konumlandırma olarak adlandırılır.
-
-> [!NOTE]
->  Mutlak konumlandırma yalnızca iletme kayıt kümelerinde kullanılamaz. Salt iletme kayıt kümeleri hakkında daha fazla bilgi için bkz. [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md).
-
-Mutlak konum kullanarak geçerli kayıt işaretçisini taşımak için [CRecordset:: SetAbsolutePosition](../../mfc/reference/crecordset-class.md#setabsoluteposition)çağırın. `SetAbsolutePosition`bir değer geçirdiğinizde, bu sıra konumuna karşılık gelen kayıt geçerli kayıt haline gelir.
+Yer imleri `CRecordset` dışında, sınıf bir ordinal pozisyon belirterek geçerli kaydı ayarlamak için izin verir. Buna mutlak konumlandırma denir.
 
 > [!NOTE]
->  Bir kaydın mutlak konumu büyük olasılıkla güvenilmez. Kullanıcı kayıt kümesinden kayıtları silerse, sonraki kaydın sıra konumu değişir. Yer işaretleri, geçerli kaydı taşımak için önerilen yöntemdir. Daha fazla bilgi için bkz. [MFC ODBC 'de yer işaretleri](#_core_bookmarks_in_mfc_odbc).
+> Yalnızca ileri kayıt kümelerinde mutlak konumlandırma kullanılamaz. Yalnızca ileri kayıt kümeleri hakkında daha fazla bilgi için [Bkz. Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md).
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
+Geçerli kayıt işaretçisini mutlak konumu kullanarak taşımak için [CRecordset'i arayın::SetAbsolutePosition.](../../mfc/reference/crecordset-class.md#setabsoluteposition) Bir değeri `SetAbsolutePosition`geçtiğizde, bu ordinal konuma karşılık gelen kayıt geçerli kayıt olur.
+
+> [!NOTE]
+> Bir kaydın mutlak konumu potansiyel olarak güvenilmezdir. Kullanıcı kayıtları kayıt kümesinden silerse, sonraki kayıtların ordinal konumu değişir. Yer imleri, geçerli kaydı taşımak için önerilen yöntemdir. Daha fazla bilgi için [MFC ODBC'deki Yer İşaretleri'ne](#_core_bookmarks_in_mfc_odbc)bakın.
+
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için Bkz. [Kayıt Kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

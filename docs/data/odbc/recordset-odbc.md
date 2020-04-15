@@ -13,66 +13,66 @@ helpviewer_keywords:
 - snapshots, ODBC recordsets
 - dynasets
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-ms.openlocfilehash: 011191b99170b8a8338b5ca1a440a32404c4d793
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b7a55621f4875b24cc33a0fd49a5b8b4c88b34cb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368643"
 ---
 # <a name="recordset-odbc"></a>Kayıt Kümesi (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bir [CRecordset](../../mfc/reference/crecordset-class.md) nesnesi, bir veri kaynağından seçilen bir kayıt kümesini temsil eder. Kayıtlar şu kaynaktan olabilir:
+[CRecordset nesnesi,](../../mfc/reference/crecordset-class.md) veri kaynağından seçilen bir kayıt kümesini temsil eder. Kayıtlar aşağıdakilerden olabilir:
 
-- Bir tablo.
+- Bir masa.
 
 - Bir sorgu.
 
-- Bir veya daha fazla tabloya erişen saklı yordam.
+- Bir veya daha fazla tabloya erişen depolanmış yordam.
 
-Bir tabloyu temel alan bir kayıt kümesi örneği, bir müşteri tablosuna erişen "tüm müşteriler" dir. Bir sorgu örneği, "ali Smith için tüm faturalar" dır. Bir saklı yordama dayalı bir kayıt kümesi örneği (bazen önceden tanımlanmış sorgu olarak adlandırılır), arka uç veritabanında bir saklı yordam çağıran "tüm delinli hesaplar" dır. Bir kayıt kümesi aynı veri kaynağından iki veya daha fazla tabloyu birleştirebiliyor, ancak farklı veri kaynaklarından tablo içermemelidir.
+Tabloya dayalı kayıt kümesine örnek olarak, Müşteri tablosuna erişen "tüm müşteriler" gelir. Bir sorgu örneği "Joe Smith için tüm faturalar." Kaydedilmiş yordamı temel alan bir kayıt kümesi örneği (bazen önceden tanımlanmış sorgu olarak da adlandırılır), arka uç veritabanında depolanan yordamı çağıran "tüm hatalı hesaplar"dır. Kayıt kümesi aynı veri kaynağından iki veya daha fazla tabloyu biraraya getirebilir, ancak farklı veri kaynaklarından gelen tabloları birleştiremez.
 
 > [!NOTE]
->  Bazı ODBC sürücüleri veritabanının görünümlerini destekler. Bu anlamda bir görünüm, ilk olarak SQL `CREATE VIEW` ifadesiyle oluşturulmuş bir sorgudur.
+> Bazı ODBC sürücüleri veritabanının görünümlerini destekler. Bu anlamda bir görünüm, başlangıçta SQL `CREATE VIEW` deyimi ile oluşturulan bir sorgudur.
 
-##  <a name="recordset-capabilities"></a><a name="_core_recordset_capabilities"></a>Kayıt kümesi özellikleri
+## <a name="recordset-capabilities"></a><a name="_core_recordset_capabilities"></a>Recordset Yetenekleri
 
-Tüm kayıt kümesi nesneleri aşağıdaki özellikleri paylaşır:
+Tüm kayıt kümesi nesneleri aşağıdaki yetenekleri paylaşır:
 
-- Veri kaynağı salt [okunurdur, kayıt](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)kümenizin [güncelleştirilebilir](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md), uygulanabilir veya salt okunurdur olduğunu belirtebilirsiniz. Kayıt kümesi güncelleştirilebilirse, sürücünün uygun kilitleme desteğini sağladığı şekilde, kötümser veya iyimser [kilitleme](../../data/odbc/recordset-locking-records-odbc.md) yöntemlerini seçebilirsiniz. Veri kaynağı salt okunurdur, kayıt kümesi salt okunurdur.
+- Veri kaynağı salt okunur değilse, kayıt ayarınızın [güncellenebilir](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md), [eklenebilir](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)veya salt okunur olduğunu belirtebilirsiniz. Kayıt kümesi güncelleştirilebilirse, sürücünün uygun kilitleme desteğini sağlaması koşuluyla kötümser veya iyimser [kilitleme](../../data/odbc/recordset-locking-records-odbc.md) yöntemlerini seçebilirsiniz. Veri kaynağı salt okunursa, kayıt kümesi salt okunur.
 
-- Seçilen kayıtlar arasında [gezinmek](../../data/odbc/recordset-scrolling-odbc.md) için üye işlevlerini çağırabilirsiniz.
+- Seçili kayıtlar arasında [gezinmek](../../data/odbc/recordset-scrolling-odbc.md) için üye işlevleri arayabilirsiniz.
 
-- Kullanılabilir kayıtlardan hangi kayıtların seçili olduğunu kısıtlamak için kayıtlara [filtre](../../data/odbc/recordset-filtering-records-odbc.md) uygulayabilirsiniz.
+- Kullanılabilir kayıtlardan hangi kayıtların seçildiğini kısıtlamak için kayıtları [filtreleyebilirsiniz.](../../data/odbc/recordset-filtering-records-odbc.md)
 
-- Kayıtları bir veya daha fazla sütuna göre artan veya azalan sırada [sıralayabilirsiniz](../../data/odbc/recordset-sorting-records-odbc.md) .
+- Kayıtları [sort](../../data/odbc/recordset-sorting-records-odbc.md) artan veya azalan sırada, bir veya daha fazla sütuna göre sıralayabilirsiniz.
 
-- Çalışma zamanında kayıt kümesi seçimini nitelemek için kayıt kümesini [parametreleştirebilirsiniz](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) .
+- Kayıt kümesi seçimini çalışma zamanında hak kazanmak için kayıt kümesini [parametrenize alabilirsiniz.](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)
 
-##  <a name="snapshots-and-dynasets"></a><a name="_core_snapshots_and_dynasets"></a>Anlık görüntüler ve dinamik kümeler
+## <a name="snapshots-and-dynasets"></a><a name="_core_snapshots_and_dynasets"></a>Anlık Görüntüler ve Dynasets
 
-İki ana kayıt kümesi türü vardır: [anlık görüntüler](../../data/odbc/snapshot.md) ve [Dinamik kümeler](../../data/odbc/dynaset.md). Her ikisi de `CRecordset`sınıfı tarafından desteklenir. Her biri, tüm kayıt kümelerinin ortak özelliklerini paylaşır, ancak her ikisi de ortak işlevselliği kendi özel yöntemiyle genişletir. Anlık görüntüler verilerin statik bir görünümünü sağlar ve verilerin belirli bir zamanda bulunduğu şekilde görünümünü istediğiniz raporlar ve diğer durumlar için faydalıdır. Dinamik kümeler, kayıt kümesini yeniden sorgulamak veya yenilemek zorunda kalmadan, diğer kullanıcıların yaptığı güncelleştirmelerin kayıt kümesinde görünmesini istediğinizde yararlıdır. Anlık görüntüler ve dinamik kümeler güncelleştirilebilir veya salt okunurdur. Diğer kullanıcılar tarafından eklenen veya silinen kayıtları yansıtmak için [CRecordset:: Requery](../../mfc/reference/crecordset-class.md#requery)çağırın.
+İki temel kayıt türü vardır: [anlık görüntüler](../../data/odbc/snapshot.md) ve [dinamitler.](../../data/odbc/dynaset.md) Her ikisi de `CRecordset`sınıf tarafından desteklenir. Her biri tüm kayıt kümelerinin ortak özelliklerini paylaşır, ancak her biri ortak işlevselliği kendi özel bir şekilde genişletir. Anlık görüntüler verilerin statik bir görünümünü sağlar ve raporlar ve belirli bir zamanda var olan verilerin görünümünü istediğiniz diğer durumlar için yararlıdır. Dynasets, diğer kullanıcılar tarafından yapılan güncelleştirmelerin kayıt kümesini yeniden sorgulamak veya yenilemek zorunda kalmadan kayıt kümesinde görünür olmasını istediğinizde yararlıdır. Anlık görüntüler ve dynaset'ler güncelleştirilebilir veya salt okunabilir. Diğer kullanıcılar tarafından eklenen veya silinen kayıtları yansıtmak için [CRecordset::Requery'yi](../../mfc/reference/crecordset-class.md#requery)arayın.
 
-`CRecordset` Ayrıca, diğer iki tür kayıt kümesi sağlar: dinamik kayıt kümeleri ve salt iletme kayıt kümeleri. Dinamik kayıt kümeleri dinamik kümelerine benzerdir; Ancak, dinamik kayıt kümeleri `CRecordset::Requery`çağrılmadan eklenen veya silinen kayıtları yansıtır. Bu nedenle, dinamik kayıt kümeleri DBMS üzerindeki işleme süresine göre genellikle pahalıdır ve birçok ODBC sürücüsü bunları desteklemez. Buna karşılık, salt iletme kayıt kümeleri, güncelleştirme veya geriye doğru kaydırma gerektirmeyen kayıt kümeleri için en verimli veri erişimi yöntemini sağlar. Örneğin, verileri bir veri kaynağından diğerine geçirmek için yalnızca ileriye doğru bir kayıt kümesi kullanabilirsiniz. burada yalnızca bir ileri yönde veri üzerinde geçiş yapmanız gerekir. Yalnızca bir salt iletme kayıt kümesi kullanmak için aşağıdakilerden her ikisini de yapmanız gerekir:
+`CRecordset`ayrıca diğer iki kayıt seti türüne de izin verir: dinamik kayıt kümeleri ve yalnızca ileriye yönelik kayıt kümeleri. Dinamik kayıt setleri dinamitlere benzer; ancak, dinamik kayıt kümeleri, aramadan `CRecordset::Requery`eklenen veya silinen tüm kayıtları yansıtır. Bu nedenle, dinamik kayıt kümeleri DBMS'deki işleme süresine göre genellikle pahalıdır ve birçok ODBC sürücüsü bunları desteklemez. Buna karşılık, yalnızca ileri kayıt kümeleri, güncelleştirme veya geriye kaydırma gerektirmeyen kayıt kümeleri için en verimli veri erişim yöntemini sağlar. Örneğin, verileri bir veri kaynağından diğerine geçirmek için yalnızca ileri kayıt kümesi kullanabilirsiniz ve burada verileri yalnızca ileri yönde taşımanız gerekir. Yalnızca ileri kayıt kümesini kullanmak için aşağıdakilerden her ikisini de yapmanız gerekir:
 
-- `CRecordset::forwardOnly` seçeneğini [Açık](../../mfc/reference/crecordset-class.md#open) üye Işlevin *nOpenType* parametresi olarak geçirin.
+- `CRecordset::forwardOnly` [Seçeneği Open](../../mfc/reference/crecordset-class.md#open) üye işlevinin *nOpenType* parametresi olarak geçirin.
 
-- `Open`*dwOptions* parametresinde `CRecordset::readOnly` belirtin.
+- *DwOptions* parametresinde belirtin. `Open` `CRecordset::readOnly`
 
     > [!NOTE]
-    >  Dinamik küme desteği için ODBC sürücü gereksinimleri hakkında bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md). Visual C++ 'in bu sürümünde yer alan ODBC sürücülerinin bir listesi ve ek sürücü alma hakkında bilgi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
+    >  Dynaset desteği için ODBC sürücü gereksinimleri hakkında daha fazla bilgi için [ODBC'ye](../../data/odbc/odbc-basics.md)bakın. Visual C++ bu sürümünde yer alan ODBC sürücülerinin listesi ve ek sürücü edinme hakkında bilgi için [Bkz. ODBC Sürücü Listesi.](../../data/odbc/odbc-driver-list.md)
 
-##  <a name="your-recordsets"></a><a name="_core_your_recordsets"></a>Kayıt kümeleriniz
+## <a name="your-recordsets"></a><a name="_core_your_recordsets"></a>Kayıt Kümeleriniz
 
-Erişmek istediğiniz her farklı tablo, görünüm veya saklı yordam için, genellikle `CRecordset`türetilen bir sınıf tanımlarsınız. (Özel durum, bir kayıt kümesinde iki veya daha fazla tablodan sütunları temsil eden bir veritabanı birleşmedir.) Bir kayıt kümesi sınıfı türettiğinizde, kayıt alanı değişimi (RFX) mekanizmasını veya iletişim kutusu veri değişimi (DDX) mekanizmasına benzer toplu kayıt alanı değişimi (toplu RFX) mekanizmasını etkinleştirin. RFX ve toplu RFX veri kaynağından kayıt kümenize veri aktarımını basitleştirir; RFX ek olarak, kayıt kümenize veri kaynağına veri aktarır. Daha fazla bilgi için bkz. [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md) ve [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Erişmek istediğiniz her farklı tablo, görünüm veya depolanan yordam için genellikle türetilen bir sınıf `CRecordset`tanımlarsınız. (Özel durum, bir kayıt kümesinin iki veya daha fazla tablodaki sütunları temsil ettiği bir veritabanı birleştirmedir.) Bir kayıt kümesi sınıfı türettiğinizde, iletişim veri alışverişi (DDX) mekanizmasına benzer kayıt alanı değişimi (RFX) mekanizmasını veya toplu kayıt alanı değişimi (Toplu RFX) mekanizmasını etkinleştirin. RFX ve Toplu RFX, veri kaynağından kayıt setinize veri aktarımını basitleştirir; RFX ayrıca verileri kayıt setinizden veri kaynağına aktarmaktadır. Daha fazla bilgi için bkz: [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md) ve [Recordset: Kayıtları Toplu Olarak Alma (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Bir kayıt kümesi nesnesi tüm seçili kayıtlara erişmenizi sağlar. `MoveNext` ve `MovePrev`gibi `CRecordset` üye işlevlerini kullanarak birden çok seçili kayıtta gezinolursunuz. Aynı zamanda, bir kayıt kümesi nesnesi seçili kayıtlardan yalnızca birini temsil eder, geçerli kayıt. Kayıt kümesi sınıfı üye değişkenlerini, tablonun sütunlarına veya veritabanı sorgusunun sonucu olan kayıtlarla ilgili olarak bildirerek, geçerli kaydın alanlarını inceleyebilirsiniz. Kayıt kümesi veri üyeleri hakkında daha fazla bilgi için bkz. [kayıt kümesi: mimari (ODBC)](../../data/odbc/recordset-architecture-odbc.md).
+Kayıt kümesi nesnesi, seçili tüm kayıtlara erişmenizi sağlar. Üye işlevleri kullanarak `CRecordset` birden çok seçili `MoveNext` kayıt `MovePrev`arasında gezinirsiniz. Aynı zamanda, bir kayıt kümesi nesnesi seçili kayıtlardan yalnızca birini, geçerli kaydı temsil eder. Tablonun sütunlarına veya veritabanı sorgusundan kaynaklanan kayıtların sütunlarına karşılık gelen kayıt kümesi sınıf üye değişkenlerini beyan ederek geçerli kaydın alanlarını inceleyebilirsiniz. Kayıt kümesi veri üyeleri hakkında bilgi için bkz: [Recordset: Architecture (ODBC)](../../data/odbc/recordset-architecture-odbc.md).
 
-Aşağıdaki konularda, kayıt kümesi nesnelerinin kullanımıyla ilgili ayrıntılar açıklanmaktadır. Konular, işlevsel kategorilerde ve sıralı okumaya izin vermek için doğal bir tarama sırasıyla listelenir.
+Aşağıdaki konular kayıt kümesi nesnelerini kullanmanın ayrıntılarını açıklar. Konular fonksiyonel kategorilerde listelenir ve sıralı okumaya izin vermek için doğal bir gözatma sırası.
 
-### <a name="topics-about-the-mechanics-of-opening-reading-and-closing-recordsets"></a>Kayıt kümelerini açma, okuma ve kapatma mekanizması hakkında konular
+### <a name="topics-about-the-mechanics-of-opening-reading-and-closing-recordsets"></a>Kayıt kümelerini açma, okuma ve kapatma mekaniği ile ilgili konular
 
 - [Kayıt kümesi: Mimari (ODBC)](../../data/odbc/recordset-architecture-odbc.md)
 
@@ -90,7 +90,7 @@ Aşağıdaki konularda, kayıt kümesi nesnelerinin kullanımıyla ilgili ayrın
 
 - [Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)
 
-### <a name="topics-about-the-mechanics-of-modifying-recordsets"></a>Kayıt kümelerini değiştirme mekanizması hakkındaki konular
+### <a name="topics-about-the-mechanics-of-modifying-recordsets"></a>Kayıt kümelerini değiştirme mekaniği ile ilgili konular
 
 - [Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
 
@@ -112,7 +112,7 @@ Aşağıdaki konularda, kayıt kümesi nesnelerinin kullanımıyla ilgili ayrın
 
 - [Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)
 
-### <a name="topics-about-how-recordsets-work"></a>Kayıt kümelerinin nasıl çalıştığı hakkında konular
+### <a name="topics-about-how-recordsets-work"></a>Kayıt kümelerinin nasıl çalıştığıyla ilgili konular
 
 - [Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
 
@@ -121,5 +121,5 @@ Aşağıdaki konularda, kayıt kümesi nesnelerinin kullanımıyla ilgili ayrın
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[MFC ODBC tüketme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
+[MFC ODBC Tüketimi](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)

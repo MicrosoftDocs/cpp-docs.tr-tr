@@ -1,69 +1,69 @@
 ---
-title: Belge-görünüm mimarisinin alternatifleri
+title: Belge Görünümü Mimarisine Alternatifler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - documents [MFC], applications without
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-ms.openlocfilehash: 98bb4de2f6d1a43fc1958a0fcbaafa1ac0af82a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41af30d25d7ddb9e2bdbb7a0f7b86cb741ae1048
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394721"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370794"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 
-MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçimlerini ve verilerin kullanıcılara görsel temsilini yönetmek için kullanın. Masaüstü uygulamalarının çoğu için belge/görünüm mimarisinin bir uygun ve etkili uygulama mimaridir. Bu mimari görüntüleme alanından ve çoğu durumda veri ayırır, uygulamanızın basitleştirir ve gereksiz kod azaltır.
+MFC uygulamaları normalde bilgileri, dosya biçimlerini ve verilerin kullanıcılara görsel temsilini yönetmek için belge/görünüm mimarisini kullanır. Masaüstü uygulamalarının çoğu için belge/görünüm mimarisi uygun ve verimli bir uygulama mimarisidir. Bu mimari verileri görüntülemeden ayırır ve çoğu durumda uygulamanızı basitleştirir ve gereksiz kodu azaltır.
 
-Ancak, belge/görünüm mimarisinin bazı durumlar için uygun değildir. Bu örnekler göz önünde bulundurun:
+Ancak, belge/görünüm mimarisi bazı durumlar için uygun değildir. Bu örnekleri göz önünde bulundurun:
 
-- Windows için C yazılmış bir uygulama bağlantı noktası oluşturma, belge/görünüm destek uygulamanıza eklemeden önce bağlantı noktası tamamlamak isteyebilirsiniz.
+- Windows için C ile yazılmış bir uygulamayı taşımanız gerekiyorsa, uygulamanız için belge/görünüm desteği eklemeden önce bağlantı noktanızı tamamlamak isteyebilirsiniz.
 
-- Basit bir yardımcı program yazıyorsanız, belge/görünüm mimarisinin yapabileceğiniz bulabilirsiniz.
+- Hafif bir yardımcı program yazıyorsanız, belge/görünüm mimarisi olmadan yapabileceğinizi görebilirsiniz.
 
-- Özgün kodunuzu zaten veri yönetimi verileriyle karıştırır, iki ayrı gerekir çünkü görüntüleme, taşıma belge/görünüm modeli için kod değer değil. Olduğu gibi kod bırakmayı tercih edebilirsiniz.
+- Özgün kodunuz zaten veri yönetimi ile veri görüntülemeyi karıştırıyorsa, kodu belge/görünüm modeline taşımak çabaya değmez, çünkü ikisini ayırmanız gerekir. Kodu olduğu gibi bırakmayı tercih edebilirsiniz.
 
-Belge/görünüm mimarisinin kullanmayan bir uygulama oluşturmak için Temizle **belge/görünüm mimarisi desteği** MFC Uygulama Sihirbazı 1. adımda onay kutusu. Bkz: [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md) Ayrıntılar için.
+Belge/görünüm mimarisini kullanmayan bir uygulama oluşturmak için MFC Uygulama Sihirbazı'nın adım 1'inde **Belge/Görünüm mimarisi destek** onay kutusunu temizleyin. Ayrıntılar için [MFC Uygulama Sihirbazı'na](../mfc/reference/mfc-application-wizard.md) bakın.
 
 > [!NOTE]
->  İletişim kutusu tabanlı uygulamaları MFC Uygulama sihirbazından oluşturulan belge/görünüm mimarisi kullanmayın böylece **belge/görünüm mimarisi desteği** iletişim uygulama türü seçerseniz onay kutusunu devre dışı.
+> MFC Uygulama Sihirbazı tarafından üretilen iletişim tabanlı uygulamalar belge/görünüm mimarisini kullanmaz, bu nedenle iletişim uygulama türünü seçerseniz **Belge/Görünüm mimarisi destek** onay kutusu devre dışı bırakılır.
 
-Başka sihirbaz tarafından oluşturulan bir uygulama ile olduğu gibi kaynak ve iletişim düzenleyicileri yanı sıra, Visual C++ sihirbazları oluşturulan uygulama ile çalışır. Uygulama araç çubukları, kaydırma çubukları ve durum çubuğu destekleyebilir ve sahip bir **hakkında** kutusu. Uygulamanızı herhangi bir belge şablonları kaydedilmiyor ve belge sınıfı içermez.
+Visual C++ sihirbazlarının yanı sıra kaynak ve iletişim düzenleyicileri, oluşturulan uygulamayla tıpkı diğer Sihirbaztarafından oluşturulan uygulamalarda olduğu gibi çalışır. Uygulama araç çubuklarını, kaydırma çubuklarını ve durum çubuğunu destekleyebilir ve **Bir About** kutusu vardır. Uygulamanız herhangi bir belge şablonu kaydetmez ve belge sınıfı içermez.
 
-Uygulamanızı oluşturulan bir görünüm sınıfı olduğuna dikkat edin `CChildView`, türetilmiş `CWnd`. MFC oluşturur ve uygulamanız tarafından oluşturulan çerçeve pencereleri içinde görünümü sınıfının bir örneğini yerleştirir. MFC kolaylaştırır konumlandırma ve uygulamanın içeriğini yönetmek için bir görünüm penceresini kullanarak yine de zorlar. Boyama kod ekleyebilirsiniz `OnPaint` bu sınıfın üyesi. Kodunuzu kaydırma çubukları görünümü yerine çerçeve eklemeniz gerekir.
+Oluşturulan uygulamanızın `CChildView` `CWnd`bir görünüm sınıfı olduğunu unutmayın, türetilmiştir. MFC, uygulamanız tarafından oluşturulan çerçeve pencereleri içinde görünüm sınıfının bir örneğini oluşturur ve konumlandırıyor. MFC, uygulamanın içeriğini konumlandırmayı ve yönetmeyi basitleştirdiği için bir görünüm penceresi kullanmaya devam eder. Bu sınıfın üyesine `OnPaint` boyama kodu ekleyebilirsiniz. Kodunuz çerçeveyerine görünüme kaydırma çubukları eklemelidir.
 
-MFC tarafından sağlanan belge/görünüm mimarisinin bir uygulamanın temel özelliklerin çoğu uygulamak için sorumlu olduğu için projenizdeki yokluğu uygulamanızın birçok önemli özellikleri uygulamak için sorumlu olduğunuz anlamına gelir:
+MFC tarafından sağlanan belge/görünüm mimarisi bir uygulamanın temel özelliklerinin çoğunu uygulamaktan sorumlu olduğundan, projenizde bulunmaması, uygulamanızın birçok önemli özelliğini uygulamaktan sorumlu olduğunuz anlamına gelir:
 
-- MFC Uygulama Sihirbazı tarafından sağlanan gibi yalnızca uygulamanız için bir menü içerir **yeni** ve **çıkış** komutlarını **dosya** menüsü. ( **Yeni** komutu yalnızca MDI uygulamaları için desteklenir, belge/görünüm olmadan SDI uygulamaları destekler.) Oluşturulan menü kaynağı (en son kullanılan) MRU Listesi desteklemez.
+- MFC Uygulama Sihirbazı tarafından sağlandığı gibi, uygulamanızın menüsünde **Dosya** menüsünde yalnızca **Yeni** ve **Çıkış** komutları yer almaktadır. (Yeni **New** komut yalnızca Belge/Görünüm desteği olmadan SDİ uygulamaları için değil, Yalnızca MDI uygulamaları için desteklenir.) Oluşturulan menü kaynağı BIR MRU (en son kullanılan) listesini desteklemez.
 
-- İşleyici işlevleri ve uygulamaları dahil olmak üzere uygulamanızın destekleyeceği herhangi bir komut için eklemelisiniz **açık** ve **Kaydet** üzerinde **dosya** menüsü. Destek için belge/görünüm mimarisinin sıkı bir şekilde bağlıdır, ancak MFC normal olarak bu özellikleri destekleyecek kodu sağlar.
+- **Dosya** menüsünde **Aç** ve **Kaydet** dahil olmak üzere uygulamanızın destekleyeceği komutlar için işleyici işlevleri ve uygulamaları eklemeniz gerekir. MFC normalde bu özellikleri desteklemek için kod sağlar, ancak bu destek belge/görünüm mimarisine sıkı sıkıya bağlıdır.
 
-- İstenirse, araç, uygulamanız için en az olacaktır.
+- Uygulamanız için araç çubuğu, eğer isterseniz, en az olacaktır.
 
-Sihirbaz doğru bir MFC mimarisi gönderilmesini sağladığından MFC Uygulama Sihirbazı belge/görünüm mimarisi olmadan uygulamalar oluşturmak için kullanmanız önerilir. Ancak, sihirbaz kullanmaktan kaçının gerekir, kodunuzda belge/görünüm mimarisi atlama için çeşitli yaklaşımlar şunlardır:
+Sihirbaz doğru bir MFC mimarisini garanti ettiği için belge/görünüm mimarisi olmadan uygulamalar oluşturmak için MFC Uygulama Sihirbazı'nı kullanmanız önerilir. Ancak, sihirbazı kullanmaktan kaçınmanız gerekiyorsa, kodunuzda belge/görünüm mimarisini atlayabilmeniz için birkaç yaklaşım aşağıda verilmelidir:
 
-- Belge kullanılmayan bir appendage işle ve görünüm sınıfında, yukarıda önerilen veri yönetimi kodunuzu uygulayın. Belge için ek yükü oldukça düşüktür. Tek bir [CDocument](../mfc/reference/cdocument-class.md) nesne doğurur az miktarda ek yükü kendisi tarafından yanı sıra, küçük yükü `CDocument`ait temel sınıflar, [CCmdTarget](../mfc/reference/ccmdtarget-class.md) ve [CObject](../mfc/reference/cobject-class.md). İkinci sınıfların her ikisi de küçük.
+- Belgeyi kullanılmayan bir uzantı olarak değerlendirin ve yukarıda önerildiği gibi veri yönetim kodunuzu görünüm sınıfında uygulayın. Belgenin genel yükü nispeten düşüktür. Tek bir [CDocument](../mfc/reference/cdocument-class.md) nesnesi, 'temel sınıfların, `CDocument` [CCmdTarget](../mfc/reference/ccmdtarget-class.md) ve [CObject'in](../mfc/reference/cobject-class.md)küçük yükünün yanı sıra, tek başına küçük miktarda ek yükün de ek yüküne neden olur. İkinci sınıfların her ikisi de küçüktür.
 
-   Bildirilen `CDocument`:
+   Beyan `CDocument`edilen:
 
-  - İki `CString` nesneleri.
+  - İki `CString` nesne.
 
   - Üç **BOOL**s.
 
   - Bir `CDocTemplate` işaretçi.
 
-  - Bir `CPtrList` belgenin görünümleri listesini içeren bir nesne.
+  - Belgenin görünümlerinin listesini içeren bir `CPtrList` nesne.
 
-  Ayrıca, belgeyi belge nesnesi, görünüm nesnelerini, bir çerçeve penceresi ve belge şablonu nesnesi oluşturmak için gereken süreyi gerektirir.
+  Ayrıca, belge, belge nesnesini, görünüm nesnelerini, çerçeve penceresini ve belge şablonnesnesini oluşturmak için gereken süreyi gerektirir.
 
-- Belge ve görünüm kullanılmayan appendages kabul eder. Veri Yönetimi ve çizim kodu çerçeve penceresi görünümü yerine koyun. Bu yaklaşım, C dili programlama modelini daha yakın olur.
+- Hem belgeyi hem de kullanılmayan uzantıları görüntüleyin. Veri yönetiminizi ve çizim kodunuzu görünüm yerine çerçeve penceresine koyun. Bu yaklaşım C-dil programlama modeline daha yakındır.
 
-- Belge ve görünüm hiç oluşturma ortadan kaldırmak için oluşturduğunuz MFC çerçevesi bölümlerini geçersiz kılar. Bir çağrı ile belge oluşturma işlemi başlar `CWinApp::AddDocTemplate`. Uygulama sınıfınızın o çağrıdan ortadan `InitInstance` üye işlev ve bunun yerine, bir çerçeve penceresinde oluşturma `InitInstance` kendiniz. Veri Yönetimi kodunuzu, çerçeve penceresi sınıfında yerleştirin. Belge/görünüm oluşturma işlemi gösterilmiştir [belge/görünüm oluşturma](../mfc/document-view-creation.md). Bu daha fazla iş ve framework'ün derin bir anlayış gerektirir, ancak tamamen belge/görünüm yükü serbest bırakır.
+- Belgeyi oluşturan ve bunları hiç oluşturmayı ortadan kaldırmak için görüntüleyen MFC çerçevesinin bölümlerini geçersiz kılın. Belge oluşturma işlemi `CWinApp::AddDocTemplate`bir çağrı ile başlar. Bu aramayı uygulama sınıfınızın `InitInstance` üye işlevinden ortadan kaldırın ve `InitInstance` bunun yerine kendinizde bir çerçeve penceresi oluşturun. Veri yönetim kodunuzu çerçeve penceresi sınıfınıza koyun. Belge/görünüm oluşturma işlemi [Belge/Görünüm Oluşturma'da](../mfc/document-view-creation.md)gösterilmiştir. Bu daha fazla iş ve çerçevenin daha derin bir anlayış gerektirir, ancak tamamen belge / görünüm yükü sizi kurtarır.
 
-Makaleyi [MFC: Olmadan veritabanı sınıflarını belgeleri ve görünümleri kullanarak](../data/mfc-using-database-classes-without-documents-and-views.md) veritabanı uygulamaları bağlamında belge/görünüm alternatifleri daha somut örnekleri sağlar.
+MFC [makalesi: Belge ve Görünüm olmadan Veritabanı Sınıfları](../data/mfc-using-database-classes-without-documents-and-views.md) kullanarak veritabanı uygulamaları bağlamında belge / görünüm alternatifleri daha somut örnekler verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+[Belge/Görünüm Mimarisi](../mfc/document-view-architecture.md)

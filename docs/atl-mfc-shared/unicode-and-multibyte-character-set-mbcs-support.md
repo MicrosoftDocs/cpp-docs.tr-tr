@@ -1,5 +1,5 @@
 ---
-title: Unicode ve çok baytlı karakter kümesi (MBCS) desteği
+title: Unicode ve Multibyte Karakter Seti (MBCS) Desteği
 ms.date: 01/09/2017
 helpviewer_keywords:
 - MFC [C++], character set support
@@ -10,90 +10,90 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: 983b3d9bc72d99ab3c665f86cffd205dccf873e8
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: e1b93a3540cba553afd8f133c18496bddbd561b8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927900"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317432"
 ---
-# <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
+# <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve Multibyte Karakter Seti (MBCS) Desteği
 
-Örneğin, Japonca ve Çince gibi bazı dillerin büyük karakter kümeleri vardır. Bu pazarlar için programlamayı desteklemek amacıyla, Microsoft Foundation Class Kitaplığı (MFC) büyük karakter kümelerini işlemek için iki farklı yaklaşım sağlar:
+Bazı dillerde, örneğin, Japonca ve Çince, büyük karakter kümeleri vardır. Bu pazarlar için programlamayı desteklemek için, Microsoft Foundation Class Library (MFC), büyük karakter kümelerini işlemek için iki farklı yaklaşım sağlar:
 
-- [Unicode](#mfc-support-for-unicode-strings), `wchar_t` tabanlı geniş karakterler ve UTF-16 olarak kodlanmış dizeler.
+- [Unicode](#mfc-support-for-unicode-strings) `wchar_t` , UTF-16 olarak kodlanmış geniş karakterler ve dizeleri tabanlı.
 
-- [Çok baytlı karakter kümeleri (MBCS)](#mfc-support-for-mbcs-strings), **karakter** tabanlı tek veya çift baytlık karakterler ve dizeler, yerel ayara özgü karakter kümesi içinde kodlandı.
+- [Çok bayt Karakter Kümeleri (MBCS),](#mfc-support-for-mbcs-strings) **char** tabanlı tek veya çift bayt karakter ve yerel karakter kümesinde kodlanmış dizeleri.
 
-Microsoft tüm yeni geliştirmelerde MFC Unicode kitaplıklarını önermiştir ve Visual Studio 2013 ve Visual Studio 2015 ' de MBCS kitaplıkları kullanım dışıdır. Bu durum artık geçerli değildir. Visual Studio 2017 ' de MBCS kullanımdan kaldırma uyarıları kaldırılmıştır.
+Microsoft, tüm yeni geliştirmeiçin MFC Unicode kitaplıklarını tavsiye etti ve Visual Studio 2013 ve Visual Studio 2015'te MBCS kitaplıkları amortismana uğradı. Bu durum artık geçerli değildir. Visual Studio 2017'de MBCS amortisman uyarıları kaldırıldı.
 
-## <a name="mfc-support-for-unicode-strings"></a>Unicode dizeleri için MFC desteği
+## <a name="mfc-support-for-unicode-strings"></a>Unicode Dizeleri için MFC Desteği
 
-Tüm MFC sınıf kitaplığı, UTF-16 olarak geniş karakterlerle depolanan Unicode karakterler ve dizeler için koşullu olarak etkinleştirilmiştir. Özellikle, Class [CString](../atl-mfc-shared/reference/cstringt-class.md) Unicode etkindir.
+UtF-16 olarak geniş karakterlerde depolanan Unicode karakterleri ve dizeleri için tüm MFC sınıf kitaplığı koşullu olarak etkinleştirilir. Özellikle, [Sınıf CString](../atl-mfc-shared/reference/cstringt-class.md) Unicode etkindir.
 
-Bu kitaplık, hata ayıklayıcı ve DLL dosyaları MFC 'de Unicode 'U desteklemek için kullanılır:
+Bu kitaplık, hata ayıklayıcı ve DLL dosyaları MFC'de Unicode'u desteklemek için kullanılır:
 
 |||||
 |-|-|-|-|
-|UAFXCW.LIB|UAFXCW.PDB|UAFXCWD.LIB|UAFXCWD.PDB|
-|MFC*Sürüm*U. LIB|MFC*Sürüm*U. pdb|MFC*Sürüm*U. dll|MFC*Sürüm*ud 'si. LıB|
-|MFC*Sürüm*ud 'si. PDB|MFC*Sürüm*ud 'si. DOSYASıNı|MFCS*Sürüm*U. LIB|MFCS*Sürüm*U. pdb|
-|MFCS*Sürüm*ud. LıB|MFCS*Sürüm*ud. PDB|MFCM*Sürüm*U. LIB|MFCM*Sürüm*U. pdb|
-|MFCM*Sürüm*U. dll|MFCM*Sürüm*ud. LıB|MFCM*Sürüm*ud. PDB|MFCM*Sürüm*ud. DOSYASıNı|
+|UAFXCW. Lib|UAFXCW. Pdb|UAFXCWD. Lib|UAFXCWD. Pdb|
+|MFC*sürümü*U.LIB|MFC*sürümü*U.PDB|MFC*sürümü*U.DLL|MFC*sürümü*UD. Lib|
+|MFC*sürümü*UD. Pdb|MFC*sürümü*UD. Dll|MFCS*sürümü*U.LIB|MFCS*sürümü*U.PDB|
+|MFCS*sürüm*UD. Lib|MFCS*sürüm*UD. Pdb|MFCM*sürümü*U.LIB|MFCM*sürümü*U.PDB|
+|MFCM*sürümü*U.DLL|MFCM*sürüm*UD. Lib|MFCM*sürüm*UD. Pdb|MFCM*sürüm*UD. Dll|
 
-(*Sürüm* , dosyanın sürüm numarasını temsil eder; örneğin, ' 140 ', sürüm 14,0 anlamına gelir.)
+(*sürüm* dosyanın sürüm numarasını temsil eder; örneğin, '140' sürüm 14.0 anlamına gelir.)
 
-`CString`, TCHAR veri türünü temel alır. Symbol _UNICODE, programınızın bir derlemesi için tanımlandıysa, tchar türü `wchar_t`, 16 bitlik bir karakter kodlama türü olarak tanımlanır. Aksi halde TCHAR, normal 8 bit karakter kodlaması olan **char**olarak tanımlanır. Bu nedenle, Unicode altında a `CString` 16 bit karakterden oluşur. Unicode olmadan, **char**türünde karakterlerden oluşur.
+`CString`TCHAR veri türüne dayanır. _UNICODE sembolü, programınızın bir yapısı için tanımlanmışsa, `wchar_t`TCHAR türü , 16 bit karakter kodlama türü olarak tanımlanır. Aksi takdirde, TCHAR **char**olarak tanımlanır, normal 8-bit karakter kodlama. Bu nedenle, Unicode `CString` altında, a 16 bit karakterlerden oluşur. Unicode olmadan, türü **char**karakterleri oluşur.
 
-Uygulamanızın Unicode programlamayı tamamlamaya yönelik olarak, şunları da yapmanız gerekir:
+Uygulamanızın Unicode programlamasını tamamlamak için şunları da yapmalısınız:
 
-- Unicode 'a taşınabilir olacak değişmez dizeleri koşullu olarak kodlarda, _T makrosunu kullanın.
+- Unicode taşınabilir olması için koşullu kodlu gerçek dizeleri için _T makro kullanın.
 
-- Dizeleri geçirdiğinizde, işlev bağımsız değişkenlerinin karakter uzunluğunda veya bayt cinsinden bir uzunluğa ihtiyacı olup olmadığına dikkat edin. Unicode dizeleri kullanıyorsanız, fark önemlidir.
+- Dizeleri geçtiğiniz zaman, işlev bağımsız değişkenlerinin karakterlerde uzunluk mu yoksa baytlarda uzunluk mu gerektirdiğine dikkat edin. Unicode dizeleri kullanıyorsanız fark önemlidir.
 
 - C çalışma zamanı dize işleme işlevlerinin taşınabilir sürümlerini kullanın.
 
 - Karakterler ve karakter işaretçileri için aşağıdaki veri türlerini kullanın:
 
-   - **Char**'ı KULLANDıĞıNıZ yerde TCHAR 'ı kullanın.
+  - **Char**kullanacağınız TCHAR'ı kullanın.
 
-   - <strong>Char\*</strong>'ı kullandığınız yerde LPTSTR kullanın.
+  - **Char**<strong>\*</strong>kullanacağınız LPTSTR'yi kullanın.
 
-   - **Const char**<strong>\*</strong>'ı kullanacağınız LPCTSTR kullanın. `CString`ve LPCTSTR arasında `CString` dönüştürme yapmak için LPCTSTR işlecini sağlar.
+  - **Const char**<strong>\*</strong>kullanacağınız LPCTSTR'yi kullanın. `CString`lpctstr arasında `CString` dönüştürmek için operatör LPCTSTR sağlar.
 
-`CString`Ayrıca Unicode kullanan oluşturucular, atama işleçleri ve karşılaştırma işleçleri sağlar.
+`CString`Ayrıca Unicode'a duyarlı yapıcılar, atama işleçleri ve karşılaştırma işleçleri de sağlar.
 
-[Çalışma zamanı kitaplık başvurusu](../c-runtime-library/c-run-time-library-reference.md) , tüm dize işleme işlevlerinin taşınabilir sürümlerini tanımlar. Daha fazla bilgi için bkz. Kategori [Uluslararası duruma getirme](../c-runtime-library/internationalization.md).
+[Run-Time Kitaplığı Başvurusu,](../c-runtime-library/c-run-time-library-reference.md) tüm dize işleme işlevlerinin taşınabilir sürümlerini tanımlar. Daha fazla bilgi için [Internationalization](../c-runtime-library/internationalization.md)kategorisine bakın.
 
-## <a name="mfc-support-for-mbcs-strings"></a>MBCS dizeleri için MFC desteği
+## <a name="mfc-support-for-mbcs-strings"></a>MBCS Dizeleri için MFC Desteği
 
-Sınıf kitaplığı aynı zamanda çok baytlı karakter kümeleri için de etkinleştirilir, ancak yalnızca çift baytlı karakter kümeleri için (DBCS).
+Sınıf kitaplığı, çok bayt karakter kümeleri için, ancak yalnızca çift bayt karakter kümeleri (DBCS) için de etkinleştirilir.
 
-Çok baytlı bir karakter kümesinde bir karakter bir veya iki bayt genişliğinde olabilir. İki baytlık bir genişse, ilk baytı, hangi kod sayfasının kullanımda olduğuna bağlı olarak belirli bir aralıktan seçilen özel bir "ön bayt" olur. Birlikte alınan, lider ve "iz baytları" benzersiz bir karakter kodlaması belirtir.
+Çok bayt karakter kümesinde, bir karakter bir veya iki bayt genişliğinde olabilir. İki bayt genişliğindeyse, ilk baytı, hangi kod sayfasının kullanıldığına bağlı olarak belirli bir aralıktan seçilen özel bir "kurşun bayt"tır. Birlikte ele alındığında, kurşun ve "iz bayt" benzersiz bir karakter kodlama belirtin.
 
-Programınızın bir derlemesi için bir yazım türü tanımlanırsa, üzerine `CString` taban, **char**ile eşlenir yazın. Bir `CString` içinde hangi baytların ön bayt olduğunu ve bu baytların iz bayt olduğunu belirlemektir. C çalışma zamanı kitaplığı, bunu belirlemenize yardımcı olmak için işlevler sağlar.
+_MBCS sembolü, programınızın bir yapısı için tanımlanmışsa, `CString` üzerinde temel alan TCHAR yazısını, **haritaları char'a**göre yazın. Hangi baytların `CString` kurşun bayt, hangilerinin iz bayt olduğunu belirlemek size kalmış. C çalışma zamanı kitaplığı, bunu belirlemenize yardımcı olacak işlevleri sağlar.
 
-DBCS altında, belirli bir dize tüm tek baytlı ANSI karakterlerini, tüm çift baytlı karakterleri veya ikisinin birleşimini içerebilir. Bu olasılıklar, dizeleri ayrıştırırken özel bir ilgilenmesini gerektirir. Bu nesneleri `CString` içerir.
+DBCS altında, belirli bir dize tüm tek bayt ANSI karakterleri, tüm çift bayt karakterleri veya ikisinin bir birleşimini içerebilir. Bu olasılıklar, dizeleri ayrışdırma özel bakım gerektirir. Bu `CString` nesneleri içerir.
 
 > [!NOTE]
-> MFC 'de Unicode dize serileştirme, çalıştırdığınız uygulamanın hangi sürümünden bağımsız olarak hem Unicode hem de MBCS dizelerini okuyabilir. Veri dosyalarınız, programınızın Unicode ve MBCS sürümleri arasında taşınabilir.
+> MFC'deki Unicode dize serileştirme, çalıştırdığınız uygulamanın hangi sürümünden bağımsız olarak hem Unicode hem de MBCS dizelerini okuyabilir. Veri dosyalarınız, programınızın Unicode ve MBCS sürümleri arasında taşınabilir.
 
-`CString`üye işlevleri, çağırdıkları C çalışma zamanı işlevlerinin özel "genel metin" sürümlerini kullanır veya Unicode kullanan işlevleri kullanır. Bu nedenle, örneğin, bir `CString` işlev genellikle çağrıyorsa `strcmp`, bunun yerine karşılık gelen genel metin işlevini `_tcscmp` çağırır. _MBCS ve _UNICODE 'un nasıl tanımlandığına bağlı olarak, `_tcscmp` aşağıdaki gibi haritalar:
+`CString`üye işlevler, çağırdıkları C çalışma zamanı işlevlerinin özel "genel metin" sürümlerini veya Unicode'a duyarlı işlevleri kullanırlar. Bu nedenle, örneğin, `CString` bir işlev `strcmp`genellikle çağırırsa, bunun `_tcscmp` yerine karşılık gelen genel metin işlevini çağırır. _MBCS ve _UNICODE sembollerin innasıl `_tcscmp` tanımlandığına bağlı olarak, aşağıdaki gibi haritalar:
 
 |||
 |-|-|
 |_MBCS tanımlanmış|`_mbscmp`|
 |_UNICODE tanımlanmış|`wcscmp`|
-|Sembol tanımlı değil|`strcmp`|
+|Ne sembol tanımlı|`strcmp`|
 
 > [!NOTE]
-> _MBCS ve _UNıCODE sembolleri birbirini dışlıyor.
+> _MBCS ve _UNICODE sembolleri birbirini dışlar.
 
-Tüm çalışma zamanı dize işleme yordamlarının genel metin işlev eşlemeleri [C çalışma zamanı kitaplığı başvurusunda](../c-runtime-library/c-run-time-library-reference.md)ele alınmıştır. Bir liste için bkz. [Uluslararası duruma getirme](../c-runtime-library/internationalization.md).
+Tüm çalışma zamanı dize işleme yordamları için genel metin işlev eşlemeleri [C Run-Time Kitaplık Başvurusu'nda](../c-runtime-library/c-run-time-library-reference.md)tartışılır. Bir liste için [Internationalization'a](../c-runtime-library/internationalization.md)bakın.
 
-Benzer şekilde `CString` , yöntemler genel veri türü eşlemeleri kullanılarak uygulanır. Hem MBCS hem de UNICODE 'u etkinleştirmek için MFC **char** `wchar_t`için Tchar, **char** <strong>\*</strong> `wchar_t*`veya için LPTSTR, **const char** <strong>\*</strong> `const wchar_t*`için de LPCTSTR kullanır. Bu, MBCS veya Unicode için doğru eşlemeleri güvence altına aldığından emin olabilir.
+Benzer şekilde, `CString` yöntemler genel veri türü eşlemeleri kullanılarak uygulanır. Hem MBCS hem de Unicode'u etkinleştirmek `wchar_t`için, MFC **Char** veya , **LPTSTR** <strong>\*</strong> char `const wchar_t*`veya **const char** <strong>\*</strong> veya `wchar_t*`. Bunlar, MBCS veya Unicode için doğru eşlemeleri sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-[Dize düzenleme](../c-runtime-library/string-manipulation-crt.md)
+[Dizeleri (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
+[Dize Düzenlemesi](../c-runtime-library/string-manipulation-crt.md)

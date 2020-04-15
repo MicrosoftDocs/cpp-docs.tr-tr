@@ -1,5 +1,5 @@
 ---
-title: CD2DMesh sınıfı
+title: CD2DMesh Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DMesh
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CD2DMesh [MFC], Open
 - CD2DMesh [MFC], m_pMesh
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-ms.openlocfilehash: f4ad6fd054eeb8576c2fdb2dc924f70034b3abad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64f5dd7b40853a86dc7f964ecd3701f132a94e16
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396372"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369191"
 ---
-# <a name="cd2dmesh-class"></a>CD2DMesh sınıfı
+# <a name="cd2dmesh-class"></a>CD2DMesh Sınıfı
 
-ID2D1Mesh için sarmalayıcı.
+ID2D1Mesh için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,58 +45,58 @@ class CD2DMesh : public CD2DResource;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DMesh::CD2DMesh](#cd2dmesh)|CD2DMesh bir nesne oluşturur.|
-|[CD2DMesh:: ~ CD2DMesh](#_dtorcd2dmesh)|Yıkıcı. D2D kafes nesnesi yok ediliyorken çağırılır.|
+|[CD2DMesh::CD2DMesh](#cd2dmesh)|BIR CD2DMesh nesnesi oluşturuyor.|
+|[CD2DMesh::~CD2DMesh](#_dtorcd2dmesh)|Yıkıcı. D2D örgü nesnesi yok edilirken çağrılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DMesh::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|
-|[CD2DMesh::Create](#create)|Bir CD2DMesh oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DMesh::Destroy](#destroy)|CD2DMesh nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DMesh::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
-|[CD2DMesh::get](#get)|Döndürür ID2D1Mesh arabirimi|
-|[CD2DMesh::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
-|[CD2DMesh::Open](#open)|Kafes nüfusunu açılır.|
+|[CD2DMesh::Ekle](#attach)|Nesneye varolan kaynak arabirimi ataştırır|
+|[CD2DMesh::Oluştur](#create)|BIR CD2DMesh oluşturur. [(CD2DResource geçersiz kılar::Oluştur](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DMesh::Destroy](#destroy)|BIR CD2DMesh nesnesini yok eder. (GEÇERSIZ Kılar [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DMesh::Detach](#detach)|Kaynak arabirimini nesneden ayırıyor|
+|[CD2DMesh::Get](#get)|ID2D1Mesh arabirimi döndürür|
+|[CD2DMesh::Geçersiz](#isvalid)|Kaynak geçerliliğini denetler [(CD2DResource geçersiz kılar::Geçerlidir](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DMesh::Aç](#open)|Nüfus için kafesi açar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DMesh::operator ID2D1Mesh *](#operator_id2d1mesh_star)|Döndürür ID2D1Mesh arabirimi|
+|[CD2DMesh::operatör ID2D1Mesh*](#operator_id2d1mesh_star)|ID2D1Mesh arabirimi döndürür|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DMesh::m_pMesh](#m_pmesh)|Bir ID2D1Mesh işaretçisi.|
+|[CD2DMesh::m_pMesh](#m_pmesh)|ID2D1Mesh için bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DMesh`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="_dtorcd2dmesh"></a>  CD2DMesh:: ~ CD2DMesh
+## <a name="cd2dmeshcd2dmesh"></a><a name="_dtorcd2dmesh"></a>CD2DMesh::~CD2DMesh
 
-Yıkıcı. D2D kafes nesnesi yok ediliyorken çağırılır.
+Yıkıcı. D2D örgü nesnesi yok edilirken çağrılır.
 
 ```
 virtual ~CD2DMesh();
 ```
 
-##  <a name="attach"></a>  CD2DMesh::Attach
+## <a name="cd2dmeshattach"></a><a name="attach"></a>CD2DMesh::Ekle
 
-Var olan kaynak arabirimi nesnesine ekler
+Nesneye varolan kaynak arabirimi ataştırır
 
 ```
 void Attach(ID2D1Mesh* pResource);
@@ -104,12 +104,12 @@ void Attach(ID2D1Mesh* pResource);
 
 ### <a name="parameters"></a>Parametreler
 
-*pResource*<br/>
-Mevcut kaynak arabirimi. NULL olamaz
+*pKaynak*<br/>
+Varolan kaynak arabirimi. NULL olamaz
 
-##  <a name="cd2dmesh"></a>  CD2DMesh::CD2DMesh
+## <a name="cd2dmeshcd2dmesh"></a><a name="cd2dmesh"></a>CD2DMesh::CD2DMesh
 
-CD2DMesh bir nesne oluşturur.
+BIR CD2DMesh nesnesi oluşturuyor.
 
 ```
 CD2DMesh(
@@ -120,14 +120,14 @@ CD2DMesh(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="create"></a>  CD2DMesh::Create
+## <a name="cd2dmeshcreate"></a><a name="create"></a>CD2DMesh::Oluştur
 
-Bir CD2DMesh oluşturur.
+BIR CD2DMesh oluşturur.
 
 ```
 virtual HRESULT Create(CRenderTarget* pRenderTarget);
@@ -136,23 +136,23 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pRenderTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="destroy"></a>  CD2DMesh::Destroy
+## <a name="cd2dmeshdestroy"></a><a name="destroy"></a>CD2DMesh::Destroy
 
-CD2DMesh nesnesini yok eder.
+BIR CD2DMesh nesnesini yok eder.
 
 ```
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DMesh::detach
+## <a name="cd2dmeshdetach"></a><a name="detach"></a>CD2DMesh::Detach
 
-Kaynak arabirimi nesnesinden ayırır
+Kaynak arabirimini nesneden ayırıyor
 
 ```
 ID2D1Mesh* Detach();
@@ -160,11 +160,11 @@ ID2D1Mesh* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış kaynak arabirim işaretçisi.
+Ayrılmış kaynak arabirimine işaretçi.
 
-##  <a name="get"></a>  CD2DMesh::get
+## <a name="cd2dmeshget"></a><a name="get"></a>CD2DMesh::Get
 
-Döndürür ID2D1Mesh arabirimi
+ID2D1Mesh arabirimi döndürür
 
 ```
 ID2D1Mesh* Get();
@@ -172,11 +172,11 @@ ID2D1Mesh* Get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1Mesh arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1Mesh arabirimini işaretçi.
 
-##  <a name="isvalid"></a>  CD2DMesh::IsValid
+## <a name="cd2dmeshisvalid"></a><a name="isvalid"></a>CD2DMesh::Geçersiz
 
-Kaynak geçerlilik denetimleri
+Kaynak geçerliliğini denetler
 
 ```
 virtual BOOL IsValid() const;
@@ -184,19 +184,19 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak geçerli ise TRUE; Aksi durumda FALSE.
+Kaynak geçerliyse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_pmesh"></a>  CD2DMesh::m_pMesh
+## <a name="cd2dmeshm_pmesh"></a><a name="m_pmesh"></a>CD2DMesh::m_pMesh
 
-Bir ID2D1Mesh işaretçisi.
+ID2D1Mesh için bir işaretçi.
 
 ```
 ID2D1Mesh* m_pMesh;
 ```
 
-##  <a name="open"></a>  CD2DMesh::Open
+## <a name="cd2dmeshopen"></a><a name="open"></a>CD2DMesh::Aç
 
-Kafes nüfusunu açılır.
+Nüfus için kafesi açar.
 
 ```
 ID2D1TessellationSink* Open();
@@ -204,11 +204,11 @@ ID2D1TessellationSink* Open();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kafes doldurmak için kullanılan bir ID2D1TessellationSink işaretçisi.
+Mesh doldurmak için kullanılan bir ID2D1TessellationSink için bir işaretçi.
 
-##  <a name="operator_id2d1mesh_star"></a>  CD2DMesh::operator ID2D1Mesh *
+## <a name="cd2dmeshoperator-id2d1mesh"></a><a name="operator_id2d1mesh_star"></a>CD2DMesh::operatör ID2D1Mesh*
 
-Döndürür ID2D1Mesh arabirimi
+ID2D1Mesh arabirimi döndürür
 
 ```
 operator ID2D1Mesh*();
@@ -216,7 +216,7 @@ operator ID2D1Mesh*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1Mesh arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1Mesh arabirimini işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

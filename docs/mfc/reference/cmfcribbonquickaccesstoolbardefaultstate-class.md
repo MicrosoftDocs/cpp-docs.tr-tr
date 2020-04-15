@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonQuickAccessToolBarDefaultState sınıfı
+title: CMFCRibbonQuickAccessToolBarDefaultState Sınıf
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonQuickAccessToolBarDefaultState
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], CopyFrom
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], RemoveAll
 ms.assetid: eca99200-b87b-47ba-b2e8-2f3f2444b176
-ms.openlocfilehash: 0ea9ec8de0b657fa4e7c601f9c3e676f550defa9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 56219e8ed1833f4b448ec6ffd3c16e9db3c66ada
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380266"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368869"
 ---
-# <a name="cmfcribbonquickaccesstoolbardefaultstate-class"></a>CMFCRibbonQuickAccessToolBarDefaultState sınıfı
+# <a name="cmfcribbonquickaccesstoolbardefaultstate-class"></a>CMFCRibbonQuickAccessToolBarDefaultState Sınıf
 
-Şerit çubuğundaki konumlandırılmış hızlı erişim araç için varsayılan duruma yöneten bir yardımcı sınıfı ( [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md)).
+Şerit çubuğunda [(CMFCRibbonBar Sınıfı)](../../mfc/reference/cmfcribbonbar-class.md)konumlandırılmış Hızlı Erişim Araç Çubuğu için varsayılan durumu yöneten bir yardımcı sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,21 +35,21 @@ class CMFCRibbonQuickAccessToolBarDefaultState
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState](#cmfcribbonquickaccesstoolbardefaultstate)|Oluşturur bir `CMFCRibbonQuickAccessToolbarDefaultState` nesne.|
+|[CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState](#cmfcribbonquickaccesstoolbardefaultstate)|Bir `CMFCRibbonQuickAccessToolbarDefaultState` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand)|Bir komut için hızlı erişim araç çubuğu varsayılan durumuna ekler. Bu araç değiştirmez.|
-|[CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom](#copyfrom)|Bir hızlı erişim araç çubuğu özelliklerini diğerine kopyalar.|
-|[CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll](#removeall)|Tüm komutlar, Hızlı Erişim Araç Çubuğu ' kaldırır. Bu araç değiştirmez.|
+|[CMFCRibbonQuickAccessToolBarDefaultState::Addkomut](#addcommand)|Hızlı Erişim Araç Çubuğu için varsayılan duruma bir komut ekler. Bu, araç çubuğunun kendisini değiştirmez.|
+|[CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom](#copyfrom)|Bir Hızlı Erişim Araç Çubuğu'nun özelliklerini diğerine kopyalar.|
+|[CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll](#removeall)|Hızlı Erişim Araç Çubuğu'ndaki tüm komutları kaldırır. Bu, araç çubuğunun kendisini değiştirmez.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızda hızlı erişim araç çubuğu oluşturduktan sonra varsayılan durumuna çağırarak ayarlamanızı öneririz [CMFCRibbonBar::SetQuickAccessDefaultState](../../mfc/reference/cmfcribbonbar-class.md#setquickaccessdefaultstate). Kullanıcı tıkladığında bu varsayılan durumunun geri yüklendiği **sıfırlama** düğmesini **Özelleştir** uygulamanızın sayfasında **seçenekleri** iletişim kutusu.
+Uygulamanızda Hızlı Erişim Araç Çubuğu'nu oluşturduktan [sonra, CMFCRibbonBar::SetQuickAccessDefaultState'i](../../mfc/reference/cmfcribbonbar-class.md#setquickaccessdefaultstate)arayarak varsayılan durumunu ayarlamanızı öneririz. Bir kullanıcı uygulamanızın **Seçenekler** iletişim kutusunun **Özelleştir** sayfasındaki **Sıfırla** düğmesini tıklattığında bu varsayılan durum geri yüklenir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,17 +57,17 @@ Uygulamanızda hızlı erişim araç çubuğu oluşturduktan sonra varsayılan d
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCRibbonQuickAccessToolbarDefaultState` sınıfı ve nasıl hızlı erişim araç çubuğu için varsayılan duruma komut ekleme.
+Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCRibbonQuickAccessToolbarDefaultState` nasıl oluşturulabildiğini ve Hızlı Erişim Araç Çubuğu için varsayılan duruma komutun nasıl ekleyeceğini gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#21](../../mfc/reference/codesnippet/cpp/cmfcribbonquickaccesstoolbardefaultstate-class_1.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxribbonquickaccesstoolbar.h
+**Üstbilgi:** afxribbonquickaccesstoolbar.h
 
-##  <a name="addcommand"></a>  CMFCRibbonQuickAccessToolBarDefaultState::AddCommand
+## <a name="cmfcribbonquickaccesstoolbardefaultstateaddcommand"></a><a name="addcommand"></a>CMFCRibbonQuickAccessToolBarDefaultState::Addkomut
 
-Bir komut için hızlı erişim araç çubuğu varsayılan durumuna ekler.
+Hızlı Erişim Araç Çubuğu için varsayılan duruma bir komut ekler.
 
 ```
 void AddCommand(
@@ -81,15 +81,15 @@ void AddCommand(
 Komut kimliğini belirtir.
 
 *[in] bIsVisible*<br/>
-Hızlı Erişim Araç çubuğu varsayılan durumda olduğunda komut görünürlüğünü belirler.
+Hızlı Erişim Araç Çubuğu varsayılan durumdayken komutun görünürlüğünü ayarlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komut için CMFCRibbonQuickAccessToolBarDefaultState ekleme olarak üç sonuçtan gerçekleştirir. İlk olarak, eklenen her komut hızlı erişim araç çubuğunun sağ tarafında açılan listelenir. Bu şekilde, kullanıcı bir kolayca ekleyebilir veya hızlı erişim araç çubuğundan bu komutu kaldırın. İkinci olarak, hızlı erişim araç çubuğu kullanıcı tıkladığında listelenen komutlar varsayılan durumunda görünür olarak göstermek için sıfırlama **sıfırlama** düğmesine **Özelleştir** iletişim kutusu. Değil çağrılırsa üçüncü [CMFCRibbonBar::SetQuickAccessCommands](../../mfc/reference/cmfcribbonbar-class.md#setquickaccesscommands), hızlı erişim araç çubuğu görünür komutlar bu listeden varsayılan görünür komutları bir kullanıcı uygulamanızı ilk kez çalıştırdığında kullanır. İstediğiniz tüm komutları ekledikten sonra çağrı [CMFCRibbonBar::SetQuickAccessDefaultState](../../mfc/reference/cmfcribbonbar-class.md#setquickaccessdefaultstate) Bu örnek, Şerit çubuğunun hızlı erişim araç için varsayılan duruma ayarlamak için.
+CMFCRibbonQuickAccessToolBarDefaultState'e komut eklemek üç sonuç verir. İlk olarak, eklenen her komut, Hızlı Erişim Araç Çubuğu'nun sağ tarafındaki açılır listede listelenir. Bu şekilde, bir kullanıcı bu komutu Hızlı Erişim Araç Çubuğu'ndan kolayca ekleyebilir veya kaldırabilir. İkinci olarak, Hızlı Erişim Araç Çubuğu, kullanıcı **Özelleştir** iletişim kutusunda **sıfırla** düğmesini tıklattığında yalnızca varsayılan durumda görünür olarak listelenen komutları göstermek için sıfırlanır. Üçüncü olarak, [CMFCRibbonBar::SetQuickAccessKomutları'nı](../../mfc/reference/cmfcribbonbar-class.md#setquickaccesscommands)aramadıysanız, Hızlı Erişim Araç Çubuğu, varsayılan görünür komutlar bir kullanıcının uygulamanızı ilk çalıştırdığı sırada bu listeden görünür komutları kullanır. İstediğiniz tüm komutları ekledikten sonra [CMFCRibbonBar::SetQuickAccessDefaultState'i](../../mfc/reference/cmfcribbonbar-class.md#setquickaccessdefaultstate) arayarak bu örneği Şerit Çubuğu'nun Hızlı Erişim Araç Çubuğu için varsayılan durum olarak ayarlayın.
 
-##  <a name="copyfrom"></a>  CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom
+## <a name="cmfcribbonquickaccesstoolbardefaultstatecopyfrom"></a><a name="copyfrom"></a>CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom
 
-Bir hızlı erişim araç çubuğu özelliklerini diğerine kopyalar.
+Bir Hızlı Erişim Araç Çubuğu'nun özelliklerini diğerine kopyalar.
 
 ```
 void CopyFrom(const CMFCRibbonQuickAccessToolBarDefaultState& src);
@@ -98,15 +98,15 @@ void CopyFrom(const CMFCRibbonQuickAccessToolBarDefaultState& src);
 ### <a name="parameters"></a>Parametreler
 
 *src*<br/>
-[in] Kaynak başvuru `CMFCRibbonQuickAccessToolBarDefaultState` kopyalanacak nesne.
+[içinde] Kopyalanması gereken `CMFCRibbonQuickAccessToolBarDefaultState` kaynak nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, her komutun kaynaktan kopyalar `CMFCRibbonQuickAccessToolBarDefaultState` kullanarak bu nesne için nesne [CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand) yöntemi.
+Bu `CMFCRibbonQuickAccessToolBarDefaultState` [yöntem, cmfcribbonQuickAccessToolToolDefaultState](#addcommand) kullanarak kaynak nesneden bu nesneye her komut kopyalar:AddCommand yöntemi.
 
-##  <a name="cmfcribbonquickaccesstoolbardefaultstate"></a>  CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState
+## <a name="cmfcribbonquickaccesstoolbardefaultstatecmfcribbonquickaccesstoolbardefaultstate"></a><a name="cmfcribbonquickaccesstoolbardefaultstate"></a>CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState
 
-Hızlı Erişim Araç çubuğu varsayılan durum nesnesi oluşturur.
+Hızlı Erişim Araç Çubuğu varsayılan durum nesnesini oluşturuyor.
 
 ```
 CMFCRibbonQuickAccessToolBarDefaultState();
@@ -114,11 +114,11 @@ CMFCRibbonQuickAccessToolBarDefaultState();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, listesini komutları, yeni bir örneğini [CMFRibbonQuickAccessToolBarDefaultState](../../mfc/reference/cmfcribbonquickaccesstoolbardefaultstate-class.md) içeren boş.
+Varsayılan olarak, [CMFRibbonQuickAccessToolToolDefaultState'in](../../mfc/reference/cmfcribbonquickaccesstoolbardefaultstate-class.md) yeni örneğinin içerdiği komutlar listesi boştur.
 
-##  <a name="removeall"></a>  CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll
+## <a name="cmfcribbonquickaccesstoolbardefaultstateremoveall"></a><a name="removeall"></a>CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll
 
-Hızlı Erişim Araç çubuğu varsayılan komutların listesini temizler.
+Hızlı Erişim Araç Çubuğu'ndaki varsayılan komutların listesini temizler.
 
 ```
 void RemoveAll();
@@ -126,7 +126,7 @@ void RemoveAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, tüm komutlar bu örneğinden kaldırır, önceki çağrıları [CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand) eklendi.
+Bu işlev, [cmfcribbonQuickAccessToolBDefaultState](#addcommand) önceki çağrıları tüm komutları bu örnekten kaldırır::AddCommand ekledi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

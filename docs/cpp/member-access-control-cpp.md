@@ -6,16 +6,16 @@ helpviewer_keywords:
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-ms.openlocfilehash: 367ee5183498453b9ce647c8e91ad1194f90fbd2
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e8f62e82ebb7fcc18be5ac7d203df0fb46c9b635
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345038"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369854"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 
-Erişim denetimleri birbirinden ayırmak etkinleştirme [genel](../cpp/public-cpp.md) bir sınıfın arabirim [özel](../cpp/private-cpp.md) uygulama ayrıntılarını ve [korumalı](../cpp/protected-cpp.md) tarafından yalnızca olan üyeleri kullanın türetilmiş sınıflar. Erişim belirticisi sonraki erişim belirticisi karşılaşılanaa kadar sonra bildirilen tüm üyeleri için geçerlidir.
+Erişim denetimleri, bir sınıfın [ortak](../cpp/public-cpp.md) arabirimini [özel](../cpp/private-cpp.md) uygulama ayrıntılarından ve yalnızca türemiş sınıflar tarafından kullanılmak üzere [korunan](../cpp/protected-cpp.md) üyelerden ayırmanızı sağlar. Erişim belirtici, bir sonraki erişim belirticikarşılaşıncaya kadar ondan sonra bildirilen tüm üyeler için geçerlidir.
 
 ```cpp
 class Point
@@ -35,40 +35,40 @@ protected:      // Declare protected function for derived classes only.
 };
 ```
 
-Varsayılan erişim **özel** bir sınıftaki ve **genel** yapı veya birleşim. Erişim tanımlayıcıları sınıfında olabilir herhangi sayıda herhangi bir sırada kullanılır. Sınıf türü nesneleri için depolama alanı ayırma uygulamaya bağlıdır, ancak üyelere, erişim belirticileri arasında sırayla daha yüksek bellek adresleri atanması garantidir.
+Varsayılan erişim bir sınıfta **özel,** bir yapı veya birleşimde **herkese açıktır.** Bir sınıftaki erişim belirteciler herhangi bir sırada herhangi bir sayıda kullanılabilir. Sınıf türü nesneleri için depolama alanı ayırma uygulamaya bağlıdır, ancak üyelere, erişim belirticileri arasında sırayla daha yüksek bellek adresleri atanması garantidir.
 
 ## <a name="member-access-control"></a>Üye Erişim Denetimi
 
-|Erişim türü|Açıklama|
+|Erişim Türü|Anlamı|
 |--------------------|-------------|
-|[private](../cpp/private-cpp.md)|Olarak bildirilen sınıf üyeleri **özel** yalnızca üye işlevleri ve arkadaş sınıfı (sınıflar veya işlevler) tarafından kullanılabilir.|
-|[protected](../cpp/protected-cpp.md)|Olarak bildirilen sınıf üyeleri **korumalı** üye işlevleri ve arkadaş sınıfı (sınıflar veya işlevler) tarafından kullanılabilir. Ayrıca, bunlar sınıftan türetilmiş sınıflar tarafından kullanılabilir.|
-|[public](../cpp/public-cpp.md)|Olarak bildirilen sınıf üyeleri **genel** herhangi bir işlev tarafından kullanılabilir.|
+|[private](../cpp/private-cpp.md)|**Özel** olarak bildirilen sınıf üyeleri yalnızca sınıfın üye işlevleri ve arkadaşları (sınıflar veya işlevler) tarafından kullanılabilir.|
+|[protected](../cpp/protected-cpp.md)|**Korumalı** olarak bildirilen sınıf üyeleri, sınıfın üye işlevleri ve arkadaşları (sınıflar veya işlevler) tarafından kullanılabilir. Ayrıca, sınıftan türetilen sınıflar tarafından kullanılabilir.|
+|[public](../cpp/public-cpp.md)|**Genel** olarak bildirilen sınıf üyeleri herhangi bir işlev tarafından kullanılabilir.|
 
-Erişim denetimi, özel olarak kullanılmak üzere düşünülmemiş yollarla nesneleri kullanarak önlemeye yardımcı olur. Açık tür dönüştürmeleri (yayınları) gerçekleştirildiğinde bu koruma kaybolur.
+Erişim denetimi, nesneleri kullanılmak üzere tasarlanmadıkları şekilde kullanmanızı önlemeye yardımcı olur. Bu koruma, açık tür dönüşümleri (dökümler) yapıldığında kaybolur.
 
 > [!NOTE]
->  Erişim denetimi, tüm adları için eşit oranda geçerlidir: üye işlevleri, üye verilerini, iç içe geçmiş sınıflar ve numaralandırıcılar.
+> Erişim denetimi tüm adlar için eşit derecede geçerlidir: üye işlevler, üye verileri, iç içe sınıflar ve sayısallaştırıcılar.
 
-## <a name="access-control-in-derived-classes"></a>Türetilmiş sınıflarda erişim denetimi
+## <a name="access-control-in-derived-classes"></a>Türemiş Sınıflarda Erişim Denetimi
 
-İki etmen denetimi; türetilen bir sınıfta bir temel sınıfın hangi üyelerinin erişilebilir aynı faktörlerin devralınan üyeler türetilen sınıfta erişimi denetleme:
+Bir taban sınıfın hangi üyelerine türemiş bir sınıfta erişilebilir olduğunu denetlemeiki etken; bu aynı etkenler türemiş sınıfta devralınan üyelere erişimi denetler:
 
-- Kullanarak temel sınıf türetilmiş bir sınıf olup olmadığını bildirir **genel** erişim belirticisi.
+- Türemiş sınıfın **ortak** erişim belirtimi kullanarak taban sınıfı beyan edip etmediği.
 
-- Üye erişimi temel sınıfta nedir?
+- Üyeye erişimin taban sınıfta ne olduğu.
 
-Aşağıdaki tabloda, bu faktörlerin ve temel sınıf üye erişimi belirleme arasındaki etkileşim gösterilmektedir.
+Aşağıdaki tabloda, bu etkenler arasındaki etkileşim ve taban sınıf üye erişiminin nasıl belirlenene yol açılabilir.
 
-### <a name="member-access-in-base-class"></a>Temel sınıftaki üye erişimi
+### <a name="member-access-in-base-class"></a>Taban Sınıfında Üye Erişimi
 
-|private|protected|Ortak|
+|private|protected|Genel|
 |-------------|---------------|------------|
-|Türetme erişim bakılmaksızın her zaman erişilemez|Özel türetme kullanırsanız, türetilmiş sınıf içinde özel|Özel türetme kullanırsanız, türetilmiş sınıf içinde özel|
-||Korumalı türetme kullanırsanız, türetilmiş sınıf içinde korumalı|Korumalı türetme kullanırsanız, türetilmiş sınıf içinde korumalı|
-||Türetilen sınıfta ortak türetme kullanıyorsanız, korumalı|Genel türetme kullanırsanız türetilmiş sınıftaki ortak|
+|Türetme erişimine bakılmaksızın her zaman erişilemez|Özel türetme kullanıyorsanız türemiş sınıfta özel|Özel türetme kullanıyorsanız türemiş sınıfta özel|
+||Korumalı türev kullanıyorsanız türemiş sınıfta korumalı|Korumalı türev kullanıyorsanız türemiş sınıfta korumalı|
+||Genel türetme kullanıyorsanız türemiş sınıfta korumalı|Genel türetme kullanıyorsanız türemiş sınıfta genel|
 
-Aşağıdaki örnek bunu göstermektedir:
+Aşağıdaki örnekte bu gösterilmektedir:
 
 ```cpp
 // access_specifiers_for_base_classes.cpp
@@ -112,11 +112,11 @@ int main()
 }
 ```
 
-İçinde `DerivedClass1`, üye işlevi `PublicFunc` genel bir üyesidir ve `ProtectedFunc` korumalı bir üye olduğundan `BaseClass` genel bir temel sınıf. `PrivateFunc` özel olduğu `BaseClass`, ve tüm türetilen sınıflar için erişilebilir değil.
+In, `DerivedClass1`üye `PublicFunc` işlev ortak bir `ProtectedFunc` üyedir ve `BaseClass` bir ortak taban sınıf olduğu için korunan bir üyedir. `PrivateFunc`özeldir `BaseClass`ve türetilmiş sınıflara erişilemez.
 
-İçinde `DerivedClass2`, İşlevler `PublicFunc` ve `ProtectedFunc` özel üyeler, çünkü olarak kabul edilir `BaseClass` özel bir temel sınıf. Yeniden `PrivateFunc` özel olduğu `BaseClass`, ve tüm türetilen sınıflar için erişilebilir değil.
+Özel `DerivedClass2`taban `PublicFunc` sınıf `ProtectedFunc` `BaseClass` olduğu için , işlevler ve özel üye olarak kabul edilir. Yine, `PrivateFunc` özel `BaseClass`, ve herhangi bir türemiş sınıflar için erişilemez.
 
-Türetilmiş bir sınıf bir temel sınıf erişim belirticisi olmadan bildirebilirsiniz. Böyle bir durumda türetme türetilmiş sınıf bildiriminin kullanıyorsa, özel sayılır **sınıfı** anahtar sözcüğü. Türetme türetilmiş sınıf bildiriminin kullanıyorsa, genel olarak kabul edilir **yapı** anahtar sözcüğü. Örneğin, aşağıdaki kodu:
+Türemiş bir sınıfı taban sınıf erişim belirtimi olmadan bildirebilirsiniz. Türemiş sınıf bildirimi **sınıf** anahtar sözcüğü kullanıyorsa, türemiş türemiş özel olarak kabul edilir. Türemiş sınıf bildirimi **yapı** anahtar sözcüğü kullanıyorsa türetme genel olarak kabul edilir. Örneğin, aşağıdaki kod:
 
 ```cpp
 class Derived : Base
@@ -130,7 +130,7 @@ class Derived : private Base
 ...
 ```
 
-Benzer şekilde, aşağıdaki kodu:
+Benzer şekilde, aşağıdaki kod:
 
 ```cpp
 struct Derived : Base
@@ -144,16 +144,16 @@ struct Derived : public Base
 ...
 ```
 
-Özel erişime sahip olacak şekilde bildirilebilirler üye işlevleri için erişilebilir olmadığına dikkat edin veya bu işlevler veya sınıflar kullanılarak bildirilir sürece türetilmiş sınıflar **arkadaş** temel sınıf bildiriminde.
+Özel erişime sahip olarak beyan edilen üyelerin, bu işlevler veya sınıflar taban sınıfta **arkadaş** bildirimi kullanılarak bildirilmedikçe işlevler veya türetilmiş sınıflar tarafından erişilemeyeceğini unutmayın.
 
-A **birleşim** bir temel sınıf türüne sahip olamaz.
+**Birleşim** türünde taban sınıf olamaz.
 
 > [!NOTE]
->  Özel bir temel sınıf belirtirken onu açıkça kullanmanız önerilir **özel** kullanıcılar türetilmiş sınıfın üye erişimi anlamak için anahtar sözcüğü.
+> Özel bir taban sınıf belirtirken, türemiş sınıfın kullanıcılarının üye erişimini anlamaları için **özel** anahtar sözcüğü açıkça kullanmanız tavsiye edilir.
 
 ## <a name="access-control-and-static-members"></a>Erişim denetimi ve statik üyeler
 
-Temel sınıf olarak belirttiğinizde **özel**, yalnızca statik olmayan üyeleri etkiler. Genel statik üyeler türetilmiş sınıflarda da erişilebilir. Ancak, işaretçiler, başvurular veya nesneleri kullanarak temel sınıf üyelerinin erişmek, aynı zamanda erişim denetiminin yeniden uygulandığı bir dönüştürme gerektirebilir. Aşağıdaki örnek göz önünde bulundurun:
+Bir taban sınıfı **özel**olarak belirttiğiniz zaman, yalnızca statik olmayan üyeleri etkiler. Genel statik üyeler türetilmiş sınıflarda da erişilebilir. Ancak, işaretçiler, başvurular veya nesneleri kullanarak temel sınıf üyelerinin erişmek, aynı zamanda erişim denetiminin yeniden uygulandığı bir dönüştürme gerektirebilir. Aşağıdaki örneği inceleyin:
 
 ```cpp
 // access_control.cpp
@@ -187,7 +187,7 @@ int Derived2::ShowCount()
 }
 ```
 
-Önceki kodda; erişim denetimi, bir `Derived2` işaretçisinden `Base` işaretçisine dönüşümü yasaklar. **Bu** işaretçi örtük olarak türüdür `Derived2 *`. Seçilecek `CountOf` işlevi **bu** türüne dönüştürülmesi gerekir `Base *`. `Base`, `Derived2` öğesinin özel dolaylı bir temel sınıfı olduğundan bu tür bir dönüştürmeye izin verilmez. Özel bir temel sınıf türüne dönüştürme yalnızca hemen türetilmiş sınıfların işaretçileri için kabul edilebilir. Bu nedenle, `Derived1 *` türünde işaretçiler `Base *` türüne dönüştürülebilir.
+Önceki kodda; erişim denetimi, bir `Derived2` işaretçisinden `Base` işaretçisine dönüşümü yasaklar. **Bu** işaretçi örtülü olarak `Derived2 *`türüdür. İşlevseçmek `CountOf` için **bu** türe `Base *`dönüştürülmelidir. `Base`, `Derived2` öğesinin özel dolaylı bir temel sınıfı olduğundan bu tür bir dönüştürmeye izin verilmez. Özel bir temel sınıf türüne dönüştürme yalnızca hemen türetilmiş sınıfların işaretçileri için kabul edilebilir. Bu nedenle, `Derived1 *` türünde işaretçiler `Base *` türüne dönüştürülebilir.
 
 Kendisini seçmek üzere bir işaretçi, başvuru veya nesne kullanmadan `CountOf` işlevine açık şekilde çağrı yapmanın, herhangi bir dönüştürme yapılacağı anlamına gelmediğine dikkat edin. Bu nedenle, çağrıya izin verilir.
 
@@ -195,7 +195,7 @@ Türetilmiş bir sınıfın (`T`) üyeleri ve arkadaşları, bir `T` işaretçis
 
 ## <a name="access-to-virtual-functions"></a>Sanal işlevlere erişim
 
-Erişim denetimi uygulanan [sanal](../cpp/virtual-cpp.md) işlevler işlev çağrısını yapmak için kullanılan tür tarafından belirlenir. İşlev bildirimlerinin geçersiz kılınması, belirli bir türe yönelik erişim denetimini etkilemez. Örneğin:
+[Sanal](../cpp/virtual-cpp.md) işlevlere uygulanan erişim denetimi, işlev çağrısı yapmak için kullanılan türe göre belirlenir. İşlev bildirimlerinin geçersiz kılınması, belirli bir türe yönelik erişim denetimini etkilemez. Örneğin:
 
 ```cpp
 // access_to_virtual_functions.cpp
@@ -228,17 +228,17 @@ int main()
 Yukarıdaki örnekte, `GetState` türünün işaretçisi kullanılarak `VFuncBase` sanal işlevinin çağrılması, `VFuncDerived::GetState` öğesini çağırır ve `GetState` genel olarak kabul edilir. Bununla birlikte, `GetState` türünün işaretçisi kullanılarak `VFuncDerived` çağrılması, `GetState``VFuncDerived` sınıfında özel olarak bildirildiği için bir erişim denetimi ihlali oluşturur.
 
 > [!CAUTION]
->  `GetState` sanal işlevi, `VFuncBase` temel sınıfının işaretçisi kullanılarak çağrılabilir. Bu, çağrılan işlevin bu işlevin temel sınıfı olduğu anlamına gelmez.
+> `GetState` sanal işlevi, `VFuncBase` temel sınıfının işaretçisi kullanılarak çağrılabilir. Bu, çağrılan işlevin bu işlevin temel sınıfı olduğu anlamına gelmez.
 
-## <a name="access-control-with-multiple-inheritance"></a>Erişim denetimi ile birden çok devralma
+## <a name="access-control-with-multiple-inheritance"></a>Birden çok devralma ile erişim denetimi
 
 Sanal temel sınıflar içeren birden çok devralma kafeslerinde, belirli bir ada birden fazla yolla ulaşılabilir. Bu farklı yollarda farklı erişim denetimi uygulanabileceği için derleyici en çok erişimi sağlayan yolu seçer. Aşağıdaki şekle bakın.
 
-![Devralma grafiğinin yolları üzerinde erişim](../cpp/media/vc38v91.gif "devralma grafiğinin yolları üzerinde erişim") <br/>
-Devralma grafiğinin yolları üzerinde erişim
+![Devralma grafiğinin yolları boyunca erişim](../cpp/media/vc38v91.gif "Devralma grafiğinin yolları boyunca erişim") <br/>
+Devralma grafiğinin yolları boyunca erişim
 
 Şekilde `VBase` sınıfında bildirilen bir ada her zaman `RightPath` sınıfıyla ulaşılır. `RightPath``VBase`'i özel olarak bildirirken, `LeftPath``VBase`'i genel bir temel sınıf olarak bildirdiği için sağdaki yol daha fazla erişilebilirdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
+[C++ Dil Referansı](../cpp/cpp-language-reference.md)

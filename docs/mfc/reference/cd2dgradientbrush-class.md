@@ -1,5 +1,5 @@
 ---
-title: CD2DGradientBrush Class
+title: CD2DGradientBrush Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CD2DGradientBrush
@@ -18,16 +18,16 @@ helpviewer_keywords:
 - CD2DGradientBrush [MFC], m_extendMode
 - CD2DGradientBrush [MFC], m_pGradientStops
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
-ms.openlocfilehash: 2e04d714e3479224cfc4e207b70483786be33db8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 861bc32382737bd6482a3d51eb8470bf834e8508
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173385"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369224"
 ---
-# <a name="cd2dgradientbrush-class"></a>CD2DGradientBrush Class
+# <a name="cd2dgradientbrush-class"></a>CD2DGradientBrush Sınıfı
 
-CD2DLinearGradientBrush CD2DRadialGradientBrush sınıfları ve temel sınıf.
+CD2DLinearGradientBrush ve CD2DRadialGradientBrush sınıflarının taban sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,51 +39,51 @@ class CD2DGradientBrush : public CD2DBrush;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGradientBrush::CD2DGradientBrush](#cd2dgradientbrush)|CD2DGradientBrush bir nesne oluşturur.|
-|[CD2DGradientBrush:: ~ CD2DGradientBrush](#_dtorcd2dgradientbrush)|Yıkıcı. D2D gradyan fırçası nesnesi yok ediliyorken çağırılır.|
+|[CD2DGradientFırça::CD2DGradientFırça](#cd2dgradientbrush)|CD2DGradientBrush nesnesi oluşturuyor.|
+|[CD2DGradientFırça::~CD2DGradientFırça](#_dtorcd2dgradientbrush)|Yıkıcı. D2D degrade fırça nesnesi yok edildiğinde çağrılır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGradientBrush::Destroy](#destroy)|CD2DGradientBrush nesnesini yok eder. (Geçersiz kılmaları [CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|
+|[CD2DGradientBrush::Destroy](#destroy)|CD2DGradientBrush nesnesini yok eder. [(Overrides CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGradientBrush::m_arGradientStops](#m_argradientstops)|D2D1_GRADIENT_STOP yapıları dizisi.|
-|[CD2DGradientBrush::m_colorInterpolationGamma](#m_colorinterpolationgamma)|Alan hangi renkte gradyan duraklarının arasında ilişkilendirme gerçekleştirilir.|
-|[CD2DGradientBrush::m_extendMode](#m_extendmode)|[0,1] normalleştirilmiş aralığın dışında geçişin davranışı.|
-|[CD2DGradientBrush::m_pGradientStops](#m_pgradientstops)|Bir dizi D2D1_GRADIENT_STOP yapıları işaretçi.|
+|[CD2DGradientFırça::m_arGradientStops](#m_argradientstops)|D2D1_GRADIENT_STOP yapıları dizisi.|
+|[CD2DGradientFırça::m_colorInterpolationGamma](#m_colorinterpolationgamma)|Degrade durakları arasında renk enterpolasyonunun gerçekleştirildiği alan.|
+|[CD2DGradientFırça::m_extendMode](#m_extendmode)|[0,1] normalleştirilmiş aralığın dışındaki degradenin davranışı.|
+|[CD2DGradientFırça::m_pGradientStops](#m_pgradientstops)|D2D1_GRADIENT_STOP yapıları dizisi için bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
-[CD2DBrush](../../mfc/reference/cd2dbrush-class.md)
+[CD2DFırça](../../mfc/reference/cd2dbrush-class.md)
 
 `CD2DGradientBrush`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="_dtorcd2dgradientbrush"></a>  CD2DGradientBrush:: ~ CD2DGradientBrush
+## <a name="cd2dgradientbrushcd2dgradientbrush"></a><a name="_dtorcd2dgradientbrush"></a>CD2DGradientFırça::~CD2DGradientFırça
 
-Yıkıcı. D2D gradyan fırçası nesnesi yok ediliyorken çağırılır.
+Yıkıcı. D2D degrade fırça nesnesi yok edildiğinde çağrılır.
 
 ```
 virtual ~CD2DGradientBrush();
 ```
 
-##  <a name="cd2dgradientbrush"></a>  CD2DGradientBrush::CD2DGradientBrush
+## <a name="cd2dgradientbrushcd2dgradientbrush"></a><a name="cd2dgradientbrush"></a>CD2DGradientFırça::CD2DGradientFırça
 
-CD2DGradientBrush bir nesne oluşturur.
+CD2DGradientBrush nesnesi oluşturuyor.
 
 ```
 CD2DGradientBrush(
@@ -99,27 +99,27 @@ CD2DGradientBrush(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
-*gradientStops*<br/>
-Bir dizi D2D1_GRADIENT_STOP yapıları işaretçi.
+*degradeDuraklar*<br/>
+D2D1_GRADIENT_STOP yapıları dizisi için bir işaretçi.
 
-*gradientStopsCount*<br/>
-Gradyan durak sayısı gradientStops dizide belirtir. 1'e eşit veya büyük değer.
+*degradeStopsCount*<br/>
+Degrade Duraklar dizisindeki degrade duraklarının sayısını belirten 1'den büyük veya eşit bir değer.
 
 *colorInterpolationGamma*<br/>
-Alan hangi renkte gradyan duraklarının arasında ilişkilendirme gerçekleştirilir.
+Degrade durakları arasında renk enterpolasyonunun gerçekleştirildiği alan.
 
 *extendMode*<br/>
-[0,1] normalleştirilmiş aralığın dışında geçişin davranışı.
+[0,1] normalleştirilmiş aralığın dışındaki degradenin davranışı.
 
 *pBrushProperties*<br/>
-Fırça dönüşümü ve opaklık yönelik işaretçi.
+Bir fırçanın opaklığına ve dönüşümüne işaret eden bir işaretçi.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="destroy"></a>  CD2DGradientBrush::Destroy
+## <a name="cd2dgradientbrushdestroy"></a><a name="destroy"></a>CD2DGradientBrush::Destroy
 
 CD2DGradientBrush nesnesini yok eder.
 
@@ -127,7 +127,7 @@ CD2DGradientBrush nesnesini yok eder.
 virtual void Destroy();
 ```
 
-##  <a name="m_argradientstops"></a>  CD2DGradientBrush::m_arGradientStops
+## <a name="cd2dgradientbrushm_argradientstops"></a><a name="m_argradientstops"></a>CD2DGradientFırça::m_arGradientStops
 
 D2D1_GRADIENT_STOP yapıları dizisi.
 
@@ -135,25 +135,25 @@ D2D1_GRADIENT_STOP yapıları dizisi.
 CArray<D2D1_GRADIENT_STOP, D2D1_GRADIENT_STOP> m_arGradientStops;
 ```
 
-##  <a name="m_colorinterpolationgamma"></a>  CD2DGradientBrush::m_colorInterpolationGamma
+## <a name="cd2dgradientbrushm_colorinterpolationgamma"></a><a name="m_colorinterpolationgamma"></a>CD2DGradientFırça::m_colorInterpolationGamma
 
-Alan hangi renkte gradyan duraklarının arasında ilişkilendirme gerçekleştirilir.
+Degrade durakları arasında renk enterpolasyonunun gerçekleştirildiği alan.
 
 ```
 D2D1_GAMMA m_colorInterpolationGamma;
 ```
 
-##  <a name="m_extendmode"></a>  CD2DGradientBrush::m_extendMode
+## <a name="cd2dgradientbrushm_extendmode"></a><a name="m_extendmode"></a>CD2DGradientFırça::m_extendMode
 
-[0,1] normalleştirilmiş aralığın dışında geçişin davranışı.
+[0,1] normalleştirilmiş aralığın dışındaki degradenin davranışı.
 
 ```
 D2D1_EXTEND_MODE m_extendMode;
 ```
 
-##  <a name="m_pgradientstops"></a>  CD2DGradientBrush::m_pGradientStops
+## <a name="cd2dgradientbrushm_pgradientstops"></a><a name="m_pgradientstops"></a>CD2DGradientFırça::m_pGradientStops
 
-Bir dizi D2D1_GRADIENT_STOP yapıları işaretçi.
+D2D1_GRADIENT_STOP yapıları dizisi için bir işaretçi.
 
 ```
 ID2D1GradientStopCollection* m_pGradientStops;

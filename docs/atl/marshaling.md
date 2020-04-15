@@ -6,21 +6,21 @@ helpviewer_keywords:
 - marshaling
 - COM interfaces, marshaling
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-ms.openlocfilehash: 9963e261f26daa57cb58e30ffc404b431d781bfa
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 83cf29fb45347b7bfcfc1644546684f074061d25
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492038"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319349"
 ---
 # <a name="marshaling"></a>Hazırlama
 
-Hazırlama COM tekniği, tek bir işlemde bir nesne tarafından açığa çıkarılan arabirimlerin başka bir işlemde kullanılmasına izin verir. Sıralama sırasında, COM, yöntemin parametrelerini işlemlere taşınabilecek bir biçime (veya diğer makinelerde çalışan işlemlere kadar) ve bu parametrelerin paketini açmak için her ikisi de kod (veya arabirim uygulayıcısı tarafından sağlanan kodu kullanır) sağlar. diğer uçta. Benzer şekilde, COM bu aynı adımları çağrıdan geri dönüş üzerinde gerçekleştirmelidir.
+Mareşallik COM tekniği, bir işlemde bir nesne tarafından maruz kalan arabirimlerin başka bir işlemde kullanılmasını sağlar. Mareşallikte COM, bir yöntemin parametrelerini hem işlemler arasında (hem de diğer makinelerde çalışan işlemlere kablo boyunca) taşıyabilen bir biçime paketlemek ve bu parametreleri diğer uçta açmak için kod (veya arayüz uygulayıcısı tarafından sağlanan kodu kullanır) sağlar. Aynı şekilde, COM aramadan dönüşte de aynı adımları gerçekleştirmelidir.
 
 > [!NOTE]
->  Bir nesne tarafından sunulan bir arabirim nesneyle aynı işlemde kullanılırken sıralama genellikle gerekli değildir. Ancak, iş parçacıkları arasında sıralama gerekebilir.
+> Bir nesne tarafından sağlanan bir arabirim nesneyle aynı işlemde kullanılıyorsa, genellikle mareşallik gerekmez. Ancak, iş parçacıkları arasında mareşallik gerekebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM’a Giriş](../atl/introduction-to-com.md)<br/>
-[Sıralama ayrıntıları](/windows/win32/com/marshaling-details)
+[COM'a Giriş](../atl/introduction-to-com.md)<br/>
+[Marshaling Ayrıntılar](/windows/win32/com/marshaling-details)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - multiplicative operators [C++]
 - division operator
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
-ms.openlocfilehash: bc6359d3d7d2045d44af07f80b3e101da356d4b1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 791f18793b49f7d3a986c3271fddef3acef33062
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179360"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367921"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>Çarpan İşleçleri ve Modulus İşleci
 
@@ -38,19 +38,19 @@ expression % expression
 
 - Çarpma (<strong>\*</strong>)
 
-- Bölüm ( **/** )
+- Tümen**/**( )
 
-- Mod (bölmenin geri kalanı) ( **%** )
+- Modül (bölümden kalan)**%**( )
 
 Bu ikili işleçlerde soldan sağa ilişkilendirilebilirlik vardır.
 
-Çarpma işleçleri aritmetik türlerin işlenenlerini alır. Mod işleci ( **%** ), işlenenlerinin integral türünde olması gereken daha katı bir gereksinime sahiptir. (Kayan nokta bölümünün kalanını almak için, çalışma zamanı işlevini kullanın, [fmod](../c-runtime-library/reference/fmod-fmodf.md).) [Standart dönüştürmelerde](standard-conversions.md) kapsanan dönüştürmeler işlenenlere uygulanır ve sonuç, dönüştürülmüş tür olur.
+Çarpma işleçleri aritmetik türlerin işlenenlerini alır. Modül işleci**%**( ) operands integral tip olmalıdır daha sıkı bir gereksinime sahiptir. (Kayan nokta bölümünün geri kalanını almak için çalışma zamanı işlevini kullanın, [fmod](../c-runtime-library/reference/fmod-fmodf.md).) [Standart Dönüşümler](standard-conversions.md) kapsamındaki dönüşümler operandlara uygulanır ve sonuç dönüştürülmüş türe göre dir.
 
 Çarpma işleci, birinci işlenenin ikinci işlenen ile çarpımının sonucu verir.
 
 Bölme işleci, birinci işlenenin ikinci işlenene bölünmesinin sonucu verir.
 
-Mod işleci, aşağıdaki ifade tarafından verilen geri kalanı verir, burada *E1* ilk işlenen ve *E2* ikinci: *E1* -(*E1* / *E2*) \* *E2*, burada her iki işlenen de İntegral türlerdir.
+Modül operatörü, *e1'in* ilk operand olduğu ve *e2'nin* ikinci olduğu aşağıdaki ifadeile verilen geri kalanı \* verir: *e1* - (*e1* / *e2*) *e2*, her iki operandun da integral tipleri olduğu.
 
 Bir bölüm ya da mod ifadesinde 0'a bölme tanımlı değildir ve bir çalışma zamanı hatasına neden olur. Bu nedenle, aşağıdaki ifadeler tanımlanmamış, hatalı sonuçlar oluşturur:
 
@@ -62,21 +62,21 @@ f / 0.0
 Çarpma, bölme ya da mod ifadelerinde her iki işlenen de aynı işarete sahipse, sonuç pozitif olur. Aksi halde, sonuç negatif olur. Bir mod işleminin işaretinin sonucu uygulama tarafından tanımlanır.
 
 > [!NOTE]
->  Çarpma işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamadığından, çarpma işleminin sonucu dönüştürme sonrası işlenenlerin türünde gösterilmezse bilgiler kaybolabilir.
+> Çarpma işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamadığından, çarpma işleminin sonucu dönüştürme sonrası işlenenlerin türünde gösterilmezse bilgiler kaybolabilir.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C++'da, bir mod ifadesinin sonucu her zaman birinci işlenenin işaretiyle aynıdır.
 
-**SON Microsoft 'a özgü**
+**END Microsoft Özel**
 
-Hesaplanan iki tamsayı bölümünü kesin değilse ve yalnızca tek bir işlenen negatif ise, sonuç bölme işleminin vereceği tam değerden daha küçük en büyük tamsayı (büyüklükte, işaret dikkate alınmadığında) olur. Örneğin,-11/3 hesaplanan değeri-3,666666666 ' dir. Bu integral bölümünün sonucu-3 ' tir.
+Hesaplanan iki tamsayı bölümünü kesin değilse ve yalnızca tek bir işlenen negatif ise, sonuç bölme işleminin vereceği tam değerden daha küçük en büyük tamsayı (büyüklükte, işaret dikkate alınmadığında) olur. Örneğin, -11 / 3'ün hesaplanan değeri -3,66666666'dır. Bu integral bölünmenin sonucu -3'tür.
 
-Çarpma işleçleri arasındaki ilişki, kimlik (*e1* / *E2*) \* *e2* + *E1* % *E2* == *E1*tarafından verilir.
+Çarpan işleçleri arasındaki ilişki kimlik (*e1* / *e2*) \* *e2* + *e1* % *e2* == *e1*tarafından verilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki program çarpma işleçlerini gösterir. Her iki işlenenin de bölme öncesinde **float** türünde olması için `10 / 3` işleneninin açıkça **float** türüne dönüştürülmesi gerektiğini unutmayın.
+Aşağıdaki program çarpma işleçlerini gösterir. Her iki operands bölünme önce tipi `10 / 3` **float** böylece kesilme önlemek için **float** yazmak için açıkça döküm gerektiğini unutmayın.
 
 ```cpp
 // expre_Multiplicative_Operators.cpp
@@ -96,4 +96,4 @@ int main() {
 
 [İkili İşleçli İfadeler](../cpp/expressions-with-binary-operators.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Çarpma İşleçleri](../c-language/c-multiplicative-operators.md)
+[C Çarpan operatörler](../c-language/c-multiplicative-operators.md)

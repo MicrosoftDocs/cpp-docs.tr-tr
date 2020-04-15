@@ -3,156 +3,156 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 07/02/2019
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: df7cf44831781086f1b36d32ea9ed773a5dff9a4
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 9b656d4e13fe241c22a9c555d1c597016c5353d6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366815"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltme getirir. Derleyicide ve araçlarda birçok hata ve sorunu düzelttik. Bu sorunların birçoğu, müşteriler tarafından [bir sorun bildir](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) ve **geri bildirim gönder**altında [bir öneri](https://developercommunity.visualstudio.com/spaces/62/index.html) seçenekleri sunarak gönderilmiştir. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio 'nun tüm yenilikleri hakkında daha fazla bilgi için [Visual studio 2019 'deki](/visualstudio/ide/whats-new-visual-studio-2019)yenilikler sayfasını ziyaret edin. Visual Studio 2017 ' C++ deki yenilikler hakkında daha fazla bilgi için bkz. [Visual Studio 2017 ' C++ deki](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017)yenilikler. Visual Studio 2015 ve önceki sürümlerindeki yenilikleri C++ hakkında daha fazla bilgi için bkz. [Visual C++ Studio 'nun yenilikler 2003-2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltme getiriyor. Derleyici ve araçlardaki birçok hatayı ve sorunları düzelttin. Bu sorunların çoğu, müşteriler tarafından [Bir Sorun Bildir](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) ve **Geri Bildirim Gönder**altında Öneri seçenekleri [sağlayın](https://developercommunity.visualstudio.com/spaces/62/index.html) aracılığıyla gönderildi. Hataları bildirdiğiniz için teşekkür ederiz! Tüm Visual Studio'daki yenilikler hakkında daha fazla bilgi için [Visual Studio 2019'daki yenilikleri](/visualstudio/ide/whats-new-visual-studio-2019)ziyaret edin. Visual Studio 2017'de C++ için yenilikler hakkında bilgi için [Visual Studio 2017'de C++ için yeniliklere](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017)bakın. Visual Studio 2015 ve önceki sürümlerde C++ için yenilikler hakkında bilgi için [Visual C++ What's New 2003 ile 2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)'e bakın.
 
 ## <a name="c-compiler"></a>C++ derleyicisi
 
-- C++ 17 özellikleri ve doğruluk düzeltmeleri için geliştirilmiş destek, ayrıca modüller ve eş yordamlar gibi C++ 20 özellikleri için deneysel destek. Ayrıntılı bilgi için bkz [ C++ . Visual Studio 2019 uyumluluk geliştirmeleri](cpp-conformance-improvements.md).
+- C++17 özellikleri ve doğruluk düzeltmeleri için geliştirilmiş destek ve modüller ve ortak yordamlar gibi C++20 özellikleri için deneysel destek. Ayrıntılı bilgi için Visual [Studio 2019'da C++ Uygunluk Geliştirmeleri'ne](cpp-conformance-improvements.md)bakın.
 
-- `/std:c++latest` seçeneği artık, üç yönlü karşılaştırma için C++ 20 işleci \<= > ("Spaceship") için ilk destek dahil olmak üzere tam olarak tamamlanmamış C++ 20 özelliklerini içerir.
+- Bu `/std:c++latest` seçenek, c++20 işleci \<=> ("uzay gemisi") için üç yönlü karşılaştırma için ilk destek de dahil olmak üzere, mutlaka tam olmayan C++20 özelliklerini içerir.
 
-- C++ Derleyici anahtarı `/Gm` artık kullanım dışıdır. Açıkça tanımlanmışsa, derleme betiklerinizde `/Gm` anahtarını devre dışı bırakmayı düşünün. Ancak, "uyarıları hata olarak değerlendir" (`/WX`) kullanılırken bir hata olarak değerlendirilmediği için, `/Gm`için kullanımdan kaldırma uyarısını güvenle yoksayabilirsiniz.
+- C++ derleyici `/Gm` anahtarı artık amortismana hazır. Açıkça `/Gm` tanımlanmışsa, yapı komut dosyalarınızdaki anahtarı devre dışı bırakmayı düşünün. Ancak, "Uyarıları hata olarak ele alırken `/Gm`hata olarak kabul edilmediğinden" için amortisman uyarısını da`/WX`güvenle yok sayabilirsiniz.
 
-- MSVC, C++ 20 Standart taslağındaki `/std:c++latest` bayrağı altında özellikleri uygulamaya başladıktan sonra, `/std:c++latest` artık `/clr` (tüm özellikler), `/ZW`ve `/Gm`ile uyumsuzdur. Visual Studio 2019 ' de, `/clr`, `/ZW`veya `/Gm` ile derlerken `/std:c++17` veya `/std:c++14` modlarını kullanın (ancak önceki madde işaretine bakın).
+- `/std:c++latest` MSVC bayrağın altında C++20 standart taslak özellikleri `/std:c++latest` uygulamaya başlar gibi, şimdi (tüm tatlar) ile `/clr` uyumsuz, `/ZW`ve `/Gm`. Visual `/std:c++17` Studio 2019'da `/std:c++14` , , `/clr` `/ZW`veya (önceki `/Gm` madde işaretini görmek) ile derlerken kullanın veya modları kullanın.
 
 - C++ konsol ve masaüstü uygulamaları için önceden derlenmiş üst bilgiler artık varsayılan olarak oluşturulmuyor.
 
-### <a name="codegen-security-diagnostics-and-versioning"></a>CodeGen, güvenlik, tanılama ve sürüm oluşturma
+### <a name="codegen-security-diagnostics-and-versioning"></a>Codegen, güvenlik, tanılama ve sürüm
 
-Spectre varyant 1 (CVE-2017-5753) için azaltma yardımı sağlamak üzere `/Qspectre` ile iyileştirilmiş analiz. Daha fazla bilgi için bkz. [Spectre AZALTMALARı MSVC](https://devblogs.microsoft.com/cppblog/spectre-mitigations-in-msvc/).
+Spectre Variant `/Qspectre` 1 (CVE-2017-5753) için azaltma yardımı sağlamak için geliştirilmiş analiz. Daha fazla bilgi için [MSVC'deki Spectre Azaltıcı Etkenler'e](https://devblogs.microsoft.com/cppblog/spectre-mitigations-in-msvc/)bakın.
 
-## <a name="c-standard-library-improvements"></a>C++Standart Kitaplık geliştirmeleri
+## <a name="c-standard-library-improvements"></a>C++ standart kitaplık iyileştirmeleri
 
-- Ek C++ 17 ve C++ 20 kitaplığı özelliklerinin ve doğruluk düzeltmelerinin uygulanması. Ayrıntılı bilgi için bkz [ C++ . Visual Studio 2019 uyumluluk geliştirmeleri](cpp-conformance-improvements.md).
+- Ek C++17 ve C++20 kitaplık özelliklerinin ve doğruluk düzeltmelerinin uygulanması. Ayrıntılı bilgi için Visual [Studio 2019'da C++ Uygunluk Geliştirmeleri'ne](cpp-conformance-improvements.md)bakın.
 
-- Gelişmiş okunabilirlik için C++ standart kitaplık başlıklarına Clang-Format uygulandı.
+- Clang-Format, daha iyi okunabilirlik için C++ standart kitaplık üstbilgilerine uygulanmıştır.
 
-- Visual Studio artık için C++yalnızca kendi kodum desteklediğinden, standart kitaplığın artık `std::function` için özel makineler sağlaması gerekmez ve aynı etkiyi elde etmek için `std::visit`. Bu makinelerin büyük ölçüde Kullanıcı tarafından görülemeyen etkileri yoktur. Tek bir istisna, derleyicinin artık \<type_traits > veya \<varyant > 15732480 veya 16707566 ' deki sorunları belirten tanılamayı üretmeyecektir.
+- Visual Studio artık C++için Just My Code'u desteklediği için, standart `std::function` `std::visit` kitaplığın artık aynı etkiyi elde etmek için özel makineler sağlaması na gerek yok. Bu makinenin çıkarılmasının büyük ölçüde kullanıcı tarafından görülebilen bir etkisi yoktur. Bir istisna derleyici artık satır 15732480 veya type_traits> veya \< \<varyant> 16707566 üzerinde sorunları gösteren tanılama üretecek olmasıdır.
 
-## <a name="performancethroughput-improvements-in-the-compiler-and-standard-library"></a>Derleyici ve standart kitaplıkta performans/aktarım hızı iyileştirmeleri
+## <a name="performancethroughput-improvements-in-the-compiler-and-standard-library"></a>Derleyici ve standart kitaplıktaki performans/iş iş geliştirmeleri
 
-- Bağlayıcının dosya g/ç 'yi işleme şekli ve PDB türü birleştirme ve oluşturma sırasında bağlantı süresi de dahil olmak üzere derleme işleme iyileştirmeleri.
+- Bağlayıcının Dosya G/Ç'yi işleme şekli ve PDB türü birleştirme ve oluşturmada bağlantı süresi de dahil olmak üzere iş yaratma geliştirmeleri oluşturun.
 
-- OpenMP SıMD vektörleştirme için temel destek eklendi. Bunu, yeni derleyici anahtarı `-openmp:experimental`kullanarak etkinleştirebilirsiniz. Bu seçenek, büyük olasılıkla vektörleştirilmiş `#pragma omp simd` için açıklama eklenmiş döngülere izin verir. Vektörleştirme garanti edilmez ve vektörleştirilmiş ancak vektörleştirilmemiş döngüler bildirilen bir uyarı alır. SıMD yan tümceleri desteklenmez; Bunlar yok sayılır ve bir uyarı bildirilir.
+- OpenMP SIMD vektörelleştirme için temel destek eklendi. Yeni derleyici anahtarını `-openmp:experimental`kullanarak etkinleştirebilirsiniz. Bu seçenek, açıklamalı döngülerin `#pragma omp simd` potansiyel olarak vektörelleştirilmesine olanak tanır. Vektörelleştirme garanti edilmez ve döngüler açıklamalı ancak vektörel olmayan bir uyarı bildirilir. SIMD yan tümceleri desteklenmez; bunlar göz ardı edilir ve bir uyarı bildirilir.
 
-- `-Ob2`daha agresif bir sürümü olan yeni bir satır içi komut satırı anahtarı `-Ob3`eklendi. `-O2` (hızı hız için en iyi hale getirin) varsayılan olarak `-Ob2` de gerektirir. Derleyicinin satır içi olarak yeterince gözetmediğini fark ederseniz `-O2 -Ob3`geçirmeyi düşünün.
+- Daha agresif bir versiyonu olan `-Ob3`yeni bir satır içi `-Ob2`komut satırı anahtarı eklendi. `-O2`(hız için ikili optimize) `-Ob2` hala varsayılan olarak ima eder. Derleyicinin yeterince agresif bir şekilde hizalamadığını fark ederseniz, geçmeyi `-O2 -Ob3`düşünün.
 
-- Matematik kitaplığı işlevlerine yapılan çağrılar ve tamsayı bölme gibi diğer diğer işlemler ile döngülerin birlikte vektörleştirilmesini desteklemek için, kısa vektör matematik kitaplığı (SVML) iç işlevlerine yönelik destek ekledik. Bu işlevler 128 bit, 256 bit veya 512 bit vektör eşdeğerlerini hesaplar. Desteklenen işlevlerin tanımları için [Intel Intrinsic Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#!=undefined&techs=SVML) belgesine bakın.
+- Matematik kitaplığı işlevlerine yapılan çağrılar ve sonda bölümü gibi diğer bazı işlemlerle döngülerin el vektörelleştirilmesini desteklemek için, Kısa Vektör Matematik Kitaplığı (SVML) içsel işlevleri için destek ekledik. Bu işlevler 128 bit, 256-bit veya 512-bit vektör eşdeğerlerini hesaplar. Desteklenen işlevlerin tanımları için [Intel Intrinsic Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#!=undefined&techs=SVML) belgesine bakın.
 
 - Yeni ve geliştirilmiş iyileştirmeler:
 
-  - Hem float hem de Integer formlarında SıMD vektör iç bilgileri kullanan ifadeler için sabit katlamalı ve aritmetik basitleştirmeleri.
+  - SimD vektör içsellerini kullanan ifadeler için hem şamandıra hem de tamsayı formları için sürekli katlama ve aritmetik basitleştirmeler.
 
-  - Her zaman doğru veya yanlış olarak kanıtlanmış olan dalları kaldırmak için denetim akışından (if/else/Switch deyimleri) bilgi ayıklamasına yönelik daha güçlü bir analizler.
+  - Her zaman doğru veya yanlış olduğu kanıtlanmış dalları kaldırmak için kontrol akışından (if/else/switch deyimleri) bilgi ayıklamak için daha güçlü bir analiz.
 
-  - SSE2 vektör yönergeleri kullanılarak geliştirilmiş memset kullanımı.
+  - SSE2 vektör yönergelerini kullanmak için geliştirilmiş memset unrolling.
 
-  - Özellikle değere göre geçen programlar için C++ , çok sayıda struct/Class kopyasının daha iyi kaldırılması.
+  - Özellikle değere göre geçen C++ programları için yararsız yapı/sınıf kopyalarının geliştirilmiş kaldırması.
 
-  - `std::copy` veya `std::vector` ve `std::string` oluşturma gibi `memmove`kullanarak kodun iyileştirilmiş iyileştirmesi.
+  - `memmove`Kod kullanımının geliştirilmiş optimizasyonu `std::copy` , `std::vector` `std::string` gibi veya ve inşaat.
 
-- Standart kitaplığın, doğrudan dahil edilmemiş parçalar derlenmekten kaçınmak için standart kitaplık fiziksel tasarımını en iyi duruma getirilmiştir. Bu değişiklik, yalnızca \<vektör > yarısını içeren boş bir dosyanın derleme süresini keser. Sonuç olarak, daha önce dolaylı olarak dahil edilen üst bilgiler için `#include` yönergeleri eklemeniz gerekebilir. Örneğin, `std::out_of_range` kullanan kodun artık `#include <stdexcept>`eklemesi gerekebilir. Stream ekleme işlecini kullanan kodun artık `#include <ostream>`eklemesi gerekebilir. Avantaj, yalnızca \<stdexcept > veya \<ostream > bileşenleri kullanan çeviri birimlerinin, bunları derlemek için üretilen iş maliyetini ödemesidir.
+- Standart kitaplığın doğrudan dahil olmayan bölümlerini derlememek için standart kitaplık fiziksel tasarımı optimize edilmiştir. Bu değişiklik, yalnızca \<vektör> içeren boş bir dosyanın oluşturma süresini yarıya indirdi. Sonuç olarak, daha önce `#include` dolaylı olarak dahil edilmiş üstbilgi için yönergeler eklemeniz gerekebilir. Örneğin, kullanan `std::out_of_range` kodun artık ekleyebileceği `#include <stdexcept>`. Akış ekleme işleci kullanan kodun artık eklemesi `#include <ostream>`gerekebilir. Bunun yararı, yalnızca stdhariç> \<veya \<ostream> bileşenlerikullanan çeviri birimlerinin bunları derlemek için iş maliyeti ödemesidir.
 
-- `if constexpr`, gelişmiş aktarım hızı ve kopyalama işlemlerinde daha fazla kod boyutu, ters ve döndürme gibi permütasyon ve paralel algoritmalar kitaplığındaki daha fazla yere uygulandı.
+- `if constexpr`kopya işlemlerinde gelişmiş iş ortası ve azaltılmış kod boyutu, ters çevirme ve döndürme gibi permütasyonlar ve paralel algoritmalar kitaplığında daha fazla yerde uygulanmıştır.
 
-- Standart kitaplık artık, C++ 14 modunda bile derleme sürelerini azaltmak için `if constexpr` dahili olarak kullanır.
+- Standart kitaplık artık `if constexpr` C++14 modunda bile derleme sürelerini azaltmak için dahili olarak kullanılır.
 
-- Paralel algoritmalar kitaplığı için çalışma zamanı dinamik bağlama algılaması, artık işlev işaretçisi dizisini depolamak için bir sayfanın tamamını kullanmaz. Bu belleği salt okunurdur olarak işaretlemek artık güvenlik amaçları için uygun değildir.
+- Paralel algoritmalar kitaplığı için çalışma zamanı dinamik bağlantı algılaması artık işlev işaretçisi dizisini depolamak için tüm sayfayı kullanmaz. Bu bellek salt okunur işaretleme artık güvenlik amaçları için ilgili olarak kabul edildi.
 
-- `std::thread`Oluşturucusu artık iş parçacığının başlamasını beklemez ve artık temel alınan C Kitaplığı `_beginthreadex` ve sağlanan çağrılabilir nesne arasında işlev çağrılarının birçok katmanını eklememe. Daha önce `std::thread`, yalnızca 3 ' e (yalnızca `std::invoke`) indirgenmiş olan `_beginthreadex` ve sağlanan çağrılabilir nesne arasında 6 işlev koyun. Bu değişiklik Ayrıca sistem saatinin `std::thread` oluşturulduğu anda değişmesi durumunda bir `std::thread` oluşturucusunun askıda kalması halinde, kesin bir zamanlama hatasını giderir.
+- `std::thread`'nin oluşturucusu artık iş parçacığının başlamasını beklemez ve artık temel C kitaplığı `_beginthreadex` ile sağlanan çağrılabilir nesne arasında bu kadar çok işlev katmanı eklemez. Daha `std::thread` önce sadece `_beginthreadex` 3 (2'si sadece) `std::invoke`düşürüldü ve verilen çağrılabilir nesne arasında 6 işlevleri koymak. Bu değişiklik, sistem saati oluşturulduğu `std::thread` anda değiştirilirse bir oluşturucunun asıldığı belirsiz bir zamanlama hatasını `std::thread` da çözer.
 
-- `std::hash<std::filesystem::path>`uygularken tanıtıldığımız `std::hash` bir performans gerileme düzeltildi.
+- Uygularken sunduğumuz performans `std::hash` regresyonu düzeltildi. `std::hash<std::filesystem::path>`
 
-- Standart kitaplık artık, doğruluk düzeyine ulaşmak için birkaç yerde catch blokları yerine Yıkıcılar kullanır. Bu değişiklik, daha iyi hata ayıklayıcı etkileşimine neden olur: etkilenen konumlarda standart kitaplık aracılığıyla oluşturduğunuz özel durumlar artık, yeniden oluşturma işleminden önce orijinal throw sitesinden oluşturulmuş olarak gösterilir. Tüm standart kitaplık yakalama blokları ortadan kaldırılmıştır; MSVC 'in sonraki sürümlerinde, catch bloklarının sayısının azaltıldığı tahmin ederiz.
+- Standart kitaplık artık doğruluğa ulaşmak için çeşitli yerlerdeki blokları yakalamak yerine yıkıcılar kullanır. Bu değişiklik daha iyi hata ayıklama etkileşimi ile sonuçlanır: Etkilenen konumlardaki standart kitaplığı atdığınız özel durumlar, artık yeniden atmamız yerine orijinal atma sitelerinden atılmış gibi görünür. Tüm standart kitaplık yakalama blokları ortadan kaldırılmamamıştır; msvc'nin sonraki sürümlerinde yakalama bloklarının sayısının azaltılmasını bekliyoruz.
 
-- Noexcept işlevinin içindeki koşullu bir throw 'un neden olduğu `std::bitset`, oluşturma yolu düzenleme tarafından düzeltildi.
+- Noexcept fonksiyonunun `std::bitset` içindeki koşullu bir fırlatmanın neden olduğu suboptimal codegen, fırlatma yolunun çarpanflanmasıyla düzeltildi.
 
-- `std::list` ve `std::unordered_*` ailesi, daha fazla yerde hata ayıklama olmayan yineleyiciler kullanır.
+- Ve `std::list` `std::unordered_*` aile daha fazla yerde dahili olarak hata ayıklama olmayan yinelemeler kullanın.
 
-- Birkaç `std::list` üye, liste düğümlerini serbest bırakmak ve yeniden konumlandırmak yerine mümkün olduğunca yeniden kullanmak üzere değiştirilmiştir. Örneğin, zaten 3 boyutunda bir `list<int>` verildiğinde, bir `assign(4, 1729)` çağrısı artık ilk 3 liste düğümündeki boyutları geçersiz kılar ve 1729 değerine sahip bir yeni liste düğümü ayırır.
+- Birkaç `std::list` üye, liste düğümlerini ayırmak ve yeniden ayırmak yerine mümkün olan yerlerde yeniden kullanmak üzere değiştirildi. Örneğin, zaten `list<int>` 3 boyutu olan bir çağrı verildiğinde, şimdi ilk 3 liste düğümlerinde ints üzerine yazmak için `assign(4, 1729)` bir çağrı ve değeri 1729 ile yeni bir liste düğümü ayırır.
 
-- `erase(begin(), end())` için tüm standart kitaplık çağrıları `clear()`olarak değiştirilmiştir.
+- Tüm standart kitaplık `erase(begin(), end())` çağrıları `clear()`' na değiştirildi.
 
-- `std::vector` artık bazı durumlarda öğeleri daha verimli bir şekilde başlatır ve siler.
+- `std::vector`şimdi bazı durumlarda öğeleri daha verimli bir şekilde başharfve siler.
 
-- Daha iyi hale getirmek için `std::variant` iyileştirmeler, daha iyi üretilen koda neden olur. Kod satır içi `std::visit`artık çok daha iyidir.
+- Daha optimize `std::variant` edici dostu hale getirmek için iyileştirmeler, daha iyi oluşturulan kod elde. Kod inlining şimdi çok `std::visit`daha iyi .
 
 ## <a name="c-ide"></a>C++ IDE
 
 ### <a name="live-share-c-support"></a>Live Share C++ desteği
 
-[Live share](/visualstudio/liveshare/) artık C++, Visual Studio veya Visual Studio Code kullanan geliştiricilerin gerçek zamanlı olarak işbirliği yapmasına olanak sağlar. Daha fazla bilgi için bkz [ C++. duyurusu Live Share: gerçek zamanlı paylaşım ve işbirliği](https://devblogs.microsoft.com/cppblog/cppliveshare/)
+[Live Share](/visualstudio/liveshare/) artık C++'ı destekleyerek Visual Studio veya Visual Studio Code'u kullanan geliştiricilerin gerçek zamanlı olarak işbirliği yapmasına olanak sağlıyor. Daha fazla bilgi [için C++: Gerçek Zamanlı Paylaşım ve İşbirliği için Canlı Paylaşım Duyurusu'na](https://devblogs.microsoft.com/cppblog/cppliveshare/) bakın
 
-### <a name="intellicode-for-c"></a>İçin ıntellicodeC++
+### <a name="intellicode-for-c"></a>C++ için IntelliCode
 
-##### <a name="visual-studio-2019-version-161"></a>Visual Studio 2019 sürüm 16,1
+##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
-Intellicode, tamamlanma listenizin en üstünde en büyük olasılıkla kullandıklarınızı yerleştirmek için kendi kapsamlı eğitimini ve kod bağlamını kullanan isteğe bağlı bir uzantıdır. Genellikle listede aşağı kaydırma gereğini ortadan kaldırabilir. İçin C++, standart kitaplık gibi popüler kitaplıkları kullanırken ıntellicode en fazla yardımı sunar. Bu, yükleyicide bir iş yükü bileşeni olarak sunulmaktadır. Daha fazla bilgi için bkz. [AI destekli kod tamamlama önerileri ıntellicode C++ aracılığıyla sunulur](https://devblogs.microsoft.com/cppblog/cppintellicode/).
+IntelliCode, tamamlama listenizin en üstünde kullanabileceğiniz şeyi koymak için kendi kapsamlı eğitimini ve kod bağlamınızı kullanan isteğe bağlı bir uzantıdır. Genellikle listede aşağı kaydırma ihtiyacını ortadan kaldırabilir. C++'da IntelliCode, standart kitaplık gibi popüler kitaplıkları kullanırken en çok yardımı sağlar. Yükleyicide iş yükü bileşeni olarak kullanılabilir. Daha fazla bilgi için, [IntelliCode üzerinden C++'a Gel'e AI Destekli Kod Tamamlama Önerileri'ne](https://devblogs.microsoft.com/cppblog/cppintellicode/)bakın.
 
 ### <a name="template-intellisense"></a>Şablon IntelliSense
 
-**Şablon çubuğu** artık, kalıcı bir pencere yerine bir **pencere göz atma** Kullanıcı arabirimini kullanır, iç içe geçmiş şablonları destekler ve varsayılan bağımsız değişkenleri **göz atma penceresinde**önceden doldurur. Daha fazla bilgi için bkz. [Visual Studio 2019 Preview 2 Için şablon IntelliSense geliştirmeleri](https://devblogs.microsoft.com/cppblog/template-intellisense-improvements-for-visual-studio-2019-preview-2/). **Şablon çubuğunda** **en son kullanılan** bir açılan liste, önceki örnek bağımsız değişken kümeleri arasında hızlıca geçiş yapmanızı sağlar.
+**Şablon Çubuğu** artık modal pencere yerine **Peek Pencere** Arabirimi'ni kullanır, iç içe olan şablonları destekler ve varsayılan bağımsız değişkenleri **Peek Penceresi'ne**önceden doldurur. Daha fazla bilgi için Visual [Studio 2019 Önizleme 2 için Şablon IntelliSense Geliştirmeleri'ne](https://devblogs.microsoft.com/cppblog/template-intellisense-improvements-for-visual-studio-2019-preview-2/)bakın. **Şablon Çubuğu'nda** **en son kullanılan** açılır bırakma, önceki örnek bağımsız değişken kümeleri arasında hızlı bir şekilde geçiş yapmanızı sağlar.
 
-### <a name="new-start-window-experience"></a>Yeni başlangıç penceresi deneyimi
+### <a name="new-start-window-experience"></a>Yeni Başlangıç penceresi deneyimi
 
-IDE 'yi başlatırken, son projeleri açma, kaynak denetiminden kod kopyalama, yerel kodu çözüm veya klasör olarak açma veya yeni bir proje oluşturma seçenekleri içeren yeni bir başlangıç penceresi görüntülenir. Yeni proje iletişim kutusu ayrıca arama sırasında, filtrelenebilir bir deneyime de sahiptir.
+IDE'yi başlatırken, yeni bir Başlat penceresi, son projeleri açmak, kaynak denetiminden kodu klonlama, yerel kodu çözüm veya klasör olarak açma veya yeni bir proje oluşturma seçenekleriyle birlikte görüntülenir. Yeni Proje iletişim kutusu, ilk arama yla ilgili, filtrelenebilir bir deneyime dönüştürülür.
 
 ### <a name="new-names-for-some-project-templates"></a>Bazı proje şablonları için yeni adlar
 
-Çeşitli proje şablonu adlarını ve açıklamalarını güncelleştirilmiş yeni proje iletişim kutusuyla sığacak şekilde değiştirdik.
+Güncelleştirilmiş Yeni Proje iletişim kutusuna uyacak şekilde birkaç proje şablonu adını ve açıklamasını değiştirdik.
 
-### <a name="various-productivity-improvements"></a>Çeşitli verimlilik geliştirmeleri
+### <a name="various-productivity-improvements"></a>Çeşitli verimlilik iyileştirmeleri
 
-Visual Studio 2019, kodlamayı daha kolay ve daha sezgisel hale getirmeye yardımcı olacak aşağıdaki özellikleri içerir:
+Visual Studio 2019, kodlamayı daha kolay ve sezgisel hale getirmeye yardımcı olacak aşağıdaki özellikleri içerir:
 
-- İçin hızlı düzeltmeler:
-  - Eksik #include Ekle
-  - Nullptr için NULL
-  - Eksik noktalı virgül Ekle
-  - Eksik ad alanı veya kapsamı çözümle
-  - Hatalı yöneltme işlenenlerini (\* & ve \*&) değiştirin
-- Kapatma küme ayracı üzerine gelindiğinde bir blok için hızlı bilgi
-- Üst bilgi/kod dosyasına göz at
-- #İnclude ' de tanımına git dosyayı açar
+- Hızlı düzeltmeler:
+  - Eksik #include ekle
+  - NULL için nullptr
+  - Eksik semicolon ekle
+  - Eksik ad alanını veya kapsamı çözme
+  - Kötü yönlendirme operands\* değiştirin ( \*& ve & için )
+- Kapatma ayracında gezinmek için bir blok için Hızlı Bilgi
+- Peek Üstbilgi / Kod Dosyası
+- Dosyayı açar #include Tanım'a git
 
-Daha fazla bilgi için bkz [ C++ . Visual Studio 2019 Preview 2 ' de üretkenlik iyileştirmeleri](https://devblogs.microsoft.com/cppblog/c-productivity-improvements-in-visual-studio-2019-preview-2/).
+Daha fazla bilgi için Visual [Studio 2019 Önizleme 2'de C++ Verimlilik Geliştirmeleri'ne](https://devblogs.microsoft.com/cppblog/c-productivity-improvements-in-visual-studio-2019-preview-2/)bakın.
 
-### <a name="quickinfo-improvements"></a>Hızlı bilgi iyileştirmeleri
+### <a name="quickinfo-improvements"></a>QuickInfo iyileştirmeleri
 
-##### <a name="visual-studio-2019-version-161"></a>Visual Studio 2019 sürüm 16,1
+##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
-Hızlı Bilgi ipucu artık Düzenleyicinizde anlam renklendirme için uyar. Ayrıca, vurgulanan kod yapısı hakkında daha fazla bilgi edinmek için çevrimiçi belgeleri arayacak yeni bir **arama çevrimiçi** bağlantısına sahiptir. Kırmızı renkli bir kod için, hızlı bilgi tarafından sağlanmış olan bağlantı, hatayı çevrimiçi olarak arar. Bu şekilde, iletiyi tarayıcınıza yeniden yazmanız gerekmez. Daha fazla bilgi için bkz. [Visual Studio 2019 'de hızlı bilgi iyileştirmeleri: renklendirme ve çevrimiçi arama](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/).
+Hızlı Bilgi araç ucu artık düzenleyicinizin anlamsal renklendirmeye saygı duyar. Ayrıca, havada gezinilen kod yapısı hakkında daha fazla bilgi edinmek için çevrimiçi dokümanlar arayacak yeni bir **Arama Çevrimiçi** bağlantısı vardır. Kırmızı dalgalı kod için, Hızlı Bilgi tarafından sağlanan bağlantı hata çevrimiçi arayacaktır. Bu şekilde iletiyi tarayıcınıza yeniden yazmanız gerekmez. Daha fazla bilgi için [Visual Studio 2019: Colorization and Search Online'da Hızlı Bilgi Geliştirmeleri'ne](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/)bakın.
 
-### <a name="intellicode-available-in-c-workload"></a>C++ Iş yükünde ıntellicode kullanılabilir
+### <a name="intellicode-available-in-c-workload"></a>IntelliCode C++ iş yükü nde kullanılabilir
 
-##### <a name="visual-studio-2019-version-161"></a>Visual Studio 2019 sürüm 16,1
+##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
-Intellicode artık iş yüküyle **Masaüstü geliştirmede C++**  isteğe bağlı bir bileşen olarak dağıtılır. Daha fazla bilgi için bkz [. C++ gelişmiş ıntellicode artık Visual Studio 2019 ile birlikte gelir](https://devblogs.microsoft.com/cppblog/improved-c-intellicode-now-ships-with-visual-studio-2019/).
+IntelliCode artık C++ iş **yüküyle Masaüstü Geliştirme'de** isteğe bağlı bir bileşen olarak yer alıyor. Daha fazla bilgi için Visual [Studio 2019 ile Geliştirilmiş C++ IntelliCode now Ships for Visual Studio 2019'a](https://devblogs.microsoft.com/cppblog/improved-c-intellicode-now-ships-with-visual-studio-2019/)bakın.
 
 ## <a name="cmake-support"></a>CMake desteği
 
-- CMake 3,14 desteği
+- CMake 3.14 desteği
 
-- Visual Studio artık Cmakeguı, özelleştirilmiş meta derleme sistemleri veya CMake. exe ' yi çağıran derleme betikleri gibi dış araçlar tarafından oluşturulan mevcut CMake önbelleklerini açabilir.
+- Visual Studio artık CMakeGUI, özelleştirilmiş meta-yapı sistemleri gibi harici araçlar tarafından oluşturulan mevcut CMake önbellekleri açabilir veya cmake.exe kendilerini çağırmak komut dosyaları oluşturabilirsiniz.
 
 - Geliştirilmiş IntelliSense performansı.
 
-- Yeni bir ayar Düzenleyicisi, CMakeSettings. json dosyasını el ile düzenlemeyle ilgili bir alternatif sağlar ve Cmakeguı ile bir eşlik sağlar.
+- Yeni ayarlar düzenleyicisi CMakeSettings.json dosyasını el ile düzenlemeye bir alternatif sağlar ve CMakeGUI ile bazı parite sağlar.
 
 - Visual Studio, Linux makinenizde uyumlu bir CMake sürümü olup olmadığını algılayarak Linux üzerinde CMake ile C++ geliştirmenizin önyüklemesine yardımcı oluyor. Uyumlu bir sürüm yoksa, sizin için yüklemeyi öneriyor.
 
-- CMakeSettings içinde eşleşmeyen mimariler veya uyumsuz CMake Oluşturucu ayarları gibi uyumsuz ayarlar, JSON düzenleyicisinde dalgalı çizgiler ve hata listesindeki hataları gösterir.
+- Uyumsuz mimariler veya uyumsuz CMake jeneratör ayarları gibi CMakeSettings uyumsuz ayarları, JSON düzenleyicisinde dalgalı ve hata listesindeki hataları gösterir.
 
 - `vcpkg integrate install` çalıştırıldıktan sonra IDE'de açılmış olan CMake projeleri için vcpkg araç zinciri otomatik olarak algılanıyor ve etkinleştiriliyor. Bu davranış, CMakeSettings'de boş bir araç zinciri dosyası belirtilerek kapatılabilir.
 
@@ -160,228 +160,228 @@ Intellicode artık iş yüküyle **Masaüstü geliştirmede C++**  isteğe bağl
 
 - CMake projelerinde statik analiz uyarıları şimdi arka planda işlenebiliyor ve düzenleyicide görüntülenebiliyor.
 
-- CMake projeleri ve Visual Studio 'nun derleme ilerlemesi Kullanıcı arabirimine yönelik destek için ' begin' ve ' End ' iletilerini daha net hale getirin ve yapılandırın. Ayrıca, **araçlar > seçeneklerinde** CMake yapı ve yapılandırma çıkış penceresi iletilerinin ayrıntı düzeyini özelleştirmek için artık bir CMake ayrıntı ayarı vardır.
+- CMake projeleri için 'başlangıç' ve 'son' iletilerini daha net oluşturun ve yapılandırın ve Visual Studio'nun geliştirme ilerleme UI'si için destek olun. Ayrıca, Artık Araçlar > Seçenekleri'nde, Çıkış **Tools > Options** Penceresinde CMake yapı ve yapılandırma iletilerinin ayrıntı düzeyini özelleştirmek için bir CMake ayrıntılı ayar var.
 
-- CMake komut satırını el ile değiştirmeden araç zincirlerini belirtmek için `cmakeToolchain` ayarı artık CMakeSettings. json ' da desteklenir.
+- Ayar `cmakeToolchain` artık CMakeSettings.json'da cmake komut satırını el ile değiştirmeden araç zincirlerini belirtmek için desteklenir.
 
-- Yeni bir **Yapı Oluştur** Menü kısayolu **CTRL + SHIFT + B**.
+- Yeni Yapı **Tüm** menü kısayolu **Ctrl+Shift+B**.
 
-##### <a name="visual-studio-2019-version-161"></a>Visual Studio 2019 sürüm 16,1
+##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
-- Clang/LLVM ile CMake projelerini düzenlemeyle, oluşturmaya ve hata ayıklamaya yönelik tümleşik destek. Daha fazla bilgi için bkz. [Visual Studio 'Da Clang/LLVM desteği](https://devblogs.microsoft.com/cppblog/clang-llvm-support-in-visual-studio/).
+- Clang/LLVM ile CMake projelerinin düzenlenmesi, oluşturulması ve hata ayıklanması için entegre destek. Daha fazla bilgi için [Visual Studio'da Clang/LLVM Desteği'ne](https://devblogs.microsoft.com/cppblog/clang-llvm-support-in-visual-studio/)bakın.
 
-## <a name="linux-and-the-windows-subsystem-for-linux"></a>Linux için Linux ve Windows alt sistemi
+## <a name="linux-and-the-windows-subsystem-for-linux"></a>Linux ve Linux için Windows Alt Sistemi
 
-##### <a name="visual-studio-2019-version-161"></a>Visual Studio 2019 sürüm 16,1
+##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
-- Linux ve CMake platformlar arası projelerde [Addresstemizleme (ASan)](https://github.com/google/sanitizers/wiki/AddressSanitizer) desteği. Daha fazla bilgi için bkz. [Visual Studio 2019 ' de Linux Iş yükü Için Addresstemizleme (ASan)](https://devblogs.microsoft.com/cppblog/addresssanitizer-asan-for-the-linux-workload-in-visual-studio-2019/).
+- Linux ve CMake platform ötesi projelerde [AddressSanitizer (ASan)](https://github.com/google/sanitizers/wiki/AddressSanitizer) desteği. Daha fazla bilgi için [Visual Studio 2019'da Linux İş Yükü için AddressSanitizer (ASan)](https://devblogs.microsoft.com/cppblog/addresssanitizer-asan-for-the-linux-workload-in-visual-studio-2019/)adresine bakın.
 
-- Linux için Windows alt sistemi ( C++ WSL) ile birlikte kullanmak Için tümleşik Visual Studio desteği. Daha fazla bilgi için bkz [ C++ . Visual Studio 2019 ve Linux için Windows alt sistemi (WSL)](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/).
+- Linux için Windows Alt Sistemi (WSL) ile C++ kullanmak için entegre Visual Studio desteği. Daha fazla bilgi için Visual [Studio 2019 ile C++ ve Linux için Windows Alt Sistemi (WSL) 'ye](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/)bakın.
 
 ## <a name="incredibuild-integration"></a>IncrediBuild tümleştirmesi
 
-IncrediBuild, bir isteğe bağlı bileşen olarak iş yüküne **sahip C++ masaüstü geliştirmeye** dahildir. IncrediBuild derleme Izleyicisi, Visual Studio IDE 'de tamamen tümleşiktir. Daha fazla bilgi için bkz. [IncrediBuild 'In derleme İzleyicisi ve Visual Studio 2019 ile derlemenizi görselleştirme](https://devblogs.microsoft.com/cppblog/visualize-your-build-with-incredibuilds-build-monitor-and-visual-studio-2019/).
+IncrediBuild, C++ iş **yüküyle Masaüstü geliştirmesinde** isteğe bağlı bir bileşen olarak eklenmiştir. IncrediBuild Build Monitor, Visual Studio IDE'ye tamamen entegre edilmiştir. Daha fazla bilgi için, [IncrediBuild'in Build Monitor ve Visual Studio 2019 ile yapınızı Görselleştir'e](https://devblogs.microsoft.com/cppblog/visualize-your-build-with-incredibuilds-build-monitor-and-visual-studio-2019/)bakın.
 
-## <a name="debugging"></a>Hata ayıklama
+## <a name="debugging"></a>Hata Ayıklama
 
-- Windows C++ üzerinde çalışan uygulamalar için pdb dosyaları artık ayrı bir 64 bit işlemde yüklenir. Bu değişiklik, çok sayıda modül ve PDB dosyası içeren uygulamalarda hata ayıklarken hata ayıklayıcı tarafından oluşan bir kilitlenme aralığını giderir.
+- Windows'da çalışan C++ uygulamaları için PDB dosyaları artık ayrı bir 64 bit işlemde yüklenir. Bu değişiklik, çok sayıda modül ve PDB dosyası içeren uygulamaları hata ayıklarken hata ayıklamanın bellekten tükenmesinin neden olduğu çeşitli kilitlenmeleri giderır.
 
-- Arama, **izleme**, **oto**ve **Yereller** pencerelerinde etkinleştirilmiştir.
+- **Arama, Watch,** **Autos**ve **Locals** pencerelerinde etkinleştirilir.
 
-## <a name="windows-desktop-development-with-c"></a>İle Windows masaüstü geliştirmeC++
+## <a name="windows-desktop-development-with-c"></a>C++ ile Windows masaüstü geliştirme
 
-- Bu C++ ATL/MFC sihirbazları artık kullanılamaz:
+- Bu C++ ATL/MFC sihirbazları artık kullanılamıyor:
 
   - ATL COM+ 1.0 Bileşeni Sihirbazı
-  - ATL Active Server Pages Bileşen Sihirbazı
-  - ATL OLE DB sağlayıcı Sihirbazı
+  - ATL Etkin Sunucu Sayfaları Bileşen Sihirbazı
+  - ATL OLE DB Sağlayıcısı Sihirbazı
   - ATL Özellik Sayfası Sihirbazı
-  - ATL OLE DB Tüketici Sihirbazı
-  - MFC ODBC Tüketicisi
-  - ActiveX denetiminden MFC sınıfı
-  - Tür lib 'den MFC sınıfı.
+  - ATL OLE DB Tüketicisi Sihirbazı
+  - MFC ODBC Tüketici
+  - ActiveX kontrolünden MFC sınıfı
+  - Tip Lib'den MFC sınıfı.
 
-  Bu teknolojiler için örnek kod Microsoft Docs ve VCSamples GitHub deposunda arşivlenir.
+  Bu teknolojilerin örnek kodu Microsoft Docs'ta ve VCSamples GitHub deposunda arşivlendi.
 
-- Windows 8.1 SDK'sı artık Visual Studio yükleyicisinde sağlanmıyor. C++ Projelerinizi en son Windows 10 SDK 'sına yükseltmenizi öneririz. 8,1 üzerinde sabit bir bağımlılıktan sahipseniz Windows SDK arşivden indirebilirsiniz.
+- Windows 8.1 SDK'sı artık Visual Studio yükleyicisinde sağlanmıyor. C++ projelerinizi en son Windows 10 SDK'ya yükseltmenizi öneririz. 8.1'e katı bir bağımlılığınız varsa, bunu Windows SDK arşivinden indirebilirsiniz.
 
-- En son C++ araç takımında artık Windows XP hedeflemesi sağlanmıyor. VS 2017-Level MSVC derleyicisi & kitaplıkları ile hedefleme, hala desteklenmektedir ve "bağımsız bileşenler" aracılığıyla yüklenebilir.
+- En son C++ araç takımında artık Windows XP hedeflemesi sağlanmıyor. VS 2017 düzeyindeMSVC derleyicisi ile XP hedeflemesi & kütüphaneleri hala destekleniyor ve "Tek tek bileşenler" üzerinden yüklenebilir.
 
-- Belgelerimizde şu anda Visual C++ Çalışma Zamanı dağıtımı için Modülleri Birleştirme kullanımı hiç önerilmiyor. Bu sürümden, MSMs 'nin kullanım dışı olarak işaretlenme konusunda daha fazla adımla karşılaşıyoruz. VCRuntime merkezi dağıtımınızı MSM'lerden yeniden dağıtılabilir pakete geçirmeyi göz önünde bulundurun.
+- Belgelerimizde şu anda Visual C++ Çalışma Zamanı dağıtımı için Modülleri Birleştirme kullanımı hiç önerilmiyor. MSM'lerimizi küçümseyen olarak işaretlemenin ekstra bir adımını atıyoruz. VCRuntime merkezi dağıtımınızı MSM'lerden yeniden dağıtılabilir pakete geçirmeyi göz önünde bulundurun.
 
-## <a name="mobile-development-with-c-android-and-ios"></a>İle C++ mobil geliştirme (Android ve iOS)
+## <a name="mobile-development-with-c-android-and-ios"></a>C++ ile mobil geliştirme (Android ve iOS)
 
 C++ Android deneyimi artık varsayılan olarak Android SDK 25 ve Android NDK 16b olur.
 
-## <a name="clangc2-platform-toolset"></a>Clang/C2 platform araç takımı
+## <a name="clangc2-platform-toolset"></a>Clang/C2 platform araç seti
 
-Clang/C2 bileşeni kaldırıldı. `/permissive-` ve `/std:c++17`veya Windows için C++ Clang/LLVM araç zinciri ile tam standartlar uyumluluğu için MSVC araç takımını kullanın.
+Clang/C2 deneysel bileşeni kaldırıldı. MsVC araç kümesini tam C++ standartlarına `/std:c++17`uygunluk ve Windows için Clang/LLVM araç zinciri için `/permissive-` kullanın.
 
 ## <a name="code-analysis"></a>Kod analizi
 
-- Kod analizi artık otomatik olarak arka planda çalıştırılıyor. Siz yazdıkça düzenleyicinin içinde uyarılar yeşil dalgalı çizgilerle gösteriliyor. Daha fazla bilgi için bkz. [Visual Studio 2019 Preview 2 ' deki düzenleyici kod analizi](https://devblogs.microsoft.com/cppblog/in-editor-code-analysis-in-visual-studio-2019-preview-2/).
+- Kod analizi artık otomatik olarak arka planda çalıştırılıyor. Siz yazdıkça düzenleyicinin içinde uyarılar yeşil dalgalı çizgilerle gösteriliyor. Daha fazla bilgi için [Visual Studio 2019 Preview 2'deki Editör İçi kod analizine](https://devblogs.microsoft.com/cppblog/in-editor-code-analysis-in-visual-studio-2019-preview-2/)bakın.
 
-- \<mutex > üstbilgisinden iyi bilinen standart kitaplık türleri için yeni deneysel ConcurrencyCheck kuralları. Daha fazla bilgi için bkz. [Visual Studio 2019 'de eşzamanlılık kodu analizi](https://devblogs.microsoft.com/cppblog/concurrency-code-analysis-in-visual-studio-2019/).
+- \<Mutex> üstbilgisinden iyi bilinen standart kitaplık türleri için yeni deneysel ConcurrencyCheck kuralları. Daha fazla bilgi için [Visual Studio 2019'da Eşzamanlılık Kod Analizi'ne](https://devblogs.microsoft.com/cppblog/concurrency-code-analysis-in-visual-studio-2019/)bakın.
 
-- Etkinlik işaretçilerini ve başvuruları algılayan [ömür profili denetleyicisi](https://herbsutter.com/2018/09/20/lifetime-profile-v1-0-posted/)'nin güncelleştirilmiş kısmi bir uygulamasıdır. Daha fazla bilgi için bkz. [Visual Studio 2019 Preview 2 ' de ömür profili güncelleştirmesi](https://devblogs.microsoft.com/cppblog/lifetime-profile-update-in-visual-studio-2019-preview-2/).
+- Sarkan işaretçileri ve başvuruları algılayan [Ömür Boyu profil denetleyicisinin](https://herbsutter.com/2018/09/20/lifetime-profile-v1-0-posted/)güncelleştirilmiş kısmi uygulaması. Daha fazla bilgi için [Visual Studio 2019 Önizleme 2'de Yaşam Boyu Profil Güncellemesi'ne](https://devblogs.microsoft.com/cppblog/lifetime-profile-update-in-visual-studio-2019-preview-2/)bakın.
 
-- C26138, C26810, C26811 ve deneysel kural C26800 dahil olmak üzere daha fazla Corine ilişkin denetimler. Daha fazla bilgi için bkz. [Visual Studio 2019 'de yeni kod analizi denetimleri: Use-After-Move ve eş yordam olamaz](https://devblogs.microsoft.com/cppblog/new-code-analysis-checks-in-visual-studio-2019-use-after-move-and-coroutine/).
+- C26138, C26810, C26811 ve deneysel kural C26800 dahil olmak üzere daha fazla ortak kontrol. Daha fazla bilgi için [Visual Studio 2019'da Yeni Kod Analizi Denetimleri'ne bakın: taşıma sonrası ve birlikte yordam.](https://devblogs.microsoft.com/cppblog/new-code-analysis-checks-in-visual-studio-2019-use-after-move-and-coroutine/)
 
-##### <a name="visual-studio-2019-version-161"></a>Visual Studio 2019 sürüm 16,1
+##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
-- Başlatılmamış Değişken denetimleri için yeni hızlı düzeltmeler. Daha fazla bilgi için bkz. [Başlatılmamış bellek Için yeni kod analizi hızlı düzeltmeleri (C6001) ve init (C26494) uyarılarını kullanma](https://devblogs.microsoft.com/cppblog/new-code-analysis-quick-fixes-for-uninitialized-memory-c6001-and-use-before-init-c26494-warnings/).
+- Başlatlanmamış değişken denetimleri için yeni hızlı düzeltmeler. Daha fazla bilgi için, [başlamayan bellek (C6001) için Yeni kod analizi hızlı düzeltmeleri ve init (C26494) uyarıları önce kullanın](https://devblogs.microsoft.com/cppblog/new-code-analysis-quick-fixes-for-uninitialized-memory-c6001-and-use-before-init-c26494-warnings/)bakın.
 
 ## <a name="unit-testing"></a>Birim testi
 
-Yönetilen C++ Test Projesi şablonu artık sağlanmıyor. Varolan projelerinizde yönetilen C++ test çerçevesini kullanmaya devam edebilirsiniz. Yeni birim testleri için, Visual Studio 'nun şablonlar (MSTest, Google Test) veya yönetilen C# test projesi şablonu sağladığı yerel test çerçevelerinden birini kullanmayı düşünün.
+Yönetilen C++ Test Projesi şablonu artık sağlanmıyor. Varolan projelerinizde Yönetilen C++ Test çerçevesini kullanmaya devam edebilirsiniz. Yeni birim testleri için Visual Studio'nun şablon (MSTest, Google Test) veya Yönetilen C# Test Projesi şablonu sağladığı yerel test çerçevelerinden birini kullanmayı düşünün.
 
 ::: moniker-end
 
 ::: moniker range="=vs-2017"
 
-Visual Studio 2017, C++ ortama birçok güncelleştirme ve düzeltme getirir. Derleyici ve araçlarındaki 250 hatayı ve bildirilen sorunları çözdük ve [bir sorun bildir ve](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017) **geri bildirim gönder**bölümünde öneri seçenekleri sağlar. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio 'nun tüm yenilikleri hakkında daha fazla bilgi için bkz. [visual 2017 Studio 'daki](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017)yenilikler. Visual Studio 2019 ' C++ deki yenilikler hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'daki](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019)yenilikler. Visual Studio 2015 ve önceki sürümlerindeki yenilikleri C++ hakkında daha fazla bilgi için bkz. [Visual C++ Studio 'nun yenilikler 2003-2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+Visual Studio 2017, C++ ortamına birçok güncelleme ve düzeltme getiriyor. Derleyici ve araçlarda 250'den fazla hata düzeltildik ve sorunları bildirdik, çoğu müşteriler tarafından [Bir Sorun Bildir ve](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017) Geri Bildirim **Gönder**altında Öneri seçenekleri sağlayın yoluyla gönderildi. Hataları bildirdiğiniz için teşekkür ederiz! Tüm Visual Studio'daki yenilikler hakkında daha fazla bilgi için [Visual Studio 2017'deki yeniliklere](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017)bakın. Visual Studio 2019'da C++ için yenilikler hakkında bilgi için [Visual Studio'da C++ için yeniliklere](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019)bakın. Visual Studio 2015 ve önceki sürümlerde C++ için yenilikler hakkında bilgi için [Visual C++ What's New 2003 ile 2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)'e bakın.
 
 ## <a name="c-compiler"></a>C++ derleyicisi
 
-### <a name="c-conformance-improvements"></a>C++uyumluluk geliştirmeleri
+### <a name="c-conformance-improvements"></a>C++ uygunluk iyileştirmeleri
 
-Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özellikleri için desteği iyileştirecek, ayrıca C++17 standardına eklenmesi beklenen bazı özellikler için ön destek sağlayacak şekilde güncelleştirdik. Ayrıntılı bilgi için bkz [ C++ . Visual Studio 2017 uyumluluk geliştirmeleri](cpp-conformance-improvements.md).
+Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özellikleri için desteği iyileştirecek, ayrıca C++17 standardına eklenmesi beklenen bazı özellikler için ön destek sağlayacak şekilde güncelleştirdik. Ayrıntılı bilgi için Visual [Studio 2017'de C++ Uygunluk Geliştirmeleri'ne](cpp-conformance-improvements.md)bakın.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Derleyici, yapılandırılmış bağlamalar, `constexpr` Lambdalar, `if constexpr`, satır içi değişkenler, katlama ifadeleri ve tür sistemine `noexcept` ekleme dahil olmak üzere C++ 17 ' de yeni olan özelliklerin %75 ' sini destekler. Bu özellikler **/std: c++ 17** seçeneği altında bulunur. Daha fazla bilgi için bkz [ C++ . Visual Studio 'da uyumluluk geliştirmeleri 2017](cpp-conformance-improvements.md)
+Derleyici, yapılandırılmış bağlamalar, lambdas, `constexpr` `if constexpr`satır satır değişkenleri, kat ifadeleri ve tür sistemine ekleme `noexcept` dahil olmak üzere C++17'de yeni olan özelliklerin yaklaşık %75'ini destekler. Bu özellikler **/std:c++17** seçeneği altında mevcuttur. Daha fazla bilgi için Visual [Studio 2017'de C++ Uygunluk Geliştirmeleri](cpp-conformance-improvements.md)
 
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-Visual Studio sürüm 15,7 ' deki MSVC derleyici araç takımı artık C++ standart ile uyumlu. Daha fazla bilgi için bkz. [duyuruldu: MSVC uyumlu C++ ve standart](https://devblogs.microsoft.com/cppblog/announcing-msvc-conforms-to-the-c-standard/) ve [ C++ Microsoft dil uyumluluğu](../visual-cpp-language-conformance.md).
+Visual Studio sürüm 15.7'deki MSVC derleyici araç seti artık C++ Standardına uygundur. Daha fazla bilgi için [bkz: Duyuru: MSVC C++ Standardına](https://devblogs.microsoft.com/cppblog/announcing-msvc-conforms-to-the-c-standard/) ve [Microsoft C++ Dil Uygunluğuna](../visual-cpp-language-conformance.md)Uygundur.
 
-##### <a name="visual-studio-2017-version-158"></a>Visual Studio 2017 sürüm 15,8
+##### <a name="visual-studio-2017-version-158"></a>Visual Studio 2017 sürümü 15.8
 
-[/Deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici anahtarı, geçerli tüm C ve C++ standartlarla uyumlu olacak şekilde yeni deneysel MSVC ön işlemcisi 'ni sunar. Daha fazla bilgi için bkz. [MSVC deneysel Önişlemci genel bakış](../preprocessor/preprocessor-experimental-overview.md).
+[/experimental:preprocessor](../build/reference/experimental-preprocessor.md) derleyici anahtarı, geçerli tüm C ve C++ standartlarına uygun olacak yeni deneysel MSVC önişlemcisini etkinleştiri. Daha fazla bilgi için [MSVC deneysel ön işlemciye genel bakış adabına](../preprocessor/preprocessor-experimental-overview.md)bakın.
 
 ### <a name="new-compiler-options"></a>Yeni derleyici seçenekleri
 
-- [/Permissive-](../build/reference/permissive-standards-conformance.md): tüm katı standartlar uygunluk derleyicisi seçeneklerini etkinleştirin ve Microsoft 'a özgü çoğu derleyici uzantısını devre dışı bırakın (örneğin `__declspec(dllimport)`değil). Bu seçenek, varsayılan olarak Visual Studio 2017 sürüm 15,5 ' de bulunur.  **/Permissive-** uygunluk modu, iki aşamalı ad arama desteği içerir. Daha fazla bilgi için bkz [ C++ . Visual Studio 'da uyumluluk geliştirmeleri](cpp-conformance-improvements.md).
+- [/izin-](../build/reference/permissive-standards-conformance.md): Tüm katı standartlara uygunluk derleyici seçeneklerini etkinleştirin ve Microsoft'a özgü `__declspec(dllimport)`derleyici uzantılarının çoğunu devre dışı edin (örneğin). Bu seçenek Varsayılan olarak Visual Studio 2017 sürüm 15.5'te açıktır.  **/izin verilen** uygunluk modu, iki aşamalı ad araması desteği içerir. Daha fazla bilgi için [Visual Studio'da C++ Uyumluluk Geliştirmeleri'ne](cpp-conformance-improvements.md)bakın.
 
-- [/Diagnostics](../build/reference/diagnostics-compiler-diagnostic-options.md): satır numarasını, satır numarasını ve sütunu ya da satır numarasını ve sütununu ve tanılama hatasının veya uyarısının bulunduğu kod satırı altındaki bir giriş işaretini görüntülemeyi etkinleştirin.
+- [/diagnostics](../build/reference/diagnostics-compiler-diagnostic-options.md): Satır numarasının, satır numarasının ve sütununun veya satır numarasının ve sütununun ve tanılama hatasının veya uyarısının bulunduğu kod satırının altındaki bir bakım
 
-- [/Debug: fastlink](../build/reference/debug-generate-debug-info.md): tüm hata ayıklama bilgilerini pdb dosyasına kopyalamadığınızda, %30 ' a kadar daha hızlı artımlı bağlantı süresini (vs. Visual Studio 2015) etkinleştirin. Bunun yerine PDB dosyası, yürütülebilir dosyayı oluşturmak için kullanılan nesne ve kitaplık dosyaları için hata ayıklama bilgilerini gösterir. [Visual Studio 'da C++ ](https://devblogs.microsoft.com/cppblog/recommendations-to-speed-c-builds-in-visual-studio/)bkz. [/Debug: fastlink ile vs "15" içinde derleme döngüsüne daha hızlı C++ ](https://devblogs.microsoft.com/cppblog/faster-c-build-cycle-in-vs-15-with-debugfastlink/) bakın.
+- [/debug:fastlink](../build/reference/debug-generate-debug-info.md): Tüm hata ayıklama bilgilerini PDB dosyasına kopyalamayarak %30'a kadar daha hızlı artımlı bağlantı süreleri (Visual Studio 2015'e karşı) etkinleştirin. PDB dosyası bunun yerine yürütülebilir oluşturmak için kullanılan nesne ve kitaplık dosyaları için hata ayıklama bilgilerine işaret ediyor. /Debug:fastlink ve [Visual Studio'da C++'ı hızlandırmak için öneriler](https://devblogs.microsoft.com/cppblog/recommendations-to-speed-c-builds-in-visual-studio/)içeren VS ["15"te Daha Hızlı C++ yapı döngüsüne](https://devblogs.microsoft.com/cppblog/faster-c-build-cycle-in-vs-15-with-debugfastlink/) bakın.
 
-- Visual Studio 2017, [/SDL](../build/reference/sdl-enable-additional-security-checks.md) ile [/await](../build/reference/await-enable-coroutine-support.md)kullanılmasına izin verir. Coroutines ile [/RTC](../build/reference/rtc-run-time-error-checks.md) sınırlamasını kaldırdık.
+- Visual Studio 2017 [/sdl](../build/reference/sdl-enable-additional-security-checks.md) [ile /await](../build/reference/await-enable-coroutine-support.md)ile kullanılmasına izin verir. Coroutines ile [/RTC](../build/reference/rtc-run-time-error-checks.md) sınırlamasını kaldırdık.
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
-- [/std: c++ 14 ve/std: c + + en son](../build/reference/std-specify-language-standard-version.md): Bu derleyici seçenekleri BIR projede ISO C++ programlama dilinin belirli sürümlerini kabul etkinleştirmenizi sağlar. Yeni taslak standart özelliklerinin çoğu **/std: c + + en son** seçeneği tarafından korunuyor.
+- [/std:c++14 ve /std:c++latest](../build/reference/std-specify-language-standard-version.md): Bu derleyici seçenekleri, bir projede ISO C++ programlama dilinin belirli sürümlerini seçmenizi sağlar. Yeni taslak standart özelliklerin çoğu **/std:c++en son** seçeneği tarafından korunur.
 
-- [/std: c++ 17](../build/reference/std-specify-language-standard-version.md) , derleyici tarafından uygulanan c++ 17 özelliklerinin kümesini sunar. Bu seçenek, C++ 17 ' den sonra C++ standart 'ın çalışma taslağı ve hata güncelleştirmeleri sürümlerinde değiştirilen veya yeni olan özellikler için derleyici ve standart kitaplık desteğini devre dışı bırakır. Bu özellikleri etkinleştirmek için **/std: c + + en son**' u kullanın.
+- [/std:c++17](../build/reference/std-specify-language-standard-version.md) derleyici tarafından uygulanan C++17 özellikleri kümesini sağlar. Bu seçenek, Çalışma Taslağı'nın sürümlerinde değiştirilen veya yeni olan özellikler için derleyiciyi ve standart kitaplık desteğini devre dışı kılabilir ve C++17'den sonra C++ Standardının hata güncelleştirmelerini. Bu özellikleri etkinleştirmek için **/std:c++en son**kullanın.
 
-### <a name="codegen-security-diagnostics-and-versioning"></a>CodeGen, güvenlik, tanılama ve sürüm oluşturma
+### <a name="codegen-security-diagnostics-and-versioning"></a>Codegen, güvenlik, tanılama ve sürüm
 
-Bu sürüm, iyileştirme, kod oluşturma, araç takımı sürümü oluşturma ve tanılama konularında çeşitli geliştirmeler sunar. Bazı önemli geliştirmeler şunlardır:
+Bu sürüm, optimizasyon, kod oluşturma, araç seti sürümü ve tanılama da çeşitli iyileştirmeler getirir. Bazı önemli geliştirmeler şunlardır:
 
 - Döngüler için geliştirilmiş kod oluşturma: sabit tam sayıları bölme işlemleri için otomatik vektörleştirme desteği, memset desenlerinin daha iyi tanınması.
-- Geliştirilmiş kod güvenliği: arabellek taşması derleyici tanılamaları ve [/Guard: CF](../build/reference/guard-enable-control-flow-guard.md) , artık doğrudan geçiş tabloları üreten anahtar deyimlerini korumıştır.
-- Sürüm oluşturma: yerleşik Önişlemci makrosunun **\_MSC\_ver** değeri artık her görsel C++ araç takımı güncelleştirmesinde tek bir şekilde güncelleştirildi. Daha fazla bilgi için bkz [. C++ Visual derleyicisi sürümü](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/).
-- Yeni araç takımı düzeni: derleyici ve ilgili derleme araçlarının geliştirme makinenizde yeni bir konum ve dizin yapısı vardır. Yeni düzen derleyicinin birden çok sürümünün yan yana yüklemelerine izin vermez. Daha fazla bilgi için bkz. [Visual Studio 2017 ' de derleyici araçları düzeni](https://devblogs.microsoft.com/cppblog/compiler-tools-layout-in-visual-studio-15/).
-- Geliştirilmiş Tanılamalar: çıkış penceresinde artık hata oluşan sütun görüntülenir. Daha fazla bilgi için bkz [ C++ . vs "15" Preview 5 ' te derleyici tanılama geliştirmeleri](https://devblogs.microsoft.com/cppblog/c-compiler-diagnostics-improvements-in-vs-15-rc/).
-- Ortak yordamlar kullanılırken deneysel anahtar sözcük **yield** ( **/await** seçeneği altında kullanılabilir) kaldırılmıştır. Kodunuzun `co_yield` kullanacak şekilde güncellenmesi gerekir. Daha fazla bilgi için, bkz. [VS 2017 'de `co_yield` olmak için`yield` anahtar sözcüğü](https://devblogs.microsoft.com/cppblog/yield-keyword-to-become-co_yield-in-vs-2017/).
+- Geliştirilmiş kod güvenliği: Arabellek taşma derleyici tanılama geliştirilmiş emisyon ve [/ guard:cf](../build/reference/guard-enable-control-flow-guard.md) şimdi atlama tabloları oluşturmak ifadeleri geçiş.
+- Sürüm: Yerleşik önişlemci makro ** \_SU CC\_VER'in** değeri artık her Visual C++ araç setinde monoton olarak güncellenmektedir. Daha fazla bilgi için [Visual C++ Derleyici Sürümü'ne](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)bakın.
+- Yeni araç seti düzeni: Derleyici ve ilgili yapı araçları geliştirme makinenizde yeni bir konum ve dizin yapısına sahiptir. Yeni düzen, derleyicinin birden çok sürümüyan yan yana yüklemeleri sağlar. Daha fazla bilgi için Visual [Studio 2017'de Derleyici Araçları Düzeni'ne](https://devblogs.microsoft.com/cppblog/compiler-tools-layout-in-visual-studio-15/)bakın.
+- Geliştirilmiş tanılama: Çıktı penceresi artık bir hatanın oluştuğu sütunu gösterir. Daha fazla bilgi için VS ["15" Preview 5'teki C++ derleyici tanılama geliştirmelerine](https://devblogs.microsoft.com/cppblog/c-compiler-diagnostics-improvements-in-vs-15-rc/)bakın.
+- Ortak yordamlar kullanırken, deneysel anahtar kelime **verimi** **(/bekleme** seçeneği altında kullanılabilir) kaldırıldı. Kodunuz bunun yerine `co_yield` kullanmak için güncelleştirilmelidir. Daha fazla bilgi [ `yield` için VS `co_yield` 2017'de yer almak için anahtar kelimeye](https://devblogs.microsoft.com/cppblog/yield-keyword-to-become-co_yield-in-vs-2017/)bakın.
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
-Derleyicide Tanılama için ek geliştirmeler. Daha fazla bilgi için bkz. [Visual Studio 'Da tanılama geliştirmeleri 2017 15.3.0](https://devblogs.microsoft.com/cppblog/diagnostic-improvements-in-vs2017-15-3-0/).
-
-##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
-
-Visual C++ Runtime performansı, daha iyi oluşturulmuş kod kalitesi nedeniyle gelişmeye devam etmektedir. Artık kodunuzu yeniden derleyebilirsiniz ve uygulamanız daha hızlı çalışır. Derleyici iyileştirmelerinden bazıları koşullu skaler mağazaların vektörleştirmesi, çağrıların birleştirilmesi `sin(x)` ve `cos(x)` yeni bir `sincos(x)`içine ve SSA iyileştiricisinden gereksiz yönergelerin yok etme gibi yepyeni bir şekilde yenidir. Diğer derleyici iyileştirmeleri, Koşullu ifadeler için vektörtorizer buluşsal yöntemler, daha iyi döngü iyileştirmeleri ve float Min/Max CodeGen gibi mevcut işlevlere yönelik geliştirmelerdir. Bağlayıcı yeni ve daha hızlı bir **/OPT: ICF** uygulamasına sahiptir. Bu, %9 bağlantı süresi hızlandırmalı ve artımlı bağlamada başka performans düzeltmeleri de olabilir. Daha fazla bilgi için bkz. [/opt (iyileştirmeler)](../build/reference/opt-optimizations.md) ve [/artımlı (artımlı bağlantı)](../build/reference/incremental-link-incrementally.md).
-
-Microsoft C++ derleyicisi, avx-512 ' deki yeni işlevleri 128-bit ve 256-bit geniş kayıt defterlerine getiren vektör uzunluğu yönergeleri dahil olmak üzere Intel avx-512 ' ü destekler.
-
-[/Zc: noexceptTypes-](../build/reference/zc-noexcepttypes.md) seçeneği, c++ 17 modu genel olarak kullanılırken `noexcept` c++ 14 sürümüne dönmek için kullanılabilir. Bu seçenek, tüm `throw()` kodunuzu aynı anda yeniden yazmak zorunda kalmadan, kaynak kodunuzu C++ 17 ile uyumlu olacak şekilde güncelleştirmenizi sağlar. Daha fazla bilgi için bkz. [dinamik özel durum belirtimi kaldırma ve noexcept](cpp-conformance-improvements.md#noexcept_removal).
-
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
-
-- Yeni derleyici anahtarı [/Qspectre](../build/reference/qspectre.md) , öngörülebilir yürütme yan kanal saldırılarına karşı azaltmaya yardımcı olur. Daha fazla bilgi için bkz. [Spectre AZALTMALARı MSVC](https://devblogs.microsoft.com/cppblog/spectre-mitigations-in-msvc/).
-- Spectre azaltma için yeni tanılama uyarısı. Daha fazla bilgi için bkz. [Spectre Diagnostic for Visual Studio 2017 sürüm 15,7 Preview 4](https://devblogs.microsoft.com/cppblog/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/).
-- /ZC için yeni bir değer olan **/Zc: __cplusplus**, C++ standart desteğin doğru şekilde raporlanmalarını mümkün bir şekilde sunar. Örneğin, anahtar ayarlandığında ve derleyici/std: c++ 17 modunda olduğunda değer **201703L**olarak genişletilir. Daha fazla bilgi için bkz. [MSVC Now reports __cplusplus](https://devblogs.microsoft.com/cppblog/msvc-now-correctly-reports-__cplusplus/).
-
-## <a name="c-standard-library"></a>C++Standart Kitaplık
-
-### <a name="correctness-improvements"></a>Doğruluk Iyileştirmeleri
-
-##### <a name="visual-studio-2017-rtm-version-150"></a>Visual Studio 2017 RTM (sürüm 15,0)
-
-- İkincil `basic_string` `_ITERATOR_DEBUG_LEVEL != 0` tanılama geliştirmeleri. Dize makinesinde IDL denetiminin kesilmesi, artık kesintiye neden olan davranışı rapor edecektir. Örneğin, "dize yineleyici başvurulabilir değil" yerine "aralıkta olmadığı için dize yineleyicisine başvurulamıyor (ör. bitiş yineleyicisi)" görünür.
-- Daha önce kodun sürekli olarak engellenmesine neden olabilecek `std::promise` taşıma atama işleci düzeltildi.
-- `T*``atomic<T*>` örtük dönüşümle derleyici hataları düzeltildi.
-- `pointer_traits<Ptr>` artık `Ptr::rebind<U>`doğru şekilde algılar.
-- `move_iterator` çıkarma işlecinde eksik `const` niteleyicisi düzeltildi.
-- `propagate_on_container_copy_assignment` ve `propagate_on_container_move_assignment`isteyen durum bilgisi olan Kullanıcı tanımlı ayrıcılar için sessiz hatalı CodeGen düzeltildi.
-- `atomic<T>` artık aşırı yüklenmiş `operator&()`tolerans gösterir.
-- Yanlış `bind()` çağrıları için biraz daha geliştirilmiş derleyici tanılaması.
-
-Visual Studio 2017 RTM 'de standart kitaplık geliştirmelerinden oluşan kapsamlı bir liste için bkz. C++ [vs 2017 RTM 'de takım blogu girişi standart kitaplık düzeltmeleri](https://devblogs.microsoft.com/cppblog/stl-fixes-in-vs-2017-rtm/).
-
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
-
-- Standart Kitaplık kapsayıcıları artık `size_type``max()` yerine `numeric_limits<difference_type>::max()` `max_size()` çakışıyor. Bu değişiklik, bu kapsayıcıdaki Yineleyicilerde `distance()` sonucunun `distance()`dönüş türünde gösterilebilir olmasını sağlar.
-- Eksik özelleştirme `auto_ptr<void>`düzeltildi.
-- Length bağımsız değişkeni bir tamsayı türü değilse, daha önce `for_each_n()`, `generate_n()`ve `search_n()` algoritmaları derlenemedi; Artık İntegral olmayan uzunlukları yineleyiciler ' `difference_type`dönüştürmeye çalışır.
-- `normal_distribution<float>`, standart kitaplık içinde Double-float ile daraltma hakkında artık uyarı vermez.
-- En büyük boyut taşması denetlenirken `max_size()` yerine `npos` kullanılan bazı `basic_string` işlemler düzeltildi.
-- `condition_variable::wait_for(lock, relative_time, predicate)`, büyük bir uyanma durumunda tüm göreli zamanın tamamlanmasını bekler. Artık, göreli saatin yalnızca tek bir aralığını bekler.
-- `future::get()` artık, standart gerektirdiğinden `future`geçersiz kılar.
-- `iterator_traits<void *>`, `void&`ayarlamaya çalıştığı için bir sabit hata olması için kullanılır; Artık, "bir yineleyici" SFINAE koşullarında `iterator_traits` kullanılmasına izin veren boş bir yapı haline gelir.
-- Clang **-wsystem-Headers** tarafından bildirilen bazı uyarılar düzeltildi.
-- Ayrıca, bildirimde bulunan özel durum belirtimi, Clang **-wmicrosoft-Exception-spec**tarafından bildirilen bir önceki bildirimle eşleşmez.
-- Ayrıca, Clang ve C1XX tarafından bildirilen sabit bir bellek-başlatıcı-liste sıralama uyarıları.
-- Sıralanmamış kapsayıcılar, kapsayıcılar kendilerini takas edildiğinde karma işlevlerini veya koşullarını değiştirmedi. Şimdi.
-- Birçok kapsayıcı takas işlemi artık `noexcept` olarak işaretlenmiş (Standart kitaplığımız,`propagate_on_container_swap` olmayan eşit ayırıcı olmayan tanımsız davranış koşulunu algıladığında hiçbir zaman bir özel durum oluşturmak üzere değildir).
-- Birçok `vector<bool>` işlem artık `noexcept`olarak işaretlenir.
-- Standart kitaplık artık, bir opt çıkış taraması ile eşleşen ayırıcıyı `value_type` (C++ 17 modunda) zorlayacaktır.
-- Kendi kendine Aralık-ekleme `basic_string` dizelerin içeriğini karıştıran bazı koşullar düzeltildi. (Note: kendinden aralığa ekleme, standart tarafından hala yasaktır.)
-- `basic_string::shrink_to_fit()` artık ayırıcı `propagate_on_container_swap`tarafından etkilenmemektedir.
-- `std::decay` artık, diğer bir deyişle, cv-qualified ve/veya ref-Qualified işlev türlerini, diğer bir deyişle, daha sonra işliyor.
-- Değiştirilen büyük/küçük harfe duyarlılık ve eğik çizgi kullanma, taşınabilirliği artırma yönergeleri dahil.
-- '*Enumeration*' numaralandırmasının anahtarındaki "Numaralandırıcı '*Numaralandırıcı*' sabit uyarı C4061, bir Case etiketi tarafından açıkça işlenmiyor. Bu uyarı varsayılan olarak kapalıdır ve uyarılar için standart kitaplığın genel ilkesinde özel bir durum olarak düzeltildi. (Standart Kitaplık **/W4** temiz, ancak **/duvar** temizleme yapmayı denemez. Birçok varsayılan uyarı son derece gürültülü ve düzenli olarak kullanılmak üzere tasarlanmamıştır.)
-- `std::list` hata ayıklama denetimleri geliştirildi. Yineleyiciler listesi artık `operator->()`kontrol edin ve `list::unique()` artık yineleyiciler geçersiz kılındı olarak işaretler.
-- `tuple`içinde sabit kullanımlar-ayırıcı meta programlama.
+Derleyicideki tanılamada ek iyileştirmeler. Daha fazla bilgi için Visual [Studio 2017 15.3.0'da Tanısal İyileştirmeler'e](https://devblogs.microsoft.com/cppblog/diagnostic-improvements-in-vs2017-15-3-0/)bakın.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- `std::partition`, standart gerektiğinden, N + 1 kez değil, koşul N kez çağrı gerektirir.
-- Sürüm 15,3 ' de sihirli statiği 'dan kaçınmaya yönelik girişimler, sürüm 15,5 ' de onarıldı.
-- `std::atomic<T>` artık `T` varsayılan oluşturulabilir olmasını gerektirmez.
-- Logaritmik hata ayıklama etkinken, girişin aslında bir yığında olduğu doğrusal bir zaman onaylama işlemi olmayan yığın algoritmaları.
-- `__declspec(allocator)` artık, bu declspec anlayan, Clang uyarılarını engellemek için yalnızca C1XX için korunuyor.
-- `basic_string::npos` artık derleme zamanı sabiti olarak kullanılabilir.
-- C++ 17 modundaki `std::allocator`, artık daha fazla hizalanmış türlerin ayrılmasını, diğer bir deyişle, **/Zc: alignedNew-** tarafından devre dışı bırakılmadığı takdirde hizalama `max_align_t`daha büyük olan türler.  Örneğin, 16 baytlık veya 32 baytlık hizalamadaki nesne vektörleri artık SSE ve AVX yönergelerine göre doğru şekilde hizalanmıştır.
+Görsel C++ çalışma zamanı performansı, daha iyi oluşturulan kod kalitesi nedeniyle iyileşmeye devam ediyor. Artık kodunuzu yeniden derleyebilirsiniz ve uygulamanız daha hızlı çalışır. Derleyici optimizasyonlarının bazıları, koşullu skaler mağazaların vektörelleştirilmesi, aramaların `sin(x)` birleştirilmesi ve `cos(x)` yeni bir `sincos(x)`"yeni" ve SSA optimize edicisinden gereksiz talimatların ortadan kaldırılması gibi yepyenidir. Diğer derleyici optimizasyonları, koşullu ifadeler için vektörel sezgisel, daha iyi döngü optimizasyonları ve float min/max codegen gibi varolan işlevlerde iyileştirmelerdir. Bağlayıcı, %9'a varan bağlantı süresi hızlarına neden olabilecek yeni ve daha hızlı **/OPT:ICF** uygulamasına sahiptir ve artımlı bağlantıda başka perf düzeltmeleri de vardır. Daha fazla bilgi için bkz: [/OPT (Optimizasyonlar)](../build/reference/opt-optimizations.md) ve [/INCREMENTAL (Bağlantı Aşamalı)](../build/reference/incremental-link-incrementally.md).
 
-### <a name="conformance-improvements"></a>Uyumluluk geliştirmeleri
+Microsoft C++ derleyicisi, AVX-512'de 128 bit ve 256 bit geniş kasalarda yeni işlevler getiren Vektör Uzunluğu yönergeleri de dahil olmak üzere Intel'in AVX-512'sini destekler.
 
-- \<\>, \<string_view\>, `apply()`, `make_from_tuple()`ekledik.
-- İsteğe bağlı \<\>, \<varyant\>, `shared_ptr::weak_type`ve \<cstdalıgn\>eklendi.
-- `min(initializer_list)`, `max(initializer_list)`ve `minmax(initializer_list)`ve `min_element()`, `max_element()`ve `minmax_element()`içinde C++ 14 `constexpr` etkinleştirildi.
+[/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) seçeneği, genel olarak C++17 modunu `noexcept` kullanırken C++14 sürümüne dönmek için kullanılabilir. Bu seçenek, tüm kodunuzu aynı anda yeniden yazmak zorunda kalmadan `throw()` kaynak kodunuzu C++17'ye uyacak şekilde güncelleştirmenizi sağlar. Daha fazla bilgi için Dinamik [özel durum belirtimi kaldırma ve noexcept](cpp-conformance-improvements.md#noexcept_removal)bakın.
 
-Daha fazla bilgi için bkz [. C++ Microsoft dil uygunluk tablosu](../visual-cpp-language-conformance.md).
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+- Spekülatif yürütme yan kanal saldırılarına karşı azaltmaya yardımcı olmak için yeni derleyici anahtarı [/Qspectre.](../build/reference/qspectre.md) Daha fazla bilgi için [MSVC'deki Spectre azaltıcı etkenleri](https://devblogs.microsoft.com/cppblog/spectre-mitigations-in-msvc/)ne bürünme.
+- Spectre azaltma için yeni tanılama uyarısı. Daha fazla bilgi için [Visual Studio 2017 Sürüm 15.7 Önizleme 4'teki Spectre diagnostik](https://devblogs.microsoft.com/cppblog/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/)bakın.
+- /Zc, **/Zc:__cplusplus**için yeni bir değer, C++ standart desteğinin doğru raporlanmasını sağlar. Örneğin, anahtar ayarlandığında ve derleyici /std:c++17 modunda olduğunda değer **201703L'ye**kadar genişler. Daha fazla bilgi için, [MSVC şimdi doğru __cplusplus raporlar](https://devblogs.microsoft.com/cppblog/msvc-now-correctly-reports-__cplusplus/)bakın.
 
-- Birkaç ek C++ 17 özelliği uygulandı. Daha fazla bilgi için bkz [. C++ Microsoft dil uygunluk tablosu](cpp-conformance-improvements.md#improvements_153).
-- Uygulanan P0602R0 "varyant ve isteğe bağlı, kopyalama/taşıma üç aylık dönemi yaymalıdır.
-- Standart kitaplık artık, [/gr-](../build/reference/gr-enable-run-time-type-information.md) seçeneği aracılığıyla dinamik RTTI 'nin devre dışı bırakılmakta olduğunu gösterir. Hem `dynamic_pointer_cast()` hem de `rethrow_if_nested()` kendiliğinden `dynamic_cast`gerektirir, bu nedenle standart kitaplık artık bunları **/gr-** altında `=delete` olarak işaretler.
-- Dinamik RTTı, "static RTTI" ile **/gr-** arasında devre dışı bırakılsa bile, `typeid(SomeType)` biçiminde hala kullanılabilir ve çeşitli standart kitaplık bileşenlerini güçlendirir. Standart kitaplık artık bu özelliğin devre dışı bırakılmasını destekler, **/d\_,\_statik\_RTTI = 0 ' dır**. Bu bayrak Ayrıca, `std::function``target()` ve `target_type()` üye işlevlerini ve `get_deleter()` ve `std::shared_ptr` `std::weak_ptr`arkadaş üye işlevini `std::any`devre dışı bırakır.
-- Standart kitaplık artık, koşullu olarak tanımlanmış makrolar yerine koşulsuz olarak C++ 14 `constexpr` kullanır.
-- Standart kitaplık artık dahili olarak diğer ad şablonlarını kullanır.
-- Standart kitaplık artık `nullptr_t{}`yerine dahili olarak `nullptr` kullanır. (NULL 'in iç kullanımı eradkıdı. 0-null olarak iç kullanımı, yavaş bir şekilde temizleniyor.)
-- Standart kitaplık artık `std::move()` `std::forward()`, stillistik yanlış kullanımı yerine dahili olarak kullanır.
-- `static_assert(false, "message")` `#error message`olarak değiştirildi. Bu değişiklik, derlemeyi hemen durdurduğundan `#error` derleyici tanılamayı geliştirir.
-- Standart kitaplık artık işlevleri `__declspec(dllimport)`olarak işaretler. Modern bağlayıcı teknolojisine artık gerek yoktur.
-- SFıNAE 'yi, dönüş türleri ve işlev bağımsız değişken türleri ile karşılaştırıldığında dağınıklığı azaltılan varsayılan şablon bağımsız değişkenlerine ayıklandı.
-- \<rastgele\> içindeki hata ayıklama denetimleri, `fputs()` **stderr**'e `_Rng_abort()` iç işlev yerine standart kitaplığın olağan makineleri kullanın. Bu işlevin uygulanması ikili uyumluluk için tutulmakta, ancak standart kitaplığın sonraki ikili uyumsuz sürümünde kaldırılmıştır.
+## <a name="c-standard-library"></a>C++ standart kitaplığı
+
+### <a name="correctness-improvements"></a>Doğruluk Geliştirmeleri
+
+##### <a name="visual-studio-2017-rtm-version-150"></a>Visual Studio 2017 RTM (sürüm 15.0)
+
+- Küçük `basic_string` `_ITERATOR_DEBUG_LEVEL != 0` tanı lama iyileştirmeleri. Dize makinesinde IDL denetiminin kesilmesi, artık kesintiye neden olan davranışı rapor edecektir. Örneğin, "dize yineleyici başvurulabilir değil" yerine "aralıkta olmadığı için dize yineleyicisine başvurulamıyor (ör. bitiş yineleyicisi)" görünür.
+- Daha `std::promise` önce kodusonsuza kadar engellemeye neden olabilir taşıma atama işleci düzeltildi.
+- `atomic<T*>` Örtülü dönüştürme ile derleyici `T*`hataları düzeltildi.
+- `pointer_traits<Ptr>`şimdi doğru `Ptr::rebind<U>`algılar.
+- `move_iterator` Çıkarma işlecinde eksik `const` bir niteleyici düzeltildi.
+- Kullanıcı tanımlı tahsisatçıların istediği `propagate_on_container_copy_assignment` ve `propagate_on_container_move_assignment`.
+- `atomic<T>`şimdi aşırı yüklenmesini `operator&()`tolere eder.
+- Yanlış `bind()` aramalar için biraz geliştirilmiş derleyici tanılama.
+
+Visual Studio 2017 RTM'deki standart kütüphane geliştirmelerinin tam listesi için C++ Team Blog girişi [Standart Kütüphane Düzeltmeleri VS 2017 RTM'ye](https://devblogs.microsoft.com/cppblog/stl-fixes-in-vs-2017-rtm/)bakın.
+
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
+
+- Standart kütüphane kapsayıcıları `max_size()` `numeric_limits<difference_type>::max()` şimdi yerine `max()` `size_type`onların kelepçe . Bu değişiklik, bu kapsayıcıdaki yineleyicilerin `distance()` sonucunun `distance()`geri dönüş türünde temsil edilebilir olmasını sağlar.
+- Eksik uzmanlık `auto_ptr<void>`düzeltildi.
+- Uzunluk `for_each_n()` `generate_n()`bağımsız `search_n()` değişkeni integral bir tür değilse, , ve algoritmalar daha önce derlemek için başarısız oldu; şimdi ayrılmaz olmayan uzunlukları yineleyicilere dönüştürmeye `difference_type`çalışırlar.
+- `normal_distribution<float>`artık standart kitaplık içinde çiftten float'a daraltma konusunda uyarılar yayılmaz.
+- Maksimum `basic_string` boyut taşma `max_size()` larını denetlerken yerine kullanılan `npos` bazı işlemler düzeltildi.
+- `condition_variable::wait_for(lock, relative_time, predicate)`sahte bir uyanış durumunda tüm göreceli süre için bekleyecekti. Şimdi göreli zaman sadece tek bir aralık için bekleyecek.
+- `future::get()``future`şimdi, standart gerektirdiği gibi geçersiz kılması.
+- `iterator_traits<void *>`oluşturmak `void&`için çalıştı çünkü zor bir hata olarak kullanılır ; şimdi temiz "iterator" SFINAE koşullarında kullanımına `iterator_traits` izin vermek için boş bir yapı haline gelir.
+- Clang **-Wsystem-headers** tarafından bildirilen bazı uyarılar düzeltildi.
+- Ayrıca clang **-Wmicrosoft-exception-spec**tarafından bildirilen "beyannamedeki özel durum belirtimi önceki bildirimle eşleşmiyor" sabittir.
+- Ayrıca Clang ve C1XX tarafından bildirilen mem-initializer-list sipariş uyarıları sabit.
+- Sıralanmamış kapsayıcılar, kaplar takas edildiğinde karma işlevlerini veya yüklemlerini değiştirmedi. Şimdi biliyorlar.
+- Birçok kapsayıcı değiştirme işlemi `noexcept` artık işaretlenmiştir (standart kitaplığımız eşit`propagate_on_container_swap` olmayan veya tanımlanmamış davranış durumunu algılarken hiçbir zaman bir özel durum oluşturmayı planlamayın).
+- Birçok `vector<bool>` işlem artık `noexcept`işaretlenmiştir.
+- Standart kitaplık artık eşleşen `value_type` ayırıcıyı (C++17 modunda) bir çıkış çıkış kapağıyla uygular.
+- Kendi kendine ara eklemedizeli içeriğini `basic_string` karıştıracak bazı koşullar düzeltildi. (Not: vektörlere self-range-insert hala Standart tarafından yasaktır.)
+- `basic_string::shrink_to_fit()`artık `propagate_on_container_swap`tahsisatçının.
+- `std::decay`şimdi, cv nitelikli ve/veya ref nitelikli işlev türlerini, yani işlev türlerini işler.
+- Değiştirilen, taşınabilirliği artıran uygun servis talebi hassasiyeti ve ileri eğik çizgileri kullanma yönergelerini içerir.
+- Sabit uyarı C4061 "enumerator '*enumerator*' ' in switch of enum '*numaralandırma*' açıkça bir servis talebi etiketi tarafından ele alınmaz.) Bu uyarı varsayılan olarak kapalıdır ve standart kitaplığın uyarılar için genel ilkesinin bir istisnası olarak düzeltildi. (Standart kitaplık **/W4** temizdir, ancak **/Duvar** temiz olmaya çalışmaz. Birçok off-by-default uyarılar son derece gürültülü ve düzenli olarak kullanılmak üzere tasarlanmamıştır.)
+- Geliştirilmiş `std::list` hata ayıklama denetimleri. Liste yineleyicileri `operator->()`şimdi `list::unique()` denetleyin ve şimdi geçersiz olarak yineleyicileri işaretler.
+- 'de `tuple`sabit kullanım-ayırıcı metaprogramming
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- Birkaç standart kitaplık özelliği, C++ 17 standardına uygun olarak eklenmiştir, kullanımdan kaldırılmıştır veya kaldırılmıştır. Daha fazla bilgi için bkz [ C++ . Visual Studio 'da uyumluluk geliştirmeleri](cpp-conformance-improvements.md#improvements_155).
+- `std::partition`şimdi, standardın gerektirdiği gibi, yüklem N kez N + 1 katı yerine çağırır.
+- Sürüm 15.3'teki sihirli statikten kaçınma girişimleri sürüm 15.5'te onarılmıştır.
+- `std::atomic<T>`artık varsayılan `T` olarak yapılabilir olması gerekir.
+- Logaritmik zamanı alan yığın algoritmalar, yineleyici hata ayıklama etkinleştirildiğinde girişin aslında bir yığın olduğunu doğrusal bir zaman iddiaetmez.
+- `__declspec(allocator)`şimdi c1xx sadece, Bu declspec anlamıyor Clang, uyarıları önlemek için korunur.
+- `basic_string::npos`derleme zaman sabiti olarak kullanılabilir.
+- `std::allocator`C++17 modunda artık aşırı hizalanmış türlerin, yani hizalamalarının `max_align_t` **/Zc:alignedNew tarafından**devre dışı bırakılmadıkça, hizalamadaha büyük olan türlerin tahsisini düzgün bir şekilde işler.  Örneğin, 16 bayt veya 32 bayt hizalama ile nesnelerin vektörleri artık Düzgün SSE ve AVX yönergeleri için hizalanır.
+
+### <a name="conformance-improvements"></a>Uygunluk iyileştirmeleri
+
+- Biz \<herhangi\> \<bir\> `apply()`ekledi `make_from_tuple()`, string_view , .
+- Eklenen \<\>isteğe\> `shared_ptr::weak_type`bağlı \<, \<varyant\>, ve cstdalign .
+- Etkin `constexpr` C++14 `min(initializer_list)` `max(initializer_list)`içinde `minmax(initializer_list)`, `min_element()`, `max_element()`ve `minmax_element()`, ve , ve .
+
+Daha fazla bilgi için [Microsoft C++ dil uygunluk tablosuna](../visual-cpp-language-conformance.md)bakın.
+
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
+
+- Birkaç ek C++17 özelliği uygulanmıştır. Daha fazla bilgi için [Microsoft C++ dil uygunluk tablosuna](cpp-conformance-improvements.md#improvements_153)bakın.
+- Uygulanan P0602R0 "varyant ve isteğe bağlı kopyalama / taşıma önemsizlik yaymak gerekir".
+- Standart kütüphane artık dinamik RTTI'nin [/GR-](../build/reference/gr-enable-run-time-type-information.md) seçeneği ile devre dışı bırakılmasını resmen tolere ediyor. Hem `dynamic_pointer_cast()` `rethrow_if_nested()` de doğal `dynamic_cast`olarak gerektirir, bu yüzden `=delete` standart kütüphane şimdi / GR altında olarak **işaretler-**.
+- Dinamik RTTI **/GR-**, "statik RTTI" şeklinde `typeid(SomeType)` devre dışı bırakılmış olsa bile hala mevcuttur ve çeşitli standart kitaplık bileşenlerine güç verir. Standart kitaplık artık **/D\_HAS\_STATIC\_RTTI=0**ile bu özelliğin devre dışı bırakılmasını da destekler. Bu bayrak da devre `std::any`dışı `target()` `target_type()` kalır `std::function`, ve `get_deleter()` üye işlevleri `std::shared_ptr` `std::weak_ptr`, ve arkadaş üye işlevi ve .
+- Standart kitaplık artık koşullu `constexpr` olarak tanımlanmış makrolar yerine koşulsuz C++14 kullanır.
+- Standart kitaplık artık dahili diğer ad şablonlarını kullanır.
+- Standart kitaplık `nullptr` artık `nullptr_t{}`dahili olarak, yerine kullanır. (NULL'un dahili kullanımı ortadan kaldırılmıştır. 0-as-null'un dahili kullanımı yavaş yavaş temizlenmektedir.)
+- Standart kitaplık `std::move()` şimdi, stilistik olarak kötüye `std::forward()`kullanmak yerine dahili olarak kullanır.
+- Olarak `static_assert(false, "message")` `#error message`değiştirildi. Bu değişiklik derleyici tanılamayı geliştirir, çünkü `#error` derlemeyi hemen durdurur.
+- Standart kitaplık işlevleri artık `__declspec(dllimport)`" olarak işaretlemez. Modern bağlayıcı teknolojisi artık bunu gerektirmez.
+- İade türleri ve işlev bağımsız değişken iþlemi türleri ile karþılaştırılan dağıtımı azaltan varsayılan şablon argümanlarına SFINAE ayıklanmıştır.
+- Rasgele hata \<ayıklama denetimleri\> şimdi **stderr**çağırdı `fputs()` iç fonksiyonu `_Rng_abort()` yerine, standart kitaplığın olağan makine kullanın. Bu işlevin uygulaması ikili uyumluluk için korunur, ancak standart kitaplığın bir sonraki ikili uyumsuz sürümünde kaldırılmıştır.
+
+##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
+
+- C++17 standardına uygun olarak çeşitli standart kitaplık özellikleri eklendi, amortismana alındı veya kaldırıldı. Daha fazla bilgi için [Visual Studio'daki C++ uyumluluk iyileştirmelerine](cpp-conformance-improvements.md#improvements_155)bakın.
 - Aşağıdaki paralel algoritmalar için deneysel destek:
   - `all_of`
   - `any_of`
@@ -392,7 +392,7 @@ Daha fazla bilgi için bkz [. C++ Microsoft dil uygunluk tablosu](../visual-cpp-
   - `replace`
   - `replace_if`
   - `sort`
-- Aşağıdaki paralel algoritmaların imzaları Şu anda eklendi ancak paralelleştirilmedi; profil oluşturma, yalnızca öğeleri taşımanın veya persessize eden paralelleştirme algoritmalarında hiç avantaj bulunmadığını gösterdi:
+- Aşağıdaki paralel algoritmaların imzaları eklenir ancak şu anda paralelleştirilemez; profil oluşturma, yalnızca öğeleri hareket ettiren veya permute eden algoritmaları paralelleştirmede hiçbir fayda göstermedi:
   - `copy`
   - `copy_n`
   - `fill`
@@ -406,337 +406,337 @@ Daha fazla bilgi için bkz [. C++ Microsoft dil uygunluk tablosu](../visual-cpp-
 
 ##### <a name="visual-studio-2017-version-156"></a>Visual Studio 2017 sürüm 15.6
 
-- \<memory_resource >
-- Kitaplık temelleri v1
-- `polymorphic_allocator` atamasını silme
-- Sınıf şablonu bağımsız değişken kesintiyi geliştirme
+- \<memory_resource>
+- Kütüphane Temelleri V1
+- Atama silme `polymorphic_allocator`
+- Sınıf şablonu bağımsız değişken çıkarımını geliştirme
 
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-- Paralel algoritmalar için destek artık deneysel değildir
-- \<dosya sistemi > yeni bir uygulama
-- Elemensel dize dönüştürmeleri (kısmi)
+- Paralel algoritmalar için destek artık deneysel değil
+- Dosya sisteminin \<yeni bir uygulaması>
+- Temel dize dönüşümleri (kısmi)
 - `std::launder()`
 - `std::byte`
 - `hypot(x,y,z)`
-- Gereksiz Decay önleme
-- Matematik özel işlevleri
+- Gereksiz çürümeden kaçınma
+- Matematiksel özel fonksiyonlar
 - `constexpr char_traits`
-- Standart Kitaplık için kesinti Kılavuzu
+- Standart kitaplık için kesinti kılavuzları
 
-Daha fazla bilgi için bkz [. C++ Microsoft dil uygunluk tablosu](../visual-cpp-language-conformance.md).
+Daha fazla bilgi için [Microsoft C++ dil uygunluk tablosuna](../visual-cpp-language-conformance.md)bakın.
 
-### <a name="performance-and-throughput-fixes"></a>Performans ve verimlilik düzeltmeleri
+### <a name="performance-and-throughput-fixes"></a>Performans ve iş elde düzeltmeleri
 
-- `basic_string::find(char)` aşırı yükleme yalnızca bir kez `traits::find` çağrı yaptı. Daha önce, 1 uzunluğunda bir dize için genel bir dize araması olarak uygulanmıştır.
-- `basic_string::operator==` artık dizelerin içeriğini karşılaştırmadan önce dizenin boyutunu denetler.
-- Derleyici iyileştiricinin çözümlenmesi zor olan `basic_string`denetim bağlantısı kaldırıldı. Tüm kısa dizeler için `reserve` çağrılması, hiçbir şey yapmaz.
-- `std::vector`, doğruluk ve performans açısından aşırı kullanılabilir: ekleme ve emplace işlemleri sırasında diğer ad artık standart için gereken şekilde doğru şekilde işlendiğinden, güçlü özel durum garantisi artık standart için `move_if_noexcept()` ve diğer mantığa göre gerekli olduğunda sağlanır ve ekleme ve emplace daha az sayıda öğe işlemi gerçekleştirir.
-- C++ Standart kitaplık artık null süslü işaretçilerin başvurusunu önler.
-- İyileştirilmiş `weak_ptr::lock()` performansı.
-- Derleyici aktarım hızını artırmak için C++ , standart kitaplık üstbilgileri artık gereksiz derleyici iç bilgileri için bildirimleri de bulundurmaktan kaçının.
-- Üç defadan fazla `std::string` ve `std::wstring` taşıma oluşturucularının performansı geliştirildi.
+- Aşırı `basic_string::find(char)` yüklemeler `traits::find` sadece bir kez arama yaptı. Daha önce, uzunluk 1 bir dize için genel bir dize arama olarak uygulanmıştır.
+- `basic_string::operator==`dizeleri içeriğini karşılaştırmadan önce dize boyutunu denetler.
+- Derleyici optimize `basic_string`edicinin analiz etmesi zor olan denetim bağlantısını kaldırdı. Tüm kısa dizeleri `reserve` için, arama hala hiçbir şey yapmak için sıfır olmayan bir maliyeti vardır.
+- `std::vector`doğruluk ve performans için elden geçirildi: ekleme ve yerleştirme işlemleri sırasında takma adlama artık Standart tarafından gerekli olarak doğru şekilde işlenir, `move_if_noexcept()` güçlü özel durum garantisi şimdi Standart ve diğer mantık tarafından gerekli olduğunda sağlanır ve ekleme ve emplace daha az eleman işlemleri gerçekleştirmek.
+- C++ standart kitaplığı artık null fantezi işaretçileri dereferencing önler.
+- Geliştirilmiş `weak_ptr::lock()` performans.
+- Derleyici çıktısını artırmak için, C++ standart kitaplık üstbilgisi artık gereksiz derleyici içselleri için bildirimler ilerleyerek kaçının.
+- Yapıcıların `std::string` performansını `std::wstring` üç kattan fazla artırın ve hareket ettirin.
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
-- `std::atomic` uygulamasının yapılandırılmış özel durum Işleme (SEH) kullanan işlevlere uygulanmasını önleyen `noexcept` etkileşimleri etrafında çalışmıştır.
-- Standart kitaplığın iç `_Deallocate()` işlevi, daha küçük bir koda en iyileştirmek için değiştirilmiştir ve bunun daha fazla yere satır içine alınmış olmasını sağlar.
-- `std::try_lock()` özyineleme yerine paket genişletmesi kullanacak şekilde değiştirildi.
-- `std::lock()` kilitlenme engelleme algoritması, tüm kilitlere `try_lock()` dönmek yerine `lock()` işlemleri kullanacak şekilde geliştirildi.
-- `system_category::message()`' de adlandırılmış dönüş değeri Iyileştirmesi etkinleştirildi.
-- `conjunction` ve `disjunction` artık 2N + 2 türleri yerine N + 1 tür bir örneği oluşturur.
-- `std::function`, her tür silinmiş çağrılabilir için ayırıcı destek makineleri örneklemelerine, üretilen iş verimini artırarak ve birçok farklı lambdayı `std::function`bir şekilde geçiren programlarda. obj boyutunu azaltmasına artık izin vermez.
-- `allocator_traits<std::allocator>` el ile satır içine alınmış `std::allocator` işlemleri içerir ve yalnızca `allocator_traits` `std::allocator` ile etkileşime geçen koddaki kod boyutunu azaltır (çoğu kodda).
-- C++ 11 minimum ayırıcı arabirimi artık `allocator_traits` doğrudan çağrı yapan standart kitaplık tarafından işlenir. Bu, ayırıcıyı iç sınıf `_Wrap_alloc`sarmalama yerine Bu değişiklik, ayırıcı desteği için oluşturulan kod boyutunu azaltır, iyileştiricinin bazı durumlarda standart kitaplık kapsayıcıları hakkında neden olma yeteneğini geliştirir ve daha iyi bir hata ayıklama deneyimi sağlar (artık, hata ayıklayıcıda `_Wrap_alloc<your_allocator_type>` yerine ayırıcı türünü görürsünüz).
-- , Ayırıcıların gerçekte özelleştirilmesine izin verilmeyen özelleştirilmiş `allocator::reference`için meta programlama kaldırıldı. (Ayrıcılar kapsayıcıların süslü işaretçiler kullanmasına karşın daha fazla başvuru yapamaz.)
-- Derleyici ön ucu, hata ayıklama derlemelerinin performansını artırmak için Aralık tabanlı Döngülerde hata ayıklama yineleyicilerini sarmalandırmıştı.
-- `shrink_to_fit()` ve `reserve()` için `basic_string` iç küçültme yolu artık, yeniden konumlandırma işlemlerinin yolunda değildir ve tüm Üyeler için kod boyutunu azaltır.
-- `basic_string` iç büyüme yolu artık `shrink_to_fit()`yolunda değil.
-- `basic_string` değiştirici işlemleri artık ayırılamayan hızlı yola ve yavaş yol işlevlerine bölünmüştür ve bu da yaygın olmayan bir servis talebinin çağıranlar halinde yer alınmasına neden olur.
-- `basic_string` değiştirme işlemleri artık yeniden boyutlandırma yerine istenen durumda yeniden ayrılmış arabellekler oluşturur. Örneğin, bir dizenin başlangıcında ekleme artık içeriği yeniden ekleme işleminden sonra (aşağı veya yeni ayrılmış arabelleğe), yeniden konumlandırma durumunda (yeni ayrılan arabelleğe ve daha sonra aşağı) iki kez bir kez taşımıştır.
-- \<dize\> C standart kitaplığını çağıran işlemler artık TLS ile yinelenen etkileşimi kaldırmak için `errno` adresini önbelleğe almak üzere.
-- `is_pointer` uygulamasını basitleşme.
-- İşlev tabanlı Ifade SFINAE ' nin `struct` ve `void_t`tabanlı olarak değiştirilmesi bitti.
-- Standart Kitaplık algoritmaları artık, geri artan yineleyiciler yapmaktan kaçınır.
-- 64-bit sistemlerde 32 bit ayırıcılar kullanılırken düzeltilen kesme uyarıları.
-- `std::vector` taşıma ataması, mümkün olduğunda arabelleği yeniden kullanmak için artık eşit olmayan non-as-POSANMA olmayan durumda daha etkilidir.
+- Yapılandırılmış Özel Durum `noexcept` İşleme (SEH) kullanan işlevlere `std::atomic` uygulamanın ayarlanmasını engelleyen etkileşimler etrafında çalıştı.
+- Standart kitaplığın iç `_Deallocate()` işlevini daha küçük koda dönüştürmek için değiştirerek daha fazla yere inlined olmasını sağladı.
+- Özyineleme yerine paket genişletme sn kullanmak üzere değiştirildi. `std::try_lock()`
+- Tüm `std::lock()` kilitler `try_lock()` üzerinde dönen `lock()` yerine işlemleri kullanmak için kilitlenme kaçınma algoritması geliştirilmiş.
+- Adlandırılmış İade Değeri Optimizasyonu'nu ' da `system_category::message()`etkinleştirildi.
+- `conjunction`ve `disjunction` şimdi 2N + 2 türleri yerine N + 1 türlerini anında
+- `std::function`artık her tür silinmiş çağrılabilir için allocator destek makineleri anında, iş ve çok farklı lambdas `std::function`geçmek programlarda .obj boyutunu azaltarak.
+- `allocator_traits<std::allocator>`yalnızca (diğer `std::allocator` bir deyişle, çoğu kodda) `std::allocator` etkileşimde `allocator_traits` bulunan kod boyutunu azaltarak el ile inlined işlemleri içerir.
+- C++11 minimal ayırıcı arabirimi artık ayırıcıyı bir iç sınıfa `allocator_traits` `_Wrap_alloc`sarmak yerine doğrudan çağıran standart kitaplık tarafından işlenir. Bu değişiklik, ayırıcı desteği için oluşturulan kod boyutunu azaltır, bazı durumlarda standart kitaplık kapsayıcıları hakkında muhakeme en iyi duruma getirici yeteneğini geliştirir ve `_Wrap_alloc<your_allocator_type>` daha iyi bir hata ayıklama deneyimi sağlar (şimdi hata ayıklayıcı yerine allocator türünü gördüğünüz gibi).
+- Özelleştirilmiş `allocator::reference`meta programlama kaldırıldı, hangi ayırıcılar aslında özelleştirmek için izin verilmez. (Ayırıcılar kapsayıcılar süslü işaretçiler kullanmak, ancak fantezi referanslar yapabilirsiniz.)
+- Derleyici ön uç hata ayıklama devreleri döngüler için aralık tabanlı hata ayıklayıcıları açmak için öğretildi, hata ayıklama oluşturur performansını artırmak.
+- İç `basic_string` küçültme yolu `shrink_to_fit()` `reserve()` için ve artık işlemleri yeniden ayırma yolunda, tüm mutasyona uğrayan üyeler için kod boyutunu azaltarak.
+- Dahili `basic_string` büyüme yolu artık. `shrink_to_fit()`
+- `basic_string` Mutasyonişlemleri artık hızlı yol ayırmama ve yavaş yol işlevlerinin ayrılması na faktoringlere dahil edilme olasılığı na sahiptir.
+- Mutasyona `basic_string` uğrama işlemleri artık yeniden boyutlandırma yerine istenilen durumda yeniden ayrılmış arabellekler oluşturuyor. Örneğin, bir dize başında ekleme şimdi ekleme tam olarak bir kez (aşağı veya yeni ayrılan arabellek için), yerine iki kez yeniden ayırma durumda (yeni tahsis arabellek ve sonra aşağı) ekleme sonra içeriği taşır.
+- String'teki \<\> C standart kitaplığını çağıran `errno` işlemler artık TLS ile tekrarlanan etkileşimi kaldırmak için adresi önbelleğe alın.
+- `is_pointer` Uygulama basitleştirilmiş.
+- İşlev tabanlı İfade SFINAE'yi `struct` ve `void_t`-tabanlıyı değiştirmeyi bitirdi.
+- Standart kitaplık algoritmaları artık postincrementing yineleyiciler kaçının.
+- 64 bit sistemlerde 32 bit ayırıcılar kullanırken kesilme uyarıları düzeltildi.
+- `std::vector`taşıma ataması, mümkün olduğunda arabelleği yeniden kullanarak POCMA olmayan eşit tahsisatçı olmayan durumda artık daha verimlidir.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- `basic_string<char16_t>` artık aynı `memcmp`, `memcpy`ve benzer iyileştirmelerin `basic_string<wchar_t>` englikleri.
-- İşlev işaretçilerinin satır içine alınmış olmasını önleyen, Visual Studio 2015 güncelleştirme 3 ' te "işlevlerden kopyalanmaktan kaçının" çalışmamız tarafından sunulan bir iyileştirici sınırlaması, `lower_bound(iter, iter, function pointer)`, performansı geri yükleniyor.
-- `includes`, `set_difference`, `set_symmetric_difference`ve `set_union` girişlerinin sıra doğrulama yükü, sıralamadan önce yineleyiciler sarmalanmadan düşürüldü.
-- `std::inplace_merge` artık zaten konumunda olan öğeleri atlar.
-- Artık `std::random_device` oluşturup `std::string`yok eder.
-- `std::equal` ve `std::partition` bir yineleyici karşılaştırmayı kaydeden bir geçiş iş parçacığı iyileştirme geçişine sahipti.
-- `std::reverse`, üç aylık kopyalanabilir `T`işaretçiler geçirildiğinde, artık el yazısı vektör haline getirilmiş bir uygulamaya gönderim yapılır.
-- `std::fill`, `std::equal`ve `std::lexicographical_compare`, `memcmp` ve `std::byte` (ve diğer karakter benzeri numaralandırmalar ve Enum sınıfları) için `memset` ve `gsl::byte` gönderme hakkında daha fazla. `std::copy` `is_trivially_copyable`kullanarak dağıtımı yaptığından, hiçbir değişiklik gerektirmez.
-- Standart Kitaplık, yalnızca bir davranışı, türlerin daha duyarlı olmayan bir şekilde geri dönüşlü hale getirmek için olduğu boş küme ayraçları yok.
+- `basic_string<char16_t>`şimdi aynı `memcmp` `memcpy`, ve benzer optimizasyonlar `basic_string<wchar_t>` meşgul yürüter.
+- Visual Studio 2015 Update 3'teki "kopyalama işlevlerinden kaçınma" çalışmamıztarafından ortaya çıkarılan işlev işaretçilerin inlined olmasını engelleyen en `lower_bound(iter, iter, function pointer)`iyi duruma getirici sınırlaması, 'ın performansını geri kazandı.
+- Yineleme `includes`hata ayıklamanın girişlerin sipariş doğrulamasının yükü , , `set_difference` `set_symmetric_difference`, `set_union` ve siparişi denetlemeden önce yineleyicilerin paketlemesi azaltıldı.
+- `std::inplace_merge`şimdi zaten konumda olan öğeler üzerinden atlar.
+- Yapı `std::random_device` landırma artık inşa etmez ve `std::string`sonra bir .
+- `std::equal`ve `std::partition` bir yineleyici karşılaştırma kaydeder bir atlama iş parçacığı optimizasyonu geçiş vardı.
+- Önemsiz `std::reverse` kopyalanabilir `T`işaretçiler geçirildiğinde, şimdi bir el yazısı vektörel uygulamaya sevk edecektir.
+- `std::fill`, `std::equal`ve `std::lexicographical_compare` `memset` nasıl ve `memcmp` için `std::byte` ve `gsl::byte` (ve diğer char gibi enums ve enum sınıfları) sevk öğretildi. Gönderiler `std::copy` kullanarak `is_trivially_copyable`bu yana, herhangi bir değişiklik gerek yoktu.
+- Standart kitaplık artık tek davranışı türleri önemsiz olmayan yok edilemez hale getirmek olan boş ayraç yıkıcılar içermez.
 
-## <a name="other-libraries"></a>Diğer Kitaplıklar
+## <a name="other-libraries"></a>Diğer Kütüphaneler
 
 ### <a name="open-source-library-support"></a>Açık kaynak kitaplık desteği
 
-**Vcpkg** , Visual Studio 'da açık kaynaklı C++ STATIK-BS ve DLL 'ler alma ve oluşturma sürecini büyük ölçüde kolaylaştıran açık kaynaklı bir komut satırı aracıdır. Daha fazla bilgi için bkz. [vcpkg: Için C++bir paket yöneticisi ](../build/vcpkg.md).
+**Vcpkg,** Visual Studio'da açık kaynak kodlu C++ statik libs ve DLLS edinme ve oluşturma işlemini büyük ölçüde kolaylaştıran bir açık kaynak komut satırı aracıdır. Daha fazla bilgi için [vcpkg: C++ için bir paket yöneticisi.](../build/vcpkg.md)
 
 ### <a name="cpprest-sdk-290"></a>CPPRest SDK 2.9.0
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-İçin C++platformlar arası Web API 'Si olan CPPRestSDK, 2.9.0 sürümüne güncelleştirilmiştir. Daha fazla bilgi için bkz: [Cpprestsdk 2.9.0 GitHub 'da kullanılabilir](https://devblogs.microsoft.com/cppblog/cpprestsdk-2-9-0-is-available-on-github/).
+C++'ın platformötesi web API'si cpprestsdk, sürüm 2.9.0 olarak güncelleştirildi. Daha fazla bilgi için [Bkz. CppRestSDK 2.9.0 GitHub'da mevcuttur.](https://devblogs.microsoft.com/cppblog/cpprestsdk-2-9-0-is-available-on-github/)
 
 ### <a name="atl"></a>ATL
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- Ancak başka bir ad arama uyumluluğu düzeltmeleri kümesi
-- Mevcut taşıma oluşturucuları ve taşıma atama işleçleri artık atma olarak düzgün şekilde işaretlendi
-- Atlstr. h 'de yerel lekelerde iş parçacığı güvenli başlatması hakkında geçerli uyarı C4640
-- Yerel statiklerin iş parçacığı güvenli başlatması, bir DLL oluşturmak için ATL kullanılırken otomatik olarak XP araç takımı 'nda devre dışı bırakıldı, ancak artık bu değil. İş parçacığı güvenli başlatma kapalıysa, proje ayarlarınıza **/Zc: threadSafeInit-** ekleyebilirsiniz.
+- Henüz başka bir isim arama uygunluk düzeltmeleri kümesi
+- Varolan hareket oluşturucuları ve taşıma atama işleçleri artık atmayan olarak düzgün bir şekilde işaretlenmiştir
+- Unsuppress geçerli uyarı C4640 atlstr.h yerel statik iplik güvenli init hakkında
+- Yerel statiklerin iş parçacığı güvenli başlatma otomatik olarak bir DLL oluşturmak için ATL kullanırken XP araç kümesi kapatıldı, ama şimdi değil. İş parçacığı için güvenli bir başlatma isteniyorsa Proje ayarlarınıza **/Zc:threadSafeInit-** ekleyebilirsiniz.
 
 ### <a name="visual-c-runtime"></a>Görsel C++ çalışma zamanı
 
-- Denetim akışı koruyucusu sembolleri için yeni "cfguard. h" üstbilgisi.
+- Kontrol Akış Koruması sembolleri için yeni başlık "cfguard.h".
 
 ## <a name="c-ide"></a>C++ IDE
 
-- Yapılandırma değiştirme performansı, C++ yerel projeleri için daha iyi, C++/CLI projeleri için ise çok daha iyi bir duruma geldi. Bir çözüm yapılandırması ilk kez etkinleştirildiğinde, artık daha hızlı olur ve bu çözüm yapılandırmasının sonraki tüm etkinleştirmeleri neredeyse anında gerçekleşir.
+- Yapılandırma değiştirme performansı, C++ yerel projeleri için daha iyi, C++/CLI projeleri için ise çok daha iyi bir duruma geldi. Bir çözüm yapılandırması ilk kez etkinleştirildiğinde, artık daha hızlı olacaktır ve bu çözüm yapılandırmasının sonraki tüm etkinleştirmeleri neredeyse anlık olacaktır.
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
 - Çeşitli proje ve kod sihirbazları, imza iletişim kutusu stilinde yeniden yazıldı.
-- **Sınıf Ekle** artık doğrudan sınıf ekleme Sihirbazı 'nı başlatır. Daha önce burada olan diğer tüm öğeler artık > Ekle ' nin altında **Yeni öğe Ekle**' nin altında bulunabilir.
-- Win32 projeleri artık **Yeni proje** Iletişim kutusunda **Windows Masaüstü** kategorisi altındadır.
-- **Windows konsolu** ve **Masaüstü uygulama** şablonları artık bir sihirbaz görüntülemeden projeler oluşturur. Aynı kategoride, eski **Win32 konsol uygulaması** sihirbazıyla aynı seçenekleri görüntüleyen yeni bir **Windows Masaüstü Sihirbazı** var.
+- **Sınıf Ekle** şimdi doğrudan Sınıf Ekle sihirbazı başlattı. Daha önce burada olan diğer öğelerin tümü artık **Yeni Öğe ekle**> altında kullanılabilir.
+- Win32 projeleri artık **Yeni Proje** iletişim kutusunda **Windows Masaüstü** kategorisi altında.
+- **Windows Console** ve **Masaüstü Uygulaması** şablonları artık bir sihirbaz görüntülemeden projeleri oluşturur. Eski **Win32 Konsol Uygulaması** sihirbazıyla aynı seçenekleri görüntüleyen aynı kategori altında yeni bir **Windows Masaüstü Sihirbazı** vardır.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Yeniden C++ düzenleme ve kod gezintisi için IntelliSense altyapısını kullanan birkaç işlem çok daha hızlı çalışır. Aşağıdaki sayılar, 3500 projeleriyle Visual Studio Jmıum çözümüne dayalıdır:
+Refactoring ve kod navigasyonu için IntelliSense altyapısını kullanan birkaç C++ işlemi çok daha hızlı çalışır. Aşağıdaki sayılar 3500 projeile Visual Studio Krom çözümdayanmaktadır:
 
 |||
 |-|-|
-|Özellik|Performans Iyileştirmesi|
-|Yeniden Adlandır|5.3 x|
-|Imzayı Değiştir |4.5 x|
-|Tüm Başvuruları Bul|4.7 x|
+|Özellik|Performans Geliştirme|
+|Rename|5.3 x|
+|İmzayı Değiştir |4.5 x|
+|Tüm Başvuruları Bul|4.7x|
 
-C++Artık CTRL + tıklama **tanımına git**' i destekler. böylece, tanımlara kolay bir şekilde gezinme yapabilirsiniz. Üretkenlik güç araçları paketinden yapı görselleştiricisi, artık varsayılan olarak ürüne de dahildir.
+C++ artık Ctrl+Click **To Definition'ı**destekleyip, tanımlara fare gezinmeyi kolaylaştırıyor. Verimlilik Elektrikli Araçlar paketinden Yapı Görselleştiricisi artık varsayılan olarak ürüne de dahil edilmiştir.
 
 ## <a name="intellisense"></a>IntelliSense
 
-- Yeni SQLite tabanlı veritabanı altyapısı artık varsayılan olarak kullanılıyor. Bu, **Tanıma Git** ve **tüm başvuruları bul**gibi veritabanı işlemlerini hızlandıracak ve ilk çözüm ayrıştırma süresini önemli ölçüde iyileştirmenize olanak sağlar. Ayar, **> metin düzenleyicisi > C/C++ > gelişmiş ' e > seçeneklere** taşındı (daha önce... C/C++ | Deneysel).
+- Yeni SQLite tabanlı veritabanı altyapısı artık varsayılan olarak kullanılıyor. Bu, **Tanıya Git** ve **Tüm Başvuruları Bul**gibi veritabanı işlemlerini hızlandıracak ve ilk çözüm ayrıştırmanı önemli ölçüde artıracaktır. Ayar, Metin Düzenleyicisi > > Araçlar > Seçenekleri'ne taşınmış **> C/C++ gelişmiş** (eskiden ... C/C++ | Deneysel).
 
-- Önceden derlenmiş üst bilgiler kullanmayan projelerde ve dosyalarda IntelliSense performansını geliştirdik. Geçerli dosyadaki üst bilgiler için otomatik önceden derlenmiş üst bilgi oluşturulur.
+- Önceden derlenmiş üstbilgi kullanmayan projeler ve dosyalarda IntelliSense performansını artırdık - geçerli dosyadaki üstbilgi için Otomatik Önceden Derlenmiş Üstbilgi oluşturulacaktır.
 
 - Hata listesindeki IntelliSense hataları için hata filtreleme ve yardım özelliği ekledik. Şimdi hata sütununa tıklandığında filtreleme sağlanıyor. Ayrıca, belirli hatalara tıklandığında veya F1’e basıldığında, hata iletisi için bir çevrimiçi arama başlatılacak.
 
   ![Hata Listesi](media/ErrorList1.png "Hata Listesi")
 
-  ![Hata Listesi filtrelenmiş](media/ErrorList2.png "Filtrelenmiş Hata Listesi")
+  ![Filtrelenmiş Hata Listesi](media/ErrorList2.png "Filtrelenmiş Hata Listesi")
 
 - Üye Listesi öğelerini türe göre filtreleme özelliği eklendi.
 
-  ![Üye listesi filtreleme](media/mlfiltering.png "Üye Listesi Filtreleme")
+  ![Üye Listesi Filtreleme](media/mlfiltering.png "Üye Listesi Filtreleme")
 
-- Üye listesinde görüntülendiklere bağlamsal olarak uyumlu filtreleme sağlayan yeni bir deneysel tahmine dayalı IntelliSense özelliği eklendi. Daha fazla bilgi için bkz [ C++ . IntelliSense geliştirmeleri-tahmine dayalı IntelliSense & filtreleme](https://devblogs.microsoft.com/cppblog/c-intellisense-improvements-predictive-intellisense-filtering/).
-- **Tüm başvuruları bul** (Shift + F12) artık karmaşık kod tabanlarında bile kolay bir şekilde yararlanmanıza yardımcı olur. Gelişmiş gruplandırma, filtreleme, sıralama, sonuçları içinde arama ve (bazı diller için) renklendirme sağlar, böylece başvurularınızı net bir şekilde anlayabilmenizi sağlayabilirsiniz. İçin C++yeni kullanıcı arabirimi, bir değişkene okuduğumuz veya bir değişkene yazma yapılıp yaptığımız hakkında bilgi içerir.
-- Daha önce deneme sürecinde olan Noktadan Oka Dönüştürme IntelliSense özelliği artık gelişmiş düzeye gelmiştir ve varsayılan olarak etkindir. Düzenleyici özellikleri **kapsamlar ' ı genişletin** ve **genişletilmiş öncelik** de deneysel ' dan Gelişmiş ' e taşınmıştır.
-- Deneysel yeniden düzenleme özellikleri **Imza değiştirme** ve **ayıklama işlevi** artık varsayılan olarak kullanılabilir.
-- Projeler için C++ deneysel ' daha hızlı proje yükü ' özelliği eklendi. Bir projeyi bir C++ sonraki açışınızda daha hızlı yüklenir ve bu süre sonra *çok* daha hızlı yüklenecektir!
-- Bu özelliklerden bazıları diğer dillerde ortaktır ve bazıları için C++özeldir. Bu yeni özellikler hakkında daha fazla bilgi için bkz. [Visual Studio "15" Preview 5 duyurusu](https://devblogs.microsoft.com/visualstudio/announcing-visual-studio-15-preview-5/).
+- Üye Listesinde görünenlerin bağlamsal olarak farkında filtreleme sağlayan yeni bir deneysel Predictive IntelliSense özelliği eklendi. Daha fazla bilgi için [Bkz. C++ IntelliSense Geliştirmeler - Predictive IntelliSense & Filtreleme](https://devblogs.microsoft.com/cppblog/c-intellisense-improvements-predictive-intellisense-filtering/).
+- **Tüm Referansları Bul** (Shift+F12) artık karmaşık codebase'lerde bile kolayca gezinmenize yardımcı olur. Gelişmiş gruplandırma, filtreleme, sıralama, sonuçlar içinde arama ve (bazı diller için) renklendirme sağlar, böylece başvurularınızı net bir şekilde anlayabilirsiniz. C++'da yeni kullanıcı arabirimi, bir değişkenden okuyup okumadığımız veya bir değişkene yazıp yazmadığımız hakkında bilgi içerir.
+- Daha önce deneme sürecinde olan Noktadan Oka Dönüştürme IntelliSense özelliği artık gelişmiş düzeye gelmiştir ve varsayılan olarak etkindir. Düzenleyici özellikleri **Genişletme Kapsamları** ve **Genişletme Önceliği** de deneyselden gelişmişe taşınmıştır.
+- Deneysel yeniden düzenleme özellikleri **İmzayı Değiştir** ve **Ayıklama İşlevini** Değiştir artık varsayılan olarak kullanılabilir.
+- C++ projeleri için deneysel bir 'Daha hızlı proje yükü' özelliği eklendi. Bir dahaki sefere bir C++ projesini açtığınızda daha hızlı yüklenir ve bundan sonraki zaman *çok* daha hızlı yüklenir!
+- Bu özelliklerden bazıları diğer dillerde yaygındır ve bazıları C++'a özgüdür. Bu yeni özellikler hakkında daha fazla bilgi için Visual [Studio "15" Preview 5'i duyurmak](https://devblogs.microsoft.com/visualstudio/announcing-visual-studio-15-preview-5/)için bkz.
 
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-- ClangFormat için destek eklendi. Daha fazla bilgi için bkz. [Visual Studio 2017 ' de Clangformat desteği](https://devblogs.microsoft.com/cppblog/clangformat-support-in-visual-studio-2017-15-7-preview-1/).
+- ClangFormat için destek eklendi. Daha fazla bilgi için [Visual Studio 2017'de ClangFormat Desteği'ne](https://devblogs.microsoft.com/cppblog/clangformat-support-in-visual-studio-2017-15-7-preview-1/)bakın.
 
-## <a name="non-msbuild-projects-with-open-folder"></a>Açık klasörü olan MSBuild olmayan projeler
+## <a name="non-msbuild-projects-with-open-folder"></a>Açık Klasörlü MSBuild olmayan projeler
 
-Visual Studio 2017, hiçbir çözüm veya proje oluşturmak zorunda kalmadan kaynak kodu içeren bir klasörde kodlamanıza, oluşturmanıza ve hata ayıklamanıza olanak sağlayan **açık klasör** özelliğini tanıtır. Artık, projeniz MSBuild tabanlı bir proje olmasa bile Visual Studio 'Yu kullanmaya başlamak çok basittir. **Açık klasör**sayesinde, Visual Studio 'nun MSBuild projeleri için zaten sağladığı güçlü kod anlama, düzenlemesi, derleme ve hata ayıklama özelliklerine erişebilirsiniz. Daha fazla bilgi için bkz. [klasör projelerini C++açın ](../build/open-folder-projects-cpp.md).
+Visual Studio 2017, herhangi bir çözüm veya proje oluşturmaya gerek kalmadan kaynak kodu içeren bir klasörde kodlamanızı, oluşturmanızı ve hata ayıklamanızı sağlayan **Açık Klasör** özelliğini sunar. Projeniz MSBuild tabanlı bir proje olmasa bile Visual Studio'ya başlamak artık çok daha kolay. **Open Folder**ile Visual Studio'nun MSBuild projeleri için sağladığı güçlü kod anlama, düzenleme, oluşturma ve hata ayıklama özelliklerine erişebilirsiniz. Daha fazla bilgi için [C++ için Klasör Aç projelerine](../build/open-folder-projects-cpp.md)bakın.
 
-- Klasör Aç deneyimi geliştirmeleri. Bu. JSON dosyaları aracılığıyla deneyimi özelleştirebilirsiniz:
+- Klasör Aç deneyimi geliştirmeleri. Bu .json dosyaları aracılığıyla deneyimi özelleştirebilirsiniz:
   - IntelliSense ve göz atma deneyimini özelleştirmek için CppProperties.json.
   - Derleme adımlarını özelleştirmek için Tasks.json.
   - Hata ayıklama deneyimini özelleştirmek için Launch.json.
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
-- Alternatif derleyiciler ve MinGW ve Cygwin gibi yapı ortamları için geliştirilmiş destek. Daha fazla bilgi için bkz. [MinGW ve Cygwin 'Yi Visual C++ ve açık klasörü kullanma](https://devblogs.microsoft.com/cppblog/using-mingw-and-cygwin-with-visual-cpp-and-open-folder/).
-- CppProperties. JSON ve CMakeSettings. JSON içinde genel ve yapılandırmaya özgü ortam değişkenlerini tanımlamaya yönelik destek eklendi. Bu ortam değişkenleri, Launch. vs. JSON ve Tasks. vs. JSON içinde tanımlanan hata ayıklama yapılandırmalarına göre tüketilebilir. Daha fazla bilgi için bkz. [ortamınızı görsel C++ ve açık klasör ile özelleştirme](https://devblogs.microsoft.com/cppblog/customizing-your-environment-with-visual-c-and-open-folder/).
-- 64 bitlik platformları kolayca hedefleyebilme özelliği de dahil olmak üzere CMake Dokja üreticisi için geliştirilmiş destek.
+- MinGW ve Cygwin gibi alternatif derleyiciler ve yapı ortamları için geliştirilmiş destek. Daha fazla bilgi için Bkz. [Görsel C++ ve Open Klasörü ile MinGW ve Cygwin'i kullanma.](https://devblogs.microsoft.com/cppblog/using-mingw-and-cygwin-with-visual-cpp-and-open-folder/)
+- CppProperties.json ve CMakeSettings.json'da genel ve yapılandırmaya özgü ortam değişkenlerini tanımlamak için destek eklendi. Bu ortam değişkenleri launch.vs.json'da tanımlanan hata ayıklama yapılandırmaları ve görevler.vs.json'daki görevler tarafından tüketilebilir. Daha fazla bilgi için Bkz. [Visual C++ ve Open Folder ile Ortamınızı Özelleştirme.](https://devblogs.microsoft.com/cppblog/customizing-your-environment-with-visual-c-and-open-folder/)
+- Kolayca 64-bit platformlar hedef yeteneği de dahil olmak üzere CMake Ninja jeneratör için geliştirilmiş destek.
 
-## <a name="cmake-support-via-open-folder"></a>Açık klasör aracılığıyla CMake desteği
+## <a name="cmake-support-via-open-folder"></a>COpen Klasörü üzerinden destek yap
 
-Visual Studio 2017, MSBuild proje dosyalarına (. vcxproj) dönüştürülmeksizin CMake projelerini kullanma desteği sunar. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake projeleri](../build/cmake-projects-in-visual-studio.md). **Açık klasörü** olan CMake projelerini açmak, ortamı düzenlenmek, oluşturmak C++ ve hata ayıklama için otomatik olarak yapılandırır.
+Visual Studio 2017, MSBuild proje dosyalarına (.vcxproj) geçmeden CMake projelerini kullanmak için destek sunar. Daha fazla bilgi için [Visual Studio'daki CMake projelerine](../build/cmake-projects-in-visual-studio.md)bakın. **CMake** projelerini Open Folder ile açmak, C++ düzenleme, oluşturma ve hata ayıklama için ortamı otomatik olarak yapılandırır.
 
-- C++IntelliSense, kök klasörde CppProperties. JSON dosyası oluşturmaya gerek kalmadan işe yarar. Ayrıca, kullanıcıların CMake ve CppProperties. JSON dosyaları tarafından verilen yapılandırmalara kolayca geçiş yapmasına olanak tanımak için yeni bir açılan menü ekledik.
+- C++ IntelliSense kök klasöründe bir CppProperties.json dosyası oluşturmaya gerek kalmadan çalışır. Ayrıca, kullanıcıların CMake ve CppProperties.json dosyaları tarafından sağlanan yapılandırmalar arasında kolayca geçiş yapabilmelerini sağlamak için yeni bir açılır bilgi ekledik.
 
 - CMakeLists.txt dosyasıyla aynı klasörde yer alan CMakeSettings.json dosyasıyla ek yapılandırma gerçekleştirilmesi desteklenir.
 
-  ![CMake klasör aç](media/cmake-cpp.png "CMake klasör aç")
+  ![Cmake Klasör Aç](media/cmake-cpp.png "CMake Açık Klasör")
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
-- CMake Dokja Oluşturucu için destek eklendi.
-
-##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
-
-- Mevcut CMake önbellekleri içeri aktarılmaya yönelik destek eklendi.
+- CMake Ninja jeneratörü için destek eklendi.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- CMake 3,11 için destek eklendi, CMake projelerinde kod analizi, Çözüm Gezgini içinde hedefleri, önbellek oluşturma seçeneklerini ve tek dosya derlemesini destekler. Daha fazla bilgi için bkz. Visual [Studio 'Da CMake desteği](https://devblogs.microsoft.com/cppblog/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual Studio 'da CMake projeleri](../build/cmake-projects-in-visual-studio.md).
-
-## <a name="windows-desktop-development-with-c"></a>İle Windows masaüstü geliştirmeC++
-
-Özgün C++ iş yükünü yüklemek için şimdi daha ayrıntılı bir yükleme deneyimi sağlıyoruz. Tam olarak ihtiyacınız olan araçları yükleyebilmenizi sağlayan, seçilebilir bileşenler ekledik. Yükleyici Kullanıcı arabiriminde listelenen bileşenlerin belirtilen yükleme boyutları doğru değil ve toplam boyutu düşük olarak tahmin ediyor.
-
-C++ masaüstü iş yükünde Win32 projelerini başarıyla oluşturabilmek için, hem araç takımını hem de Windows SDK’yi yüklemelisiniz. Çalıştığından emin olmak için önerilen (seçili) bileşenleri **VC + + 2017 v141 araç takımı (x86, x64)** ve **Windows 10 SDK (10.0.** Gerekli araçlar yüklü değilse, projeler başarıyla oluşturulmaz ve sihirbaz askıda kalır.
+- Varolan CMake önbelleklerini almak için destek eklendi.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Visual C++ derleme araçları (daha önce tek başına bir ürün olarak kullanılabilir) artık Visual Studio yükleyicisi bir iş yükü olarak eklenmiştir. Bu iş yükü, yalnızca Visual Studio IDE 'yi C++ yüklemeden projeler oluşturmak için gereken araçları kurar. Hem v140 hem de v141 araç takımları dahil edilmiştir. V141 araç takımı, Visual Studio 2017 sürüm 15,5 ' deki en son geliştirmeleri içerir. Daha fazla bilgi için bkz. [şimdi VISUAL STUDIO derleme araçları VS2017 ve VS2015 MSVC Toolsets](https://devblogs.microsoft.com/cppblog/visual-studio-build-tools-now-include-the-vs2017-and-vs2015-msvc-toolsets/)' i içerir.
+- CMake 3.11 için eklenen destek, CMake projelerinde kod analizi, Çözüm Gezgini'nde Hedefler görünümü, önbellek oluşturma seçenekleri ve tek dosya derlemesi. Daha fazla bilgi için [Visual Studio'da CMake Desteği](https://devblogs.microsoft.com/cppblog/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual Studio'daki CMake projelerine](../build/cmake-projects-in-visual-studio.md)bakın.
+
+## <a name="windows-desktop-development-with-c"></a>C++ ile Windows masaüstü geliştirme
+
+Özgün C++ iş yükünü yüklemek için şimdi daha ayrıntılı bir yükleme deneyimi sağlıyoruz. Tam olarak ihtiyacınız olan araçları yükleyebilmenizi sağlayan, seçilebilir bileşenler ekledik. Yükleyici Ara Birimi'nde listelenen bileşenler için belirtilen yükleme boyutları doğru değildir ve toplam boyutu hafife alır.
+
+C++ masaüstü iş yükünde Win32 projelerini başarıyla oluşturabilmek için, hem araç takımını hem de Windows SDK’yi yüklemelisiniz. Önerilen (seçili) bileşenleri **VC++ 2017 v141 araç setini (x86, x64)** ve **Windows 10 SDK'yı (10.0.nnnnnn)** yükleyin. Gerekli araçlar yüklenmezse, projeler başarıyla oluşturulmaz ve sihirbaz askıda olur.
+
+##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
+
+Visual C++ Build araçları (daha önce bağımsız bir ürün olarak kullanılabilir) artık Visual Studio Yükleyici'de iş yükü olarak eklenmiştir. Bu iş yükü, Visual Studio IDE'yi yüklemeden yalnızca C++ projeleri oluşturmak için gereken araçları yükler. Hem v140 hem de v141 araç setleri dahildir. v141 araç seti Visual Studio 2017 sürüm 15.5'teki en son geliştirmeleri içerir. Daha fazla bilgi için Visual Studio Build Tools'a bakın şimdi [VS2017 ve VS2015 MSVC Araç Setleri'ni ekleyin.](https://devblogs.microsoft.com/cppblog/visual-studio-build-tools-now-include-the-vs2017-and-vs2015-msvc-toolsets/)
 
 ## <a name="linux-development-with-c"></a>C++ ile Linux geliştirme
 
 Popüler [Linux Geliştirme için Visual C++](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e) eklentisi artık Visual Studio’nun bir parçasıdır. Bu yükleme, Linux ortamında çalışan C++ uygulamalarını geliştirmek ve hatalarını ayıklamak için ihtiyacınız olan her şeyi sağlar.
 
-##### <a name="visual-studio-2017-version-152"></a>Visual Studio 2017 sürüm 15,2
+##### <a name="visual-studio-2017-version-152"></a>Visual Studio 2017 sürüm 15.2
 
-Platformlar arası kod paylaşımı ve tür görselleştirmede geliştirmeler yapılmıştır. Daha fazla bilgi için bkz [. C++ platformlar arası kod paylaşımı ve tür görselleştirme için Linux geliştirmeleri](https://devblogs.microsoft.com/cppblog/linux-cross-platform-and-type-visualization/).
+Platformlar arası kod paylaşımı ve tür görselleştirmesinde iyileştirmeler yapılmıştır. Daha fazla bilgi için, [platformlar arası kod paylaşımı ve tür görselleştirmeiçin Linux C++ geliştirmelerine](https://devblogs.microsoft.com/cppblog/linux-cross-platform-and-type-visualization/)bakın.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- Linux iş yükü, uzak Linux makinelerine dosya eşitlemek için **SFTP** 'ye alternatif olarak **rsync** desteği eklemiştir.
-- ARM mikro denetleyicileri hedefleyen çapraz derleme için destek eklendi. Yükleme sırasında etkinleştirmek için, iş yüküyle **Linux geliştirmeyi C++**  seçin ve **katıştırılmış ve IoT geliştirme**seçeneğini belirleyin. Bu seçenek, ARM GCC çapraz derleme araçlarını ekler ve yüklemenize yapılır. Daha fazla bilgi için bkz. [Visual Studio 'Da ARM GCC çapraz derlemesi](https://devblogs.microsoft.com/cppblog/arm-gcc-cross-compilation-in-visual-studio/).
-- CMake için destek eklendi. Artık, Visual Studio projesine dönüştürmek zorunda kalmadan mevcut CMake kod tabanınız üzerinde çalışabilirsiniz. Daha fazla bilgi için bkz. [Linux CMake projesini yapılandırma](../linux/cmake-linux-project.md).
-- Uzak görevleri çalıştırmaya yönelik destek eklendi. Bu özellik, Visual Studio 'nun bağlantı Yöneticisi 'nde tanımlanmış uzak bir sistemde herhangi bir komutu çalıştırmanızı sağlar. Uzak görevler Ayrıca uzak sisteme dosya kopyalama özelliğini de sağlar.
-Daha fazla bilgi için bkz. [Linux CMake projesini yapılandırma](../linux/cmake-linux-project.md).
+- Linux iş yükü uzak Linux makineleri dosyaları senkronize etmek için **sftp** alternatif olarak **rsync** için destek ekledi.
+- ARM mikrodenetleyicilerini hedefleyen çapraz derleme için destek eklenir. Yüklemede etkinleştirmek için C++ iş **yüküne sahip Linux geliştirmeyi** seçin ve **Gömülü ve IoT Geliştirme**seçeneğini seçin. Bu seçenek ARM GCC çapraz derleme araçlarını ve kurulumunuza yap'ı ekler. Daha fazla bilgi için [Visual Studio'da ARM GCC Cross Derlemesi'ne](https://devblogs.microsoft.com/cppblog/arm-gcc-cross-compilation-in-visual-studio/)bakın.
+- CMake için destek eklendi. Artık bir Visual Studio projesine dönüştürmek zorunda kalmadan varolan CMake kod tabanı üzerinde çalışabilirsiniz. Daha fazla bilgi için bkz: [Linux CMake Projesini Yapılandır.](../linux/cmake-linux-project.md)
+- Uzak görevleri çalıştırmak için destek eklendi. Bu özellik, Visual Studio'nun Bağlantı Yöneticisi'nde tanımlanan uzak bir sistemde herhangi bir komut çalıştırmanızı sağlar. Uzak görevler de uzak sisteme dosyaları kopyalamak için yeteneği sağlar.
+Daha fazla bilgi için bkz: [Linux CMake Projesini Yapılandır.](../linux/cmake-linux-project.md)
 
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-- Linux iş yükü senaryolarında çeşitli geliştirmeler. Daha fazla bilgi için bkz [. C++ proje sisteminde Linux iş yükü geliştirmeleri, Linux konsol penceresi, rsync ve işleme iliştirme](https://devblogs.microsoft.com/cppblog/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
-- Uzak Linux bağlantılarında üst bilgiler için IntelliSense. Daha fazla bilgi için bkz. [uzak Linux üstbilgileri Için IntelliSense](https://devblogs.microsoft.com/cppblog/intellisense-for-remote-linux-headers/) ve [bir Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md).
+- Linux iş yükü senaryolarında çeşitli iyileştirmeler. Daha fazla bilgi için, [Proje Sistemi, Linux Console Penceresi, rsync ve İşleme Ekle'de Linux C++ İş Yükü geliştirmelerine](https://devblogs.microsoft.com/cppblog/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/)bakın.
+- Uzak Linux bağlantılarındaki başlıklar için IntelliSense. Daha fazla bilgi [için, Uzak Linux Başlıkları için IntelliSense'e](https://devblogs.microsoft.com/cppblog/intellisense-for-remote-linux-headers/) bakın ve [Bir Linux CMake Projesi'ni yapılandırın.](../linux/cmake-linux-project.md)
 
 ## <a name="game-development-with-c"></a>C++ ile oyun geliştirme
 
 C++’ın gücünü kullanarak DirectX veya Cocos2d tarafından desteklenen profesyonel oyunlar oluşturun.
 
-## <a name="mobile-development-with-c-android-and-ios"></a>İle C++ mobil geliştirme (Android ve iOS)
+## <a name="mobile-development-with-c-android-and-ios"></a>C++ ile mobil geliştirme (Android ve iOS)
 
 Artık Visual Studio kullanarak Android ve iOS platformlarını hedefleyebilen mobil uygulamalar geliştirebilir ve hatalarını ayıklayabilirsiniz.
 
 ## <a name="universal-windows-apps"></a>Evrensel Windows Uygulamaları
 
-C++, Evrensel Windows Uygulaması iş yükü için isteğe bağlı bir bileşen olarak sağlanır.  C++ projelerinin şu anda el ile yükseltilmesi gerekiyor. Visual Studio 2017 ' de v140 hedefli bir Evrensel Windows Platformu Projesi açarsanız, Visual Studio 2015 ' in yüklü olmadığı durumlarda proje özellik sayfalarında v141 platform araç takımını seçmeniz gerekir.
+C++, Evrensel Windows Uygulaması iş yükü için isteğe bağlı bir bileşen olarak sağlanır.  C++ projelerinin şu anda el ile yükseltilmesi gerekiyor. Visual Studio 2017'de v140 hedefli bir Evrensel Windows Platformu projesi açarsanız, Visual Studio 2015 yüklü değilse proje özelliği sayfalarındaki v141 platform araç kümesini seçmeniz gerekir.
 
-## <a name="new-options-for-c-on-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP C++ ) için yeni seçenekler
+## <a name="new-options-for-c-on-universal-windows-platform-uwp"></a>Evrensel Windows Platformu'nda C++ için yeni seçenekler (UWP)
 
-Artık Evrensel Windows Platformu ve Windows Mağazası için uygulama yazma ve C++ paketlemeye yönelik yeni seçenekleriniz vardır: Masaüstü Köprüsü altyapısını, var olan masaüstü UYGULAMANıZı veya com nesnesini Windows Mağazası aracılığıyla veya mevcut kanallarınızdan dışarıdan yükleme yoluyla dağıtmak üzere paketlemek için kullanabilirsiniz. Windows 10 ' daki yeni yetenekler, masaüstü uygulamanıza çeşitli yollarla UWP işlevselliği eklemenize olanak tanır. Daha fazla bilgi için bkz. [Masaüstü Köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
+Artık Evrensel Windows Platformu ve Windows Mağazası için C++ uygulamalarını yazmak ve paketlemek için yeni seçenekleriniz var: Mevcut masaüstü uygulamanızı veya COM nesnenizi Windows Mağazası üzerinden veya yan yükleme yoluyla mevcut kanallarınız aracılığıyla dağıtım için paketlemek için Desktop Bridge altyapısını kullanabilirsiniz. Windows 10'daki yeni özellikler, masaüstü uygulamanıza çeşitli şekillerde UWP işlevselliği eklemenize olanak tanır. Daha fazla bilgi için [Desktop Bridge'e](/windows/uwp/porting/desktop-to-uwp-root)bakın.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Masaüstü ile masaüstü uygulamalarının paketlenmesi büyük ölçüde basitleşerek bir **Windows uygulaması paketleme projesi** proje şablonu eklenmiştir. Dosya | altında kullanılabilir  **Yeni | Proje | Yüklendi | Görsel C++ | Evrensel Windows Platformu**. Daha fazla bilgi için bkz. [Visual Studio (Masaüstü Köprüsü) kullanarak bir uygulamayı paketleme](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+Masaüstü Köprüsü ile masaüstü uygulamalarının paketletini büyük ölçüde kolaylaştıran bir **Windows Uygulama Paketleme Projesi** proje şablonu eklenir. Dosya altında mevcuttur **| Yeni | Proje | Yüklü | Görsel C++ | Evrensel Windows Platformu**. Daha fazla bilgi için [Visual Studio (Desktop Bridge) kullanarak bir uygulamayı paketle'ye](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)bakın.
 
-Yeni kod yazarken artık yalnızca başlık dosyalarında uygulanan Windows Çalışma Zamanı C++için standart C++ bir dil projeksiyonu olan/wınrt 'yi kullanabilirsiniz. Her iki standartlara uyumlu C++ derleyici kullanarak Windows çalışma zamanı API 'leri yazar ve kullanmanızı sağlar. C++/Wınrt, geliştiricilere modern Windows C++ API 'sine ilk sınıf erişim sağlayacak şekilde tasarlanmıştır. Daha fazla bilgi için bkz [ C++./wınrt: C++ modern Windows çalışma zamanı](https://moderncpp.com/).
+Yeni kod yazarken, artık yalnızca üstbilgi dosyalarında uygulanan Windows Runtime için standart bir C++ dil projeksiyonu olan C++/WinRT'yi kullanabilirsiniz. Standartlara uygun C++ derleyicisini kullanarak Windows Runtime API'lerini hem yazar hem de tüketmenizi sağlar. C++/WinRT, C++ geliştiricilerinin modern Windows API'sine birinci sınıf erişim sağlamasını sağlamak üzere tasarlanmıştır. Daha fazla bilgi için [Bkz. C++/WinRT: Windows Runtime için Modern C++](https://moderncpp.com/).
 
-Windows SDK Insider Preview 'ın derleme 17025 itibariyle, C++/wınrt Windows SDK dahil edilmiştir. Daha fazla bilgi için bkz [ C++./wınrt artık Windows SDK içeriyor](https://devblogs.microsoft.com/cppblog/cppwinrt-is-now-included-the-windows-sdk/).
+Windows SDK Insider Preview'un 17025'inin oluşturulması ndan itibaren C++/WinRT Windows SDK'ya dahildir. Daha fazla bilgi için [C++/WinRT'ye bakın windows sdk'ya dahil edildi.](https://devblogs.microsoft.com/cppblog/cppwinrt-is-now-included-the-windows-sdk/)
 
-## <a name="clangc2-platform-toolset"></a>Clang/C2 platform araç takımı
+## <a name="clangc2-platform-toolset"></a>Clang/C2 platform araç seti
 
-Visual Studio 2017 ile birlikte gelen Clang/C2 araç takımı artık büyük projeler oluşturmak için önemli olan **/bigobj** anahtarını destekliyor. Ayrıca, derleyicinin hem ön ucunda hem de arka ucunda bazı önemli hata düzeltmeleri de içerir.
+Visual Studio 2017 ile birlikte gönderilen Clang/C2 araç seti, büyük projeler oluşturmak için çok önemli olan **/bigobj** anahtarını destekliyor. Ayrıca, derleyicinin hem ön ucunda hem de arka ucunda bazı önemli hata düzeltmeleri de içerir.
 
-## <a name="c-code-analysis"></a>C++Kod Analizi
+## <a name="c-code-analysis"></a>C++ kod analizi
 
-[C++ Temel Yönergeleri](https://github.com/isocpp/CppCoreGuidelines)’nin uygulanmasını sağlayan C++ Temel Denetleyicileri artık Visual Studio ile dağıtılmaktadır. Projenin özellik sayfalarındaki **Kod Analizi uzantıları** sayfasında bulunan denetleyicileri etkinleştirmek yeterlidir ve Kod analizini çalıştırdığınızda uzantılar dahil edilir. Daha fazla bilgi için bkz. [ C++ temel yönergeler denetleyicilerini kullanma](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
+[C++ Temel Yönergeleri](https://github.com/isocpp/CppCoreGuidelines)’nin uygulanmasını sağlayan C++ Temel Denetleyicileri artık Visual Studio ile dağıtılmaktadır. Projenin özellik sayfalarındaki **Kod Analizi Uzantıları** sayfasındaki damaları etkinleştirmeniz yeterlidir ve kod çözümlemesi çalıştırdığınızda uzantılar eklenecektir. Daha fazla bilgi için [Bkz. C++ Çekirdek Yönergeleri denetleyicilerini kullanma.](/cpp/code-quality/using-the-cpp-core-guidelines-checkers)
 
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck özellikleri sayfası")
 
-##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15,3
+##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
 - Kaynak yönetimiyle ilgili kurallar için destek eklendi.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- Yeni C++ temel kılavuz denetimleri, akıllı işaretçi doğruluğunu, genel başlatıcıların doğru kullanımını ve `goto` ve hatalı yayınlar gibi yapıların kullanımları işaretlerinin ele alınmaktadır.
+- Yeni C++ Çekirdek Yönergeleri akıllı işaretçi doğruluğunu, genel başlatıcıların doğru kullanımını `goto` ve kötü ve kötü dökümler gibi yapıların kullanımını işaretlemeyi kapsar.
 
 - 15.3 sürümünde karşılaşabileceğiniz bazı uyarı numaraları 15.5 sürümünde artık mevcut değil. Bu uyarıların yerine daha belirgin denetimler kullanıma sunuldu.
 
 ##### <a name="visual-studio-2017-version-156"></a>Visual Studio 2017 sürüm 15.6
 
-- Tek Dosya Analizi için destek eklendi ve çözümleme çalışma zamanı performansı geliştirmeleri. Daha fazla bilgi için bkz [ C++ . Visual Studio için statik analiz geliştirmeleri 2017 15,6 Preview 2](https://devblogs.microsoft.com/cppblog/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
+- Tek dosya çözümlemesi için destek ve analiz çalışma zamanı performansındaki iyileştirmeler eklendi. Daha fazla bilgi için bkz: [Visual Studio 2017 15.6 Önizleme 2 için C++ Statik Analiz Geliştirmeleri](https://devblogs.microsoft.com/cppblog/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
 
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-- Çalıştırılacak kod analizi kurallarını belirtmenize imkan tanıyan [/Analyze: RuleSet](../build/reference/analyze-code-analysis.md)için destek eklendi.
-- Ek C++ temel kılavuz kuralları için destek eklendi.  Daha fazla bilgi için bkz. [ C++ temel yönergeler denetleyicilerini kullanma](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
+- [/analyze:ruleset](../build/reference/analyze-code-analysis.md)için eklenen destek, çalışacak kod çözümleme kurallarını belirtmenizi sağlar.
+- Ek C++ Temel Yönergeleri kuralları için destek eklendi.  Daha fazla bilgi için [Bkz. C++ Çekirdek Yönergeleri denetleyicilerini kullanma.](/cpp/code-quality/using-the-cpp-core-guidelines-checkers)
 
 ## <a name="unit-testing"></a>Birim testi
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Google test bağdaştırıcı ve Boost. test bağdaştırıcısı artık iş yüküyle **Masaüstü geliştirmenin C++**  bileşenleri olarak kullanılabilir ve **Test Gezgini**ile tümleşiktir. **Test Gezgini** ile tam tümleştirme henüz mevcut olmasa da CMake projeleri Için ctest desteği eklendi (açık klasör kullanılarak). Daha fazla bilgi için bkz. [C/C++Için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp).
+Google Test Bağdaştırıcısı ve Boost.Test Adaptörü artık C++ iş **yüküne sahip Masaüstü Geliştirme** bileşenleri olarak kullanılabilir ve Test **Explorer**ile entegre edilmiştir. Cmake projeleri için CTest desteği (Açık Klasör kullanılarak) eklenir, ancak **Test Gezgini** ile tam tümleştirme henüz kullanılamıyor. Daha fazla bilgi için [C/C++ için yazı birimi testlerine](/visualstudio/test/writing-unit-tests-for-c-cpp)bakın.
 
 ##### <a name="visual-studio-2017-version-156"></a>Visual Studio 2017 sürüm 15.6
 
-- Boost. test dinamik kitaplık desteği için destek eklendi.
-- Bir Boost. test öğe şablonu artık IDE 'de kullanılabilir.
+- Boost.Test dinamik kitaplık desteği için destek eklendi.
+- Bir Boost.Test öğesi şablonu artık IDE'de kullanılabilir.
 
-Daha fazla bilgi için bkz [. Boost. test birim testi: dinamik kitaplık desteği ve yeni öğe şablonu](https://devblogs.microsoft.com/cppblog/boost-test-unit-testing-dynamic-library-support-and-new-item-template/).
+Daha fazla bilgi için [Bkz. Boost.Test Unit Test: Dinamik Kitaplık desteği ve Yeni Öğe Şablonu.](https://devblogs.microsoft.com/cppblog/boost-test-unit-testing-dynamic-library-support-and-new-item-template/)
 
-##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15,7
+##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-Birim testi projeleri için C++ [CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) desteği eklendi. Daha fazla bilgi için bkz. [birim testi Için C++ CodeLens duyurusu](https://devblogs.microsoft.com/cppblog/announcing-codelens-for-c-unit-testing/).
+[C++](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) birim test projeleri için CodeLens desteği eklendi. Daha fazla bilgi için [C++ Birim Testi için CodeLens'i Duyur'a](https://devblogs.microsoft.com/cppblog/announcing-codelens-for-c-unit-testing/)bakın.
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio grafik tanılama
 
-Visual Studio Grafik Tanılama, Direct3D uygulamalarında işleme ve performans sorunlarını kaydetmek ve analiz etmek için bir araç kümesidir. Grafik Tanılama özellikler, Windows bilgisayarınızda, Windows cihaz öykünücüsünde veya uzak bir bılgısayarda veya cihazda yerel olarak çalışan uygulamalarla kullanılabilir.
+Visual Studio Graphics Diagnostics, Direct3D uygulamalarında render ve performans sorunlarını kaydetmek ve analiz etmek için bir araç kümesidir. Grafik Tanılama özellikleri, Windows bilgisayarınızda, Windows aygıt emülatörlerinde veya uzak bir bilgisayarda veya aygıtta yerel olarak çalışan uygulamalarla kullanılabilir.
 
-- **Köşe ve geometri gölgelendiriciler Için giriş & çıkışı:** Köşe gölgelendiricilerinin ve geometri gölgelendiricilerin giriş ve çıkışını görüntüleyebilme özelliği, en çok istenen özelliklerden biridir ve artık araçlarda destekleniyor. Aşağıdaki tabloda giriş ve çıkışını inceleyerek, işlem hattı aşamaları görünümünde VS veya GS aşamasını seçmeniz yeterlidir.
+- **Vertex ve Geometri gölgeleyiciler için Giriş & Çıktı:** Vertex gölgeleyicilerin ve geometri gölgelilerinin giriş ve çıktılarını görüntüleme yeteneği en çok istenen özelliklerden biri olmuştur ve artık araçlarda desteklenmiştir. Aşağıdaki tabloda giriş ve çıktısını incelemeye başlamak için Boru Hattı Aşamaları görünümündeki VS veya GS aşamasını seçmeniz yeterlidir.
 
-  ![Gölgelendiriciler için giriş/çıkış](media/io-shaders.png)
+  ![Gölgeliler için giriş/Çıkış](media/io-shaders.png)
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
   ![Arama](media/search.png)
 
-- **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklamanız yeterlidir.
+- **Kaynak Geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanıldığı gibi bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sağlar. Herhangi bir kaynak için geçmişi çağırmak için, herhangi bir kaynak köprü yanındaki saat simgesini tıklatın.
 
   ![Kaynak geçmişi](media/resource-history.png)
 
-  Bu işlem, kaynağın değişiklik geçmişiyle doldurulan yeni **kaynak geçmişi** araç penceresini gösterir.
+  Bu, kaynağın değişiklik geçmişiyle doldurulan yeni **Kaynak Geçmişi** araç penceresini görüntüler.
 
   ![Kaynak geçmişi değişikliği](media/resource-history-change.png)
 
-  Çerçevesanınızın tam çağrı yığını yakalaması etkin (**Visual studio > araçları >** **Grafik tanılama**) ile yakalandıysa, her bir değişiklik olayının bağlamı hızlı bir şekilde ele alınabilir ve Visual Studio projeniz içinde incelenebilir.
+  Çerçeveniz tam çağrı yığını yakalama etkin **(Visual Studio > Araçları > Seçenekleri** Grafik **Tanılama**altında) ile yakalandıysa, her değişiklik olayının bağlamı Visual Studio projenizde hızla çıkarılabilir ve denetlenebilir.
 
-- **API İstatistikleri:** Çerçeveinizdeki API kullanımının üst düzey özetini görüntüleyin. Her seferinde yaptığınız fark etmediğiniz veya çok fazla yaptığınız çağrılardan oluşan çağrıları bulmak için kullanışlıdır. Bu pencere, Visual Studio Grafik Çözümleyicisi içindeki **View > API istatistikleri** aracılığıyla kullanılabilir.
+- **API İstatistikleri:** Çerçevenizde API kullanımının üst düzey bir özetini görüntüleyin. Yaptığınız ın farkında olmadığınız aramaları veya çok fazla yaptığınız aramaları keşfetmek için kullanışlıdır. Bu pencere, Visual Studio Graphics **Analyzer'da > API İstatistikleri görüntüle** ile kullanılabilir.
 
   ![API istatistikleri](media/api-stats.png)
 
-- **Bellek İstatistikleri:** Çerçevede oluşturduğunuz kaynaklar için sürücünün ne kadar bellek ayırıyor olduğunu görüntüleyin. Bu pencere, **Visual Studio grafik Çözümleyicisi**' de **Görüntüleme > bellek istatistikleri** aracılığıyla kullanılabilir. Veriler, bir elektronik tabloda görüntülenmek üzere sağ tıklayıp **Tümünü Kopyala**' yı seçerek bir CSV dosyasına kopyalanabilir.
+- **Bellek İstatistikleri:** Sürücünün çerçevede oluşturduğunuz kaynaklar için ne kadar bellek ayırdığını görüntüleyin. Bu pencere, **Visual Studio Grafik Analizörü'nde**> Bellek **İstatistikleri Görüntüle** ile kullanılabilir. Veriler, elektronik tabloda görüntülemek için bir CSV dosyasına sağ tıklayarak ve **Tümlerini**Kopyala'yı seçerek kopyalanabilir.
 
-  ![Bellek İstatistikleri](media/memory-stats.png)
+  ![Bellek istatistikleri](media/memory-stats.png)
 
-- **Çerçeve doğrulaması:** Yeni hatalar ve uyarılar listesi, Direct3D hata ayıklama katmanının algıladığı olası sorunlara göre olay listenizde gezinmek için kolay bir yol sağlar. Pencereyi açmak için Visual Studio Grafik Çözümleyicisi **> çerçeve doğrulamayı görüntüle** ' ye tıklayın. Ardından, çözümlemeyi başlatmak için **doğrulamayı Çalıştır** ' a tıklayın. Çerçevenin karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.
+- **Çerçeve Doğrulama:** Yeni hatalar ve uyarılar listesi, Direct3D hata ayıklama katmanı tarafından algılanan olası sorunlara bağlı olarak etkinlik listenizde gezinmenin kolay bir yolunu sağlar. Pencereyi açmak için Visual Studio Graphics Analyzer'da **Çerçeve Doğrulama>** görüntüleyin'i tıklatın. Ardından çözümlemesi başlatmak için **Doğrulamayı Çalıştır'ı** tıklatın. Çerçevenin karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.
 
   ![Çerçeve doğrulama](media/frame-validation.png)
 
-- **D3D12 Için Çerçeve Analizi:** Çerçeve analizini, yönlendirilmiş "durum" denemeleri ile çizilen çağrı performansını çözümlemek için kullanın. Çerçeve Analizi sekmesine geçin ve raporu görüntülemek için analiz çalıştırın. Daha fazla ayrıntı için, [Goingnative 25: Visual Studio grafik çerçeve çözümlemesi](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) videosunu izleyin.
+- **D3D12 için Çerçeve Analizi:** Yönlendirilmiş "ne olur" denemeleri ile draw-call performansını analiz etmek için Çerçeve Analizi'ni kullanın. Raporu görüntülemek için Çerçeve Analizi sekmesine geçin ve çözümlemeyi çalıştırın. Daha fazla bilgi için [GoingNative 25: Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) videosunu izleyin.
 
   ![Çerçeve analizi](media/frame-analysis.png)
 
-- **GPU kullanımı iyileştirmeleri:** Açık izlemeler, daha ayrıntılı analizler için GPU görünümü veya Windows Performans Çözümleyicisi (WPA) aracıyla Visual Studio GPU kullanımı profil oluşturucu aracılığıyla alınabilir. Windows performans araç seti yüklüyse, bir diğeri, bir WPA ve GPU için başka bir deyişle, oturum genel bakış ' a kadar olmak üzere iki köprü bulunur.
+- **GPU Kullanım Geliştirmeleri:** Açık izlemeler, daha ayrıntılı analiz için GPU Görünümü veya Windows Performans Çözümleyicisi (WPA) aracıyla Visual Studio GPU Kullanım profilleyicisi aracılığıyla alınabilir. Windows Performance Toolkit yüklüyse, biri WPA diğeri GPU Görünümü için olmak üzere iki köprü vardır.
 
   ![GPU kullanımı](media/gpu-usage.png)
 
-  Bu bağlantı aracılığıyla GPU görünümünde açılan izlemeler, VS ve GPU görünümü arasındaki zaman çizelgesinde eşitlenmiş yakınlaştırma ve yatay kaydırmayı destekler. VS 'deki bir onay kutusu, eşitlemenin etkin olup olmadığını denetlemek için kullanılır.
+  Bu bağlantı aracılığıyla GPU Görünümü'nde açılan izler, VS ve GPU View arasındaki zaman çizelgesinde senkronize yakınlaştırmayı ve kaydırmayı destekler. Eşitlemenin etkin olup olmadığını denetlemek için VS'deki bir onay kutusu kullanılır.
 
-  ![GPU görünümü](media/gpu-view.png)
+  ![GPU Görünümü](media/gpu-view.png)
 
 ::: moniker-end
 
 ::: moniker range="=vs-2015"
 
-Visual Studio 2015 güncelleştirme 3 ' ten yeniliklerin tamamı hakkında bilgi için bkz. [Visual C++ Studio 'nun yenilikler 2003-2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015). Visual Studio 2015 ' deki yenilikler hakkında daha fazla bilgi için bkz. [Visual studio 2015 Sürüm notları geçmişinden](/visualstudio/releasenotes/vs2015-version-history)bağlantılı sürüm notları. Visual Studio 2019 ' C++ deki yenilikler hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'daki](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019)yenilikler. Visual Studio 2017 ' C++ deki yenilikler hakkında daha fazla bilgi için bkz. [Visual Studio 2017 ' C++ deki](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017)yenilikler.
+Visual Studio 2015 Update 3 ile yeniliklerin tam listesi için [Visual C++ What's New 2003-2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)bölümüne bakın. Visual Studio 2015'in tümindeki yenilikler hakkında daha fazla bilgi için [Visual Studio 2015 Release Notes History](/visualstudio/releasenotes/vs2015-version-history)ile bağlantılı sürüm notlarına bakın. Visual Studio 2019'da C++ için yenilikler hakkında bilgi için [Visual Studio'da C++ için yeniliklere](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019)bakın. Visual Studio 2017'de C++ için yenilikler hakkında bilgi için [Visual Studio 2017'de C++ için yeniliklere](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017)bakın.
 
 ::: moniker-end

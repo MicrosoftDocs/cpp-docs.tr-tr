@@ -1,5 +1,5 @@
 ---
-title: CAtlTransactionManager sınıfı
+title: CAtlTransactionManager Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlTransactionManager
@@ -25,19 +25,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-ms.openlocfilehash: d72867eaa449a20e676d4eddc4c94c02090334e5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5c2814f963ea4814e0d7585e0e4d6dda26c1f04d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497728"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321318"
 ---
-# <a name="catltransactionmanager-class"></a>CAtlTransactionManager sınıfı
+# <a name="catltransactionmanager-class"></a>CAtlTransactionManager Sınıfı
 
-CAtlTransactionManager sınıfı, çekirdek Işlem yöneticisi (KTM) işlevlerine bir sarmalayıcı sağlar.
+CAtlTransactionManager sınıfı, Kernel Transaction Manager (KTM) işlevlerine bir sarmalayıcı sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,52 +49,52 @@ class CAtlTransactionManager;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[~ CAtlTransactionManager](#dtor)|CAtlTransactionManager yok edici.|
-|[CAtlTransactionManager](#catltransactionmanager)|CAtlTransactionManager Oluşturucusu.|
+|[~CAtlTransactionManager](#dtor)|CAtlTransactionManager yıkıcı.|
+|[Catltransactionmanager](#catltransactionmanager)|CAtlTransactionManager oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Kapat](#close)|İşlem tanıtıcısını kapatır.|
-|[Uygulayın](#commit)|İşlemin yürütüldüğü istek.|
-|[Oluşturma](#create)|İşlem tanıtıcısını oluşturur.|
-|[CreateFile](#createfile)|Bir dosya, dosya akışı veya dizini işlem temelli bir işlem olarak oluşturur veya açar.|
-|[DeleteFile](#deletefile)|Var olan bir dosyayı işlenen işlem olarak siler.|
-|[FindFirstFile](#findfirstfile)|Bir dosya veya alt dizinin dizinini işlenen işlem olarak arar.|
-|[GetFileAttributes](#getfileattributes)|Belirtilen dosya veya dizinin dosya sistemi özniteliklerini işlem temelli bir işlem olarak alır.|
-|[GetFileAttributesEx](#getfileattributesex)|Belirtilen dosya veya dizinin dosya sistemi özniteliklerini işlem temelli bir işlem olarak alır.|
-|[GetHandle](#gethandle)|İşlem tanıtıcısını döndürür.|
-|[Isgeri dönüş](#isfallback)|Geri dönüş çağrılarının etkinleştirilip etkinleştirilmeyeceğini belirler.|
-|[MoveFile](#movefile)|Var olan bir dosyayı veya bir dizini, alt öğeleri de dahil olmak üzere işlem temelli bir işlem olarak kaydırır.|
-|[RegCreateKeyEx](#regcreatekeyex)|Belirtilen kayıt defteri anahtarını oluşturur ve bir işlem ile ilişkilendirir. Anahtar zaten varsa, işlev onu açar.|
-|[RegDeleteKey](#regdeletekey)|Bir alt anahtarı ve değerlerini, kayıt defterinin belirtilen platforma özgü görünümünden işlem temelli bir işlem olarak siler.|
-|[RegOpenKeyEx](#regopenkeyex)|Belirtilen kayıt defteri anahtarını açar ve bir işlem ile ilişkilendirir.|
-|[Etkin](#rollback)|İşlemin geri alınmasına yönelik istekler.|
-|[SetFileAttributes](#setfileattributes)|Bir dosya veya dizinin özniteliklerini işlem temelli bir işlem olarak ayarlar.|
+|[Kapat](#close)|Hareket tutamacından birini kapatır.|
+|[İşleme](#commit)|Hareketin işlenmesini talep eder.|
+|[Oluştur](#create)|Hareket tutamacını oluşturur.|
+|[Createfile](#createfile)|İşlenen bir işlem olarak bir dosya, dosya akışı veya dizin oluşturur veya açar.|
+|[Dosyayı Sil](#deletefile)|İşlenen bir işlem olarak varolan bir dosyayı siler.|
+|[Findfirstfile](#findfirstfile)|İşlenen bir işlem olarak bir dosya veya alt dizini arar.|
+|[Dosya Özelliklerini Al](#getfileattributes)|İşlenen bir işlem olarak belirli bir dosya veya dizin için dosya sistem özniteliklerini alır.|
+|[GetFileAttributesEx](#getfileattributesex)|İşlenen bir işlem olarak belirli bir dosya veya dizin için dosya sistem özniteliklerini alır.|
+|[GetHandle](#gethandle)|Hareket tutamacını döndürür.|
+|[IsFallback](#isfallback)|Geri dönüş çağrılarının etkin olup olmadığını belirler.|
+|[Movefile](#movefile)|Varolan bir dosyayı veya çocukları da dahil olmak üzere bir dizini işleyen bir işlem olarak taşır.|
+|[RegCreateKeyEx](#regcreatekeyex)|Belirtilen kayıt defteri anahtarını oluşturur ve bir hareketle ilişkilendirer. Anahtar zaten varsa, işlev açar.|
+|[RegDeleteKey](#regdeletekey)|Bir alt anahtarı ve değerlerini, kayıt defterinin işlenme işlemi olarak belirtilen platforma özgü görünümünden siler.|
+|[RegOpenKeyEx](#regopenkeyex)|Belirtilen kayıt defteri anahtarını açar ve bir hareketle ilişkilendirin.|
+|[Geri alma](#rollback)|Hareketin geri alınmasını talep etmek.|
+|[SetFileAttributes](#setfileattributes)|İşlenen bir işlem olarak bir dosya veya dizin özniteliklerini ayarlar.|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[m_bFallback](#m_bfallback)|Geri dönüş destekleniyorsa doğru; Aksi takdirde FALSE.|
-|[m_hTransaction](#m_htransaction)|İşlem tanıtıcısı.|
+|[m_bFallback](#m_bfallback)|Geri dönüş desteklenirse DOĞRU; YANLIŞ aksi takdirde.|
+|[m_hTransaction](#m_htransaction)|Hareket tutamacı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[ATL:: CAtlTransactionManager](../../atl/reference/catltransactionmanager-class.md)
+[ATL::CAtlTransactionManager](../../atl/reference/catltransactionmanager-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atltransactionmanager. h
+**Üstbilgi:** atltransactionmanager.h
 
-##  <a name="dtor"></a>~ CAtlTransactionManager
+## <a name="catltransactionmanager"></a><a name="dtor"></a>~CAtlTransactionManager
 
-CAtlTransactionManager yok edici.
+CAtlTransactionManager yıkıcı.
 
 ```
 virtual ~CAtlTransactionManager();
@@ -102,11 +102,11 @@ virtual ~CAtlTransactionManager();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normal işlemede, işlem otomatik olarak kaydedilir ve kapatılır. Bir özel durum bırakma sırasında yıkıcı çağrılırsa, işlem geri alınır ve kapatılır.
+Normal işlemede, hareket otomatik olarak kaydedilir ve kapatılır. Yıkıcı bir özel durum gevşemesi sırasında çağrılırsa, hareket geri alınır ve kapatılır.
 
-##  <a name="catltransactionmanager"></a>CAtlTransactionManager
+## <a name="catltransactionmanager"></a><a name="catltransactionmanager"></a>Catltransactionmanager
 
-CAtlTransactionManager Oluşturucusu.
+CAtlTransactionManager oluşturucu.
 
 ```
 CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE);
@@ -115,16 +115,16 @@ CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE
 ### <a name="parameters"></a>Parametreler
 
 *bFallback*<br/>
-DOĞRU, destek geri dönüşü gösterir. İşlem temelli işlev başarısız olursa, sınıf otomatik olarak "işlem temelli olmayan" işlevini çağırır. FALSE, "Fallback" çağrılarının olmadığını gösterir.
+TRUE destek geri dönüşünü gösterir. İşlenen işlev başarısız olursa, sınıf otomatik olarak "işlemeyen" işlevi çağırır. FALSE hiçbir "geri dönüş" çağrıları gösterir.
 
-*bAutoCreateTransaction*<br/>
-TRUE, işlem işleyicisinin oluşturucuda otomatik olarak oluşturulduğunu gösterir. FALSE, olmadığını gösterir.
+*bAutoCreateİşlem*<br/>
+TRUE, işlem işleyicisinin oluşturucuda otomatik olarak oluşturulduğunu gösterir. YANLIŞ olmadığını gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="close"></a>~Eksik
+## <a name="close"></a><a name="close"></a>Yakın
 
-İşlem tanıtıcısını kapatır.
+Hareket tutamacını kapatır.
 
 ```
 inline BOOL Close();
@@ -132,15 +132,15 @@ inline BOOL Close();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `CloseHandle` işlevini çağırır. Yöntemi yıkıcıda otomatik olarak çağırılır.
+Bu sarıcı `CloseHandle` işlevi çağırır. Yöntem otomatik olarak yıkıcı olarak adlandırılır.
 
-##  <a name="commit"></a>Uygulayın
+## <a name="commit"></a><a name="commit"></a>Tamamlama
 
-İşlemin yürütüldüğü istek.
+Hareketin işlenmesini talep eder.
 
 ```
 inline BOOL Commit();
@@ -148,15 +148,15 @@ inline BOOL Commit();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `CommitTransaction` işlevini çağırır. Yöntemi yıkıcıda otomatik olarak çağırılır.
+Bu sarıcı `CommitTransaction` işlevi çağırır. Yöntem otomatik olarak yıkıcı olarak adlandırılır.
 
-##  <a name="create"></a>Oluşturma
+## <a name="create"></a><a name="create"></a>Oluşturmak
 
-İşlem tanıtıcısını oluşturur.
+Hareket tutamacını oluşturur.
 
 ```
 inline BOOL Create();
@@ -164,15 +164,15 @@ inline BOOL Create();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `CreateTransaction` işlevini çağırır. Şunu denetleyin
+Bu sarıcı `CreateTransaction` işlevi çağırır. Kontrol edin
 
-##  <a name="createfile"></a>CreateFile
+## <a name="createfile"></a><a name="createfile"></a>Createfile
 
-Bir dosya, dosya akışı veya dizini işlem temelli bir işlem olarak oluşturur veya açar.
+İşlenen bir işlem olarak bir dosya, dosya akışı veya dizin oluşturur veya açar.
 
 ```
 inline HANDLE CreateFile(
@@ -188,25 +188,25 @@ inline HANDLE CreateFile(
 ### <a name="parameters"></a>Parametreler
 
 *lpFileName*<br/>
-Oluşturulacak veya açılacak nesnenin adı.
+Oluşturulacak veya açılacak bir nesnenin adı.
 
 *dwDesiredAccess*<br/>
-Okuma, yazma, her ikisi veya hiçbiri (sıfır) olarak özetlenebilir nesnesine erişim. En yaygın olarak kullanılan değerler GENERIC_READ, GENERIC_WRITE veya her ikisiyle sahiptir: GENERIC_READ &#124; GENERIC_WRITE.
+Her ikisi de veya ikisi birden (sıfır) olarak özetlenebilir nesneye erişim. En sık kullanılan değerler GENERIC_READ, GENERIC_WRITE veya her ikisi dir: GENERIC_READ &#124; GENERIC_WRITE.
 
 *dwShareMode*<br/>
-Okuma, yazma, her ikisi, silme, bunların tümü veya hiçbiri olabilen bir nesnenin Paylaşım modu: 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.
+Bir nesnenin paylaşım modu, okunabilir, yazar, her ikisi de, silinebilir, bunların tümü veya hiçbiri: 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.
 
 *lpSecurityAttributes*<br/>
-İsteğe bağlı güvenlik tanımlayıcısı içeren bir SECURITY_ATTRIBUTES yapısına yönelik işaretçi ve ayrıca döndürülen Tanıtıcının alt süreçler tarafından devralınıp alınmayacağını belirler. Parametre NULL olabilir.
+İsteğe bağlı güvenlik tanımlayıcısı içeren ve döndürülen tanıtıcının alt işlemler tarafından devralınıp alınamayacağını da belirleyen SECURITY_ATTRIBUTES bir yapıya işaretçi. Parametre NULL olabilir.
 
 *dwCreationDisposition*<br/>
-Var olan ve olmayan dosyalarda gerçekleştirilecek bir eylem. Bu parametre, birleştirilemeyecek aşağıdaki değerlerden biri olmalıdır: CREATE_ALWAYS, CREATE_NEW, OPEN_ALWAYS, OPEN_EXISTING veya TRUNCATE_EXISTING.
+Var olan ve olmayan dosyalar üzerinde yapılacak bir eylem. Bu parametre birleştirilemeyen aşağıdaki değerlerden biri olmalıdır: CREATE_ALWAYS, CREATE_NEW, OPEN_ALWAYS, OPEN_EXISTING veya TRUNCATE_EXISTING.
 
 *dwFlagsAndAttributes*<br/>
-Dosya öznitelikleri ve bayrakları. Bu parametre, kullanılabilir dosya özniteliklerinin herhangi bir birleşimini içerebilir (FILE_ATTRIBUTE_ *). Tüm diğer dosya öznitelikleri FILE_ATTRIBUTE_NORMAL geçersiz kılar. Bu parametre, arabelleğe alma davranışı, erişim modları ve\*diğer özel amaçlı bayrakların denetimi için bayrakların (FILE_FLAG_) birleşimlerini de içerebilir. Bunlar tüm FILE_ATTRIBUTE_\* değerleriyle birleştirir.
+Dosya öznitelikleri ve bayraklar. Bu parametre, kullanılabilir dosya özniteliklerinin herhangi bir birleşimini içerebilir (FILE_ATTRIBUTE_*). Diğer tüm dosya öznitelikleri FILE_ATTRIBUTE_NORMAL geçersiz kılar. Bu parametre, arabelleğe alma\*davranışı, erişim modları ve diğer özel amaçlı bayrakları denetlemek için bayrak (FILE_FLAG_) birleşimleri de içerebilir. Bunlar FILE_ATTRIBUTE_\* değerleri yle birleştirir.
 
 *hTemplateFile*<br/>
-GENERIC_READ erişim hakkına sahip bir şablon dosyası için geçerli bir tanıtıcı. Şablon dosyası, oluşturulmakta olan dosyanın dosya özniteliklerini ve genişletilmiş özniteliklerini sağlar. Bu parametre NULL olabilir.
+GENERIC_READ erişim hakkı olan bir şablon dosyasına geçerli bir tanıtıcı. Şablon dosyası, oluşturulan dosya için dosya öznitelikleri ve genişletilmiş öznitelikleri sağlar. Bu parametre NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -214,11 +214,11 @@ Nesneye erişmek için kullanılabilecek bir tanıtıcı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `CreateFileTransacted` işlevini çağırır.
+Bu sarıcı `CreateFileTransacted` işlevi çağırır.
 
-##  <a name="deletefile"></a>DeleteFile
+## <a name="deletefile"></a><a name="deletefile"></a>Dosyayı Sil
 
-Var olan bir dosyayı işlenen işlem olarak siler.
+İşlenen bir işlem olarak varolan bir dosyayı siler.
 
 ```
 inline BOOL DeleteFile(LPCTSTR lpFileName);
@@ -231,11 +231,11 @@ Silinecek dosyanın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `DeleteFileTransacted` işlevini çağırır.
+Bu sarıcı `DeleteFileTransacted` işlevi çağırır.
 
-##  <a name="findfirstfile"></a>FindFirstFile
+## <a name="findfirstfile"></a><a name="findfirstfile"></a>Findfirstfile
 
-Bir dosya veya alt dizinin dizinini işlenen işlem olarak arar.
+İşlenen bir işlem olarak bir dosya veya alt dizini arar.
 
 ```
 inline HANDLE FindFirstFile(
@@ -246,22 +246,22 @@ inline HANDLE FindFirstFile(
 ### <a name="parameters"></a>Parametreler
 
 *lpFileName*<br/>
-Aranacak dizin veya yol ve dosya adı. Bu parametre, yıldız işareti (*) veya soru işareti () gibi joker karakter içerebilir.
+Dizin veya yol ve aranacak dosya adı. Bu parametre, yıldız işareti (*) veya soru işareti () gibi joker karakter içerebilir.
 
-*Pnextınfo*<br/>
-Bulunan bir dosya veya alt dizin hakkında bilgi alan WIN32_FIND_DATA yapısına yönelik bir işaretçi.
+*pNextInfo*<br/>
+Bulunan bir dosya veya alt dizin hakkında bilgi alan WIN32_FIND_DATA yapıya işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri, veya `FindNextFile` `FindClose`için sonraki çağrıda kullanılan bir arama tanıtıcıdır. İşlev başarısız olursa veya *lpFileName* parametresindeki arama dizesinden dosyaları bulamazsa, dönüş değeri INVALID_HANDLE_VALUE olur.
+İşlev başarılı olursa, iade değeri sonraki bir çağrıda kullanılan `FindNextFile` `FindClose`bir arama tanıtıcısı veya . İşlev *lpFileName* parametresinde arama dizesinden dosyaları bulamazsa veya bulamazsa, iade değeri INVALID_HANDLE_VALUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `FindFirstFileTransacted` işlevini çağırır.
+Bu sarıcı `FindFirstFileTransacted` işlevi çağırır.
 
-##  <a name="getfileattributes"></a>GetFileAttributes
+## <a name="getfileattributes"></a><a name="getfileattributes"></a>Dosya Özelliklerini Al
 
-Belirtilen dosya veya dizinin dosya sistemi özniteliklerini işlem temelli bir işlem olarak alır.
+İşlenen bir işlem olarak belirli bir dosya veya dizin için dosya sistem özniteliklerini alır.
 
 ```
 inline DWORD GetFileAttributes(LPCTSTR lpFileName);
@@ -270,15 +270,15 @@ inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 ### <a name="parameters"></a>Parametreler
 
 *lpFileName*<br/>
-Dosya veya dizinin adı.
+Dosyanın veya dizinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `GetFileAttributesTransacted` işlevini çağırır.
+Bu sarıcı `GetFileAttributesTransacted` işlevi çağırır.
 
-##  <a name="getfileattributesex"></a>GetFileAttributesEx
+## <a name="getfileattributesex"></a><a name="getfileattributesex"></a>GetFileAttributesEx
 
-Belirtilen dosya veya dizinin dosya sistemi özniteliklerini işlem temelli bir işlem olarak alır.
+İşlenen bir işlem olarak belirli bir dosya veya dizin için dosya sistem özniteliklerini alır.
 
 ```
 inline BOOL GetFileAttributesEx(
@@ -290,21 +290,21 @@ inline BOOL GetFileAttributesEx(
 ### <a name="parameters"></a>Parametreler
 
 *lpFileName*<br/>
-Dosya veya dizinin adı.
+Dosyanın veya dizinin adı.
 
 *fInfoLevelId*<br/>
-Alınacak öznitelik bilgilerinin düzeyi.
+Alınacak öznitelik bilgisi düzeyi.
 
-*Lpfileınformation*<br/>
-Öznitelik bilgilerini alan bir arabelleğin işaretçisi. Bu arabellekte depolanan öznitelik bilgilerinin türü, *fInfoLevelId*değerine göre belirlenir. *FInfoLevelId* parametresi GetFileExInfoStandard ise, bu parametre bir WIN32_FILE_ATTRIBUTE_DATA yapısına işaret eder.
+*lpFileInformation*<br/>
+Öznitelik bilgilerini alan arabellek için bir işaretçi. Bu arabellekte depolanan öznitelik bilgilerinin türü *fInfoLevelId*değerine göre belirlenir. *fInfoLevelId* parametresi GetFileExInfoStandard ise bu parametre WIN32_FILE_ATTRIBUTE_DATA bir yapıya işaret ediyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `GetFileAttributesTransacted` işlevini çağırır.
+Bu sarıcı `GetFileAttributesTransacted` işlevi çağırır.
 
-##  <a name="gethandle"></a>GetHandle
+## <a name="gethandle"></a><a name="gethandle"></a>GetHandle
 
-İşlem tanıtıcısını döndürür.
+Hareket tutamacını döndürür.
 
 ```
 HANDLE GetHandle() const;
@@ -312,13 +312,13 @@ HANDLE GetHandle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sınıf için işlem tanıtıcısını döndürür. Bir tanıtıcıya iliştirilmişse `CAtlTransactionManager` null değerini döndürür.
+Bir sınıfın hareket tutamacını döndürür. Bir tutamak bağlı değilse NULL `CAtlTransactionManager` döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isfallback"></a>Isgeri dönüş
+## <a name="isfallback"></a><a name="isfallback"></a>IsFallback
 
-Geri dönüş çağrılarının etkinleştirilip etkinleştirilmeyeceğini belirler.
+Geri dönüş çağrılarının etkin olup olmadığını belirler.
 
 ```
 BOOL IsFallback() const;
@@ -326,13 +326,13 @@ BOOL IsFallback() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sınıfın geri dönüş çağrılarını desteklediği TRUE değerini döndürür. Aksi takdirde FALSE.
+TRUE döndürür sınıf geri dönüş çağrıları destekler. YANLIŞ aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_bfallback"></a>m_bFallback
+## <a name="m_bfallback"></a><a name="m_bfallback"></a>m_bFallback
 
-Geri dönüş destekleniyorsa doğru; Aksi takdirde FALSE.
+Geri dönüş desteklenirse DOĞRU; YANLIŞ aksi takdirde.
 
 ```
 BOOL m_bFallback;
@@ -340,9 +340,9 @@ BOOL m_bFallback;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_htransaction"></a>m_hTransaction
+## <a name="m_htransaction"></a><a name="m_htransaction"></a>m_hTransaction
 
-İşlem tanıtıcısı.
+Hareket tutamacı.
 
 ```
 HANDLE m_hTransaction;
@@ -350,9 +350,9 @@ HANDLE m_hTransaction;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="movefile"></a>MoveFile
+## <a name="movefile"></a><a name="movefile"></a>Movefile
 
-Var olan bir dosyayı veya bir dizini, alt öğeleri de dahil olmak üzere işlem temelli bir işlem olarak kaydırır.
+Varolan bir dosyayı veya çocukları da dahil olmak üzere bir dizini işleyen bir işlem olarak taşır.
 
 ```
 inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
@@ -361,18 +361,18 @@ inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 ### <a name="parameters"></a>Parametreler
 
 *lpOldFileName*<br/>
-Yerel bilgisayardaki mevcut dosyanın veya dizinin geçerli adı.
+Yerel bilgisayardaki varolan dosyanın veya dizinin geçerli adı.
 
 *lpNewFileName*<br/>
-Dosya veya dizinin yeni adı. Bu ad zaten mevcut olmamalıdır. Yeni bir dosya, farklı bir dosya sisteminde veya sürücüde olabilir. Yeni bir dizin aynı sürücüde olmalıdır.
+Dosya veya dizin için yeni ad. Bu ad zaten var olmamalıdır. Yeni bir dosya farklı bir dosya sistemi veya sürücü üzerinde olabilir. Yeni bir dizin aynı sürücüde olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `MoveFileTransacted` işlevini çağırır.
+Bu sarıcı `MoveFileTransacted` işlevi çağırır.
 
-##  <a name="regcreatekeyex"></a>RegCreateKeyEx
+## <a name="regcreatekeyex"></a><a name="regcreatekeyex"></a>RegCreateKeyEx
 
-Belirtilen kayıt defteri anahtarını oluşturur ve bir işlem ile ilişkilendirir. Anahtar zaten varsa, işlev onu açar.
+Belirtilen kayıt defteri anahtarını oluşturur ve bir hareketle ilişkilendirer. Anahtar zaten varsa, işlev açar.
 
 ```
 inline LSTATUS RegCreateKeyEx(
@@ -389,44 +389,44 @@ inline LSTATUS RegCreateKeyEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*hKey*<br/>
-Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.
+*Hkey*<br/>
+Açık bir kayıt defteri anahtarının tutamacı.
 
-*Lpaltanahtar*<br/>
-Bu işlevin açtığı veya oluşturduğu alt anahtarın adı.
+*lpSubKey*<br/>
+Bu işlevin açtığı veya oluşturduğu bir alt anahtarın adı.
 
-*Dwayrýlmýþ*<br/>
+*dwAyrılmış*<br/>
 Bu parametre ayrılmıştır ve sıfır olmalıdır.
 
 *lpClass*<br/>
-Bu anahtarın Kullanıcı tanımlı sınıfı. Bu parametre yoksayılabilir. Bu parametre NULL olabilir.
+Bu anahtarın kullanıcı tanımlı sınıfı. Bu parametre yoksayılabilir. Bu parametre NULL olabilir.
 
-*dwOptions*<br/>
+*Dwoptions*<br/>
 Bu parametre aşağıdaki değerlerden biri olabilir: REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE veya REG_OPTION_VOLATILE.
 
 *samDesired*<br/>
-Anahtar için erişim haklarını belirten bir maske.
+Anahtarın erişim haklarını belirten bir maske.
 
 *lpSecurityAttributes*<br/>
-Döndürülen Tanıtıcının alt süreçler tarafından devralınıp alınmayacağını belirleyen bir SECURITY_ATTRIBUTES yapısına yönelik işaretçi. *LpSecurityAttributes* null ise, tanıtıcı devralınamaz.
+Döndürülen tanıtıcının alt işlemler tarafından devralınıp alınamayacağını belirleyen SECURITY_ATTRIBUTES bir yapıyı işaretle. *lpSecurityAttributes* NULL ise, işletmek devralınamaz.
 
 *phkResult*<br/>
-Açık veya oluşturulmuş anahtara bir tanıtıcı alan bir değişkene yönelik işaretçi. Anahtar önceden tanımlanmış kayıt defteri anahtarlarından biri değilse, tanıtıcıyı kullanmayı bitirdikten sonra `RegCloseKey` işlevi çağırın.
+Açılan veya oluşturulan anahtara tutamacı alan bir değişkenin işaretçisi. Anahtar önceden tanımlanmış kayıt defteri anahtarlarından biri değilse, tutamacı nı kullanmayı bitirdikten sonra `RegCloseKey` işlevi arayın.
 
 *lpdwDisposition*<br/>
-Aşağıdaki değerlendirme değerlerinden birini alan bir değişken işaretçisi: REG_CREATED_NEW_KEY veya REG_OPENED_EXISTING_KEY.
+Aşağıdaki eğilim değerlerinden birini alan bir değişkene işaretçi: REG_CREATED_NEW_KEY veya REG_OPENED_EXISTING_KEY.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS olur. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur.
+İşlev başarılı olursa, iade değeri ERROR_SUCCESS. İşlev başarısız olursa, iade değeri Winerror.h'de tanımlanan sıfır olmayan bir hata kodudur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `RegCreateKeyTransacted` işlevini çağırır.
+Bu sarıcı `RegCreateKeyTransacted` işlevi çağırır.
 
-##  <a name="regdeletekey"></a>RegDeleteKey
+## <a name="regdeletekey"></a><a name="regdeletekey"></a>RegDeleteKey
 
-Bir alt anahtarı ve değerlerini, kayıt defterinin belirtilen platforma özgü görünümünden işlem temelli bir işlem olarak siler.
+Bir alt anahtarı ve değerlerini, kayıt defterinin işlenme işlemi olarak belirtilen platforma özgü görünümünden siler.
 
 ```
 inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
@@ -436,20 +436,20 @@ inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hKey*|Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.|
-|*Lpaltanahtar*|Silinecek anahtarın adı.|
+|*Hkey*|Açık bir kayıt defteri anahtarının tutamacı.|
+|*lpSubKey*|Silinecek anahtarın adı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS olur. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur.
+İşlev başarılı olursa, iade değeri ERROR_SUCCESS. İşlev başarısız olursa, iade değeri Winerror.h'de tanımlanan sıfır olmayan bir hata kodudur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `RegDeleteKeyTransacted` işlevini çağırır.
+Bu sarıcı `RegDeleteKeyTransacted` işlevi çağırır.
 
-##  <a name="regopenkeyex"></a>RegOpenKeyEx
+## <a name="regopenkeyex"></a><a name="regopenkeyex"></a>RegOpenKeyEx
 
-Belirtilen kayıt defteri anahtarını açar ve bir işlem ile ilişkilendirir.
+Belirtilen kayıt defteri anahtarını açar ve bir hareketle ilişkilendirin.
 
 ```
 inline LSTATUS RegOpenKeyEx(
@@ -462,32 +462,32 @@ inline LSTATUS RegOpenKeyEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*hKey*<br/>
-Açık bir kayıt defteri anahtarına yönelik bir tanıtıcı.
+*Hkey*<br/>
+Açık bir kayıt defteri anahtarının tutamacı.
 
-*Lpaltanahtar*<br/>
+*lpSubKey*<br/>
 Açılacak kayıt defteri alt anahtarının adı.
 
 *ulOptions*<br/>
 Bu parametre ayrılmıştır ve sıfır olmalıdır.
 
 *samDesired*<br/>
-Anahtar için erişim haklarını belirten bir maske.
+Anahtarın erişim haklarını belirten bir maske.
 
 *phkResult*<br/>
-Açık veya oluşturulmuş anahtara bir tanıtıcı alan bir değişkene yönelik işaretçi. Anahtar önceden tanımlanmış kayıt defteri anahtarlarından biri değilse, tanıtıcıyı kullanmayı bitirdikten sonra `RegCloseKey` işlevi çağırın.
+Açılan veya oluşturulan anahtara tutamacı alan bir değişkenin işaretçisi. Anahtar önceden tanımlanmış kayıt defteri anahtarlarından biri değilse, tutamacı nı kullanmayı bitirdikten sonra `RegCloseKey` işlevi arayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS olur. İşlev başarısız olursa, dönüş değeri, Winerror. h içinde tanımlanan sıfır dışı bir hata kodudur
+İşlev başarılı olursa, iade değeri ERROR_SUCCESS. İşlev başarısız olursa, iade değeri Winerror.h'de tanımlanan sıfır olmayan bir hata kodudur
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `RegOpenKeyTransacted` işlevini çağırır.
+Bu sarıcı `RegOpenKeyTransacted` işlevi çağırır.
 
-##  <a name="rollback"></a>Etkin
+## <a name="rollback"></a><a name="rollback"></a>Geri alma
 
-İşlemin geri alınmasına yönelik istekler.
+Hareketin geri alınmasını talep etmek.
 
 ```
 inline BOOL Rollback();
@@ -495,15 +495,15 @@ inline BOOL Rollback();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `RollbackTransaction` işlevini çağırır.
+Bu sarıcı `RollbackTransaction` işlevi çağırır.
 
-##  <a name="setfileattributes"></a>SetFileAttributes
+## <a name="setfileattributes"></a><a name="setfileattributes"></a>SetFileAttributes
 
-Bir dosya veya dizinin özniteliklerini işlem temelli bir işlem olarak ayarlar.
+İşlenen bir işlem olarak bir dosya veya dizin özniteliklerini ayarlar.
 
 ```
 inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
@@ -512,14 +512,14 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 ### <a name="parameters"></a>Parametreler
 
 *lpFileName*<br/>
-Dosya veya dizinin adı.
+Dosyanın veya dizinin adı.
 
-*dwAttributes*<br/>
-Dosya için ayarlanacak dosya öznitelikleri. Daha fazla bilgi için bkz. [Setfileattributestransasiyonu](/windows/win32/api/winbase/nf-winbase-setfileattributestransactedw).
+*dwÖzler*<br/>
+Dosya, dosya için ayarlanan öznitelikleri. Daha fazla bilgi için bkz: [SetFileAttributesTransacted](/windows/win32/api/winbase/nf-winbase-setfileattributestransactedw).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sarmalayıcı `SetFileAttributesTransacted` işlevini çağırır.
+Bu sarıcı `SetFileAttributesTransacted` işlevi çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

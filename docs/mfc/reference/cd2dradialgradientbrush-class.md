@@ -1,5 +1,5 @@
 ---
-title: CD2DRadialGradientBrush sınıfı
+title: CD2DRadialGradientBrush Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DRadialGradientBrush
@@ -38,16 +38,16 @@ helpviewer_keywords:
 - CD2DRadialGradientBrush [MFC], m_pRadialGradientBrush
 - CD2DRadialGradientBrush [MFC], m_RadialGradientBrushProperties
 ms.assetid: 6c76d84a-d831-4ee2-96f1-82c1f5b0d6a9
-ms.openlocfilehash: 22029ebcf8cf519571e81e11c84de146c9d54b26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aca9606271040e5c5c9aee81be0a08b64cf2bab7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396333"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369138"
 ---
-# <a name="cd2dradialgradientbrush-class"></a>CD2DRadialGradientBrush sınıfı
+# <a name="cd2dradialgradientbrush-class"></a>CD2DRadialGradientBrush Sınıfı
 
-ID2D1RadialGradientBrush için sarmalayıcı.
+ID2D1RadialGradientBrush için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,69 +59,69 @@ class CD2DRadialGradientBrush : public CD2DGradientBrush;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DRadialGradientBrush::CD2DRadialGradientBrush](#cd2dradialgradientbrush)|CD2DLinearGradientBrush bir nesne oluşturur.|
-|[CD2DRadialGradientBrush:: ~ CD2DRadialGradientBrush](#_dtorcd2dradialgradientbrush)|Yıkıcı. Radyal gradyan fırçasına D2D nesnesi yok ediliyorken çağırılır.|
+|[CD2DRadialGradientBrush::CD2DRadialGradientBrush](#cd2dradialgradientbrush)|CD2DLinearGradientBrush nesnesi oluşturuyor.|
+|[CD2DRadialGradientBrush::~CD2DRadialGradientBrush](#_dtorcd2dradialgradientbrush)|Yıkıcı. D2D radyal degrade fırça nesnesi yok edildiğinde çağrılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DRadialGradientBrush::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|
-|[CD2DRadialGradientBrush::Create](#create)|Bir CD2DRadialGradientBrush oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DRadialGradientBrush::Destroy](#destroy)|CD2DRadialGradientBrush nesnesini yok eder. (Geçersiz kılmaları [CD2DGradientBrush::Destroy](../../mfc/reference/cd2dgradientbrush-class.md#destroy).)|
-|[CD2DRadialGradientBrush::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
-|[CD2DRadialGradientBrush::get](#get)|Döndürür ID2D1RadialGradientBrush arabirimi|
-|[CD2DRadialGradientBrush::GetCenter](#getcenter)|Gradyan elips merkezini alır.|
-|[CD2DRadialGradientBrush::GetGradientOriginOffset](#getgradientoriginoffset)|Gradyan elips 's merkezi göre gradyan başlangıç uzaklığını alır.|
-|[CD2DRadialGradientBrush::GetRadiusX](#getradiusx)|Gradyan elipsin x yarıçapını alır.|
-|[CD2DRadialGradientBrush::GetRadiusY](#getradiusy)|Gradyan elipsin y yarıçapı alır.|
-|[CD2DRadialGradientBrush::SetCenter](#setcenter)|Orta Gradyan elipsin fırçanın koordinat belirtir.|
-|[CD2DRadialGradientBrush::SetGradientOriginOffset](#setgradientoriginoffset)|Gradyan başlangıcı gradyan elips 's merkezi göre uzaklığını belirtir.|
-|[CD2DRadialGradientBrush::SetRadiusX](#setradiusx)|Gradyan olan elipsin x yarıçapı fırçanın koordinat belirtir.|
-|[CD2DRadialGradientBrush::SetRadiusY](#setradiusy)|Gradyan olan elipsin y yarıçapı fırçanın koordinat belirtir.|
+|[CD2DRadialGradientBrush::Ekle](#attach)|Nesneye varolan kaynak arabirimi ataştırır|
+|[CD2DRadialGradientBrush::Oluştur](#create)|BIR CD2DRadialGradientBrush oluşturur. [(CD2DResource geçersiz kılar::Oluştur](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DRadialGradientBrush::Destroy](#destroy)|BIR CD2DRadialGradientBrush nesnesini yok eder. [(CD2DGradientBrush geçersiz kılar: :Destroy](../../mfc/reference/cd2dgradientbrush-class.md#destroy).)|
+|[CD2DRadialGradientBrush::Detach](#detach)|Kaynak arabirimini nesneden ayırıyor|
+|[CD2DRadialGradientBrush::Get](#get)|ID2D1RadialGradientBrush arabirimi verir|
+|[CD2DRadialGradientBrush::GetCenter](#getcenter)|Degrade elipsin merkezini alır|
+|[CD2DRadialGradientBrush::GetGradientOriginOffset](#getgradientoriginoffset)|Degrade elipsin merkezine göre gradyan kaynağının mahsupunu alır|
+|[CD2DRadialGradientBrush::GetRadiusX](#getradiusx)|Degrade elipsin x yarıçapını alır|
+|[CD2DRadialGradientBrush::GetRadiusY](#getradiusy)|Degrade elipsin y yarıçapını alır|
+|[CD2DRadialGradientBrush::SetCenter](#setcenter)|Fırçanın koordinat alanında degrade elipsin merkezini belirtir|
+|[CD2DRadialGradientBrush::SetGradientOriginOffset](#setgradientoriginoffset)|Degrade kaynağının elipsin merkezine göre mahsup unu belirtir|
+|[CD2DRadialGradientBrush::SetRadiusX](#setradiusx)|Fırçanın koordinat alanında degrade elipsin x yarıçapını belirtir|
+|[CD2DRadialGradientBrush::SetRadiusY](#setradiusy)|Fırçanın koordinat alanında degrade elipsin y yarıçapını belirtir|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DRadialGradientBrush::operator ID2D1RadialGradientBrush *](#operator_id2d1radialgradientbrush_star)|Döndürür ID2D1RadialGradientBrush arabirimi|
+|[CD2DRadialGradientBrush::operatör ID2D1RadialGradientBrush*](#operator_id2d1radialgradientbrush_star)|ID2D1RadialGradientBrush arabirimi verir|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DRadialGradientBrush::m_pRadialGradientBrush](#m_pradialgradientbrush)|Bir ID2D1RadialGradientBrush işaretçisi.|
-|[CD2DRadialGradientBrush::m_RadialGradientBrushProperties](#m_radialgradientbrushproperties)|Center, gradyan başlangıç uzaklığı ve x-radius ve y yarıçapı fırçanın gradyan.|
+|[CD2DRadialGradientBrush::m_pRadialGradientBrush](#m_pradialgradientbrush)|ID2D1RadialGradientBrush için bir işaretçi.|
+|[CD2DRadialGradientBrush::m_RadialGradientBrushProperties](#m_radialgradientbrushproperties)|Fırçanın degradesinin merkezi, degrade kaynağı ofset ve x yarıçapı ve y yarıçapı.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
-[CD2DBrush](../../mfc/reference/cd2dbrush-class.md)
+[CD2DFırça](../../mfc/reference/cd2dbrush-class.md)
 
-[CD2DGradientBrush](../../mfc/reference/cd2dgradientbrush-class.md)
+[CD2DGradientFırça](../../mfc/reference/cd2dgradientbrush-class.md)
 
 `CD2DRadialGradientBrush`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="_dtorcd2dradialgradientbrush"></a>  CD2DRadialGradientBrush:: ~ CD2DRadialGradientBrush
+## <a name="cd2dradialgradientbrushcd2dradialgradientbrush"></a><a name="_dtorcd2dradialgradientbrush"></a>CD2DRadialGradientBrush::~CD2DRadialGradientBrush
 
-Yıkıcı. Radyal gradyan fırçasına D2D nesnesi yok ediliyorken çağırılır.
+Yıkıcı. D2D radyal degrade fırça nesnesi yok edildiğinde çağrılır.
 
 ```
 virtual ~CD2DRadialGradientBrush();
 ```
 
-##  <a name="attach"></a>  CD2DRadialGradientBrush::Attach
+## <a name="cd2dradialgradientbrushattach"></a><a name="attach"></a>CD2DRadialGradientBrush::Ekle
 
-Var olan kaynak arabirimi nesnesine ekler
+Nesneye varolan kaynak arabirimi ataştırır
 
 ```
 void Attach(ID2D1RadialGradientBrush* pResource);
@@ -129,12 +129,12 @@ void Attach(ID2D1RadialGradientBrush* pResource);
 
 ### <a name="parameters"></a>Parametreler
 
-*pResource*<br/>
-Mevcut kaynak arabirimi. NULL olamaz
+*pKaynak*<br/>
+Varolan kaynak arabirimi. NULL olamaz
 
-##  <a name="cd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::CD2DRadialGradientBrush
+## <a name="cd2dradialgradientbrushcd2dradialgradientbrush"></a><a name="cd2dradialgradientbrush"></a>CD2DRadialGradientBrush::CD2DRadialGradientBrush
 
-CD2DLinearGradientBrush bir nesne oluşturur.
+CD2DLinearGradientBrush nesnesi oluşturuyor.
 
 ```
 CD2DRadialGradientBrush(
@@ -151,32 +151,32 @@ CD2DRadialGradientBrush(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
-*gradientStops*<br/>
-Bir dizi D2D1_GRADIENT_STOP yapıları işaretçi.
+*degradeDuraklar*<br/>
+D2D1_GRADIENT_STOP yapıları dizisi için bir işaretçi.
 
-*gradientStopsCount*<br/>
-Gradyan durak sayısı gradientStops dizide belirtir. 1'e eşit veya büyük değer.
+*degradeStopsCount*<br/>
+Degrade Duraklar dizisindeki degrade duraklarının sayısını belirten 1'den büyük veya eşit bir değer.
 
 *RadialGradientBrushProperties*<br/>
-Center, gradyan başlangıç uzaklığı ve x-radius ve y yarıçapı fırçanın gradyan.
+Fırçanın degradesinin merkezi, degrade kaynağı ofset ve x yarıçapı ve y yarıçapı.
 
 *colorInterpolationGamma*<br/>
-Alan hangi renkte gradyan duraklarının arasında ilişkilendirme gerçekleştirilir.
+Degrade durakları arasında renk enterpolasyonunun gerçekleştirildiği alan.
 
 *extendMode*<br/>
-[0,1] normalleştirilmiş aralığın dışında geçişin davranışı.
+[0,1] normalleştirilmiş aralığın dışındaki degradenin davranışı.
 
 *pBrushProperties*<br/>
-Fırça dönüşümü ve opaklık yönelik işaretçi.
+Bir fırçanın opaklığına ve dönüşümüne işaret eden bir işaretçi.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="create"></a>  CD2DRadialGradientBrush::Create
+## <a name="cd2dradialgradientbrushcreate"></a><a name="create"></a>CD2DRadialGradientBrush::Oluştur
 
-Bir CD2DRadialGradientBrush oluşturur.
+BIR CD2DRadialGradientBrush oluşturur.
 
 ```
 virtual HRESULT Create(CRenderTarget* pRenderTarget);
@@ -185,23 +185,23 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pRenderTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="destroy"></a>  CD2DRadialGradientBrush::Destroy
+## <a name="cd2dradialgradientbrushdestroy"></a><a name="destroy"></a>CD2DRadialGradientBrush::Destroy
 
-CD2DRadialGradientBrush nesnesini yok eder.
+BIR CD2DRadialGradientBrush nesnesini yok eder.
 
 ```
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DRadialGradientBrush::detach
+## <a name="cd2dradialgradientbrushdetach"></a><a name="detach"></a>CD2DRadialGradientBrush::Detach
 
-Kaynak arabirimi nesnesinden ayırır
+Kaynak arabirimini nesneden ayırıyor
 
 ```
 ID2D1RadialGradientBrush* Detach();
@@ -209,11 +209,11 @@ ID2D1RadialGradientBrush* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış kaynak arabirim işaretçisi.
+Ayrılmış kaynak arabirimine işaretçi.
 
-##  <a name="get"></a>  CD2DRadialGradientBrush::get
+## <a name="cd2dradialgradientbrushget"></a><a name="get"></a>CD2DRadialGradientBrush::Get
 
-Döndürür ID2D1RadialGradientBrush arabirimi
+ID2D1RadialGradientBrush arabirimi verir
 
 ```
 ID2D1RadialGradientBrush* Get();
@@ -221,11 +221,11 @@ ID2D1RadialGradientBrush* Get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1RadialGradientBrush arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1RadialGradientBrush arabirimini veya NULL'u işaretleyin.
 
-##  <a name="getcenter"></a>  CD2DRadialGradientBrush::GetCenter
+## <a name="cd2dradialgradientbrushgetcenter"></a><a name="getcenter"></a>CD2DRadialGradientBrush::GetCenter
 
-Gradyan elips merkezini alır.
+Degrade elipsin merkezini alır
 
 ```
 CD2DPointF GetCenter() const;
@@ -233,11 +233,11 @@ CD2DPointF GetCenter() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gradyan elipsin Merkezi. Bu değer fırçanın koordinat ifade edilir
+Degrade elipsin merkezi. Bu değer fırçanın koordinat alanında ifade edilir
 
-##  <a name="getgradientoriginoffset"></a>  CD2DRadialGradientBrush::GetGradientOriginOffset
+## <a name="cd2dradialgradientbrushgetgradientoriginoffset"></a><a name="getgradientoriginoffset"></a>CD2DRadialGradientBrush::GetGradientOriginOffset
 
-Gradyan elips 's merkezi göre gradyan başlangıç uzaklığını alır.
+Degrade elipsin merkezine göre gradyan kaynağının mahsupunu alır
 
 ```
 CD2DPointF GetGradientOriginOffset() const;
@@ -245,11 +245,11 @@ CD2DPointF GetGradientOriginOffset() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gradyan elipsin Merkezi'nden gradyan başlangıç uzaklığı. Bu değer fırçanın koordinat ifade edilir
+Degrade elipsin merkezinden degrade kaynağının mahsup. Bu değer fırçanın koordinat alanında ifade edilir
 
-##  <a name="getradiusx"></a>  CD2DRadialGradientBrush::GetRadiusX
+## <a name="cd2dradialgradientbrushgetradiusx"></a><a name="getradiusx"></a>CD2DRadialGradientBrush::GetRadiusX
 
-Gradyan elipsin x yarıçapını alır.
+Degrade elipsin x yarıçapını alır
 
 ```
 FLOAT GetRadiusX() const;
@@ -257,11 +257,11 @@ FLOAT GetRadiusX() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gradyan elipsin x-radius. Bu değer fırçanın koordinat ifade edilir
+Degrade elipsin x yarıçapı. Bu değer fırçanın koordinat alanında ifade edilir
 
-##  <a name="getradiusy"></a>  CD2DRadialGradientBrush::GetRadiusY
+## <a name="cd2dradialgradientbrushgetradiusy"></a><a name="getradiusy"></a>CD2DRadialGradientBrush::GetRadiusY
 
-Gradyan elipsin y yarıçapı alır.
+Degrade elipsin y yarıçapını alır
 
 ```
 FLOAT GetRadiusY() const;
@@ -269,27 +269,27 @@ FLOAT GetRadiusY() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gradyan elipsin y-radius. Bu değer fırçanın koordinat ifade edilir
+Degrade elipsin y yarıçapı. Bu değer fırçanın koordinat alanında ifade edilir
 
-##  <a name="m_pradialgradientbrush"></a>  CD2DRadialGradientBrush::m_pRadialGradientBrush
+## <a name="cd2dradialgradientbrushm_pradialgradientbrush"></a><a name="m_pradialgradientbrush"></a>CD2DRadialGradientBrush::m_pRadialGradientBrush
 
-Bir ID2D1RadialGradientBrush işaretçisi.
+ID2D1RadialGradientBrush için bir işaretçi.
 
 ```
 ID2D1RadialGradientBrush* m_pRadialGradientBrush;
 ```
 
-##  <a name="m_radialgradientbrushproperties"></a>  CD2DRadialGradientBrush::m_RadialGradientBrushProperties
+## <a name="cd2dradialgradientbrushm_radialgradientbrushproperties"></a><a name="m_radialgradientbrushproperties"></a>CD2DRadialGradientBrush::m_RadialGradientBrushProperties
 
-Center, gradyan başlangıç uzaklığı ve x-radius ve y yarıçapı fırçanın gradyan.
+Fırçanın degradesinin merkezi, degrade kaynağı ofset ve x yarıçapı ve y yarıçapı.
 
 ```
 D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES m_RadialGradientBrushProperties;
 ```
 
-##  <a name="operator_id2d1radialgradientbrush_star"></a>  CD2DRadialGradientBrush::operator ID2D1RadialGradientBrush *
+## <a name="cd2dradialgradientbrushoperator-id2d1radialgradientbrush"></a><a name="operator_id2d1radialgradientbrush_star"></a>CD2DRadialGradientBrush::operatör ID2D1RadialGradientBrush*
 
-Döndürür ID2D1RadialGradientBrush arabirimi
+ID2D1RadialGradientBrush arabirimi verir
 
 ```
 operator ID2D1RadialGradientBrush*();
@@ -297,11 +297,11 @@ operator ID2D1RadialGradientBrush*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1RadialGradientBrush arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1RadialGradientBrush arabirimini veya NULL'u işaretleyin.
 
-##  <a name="setcenter"></a>  CD2DRadialGradientBrush::SetCenter
+## <a name="cd2dradialgradientbrushsetcenter"></a><a name="setcenter"></a>CD2DRadialGradientBrush::SetCenter
 
-Orta Gradyan elipsin fırçanın koordinat belirtir.
+Fırçanın koordinat alanında degrade elipsin merkezini belirtir
 
 ```
 void SetCenter(CD2DPointF point);
@@ -309,12 +309,12 @@ void SetCenter(CD2DPointF point);
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-Fırçanın koordinat alanında gradyan elipsin Merkezi
+*Nokta*<br/>
+Degrade elipsin merkezi, fırçanın koordinat alanında
 
-##  <a name="setgradientoriginoffset"></a>  CD2DRadialGradientBrush::SetGradientOriginOffset
+## <a name="cd2dradialgradientbrushsetgradientoriginoffset"></a><a name="setgradientoriginoffset"></a>CD2DRadialGradientBrush::SetGradientOriginOffset
 
-Gradyan başlangıcı gradyan elips 's merkezi göre uzaklığını belirtir.
+Degrade kaynağının elipsin merkezine göre mahsup unu belirtir
 
 ```
 void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
@@ -322,12 +322,12 @@ void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
 
 ### <a name="parameters"></a>Parametreler
 
-*gradientOriginOffset*<br/>
-Gradyan elipsin Merkezi'nden gradyan başlangıç uzaklığı
+*degradeOriginOffset*<br/>
+Degrade elipsin merkezinden degrade kaynağının mahsup
 
-##  <a name="setradiusx"></a>  CD2DRadialGradientBrush::SetRadiusX
+## <a name="cd2dradialgradientbrushsetradiusx"></a><a name="setradiusx"></a>CD2DRadialGradientBrush::SetRadiusX
 
-Gradyan olan elipsin x yarıçapı fırçanın koordinat belirtir.
+Fırçanın koordinat alanında degrade elipsin x yarıçapını belirtir
 
 ```
 void SetRadiusX(FLOAT radiusX);
@@ -335,12 +335,12 @@ void SetRadiusX(FLOAT radiusX);
 
 ### <a name="parameters"></a>Parametreler
 
-*radiusX*<br/>
-Gradyan elipsin x-radius. Fırçanın koordinat içinde bu değer
+*Radiusx*<br/>
+Degrade elipsin x yarıçapı. Bu değer fırçanın koordinat alanındadır
 
-##  <a name="setradiusy"></a>  CD2DRadialGradientBrush::SetRadiusY
+## <a name="cd2dradialgradientbrushsetradiusy"></a><a name="setradiusy"></a>CD2DRadialGradientBrush::SetRadiusY
 
-Gradyan olan elipsin y yarıçapı fırçanın koordinat belirtir.
+Fırçanın koordinat alanında degrade elipsin y yarıçapını belirtir
 
 ```
 void SetRadiusY(FLOAT radiusY);
@@ -348,8 +348,8 @@ void SetRadiusY(FLOAT radiusY);
 
 ### <a name="parameters"></a>Parametreler
 
-*radiusY*<br/>
-Gradyan elipsin y-radius. Fırçanın koordinat içinde bu değer
+*Radiusy*<br/>
+Degrade elipsin y yarıçapı. Bu değer fırçanın koordinat alanındadır
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

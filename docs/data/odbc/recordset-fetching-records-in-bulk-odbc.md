@@ -14,61 +14,61 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-ms.openlocfilehash: cd9597da7ab4c405f90a145182d63945cef48c53
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: ec4d83481f6335d4c40ffb8f004b617f2ee09c62
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079819"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367021"
 ---
 # <a name="recordset-fetching-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Sınıf `CRecordset`, toplu satır getirme için destek sağlar. Bu, veri kaynağından tek seferde bir kayıt almak yerine, tek bir getirme sırasında birden fazla kaydın alınabileceği anlamına gelir. Yalnızca türetilmiş bir `CRecordset` sınıfında toplu satır getirme uygulayabilirsiniz. Veri kaynağından kayıt kümesi nesnesine veri aktarma işlemi toplu kayıt alanı değişimi (toplu RFX) olarak adlandırılır. `CRecordset`türetilmiş bir sınıfta toplu satır getirmeyi kullanmıyorsanız, verilerin kayıt alanı değişimi (RFX) aracılığıyla aktarılacağını unutmayın. Daha fazla bilgi için bkz. [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Sınıf, `CRecordset` veri kaynağından bir defada bir kayıt almak yerine, tek bir alma sırasında birden çok kaydın aynı anda alınabileceği anlamına gelen toplu satır alma desteği sağlar. Yalnızca türemiş `CRecordset` bir sınıfta toplu satır alma uygulayabilirsiniz. Veri kaynağından kayıt kümesi nesnesine veri aktarma işlemine toplu kayıt alanı değişimi (Toplu RFX) denir. Türetilmiş bir `CRecordset`sınıfta toplu satır alma kullanmıyorsanız, verilerin kayıt alanı değişimi (RFX) yoluyla aktarıldığını unutmayın. Daha fazla bilgi için [Bkz. Alan Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
-Bu konuda aşağıdakiler açıklanmaktadır:
+Bu konu açıklar:
 
-- [CRecordset toplu satır getirmeyi nasıl destekler](#_core_how_crecordset_supports_bulk_row_fetching).
+- [CRecordset toplu satır getirmeyi nasıl destekler.](#_core_how_crecordset_supports_bulk_row_fetching)
 
-- [Toplu satır getirme kullanırken bazı özel önemli noktalar](#_core_special_considerations).
+- [Toplu satır alma kullanırken bazı özel hususlar](#_core_special_considerations).
 
-- [Toplu kayıt alanı değişimini uygulama](#_core_how_to_implement_bulk_record_field_exchange).
+- [Toplu kayıt alanı değişimi nasıl uygulanır.](#_core_how_to_implement_bulk_record_field_exchange)
 
-##  <a name="how-crecordset-supports-bulk-row-fetching"></a><a name="_core_how_crecordset_supports_bulk_row_fetching"></a>CRecordset toplu satır getirmeyi nasıl destekler
+## <a name="how-crecordset-supports-bulk-row-fetching"></a><a name="_core_how_crecordset_supports_bulk_row_fetching"></a>CRecordset Toplu Satır Alma'yı Nasıl Destekler?
 
-Kayıt kümesi nesneniz açılmadan önce `SetRowsetSize` member işleviyle bir satır kümesi boyutu tanımlayabilirsiniz. Satır kümesi boyutu, tek bir getirme sırasında kaç kaydın alınması gerektiğini belirtir. Toplu satır getirme uygulandığında, varsayılan satır kümesi boyutu 25 ' tir. Toplu satır getirme uygulanmadığı takdirde satır kümesi boyutu 1 ' de sabit kalır.
+Recordset nesnenizi açmadan `SetRowsetSize` önce, üye işlevle bir rowset boyutu tanımlayabilirsiniz. Satır kümesi boyutu, tek bir getirme sırasında kaç kaydın alınması gerektiğini belirtir. Toplu satır alma uygulandığında, varsayılan satır kümesi boyutu 25'tir. Toplu satır alma uygulanmazsa, satır kümesi boyutu 1 sabit kalır.
 
-Satır kümesi boyutunu başlattıktan sonra, [Açık](../../mfc/reference/crecordset-class.md#open) üye işlevini çağırın. Burada, toplu satır getirmeyi uygulamak için *dwOptions* parametresinin `CRecordset::useMultiRowFetch` seçeneğini belirtmeniz gerekir. Ayrıca `CRecordset::userAllocMultiRowBuffers` seçeneğini de ayarlayabilirsiniz. Toplu kayıt alanı değişim mekanizması, bir getirme sırasında alınan verilerin birden çok satırını depolamak için dizileri kullanır. Bu depolama arabellekleri çerçeve tarafından otomatik olarak ayrılabilir veya bunları el ile ayırabilirsiniz. `CRecordset::userAllocMultiRowBuffers` seçeneğinin belirtilmesi, ayırmayı yapacaksınız anlamına gelir.
+Satır kümesi boyutunu niçin açtıktan sonra [Aç](../../mfc/reference/crecordset-class.md#open) üye işlevini arayın. Burada toplu satır `CRecordset::useMultiRowFetch` alma uygulamak için *dwOptions* parametre seçeneğini belirtmeniz gerekir. Ayrıca `CRecordset::userAllocMultiRowBuffers` seçeneği ayarlayabilirsiniz. Toplu kayıt alanı değiştirme mekanizması, bir alma sırasında alınan birden çok veri satırını depolamak için dizileri kullanır. Bu depolama arabellekleri çerçeve tarafından otomatik olarak tahsis edilebilir veya bunları el ile ayırabilirsiniz. `CRecordset::userAllocMultiRowBuffers` Seçeneği belirtmek, tahsisatı yapacağınız anlamına gelir.
 
-Aşağıdaki tabloda, toplu satır getirmeyi desteklemek için `CRecordset` tarafından sunulan üye işlevleri listelenmektedir.
+Aşağıdaki tabloda toplu satır `CRecordset` getirmeyi desteklemek için sağlanan üye işlevler listelemektedir.
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |---------------------|-----------------|
-|[CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)|Getirme sırasında oluşan tüm hataları işleyen sanal işlev.|
-|[DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange)|Toplu kayıt alanı değişimini uygular. Veri kaynağından birden fazla veri satırını kayıt kümesi nesnesine aktarmak için otomatik olarak çağırılır.|
+|[CheckRowsetHatası](../../mfc/reference/crecordset-class.md#checkrowseterror)|Alma sırasında oluşan hataları işleyen sanal işlev.|
+|[Dobulkfieldexchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange)|Toplu kayıt alanı değişimini uygular. Veri kaynağından kayıt kümesi nesnesine birden çok veri satırı aktası vermek için otomatik olarak çağrılır.|
 |[GetRowsetSize](../../mfc/reference/crecordset-class.md#getrowsetsize)|Satır kümesi boyutu için geçerli ayarı alır.|
-|[Getrowsgetirilen](../../mfc/reference/crecordset-class.md#getrowsfetched)|Belirli bir getirme işleminden sonra kaç satır gerçekten alındığını söyler. Çoğu durumda, tamamlanmamış bir satır kümesi getirilmediği takdirde bu satır kümesi boyutudur.|
-|[GetRowStatus](../../mfc/reference/crecordset-class.md#getrowstatus)|Satır kümesi içindeki belirli bir satır için getirme durumunu döndürür.|
-|[RefreshRowset](../../mfc/reference/crecordset-class.md#refreshrowset)|Satır kümesi içindeki belirli bir satırın verilerini ve durumunu yeniler.|
-|[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|İmleci bir satır kümesi içindeki belirli bir satıra taşımıştır.|
-|[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|Satır kümesi boyutu için ayarı belirtilen değere değiştiren sanal işlev.|
+|[GetRowsFetched](../../mfc/reference/crecordset-class.md#getrowsfetched)|Belirli bir getirdikten sonra gerçekte kaç satır alındığını söyler. Tamamlanmamış bir satır kümesi getirilmediği sürece, çoğu durumda bu satır kümesi boyutudur.|
+|[GetRowStatus](../../mfc/reference/crecordset-class.md#getrowstatus)|Bir satır kümesi içinde belirli bir satır için bir getirme durumu döndürür.|
+|[RefreshRowset](../../mfc/reference/crecordset-class.md#refreshrowset)|Bir satır kümesi içindeki belirli bir satırın verilerini ve durumunu yeniler.|
+|[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|İmleci bir satır kümesi içinde belirli bir satıra taşır.|
+|[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|Rowset boyutunun ayarını belirtilen değere değiştiren sanal işlev.|
 
-##  <a name="special-considerations"></a><a name="_core_special_considerations"></a>Özel Konular
+## <a name="special-considerations"></a><a name="_core_special_considerations"></a>Özel Hususlar
 
-Toplu satır getirme bir performans kazanımı olsa da, bazı özellikler farklı şekilde çalışır. Toplu satır getirmeyi uygulamaya karar vermeden önce aşağıdakileri göz önünde bulundurun:
+Toplu satır alma bir performans kazancı olsa da, bazı özellikler farklı çalışır. Toplu satır alma uygulamasına karar vermeden önce aşağıdakileri göz önünde bulundurun:
 
-- Framework, verileri veri kaynağından kayıt kümesi nesnesine aktarmak için `DoBulkFieldExchange` üye işlevini otomatik olarak çağırır. Ancak, veriler kayıt kümesinden veri kaynağına geri aktarılmaz. `AddNew`, `Edit`, `Delete`veya `Update` üye işlevlerinin çağrılması başarısız bir onaylama ile sonuçlanır. `CRecordset` Şu anda toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamasa da, `SQLSetPos`ODBC API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz. `SQLSetPos`hakkında daha fazla bilgi için MSDN belgelerindeki *ODBC SDK Programmer 's başvurusuna* bakın.
+- Çerçeve, veri kaynağından kayıt kümesi nesnesine veri aktarmak için `DoBulkFieldExchange` üye işlevi otomatik olarak çağırır. Ancak, veriler kayıt kümesinden veri kaynağına aktarılmaz. `AddNew`", `Edit`" `Delete`veya `Update` üye işlevler çağrılması, başarısız bir iddiayla sonuçlanır. `CRecordset` Şu anda toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamasa da, ODBC `SQLSetPos`API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz. Hakkında daha `SQLSetPos`fazla bilgi için MSDN belgelerinde *ODBC SDK Programcısı* Referansı'na bakın.
 
-- `IsDeleted`, `IsFieldDirty`, `IsFieldNull`, `IsFieldNullable`, `SetFieldDirty`ve `SetFieldNull` üye işlevleri toplu satır getirmeyi uygulayan kayıt kümelerinde kullanılamaz. Ancak, `IsDeleted`yerine `GetRowStatus` ve `IsFieldNullable`yerine `GetODBCFieldInfo` çağırabilirsiniz.
+- `IsDeleted`Üye işlevler `IsFieldDirty` `IsFieldNull`, `IsFieldNullable` `SetFieldDirty`, `SetFieldNull` , , , , ve toplu satır alma uygulayan kayıt kümelerinde kullanılamaz. Ancak, yerine `GetRowStatus` arayabilirsiniz `IsDeleted`, `GetODBCFieldInfo` ve yerine `IsFieldNullable`.
 
-- `Move` işlemler, kayıt kümesini satır kümesine göre konumlandırır. Örneğin, ilk satır kümesi boyutu 10 olan 100 kayda sahip bir kayıt kümesi açtığınızı varsayın. `Open` satırları 1 ' den 10 ' a kadar, geçerli kayıt satır 1 ' de konumlandırılmış şekilde getirir. Bir `MoveNext` çağrısı sonraki satırı değil, sonraki satır kümesini getirir. Bu satır kümesi 11 ' den 20 ' ye kadar olan satırlar 11 ' de konumlandırılmış olan satırları içerir. Toplu satır getirme uygulandığında `MoveNext` ve `Move( 1 )` eşit olmadığına unutmayın. `Move( 1 )` geçerli kayıttan 1 satır Başlatan satır kümesini getirir. Bu örnekte, `Open` çağrıldıktan sonra `Move( 1 )` çağırmak, geçerli kayıt satır 2 ' de konumlandıktan sonra 2 ' den 11 ' den 11 ' den fazla satır kümesi getirir. Daha fazla bilgi için üye [Taşı](../../mfc/reference/crecordset-class.md#move) işlevine bakın.
+- İşlemler `Move` kayıt setinizi rowset'e göre yeniden konumlandırın. Örneğin, ilk satır kümesi boyutu 10 olan 100 kaydı olan bir kayıt kümesini açtığınızı varsayalım. `Open`satır 1'den 10'a kadar getirir ve geçerli kayıt satır 1'de konumlandırılır. Bir sonraki `MoveNext` satır kümesini getirme çağrısı, bir sonraki satırı değil. Bu satır kümesi 11 ile 20 arasında satırlardan oluşur ve geçerli kayıt 11 satırda konumlandırılır. Toplu `MoveNext` satır `Move( 1 )` alma uygulandığında eşdeğer olmadığını unutmayın. `Move( 1 )`geçerli kayıttan 1 satır başlar satır kümesini getirir. Bu örnekte, `Move( 1 )` aramadan sonra arama, `Open` 2 ile 11 arasında satırlardan oluşan satır kümesini getirir ve geçerli kayıt 2 satırına konumlandırılır. Daha fazla bilgi için [Taşı](../../mfc/reference/crecordset-class.md#move) üye işlevine bakın.
 
-- Kayıt alanı değişimi 'nin aksine, sihirbazlar toplu kayıt alanı değişimini desteklemez. Diğer bir deyişle, toplu RFX işlevlerine çağrılar yazarak alan veri üyelerinizi el ile bildirmeniz ve `DoBulkFieldExchange` el ile geçersiz kılmanız gerekir. Daha fazla bilgi için bkz. *sınıf kitaplığı başvurusunda* [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md) .
+- Kayıt alanı değişiminin aksine, sihirbazlar toplu kayıt alanı değişimini desteklemez. Bu, Toplu RFX işlevlerine çağrı yazarak alan `DoBulkFieldExchange` veri üyelerinizi el ile bildirmeniz ve el ile geçersiz kılmanız gerektiği anlamına gelir. Daha fazla bilgi için *Sınıf Kitaplığı Başvurusu'ndaki* [Alan Değiştirme Fonksiyonlarını Kaydet'e](../../mfc/reference/record-field-exchange-functions.md) bakın.
 
-##  <a name="how-to-implement-bulk-record-field-exchange"></a><a name="_core_how_to_implement_bulk_record_field_exchange"></a>Toplu kayıt alanı değişimini uygulama
+## <a name="how-to-implement-bulk-record-field-exchange"></a><a name="_core_how_to_implement_bulk_record_field_exchange"></a>Toplu Kayıt Alanı Değişimi Nasıl Uygulanır?
 
-Toplu kayıt alanı değişimi, veri kaynağındaki veri kümesini kayıt kümesi nesnesine aktarır. Toplu RFX işlevleri bu verilerin depolanması için dizileri, ayrıca satır kümesindeki her bir veri öğesinin uzunluğunu depolamak için dizileri kullanır. Sınıf tanımınızda, veri dizilerine erişmek için alan veri üyelerinizi işaretçiler olarak tanımlamanız gerekir. Ayrıca, uzunluklardan oluşan dizilere erişmek için bir işaretçiler kümesi tanımlamanız gerekir. Tüm parametre veri üyeleri işaretçiler olarak bildirilmelidir; Toplu kayıt alanı değişimi kullanılırken parametre veri üyelerini bildirmek, kayıt alanı değişimi kullanılırken bunları bildirme ile aynıdır. Aşağıdaki kod basit bir örnek göstermektedir:
+Toplu kayıt alanı değişimi, veri kaynağından kayıt kümesi nesnesine bir veri satırı kümesi aktarRZ. Toplu RFX işlevleri, bu verileri depolamak için dizilerin yanı sıra her veri öğesinin uzunluğunu satır kümesinde depolamak için diziler kullanır. Sınıf tanımınızda, veri dizilerine erişmek için alan veri üyelerinizi işaretçi olarak tanımlamanız gerekir. Buna ek olarak, uzunluk dizilerine erişmek için bir işaretçi kümesi tanımlamanız gerekir. Herhangi bir parametre veri üyeleri işaretçi olarak ilan edilmemelidir; toplu kayıt alanı değişimini kullanırken parametre veri üyelerini bildirmek, kayıt alanı değişimini kullanırken bildirmekle aynıdır. Aşağıdaki kod basit bir örnek gösterir:
 
 ```cpp
 class MultiRowSet : public CRecordset
@@ -93,7 +93,7 @@ public:
 }
 ```
 
-Bu depolama arabelleklerini el ile ayırabilir veya çerçeveyi ayırmayı sağlayabilirsiniz. Arabellekleri kendiniz ayırmak için, `Open` üye işlevindeki *dwOptions* parametresinin `CRecordset::userAllocMultiRowBuffers` seçeneğini belirtmeniz gerekir. Dizilerin boyutlarını en az satır kümesi boyutuna eşit olarak ayarladığınızdan emin olun. Çerçevenin ayırmayı yapmak istiyorsanız, işaretçilerinizi NULL olarak başlatmalısınız. Bu genellikle kayıt kümesi nesnesinin oluşturucusunda yapılır:
+Bu depolama arabelleklerini el ile tahsis edebilir veya ayırmayı çerçeveye ayırabilirsiniz. Arabellekleri kendiniz ayırmak `CRecordset::userAllocMultiRowBuffers` `Open` için, üye işlevdeki *dwOptions* parametre seçeneğini belirtmeniz gerekir. Dizilerin boyutlarını en azından satır kümesi boyutuna eşit olarak ayarladıklarından emin olun. Ayırmayı çerçevenin yapmasını istiyorsanız, işaretçilerinizi NULL'a başlatmanız gerekir. Bu genellikle kaydedici nesnenin oluşturucusunda yapılır:
 
 ```cpp
 MultiRowSet::MultiRowSet( CDatabase* pDB )
@@ -114,7 +114,7 @@ MultiRowSet::MultiRowSet( CDatabase* pDB )
 }
 ```
 
-Son olarak, `DoBulkFieldExchange` üye işlevini geçersiz kılmanız gerekir. Alan veri üyeleri için toplu RFX işlevlerini çağırın; herhangi bir parametre veri üyesi için RFX işlevlerini çağırın. `Open`bir SQL ifadesini veya saklı yordamı geçirerek kayıt kümesini açtıysanız, toplu RFX çağrılarını yaptığınız sıra, kayıt kümesindeki sütunların sırasına karşılık gelmelidir; benzer şekilde, RFX çağrıları parametrelerinin sırası, SQL deyimindeki veya saklı yordamdaki parametre sırasına karşılık gelmelidir.
+Son olarak, `DoBulkFieldExchange` üye işlevi geçersiz kılmanız gerekir. Alan veri üyeleri için Toplu RFX işlevlerini arayın; herhangi bir parametre veri üyesi için RFX işlevlerini arayın. Bir SQL deyimi ni veya depolanmış yordamı `Open`geçirerek kayıt kümesini açtıysanız, Toplu RFX aramalarını yaptığınız sıra, kayıt kümesindeki sütunların sırasına karşılık gelmelidir; benzer şekilde, RFX parametreleri için çağrı sırası SQL deyimi veya depolanan yordamdaki parametrelerin sırasına karşılık olmalıdır.
 
 ```cpp
 void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
@@ -135,12 +135,12 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
 ```
 
 > [!NOTE]
->  Türetilmiş `CRecordset` sınıfınız kapsam dışına geçmeden önce `Close` member işlevini çağırmanız gerekir. Bu, çerçeve tarafından ayrılan tüm belleğin serbest olmasını sağlar. Toplu satır getirme uygulanıp uygulanmadığı bağımsız olarak `Close`her zaman açıkça çağırmanın iyi bir programlama uygulamasıdır.
+> Türemiş `CRecordset` `Close` sınıfınız kapsam dışına çıkmadan önce üye işlevi aramalısınız. Bu, çerçeve tarafından ayrılan herhangi bir belleğin serbest kalmasını sağlar. Toplu satır alma uygulamanız olup `Close`olmadığına bakılmaksızın, her zaman açıkça aramak iyi bir programlama uygulamasıdır.
 
-Kayıt alanı değişimi (RFX) hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX 'In nasıl çalıştığı](../../data/odbc/record-field-exchange-how-rfx-works.md). Parametreleri kullanma hakkında daha fazla bilgi için bkz. [CFieldExchange:: SETTI](../../mfc/reference/cfieldexchange-class.md#setfieldtype) ve [kayıt kümesi: bir kayıt kümesini PARAMETRIZE (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+Kayıt alanı değişimi (RFX) hakkında daha fazla bilgi için [bkz.](../../data/odbc/record-field-exchange-how-rfx-works.md) Parametreleri kullanma hakkında daha fazla bilgi için [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) ve [Recordset: Parameterizing bir Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[CRecordset:: m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>
-[CRecordset:: m_nParams](../../mfc/reference/crecordset-class.md#m_nparams)
+[CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>
+[CRecordset::m_nParams](../../mfc/reference/crecordset-class.md#m_nparams)

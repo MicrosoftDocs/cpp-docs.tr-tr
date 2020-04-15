@@ -1,5 +1,5 @@
 ---
-title: CMemoryException sınıfı
+title: CMemoryException Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMemoryException
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-ms.openlocfilehash: 11be0eba080085c507ed718ea23219ca1c93aeba
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 375b4227a25ae4c18cfd263eff4c3ec13f1304e1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341176"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370001"
 ---
-# <a name="cmemoryexception-class"></a>CMemoryException sınıfı
+# <a name="cmemoryexception-class"></a>CMemoryException Sınıfı
 
-Bellek yetersiz özel durum koşulunu temsil eder.
+Bellek dışı bir özel durum koşulunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,33 +29,33 @@ class CMemoryException : public CSimpleException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMemoryException::CMemoryException](#cmemoryexception)|Oluşturur bir `CMemoryException` nesne.|
+|[CMemoryException::CMemoryException](#cmemoryexception)|Bir `CMemoryException` nesne inşa eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başka hiçbir nitelik gerekli veya mümkün değil. Bellek özel durumlar tarafından otomatik olarak **yeni**. Kendi bellek işlevleri yazarsanız kullanarak `malloc`için örnek, ardından bellek özel durumları atma için sorumludur.
+Başka bir nitelik gerekli veya mümkün değildir. Bellek özel durumları **yeni**tarafından otomatik olarak atılır. `malloc`Örneğin, kendi bellek işlevlerinizi yazarsanız, bellek özel durumları atmanızdan siz sorumlusunuz.
 
-Daha fazla bilgi için `CMemoryException`, makaleye göz atın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
+Daha fazla `CMemoryException`bilgi için, [makaleözel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CException](../../mfc/reference/cexception-class.md)
+[Cexception](../../mfc/reference/cexception-class.md)
 
-[CSimpleException](../../mfc/reference/csimpleexception-class.md)
+[Csimpleexception](../../mfc/reference/csimpleexception-class.md)
 
 `CMemoryException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afx.h
+**Üstbilgi:** afx.h
 
-##  <a name="cmemoryexception"></a>  CMemoryException::CMemoryException
+## <a name="cmemoryexceptioncmemoryexception"></a><a name="cmemoryexception"></a>CMemoryException::CMemoryException
 
-Oluşturur bir `CMemoryException` nesne.
+Bir `CMemoryException` nesne inşa eder.
 
 ```
 CMemoryException();
@@ -63,7 +63,7 @@ CMemoryException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu doğrudan kullanmaz, bunun yerine genel işlev çağrısı [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Bu genel işlev, önceden ayrılmış bellek içinde özel durum nesnesi oluşturur çünkü bir bellek yetersiz duruma başarılı olabilir. özel durum işleme hakkında daha fazla bilgi için bkz [özel durumları](../exception-handling-in-mfc.md).
+Bu oluşturucuyu doğrudan kullanmayın, daha çok global işlevi [AfxThrowMemoryException'ı](exception-processing.md#afxthrowmemoryexception)arayın. bu genel işlev, daha önce ayrılmış bellekte özel durum nesnesi oluşturur, çünkü bellek dışı bir durumda başarılı olabilir. özel durum işleme hakkında daha fazla bilgi için makale [özel durumlarına](../exception-handling-in-mfc.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

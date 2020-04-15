@@ -1,5 +1,5 @@
 ---
-title: '&lt;Regex&gt; tür tanımları'
+title: '&lt;regex&gt; typedefs'
 ms.date: 11/04/2016
 f1_keywords:
 - regex/std::cmatch
@@ -21,14 +21,14 @@ f1_keywords:
 - regex/std::wsregex_token_iterator
 - regex/std::wssub_match
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
-ms.openlocfilehash: 4321d9ea6fd9ba57074b25e084553fe1f0846213
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 5dbda2df4877da7594dd633e9f203a3780b4adb1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419576"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368554"
 ---
-# <a name="ltregexgt-typedefs"></a>&lt;Regex&gt; tür tanımları
+# <a name="ltregexgt-typedefs"></a>&lt;regex&gt; typedefs
 
 ||||
 |-|-|-|
@@ -39,9 +39,9 @@ ms.locfileid: "79419576"
 |[wcsub_match](#wcsub_match)|[wregex](#wregex)|[wsmatch](#wsmatch)|
 |[wsregex_iterator](#wsregex_iterator)|[wsregex_token_iterator](#wsregex_token_iterator)|[wssub_match](#wssub_match)|
 
-## <a name="cmatch"></a>cmatch typedef
+## <a name="cmatch-typedef"></a><a name="cmatch"></a>cmatch Typedef
 
-Char match_results için tür tanımı.
+Char match_results için yazı tanımı.
 
 ```cpp
 typedef match_results<const char*> cmatch;
@@ -49,11 +49,11 @@ typedef match_results<const char*> cmatch;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const char*`türündeki yineleyiciler için sınıf şablonu [match_results](../standard-library/match-results-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [match_results sınıfının](../standard-library/match-results-class.md) tür `const char*`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="cregex_iterator"></a>cregex_iterator typedef
+## <a name="cregex_iterator-typedef"></a><a name="cregex_iterator"></a>cregex_iterator Typedef
 
-Char regex_iterator için tür tanımı.
+Char regex_iterator için yazı tanımı.
 
 ```cpp
 typedef regex_iterator<const char*> cregex_iterator;
@@ -61,9 +61,9 @@ typedef regex_iterator<const char*> cregex_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const char*`türündeki yineleyiciler için sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) sınıf `const char*`yineleyicileri için bir uzmanlık açıklar.
 
-## <a name="cregex_token_iterator"></a>cregex_token_iterator typedef
+## <a name="cregex_token_iterator-typedef"></a><a name="cregex_token_iterator"></a>cregex_token_iterator Typedef
 
 Char regex_token_iterator için tür tanımı
 
@@ -73,11 +73,11 @@ typedef regex_token_iterator<const char*> cregex_token_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const char*`türündeki yineleyiciler için sınıf şablonu [regex_token_iterator](../standard-library/regex-token-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_token_iterator sınıfının](../standard-library/regex-token-iterator-class.md) tür `const char*`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="csub_match"></a>csub_match typedef
+## <a name="csub_match-typedef"></a><a name="csub_match"></a>csub_match Typedef
 
-Char sub_match için tür tanımı.
+Char sub_match için yazı tanımı.
 
 ```cpp
 typedef sub_match<const char*> csub_match;
@@ -85,11 +85,11 @@ typedef sub_match<const char*> csub_match;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const char*`türündeki yineleyiciler için sınıf şablonu [sub_match](../standard-library/sub-match-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [sub_match sınıfının](../standard-library/sub-match-class.md) tür `const char*`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="regex"></a>Regex typedef
+## <a name="regex-typedef"></a><a name="regex"></a>regex Typedef
 
-Char basic_regex için tür tanımı.
+Char basic_regex için yazı tanımı.
 
 ```cpp
 typedef basic_regex<char> regex;
@@ -97,14 +97,14 @@ typedef basic_regex<char> regex;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, **char**türündeki öğeler için sınıf şablonu [basic_regex](../standard-library/basic-regex-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [basic_regex sınıf](../standard-library/basic-regex-class.md) türü **char**öğeleri için bir uzmanlık açıklar.
 
 > [!NOTE]
-> Yüksek bit karakterler `regex`ile öngörülemeyen sonuçlara sahip olacaktır. 0 ile 127 aralığının dışındaki değerler tanımsız davranışa neden olabilir.
+> Yüksek bit karakterleri ile `regex`öngörülemeyen sonuçlar olacaktır. 0 ile 127 aralığı dışındaki değerler tanımlanmamış davranışlara neden olabilir.
 
-## <a name="smatch"></a>smatch typedef
+## <a name="smatch-typedef"></a><a name="smatch"></a>smatch Typedef
 
-Match_results dize için tür tanımı.
+Dize match_results için yazı tanımı.
 
 ```cpp
 typedef match_results<string::const_iterator> smatch;
@@ -112,11 +112,11 @@ typedef match_results<string::const_iterator> smatch;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `string::const_iterator`türündeki yineleyiciler için sınıf şablonu [match_results](../standard-library/match-results-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [match_results sınıfının](../standard-library/match-results-class.md) tür `string::const_iterator`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="sregex_iterator"></a>sregex_iterator typedef
+## <a name="sregex_iterator-typedef"></a><a name="sregex_iterator"></a>sregex_iterator Typedef
 
-Regex_iterator dize için tür tanımı.
+Dize regex_iterator için yazı tanımı.
 
 ```cpp
 typedef regex_iterator<string::const_iterator> sregex_iterator;
@@ -124,11 +124,11 @@ typedef regex_iterator<string::const_iterator> sregex_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `string::const_iterator`türündeki yineleyiciler için sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) sınıf `string::const_iterator`yineleyicileri için bir uzmanlık açıklar.
 
-## <a name="sregex_token_iterator"></a>sregex_token_iterator typedef
+## <a name="sregex_token_iterator-typedef"></a><a name="sregex_token_iterator"></a>sregex_token_iterator Typedef
 
-Regex_token_iterator dize için tür tanımı.
+Dize regex_token_iterator için yazı tanımı.
 
 ```cpp
 typedef regex_token_iterator<string::const_iterator> sregex_token_iterator;
@@ -136,11 +136,11 @@ typedef regex_token_iterator<string::const_iterator> sregex_token_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `string::const_iterator`türündeki yineleyiciler için sınıf şablonu [regex_token_iterator](../standard-library/regex-token-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_token_iterator sınıfının](../standard-library/regex-token-iterator-class.md) tür `string::const_iterator`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="ssub_match"></a>ssub_match typedef
+## <a name="ssub_match-typedef"></a><a name="ssub_match"></a>ssub_match Typedef
 
-Sub_match dize için tür tanımı.
+Dize sub_match için yazı tanımı.
 
 ```cpp
 typedef sub_match<string::const_iterator> ssub_match;
@@ -148,11 +148,11 @@ typedef sub_match<string::const_iterator> ssub_match;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `string::const_iterator`türündeki yineleyiciler için sınıf şablonu [sub_match](../standard-library/sub-match-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [sub_match sınıfının](../standard-library/sub-match-class.md) tür `string::const_iterator`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="wcmatch"></a>wcmatch typedef
+## <a name="wcmatch-typedef"></a><a name="wcmatch"></a>wcmatch Typedef
 
-Wchar_t match_results için tanım yazın.
+wchar_t match_results için yazı tanımı.
 
 ```cpp
 typedef match_results<const wchar_t *> wcmatch;
@@ -160,11 +160,11 @@ typedef match_results<const wchar_t *> wcmatch;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const wchar_t*`türündeki yineleyiciler için sınıf şablonu [match_results](../standard-library/match-results-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [match_results sınıfının](../standard-library/match-results-class.md) tür `const wchar_t*`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="wcregex_iterator"></a>wcregex_iterator typedef
+## <a name="wcregex_iterator-typedef"></a><a name="wcregex_iterator"></a>wcregex_iterator Typedef
 
-Wchar_t regex_iterator için tanım yazın.
+wchar_t regex_iterator için yazı tanımı.
 
 ```cpp
 typedef regex_iterator<const wchar_t*> wcregex_iterator;
@@ -172,11 +172,11 @@ typedef regex_iterator<const wchar_t*> wcregex_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const wchar_t*`türündeki yineleyiciler için sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) sınıf `const wchar_t*`yineleyicileri için bir uzmanlık açıklar.
 
-## <a name="wcregex_token_iterator"></a>wcregex_token_iterator typedef
+## <a name="wcregex_token_iterator-typedef"></a><a name="wcregex_token_iterator"></a>wcregex_token_iterator Typedef
 
-Wchar_t regex_token_iterator için tanım yazın.
+wchar_t regex_token_iterator için tür tanımı.
 
 ```cpp
 typedef regex_token_iterator<const wchar_t*> wcregex_token_iterator;
@@ -184,11 +184,11 @@ typedef regex_token_iterator<const wchar_t*> wcregex_token_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const wchar_t*`türündeki yineleyiciler için sınıf şablonu [regex_token_iterator](../standard-library/regex-token-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_token_iterator sınıfının](../standard-library/regex-token-iterator-class.md) tür `const wchar_t*`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="wcsub_match"></a>wcsub_match typedef
+## <a name="wcsub_match-typedef"></a><a name="wcsub_match"></a>wcsub_match Typedef
 
-Wchar_t sub_match için tanım yazın.
+wchar_t sub_match için yazı tanımı.
 
 ```cpp
 typedef sub_match<const wchar_t*> wcsub_match;
@@ -196,11 +196,11 @@ typedef sub_match<const wchar_t*> wcsub_match;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `const wchar_t*`türündeki yineleyiciler için sınıf şablonu [sub_match](../standard-library/sub-match-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [sub_match sınıfının](../standard-library/sub-match-class.md) tür `const wchar_t*`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="wregex"></a>wregex Typedef
+## <a name="wregex-typedef"></a><a name="wregex"></a>wregex Typedef
 
-Wchar_t basic_regex için tanım yazın.
+wchar_t basic_regex için yazı tanımı.
 
 ```cpp
 typedef basic_regex<wchar_t> wregex;
@@ -208,11 +208,11 @@ typedef basic_regex<wchar_t> wregex;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, **wchar_t**türündeki öğeler için sınıf şablonu [basic_regex](../standard-library/basic-regex-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [basic_regex Sınıf'ın](../standard-library/basic-regex-class.md) **wchar_t**türü öğeleri için uzmanlaşmasını açıklar.
 
-## <a name="wsmatch"></a>wsmatch typedef
+## <a name="wsmatch-typedef"></a><a name="wsmatch"></a>wsmatch Typedef
 
-Wstring match_results için tür tanımı.
+Wstring match_results için yazı tanımı.
 
 ```cpp
 typedef match_results<wstring::const_iterator> wsmatch;
@@ -220,11 +220,11 @@ typedef match_results<wstring::const_iterator> wsmatch;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `wstring::const_iterator`türündeki yineleyiciler için sınıf şablonu [match_results](../standard-library/match-results-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [match_results sınıfının](../standard-library/match-results-class.md) tür `wstring::const_iterator`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="wsregex_iterator"></a>wsregex_iterator typedef
+## <a name="wsregex_iterator-typedef"></a><a name="wsregex_iterator"></a>wsregex_iterator Typedef
 
-Wstring regex_iterator için tür tanımı.
+Wstring regex_iterator için yazı tanımı.
 
 ```cpp
 typedef regex_iterator<wstring::const_iterator> wsregex_iterator;
@@ -232,11 +232,11 @@ typedef regex_iterator<wstring::const_iterator> wsregex_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `wstring::const_iterator`türündeki yineleyiciler için sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_iterator](../standard-library/regex-iterator-class.md) sınıf `wstring::const_iterator`yineleyicileri için bir uzmanlık açıklar.
 
-## <a name="wsregex_token_iterator"></a>wsregex_token_iterator typedef
+## <a name="wsregex_token_iterator-typedef"></a><a name="wsregex_token_iterator"></a>wsregex_token_iterator Typedef
 
-Wstring regex_token_iterator için tür tanımı.
+Wstring regex_token_iterator için yazı tanımı.
 
 ```cpp
 typedef regex_token_iterator<wstring::const_iterator> wsregex_token_iterator;
@@ -244,11 +244,11 @@ typedef regex_token_iterator<wstring::const_iterator> wsregex_token_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `wstring::const_iterator`türündeki yineleyiciler için sınıf şablonu [regex_token_iterator](../standard-library/regex-token-iterator-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [regex_token_iterator sınıfının](../standard-library/regex-token-iterator-class.md) tür `wstring::const_iterator`yineleyicileri için özelleştirilmesini açıklar.
 
-## <a name="wssub_match"></a>wssub_match typedef
+## <a name="wssub_match-typedef"></a><a name="wssub_match"></a>wssub_match Typedef
 
-Wstring sub_match için tür tanımı.
+Wstring sub_match için yazı tanımı.
 
 ```cpp
 typedef sub_match<wstring::const_iterator> wssub_match;
@@ -256,15 +256,15 @@ typedef sub_match<wstring::const_iterator> wssub_match;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `wstring::const_iterator`türündeki yineleyiciler için sınıf şablonu [sub_match](../standard-library/sub-match-class.md) bir özelleşme tanımlar.
+Tür, sınıf şablonu [sub_match sınıfının](../standard-library/sub-match-class.md) tür `wstring::const_iterator`yineleyicileri için özelleştirilmesini açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<regex >](../standard-library/regex.md)\
-[Regex_constants sınıfı](../standard-library/regex-constants-class.md)\
-[Regex_error sınıfı](../standard-library/regex-error-class.md)\
-[\<regex > işlevleri](../standard-library/regex-functions.md)\
-[Regex_iterator sınıfı](../standard-library/regex-iterator-class.md)\
-[\<regex > işleçleri](../standard-library/regex-operators.md)\
-[Regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
+[\<regex>](../standard-library/regex.md)\
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)\
+[regex_error Sınıfı](../standard-library/regex-error-class.md)\
+[\<regex> fonksiyonları](../standard-library/regex-functions.md)\
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
+[\<regex> operatörleri](../standard-library/regex-operators.md)\
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)\
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)

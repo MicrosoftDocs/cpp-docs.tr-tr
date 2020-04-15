@@ -7,26 +7,26 @@ helpviewer_keywords:
 - property sheets, MFC
 - tab dialog boxes
 ms.assetid: e1bede2b-0285-4b88-a052-0f8a372807a2
-ms.openlocfilehash: fa8ee3518ad2b32e0eace77f0961eb86ccde1822
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10fb34c79745e672d30dd2d3c3b97d457583f795
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371180"
 ---
 # <a name="property-sheets-and-property-pages-in-mfc"></a>MFC'de Özellik Bölümleri ve Özellik Sayfaları
 
-Bir özellik sayfası olarak da bilinen bir sekme iletişim kutusu, özellik sayfaları içeren bir iletişim kutusudur. Her bir özellik sayfası iletişim şablon kaynağında temel alır ve denetimler de içerir. Bu sayfada en üstte bir sekme ile içine alınır. Sekme adları sayfası ve amacını gösterir. Kullanıcılar bir özellik sayfası bir dizi denetimi seçmek için sekmesinde'ı tıklatın.
+Sekme iletişim kutusu olarak da bilinen özellik sayfası, özellik sayfaları içeren bir iletişim kutusudur. Her özellik sayfası bir iletişim şablonu kaynağını temel alıyor ve denetimler içeriyor. Üstte sekme olan bir sayfaya eklenir. Sekme sayfayı adlandırır ve amacını gösterir. Kullanıcılar bir denetim kümesi seçmek için özellik sayfasındaki bir sekmeyi tıklattı.
 
-Özellik sayfası denetimlerinde anlamlı kümeleri halinde gruplandırmak için sayfalarını kullanın. Kapsanan özellik sayfası, genellikle kendi çeşitli denetimler içerir. Bu, tüm sayfalara uygulanır.
+Özellik sayfasındaki denetimleri anlamlı kümelere gruplandırmak için sayfaları kullanın. İçerdiği özellik sayfası genellikle kendi başına birkaç denetime sahiptir. Bunlar tüm sayfalar için geçerlidir.
 
-Özellik sayfaları, sınıfta dayalı [CPropertySheet](../mfc/reference/cpropertysheet-class.md). Özellik sayfaları, sınıfta dayalı [CPropertyPage](../mfc/reference/cpropertypage-class.md).
+Özellik sayfaları sınıf [CPropertySheet](../mfc/reference/cpropertysheet-class.md)dayanmaktadır. Özellik sayfaları [cpropertypage](../mfc/reference/cpropertypage-class.md)sınıfı dayanmaktadır.
 
-Bir özellik sayfası iletişim kutusu, genel bir görünüm geçerli seçimde gibi bazı dış nesne özniteliklerini değiştirmek için kullanılan özel türüdür. Özellik sayfası üç ana bölümden oluşur: gösterilen birer birer ve bu sayfayı seçmek için kullanıcı tıkladığında her sayfanın üst kısmındaki sekme bir veya daha fazla özelliği içeren bir iletişim kutusu sayfaları. Özellik sayfaları ayarları ya da değiştirmek için seçenekler birkaç benzer grubuna sahip olduğu durumlar için kullanışlıdır. Bir özellik sayfası anlaşılması kolay bir şekilde bilgi gruplandırır.
+Özellik sayfası, görünümdeki geçerli seçim gibi bazı dış nesnelerin özniteliklerini değiştirmek için genellikle kullanılan özel bir iletişim kutusu türüdür. Özellik sayfasının üç ana bölümü vardır: içeren iletişim kutusu, birer birer gösterilen bir veya daha fazla özellik sayfası ve kullanıcının bu sayfayı seçmek için tıklatdığı her sayfanın üst kısmında ki bir sekme. Özellik sayfaları, değiştirmek için birkaç benzer ayar veya seçenek grubunuzun olduğu durumlar için yararlıdır. Bir özellik sayfası bilgileri kolayca anlaşılmış bir şekilde gruplar.
 
 > [!NOTE]
->  Bir özellik sayfasını kullanarak göstermek çalışırken `CPropertySheet::DoModal`, sistemin ilk fırsat özel durum oluşturabilir. Sistem değiştirilmeye çalışılırken özel durum oluşur [pencere stilleri](../mfc/reference/styles-used-by-mfc.md#window-styles) nesne oluşturulmadan önce nesne. Bu özel durum ve onu önlemenin veya bunu işlemek nasıl hakkında daha fazla bilgi için bkz. [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal).
+> Bir özellik sayfasını kullanarak `CPropertySheet::DoModal`göstermeye çalıştığınızda, sistem ilk şans özel durumu oluşturabilir. Bu özel durum, sistem nesne oluşturulmadan önce nesnenin [Pencere Stillerini](../mfc/reference/styles-used-by-mfc.md#window-styles) değiştirmeye çalıştığından oluşur. Bu özel durum hakkında daha fazla bilgi için, ve aynı zamanda nasıl önlemek veya işlemek için, [CPropertySheet bakın::DoModal](../mfc/reference/cpropertysheet-class.md#domodal).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özellik sayfaları](../mfc/property-sheets-mfc.md)
+[Özellik Sayfaları](../mfc/property-sheets-mfc.md)

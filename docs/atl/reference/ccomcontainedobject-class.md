@@ -1,5 +1,5 @@
 ---
-title: Ccomkirinedobject sınıfı
+title: CcomcontainedObject Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComContainedObject
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComContainedObject class
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-ms.openlocfilehash: c5e2fa64cc0938e632a37eac7dd1d6e9111c3d98
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 72ba27c3be6576621995ffb8c98995c6abc9324c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497314"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320791"
 ---
-# <a name="ccomcontainedobject-class"></a>Ccomkirinedobject sınıfı
+# <a name="ccomcontainedobject-class"></a>CcomcontainedObject Sınıfı
 
-Bu sınıf, [](/windows/win32/api/unknwn/nn-unknwn-iunknown) sahip nesnesine `IUnknown`temsilci seçerek IUnknown uygular.
+Bu sınıf [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) sahibi nesnenin `IUnknown`.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,29 +38,29 @@ class CComContainedObject : public Base
 #### <a name="parameters"></a>Parametreler
 
 *Temel*<br/>
-[CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)sınıfından türetilmiş sınıfınız.
+CComObjectRoot veya [CComObjectRootEx](../../atl/reference/ccomobjectroot-class.md) türetilen sınıf, . [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Ccomkirinedobject:: Ccomkirinedobject](#ccomcontainedobject)|Oluşturucu. Üye işaretçisini sahip nesnesine `IUnknown`başlatır.|
-|[Ccomkirinedobject:: ~ Ccomkirinedobject](#dtor)|Yok edicisi.|
+|[CcomcontainedObject::ccomcontainedobject](#ccomcontainedobject)|Oluşturucu. Üye işaretçiyi sahibi `IUnknown`nesnenin.|
+|[CcomcontainedObject::~ccomcontainedobject](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Ccomkirinedobject:: AddRef](#addref)|Sahip nesnesindeki başvuru sayısını artırır.|
-|[Ccomkirinedobject:: GetControllingUnknown](#getcontrollingunknown)|Sahip nesnesini `IUnknown`alır.|
-|[Ccomkirinedobject:: QueryInterface](#queryinterface)|Sahip nesnesinde istenen arabirime yönelik bir işaretçi alır.|
-|[Ccomkirinedobject:: Release](#release)|Sahip nesnesindeki başvuru sayısını azaltır.|
+|[CcomcontainedObject::addref](#addref)|Başvuru sayısı sahibi nesnesi üzerinde artışlar.|
+|[CComContainedObject::GetControllingUnknown](#getcontrollingunknown)|Sahibi nesnenin . `IUnknown`|
+|[CcomcontainedObject::QueryInterface](#queryinterface)|Sahibi nesneüzerinde istenen arabirim için bir işaretçi alır.|
+|[CcomcontainedObject::Sürüm](#release)|Başvuru sayısını sahibi nesnesi üzerinde erteler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-ATL, `CComContainedObject` [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md)ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)sınıflarında kullanır. `CComContainedObject`sahip [](/windows/win32/api/unknwn/nn-unknwn-iunknown) nesnesine `IUnknown`temsilci seçerek IUnknown uygular. (Sahip, bir toplama 'nın dıştaki nesnesidir ya da bir yırma arabiriminin oluşturulduğu nesne.) ,ve`CComObjectRootEx` 'nin`OuterQueryInterface` tümdevralınan`Base`çağrıları. `OuterAddRef` `CComContainedObject` `OuterRelease`
+ATL `CComContainedObject` sınıflarda [cComAggObject](../../atl/reference/ccomaggobject-class.md)kullanır , [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject`sahibi [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) nesnenin `IUnknown`. (Sahibi ya bir toplama dış nesne, ya da bir yırtılma arabirimi oluşturulan nesnedir.) `CComContainedObject` `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`ve `OuterRelease`, tüm `Base`üzerinden devralınan çağırır .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -70,11 +70,11 @@ ATL, `CComContainedObject` [CComAggObject](../../atl/reference/ccomaggobject-cla
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="addref"></a>Ccomkirinedobject:: AddRef
+## <a name="ccomcontainedobjectaddref"></a><a name="addref"></a>CcomcontainedObject::addref
 
-Sahip nesnesindeki başvuru sayısını artırır.
+Başvuru sayısı sahibi nesnesi üzerinde artışlar.
 
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -84,7 +84,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 Tanılama veya test için yararlı olabilecek bir değer.
 
-##  <a name="ccomcontainedobject"></a>Ccomkirinedobject:: Ccomkirinedobject
+## <a name="ccomcontainedobjectccomcontainedobject"></a><a name="ccomcontainedobject"></a>CcomcontainedObject::ccomcontainedobject
 
 Oluşturucu.
 
@@ -94,16 +94,16 @@ CComContainedObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*bakın*<br/>
-'ndaki Sahip nesnesi `IUnknown`.
+*Pv*<br/>
+[içinde] Sahibi nesnenin `IUnknown`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işaretçisini ( `Base` sınıf üzerinden devralınmış) BD olarak ayarlar. `m_pOuterUnknown`
+Üye `m_pOuterUnknown` işaretçiyi `Base` (sınıf boyunca devralınan) *pv'ye*ayarlar.
 
-##  <a name="dtor"></a>Ccomkirinedobject:: ~ Ccomkirinedobject
+## <a name="ccomcontainedobjectccomcontainedobject"></a><a name="dtor"></a>CcomcontainedObject::~ccomcontainedobject
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CComContainedObject();
@@ -111,11 +111,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır.
+Ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="getcontrollingunknown"></a>Ccomkirinedobject:: GetControllingUnknown
+## <a name="ccomcontainedobjectgetcontrollingunknown"></a><a name="getcontrollingunknown"></a>CComContainedObject::GetControllingUnknown
 
-Sahip nesnesini`IUnknown`tutan üyeişaretçisini(tabansınıfıaracılığıyladevralınmış)`m_pOuterUnknown` döndürür.
+Üye `m_pOuterUnknown` işaretçiyi *(Temel* sınıf üzerinden devralınan) sahibi `IUnknown`nesnenin .
 
 ```
 IUnknown* GetControllingUnknown();
@@ -123,15 +123,15 @@ IUnknown* GetControllingUnknown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sahip nesnesi `IUnknown`.
+Sahibi nesnenin `IUnknown`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `Base` [DECLARE_GET_CONTROLLING_UNKNOWN](aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makrosunu bildirmişse sanal olabilir.
+`Base` [DECLARE_GET_CONTROLLING_UNKNOWN](aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makrosu bildirmişse, bu yöntem sanal olabilir.
 
-##  <a name="queryinterface"></a>Ccomkirinedobject:: QueryInterface
+## <a name="ccomcontainedobjectqueryinterface"></a><a name="queryinterface"></a>CcomcontainedObject::QueryInterface
 
-Sahip nesnesinde istenen arabirime yönelik bir işaretçi alır.
+Sahibi nesneüzerinde istenen arabirim için bir işaretçi alır.
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
@@ -141,22 +141,22 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*'si*<br/>
-'ndaki İstenen arabirimin tanımlayıcısı.
+*ııd*<br/>
+[içinde] İstenen arabirimin tanımlayıcısı.
 
-*ppvObject*<br/>
-dışı *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* null olarak ayarlanır.
+*ppvNesne*<br/>
+[çıkış] *iid*tarafından tanımlanan arabirim işaretçisine işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* NULL olarak ayarlanır.
 
-*Sy*<br/>
-dışı Tür `Q`tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PP* değeri null olarak ayarlanır.
+*S*<br/>
+[çıkış] Türüne göre tanımlanan arabirim `Q`işaretçisi için bir işaretçi . Nesne bu arabirimi desteklemiyorsa, *pp* NULL olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart bir HRESULT değeri.
 
-##  <a name="release"></a>Ccomkirinedobject:: Release
+## <a name="ccomcontainedobjectrelease"></a><a name="release"></a>CcomcontainedObject::Sürüm
 
-Sahip nesnesindeki başvuru sayısını azaltır.
+Başvuru sayısını sahibi nesnesi üzerinde erteler.
 
 ```
 STDMETHOD_(ULONG, Release)();
@@ -164,8 +164,8 @@ STDMETHOD_(ULONG, Release)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata ayıklama yapılarında, `Release` tanılama veya test için yararlı olabilecek bir değer döndürür. Hata ayıklama olmayan derlemelerde, `Release` her zaman 0 döndürür.
+Hata ayıklama oluştururda, `Release` tanılama veya sınama için yararlı olabilecek bir değer verir. Hata ayıklama yapılarında `Release` her zaman 0 döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

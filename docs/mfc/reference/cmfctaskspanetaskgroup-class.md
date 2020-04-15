@@ -1,5 +1,5 @@
 ---
-title: CMFCTasksPaneTaskGroup sınıfı
+title: CMFCTasksPaneTaskGroup Sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CMFCTasksPaneTaskGroup
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], m_rectGroup
 - CMFCTasksPaneTaskGroup [MFC], m_strName
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-ms.openlocfilehash: a28f00fb732727ec1334946a9e752679307cd3a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c24eba646bede462a5f3cfb85715278cfa7daee
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222252"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366262"
 ---
-# <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
+# <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup Sınıfı
 
-`CMFCTasksPaneTaskGroup` Bir yardımcı sınıfı tarafından kullanılan [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetimi. Türündeki nesneler `CMFCTasksPaneTaskGroup` temsil eden bir *görev grubu*. Görev grubu, framework Daralt düğmesi olan ayrı bir kutuda görüntülediği öğelerin listesidir. Kutu isteğe bağlı bir başlık (grup adı) olabilir. Bir grup daraltılmışsa, görevlerin listesi görünür değil.
+Sınıf `CMFCTasksPaneTaskGroup` [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetimi tarafından kullanılan bir yardımcı sınıftır. Tür `CMFCTasksPaneTaskGroup` nesneleri bir *görev grubunu*temsil eder. Görev grubu, çerçevenin daraltdüğmesi olan ayrı bir kutuda görüntülenebilen öğelerin listesidir. Kutuda isteğe bağlı bir resim yazısı (grup adı) olabilir. Bir grup daraltılırsa, görev listesi görünmez.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,60 +45,60 @@ class CMFCTasksPaneTaskGroup : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup](#cmfctaskspanetaskgroup)|Oluşturur bir `CMFCTasksPaneTaskGroup` nesne.|
+|[CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup](#cmfctaskspanetaskgroup)|Bir `CMFCTasksPaneTaskGroup` nesne inşa eder.|
 |`CMFCTasksPaneTaskGroup::~CMFCTasksPaneTaskGroup`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCTasksPaneTaskGroup::SetACCData](#setaccdata)|Geçerli görev grubu için erişilebilirlik verileri belirler.|
+|[CMFCTasksPaneTaskGroup::SetACCData](#setaccdata)|Geçerli görev grubunun erişilebilirlik verilerini belirler.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCTasksPaneTaskGroup::m_bIsBottom](#m_bisbottom)|Görev grubu görev bölmesi denetimi altına hizalanıp hizalanmayacağını belirler.|
-|[CMFCTasksPaneTaskGroup::m_bIsCollapsed](#m_biscollapsed)|Görev grubu daraltılmış olup olmadığını belirler.|
-|[CMFCTasksPaneTaskGroup::m_bIsSpecial](#m_bisspecial)|Görev grubu olup olmadığını belirler *özel.* Framework özel açıklamalı alt yazılar farklı bir renkte görüntülenir.|
-|[CMFCTasksPaneTaskGroup::m_lstTasks](#m_lsttasks)|İç Görevler listesini içerir.|
-|[CMFCTasksPaneTaskGroup::m_rect](#m_rect)|Sınırlayıcı dikdörtgenini Grup başlığını belirtir.|
-|[CMFCTasksPaneTaskGroup::m_rectGroup](#m_rectgroup)|Grup sınırlayıcı dikdörtgenini belirtir.|
+|[CMFCTasksPaneTaskGroup::m_bIsBottom](#m_bisbottom)|Görev grubunun görev bölmedenetiminin altına hizalanıp hizalanmayacağını belirler.|
+|[CMFCTasksPaneTaskGroup::m_bIsCollapsed](#m_biscollapsed)|Görev grubunun daraltılıp çökmediğini belirler.|
+|[CMFCTasksPaneTaskGroup::m_bIsSpecial](#m_bisspecial)|Görev grubunun özel olup olmadığını *belirler.* Çerçeve, farklı renkte özel altyazılar görüntüler.|
+|[CMFCTasksPaneTaskGroup::m_lstTasks](#m_lsttasks)|Dahili görev listesini içerir.|
+|[CMFCTasksPaneTaskGroup::m_rect](#m_rect)|Grup başlığının sınırlayıcı dikdörtgenini belirtir.|
+|[CMFCTasksPaneTaskGroup::m_rectGroup](#m_rectgroup)|Grubun sınırlayıcı dikdörtgenini belirtir.|
 |[CMFCTasksPaneTaskGroup::m_strName](#m_strname)|Grubun adını belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki çizim bir genişletilmiş görev grubunu gösterir:
+Aşağıdaki resimde genişletilmiş bir görev grubu gösterilmektedir:
 
-![Görev grubu, Genişletilmiş](../../mfc/reference/media/nexttaskgrpexpand.png "görev grubu, genişletilmiş")
+![Görev grubu, genişletilmiş](../../mfc/reference/media/nexttaskgrpexpand.png "Görev grubu, genişletilmiş")
 
-Daraltılmış görev grubu aşağıda gösterilmiştir:
+Aşağıdaki resimde daraltılmış bir görev grubu gösterilmektedir:
 
-![Daraltılmış görev grubu](../../mfc/reference/media/nexttaskgrpcollapse.png "daraltılmış görev grubu")
+![Daraltılmış görev grubu](../../mfc/reference/media/nexttaskgrpcollapse.png "Daraltılmış görev grubu")
 
-Bir görev grubunun resim yazısı olmadan aşağıda gösterilmiştir:
+Aşağıdaki resimde resim yazısı olmayan bir görev grubu gösterilmektedir:
 
-![Görev grubu olmadan bir açıklamalı alt yazı](../../mfc/reference/media/nexttaskgrpnocapt.png "görev grubu olmadan bir resim yazısı")
+![Resim yazısı olmayan görev grubu](../../mfc/reference/media/nexttaskgrpnocapt.png "Resim yazısı olmayan görev grubu")
 
-Aşağıdaki çizimde, iki görev gruplarını gösterir. İlk görev grubu ayarlayarak özel olarak işaretlenmiş `m_bIsSpecial` bayrağı TRUE olarak ikinci görev grubunun özel değil. İlk görev grubu için açıklama yazısını nasıl ikinci görev grubu koyu olduğunu unutmayın:
+Aşağıdaki resimde iki görev grubu gösterilmektedir. İlk görev `m_bIsSpecial` grubu, bayrağı TRUE olarak ayarlayarak özel olarak işaretlenirken, ikinci görev grubu özel değildir. İlk görev grubu için alt yazının ikinci görev grubundan nasıl daha koyu olduğuna dikkat edin:
 
-![Özel görev grubu](../../mfc/reference/media/nexttaskgrpspecial.png "özel görev grubu")
+![Özel görev grubu](../../mfc/reference/media/nexttaskgrpspecial.png "Özel görev grubu")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)
+[Cmfctaskspanetaskgroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxTasksPane.h
+**Üstbilgi:** afxTasksPane.h
 
-##  <a name="cmfctaskspanetaskgroup"></a>  CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup
+## <a name="cmfctaskspanetaskgroupcmfctaskspanetaskgroup"></a><a name="cmfctaskspanetaskgroup"></a>CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup
 
-Oluşturur bir `CMFCTasksPaneTaskGroup` nesne.
+Bir `CMFCTasksPaneTaskGroup` nesne inşa eder.
 
 ```
 CMFCTasksPaneTaskGroup(
@@ -112,29 +112,29 @@ CMFCTasksPaneTaskGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Grup başlığı grubunun adını belirtir.
+*Lpszname*<br/>
+Grup başlığında grubun adını belirtir.
 
 *bIsBottom*<br/>
-Görev bölmesi denetimi altına grubu hizalanıp hizalanmayacağını belirtir.
+Grubun görev bölmedenetiminin altına hizalanıp hizalanmayacağını belirtir.
 
 *bIsSpecial*<br/>
-Grup olarak belirlenmiş olup olmadığını belirtir *özel* ve bu nedenle, Grup başlığını farklı bir renkle olup doldurulur.
+Grubun *özel* olarak belirlenip belirtmediğini ve böylece grup başlığının farklı bir renkle doldurulup doldurulmadığını belirtir.
 
 *bIsCollapsed*<br/>
-Grup daraltılmış olup olmadığını belirtir.
+Grubun çöküp çökmediğini belirtir.
 
-*fsayfa*<br/>
-Bu görev grubuna ait özellik sayfası belirtir.
+*pPage*<br/>
+Bu görev grubunun ait olduğu özellik sayfasını belirtir.
 
-*hIcon*<br/>
-Grup başlığı görüntüler simgeyi belirtir.
+*Hıcon*<br/>
+Grup başlığında görüntüleyen simgeyi belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_bisbottom"></a>  CMFCTasksPaneTaskGroup::m_bIsBottom
+## <a name="cmfctaskspanetaskgroupm_bisbottom"></a><a name="m_bisbottom"></a>CMFCTasksPaneTaskGroup::m_bIsBottom
 
-Görev grubu görev bölmesi denetimi altına hizalanıp hizalanmayacağını belirler.
+Görev grubunun görev bölmedenetiminin altına hizalanıp hizalanmayacağını belirler.
 
 ```
 BOOL m_bIsBottom;
@@ -142,11 +142,11 @@ BOOL m_bIsBottom;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca bir grup görev bölmesi denetimi altına hizalanabilir. Bu görev grubu son eklenmesi gerekir. Daha fazla bilgi için [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).
+Görev bölmedenetiminin altına yalnızca bir grup hizalanabilir. Bu görev grubu en son eklenmelidir. Daha fazla bilgi için [cmfctasksPane::AddGroup'a](../../mfc/reference/cmfctaskspane-class.md#addgroup)bakın.
 
-##  <a name="m_biscollapsed"></a>  CMFCTasksPaneTaskGroup::m_bIsCollapsed
+## <a name="cmfctaskspanetaskgroupm_biscollapsed"></a><a name="m_biscollapsed"></a>CMFCTasksPaneTaskGroup::m_bIsCollapsed
 
-Görev grubu daraltılmış olup olmadığını belirler.
+Görev grubunun daraltılıp çökmediğini belirler.
 
 ```
 BOOL m_bIsCollapsed;
@@ -154,11 +154,11 @@ BOOL m_bIsCollapsed;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkinleştirebilir veya çağırarak görev bölmesinde grupları Daralt özelliğini devre dışı [CMFCTasksPane::EnableGroupCollapse](../../mfc/reference/cmfctaskspane-class.md#enablegroupcollapse).
+[CMFCTasksPane::EnableGroupCollapse'i](../../mfc/reference/cmfctaskspane-class.md#enablegroupcollapse)arayarak görev bölmesindeki grupları daraltma yeteneğini etkinleştirebilir veya devre dışı kullanabilirsiniz.
 
-##  <a name="m_bisspecial"></a>  CMFCTasksPaneTaskGroup::m_bIsSpecial
+## <a name="cmfctaskspanetaskgroupm_bisspecial"></a><a name="m_bisspecial"></a>CMFCTasksPaneTaskGroup::m_bIsSpecial
 
-Görev grubu olup olmadığını belirler *özel* ve bir özel görev grubu için açıklama yazısını farklı bir renk ile tanımlanması gerektiğini.
+Görev grubunun *özel* olup olmadığını ve özel bir görev grubunun alt yazısının farklı bir renkle tanımlanıp tanımlanmayacağını belirler.
 
 ```
 BOOL m_bIsSpecial;
@@ -166,11 +166,11 @@ BOOL m_bIsSpecial;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanızı Windows XP görsel temasını kullanıp kullanmadığını ve `m_bIsSpecial` yanlış, framework çağrıları `DrawThemeBackground` EBP_NORMALGROUPBACKGROUND bayrağı. Varsa `m_bIsSpecial` true, framework çağrıları `DrawThemeBackground` EBP_SPECIALGROUPBACKGROUND bayrağı.
+Uygulamanız Windows XP görsel teonu `m_bIsSpecial` kullanıyorsa ve `DrawThemeBackground` FALSE ise, çerçeve EBP_NORMALGROUPBACKGROUND bayrağıyla birlikte çağırır. `m_bIsSpecial` Doğruysa, çerçeve EBP_SPECIALGROUPBACKGROUND `DrawThemeBackground` bayrağıyla birlikte çağırır.
 
-##  <a name="m_lsttasks"></a>  CMFCTasksPaneTaskGroup::m_lstTasks
+## <a name="cmfctaskspanetaskgroupm_lsttasks"></a><a name="m_lsttasks"></a>CMFCTasksPaneTaskGroup::m_lstTasks
 
-İç Görevler listesini içerir.
+Dahili görev listesini içerir.
 
 ```
 CObList m_lstTasks;
@@ -178,11 +178,11 @@ CObList m_lstTasks;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu listeyi doldurmak için çağrı [CMFCTasksPane::AddTask](../../mfc/reference/cmfctaskspane-class.md#addtask).
+Bu listeyi doldurmak için [CMFCTasksPane'yi arayın::AddTask.](../../mfc/reference/cmfctaskspane-class.md#addtask)
 
-##  <a name="m_rect"></a>  CMFCTasksPaneTaskGroup::m_rect
+## <a name="cmfctaskspanetaskgroupm_rect"></a><a name="m_rect"></a>CMFCTasksPaneTaskGroup::m_rect
 
-Sınırlayıcı dikdörtgenini Grup başlığını belirtir.
+Grup başlığının sınırlayıcı dikdörtgenini belirtir.
 
 ```
 CRect m_rect;
@@ -190,11 +190,11 @@ CRect m_rect;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer, çerçeve tarafından otomatik olarak hesaplanır.
+Bu değer çerçeve tarafından otomatik olarak hesaplanır.
 
-##  <a name="m_rectgroup"></a>  CMFCTasksPaneTaskGroup::m_rectGroup
+## <a name="cmfctaskspanetaskgroupm_rectgroup"></a><a name="m_rectgroup"></a>CMFCTasksPaneTaskGroup::m_rectGroup
 
-Grup sınırlayıcı dikdörtgenini belirtir.
+Grubun sınırlayıcı dikdörtgenini belirtir.
 
 ```
 CRect m_rectGroup;
@@ -202,9 +202,9 @@ CRect m_rectGroup;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer, çerçeve tarafından otomatik olarak hesaplanır.
+Bu değer çerçeve tarafından otomatik olarak hesaplanır.
 
-##  <a name="m_strname"></a>  CMFCTasksPaneTaskGroup::m_strName
+## <a name="cmfctaskspanetaskgroupm_strname"></a><a name="m_strname"></a>CMFCTasksPaneTaskGroup::m_strName
 
 Grubun adını belirtir.
 
@@ -214,11 +214,11 @@ CString m_strName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer boş ise Grup başlığını görüntülenmez ve grubun daraltılamaz.
+Bu değer boşsa, grup başlığı görüntülenmez ve grup daraltılamaz.
 
-##  <a name="setaccdata"></a>  CMFCTasksPaneTaskGroup::SetACCData
+## <a name="cmfctaskspanetaskgroupsetaccdata"></a><a name="setaccdata"></a>CMFCTasksPaneTaskGroup::SetACCData
 
-Geçerli görev grubu için erişilebilirlik verileri belirler.
+Geçerli görev grubunun erişilebilirlik verilerini belirler.
 
 ```
 virtual BOOL SetACCData(
@@ -229,14 +229,14 @@ virtual BOOL SetACCData(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-[in] Geçerli görev grubunun ana pencereyi temsil eder.
+[içinde] Geçerli görev grubunun üst penceresini temsil eder.
 
 *Veri*<br/>
-[out] Bir nesne türü `CAccessibilityData` geçerli görev grubunun erişilebilirlik verilerle doldurulur.
+[çıkış] Geçerli görev `CAccessibilityData` grubunun erişilebilirlik verileriyle doldurulan tür nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise *veri* parametre başarıyla geçerli görev grubunun erişilebilirlik verilerle doldurulmuş; Aksi takdirde FALSE.
+*Veri* parametresi geçerli görev grubunun erişilebilirlik verileriyle başarıyla doldurulduysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

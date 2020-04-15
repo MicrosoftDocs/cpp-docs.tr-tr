@@ -8,16 +8,16 @@ helpviewer_keywords:
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-ms.openlocfilehash: 744d0dcf8aafdfe336db0c49307b8e1756b8cf7f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 20116674feffaa5b4bbddf707dd3a4d0c1d9ad98
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179932"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364439"
 ---
 # <a name="friend-c"></a>friend (C++)
 
-Bazı durumlarda, bir sınıfın üyesi olmayan işlevlere veya ayrı bir sınıftaki tüm üyelere üye düzeyinde erişim vermek daha uygundur. Yalnızca bir sınıf uygulayıcısı kimlerin arkadaşlarını bildirebilirler. Bir işlev veya sınıf kendisini herhangi bir sınıfın arkadaş olarak bildiremez. Bir sınıf tanımında, kendi sınıfınızın özel ve korumalı üyelerine erişim izni vermek için **Friend** anahtar sözcüğünü ve üye olmayan bir işlevin ya da başka bir sınıfın adını kullanın. Bir şablon tanımında, bir tür parametresi arkadaş olarak bildirilebilecek.
+Bazı durumlarda, bir sınıfın üyesi olmayan işlevlere veya ayrı bir sınıftaki tüm üyelere üye düzeyinde erişim sağlamak daha uygundur. Yalnızca sınıf uygulayıcısı arkadaşlarının kim olduğunu bildirebilir. Bir işlev veya sınıf kendisini herhangi bir sınıfın arkadaşı olarak beyan edemez. Sınıf tanımında, **arkadaşınızın** anahtar sözcük ve üye olmayan bir işlevin veya başka bir sınıfın adını kullanarak sınıfınözel ve korumalı üyelerine erişim hakkı tanıyın. Şablon tanımında, bir tür parametresi arkadaş olarak ilan edilebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,11 +28,11 @@ friend F;
 
 ## <a name="friend-declarations"></a>Arkadaş bildirimleri
 
-Daha önce bildirilmemiş bir arkadaş işlev bildirirseniz, bu işlev kapsayan sınıf olmayan kapsama aktarılabilir.
+Daha önce bildirilmemiş bir arkadaş işlevini bildirirseniz, bu işlev bir alandaki sınıf dışı kapsama dışa aktarılır.
 
-Arkadaş bildiriminde belirtilen işlevler, **extern** anahtar sözcüğü kullanılarak bildirilenler gibi değerlendirilir. Daha fazla bilgi için bkz. [extern](extern-cpp.md).
+Arkadaş bildiriminde bildirilen **işlevler, extern** anahtar sözcüğü kullanılarak bildirilmiş gibi değerlendirilir. Daha fazla bilgi için [extern'](extern-cpp.md)e bakın.
 
-Genel kapsama sahip işlevler, prototiplerinden önce arkadaş olarak bildirilebilecek olsa da, üye işlevleri, kendi sınıf bildiriminin görünüşünün önünde arkadaş olarak bildirilemez. Aşağıdaki kod neden başarısız olduğunu gösterir:
+Genel kapsama sahip işlevler prototiplerinden önce arkadaş olarak bildirilebilse de, üye işlevler tam sınıf bildirimi nin ortaya çıkmasından önce arkadaş olarak bildirilemez. Aşağıdaki kod, bunun neden başarısız olduğunu gösterir:
 
 ```cpp
 class ForwardDeclared;   // Class name is known.
@@ -42,18 +42,18 @@ class HasFriends
 };
 ```
 
-Yukarıdaki örnekte `ForwardDeclared` sınıf adı kapsam içine girer, ancak tüm bildirimi — özellikle de `IsAFriend` işlevi bildiren bölüm bilinmiyor. Bu nedenle, `HasFriends` sınıftaki **arkadaş** bildirimi bir hata oluşturur.
+Önceki örnek sınıf adını `ForwardDeclared` kapsamına girer, ancak tam bildirim -özellikle işlevi `IsAFriend` bildiren kısım- bilinmemektedir. Bu nedenle, sınıfta `HasFriends` **arkadaş** bildirimi bir hata oluşturur.
 
-C++ 11 ' den başlayarak, bir sınıf için iki arkadaş bildirimi biçimi vardır:
+C++11'den başlayarak, bir sınıf için iki arkadaş bildirimi biçimi vardır:
 
 ```cpp
 friend class F;
 friend F;
 ```
 
-İlk form, en içteki ad alanında bu ada göre mevcut bir sınıf bulunamazsa yeni bir F sınıfı tanıtır. **C++ 11**: ikinci form yeni bir sınıf sunmaz; sınıf zaten bildirildiği zaman kullanılabilir ve bir şablon türü parametresi ya da bir typedef olarak bir typedef bildirirken kullanılması gerekir.
+İlk form, en içteki ad alanında bu ada göre varolan bir sınıf bulunamazsa yeni bir F sınıfı sunar. **C++11**: İkinci form yeni bir sınıf getirmez; sınıf zaten bildirilmişse kullanılabilir ve şablon türü parametresi veya bir yazı tipi arkadaş olarak bildirilirken kullanılmalıdır.
 
-Başvurulan tür henüz bildirilmemiş `class friend F` kullanın:
+Başvurulan tür henüz bildirilmemişse kullanın: `class friend F`
 
 ```cpp
 namespace NS
@@ -75,7 +75,7 @@ namespace NS
 }
 ```
 
-Aşağıdaki örnekte `friend F`, NS kapsamı dışında belirtilen `F` sınıfına başvurur.
+Aşağıdaki örnekte, `friend F` NS `F` kapsamı dışında bildirilen sınıfa başvurur.
 
 ```cpp
 class F {};
@@ -88,7 +88,7 @@ namespace NS
 }
 ```
 
-Bir şablon parametresini arkadaş olarak bildirmek için `friend F` kullanın:
+Şablon `friend F` parametresini arkadaş olarak bildirmek için kullanın:
 
 ```cpp
 template <typename T>
@@ -99,7 +99,7 @@ class my_class
 };
 ```
 
-Bir typedef 'i arkadaş olarak bildirmek için `friend F` kullanın:
+Bir `friend F` typedef'i arkadaş olarak bildirmek için kullanın:
 
 ```cpp
 class Foo {};
@@ -112,16 +112,16 @@ class G
 };
 ```
 
-Bir diğerinin arkadaşından oluşan iki sınıf bildirmek için ikinci sınıfın tamamı ilk sınıfın bir arkadaşınız olarak belirtilmelidir. Bu kısıtlamanın nedeni, derleyicinin tek tek arkadaş işlevlerini yalnızca ikinci sınıfın bildirildiği noktada bildirmek için yeterli bilgiye sahip olmasının nedenidir.
+Birbirinin arkadaşı olan iki sınıfı bildirmek için, ikinci sınıfın tamamının birinci sınıfın arkadaşı olarak belirtilmesi gerekir. Bu kısıtlamanın nedeni, derleyicinin yalnızca ikinci sınıfın beyan edildiği noktada tek tek arkadaş işlevlerini bildirmek için yeterli bilgiye sahip olmasıdır.
 
 > [!NOTE]
->  İkinci sınıfın tamamı ilk sınıfa bir arkadaşınız olmalıdır, ancak ilk sınıftaki işlevlerin ikinci sınıfın arkadaşları olacağını seçebilirsiniz.
+> Tüm ikinci sınıf birinci sınıf için bir arkadaş olması gerekir, birinci sınıfta hangi işlevleri ikinci sınıfın arkadaşları olacağını seçebilirsiniz.
 
 ## <a name="friend-functions"></a>arkadaş işlevleri
 
-**Arkadaş** işlevi, bir sınıfın üyesi olmayan ancak sınıfın özel ve korunan üyelerine erişimi olan bir işlevdir. Arkadaş işlevleri sınıf üyeleri olarak kabul edilmez; Bunlar, özel erişim ayrıcalıkları verilen normal dış işlevlerdir. Arkadaşlar, sınıfın kapsamında değildir ve üye seçim işleçleri ( **.** ve- **>** ) başka bir sınıfın üyesi olmadıkları müddetçe. Bir **Friend** işlevi, erişim veren sınıf tarafından bildirilmiştir. **Friend** bildirimi, sınıf bildiriminde herhangi bir yere yerleştirilebilir. Erişim denetimi anahtar sözcüklerinden etkilenmez.
+**Arkadaş** işlevi, sınıfın üyesi olmayan ancak sınıfın özel ve korumalı üyelerine erişimi olan bir işlevdir. Arkadaş işlevleri sınıf üyesi olarak kabul edilmez; bunlar özel erişim ayrıcalıkları verilen normal dış işlevlerdir. Arkadaşlar sınıfın kapsamında değildir ve üye seçim işleçleri kullanılarak çağrılmaz (**.** ve**>**- ) başka bir sınıfın üyesi olmadıkça. Bir **arkadaş** işlevi erişim veren sınıf tarafından bildirilir. **Arkadaş** bildirimi sınıf bildiriminde herhangi bir yere yerleştirilebilir. Erişim denetimi anahtar kelimelerden etkilenmez.
 
-Aşağıdaki örnek, `ChangePrivate`bir `Point` sınıfı ve arkadaş işlevi gösterir. **Friend** işlevinin parametre olarak aldığı `Point` nesnesinin özel veri üyesine erişimi vardır.
+Aşağıdaki örnekte `Point` bir sınıf ve `ChangePrivate`bir arkadaş işlevi gösterir. **Arkadaş** işlevi, parametre olarak aldığı `Point` nesnenin özel veri üyesine erişebilir.
 
 ```cpp
 // friend_functions.cpp
@@ -155,7 +155,7 @@ int main()
 
 ## <a name="class-members-as-friends"></a>Arkadaş olarak sınıf üyeleri
 
-Sınıf üyesi işlevleri, diğer sınıflarda arkadaş olarak bildirilemez. Aşağıdaki örnek göz önünde bulundurun:
+Sınıf üye işlevleri diğer sınıflarda arkadaş olarak bildirilebilir. Aşağıdaki örneği inceleyin:
 
 ```cpp
 // classes_as_friends1.cpp
@@ -183,15 +183,15 @@ int A::Func1( B& b ) { return b._b; }   // OK
 int A::Func2( B& b ) { return b._b; }   // C2248
 ```
 
-Yukarıdaki örnekte, yalnızca `A::Func1( B& )` işlevi, `B`sınıfına arkadaş erişimi verilmesini sağlar. Bu nedenle, özel üye `_b` erişimi `A` sınıfının `Func1`, ancak `Func2`değil.
+Önceki örnekte, yalnızca işlev `A::Func1( B& )` sınıfa `B`arkadaş erişimi verilir. Bu nedenle, özel `_b` üyeye `Func1` erişim `A` sınıfta doğrudur, ancak 'da `Func2`değil.
 
-`friend` sınıfı, tüm üye işlevleri bir sınıfın arkadaş işlevleri olan, yani üye işlevleri diğer sınıfın özel ve korunan üyelerine erişimi olan bir sınıftır. `B` sınıfında `friend` bildiriminin olduğunu varsayalım:
+Sınıf, `friend` üye işlevleri bir sınıfın arkadaş işlevleri olan, yani üye işlevleri diğer sınıfın özel ve korumalı üyelerine erişimi olan bir sınıftır. Sınıftaki `friend` `B` bildirimin şöyle olduğunu varsayalım:
 
 ```cpp
 friend class A;
 ```
 
-Bu durumda, `A` sınıftaki tüm üye işlevlerine, `B`sınıfına arkadaş erişimi verilirdi. Aşağıdaki kod, bir arkadaş sınıfının örneğidir:
+Bu durumda, sınıftaki `A` tüm üye işlevlere sınıfa `B`arkadaş erişimi verilirdi. Aşağıdaki kod bir arkadaş sınıfına örnektir:
 
 ```cpp
 // classes_as_friends2.cpp
@@ -222,21 +222,21 @@ int main() {
 }
 ```
 
-Bu şekilde açıkça belirtilmediği sürece, arkadaşlık karşılıklı değildir. Yukarıdaki örnekte, `YourClass` üye işlevleri `YourOtherClass`özel üyelerine erişemez.
+Dostluk açıkça belirtilmedikçe karşılıklı değildir. Yukarıdaki örnekte, üye `YourClass` işlevleri özel üyeleri `YourOtherClass`erişemez.
 
-Yönetilen bir tür ( C++/CLI), arkadaş işlevleri, arkadaş sınıfları veya arkadaş arabirimlere sahip olamaz.
+Yönetilen bir tür (C++/CLI'de) arkadaş işlevleri, arkadaş sınıfları veya arkadaş arabirimleri olamaz.
 
-Arkadaşlık devralınmaz, yani `YourOtherClass` türetilen sınıfların `YourClass`özel üyelerine erişemeyeceği anlamına gelir. Arkadaşlık geçişli değildir, bu nedenle `YourOtherClass` arkadaş olan sınıflar `YourClass`özel üyelerine erişemez.
+Arkadaşlık kalıtsal değildir, yani türetilen `YourOtherClass` sınıflar `YourClass`özel üyelere erişemez. Arkadaşlık geçişli değildir, bu yüzden arkadaş `YourOtherClass` olan `YourClass`sınıflar özel üyelere erişemezler.
 
-Aşağıdaki şekil dört sınıf bildirimini gösterir: `Base`, `Derived`, `aFriend`ve `anotherFriend`. Yalnızca sınıf `aFriend`, `Base` özel üyelerine (ve `Base` devralınan üyelere) doğrudan erişim sahibi olabilir.
+Aşağıdaki şekil dört sınıf bildirimleri `Derived` `aFriend`gösterir: `anotherFriend` `Base`, , ve . Yalnızca `aFriend` sınıfın özel üyelerine `Base` (ve herhangi bir `Base` üyenin devralmış olabileceği) doğrudan erişimi vardır.
 
 ![Arkadaş ilişkisinin etkileri](../cpp/media/vc38v41.gif "Arkadaş ilişkisinin etkileri") <br/>
 Arkadaş ilişkisinin etkileri
 
-## <a name="inline-friend-definitions"></a>Satır içi arkadaş tanımları
+## <a name="inline-friend-definitions"></a>Satır satırlı arkadaş tanımları
 
-Friend işlevleri, sınıf bildirimlerinin içinde tanımlanabilir (bir işlev gövdesi olarak verilebilir). Bu işlevler, satır içi işlevlerdir ve üye satır içi işlevleri gibi, tüm sınıf üyeleri görüldükten hemen sonra tanımlanmış gibi davranırlar, ancak bu durum sınıf kapsamı (sınıf bildiriminin sonu) kapatılmadan önce gerçekleşir. Sınıf bildirimlerinde tanımlanan arkadaş işlevleri kapsayan sınıfın kapsamdadır.
+Arkadaş işlevleri sınıf bildirimleri içinde tanımlanabilir (bir işlev gövdesi verilir). Bu işlevler, satır içi işlevlerdir ve üye satır içi işlevleri gibi, tüm sınıf üyeleri görüldükten hemen sonra tanımlanmış gibi davranırlar, ancak bu durum sınıf kapsamı (sınıf bildiriminin sonu) kapatılmadan önce gerçekleşir. Sınıf bildirimleri içinde tanımlanan arkadaş işlevleri çevreleyen sınıfın kapsamı içindedir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

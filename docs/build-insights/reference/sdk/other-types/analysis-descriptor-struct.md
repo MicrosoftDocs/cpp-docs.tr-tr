@@ -1,6 +1,6 @@
 ---
 title: ANALYSIS_DESCRIPTOR yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK ANALYSIS_DESCRIPTOR yapısı başvurusu.
+description: C++ Build Insights SDK yapı referansı ANALYSIS_DESCRIPTOR.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: fc11ce11e1faaae02edb36aac447c18ea8107e35
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 1de7f2a5bc3f02a327daaecf8c2cebc44687ba43
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332483"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323607"
 ---
 # <a name="analysis_descriptor-structure"></a>ANALYSIS_DESCRIPTOR yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`ANALYSIS_DESCRIPTOR` yapısı, [analiz Zea](../functions/analyze-a.md) ve [analiz ZEW](../functions/analyze-w.md) işlevleriyle birlikte kullanılır. Windows için olay Izleme (ETW) izlemenin nasıl analiz edileceğini açıklar.
+Yapı `ANALYSIS_DESCRIPTOR` [AnalyzeA](../functions/analyze-a.md) ve [AnalyzeW](../functions/analyze-w.md) işlevleri ile kullanılır. Windows için Olay İzleme (ETW) izlemenin nasıl çözümlenmesi gerektiğini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,12 +42,12 @@ typedef struct ANALYSIS_DESCRIPTOR_TAG
 
 |  |  |
 |--|--|
-| `NumberOfPasses` | ETW izlemesi üzerinde yapılması gereken analiz geçişlerinin sayısı. |
-| `Callbacks` | Analiz oturumu sırasında hangi işlevlerin çağrılacağını belirten [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) nesnesi. |
-| `Context` | `Callbacks` ' de belirtilen tüm geri çağırma işlevlerine bağımsız değişken olarak geçirilen kullanıcı tarafından sağlanmış bağlam |
+| `NumberOfPasses` | ETW izleme üzerinden yapılması gereken analiz geçişlerinin sayısı. |
+| `Callbacks` | Çözümleme oturumu sırasında hangi işlevlerin çağrılmasını belirten [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) bir nesne. |
+| `Context` | Belirtilen tüm geri arama işlevlerine bağımsız değişken olarak geçirilen kullanıcı tarafından sağlanan bağlam`Callbacks` |
 
 ## <a name="remarks"></a>Açıklamalar
 
-`Callbacks` yapısı yalnızca üye olmayan işlevlere yönelik işaretçileri kabul eder. Bir nesne işaretçisine `Context` ayarlayarak bu sınırlamayı aşabilirsiniz. Bu nesne işaretçisi, tüm üye olmayan geri çağırma işlevleriniz için bir bağımsız değişken olarak geçirilir. Üye olmayan geri çağırma işlevlerinizin içinden üye işlevleri çağırmak için bu işaretçiyi kullanın.
+Yapı `Callbacks` yalnızca üye olmayan işlevlere işaretçileri kabul eder. Bir nesne işaretçisine `Context` ayarlayarak bu sınırlamayı atlatabilirsiniz. Bu nesne işaretçisi, üye olmayan tüm geri arama işlevlerinize bağımsız değişken olarak geçirilir. Üye olmayan geri arama işlevleriniz içinden üye işlevleri çağırmak için bu işaretçiyi kullanın.
 
 ::: moniker-end

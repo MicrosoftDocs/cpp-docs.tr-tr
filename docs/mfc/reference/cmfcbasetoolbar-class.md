@@ -1,5 +1,5 @@
 ---
-title: CMFCBaseToolBar sınıfı
+title: CMFCBaseToolBar Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCBaseToolBar
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CMFCBaseToolBar [MFC], GetMinSize
 - CMFCBaseToolBar [MFC], OnAfterChangeParent
 ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da
-ms.openlocfilehash: 7a6ccdaf3d78b9973505dd4e90ca76f671fce889
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 027fe8569ff133bb3f348c9d0607f19c6d778c4e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403873"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367836"
 ---
-# <a name="cmfcbasetoolbar-class"></a>CMFCBaseToolBar sınıfı
+# <a name="cmfcbasetoolbar-class"></a>CMFCBaseToolBar Sınıfı
 
-Araç çubukları için temel sınıf.
+Araç çubukları için taban sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,39 +33,39 @@ class CMFCBaseToolBar : public CPane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCBaseToolBar::CMFCBaseToolBar`|Varsayılan Oluşturucu.|
+|`CMFCBaseToolBar::CMFCBaseToolBar`|Varsayılan oluşturucu.|
 |`CMFCBaseToolBar::~CMFCBaseToolBar`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCBaseToolBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|[CMFCBaseToolBar::GetDockingMode](#getdockingmode)|Yerleştirme modunu döndürür. (Geçersiz kılmaları [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).)|
-|[CMFCBaseToolBar::GetMinSize](#getminsize)|En az bir araç çubuğu boyutunu döndürür. (Geçersiz kılmaları [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|
-|[CMFCBaseToolBar::OnAfterChangeParent](#onafterchangeparent)|Bölmedeki üst değiştikten sonra framework tarafından çağırılır. (Geçersiz kılmaları [CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#onafterchangeparent).)|
+|`CMFCBaseToolBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
+|[CMFCBaseToolBar::GetDockingMode](#getdockingmode)|Yerleştirme modunu döndürür. [(CBasePane geçersiz kılar::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).)|
+|[CMFCBaseToolBar::GetMinSize](#getminsize)|Araç çubuğunun minimum boyutunu döndürür. (CPane geçersiz [kılar::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|
+|[CMFCBaseToolBar::OnafterchangeParent](#onafterchangeparent)|Bölmenin üst öğesi değiştikten sonra çerçeve tarafından çağrılır. [(Overrides CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#onafterchangeparent).)|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[CPane](../../mfc/reference/cpane-class.md)
+[Cpane](../../mfc/reference/cpane-class.md)
 
 [CMFCBaseToolBar](../../mfc/reference/cmfcbasetoolbar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxbasetoolbar.h
+**Üstbilgi:** afxbasetoolbar.h
 
-##  <a name="getdockingmode"></a>  CMFCBaseToolBar::GetDockingMode
+## <a name="cmfcbasetoolbargetdockingmode"></a><a name="getdockingmode"></a>CMFCBaseToolBar::GetDockingMode
 
 Yerleştirme modunu döndürür.
 
@@ -77,9 +77,9 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 
 Yerleştirme modu.
 
-##  <a name="getminsize"></a>  CMFCBaseToolBar::GetMinSize
+## <a name="cmfcbasetoolbargetminsize"></a><a name="getminsize"></a>CMFCBaseToolBar::GetMinSize
 
-En az bir araç çubuğu boyutunu döndürür.
+Araç çubuğunun minimum boyutunu döndürür.
 
 ```
 virtual void GetMinSize(CSize& size) const;
@@ -88,11 +88,11 @@ virtual void GetMinSize(CSize& size) const;
 ### <a name="parameters"></a>Parametreler
 
 *Boyutu*<br/>
-[out] Araç çubuğu için en küçük boyut.
+[çıkış] Araç çubuğunun minimum boyutu.
 
-##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent
+## <a name="cmfcbasetoolbaronafterchangeparent"></a><a name="onafterchangeparent"></a>CMFCBaseToolBar::OnafterchangeParent
 
-Bölmedeki üst değiştikten sonra framework tarafından çağırılır.
+Bölmenin üst öğesi değiştikten sonra çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
@@ -101,7 +101,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ### <a name="parameters"></a>Parametreler
 
 *pWndOldParent*<br/>
-[in] Önceki üst penceresine bir işaretçi.
+[içinde] Önceki üst pencereiçin bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,46 +10,46 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], data types
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-ms.openlocfilehash: d281f801349527a065f4975b7cc3d88888f88367
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f1afded360cfeff564f1f3d8bb9b294aa33cb733
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213037"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367125"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma
 
-Bu konuda, `DoFieldExchange` geçersiz kılmanın gövdesini oluşturan RFX işlev çağrılarının nasıl kullanılacağı açıklanmaktadır.
+Bu konu, `DoFieldExchange` geçersiz kılmanın gövdesini oluşturan RFX işlev çağrılarının nasıl kullanılacağını açıklar.
 
 > [!NOTE]
->  Bu konu, toplu satır yakalamanın uygulanmadığı [CRecordset](../../mfc/reference/crecordset-class.md) ' ten türetilmiş sınıflar için geçerlidir. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (toplu RFX) uygulanır. Toplu RFX, RFX 'e benzerdir. Farkları anlamak için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu konu, toplu satır alma nın uygulanmadığı [CRecordset'ten](../../mfc/reference/crecordset-class.md) türetilen sınıflar için geçerlidir. Toplu satır alma kullanıyorsanız, toplu kayıt alanı değişimi (Toplu RFX) uygulanır. Toplu RFX RFX benzer. Farklılıkları anlamak için bkz: [Recordset: Kayıtları Toplu Olarak Alma (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-RFX genel işlevleri, veri kaynağındaki sütunlar ve kayıt kümenizin veri üyeleri arasındaki verileri değiş tokuş ediyor. RFX işlev çağrılarını kayıt kümenizin [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevine yazarsınız. Bu konu, işlevleri kısaca açıklar ve RFX işlevlerinin kullanılabildiği veri türlerini gösterir. [Teknik not43](../../mfc/tn043-rfx-routines.md) ek veri türleri IÇIN kendi RFX işlevlerinizi nasıl yazacağınız açıklanmaktadır.
+RFX global işlevleri, kayıt setinizdeki veri kaynağı ndaki sütunlar ve alan veri üyeleri arasında veri alışverişi sağlar. Kayıt setinizin [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevine RFX işlevi çağrılarını yazarsınız. Bu konu işlevleri kısaca açıklar ve RFX işlevlerinin kullanılabilir olduğu veri türlerini gösterir. [Teknik Not 43,](../../mfc/tn043-rfx-routines.md) ek veri türleri için kendi RFX işlevlerinizi nasıl yazılacınız gerektiğini açıklar.
 
-##  <a name="rfx-function-syntax"></a><a name="_core_rfx_function_syntax"></a>RFX Işlevi sözdizimi
+## <a name="rfx-function-syntax"></a><a name="_core_rfx_function_syntax"></a>RFX İşlev Sözdizimi
 
-Her RFX işlevi üç parametre alır (bazıları isteğe bağlı dördüncü veya beşinci bir parametre alır):
+Her RFX işlevi üç parametre alır (ve bazıları isteğe bağlı dördüncü veya beşinci parametre alır):
 
-- [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesine yönelik bir işaretçi. Yalnızca `DoFieldExchange`geçirilen `pFX` işaretçi üzerinde geçiş yaparsınız.
+- [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesine işaretçi. Sadece `pFX` işaretçi boyunca geçti `DoFieldExchange`.
 
-- Sütunun veri kaynağında göründüğü haliyle adı.
+- Veri kaynağında görünen sütunun adı.
 
-- Kayıt kümesi sınıfındaki karşılık gelen alan veri üyesinin veya parametre veri üyesinin adı.
+- Recordset sınıfında ilgili alan veri üyesinin veya parametre veri üyesinin adı.
 
-- Seçim Bazı işlevlerde, aktarılmakta olan dize veya dizinin uzunluk üst sınırı. Bu varsayılan değer 255 bayttır, ancak bunu değiştirmek isteyebilirsiniz. En büyük boyut, `CString` nesnenin en büyük boyutunu temel alır — **INT_MAX** (2.147.483.647) bayt), ancak büyük olasılıkla bu boyuttan önce sürücü limitleriyle karşılaşacaksınız.
+- (İsteğe bağlı) Bazı işlevlerde, aktarılan dize veya dizinin maksimum uzunluğu. Bu varsayılan olarak 255 bayt adede edir, ancak değiştirmek isteyebilirsiniz. Maksimum boyut, bir `CString` nesnenin **(INT_MAX** (2.147.483.647) baytların maksimum boyutuna dayanır, ancak bu boyuttan önce büyük olasılıkla sürücü sınırlarıyla karşılaşırsınız.
 
-- Seçim `RFX_Text` işlevinde bazen bir sütunun veri türünü belirtmek için beşinci bir parametre kullanırsınız.
+- (İsteğe bağlı) İşlevde, `RFX_Text` bazen bir sütunun veri türünü belirtmek için beşinci bir parametre kullanırsınız.
 
-Daha fazla bilgi için bkz. *sınıf kitaplığı başvurusunda* [makrolar ve genel](../../mfc/reference/mfc-macros-and-globals.md) öğeler altındaki RFX işlevleri. Parametreleri özel olarak kullanarak ilgili bir örnek için bkz. [kayıt kümesi: toplamları ve diğer toplama sonuçlarını alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).
+Daha fazla bilgi için *Sınıf Kitaplığı Başvurusu'nda* [Makrolar ve Globaller](../../mfc/reference/mfc-macros-and-globals.md) altında RFX işlevlerine bakın. Parametreleri ne zaman özel olarak kullanabileceğinize bir örnek olarak, [bkz.](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)
 
-##  <a name="rfx-data-types"></a><a name="_core_rfx_data_types"></a>RFX veri türleri
+## <a name="rfx-data-types"></a><a name="_core_rfx_data_types"></a>RFX Veri Türleri
 
-Sınıf kitaplığı, veri kaynağı ve kayıt kümeleriniz arasında birçok farklı veri türünü aktarmaya yönelik RFX işlevlerini sağlar. Aşağıdaki liste, RFX işlevlerini veri türüne göre özetler. Kendi RFX işlevi çağrılarınızı yazmanız gereken durumlarda, veri türüne göre bu işlevlerden birini seçin.
+Sınıf kitaplığı, veri kaynağı ve kayıt kümeleriniz arasında birçok farklı veri türü aktarmak için RFX işlevleri sağlar. Aşağıdaki liste, RFX işlevlerini veri türüne göre özetlemektedir. Kendi RFX fonksiyon çağrılarınızı yazmanız gereken durumlarda, bu işlevlerden veri türüne göre seçim inizi verin.
 
 |İşlev|Veri türü|
 |--------------|---------------|
-|`RFX_Bool`|**BOOL**|
-|`RFX_Byte`|**BAYT**|
+|`RFX_Bool`|**Bool**|
+|`RFX_Byte`|**BYTE**|
 |`RFX_Binary`|`CByteArray`|
 |`RFX_Double`|**double**|
 |`RFX_Single`|**float**|
@@ -59,7 +59,7 @@ Sınıf kitaplığı, veri kaynağı ve kayıt kümeleriniz arasında birçok fa
 |`RFX_Text`|`CString`|
 |`RFX_Date`|`CTime`|
 
-Daha fazla bilgi için, *sınıf kitaplığı başvurusunda* [makrolar ve Globals](../../mfc/reference/mfc-macros-and-globals.md) altındaki RFX işlevi belgelerine bakın. Veri türlerinin SQL veri C++ türleri ile nasıl eşlendiğine ilişkin bilgiler Için, SQL 'de C++ VERI TÜRLERINE eşlenmiş tablo ANSI SQL veri türleri [: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)bölümüne bakın.
+Daha fazla bilgi için *Sınıf Kitaplığı Başvurusu'nda* [Makrolar ve Globaller](../../mfc/reference/mfc-macros-and-globals.md) altındaki RFX işlev belgelerine bakın. C++ veri türlerinin SQL veri türleri ile nasıl eşleştiği hakkında bilgi için, [SQL: SQL ve C++ Veri Türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)tablosuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -68,4 +68,4 @@ Daha fazla bilgi için, *sınıf kitaplığı başvurusunda* [makrolar ve Global
 [Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
 [Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
 [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)
+[CfieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)

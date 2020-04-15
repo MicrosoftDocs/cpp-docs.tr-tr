@@ -1,5 +1,5 @@
 ---
-title: CNotSupportedException sınıfı
+title: CNotSupportedException Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CNotSupportedException
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CNotSupportedException [MFC], CNotSupportedException
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
-ms.openlocfilehash: c3af508cd39e277ca4ae0a9aad5e639f66edc53b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b859b939baef018e69b245e597eea90e608253ca
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407932"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363190"
 ---
-# <a name="cnotsupportedexception-class"></a>CNotSupportedException sınıfı
+# <a name="cnotsupportedexception-class"></a>CNotSupportedException Sınıfı
 
-Desteklenmeyen bir özellik isteğinden kaynaklanan bir özel durum temsil eder.
+Desteklenmeyen bir özellik için istek sonucu bir özel durum temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,33 +29,33 @@ class CNotSupportedException : public CSimpleException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CNotSupportedException::CNotSupportedException](#cnotsupportedexception)|Oluşturur bir `CNotSupportedException` nesne.|
+|[CNotSupportedException::CNotSupportedException](#cnotsupportedexception)|Bir `CNotSupportedException` nesne inşa eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başka hiçbir nitelik gerekli veya mümkün değil.
+Başka bir nitelik gerekli veya mümkün değildir.
 
-Kullanma hakkında daha fazla bilgi için `CNotSupportedException`, makaleye göz atın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
+Kullanma `CNotSupportedException`hakkında daha fazla bilgi için, özel [durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CException](../../mfc/reference/cexception-class.md)
+[Cexception](../../mfc/reference/cexception-class.md)
 
-[CSimpleException](../../mfc/reference/csimpleexception-class.md)
+[Csimpleexception](../../mfc/reference/csimpleexception-class.md)
 
 `CNotSupportedException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afx.h
+**Üstbilgi:** afx.h
 
-##  <a name="cnotsupportedexception"></a>  CNotSupportedException::CNotSupportedException
+## <a name="cnotsupportedexceptioncnotsupportedexception"></a><a name="cnotsupportedexception"></a>CNotSupportedException::CNotSupportedException
 
-Oluşturur bir `CNotSupportedException` nesne.
+Bir `CNotSupportedException` nesne inşa eder.
 
 ```
 CNotSupportedException();
@@ -63,7 +63,7 @@ CNotSupportedException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu doğrudan kullanmaz, bunun yerine genel işlev çağrısı [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception). özel durum işleme hakkında daha fazla bilgi için bkz [MFC'de özel durum işleme](../exception-handling-in-mfc.md).
+Bu oluşturucuyu doğrudan kullanmayın, daha çok global işlevi [AfxThrowNotSupportedException'ı](exception-processing.md#afxthrownotsupportedexception)arayın. özel durum işleme hakkında daha fazla bilgi için [MFC'deki Özel Durum İşleme makalesine](../exception-handling-in-mfc.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

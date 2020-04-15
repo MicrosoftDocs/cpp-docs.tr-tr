@@ -1,5 +1,5 @@
 ---
-title: CAnimationController sınıfı
+title: CAnimationController Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CAnimationController
@@ -103,16 +103,16 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: 9039d44d9ef36a47c11b3ecaddf232ad427727c4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 34a02567bfeb76666cc38ccf05dcc285a1f658f5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507646"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369763"
 ---
-# <a name="canimationcontroller-class"></a>CAnimationController sınıfı
+# <a name="canimationcontroller-class"></a>CAnimationController Sınıfı
 
-Animasyonların oluşturulması ve yönetilmesi için merkezi bir arabirim sağlayan animasyon denetleyicisini uygular.
+Animasyonoluşturmak ve yönetmek için merkezi bir arabirim sağlayan animasyon denetleyicisini uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -124,99 +124,99 @@ class CAnimationController : public CObject;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationController:: CAnimationController](#canimationcontroller)|Bir animasyon denetleyicisi oluşturur.|
-|[CAnimationController:: ~ CAnimationController](#_dtorcanimationcontroller)|Yok edicisi. Animasyon denetleyici nesnesi yok edildiğinde çağırılır.|
+|[CAnimationController::CAnimationController](#canimationcontroller)|Animasyon denetleyicisi oluşturuyor.|
+|[CAnimationController::~CAnimationController](#_dtorcanimationcontroller)|Yıkıcı. Animasyon denetleyici nesnesi yok edilirken çağrılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationController:: AddAnimationObject](#addanimationobject)|Animasyon denetleyicisine ait olan bir gruba animasyon nesnesi ekler.|
-|[CAnimationController:: AddKeyframeToGroup](#addkeyframetogroup)|Gruba bir ana kare ekler.|
-|[CAnimationController:: AnimateGroup](#animategroup)|Animasyonu çalıştırmak için bir grup hazırlar ve isteğe bağlı olarak zamanlamayı zamanlar.|
-|[CAnimationController:: CleanUpGroup](#cleanupgroup)|Fazla Yüklendi. Animasyon zamanlandığı sırada grubu temizlemek için Framework tarafından çağırılır.|
-|[CAnimationController:: CreateKeyframe](#createkeyframe)|Fazla Yüklendi. Geçişe bağlı olan bir ana kare oluşturur ve belirtilen gruba ekler.|
-|[CAnimationController:: EnableAnimationManagerEvent](#enableanimationmanagerevent)|Animasyon yöneticisinin durumu değiştiğinde çağırmak için bir işleyici ayarlar veya serbest bırakır.|
-|[CAnimationController:: EnableAnimationTimerEventHandler](#enableanimationtimereventhandler)|Zamanlama güncelleştirmeleri için bir işleyici, zamanlama olayları ve işleyicisi için ayarlar veya yayınlar.|
-|[CAnimationController:: EnablePriorityComparisonHandler](#enableprioritycomparisonhandler)|Zamanlanan bir görsel taslağın iptal edilip edilmeyeceğini, sonlandırılacağını, kırpıldığını veya sıkıştıramayacağını belirleme çağrısı yapmak için öncelik karşılaştırma işleyicisini ayarlar veya serbest bırakır.|
-|[CAnimationController:: EnableStoryboardEventHandler](#enablestoryboardeventhandler)|Görsel taslak durumu ve güncelleştirme olayları için bir işleyici ayarlar veya yayınlar.|
-|[CAnimationController:: Findanimasyongroup](#findanimationgroup)|Fazla Yüklendi. Görsel taslağa göre bir animasyon grubunu bulur.|
-|[CAnimationController:: FindAnimationObject](#findanimationobject)|Belirtilen bir animasyon değişkenini içeren animasyon nesnesini bulur.|
-|[CAnimationController:: GetKeyframeStoryboardStart](#getkeyframestoryboardstart)|Görsel taslak başlangıcını tanımlayan bir ana kare döndürür.|
-|[CAnimationController:: GetUIAnimationManager](#getuianimationmanager)|Encapsulated IUIAnimationManager nesnesine erişim sağlar.|
-|[CAnimationController:: Getuıanimationtimer](#getuianimationtimer)|Encapsulated IUIAnimationTimer nesnesine erişim sağlar.|
-|[CAnimationController:: GetUITransitionFactory](#getuitransitionfactory)|Geçiş kitaplığı oluşturma işlemi başarısız olduysa, ıuıanimationgeçişli Tionfactory arabirimine veya NULL öğesine yönelik bir işaretçi.|
-|[CAnimationController:: GetUITransitionLibrary](#getuitransitionlibrary)|Encapsulated ıuıanimationgeçiş Tionlibrary nesnesine erişim sağlar.|
-|[CAnimationController:: ısanimationınprogress](#isanimationinprogress)|En az bir grubun animasyon çalıp oynamadığını söyler.|
-|[CAnimationController:: IsValid](#isvalid)|Animasyon denetleyicisinin geçerli olup olmadığını söyler.|
-|[CAnimationController:: OnAnimationIntegerValueChanged](#onanimationintegervaluechanged)|Animasyon değişkeninin tamsayı değeri değiştiğinde Framework tarafından çağırılır.|
-|[CAnimationController:: OnAnimationManagerStatusChanged](#onanimationmanagerstatuschanged)|Animasyon yöneticisinden StatusChanged olayına yanıt olarak Framework tarafından çağırılır.|
-|[CAnimationController:: OnAnimationTimerPostUpdate](#onanimationtimerpostupdate)|Bir animasyon güncelleştirmesi tamamlandıktan sonra Framework tarafından çağırılır.|
-|[CAnimationController:: OnAnimationTimerPreUpdate](#onanimationtimerpreupdate)|Bir animasyon güncelleştirmesi başlamadan önce Framework tarafından çağırılır.|
-|[CAnimationController:: Onanimationtimerrenderingtoolow](#onanimationtimerrenderingtooslow)|Bir animasyonun işleme çerçevesi oranı, istenen en düşük kare oranının altına düştüğünde Framework tarafından çağırılır.|
-|[CAnimationController:: Onanimasyonvaluechanged](#onanimationvaluechanged)|Animasyon değişkeninin değeri değiştiğinde Framework tarafından çağırılır.|
-|[CAnimationController:: OnBeforeAnimationStart](#onbeforeanimationstart)|Animasyon zamanlanmadan önce Framework tarafından çağırılır.|
-|[CAnimationController:: OnHasPriorityCancel](#onhasprioritycancel)|Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.|
-|[CAnimationController:: OnHasPriorityCompress](#onhasprioritycompress)|Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.|
-|[CAnimationController:: Onhasprioritysonuçde](#onhaspriorityconclude)|Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.|
-|[CAnimationController:: OnHasPriorityTrim](#onhasprioritytrim)|Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.|
-|[CAnimationController:: OnStoryboardStatusChanged](#onstoryboardstatuschanged)|Görsel taslak durumu değiştiğinde Framework tarafından çağırılır.|
-|[CAnimationController:: OnStoryboardUpdated](#onstoryboardupdated)|Görsel taslak güncelleştirildiği zaman Framework tarafından çağırılır.|
-|[CAnimationController:: RemoveAllAnimationGroups](#removeallanimationgroups)|Tüm animasyon gruplarını animasyon denetleyicisinden kaldırır.|
-|[CAnimationController:: RemoveAnimationGroup](#removeanimationgroup)|Belirtilen KIMLIĞE sahip bir animasyon grubunu animasyon denetleyicisinden kaldırır.|
-|[CAnimationController:: RemoveAnimationObject](#removeanimationobject)|Animasyon denetleyicisinden bir animasyon nesnesi kaldırın.|
-|[CAnimationController:: Removetransıtions](#removetransitions)|Belirtilen gruba ait olan animasyon nesnelerinden geçişleri kaldırır.|
-|[CAnimationController:: ScheduleGroup](#schedulegroup)|Bir animasyon zamanlar.|
-|[CAnimationController:: SetRelatedWnd](#setrelatedwnd)|Animasyon denetleyicisi ve pencere arasında bir ilişki oluşturur.|
-|[CAnimationController:: UpdateAnimationManager](#updateanimationmanager)|Animasyon yöneticisini tüm animasyon değişkenlerinin değerlerini güncelleştirecek şekilde yönlendirir.|
+|[CAnimationController::AddAnimationObject](#addanimationobject)|Animasyon denetleyicisine ait bir gruba animasyon nesnesi ekler.|
+|[CAnimationController::AddKeyframeToGroup](#addkeyframetogroup)|Gruba bir anahtar kare ekler.|
+|[CAnimationController::AnimateGroup](#animategroup)|Animasyonu çalıştırmak için bir grup hazırlar ve isteğe bağlı olarak zamanlar.|
+|[CAnimationController::Temizleme Grubu](#cleanupgroup)|Fazla Yüklendi. Animasyon zamanlandığında grubu temizlemek için çerçeve tarafından çağrılır.|
+|[CAnimationController::Anahtar Çerçevesi Oluşturma](#createkeyframe)|Fazla Yüklendi. Geçişe bağlı bir anahtar çerçevesi oluşturur ve belirtilen gruba ekler.|
+|[CAnimationController::EnableAnimationManagerOlay](#enableanimationmanagerevent)|Animasyon yöneticisinin durumu değiştiğinde aramak için bir işleyici ayarlar veya yayımlar.|
+|[CAnimationController::EnableAnimationTimerEventHandler](#enableanimationtimereventhandler)|Zamanlama olayları için bir işleyici ve zamanlama güncelleştirmeleri için işleyicisi ayarlar veya yayımlar.|
+|[CAnimationController::EnablePriorityComparisonHandler](#enableprioritycomparisonhandler)|Zamanlanmış bir film şeridinin iptal edilip edilmeyeceğini, sonuçlandırılıp kesilemeyeceğini veya sıkıştırılıp sıkıştırılamayacağını belirlemek için çağırmak üzere öncelikli karşılaştırma işleyicisini ayarlar veya yayımlar.|
+|[CAnimationController::EnableStoryboardEventHandler](#enablestoryboardeventhandler)|Film şeridi durumu ve güncelleştirme olayları için bir işleyici ayarlar veya yayımlar.|
+|[CAnimationController::FindAnimationGroup](#findanimationgroup)|Fazla Yüklendi. Film şeridine göre bir animasyon grubu bulur.|
+|[CAnimationController::FindAnimationObject](#findanimationobject)|Belirli bir animasyon değişkenini içeren animasyon nesnesi bulur.|
+|[CAnimationController::GetKeyframeStoryboardBaşlat](#getkeyframestoryboardstart)|Film şeridinin başlangıcını tanımlayan bir anahtar çerçevesi döndürür.|
+|[CAnimationController::GetuiAnimationManager](#getuianimationmanager)|Kapsüllenmiş IUIAnimationManager nesnesine erişim sağlar.|
+|[CAnimationController::GetUIAnimationTimer](#getuianimationtimer)|Kapsüllenmiş IUIAnimationTimer nesnesine erişim sağlar.|
+|[CanimationController::GetuitransitionFactory](#getuitransitionfactory)|Geçiş kitaplığı oluşturulduysa, IUIAnimationTransitionFactory arabirimi veya NULL için bir işaretçi.|
+|[CanimationController::GetuiTransitionLibrary](#getuitransitionlibrary)|Kapsüllü IUIAnimationTransitionLibrary nesnesine erişim sağlar.|
+|[CAnimationController::IsAnimationInProgress](#isanimationinprogress)|En az bir grubun animasyon oynatılıp oynatmadığını söyler.|
+|[CAnimationController::Geçersiz](#isvalid)|Animasyon denetleyicisi geçerli olup olmadığını söyler.|
+|[CAnimationController::OnAnimationIntegerValueChanged](#onanimationintegervaluechanged)|Animasyon değişkeninin insa değeri değiştiğinde çerçeve tarafından çağrılır.|
+|[CAnimationController::OnAnimationManagerStatus Değiştirildi](#onanimationmanagerstatuschanged)|Animasyon yöneticisinden DurumDeğiştirildi olayına yanıt olarak çerçeve tarafından çağrıldı.|
+|[CAnimationController::OnAnimationTimerPostUpdate](#onanimationtimerpostupdate)|Animasyon güncelleştirmesi tamamlandıktan sonra çerçeve tarafından çağrılır.|
+|[CAnimationController::OnAnimationTimerPreUpdate](#onanimationtimerpreupdate)|Animasyon güncelleştirmesi başlamadan önce çerçeve tarafından çağrılır.|
+|[CAnimationController::OnAnimationTimerRenderingTooSlow](#onanimationtimerrenderingtooslow)|Animasyoniçin görüntüleme kare hızı minimum arzu edilen kare hızının altına düştüğünde çerçeve tarafından çağrılır.|
+|[CAnimationController::OnAnimationValue Changed](#onanimationvaluechanged)|Animasyon değişkeninin değeri değiştiğinde çerçeve tarafından çağrılır.|
+|[CAnimationController::OnbeforeAnimationStart](#onbeforeanimationstart)|Animasyon zamanlanmadan hemen önce çerçeve tarafından çağrılır.|
+|[CanimationController::OnhasPriorityCancel](#onhasprioritycancel)|Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.|
+|[CanimationController::OnHasPriorityCompress](#onhasprioritycompress)|Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.|
+|[CanimationController::OnHasPriorityconclude](#onhaspriorityconclude)|Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.|
+|[CanimationController::OnhasPrioritytrim](#onhasprioritytrim)|Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.|
+|[CAnimationController::OnStoryboardStatusChanged](#onstoryboardstatuschanged)|Film şeridi durumu değiştiğinde çerçeve tarafından çağrılır.|
+|[CAnimationController::OnStoryboardGüncel](#onstoryboardupdated)|Film şeridi güncelleştirildiğinde çerçeve tarafından çağrılır.|
+|[CAnimationController::RemoveAllAnimationGroups](#removeallanimationgroups)|Tüm animasyon gruplarını animasyon denetleyicisinden kaldırır.|
+|[CAnimationController::RemoveAnimationGroup](#removeanimationgroup)|Animasyon denetleyicisinden belirtilen kimliği olan bir animasyon grubunu kaldırır.|
+|[CAnimationController::RemoveAnimationObject](#removeanimationobject)|Animasyon nesnesi animasyon denetleyicisinden kaldırın.|
+|[CAnimationController::Geçişleri Kaldırma](#removetransitions)|Belirtilen gruba ait animasyon nesnelerinden geçişleri kaldırır.|
+|[CAnimationController::Program Grubu](#schedulegroup)|Animasyon planlar.|
+|[CAnimationController::SetRelatedWnd](#setrelatedwnd)|Animasyon denetleyicisi ve bir pencere arasında bir ilişki kurar.|
+|[CAnimationController::UpdateAnimationManager](#updateanimationmanager)|Animasyon yöneticisini tüm animasyon değişkenlerinin değerlerini güncelleştirmeye yönlendirir.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationController:: CleanUpGroup](#cleanupgroup)|Fazla Yüklendi. Grubu Temizleme Yardımcısı.|
-|[CAnimationController:: OnAfterSchedule](#onafterschedule)|Belirtilen gruba yönelik bir animasyon henüz zamanlandığında Framework tarafından çağırılır.|
+|[CAnimationController::Temizleme Grubu](#cleanupgroup)|Fazla Yüklendi. Grubu temizleyen bir yardımcı.|
+|[CAnimationController::OnafterSchedule](#onafterschedule)|Belirtilen grup için bir animasyon zamanlandığında çerçeve tarafından çağrılır.|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationController:: gkeyframeStoryboardStart](#g_keyframestoryboardstart)|Görsel taslak başlangıcını temsil eden bir ana kare.|
-|[CAnimationController:: m_bIsValid](#m_bisvalid)|Bir animasyon denetleyicisinin geçerli olup olmadığını belirtir. Geçerli işletim sistemi Windows Animation API 'YI desteklemiyorsa bu üye FALSE olarak ayarlanır.|
-|[CAnimationController:: m_lstAnimationGroups](#m_lstanimationgroups)|Bu animasyon denetleyicisine ait olan animasyon gruplarının listesi.|
-|[CAnimationController:: m_pAnimationManager](#m_panimationmanager)|Animation Manager COM nesnesine bir işaretçi depolar.|
-|[CAnimationController:: m_pAnimationTimer](#m_panimationtimer)|Animasyon Zamanlayıcı COM nesnesine bir işaretçi depolar.|
-|[CAnimationController:: m_pRelatedWnd](#m_prelatedwnd)|Animasyon Yöneticisi 'nin durumu değiştiğinde otomatik olarak yeniden çizilebilir olabilecek ilgili bir CWnd nesnesine yönelik işaretçi veya güncelleştirme sonrası olay meydana geldi. NULL olabilir.|
-|[CAnimationController:: m_pTransitionFactory](#m_ptransitionfactory)|Geçiş fabrikası COM nesnesine bir işaretçi depolar.|
-|[CAnimationController:: m_pTransitionLibrary](#m_ptransitionlibrary)|Geçiş kitaplığı COM nesnesine bir işaretçi depolar.|
+|[CAnimationController::gkeyframeStoryboardBaşlat](#g_keyframestoryboardstart)|Film şeridinin başlangıcını temsil eden bir anahtar kare.|
+|[CAnimationController::m_bIsValid](#m_bisvalid)|Animasyon denetleyicinin geçerli olup olmadığını belirtir. Geçerli işletim sistemi Windows Animasyon API'sını desteklemiyorsa, bu üye FALSE olarak ayarlanır.|
+|[CAnimationController::m_lstAnimationGroups](#m_lstanimationgroups)|Bu animasyon denetleyicisine ait animasyon gruplarının listesi.|
+|[CAnimationController::m_pAnimationManager](#m_panimationmanager)|Animasyon Yöneticisi COM nesnesine bir işaretçi depolar.|
+|[CAnimationController::m_pAnimationTimer](#m_panimationtimer)|Animasyon Zamanlayıcı COM nesnesine bir işaretçi depolar.|
+|[CAnimationController::m_pRelatedWnd](#m_prelatedwnd)|Animasyon yöneticisinin durumu değiştiğinde veya güncelleştirme sonrası olay oluştuğunda otomatik olarak yeniden çizilebilen ilgili bir CWnd nesnesine işaretçi. NULL olabilir.|
+|[CAnimationController::m_pTransitionFactory](#m_ptransitionfactory)|Geçiş Fabrikası COM nesnesine işaretçi depolar.|
+|[CAnimationController::m_pTransitionLibrary](#m_ptransitionlibrary)|Geçiş Kitaplığı COM nesnesine işaretçi depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-CAnimationController sınıfı, animasyonları yöneten temel sınıftır. Bir uygulamada bir veya daha fazla animasyon denetleyicisi örneği oluşturabilir ve isteğe bağlı olarak, CAnimationController:: SetRelatedWnd kullanarak bir animasyon denetleyicisi örneğini CWnd nesnesine bağlayabilirsiniz. Bu bağlantı, Animation Manager durumu değiştiğinde veya animasyon süreölçeri güncelleştirildiği zaman ilgili pencereye otomatik olarak WM_PAINT iletileri göndermek için gereklidir. Bu ilişkiyi etkinleştirmezseniz, el ile bir animasyon görüntüleyen pencereyi yeniden çizmelidir. Bu amaçla, CAnimationController ' dan bir sınıf türetebilir ve OnAnimationManagerStatusChanged ve/veya OnAnimationTimerPostUpdate ' i geçersiz kılabilir ve gerektiğinde bir veya daha fazla pencere geçersiz kılabilir.
+CAnimationController sınıfı animasyonları yöneten anahtar sınıftır. Bir uygulamada bir veya daha fazla animasyon denetleyicisi örneği oluşturabilir ve isteğe bağlı olarak, cAnimationController::SetRelatedWnd kullanarak animasyon denetleyicisi örneğini CWnd nesnesine bağlayabilirsiniz. Animasyon yöneticisi durumu değiştiğinde veya animasyon zamanlayıcısı güncelleştirildiğinde, bu bağlantının ilgili pencereye otomatik olarak WM_PAINT ileti göndermesi gerekir. Bu ilişkiyi etkinleştirmezseniz, animasyonu el ile görüntüleyen bir pencereyi yeniden çizmeniz gerekir. Bu amaçla CAnimationController bir sınıf türetmek ve OnAnimationManagerStatusChanged ve / veya OnAnimationTimerPostUpdate geçersiz ve gerektiğinde bir veya daha fazla pencere geçersiz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CAnimationController`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="_dtorcanimationcontroller"></a>CAnimationController:: ~ CAnimationController
+## <a name="canimationcontrollercanimationcontroller"></a><a name="_dtorcanimationcontroller"></a>CAnimationController::~CAnimationController
 
-Yok edicisi. Animasyon denetleyici nesnesi yok edildiğinde çağırılır.
+Yıkıcı. Animasyon denetleyici nesnesi yok edilirken çağrılır.
 
 ```
 virtual ~CAnimationController(void);
 ```
 
-##  <a name="addanimationobject"></a>CAnimationController:: AddAnimationObject
+## <a name="canimationcontrolleraddanimationobject"></a><a name="addanimationobject"></a>CAnimationController::AddAnimationObject
 
-Animasyon denetleyicisine ait olan bir gruba animasyon nesnesi ekler.
+Animasyon denetleyicisine ait bir gruba animasyon nesnesi ekler.
 
 ```
 CAnimationGroup* AddAnimationObject(CAnimationBaseObject* pObject);
@@ -224,20 +224,20 @@ CAnimationGroup* AddAnimationObject(CAnimationBaseObject* pObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nesnesini*<br/>
-Animasyon nesnesine yönelik bir işaretçi.
+*Pobject*<br/>
+Animasyon nesnesine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa pObject 'in eklendiği mevcut veya yeni animasyon grubuna yönelik bir işaretçi; PObject zaten başka bir animasyon denetleyicisine ait olan bir gruba eklendiyse NULL.
+Işlev başarılı olursa pObject eklendiği varolan veya yeni animasyon grubuna işaretçi; NULL eğer pObject zaten başka bir animasyon denetleyicisine ait bir gruba eklenmiştir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon denetleyicisine bir animasyon nesnesi eklemek için bu yöntemi çağırın. Bir nesne, nesnenin GroupID öğesine göre gruba eklenir (bkz. CAnimationBaseObject:: SetID). Belirtilen GroupID ile ilk nesne ekleniyorsa animasyon denetleyicisi yeni bir grup oluşturur. Bir animasyon nesnesi yalnızca bir animasyon denetleyicisine eklenebilir. Başka bir denetleyiciye bir nesne eklemeniz gerekiyorsa, önce RemoveAnimationObject ' i çağırın. Bir gruba zaten eklenmiş olan bir nesne için SetID 'yi yeni GroupID ile çağırırsanız, nesne eski gruptan kaldırılır ve belirtilen KIMLIĞE sahip başka bir gruba eklenir.
+Animasyon denetleyicisine animasyon nesnesi eklemek için bu yöntemi arayın. Nesnenin GroupID'sine göre bir gruba bir nesne eklenir (bkz. CAnimationBaseObject::SetID). Animasyon denetleyicisi, belirtilen GroupID ile eklenen ilk nesneyse yeni bir grup oluşturur. Animasyon nesnesi yalnızca bir animasyon denetleyicisine eklenebilir. Başka bir denetleyiciye nesne eklemeniz gerekiyorsa, önce RemoveAnimationObject'i arayın. Bir gruba zaten ekilmiş bir nesne için yeni GroupID ile SetID'yi çağırırsanız, nesne eski gruptan kaldırılır ve belirtilen kimliği olan başka bir gruba eklenir.
 
-##  <a name="addkeyframetogroup"></a>CAnimationController:: AddKeyframeToGroup
+## <a name="canimationcontrolleraddkeyframetogroup"></a><a name="addkeyframetogroup"></a>CAnimationController::AddKeyframeToGroup
 
-Gruba bir ana kare ekler.
+Gruba bir anahtar kare ekler.
 
 ```
 BOOL AddKeyframeToGroup(
@@ -247,23 +247,23 @@ BOOL AddKeyframeToGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-Grup KIMLIĞINI belirtir.
+*nGroupID*<br/>
+Grup Kimliğini belirtir.
 
-*Pana kare*<br/>
-Bir ana kare işaretçisi.
+*pKeyframe*<br/>
+Anahtar kare için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa doğru; Aksi halde yanlış.
+İşlev başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle bu yöntemi çağırmanız gerekmez; bunun yerine CAnimationController:: CreateKeyframe kullanın ve oluşturulan ana kareyi bir gruba otomatik olarak ekler.
+Genellikle bu yöntemi aramanız gerekmez, CAnimationController kullanın::CreateKeyframe yerine, oluşturulan anahtar çerçeveyi otomatik olarak oluşturur ve gruba ekler.
 
-##  <a name="animategroup"></a>CAnimationController:: AnimateGroup
+## <a name="canimationcontrolleranimategroup"></a><a name="animategroup"></a>CAnimationController::AnimateGroup
 
-Animasyonu çalıştırmak için bir grup hazırlar ve isteğe bağlı olarak zamanlamayı zamanlar.
+Animasyonu çalıştırmak için bir grup hazırlar ve isteğe bağlı olarak zamanlar.
 
 ```
 BOOL AnimateGroup(
@@ -273,31 +273,31 @@ BOOL AnimateGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-GroupID belirtir.
+*nGroupID*<br/>
+GroupID'yi belirtir.
 
-*Şimdi bschedule*<br/>
+*bScheduleNow*<br/>
 Animasyonun hemen çalıştırılıp çalıştırılmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon başarıyla zamanlanırsa ve çalıştırıldığında doğru.
+Animasyon başarıyla zamanlandı ve çalıştırıldıysa TRUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gerçek işi film şeridi oluşturuyor, animasyon değişkenleri ekleme, geçişleri uygulama ve ana kareleri ayarlama. BScheduleNow değerini FALSE olarak ayarlarsanız zamanlamayı erteleyebilir. Bu durumda, belirtilen grup animasyon için ayarlanmış bir film şeridini tutacaktır. Bu noktada, film şeridi ve animasyon değişkenlerine yönelik olayları ayarlayabilirsiniz. Gerçekten bir animasyon çalıştırmak istediğinizde, CAnimationController:: ScheduleGroup öğesini çağırın.
+Bu yöntem, gerçek iş storyboard oluşturma, animasyon değişkenleri ekleme, geçişleri uygulama ve anahtar kareler ayar yapar. bScheduleNow'u FALSE olarak ayarlarsanız zamanlamayı geciktirmek mümkündür. Bu durumda, belirtilen grup animasyon için ayarlanmış bir film şeridi tutar. Bu noktada, film şeridi ve animasyon değişkenleri için olayları ayarlayabilirsiniz. Animasyonu gerçekten çalıştırmanız gerektiğinde CAnimationController::ScheduleGroup'u arayın.
 
-##  <a name="canimationcontroller"></a>CAnimationController:: CAnimationController
+## <a name="canimationcontrollercanimationcontroller"></a><a name="canimationcontroller"></a>CAnimationController::CAnimationController
 
-Bir animasyon denetleyicisi oluşturur.
+Animasyon denetleyicisi oluşturuyor.
 
 ```
 CAnimationController(void);
 ```
 
-##  <a name="cleanupgroup"></a>CAnimationController:: CleanUpGroup
+## <a name="canimationcontrollercleanupgroup"></a><a name="cleanupgroup"></a>CAnimationController::Temizleme Grubu
 
-Animasyon zamanlandığı sırada grubu temizlemek için Framework tarafından çağırılır.
+Animasyon zamanlandığında grubu temizlemek için çerçeve tarafından çağrılır.
 
 ```
 void CleanUpGroup(UINT32 nGroupID);
@@ -306,19 +306,19 @@ void CleanUpGroup(CAnimationGroup* pGroup);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-GroupID belirtir.
+*nGroupID*<br/>
+GroupID'yi belirtir.
 
 *pGroup*<br/>
-Temizleme için animasyon grubuna yönelik bir işaretçi.
+Temizlemek için animasyon grubu için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir animasyon zamanlandıktan sonra ilgili olmadıklarından, belirtilen gruptaki tüm geçişleri ve ana kareleri kaldırır.
+Bu yöntem, bir animasyon zamanlandıktan sonra alakalı olmadıklarından, belirtilen gruptan tüm geçişleri ve anahtar kareleri kaldırır.
 
-##  <a name="createkeyframe"></a>CAnimationController:: CreateKeyframe
+## <a name="canimationcontrollercreatekeyframe"></a><a name="createkeyframe"></a>CAnimationController::Anahtar Çerçevesi Oluşturma
 
-Geçişe bağlı olan bir ana kare oluşturur ve belirtilen gruba ekler.
+Geçişe bağlı bir anahtar çerçevesi oluşturur ve belirtilen gruba ekler.
 
 ```
 CKeyFrame* CreateKeyframe(
@@ -333,29 +333,29 @@ CKeyFrame* CreateKeyframe(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-Ana karenin oluşturulduğu grup KIMLIĞINI belirtir.
+*nGroupID*<br/>
+Anahtar çerçevesinin oluşturulduğu Grup Kimliğini belirtir.
 
-*pTransition*<br/>
-Geçiş işaretçisi. Ana kare, Bu geçişten sonra görsel taslağa eklenecektir.
+*pGeçiş*<br/>
+Geçiş için bir işaretçi. Bu geçişten sonra anahtar çerçeve film şeridine eklenir.
 
-*Pana kare*<br/>
-Bu ana kare için ana anahtar karesine yönelik bir işaretçi.
+*pKeyframe*<br/>
+Bu anahtar çerçevesi için anahtar çerçevesi temel almak için bir işaretçi.
 
-*konumu*<br/>
-PKeyframe tarafından belirtilen taban ana kareden saniye cinsinden konum.
+*Uzaklık*<br/>
+pKeyframe tarafından belirtilen temel anahtar çerçevesinden saniyeler içinde mahsup edin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa yeni oluşturulan ana kareye yönelik bir işaretçi.
+İşlev başarılı olursa yeni oluşturulan anahtar çerçevesi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen işaretçiyi ve diğer ana kareleri yeni oluşturulan ana karede saklayabilir (ikinci aşırı yüklemeye bakın). Ana kareler üzerinde geçişler başlatmak mümkündür-bkz. CBaseTransition:: Setana kareleri. Bu şekilde oluşturulan ana kareleri, animasyon grupları tarafından otomatik olarak silindiği için silmeniz gerekmez. Diğer ana kareleri ve geçişleri temel alan ana kareler oluştururken dikkatli olun ve döngüsel başvurularınızı önleyin.
+Döndürülen işaretçiyi depolayabilir ve diğer anahtar kareleri yeni oluşturulan anahtar çerçevesine dayandırabilirsiniz (ikinci aşırı yüklemeye bakın). Anahtar karelerde geçişlere başlamak mümkündür - Bkz. CBaseTransition::SetKeyframes. Animasyon grupları tarafından otomatik olarak silindiğinden, bu şekilde oluşturulan anahtar kareleri silmeniz gerekmez. Diğer anahtar karelere ve geçişlere dayalı anahtar kareler oluştururken dikkatli olun ve dairesel başvurulardan kaçının.
 
-##  <a name="enableanimationmanagerevent"></a>CAnimationController:: EnableAnimationManagerEvent
+## <a name="canimationcontrollerenableanimationmanagerevent"></a><a name="enableanimationmanagerevent"></a>CAnimationController::EnableAnimationManagerOlay
 
-Animasyon yöneticisinin durumu değiştiğinde çağırmak için bir işleyici ayarlar veya serbest bırakır.
+Animasyon yöneticisinin durumu değiştiğinde aramak için bir işleyici ayarlar veya yayımlar.
 
 ```
 virtual BOOL EnableAnimationManagerEvent(BOOL bEnable = TRUE);
@@ -363,20 +363,20 @@ virtual BOOL EnableAnimationManagerEvent(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-Bir işleyicinin ayarlanacağını veya serbest bırakılıp başlatılmayacağını belirtir.
+*bEtkinleştir*<br/>
+Bir işleyiciayarlanıp ayarlamayacağını veya serbest bırakılamayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleyici başarıyla ayarlandıysa veya yayımlandıysa TRUE.
+Işleyici başarıyla ayarlanmış veya serbest bırakılmışsa DOĞRU.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işleyici ayarlandığında (etkin), animasyon yöneticisinin durumu değiştiğinde OnAnimationManagerStatusChanged Windows animasyonu çağırır.
+Bir işleyici ayarlandığında (etkinleştirilmiş) Windows Animasyon, animasyon yöneticisinin durumu değiştiğinde OnAnimationManagerStatusChanged'i çağırır.
 
-##  <a name="enableanimationtimereventhandler"></a>CAnimationController:: EnableAnimationTimerEventHandler
+## <a name="canimationcontrollerenableanimationtimereventhandler"></a><a name="enableanimationtimereventhandler"></a>CAnimationController::EnableAnimationTimerEventHandler
 
-Zamanlama güncelleştirmeleri için bir işleyici, zamanlama olayları ve işleyicisi için ayarlar veya yayınlar.
+Zamanlama olayları için bir işleyici ve zamanlama güncelleştirmeleri için işleyicisi ayarlar veya yayımlar.
 
 ```
 virtual BOOL EnableAnimationTimerEventHandler(
@@ -386,23 +386,23 @@ virtual BOOL EnableAnimationTimerEventHandler(
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-İşleyicilerin ayarlanacağını veya yayınlanıp yayınlanmayacağını belirtir.
+*bEtkinleştir*<br/>
+Işleyicileri ayarlayıp ayarlamayacağını veya serbest bırakmayacağını belirtir.
 
-*ıdde davranışı*<br/>
-Zamanlayıcı güncelleştirme işleyicisi için boşta davranışını belirtir.
+*idleBehavior*<br/>
+Zamanlayıcı güncelleştirme işleyicisi için boşta davranışı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleyiciler başarıyla ayarlandıysa veya yayımlanmışsa doğru; Bu yöntem, önce işleyicileri serbest bırakmadan ikinci bir kez çağrılırsa veya başka bir hata oluşursa FALSE.
+Işleyiciler başarıyla ayarlanmış veya serbest bırakılmışsa DOĞRU; Bu yöntem işleyicileri önce bırakmadan ikinci kez çağrılırsa veya başka bir hata oluşursa YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleyiciler ayarlandığında (etkin) Windows animasyon API 'SI OnAnimationTimerPreUpdate, OnAnimationTimerPostUpdate, Onrenderingtoolow yöntemlerini çağırır. Windows animasyon API 'SI güncelleştirme görsel taslaklara izin vermek için animasyon zamanlayıcılarını etkinleştirmeniz gerekir. Aksi takdirde, tüm animasyon değişkenlerinin değerlerini güncelleştirmek üzere animasyon yöneticisini yönlendirmek için CAnimationController:: UpdateAnimationManager ' i çağırmanız gerekir.
+Işleyiciler ayarlandığında (etkin) Windows Animasyon API onAnimationTimerPreUpdate, OnAnimationTimerPostUpdate, OnRenderingTooSlow yöntemleri çağırır. Windows Animasyon API güncelleştirme film şeridine izin vermek için animasyon zamanlayıcılarını etkinleştirmeniz gerekir. Aksi takdirde, animasyon yöneticisini tüm animasyon değişkenlerinin değerlerini güncelleştirmeye yönlendirmek için CAnimationController::UpdateAnimationManager'ı aramanız gerekir.
 
-##  <a name="enableprioritycomparisonhandler"></a>CAnimationController:: EnablePriorityComparisonHandler
+## <a name="canimationcontrollerenableprioritycomparisonhandler"></a><a name="enableprioritycomparisonhandler"></a>CAnimationController::EnablePriorityComparisonHandler
 
-Zamanlanan bir görsel taslağın iptal edilip edilmeyeceğini, sonlandırılacağını, kırpıldığını veya sıkıştıramayacağını belirleme çağrısı yapmak için öncelik karşılaştırma işleyicisini ayarlar veya serbest bırakır.
+Zamanlanmış bir film şeridinin iptal edilip edilmeyeceğini, sonuçlandırılıp kesilemeyeceğini veya sıkıştırılıp sıkıştırılamayacağını belirlemek için çağırmak üzere öncelikli karşılaştırma işleyicisini ayarlar veya yayımlar.
 
 ```
 virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
@@ -411,19 +411,19 @@ virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
 ### <a name="parameters"></a>Parametreler
 
 *dwHandlerType*<br/>
-Ayarlanacak veya yayınlanacak işleyicileri belirten UI_ANIMATION_PHT_ bayraklarının (bkz. notlar) birleşimi.
+UI_ANIMATION_PHT_ bayraklarının (bkz. açıklamalar) birleşimi, hangi işleyicilerin ayarlayacağını veya serbest bırakılacaklarını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleyici başarıyla ayarlandıysa veya yayımlandıysa TRUE.
+Işleyici başarıyla ayarlanmış veya serbest bırakılmışsa DOĞRU.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işleyici ayarlandığında (etkin), Windows animasyonu dwHandlerType öğesine bağlı olarak aşağıdaki sanal yöntemleri çağırır: OnHasPriorityCancel, Onhasprioritysonuçde, OnHasPriorityTrim, OnHasPriorityCompress. dwHandler aşağıdaki bayrakların bir birleşimi olabilir: UI_ANIMATION_PHT_NONE-tüm işleyicileri serbest bırak UI_ANIMATION_PHT_CANCEL-set Cancel karşılaştırma işleyicisi UI_ANIMATION_PHT_CONCLUDE-sonuçlandırma karşılaştırma işleyicisini ayarla UI_ANIMATION_PHT_COMPRESS-bir sıkıştırma karşılaştırma işleyicisi UI_ANIMATION_PHT_TRIM-set Kırpma karşılaştırma işleyicisi UI_ANIMATION_PHT_CANCEL_REMOVE-kaldırma karşılaştırma işleyicisi UI_ANIMATION_PHT_CONCLUDE_REMOVE-kaldırma sonuçlandırma işleyicisi UI_ANIMATION_PHT_COMPRESS_REMOVE-kaldır karşılaştırma işleyicisi UI_ANIMATION_PHT _KıRıLAMıYOR _KALDıR-kırpma karşılaştırma işleyicisini kaldır
+Bir işleyici ayarlandığında (etkinleştirilmiş) Windows Animasyon dwHandlerType bağlı olarak aşağıdaki sanal yöntemleri çağırır: OnHasPriorityCancel, OnHasPriorityConclude, OnHasPriorityTrim, OnHasPriorityCompress. dwHandler aşağıdaki bayrakların bir birleşimi olabilir: UI_ANIMATION_PHT_NONE - tüm işleyicileri UI_ANIMATION_PHT_CANCEL serbest bırak - karşılaştırma işleyicisini UI_ANIMATION_PHT_CONCLUDE ayarla - Karşılaştırma işleyicisini UI_ANIMATION_PHT_COMPRESS ayarla - Karşılaştırma işleyicisini UI_ANIMATION_PHT_TRIM ayarla - Trim karşılaştırma işleyicisini UI_ANIMATION_PHT_CANCEL_REMOVE ayarla - Karşılaştırma işleyicisini UI_ANIMATION_PHT_CONCLUDE_REMOVE kaldır - Karşılaştırma işleyicisini UI_ANIMATION_PHT_COMPRESS_REMOVE kaldır - Karşılaştırma iş UI_ANIMATION_PHT_TRIM_REMOVEleyicisini sıkıştırı kaldır - Kırpma karşılaştırma işleyicisi kaldırmak
 
-##  <a name="enablestoryboardeventhandler"></a>CAnimationController:: EnableStoryboardEventHandler
+## <a name="canimationcontrollerenablestoryboardeventhandler"></a><a name="enablestoryboardeventhandler"></a>CAnimationController::EnableStoryboardEventHandler
 
-Görsel taslak durumu ve güncelleştirme olayları için bir işleyici ayarlar veya yayınlar.
+Film şeridi durumu ve güncelleştirme olayları için bir işleyici ayarlar veya yayımlar.
 
 ```
 virtual BOOL EnableStoryboardEventHandler(
@@ -433,23 +433,23 @@ virtual BOOL EnableStoryboardEventHandler(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-Grup KIMLIĞINI belirtir.
+*nGroupID*<br/>
+Grup Kimliğini belirtir.
 
-*bEnable*<br/>
-Bir işleyicinin ayarlanacağını veya serbest bırakılıp başlatılmayacağını belirtir.
+*bEtkinleştir*<br/>
+Bir işleyiciayarlanıp ayarlamayacağını veya serbest bırakılamayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleyici başarıyla ayarlandıysa veya yayımlandıysa doğru; Belirtilen animasyon grubu şimdi bulunursa veya belirtilen grup için animasyon başlatılmamışsa ve iç film şeridi NULL ise FALSE.
+Işleyici başarıyla ayarlanmış veya serbest bırakılmışsa DOĞRU; Belirtilen animasyon grubu şimdi bulunursa veya belirtilen grup için animasyon başlatılmamışsa ve dahili film şeridi NULL ise FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işleyici ayarlandığında (etkin) Windows animasyon API 'SI OnStoryboardStatusChanges ve OnStoryboardUpdated sanal yöntemlerini çağırır. Bir işleyici, belirtilen animasyon grubu için CAnimationController:: Canıuıafter, kapsüllenmiş IUIAnimationStoryboard nesnesi oluşturduğundan ayarlanmalıdır.
+Bir işleyici ayarlandığında (etkinleştirilmiş) Windows Animasyon API'si OnStoryboardStatusChanges ve OnStoryboardUpdated sanal yöntemleri çağırır. Bir işleyici CAnimationController sonra ayarlanmalıdır::Animasyon belirtilen animasyon grubu için çağrıldı, çünkü kapsüllü IUIAnimationStoryboard nesnesi oluşturur.
 
-##  <a name="findanimationgroup"></a>CAnimationController:: Findanimasyongroup
+## <a name="canimationcontrollerfindanimationgroup"></a><a name="findanimationgroup"></a>CAnimationController::FindAnimationGroup
 
-Grup KIMLIĞINE göre bir animasyon grubunu bulur.
+Grup kimliğine göre bir animasyon grubu bulur.
 
 ```
 CAnimationGroup* FindAnimationGroup(UINT32 nGroupID);
@@ -458,23 +458,23 @@ CAnimationGroup* FindAnimationGroup(IUIAnimationStoryboard* pStoryboard);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-GroupID belirtir.
+*nGroupID*<br/>
+Bir GroupID belirtir.
 
 *pStoryboard*<br/>
-Görsel taslağa yönelik işaretçi.
+Bir film şeridi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen KIMLIĞE sahip Grup bulunmazsa animasyon grubuna yönelik bir işaretçi veya NULL.
+Belirtilen kimliği olan grup bulunamazsa animasyon grubu veya NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanında bir animasyon grubu bulmak için bu yöntemi kullanın. Belirli bir GroupID 'ye sahip ilk animasyon nesnesi animasyon denetleyiciye eklenirken bir grup oluşturulur ve animasyon gruplarının iç listesine eklenir.
+Çalışma zamanında bir animasyon grubu bulmak için bu yöntemi kullanın. Belirli GroupID'li ilk animasyon nesnesi animasyon denetleyicisine eklendiğinde bir grup oluşturulur ve animasyon gruplarıiç listesine eklenir.
 
-##  <a name="findanimationobject"></a>CAnimationController:: FindAnimationObject
+## <a name="canimationcontrollerfindanimationobject"></a><a name="findanimationobject"></a>CAnimationController::FindAnimationObject
 
-Belirtilen bir animasyon değişkenini içeren animasyon nesnesini bulur.
+Belirli bir animasyon değişkenini içeren animasyon nesnesi bulur.
 
 ```
 BOOL FindAnimationObject(
@@ -485,34 +485,34 @@ BOOL FindAnimationObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*pVariable*<br/>
-Animasyon değişkenine yönelik bir işaretçi.
+*pDeğişken*<br/>
+Animasyon değişkenine işaretçi.
 
-*ppObject*<br/>
-Çıktıların. Animasyon nesnesine veya NULL işaretçisine sahip bir işaretçi içerir.
+*ppNesne*<br/>
+Çıkış. Animasyon nesnesi veya NULL için bir işaretçi içerir.
 
 *ppGroup*<br/>
-Çıktıların. Animasyon nesnesini veya NULL değerini tutan bir animasyon grubuna yönelik bir işaretçi içerir.
+Çıkış. Animasyon nesnesini tutan animasyon grubuna işaretçi veya NULL içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne bulunursa TRUE; Aksi halde yanlış.
+Nesne bulunursa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gelen animasyon değişkeninden bir animasyon nesnesi bulması gerektiğinde olay işleyicilerinden çağırılır.
+Gelen animasyon değişkeninden bir animasyon nesnesi bulmak gerektiğinde olay işleyicilerinden çağrılır.
 
-##  <a name="g_keyframestoryboardstart"></a>CAnimationController:: gkeyframeStoryboardStart
+## <a name="canimationcontrollergkeyframestoryboardstart"></a><a name="g_keyframestoryboardstart"></a>CAnimationController::gkeyframeStoryboardBaşlat
 
-Görsel taslak başlangıcını temsil eden bir ana kare.
+Film şeridinin başlangıcını temsil eden bir anahtar kare.
 
 ```
 static CBaseKeyFrame gkeyframeStoryboardStart;
 ```
 
-##  <a name="getkeyframestoryboardstart"></a>CAnimationController:: GetKeyframeStoryboardStart
+## <a name="canimationcontrollergetkeyframestoryboardstart"></a><a name="getkeyframestoryboardstart"></a>CAnimationController::GetKeyframeStoryboardBaşlat
 
-Görsel taslak başlangıcını tanımlayan bir ana kare döndürür.
+Film şeridinin başlangıcını tanımlayan bir anahtar çerçevesi döndürür.
 
 ```
 static CBaseKeyFrame* GetKeyframeStoryboardStart();
@@ -520,15 +520,15 @@ static CBaseKeyFrame* GetKeyframeStoryboardStart();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görsel taslak başlangıcını tanımlayan temel ana kare işaretçisi.
+Film şeridinin başlangıcını tanımlayan anahtar çerçevesine temel alan bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ana kareyi, bir film şeridinin başladığı anda diğer tüm ana kareleri veya geçişleri temel alacak şekilde elde edin.
+Bu anahtar çerçeveyi, bir hikaye şeridinin başladığı zamana göre diğer anahtar kareleri veya geçişleri temel almak için edinin.
 
-##  <a name="getuianimationmanager"></a>CAnimationController:: GetUIAnimationManager
+## <a name="canimationcontrollergetuianimationmanager"></a><a name="getuianimationmanager"></a>CAnimationController::GetuiAnimationManager
 
-Encapsulated IUIAnimationManager nesnesine erişim sağlar.
+Kapsüllenmiş IUIAnimationManager nesnesine erişim sağlar.
 
 ```
 IUIAnimationManager* GetUIAnimationManager();
@@ -536,15 +536,15 @@ IUIAnimationManager* GetUIAnimationManager();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon Yöneticisi oluşturma başarısız olursa IUIAnimationManager arabirimine veya NULL 'a yönelik bir işaretçi.
+Animasyon yöneticisi oluşturma başarısız olursa, IUIAnimationManager arabirimi veya NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli işletim sistemi Windows Animation API 'yi desteklemiyorsa, bu yöntem NULL döndürür ve CAnimationController:: IsValid üzerinde yapılan tüm çağrılar FALSE döndürün. Bir animasyon denetleyicisi tarafından sarmalanmamış arabirim yöntemlerini çağırmak için IUIAnimationManager 'a erişmeniz gerekebilir.
+Geçerli işletim sistemi Windows Animasyon API'yı desteklemiyorsa, bu yöntem NULL'u döndürür ve bundan sonra CAnimationController'daki sonraki tüm çağrılar::Geçerli return FALSE' da. Animasyon denetleyicisi tarafından sarılmayan arabirim yöntemlerini aramak için IUIAnimationManager'a erişmeniz gerekebilir.
 
-##  <a name="getuianimationtimer"></a>CAnimationController:: Getuıanimationtimer
+## <a name="canimationcontrollergetuianimationtimer"></a><a name="getuianimationtimer"></a>CAnimationController::GetUIAnimationTimer
 
-Encapsulated IUIAnimationTimer nesnesine erişim sağlar.
+Kapsüllenmiş IUIAnimationTimer nesnesine erişim sağlar.
 
 ```
 IUIAnimationTimer* GetUIAnimationTimer();
@@ -552,15 +552,15 @@ IUIAnimationTimer* GetUIAnimationTimer();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon Zamanlayıcı oluşturma başarısız olduysa, IUIAnimationTimer arabirimine veya NULL 'a yönelik bir işaretçi.
+Animasyon zamanlayıcısı oluşturma başarısız olduysa, IUIAnimationTimer arabirimi veya NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli işletim sistemi Windows Animation API 'yi desteklemiyorsa, bu yöntem NULL döndürür ve CAnimationController:: IsValid üzerinde yapılan tüm çağrılar FALSE döndürün.
+Geçerli işletim sistemi Windows Animasyon API'yı desteklemiyorsa, bu yöntem NULL'u döndürür ve bundan sonra CAnimationController'daki sonraki tüm çağrılar::Geçerli return FALSE' da.
 
-##  <a name="getuitransitionfactory"></a>CAnimationController:: GetUITransitionFactory
+## <a name="canimationcontrollergetuitransitionfactory"></a><a name="getuitransitionfactory"></a>CanimationController::GetuitransitionFactory
 
-Geçiş kitaplığı oluşturma işlemi başarısız olduysa, ıuıanimationgeçişli Tionfactory arabirimine veya NULL öğesine yönelik bir işaretçi.
+Geçiş kitaplığı oluşturulduysa, IUIAnimationTransitionFactory arabirimi veya NULL için bir işaretçi.
 
 ```
 IUIAnimationTransitionFactory* GetUITransitionFactory();
@@ -568,15 +568,15 @@ IUIAnimationTransitionFactory* GetUITransitionFactory();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş fabrikası oluşturma işlemi başarısız olursa ıuıanimationgeçişli Tionfactory veya NULL işaretçisi.
+Geçiş fabrikası oluşturma başarısız olduysa, IUIAnimationTransitionFactory veya NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli işletim sistemi Windows Animation API 'yi desteklemiyorsa, bu yöntem NULL döndürür ve CAnimationController:: IsValid üzerinde yapılan tüm çağrılar FALSE döndürün.
+Geçerli işletim sistemi Windows Animasyon API'yı desteklemiyorsa, bu yöntem NULL'u döndürür ve bundan sonra CAnimationController'daki sonraki tüm çağrılar::Geçerli return FALSE' da.
 
-##  <a name="getuitransitionlibrary"></a>CAnimationController:: GetUITransitionLibrary
+## <a name="canimationcontrollergetuitransitionlibrary"></a><a name="getuitransitionlibrary"></a>CanimationController::GetuiTransitionLibrary
 
-Encapsulated ıuıanimationgeçiş Tionlibrary nesnesine erişim sağlar.
+Kapsüllü IUIAnimationTransitionLibrary nesnesine erişim sağlar.
 
 ```
 IUIAnimationTransitionLibrary* GetUITransitionLibrary();
@@ -584,15 +584,15 @@ IUIAnimationTransitionLibrary* GetUITransitionLibrary();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş kitaplığı oluşturma işlemi başarısız olduysa, ıuıanimationgeçişli Tionlibrary arabirimine veya NULL öğesine yönelik bir işaretçi.
+Geçiş kitaplığı oluşturulduysa, IUIAnimationTransitionLibrary arabirimi veya NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli işletim sistemi Windows Animation API 'yi desteklemiyorsa, bu yöntem NULL döndürür ve CAnimationController:: IsValid üzerinde yapılan tüm çağrılar FALSE döndürün.
+Geçerli işletim sistemi Windows Animasyon API'yı desteklemiyorsa, bu yöntem NULL'u döndürür ve bundan sonra CAnimationController'daki sonraki tüm çağrılar::Geçerli return FALSE' da.
 
-##  <a name="isanimationinprogress"></a>CAnimationController:: ısanimationınprogress
+## <a name="canimationcontrollerisanimationinprogress"></a><a name="isanimationinprogress"></a>CAnimationController::IsAnimationInProgress
 
-En az bir grubun animasyon çalıp oynamadığını söyler.
+En az bir grubun animasyon oynatılıp oynatmadığını söyler.
 
 ```
 virtual BOOL IsAnimationInProgress();
@@ -600,15 +600,15 @@ virtual BOOL IsAnimationInProgress();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu animasyon denetleyicisi için devam eden bir animasyon varsa doğru; Aksi halde yanlış.
+Bu animasyon denetleyicisi için devam etmekte olan bir animasyon varsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon yöneticisinin durumunu denetler ve durum UI_ANIMATION_MANAGER_BUSY ise doğru değerini döndürür.
+Animasyon yöneticisinin durumunu denetler ve durum UI_ANIMATION_MANAGER_BUSY ysa TRUE döndürür.
 
-##  <a name="isvalid"></a>CAnimationController:: IsValid
+## <a name="canimationcontrollerisvalid"></a><a name="isvalid"></a>CAnimationController::Geçersiz
 
-Animasyon denetleyicisinin geçerli olup olmadığını söyler.
+Animasyon denetleyicisi geçerli olup olmadığını söyler.
 
 ```
 BOOL IsValid() const;
@@ -616,37 +616,37 @@ BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon denetleyicisi geçerliyse doğru; Aksi halde yanlış.
+Animasyon denetleyicisi geçerliyse TRUE; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, yalnızca Windows animasyon API 'SI geçerli IŞLETIM sisteminde desteklenmiyorsa ve animasyon Yöneticisi kaydettirilmediği için başarısız olduysa FALSE döndürür. Bu bayrağın ayarlanmasına neden olması için COM kitaplıklarını başlattıktan sonra GetUIAnimationManager 'ı en az bir kez çağırmanız gerekir.
+Bu yöntem, yalnızca Geçerli işletim sistemi üzerinde Windows Animasyon API'sı desteklenmiyorsa ve kayıtlı olmadığı için animasyon yöneticisi nin oluşturulması başarısız olursa FALSE döndürür. Bu bayrağın ayarlanmasına neden olmak için COM kitaplıklarının başlatılmasından sonra en az bir kez GetUIAnimationManager'ı aramanız gerekir.
 
-##  <a name="m_bisvalid"></a>CAnimationController:: m_bIsValid
+## <a name="canimationcontrollerm_bisvalid"></a><a name="m_bisvalid"></a>CAnimationController::m_bIsValid
 
-Bir animasyon denetleyicisinin geçerli olup olmadığını belirtir. Geçerli işletim sistemi Windows Animation API 'YI desteklemiyorsa bu üye FALSE olarak ayarlanır.
+Animasyon denetleyicinin geçerli olup olmadığını belirtir. Geçerli işletim sistemi Windows Animasyon API'sını desteklemiyorsa, bu üye FALSE olarak ayarlanır.
 
 ```
 BOOL m_bIsValid;
 ```
 
-##  <a name="m_lstanimationgroups"></a>CAnimationController:: m_lstAnimationGroups
+## <a name="canimationcontrollerm_lstanimationgroups"></a><a name="m_lstanimationgroups"></a>CAnimationController::m_lstAnimationGroups
 
-Bu animasyon denetleyicisine ait olan animasyon gruplarının listesi.
+Bu animasyon denetleyicisine ait animasyon gruplarının listesi.
 
 ```
 CList<CAnimationGroup*, CAnimationGroup*> m_lstAnimationGroups;
 ```
 
-##  <a name="m_panimationmanager"></a>CAnimationController:: m_pAnimationManager
+## <a name="canimationcontrollerm_panimationmanager"></a><a name="m_panimationmanager"></a>CAnimationController::m_pAnimationManager
 
-Animation Manager COM nesnesine bir işaretçi depolar.
+Animasyon Yöneticisi COM nesnesine bir işaretçi depolar.
 
 ```
 ATL::CComPtr<IUIAnimationManager> m_pAnimationManager;
 ```
 
-##  <a name="m_panimationtimer"></a>CAnimationController:: m_pAnimationTimer
+## <a name="canimationcontrollerm_panimationtimer"></a><a name="m_panimationtimer"></a>CAnimationController::m_pAnimationTimer
 
 Animasyon Zamanlayıcı COM nesnesine bir işaretçi depolar.
 
@@ -654,33 +654,33 @@ Animasyon Zamanlayıcı COM nesnesine bir işaretçi depolar.
 ATL::CComPtr<IUIAnimationTimer> m_pAnimationTimer;
 ```
 
-##  <a name="m_prelatedwnd"></a>CAnimationController:: m_pRelatedWnd
+## <a name="canimationcontrollerm_prelatedwnd"></a><a name="m_prelatedwnd"></a>CAnimationController::m_pRelatedWnd
 
-Animasyon Yöneticisi 'nin durumu değiştiğinde otomatik olarak yeniden çizilebilir olabilecek ilgili bir CWnd nesnesine yönelik işaretçi veya güncelleştirme sonrası olay meydana geldi. NULL olabilir.
+Animasyon yöneticisinin durumu değiştiğinde veya güncelleştirme sonrası olay oluştuğunda otomatik olarak yeniden çizilebilen ilgili bir CWnd nesnesine işaretçi. NULL olabilir.
 
 ```
 CWnd* m_pRelatedWnd;
 ```
 
-##  <a name="m_ptransitionfactory"></a>CAnimationController:: m_pTransitionFactory
+## <a name="canimationcontrollerm_ptransitionfactory"></a><a name="m_ptransitionfactory"></a>CAnimationController::m_pTransitionFactory
 
-Geçiş fabrikası COM nesnesine bir işaretçi depolar.
+Geçiş Fabrikası COM nesnesine işaretçi depolar.
 
 ```
 ATL::CComPtr<IUIAnimationTransitionFactory> m_pTransitionFactory;
 ```
 
-##  <a name="m_ptransitionlibrary"></a>CAnimationController:: m_pTransitionLibrary
+## <a name="canimationcontrollerm_ptransitionlibrary"></a><a name="m_ptransitionlibrary"></a>CAnimationController::m_pTransitionLibrary
 
-Geçiş kitaplığı COM nesnesine bir işaretçi depolar.
+Geçiş Kitaplığı COM nesnesine işaretçi depolar.
 
 ```
 ATL::CComPtr<IUIAnimationTransitionLibrary> m_pTransitionLibrary;
 ```
 
-##  <a name="onafterschedule"></a>CAnimationController:: OnAfterSchedule
+## <a name="canimationcontrolleronafterschedule"></a><a name="onafterschedule"></a>CAnimationController::OnafterSchedule
 
-Belirtilen gruba yönelik bir animasyon henüz zamanlandığında Framework tarafından çağırılır.
+Belirtilen grup için bir animasyon zamanlandığında çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAfterSchedule(CAnimationGroup* pGroup);
@@ -689,15 +689,15 @@ virtual void OnAfterSchedule(CAnimationGroup* pGroup);
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-Zamanlanan bir animasyon grubuna yönelik işaretçi.
+Zamanlanan animasyon grubuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama belirtilen gruptaki ana kareleri kaldırır ve belirtilen gruba ait olan animasyon değişkenlerinden geçiş yapar. Animasyon zamanlamasında ek eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+Varsayılan uygulama, anahtar kareleri belirtilen gruptan kaldırır ve belirtilen gruba ait animasyon değişkenlerinden geçişler. Animasyon zamanlaması üzerinde herhangi bir ek eylem almak için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onanimationintegervaluechanged"></a>CAnimationController:: OnAnimationIntegerValueChanged
+## <a name="canimationcontrolleronanimationintegervaluechanged"></a><a name="onanimationintegervaluechanged"></a>CAnimationController::OnAnimationIntegerValueChanged
 
-Animasyon değişkeninin tamsayı değeri değiştiğinde Framework tarafından çağırılır.
+Animasyon değişkeninin insa değeri değiştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAnimationIntegerValueChanged(
@@ -711,27 +711,27 @@ virtual void OnAnimationIntegerValueChanged(
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-Değeri değişmiş bir animasyon nesnesini tutan animasyon grubuna yönelik bir işaretçi.
+Değeri değişen bir animasyon nesnesini tutan bir animasyon grubuna işaretçi.
 
-*Nesnesini*<br/>
-Değeri değişmiş bir animasyon değişkeni içeren animasyon nesnesine yönelik bir işaretçi.
+*Pobject*<br/>
+Değeri değişen bir animasyon değişkeni içeren bir animasyon nesnesi için işaretçi.
 
-*değişken*<br/>
-Animasyon değişkenine yönelik bir işaretçi.
+*Değişken*<br/>
+Animasyon değişkenine işaretçi.
 
-*Değer*<br/>
-Yeni bir değer belirtir.
+*Newvalue*<br/>
+Yeni değer belirtir.
 
 *prevValue*<br/>
 Önceki değeri belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirli bir animasyon değişkeni veya animasyon nesnesi için EnableIntegerValueChangedEvent çağrılan animasyon değişken olaylarını etkinleştirirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+Belirli bir animasyon değişkeni veya animasyon nesnesi için çağrılan EnableIntegerValueChangedEvent ile animasyon değişken olayları etkinleştirmek bu yöntem denir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onanimationmanagerstatuschanged"></a>CAnimationController:: OnAnimationManagerStatusChanged
+## <a name="canimationcontrolleronanimationmanagerstatuschanged"></a><a name="onanimationmanagerstatuschanged"></a>CAnimationController::OnAnimationManagerStatus Değiştirildi
 
-Animasyon yöneticisinden StatusChanged olayına yanıt olarak Framework tarafından çağırılır.
+Animasyon yöneticisinden DurumDeğiştirildi olayına yanıt olarak çerçeve tarafından çağrıldı.
 
 ```
 virtual void OnAnimationManagerStatusChanged(
@@ -741,19 +741,19 @@ virtual void OnAnimationManagerStatusChanged(
 
 ### <a name="parameters"></a>Parametreler
 
-*newStatus*<br/>
-Yeni animasyon Yöneticisi durumu.
+*newDurum*<br/>
+Yeni animasyon yöneticisi durumu.
 
-*previousStatus*<br/>
-Önceki animasyon Yöneticisi durumu.
+*öncekiDurum*<br/>
+Önceki animasyon yöneticisi durumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, EnableAnimationManagerEvent ile Animation Manager olaylarını etkinleştirirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir. Varsayılan uygulama, SetRelatedWnd ile ayarlandıysa ilgili bir pencereyi günceller.
+Bu yöntem, EnableAnimationManagerEvent ile animasyon yöneticisi olaylarını etkinleştiriyorsanız çağrılır. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir. Varsayılan uygulama, SetRelatedWnd ile ayarlanmışsa ilgili pencereyi güncelleştirir.
 
-##  <a name="onanimationtimerpostupdate"></a>CAnimationController:: OnAnimationTimerPostUpdate
+## <a name="canimationcontrolleronanimationtimerpostupdate"></a><a name="onanimationtimerpostupdate"></a>CAnimationController::OnAnimationTimerPostUpdate
 
-Bir animasyon güncelleştirmesi tamamlandıktan sonra Framework tarafından çağırılır.
+Animasyon güncelleştirmesi tamamlandıktan sonra çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAnimationTimerPostUpdate();
@@ -761,11 +761,11 @@ virtual void OnAnimationTimerPostUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, EnableAnimationTimerEventHandler kullanarak Zamanlayıcı olay işleyicilerini etkinleştirirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+Bu yöntem, EnableAnimationTimerEventHandler kullanarak zamanlayıcı olay işleyicileri etkinleştirmek bu yöntem denir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onanimationtimerpreupdate"></a>CAnimationController:: OnAnimationTimerPreUpdate
+## <a name="canimationcontrolleronanimationtimerpreupdate"></a><a name="onanimationtimerpreupdate"></a>CAnimationController::OnAnimationTimerPreUpdate
 
-Bir animasyon güncelleştirmesi başlamadan önce Framework tarafından çağırılır.
+Animasyon güncelleştirmesi başlamadan önce çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAnimationTimerPreUpdate();
@@ -773,11 +773,11 @@ virtual void OnAnimationTimerPreUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, EnableAnimationTimerEventHandler kullanarak Zamanlayıcı olay işleyicilerini etkinleştirirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+Bu yöntem, EnableAnimationTimerEventHandler kullanarak zamanlayıcı olay işleyicileri etkinleştirmek bu yöntem denir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onanimationtimerrenderingtooslow"></a>CAnimationController:: Onanimationtimerrenderingtoolow
+## <a name="canimationcontrolleronanimationtimerrenderingtooslow"></a><a name="onanimationtimerrenderingtooslow"></a>CAnimationController::OnAnimationTimerRenderingTooSlow
 
-Bir animasyonun işleme çerçevesi oranı, istenen en düşük kare oranının altına düştüğünde Framework tarafından çağırılır.
+Animasyoniçin görüntüleme kare hızı minimum arzu edilen kare hızının altına düştüğünde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAnimationTimerRenderingTooSlow(UINT32 fps);
@@ -785,16 +785,16 @@ virtual void OnAnimationTimerRenderingTooSlow(UINT32 fps);
 
 ### <a name="parameters"></a>Parametreler
 
-*fps*<br/>
-Kare/saniye cinsinden geçerli kare hızı.
+*Fps*<br/>
+Saniyedeki karelerde geçerli kare hızı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, EnableAnimationTimerEventHandler kullanarak Zamanlayıcı olay işleyicilerini etkinleştirirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir. IUIAnimationTimer:: SetFrameRateThreshold çağırarak, istenen en düşük kare hızı belirtilir.
+Bu yöntem, EnableAnimationTimerEventHandler kullanarak zamanlayıcı olay işleyicileri etkinleştirmek bu yöntem denir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir. İstenilen minimum kare hızı IUIAnimationTimer::SetFrameRateThreshold numaralı çağrılarak belirtilir.
 
-##  <a name="onanimationvaluechanged"></a>CAnimationController:: Onanimasyonvaluechanged
+## <a name="canimationcontrolleronanimationvaluechanged"></a><a name="onanimationvaluechanged"></a>CAnimationController::OnAnimationValue Changed
 
-Animasyon değişkeninin değeri değiştiğinde Framework tarafından çağırılır.
+Animasyon değişkeninin değeri değiştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAnimationValueChanged(
@@ -808,27 +808,27 @@ virtual void OnAnimationValueChanged(
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-Değeri değişmiş bir animasyon nesnesini tutan animasyon grubuna yönelik bir işaretçi.
+Değeri değişen bir animasyon nesnesini tutan bir animasyon grubuna işaretçi.
 
-*Nesnesini*<br/>
-Değeri değişmiş bir animasyon değişkeni içeren animasyon nesnesine yönelik bir işaretçi.
+*Pobject*<br/>
+Değeri değişen bir animasyon değişkeni içeren bir animasyon nesnesi için işaretçi.
 
-*değişken*<br/>
-Animasyon değişkenine yönelik bir işaretçi.
+*Değişken*<br/>
+Animasyon değişkenine işaretçi.
 
-*Değer*<br/>
-Yeni bir değer belirtir.
+*Newvalue*<br/>
+Yeni değer belirtir.
 
 *prevValue*<br/>
 Önceki değeri belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirli bir animasyon değişkeni veya animasyon nesnesi için, EnableValueChangedEvent çağrılan animasyon değişken olaylarını etkinleştirirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+Belirli bir animasyon değişkeni veya animasyon nesnesi için çağrılan EnableValueChangedEvent ile animasyon değişken olayları etkinleştirmek bu yöntem denir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onbeforeanimationstart"></a>CAnimationController:: OnBeforeAnimationStart
+## <a name="canimationcontrolleronbeforeanimationstart"></a><a name="onbeforeanimationstart"></a>CAnimationController::OnbeforeAnimationStart
 
-Animasyon zamanlanmadan önce Framework tarafından çağırılır.
+Animasyon zamanlanmadan hemen önce çerçeve tarafından çağrılır.
 
 ```
 virtual void OnBeforeAnimationStart(CAnimationGroup* pGroup);
@@ -837,15 +837,15 @@ virtual void OnBeforeAnimationStart(CAnimationGroup* pGroup);
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-Animasyonu başlamak üzere olan bir animasyon grubuna yönelik bir işaretçi.
+Animasyonu başlamak üzere olan bir animasyon grubuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu çağrı ilgili CWnd 'e yönlendirilir ve belirtilen grup için animasyon başlamadan önce ek eylemler gerçekleştirmek üzere türetilmiş bir sınıfta geçersiz kılınabilir.
+Bu çağrı ilgili CWnd'ye yönlendirilir ve animasyon belirtilen grup için animasyon başlamadan önce ek eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onhasprioritycancel"></a>CAnimationController:: OnHasPriorityCancel
+## <a name="canimationcontrolleronhasprioritycancel"></a><a name="onhasprioritycancel"></a>CanimationController::OnhasPriorityCancel
 
-Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.
+Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnHasPriorityCancel(
@@ -856,26 +856,26 @@ virtual BOOL OnHasPriorityCancel(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pgroupzamanlandı*<br/>
-Şu anda zamanlanmış görsel taslağa sahip olan grup.
+*pGroupScheduled*<br/>
+Şu anda zamanlanmış film şeridinin sahibi olan grup.
 
-*pGroupNew*<br/>
-Zamanlama içinde olan yeni görsel taslağa sahip olan Grup, Pgroupzamanlandı tarafından sahip olunan zamanlanmış Görsel Taslakla çakışıyor.
+*pGroupYeni*<br/>
+pGroupScheduled'ın sahip olduğu zamanlanmış film şeridiyle çakışma zamanlama da bulunan yeni hikaye şeridinin sahibi olan grup.
 
-*priorityEffect*<br/>
-Pgroupzamanlanırsa daha yüksek önceliğe sahip olan pGroupNew üzerindeki olası etkisi.
+*öncelikEtkisi*<br/>
+pGroupScheduled'ın daha yüksek bir önceliği varsa pGroupNew üzerindeki olası etkisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-PGroupNew 'un sahip olduğu film şeridi önceliğe sahipse TRUE döndürmelidir. Pgroupzamanlanan tarafından sahip olunan film şeridi önceliğe sahipse, FALSE döndürmelidir.
+pGroupNew'a ait storyboard'un önceliği varsa TRUE döndürmelidir. pGroupScheduled'a ait hikaye şeridinin önceliği varsa FALSE döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, CAnimationController:: EnablePriorityComparisonHandler kullanarak Öncelik karşılaştırma olaylarını etkinleştirirseniz ve UI_ANIMATION_PHT_CANCEL belirtirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi Için WINDOWS Animation API belgelerini okuyun.
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olaylarını etkinleştiriniz ve UI_ANIMATION_PHT_CANCEL belirtin bu yöntem edenir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma Yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi için Windows Animasyon API belgelerini okuyun.
 
-##  <a name="onhasprioritycompress"></a>CAnimationController:: OnHasPriorityCompress
+## <a name="canimationcontrolleronhasprioritycompress"></a><a name="onhasprioritycompress"></a>CanimationController::OnHasPriorityCompress
 
-Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.
+Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnHasPriorityCompress(
@@ -886,26 +886,26 @@ virtual BOOL OnHasPriorityCompress(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pgroupzamanlandı*<br/>
-Şu anda zamanlanmış görsel taslağa sahip olan grup.
+*pGroupScheduled*<br/>
+Şu anda zamanlanmış film şeridinin sahibi olan grup.
 
-*pGroupNew*<br/>
-Zamanlama içinde olan yeni görsel taslağa sahip olan Grup, Pgroupzamanlandı tarafından sahip olunan zamanlanmış Görsel Taslakla çakışıyor.
+*pGroupYeni*<br/>
+pGroupScheduled'ın sahip olduğu zamanlanmış film şeridiyle çakışma zamanlama da bulunan yeni hikaye şeridinin sahibi olan grup.
 
-*priorityEffect*<br/>
-Pgroupzamanlanırsa daha yüksek önceliğe sahip olan pGroupNew üzerindeki olası etkisi.
+*öncelikEtkisi*<br/>
+pGroupScheduled'ın daha yüksek bir önceliği varsa pGroupNew üzerindeki olası etkisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-PGroupNew 'un sahip olduğu film şeridi önceliğe sahipse TRUE döndürmelidir. Pgroupzamanlanan tarafından sahip olunan film şeridi önceliğe sahipse, FALSE döndürmelidir.
+pGroupNew'a ait storyboard'un önceliği varsa TRUE döndürmelidir. pGroupScheduled'a ait hikaye şeridinin önceliği varsa FALSE döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, CAnimationController:: EnablePriorityComparisonHandler kullanarak Öncelik karşılaştırma olaylarını etkinleştirirseniz ve UI_ANIMATION_PHT_COMPRESS belirtirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi Için WINDOWS Animation API belgelerini okuyun.
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olaylarını etkinleştiriniz ve UI_ANIMATION_PHT_COMPRESS belirtin bu yöntem ekidir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma Yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi için Windows Animasyon API belgelerini okuyun.
 
-##  <a name="onhaspriorityconclude"></a>CAnimationController:: Onhasprioritysonuçde
+## <a name="canimationcontrolleronhaspriorityconclude"></a><a name="onhaspriorityconclude"></a>CanimationController::OnHasPriorityconclude
 
-Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.
+Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnHasPriorityConclude(
@@ -916,26 +916,26 @@ virtual BOOL OnHasPriorityConclude(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pgroupzamanlandı*<br/>
-Şu anda zamanlanmış görsel taslağa sahip olan grup.
+*pGroupScheduled*<br/>
+Şu anda zamanlanmış film şeridinin sahibi olan grup.
 
-*pGroupNew*<br/>
-Zamanlama içinde olan yeni görsel taslağa sahip olan Grup, Pgroupzamanlandı tarafından sahip olunan zamanlanmış Görsel Taslakla çakışıyor.
+*pGroupYeni*<br/>
+pGroupScheduled'ın sahip olduğu zamanlanmış film şeridiyle çakışma zamanlama da bulunan yeni hikaye şeridinin sahibi olan grup.
 
-*priorityEffect*<br/>
-Pgroupzamanlanırsa daha yüksek önceliğe sahip olan pGroupNew üzerindeki olası etkisi.
+*öncelikEtkisi*<br/>
+pGroupScheduled'ın daha yüksek bir önceliği varsa pGroupNew üzerindeki olası etkisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-PGroupNew 'un sahip olduğu film şeridi önceliğe sahipse TRUE döndürmelidir. Pgroupzamanlanan tarafından sahip olunan film şeridi önceliğe sahipse, FALSE döndürmelidir.
+pGroupNew'a ait storyboard'un önceliği varsa TRUE döndürmelidir. pGroupScheduled'a ait hikaye şeridinin önceliği varsa FALSE döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, CAnimationController:: EnablePriorityComparisonHandler kullanarak Öncelik karşılaştırma olaylarını etkinleştirirseniz ve UI_ANIMATION_PHT_CONCLUDE belirtirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi Için WINDOWS Animation API belgelerini okuyun.
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olaylarını etkinleştiriniz ve UI_ANIMATION_PHT_CONCLUDE belirtin bu yöntem edenir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma Yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi için Windows Animasyon API belgelerini okuyun.
 
-##  <a name="onhasprioritytrim"></a>CAnimationController:: OnHasPriorityTrim
+## <a name="canimationcontrolleronhasprioritytrim"></a><a name="onhasprioritytrim"></a>CanimationController::OnhasPrioritytrim
 
-Zamanlama çakışmalarını çözmek için Framework tarafından çağırılır.
+Zamanlama çakışmalarını gidermek için çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnHasPriorityTrim(
@@ -946,26 +946,26 @@ virtual BOOL OnHasPriorityTrim(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pgroupzamanlandı*<br/>
-Şu anda zamanlanmış görsel taslağa sahip olan grup.
+*pGroupScheduled*<br/>
+Şu anda zamanlanmış film şeridinin sahibi olan grup.
 
-*pGroupNew*<br/>
-Zamanlama içinde olan yeni görsel taslağa sahip olan Grup, Pgroupzamanlandı tarafından sahip olunan zamanlanmış Görsel Taslakla çakışıyor.
+*pGroupYeni*<br/>
+pGroupScheduled'ın sahip olduğu zamanlanmış film şeridiyle çakışma zamanlama da bulunan yeni hikaye şeridinin sahibi olan grup.
 
-*priorityEffect*<br/>
-Pgroupzamanlanırsa daha yüksek önceliğe sahip olan pGroupNew üzerindeki olası etkisi.
+*öncelikEtkisi*<br/>
+pGroupScheduled'ın daha yüksek bir önceliği varsa pGroupNew üzerindeki olası etkisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-PGroupNew 'un sahip olduğu film şeridi önceliğe sahipse TRUE döndürmelidir. Pgroupzamanlanan tarafından sahip olunan film şeridi önceliğe sahipse, FALSE döndürmelidir.
+pGroupNew'a ait storyboard'un önceliği varsa TRUE döndürmelidir. pGroupScheduled'a ait hikaye şeridinin önceliği varsa FALSE döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, CAnimationController:: EnablePriorityComparisonHandler kullanarak Öncelik karşılaştırma olaylarını etkinleştirirseniz ve UI_ANIMATION_PHT_TRIM belirtirseniz çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi Için WINDOWS Animation API belgelerini okuyun.
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olaylarını etkinleştiriniz ve UI_ANIMATION_PHT_TRIM belirtin bu yöntem edenir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir. [Çakışma Yönetimi](/windows/win32/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)hakkında daha fazla bilgi için Windows Animasyon API belgelerini okuyun.
 
-##  <a name="onstoryboardstatuschanged"></a>CAnimationController:: OnStoryboardStatusChanged
+## <a name="canimationcontrolleronstoryboardstatuschanged"></a><a name="onstoryboardstatuschanged"></a>CAnimationController::OnStoryboardStatusChanged
 
-Görsel taslak durumu değiştiğinde Framework tarafından çağırılır.
+Film şeridi durumu değiştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnStoryboardStatusChanged(
@@ -977,21 +977,21 @@ virtual void OnStoryboardStatusChanged(
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-Durumu değişmiş olan görsel taslağa sahip bir animasyon grubuna yönelik bir işaretçi.
+Durumu değişen film şeridinin sahibi olan animasyon grubuna işaretçi.
 
-*newStatus*<br/>
+*newDurum*<br/>
 Yeni durumu belirtir.
 
-*previousStatus*<br/>
+*öncekiDurum*<br/>
 Önceki durumu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationController:: EnableStoryboardEventHandler kullanarak görsel taslak olaylarını etkinleştirirseniz bu yöntem çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+CAnimationController::EnableStoryboardEventHandler kullanarak film şeridi olaylarını etkinleştiriyorsanız bu yöntem edenir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="onstoryboardupdated"></a>CAnimationController:: OnStoryboardUpdated
+## <a name="canimationcontrolleronstoryboardupdated"></a><a name="onstoryboardupdated"></a>CAnimationController::OnStoryboardGüncel
 
-Görsel taslak güncelleştirildiği zaman Framework tarafından çağırılır.
+Film şeridi güncelleştirildiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnStoryboardUpdated(CAnimationGroup* pGroup);
@@ -1000,13 +1000,13 @@ virtual void OnStoryboardUpdated(CAnimationGroup* pGroup);
 ### <a name="parameters"></a>Parametreler
 
 *pGroup*<br/>
-Görsel taslağa sahip bir grubun işaretçisi.
+Film şeridinin sahibi olan bir gruba işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationController:: EnableStoryboardEventHandler kullanarak görsel taslak olaylarını etkinleştirirseniz bu yöntem çağrılır. Uygulamaya özel eylemler gerçekleştirmek için türetilmiş bir sınıfta geçersiz kılınabilir.
+CAnimationController::EnableStoryboardEventHandler kullanarak film şeridi olaylarını etkinleştiriyorsanız bu yöntem edenir. Uygulamaya özgü eylemler icra etmek için türetilmiş bir sınıfta geçersiz kılınabilir.
 
-##  <a name="removeallanimationgroups"></a>CAnimationController:: RemoveAllAnimationGroups
+## <a name="canimationcontrollerremoveallanimationgroups"></a><a name="removeallanimationgroups"></a>CAnimationController::RemoveAllAnimationGroups
 
 Tüm animasyon gruplarını animasyon denetleyicisinden kaldırır.
 
@@ -1016,11 +1016,11 @@ void RemoveAllAnimationGroups();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm gruplar silinecek, bu, uygulama düzeyinde depolanıyorsa işaretçisi geçersiz kılınmalıdır. Silinmekte olan bir grup için CAnimationGroup:: m_bAutodestroyAnimationObjects TRUE ise, o gruba ait olan tüm animasyon nesneleri silinir; Aksi takdirde, üst animasyon denetleyicisine yapılan başvurular NULL olarak ayarlanır ve bu, başka bir denetleyiciye eklenebilir.
+Tüm gruplar silinir, işaretçileri, uygulama düzeyinde depolanırsa geçersiz kılınmalıdır. CAnimationGroup::m_bAutodestroyAnimationObjects bir grubun silinmesi için DOĞRU ise, o gruba ait tüm animasyon nesneleri silinir; aksi takdirde ana animasyon denetleyicisine yapılan atıflar NULL olarak ayarlanır ve başka bir denetleyiciye eklenebilir.
 
-##  <a name="removeanimationgroup"></a>CAnimationController:: RemoveAnimationGroup
+## <a name="canimationcontrollerremoveanimationgroup"></a><a name="removeanimationgroup"></a>CAnimationController::RemoveAnimationGroup
 
-Belirtilen KIMLIĞE sahip bir animasyon grubunu animasyon denetleyicisinden kaldırır.
+Animasyon denetleyicisinden belirtilen kimliği olan bir animasyon grubunu kaldırır.
 
 ```
 void RemoveAnimationGroup(UINT32 nGroupID);
@@ -1028,16 +1028,16 @@ void RemoveAnimationGroup(UINT32 nGroupID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-Animasyon grubu KIMLIĞINI belirtir.
+*nGroupID*<br/>
+Animasyon grubu kimliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir animasyon grubunu iç Grup listesinden kaldırır ve siler, bu nedenle bu animasyon grubuna bir işaretçi depoladıysanız geçersiz kılınmalıdır. CAnimationGroup:: m_bAutodestroyAnimationObjects TRUE ise, o gruba ait olan tüm animasyon nesneleri silinir; Aksi takdirde, üst animasyon denetleyicisine yapılan başvurular NULL olarak ayarlanır ve bu, başka bir denetleyiciye eklenebilir.
+Bu yöntem, bir animasyon grubunu iç gruplar listesinden kaldırır ve siler, bu nedenle bu animasyon grubuna bir işaretçi depolarsanız geçersiz kılınması gerekir. CAnimationGroup::m_bAutodestroyAnimationObjects DOĞRUise, bu gruba ait tüm animasyon nesneleri silinir; aksi takdirde ana animasyon denetleyicisine yapılan atıflar NULL olarak ayarlanır ve başka bir denetleyiciye eklenebilir.
 
-##  <a name="removeanimationobject"></a>CAnimationController:: RemoveAnimationObject
+## <a name="canimationcontrollerremoveanimationobject"></a><a name="removeanimationobject"></a>CAnimationController::RemoveAnimationObject
 
-Animasyon denetleyicisinden bir animasyon nesnesi kaldırın.
+Animasyon nesnesi animasyon denetleyicisinden kaldırın.
 
 ```
 void RemoveAnimationObject(
@@ -1047,19 +1047,19 @@ void RemoveAnimationObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nesnesini*<br/>
-Animasyon nesnesine yönelik bir işaretçi.
+*Pobject*<br/>
+Animasyon nesnesine işaretçi.
 
 *bNoDelete*<br/>
-Bu parametre TRUE ise, kaldırma işlemi sırasında nesne silinmez.
+Bu parametre TRUE ise nesne kaldırıldıktan sonra silinmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon denetleyicisi ve animasyon grubundan bir animasyon nesnesini kaldırır. Belirli bir nesnenin artık animasyon uygulanmamalıdır veya nesneyi başka bir animasyon denetleyicisine taşımanız gerekiyorsa bu işlevi çağırın. Son durumda bNoDelete doğru olmalıdır.
+Animasyon nesnesi animasyon denetleyicisi ve animasyon grubundan bir animasyon nesnesi kaldırır. Belirli bir nesne artık animasyonlu değilse veya nesneyi başka bir animasyon denetleyicisine taşımanız gerekiyorsa bu işlevi arayın. Son durumda bNoDelete DOĞRU olmalıdır.
 
-##  <a name="removetransitions"></a>CAnimationController:: Removetransıtions
+## <a name="canimationcontrollerremovetransitions"></a><a name="removetransitions"></a>CAnimationController::Geçişleri Kaldırma
 
-Belirtilen gruba ait olan animasyon nesnelerinden geçişleri kaldırır.
+Belirtilen gruba ait animasyon nesnelerinden geçişleri kaldırır.
 
 ```
 void RemoveTransitions(UINT32 nGroupID);
@@ -1067,16 +1067,16 @@ void RemoveTransitions(UINT32 nGroupID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-Grup KIMLIĞINI belirtir.
+*nGroupID*<br/>
+Grup Kimliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Grup, animasyon nesneleri üzerinde döngü yapar ve her bir animasyon nesnesi için Cleargeçişler (FALSE) çağırır. Bu yöntem, animasyon zamanlandıktan sonra Framework tarafından çağırılır.
+Grup, animasyon nesnelerinin üzerine döngüler ve her animasyon nesnesi için ClearTransitions(FALSE) çağırır. Bu yöntem, animasyon zamanlandıktan sonra çerçeve tarafından çağrılır.
 
-##  <a name="schedulegroup"></a>CAnimationController:: ScheduleGroup
+## <a name="canimationcontrollerschedulegroup"></a><a name="schedulegroup"></a>CAnimationController::Program Grubu
 
-Bir animasyon zamanlar.
+Animasyon planlar.
 
 ```
 BOOL ScheduleGroup(
@@ -1086,23 +1086,23 @@ BOOL ScheduleGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngroupıd*<br/>
-Zamanlanacak animasyon grubu KIMLIĞINI belirtir.
+*nGroupID*<br/>
+Zamanlamaiçin animasyon Grup Kimliğini belirtir.
 
-*saat*<br/>
-Zamanlama süresini belirtir.
+*time*<br/>
+Zamançizelgesi için zaman belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon başarıyla zamanlanırsa TRUE. Film şeridi oluşturulmadıysa veya başka bir hata oluşursa FALSE.
+Animasyon başarıyla zamanlanmışsa TRUE. Storyboard oluşturulmamadıysa veya başka bir hata oluşuyorsa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-BScheduleNow parametresi ile AnimateGroup ' u çağırmanız gerekir. IUIAnimationTimer:: GetTime öğesinden elde edilen istenen animasyon süresini belirtebilirsiniz. Zaman parametresi 0,0 ise, Animasyon geçerli saat için zamanlanır.
+BScheduleNow parametresi false prior ScheduleGroup olarak ayarlanmış Olan AnimateGroup'u aramanız gerekir. IUIAnimationTimer'dan elde edilen istenilen animasyon süresini belirtebilirsiniz::GetTime. Zaman parametresi 0,0 ise, animasyon geçerli saat için zamanlanır.
 
-##  <a name="setrelatedwnd"></a>CAnimationController:: SetRelatedWnd
+## <a name="canimationcontrollersetrelatedwnd"></a><a name="setrelatedwnd"></a>CAnimationController::SetRelatedWnd
 
-Animasyon denetleyicisi ve pencere arasında bir ilişki oluşturur.
+Animasyon denetleyicisi ve bir pencere arasında bir ilişki kurar.
 
 ```
 void SetRelatedWnd(CWnd* pWnd);
@@ -1110,16 +1110,16 @@ void SetRelatedWnd(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Ayarlanacak pencere nesnesine yönelik bir işaretçi.
+*Pwnd*<br/>
+Ayarlamak için pencere nesnesi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bir CWnd nesnesi ayarlandıysa, animasyon yöneticisinin durumu değiştiğinde veya zamanlayıcı güncelleştirme sonrası olay oluştuğunda animasyon denetleyicisi onu otomatik olarak güncelleştirebilir (WM_PAINT iletisi gönderebilir).
+İlgili bir CWnd nesnesi ayarlanırsa, animasyon yöneticisinin durumu değiştiğinde veya zamanlayıcı sonrası güncelleştirme olayı oluştuğunda animasyon denetleyicisi otomatik olarak güncelleyebilir (WM_PAINT ileti gönder).
 
-##  <a name="updateanimationmanager"></a>CAnimationController:: UpdateAnimationManager
+## <a name="canimationcontrollerupdateanimationmanager"></a><a name="updateanimationmanager"></a>CAnimationController::UpdateAnimationManager
 
-Animasyon yöneticisini tüm animasyon değişkenlerinin değerlerini güncelleştirecek şekilde yönlendirir.
+Animasyon yöneticisini tüm animasyon değişkenlerinin değerlerini güncelleştirmeye yönlendirir.
 
 ```
 virtual void UpdateAnimationManager();
@@ -1127,7 +1127,7 @@ virtual void UpdateAnimationManager();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağırmak, animasyon yöneticisini geçerli zamana ilerletir, film şeridi durumlarını gerektiği şekilde değiştirir ve herhangi bir animasyon değişkenini uygun bir enterpolasyonlu değere göre güncelleştiriyor. Dahili olarak bu yöntem IUIAnimationTimer:: GetTime (Tımenow) ve IUIAnimationManager:: Update (timeNow) öğesini çağırır. Bu davranışı özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Bu yöntemin çağrılması animasyon yöneticisini geçerli saate doğru ilerler, gerektiğinde film panolarının durumlarını değiştirir ve animasyon değişkenlerini uygun enterpolasyonlu değerlere günceller. Dahili olarak bu yöntem iUIAnimationTimer çağırır::GetTime(timeNow) ve IUIAnimationManager::Update(timeNow). Bu davranışı özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

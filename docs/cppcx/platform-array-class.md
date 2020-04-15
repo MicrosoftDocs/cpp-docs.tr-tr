@@ -1,5 +1,5 @@
 ---
-title: 'Platform:: Array sınıfı'
+title: Platform::Dizi Sınıfı
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 7d9fca4de954b5ba9c7cbcb3bdfce0fe3263dbd7
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d625d80df67a3c8207467ad629afd4c2bf88db18
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445805"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318663"
 ---
-# <a name="platformarray-class"></a>Platform:: Array sınıfı
+# <a name="platformarray-class"></a>Platform::Dizi Sınıfı
 
-Uygulama ikili arabirimine (ABı) alınabilecek ve geçirilebilecek tek boyutlu, değiştirilebilir bir diziyi temsil eder.
+Uygulama ikili arabirimi (ABI) üzerinden alınıp geçilebilen tek boyutlu, değiştirilebilir bir diziyi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,41 +30,41 @@ private ref class Array<TArg, 1> :
 
 ### <a name="members"></a>Üyeler
 
-Platform:: Array, [Platform:: WriteOnlyArray sınıfından](../cppcx/platform-writeonlyarray-class.md) tüm yöntemlerini devralır ve [Platform:: ıboxarray arabiriminin](../cppcx/platform-iboxarray-interface.md)`Value` özelliğini uygular.
+Platform::Dizi tüm [yöntemlerini Platformdan devralır::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) `Value` Class ve Platformun özelliğini [uygular::IBoxArray Interface.](../cppcx/platform-iboxarray-interface.md)
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[Dizi oluşturucular](#ctor)|Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.|
+|[Dizi Oluşturucuları](#ctor)|Sınıf şablonu parametresi, *T*tarafından belirtilen türlerin tek boyutlu, değiştirilebilir bir dizi başharf.|
 
 ### <a name="methods"></a>Yöntemler
 
-Bkz. [Platform:: WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-class.md).
+Bkz. [Platform::WriteOnlyArray Sınıfı](../cppcx/platform-writeonlyarray-class.md).
 
 ### <a name="properties"></a>Özellikler
 
 |||
 |-|-|
-|[Array:: Value](#value)|Geçerli diziye bir tanıtıcı alır.|
+|[Dizi::Değer](#value)|Geçerli diziye bir tanıtıcı alır.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi sınıfı mühürlü ve devralınamaz.
+Dizi sınıfı mühürlüdür ve devralınamaz.
 
-Windows Çalışma Zamanı tür sistemi, pürüzlü Diziler kavramını desteklemez ve bu nedenle bir IVector < Platform:: Array\<T > > dönüş değeri veya yöntem parametresi olarak geçirilemez. ABı genelinde pürüzlü bir diziyi veya dizi dizilerini geçirmek için `IVector<IVector<T>^>`kullanın.
+Windows Runtime türü sistemi pürüzlü diziler kavramını desteklemez ve bu nedenle bir\<IVector<Platformu geçemez::Array T>> bir dönüş değeri veya yöntem parametresi olarak. Pürüzlü bir dizi veya ABI genelinde diziler `IVector<IVector<T>^>`dizisi geçmek için.
 
-Platform:: Array öğesinin ne zaman ve nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [Array ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
+Platform::Array'in ne zaman ve nasıl kullanılacağı hakkında daha fazla bilgi için [Array ve WriteOnlyArray'e](../cppcx/array-and-writeonlyarray-c-cx.md)bakın.
 
-Bu sınıf, derleyici tarafından otomatik olarak eklenen vccorlib. h üst bilgisinde tanımlanmıştır. Bu, IntelliSense 'de görünür ancak platform. winmd içinde tanımlı bir genel tür olmadığından Nesne Tarayıcısı değildir.
+Bu sınıf vccorlib.h üstbilgisinde tanımlanır ve bu başlık derleyici tarafından otomatik olarak dahil edilir. Platform.winmd'de tanımlanan genel bir tür olmadığı için IntelliSense'de görünür, ancak Object Browser'da görünmez.
 
 ### <a name="requirements"></a>Gereksinimler
 
 Derleyici seçeneği: **/ZW**
 
-## <a name="ctor"></a>Dizi oluşturucular
+## <a name="array-constructors"></a><a name="ctor"></a>Dizi Oluşturucuları
 
-Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.
+Sınıf şablonu parametresi, *T*tarafından belirtilen türlerin tek boyutlu, değiştirilebilir bir dizi başharf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,20 +75,20 @@ Array(T* data, unsigned int size);
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Sınıf şablonu parametresi.
 
-*boyutla*<br/>
+*Boyutu*<br/>
 Dizideki öğelerin sayısı
 
-*verileri*<br/>
-Bu dizi nesnesini başlatmak için kullanılan `T` türünde bir veri dizisine yönelik bir işaretçi.
+*Veri*<br/>
+Bu Dizi nesnesini başlatmak `T` için kullanılan tür veri dizisine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Platform:: Array örnekleri oluşturma hakkında daha fazla bilgi için bkz. [Array ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
+Platform örnekleri nin nasıl oluşturulacağı hakkında daha fazla bilgi için:Dizi, [bkz.](../cppcx/array-and-writeonlyarray-c-cx.md)
 
-## <a name="get"></a>Array:: get yöntemi
+## <a name="arrayget-method"></a><a name="get"></a>Dizi::get Method
 
 Belirtilen dizin konumundaki dizi öğesine bir başvuru alır.
 
@@ -100,14 +100,14 @@ T& get(unsigned int index)  const;
 
 #### <a name="parameters"></a>Parametreler
 
-*indeks*<br/>
-Dizide bir öğe tanımlayan sıfır tabanlı dizin. En düşük dizin 0 ' dır ve en yüksek dizin, [dizi oluşturucusunda](#ctor)`size` parametresi tarafından belirtilen değerdir.
+*Dizin*<br/>
+Dizideki bir öğeyi tanımlayan sıfır tabanlı dizin. En küçük dizin 0'dır ve en `size` büyük dizin [Dizi oluşturucudaki](#ctor)parametre tarafından belirtilen değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`index` parametresi tarafından belirtilen dizi öğesi.
+`index` Parametre tarafından belirtilen dizi öğesi.
 
-## <a name="value"></a>Array:: Value özelliği
+## <a name="arrayvalue-property"></a><a name="value"></a>Dizi::Değer Özelliği
 
 Geçerli diziye bir tanıtıcı alır.
 
@@ -119,7 +119,7 @@ property Array^ Value;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli diziye yönelik bir tanıtıcı.
+Geçerli diziiçin bir tutamaç.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

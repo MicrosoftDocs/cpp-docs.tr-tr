@@ -1,5 +1,5 @@
 ---
-title: CMFCDropDownToolBar sınıfı
+title: CMFCDropDownToolToolBar Sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CMFCDropDownToolBar
@@ -20,18 +20,19 @@ helpviewer_keywords:
 - CMFCDropDownToolBar [MFC], OnSendCommand
 - CMFCDropDownToolBar [MFC], OnUpdateCmdUI
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
-ms.openlocfilehash: f2c4135d2a27928dbde4299fa1f8eda42237d893
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 68dd976471b39d7f50c2f0378b2fce99ad3feeca
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238069"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367596"
 ---
-# <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
+# <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolToolBar Sınıfı
 
-Kullanıcı bir üst düzey araç çubuğu düğmesini basılı tuttuğunda görünen bir araç çubuğu.
+Kullanıcı üst düzey bir araç çubuğu düğmesine bastığında ve tuttuğunda görünen araç çubuğu.
 
-   Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```
@@ -42,68 +43,68 @@ class CMFCDropDownToolBar : public CMFCToolBar
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCDropDownToolBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|(Geçersiz kılmaları `CPane::AllowShowOnPaneMenu`.)|
-|[CMFCDropDownToolBar::LoadBitmap](#loadbitmap)|(Geçersiz kılmaları [CMFCToolBar::LoadBitmap](../../mfc/reference/cmfctoolbar-class.md#loadbitmap).)|
-|[CMFCDropDownToolBar::LoadToolBar](#loadtoolbar)|(Geçersiz kılmaları [CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#loadtoolbar).)|
-|[CMFCDropDownToolBar::OnLButtonUp](#onlbuttonup)||
-|[CMFCDropDownToolBar::OnMouseMove](#onmousemove)||
-|[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(Geçersiz kılmaları `CMFCToolBar::OnSendCommand`.)|
-|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md).|
+|[CMFCDropDownToolBar::İzinShowOnPaneMenu](#allowshowonpanemenu)|(Geçersiz `CPane::AllowShowOnPaneMenu`kılar .)|
+|[CMFCDropDownToolBar::LoadBitmap](#loadbitmap)|[(CMFCToolBar geçersiz kılar::LoadBitmap](../../mfc/reference/cmfctoolbar-class.md#loadbitmap).)|
+|[CMFCDropDownToolBar::loadtoolbar](#loadtoolbar)|[(Overrides CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#loadtoolbar).)|
+|[CMFCDropDownToolBar::OnlbuttonUp](#onlbuttonup)||
+|[CMFCDropDownToolBar::Fare Taşı](#onmousemove)||
+|[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(Geçersiz `CMFCToolBar::OnSendCommand`kılar .)|
+|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|[(Overrides CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md).|
 
 ### <a name="remarks"></a>Açıklamalar
 
-A `CMFCDropDownToolBar` nesne ile bir açılan menü davranışını bir araç çubuğu görsel görünümünü birleştirir. Ne zaman bir kullanıcının bastığında ve bir açılır araç çubuğu düğmesini (bkz [CMFCDropDownToolbarButton sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)), aşağı açılan araç çubuğu görünür ve kullanıcı bir düğme açılan araç çubuğundan için kaydırma ve fare düğmesini bırakmadan seçebilirsiniz düğmesi. Kullanıcının açılan araç çubuğunda bir düğmeyi seçtiğinde sonra bu düğme olarak geçerli bir üst düzey araç çubuğunda görüntülenir.
+Nesne, `CMFCDropDownToolBar` araç çubuğunun görsel görünümünü açılır menü davranışıyla birleştirir. Bir kullanıcı açılır araç çubuğuna basıp tuttuğunda [(cmfcDropDropToolbarButton Class'a](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)bakınız), açılır araç çubuğu belirir ve kullanıcı açılan araç çubuğundan bir düğmeyi kaydırarak ve fare düğmesini serbest bırakarak seçebilir. Kullanıcı açılır araç çubuğunda bir düğme seçtikten sonra, bu düğme üst düzey araç çubuğundaki geçerli düğme olarak görüntülenir.
 
-Bir açılır araç çubuğunu özelleştirilmiş veya yerleştirilmiş olamaz ve etkinleştiriliyorken durumu yok.
+Açılan araç çubuğu özelleştirilemez veya sabitlenemez ve yırtılma durumu yoktur.
 
-Aşağıdaki çizimde gösterildiği bir `CMFCDropDownToolBar` nesnesi:
+Aşağıdaki resimde bir `CMFCDropDownToolBar` nesne gösterilmektedir:
 
 ![CMFCDropDownToolbar örneği](../../mfc/reference/media/cmfcdropdown.png "CMFCDropDownToolbar örneği")
 
-Oluşturduğunuz bir `CMFCDropDownToolBar` sıradan bir araç çubuğu oluşturma aynı şekilde nesnesi (bkz [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)).
+Bir `CMFCDropDownToolBar` nesneyi, sıradan bir araç çubuğu oluşturduğunuz şekilde oluşturursunuz (bkz. [CMFCToolBar Class).](../../mfc/reference/cmfctoolbar-class.md)
 
-Üst araç çubuğuna açılan araç çubuğu eklemek için:
+Açılır araç çubuğunu üst araç çubuğuna eklemek için:
 
-1. Üst araç çubuğunda kaynağında düğme için bir işlevsiz kaynak kimliği saklı tutarız.
+1. Ana araç çubuğu kaynağındaki düğme için sahte bir kaynak kimliği ayırın.
 
-2. Oluşturma bir `CMFCDropDownToolBarButton` açılan araç çubuğu içeren nesne (daha fazla bilgi için [CMFCDropDownToolbarButton::CMFCDropDownToolbarButton](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md#cmfcdropdowntoolbarbutton)).
+2. Açılır `CMFCDropDownToolBarButton` araç çubuğunu içeren bir nesne oluşturun (daha fazla bilgi için bkz. [CMFCDropDropToolbarButton::CMFCDropDropToolbarButton).](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md#cmfcdropdowntoolbarbutton)
 
-3. İşlevsiz bir düğmeyle değiştirin `CMFCDropDownToolBarButton` kullanarak nesne [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).
+3. CMFCToolBar kullanarak `CMFCDropDownToolBarButton` kukla düğmesini nesne ile [değiştirin::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).
 
-Araç çubuğu düğmeleri hakkında daha fazla bilgi için bkz: [izlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md). Örnek Proje VisualStudioDemo bir açılır araç çubuğunu örneği için bkz.
+Araç çubuğu düğmeleri hakkında daha fazla bilgi için [Bkz. Walkthrough: Denetimleri Araç Çubuklarına Koyma](../../mfc/walkthrough-putting-controls-on-toolbars.md). Açılan araç çubuğu örneği için, örnek proje VisualStudioDemo bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yönteminde `CMFCDropDownToolBar` sınıfı. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, yöntemin sınıfta `Create` nasıl `CMFCDropDownToolBar` kullanılacağını göstermektedir. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#29](../../mfc/codesnippet/cpp/cmfcdropdowntoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#30](../../mfc/codesnippet/cpp/cmfcdropdowntoolbar-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[CPane](../../mfc/reference/cpane-class.md)
+[Cpane](../../mfc/reference/cpane-class.md)
 
 [CMFCBaseToolBar](../../mfc/reference/cmfcbasetoolbar-class.md)
 
-[CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)
+[Cmfctoolbar](../../mfc/reference/cmfctoolbar-class.md)
 
-[CMFCDropDownToolBar](../../mfc/reference/cmfcdropdowntoolbar-class.md)
+[Cmfcdropdowntoolbar](../../mfc/reference/cmfcdropdowntoolbar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdropdowntoolbar.h
+**Üstbilgi:** afxdropdowntoolbar.h
 
-##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
+## <a name="cmfcdropdowntoolbarallowshowonpanemenu"></a><a name="allowshowonpanemenu"></a>CMFCDropDownToolBar::İzinShowOnPaneMenu
 
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
@@ -113,7 +114,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap
+## <a name="cmfcdropdowntoolbarloadbitmap"></a><a name="loadbitmap"></a>CMFCDropDownToolBar::LoadBitmap
 
 Araç çubuğu görüntülerini uygulama kaynaklarından yükler.
 
@@ -130,34 +131,34 @@ virtual BOOL LoadBitmap(
 ### <a name="parameters"></a>Parametreler
 
 *uiResID*<br/>
-[in] Etkin araç çubuğu görüntülerini başvuran bir bit eşlem kaynak kimliği.
+[içinde] Sıcak araç çubuğu görüntülerine başvuran bit eşlemikaynak kimliği.
 
 *uiColdResID*<br/>
-[in] Soğuk araç görüntülere başvuruyor bit eşlemi kaynak kimliği.
+[içinde] Bit eşleminin uçuk araç çubuğu görüntülerine atıfta bulunan kaynak kimliği.
 
 *uiMenuResID*<br/>
-[in] Normal menü görüntülere başvuruyor bit eşlemi kaynak kimliği.
+[içinde] Normal menü görüntülerine başvuran bit eşlemikaynak kimliği.
 
-*Engellendi*<br/>
-[in] Araç kilitlemek için TRUE; Aksi durumda FALSE.
+*Engellenen*<br/>
+[içinde] ARAÇ ÇUBUĞUNU kilitlemek için DOĞRU; aksi takdirde YANLIŞ.
 
 *uiDisabledResID*<br/>
-[in] Devre dışı araç görüntülere başvuruyor bit eşlemi kaynak kimliği.
+[içinde] Devre dışı bırakılan araç çubuğu görüntülerine başvuran bit eşlemikaynak kimliği.
 
 *uiMenuDisabledResID*<br/>
-[in] Devre dışı bırakılmış menü görüntülere başvuruyor bit eşlemi kaynak kimliği.
+[içinde] Devre dışı bırakılmış menü görüntülerine başvuran bit eşlemikaynak kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.
+Yöntem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi araç ile ilişkili görüntü yüklemek için bu yöntemi çağırır. Özel resim kaynakları yüklemesini gerçekleştirmek için bu yöntemi yok sayın.
+[CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi, araç çubuğuyla ilişkili görüntüleri yüklemek için bu yöntemi çağırır. Görüntü kaynaklarının özel yüklemesini gerçekleştirmek için bu yöntemi geçersiz kılın.
 
-Çağrı `LoadBitmapEx` araç oluşturduktan sonra ek resimleri yüklemek için yöntemi.
+Araç `LoadBitmapEx` çubuğunu oluşturduktan sonra ek görüntüler yüklemek için yöntemi arayın.
 
-##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
+## <a name="cmfcdropdowntoolbarloadtoolbar"></a><a name="loadtoolbar"></a>CMFCDropDownToolBar::loadtoolbar
 
 ```
 virtual BOOL LoadToolBar(
@@ -172,25 +173,25 @@ virtual BOOL LoadToolBar(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *uiResID*<br/>
+[içinde] *uiResID*<br/>
 
-[in] *uiColdResID*<br/>
+[içinde] *uiColdResID*<br/>
 
-[in] *uiMenuResID*<br/>
+[içinde] *uiMenuResID*<br/>
 
-[in] *BOOL*<br/>
+[içinde] *BOOL*<br/>
 
-[in] *uiDisabledResID*<br/>
+[içinde] *uiDisabledResID*<br/>
 
-[in] *uiMenuDisabledResID*<br/>
+[içinde] *uiMenuDisabledResID*<br/>
 
-[in] *uiHotResID*<br/>
+[içinde] *uiHotResID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
+## <a name="cmfcdropdowntoolbaronlbuttonup"></a><a name="onlbuttonup"></a>CMFCDropDownToolBar::OnlbuttonUp
 
 ```
 afx_msg void OnLButtonUp(
@@ -200,13 +201,13 @@ afx_msg void OnLButtonUp(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nFlags*<br/>
+[içinde] *nBayraklar*<br/>
 
-[in] *noktası*<br/>
+[içinde] *nokta*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
+## <a name="cmfcdropdowntoolbaronmousemove"></a><a name="onmousemove"></a>CMFCDropDownToolBar::Fare Taşı
 
 ```
 afx_msg void OnMouseMove(
@@ -216,13 +217,13 @@ afx_msg void OnMouseMove(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nFlags*<br/>
+[içinde] *nBayraklar*<br/>
 
-[in] *noktası*<br/>
+[içinde] *nokta*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
+## <a name="cmfcdropdowntoolbaronsendcommand"></a><a name="onsendcommand"></a>CMFCDropDownToolBar::OnSendCommand
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -230,13 +231,13 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pButton*<br/>
+[içinde] *pDüğme*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
+## <a name="cmfcdropdowntoolbaronupdatecmdui"></a><a name="onupdatecmdui"></a>CMFCDropDownToolBar::OnUpdateCmdUI
 
 ```
 virtual void OnUpdateCmdUI(
@@ -246,9 +247,9 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pTarget*<br/>
+[içinde] *pTarget*<br/>
 
-[in] *bDisableIfNoHndler*<br/>
+[içinde] *bDisableIfNoHndler*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -257,7 +258,7 @@ virtual void OnUpdateCmdUI(
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCToolBar::Create](../../mfc/reference/cmfctoolbar-class.md#create)<br/>
+[CMFCToolBar::Oluştur](../../mfc/reference/cmfctoolbar-class.md#create)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [CMFCDropDownToolbarButton Sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
-[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

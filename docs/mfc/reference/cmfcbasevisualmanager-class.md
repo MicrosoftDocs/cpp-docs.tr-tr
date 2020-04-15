@@ -1,5 +1,5 @@
 ---
-title: CMFCBaseVisualManager sınıfı
+title: CMFCBaseVisualManager Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCBaseVisualManager
@@ -28,20 +28,20 @@ helpviewer_keywords:
 - CMFCBaseVisualManager [MFC], CleanUpThemes
 - CMFCBaseVisualManager [MFC], UpdateSystemColors
 ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
-ms.openlocfilehash: 0c26c0c9c9026f8312218b2ac15f83a50a67be79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a3288949bd4867115c32d2cbffd09cf4f7c6b40b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403860"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367805"
 ---
-# <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager sınıfı
+# <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager Sınıfı
 
-Türetilmiş görsel yöneticiler Windows teması API'si arasında bir katmanı.
+Türetilen görsel yöneticiler ve Windows Tema API arasında bir katman.
 
-`CMFCBaseVisualManager` varsa UxTheme.dll, yükler ve Windows teması API yöntemleri erişimini yönetir.
+`CMFCBaseVisualManager`varsa UxTheme.dll yükler ve Windows Tema API yöntemlerine erişimi yönetir.
 
-Bu sınıf, yalnızca dahili kullanım içindir.
+Bu sınıf yalnızca dahili kullanım içindir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,51 +55,51 @@ class CMFCBaseVisualManager: public CObject
 
 |||
 |-|-|
-|Ad|Açıklama|
-|[CMFCBaseVisualManager::CMFCBaseVisualManager](#cmfcbasevisualmanager)|Oluşturur ve başlatır bir `CMFCBaseVisualManager` nesne.|
+|Adı|Açıklama|
+|[CMFCBaseVisualManager::CMFCBaseVisualManager](#cmfcbasevisualmanager)|Bir `CMFCBaseVisualManager` nesne yi inşa eder ve başharfe ait hale raz.|
 |`CMFCBaseVisualManager::~CMFCBaseVisualManager`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Ad|Açıklama|
-|[CMFCBaseVisualManager::DrawCheckBox](#drawcheckbox)|Onay kutusu denetimi, geçerli Windows teması kullanarak çizer.|
-|[CMFCBaseVisualManager::DrawComboBorder](#drawcomboborder)|Geçerli Windows teması kullanarak bir birleşik giriş kutusu kenarlığı çizer.|
-|[CMFCBaseVisualManager::DrawComboDropButton](#drawcombodropbutton)|Birleşik giriş kutusu açılan düğmesi geçerli Windows teması kullanarak çizer.|
-|[CMFCBaseVisualManager::DrawPushButton](#drawpushbutton)|Bir itme düğmesi geçerli Windows teması kullanarak çizer.|
-|[CMFCBaseVisualManager::DrawRadioButton](#drawradiobutton)|Bir radyo düğmesi denetimini geçerli Windows teması kullanarak çizer.|
-|[CMFCBaseVisualManager::DrawStatusBarProgress](#drawstatusbarprogress)|Bir ilerleme çubuğu bir durum çubuğu denetimi çizen ( [CMFCStatusBar sınıfı](../../mfc/reference/cmfcstatusbar-class.md)) kullanarak geçerli Windows teması.|
-|[CMFCBaseVisualManager::FillReBarPane](#fillrebarpane)|Çubuk barınağı denetiminin arka plan, geçerli Windows teması kullanarak doldurur.|
-|[CMFCBaseVisualManager::GetStandardWindowsTheme](#getstandardwindowstheme)|Geçerli Windows temayı alır.|
+|Adı|Açıklama|
+|[CMFCBaseVisualManager::DrawCheckBox](#drawcheckbox)|Geçerli Windows tesini kullanarak bir onay kutusu denetimi çizer.|
+|[CMFCBaseVisualManager::DrawComboBorder](#drawcomboborder)|Geçerli Windows tesini kullanarak açılan kutu kenarlığı çizer.|
+|[CMFCBaseVisualManager::DrawComboDropButton](#drawcombodropbutton)|Geçerli Windows tesini kullanarak açılan kutu açılır düğmesini çizer.|
+|[CMFCBaseVisualManager::DrawPushButton](#drawpushbutton)|Geçerli Windows tesini kullanarak bir basma düğmesi çizer.|
+|[CMFCBaseVisualManager::DrawRadioButton](#drawradiobutton)|Geçerli Windows tesini kullanarak bir radyo düğmesi denetimi çizer.|
+|[CMFCBaseVisualManager::DrawStatusBarProgress](#drawstatusbarprogress)|Geçerli Windows tesini kullanarak durum çubuğu denetiminde [(CMFCStatusBar Class)](../../mfc/reference/cmfcstatusbar-class.md)bir ilerleme çubuğu çizer.|
+|[CMFCBaseVisualManager::FillReBarPane](#fillrebarpane)|Geçerli Windows tesini kullanarak demir çubuğu denetiminin arka planını doldurur.|
+|[CMFCBaseVisualManager::GetStandardWindowsTheme](#getstandardwindowstheme)|Geçerli Windows tesini alır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |||
 |-|-|
-|Ad|Açıklama|
-|[CMFCBaseVisualManager::CleanUpThemes](#cleanupthemes)|Çağrıları `CloseThemeData` için tüm işleyicileri elde `UpdateSystemColors`.|
-|[CMFCBaseVisualManager::UpdateSystemColors](#updatesystemcolors)|Çağrıları `OpenThemeData` çeşitli denetimleri çizmek için tutamaçları almak için: windows, araç çubukları, düğmeler ve benzeri.|
+|Adı|Açıklama|
+|[CMFCBaseVisualManager::Temizleme Temaları](#cleanupthemes)|'de `CloseThemeData` `UpdateSystemColors`elde edilen tüm tutamaçları n için çağrılar.|
+|[CMFCBaseVisualManager::UpdateSystemColors](#updatesystemcolors)|Pencereler, araç çubukları, düğmeler ve benzeri gibi çeşitli denetimler çizmek için tutamaçları elde etmek için çağrılar. `OpenThemeData`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıfın nesneleri doğrudan örneği gerekmez.
+Bu sınıfın nesnelerini doğrudan anlık olarak annızı sağlamak zorunda değildir.
 
-Tüm görsel Yöneticiler için temel sınıf olduğundan, yalnızca çağırabilirsiniz [CMFCVisualManager::GetInstance](../../mfc/reference/cmfcvisualmanager-class.md#getinstance)için geçerli Visual Yöneticisi bir işaretçi alma ve yöntemleri için erişim `CMFCBaseVisualManager` bu işaretçiyi kullanarak. Geçerli Windows teması kullanarak bir denetimi görüntülenecek varsa, ancak bunu kullanmak en iyisidir `CMFCVisualManagerWindows` arabirimi.
+Tüm görsel yöneticiler için bir taban sınıf olduğundan, [cmfcvisualmanager'ı arayabilirsiniz::GetInstance,](../../mfc/reference/cmfcvisualmanager-class.md#getinstance)geçerli Visual Manager'a bir işaretçi edinin ve bu işaretçiyi kullanma yöntemlerine erişebilirsiniz. `CMFCBaseVisualManager` Ancak, geçerli Windows temasını kullanarak bir denetim görüntülemeniz gerekiyorsa, `CMFCVisualManagerWindows` arabirimi kullanmak daha iyidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCBaseVisualManager](../../mfc/reference/cmfcbasevisualmanager-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxvisualmanager.h
+**Üstbilgi:** afxvisualmanager.h
 
-##  <a name="cleanupthemes"></a>  CMFCBaseVisualManager::CleanUpThemes
+## <a name="cmfcbasevisualmanagercleanupthemes"></a><a name="cleanupthemes"></a>CMFCBaseVisualManager::Temizleme Temaları
 
-Çağrıları `CloseThemeData` için tüm işleyicileri elde `UpdateSystemColors`.
+'de `CloseThemeData` `UpdateSystemColors`elde edilen tüm tutamaçları n için çağrılar.
 
 ```
 void CleanUpThemes();
@@ -107,19 +107,19 @@ void CleanUpThemes();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca iç kullanım içindir.
+Yalnızca dahili kullanım içindir.
 
-##  <a name="cmfcbasevisualmanager"></a>  CMFCBaseVisualManager::CMFCBaseVisualManager
+## <a name="cmfcbasevisualmanagercmfcbasevisualmanager"></a><a name="cmfcbasevisualmanager"></a>CMFCBaseVisualManager::CMFCBaseVisualManager
 
-Oluşturur ve başlatır bir `CMFCBaseVisualManager` nesne.
+Bir `CMFCBaseVisualManager` nesne yi inşa eder ve başharfe ait hale raz.
 
 ```
 CMFCBaseVisualManager();
 ```
 
-##  <a name="drawcheckbox"></a>  CMFCBaseVisualManager::DrawCheckBox
+## <a name="cmfcbasevisualmanagerdrawcheckbox"></a><a name="drawcheckbox"></a>CMFCBaseVisualManager::DrawCheckBox
 
-Onay kutusu denetimi, geçerli Windows teması kullanarak çizer.
+Geçerli Windows tesini kullanarak bir onay kutusu denetimi çizer.
 
 ```
 virtual BOOL DrawCheckBox(
@@ -135,43 +135,43 @@ virtual BOOL DrawCheckBox(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi
 
 *Rect*<br/>
-[in] Onay kutusu sınırlayıcı dikdörtgenini.
+[içinde] Onay kutusunun sınırlayıcı dikdörtgeni.
 
-*bHighlighted*<br/>
-[in] Onay kutusunu vurgulanır olup olmadığını belirtir.
+*bVurgulu*<br/>
+[içinde] Onay kutusunun vurgulanıp vurgulanmayacağını belirtir.
 
-*nDurum*<br/>
-[in] 0 işaretli normal işaretli 1
+*Nstate*<br/>
+[in] 0 işaretsiz için, 1 normal kontrol için,
 
-karma normal için 2.
+Karışık normal için 2.
 
 *bEtkin*<br/>
-[in] Onay kutusunu etkin olup olmadığını belirtir.
+[içinde] Onay kutusunun etkin olup olmadığını belirtir.
 
 *bPressed*<br/>
-[in] Onay kutusunu basılı olup olmadığını belirtir.
+[içinde] Onay kutusuna basılıp basılmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değerlerini *nDurum* için aşağıdaki onay kutusu stilleri karşılık gelir.
+*nState* değerleri aşağıdaki onay kutusu stillerine karşılık gelir.
 
-|nDurum|Onay kutusu stili|
+|Nstate|Kutu stilini işaretle|
 |------------|---------------------|
 |0|CBS_UNCHECKEDNORMAL|
-|1.|CBS_CHECKEDNORMAL|
+|1|CBS_CHECKEDNORMAL|
 |2|CBS_MIXEDNORMAL|
 
-##  <a name="drawcomboborder"></a>  CMFCBaseVisualManager::DrawComboBorder
+## <a name="cmfcbasevisualmanagerdrawcomboborder"></a><a name="drawcomboborder"></a>CMFCBaseVisualManager::DrawComboBorder
 
-Birleşik giriş kutusu kenarlığı geçerli Windows teması kullanarak çizer.
+Geçerli Windows tesini kullanarak açılan kutu kenarlığı çizer.
 
 ```
 virtual BOOL DrawComboBorder(
@@ -184,28 +184,28 @@ virtual BOOL DrawComboBorder(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-[in] Sınırlayıcı dikdörtgeni birleşik giriş kutusu kenarlığın kalınlığı.
+[içinde] Açılan kutu kenarlığı sınırlayıcı dikdörtgen.
 
-*bDevre Dışı*<br/>
-[in] Birleşik giriş kutusu kenarlığı devre dışı bırakılıp bırakılmadığını belirtir.
+*bDevre dışı*<br/>
+[içinde] Açılan kutu kenarlığı devre dışı kalıp olmadığını belirtir.
 
 *bIsDropped*<br/>
-[in] Birleşik giriş kutusu kenarlığı açılmış olup olmadığını belirtir.
+[içinde] Açılan kutu kenarlığı bırakılıp bırakılmadığını belirtir.
 
-*bIsHighlighted*<br/>
-[in] Birleşik giriş kutusu kenarlığı vurgulanır olup olmadığını belirtir.
+*bIsVurgulu*<br/>
+[içinde] Açılan kutu kenarlığı vurgulanıp vurgulanmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="drawcombodropbutton"></a>  CMFCBaseVisualManager::DrawComboDropButton
+## <a name="cmfcbasevisualmanagerdrawcombodropbutton"></a><a name="drawcombodropbutton"></a>CMFCBaseVisualManager::DrawComboDropButton
 
-Birleşik giriş kutusu açılan düğmesi geçerli Windows teması kullanarak çizer.
+Geçerli Windows tesini kullanarak açılan kutu açılır düğmesini çizer.
 
 ```
 virtual BOOL DrawComboDropButton(
@@ -220,19 +220,19 @@ virtual BOOL DrawComboDropButton(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pDC*|[in] Bir cihaz bağlamı için bir işaretçi.|
-|*Rect*|[in] Birleşik giriş kutusu açılan düğmeyi sınırlayıcı dikdörtgenini.|
-|*bDevre Dışı*|[in] Birleşik giriş kutusu açılan düğmeyi devre dışı bırakılıp bırakılmadığını belirtir.|
-|*bIsDropped*|[in] Birleşik giriş kutusu açılan düğmeyi açılmış olup olmadığını belirtir.|
-|*bIsHighlighted*|[in] Birleşik giriş kutusu açılan düğmesi vurgulanmış olup olmadığını belirtir.|
+|*Pdc*|[içinde] Aygıt bağlamına işaretçi.|
+|*Rect*|[içinde] Açılan kutu açılır düğmesinin sınırlayıcı dikdörtgeni.|
+|*bDevre dışı*|[içinde] Açılan kutu açılır düğmesinin devre dışı bırakılıp devre dışı bırakılmadığını belirtir.|
+|*bIsDropped*|[içinde] Açılan kutu açılır düğmesinin aşağı düşüp düşmediğini belirtir.|
+|*bIsVurgulu*|[içinde] Açılan kutu açılır düğmesinin vurgulanıp vurgulanmayacağını belirtir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="drawpushbutton"></a>  CMFCBaseVisualManager::DrawPushButton
+## <a name="cmfcbasevisualmanagerdrawpushbutton"></a><a name="drawpushbutton"></a>CMFCBaseVisualManager::DrawPushButton
 
-Bir itme düğmesi geçerli Windows teması kullanarak çizer.
+Geçerli Windows tesini kullanarak bir basma düğmesi çizer.
 
 ```
 virtual BOOL DrawPushButton(
@@ -244,25 +244,25 @@ virtual BOOL DrawPushButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-[in] Düğme sınırlayıcı dikdörtgenini.
+[içinde] Basma düğmesinin sınırlayıcı dikdörtgeni.
 
-*pButton*<br/>
-[in] Bir işaretçi [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md) çizmek için kullanılan nesne.
+*pDüğme*<br/>
+[içinde] CMFCButton [Sınıf](../../mfc/reference/cmfcbutton-class.md) nesnesine çizilen bir işaretçi.
 
 *uiState*<br/>
-[in] Yoksayıldı. Durumu alınır *pButton*.
+[içinde] Göz ardı. Durum *pButton*alınır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="drawradiobutton"></a>  CMFCBaseVisualManager::DrawRadioButton
+## <a name="cmfcbasevisualmanagerdrawradiobutton"></a><a name="drawradiobutton"></a>CMFCBaseVisualManager::DrawRadioButton
 
-Bir radyo düğmesi denetimini geçerli Windows teması kullanarak çizer.
+Geçerli Windows tesini kullanarak bir radyo düğmesi denetimi çizer.
 
 ```
 virtual BOOL DrawRadioButton(
@@ -276,31 +276,31 @@ virtual BOOL DrawRadioButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-[in] Dikdörtgen radyo düğmesinin.
+[içinde] Radyo düğmesinin sınırlayıcı dikdörtgeni.
 
-*bHighlighted*<br/>
-[in] Radyo düğmesi vurgulanmış olup olmadığını belirtir.
+*bVurgulu*<br/>
+[içinde] Radyo düğmesinin vurgulanıp vurgulanmayacağını belirtir.
 
-*bChecked*<br/>
-[in] Radyo düğmesinin işaretli olup olmadığını belirtir.
+*bKontrol edildi*<br/>
+[içinde] Radyo düğmesinin kontrol edilip edilemeyeceğini belirtir.
 
 *bEtkin*<br/>
-[in] Radyo düğmesi etkin olup olmadığını belirtir.
+[içinde] Radyo düğmesinin etkin olup olmadığını belirtir.
 
 *bPressed*<br/>
-[in] Radyo düğmesini basılı olup olmadığını belirtir.
+[içinde] Radyo düğmesine basılıp basılmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="drawstatusbarprogress"></a>  CMFCBaseVisualManager::DrawStatusBarProgress
+## <a name="cmfcbasevisualmanagerdrawstatusbarprogress"></a><a name="drawstatusbarprogress"></a>CMFCBaseVisualManager::DrawStatusBarProgress
 
-İlerleme çubuğu üzerinde durum çubuğu denetimi çizen ( [CMFCStatusBar sınıfı](../../mfc/reference/cmfcstatusbar-class.md)) kullanarak geçerli Windows teması.
+Geçerli Windows tesini kullanarak durum çubuğu denetiminde [(CMFCStatusBar Class)](../../mfc/reference/cmfcstatusbar-class.md)ilerleme çubuğu çizer.
 
 ```
 virtual BOOL DrawStatusBarProgress(
@@ -317,40 +317,40 @@ virtual BOOL DrawStatusBarProgress(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *pStatusBar*<br/>
-[in] Durum çubuğu için bir işaretçi. Bu değer yoksayılır.
+[içinde] Durum çubuğuna işaretçi. Bu değer yoksayılır.
 
-*rectProgress*<br/>
-[in] İlerleme çubuğunda sınırlayıcı dikdörtgenini *pDC* koordinatları.
+*rektİlerleme*<br/>
+[içinde] *PDC* koordinatlarında ilerleme çubuğunun sınırlayıcı dikdörtgeni.
 
 *nProgressTotal*<br/>
-[in] Toplam devam eden değer.
+[içinde] Toplam ilerleme değeri.
 
 *nProgressCurr*<br/>
-[in] Geçerli ilerleme değeri.
+[içinde] Geçerli ilerleme değeri.
 
 *clrBar*<br/>
-[in] Başlangıç rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar, renk gradyanlar için kullanabilirsiniz.
+[içinde] Başlangıç rengi. `CMFCBaseVisualManager`bunu göz ardı eder. Türemiş sınıflar renk degradeleri için kullanabilirsiniz.
 
 *clrProgressBarDest*<br/>
-[in] Bitiş rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar, renk gradyanlar için kullanabilirsiniz.
+[içinde] Son renk. `CMFCBaseVisualManager`bunu göz ardı eder. Türemiş sınıflar renk degradeleri için kullanabilirsiniz.
 
 *clrProgressText*<br/>
-[in] İlerleme metin rengi. `CMFCBaseVisualManager` Bu yok sayar. Metin rengi tarafından tanımlanan `afxGlobalData.clrBtnText`.
+[içinde] İlerleme metin rengi. `CMFCBaseVisualManager`bunu göz ardı eder. Metin rengi ile `afxGlobalData.clrBtnText`tanımlanır.
 
 *bProgressText*<br/>
-[in] İlerleme metni görüntülenip görüntülenmeyeceğini belirtir.
+[içinde] İlerleme metninin görüntülenip görüntülenip görüntülenmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="fillrebarpane"></a>  CMFCBaseVisualManager::FillReBarPane
+## <a name="cmfcbasevisualmanagerfillrebarpane"></a><a name="fillrebarpane"></a>CMFCBaseVisualManager::FillReBarPane
 
-Çubuk barınağı denetiminin arka plan, geçerli Windows teması kullanarak doldurur.
+Geçerli Windows tesini kullanarak demir çubuğu denetiminin arka planını doldurur.
 
 ```
 virtual void FillReBarPane(
@@ -361,22 +361,22 @@ virtual void FillReBarPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *pBar*<br/>
-[in] Arka planının çizilmesi gerektiğini bölme için bir işaretçi.
+[içinde] Arka planı çizilmesi gereken bir bölmeiçin işaretçi.
 
 *rectClient*<br/>
-[in] Doldurulması için alan sınırlayıcı dikdörtgenini.
+[içinde] Doldurulacak alanın sınırlayıcı dikdörtgeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tema API etkinse TRUE; Aksi durumda FALSE.
+Tema API'sı etkinse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="getstandardwindowstheme"></a>  CMFCBaseVisualManager::GetStandardWindowsTheme
+## <a name="cmfcbasevisualmanagergetstandardwindowstheme"></a><a name="getstandardwindowstheme"></a>CMFCBaseVisualManager::GetStandardWindowsTheme
 
-Geçerli Windows temayı alır.
+Geçerli Windows tesini alır.
 
 ```
 virtual WinXpTheme GetStandardWindowsTheme();
@@ -384,21 +384,21 @@ virtual WinXpTheme GetStandardWindowsTheme();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili Windows Tema rengi. Aşağıdaki numaralandırılmış değerlerden biri olabilir:
+Şu anda seçili Windows Tema rengi. Aşağıdaki numaralandırılmış değerlerden biri olabilir:
 
-- `WinXpTheme_None` -etkin bir teması yok yoktur.
+- `WinXpTheme_None`- etkin bir tema yok.
 
-- `WinXpTheme_NonStandard` -Standart olmayan bir tema seçili (Tema işaretli, ancak hiçbiri aşağıdaki listeden anlamına gelir).
+- `WinXpTheme_NonStandard`- standart olmayan tema seçilir (bir tema seçilir, ancak aşağıdaki listeden hiçbiri seçilir).
 
-- `WinXpTheme_Blue` -mavi tema (Luna).
+- `WinXpTheme_Blue`- mavi tema (Luna).
 
-- `WinXpTheme_Olive` -Zeytin tema.
+- `WinXpTheme_Olive`- zeytin teması.
 
-- `WinXpTheme_Silver` -Gümüş tema.
+- `WinXpTheme_Silver`- gümüş tema.
 
-##  <a name="updatesystemcolors"></a>  CMFCBaseVisualManager::UpdateSystemColors
+## <a name="cmfcbasevisualmanagerupdatesystemcolors"></a><a name="updatesystemcolors"></a>CMFCBaseVisualManager::UpdateSystemColors
 
-Çağrıları `OpenThemeData` çeşitli denetimleri çizmek için tutamaçları almak için: windows, araç çubukları, düğmeler ve benzeri.
+Pencereler, araç çubukları, düğmeler ve benzeri gibi çeşitli denetimler çizmek için tutamaçları elde etmek için çağrılar. `OpenThemeData`
 
 ```
 void UpdateSystemColors();
@@ -406,7 +406,7 @@ void UpdateSystemColors();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca iç kullanım içindir.
+Yalnızca dahili kullanım içindir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

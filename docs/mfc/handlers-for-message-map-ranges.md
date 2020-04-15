@@ -22,46 +22,46 @@ helpviewer_keywords:
 - handler functions [MFC], declaring
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-ms.openlocfilehash: d2bc961486d9bc686e1ca0d5feb0fe01d65f9512
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc33df6957beab6e4e8de3093dfc00cf2651780e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358649"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370517"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 
-Bu makalede, bir dizi ileti (bir ileti için yalnızca bir işlev eşlemesi) yerine bir tek ileti işleyici işlevi eşleştirmek açıklanmaktadır.
+Bu makalede, ileti aralığının tek bir ileti işleyicisi işleviyle nasıl eşleneniz açıklanmaktadır (bir iletiyi yalnızca bir işleve eşlemek yerine).
 
-Birden fazla ileti veya denetim bildirimi tam olarak aynı şekilde işlem gerektiğinde zamanlar vardır. Böyle zamanlarda, tüm iletiler için bir tek işleyici işlevi eşleştirmek isteyebilir. İleti eşleme aralıkları iletileri bitişik bir dizi için bunu izin ver:
+Birden fazla iletiyi işlemeniz veya bildirimi tam olarak aynı şekilde denetlemeniz gereken zamanlar vardır. Bu gibi zamanlarda, tüm iletileri tek bir işleyici işleviyle eşlemek isteyebilirsiniz. İleti eşlemi aralıkları, bitişik bir ileti aralığı için bunu yapmanıza olanak sağlar:
 
-- Komut kimlikleri aralıklarını eşleyebilirsiniz:
+- Komut işleri aralarını şeşeşe şeyilerle haritalayabilirsiniz:
 
-  - Bir komut işleyici işlevi.
+  - Komut işleyici işlevi.
 
   - Komut güncelleştirme işleyicisi işlevi.
 
-- Denetim bildirimi iletileri Denetim kimliklerinin bir dizi için bir ileti işleyici işlevine eşleyebilirsiniz.
+- Denetim bildirimleri iletilerini bir ileti işleyicisi işleviyle eşleyebilirsiniz.
 
-Bu makalede ele alınan konular:
+Bu makalede ele alınan konular şunlardır:
 
-- [İleti eşleme girişi yazma](#_core_writing_the_message.2d.map_entry)
+- [İleti-eş-giriş yazma](#_core_writing_the_message.2d.map_entry)
 
-- [İşleyici işlevi bildirme](#_core_declaring_the_handler_function)
+- [İşleyici işlevini bildirme](#_core_declaring_the_handler_function)
 
-- [Örnek aralığı için komut kimlikleri](#_core_example_for_a_range_of_command_ids)
+- [Bir dizi komut işlisi için çatış](#_core_example_for_a_range_of_command_ids)
 
-- [Denetim kimliklerinin bir aralık için örneği](#_core_example_for_a_range_of_control_ids)
+- [Bir dizi denetim işletmek için çatış](#_core_example_for_a_range_of_control_ids)
 
-##  <a name="_core_writing_the_message.2d.map_entry"></a> İleti eşleme girişi yazma
+## <a name="writing-the-message-map-entry"></a><a name="_core_writing_the_message.2d.map_entry"></a>İleti-Harita Girişi yazma
 
-İçinde. CPP dosyasında, aşağıdaki örnekte gösterildiği gibi ileti eşleme girişi ekleyin:
+İçinde. CPP dosyası, aşağıdaki örnekte gösterildiği gibi, ileti-harita girişi ekleyin:
 
 [!code-cpp[NVC_MFCMessageHandling#6](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_1.cpp)]
 
-İleti eşleme girişi şu öğelerden oluşur:
+İleti-eşlemi girişi aşağıdaki öğelerden oluşur:
 
-- İleti eşleme aralığı makrosu:
+- İleti-eşlemi aralığı makrosu:
 
   - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
 
@@ -69,81 +69,81 @@ Bu makalede ele alınan konular:
 
   - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
 
-- Makro parametrelerini:
+- Makroparametreleri:
 
-  İlk iki makroları, üç parametre alır:
+  İlk iki makro üç parametre alır:
 
-  - Aralığın başladığı komut kimliği
+  - Aralığı başlatan komut kimliği
 
-  - Aralığı bitiren komut kimliği
+  - Aralığı sona erdirebilen komut kimliği
 
-  - İleti işleyici işlevinin adı
+  - İleti işleyicisi işlevinin adı
 
-  Komut kimlikleri dizi bitişik olması gerekir.
+  Komut işleri diziliMi bitişik olmalıdır.
 
-  Üçüncü makrosu `ON_CONTROL_RANGE`, ek bir ilk parametre alır: gibi bir denetim bildirimi iletisi **EN_CHANGE**.
+  Üçüncü makro, `ON_CONTROL_RANGE`ek bir ilk parametre alır: **EN_CHANGE**gibi bir denetim bildirim iletisi.
 
-##  <a name="_core_declaring_the_handler_function"></a> İşleyici işlevi bildirme
+## <a name="declaring-the-handler-function"></a><a name="_core_declaring_the_handler_function"></a>İşleyici Işlevini Bildirme
 
-İşleyici işlev bildirimi ekleyin. H dosyası. Aşağıdaki kod nasıl bu görünebileceği, aşağıda gösterildiği gibi gösterir:
+İşleyici işlev bildirgenizi . H dosyası. Aşağıdaki kod, aşağıda gösterildiği gibi, bunun nasıl görünebileceğini gösterir:
 
 [!code-cpp[NVC_MFCMessageHandling#7](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_2.h)]
 
-Tek bir komut işleyici işlevlerini normalde hiç parametre almamalıdır. Güncelleştirme işleyici işlevleri hariç olmak üzere ek bir parametre işleyici işlevleri ileti eşleme aralıkları için gerektiren *nID*, türü **UINT**. Bu parametre ilk parametre içindir. Aslında kullanıcının seçtiği hangi komutu belirtmek için gereken ek komut kimliği ekstra parametresiyle kapsar.
+Tek komutlar için işleyici işlevleri normalde hiçbir parametre alır. Güncelleştirme işleyicisi işlevleri dışında, ileti eşleme aralıkları için işleyici işlevleri ekstra bir parametre, *nID*, tip **UINT**gerektirir. Bu parametre ilk parametredir. Ek parametre, kullanıcının gerçekte hangi komutu seçtiğini belirtmek için gereken ek komut kimliğini barındırır.
 
-Güncelleştirme işleyici işlevleri için parametre gereksinimleri hakkında daha fazla bilgi için bkz. [örneği için bir aralık, komut kimlikleri](#_core_example_for_a_range_of_command_ids).
+İşleyici işlevlerini güncelleştirmek [için](#_core_example_for_a_range_of_command_ids)parametre gereksinimleri hakkında daha fazla bilgi için bkz.
 
-##  <a name="_core_example_for_a_range_of_command_ids"></a> Örneğin, bir aralık komut kimlikleri
+## <a name="example-for-a-range-of-command-ids"></a><a name="_core_example_for_a_range_of_command_ids"></a>Komut Dizileri için örnek
 
-Kullandığınızda bir örnektir komutları gibi MFC örnek yakınlaştırma komutu işlenirken aralıkları [HIERSVR](../overview/visual-cpp-samples.md). Bu komutu normal boyutunun %300 ve % 25 arasında ölçeklendirme görünümü yakınlaştırır. HIERSVR'ın görünüm sınıfı bu benzeyen bir ileti eşleme girişi ile yakınlaştırma komutları işlemek için bir aralık kullanır:
+Aralıkları ne zaman kullanabilirsiniz Bir örnek MFC örnek [HIERSVR](../overview/visual-cpp-samples.md)Zoom komutu gibi komutları işleme olduğunu. Bu komut görünümü yakınlaştırır ve normal boyutunun %25 ila %300'ü arasında ölçekler. HIERSVR'ın görünüm sınıfı, Yakınlaştırma komutlarını buna benzeyen bir ileti eşlemi girişiyle işlemek için bir aralık kullanır:
 
 [!code-cpp[NVC_MFCMessageHandling#8](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_3.cpp)]
 
-İleti eşleme girişi yazdığınızda, aşağıdakileri belirtmeniz gerekir:
+İleti-eş-eş girişi yazarken şunları belirtirsiniz:
 
-- İki bitişik aralık tarihleri arasında kimlikleri komutu.
+- İki komut işlisi, bitişik bir dizinin başlatılıp sona ermesi.
 
-   Bunlar şunlardır **ID_VIEW_ZOOM25** ve **ID_VIEW_ZOOM300**.
+   Burada **ID_VIEW_ZOOM25** ve **ID_VIEW_ZOOM300.**
 
 - Komutlar için işleyici işlevinin adı.
 
-   Burada sahip `OnZoom`.
+   İşte `OnZoom`burada.
 
-İşlev bildirimi bu benzeyecektir:
+İşlev bildirimi buna benzer:
 
 [!code-cpp[NVC_MFCMessageHandling#9](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_4.h)]
 
-Güncelleştirme işleyici işlevlerine benzer ve daha geniş bir kullanışlı olması büyük olasılıkla durumudur. Yazma oldukça yaygındır `ON_UPDATE_COMMAND_UI` komutlarının sayısı için işleyiciler ve kendiniz yazmak veya kopyalama, aynı kodu tekrar tekrar bulun. Çözüm, bir dizi komut kimlikleri bir güncelleştirme işleyici işlevi kullanarak eşlemektir `ON_UPDATE_COMMAND_UI_RANGE` makrosu. Komut kimlikleri, bir aralıktaki oluşturması gerekir. Bir örnek için bkz. `OnUpdateZoom` işleyicisi ve kendi `ON_UPDATE_COMMAND_UI_RANGE` ileti eşleme girişi HIERSVR örneğe ait görünüm sınıfı.
+Güncelleştirme işleyiciişlevleri nin durumu benzerdir ve daha yaygın olarak yararlı olma olasılığı yüksektir. Bir dizi komut için `ON_UPDATE_COMMAND_UI` işleyiciler yazmak ve kendinizi aynı kodu tekrar tekrar yazarken veya kopyalamak oldukça yaygındır. Çözüm, makroyu kullanarak bir güncelleştirme işleyicisi işleviyle `ON_UPDATE_COMMAND_UI_RANGE` bir dizi komut iD eşlenebilmektir. Komut işleri bitişik bir araç oluşturması gerekir. Örneğin, HIERSVR `OnUpdateZoom` örneğinin `ON_UPDATE_COMMAND_UI_RANGE` görünüm sınıfında işleyicive ileti eşlem girişine bakın.
 
-İşleyici işlevleri tek komutları genellikle tek bir parametre almak için güncelleştirme *pCmdUI*, türü `CCmdUI*`. İşleyici işlevleri güncelleştirme işleyici işlevleri ileti eşleme aralıkları için ek bir parametre gerektirmeyen *nID*, türü **UINT**. Aslında kullanıcının seçtiği hangi komutu belirtmek için gereken komut kimliği bulunur `CCmdUI` nesne.
+Tek komutlar için güncelleştirme işleyicisi işlevleri normalde tek bir parametre, *pCmdUI*, türü `CCmdUI*`. İşleyici işlevlerinin aksine, ileti eşleme aralıkları için güncelleştirme işleyicisi işlevleri ekstra bir parametre, *nID*, **uint**türü gerektirmez. Kullanıcının gerçekte hangi komutu seçtiğini belirtmek için gereken komut `CCmdUI` kimliği nesnede bulunur.
 
-##  <a name="_core_example_for_a_range_of_control_ids"></a> Örneğin, aralığı denetim kimlikleri
+## <a name="example-for-a-range-of-control-ids"></a><a name="_core_example_for_a_range_of_control_ids"></a>Denetim II Aralığı örneği
 
-Başka bir ilgi çekici çalışması Denetim kimliklerinin bir dizi denetimi bildirim iletileri için tek bir işleyici eşliyor. Kullanıcının herhangi bir 10 düğmeleri tıklayabileceği varsayalım. İleti eşleme giriş için bir işleyici tüm 10 düğmeleri eşlemek için şöyle görünebilir:
+Başka bir ilginç durum, denetim işlemi diziliMi için denetim bildirim iletilerini tek bir işleyiciye günüyorum. Kullanıcının 10 düğmeden herhangi birini tıklatabileceğini varsayalım. 10 düğmenin tümini tek bir işleyiciyle eşlemek için, ileti-harita girişiniz şu şekilde görünür:
 
 [!code-cpp[NVC_MFCMessageHandling#10](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_5.cpp)]
 
-Yazdığınızda `ON_CONTROL_RANGE` makro, ileti eşlemesi içinde belirttiğiniz:
+İleti haritanıza `ON_CONTROL_RANGE` makroyu yazarken şunları belirtirsiniz:
 
-- Bir özel denetim bildirimi iletisi.
+- Belirli bir denetim bildirimi iletisi.
 
-   Burada sahip **BN_CLICKED**.
+   İşte **BN_CLICKED.**
 
-- Denetim Kimliği bitişik aralığını denetimleri ile ilişkili değerler.
+- Bitişik denetim aralığıyla ilişkili denetim kimliği değerleri.
 
-   Bunlar burada **IDC_BUTTON1** ve **IDC_BUTTON10**.
+   Burada **IDC_BUTTON1** ve **IDC_BUTTON10**.
 
-- İleti işleyici işlevinin adı.
+- İleti işleyicisi işlevinin adı.
 
-   Burada sahip `OnButtonClicked`.
+   İşte `OnButtonClicked`burada.
 
-İşleyici işlevi yazdığınızda, fazladan belirtin **UINT** aşağıda gösterildiği gibi parametre:
+İşleyici işlevini yazarken, aşağıdakilerde gösterildiği gibi ekstra **UINT** parametresini belirtin:
 
 [!code-cpp[NVC_MFCMessageHandling#11](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_6.cpp)]
 
-`OnButtonClicked` Tek bir işleyici **BN_CLICKED** ileti herhangi bir parametre alır. Düğmeler çeşitli aynı işleyiciyi alır **UINT**. Üreten özel denetim tanımlamak için ekstra parametresiyle sağlayan **BN_CLICKED** ileti.
+Tek `OnButtonClicked` bir **BN_CLICKED** iletinin işleyicisi parametre almaz. Düğmeleri bir dizi için aynı işleyici bir **UINT**alır. Ek **parametre, BN_CLICKED** iletisi oluşturmaktan sorumlu belirli denetimi tanımlamaya olanak tanır.
 
-Örnekte gösterilen kod tipik: geçirilen değeri dönüştürme bir `int` ileti aralığı ve sunduğundan bu durum geçerlidir. Ardından hangi düğmeye tıkladı bazı farklı bir eylem sürebilir.
+Örnekte gösterilen kod tipiktir: ileti aralığında geçirilen `int` değeri dönüştürme ve bunun böyle olduğunu ileri sürün. Ardından, hangi düğmenin tıklandığına bağlı olarak farklı bir eylemde olabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

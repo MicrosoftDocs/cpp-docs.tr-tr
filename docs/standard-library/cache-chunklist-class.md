@@ -10,16 +10,16 @@ helpviewer_keywords:
 - stdext::cache_chunklist [C++], allocate
 - stdext::cache_chunklist [C++], deallocate
 ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9
-ms.openlocfilehash: 035e5153b4e4c84743a64bcc9cec24920a6a0336
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: d0dd6176a34bd625069511106c491225d1467d08
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366750"
 ---
 # <a name="cache_chunklist-class"></a>cache_chunklist Sınıfı
 
-Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
+Tek bir boyuttaki bellek bloklarını ayıran ve ayıran bir [blok ayırıcı](../standard-library/allocators-header.md) tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,34 +32,34 @@ class cache_chunklist
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
+|*Sz*|Dizideki ayrılacak öğe sayısı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf şablonu, gerektiğinde bir bellek bloğu için depolama alanı ayırmak üzere alt ayırma blokları, ham bellek öbeklerini ayırmak için **New işlecini** kullanır; serbest bırakılmış bellek bloklarını her bir öbek için ayrı bir ücretsiz listede depolar ve herhangi bir bellek bloğu kullanımda olduğunda bir öbeği serbest bırakmak için **işleç silme** kullanır.
+Bu sınıf şablonu, gerektiğinde bir bellek bloğu için depolama ayırmak için blokları alt ayırma, ham bellek parçaları ayırmak için **yeni işleç** kullanır; ayrılan bellek bloklarını her bir yığın için ayrı bir serbest listede saklar ve bellek bloklarından hiçbiri kullanılmadığında bir öbek bulmak için **işleç silme** kullanır.
 
-Her bellek bloğunda, kullanılabilir bellek ve onun ait olduğu öbek için bir işaretçi bulunur. Her bir öbek `Nelts` bellek bloklarını, üç işaretçiyi, bir int ve **New** ve **Delete** işlecini içeren verileri içerir.
+Her bellek bloğu kullanılabilir bellek *Sz* bayt ve ait olduğu yığın için bir işaretçi tutar. Her yığın `Nelts` bellek blokları, üç işaretçi, bir int ve **işleç yeni** ve **operatör silmek** gerektiren verileri tutar.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[cache_chunklist](#cache_chunklist)|@No__t_0 türünde bir nesne oluşturur.|
+|[cache_chunklist](#cache_chunklist)|Türünde `cache_chunklist`bir nesne oluşturuyor.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
-|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
+|[Ayırması](#deallocate)|Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<allocators >
+**Üstbilgi:** \<tahsisörler>
 
 **Ad alanı:** stdext
 
-## <a name="allocate"></a>cache_chunklist:: allocate
+## <a name="cache_chunklistallocate"></a><a name="allocate"></a>cache_chunklist::allocate
 
 Bellek bloğunu ayırır.
 
@@ -71,17 +71,17 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Dizideki ayrılacak öğe sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan nesneye yönelik bir işaretçi.
+Ayrılan nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cache_chunklist"></a>cache_chunklist::cache_chunklist
+## <a name="cache_chunklistcache_chunklist"></a><a name="cache_chunklist"></a>cache_chunklist:cache_chunklist
 
-@No__t_0 türünde bir nesne oluşturur.
+Türünde `cache_chunklist`bir nesne oluşturuyor.
 
 ```cpp
 cache_chunklist();
@@ -89,9 +89,9 @@ cache_chunklist();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="deallocate"></a>cache_chunklist::d eallocate
+## <a name="cache_chunklistdeallocate"></a><a name="deallocate"></a>cache_chunklist::deallocate
 
-Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
+Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -101,11 +101,11 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
-|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
+|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
+|*Sayısı*|Depolamadan ayrılacak nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)
+[\<tahsisat>](../standard-library/allocators-header.md)

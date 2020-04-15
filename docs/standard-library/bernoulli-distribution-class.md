@@ -23,16 +23,16 @@ helpviewer_keywords:
 - std::bernoulli_distribution [C++], param_type
 - std::bernoulli_distribution [C++], param_type
 ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
-ms.openlocfilehash: faadc99b6351af884331e6658e1e11de8def2195
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6a53707d823ced7316604f75691194dc6e05545e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364856"
 ---
-# <a name="bernoullidistribution-class"></a>bernoulli_distribution Sınıfı
+# <a name="bernoulli_distribution-class"></a>bernoulli_distribution Sınıfı
 
-Bir Bernoulli dağılımı üretir.
+Bir Bernoulli dağılımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,31 +66,31 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*URNG*\
-Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*ÜRNG*\
+Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, Bernoulli Distribution ayrık olasılık işlevine göre dağıtılmış **bool**türünde değerler üreten bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf, Bernoulli dağılım ayrık olasılık işlevine göre dağıtılan tip **bool**değerlerini üreten bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
 
 ||||
 |-|-|-|
 |[bernoulli_distribution](#bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|
 |`bernoulli_distribution::operator()`||[param_type](#param_type)|
 
-Özellik üyesi `p()` , depolanmış olan dağıtım parametresi değerini `p`döndürür.
+Özellik üyesi, `p()` şu anda depolanan `p`dağıtım parametre değerini döndürür.
 
-Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
 
-`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
+`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
 
-Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
+`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
 
-`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
+Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
 
-Bernoulli Distribution ayrık olasılık işlevi hakkında ayrıntılı bilgi için Wolfram MathWorld article [Bernoulli dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=398467)bakın.
+Bernoulli dağılımı ayrık olasılık fonksiyonu hakkında ayrıntılı bilgi için Wolfram MathWorld makalesi [Bernoulli Distribution'a](https://go.microsoft.com/fwlink/p/?linkid=398467)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -154,13 +154,13 @@ true :::::::::::::::::::::::::::::::::::::::::
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üstbilgi:** \<rastgele>
 
 **Ad alanı:** std
 
-## <a name="bernoulli_distribution"></a>bernoulli_distribution::bernoulli_distribution
+## <a name="bernoulli_distributionbernoulli_distribution"></a><a name="bernoulli_distribution"></a>bernoulli_distribution:bernoulli_distribution
 
-Dağıtımı oluşturur.
+Dağıtımı kurar.
 
 ```cpp
 explicit bernoulli_distribution(double p = 0.5);
@@ -169,39 +169,39 @@ explicit bernoulli_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lama*\
+*P*\
 Depolanan `p` dağıtım parametresi.
 
-*parametresi*\
-Dağıtımı oluşturmak için kullanılan yapı.`param_type`
+*parm*\
+Dağılımı `param_type` oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 ≤ p ≤ 1.0`
+**Ön koşul:**`0.0 ≤ p ≤ 1.0`
 
-İlk Oluşturucu, saklı `p` değeri *p*değerini tutan bir nesne oluşturur.
+İlk oluşturucu, depolanan `p` değeri *p*değerini tutan bir nesne inşa eder.
 
-İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>bernoulli_distribution::p aram_type
+## <a name="bernoulli_distributionparam_type"></a><a name="param_type"></a>bernoulli_distribution::param_type
 
-Dağıtımın parametrelerini içerir.
+Dağıtım parametrelerini içerir.
 
-struct param_type {typedef bernoulli_distribution distribution_type; param_type (çift p = 0,5); Double p () const;
+struct param_type { typedef bernoulli_distribution distribution_type; param_type(double p = 0.5); double p() const;
 
-   bool işleç = = (const param_type & Right) const; bool işleç! = (const param_type & Right) const; };
+   bool operator ==(const param_type& sağ) const; bool operatörü!=(const param_type& sağ) const; };
 
 ### <a name="parameters"></a>Parametreler
 
-*Lama*\
+*P*\
 Depolanan `p` dağıtım parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 ≤ p ≤ 1.0`
+**Ön koşul:**`0.0 ≤ p ≤ 1.0`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
+Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<rastgele>](../standard-library/random.md)

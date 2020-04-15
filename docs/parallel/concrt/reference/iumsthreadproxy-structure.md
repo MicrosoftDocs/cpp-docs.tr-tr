@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSThreadProxy structure
 ms.assetid: 61c69b7e-5c37-4048-bcb4-e75c536afd86
-ms.openlocfilehash: f4fb43a4223cad8cc63049d2a0f8345e48b90f17
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 2e748b1da02394e1f70afd8b92947e1291957c62
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139968"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368078"
 ---
 # <a name="iumsthreadproxy-structure"></a>IUMSThreadProxy Yapısı
 
-Yürütmenin iş parçacığı için bir soyutlama. Scheduler 'a Kullanıcı modu zamanlanabilen (UMS) iş parçacıkları verilmesini istiyorsanız Zamanlayıcı İlkesi öğesi `SchedulerKind` değerini `UmsThreadDefault`olarak ayarlayın ve `IUMSScheduler` arabirimini uygulayın. UMS iş parçacıkları yalnızca Windows 7 ve üzeri sürümü olan 64 bitlik işletim sistemlerinde desteklenir.
+Yürütme iş parçacığı için bir soyutlama. Zamanlayıcınıza kullanıcı modu zamanlanabilir (UMS) iş parçacıkları verilmesini istiyorsanız, zamanlayıcı ilkesi `SchedulerKind` öğesinin `UmsThreadDefault`değerini ayarlayın ve arabirimi uygulayın. `IUMSScheduler` UMS iş parçacıkları yalnızca Windows 7 ve üzeri sürümlere sahip 64 bit işletim sistemlerinde desteklenir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,13 +33,13 @@ struct IUMSThreadProxy : public IThreadProxy;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IUMSThreadProxy:: Entercriticalhandle bölgesi](#entercriticalregion)|Kritik bir bölge girmek için çağırılır. Kritik bir bölgenin içindeyken Zamanlayıcı, bölge sırasında gerçekleşen zaman uyumsuz engelleyici işlemleri gözlemetmez. Bu, bir UMS iş parçacığı için, Zamanlayıcı sayfa hataları, iş parçacığı getirilmesi, çekirdek zaman uyumsuz yordam çağrıları (APCs) vb. için yeniden girilemeyeceği anlamına gelir.|
-|[IUMSThreadProxy:: Enterhyperkritikregion](#enterhypercriticalregion)|Hiper öneme sahip bir bölge girmek için çağırılır. Hiper kritik bir bölgenin içindeyken Zamanlayıcı, bölge sırasında gerçekleşen engelleyici işlemleri gözlemleyecektir. Bu, bir UMS iş parçacığı için Zamanlayıcı, blok, sayfa hatası, iş parçacığı getirilmesi, çekirdek zaman uyumsuz yordam çağrıları (APCs) vb.|
-|[IUMSThreadProxy:: Exitcriticalhandle bölgesi](#exitcriticalregion)|Kritik bir bölgeden çıkmak için çağırılır.|
-|[IUMSThreadProxy:: Exithyperkritikregion](#exithypercriticalregion)|Hiper kritik bir bölgeden çıkmak için çağırılır.|
-|[IUMSThreadProxy:: Getcriticalhandle Regiontype](#getcriticalregiontype)|İş parçacığı proxy 'sinin içinde ne tür kritik bölge olduğunu döndürür. Hyper-kritik bölgeleri kritik bölgelerin bir üst kümesi olduğundan, kod bir kritik bölge ve daha sonra bir Hyper-kritik bölge girdiyseniz `InsideHyperCriticalRegion` döndürülür.|
+|[IUMSThreadProxy::EnterCriticalRegion](#entercriticalregion)|Kritik bir bölgeye girmek için çağrıldı. Kritik bir bölge içindeyken, zamanlayıcı bölge sırasında meydana gelen eşzamanlı engelleme işlemlerini gözlemlemez. Bu, zamanlayıcının sayfa hataları, iş parçacığı süspansiyonları, çekirdek asynchronöz yordam çağrıları (AAP'ler) ve benzeri için bir UMS iş parçacığı için yeniden girilmeyeceğini anlamına gelir.|
+|[IUMSThreadProxy::EnterHyperCriticalRegion](#enterhypercriticalregion)|Hiper kritik bölgeye girmek için çağrıldı. Hiper kritik bir bölgenin içindeyken, zamanlayıcı bölge boyunca meydana gelen engelleme işlemlerini gözlemlemez. Bu, zamanlayıcının işlev çağrılarını engellemek, blok oluşturan kilit alma girişimleri, sayfa hataları, iş parçacığı süspansiyonları, çekirdek asynchronous yordam çağrıları (AAP' ler) ve benzeri, bir UMS iş parçacığı için yeniden girilmeyeceğini zedeleme anlamına gelir.|
+|[IUMSThreadProxy::ExitCriticalRegion](#exitcriticalregion)|Kritik bir bölgeden çıkmak için çağrıldı.|
+|[IUMSThreadProxy::ExitHyperCriticalRegion](#exithypercriticalregion)|Hiper kritik bölgeden çıkmak için çağrıldı.|
+|[IUMSThreadProxy::GetCriticalRegionType](#getcriticalregiontype)|İş parçacığı proxy'sinin içinde ne tür kritik bir bölge olduğunu verir. Hiper kritik bölgeler kritik bölgelerin bir üst kümesi olduğundan, kod kritik bir bölgeye girdiyse ve sonra hiper kritik bir bölge `InsideHyperCriticalRegion` döndürülürse.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,13 +49,13 @@ struct IUMSThreadProxy : public IThreadProxy;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm. h
+**Üstbilgi:** concrtrm.h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="entercriticalregion"></a>IUMSThreadProxy:: Enterkritikregion yöntemi
+## <a name="iumsthreadproxyentercriticalregion-method"></a><a name="entercriticalregion"></a>IUMSThreadProxy::EnterCriticalRegion Yöntemi
 
-Kritik bir bölge girmek için çağırılır. Kritik bir bölgenin içindeyken Zamanlayıcı, bölge sırasında gerçekleşen zaman uyumsuz engelleyici işlemleri gözlemetmez. Bu, bir UMS iş parçacığı için, Zamanlayıcı sayfa hataları, iş parçacığı getirilmesi, çekirdek zaman uyumsuz yordam çağrıları (APCs) vb. için yeniden girilemeyeceği anlamına gelir.
+Kritik bir bölgeye girmek için çağrıldı. Kritik bir bölge içindeyken, zamanlayıcı bölge sırasında meydana gelen eşzamanlı engelleme işlemlerini gözlemlemez. Bu, zamanlayıcının sayfa hataları, iş parçacığı süspansiyonları, çekirdek asynchronöz yordam çağrıları (AAP'ler) ve benzeri için bir UMS iş parçacığı için yeniden girilmeyeceğini anlamına gelir.
 
 ```cpp
 virtual int EnterCriticalRegion() = 0;
@@ -63,11 +63,11 @@ virtual int EnterCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kritik bölgenin yeni derinliği. Kritik bölgeler yer alınır.
+Kritik bölgenin yeni derinliği. Kritik bölgeler yeniden canlandırmadır.
 
-## <a name="enterhypercriticalregion"></a>IUMSThreadProxy:: Enterhyperkritikregion yöntemi
+## <a name="iumsthreadproxyenterhypercriticalregion-method"></a><a name="enterhypercriticalregion"></a>IUMSThreadProxy::EnterHyperCriticalRegion Yöntemi
 
-Hiper öneme sahip bir bölge girmek için çağırılır. Hiper kritik bir bölgenin içindeyken Zamanlayıcı, bölge sırasında gerçekleşen engelleyici işlemleri gözlemleyecektir. Bu, bir UMS iş parçacığı için Zamanlayıcı, blok, sayfa hatası, iş parçacığı getirilmesi, çekirdek zaman uyumsuz yordam çağrıları (APCs) vb.
+Hiper kritik bölgeye girmek için çağrıldı. Hiper kritik bir bölgenin içindeyken, zamanlayıcı bölge boyunca meydana gelen engelleme işlemlerini gözlemlemez. Bu, zamanlayıcının işlev çağrılarını engellemek, blok oluşturan kilit alma girişimleri, sayfa hataları, iş parçacığı süspansiyonları, çekirdek asynchronous yordam çağrıları (AAP' ler) ve benzeri, bir UMS iş parçacığı için yeniden girilmeyeceğini zedeleme anlamına gelir.
 
 ```cpp
 virtual int EnterHyperCriticalRegion() = 0;
@@ -75,15 +75,15 @@ virtual int EnterHyperCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hyper-kritik bölgesinin yeni derinliği. Hiper kritik bölgeler yer alınır.
+Hiper kritik bölgenin yeni derinliği. Hiper kritik bölgeler yeniden canlandırmadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zamanlayıcı çağrı yaptığı Yöntemler ve bu tür bölgelerde ne kadar kilit aldığı hakkında bilgi almalıdır. Bu tür bir bölgede, Scheduler 'ın zamanlama açısından sorumlu olduğu bir kilit üzerindeki kodu engelliyorsa, kilitlenme olabilir.
+Zamanlayıcı, hangi yöntemleri aradığı ve bu bölgelerde hangi kilitleri elde etmesi konusunda olağanüstü dikkatli olmalıdır. Böyle bir bölgedeki kod, zamanlayıcının zamanlamadan sorumlu olduğu bir kilit üzerinde engellerse, kilitlenme oluşabilir.
 
-## <a name="exitcriticalregion"></a>IUMSThreadProxy:: Exitkritikregion yöntemi
+## <a name="iumsthreadproxyexitcriticalregion-method"></a><a name="exitcriticalregion"></a>IUMSThreadProxy::ExitCriticalRegion Yöntemi
 
-Kritik bir bölgeden çıkmak için çağırılır.
+Kritik bir bölgeden çıkmak için çağrıldı.
 
 ```cpp
 virtual int ExitCriticalRegion() = 0;
@@ -91,11 +91,11 @@ virtual int ExitCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kritik bölgenin yeni derinliği. Kritik bölgeler yer alınır.
+Kritik bölgenin yeni derinliği. Kritik bölgeler yeniden canlandırmadır.
 
-## <a name="exithypercriticalregion"></a>IUMSThreadProxy:: Exithyperkritikregion yöntemi
+## <a name="iumsthreadproxyexithypercriticalregion-method"></a><a name="exithypercriticalregion"></a>IUMSThreadProxy::ExitHyperCriticalRegion Yöntemi
 
-Hiper kritik bir bölgeden çıkmak için çağırılır.
+Hiper kritik bölgeden çıkmak için çağrıldı.
 
 ```cpp
 virtual int ExitHyperCriticalRegion() = 0;
@@ -103,11 +103,11 @@ virtual int ExitHyperCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hyper-kritik bölgesinin yeni derinliği. Hiper kritik bölgeler yer alınır.
+Hiper kritik bölgenin yeni derinliği. Hiper kritik bölgeler yeniden canlandırmadır.
 
-## <a name="getcriticalregiontype"></a>IUMSThreadProxy:: Getcriticalhandle Regiontype yöntemi
+## <a name="iumsthreadproxygetcriticalregiontype-method"></a><a name="getcriticalregiontype"></a>IUMSThreadProxy::GetCriticalRegionType Yöntemi
 
-İş parçacığı proxy 'sinin içinde ne tür kritik bölge olduğunu döndürür. Hyper-kritik bölgeleri kritik bölgelerin bir üst kümesi olduğundan, kod bir kritik bölge ve daha sonra bir Hyper-kritik bölge girdiyseniz `InsideHyperCriticalRegion` döndürülür.
+İş parçacığı proxy'sinin içinde ne tür kritik bir bölge olduğunu verir. Hiper kritik bölgeler kritik bölgelerin bir üst kümesi olduğundan, kod kritik bir bölgeye girdiyse ve sonra hiper kritik bir bölge `InsideHyperCriticalRegion` döndürülürse.
 
 ```cpp
 virtual CriticalRegionType GetCriticalRegionType() const = 0;
@@ -115,9 +115,9 @@ virtual CriticalRegionType GetCriticalRegionType() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İş parçacığı proxy 'sinin içinde olduğu kritik bölge türü.
+İş parçacığı proxy içinde kritik bölge türü.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[concurrency Ad Alanı](concurrency-namespace.md)<br/>
 [IUMSScheduler Yapısı](iumsscheduler-structure.md)

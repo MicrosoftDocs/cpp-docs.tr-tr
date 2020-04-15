@@ -8,55 +8,55 @@ helpviewer_keywords:
 - data classes [MFC]
 - simple data type classes [MFC]
 ms.assetid: 0d591d68-0a33-49e9-8a6d-90c90de5c16a
-ms.openlocfilehash: 4e415805301d7d12bd418a3b55509a7732851492
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4038334e35b734370a437d35519498b96c00770
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307424"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365405"
 ---
 # <a name="simple-data-type-classes"></a>Basit Veri Türü Sınıfları
 
-Aşağıdaki sınıflar çizim koordinatları, karakter dizeleri ve zaman şifreleyebilir ve uygun izin vererek, tarih bilgileri C++ söz dizimini kullanın. Bu nesneler, Sınıf Kitaplığı'nda Windows sınıflarının üye işlevleri için parametre olarak yaygın olarak kullanılır. Çünkü `CPoint`, `CSize`, ve `CRect` karşılık **noktası**, **BOYUTU**, ve **RECT** sırasıyla Windows SDK'da yapıları Bu C dili yapıları kullandığınız her yerde bu C++ sınıfların nesnelerini kullanabilirsiniz. Sınıflar, üye işlevlerini yararlı arabirimlerde sağlar. `CStringT` çok esnek dinamik karakter dizeleri sağlar. `CTime`, `COleDateTime`, `CTimeSpan`, ve `COleTimeSpan` saat ve tarih değerleri temsil eder. Bu sınıflar hakkında daha fazla bilgi için bkz [tarih ve saat](../atl-mfc-shared/date-and-time.md).
+Aşağıdaki sınıflar çizim koordinatlarını, karakter dizelerini ve saat ve tarih bilgilerini saklayarak C++ sözdizimini rahatça kullanmalarını sağlar. Bu nesneler, sınıf kitaplığında Windows sınıflarının üye işlevleri için parametre olarak yaygın olarak kullanılır. `CSize` `CRect` **RECT** **SIZE** **POINT**Windows SDK'da sırasıyla POINT , SIZE ve RECT yapılarına karşılık geldiği için, bu C++ sınıflarının nesnelerini bu C dili yapılarını kullanabileceğiniz her yerde kullanabilirsiniz. `CPoint` Sınıflar, üye işlevleri aracılığıyla yararlı arabirimler sağlar. `CStringT`çok esnek dinamik karakter dizeleri sağlar. `CTime`, `COleDateTime` `CTimeSpan`, `COleTimeSpan` ve saat ve tarih değerlerini temsil. Bu sınıflar hakkında daha fazla bilgi için [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)makalesine bakın.
 
-Şununla sınıfları "`COle`" encapsulations OLE tarafından sağlanan veri türleri olan. Bu veri türlerini Windows programlar diğer OLE özellikleri kullanılıp bağımsız olarak kullanılabilir.
+" "`COle`ile başlayan sınıflar, OLE tarafından sağlanan veri türlerinin kapsülleridir. Bu veri türleri, diğer OLE özelliklerinin kullanılıp kullanılmadığına bakılmaksızın Windows programlarında kullanılabilir.
 
 [CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)<br/>
-Karakter dizeleri içerir.
+Karakter dizeleri tutar.
 
-[CTime](../atl-mfc-shared/reference/ctime-class.md)<br/>
-Mutlak tarih değerleri tutar.
+[Ctime](../atl-mfc-shared/reference/ctime-class.md)<br/>
+Mutlak saat ve tarih değerlerini tutar.
 
-[COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md)<br/>
-OLE Otomasyon türü için sarmalayıcı **tarih**. Tarih ve saat değerlerini temsil eder.
+[Coledatetime](../atl-mfc-shared/reference/coledatetime-class.md)<br/>
+OLE otomasyon türü **DATE**için sarıcı. Tarih ve saat değerlerini temsil eder.
 
-[CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md)<br/>
-Göreli tarih değerlerini içerir.
+[Ctimespan](../atl-mfc-shared/reference/ctimespan-class.md)<br/>
+Göreli saat ve tarih değerlerini tutar.
 
 [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md)<br/>
-Göreli tutan `COleDateTime` değerleri, ikisi arasındaki farkı gibi `COleDateTime` değerleri.
+İki `COleDateTime` `COleDateTime` değer arasındaki fark gibi göreli değerleri tutar.
 
-[CPoint](../atl-mfc-shared/reference/cpoint-class.md)<br/>
-Koordinat (x, y) çiftleri tutar.
+[Cpoint](../atl-mfc-shared/reference/cpoint-class.md)<br/>
+Koordinat (x, y) çiftlerini tutar.
 
-[CSize](../atl-mfc-shared/reference/csize-class.md)<br/>
-Uzaklık, göreli konumlarını veya eşleştirilmiş değerleri tutar.
+[Csize](../atl-mfc-shared/reference/csize-class.md)<br/>
+Mesafeyi, göreli konumları veya eşleştirilmiş değerleri tutar.
 
-[CRect](../atl-mfc-shared/reference/crect-class.md)<br/>
-Dikdörtgen alanları koordinatlarını içerir.
+[Crect](../atl-mfc-shared/reference/crect-class.md)<br/>
+Dikdörtgen alanların koordinatlarını tutar.
 
 [Cımagelist](../mfc/reference/cimagelist-class.md)<br/>
-Windows görüntü listesinin işlevlerini sağlar. Görüntü listeleri liste denetimleri ve ağaç denetimleri ile kullanılır. Depolama ve bit eşlemleri aynı boyutlu bir dizi arşivlemek için de kullanılabilir.
+Windows resim listesinin işlevselliğini sağlar. Resim listeleri liste denetimleri ve ağaç denetimleri ile kullanılır. Aynı boyuttaki bit eşlemleri depolamak ve arşivlemek için de kullanılabilirler.
 
-[COleVariant](../mfc/reference/colevariant-class.md)<br/>
-OLE Otomasyon türü için sarmalayıcı **değişken**. Verileri **değişken**s birçok biçimlerinde depolanabilir.
+[Colevariant](../mfc/reference/colevariant-class.md)<br/>
+OLE otomasyon tipi **VARIANT**için sarıcı . **VARIANT**s'deki veriler birçok formatta saklanabilir.
 
-[COleCurrency](../mfc/reference/colecurrency-class.md)<br/>
-OLE Otomasyon türü için sarmalayıcı **para birimi**, ondalık ayırıcıdan önce 15 basamakla ve 4 rakamdan sonra sabit nokta aritmetik türü.
+[Colecurrency](../mfc/reference/colecurrency-class.md)<br/>
+Ondalık noktadan önce 15 basamaklı ve 4 basamak sonra bir sabit nokta aritmetik türü olan OLE otomasyon türü **CURRENCY**için sarıcı.
 
 > [!NOTE]
->  `CRect`, `CSize`, ve `CPoint` ATL veya MFC uygulamalarında kullanılabilir. Ayrıca, `CStringT` MFC bağımsız sağlar `CString`-sınıfı ister. Paylaşılan yardımcı sınıflar hakkında daha fazla bilgi için bkz. [paylaşılan sınıflar](../atl-mfc-shared/atl-mfc-shared-classes.md).
+> `CRect`, `CSize`ve `CPoint` ATL veya MFC uygulamalarında kullanılabilir. Buna ek `CStringT` olarak, MFC `CString`bağımsız -benzeri bir sınıf sağlar. Paylaşılan yardımcı program sınıfları hakkında daha fazla bilgi için [Paylaşılan Sınıflar'a](../atl-mfc-shared/atl-mfc-shared-classes.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa Genel Bakış](../mfc/class-library-overview.md)

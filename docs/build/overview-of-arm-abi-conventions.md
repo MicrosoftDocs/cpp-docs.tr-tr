@@ -1,227 +1,227 @@
 ---
-title: ARM ABı kurallarına genel bakış
+title: ARM ABI Sözleşmelerine Genel Bakış
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-ms.openlocfilehash: 176aaaa17af1ce358255ca94eaccc7d5217f2a87
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 8737f7b1cbe0651b43eb3b9990a4035b60bd01b9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303193"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320726"
 ---
-# <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABı kurallarına genel bakış
+# <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI Sözleşmelerine Genel Bakış
 
-ARM işlemcilerde Windows için derlenen kod için uygulama ikili arabirimi (ABı), standart ARM EABI 'yi temel alır. Bu makalede, ARM ve standart için pencereler arasındaki temel farklılıklar vurgulanmıştır. Bu belge ARM32 ABı ' i içerir. ARM64 ABı hakkında daha fazla bilgi için bkz. [ARM64 ABI kurallarına genel bakış](arm64-windows-abi-conventions.md). Standart ARM EABI hakkında daha fazla bilgi için bkz. ARM mimarisi (dış bağlantı) [Için uygulama Ikili arabirimi (ABI)](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) .
+ARM işlemcilerde Windows için derlenen kod için uygulama ikili arabirimi (ABI) standart ARM EABI'ye dayanır. Bu makalede, ARM ve standart Windows arasındaki önemli farklar vurgulamaktadır. Bu belge ARM32 ABI'yi kapsamaktadır. ARM64 ABI hakkında bilgi için [ARM64 ABI sözleşmelerine genel bakış](arm64-windows-abi-conventions.md)bölümüne bakın. Standart ARM EABI hakkında daha fazla bilgi için [ARM Mimarisi (harici bağlantı) için Uygulama İkili Arabirimi (ABI) bölümüne](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) bakın.
 
-## <a name="base-requirements"></a>Temel gereksinimler
+## <a name="base-requirements"></a>Temel Gereksinimler
 
-ARM 'de Windows, her zaman bir ARMv7 mimarisinde çalıştığını varsayar. VFPv3-D32 veya üzeri biçiminde kayan nokta desteğinin donanımda mevcut olması gerekir. VFP, donanımda hem tek duyarlıklı hem de çift duyarlıklı kayan nokta desteği sağlamalıdır. Windows çalışma zamanı, VNET olmayan donanımda çalışmayı etkinleştirmek için kayan nokta öykünmesini desteklemez.
+ARM'daki Windows, her zaman bir ARMv7 mimarisi üzerinde çalıştığını varsayılır. VFPv3-D32 veya daha sonra şeklinde kayan nokta desteği donanımda bulunmalıdır. VFP donanımda hem tek hassasiyetli hem de çift duyarlıklı kayan noktayı desteklemelidir. Windows çalışma süresi, VFP olmayan donanımda çalıştırmayı etkinleştirmek için kayan nokta öykünmesini desteklemez.
 
-Gelişmiş SıMD uzantıları (NEON) desteği — hem tamsayı hem de kayan nokta işlemlerini barındırır, ayrıca donanımda de bulunmalıdır. Öykünme için çalışma zamanı desteği sağlanmaz.
+Gelişmiş SIMD Uzantıları (NEON) desteği- bu hem tamsayı hem de kayan nokta işlemlerini içerir— donanımda da bulunmalıdır. Öykünme için çalışma süresi desteği sağlanmaz.
 
-Tamsayı bölme desteği (UDIV/SDIV) kesinlikle önerilir, ancak gerekli değildir. Tamsayı bölme desteği olmayan platformlar, bu işlemlerin yakalandığı ve muhtemelen düzeltme eki uygulanmış olması gerektiği için bir performans cezası gerektirebilir.
+Burada bulunan bölme desteği (UDIV/SDIV) şiddetle önerilir, ancak gerekli değildir. Tamsayı bölme desteğinden yoksun platformlar performans cezasına tabi olabilir, çünkü bu işlemlerin tuzağa düşürülmesi ve muhtemelen yamalı olması gerekir.
 
-## <a name="endianness"></a>Endian
+## <a name="endianness"></a>Endianness
 
-ARM 'de Windows, küçük endian modunda yürütülür. Hem MSVC derleyicisinin hem de Windows çalışma zamanının her zaman az endian veri beklemesi. ARM yönerge kümesi mimarisi (ISA) içindeki SETEND yönergesi, Kullanıcı modu kodunun geçerli bitikliği değiştirmesine izin verse de, bir uygulama için tehlikeli olması önerilmez. Büyük endian modunda bir özel durum oluşturulursa, davranış tahmin edilemez ve kullanıcı modunda bir uygulama hatasına veya çekirdek modunda bir hata denetimi oluşmasına neden olabilir.
+ARM'deki Windows, küçük endian modunda yürütülür. Hem MSVC derleyicisi hem de Windows çalışma süresi her zaman az endian veri bekler. ARM yönerge kümesi mimarisindeki (ISA) SETEND talimatı, kullanıcı modu kodunun bile geçerli son durumu değiştirmesine izin veriyor olsa da, bir uygulama için tehlikeli olduğu için bunu yapmak önerilmez. Büyük sonlu modda bir özel durum oluşturulursa, davranış öngörülemez dir ve kullanıcı modunda bir uygulama hatasına veya çekirdek modunda bir hata denetimine neden olabilir.
 
 ## <a name="alignment"></a>Hizalama
 
-Windows ARM donanımının hatalı hizalanmış tamsayı erişimlerini saydam olarak işlemesini sağlasa da, bazı durumlarda hizalama hataları yine de oluşturulabilir. Hizalama için bu kuralları izleyin:
+Windows, ARM donanımına yanlış hizalanmış tamsayı erişimlerini saydam bir şekilde işleme olanağı sağlasa da, bazı durumlarda hizalama hataları yine de oluşturulabilir. Hizalama için aşağıdaki kurallara uyun:
 
-- Yarım sözcük boyutlu (16 bit) ve sözcük boyutlu (32-bit) tamsayı yüklemelerinin ve mağazaların hizalı olması gerekmez. Donanım bunları etkili ve şeffaf bir şekilde işler.
+- Yarım kelime boyutunda (16-bit) ve kelime boyutunda (32-bit) tümsedo yükleri ve depoların hizalanması gerekmez. Donanım bunları verimli ve şeffaf bir şekilde işler.
 
-- Kayan nokta yükleri ve mağazaları hizalı olmalıdır. Çekirdek, hizalanmamış yükler ve depolar, ancak önemli ek yüklerle saklanır.
+- Kayan nokta yükleri ve depoları hizalanmalıdır. Çekirdek hizalanmamış yükleri işler ve saydam olarak depolar, ancak önemli yükü ile.
 
-- Load veya Store Double (LDRD/STRD) ve çoklu (LDM/STM) işlemleri hizalı olmalıdır. Çekirdek, bunların çoğunu saydam olarak, ancak önemli bir ek yük ile işler.
+- Yük veya depo çift (LDRD /STRD) ve birden fazla (LDM/STM) işlemi hizalanmalıdır. Çekirdek bunların çoğunu saydam bir şekilde işler, ancak önemli miktarda genel ilerler.
 
-- Tüm önbelleğe alınmamış bellek erişimleri, tamsayı erişimleri için bile hizalı olmalıdır. Hizalanmamış erişimler bir hizalama hatasına neden olur.
+- Tüm cached bellek erişimleri, tüm insa erişimi için bile hizalanmış olmalıdır. Hizalanmamış erişimler hizalama hatasına neden olur.
 
-## <a name="instruction-set"></a>Yönerge kümesi
+## <a name="instruction-set"></a>Talimat Seti
 
-ARM 'de Windows için olan yönerge kümesi, Thumb-2 ile kesinlikle sınırlıdır. Bu platformda yürütülen tüm kodların başlaması beklenir ve her zaman parmak modunda kalır. Eski ARM yönerge kümesine geçme girişimi başarılı olabilir, ancak bunu yaparsanız, oluşan tüm özel durumlar veya kesintiler Kullanıcı modunda bir uygulama hatasına veya çekirdek modunda bir hata denetimi oluşmasına neden olabilir.
+ARM'da Windows için ayarlanan yönerge kesinlikle Thumb-2 ile sınırlıdır. Bu platformda çalıştırılan tüm kodların başlatılması ve her zaman Başparmak modunda kalması beklenir. Eski ARM yönerge kümesine geçiş denemesi başarılı olabilir, ancak geçerse, oluşan özel durumlar veya kesintiler kullanıcı modunda bir uygulama hatasına veya çekirdek modunda hata denetimine neden olabilir.
 
-Bu gereksinimin yan etkisi, tüm kod işaretçilerinin düşük bit kümesine sahip olması gerekir. Bu, paket olarak BLX veya BX aracılığıyla yüklenip dallandırıldı ve hedef kodu 32-bit ARM yönergeleri olarak yürütmeye çalıştıklarında, işlemcinin parmak izde kalacağından ve
+Bu gereksinimin bir yan etkisi, tüm kod işaretçileri düşük bit kümesi olması gerekir. Bu, yükleme ve BLX veya BX üzerinden dallı, işlemci Başparmak modunda kalır ve 32-bit ARM talimatları olarak hedef kodu yürütmek için denemek değil, böylece.
 
-### <a name="it-instructions"></a>BT yönergeleri
+### <a name="it-instructions"></a>BT Talimatları
 
-Bu özel durumlar dışında, Thumb-2 kodundaki BT yönergelerinin kullanımına izin verilmez:
+Bu özel durumlar dışında, Thumb-2 kodunda BT yönergelerinin kullanılmasına izin verilmez:
 
-- BT yönergesi yalnızca bir hedef yönergeyi değiştirmek için kullanılabilir.
+- BT yönergesi yalnızca bir hedef yönergesini değiştirmek için kullanılabilir.
 
-- Hedef yönerge 16 bit yönerge olmalıdır.
+- Hedef yönerge 16 bitlik bir yönerge olmalıdır.
 
 - Hedef yönerge aşağıdakilerden biri olmalıdır:
 
-   |16 bit OpCodes|Sınıf|Kısıtlamalar|
+   |16-Bit Opcodes|Sınıf|Kısıtlamalar|
    |---------------------|-----------|------------------|
-   |MOV, MVN|Taşıma|RM! = PC, RD! = PC|
-   |LDR, LDR [S] B, LDR [S] H|Bellekten yükleme|Ancak LDR değişmez form|
+   |MOV, MVN|Taşı|Rm != PC, Rd != PC|
+   |LDR, LDR[S]B, LDR[S]H|Bellekten yük|Ama LDR edebi formları değil|
    |STR, STRB, STRH|Belleğe depola||
-   |ADD, ADC, RSB, SBC, SUB|Ekle veya çıkart|Değil, ADD/SUB SP, SP, imm7 Forms<br /><br /> RM! = PC, RDN! = PC, RDM! = PC|
-   |CMP, CMN|{1&gt;Karşılaştır&lt;1}|RM! = PC, RN! = PC|
-   |MUL|Bilirsiniz||
-   |ASR, LSL, LSR, ROR|Bit kaydırma||
-   |VE, BIC, EOR, ORR, TST|Bit düzeyinde aritmetik||
-   |BILGISAYARıN|Kaydolmak için dal|RM! = PC|
+   |ADD, ADC, RSB, SBC, SUB|Ekleme veya çıkarma|Ama ADD / SUB SP, SP, imm7 formları değil<br /><br /> Rm != PC, Rdn != PC, Rdm != PC|
+   |CMP, CMN|Karşılaştır|Rm != PC, Rn != PC|
+   |Mul|Çarp||
+   |ASR, LSL, LSR, ROR|Bit kayması||
+   |VE, BIC, EOR, ORR, TST|Bitwise aritmetik||
+   |Bx|Kayıt olunacak şube|Rm != PC|
 
-Geçerli ARMv7 CPU 'Ları izin verilmeyen yönerge formlarının kullanımını bildiremese de, gelecekteki nesiller için bekleniyor. Bu formlar algılanırsa, bunları kullanan herhangi bir program tanımsız yönerge özel durumuyla sonlandırılabilir.
+Mevcut ARMv7 CPU'lar izin verilmeyen öğretim formlarının kullanımını rapor edemese de, gelecek nesillerin bildirmesi beklenmektedir. Bu formlar algılanırsa, bunları kullanan herhangi bir program tanımlanmamış bir yönerge özel durumuyla sonlandırılabilir.
 
 ### <a name="sdivudiv-instructions"></a>SDIV/UDIV yönergeleri
 
-Tamsayı bölme yönergelerinin kullanımı SDIV ve UDIV, yerel donanım olmayan platformlarda bile bunları işlemek için tam olarak desteklenir. SDIV veya UDIV başına ek yük, bir Cortex-A9 Processor 'a bölme işlemi, girdilere bağlı olarak 20-250 döngülerinin genel bölme süresine ek olarak yaklaşık 80 döngüdir.
+Tamsayı bölme yönergeleriSDIV ve UDIV kullanımı, bunları işlemek için yerel donanım olmadan platformlarda bile, tam olarak desteklenir. Bir Cortex-A9 işlemcide SDIV veya UDIV bölme başına ek yükü, girdilere bağlı olarak, 20-250 döngülerin toplam bölme süresine ek olarak yaklaşık 80 döngüdür.
 
-## <a name="integer-registers"></a>Tamsayı Yazmaçları
+## <a name="integer-registers"></a>Sonsayı kayıtları
 
-ARM işlemcisi 16 tamsayı kaydını destekler:
+ARM işlemcisi 16 tümseci kaydını destekler:
 
-|Kaydet|Katılımcıdan?|Rol|
+|Kaydettir|Uçucu?|Rol|
 |--------------|---------------|----------|
-|r0|Katılımcıdan|Parametre, sonuç, karalama kayıt 1|
-|R1|Katılımcıdan|Parametre, sonuç, karalama kaydı 2|
-|r2'de|Katılımcıdan|Parametre, karalama kaydı 3|
-|R3|Katılımcıdan|Parametre, karalama kaydı 4|
-|R4|Geçici olmayan||
-|r5|Geçici olmayan||
-|r6|Geçici olmayan||
-|R7|Geçici olmayan||
-|R8|Geçici olmayan||
-|R9|Geçici olmayan||
-|r10|Geçici olmayan||
-|r11|Geçici olmayan|Çerçeve işaretçisi|
-|r12|Katılımcıdan|Yordam içi çağrı kayıt kaydı|
-|R13 (SP)|Geçici olmayan|Yığın işaretçisi|
-|R14 (LR)|Geçici olmayan|Bağlantı kaydı|
-|R15 (bılgısayar)|Geçici olmayan|Program sayacı|
+|r0|Uçucu|Parametre, sonuç, çizik kaydı 1|
+|r1|Uçucu|Parametre, sonuç, çizik kayıt 2|
+|R2|Uçucu|Parametre, çizik kayıt 3|
+|r3|Uçucu|Parametre, çizik kayıt 4|
+|R4|Uçucu olmayan||
+|r5|Uçucu olmayan||
+|r6|Uçucu olmayan||
+|r7|Uçucu olmayan||
+|R8|Uçucu olmayan||
+|r9|Uçucu olmayan||
+|r10|Uçucu olmayan||
+|r11|Uçucu olmayan|Çerçeve işaretçisi|
+|r12|Uçucu|Prosedür içi çağrı sıfırı kaydı|
+|r13 (SP)|Uçucu olmayan|Yığın işaretçisi|
+|r14 (LR)|Uçucu olmayan|Bağlantı kaydı|
+|r15 (PC)|Uçucu olmayan|Program sayacı|
 
-Parametresinin ve dönüş değeri yazmaçlarının nasıl kullanılacağına ilişkin ayrıntılar için, bu makaledeki parametre geçirme bölümüne bakın.
+Parametre ve iade değeri kayıtlarının nasıl kullanılacağı hakkında ayrıntılı bilgi için bu makaledeki Parametre Geçiş bölümüne bakın.
 
-Windows, yığın çerçevesinin hızlı yürümesi için r11 kullanır. Daha fazla bilgi için yığın yürüme bölümüne bakın. Bu gereksinim nedeniyle, R11 her zaman zincirdeki en üstteki bağlantıya işaret etmelidir. Genel amaçlar için R11 kullanmayın — kodunuz, analiz sırasında doğru yığın hakkında bir adım oluşturmaz.
+Windows, yığın çerçevesinin hızlı yürümesi için r11 kullanır. Daha fazla bilgi için Stack Walking bölümüne bakın. Bu gereksinim nedeniyle, r11 her zaman zincirin en üst teki halkasını işaret etmelidir. R11'i genel amaçlar için kullanmayın—kodunuz çözümleme sırasında doğru yığın yürüyüşleri oluşturmaz.
 
-## <a name="vfp-registers"></a>VFP Yazmaçları
+## <a name="vfp-registers"></a>VFP kayıtları
 
-Windows yalnızca VFPv3-D32 Eşişlemcisi desteği olan ARM türevlerini destekler. Bu, kayan nokta yazmaçlarının her zaman mevcut olduğu ve parametre geçirme için tam olarak 32 kayıt kümesinin kullanılabilir olduğu anlamına gelir. VFP kayıtları ve kullanımları bu tabloda özetlenmiştir:
+Windows yalnızca VFPv3-D32 yardımcı işlemci desteğine sahip ARM türevlerini destekler. Bu, kayan nokta kayıtlarının her zaman mevcut olduğu ve parametre geçişi için güvenilebildiği ve 32 kayıt kümesinin tamamının kullanıma hazır olduğu anlamına gelir. VFP kayıtları ve bunların kullanımı bu tabloda özetlenmiştir:
 
-|Tekler|Double değerleri|Quads|Katılımcıdan?|Rol|
+|Single|Double değerleri|Dörtlü|Uçucu?|Rol|
 |-------------|-------------|-----------|---------------|----------|
-|S0-S3|D0-D1|q0|Katılımcıdan|Parametreler, sonuç, karalama kaydı|
-|S4-S7|D2-D3|Q1|Katılımcıdan|Parametreler, karalama kaydı|
-|S8-S11|D4-D5|üç|Katılımcıdan|Parametreler, karalama kaydı|
-|S12-S15|d6-d7|S3|Katılımcıdan|Parametreler, karalama kaydı|
-|s16-s19|D8-D9|ç|Geçici olmayan||
-|s20-s23|D10-D11|q5|Geçici olmayan||
-|s24-s27|D12-D13|q6|Geçici olmayan||
-|s28-s31|D14-D15|q7|Geçici olmayan||
-||D16-d31|S8-q15|Katılımcıdan||
+|s0-s3|d0-d1|q0|Uçucu|Parametreler, sonuç, çizik kaydı|
+|s4-s7|d2-d3|Q1|Uçucu|Parametreler, çizik kaydı|
+|s8-s11|d4-d5|q2|Uçucu|Parametreler, çizik kaydı|
+|s12-s15|d6-d7|q3|Uçucu|Parametreler, çizik kaydı|
+|s16-s19|d8-d9|q4|Uçucu olmayan||
+|s20-s23|d10-d11|q5|Uçucu olmayan||
+|s24-s27|d12-d13|q6|Uçucu olmayan||
+|s28-s31|d14-d15|q7|Uçucu olmayan||
+||d16-d31|q8-q15|Uçucu||
 
-Sonraki tabloda kayan nokta durum ve denetim yazmacı (FPSCR) Bitfields gösterilmektedir:
+Sonraki tabloda kayan nokta durumu ve denetim kaydı (FPSCR) bit alanları gösteriş:
 
-|Bits|Anlamı|Katılımcıdan?|Rol|
+|Bits|Anlamı|Uçucu?|Rol|
 |----------|-------------|---------------|----------|
-|31-28|NZCV|Katılımcıdan|Durum bayrakları|
-|27|QC|Katılımcıdan|Kümülatif doygunluk|
-|26|AHP|Geçici olmayan|Alternatif yarı duyarlık denetimi|
-|25|DN|Geçici olmayan|Varsayılan NaN mod denetimi|
-|24|FZ|Geçici olmayan|Sıfıra yasla mod denetimi|
-|23-22|RMode|Geçici olmayan|Yuvarlama modu denetimi|
-|21-20|Adım|Geçici olmayan|Vektör Ilerlemesiyle her zaman 0 olmalıdır|
-|18-16|Tepe|Geçici olmayan|Vektör uzunluğu her zaman 0 olmalıdır|
-|15, 12-8|IDE, ıXE, vb.|Geçici olmayan|Özel durum yakalama bitlerini etkinleştir, her zaman 0 olmalıdır|
-|7, 4-0|IDC, IXC, vb.|Katılımcıdan|Birikmeli özel durum bayrakları|
+|31-28|NZCV|Uçucu|Durum bayrakları|
+|27|QC|Uçucu|Kümülatif doygunluk|
+|26|Ahp|Uçucu olmayan|Alternatif yarı hassas kontrol|
+|25|Dn|Uçucu olmayan|Varsayılan NaN modu denetimi|
+|24|Fz|Uçucu olmayan|Flush'dan sıfıra mod kontrolü|
+|23-22|RMode|Uçucu olmayan|Yuvarlama modu kontrolü|
+|21-20|Adım|Uçucu olmayan|Vektör Adım, her zaman 0 olmalıdır|
+|18-16|Len|Uçucu olmayan|Vektör Uzunluğu, her zaman 0 olmalıdır|
+|15, 12-8|IDE, IXE, vb.|Uçucu olmayan|Özel durum bindirme sökse, her zaman 0 olmalıdır|
+|7, 4-0|IDC, IXC, vb.|Uçucu|Kümülatif özel durum bayrakları|
 
 ## <a name="floating-point-exceptions"></a>Kayan nokta özel durumları
 
-Çoğu ARM donanımı IEEE kayan nokta özel durumlarını desteklemez. Donanım kayan nokta özel durumları olan işlemci çeşitleri üzerinde, Windows çekirdeği özel durumları sessizce yakalar ve bunları FPSCR kaydındaki örtük olarak devre dışı bırakır. Bu, işlemci çeşitleri arasında normalleştirilmiş davranışı sağlar. Aksi takdirde, özel durum desteği olmayan bir platformda geliştirilen kod, özel durum desteği olan bir platformda çalışırken beklenmedik özel durumlar alabilir.
+Çoğu ARM donanımı IEEE kayan nokta özel durumlarını desteklemez. Donanım kayan nokta özel durumları olan işlemci türevlerinde, Windows çekirdeği özel durumları sessizce yakalar ve fpscr kaydında bunları dolaylı olarak devre dışı kılabilir. Bu, işlemci türevleri arasında normalleştirilmiş davranış sağlar. Aksi takdirde, özel durum desteği olmayan bir platformda geliştirilen kod, özel durum desteği olan bir platformda çalışırken beklenmeyen özel durumlar alabilir.
 
-## <a name="parameter-passing"></a>Parametre geçirme
+## <a name="parameter-passing"></a>Parametre geçişi
 
-Bağımsız değişken olmayan bağımsız işlevlerde Windows ARM ABı, parametre geçirme için ARM kurallarını izler; bu, VFP ve Advanced SıMD uzantılarını içerir. Bu kurallar, VFP uzantılarıyla birleştirilmiş [ARM mimarisine yönelik yordam çağrısı standardını](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042c/IHI0042C_aapcs.pdf)izler. Varsayılan olarak, ilk dört tamsayı bağımsız değişkeni ve en fazla sekiz kayan nokta veya vektör bağımsız değişkeni yazmaçlara geçirilir ve ek bağımsız değişkenler yığına geçirilir. Bağımsız değişkenler, bu yordamı kullanarak kayıt veya yığına atanır:
+Variadik olmayan işlevler için ARM ABI'deki Windows, parametre geçişi için ARM kurallarına uyar— bu VFP ve Gelişmiş SIMD uzantılarını içerir. Bu kurallar, VFP uzantılarıyla birleştirilmiş [ARM Mimarisi için Yordam Çağrı Standardı'nı](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042c/IHI0042C_aapcs.pdf)izler. Varsayılan olarak, ilk dört arayıcı bağımsız değişkeni ve en fazla sekiz kayan nokta veya vektör bağımsız değişkeni kayıtlara geçirilir ve ek bağımsız değişkenler yığına geçirilir. Bağımsız değişkenler bu yordamı kullanarak kayıtlara veya yığına atanır:
 
-### <a name="stage-a-initialization"></a>Aşama A: başlatma
+### <a name="stage-a-initialization"></a>Aşama A: Başlatma
 
 Başlatma, bağımsız değişken işleme başlamadan önce tam olarak bir kez gerçekleştirilir:
 
-1. Sonraki çekirdek kayıt numarası (NCRN), R0 olarak ayarlanmıştır.
+1. Sonraki Çekirdek Kayıt Numarası (NCRN) r0 olarak ayarlanır.
 
 1. VFP kayıtları ayrılmamış olarak işaretlenir.
 
-1. Sonraki yığılmış bağımsız değişken adresi (NSAA) geçerli SP olarak ayarlanır.
+1. Sonraki Yığılmış Bağımsız Değişken Adresi (NSAA) geçerli SP olarak ayarlanır.
 
-1. Bellekte bir sonuç döndüren bir işlev çağrılırsa, sonucun adresi R0 içine yerleştirilir ve NCRN, R1 olarak ayarlanır.
+1. Bellekte sonuç döndüren bir işlev çağrılırsa, sonucun adresi r0'a yerleştirilir ve NCRN r1 olarak ayarlanır.
 
-### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>Aşama B: bağımsız değişkenlerin ön doldurma ve uzantısı
+### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>Aşama B: Ön doldurma ve bağımsız değişkenlerin uzantısı
 
 Listedeki her bağımsız değişken için, aşağıdaki listeden ilk eşleşen kural uygulanır:
 
-1. Bağımsız değişken, boyutu hem çağıran hem de aranan tarafından statik olarak belirlenemediği bir bileşik türdür, bağımsız değişken belleğe kopyalanır ve kopyaya bir işaretçi ile değiştirilmiştir.
+1. Bağımsız değişken, boyutu hem arayan hem de çağrıcı tarafından statik olarak belirlenemeyen bileşik bir türse, bağımsız değişken belleğe kopyalanır ve kopyaiçin bir işaretçi yle değiştirilir.
 
-1. Bağımsız değişken bir bayt veya 16 bit yarım sözcüktür ise, sıfır genişletilmiş veya imza, 32 bitlik bir tam sözcüğe kaydedilir ve 4 baytlık bir bağımsız değişken olarak kabul edilir.
+1. Bağımsız değişken bir bayt veya 16 bit yarım sözcükse, 32 bitlik tam sözcük için sıfır uzatılmış veya işaret genişletilmişve 4 bayt bağımsız değişken olarak kabul edilir.
 
-1. Bağımsız değişken bileşik bir tür ise, boyutu 4 ' ün en yakın katına yuvarlanır.
+1. Bağımsız değişken bileşik bir türse, boyutu 4'ün en yakın katlarına yuvarlanır.
 
-### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>C aşaması: kayıt ve yığın için bağımsız değişkenlerin atanması
+### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>Aşama C: Bağımsız değişkenlerin kayda ve yığına atanması
 
-Listedeki her bağımsız değişken için, bağımsız değişken ayrılana kadar sırasıyla aşağıdaki kurallar uygulanır:
+Listedeki her bağımsız değişken için, bağımsız değişken ayrılana kadar sırayla aşağıdaki kurallar uygulanır:
 
-1. Bağımsız değişken bir VFP türüdür ve uygun türe ait yeterince ardışık ayrılmamış VFP kayıtları varsa, bağımsız değişken bu tür yazmaçların en düşük sayılı dizisine ayrılır.
+1. Bağımsız değişken bir VFP türüyse ve uygun türde yeterince ardışık ayrılmamış VFP kaydı varsa, bağımsız değişken bu tür kayıtların en düşük numaralı sırasına ayrılır.
 
-1. Bağımsız değişken bir VFP türü ise, kalan tüm ayrılmamış Yazmaçları kullanılamaz olarak işaretlenir. Bağımsız değişken türü için doğru hizalanana ve bağımsız değişken ayarlanan NSAA 'da yığına kopyalandığı sürece NSAA, yukarı doğru ayarlanır. NSAA, daha sonra bağımsız değişkenin boyutuyla artırılır.
+1. Bağımsız değişken bir VFP türüyse, kalan tüm ayrılmamış kayıtlar kullanılamaz olarak işaretlenir. NSAA, bağımsız değişken türü için doğru şekilde hizalanana ve bağımsız değişken ayarlanan NSAA'daki yığına kopyalanana kadar yukarı doğru ayarlanır. NSAA daha sonra bağımsız değişkenin boyutuna göre artımlı.
 
-1. Bağımsız değişken 8 baytlık hizalama gerektiriyorsa, NCRN, sonraki çift kayıt numarasına yuvarlanır.
+1. Bağımsız değişken 8 bayt hizalama gerektiriyorsa, NCRN bir sonraki çift kayıt numarasına yuvarlanır.
 
-1. 32 bitlik sözcüklerin bağımsız değişkeninin boyutu R4 eksi NCRN 'den daha fazla değilse, bağımsız değişken, NCRN 'den başlayarak, düşük sayılı kayıtları kaplayan en az önemli bitlerle birlikte, ana kayıtlara kopyalanır. NCRN, kullanılan kayıt sayısına göre artırılır.
+1. 32 bit sözcüklerdeki bağımsız değişkenin boyutu r4 eksi NCRN'den fazla değilse, bağımsız değişken NCRN'den başlayarak alt numaralı kayıtları kaplayan en az önemli bitle birlikte çekirdek kayıtlara kopyalanır. NCRN kullanılan kayıt sayısına göre artımlanır.
 
-1. NCRN, R4 'den küçükse ve NSAA, SP 'ye eşitse, bağımsız değişken çekirdek Yazmaçları ve yığın arasında bölünür. Bağımsız değişkenin ilk bölümü, NCRN 'den başlayarak R3 dahil olmak üzere temel kayıtlara kopyalanır. Bağımsız değişkenin geri kalanı, NSAA 'dan başlayarak yığına kopyalanır. NCRN, R4 olarak ayarlanır ve NSAA bağımsız değişkeninin boyutu tarafından, Yazmaçlarda geçirilen miktar çıkarılarak artırılır.
+1. NCRN r4'ten küçükse ve NSAA SP'ye eşitse, bağımsız değişken çekirdek kayıtları ve yığın arasında bölünür. Bağımsız değişkenin ilk bölümü, NCRN'den başlayarak r3'e kadar ve dahil olmak üzere çekirdek kayıtlara kopyalanır. Bağımsız değişkenin geri kalanı NSAA'dan başlayarak yığına kopyalanır. NCRN r4 olarak ayarlanır ve NSAA bağımsız değişkenin boyutu eksi kayıtlarda geçirilen miktar adedine göre artımlanır.
 
-1. Bağımsız değişken 8 baytlık hizalama gerektiriyorsa, NSAA sonraki 8 baytlık hizalanmış adrese yuvarlanır.
+1. Bağımsız değişken 8 bayt hizalama gerektiriyorsa, NSAA sonraki 8 bayt hizalanmış adrese yuvarlanır.
 
-1. Bağımsız değişkeni NSAA 'da belleğe kopyalanır. NSAA, bağımsız değişkenin boyutuyla artırılır.
+1. Bağımsız değişken NSAA'da belleğe kopyalanır. NSAA bağımsız değişkenin boyutuna göre artarak.
 
-VFP kayıtları, değişen sayıda bağımsız değişken işlevleri için kullanılmaz ve 1 ve 2. aşama yok sayılır. Bu, değişen sayıda bağımsız değişken, çağıran tarafından geçirilen diğer bağımsız değişkenlere kayıt bağımsız değişkenlerini eklemek için isteğe bağlı bir push {R0-R3} ile başlayabileceği anlamına gelir ve sonra bağımsız değişken listesinin tamamına doğrudan yığından erişebilirsiniz.
+VFP kayıtları variadik işlevler için kullanılmaz ve Aşama C kuralları 1 ve 2 yoksayılır. Bu, bir variadic işlevin, kayıt bağımsız değişkenlerini arayan tarafından geçirilen ek bağımsız değişkenlere hazırlamak ve ardından doğrudan yığından tüm bağımsız değişken listesine erişmek için isteğe bağlı bir itme {r0-r3} ile başlayabileceğini gösterir.
 
-Tamsayı türü değerleri r0 içinde döndürülür ve isteğe bağlı olarak 64 bitlik dönüş değerleri için R1 olarak genişletilir. VFP/NEON kayan nokta veya SIMD türü değerleri, uygun şekilde S0, D0 veya Q0 içinde döndürülür.
+İnteger türü değerleri r0 olarak döndürülür ve isteğe bağlı olarak 64 bit dönüş değerleri için r1'e uzatılır. VFP/NEON kayan nokta veya SIMD türü değerleri uygun şekilde s0, d0 veya q0 olarak döndürülür.
 
-## <a name="stack"></a>Toplu İş
+## <a name="stack"></a>Yığın
 
-Yığın her zaman 4 baytlık hizalı olmalıdır ve herhangi bir işlev sınırında 8 baytlık hizalı olmalıdır. Bu, 64 bitlik yığın değişkenlerinde birbirine kenetlenmiş işlemlerin sık kullanımını desteklemek için gereklidir. ARM EABI, yığının herhangi bir genel arabirimde 8 bayt hizalı olduğunu belirtir. Tutarlılık için ARM ABı, tüm işlev sınırlarını bir ortak arabirim olacak şekilde değerlendirir.
+Yığın her zaman 4 bayt hizalı olarak kalmalı ve herhangi bir işlev sınırında 8 bayt hizalanmış olmalıdır. Bu, 64 bit lik yığın değişkenlerinde birbirine kenetlenmiş işlemlerin sık kullanımını desteklemek için gereklidir. ARM EABI, yığının herhangi bir ortak arabirimde 8 bayt hizalanmış olduğunu belirtir. Tutarlılık için ARM ABI'deki Windows, herhangi bir işlev sınırını ortak arabirim olarak kabul eder.
 
-Bir çerçeve işaretçisi kullanmak zorunda olan işlevler — Örneğin, `alloca` çağıran veya yığın işaretçisini dinamik olarak değiştiren işlevler gibi, çerçeve işaretçisini, R11 içinde kare işaretçisi ayarlaması ve epıg tamamlanana kadar değişmeden bırakmak gerekir. Çerçeve işaretçisi gerektirmeyen işlevler, prolog 'daki tüm yığın güncelleştirmelerini gerçekleştirmelidir ve yığın işaretçisini epıg 'ye kadar değişmeden bırakır.
+Çerçeve işaretçisi kullanmak zorunda olan işlevler(örneğin, arayan `alloca` veya yığın işaretçisini dinamik olarak değiştiren işlevler- işlev önözünde r11'deki çerçeve işaretçisini ayarlamalı ve sonsöze kadar değişmeden bırakmalıdır. Çerçeve işaretçisi gerektirmeyen işlevler, önsözdeki tüm yığın güncelleştirmelerini gerçekleştirmeli ve yığın işaretçisini sonsöze kadar değişmeden bırakmalıdır.
 
-Yığın üzerinde 4 KB veya daha fazla alan işlevleri, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu, hiçbir kodun, Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık" kullanmasını sağlar. Genellikle, bu `__chkstk` yardımcı tarafından yapılır ve bu, toplam yığın ayırmayı R4 içinde 4 ' ün altına bölünen ve son yığın ayırma miktarını R4 geri döndüren bayt olarak döndürür.
+Yığına 4 KB veya daha fazla ayıran işlevler, son sayfadan önce her sayfaya sırayla dokunulduğundan emin olmalıdır. Bu, hiçbir kodun Windows'un yığını genişletmek için kullandığı koruma sayfalarını "atlayamamasını" sağlar. Genellikle, `__chkstk` bu, r4'te 4'e bölünen baytlarda toplam yığın ayırması geçirilen ve son yığın ayırma miktarını r4'te baytlarda döndüren yardımcı tarafından yapılır.
 
 ### <a name="red-zone"></a>Kırmızı bölge
 
-Geçerli yığın işaretçisinin hemen altındaki 8 baytlık alan, analiz ve dinamik düzeltme eki uygulama için ayrılmıştır. Bu, [SP, #-8] konumunda 2 kayıt depolayan ve bunları geçici olarak rastgele amaçlar için kullanan dikkatle oluşturulmuş kodun eklenmesine izin verir. Windows çekirdeği, hem kullanıcı modunda hem de çekirdek modunda bir özel durum veya kesme gerçekleşirse, bu 8 baytın üzerine yazılmayacak olmasını garanti eder.
+Geçerli yığın işaretçisinin hemen altındaki 8 baytlık alan çözümleme ve dinamik yama için ayrılmıştır. Bu, [sp, #-8] depolar ve geçici olarak rasgele amaçlar için bunları kullanır, dikkatle oluşturulan kod eklenmesine izin verir. Windows çekirdeği, hem kullanıcı modunda hem de çekirdek modunda bir özel durum veya kesme oluşursa, bu 8 baytın üzerine yazılmayacağını garanti eder.
 
 ### <a name="kernel-stack"></a>Çekirdek yığını
 
-Windows 'daki varsayılan çekirdek modu yığını üç sayfalardır (12 KB). Çekirdek modunda büyük yığın arabellekleri olan işlevler oluşturmamaya dikkat edin. Kesme, çok az yığın olan bir alan ile gelebilir ve yığın panik hata denetimi hatasına neden olabilir.
+Windows'daki varsayılan çekirdek modu yığını üç sayfadır (12 KB). Çekirdek modunda büyük yığın arabellekleri olan işlevler oluşturmamaya dikkat edin. Bir kesme çok az yığın headroom ile gelebilir ve bir yığın panik bugcheck neden olabilir.
 
 ## <a name="cc-specifics"></a>C/C++ özellikleri
 
-Numaralandırmadaki en az bir değer 64-bit çift sözcüklü depolama alanı gerektirmediği için numaralandırmalar 32 bitlik tamsayı türleridir. Bu durumda, numaralandırma 64 bitlik bir tamsayı türüne yükseltilir.
+Numaralandırma, numaralandırmada en az bir değer 64 bit çift kelimedepolama gerektirmediği sürece 32 bit tamsayı türleridir. Bu durumda, numaralandırma 64 bit tamsayı türüne yükseltilir.
 
-`wchar_t`, diğer platformlarla uyumluluğu korumak için `unsigned short`eşdeğer olacak şekilde tanımlanır.
+`wchar_t`diğer platformlarile uyumluluğu korumak için eşdeğer `unsigned short`olarak tanımlanır.
 
-## <a name="stack-walking"></a>Yığın yürüme
+## <a name="stack-walking"></a>Yığın yürüyüş
 
-Windows kodu, hızlı yığın yürümesini etkinleştirmek için çerçeve işaretçileri etkinleştirilmiş ([/oy (çerçeve Işaretçisi atlama)](reference/oy-frame-pointer-omission.md)) ile derlenir. Genellikle, R11 kaydı zincirde bir sonraki bağlantıyı işaret eder; bu, yığındaki önceki çerçeveye yönelik işaretçiyi belirten bir {R11, LR} çiftidir ve dönüş adresidir. Kodunuzun, geliştirilmiş profil oluşturma ve izleme için çerçeve işaretçilerini de etkinleştirmenizi öneririz.
+Windows kodu, hızlı yığın yürümesi sağlamak için etkin çerçeve işaretçileri[(/Oy (Frame-Pointer Ekspre)](reference/oy-frame-pointer-omission.md)ile derlenir. Genel olarak, r11 kaydı zincirdeki bir sonraki bağlantıya işaret eder, bu da yığındaki önceki çerçeveye işaretçiyi ve geri dönüş adresini belirten bir {r11, lr} çiftidir. Kodunuzun gelişmiş profil oluşturma ve izleme için çerçeve işaretçilerine de olanak sağlamasını öneririz.
 
-## <a name="exception-unwinding"></a>Özel durum geri sarma
+## <a name="exception-unwinding"></a>Özel durum gevşeme
 
-Özel durum işleme sırasında yığın geri sarma, geriye doğru izleme kodları kullanılarak etkinleştirilir. Geriye doğru izleme kodları, yürütülebilir görüntünün. xdata bölümünde depolanan baytların bir dizisidir. Bu, işlev için işlem ve epıg kodunun bir soyut bir şekilde tanıtılmasını sağlar, böylece bir işlevin prolog 'nin etkileri, çağıranın yığın çerçevesinin geri sarılığının hazırlanmasında hazırlanmaya devam edebilir.
+İstisna işleme sırasında yığın boşaltma, gevşeme kodlarının kullanımıyla etkinleştirilir. Gevşeme kodları, çalıştırılabilir görüntünün .xdata bölümünde depolanan bayt dizisidir. İşlev prologve epilog kodunun işleyişini soyut bir şekilde açıklarlar, böylece bir işlevin önsözünün etkileri arayanın yığın çerçevesine gevşemeye hazırlık olarak geri alınabilir.
 
-ARM EABI, geriye doğru izleme kodları kullanan bir özel durum izleme modeli belirtir. Bununla birlikte, bu belirtim Windows 'da geriye doğru izleme için yeterli değildir; bu, işlemcinin bir işlevin işlem veya başlangıç sayısının ortasında olduğu durumları ele almalıdır. ARM özel durum verilerinde Windows ve geri sarma hakkında daha fazla bilgi için bkz. [ARM özel durum işleme](arm-exception-handling.md).
+ARM EABI, gevşeme kodları kullanan bir özel durum gevşetme modeli belirtir. Ancak, bu belirtim, işlemcinin bir işlevin önsözünün veya sonsözünün ortasında olduğu durumlarda ele alması gereken Windows'da gevşemek için yeterli değildir. ARM özel durum verileri ve gevşeme hakkında daha fazla bilgi için [ARM Özel Durum İşleme'ye](arm-exception-handling.md)bakın.
 
-Oluşturulan kodun özel durum işleme katılmasını sağlamak için, `RtlAddFunctionTable` ve ilişkili işlevlere yapılan çağrılar için belirtilen dinamik işlev tabloları kullanılarak, dinamik olarak üretilen kodun açıklanmasını öneririz.
+Oluşturulan kodun özel durum işlemeye katılabilmesi için `RtlAddFunctionTable` çağrılarda ve ilişkili işlevlerde belirtilen dinamik işlev tabloları kullanılarak dinamik olarak oluşturulan kodun tanımlanmasını öneririz.
 
-## <a name="cycle-counter"></a>Bisiklet sayacı
+## <a name="cycle-counter"></a>Döngü sayacı
 
-Windows çalıştıran ARM işlemcileri bir bisiklet sayacını desteklemek için gereklidir, ancak sayacı doğrudan kullanmak sorunlara neden olabilir. Bu sorunlardan kaçınmak için ARM 'de Windows, normalleştirilmiş bir 64 bit kullanım sayacı değeri istemek için tanımsız bir Opcode kullanır. C veya C++' den uygun işlem koduna sahip `__rdpmccntr64` iç öğesini kullanın; derlemeden `__rdpmccntr64` yönergesini kullanın. Döngü sayacını okumak Cortex-A9 üzerinde yaklaşık 60 döngü sürer.
+Windows'u çalıştıran ARM işlemcilerinin bir döngü sayacını desteklemesi gerekir, ancak sayacı doğrudan kullanmak sorunlara neden olabilir. Bu sorunları önlemek için ARM'deki Windows, normalleştirilmiş 64 bit çevrim sayacı değeri istemek için tanımlanmamış bir opcode kullanır. C veya C++'dan, uygun opkodu yalamak için `__rdpmccntr64` içsel kullanın; montajdan, `__rdpmccntr64` talimatı kullanın. Çevrim sayacını okumak Cortex-A9'da yaklaşık 60 döngü alır.
 
-Sayaç, saat değil, doğru bir geçiş sayacıdır; Bu nedenle, sayım sıklığı işlemci sıklığıyla farklılık gösterir. Geçen saat süresini ölçmek istiyorsanız `QueryPerformanceCounter`kullanın.
+Sayaç gerçek bir döngü sayacı, bir saat değil; bu nedenle, sayma sıklığı işlemci frekansına göre değişir. Geçen saat süresini ölçmek istiyorsanız, kullanın. `QueryPerformanceCounter`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Visual C++ ARM Geçiş Sorunları](common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM Özel Durum İşleme](arm-exception-handling.md)
+[ARM Özel Durum Taşıma](arm-exception-handling.md)

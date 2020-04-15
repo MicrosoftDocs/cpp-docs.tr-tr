@@ -1,107 +1,137 @@
 ---
-title: 'Hızlı Başlangıç: C/C++ için Kod Analizi'
-description: Yaygın kodlama sorunlarını ve C++ kusurlarını algılamak Için Visual Studio 'daki kodda statik analiz çalıştırın.
-ms.date: 11/04/2016
+title: 'Hızlı başlangıç: C/C++ için kod analizi'
+description: Sık karşılaşılan kodlama sorunlarını ve kusurlarını algılamak için Visual Studio'da C++ kodu üzerinde statik çözümleme çalıştırın.
+ms.date: 04/08/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
-- code analysis,C/C++
-ms.openlocfilehash: 5ee8f702ddf489732f664ae73eed75b18dc46e86
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+- code analysis, C/C++
+ms.openlocfilehash: 43866564915ac84d227ccbf347280efe59e33351
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418783"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370581"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Hızlı başlangıç: C/C++ için kod analizi
 
-Kod analizini, C veya C++ Code 'da düzenli olarak çalıştırarak uygulamanızın kalitesini artırabilirsiniz. Bu, yaygın sorunları, iyi programlama uygulaması ihlallerini veya test aracılığıyla bulmanın zor olduğu kusurları bulmanıza yardımcı olabilir. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için Kod Analizi arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir.
+C veya C++ kodunda düzenli olarak kod analizi çalıştırarak uygulamanızın kalitesini artırabilirsiniz. Kod çözümlemesi, sık karşılaşılan sorunları ve iyi programlama uygulama ihlallerini bulmanıza yardımcı olabilir. Ve, test yoluyla keşfedilmesi zor kusurları bulur. Uyarıları derleyici hatalarından ve uyarılardan farklıdır: Sorunlara neden olduğu bilinen belirli kod desenleri arar. Diğer bir deyişle, geçerli olan kod, ancak yine de, sizin veya kodunuzu kullanan diğer kişiler için sorunlar oluşturabilir.
 
-## <a name="configure-rule-sets-for-a-project"></a>Bir proje için kural kümelerini yapılandırma
+## <a name="configure-rule-sets-for-a-project"></a>Proje için kural kümelerini yapılandırma
 
-1. **Çözüm Gezgini**, proje adı için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+1. **Çözüm Gezgini'nde,** proje adı için kısayol menüsünü açın ve ardından **Özellikler'i**seçin.
 
-1. İsteğe bağlı olarak, **yapılandırma** ve **Platform** listelerinde, yapı yapılandırması ve hedef platform ' u seçin.
+1. İsteğe bağlı olarak, **Yapılandırma** ve **Platform** listelerinde yapı yapılandırmasını ve hedef platform'u seçin.
 
-1. Projenin seçili yapılandırma kullanılarak oluşturulduğu her seferinde Kod analizini çalıştırmak için, **derlemede Kod analizini etkinleştir** onay kutusunu seçin. Ayrıca, **Çözümle** menüsünü açıp daha sonra *ProjectName* **üzerinde Kod analizini Çalıştır** ' ı seçip **dosya üzerinde Kod analizini**Çalıştır ' ı seçerek Kod analizini el ile de çalıştırabilirsiniz.
+1. Proje seçili yapılandırmayı kullanarak her oluşturultuca kod çözümlemesi çalıştırmak için Yapı denetim kutusunda **Kod Çözümlemesini Etkinleştir'i** seçin. **Ayrıca, Analyze** menüsünü açıp *ProjectName'de* Çalıştır **Kod Çözümlemesi'ni** seçerek veya **Dosyada Kod Çözümlemesi'ni**el ile çalıştırabilirsiniz.
 
-1. Kullanmak istediğiniz [kural kümesini](using-rule-sets-to-specify-the-cpp-rules-to-run.md) seçin veya [özel bir kural kümesi](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor)oluşturun. LLVM/Clang-CL kullanılıyorsa bkz. Clang-Tidy analiz seçeneklerini yapılandırmak için [Visual Studio 'Da Clang-Tidy kullanma](../code-quality/clang-tidy.md) .
+1. Kullanmak istediğiniz [kural kümesini](using-rule-sets-to-specify-the-cpp-rules-to-run.md) seçin veya özel bir [kural kümesi](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor)oluşturun. LLVM/clang-cl kullanıyorsanız, Clang-Tidy analiz seçeneklerini yapılandırmak için [Visual Studio'da Clang-Tidy kullanma'ya](../code-quality/clang-tidy.md) bakın.
 
 ### <a name="standard-cc-rule-sets"></a>Standart C/C++ kural kümeleri
 
-Visual Studio yerel kod için iki standart kural kümesi içerir:
+Visual Studio, yerel kod için bu standart kural kümelerini içerir:
 
-|Kural kümesi|Açıklama|
-|--------------|-----------------|
-|Microsoft yerel en düşük önerilen kurallar|Bu kural kümesi, olası güvenlik delikleri ve uygulama kilitlenmeleri dahil olmak üzere yerel kodunuzda en kritik sorunlara odaklanır. Bu kural kümesini yerel projeleriniz için oluşturduğunuz herhangi bir özel kural kümesine dahil etmelisiniz.|
-|Microsoft yerel önerilen kurallar|Bu kural kümesi, çok çeşitli sorunları ele alır. Microsoft yerel en düşük önerilen kuralların tüm kurallarını içerir.|
+| Kural Seti | Açıklama |
+|--|--|
+| **C++ Çekirdek Kontrol Aritmetik Kuralları** | Bu [kurallar, C++ Çekirdek Yönergeleri'ndeki aritmetik işlemlerle](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es-expressions-and-statements)ilgili denetimleri uygular. |
+| **C++ Çekirdek Kontrol Sınırları Kuralları** | Bu kurallar [C++ Çekirdek Yönergeleri'nin Ciltler profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)uygular. |
+| **C++ Çekirdek Kontrol Sınıf Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'ndeki sınıflarla](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-classes-and-class-hierarchies)ilgili denetimleri uygular. |
+| **C++ Çekirdek Kontrol Eşzamanlılık Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'ndeki eşzamanlılıkla](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#cpcon-concurrency)ilgili denetimleri uygular. |
+| **C++ Çekirdek Kontrol Const Kuralları** | Bu kurallar [C++ Çekirdek Yönergeleri'nden const ile ilgili denetimleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)uygular. |
+| **C++ Çekirdek Çek Beyan Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'ndeki bildirimlerle](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i-interfaces)ilgili denetimleri uygular. |
+| **C++ Çekirdek Çek Enum Kuralları** | Bu [kurallar, C++ Çekirdek Yönergeleri'nden enumla ilgili denetimleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum)uygular. |
+| **C++ Çekirdek Kontrolü Deneysel Kuralları** | Bu kurallar bazı deneysel kontroller toplar. Sonuç olarak, bu denetimlerin diğer kural kümelerine taşınmasını veya tamamen kaldırılmasını bekliyoruz. |
+| **C++ Çekirdek Kontrol Fonksiyonu Kuralları** | Bu [kurallar, C++ Çekirdek Yönergeleri'ndeki işlevler](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f-functions)ile ilgili denetimleri uygular. |
+| **C++ Çekirdek Kontrol GSL Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'nden Yönergeler Destek Kitaplığı](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl)ile ilgili denetimleri uygular. |
+| **C++ Çekirdek Kontrol Ömür Boyu Kuralları** | Bu kurallar [C++ Çekirdek Yönergeleri'nin Ömür Boyu profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile)uygular. |
+| **C++ Çekirdek Denetimi Sahibi İşaretçisi Kuralları** | Bu kurallar, [C++ Temel&lt;&gt; Yönergeleri'nden sahibi T](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)ile ilgili kaynak yönetimi denetimlerini uygular. |
+| **C++ Çekirdek Denetimi Ham İşaretçi Kuralları** | Bu [kurallar, C++ Çekirdek Yönergeleri'ndeki ham işaretçilerle](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)ilgili kaynak yönetimi denetimlerini uygular. |
+| **C++ Çekirdek Kontrol Kuralları** | Bu [kurallar, C++ Çekirdek Yönergeleri'ndeki](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines)denetimlerin bir alt kümesini uygular. Enum ve Deneysel kural kümeleri dışındaki Tüm C++ Çekirdek Denetimi kurallarını içerecek şekilde bu kural kümesini kullanın. |
+| **C++ Çekirdek Denetimi Paylaşılan İşaretçi Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'nden paylaşılan işaretçi semantiklerine sahip türlerle](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)ilgili kaynak yönetimi denetimlerini uygular. |
+| **C++ Çekirdek Kontrol STL Kuralları** | Bu kurallar, [C++ Temel Yönergeleri'nden C++ Standart Şablon Kitaplığı (STL)](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib)ile ilgili denetimleri uygular. |
+| **C++ Çekirdek Kontrol Stili Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'ndeki ifadelerin ve deyimlerin](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es-expressions-and-statements)kullanımına ilişkin denetimleri uygular. |
+| **C++ Çekirdek Kontrol Türü Kuralları** | Bu kurallar [C++ Çekirdek Yönergelerinin Tür profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)uygular. |
+| **C++ Çekirdek Denetimi Benzersiz İşaretçi Kuralları** | Bu [kurallar, C++ Temel Yönergeleri'nden benzersiz işaretçi semantiklerine](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)sahip türleri ile ilgili kaynak yönetimi denetimlerini uygular. |
+| **Eşzamanlılık Kontrol Kuralları** | Bu kurallar C++'da win32 eşzamanlılık deseni denetimleri kümesini uygular. |
+| **Eşzamanlılık Kuralları** | C++ Temel Yönergeleri'nden **Eşzamanlılık Denetim Kuralları'na**eşzamanlılık kuralları ekler. |
+| **Microsoft Yerel Minimum Kuralları** | Bu kurallar, olası güvenlik açıkları ve uygulama çökmeleri de dahil olmak üzere yerel kodunuzdaki en kritik sorunlara odaklanır. Bu kural kümesini, yerel projeleriniz için oluşturduğunuz herhangi bir özel kural kümesine eklemenizi öneririz. |
+| **Microsoft Yerel Önerilen Kurallar** | Bu kurallar, yerel kodunuzdaki en kritik ve yaygın sorunlara odaklanır. Bu sorunlar, olası güvenlik açıklarını ve uygulama çökmelerini içerir. Bu kural kümesini, yerel projeleriniz için oluşturduğunuz herhangi bir özel kural kümesine eklemenizi öneririz. Bu kural kümesi Visual Studio Professional sürümü ve daha yüksek ile çalışmak üzere tasarlanmıştır. Microsoft Yerel Minimum **Kuralları'ndaki**tüm kuralları içerir. |
 
-## <a name="run-code-analysis"></a>Kod analizini Çalıştır
+Visual Studio yönetilen kod için bu standart kural kümelerini içerir:
 
-Proje Özellikleri sayfasının kod analizi sayfasında, Kod analizini projenizi her oluşturduğunuzda çalışacak şekilde yapılandırabilirsiniz. Ayrıca, Kod analizini el ile de çalıştırabilirsiniz.
+| Kural Seti | Açıklama |
+|--|--|
+| **Microsoft Temel Doğruluk Kuralları** | Bu kurallar, çerçeve API'lerinin kullanımında yapılan mantık hataları ve yaygın hatalara odaklanır. Önerilen minimum kurallar tarafından bildirilen uyarılar listesinde genişletmek için ayarlanan bu kuralı ekleyin. |
+| **Microsoft Temel Tasarım Kılavuzu Kuralları** | Bu kurallar, kodunuzu kolay anlaşılır ve kullanımını kolaylaştırmak için en iyi uygulamaları zorlamaya odaklanır. Projeniz kitaplık kodu içeriyorsa veya kolayca korunabilen kod için en iyi uygulamaları uygulamak istiyorsanız bu kural kümesini ekleyin. |
+| **Microsoft Genişletilmiş Doğruluk Kuralları** | Bu kurallar, bildirilen mantık ve çerçeve kullanım hatalarını en üst düzeye çıkarmak için temel doğruluk kurallarını genişletir. COM interop ve mobil uygulamalar gibi belirli senaryolara ekstra önem verilir. Bu senaryolardan biri projeniz için geçerliyse veya projenizde ek sorunlar bulmak için bu kural kümesini dahil etmeyi düşünün. |
+| **Microsoft Genişletilmiş Tasarım Kılavuzu Kuralları** | Bu kurallar, bildirilen kullanılabilirlik ve sürdürülebilirlik sorunlarını en üst düzeye çıkarmak için temel tasarım kılavuzu kurallarını genişletir. Adlandırma yönergelerine ekstra önem verilir. Projeniz kitaplık kodu içeriyorsa veya sürdürülebilir kod yazmak için en yüksek standartları uygulamak istiyorsanız, bu kural kümesini dahil etmeyi düşünün. |
+| **Microsoft Genelleştirme Kuralları** | Bu kurallar, uygulamanızdaki verilerin farklı dillerde, yerel bölgelerde ve kültürlerde kullanıldığında doğru şekilde görüntülenmesini engelleyen sorunlara odaklanır. Uygulamanız yerelleştirilmiş ve/veya küreselleştirilmişse bu kural kümesini ekleyin. |
+| **Microsoft Yönetilen Minimum Kurallar** | Bu kurallar, Kod Analizi'nin en doğru olduğu kodunuzdaki en kritik sorunlara odaklanır.  Bu kurallar sayıca azdır ve yalnızca sınırlı Visual Studio sürümlerinde çalışmak üzere tasarlanmıştır.  Diğer Visual Studio sürümleriyle birlikte MinimumRecommendedRules.ruleset adresini kullanın. |
+| **Microsoft Yönetilen Önerilen Kurallar** | Bu kurallar, kodunuzdaki en kritik sorunlara odaklanır. Bu sorunlar, olası güvenlik açıklarını, uygulama çökmelerini ve diğer önemli mantık ve tasarım hatalarını içerir. Projeleriniz için oluşturduğunuz herhangi bir özel kural kümesine bu kural kümesini eklemenizi öneririz. |
+| **Microsoft Karışık (C++ /CLR) Minimum Kuralları** | Bu kurallar, Ortak Dil Çalışma Süresini destekleyen C++ projelerinizdeki en kritik sorunlara odaklanır. Bu sorunlar, olası güvenlik açıklarını, uygulama çökmelerini ve diğer önemli mantık ve tasarım hatalarını içerir. Ortak Dil Çalışma Süresini destekleyen C++ projeleriniz için oluşturduğunuz herhangi bir özel kural kümesine bu kural kümesini eklemenizi öneririz. |
+| **Microsoft Mixed (C++ /CLR) Önerilen Kurallar** | Bu kurallar, Ortak Dil Çalışma Süresini destekleyen C++ projelerinizdeki en yaygın ve kritik sorunlara odaklanır. Bu sorunlar, olası güvenlik açıklarını, uygulama çökmelerini ve diğer önemli mantık ve tasarım hatalarını içerir. Bu kural kümesi Visual Studio Professional sürümünde ve daha yüksek sürümlerinde kullanılmak üzere tasarlanmıştır. |
+| **Microsoft Güvenlik Kuralları** | Bu kural kümesi tüm Microsoft güvenlik kurallarını içerir. Bildirilen olası güvenlik sorunlarının sayısını en üst düzeye çıkarmak için ayarlanan bu kuralı ekleyin. |
 
-Bir çözümde Kod Analizi çalıştırmak için:
+Her kuralı eklemek için:
 
-- **Build** menüsünde, **çözüm üzerinde Kod analizini Çalıştır**' ı seçin.
+| Kural Seti | Açıklama |
+|--|--|
+| **Microsoft Tüm Kuralları** | Bu kural kümesi tüm kuralları içerir. Bu kural kümesinin çalıştırılması çok sayıda uyarı nın raporlanmasına neden olabilir. Kodunuzdaki tüm sorunların kapsamlı bir resmini elde etmek için bu kural kümesini kullanın. Projeleriniz için çalıştırmak için daha odaklanmış kural kümelerinden hangisinin en uygun olduğuna karar vermenize yardımcı olabilir. |
 
-Bir projede kod analizini çalıştırmak için:
+## <a name="run-code-analysis"></a>Kod çözümlemesi çalıştır
 
-1. Çözüm Gezgini, projenin adını seçin.
+Project Properties iletişim kutusunun **Kod Analizi** sayfasında, projenizi her oluşturduğunuzda çalışacak kod çözümlemesi yapılandırabilirsiniz. Kod çözümlemesi'ni el ile de çalıştırabilirsiniz.
 
-1. **Yapı** menüsünde, *Proje adı* **üzerinde Kod analizini Çalıştır** ' ı seçin.
+Bir çözüm üzerinde kod çözümlemesi çalıştırmak için:
 
-Kod analizini bir dosyada çalıştırmak için:
+- **Yapı** menüsünde, **Çözümde Kod Çözümle'yi Çalıştır'ı**seçin.
 
-1. Çözüm Gezgini, dosyanın adını seçin.
+Bir projede kod çözümlemesi çalıştırmak için:
 
-1. **Build** menüsünde, **dosya üzerinde Kod analizini Çalıştır** ' ı seçin veya **CTRL + SHIFT + ALT + F7**tuşlarına basın.
+1. Çözüm Gezgini'nde projenin adını seçin.
 
-   Proje veya çözüm derlenir ve kod analizi çalışır. Sonuçlar Hata Listesi görüntülenir.
+1. **Yapı** menüsünde, Proje **Adı'nda Kod Çözümlemesi'ni** *Project Name*seçin.
 
-## <a name="analyze-and-resolve-code-analysis-warnings"></a>Kod Analizi uyarılarını çözümleyin ve çözümleyin
+Bir dosyada kod çözümlemesi çalıştırmak için:
 
-Belirli bir uyarıyı çözümlemek için Hata Listesi uyarının başlığını seçin. Uyarı, sorunla ilgili ek bilgileri görüntüleyecek şekilde genişler. Mümkün olduğunda, kod analizi uyarıya yol gösteren satır numaralarını ve analiz mantığını görüntüler. Soruna yönelik olası çözümler dahil olmak üzere uyarı hakkında ayrıntılı bilgi için, ilgili çevrimiçi Yardım konusunu göstermek üzere uyarı KIMLIĞINI seçin.
+1. Çözüm Gezgini'nde dosyanın adını seçin.
 
-Bir uyarı seçtiğinizde, uyarıya neden olan kod satırı, Visual Studio kod Düzenleyicisi 'nde vurgulanır.
+1. **Yapı** menüsünde **Dosyada Kod Analizini Çalıştır'ı** seçin veya **Ctrl+Shift+Alt+F7 tuşuna**basın.
 
-Sorun anladıktan sonra kodunuzu çözebilirsiniz. Ardından, uyarının artık Hata Listesi göründüğünden ve Düzeltmelerinizin yeni bir uyarı gerçekleştirmediğinden emin olmak için kod analizini yeniden çalıştırın.
+   Proje veya çözüm derlenir ve kod çözümlemesi çalışır. Sonuçlar Hata Listesi penceresinde görünür.
 
-## <a name="suppress-code-analysis-warnings"></a>Kod Analizi uyarılarını gösterme
+## <a name="analyze-and-resolve-code-analysis-warnings"></a>Kod analizi uyarılarını analiz edin ve çözümleme
 
-Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Uyarıları artık Hata Listesi görünmeyecek şekilde tek tek izleyebilirsiniz.
+Hata Listesi penceresi, bulunan kod çözümleme uyarılarını listeler. Sonuçlar bir tabloda görüntülenir. Belirli bir uyarı hakkında daha fazla bilgi varsa, ilk sütun genişletme denetimi içerir. Sorun hakkında ek bilgi almak için ekranı genişletmek için ekranı seçin. Mümkün olduğunda, kod çözümlemesi uyarıya yol açan satır numaralarını ve çözümleme mantığını görüntüler.
 
-### <a name="to-suppress-a-warning"></a>Bir uyarıyı gizlemek için
+Sorunun olası çözümleri de dahil olmak üzere uyarı hakkında ayrıntılı bilgi için, ilgili çevrimiçi yardım makalesini görüntülemek için Kod sütunundaki uyarı kimliğini seçin.
 
-1. Ayrıntılı bilgiler görüntülenmiyorsa, genişletilecek uyarının başlığını seçin.
+İmleci Visual Studio kod düzenleyicisinde uyarıya neden olan kod satırına taşımak için bir uyarıyı çift tıklatın. Veya seçili uyarıya Enter tuşuna basın.
 
-1. Uyarının altındaki **Eylemler** bağlantısını seçin.
+Sorunu anladıktan sonra, sorunu kodunuzla çözebilirsiniz. Ardından, uyarının artık Hata Listesinde görünmediğinden emin olmak için kod çözümlemesini yeniden çalıştırın.
 
-1. **Iletiyi Gizle** ' yi ve ardından **kaynak '** ı seçin.
+## <a name="create-work-items-for-code-analysis-warnings"></a>Kod analizi uyarıları için iş öğeleri oluşturma
 
-   Bir ileti, kod satırı için uyarıyı belirten `#pragma warning (disable:[warning ID])` ekler.
+Visual Studio içinden hataları günlüğe kaydetmek için iş öğesi izleme özelliğini kullanabilirsiniz. Bu özelliği kullanmak için Azure DevOps Server 'ın bir örneğine (eski adıyla Team Foundation Server) bağlanmanız gerekir.
 
-## <a name="create-work-items-for-code-analysis-warnings"></a>Kod Analizi uyarıları için iş öğeleri oluşturma
+### <a name="to-create-a-work-item-for-one-or-more-cc-code-warnings"></a>Bir veya daha fazla C/C++ kod uyarısı için iş öğesi oluşturmak için
 
-Visual Studio içinden hataları günlüğe kaydetmek için çalışma öğesi izleme özelliğini kullanabilirsiniz. Bu özelliği kullanmak için bir Team Foundation Server örneğine bağlanmanız gerekir.
+1. Hata Listesinde, uyarıları genişletin ve seçin
 
-### <a name="to-create-a-work-item-for-one-or-more-cc-code-warnings"></a>Bir veya daha fazla C/C++ kod uyarısı için bir iş öğesi oluşturmak için
+1. Uyarılar için kısayol **menüsünde, İş Öğesi Oluştur'u**ve ardından iş öğesi türünü seçin.
 
-1. Hata Listesi, Genişlet ve uyarıları Seç
+1. Visual Studio, seçili uyarılar için tek bir iş öğesi oluşturur ve iş öğesini IDE'nin belge penceresinde görüntüler.
 
-1. Uyarıların kısayol menüsünde, **Iş öğesi oluştur**' u seçin ve sonra iş öğesi türünü seçin.
+1. Ek bilgi ekleyin ve ardından **İş Öğesini Kaydet'i**seçin.
 
-1. Visual Studio Seçili uyarılar için tek bir iş öğesi oluşturur ve iş öğesini IDE 'nin bir belge penceresinde görüntüler.
+## <a name="search-and-filter-code-analysis-results"></a>Arama ve filtre kodu analizi sonuçları
 
-1. Ek bilgileri ekleyin ve sonra **Iş öğesini kaydet**' i seçin.
+Uzun uyarı iletileri listelerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.
 
-## <a name="search-and-filter-code-analysis-results"></a>Kod analizi sonuçlarını arama ve filtreleme
+- **Uyarılara başlık veya uyarı kimliğine göre filtrelemek için**: Arama Hata Listesi kutusuna anahtar kelimeyi girin.
 
-Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.
-
-- **Uyarıları başlığa veya uyarı kimliğine göre filtrelemek için**: arama kutusuna anahtar sözcüğü girin.
-
-- **Uyarıları önem derecesine göre filtrelemek için**: varsayılan olarak, kod analizi Iletilerine bir **Uyarı**önem derecesi atanır. Bir veya daha fazla iletinin önem derecesini özel bir kural kümesinde **hata** olarak atayabilirsiniz. **Hata listesi** **önem derecesi** sütununda, açılan oku ve ardından filtre simgesini seçin. Yalnızca ilgili önem derecesine atanmış iletileri göstermek için **Uyarı** veya **hata** ' ı seçin. Tüm iletileri göstermek için **Tümünü Seç ' i** seçin.
+- **Uyarıları önem derecesine göre filtrelemek için**: Varsayılan olarak, kod çözümleme iletilerine **Uyarı'nın**önem derecesi atanır. Özel bir kural kümesinde bir veya daha fazla iletinin önem derecesini **Hata** olarak atayabilirsiniz. **Hata Listesi'nin** **Önem Derecesi** sütununda açılır ok ve ardından filtre simgesini seçin. Yalnızca ilgili önem derecesine atanan iletileri görüntülemek için **Uyarı** veya **Hata'yı** seçin. Tüm iletileri görüntülemek için **Tümünü Seç'i** seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [C/için kod analiziC++](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [C/C++ için kod analizi](../code-quality/code-analysis-for-c-cpp-overview.md)

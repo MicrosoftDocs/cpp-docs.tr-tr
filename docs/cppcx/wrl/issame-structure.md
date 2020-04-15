@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsSame structure
 - Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
-ms.openlocfilehash: b659f832756b79289181db34fa8d6fc0d974609d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcaf33309521b44163022e0ffa9b1e03e53e2551
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161283"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371343"
 ---
 # <a name="issame-structure"></a>IsSame Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,15 +40,15 @@ Başka bir tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen türü testleri bir türü belirtilmiş olup olmadığını başka aynıdır.
+Belirtilen bir türün başka bir belirtilen türle aynı olup olmadığını sınar.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constants"></a>Genel sabitler
+### <a name="public-constants"></a>Genel Sabitler
 
-Ad                    | Açıklama
+Adı                    | Açıklama
 ----------------------- | --------------------------------------------------
-[Issame::Value](#value) | Bir türden diğerine aynı olup olmadığını belirtir.
+[IsSame::değer](#value) | Bir türün diğerinin aynı olup olmadığını gösterir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -56,13 +56,13 @@ Ad                    | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** internal.h
+**Üstbilgi:** internal.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="value"></a>Issame::Value
+## <a name="issamevalue"></a><a name="value"></a>IsSame::değer
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 template <typename T1, typename T2>
@@ -80,6 +80,6 @@ struct IsSame<T1, T1>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türden diğerine aynı olup olmadığını belirtir.
+Bir türün diğerinin aynı olup olmadığını gösterir.
 
-`value` olan **true** şablon parametreleri aynı ise ve **false** şablon parametreleri farklıysa.
+`value`şablon parametreleri aynıysa ve şablon parametreleri farklıysa **yanlış** ise **doğrudur.**

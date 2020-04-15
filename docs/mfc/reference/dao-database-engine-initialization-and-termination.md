@@ -5,27 +5,27 @@ helpviewer_keywords:
 - DAO (Data Access Objects), termination
 - DAO (Data Access Objects), initialization
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
-ms.openlocfilehash: 24a24d5a81da18d01472fc760c2adf96ee9868d5
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 62460e8e55f70b8cb0743f1d044636d25121050d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303464"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365901"
 ---
 # <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
 
-DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. MFC DAO nesneleri kullanılırken, önce DAO veritabanı altyapısının başlatılması ve sonra uygulamanız veya DLL 'den sonlandırılmadan önce sonlandırılması gerekir. İki işlev, `AfxDaoInit` ve `AfxDaoTerm`, bu görevleri gerçekleştirir.
+DAO Access veritabanları ile kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3.6 son sürümüdür ve eski miş olarak kabul edilir. MFC DAO nesneleri kullanırken, DAO veritabanı altyapısı önce baş harfe çevrilmeli ve uygulamanız veya DLL çıkmadan önce sonlandırılmalıdır. İki işlev `AfxDaoInit` `AfxDaoTerm`ve , bu görevleri gerçekleştirin.
 
 ### <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
 
 |||
 |-|-|
-|[AfxDaoInit](#afxdaoinit)|DAO veritabanı altyapısını başlatır.|
+|[AfxDaoInit](#afxdaoinit)|DAO veritabanı altyapısını çalıştırıyor.|
 |[AfxDaoTerm](#afxdaoterm)|DAO veritabanı altyapısını sonlandırır.|
 
-##  <a name="afxdaoinit"></a>AfxDaoInit
+## <a name="afxdaoinit"></a><a name="afxdaoinit"></a>AfxDaoInit
 
-Bu işlev, DAO veritabanı altyapısını başlatır.
+Bu işlev DAO veritabanı altyapısını çalıştırıyor.
 
 ```
 
@@ -36,17 +36,17 @@ throw(CDaoException*);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çoğu durumda, uygulama gerektiği zaman otomatik olarak çağırdığı için `AfxDaoInit` çağırmanız gerekmez.
+Çoğu durumda, uygulama gerektiğinde otomatik `AfxDaoInit` olarak aradığından aramanız gerekmez.
 
-İlgili bilgiler için ve `AfxDaoInit`çağırma hakkında bir örnek için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
+İlgili bilgiler ve arama `AfxDaoInit`örneği için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Header** afxdao. h
+  **Başlık** afxdao.h
 
-##  <a name="afxdaoterm"></a>AfxDaoTerm
+## <a name="afxdaoterm"></a><a name="afxdaoterm"></a>AfxDaoTerm
 
-Bu işlev, DAO veritabanı altyapısını sonlandırır.
+Bu işlev DAO veritabanı altyapısını sonlandırır.
 
 ```
 
@@ -55,16 +55,16 @@ void AfxDaoTerm();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, bu işlevi yalnızca normal bir MFC DLL 'de çağırmanız gerekir; bir uygulama, gerektiğinde `AfxDaoTerm` otomatik olarak çağıracaktır.
+Genellikle, bu işlevi yalnızca normal bir MFC DLL'de aramanız gerekir; bir uygulama gerektiğinde `AfxDaoTerm` otomatik olarak arayacaktır.
 
-Normal MFC DLL 'Lerinde, `ExitInstance` işlevinden önce `AfxDaoTerm` çağırın, ancak tüm MFC DAO nesneleri yok edilir.
+Normal MFC DL'lerde, `AfxDaoTerm` işlevden `ExitInstance` önce arayın, ancak tüm MFC DAO nesneleri yok edildikten sonra.
 
-İlgili bilgiler için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
+İlgili bilgiler için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Header** afxdao. h
+  **Başlık** afxdao.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

@@ -1,5 +1,5 @@
 ---
-title: CD2DTextFormat sınıfı
+title: CD2DTextFormat Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CD2DTextFormat
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CD2DTextFormat [MFC], ReCreate
 - CD2DTextFormat [MFC], m_pTextFormat
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
-ms.openlocfilehash: fa2f3b663cb5258c64ec0405abacf2e4eedeb987
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f7310fd3ca2ac34df7cc1a99cd5527ea8ba709c4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396216"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369043"
 ---
-# <a name="cd2dtextformat-class"></a>CD2DTextFormat sınıfı
+# <a name="cd2dtextformat-class"></a>CD2DTextFormat Sınıfı
 
-IDWriteTextFormat için sarmalayıcı.
+IDWriteTextFormat için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,58 +45,58 @@ class CD2DTextFormat : public CD2DResource;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DTextFormat::CD2DTextFormat](#cd2dtextformat)|CD2DTextFormat bir nesne oluşturur.|
-|[CD2DTextFormat::~CD2DTextFormat](#_dtorcd2dtextformat)|Yıkıcı. D2D metin biçimi nesnesi yok ediliyorken çağırılır.|
+|[CD2DTextFormat::CD2DTextFormat](#cd2dtextformat)|CD2DTextFormat nesnesi oluşturuyor.|
+|[CD2DTextFormat::~CD2DTextFormat](#_dtorcd2dtextformat)|Yıkıcı. D2D metin biçimi nesnesi yok edilirken çağrılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DTextFormat::Create](#create)|Bir CD2DTextFormat oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DTextFormat::Destroy](#destroy)|CD2DTextFormat nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DTextFormat::get](#get)|Döndürür IDWriteTextFormat arabirimi|
-|[CD2DTextFormat::GetFontFamilyName](#getfontfamilyname)|Yazı tipi ailesinin adı bir kopyasını alır.|
-|[CD2DTextFormat::GetLocaleName](#getlocalename)|Yerel ayar adına bir kopyasını alır.|
-|[CD2DTextFormat::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
-|[CD2DTextFormat::ReCreate](#recreate)|Bir CD2DTextFormat yeniden oluşturur. (Geçersiz kılmaları [CD2DResource::ReCreate](../../mfc/reference/cd2dresource-class.md#recreate).)|
+|[CD2DTextFormat::Oluştur](#create)|BIR CD2DTextFormat oluşturur. [(CD2DResource geçersiz kılar::Oluştur](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DTextFormat::Destroy](#destroy)|BIR CD2DTextFormat nesnesini yok eder. (GEÇERSIZ Kılar [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DTextFormat::Get](#get)|IDWriteTextFormat arabirimini döndürür|
+|[CD2DTextFormat::GetFontFamilyName](#getfontfamilyname)|Yazı tipi soyadının bir kopyasını alır.|
+|[CD2DTextFormat::GetLocaleName](#getlocalename)|Yerel adın bir kopyasını alır.|
+|[CD2DTextFormat::Geçersiz](#isvalid)|Kaynak geçerliliğini denetler [(CD2DResource geçersiz kılar::Geçerlidir](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DTextFormat::Yeniden Oluşturma](#recreate)|CD2DTextFormat'ı yeniden oluşturur. [(CD2DResource geçersiz kılar::Yeniden Oluşturun](../../mfc/reference/cd2dresource-class.md#recreate).)|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DTextFormat::operator IDWriteTextFormat *](#operator_idwritetextformat_star)|Döndürür IDWriteTextFormat arabirimi|
+|[CD2DTextFormat::operatör IDWriteTextFormat*](#operator_idwritetextformat_star)|IDWriteTextFormat arabirimini döndürür|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DTextFormat::m_pTextFormat](#m_ptextformat)|Bir IDWriteTextFormat işaretçisi.|
+|[CD2DTextFormat::m_pTextFormat](#m_ptextformat)|IDWriteTextFormat için bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
 [CD2DTextFormat](../../mfc/reference/cd2dtextformat-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="_dtorcd2dtextformat"></a>  CD2DTextFormat:: ~ CD2DTextFormat
+## <a name="cd2dtextformatcd2dtextformat"></a><a name="_dtorcd2dtextformat"></a>CD2DTextFormat::~CD2DTextFormat
 
-Yıkıcı. D2D metin biçimi nesnesi yok ediliyorken çağırılır.
+Yıkıcı. D2D metin biçimi nesnesi yok edilirken çağrılır.
 
 ```
 virtual ~CD2DTextFormat();
 ```
 
-##  <a name="cd2dtextformat"></a>  CD2DTextFormat::CD2DTextFormat
+## <a name="cd2dtextformatcd2dtextformat"></a><a name="cd2dtextformat"></a>CD2DTextFormat::CD2DTextFormat
 
-CD2DTextFormat bir nesne oluşturur.
+CD2DTextFormat nesnesi oluşturuyor.
 
 ```
 CD2DTextFormat(
@@ -114,35 +114,35 @@ CD2DTextFormat(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 *strFontFamilyName*<br/>
-Yazı tipi ailesinin adı içeren bir CString nesne.
+Yazı tipi ailesinin adını içeren bir CString nesnesi.
 
-*FontSize*<br/>
-Yazı tipi DIP ("CİHAZDAN bağımsız piksel") birimi mantıksal boyutu. Bir DIPequals 1/96 inç.
+*Fontsize*<br/>
+DIP ("aygıttan bağımsız piksel") birimlerindeki yazı tipinin mantıksal boyutu. Bir DIP eşittir 1/96 inç.
 
-*fontWeight*<br/>
-Metin nesnesi için yazı tipi ağırlığı belirten bir değer.
+*Fontweight*<br/>
+Metin nesnesinin yazı tipi ağırlığını gösteren bir değer.
 
-*fontStyle*<br/>
-Yazı tipi stili metin nesnesini gösteren bir değer.
+*Fontstyle*<br/>
+Metin nesnesinin yazı tipi stilini gösteren bir değer.
 
-*fontStretch*<br/>
-Metin nesnesi için yazı tipi esnetme belirten bir değer.
+*Fontstretch*<br/>
+Metin nesnesi için yazı tipi uzantısını gösteren bir değer.
 
 *strFontLocale*<br/>
-Yerel ayar adı içeren bir CString nesne.
+Yerel ad içeren bir CString nesnesi.
 
 *pFontCollection*<br/>
-Yazı tipi koleksiyonu nesnesine bir işaretçi. Bu NULL olduğunda, sistem yazı tipi koleksiyonu belirtir.
+Yazı tipi toplama nesnesine işaretçi. Bu NULL olduğunda, sistem yazı tipi koleksiyonunu gösterir.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="create"></a>  CD2DTextFormat::Create
+## <a name="cd2dtextformatcreate"></a><a name="create"></a>CD2DTextFormat::Oluştur
 
-Bir CD2DTextFormat oluşturur.
+BIR CD2DTextFormat oluşturur.
 
 ```
 virtual HRESULT Create(CRenderTarget* */);
@@ -150,19 +150,19 @@ virtual HRESULT Create(CRenderTarget* */);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="destroy"></a>  CD2DTextFormat::Destroy
+## <a name="cd2dtextformatdestroy"></a><a name="destroy"></a>CD2DTextFormat::Destroy
 
-CD2DTextFormat nesnesini yok eder.
+BIR CD2DTextFormat nesnesini yok eder.
 
 ```
 virtual void Destroy();
 ```
 
-##  <a name="get"></a>  CD2DTextFormat::get
+## <a name="cd2dtextformatget"></a><a name="get"></a>CD2DTextFormat::Get
 
-Döndürür IDWriteTextFormat arabirimi
+IDWriteTextFormat arabirimini döndürür
 
 ```
 IDWriteTextFormat* Get();
@@ -170,11 +170,11 @@ IDWriteTextFormat* Get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir IDWriteTextFormat arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe yazılmazsa, IDWriteTextFormat arabirimini işaretçi veya NULL.
 
-##  <a name="getfontfamilyname"></a>  CD2DTextFormat::GetFontFamilyName
+## <a name="cd2dtextformatgetfontfamilyname"></a><a name="getfontfamilyname"></a>CD2DTextFormat::GetFontFamilyName
 
-Yazı tipi ailesinin adı bir kopyasını alır.
+Yazı tipi soyadının bir kopyasını alır.
 
 ```
 CString GetFontFamilyName() const;
@@ -182,11 +182,11 @@ CString GetFontFamilyName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yazı tipi ailesinin adı içeren CString nesne.
+Geçerli yazı tipi aile adını içeren CString nesnesi.
 
-##  <a name="getlocalename"></a>  CD2DTextFormat::GetLocaleName
+## <a name="cd2dtextformatgetlocalename"></a><a name="getlocalename"></a>CD2DTextFormat::GetLocaleName
 
-Yerel ayar adına bir kopyasını alır.
+Yerel adın bir kopyasını alır.
 
 ```
 CString GetLocaleName() const;
@@ -194,11 +194,11 @@ CString GetLocaleName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerel ayar adını içeren CString nesne.
+Geçerli yerel ad içeren CString nesnesi.
 
-##  <a name="isvalid"></a>  CD2DTextFormat::IsValid
+## <a name="cd2dtextformatisvalid"></a><a name="isvalid"></a>CD2DTextFormat::Geçersiz
 
-Kaynak geçerlilik denetimleri
+Kaynak geçerliliğini denetler
 
 ```
 virtual BOOL IsValid() const;
@@ -206,19 +206,19 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak geçerli ise TRUE; Aksi durumda FALSE.
+Kaynak geçerliyse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_ptextformat"></a>  CD2DTextFormat::m_pTextFormat
+## <a name="cd2dtextformatm_ptextformat"></a><a name="m_ptextformat"></a>CD2DTextFormat::m_pTextFormat
 
-Bir IDWriteTextFormat işaretçisi.
+IDWriteTextFormat için bir işaretçi.
 
 ```
 IDWriteTextFormat* m_pTextFormat;
 ```
 
-##  <a name="operator_idwritetextformat_star"></a>  CD2DTextFormat::operator IDWriteTextFormat *
+## <a name="cd2dtextformatoperator-idwritetextformat"></a><a name="operator_idwritetextformat_star"></a>CD2DTextFormat::operatör IDWriteTextFormat*
 
-Döndürür IDWriteTextFormat arabirimi
+IDWriteTextFormat arabirimini döndürür
 
 ```
 operator IDWriteTextFormat*();
@@ -226,11 +226,11 @@ operator IDWriteTextFormat*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir IDWriteTextFormat arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe yazılmazsa, IDWriteTextFormat arabirimini işaretçi veya NULL.
 
-##  <a name="recreate"></a>  CD2DTextFormat::ReCreate
+## <a name="cd2dtextformatrecreate"></a><a name="recreate"></a>CD2DTextFormat::Yeniden Oluşturma
 
-Bir CD2DTextFormat yeniden oluşturur.
+CD2DTextFormat'ı yeniden oluşturur.
 
 ```
 virtual HRESULT ReCreate(CRenderTarget* */);
@@ -238,7 +238,7 @@ virtual HRESULT ReCreate(CRenderTarget* */);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Microsoft::WRL::DeferrableEventArgs::GetDeferral method
 - Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
-ms.openlocfilehash: 4a3786e65873d6837389ad4fa5e7d06a14d66460
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bae2472a75ab77f138fcee0951a6b869cc7c8e82
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372561"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 
-Gönderilemeyenler için olay bağımsız değişken türleri için kullanılan bir şablon sınıfı.
+Ertelemeler için olay bağımsız değişkeni türleri için kullanılan şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,36 +31,36 @@ class DeferrableEventArgs : public TEventArgsInterface;
 
 ### <a name="parameters"></a>Parametreler
 
-*TEventArgsInterface*<br/>
-Ertelenmiş olay bağımsız değişkenleri bildirir arabirim türü.
+*TEventArgsArayüz*<br/>
+Ertelenmiş bir olay için bağımsız değişkenleri bildiren arabirim türü.
 
-*TEventArgsClass*<br/>
-Uygulayan sınıfa *TEventArgsInterface*.
+*TEventArgsSınıf*<br/>
+*TEventArgsInterface*uygulayan sınıf.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                                         | Açıklama
+Adı                                                         | Açıklama
 ------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------
-[DeferrableEventArgs::GetDeferral](#getdeferral)             | Bir başvuru edinir [erteleme](/uwp/api/windows.foundation.deferral) ertelenmiş bir olayı temsil eden nesne.
-[Deferrableeventargs::ınvokeallfinished](#invokeallfinished) | Ertelenmiş olayı işlemek için tüm işleme tamamlandığını göstermek için çağrılır.
+[ErtelenebilirEventArgs::GetDeferral](#getdeferral)             | Ertelenmiş bir olayı temsil eden [Erteleme](/uwp/api/windows.foundation.deferral) nesnesine bir başvuru alır.
+[ErtelenebilirEventArgs::InvokeAllFinished](#invokeallfinished) | Ertelenmiş bir olayı işlemek için tüm işlemlerin tamamladığını belirtmek için çağrıldı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıfın örnekleri, ertelenmiş olayları için olay işleyicileri geçirilir. Şablon parametreleri, belirli türde bir ertelenmiş olayı için olay bağımsız değişkenlerinin ayrıntıları tanımlayan bir arabirim ve arabirimi uygulayan bir sınıfı temsil eder.
+Bu sınıfın örnekleri ertelenmiş olaylar için olay işleyicilerine aktarılır. Şablon parametreleri, belirli bir ertelenmiş olay türü için olay bağımsız değişkenlerinin ayrıntılarını tanımlayan bir arabirimi ve bu arabirimi uygulayan bir sınıfı temsil eder.
 
-Sınıfı, ertelenmiş bir olay için bir olay işleyicisi için ilk bağımsız değişken olarak görünür. Çağırabilirsiniz [GetDeferral](#getdeferral) almak için yöntemi [erteleme](/uwp/api/windows.foundation.deferral) nesne içinden alabilirsiniz ertelenmiş olayla ilgili tüm bilgileri. Olay işleme tamamlandıktan sonra erteleme nesne üzerinde tam çağırmanız gerekir. Ardından çağırmalıdır [InvokeAllFinished](#invokeallfinished) olay işleyicisi yönteminin sonunda, hangi sağlar tamamlandığında tüm ertelenmiş olayları, düzgün bir şekilde bildiriliyor.
+Sınıf, ertelenmiş bir olay için bir olay işleyicisi için ilk bağımsız değişken olarak görünür. Ertelenmiş olay la ilgili tüm bilgileri alabileceğiniz [Erteleme](/uwp/api/windows.foundation.deferral) nesnesini almak için [GetDeferral](#getdeferral) yöntemini arayabilirsiniz. Olay işlemeyi tamamladıktan sonra, Erteleme nesnesi üzerinde Tamam'ı aramalısınız. Daha sonra, tüm ertelenmiş olayların tamamlanmasının düzgün bir şekilde iletilmesini sağlayan olay işleyicisi yönteminin sonunda [InvokeAllFinished'u](#invokeallfinished) aramalısınız.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** event.h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft::WRL
 
-## <a name="getdeferral"></a>DeferrableEventArgs::GetDeferral
+## <a name="deferrableeventargsgetdeferral"></a><a name="getdeferral"></a>ErtelenebilirEventArgs::GetDeferral
 
-Bir başvuru edinir [erteleme](/uwp/api/windows.foundation.deferral) ertelenmiş bir olayı temsil eden nesne.
+Ertelenmiş bir olayı temsil eden [Erteleme](/uwp/api/windows.foundation.deferral) nesnesine bir başvuru alır.
 
 ```cpp
 HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
@@ -69,15 +69,15 @@ HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ### <a name="parameters"></a>Parametreler
 
 *Sonuç*<br/>
-Bakacağınız bir işaretçi [erteleme](/uwp/api/windows.foundation.deferral) çağrısı tamamlandığında nesne.
+Çağrı tamamlandığında [Erteleme](/uwp/api/windows.foundation.deferral) nesnesi başvurur bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="invokeallfinished"></a>Deferrableeventargs::ınvokeallfinished
+## <a name="deferrableeventargsinvokeallfinished"></a><a name="invokeallfinished"></a>ErtelenebilirEventArgs::InvokeAllFinished
 
-Ertelenmiş olayı işlemek için tüm işleme tamamlandığını göstermek için çağrılır.
+Ertelenmiş bir olayı işlemek için tüm işlemlerin tamamladığını belirtmek için çağrıldı.
 
 ```cpp
 void InvokeAllFinished()
@@ -85,4 +85,4 @@ void InvokeAllFinished()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olay kaynağı çağrılarını sonra bu yöntemi çağırmanız gerekir [Invokeall](eventsource-class.md#invokeall). Bu yöntemi çağırmadan, daha fazla gönderilemeyenler gerçekleştirilmesini önler ve hiçbir gönderilemeyenler alınan, yürütülecek tamamlama işleyicisine zorlar.
+Olay kaynağı [InvokeAll'ı](eventsource-class.md#invokeall)aradıktan sonra bu yöntemi aramalısınız. Bu yöntemin çağrılması, daha fazla erteleme alınmasını önler ve erteleme alınmadığı takdirde tamamlama işleyicisini yürütmeye zorlar.

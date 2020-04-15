@@ -1,5 +1,5 @@
 ---
-title: C stili dizelerle ilgili CString işlemleri
+title: C Stili Dizelerle İlgili CString İşlemleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CString objects, basic operations
@@ -15,34 +15,34 @@ helpviewer_keywords:
 - strings [C++], class CString
 - casting CString objects
 ms.assetid: 5048de8a-5298-4891-b8a0-c554b5a3ac1b
-ms.openlocfilehash: eee23296d9aac40849dacf58c3b3d9bdf583d1df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 406a934d3691c7787085cc319770074ac2ee5926
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236105"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317944"
 ---
-# <a name="cstring-operations-relating-to-c-style-strings"></a>C stili dizelerle ilgili CString işlemleri
+# <a name="cstring-operations-relating-to-c-style-strings"></a>C Stili Dizelerle İlgili CString İşlemleri
 
-A [CString](../atl-mfc-shared/using-cstring.md) nesnesi karakter dizesi verileri içerir. `CString` kümesini devralan [yöntemleri ve işleçleri](../atl-mfc-shared/reference/cstringt-class.md) Sınıf şablonunda tanımlanan [CStringT](../atl-mfc-shared/reference/cstringt-class.md) dize verilerle çalışmak için. (`CString` olduğu bir **typedef** uzmanlaşmış `CStringT` karakter veri türü ile çalışmak için `CString` destekler.)
+[CString nesnesi](../atl-mfc-shared/using-cstring.md) karakter dize verileri içerir. `CString`dize verileriyle çalışmak üzere [CStringT](../atl-mfc-shared/reference/cstringt-class.md) sınıfı şablonunda tanımlanan [yöntem ve işleçler](../atl-mfc-shared/reference/cstringt-class.md) kümesini devralır. (`CString` `CString` destekleyen karakter verileri `CStringT` türü ile çalışmak için uzmanlaşmış bir **typedef** olduğunu.)
 
-`CString` karakter verileri, C stili null ile sonlandırılmış dize olarak dahili olarak depolamaz. Bunun yerine, `CString` böylece veriler ve gerektirdiği alanın daha güvenli bir şekilde izleyebilirsiniz karakter verileri uzunluğunu izler.
+`CString`karakter verilerini c stili null-sonlandırılan dize olarak dahili olarak depolamaz. Bunun `CString` yerine, karakter verilerinin uzunluğunu izler, böylece verileri ve gerektirdiği alanı daha güvenli bir şekilde izleyebilir.
 
-`CString` C stili dizeler kabul etmez ve C stili dize olarak karakter verilerine erişmek için yöntemler sağlar. Bu konu, nasıl kullanılacağını açıklayan aşağıdaki bölümleri içerir. bir `CString` C stili null ile sonlandırılmış bir dize gibi nesne.
+`CString`C stili dizeleri kabul eder ve c stili dize olarak karakter verilerine erişmek için yollar sağlar. Bu konu, c stili null-sonlandırılan dize gibi bir `CString` nesnenin nasıl kullanılacağını açıklayan aşağıdaki bölümleri içerir.
 
-- [C stili null ile sonlandırılmış dizeleri için dönüştürme](#_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string)
+- [C stili null-sonlandırılan dizeleri dönüştürme](#_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string)
 
-- [Dize işlevleri standart çalışma zamanı kitaplığı ile çalışma](#_core_working_with_standard_run.2d.time_library_string_functions)
+- [Standart çalışma zamanı kitaplık dize işlevleriyle çalışma](#_core_working_with_standard_run.2d.time_library_string_functions)
 
-- [CString içeriği doğrudan değiştirme](#_core_modifying_cstring_contents_directly)
+- [CString içeriğini doğrudan değiştirme](#_core_modifying_cstring_contents_directly)
 
-- [CString nesneleri değişken bağımsız değişken işlevleri ile kullanma](#_core_using_cstring_objects_with_variable_argument_functions)
+- [Değişken bağımsız değişken işlevleri olan CString nesnelerini kullanma](#_core_using_cstring_objects_with_variable_argument_functions)
 
-- [CString biçimsel parametreler belirtme](#_core_specifying_cstring_formal_parameters)
+- [CString resmi parametrelerini belirtme](#_core_specifying_cstring_formal_parameters)
 
-##  <a name="_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string"></a> C stili Null ile sonlandırılmış dize olarak CString kullanma
+## <a name="using-cstring-as-a-c-style-null-terminated-string"></a><a name="_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string"></a>C String'i C Stili Null-Sonlandırılan Dize olarak kullanma
 
-Kullanılacak bir `CString` nesnesi C stili dize olarak, LPCTSTR nesnesi. Aşağıdaki örnekte, `CString` salt okunur C stili null ile sonlandırılmış dizeye bir işaretçi döndürür. `strcpy` İşlevi C stili dizenin bir kopyasını değişkeninde koyar `myString`.
+C stili `CString` dize olarak bir nesne kullanmak için, lpctstr için nesne döküm. Aşağıdaki örnekte, `CString` bir işaretçiyi salt okunur C stili null-sonlandırılan dizedöndürür. İşlev, `strcpy` C stili dizesinin bir `myString`kopyasını değişkene koyar.
 
 ```cpp
 CString aCString = "A string";
@@ -50,56 +50,56 @@ char myString[256];
 strcpy(myString, (LPCTSTR)aCString);
 ```
 
-Kullanabileceğiniz `CString` yöntemleri, örneğin, `SetAt`dize nesnesindeki karakterlerin tek tek değiştirmek için. Ancak, LPCTSTR işaretçi geçicidir ve herhangi bir değişiklik yapıldığında geçersiz hale `CString`. `CString` Kapsam dışına de gidebilir ve otomatik olarak silinecek. Yeni bir LPCTSTR işaretçisinin alma öneririz bir `CString` nesne her birini kullanın.
+Dize `CString` nesnesindeki `SetAt`karakterleri tek tek değiştirmek için yöntemleri kullanabilirsiniz, örneğin. Ancak, LPCTSTR işaretçisi geçicidir ve `CString`'de değişiklik yapıldığında geçersiz olur. Ayrıca `CString` kapsam dışına çıkabilir ve otomatik olarak silinebilir. Her kullandığınızda bir nesnenin yeni bir `CString` LPCTSTR işaretçisini almanızı öneririz.
 
-Bazen bir kopyasını gerektirebilir `CString` doğrudan değiştirmek için veri. Daha güvenli işlevini `strcpy_s` (veya Unicode/MBCS-taşınabilir `_tcscpy_s`) kopyalamak için `CString` ayrı arabelleğine nesne. Burada karakterleri güvenli bir şekilde değiştirilebilir, aşağıdaki örnekte gösterildiği gibi budur.
+Bazen doğrudan değiştirmek için `CString` bir veri kopyası gerekebilir. Nesneyi ayrı bir `strcpy_s` arabelleğe kopyalamak için daha `_tcscpy_s`güvenli işlevi (veya Unicode/MBCS-taşınabilir) kullanın. `CString` Bu, aşağıdaki örnekte gösterildiği gibi karakterlerin güvenli bir şekilde değiştirilebileceği yerdir.
 
 [!code-cpp[NVC_ATLMFC_Utilities#189](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_1.cpp)]
 
 > [!NOTE]
-> Üçüncü bağımsız değişkeni `strcpy_s` (veya Unicode/MBCS-taşınabilir `_tcscpy_s`) ya da bir `const wchar_t*` (Unicode) veya bir `const char*` (ANSI). Geçişleri yukarıdaki örnekte bir `CString` bu bağımsız değişkeni. C++ derleyicisi, otomatik olarak tanımlanmış dönüştürme işlevi uygulanır `CString` dönüştürür sınıfı bir `CString` için bir `LPCTSTR`. Başka bir türden atama işlemleri tanımlama yeteneği C++'ın en kullanışlı özellikler biridir.
+> Üçüncü bağımsız `strcpy_s` değişken (veya Unicode/MBCS-taşınabilir) `_tcscpy_s` `const wchar_t*` ya (Unicode) `const char*` ya da (ANSI) 'dir. Yukarıdaki örnek bu `CString` bağımsız değişken için geçer. C++ derleyicisi, `CString` a'yı `CString` bir `LPCTSTR`. Döküm işlemlerini bir türden diğerine tanımlama yeteneği C++'ın en kullanışlı özelliklerinden biridir.
 
-##  <a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> Standart çalışma zamanı kitaplığı dize işlevleri ile çalışma
+## <a name="working-with-standard-run-time-library-string-functions"></a><a name="_core_working_with_standard_run.2d.time_library_string_functions"></a>Standart Çalışma Zamanı Kitaplığı Dize Fonksiyonları yla Çalışma
 
-Bulma olmalıdır bir `CString` kendisi için düşündüğünüz gibi standart C çalışma zamanı kitaplığı dize işlevleri kullanarak herhangi bir dize işlemi gerçekleştirmek için gereken yöntemini `strcmp` (veya Unicode/MBCS-taşınabilir `_tcscmp`).
+(veya Unicode/MBCS-taşınabilir) `CString` `strcmp` `_tcscmp`gibi standart C çalışma zamanı kitaplık dize işlevlerini kullanmayı düşünabileceğiniz herhangi bir dize işlemini gerçekleştirmek için bir yöntem bulabilmelisin.
 
-C çalışma zamanı dize işlevleri kullanmanız gerekiyorsa, içinde _core_using_cstring_as_a_c.2d.style_null.2d.terminated_string açıklanan teknikleri kullanabilirsiniz. Kopyalayabilirsiniz `CString` nesne eşdeğer bir C tarzı dize arabelleğine, arabellek ve sonuç C stili dizesi başa sonra atama işlemleri bir `CString` nesne.
+C çalışma zamanı dize işlevlerini kullanmanız gerekiyorsa, _core_using_cstring_as_a_c.2d.style_null.2d.terminated_string'da açıklanan teknikleri kullanabilirsiniz. Nesneyi `CString` eşdeğer bir C stili dize arabelleğine kopyalayabilir, işlemlerinizi arabellekte gerçekleştirebilir ve ardından `CString` ortaya çıkan C stili dizesini nesneye geri atayabilirsiniz.
 
-##  <a name="_core_modifying_cstring_contents_directly"></a> CString içeriği doğrudan değiştirme
+## <a name="modifying-cstring-contents-directly"></a><a name="_core_modifying_cstring_contents_directly"></a>CString İçeriklerini Doğrudan Değiştirme
 
-Çoğu durumda, kullanmanız gereken `CString` içeriğini değiştirmek için üye işlevleri bir `CString` nesne veya dönüştürülecek `CString` C stili bir karakter dizesi.
+Çoğu durumda, bir `CString` `CString` nesnenin içeriğini değiştirmek veya C stili `CString` karakter dizesini dönüştürmek için üye işlevleri kullanmanız gerekir.
 
-Burada anlamlı doğrudan değiştirmek için bazı durumlarda `CString` karakter arabelleği gereken işletim sistemi işlevleri ile çalışırken, örneğin, içeriği.
+Örneğin, karakter arabelleği gerektiren işletim `CString` sistemi işlevleriyle çalışırken içeriği doğrudan değiştirmenin mantıklı olduğu bazı durumlar vardır.
 
-`GetBuffer` Ve `ReleaseBuffer` yöntemleri iç karakter arabelleği erişim sunan bir `CString` nesne ve doğrudan değiştirmenize izin verir. Aşağıdaki adımlar, bu işlevler, bu amaçla kullanabileceğiniz gösterilmektedir.
+Ve `GetBuffer` `ReleaseBuffer` yöntemler, bir `CString` nesnenin iç karakter arabellesine erişim sağlar ve doğrudan değiştirmenize izin verebilmiştir. Aşağıdaki adımlar, bu işlevlerin bu amaç için nasıl kullanılacağını gösterir.
 
-### <a name="to-use-getbuffer-and-releasebuffer-to-access-the-internal-character-buffer-of-a-cstring-object"></a>GetBuffer ve ReleaseBuffer CString nesnenin iç karakter arabelleğine erişmek için kullanılacak
+### <a name="to-use-getbuffer-and-releasebuffer-to-access-the-internal-character-buffer-of-a-cstring-object"></a>Bir CString nesnesinin iç karakter arabelleği erişmek için GetBuffer ve ReleaseBuffer kullanmak için
 
-1. Çağrı `GetBuffer` için bir `CString` nesne ve ihtiyaç duyduğunuz arabellek uzunluğu belirtin.
+1. Bir `GetBuffer` `CString` nesne çağırın ve istediğiniz arabelleğe uzunluklarını belirtin.
 
-1. Tarafından döndürülen işaretçi kullanın `GetBuffer` karakterlere doğrudan yazma `CString` nesne.
+1. Karakterleri doğrudan `GetBuffer` `CString` nesneye yazmak için döndürülen işaretçiyi kullanın.
 
-1. Çağrı `ReleaseBuffer` için `CString` tüm iç güncelleştirmek için nesne `CString` durum bilgileri, örneğin, dize uzunluğu. İçeriğini değiştirdikten sonra bir `CString` doğrudan çağırmanız nesne `ReleaseBuffer` diğer çağırmadan önce `CString` üye işlevleri.
+1. Nesnenin, `CString` dize uzunluğu `CString` gibi tüm iç durum bilgilerini güncelleştirmesini çağırın. `ReleaseBuffer` Bir `CString` nesnenin içeriğini doğrudan değiştirdikten sonra, diğer `ReleaseBuffer` `CString` üye işlevleri çağırmadan önce aramanız gerekir.
 
-##  <a name="_core_using_cstring_objects_with_variable_argument_functions"></a> CString nesneleri değişken bağımsız değişken işlevleri ile kullanma
+## <a name="using-cstring-objects-with-variable-argument-functions"></a><a name="_core_using_cstring_objects_with_variable_argument_functions"></a>Değişken Bağımsız değişken işlevleri olan CString Nesnelerini Kullanma
 
-Bazı C İşlevler, değişken sayıda bağımsız değişken alır. Önemli bir örnektir `printf_s`. Bu tür bir işlev bildirildiği şekilde nedeniyle derleyici bağımsız değişken türü emin olamaz ve her bağımsız değişken üzerinde gerçekleştirmek için dönüştürme işlemi belirlenemiyor. Bu nedenle, geçerken dönüştürme açık bir tür kullanan temel bir `CString` değişken sayıda bağımsız değişken alan bir işlev nesnesi.
+Bazı C işlevleri değişken sayıda bağımsız değişken alır. Önemli bir `printf_s`örnek . Bu tür bir işlevin beyan edilme biçimi nedeniyle, derleyici bağımsız değişkenlerin türünden emin olamaz ve her bağımsız değişkende hangi dönüştürme işleminin gerçekleştirileceğini belirleyemez. Bu nedenle, bir `CString` nesneyi değişken sayıda bağımsız değişken alan bir işleve geçirirken açık bir tür döküm kullanmanız esastır.
 
-Kullanılacak bir `CString` türüne açıkça bir bağımsız değişken işlev nesnesi `CString` aşağıdaki örnekte gösterildiği gibi bir LPCTSTR dizesi.
+Değişken bağımsız `CString` değişken işlevinde bir nesneyi `CString` kullanmak için, aşağıdaki örnekte gösterildiği gibi açıkça bir LPCTSTR dizesini atın.
 
 [!code-cpp[NVC_ATLMFC_Utilities#190](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_2.cpp)]
 
-##  <a name="_core_specifying_cstring_formal_parameters"></a> CString resmi parametrelerini belirtme
+## <a name="specifying-cstring-formal-parameters"></a><a name="_core_specifying_cstring_formal_parameters"></a>CString Biçimsel Parametrelerin Belirtilmesi
 
-Bir dize bağımsız değişkeni gereken çoğu işlev için biçimsel parametre işlev prototipi belirtmek en iyi bir `const` karaktere bir işaretçi (`LPCTSTR`) yerine bir `CString`. Olarak biçimsel parametre belirtildiğinde bir `const` karaktere bir işaretçi, bir sabit dizesi, bir TCHAR dizi ya da bir işaretçi iletebilir [`"hi there"`], veya bir `CString` nesne. `CString` Nesne için bir LPCTSTR otomatik olarak da dönüştürülür. Bir LPCTSTR kullanabileceğiniz herhangi bir yerde de kullanabilirsiniz bir `CString` nesne.
+Dize bağımsız değişkeni gerektiren çoğu işlev için, işlev prototipindeki resmi `const` parametreyi`LPCTSTR`bir karaktere `CString`işaretçi olarak belirtmek en iyisidir ( ) bir . Resmi bir parametre bir `const` karakteriçin işaretçi olarak belirtildiğinde, bir işaretçiyi Bir TCHAR`"hi there"`dizisine, `CString` bir gerçek dize [ ]]'e veya bir nesneye geçirebilirsiniz. Nesne `CString` otomatik olarak LPCTSTR dönüştürülür. LPCTSTR kullanabileceğiniz herhangi bir yerde, bir `CString` nesneyi de kullanabilirsiniz.
 
-Biçimsel parametre bir sabit dize başvuru belirtebilirsiniz (diğer bir deyişle, `const CString&`), bağımsız değişken değiştirilmeyecek. DROP **const** işlevi tarafından değiştirilecek olan dize, değiştirici. Varsayılan null değer isterseniz, boş bir dize için başlatılamıyor. [`""`], aşağıda gösterildiği gibi:
+Bağımsız değişken değiştirilmezse, sabit bir dize başvurusu `const CString&`(diğer bir süre) olarak resmi bir parametre de belirtebilirsiniz. Dize işlev tarafından değiştirilecekse **const** değiştirici bırakın. Varsayılan null değeri istenirse, aşağıda gösterildiği gibi`""`[ ] null dizesine başharf:
 
 [!code-cpp[NVC_ATLMFC_Utilities#191](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_3.cpp)]
 
-Çoğu işlev sonuçları almak için basitçe dönebilirsiniz bir `CString` değer nesnesi.
+Çoğu işlev sonucu için, bir `CString` nesneyi değere göre döndürmeniz yeterlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
+[Dizeleri (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString Bağımsız Değişken Geçirme](../atl-mfc-shared/cstring-argument-passing.md)

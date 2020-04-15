@@ -1,5 +1,5 @@
 ---
-title: CMFCColorPickerCtrl sınıfı
+title: CMFCColorPickerCtrl Sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CMFCColorPickerCtrl
@@ -40,16 +40,16 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-ms.openlocfilehash: 1977717ee590acb63655ba21bfa5eb6bfe7c9bd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3c11db448ab31324367b7f314cd6bfe44c2e96d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403790"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367695"
 ---
-# <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl sınıfı
+# <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl Sınıfı
 
-`CMFCColorPickerCtrl` Sınıfı renkleri seçmek için kullanılan bir denetim için işlevsellik sağlar.
+Sınıf, `CMFCColorPickerCtrl` renkleri seçmek için kullanılan bir denetim için işlevsellik sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,80 +61,80 @@ class CMFCColorPickerCtrl : public CButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCColorPickerCtrl::CMFCColorPickerCtrl](#cmfccolorpickerctrl)|Oluşturur bir `CMFCColorPickerCtrl` nesne.|
+|[CMFCColorPickerCtrl::CMFCColorPickerCtrl](#cmfccolorpickerctrl)|Bir `CMFCColorPickerCtrl` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCColorPickerCtrl::GetColor](#getcolor)|Kullanıcının seçtiği rengini alır.|
-|[CMFCColorPickerCtrl::GetHLS](#gethls)|Kullanıcının seçtiği bir renk hue, parlaklık ve doygunluğu değerlerini alır.|
-|[CMFCColorPickerCtrl::GetHue](#gethue)|Kullanıcının seçtiği bir renk tonu bileşeninin alır.|
-|[CMFCColorPickerCtrl::GetLuminance](#getluminance)|Kullanıcının seçtiği bir renk parlaklığını bileşeninin alır.|
-|[CMFCColorPickerCtrl::GetSaturation](#getsaturation)|Kullanıcının seçtiği bir renk doygunluğu bileşeninin alır.|
-|[CMFCColorPickerCtrl::SelectCellHexagon](#selectcellhexagon)|Belirtilen RGB renk bileşenlerine ya da belirtilen hücre Altıgene tarafından tanımlanan renk için geçerli rengini ayarlar.|
-|[CMFCColorPickerCtrl::SetColor](#setcolor)|Geçerli renk belirtilen RGB renk değerine ayarlar.|
-|[CMFCColorPickerCtrl::SetHLS](#sethls)|Geçerli renk belirtilen HLS renk değerine ayarlar.|
-|[CMFCColorPickerCtrl::SetHue](#sethue)|Şu anda seçili renk tonu bileşeninin değiştirir.|
-|[CMFCColorPickerCtrl::SetLuminance](#setluminance)|Seçili renk aydınlatma bileşeninin değiştirir.|
-|[CMFCColorPickerCtrl::SetLuminanceBarWidth](#setluminancebarwidth)|Renk Seçici denetimi aydınlatma çubuğunun genişliğini ayarlar.|
-|[CMFCColorPickerCtrl::SetOriginalColor](#setoriginalcolor)|İlk seçilen rengini ayarlar.|
-|[CMFCColorPickerCtrl::SetPalette](#setpalette)|Geçerli renk paletine ayarlar.|
-|[CMFCColorPickerCtrl::SetSaturation](#setsaturation)|Seçili renk doygunluğu bileşeninin değiştirir.|
-|[CMFCColorPickerCtrl::SetType](#settype)|Görüntülenecek renk seçici denetimini türünü ayarlar.|
+|[CMFCColorPickerCtrl::GetColor](#getcolor)|Kullanıcının seçtiği rengi alır.|
+|[CMFCColorPickerCtrl::GetHLS](#gethls)|Kullanıcının seçtiği rengin renk tonunu, parlaklığını ve doygunluk değerlerini alır.|
+|[CMFCColorPickerCtrl::GetHue](#gethue)|Kullanıcının seçtiği rengin ton bileşenini alır.|
+|[CMFCColorPickerCtrl::GetLuminance](#getluminance)|Kullanıcının seçtiği rengin parlaklık bileşenini alır.|
+|[CMFCColorPickerCtrl::Alma Satürasyonu](#getsaturation)|Kullanıcının seçtiği rengin doygunluk bileşenini alır.|
+|[CMFCColorPickerCtrl::SelectCellHexagon](#selectcellhexagon)|Geçerli rengi belirtilen RGB renk bileşenleri veya belirtilen hücre altıgeni tarafından tanımlanan renge ayarlar.|
+|[CMFCColorPickerCtrl::SetColor](#setcolor)|Geçerli rengi belirtilen RGB renk değerine ayarlar.|
+|[CMFCColorPickerCtrl:SetHLS](#sethls)|Geçerli rengi belirtilen HLS renk değerine ayarlar.|
+|[CMFCColorPickerCtrl::SetHue](#sethue)|Şu anda seçili rengin ton bileşenini değiştirir.|
+|[CMFCColorPickerCtrl::SetLuminance](#setluminance)|Şu anda seçili rengin parlaklık bileşenini değiştirir.|
+|[CMFCColorPickerCtrl::SetLuminanceBarWidth](#setluminancebarwidth)|Renk seçici denetiminde parlaklık çubuğunun genişliğini ayarlar.|
+|[CMFCColorPickerCtrl::SetOriginalColor](#setoriginalcolor)|İlk seçili rengi ayarlar.|
+|[CMFCColorPickerCtrl::SetPalette](#setpalette)|Geçerli renk paletini ayarlar.|
+|[CMFCColorPickerCtrl::SetSaturation](#setsaturation)|Şu anda seçili rengin doygunluk bileşenini değiştirir.|
+|[CMFCColorPickerCtrl::SetType](#settype)|Görüntülemek için renk seçici denetiminin türünü ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCColorPickerCtrl::DrawCursor](#drawcursor)|Seçilen renge işaret eden bir imleç görüntülenmeden önce framework tarafından çağırılır.|
+|[CMFCColorPickerCtrl::DrawCursor](#drawcursor)|Seçili renge işaret eden bir imleç görüntülenmeden önce çerçeve tarafından çağrılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart renkler Altıgen renk paletinden seçilir ve özel renkler aydınlatma çubuğundan seçili renkleri kırmızı/yeşil/mavi gösterimi veya satuaration/hue/aydınlatma gösterimi kullanılarak belirtilen burada.
+Standart renkler altıgen renk paletinden seçilir ve renklerin kırmızı/yeşil/mavi gösterim veya ton/doygunluk/parlaklık gösterimi kullanılarak belirtildiği bir parlaklık çubuğundan özel renkler seçilir.
 
-Aşağıdaki çizimde birkaç gösterilmektedir `CMFCColorPickerCtrl` nesneleri.
+Aşağıdaki resimde birkaç `CMFCColorPickerCtrl` nesne gösterilmiştir.
 
 ![CMFCColorPickerCtrl iletişim kutusu](../../mfc/reference/media/colorpicker.png "CMFCColorPickerCtrl iletişim kutusu")
 
-`CMFCColorPickerCtrl` Stilleri iki çiftlerini destekler. ONALTILIK ve HEX_GREYSCALE stilleri standart renk seçimi için uygundur. SEÇİCİ ve AYDINLATMA stilleri özel renk seçimi için uygundur.
+İki `CMFCColorPickerCtrl` stil çiftini destekler. HEX ve HEX_GREYSCALE stilleri standart renk seçimi için uygundur. PICKER ve LUMINANCE stilleri özel renk seçimi için uygundur.
 
-Birleştirmek için aşağıdaki adımları gerçekleştirin `CMFCColorPickerCtrl` , iletişim kutusu denetimine:
+Denetimi iletişim kutunuza `CMFCColorPickerCtrl` dahil etmek için aşağıdaki adımları gerçekleştirin:
 
-1. Kullanırsanız **ClassWizard**, iletişim kutusu şablonunuza yeni bir düğme denetimi ekleyin (çünkü `CMFCColorPickerCtrl` sınıfı devralınır `CButton` sınıfı).
+1. **ClassWizard**kullanıyorsanız, iletişim kutusu şablonuna yeni bir düğme denetimi `CMFCColorPickerCtrl` ekleyin (sınıf `CButton` sınıftan devralındı.
 
-1. Yeni bir düğme denetimi ile iletişim kutusu sınıfınızı ilişkili olan bir üye değişkeni ekleyin. Ardından değişken türünden değiştirin `CButton` için `CMFCColorPickerCtrl`.
+1. İletişim kutusu sınıfınıza yeni düğme denetimiyle ilişkili bir üye değişken ekleyin. Daha sonra değişken `CButton` türünü `CMFCColorPickerCtrl`' den ' e değiştirin
 
-1. INSERT `WM_INITDIALOG` iletişim kutusu sınıfı için ileti işleyicisi. İşleyicisinde türü, paleti ve başlangıç seçili rengini ayarlayın `CMFCColorPickerCtrl` denetimi.
+1. İletişim kutusu `WM_INITDIALOG` sınıfı için ileti işleyicisini ekleyin. İşleyicide, denetimin türünü, paletini `CMFCColorPickerCtrl` ve ilk seçili rengini ayarlayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCColorPickerCtrl` çeşitli yöntemleri kullanarak nesne `CMFCColorPickerCtrl` sınıfı. Örnek Seçici denetim türünü ayarlama ve renk, hue, parlaklık ve doygunluğu nasıl ayarlanacağını gösterir. Bir örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCColorPickerCtrl` `CMFCColorPickerCtrl` sınıfta çeşitli yöntemler kullanarak bir nesneyi nasıl yapılandırışlagösteriyi gösterir. Örnek, seçici denetiminin türünü nasıl ayarlayacağı ve rengini, tonunu, parlaklığını ve doygunluğu nasıl ayarlanınacağı gösteriş verir. Örnek, [Yeni Denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#4](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#5](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CButton](../../mfc/reference/cbutton-class.md)
+[Cbutton](../../mfc/reference/cbutton-class.md)
 
 [CMFCColorPickerCtrl](../../mfc/reference/cmfccolorpickerctrl-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcolorpickerctrl.h
+**Üstbilgi:** afxcolorpickerctrl.h
 
-##  <a name="cmfccolorpickerctrl"></a>  CMFCColorPickerCtrl::CMFCColorPickerCtrl
+## <a name="cmfccolorpickerctrlcmfccolorpickerctrl"></a><a name="cmfccolorpickerctrl"></a>CMFCColorPickerCtrl::CMFCColorPickerCtrl
 
-Oluşturur bir `CMFCColorPickerCtrl` nesne.
+Bir `CMFCColorPickerCtrl` nesne inşa eder.
 
 ```
 CMFCColorPickerCtrl();
@@ -144,9 +144,9 @@ CMFCColorPickerCtrl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="drawcursor"></a>  CMFCColorPickerCtrl::DrawCursor
+## <a name="cmfccolorpickerctrldrawcursor"></a><a name="drawcursor"></a>CMFCColorPickerCtrl::DrawCursor
 
-Seçilen renge işaret eden bir imleç görüntülenmeden önce framework tarafından çağırılır.
+Seçili renge işaret eden bir imleç görüntülenmeden önce çerçeve tarafından çağrılır.
 
 ```
 virtual void DrawCursor(
@@ -156,19 +156,19 @@ virtual void DrawCursor(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-[in] Seçili renk çevresinde bir dikdörtgen alan belirtir.
+[içinde] Seçili rengin etrafında dikdörtgen bir alan belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seçilen renge işaret eden imleci şeklini değiştirmek istediğinizde bu yöntemi yok sayın.
+Seçili renge işaret eden imlecin şeklini değiştirmeniz gerektiğinde bu yöntemi geçersiz kılın.
 
-##  <a name="getcolor"></a>  CMFCColorPickerCtrl::GetColor
+## <a name="cmfccolorpickerctrlgetcolor"></a><a name="getcolor"></a>CMFCColorPickerCtrl::GetColor
 
-Kullanıcının seçtiği rengini alır.
+Kullanıcının seçtiği rengi alır.
 
 ```
 COLORREF GetColor() const;
@@ -176,13 +176,13 @@ COLORREF GetColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçilen rengin RGB değeri.
+Seçili rengin RGB değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gethls"></a>  CMFCColorPickerCtrl::GetHLS
+## <a name="cmfccolorpickerctrlgethls"></a><a name="gethls"></a>CMFCColorPickerCtrl::GetHLS
 
-Kullanıcının seçtiği bir renk hue, parlaklık ve doygunluğu değerlerini alır.
+Kullanıcının seçtiği rengin renk tonunu, parlaklığını ve doygunluk değerlerini alır.
 
 ```
 void GetHLS(
@@ -193,20 +193,20 @@ void GetHLS(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hue*<br/>
-[out] Çift aldığı hue bilgi türünde bir değişken işaretçisi.
+*Ton*<br/>
+[çıkış] Renk tonu bilgilerini alan bir tür çift değişkenini işaretçi.
 
-*Parlaklık*<br/>
-[out] Çift aldığı aydınlatma bilgi türünde bir değişken işaretçisi.
+*Parlak -lık*<br/>
+[çıkış] Parlaklık bilgilerini alan bir tür çift değişkenini işaretçi.
 
-*Doygunluğu*<br/>
-[out] Çift aldığı doygunluğu bilgi türünde bir değişken işaretçisi.
+*Doygun -luk*<br/>
+[çıkış] Doygunluk bilgilerini alan bir tür çift değişkenini işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gethue"></a>  CMFCColorPickerCtrl::GetHue
+## <a name="cmfccolorpickerctrlgethue"></a><a name="gethue"></a>CMFCColorPickerCtrl::GetHue
 
-Kullanıcının seçtiği bir renk tonu bileşeninin alır.
+Kullanıcının seçtiği rengin ton bileşenini alır.
 
 ```
 double GetHue() const;
@@ -214,13 +214,13 @@ double GetHue() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili renk tonu bileşeni.
+Seçili rengin ton bileşeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getluminance"></a>  CMFCColorPickerCtrl::GetLuminance
+## <a name="cmfccolorpickerctrlgetluminance"></a><a name="getluminance"></a>CMFCColorPickerCtrl::GetLuminance
 
-Kullanıcının seçtiği bir renk parlaklığını bileşeninin alır.
+Kullanıcının seçtiği rengin parlaklık bileşenini alır.
 
 ```
 double GetLuminance() const;
@@ -228,13 +228,13 @@ double GetLuminance() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili renk parlaklığını bileşeni.
+Seçili rengin parlaklık bileşeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getsaturation"></a>  CMFCColorPickerCtrl::GetSaturation
+## <a name="cmfccolorpickerctrlgetsaturation"></a><a name="getsaturation"></a>CMFCColorPickerCtrl::Alma Satürasyonu
 
-Kullanıcının seçtiği bir renk doygunluğu değerini alır.
+Kullanıcının seçtiği rengin doygunluk değerini alır.
 
 ```
 double GetSaturation() const;
@@ -242,13 +242,13 @@ double GetSaturation() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili renk doygunluğu bileşeni.
+Seçili rengin doygunluk bileşeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="selectcellhexagon"></a>  CMFCColorPickerCtrl::SelectCellHexagon
+## <a name="cmfccolorpickerctrlselectcellhexagon"></a><a name="selectcellhexagon"></a>CMFCColorPickerCtrl::SelectCellHexagon
 
-Belirtilen RGB renk bileşenlerine ya da belirtilen hücre Altıgene tarafından tanımlanan renk için geçerli rengini ayarlar.
+Geçerli rengi belirtilen RGB renk bileşenleri veya belirtilen hücre altıgeni tarafından tanımlanan renge ayarlar.
 
 ```
 void SelectCellHexagon(
@@ -264,33 +264,33 @@ BOOL SelectCellHexagon(
 ### <a name="parameters"></a>Parametreler
 
 *R*<br/>
-[in] Kırmızı renk bileşeni.
+[içinde] Kırmızı renk bileşeni.
 
 *G*<br/>
-[in] Yeşil renk bileşeni.
+[içinde] Yeşil renk bileşeni.
 
 *B*<br/>
-[in] Mavi renk bileşeni.
+[içinde] Mavi renk bileşeni.
 
-*x*<br/>
-[in] X koordinatı bir hücre Altıgene işaret imleci.
+*X*<br/>
+[içinde] İmleçin x-koordinatı, bir hücre altıgenini işaret eder.
 
 *Y*<br/>
-[in] Y koordinatı bir hücre Altıgene işaret imleci.
+[içinde] İmleçin y-koordinatı, bir hücre altıgenini işaret ediyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yönteminin ikinci aşırı yüklemesini her zaman false değerini döndürür.
+Bu yöntemin ikinci aşırı yükleme her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli renk renk seçimi denetime karşılık gelen rengi için bu yöntemi kümelerinin ilk aşırı yükleme kırmızı, yeşil ve mavi renk bileşenlerine belirtilen.
+Bu yöntemin ilk aşırı yükü, renk seçimi denetiminin belirtilen kırmızı, yeşil ve mavi renk bileşenlerine karşılık gelen renge geçerli rengi ayarlar.
 
-Bu yönteminin ikinci aşırı yüklemesini geçerli renk belirtilen İmleç konumuna tarafından işaret edilen hücre Altıgene rengine ayarlar.
+Bu yöntemin ikinci aşırı yükleme belirtilen imleç konumu tarafından işaret hücre altıgen rengi için geçerli renk ayarlar.
 
-##  <a name="setcolor"></a>  CMFCColorPickerCtrl::SetColor
+## <a name="cmfccolorpickerctrlsetcolor"></a><a name="setcolor"></a>CMFCColorPickerCtrl::SetColor
 
-Geçerli renk belirtilen RGB renk değerine ayarlar.
+Geçerli rengi belirtilen RGB renk değerine ayarlar.
 
 ```
 void SetColor(COLORREF Color);
@@ -299,13 +299,13 @@ void SetColor(COLORREF Color);
 ### <a name="parameters"></a>Parametreler
 
 *Renk*<br/>
-[in] Bir RGB renk değeri.
+[içinde] RGB renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="sethls"></a>  CMFCColorPickerCtrl::SetHLS
+## <a name="cmfccolorpickerctrlsethls"></a><a name="sethls"></a>CMFCColorPickerCtrl:SetHLS
 
-Geçerli renk belirtilen HLS renk değerine ayarlar.
+Geçerli rengi belirtilen HLS renk değerine ayarlar.
 
 ```
 void SetHLS(
@@ -317,23 +317,23 @@ void SetHLS(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hue*<br/>
-[in] Hue değeri.
+*Ton*<br/>
+[içinde] Bir renk değeri.
 
-*Parlaklık*<br/>
-[in] Aydınlatma değeri.
+*Parlak -lık*<br/>
+[içinde] Parlaklık değeri.
 
-*Doygunluğu*<br/>
-[in] Doygunluk değeri.
+*Doygun -luk*<br/>
+[içinde] Doygunluk değeri.
 
-*bInvalidate*<br/>
-[in] Pencerenin yeni renge hemen güncelleştirmeye zorlamak için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+*bGeçersiz*<br/>
+[içinde] Pencereyi yeni renge hemen güncellemeye zorlamak için TRUE; aksi takdirde, YANLIŞ. Varsayılan TRUE'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="sethue"></a>  CMFCColorPickerCtrl::SetHue
+## <a name="cmfccolorpickerctrlsethue"></a><a name="sethue"></a>CMFCColorPickerCtrl::SetHue
 
-Şu anda seçili renginin değişir.
+Seçili rengin tonunu değiştirir.
 
 ```
 void SetHue(double Hue);
@@ -341,14 +341,14 @@ void SetHue(double Hue);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hue*<br/>
-[in] Hue değeri.
+*Ton*<br/>
+[içinde] Bir renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setluminance"></a>  CMFCColorPickerCtrl::SetLuminance
+## <a name="cmfccolorpickerctrlsetluminance"></a><a name="setluminance"></a>CMFCColorPickerCtrl::SetLuminance
 
-Seçili renk renginin değişir.
+Şu anda seçili rengin parlaklığını değiştirir.
 
 ```
 void SetLuminance(double Luminance);
@@ -356,14 +356,14 @@ void SetLuminance(double Luminance);
 
 ### <a name="parameters"></a>Parametreler
 
-*Parlaklık*<br/>
-[in] Aydınlatma değeri.
+*Parlak -lık*<br/>
+[içinde] Parlaklık değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setluminancebarwidth"></a>  CMFCColorPickerCtrl::SetLuminanceBarWidth
+## <a name="cmfccolorpickerctrlsetluminancebarwidth"></a><a name="setluminancebarwidth"></a>CMFCColorPickerCtrl::SetLuminanceBarWidth
 
-Renk Seçici denetimi aydınlatma çubuğunun genişliğini ayarlar.
+Renk seçici denetiminde parlaklık çubuğunun genişliğini ayarlar.
 
 ```
 void SetLuminanceBarWidth(int w);
@@ -371,16 +371,16 @@ void SetLuminanceBarWidth(int w);
 
 ### <a name="parameters"></a>Parametreler
 
-*w*<br/>
-[in] Aydınlatma çubuğunun genişliğini piksel cinsinden ölçülür.
+*W*<br/>
+[içinde] Parlaklık çubuğunun genişliği piksel cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açık aydınlatma çubuğu, yeniden boyutlandırmak için bu yöntemi kullanmak **özel** Renk Seçici denetimini sekmesi. *w* parametresi yeni aydınlatma çubuğunun genişliğini belirtir. İstemci alan genişliği üç fourths aşarsa genişlik değeri yok sayıldı.
+Renk seçici denetiminin **Özel** sekmesinde bulunan parlaklık çubuğunu yeniden boyutlandırmak için bu yöntemi kullanın. *w* parametresi parlaklık çubuğunun yeni genişliğini belirtir. İstemci alan genişliğinin dörtte üçünü aşarsa genişlik değeri yoksayılır.
 
-##  <a name="setoriginalcolor"></a>  CMFCColorPickerCtrl::SetOriginalColor
+## <a name="cmfccolorpickerctrlsetoriginalcolor"></a><a name="setoriginalcolor"></a>CMFCColorPickerCtrl::SetOriginalColor
 
-İlk seçilen rengini ayarlar.
+İlk seçili rengi ayarlar.
 
 ```
 void SetOriginalColor(COLORREF ref);
@@ -389,15 +389,15 @@ void SetOriginalColor(COLORREF ref);
 ### <a name="parameters"></a>Parametreler
 
 *ref*<br/>
-[in] Bir RGB renk değeri.
+[içinde] RGB renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk Seçici denetimini başlatıldığında, bu yöntemi çağırın.
+Renk seçici denetimi başharfe geçtiğinde bu yöntemi çağırın.
 
-##  <a name="setpalette"></a>  CMFCColorPickerCtrl::SetPalette
+## <a name="cmfccolorpickerctrlsetpalette"></a><a name="setpalette"></a>CMFCColorPickerCtrl::SetPalette
 
-Geçerli renk paletine ayarlar.
+Geçerli renk paletini ayarlar.
 
 ```
 void SetPalette(CPalette* pPalette);
@@ -406,15 +406,15 @@ void SetPalette(CPalette* pPalette);
 ### <a name="parameters"></a>Parametreler
 
 *pPalette*<br/>
-[in] Renk paleti işaretçisi.
+[içinde] Renk paletine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk paletini sunulan dizi renklerin renk seçici denetimi tanımlar.
+Renk paleti, renk seçici denetiminde sunulan renk dizisini tanımlar.
 
-##  <a name="setsaturation"></a>  CMFCColorPickerCtrl::SetSaturation
+## <a name="cmfccolorpickerctrlsetsaturation"></a><a name="setsaturation"></a>CMFCColorPickerCtrl::SetSaturation
 
-Seçili renk doygunluğu değiştirir.
+Seçili rengin doygunluğu değişir.
 
 ```
 void SetSaturation(double Saturation);
@@ -422,14 +422,14 @@ void SetSaturation(double Saturation);
 
 ### <a name="parameters"></a>Parametreler
 
-*Doygunluğu*<br/>
-[in] Doygunluk değeri.
+*Doygun -luk*<br/>
+[içinde] Doygunluk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="settype"></a>  CMFCColorPickerCtrl::SetType
+## <a name="cmfccolorpickerctrlsettype"></a><a name="settype"></a>CMFCColorPickerCtrl::SetType
 
-Görüntülenecek renk seçici denetimini türünü ayarlar.
+Görüntülemek için renk seçici denetiminin türünü ayarlar.
 
 ```
 void SetType(COLORTYPE colorType);
@@ -438,13 +438,13 @@ void SetType(COLORTYPE colorType);
 ### <a name="parameters"></a>Parametreler
 
 *colorType*<br/>
-[in] Renk Seçici denetim türü.
+[içinde] Renk seçici kontrol türü.
 
-Türleri tarafından tanımlanan `CMFCColorPickerCtrl::COLORTYPE` sabit listesi. Olası AYDINLATMA, SEÇİCİ, ONALTILIK ve HEX_GREYSCALE türleridir. Varsayılan SEÇİCİ türüdür.
+Türleri numaralandırma ile `CMFCColorPickerCtrl::COLORTYPE` tanımlanır. Olası türleri LUMINANCE, PICKER, HEX ve HEX_GREYSCALE. Varsayılan tür PICKER'dır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Denetim oluşturulmadan önce bir renk seçici denetim türü belirtmek için bu yöntemi çağırın.
+Renk seçici denetim türünü belirtmek için, Windows denetimi oluşturulmadan önce bu yöntemi arayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

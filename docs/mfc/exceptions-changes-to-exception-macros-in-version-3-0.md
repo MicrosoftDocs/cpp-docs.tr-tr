@@ -1,5 +1,5 @@
 ---
-title: 'Özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler'
+title: "Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ exception handling [MFC], upgrade considerations
@@ -7,58 +7,58 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: fb51ad91e001f0ed153bf4fdb5aa598ab5ba5042
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82320b0c7ccd6766e016f0437633339f8f8f61d6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173290"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365489"
 ---
-# <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler
+# <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
 
 Bu gelişmiş bir konudur.
 
-MFC sürüm 3.0 ve sonraki sürümlerinde, C++ özel durumlarını kullanmak için özel durum işleme makroları değiştirildi. Bu makalede, bu değişiklikleri makroları kullanan mevcut kodu davranışını nasıl etkileyebileceğini söyler.
+MFC sürüm 3.0 ve sonraki sürümlerde, özel durum işleme makroları C++ özel durumlarını kullanacak şekilde değiştirildi. Bu makalede, bu değişikliklerin makroları kullanan varolan kodun davranışını nasıl etkileyebileceği açıklanmıştır.
 
-Bu makalede, aşağıdaki konular ele alınmaktadır:
+Bu makalede aşağıdaki konular ele:
 
-- [Özel durum türlerini ve CATCH makrosu](#_core_exception_types_and_the_catch_macro)
+- [Özel durum türleri ve CATCH makrosu](#_core_exception_types_and_the_catch_macro)
 
-- [Yeniden özel durumları atma](#_core_re.2d.throwing_exceptions)
+- [Özel durumları yeniden atma](#_core_re.2d.throwing_exceptions)
 
-##  <a name="_core_exception_types_and_the_catch_macro"></a> Özel durum türlerini ve CATCH makrosu
+## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a>Özel Durum Türleri ve CATCH Makrosu
 
-MFC, önceki sürümlerinde **CATCH** makrosu MFC çalışma zamanı türü bilgileri özel durum türünü belirlemek için kullanılan dize; özel durumun türü, diğer bir deyişle, catch sitede belirlenir. İle C++ özel durumlarını, ancak özel durumun türü her zaman throw sitede harekete geçirilen özel durum nesnesi türüne göre belirlenir. Burada oluşturulan nesneye bir işaretçi türü oluşturulan nesnenin türünden farklı nadir durumda bu uyumsuzlukların neden olur.
+MFC'nin önceki sürümlerinde **CATCH** makrosu, bir özel durum türünü belirlemek için MFC çalışma zamanı türü bilgilerini kullansın; istisnanın türü, başka bir deyişle, yakalama yerinde belirlenir. Ancak, C++ özel durumları ile, özel durum türü her zaman atılan özel durum nesnesinin türüne göre atma yerinde belirlenir. Bu, atılan nesneye işaretçi türünün atılan nesnenin türünden farklı olduğu nadir durumlarda uyumsuzluklara neden olur.
 
-Aşağıdaki örnekte, sonucu MFC sürüm 3.0 ve önceki sürümleri arasındaki bu fark gösterilmektedir:
+Aşağıdaki örnek, MFC sürüm 3.0 ve önceki sürümler arasındaki bu farkın sonucunu göstermektedir:
 
 [!code-cpp[NVC_MFCExceptions#1](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_1.cpp)]
 
-Denetimi her zaman için ilk geçirdiği için bu kod sürüm 3.0 farklı davranır **catch** bloğu ile eşleşen bir özel durum bildirimi. Throw ifadesi sonucu
+Denetim her zaman eşleşen bir özel durum bildirimi ile ilk **catch** bloğuna geçtiğinden, bu kod sürüm 3.0'da farklı şekilde davranın. Atma ifadesinin sonucu
 
 [!code-cpp[NVC_MFCExceptions#19](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]
 
-olarak oluşturulan bir `CException*`rağmen olarak oluşturulmuş bir `CCustomException`. **CATCH** MFC sürüm 2.5 ve önceki kullanımlar makroda `CObject::IsKindOf` çalışma zamanında tür test etmek için. Olduğundan ifade
+olarak `CException*`atılırsa, bir `CCustomException`olarak inşa edilmiş olsa bile . MFC sürümleri 2.5 ve önceki `CObject::IsKindOf` **CATCH** makro çalışma zamanında türünü test etmek için kullanır. Çünkü ifade
 
 [!code-cpp[NVC_MFCExceptions#20](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_3.cpp)]
 
-ilk yakalama bloğu özel durumu yakalar true olur. İkinci yakalama bloğunun özel durum işleme makroları birçoğu uygulamak için C++ özel durumlarını kullanan sürüm 3. 0, oluşturulan eşleşen `CException`.
+doğrudur, ilk catch bloğu özel durum yakalar. Özel durum işleme makrolarının çoğunu uygulamak için C++ özel durumlarını kullanan sürüm 3.0'da, ikinci catch bloğu atılanlarla `CException`eşleşir.
 
-Bu kodu değildir. Özel durum nesnesine genel kabul eden başka bir işleve geçirildiğinde genellikle görünür `CException*`, "ön throw" işleme gerçekleştirir ve son özel durum oluşturur.
+Bunun gibi kodlar nadirdir. Genellikle bir özel durum nesnesi genel `CException*`kabul eden başka bir işleve geçirildiğinde görünür, "ön atma" işleme gerçekleştirir ve son olarak özel durum atar.
 
-Bu sorunu gidermek için throw ifadesi fonksiyonu çağıran koda taşıyın ve derleyiciye özel durumu oluşturan zamanında bilinen gerçek türünde bir özel durum atar.
+Bu sorunu çözmek için, atma ifadesini işlevden arama koduna taşıyın ve özel durum oluşturulduğu anda derleyicitarafından bilinen gerçek türden bir özel durum atın.
 
-##  <a name="_core_re.2d.throwing_exceptions"></a> Yeniden özel durumları atma
+## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a>Özel Durumları Yeniden Atma
 
-Bir catch bloğu, yakalanan aynı özel durum işaretçisi nelze vyvolat.
+Catch bloğu, yakaladığı aynı özel durum işaretçisini atamaz.
 
-Örneğin, bu kod önceki sürümlerinde geçerli, ancak sahip sürüm 3.0 ile beklenmeyen sonuçlar:
+Örneğin, bu kod önceki sürümlerde geçerliydi, ancak sürüm 3.0 ile beklenmeyen sonuçlar doğurur:
 
 [!code-cpp[NVC_MFCExceptions#2](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_4.cpp)]
 
-Kullanarak **THROW** catch bloğu işaretçi neden `e` silinecek, böylece dış catch site geçersiz bir işaretçi alır. Kullanım **THROW_LAST** yeniden harekete geçirileceğini `e`.
+Catch bloğunda **THROW'nin** `e` kullanılması işaretçinin silinmesine neden olur, böylece dış catch sitesi geçersiz bir işaretçi alır. Yeniden **THROW_LAST** atmak `e`için THROW_LAST kullanın.
 
-Daha fazla bilgi için [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Daha fazla bilgi için özel [durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

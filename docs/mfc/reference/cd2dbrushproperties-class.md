@@ -1,5 +1,5 @@
 ---
-title: CD2DBrushProperties sınıfı
+title: CD2DBrushProperties Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DBrushProperties
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CD2DBrushProperties [MFC], CD2DBrushProperties
 - CD2DBrushProperties [MFC], CommonInit
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
-ms.openlocfilehash: 5ca791af658ee719b2e6d6ea78f82e23a66edc98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf6399d2a245addb7e2e65100d33643fcd54e893
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62253738"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369285"
 ---
-# <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties sınıfı
+# <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties Sınıfı
 
-İçin sarmalayıcı `D2D1_BRUSH_PROPERTIES`.
+Bir sarmalayıcı. `D2D1_BRUSH_PROPERTIES`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,15 +31,15 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DBrushProperties::CD2DBrushProperties](#cd2dbrushproperties)|Fazla Yüklendi. Oluşturur bir `CD2D_BRUSH_PROPERTIES` yapısı|
+|[CD2DBrushÖzellikleri::CD2DBrushProperties](#cd2dbrushproperties)|Fazla Yüklendi. Bir `CD2D_BRUSH_PROPERTIES` yapı oluşturur|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DBrushProperties::CommonInit](#commoninit)|Nesneyi başlatır|
+|[CD2DBrushProperties::CommonInit](#commoninit)|Nesneyi başharfe alar|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,11 +49,11 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties
+## <a name="cd2dbrushpropertiescd2dbrushproperties"></a><a name="cd2dbrushproperties"></a>CD2DBrushÖzellikleri::CD2DBrushProperties
 
-CD2D_BRUSH_PROPERTIES yapısını oluşturur
+CD2D_BRUSH_PROPERTIES bir yapı oluşturur
 
 ```
 CD2DBrushProperties();
@@ -67,14 +67,14 @@ CD2DBrushProperties(
 ### <a name="parameters"></a>Parametreler
 
 *_opacity*<br/>
-Fırça opaklığını temel. 1.0 varsayılan değerdir.
+Fırçanın taban opaklığı. Varsayılan değer 1.0'dır.
 
 *_transform*<br/>
-Dönüşüm fırçaya uygulamak için
+Fırçaya uygulanacak dönüşüm
 
-##  <a name="commoninit"></a>  CD2DBrushProperties::CommonInit
+## <a name="cd2dbrushpropertiescommoninit"></a><a name="commoninit"></a>CD2DBrushProperties::CommonInit
 
-Nesneyi başlatır
+Nesneyi başharfe alar
 
 ```
 void CommonInit();

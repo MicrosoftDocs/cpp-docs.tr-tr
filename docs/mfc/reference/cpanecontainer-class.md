@@ -1,5 +1,5 @@
 ---
-title: CPaneContainer Class
+title: CPaneContainer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneContainer
@@ -120,18 +120,18 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-ms.openlocfilehash: fab7415a71d8029952a840b83aae0f066c09084c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 316a144cf043c9732b5f3ab943aa120100d9ee32
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373121"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364139"
 ---
-# <a name="cpanecontainer-class"></a>CPaneContainer Class
+# <a name="cpanecontainer-class"></a>CPaneContainer Sınıfı
 
-`CPaneContainer` Sınıfı, temel bir MFC tarafından uygulanan yerleştirme modelinin ana bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleştirme bölmesine veya iki örneğini depolar `CPaneContainer.` ayrıca bölmeleri (veya kapsayıcıları) ayıran ayırıcıya bir işaretçi depolar. Kapsayıcıları iç içe geçirerek kapsayıcılar, karmaşık yerleştirme düzenlerini temsil eden bir ikili ağacı framework oluşturabilirsiniz. İkili ağacın kökünde depolanan bir [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) nesne.
+Sınıf, `CPaneContainer` MFC tarafından uygulanan yerleştirme modelinin temel bir bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleştirme bölmesine `CPaneContainer.` veya Iki Örneğine de depolar, bölmeleri (veya kapsayıcıları) ayıran bölücüye işaretçi de polar. Kapsayıcıların içine kapsayıcılar iç içe, çerçeve karmaşık yerleştirme düzenleri temsil eden bir ikili ağaç oluşturabilirsiniz. İkili ağacın kökü bir [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) nesnesinde depolanır.
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -143,22 +143,22 @@ class CPaneContainer : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPaneContainer::CPaneContainer](#cpanecontainer)|Varsayılan Oluşturucu.|
+|[CPaneContainer::CPaneContainer](#cpanecontainer)|Varsayılan oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CPaneContainer::AddPane](#addpane)||
 |[CPaneContainer::AddRef](#addref)||
 |[CPaneContainer::AddSubPaneContainer](#addsubpanecontainer)||
 |[CPaneContainer::CalcAvailablePaneSpace](#calcavailablepanespace)||
 |[CPaneContainer::CalcAvailableSpace](#calcavailablespace)||
-|[CPaneContainer::CalculateRecentSize](#calculaterecentsize)||
-|[CPaneContainer::CheckPaneDividerVisibility](#checkpanedividervisibility)||
-|[CPaneContainer::Copy](#copy)||
+|[CPaneContainer::Hesapson Size](#calculaterecentsize)||
+|[CPaneContainer::CheckPaneDividerGörünürlik](#checkpanedividervisibility)||
+|[CPaneContainer::Kopyala](#copy)||
 |[CPaneContainer::DeletePane](#deletepane)||
 |[CPaneContainer::FindSubPaneContainer](#findsubpanecontainer)||
 |[CPaneContainer::FindTabbedPane](#findtabbedpane)||
@@ -181,27 +181,27 @@ class CPaneContainer : public CObject
 |[CPaneContainer::GetTotalReferenceCount](#gettotalreferencecount)||
 |[CPaneContainer::GetWindowRect](#getwindowrect)||
 |[CPaneContainer::IsDisposed](#isdisposed)||
-|[CPaneContainer::IsEmpty](#isempty)||
+|[CPaneContainer::Boş](#isempty)||
 |[CPaneContainer::IsLeftPane](#isleftpane)||
 |[CPaneContainer::IsLeftPaneContainer](#isleftpanecontainer)||
 |[CPaneContainer::IsLeftPartEmpty](#isleftpartempty)||
 |[CPaneContainer::IsRightPartEmpty](#isrightpartempty)||
-|[CPaneContainer::IsVisible](#isvisible)||
-|[CPaneContainer::Move](#move)||
+|[CPaneContainer::Görünür](#isvisible)||
+|[CPaneContainer::Taşı](#move)||
 |[CPaneContainer::OnDeleteHidePane](#ondeletehidepane)||
 |[CPaneContainer::OnMoveInternalPaneDivider](#onmoveinternalpanedivider)||
 |[CPaneContainer::OnShowPane](#onshowpane)||
-|[CPaneContainer::Release](#release)||
+|[CPaneContainer::Yayın](#release)||
 |[CPaneContainer::ReleaseEmptyPaneContainer](#releaseemptypanecontainer)||
 |[CPaneContainer::RemoveNonValidPanes](#removenonvalidpanes)||
 |[CPaneContainer::RemovePane](#removepane)||
-|[CPaneContainer::Resize](#resize)||
+|[CPaneContainer::Yeniden boyutlandırma](#resize)||
 |[CPaneContainer::ResizePane](#resizepane)||
 |[CPaneContainer::ResizePartOfPaneContainer](#resizepartofpanecontainer)||
-|[CPaneContainer::Serialize](#serialize)|Okur veya ya da bir arşivden bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
+|[CPaneContainer::Serialize](#serialize)|Bu nesneyi arşivden veya arşivden okur veya yazar. (CObject geçersiz [kılar::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
 |[CPaneContainer::SetPane](#setpane)||
 |[CPaneContainer::SetPaneContainer](#setpanecontainer)||
-|[CPaneContainer::SetPaneDivider](#setpanedivider)||
+|[CPaneContainer::SetPaneBölücü](#setpanedivider)||
 |[CPaneContainer::SetParentPaneContainer](#setparentpanecontainer)||
 |[CPaneContainer::SetRecentPercent](#setrecentpercent)||
 |[CPaneContainer::SetUpByID](#setupbyid)||
@@ -210,26 +210,26 @@ class CPaneContainer : public CObject
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CPaneContainer` nesneleri framework tarafından otomatik olarak oluşturulur.
+`CPaneContainer`nesneler çerçeve tarafından otomatik olarak oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir örneğini oluşturmak gösterilmiştir `CPaneContainer` sınıfı. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, sınıfın bir örneğinin `CPaneContainer` nasıl oluşturulabildiğini göstermektedir. Bu kod [parçacığı, Küme Bölmesi Boyutu örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#1](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CPaneContainer](../../mfc/reference/cpanecontainer-class.md)
+[Cpanecontainer](../../mfc/reference/cpanecontainer-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpanecontainer.h
+**Üstbilgi:** afxpanecontainer.h
 
-##  <a name="addpane"></a>  CPaneContainer::AddPane
+## <a name="cpanecontaineraddpane"></a><a name="addpane"></a>CPaneContainer::AddPane
 
 ```
 CDockablePane* AddPane(CDockablePane* pBar);
@@ -237,13 +237,13 @@ CDockablePane* AddPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addref"></a>  CPaneContainer::AddRef
+## <a name="cpanecontaineraddref"></a><a name="addref"></a>CPaneContainer::AddRef
 
 ```
 void AddRef();
@@ -251,7 +251,7 @@ void AddRef();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addsubpanecontainer"></a>  CPaneContainer::AddSubPaneContainer
+## <a name="cpanecontaineraddsubpanecontainer"></a><a name="addsubpanecontainer"></a>CPaneContainer::AddSubPaneContainer
 
 ```
 BOOL AddSubPaneContainer(
@@ -261,14 +261,14 @@ BOOL AddSubPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *Implement_serıalıze*<br/>
-[in] *bRightNodeNew*<br/>
+[içinde] *pKonteyner*<br/>
+[içinde] *bRightNodeYeni*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="calcavailablepanespace"></a>  CPaneContainer::CalcAvailablePaneSpace
+## <a name="cpanecontainercalcavailablepanespace"></a><a name="calcavailablepanespace"></a>CPaneContainer::CalcAvailablePaneSpace
 
 ```
 virtual int CalcAvailablePaneSpace(
@@ -280,16 +280,16 @@ virtual int CalcAvailablePaneSpace(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRequiredOffset*<br/>
-[in] *pBar*<br/>
-[in] *Implement_serıalıze*<br/>
-[in] *bLeftBar*<br/>
+[içinde] *nRequiredOffset*<br/>
+[içinde] *pBar*<br/>
+[içinde] *pKonteyner*<br/>
+[içinde] *bLeftBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="calcavailablespace"></a>  CPaneContainer::CalcAvailableSpace
+## <a name="cpanecontainercalcavailablespace"></a><a name="calcavailablespace"></a>CPaneContainer::CalcAvailableSpace
 
 ```
 virtual CSize CalcAvailableSpace(
@@ -299,14 +299,14 @@ virtual CSize CalcAvailableSpace(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *sizeStretch*<br/>
-[in] *bLeftBar*<br/>
+[içinde] *boyutStretch*<br/>
+[içinde] *bLeftBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="calculaterecentsize"></a>  CPaneContainer::CalculateRecentSize
+## <a name="cpanecontainercalculaterecentsize"></a><a name="calculaterecentsize"></a>CPaneContainer::Hesapson Size
 
 ```
 void CalculateRecentSize();
@@ -314,7 +314,7 @@ void CalculateRecentSize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="checkpanedividervisibility"></a>  CPaneContainer::CheckPaneDividerVisibility
+## <a name="cpanecontainercheckpanedividervisibility"></a><a name="checkpanedividervisibility"></a>CPaneContainer::CheckPaneDividerGörünürlik
 
 ```
 void CheckPaneDividerVisibility();
@@ -322,7 +322,7 @@ void CheckPaneDividerVisibility();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="copy"></a>  CPaneContainer::Copy
+## <a name="cpanecontainercopy"></a><a name="copy"></a>CPaneContainer::Kopyala
 
 ```
 virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
@@ -330,13 +330,13 @@ virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pParentContainer*<br/>
+[içinde] *pParentContainer*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="cpanecontainer"></a>  CPaneContainer::CPaneContainer
+## <a name="cpanecontainercpanecontainer"></a><a name="cpanecontainer"></a>CPaneContainer::CPaneContainer
 
 ```
 CPaneContainer(
@@ -348,14 +348,14 @@ CPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pManager*<br/>
-[in] *pLeftBar*<br/>
-[in] *pRightBar*<br/>
-[in] *pSlider*<br/>
+[içinde] *pManager*<br/>
+[içinde] *pLeftBar*<br/>
+[içinde] *pRightBar*<br/>
+[içinde] *pSlider*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="deletepane"></a>  CPaneContainer::DeletePane
+## <a name="cpanecontainerdeletepane"></a><a name="deletepane"></a>CPaneContainer::DeletePane
 
 ```
 virtual void DeletePane(
@@ -365,12 +365,12 @@ virtual void DeletePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
-[in] *barType*<br/>
+[içinde] *pBar*<br/>
+[içinde] *barType*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findsubpanecontainer"></a>  CPaneContainer::FindSubPaneContainer
+## <a name="cpanecontainerfindsubpanecontainer"></a><a name="findsubpanecontainer"></a>CPaneContainer::FindSubPaneContainer
 
 ```
 CPaneContainer* FindSubPaneContainer(
@@ -380,14 +380,14 @@ CPaneContainer* FindSubPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pObject*<br/>
-[in] *findCriteria*<br/>
+[içinde] *pNesne*<br/>
+[içinde] *bulmaKriterleri*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findtabbedpane"></a>  CPaneContainer::FindTabbedPane
+## <a name="cpanecontainerfindtabbedpane"></a><a name="findtabbedpane"></a>CPaneContainer::FindTabbedPane
 
 ```
 CDockablePane* FindTabbedPane(UINT nID);
@@ -395,13 +395,13 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nID*<br/>
+[içinde] *nID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getassociatedsiblingpaneids"></a>  CPaneContainer::GetAssociatedSiblingPaneIDs
+## <a name="cpanecontainergetassociatedsiblingpaneids"></a><a name="getassociatedsiblingpaneids"></a>CPaneContainer::GetAssociatedSiblingPaneIDs
 
 ```
 CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
@@ -409,13 +409,13 @@ CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getleftpane"></a>  CPaneContainer::GetLeftPane
+## <a name="cpanecontainergetleftpane"></a><a name="getleftpane"></a>CPaneContainer::GetLeftPane
 
 ```
 const CDockablePane* GetLeftPane() const;
@@ -425,7 +425,7 @@ const CDockablePane* GetLeftPane() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getleftpanecontainer"></a>  CPaneContainer::GetLeftPaneContainer
+## <a name="cpanecontainergetleftpanecontainer"></a><a name="getleftpanecontainer"></a>CPaneContainer::GetLeftPaneContainer
 
 ```
 const CPaneContainer* GetLeftPaneContainer() const;
@@ -435,7 +435,7 @@ const CPaneContainer* GetLeftPaneContainer() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getminsize"></a>  CPaneContainer::GetMinSize
+## <a name="cpanecontainergetminsize"></a><a name="getminsize"></a>CPaneContainer::GetMinSize
 
 ```
 virtual void GetMinSize(CSize& size) const;
@@ -443,11 +443,11 @@ virtual void GetMinSize(CSize& size) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *boyutu*<br/>
+[içinde] *boyutu*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getminsizeleft"></a>  CPaneContainer::GetMinSizeLeft
+## <a name="cpanecontainergetminsizeleft"></a><a name="getminsizeleft"></a>CPaneContainer::GetMinSizeLeft
 
 ```
 virtual void GetMinSizeLeft(CSize& size) const;
@@ -455,11 +455,11 @@ virtual void GetMinSizeLeft(CSize& size) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *boyutu*<br/>
+[içinde] *boyutu*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getminsizeright"></a>  CPaneContainer::GetMinSizeRight
+## <a name="cpanecontainergetminsizeright"></a><a name="getminsizeright"></a>CPaneContainer::GetMinSizeRight
 
 ```
 virtual void GetMinSizeRight(CSize& size) const;
@@ -467,11 +467,11 @@ virtual void GetMinSizeRight(CSize& size) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *boyutu*<br/>
+[içinde] *boyutu*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getnodecount"></a>  CPaneContainer::GetNodeCount
+## <a name="cpanecontainergetnodecount"></a><a name="getnodecount"></a>CPaneContainer::GetNodeCount
 
 ```
 int GetNodeCount() const;
@@ -481,7 +481,7 @@ int GetNodeCount() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getpanedivider"></a>  CPaneContainer::GetPaneDivider
+## <a name="cpanecontainergetpanedivider"></a><a name="getpanedivider"></a>CPaneContainer::GetPaneDivider
 
 ```
 const CPaneDivider* GetPaneDivider() const;
@@ -491,7 +491,7 @@ const CPaneDivider* GetPaneDivider() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getparentpanecontainer"></a>  CPaneContainer::GetParentPaneContainer
+## <a name="cpanecontainergetparentpanecontainer"></a><a name="getparentpanecontainer"></a>CPaneContainer::GetParentPaneContainer
 
 ```
 CPaneContainer* GetParentPaneContainer() const;
@@ -501,7 +501,7 @@ CPaneContainer* GetParentPaneContainer() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrecentpanedividerrect"></a>  CPaneContainer::GetRecentPaneDividerRect
+## <a name="cpanecontainergetrecentpanedividerrect"></a><a name="getrecentpanedividerrect"></a>CPaneContainer::GetRecentPaneDividerRect
 
 ```
 CRect GetRecentPaneDividerRect() const;
@@ -511,7 +511,7 @@ CRect GetRecentPaneDividerRect() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrecentpanedividerstyle"></a>  CPaneContainer::GetRecentPaneDividerStyle
+## <a name="cpanecontainergetrecentpanedividerstyle"></a><a name="getrecentpanedividerstyle"></a>CPaneContainer::GetRecentPaneDividerStyle
 
 ```
 DWORD GetRecentPaneDividerStyle() const;
@@ -521,7 +521,7 @@ DWORD GetRecentPaneDividerStyle() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrecentpercent"></a>  CPaneContainer::GetRecentPercent
+## <a name="cpanecontainergetrecentpercent"></a><a name="getrecentpercent"></a>CPaneContainer::GetRecentPercent
 
 ```
 int GetRecentPercent();
@@ -531,7 +531,7 @@ int GetRecentPercent();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrefcount"></a>  CPaneContainer::GetRefCount
+## <a name="cpanecontainergetrefcount"></a><a name="getrefcount"></a>CPaneContainer::GetRefCount
 
 ```
 LONG GetRefCount();
@@ -541,7 +541,7 @@ LONG GetRefCount();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getresizestep"></a>  CPaneContainer::GetResizeStep
+## <a name="cpanecontainergetresizestep"></a><a name="getresizestep"></a>CPaneContainer::GetResizeStep
 
 ```
 virtual int GetResizeStep() const;
@@ -551,7 +551,7 @@ virtual int GetResizeStep() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrightpane"></a>  CPaneContainer::GetRightPane
+## <a name="cpanecontainergetrightpane"></a><a name="getrightpane"></a>CPaneContainer::GetRightPane
 
 ```
 const CDockablePane* GetRightPane() const;
@@ -561,7 +561,7 @@ const CDockablePane* GetRightPane() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrightpanecontainer"></a>  CPaneContainer::GetRightPaneContainer
+## <a name="cpanecontainergetrightpanecontainer"></a><a name="getrightpanecontainer"></a>CPaneContainer::GetRightPaneContainer
 
 ```
 const CPaneContainer* GetRightPaneContainer() const;
@@ -571,7 +571,7 @@ const CPaneContainer* GetRightPaneContainer() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gettotalreferencecount"></a>  CPaneContainer::GetTotalReferenceCount
+## <a name="cpanecontainergettotalreferencecount"></a><a name="gettotalreferencecount"></a>CPaneContainer::GetTotalReferenceCount
 
 ```
 int GetTotalReferenceCount() const;
@@ -581,7 +581,7 @@ int GetTotalReferenceCount() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getwindowrect"></a>  CPaneContainer::GetWindowRect
+## <a name="cpanecontainergetwindowrect"></a><a name="getwindowrect"></a>CPaneContainer::GetWindowRect
 
 ```
 virtual void GetWindowRect(
@@ -591,12 +591,12 @@ virtual void GetWindowRect(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dikdörtgen*<br/>
-[in] *bIgnoreVisibility*<br/>
+[içinde] *rekt*<br/>
+[içinde] *bIgnoreGörünürlük*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isdisposed"></a>  CPaneContainer::IsDisposed
+## <a name="cpanecontainerisdisposed"></a><a name="isdisposed"></a>CPaneContainer::IsDisposed
 
 ```
 BOOL IsDisposed() const;
@@ -606,7 +606,7 @@ BOOL IsDisposed() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isempty"></a>  CPaneContainer::IsEmpty
+## <a name="cpanecontainerisempty"></a><a name="isempty"></a>CPaneContainer::Boş
 
 ```
 BOOL IsEmpty() const;
@@ -616,7 +616,7 @@ BOOL IsEmpty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isleftpane"></a>  CPaneContainer::IsLeftPane
+## <a name="cpanecontainerisleftpane"></a><a name="isleftpane"></a>CPaneContainer::IsLeftPane
 
 ```
 BOOL IsLeftPane(CDockablePane* pBar) const;
@@ -624,13 +624,13 @@ BOOL IsLeftPane(CDockablePane* pBar) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isleftpanecontainer"></a>  CPaneContainer::IsLeftPaneContainer
+## <a name="cpanecontainerisleftpanecontainer"></a><a name="isleftpanecontainer"></a>CPaneContainer::IsLeftPaneContainer
 
 ```
 BOOL IsLeftPaneContainer() const;
@@ -640,7 +640,7 @@ BOOL IsLeftPaneContainer() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isleftpartempty"></a>  CPaneContainer::IsLeftPartEmpty
+## <a name="cpanecontainerisleftpartempty"></a><a name="isleftpartempty"></a>CPaneContainer::IsLeftPartEmpty
 
 ```
 BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
@@ -648,13 +648,13 @@ BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bCheckVisibility*<br/>
+[içinde] *bCheckGörünürlük*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isrightpartempty"></a>  CPaneContainer::IsRightPartEmpty
+## <a name="cpanecontainerisrightpartempty"></a><a name="isrightpartempty"></a>CPaneContainer::IsRightPartEmpty
 
 ```
 BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
@@ -662,13 +662,13 @@ BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bCheckVisibility*<br/>
+[içinde] *bCheckGörünürlük*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isvisible"></a>  CPaneContainer::IsVisible
+## <a name="cpanecontainerisvisible"></a><a name="isvisible"></a>CPaneContainer::Görünür
 
 ```
 BOOL IsVisible() const;
@@ -678,7 +678,7 @@ BOOL IsVisible() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="move"></a>  CPaneContainer::Move
+## <a name="cpanecontainermove"></a><a name="move"></a>CPaneContainer::Taşı
 
 ```
 virtual void Move(CPoint ptNewLeftTop);
@@ -686,11 +686,11 @@ virtual void Move(CPoint ptNewLeftTop);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ptNewLeftTop*<br/>
+[içinde] *ptNewLeftTop*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondeletehidepane"></a>  CPaneContainer::OnDeleteHidePane
+## <a name="cpanecontainerondeletehidepane"></a><a name="ondeletehidepane"></a>CPaneContainer::OnDeleteHidePane
 
 ```
 void OnDeleteHidePane(
@@ -700,12 +700,12 @@ void OnDeleteHidePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
-[in] *bHide*<br/>
+[içinde] *pBar*<br/>
+[içinde] *bHide*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onmoveinternalpanedivider"></a>  CPaneContainer::OnMoveInternalPaneDivider
+## <a name="cpanecontaineronmoveinternalpanedivider"></a><a name="onmoveinternalpanedivider"></a>CPaneContainer::OnMoveInternalPaneDivider
 
 ```
 virtual int OnMoveInternalPaneDivider(
@@ -715,14 +715,14 @@ virtual int OnMoveInternalPaneDivider(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nOffset*<br/>
-[in] *hdwp*<br/>
+[içinde] *nOffset*<br/>
+[içinde] *hdwp*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshowpane"></a>  CPaneContainer::OnShowPane
+## <a name="cpanecontaineronshowpane"></a><a name="onshowpane"></a>CPaneContainer::OnShowPane
 
 ```
 virtual void OnShowPane(
@@ -732,12 +732,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
-[in] *bBilgi Göster*<br/>
+[içinde] *pBar*<br/>
+[içinde] *bGöster*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="release"></a>  CPaneContainer::Release
+## <a name="cpanecontainerrelease"></a><a name="release"></a>CPaneContainer::Yayın
 
 ```
 DWORD Release();
@@ -747,7 +747,7 @@ DWORD Release();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="releaseemptypanecontainer"></a>  CPaneContainer::ReleaseEmptyPaneContainer
+## <a name="cpanecontainerreleaseemptypanecontainer"></a><a name="releaseemptypanecontainer"></a>CPaneContainer::ReleaseEmptyPaneContainer
 
 ```
 void ReleaseEmptyPaneContainer();
@@ -755,7 +755,7 @@ void ReleaseEmptyPaneContainer();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removenonvalidpanes"></a>  CPaneContainer::RemoveNonValidPanes
+## <a name="cpanecontainerremovenonvalidpanes"></a><a name="removenonvalidpanes"></a>CPaneContainer::RemoveNonValidPanes
 
 ```
 void RemoveNonValidPanes();
@@ -763,7 +763,7 @@ void RemoveNonValidPanes();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removepane"></a>  CPaneContainer::RemovePane
+## <a name="cpanecontainerremovepane"></a><a name="removepane"></a>CPaneContainer::RemovePane
 
 ```
 virtual void RemovePane(CDockablePane* pBar);
@@ -771,11 +771,11 @@ virtual void RemovePane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="resize"></a>  CPaneContainer::Resize
+## <a name="cpanecontainerresize"></a><a name="resize"></a>CPaneContainer::Yeniden boyutlandırma
 
 ```
 virtual void Resize(
@@ -786,13 +786,13 @@ virtual void Resize(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dikdörtgen*<br/>
-[in] *hdwp*<br/>
-[in] *bRedraw*<br/>
+[içinde] *rekt*<br/>
+[içinde] *hdwp*<br/>
+[içinde] *bRedraw*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="resizepane"></a>  CPaneContainer::ResizePane
+## <a name="cpanecontainerresizepane"></a><a name="resizepane"></a>CPaneContainer::ResizePane
 
 ```
 virtual void ResizePane(
@@ -806,16 +806,16 @@ virtual void ResizePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nOffset*<br/>
-[in] *pBar*<br/>
-[in] *Implement_serıalıze*<br/>
-[in] *bHorz*<br/>
-[in] *bLeftBar*<br/>
-[in] *hdwp*<br/>
+[içinde] *nOffset*<br/>
+[içinde] *pBar*<br/>
+[içinde] *pKonteyner*<br/>
+[içinde] *bHorz*<br/>
+[içinde] *bLeftBar*<br/>
+[içinde] *hdwp*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="resizepartofpanecontainer"></a>  CPaneContainer::ResizePartOfPaneContainer
+## <a name="cpanecontainerresizepartofpanecontainer"></a><a name="resizepartofpanecontainer"></a>CPaneContainer::ResizePartOfPaneContainer
 
 ```
 virtual void ResizePartOfPaneContainer(
@@ -826,13 +826,13 @@ virtual void ResizePartOfPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nOffset*<br/>
-[in] *bLeftPart*<br/>
-[in] *hdwp*<br/>
+[içinde] *nOffset*<br/>
+[içinde] *bLeftPart*<br/>
+[içinde] *hdwp*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="serialize"></a>  CPaneContainer::Serialize
+## <a name="cpanecontainerserialize"></a><a name="serialize"></a>CPaneContainer::Serialize
 
 ```
 void Serialize(CArchive& ar);
@@ -840,11 +840,11 @@ void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ar*<br/>
+[içinde] *ar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpane"></a>  CPaneContainer::SetPane
+## <a name="cpanecontainersetpane"></a><a name="setpane"></a>CPaneContainer::SetPane
 
 ```
 void SetPane(
@@ -854,12 +854,12 @@ void SetPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
-[in] *bLeft*<br/>
+[içinde] *pBar*<br/>
+[içinde] *bSol*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpanecontainer"></a>  CPaneContainer::SetPaneContainer
+## <a name="cpanecontainersetpanecontainer"></a><a name="setpanecontainer"></a>CPaneContainer::SetPaneContainer
 
 ```
 void SetPaneContainer(
@@ -869,12 +869,12 @@ void SetPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *Implement_serıalıze*<br/>
-[in] *bLeft*<br/>
+[içinde] *pKonteyner*<br/>
+[içinde] *bSol*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpanedivider"></a>  CPaneContainer::SetPaneDivider
+## <a name="cpanecontainersetpanedivider"></a><a name="setpanedivider"></a>CPaneContainer::SetPaneBölücü
 
 ```
 void SetPaneDivider(CPaneDivider* pSlider);
@@ -882,11 +882,11 @@ void SetPaneDivider(CPaneDivider* pSlider);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pSlider*<br/>
+[içinde] *pSlider*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setparentpanecontainer"></a>  CPaneContainer::SetParentPaneContainer
+## <a name="cpanecontainersetparentpanecontainer"></a><a name="setparentpanecontainer"></a>CPaneContainer::SetParentPaneContainer
 
 ```
 void SetParentPaneContainer(CPaneContainer* p);
@@ -894,11 +894,11 @@ void SetParentPaneContainer(CPaneContainer* p);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *p*<br/>
+[içinde] *p*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setrecentpercent"></a>  CPaneContainer::SetRecentPercent
+## <a name="cpanecontainersetrecentpercent"></a><a name="setrecentpercent"></a>CPaneContainer::SetRecentPercent
 
 ```
 void SetRecentPercent(int nRecentPercent);
@@ -906,11 +906,11 @@ void SetRecentPercent(int nRecentPercent);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRecentPercent*<br/>
+[içinde] *nRecentPercent*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setupbyid"></a>  CPaneContainer::SetUpByID
+## <a name="cpanecontainersetupbyid"></a><a name="setupbyid"></a>CPaneContainer::SetUpByID
 
 ```
 BOOL SetUpByID(
@@ -920,14 +920,14 @@ BOOL SetUpByID(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nID*<br/>
-[in] *pBar*<br/>
+[içinde] *nID*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="storerecentdocksiteinfo"></a>  CPaneContainer::StoreRecentDockSiteInfo
+## <a name="cpanecontainerstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a>CPaneContainer::StoreRecentDockSiteInfo
 
 ```
 virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
@@ -935,11 +935,11 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="stretchpanecontainer"></a>  CPaneContainer::StretchPaneContainer
+## <a name="cpanecontainerstretchpanecontainer"></a><a name="stretchpanecontainer"></a>CPaneContainer::StretchPaneContainer
 
 ```
 virtual int StretchPaneContainer(
@@ -952,11 +952,11 @@ virtual int StretchPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nOffset*<br/>
-[in] *bStretchHorz*<br/>
-[in] *bLeftBar*<br/>
-[in] *bMoveSlider*<br/>
-[in] *hdwp*<br/>
+[içinde] *nOffset*<br/>
+[içinde] *bStretchHorz*<br/>
+[içinde] *bLeftBar*<br/>
+[içinde] *bMoveSlider*<br/>
+[içinde] *hdwp*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

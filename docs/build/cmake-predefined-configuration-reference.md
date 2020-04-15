@@ -4,38 +4,39 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: c403f788b5a7941876ecafeb2fe0539f8bcc993a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a88b5ebbf05e11dc05e012c5bfbcc718d3742fb3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169844"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81322990"
 ---
-# <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış derleme yapılandırması
+# <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış yapı yapılandırmaları
 
 ::: moniker range="vs-2015"
 
-CMake projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir.
+CMake projeleri Visual Studio 2017 ve sonrası desteklenir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasında depolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
-- x86 hata ayıklama
-- x86 sürümü
-- x64 hata ayıklama
-- x64 sürümü
-- Linux-Hata Ayıkla
-- Linux-yayın
-- IoT hata ayıklaması
-- IoT yayını
-- MinGW hata ayıklama
-- MinGW sürümü
+Bir CMake projesinde, yapı yapılandırmaları bir CMakeSettings.json dosyasında depolanır. Ana araç çubuğundaki yapı yapılandırma açılır tarihinden **Yapılandırmaları Yönet'i** seçtiğinizde, Visual Studio'da bulunan varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görüntülenir:
 
-Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *Cmakesettings. JSON* dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için bkz. [Cmakesettings Reference](cmakesettings-reference.md).
+- x86 Hata Ayıklama
+- x86 Yayın
+- x64 Hata Ayıklama
+- x64 Yayın
+- Linux-Hata Ayıklama
+- Linux-Sürüm
+- IoT Hata Ayıklama
+- IoT Yayın
+- MinGW Hata Ayıklama
+- MinGW Yayın
 
-## <a name="linux-predefined-build-configurations"></a>Linux önceden tanımlanmış derleme yapılandırması:
+Bir yapılandırma seçtiğinizde, projenin kök klasöründeki *CMakeSettings.json* dosyasına eklenir. Daha sonra projenizi oluşturmak için kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için [CMakeSettings başvurusuna](cmakesettings-reference.md)bakın.
+
+## <a name="linux-predefined-build-configurations"></a>Linux önceden tanımlanmış yapı yapılandırmaları:
 
 ```json
 {
@@ -108,9 +109,9 @@ You can use these optional settings for more control:
 }
 ```
 
-Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak sistemdeki komutları çalıştırmanıza olanak sağlar. Değerler, uzak sistemde geçerli olan herhangi bir komut olabilir. Çıktı, Visual Studio 'ya geri gönderilir.
+Bu seçenekler, komutları bina dan önce ve sonra ve CMake oluşturmadan önce uzaktan sistemde çalıştırmanızı sağlar. Değerler uzak sistemde geçerli olan herhangi bir komut olabilir. Çıkış Visual Studio'ya geri iletilir.
 
-## <a name="iot-predefined-build-configurations"></a>IoT önceden tanımlanmış derleme yapılandırması
+## <a name="iot-predefined-build-configurations"></a>IoT önceden tanımlanmış yapı yapılandırmaları
 
 ```json
 {
@@ -203,7 +204,7 @@ Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak s
     }
 ```
 
-## <a name="mingw-predefined-build-configurations"></a>MinGW önceden tanımlanmış derleme yapılandırması
+## <a name="mingw-predefined-build-configurations"></a>MinGW önceden tanımlanmış yapı yapılandırmaları
 
 ```json
 {
@@ -279,7 +280,7 @@ Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak s
     }
 ```
 
-## <a name="x86-64-predefined-build-configurations"></a>x86-64 önceden tanımlanmış derleme yapılandırması
+## <a name="x86-64-predefined-build-configurations"></a>x86-64 önceden tanımlanmış yapı yapılandırmaları
 
 ```json
     {
@@ -355,31 +356,31 @@ Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak s
 
 ::: moniker range="vs-2019"
 
-CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasında depolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
+Bir CMake projesinde, yapı yapılandırmaları bir CMakeSettings.json dosyasında depolanır. Ana araç çubuğundaki yapı yapılandırma açılır tarihinden **Yapılandırmaları Yönet'i** seçtiğinizde, Visual Studio'da bulunan varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görüntülenir:
 
-- x86 hata ayıklama
-- x86 Clang hata ayıklaması
-- x86 sürümü
-- x86 Clang sürümü
-- x64 hata ayıklama
-- x64 Clang hata ayıklaması
-- x64 sürümü
-- x64 Clang sürümü
-- Linux-Hata Ayıkla
-- Linux-yayın
-- Linux-Clang-hata ayıklama
-- Linux-Clang-yayın
-- Mevcut önbellek (uzak)
-- Mevcut önbellek
-- MinGW hata ayıklama
-- MinGW sürümü
-- WSL hata ayıklama
-- WSL sürümü
-- WSL Clang hata ayıklaması
-- WSL Clang sürümü
+- x86 Hata Ayıklama
+- x86 Clang Hata Ayıklama
+- x86 Yayın
+- x86 Clang Yayın
+- x64 Hata Ayıklama
+- x64 Clang Hata Ayıklama
+- x64 Yayın
+- x64 Clang Yayın
+- Linux-Hata Ayıklama
+- Linux-Sürüm
+- Linux-Clang-Hata Ayıklama
+- Linux-Clang-Yayın
+- Varolan Önbellek (uzak)
+- Varolan Önbellek
+- MinGW Hata Ayıklama
+- MinGW Yayın
+- WSL Hata Ayıklama
+- WSL Sürümü
+- WSL Clang Hata Ayıklama
+- WSL Clang Yayın
 - Clang
 
-Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki CMakeSettings. JSON dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz.
+Bir yapılandırma seçtiğinizde, projenin kök klasöründeki CMakeSettings.json dosyasına eklenir. Daha sonra projenizi oluşturmak için kullanabilirsiniz.
 
 ```json
 {
@@ -694,9 +695,10 @@ Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki CMakeSetting
 ```
 
 ::: moniker-end
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/>
+[Visual Studio'da CMake Projeleri](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CMFCAcceleratorKey sınıfı
+title: CMFCAcceleratorKey Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCAcceleratorKey
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CMFCAcceleratorKey [MFC], Format
 - CMFCAcceleratorKey [MFC], SetAccelerator
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
-ms.openlocfilehash: 6a99ad00a43ac7912320ee469d542b6bf9cca3de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d66e7043325bbbd324f3ac443368787a653ebe1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403964"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369923"
 ---
-# <a name="cmfcacceleratorkey-class"></a>CMFCAcceleratorKey sınıfı
+# <a name="cmfcacceleratorkey-class"></a>CMFCAcceleratorKey Sınıfı
 
-Sanal tuş eşlemeyi ve biçimlendirmeyi uygulayan yardımcı sınıf.
+Sanal anahtar eşleme ve biçimlendirme uygulayan yardımcı sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,42 +33,42 @@ class CMFCAcceleratorKey : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCAcceleratorKey::CMFCAcceleratorKey](#cmfcacceleratorkey)|Oluşturur bir `CMFCAcceleratorKey` nesne.|
+|[CMFCAcceleratorKey::CMFCAcceleratorKey](#cmfcacceleratorkey)|Bir `CMFCAcceleratorKey` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCAcceleratorKey::Format](#format)|HIZLANDIRMA yapısına visual gösterimine çevirir.|
-|[CMFCAcceleratorKey::SetAccelerator](#setaccelerator)|Kısayol tuşu ayarlar `CMFCAcceleratorKey` nesne.|
+|[CMFCAcceleratorKey::Biçim](#format)|ACCEL yapısını görsel temsiline çevirir.|
+|[CMFCAcceleratorKey::SetAccelerator](#setaccelerator)|Nesne için kısayol `CMFCAcceleratorKey` tuşunu ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hızlandırıcı tuşları kısayol tuşlarını da verilir. Kullanıcının girdiği, klavye kısayollarını görüntülemek istiyorsanız [CMFCAcceleratorKeyAssignCtrl sınıfı](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) haritalar klavye kısayolları, Alt + Shift + S gibi "Alt + Shift + S" gibi bir özel metin biçimine. Her `CMFCAcceleratorKey` nesne için bir metin biçimi tek bir kısayol tuşuna eşler.
+Hızlandırıcı tuşları kısayol tuşları olarak da bilinir. Bir kullanıcının girdiği klavye kısayollarını görüntülemek istiyorsanız, [CMFCAcceleratorKeyAssignCtrl Class](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) alt+shift+s gibi klavye kısayollarını "Alt + Shift + S" gibi özel bir metin biçimiyle eşler. Her `CMFCAcceleratorKey` nesne metin biçimiyle tek bir kısayol anahtarıyla eşleştirilir.
 
-Kısayol tuşları ve Hızlandırıcı tablolarını kullanma hakkında daha fazla bilgi için bkz. [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md).
+Kısayol tuşları nın ve hızlandırıcı tablolarının nasıl kullanılacağı hakkında daha fazla bilgi için [CKeyboardManager Sınıfı'na](../../mfc/reference/ckeyboardmanager-class.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCAcceleratorKey` nesne ve nasıl kullanılacağını kendi `Format` yöntemi.
+Aşağıdaki örnek, bir `CMFCAcceleratorKey` nesnenin nasıl oluşturulabildiğini ve yönteminin nasıl kullanılacağını `Format` gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#30](../../mfc/reference/codesnippet/cpp/cmfcacceleratorkey-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CMFCAcceleratorKey`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxacceleratorkey.h
+**Üstbilgi:** afxacceleratorkey.h
 
-##  <a name="cmfcacceleratorkey"></a>  CMFCAcceleratorKey::CMFCAcceleratorKey
+## <a name="cmfcacceleratorkeycmfcacceleratorkey"></a><a name="cmfcacceleratorkey"></a>CMFCAcceleratorKey::CMFCAcceleratorKey
 
-Oluşturur bir [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesne.
+[CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesnesi oluşturuyor.
 
 ```
 CMFCAcceleratorKey();
@@ -78,15 +78,15 @@ CMFCAcceleratorKey(LPACCEL lpAccel);
 ### <a name="parameters"></a>Parametreler
 
 *lpAccel*<br/>
-[in] Bir kısayol tuşu işaretçisi.
+[içinde] Kısayol anahtarıiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturduğunuzda, bir kısayol tuşu sağlamaz, bir `CMFCAccleratorKey`, kullanın [CMFCAcceleratorKey::SetAccelerator](#setaccelerator) bir kısayol tuşu ile ilişkilendirilecek yöntemi, `CMFCAcceleratorKey` nesne.
+Bir `CMFCAccleratorKey`kısayol tuşu oluştururken bir kısayol tuşu sağlamazsanız, [CMFCAcceleratorKey kullanın::Bir](#setaccelerator) `CMFCAcceleratorKey` kısayol tuşu nesnenizle ilişkilendirmek için SetAccelerator yöntemini kullanın.
 
-##  <a name="format"></a>  CMFCAcceleratorKey::Format
+## <a name="cmfcacceleratorkeyformat"></a><a name="format"></a>CMFCAcceleratorKey::Biçim
 
-HIZLANDIRMA yapısı ilişkili dize değerine çevirir.
+ACCEL yapısını ilişkili dize değerine çevirir.
 
 ```
 void Format(CString& str) const;
@@ -94,16 +94,16 @@ void Format(CString& str) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-[out] Bir başvuru bir `CString` yöntemi çevrilmiş kısayol tuşunu nereye yazdığını nesne.
+*Str*<br/>
+[çıkış] Yöntemin çevrilmiş kısayol anahtarını yazdığı bir `CString` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, ilişkili bir kısayol tuşu dize biçimi alır. Dize biçimi ayarlayabileceğiniz bir [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) oluşturucu veya yöntemini kullanarak nesne [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).
+Bu yöntem, ilişkili kısayol anahtarının dize biçimini alır. [CmFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesnesinin dize biçimini oluşturucu yu veya [CMFCAcceleratorKey](#setaccelerator)yöntemini kullanarak ayarlayabilirsiniz:SetAccelerator .
 
-##  <a name="setaccelerator"></a>  CMFCAcceleratorKey::SetAccelerator
+## <a name="cmfcacceleratorkeysetaccelerator"></a><a name="setaccelerator"></a>CMFCAcceleratorKey::SetAccelerator
 
-Kısayol tuşu ayarlar [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesne.
+[CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesnesi için kısayol anahtarını ayarlar.
 
 ```
 void SetAccelerator(LPACCEL lpAccel);
@@ -112,11 +112,11 @@ void SetAccelerator(LPACCEL lpAccel);
 ### <a name="parameters"></a>Parametreler
 
 *lpAccel*<br/>
-[in] Bir kısayol tuşu işaretçisi.
+[içinde] Kısayol anahtarıiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem için kısayol tuşu ayarlamak için kullanmak bir `CMFCAcceleratorKey` oluşturduğunuz zaman, bir kısayol tuşu sağlamadıysanız `CMFCAcceleratorKey`.
+Oluşturduğunuzda bir kısayol tuşu `CMFCAcceleratorKey` sağlamadıysanız kısayol anahtarını ayarlamak `CMFCAcceleratorKey`için bu yöntemi kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

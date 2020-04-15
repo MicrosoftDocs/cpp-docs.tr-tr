@@ -6,28 +6,28 @@ helpviewer_keywords:
 - ODBC recordsets, sorting
 - recordsets, sorting
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
-ms.openlocfilehash: 4bbe635cdda9152be6ba178b863147db93b7c706
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8b4deea1d8cbd4abe01ccc7a4114131378abe463
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212751"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366919"
 ---
 # <a name="recordset-sorting-records-odbc"></a>Kayıt Kümesi: Kayıtları Sıralama (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konuda, kayıt kümenizin nasıl sıralanacağını açıklanmaktadır. Sıralamayı temel alan bir veya daha fazla sütun belirtebilir ve artan veya azalan sıra (**ASC** veya **DESC**) belirtebilirsiniz. Her belirtilen sütun için **ASC** varsayılandır). Örneğin, iki sütun belirtirseniz, kayıtlar önce adlı ilk sütunda, sonra adlı ikinci sütunda sıralanır. Bir SQL **order by** yan tümcesi sıralamayı tanımlar. Framework **order by** yan tümcesini kayıt kümesinin SQL sorgusuna eklerse, yan tümce seçimin sıralamasını denetler.
+Bu konu, kayıt setinizin nasıl sıralanır olduğunu açıklar. Sıralamayı temel almak için bir veya daha fazla sütun belirtebilir ve artan veya azalan sırayı **(ASC** veya **DESC;** **ASC** varsayılan) belirtilen her sütun için. Örneğin, iki sütun belirtirseniz, kayıtlar önce ilk sütunda, sonra da ikinci sütunda sıralanır. SQL **ORDER BY** yan tümcesi bir sıralama tanımlar. Çerçeve, recordset'in SQL sorgusuna **ORDER BY** yan tümcesini ekladığında, yan tümce seçimin sırasını denetler.
 
-Nesnesini oluşturduktan sonra, ancak `Open` üye işlevini çağırmadan önce bir kayıt kümesinin sıralama düzeni oluşturmanız gerekir (ya da daha önce `Open` üye işlevi çağrılan mevcut bir kayıt kümesi nesnesi için `Requery` üye işlevini çağırmadan önce).
+Nesneyi oluşturduktan sonra ancak `Open` üye işlevini çağırmadan önce (veya `Requery` `Open` üye işlevi daha önce çağrılan varolan bir kayıt kümesi nesnesi için üye işlevi çağırmadan önce) bir kayıt kümesisıralama sırası oluşturmanız gerekir.
 
-#### <a name="to-specify-a-sort-order-for-a-recordset-object"></a>Bir kayıt kümesi nesnesi için sıralama düzeni belirtmek için
+#### <a name="to-specify-a-sort-order-for-a-recordset-object"></a>Kayıt kümesi nesnesi için sıralama sırası belirtmek için
 
-1. Yeni bir kayıt kümesi nesnesi oluşturun (veya var olan bir kayıt için `Requery` çağırmayı hazırlayın).
+1. Yeni bir kayıt kümesi nesnesi `Requery` oluşturma (veya varolan bir nesneiçin aramaya hazırlanın).
 
 1. Nesnenin [m_strSort](../../mfc/reference/crecordset-class.md#m_strsort) veri üyesinin değerini ayarlayın.
 
-   Sıralama, null ile sonlandırılmış bir dizedir. **Order by** yan tümcesinin içeriğini içerir, ancak tarafından anahtar sözcük **sıralaması**değildir. Örneğin, aşağıdakileri kullanın:
+   Sıralama, null-terminatedli bir dizedir. **Order BY** yan tümcesinin içeriğini içerir, ancak ANAHTAR SÖZCÜK **SİPARİş BY'yi**içermez. Örneğin, aşağıdakileri kullanın:
 
     ```
     recordset.m_strSort = "LastName DESC, FirstName DESC";
@@ -39,11 +39,11 @@ Nesnesini oluşturduktan sonra, ancak `Open` üye işlevini çağırmadan önce 
     recordset.m_strSort = "ORDER BY LastName DESC, FirstName DESC";
     ```
 
-1. Filtre, kilitleme modu veya parametreler gibi, ihtiyacınız olan diğer seçenekleri ayarlayın.
+1. Filtre, kilitleme modu veya parametreler gibi ihtiyacınız olan diğer seçenekleri ayarlayın.
 
-1. Yeni nesne için `Open` çağırın (veya varolan bir nesne için `Requery`).
+1. Yeni `Open` nesneyi (veya `Requery` varolan bir nesneyi) arayın.
 
-Seçilen kayıtlar belirtilen şekilde sıralanır. Örneğin, bir öğrenci kayıtları kümesini son ada göre azalan sırada sıralamak için, ardından adı ' nı yapın:
+Seçili kayıtlar belirtildiği gibi sıralanır. Örneğin, öğrenci kayıtları kümesini azalan sırada soyadına, sonra da ilk ada göre sıralamak için aşağıdakileri yapın:
 
 ```cpp
 // Construct the recordset
@@ -54,10 +54,10 @@ rsStudent.m_strSort = "LastName DESC, FirstName DESC";
 rsStudent.Open( );
 ```
 
-Kayıt kümesi tüm öğrenci kayıtlarını, son ada göre (Z-A) ve ardından ada göre sıralanmış bir şekilde içerir.
+Kayıt kümesi, azalan sırada (Z'den A'ya) soyadına, sonra da adadıyla sıralanan tüm öğrenci kayıtlarını içerir.
 
 > [!NOTE]
->  Kendi SQL dizenizi `Open`geçirerek, kayıt kümesinin varsayılan SQL dizesini geçersiz kılmayı tercih ediyorsanız, özel dizinizde **order by** yan tümcesi varsa sıralama ayarlamayın.
+> Kendi SQL dizenizi geçerek kayıt setinin varsayılan SQL `Open`dizesini geçersiz kılmayı seçerseniz, özel dizenizde **ORDER BY** yan tümcesi varsa bir sıralama ayarlamayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

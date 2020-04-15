@@ -1,5 +1,5 @@
 ---
-title: 'TN059: MFC MBCS-Unicode dönüştürme makrolarını kullanma'
+title: 'TN059: MFC MBCS-Unicode Dönüşüm Makrolarını Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFCANS32.DLL
@@ -11,25 +11,25 @@ helpviewer_keywords:
 - macros [MFC], MBCS conversion macros
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-ms.openlocfilehash: 6c182ff584404fb91de8ff5e8020ec2e6ef9f950
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 0d63a87d0fddde30dd5cbb18207297a345d74b9c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366587"
 ---
-# <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/Unicode dönüştürme makrolarını kullanma
+# <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/Unicode Dönüştürme Makrolarını Kullanma
 
 > [!NOTE]
->  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
 
-Bu Not AFXPRIV içinde tanımlanan MBCS/Unicode dönüştürme makrolarını kullanma açıklanmaktadır. H Bu makrolar, uygulama anlaşmalarınızı doğrudan OLE API'si ile ya da herhangi bir nedenle genellikle gerekiyorsa MBCS ve Unicode arasında dönüştürme ekseriyetle faydalıdır.
+Bu not, AFXPRIV'de tanımlanan MBCS/Unicode dönüştürme makrolarının nasıl kullanılacağını açıklar. H. Bu makrolar, uygulamanız doğrudan OLE API ile veya bir nedenle işlerle ilgileniyorsa, genellikle Unicode ve MBCS arasında dönüştürme yapması gerekiyorsa, en kullanışlı olanlardır.
 
 ## <a name="overview"></a>Genel Bakış
 
-MFC'de özel bir DLL 3.x edildi (MFCANS32. kullanılan DLL) OLE arabirimleri çağrıldığında Unicode ve MBCS arasında otomatik olarak dönüştürmek için kullanılır. OLE uygulamaları MBCS, arabirimleri ve OLE API'leri gibi her zaman Unicode olsalar yazılmasına izin neredeyse saydam bir katmanı bu DLL edildi (Macintosh üzerinde hariç). Bu katman kullanışlı ederken ve izin verilen uygulamaları hızlı bir şekilde Win16 ' Win32 için unity'nin (MFC, Microsoft Word, Microsoft Excel ve VBA bazıları yalnızca bu teknoloji kullanılan Microsoft uygulamalarının), bazen önemli bir performans vardı isabet. Bu nedenle, MFC 4.x bu DLL kullanmaz ve bunun yerine doğrudan Unicode OLE arabirimleri hakkında konuşuyor. Bunu yapmak için MFC MBCS Unicode OLE arayüz için bir arama yaparken dönüştürmek gereken ve genellikle bir OLE arabirimi uygulanırken MBCS'den Unicode dönüştürme gerekiyor. Makrolar sayısı bu verimli ve kolay bir şekilde işlemek için bu dönüştürme kolaylaştırmak için oluşturuldu.
+MFC 3.x'te özel bir DLL kullanılmıştır (MFCANS32). DLL) OLE arabirimleri çağrıldığında Unicode ve MBCS arasında otomatik olarak dönüştürmek için. Bu DLL, OLE uygulamalarının her zaman Unicode olmasına rağmen (Macintosh hariç) OLE API'leri ve arabirimleri MBCS gibi yazılmasına izin veren neredeyse saydam bir katmandı. Bu katman kullanışlı ve uygulamaların Win16'dan Win32'ye (MFC, Microsoft Word, Microsoft Excel ve VBA) hızlı bir şekilde taşınabilir olmasına izin verirken, bu teknolojiyi kullanan Microsoft uygulamalarından sadece bazılarıdır), bazen önemli bir performans isabeti vardı. Bu nedenle, MFC 4.x bu DLL'yi kullanmaz ve bunun yerine doğrudan Unicode OLE arabirimleriyle konuşur. Bunu yapmak için, MFC'nin OLE arabirimine arama yaparken Unicode'a MBCS'ye dönüştürmesi gerekir ve genellikle OLE arabirimi uygularken Unicode'dan MBCS'ye dönüştürmesi gerekir. Bu etkin ve kolay bir şekilde işlemek için, bu dönüşümü kolaylaştırmak için bir dizi makro oluşturuldu.
 
-Bu tür makroları kümesi oluşturmanın en büyük üstesinden bellek ayırma biridir. Dizeler yerinde dönüştürülemediğinden, dönüştürülen sonuçlar tutmak için yeni bellek ayrılması gerekir. Bu kod aşağıdaki gibi ile yapılmış:
+Böyle bir makro kümesi oluşturmanın önündeki en büyük engellerden biri bellek ayırmadır. Dizeleri yerine dönüştürülemediğinden, dönüştürülen sonuçları tutmak için yeni bellek ayrılması gerekir. Bu, aşağıdakilere benzer bir kodla yapılmış olabilir:
 
 ```
 // we want to convert an MBCS string in lpszA
@@ -53,9 +53,9 @@ pI->SomeFunctionThatNeedsUnicode(lpszW);
 delete[] lpszW;
 ```
 
-Bu yaklaşım olarak çeşitli sorunlar. Temel sorun kod yazma, test ve hata ayıklama için çok fazla olmasıdır. Bir şey, bir basit işlev çağrı artık çok daha karmaşıktır. Ayrıca, bunu yaparken ek yükünü önemli bir çalışma zamanı yoktur. Yığında ayrılmış ve bir dönüştürme yapılır her zaman serbest bellek var. Son olarak, yukarıdaki kod uygun gereklidir `#ifdefs` (hangi gerçekleşmesi için bu dönüştürme gerektirmeyen) Unicode ve Macintosh yapılar için eklendi.
+Bu yaklaşım bir takım sorunlar olarak. Temel sorun, yazmak, test etmek ve hata ayıklamak için kod çok olmasıdır. Basit bir işlev çağrısı olan bir şey, şimdi çok daha karmaşıktır. Buna ek olarak, bunu yaparken önemli bir çalışma zamanı yükü vardır. Bellek yığın adamalıdır ve bir dönüştürme yapılır her zaman serbest. Son olarak, yukarıdaki kodun `#ifdefs` Unicode ve Macintosh yapıları için uygun şekilde eklenmesi gerekir (bu dönüştürmenin gerçekleşmesini gerektirmez).
 
-Biz birlikte gelen yedekleme çözümü hangi 1) maskesi çeşitli platformlara ve (2) kullanımı bir verimli bellek ayırma şeması arasındaki farkı ve 3) olan mevcut eklemek kolay kaynak kodu bazı makrolar oluşturmaktır. Tanımlarının bir örneği aşağıda verilmiştir:
+Biz geldi çözüm 1) maske çeşitli platformlar arasındaki farkı bazı makrolar oluşturmak ve 2) verimli bir bellek ayırma düzeni kullanmak ve 3) varolan kaynak kodu na eklemek kolaydır. Tanımlardan birine bir örnek aşağıda verilmiştir:
 
 ```
 #define A2W(lpa) (\
@@ -66,7 +66,7 @@ Biz birlikte gelen yedekleme çözümü hangi 1) maskesi çeşitli platformlara 
     _convert)\)\)
 ```
 
-Bu makro, yukarıdaki kod yerine ve şeyleri kullanarak çok daha kolaydır:
+Yukarıdaki kod yerine bu makro kullanarak ve şeyler çok daha basittir:
 
 ```
 // use it to call OLE here
@@ -74,17 +74,17 @@ USES_CONVERSION;
 pI->SomeFunctionThatNeedsUnicode(T2OLE(lpszA));
 ```
 
-Burada dönüştürme gereklidir, ancak makroları kullanarak basit ve etkili ek çağrıları vardır.
+Dönüştürmenin gerekli olduğu ekstra aramalar vardır, ancak makroları kullanmak basit ve etkilidir.
 
-Her makrosu uygulamasını _alloca() işlev yığın yerine yığından bellek ayırmak için kullanır. Yığında bellek ayırma daha çok daha hızlı yığından bellek ayırma ve bellek işlevi çıkıldı olduğunda otomatik olarak serbest bırakılır. Ayrıca, makroları çağırmaktan kaçınmanız `MultiByteToWideChar` (veya `WideCharToMultiByte`) birden fazla kez. Bu, gerekli olandan biraz daha fazla bellek ayırma tarafından gerçekleştirilir. En fazla birine dönüştürecek bir MBC biliyoruz **WCHAR** ve her **WCHAR** en fazla iki MBC bayt sahibiz. Ancak her zaman yeterince biraz daha fazla gerekli ayırarak ikinci çağrı, ikinci dönüştürme işlemek için dönüştürme işlevine çağrı önlenmiş olur. Yardımcı işlevi çağrısını `AfxA2Whelper` azaltır dönüştürme gerçekleştirmek için gerçekleştirilmesi gereken bağımsız değişken gönderim sayısı (adlı bu daha küçük kod içinde daha sonuçlarını `MultiByteToWideChar` doğrudan).
+Her makronun uygulanması, yığın yerine yığından bellek ayırmak için _alloca() işlevini kullanır. Bellek yığınından ayırmak yığındaki belleği ayırmaktan çok daha hızlıdır ve işlev çıkarıldığında bellek otomatik olarak serbest bırakılır. Ayrıca, makrolar birden `MultiByteToWideChar` fazla `WideCharToMultiByte`kez aramayapmaktan (veya) kaçınmak. Bu, gerekenden biraz daha fazla bellek ayırarak yapılır. Bir MBC'nin en fazla bir **WCHAR'a** dönüşeceğini ve her **WCHAR** için en fazla iki MBC bayt'a sahip olacağımızı biliyoruz. Gerekli olandan biraz daha fazlasını tahsis ederek, ancak her zaman dönüştürmeyi işlemek için yeterli olan dönüşüm işlevine ikinci çağrı yapılması önlenir. Yardımcı işlevine `AfxA2Whelper` yapılan çağrı, dönüştürmeyi gerçekleştirmek için yapılması gereken bağımsız değişken itme sayısını azaltır (bu, `MultiByteToWideChar` doğrudan çağrıldığına göre daha küçük kodla sonuçlanır).
 
-Sırada depolamak için makroları alanınız için bir geçici uzunluğu, her işlev yapan _csv'ye Dönüştür adlı bir yerel değişken dönüşüm makroları kullanacağını belirtmeniz gerekli. Bu işlem, yukarıdaki örnekte görüldüğü gibi USES_CONVERSION makrosu çağrılarak gerçekleştirilir.
+Makroların geçici bir uzunluğu depolamak için alana sahip olması için, dönüşüm makrolarını kullanan her işlevde bunu yapan _convert adlı yerel bir değişkenin bildirilmesi gerekir. Bu, örnekte yukarıda görüldüğü gibi USES_CONVERSION makrosu çağırılarak yapılır.
 
-Genel dönüşüm makroları hem OLE belirli makroları vardır. Bu iki farklı makrosu kümesi aşağıda ele alınmıştır. Tüm makroları AFXPRIV içinde yer alır. H
+Hem genel dönüşüm makroları hem de OLE'ye özgü makrolar vardır. Bu iki farklı makro kümesi aşağıda ele alınmıştır. Makroların tümü AFXPRIV'de yer eder. H.
 
-## <a name="generic-conversion-macros"></a>Genel dönüşüm makroları
+## <a name="generic-conversion-macros"></a>Genel Dönüşüm Makroları
 
-Genel dönüşüm makroları temel mekanizması oluşturur. Makro örneği A2W, önceki bölümde gösterilen uygulama olduğundan, bu tür bir "Genel" makrosu. Bunun için OLE özellikle ilgili değildir. Genel makrolar kümesini aşağıda verilmiştir:
+Genel dönüşüm makroları altta yatan mekanizmayı oluşturur. Makro örneği ve önceki bölümde gösterilen uygulama, A2W, böyle bir "genel" makrodur. Özellikle OLE ile ilgili değildir. Genel makrolar kümesi aşağıda listelenmiştir:
 
 ```
 A2CW      (LPCSTR) -> (LPCWSTR)
@@ -93,13 +93,13 @@ W2CA      (LPCWSTR) -> (LPCSTR)
 W2A      (LPCWSTR) -> (LPSTR)
 ```
 
-Metin dönüştürmeleri yapmak yanı sıra, ayrıca vardır makroları ve dönüştürmek için yardımcı işlevleri `TEXTMETRIC`, `DEVMODE`, `BSTR`ve ayrılan dizeleri OLE. Bu makrolar bu tartışma kapsamı dışındadır - AFXPRIV için bakın. Bu makrolar hakkında daha fazla bilgi için H.
+Metin dönüştürmeleri yapmanın yanı sıra, dönüştürme için makrolar `TEXTMETRIC` `DEVMODE`ve `BSTR`yardımcı işlevleri de vardır , , ve OLE ayrılmış dizeleri. Bu makrolar bu tartışmanın kapsamı dışındadır - AFXPRIV bakın. Bu makrolar hakkında daha fazla bilgi için H.
 
-## <a name="ole-conversion-macros"></a>OLE dönüşüm makroları
+## <a name="ole-conversion-macros"></a>OLE Dönüşüm Makroları
 
-OLE dönüşüm makroları beklediğiniz işlevleri işlemek için özel olarak tasarlanmış **OLESTR** karakter. OLE üstbilgileri incelemek, birçok başvuruları görürsünüz **LPCOLESTR** ve **OLECHAR**. Bu tür, platforma özgü olmayan bir yolla OLE arabirimleri kullanılan karakter türü belirtmek için kullanılır. **OLECHAR** eşlendiği **char** Win16 ve Macintosh platformlarda ve **WCHAR** Win32'de.
+OLE dönüştürme makroları, **OLESTR** karakterlerini bekleyen işlevleri işlemek için özel olarak tasarlanmıştır. OLE üstbilgilerini incelerseniz, **LPCOLESTR** ve **OLECHAR'a**birçok başvuru görürsünüz. Bu türler, OLE arabirimlerinde kullanılan karakter türlerini platforma özgü olmayan bir şekilde ifade etmek için kullanılır. Win16 ve Macintosh platformlarında **Char** **OLECHAR** haritaları ve **WCHAR** Win32 içinde.
 
-Sayısı tutulabilmesi için **#ifdef** MFC'de yönergeleri için en az kod her dönüştürme için benzer bir makro sahibiz, OLE dizeleri söz konusu burada. Aşağıdaki makroları en yaygın olarak kullanılır:
+MFC kodundaki **#ifdef** yönergelerinin sayısını en aza tutmak için, OLE dizelerinin dahil olduğu her dönüşüm için benzer bir makromuz vardır. Aşağıdaki makrolar en sık kullanılan makrolar şunlardır:
 
 ```
 T2COLE   (LPCTSTR) -> (LPCOLESTR)
@@ -108,11 +108,11 @@ OLE2CT   (LPCOLESTR) -> (LPCTSTR)
 OLE2T   (LPCOLESTR) -> (LPCSTR)
 ```
 
-Yeniden TEXTMETRIC, DEVMODE BSTR ve dizeleri ayrılan OLE yapmak için benzer makroları vardır. AFXPRIV için bakın. Daha fazla bilgi için H.
+Yine, TEXTMETRIC, DEVMODE, BSTR ve OLE ayrılmış dizeleri yapmak için benzer makrolar vardır. AFXPRIV'e bakın. Daha fazla bilgi için H.
 
 ## <a name="other-considerations"></a>Diğer Konular
 
-Makrolar, sıkı bir döngüde kullanmayın. Örneğin, aşağıdaki türde bir kod yazmak istiyor musunuz:
+Makroları sıkı bir döngü içinde kullanmayın. Örneğin, aşağıdaki tür kod yazmak istemiyorum:
 
 ```
 void BadIterateCode(LPCTSTR lpsz)
@@ -124,7 +124,7 @@ void BadIterateCode(LPCTSTR lpsz)
 }
 ```
 
-Yukarıdaki kod, megabayt hangi dize içeriğine bağlı olarak yığında bellek ayırma sonuçlanabilir `lpsz` olan! Ayrıca döngünün her yinelemesinden için dize dönüştürmek için zaman alır. Bunun yerine, sabit tür dönüştürmeler döngü dışına taşıyın:
+Yukarıdaki kod, dize `lpsz` içeriğine bağlı olarak yığınüzerinde bellek megabayt ayırma neden olabilir! Ayrıca döngü her yineleme için dize dönüştürmek için zaman alır. Bunun yerine, bu tür sabit dönüşümleri döngüdışına taşıyın:
 
 ```
 void MuchBetterIterateCode(LPCTSTR lpsz)
@@ -138,7 +138,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 }
 ```
 
-Dize sabit değil, bir işlev uygulamasına yöntem çağrısının ardından kapsüller. Bu, her zaman serbest bırakılacak dönüştürme arabellek olanak tanır. Örneğin:
+Dize sabit değilse, yöntem çağrısını bir işleve kapsülle. Bu, dönüşüm arabelleği her zaman serbest bırakılacak izin verir. Örneğin:
 
 ```
 void CallSomeMethod(int ii, LPCTSTR lpsz)
@@ -156,7 +156,7 @@ void MuchBetterIterateCode2(LPCTSTR* lpszArray)
 }
 ```
 
-Dönüş değeri, dönüş önce verileri kopyalayarak gelir sürece hiçbir zaman makroları birinin sonucu döndürür. Örneğin, bu kodu bozuk:
+İade değeri, iadeden önce verilerin bir kopyasının yapılması anlamına gelmediği sürece makrolardan birinin sonucunu asla döndürmeyin. Örneğin, bu kod kötü:
 
 ```
 LPTSTR BadConvert(ISomeInterface* pI)
@@ -173,7 +173,7 @@ return lpszT; // bad! returning alloca memory
 }
 ```
 
-Yukarıdaki kod, dönüş değeri, değerin kopyalayan bir değiştirerek sabit:
+Yukarıdaki kod, iade değerini değeri kopyalayan bir şeyle değiştirilerek düzeltilebilir:
 
 ```
 CString BetterConvert(ISomeInterface* pI)
@@ -190,7 +190,7 @@ return lpszT; // CString makes copy
 }
 ```
 
-Makroları, kullanımı kolay ve kodunuza eklemek kolaydır, ancak uyarılar yukarıdaki söyleyebilirsiniz gibi bunları kullanırken dikkatli olmanız gerekir.
+Makroların kullanımı ve kodunuza eklenmesi kolaydır, ancak yukarıdaki uyarılardan da anlayabileceğiniz gibi, bunları kullanırken dikkatli olmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

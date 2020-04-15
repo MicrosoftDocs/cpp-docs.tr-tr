@@ -10,97 +10,97 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
-ms.openlocfilehash: f11c723e4589cb28a3f38100050a69a78fc0809e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 955b26137ce976514d84f95f4d819779b93bd78a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212855"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368684"
 ---
 # <a name="recordset-more-about-updates-odbc"></a>Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konuda aşağıdakiler açıklanmaktadır:
+Bu konu açıklar:
 
-- [İşlemler gibi diğer işlemlerin güncelleştirmeleri etkilemesi](#_core_how_transactions_affect_updates).
+- [Hareketler gibi diğer işlemler güncelleştirmeleri nasıl etkiler?](#_core_how_transactions_affect_updates)
 
-- [Güncelleştirmelerinizin ve diğer kullanıcılarınızın diğer kullanıcıları](#_core_your_updates_and_the_updates_of_other_users).
+- [Güncellemeleriniz ve diğer kullanıcıların güncelleştirmeleri.](#_core_your_updates_and_the_updates_of_other_users)
 
-- [Güncelleştirme ve silme üye işlevleri hakkında daha fazla bilgi](#_core_more_about_update_and_delete).
+- [Üye işlevleri Güncelleştir ve Sil hakkında daha fazla bilgi.](#_core_more_about_update_and_delete)
 
 > [!NOTE]
->  Bu konu, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen nesneler için geçerlidir. Toplu satır getirme uyguladıysanız bazı bilgiler uygulanmaz. Örneğin, `AddNew`, `Edit`, `Delete`ve `Update` üye işlevleri çağrılamaz; Ancak, işlemler gerçekleştirebilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu konu, toplu satır `CRecordset` alma nın uygulanmadığı türetilen nesneler için geçerlidir. Toplu satır alma uyguladıysanız, bazı bilgiler geçerli değildir. Örneğin, `AddNew`, , `Edit` `Delete`, ve `Update` üye işlevleri arayamamazsınız; ancak, hareketleri gerçekleştirebilirsiniz. Toplu satır alma hakkında daha fazla bilgi için bkz: [Recordset: Toplu Olarak Kayıtları Alma (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="how-other-operations-affect-updates"></a><a name="_core_how_other_operations_affect_updates"></a>Diğer Işlemlerin güncelleştirmeleri etkilemesi
+## <a name="how-other-operations-affect-updates"></a><a name="_core_how_other_operations_affect_updates"></a>Diğer İşlemler Güncelleştirmeleri Nasıl Etkiler?
 
-Güncelleştirmeleriniz güncelleştirme sırasında yürürlükte olan işlemlere, işlem tamamlanmadan önce kayıt kümesini kapatarak ve bir işlem tamamlanmadan önce kaydırarak etkilenir.
+Güncelleştirmeleriniz güncelleştirme sırasında geçerli olan işlemlerden, bir işlemi tamamlamadan önce kayıt kümesini kapatarak ve bir işlemi tamamlamadan önce kaydırarak etkilenir.
 
-###  <a name="how-transactions-affect-updates"></a><a name="_core_how_transactions_affect_updates"></a>Işlemler güncelleştirmeleri nasıl etkiler
+### <a name="how-transactions-affect-updates"></a><a name="_core_how_transactions_affect_updates"></a>Hareketler Güncelleştirmeleri Nasıl Etkiler?
 
-`AddNew`, `Edit`ve `Delete` nasıl çalıştığını anladıktan sonra, [CDatabase](../../mfc/reference/cdatabase-class.md) 'in `BeginTrans`, `CommitTrans`ve `Rollback` üye işlevlerinin [CRecordset](../../mfc/reference/crecordset-class.md)'in güncelleştirme işlevleriyle nasıl çalıştığını anlamak önemlidir.
+`AddNew`CDatabase'in `Edit`ve `Delete` `BeginTrans` `CommitTrans` `Rollback` üye işlevlerinin [CRecordset'in](../../mfc/reference/crecordset-class.md)güncelleştirme işlevleriyle nasıl çalıştığını anlamak ve çalışmanın ötesinde önemlidir. [CDatabase](../../mfc/reference/cdatabase-class.md)
 
-Varsayılan olarak, `AddNew` ve `Edit` çağrıları `Update`çağırdığınızda veri kaynağını hemen etkiler. `Delete` çağrılar hemen etkili olur. Ancak bir işlem oluşturabilir ve bu tür çağrıların toplu işlemini yürütebilirsiniz. Güncelleştirmeler, kaydedilene kadar kalıcı olmaz. Fikrinizi değiştirirseniz, işlemi yürütmek yerine geri alabilirsiniz.
+Varsayılan olarak, `AddNew` arama `Edit` yaptığınızda veri kaynağını `Update`hemen arar ve etkiler. `Delete`çağrılar hemen yürürlüğe girer. Ancak bir işlem kurabilir ve bu tür çağrıları niçin gerçekleştirebilirsiniz. Güncelleştirmeler, siz bunları işleyene kadar kalıcı değildir. Fikrinizi değiştirirseniz, işlemi işlemek yerine geri alabilirsiniz.
 
-İşlemler hakkında daha fazla bilgi için bkz. [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+İşlemler hakkında daha fazla bilgi için [Bkz. Hareket (ODBC)](../../data/odbc/transaction-odbc.md).
 
-###  <a name="how-closing-the-recordset-affects-updates"></a><a name="_core_how_closing_the_recordset_affects_updates"></a>Kayıt kümesini kapatma, güncelleştirmeleri nasıl etkiler
+### <a name="how-closing-the-recordset-affects-updates"></a><a name="_core_how_closing_the_recordset_affects_updates"></a>Kayıt Kümesinin Kapatılması Güncelleştirmeleri Nasıl Etkiler?
 
-Bir kayıt kümesini veya ilişkili `CDatabase` nesnesini devam eden bir işlem ile kapatırsanız ( [CDatabase:: CommitTrans](../../mfc/reference/cdatabase-class.md#committrans) veya [CDatabase:: Rollback](../../mfc/reference/cdatabase-class.md#rollback)çağrılmadı), işlem otomatik olarak geri alınır (veritabanınızın arka ucu Microsoft Jet veritabanı altyapısı değilse).
+Bir kayıt kümesini veya ilişkili `CDatabase` nesnesini devam eden bir işlemle kapatırsanız [(CDatabase::CommitTrans](../../mfc/reference/cdatabase-class.md#committrans) veya [CDatabase::Rollback](../../mfc/reference/cdatabase-class.md#rollback)olarak adlandırmadınız), işlem otomatik olarak geri alınır (veritabanı arka ucunuz Microsoft Jet veritabanı altyapısı değilse).
 
 > [!CAUTION]
->  Microsoft Jet veritabanı altyapısını kullanıyorsanız, açık bir işlem içindeki bir kayıt kümesini kapatmak, açık işlem kaydedilene veya geri alınana kadar değiştirilmiş olan veya kilitli satırlardan herhangi birinin serbest bırakılmasıyla sonuçlanır. Her zaman açık bir Jet işleminin içinde veya dışında kayıt kümelerini açmanız ve kapatmanız önerilir.
+> Microsoft Jet veritabanı altyapısını kullanıyorsanız, açık bir işlem içinde bir kayıt kümesini kapatmak, açık işlem işlenene veya geri alınana kadar değiştirilen satırların veya kilitlerin serbest bırakılmasına neden olmaz. Açık bir Jet işleminin içinde veya dışında her zaman kayıt kümelerini açmanız ve kapatmanız önerilir.
 
-###  <a name="how-scrolling-affects-updates"></a><a name="_core_how_scrolling_affects_updates"></a>Kaydırma, güncelleştirmeleri nasıl etkiler
+### <a name="how-scrolling-affects-updates"></a><a name="_core_how_scrolling_affects_updates"></a>Kaydırma Güncelleştirmeleri Nasıl Etkiler?
 
-Kayıt [kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) bir kayıt kümesinde, düzenleme arabelleği her yeni geçerli kayıtla doldurulur (önceki kayıt önce depolanmaz). Kaydırma, daha önce silinen kayıtları atlar. Önce `Update`, `CommitTrans`veya `Rollback` çağırılmadan bir `AddNew` veya `Edit` çağrısından sonra kayırsanız, yeni bir kayıt düzenleme arabelleğine getirildiğinde değişiklikler kaybedilir (size hiçbir uyarı olmadan). Düzenleme arabelleği kaydırılan kayıt ile doldurulur, depolanan kayıt serbest bırakılır ve veri kaynağında hiçbir değişiklik gerçekleşmez. Bu hem `AddNew` hem de `Edit`için geçerlidir.
+Recordset: Bir kayıt setinde [kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) yaptığınızda, edit arabelleği her yeni geçerli kayıtla doldurulur (önceki kayıt önce depolanmaz). Kaydırma, daha önce silinmiş kayıtları atlar. Bir `AddNew` veya aramayı `Edit` aramadan `Update`veya `CommitTrans` `Rollback` aramadan sonra kaydırırsanız, yeni bir kayıt önbelleğe getirildiğinde, herhangi bir değişiklik kaybolur (size uyarı olmaksızın). Edinme arabelleği kaydırılan kayıtla doldurulur, depolanan kayıt serbest bırakılır ve veri kaynağında herhangi bir değişiklik oluşmaz. Bu hem de `AddNew` `Edit`geçerlidir .
 
-##  <a name="your-updates-and-the-updates-of-other-users"></a><a name="_core_your_updates_and_the_updates_of_other_users"></a>Diğer kullanıcıların güncelleştirmeleri ve güncelleştirmeleri
+## <a name="your-updates-and-the-updates-of-other-users"></a><a name="_core_your_updates_and_the_updates_of_other_users"></a>Güncellemeleriniz ve Diğer Kullanıcıların Güncellemeleri
 
-Verileri güncelleştirmek için bir kayıt kümesi kullandığınızda, güncelleştirmeleriniz diğer kullanıcıları etkiler. Benzer şekilde, kayıt kümenizin ömrü boyunca diğer kullanıcıların güncelleştirmeleri sizi etkiler.
+Verileri güncelleştirmek için bir kayıt kümesi kullandığınızda, güncelleştirmeleriniz diğer kullanıcıları etkiler. Benzer şekilde, kayıt setinizin ömrü boyunca diğer kullanıcıların güncelleştirmeleri de sizi etkiler.
 
-Çok kullanıcılı bir ortamda, diğer kullanıcılar kayıt kümenizde seçtiğiniz kayıtların bazılarını içeren kayıt kümelerini açabilir. Kayıt kümenizde yansıtılmadan önce bir kayıttaki değişiklikler. Dinamik kümeler, her kaydırışınızda bir kayıt alındığından, dinamik kümeler bir kayda her kaydırışınızda değişiklikleri yansıtır. Anlık görüntüler, ilk kaydırdığınızda bir kaydı alır, bu nedenle anlık görüntüler yalnızca kayda kaymadan önce gerçekleşen değişiklikleri yansıtır.
+Çok kullanıcılı bir ortamda, diğer kullanıcılar kayıt setinizde seçtiğiniz kayıtların bazılarını içeren kayıt kümelerini açabilir. Bir kaydı almadan önce yapılan değişiklikler kayıt setinize yansıtılır. Dynasets, her kaydırma yaptığınızda bir kayıt aldığınızda bir kayıt aldığı için, bir kayda her kaydırdığınızda değişiklikleri yansıtır. Anlık görüntüler bir kaydı ilk kez kaydırdığınızda alır, bu nedenle anlık görüntüler yalnızca kayda kaydırmadan önce gerçekleşen değişiklikleri yansıtır.
 
-Kayıt kümesini açtıktan sonra diğer kullanıcılar tarafından eklenen kayıtlar, ' i yeniden sorgulayana kadar kayıt kümenizde gösterilmez. Kayıt kümeniz bir Dynaset ise, etkilenen kayda kaydırdığınızda, diğer kullanıcılar tarafından varolan kayıtlara yapılan düzenlemeler, küme kümenizin içinde görünür. Kayıt kümeniz bir anlık görüntü ise, anlık görüntüyü yeniden sorgulayana kadar düzenlemeler gösterilmez. Anlık görüntüdeki diğer kullanıcılar tarafından eklenen veya silinen kayıtları veya dinamik kümenize diğer kullanıcılar tarafından eklenen kayıtları görmek isterseniz, kayıt kümesini yeniden derlemek için [CRecordset:: Requery](../../mfc/reference/crecordset-class.md#requery) ' i çağırın. (Diğer kullanıcıların silinmesinin dinamik kümenize görünür olduğunu unutmayın.) Ayrıca, eklediğiniz kayıtları görmek için `Requery` çağırabilirsiniz, ancak sillerinizi görmeyebilirsiniz.
+Kayıt kümesini açtıktan sonra diğer kullanıcılar tarafından eklenen kayıtlar, yeniden sorgulamadığınız sürece kayıt setinizde gösterilmez. Kayıt setiniz bir dinamitse, etkilenen kayda kaydırdığınızda diğer kullanıcılar tarafından varolan kayıtlara yapılan ayarlamalar dinamitinizde gösterir. Kayıt setiniz anlık görüntüyse, anlık görüntüyeniden sorgulanana kadar yapılan lar görüntülenmez. Anlık görüntünüzde diğer kullanıcılar tarafından eklenen veya silinen kayıtları veya dynaset'inizdeki diğer kullanıcılar tarafından eklenen kayıtları görmek istiyorsanız, kayıt kümesini yeniden oluşturmak için [CRecordset::Requery'yi](../../mfc/reference/crecordset-class.md#requery) arayın. (Diğer kullanıcıların silmelerinin dinamitinizde görünün.) Ayrıca eklediğiniz `Requery` kayıtları görmek için de arayabilirsiniz, ancak silmelerinizi görmek için değil.
 
 > [!TIP]
->  Bir anlık görüntünün tamamının önbelleğe alınmasını zorlamak için anlık görüntüyü açtıktan hemen sonra `MoveLast` çağırın. Sonra kayıtlarla çalışmaya başlamak için `MoveFirst` çağırın. `MoveLast` tüm kayıtları kaydırmaya eşdeğerdir, ancak tümünü bir kez alır. Bununla birlikte, bunun performansı düşürebileceğini ve bazı sürücüler için gerekli olmayabilir.
+> Tüm anlık görüntünün önbelleğe alınmasını zorlamak için, anlık fotoğrafı açtıktan hemen sonra arayın. `MoveLast` Sonra `MoveFirst` kayıtlarla çalışmaya başlamak için arayın. `MoveLast`tüm kayıtların üzerinde kaydırmaya eşdeğerdir, ancak hepsini aynı anda alır. Ancak, bunun performansı düşürebileceğini ve bazı sürücüler için gerekli olmayabileceğini unutmayın.
 
-Diğer kullanıcılara yaptığınız güncelleştirmelerin etkileri, sizin için etkileri ile benzerdir.
+Güncelleştirmelerinizin diğer kullanıcılar üzerindeki etkileri, sizin üzerindeki etkilerine benzer.
 
-##  <a name="more-about-update-and-delete"></a><a name="_core_more_about_update_and_delete"></a>Güncelleştirme ve silme hakkında daha fazla bilgi
+## <a name="more-about-update-and-delete"></a><a name="_core_more_about_update_and_delete"></a>Güncelleme ve Silme Hakkında Daha Fazla Bilgi
 
-Bu bölüm `Update` ve `Delete`çalışmanıza yardımcı olacak ek bilgiler sağlar.
+Bu bölümde, birlikte `Update` çalışmanıza yardımcı `Delete`olacak ek bilgiler ve .
 
-### <a name="update-success-and-failure"></a>Güncelleştirme başarısı ve başarısızlığı
+### <a name="update-success-and-failure"></a>Başarı ve Başarısızlığı Güncelleştir
 
-`Update` başarılı olursa `AddNew` veya `Edit` modu sonlanır. Bir `AddNew` veya `Edit` moduna yeniden başlamak için `AddNew` veya `Edit`çağırın.
+`Update` Başarılı olursa, `AddNew` `Edit` mod sona erer. Bir `AddNew` modu `Edit` yeniden başlatmak `AddNew` için, arayın veya. `Edit`
 
-`Update` başarısız olursa (yanlış döndürür veya bir özel durum oluşturursa), en son hangi işleve bağlı olarak `AddNew` veya `Edit` modunda kalır. Bundan sonra aşağıdakilerden birini yapabilirsiniz:
+Başarısız `Update` olursa (FALSE döndürür veya bir `AddNew` `Edit` özel durum atar), en son adlandırdığınız işleve bağlı olarak modda kalırsınız. Daha sonra aşağıdakilerden birini yapabilirsiniz:
 
-- Bir alan veri üyesini değiştirip `Update` yeniden deneyin.
+- Bir alan veri üyesini `Update` değiştirin ve yeniden deneyin.
 
-- Alan veri üyelerini null olarak sıfırlamak için `AddNew` çağırın, alan veri üyelerinin değerlerini ayarlayın ve sonra yeniden `Update` çağırın.
+- Alan `AddNew` veri üyelerini Null'a sıfırlamak, alan veri üyelerinin değerlerini ayarlamak `Update` ve sonra yeniden aramak için çağrı.
 
-- `AddNew` veya `Edit`ilk çağrısından önce kayıt kümesinde olan değerleri yeniden yüklemek için `Edit` çağırın, alan veri üyelerinin değerlerini ayarlayın ve ardından `Update` yeniden çağırın. Başarılı bir `Update` çağrısından sonra (bir `AddNew` çağrısından sonra), alan veri üyeleri yeni değerlerini korurlar.
+- İlk `Edit` çağrıdan önce kayıt kümesinde bulunan değerleri yeniden `AddNew` `Edit`yüklemek veya alan veri üyelerinin değerlerini ayarlamak `Update` ve sonra yeniden aramak için arayın. Başarılı `Update` bir çağrıdan sonra `AddNew` (bir çağrıdan sonra hariç), alan veri üyeleri yeni değerlerini korur.
 
-- `Move` (bir AFX_MOVE_REFRESH veya 0) `Move` dahil olmak üzere, tüm değişiklikleri temizlemeleri ve herhangi bir `AddNew` veya `Edit` modunu sona erdirir.
+- Herhangi `Move` bir `Move` değişikliği temizleyen ve geçerli olan modu `AddNew` `Edit` sona erdirebilen (AFX_MOVE_REFRESH veya 0 parametresi dahil) arayın.
 
-### <a name="update-and-delete"></a>Güncelleştir ve Sil
+### <a name="update-and-delete"></a>Güncelleme ve Silme
 
-Bu bölüm hem `Update` hem de `Delete`için geçerlidir.
+Bu bölüm her `Update` ikisi `Delete`için de geçerlidir ve .
 
-Bir `Update` veya `Delete` işleminde, tek bir kayıt da güncelleştirilmeleri gerekir. Bu kayıt, kayıt kümesinin alanlarındaki veri değerlerine karşılık gelen geçerli kayıttır. Bazı nedenlerle hiçbir kayıt etkilenmeden veya birden çok kayıt etkileniyorsa, aşağıdaki **Ekcode** değerlerinden birini içeren bir özel durum atılır:
+Bir `Update` veya `Delete` işlemde, bir ve yalnızca bir kayıt güncelleştirilmelidir. Bu kayıt, kayıt kümesinin alanlarındaki veri değerlerine karşılık gelen geçerli kayıttır. Herhangi bir nedenle hiçbir kayıt etkilenmiyorsa veya birden fazla kayıt etkileniyorsa, aşağıdaki **RETCODE** değerlerinden birini içeren bir özel durum atılır:
 
 - AFX_SQL_ERROR_NO_ROWS_AFFECTED
 
 - AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED
 
-Bu özel durumlar oluştuğunda, `Update` veya `Delete`çağırdığınızda yaptığınız `AddNew` veya `Edit` durumunda kalacaksınız. Bu özel durumları görebileceğiniz en yaygın senaryolar aşağıda verilmiştir. En büyük ihtimalle şunları görebilirsiniz:
+Bu özel durumlar atıldığında, `AddNew` aradığınız `Edit` `Update` da içinde olduğunuz durumda `Delete`kalırsınız veya . Bu özel durumları görebileceğiniz en yaygın senaryolar aşağıda verilmiştir. Büyük olasılıkla şunları görebilirsiniz:
 
-- İyimser kilitleme modunu kullanırken AFX_SQL_ERROR_NO_ROWS_AFFECTED ve başka bir kullanıcı kaydı, Framework 'ün güncelleştirme veya silme için doğru kaydı tanımmasını engelleyecek şekilde değiştirdi.
+- AFX_SQL_ERROR_NO_ROWS_AFFECTED iyimser kilitleme modu kullanıyorsanız ve başka bir kullanıcı kaydı, güncelleştirmek veya silmek için doğru kaydı tanımlamasını engelleyecek şekilde değiştirmiştir.
 
-- Güncelleştirdiğiniz tablo birincil anahtar veya benzersiz dizin olmadığında AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED ve kayıt kümesinde tablo satırını benzersiz şekilde tanımlamak için yeterli sütun yok.
+- AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED, güncellediğiniz tablonun birincil anahtarı veya benzersiz dizini yoksa ve kayıt kümesinde tablo satırını benzersiz olarak tanımlamak için yeterli sütununuz yoksa.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

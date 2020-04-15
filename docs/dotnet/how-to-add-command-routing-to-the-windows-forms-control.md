@@ -1,59 +1,59 @@
 ---
-title: 'Nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi'
+title: "Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme"
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - command routing [C++], adding to Windows Forms controls
 - Windows Forms controls [C++], command routing
 ms.assetid: bf138ece-b463-442a-b0a0-de7063a760c0
-ms.openlocfilehash: 8f633cf744314833409a3ffeacf8c850429e099c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad64a12051c22a0cfca99d3ec9c5abef579902f4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365166"
 ---
-# <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi
+# <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme
 
-[CWinFormsView](../mfc/reference/cwinformsview-class.md) komutları yönlendirir ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi.
+[CWinFormsView,](../mfc/reference/cwinformsview-class.md) MFC komutlarını (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemesine izin vermek için komutları ve güncelleştirme komutu kullanıcı iletilerini kullanıcı denetimine yönlendirir.
 
-Kullanıcı denetimini kullanan [ICommandTarget::Initialize'ı](../mfc/reference/icommandtarget-interface.md#initialize) öğesindeki komut kaynak nesnesine bir başvuru depolamak için `m_CmdSrc`, aşağıdaki örnekte gösterildiği gibi. Kullanılacak `ICommandTarget` mfcmifc80.dll'ye bir başvuru eklemeniz gerekir.
+Kullanıcı denetimi, aşağıdaki örnekte gösterildiği gibi komut kaynağı nesnesine `m_CmdSrc`bir başvuru depolamak için [ICommandTarget::Initialize](../mfc/reference/icommandtarget-interface.md#initialize) kullanır. Kullanmak `ICommandTarget` için mfcmifc80.dll bir referans eklemeniz gerekir.
 
-`CWinFormsView` birkaç genel MFC görünüm bildirimlerini, bunları yönetilen kullanıcı denetimine ileterek işler. Bu bildirimler [OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate), [OnUpdate](../mfc/reference/iview-interface.md#onupdate) ve [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) yöntemleri.
+`CWinFormsView`ortak MFC görünüm bildirimlerinden birkaçını yönetilen kullanıcı denetimine ileterek işler. Bu bildirimler [OnInitialUpdate,](../mfc/reference/iview-interface.md#oninitialupdate) [OnUpdate](../mfc/reference/iview-interface.md#onupdate) ve [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) yöntemlerini içerir.
 
-Bu konuda daha önce bitirdiğinizi [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+Bu konu, daha önce [nasıl](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) tamamladığınızı varsayar: İletişim Kutusunda Kullanıcı Denetimi ve Ana Bilgisayar Oluşturma ve Nasıl [Oluştur: Kullanıcı Denetimi ve Ana Bilgisayar MDI Görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
 
-### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
+### <a name="to-create-the-mfc-host-application"></a>MFC ana bilgisayar uygulamasını oluşturmak için
 
-1. Oluşturduğunuz Windows Forms Denetim Kitaplığı açın [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
+1. Nasıl Yapılır: [İletişim Kutusunda Kullanıcı Denetimi ve Ana Bilgisayar Oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)'da oluşturduğunuz Windows Forms Control Kitaplığını açın.
 
-1. ' Nde proje düğümüne sağ tıklayarak bunu yapabilirsiniz, mfcmifc80.dll'ye bir başvuru ekleyin **Çözüm Gezgini**u seçerek **Ekle**, **başvuru**, öğesine göz atarak Microsoft Visual Studio 10.0\VC\atlmfc\lib.
+1. **Çözüm Gezgini'nde**proje düğümüne sağ tıklayarak yapabileceğiniz mfcmifc80.dll'ye bir başvuru ekleyin, **Ekle**, **Başvuru**ekle'yi seçin ve ardından Microsoft Visual Studio 10.0\VC\atlmfc\lib adresine göz atın.
 
-1. UserControl1.Designer.cs açın ve aşağıdaki deyimi kullanarak:
+1. UserControl1.Designer.cs açın ve aşağıdaki ifadesini ekleyin:
 
     ```
     using Microsoft.VisualC.MFC;
     ```
 
-1. Ayrıca, UserControl1.Designer.cs'te şu satırı değiştirin:
+1. Ayrıca, UserControl1.Designer.cs olarak, bu satırı değiştirin:
 
     ```
     partial class UserControl1
     ```
 
-   Şu şekilde:
+   şu şekilde:
 
     ```
     partial class UserControl1 : System.Windows.Forms.UserControl, ICommandTarget
     ```
 
-1. Bu sınıf tanımının ilk satırı olarak ekleyin `UserControl1`:
+1. Bunu sınıf tanımının ilk satırı `UserControl1`olarak ekleyin:
 
     ```
     private ICommandSource m_CmdSrc;
     ```
 
-1. Eklemek için aşağıdaki yöntem tanımlarını `UserControl1` (MFC denetiminin Kimliğini sonraki adımda oluşturacağız):
+1. Aşağıdaki yöntem tanımlarını `UserControl1` ekleyin (bir sonraki adımda MFC denetiminin kimliğini oluşturacağız):
 
     ```
     public void Initialize (ICommandSource cmdSrc)
@@ -70,26 +70,26 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: Bir iletişim kutusunda k
     }
     ```
 
-1. Oluşturduğunuz MFC uygulamasını açınız [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+1. Nasıl yapılacağını zımbımla oluşturduğunuz MFC uygulamasını [açın: Kullanıcı Denetimi ve Barındırıcı MDI Görünümü oluşturun.](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)
 
-1. Açacak bir menü seçeneği ekleyin `singleMenuHandler`.
+1. Çağıracak `singleMenuHandler`bir menü seçeneği ekleyin.
 
-   Git **kaynak görünümü** (Ctrl + SHIFT + E) genişletin **menü** klasörüne gittikten sonra çift tıklayarak **IDR_MFC02TYPE**. Bu, menü düzenleyicisini görüntüler.
+   Kaynak **Görünümü'ne** (Ctrl+Shift+E) gidin, **Menü** klasörünü genişletin ve **ardından IDR_MFC02TYPE'yi**çift tıklatın. Bu menü düzenleyicisi görüntüler.
 
-   Alt kısmındaki menü seçeneği ekleyin **görünümü** menüsü. Menü seçeneğinin Kimliğine dikkat edin **özellikleri** penceresi. Dosyayı kaydedin.
+   **Görünüm** menüsünün alt kısmında bir menü seçeneği ekleyin. **Özellikler** penceresindeki menü seçeneğinin kimliğine dikkat edin. Dosyayı kaydedin.
 
-   İçinde **Çözüm Gezgini**, Resource.h dosyasını açın, yeni eklediğiniz menü seçeneğinin kimlik değerini kopyalayın ve bu değer, ilk parametresi olarak yapıştırın `m_CmdSrc.AddCommandHandler` C# projesinin çağrı `Initialize` ( değiştirerekyöntemi`32771` gerekiyorsa).
+   **Çözüm Gezgini'nde,** Kaynak.h dosyasını açın, az önce eklediğiniz menü seçeneğinin kimlik değerini kopyalayın ve bu değeri `Initialize` C# projesinin yöntemindeki `32771` `m_CmdSrc.AddCommandHandler` çağrıya ilk parametre olarak yapıştırın (gerekirse değiştirme).
 
-9. Derleme ve projeyi çalıştırın.
+1. Projeyi oluşturun ve çalıştırın.
 
-   Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+   **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
 
-   Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+   Hata **Ayıklama** menüsünde hata **ayıklama olmadan Başlat'ı**tıklatın.
 
-   Eklediğiniz menü seçeneğini belirleyin. . Ddl'deki yöntemin çağrıldığına dikkat edin.
+   Eklediğiniz menü seçeneğini seçin. .dll'deki yöntemin çağrıldığına dikkat edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)<br/>
-[ICommandSource Arabirimi](../mfc/reference/icommandsource-interface.md)<br/>
-[ICommandTarget Arabirimi](../mfc/reference/icommandtarget-interface.md)
+[ICommandSource Arayüzü](../mfc/reference/icommandsource-interface.md)<br/>
+[ICommandTarget Arayüzü](../mfc/reference/icommandtarget-interface.md)

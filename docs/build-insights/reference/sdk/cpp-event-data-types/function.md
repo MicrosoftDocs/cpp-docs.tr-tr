@@ -1,6 +1,6 @@
 ---
-title: Function Sınıfı
-description: C++ BUILD Insights SDK işlev sınıfı başvurusu.
+title: Fonksiyon sınıfı
+description: C++ Build Insights SDK İşlev sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 3ff66119007ed7172fed7e824287ab8617c70973
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 69acbe4d6630de37120aec89a24a9f33d447009e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333260"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324719"
 ---
-# <a name="function-class"></a>Function Sınıfı
+# <a name="function-class"></a>Fonksiyon sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`Function` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [İşlev](../event-table.md#function) olayını eşleştirmek için kullanın.
+Sınıf `Function` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. Bir [İŞLEV](../event-table.md#function) olayıyla eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,17 +41,17 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte `Function` sınıfı aşağıdaki üyeleri içerir:
+[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `Function` birlikte, sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Çalışmayacaktır](#function)
+[İşlev](#function)
 
 ### <a name="functions"></a>İşlevler
 
-[Ad](#name)
+[Adı](#name)
 
-## <a name="function"></a>Çalışmayacaktır
+## <a name="function"></a><a name="function"></a>Işlev
 
 ```cpp
 Function(const RawEvent& event);
@@ -59,10 +59,10 @@ Function(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
-Bir [işlev](../event-table.md#function) olayı.
+*Olay*\
+Bir [FONKSIYON](../event-table.md#function) olayı.
 
-## <a name="name"></a>Ada
+## <a name="name"></a><a name="name"></a>Adı
 
 ```cpp
 const char* Name() const;
@@ -70,6 +70,6 @@ const char* Name() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-UTF-8 olarak kodlanmış işlevin adı.
+UTF-8'de kodlanmış işlevin adı.
 
 ::: moniker-end

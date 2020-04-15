@@ -7,26 +7,26 @@ helpviewer_keywords:
 - classes [MFC], adding MFC
 - MFC, adding classes
 ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
-ms.openlocfilehash: 266940092e68a76f2ac485a81ac6ac90b02ee0ac
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 3b0ebf3aafb11dfbacd1c57618c21aff8d776c47
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907649"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371706"
 ---
 # <a name="adding-an-mfc-class"></a>MFC Sınıfı Ekleme
 
-Microsoft Foundation Class (MFC) kitaplık sınıflarından türetilmiş sınıfları projenize eklemek için [sınıf Sihirbazı](mfc-class-wizard.md)'Nda **Sınıf Ekle** düğmesini kullanın. Yeni sınıfın adını belirtin, temel sınıfı seçin ve ilişkili olduğu iletişim kutusunun KIMLIĞINI (varsa) seçin. Sihirbaz bir üst bilgi dosyası ve uygulama dosyası oluşturur ve bunları projenize ekler.
+Projenize Microsoft Hazırlık Sınıfı (MFC) kitaplığı sınıflarından türetilen sınıfları eklemek için [Sınıf Sihirbazı'nda](mfc-class-wizard.md) **Sınıf Ekle** düğmesini kullanın. Yeni sınıfın adını belirtin, taban sınıfı seçin ve ilişkili olduğu iletişim kutusunun kimliğini (varsa) seçin. Sihirbaz bir üstbilgi dosyası ve bir uygulama dosyası oluşturur ve bunları projenize ekler.
 
 > [!NOTE]
->  İlk olarak [uygulamayı MFC desteğiyle oluşturduysanız](../../atl/reference/mfc-support-in-atl-projects.md), ATL COM uygulamasına MFC sınıfları ekleyebilirsiniz. MFC desteği olan Win32 projelerine MFC sınıfları da ekleyebilirsiniz.
+> Uygulamayı başlangıçta [MFC desteği ile oluşturduysanız,](../../atl/reference/mfc-support-in-atl-projects.md)Bir ATL COM uygulamasına MFC sınıfları ekleyebilirsiniz. Ayrıca, MFC desteğine sahip Win32 projelerine MFC sınıfları ekleyebilirsiniz.
 
-### <a name="to-add-an-mfc-class-to-your-project"></a>Projenize bir MFC sınıfı eklemek için
+### <a name="to-add-an-mfc-class-to-your-project"></a>Projenize Bir MFC sınıfı eklemek için
 
-Sınıf Görünümü, proje adına sağ tıklayın. **Sınıf Sihirbazı** ' na tıklayın ve ardından **Sınıf Ekle** ' ye tıklayarak [MFC sınıfı Ekle](mfc-add-class-wizard.md) iletişim kutusunu açın. İleti işleyicileri veya yeni yöntemler eklemek için **sınıf Sihirbazı 'nı** kullanın.
+Sınıf Görünümü'nden proje adını sağ tıklatın. **Sınıf Sihirbazı'nı** tıklatın ve sonra [MFC Sınıfı Ekle](mfc-add-class-wizard.md) iletişim kutusunu açmak için Sınıf **Ekle'yi** tıklatın. İleti işleyicileri veya yeni yöntemler eklemek için **Sınıf Sihirbazı'nı** kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Sınıfa genel bakış](../../mfc/class-library-overview.md)
+[Sınıf Ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Sınıfa Genel Bakış](../../mfc/class-library-overview.md)

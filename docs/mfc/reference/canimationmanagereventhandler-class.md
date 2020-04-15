@@ -1,5 +1,5 @@
 ---
-title: CAnimationManagerEventHandler sınıfı
+title: CAnimationManagerEventHandler Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationManagerEventHandler
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], OnManagerStatusChanged
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-ms.openlocfilehash: bd13ba4d0dd60f65372b2c1f51d70d338566301e
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: a4e97c2a1188071b5bde0781630d0dfe52e8a72f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916254"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369717"
 ---
-# <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler sınıfı
+# <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler Sınıfı
 
-, Bir animasyon yöneticisinin durumu değiştirildiğinde animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
+Animasyon yöneticisinin durumu değiştirildiğinde Animasyon API'sı tarafından çağrılan bir geri arama uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,21 +35,21 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationManagerEventHandler:: CAnimationManagerEventHandler](#canimationmanagereventhandler)|Bir `CAnimationManagerEventHandler` nesnesi oluşturur.|
+|[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler)|Bir `CAnimationManagerEventHandler` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationManagerEventHandler:: CreateInstance](#createinstance)|`CAnimationManagerEventHandler` Nesnesinin bir örneğini oluşturur.|
-|[CAnimationManagerEventHandler:: OnManagerStatusChanged](#onmanagerstatuschanged)|Animasyon Yöneticisi durumu değiştiğinde çağırılır. (Geçersiz `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`kılmalar.)|
-|[CAnimationManagerEventHandler:: SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine bir işaretçi depolar.|
+|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|Nesne örneği `CAnimationManagerEventHandler` oluşturur.|
+|[CAnimationManagerEventHandler::OnManagerStatusDeğiştirildi](#onmanagerstatuschanged)|Animasyon yöneticisinin durumu değiştiğinde çağrılır. (Geçersiz `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`kılar .)|
+|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi oluşturulur ve CAnimationController:: EnableAnimationManagerEvent öğesini çağırdığınızda IUIAnimationManager:: SetManagerEventHandler yöntemine geçirilir.
+Bu olay işleyicisi oluşturulur ve IUIAnimationManager geçirilir::SetManagerEventHandler yöntemi, CAnimationController çağırdığınızda::EnableAnimationManagerEvent.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -61,19 +61,19 @@ Bu olay işleyicisi oluşturulur ve CAnimationController:: EnableAnimationManage
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="canimationmanagereventhandler"></a>CAnimationManagerEventHandler:: CAnimationManagerEventHandler
+## <a name="canimationmanagereventhandlercanimationmanagereventhandler"></a><a name="canimationmanagereventhandler"></a>CAnimationManagerEventHandler::CAnimationManagerEventHandler
 
 Visual Studio 2010 SP1 gereklidir.
 
-Bir CAnimationManagerEventHandler nesnesi oluşturur.
+CAnimationManagerEventHandler nesnesi oluşturuyor.
 
 ```
 CAnimationManagerEventHandler();
 ```
 
-##  <a name="createinstance"></a>CAnimationManagerEventHandler:: CreateInstance
+## <a name="canimationmanagereventhandlercreateinstance"></a><a name="createinstance"></a>CAnimationManagerEventHandler::CreateInstance
 
 Visual Studio 2010 SP1 gereklidir.
 
@@ -88,20 +88,20 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olay alacak bir animasyon denetleyicisi işaretçisi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 *ppManagerEventHandler*<br/>
-Çıktıların. Yöntem başarılı olursa, bir animasyon yöneticisinin durum güncelleştirmelerini işleyecek COM nesnesine bir işaretçi içerir.
+Çıkış. Yöntem başarılı olursa, bir animasyon yöneticisi için durum güncelleştirmeleri işleyecek COM nesnesi için bir işaretçi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="onmanagerstatuschanged"></a>CAnimationManagerEventHandler:: OnManagerStatusChanged
+## <a name="canimationmanagereventhandleronmanagerstatuschanged"></a><a name="onmanagerstatuschanged"></a>CAnimationManagerEventHandler::OnManagerStatusDeğiştirildi
 
 Visual Studio 2010 SP1 gereklidir.
 
-Animasyon Yöneticisi durumu değiştiğinde çağırılır.
+Animasyon yöneticisinin durumu değiştiğinde çağrılır.
 
 ```
 IFACEMETHOD(OnManagerStatusChanged)(
@@ -111,21 +111,21 @@ IFACEMETHOD(OnManagerStatusChanged)(
 
 ### <a name="parameters"></a>Parametreler
 
-*newStatus*<br/>
-Yeni durum.
+*newDurum*<br/>
+Yeni bir durum.
 
-*previousStatus*<br/>
+*öncekiDurum*<br/>
 Önceki durum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Geçerli uygulama her zaman S_OK döndürür;
 
-##  <a name="setanimationcontroller"></a>CAnimationManagerEventHandler:: SetAnimationController
+## <a name="canimationmanagereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationManagerEventHandler::SetAnimationController
 
 Visual Studio 2010 SP1 gereklidir.
 
-Olayları yönlendirmek için animasyon denetleyicisine bir işaretçi depolar.
+Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.
 
 ```
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -134,7 +134,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olay alacak bir animasyon denetleyicisi işaretçisi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

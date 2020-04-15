@@ -13,16 +13,16 @@ helpviewer_keywords:
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-ms.openlocfilehash: 73642baba77a62cac531ae7b2842ec9953b338ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58f55811f5d2bb81bc77da38a87c35bae91ce6cb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292802"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320512"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
 
-.SBR dosyaları oluşturur.
+.sbr dosyaları oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,32 +34,32 @@ ms.locfileid: "62292802"
 ## <a name="remarks"></a>Açıklamalar
 
 > [!WARNING]
-> BSCMAKE hala Visual Studio ile yüklenir ancak artık IDE tarafından kullanılır. Visual Studio 2008'den itibaren göz atma ve sembol bilgilerini otomatik olarak bir SQL Server .sdf dosyası çözüm klasöründe depolanır.
+> BSCMAKE hala Visual Studio yüklü olmasına rağmen, artık IDE tarafından kullanılmaz. Visual Studio 2008'den bu yana, göz atma ve sembol bilgileri çözüm klasöründe bir SQL Server .sdf dosyasında otomatik olarak depolanır.
 
-Derleme işlemi sırasında Microsoft Gözat bilgi dosya Bakımı yardımcı programı (BSCMAKE) oluşturmak için bu dosyaları kullanan bir. BSC dosyası, gözatma bilgilerini görüntülemek için kullanılır.
+Oluşturma işlemi sırasında, Microsoft Gözat Bilgi Dosya Bakım Programı (BSCMAKE) oluşturmak için bu dosyaları kullanır. Gözatma bilgilerini görüntülemek için kullanılan BSC dosyası.
 
-**/FR** tam sembolik bilgilerle .sbr dosyası oluşturur.
+**/FR,** tam sembolik bilgiler içeren bir .sbr dosyası oluşturur.
 
-**/FR** yerel değişkenlerde bilgileri olmadan .sbr dosyası oluşturur.
+**/Fr,** yerel değişkenler hakkında bilgi olmadan bir .sbr dosyası oluşturur.
 
-Siz belirtmezseniz `filename`, kaynak dosyası olarak aynı temel adlı .sbr dosyası alır.
+Belirtmezseniz `filename`, .sbr dosyası kaynak dosyayla aynı temel adı alır.
 
-**/FR** kullanım dışıdır; kullanın **/FR** yerine. Daha fazla bilgi için bkz: kullanım dışı ve kaldırıldı derleyici seçeneklerinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
+**/Fr** amortismana lı; bunun yerine **/FR** kullanın. Daha fazla bilgi için, [Kategoriye Göre Listelenen Derleyici Seçeneklerinde](compiler-options-listed-by-category.md)Azalan ve Kaldırılan Derleyici Seçenekleri'ne bakın.
 
 > [!NOTE]
->  .Sbr uzantısı değiştirmeyin. BSCMAKE Ara dosyaları uzantıya sahip olmasını gerektirir.
+> .sbr uzantısını değiştirmeyin. BSCMAKE bu uzantıya sahip olmak için ara dosyaların olmasını gerektirir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Gezinti bölmesinde **C/C++**, **göz atma bilgisi** özellik sayfası.
+1. Gezinti bölmesinde **C/C++**, **Gözat Bilgileri** özelliği sayfasını seçin.
 
-1. Değiştirme **Gözat bilgi dosyası** veya **göz atma bilgisi etkinleştirme** özelliği.
+1. **Gözat Bilgileri Dosyasını** değiştirin veya **Bilgilere Gözat** özelliğini etkinleştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.
+- Bakın <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>ve .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
